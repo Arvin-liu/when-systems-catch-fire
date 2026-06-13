@@ -28,5 +28,6 @@
     "underdetermined_jsonl": "data/rebuild/dual-channel-underdetermined.jsonl",
     "full_report_md": "data/rebuild/dual-channel-full-bootstrap-report.md",
     "convergence_report_md": "data/rebuild/dual-channel-convergence-report.md"
-  }
+  },
+  "round": 2
 }

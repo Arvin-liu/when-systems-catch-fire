@@ -11,67 +11,56 @@ This table contains 1 Section 0 root meta-function, 5 internal subitems, and 470
 - 推论层 / Derived functions：422 条 / 422 entries
 - 普通函数 / Ordinary functions：470 条 / 470 entries
 - 机器数据 / Machine data：[`data/functions/meta-functions.json`](data/functions/meta-functions.json), [`data/functions/unified-functions.json`](data/functions/unified-functions.json)
-- 双通道表 / Dual-channel table：[`data/functions/bootstrap-meta-function-table.md`](data/functions/bootstrap-meta-function-table.md), [`data/functions/bootstrap-meta-function-table.json`](data/functions/bootstrap-meta-function-table.json), [`data/functions/bootstrap-meta-function-table.jsonl`](data/functions/bootstrap-meta-function-table.jsonl)
+- 双通道结构 / Dual-channel structure：[`data/functions/bootstrap-meta-function-table.md`](data/functions/bootstrap-meta-function-table.md), [`data/functions/bootstrap-meta-function-table.json`](data/functions/bootstrap-meta-function-table.json), [`data/functions/bootstrap-meta-function-table.jsonl`](data/functions/bootstrap-meta-function-table.jsonl)
 - JSONL：[`data/functions/meta-functions.jsonl`](data/functions/meta-functions.jsonl), [`data/functions/unified-functions.jsonl`](data/functions/unified-functions.jsonl)
 - 重建审计 / Rebuild audit：[`data/rebuild/human-entry-render-report.md`](data/rebuild/human-entry-render-report.md)
 
 <details open>
 <summary>第 0 节：自举元函数 / Section 0: Bootstrap Meta-Function (1+5)</summary>
 
-### [MF-0000｜自举收敛判定器 / Bootstrap Convergence Judge](docs/zh/functions/meta/MF-0000.md)
+### [MF-0000｜自举元函数 / Bootstrap Meta-Function](docs/zh/functions/meta/MF-0000.md)
 
 **位置 / Position**
-中文：本条属于函数总表第 0 节，不计入普通函数 470 条。
-English: This entry belongs to Section 0 of the function table and is not counted among the 470 ordinary functions.
+中文：M_boot 是作用于 B_n 的根元算子。
+English: M_boot is the root meta-operator acting on B_n.
 
 **定义 / Definition**
-中文：自举元函数是驱动点火知识库自我生成、自我校验、自我修正的元层函数。
-English: The bootstrap meta-function is the meta-level function that drives the Ignition knowledge base to generate, verify, and revise itself.
+中文：自举元函数是在抽象状态 B_n 上同时施加正向判定 J⁺ 与反向判定 J⁻，并通过归一化算子 N 达到不动点的元算子。
+English: The bootstrap meta-function is a meta-operator on an abstract state B_n that applies both J+ and J- and reaches a fixed point through a normalization operator N.
 
 **数学表达 / Mathematical Expression**
-中文：M_boot = ε_sense × P_track × d(ΔK)/dt
-English: M_boot = ε_sense x P_track x d(ΔK)/dt
+中文：M_boot(B_n) = ε_sense(B_n) × P_track(B_n) × d(ΔK)/dt(B_n)
+English: M_boot(B_n) = ε_sense(B_n) x P_track(B_n) x d(ΔK)/dt(B_n)
 
-**当前五层状态 / Current Five-Layer State**
-中文：B_n = (F_n, C_n, D_n, P_n, A_n, L_n)
-English: B_n = (F_n, C_n, D_n, P_n, A_n, L_n)
+**状态空间 / State Space**
+中文：B_n = (X_n, R_n, J_n^+, J_n^-, N_n)
+English: B_n = (X_n, R_n, J_n^+, J_n^-, N_n)
 
 **自举循环 / Bootstrap Cycle**
-中文：B_(n+1) = B_n ⊕ ΔB_n
-English: B_(n+1) = B_n merge DeltaB_n
+中文：B_(n+1) = N_n(B_n ⊕ ΔB_n), ΔB_n = {x∈X_n | J_n^+(x)=1 ∧ J_n^-(x)=0} ∪ {¬x | J_n^+(x)=0 ∧ J_n^-(x)=1}
+English: B_(n+1) = N_n(B_n merge DeltaB_n), DeltaB_n = {x∈X_n | J_n^+(x)=1 ∧ J_n^-(x)=0} ∪ {¬x | J_n^+(x)=0 ∧ J_n^-(x)=1}
 
 **收敛判据 / Convergence Criteria**
-中文：Converged(B_n) ⇔ ||ΔB_n|| = 0 ∧ ||ΔB_(n+1)|| = 0
-English: Converged(B_n) ⇔ ||DeltaB_n|| = 0 ∧ ||DeltaB_(n+1)|| = 0
+中文：Converged(B_n) ⇔ B_(n+1)=B_n ∧ ΔB_n=∅ ∧ ∀x∈X_n, (J_n^+(x),J_n^-(x))∈{(1,0),(0,1),(0,0)}
+English: Converged(B_n) ⇔ B_(n+1)=B_n ∧ DeltaB_n=∅ ∧ ∀x∈X_n, (J_n^+(x),J_n^-(x))∈{(1,0),(0,1),(0,0)}
 
 **三个因子 / Three Factors**
-- ε_sense：结构感知信号 / structural signal sensing
-- P_track：分轨并行能力 / parallel track capacity
-- d(ΔK)/dt：知识增量速率 / knowledge increment rate
+- ε_sense(B_n)：状态可分辨度 / state distinguishability
+- P_track(B_n)：并行轨道容量 / parallel-track capacity
+- d(ΔK)/dt(B_n)：结构增量速率 / structural-increment rate
 
-**关联对象 / Related Objects**
-- [自举元函数层级 / bootstrap meta-function hierarchy](docs/zh/functions/items/T14.md)
-- [自举元函数](docs/zh/functions/items/D141.md)
-- [好奇心是退出的前哨](docs/zh/cases/items/C-0237.md)
 
-**来源 / Source**
-- `dianhuo/originals/1912597766393864312_点火｜自举循环操作手册（2026.06.12更新）.md`
-- `dianhuo/originals/20260610_1912361255428213848_点火-八函数总表（2026.06.10·71案例重跑更新版·含第零节）.md`
-- `dianhuo/originals/2026-06-13T22-01-48_1912719992572948200_点火｜自举元函数：正反双通道完整数学定义.md`
-- `dianhuo/originals/2026-06-13T22-01-49_1912719993645368408_点火｜第0节自举元函数表：MF-0000至MF-0005.md`
-- source_status: `found`
-
-**第 0 节内部子项 / Section 0 Internal Subitems**
+**内部元算子 / Internal Meta-Operators**
 
 | 编号 / ID | 名称 / Title | 作用 / Role |
 | --- | --- | --- |
-| [MF-0001](docs/zh/functions/meta/items/MF-0001.md) | 正向自举通道 / Forward Bootstrap Channel | 论证 x 成立 / Argues that x holds |
-| [MF-0002](docs/zh/functions/meta/items/MF-0002.md) | 反向自举通道 / Reverse Bootstrap Channel | 论证 x 不成立 / Argues that x does not hold |
-| [MF-0003](docs/zh/functions/meta/items/MF-0003.md) | 正反互斥判定器 / Forward-Reverse Exclusivity Judge | 检查正反是否同时通过 / Rejects simultaneous pass |
-| [MF-0004](docs/zh/functions/meta/items/MF-0004.md) | 自举嵌套判定器 / Nested Bootstrap Judge | 检查自举元函数自身 / Tests bootstrap self-nesting |
-| [MF-0005](docs/zh/functions/meta/items/MF-0005.md) | 自举收敛判定器 / Bootstrap Convergence Judge | 检查整个系统是否收敛 / Tests full-system convergence |
+| [MF-0001](docs/zh/functions/meta/items/MF-0001.md) | 正向自举通道 / Forward Bootstrap Channel | 计算 J⁺ / Computes J+ |
+| [MF-0002](docs/zh/functions/meta/items/MF-0002.md) | 反向自举通道 / Reverse Bootstrap Channel | 计算 J⁻ / Computes J- |
+| [MF-0003](docs/zh/functions/meta/items/MF-0003.md) | 正反互斥判定器 / Forward-Reverse Exclusivity Judge | 排除 J⁺=J⁻=1 / Rejects J+=J-=1 |
+| [MF-0004](docs/zh/functions/meta/items/MF-0004.md) | 自举嵌套判定器 / Nested Bootstrap Judge | 迭代 M_boot / Iterates M_boot |
+| [MF-0005](docs/zh/functions/meta/items/MF-0005.md) | 自举收敛判定器 / Bootstrap Convergence Judge | 判定不动点 / Tests fixed point |
 
-**双通道表 / Dual-channel Table**
+**双通道结构 / Dual-channel Structure**
 
 - [`bootstrap-meta-function-table.md`](data/functions/bootstrap-meta-function-table.md)
 - [`bootstrap-meta-function-table.json`](data/functions/bootstrap-meta-function-table.json)

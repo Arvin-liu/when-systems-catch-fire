@@ -9,7 +9,7 @@
     "status": "active",
     "ordinary_function_counted": false,
     "role": "root_entry",
-    "expression": "M_boot = ε_sense × P_track × d(ΔK)/dt",
+    "expression": "M_boot(B_n) = ε_sense(B_n) × P_track(B_n) × d(ΔK)/dt(B_n)",
     "page": "docs/zh/functions/meta/MF-0000.md"
   },
   {
@@ -22,7 +22,7 @@
     "status": "active",
     "ordinary_function_counted": false,
     "role": "forward_channel",
-    "expression": "M_boot⁺(x) = M_boot(x⁺)",
+    "expression": "J_n^+(x)=1 ⇔ Π_n^+(x|B_n) ≥ θ_n^+",
     "page": "docs/zh/functions/meta/items/MF-0001.md"
   },
   {
@@ -35,7 +35,7 @@
     "status": "active",
     "ordinary_function_counted": false,
     "role": "reverse_channel",
-    "expression": "M_boot⁻(x) = M_boot(x⁻)",
+    "expression": "J_n^-(x)=1 ⇔ Π_n^-(x|B_n) ≥ θ_n^-",
     "page": "docs/zh/functions/meta/items/MF-0002.md"
   },
   {
@@ -48,7 +48,7 @@
     "status": "active",
     "ordinary_function_counted": false,
     "role": "exclusivity_judge",
-    "expression": "¬(J⁺(x)=1 ∧ J⁻(x)=1)",
+    "expression": "∀x∈X_n, ¬(J_n^+(x)=1 ∧ J_n^-(x)=1)",
     "page": "docs/zh/functions/meta/items/MF-0003.md"
   },
   {
@@ -61,7 +61,7 @@
     "status": "active",
     "ordinary_function_counted": false,
     "role": "nested_judge",
-    "expression": "M_boot^(k+1) = M_boot(M_boot^(k))",
+    "expression": "M_boot^(k+1)(B_n)=M_boot(M_boot^k(B_n))",
     "page": "docs/zh/functions/meta/items/MF-0004.md"
   },
   {
@@ -74,7 +74,7 @@
     "status": "active",
     "ordinary_function_counted": false,
     "role": "convergence_judge",
-    "expression": "Converged(B_n) ⇔ ||ΔB_n|| = 0 ∧ ||ΔB_(n+1)|| = 0 ∧ LinkGraphStable(B_n) ∧ DynamicCountsStable(B_n) ∧ NoDuplicateLabels(B_n) ∧ AcademicNoveltyGate(B_n)",
+    "expression": "Converged(B_n) ⇔ B_(n+1)=B_n ∧ ΔB_n=∅ ∧ ∀x∈X_n, (J_n^+(x),J_n^-(x))≠(1,1)",
     "page": "docs/zh/functions/meta/items/MF-0005.md"
   }
 ]

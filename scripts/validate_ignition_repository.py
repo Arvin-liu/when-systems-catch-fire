@@ -180,7 +180,6 @@ def check_meta_functions(errors: list[str]) -> dict[str, int]:
 
     page_text = META_FUNCTION_PAGE.read_text(encoding="utf-8") if META_FUNCTION_PAGE.exists() else ""
     required_terms = [
-        "第 0 节",
         "自举元函数",
         "Bootstrap Meta-Function",
         "M_boot",
@@ -188,7 +187,10 @@ def check_meta_functions(errors: list[str]) -> dict[str, int]:
         "P_track",
         "d(ΔK)/dt",
         "B_n",
+        "N_n",
         "ΔB_n",
+        "B_(n+1)=B_n",
+        "∀x∈X_n",
         "正反双通道",
         "J⁺",
         "J⁻",

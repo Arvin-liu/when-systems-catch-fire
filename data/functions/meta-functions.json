@@ -9,10 +9,10 @@
       "zh": "自举元函数",
       "en": "Bootstrap Meta-Function"
     },
-    "expression": "M_boot = ε_sense × P_track × d(ΔK)/dt",
-    "state_expression": "B_n = (F_n, C_n, D_n, P_n, A_n, L_n)",
-    "bootstrap_cycle": "B_(n+1) = B_n ⊕ ΔB_n",
-    "convergence": "Converged(B_n) ⇔ ||ΔB_n|| = 0 ∧ ||ΔB_(n+1)|| = 0",
+    "expression": "M_boot(B_n) = ε_sense(B_n) × P_track(B_n) × d(ΔK)/dt(B_n)",
+    "state_expression": "B_n = (X_n, R_n, J_n^+, J_n^-, N_n)",
+    "bootstrap_cycle": "B_(n+1) = N_n(B_n ⊕ ΔB_n), ΔB_n = {x∈X_n | J_n^+(x)=1 ∧ J_n^-(x)=0} ∪ {¬x | J_n^+(x)=0 ∧ J_n^-(x)=1}",
+    "convergence": "Converged(B_n) ⇔ B_(n+1)=B_n ∧ ΔB_n=∅ ∧ ∀x∈X_n, (J_n^+(x),J_n^-(x))∈{(1,0),(0,1),(0,0)}",
     "dual_channel": {
       "forward": "MF-0001",
       "reverse": "MF-0002",
@@ -32,41 +32,13 @@
         "MF-0005"
       ]
     },
-    "source_status": "found",
+    "source_status": "source_pending",
     "source_refs": [
-      "dianhuo/originals/1912597766393864312_点火｜自举循环操作手册（2026.06.12更新）.md",
-      "dianhuo/originals/20260610_1912361255428213848_点火-八函数总表（2026.06.10·71案例重跑更新版·含第零节）.md",
-      "dianhuo/originals/2026-06-13T22-01-48_1912719992572948200_点火｜自举元函数：正反双通道完整数学定义.md",
-      "dianhuo/originals/2026-06-13T22-01-49_1912719993645368408_点火｜第0节自举元函数表：MF-0000至MF-0005.md"
+      "canonical-math:MF-0000-forward-reverse-fixed-point"
     ],
-    "related_objects": [
-      {
-        "id": "T14",
-        "title": {
-          "zh": "自举元函数层级",
-          "en": "bootstrap meta-function hierarchy"
-        },
-        "page": "docs/zh/functions/items/T14.md"
-      },
-      {
-        "id": "D141",
-        "title": {
-          "zh": "自举元函数",
-          "en": ""
-        },
-        "page": "docs/zh/functions/items/D141.md"
-      },
-      {
-        "id": "C-0237",
-        "title": {
-          "zh": "好奇心是退出的前哨",
-          "en": ""
-        },
-        "page": "docs/zh/cases/items/C-0237.md"
-      }
-    ],
+    "related_objects": [],
     "page": "docs/zh/functions/meta/MF-0000.md",
-    "reviewer_note": "Original Section 0 recovered from local source-history notes; this is the canonical repo representation for the meta-function layer. Section 0 now also carries a dual-channel judgment table and nested bootstrap subitems.",
+    "reviewer_note": "Pure mathematical representation of the root meta-operator. The current form defines abstract states, relations, forward and reverse judges, normalization, contradiction rejection, and fixed-point convergence without binding the formula to any concrete object class.",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
     "license": "CC-BY-NC-4.0"
