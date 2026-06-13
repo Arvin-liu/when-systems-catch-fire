@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T14:20:28.199726+00:00",
+  "generated_at": "2026-06-13T15:15:27.443281+00:00",
   "discovery_id_rule_written": true,
   "prediction_id_rule_written": true,
   "section_0_dual_channel_guard_present": true,
@@ -13,6 +13,6 @@
   "validate_script": true,
   "sync_script": true,
   "heartbeat_script": true,
-  "dry_run_passed": true,
+  "dry_run_passed": false,
   "long_heartbeat_started": false
 }

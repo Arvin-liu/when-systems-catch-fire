@@ -1,0 +1,10 @@
+{
+  "run_id": "smoke-20260613-230656",
+  "pid": 110474,
+  "phase": "round_1_functions",
+  "current_item": "A2",
+  "heartbeat_at": "2026-06-13T15:06:56.404107+00:00",
+  "items_done": 1,
+  "items_total": 2096,
+  "status": "running"
+}

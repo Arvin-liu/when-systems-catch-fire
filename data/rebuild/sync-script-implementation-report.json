@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-13T14:20:28.199726+00:00",
+  "generated_at": "2026-06-13T15:15:27.443281+00:00",
   "academic_novelty_check_implemented": true,
   "validate_ignition_repository_implemented": true,
   "sync_ignition_knowledge_base_implemented": true,
   "ignition_sync_heartbeat_implemented": true,
-  "dry_run_passed": true,
+  "dry_run_passed": false,
   "long_heartbeat_started": false
 }

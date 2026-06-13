@@ -1,0 +1,33 @@
+{
+  "run_id": "smoke-20260613-230656",
+  "generated_at": "2026-06-13T15:06:56.478974+00:00",
+  "function_total": 2,
+  "case_total": 0,
+  "rounds_completed": 1,
+  "function_true": 2,
+  "function_false": 0,
+  "function_contradiction": 0,
+  "function_underdetermined": 0,
+  "function_pending": 0,
+  "case_true": 0,
+  "case_false_mapping": 0,
+  "case_contradiction": 0,
+  "case_underdetermined": 0,
+  "case_pending": 0,
+  "delta_previous_round": 2,
+  "contradiction_count": 0,
+  "underdetermined_count": 0,
+  "pending_count": 0,
+  "false_count": 0,
+  "converged": false,
+  "status": "bootstrap_incomplete_due_to_round_delta",
+  "outputs": {
+    "function_verification_jsonl": "data/rebuild/dual-channel-function-verification.jsonl",
+    "case_verification_jsonl": "data/rebuild/dual-channel-case-verification.jsonl",
+    "contradictions_jsonl": "data/rebuild/dual-channel-contradictions.jsonl",
+    "underdetermined_jsonl": "data/rebuild/dual-channel-underdetermined.jsonl",
+    "full_report_md": "data/rebuild/dual-channel-full-bootstrap-report.md",
+    "convergence_report_md": "data/rebuild/dual-channel-convergence-report.md"
+  },
+  "round": 2
+}

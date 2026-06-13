@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 REPORT_MD = REPO_ROOT / "data/rebuild/sync-dry-run-report.md"
 REPORT_JSON = REPO_ROOT / "data/rebuild/sync-dry-run-report.json"
 NOVELTY_REPORT_MD = REPO_ROOT / "data/rebuild/academic-novelty-rule-report.md"

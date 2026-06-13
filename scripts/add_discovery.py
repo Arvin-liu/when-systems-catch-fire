@@ -13,7 +13,7 @@ from pathlib import Path
 from discovery_category_utils import CATEGORY_DIR, CATEGORY_MAP_JSON, render_category_page, resolve_categories, update_category_map_with_discovery
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 DISCOVERY_JSON = REPO_ROOT / "data/discoveries/unified-discoveries.json"
 DISCOVERY_JSONL = REPO_ROOT / "data/discoveries/unified-discoveries.jsonl"
 DISCOVERY_INDEX_MD = REPO_ROOT / "data/discoveries/unified-discoveries-index.md"

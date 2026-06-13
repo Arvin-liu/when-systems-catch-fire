@@ -14,7 +14,7 @@ from answer_utils import (
 )
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 FUNCTIONS_META_JSON = REPO_ROOT / "data/functions/meta-functions.json"
 BOOTSTRAP_META_TABLE_JSON = REPO_ROOT / "data/functions/bootstrap-meta-function-table.json"
 DISCOVERIES_JSON = REPO_ROOT / "data/discoveries/unified-discoveries.json"

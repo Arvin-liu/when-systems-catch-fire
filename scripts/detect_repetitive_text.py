@@ -12,7 +12,7 @@ from pathlib import Path
 from display_utils import is_mostly_cjk
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 REPORT_MD = REPO_ROOT / "data/rebuild/repetitive-text-report.md"
 REPORT_JSON = REPO_ROOT / "data/rebuild/repetitive-text-report.json"
 

@@ -1,6 +1,6 @@
 # Academic Novelty Rule Report
 
-- generated_at: 2026-06-13T14:20:28.199726+00:00
+- generated_at: 2026-06-13T15:15:27.443281+00:00
 - discovery_id_rule_written: True
 - prediction_id_rule_written: True
 - section_0_dual_channel_guard_present: True
@@ -14,5 +14,5 @@
 - validate_script: True
 - sync_script: True
 - heartbeat_script: True
-- dry_run_passed: True
+- dry_run_passed: False
 - long_heartbeat_started: False

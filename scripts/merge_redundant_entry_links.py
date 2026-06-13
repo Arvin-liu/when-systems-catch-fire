@@ -21,7 +21,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 REPORT_MD = REPO_ROOT / "data/rebuild/link-entry-merge-report.md"
 REPORT_JSON = REPO_ROOT / "data/rebuild/link-entry-merge-report.json"
 

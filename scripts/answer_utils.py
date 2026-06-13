@@ -12,7 +12,7 @@ from pathlib import Path
 from display_utils import format_bilingual_title
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 ANSWER_DIR = REPO_ROOT / "docs/zh/answers"
 CATEGORY_DIR = ANSWER_DIR / "categories"
 ITEM_DIR = ANSWER_DIR / "items"
