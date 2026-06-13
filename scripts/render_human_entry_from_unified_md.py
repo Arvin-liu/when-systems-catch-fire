@@ -45,6 +45,7 @@ OUT_FUNC_META_INDEX_MD = REPO_ROOT / "data/functions/meta-functions-index.md"
 OUT_FUNC_BOOTSTRAP_TABLE_JSON = REPO_ROOT / "data/functions/bootstrap-meta-function-table.json"
 OUT_FUNC_BOOTSTRAP_TABLE_JSONL = REPO_ROOT / "data/functions/bootstrap-meta-function-table.jsonl"
 OUT_FUNC_BOOTSTRAP_TABLE_MD = REPO_ROOT / "data/functions/bootstrap-meta-function-table.md"
+OUT_FUNC_DERIVATION_SUPPLEMENTS_JSON = REPO_ROOT / "data/functions/function-derivation-supplements.json"
 
 OUT_CASE_JSON = REPO_ROOT / "data/cases/unified-cases.json"
 OUT_CASE_JSONL = REPO_ROOT / "data/cases/unified-cases.jsonl"
@@ -464,7 +465,19 @@ def parse_function_table(path: Path) -> List[dict]:
         seen.add(record["id"])
         if not record["title"]["zh"].strip():
             raise RuntimeError(f"Empty function title for {record['id']}")
+    attach_function_derivations(records)
     return records
+
+
+def attach_function_derivations(records: List[dict]) -> None:
+    if not OUT_FUNC_DERIVATION_SUPPLEMENTS_JSON.exists():
+        return
+    supplements = json.loads(OUT_FUNC_DERIVATION_SUPPLEMENTS_JSON.read_text(encoding="utf-8"))
+    by_id = {item["id"]: item.get("derivation") for item in supplements if item.get("id")}
+    for record in records:
+        derivation = by_id.get(record["id"])
+        if derivation:
+            record["derivation"] = derivation
 
 
 def parse_case_table(path: Path) -> List[dict]:
@@ -755,6 +768,33 @@ def render_related_cases_block(func: dict, current_path: Path, limit: int | None
     return "\n".join(lines)
 
 
+def render_derivation_block(func: dict, current_path: Path | None = None, limit: int | None = None) -> str:
+    derivation = func.get("derivation") or {}
+    if not derivation:
+        return "暂无结构化推导补充 / No structured derivation supplement yet."
+    steps = derivation.get("steps") or []
+    if limit is not None:
+        steps = steps[:limit]
+    lines = [
+        f"- 推导类型 / Derivation type: `{derivation.get('kind', 'unknown')}`",
+        f"- 收敛状态 / Convergence status: `{derivation.get('status', 'unknown')}`",
+    ]
+    deps = (derivation.get("depends_on") or []) + (derivation.get("meta_depends_on") or [])
+    if deps:
+        lines.append(f"- 依赖 / Depends on: {', '.join(f'`{dep}`' for dep in deps)}")
+    if steps:
+        lines.append("- 过程 / Process:")
+        lines.extend(f"  - {step}" for step in steps)
+    constants = derivation.get("constant_derivations") or []
+    if constants:
+        lines.append("- 常数项 / Constants:")
+        for item in constants[: limit or None]:
+            lines.append(
+                f"  - `{item.get('value')}`: {item.get('class')} / {item.get('status')} - {item.get('derivation')}"
+            )
+    return "\n".join(lines)
+
+
 def render_function_card(func: dict, current_path: Path, related_limit: int = 5) -> str:
     title = format_bilingual_title(func["title"]["zh"], func["title"]["en"])
     detail_link = rel_link(current_path, REPO_ROOT / func["links"]["human_page"])
@@ -763,6 +803,7 @@ def render_function_card(func: dict, current_path: Path, related_limit: int = 5)
     explanation = func["explanation"]["zh"]
     explanation_en = safe_english(func["explanation"]["en"] or translate_text(explanation))
     related_block = render_related_cases_block(func, current_path, limit=related_limit)
+    derivation_block = render_derivation_block(func, current_path, limit=2)
     more_line = ""
     if len(func.get("related_cases", [])) > related_limit:
         more_line = f"- 更多 / More: [查看函数详情 / View function page]({detail_link})"
@@ -778,6 +819,9 @@ def render_function_card(func: dict, current_path: Path, related_limit: int = 5)
             "**说明 / Explanation**",
             f"中文：{explanation}",
             f"English: {explanation_en}",
+            "",
+            "**推导补充 / Derivation Supplement**",
+            derivation_block,
             "",
             "**关联案例 / Related Cases**",
             related_block,
@@ -1128,6 +1172,10 @@ def render_detail_function_page(func: dict) -> str:
             "",
             "English:",
             safe_english(func["explanation"]["en"] or translate_text(func["explanation"]["zh"])),
+            "",
+            "## 推导补充 / Derivation Supplement",
+            "",
+            render_derivation_block(func, current_path),
             "",
             "## 关联案例 / Related Cases",
             "",

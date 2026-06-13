@@ -1,6 +1,6 @@
 # Bilingual Label Cleanup Report
 
-- files_scanned: 8739
+- files_scanned: 6663
 - markdown_files_changed: 0
 - json_files_changed: 0
 - bilingual_pairs_cleared: 0

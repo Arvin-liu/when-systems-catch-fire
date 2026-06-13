@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T15:52:34.947157+00:00",
+  "generated_at": "2026-06-13T16:33:10.695239+00:00",
   "dry_run": true,
   "results": [
     {
@@ -13,7 +13,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 0.35
+      "duration_s": 0.411
     },
     {
       "cmd": [
@@ -26,7 +26,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 14.542
+      "duration_s": 11.503
     },
     {
       "cmd": [
@@ -39,7 +39,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 0.47
+      "duration_s": 0.765
     },
     {
       "cmd": [
@@ -52,7 +52,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 0.252
+      "duration_s": 0.375
     },
     {
       "cmd": [
@@ -65,7 +65,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 0.166
+      "duration_s": 0.159
     },
     {
       "cmd": [
@@ -74,11 +74,11 @@
         "--check"
       ],
       "returncode": 0,
-      "stdout": "# Link Entry Merge Report / 链接入口合并报告\n\n- Scanned files / 扫描文件：4078\n- Changed files / 变更文件：0\n- Tables merged / 合并表格：0\n- Columns removed / 删除列：0\n\nNo redundant entry/link columns found.\n\n",
+      "stdout": "# Link Entry Merge Report / 链接入口合并报告\n\n- Scanned files / 扫描文件：4083\n- Changed files / 变更文件：0\n- Tables merged / 合并表格：0\n- Columns removed / 删除列：0\n\nNo redundant entry/link columns found.\n\n",
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 2.292
+      "duration_s": 2.316
     },
     {
       "cmd": [
@@ -91,7 +91,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 0.346
+      "duration_s": 0.145
     }
   ]
 }
