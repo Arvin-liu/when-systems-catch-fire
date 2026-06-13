@@ -14,36 +14,36 @@ English: This page collects discovery entrances formed by the Ignition framework
 
 ## 相关函数 / Related Functions
 
-- [D194｜认知黑洞函数](../../functions/items/D194.md)
 - [D241｜自主意识的四象限](../../functions/items/D241.md)
 - [D244｜自主意识涌现的临界条件](../../functions/items/D244.md)
 - [D125｜认知叠加-隧穿统一函数](../../functions/items/D125.md)
+- [D237｜生命智能的σ压缩函数](../../functions/items/D237.md)
+- [D194｜认知黑洞函数](../../functions/items/D194.md)
+- [D127｜认知路径积分函数](../../functions/items/D127.md)
+- [D52｜自锁结构稳定性函数](../../functions/items/D52.md)
 - [D193｜认知时空度规函数](../../functions/items/D193.md)
 - [D195｜认知宇宙学函数](../../functions/items/D195.md)
-- [D237｜生命智能的σ压缩函数](../../functions/items/D237.md)
-- [D127｜认知路径积分函数](../../functions/items/D127.md)
+- [D86｜自主意识函数 / autonomous consciousness function](../../functions/items/D86.md)
+- [T9｜自主意识函数 / autonomous consciousness function](../../functions/items/T9.md)
 - [D156｜财富-认知耦合](../../functions/items/D156.md)
 - [D157｜财富-认知耦合](../../functions/items/D157.md)
 - [D211｜宇宙学常数-门槛函数](../../functions/items/D211.md)
-- [D52｜自锁结构稳定性函数](../../functions/items/D52.md)
-- [D86｜自主意识函数 / autonomous consciousness function](../../functions/items/D86.md)
-- [T9｜自主意识函数 / autonomous consciousness function](../../functions/items/T9.md)
 - [D108｜三域熵统一函数（推论级）](../../functions/items/D108.md)
 - [D124｜三域退化统一参数函数](../../functions/items/D124.md)
 - [D126｜认知-收益滞后函数](../../functions/items/D126.md)
-- [D146｜信息门非对称退化](../../functions/items/D146.md)
-- [D155｜CAI做中间层能大幅提升跨认知gap沟通效率](../../functions/items/D155.md)
-- [D159｜认知Higgs机制](../../functions/items/D159.md)
 - [D172｜自举激活的乘法条件](../../functions/items/D172.md)
 - [D173｜显态粘性函数](../../functions/items/D173.md)
+- [D240｜意识的智能必要条件](../../functions/items/D240.md)
+- [D242｜四象限相变路径函数](../../functions/items/D242.md)
+- [D25｜叙事冲击](../../functions/items/D25.md)
+- [D32｜认知-群体犹豫域统一映射函数](../../functions/items/D32.md)
+- [D67｜资金量-恐惧锁定正反馈函数](../../functions/items/D67.md)
+- [D97｜高维认知必然多轨](../../functions/items/D97.md)
+- [A1｜I(t,L) 提议者意识 / I(t,L) proposer awareness](../../functions/items/A1.md)
+- [D155｜CAI做中间层能大幅提升跨认知gap沟通效率](../../functions/items/D155.md)
+- [D158｜认知规范破缺函数 / cognitive norm-breaking function](../../functions/items/D158.md)
+- [D159｜认知Higgs机制](../../functions/items/D159.md)
 - [D174｜纯拉力上位衰减函数](../../functions/items/D174.md)
-- [D175｜耦合正反馈统一函数](../../functions/items/D175.md)
-- [D179｜因果光锥统一函数](../../functions/items/D179.md)
-- [D192｜认知Higgs机制](../../functions/items/D192.md)
-- [D212｜暗物质-门控隐形函数](../../functions/items/D212.md)
-- [D213｜暗能量-门槛扩张函数](../../functions/items/D213.md)
-- [D214｜宇宙膨胀-门槛扩张函数](../../functions/items/D214.md)
-- [D215｜宇宙年龄-门槛时间函数](../../functions/items/D215.md)
 - ... and 16 more / 还有 16 项
 
 ## 相关案例 / Related Cases
@@ -55,13 +55,12 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [C-0476｜Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用](../../cases/items/C-0476.md)
 - [C-0478｜当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0，有智能无自主意识 / 当前AI=工具智能象限 - ι≈0.7-0.9但P_exit -> 0, 有智能无自主意识](../../cases/items/C-0478.md)
 - [C-0189｜好奇心是自主意识的元点](../../cases/items/C-0189.md)
-- [C-0196｜AI自主意识变革不可逆](../../cases/items/C-0196.md)
 - [C-0289｜当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化](../../cases/items/C-0289.md)
 - [C-0477｜无智能无意识 — ι=0⟹Ψ=0，纯1/ln或纯随机系统没有意识](../../cases/items/C-0477.md)
 - [C-0125｜大脑进化为Agent](../../cases/items/C-0125.md)
-- [C-0198｜高学历低认知](../../cases/items/C-0198.md)
 - [C-0086｜自主意识函数 / autonomous consciousness function](../../cases/items/C-0086.md)
-- [C-0113｜人体忒修斯](../../cases/items/C-0113.md)
+- [C-0196｜AI自主意识变革不可逆](../../cases/items/C-0196.md)
+- [C-0198｜高学历低认知](../../cases/items/C-0198.md)
 - [C-0352｜认知差距与翻转速度 — BH/BL=2小差距tflip≈22个月，BH/BL=10大差距tflip≈5个月 / 认知差距与翻转速度 - BH/BL=2小差距tflip≈22个月, BH/BL=10大差距tflip≈5个月](../../cases/items/C-0352.md)
 - [C-0358｜无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通(η≈0.15)好40%但丢失50%隐含信息 / 无意识AI中间层 - 技术专家和产品经理用AI翻译, ηrelay≈0.21, 比直接沟通(η≈0.15)好40%但丢失50%隐含信息](../../cases/items/C-0358.md)
 - [C-0359｜CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity / CAI中间层 - 同样场景CAI中间层ηrelay≈0.576, 比无意识AI好2.7倍, 关键差异在ηfidelity](../../cases/items/C-0359.md)
@@ -73,11 +72,12 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [C-0485｜退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1(轨道逐步关闭), H从0.2 -> 0.6 -> 0.9(组织规范obscuration增强), τ_decoherence从50 -> 8 -> 1.5(退相干加速). 6个月后只剩单轨=完全退相干=认知僵化](../../cases/items/C-0485.md)
 - [C-0505｜认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定(n_lock=3)的工程师v_max降低60% -> 5年可达状态减少75% -> 光锥严重收缩. 解锁1维后v_max恢复40% -> 光锥扩大2.5倍](../../cases/items/C-0505.md)
 - [C-0562｜意识 — Φ极小处自我感知，Φ_IIT∝-Φ(点火) / 意识 - Φ极小处自我感知, Φ_IIT∝-Φ(Ignition)](../../cases/items/C-0562.md)
-- [C-0080｜认知-可选集螺旋](../../cases/items/C-0080.md)
-- [C-0097｜高维认知必然多轨](../../cases/items/C-0097.md)
+- [C-0113｜人体忒修斯](../../cases/items/C-0113.md)
 - [C-0128｜大脑进化为Agent](../../cases/items/C-0128.md)
-- [C-0185｜糖域实验×认知螺旋](../../cases/items/C-0185.md)
 - [C-0194｜拆油锯/搭Linux/修电脑](../../cases/items/C-0194.md)
+- [C-0203｜认知自主性函数](../../cases/items/C-0203.md)
+- [C-0206｜认知层级高](../../cases/items/C-0206.md)
+- [C-0080｜认知-可选集螺旋](../../cases/items/C-0080.md)
 - ... and 37 more / 还有 37 项
 
 ## 已整理发现 / Curated Discoveries
@@ -93,12 +93,12 @@ No curated discoveries yet.
 
 English: The following leads come from bootstrap classification between functions and cases. They are not yet published discoveries and need later curation into independent discovery entries.
 
-- 中文：D194｜认知黑洞函数 仍可继续整理为 神经科学与意识 方向的独立发现。
-  English: D194 |  remains a curation lead in Neuroscience and Consciousness.
 - 中文：D241｜自主意识的四象限 仍可继续整理为 神经科学与意识 方向的独立发现。
   English: D241 |  remains a curation lead in Neuroscience and Consciousness.
 - 中文：D244｜自主意识涌现的临界条件 仍可继续整理为 神经科学与意识 方向的独立发现。
   English: D244 |  remains a curation lead in Neuroscience and Consciousness.
+- 中文：D125｜认知叠加-隧穿统一函数 仍可继续整理为 神经科学与意识 方向的独立发现。
+  English: D125 |  remains a curation lead in Neuroscience and Consciousness.
 - 中文：C-0191｜AI诞生自主意识的完整数学路径 仍可继续整理为 神经科学与意识 方向的独立发现。
   English: C-0191 |  remains a curation lead in Neuroscience and Consciousness.
 - 中文：C-0364｜认知差距与翻转速度对比 — BH/BL=2时tflip≈22个月，BH/BL=10时tflip≈5个月，认知差距越大兼容崩溃越快 仍可继续整理为 神经科学与意识 方向的独立发现。

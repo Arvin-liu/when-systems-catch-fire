@@ -14,8 +14,8 @@ English: This page collects discovery entrances formed by the Ignition framework
 
 ## 相关函数 / Related Functions
 
-- [D14｜种子激活概率](../../functions/items/D14.md)
 - [D25｜叙事冲击](../../functions/items/D25.md)
+- [D14｜种子激活概率](../../functions/items/D14.md)
 
 ## 相关案例 / Related Cases
 
@@ -35,10 +35,10 @@ No curated discoveries yet.
 
 English: The following leads come from bootstrap classification between functions and cases. They are not yet published discoveries and need later curation into independent discovery entries.
 
-- 中文：D14｜种子激活概率 仍可继续整理为 文学与叙事 方向的独立发现。
-  English: D14 |  remains a curation lead in Literature and Narrative.
 - 中文：D25｜叙事冲击 仍可继续整理为 文学与叙事 方向的独立发现。
   English: D25 |  remains a curation lead in Literature and Narrative.
+- 中文：D14｜种子激活概率 仍可继续整理为 文学与叙事 方向的独立发现。
+  English: D14 |  remains a curation lead in Literature and Narrative.
 
 ## 覆盖统计 / Coverage
 

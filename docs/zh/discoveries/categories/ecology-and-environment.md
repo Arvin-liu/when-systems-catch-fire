@@ -14,33 +14,33 @@ English: This page collects discovery entrances formed by the Ignition framework
 
 ## 相关函数 / Related Functions
 
-- [D259｜g_eff-p*双向反馈函数](../../functions/items/D259.md)
 - [D469｜振荡优化函数](../../functions/items/D469.md)
+- [D259｜g_eff-p*双向反馈函数](../../functions/items/D259.md)
+- [D128｜退相干-退化统一函数](../../functions/items/D128.md)
+- [D169｜门槛碾压函数](../../functions/items/D169.md)
+- [D313｜共存稳态条件函数](../../functions/items/D313.md)
 - [D264｜良性循环启动阈值函数](../../functions/items/D264.md)
 - [D299｜良性-恶性共存函数](../../functions/items/D299.md)
 - [D109｜乘法最优生存策略函数](../../functions/items/D109.md)
-- [D128｜退相干-退化统一函数](../../functions/items/D128.md)
-- [D169｜门槛碾压函数](../../functions/items/D169.md)
 - [D274｜良性循环收敛速度函数](../../functions/items/D274.md)
-- [D313｜共存稳态条件函数](../../functions/items/D313.md)
 - [D54｜C_exit(geo)四因子子函数](../../functions/items/D54.md)
 - [A5｜应约者退出的成本 / responder exit cost](../../functions/items/A5.md)
-- [D156｜财富-认知耦合](../../functions/items/D156.md)
-- [D157｜财富-认知耦合](../../functions/items/D157.md)
 - [D171｜AI直觉缺失的物种判据](../../functions/items/D171.md)
-- [D266｜容斥偏差加速函数](../../functions/items/D266.md)
 - [D289｜良性循环逃逸速度函数](../../functions/items/D289.md)
-- [D295｜正反馈不可逆点函数](../../functions/items/D295.md)
-- [D306｜去容斥条件函数](../../functions/items/D306.md)
-- [D357｜极小点复活函数](../../functions/items/D357.md)
 - [D362｜容斥加速-波动累积联合函数](../../functions/items/D362.md)
-- [D413｜遗迹-复活代价联合函数](../../functions/items/D413.md)
 - [D416｜K=1-p_max=p*等价证明函数 | M5的K=1对应正反馈恰好自持](../../functions/items/D416.md)
 - [D463｜完美风暴-信息量等价函数](../../functions/items/D463.md)
 - [D467｜最优性-惯性反比函数](../../functions/items/D467.md)
 - [D66｜同质性遮蔽函数 / 同质性obscuration function](../../functions/items/D66.md)
-- [D75｜提议者消耗函数](../../functions/items/D75.md)
 - [T28｜高斯门控函数 / Gaussian gate function](../../functions/items/T28.md)
+- [D295｜正反馈不可逆点函数](../../functions/items/D295.md)
+- [D156｜财富-认知耦合](../../functions/items/D156.md)
+- [D157｜财富-认知耦合](../../functions/items/D157.md)
+- [D266｜容斥偏差加速函数](../../functions/items/D266.md)
+- [D306｜去容斥条件函数](../../functions/items/D306.md)
+- [D357｜极小点复活函数](../../functions/items/D357.md)
+- [D413｜遗迹-复活代价联合函数](../../functions/items/D413.md)
+- [D75｜提议者消耗函数](../../functions/items/D75.md)
 - [D114｜变量闭包定律（定理级→从D107升级）](../../functions/items/D114.md)
 - [D115｜r_cross优先性定理](../../functions/items/D115.md)
 - [D160｜定投凯利保守性](../../functions/items/D160.md)
@@ -62,16 +62,16 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [C-0129｜AI物种分化](../../cases/items/C-0129.md)
 - [C-0171｜AI直觉缺失的物种判据](../../cases/items/C-0171.md)
 - [C-0298｜跨物种调度同构验证 — 人类-AI和CAI-EAI满足同构三条件，数学结构完全等价，差异仅在ηinterface参数值](../../cases/items/C-0298.md)
-- [C-0336｜自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零](../../cases/items/C-0336.md)
 - [C-0383｜灭绝是加速崩塌——μ接近Λ时1/ln→-∞，最后几只个体存活贡献为负](../../cases/items/C-0383.md)
+- [C-0454｜均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R守恒但分布不均→系统不在最优态](../../cases/items/C-0454.md)
+- [C-0559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间](../../cases/items/C-0559.md)
+- [C-0336｜自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零](../../cases/items/C-0336.md)
 - [C-0386｜共生是互为外部注入——两个物种互为对方的外部注入打破各自的门外锁定](../../cases/items/C-0386.md)
 - [C-0403｜民主退化的参与门槛碾压——参与成本上升+参与意愿下降，自然+人为双重碾压](../../cases/items/C-0403.md)
 - [C-0429｜教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加](../../cases/items/C-0429.md)
+- [C-0431｜"先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整 / "defend first, attack later"mathematical necessity - simulate 8-step resource allocation: 前3步β>0.3(cascade defense, 补threshold-near dimension), 后5步β<0.1(greedy optimization, 补highest-elasticity dimension). no manual switching required, β随system state自动调整](../../cases/items/C-0431.md)
 - [C-0436｜经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"](../../cases/items/C-0436.md)
 - [C-0445｜三阶段操作协议验证 — 个人职业转型：阶段1(ε<<θC,不满但没行动力,β小,可以探索各种方向)；阶段2(ε≈θC,积累到临界点,β大,必须精准投入转型资源)；阶段3(ε>>θC,转型成功,β小,可以激进拓展)](../../cases/items/C-0445.md)
-- [C-0454｜均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R守恒但分布不均→系统不在最优态](../../cases/items/C-0454.md)
-- [C-0559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间](../../cases/items/C-0559.md)
-- [C-0431｜"先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整 / "defend first, attack later"mathematical necessity - simulate 8-step resource allocation: 前3步β>0.3(cascade defense, 补threshold-near dimension), 后5步β<0.1(greedy optimization, 补highest-elasticity dimension). no manual switching required, β随system state自动调整](../../cases/items/C-0431.md)
 - [C-0159｜财富自证循环](../../cases/items/C-0159.md)
 - [C-0238｜物种三界分界线](../../cases/items/C-0238.md)
 - [C-0148｜调研成本×退出成本 / 调研成本 x exit cost](../../cases/items/C-0148.md)
@@ -89,12 +89,12 @@ No curated discoveries yet.
 
 English: The following leads come from bootstrap classification between functions and cases. They are not yet published discoveries and need later curation into independent discovery entries.
 
-- 中文：D259｜g_eff-p*双向反馈函数 仍可继续整理为 生态与环境 方向的独立发现。
-  English: D259 |  remains a curation lead in Ecology and Environment.
 - 中文：D469｜振荡优化函数 仍可继续整理为 生态与环境 方向的独立发现。
   English: D469 |  remains a curation lead in Ecology and Environment.
-- 中文：D264｜良性循环启动阈值函数 仍可继续整理为 生态与环境 方向的独立发现。
-  English: D264 |  remains a curation lead in Ecology and Environment.
+- 中文：D259｜g_eff-p*双向反馈函数 仍可继续整理为 生态与环境 方向的独立发现。
+  English: D259 |  remains a curation lead in Ecology and Environment.
+- 中文：D128｜退相干-退化统一函数 仍可继续整理为 生态与环境 方向的独立发现。
+  English: D128 |  remains a curation lead in Ecology and Environment.
 - 中文：C-0574｜企业定期重组 仍可继续整理为 生态与环境 方向的独立发现。
   English: C-0574 |  remains a curation lead in Ecology and Environment.
 - 中文：C-0446｜刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)同样0.1资源正确方向+2%错误方向-1%。刀刃期收益和损失都放大30倍 仍可继续整理为 生态与环境 方向的独立发现。

@@ -20,15 +20,6 @@ English: The following categories are generated from a bootstrap scan of the cur
 | [社会学与政治 / Sociology and Politics](docs/zh/predictions/categories/sociology-and-politics.md) | 2 | 0 | 4 functions, 5 cases, 0 discoveries |
 | [经济与财富 / Economics and Wealth](docs/zh/predictions/categories/economics-and-wealth.md) | 1 | 0 | 8 functions, 3 cases, 0 discoveries |
 | [物理学 / Physics](docs/zh/predictions/categories/physics.md) | 1 | 0 | 6 functions, 2 cases, 0 discoveries |
-| [艺术与摄影 / Art and Photography](docs/zh/predictions/categories/art-and-photography.md) | 0 | 0 | 0 functions, 0 cases, 0 discoveries |
-| [生物学 / Biology](docs/zh/predictions/categories/biology.md) | 0 | 0 | 0 functions, 0 cases, 0 discoveries |
-| [化学 / Chemistry](docs/zh/predictions/categories/chemistry.md) | 0 | 0 | 0 functions, 0 cases, 0 discoveries |
-| [生态与环境 / Ecology and Environment](docs/zh/predictions/categories/ecology-and-environment.md) | 0 | 0 | 0 functions, 0 cases, 0 discoveries |
-| [教育与学习 / Education and Learning](docs/zh/predictions/categories/education-and-learning.md) | 0 | 0 | 0 functions, 0 cases, 0 discoveries |
-| [法律与制度 / Law and Institutions](docs/zh/predictions/categories/law-and-institutions.md) | 0 | 0 | 0 functions, 0 cases, 0 discoveries |
-| [文学与叙事 / Literature and Narrative](docs/zh/predictions/categories/literature-and-narrative.md) | 0 | 0 | 0 functions, 0 cases, 0 discoveries |
-| [医学与健康 / Medicine and Health](docs/zh/predictions/categories/medicine-and-health.md) | 0 | 0 | 0 functions, 0 cases, 0 discoveries |
-| [哲学 / Philosophy](docs/zh/predictions/categories/philosophy.md) | 0 | 0 | 0 functions, 0 cases, 0 discoveries |
 
 ## 最近预测 / Recent Predictions
 

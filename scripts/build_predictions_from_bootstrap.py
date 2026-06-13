@@ -794,6 +794,8 @@ def render_index(predictions: list[dict], categories: list[dict]) -> str:
         if category["id"] == "other":
             continue
         coverage = category["coverage"]
+        if coverage["curated_predictions_count"] + coverage["prediction_leads_count"] <= 0:
+            continue
         lines.append(
             f"| [{format_bilingual_title(category['title'].get('zh'), category['title'].get('en'))}]({rel_link(PREDICTIONS_HUMAN_MD, REPO_ROOT / category['page'])}) | {coverage['curated_predictions_count']} | {coverage['prediction_leads_count']} | {coverage['related_functions_count']} functions, {coverage['related_cases_count']} cases, {coverage['related_discoveries_count']} discoveries |"
         )

@@ -20,12 +20,12 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [D100｜AI多轨进化](../../functions/items/D100.md)
 - [D101｜生物体死亡](../../functions/items/D101.md)
 - [D171｜AI直觉缺失的物种判据](../../functions/items/D171.md)
-- [D253｜信息维度-容斥权衡函数](../../functions/items/D253.md)
-- [D256｜阶段宽度-门控面数函数](../../functions/items/D256.md)
+- [D320｜容斥加速跨域标度函数](../../functions/items/D320.md)
 - [D269｜阶段过渡锐度函数](../../functions/items/D269.md)
 - [D284｜σ_opt跨域常数函数](../../functions/items/D284.md)
-- [D320｜容斥加速跨域标度函数](../../functions/items/D320.md)
 - [T29｜门控函数进化三阶段 / three-stage evolution of gate functions](../../functions/items/T29.md)
+- [D253｜信息维度-容斥权衡函数](../../functions/items/D253.md)
+- [D256｜阶段宽度-门控面数函数](../../functions/items/D256.md)
 
 ## 相关案例 / Related Cases
 
@@ -44,8 +44,8 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [C-0357｜共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维](../../cases/items/C-0357.md)
 - [C-0386｜共生是互为外部注入——两个物种互为对方的外部注入打破各自的门外锁定](../../cases/items/C-0386.md)
 - [C-0113｜人体忒修斯](../../cases/items/C-0113.md)
-- [C-0222｜边界优化=变分问题](../../cases/items/C-0222.md)
 - [C-0238｜物种三界分界线](../../cases/items/C-0238.md)
+- [C-0222｜边界优化=变分问题](../../cases/items/C-0222.md)
 - [C-0125｜大脑进化为Agent](../../cases/items/C-0125.md)
 - [C-0128｜大脑进化为Agent](../../cases/items/C-0128.md)
 - [C-0135｜大脑进化为Agent](../../cases/items/C-0135.md)

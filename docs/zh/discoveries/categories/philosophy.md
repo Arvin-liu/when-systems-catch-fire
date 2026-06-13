@@ -14,48 +14,48 @@ English: This page collects discovery entrances formed by the Ignition framework
 
 ## 相关函数 / Related Functions
 
-- [D220｜完全统一不可能定理](../../functions/items/D220.md)
 - [D226｜物理存在的三重时间约束](../../functions/items/D226.md)
+- [D220｜完全统一不可能定理](../../functions/items/D220.md)
+- [T23｜Φ跨域稳定性定理 / Φcross-domain stability theorem](../../functions/items/T23.md)
 - [D229｜物理存在的四重约束与衰减终态](../../functions/items/D229.md)
 - [D45｜中间稳态存在性函数](../../functions/items/D45.md)
+- [D392｜不可逆-缓冲消失同步函数](../../functions/items/D392.md)
 - [D279｜干预时机悖论函数](../../functions/items/D279.md)
 - [D311｜僵尸态函数](../../functions/items/D311.md)
-- [D392｜不可逆-缓冲消失同步函数](../../functions/items/D392.md)
-- [T23｜Φ跨域稳定性定理 / Φcross-domain stability theorem](../../functions/items/T23.md)
 - [D115｜r_cross优先性定理](../../functions/items/D115.md)
-- [D138｜三效率（选择/判断/时间）存在三角约束](../../functions/items/D138.md)
 - [D142｜信息门效率统一函数 / information-gate efficiency unification函数](../../functions/items/D142.md)
-- [D143｜投资相关函数](../../functions/items/D143.md)
-- [D144｜投资相关函数](../../functions/items/D144.md)
-- [D218｜物理存在必要条件](../../functions/items/D218.md)
-- [D219｜Ω最优区间定理](../../functions/items/D219.md)
-- [D223｜物理存在的时间窗口定理](../../functions/items/D223.md)
-- [D225｜引力B型必要性定理](../../functions/items/D225.md)
-- [D228｜T33修正](../../functions/items/D228.md)
-- [D232｜信息守恒-衰减悖论与黑洞](../../functions/items/D232.md)
 - [D289｜良性循环逃逸速度函数](../../functions/items/D289.md)
-- [D308｜阶段过渡滞后函数](../../functions/items/D308.md)
-- [D310｜阶段2临界宽度函数](../../functions/items/D310.md)
-- [D334｜容斥加速饱和函数](../../functions/items/D334.md)
-- [D339｜僵尸态救援函数](../../functions/items/D339.md)
 - [D378｜实际不可逆占比函数](../../functions/items/D378.md)
-- [D410｜不可逆线完整分类函数](../../functions/items/D410.md)
-- [D424｜两步策略唯一性函数](../../functions/items/D424.md)
 - [D464｜幽灵超指数衰减函数](../../functions/items/D464.md)
 - [D468｜吸引子-陷阱等价函数](../../functions/items/D468.md)
 - [D470｜幽灵跳变阻尼函数](../../functions/items/D470.md)
+- [T34｜量子引力Φ框架函数 / quantum-gravity Phi framework function](../../functions/items/T34.md)
+- [T39｜Φ跨域统一定理（D224升级）](../../functions/items/T39.md)
+- [D138｜三效率（选择/判断/时间）存在三角约束](../../functions/items/D138.md)
+- [D218｜物理存在必要条件](../../functions/items/D218.md)
+- [D223｜物理存在的时间窗口定理](../../functions/items/D223.md)
+- [D232｜信息守恒-衰减悖论与黑洞](../../functions/items/D232.md)
+- [D339｜僵尸态救援函数](../../functions/items/D339.md)
+- [D143｜投资相关函数](../../functions/items/D143.md)
+- [D144｜投资相关函数](../../functions/items/D144.md)
+- [D219｜Ω最优区间定理](../../functions/items/D219.md)
+- [D225｜引力B型必要性定理](../../functions/items/D225.md)
+- [D228｜T33修正](../../functions/items/D228.md)
+- [D308｜阶段过渡滞后函数](../../functions/items/D308.md)
+- [D310｜阶段2临界宽度函数](../../functions/items/D310.md)
+- [D334｜容斥加速饱和函数](../../functions/items/D334.md)
 - ... and 3 more / 还有 3 项
 
 ## 相关案例 / Related Cases
 
 - [C-0527｜EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9 / EPR悖论 - 局域性和实在性是连续因子不是布尔量, B=ε_loc x ε_real≈0.9](../../cases/items/C-0527.md)
 - [C-0469｜认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在Fisher距离∞的区域。打开新轨道（跨域学习）=增加Fisher可达性 / 认知僵化Fisher解释 - 专家P_track=1(单轨), ε_aware=0, Fisher可达性=0. 新信息存在但无法整合=信息在Fisher距离∞的区域. 打开新轨道(跨域学习)=增加Fisher可达性](../../cases/items/C-0469.md)
-- [C-0326｜信息门的方向无关性 — 不存在"我说清楚了但你听不懂"，门效率低两侧同时受影响](../../cases/items/C-0326.md)
 - [C-0398｜顿悟无中间态——μ越过Λ_awareness的瞬间相变，不存在"半懂"](../../cases/items/C-0398.md)
 - [C-0500｜宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例](../../cases/items/C-0500.md)
 - [C-0555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0](../../cases/items/C-0555.md)
-- [C-0219｜闭合缺失锁死收敛概率](../../cases/items/C-0219.md)
+- [C-0326｜信息门的方向无关性 — 不存在"我说清楚了但你听不懂"，门效率低两侧同时受影响](../../cases/items/C-0326.md)
 - [C-0019｜新中国成立](../../cases/items/C-0019.md)
+- [C-0219｜闭合缺失锁死收敛概率](../../cases/items/C-0219.md)
 - [C-0570｜市场改革悖论](../../cases/items/C-0570.md)
 
 ## 已整理发现 / Curated Discoveries
@@ -71,12 +71,12 @@ No curated discoveries yet.
 
 English: The following leads come from bootstrap classification between functions and cases. They are not yet published discoveries and need later curation into independent discovery entries.
 
-- 中文：D220｜完全统一不可能定理 仍可继续整理为 哲学 方向的独立发现。
-  English: D220 |  remains a curation lead in Philosophy.
 - 中文：D226｜物理存在的三重时间约束 仍可继续整理为 哲学 方向的独立发现。
   English: D226 |  remains a curation lead in Philosophy.
-- 中文：D229｜物理存在的四重约束与衰减终态 仍可继续整理为 哲学 方向的独立发现。
-  English: D229 |  remains a curation lead in Philosophy.
+- 中文：D220｜完全统一不可能定理 仍可继续整理为 哲学 方向的独立发现。
+  English: D220 |  remains a curation lead in Philosophy.
+- 中文：T23｜Φ跨域稳定性定理 仍可继续整理为 哲学 方向的独立发现。
+  English: T23 | Φcross-domain stability theorem remains a curation lead in Philosophy.
 - 中文：C-0527｜EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9 仍可继续整理为 哲学 方向的独立发现。
   English: C-0527 | EPR悖论 - 局域性和实在性是连续因子不是布尔量, B=ε_loc x ε_real≈0.9 remains a curation lead in Philosophy.
 - 中文：C-0469｜认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在Fisher距离∞的区域。打开新轨道（跨域学习）=增加Fisher可达性 仍可继续整理为 哲学 方向的独立发现。

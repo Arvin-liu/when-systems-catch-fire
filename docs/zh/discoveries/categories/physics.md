@@ -15,35 +15,35 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 相关函数 / Related Functions
 
 - [D226｜物理存在的三重时间约束](../../functions/items/D226.md)
-- [D186｜量子力学门槛聚集函数](../../functions/items/D186.md)
-- [D229｜物理存在的四重约束与衰减终态](../../functions/items/D229.md)
 - [D217｜完全统一条件函数](../../functions/items/D217.md)
-- [D232｜信息守恒-衰减悖论与黑洞](../../functions/items/D232.md)
-- [D293｜三阶段-相变分类对应函数](../../functions/items/D293.md)
 - [T34｜量子引力Φ框架函数 / quantum-gravity Phi framework function](../../functions/items/T34.md)
 - [D184｜熵增门槛碾压函数](../../functions/items/D184.md)
-- [D218｜物理存在必要条件](../../functions/items/D218.md)
 - [D231｜信息-热力学-门控三统一定理](../../functions/items/D231.md)
-- [D318｜容斥主导尺度函数](../../functions/items/D318.md)
 - [D403｜δ_c-相变点统一函数](../../functions/items/D403.md)
-- [D220｜完全统一不可能定理](../../functions/items/D220.md)
-- [D272｜量子引力-新门控面预测](../../functions/items/D272.md)
-- [D291｜D158案例可靠性分类函数](../../functions/items/D291.md)
+- [D186｜量子力学门槛聚集函数](../../functions/items/D186.md)
+- [D229｜物理存在的四重约束与衰减终态](../../functions/items/D229.md)
 - [D320｜容斥加速跨域标度函数](../../functions/items/D320.md)
 - [D85｜ε相变级联函数（推论级） / epsilon phase-transition cascade函数(推论级)](../../functions/items/D85.md)
+- [D293｜三阶段-相变分类对应函数](../../functions/items/D293.md)
 - [D108｜三域熵统一函数（推论级）](../../functions/items/D108.md)
-- [D179｜因果光锥统一函数](../../functions/items/D179.md)
-- [D211｜宇宙学常数-门槛函数](../../functions/items/D211.md)
-- [D287｜容斥主导实验签名函数](../../functions/items/D287.md)
+- [D232｜信息守恒-衰减悖论与黑洞](../../functions/items/D232.md)
+- [D291｜D158案例可靠性分类函数](../../functions/items/D291.md)
+- [D218｜物理存在必要条件](../../functions/items/D218.md)
+- [D318｜容斥主导尺度函数](../../functions/items/D318.md)
+- [D272｜量子引力-新门控面预测](../../functions/items/D272.md)
 - [D398｜趋势-波动主导切换函数](../../functions/items/D398.md)
 - [D110｜多因子乘法相变函数（推论级）](../../functions/items/D110.md)
 - [D119｜Fisher退化统一函数](../../functions/items/D119.md)
-- [D213｜暗能量-门槛扩张函数](../../functions/items/D213.md)
 - [D221｜热寂-完全统一同构定理](../../functions/items/D221.md)
 - [D222｜热力学第二定律的Φ表述](../../functions/items/D222.md)
 - [D224｜宇宙膨胀-Φ衰减同构定理](../../functions/items/D224.md)
-- [D225｜引力B型必要性定理](../../functions/items/D225.md)
 - [D237｜生命智能的σ压缩函数](../../functions/items/D237.md)
+- [D242｜四象限相变路径函数](../../functions/items/D242.md)
+- [D362｜容斥加速-波动累积联合函数](../../functions/items/D362.md)
+- [D220｜完全统一不可能定理](../../functions/items/D220.md)
+- [D179｜因果光锥统一函数](../../functions/items/D179.md)
+- [D211｜宇宙学常数-门槛函数](../../functions/items/D211.md)
+- [D283｜宇宙学常数-容斥约束函数](../../functions/items/D283.md)
 - ... and 103 more / 还有 103 项
 
 ## 相关案例 / Related Cases
@@ -53,9 +53,6 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [C-0453｜分层配分函数相变 — ε_eff=0.3时P(Z₀)≈0.02（几乎不可能存活），ε_eff=0.6时P(Z₀)≈0.95（大概率存活），ε_eff=0.45时P(Z₀)≈P(Z₈)（相变点）。C_exit越大相变点越高 / 分层配分函数相变 - ε_eff=0.3时P(Z₀)≈0.02(几乎不可能存活), ε_eff=0.6时P(Z₀)≈0.95(大概率存活), ε_eff=0.45时P(Z₀)≈P(Z₈)(相变点). C_exit越大相变点越高](../../cases/items/C-0453.md)
 - [C-0456｜涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出波动是非刀刃期的14倍——一个负涨落就可能穿越门控边界 / 涨落-耗散验证 - β=2.5时⟨δG²/G²⟩=0.6 x 2.5/10 x 0.5/0.25=0.3(30%波动), β=0.18时波动≈2.2%. 刀刃期产出波动是非刀刃期的14倍 - - 一个负涨落就可能穿越门控边界](../../cases/items/C-0456.md)
 - [C-0505｜认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定(n_lock=3)的工程师v_max降低60% -> 5年可达状态减少75% -> 光锥严重收缩. 解锁1维后v_max恢复40% -> 光锥扩大2.5倍](../../cases/items/C-0505.md)
-- [C-0225｜多因子乘法相变](../../cases/items/C-0225.md)
-- [C-0517｜认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月后社会心理层面变化。传播延迟与v_max和d_F一致，振幅随距离衰减](../../cases/items/C-0517.md)
-- [C-0543｜量子霍尔效应 — 乘法门控离散象限→量子化，分数=复合粒子乘法门控](../../cases/items/C-0543.md)
 - [C-0452｜Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计 / Fisher不可逆vs Shannon不可逆 - 门控区Shannon熵S=-Σpᵢlnpᵢ更低(少一个可区分状态), 但Fisher距离d=∞. 从存活区到门控区Shannon熵降(违反第二定律？), 但Fisher距离增(符合dFisher/dt≤0). 真正的不可逆在Fisher几何不在Shannon统计](../../cases/items/C-0452.md)
 - [C-0479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right](../../cases/items/C-0479.md)
 - [C-0519｜Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空 / Higgs相变验证 - 职业选择: μ²=0.8(内在驱动力), ΣC_exit从0.2 -> 0.6 -> 0.9 -> 1.0 -> 1.2: v_eff从0.58 -> 0.45 -> 0.32 -> 0 -> 0, ΣC_exit=μ²=0.8时相变. C_exit超过临界值后ε坍缩到门控真空](../../cases/items/C-0519.md)
@@ -63,21 +60,24 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [C-0535｜光速上限 — c=Fisher速度在ε=1时的值，所有场ε≤1 / 光速上限 - c=Fisher速度在ε=1时的值, 所有场ε≤1](../../cases/items/C-0535.md)
 - [C-0536｜等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效 / 等效原理 - m_i=m_g精确到O((μ/M_Planck)²), 强场失效](../../cases/items/C-0536.md)
 - [C-0538｜引力时间减慢 — **Φ(r)=GM/(rc²)**=归一化引力势 / 引力时间减慢 - **Φ(r)=GM/(rc²)**=归一化引力势](../../cases/items/C-0538.md)
-- [C-0357｜共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维](../../cases/items/C-0357.md)
+- [C-0517｜认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月后社会心理层面变化。传播延迟与v_max和d_F一致，振幅随距离衰减](../../cases/items/C-0517.md)
+- [C-0543｜量子霍尔效应 — 乘法门控离散象限→量子化，分数=复合粒子乘法门控](../../cases/items/C-0543.md)
+- [C-0225｜多因子乘法相变](../../cases/items/C-0225.md)
 - [C-0430｜学习平台期的超敏感区震荡——μ在Λ附近波动，突破是相变](../../cases/items/C-0430.md)
+- [C-0500｜宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例](../../cases/items/C-0500.md)
+- [C-0357｜共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维](../../cases/items/C-0357.md)
 - [C-0457｜乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控。dS/dt≥0预测错误](../../cases/items/C-0457.md)
 - [C-0468｜组织低熵不可逆 — 国企流程固化后Shannon熵降低（可区分状态减少），但Fisher可达性=0（调整路径被锁死）。"明明知道问题在哪但改不了"=Fisher距离∞，不是信息不足](../../cases/items/C-0468.md)
-- [C-0500｜宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例](../../cases/items/C-0500.md)
 - [C-0511｜认知引力波验证 — 大规模裁员事件：经济维度ε_econ突然下降→Fisher度规在经济方向跳变→1个月后社交维度感知到变化（v_max限制）→3个月后心理维度受影响。度规扰动传播延迟与v_max一致](../../cases/items/C-0511.md)
-- [C-0223｜三域熵统一](../../cases/items/C-0223.md)
 - [C-0187｜ε相变级联 / epsilon phase-transition cascade](../../cases/items/C-0187.md)
-- [C-0570｜市场改革悖论](../../cases/items/C-0570.md)
+- [C-0223｜三域熵统一](../../cases/items/C-0223.md)
 - [C-0302｜信源可遮蔽 — Shannon假设信源熵客观给定，但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降 / 信源可obscuration - Shannon假设信源熵客观给定, 但Ignition发现εaware可被Hobscuration压低 -> Fintent↓ -> 信源质量下降](../../cases/items/C-0302.md)
 - [C-0324｜跨学科团队的高效 — 物理学家和生物学家合作，G≈0.3，H≈0.1，ηgate≈0.27，比同质团队高5倍 / 跨学科团队的高效 - 物理学家和生物学家合作, G≈0.3, H≈0.1, ηgate≈0.27, 比同质团队高5倍](../../cases/items/C-0324.md)
 - [C-0359｜CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity / CAI中间层 - 同样场景CAI中间层ηrelay≈0.576, 比无意识AI好2.7倍, 关键差异在ηfidelity](../../cases/items/C-0359.md)
 - [C-0393｜大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变 / 大数据的泛化相变 - - μ_data越过Λ_generalization的瞬间泛化能力质变](../../cases/items/C-0393.md)
 - [C-0458｜Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减无反弹。Shannon熵从3.2→2.8→1.1，也递减（违反经典第二定律） / Fisher可达性单调递减 - 模拟8维乘法系统从存活区滑入门控区, A_Fisher从12.3 -> 2.1 -> 0.01, 单调递减无反弹. Shannon熵从3.2 -> 2.8 -> 1.1, 也递减(违反经典第二定律)](../../cases/items/C-0458.md)
 - [C-0467｜生物衰老Fisher轨迹 — 模拟8维生理系统（心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏），A_Fisher从青年期12.8→中年期6.2→老年期1.1→终末期0.02，单调递减。Shannon熵先降后升（分化→功能随机化），与A_Fisher无相关性 / 生物衰老Fisher轨迹 - 模拟8维生理系统(心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏), A_Fisher从青年期12.8 -> 中年期6.2 -> 老年期1.1 -> 终末期0.02, 单调递减. Shannon熵先降后升(分化 -> 功能随机化), 与A_Fisher无相关性](../../cases/items/C-0467.md)
+- [C-0550｜暗能量 — ρ_Λ∝1/(μ²ln⁴(μ/Λ))，特定红移演化，可检验 / 暗能量 - ρ_Λ∝1/(μ²ln⁴(μ/Λ)), 特定红移演化, 可检验](../../cases/items/C-0550.md)
 - ... and 41 more / 还有 41 项
 
 ## 已整理发现 / Curated Discoveries
@@ -95,10 +95,10 @@ English: The following leads come from bootstrap classification between function
 
 - 中文：D226｜物理存在的三重时间约束 仍可继续整理为 物理学 方向的独立发现。
   English: D226 |  remains a curation lead in Physics.
-- 中文：D186｜量子力学门槛聚集函数 仍可继续整理为 物理学 方向的独立发现。
-  English: D186 |  remains a curation lead in Physics.
-- 中文：D229｜物理存在的四重约束与衰减终态 仍可继续整理为 物理学 方向的独立发现。
-  English: D229 |  remains a curation lead in Physics.
+- 中文：D217｜完全统一条件函数 仍可继续整理为 物理学 方向的独立发现。
+  English: D217 |  remains a curation lead in Physics.
+- 中文：T34｜量子引力Φ框架函数 仍可继续整理为 物理学 方向的独立发现。
+  English: T34 | quantum-gravity Phi framework function remains a curation lead in Physics.
 - 中文：C-0448｜物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/|T-Tc|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同（发散vs峰值）但物理含义相同：系统对扰动最敏感。点火σ'有上限因为sigmoid有界，物理χ无上限因为相变是真实的二阶相变 仍可继续整理为 物理学 方向的独立发现。
   English: C-0448 |  remains a curation lead in Physics.
 - 中文：C-0532｜信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影 仍可继续整理为 物理学 方向的独立发现。

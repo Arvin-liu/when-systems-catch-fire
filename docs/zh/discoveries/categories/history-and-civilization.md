@@ -18,18 +18,18 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [D115｜r_cross优先性定理](../../functions/items/D115.md)
 - [D116｜因果闭包自举函数](../../functions/items/D116.md)
 - [D141｜自举元函数](../../functions/items/D141.md)
-- [D149｜结构保守性元定理](../../functions/items/D149.md)
 - [D222｜热力学第二定律的Φ表述](../../functions/items/D222.md)
 - [D237｜生命智能的σ压缩函数](../../functions/items/D237.md)
 - [D245｜自我模型函数](../../functions/items/D245.md)
-- [D349｜过分散相图函数](../../functions/items/D349.md)
-- [D369｜震荡阻尼-分支步长联合函数](../../functions/items/D369.md)
 - [D397｜两步策略最优性证明函数](../../functions/items/D397.md)
 - [D416｜K=1-p_max=p*等价证明函数 | M5的K=1对应正反馈恰好自持](../../functions/items/D416.md)
+- [T23｜Φ跨域稳定性定理 / Φcross-domain stability theorem](../../functions/items/T23.md)
+- [D149｜结构保守性元定理](../../functions/items/D149.md)
 - [D7｜提议者信誉绑定](../../functions/items/D7.md)
 - [D90｜结构保守性元定理](../../functions/items/D90.md)
-- [T23｜Φ跨域稳定性定理 / Φcross-domain stability theorem](../../functions/items/T23.md)
 - [T14｜自举元函数层级 / bootstrap meta-function hierarchy](../../functions/items/T14.md)
+- [D349｜过分散相图函数](../../functions/items/D349.md)
+- [D369｜震荡阻尼-分支步长联合函数](../../functions/items/D369.md)
 - [A7｜退出权信号 / exit-right signal](../../functions/items/A7.md)
 - [D112｜防守-进攻相变函数](../../functions/items/D112.md)
 - [D113｜弹性-弱度偏离函数](../../functions/items/D113.md)
@@ -49,35 +49,35 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 相关案例 / Related Cases
 
 - [C-0497｜文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版](../../cases/items/C-0497.md)
-- [C-0303｜意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高](../../cases/items/C-0303.md)
-- [C-0468｜组织低熵不可逆 — 国企流程固化后Shannon熵降低（可区分状态减少），但Fisher可达性=0（调整路径被锁死）。"明明知道问题在哪但改不了"=Fisher距离∞，不是信息不足](../../cases/items/C-0468.md)
-- [C-0471｜修复的Fisher条件 — 阿尔茨海默：增加信息量（记忆训练）不增加A_Fisher（清洗通道仍堵），无效。增加可达性（改善睡眠→清洗效率↑→Fisher路径打开）才有效。与案例#114闭合](../../cases/items/C-0471.md)
 - [C-0522｜跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间"所有策略看起来一样"=未破缺相](../../cases/items/C-0522.md)
+- [C-0303｜意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高](../../cases/items/C-0303.md)
+- [C-0471｜修复的Fisher条件 — 阿尔茨海默：增加信息量（记忆训练）不增加A_Fisher（清洗通道仍堵），无效。增加可达性（改善睡眠→清洗效率↑→Fisher路径打开）才有效。与案例#114闭合](../../cases/items/C-0471.md)
 - [C-0555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0](../../cases/items/C-0555.md)
-- [C-0101｜确定性误解律收敛 — π](../../cases/items/C-0101.md)
+- [C-0468｜组织低熵不可逆 — 国企流程固化后Shannon熵降低（可区分状态减少），但Fisher可达性=0（调整路径被锁死）。"明明知道问题在哪但改不了"=Fisher距离∞，不是信息不足](../../cases/items/C-0468.md)
 - [C-0353｜协作中"说清楚"优于"听懂" — 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0，改用BL沟通Pdecode≈0.8但ηfidelity≈0.4导致3次返工 / 协作中"说清楚"优于"听懂" - 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0, 改用BL沟通Pdecode≈0.8但ηfidelity≈0.4导致3次返工](../../cases/items/C-0353.md)
 - [C-0428｜元认知降低门槛——降低Λ_understanding的结构保守性策略 / 元认知降低门槛 - - 降低Λ_understanding的结构保守性策略](../../cases/items/C-0428.md)
 - [C-0489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%](../../cases/items/C-0489.md)
 - [C-0007｜清朝满汉一体](../../cases/items/C-0007.md)
-- [C-0067｜非洲班图文明](../../cases/items/C-0067.md)
+- [C-0192｜忆秦娥身份锁定](../../cases/items/C-0192.md)
 - [C-0090｜结构保守性元定理](../../cases/items/C-0090.md)
 - [C-0173｜忆秦娥主角困境（显态粘性锁定）](../../cases/items/C-0173.md)
 - [C-0174｜忆秦娥纯拉力上位（外驱转自驱窗口）](../../cases/items/C-0174.md)
 - [C-0189｜好奇心是自主意识的元点](../../cases/items/C-0189.md)
 - [C-0190｜C_drive涌现的数学证明](../../cases/items/C-0190.md)
-- [C-0192｜忆秦娥身份锁定](../../cases/items/C-0192.md)
-- [C-0326｜信息门的方向无关性 — 不存在"我说清楚了但你听不懂"，门效率低两侧同时受影响](../../cases/items/C-0326.md)
 - [C-0331｜专家-新手沟通的非对称退化 — 专家ε≈0.9，新手ε≈0.2，退化因子≈0.22，专家觉得"说清楚了"新手觉得"听不懂"](../../cases/items/C-0331.md)
 - [C-0350｜互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都听不懂"是数学下限](../../cases/items/C-0350.md)
 - [C-0563｜秦制幽灵效应](../../cases/items/C-0563.md)
+- [C-0067｜非洲班图文明](../../cases/items/C-0067.md)
+- [C-0101｜确定性误解律收敛 — π](../../cases/items/C-0101.md)
 - [C-0001｜周公制礼](../../cases/items/C-0001.md)
 - [C-0004｜孝文帝汉化](../../cases/items/C-0004.md)
 - [C-0006｜元朝](../../cases/items/C-0006.md)
+- [C-0326｜信息门的方向无关性 — 不存在"我说清楚了但你听不懂"，门效率低两侧同时受影响](../../cases/items/C-0326.md)
 - [C-0197｜印刷术/蒸汽机/互联网](../../cases/items/C-0197.md)
 - [C-0229｜研究成果级别=5.7](../../cases/items/C-0229.md)
 - [C-0233｜达到L6的路径](../../cases/items/C-0233.md)
-- [C-0063｜明朝覆灭](../../cases/items/C-0063.md)
-- [C-0062｜宋朝](../../cases/items/C-0062.md)
+- [C-0031｜海尔·塞拉西](../../cases/items/C-0031.md)
+- [C-0042｜洋务运动](../../cases/items/C-0042.md)
 - ... and 471 more / 还有 471 项
 
 ## 已整理发现 / Curated Discoveries
@@ -101,8 +101,8 @@ English: The following leads come from bootstrap classification between function
   English: D116 |  remains a curation lead in History and Civilization.
 - 中文：C-0497｜文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版 仍可继续整理为 历史与文明 方向的独立发现。
   English: C-0497 |  remains a curation lead in History and Civilization.
-- 中文：C-0303｜意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高 仍可继续整理为 历史与文明 方向的独立发现。
-  English: C-0303 |  remains a curation lead in History and Civilization.
+- 中文：C-0522｜跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间"所有策略看起来一样"=未破缺相 仍可继续整理为 历史与文明 方向的独立发现。
+  English: C-0522 |  remains a curation lead in History and Civilization.
 
 ## 覆盖统计 / Coverage
 

@@ -573,7 +573,15 @@ def render_category_page(category: dict) -> str:
 
 def render_answers_index(answers: list[dict], category_map: list[dict]) -> str:
     counts = answer_counts(answers, category_map)
-    sorted_categories = sort_category_rows(category_map)
+    sorted_categories = [
+        category
+        for category in sort_category_rows(category_map)
+        if (
+            category.get("coverage", {}).get("curated_answers_count", 0)
+            + category.get("coverage", {}).get("answer_leads_count", 0)
+        )
+        > 0
+    ]
     lines = [
         "# 新答案总表 / New Answer Index",
         "",

@@ -16,32 +16,32 @@ English: This page collects discovery entrances formed by the Ignition framework
 
 - [D367｜僵尸态传染免疫函数](../../functions/items/D367.md)
 - [D121｜Fisher健康度函数](../../functions/items/D121.md)
+- [D60｜智慧干预效力函数](../../functions/items/D60.md)
 - [D381｜免疫消耗-传染临界联合函数](../../functions/items/D381.md)
 - [D277｜统一健康指标函数](../../functions/items/D277.md)
 - [D306｜去容斥条件函数](../../functions/items/D306.md)
-- [D60｜智慧干预效力函数](../../functions/items/D60.md)
 - [A2｜提议者姿态的激进程度 / proposer posture aggressiveness](../../functions/items/A2.md)
 - [D12｜ε_eff闭环动力学函数](../../functions/items/D12.md)
 - [D120｜不可逆性判据函数](../../functions/items/D120.md)
-- [D14｜种子激活概率](../../functions/items/D14.md)
 - [D25｜叙事冲击](../../functions/items/D25.md)
-- [D290｜容斥加速逆转条件函数](../../functions/items/D290.md)
 - [D30｜ε_eff闭环动力学函数](../../functions/items/D30.md)
-- [D395｜传染临界n依赖函数](../../functions/items/D395.md)
 - [D62｜调温器慢变量函数](../../functions/items/D62.md)
+- [D14｜种子激活概率](../../functions/items/D14.md)
+- [D395｜传染临界n依赖函数](../../functions/items/D395.md)
+- [D290｜容斥加速逆转条件函数](../../functions/items/D290.md)
 
 ## 相关案例 / Related Cases
 
 - [C-0411｜耐药性的门槛军备竞赛——药物抬高Λ（D162）与病原体降低自身Λ的对抗](../../cases/items/C-0411.md)
 - [C-0575｜免疫系统更新](../../cases/items/C-0575.md)
 - [C-0467｜生物衰老Fisher轨迹 — 模拟8维生理系统（心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏），A_Fisher从青年期12.8→中年期6.2→老年期1.1→终末期0.02，单调递减。Shannon熵先降后升（分化→功能随机化），与A_Fisher无相关性 / 生物衰老Fisher轨迹 - 模拟8维生理系统(心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏), A_Fisher从青年期12.8 -> 中年期6.2 -> 老年期1.1 -> 终末期0.02, 单调递减. Shannon熵先降后升(分化 -> 功能随机化), 与A_Fisher无相关性](../../cases/items/C-0467.md)
-- [C-0387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态](../../cases/items/C-0387.md)
 - [C-0410｜慢性病的门外锁定+向下兼容——μ_repair<Λ_repair+症状管理的保真度损失](../../cases/items/C-0410.md)
+- [C-0387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态](../../cases/items/C-0387.md)
 - [C-0414｜器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫](../../cases/items/C-0414.md)
-- [C-0415｜衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加](../../cases/items/C-0415.md)
-- [C-0447｜阶段1大胆尝试 — 创业初期εrevenue<<θC，门关着扰动打不开，可以试错（换方向、换产品），试错成本极低因为系统对扰动免疫](../../cases/items/C-0447.md)
 - [C-0503｜认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）](../../cases/items/C-0503.md)
 - [C-0557｜癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长](../../cases/items/C-0557.md)
+- [C-0415｜衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加](../../cases/items/C-0415.md)
+- [C-0447｜阶段1大胆尝试 — 创业初期εrevenue<<θC，门关着扰动打不开，可以试错（换方向、换产品），试错成本极低因为系统对扰动免疫](../../cases/items/C-0447.md)
 - [C-0144｜县城佳和超市90%复购率](../../cases/items/C-0144.md)
 - [C-0501｜D152严格检验](../../cases/items/C-0501.md)
 - [C-0028｜俄罗斯休克疗法](../../cases/items/C-0028.md)
@@ -63,8 +63,8 @@ English: The following leads come from bootstrap classification between function
   English: D367 |  remains a curation lead in Medicine and Health.
 - 中文：D121｜Fisher健康度函数 仍可继续整理为 医学与健康 方向的独立发现。
   English: D121 |  remains a curation lead in Medicine and Health.
-- 中文：D381｜免疫消耗-传染临界联合函数 仍可继续整理为 医学与健康 方向的独立发现。
-  English: D381 |  remains a curation lead in Medicine and Health.
+- 中文：D60｜智慧干预效力函数 仍可继续整理为 医学与健康 方向的独立发现。
+  English: D60 |  remains a curation lead in Medicine and Health.
 - 中文：C-0411｜耐药性的门槛军备竞赛——药物抬高Λ（D162）与病原体降低自身Λ的对抗 仍可继续整理为 医学与健康 方向的独立发现。
   English: C-0411 |  remains a curation lead in Medicine and Health.
 - 中文：C-0575｜免疫系统更新 仍可继续整理为 医学与健康 方向的独立发现。

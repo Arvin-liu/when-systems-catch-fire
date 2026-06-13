@@ -859,6 +859,13 @@ def render_discoveries_list(items: list[dict], categories: list[dict] | None = N
     ]
 
     if categories is not None:
+        def has_discovery_output(category: dict) -> bool:
+            coverage = category["coverage"]
+            return (
+                coverage.get("curated_discoveries_count", 0)
+                + coverage.get("discovery_leads_count", 0)
+            ) > 0
+
         def sort_key(category: dict) -> tuple[int, int, int, str]:
             coverage = category["coverage"]
             curated = coverage.get("curated_discoveries_count", 0)
@@ -867,7 +874,11 @@ def render_discoveries_list(items: list[dict], categories: list[dict] | None = N
             return (-curated, -leads, -related_total, category["category_id"])
 
         sorted_categories = sorted(
-            [category for category in categories if category["category_id"] != "other"],
+            [
+                category
+                for category in categories
+                if category["category_id"] != "other" and has_discovery_output(category)
+            ],
             key=sort_key,
         )
         lines.extend(

@@ -14,59 +14,55 @@ English: This page collects discovery entrances formed by the Ignition framework
 
 ## 相关函数 / Related Functions
 
-- [D170｜定投凯利保守性验证](../../functions/items/D170.md)
-- [D181｜定投跨域验证函数](../../functions/items/D181.md)
 - [D261｜维度最优平衡函数](../../functions/items/D261.md)
-- [D53｜信号最优流速函数（凯利公式同构）](../../functions/items/D53.md)
 - [D161｜投资遮蔽跨域放大 / 投资obscuration跨域放大](../../functions/items/D161.md)
-- [D109｜乘法最优生存策略函数](../../functions/items/D109.md)
-- [D156｜财富-认知耦合](../../functions/items/D156.md)
-- [D157｜财富-认知耦合](../../functions/items/D157.md)
+- [D170｜定投凯利保守性验证](../../functions/items/D170.md)
+- [D53｜信号最优流速函数（凯利公式同构）](../../functions/items/D53.md)
 - [D169｜门槛碾压函数](../../functions/items/D169.md)
-- [D253｜信息维度-容斥权衡函数](../../functions/items/D253.md)
-- [D351｜缓冲关联结构函数](../../functions/items/D351.md)
 - [D467｜最优性-惯性反比函数](../../functions/items/D467.md)
 - [A5｜应约者退出的成本 / responder exit cost](../../functions/items/A5.md)
+- [D181｜定投跨域验证函数](../../functions/items/D181.md)
+- [D109｜乘法最优生存策略函数](../../functions/items/D109.md)
 - [D173｜显态粘性函数](../../functions/items/D173.md)
-- [D174｜纯拉力上位衰减函数](../../functions/items/D174.md)
 - [D243｜感知退出权瓶颈函数 / perceived exit right瓶颈函数](../../functions/items/D243.md)
-- [D148｜遮蔽-补偿-成本三角约束，三角锁死 / obscuration-补偿-成本三角约束, 三角锁死](../../functions/items/D148.md)
 - [D89｜遮蔽-补偿-成本三角约束 / obscuration-补偿-成本三角约束](../../functions/items/D89.md)
+- [D156｜财富-认知耦合](../../functions/items/D156.md)
+- [D157｜财富-认知耦合](../../functions/items/D157.md)
+- [D174｜纯拉力上位衰减函数](../../functions/items/D174.md)
+- [D148｜遮蔽-补偿-成本三角约束，三角锁死 / obscuration-补偿-成本三角约束, 三角锁死](../../functions/items/D148.md)
+- [D253｜信息维度-容斥权衡函数](../../functions/items/D253.md)
+- [D351｜缓冲关联结构函数](../../functions/items/D351.md)
 - [D124｜三域退化统一参数函数](../../functions/items/D124.md)
 - [D126｜认知-收益滞后函数](../../functions/items/D126.md)
+- [D286｜p*-分布形态函数](../../functions/items/D286.md)
+- [D296｜Φ近似阶数选择函数](../../functions/items/D296.md)
+- [D65｜乘法拓扑选择函数](../../functions/items/D65.md)
+- [D66｜同质性遮蔽函数 / 同质性obscuration function](../../functions/items/D66.md)
+- [D67｜资金量-恐惧锁定正反馈函数](../../functions/items/D67.md)
 - [D143｜投资相关函数](../../functions/items/D143.md)
 - [D144｜投资相关函数](../../functions/items/D144.md)
 - [D145｜投资相关函数](../../functions/items/D145.md)
 - [D160｜定投凯利保守性](../../functions/items/D160.md)
 - [D162｜定投凯利保守性验证](../../functions/items/D162.md)
-- [D163｜定投凯利保守性](../../functions/items/D163.md)
-- [D164｜定投凯利保守性](../../functions/items/D164.md)
-- [D165｜定投凯利保守性](../../functions/items/D165.md)
-- [D166｜定投凯利保守性](../../functions/items/D166.md)
-- [D167｜定投凯利保守性](../../functions/items/D167.md)
 - ... and 30 more / 还有 30 项
 
 ## 相关案例 / Related Cases
 
 - [C-0517｜认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月后社会心理层面变化。传播延迟与v_max和d_F一致，振幅随距离衰减](../../cases/items/C-0517.md)
-- [C-0343｜结构性vs参数性改善长期效果 — 团队A投资训练员工（每月成本10万效果随离职归零），团队B投资流程标准化（一次性50万效果永久）](../../cases/items/C-0343.md)
 - [C-0446｜刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)同样0.1资源正确方向+2%错误方向-1%。刀刃期收益和损失都放大30倍](../../cases/items/C-0446.md)
 - [C-0334｜遮蔽补偿成本指数级增长 — H=0.2时G*≈0.6，H=0.6时G*≈0.3，编码成本增加e^(0.3γ)倍 / obscuration补偿成本指数级增长 - H=0.2时G*≈0.6, H=0.6时G*≈0.3, 编码成本增加e^(0.3γ)倍](../../cases/items/C-0334.md)
 - [C-0520｜Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控("想通"是质变); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数(收入可渐变). 心理维度改善只能0 -> 1, 经济维度可渐变](../../cases/items/C-0520.md)
+- [C-0343｜结构性vs参数性改善长期效果 — 团队A投资训练员工（每月成本10万效果随离职归零），团队B投资流程标准化（一次性50万效果永久）](../../cases/items/C-0343.md)
 - [C-0079｜收益-风险投影-网结构](../../cases/items/C-0079.md)
 - [C-0289｜当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化](../../cases/items/C-0289.md)
 - [C-0339｜遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死](../../cases/items/C-0339.md)
 - [C-0417｜城市规模律的倒U型——互动收益与摩擦成本之间的走钢丝](../../cases/items/C-0417.md)
-- [C-0421｜郊区化的倒U型极限——互动收益与摩擦成本的最优点](../../cases/items/C-0421.md)
-- [C-0511｜认知引力波验证 — 大规模裁员事件：经济维度ε_econ突然下降→Fisher度规在经济方向跳变→1个月后社交维度感知到变化（v_max限制）→3个月后心理维度受影响。度规扰动传播延迟与v_max一致](../../cases/items/C-0511.md)
 - [C-0518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组](../../cases/items/C-0518.md)
 - [C-0024｜德国社会市场经济](../../cases/items/C-0024.md)
-- [C-0140｜广州菜市场超市融合](../../cases/items/C-0140.md)
-- [C-0570｜市场改革悖论](../../cases/items/C-0570.md)
-- [C-0120｜招聘歧视与工资压制](../../cases/items/C-0120.md)
-- [C-0148｜调研成本×退出成本 / 调研成本 x exit cost](../../cases/items/C-0148.md)
-- [C-0184｜理财的几何本质](../../cases/items/C-0184.md)
+- [C-0421｜郊区化的倒U型极限——互动收益与摩擦成本的最优点](../../cases/items/C-0421.md)
+- [C-0511｜认知引力波验证 — 大规模裁员事件：经济维度ε_econ突然下降→Fisher度规在经济方向跳变→1个月后社交维度感知到变化（v_max限制）→3个月后心理维度受影响。度规扰动传播延迟与v_max一致](../../cases/items/C-0511.md)
 - [C-0089｜遮蔽-补偿-成本三角 / obscuration-补偿-成本三角](../../cases/items/C-0089.md)
+- [C-0140｜广州菜市场超市融合](../../cases/items/C-0140.md)
 - [C-0311｜冲动交易者 — ηselect≈0.9，ηkelly≈0.3，ηtime≈0.7，Πcognition小，乘积=0.189×小 / 冲动交易者 - ηselect≈0.9, ηkelly≈0.3, ηtime≈0.7, Πcognition小, 乘积=0.189 x 小](../../cases/items/C-0311.md)
 - [C-0327｜炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞](../../cases/items/C-0327.md)
 - [C-0328｜临界资金的精确计算 — 城市白领年非投资收入20万，炒股Kcritical=600万，定投Kcritical≈0 / 临界资金的精确计算 - 城市白领年非投资收入20万, 炒股Kcritical=600万, 定投Kcritical≈0](../../cases/items/C-0328.md)
@@ -76,8 +72,12 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [C-0466｜经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称 -> ∑αᵢ=1守恒, 均等分配αᵢ=1/n是诺特定理特例](../../cases/items/C-0466.md)
 - [C-0510｜三阶段=曲率穿越验证 — 创业者路径：阶段1（资源充足ε>>θC）→R_cog≈0→贪心策略有效；阶段2（资金紧张ε≈θC）→R_cog最大→必须做级联防御；阶段3（盈利后ε>>θC）→R_cog→0→回到贪心。β轨迹与曲率轨迹完全同步 / 三阶段=曲率穿越验证 - 创业者路径: 阶段1(资源充足ε>>θC) -> R_cog≈0 -> 贪心策略有效; 阶段2(资金紧张ε≈θC) -> R_cog最大 -> 必须做cascade defense; 阶段3(盈利后ε>>θC) -> R_cog -> 0 -> 回到贪心. β轨迹与曲率轨迹完全同步](../../cases/items/C-0510.md)
 - [C-0515｜度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致](../../cases/items/C-0515.md)
+- [C-0570｜市场改革悖论](../../cases/items/C-0570.md)
+- [C-0148｜调研成本×退出成本 / 调研成本 x exit cost](../../cases/items/C-0148.md)
+- [C-0120｜招聘歧视与工资压制](../../cases/items/C-0120.md)
+- [C-0184｜理财的几何本质](../../cases/items/C-0184.md)
 - [C-0100｜凯利公式同构信号流速](../../cases/items/C-0100.md)
-- [C-0169｜财商乘数四因子结构（验证D65财富域）](../../cases/items/C-0169.md)
+- [C-0522｜跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间"所有策略看起来一样"=未破缺相](../../cases/items/C-0522.md)
 - ... and 40 more / 还有 40 项
 
 ## 已整理发现 / Curated Discoveries
@@ -93,16 +93,16 @@ No curated discoveries yet.
 
 English: The following leads come from bootstrap classification between functions and cases. They are not yet published discoveries and need later curation into independent discovery entries.
 
-- 中文：D170｜定投凯利保守性验证 仍可继续整理为 经济与财富 方向的独立发现。
-  English: D170 |  remains a curation lead in Economics and Wealth.
-- 中文：D181｜定投跨域验证函数 仍可继续整理为 经济与财富 方向的独立发现。
-  English: D181 |  remains a curation lead in Economics and Wealth.
 - 中文：D261｜维度最优平衡函数 仍可继续整理为 经济与财富 方向的独立发现。
   English: D261 |  remains a curation lead in Economics and Wealth.
+- 中文：D161｜投资遮蔽跨域放大 仍可继续整理为 经济与财富 方向的独立发现。
+  English: D161 | 投资obscuration跨域放大 remains a curation lead in Economics and Wealth.
+- 中文：D170｜定投凯利保守性验证 仍可继续整理为 经济与财富 方向的独立发现。
+  English: D170 |  remains a curation lead in Economics and Wealth.
 - 中文：C-0517｜认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月后社会心理层面变化。传播延迟与v_max和d_F一致，振幅随距离衰减 仍可继续整理为 经济与财富 方向的独立发现。
   English: C-0517 |  remains a curation lead in Economics and Wealth.
-- 中文：C-0343｜结构性vs参数性改善长期效果 — 团队A投资训练员工（每月成本10万效果随离职归零），团队B投资流程标准化（一次性50万效果永久） 仍可继续整理为 经济与财富 方向的独立发现。
-  English: C-0343 |  remains a curation lead in Economics and Wealth.
+- 中文：C-0446｜刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)同样0.1资源正确方向+2%错误方向-1%。刀刃期收益和损失都放大30倍 仍可继续整理为 经济与财富 方向的独立发现。
+  English: C-0446 |  remains a curation lead in Economics and Wealth.
 
 ## 覆盖统计 / Coverage
 

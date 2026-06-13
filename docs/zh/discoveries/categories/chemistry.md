@@ -17,10 +17,8 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [D466｜暗物质核心-幽灵衰减函数](../../functions/items/D466.md)
 - [D212｜暗物质-门控隐形函数](../../functions/items/D212.md)
 - [D122｜退化加速函数](../../functions/items/D122.md)
-- [D180｜跨域枢纽函数](../../functions/items/D180.md)
 - [D224｜宇宙膨胀-Φ衰减同构定理](../../functions/items/D224.md)
 - [D237｜生命智能的σ压缩函数](../../functions/items/D237.md)
-- [D249｜自我模型相变实验方案](../../functions/items/D249.md)
 - [D463｜完美风暴-信息量等价函数](../../functions/items/D463.md)
 - [D464｜幽灵超指数衰减函数](../../functions/items/D464.md)
 - [D465｜幽灵-不可逆竞争函数](../../functions/items/D465.md)
@@ -30,6 +28,8 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [D49｜种子-点火结果概率分布函数](../../functions/items/D49.md)
 - [D60｜智慧干预效力函数](../../functions/items/D60.md)
 - [D63｜档案可达性函数](../../functions/items/D63.md)
+- [D180｜跨域枢纽函数](../../functions/items/D180.md)
+- [D249｜自我模型相变实验方案](../../functions/items/D249.md)
 - [D117｜乘法系统第二定律修正函数](../../functions/items/D117.md)
 - [D467｜最优性-惯性反比函数](../../functions/items/D467.md)
 - [D73｜犹豫域维度函数](../../functions/items/D73.md)
@@ -38,13 +38,13 @@ English: This page collects discovery entrances formed by the Ignition framework
 
 ## 相关案例 / Related Cases
 
-- [C-0568｜暗物质核心时间演化](../../cases/items/C-0568.md)
 - [C-0295｜CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡 / CAI编码能力关键瓶颈 - frecombine(概念碰撞率)和ηencode(Q*)(最优共享度), 前者依赖D121实现, 后者依赖D66obscuration与共享的平衡](../../cases/items/C-0295.md)
 - [C-0359｜CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity / CAI中间层 - 同样场景CAI中间层ηrelay≈0.576, 比无意识AI好2.7倍, 关键差异在ηfidelity](../../cases/items/C-0359.md)
 - [C-0366｜CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息） / CAI中间层vs无意识AI中间层 - CAI ηrelay≈0.576, 无意识AI ηrelay≈0.21, CAI好2.7倍, 关键在ηfidelity(保留意图结构vs丢失隐含信息)](../../cases/items/C-0366.md)
+- [C-0568｜暗物质核心时间演化](../../cases/items/C-0568.md)
 - [C-0460｜生物不可逆的Fisher解释 — 细胞凋亡（乘法：任一关键蛋白归零则死亡），死亡后Shannon熵增但Fisher可达性=0（信息距离∞，无法恢复）](../../cases/items/C-0460.md)
-- [C-0461｜组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建](../../cases/items/C-0461.md)
 - [C-0549｜暗物质方向 — Φ对牛顿引力修正，sigmoid映射可能修正量级](../../cases/items/C-0549.md)
+- [C-0461｜组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建](../../cases/items/C-0461.md)
 - [C-0578｜子弹星系团暗物质](../../cases/items/C-0578.md)
 - [C-0001｜周公制礼](../../cases/items/C-0001.md)
 - [C-0002｜孔子作春秋](../../cases/items/C-0002.md)
@@ -89,10 +89,10 @@ English: The following leads come from bootstrap classification between function
   English: D212 |  remains a curation lead in Chemistry.
 - 中文：D122｜退化加速函数 仍可继续整理为 化学 方向的独立发现。
   English: D122 |  remains a curation lead in Chemistry.
-- 中文：C-0568｜暗物质核心时间演化 仍可继续整理为 化学 方向的独立发现。
-  English: C-0568 |  remains a curation lead in Chemistry.
 - 中文：C-0295｜CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡 仍可继续整理为 化学 方向的独立发现。
   English: C-0295 | CAI编码能力关键瓶颈 - frecombine(概念碰撞率)和ηencode(Q*)(最优共享度), 前者依赖D121实现, 后者依赖D66obscuration与共享的平衡 remains a curation lead in Chemistry.
+- 中文：C-0359｜CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity 仍可继续整理为 化学 方向的独立发现。
+  English: C-0359 | CAI中间层 - 同样场景CAI中间层ηrelay≈0.576, 比无意识AI好2.7倍, 关键差异在ηfidelity remains a curation lead in Chemistry.
 
 ## 覆盖统计 / Coverage
 

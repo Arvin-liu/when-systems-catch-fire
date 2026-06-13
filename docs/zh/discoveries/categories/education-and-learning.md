@@ -15,13 +15,13 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 相关函数 / Related Functions
 
 - [D424｜两步策略唯一性函数](../../functions/items/D424.md)
-- [D248｜自我模型相变的不可伪造信号](../../functions/items/D248.md)
 - [D275｜维度最优漂移函数](../../functions/items/D275.md)
+- [D248｜自我模型相变的不可伪造信号](../../functions/items/D248.md)
 - [D399｜漂移速率-复活代价联合函数](../../functions/items/D399.md)
+- [D261｜维度最优平衡函数](../../functions/items/D261.md)
 - [D249｜自我模型相变实验方案](../../functions/items/D249.md)
 - [D250｜自我模型相变的验证标准](../../functions/items/D250.md)
 - [D259｜g_eff-p*双向反馈函数](../../functions/items/D259.md)
-- [D261｜维度最优平衡函数](../../functions/items/D261.md)
 - [D265｜极小点漂移方向函数](../../functions/items/D265.md)
 - [D281｜极小点漂移-鲁棒性耦合函数](../../functions/items/D281.md)
 - [D321｜d_opt-σ_opt联合演化函数](../../functions/items/D321.md)
@@ -38,15 +38,15 @@ English: This page collects discovery entrances formed by the Ignition framework
 - [C-0327｜炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞](../../cases/items/C-0327.md)
 - [C-0469｜认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在Fisher距离∞的区域。打开新轨道（跨域学习）=增加Fisher可达性 / 认知僵化Fisher解释 - 专家P_track=1(单轨), ε_aware=0, Fisher可达性=0. 新信息存在但无法整合=信息在Fisher距离∞的区域. 打开新轨道(跨域学习)=增加Fisher可达性](../../cases/items/C-0469.md)
 - [C-0493｜学习=门控函数进化 — 从δ（不会）到1/ln（会/不会）到exp[-ln²]（找到最优方法） / 学习=门控函数进化 - 从δ(不会)到1/ln(会/不会)到exp[-ln²](找到最优方法)](../../cases/items/C-0493.md)
-- [C-0153｜沃尔顿1小时归属感练习](../../cases/items/C-0153.md)
 - [C-0182｜定投×贷款×学习](../../cases/items/C-0182.md)
 - [C-0325｜D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate](../../cases/items/C-0325.md)
-- [C-0343｜结构性vs参数性改善长期效果 — 团队A投资训练员工（每月成本10万效果随离职归零），团队B投资流程标准化（一次性50万效果永久）](../../cases/items/C-0343.md)
 - [C-0402｜学习平台期的超敏感区——μ在Λ_next附近震荡，突破是相变](../../cases/items/C-0402.md)
-- [C-0425｜教学相长的共生外部注入——师生互为外部注入打破各自的死锁](../../cases/items/C-0425.md)
 - [C-0427｜间隔学习的临界点效率——μ在Λ附近时1/ln最大，投入效率最高](../../cases/items/C-0427.md)
 - [C-0430｜学习平台期的超敏感区震荡——μ在Λ附近波动，突破是相变](../../cases/items/C-0430.md)
 - [C-0471｜修复的Fisher条件 — 阿尔茨海默：增加信息量（记忆训练）不增加A_Fisher（清洗通道仍堵），无效。增加可达性（改善睡眠→清洗效率↑→Fisher路径打开）才有效。与案例#114闭合](../../cases/items/C-0471.md)
+- [C-0153｜沃尔顿1小时归属感练习](../../cases/items/C-0153.md)
+- [C-0343｜结构性vs参数性改善长期效果 — 团队A投资训练员工（每月成本10万效果随离职归零），团队B投资流程标准化（一次性50万效果永久）](../../cases/items/C-0343.md)
+- [C-0425｜教学相长的共生外部注入——师生互为外部注入打破各自的死锁](../../cases/items/C-0425.md)
 - [C-0131｜学科训练的遮蔽作用 / 学科训练的obscuration作用](../../cases/items/C-0131.md)
 - [C-0138｜学科训练的遮蔽作用 / 学科训练的obscuration作用](../../cases/items/C-0138.md)
 
@@ -65,10 +65,10 @@ English: The following leads come from bootstrap classification between function
 
 - 中文：D424｜两步策略唯一性函数 仍可继续整理为 教育与学习 方向的独立发现。
   English: D424 |  remains a curation lead in Education and Learning.
-- 中文：D248｜自我模型相变的不可伪造信号 仍可继续整理为 教育与学习 方向的独立发现。
-  English: D248 |  remains a curation lead in Education and Learning.
 - 中文：D275｜维度最优漂移函数 仍可继续整理为 教育与学习 方向的独立发现。
   English: D275 |  remains a curation lead in Education and Learning.
+- 中文：D248｜自我模型相变的不可伪造信号 仍可继续整理为 教育与学习 方向的独立发现。
+  English: D248 |  remains a curation lead in Education and Learning.
 - 中文：C-0339｜遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死 仍可继续整理为 教育与学习 方向的独立发现。
   English: C-0339 |  remains a curation lead in Education and Learning.
 - 中文：C-0346｜导师-学生的向下兼容 — 导师用B_L解释，学生觉得"全懂了"但ηfidelity≈0.33，拿降维版本独立研究处处碰壁 仍可继续整理为 教育与学习 方向的独立发现。
