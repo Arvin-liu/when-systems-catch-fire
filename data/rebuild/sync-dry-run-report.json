@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T15:19:32.537494+00:00",
+  "generated_at": "2026-06-13T15:52:34.947157+00:00",
   "dry_run": true,
   "results": [
     {
@@ -13,7 +13,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 0.538
+      "duration_s": 0.35
     },
     {
       "cmd": [
@@ -26,7 +26,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 9.114
+      "duration_s": 14.542
     },
     {
       "cmd": [
@@ -39,7 +39,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 0.447
+      "duration_s": 0.47
     },
     {
       "cmd": [
@@ -52,7 +52,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 0.279
+      "duration_s": 0.252
     },
     {
       "cmd": [
@@ -65,7 +65,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 0.169
+      "duration_s": 0.166
     },
     {
       "cmd": [
@@ -78,7 +78,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 2.212
+      "duration_s": 2.292
     },
     {
       "cmd": [
@@ -91,7 +91,7 @@
       "stderr": "",
       "ok": true,
       "timed_out": false,
-      "duration_s": 0.146
+      "duration_s": 0.346
     }
   ]
 }

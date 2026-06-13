@@ -1,9 +1,9 @@
 # Sync / Heartbeat Performance Report
 
-- generated_at: 2026-06-13T15:19:32.557187+00:00
-- sync_dry_run_total_s: 12.905
-- heartbeat_once_dry_run_total_s: 13.133
-- validate_quick_duration_s: 0.447
+- generated_at: 2026-06-13T15:52:34.497681+00:00
+- sync_dry_run_total_s: 17.92
+- heartbeat_once_dry_run_total_s: 18.043
+- validate_quick_duration_s: 0.581
 - within_60s: True
 - section_0_dual_channel_guard_present: True
 - section_0_internal_count: 5

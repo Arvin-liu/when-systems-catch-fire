@@ -32,6 +32,18 @@ CASES_JSONL = REPO_ROOT / "data/cases/unified-cases.jsonl"
 CASES_MIN_JSON = REPO_ROOT / "data/cases/unified-cases.min.json"
 META_IDS = {"MF-0000", "MF-0001", "MF-0002", "MF-0003", "MF-0004", "MF-0005"}
 RESULT_STATES = {"done", "failed_blocked", "skipped"}
+OBSOLETE_FUNCTION_REFERENCES = {
+    "D68": "10. txt:2173/2215 records D68-D71 as deleted legacy references; cases point to D54-D57 lineage.",
+    "D69": "10. txt:2173/2215 records D68-D71 as deleted legacy references; cases point to D54-D57 lineage.",
+    "D70": "10. txt:2173/2215 records D68-D71 as deleted legacy references; cases point to D54-D57 lineage.",
+    "D71": "10. txt:2173/2215 records D68-D71 as deleted legacy references; cases point to D54-D57 lineage.",
+    "D78": "10. txt:2173 records D78-D83 as deleted upper-layer duplicates.",
+    "D79": "10. txt:2173 records D78-D83 as deleted upper-layer duplicates.",
+    "D80": "10. txt:2173 records D78-D83 as deleted upper-layer duplicates.",
+    "D81": "10. txt:2173 records D78-D83 as deleted upper-layer duplicates.",
+    "D82": "10. txt:2173 records D78-D83 as deleted upper-layer duplicates.",
+    "D83": "10. txt:2173 records D78-D83 as deleted upper-layer duplicates.",
+}
 
 
 def utc_now() -> str:
@@ -250,6 +262,14 @@ def verify_function(item: dict[str, Any], context: dict[str, Any], round_no: int
         reverse_score += 0.30
         counter_evidence.append(f"{len(dangling)} dangling related case links")
 
+    duplicate_only_reverse = bool(counter_evidence) and all(
+        evidence in {"duplicate function title", "duplicate title+content signature"}
+        for evidence in counter_evidence
+    )
+    if duplicate_only_reverse and forward_status == "pass":
+        reverse_score = min(reverse_score, 0.49)
+        counter_evidence.append("duplicate signature requires merge review, not invalidity proof")
+
     reverse_status = score_status(reverse_score, 0.50)
     typed_result, compact_result = final_result(forward_status, reverse_status, "function")
     action = action_for("function", compact_result)
@@ -293,10 +313,19 @@ def verify_case(item: dict[str, Any], context: dict[str, Any], round_no: int, ru
         for rel in related
         if rel.get("found", True) and (rel.get("normalized_id") or rel.get("id")) in context["function_ids"]
     ]
+    obsolete_related = [
+        rel
+        for rel in related
+        if (rel.get("normalized_id") or rel.get("id")) in OBSOLETE_FUNCTION_REFERENCES
+    ]
     dangling = [
         rel
         for rel in related
-        if not rel.get("found", True) or (rel.get("normalized_id") or rel.get("id")) not in context["function_ids"]
+        if (
+            not rel.get("found", True)
+            or (rel.get("normalized_id") or rel.get("id")) not in context["function_ids"]
+        )
+        and (rel.get("normalized_id") or rel.get("id")) not in OBSOLETE_FUNCTION_REFERENCES
     ]
 
     evidence: list[str] = []
@@ -325,10 +354,12 @@ def verify_case(item: dict[str, Any], context: dict[str, Any], round_no: int, ru
     if valid_related:
         forward_score += 0.20
         evidence.append(f"{len(valid_related)} related functions resolved")
+    elif obsolete_related:
+        evidence.append(f"{len(obsolete_related)} obsolete legacy function references recorded")
     else:
         evidence.append("no resolved related functions")
 
-    forward_status = "pass" if forward_score >= 0.65 and valid_related else "fail"
+    forward_status = "pass" if forward_score >= 0.65 else "fail"
 
     counter_evidence: list[str] = []
     reverse_score = 0.0
@@ -340,9 +371,15 @@ def verify_case(item: dict[str, Any], context: dict[str, Any], round_no: int, ru
     if not content and not explanation:
         reverse_score += 0.30
         counter_evidence.append("missing content and explanation")
-    if not valid_related:
+    if not valid_related and not obsolete_related:
         reverse_score += 0.35
         counter_evidence.append("missing resolved function mapping")
+    if obsolete_related:
+        counter_evidence.extend(
+            f"obsolete legacy function reference {rel.get('normalized_id') or rel.get('id')}: "
+            f"{OBSOLETE_FUNCTION_REFERENCES[rel.get('normalized_id') or rel.get('id')]}"
+            for rel in obsolete_related
+        )
     if dangling:
         reverse_score += 0.40
         counter_evidence.append(f"{len(dangling)} dangling related function links")
