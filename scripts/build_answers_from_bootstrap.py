@@ -49,7 +49,7 @@ from answer_utils import (
 )
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 RAW_NOTE_ROOTS = [
     REPO_ROOT / "dianhuo/originals",
     REPO_ROOT / "dianhuo/04-materials/raw-notes",

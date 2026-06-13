@@ -29,7 +29,7 @@ from answer_utils import (
 )
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 FUNCTIONS_JSON = REPO_ROOT / "data/functions/unified-functions.json"
 CASES_JSON = REPO_ROOT / "data/cases/unified-cases.json"
 DISCOVERIES_JSON = REPO_ROOT / "data/discoveries/unified-discoveries.json"

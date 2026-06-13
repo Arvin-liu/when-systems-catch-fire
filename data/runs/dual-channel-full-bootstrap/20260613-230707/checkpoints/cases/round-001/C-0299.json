@@ -1,0 +1,39 @@
+{
+  "item_state": "done",
+  "updated_at": "2026-06-13T15:09:11.486733+00:00",
+  "result": {
+    "id": "C-0299",
+    "type": "case",
+    "round": 1,
+    "forward": {
+      "status": "fail",
+      "score": 0.8,
+      "evidence": [
+        "title present",
+        "case content present",
+        "case explanation present",
+        "source trace present",
+        "normalized id present",
+        "status=GETNOTE_ONLY",
+        "human page linked",
+        "no resolved related functions"
+      ],
+      "reason": "case description/source/mapping evidence evaluated"
+    },
+    "reverse": {
+      "status": "pass",
+      "score": 0.75,
+      "counter_evidence": [
+        "missing resolved function mapping",
+        "1 dangling related function links"
+      ],
+      "reason": "counter-evidence for mapping error evaluated"
+    },
+    "result": "false",
+    "typed_result": "case_false",
+    "action": "remap_candidate",
+    "notes": "",
+    "checked_at": "2026-06-13T15:09:11.486719+00:00",
+    "run_id": "20260613-230707"
+  }
+}

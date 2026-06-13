@@ -64,7 +64,7 @@ from render_human_entry_from_unified_md import (
 )
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 META_FUNCTIONS_JSON = REPO_ROOT / "data/functions/meta-functions.json"
 META_FUNCTIONS_JSONL = REPO_ROOT / "data/functions/meta-functions.jsonl"
 META_FUNCTIONS_INDEX_MD = REPO_ROOT / "data/functions/meta-functions-index.md"

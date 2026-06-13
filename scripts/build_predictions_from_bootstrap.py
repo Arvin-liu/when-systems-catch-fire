@@ -17,7 +17,7 @@ from pathlib import Path
 from display_utils import format_bilingual_title
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = REPO_ROOT / "data/predictions"
 DOC_DIR = REPO_ROOT / "docs/zh/predictions"
 ITEM_DIR = DOC_DIR / "items"

@@ -12,7 +12,7 @@ import json
 from pathlib import Path
 
 
-ROOT = Path("/workspace/when-systems-catch-fire")
+ROOT = Path(__file__).resolve().parents[1]
 TARGET_TEXT = "Arvin Liu"
 REPLACEMENT_TEXT = "之元"
 

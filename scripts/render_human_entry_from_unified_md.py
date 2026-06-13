@@ -31,7 +31,7 @@ from repository_overview_utils import count_repository_objects, render_repositor
 from display_utils import format_bilingual_title, normalize_bilingual_text
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 FUNC_SOURCE = REPO_ROOT / "data/functions/统一函数总表_470条_源文交叉重建版_v4.md"
 CASE_SOURCE = REPO_ROOT / "data/cases/统一案例总表_578案例_源文交叉重建版_v4.md"
 

@@ -29,8 +29,8 @@ from discovery_category_utils import (
 
 
 def main() -> None:
-    functions = read_json(Path("/workspace/when-systems-catch-fire/data/functions/unified-functions.json"), [])
-    cases = read_json(Path("/workspace/when-systems-catch-fire/data/cases/unified-cases.json"), [])
+    functions = read_json(Path(__file__).resolve().parents[1] / "data/functions/unified-functions.json", [])
+    cases = read_json(Path(__file__).resolve().parents[1] / "data/cases/unified-cases.json", [])
 
     classification = classify_bootstrap_items(functions, cases)
     category_map = build_category_map(functions, cases, classification)
@@ -39,8 +39,8 @@ def main() -> None:
     write_jsonl(CATEGORIES_JSONL, CATEGORY_DEFINITIONS)
     write_json(CATEGORY_MAP_JSON, category_map)
     write_jsonl(CATEGORY_MAP_JSONL, category_map)
-    write_text(DISCOVERY_LIST_MD, render_discoveries_list(read_json(Path("/workspace/when-systems-catch-fire/data/discoveries/unified-discoveries.json"), []), category_map))
-    write_text(DISCOVERY_INDEX_MD, render_discovery_index_md(read_json(Path("/workspace/when-systems-catch-fire/data/discoveries/unified-discoveries.json"), [])))
+    write_text(DISCOVERY_LIST_MD, render_discoveries_list(read_json(Path(__file__).resolve().parents[1] / "data/discoveries/unified-discoveries.json", []), category_map))
+    write_text(DISCOVERY_INDEX_MD, render_discovery_index_md(read_json(Path(__file__).resolve().parents[1] / "data/discoveries/unified-discoveries.json", [])))
 
     CATEGORY_DIR.mkdir(parents=True, exist_ok=True)
     for category in category_map:

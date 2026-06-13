@@ -11,7 +11,7 @@ import subprocess
 from time import perf_counter
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 LOCK_FILE = REPO_ROOT / "data/sync/.ignition-maintenance.lock"
 STATE_FILE = REPO_ROOT / "data/sync/heartbeat-state.json"
 REPORT_MD = REPO_ROOT / "data/sync/heartbeat-dry-run-report.md"

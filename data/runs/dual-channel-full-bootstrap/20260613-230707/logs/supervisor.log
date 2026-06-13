@@ -1,0 +1,3 @@
+2026-06-13T15:07:07.197014+00:00 supervisor start branch=run/dual-channel-full-bootstrap-20260613-230707
+2026-06-13T15:07:07.197422+00:00 worker attempt=1
+2026-06-13T15:15:14.992982+00:00 worker returncode=0

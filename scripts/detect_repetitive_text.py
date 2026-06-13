@@ -12,11 +12,17 @@ from pathlib import Path
 from display_utils import is_mostly_cjk
 
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 REPORT_MD = REPO_ROOT / "data/rebuild/repetitive-text-report.md"
 REPORT_JSON = REPO_ROOT / "data/rebuild/repetitive-text-report.json"
 
 SKIP_DIRS = {".git", "node_modules", "dist", "build", "archive"}
+SKIP_PREFIXES = {
+    ("data", "runs"),
+}
+SKIP_FILE_PREFIXES = {
+    ("data", "rebuild", "dual-channel-"),
+}
 MARKDOWN_EXT = ".md"
 JSON_EXTS = {".json", ".jsonl"}
 
@@ -29,7 +35,15 @@ def iter_files() -> list[Path]:
     for path in REPO_ROOT.rglob("*"):
         if not path.is_file():
             continue
+        rel_parts = path.relative_to(REPO_ROOT).parts
         if any(part in SKIP_DIRS for part in path.parts):
+            continue
+        if any(rel_parts[: len(prefix)] == prefix for prefix in SKIP_PREFIXES):
+            continue
+        if any(
+            rel_parts[: len(prefix) - 1] == prefix[:-1] and rel_parts[len(prefix) - 1].startswith(prefix[-1])
+            for prefix in SKIP_FILE_PREFIXES
+        ):
             continue
         if path.suffix not in {MARKDOWN_EXT, *JSON_EXTS}:
             continue

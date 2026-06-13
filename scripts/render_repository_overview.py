@@ -8,7 +8,7 @@ from pathlib import Path
 
 from repository_overview_utils import readme_overview_matches, render_readme_overview
 
-REPO_ROOT = Path("/workspace/when-systems-catch-fire")
+REPO_ROOT = Path(__file__).resolve().parents[1]
 README = REPO_ROOT / "README.md"
 
 
