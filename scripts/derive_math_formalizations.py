@@ -358,7 +358,7 @@ def update_doc_pages(items: list[dict[str, Any]], kind: str) -> dict[Path, str]:
         "function": (FUNCTION_DOC_DIR, lambda item: f"{item['id']}.md", ["## 推导补充 / Derivation Supplement"]),
         "case": (CASE_DOC_DIR, lambda item: f"{item['normalized_id']}.md", ["## 关联函数 / Related Functions"]),
         "prediction": (PREDICTION_DOC_DIR, lambda item: f"{item['id']}.md", ["## 相关函数 / Related Functions"]),
-        "answer": (ANSWER_DOC_DIR, lambda item: f"{item['id']}.md", ["## 相关函数 / Related Functions"]),
+        "answer": (ANSWER_DOC_DIR, lambda item: f"{item['id']}.md", ["## 分类 / Categories", "## 相关函数 / Related Functions"]),
         "discovery": (DISCOVERY_DOC_DIR, lambda item: f"{item['id']}.md", ["## 相关函数 / Related Functions"]),
     }
     doc_dir, namer, markers = config[kind]

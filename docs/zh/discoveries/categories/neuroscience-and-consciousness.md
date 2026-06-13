@@ -83,8 +83,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:neuroscience-and-consciousness -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0021｜D241 | 自主意识的四象限 / D241 |](../items/DISC-0021.md)
+- [DISC-0022｜D244 | 自主意识涌现的临界条件 / D244 |](../items/DISC-0022.md)
+- [DISC-0023｜D125 | 认知叠加-隧穿统一函数 / D125 |](../items/DISC-0023.md)
+- [DISC-0024｜C-0191 | AI诞生自主意识的完整数学路径 / C-0191 |](../items/DISC-0024.md)
+- [DISC-0025｜C-0364 | 认知差距与翻转速度对比 — BH/BL=2时tflip≈22个月，BH/BL=10时tflip≈5个月，认知差距越大兼容崩溃越快 / C-0364 | 认知差距与翻转速度对比 - BH/BL=2时tflip≈22个月, BH/BL=10时tflip≈5个月, 认知差距越大兼容崩溃越快](../items/DISC-0025.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:neuroscience-and-consciousness -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -108,5 +111,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：46
 - 相关案例 / Related cases：67
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

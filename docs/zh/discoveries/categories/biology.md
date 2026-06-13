@@ -53,8 +53,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:biology -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0016｜D237 | 生命智能的σ压缩函数 / D237 |](../items/DISC-0016.md)
+- [DISC-0017｜D467 | 最优性-惯性反比函数 / D467 |](../items/DISC-0017.md)
+- [DISC-0018｜D124 | 三域退化统一参数函数 / D124 |](../items/DISC-0018.md)
+- [DISC-0019｜C-0384 | 有性繁殖的倒U型——繁殖成本与基因多样性之间的两个死锁，有性繁殖是唯一通路 / C-0384 |](../items/DISC-0019.md)
+- [DISC-0020｜C-0460 | 生物不可逆的Fisher解释 — 细胞凋亡（乘法：任一关键蛋白归零则死亡），死亡后Shannon熵增但Fisher可达性=0（信息距离∞... / C-0460 |](../items/DISC-0020.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:biology -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -78,5 +81,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：12
 - 相关案例 / Related cases：20
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

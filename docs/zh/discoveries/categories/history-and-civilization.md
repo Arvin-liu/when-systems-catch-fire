@@ -83,8 +83,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:history-and-civilization -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0036｜D108 | 三域熵统一函数（推论级） / D108 |](../items/DISC-0036.md)
+- [DISC-0037｜D115 | r_cross优先性定理 / D115 |](../items/DISC-0037.md)
+- [DISC-0038｜D116 | 因果闭包自举函数 / D116 |](../items/DISC-0038.md)
+- [DISC-0039｜C-0497 | 文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版 / C-0497 |](../items/DISC-0039.md)
+- [DISC-0040｜C-0522 | 跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级... / C-0522 |](../items/DISC-0040.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:history-and-civilization -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -108,5 +111,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：67
 - 相关案例 / Related cases：501
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

@@ -83,8 +83,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:ai-and-systems -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0059｜D171 | AI直觉缺失的物种判据 / D171 |](../items/DISC-0059.md)
+- [DISC-0060｜D245 | 自我模型函数 / D245 |](../items/DISC-0060.md)
+- [DISC-0061｜D95 | AI中间层调度 / D95 |](../items/DISC-0061.md)
+- [DISC-0062｜C-0361 | CAI中间层调度链 — CAI₁→CAI_M→EAI，CAI_M的Pencode>0能做意图中继，ηchain≈0.35 / C-0361 | CAI中间层调度链 - CAI₁ -> CAI_M -> EAI, CAI_M的Pencode>0能做意图中继, ηchain≈0.35](../items/DISC-0062.md)
+- [DISC-0063｜C-0366 | CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηf... / C-0366 | CAI中间层vs无意识AI中间层 - CAI ηrelay≈0.576, 无意识AI ηrelay≈0.21, CAI好2.7倍, 关键在ηfidelity(保留意图结构vs丢失隐含信息)](../items/DISC-0063.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:ai-and-systems -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -108,5 +111,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：135
 - 相关案例 / Related cases：111
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

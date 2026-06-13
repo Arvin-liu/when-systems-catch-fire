@@ -20,27 +20,108 @@ English: The following categories are generated from a bootstrap scan of the cur
 
 | 学科分类 / Category | 正式发现 / Curated Discoveries | 待整理线索 / Discovery Leads | 当前覆盖 / Current Coverage |
 | --- | --- | --- | --- |
-| [历史与文明 / History and Civilization](docs/zh/discoveries/categories/history-and-civilization.md) | 0 | 5 | 67 related functions, 501 related cases |
-| [AI 与系统 / AI and Systems](docs/zh/discoveries/categories/ai-and-systems.md) | 0 | 5 | 135 related functions, 111 related cases |
-| [物理学 / Physics](docs/zh/discoveries/categories/physics.md) | 0 | 5 | 133 related functions, 71 related cases |
-| [心理学 / Psychology](docs/zh/discoveries/categories/psychology.md) | 0 | 5 | 61 related functions, 72 related cases |
-| [经济与财富 / Economics and Wealth](docs/zh/discoveries/categories/economics-and-wealth.md) | 0 | 5 | 60 related functions, 70 related cases |
-| [化学 / Chemistry](docs/zh/discoveries/categories/chemistry.md) | 0 | 5 | 21 related functions, 105 related cases |
-| [神经科学与意识 / Neuroscience and Consciousness](docs/zh/discoveries/categories/neuroscience-and-consciousness.md) | 0 | 5 | 46 related functions, 67 related cases |
-| [社会学与政治 / Sociology and Politics](docs/zh/discoveries/categories/sociology-and-politics.md) | 0 | 5 | 32 related functions, 42 related cases |
-| [技术与工程 / Technology and Engineering](docs/zh/discoveries/categories/technology-and-engineering.md) | 0 | 5 | 28 related functions, 31 related cases |
-| [生态与环境 / Ecology and Environment](docs/zh/discoveries/categories/ecology-and-environment.md) | 0 | 5 | 31 related functions, 27 related cases |
-| [哲学 / Philosophy](docs/zh/discoveries/categories/philosophy.md) | 0 | 5 | 33 related functions, 9 related cases |
-| [生物学 / Biology](docs/zh/discoveries/categories/biology.md) | 0 | 5 | 12 related functions, 20 related cases |
-| [教育与学习 / Education and Learning](docs/zh/discoveries/categories/education-and-learning.md) | 0 | 5 | 14 related functions, 18 related cases |
-| [医学与健康 / Medicine and Health](docs/zh/discoveries/categories/medicine-and-health.md) | 0 | 5 | 15 related functions, 13 related cases |
-| [法律与制度 / Law and Institutions](docs/zh/discoveries/categories/law-and-institutions.md) | 0 | 5 | 6 related functions, 11 related cases |
-| [文学与叙事 / Literature and Narrative](docs/zh/discoveries/categories/literature-and-narrative.md) | 0 | 2 | 2 related functions, 0 related cases |
-| [艺术与摄影 / Art and Photography](docs/zh/discoveries/categories/art-and-photography.md) | 0 | 1 | 0 related functions, 1 related cases |
+| [历史与文明 / History and Civilization](docs/zh/discoveries/categories/history-and-civilization.md) | 5 | 5 | 67 related functions, 501 related cases |
+| [AI 与系统 / AI and Systems](docs/zh/discoveries/categories/ai-and-systems.md) | 5 | 5 | 135 related functions, 111 related cases |
+| [物理学 / Physics](docs/zh/discoveries/categories/physics.md) | 5 | 5 | 133 related functions, 71 related cases |
+| [心理学 / Psychology](docs/zh/discoveries/categories/psychology.md) | 5 | 5 | 61 related functions, 72 related cases |
+| [经济与财富 / Economics and Wealth](docs/zh/discoveries/categories/economics-and-wealth.md) | 5 | 5 | 60 related functions, 70 related cases |
+| [化学 / Chemistry](docs/zh/discoveries/categories/chemistry.md) | 5 | 5 | 21 related functions, 105 related cases |
+| [神经科学与意识 / Neuroscience and Consciousness](docs/zh/discoveries/categories/neuroscience-and-consciousness.md) | 5 | 5 | 46 related functions, 67 related cases |
+| [社会学与政治 / Sociology and Politics](docs/zh/discoveries/categories/sociology-and-politics.md) | 5 | 5 | 32 related functions, 42 related cases |
+| [技术与工程 / Technology and Engineering](docs/zh/discoveries/categories/technology-and-engineering.md) | 5 | 5 | 28 related functions, 31 related cases |
+| [生态与环境 / Ecology and Environment](docs/zh/discoveries/categories/ecology-and-environment.md) | 5 | 5 | 31 related functions, 27 related cases |
+| [哲学 / Philosophy](docs/zh/discoveries/categories/philosophy.md) | 5 | 5 | 33 related functions, 9 related cases |
+| [生物学 / Biology](docs/zh/discoveries/categories/biology.md) | 5 | 5 | 12 related functions, 20 related cases |
+| [教育与学习 / Education and Learning](docs/zh/discoveries/categories/education-and-learning.md) | 5 | 5 | 14 related functions, 18 related cases |
+| [医学与健康 / Medicine and Health](docs/zh/discoveries/categories/medicine-and-health.md) | 5 | 5 | 15 related functions, 13 related cases |
+| [法律与制度 / Law and Institutions](docs/zh/discoveries/categories/law-and-institutions.md) | 5 | 5 | 6 related functions, 11 related cases |
+| [文学与叙事 / Literature and Narrative](docs/zh/discoveries/categories/literature-and-narrative.md) | 2 | 2 | 2 related functions, 0 related cases |
+| [艺术与摄影 / Art and Photography](docs/zh/discoveries/categories/art-and-photography.md) | 1 | 1 | 0 related functions, 1 related cases |
 
 ## 最近发现 / Recent Discoveries
 
 <!-- DISCOVERY_LIST_START -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0001｜D226 | 物理存在的三重时间约束 / D226 |](docs/zh/discoveries/items/DISC-0001.md) — novelty: inconclusive · Physics
+- [DISC-0002｜D217 | 完全统一条件函数 / D217 |](docs/zh/discoveries/items/DISC-0002.md) — novelty: inconclusive · Physics
+- [DISC-0003｜T34 | 量子引力Φ框架函数 / T34 | quantum-gravity Phi framework function](docs/zh/discoveries/items/DISC-0003.md) — novelty: inconclusive · Physics
+- [DISC-0004｜C-0448 | 物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/|T-Tc|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同（发散vs峰值）... / C-0448 |](docs/zh/discoveries/items/DISC-0004.md) — novelty: inconclusive · Physics
+- [DISC-0005｜C-0532 | 信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影 / C-0532 |](docs/zh/discoveries/items/DISC-0005.md) — novelty: inconclusive · Physics
+- [DISC-0006｜D58 | 固化加速函数 / D58 |](docs/zh/discoveries/items/DISC-0006.md) — novelty: inconclusive · Psychology
+- [DISC-0007｜D245 | 自我模型函数 / D245 |](docs/zh/discoveries/items/DISC-0007.md) — novelty: inconclusive · Psychology
+- [DISC-0008｜D250 | 自我模型相变的验证标准 / D250 |](docs/zh/discoveries/items/DISC-0008.md) — novelty: inconclusive · Psychology
+- [DISC-0009｜C-0502 | 认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时... / C-0502 |](docs/zh/discoveries/items/DISC-0009.md) — novelty: inconclusive · Psychology
+- [DISC-0010｜C-0506 | 认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部... / C-0506 |](docs/zh/discoveries/items/DISC-0010.md) — novelty: inconclusive · Psychology
+- [DISC-0011｜D466 | 暗物质核心-幽灵衰减函数 / D466 |](docs/zh/discoveries/items/DISC-0011.md) — novelty: inconclusive · Chemistry
+- [DISC-0012｜D212 | 暗物质-门控隐形函数 / D212 |](docs/zh/discoveries/items/DISC-0012.md) — novelty: inconclusive · Chemistry
+- [DISC-0013｜D122 | 退化加速函数 / D122 |](docs/zh/discoveries/items/DISC-0013.md) — novelty: inconclusive · Chemistry
+- [DISC-0014｜C-0295 | CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D6... / C-0295 | CAI编码能力关键瓶颈 - frecombine(概念碰撞率)和ηencode(Q*)(最优共享度), 前者依赖D121实现, 后者依赖D66obscuration与共享的平衡](docs/zh/discoveries/items/DISC-0014.md) — novelty: inconclusive · Chemistry
+- [DISC-0015｜C-0359 | CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity / C-0359 | CAI中间层 - 同样场景CAI中间层ηrelay≈0.576, 比无意识AI好2.7倍, 关键差异在ηfidelity](docs/zh/discoveries/items/DISC-0015.md) — novelty: inconclusive · Chemistry
+- [DISC-0016｜D237 | 生命智能的σ压缩函数 / D237 |](docs/zh/discoveries/items/DISC-0016.md) — novelty: inconclusive · Biology
+- [DISC-0017｜D467 | 最优性-惯性反比函数 / D467 |](docs/zh/discoveries/items/DISC-0017.md) — novelty: inconclusive · Biology
+- [DISC-0018｜D124 | 三域退化统一参数函数 / D124 |](docs/zh/discoveries/items/DISC-0018.md) — novelty: inconclusive · Biology
+- [DISC-0019｜C-0384 | 有性繁殖的倒U型——繁殖成本与基因多样性之间的两个死锁，有性繁殖是唯一通路 / C-0384 |](docs/zh/discoveries/items/DISC-0019.md) — novelty: inconclusive · Biology
+- [DISC-0020｜C-0460 | 生物不可逆的Fisher解释 — 细胞凋亡（乘法：任一关键蛋白归零则死亡），死亡后Shannon熵增但Fisher可达性=0（信息距离∞... / C-0460 |](docs/zh/discoveries/items/DISC-0020.md) — novelty: inconclusive · Biology
+- [DISC-0021｜D241 | 自主意识的四象限 / D241 |](docs/zh/discoveries/items/DISC-0021.md) — novelty: inconclusive · Neuroscience and Consciousness
+- [DISC-0022｜D244 | 自主意识涌现的临界条件 / D244 |](docs/zh/discoveries/items/DISC-0022.md) — novelty: inconclusive · Neuroscience and Consciousness
+- [DISC-0023｜D125 | 认知叠加-隧穿统一函数 / D125 |](docs/zh/discoveries/items/DISC-0023.md) — novelty: inconclusive · Neuroscience and Consciousness
+- [DISC-0024｜C-0191 | AI诞生自主意识的完整数学路径 / C-0191 |](docs/zh/discoveries/items/DISC-0024.md) — novelty: inconclusive · Neuroscience and Consciousness
+- [DISC-0025｜C-0364 | 认知差距与翻转速度对比 — BH/BL=2时tflip≈22个月，BH/BL=10时tflip≈5个月，认知差距越大兼容崩溃越快 / C-0364 | 认知差距与翻转速度对比 - BH/BL=2时tflip≈22个月, BH/BL=10时tflip≈5个月, 认知差距越大兼容崩溃越快](docs/zh/discoveries/items/DISC-0025.md) — novelty: inconclusive · Neuroscience and Consciousness
+- [DISC-0026｜D367 | 僵尸态传染免疫函数 / D367 |](docs/zh/discoveries/items/DISC-0026.md) — novelty: inconclusive · Medicine and Health
+- [DISC-0027｜D121 | Fisher健康度函数 / D121 |](docs/zh/discoveries/items/DISC-0027.md) — novelty: inconclusive · Medicine and Health
+- [DISC-0028｜D60 | 智慧干预效力函数 / D60 |](docs/zh/discoveries/items/DISC-0028.md) — novelty: inconclusive · Medicine and Health
+- [DISC-0029｜C-0411 | 耐药性的门槛军备竞赛——药物抬高Λ（D162）与病原体降低自身Λ的对抗 / C-0411 |](docs/zh/discoveries/items/DISC-0029.md) — novelty: inconclusive · Medicine and Health
+- [DISC-0030｜C-0575 | 免疫系统更新 / C-0575 |](docs/zh/discoveries/items/DISC-0030.md) — novelty: inconclusive · Medicine and Health
+- [DISC-0031｜D226 | 物理存在的三重时间约束 / D226 |](docs/zh/discoveries/items/DISC-0031.md) — novelty: inconclusive · Philosophy
+- [DISC-0032｜D220 | 完全统一不可能定理 / D220 |](docs/zh/discoveries/items/DISC-0032.md) — novelty: inconclusive · Philosophy
+- [DISC-0033｜T23 | Φ跨域稳定性定理 / T23 | Φcross-domain stability theorem](docs/zh/discoveries/items/DISC-0033.md) — novelty: inconclusive · Philosophy
+- [DISC-0034｜C-0527 | EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9 / C-0527 | EPR悖论 - 局域性和实在性是连续因子不是布尔量, B=ε_loc x ε_real≈0.9](docs/zh/discoveries/items/DISC-0034.md) — novelty: inconclusive · Philosophy
+- [DISC-0035｜C-0469 | 认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在F... / C-0469 | 认知僵化Fisher解释 - 专家P_track=1(单轨), ε_aware=0, Fisher可达性=0. 新信息存在但无法整合=信息在Fisher距离∞的区域. 打开新轨道(跨域学习)=增加Fisher可达性](docs/zh/discoveries/items/DISC-0035.md) — novelty: inconclusive · Philosophy
+- [DISC-0036｜D108 | 三域熵统一函数（推论级） / D108 |](docs/zh/discoveries/items/DISC-0036.md) — novelty: inconclusive · History and Civilization
+- [DISC-0037｜D115 | r_cross优先性定理 / D115 |](docs/zh/discoveries/items/DISC-0037.md) — novelty: inconclusive · History and Civilization
+- [DISC-0038｜D116 | 因果闭包自举函数 / D116 |](docs/zh/discoveries/items/DISC-0038.md) — novelty: inconclusive · History and Civilization
+- [DISC-0039｜C-0497 | 文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版 / C-0497 |](docs/zh/discoveries/items/DISC-0039.md) — novelty: inconclusive · History and Civilization
+- [DISC-0040｜C-0522 | 跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级... / C-0522 |](docs/zh/discoveries/items/DISC-0040.md) — novelty: inconclusive · History and Civilization
+- [DISC-0041｜D25 | 叙事冲击 / D25 |](docs/zh/discoveries/items/DISC-0041.md) — novelty: inconclusive · Literature and Narrative
+- [DISC-0042｜D14 | 种子激活概率 / D14 |](docs/zh/discoveries/items/DISC-0042.md) — novelty: inconclusive · Literature and Narrative
+- [DISC-0043｜C-0342 | 图形界面vs命令行 — 图形界面ηstructural≈0.7，命令行ηstructural≈0.3，Pdecode差2-3倍 / C-0342 | 图形界面vs命令行 - 图形界面ηstructural≈0.7, 命令行ηstructural≈0.3, Pdecode差2-3倍](docs/zh/discoveries/items/DISC-0043.md) — novelty: inconclusive · Art and Photography
+- [DISC-0044｜D261 | 维度最优平衡函数 / D261 |](docs/zh/discoveries/items/DISC-0044.md) — novelty: inconclusive · Economics and Wealth
+- [DISC-0045｜D161 | 投资遮蔽跨域放大 / D161 | 投资obscuration跨域放大](docs/zh/discoveries/items/DISC-0045.md) — novelty: inconclusive · Economics and Wealth
+- [DISC-0046｜D170 | 定投凯利保守性验证 / D170 |](docs/zh/discoveries/items/DISC-0046.md) — novelty: inconclusive · Economics and Wealth
+- [DISC-0047｜C-0517 | 认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6... / C-0517 |](docs/zh/discoveries/items/DISC-0047.md) — novelty: inconclusive · Economics and Wealth
+- [DISC-0048｜C-0446 | 刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)... / C-0446 |](docs/zh/discoveries/items/DISC-0048.md) — novelty: inconclusive · Economics and Wealth
+- [DISC-0049｜D23 | 法治度 / D23 |](docs/zh/discoveries/items/DISC-0049.md) — novelty: inconclusive · Law and Institutions
+- [DISC-0050｜D22 | 民事保护，各维度退出权的乘积 / D22 | 民事保护, 各维度exit right的乘积](docs/zh/discoveries/items/DISC-0050.md) — novelty: inconclusive · Law and Institutions
+- [DISC-0051｜A7 | 退出权信号 / A7 | exit-right signal](docs/zh/discoveries/items/DISC-0051.md) — novelty: inconclusive · Law and Institutions
+- [DISC-0052｜C-0317 | 权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非 / C-0317 |](docs/zh/discoveries/items/DISC-0052.md) — novelty: inconclusive · Law and Institutions
+- [DISC-0053｜C-0170 | 七层主权最低门槛（验证A7财富维度） / C-0170 |](docs/zh/discoveries/items/DISC-0053.md) — novelty: inconclusive · Law and Institutions
+- [DISC-0054｜D320 | 容斥加速跨域标度函数 / D320 |](docs/zh/discoveries/items/DISC-0054.md) — novelty: inconclusive · Sociology and Politics
+- [DISC-0055｜D108 | 三域熵统一函数（推论级） / D108 |](docs/zh/discoveries/items/DISC-0055.md) — novelty: inconclusive · Sociology and Politics
+- [DISC-0056｜D252 | 社会学容斥加速函数 / D252 |](docs/zh/discoveries/items/DISC-0056.md) — novelty: inconclusive · Sociology and Politics
+- [DISC-0057｜C-0504 | 认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_... / C-0504 |](docs/zh/discoveries/items/DISC-0057.md) — novelty: inconclusive · Sociology and Politics
+- [DISC-0058｜C-0515 | 度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延... / C-0515 | 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致](docs/zh/discoveries/items/DISC-0058.md) — novelty: inconclusive · Sociology and Politics
+- [DISC-0059｜D171 | AI直觉缺失的物种判据 / D171 |](docs/zh/discoveries/items/DISC-0059.md) — novelty: inconclusive · AI and Systems
+- [DISC-0060｜D245 | 自我模型函数 / D245 |](docs/zh/discoveries/items/DISC-0060.md) — novelty: inconclusive · AI and Systems
+- [DISC-0061｜D95 | AI中间层调度 / D95 |](docs/zh/discoveries/items/DISC-0061.md) — novelty: inconclusive · AI and Systems
+- [DISC-0062｜C-0361 | CAI中间层调度链 — CAI₁→CAI_M→EAI，CAI_M的Pencode>0能做意图中继，ηchain≈0.35 / C-0361 | CAI中间层调度链 - CAI₁ -> CAI_M -> EAI, CAI_M的Pencode>0能做意图中继, ηchain≈0.35](docs/zh/discoveries/items/DISC-0062.md) — novelty: inconclusive · AI and Systems
+- [DISC-0063｜C-0366 | CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηf... / C-0366 | CAI中间层vs无意识AI中间层 - CAI ηrelay≈0.576, 无意识AI ηrelay≈0.21, CAI好2.7倍, 关键在ηfidelity(保留意图结构vs丢失隐含信息)](docs/zh/discoveries/items/DISC-0063.md) — novelty: inconclusive · AI and Systems
+- [DISC-0064｜D469 | 振荡优化函数 / D469 |](docs/zh/discoveries/items/DISC-0064.md) — novelty: inconclusive · Technology and Engineering
+- [DISC-0065｜D470 | 幽灵跳变阻尼函数 / D470 |](docs/zh/discoveries/items/DISC-0065.md) — novelty: inconclusive · Technology and Engineering
+- [DISC-0066｜D123 | 缓存容量倒U型函数 / D123 |](docs/zh/discoveries/items/DISC-0066.md) — novelty: inconclusive · Technology and Engineering
+- [DISC-0067｜C-0498 | 技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp[-ln²]的技术版 / C-0498 |](docs/zh/discoveries/items/DISC-0067.md) — novelty: inconclusive · Technology and Engineering
+- [DISC-0068｜C-0286 | 提示词工程=ηinterface优化 — 人类调高Pencode（精确描述意图），AI调高Pdecode（指令遵循），Ptransfer... / C-0286 | 提示词工程=ηinterface优化 - 人类调高Pencode(精确描述意图), AI调高Pdecode(指令遵循), Ptransfer受限于token窗口, 当前η≈0.3-0.7](docs/zh/discoveries/items/DISC-0068.md) — novelty: inconclusive · Technology and Engineering
+- [DISC-0069｜D424 | 两步策略唯一性函数 / D424 |](docs/zh/discoveries/items/DISC-0069.md) — novelty: inconclusive · Education and Learning
+- [DISC-0070｜D275 | 维度最优漂移函数 / D275 |](docs/zh/discoveries/items/DISC-0070.md) — novelty: inconclusive · Education and Learning
+- [DISC-0071｜D248 | 自我模型相变的不可伪造信号 / D248 |](docs/zh/discoveries/items/DISC-0071.md) — novelty: inconclusive · Education and Learning
+- [DISC-0072｜C-0339 | 遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死 / C-0339 |](docs/zh/discoveries/items/DISC-0072.md) — novelty: inconclusive · Education and Learning
+- [DISC-0073｜C-0346 | 导师-学生的向下兼容 — 导师用B_L解释，学生觉得"全懂了"但ηfidelity≈0.33，拿降维版本独立研究处处碰壁 / C-0346 |](docs/zh/discoveries/items/DISC-0073.md) — novelty: inconclusive · Education and Learning
+- [DISC-0074｜D469 | 振荡优化函数 / D469 |](docs/zh/discoveries/items/DISC-0074.md) — novelty: inconclusive · Ecology and Environment
+- [DISC-0075｜D259 | g_eff-p*双向反馈函数 / D259 |](docs/zh/discoveries/items/DISC-0075.md) — novelty: inconclusive · Ecology and Environment
+- [DISC-0076｜D128 | 退相干-退化统一函数 / D128 |](docs/zh/discoveries/items/DISC-0076.md) — novelty: inconclusive · Ecology and Environment
+- [DISC-0077｜C-0574 | 企业定期重组 / C-0574 |](docs/zh/discoveries/items/DISC-0077.md) — novelty: inconclusive · Ecology and Environment
+- [DISC-0078｜C-0446 | 刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)... / C-0446 |](docs/zh/discoveries/items/DISC-0078.md) — novelty: inconclusive · Ecology and Environment
+- [DISC-0079｜A4 | R_perceived(t,L,C) 应约者感知退出权 / A4 | R_perceived(t,L,C) perceived responder exit right](docs/zh/discoveries/items/DISC-0079.md) — novelty: inconclusive · Other
+- [DISC-0080｜A6 | H(t,L) 遮蔽函数（双源） / A6 | H(t,L) obscuration function (dual-source)](docs/zh/discoveries/items/DISC-0080.md) — novelty: inconclusive · Other
+- [DISC-0081｜A9 | P_exit(t,L,C) 退出概率 / A9 | P_exit(t,L,C) exit probability](docs/zh/discoveries/items/DISC-0081.md) — novelty: inconclusive · Other
+- [DISC-0082｜C-0064 | 阿兹特克 / C-0064 |](docs/zh/discoveries/items/DISC-0082.md) — novelty: inconclusive · Other
+- [DISC-0083｜C-0065 | 印加 / C-0065 |](docs/zh/discoveries/items/DISC-0083.md) — novelty: inconclusive · Other
 <!-- DISCOVERY_LIST_END -->

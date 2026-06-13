@@ -53,8 +53,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:education-and-learning -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0069｜D424 | 两步策略唯一性函数 / D424 |](../items/DISC-0069.md)
+- [DISC-0070｜D275 | 维度最优漂移函数 / D275 |](../items/DISC-0070.md)
+- [DISC-0071｜D248 | 自我模型相变的不可伪造信号 / D248 |](../items/DISC-0071.md)
+- [DISC-0072｜C-0339 | 遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死 / C-0339 |](../items/DISC-0072.md)
+- [DISC-0073｜C-0346 | 导师-学生的向下兼容 — 导师用B_L解释，学生觉得"全懂了"但ηfidelity≈0.33，拿降维版本独立研究处处碰壁 / C-0346 |](../items/DISC-0073.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:education-and-learning -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -78,5 +81,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：14
 - 相关案例 / Related cases：18
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

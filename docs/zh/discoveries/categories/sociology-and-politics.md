@@ -83,8 +83,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:sociology-and-politics -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0054｜D320 | 容斥加速跨域标度函数 / D320 |](../items/DISC-0054.md)
+- [DISC-0055｜D108 | 三域熵统一函数（推论级） / D108 |](../items/DISC-0055.md)
+- [DISC-0056｜D252 | 社会学容斥加速函数 / D252 |](../items/DISC-0056.md)
+- [DISC-0057｜C-0504 | 认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_... / C-0504 |](../items/DISC-0057.md)
+- [DISC-0058｜C-0515 | 度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延... / C-0515 | 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致](../items/DISC-0058.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:sociology-and-politics -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -108,5 +111,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：32
 - 相关案例 / Related cases：42
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

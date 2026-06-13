@@ -4,24 +4,7 @@
 
 English: This index collects testable predictions derived by the Ignition framework from functions, cases, discoveries, and bootstrap cycles. A prediction is not a discovery itself, but a future-facing or pending inference derived from mechanisms, evidence, and insights.
 
-## 预测分类 / Prediction Categories
-
-中文：以下分类由当前函数、案例与发现的自举扫描生成，不是空壳入口。每条预测可以属于一个或多个分类。
-
-English: The following categories are generated from a bootstrap scan of the current function, case, and discovery tables. They are not empty shells, and each prediction may belong to one or more categories.
-
-| 预测分类 / Prediction Category | 正式预测 / Curated Predictions | 待整理线索 / Prediction Leads | 当前覆盖 / Current Coverage |
-| --- | ---: | ---: | --- |
-| [技术与工程 / Technology and Engineering](docs/zh/predictions/categories/technology-and-engineering.md) | 4 | 0 | 19 functions, 10 cases, 0 discoveries |
-| [AI 与系统 / AI and Systems](docs/zh/predictions/categories/ai-and-systems.md) | 3 | 0 | 9 functions, 9 cases, 0 discoveries |
-| [神经科学与意识 / Neuroscience and Consciousness](docs/zh/predictions/categories/neuroscience-and-consciousness.md) | 2 | 0 | 8 functions, 6 cases, 0 discoveries |
-| [心理学 / Psychology](docs/zh/predictions/categories/psychology.md) | 2 | 0 | 8 functions, 6 cases, 0 discoveries |
-| [历史与文明 / History and Civilization](docs/zh/predictions/categories/history-and-civilization.md) | 2 | 0 | 4 functions, 5 cases, 0 discoveries |
-| [社会学与政治 / Sociology and Politics](docs/zh/predictions/categories/sociology-and-politics.md) | 2 | 0 | 4 functions, 5 cases, 0 discoveries |
-| [经济与财富 / Economics and Wealth](docs/zh/predictions/categories/economics-and-wealth.md) | 1 | 0 | 8 functions, 3 cases, 0 discoveries |
-| [物理学 / Physics](docs/zh/predictions/categories/physics.md) | 1 | 0 | 6 functions, 2 cases, 0 discoveries |
-
-## 最近预测 / Recent Predictions
+## 预测列表 / Predictions
 
 <!-- PREDICTION_LIST_START -->
 - [PRED-0001｜CAI 中间层会持续提高意图中继保真度 / CAI middle layer will keep improving intent relay fidelity](docs/zh/predictions/items/PRED-0001.md) — novelty: inconclusive · AI and Systems, Technology and Engineering

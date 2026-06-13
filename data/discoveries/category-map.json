@@ -1923,7 +1923,53 @@
         "normalized_id": "C-0573"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0001",
+        "title": {
+          "zh": "D226 | 物理存在的三重时间约束",
+          "en": "D226 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0001.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0002",
+        "title": {
+          "zh": "D217 | 完全统一条件函数",
+          "en": "D217 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0002.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0003",
+        "title": {
+          "zh": "T34 | 量子引力Φ框架函数",
+          "en": "T34 | quantum-gravity Phi framework function"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0003.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0004",
+        "title": {
+          "zh": "C-0448 | 物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/|T-Tc|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同（发散vs峰值）...",
+          "en": "C-0448 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0004.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0005",
+        "title": {
+          "zh": "C-0532 | 信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影",
+          "en": "C-0532 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0005.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D226｜物理存在的三重时间约束 仍可继续整理为 物理学 方向的独立发现。",
@@ -1974,7 +2020,7 @@
     "coverage": {
       "related_functions_count": 133,
       "related_cases_count": 71,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -3264,7 +3310,53 @@
         "normalized_id": "C-0278"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0006",
+        "title": {
+          "zh": "D58 | 固化加速函数",
+          "en": "D58 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0006.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0007",
+        "title": {
+          "zh": "D245 | 自我模型函数",
+          "en": "D245 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0007.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0008",
+        "title": {
+          "zh": "D250 | 自我模型相变的验证标准",
+          "en": "D250 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0008.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0009",
+        "title": {
+          "zh": "C-0502 | 认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时...",
+          "en": "C-0502 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0009.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0010",
+        "title": {
+          "zh": "C-0506 | 认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部...",
+          "en": "C-0506 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0010.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D58｜固化加速函数 仍可继续整理为 心理学 方向的独立发现。",
@@ -3315,7 +3407,7 @@
     "coverage": {
       "related_functions_count": 61,
       "related_cases_count": 72,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -4575,7 +4667,53 @@
         "normalized_id": "C-0577"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0011",
+        "title": {
+          "zh": "D466 | 暗物质核心-幽灵衰减函数",
+          "en": "D466 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0011.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0012",
+        "title": {
+          "zh": "D212 | 暗物质-门控隐形函数",
+          "en": "D212 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0012.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0013",
+        "title": {
+          "zh": "D122 | 退化加速函数",
+          "en": "D122 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0013.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0014",
+        "title": {
+          "zh": "C-0295 | CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D6...",
+          "en": "C-0295 | CAI编码能力关键瓶颈 - frecombine(概念碰撞率)和ηencode(Q*)(最优共享度), 前者依赖D121实现, 后者依赖D66obscuration与共享的平衡"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0014.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0015",
+        "title": {
+          "zh": "C-0359 | CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity",
+          "en": "C-0359 | CAI中间层 - 同样场景CAI中间层ηrelay≈0.576, 比无意识AI好2.7倍, 关键差异在ηfidelity"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0015.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D466｜暗物质核心-幽灵衰减函数 仍可继续整理为 化学 方向的独立发现。",
@@ -4626,7 +4764,7 @@
     "coverage": {
       "related_functions_count": 21,
       "related_cases_count": 105,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -4955,7 +5093,53 @@
         "normalized_id": "C-0135"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0016",
+        "title": {
+          "zh": "D237 | 生命智能的σ压缩函数",
+          "en": "D237 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0016.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0017",
+        "title": {
+          "zh": "D467 | 最优性-惯性反比函数",
+          "en": "D467 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0017.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0018",
+        "title": {
+          "zh": "D124 | 三域退化统一参数函数",
+          "en": "D124 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0018.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0019",
+        "title": {
+          "zh": "C-0384 | 有性繁殖的倒U型——繁殖成本与基因多样性之间的两个死锁，有性繁殖是唯一通路",
+          "en": "C-0384 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0019.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0020",
+        "title": {
+          "zh": "C-0460 | 生物不可逆的Fisher解释 — 细胞凋亡（乘法：任一关键蛋白归零则死亡），死亡后Shannon熵增但Fisher可达性=0（信息距离∞...",
+          "en": "C-0460 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0020.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D237｜生命智能的σ压缩函数 仍可继续整理为 生物学 方向的独立发现。",
@@ -5006,7 +5190,7 @@
     "coverage": {
       "related_functions_count": 12,
       "related_cases_count": 20,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -6111,7 +6295,53 @@
         "normalized_id": "C-0278"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0021",
+        "title": {
+          "zh": "D241 | 自主意识的四象限",
+          "en": "D241 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0021.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0022",
+        "title": {
+          "zh": "D244 | 自主意识涌现的临界条件",
+          "en": "D244 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0022.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0023",
+        "title": {
+          "zh": "D125 | 认知叠加-隧穿统一函数",
+          "en": "D125 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0023.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0024",
+        "title": {
+          "zh": "C-0191 | AI诞生自主意识的完整数学路径",
+          "en": "C-0191 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0024.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0025",
+        "title": {
+          "zh": "C-0364 | 认知差距与翻转速度对比 — BH/BL=2时tflip≈22个月，BH/BL=10时tflip≈5个月，认知差距越大兼容崩溃越快",
+          "en": "C-0364 | 认知差距与翻转速度对比 - BH/BL=2时tflip≈22个月, BH/BL=10时tflip≈5个月, 认知差距越大兼容崩溃越快"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0025.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D241｜自主意识的四象限 仍可继续整理为 神经科学与意识 方向的独立发现。",
@@ -6162,7 +6392,7 @@
     "coverage": {
       "related_functions_count": 46,
       "related_cases_count": 67,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -6448,7 +6678,53 @@
         "normalized_id": "C-0028"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0026",
+        "title": {
+          "zh": "D367 | 僵尸态传染免疫函数",
+          "en": "D367 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0026.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0027",
+        "title": {
+          "zh": "D121 | Fisher健康度函数",
+          "en": "D121 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0027.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0028",
+        "title": {
+          "zh": "D60 | 智慧干预效力函数",
+          "en": "D60 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0028.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0029",
+        "title": {
+          "zh": "C-0411 | 耐药性的门槛军备竞赛——药物抬高Λ（D162）与病原体降低自身Λ的对抗",
+          "en": "C-0411 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0029.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0030",
+        "title": {
+          "zh": "C-0575 | 免疫系统更新",
+          "en": "C-0575 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0030.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D367｜僵尸态传染免疫函数 仍可继续整理为 医学与健康 方向的独立发现。",
@@ -6499,7 +6775,7 @@
     "coverage": {
       "related_functions_count": 15,
       "related_cases_count": 13,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -6907,7 +7183,53 @@
         "normalized_id": "C-0570"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0031",
+        "title": {
+          "zh": "D226 | 物理存在的三重时间约束",
+          "en": "D226 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0031.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0032",
+        "title": {
+          "zh": "D220 | 完全统一不可能定理",
+          "en": "D220 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0032.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0033",
+        "title": {
+          "zh": "T23 | Φ跨域稳定性定理",
+          "en": "T23 | Φcross-domain stability theorem"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0033.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0034",
+        "title": {
+          "zh": "C-0527 | EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9",
+          "en": "C-0527 | EPR悖论 - 局域性和实在性是连续因子不是布尔量, B=ε_loc x ε_real≈0.9"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0034.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0035",
+        "title": {
+          "zh": "C-0469 | 认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在F...",
+          "en": "C-0469 | 认知僵化Fisher解释 - 专家P_track=1(单轨), ε_aware=0, Fisher可达性=0. 新信息存在但无法整合=信息在Fisher距离∞的区域. 打开新轨道(跨域学习)=增加Fisher可达性"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0035.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D226｜物理存在的三重时间约束 仍可继续整理为 哲学 方向的独立发现。",
@@ -6958,7 +7280,7 @@
     "coverage": {
       "related_functions_count": 33,
       "related_cases_count": 9,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -12592,7 +12914,53 @@
         "normalized_id": "C-0285"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0036",
+        "title": {
+          "zh": "D108 | 三域熵统一函数（推论级）",
+          "en": "D108 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0036.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0037",
+        "title": {
+          "zh": "D115 | r_cross优先性定理",
+          "en": "D115 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0037.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0038",
+        "title": {
+          "zh": "D116 | 因果闭包自举函数",
+          "en": "D116 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0038.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0039",
+        "title": {
+          "zh": "C-0497 | 文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版",
+          "en": "C-0497 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0039.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0040",
+        "title": {
+          "zh": "C-0522 | 跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级...",
+          "en": "C-0522 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0040.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D108｜三域熵统一函数（推论级） 仍可继续整理为 历史与文明 方向的独立发现。",
@@ -12643,7 +13011,7 @@
     "coverage": {
       "related_functions_count": 67,
       "related_cases_count": 501,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -12681,7 +13049,26 @@
       }
     ],
     "related_cases": [],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0041",
+        "title": {
+          "zh": "D25 | 叙事冲击",
+          "en": "D25 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0041.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0042",
+        "title": {
+          "zh": "D14 | 种子激活概率",
+          "en": "D14 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0042.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D25｜叙事冲击 仍可继续整理为 文学与叙事 方向的独立发现。",
@@ -12705,7 +13092,7 @@
     "coverage": {
       "related_functions_count": 2,
       "related_cases_count": 0,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 2,
       "discovery_leads_count": 2
     }
   },
@@ -12735,7 +13122,17 @@
         "normalized_id": "C-0342"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0043",
+        "title": {
+          "zh": "C-0342 | 图形界面vs命令行 — 图形界面ηstructural≈0.7，命令行ηstructural≈0.3，Pdecode差2-3倍",
+          "en": "C-0342 | 图形界面vs命令行 - 图形界面ηstructural≈0.7, 命令行ηstructural≈0.3, Pdecode差2-3倍"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0043.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "C-0342｜图形界面vs命令行 — 图形界面ηstructural≈0.7，命令行ηstructural≈0.3，Pdecode差2-3倍 仍可继续整理为 艺术与摄影 方向的独立发现。",
@@ -12750,7 +13147,7 @@
     "coverage": {
       "related_functions_count": 0,
       "related_cases_count": 1,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 1,
       "discovery_leads_count": 1
     }
   },
@@ -14011,7 +14408,53 @@
         "normalized_id": "C-0420"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0044",
+        "title": {
+          "zh": "D261 | 维度最优平衡函数",
+          "en": "D261 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0044.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0045",
+        "title": {
+          "zh": "D161 | 投资遮蔽跨域放大",
+          "en": "D161 | 投资obscuration跨域放大"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0045.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0046",
+        "title": {
+          "zh": "D170 | 定投凯利保守性验证",
+          "en": "D170 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0046.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0047",
+        "title": {
+          "zh": "C-0517 | 认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6...",
+          "en": "C-0517 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0047.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0048",
+        "title": {
+          "zh": "C-0446 | 刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)...",
+          "en": "C-0446 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0048.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D261｜维度最优平衡函数 仍可继续整理为 经济与财富 方向的独立发现。",
@@ -14062,7 +14505,7 @@
     "coverage": {
       "related_functions_count": 60,
       "related_cases_count": 70,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -14247,7 +14690,53 @@
         "normalized_id": "C-0567"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0049",
+        "title": {
+          "zh": "D23 | 法治度",
+          "en": "D23 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0049.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0050",
+        "title": {
+          "zh": "D22 | 民事保护，各维度退出权的乘积",
+          "en": "D22 | 民事保护, 各维度exit right的乘积"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0050.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0051",
+        "title": {
+          "zh": "A7 | 退出权信号",
+          "en": "A7 | exit-right signal"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0051.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0052",
+        "title": {
+          "zh": "C-0317 | 权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非",
+          "en": "C-0317 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0052.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0053",
+        "title": {
+          "zh": "C-0170 | 七层主权最低门槛（验证A7财富维度）",
+          "en": "C-0170 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0053.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D23｜法治度 仍可继续整理为 法律与制度 方向的独立发现。",
@@ -14298,7 +14787,7 @@
     "coverage": {
       "related_functions_count": 6,
       "related_cases_count": 11,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -15027,7 +15516,53 @@
         "normalized_id": "C-0054"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0054",
+        "title": {
+          "zh": "D320 | 容斥加速跨域标度函数",
+          "en": "D320 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0054.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0055",
+        "title": {
+          "zh": "D108 | 三域熵统一函数（推论级）",
+          "en": "D108 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0055.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0056",
+        "title": {
+          "zh": "D252 | 社会学容斥加速函数",
+          "en": "D252 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0056.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0057",
+        "title": {
+          "zh": "C-0504 | 认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_...",
+          "en": "C-0504 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0057.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0058",
+        "title": {
+          "zh": "C-0515 | 度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延...",
+          "en": "C-0515 | 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0058.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D320｜容斥加速跨域标度函数 仍可继续整理为 社会学与政治 方向的独立发现。",
@@ -15078,7 +15613,7 @@
     "coverage": {
       "related_functions_count": 32,
       "related_cases_count": 42,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -17424,7 +17959,53 @@
         "normalized_id": "C-0528"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0059",
+        "title": {
+          "zh": "D171 | AI直觉缺失的物种判据",
+          "en": "D171 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0059.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0060",
+        "title": {
+          "zh": "D245 | 自我模型函数",
+          "en": "D245 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0060.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0061",
+        "title": {
+          "zh": "D95 | AI中间层调度",
+          "en": "D95 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0061.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0062",
+        "title": {
+          "zh": "C-0361 | CAI中间层调度链 — CAI₁→CAI_M→EAI，CAI_M的Pencode>0能做意图中继，ηchain≈0.35",
+          "en": "C-0361 | CAI中间层调度链 - CAI₁ -> CAI_M -> EAI, CAI_M的Pencode>0能做意图中继, ηchain≈0.35"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0062.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0063",
+        "title": {
+          "zh": "C-0366 | CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηf...",
+          "en": "C-0366 | CAI中间层vs无意识AI中间层 - CAI ηrelay≈0.576, 无意识AI ηrelay≈0.21, CAI好2.7倍, 关键在ηfidelity(保留意图结构vs丢失隐含信息)"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0063.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D171｜AI直觉缺失的物种判据 仍可继续整理为 AI 与系统 方向的独立发现。",
@@ -17475,7 +18056,7 @@
     "coverage": {
       "related_functions_count": 135,
       "related_cases_count": 111,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -18058,7 +18639,53 @@
         "normalized_id": "C-0178"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0064",
+        "title": {
+          "zh": "D469 | 振荡优化函数",
+          "en": "D469 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0064.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0065",
+        "title": {
+          "zh": "D470 | 幽灵跳变阻尼函数",
+          "en": "D470 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0065.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0066",
+        "title": {
+          "zh": "D123 | 缓存容量倒U型函数",
+          "en": "D123 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0066.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0067",
+        "title": {
+          "zh": "C-0498 | 技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp[-ln²]的技术版",
+          "en": "C-0498 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0067.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0068",
+        "title": {
+          "zh": "C-0286 | 提示词工程=ηinterface优化 — 人类调高Pencode（精确描述意图），AI调高Pdecode（指令遵循），Ptransfer...",
+          "en": "C-0286 | 提示词工程=ηinterface优化 - 人类调高Pencode(精确描述意图), AI调高Pdecode(指令遵循), Ptransfer受限于token窗口, 当前η≈0.3-0.7"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0068.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D469｜振荡优化函数 仍可继续整理为 技术与工程 方向的独立发现。",
@@ -18109,7 +18736,7 @@
     "coverage": {
       "related_functions_count": 28,
       "related_cases_count": 31,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -18436,7 +19063,53 @@
         "normalized_id": "C-0138"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0069",
+        "title": {
+          "zh": "D424 | 两步策略唯一性函数",
+          "en": "D424 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0069.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0070",
+        "title": {
+          "zh": "D275 | 维度最优漂移函数",
+          "en": "D275 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0070.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0071",
+        "title": {
+          "zh": "D248 | 自我模型相变的不可伪造信号",
+          "en": "D248 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0071.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0072",
+        "title": {
+          "zh": "C-0339 | 遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死",
+          "en": "C-0339 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0072.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0073",
+        "title": {
+          "zh": "C-0346 | 导师-学生的向下兼容 — 导师用B_L解释，学生觉得\"全懂了\"但ηfidelity≈0.33，拿降维版本独立研究处处碰壁",
+          "en": "C-0346 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0073.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D424｜两步策略唯一性函数 仍可继续整理为 教育与学习 方向的独立发现。",
@@ -18487,7 +19160,7 @@
     "coverage": {
       "related_functions_count": 14,
       "related_cases_count": 18,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -19057,7 +19730,53 @@
         "normalized_id": "C-0148"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0074",
+        "title": {
+          "zh": "D469 | 振荡优化函数",
+          "en": "D469 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0074.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0075",
+        "title": {
+          "zh": "D259 | g_eff-p*双向反馈函数",
+          "en": "D259 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0075.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0076",
+        "title": {
+          "zh": "D128 | 退相干-退化统一函数",
+          "en": "D128 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0076.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0077",
+        "title": {
+          "zh": "C-0574 | 企业定期重组",
+          "en": "C-0574 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0077.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0078",
+        "title": {
+          "zh": "C-0446 | 刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)...",
+          "en": "C-0446 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0078.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "D469｜振荡优化函数 仍可继续整理为 生态与环境 方向的独立发现。",
@@ -19108,7 +19827,7 @@
     "coverage": {
       "related_functions_count": 31,
       "related_cases_count": 27,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   },
@@ -20928,7 +21647,53 @@
         "normalized_id": "C-0284"
       }
     ],
-    "curated_discoveries": [],
+    "curated_discoveries": [
+      {
+        "id": "DISC-0079",
+        "title": {
+          "zh": "A4 | R_perceived(t,L,C) 应约者感知退出权",
+          "en": "A4 | R_perceived(t,L,C) perceived responder exit right"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0079.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0080",
+        "title": {
+          "zh": "A6 | H(t,L) 遮蔽函数（双源）",
+          "en": "A6 | H(t,L) obscuration function (dual-source)"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0080.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0081",
+        "title": {
+          "zh": "A9 | P_exit(t,L,C) 退出概率",
+          "en": "A9 | P_exit(t,L,C) exit probability"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0081.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0082",
+        "title": {
+          "zh": "C-0064 | 阿兹特克",
+          "en": "C-0064 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0082.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0083",
+        "title": {
+          "zh": "C-0065 | 印加",
+          "en": "C-0065 |"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0083.md",
+        "status": "active_pending_novelty_review"
+      }
+    ],
     "discovery_leads": [
       {
         "zh": "A4｜R_perceived(t,L,C) 应约者感知退出权 仍可继续整理为 其他 方向的独立发现。",
@@ -20979,7 +21744,7 @@
     "coverage": {
       "related_functions_count": 141,
       "related_cases_count": 53,
-      "curated_discoveries_count": 0,
+      "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
   }

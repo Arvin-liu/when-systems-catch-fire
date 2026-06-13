@@ -25,8 +25,8 @@ No related cases yet.
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:literature-and-narrative -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0041｜D25 | 叙事冲击 / D25 |](../items/DISC-0041.md)
+- [DISC-0042｜D14 | 种子激活概率 / D14 |](../items/DISC-0042.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:literature-and-narrative -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -44,5 +44,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：2
 - 相关案例 / Related cases：0
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：2
 - 待整理线索 / Discovery leads：2

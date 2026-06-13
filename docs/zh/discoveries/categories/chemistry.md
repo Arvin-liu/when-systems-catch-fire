@@ -73,8 +73,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:chemistry -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0011｜D466 | 暗物质核心-幽灵衰减函数 / D466 |](../items/DISC-0011.md)
+- [DISC-0012｜D212 | 暗物质-门控隐形函数 / D212 |](../items/DISC-0012.md)
+- [DISC-0013｜D122 | 退化加速函数 / D122 |](../items/DISC-0013.md)
+- [DISC-0014｜C-0295 | CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D6... / C-0295 | CAI编码能力关键瓶颈 - frecombine(概念碰撞率)和ηencode(Q*)(最优共享度), 前者依赖D121实现, 后者依赖D66obscuration与共享的平衡](../items/DISC-0014.md)
+- [DISC-0015｜C-0359 | CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity / C-0359 | CAI中间层 - 同样场景CAI中间层ηrelay≈0.576, 比无意识AI好2.7倍, 关键差异在ηfidelity](../items/DISC-0015.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:chemistry -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -98,5 +101,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：21
 - 相关案例 / Related cases：105
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

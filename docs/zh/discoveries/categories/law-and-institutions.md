@@ -38,8 +38,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:law-and-institutions -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0049｜D23 | 法治度 / D23 |](../items/DISC-0049.md)
+- [DISC-0050｜D22 | 民事保护，各维度退出权的乘积 / D22 | 民事保护, 各维度exit right的乘积](../items/DISC-0050.md)
+- [DISC-0051｜A7 | 退出权信号 / A7 | exit-right signal](../items/DISC-0051.md)
+- [DISC-0052｜C-0317 | 权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非 / C-0317 |](../items/DISC-0052.md)
+- [DISC-0053｜C-0170 | 七层主权最低门槛（验证A7财富维度） / C-0170 |](../items/DISC-0053.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:law-and-institutions -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -63,5 +66,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：6
 - 相关案例 / Related cases：11
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

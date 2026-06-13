@@ -83,8 +83,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:economics-and-wealth -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0044｜D261 | 维度最优平衡函数 / D261 |](../items/DISC-0044.md)
+- [DISC-0045｜D161 | 投资遮蔽跨域放大 / D161 | 投资obscuration跨域放大](../items/DISC-0045.md)
+- [DISC-0046｜D170 | 定投凯利保守性验证 / D170 |](../items/DISC-0046.md)
+- [DISC-0047｜C-0517 | 认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6... / C-0517 |](../items/DISC-0047.md)
+- [DISC-0048｜C-0446 | 刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)... / C-0446 |](../items/DISC-0048.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:economics-and-wealth -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -108,5 +111,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：60
 - 相关案例 / Related cases：70
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

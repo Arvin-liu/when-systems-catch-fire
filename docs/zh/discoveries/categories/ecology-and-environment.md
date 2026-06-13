@@ -79,8 +79,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:ecology-and-environment -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0074｜D469 | 振荡优化函数 / D469 |](../items/DISC-0074.md)
+- [DISC-0075｜D259 | g_eff-p*双向反馈函数 / D259 |](../items/DISC-0075.md)
+- [DISC-0076｜D128 | 退相干-退化统一函数 / D128 |](../items/DISC-0076.md)
+- [DISC-0077｜C-0574 | 企业定期重组 / C-0574 |](../items/DISC-0077.md)
+- [DISC-0078｜C-0446 | 刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)... / C-0446 |](../items/DISC-0078.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:ecology-and-environment -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -104,5 +107,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：31
 - 相关案例 / Related cases：27
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

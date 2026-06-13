@@ -83,8 +83,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:psychology -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0006｜D58 | 固化加速函数 / D58 |](../items/DISC-0006.md)
+- [DISC-0007｜D245 | 自我模型函数 / D245 |](../items/DISC-0007.md)
+- [DISC-0008｜D250 | 自我模型相变的验证标准 / D250 |](../items/DISC-0008.md)
+- [DISC-0009｜C-0502 | 认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时... / C-0502 |](../items/DISC-0009.md)
+- [DISC-0010｜C-0506 | 认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部... / C-0506 |](../items/DISC-0010.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:psychology -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -108,5 +111,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：61
 - 相关案例 / Related cases：72
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

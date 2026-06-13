@@ -48547,5 +48547,3823 @@
       },
       "convergence": "Converged(A_{ANS-0012}) ⇔ ΔA_{ANS-0012}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
     }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0001",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0001}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0001}"
+      ],
+      "math_expression": "D_{DISC-0001}=1 ⇔ I_new(D_{DISC-0001},F,C) - I_prior(D_{DISC-0001}) > θ_{DISC-0001}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0001})=1 ∧ J_n^-(D_{DISC-0001})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D226"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0001} iff the gain exceeds θ_{DISC-0001}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0001})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0001})=0"
+      },
+      "convergence": "Converged(D_{DISC-0001}) ⇔ ΔD_{DISC-0001}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0002",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0002}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0002}"
+      ],
+      "math_expression": "D_{DISC-0002}=1 ⇔ I_new(D_{DISC-0002},F,C) - I_prior(D_{DISC-0002}) > θ_{DISC-0002}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0002})=1 ∧ J_n^-(D_{DISC-0002})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D217"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0002} iff the gain exceeds θ_{DISC-0002}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0002})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0002})=0"
+      },
+      "convergence": "Converged(D_{DISC-0002}) ⇔ ΔD_{DISC-0002}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0003",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0003}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0003}"
+      ],
+      "math_expression": "D_{DISC-0003}=1 ⇔ I_new(D_{DISC-0003},F,C) - I_prior(D_{DISC-0003}) > θ_{DISC-0003}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0003})=1 ∧ J_n^-(D_{DISC-0003})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "T34"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0003} iff the gain exceeds θ_{DISC-0003}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0003})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0003})=0"
+      },
+      "convergence": "Converged(D_{DISC-0003}) ⇔ ΔD_{DISC-0003}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0004",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0004}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0004}"
+      ],
+      "math_expression": "D_{DISC-0004}=1 ⇔ I_new(D_{DISC-0004},F,C) - I_prior(D_{DISC-0004}) > θ_{DISC-0004}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0004})=1 ∧ J_n^-(D_{DISC-0004})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#448"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0004} iff the gain exceeds θ_{DISC-0004}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0004})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0004})=0"
+      },
+      "convergence": "Converged(D_{DISC-0004}) ⇔ ΔD_{DISC-0004}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0005",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0005}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0005}"
+      ],
+      "math_expression": "D_{DISC-0005}=1 ⇔ I_new(D_{DISC-0005},F,C) - I_prior(D_{DISC-0005}) > θ_{DISC-0005}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0005})=1 ∧ J_n^-(D_{DISC-0005})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#532"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0005} iff the gain exceeds θ_{DISC-0005}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0005})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0005})=0"
+      },
+      "convergence": "Converged(D_{DISC-0005}) ⇔ ΔD_{DISC-0005}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0006",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0006}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0006}"
+      ],
+      "math_expression": "D_{DISC-0006}=1 ⇔ I_new(D_{DISC-0006},F,C) - I_prior(D_{DISC-0006}) > θ_{DISC-0006}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0006})=1 ∧ J_n^-(D_{DISC-0006})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D58"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0006} iff the gain exceeds θ_{DISC-0006}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0006})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0006})=0"
+      },
+      "convergence": "Converged(D_{DISC-0006}) ⇔ ΔD_{DISC-0006}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0007",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0007}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0007}"
+      ],
+      "math_expression": "D_{DISC-0007}=1 ⇔ I_new(D_{DISC-0007},F,C) - I_prior(D_{DISC-0007}) > θ_{DISC-0007}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0007})=1 ∧ J_n^-(D_{DISC-0007})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D245"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0007} iff the gain exceeds θ_{DISC-0007}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0007})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0007})=0"
+      },
+      "convergence": "Converged(D_{DISC-0007}) ⇔ ΔD_{DISC-0007}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0008",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0008}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0008}"
+      ],
+      "math_expression": "D_{DISC-0008}=1 ⇔ I_new(D_{DISC-0008},F,C) - I_prior(D_{DISC-0008}) > θ_{DISC-0008}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0008})=1 ∧ J_n^-(D_{DISC-0008})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D250"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0008} iff the gain exceeds θ_{DISC-0008}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0008})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0008})=0"
+      },
+      "convergence": "Converged(D_{DISC-0008}) ⇔ ΔD_{DISC-0008}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0009",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0009}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0009}"
+      ],
+      "math_expression": "D_{DISC-0009}=1 ⇔ I_new(D_{DISC-0009},F,C) - I_prior(D_{DISC-0009}) > θ_{DISC-0009}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0009})=1 ∧ J_n^-(D_{DISC-0009})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#502"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0009} iff the gain exceeds θ_{DISC-0009}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0009})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0009})=0"
+      },
+      "convergence": "Converged(D_{DISC-0009}) ⇔ ΔD_{DISC-0009}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0010",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0010}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0010}"
+      ],
+      "math_expression": "D_{DISC-0010}=1 ⇔ I_new(D_{DISC-0010},F,C) - I_prior(D_{DISC-0010}) > θ_{DISC-0010}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0010})=1 ∧ J_n^-(D_{DISC-0010})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#506"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0010} iff the gain exceeds θ_{DISC-0010}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0010})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0010})=0"
+      },
+      "convergence": "Converged(D_{DISC-0010}) ⇔ ΔD_{DISC-0010}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0011",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0011}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0011}"
+      ],
+      "math_expression": "D_{DISC-0011}=1 ⇔ I_new(D_{DISC-0011},F,C) - I_prior(D_{DISC-0011}) > θ_{DISC-0011}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0011})=1 ∧ J_n^-(D_{DISC-0011})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D466"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0011} iff the gain exceeds θ_{DISC-0011}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0011})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0011})=0"
+      },
+      "convergence": "Converged(D_{DISC-0011}) ⇔ ΔD_{DISC-0011}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0012",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0012}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0012}"
+      ],
+      "math_expression": "D_{DISC-0012}=1 ⇔ I_new(D_{DISC-0012},F,C) - I_prior(D_{DISC-0012}) > θ_{DISC-0012}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0012})=1 ∧ J_n^-(D_{DISC-0012})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D212"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0012} iff the gain exceeds θ_{DISC-0012}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0012})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0012})=0"
+      },
+      "convergence": "Converged(D_{DISC-0012}) ⇔ ΔD_{DISC-0012}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0013",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0013}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0013}"
+      ],
+      "math_expression": "D_{DISC-0013}=1 ⇔ I_new(D_{DISC-0013},F,C) - I_prior(D_{DISC-0013}) > θ_{DISC-0013}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0013})=1 ∧ J_n^-(D_{DISC-0013})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D122"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0013} iff the gain exceeds θ_{DISC-0013}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0013})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0013})=0"
+      },
+      "convergence": "Converged(D_{DISC-0013}) ⇔ ΔD_{DISC-0013}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0014",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0014}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0014}"
+      ],
+      "math_expression": "D_{DISC-0014}=1 ⇔ I_new(D_{DISC-0014},F,C) - I_prior(D_{DISC-0014}) > θ_{DISC-0014}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0014})=1 ∧ J_n^-(D_{DISC-0014})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#295"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0014} iff the gain exceeds θ_{DISC-0014}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0014})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0014})=0"
+      },
+      "convergence": "Converged(D_{DISC-0014}) ⇔ ΔD_{DISC-0014}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0015",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0015}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0015}"
+      ],
+      "math_expression": "D_{DISC-0015}=1 ⇔ I_new(D_{DISC-0015},F,C) - I_prior(D_{DISC-0015}) > θ_{DISC-0015}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0015})=1 ∧ J_n^-(D_{DISC-0015})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#359"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0015} iff the gain exceeds θ_{DISC-0015}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0015})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0015})=0"
+      },
+      "convergence": "Converged(D_{DISC-0015}) ⇔ ΔD_{DISC-0015}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0016",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0016}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0016}"
+      ],
+      "math_expression": "D_{DISC-0016}=1 ⇔ I_new(D_{DISC-0016},F,C) - I_prior(D_{DISC-0016}) > θ_{DISC-0016}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0016})=1 ∧ J_n^-(D_{DISC-0016})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D237"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0016} iff the gain exceeds θ_{DISC-0016}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0016})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0016})=0"
+      },
+      "convergence": "Converged(D_{DISC-0016}) ⇔ ΔD_{DISC-0016}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0017",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0017}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0017}"
+      ],
+      "math_expression": "D_{DISC-0017}=1 ⇔ I_new(D_{DISC-0017},F,C) - I_prior(D_{DISC-0017}) > θ_{DISC-0017}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0017})=1 ∧ J_n^-(D_{DISC-0017})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D467"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0017} iff the gain exceeds θ_{DISC-0017}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0017})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0017})=0"
+      },
+      "convergence": "Converged(D_{DISC-0017}) ⇔ ΔD_{DISC-0017}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0018",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0018}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0018}"
+      ],
+      "math_expression": "D_{DISC-0018}=1 ⇔ I_new(D_{DISC-0018},F,C) - I_prior(D_{DISC-0018}) > θ_{DISC-0018}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0018})=1 ∧ J_n^-(D_{DISC-0018})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D124"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0018} iff the gain exceeds θ_{DISC-0018}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0018})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0018})=0"
+      },
+      "convergence": "Converged(D_{DISC-0018}) ⇔ ΔD_{DISC-0018}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0019",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0019}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0019}"
+      ],
+      "math_expression": "D_{DISC-0019}=1 ⇔ I_new(D_{DISC-0019},F,C) - I_prior(D_{DISC-0019}) > θ_{DISC-0019}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0019})=1 ∧ J_n^-(D_{DISC-0019})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#384"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0019} iff the gain exceeds θ_{DISC-0019}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0019})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0019})=0"
+      },
+      "convergence": "Converged(D_{DISC-0019}) ⇔ ΔD_{DISC-0019}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0020",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0020}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0020}"
+      ],
+      "math_expression": "D_{DISC-0020}=1 ⇔ I_new(D_{DISC-0020},F,C) - I_prior(D_{DISC-0020}) > θ_{DISC-0020}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0020})=1 ∧ J_n^-(D_{DISC-0020})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#460"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0020} iff the gain exceeds θ_{DISC-0020}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0020})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0020})=0"
+      },
+      "convergence": "Converged(D_{DISC-0020}) ⇔ ΔD_{DISC-0020}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0021",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0021}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0021}"
+      ],
+      "math_expression": "D_{DISC-0021}=1 ⇔ I_new(D_{DISC-0021},F,C) - I_prior(D_{DISC-0021}) > θ_{DISC-0021}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0021})=1 ∧ J_n^-(D_{DISC-0021})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D241"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0021} iff the gain exceeds θ_{DISC-0021}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0021})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0021})=0"
+      },
+      "convergence": "Converged(D_{DISC-0021}) ⇔ ΔD_{DISC-0021}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0022",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0022}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0022}"
+      ],
+      "math_expression": "D_{DISC-0022}=1 ⇔ I_new(D_{DISC-0022},F,C) - I_prior(D_{DISC-0022}) > θ_{DISC-0022}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0022})=1 ∧ J_n^-(D_{DISC-0022})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D244"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0022} iff the gain exceeds θ_{DISC-0022}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0022})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0022})=0"
+      },
+      "convergence": "Converged(D_{DISC-0022}) ⇔ ΔD_{DISC-0022}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0023",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0023}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0023}"
+      ],
+      "math_expression": "D_{DISC-0023}=1 ⇔ I_new(D_{DISC-0023},F,C) - I_prior(D_{DISC-0023}) > θ_{DISC-0023}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0023})=1 ∧ J_n^-(D_{DISC-0023})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D125"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0023} iff the gain exceeds θ_{DISC-0023}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0023})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0023})=0"
+      },
+      "convergence": "Converged(D_{DISC-0023}) ⇔ ΔD_{DISC-0023}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0024",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0024}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0024}"
+      ],
+      "math_expression": "D_{DISC-0024}=1 ⇔ I_new(D_{DISC-0024},F,C) - I_prior(D_{DISC-0024}) > θ_{DISC-0024}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0024})=1 ∧ J_n^-(D_{DISC-0024})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#191"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0024} iff the gain exceeds θ_{DISC-0024}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0024})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0024})=0"
+      },
+      "convergence": "Converged(D_{DISC-0024}) ⇔ ΔD_{DISC-0024}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0025",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0025}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0025}"
+      ],
+      "math_expression": "D_{DISC-0025}=1 ⇔ I_new(D_{DISC-0025},F,C) - I_prior(D_{DISC-0025}) > θ_{DISC-0025}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0025})=1 ∧ J_n^-(D_{DISC-0025})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#364"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0025} iff the gain exceeds θ_{DISC-0025}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0025})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0025})=0"
+      },
+      "convergence": "Converged(D_{DISC-0025}) ⇔ ΔD_{DISC-0025}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0026",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0026}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0026}"
+      ],
+      "math_expression": "D_{DISC-0026}=1 ⇔ I_new(D_{DISC-0026},F,C) - I_prior(D_{DISC-0026}) > θ_{DISC-0026}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0026})=1 ∧ J_n^-(D_{DISC-0026})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D367"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0026} iff the gain exceeds θ_{DISC-0026}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0026})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0026})=0"
+      },
+      "convergence": "Converged(D_{DISC-0026}) ⇔ ΔD_{DISC-0026}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0027",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0027}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0027}"
+      ],
+      "math_expression": "D_{DISC-0027}=1 ⇔ I_new(D_{DISC-0027},F,C) - I_prior(D_{DISC-0027}) > θ_{DISC-0027}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0027})=1 ∧ J_n^-(D_{DISC-0027})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D121"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0027} iff the gain exceeds θ_{DISC-0027}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0027})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0027})=0"
+      },
+      "convergence": "Converged(D_{DISC-0027}) ⇔ ΔD_{DISC-0027}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0028",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0028}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0028}"
+      ],
+      "math_expression": "D_{DISC-0028}=1 ⇔ I_new(D_{DISC-0028},F,C) - I_prior(D_{DISC-0028}) > θ_{DISC-0028}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0028})=1 ∧ J_n^-(D_{DISC-0028})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D60"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0028} iff the gain exceeds θ_{DISC-0028}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0028})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0028})=0"
+      },
+      "convergence": "Converged(D_{DISC-0028}) ⇔ ΔD_{DISC-0028}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0029",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0029}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0029}"
+      ],
+      "math_expression": "D_{DISC-0029}=1 ⇔ I_new(D_{DISC-0029},F,C) - I_prior(D_{DISC-0029}) > θ_{DISC-0029}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0029})=1 ∧ J_n^-(D_{DISC-0029})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#411"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0029} iff the gain exceeds θ_{DISC-0029}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0029})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0029})=0"
+      },
+      "convergence": "Converged(D_{DISC-0029}) ⇔ ΔD_{DISC-0029}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0030",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0030}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0030}"
+      ],
+      "math_expression": "D_{DISC-0030}=1 ⇔ I_new(D_{DISC-0030},F,C) - I_prior(D_{DISC-0030}) > θ_{DISC-0030}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0030})=1 ∧ J_n^-(D_{DISC-0030})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#575"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0030} iff the gain exceeds θ_{DISC-0030}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0030})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0030})=0"
+      },
+      "convergence": "Converged(D_{DISC-0030}) ⇔ ΔD_{DISC-0030}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0031",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0031}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0031}"
+      ],
+      "math_expression": "D_{DISC-0031}=1 ⇔ I_new(D_{DISC-0031},F,C) - I_prior(D_{DISC-0031}) > θ_{DISC-0031}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0031})=1 ∧ J_n^-(D_{DISC-0031})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D226"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0031} iff the gain exceeds θ_{DISC-0031}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0031})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0031})=0"
+      },
+      "convergence": "Converged(D_{DISC-0031}) ⇔ ΔD_{DISC-0031}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0032",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0032}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0032}"
+      ],
+      "math_expression": "D_{DISC-0032}=1 ⇔ I_new(D_{DISC-0032},F,C) - I_prior(D_{DISC-0032}) > θ_{DISC-0032}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0032})=1 ∧ J_n^-(D_{DISC-0032})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D220"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0032} iff the gain exceeds θ_{DISC-0032}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0032})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0032})=0"
+      },
+      "convergence": "Converged(D_{DISC-0032}) ⇔ ΔD_{DISC-0032}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0033",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0033}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0033}"
+      ],
+      "math_expression": "D_{DISC-0033}=1 ⇔ I_new(D_{DISC-0033},F,C) - I_prior(D_{DISC-0033}) > θ_{DISC-0033}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0033})=1 ∧ J_n^-(D_{DISC-0033})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "T23"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0033} iff the gain exceeds θ_{DISC-0033}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0033})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0033})=0"
+      },
+      "convergence": "Converged(D_{DISC-0033}) ⇔ ΔD_{DISC-0033}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0034",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0034}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0034}"
+      ],
+      "math_expression": "D_{DISC-0034}=1 ⇔ I_new(D_{DISC-0034},F,C) - I_prior(D_{DISC-0034}) > θ_{DISC-0034}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0034})=1 ∧ J_n^-(D_{DISC-0034})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#527"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0034} iff the gain exceeds θ_{DISC-0034}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0034})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0034})=0"
+      },
+      "convergence": "Converged(D_{DISC-0034}) ⇔ ΔD_{DISC-0034}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0035",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0035}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0035}"
+      ],
+      "math_expression": "D_{DISC-0035}=1 ⇔ I_new(D_{DISC-0035},F,C) - I_prior(D_{DISC-0035}) > θ_{DISC-0035}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0035})=1 ∧ J_n^-(D_{DISC-0035})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#469"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0035} iff the gain exceeds θ_{DISC-0035}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0035})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0035})=0"
+      },
+      "convergence": "Converged(D_{DISC-0035}) ⇔ ΔD_{DISC-0035}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0036",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0036}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0036}"
+      ],
+      "math_expression": "D_{DISC-0036}=1 ⇔ I_new(D_{DISC-0036},F,C) - I_prior(D_{DISC-0036}) > θ_{DISC-0036}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0036})=1 ∧ J_n^-(D_{DISC-0036})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D108"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0036} iff the gain exceeds θ_{DISC-0036}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0036})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0036})=0"
+      },
+      "convergence": "Converged(D_{DISC-0036}) ⇔ ΔD_{DISC-0036}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0037",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0037}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0037}"
+      ],
+      "math_expression": "D_{DISC-0037}=1 ⇔ I_new(D_{DISC-0037},F,C) - I_prior(D_{DISC-0037}) > θ_{DISC-0037}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0037})=1 ∧ J_n^-(D_{DISC-0037})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D115"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0037} iff the gain exceeds θ_{DISC-0037}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0037})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0037})=0"
+      },
+      "convergence": "Converged(D_{DISC-0037}) ⇔ ΔD_{DISC-0037}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0038",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0038}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0038}"
+      ],
+      "math_expression": "D_{DISC-0038}=1 ⇔ I_new(D_{DISC-0038},F,C) - I_prior(D_{DISC-0038}) > θ_{DISC-0038}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0038})=1 ∧ J_n^-(D_{DISC-0038})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D116"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0038} iff the gain exceeds θ_{DISC-0038}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0038})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0038})=0"
+      },
+      "convergence": "Converged(D_{DISC-0038}) ⇔ ΔD_{DISC-0038}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0039",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0039}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0039}"
+      ],
+      "math_expression": "D_{DISC-0039}=1 ⇔ I_new(D_{DISC-0039},F,C) - I_prior(D_{DISC-0039}) > θ_{DISC-0039}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0039})=1 ∧ J_n^-(D_{DISC-0039})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#497"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0039} iff the gain exceeds θ_{DISC-0039}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0039})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0039})=0"
+      },
+      "convergence": "Converged(D_{DISC-0039}) ⇔ ΔD_{DISC-0039}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0040",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0040}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0040}"
+      ],
+      "math_expression": "D_{DISC-0040}=1 ⇔ I_new(D_{DISC-0040},F,C) - I_prior(D_{DISC-0040}) > θ_{DISC-0040}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0040})=1 ∧ J_n^-(D_{DISC-0040})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#522"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0040} iff the gain exceeds θ_{DISC-0040}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0040})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0040})=0"
+      },
+      "convergence": "Converged(D_{DISC-0040}) ⇔ ΔD_{DISC-0040}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0041",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0041}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0041}"
+      ],
+      "math_expression": "D_{DISC-0041}=1 ⇔ I_new(D_{DISC-0041},F,C) - I_prior(D_{DISC-0041}) > θ_{DISC-0041}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0041})=1 ∧ J_n^-(D_{DISC-0041})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D25"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0041} iff the gain exceeds θ_{DISC-0041}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0041})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0041})=0"
+      },
+      "convergence": "Converged(D_{DISC-0041}) ⇔ ΔD_{DISC-0041}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0042",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0042}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0042}"
+      ],
+      "math_expression": "D_{DISC-0042}=1 ⇔ I_new(D_{DISC-0042},F,C) - I_prior(D_{DISC-0042}) > θ_{DISC-0042}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0042})=1 ∧ J_n^-(D_{DISC-0042})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D14"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0042} iff the gain exceeds θ_{DISC-0042}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0042})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0042})=0"
+      },
+      "convergence": "Converged(D_{DISC-0042}) ⇔ ΔD_{DISC-0042}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0043",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0043}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0043}"
+      ],
+      "math_expression": "D_{DISC-0043}=1 ⇔ I_new(D_{DISC-0043},F,C) - I_prior(D_{DISC-0043}) > θ_{DISC-0043}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0043})=1 ∧ J_n^-(D_{DISC-0043})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#342"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0043} iff the gain exceeds θ_{DISC-0043}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0043})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0043})=0"
+      },
+      "convergence": "Converged(D_{DISC-0043}) ⇔ ΔD_{DISC-0043}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0044",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0044}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0044}"
+      ],
+      "math_expression": "D_{DISC-0044}=1 ⇔ I_new(D_{DISC-0044},F,C) - I_prior(D_{DISC-0044}) > θ_{DISC-0044}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0044})=1 ∧ J_n^-(D_{DISC-0044})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D261"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0044} iff the gain exceeds θ_{DISC-0044}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0044})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0044})=0"
+      },
+      "convergence": "Converged(D_{DISC-0044}) ⇔ ΔD_{DISC-0044}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0045",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0045}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0045}"
+      ],
+      "math_expression": "D_{DISC-0045}=1 ⇔ I_new(D_{DISC-0045},F,C) - I_prior(D_{DISC-0045}) > θ_{DISC-0045}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0045})=1 ∧ J_n^-(D_{DISC-0045})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D161"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0045} iff the gain exceeds θ_{DISC-0045}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0045})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0045})=0"
+      },
+      "convergence": "Converged(D_{DISC-0045}) ⇔ ΔD_{DISC-0045}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0046",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0046}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0046}"
+      ],
+      "math_expression": "D_{DISC-0046}=1 ⇔ I_new(D_{DISC-0046},F,C) - I_prior(D_{DISC-0046}) > θ_{DISC-0046}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0046})=1 ∧ J_n^-(D_{DISC-0046})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D170"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0046} iff the gain exceeds θ_{DISC-0046}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0046})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0046})=0"
+      },
+      "convergence": "Converged(D_{DISC-0046}) ⇔ ΔD_{DISC-0046}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0047",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0047}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0047}"
+      ],
+      "math_expression": "D_{DISC-0047}=1 ⇔ I_new(D_{DISC-0047},F,C) - I_prior(D_{DISC-0047}) > θ_{DISC-0047}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0047})=1 ∧ J_n^-(D_{DISC-0047})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#517"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0047} iff the gain exceeds θ_{DISC-0047}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0047})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0047})=0"
+      },
+      "convergence": "Converged(D_{DISC-0047}) ⇔ ΔD_{DISC-0047}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0048",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0048}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0048}"
+      ],
+      "math_expression": "D_{DISC-0048}=1 ⇔ I_new(D_{DISC-0048},F,C) - I_prior(D_{DISC-0048}) > θ_{DISC-0048}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0048})=1 ∧ J_n^-(D_{DISC-0048})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#446"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0048} iff the gain exceeds θ_{DISC-0048}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0048})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0048})=0"
+      },
+      "convergence": "Converged(D_{DISC-0048}) ⇔ ΔD_{DISC-0048}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0049",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0049}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0049}"
+      ],
+      "math_expression": "D_{DISC-0049}=1 ⇔ I_new(D_{DISC-0049},F,C) - I_prior(D_{DISC-0049}) > θ_{DISC-0049}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0049})=1 ∧ J_n^-(D_{DISC-0049})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D23"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0049} iff the gain exceeds θ_{DISC-0049}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0049})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0049})=0"
+      },
+      "convergence": "Converged(D_{DISC-0049}) ⇔ ΔD_{DISC-0049}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0050",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0050}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0050}"
+      ],
+      "math_expression": "D_{DISC-0050}=1 ⇔ I_new(D_{DISC-0050},F,C) - I_prior(D_{DISC-0050}) > θ_{DISC-0050}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0050})=1 ∧ J_n^-(D_{DISC-0050})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D22"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0050} iff the gain exceeds θ_{DISC-0050}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0050})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0050})=0"
+      },
+      "convergence": "Converged(D_{DISC-0050}) ⇔ ΔD_{DISC-0050}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0051",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0051}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0051}"
+      ],
+      "math_expression": "D_{DISC-0051}=1 ⇔ I_new(D_{DISC-0051},F,C) - I_prior(D_{DISC-0051}) > θ_{DISC-0051}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0051})=1 ∧ J_n^-(D_{DISC-0051})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "A7"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0051} iff the gain exceeds θ_{DISC-0051}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0051})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0051})=0"
+      },
+      "convergence": "Converged(D_{DISC-0051}) ⇔ ΔD_{DISC-0051}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0052",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0052}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0052}"
+      ],
+      "math_expression": "D_{DISC-0052}=1 ⇔ I_new(D_{DISC-0052},F,C) - I_prior(D_{DISC-0052}) > θ_{DISC-0052}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0052})=1 ∧ J_n^-(D_{DISC-0052})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#317"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0052} iff the gain exceeds θ_{DISC-0052}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0052})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0052})=0"
+      },
+      "convergence": "Converged(D_{DISC-0052}) ⇔ ΔD_{DISC-0052}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0053",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0053}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0053}"
+      ],
+      "math_expression": "D_{DISC-0053}=1 ⇔ I_new(D_{DISC-0053},F,C) - I_prior(D_{DISC-0053}) > θ_{DISC-0053}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0053})=1 ∧ J_n^-(D_{DISC-0053})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#170"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0053} iff the gain exceeds θ_{DISC-0053}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0053})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0053})=0"
+      },
+      "convergence": "Converged(D_{DISC-0053}) ⇔ ΔD_{DISC-0053}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0054",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0054}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0054}"
+      ],
+      "math_expression": "D_{DISC-0054}=1 ⇔ I_new(D_{DISC-0054},F,C) - I_prior(D_{DISC-0054}) > θ_{DISC-0054}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0054})=1 ∧ J_n^-(D_{DISC-0054})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D320"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0054} iff the gain exceeds θ_{DISC-0054}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0054})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0054})=0"
+      },
+      "convergence": "Converged(D_{DISC-0054}) ⇔ ΔD_{DISC-0054}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0055",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0055}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0055}"
+      ],
+      "math_expression": "D_{DISC-0055}=1 ⇔ I_new(D_{DISC-0055},F,C) - I_prior(D_{DISC-0055}) > θ_{DISC-0055}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0055})=1 ∧ J_n^-(D_{DISC-0055})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D108"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0055} iff the gain exceeds θ_{DISC-0055}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0055})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0055})=0"
+      },
+      "convergence": "Converged(D_{DISC-0055}) ⇔ ΔD_{DISC-0055}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0056",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0056}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0056}"
+      ],
+      "math_expression": "D_{DISC-0056}=1 ⇔ I_new(D_{DISC-0056},F,C) - I_prior(D_{DISC-0056}) > θ_{DISC-0056}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0056})=1 ∧ J_n^-(D_{DISC-0056})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D252"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0056} iff the gain exceeds θ_{DISC-0056}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0056})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0056})=0"
+      },
+      "convergence": "Converged(D_{DISC-0056}) ⇔ ΔD_{DISC-0056}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0057",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0057}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0057}"
+      ],
+      "math_expression": "D_{DISC-0057}=1 ⇔ I_new(D_{DISC-0057},F,C) - I_prior(D_{DISC-0057}) > θ_{DISC-0057}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0057})=1 ∧ J_n^-(D_{DISC-0057})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#504"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0057} iff the gain exceeds θ_{DISC-0057}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0057})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0057})=0"
+      },
+      "convergence": "Converged(D_{DISC-0057}) ⇔ ΔD_{DISC-0057}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0058",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0058}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0058}"
+      ],
+      "math_expression": "D_{DISC-0058}=1 ⇔ I_new(D_{DISC-0058},F,C) - I_prior(D_{DISC-0058}) > θ_{DISC-0058}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0058})=1 ∧ J_n^-(D_{DISC-0058})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#515"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0058} iff the gain exceeds θ_{DISC-0058}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0058})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0058})=0"
+      },
+      "convergence": "Converged(D_{DISC-0058}) ⇔ ΔD_{DISC-0058}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0059",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0059}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0059}"
+      ],
+      "math_expression": "D_{DISC-0059}=1 ⇔ I_new(D_{DISC-0059},F,C) - I_prior(D_{DISC-0059}) > θ_{DISC-0059}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0059})=1 ∧ J_n^-(D_{DISC-0059})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D171"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0059} iff the gain exceeds θ_{DISC-0059}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0059})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0059})=0"
+      },
+      "convergence": "Converged(D_{DISC-0059}) ⇔ ΔD_{DISC-0059}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0060",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0060}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0060}"
+      ],
+      "math_expression": "D_{DISC-0060}=1 ⇔ I_new(D_{DISC-0060},F,C) - I_prior(D_{DISC-0060}) > θ_{DISC-0060}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0060})=1 ∧ J_n^-(D_{DISC-0060})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D245"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0060} iff the gain exceeds θ_{DISC-0060}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0060})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0060})=0"
+      },
+      "convergence": "Converged(D_{DISC-0060}) ⇔ ΔD_{DISC-0060}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0061",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0061}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0061}"
+      ],
+      "math_expression": "D_{DISC-0061}=1 ⇔ I_new(D_{DISC-0061},F,C) - I_prior(D_{DISC-0061}) > θ_{DISC-0061}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0061})=1 ∧ J_n^-(D_{DISC-0061})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D95"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0061} iff the gain exceeds θ_{DISC-0061}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0061})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0061})=0"
+      },
+      "convergence": "Converged(D_{DISC-0061}) ⇔ ΔD_{DISC-0061}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0062",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0062}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0062}"
+      ],
+      "math_expression": "D_{DISC-0062}=1 ⇔ I_new(D_{DISC-0062},F,C) - I_prior(D_{DISC-0062}) > θ_{DISC-0062}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0062})=1 ∧ J_n^-(D_{DISC-0062})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#361"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0062} iff the gain exceeds θ_{DISC-0062}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0062})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0062})=0"
+      },
+      "convergence": "Converged(D_{DISC-0062}) ⇔ ΔD_{DISC-0062}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0063",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0063}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0063}"
+      ],
+      "math_expression": "D_{DISC-0063}=1 ⇔ I_new(D_{DISC-0063},F,C) - I_prior(D_{DISC-0063}) > θ_{DISC-0063}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0063})=1 ∧ J_n^-(D_{DISC-0063})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#366"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0063} iff the gain exceeds θ_{DISC-0063}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0063})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0063})=0"
+      },
+      "convergence": "Converged(D_{DISC-0063}) ⇔ ΔD_{DISC-0063}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0064",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0064}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0064}"
+      ],
+      "math_expression": "D_{DISC-0064}=1 ⇔ I_new(D_{DISC-0064},F,C) - I_prior(D_{DISC-0064}) > θ_{DISC-0064}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0064})=1 ∧ J_n^-(D_{DISC-0064})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D469"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0064} iff the gain exceeds θ_{DISC-0064}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0064})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0064})=0"
+      },
+      "convergence": "Converged(D_{DISC-0064}) ⇔ ΔD_{DISC-0064}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0065",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0065}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0065}"
+      ],
+      "math_expression": "D_{DISC-0065}=1 ⇔ I_new(D_{DISC-0065},F,C) - I_prior(D_{DISC-0065}) > θ_{DISC-0065}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0065})=1 ∧ J_n^-(D_{DISC-0065})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D470"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0065} iff the gain exceeds θ_{DISC-0065}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0065})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0065})=0"
+      },
+      "convergence": "Converged(D_{DISC-0065}) ⇔ ΔD_{DISC-0065}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0066",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0066}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0066}"
+      ],
+      "math_expression": "D_{DISC-0066}=1 ⇔ I_new(D_{DISC-0066},F,C) - I_prior(D_{DISC-0066}) > θ_{DISC-0066}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0066})=1 ∧ J_n^-(D_{DISC-0066})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D123"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0066} iff the gain exceeds θ_{DISC-0066}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0066})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0066})=0"
+      },
+      "convergence": "Converged(D_{DISC-0066}) ⇔ ΔD_{DISC-0066}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0067",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0067}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0067}"
+      ],
+      "math_expression": "D_{DISC-0067}=1 ⇔ I_new(D_{DISC-0067},F,C) - I_prior(D_{DISC-0067}) > θ_{DISC-0067}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0067})=1 ∧ J_n^-(D_{DISC-0067})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#498"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0067} iff the gain exceeds θ_{DISC-0067}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0067})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0067})=0"
+      },
+      "convergence": "Converged(D_{DISC-0067}) ⇔ ΔD_{DISC-0067}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0068",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0068}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0068}"
+      ],
+      "math_expression": "D_{DISC-0068}=1 ⇔ I_new(D_{DISC-0068},F,C) - I_prior(D_{DISC-0068}) > θ_{DISC-0068}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0068})=1 ∧ J_n^-(D_{DISC-0068})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#286"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0068} iff the gain exceeds θ_{DISC-0068}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0068})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0068})=0"
+      },
+      "convergence": "Converged(D_{DISC-0068}) ⇔ ΔD_{DISC-0068}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0069",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0069}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0069}"
+      ],
+      "math_expression": "D_{DISC-0069}=1 ⇔ I_new(D_{DISC-0069},F,C) - I_prior(D_{DISC-0069}) > θ_{DISC-0069}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0069})=1 ∧ J_n^-(D_{DISC-0069})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D424"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0069} iff the gain exceeds θ_{DISC-0069}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0069})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0069})=0"
+      },
+      "convergence": "Converged(D_{DISC-0069}) ⇔ ΔD_{DISC-0069}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0070",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0070}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0070}"
+      ],
+      "math_expression": "D_{DISC-0070}=1 ⇔ I_new(D_{DISC-0070},F,C) - I_prior(D_{DISC-0070}) > θ_{DISC-0070}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0070})=1 ∧ J_n^-(D_{DISC-0070})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D275"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0070} iff the gain exceeds θ_{DISC-0070}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0070})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0070})=0"
+      },
+      "convergence": "Converged(D_{DISC-0070}) ⇔ ΔD_{DISC-0070}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0071",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0071}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0071}"
+      ],
+      "math_expression": "D_{DISC-0071}=1 ⇔ I_new(D_{DISC-0071},F,C) - I_prior(D_{DISC-0071}) > θ_{DISC-0071}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0071})=1 ∧ J_n^-(D_{DISC-0071})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D248"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0071} iff the gain exceeds θ_{DISC-0071}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0071})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0071})=0"
+      },
+      "convergence": "Converged(D_{DISC-0071}) ⇔ ΔD_{DISC-0071}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0072",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0072}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0072}"
+      ],
+      "math_expression": "D_{DISC-0072}=1 ⇔ I_new(D_{DISC-0072},F,C) - I_prior(D_{DISC-0072}) > θ_{DISC-0072}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0072})=1 ∧ J_n^-(D_{DISC-0072})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#339"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0072} iff the gain exceeds θ_{DISC-0072}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0072})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0072})=0"
+      },
+      "convergence": "Converged(D_{DISC-0072}) ⇔ ΔD_{DISC-0072}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0073",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0073}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0073}"
+      ],
+      "math_expression": "D_{DISC-0073}=1 ⇔ I_new(D_{DISC-0073},F,C) - I_prior(D_{DISC-0073}) > θ_{DISC-0073}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0073})=1 ∧ J_n^-(D_{DISC-0073})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#346"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0073} iff the gain exceeds θ_{DISC-0073}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0073})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0073})=0"
+      },
+      "convergence": "Converged(D_{DISC-0073}) ⇔ ΔD_{DISC-0073}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0074",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0074}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0074}"
+      ],
+      "math_expression": "D_{DISC-0074}=1 ⇔ I_new(D_{DISC-0074},F,C) - I_prior(D_{DISC-0074}) > θ_{DISC-0074}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0074})=1 ∧ J_n^-(D_{DISC-0074})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D469"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0074} iff the gain exceeds θ_{DISC-0074}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0074})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0074})=0"
+      },
+      "convergence": "Converged(D_{DISC-0074}) ⇔ ΔD_{DISC-0074}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0075",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0075}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0075}"
+      ],
+      "math_expression": "D_{DISC-0075}=1 ⇔ I_new(D_{DISC-0075},F,C) - I_prior(D_{DISC-0075}) > θ_{DISC-0075}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0075})=1 ∧ J_n^-(D_{DISC-0075})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D259"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0075} iff the gain exceeds θ_{DISC-0075}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0075})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0075})=0"
+      },
+      "convergence": "Converged(D_{DISC-0075}) ⇔ ΔD_{DISC-0075}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0076",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0076}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0076}"
+      ],
+      "math_expression": "D_{DISC-0076}=1 ⇔ I_new(D_{DISC-0076},F,C) - I_prior(D_{DISC-0076}) > θ_{DISC-0076}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0076})=1 ∧ J_n^-(D_{DISC-0076})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "D128"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0076} iff the gain exceeds θ_{DISC-0076}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0076})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0076})=0"
+      },
+      "convergence": "Converged(D_{DISC-0076}) ⇔ ΔD_{DISC-0076}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0077",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0077}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0077}"
+      ],
+      "math_expression": "D_{DISC-0077}=1 ⇔ I_new(D_{DISC-0077},F,C) - I_prior(D_{DISC-0077}) > θ_{DISC-0077}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0077})=1 ∧ J_n^-(D_{DISC-0077})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#574"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0077} iff the gain exceeds θ_{DISC-0077}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0077})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0077})=0"
+      },
+      "convergence": "Converged(D_{DISC-0077}) ⇔ ΔD_{DISC-0077}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0078",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0078}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0078}"
+      ],
+      "math_expression": "D_{DISC-0078}=1 ⇔ I_new(D_{DISC-0078},F,C) - I_prior(D_{DISC-0078}) > θ_{DISC-0078}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0078})=1 ∧ J_n^-(D_{DISC-0078})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#446"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0078} iff the gain exceeds θ_{DISC-0078}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0078})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0078})=0"
+      },
+      "convergence": "Converged(D_{DISC-0078}) ⇔ ΔD_{DISC-0078}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0079",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0079}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0079}"
+      ],
+      "math_expression": "D_{DISC-0079}=1 ⇔ I_new(D_{DISC-0079},F,C) - I_prior(D_{DISC-0079}) > θ_{DISC-0079}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0079})=1 ∧ J_n^-(D_{DISC-0079})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "A4"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0079} iff the gain exceeds θ_{DISC-0079}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0079})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0079})=0"
+      },
+      "convergence": "Converged(D_{DISC-0079}) ⇔ ΔD_{DISC-0079}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0080",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0080}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0080}"
+      ],
+      "math_expression": "D_{DISC-0080}=1 ⇔ I_new(D_{DISC-0080},F,C) - I_prior(D_{DISC-0080}) > θ_{DISC-0080}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0080})=1 ∧ J_n^-(D_{DISC-0080})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "A6"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0080} iff the gain exceeds θ_{DISC-0080}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0080})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0080})=0"
+      },
+      "convergence": "Converged(D_{DISC-0080}) ⇔ ΔD_{DISC-0080}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0081",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0081}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0081}"
+      ],
+      "math_expression": "D_{DISC-0081}=1 ⇔ I_new(D_{DISC-0081},F,C) - I_prior(D_{DISC-0081}) > θ_{DISC-0081}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0081})=1 ∧ J_n^-(D_{DISC-0081})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "A9"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0081} iff the gain exceeds θ_{DISC-0081}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0081})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0081})=0"
+      },
+      "convergence": "Converged(D_{DISC-0081}) ⇔ ΔD_{DISC-0081}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0082",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0082}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0082}"
+      ],
+      "math_expression": "D_{DISC-0082}=1 ⇔ I_new(D_{DISC-0082},F,C) - I_prior(D_{DISC-0082}) > θ_{DISC-0082}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0082})=1 ∧ J_n^-(D_{DISC-0082})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#64"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0082} iff the gain exceeds θ_{DISC-0082}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0082})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0082})=0"
+      },
+      "convergence": "Converged(D_{DISC-0082}) ⇔ ΔD_{DISC-0082}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
+  },
+  {
+    "object_type": "discovery",
+    "id": "DISC-0083",
+    "mathematical_formalization": {
+      "object_type": "discovery",
+      "symbol": "D_{DISC-0083}",
+      "variables": [
+        "F",
+        "C",
+        "I_new",
+        "I_prior",
+        "θ_{DISC-0083}"
+      ],
+      "math_expression": "D_{DISC-0083}=1 ⇔ I_new(D_{DISC-0083},F,C) - I_prior(D_{DISC-0083}) > θ_{DISC-0083}",
+      "domain": "F × C",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(D_{DISC-0083})=1 ∧ J_n^-(D_{DISC-0083})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "discovery_information_gain_derivation",
+      "depends_on": [
+        "#65"
+      ],
+      "steps_math": [
+        "1. Encode related functions and cases as an evidence pair (F,C).",
+        "2. Compute information gain over prior explanations.",
+        "3. Accept D_{DISC-0083} iff the gain exceeds θ_{DISC-0083}.",
+        "4. Reject iff the reverse channel proves non-novelty or contradiction."
+      ],
+      "proof_obligations": [
+        "explicit_discovery_operator",
+        "information_gain_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(D_{DISC-0083})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(D_{DISC-0083})=0"
+      },
+      "convergence": "Converged(D_{DISC-0083}) ⇔ ΔD_{DISC-0083}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   }
 ]

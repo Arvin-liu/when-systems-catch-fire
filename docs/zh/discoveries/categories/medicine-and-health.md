@@ -49,8 +49,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:medicine-and-health -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0026｜D367 | 僵尸态传染免疫函数 / D367 |](../items/DISC-0026.md)
+- [DISC-0027｜D121 | Fisher健康度函数 / D121 |](../items/DISC-0027.md)
+- [DISC-0028｜D60 | 智慧干预效力函数 / D60 |](../items/DISC-0028.md)
+- [DISC-0029｜C-0411 | 耐药性的门槛军备竞赛——药物抬高Λ（D162）与病原体降低自身Λ的对抗 / C-0411 |](../items/DISC-0029.md)
+- [DISC-0030｜C-0575 | 免疫系统更新 / C-0575 |](../items/DISC-0030.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:medicine-and-health -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -74,5 +77,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：15
 - 相关案例 / Related cases：13
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

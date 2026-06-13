@@ -809,32 +809,10 @@ def render_index(predictions: list[dict], categories: list[dict]) -> str:
         "",
         "English: This index collects testable predictions derived by the Ignition framework from functions, cases, discoveries, and bootstrap cycles. A prediction is not a discovery itself, but a future-facing or pending inference derived from mechanisms, evidence, and insights.",
         "",
-        "## 预测分类 / Prediction Categories",
+        "## 预测列表 / Predictions",
         "",
-        "中文：以下分类由当前函数、案例与发现的自举扫描生成，不是空壳入口。每条预测可以属于一个或多个分类。",
-        "",
-        "English: The following categories are generated from a bootstrap scan of the current function, case, and discovery tables. They are not empty shells, and each prediction may belong to one or more categories.",
-        "",
-        "| 预测分类 / Prediction Category | 正式预测 / Curated Predictions | 待整理线索 / Prediction Leads | 当前覆盖 / Current Coverage |",
-        "| --- | ---: | ---: | --- |",
+        "<!-- PREDICTION_LIST_START -->",
     ]
-    for category in categories:
-        if category["id"] == "other":
-            continue
-        coverage = category["coverage"]
-        if coverage["curated_predictions_count"] + coverage["prediction_leads_count"] <= 0:
-            continue
-        lines.append(
-            f"| [{format_bilingual_title(category['title'].get('zh'), category['title'].get('en'))}]({rel_link(PREDICTIONS_HUMAN_MD, REPO_ROOT / category['page'])}) | {coverage['curated_predictions_count']} | {coverage['prediction_leads_count']} | {coverage['related_functions_count']} functions, {coverage['related_cases_count']} cases, {coverage['related_discoveries_count']} discoveries |"
-        )
-    lines.extend(
-        [
-            "",
-            "## 最近预测 / Recent Predictions",
-            "",
-            "<!-- PREDICTION_LIST_START -->",
-        ]
-    )
     if predictions:
         for item in predictions:
             category_tags = ""

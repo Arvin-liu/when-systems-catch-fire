@@ -8,7 +8,7 @@ When Systems Catch Fire is not a fixed book, but an open and maintained knowledg
 <!-- REPOSITORY_OVERVIEW_START -->
 | 区域 / Area | 当前数量 / Current Count | 说明 / Description |
 | --- | ---: | --- |
-| [发现 / Discoveries](DISCOVERIES.md) | 0 curated discoveries, 83 leads | 从函数、案例与自举循环中产生的新发现。 / New discoveries generated from bootstrap cycles between functions and cases. |
+| [发现 / Discoveries](DISCOVERIES.md) | 83 curated discoveries, 83 leads | 从函数、案例与自举循环中产生的新发现。 / New discoveries generated from bootstrap cycles between functions and cases. |
 | [预测 / Predictions](PREDICTIONS.md) | 8 predictions, 8 inconclusive novelty | 由函数、案例、发现与自举循环推出的可检验未来判断。 / Testable future judgments derived from functions, cases, discoveries, and bootstrap cycles. |
 | [新答案 / New Answers](ANSWERS.md) | 0 answers, 12 leads, 12 inconclusive novelty | 对既有问题、经典问题、未解问题或已有答案的新回答。 / New answers to existing, classic, unresolved, or previously answered questions. |
 | [函数表 / Functions](FUNCTIONS.md) | 1 meta-function, 5 bootstrap items, 470 ordinary functions | 函数、机制、结构与公式。 / Functions, mechanisms, structures, and formulas. |

@@ -80,8 +80,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:technology-and-engineering -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0064｜D469 | 振荡优化函数 / D469 |](../items/DISC-0064.md)
+- [DISC-0065｜D470 | 幽灵跳变阻尼函数 / D470 |](../items/DISC-0065.md)
+- [DISC-0066｜D123 | 缓存容量倒U型函数 / D123 |](../items/DISC-0066.md)
+- [DISC-0067｜C-0498 | 技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp[-ln²]的技术版 / C-0498 |](../items/DISC-0067.md)
+- [DISC-0068｜C-0286 | 提示词工程=ηinterface优化 — 人类调高Pencode（精确描述意图），AI调高Pdecode（指令遵循），Ptransfer... / C-0286 | 提示词工程=ηinterface优化 - 人类调高Pencode(精确描述意图), AI调高Pdecode(指令遵循), Ptransfer受限于token窗口, 当前η≈0.3-0.7](../items/DISC-0068.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:technology-and-engineering -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -105,5 +108,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：28
 - 相关案例 / Related cases：31
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

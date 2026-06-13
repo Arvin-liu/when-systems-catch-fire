@@ -24,8 +24,7 @@ No related functions yet.
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:art-and-photography -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0043｜C-0342 | 图形界面vs命令行 — 图形界面ηstructural≈0.7，命令行ηstructural≈0.3，Pdecode差2-3倍 / C-0342 | 图形界面vs命令行 - 图形界面ηstructural≈0.7, 命令行ηstructural≈0.3, Pdecode差2-3倍](../items/DISC-0043.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:art-and-photography -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -41,5 +40,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：0
 - 相关案例 / Related cases：1
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：1
 - 待整理线索 / Discovery leads：1

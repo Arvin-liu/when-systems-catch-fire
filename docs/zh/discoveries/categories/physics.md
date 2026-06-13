@@ -83,8 +83,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:physics -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0001｜D226 | 物理存在的三重时间约束 / D226 |](../items/DISC-0001.md)
+- [DISC-0002｜D217 | 完全统一条件函数 / D217 |](../items/DISC-0002.md)
+- [DISC-0003｜T34 | 量子引力Φ框架函数 / T34 | quantum-gravity Phi framework function](../items/DISC-0003.md)
+- [DISC-0004｜C-0448 | 物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/|T-Tc|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同（发散vs峰值）... / C-0448 |](../items/DISC-0004.md)
+- [DISC-0005｜C-0532 | 信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影 / C-0532 |](../items/DISC-0005.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:physics -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -108,5 +111,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：133
 - 相关案例 / Related cases：71
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

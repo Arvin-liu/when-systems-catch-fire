@@ -83,8 +83,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:other -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0079｜A4 | R_perceived(t,L,C) 应约者感知退出权 / A4 | R_perceived(t,L,C) perceived responder exit right](../items/DISC-0079.md)
+- [DISC-0080｜A6 | H(t,L) 遮蔽函数（双源） / A6 | H(t,L) obscuration function (dual-source)](../items/DISC-0080.md)
+- [DISC-0081｜A9 | P_exit(t,L,C) 退出概率 / A9 | P_exit(t,L,C) exit probability](../items/DISC-0081.md)
+- [DISC-0082｜C-0064 | 阿兹特克 / C-0064 |](../items/DISC-0082.md)
+- [DISC-0083｜C-0065 | 印加 / C-0065 |](../items/DISC-0083.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:other -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -108,5 +111,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：141
 - 相关案例 / Related cases：53
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5

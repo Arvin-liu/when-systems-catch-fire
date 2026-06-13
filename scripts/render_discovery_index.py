@@ -21,14 +21,17 @@ from discovery_category_utils import (
     CATEGORY_MAP_JSONL,
     DISCOVERY_INDEX_MD,
     DISCOVERY_LIST_MD,
+    DISCOVERY_DIR,
     CATEGORY_DEFINITIONS,
     build_category_map,
     classify_bootstrap_items,
     read_json,
     render_bootstrap_report,
     render_category_page,
+    render_discovery_page,
     render_discovery_index_md,
     render_discoveries_list,
+    update_category_map_with_discovery,
     write_text,
 )
 
@@ -47,6 +50,8 @@ def main() -> None:
 
     classification = classify_bootstrap_items(functions, cases)
     category_map = build_category_map(functions, cases, classification)
+    for discovery in discoveries:
+        category_map = update_category_map_with_discovery(category_map, discovery)
 
     planned_writes = [
         (CATEGORIES_JSON, json.dumps(CATEGORY_DEFINITIONS, ensure_ascii=False, indent=2) + "\n"),
@@ -61,6 +66,11 @@ def main() -> None:
     CATEGORY_DIR.mkdir(parents=True, exist_ok=True)
     for category in category_map:
         planned_writes.append((CATEGORY_DIR / f"{category['category_id']}.md", render_category_page(category)))
+
+    item_dir = DISCOVERY_DIR / "items"
+    item_dir.mkdir(parents=True, exist_ok=True)
+    for discovery in discoveries:
+        planned_writes.append((item_dir / f"{discovery['id']}.md", render_discovery_page(discovery)))
 
     changed = []
     for path, content in planned_writes:

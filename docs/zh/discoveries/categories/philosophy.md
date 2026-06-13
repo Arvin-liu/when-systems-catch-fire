@@ -61,8 +61,11 @@ English: This page collects discovery entrances formed by the Ignition framework
 ## 已整理发现 / Curated Discoveries
 
 <!-- CATEGORY_DISCOVERY_LIST_START:philosophy -->
-暂无已整理发现。
-No curated discoveries yet.
+- [DISC-0031｜D226 | 物理存在的三重时间约束 / D226 |](../items/DISC-0031.md)
+- [DISC-0032｜D220 | 完全统一不可能定理 / D220 |](../items/DISC-0032.md)
+- [DISC-0033｜T23 | Φ跨域稳定性定理 / T23 | Φcross-domain stability theorem](../items/DISC-0033.md)
+- [DISC-0034｜C-0527 | EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9 / C-0527 | EPR悖论 - 局域性和实在性是连续因子不是布尔量, B=ε_loc x ε_real≈0.9](../items/DISC-0034.md)
+- [DISC-0035｜C-0469 | 认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在F... / C-0469 | 认知僵化Fisher解释 - 专家P_track=1(单轨), ε_aware=0, Fisher可达性=0. 新信息存在但无法整合=信息在Fisher距离∞的区域. 打开新轨道(跨域学习)=增加Fisher可达性](../items/DISC-0035.md)
 <!-- CATEGORY_DISCOVERY_LIST_END:philosophy -->
 
 ## 待整理发现线索 / Discovery Leads to Curate
@@ -86,5 +89,5 @@ English: The following leads come from bootstrap classification between function
 
 - 相关函数 / Related functions：33
 - 相关案例 / Related cases：9
-- 已整理发现 / Curated discoveries：0
+- 已整理发现 / Curated discoveries：5
 - 待整理线索 / Discovery leads：5
