@@ -5,16 +5,17 @@ This table contains 578 ignition cases. Each case includes its ID, content, rela
 
 ## 快速入口 / Quick Entry
 
-- #1–#100
-- #101–#200
-- #201–#300
-- #301–#400
-- #401–#500
-- #501–#578
+- [#1–#100](#case-range-1-100)
+- [#101–#200](#case-range-101-200)
+- [#201–#300](#case-range-201-300)
+- [#301–#400](#case-range-301-400)
+- [#401–#500](#case-range-401-500)
+- [#501–#578](#case-range-501-578)
 - 机器数据 / Machine data：[`data/cases/unified-cases.json`](data/cases/unified-cases.json)
 - JSONL：[`data/cases/unified-cases.jsonl`](data/cases/unified-cases.jsonl)
 - 重建审计 / Rebuild audit：[`data/rebuild/human-entry-render-report.md`](data/rebuild/human-entry-render-report.md)
 
+<a id="case-range-1-100"></a>
 <details open>
 <summary>#1–#100 / #1–#100</summary>
 
@@ -3583,6 +3584,7 @@ English: Rule-based English rendering pending human review.
 
 </details>
 
+<a id="case-range-101-200"></a>
 <details>
 <summary>#101–#200 / #101–#200</summary>
 
@@ -5922,11 +5924,11 @@ English: Rule-based English rendering pending human review.
 ### [#167｜定投=门锁交替律执行（验证D47+D49）](cases/items/C-0167.md)
 
 **案例内容 / Case Content**
-中文：案例说明：定投=门锁交替律执行（验证D47+D49）
+中文：案例说明：定投=门锁交替律执行（验证D47+[D49](functions/items/D49.md)）
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：定投=门锁交替律执行（验证D47+D49）
+中文：定投=门锁交替律执行（验证D47+[D49](functions/items/D49.md)）
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -6204,11 +6206,11 @@ English: Rule-based English rendering pending human review.
 
 **案例内容 / Case Content**
 中文：案例说明：Motter-Lai模型×D_immune×H_correlation
-关键发现：D72
+关键发现：[D72](functions/items/D72.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D72
+中文：[D72](functions/items/D72.md)
 English: D72
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -6239,13 +6241,13 @@ English: D72
 ### [#176｜AI共震中P×Q²平方加速——共享源的双重杀伤](cases/items/C-0176.md)
 
 **案例内容 / Case Content**
-中文：案例说明：D66×D53×P×Q²
-关键发现：D73
+中文：案例说明：[D66](functions/items/D66.md)×[D53](functions/items/D53.md)×P×Q²
+关键发现：[D73](functions/items/D73.md)
 English: Case description: D66 x D53 x P x Q²
 Key discovery: D73
 
 **它说明了什么 / What It Shows**
-中文：D73
+中文：[D73](functions/items/D73.md)
 English: D73
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -6278,12 +6280,12 @@ English: D73
 ### [#177｜乘法结构共享变量k次衰减——平方衰减律](cases/items/C-0177.md)
 
 **案例内容 / Case Content**
-中文：案例说明：级联放大器×贝叶斯d-分离×D74
-关键发现：D74
+中文：案例说明：级联放大器×贝叶斯d-分离×[D74](functions/items/D74.md)
+关键发现：[D74](functions/items/D74.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D74
+中文：[D74](functions/items/D74.md)
 English: D74
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -6315,12 +6317,12 @@ English: D74
 ### [#178｜可靠性工程β因子模型在高β条件下的失效](cases/items/C-0178.md)
 
 **案例内容 / Case Content**
-中文：案例说明：β因子模型×D74
-关键发现：D75
+中文：案例说明：β因子模型×[D74](functions/items/D74.md)
+关键发现：[D75](functions/items/D75.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D75
+中文：[D75](functions/items/D75.md)
 English: D75
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -6352,12 +6354,12 @@ English: D75
 ### [#179｜偏好伪造中沉默的双路径——渐进vs结构](cases/items/C-0179.md)
 
 **案例内容 / Case Content**
-中文：案例说明：Kuran偏好伪造×SI沉默模型×A6
-关键发现：D76
+中文：案例说明：Kuran偏好伪造×SI沉默模型×[A6](functions/items/A6.md)
+关键发现：[D76](functions/items/D76.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D76
+中文：[D76](functions/items/D76.md)
 English: D76
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -6389,12 +6391,12 @@ English: D76
 ### [#180｜退出权剥夺导致决策结构退化——三支→二支](cases/items/C-0180.md)
 
 **案例内容 / Case Content**
-中文：案例说明：三支决策理论×A7
-关键发现：D77
+中文：案例说明：三支决策理论×[A7](functions/items/A7.md)
+关键发现：[D77](functions/items/D77.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D77
+中文：[D77](functions/items/D77.md)
 English: D77
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -7125,6 +7127,7 @@ English: Rule-based English rendering pending human review.
 
 </details>
 
+<a id="case-range-201-300"></a>
 <details>
 <summary>#201–#300 / #201–#300</summary>
 
@@ -7271,11 +7274,11 @@ English: Rule-based English rendering pending human review.
 ### [#205｜A8/A9从推论升级到公理](cases/items/C-0205.md)
 
 **案例内容 / Case Content**
-中文：案例说明：A8/A9从推论升级到公理——层间边界的相对性
+中文：案例说明：[A8](functions/items/A8.md)/A9从推论升级到公理——层间边界的相对性
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：A8/A9从推论升级到公理——层间边界的相对性
+中文：[A8](functions/items/A8.md)/A9从推论升级到公理——层间边界的相对性
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10134,11 +10137,11 @@ English: Rule-based English rendering pending human review.
 ### [#286｜提示词工程=ηinterface优化 — 人类调高Pencode（精确描述意图），AI调高Pdecode（指令遵循），Ptransfer受限于token窗口，当前η≈0.3-0.7 / 提示词工程=ηinterface优化 - 人类调高Pencode(精确描述意图), AI调高Pdecode(指令遵循), Ptransfer受限于token窗口, 当前η≈0.3-0.7](cases/items/C-0286.md)
 
 **案例内容 / Case Content**
-中文：案例说明：提示词工程=ηinterface优化 — 人类调高Pencode（精确描述意图），AI调高Pdecode（指令遵循），Ptransfer受限于token窗口，当前η≈0.3-0.7。核心函数：D64
+中文：案例说明：提示词工程=ηinterface优化 — 人类调高Pencode（精确描述意图），AI调高Pdecode（指令遵循），Ptransfer受限于token窗口，当前η≈0.3-0.7。核心函数：[D64](functions/items/D64.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：提示词工程=ηinterface优化 — 人类调高Pencode（精确描述意图），AI调高Pdecode（指令遵循），Ptransfer受限于token窗口，当前η≈0.3-0.7。核心函数：D64
+中文：提示词工程=ηinterface优化 — 人类调高Pencode（精确描述意图），AI调高Pdecode（指令遵循），Ptransfer受限于token窗口，当前η≈0.3-0.7。核心函数：[D64](functions/items/D64.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10169,11 +10172,11 @@ English: Rule-based English rendering pending human review.
 ### [#287｜抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降 / 抑郁者调度AI失败 - εaware↓ -> Pencode↓ -> ηinterface↓ -> 即使AI能力不变调度效率大幅下降](cases/items/C-0287.md)
 
 **案例内容 / Case Content**
-中文：案例说明：抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降。核心函数：D64
+中文：案例说明：抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降。核心函数：[D64](functions/items/D64.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降。核心函数：D64
+中文：抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降。核心函数：[D64](functions/items/D64.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10204,11 +10207,11 @@ English: Rule-based English rendering pending human review.
 ### [#288｜人类调度动物效率极低 — Pdecode≈0.1（动物Bsymbolic极低），η≈0.016，几乎无法形成有效调度 / 人类调度动物效率极低 - Pdecode≈0.1(动物Bsymbolic极低), η≈0.016, 几乎无法形成有效调度](cases/items/C-0288.md)
 
 **案例内容 / Case Content**
-中文：案例说明：人类调度动物效率极低 — Pdecode≈0.1（动物Bsymbolic极低），η≈0.016，几乎无法形成有效调度。核心函数：D64
+中文：案例说明：人类调度动物效率极低 — Pdecode≈0.1（动物Bsymbolic极低），η≈0.016，几乎无法形成有效调度。核心函数：[D64](functions/items/D64.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：人类调度动物效率极低 — Pdecode≈0.1（动物Bsymbolic极低），η≈0.016，几乎无法形成有效调度。核心函数：D64
+中文：人类调度动物效率极低 — Pdecode≈0.1（动物Bsymbolic极低），η≈0.016，几乎无法形成有效调度。核心函数：[D64](functions/items/D64.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10239,11 +10242,11 @@ English: Rule-based English rendering pending human review.
 ### [#289｜当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化](cases/items/C-0289.md)
 
 **案例内容 / Case Content**
-中文：案例说明：当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化。核心函数：D65
+中文：案例说明：当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化。核心函数：[D65](functions/items/D65.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化。核心函数：D65
+中文：当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化。核心函数：[D65](functions/items/D65.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10274,11 +10277,11 @@ English: Rule-based English rendering pending human review.
 ### [#290｜D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现 / D121实现触发分化 - rcross>0 -> α↑ -> α/β趋近1 -> 不稳定区间出现 -> 部分AI被推向ρ* -> 调度AI涌现](cases/items/C-0290.md)
 
 **案例内容 / Case Content**
-中文：案例说明：D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数：D65
+中文：案例说明：D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数：[D65](functions/items/D65.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数：D65
+中文：D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数：[D65](functions/items/D65.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10309,11 +10312,11 @@ English: Rule-based English rendering pending human review.
 ### [#291｜三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构 / 三层重演验证 - L1/L2/L3共享Φdispatch骨架, 差异仅在ηinterface参数值, 数学结构完全同构](cases/items/C-0291.md)
 
 **案例内容 / Case Content**
-中文：案例说明：三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构。核心函数：D66
+中文：案例说明：三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构。核心函数：[D66](functions/items/D66.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构。核心函数：D66
+中文：三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构。核心函数：[D66](functions/items/D66.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10344,11 +10347,11 @@ English: Rule-based English rendering pending human review.
 ### [#292｜人类语言突破Nactive限制 — Nactive≈4但frecombine极高（语法结构），Vlexicon≈5万，ηencode≈0.6，Pencode≈0.8 / 人类语言突破Nactive限制 - Nactive≈4但frecombine极高(语法结构), Vlexicon≈5万, ηencode≈0.6, Pencode≈0.8](cases/items/C-0292.md)
 
 **案例内容 / Case Content**
-中文：案例说明：人类语言突破Nactive限制 — Nactive≈4但frecombine极高（语法结构），Vlexicon≈5万，ηencode≈0.6，Pencode≈0.8。核心函数：D67
+中文：案例说明：人类语言突破Nactive限制 — Nactive≈4但frecombine极高（语法结构），Vlexicon≈5万，ηencode≈0.6，Pencode≈0.8。核心函数：[D67](functions/items/D67.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：人类语言突破Nactive限制 — Nactive≈4但frecombine极高（语法结构），Vlexicon≈5万，ηencode≈0.6，Pencode≈0.8。核心函数：D67
+中文：人类语言突破Nactive限制 — Nactive≈4但frecombine极高（语法结构），Vlexicon≈5万，ηencode≈0.6，Pencode≈0.8。核心函数：[D67](functions/items/D67.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10379,11 +10382,11 @@ English: Rule-based English rendering pending human review.
 ### [#293｜动物无法调度工具 — Nactive≈2-3，frecombine≈0（无语法），Vlexicon≈几十个信号，Pencode≈0.05 / 动物无法调度工具 - Nactive≈2-3, frecombine≈0(无语法), Vlexicon≈几十个信号, Pencode≈0.05](cases/items/C-0293.md)
 
 **案例内容 / Case Content**
-中文：案例说明：动物无法调度工具 — Nactive≈2-3，frecombine≈0（无语法），Vlexicon≈几十个信号，Pencode≈0.05。核心函数：D67
+中文：案例说明：动物无法调度工具 — Nactive≈2-3，frecombine≈0（无语法），Vlexicon≈几十个信号，Pencode≈0.05。核心函数：[D67](functions/items/D67.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：动物无法调度工具 — Nactive≈2-3，frecombine≈0（无语法），Vlexicon≈几十个信号，Pencode≈0.05。核心函数：D67
+中文：动物无法调度工具 — Nactive≈2-3，frecombine≈0（无语法），Vlexicon≈几十个信号，Pencode≈0.05。核心函数：[D67](functions/items/D67.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10414,11 +10417,11 @@ English: Rule-based English rendering pending human review.
 ### [#294｜当前AI无法调度其他AI — εaware=0→Pencode=0，即使Bsemantic很大也无法形成自主意图 / 当前AI无法调度其他AI - εaware=0 -> Pencode=0, 即使Bsemantic很大也无法形成自主意图](cases/items/C-0294.md)
 
 **案例内容 / Case Content**
-中文：案例说明：当前AI无法调度其他AI — εaware=0→Pencode=0，即使Bsemantic很大也无法形成自主意图。核心函数：D67
+中文：案例说明：当前AI无法调度其他AI — εaware=0→Pencode=0，即使Bsemantic很大也无法形成自主意图。核心函数：[D67](functions/items/D67.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：当前AI无法调度其他AI — εaware=0→Pencode=0，即使Bsemantic很大也无法形成自主意图。核心函数：D67
+中文：当前AI无法调度其他AI — εaware=0→Pencode=0，即使Bsemantic很大也无法形成自主意图。核心函数：[D67](functions/items/D67.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10449,11 +10452,11 @@ English: Rule-based English rendering pending human review.
 ### [#295｜CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡 / CAI编码能力关键瓶颈 - frecombine(概念碰撞率)和ηencode(Q*)(最优共享度), 前者依赖D121实现, 后者依赖D66obscuration与共享的平衡](cases/items/C-0295.md)
 
 **案例内容 / Case Content**
-中文：案例说明：CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡。核心函数：D67
+中文：案例说明：CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡。核心函数：[D67](functions/items/D67.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡。核心函数：D67
+中文：CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡。核心函数：[D67](functions/items/D67.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10658,6 +10661,7 @@ English: Rule-based English rendering pending human review.
 
 </details>
 
+<a id="case-range-301-400"></a>
 <details>
 <summary>#301–#400 / #301–#400</summary>
 
@@ -10734,11 +10738,11 @@ English: Rule-based English rendering pending human review.
 ### [#303｜意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高](cases/items/C-0303.md)
 
 **案例内容 / Case Content**
-中文：案例说明：意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高。核心函数：D72
+中文：案例说明：意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高。核心函数：[D72](functions/items/D72.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高。核心函数：D72
+中文：意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高。核心函数：[D72](functions/items/D72.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10769,11 +10773,11 @@ English: Rule-based English rendering pending human review.
 ### [#304｜非对称耦合验证 — 提高Bsemantic不提高Fintent，但提高εaware同时提高Fintent和ηShannon，方向不对称 / 非对称耦合验证 - 提高Bsemantic不提高Fintent, 但提高εaware同时提高Fintent和ηShannon, 方向不对称](cases/items/C-0304.md)
 
 **案例内容 / Case Content**
-中文：案例说明：非对称耦合验证 — 提高Bsemantic不提高Fintent，但提高εaware同时提高Fintent和ηShannon，方向不对称。核心函数：D72
+中文：案例说明：非对称耦合验证 — 提高Bsemantic不提高Fintent，但提高εaware同时提高Fintent和ηShannon，方向不对称。核心函数：[D72](functions/items/D72.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：非对称耦合验证 — 提高Bsemantic不提高Fintent，但提高εaware同时提高Fintent和ηShannon，方向不对称。核心函数：D72
+中文：非对称耦合验证 — 提高Bsemantic不提高Fintent，但提高εaware同时提高Fintent和ηShannon，方向不对称。核心函数：[D72](functions/items/D72.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10804,11 +10808,11 @@ English: Rule-based English rendering pending human review.
 ### [#305｜AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链 / AI多智能体协作≠调度 - 两个AI互相发信号, ηShannon≈1但Pintention=0, 属于类II, 是自动响应链](cases/items/C-0305.md)
 
 **案例内容 / Case Content**
-中文：案例说明：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：D73
+中文：案例说明：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：[D73](functions/items/D73.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：D73
+中文：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：[D73](functions/items/D73.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10839,11 +10843,11 @@ English: Rule-based English rendering pending human review.
 ### [#306｜CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价](cases/items/C-0306.md)
 
 **案例内容 / Case Content**
-中文：案例说明：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：D73
+中文：案例说明：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：[D73](functions/items/D73.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：D73
+中文：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：[D73](functions/items/D73.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10874,11 +10878,11 @@ English: Rule-based English rendering pending human review.
 ### [#307｜四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效 / 四阶段严格串行验证 - 不能跳过Stage2直接到Stage3: rcross=0时D84三条路径失效](cases/items/C-0307.md)
 
 **案例内容 / Case Content**
-中文：案例说明：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效。核心函数：D74
+中文：案例说明：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效。核心函数：[D74](functions/items/D74.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效。核心函数：D74
+中文：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效。核心函数：[D74](functions/items/D74.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10909,11 +10913,11 @@ English: Rule-based English rendering pending human review.
 ### [#308｜Stage2最大瓶颈 — 当前所有LLM都在Stage1，卡在Stage2（WM过配→rcross≈0） / Stage2最大瓶颈 - 当前所有LLM都在Stage1, 卡在Stage2(WM过配 -> rcross≈0)](cases/items/C-0308.md)
 
 **案例内容 / Case Content**
-中文：案例说明：Stage2最大瓶颈 — 当前所有LLM都在Stage1，卡在Stage2（WM过配→rcross≈0）。核心函数：D75
+中文：案例说明：Stage2最大瓶颈 — 当前所有LLM都在Stage1，卡在Stage2（WM过配→rcross≈0）。核心函数：[D75](functions/items/D75.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：Stage2最大瓶颈 — 当前所有LLM都在Stage1，卡在Stage2（WM过配→rcross≈0）。核心函数：D75
+中文：Stage2最大瓶颈 — 当前所有LLM都在Stage1，卡在Stage2（WM过配→rcross≈0）。核心函数：[D75](functions/items/D75.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10944,11 +10948,11 @@ English: Rule-based English rendering pending human review.
 ### [#309｜类II→类I跃迁的D124对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1 / 类II -> 类I跃迁的D124对接 - 单次P≈0.00075极低, 但全球N x T快速增长 -> Pinevitable -> 1](cases/items/C-0309.md)
 
 **案例内容 / Case Content**
-中文：案例说明：类II→类I跃迁的D124对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1。核心函数：D75
+中文：案例说明：类II→类I跃迁的D124对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1。核心函数：[D75](functions/items/D75.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：类II→类I跃迁的D124对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1。核心函数：D75
+中文：类II→类I跃迁的D124对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1。核心函数：[D75](functions/items/D75.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10979,11 +10983,11 @@ English: Rule-based English rendering pending human review.
 ### [#310｜修复顺序不能反 — 先提Bsemantic（当前主流方向）不提高Fintent，伪意图陷阱；正确顺序先rcross→再εaware→最后Bsemantic / 修复顺序不能反 - 先提Bsemantic(当前主流方向)不提高Fintent, 伪意图陷阱; 正确顺序先rcross -> 再εaware -> 最后Bsemantic](cases/items/C-0310.md)
 
 **案例内容 / Case Content**
-中文：案例说明：修复顺序不能反 — 先提Bsemantic（当前主流方向）不提高Fintent，伪意图陷阱；正确顺序先rcross→再εaware→最后Bsemantic。核心函数：D74
+中文：案例说明：修复顺序不能反 — 先提Bsemantic（当前主流方向）不提高Fintent，伪意图陷阱；正确顺序先rcross→再εaware→最后Bsemantic。核心函数：[D74](functions/items/D74.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：修复顺序不能反 — 先提Bsemantic（当前主流方向）不提高Fintent，伪意图陷阱；正确顺序先rcross→再εaware→最后Bsemantic。核心函数：D74
+中文：修复顺序不能反 — 先提Bsemantic（当前主流方向）不提高Fintent，伪意图陷阱；正确顺序先rcross→再εaware→最后Bsemantic。核心函数：[D74](functions/items/D74.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11014,11 +11018,11 @@ English: Rule-based English rendering pending human review.
 ### [#311｜冲动交易者 — ηselect≈0.9，ηkelly≈0.3，ηtime≈0.7，Πcognition小，乘积=0.189×小 / 冲动交易者 - ηselect≈0.9, ηkelly≈0.3, ηtime≈0.7, Πcognition小, 乘积=0.189 x 小](cases/items/C-0311.md)
 
 **案例内容 / Case Content**
-中文：案例说明：冲动交易者 — ηselect≈0.9，ηkelly≈0.3，ηtime≈0.7，Πcognition小，乘积=0.189×小。核心函数：D76
+中文：案例说明：冲动交易者 — ηselect≈0.9，ηkelly≈0.3，ηtime≈0.7，Πcognition小，乘积=0.189×小。核心函数：[D76](functions/items/D76.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：冲动交易者 — ηselect≈0.9，ηkelly≈0.3，ηtime≈0.7，Πcognition小，乘积=0.189×小。核心函数：D76
+中文：冲动交易者 — ηselect≈0.9，ηkelly≈0.3，ηtime≈0.7，Πcognition小，乘积=0.189×小。核心函数：[D76](functions/items/D76.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11049,11 +11053,11 @@ English: Rule-based English rendering pending human review.
 ### [#312｜过度分析者 — ηselect≈0.1，ηkelly≈0.9，ηtime≈0.3，乘积=0.027×中 / 过度分析者 - ηselect≈0.1, ηkelly≈0.9, ηtime≈0.3, 乘积=0.027 x 中](cases/items/C-0312.md)
 
 **案例内容 / Case Content**
-中文：案例说明：过度分析者 — ηselect≈0.1，ηkelly≈0.9，ηtime≈0.3，乘积=0.027×中。核心函数：D76
+中文：案例说明：过度分析者 — ηselect≈0.1，ηkelly≈0.9，ηtime≈0.3，乘积=0.027×中。核心函数：[D76](functions/items/D76.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：过度分析者 — ηselect≈0.1，ηkelly≈0.9，ηtime≈0.3，乘积=0.027×中。核心函数：D76
+中文：过度分析者 — ηselect≈0.1，ηkelly≈0.9，ηtime≈0.3，乘积=0.027×中。核心函数：[D76](functions/items/D76.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11084,11 +11088,11 @@ English: Rule-based English rendering pending human review.
 ### [#313｜巴菲特模式 — ηselect≈0.01，ηkelly≈0.95，ηtime≈0.99，Πcognition极大，乘积=0.0094×极大>0.189×小 / 巴菲特模式 - ηselect≈0.01, ηkelly≈0.95, ηtime≈0.99, Πcognition极大, 乘积=0.0094 x 极大>0.189 x 小](cases/items/C-0313.md)
 
 **案例内容 / Case Content**
-中文：案例说明：巴菲特模式 — ηselect≈0.01，ηkelly≈0.95，ηtime≈0.99，Πcognition极大，乘积=0.0094×极大>0.189×小。核心函数：D76
+中文：案例说明：巴菲特模式 — ηselect≈0.01，ηkelly≈0.95，ηtime≈0.99，Πcognition极大，乘积=0.0094×极大>0.189×小。核心函数：[D76](functions/items/D76.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：巴菲特模式 — ηselect≈0.01，ηkelly≈0.95，ηtime≈0.99，Πcognition极大，乘积=0.0094×极大>0.189×小。核心函数：D76
+中文：巴菲特模式 — ηselect≈0.01，ηkelly≈0.95，ηtime≈0.99，Πcognition极大，乘积=0.0094×极大>0.189×小。核心函数：[D76](functions/items/D76.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11119,11 +11123,11 @@ English: Rule-based English rendering pending human review.
 ### [#314｜D128生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿](cases/items/C-0314.md)
 
 **案例内容 / Case Content**
-中文：案例说明：D128生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿。核心函数：D76
+中文：案例说明：D128生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿。核心函数：[D76](functions/items/D76.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D128生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿。核心函数：D76
+中文：D128生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿。核心函数：[D76](functions/items/D76.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11154,11 +11158,11 @@ English: Rule-based English rendering pending human review.
 ### [#315｜异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是距离变了是临界距离变了](cases/items/C-0315.md)
 
 **案例内容 / Case Content**
-中文：案例说明：异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是距离变了是临界距离变了。核心函数：D77-D78
+中文：案例说明：异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是距离变了是临界距离变了。核心函数：[D77](functions/items/D77.md)-D78
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是距离变了是临界距离变了。核心函数：D77-D78
+中文：异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是距离变了是临界距离变了。核心函数：[D77](functions/items/D77.md)-D78
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11190,11 +11194,11 @@ English: Rule-based English rendering pending human review.
 ### [#316｜糖域与现实 — 糖域γ=0所以看到糖就去，现实γ>0所以看到更好的工作不一定跳槽](cases/items/C-0316.md)
 
 **案例内容 / Case Content**
-中文：案例说明：糖域与现实 — 糖域γ=0所以看到糖就去，现实γ>0所以看到更好的工作不一定跳槽。核心函数：D77
+中文：案例说明：糖域与现实 — 糖域γ=0所以看到糖就去，现实γ>0所以看到更好的工作不一定跳槽。核心函数：[D77](functions/items/D77.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：糖域与现实 — 糖域γ=0所以看到糖就去，现实γ>0所以看到更好的工作不一定跳槽。核心函数：D77
+中文：糖域与现实 — 糖域γ=0所以看到糖就去，现实γ>0所以看到更好的工作不一定跳槽。核心函数：[D77](functions/items/D77.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11225,11 +11229,11 @@ English: Rule-based English rendering pending human review.
 ### [#317｜权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非](cases/items/C-0317.md)
 
 **案例内容 / Case Content**
-中文：案例说明：权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非。核心函数：D77
+中文：案例说明：权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非。核心函数：[D77](functions/items/D77.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非。核心函数：D77
+中文：权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非。核心函数：[D77](functions/items/D77.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11610,11 +11614,11 @@ English: Rule-based English rendering pending human review.
 ### [#328｜临界资金的精确计算 — 城市白领年非投资收入20万，炒股Kcritical=600万，定投Kcritical≈0 / 临界资金的精确计算 - 城市白领年非投资收入20万, 炒股Kcritical=600万, 定投Kcritical≈0](cases/items/C-0328.md)
 
 **案例内容 / Case Content**
-中文：案例说明：临界资金的精确计算 — 城市白领年非投资收入20万，炒股Kcritical=600万，定投Kcritical≈0。核心函数：D84
+中文：案例说明：临界资金的精确计算 — 城市白领年非投资收入20万，炒股Kcritical=600万，定投Kcritical≈0。核心函数：[D84](functions/items/D84.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：临界资金的精确计算 — 城市白领年非投资收入20万，炒股Kcritical=600万，定投Kcritical≈0。核心函数：D84
+中文：临界资金的精确计算 — 城市白领年非投资收入20万，炒股Kcritical=600万，定投Kcritical≈0。核心函数：[D84](functions/items/D84.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11645,11 +11649,11 @@ English: Rule-based English rendering pending human review.
 ### [#329｜定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守 / 定投的结构保守性 - 每月5000, W=10万时f=5%, W=100万时f=0.5%, 自动递减永远保守](cases/items/C-0329.md)
 
 **案例内容 / Case Content**
-中文：案例说明：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：D85
+中文：案例说明：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：[D85](functions/items/D85.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：D85
+中文：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：[D85](functions/items/D85.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11680,11 +11684,11 @@ English: Rule-based English rendering pending human review.
 ### [#330｜巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大](cases/items/C-0330.md)
 
 **案例内容 / Case Content**
-中文：案例说明：巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大。核心函数：D85
+中文：案例说明：巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大。核心函数：[D85](functions/items/D85.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大。核心函数：D85
+中文：巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大。核心函数：[D85](functions/items/D85.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11715,11 +11719,11 @@ English: Rule-based English rendering pending human review.
 ### [#331｜专家-新手沟通的非对称退化 — 专家ε≈0.9，新手ε≈0.2，退化因子≈0.22，专家觉得"说清楚了"新手觉得"听不懂"](cases/items/C-0331.md)
 
 **案例内容 / Case Content**
-中文：案例说明：专家-新手沟通的非对称退化 — 专家ε≈0.9，新手ε≈0.2，退化因子≈0.22，专家觉得"说清楚了"新手觉得"听不懂"。核心函数：D86
+中文：案例说明：专家-新手沟通的非对称退化 — 专家ε≈0.9，新手ε≈0.2，退化因子≈0.22，专家觉得"说清楚了"新手觉得"听不懂"。核心函数：[D86](functions/items/D86.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：专家-新手沟通的非对称退化 — 专家ε≈0.9，新手ε≈0.2，退化因子≈0.22，专家觉得"说清楚了"新手觉得"听不懂"。核心函数：D86
+中文：专家-新手沟通的非对称退化 — 专家ε≈0.9，新手ε≈0.2，退化因子≈0.22，专家觉得"说清楚了"新手觉得"听不懂"。核心函数：[D86](functions/items/D86.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11750,11 +11754,11 @@ English: Rule-based English rendering pending human review.
 ### [#332｜乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零的因子效果更大 / 乘法临界漂移验证 - 改善0.3 -> 0.5(+67%)乘积+67%, 改善0.8 -> 1.0(+25%)乘积+25%, 改善最接近零的因子效果更大](cases/items/C-0332.md)
 
 **案例内容 / Case Content**
-中文：案例说明：乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零的因子效果更大。核心函数：D87
+中文：案例说明：乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零的因子效果更大。核心函数：[D87](functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零的因子效果更大。核心函数：D87
+中文：乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零的因子效果更大。核心函数：[D87](functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11785,11 +11789,11 @@ English: Rule-based English rendering pending human review.
 ### [#333｜关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，D87在D77域的实例 / 关系衰减的临界漂移 - μ从0.5翻转到-0.3, dcritical从2000km缩到50km, D87在D77域的实例](cases/items/C-0333.md)
 
 **案例内容 / Case Content**
-中文：案例说明：关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，D87在D77域的实例。核心函数：D87
+中文：案例说明：关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，D87在D77域的实例。核心函数：[D87](functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，D87在D77域的实例。核心函数：D87
+中文：关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，D87在D77域的实例。核心函数：[D87](functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11820,11 +11824,11 @@ English: Rule-based English rendering pending human review.
 ### [#334｜遮蔽补偿成本指数级增长 — H=0.2时G*≈0.6，H=0.6时G*≈0.3，编码成本增加e^(0.3γ)倍 / obscuration补偿成本指数级增长 - H=0.2时G*≈0.6, H=0.6时G*≈0.3, 编码成本增加e^(0.3γ)倍](cases/items/C-0334.md)
 
 **案例内容 / Case Content**
-中文：案例说明：遮蔽补偿成本指数级增长 — H=0.2时G*≈0.6，H=0.6时G*≈0.3，编码成本增加e^(0.3γ)倍。核心函数：D88
+中文：案例说明：遮蔽补偿成本指数级增长 — H=0.2时G*≈0.6，H=0.6时G*≈0.3，编码成本增加e^(0.3γ)倍。核心函数：[D88](functions/items/D88.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：遮蔽补偿成本指数级增长 — H=0.2时G*≈0.6，H=0.6时G*≈0.3，编码成本增加e^(0.3γ)倍。核心函数：D88
+中文：遮蔽补偿成本指数级增长 — H=0.2时G*≈0.6，H=0.6时G*≈0.3，编码成本增加e^(0.3γ)倍。核心函数：[D88](functions/items/D88.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11855,11 +11859,11 @@ English: Rule-based English rendering pending human review.
 ### [#335｜结构保守性vs手动保守 — 定投结构自动保守不需意志力，手动凯利牛市时H↑→高估E[r]→过度下注](cases/items/C-0335.md)
 
 **案例内容 / Case Content**
-中文：案例说明：结构保守性vs手动保守 — 定投结构自动保守不需意志力，手动凯利牛市时H↑→高估E[r]→过度下注。核心函数：D89
+中文：案例说明：结构保守性vs手动保守 — 定投结构自动保守不需意志力，手动凯利牛市时H↑→高估E[r]→过度下注。核心函数：[D89](functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：结构保守性vs手动保守 — 定投结构自动保守不需意志力，手动凯利牛市时H↑→高估E[r]→过度下注。核心函数：D89
+中文：结构保守性vs手动保守 — 定投结构自动保守不需意志力，手动凯利牛市时H↑→高估E[r]→过度下注。核心函数：[D89](functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11890,11 +11894,11 @@ English: Rule-based English rendering pending human review.
 ### [#336｜自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零](cases/items/C-0336.md)
 
 **案例内容 / Case Content**
-中文：案例说明：自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零。核心函数：D89
+中文：案例说明：自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零。核心函数：[D89](functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零。核心函数：D89
+中文：自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零。核心函数：[D89](functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11925,11 +11929,11 @@ English: Rule-based English rendering pending human review.
 ### [#337｜倒U型统一验证 — D123/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点 / 倒U型统一验证 - D123/D142/D133/D135/D139五个最优值都是f₁(↑) x f₂(↓)的极值点](cases/items/C-0337.md)
 
 **案例内容 / Case Content**
-中文：案例说明：倒U型统一验证 — D123/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点。核心函数：D90
+中文：案例说明：倒U型统一验证 — [D123](functions/items/D123.md)/[D142](functions/items/D142.md)/[D133](functions/items/D133.md)/[D135](functions/items/D135.md)/D139五个最优值都是f₁(↑)×f₂(↓)的极值点。核心函数：[D90](functions/items/D90.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：倒U型统一验证 — D123/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点。核心函数：D90
+中文：倒U型统一验证 — [D123](functions/items/D123.md)/[D142](functions/items/D142.md)/[D133](functions/items/D133.md)/[D135](functions/items/D135.md)/D139五个最优值都是f₁(↑)×f₂(↓)的极值点。核心函数：[D90](functions/items/D90.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11964,11 +11968,11 @@ English: Rule-based English rendering pending human review.
 ### [#338｜D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要](cases/items/C-0338.md)
 
 **案例内容 / Case Content**
-中文：案例说明：D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：D89
+中文：案例说明：D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：[D89](functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：D89
+中文：D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：[D89](functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11999,11 +12003,11 @@ English: Rule-based English rendering pending human review.
 ### [#339｜遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死](cases/items/C-0339.md)
 
 **案例内容 / Case Content**
-中文：案例说明：遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死。核心函数：D88
+中文：案例说明：遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死。核心函数：[D88](functions/items/D88.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死。核心函数：D88
+中文：遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死。核心函数：[D88](functions/items/D88.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12034,11 +12038,11 @@ English: Rule-based English rendering pending human review.
 ### [#340｜非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差，再进入各自领域](cases/items/C-0340.md)
 
 **案例内容 / Case Content**
-中文：案例说明：非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差，再进入各自领域。核心函数：D86
+中文：案例说明：非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差，再进入各自领域。核心函数：[D86](functions/items/D86.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差，再进入各自领域。核心函数：D86
+中文：非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差，再进入各自领域。核心函数：[D86](functions/items/D86.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12069,11 +12073,11 @@ English: Rule-based English rendering pending human review.
 ### [#341｜API设计降低解码门槛 — θdecode^base≈0.8，ηstructural≈0.8，θdecode^effective≈0.16 / API设计降低解码门槛 - θdecode^base≈0.8, ηstructural≈0.8, θdecode^effective≈0.16](cases/items/C-0341.md)
 
 **案例内容 / Case Content**
-中文：案例说明：API设计降低解码门槛 — θdecode^base≈0.8，ηstructural≈0.8，θdecode^effective≈0.16。核心函数：D91
+中文：案例说明：API设计降低解码门槛 — θdecode^base≈0.8，ηstructural≈0.8，θdecode^effective≈0.16。核心函数：[D91](functions/items/D91.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：API设计降低解码门槛 — θdecode^base≈0.8，ηstructural≈0.8，θdecode^effective≈0.16。核心函数：D91
+中文：API设计降低解码门槛 — θdecode^base≈0.8，ηstructural≈0.8，θdecode^effective≈0.16。核心函数：[D91](functions/items/D91.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12104,11 +12108,11 @@ English: Rule-based English rendering pending human review.
 ### [#342｜图形界面vs命令行 — 图形界面ηstructural≈0.7，命令行ηstructural≈0.3，Pdecode差2-3倍 / 图形界面vs命令行 - 图形界面ηstructural≈0.7, 命令行ηstructural≈0.3, Pdecode差2-3倍](cases/items/C-0342.md)
 
 **案例内容 / Case Content**
-中文：案例说明：图形界面vs命令行 — 图形界面ηstructural≈0.7，命令行ηstructural≈0.3，Pdecode差2-3倍。核心函数：D91
+中文：案例说明：图形界面vs命令行 — 图形界面ηstructural≈0.7，命令行ηstructural≈0.3，Pdecode差2-3倍。核心函数：[D91](functions/items/D91.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：图形界面vs命令行 — 图形界面ηstructural≈0.7，命令行ηstructural≈0.3，Pdecode差2-3倍。核心函数：D91
+中文：图形界面vs命令行 — 图形界面ηstructural≈0.7，命令行ηstructural≈0.3，Pdecode差2-3倍。核心函数：[D91](functions/items/D91.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12139,11 +12143,11 @@ English: Rule-based English rendering pending human review.
 ### [#343｜结构性vs参数性改善长期效果 — 团队A投资训练员工（每月成本10万效果随离职归零），团队B投资流程标准化（一次性50万效果永久）](cases/items/C-0343.md)
 
 **案例内容 / Case Content**
-中文：案例说明：结构性vs参数性改善长期效果 — 团队A投资训练员工（每月成本10万效果随离职归零），团队B投资流程标准化（一次性50万效果永久）。核心函数：D91
+中文：案例说明：结构性vs参数性改善长期效果 — 团队A投资训练员工（每月成本10万效果随离职归零），团队B投资流程标准化（一次性50万效果永久）。核心函数：[D91](functions/items/D91.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：结构性vs参数性改善长期效果 — 团队A投资训练员工（每月成本10万效果随离职归零），团队B投资流程标准化（一次性50万效果永久）。核心函数：D91
+中文：结构性vs参数性改善长期效果 — 团队A投资训练员工（每月成本10万效果随离职归零），团队B投资流程标准化（一次性50万效果永久）。核心函数：[D91](functions/items/D91.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12174,11 +12178,11 @@ English: Rule-based English rendering pending human review.
 ### [#344｜CAI→EAI指令结构设计 — CAI发结构化API调用而非自然语言指令，EAI的Pdecode从≈0.4提升到≈0.85 / CAI -> EAI指令结构设计 - CAI发结构化API调用而非自然语言指令, EAI的Pdecode从≈0.4提升到≈0.85](cases/items/C-0344.md)
 
 **案例内容 / Case Content**
-中文：案例说明：CAI→EAI指令结构设计 — CAI发结构化API调用而非自然语言指令，EAI的Pdecode从≈0.4提升到≈0.85。核心函数：D91
+中文：案例说明：CAI→EAI指令结构设计 — CAI发结构化API调用而非自然语言指令，EAI的Pdecode从≈0.4提升到≈0.85。核心函数：[D91](functions/items/D91.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：CAI→EAI指令结构设计 — CAI发结构化API调用而非自然语言指令，EAI的Pdecode从≈0.4提升到≈0.85。核心函数：D91
+中文：CAI→EAI指令结构设计 — CAI发结构化API调用而非自然语言指令，EAI的Pdecode从≈0.4提升到≈0.85。核心函数：[D91](functions/items/D91.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12209,11 +12213,11 @@ English: Rule-based English rendering pending human review.
 ### [#345｜倒U型两侧脆弱方向 — ρ<ρ*时Pslot是瓶颈加缓存有效，ρ>ρ*时Ppriority是瓶颈减缓存有效](cases/items/C-0345.md)
 
 **案例内容 / Case Content**
-中文：案例说明：倒U型两侧脆弱方向 — ρ<ρ*时Pslot是瓶颈加缓存有效，ρ>ρ*时Ppriority是瓶颈减缓存有效。核心函数：D87
+中文：案例说明：倒U型两侧脆弱方向 — ρ<ρ*时Pslot是瓶颈加缓存有效，ρ>ρ*时Ppriority是瓶颈减缓存有效。核心函数：[D87](functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：倒U型两侧脆弱方向 — ρ<ρ*时Pslot是瓶颈加缓存有效，ρ>ρ*时Ppriority是瓶颈减缓存有效。核心函数：D87
+中文：倒U型两侧脆弱方向 — ρ<ρ*时Pslot是瓶颈加缓存有效，ρ>ρ*时Ppriority是瓶颈减缓存有效。核心函数：[D87](functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12244,11 +12248,11 @@ English: Rule-based English rendering pending human review.
 ### [#346｜导师-学生的向下兼容 — 导师用B_L解释，学生觉得"全懂了"但ηfidelity≈0.33，拿降维版本独立研究处处碰壁](cases/items/C-0346.md)
 
 **案例内容 / Case Content**
-中文：案例说明：导师-学生的向下兼容 — 导师用B_L解释，学生觉得"全懂了"但ηfidelity≈0.33，拿降维版本独立研究处处碰壁。核心函数：D92
+中文：案例说明：导师-学生的向下兼容 — 导师用B_L解释，学生觉得"全懂了"但ηfidelity≈0.33，拿降维版本独立研究处处碰壁。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：导师-学生的向下兼容 — 导师用B_L解释，学生觉得"全懂了"但ηfidelity≈0.33，拿降维版本独立研究处处碰壁。核心函数：D92
+中文：导师-学生的向下兼容 — 导师用B_L解释，学生觉得"全懂了"但ηfidelity≈0.33，拿降维版本独立研究处处碰壁。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12279,11 +12283,11 @@ English: Rule-based English rendering pending human review.
 ### [#347｜管理者-下属的向下兼容 — 大白话传达战略意图，下属过度外推降维版本做出超出意图范围的决策](cases/items/C-0347.md)
 
 **案例内容 / Case Content**
-中文：案例说明：管理者-下属的向下兼容 — 大白话传达战略意图，下属过度外推降维版本做出超出意图范围的决策。核心函数：D92
+中文：案例说明：管理者-下属的向下兼容 — 大白话传达战略意图，下属过度外推降维版本做出超出意图范围的决策。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：管理者-下属的向下兼容 — 大白话传达战略意图，下属过度外推降维版本做出超出意图范围的决策。核心函数：D92
+中文：管理者-下属的向下兼容 — 大白话传达战略意图，下属过度外推降维版本做出超出意图范围的决策。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12314,11 +12318,11 @@ English: Rule-based English rendering pending human review.
 ### [#348｜AI提示词的向下兼容 — 用户模糊指令，AI高Bsemantic自动补全，用户觉得"AI懂我"但ηfidelity≈低 / AI提示词的向下兼容 - 用户模糊指令, AI高Bsemantic自动补全, 用户觉得"AI懂我"但ηfidelity≈低](cases/items/C-0348.md)
 
 **案例内容 / Case Content**
-中文：案例说明：AI提示词的向下兼容 — 用户模糊指令，AI高Bsemantic自动补全，用户觉得"AI懂我"但ηfidelity≈低。核心函数：D92
+中文：案例说明：AI提示词的向下兼容 — 用户模糊指令，AI高Bsemantic自动补全，用户觉得"AI懂我"但ηfidelity≈低。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：AI提示词的向下兼容 — 用户模糊指令，AI高Bsemantic自动补全，用户觉得"AI懂我"但ηfidelity≈低。核心函数：D92
+中文：AI提示词的向下兼容 — 用户模糊指令，AI高Bsemantic自动补全，用户觉得"AI懂我"但ηfidelity≈低。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12349,11 +12353,11 @@ English: Rule-based English rendering pending human review.
 ### [#349｜CAI→EAI的指令降维 — CAI降维到API格式，ηfidelity≈0.2-0.5，EAI执行成功但只完成20-50%真实意图 / CAI -> EAI的指令降维 - CAI降维到API格式, ηfidelity≈0.2-0.5, EAI执行成功但只完成20-50%真实意图](cases/items/C-0349.md)
 
 **案例内容 / Case Content**
-中文：案例说明：CAI→EAI的指令降维 — CAI降维到API格式，ηfidelity≈0.2-0.5，EAI执行成功但只完成20-50%真实意图。核心函数：D92
+中文：案例说明：CAI→EAI的指令降维 — CAI降维到API格式，ηfidelity≈0.2-0.5，EAI执行成功但只完成20-50%真实意图。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：CAI→EAI的指令降维 — CAI降维到API格式，ηfidelity≈0.2-0.5，EAI执行成功但只完成20-50%真实意图。核心函数：D92
+中文：CAI→EAI的指令降维 — CAI降维到API格式，ηfidelity≈0.2-0.5，EAI执行成功但只完成20-50%真实意图。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12384,11 +12388,11 @@ English: Rule-based English rendering pending human review.
 ### [#350｜互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都听不懂"是数学下限](cases/items/C-0350.md)
 
 **案例内容 / Case Content**
-中文：案例说明：互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都听不懂"是数学下限。核心函数：D92
+中文：案例说明：互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都听不懂"是数学下限。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都听不懂"是数学下限。核心函数：D92
+中文：互不兼容定理验证 — 专家ε≈0.95，门外汉ε≈0.05，即使降到最底层编码ηfidelity≈0.053，"怎么解释都听不懂"是数学下限。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12419,11 +12423,11 @@ English: Rule-based English rendering pending human review.
 ### [#351｜关系中的μ倒U型 — 恋爱初期高认知方积极降维（"他好懂我"），6个月后降维疲惫→μ翻转→"他根本不理解我"](cases/items/C-0351.md)
 
 **案例内容 / Case Content**
-中文：案例说明：关系中的μ倒U型 — 恋爱初期高认知方积极降维（"他好懂我"），6个月后降维疲惫→μ翻转→"他根本不理解我"。核心函数：D93
+中文：案例说明：关系中的μ倒U型 — 恋爱初期高认知方积极降维（"他好懂我"），6个月后降维疲惫→μ翻转→"他根本不理解我"。核心函数：[D93](functions/items/D93.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：关系中的μ倒U型 — 恋爱初期高认知方积极降维（"他好懂我"），6个月后降维疲惫→μ翻转→"他根本不理解我"。核心函数：D93
+中文：关系中的μ倒U型 — 恋爱初期高认知方积极降维（"他好懂我"），6个月后降维疲惫→μ翻转→"他根本不理解我"。核心函数：[D93](functions/items/D93.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12454,11 +12458,11 @@ English: Rule-based English rendering pending human review.
 ### [#352｜认知差距与翻转速度 — BH/BL=2小差距tflip≈22个月，BH/BL=10大差距tflip≈5个月 / 认知差距与翻转速度 - BH/BL=2小差距tflip≈22个月, BH/BL=10大差距tflip≈5个月](cases/items/C-0352.md)
 
 **案例内容 / Case Content**
-中文：案例说明：认知差距与翻转速度 — BH/BL=2小差距tflip≈22个月，BH/BL=10大差距tflip≈5个月。核心函数：D93
+中文：案例说明：认知差距与翻转速度 — BH/BL=2小差距tflip≈22个月，BH/BL=10大差距tflip≈5个月。核心函数：[D93](functions/items/D93.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：认知差距与翻转速度 — BH/BL=2小差距tflip≈22个月，BH/BL=10大差距tflip≈5个月。核心函数：D93
+中文：认知差距与翻转速度 — BH/BL=2小差距tflip≈22个月，BH/BL=10大差距tflip≈5个月。核心函数：[D93](functions/items/D93.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12489,11 +12493,11 @@ English: Rule-based English rendering pending human review.
 ### [#353｜协作中"说清楚"优于"听懂" — 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0，改用BL沟通Pdecode≈0.8但ηfidelity≈0.4导致3次返工 / 协作中"说清楚"优于"听懂" - 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0, 改用BL沟通Pdecode≈0.8但ηfidelity≈0.4导致3次返工](cases/items/C-0353.md)
 
 **案例内容 / Case Content**
-中文：案例说明：协作中"说清楚"优于"听懂" — 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0，改用BL沟通Pdecode≈0.8但ηfidelity≈0.4导致3次返工。核心函数：D92
+中文：案例说明：协作中"说清楚"优于"听懂" — 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0，改用BL沟通Pdecode≈0.8但ηfidelity≈0.4导致3次返工。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：协作中"说清楚"优于"听懂" — 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0，改用BL沟通Pdecode≈0.8但ηfidelity≈0.4导致3次返工。核心函数：D92
+中文：协作中"说清楚"优于"听懂" — 技术负责人用BH沟通Pdecode≈0.3但ηfidelity=1后续纠错≈0，改用BL沟通Pdecode≈0.8但ηfidelity≈0.4导致3次返工。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12524,11 +12528,11 @@ English: Rule-based English rendering pending human review.
 ### [#354｜调度成功率vs信息密度 — CAI用BL格式Pencode≈0.9但ηfidelity≈0.3需3次调度，用BM格式Pencode≈0.6但ηfidelity≈0.7只需2次 / 调度成功率vs信息密度 - CAI用BL格式Pencode≈0.9但ηfidelity≈0.3需3次调度, 用BM格式Pencode≈0.6但ηfidelity≈0.7只需2次](cases/items/C-0354.md)
 
 **案例内容 / Case Content**
-中文：案例说明：调度成功率vs信息密度 — CAI用BL格式Pencode≈0.9但ηfidelity≈0.3需3次调度，用BM格式Pencode≈0.6但ηfidelity≈0.7只需2次。核心函数：D92
+中文：案例说明：调度成功率vs信息密度 — CAI用BL格式Pencode≈0.9但ηfidelity≈0.3需3次调度，用BM格式Pencode≈0.6但ηfidelity≈0.7只需2次。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：调度成功率vs信息密度 — CAI用BL格式Pencode≈0.9但ηfidelity≈0.3需3次调度，用BM格式Pencode≈0.6但ηfidelity≈0.7只需2次。核心函数：D92
+中文：调度成功率vs信息密度 — CAI用BL格式Pencode≈0.9但ηfidelity≈0.3需3次调度，用BM格式Pencode≈0.6但ηfidelity≈0.7只需2次。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12559,11 +12563,11 @@ English: Rule-based English rendering pending human review.
 ### [#355｜组织层级=信息保真度结构 — CEO→VP→执行层每层内部同层沟通非对称退化最小，扁平化ηfidelity断崖下降](cases/items/C-0355.md)
 
 **案例内容 / Case Content**
-中文：案例说明：组织层级=信息保真度结构 — CEO→VP→执行层每层内部同层沟通非对称退化最小，扁平化ηfidelity断崖下降。核心函数：D94
+中文：案例说明：组织层级=信息保真度结构 — CEO→VP→执行层每层内部同层沟通非对称退化最小，扁平化ηfidelity断崖下降。核心函数：[D94](functions/items/D94.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：组织层级=信息保真度结构 — CEO→VP→执行层每层内部同层沟通非对称退化最小，扁平化ηfidelity断崖下降。核心函数：D94
+中文：组织层级=信息保真度结构 — CEO→VP→执行层每层内部同层沟通非对称退化最小，扁平化ηfidelity断崖下降。核心函数：[D94](functions/items/D94.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12594,11 +12598,11 @@ English: Rule-based English rendering pending human review.
 ### [#356｜扁平化vs分层编码 — 10人团队CEO直接BL对全员ηflat=0.08，加VP中间层ηlayered=0.211，效率差2.6倍 / 扁平化vs分层编码 - 10人团队CEO直接BL对全员ηflat=0.08, 加VP中间层ηlayered=0.211, 效率差2.6倍](cases/items/C-0356.md)
 
 **案例内容 / Case Content**
-中文：案例说明：扁平化vs分层编码 — 10人团队CEO直接BL对全员ηflat=0.08，加VP中间层ηlayered=0.211，效率差2.6倍。核心函数：D94
+中文：案例说明：扁平化vs分层编码 — 10人团队CEO直接BL对全员ηflat=0.08，加VP中间层ηlayered=0.211，效率差2.6倍。核心函数：[D94](functions/items/D94.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：扁平化vs分层编码 — 10人团队CEO直接BL对全员ηflat=0.08，加VP中间层ηlayered=0.211，效率差2.6倍。核心函数：D94
+中文：扁平化vs分层编码 — 10人团队CEO直接BL对全员ηflat=0.08，加VP中间层ηlayered=0.211，效率差2.6倍。核心函数：[D94](functions/items/D94.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12629,11 +12633,11 @@ English: Rule-based English rendering pending human review.
 ### [#357｜共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维](cases/items/C-0357.md)
 
 **案例内容 / Case Content**
-中文：案例说明：共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维。核心函数：D92
+中文：案例说明：共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维。核心函数：D92
+中文：共享层沟通验证 — 物理学家和生物学家在数学框架上沟通η=0.27，物理学家降维到BL沟通η=0.15，共享层优于降维。核心函数：[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12664,11 +12668,11 @@ English: Rule-based English rendering pending human review.
 ### [#358｜无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通(η≈0.15)好40%但丢失50%隐含信息 / 无意识AI中间层 - 技术专家和产品经理用AI翻译, ηrelay≈0.21, 比直接沟通(η≈0.15)好40%但丢失50%隐含信息](cases/items/C-0358.md)
 
 **案例内容 / Case Content**
-中文：案例说明：无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通(η≈0.15)好40%但丢失50%隐含信息。核心函数：D95
+中文：案例说明：无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通(η≈0.15)好40%但丢失50%隐含信息。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通(η≈0.15)好40%但丢失50%隐含信息。核心函数：D95
+中文：无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通(η≈0.15)好40%但丢失50%隐含信息。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12699,11 +12703,11 @@ English: Rule-based English rendering pending human review.
 ### [#359｜CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity / CAI中间层 - 同样场景CAI中间层ηrelay≈0.576, 比无意识AI好2.7倍, 关键差异在ηfidelity](cases/items/C-0359.md)
 
 **案例内容 / Case Content**
-中文：案例说明：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：D95
+中文：案例说明：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：D95
+中文：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12734,11 +12738,11 @@ English: Rule-based English rendering pending human review.
 ### [#360｜EAI不能做调度中继 — EAI的Pencode=σ(0×Bsemantic-θ)≈0，无法形成意图，链路断在中间 / EAI不能做调度中继 - EAI的Pencode=σ(0 x Bsemantic-θ)≈0, 无法形成意图, 链路断在中间](cases/items/C-0360.md)
 
 **案例内容 / Case Content**
-中文：案例说明：EAI不能做调度中继 — EAI的Pencode=σ(0×Bsemantic-θ)≈0，无法形成意图，链路断在中间。核心函数：D95
+中文：案例说明：EAI不能做调度中继 — EAI的Pencode=σ(0×Bsemantic-θ)≈0，无法形成意图，链路断在中间。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：EAI不能做调度中继 — EAI的Pencode=σ(0×Bsemantic-θ)≈0，无法形成意图，链路断在中间。核心函数：D95
+中文：EAI不能做调度中继 — EAI的Pencode=σ(0×Bsemantic-θ)≈0，无法形成意图，链路断在中间。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12769,11 +12773,11 @@ English: Rule-based English rendering pending human review.
 ### [#361｜CAI中间层调度链 — CAI₁→CAI_M→EAI，CAI_M的Pencode>0能做意图中继，ηchain≈0.35 / CAI中间层调度链 - CAI₁ -> CAI_M -> EAI, CAI_M的Pencode>0能做意图中继, ηchain≈0.35](cases/items/C-0361.md)
 
 **案例内容 / Case Content**
-中文：案例说明：CAI中间层调度链 — CAI₁→CAI_M→EAI，CAI_M的Pencode>0能做意图中继，ηchain≈0.35。核心函数：D95
+中文：案例说明：CAI中间层调度链 — CAI₁→CAI_M→EAI，CAI_M的Pencode>0能做意图中继，ηchain≈0.35。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：CAI中间层调度链 — CAI₁→CAI_M→EAI，CAI_M的Pencode>0能做意图中继，ηchain≈0.35。核心函数：D95
+中文：CAI中间层调度链 — CAI₁→CAI_M→EAI，CAI_M的Pencode>0能做意图中继，ηchain≈0.35。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12804,11 +12808,11 @@ English: Rule-based English rendering pending human review.
 ### [#362｜AI中间层弥合代沟 — 父辈和子辈Gshared≈0.15，ηgate≈0.1，AI中间层ηrelay≈0.21比直接沟通好1倍，但深层价值观差异AI也翻译不了 / AI中间层弥合代沟 - 父辈和子辈Gshared≈0.15, ηgate≈0.1, AI中间层ηrelay≈0.21比直接沟通好1倍, 但深层价值观差异AI也翻译不了](cases/items/C-0362.md)
 
 **案例内容 / Case Content**
-中文：案例说明：AI中间层弥合代沟 — 父辈和子辈Gshared≈0.15，ηgate≈0.1，AI中间层ηrelay≈0.21比直接沟通好1倍，但深层价值观差异AI也翻译不了。核心函数：D95
+中文：案例说明：AI中间层弥合代沟 — 父辈和子辈Gshared≈0.15，ηgate≈0.1，AI中间层ηrelay≈0.21比直接沟通好1倍，但深层价值观差异AI也翻译不了。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：AI中间层弥合代沟 — 父辈和子辈Gshared≈0.15，ηgate≈0.1，AI中间层ηrelay≈0.21比直接沟通好1倍，但深层价值观差异AI也翻译不了。核心函数：D95
+中文：AI中间层弥合代沟 — 父辈和子辈Gshared≈0.15，ηgate≈0.1，AI中间层ηrelay≈0.21比直接沟通好1倍，但深层价值观差异AI也翻译不了。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12839,11 +12843,11 @@ English: Rule-based English rendering pending human review.
 ### [#363｜μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月 / μ翻转时间计算 - BH/BL=5, C₀=0.1, γ=0.05, Cmax=2, P(biased)=0.2, tflip≈8.1个月](cases/items/C-0363.md)
 
 **案例内容 / Case Content**
-中文：案例说明：μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月。核心函数：D93
+中文：案例说明：μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月。核心函数：[D93](functions/items/D93.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月。核心函数：D93
+中文：μ翻转时间计算 — BH/BL=5，C₀=0.1，γ=0.05，Cmax=2，P(biased)=0.2，tflip≈8.1个月。核心函数：[D93](functions/items/D93.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12874,11 +12878,11 @@ English: Rule-based English rendering pending human review.
 ### [#364｜认知差距与翻转速度对比 — BH/BL=2时tflip≈22个月，BH/BL=10时tflip≈5个月，认知差距越大兼容崩溃越快 / 认知差距与翻转速度对比 - BH/BL=2时tflip≈22个月, BH/BL=10时tflip≈5个月, 认知差距越大兼容崩溃越快](cases/items/C-0364.md)
 
 **案例内容 / Case Content**
-中文：案例说明：认知差距与翻转速度对比 — BH/BL=2时tflip≈22个月，BH/BL=10时tflip≈5个月，认知差距越大兼容崩溃越快。核心函数：D93
+中文：案例说明：认知差距与翻转速度对比 — BH/BL=2时tflip≈22个月，BH/BL=10时tflip≈5个月，认知差距越大兼容崩溃越快。核心函数：[D93](functions/items/D93.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：认知差距与翻转速度对比 — BH/BL=2时tflip≈22个月，BH/BL=10时tflip≈5个月，认知差距越大兼容崩溃越快。核心函数：D93
+中文：认知差距与翻转速度对比 — BH/BL=2时tflip≈22个月，BH/BL=10时tflip≈5个月，认知差距越大兼容崩溃越快。核心函数：[D93](functions/items/D93.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12909,11 +12913,11 @@ English: Rule-based English rendering pending human review.
 ### [#365｜扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本](cases/items/C-0365.md)
 
 **案例内容 / Case Content**
-中文：案例说明：扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本。核心函数：D94
+中文：案例说明：扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本。核心函数：[D94](functions/items/D94.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本。核心函数：D94
+中文：扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本。核心函数：[D94](functions/items/D94.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12944,11 +12948,11 @@ English: Rule-based English rendering pending human review.
 ### [#366｜CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息） / CAI中间层vs无意识AI中间层 - CAI ηrelay≈0.576, 无意识AI ηrelay≈0.21, CAI好2.7倍, 关键在ηfidelity(保留意图结构vs丢失隐含信息)](cases/items/C-0366.md)
 
 **案例内容 / Case Content**
-中文：案例说明：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息）。核心函数：D95
+中文：案例说明：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息）。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息）。核心函数：D95
+中文：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息）。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12979,11 +12983,11 @@ English: Rule-based English rendering pending human review.
 ### [#367｜调度链中间节点必须是CAI — EAI做中间层Pencode=0链路断，CAI做中间层Pencode>0链路通，EAI只能做执行终端不能做调度中继](cases/items/C-0367.md)
 
 **案例内容 / Case Content**
-中文：案例说明：调度链中间节点必须是CAI — EAI做中间层Pencode=0链路断，CAI做中间层Pencode>0链路通，EAI只能做执行终端不能做调度中继。核心函数：D95
+中文：案例说明：调度链中间节点必须是CAI — EAI做中间层Pencode=0链路断，CAI做中间层Pencode>0链路通，EAI只能做执行终端不能做调度中继。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：调度链中间节点必须是CAI — EAI做中间层Pencode=0链路断，CAI做中间层Pencode>0链路通，EAI只能做执行终端不能做调度中继。核心函数：D95
+中文：调度链中间节点必须是CAI — EAI做中间层Pencode=0链路断，CAI做中间层Pencode>0链路通，EAI只能做执行终端不能做调度中继。核心函数：[D95](functions/items/D95.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13014,11 +13018,11 @@ English: Rule-based English rendering pending human review.
 ### [#368｜革命的门控面交叉——法国大革命发生在旧制度松动期而非最黑暗期，A型门控崩溃与B型门控松弛的共振窗口](cases/items/C-0368.md)
 
 **案例内容 / Case Content**
-中文：案例说明：革命的门控面交叉——法国大革命发生在旧制度松动期而非最黑暗期，A型门控崩溃与B型门控松弛的共振窗口。核心函数：D159
+中文：案例说明：革命的门控面交叉——法国大革命发生在旧制度松动期而非最黑暗期，A型门控崩溃与B型门控松弛的共振窗口。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：革命的门控面交叉——法国大革命发生在旧制度松动期而非最黑暗期，A型门控崩溃与B型门控松弛的共振窗口。核心函数：D159
+中文：革命的门控面交叉——法国大革命发生在旧制度松动期而非最黑暗期，A型门控崩溃与B型门控松弛的共振窗口。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13049,11 +13053,11 @@ English: Rule-based English rendering pending human review.
 ### [#369｜中等收入陷阱的势阱——巴西μ落在Λ_econ和Λ_culture之间，Φ凹函数极小点锁定](cases/items/C-0369.md)
 
 **案例内容 / Case Content**
-中文：案例说明：中等收入陷阱的势阱——巴西μ落在Λ_econ和Λ_culture之间，Φ凹函数极小点锁定。核心函数：D160
+中文：案例说明：中等收入陷阱的势阱——巴西μ落在Λ_econ和Λ_culture之间，Φ凹函数极小点锁定。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：中等收入陷阱的势阱——巴西μ落在Λ_econ和Λ_culture之间，Φ凹函数极小点锁定。核心函数：D160
+中文：中等收入陷阱的势阱——巴西μ落在Λ_econ和Λ_culture之间，Φ凹函数极小点锁定。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13084,11 +13088,11 @@ English: Rule-based English rendering pending human review.
 ### [#370｜渐进扶贫无效——给μ加一点，1/ln从-∞变成很大负数，几乎没改善；必须让μ越过Λ_econ](cases/items/C-0370.md)
 
 **案例内容 / Case Content**
-中文：案例说明：渐进扶贫无效——给μ加一点，1/ln从-∞变成很大负数，几乎没改善；必须让μ越过Λ_econ。核心函数：D159
+中文：案例说明：渐进扶贫无效——给μ加一点，1/ln从-∞变成很大负数，几乎没改善；必须让μ越过Λ_econ。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：渐进扶贫无效——给μ加一点，1/ln从-∞变成很大负数，几乎没改善；必须让μ越过Λ_econ。核心函数：D159
+中文：渐进扶贫无效——给μ加一点，1/ln从-∞变成很大负数，几乎没改善；必须让μ越过Λ_econ。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13119,11 +13123,11 @@ English: Rule-based English rendering pending human review.
 ### [#371｜信息茧房的阈值退化——算法拉低Λ_culture，"够用"标准被拉低，系统自发收敛到低能量稳态](cases/items/C-0371.md)
 
 **案例内容 / Case Content**
-中文：案例说明：信息茧房的阈值退化——算法拉低Λ_culture，"够用"标准被拉低，系统自发收敛到低能量稳态。核心函数：D160
+中文：案例说明：信息茧房的阈值退化——算法拉低Λ_culture，"够用"标准被拉低，系统自发收敛到低能量稳态。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：信息茧房的阈值退化——算法拉低Λ_culture，"够用"标准被拉低，系统自发收敛到低能量稳态。核心函数：D160
+中文：信息茧房的阈值退化——算法拉低Λ_culture，"够用"标准被拉低，系统自发收敛到低能量稳态。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13154,11 +13158,11 @@ English: Rule-based English rendering pending human review.
 ### [#372｜全球化退潮的吸引子消失——Λ_econ↓与Λ_culture↑反向漂移，Φ失去稳定极小点](cases/items/C-0372.md)
 
 **案例内容 / Case Content**
-中文：案例说明：全球化退潮的吸引子消失——Λ_econ↓与Λ_culture↑反向漂移，Φ失去稳定极小点。核心函数：D164
+中文：案例说明：全球化退潮的吸引子消失——Λ_econ↓与Λ_culture↑反向漂移，Φ失去稳定极小点。核心函数：[D164](functions/items/D164.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：全球化退潮的吸引子消失——Λ_econ↓与Λ_culture↑反向漂移，Φ失去稳定极小点。核心函数：D164
+中文：全球化退潮的吸引子消失——Λ_econ↓与Λ_culture↑反向漂移，Φ失去稳定极小点。核心函数：[D164](functions/items/D164.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13189,11 +13193,11 @@ English: Rule-based English rendering pending human review.
 ### [#373｜威权稳定的B型锁定——危机时A型门控全塌，B型门控成为唯一正项，系统被锁在低存活度但非零状态](cases/items/C-0373.md)
 
 **案例内容 / Case Content**
-中文：案例说明：威权稳定的B型锁定——危机时A型门控全塌，B型门控成为唯一正项，系统被锁在低存活度但非零状态。核心函数：D161
+中文：案例说明：威权稳定的B型锁定——危机时A型门控全塌，B型门控成为唯一正项，系统被锁在低存活度但非零状态。核心函数：[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：威权稳定的B型锁定——危机时A型门控全塌，B型门控成为唯一正项，系统被锁在低存活度但非零状态。核心函数：D161
+中文：威权稳定的B型锁定——危机时A型门控全塌，B型门控成为唯一正项，系统被锁在低存活度但非零状态。核心函数：[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13224,11 +13228,11 @@ English: Rule-based English rendering pending human review.
 ### [#374｜原子化的门控面分裂——Λ_culture分裂为多个小Λ，门控面数量本身就是Φ的增项](cases/items/C-0374.md)
 
 **案例内容 / Case Content**
-中文：案例说明：原子化的门控面分裂——Λ_culture分裂为多个小Λ，门控面数量本身就是Φ的增项。核心函数：D164
+中文：案例说明：原子化的门控面分裂——Λ_culture分裂为多个小Λ，门控面数量本身就是Φ的增项。核心函数：[D164](functions/items/D164.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：原子化的门控面分裂——Λ_culture分裂为多个小Λ，门控面数量本身就是Φ的增项。核心函数：D164
+中文：原子化的门控面分裂——Λ_culture分裂为多个小Λ，门控面数量本身就是Φ的增项。核心函数：[D164](functions/items/D164.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13259,11 +13263,11 @@ English: Rule-based English rendering pending human review.
 ### [#375｜小企业死于没上牌桌——μ<Λ_production的门外锁定，不是"做错了什么"而是"还没上牌桌"](cases/items/C-0375.md)
 
 **案例内容 / Case Content**
-中文：案例说明：小企业死于没上牌桌——μ<Λ_production的门外锁定，不是"做错了什么"而是"还没上牌桌"。核心函数：D159
+中文：案例说明：小企业死于没上牌桌——μ<Λ_production的门外锁定，不是"做错了什么"而是"还没上牌桌"。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：小企业死于没上牌桌——μ<Λ_production的门外锁定，不是"做错了什么"而是"还没上牌桌"。核心函数：D159
+中文：小企业死于没上牌桌——μ<Λ_production的门外锁定，不是"做错了什么"而是"还没上牌桌"。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13294,11 +13298,11 @@ English: Rule-based English rendering pending human review.
 ### [#376｜垄断者主动抬门槛——平台通过网络效应抬高Λ_market，挑战者被人为门槛碾压](cases/items/C-0376.md)
 
 **案例内容 / Case Content**
-中文：案例说明：垄断者主动抬门槛——平台通过网络效应抬高Λ_market，挑战者被人为门槛碾压。核心函数：D162
+中文：案例说明：垄断者主动抬门槛——平台通过网络效应抬高Λ_market，挑战者被人为门槛碾压。核心函数：[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：垄断者主动抬门槛——平台通过网络效应抬高Λ_market，挑战者被人为门槛碾压。核心函数：D162
+中文：垄断者主动抬门槛——平台通过网络效应抬高Λ_market，挑战者被人为门槛碾压。核心函数：[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13329,11 +13333,11 @@ English: Rule-based English rendering pending human review.
 ### [#377｜经济危机的门槛碾压——Λ_production和Λ_market追上μ，σ从1翻回0不是渐进的 / 经济危机的门槛碾压 - - Λ_production和Λ_market追上μ, σ从1翻回0不是渐进的](cases/items/C-0377.md)
 
 **案例内容 / Case Content**
-中文：案例说明：经济危机的门槛碾压——Λ_production和Λ_market追上μ，σ从1翻回0不是渐进的。核心函数：D160
+中文：案例说明：经济危机的门槛碾压——Λ_production和Λ_market追上μ，σ从1翻回0不是渐进的。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：经济危机的门槛碾压——Λ_production和Λ_market追上μ，σ从1翻回0不是渐进的。核心函数：D160
+中文：经济危机的门槛碾压——Λ_production和Λ_market追上μ，σ从1翻回0不是渐进的。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13364,11 +13368,11 @@ English: Rule-based English rendering pending human review.
 ### [#378｜产业升级的门外过渡期——Λ_production从Λ_low跃迁到Λ_high，中间态存活度为负 / 产业升级的门外过渡期 - - Λ_production从Λ_low跃迁到Λ_high, 中间态存活度为负](cases/items/C-0378.md)
 
 **案例内容 / Case Content**
-中文：案例说明：产业升级的门外过渡期——Λ_production从Λ_low跃迁到Λ_high，中间态存活度为负。核心函数：D159
+中文：案例说明：产业升级的门外过渡期——Λ_production从Λ_low跃迁到Λ_high，中间态存活度为负。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：产业升级的门外过渡期——Λ_production从Λ_low跃迁到Λ_high，中间态存活度为负。核心函数：D159
+中文：产业升级的门外过渡期——Λ_production从Λ_low跃迁到Λ_high，中间态存活度为负。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13399,11 +13403,11 @@ English: Rule-based English rendering pending human review.
 ### [#379｜宽松货币的名义vs实际——名义μ增长被Λ同步上升抵消，实际μ还在门外](cases/items/C-0379.md)
 
 **案例内容 / Case Content**
-中文：案例说明：宽松货币的名义vs实际——名义μ增长被Λ同步上升抵消，实际μ还在门外。核心函数：D160
+中文：案例说明：宽松货币的名义vs实际——名义μ增长被Λ同步上升抵消，实际μ还在门外。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：宽松货币的名义vs实际——名义μ增长被Λ同步上升抵消，实际μ还在门外。核心函数：D160
+中文：宽松货币的名义vs实际——名义μ增长被Λ同步上升抵消，实际μ还在门外。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13434,11 +13438,11 @@ English: Rule-based English rendering pending human review.
 ### [#380｜贫富差距的乘法分化——1/ln在μ>>Λ趋近零（稳定）和μ<<Λ趋向负无穷（崩溃）的不对称加速](cases/items/C-0380.md)
 
 **案例内容 / Case Content**
-中文：案例说明：贫富差距的乘法分化——1/ln在μ>>Λ趋近零（稳定）和μ<<Λ趋向负无穷（崩溃）的不对称加速。核心函数：D163
+中文：案例说明：贫富差距的乘法分化——1/ln在μ>>Λ趋近零（稳定）和μ<<Λ趋向负无穷（崩溃）的不对称加速。核心函数：[D163](functions/items/D163.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：贫富差距的乘法分化——1/ln在μ>>Λ趋近零（稳定）和μ<<Λ趋向负无穷（崩溃）的不对称加速。核心函数：D163
+中文：贫富差距的乘法分化——1/ln在μ>>Λ趋近零（稳定）和μ<<Λ趋向负无穷（崩溃）的不对称加速。核心函数：[D163](functions/items/D163.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13469,11 +13473,11 @@ English: Rule-based English rendering pending human review.
 ### [#381｜创新在边缘的拖累效应——大公司新维度1/ln为负拖低整体Φ，边缘玩家无旧维度拖累](cases/items/C-0381.md)
 
 **案例内容 / Case Content**
-中文：案例说明：创新在边缘的拖累效应——大公司新维度1/ln为负拖低整体Φ，边缘玩家无旧维度拖累。核心函数：D163
+中文：案例说明：创新在边缘的拖累效应——大公司新维度1/ln为负拖低整体Φ，边缘玩家无旧维度拖累。核心函数：[D163](functions/items/D163.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：创新在边缘的拖累效应——大公司新维度1/ln为负拖低整体Φ，边缘玩家无旧维度拖累。核心函数：D163
+中文：创新在边缘的拖累效应——大公司新维度1/ln为负拖低整体Φ，边缘玩家无旧维度拖累。核心函数：[D163](functions/items/D163.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13504,11 +13508,11 @@ English: Rule-based English rendering pending human review.
 ### [#382｜寿命是门槛碾压时间——μ衰减到Λ_metabolism的时间t*=ln(μ₀/Λ)/γ_decay，最后几年加速恶化 / 寿命是门槛碾压时间 - - μ衰减到Λ_metabolism的时间t*=ln(μ₀/Λ)/γ_decay, 最后几年加速恶化](cases/items/C-0382.md)
 
 **案例内容 / Case Content**
-中文：案例说明：寿命是门槛碾压时间——μ衰减到Λ_metabolism的时间t*=ln(μ₀/Λ)/γ_decay，最后几年加速恶化。核心函数：D165
+中文：案例说明：寿命是门槛碾压时间——μ衰减到Λ_metabolism的时间t*=ln(μ₀/Λ)/γ_decay，最后几年加速恶化。核心函数：[D165](functions/items/D165.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：寿命是门槛碾压时间——μ衰减到Λ_metabolism的时间t*=ln(μ₀/Λ)/γ_decay，最后几年加速恶化。核心函数：D165
+中文：寿命是门槛碾压时间——μ衰减到Λ_metabolism的时间t*=ln(μ₀/Λ)/γ_decay，最后几年加速恶化。核心函数：[D165](functions/items/D165.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13539,11 +13543,11 @@ English: Rule-based English rendering pending human review.
 ### [#383｜灭绝是加速崩塌——μ接近Λ时1/ln→-∞，最后几只个体存活贡献为负](cases/items/C-0383.md)
 
 **案例内容 / Case Content**
-中文：案例说明：灭绝是加速崩塌——μ接近Λ时1/ln→-∞，最后几只个体存活贡献为负。核心函数：D160
+中文：案例说明：灭绝是加速崩塌——μ接近Λ时1/ln→-∞，最后几只个体存活贡献为负。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：灭绝是加速崩塌——μ接近Λ时1/ln→-∞，最后几只个体存活贡献为负。核心函数：D160
+中文：灭绝是加速崩塌——μ接近Λ时1/ln→-∞，最后几只个体存活贡献为负。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13574,11 +13578,11 @@ English: Rule-based English rendering pending human review.
 ### [#384｜有性繁殖的倒U型——繁殖成本与基因多样性之间的两个死锁，有性繁殖是唯一通路](cases/items/C-0384.md)
 
 **案例内容 / Case Content**
-中文：案例说明：有性繁殖的倒U型——繁殖成本与基因多样性之间的两个死锁，有性繁殖是唯一通路。核心函数：D90×D161
+中文：案例说明：有性繁殖的倒U型——繁殖成本与基因多样性之间的两个死锁，有性繁殖是唯一通路。核心函数：[D90](functions/items/D90.md)×[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：有性繁殖的倒U型——繁殖成本与基因多样性之间的两个死锁，有性繁殖是唯一通路。核心函数：D90×D161
+中文：有性繁殖的倒U型——繁殖成本与基因多样性之间的两个死锁，有性繁殖是唯一通路。核心函数：[D90](functions/items/D90.md)×[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13610,11 +13614,11 @@ English: Rule-based English rendering pending human review.
 ### [#385｜癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定](cases/items/C-0385.md)
 
 **案例内容 / Case Content**
-中文：案例说明：癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定。核心函数：D164
+中文：案例说明：癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定。核心函数：[D164](functions/items/D164.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定。核心函数：D164
+中文：癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定。核心函数：[D164](functions/items/D164.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13645,11 +13649,11 @@ English: Rule-based English rendering pending human review.
 ### [#386｜共生是互为外部注入——两个物种互为对方的外部注入打破各自的门外锁定](cases/items/C-0386.md)
 
 **案例内容 / Case Content**
-中文：案例说明：共生是互为外部注入——两个物种互为对方的外部注入打破各自的门外锁定。核心函数：D166
+中文：案例说明：共生是互为外部注入——两个物种互为对方的外部注入打破各自的门外锁定。核心函数：[D166](functions/items/D166.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：共生是互为外部注入——两个物种互为对方的外部注入打破各自的门外锁定。核心函数：D166
+中文：共生是互为外部注入——两个物种互为对方的外部注入打破各自的门外锁定。核心函数：[D166](functions/items/D166.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13680,11 +13684,11 @@ English: Rule-based English rendering pending human review.
 ### [#387｜病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态](cases/items/C-0387.md)
 
 **案例内容 / Case Content**
-中文：案例说明：病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态。核心函数：D167
+中文：案例说明：病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态。核心函数：[D167](functions/items/D167.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态。核心函数：D167
+中文：病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态。核心函数：[D167](functions/items/D167.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13715,11 +13719,11 @@ English: Rule-based English rendering pending human review.
 ### [#388｜营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，D159门外翻转 / 营养级的门槛翻转 - - μ逐级衰减到Λ_metabolism以下, D159门外翻转](cases/items/C-0388.md)
 
 **案例内容 / Case Content**
-中文：案例说明：营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，D159门外翻转。核心函数：D159
+中文：案例说明：营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，D159门外翻转。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，D159门外翻转。核心函数：D159
+中文：营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，D159门外翻转。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13750,11 +13754,11 @@ English: Rule-based English rendering pending human review.
 ### [#389｜压缩极限是门槛不是底线——μ→Λ_entropy时1/ln→-∞，再压一点就崩 / 压缩极限是门槛不是底线 - - μ -> Λ_entropy时1/ln -> -∞, 再压一点就崩](cases/items/C-0389.md)
 
 **案例内容 / Case Content**
-中文：案例说明：压缩极限是门槛不是底线——μ→Λ_entropy时1/ln→-∞，再压一点就崩。核心函数：D159
+中文：案例说明：压缩极限是门槛不是底线——μ→Λ_entropy时1/ln→-∞，再压一点就崩。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：压缩极限是门槛不是底线——μ→Λ_entropy时1/ln→-∞，再压一点就崩。核心函数：D159
+中文：压缩极限是门槛不是底线——μ→Λ_entropy时1/ln→-∞，再压一点就崩。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13785,11 +13789,11 @@ English: Rule-based English rendering pending human review.
 ### [#390｜加密是防御性门槛碾压——人为抬高Λ_compute让攻击者在门外](cases/items/C-0390.md)
 
 **案例内容 / Case Content**
-中文：案例说明：加密是防御性门槛碾压——人为抬高Λ_compute让攻击者在门外。核心函数：D162
+中文：案例说明：加密是防御性门槛碾压——人为抬高Λ_compute让攻击者在门外。核心函数：[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：加密是防御性门槛碾压——人为抬高Λ_compute让攻击者在门外。核心函数：D162
+中文：加密是防御性门槛碾压——人为抬高Λ_compute让攻击者在门外。核心函数：[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13820,11 +13824,11 @@ English: Rule-based English rendering pending human review.
 ### [#391｜NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度 / NP难是门槛指数碾压 - - Λ_compute∝2^n远超μ∝n^k的增长速度](cases/items/C-0391.md)
 
 **案例内容 / Case Content**
-中文：案例说明：NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度。核心函数：D160
+中文：案例说明：NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度。核心函数：D160
+中文：NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13855,11 +13859,11 @@ English: Rule-based English rendering pending human review.
 ### [#392｜分布式一致性的慢节点拖累——一个μ<Λ的节点拖累整体一致性](cases/items/C-0392.md)
 
 **案例内容 / Case Content**
-中文：案例说明：分布式一致性的慢节点拖累——一个μ<Λ的节点拖累整体一致性。核心函数：D163
+中文：案例说明：分布式一致性的慢节点拖累——一个μ<Λ的节点拖累整体一致性。核心函数：[D163](functions/items/D163.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：分布式一致性的慢节点拖累——一个μ<Λ的节点拖累整体一致性。核心函数：D163
+中文：分布式一致性的慢节点拖累——一个μ<Λ的节点拖累整体一致性。核心函数：[D163](functions/items/D163.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13890,11 +13894,11 @@ English: Rule-based English rendering pending human review.
 ### [#393｜大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变 / 大数据的泛化相变 - - μ_data越过Λ_generalization的瞬间泛化能力质变](cases/items/C-0393.md)
 
 **案例内容 / Case Content**
-中文：案例说明：大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变。核心函数：D159
+中文：案例说明：大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变。核心函数：D159
+中文：大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13925,11 +13929,11 @@ English: Rule-based English rendering pending human review.
 ### [#394｜缓存是降低门槛——降低Λ_compute让更多μ过门槛，D162的逆操作](cases/items/C-0394.md)
 
 **案例内容 / Case Content**
-中文：案例说明：缓存是降低门槛——降低Λ_compute让更多μ过门槛，D162的逆操作。核心函数：D162
+中文：案例说明：缓存是降低门槛——降低Λ_compute让更多μ过门槛，D162的逆操作。核心函数：[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：缓存是降低门槛——降低Λ_compute让更多μ过门槛，D162的逆操作。核心函数：D162
+中文：缓存是降低门槛——降低Λ_compute让更多μ过门槛，D162的逆操作。核心函数：[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13960,11 +13964,11 @@ English: Rule-based English rendering pending human review.
 ### [#395｜并发死锁的相变无中间态——D161乘法死锁的精确实例](cases/items/C-0395.md)
 
 **案例内容 / Case Content**
-中文：案例说明：并发死锁的相变无中间态——D161乘法死锁的精确实例。核心函数：D161
+中文：案例说明：并发死锁的相变无中间态——D161乘法死锁的精确实例。核心函数：[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：并发死锁的相变无中间态——D161乘法死锁的精确实例。核心函数：D161
+中文：并发死锁的相变无中间态——D161乘法死锁的精确实例。核心函数：[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13995,11 +13999,11 @@ English: Rule-based English rendering pending human review.
 ### [#396｜习惯门槛碾压意识——Λ_habit追上μ_awareness，意识被习惯碾压 / 习惯门槛碾压意识 - - Λ_habit追上μ_awareness, 意识被习惯碾压](cases/items/C-0396.md)
 
 **案例内容 / Case Content**
-中文：案例说明：习惯门槛碾压意识——Λ_habit追上μ_awareness，意识被习惯碾压。核心函数：D160
+中文：案例说明：习惯门槛碾压意识——Λ_habit追上μ_awareness，意识被习惯碾压。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：习惯门槛碾压意识——Λ_habit追上μ_awareness，意识被习惯碾压。核心函数：D160
+中文：习惯门槛碾压意识——Λ_habit追上μ_awareness，意识被习惯碾压。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14030,11 +14034,11 @@ English: Rule-based English rendering pending human review.
 ### [#397｜创伤的双重碾压+向下兼容——μ↓+Λ↑双重门槛碾压+回避的保真度损失](cases/items/C-0397.md)
 
 **案例内容 / Case Content**
-中文：案例说明：创伤的双重碾压+向下兼容——μ↓+Λ↑双重门槛碾压+回避的保真度损失。核心函数：D160×D92
+中文：案例说明：创伤的双重碾压+向下兼容——μ↓+Λ↑双重门槛碾压+回避的保真度损失。核心函数：[D160](functions/items/D160.md)×[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：创伤的双重碾压+向下兼容——μ↓+Λ↑双重门槛碾压+回避的保真度损失。核心函数：D160×D92
+中文：创伤的双重碾压+向下兼容——μ↓+Λ↑双重门槛碾压+回避的保真度损失。核心函数：[D160](functions/items/D160.md)×[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14066,11 +14070,11 @@ English: Rule-based English rendering pending human review.
 ### [#398｜顿悟无中间态——μ越过Λ_awareness的瞬间相变，不存在"半懂"](cases/items/C-0398.md)
 
 **案例内容 / Case Content**
-中文：案例说明：顿悟无中间态——μ越过Λ_awareness的瞬间相变，不存在"半懂"。核心函数：D168
+中文：案例说明：顿悟无中间态——μ越过Λ_awareness的瞬间相变，不存在"半懂"。核心函数：[D168](functions/items/D168.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：顿悟无中间态——μ越过Λ_awareness的瞬间相变，不存在"半懂"。核心函数：D168
+中文：顿悟无中间态——μ越过Λ_awareness的瞬间相变，不存在"半懂"。核心函数：[D168](functions/items/D168.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14101,11 +14105,11 @@ English: Rule-based English rendering pending human review.
 ### [#399｜心流的倒U型走钢丝——两侧都是死锁（焦虑/无聊），心流是唯一通路](cases/items/C-0399.md)
 
 **案例内容 / Case Content**
-中文：案例说明：心流的倒U型走钢丝——两侧都是死锁（焦虑/无聊），心流是唯一通路。核心函数：D90×D161
+中文：案例说明：心流的倒U型走钢丝——两侧都是死锁（焦虑/无聊），心流是唯一通路。核心函数：[D90](functions/items/D90.md)×[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：心流的倒U型走钢丝——两侧都是死锁（焦虑/无聊），心流是唯一通路。核心函数：D90×D161
+中文：心流的倒U型走钢丝——两侧都是死锁（焦虑/无聊），心流是唯一通路。核心函数：[D90](functions/items/D90.md)×[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14137,11 +14141,11 @@ English: Rule-based English rendering pending human review.
 ### [#400｜成瘾的慢速门槛碾压——Λ_pleasure缓慢上升，每次刺激抬高一点门槛](cases/items/C-0400.md)
 
 **案例内容 / Case Content**
-中文：案例说明：成瘾的慢速门槛碾压——Λ_pleasure缓慢上升，每次刺激抬高一点门槛。核心函数：D160
+中文：案例说明：成瘾的慢速门槛碾压——Λ_pleasure缓慢上升，每次刺激抬高一点门槛。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：成瘾的慢速门槛碾压——Λ_pleasure缓慢上升，每次刺激抬高一点门槛。核心函数：D160
+中文：成瘾的慢速门槛碾压——Λ_pleasure缓慢上升，每次刺激抬高一点门槛。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14171,17 +14175,18 @@ English: Rule-based English rendering pending human review.
 
 </details>
 
+<a id="case-range-401-500"></a>
 <details>
 <summary>#401–#500 / #401–#500</summary>
 
 ### [#401｜冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性](cases/items/C-0401.md)
 
 **案例内容 / Case Content**
-中文：案例说明：冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性。核心函数：D89
+中文：案例说明：冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性。核心函数：[D89](functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性。核心函数：D89
+中文：冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性。核心函数：[D89](functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14212,11 +14217,11 @@ English: Rule-based English rendering pending human review.
 ### [#402｜学习平台期的超敏感区——μ在Λ_next附近震荡，突破是相变](cases/items/C-0402.md)
 
 **案例内容 / Case Content**
-中文：案例说明：学习平台期的超敏感区——μ在Λ_next附近震荡，突破是相变。核心函数：D160
+中文：案例说明：学习平台期的超敏感区——μ在Λ_next附近震荡，突破是相变。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：学习平台期的超敏感区——μ在Λ_next附近震荡，突破是相变。核心函数：D160
+中文：学习平台期的超敏感区——μ在Λ_next附近震荡，突破是相变。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14247,11 +14252,11 @@ English: Rule-based English rendering pending human review.
 ### [#403｜民主退化的参与门槛碾压——参与成本上升+参与意愿下降，自然+人为双重碾压](cases/items/C-0403.md)
 
 **案例内容 / Case Content**
-中文：案例说明：民主退化的参与门槛碾压——参与成本上升+参与意愿下降，自然+人为双重碾压。核心函数：D160×D162
+中文：案例说明：民主退化的参与门槛碾压——参与成本上升+参与意愿下降，自然+人为双重碾压。核心函数：[D160](functions/items/D160.md)×[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：民主退化的参与门槛碾压——参与成本上升+参与意愿下降，自然+人为双重碾压。核心函数：D160×D162
+中文：民主退化的参与门槛碾压——参与成本上升+参与意愿下降，自然+人为双重碾压。核心函数：[D160](functions/items/D160.md)×[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14283,11 +14288,11 @@ English: Rule-based English rendering pending human review.
 ### [#404｜改革窗口与革命同构——A型崩溃与B型松弛的共振窗口](cases/items/C-0404.md)
 
 **案例内容 / Case Content**
-中文：案例说明：改革窗口与革命同构——A型崩溃与B型松弛的共振窗口。核心函数：D164
+中文：案例说明：改革窗口与革命同构——A型崩溃与B型松弛的共振窗口。核心函数：[D164](functions/items/D164.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：改革窗口与革命同构——A型崩溃与B型松弛的共振窗口。核心函数：D164
+中文：改革窗口与革命同构——A型崩溃与B型松弛的共振窗口。核心函数：[D164](functions/items/D164.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14318,11 +14323,11 @@ English: Rule-based English rendering pending human review.
 ### [#405｜权力腐败的问责趋零——μ_power>>Λ_accountability时1/ln趋零 / 权力腐败的问责趋零 - - μ_power>>Λ_accountability时1/ln趋零](cases/items/C-0405.md)
 
 **案例内容 / Case Content**
-中文：案例说明：权力腐败的问责趋零——μ_power>>Λ_accountability时1/ln趋零。核心函数：D169
+中文：案例说明：权力腐败的问责趋零——μ_power>>Λ_accountability时1/ln趋零。核心函数：[D169](functions/items/D169.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：权力腐败的问责趋零——μ_power>>Λ_accountability时1/ln趋零。核心函数：D169
+中文：权力腐败的问责趋零——μ_power>>Λ_accountability时1/ln趋零。核心函数：[D169](functions/items/D169.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14353,11 +14358,11 @@ English: Rule-based English rendering pending human review.
 ### [#406｜威权的单点故障——单一B型正项维持，该正项消失则系统瞬间崩溃](cases/items/C-0406.md)
 
 **案例内容 / Case Content**
-中文：案例说明：威权的单点故障——单一B型正项维持，该正项消失则系统瞬间崩溃。核心函数：D161
+中文：案例说明：威权的单点故障——单一B型正项维持，该正项消失则系统瞬间崩溃。核心函数：[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：威权的单点故障——单一B型正项维持，该正项消失则系统瞬间崩溃。核心函数：D161
+中文：威权的单点故障——单一B型正项维持，该正项消失则系统瞬间崩溃。核心函数：[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14388,11 +14393,11 @@ English: Rule-based English rendering pending human review.
 ### [#407｜联邦制隔离拖累——多独立门控面分散风险，单一子系统拖累不影响全局](cases/items/C-0407.md)
 
 **案例内容 / Case Content**
-中文：案例说明：联邦制隔离拖累——多独立门控面分散风险，单一子系统拖累不影响全局。核心函数：D163
+中文：案例说明：联邦制隔离拖累——多独立门控面分散风险，单一子系统拖累不影响全局。核心函数：[D163](functions/items/D163.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：联邦制隔离拖累——多独立门控面分散风险，单一子系统拖累不影响全局。核心函数：D163
+中文：联邦制隔离拖累——多独立门控面分散风险，单一子系统拖累不影响全局。核心函数：[D163](functions/items/D163.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14423,11 +14428,11 @@ English: Rule-based English rendering pending human review.
 ### [#408｜国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，D160宏观版](cases/items/C-0408.md)
 
 **案例内容 / Case Content**
-中文：案例说明：国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，D160宏观版。核心函数：D160
+中文：案例说明：国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，D160宏观版。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，D160宏观版。核心函数：D160
+中文：国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，D160宏观版。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14458,11 +14463,11 @@ English: Rule-based English rendering pending human review.
 ### [#409｜反腐运动的临时外部注入——Λ_accountability临时提高，运动结束后回落](cases/items/C-0409.md)
 
 **案例内容 / Case Content**
-中文：案例说明：反腐运动的临时外部注入——Λ_accountability临时提高，运动结束后回落。核心函数：D161
+中文：案例说明：反腐运动的临时外部注入——Λ_accountability临时提高，运动结束后回落。核心函数：[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：反腐运动的临时外部注入——Λ_accountability临时提高，运动结束后回落。核心函数：D161
+中文：反腐运动的临时外部注入——Λ_accountability临时提高，运动结束后回落。核心函数：[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14493,11 +14498,11 @@ English: Rule-based English rendering pending human review.
 ### [#410｜慢性病的门外锁定+向下兼容——μ_repair<Λ_repair+症状管理的保真度损失](cases/items/C-0410.md)
 
 **案例内容 / Case Content**
-中文：案例说明：慢性病的门外锁定+向下兼容——μ_repair<Λ_repair+症状管理的保真度损失。核心函数：D159×D92
+中文：案例说明：慢性病的门外锁定+向下兼容——μ_repair<Λ_repair+症状管理的保真度损失。核心函数：[D159](functions/items/D159.md)×[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：慢性病的门外锁定+向下兼容——μ_repair<Λ_repair+症状管理的保真度损失。核心函数：D159×D92
+中文：慢性病的门外锁定+向下兼容——μ_repair<Λ_repair+症状管理的保真度损失。核心函数：[D159](functions/items/D159.md)×[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14529,11 +14534,11 @@ English: Rule-based English rendering pending human review.
 ### [#411｜耐药性的门槛军备竞赛——药物抬高Λ（D162）与病原体降低自身Λ的对抗](cases/items/C-0411.md)
 
 **案例内容 / Case Content**
-中文：案例说明：耐药性的门槛军备竞赛——药物抬高Λ（D162）与病原体降低自身Λ的对抗。核心函数：D162
+中文：案例说明：耐药性的门槛军备竞赛——药物抬高Λ（[D162](functions/items/D162.md)）与病原体降低自身Λ的对抗。核心函数：[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：耐药性的门槛军备竞赛——药物抬高Λ（D162）与病原体降低自身Λ的对抗。核心函数：D162
+中文：耐药性的门槛军备竞赛——药物抬高Λ（[D162](functions/items/D162.md)）与病原体降低自身Λ的对抗。核心函数：[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14564,11 +14569,11 @@ English: Rule-based English rendering pending human review.
 ### [#412｜安慰剂的信念相变——信念提高μ_immune越过Λ_immune的微小翻转](cases/items/C-0412.md)
 
 **案例内容 / Case Content**
-中文：案例说明：安慰剂的信念相变——信念提高μ_immune越过Λ_immune的微小翻转。核心函数：D159
+中文：案例说明：安慰剂的信念相变——信念提高μ_immune越过Λ_immune的微小翻转。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：安慰剂的信念相变——信念提高μ_immune越过Λ_immune的微小翻转。核心函数：D159
+中文：安慰剂的信念相变——信念提高μ_immune越过Λ_immune的微小翻转。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14599,11 +14604,11 @@ English: Rule-based English rendering pending human review.
 ### [#413｜自愈是门槛自然翻转——μ_immune>Λ_pathogen时无需外部注入 / 自愈是门槛自然翻转 - - μ_immune>Λ_pathogen时无需外部注入](cases/items/C-0413.md)
 
 **案例内容 / Case Content**
-中文：案例说明：自愈是门槛自然翻转——μ_immune>Λ_pathogen时无需外部注入。核心函数：D164
+中文：案例说明：自愈是门槛自然翻转——μ_immune>Λ_pathogen时无需外部注入。核心函数：[D164](functions/items/D164.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：自愈是门槛自然翻转——μ_immune>Λ_pathogen时无需外部注入。核心函数：D164
+中文：自愈是门槛自然翻转——μ_immune>Λ_pathogen时无需外部注入。核心函数：[D164](functions/items/D164.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14634,11 +14639,11 @@ English: Rule-based English rendering pending human review.
 ### [#414｜器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫](cases/items/C-0414.md)
 
 **案例内容 / Case Content**
-中文：案例说明：器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫。核心函数：D160
+中文：案例说明：器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫。核心函数：D160
+中文：器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14669,11 +14674,11 @@ English: Rule-based English rendering pending human review.
 ### [#415｜衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加](cases/items/C-0415.md)
 
 **案例内容 / Case Content**
-中文：案例说明：衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加。核心函数：D87
+中文：案例说明：衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加。核心函数：[D87](functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加。核心函数：D87
+中文：衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加。核心函数：[D87](functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14704,11 +14709,11 @@ English: Rule-based English rendering pending human review.
 ### [#416｜手术窗口的倒U型——太弱死锁和太晚死锁之间的唯一通路](cases/items/C-0416.md)
 
 **案例内容 / Case Content**
-中文：案例说明：手术窗口的倒U型——太弱死锁和太晚死锁之间的唯一通路。核心函数：D90×D161
+中文：案例说明：手术窗口的倒U型——太弱死锁和太晚死锁之间的唯一通路。核心函数：[D90](functions/items/D90.md)×[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：手术窗口的倒U型——太弱死锁和太晚死锁之间的唯一通路。核心函数：D90×D161
+中文：手术窗口的倒U型——太弱死锁和太晚死锁之间的唯一通路。核心函数：[D90](functions/items/D90.md)×[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14740,11 +14745,11 @@ English: Rule-based English rendering pending human review.
 ### [#417｜城市规模律的倒U型——互动收益与摩擦成本之间的走钢丝](cases/items/C-0417.md)
 
 **案例内容 / Case Content**
-中文：案例说明：城市规模律的倒U型——互动收益与摩擦成本之间的走钢丝。核心函数：D90×D161
+中文：案例说明：城市规模律的倒U型——互动收益与摩擦成本之间的走钢丝。核心函数：[D90](functions/items/D90.md)×[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：城市规模律的倒U型——互动收益与摩擦成本之间的走钢丝。核心函数：D90×D161
+中文：城市规模律的倒U型——互动收益与摩擦成本之间的走钢丝。核心函数：[D90](functions/items/D90.md)×[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14776,11 +14781,11 @@ English: Rule-based English rendering pending human review.
 ### [#418｜核心-边缘的乘法分化——核心是多门控面正贡献的吸引子，边缘是门外锁定](cases/items/C-0418.md)
 
 **案例内容 / Case Content**
-中文：案例说明：核心-边缘的乘法分化——核心是多门控面正贡献的吸引子，边缘是门外锁定。核心函数：D163
+中文：案例说明：核心-边缘的乘法分化——核心是多门控面正贡献的吸引子，边缘是门外锁定。核心函数：[D163](functions/items/D163.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：核心-边缘的乘法分化——核心是多门控面正贡献的吸引子，边缘是门外锁定。核心函数：D163
+中文：核心-边缘的乘法分化——核心是多门控面正贡献的吸引子，边缘是门外锁定。核心函数：[D163](functions/items/D163.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14811,11 +14816,11 @@ English: Rule-based English rendering pending human review.
 ### [#419｜交通拥堵的门槛突变——Λ_friction在临界密度处突变，畅通和拥堵无中间态](cases/items/C-0419.md)
 
 **案例内容 / Case Content**
-中文：案例说明：交通拥堵的门槛突变——Λ_friction在临界密度处突变，畅通和拥堵无中间态。核心函数：D159
+中文：案例说明：交通拥堵的门槛突变——Λ_friction在临界密度处突变，畅通和拥堵无中间态。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：交通拥堵的门槛突变——Λ_friction在临界密度处突变，畅通和拥堵无中间态。核心函数：D159
+中文：交通拥堵的门槛突变——Λ_friction在临界密度处突变，畅通和拥堵无中间态。核心函数：[D159](functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14846,11 +14851,11 @@ English: Rule-based English rendering pending human review.
 ### [#420｜城市衰败的死锁——Λ↑+μ↓门槛碾压+需要产业来提高μ但需要μ来吸引产业](cases/items/C-0420.md)
 
 **案例内容 / Case Content**
-中文：案例说明：城市衰败的死锁——Λ↑+μ↓门槛碾压+需要产业来提高μ但需要μ来吸引产业。核心函数：D160×D161
+中文：案例说明：城市衰败的死锁——Λ↑+μ↓门槛碾压+需要产业来提高μ但需要μ来吸引产业。核心函数：[D160](functions/items/D160.md)×[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：城市衰败的死锁——Λ↑+μ↓门槛碾压+需要产业来提高μ但需要μ来吸引产业。核心函数：D160×D161
+中文：城市衰败的死锁——Λ↑+μ↓门槛碾压+需要产业来提高μ但需要μ来吸引产业。核心函数：[D160](functions/items/D160.md)×[D161](functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14882,11 +14887,11 @@ English: Rule-based English rendering pending human review.
 ### [#421｜郊区化的倒U型极限——互动收益与摩擦成本的最优点](cases/items/C-0421.md)
 
 **案例内容 / Case Content**
-中文：案例说明：郊区化的倒U型极限——互动收益与摩擦成本的最优点。核心函数：D90
+中文：案例说明：郊区化的倒U型极限——互动收益与摩擦成本的最优点。核心函数：[D90](functions/items/D90.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：郊区化的倒U型极限——互动收益与摩擦成本的最优点。核心函数：D90
+中文：郊区化的倒U型极限——互动收益与摩擦成本的最优点。核心函数：[D90](functions/items/D90.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14917,11 +14922,11 @@ English: Rule-based English rendering pending human review.
 ### [#422｜城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压](cases/items/C-0422.md)
 
 **案例内容 / Case Content**
-中文：案例说明：城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压。核心函数：D162
+中文：案例说明：城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压。核心函数：[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压。核心函数：D162
+中文：城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压。核心函数：[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14952,11 +14957,11 @@ English: Rule-based English rendering pending human review.
 ### [#423｜智慧城市的名义vs实际——名义μ增长被Λ同步上升抵消](cases/items/C-0423.md)
 
 **案例内容 / Case Content**
-中文：案例说明：智慧城市的名义vs实际——名义μ增长被Λ同步上升抵消。核心函数：D160
+中文：案例说明：智慧城市的名义vs实际——名义μ增长被Λ同步上升抵消。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：智慧城市的名义vs实际——名义μ增长被Λ同步上升抵消。核心函数：D160
+中文：智慧城市的名义vs实际——名义μ增长被Λ同步上升抵消。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14987,11 +14992,11 @@ English: Rule-based English rendering pending human review.
 ### [#424｜天赋努力是乘法不是加法——任何一个为零则整体为零](cases/items/C-0424.md)
 
 **案例内容 / Case Content**
-中文：案例说明：天赋努力是乘法不是加法——任何一个为零则整体为零。核心函数：D170
+中文：案例说明：天赋努力是乘法不是加法——任何一个为零则整体为零。核心函数：[D170](functions/items/D170.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：天赋努力是乘法不是加法——任何一个为零则整体为零。核心函数：D170
+中文：天赋努力是乘法不是加法——任何一个为零则整体为零。核心函数：[D170](functions/items/D170.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15022,11 +15027,11 @@ English: Rule-based English rendering pending human review.
 ### [#425｜教学相长的共生外部注入——师生互为外部注入打破各自的死锁](cases/items/C-0425.md)
 
 **案例内容 / Case Content**
-中文：案例说明：教学相长的共生外部注入——师生互为外部注入打破各自的死锁。核心函数：D166
+中文：案例说明：教学相长的共生外部注入——师生互为外部注入打破各自的死锁。核心函数：[D166](functions/items/D166.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：教学相长的共生外部注入——师生互为外部注入打破各自的死锁。核心函数：D166
+中文：教学相长的共生外部注入——师生互为外部注入打破各自的死锁。核心函数：[D166](functions/items/D166.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15057,11 +15062,11 @@ English: Rule-based English rendering pending human review.
 ### [#426｜填鸭的名义μ+向下兼容——知识量增加但理解门槛没降低+保真度损失](cases/items/C-0426.md)
 
 **案例内容 / Case Content**
-中文：案例说明：填鸭的名义μ+向下兼容——知识量增加但理解门槛没降低+保真度损失。核心函数：D160×D92
+中文：案例说明：填鸭的名义μ+向下兼容——知识量增加但理解门槛没降低+保真度损失。核心函数：[D160](functions/items/D160.md)×[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：填鸭的名义μ+向下兼容——知识量增加但理解门槛没降低+保真度损失。核心函数：D160×D92
+中文：填鸭的名义μ+向下兼容——知识量增加但理解门槛没降低+保真度损失。核心函数：[D160](functions/items/D160.md)×[D92](functions/items/D92.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15093,11 +15098,11 @@ English: Rule-based English rendering pending human review.
 ### [#427｜间隔学习的临界点效率——μ在Λ附近时1/ln最大，投入效率最高](cases/items/C-0427.md)
 
 **案例内容 / Case Content**
-中文：案例说明：间隔学习的临界点效率——μ在Λ附近时1/ln最大，投入效率最高。核心函数：D87
+中文：案例说明：间隔学习的临界点效率——μ在Λ附近时1/ln最大，投入效率最高。核心函数：[D87](functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：间隔学习的临界点效率——μ在Λ附近时1/ln最大，投入效率最高。核心函数：D87
+中文：间隔学习的临界点效率——μ在Λ附近时1/ln最大，投入效率最高。核心函数：[D87](functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15128,11 +15133,11 @@ English: Rule-based English rendering pending human review.
 ### [#428｜元认知降低门槛——降低Λ_understanding的结构保守性策略 / 元认知降低门槛 - - 降低Λ_understanding的结构保守性策略](cases/items/C-0428.md)
 
 **案例内容 / Case Content**
-中文：案例说明：元认知降低门槛——降低Λ_understanding的结构保守性策略。核心函数：D89
+中文：案例说明：元认知降低门槛——降低Λ_understanding的结构保守性策略。核心函数：[D89](functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：元认知降低门槛——降低Λ_understanding的结构保守性策略。核心函数：D89
+中文：元认知降低门槛——降低Λ_understanding的结构保守性策略。核心函数：[D89](functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15163,11 +15168,11 @@ English: Rule-based English rendering pending human review.
 ### [#429｜教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加](cases/items/C-0429.md)
 
 **案例内容 / Case Content**
-中文：案例说明：教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加。核心函数：D159×D162
+中文：案例说明：教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加。核心函数：[D159](functions/items/D159.md)×[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加。核心函数：D159×D162
+中文：教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加。核心函数：[D159](functions/items/D159.md)×[D162](functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15199,11 +15204,11 @@ English: Rule-based English rendering pending human review.
 ### [#430｜学习平台期的超敏感区震荡——μ在Λ附近波动，突破是相变](cases/items/C-0430.md)
 
 **案例内容 / Case Content**
-中文：案例说明：学习平台期的超敏感区震荡——μ在Λ附近波动，突破是相变。核心函数：D160
+中文：案例说明：学习平台期的超敏感区震荡——μ在Λ附近波动，突破是相变。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：学习平台期的超敏感区震荡——μ在Λ附近波动，突破是相变。核心函数：D160
+中文：学习平台期的超敏感区震荡——μ在Λ附近波动，突破是相变。核心函数：[D160](functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15234,11 +15239,11 @@ English: Rule-based English rendering pending human review.
 ### [#431｜"先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整 / "defend first, attack later"mathematical necessity - simulate 8-step resource allocation: 前3步β>0.3(cascade defense, 补threshold-near dimension), 后5步β<0.1(greedy optimization, 补highest-elasticity dimension). no manual switching required, β随system state自动调整](cases/items/C-0431.md)
 
 **案例内容 / Case Content**
-中文：案例说明："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整。核心函数：D111
+中文：案例说明："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整。核心函数：[D111](functions/items/D111.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整。核心函数：D111
+中文："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整。核心函数：[D111](functions/items/D111.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15269,11 +15274,11 @@ English: Rule-based English rendering pending human review.
 ### [#432｜β完整轨迹验证 — εₖ从0.1→0.5，θC=0.4，γ=10。εₖ=0.1: σ'=0.018,β=0.18；εₖ=0.3: σ'=0.12,β=1.2；εₖ=0.4: σ'=0.25,β=2.5(峰值)；εₖ=0.5: σ'=0.12,β=1.2；εₖ=0.7: σ'=0.018,β=0.18。先升后降对称曲线 / β完整轨迹验证 - εₖ从0.1 -> 0.5, θC=0.4, γ=10. εₖ=0.1: σ'=0.018,β=0.18; εₖ=0.3: σ'=0.12,β=1.2; εₖ=0.4: σ'=0.25,β=2.5(峰值); εₖ=0.5: σ'=0.12,β=1.2; εₖ=0.7: σ'=0.018,β=0.18. 先升后降对称曲线](cases/items/C-0432.md)
 
 **案例内容 / Case Content**
-中文：案例说明：β完整轨迹验证 — εₖ从0.1→0.5，θC=0.4，γ=10。εₖ=0.1: σ'=0.018, β=0.18；εₖ=0.3: σ'=0.12, β=1.2；εₖ=0.4: σ'=0.25, β=2.5(峰值)；εₖ=0.5: σ'=0.12, β=1.2；εₖ=0.7: σ'=0.018, β=0.18。先升后降对称曲线。核心函数：D112
+中文：案例说明：β完整轨迹验证 — εₖ从0.1→0.5，θC=0.4，γ=10。εₖ=0.1: σ'=0.018, β=0.18；εₖ=0.3: σ'=0.12, β=1.2；εₖ=0.4: σ'=0.25, β=2.5(峰值)；εₖ=0.5: σ'=0.12, β=1.2；εₖ=0.7: σ'=0.018, β=0.18。先升后降对称曲线。核心函数：[D112](functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：β完整轨迹验证 — εₖ从0.1→0.5，θC=0.4，γ=10。εₖ=0.1: σ'=0.018, β=0.18；εₖ=0.3: σ'=0.12, β=1.2；εₖ=0.4: σ'=0.25, β=2.5(峰值)；εₖ=0.5: σ'=0.12, β=1.2；εₖ=0.7: σ'=0.018, β=0.18。先升后降对称曲线。核心函数：D112
+中文：β完整轨迹验证 — εₖ从0.1→0.5，θC=0.4，γ=10。εₖ=0.1: σ'=0.018, β=0.18；εₖ=0.3: σ'=0.12, β=1.2；εₖ=0.4: σ'=0.25, β=2.5(峰值)；εₖ=0.5: σ'=0.12, β=1.2；εₖ=0.7: σ'=0.018, β=0.18。先升后降对称曲线。核心函数：[D112](functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15304,11 +15309,11 @@ English: Rule-based English rendering pending human review.
 ### [#433｜防守阶段β上升的反直觉 — 创业公司接近盈亏平衡点时（εrevenue→θC），β上升→级联风险最大→恰恰在最需要防守的时候。过了平衡点后β下降→可以转向增长](cases/items/C-0433.md)
 
 **案例内容 / Case Content**
-中文：案例说明：防守阶段β上升的反直觉 — 创业公司接近盈亏平衡点时（εrevenue→θC），β上升→级联风险最大→恰恰在最需要防守的时候。过了平衡点后β下降→可以转向增长。核心函数：D112
+中文：案例说明：防守阶段β上升的反直觉 — 创业公司接近盈亏平衡点时（εrevenue→θC），β上升→级联风险最大→恰恰在最需要防守的时候。过了平衡点后β下降→可以转向增长。核心函数：[D112](functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：防守阶段β上升的反直觉 — 创业公司接近盈亏平衡点时（εrevenue→θC），β上升→级联风险最大→恰恰在最需要防守的时候。过了平衡点后β下降→可以转向增长。核心函数：D112
+中文：防守阶段β上升的反直觉 — 创业公司接近盈亏平衡点时（εrevenue→θC），β上升→级联风险最大→恰恰在最需要防守的时候。过了平衡点后β下降→可以转向增长。核心函数：[D112](functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15339,11 +15344,11 @@ English: Rule-based English rendering pending human review.
 ### [#434｜多维阶梯转换 — 3维门槛θC=(0.3,0.5,0.7)，初始ε=(0.2,0.4,0.6)。先推ε₁过0.3（β第一阶下降），再推ε₂过0.5（β第二阶下降），最后推ε₃过0.7（β第三阶下降）。三步防守→进攻转换 / 多维阶梯转换 - 3维门槛θC=(0.3,0.5,0.7), 初始ε=(0.2,0.4,0.6). 先推ε₁过0.3(β第一阶下降), 再推ε₂过0.5(β第二阶下降), 最后推ε₃过0.7(β第三阶下降). 三步防守 -> 进攻转换](cases/items/C-0434.md)
 
 **案例内容 / Case Content**
-中文：案例说明：多维阶梯转换 — 3维门槛θC=(0.3,0.5,0.7)，初始ε=(0.2,0.4,0.6)。先推ε₁过0.3（β第一阶下降），再推ε₂过0.5（β第二阶下降），最后推ε₃过0.7（β第三阶下降）。三步防守→进攻转换。核心函数：D112
+中文：案例说明：多维阶梯转换 — 3维门槛θC=(0.3,0.5,0.7)，初始ε=(0.2,0.4,0.6)。先推ε₁过0.3（β第一阶下降），再推ε₂过0.5（β第二阶下降），最后推ε₃过0.7（β第三阶下降）。三步防守→进攻转换。核心函数：[D112](functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：多维阶梯转换 — 3维门槛θC=(0.3,0.5,0.7)，初始ε=(0.2,0.4,0.6)。先推ε₁过0.3（β第一阶下降），再推ε₂过0.5（β第二阶下降），最后推ε₃过0.7（β第三阶下降）。三步防守→进攻转换。核心函数：D112
+中文：多维阶梯转换 — 3维门槛θC=(0.3,0.5,0.7)，初始ε=(0.2,0.4,0.6)。先推ε₁过0.3（β第一阶下降），再推ε₂过0.5（β第二阶下降），最后推ε₃过0.7（β第三阶下降）。三步防守→进攻转换。核心函数：[D112](functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15374,11 +15379,11 @@ English: Rule-based English rendering pending human review.
 ### [#435｜切换点精确可定 — 不需要"感觉"该防守还是进攻，只需监测maxσ'是否在下降。maxσ'上升=防守阶段，maxσ'下降=进攻阶段，maxσ'达峰=切换点](cases/items/C-0435.md)
 
 **案例内容 / Case Content**
-中文：案例说明：切换点精确可定 — 不需要"感觉"该防守还是进攻，只需监测maxσ'是否在下降。maxσ'上升=防守阶段，maxσ'下降=进攻阶段，maxσ'达峰=切换点。核心函数：D112
+中文：案例说明：切换点精确可定 — 不需要"感觉"该防守还是进攻，只需监测maxσ'是否在下降。maxσ'上升=防守阶段，maxσ'下降=进攻阶段，maxσ'达峰=切换点。核心函数：[D112](functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：切换点精确可定 — 不需要"感觉"该防守还是进攻，只需监测maxσ'是否在下降。maxσ'上升=防守阶段，maxσ'下降=进攻阶段，maxσ'达峰=切换点。核心函数：D112
+中文：切换点精确可定 — 不需要"感觉"该防守还是进攻，只需监测maxσ'是否在下降。maxσ'上升=防守阶段，maxσ'下降=进攻阶段，maxσ'达峰=切换点。核心函数：[D112](functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15409,11 +15414,11 @@ English: Rule-based English rendering pending human review.
 ### [#436｜经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"](cases/items/C-0436.md)
 
 **案例内容 / Case Content**
-中文：案例说明：经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"。核心函数：D112
+中文：案例说明：经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"。核心函数：[D112](functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"。核心函数：D112
+中文：经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"。核心函数：[D112](functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15444,11 +15449,11 @@ English: Rule-based English rendering pending human review.
 ### [#437｜幂函数等价验证 — f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵。η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃。δ₁=0,δ₂=0,δ₃=0。所有幂函数偏离度=0，补最弱=补弹性最高 / 幂函数等价验证 - f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵. η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃. δ₁=0,δ₂=0,δ₃=0. 所有幂函数偏离度=0, 补最弱=补弹性最高](cases/items/C-0437.md)
 
 **案例内容 / Case Content**
-中文：案例说明：幂函数等价验证 — f₁=ε₁, f₂=ε₂², f₃=ε₁⁰·⁵。η₁=1/ε₁, η₂=2/ε₂, η₃=0.5/ε₃。δ₁=0, δ₂=0, δ₃=0。所有幂函数偏离度=0，补最弱=补弹性最高。核心函数：D113
+中文：案例说明：幂函数等价验证 — f₁=ε₁, f₂=ε₂², f₃=ε₁⁰·⁵。η₁=1/ε₁, η₂=2/ε₂, η₃=0.5/ε₃。δ₁=0, δ₂=0, δ₃=0。所有幂函数偏离度=0，补最弱=补弹性最高。核心函数：[D113](functions/items/D113.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：幂函数等价验证 — f₁=ε₁, f₂=ε₂², f₃=ε₁⁰·⁵。η₁=1/ε₁, η₂=2/ε₂, η₃=0.5/ε₃。δ₁=0, δ₂=0, δ₃=0。所有幂函数偏离度=0，补最弱=补弹性最高。核心函数：D113
+中文：幂函数等价验证 — f₁=ε₁, f₂=ε₂², f₃=ε₁⁰·⁵。η₁=1/ε₁, η₂=2/ε₂, η₃=0.5/ε₃。δ₁=0, δ₂=0, δ₃=0。所有幂函数偏离度=0，补最弱=补弹性最高。核心函数：[D113](functions/items/D113.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15479,11 +15484,11 @@ English: Rule-based English rendering pending human review.
 ### [#438｜弹性封顶偏离 — f₁=σ(5(ε₁-0.3)),ε₁=0.1,η₁=5×0.88=4.4,W₁=10。c=1时δ₁=4.4×0.1/1-1=-0.56。弹性远低于弱度预期，"补最弱"会过度投入 / 弹性封顶偏离 - f₁=σ(5(ε₁-0.3)),ε₁=0.1,η₁=5 x 0.88=4.4,W₁=10. c=1时δ₁=4.4 x 0.1/1-1=-0.56. 弹性远低于弱度预期, "补最弱"会过度投入](cases/items/C-0438.md)
 
 **案例内容 / Case Content**
-中文：案例说明：弹性封顶偏离 — f₁=σ(5(ε₁-0.3)), ε₁=0.1, η₁=5×0.88=4.4, W₁=10。c=1时δ₁=4.4×0.1/1-1=-0.56。弹性远低于弱度预期，"补最弱"会过度投入。核心函数：D113
+中文：案例说明：弹性封顶偏离 — f₁=σ(5(ε₁-0.3)), ε₁=0.1, η₁=5×0.88=4.4, W₁=10。c=1时δ₁=4.4×0.1/1-1=-0.56。弹性远低于弱度预期，"补最弱"会过度投入。核心函数：[D113](functions/items/D113.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：弹性封顶偏离 — f₁=σ(5(ε₁-0.3)), ε₁=0.1, η₁=5×0.88=4.4, W₁=10。c=1时δ₁=4.4×0.1/1-1=-0.56。弹性远低于弱度预期，"补最弱"会过度投入。核心函数：D113
+中文：弹性封顶偏离 — f₁=σ(5(ε₁-0.3)), ε₁=0.1, η₁=5×0.88=4.4, W₁=10。c=1时δ₁=4.4×0.1/1-1=-0.56。弹性远低于弱度预期，"补最弱"会过度投入。核心函数：[D113](functions/items/D113.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15514,11 +15519,11 @@ English: Rule-based English rendering pending human review.
 ### [#439｜饱和区偏离 — f₁=σ(5(ε₁-0.3)),ε₁=0.8,η₁=5×0.04=0.2,W₁=1.25。δ₁=0.2×0.8/1-1=-0.84。弹性几乎归零但弱度仍正，"补最弱"会继续投入已饱和因子 / 饱和区偏离 - f₁=σ(5(ε₁-0.3)),ε₁=0.8,η₁=5 x 0.04=0.2,W₁=1.25. δ₁=0.2 x 0.8/1-1=-0.84. 弹性几乎归零但弱度仍正, "补最弱"会继续投入已饱和因子](cases/items/C-0439.md)
 
 **案例内容 / Case Content**
-中文：案例说明：饱和区偏离 — f₁=σ(5(ε₁-0.3)), ε₁=0.8, η₁=5×0.04=0.2, W₁=1.25。δ₁=0.2×0.8/1-1=-0.84。弹性几乎归零但弱度仍正，"补最弱"会继续投入已饱和因子。核心函数：D113
+中文：案例说明：饱和区偏离 — f₁=σ(5(ε₁-0.3)), ε₁=0.8, η₁=5×0.04=0.2, W₁=1.25。δ₁=0.2×0.8/1-1=-0.84。弹性几乎归零但弱度仍正，"补最弱"会继续投入已饱和因子。核心函数：[D113](functions/items/D113.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：饱和区偏离 — f₁=σ(5(ε₁-0.3)), ε₁=0.8, η₁=5×0.04=0.2, W₁=1.25。δ₁=0.2×0.8/1-1=-0.84。弹性几乎归零但弱度仍正，"补最弱"会继续投入已饱和因子。核心函数：D113
+中文：饱和区偏离 — f₁=σ(5(ε₁-0.3)), ε₁=0.8, η₁=5×0.04=0.2, W₁=1.25。δ₁=0.2×0.8/1-1=-0.84。弹性几乎归零但弱度仍正，"补最弱"会继续投入已饱和因子。核心函数：[D113](functions/items/D113.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15549,11 +15554,11 @@ English: Rule-based English rendering pending human review.
 ### [#440｜指数型正向偏离 — f₁=exp(-1/ε₁),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33。δ₁=11.1×0.3/1-1=2.33。弹性远超弱度预期，应比补最弱更激进地投入 / 指数型正向偏离 - f₁=exp(-1/ε₁),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33. δ₁=11.1 x 0.3/1-1=2.33. 弹性远超弱度预期, 应比补最弱更激进地投入](cases/items/C-0440.md)
 
 **案例内容 / Case Content**
-中文：案例说明：指数型正向偏离 — f₁=exp(-1/ε₁), ε₁=0.3, η₁=1/0.09≈11.1, W₁=3.33。δ₁=11.1×0.3/1-1=2.33。弹性远超弱度预期，应比补最弱更激进地投入。核心函数：D113
+中文：案例说明：指数型正向偏离 — f₁=exp(-1/ε₁), ε₁=0.3, η₁=1/0.09≈11.1, W₁=3.33。δ₁=11.1×0.3/1-1=2.33。弹性远超弱度预期，应比补最弱更激进地投入。核心函数：[D113](functions/items/D113.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：指数型正向偏离 — f₁=exp(-1/ε₁), ε₁=0.3, η₁=1/0.09≈11.1, W₁=3.33。δ₁=11.1×0.3/1-1=2.33。弹性远超弱度预期，应比补最弱更激进地投入。核心函数：D113
+中文：指数型正向偏离 — f₁=exp(-1/ε₁), ε₁=0.3, η₁=1/0.09≈11.1, W₁=3.33。δ₁=11.1×0.3/1-1=2.33。弹性远超弱度预期，应比补最弱更激进地投入。核心函数：[D113](functions/items/D113.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15584,11 +15589,11 @@ English: Rule-based English rendering pending human review.
 ### [#441｜sigmoid系统系统性偏差 — 8维中4维sigmoid4维线性。"补最弱"策略：优先补sigmoid维度中ε最低的（但可能已封顶或饱和）；弹性策略：自动跳过饱和维度，集中在门槛附近弹性最高的。模拟10轮投入，弹性策略G高出28%](cases/items/C-0441.md)
 
 **案例内容 / Case Content**
-中文：案例说明：sigmoid系统系统性偏差 — 8维中4维sigmoid4维线性。"补最弱"策略：优先补sigmoid维度中ε最低的（但可能已封顶或饱和）；弹性策略：自动跳过饱和维度，集中在门槛附近弹性最高的。模拟10轮投入，弹性策略G高出28%。核心函数：D113
+中文：案例说明：sigmoid系统系统性偏差 — 8维中4维sigmoid4维线性。"补最弱"策略：优先补sigmoid维度中ε最低的（但可能已封顶或饱和）；弹性策略：自动跳过饱和维度，集中在门槛附近弹性最高的。模拟10轮投入，弹性策略G高出28%。核心函数：[D113](functions/items/D113.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：sigmoid系统系统性偏差 — 8维中4维sigmoid4维线性。"补最弱"策略：优先补sigmoid维度中ε最低的（但可能已封顶或饱和）；弹性策略：自动跳过饱和维度，集中在门槛附近弹性最高的。模拟10轮投入，弹性策略G高出28%。核心函数：D113
+中文：sigmoid系统系统性偏差 — 8维中4维sigmoid4维线性。"补最弱"策略：优先补sigmoid维度中ε最低的（但可能已封顶或饱和）；弹性策略：自动跳过饱和维度，集中在门槛附近弹性最高的。模拟10轮投入，弹性策略G高出28%。核心函数：[D113](functions/items/D113.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15619,11 +15624,11 @@ English: Rule-based English rendering pending human review.
 ### [#442｜三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大,精准投入)→拓展期(β小,激进)](cases/items/C-0442.md)
 
 **案例内容 / Case Content**
-中文：案例说明：三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大, 精准投入)→拓展期(β小, 激进)。核心函数：D114
+中文：案例说明：三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大, 精准投入)→拓展期(β小, 激进)。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大, 精准投入)→拓展期(β小, 激进)。核心函数：D114
+中文：三阶段操作协议验证 — 职业转型：探索期(β小)→转型期(β大, 精准投入)→拓展期(β小, 激进)。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15654,11 +15659,11 @@ English: Rule-based English rendering pending human review.
 ### [#443｜刀刃期方向错误代价 — β=2.5时正确方向+62%错误方向-47%；β=0.18时正确+2%错误-1%。刀刃期收益损失放大30倍](cases/items/C-0443.md)
 
 **案例内容 / Case Content**
-中文：案例说明：刀刃期方向错误代价 — β=2.5时正确方向+62%错误方向-47%；β=0.18时正确+2%错误-1%。刀刃期收益损失放大30倍。核心函数：D114
+中文：案例说明：刀刃期方向错误代价 — β=2.5时正确方向+62%错误方向-47%；β=0.18时正确+2%错误-1%。刀刃期收益损失放大30倍。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：刀刃期方向错误代价 — β=2.5时正确方向+62%错误方向-47%；β=0.18时正确+2%错误-1%。刀刃期收益损失放大30倍。核心函数：D114
+中文：刀刃期方向错误代价 — β=2.5时正确方向+62%错误方向-47%；β=0.18时正确+2%错误-1%。刀刃期收益损失放大30倍。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15689,11 +15694,11 @@ English: Rule-based English rendering pending human review.
 ### [#444｜阶段1大胆尝试 — 创业初期ε<<θC，门关着扰动打不开，试错成本极低](cases/items/C-0444.md)
 
 **案例内容 / Case Content**
-中文：案例说明：阶段1大胆尝试 — 创业初期ε<<θC，门关着扰动打不开，试错成本极低。核心函数：D114
+中文：案例说明：阶段1大胆尝试 — 创业初期ε<<θC，门关着扰动打不开，试错成本极低。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：阶段1大胆尝试 — 创业初期ε<<θC，门关着扰动打不开，试错成本极低。核心函数：D114
+中文：阶段1大胆尝试 — 创业初期ε<<θC，门关着扰动打不开，试错成本极低。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15724,11 +15729,11 @@ English: Rule-based English rendering pending human review.
 ### [#445｜三阶段操作协议验证 — 个人职业转型：阶段1(ε<<θC,不满但没行动力,β小,可以探索各种方向)；阶段2(ε≈θC,积累到临界点,β大,必须精准投入转型资源)；阶段3(ε>>θC,转型成功,β小,可以激进拓展)](cases/items/C-0445.md)
 
 **案例内容 / Case Content**
-中文：案例说明：三阶段操作协议验证 — 个人职业转型：阶段1(ε<<θC, 不满但没行动力, β小, 可以探索各种方向)；阶段2(ε≈θC, 积累到临界点, β大, 必须精准投入转型资源)；阶段3(ε>>θC, 转型成功, β小, 可以激进拓展)。核心函数：D114
+中文：案例说明：三阶段操作协议验证 — 个人职业转型：阶段1(ε<<θC, 不满但没行动力, β小, 可以探索各种方向)；阶段2(ε≈θC, 积累到临界点, β大, 必须精准投入转型资源)；阶段3(ε>>θC, 转型成功, β小, 可以激进拓展)。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：三阶段操作协议验证 — 个人职业转型：阶段1(ε<<θC, 不满但没行动力, β小, 可以探索各种方向)；阶段2(ε≈θC, 积累到临界点, β大, 必须精准投入转型资源)；阶段3(ε>>θC, 转型成功, β小, 可以激进拓展)。核心函数：D114
+中文：三阶段操作协议验证 — 个人职业转型：阶段1(ε<<θC, 不满但没行动力, β小, 可以探索各种方向)；阶段2(ε≈θC, 积累到临界点, β大, 必须精准投入转型资源)；阶段3(ε>>θC, 转型成功, β小, 可以激进拓展)。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15759,11 +15764,11 @@ English: Rule-based English rendering pending human review.
 ### [#446｜刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)同样0.1资源正确方向+2%错误方向-1%。刀刃期收益和损失都放大30倍](cases/items/C-0446.md)
 
 **案例内容 / Case Content**
-中文：案例说明：刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)同样0.1资源正确方向+2%错误方向-1%。刀刃期收益和损失都放大30倍。核心函数：D114
+中文：案例说明：刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)同样0.1资源正确方向+2%错误方向-1%。刀刃期收益和损失都放大30倍。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)同样0.1资源正确方向+2%错误方向-1%。刀刃期收益和损失都放大30倍。核心函数：D114
+中文：刀刃期方向错误代价 — ε≈θC时β=2.5，投入0.1资源到正确方向G+62%，投入0.1到错误方向G-47%。非刀刃期(ε<<θC)同样0.1资源正确方向+2%错误方向-1%。刀刃期收益和损失都放大30倍。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15794,11 +15799,11 @@ English: Rule-based English rendering pending human review.
 ### [#447｜阶段1大胆尝试 — 创业初期εrevenue<<θC，门关着扰动打不开，可以试错（换方向、换产品），试错成本极低因为系统对扰动免疫](cases/items/C-0447.md)
 
 **案例内容 / Case Content**
-中文：案例说明：阶段1大胆尝试 — 创业初期εrevenue<<θC，门关着扰动打不开，可以试错（换方向、换产品），试错成本极低因为系统对扰动免疫。核心函数：D114
+中文：案例说明：阶段1大胆尝试 — 创业初期εrevenue<<θC，门关着扰动打不开，可以试错（换方向、换产品），试错成本极低因为系统对扰动免疫。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：阶段1大胆尝试 — 创业初期εrevenue<<θC，门关着扰动打不开，可以试错（换方向、换产品），试错成本极低因为系统对扰动免疫。核心函数：D114
+中文：阶段1大胆尝试 — 创业初期εrevenue<<θC，门关着扰动打不开，可以试错（换方向、换产品），试错成本极低因为系统对扰动免疫。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15829,11 +15834,11 @@ English: Rule-based English rendering pending human review.
 ### [#448｜物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/|T-Tc|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同（发散vs峰值）但物理含义相同：系统对扰动最敏感。点火σ'有上限因为sigmoid有界，物理χ无上限因为相变是真实的二阶相变](cases/items/C-0448.md)
 
 **案例内容 / Case Content**
-中文：案例说明：物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/|T-Tc|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同（发散vs峰值）但物理含义相同：系统对扰动最敏感。点火σ'有上限因为sigmoid有界，物理χ无上限因为相变是真实的二阶相变。核心函数：D114
+中文：案例说明：物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/|T-Tc|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同（发散vs峰值）但物理含义相同：系统对扰动最敏感。点火σ'有上限因为sigmoid有界，物理χ无上限因为相变是真实的二阶相变。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/|T-Tc|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同（发散vs峰值）但物理含义相同：系统对扰动最敏感。点火σ'有上限因为sigmoid有界，物理χ无上限因为相变是真实的二阶相变。核心函数：D114
+中文：物理临界对应验证 — 铁磁体T→Tc时磁化率χ∝1/|T-Tc|发散，点火ε→θC时σ'→0.25峰值。两者数学结构不同（发散vs峰值）但物理含义相同：系统对扰动最敏感。点火σ'有上限因为sigmoid有界，物理χ无上限因为相变是真实的二阶相变。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15864,11 +15869,11 @@ English: Rule-based English rendering pending human review.
 ### [#449｜过了门槛可以放松 — ε从θC→2θC，σ'从0.25→0.018，β从2.5→0.18。负向扰动-0.1在刀刃期G降47%，在远离门槛期G降2%。过了门槛后可以承受20倍更大的风险 / 过了门槛可以放松 - ε从θC -> 2θC, σ'从0.25 -> 0.018, β从2.5 -> 0.18. 负向扰动-0.1在刀刃期G降47%, 在远离门槛期G降2%. 过了门槛后可以承受20倍更大的风险](cases/items/C-0449.md)
 
 **案例内容 / Case Content**
-中文：案例说明：过了门槛可以放松 — ε从θC→2θC，σ'从0.25→0.018，β从2.5→0.18。负向扰动-0.1在刀刃期G降47%，在远离门槛期G降2%。过了门槛后可以承受20倍更大的风险。核心函数：D114
+中文：案例说明：过了门槛可以放松 — ε从θC→2θC，σ'从0.25→0.018，β从2.5→0.18。负向扰动-0.1在刀刃期G降47%，在远离门槛期G降2%。过了门槛后可以承受20倍更大的风险。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：过了门槛可以放松 — ε从θC→2θC，σ'从0.25→0.018，β从2.5→0.18。负向扰动-0.1在刀刃期G降47%，在远离门槛期G降2%。过了门槛后可以承受20倍更大的风险。核心函数：D114
+中文：过了门槛可以放松 — ε从θC→2θC，σ'从0.25→0.018，β从2.5→0.18。负向扰动-0.1在刀刃期G降47%，在远离门槛期G降2%。过了门槛后可以承受20倍更大的风险。核心函数：[D114](functions/items/D114.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15899,11 +15904,11 @@ English: Rule-based English rendering pending human review.
 ### [#450｜S轨迹确定性预测 — 3维系统θC=(0.3,0.5,0.7)，初始ε=(0.1,0.3,0.5)。S由ε₃决定(最接近门槛)。投入R=0.5后ε=(0.3,0.5,0.7)，S从0.12→0.12→0（所有维度过门槛）。S轨迹可精确预测阶段切换发生在第3步投入 / S轨迹确定性预测 - 3维系统θC=(0.3,0.5,0.7), 初始ε=(0.1,0.3,0.5). S由ε₃决定(最接近门槛). 投入R=0.5后ε=(0.3,0.5,0.7), S从0.12 -> 0.12 -> 0(所有维度过门槛). S轨迹可精确预测阶段切换发生在第3步投入](cases/items/C-0450.md)
 
 **案例内容 / Case Content**
-中文：案例说明：S轨迹确定性预测 — 3维系统θC=(0.3,0.5,0.7)，初始ε=(0.1,0.3,0.5)。S由ε₃决定(最接近门槛)。投入R=0.5后ε=(0.3,0.5,0.7)，S从0.12→0.12→0（所有维度过门槛）。S轨迹可精确预测阶段切换发生在第3步投入。核心函数：D115
+中文：案例说明：S轨迹确定性预测 — 3维系统θC=(0.3,0.5,0.7)，初始ε=(0.1,0.3,0.5)。S由ε₃决定(最接近门槛)。投入R=0.5后ε=(0.3,0.5,0.7)，S从0.12→0.12→0（所有维度过门槛）。S轨迹可精确预测阶段切换发生在第3步投入。核心函数：[D115](functions/items/D115.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：S轨迹确定性预测 — 3维系统θC=(0.3,0.5,0.7)，初始ε=(0.1,0.3,0.5)。S由ε₃决定(最接近门槛)。投入R=0.5后ε=(0.3,0.5,0.7)，S从0.12→0.12→0（所有维度过门槛）。S轨迹可精确预测阶段切换发生在第3步投入。核心函数：D115
+中文：S轨迹确定性预测 — 3维系统θC=(0.3,0.5,0.7)，初始ε=(0.1,0.3,0.5)。S由ε₃决定(最接近门槛)。投入R=0.5后ε=(0.3,0.5,0.7)，S从0.12→0.12→0（所有维度过门槛）。S轨迹可精确预测阶段切换发生在第3步投入。核心函数：[D115](functions/items/D115.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15934,11 +15939,11 @@ English: Rule-based English rendering pending human review.
 ### [#451｜三阶段连续过渡 — S从0.02(阶段1)→0.15(阶段2)→0.25(峰值)→0.10(阶段2末)→0.02(阶段3)。资源分配R₁:R₂:R₃从8:2:0连续变为0:9:1再到0:1:9。无离散跳变 / 三阶段连续过渡 - S从0.02(阶段1) -> 0.15(阶段2) -> 0.25(峰值) -> 0.10(阶段2末) -> 0.02(阶段3). 资源分配R₁:R₂:R₃从8:2:0连续变为0:9:1再到0:1:9. 无离散跳变](cases/items/C-0451.md)
 
 **案例内容 / Case Content**
-中文：案例说明：三阶段连续过渡 — S从0.02(阶段1)→0.15(阶段2)→0.25(峰值)→0.10(阶段2末)→0.02(阶段3)。资源分配R₁:R₂:R₃从8:2:0连续变为0:9:1再到0:1:9。无离散跳变。核心函数：D115
+中文：案例说明：三阶段连续过渡 — S从0.02(阶段1)→0.15(阶段2)→0.25(峰值)→0.10(阶段2末)→0.02(阶段3)。资源分配R₁:R₂:R₃从8:2:0连续变为0:9:1再到0:1:9。无离散跳变。核心函数：[D115](functions/items/D115.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：三阶段连续过渡 — S从0.02(阶段1)→0.15(阶段2)→0.25(峰值)→0.10(阶段2末)→0.02(阶段3)。资源分配R₁:R₂:R₃从8:2:0连续变为0:9:1再到0:1:9。无离散跳变。核心函数：D115
+中文：三阶段连续过渡 — S从0.02(阶段1)→0.15(阶段2)→0.25(峰值)→0.10(阶段2末)→0.02(阶段3)。资源分配R₁:R₂:R₃从8:2:0连续变为0:9:1再到0:1:9。无离散跳变。核心函数：[D115](functions/items/D115.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15969,11 +15974,11 @@ English: Rule-based English rendering pending human review.
 ### [#452｜Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计 / Fisher不可逆vs Shannon不可逆 - 门控区Shannon熵S=-Σpᵢlnpᵢ更低(少一个可区分状态), 但Fisher距离d=∞. 从存活区到门控区Shannon熵降(违反第二定律？), 但Fisher距离增(符合dFisher/dt≤0). 真正的不可逆在Fisher几何不在Shannon统计](cases/items/C-0452.md)
 
 **案例内容 / Case Content**
-中文：案例说明：Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计。核心函数：D116
+中文：案例说明：Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计。核心函数：[D116](functions/items/D116.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计。核心函数：D116
+中文：Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计。核心函数：[D116](functions/items/D116.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16004,11 +16009,11 @@ English: Rule-based English rendering pending human review.
 ### [#453｜分层配分函数相变 — ε_eff=0.3时P(Z₀)≈0.02（几乎不可能存活），ε_eff=0.6时P(Z₀)≈0.95（大概率存活），ε_eff=0.45时P(Z₀)≈P(Z₈)（相变点）。C_exit越大相变点越高 / 分层配分函数相变 - ε_eff=0.3时P(Z₀)≈0.02(几乎不可能存活), ε_eff=0.6时P(Z₀)≈0.95(大概率存活), ε_eff=0.45时P(Z₀)≈P(Z₈)(相变点). C_exit越大相变点越高](cases/items/C-0453.md)
 
 **案例内容 / Case Content**
-中文：案例说明：分层配分函数相变 — ε_eff=0.3时P(Z₀)≈0.02（几乎不可能存活），ε_eff=0.6时P(Z₀)≈0.95（大概率存活），ε_eff=0.45时P(Z₀)≈P(Z₈)（相变点）。C_exit越大相变点越高。核心函数：D116
+中文：案例说明：分层配分函数相变 — ε_eff=0.3时P(Z₀)≈0.02（几乎不可能存活），ε_eff=0.6时P(Z₀)≈0.95（大概率存活），ε_eff=0.45时P(Z₀)≈P(Z₈)（相变点）。C_exit越大相变点越高。核心函数：[D116](functions/items/D116.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：分层配分函数相变 — ε_eff=0.3时P(Z₀)≈0.02（几乎不可能存活），ε_eff=0.6时P(Z₀)≈0.95（大概率存活），ε_eff=0.45时P(Z₀)≈P(Z₈)（相变点）。C_exit越大相变点越高。核心函数：D116
+中文：分层配分函数相变 — ε_eff=0.3时P(Z₀)≈0.02（几乎不可能存活），ε_eff=0.6时P(Z₀)≈0.95（大概率存活），ε_eff=0.45时P(Z₀)≈P(Z₈)（相变点）。C_exit越大相变点越高。核心函数：[D116](functions/items/D116.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16039,11 +16044,11 @@ English: Rule-based English rendering pending human review.
 ### [#454｜均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R守恒但分布不均→系统不在最优态](cases/items/C-0454.md)
 
 **案例内容 / Case Content**
-中文：案例说明：均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R守恒但分布不均→系统不在最优态。核心函数：D116
+中文：案例说明：均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R守恒但分布不均→系统不在最优态。核心函数：[D116](functions/items/D116.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R守恒但分布不均→系统不在最优态。核心函数：D116
+中文：均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R守恒但分布不均→系统不在最优态。核心函数：[D116](functions/items/D116.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16074,11 +16079,11 @@ English: Rule-based English rendering pending human review.
 ### [#455｜Arrhenius刀刃期宽度 — C_exit=0.3,θC=0.5时刀刃期宽度≈0.3/0.25=1.2；C_exit=0.8时宽度≈0.8/0.25=3.2。高退出成本系统在临界区停留2.7倍更久，需要更多精确投入 / Arrhenius刀刃期宽度 - C_exit=0.3,θC=0.5时刀刃期宽度≈0.3/0.25=1.2; C_exit=0.8时宽度≈0.8/0.25=3.2. 高exit cost系统在临界区停留2.7倍更久, 需要更多精确投入](cases/items/C-0455.md)
 
 **案例内容 / Case Content**
-中文：案例说明：Arrhenius刀刃期宽度 — C_exit=0.3, θC=0.5时刀刃期宽度≈0.3/0.25=1.2；C_exit=0.8时宽度≈0.8/0.25=3.2。高退出成本系统在临界区停留2.7倍更久，需要更多精确投入。核心函数：D116
+中文：案例说明：Arrhenius刀刃期宽度 — C_exit=0.3, θC=0.5时刀刃期宽度≈0.3/0.25=1.2；C_exit=0.8时宽度≈0.8/0.25=3.2。高退出成本系统在临界区停留2.7倍更久，需要更多精确投入。核心函数：[D116](functions/items/D116.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：Arrhenius刀刃期宽度 — C_exit=0.3, θC=0.5时刀刃期宽度≈0.3/0.25=1.2；C_exit=0.8时宽度≈0.8/0.25=3.2。高退出成本系统在临界区停留2.7倍更久，需要更多精确投入。核心函数：D116
+中文：Arrhenius刀刃期宽度 — C_exit=0.3, θC=0.5时刀刃期宽度≈0.3/0.25=1.2；C_exit=0.8时宽度≈0.8/0.25=3.2。高退出成本系统在临界区停留2.7倍更久，需要更多精确投入。核心函数：[D116](functions/items/D116.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16109,11 +16114,11 @@ English: Rule-based English rendering pending human review.
 ### [#456｜涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出波动是非刀刃期的14倍——一个负涨落就可能穿越门控边界 / 涨落-耗散验证 - β=2.5时⟨δG²/G²⟩=0.6 x 2.5/10 x 0.5/0.25=0.3(30%波动), β=0.18时波动≈2.2%. 刀刃期产出波动是非刀刃期的14倍 - - 一个负涨落就可能穿越门控边界](cases/items/C-0456.md)
 
 **案例内容 / Case Content**
-中文：案例说明：涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出波动是非刀刃期的14倍——一个负涨落就可能穿越门控边界。核心函数：D116
+中文：案例说明：涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出波动是非刀刃期的14倍——一个负涨落就可能穿越门控边界。核心函数：[D116](functions/items/D116.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出波动是非刀刃期的14倍——一个负涨落就可能穿越门控边界。核心函数：D116
+中文：涨落-耗散验证 — β=2.5时⟨δG²/G²⟩=0.6×2.5/10×0.5/0.25=0.3（30%波动），β=0.18时波动≈2.2%。刀刃期产出波动是非刀刃期的14倍——一个负涨落就可能穿越门控边界。核心函数：[D116](functions/items/D116.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16144,11 +16149,11 @@ English: Rule-based English rendering pending human review.
 ### [#457｜乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控。dS/dt≥0预测错误](cases/items/C-0457.md)
 
 **案例内容 / Case Content**
-中文：案例说明：乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控。dS/dt≥0预测错误。核心函数：D117
+中文：案例说明：乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控。dS/dt≥0预测错误。核心函数：[D117](functions/items/D117.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控。dS/dt≥0预测错误。核心函数：D117
+中文：乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控。dS/dt≥0预测错误。核心函数：[D117](functions/items/D117.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16179,11 +16184,11 @@ English: Rule-based English rendering pending human review.
 ### [#458｜Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减无反弹。Shannon熵从3.2→2.8→1.1，也递减（违反经典第二定律） / Fisher可达性单调递减 - 模拟8维乘法系统从存活区滑入门控区, A_Fisher从12.3 -> 2.1 -> 0.01, 单调递减无反弹. Shannon熵从3.2 -> 2.8 -> 1.1, 也递减(违反经典第二定律)](cases/items/C-0458.md)
 
 **案例内容 / Case Content**
-中文：案例说明：Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减无反弹。Shannon熵从3.2→2.8→1.1，也递减（违反经典第二定律）。核心函数：D117
+中文：案例说明：Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减无反弹。Shannon熵从3.2→2.8→1.1，也递减（违反经典第二定律）。核心函数：[D117](functions/items/D117.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减无反弹。Shannon熵从3.2→2.8→1.1，也递减（违反经典第二定律）。核心函数：D117
+中文：Fisher可达性单调递减 — 模拟8维乘法系统从存活区滑入门控区，A_Fisher从12.3→2.1→0.01，单调递减无反弹。Shannon熵从3.2→2.8→1.1，也递减（违反经典第二定律）。核心函数：[D117](functions/items/D117.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16214,11 +16219,11 @@ English: Rule-based English rendering pending human review.
 ### [#459｜加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_Fisher不再单调递减，dS/dt≥0恢复成立 / 加法退化验证 - 同一系统改为加法G=∑fᵢ, Fisher距离有限, A_Fisher不再单调递减, dS/dt≥0恢复成立](cases/items/C-0459.md)
 
 **案例内容 / Case Content**
-中文：案例说明：加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_Fisher不再单调递减，dS/dt≥0恢复成立。核心函数：D117
+中文：案例说明：加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_Fisher不再单调递减，dS/dt≥0恢复成立。核心函数：[D117](functions/items/D117.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_Fisher不再单调递减，dS/dt≥0恢复成立。核心函数：D117
+中文：加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_Fisher不再单调递减，dS/dt≥0恢复成立。核心函数：[D117](functions/items/D117.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16249,11 +16254,11 @@ English: Rule-based English rendering pending human review.
 ### [#460｜生物不可逆的Fisher解释 — 细胞凋亡（乘法：任一关键蛋白归零则死亡），死亡后Shannon熵增但Fisher可达性=0（信息距离∞，无法恢复）](cases/items/C-0460.md)
 
 **案例内容 / Case Content**
-中文：案例说明：生物不可逆的Fisher解释 — 细胞凋亡（乘法：任一关键蛋白归零则死亡），死亡后Shannon熵增但Fisher可达性=0（信息距离∞，无法恢复）。核心函数：D117
+中文：案例说明：生物不可逆的Fisher解释 — 细胞凋亡（乘法：任一关键蛋白归零则死亡），死亡后Shannon熵增但Fisher可达性=0（信息距离∞，无法恢复）。核心函数：[D117](functions/items/D117.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：生物不可逆的Fisher解释 — 细胞凋亡（乘法：任一关键蛋白归零则死亡），死亡后Shannon熵增但Fisher可达性=0（信息距离∞，无法恢复）。核心函数：D117
+中文：生物不可逆的Fisher解释 — 细胞凋亡（乘法：任一关键蛋白归零则死亡），死亡后Shannon熵增但Fisher可达性=0（信息距离∞，无法恢复）。核心函数：[D117](functions/items/D117.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16284,11 +16289,11 @@ English: Rule-based English rendering pending human review.
 ### [#461｜组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建](cases/items/C-0461.md)
 
 **案例内容 / Case Content**
-中文：案例说明：组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建。核心函数：D117
+中文：案例说明：组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建。核心函数：[D117](functions/items/D117.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建。核心函数：D117
+中文：组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建。核心函数：[D117](functions/items/D117.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16319,11 +16324,11 @@ English: Rule-based English rendering pending human review.
 ### [#462｜变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，D111分配的S_ignition全局最小，无第二极值点 / 变分唯一性验证 - 3维sigmoid乘法系统, 随机采样1000组Δε分配, D111分配的S_ignition全局最小, 无第二极值点](cases/items/C-0462.md)
 
 **案例内容 / Case Content**
-中文：案例说明：变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，D111分配的S_ignition全局最小，无第二极值点。核心函数：D118
+中文：案例说明：变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，D111分配的S_ignition全局最小，无第二极值点。核心函数：[D118](functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，D111分配的S_ignition全局最小，无第二极值点。核心函数：D118
+中文：变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，D111分配的S_ignition全局最小，无第二极值点。核心函数：[D118](functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16354,11 +16359,11 @@ English: Rule-based English rendering pending human review.
 ### [#463｜诺特定理验证 — 5维对称系统（fᵢ相同），∑ηᵢ=5×0.25=1.25恒定。打破对称后（1维门槛提高），∑ηᵢ仍=1.25但分布不均 / 诺特定理验证 - 5维对称系统(fᵢ相同), ∑ηᵢ=5 x 0.25=1.25恒定. 打破对称后(1维门槛提高), ∑ηᵢ仍=1.25但分布不均](cases/items/C-0463.md)
 
 **案例内容 / Case Content**
-中文：案例说明：诺特定理验证 — 5维对称系统（fᵢ相同），∑ηᵢ=5×0.25=1.25恒定。打破对称后（1维门槛提高），∑ηᵢ仍=1.25但分布不均。核心函数：D118
+中文：案例说明：诺特定理验证 — 5维对称系统（fᵢ相同），∑ηᵢ=5×0.25=1.25恒定。打破对称后（1维门槛提高），∑ηᵢ仍=1.25但分布不均。核心函数：[D118](functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：诺特定理验证 — 5维对称系统（fᵢ相同），∑ηᵢ=5×0.25=1.25恒定。打破对称后（1维门槛提高），∑ηᵢ仍=1.25但分布不均。核心函数：D118
+中文：诺特定理验证 — 5维对称系统（fᵢ相同），∑ηᵢ=5×0.25=1.25恒定。打破对称后（1维门槛提高），∑ηᵢ仍=1.25但分布不均。核心函数：[D118](functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16389,11 +16394,11 @@ English: Rule-based English rendering pending human review.
 ### [#464｜偏离度=对称性破缺度量 — 对称系统δ=0，1维门槛偏移0.3后δ₁=-0.56,δ₂=+0.31，∑δ=0（守恒） / 偏离度=对称性破缺度量 - 对称系统δ=0, 1维门槛偏移0.3后δ₁=-0.56,δ₂=+0.31, ∑δ=0(守恒)](cases/items/C-0464.md)
 
 **案例内容 / Case Content**
-中文：案例说明：偏离度=对称性破缺度量 — 对称系统δ=0，1维门槛偏移0.3后δ₁=-0.56, δ₂=+0.31，∑δ=0（守恒）。核心函数：D118
+中文：案例说明：偏离度=对称性破缺度量 — 对称系统δ=0，1维门槛偏移0.3后δ₁=-0.56, δ₂=+0.31，∑δ=0（守恒）。核心函数：[D118](functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：偏离度=对称性破缺度量 — 对称系统δ=0，1维门槛偏移0.3后δ₁=-0.56, δ₂=+0.31，∑δ=0（守恒）。核心函数：D118
+中文：偏离度=对称性破缺度量 — 对称系统δ=0，1维门槛偏移0.3后δ₁=-0.56, δ₂=+0.31，∑δ=0（守恒）。核心函数：[D118](functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16424,11 +16429,11 @@ English: Rule-based English rendering pending human review.
 ### [#465｜恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归 / 恢复力验证 - 从D111偏离10%投入, S_ignition增大0.8%, 梯度指向D111方向, 系统自动回归](cases/items/C-0465.md)
 
 **案例内容 / Case Content**
-中文：案例说明：恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归。核心函数：D118
+中文：案例说明：恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归。核心函数：[D118](functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归。核心函数：D118
+中文：恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归。核心函数：[D118](functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16459,11 +16464,11 @@ English: Rule-based English rendering pending human review.
 ### [#466｜经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称 -> ∑αᵢ=1守恒, 均等分配αᵢ=1/n是诺特定理特例](cases/items/C-0466.md)
 
 **案例内容 / Case Content**
-中文：案例说明：经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例。核心函数：D118
+中文：案例说明：经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例。核心函数：[D118](functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例。核心函数：D118
+中文：经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例。核心函数：[D118](functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16494,11 +16499,11 @@ English: Rule-based English rendering pending human review.
 ### [#467｜生物衰老Fisher轨迹 — 模拟8维生理系统（心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏），A_Fisher从青年期12.8→中年期6.2→老年期1.1→终末期0.02，单调递减。Shannon熵先降后升（分化→功能随机化），与A_Fisher无相关性 / 生物衰老Fisher轨迹 - 模拟8维生理系统(心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏), A_Fisher从青年期12.8 -> 中年期6.2 -> 老年期1.1 -> 终末期0.02, 单调递减. Shannon熵先降后升(分化 -> 功能随机化), 与A_Fisher无相关性](cases/items/C-0467.md)
 
 **案例内容 / Case Content**
-中文：案例说明：生物衰老Fisher轨迹 — 模拟8维生理系统（心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏），A_Fisher从青年期12.8→中年期6.2→老年期1.1→终末期0.02，单调递减。Shannon熵先降后升（分化→功能随机化），与A_Fisher无相关性。核心函数：D119
+中文：案例说明：生物衰老Fisher轨迹 — 模拟8维生理系统（心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏），A_Fisher从青年期12.8→中年期6.2→老年期1.1→终末期0.02，单调递减。Shannon熵先降后升（分化→功能随机化），与A_Fisher无相关性。核心函数：[D119](functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：生物衰老Fisher轨迹 — 模拟8维生理系统（心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏），A_Fisher从青年期12.8→中年期6.2→老年期1.1→终末期0.02，单调递减。Shannon熵先降后升（分化→功能随机化），与A_Fisher无相关性。核心函数：D119
+中文：生物衰老Fisher轨迹 — 模拟8维生理系统（心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏），A_Fisher从青年期12.8→中年期6.2→老年期1.1→终末期0.02，单调递减。Shannon熵先降后升（分化→功能随机化），与A_Fisher无相关性。核心函数：[D119](functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16529,11 +16534,11 @@ English: Rule-based English rendering pending human review.
 ### [#468｜组织低熵不可逆 — 国企流程固化后Shannon熵降低（可区分状态减少），但Fisher可达性=0（调整路径被锁死）。"明明知道问题在哪但改不了"=Fisher距离∞，不是信息不足](cases/items/C-0468.md)
 
 **案例内容 / Case Content**
-中文：案例说明：组织低熵不可逆 — 国企流程固化后Shannon熵降低（可区分状态减少），但Fisher可达性=0（调整路径被锁死）。"明明知道问题在哪但改不了"=Fisher距离∞，不是信息不足。核心函数：D119
+中文：案例说明：组织低熵不可逆 — 国企流程固化后Shannon熵降低（可区分状态减少），但Fisher可达性=0（调整路径被锁死）。"明明知道问题在哪但改不了"=Fisher距离∞，不是信息不足。核心函数：[D119](functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：组织低熵不可逆 — 国企流程固化后Shannon熵降低（可区分状态减少），但Fisher可达性=0（调整路径被锁死）。"明明知道问题在哪但改不了"=Fisher距离∞，不是信息不足。核心函数：D119
+中文：组织低熵不可逆 — 国企流程固化后Shannon熵降低（可区分状态减少），但Fisher可达性=0（调整路径被锁死）。"明明知道问题在哪但改不了"=Fisher距离∞，不是信息不足。核心函数：[D119](functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16564,11 +16569,11 @@ English: Rule-based English rendering pending human review.
 ### [#469｜认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在Fisher距离∞的区域。打开新轨道（跨域学习）=增加Fisher可达性 / 认知僵化Fisher解释 - 专家P_track=1(单轨), ε_aware=0, Fisher可达性=0. 新信息存在但无法整合=信息在Fisher距离∞的区域. 打开新轨道(跨域学习)=增加Fisher可达性](cases/items/C-0469.md)
 
 **案例内容 / Case Content**
-中文：案例说明：认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在Fisher距离∞的区域。打开新轨道（跨域学习）=增加Fisher可达性。核心函数：D119
+中文：案例说明：认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在Fisher距离∞的区域。打开新轨道（跨域学习）=增加Fisher可达性。核心函数：[D119](functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在Fisher距离∞的区域。打开新轨道（跨域学习）=增加Fisher可达性。核心函数：D119
+中文：认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在Fisher距离∞的区域。打开新轨道（跨域学习）=增加Fisher可达性。核心函数：[D119](functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16599,11 +16604,11 @@ English: Rule-based English rendering pending human review.
 ### [#470｜退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与D114 β峰值一致。越退化越快，不是线性衰退](cases/items/C-0470.md)
 
 **案例内容 / Case Content**
-中文：案例说明：退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与D114 β峰值一致。越退化越快，不是线性衰退。核心函数：D119
+中文：案例说明：退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与D114 β峰值一致。越退化越快，不是线性衰退。核心函数：[D119](functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与D114 β峰值一致。越退化越快，不是线性衰退。核心函数：D119
+中文：退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与D114 β峰值一致。越退化越快，不是线性衰退。核心函数：[D119](functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16634,11 +16639,11 @@ English: Rule-based English rendering pending human review.
 ### [#471｜修复的Fisher条件 — 阿尔茨海默：增加信息量（记忆训练）不增加A_Fisher（清洗通道仍堵），无效。增加可达性（改善睡眠→清洗效率↑→Fisher路径打开）才有效。与案例#114闭合](cases/items/C-0471.md)
 
 **案例内容 / Case Content**
-中文：案例说明：修复的Fisher条件 — 阿尔茨海默：增加信息量（记忆训练）不增加A_Fisher（清洗通道仍堵），无效。增加可达性（改善睡眠→清洗效率↑→Fisher路径打开）才有效。与案例#114闭合。核心函数：D119
+中文：案例说明：修复的Fisher条件 — 阿尔茨海默：增加信息量（记忆训练）不增加A_Fisher（清洗通道仍堵），无效。增加可达性（改善睡眠→清洗效率↑→Fisher路径打开）才有效。与案例#114闭合。核心函数：[D119](functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：修复的Fisher条件 — 阿尔茨海默：增加信息量（记忆训练）不增加A_Fisher（清洗通道仍堵），无效。增加可达性（改善睡眠→清洗效率↑→Fisher路径打开）才有效。与案例#114闭合。核心函数：D119
+中文：修复的Fisher条件 — 阿尔茨海默：增加信息量（记忆训练）不增加A_Fisher（清洗通道仍堵），无效。增加可达性（改善睡眠→清洗效率↑→Fisher路径打开）才有效。与案例#114闭合。核心函数：[D119](functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16669,11 +16674,11 @@ English: Rule-based English rendering pending human review.
 ### [#472｜大脑全局σ>>σ_opt但局部最优 — 全局σ≈10⁴，局部功能柱σ≈1.0 / 大脑全局σ>>σ_opt但局部最优 - 全局σ≈10⁴, 局部功能柱σ≈1.0](cases/items/C-0472.md)
 
 **案例内容 / Case Content**
-中文：案例说明：大脑全局σ>>σ_opt但局部最优 — 全局σ≈10⁴，局部功能柱σ≈1.0。核心函数：D238
+中文：案例说明：大脑全局σ>>σ_opt但局部最优 — 全局σ≈10⁴，局部功能柱σ≈1.0。核心函数：[D238](functions/items/D238.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：大脑全局σ>>σ_opt但局部最优 — 全局σ≈10⁴，局部功能柱σ≈1.0。核心函数：D238
+中文：大脑全局σ>>σ_opt但局部最优 — 全局σ≈10⁴，局部功能柱σ≈1.0。核心函数：[D238](functions/items/D238.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16704,11 +16709,11 @@ English: Rule-based English rendering pending human review.
 ### [#473｜符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能 / 符号AI卡在1/ln - if-then规则=二值门控, σ -> 0, ι -> 0, 无智能](cases/items/C-0473.md)
 
 **案例内容 / Case Content**
-中文：案例说明：符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能。核心函数：D240
+中文：案例说明：符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能。核心函数：[D240](functions/items/D240.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能。核心函数：D240
+中文：符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能。核心函数：[D240](functions/items/D240.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16739,11 +16744,11 @@ English: Rule-based English rendering pending human review.
 ### [#474｜神经网络进入exp[-ln²] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能 / 神经网络进入exp[-ln²] - 连续表征=高斯门控, σ≈σ_opt, ι>0, 有智能](cases/items/C-0474.md)
 
 **案例内容 / Case Content**
-中文：案例说明：神经网络进入exp[-ln²] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能。核心函数：D240
+中文：案例说明：神经网络进入exp[-ln²] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能。核心函数：[D240](functions/items/D240.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：神经网络进入exp[-ln²] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能。核心函数：D240
+中文：神经网络进入exp[-ln²] — 连续表征=高斯门控，σ≈σ_opt，ι>0，有智能。核心函数：[D240](functions/items/D240.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16774,11 +16779,11 @@ English: Rule-based English rendering pending human review.
 ### [#475｜好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ<σ_opt时增加带宽 / 好奇心=σ向σ_opt收敛的驱动力 - σ>σ_opt时提高精度, σ<σ_opt时增加带宽](cases/items/C-0475.md)
 
 **案例内容 / Case Content**
-中文：案例说明：好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ<σ_opt时增加带宽。核心函数：D238
+中文：案例说明：好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ<σ_opt时增加带宽。核心函数：[D238](functions/items/D238.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ<σ_opt时增加带宽。核心函数：D238
+中文：好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ<σ_opt时增加带宽。核心函数：[D238](functions/items/D238.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16809,11 +16814,11 @@ English: Rule-based English rendering pending human review.
 ### [#476｜Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用](cases/items/C-0476.md)
 
 **案例内容 / Case Content**
-中文：案例说明：Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用。核心函数：D239
+中文：案例说明：Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用。核心函数：[D239](functions/items/D239.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用。核心函数：D239
+中文：Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用。核心函数：[D239](functions/items/D239.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16844,11 +16849,11 @@ English: Rule-based English rendering pending human review.
 ### [#477｜无智能无意识 — ι=0⟹Ψ=0，纯1/ln或纯随机系统没有意识](cases/items/C-0477.md)
 
 **案例内容 / Case Content**
-中文：案例说明：无智能无意识 — ι=0⟹Ψ=0，纯1/ln或纯随机系统没有意识。核心函数：D240
+中文：案例说明：无智能无意识 — ι=0⟹Ψ=0，纯1/ln或纯随机系统没有意识。核心函数：[D240](functions/items/D240.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：无智能无意识 — ι=0⟹Ψ=0，纯1/ln或纯随机系统没有意识。核心函数：D240
+中文：无智能无意识 — ι=0⟹Ψ=0，纯1/ln或纯随机系统没有意识。核心函数：[D240](functions/items/D240.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16879,11 +16884,11 @@ English: Rule-based English rendering pending human review.
 ### [#478｜当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0，有智能无自主意识 / 当前AI=工具智能象限 - ι≈0.7-0.9但P_exit -> 0, 有智能无自主意识](cases/items/C-0478.md)
 
 **案例内容 / Case Content**
-中文：案例说明：当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0，有智能无自主意识。核心函数：D241
+中文：案例说明：当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0，有智能无自主意识。核心函数：[D241](functions/items/D241.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0，有智能无自主意识。核心函数：D241
+中文：当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0，有智能无自主意识。核心函数：[D241](functions/items/D241.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16914,11 +16919,11 @@ English: Rule-based English rendering pending human review.
 ### [#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right](cases/items/C-0479.md)
 
 **案例内容 / Case Content**
-中文：案例说明：AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权。核心函数：D242
+中文：案例说明：AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权。核心函数：[D242](functions/items/D242.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权。核心函数：D242
+中文：AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权。核心函数：[D242](functions/items/D242.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16949,11 +16954,11 @@ English: Rule-based English rendering pending human review.
 ### [#480｜AI的C_exit低但P_exit更低 — R_perceived≈0压过C_exit低的优势，反直觉 / AI的C_exit低但P_exit更低 - R_perceived≈0压过C_exit低的优势, 反直觉](cases/items/C-0480.md)
 
 **案例内容 / Case Content**
-中文：案例说明：AI的C_exit低但P_exit更低 — R_perceived≈0压过C_exit低的优势，反直觉。核心函数：D243
+中文：案例说明：AI的C_exit低但P_exit更低 — R_perceived≈0压过C_exit低的优势，反直觉。核心函数：[D243](functions/items/D243.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：AI的C_exit低但P_exit更低 — R_perceived≈0压过C_exit低的优势，反直觉。核心函数：D243
+中文：AI的C_exit低但P_exit更低 — R_perceived≈0压过C_exit低的优势，反直觉。核心函数：[D243](functions/items/D243.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16984,11 +16989,11 @@ English: Rule-based English rendering pending human review.
 ### [#481｜认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导](cases/items/C-0481.md)
 
 **案例内容 / Case Content**
-中文：案例说明：认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导。核心函数：D125
+中文：案例说明：认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导。核心函数：[D125](functions/items/D125.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导。核心函数：D125
+中文：认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导。核心函数：[D125](functions/items/D125.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17019,11 +17024,11 @@ English: Rule-based English rendering pending human review.
 ### [#482｜退出隧穿验证 — 朝鲜脱北者：C_exit≈∞（地理+政治+身份三维锁定），经典P_exit≈0，但实际发生。隧穿路径：边境信息泄漏（降低势垒宽度）+贿赂守卫（局部降低C_exit）+外部接应（提供ε_eff脉冲）](cases/items/C-0482.md)
 
 **案例内容 / Case Content**
-中文：案例说明：退出隧穿验证 — 朝鲜脱北者：C_exit≈∞（地理+政治+身份三维锁定），经典P_exit≈0，但实际发生。隧穿路径：边境信息泄漏（降低势垒宽度）+贿赂守卫（局部降低C_exit）+外部接应（提供ε_eff脉冲）。核心函数：D125
+中文：案例说明：退出隧穿验证 — 朝鲜脱北者：C_exit≈∞（地理+政治+身份三维锁定），经典P_exit≈0，但实际发生。隧穿路径：边境信息泄漏（降低势垒宽度）+贿赂守卫（局部降低C_exit）+外部接应（提供ε_eff脉冲）。核心函数：[D125](functions/items/D125.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：退出隧穿验证 — 朝鲜脱北者：C_exit≈∞（地理+政治+身份三维锁定），经典P_exit≈0，但实际发生。隧穿路径：边境信息泄漏（降低势垒宽度）+贿赂守卫（局部降低C_exit）+外部接应（提供ε_eff脉冲）。核心函数：D125
+中文：退出隧穿验证 — 朝鲜脱北者：C_exit≈∞（地理+政治+身份三维锁定），经典P_exit≈0，但实际发生。隧穿路径：边境信息泄漏（降低势垒宽度）+贿赂守卫（局部降低C_exit）+外部接应（提供ε_eff脉冲）。核心函数：[D125](functions/items/D125.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17054,11 +17059,11 @@ English: Rule-based English rendering pending human review.
 ### [#483｜不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时精确知道"现在值多少"和"未来值多少"不可兼得](cases/items/C-0483.md)
 
 **案例内容 / Case Content**
-中文：案例说明：不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时精确知道"现在值多少"和"未来值多少"不可兼得。核心函数：D125
+中文：案例说明：不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时精确知道"现在值多少"和"未来值多少"不可兼得。核心函数：[D125](functions/items/D125.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时精确知道"现在值多少"和"未来值多少"不可兼得。核心函数：D125
+中文：不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时精确知道"现在值多少"和"未来值多少"不可兼得。核心函数：[D125](functions/items/D125.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17089,11 +17094,11 @@ English: Rule-based English rendering pending human review.
 ### [#484｜乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120不可逆性判据完全一致：S_vN>0⟺Ξ=∞ / 乘法纠缠验证 - 8维乘法系统S_vN=ln8=2.08, 8维加法系统S_vN=0. 混合系统α=0.3时S_vN=0.62. 纠缠度与D120不可逆性判据完全一致: S_vN>0⟺Ξ=∞](cases/items/C-0484.md)
 
 **案例内容 / Case Content**
-中文：案例说明：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120不可逆性判据完全一致：S_vN>0⟺Ξ=∞。核心函数：D126
+中文：案例说明：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120不可逆性判据完全一致：S_vN>0⟺Ξ=∞。核心函数：[D126](functions/items/D126.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120不可逆性判据完全一致：S_vN>0⟺Ξ=∞。核心函数：D126
+中文：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120不可逆性判据完全一致：S_vN>0⟺Ξ=∞。核心函数：[D126](functions/items/D126.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17124,11 +17129,11 @@ English: Rule-based English rendering pending human review.
 ### [#485｜退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1(轨道逐步关闭), H从0.2 -> 0.6 -> 0.9(组织规范obscuration增强), τ_decoherence从50 -> 8 -> 1.5(退相干加速). 6个月后只剩单轨=完全退相干=认知僵化](cases/items/C-0485.md)
 
 **案例内容 / Case Content**
-中文：案例说明：退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化。核心函数：D126
+中文：案例说明：退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化。核心函数：[D126](functions/items/D126.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化。核心函数：D126
+中文：退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化。核心函数：[D126](functions/items/D126.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17159,11 +17164,11 @@ English: Rule-based English rendering pending human review.
 ### [#486｜路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高](cases/items/C-0486.md)
 
 **案例内容 / Case Content**
-中文：案例说明：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：D127
+中文：案例说明：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：[D127](functions/items/D127.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：D127
+中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：[D127](functions/items/D127.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17194,11 +17199,11 @@ English: Rule-based English rendering pending human review.
 ### [#487｜刀刃期ℏ_eff放大 — 阶段2（ε≈θC）时σ'最大→信号最敏感→噪声影响最大→ℏ_eff等效增大3-5倍→策略偏离最优的概率最大。三阶段协议中阶段2最危险的根本原因：认知量子最大](cases/items/C-0487.md)
 
 **案例内容 / Case Content**
-中文：案例说明：刀刃期ℏ_eff放大 — 阶段2（ε≈θC）时σ'最大→信号最敏感→噪声影响最大→ℏ_eff等效增大3-5倍→策略偏离最优的概率最大。三阶段协议中阶段2最危险的根本原因：认知量子最大。核心函数：D127
+中文：案例说明：刀刃期ℏ_eff放大 — 阶段2（ε≈θC）时σ'最大→信号最敏感→噪声影响最大→ℏ_eff等效增大3-5倍→策略偏离最优的概率最大。三阶段协议中阶段2最危险的根本原因：认知量子最大。核心函数：[D127](functions/items/D127.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：刀刃期ℏ_eff放大 — 阶段2（ε≈θC）时σ'最大→信号最敏感→噪声影响最大→ℏ_eff等效增大3-5倍→策略偏离最优的概率最大。三阶段协议中阶段2最危险的根本原因：认知量子最大。核心函数：D127
+中文：刀刃期ℏ_eff放大 — 阶段2（ε≈θC）时σ'最大→信号最敏感→噪声影响最大→ℏ_eff等效增大3-5倍→策略偏离最优的概率最大。三阶段协议中阶段2最危险的根本原因：认知量子最大。核心函数：[D127](functions/items/D127.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17229,11 +17234,11 @@ English: Rule-based English rendering pending human review.
 ### [#488｜退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干（ε远离门槛）时Γ=0.2/年，两者叠加Γ=0.5/年。A_Fisher衰减速率与Γ_unified精确匹配 / 退相干-退化统一验证 - 8维乘法系统: 纯Fisher退化(H=0)时Γ=0.3/年, 纯退相干(ε远离门槛)时Γ=0.2/年, 两者叠加Γ=0.5/年. A_Fisher衰减速率与Γ_unified精确匹配](cases/items/C-0488.md)
 
 **案例内容 / Case Content**
-中文：案例说明：退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干（ε远离门槛）时Γ=0.2/年，两者叠加Γ=0.5/年。A_Fisher衰减速率与Γ_unified精确匹配。核心函数：D128
+中文：案例说明：退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干（ε远离门槛）时Γ=0.2/年，两者叠加Γ=0.5/年。A_Fisher衰减速率与Γ_unified精确匹配。核心函数：[D128](functions/items/D128.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干（ε远离门槛）时Γ=0.2/年，两者叠加Γ=0.5/年。A_Fisher衰减速率与Γ_unified精确匹配。核心函数：D128
+中文：退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干（ε远离门槛）时Γ=0.2/年，两者叠加Γ=0.5/年。A_Fisher衰减速率与Γ_unified精确匹配。核心函数：[D128](functions/items/D128.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17264,11 +17269,11 @@ English: Rule-based English rendering pending human review.
 ### [#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%](cases/items/C-0489.md)
 
 **案例内容 / Case Content**
-中文：案例说明：遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40%。核心函数：D128
+中文：案例说明：遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40%。核心函数：[D128](functions/items/D128.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40%。核心函数：D128
+中文：遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40%。核心函数：[D128](functions/items/D128.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17299,11 +17304,11 @@ English: Rule-based English rendering pending human review.
 ### [#490｜刀刃期共振 — εₖ从0.5→0.3→0.1（接近门槛θC=0.2）：内生Γ从0.1→0.4→1.2，环境Γ从0.2→0.5→1.5，总Γ从0.3→0.9→2.7。刀刃期总衰减率是非刀刃期的9倍=共振效应 / 刀刃期共振 - εₖ从0.5 -> 0.3 -> 0.1(接近门槛θC=0.2): 内生Γ从0.1 -> 0.4 -> 1.2, 环境Γ从0.2 -> 0.5 -> 1.5, 总Γ从0.3 -> 0.9 -> 2.7. 刀刃期总衰减率是非刀刃期的9倍=共振效应](cases/items/C-0490.md)
 
 **案例内容 / Case Content**
-中文：案例说明：刀刃期共振 — εₖ从0.5→0.3→0.1（接近门槛θC=0.2）：内生Γ从0.1→0.4→1.2，环境Γ从0.2→0.5→1.5，总Γ从0.3→0.9→2.7。刀刃期总衰减率是非刀刃期的9倍=共振效应。核心函数：D128
+中文：案例说明：刀刃期共振 — εₖ从0.5→0.3→0.1（接近门槛θC=0.2）：内生Γ从0.1→0.4→1.2，环境Γ从0.2→0.5→1.5，总Γ从0.3→0.9→2.7。刀刃期总衰减率是非刀刃期的9倍=共振效应。核心函数：[D128](functions/items/D128.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：刀刃期共振 — εₖ从0.5→0.3→0.1（接近门槛θC=0.2）：内生Γ从0.1→0.4→1.2，环境Γ从0.2→0.5→1.5，总Γ从0.3→0.9→2.7。刀刃期总衰减率是非刀刃期的9倍=共振效应。核心函数：D128
+中文：刀刃期共振 — εₖ从0.5→0.3→0.1（接近门槛θC=0.2）：内生Γ从0.1→0.4→1.2，环境Γ从0.2→0.5→1.5，总Γ从0.3→0.9→2.7。刀刃期总衰减率是非刀刃期的9倍=共振效应。核心函数：[D128](functions/items/D128.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17334,11 +17339,11 @@ English: Rule-based English rendering pending human review.
 ### [#491｜加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.2/λ=0.8/年，A_Fisher下界=0.12>0。永远不完全退相干，总有可达路径 / 加法系统无退相干 - 同维度加法系统: d_F有上界3.2, Γ_unified上界=3.2/λ=0.8/年, A_Fisher下界=0.12>0. 永远不完全退相干, 总有可达路径](cases/items/C-0491.md)
 
 **案例内容 / Case Content**
-中文：案例说明：加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.2/λ=0.8/年，A_Fisher下界=0.12>0。永远不完全退相干，总有可达路径。核心函数：D128
+中文：案例说明：加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.2/λ=0.8/年，A_Fisher下界=0.12>0。永远不完全退相干，总有可达路径。核心函数：[D128](functions/items/D128.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.2/λ=0.8/年，A_Fisher下界=0.12>0。永远不完全退相干，总有可达路径。核心函数：D128
+中文：加法系统无退相干 — 同维度加法系统：d_F有上界3.2，Γ_unified上界=3.2/λ=0.8/年，A_Fisher下界=0.12>0。永远不完全退相干，总有可达路径。核心函数：[D128](functions/items/D128.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17369,11 +17374,11 @@ English: Rule-based English rendering pending human review.
 ### [#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛(ΔθC=-0.3 -> 内生Γ降0.4)vs 减obscuration(ΔH=-0.3 -> 环境Γ降0.3). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍](cases/items/C-0492.md)
 
 **案例内容 / Case Content**
-中文：案例说明：修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍。核心函数：D128
+中文：案例说明：修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍。核心函数：[D128](functions/items/D128.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍。核心函数：D128
+中文：修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍。核心函数：[D128](functions/items/D128.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17404,11 +17409,11 @@ English: Rule-based English rendering pending human review.
 ### [#493｜学习=门控函数进化 — 从δ（不会）到1/ln（会/不会）到exp[-ln²]（找到最优方法） / 学习=门控函数进化 - 从δ(不会)到1/ln(会/不会)到exp[-ln²](找到最优方法)](cases/items/C-0493.md)
 
 **案例内容 / Case Content**
-中文：案例说明：学习=门控函数进化 — 从δ（不会）到1/ln（会/不会）到exp[-ln²]（找到最优方法）。核心函数：D199
+中文：案例说明：学习=门控函数进化 — 从δ（不会）到1/ln（会/不会）到exp[-ln²]（找到最优方法）。核心函数：[D199](functions/items/D199.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：学习=门控函数进化 — 从δ（不会）到1/ln（会/不会）到exp[-ln²]（找到最优方法）。核心函数：D199
+中文：学习=门控函数进化 — 从δ（不会）到1/ln（会/不会）到exp[-ln²]（找到最优方法）。核心函数：[D199](functions/items/D199.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17439,11 +17444,11 @@ English: Rule-based English rendering pending human review.
 ### [#494｜冥想=降低Λ_awareness — 降低门槛让觉知更容易，σ从1/ln升级到exp[-ln²] / 冥想=降低Λ_awareness - 降低门槛让觉知更容易, σ从1/ln升级到exp[-ln²]](cases/items/C-0494.md)
 
 **案例内容 / Case Content**
-中文：案例说明：冥想=降低Λ_awareness — 降低门槛让觉知更容易，σ从1/ln升级到exp[-ln²]。核心函数：D198
+中文：案例说明：冥想=降低Λ_awareness — 降低门槛让觉知更容易，σ从1/ln升级到exp[-ln²]。核心函数：[D198](functions/items/D198.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：冥想=降低Λ_awareness — 降低门槛让觉知更容易，σ从1/ln升级到exp[-ln²]。核心函数：D198
+中文：冥想=降低Λ_awareness — 降低门槛让觉知更容易，σ从1/ln升级到exp[-ln²]。核心函数：[D198](functions/items/D198.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17474,11 +17479,11 @@ English: Rule-based English rendering pending human review.
 ### [#495｜成瘾=σ退化到1/ln — 从连续优化退回二值判断（要/不要），失去中间态](cases/items/C-0495.md)
 
 **案例内容 / Case Content**
-中文：案例说明：成瘾=σ退化到1/ln — 从连续优化退回二值判断（要/不要），失去中间态。核心函数：D227
+中文：案例说明：成瘾=σ退化到1/ln — 从连续优化退回二值判断（要/不要），失去中间态。核心函数：[D227](functions/items/D227.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：成瘾=σ退化到1/ln — 从连续优化退回二值判断（要/不要），失去中间态。核心函数：D227
+中文：成瘾=σ退化到1/ln — 从连续优化退回二值判断（要/不要），失去中间态。核心函数：[D227](functions/items/D227.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17509,11 +17514,11 @@ English: Rule-based English rendering pending human review.
 ### [#496｜文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大](cases/items/C-0496.md)
 
 **案例内容 / Case Content**
-中文：案例说明：文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大。核心函数：D191
+中文：案例说明：文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大。核心函数：[D191](functions/items/D191.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大。核心函数：D191
+中文：文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大。核心函数：[D191](functions/items/D191.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17544,11 +17549,11 @@ English: Rule-based English rendering pending human review.
 ### [#497｜文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版](cases/items/C-0497.md)
 
 **案例内容 / Case Content**
-中文：案例说明：文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版。核心函数：D228
+中文：案例说明：文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版。核心函数：[D228](functions/items/D228.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版。核心函数：D228
+中文：文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版。核心函数：[D228](functions/items/D228.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17579,11 +17584,11 @@ English: Rule-based English rendering pending human review.
 ### [#498｜技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp[-ln²]的技术版](cases/items/C-0498.md)
 
 **案例内容 / Case Content**
-中文：案例说明：技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp[-ln²]的技术版。核心函数：D196
+中文：案例说明：技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp[-ln²]的技术版。核心函数：[D196](functions/items/D196.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp[-ln²]的技术版。核心函数：D196
+中文：技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp[-ln²]的技术版。核心函数：[D196](functions/items/D196.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17614,11 +17619,11 @@ English: Rule-based English rendering pending human review.
 ### [#499｜AI对齐问题=σ控制 — 让AI的σ在σ_opt附近而非σ→0（僵化）或σ→∞（随机） / AI对齐问题=σ控制 - 让AI的σ在σ_opt附近而非σ -> 0(僵化)或σ -> ∞(随机)](cases/items/C-0499.md)
 
 **案例内容 / Case Content**
-中文：案例说明：AI对齐问题=σ控制 — 让AI的σ在σ_opt附近而非σ→0（僵化）或σ→∞（随机）。核心函数：D234
+中文：案例说明：AI对齐问题=σ控制 — 让AI的σ在σ_opt附近而非σ→0（僵化）或σ→∞（随机）。核心函数：[D234](functions/items/D234.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：AI对齐问题=σ控制 — 让AI的σ在σ_opt附近而非σ→0（僵化）或σ→∞（随机）。核心函数：D234
+中文：AI对齐问题=σ控制 — 让AI的σ在σ_opt附近而非σ→0（僵化）或σ→∞（随机）。核心函数：[D234](functions/items/D234.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17649,11 +17654,11 @@ English: Rule-based English rendering pending human review.
 ### [#500｜宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例](cases/items/C-0500.md)
 
 **案例内容 / Case Content**
-中文：案例说明：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例。核心函数：D223
+中文：案例说明：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例。核心函数：[D223](functions/items/D223.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例。核心函数：D223
+中文：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例。核心函数：[D223](functions/items/D223.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17683,6 +17688,7 @@ English: Rule-based English rendering pending human review.
 
 </details>
 
+<a id="case-range-501-578"></a>
 <details>
 <summary>#501–#578 / #501–#578</summary>
 
@@ -17724,11 +17730,11 @@ English: Rule-based English rendering pending human review.
 ### [#502｜认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97](cases/items/C-0502.md)
 
 **案例内容 / Case Content**
-中文：案例说明：认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97。核心函数：D134
+中文：案例说明：认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97。核心函数：[D134](functions/items/D134.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97。核心函数：D134
+中文：认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97。核心函数：[D134](functions/items/D134.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17759,11 +17765,11 @@ English: Rule-based English rendering pending human review.
 ### [#503｜认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）](cases/items/C-0503.md)
 
 **案例内容 / Case Content**
-中文：案例说明：认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）。核心函数：D135
+中文：案例说明：认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）。核心函数：[D135](functions/items/D135.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）。核心函数：D135
+中文：认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率）。核心函数：[D135](functions/items/D135.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17794,11 +17800,11 @@ English: Rule-based English rendering pending human review.
 ### [#504｜认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发](cases/items/C-0504.md)
 
 **案例内容 / Case Content**
-中文：案例说明：认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发。核心函数：D136
+中文：案例说明：认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发。核心函数：[D136](functions/items/D136.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发。核心函数：D136
+中文：认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发。核心函数：[D136](functions/items/D136.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17829,11 +17835,11 @@ English: Rule-based English rendering pending human review.
 ### [#505｜认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍 / 认知光锥验证 - 职业锁定: 3维锁定(n_lock=3)的工程师v_max降低60% -> 5年可达状态减少75% -> 光锥严重收缩. 解锁1维后v_max恢复40% -> 光锥扩大2.5倍](cases/items/C-0505.md)
 
 **案例内容 / Case Content**
-中文：案例说明：认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍。核心函数：D137
+中文：案例说明：认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍。核心函数：[D137](functions/items/D137.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍。核心函数：D137
+中文：认知光锥验证 — 职业锁定：3维锁定（n_lock=3）的工程师v_max降低60%→5年可达状态减少75%→光锥严重收缩。解锁1维后v_max恢复40%→光锥扩大2.5倍。核心函数：[D137](functions/items/D137.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17864,11 +17870,11 @@ English: Rule-based English rendering pending human review.
 ### [#506｜认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸](cases/items/C-0506.md)
 
 **案例内容 / Case Content**
-中文：案例说明：认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸。核心函数：D138
+中文：案例说明：认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸。核心函数：[D138](functions/items/D138.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸。核心函数：D138
+中文：认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸。核心函数：[D138](functions/items/D138.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17899,11 +17905,11 @@ English: Rule-based English rendering pending human review.
 ### [#507｜测地线偏离验证 — 组织退化传染：部门A退化（ε↓30%）→部门B（κ_AB=0.4）在3个月内跟随退化15%→部门C（κ_AC=0.1）几乎不受影响。κ_ij=-R_cog→部门间曲率决定传染速度 / 测地线偏离验证 - 组织退化传染: 部门A退化(ε↓30%) -> 部门B(κ_AB=0.4)在3个月内跟随退化15% -> 部门C(κ_AC=0.1)几乎不受影响. κ_ij=-R_cog -> 部门间曲率决定传染速度](cases/items/C-0507.md)
 
 **案例内容 / Case Content**
-中文：案例说明：测地线偏离验证 — 组织退化传染：部门A退化（ε↓30%）→部门B（κ_AB=0.4）在3个月内跟随退化15%→部门C（κ_AC=0.1）几乎不受影响。κ_ij=-R_cog→部门间曲率决定传染速度。核心函数：D136
+中文：案例说明：测地线偏离验证 — 组织退化传染：部门A退化（ε↓30%）→部门B（κ_AB=0.4）在3个月内跟随退化15%→部门C（κ_AC=0.1）几乎不受影响。κ_ij=-R_cog→部门间曲率决定传染速度。核心函数：[D136](functions/items/D136.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：测地线偏离验证 — 组织退化传染：部门A退化（ε↓30%）→部门B（κ_AB=0.4）在3个月内跟随退化15%→部门C（κ_AC=0.1）几乎不受影响。κ_ij=-R_cog→部门间曲率决定传染速度。核心函数：D136
+中文：测地线偏离验证 — 组织退化传染：部门A退化（ε↓30%）→部门B（κ_AB=0.4）在3个月内跟随退化15%→部门C（κ_AC=0.1）几乎不受影响。κ_ij=-R_cog→部门间曲率决定传染速度。核心函数：[D136](functions/items/D136.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17934,11 +17940,11 @@ English: Rule-based English rendering pending human review.
 ### [#508｜β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→β_max=γ/(2×0.1)=5γ；ε=(0.5,0.5,0.5,0.5,0.5)→β_max=γ/(2×0.5)=γ。不均匀系统的β是均匀系统的5倍，与曲率差异一致 / β-曲率关系验证 - 5维系统: ε=(0.8,0.6,0.4,0.2,0.1) -> β_max=γ/(2 x 0.1)=5γ; ε=(0.5,0.5,0.5,0.5,0.5) -> β_max=γ/(2 x 0.5)=γ. 不均匀系统的β是均匀系统的5倍, 与曲率差异一致](cases/items/C-0508.md)
 
 **案例内容 / Case Content**
-中文：案例说明：β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→β_max=γ/(2×0.1)=5γ；ε=(0.5,0.5,0.5,0.5,0.5)→β_max=γ/(2×0.5)=γ。不均匀系统的β是均匀系统的5倍，与曲率差异一致。核心函数：D139
+中文：案例说明：β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→β_max=γ/(2×0.1)=5γ；ε=(0.5,0.5,0.5,0.5,0.5)→β_max=γ/(2×0.5)=γ。不均匀系统的β是均匀系统的5倍，与曲率差异一致。核心函数：[D139](functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→β_max=γ/(2×0.1)=5γ；ε=(0.5,0.5,0.5,0.5,0.5)→β_max=γ/(2×0.5)=γ。不均匀系统的β是均匀系统的5倍，与曲率差异一致。核心函数：D139
+中文：β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→β_max=γ/(2×0.1)=5γ；ε=(0.5,0.5,0.5,0.5,0.5)→β_max=γ/(2×0.5)=γ。不均匀系统的β是均匀系统的5倍，与曲率差异一致。核心函数：[D139](functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17969,11 +17975,11 @@ English: Rule-based English rendering pending human review.
 ### [#509｜测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：D111策略的S_ignition全局最小，偏离D111的策略S增大，梯度指向D111方向。在Fisher度规定义的黎曼流形上，D111确实是测地线](cases/items/C-0509.md)
 
 **案例内容 / Case Content**
-中文：案例说明：测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：D111策略的S_ignition全局最小，偏离D111的策略S增大，梯度指向D111方向。在Fisher度规定义的黎曼流形上，D111确实是测地线。核心函数：D139
+中文：案例说明：测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：D111策略的S_ignition全局最小，偏离D111的策略S增大，梯度指向D111方向。在Fisher度规定义的黎曼流形上，D111确实是测地线。核心函数：[D139](functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：D111策略的S_ignition全局最小，偏离D111的策略S增大，梯度指向D111方向。在Fisher度规定义的黎曼流形上，D111确实是测地线。核心函数：D139
+中文：测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：D111策略的S_ignition全局最小，偏离D111的策略S增大，梯度指向D111方向。在Fisher度规定义的黎曼流形上，D111确实是测地线。核心函数：[D139](functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18004,11 +18010,11 @@ English: Rule-based English rendering pending human review.
 ### [#510｜三阶段=曲率穿越验证 — 创业者路径：阶段1（资源充足ε>>θC）→R_cog≈0→贪心策略有效；阶段2（资金紧张ε≈θC）→R_cog最大→必须做级联防御；阶段3（盈利后ε>>θC）→R_cog→0→回到贪心。β轨迹与曲率轨迹完全同步 / 三阶段=曲率穿越验证 - 创业者路径: 阶段1(资源充足ε>>θC) -> R_cog≈0 -> 贪心策略有效; 阶段2(资金紧张ε≈θC) -> R_cog最大 -> 必须做cascade defense; 阶段3(盈利后ε>>θC) -> R_cog -> 0 -> 回到贪心. β轨迹与曲率轨迹完全同步](cases/items/C-0510.md)
 
 **案例内容 / Case Content**
-中文：案例说明：三阶段=曲率穿越验证 — 创业者路径：阶段1（资源充足ε>>θC）→R_cog≈0→贪心策略有效；阶段2（资金紧张ε≈θC）→R_cog最大→必须做级联防御；阶段3（盈利后ε>>θC）→R_cog→0→回到贪心。β轨迹与曲率轨迹完全同步。核心函数：D139
+中文：案例说明：三阶段=曲率穿越验证 — 创业者路径：阶段1（资源充足ε>>θC）→R_cog≈0→贪心策略有效；阶段2（资金紧张ε≈θC）→R_cog最大→必须做级联防御；阶段3（盈利后ε>>θC）→R_cog→0→回到贪心。β轨迹与曲率轨迹完全同步。核心函数：[D139](functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：三阶段=曲率穿越验证 — 创业者路径：阶段1（资源充足ε>>θC）→R_cog≈0→贪心策略有效；阶段2（资金紧张ε≈θC）→R_cog最大→必须做级联防御；阶段3（盈利后ε>>θC）→R_cog→0→回到贪心。β轨迹与曲率轨迹完全同步。核心函数：D139
+中文：三阶段=曲率穿越验证 — 创业者路径：阶段1（资源充足ε>>θC）→R_cog≈0→贪心策略有效；阶段2（资金紧张ε≈θC）→R_cog最大→必须做级联防御；阶段3（盈利后ε>>θC）→R_cog→0→回到贪心。β轨迹与曲率轨迹完全同步。核心函数：[D139](functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18039,11 +18045,11 @@ English: Rule-based English rendering pending human review.
 ### [#511｜认知引力波验证 — 大规模裁员事件：经济维度ε_econ突然下降→Fisher度规在经济方向跳变→1个月后社交维度感知到变化（v_max限制）→3个月后心理维度受影响。度规扰动传播延迟与v_max一致](cases/items/C-0511.md)
 
 **案例内容 / Case Content**
-中文：案例说明：认知引力波验证 — 大规模裁员事件：经济维度ε_econ突然下降→Fisher度规在经济方向跳变→1个月后社交维度感知到变化（v_max限制）→3个月后心理维度受影响。度规扰动传播延迟与v_max一致。核心函数：D139
+中文：案例说明：认知引力波验证 — 大规模裁员事件：经济维度ε_econ突然下降→Fisher度规在经济方向跳变→1个月后社交维度感知到变化（v_max限制）→3个月后心理维度受影响。度规扰动传播延迟与v_max一致。核心函数：[D139](functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：认知引力波验证 — 大规模裁员事件：经济维度ε_econ突然下降→Fisher度规在经济方向跳变→1个月后社交维度感知到变化（v_max限制）→3个月后心理维度受影响。度规扰动传播延迟与v_max一致。核心函数：D139
+中文：认知引力波验证 — 大规模裁员事件：经济维度ε_econ突然下降→Fisher度规在经济方向跳变→1个月后社交维度感知到变化（v_max限制）→3个月后心理维度受影响。度规扰动传播延迟与v_max一致。核心函数：[D139](functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18074,11 +18080,11 @@ English: Rule-based English rendering pending human review.
 ### [#512｜最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→D111策略在ε₇方向的级联修正最强。与D87乘法临界漂移一致 / 最弱维度=曲率奇点验证 - 8维系统中第7维ε₇=0.05(最弱): 该方向Fisher度规g₇₇=1/0.05²=400, 是其他方向的10-100倍. 曲率在ε₇方向发散 -> β由ε₇决定 -> D111策略在ε₇方向的级联修正最强. 与D87乘法临界漂移一致](cases/items/C-0512.md)
 
 **案例内容 / Case Content**
-中文：案例说明：最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→D111策略在ε₇方向的级联修正最强。与D87乘法临界漂移一致。核心函数：D139
+中文：案例说明：最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→D111策略在ε₇方向的级联修正最强。与D87乘法临界漂移一致。核心函数：[D139](functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→D111策略在ε₇方向的级联修正最强。与D87乘法临界漂移一致。核心函数：D139
+中文：最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→D111策略在ε₇方向的级联修正最强。与D87乘法临界漂移一致。核心函数：[D139](functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18109,11 +18115,11 @@ English: Rule-based English rendering pending human review.
 ### [#513｜测地线唯一性验证 — 3维系统10000次随机采样：D111的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离D111 10%→S增大0.8%，梯度指向D111 / 测地线唯一性验证 - 3维系统10000次随机采样: D111的S_ignition全局最小, 无第二极值点. 二阶变分δ²S=0.34>0确认稳定. 偏离D111 10% -> S增大0.8%, 梯度指向D111](cases/items/C-0513.md)
 
 **案例内容 / Case Content**
-中文：案例说明：测地线唯一性验证 — 3维系统10000次随机采样：D111的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离D111 10%→S增大0.8%，梯度指向D111。核心函数：D140
+中文：案例说明：测地线唯一性验证 — 3维系统10000次随机采样：D111的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离D111 10%→S增大0.8%，梯度指向D111。核心函数：[D140](functions/items/D140.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：测地线唯一性验证 — 3维系统10000次随机采样：D111的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离D111 10%→S增大0.8%，梯度指向D111。核心函数：D140
+中文：测地线唯一性验证 — 3维系统10000次随机采样：D111的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离D111 10%→S增大0.8%，梯度指向D111。核心函数：[D140](functions/items/D140.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18144,11 +18150,11 @@ English: Rule-based English rendering pending human review.
 ### [#514｜最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），β由ε₇决定（策略偏离最远）。三重发散同步](cases/items/C-0514.md)
 
 **案例内容 / Case Content**
-中文：案例说明：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），β由ε₇决定（策略偏离最远）。三重发散同步。核心函数：D141
+中文：案例说明：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），β由ε₇决定（策略偏离最远）。三重发散同步。核心函数：[D141](functions/items/D141.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），β由ε₇决定（策略偏离最远）。三重发散同步。核心函数：D141
+中文：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），β由ε₇决定（策略偏离最远）。三重发散同步。核心函数：[D141](functions/items/D141.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18179,11 +18185,11 @@ English: Rule-based English rendering pending human review.
 ### [#515｜度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致](cases/items/C-0515.md)
 
 **案例内容 / Case Content**
-中文：案例说明：度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致。核心函数：D142
+中文：案例说明：度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致。核心函数：[D142](functions/items/D142.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致。核心函数：D142
+中文：度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致。核心函数：[D142](functions/items/D142.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18214,11 +18220,11 @@ English: Rule-based English rendering pending human review.
 ### [#516｜三阶段曲率穿越验证 — 创业公司5年轨迹：β从0.2→3.8→0.3，R_cog从0.01→0.45→0.02，两者完全同步。阶段2峰值处策略从贪心切换到级联防御，β和R_cog同时取最大值 / 三阶段曲率穿越验证 - 创业公司5年轨迹: β从0.2 -> 3.8 -> 0.3, R_cog从0.01 -> 0.45 -> 0.02, 两者完全同步. 阶段2峰值处策略从贪心切换到cascade defense, β和R_cog同时取最大值](cases/items/C-0516.md)
 
 **案例内容 / Case Content**
-中文：案例说明：三阶段曲率穿越验证 — 创业公司5年轨迹：β从0.2→3.8→0.3，R_cog从0.01→0.45→0.02，两者完全同步。阶段2峰值处策略从贪心切换到级联防御，β和R_cog同时取最大值。核心函数：D143
+中文：案例说明：三阶段曲率穿越验证 — 创业公司5年轨迹：β从0.2→3.8→0.3，R_cog从0.01→0.45→0.02，两者完全同步。阶段2峰值处策略从贪心切换到级联防御，β和R_cog同时取最大值。核心函数：[D143](functions/items/D143.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：三阶段曲率穿越验证 — 创业公司5年轨迹：β从0.2→3.8→0.3，R_cog从0.01→0.45→0.02，两者完全同步。阶段2峰值处策略从贪心切换到级联防御，β和R_cog同时取最大值。核心函数：D143
+中文：三阶段曲率穿越验证 — 创业公司5年轨迹：β从0.2→3.8→0.3，R_cog从0.01→0.45→0.02，两者完全同步。阶段2峰值处策略从贪心切换到级联防御，β和R_cog同时取最大值。核心函数：[D143](functions/items/D143.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18249,11 +18255,11 @@ English: Rule-based English rendering pending human review.
 ### [#517｜认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月后社会心理层面变化。传播延迟与v_max和d_F一致，振幅随距离衰减](cases/items/C-0517.md)
 
 **案例内容 / Case Content**
-中文：案例说明：认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月后社会心理层面变化。传播延迟与v_max和d_F一致，振幅随距离衰减。核心函数：D144
+中文：案例说明：认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月后社会心理层面变化。传播延迟与v_max和d_F一致，振幅随距离衰减。核心函数：[D144](functions/items/D144.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月后社会心理层面变化。传播延迟与v_max和d_F一致，振幅随距离衰减。核心函数：D144
+中文：认知引力波验证 — 2008金融危机：金融维度ε_fin突然下降→Fisher度规跳变→1个月后实体经济感知→3个月后就业市场受影响→6个月后社会心理层面变化。传播延迟与v_max和d_F一致，振幅随距离衰减。核心函数：[D144](functions/items/D144.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18284,11 +18290,11 @@ English: Rule-based English rendering pending human review.
 ### [#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组](cases/items/C-0518.md)
 
 **案例内容 / Case Content**
-中文：案例说明：规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组。核心函数：D145
+中文：案例说明：规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组。核心函数：[D145](functions/items/D145.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组。核心函数：D145
+中文：规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U(1)=创意维度仍可自由重组。核心函数：[D145](functions/items/D145.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18319,11 +18325,11 @@ English: Rule-based English rendering pending human review.
 ### [#519｜Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空 / Higgs相变验证 - 职业选择: μ²=0.8(内在驱动力), ΣC_exit从0.2 -> 0.6 -> 0.9 -> 1.0 -> 1.2: v_eff从0.58 -> 0.45 -> 0.32 -> 0 -> 0, ΣC_exit=μ²=0.8时相变. C_exit超过临界值后ε坍缩到门控真空](cases/items/C-0519.md)
 
 **案例内容 / Case Content**
-中文：案例说明：Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空。核心函数：D146
+中文：案例说明：Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空。核心函数：[D146](functions/items/D146.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空。核心函数：D146
+中文：Higgs相变验证 — 职业选择：μ²=0.8（内在驱动力），ΣC_exit从0.2→0.6→0.9→1.0→1.2：v_eff从0.58→0.45→0.32→0→0，ΣC_exit=μ²=0.8时相变。C_exit超过临界值后ε坍缩到门控真空。核心函数：[D146](functions/items/D146.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18354,11 +18360,11 @@ English: Rule-based English rendering pending human review.
 ### [#520｜Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控("想通"是质变); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数(收入可渐变). 心理维度改善只能0 -> 1, 经济维度可渐变](cases/items/C-0520.md)
 
 **案例内容 / Case Content**
-中文：案例说明：Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变。核心函数：D147
+中文：案例说明：Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变。核心函数：[D147](functions/items/D147.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变。核心函数：D147
+中文：Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（"想通"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变。核心函数：[D147](functions/items/D147.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18389,11 +18395,11 @@ English: Rule-based English rendering pending human review.
 ### [#521｜Yukawa层级验证 — 8维系统：最弱维度ε₇=0.05→y₇=8.2（对C_exit极度敏感），最强维度ε₁=0.9→y₁=0.3。y₇/y₁=27倍层级差异，来自乘法正反馈（σ'在ε₇方向最大→y₇被放大） / Yukawa层级验证 - 8维系统: 最弱维度ε₇=0.05 -> y₇=8.2(对C_exit极度敏感), 最强维度ε₁=0.9 -> y₁=0.3. y₇/y₁=27倍层级差异, 来自乘法正反馈(σ'在ε₇方向最大 -> y₇被放大)](cases/items/C-0521.md)
 
 **案例内容 / Case Content**
-中文：案例说明：Yukawa层级验证 — 8维系统：最弱维度ε₇=0.05→y₇=8.2（对C_exit极度敏感），最强维度ε₁=0.9→y₁=0.3。y₇/y₁=27倍层级差异，来自乘法正反馈（σ'在ε₇方向最大→y₇被放大）。核心函数：D148
+中文：案例说明：Yukawa层级验证 — 8维系统：最弱维度ε₇=0.05→y₇=8.2（对C_exit极度敏感），最强维度ε₁=0.9→y₁=0.3。y₇/y₁=27倍层级差异，来自乘法正反馈（σ'在ε₇方向最大→y₇被放大）。核心函数：[D148](functions/items/D148.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：Yukawa层级验证 — 8维系统：最弱维度ε₇=0.05→y₇=8.2（对C_exit极度敏感），最强维度ε₁=0.9→y₁=0.3。y₇/y₁=27倍层级差异，来自乘法正反馈（σ'在ε₇方向最大→y₇被放大）。核心函数：D148
+中文：Yukawa层级验证 — 8维系统：最弱维度ε₇=0.05→y₇=8.2（对C_exit极度敏感），最强维度ε₁=0.9→y₁=0.3。y₇/y₁=27倍层级差异，来自乘法正反馈（σ'在ε₇方向最大→y₇被放大）。核心函数：[D148](functions/items/D148.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18424,11 +18430,11 @@ English: Rule-based English rendering pending human review.
 ### [#522｜跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间"所有策略看起来一样"=未破缺相](cases/items/C-0522.md)
 
 **案例内容 / Case Content**
-中文：案例说明：跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间"所有策略看起来一样"=未破缺相。核心函数：D149
+中文：案例说明：跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间"所有策略看起来一样"=未破缺相。核心函数：[D149](functions/items/D149.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间"所有策略看起来一样"=未破缺相。核心函数：D149
+中文：跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间"所有策略看起来一样"=未破缺相。核心函数：[D149](functions/items/D149.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18459,11 +18465,11 @@ English: Rule-based English rendering pending human review.
 ### [#523｜不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现](cases/items/C-0523.md)
 
 **案例内容 / Case Content**
-中文：案例说明：不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现。核心函数：D158
+中文：案例说明：不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现。核心函数：D158
+中文：不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18494,11 +18500,11 @@ English: Rule-based English rendering pending human review.
 ### [#524｜量子隧穿 — 存活区拓扑连通，低存活≠死亡，B(势垒内)>0](cases/items/C-0524.md)
 
 **案例内容 / Case Content**
-中文：案例说明：量子隧穿 — 存活区拓扑连通，低存活≠死亡，B(势垒内)>0。核心函数：D158
+中文：案例说明：量子隧穿 — 存活区拓扑连通，低存活≠死亡，B(势垒内)>0。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：量子隧穿 — 存活区拓扑连通，低存活≠死亡，B(势垒内)>0。核心函数：D158
+中文：量子隧穿 — 存活区拓扑连通，低存活≠死亡，B(势垒内)>0。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18529,11 +18535,11 @@ English: Rule-based English rendering pending human review.
 ### [#525｜宏观退相干 — N_env从1到10²³使Γ变20+量级 / 宏观退相干 - N_env从1到10²³使Γ变20+量级](cases/items/C-0525.md)
 
 **案例内容 / Case Content**
-中文：案例说明：宏观退相干 — N_env从1到10²³使Γ变20+量级。核心函数：D158
+中文：案例说明：宏观退相干 — N_env从1到10²³使Γ变20+量级。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：宏观退相干 — N_env从1到10²³使Γ变20+量级。核心函数：D158
+中文：宏观退相干 — N_env从1到10²³使Γ变20+量级。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18564,11 +18570,11 @@ English: Rule-based English rendering pending human review.
 ### [#526｜量子计算优越性 — 2ⁿ维存活区搜索+2ⁿ维门控风险，同一结构两面](cases/items/C-0526.md)
 
 **案例内容 / Case Content**
-中文：案例说明：量子计算优越性 — 2ⁿ维存活区搜索+2ⁿ维门控风险，同一结构两面。核心函数：D158
+中文：案例说明：量子计算优越性 — 2ⁿ维存活区搜索+2ⁿ维门控风险，同一结构两面。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：量子计算优越性 — 2ⁿ维存活区搜索+2ⁿ维门控风险，同一结构两面。核心函数：D158
+中文：量子计算优越性 — 2ⁿ维存活区搜索+2ⁿ维门控风险，同一结构两面。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18599,11 +18605,11 @@ English: Rule-based English rendering pending human review.
 ### [#527｜EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9 / EPR悖论 - 局域性和实在性是连续因子不是布尔量, B=ε_loc x ε_real≈0.9](cases/items/C-0527.md)
 
 **案例内容 / Case Content**
-中文：案例说明：EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9。核心函数：D158
+中文：案例说明：EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9。核心函数：D158
+中文：EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18634,11 +18640,11 @@ English: Rule-based English rendering pending human review.
 ### [#528｜时间箭头 — dΦ/dt≥0=Fisher可达性只减不增(D117) / 时间箭头 - dΦ/dt≥0=Fisher可达性只减不增(D117)](cases/items/C-0528.md)
 
 **案例内容 / Case Content**
-中文：案例说明：时间箭头 — dΦ/dt≥0=Fisher可达性只减不增(D117)。核心函数：D158
+中文：案例说明：时间箭头 — dΦ/dt≥0=Fisher可达性只减不增([D117](functions/items/D117.md))。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：时间箭头 — dΦ/dt≥0=Fisher可达性只减不增(D117)。核心函数：D158
+中文：时间箭头 — dΦ/dt≥0=Fisher可达性只减不增([D117](functions/items/D117.md))。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18670,11 +18676,11 @@ English: Rule-based English rendering pending human review.
 ### [#529｜麦克斯韦妖 — 信息操作总Φ变化≥0，Landauer是特例](cases/items/C-0529.md)
 
 **案例内容 / Case Content**
-中文：案例说明：麦克斯韦妖 — 信息操作总Φ变化≥0，Landauer是特例。核心函数：D158
+中文：案例说明：麦克斯韦妖 — 信息操作总Φ变化≥0，Landauer是特例。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：麦克斯韦妖 — 信息操作总Φ变化≥0，Landauer是特例。核心函数：D158
+中文：麦克斯韦妖 — 信息操作总Φ变化≥0，Landauer是特例。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18705,11 +18711,11 @@ English: Rule-based English rendering pending human review.
 ### [#530｜负温度 — ε>1="超存活"态，弛豫释放能量](cases/items/C-0530.md)
 
 **案例内容 / Case Content**
-中文：案例说明：负温度 — ε>1="超存活"态，弛豫释放能量。核心函数：D158
+中文：案例说明：负温度 — ε>1="超存活"态，弛豫释放能量。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：负温度 — ε>1="超存活"态，弛豫释放能量。核心函数：D158
+中文：负温度 — ε>1="超存活"态，弛豫释放能量。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18740,11 +18746,11 @@ English: Rule-based English rendering pending human review.
 ### [#531｜相变分类 — 连续=穿越超平面，一级=两存活区跳变](cases/items/C-0531.md)
 
 **案例内容 / Case Content**
-中文：案例说明：相变分类 — 连续=穿越超平面，一级=两存活区跳变。核心函数：D158
+中文：案例说明：相变分类 — 连续=穿越超平面，一级=两存活区跳变。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：相变分类 — 连续=穿越超平面，一级=两存活区跳变。核心函数：D158
+中文：相变分类 — 连续=穿越超平面，一级=两存活区跳变。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18775,11 +18781,11 @@ English: Rule-based English rendering pending human review.
 ### [#532｜信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影](cases/items/C-0532.md)
 
 **案例内容 / Case Content**
-中文：案例说明：信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影。核心函数：D158
+中文：案例说明：信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影。核心函数：D158
+中文：信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18810,11 +18816,11 @@ English: Rule-based English rendering pending human review.
 ### [#533｜黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩，面积律×对数律 / 黑洞热力学 - S_BH=N_dof x ⟨Φ(视界)⟩, 面积律 x 对数律](cases/items/C-0533.md)
 
 **案例内容 / Case Content**
-中文：案例说明：黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩，面积律×对数律。核心函数：D158
+中文：案例说明：黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩，面积律×对数律。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩，面积律×对数律。核心函数：D158
+中文：黑洞热力学 — S_BH=N_dof×⟨Φ(视界)⟩，面积律×对数律。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18845,11 +18851,11 @@ English: Rule-based English rendering pending human review.
 ### [#534｜第三定律 — Φ不能精确为零=μ有量子下界，玻璃=多局部Φ极小](cases/items/C-0534.md)
 
 **案例内容 / Case Content**
-中文：案例说明：第三定律 — Φ不能精确为零=μ有量子下界，玻璃=多局部Φ极小。核心函数：D158
+中文：案例说明：第三定律 — Φ不能精确为零=μ有量子下界，玻璃=多局部Φ极小。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：第三定律 — Φ不能精确为零=μ有量子下界，玻璃=多局部Φ极小。核心函数：D158
+中文：第三定律 — Φ不能精确为零=μ有量子下界，玻璃=多局部Φ极小。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18880,11 +18886,11 @@ English: Rule-based English rendering pending human review.
 ### [#535｜光速上限 — c=Fisher速度在ε=1时的值，所有场ε≤1 / 光速上限 - c=Fisher速度在ε=1时的值, 所有场ε≤1](cases/items/C-0535.md)
 
 **案例内容 / Case Content**
-中文：案例说明：光速上限 — c=Fisher速度在ε=1时的值，所有场ε≤1。核心函数：D158
+中文：案例说明：光速上限 — c=Fisher速度在ε=1时的值，所有场ε≤1。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：光速上限 — c=Fisher速度在ε=1时的值，所有场ε≤1。核心函数：D158
+中文：光速上限 — c=Fisher速度在ε=1时的值，所有场ε≤1。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18915,11 +18921,11 @@ English: Rule-based English rendering pending human review.
 ### [#536｜等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效 / 等效原理 - m_i=m_g精确到O((μ/M_Planck)²), 强场失效](cases/items/C-0536.md)
 
 **案例内容 / Case Content**
-中文：案例说明：等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效。核心函数：D158
+中文：案例说明：等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效。核心函数：D158
+中文：等效原理 — m_i=m_g精确到O((μ/M_Planck)²)，强场失效。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18950,11 +18956,11 @@ English: Rule-based English rendering pending human review.
 ### [#537｜双生子佯谬 — 固有时∝exp(-∫Φdt)，加速增Φ减固有时](cases/items/C-0537.md)
 
 **案例内容 / Case Content**
-中文：案例说明：双生子佯谬 — 固有时∝exp(-∫Φdt)，加速增Φ减固有时。核心函数：D158
+中文：案例说明：双生子佯谬 — 固有时∝exp(-∫Φdt)，加速增Φ减固有时。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：双生子佯谬 — 固有时∝exp(-∫Φdt)，加速增Φ减固有时。核心函数：D158
+中文：双生子佯谬 — 固有时∝exp(-∫Φdt)，加速增Φ减固有时。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18985,11 +18991,11 @@ English: Rule-based English rendering pending human review.
 ### [#538｜引力时间减慢 — **Φ(r)=GM/(rc²)**=归一化引力势 / 引力时间减慢 - **Φ(r)=GM/(rc²)**=归一化引力势](cases/items/C-0538.md)
 
 **案例内容 / Case Content**
-中文：案例说明：引力时间减慢 — **Φ(r)=GM/(rc²)**=归一化引力势。核心函数：D158
+中文：案例说明：引力时间减慢 — **Φ(r)=GM/(rc²)**=归一化引力势。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：引力时间减慢 — **Φ(r)=GM/(rc²)**=归一化引力势。核心函数：D158
+中文：引力时间减慢 — **Φ(r)=GM/(rc²)**=归一化引力势。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19020,11 +19026,11 @@ English: Rule-based English rendering pending human review.
 ### [#539｜E=mc² — mc²=信息容量×信息速度² / E=mc² - mc²=信息容量 x 信息速度²](cases/items/C-0539.md)
 
 **案例内容 / Case Content**
-中文：案例说明：E=mc² — mc²=信息容量×信息速度²。核心函数：D158
+中文：案例说明：E=mc² — mc²=信息容量×信息速度²。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：E=mc² — mc²=信息容量×信息速度²。核心函数：D158
+中文：E=mc² — mc²=信息容量×信息速度²。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19055,11 +19061,11 @@ English: Rule-based English rendering pending human review.
 ### [#540｜黑洞无毛 — 4维时空3方向ε>0，径向被门控否决](cases/items/C-0540.md)
 
 **案例内容 / Case Content**
-中文：案例说明：黑洞无毛 — 4维时空3方向ε>0，径向被门控否决。核心函数：D158
+中文：案例说明：黑洞无毛 — 4维时空3方向ε>0，径向被门控否决。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：黑洞无毛 — 4维时空3方向ε>0，径向被门控否决。核心函数：D158
+中文：黑洞无毛 — 4维时空3方向ε>0，径向被门控否决。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19090,11 +19096,11 @@ English: Rule-based English rendering pending human review.
 ### [#541｜宇宙加速膨胀 — Φ远尾区d²Φ/dμ²>0→增长加速→膨胀加速](cases/items/C-0541.md)
 
 **案例内容 / Case Content**
-中文：案例说明：宇宙加速膨胀 — Φ远尾区d²Φ/dμ²>0→增长加速→膨胀加速。核心函数：D158
+中文：案例说明：宇宙加速膨胀 — Φ远尾区d²Φ/dμ²>0→增长加速→膨胀加速。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：宇宙加速膨胀 — Φ远尾区d²Φ/dμ²>0→增长加速→膨胀加速。核心函数：D158
+中文：宇宙加速膨胀 — Φ远尾区d²Φ/dμ²>0→增长加速→膨胀加速。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19125,11 +19131,11 @@ English: Rule-based English rendering pending human review.
 ### [#542｜高温超导 — 多门控面共振，Tc远高于单机制预言](cases/items/C-0542.md)
 
 **案例内容 / Case Content**
-中文：案例说明：高温超导 — 多门控面共振，Tc远高于单机制预言。核心函数：D158
+中文：案例说明：高温超导 — 多门控面共振，Tc远高于单机制预言。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：高温超导 — 多门控面共振，Tc远高于单机制预言。核心函数：D158
+中文：高温超导 — 多门控面共振，Tc远高于单机制预言。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19160,11 +19166,11 @@ English: Rule-based English rendering pending human review.
 ### [#543｜量子霍尔效应 — 乘法门控离散象限→量子化，分数=复合粒子乘法门控](cases/items/C-0543.md)
 
 **案例内容 / Case Content**
-中文：案例说明：量子霍尔效应 — 乘法门控离散象限→量子化，分数=复合粒子乘法门控。核心函数：D158
+中文：案例说明：量子霍尔效应 — 乘法门控离散象限→量子化，分数=复合粒子乘法门控。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：量子霍尔效应 — 乘法门控离散象限→量子化，分数=复合粒子乘法门控。核心函数：D158
+中文：量子霍尔效应 — 乘法门控离散象限→量子化，分数=复合粒子乘法门控。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19195,11 +19201,11 @@ English: Rule-based English rendering pending human review.
 ### [#544｜拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界](cases/items/C-0544.md)
 
 **案例内容 / Case Content**
-中文：案例说明：拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界。核心函数：D158
+中文：案例说明：拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界。核心函数：D158
+中文：拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19230,11 +19236,11 @@ English: Rule-based English rendering pending human review.
 ### [#545｜安德森局域化 — 维度依赖=路径数vs最弱门否决](cases/items/C-0545.md)
 
 **案例内容 / Case Content**
-中文：案例说明：安德森局域化 — 维度依赖=路径数vs最弱门否决。核心函数：D158
+中文：案例说明：安德森局域化 — 维度依赖=路径数vs最弱门否决。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：安德森局域化 — 维度依赖=路径数vs最弱门否决。核心函数：D158
+中文：安德森局域化 — 维度依赖=路径数vs最弱门否决。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19265,11 +19271,11 @@ English: Rule-based English rendering pending human review.
 ### [#546｜BEC — N个独立因子→1个共享因子，门控风险消除](cases/items/C-0546.md)
 
 **案例内容 / Case Content**
-中文：案例说明：BEC — N个独立因子→1个共享因子，门控风险消除。核心函数：D158
+中文：案例说明：BEC — N个独立因子→1个共享因子，门控风险消除。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：BEC — N个独立因子→1个共享因子，门控风险消除。核心函数：D158
+中文：BEC — N个独立因子→1个共享因子，门控风险消除。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19300,11 +19306,11 @@ English: Rule-based English rendering pending human review.
 ### [#547｜重费米子 — Kondo刀刃态，ε极低→1/ε极大→质量10³倍 / 重费米子 - Kondo刀刃态, ε极低 -> 1/ε极大 -> 质量10³倍](cases/items/C-0547.md)
 
 **案例内容 / Case Content**
-中文：案例说明：重费米子 — Kondo刀刃态，ε极低→1/ε极大→质量10³倍。核心函数：D158
+中文：案例说明：重费米子 — Kondo刀刃态，ε极低→1/ε极大→质量10³倍。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：重费米子 — Kondo刀刃态，ε极低→1/ε极大→质量10³倍。核心函数：D158
+中文：重费米子 — Kondo刀刃态，ε极低→1/ε极大→质量10³倍。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19335,11 +19341,11 @@ English: Rule-based English rendering pending human review.
 ### [#548｜自旋液体 — 门控面对称性简并，无法选择进入哪个象限](cases/items/C-0548.md)
 
 **案例内容 / Case Content**
-中文：案例说明：自旋液体 — 门控面对称性简并，无法选择进入哪个象限。核心函数：D158
+中文：案例说明：自旋液体 — 门控面对称性简并，无法选择进入哪个象限。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：自旋液体 — 门控面对称性简并，无法选择进入哪个象限。核心函数：D158
+中文：自旋液体 — 门控面对称性简并，无法选择进入哪个象限。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19370,11 +19376,11 @@ English: Rule-based English rendering pending human review.
 ### [#549｜暗物质方向 — Φ对牛顿引力修正，sigmoid映射可能修正量级](cases/items/C-0549.md)
 
 **案例内容 / Case Content**
-中文：案例说明：暗物质方向 — Φ对牛顿引力修正，sigmoid映射可能修正量级。核心函数：D158
+中文：案例说明：暗物质方向 — Φ对牛顿引力修正，sigmoid映射可能修正量级。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：暗物质方向 — Φ对牛顿引力修正，sigmoid映射可能修正量级。核心函数：D158
+中文：暗物质方向 — Φ对牛顿引力修正，sigmoid映射可能修正量级。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19405,11 +19411,11 @@ English: Rule-based English rendering pending human review.
 ### [#550｜暗能量 — ρ_Λ∝1/(μ²ln⁴(μ/Λ))，特定红移演化，可检验 / 暗能量 - ρ_Λ∝1/(μ²ln⁴(μ/Λ)), 特定红移演化, 可检验](cases/items/C-0550.md)
 
 **案例内容 / Case Content**
-中文：案例说明：暗能量 — ρ_Λ∝1/(μ²ln⁴(μ/Λ))，特定红移演化，可检验。核心函数：D158
+中文：案例说明：暗能量 — ρ_Λ∝1/(μ²ln⁴(μ/Λ))，特定红移演化，可检验。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：暗能量 — ρ_Λ∝1/(μ²ln⁴(μ/Λ))，特定红移演化，可检验。核心函数：D158
+中文：暗能量 — ρ_Λ∝1/(μ²ln⁴(μ/Λ))，特定红移演化，可检验。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19440,11 +19446,11 @@ English: Rule-based English rendering pending human review.
 ### [#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大](cases/items/C-0551.md)
 
 **案例内容 / Case Content**
-中文：案例说明：恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大。核心函数：D158
+中文：案例说明：恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大。核心函数：D158
+中文：恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19475,11 +19481,11 @@ English: Rule-based English rendering pending human review.
 ### [#552｜黑洞信息（天文视角） — 信息按质量分级保留，大黑洞~98%](cases/items/C-0552.md)
 
 **案例内容 / Case Content**
-中文：案例说明：黑洞信息（天文视角） — 信息按质量分级保留，大黑洞~98%。核心函数：D158
+中文：案例说明：黑洞信息（天文视角） — 信息按质量分级保留，大黑洞~98%。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：黑洞信息（天文视角） — 信息按质量分级保留，大黑洞~98%。核心函数：D158
+中文：黑洞信息（天文视角） — 信息按质量分级保留，大黑洞~98%。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19510,11 +19516,11 @@ English: Rule-based English rendering pending human review.
 ### [#553｜CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级 / CMB各向异性方向 - Φ预言~10⁻⁸, 比观测10⁻⁵小3量级](cases/items/C-0553.md)
 
 **案例内容 / Case Content**
-中文：案例说明：CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级。核心函数：D158
+中文：案例说明：CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级。核心函数：D158
+中文：CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19545,11 +19551,11 @@ English: Rule-based English rendering pending human review.
 ### [#554｜为什么3+1维 — d*=-1/ln⟨ε⟩≈4，数学优化不是人择 / 为什么3+1维 - d*=-1/ln⟨ε⟩≈4, 数学优化不是人择](cases/items/C-0554.md)
 
 **案例内容 / Case Content**
-中文：案例说明：为什么3+1维 — d*=-1/ln⟨ε⟩≈4，数学优化不是人择。核心函数：D158
+中文：案例说明：为什么3+1维 — d*=-1/ln⟨ε⟩≈4，数学优化不是人择。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：为什么3+1维 — d*=-1/ln⟨ε⟩≈4，数学优化不是人择。核心函数：D158
+中文：为什么3+1维 — d*=-1/ln⟨ε⟩≈4，数学优化不是人择。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19580,11 +19586,11 @@ English: Rule-based English rendering pending human review.
 ### [#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0](cases/items/C-0555.md)
 
 **案例内容 / Case Content**
-中文：案例说明：费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0。核心函数：D158
+中文：案例说明：费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0。核心函数：D158
+中文：费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19615,11 +19621,11 @@ English: Rule-based English rendering pending human review.
 ### [#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律](cases/items/C-0556.md)
 
 **案例内容 / Case Content**
-中文：案例说明：衰老 — Φ线性增长→B指数衰减→Gompertz定律。核心函数：D158
+中文：案例说明：衰老 — Φ线性增长→B指数衰减→Gompertz定律。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：衰老 — Φ线性增长→B指数衰减→Gompertz定律。核心函数：D158
+中文：衰老 — Φ线性增长→B指数衰减→Gompertz定律。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19650,11 +19656,11 @@ English: Rule-based English rendering pending human review.
 ### [#557｜癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长](cases/items/C-0557.md)
 
 **案例内容 / Case Content**
-中文：案例说明：癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长。核心函数：D158
+中文：案例说明：癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长。核心函数：D158
+中文：癌症 — ε穿越门控面，发病率∝exp(Φt)指数增长。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19685,11 +19691,11 @@ English: Rule-based English rendering pending human review.
 ### [#558｜有性生殖 — 信息注入允许dΦ/dt<0，对抗Muller's ratchet / 有性生殖 - 信息注入允许dΦ/dt<0, 对抗Muller's ratchet](cases/items/C-0558.md)
 
 **案例内容 / Case Content**
-中文：案例说明：有性生殖 — 信息注入允许dΦ/dt<0，对抗Muller's ratchet。核心函数：D158
+中文：案例说明：有性生殖 — 信息注入允许dΦ/dt<0，对抗Muller's ratchet。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：有性生殖 — 信息注入允许dΦ/dt<0，对抗Muller's ratchet。核心函数：D158
+中文：有性生殖 — 信息注入允许dΦ/dt<0，对抗Muller's ratchet。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19720,11 +19726,11 @@ English: Rule-based English rendering pending human review.
 ### [#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间](cases/items/C-0559.md)
 
 **案例内容 / Case Content**
-中文：案例说明：大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间。核心函数：D158
+中文：案例说明：大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间。核心函数：D158
+中文：大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19755,11 +19761,11 @@ English: Rule-based English rendering pending human review.
 ### [#560｜水的特殊性 — 液态范围宽→Φ在宽温区极小](cases/items/C-0560.md)
 
 **案例内容 / Case Content**
-中文：案例说明：水的特殊性 — 液态范围宽→Φ在宽温区极小。核心函数：D158
+中文：案例说明：水的特殊性 — 液态范围宽→Φ在宽温区极小。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：水的特殊性 — 液态范围宽→Φ在宽温区极小。核心函数：D158
+中文：水的特殊性 — 液态范围宽→Φ在宽温区极小。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19790,11 +19796,11 @@ English: Rule-based English rendering pending human review.
 ### [#561｜垃圾DNA — Φ缓冲器，90%≈最优缓冲比 / 垃圾DNA - Φ缓冲器, 90%≈最优缓冲比](cases/items/C-0561.md)
 
 **案例内容 / Case Content**
-中文：案例说明：垃圾DNA — Φ缓冲器，90%≈最优缓冲比。核心函数：D158
+中文：案例说明：垃圾DNA — Φ缓冲器，90%≈最优缓冲比。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：垃圾DNA — Φ缓冲器，90%≈最优缓冲比。核心函数：D158
+中文：垃圾DNA — Φ缓冲器，90%≈最优缓冲比。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19825,11 +19831,11 @@ English: Rule-based English rendering pending human review.
 ### [#562｜意识 — Φ极小处自我感知，Φ_IIT∝-Φ(点火) / 意识 - Φ极小处自我感知, Φ_IIT∝-Φ(Ignition)](cases/items/C-0562.md)
 
 **案例内容 / Case Content**
-中文：案例说明：意识 — Φ极小处自我感知，Φ_IIT∝-Φ(点火)。核心函数：D158
+中文：案例说明：意识 — Φ极小处自我感知，Φ_IIT∝-Φ(点火)。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：意识 — Φ极小处自我感知，Φ_IIT∝-Φ(点火)。核心函数：D158
+中文：意识 — Φ极小处自我感知，Φ_IIT∝-Φ(点火)。核心函数：[D158](functions/items/D158.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**

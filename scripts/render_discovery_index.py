@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Render discovery index pages and category entrances.
+"""Render discovery index pages and internal category maps.
 
 This is the dedicated discovery rendering entrypoint used by the bootstrap
-maintenance loop. It keeps the human-facing discovery index, category pages,
-and bootstrap report in sync with the structured discovery data.
+maintenance loop. It keeps the human-facing discovery index, item pages,
+internal category maps, and bootstrap report in sync with the structured
+discovery data.
 """
 
 from __future__ import annotations
@@ -14,7 +15,6 @@ from pathlib import Path
 
 from discovery_category_utils import (
     BOOTSTRAP_REPORT_MD,
-    CATEGORY_DIR,
     CATEGORIES_JSON,
     CATEGORIES_JSONL,
     CATEGORY_MAP_JSON,
@@ -27,7 +27,6 @@ from discovery_category_utils import (
     classify_bootstrap_items,
     read_json,
     render_bootstrap_report,
-    render_category_page,
     render_discovery_page,
     render_discovery_index_md,
     render_discoveries_list,
@@ -62,10 +61,6 @@ def main() -> None:
         (DISCOVERY_INDEX_MD, render_discovery_index_md(discoveries)),
         (BOOTSTRAP_REPORT_MD, render_bootstrap_report(category_map)),
     ]
-
-    CATEGORY_DIR.mkdir(parents=True, exist_ok=True)
-    for category in category_map:
-        planned_writes.append((CATEGORY_DIR / f"{category['category_id']}.md", render_category_page(category)))
 
     item_dir = DISCOVERY_DIR / "items"
     item_dir.mkdir(parents=True, exist_ok=True)

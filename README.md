@@ -1,7 +1,9 @@
 # When Systems Catch Fire / 点火
 
-《点火》不是一本固定成书，而是一个开放维护的函数、案例、发现与预测知识库。
-When Systems Catch Fire is not a fixed book, but an open and maintained knowledge base of functions, cases, discoveries, and predictions.
+《点火》不是一本固定成书，也不是单个人类传记式项目，而是一个开放维护的函数、案例、发现、预测与新答案知识库。
+When Systems Catch Fire is not a fixed book or a single-human biographical project, but an open and maintained knowledge base of functions, cases, discoveries, predictions, and new answers.
+
+项目定位锁定 / Project positioning lock：以上定位为当前仓库的规范定位，任何 agent、脚本或人工改写不得把项目定位改回“一个人类”叙事或旧书稿定位；如需调整，必须新增独立变更说明并通过仓库验证。
 
 ## 入口 / Entrance
 

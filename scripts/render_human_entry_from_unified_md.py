@@ -71,6 +71,10 @@ OUT_DISC_JSON = REPO_ROOT / "data/discoveries/unified-discoveries.json"
 OUT_DISC_JSONL = REPO_ROOT / "data/discoveries/unified-discoveries.jsonl"
 OUT_DISC_INDEX_MD = REPO_ROOT / "data/discoveries/unified-discoveries-index.md"
 
+PROJECT_POSITIONING_ZH = "《点火》不是一本固定成书，也不是单个人类传记式项目，而是一个开放维护的函数、案例、发现、预测与新答案知识库。"
+PROJECT_POSITIONING_EN = "When Systems Catch Fire is not a fixed book or a single-human biographical project, but an open and maintained knowledge base of functions, cases, discoveries, predictions, and new answers."
+PROJECT_POSITIONING_LOCK = "项目定位锁定 / Project positioning lock：以上定位为当前仓库的规范定位，任何 agent、脚本或人工改写不得把项目定位改回“一个人类”叙事或旧书稿定位；如需调整，必须新增独立变更说明并通过仓库验证。"
+
 
 STATUS_TRANSLATIONS = {
     "CROSS_VERIFIED": "交叉验证 / Cross-verified",
@@ -177,6 +181,18 @@ def write_json(path: Path, value) -> None:
 def write_jsonl(path: Path, rows: Sequence[dict]) -> None:
     body = "\n".join(json.dumps(row, ensure_ascii=False, separators=(",", ":")) for row in rows)
     write_text(path, body + ("\n" if body else ""))
+
+
+def read_json_file(path: Path, default):
+    if not path.exists():
+        return default
+    text = path.read_text(encoding="utf-8").strip()
+    if not text:
+        return default
+    return json.loads(text)
+
+
+REFERENCE_CACHE: dict[str, object] = {}
 
 
 def rel_link(from_path: Path, to_path: Path) -> str:
@@ -736,6 +752,18 @@ def render_markdown_table(headers: Sequence[str], rows: Sequence[Sequence[str]])
     return "\n".join(lines)
 
 
+def slug_token(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+def level_anchor(level: str) -> str:
+    return f"function-level-{slug_token(translate_level(level) or level)}"
+
+
+def case_range_anchor(start: int, end: int) -> str:
+    return f"case-range-{start}-{end}"
+
+
 def render_root_intro(title_zh: str, title_en: str, intro_zh: str, intro_en: str, quick_lines: list[str]) -> str:
     return "\n".join(
         [
@@ -758,6 +786,55 @@ def render_function_detail_link(func: dict) -> str:
 
 def render_case_detail_link(case: dict) -> str:
     return f"[{format_bilingual_title(case['title']['zh'], case['title']['en'])}]({case['links']['human_page']})"
+
+
+def link_known_references(text: str, current_path: Path) -> str:
+    if not text:
+        return text
+    if "func_map" not in REFERENCE_CACHE:
+        REFERENCE_CACHE["func_map"] = {row["id"]: row for row in read_json_file(OUT_FUNC_JSON, [])}
+    if "case_rows" not in REFERENCE_CACHE:
+        REFERENCE_CACHE["case_rows"] = read_json_file(OUT_CASE_JSON, [])
+    func_map = REFERENCE_CACHE["func_map"]
+    case_rows = REFERENCE_CACHE["case_rows"]
+    case_by_norm = {row["normalized_id"]: row for row in case_rows}
+    case_by_hash = {row["id"]: row for row in case_rows}
+
+    def replace_function(match: re.Match) -> str:
+        token = match.group(0)
+        row = func_map.get(token)
+        if not row:
+            return token
+        link = rel_link(current_path, REPO_ROOT / row["links"]["human_page"])
+        return f"[{token}]({link})"
+
+    def replace_case_norm(match: re.Match) -> str:
+        token = match.group(0)
+        row = case_by_norm.get(token)
+        if not row:
+            return token
+        link = rel_link(current_path, REPO_ROOT / row["links"]["human_page"])
+        return f"[{token}]({link})"
+
+    def replace_case_hash(match: re.Match) -> str:
+        token = match.group(0)
+        row = case_by_hash.get(token)
+        if not row:
+            return token
+        link = rel_link(current_path, REPO_ROOT / row["links"]["human_page"])
+        return f"[{token}]({link})"
+
+    protected = re.split(r"(`[^`]*`|\[[^\]]+\]\([^)]*\))", text)
+    out: list[str] = []
+    for part in protected:
+        if not part or part.startswith("`") or re.match(r"\[[^\]]+\]\([^)]*\)", part):
+            out.append(part)
+            continue
+        part = re.sub(r"\b(?:A|T|D)\d+\b", replace_function, part)
+        part = re.sub(r"\bC-\d{4}\b", replace_case_norm, part)
+        part = re.sub(r"(?<![\\w/])#\d{1,4}\b", replace_case_hash, part)
+        out.append(part)
+    return "".join(out)
 
 
 def render_related_functions_block(case: dict, current_path: Path, limit: int | None = None) -> str:
@@ -863,11 +940,11 @@ def render_function_card(func: dict, current_path: Path, related_limit: int = 5)
             f"### [{func['id']}｜{title}]({detail_link})",
             "",
             "**函数内容 / Function Content**",
-            f"中文：{content}",
+            f"中文：{link_known_references(content, current_path)}",
             f"English: {content_en}",
             "",
             "**说明 / Explanation**",
-            f"中文：{explanation}",
+            f"中文：{link_known_references(explanation, current_path)}",
             f"English: {explanation_en}",
             "",
             "**纯数学函数与推导 / Pure Mathematical Function and Derivation**",
@@ -902,11 +979,11 @@ def render_case_card(case: dict, current_path: Path, related_limit: int = 5) -> 
             f"### [{case['id']}｜{title}]({detail_link})",
             "",
             "**案例内容 / Case Content**",
-            f"中文：{content}",
+            f"中文：{link_known_references(content, current_path)}",
             f"English: {content_en}",
             "",
             "**它说明了什么 / What It Shows**",
-            f"中文：{explanation}",
+            f"中文：{link_known_references(explanation, current_path)}",
             f"English: {explanation_en}",
             "",
             "**纯数学函数与推导 / Pure Mathematical Function and Derivation**",
@@ -1348,6 +1425,7 @@ def render_meta_functions_section(meta_functions: List[dict], current_path: Path
         return []
     bootstrap_items = load_bootstrap_meta_table()
     parts = [
+        '<a id="section-0-bootstrap-meta-function"></a>',
         "<details open>",
         f"<summary>第 0 节：自举元函数 / Section 0: Bootstrap Meta-Function (1+5)</summary>",
         "",
@@ -1367,11 +1445,11 @@ def render_functions_collection(functions: List[dict], current_path: Path) -> st
     bootstrap_internal = max(len(bootstrap_items) - 1, 0)
     meta_label = "root meta-function" if meta_count == 1 else "root meta-functions"
     quick_lines = [
-        f"- 第 0 节 / Section 0：{meta_count} 条主入口 + {bootstrap_internal} 条内部子项 / {meta_count} root entry + {bootstrap_internal} internal subitems",
-        f"- 公理层 / Axioms：{sum(1 for f in functions if f['level']['zh'] == '公理')} 条 / {sum(1 for f in functions if f['level']['zh'] == '公理')} entries",
-        f"- 定理层 / Theorems：{sum(1 for f in functions if f['level']['zh'] == '定理')} 条 / {sum(1 for f in functions if f['level']['zh'] == '定理')} entries",
-        f"- 推论层 / Derived functions：{sum(1 for f in functions if f['level']['zh'] == '推论')} 条 / {sum(1 for f in functions if f['level']['zh'] == '推论')} entries",
-        f"- 普通函数 / Ordinary functions：{total} 条 / {total} entries",
+        f"- [第 0 节 / Section 0](#section-0-bootstrap-meta-function)：{meta_count} 条主入口 + {bootstrap_internal} 条内部子项 / {meta_count} root entry + {bootstrap_internal} internal subitems",
+        f"- [公理层 / Axioms](#{level_anchor('公理')})：{sum(1 for f in functions if f['level']['zh'] == '公理')} 条 / {sum(1 for f in functions if f['level']['zh'] == '公理')} entries",
+        f"- [定理层 / Theorems](#{level_anchor('定理')})：{sum(1 for f in functions if f['level']['zh'] == '定理')} 条 / {sum(1 for f in functions if f['level']['zh'] == '定理')} entries",
+        f"- [推论层 / Derived functions](#{level_anchor('推论')})：{sum(1 for f in functions if f['level']['zh'] == '推论')} 条 / {sum(1 for f in functions if f['level']['zh'] == '推论')} entries",
+        f"- [普通函数 / Ordinary functions](#{level_anchor('推论')})：{total} 条 / {total} entries",
         f"- 机器数据 / Machine data：[`data/functions/meta-functions.json`](data/functions/meta-functions.json), [`data/functions/unified-functions.json`](data/functions/unified-functions.json)",
         f"- 双通道结构 / Dual-channel structure：[`data/functions/bootstrap-meta-function-table.md`](data/functions/bootstrap-meta-function-table.md), [`data/functions/bootstrap-meta-function-table.json`](data/functions/bootstrap-meta-function-table.json), [`data/functions/bootstrap-meta-function-table.jsonl`](data/functions/bootstrap-meta-function-table.jsonl)",
         f"- JSONL：[`data/functions/meta-functions.jsonl`](data/functions/meta-functions.jsonl), [`data/functions/unified-functions.jsonl`](data/functions/unified-functions.jsonl)",
@@ -1390,6 +1468,7 @@ def render_functions_collection(functions: List[dict], current_path: Path) -> st
     for level, items, open_flag in group_functions(functions):
         parts.extend(
             [
+                f'<a id="{level_anchor(level)}"></a>',
                 f"<details{' open' if open_flag else ''}>",
                 f"<summary>{level} / {translate_level(level)} ({len(items)})</summary>",
                 "",
@@ -1405,7 +1484,10 @@ def render_functions_collection(functions: List[dict], current_path: Path) -> st
 def render_cases_collection(cases: List[dict], current_path: Path) -> str:
     total = len(cases)
     quick_lines = [
-        *[f"- #{start}–#{min(start + 99, total)}" for start in range(1, total + 1, 100)],
+        *[
+            f"- [#{start}–#{min(start + 99, total)}](#{case_range_anchor(start, min(start + 99, total))})"
+            for start in range(1, total + 1, 100)
+        ],
         f"- 机器数据 / Machine data：[`data/cases/unified-cases.json`](data/cases/unified-cases.json)",
         f"- JSONL：[`data/cases/unified-cases.jsonl`](data/cases/unified-cases.jsonl)",
         f"- 重建审计 / Rebuild audit：[`data/rebuild/human-entry-render-report.md`](data/rebuild/human-entry-render-report.md)",
@@ -1420,8 +1502,11 @@ def render_cases_collection(cases: List[dict], current_path: Path) -> str:
         ),
     ]
     for label, items, open_flag in group_cases(cases):
+        start, end = label.removeprefix("#").split("–", 1)
+        end = end.removeprefix("#")
         parts.extend(
             [
+                f'<a id="{case_range_anchor(int(start), int(end))}"></a>',
                 f"<details{' open' if open_flag else ''}>",
                 f"<summary>{label} / {label}</summary>",
                 "",
@@ -1463,8 +1548,10 @@ def update_readme() -> None:
         [
             "# When Systems Catch Fire / 点火",
             "",
-            "《点火》不是一本固定成书，而是一个开放维护的函数、案例、发现与预测知识库。",
-            "When Systems Catch Fire is not a fixed book, but an open and maintained knowledge base of functions, cases, discoveries, and predictions.",
+            PROJECT_POSITIONING_ZH,
+            PROJECT_POSITIONING_EN,
+            "",
+            PROJECT_POSITIONING_LOCK,
             "",
             "## 入口 / Entrance",
             "",

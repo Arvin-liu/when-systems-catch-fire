@@ -89,6 +89,9 @@ MATH_FORMALIZATION_REPORT_JSON = REPO_ROOT / "data/rebuild/math-formalization-co
 MATH_FORMALIZATION_REPORT_MD = REPO_ROOT / "data/rebuild/math-formalization-coverage-report.md"
 MATH_FORMALIZATION_SUPPLEMENTS_JSON = REPO_ROOT / "data/rebuild/math-formalization-supplements.json"
 MATH_FORMALIZATION_SUPPLEMENTS_JSONL = REPO_ROOT / "data/rebuild/math-formalization-supplements.jsonl"
+DISCUSSION_RECALL_JSON = REPO_ROOT / "data/rebuild/discussion-inference-recall.json"
+DISCUSSION_RECALL_JSONL = REPO_ROOT / "data/rebuild/discussion-inference-recall.jsonl"
+DISCUSSION_RECALL_MD = REPO_ROOT / "data/rebuild/discussion-inference-recall.md"
 
 
 def fail(errors: list[str]) -> int:
@@ -99,6 +102,14 @@ def fail(errors: list[str]) -> int:
 
 def check_readme(errors: list[str]) -> None:
     text = README.read_text(encoding="utf-8")
+    positioning_required = [
+        "《点火》不是一本固定成书，也不是单个人类传记式项目，而是一个开放维护的函数、案例、发现、预测与新答案知识库。",
+        "Project positioning lock",
+        "不得把项目定位改回“一个人类”叙事或旧书稿定位",
+    ]
+    for marker in positioning_required:
+        if marker not in text:
+            errors.append(f"README.md missing project positioning lock marker: {marker}")
     required = [
         "[发现 / Discoveries](DISCOVERIES.md)",
         "[预测 / Predictions](PREDICTIONS.md)",
@@ -412,6 +423,26 @@ def check_math_formalization_gate(errors: list[str]) -> dict[str, int]:
     }
 
 
+def check_discussion_recall(errors: list[str]) -> dict[str, int]:
+    payload = read_discovery_json(DISCUSSION_RECALL_JSON, {})
+    if not payload:
+        errors.append("data/rebuild/discussion-inference-recall.json is missing or empty")
+        return {"total_recalled": 0, "not_fully_listed": 0, "verification_failed": 0}
+    rows = payload.get("all_recalled", [])
+    failed = [
+        row.get("recall_id", "?")
+        for row in rows
+        if (row.get("internal_verification") or {}).get("status") != "passed"
+    ]
+    if failed:
+        errors.append(f"discussion recall has unverified rows: {', '.join(failed[:20])}")
+    return {
+        "total_recalled": len(rows),
+        "not_fully_listed": len(payload.get("not_fully_listed", [])),
+        "verification_failed": len(failed),
+    }
+
+
 def check_functions_cases(errors: list[str]) -> dict[str, int]:
     functions = parse_function_table(FUNC_SOURCE)
     cases = parse_case_table(CASE_SOURCE)
@@ -461,7 +492,6 @@ def check_presence(errors: list[str]) -> None:
         REPO_ROOT / "data/answers/categories.json",
         REPO_ROOT / "data/answers/category-map.json",
         REPO_ROOT / "docs/zh/answers/items",
-        REPO_ROOT / "docs/zh/answers/categories",
         REPO_ROOT / "data/rebuild/section-zero-bootstrap-metafunction-report.md",
         REPO_ROOT / "data/rebuild/section-zero-bootstrap-metafunction-report.json",
         BOOTSTRAP_REPORT_MD,
@@ -477,10 +507,21 @@ def check_presence(errors: list[str]) -> None:
         MATH_FORMALIZATION_REPORT_MD,
         MATH_FORMALIZATION_SUPPLEMENTS_JSON,
         MATH_FORMALIZATION_SUPPLEMENTS_JSONL,
+        DISCUSSION_RECALL_JSON,
+        DISCUSSION_RECALL_JSONL,
+        DISCUSSION_RECALL_MD,
     ]
     for path in expected:
         if not path.exists():
             errors.append(f"missing generated file: {path.relative_to(REPO_ROOT)}")
+    forbidden_category_page_dirs = [
+        REPO_ROOT / "docs/zh/discoveries/categories",
+        REPO_ROOT / "docs/zh/predictions/categories",
+        REPO_ROOT / "docs/zh/answers/categories",
+    ]
+    for path in forbidden_category_page_dirs:
+        if path.exists():
+            errors.append(f"category page directory must not exist: {path.relative_to(REPO_ROOT)}")
 
 
 def main() -> int:
@@ -496,6 +537,7 @@ def main() -> int:
     check_readme(errors)
     meta_stats = check_meta_functions(errors)
     math_stats = check_math_formalization_gate(errors)
+    discussion_recall_stats = check_discussion_recall(errors)
     if quick_mode:
         discovery_stats = {
             "curated": len(read_discovery_json(DISCOVERIES_JSON, [])),
@@ -526,6 +568,7 @@ def main() -> int:
         "answers": answer_stats,
         "functions": function_stats,
         "math_formalization": math_stats,
+        "discussion_recall": discussion_recall_stats,
         "errors": errors,
     }
     print(json.dumps(report, ensure_ascii=False, indent=2))

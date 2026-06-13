@@ -12,33 +12,7 @@ English: Whenever a new discovery is produced, add it as a separate discovery en
 
 模板 / Template：[`docs/zh/discoveries/DISCOVERY_TEMPLATE.md`](docs/zh/discoveries/DISCOVERY_TEMPLATE.md)
 
-## 学科分类 / Categories
-
-中文：以下分类由当前函数表与案例表的自举扫描生成，不是空壳入口。每条发现可以属于一个或多个分类。
-
-English: The following categories are generated from a bootstrap scan of the current function and case tables. They are not empty shells, and each discovery may belong to one or more categories.
-
-| 学科分类 / Category | 正式发现 / Curated Discoveries | 待整理线索 / Discovery Leads | 当前覆盖 / Current Coverage |
-| --- | --- | --- | --- |
-| [历史与文明 / History and Civilization](docs/zh/discoveries/categories/history-and-civilization.md) | 5 | 5 | 67 related functions, 501 related cases |
-| [AI 与系统 / AI and Systems](docs/zh/discoveries/categories/ai-and-systems.md) | 5 | 5 | 135 related functions, 111 related cases |
-| [物理学 / Physics](docs/zh/discoveries/categories/physics.md) | 5 | 5 | 133 related functions, 71 related cases |
-| [心理学 / Psychology](docs/zh/discoveries/categories/psychology.md) | 5 | 5 | 61 related functions, 72 related cases |
-| [经济与财富 / Economics and Wealth](docs/zh/discoveries/categories/economics-and-wealth.md) | 5 | 5 | 60 related functions, 70 related cases |
-| [化学 / Chemistry](docs/zh/discoveries/categories/chemistry.md) | 5 | 5 | 21 related functions, 105 related cases |
-| [神经科学与意识 / Neuroscience and Consciousness](docs/zh/discoveries/categories/neuroscience-and-consciousness.md) | 5 | 5 | 46 related functions, 67 related cases |
-| [社会学与政治 / Sociology and Politics](docs/zh/discoveries/categories/sociology-and-politics.md) | 5 | 5 | 32 related functions, 42 related cases |
-| [技术与工程 / Technology and Engineering](docs/zh/discoveries/categories/technology-and-engineering.md) | 5 | 5 | 28 related functions, 31 related cases |
-| [生态与环境 / Ecology and Environment](docs/zh/discoveries/categories/ecology-and-environment.md) | 5 | 5 | 31 related functions, 27 related cases |
-| [哲学 / Philosophy](docs/zh/discoveries/categories/philosophy.md) | 5 | 5 | 33 related functions, 9 related cases |
-| [生物学 / Biology](docs/zh/discoveries/categories/biology.md) | 5 | 5 | 12 related functions, 20 related cases |
-| [教育与学习 / Education and Learning](docs/zh/discoveries/categories/education-and-learning.md) | 5 | 5 | 14 related functions, 18 related cases |
-| [医学与健康 / Medicine and Health](docs/zh/discoveries/categories/medicine-and-health.md) | 5 | 5 | 15 related functions, 13 related cases |
-| [法律与制度 / Law and Institutions](docs/zh/discoveries/categories/law-and-institutions.md) | 5 | 5 | 6 related functions, 11 related cases |
-| [文学与叙事 / Literature and Narrative](docs/zh/discoveries/categories/literature-and-narrative.md) | 2 | 2 | 2 related functions, 0 related cases |
-| [艺术与摄影 / Art and Photography](docs/zh/discoveries/categories/art-and-photography.md) | 1 | 1 | 0 related functions, 1 related cases |
-
-## 最近发现 / Recent Discoveries
+## 发现列表 / Discoveries
 
 <!-- DISCOVERY_LIST_START -->
 - [DISC-0001｜D226 | 物理存在的三重时间约束 / D226 |](docs/zh/discoveries/items/DISC-0001.md) — novelty: inconclusive · Physics

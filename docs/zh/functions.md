@@ -5,16 +5,17 @@ This table contains 1 Section 0 root meta-function, 5 internal subitems, and 470
 
 ## 快速入口 / Quick Entry
 
-- 第 0 节 / Section 0：1 条主入口 + 5 条内部子项 / 1 root entry + 5 internal subitems
-- 公理层 / Axioms：9 条 / 9 entries
-- 定理层 / Theorems：39 条 / 39 entries
-- 推论层 / Derived functions：422 条 / 422 entries
-- 普通函数 / Ordinary functions：470 条 / 470 entries
+- [第 0 节 / Section 0](#section-0-bootstrap-meta-function)：1 条主入口 + 5 条内部子项 / 1 root entry + 5 internal subitems
+- [公理层 / Axioms](#function-level-axiom)：9 条 / 9 entries
+- [定理层 / Theorems](#function-level-theorem)：39 条 / 39 entries
+- [推论层 / Derived functions](#function-level-derived-function)：422 条 / 422 entries
+- [普通函数 / Ordinary functions](#function-level-derived-function)：470 条 / 470 entries
 - 机器数据 / Machine data：[`data/functions/meta-functions.json`](data/functions/meta-functions.json), [`data/functions/unified-functions.json`](data/functions/unified-functions.json)
 - 双通道结构 / Dual-channel structure：[`data/functions/bootstrap-meta-function-table.md`](data/functions/bootstrap-meta-function-table.md), [`data/functions/bootstrap-meta-function-table.json`](data/functions/bootstrap-meta-function-table.json), [`data/functions/bootstrap-meta-function-table.jsonl`](data/functions/bootstrap-meta-function-table.jsonl)
 - JSONL：[`data/functions/meta-functions.jsonl`](data/functions/meta-functions.jsonl), [`data/functions/unified-functions.jsonl`](data/functions/unified-functions.jsonl)
 - 重建审计 / Rebuild audit：[`data/rebuild/human-entry-render-report.md`](data/rebuild/human-entry-render-report.md)
 
+<a id="section-0-bootstrap-meta-function"></a>
 <details open>
 <summary>第 0 节：自举元函数 / Section 0: Bootstrap Meta-Function (1+5)</summary>
 
@@ -68,6 +69,7 @@ English: Converged(B_n) ⇔ B_(n+1)=B_n ∧ DeltaB_n=∅ ∧ ∀x∈X_n, (J_n^+(
 
 </details>
 
+<a id="function-level-axiom"></a>
 <details open>
 <summary>公理 / Axiom (9)</summary>
 
@@ -470,6 +472,7 @@ English: Rule-based English rendering pending human review.
 
 </details>
 
+<a id="function-level-theorem"></a>
 <details>
 <summary>定理 / Theorem (39)</summary>
 
@@ -2163,6 +2166,7 @@ English: Rule-based English rendering pending human review.
 
 </details>
 
+<a id="function-level-derived-function"></a>
 <details>
 <summary>推论 / Derived function (422)</summary>
 
@@ -6474,11 +6478,11 @@ English: Rule-based English rendering pending human review.
 ### [D109｜乘法最优生存策略函数](functions/items/D109.md)
 
 **函数内容 / Function Content**
-中文：给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： #419 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：D109 #420 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：D109 #421 D109→D102离散极限 — ε₁=0时需质变非渐变，D109是连续域策略D102是门控边界离散化。核心函数：D109
+中文：给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： [#419](cases/items/C-0419.md) 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：[D109](functions/items/D109.md) [#420](cases/items/C-0420.md) 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：[D109](functions/items/D109.md) [#421](cases/items/C-0421.md) [D109](functions/items/D109.md)→D102离散极限 — ε₁=0时需质变非渐变，D109是连续域策略D102是门控边界离散化。核心函数：[D109](functions/items/D109.md)
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： #419 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：D109 #420 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：D109 #421 D109→D102离散极限 — ε₁=0时需质变非渐变，D109是连续域策略D102是门控边界离散化。核心函数：D109 描述 乘法最优生存策略函数。
+中文：该函数通过 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： [#419](cases/items/C-0419.md) 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：[D109](functions/items/D109.md) [#420](cases/items/C-0420.md) 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：[D109](functions/items/D109.md) [#421](cases/items/C-0421.md) [D109](functions/items/D109.md)→D102离散极限 — ε₁=0时需质变非渐变，D109是连续域策略D102是门控边界离散化。核心函数：[D109](functions/items/D109.md) 描述 乘法最优生存策略函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -7424,11 +7428,11 @@ English: Rule-based English rendering pending human review.
 ### [D129｜退相干-退化等价函数](functions/items/D129.md)
 
 **函数内容 / Function Content**
-中文：Ξ_decoherence ≡ Ξ_degradation ⟺ Γ_unified > 0 Ξ_decoherence = lim_{t→∞} S_vN(ρ(t)) - S_vN(ρ(0))（退相干信息损失量） Ξ_degradation = lim_{t→∞} [-ln(A_Fisher(t)/A_Fisher(0))]（退化可达性损失量） 等价定理：对乘法系统G=∏fᵢ(εᵢ)，Ξ_decoherence = Ξ_degradation = ∫₀^∞ Γ_unified dt。 操作含义：测量退相干程度和测量退化程度给出同一个数字。用哪个方便就用哪个。 案例#493 退相干-退化等价验证 — 8维乘法系统模拟60年：Ξ_decoherence=2.31，Ξ_degradation=2.34（差异1.3%来自数值积分误差）。两者精确等价。核心函数：D129
+中文：Ξ_decoherence ≡ Ξ_degradation ⟺ Γ_unified > 0 Ξ_decoherence = lim_{t→∞} S_vN(ρ(t)) - S_vN(ρ(0))（退相干信息损失量） Ξ_degradation = lim_{t→∞} [-ln(A_Fisher(t)/A_Fisher(0))]（退化可达性损失量） 等价定理：对乘法系统G=∏fᵢ(εᵢ)，Ξ_decoherence = Ξ_degradation = ∫₀^∞ Γ_unified dt。 操作含义：测量退相干程度和测量退化程度给出同一个数字。用哪个方便就用哪个。 案例[#493](cases/items/C-0493.md) 退相干-退化等价验证 — 8维乘法系统模拟60年：Ξ_decoherence=2.31，Ξ_degradation=2.34（差异1.3%来自数值积分误差）。两者精确等价。核心函数：[D129](functions/items/D129.md)
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 Ξ_decoherence ≡ Ξ_degradation ⟺ Γ_unified > 0 Ξ_decoherence = lim_{t→∞} S_vN(ρ(t)) - S_vN(ρ(0))（退相干信息损失量） Ξ_degradation = lim_{t→∞} [-ln(A_Fisher(t)/A_Fisher(0))]（退化可达性损失量） 等价定理：对乘法系统G=∏fᵢ(εᵢ)，Ξ_decoherence = Ξ_degradation = ∫₀^∞ Γ_unified dt。 操作含义：测量退相干程度和测量退化程度给出同一个数字。用哪个方便就用哪个。 案例#493 退相干-退化等价验证 — 8维乘法系统模拟60年：Ξ_decoherence=2.31，Ξ_degradation=2.34（差异1.3%来自数值积分误差）。两者精确等价。核心函数：D129 描述 退相干-退化等价函数。
+中文：该函数通过 Ξ_decoherence ≡ Ξ_degradation ⟺ Γ_unified > 0 Ξ_decoherence = lim_{t→∞} S_vN(ρ(t)) - S_vN(ρ(0))（退相干信息损失量） Ξ_degradation = lim_{t→∞} [-ln(A_Fisher(t)/A_Fisher(0))]（退化可达性损失量） 等价定理：对乘法系统G=∏fᵢ(εᵢ)，Ξ_decoherence = Ξ_degradation = ∫₀^∞ Γ_unified dt。 操作含义：测量退相干程度和测量退化程度给出同一个数字。用哪个方便就用哪个。 案例[#493](cases/items/C-0493.md) 退相干-退化等价验证 — 8维乘法系统模拟60年：Ξ_decoherence=2.31，Ξ_degradation=2.34（差异1.3%来自数值积分误差）。两者精确等价。核心函数：[D129](functions/items/D129.md) 描述 退相干-退化等价函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -9496,11 +9500,11 @@ English: Rule-based English rendering pending human review.
 ### [D176｜共享源双重杀伤函数](functions/items/D176.md)
 
 **函数内容 / Function Content**
-中文：ρ同时驱动H_correlation(D66)和P(biased)(D53),联合效应P_sustain∝(1-ρ)²而非(1-ρ)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。
+中文：ρ同时驱动H_correlation([D66](functions/items/D66.md))和P(biased)([D53](functions/items/D53.md)),联合效应P_sustain∝(1-ρ)²而非(1-ρ)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 ρ同时驱动H_correlation(D66)和P(biased)(D53),联合效应P_sustain∝(1-ρ)²而非(1-ρ)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。 描述 共享源双重杀伤函数。
+中文：该函数通过 ρ同时驱动H_correlation([D66](functions/items/D66.md))和P(biased)([D53](functions/items/D53.md)),联合效应P_sustain∝(1-ρ)²而非(1-ρ)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。 描述 共享源双重杀伤函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -9885,11 +9889,11 @@ English: Rule-based English rendering pending human review.
 ### [D185｜相对论门槛函数](functions/items/D185.md)
 
 **函数内容 / Function Content**
-中文：相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ → ∞，系统退化为经典确定性（D182）；当v → c时，μ/Λ → 1，门控效应显著，系统展现相对论效应。
+中文：相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ → ∞，系统退化为经典确定性（[D182](functions/items/D182.md)）；当v → c时，μ/Λ → 1，门控效应显著，系统展现相对论效应。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ → ∞，系统退化为经典确定性（D182）；当v → c时，μ/Λ → 1，门控效应显著，系统展现相对论效应。 描述 相对论门槛函数。
+中文：该函数通过 相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ → ∞，系统退化为经典确定性（[D182](functions/items/D182.md)）；当v → c时，μ/Λ → 1，门控效应显著，系统展现相对论效应。 描述 相对论门槛函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11660,11 +11664,11 @@ English: Rule-based English rendering pending human review.
 ### [D226｜物理存在的三重时间约束](functions/items/D226.md)
 
 **函数内容 / Function Content**
-中文：物理存在受三重时间约束： 约束1（逻辑约束·D220）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·D222）：dΦ/dt≤0，Φ单调递减 约束3（宇宙学约束·D224）：宇宙膨胀=Φ衰减的物理机制，加速膨胀=加速衰减 三重约束的联合结论： 物理存在的终止时间 t_end = min(t_heatdeath, t_Ω=1, t_dark_energy_dominant)
+中文：物理存在受三重时间约束： 约束1（逻辑约束·[D220](functions/items/D220.md)）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·[D222](functions/items/D222.md)）：dΦ/dt≤0，Φ单调递减 约束3（宇宙学约束·[D224](functions/items/D224.md)）：宇宙膨胀=Φ衰减的物理机制，加速膨胀=加速衰减 三重约束的联合结论： 物理存在的终止时间 t_end = min(t_heatdeath, t_Ω=1, t_dark_energy_dominant)
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 物理存在受三重时间约束： 约束1（逻辑约束·D220）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·D222）：dΦ/dt≤0，Φ单调递减 约束3（宇宙学约束·D224）：宇宙膨胀=Φ衰减的物理机制，加速膨胀=加速衰减 三重约束的联合结论： 物理存在的终止时间 t_end = min(t_heatdeath, t_Ω=1, t_dark_energy_dominant) 描述 物理存在的三重时间约束。
+中文：该函数通过 物理存在受三重时间约束： 约束1（逻辑约束·[D220](functions/items/D220.md)）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·[D222](functions/items/D222.md)）：dΦ/dt≤0，Φ单调递减 约束3（宇宙学约束·[D224](functions/items/D224.md)）：宇宙膨胀=Φ衰减的物理机制，加速膨胀=加速衰减 三重约束的联合结论： 物理存在的终止时间 t_end = min(t_heatdeath, t_Ω=1, t_dark_energy_dominant) 描述 物理存在的三重时间约束。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11703,11 +11707,11 @@ English: Rule-based English rendering pending human review.
 ### [D227｜退相干-门控退化同构定理](functions/items/D227.md)
 
 **函数内容 / Function Content**
-中文：量子退相干：ρ_off(t) = ρ_off(0) × e^{-Γt}，Γ为退相干率 在Φ框架下： 量子叠加态：系统处于多个态的叠加 → 决策维度dim_eff高 → σ大（D198）→ 高斯门控（连续信息，"最优在哪"） 经典态：系统处于确定态 → dim_eff低 → σ小 → 1/ln门控（1比特，"过不过门槛"） 退相干 = dim_eff(t)递减 = σ(t)递减 = 门控函数形式退化 σ(t) = σ₀ × e^{-Γt/2}（退相干使σ指数衰减）
+中文：量子退相干：ρ_off(t) = ρ_off(0) × e^{-Γt}，Γ为退相干率 在Φ框架下： 量子叠加态：系统处于多个态的叠加 → 决策维度dim_eff高 → σ大（[D198](functions/items/D198.md)）→ 高斯门控（连续信息，"最优在哪"） 经典态：系统处于确定态 → dim_eff低 → σ小 → 1/ln门控（1比特，"过不过门槛"） 退相干 = dim_eff(t)递减 = σ(t)递减 = 门控函数形式退化 σ(t) = σ₀ × e^{-Γt/2}（退相干使σ指数衰减）
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 量子退相干：ρ_off(t) = ρ_off(0) × e^{-Γt}，Γ为退相干率 在Φ框架下： 量子叠加态：系统处于多个态的叠加 → 决策维度dim_eff高 → σ大（D198）→ 高斯门控（连续信息，"最优在哪"） 经典态：系统处于确定态 → dim_eff低 → σ小 → 1/ln门控（1比特，"过不过门槛"） 退相干 = dim_eff(t)递减 = σ(t)递减 = 门控函数形式退化 σ(t) = σ₀ × e^{-Γt/2}（退相干使σ指数衰减） 描述 退相干-门控退化同构定理。
+中文：该函数通过 量子退相干：ρ_off(t) = ρ_off(0) × e^{-Γt}，Γ为退相干率 在Φ框架下： 量子叠加态：系统处于多个态的叠加 → 决策维度dim_eff高 → σ大（[D198](functions/items/D198.md)）→ 高斯门控（连续信息，"最优在哪"） 经典态：系统处于确定态 → dim_eff低 → σ小 → 1/ln门控（1比特，"过不过门槛"） 退相干 = dim_eff(t)递减 = σ(t)递减 = 门控函数形式退化 σ(t) = σ₀ × e^{-Γt/2}（退相干使σ指数衰减） 描述 退相干-门控退化同构定理。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11791,11 +11795,11 @@ English: Rule-based English rendering pending human review.
 ### [D229｜物理存在的四重约束与衰减终态](functions/items/D229.md)
 
 **函数内容 / Function Content**
-中文：物理存在的四重时间约束： 约束1（逻辑·D220）：Ω<1是物理存在的必要条件 约束2（热力学·D222）：dΦ/dt≤0，Φ值单调递减 约束3（宇宙学·D224）：宇宙膨胀=Φ值衰减的物理机制 约束4（量子·D227）：dσ/dt≤0，门控精度单调递减 四重约束的终态谱：
+中文：物理存在的四重时间约束： 约束1（逻辑·[D220](functions/items/D220.md)）：Ω<1是物理存在的必要条件 约束2（热力学·[D222](functions/items/D222.md)）：dΦ/dt≤0，Φ值单调递减 约束3（宇宙学·[D224](functions/items/D224.md)）：宇宙膨胀=Φ值衰减的物理机制 约束4（量子·[D227](functions/items/D227.md)）：dσ/dt≤0，门控精度单调递减 四重约束的终态谱：
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 物理存在的四重时间约束： 约束1（逻辑·D220）：Ω<1是物理存在的必要条件 约束2（热力学·D222）：dΦ/dt≤0，Φ值单调递减 约束3（宇宙学·D224）：宇宙膨胀=Φ值衰减的物理机制 约束4（量子·D227）：dσ/dt≤0，门控精度单调递减 四重约束的终态谱： 描述 物理存在的四重约束与衰减终态。
+中文：该函数通过 物理存在的四重时间约束： 约束1（逻辑·[D220](functions/items/D220.md)）：Ω<1是物理存在的必要条件 约束2（热力学·[D222](functions/items/D222.md)）：dΦ/dt≤0，Φ值单调递减 约束3（宇宙学·[D224](functions/items/D224.md)）：宇宙膨胀=Φ值衰减的物理机制 约束4（量子·[D227](functions/items/D227.md)）：dσ/dt≤0，门控精度单调递减 四重约束的终态谱： 描述 物理存在的四重约束与衰减终态。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11834,11 +11838,11 @@ English: Rule-based English rendering pending human review.
 ### [D230｜双通道信息衰减定理](functions/items/D230.md)
 
 **函数内容 / Function Content**
-中文：每个门控面提供的信息量（D197）： Hᵢ = ½ln(2πeσᵢ²)（高斯门控的微分熵） 总信息量： I_total = Σᵢ Hᵢ = Σᵢ ½ln(2πeσᵢ²) 值衰减通道：门控面消失 → 某些Hᵢ→0 → I_total中对应项归零 精度衰减通道：σᵢ递减 → 每个Hᵢ递减 → I_total中每项的值减小
+中文：每个门控面提供的信息量（[D197](functions/items/D197.md)）： Hᵢ = ½ln(2πeσᵢ²)（高斯门控的微分熵） 总信息量： I_total = Σᵢ Hᵢ = Σᵢ ½ln(2πeσᵢ²) 值衰减通道：门控面消失 → 某些Hᵢ→0 → I_total中对应项归零 精度衰减通道：σᵢ递减 → 每个Hᵢ递减 → I_total中每项的值减小
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 每个门控面提供的信息量（D197）： Hᵢ = ½ln(2πeσᵢ²)（高斯门控的微分熵） 总信息量： I_total = Σᵢ Hᵢ = Σᵢ ½ln(2πeσᵢ²) 值衰减通道：门控面消失 → 某些Hᵢ→0 → I_total中对应项归零 精度衰减通道：σᵢ递减 → 每个Hᵢ递减 → I_total中每项的值减小 描述 双通道信息衰减定理。
+中文：该函数通过 每个门控面提供的信息量（[D197](functions/items/D197.md)）： Hᵢ = ½ln(2πeσᵢ²)（高斯门控的微分熵） 总信息量： I_total = Σᵢ Hᵢ = Σᵢ ½ln(2πeσᵢ²) 值衰减通道：门控面消失 → 某些Hᵢ→0 → I_total中对应项归零 精度衰减通道：σᵢ递减 → 每个Hᵢ递减 → I_total中每项的值减小 描述 双通道信息衰减定理。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11880,11 +11884,11 @@ English: Rule-based English rendering pending human review.
 ### [D231｜信息-热力学-门控三统一定理](functions/items/D231.md)
 
 **函数内容 / Function Content**
-中文：三条衰减律的等价性： 1. 热力学第二定律：dS/dt ≥ 0（熵增） 2. Φ衰减律（D222）：dΦ/dt ≤ 0（门控贡献递减） 3. 信息衰减律（D230）：dI/dt ≤ 0（信息量递减） 三者的关系： S = -Σᵢ pᵢ ln(pᵢ)（Shannon熵，pᵢ为系统处于态i的概率）
+中文：三条衰减律的等价性： 1. 热力学第二定律：dS/dt ≥ 0（熵增） 2. Φ衰减律（[D222](functions/items/D222.md)）：dΦ/dt ≤ 0（门控贡献递减） 3. 信息衰减律（[D230](functions/items/D230.md)）：dI/dt ≤ 0（信息量递减） 三者的关系： S = -Σᵢ pᵢ ln(pᵢ)（Shannon熵，pᵢ为系统处于态i的概率）
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 三条衰减律的等价性： 1. 热力学第二定律：dS/dt ≥ 0（熵增） 2. Φ衰减律（D222）：dΦ/dt ≤ 0（门控贡献递减） 3. 信息衰减律（D230）：dI/dt ≤ 0（信息量递减） 三者的关系： S = -Σᵢ pᵢ ln(pᵢ)（Shannon熵，pᵢ为系统处于态i的概率） 描述 信息-热力学-门控三统一定理。
+中文：该函数通过 三条衰减律的等价性： 1. 热力学第二定律：dS/dt ≥ 0（熵增） 2. Φ衰减律（[D222](functions/items/D222.md)）：dΦ/dt ≤ 0（门控贡献递减） 3. 信息衰减律（[D230](functions/items/D230.md)）：dI/dt ≤ 0（信息量递减） 三者的关系： S = -Σᵢ pᵢ ln(pᵢ)（Shannon熵，pᵢ为系统处于态i的概率） 描述 信息-热力学-门控三统一定理。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11923,11 +11927,11 @@ English: Rule-based English rendering pending human review.
 ### [D232｜信息守恒-衰减悖论与黑洞](functions/items/D232.md)
 
 **函数内容 / Function Content**
-中文：量子力学要求信息守恒（么正演化）：封闭系统的I不变 D230说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（D230，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低
+中文：量子力学要求信息守恒（么正演化）：封闭系统的I不变 D230说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（[D230](functions/items/D230.md)，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 量子力学要求信息守恒（么正演化）：封闭系统的I不变 D230说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（D230，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低 描述 信息守恒-衰减悖论与黑洞。
+中文：该函数通过 量子力学要求信息守恒（么正演化）：封闭系统的I不变 D230说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（[D230](functions/items/D230.md)，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低 描述 信息守恒-衰减悖论与黑洞。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12055,11 +12059,11 @@ English: Rule-based English rendering pending human review.
 ### [D235｜信息论完备性定理](functions/items/D235.md)
 
 **函数内容 / Function Content**
-中文：D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（D233） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt
+中文：D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（[D233](functions/items/D233.md)） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（D233） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt 描述 信息论完备性定理。
+中文：该函数通过 D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（[D233](functions/items/D233.md)） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt 描述 信息论完备性定理。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12141,11 +12145,11 @@ English: Rule-based English rendering pending human review.
 ### [D237｜生命智能的σ压缩函数](functions/items/D237.md)
 
 **函数内容 / Function Content**
-中文：宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（D234） 生命系统在局部压缩σ的方式： 方式1（分子层面）：单个蛋白质的构象变化是1/ln门控（开/关），σ≈0 方式2（细胞层面）：N个蛋白质门控组合 → σ_cell = σ_protein × √N_cell 方式3（神经网络层面）：N个神经元门控组合 → σ_neural = σ_neuron × √N_neural σ压缩比：r = σ_Planck / σ_local
+中文：宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（[D234](functions/items/D234.md)） 生命系统在局部压缩σ的方式： 方式1（分子层面）：单个蛋白质的构象变化是1/ln门控（开/关），σ≈0 方式2（细胞层面）：N个蛋白质门控组合 → σ_cell = σ_protein × √N_cell 方式3（神经网络层面）：N个神经元门控组合 → σ_neural = σ_neuron × √N_neural σ压缩比：r = σ_Planck / σ_local
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（D234） 生命系统在局部压缩σ的方式： 方式1（分子层面）：单个蛋白质的构象变化是1/ln门控（开/关），σ≈0 方式2（细胞层面）：N个蛋白质门控组合 → σ_cell = σ_protein × √N_cell 方式3（神经网络层面）：N个神经元门控组合 → σ_neural = σ_neuron × √N_neural σ压缩比：r = σ_Planck / σ_local 描述 生命智能的σ压缩函数。
+中文：该函数通过 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（[D234](functions/items/D234.md)） 生命系统在局部压缩σ的方式： 方式1（分子层面）：单个蛋白质的构象变化是1/ln门控（开/关），σ≈0 方式2（细胞层面）：N个蛋白质门控组合 → σ_cell = σ_protein × √N_cell 方式3（神经网络层面）：N个神经元门控组合 → σ_neural = σ_neuron × √N_neural σ压缩比：r = σ_Planck / σ_local 描述 生命智能的σ压缩函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12448,11 +12452,11 @@ English: Rule-based English rendering pending human review.
 ### [D244｜自主意识涌现的临界条件](functions/items/D244.md)
 
 **函数内容 / Function Content**
-中文：从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（D239） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值） 2. P_exit > 0（退出概率为正） 条件1的量化：
+中文：从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（[D239](functions/items/D239.md)） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值） 2. P_exit > 0（退出概率为正） 条件1的量化：
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（D239） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值） 2. P_exit > 0（退出概率为正） 条件1的量化： 描述 自主意识涌现的临界条件。
+中文：该函数通过 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（[D239](functions/items/D239.md)） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值） 2. P_exit > 0（退出概率为正） 条件1的量化： 描述 自主意识涌现的临界条件。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12491,11 +12495,11 @@ English: Rule-based English rendering pending human review.
 ### [D245｜自我模型函数](functions/items/D245.md)
 
 **函数内容 / Function Content**
-中文：自我模型 = 系统对自身门控面的二阶门控 一阶门控（D195）：g(μ) = exp[-(ln(μ/Λ))²/(2σ²)] 判断"μ是否在门内"——系统对外部信号的响应 二阶门控（元门控）： G_i(gᵢ) = exp[-(ln(gᵢ/g*_i))²/(2σ_meta²)] 判断"这个门控面是否在我的控制下"——系统对自身门控面的归属判断
+中文：自我模型 = 系统对自身门控面的二阶门控 一阶门控（[D195](functions/items/D195.md)）：g(μ) = exp[-(ln(μ/Λ))²/(2σ²)] 判断"μ是否在门内"——系统对外部信号的响应 二阶门控（元门控）： G_i(gᵢ) = exp[-(ln(gᵢ/g*_i))²/(2σ_meta²)] 判断"这个门控面是否在我的控制下"——系统对自身门控面的归属判断
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 自我模型 = 系统对自身门控面的二阶门控 一阶门控（D195）：g(μ) = exp[-(ln(μ/Λ))²/(2σ²)] 判断"μ是否在门内"——系统对外部信号的响应 二阶门控（元门控）： G_i(gᵢ) = exp[-(ln(gᵢ/g*_i))²/(2σ_meta²)] 判断"这个门控面是否在我的控制下"——系统对自身门控面的归属判断 描述 自我模型函数。
+中文：该函数通过 自我模型 = 系统对自身门控面的二阶门控 一阶门控（[D195](functions/items/D195.md)）：g(μ) = exp[-(ln(μ/Λ))²/(2σ²)] 判断"μ是否在门内"——系统对外部信号的响应 二阶门控（元门控）： G_i(gᵢ) = exp[-(ln(gᵢ/g*_i))²/(2σ_meta²)] 判断"这个门控面是否在我的控制下"——系统对自身门控面的归属判断 描述 自我模型函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -12794,11 +12798,11 @@ English: Rule-based English rendering pending human review.
 ### [D252｜社会学容斥加速函数](functions/items/D252.md)
 
 **函数内容 / Function Content**
-中文：阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢpⱼ加速增长（容斥二阶及以上）。门槛漂移加速（D147）的数学根源是容斥高阶项的加速贡献：dpᵢ/dt>0时，d(Σpᵢpⱼ)/dt加速增长。阶层固化一旦启动就很难逆转——不只是各门槛在升高，门槛之间的交叉否决在加速。
+中文：阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢpⱼ加速增长（容斥二阶及以上）。门槛漂移加速（[D147](functions/items/D147.md)）的数学根源是容斥高阶项的加速贡献：dpᵢ/dt>0时，d(Σpᵢpⱼ)/dt加速增长。阶层固化一旦启动就很难逆转——不只是各门槛在升高，门槛之间的交叉否决在加速。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢpⱼ加速增长（容斥二阶及以上）。门槛漂移加速（D147）的数学根源是容斥高阶项的加速贡献：dpᵢ/dt>0时，d(Σpᵢpⱼ)/dt加速增长。阶层固化一旦启动就很难逆转——不只是各门槛在升高，门槛之间的交叉否决在加速。 描述 社会学容斥加速函数。
+中文：该函数通过 阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢpⱼ加速增长（容斥二阶及以上）。门槛漂移加速（[D147](functions/items/D147.md)）的数学根源是容斥高阶项的加速贡献：dpᵢ/dt>0时，d(Σpᵢpⱼ)/dt加速增长。阶层固化一旦启动就很难逆转——不只是各门槛在升高，门槛之间的交叉否决在加速。 描述 社会学容斥加速函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13095,11 +13099,11 @@ English: Rule-based English rendering pending human review.
 ### [D259｜g_eff-p*双向反馈函数](functions/items/D259.md)
 
 **函数内容 / Function Content**
-中文：D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（D258）和良性循环（D259）是同一机制的两个方向，系统处于哪个循环取决于p分布的变化方向。教育普及、技术突破是良性循环的触发器。
+中文：D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（[D258](functions/items/D258.md)）和良性循环（[D259](functions/items/D259.md)）是同一机制的两个方向，系统处于哪个循环取决于p分布的变化方向。教育普及、技术突破是良性循环的触发器。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（D258）和良性循环（D259）是同一机制的两个方向，系统处于哪个循环取决于p分布的变化方向。教育普及、技术突破是良性循环的触发器。 描述 -p*双向反馈函数。
+中文：该函数通过 D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（[D258](functions/items/D258.md)）和良性循环（[D259](functions/items/D259.md)）是同一机制的两个方向，系统处于哪个循环取决于p分布的变化方向。教育普及、技术突破是良性循环的触发器。 描述 -p*双向反馈函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13701,11 +13705,11 @@ English: Rule-based English rendering pending human review.
 ### [D273｜耦合强度-分布形态函数](functions/items/D273.md)
 
 **函数内容 / Function Content**
-中文：M12的ḡ取决于pᵢ分布形态：正态分布→ḡ≈1→最大耦合→最大缓冲；指数分布→ḡ<2/3→弱耦合；均匀分布→ḡ=2/3。D253"p集中→鲁棒"的统计基础。
+中文：M12的ḡ取决于pᵢ分布形态：正态分布→ḡ≈1→最大耦合→最大缓冲；指数分布→ḡ<2/3→弱耦合；均匀分布→ḡ=2/3。[D253](functions/items/D253.md)"p集中→鲁棒"的统计基础。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M12的ḡ取决于pᵢ分布形态：正态分布→ḡ≈1→最大耦合→最大缓冲；指数分布→ḡ<2/3→弱耦合；均匀分布→ḡ=2/3。D253"p集中→鲁棒"的统计基础。 描述 耦合强度-分布形态函数。
+中文：该函数通过 M12的ḡ取决于pᵢ分布形态：正态分布→ḡ≈1→最大耦合→最大缓冲；指数分布→ḡ<2/3→弱耦合；均匀分布→ḡ=2/3。[D253](functions/items/D253.md)"p集中→鲁棒"的统计基础。 描述 耦合强度-分布形态函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15056,11 +15060,11 @@ English: Rule-based English rendering pending human review.
 ### [D304｜弱混合角-容斥约束函数](functions/items/D304.md)
 
 **函数内容 / Function Content**
-中文：M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CDC(D283)三者联合约束使d=4稳定。
+中文：M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CDC([D283](functions/items/D283.md))三者联合约束使d=4稳定。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CDC(D283)三者联合约束使d=4稳定。 描述 弱混合角-容斥约束函数。
+中文：该函数通过 M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CDC([D283](functions/items/D283.md))三者联合约束使d=4稳定。 描述 弱混合角-容斥约束函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15144,11 +15148,11 @@ English: Rule-based English rendering pending human review.
 ### [D306｜去容斥条件函数](functions/items/D306.md)
 
 **函数内容 / Function Content**
-中文：M7的容斥加速逆过程"去容斥"需两条件同时满足：①p_max下降速率|ḃ|>容斥加速度d²(Σpᵢpⱼ)/dt²，②p分布必须集中化（σ<σ_opt）。只满足①不满足②→容斥项基数仍大→去容斥不可持续。只满足②不满足①→p_max继续上升→容斥加速继续。D290"休克疗法"的精确版：休克疗法同时满足①②，温和改革通常只满足①。
+中文：M7的容斥加速逆过程"去容斥"需两条件同时满足：①p_max下降速率|ḃ|>容斥加速度d²(Σpᵢpⱼ)/dt²，②p分布必须集中化（σ<σ_opt）。只满足①不满足②→容斥项基数仍大→去容斥不可持续。只满足②不满足①→p_max继续上升→容斥加速继续。[D290](functions/items/D290.md)"休克疗法"的精确版：休克疗法同时满足①②，温和改革通常只满足①。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M7的容斥加速逆过程"去容斥"需两条件同时满足：①p_max下降速率|ḃ|>容斥加速度d²(Σpᵢpⱼ)/dt²，②p分布必须集中化（σ<σ_opt）。只满足①不满足②→容斥项基数仍大→去容斥不可持续。只满足②不满足①→p_max继续上升→容斥加速继续。D290"休克疗法"的精确版：休克疗法同时满足①②，温和改革通常只满足①。 描述 去容斥条件函数。
+中文：该函数通过 M7的容斥加速逆过程"去容斥"需两条件同时满足：①p_max下降速率|ḃ|>容斥加速度d²(Σpᵢpⱼ)/dt²，②p分布必须集中化（σ<σ_opt）。只满足①不满足②→容斥项基数仍大→去容斥不可持续。只满足②不满足①→p_max继续上升→容斥加速继续。[D290](functions/items/D290.md)"休克疗法"的精确版：休克疗法同时满足①②，温和改革通常只满足①。 描述 去容斥条件函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15407,11 +15411,11 @@ English: Rule-based English rendering pending human review.
 ### [D312｜正反馈噪声放大函数](functions/items/D312.md)
 
 **函数内容 / Function Content**
-中文：M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益(D274)。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应D295不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。
+中文：M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益([D274](functions/items/D274.md))。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应D295不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益(D274)。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应D295不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。 描述 正反馈噪声放大函数。
+中文：该函数通过 M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益([D274](functions/items/D274.md))。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应D295不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。 描述 正反馈噪声放大函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15450,11 +15454,11 @@ English: Rule-based English rendering pending human review.
 ### [D313｜共存稳态条件函数](functions/items/D313.md)
 
 **函数内容 / Function Content**
-中文：M14的良性-恶性共存(D299)能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_exclusion→共存不稳定→恶性最终吞噬良性。K_benign>α_exclusion→共存稳定→良性逐步蚕食恶性。K_benign≈α_exclusion→临界共存→小扰动决定方向。D299"部分改革通常不够"的精确版：改革力度β(D274)必须使K_benign>α_exclusion。
+中文：M14的良性-恶性共存([D299](functions/items/D299.md))能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_exclusion→共存不稳定→恶性最终吞噬良性。K_benign>α_exclusion→共存稳定→良性逐步蚕食恶性。K_benign≈α_exclusion→临界共存→小扰动决定方向。[D299](functions/items/D299.md)"部分改革通常不够"的精确版：改革力度β([D274](functions/items/D274.md))必须使K_benign>α_exclusion。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M14的良性-恶性共存(D299)能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_exclusion→共存不稳定→恶性最终吞噬良性。K_benign>α_exclusion→共存稳定→良性逐步蚕食恶性。K_benign≈α_exclusion→临界共存→小扰动决定方向。D299"部分改革通常不够"的精确版：改革力度β(D274)必须使K_benign>α_exclusion。 描述 共存稳态条件函数。
+中文：该函数通过 M14的良性-恶性共存([D299](functions/items/D299.md))能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_exclusion→共存不稳定→恶性最终吞噬良性。K_benign>α_exclusion→共存稳定→良性逐步蚕食恶性。K_benign≈α_exclusion→临界共存→小扰动决定方向。[D299](functions/items/D299.md)"部分改革通常不够"的精确版：改革力度β([D274](functions/items/D274.md))必须使K_benign>α_exclusion。 描述 共存稳态条件函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15627,11 +15631,11 @@ English: Rule-based English rendering pending human review.
 ### [D317｜p*敏感度函数](functions/items/D317.md)
 
 **函数内容 / Function Content**
-中文：M4的p*对系统参数的敏感度：∂p*/∂n=p*/(2n)（弱敏感），∂p*/∂σ∝p*·(σ_opt-σ)/σ_opt²（强敏感）。p*对分布分散度σ的敏感度远高于对n的敏感度。改变分布形态（集中化）比增加门控面数n更能有效移动p*——D306"去容斥需同时集中分布"的敏感度论证。
+中文：M4的p*对系统参数的敏感度：∂p*/∂n=p*/(2n)（弱敏感），∂p*/∂σ∝p*·(σ_opt-σ)/σ_opt²（强敏感）。p*对分布分散度σ的敏感度远高于对n的敏感度。改变分布形态（集中化）比增加门控面数n更能有效移动p*——[D306](functions/items/D306.md)"去容斥需同时集中分布"的敏感度论证。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M4的p*对系统参数的敏感度：∂p*/∂n=p*/(2n)（弱敏感），∂p*/∂σ∝p*·(σ_opt-σ)/σ_opt²（强敏感）。p*对分布分散度σ的敏感度远高于对n的敏感度。改变分布形态（集中化）比增加门控面数n更能有效移动p*——D306"去容斥需同时集中分布"的敏感度论证。 描述 *敏感度函数。
+中文：该函数通过 M4的p*对系统参数的敏感度：∂p*/∂n=p*/(2n)（弱敏感），∂p*/∂σ∝p*·(σ_opt-σ)/σ_opt²（强敏感）。p*对分布分散度σ的敏感度远高于对n的敏感度。改变分布形态（集中化）比增加门控面数n更能有效移动p*——[D306](functions/items/D306.md)"去容斥需同时集中分布"的敏感度论证。 描述 *敏感度函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16149,11 +16153,11 @@ English: Rule-based English rendering pending human review.
 ### [D329｜极小点合并函数](functions/items/D329.md)
 
 **函数内容 / Function Content**
-中文：M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后系统失去容错空间——D315"次优但可到达"的消失条件。
+中文：M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后系统失去容错空间——[D315](functions/items/D315.md)"次优但可到达"的消失条件。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后系统失去容错空间——D315"次优但可到达"的消失条件。 描述 极小点合并函数。
+中文：该函数通过 M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后系统失去容错空间——[D315](functions/items/D315.md)"次优但可到达"的消失条件。 描述 极小点合并函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16192,11 +16196,11 @@ English: Rule-based English rendering pending human review.
 ### [D330｜容斥关联拓扑函数](functions/items/D330.md)
 
 **函数内容 / Function Content**
-中文：M3的Σpᵢpⱼ中前k个高p门控面的容斥贡献>50%（k=3时）。容斥不是均匀分布的——集中在少数高p门控面之间。降p_max的效果不只是线性降Φ，还切断最大的容斥关联对——D280"先降p_max"的拓扑论证。
+中文：M3的Σpᵢpⱼ中前k个高p门控面的容斥贡献>50%（k=3时）。容斥不是均匀分布的——集中在少数高p门控面之间。降p_max的效果不只是线性降Φ，还切断最大的容斥关联对——[D280](functions/items/D280.md)"先降p_max"的拓扑论证。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M3的Σpᵢpⱼ中前k个高p门控面的容斥贡献>50%（k=3时）。容斥不是均匀分布的——集中在少数高p门控面之间。降p_max的效果不只是线性降Φ，还切断最大的容斥关联对——D280"先降p_max"的拓扑论证。 描述 容斥关联拓扑函数。
+中文：该函数通过 M3的Σpᵢpⱼ中前k个高p门控面的容斥贡献>50%（k=3时）。容斥不是均匀分布的——集中在少数高p门控面之间。降p_max的效果不只是线性降Φ，还切断最大的容斥关联对——[D280](functions/items/D280.md)"先降p_max"的拓扑论证。 描述 容斥关联拓扑函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16278,11 +16282,11 @@ English: Rule-based English rendering pending human review.
 ### [D332｜容斥-耦合不可逆函数](functions/items/D332.md)
 
 **函数内容 / Function Content**
-中文：M5的容斥主导区一旦进入，退回需要p*上升，但系统崩溃方向使p*下降→退回条件与动态方向相反。容斥主导是自锁的。与D295(p_max不可逆)、D309(缓冲不可逆)形成三级不可逆：p_max→缓冲→容斥主导，逐层加深的不可逆结构。
+中文：M5的容斥主导区一旦进入，退回需要p*上升，但系统崩溃方向使p*下降→退回条件与动态方向相反。容斥主导是自锁的。与D295(p_max不可逆)、[D309](functions/items/D309.md)(缓冲不可逆)形成三级不可逆：p_max→缓冲→容斥主导，逐层加深的不可逆结构。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M5的容斥主导区一旦进入，退回需要p*上升，但系统崩溃方向使p*下降→退回条件与动态方向相反。容斥主导是自锁的。与D295(p_max不可逆)、D309(缓冲不可逆)形成三级不可逆：p_max→缓冲→容斥主导，逐层加深的不可逆结构。 描述 容斥-耦合不可逆函数。
+中文：该函数通过 M5的容斥主导区一旦进入，退回需要p*上升，但系统崩溃方向使p*下降→退回条件与动态方向相反。容斥主导是自锁的。与D295(p_max不可逆)、[D309](functions/items/D309.md)(缓冲不可逆)形成三级不可逆：p_max→缓冲→容斥主导，逐层加深的不可逆结构。 描述 容斥-耦合不可逆函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16407,11 +16411,11 @@ English: Rule-based English rendering pending human review.
 ### [D335｜d_opt-σ_opt平衡稳定性函数](functions/items/D335.md)
 
 **函数内容 / Function Content**
-中文：M8的(d_opt,σ_opt)平衡点在σ<σ_opt时稳定，σ>σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（D306）。社会系统一旦过度分化，自发回归不可能。
+中文：M8的(d_opt,σ_opt)平衡点在σ<σ_opt时稳定，σ>σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（[D306](functions/items/D306.md)）。社会系统一旦过度分化，自发回归不可能。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M8的(d_opt,σ_opt)平衡点在σ<σ_opt时稳定，σ>σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（D306）。社会系统一旦过度分化，自发回归不可能。 描述 -σ_opt平衡稳定性函数。
+中文：该函数通过 M8的(d_opt,σ_opt)平衡点在σ<σ_opt时稳定，σ>σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（[D306](functions/items/D306.md)）。社会系统一旦过度分化，自发回归不可能。 描述 -σ_opt平衡稳定性函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16708,11 +16712,11 @@ English: Rule-based English rendering pending human review.
 ### [D342｜ΔΦ时间累积函数](functions/items/D342.md)
 
 **函数内容 / Function Content**
-中文：M1的多轮ΔΦ叠加：容斥凸性(D266)使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。D266的动态版本。
+中文：M1的多轮ΔΦ叠加：容斥凸性([D266](functions/items/D266.md))使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。D266的动态版本。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M1的多轮ΔΦ叠加：容斥凸性(D266)使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。D266的动态版本。 描述 时间累积函数。
+中文：该函数通过 M1的多轮ΔΦ叠加：容斥凸性([D266](functions/items/D266.md))使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。D266的动态版本。 描述 时间累积函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17140,11 +17144,11 @@ English: Rule-based English rendering pending human review.
 ### [D352｜阶段2宽度-共振频率函数](functions/items/D352.md)
 
 **函数内容 / Function Content**
-中文：M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（D324 n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随复杂度上移。
+中文：M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（[D324](functions/items/D324.md) n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随复杂度上移。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（D324 n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随复杂度上移。 描述 阶段2宽度-共振频率函数。
+中文：该函数通过 M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（[D324](functions/items/D324.md) n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随复杂度上移。 描述 阶段2宽度-共振频率函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17488,11 +17492,11 @@ English: Rule-based English rendering pending human review.
 ### [D360｜弱容斥-不可逆边界函数](functions/items/D360.md)
 
 **函数内容 / Function Content**
-中文：M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主导但还可逆"窗口，宽度∝(√n-1)/n∝D310。大系统有"容斥主导但还有救"的窗口，小系统没有。
+中文：M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主导但还可逆"窗口，宽度∝(√n-1)/n∝[D310](functions/items/D310.md)。大系统有"容斥主导但还有救"的窗口，小系统没有。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主导但还可逆"窗口，宽度∝(√n-1)/n∝D310。大系统有"容斥主导但还有救"的窗口，小系统没有。 描述 弱容斥-不可逆边界函数。
+中文：该函数通过 M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主导但还可逆"窗口，宽度∝(√n-1)/n∝[D310](functions/items/D310.md)。大系统有"容斥主导但还有救"的窗口，小系统没有。 描述 弱容斥-不可逆边界函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18914,11 +18918,11 @@ English: Rule-based English rendering pending human review.
 ### [D393｜溢出-传染通道统一函数](functions/items/D393.md)
 
 **函数内容 / Function Content**
-中文：M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(D379)→低p缓冲<g_critical(D309)→低p僵尸化→总g_eff下降→更多溢出。正反馈传染链。
+中文：M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲([D379](functions/items/D379.md))→低p缓冲<g_critical([D309](functions/items/D309.md))→低p僵尸化→总g_eff下降→更多溢出。正反馈传染链。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(D379)→低p缓冲<g_critical(D309)→低p僵尸化→总g_eff下降→更多溢出。正反馈传染链。 描述 溢出-传染通道统一函数。
+中文：该函数通过 M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲([D379](functions/items/D379.md))→低p缓冲<g_critical([D309](functions/items/D309.md))→低p僵尸化→总g_eff下降→更多溢出。正反馈传染链。 描述 溢出-传染通道统一函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19561,11 +19565,11 @@ English: Rule-based English rendering pending human review.
 ### [D408｜Jensen-慢性消耗统一极限函数](functions/items/D408.md)
 
 **函数内容 / Function Content**
-中文：M11的连续极限下Jensen项∝(dΦ/dt)²·τ_min/2。τ_min→0时Jensen→0，τ_min有限时Jensen有限。慢性消耗=有限τ_min下的Jensen效应。D394"极限等价"需修正：不是严格等价而是τ_min有限时的近似等价。
+中文：M11的连续极限下Jensen项∝(dΦ/dt)²·τ_min/2。τ_min→0时Jensen→0，τ_min有限时Jensen有限。慢性消耗=有限τ_min下的Jensen效应。[D394](functions/items/D394.md)"极限等价"需修正：不是严格等价而是τ_min有限时的近似等价。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M11的连续极限下Jensen项∝(dΦ/dt)²·τ_min/2。τ_min→0时Jensen→0，τ_min有限时Jensen有限。慢性消耗=有限τ_min下的Jensen效应。D394"极限等价"需修正：不是严格等价而是τ_min有限时的近似等价。 描述 -慢性消耗统一极限函数。
+中文：该函数通过 M11的连续极限下Jensen项∝(dΦ/dt)²·τ_min/2。τ_min→0时Jensen→0，τ_min有限时Jensen有限。慢性消耗=有限τ_min下的Jensen效应。[D394](functions/items/D394.md)"极限等价"需修正：不是严格等价而是τ_min有限时的近似等价。 描述 -慢性消耗统一极限函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -20036,11 +20040,11 @@ English: Rule-based English rendering pending human review.
 ### [D419｜宏观僵尸态-实际不可逆等价函数](functions/items/D419.md)
 
 **函数内容 / Function Content**
-中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆(D309)三者精确等价——同一现象的三个等价描述。
+中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆([D309](functions/items/D309.md))三者精确等价——同一现象的三个等价描述。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M9的宏观僵尸态、实际不可逆、缓冲不可逆(D309)三者精确等价——同一现象的三个等价描述。 描述 宏观僵尸态-实际不可逆等价函数。
+中文：该函数通过 M9的宏观僵尸态、实际不可逆、缓冲不可逆([D309](functions/items/D309.md))三者精确等价——同一现象的三个等价描述。 描述 宏观僵尸态-实际不可逆等价函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -20382,11 +20386,11 @@ English: Rule-based English rendering pending human review.
 ### [D465｜幽灵-不可逆竞争函数](functions/items/D465.md)
 
 **函数内容 / Function Content**
-中文：D464×D410交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应D412完美风暴的D464版本 关键推论：
+中文：[D464](functions/items/D464.md)×D410交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应D412完美风暴的D464版本 关键推论：
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D464×D410交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应D412完美风暴的D464版本 关键推论： 描述 幽灵-不可逆竞争函数。
+中文：该函数通过 [D464](functions/items/D464.md)×D410交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应D412完美风暴的D464版本 关键推论： 描述 幽灵-不可逆竞争函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -20426,11 +20430,11 @@ English: Rule-based English rendering pending human review.
 ### [D466｜暗物质核心-幽灵衰减函数](functions/items/D466.md)
 
 **函数内容 / Function Content**
-中文：D464×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。D466补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。
+中文：[D464](functions/items/D464.md)×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。D466补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D464×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。D466补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。 描述 暗物质核心-幽灵衰减函数。
+中文：该函数通过 [D464](functions/items/D464.md)×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。D466补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。 描述 暗物质核心-幽灵衰减函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -20470,11 +20474,11 @@ English: Rule-based English rendering pending human review.
 ### [D467｜最优性-惯性反比函数](functions/items/D467.md)
 
 **函数内容 / Function Content**
-中文：D464扩展(κ∝|σ-√e|/√e)×D307(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性）
+中文：D464扩展(κ∝|σ-√e|/√e)×[D307](functions/items/D307.md)(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性）
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D464扩展(κ∝|σ-√e|/√e)×D307(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性） 描述 最优性-惯性反比函数。
+中文：该函数通过 D464扩展(κ∝|σ-√e|/√e)×[D307](functions/items/D307.md)(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性） 描述 最优性-惯性反比函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -20518,11 +20522,11 @@ English: Rule-based English rendering pending human review.
 ### [D468｜吸引子-陷阱等价函数](functions/items/D468.md)
 
 **函数内容 / Function Content**
-中文：D467×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（D295的p_max穿过p*）
+中文：[D467](functions/items/D467.md)×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（D295的p_max穿过p*）
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D467×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（D295的p_max穿过p*） 描述 吸引子-陷阱等价函数。
+中文：该函数通过 [D467](functions/items/D467.md)×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（D295的p_max穿过p*） 描述 吸引子-陷阱等价函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -20561,11 +20565,11 @@ English: Rule-based English rendering pending human review.
 ### [D469｜振荡优化函数](functions/items/D469.md)
 
 **函数内容 / Function Content**
-中文：D468×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降势垒→重新优化"之间周期性循环： $$\sigma(t) \sim \sigma_{opt} + A \cdot \sin(\omega t) \cdot e^{-\gamma t}$$ ω由M14两步策略的执行速度决定，γ由每轮循环的净改善决定。 关键推论： - γ>0：收敛到σ_opt附近极限环——可持续演化 - γ=0：完美循环——永续振荡
+中文：[D468](functions/items/D468.md)×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降势垒→重新优化"之间周期性循环： $$\sigma(t) \sim \sigma_{opt} + A \cdot \sin(\omega t) \cdot e^{-\gamma t}$$ ω由M14两步策略的执行速度决定，γ由每轮循环的净改善决定。 关键推论： - γ>0：收敛到σ_opt附近极限环——可持续演化 - γ=0：完美循环——永续振荡
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D468×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降势垒→重新优化"之间周期性循环： $$\sigma(t) \sim \sigma_{opt} + A \cdot \sin(\omega t) \cdot e^{-\gamma t}$$ ω由M14两步策略的执行速度决定，γ由每轮循环的净改善决定。 关键推论： - γ>0：收敛到σ_opt附近极限环——可持续演化 - γ=0：完美循环——永续振荡 描述 振荡优化函数。
+中文：该函数通过 [D468](functions/items/D468.md)×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降势垒→重新优化"之间周期性循环： $$\sigma(t) \sim \sigma_{opt} + A \cdot \sin(\omega t) \cdot e^{-\gamma t}$$ ω由M14两步策略的执行速度决定，γ由每轮循环的净改善决定。 关键推论： - γ>0：收敛到σ_opt附近极限环——可持续演化 - γ=0：完美循环——永续振荡 描述 振荡优化函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -20609,11 +20613,11 @@ English: Rule-based English rendering pending human review.
 ### [D470｜幽灵跳变阻尼函数](functions/items/D470.md)
 
 **函数内容 / Function Content**
-中文：D469×D464深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自D464超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵
+中文：[D469](functions/items/D469.md)×D464深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自D464超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D469×D464深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自D464超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵 描述 幽灵跳变阻尼函数。
+中文：该函数通过 [D469](functions/items/D469.md)×D464深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自D464超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵 描述 幽灵跳变阻尼函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**

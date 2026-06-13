@@ -599,7 +599,7 @@ def render_prediction_page(prediction: dict) -> str:
     ])
     if prediction.get("categories"):
         for cat in prediction["categories"]:
-            lines.append(f"- [{format_bilingual_title(cat['title'].get('zh'), cat['title'].get('en'))}]({rel_link(current_path, REPO_ROOT / cat['page'])})")
+            lines.append(f"- {format_bilingual_title(cat['title'].get('zh'), cat['title'].get('en'))}")
     else:
         lines.append("- 其他 / Other")
 
@@ -1088,14 +1088,10 @@ def render_all(predictions: list[dict], category_map: list[dict], check: bool = 
     ]
 
     ITEM_DIR.mkdir(parents=True, exist_ok=True)
-    CATEGORY_DIR.mkdir(parents=True, exist_ok=True)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     for prediction in predictions:
         planned.append((ITEM_DIR / f"{prediction['id']}.md", render_prediction_page(prediction)))
-
-    for category in category_map:
-        planned.append((CATEGORY_DIR / f"{category['id']}.md", render_category_page(category)))
 
     for path, content in planned:
         current = path.read_text(encoding="utf-8") if path.exists() else None

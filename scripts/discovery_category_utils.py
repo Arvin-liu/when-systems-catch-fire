@@ -762,12 +762,7 @@ def render_discovery_page(item: dict) -> str:
     categories = item.get("categories", [])
     if categories:
         for cat in categories:
-            if cat.get("page"):
-                lines.append(
-                    f"- [{format_bilingual_title(cat['title'].get('zh'), cat['title'].get('en'))}]({rel_link(current_path, REPO_ROOT / cat['page'])})"
-                )
-            else:
-                lines.append(f"- {format_bilingual_title(cat['title'].get('zh'), cat['title'].get('en'))}")
+            lines.append(f"- {format_bilingual_title(cat['title'].get('zh'), cat['title'].get('en'))}")
     else:
         lines.extend(["- 其他 / Other"])
 
@@ -881,56 +876,9 @@ def render_discoveries_list(items: list[dict], categories: list[dict] | None = N
         "",
     ]
 
-    if categories is not None:
-        def has_discovery_output(category: dict) -> bool:
-            coverage = category["coverage"]
-            return (
-                coverage.get("curated_discoveries_count", 0)
-                + coverage.get("discovery_leads_count", 0)
-            ) > 0
-
-        def sort_key(category: dict) -> tuple[int, int, int, str]:
-            coverage = category["coverage"]
-            curated = coverage.get("curated_discoveries_count", 0)
-            leads = coverage.get("discovery_leads_count", 0)
-            related_total = coverage.get("related_functions_count", 0) + coverage.get("related_cases_count", 0)
-            return (-curated, -leads, -related_total, category["category_id"])
-
-        sorted_categories = sorted(
-            [
-                category
-                for category in categories
-                if category["category_id"] != "other" and has_discovery_output(category)
-            ],
-            key=sort_key,
-        )
-        lines.extend(
-            [
-                "## 学科分类 / Categories",
-                "",
-                "中文：以下分类由当前函数表与案例表的自举扫描生成，不是空壳入口。每条发现可以属于一个或多个分类。",
-                "",
-                "English: The following categories are generated from a bootstrap scan of the current function and case tables. They are not empty shells, and each discovery may belong to one or more categories.",
-                "",
-                "| 学科分类 / Category | 正式发现 / Curated Discoveries | 待整理线索 / Discovery Leads | 当前覆盖 / Current Coverage |",
-                "| --- | --- | --- | --- |",
-            ]
-        )
-        for category in sorted_categories:
-            coverage = category["coverage"]
-            lines.append(
-                f"| [{format_bilingual_title(category['title'].get('zh'), category['title'].get('en'))}]({category['page']}) | {coverage.get('curated_discoveries_count', 0)} | {coverage.get('discovery_leads_count', 0)} | {coverage['related_functions_count']} related functions, {coverage['related_cases_count']} related cases |"
-            )
-        zero_categories = [category for category in sorted_categories if category["coverage"]["related_functions_count"] == 0 and category["coverage"]["related_cases_count"] == 0]
-        if zero_categories:
-            lines.extend(["", "### 可扩展分类 / Expandable Categories", ""])
-            for category in zero_categories:
-                lines.append(f"- [{format_bilingual_title(category['title'].get('zh'), category['title'].get('en'))}]({category['page']})")
-        lines.append("")
-
     lines.extend(
         [
-            "## 最近发现 / Recent Discoveries",
+            "## 发现列表 / Discoveries",
             "",
             "<!-- DISCOVERY_LIST_START -->",
         ]

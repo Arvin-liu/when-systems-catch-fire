@@ -781,15 +781,13 @@ def build_answer_leads_from_bootstrap() -> list[dict]:
 def build_answer_pages(answers: list[dict]) -> None:
     ANSWER_DIR.mkdir(parents=True, exist_ok=True)
     ITEM_DIR.mkdir(parents=True, exist_ok=True)
-    CATEGORY_DIR.mkdir(parents=True, exist_ok=True)
 
     for item in answers:
         write_text(ITEM_DIR / f"{item['id']}.md", render_answer_page(item))
 
 
 def build_category_pages(category_map: list[dict]) -> None:
-    for category in category_map:
-        write_text(CATEGORY_DIR / f"{category['id']}.md", render_category_page(category))
+    return None
 
 
 def normalize_answer_item(item: dict) -> dict:
