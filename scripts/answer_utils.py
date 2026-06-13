@@ -425,6 +425,8 @@ def render_link_list(entries: list[dict], current_path: Path) -> str:
 
 def render_answer_page(item: dict) -> str:
     current_path = ITEM_DIR / f"{item['id']}.md"
+    formal = item.get("mathematical_formalization") or {}
+    derivation = item.get("mathematical_derivation") or {}
     lines = [
         f"# {item['id']} {format_bilingual_title(item['title'].get('zh'), item['title'].get('en'))}",
         "",
@@ -460,6 +462,27 @@ def render_answer_page(item: dict) -> str:
         "",
         f"中文：{item['testability']['zh']}",
         f"English: {item['testability']['en']}",
+        "",
+        "## 纯数学函数 / Pure Mathematical Function",
+        "",
+        f"- 对象 / Object: `{formal.get('symbol', '')}`",
+        f"- 定义域 / Domain: `{formal.get('domain', '')}`",
+        f"- 值域 / Codomain: `{formal.get('codomain', '')}`",
+        f"- 数学表达 / Expression: `{formal.get('math_expression', '')}`",
+        f"- 有效条件 / Validity: `{formal.get('validity_condition', '')}`",
+        "",
+        "## 数学推导 / Mathematical Derivation",
+        "",
+        f"- 推导类型 / Derivation type: `{derivation.get('kind', '')}`",
+        f"- 收敛状态 / Convergence status: `{derivation.get('status', '')}`",
+        f"- 依赖 / Depends on: {', '.join(f'`{dep}`' for dep in derivation.get('depends_on', [])) if derivation.get('depends_on') else '`source_state`'}",
+        "- 推导步骤 / Steps:",
+        *(f"  - {step}" for step in derivation.get("steps_math", [])),
+        "- 证明义务 / Proof obligations:",
+        *(f"  - `{obligation}`" for obligation in derivation.get("proof_obligations", [])),
+        f"- 正向检查 / Forward check: `{(derivation.get('forward_check') or {}).get('condition', '')}`",
+        f"- 反向检查 / Reverse check: `{(derivation.get('reverse_check') or {}).get('condition', '')}`",
+        f"- 收敛判据 / Convergence: `{derivation.get('convergence', '')}`",
         "",
         "## 分类 / Categories",
         "",

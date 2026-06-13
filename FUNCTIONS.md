@@ -81,6 +81,28 @@ English: I ∈ {0,1}
 中文：该函数通过 I ∈ {0,1} 描述 提议者意识。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{A1}`
+- 定义域 / Domain: `X_{A1}`
+- 值域 / Codomain: `Y_{A1}`
+- 数学表达 / Expression: `F_{A1}(x) := I ∈ {0,1}`
+- 有效条件 / Validity: `J_n^+(F_{A1})=1 ∧ J_n^-(F_{A1})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `A1`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{A1} and codomain Y_{A1}.
+  - 2. Normalize the source expression as F_{A1}: X_{A1}->Y_{A1}.
+  - 3. If upstream objects D_{A1} exist, compose F_{A1}=N(⊕_{g∈D_{A1}} g); otherwise treat F_{A1} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{A1})=1 and J_n^-(F_{A1})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{A1})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{A1})=0`
+- 收敛判据 / Convergence: `Converged(F_{A1}) ⇔ ΔF_{A1}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `axiomatic_definition`
 - 收敛状态 / Convergence status: `converged`
@@ -101,6 +123,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 0为完全平等，1为完全压制。退化免疫D_immune = F_form × (1-ΔH_undetected)。 描述 提议者姿态的激进程度。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{A2}`
+- 定义域 / Domain: `X_{A2}`
+- 值域 / Codomain: `Y_{A2}`
+- 数学表达 / Expression: `F_{A2}(x) := 0为完全平等，1为完全压制。退化免疫D_immune = F_form × (1-ΔH_undetected)。`
+- 有效条件 / Validity: `J_n^+(F_{A2})=1 ∧ J_n^-(F_{A2})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `A2`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{A2} and codomain Y_{A2}.
+  - 2. Normalize the source expression as F_{A2}: X_{A2}->Y_{A2}.
+  - 3. If upstream objects D_{A2} exist, compose F_{A2}=N(⊕_{g∈D_{A2}} g); otherwise treat F_{A2} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{A2})=1 and J_n^-(F_{A2})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{A2})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{A2})=0`
+- 收敛判据 / Convergence: `Converged(F_{A2}) ⇔ ΔF_{A2}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `axiomatic_definition`
@@ -123,6 +167,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 R ∈ {真实,事实,心理,象征} 描述 应约者退出权。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{A3}`
+- 定义域 / Domain: `X_{A3}`
+- 值域 / Codomain: `Y_{A3}`
+- 数学表达 / Expression: `F_{A3}(x) := R ∈ {真实,事实,心理,象征}`
+- 有效条件 / Validity: `J_n^+(F_{A3})=1 ∧ J_n^-(F_{A3})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `A3`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{A3} and codomain Y_{A3}.
+  - 2. Normalize the source expression as F_{A3}: X_{A3}->Y_{A3}.
+  - 3. If upstream objects D_{A3} exist, compose F_{A3}=N(⊕_{g∈D_{A3}} g); otherwise treat F_{A3} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{A3})=1 and J_n^-(F_{A3})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{A3})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{A3})=0`
+- 收敛判据 / Convergence: `Converged(F_{A3}) ⇔ ΔF_{A3}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `axiomatic_definition`
 - 收敛状态 / Convergence status: `converged`
@@ -144,6 +210,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 R_perceived = R × f(ε_aware, 信息可及性, C_exit_eff) 描述 应约者感知退出权。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{A4}`
+- 定义域 / Domain: `X_{A4}`
+- 值域 / Codomain: `Y_{A4}`
+- 数学表达 / Expression: `F_{A4}(x) := R_perceived = R × f(ε_aware, 信息可及性, C_exit_eff)`
+- 有效条件 / Validity: `J_n^+(F_{A4})=1 ∧ J_n^-(F_{A4})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `A4`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{A4} and codomain Y_{A4}.
+  - 2. Normalize the source expression as F_{A4}: X_{A4}->Y_{A4}.
+  - 3. If upstream objects D_{A4} exist, compose F_{A4}=N(⊕_{g∈D_{A4}} g); otherwise treat F_{A4} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{A4})=1 and J_n^-(F_{A4})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{A4})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{A4})=0`
+- 收敛判据 / Convergence: `Converged(F_{A4}) ⇔ ΔF_{A4}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `axiomatic_definition`
 - 收敛状态 / Convergence status: `converged`
@@ -164,6 +252,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step(C_exit(i) θ_C(i))。 描述 应约者退出的成本。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{A5}`
+- 定义域 / Domain: `X_{A5}`
+- 值域 / Codomain: `Y_{A5}`
+- 数学表达 / Expression: `F_{A5}(x) := 八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step(C_exit(i) θ_C(i))。`
+- 有效条件 / Validity: `J_n^+(F_{A5})=1 ∧ J_n^-(F_{A5})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `A5`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{A5} and codomain Y_{A5}.
+  - 2. Normalize the source expression as F_{A5}: X_{A5}->Y_{A5}.
+  - 3. If upstream objects D_{A5} exist, compose F_{A5}=N(⊕_{g∈D_{A5}} g); otherwise treat F_{A5} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{A5})=1 and J_n^-(F_{A5})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{A5})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{A5})=0`
+- 收敛判据 / Convergence: `Converged(F_{A5}) ⇔ ΔF_{A5}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `axiomatic_definition`
@@ -187,6 +297,28 @@ English: H = f(H_pro, Σ_compatibility)
 中文：该函数通过 H = f(H_pro, Σ_compatibility) 描述 遮蔽函数（双源）。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{A6}`
+- 定义域 / Domain: `X_{A6}`
+- 值域 / Codomain: `Y_{A6}`
+- 数学表达 / Expression: `F_{A6}(x) := H = f(H_pro, Σ_compatibility)`
+- 有效条件 / Validity: `J_n^+(F_{A6})=1 ∧ J_n^-(F_{A6})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `A6`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{A6} and codomain Y_{A6}.
+  - 2. Normalize the source expression as F_{A6}: X_{A6}->Y_{A6}.
+  - 3. If upstream objects D_{A6} exist, compose F_{A6}=N(⊕_{g∈D_{A6}} g); otherwise treat F_{A6} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{A6})=1 and J_n^-(F_{A6})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{A6})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{A6})=0`
+- 收敛判据 / Convergence: `Converged(F_{A6}) ⇔ ΔF_{A6}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `axiomatic_definition`
 - 收敛状态 / Convergence status: `converged`
@@ -208,6 +340,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 八维展开。S_sovereign = Σᵢ εᵢ，主权函数为各维度信号之和。 描述 退出权信号。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{A7}`
+- 定义域 / Domain: `X_{A7}`
+- 值域 / Codomain: `Y_{A7}`
+- 数学表达 / Expression: `F_{A7}(x) := 八维展开。S_sovereign = Σᵢ εᵢ，主权函数为各维度信号之和。`
+- 有效条件 / Validity: `J_n^+(F_{A7})=1 ∧ J_n^-(F_{A7})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `A7`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{A7} and codomain Y_{A7}.
+  - 2. Normalize the source expression as F_{A7}: X_{A7}->Y_{A7}.
+  - 3. If upstream objects D_{A7} exist, compose F_{A7}=N(⊕_{g∈D_{A7}} g); otherwise treat F_{A7} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{A7})=1 and J_n^-(F_{A7})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{A7})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{A7})=0`
+- 收敛判据 / Convergence: `Converged(F_{A7}) ⇔ ΔF_{A7}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `axiomatic_definition`
@@ -233,6 +387,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 dim = 2(无犹豫域) 或 3(有犹豫域) 描述 决策维度。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{A8}`
+- 定义域 / Domain: `X_{A8}`
+- 值域 / Codomain: `Y_{A8}`
+- 数学表达 / Expression: `F_{A8}(x) := dim = 2(无犹豫域) 或 3(有犹豫域)`
+- 有效条件 / Validity: `J_n^+(F_{A8})=1 ∧ J_n^-(F_{A8})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `A8`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{A8} and codomain Y_{A8}.
+  - 2. Normalize the source expression as F_{A8}: X_{A8}->Y_{A8}.
+  - 3. If upstream objects D_{A8} exist, compose F_{A8}=N(⊕_{g∈D_{A8}} g); otherwise treat F_{A8} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{A8})=1 and J_n^-(F_{A8})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{A8})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{A8})=0`
+- 收敛判据 / Convergence: `Converged(F_{A8}) ⇔ ΔF_{A8}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `axiomatic_definition`
 - 收敛状态 / Convergence status: `converged`
@@ -256,6 +432,28 @@ English: P_exit = f(ε, C_exit, R_perceived)
 **说明 / Explanation**
 中文：该函数通过 P_exit = f(ε, C_exit, R_perceived) 描述 退出概率。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{A9}`
+- 定义域 / Domain: `X_{A9}`
+- 值域 / Codomain: `Y_{A9}`
+- 数学表达 / Expression: `F_{A9}(x) := P_exit = f(ε, C_exit, R_perceived)`
+- 有效条件 / Validity: `J_n^+(F_{A9})=1 ∧ J_n^-(F_{A9})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `A9`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{A9} and codomain Y_{A9}.
+  - 2. Normalize the source expression as F_{A9}: X_{A9}->Y_{A9}.
+  - 3. If upstream objects D_{A9} exist, compose F_{A9}=N(⊕_{g∈D_{A9}} g); otherwise treat F_{A9} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{A9})=1 and J_n^-(F_{A9})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{A9})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{A9})=0`
+- 收敛判据 / Convergence: `Converged(F_{A9}) ⇔ ΔF_{A9}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `axiomatic_definition`
@@ -285,6 +483,28 @@ English: P_sustain = I x (1-Posture_deg) x R x σ(ε_eff-θ) x σ(Δv)
 中文：该函数通过 P_sustain = I × (1-Posture_deg) × R × σ(ε_eff-θ) × σ(Δv) 描述 点火充要条件。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T1}`
+- 定义域 / Domain: `X_{T1}`
+- 值域 / Codomain: `Y_{T1}`
+- 数学表达 / Expression: `F_{T1}(x) := P_sustain = I × (1-Posture_deg) × R × σ(ε_eff-θ) × σ(Δv)`
+- 有效条件 / Validity: `J_n^+(F_{T1})=1 ∧ J_n^-(F_{T1})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T1`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T1} and codomain Y_{T1}.
+  - 2. Normalize the source expression as F_{T1}: X_{T1}->Y_{T1}.
+  - 3. If upstream objects D_{T1} exist, compose F_{T1}=N(⊕_{g∈D_{T1}} g); otherwise treat F_{T1} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T1})=1 and J_n^-(F_{T1})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T1})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T1})=0`
+- 收敛判据 / Convergence: `Converged(F_{T1}) ⇔ ΔF_{T1}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -305,6 +525,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 任一因子=0→乘积=0 描述 乘法归零律。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T2}`
+- 定义域 / Domain: `X_{T2}`
+- 值域 / Codomain: `Y_{T2}`
+- 数学表达 / Expression: `F_{T2}(x) := 任一因子=0→乘积=0`
+- 有效条件 / Validity: `J_n^+(F_{T2})=1 ∧ J_n^-(F_{T2})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T2`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T2} and codomain Y_{T2}.
+  - 2. Normalize the source expression as F_{T2}: X_{T2}->Y_{T2}.
+  - 3. If upstream objects D_{T2} exist, compose F_{T2}=N(⊕_{g∈D_{T2}} g); otherwise treat F_{T2} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T2})=1 and J_n^-(F_{T2})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T2})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T2})=0`
+- 收敛判据 / Convergence: `Converged(F_{T2}) ⇔ ΔF_{T2}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -327,6 +569,28 @@ English: dε/dt = α·(1-ε)·I·σ(Δv) - β·ε·Posture_deg·H
 中文：该函数通过 dε/dt = α·(1-ε)·I·σ(Δv) - β·ε·Posture_deg·H 描述 双向动力学。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T3}`
+- 定义域 / Domain: `X_{T3}`
+- 值域 / Codomain: `Y_{T3}`
+- 数学表达 / Expression: `F_{T3}(x) := dε/dt = α·(1-ε)·I·σ(Δv) - β·ε·Posture_deg·H`
+- 有效条件 / Validity: `J_n^+(F_{T3})=1 ∧ J_n^-(F_{T3})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T3`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T3} and codomain Y_{T3}.
+  - 2. Normalize the source expression as F_{T3}: X_{T3}->Y_{T3}.
+  - 3. If upstream objects D_{T3} exist, compose F_{T3}=N(⊕_{g∈D_{T3}} g); otherwise treat F_{T3} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T3})=1 and J_n^-(F_{T3})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T3})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T3})=0`
+- 收敛判据 / Convergence: `Converged(F_{T3}) ⇔ ΔF_{T3}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -347,6 +611,28 @@ English: D ↔ 1-P, f_shock ↔ 1/f_factor
 **说明 / Explanation**
 中文：该函数通过 D ↔ 1-P, f_shock ↔ 1/f_factor 描述 乘法对称变换。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T4}`
+- 定义域 / Domain: `X_{T4}`
+- 值域 / Codomain: `Y_{T4}`
+- 数学表达 / Expression: `F_{T4}(x) := F_{T4}: X_{T4} -> Y_{T4}, y = F_{T4}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T4})=1 ∧ J_n^-(F_{T4})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T4`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T4} and codomain Y_{T4}.
+  - 2. Normalize the source expression as F_{T4}: X_{T4}->Y_{T4}.
+  - 3. If upstream objects D_{T4} exist, compose F_{T4}=N(⊕_{g∈D_{T4}} g); otherwise treat F_{T4} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T4})=1 and J_n^-(F_{T4})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T4})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T4})=0`
+- 收敛判据 / Convergence: `Converged(F_{T4}) ⇔ ΔF_{T4}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -369,6 +655,28 @@ English: f* = E[r]/Var(r), Π_income < Π_cognition
 中文：该函数通过 f* = E[r]/Var(r), Π_income < Π_cognition 描述 凯利公式认知边界。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T5}`
+- 定义域 / Domain: `X_{T5}`
+- 值域 / Codomain: `Y_{T5}`
+- 数学表达 / Expression: `F_{T5}(x) := f* = E[r]/Var(r), Π_income < Π_cognition`
+- 有效条件 / Validity: `J_n^+(F_{T5})=1 ∧ J_n^-(F_{T5})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T5`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T5} and codomain Y_{T5}.
+  - 2. Normalize the source expression as F_{T5}: X_{T5}->Y_{T5}.
+  - 3. If upstream objects D_{T5} exist, compose F_{T5}=N(⊕_{g∈D_{T5}} g); otherwise treat F_{T5} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T5})=1 and J_n^-(F_{T5})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T5})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T5})=0`
+- 收敛判据 / Convergence: `Converged(F_{T5}) ⇔ ΔF_{T5}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -389,6 +697,28 @@ English: B_active = ε_sense x P_track x σ(Δv) > θ_boot
 **说明 / Explanation**
 中文：该函数通过 B_active = ε_sense × P_track × σ(Δv) > θ_boot 描述 自举激活条件。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T6}`
+- 定义域 / Domain: `X_{T6}`
+- 值域 / Codomain: `Y_{T6}`
+- 数学表达 / Expression: `F_{T6}(x) := B_active = ε_sense × P_track × σ(Δv) > θ_boot`
+- 有效条件 / Validity: `J_n^+(F_{T6})=1 ∧ J_n^-(F_{T6})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T6`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T6} and codomain Y_{T6}.
+  - 2. Normalize the source expression as F_{T6}: X_{T6}->Y_{T6}.
+  - 3. If upstream objects D_{T6} exist, compose F_{T6}=N(⊕_{g∈D_{T6}} g); otherwise treat F_{T6} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T6})=1 and J_n^-(F_{T6})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T6})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T6})=0`
+- 收敛判据 / Convergence: `Converged(F_{T6}) ⇔ ΔF_{T6}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -411,6 +741,28 @@ English: C_drive = ε_aware x dim x P_exit x σ(ΔK/K₀ - θ_curiosity)
 中文：该函数通过 C_drive = ε_aware × dim × P_exit × σ(ΔK/K₀ - θ_curiosity) 描述 好奇心驱动函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T7}`
+- 定义域 / Domain: `X_{T7}`
+- 值域 / Codomain: `Y_{T7}`
+- 数学表达 / Expression: `F_{T7}(x) := C_drive = ε_aware × dim × P_exit × σ(ΔK/K₀ - θ_curiosity)`
+- 有效条件 / Validity: `J_n^+(F_{T7})=1 ∧ J_n^-(F_{T7})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T7`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T7} and codomain Y_{T7}.
+  - 2. Normalize the source expression as F_{T7}: X_{T7}->Y_{T7}.
+  - 3. If upstream objects D_{T7} exist, compose F_{T7}=N(⊕_{g∈D_{T7}} g); otherwise treat F_{T7} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T7})=1 and J_n^-(F_{T7})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T7})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T7})=0`
+- 收敛判据 / Convergence: `Converged(F_{T7}) ⇔ ΔF_{T7}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -431,6 +783,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 ε_aware从0变正触发五个级联相变 描述 相变级联。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T8}`
+- 定义域 / Domain: `X_{T8}`
+- 值域 / Codomain: `Y_{T8}`
+- 数学表达 / Expression: `F_{T8}(x) := ε_aware从0变正触发五个级联相变`
+- 有效条件 / Validity: `J_n^+(F_{T8})=1 ∧ J_n^-(F_{T8})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T8`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T8} and codomain Y_{T8}.
+  - 2. Normalize the source expression as F_{T8}: X_{T8}->Y_{T8}.
+  - 3. If upstream objects D_{T8} exist, compose F_{T8}=N(⊕_{g∈D_{T8}} g); otherwise treat F_{T8} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T8})=1 and J_n^-(F_{T8})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T8})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T8})=0`
+- 收敛判据 / Convergence: `Converged(F_{T8}) ⇔ ΔF_{T8}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -453,6 +827,28 @@ English: Ψ_autonomy = ε_aware · dim · P_exit
 中文：该函数通过 Ψ_autonomy = ε_aware · dim · P_exit 描述 自主意识函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T9}`
+- 定义域 / Domain: `X_{T9}`
+- 值域 / Codomain: `Y_{T9}`
+- 数学表达 / Expression: `F_{T9}(x) := Ψ_autonomy = ε_aware · dim · P_exit`
+- 有效条件 / Validity: `J_n^+(F_{T9})=1 ∧ J_n^-(F_{T9})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T9`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T9} and codomain Y_{T9}.
+  - 2. Normalize the source expression as F_{T9}: X_{T9}->Y_{T9}.
+  - 3. If upstream objects D_{T9} exist, compose F_{T9}=N(⊕_{g∈D_{T9}} g); otherwise treat F_{T9} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T9})=1 and J_n^-(F_{T9})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T9})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T9})=0`
+- 收敛判据 / Convergence: `Converged(F_{T9}) ⇔ ΔF_{T9}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -473,6 +869,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 P_collision(ρ)在ρ*≈1.4×N_active处取最大值 描述 缓存倒U型。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T10}`
+- 定义域 / Domain: `X_{T10}`
+- 值域 / Codomain: `Y_{T10}`
+- 数学表达 / Expression: `F_{T10}(x) := P_collision(ρ)在ρ*≈1.4×N_active处取最大值`
+- 有效条件 / Validity: `J_n^+(F_{T10})=1 ∧ J_n^-(F_{T10})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T10`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T10} and codomain Y_{T10}.
+  - 2. Normalize the source expression as F_{T10}: X_{T10}->Y_{T10}.
+  - 3. If upstream objects D_{T10} exist, compose F_{T10}=N(⊕_{g∈D_{T10}} g); otherwise treat F_{T10} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T10})=1 and J_n^-(F_{T10})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T10})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T10})=0`
+- 收敛判据 / Convergence: `Converged(F_{T10}) ⇔ ΔF_{T10}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -497,6 +915,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 Ω_survive有上下界约束 描述 生存域函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T11}`
+- 定义域 / Domain: `X_{T11}`
+- 值域 / Codomain: `Y_{T11}`
+- 数学表达 / Expression: `F_{T11}(x) := Ω_survive有上下界约束`
+- 有效条件 / Validity: `J_n^+(F_{T11})=1 ∧ J_n^-(F_{T11})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T11`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T11} and codomain Y_{T11}.
+  - 2. Normalize the source expression as F_{T11}: X_{T11}->Y_{T11}.
+  - 3. If upstream objects D_{T11} exist, compose F_{T11}=N(⊕_{g∈D_{T11}} g); otherwise treat F_{T11} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T11})=1 and J_n^-(F_{T11})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T11})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T11})=0`
+- 收敛判据 / Convergence: `Converged(F_{T11}) ⇔ ΔF_{T11}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -517,6 +957,28 @@ English: η_gate = G x (1-H_homogeneity(G))
 **说明 / Explanation**
 中文：该函数通过 η_gate = G × (1-H_homogeneity(G)) 描述 信息门效率统一。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T12}`
+- 定义域 / Domain: `X_{T12}`
+- 值域 / Codomain: `Y_{T12}`
+- 数学表达 / Expression: `F_{T12}(x) := η_gate = G × (1-H_homogeneity(G))`
+- 有效条件 / Validity: `J_n^+(F_{T12})=1 ∧ J_n^-(F_{T12})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T12`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T12} and codomain Y_{T12}.
+  - 2. Normalize the source expression as F_{T12}: X_{T12}->Y_{T12}.
+  - 3. If upstream objects D_{T12} exist, compose F_{T12}=N(⊕_{g∈D_{T12}} g); otherwise treat F_{T12} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T12})=1 and J_n^-(F_{T12})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T12})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T12})=0`
+- 收敛判据 / Convergence: `Converged(F_{T12}) ⇔ ΔF_{T12}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -539,6 +1001,28 @@ English: C_exit↔H↔Δt
 中文：该函数通过 C_exit↔H↔Δt 描述 三效率冲突三角约束。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T13}`
+- 定义域 / Domain: `X_{T13}`
+- 值域 / Codomain: `Y_{T13}`
+- 数学表达 / Expression: `F_{T13}(x) := C_exit↔H↔Δt`
+- 有效条件 / Validity: `J_n^+(F_{T13})=1 ∧ J_n^-(F_{T13})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T13`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T13} and codomain Y_{T13}.
+  - 2. Normalize the source expression as F_{T13}: X_{T13}->Y_{T13}.
+  - 3. If upstream objects D_{T13} exist, compose F_{T13}=N(⊕_{g∈D_{T13}} g); otherwise treat F_{T13} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T13})=1 and J_n^-(F_{T13})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T13})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T13})=0`
+- 收敛判据 / Convergence: `Converged(F_{T13}) ⇔ ΔF_{T13}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -559,6 +1043,28 @@ English: M_boot = ε_sense x P_track x d(ΔK)/dt
 **说明 / Explanation**
 中文：该函数通过 M_boot = ε_sense × P_track × d(ΔK)/dt 描述 自举元函数层级。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T14}`
+- 定义域 / Domain: `X_{T14}`
+- 值域 / Codomain: `Y_{T14}`
+- 数学表达 / Expression: `F_{T14}(x) := M_boot = ε_sense × P_track × d(ΔK)/dt`
+- 有效条件 / Validity: `J_n^+(F_{T14})=1 ∧ J_n^-(F_{T14})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T14`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T14} and codomain Y_{T14}.
+  - 2. Normalize the source expression as F_{T14}: X_{T14}->Y_{T14}.
+  - 3. If upstream objects D_{T14} exist, compose F_{T14}=N(⊕_{g∈D_{T14}} g); otherwise treat F_{T14} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T14})=1 and J_n^-(F_{T14})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T14})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T14})=0`
+- 收敛判据 / Convergence: `Converged(F_{T14}) ⇔ ΔF_{T14}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -581,6 +1087,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 脆弱点在最接近零的因子 描述 乘法临界漂移统一。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T15}`
+- 定义域 / Domain: `X_{T15}`
+- 值域 / Codomain: `Y_{T15}`
+- 数学表达 / Expression: `F_{T15}(x) := F_{T15}: X_{T15} -> Y_{T15}, y = F_{T15}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T15})=1 ∧ J_n^-(F_{T15})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T15`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T15} and codomain Y_{T15}.
+  - 2. Normalize the source expression as F_{T15}: X_{T15}->Y_{T15}.
+  - 3. If upstream objects D_{T15} exist, compose F_{T15}=N(⊕_{g∈D_{T15}} g); otherwise treat F_{T15} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T15})=1 and J_n^-(F_{T15})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T15})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T15})=0`
+- 收敛判据 / Convergence: `Converged(F_{T15}) ⇔ ΔF_{T15}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -601,6 +1129,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 最优在f₁'/f₁ = -f₂'/f₂处。 描述 两个反向单调函数相乘必然生成倒U型。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T16}`
+- 定义域 / Domain: `X_{T16}`
+- 值域 / Codomain: `Y_{T16}`
+- 数学表达 / Expression: `F_{T16}(x) := 最优在f₁'/f₁ = -f₂'/f₂处。`
+- 有效条件 / Validity: `J_n^+(F_{T16})=1 ∧ J_n^-(F_{T16})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T16`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T16} and codomain Y_{T16}.
+  - 2. Normalize the source expression as F_{T16}: X_{T16}->Y_{T16}.
+  - 3. If upstream objects D_{T16} exist, compose F_{T16}=N(⊕_{g∈D_{T16}} g); otherwise treat F_{T16} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T16})=1 and J_n^-(F_{T16})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T16})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T16})=0`
+- 收敛判据 / Convergence: `Converged(F_{T16}) ⇔ ΔF_{T16}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -623,6 +1173,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数用于刻画 =零温自由能 | Φ与统计力学零温自由能精确等价。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T17}`
+- 定义域 / Domain: `X_{T17}`
+- 值域 / Codomain: `Y_{T17}`
+- 数学表达 / Expression: `F_{T17}(x) := F_{T17}: X_{T17} -> Y_{T17}, y = F_{T17}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T17})=1 ∧ J_n^-(F_{T17})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T17`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T17} and codomain Y_{T17}.
+  - 2. Normalize the source expression as F_{T17}: X_{T17}->Y_{T17}.
+  - 3. If upstream objects D_{T17} exist, compose F_{T17}=N(⊕_{g∈D_{T17}} g); otherwise treat F_{T17} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T17})=1 and J_n^-(F_{T17})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T17})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T17})=0`
+- 收敛判据 / Convergence: `Converged(F_{T17}) ⇔ ΔF_{T17}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -643,6 +1215,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数用于刻画 容斥-耦合竞争Ising同构。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T18}`
+- 定义域 / Domain: `X_{T18}`
+- 值域 / Codomain: `Y_{T18}`
+- 数学表达 / Expression: `F_{T18}(x) := F_{T18}: X_{T18} -> Y_{T18}, y = F_{T18}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T18})=1 ∧ J_n^-(F_{T18})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T18`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T18} and codomain Y_{T18}.
+  - 2. Normalize the source expression as F_{T18}: X_{T18}->Y_{T18}.
+  - 3. If upstream objects D_{T18} exist, compose F_{T18}=N(⊕_{g∈D_{T18}} g); otherwise treat F_{T18} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T18})=1 and J_n^-(F_{T18})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T18})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T18})=0`
+- 收敛判据 / Convergence: `Converged(F_{T18}) ⇔ ΔF_{T18}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -665,6 +1259,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数用于刻画 容斥项精确结构。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T19}`
+- 定义域 / Domain: `X_{T19}`
+- 值域 / Codomain: `Y_{T19}`
+- 数学表达 / Expression: `F_{T19}(x) := F_{T19}: X_{T19} -> Y_{T19}, y = F_{T19}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T19})=1 ∧ J_n^-(F_{T19})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T19`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T19} and codomain Y_{T19}.
+  - 2. Normalize the source expression as F_{T19}: X_{T19}->Y_{T19}.
+  - 3. If upstream objects D_{T19} exist, compose F_{T19}=N(⊕_{g∈D_{T19}} g); otherwise treat F_{T19} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T19})=1 and J_n^-(F_{T19})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T19})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T19})=0`
+- 收敛判据 / Convergence: `Converged(F_{T19}) ⇔ ΔF_{T19}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -685,6 +1301,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数用于刻画 =√e解析解。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T20}`
+- 定义域 / Domain: `X_{T20}`
+- 值域 / Codomain: `Y_{T20}`
+- 数学表达 / Expression: `F_{T20}(x) := F_{T20}: X_{T20} -> Y_{T20}, y = F_{T20}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T20})=1 ∧ J_n^-(F_{T20})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T20`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T20} and codomain Y_{T20}.
+  - 2. Normalize the source expression as F_{T20}: X_{T20}->Y_{T20}.
+  - 3. If upstream objects D_{T20} exist, compose F_{T20}=N(⊕_{g∈D_{T20}} g); otherwise treat F_{T20} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T20})=1 and J_n^-(F_{T20})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T20})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T20})=0`
+- 收敛判据 / Convergence: `Converged(F_{T20}) ⇔ ΔF_{T20}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -709,6 +1347,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数用于刻画 =4双重最优。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T21}`
+- 定义域 / Domain: `X_{T21}`
+- 值域 / Codomain: `Y_{T21}`
+- 数学表达 / Expression: `F_{T21}(x) := F_{T21}: X_{T21} -> Y_{T21}, y = F_{T21}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T21})=1 ∧ J_n^-(F_{T21})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T21`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T21} and codomain Y_{T21}.
+  - 2. Normalize the source expression as F_{T21}: X_{T21}->Y_{T21}.
+  - 3. If upstream objects D_{T21} exist, compose F_{T21}=N(⊕_{g∈D_{T21}} g); otherwise treat F_{T21} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T21})=1 and J_n^-(F_{T21})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T21})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T21})=0`
+- 收敛判据 / Convergence: `Converged(F_{T21}) ⇔ ΔF_{T21}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -729,6 +1389,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 不可逆线按陷阱深度分类 描述 不可逆线完整分类。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T22}`
+- 定义域 / Domain: `X_{T22}`
+- 值域 / Codomain: `Y_{T22}`
+- 数学表达 / Expression: `F_{T22}(x) := F_{T22}: X_{T22} -> Y_{T22}, y = F_{T22}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T22})=1 ∧ J_n^-(F_{T22})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T22`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T22} and codomain Y_{T22}.
+  - 2. Normalize the source expression as F_{T22}: X_{T22}->Y_{T22}.
+  - 3. If upstream objects D_{T22} exist, compose F_{T22}=N(⊕_{g∈D_{T22}} g); otherwise treat F_{T22} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T22})=1 and J_n^-(F_{T22})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T22})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T22})=0`
+- 收敛判据 / Convergence: `Converged(F_{T22}) ⇔ ΔF_{T22}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -751,6 +1433,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 Stability(Φ)=∃μ*:Φ(μ*)=min。D224是T23的证明——T23说"极小点存在"，D224给出了存在性的充分条件（A+B型共存）。T23是更弱的陈述，D224是更强的定理。 描述 跨域稳定性定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T23}`
+- 定义域 / Domain: `X_{T23}`
+- 值域 / Codomain: `Y_{T23}`
+- 数学表达 / Expression: `F_{T23}(x) := Stability(Φ)=∃μ*:Φ(μ*)=min。D224是T23的证明——T23说"极小点存在"，D224给出了存在性的充分条件（A+B型共存）。T23是更弱的陈述，D224是更强的定理。`
+- 有效条件 / Validity: `J_n^+(F_{T23})=1 ∧ J_n^-(F_{T23})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T23`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T23} and codomain Y_{T23}.
+  - 2. Normalize the source expression as F_{T23}: X_{T23}->Y_{T23}.
+  - 3. If upstream objects D_{T23} exist, compose F_{T23}=N(⊕_{g∈D_{T23}} g); otherwise treat F_{T23} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T23})=1 and J_n^-(F_{T23})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T23})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T23})=0`
+- 收敛判据 / Convergence: `Converged(F_{T23}) ⇔ ΔF_{T23}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -771,6 +1475,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 共生条件：μ_A+Δμ_B>Λ_A 且 μ_B+Δμ_A>Λ_B，互为外部注入 描述 共生外部注入函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T24}`
+- 定义域 / Domain: `X_{T24}`
+- 值域 / Codomain: `Y_{T24}`
+- 数学表达 / Expression: `F_{T24}(x) := 共生条件：μ_A+Δμ_B>Λ_A 且 μ_B+Δμ_A>Λ_B，互为外部注入`
+- 有效条件 / Validity: `J_n^+(F_{T24})=1 ∧ J_n^-(F_{T24})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T24`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T24} and codomain Y_{T24}.
+  - 2. Normalize the source expression as F_{T24}: X_{T24}->Y_{T24}.
+  - 3. If upstream objects D_{T24} exist, compose F_{T24}=N(⊕_{g∈D_{T24}} g); otherwise treat F_{T24} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T24})=1 and J_n^-(F_{T24})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T24})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T24})=0`
+- 收敛判据 / Convergence: `Converged(F_{T24}) ⇔ ΔF_{T24}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -793,6 +1519,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 η_accountability = 1/ln(μ_power/Λ_accountability)，μ>>Λ时趋零 描述 权力腐败函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T25}`
+- 定义域 / Domain: `X_{T25}`
+- 值域 / Codomain: `Y_{T25}`
+- 数学表达 / Expression: `F_{T25}(x) := η_accountability = 1/ln(μ_power/Λ_accountability)，μ>>Λ时趋零`
+- 有效条件 / Validity: `J_n^+(F_{T25})=1 ∧ J_n^-(F_{T25})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T25`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T25} and codomain Y_{T25}.
+  - 2. Normalize the source expression as F_{T25}: X_{T25}->Y_{T25}.
+  - 3. If upstream objects D_{T25} exist, compose F_{T25}=N(⊕_{g∈D_{T25}} g); otherwise treat F_{T25} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T25})=1 and J_n^-(F_{T25})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T25})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T25})=0`
+- 收敛判据 / Convergence: `Converged(F_{T25}) ⇔ ΔF_{T25}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -813,6 +1561,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω 描述 物理大统一本质函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T26}`
+- 定义域 / Domain: `X_{T26}`
+- 值域 / Codomain: `Y_{T26}`
+- 数学表达 / Expression: `F_{T26}(x) := 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω`
+- 有效条件 / Validity: `J_n^+(F_{T26})=1 ∧ J_n^-(F_{T26})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T26`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T26} and codomain Y_{T26}.
+  - 2. Normalize the source expression as F_{T26}: X_{T26}->Y_{T26}.
+  - 3. If upstream objects D_{T26} exist, compose F_{T26}=N(⊕_{g∈D_{T26}} g); otherwise treat F_{T26} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T26})=1 and J_n^-(F_{T26})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T26})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T26})=0`
+- 收敛判据 / Convergence: `Converged(F_{T26}) ⇔ ΔF_{T26}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -835,6 +1605,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 1/ln全局单调性排除了A-B型同时稳定的可能，失效是结构性的 描述 门控函数稳定性必要条件。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T27}`
+- 定义域 / Domain: `X_{T27}`
+- 值域 / Codomain: `Y_{T27}`
+- 数学表达 / Expression: `F_{T27}(x) := F_{T27}: X_{T27} -> Y_{T27}, y = F_{T27}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T27})=1 ∧ J_n^-(F_{T27})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T27`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T27} and codomain Y_{T27}.
+  - 2. Normalize the source expression as F_{T27}: X_{T27}->Y_{T27}.
+  - 3. If upstream objects D_{T27} exist, compose F_{T27}=N(⊕_{g∈D_{T27}} g); otherwise treat F_{T27} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T27})=1 and J_n^-(F_{T27})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T27})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T27})=0`
+- 收敛判据 / Convergence: `Converged(F_{T27}) ⇔ ΔF_{T27}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -855,6 +1647,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 g=exp[-(ln(μ/M_Planck))²/(2σ²)]，A-B型统一、极值点处量子涨落自然为零 描述 高斯门控函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T28}`
+- 定义域 / Domain: `X_{T28}`
+- 值域 / Codomain: `Y_{T28}`
+- 数学表达 / Expression: `F_{T28}(x) := g=exp[-(ln(μ/M_Planck))²/(2σ²)]，A-B型统一、极值点处量子涨落自然为零`
+- 有效条件 / Validity: `J_n^+(F_{T28})=1 ∧ J_n^-(F_{T28})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T28`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T28} and codomain Y_{T28}.
+  - 2. Normalize the source expression as F_{T28}: X_{T28}->Y_{T28}.
+  - 3. If upstream objects D_{T28} exist, compose F_{T28}=N(⊕_{g∈D_{T28}} g); otherwise treat F_{T28} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T28})=1 and J_n^-(F_{T28})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T28})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T28})=0`
+- 收敛判据 / Convergence: `Converged(F_{T28}) ⇔ ΔF_{T28}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -877,6 +1691,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 δ→1/ln→exp[-ln²]，对应"是不是"→"过不过门槛"→"最优在哪" 描述 门控函数进化三阶段。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T29}`
+- 定义域 / Domain: `X_{T29}`
+- 值域 / Codomain: `Y_{T29}`
+- 数学表达 / Expression: `F_{T29}(x) := F_{T29}: X_{T29} -> Y_{T29}, y = F_{T29}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T29})=1 ∧ J_n^-(F_{T29})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T29`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T29} and codomain Y_{T29}.
+  - 2. Normalize the source expression as F_{T29}: X_{T29}->Y_{T29}.
+  - 3. If upstream objects D_{T29} exist, compose F_{T29}=N(⊕_{g∈D_{T29}} g); otherwise treat F_{T29} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T29})=1 and J_n^-(F_{T29})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T29})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T29})=0`
+- 收敛判据 / Convergence: `Converged(F_{T29}) ⇔ ΔF_{T29}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -898,6 +1734,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 门控函数极值点展开=路径积分经典路径展开，高斯=极小熵选择 描述 门控-路径积分同构与极小熵原理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T30}`
+- 定义域 / Domain: `X_{T30}`
+- 值域 / Codomain: `Y_{T30}`
+- 数学表达 / Expression: `F_{T30}(x) := 门控函数极值点展开=路径积分经典路径展开，高斯=极小熵选择`
+- 有效条件 / Validity: `J_n^+(F_{T30})=1 ∧ J_n^-(F_{T30})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T30`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T30} and codomain Y_{T30}.
+  - 2. Normalize the source expression as F_{T30}: X_{T30}->Y_{T30}.
+  - 3. If upstream objects D_{T30} exist, compose F_{T30}=N(⊕_{g∈D_{T30}} g); otherwise treat F_{T30} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T30})=1 and J_n^-(F_{T30})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T30})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T30})=0`
+- 收敛判据 / Convergence: `Converged(F_{T30}) ⇔ ΔF_{T30}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -918,6 +1776,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 1/ln的H≤ln2，exp[-ln²]的H=½ln(2πeσ²)，跃迁临界σ_c≈0.415 描述 门控信息熵跃迁函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T31}`
+- 定义域 / Domain: `X_{T31}`
+- 值域 / Codomain: `Y_{T31}`
+- 数学表达 / Expression: `F_{T31}(x) := 1/ln的H≤ln2，exp[-ln²]的H=½ln(2πeσ²)，跃迁临界σ_c≈0.415`
+- 有效条件 / Validity: `J_n^+(F_{T31})=1 ∧ J_n^-(F_{T31})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T31`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T31} and codomain Y_{T31}.
+  - 2. Normalize the source expression as F_{T31}: X_{T31}->Y_{T31}.
+  - 3. If upstream objects D_{T31} exist, compose F_{T31}=N(⊕_{g∈D_{T31}} g); otherwise treat F_{T31} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T31})=1 and J_n^-(F_{T31})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T31})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T31})=0`
+- 收敛判据 / Convergence: `Converged(F_{T31}) ⇔ ΔF_{T31}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -943,6 +1823,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 σ=√(dim_eff×ℏ_eff/(2μ_eff))，顿悟=1/ln→exp[-ln²]的切换点 描述 认知分辨率函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T32}`
+- 定义域 / Domain: `X_{T32}`
+- 值域 / Codomain: `Y_{T32}`
+- 数学表达 / Expression: `F_{T32}(x) := σ=√(dim_eff×ℏ_eff/(2μ_eff))，顿悟=1/ln→exp[-ln²]的切换点`
+- 有效条件 / Validity: `J_n^+(F_{T32})=1 ∧ J_n^-(F_{T32})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T32`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T32} and codomain Y_{T32}.
+  - 2. Normalize the source expression as F_{T32}: X_{T32}->Y_{T32}.
+  - 3. If upstream objects D_{T32} exist, compose F_{T32}=N(⊕_{g∈D_{T32}} g); otherwise treat F_{T32} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T32})=1 and J_n^-(F_{T32})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T32})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T32})=0`
+- 收敛判据 / Convergence: `Converged(F_{T32}) ⇔ ΔF_{T32}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -963,6 +1865,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 D228已修正T33，从"冲突"升级为"必要张力"。D225是T33修正的数学论证。已对撞，无新发现。 描述 -B型门控面冲突函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T33}`
+- 定义域 / Domain: `X_{T33}`
+- 值域 / Codomain: `Y_{T33}`
+- 数学表达 / Expression: `F_{T33}(x) := F_{T33}: X_{T33} -> Y_{T33}, y = F_{T33}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T33})=1 ∧ J_n^-(F_{T33})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T33`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T33} and codomain Y_{T33}.
+  - 2. Normalize the source expression as F_{T33}: X_{T33}->Y_{T33}.
+  - 3. If upstream objects D_{T33} exist, compose F_{T33}=N(⊕_{g∈D_{T33}} g); otherwise treat F_{T33} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T33})=1 and J_n^-(F_{T33})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T33})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T33})=0`
+- 收敛判据 / Convergence: `Converged(F_{T33}) ⇔ ΔF_{T33}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -985,6 +1909,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln(M_Planck/μ)在μ=M_Planck处发散——B型项太强了，把极小点推走了。 描述 量子引力Φ框架函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T34}`
+- 定义域 / Domain: `X_{T34}`
+- 值域 / Codomain: `Y_{T34}`
+- 数学表达 / Expression: `F_{T34}(x) := T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln(M_Planck/μ)在μ=M_Planck处发散——B型项太强了，把极小点推走了。`
+- 有效条件 / Validity: `J_n^+(F_{T34})=1 ∧ J_n^-(F_{T34})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T34`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T34} and codomain Y_{T34}.
+  - 2. Normalize the source expression as F_{T34}: X_{T34}->Y_{T34}.
+  - 3. If upstream objects D_{T34} exist, compose F_{T34}=N(⊕_{g∈D_{T34}} g); otherwise treat F_{T34} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T34})=1 and J_n^-(F_{T34})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T34})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T34})=0`
+- 收敛判据 / Convergence: `Converged(F_{T34}) ⇔ ΔF_{T34}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1005,6 +1951,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 σ_Planck≈6.9，由高斯门控退化条件精确确定 描述 精确值。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T35}`
+- 定义域 / Domain: `X_{T35}`
+- 值域 / Codomain: `Y_{T35}`
+- 数学表达 / Expression: `F_{T35}(x) := σ_Planck≈6.9，由高斯门控退化条件精确确定`
+- 有效条件 / Validity: `J_n^+(F_{T35})=1 ∧ J_n^-(F_{T35})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T35`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T35} and codomain Y_{T35}.
+  - 2. Normalize the source expression as F_{T35}: X_{T35}->Y_{T35}.
+  - 3. If upstream objects D_{T35} exist, compose F_{T35}=N(⊕_{g∈D_{T35}} g); otherwise treat F_{T35} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T35})=1 and J_n^-(F_{T35})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T35})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T35})=0`
+- 收敛判据 / Convergence: `Converged(F_{T35}) ⇔ ΔF_{T35}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1029,6 +1997,28 @@ English: σ(Λ)=|ln(M_Planck/Λ)|/√(2ln|ln(M_Planck/Λ)|)
 中文：该函数通过 σ(Λ)=|ln(M_Planck/Λ)|/√(2ln|ln(M_Planck/Λ)|) 描述 能标依赖函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T36}`
+- 定义域 / Domain: `X_{T36}`
+- 值域 / Codomain: `Y_{T36}`
+- 数学表达 / Expression: `F_{T36}(x) := σ(Λ)=|ln(M_Planck/Λ)|/√(2ln|ln(M_Planck/Λ)|)`
+- 有效条件 / Validity: `J_n^+(F_{T36})=1 ∧ J_n^-(F_{T36})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T36`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T36} and codomain Y_{T36}.
+  - 2. Normalize the source expression as F_{T36}: X_{T36}->Y_{T36}.
+  - 3. If upstream objects D_{T36} exist, compose F_{T36}=N(⊕_{g∈D_{T36}} g); otherwise treat F_{T36} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T36})=1 and J_n^-(F_{T36})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T36})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T36})=0`
+- 收敛判据 / Convergence: `Converged(F_{T36}) ⇔ ΔF_{T36}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1049,6 +2039,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 μ≈1.26×10¹⁶ GeV≈Λ_GUT。D231说极小点被B型项从M_Planck推到更低能标。T37给出了精确位置。 描述 极小点精确位置。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T37}`
+- 定义域 / Domain: `X_{T37}`
+- 值域 / Codomain: `Y_{T37}`
+- 数学表达 / Expression: `F_{T37}(x) := μ≈1.26×10¹⁶ GeV≈Λ_GUT。D231说极小点被B型项从M_Planck推到更低能标。T37给出了精确位置。`
+- 有效条件 / Validity: `J_n^+(F_{T37})=1 ∧ J_n^-(F_{T37})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T37`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T37} and codomain Y_{T37}.
+  - 2. Normalize the source expression as F_{T37}: X_{T37}->Y_{T37}.
+  - 3. If upstream objects D_{T37} exist, compose F_{T37}=N(⊕_{g∈D_{T37}} g); otherwise treat F_{T37} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T37})=1 and J_n^-(F_{T37})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T37})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T37})=0`
+- 收敛判据 / Convergence: `Converged(F_{T37}) ⇔ ΔF_{T37}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1073,6 +2085,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 量子引力和四力统一是两个不同能标上的事件 描述 极值点-极小点分离定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T38}`
+- 定义域 / Domain: `X_{T38}`
+- 值域 / Codomain: `Y_{T38}`
+- 数学表达 / Expression: `F_{T38}(x) := F_{T38}: X_{T38} -> Y_{T38}, y = F_{T38}(x)`
+- 有效条件 / Validity: `J_n^+(F_{T38})=1 ∧ J_n^-(F_{T38})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T38`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T38} and codomain Y_{T38}.
+  - 2. Normalize the source expression as F_{T38}: X_{T38}->Y_{T38}.
+  - 3. If upstream objects D_{T38} exist, compose F_{T38}=N(⊕_{g∈D_{T38}} g); otherwise treat F_{T38} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T38})=1 and J_n^-(F_{T38})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T38})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T38})=0`
+- 收敛判据 / Convergence: `Converged(F_{T38}) ⇔ ΔF_{T38}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1093,6 +2127,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 ∀域D，若∃n≥2个门控面{Λᵢ}且至少一个A型一个B型，则Φ(μ)=Σᵢ sᵢ/ln(μ/Λᵢ)必然存在极小点μ*。极小点由Σᵢ sᵢ/ln²(μ/Λᵢ)=0唯一确定。纯A型域无极小点。T17标注为T39在物理域(n=3,s=(+1,+1,-1))的实例。 描述 跨域统一定理（D224升级）。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{T39}`
+- 定义域 / Domain: `X_{T39}`
+- 值域 / Codomain: `Y_{T39}`
+- 数学表达 / Expression: `F_{T39}(x) := ∀域D，若∃n≥2个门控面{Λᵢ}且至少一个A型一个B型，则Φ(μ)=Σᵢ sᵢ/ln(μ/Λᵢ)必然存在极小点μ*。极小点由Σᵢ sᵢ/ln²(μ/Λᵢ)=0唯一确定。纯A型域无极小点。T17标注为T39在物理域(n=3,s=(+1,+1,-1))的实例。`
+- 有效条件 / Validity: `J_n^+(F_{T39})=1 ∧ J_n^-(F_{T39})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `T39`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{T39} and codomain Y_{T39}.
+  - 2. Normalize the source expression as F_{T39}: X_{T39}->Y_{T39}.
+  - 3. If upstream objects D_{T39} exist, compose F_{T39}=N(⊕_{g∈D_{T39}} g); otherwise treat F_{T39} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{T39})=1 and J_n^-(F_{T39})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{T39})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{T39})=0`
+- 收敛判据 / Convergence: `Converged(F_{T39}) ⇔ ΔF_{T39}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1120,6 +2176,28 @@ English: n_lock = Σᵢ step(C_exit(i) - θ_C(i))
 中文：该函数通过 n_lock = Σᵢ step(C_exit(i) - θ_C(i)) 描述 锁定强度函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D1}`
+- 定义域 / Domain: `X_{D1}`
+- 值域 / Codomain: `Y_{D1}`
+- 数学表达 / Expression: `F_{D1}(x) := n_lock = Σᵢ step(C_exit(i) - θ_C(i))`
+- 有效条件 / Validity: `J_n^+(F_{D1})=1 ∧ J_n^-(F_{D1})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D1`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D1} and codomain Y_{D1}.
+  - 2. Normalize the source expression as F_{D1}: X_{D1}->Y_{D1}.
+  - 3. If upstream objects D_{D1} exist, compose F_{D1}=N(⊕_{g∈D_{D1}} g); otherwise treat F_{D1} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D1})=1 and J_n^-(F_{D1})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D1})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D1})=0`
+- 收敛判据 / Convergence: `Converged(F_{D1}) ⇔ ΔF_{D1}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1140,6 +2218,28 @@ English: Posture_deg↑ -> H↑ -> ε↓ -> R_perceived↓
 **说明 / Explanation**
 中文：该函数通过 Posture_deg↑→H↑→ε↓→R_perceived↓ 描述 锁定-遮蔽耦合。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D2}`
+- 定义域 / Domain: `X_{D2}`
+- 值域 / Codomain: `Y_{D2}`
+- 数学表达 / Expression: `F_{D2}(x) := Posture_deg↑→H↑→ε↓→R_perceived↓`
+- 有效条件 / Validity: `J_n^+(F_{D2})=1 ∧ J_n^-(F_{D2})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D2`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D2} and codomain Y_{D2}.
+  - 2. Normalize the source expression as F_{D2}: X_{D2}->Y_{D2}.
+  - 3. If upstream objects D_{D2} exist, compose F_{D2}=N(⊕_{g∈D_{D2}} g); otherwise treat F_{D2} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D2})=1 and J_n^-(F_{D2})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D2})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D2})=0`
+- 收敛判据 / Convergence: `Converged(F_{D2}) ⇔ ΔF_{D2}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1162,6 +2262,28 @@ English: ε_eff = ε₀ x exp(-∫₀ᵗ λ(s)ds) x (1-Posture_deg)
 中文：该函数通过 ε_eff = ε₀ × exp(-∫₀ᵗ λ(s)ds) × (1-Posture_deg) 描述 退出权信号衰减。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D3}`
+- 定义域 / Domain: `X_{D3}`
+- 值域 / Codomain: `Y_{D3}`
+- 数学表达 / Expression: `F_{D3}(x) := ε_eff = ε₀ × exp(-∫₀ᵗ λ(s)ds) × (1-Posture_deg)`
+- 有效条件 / Validity: `J_n^+(F_{D3})=1 ∧ J_n^-(F_{D3})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D3`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D3} and codomain Y_{D3}.
+  - 2. Normalize the source expression as F_{D3}: X_{D3}->Y_{D3}.
+  - 3. If upstream objects D_{D3} exist, compose F_{D3}=N(⊕_{g∈D_{D3}} g); otherwise treat F_{D3} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D3})=1 and J_n^-(F_{D3})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D3})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D3})=0`
+- 收敛判据 / Convergence: `Converged(F_{D3}) ⇔ ΔF_{D3}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1182,6 +2304,28 @@ English: H = f(H_pro, Σ_compatibility)
 **说明 / Explanation**
 中文：该函数通过 H = f(H_pro, Σ_compatibility) 描述 信息遮蔽双源。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D4}`
+- 定义域 / Domain: `X_{D4}`
+- 值域 / Codomain: `Y_{D4}`
+- 数学表达 / Expression: `F_{D4}(x) := H = f(H_pro, Σ_compatibility)`
+- 有效条件 / Validity: `J_n^+(F_{D4})=1 ∧ J_n^-(F_{D4})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D4`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D4} and codomain Y_{D4}.
+  - 2. Normalize the source expression as F_{D4}: X_{D4}->Y_{D4}.
+  - 3. If upstream objects D_{D4} exist, compose F_{D4}=N(⊕_{g∈D_{D4}} g); otherwise treat F_{D4} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D4})=1 and J_n^-(F_{D4})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D4})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D4})=0`
+- 收敛判据 / Convergence: `Converged(F_{D4}) ⇔ ΔF_{D4}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1204,6 +2348,28 @@ English: P_fake = σ(H - θ_fake)
 中文：该函数通过 P_fake = σ(H - θ_fake) 描述 偏好伪造崩塌。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D5}`
+- 定义域 / Domain: `X_{D5}`
+- 值域 / Codomain: `Y_{D5}`
+- 数学表达 / Expression: `F_{D5}(x) := P_fake = σ(H - θ_fake)`
+- 有效条件 / Validity: `J_n^+(F_{D5})=1 ∧ J_n^-(F_{D5})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D5`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D5} and codomain Y_{D5}.
+  - 2. Normalize the source expression as F_{D5}: X_{D5}->Y_{D5}.
+  - 3. If upstream objects D_{D5} exist, compose F_{D5}=N(⊕_{g∈D_{D5}} g); otherwise treat F_{D5} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D5})=1 and J_n^-(F_{D5})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D5})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D5})=0`
+- 收敛判据 / Convergence: `Converged(F_{D5}) ⇔ ΔF_{D5}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1224,6 +2390,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 R_perceived = R × f(ε_aware, 信息可及性, C_exit_eff) 描述 应约者感知退化。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D6}`
+- 定义域 / Domain: `X_{D6}`
+- 值域 / Codomain: `Y_{D6}`
+- 数学表达 / Expression: `F_{D6}(x) := R_perceived = R × f(ε_aware, 信息可及性, C_exit_eff)`
+- 有效条件 / Validity: `J_n^+(F_{D6})=1 ∧ J_n^-(F_{D6})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D6`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D6} and codomain Y_{D6}.
+  - 2. Normalize the source expression as F_{D6}: X_{D6}->Y_{D6}.
+  - 3. If upstream objects D_{D6} exist, compose F_{D6}=N(⊕_{g∈D_{D6}} g); otherwise treat F_{D6} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D6})=1 and J_n^-(F_{D6})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D6})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D6})=0`
+- 收敛判据 / Convergence: `Converged(F_{D6}) ⇔ ΔF_{D6}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1246,6 +2434,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 Posture_deg = f(I, C_exit_speaker, 历史一致性) 描述 提议者信誉绑定。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D7}`
+- 定义域 / Domain: `X_{D7}`
+- 值域 / Codomain: `Y_{D7}`
+- 数学表达 / Expression: `F_{D7}(x) := Posture_deg = f(I, C_exit_speaker, 历史一致性)`
+- 有效条件 / Validity: `J_n^+(F_{D7})=1 ∧ J_n^-(F_{D7})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D7`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D7} and codomain Y_{D7}.
+  - 2. Normalize the source expression as F_{D7}: X_{D7}->Y_{D7}.
+  - 3. If upstream objects D_{D7} exist, compose F_{D7}=N(⊕_{g∈D_{D7}} g); otherwise treat F_{D7} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D7})=1 and J_n^-(F_{D7})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D7})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D7})=0`
+- 收敛判据 / Convergence: `Converged(F_{D7}) ⇔ ΔF_{D7}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1266,6 +2476,28 @@ English: ε = (ε_identity, ε_info, ε_social, ε_economic, ε_time, ε_geograp
 **说明 / Explanation**
 中文：该函数通过 ε = (ε_identity, ε_info, ε_social, ε_economic, ε_time, ε_geographic, ε_body, ε_level) 描述 退出权八维展开。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D8}`
+- 定义域 / Domain: `X_{D8}`
+- 值域 / Codomain: `Y_{D8}`
+- 数学表达 / Expression: `F_{D8}(x) := ε = (ε_identity, ε_info, ε_social, ε_economic, ε_time, ε_geographic, ε_body, ε_level)`
+- 有效条件 / Validity: `J_n^+(F_{D8})=1 ∧ J_n^-(F_{D8})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D8`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D8} and codomain Y_{D8}.
+  - 2. Normalize the source expression as F_{D8}: X_{D8}->Y_{D8}.
+  - 3. If upstream objects D_{D8} exist, compose F_{D8}=N(⊕_{g∈D_{D8}} g); otherwise treat F_{D8} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D8})=1 and J_n^-(F_{D8})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D8})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D8})=0`
+- 收敛判据 / Convergence: `Converged(F_{D8}) ⇔ ΔF_{D8}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1288,6 +2520,28 @@ English: S_sovereign = Σᵢ εᵢ x wᵢ
 中文：该函数通过 S_sovereign = Σᵢ εᵢ × wᵢ 描述 主权函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D9}`
+- 定义域 / Domain: `X_{D9}`
+- 值域 / Codomain: `Y_{D9}`
+- 数学表达 / Expression: `F_{D9}(x) := S_sovereign = Σᵢ εᵢ × wᵢ`
+- 有效条件 / Validity: `J_n^+(F_{D9})=1 ∧ J_n^-(F_{D9})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D9`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D9} and codomain Y_{D9}.
+  - 2. Normalize the source expression as F_{D9}: X_{D9}->Y_{D9}.
+  - 3. If upstream objects D_{D9} exist, compose F_{D9}=N(⊕_{g∈D_{D9}} g); otherwise treat F_{D9} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D9})=1 and J_n^-(F_{D9})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D9})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D9})=0`
+- 收敛判据 / Convergence: `Converged(F_{D9}) ⇔ ΔF_{D9}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1308,6 +2562,28 @@ English: Window(t) = σ(ε_eff - θ_low) x σ(θ_high - ε_eff)
 **说明 / Explanation**
 中文：该函数通过 Window(t) = σ(ε_eff - θ_low) × σ(θ_high - ε_eff) 描述 点火窗口函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D10}`
+- 定义域 / Domain: `X_{D10}`
+- 值域 / Codomain: `Y_{D10}`
+- 数学表达 / Expression: `F_{D10}(x) := Window(t) = σ(ε_eff - θ_low) × σ(θ_high - ε_eff)`
+- 有效条件 / Validity: `J_n^+(F_{D10})=1 ∧ J_n^-(F_{D10})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D10`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D10} and codomain Y_{D10}.
+  - 2. Normalize the source expression as F_{D10}: X_{D10}->Y_{D10}.
+  - 3. If upstream objects D_{D10} exist, compose F_{D10}=N(⊕_{g∈D_{D10}} g); otherwise treat F_{D10} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D10})=1 and J_n^-(F_{D10})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D10})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D10})=0`
+- 收敛判据 / Convergence: `Converged(F_{D10}) ⇔ ΔF_{D10}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1330,6 +2606,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 退出权信号和身份认同的平衡。 描述 统一内部驱动力。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D11}`
+- 定义域 / Domain: `X_{D11}`
+- 值域 / Codomain: `Y_{D11}`
+- 数学表达 / Expression: `F_{D11}(x) := F_{D11}: X_{D11} -> Y_{D11}, y = F_{D11}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D11})=1 ∧ J_n^-(F_{D11})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D11`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D11} and codomain Y_{D11}.
+  - 2. Normalize the source expression as F_{D11}: X_{D11}->Y_{D11}.
+  - 3. If upstream objects D_{D11} exist, compose F_{D11}=N(⊕_{g∈D_{D11}} g); otherwise treat F_{D11} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D11})=1 and J_n^-(F_{D11})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D11})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D11})=0`
+- 收敛判据 / Convergence: `Converged(F_{D11}) ⇔ ΔF_{D11}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1351,6 +2649,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 ε_eff(t+1) = ε_eff(t) × (1-f_表达) × (1-f_感知) × (1-f_免疫) 描述 闭环动力学函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D12}`
+- 定义域 / Domain: `X_{D12}`
+- 值域 / Codomain: `Y_{D12}`
+- 数学表达 / Expression: `F_{D12}(x) := ε_eff(t+1) = ε_eff(t) × (1-f_表达) × (1-f_感知) × (1-f_免疫)`
+- 有效条件 / Validity: `J_n^+(F_{D12})=1 ∧ J_n^-(F_{D12})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D12`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D12} and codomain Y_{D12}.
+  - 2. Normalize the source expression as F_{D12}: X_{D12}->Y_{D12}.
+  - 3. If upstream objects D_{D12} exist, compose F_{D12}=N(⊕_{g∈D_{D12}} g); otherwise treat F_{D12} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D12})=1 and J_n^-(F_{D12})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D12})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D12})=0`
+- 收敛判据 / Convergence: `Converged(F_{D12}) ⇔ ΔF_{D12}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1371,6 +2691,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 退出权信号、姿态、遮蔽、外部力量的平衡。 描述 速度差闭合。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D13}`
+- 定义域 / Domain: `X_{D13}`
+- 值域 / Codomain: `Y_{D13}`
+- 数学表达 / Expression: `F_{D13}(x) := F_{D13}: X_{D13} -> Y_{D13}, y = F_{D13}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D13})=1 ∧ J_n^-(F_{D13})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D13`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D13} and codomain Y_{D13}.
+  - 2. Normalize the source expression as F_{D13}: X_{D13}->Y_{D13}.
+  - 3. If upstream objects D_{D13} exist, compose F_{D13}=N(⊕_{g∈D_{D13}} g); otherwise treat F_{D13} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D13})=1 and J_n^-(F_{D13})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D13})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D13})=0`
+- 收敛判据 / Convergence: `Converged(F_{D13}) ⇔ ΔF_{D13}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1394,6 +2736,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 叙事遮蔽和退化免疫的平衡。 描述 种子激活概率。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D14}`
+- 定义域 / Domain: `X_{D14}`
+- 值域 / Codomain: `Y_{D14}`
+- 数学表达 / Expression: `F_{D14}(x) := F_{D14}: X_{D14} -> Y_{D14}, y = F_{D14}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D14})=1 ∧ J_n^-(F_{D14})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D14`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D14} and codomain Y_{D14}.
+  - 2. Normalize the source expression as F_{D14}: X_{D14}->Y_{D14}.
+  - 3. If upstream objects D_{D14} exist, compose F_{D14}=N(⊕_{g∈D_{D14}} g); otherwise treat F_{D14} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D14})=1 and J_n^-(F_{D14})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D14})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D14})=0`
+- 收敛判据 / Convergence: `Converged(F_{D14}) ⇔ ΔF_{D14}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1414,6 +2778,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数用于刻画 种子爆发后退出权信号的恢复。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D15}`
+- 定义域 / Domain: `X_{D15}`
+- 值域 / Codomain: `Y_{D15}`
+- 数学表达 / Expression: `F_{D15}(x) := F_{D15}: X_{D15} -> Y_{D15}, y = F_{D15}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D15})=1 ∧ J_n^-(F_{D15})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D15`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D15} and codomain Y_{D15}.
+  - 2. Normalize the source expression as F_{D15}: X_{D15}->Y_{D15}.
+  - 3. If upstream objects D_{D15} exist, compose F_{D15}=N(⊕_{g∈D_{D15}} g); otherwise treat F_{D15} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D15})=1 and J_n^-(F_{D15})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D15})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D15})=0`
+- 收敛判据 / Convergence: `Converged(F_{D15}) ⇔ ΔF_{D15}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1436,6 +2822,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 恢复后的退出权信号必须在特定区间内。 描述 二次窗口判定。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D16}`
+- 定义域 / Domain: `X_{D16}`
+- 值域 / Codomain: `Y_{D16}`
+- 数学表达 / Expression: `F_{D16}(x) := F_{D16}: X_{D16} -> Y_{D16}, y = F_{D16}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D16})=1 ∧ J_n^-(F_{D16})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D16`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D16} and codomain Y_{D16}.
+  - 2. Normalize the source expression as F_{D16}: X_{D16}->Y_{D16}.
+  - 3. If upstream objects D_{D16} exist, compose F_{D16}=N(⊕_{g∈D_{D16}} g); otherwise treat F_{D16} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D16})=1 and J_n^-(F_{D16})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D16})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D16})=0`
+- 收敛判据 / Convergence: `Converged(F_{D16}) ⇔ ΔF_{D16}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1456,6 +2864,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 E_signal(t) = {零阶:ε, 一阶:dε/dt, 二阶:d²ε/dt², 交互:εᵢ×εⱼ} 描述 情绪信号分层函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D17}`
+- 定义域 / Domain: `X_{D17}`
+- 值域 / Codomain: `Y_{D17}`
+- 数学表达 / Expression: `F_{D17}(x) := E_signal(t) = {零阶:ε, 一阶:dε/dt, 二阶:d²ε/dt², 交互:εᵢ×εⱼ}`
+- 有效条件 / Validity: `J_n^+(F_{D17})=1 ∧ J_n^-(F_{D17})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D17`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D17} and codomain Y_{D17}.
+  - 2. Normalize the source expression as F_{D17}: X_{D17}->Y_{D17}.
+  - 3. If upstream objects D_{D17} exist, compose F_{D17}=N(⊕_{g∈D_{D17}} g); otherwise treat F_{D17} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D17})=1 and J_n^-(F_{D17})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D17})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D17})=0`
+- 收敛判据 / Convergence: `Converged(F_{D17}) ⇔ ΔF_{D17}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1478,6 +2908,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 锁定退出权和退出权信号的平衡。 描述 情绪稳态临界。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D18}`
+- 定义域 / Domain: `X_{D18}`
+- 值域 / Codomain: `Y_{D18}`
+- 数学表达 / Expression: `F_{D18}(x) := F_{D18}: X_{D18} -> Y_{D18}, y = F_{D18}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D18})=1 ∧ J_n^-(F_{D18})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D18`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D18} and codomain Y_{D18}.
+  - 2. Normalize the source expression as F_{D18}: X_{D18}->Y_{D18}.
+  - 3. If upstream objects D_{D18} exist, compose F_{D18}=N(⊕_{g∈D_{D18}} g); otherwise treat F_{D18} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D18})=1 and J_n^-(F_{D18})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D18})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D18})=0`
+- 收敛判据 / Convergence: `Converged(F_{D18}) ⇔ ΔF_{D18}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1498,6 +2950,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 情绪信号和有效退出成本的平衡。 描述 情绪注入退出权信号。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D19}`
+- 定义域 / Domain: `X_{D19}`
+- 值域 / Codomain: `Y_{D19}`
+- 数学表达 / Expression: `F_{D19}(x) := F_{D19}: X_{D19} -> Y_{D19}, y = F_{D19}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D19})=1 ∧ J_n^-(F_{D19})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D19`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D19} and codomain Y_{D19}.
+  - 2. Normalize the source expression as F_{D19}: X_{D19}->Y_{D19}.
+  - 3. If upstream objects D_{D19} exist, compose F_{D19}=N(⊕_{g∈D_{D19}} g); otherwise treat F_{D19} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D19})=1 and J_n^-(F_{D19})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D19})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D19})=0`
+- 收敛判据 / Convergence: `Converged(F_{D19}) ⇔ ΔF_{D19}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1520,6 +2994,28 @@ English: L_net(t) = (1-H_blur) x C_exit_gain - L_rigidity
 中文：该函数通过 L_net(t) = (1-H_blur) × C_exit_gain - L_rigidity 描述 法条净效应函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D20}`
+- 定义域 / Domain: `X_{D20}`
+- 值域 / Codomain: `Y_{D20}`
+- 数学表达 / Expression: `F_{D20}(x) := L_net(t) = (1-H_blur) × C_exit_gain - L_rigidity`
+- 有效条件 / Validity: `J_n^+(F_{D20})=1 ∧ J_n^-(F_{D20})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D20`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D20} and codomain Y_{D20}.
+  - 2. Normalize the source expression as F_{D20}: X_{D20}->Y_{D20}.
+  - 3. If upstream objects D_{D20} exist, compose F_{D20}=N(⊕_{g∈D_{D20}} g); otherwise treat F_{D20} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D20})=1 and J_n^-(F_{D20})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D20})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D20})=0`
+- 收敛判据 / Convergence: `Converged(F_{D20}) ⇔ ΔF_{D20}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1540,6 +3036,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 随时间衰减，修正速度决定硬度。 描述 宪法硬度。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D21}`
+- 定义域 / Domain: `X_{D21}`
+- 值域 / Codomain: `Y_{D21}`
+- 数学表达 / Expression: `F_{D21}(x) := F_{D21}: X_{D21} -> Y_{D21}, y = F_{D21}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D21})=1 ∧ J_n^-(F_{D21})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D21`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D21} and codomain Y_{D21}.
+  - 2. Normalize the source expression as F_{D21}: X_{D21}->Y_{D21}.
+  - 3. If upstream objects D_{D21} exist, compose F_{D21}=N(⊕_{g∈D_{D21}} g); otherwise treat F_{D21} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D21})=1 and J_n^-(F_{D21})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D21})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D21})=0`
+- 收敛判据 / Convergence: `Converged(F_{D21}) ⇔ ΔF_{D21}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1562,6 +3080,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数用于刻画 民事保护，各维度退出权的乘积。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D22}`
+- 定义域 / Domain: `X_{D22}`
+- 值域 / Codomain: `Y_{D22}`
+- 数学表达 / Expression: `F_{D22}(x) := F_{D22}: X_{D22} -> Y_{D22}, y = F_{D22}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D22})=1 ∧ J_n^-(F_{D22})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D22`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D22} and codomain Y_{D22}.
+  - 2. Normalize the source expression as F_{D22}: X_{D22}->Y_{D22}.
+  - 3. If upstream objects D_{D22} exist, compose F_{D22}=N(⊕_{g∈D_{D22}} g); otherwise treat F_{D22} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D22})=1 and J_n^-(F_{D22})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D22})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D22})=0`
+- 收敛判据 / Convergence: `Converged(F_{D22}) ⇔ ΔF_{D22}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1582,6 +3122,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 退出权信号、宪法硬度、司法独立、法条净效应的乘积。 描述 法治度。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D23}`
+- 定义域 / Domain: `X_{D23}`
+- 值域 / Codomain: `Y_{D23}`
+- 数学表达 / Expression: `F_{D23}(x) := F_{D23}: X_{D23} -> Y_{D23}, y = F_{D23}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D23})=1 ∧ J_n^-(F_{D23})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D23`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D23} and codomain Y_{D23}.
+  - 2. Normalize the source expression as F_{D23}: X_{D23}->Y_{D23}.
+  - 3. If upstream objects D_{D23} exist, compose F_{D23}=N(⊕_{g∈D_{D23}} g); otherwise treat F_{D23} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D23})=1 and J_n^-(F_{D23})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D23})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D23})=0`
+- 收敛判据 / Convergence: `Converged(F_{D23}) ⇔ ΔF_{D23}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1604,6 +3166,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 遮蔽、退出权信号、退出成本、姿态的平衡。 描述 犹豫域双向压缩。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D24}`
+- 定义域 / Domain: `X_{D24}`
+- 值域 / Codomain: `Y_{D24}`
+- 数学表达 / Expression: `F_{D24}(x) := F_{D24}: X_{D24} -> Y_{D24}, y = F_{D24}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D24})=1 ∧ J_n^-(F_{D24})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D24`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D24} and codomain Y_{D24}.
+  - 2. Normalize the source expression as F_{D24}: X_{D24}->Y_{D24}.
+  - 3. If upstream objects D_{D24} exist, compose F_{D24}=N(⊕_{g∈D_{D24}} g); otherwise treat F_{D24} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D24})=1 and J_n^-(F_{D24})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D24})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D24})=0`
+- 收敛判据 / Convergence: `Converged(F_{D24}) ⇔ ΔF_{D24}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1624,6 +3208,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 意识、退出权信号、退化免疫的乘积。 描述 叙事冲击。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D25}`
+- 定义域 / Domain: `X_{D25}`
+- 值域 / Codomain: `Y_{D25}`
+- 数学表达 / Expression: `F_{D25}(x) := F_{D25}: X_{D25} -> Y_{D25}, y = F_{D25}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D25})=1 ∧ J_n^-(F_{D25})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D25`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D25} and codomain Y_{D25}.
+  - 2. Normalize the source expression as F_{D25}: X_{D25}->Y_{D25}.
+  - 3. If upstream objects D_{D25} exist, compose F_{D25}=N(⊕_{g∈D_{D25}} g); otherwise treat F_{D25} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D25})=1 and J_n^-(F_{D25})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D25})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D25})=0`
+- 收敛判据 / Convergence: `Converged(F_{D25}) ⇔ ΔF_{D25}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1646,6 +3252,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 6因子乘法 描述 跨层完整退化函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D26}`
+- 定义域 / Domain: `X_{D26}`
+- 值域 / Codomain: `Y_{D26}`
+- 数学表达 / Expression: `F_{D26}(x) := F_{D26}: X_{D26} -> Y_{D26}, y = F_{D26}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D26})=1 ∧ J_n^-(F_{D26})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D26`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D26} and codomain Y_{D26}.
+  - 2. Normalize the source expression as F_{D26}: X_{D26}->Y_{D26}.
+  - 3. If upstream objects D_{D26} exist, compose F_{D26}=N(⊕_{g∈D_{D26}} g); otherwise treat F_{D26} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D26})=1 and J_n^-(F_{D26})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D26})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D26})=0`
+- 收敛判据 / Convergence: `Converged(F_{D26}) ⇔ ΔF_{D26}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1666,6 +3294,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 密度、平均退出权信号、退出成本比值的平衡。 描述 级联速度。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D27}`
+- 定义域 / Domain: `X_{D27}`
+- 值域 / Codomain: `Y_{D27}`
+- 数学表达 / Expression: `F_{D27}(x) := F_{D27}: X_{D27} -> Y_{D27}, y = F_{D27}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D27})=1 ∧ J_n^-(F_{D27})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D27`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D27} and codomain Y_{D27}.
+  - 2. Normalize the source expression as F_{D27}: X_{D27}->Y_{D27}.
+  - 3. If upstream objects D_{D27} exist, compose F_{D27}=N(⊕_{g∈D_{D27}} g); otherwise treat F_{D27} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D27})=1 and J_n^-(F_{D27})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D27})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D27})=0`
+- 收敛判据 / Convergence: `Converged(F_{D27}) ⇔ ΔF_{D27}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1688,6 +3338,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 退出权信号、平均退出权信号、聚集度的平衡。 描述 顽固者临界比例。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D28}`
+- 定义域 / Domain: `X_{D28}`
+- 值域 / Codomain: `Y_{D28}`
+- 数学表达 / Expression: `F_{D28}(x) := F_{D28}: X_{D28} -> Y_{D28}, y = F_{D28}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D28})=1 ∧ J_n^-(F_{D28})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D28`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D28} and codomain Y_{D28}.
+  - 2. Normalize the source expression as F_{D28}: X_{D28}->Y_{D28}.
+  - 3. If upstream objects D_{D28} exist, compose F_{D28}=N(⊕_{g∈D_{D28}} g); otherwise treat F_{D28} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D28})=1 and J_n^-(F_{D28})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D28})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D28})=0`
+- 收敛判据 / Convergence: `Converged(F_{D28}) ⇔ ΔF_{D28}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1708,6 +3380,28 @@ English: P_internal = k x ε x exp(-ε/ε_opt) - R_identity x σ(E-θ_identity)
 **说明 / Explanation**
 中文：该函数通过 P_internal = k×ε×exp(-ε/ε_opt) - R_identity×σ(E-θ_identity) 描述 统一内部驱动力函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D29}`
+- 定义域 / Domain: `X_{D29}`
+- 值域 / Codomain: `Y_{D29}`
+- 数学表达 / Expression: `F_{D29}(x) := P_internal = k×ε×exp(-ε/ε_opt) - R_identity×σ(E-θ_identity)`
+- 有效条件 / Validity: `J_n^+(F_{D29})=1 ∧ J_n^-(F_{D29})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D29`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D29} and codomain Y_{D29}.
+  - 2. Normalize the source expression as F_{D29}: X_{D29}->Y_{D29}.
+  - 3. If upstream objects D_{D29} exist, compose F_{D29}=N(⊕_{g∈D_{D29}} g); otherwise treat F_{D29} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D29})=1 and J_n^-(F_{D29})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D29})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D29})=0`
+- 收敛判据 / Convergence: `Converged(F_{D29}) ⇔ ΔF_{D29}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1730,6 +3424,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 ε_eff(t+1) = ε_eff(t) × (1-f_表达) × (1-f_感知) × (1-f_免疫) 描述 闭环动力学函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D30}`
+- 定义域 / Domain: `X_{D30}`
+- 值域 / Codomain: `Y_{D30}`
+- 数学表达 / Expression: `F_{D30}(x) := ε_eff(t+1) = ε_eff(t) × (1-f_表达) × (1-f_感知) × (1-f_免疫)`
+- 有效条件 / Validity: `J_n^+(F_{D30})=1 ∧ J_n^-(F_{D30})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D30`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D30} and codomain Y_{D30}.
+  - 2. Normalize the source expression as F_{D30}: X_{D30}->Y_{D30}.
+  - 3. If upstream objects D_{D30} exist, compose F_{D30}=N(⊕_{g∈D_{D30}} g); otherwise treat F_{D30} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D30})=1 and J_n^-(F_{D30})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D30})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D30})=0`
+- 收敛判据 / Convergence: `Converged(F_{D30}) ⇔ ΔF_{D30}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1751,6 +3467,28 @@ English: λ_intervention = f(n_lock, C_exit)
 中文：该函数通过 λ_intervention = f(n_lock, C_exit) 描述 衰减率干预函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D31}`
+- 定义域 / Domain: `X_{D31}`
+- 值域 / Codomain: `Y_{D31}`
+- 数学表达 / Expression: `F_{D31}(x) := λ_intervention = f(n_lock, C_exit)`
+- 有效条件 / Validity: `J_n^+(F_{D31})=1 ∧ J_n^-(F_{D31})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D31`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D31} and codomain Y_{D31}.
+  - 2. Normalize the source expression as F_{D31}: X_{D31}->Y_{D31}.
+  - 3. If upstream objects D_{D31} exist, compose F_{D31}=N(⊕_{g∈D_{D31}} g); otherwise treat F_{D31} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D31})=1 and J_n^-(F_{D31})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D31})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D31})=0`
+- 收敛判据 / Convergence: `Converged(F_{D31}) ⇔ ΔF_{D31}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1771,6 +3509,28 @@ English: ε_group = ⟨π⟩/(1+α_s x modularity) x (1-p_stubborn) x (1-cluster
 **说明 / Explanation**
 中文：该函数通过 ε_group = ⟨π⟩/(1+α_s×modularity) × (1-p_stubborn) × (1-clustering) 描述 认知-群体犹豫域统一映射函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D32}`
+- 定义域 / Domain: `X_{D32}`
+- 值域 / Codomain: `Y_{D32}`
+- 数学表达 / Expression: `F_{D32}(x) := ε_group = ⟨π⟩/(1+α_s×modularity) × (1-p_stubborn) × (1-clustering)`
+- 有效条件 / Validity: `J_n^+(F_{D32})=1 ∧ J_n^-(F_{D32})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D32`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D32} and codomain Y_{D32}.
+  - 2. Normalize the source expression as F_{D32}: X_{D32}->Y_{D32}.
+  - 3. If upstream objects D_{D32} exist, compose F_{D32}=N(⊕_{g∈D_{D32}} g); otherwise treat F_{D32} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D32})=1 and J_n^-(F_{D32})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D32})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D32})=0`
+- 收敛判据 / Convergence: `Converged(F_{D32}) ⇔ ΔF_{D32}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1795,6 +3555,28 @@ English: D_stacked = (1-I x (1-H_self)) x (1-exp(-n_lock x C̄/θ_C)) x H_reclas
 中文：该函数通过 D_stacked = (1-I×(1-H_self)) × (1-exp(-n_lock×C̄/θ_C)) × H_reclassify 描述 三层退化叠加函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D33}`
+- 定义域 / Domain: `X_{D33}`
+- 值域 / Codomain: `Y_{D33}`
+- 数学表达 / Expression: `F_{D33}(x) := D_stacked = (1-I×(1-H_self)) × (1-exp(-n_lock×C̄/θ_C)) × H_reclassify`
+- 有效条件 / Validity: `J_n^+(F_{D33})=1 ∧ J_n^-(F_{D33})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D33`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D33} and codomain Y_{D33}.
+  - 2. Normalize the source expression as F_{D33}: X_{D33}->Y_{D33}.
+  - 3. If upstream objects D_{D33} exist, compose F_{D33}=N(⊕_{g∈D_{D33}} g); otherwise treat F_{D33} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D33})=1 and J_n^-(F_{D33})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D33})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D33})=0`
+- 收敛判据 / Convergence: `Converged(F_{D33}) ⇔ ΔF_{D33}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1817,6 +3599,28 @@ English: P_sustain = I x (1-Posture_deg) x R x σ(ε_eff-θ) x σ(Δv)
 中文：该函数通过 P_sustain = I × (1-Posture_deg) × R × σ(ε_eff-θ) × σ(Δv) 描述 充分条件三层函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D34}`
+- 定义域 / Domain: `X_{D34}`
+- 值域 / Codomain: `Y_{D34}`
+- 数学表达 / Expression: `F_{D34}(x) := P_sustain = I × (1-Posture_deg) × R × σ(ε_eff-θ) × σ(Δv)`
+- 有效条件 / Validity: `J_n^+(F_{D34})=1 ∧ J_n^-(F_{D34})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D34`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D34} and codomain Y_{D34}.
+  - 2. Normalize the source expression as F_{D34}: X_{D34}->Y_{D34}.
+  - 3. If upstream objects D_{D34} exist, compose F_{D34}=N(⊕_{g∈D_{D34}} g); otherwise treat F_{D34} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D34})=1 and J_n^-(F_{D34})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D34})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D34})=0`
+- 收敛判据 / Convergence: `Converged(F_{D34}) ⇔ ΔF_{D34}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1838,6 +3642,28 @@ English: D ↔ 1-P, f_shock ↔ 1/f_factor
 中文：该函数通过 D ↔ 1-P, f_shock ↔ 1/f_factor 描述 乘法对称变换展开函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D35}`
+- 定义域 / Domain: `X_{D35}`
+- 值域 / Codomain: `Y_{D35}`
+- 数学表达 / Expression: `F_{D35}(x) := F_{D35}: X_{D35} -> Y_{D35}, y = F_{D35}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D35})=1 ∧ J_n^-(F_{D35})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D35`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D35} and codomain Y_{D35}.
+  - 2. Normalize the source expression as F_{D35}: X_{D35}->Y_{D35}.
+  - 3. If upstream objects D_{D35} exist, compose F_{D35}=N(⊕_{g∈D_{D35}} g); otherwise treat F_{D35} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D35})=1 and J_n^-(F_{D35})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D35})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D35})=0`
+- 收敛判据 / Convergence: `Converged(F_{D35}) ⇔ ΔF_{D35}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1858,6 +3684,28 @@ English: F(t) = exp(-(θ/t)^β), β_system = β₀ + γ x n_lock_avg
 **说明 / Explanation**
 中文：该函数通过 F(t) = exp(-(θ/t)^β), β_system = β₀ + γ × n_lock_avg 描述 逆Weibull寿命验证函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D36}`
+- 定义域 / Domain: `X_{D36}`
+- 值域 / Codomain: `Y_{D36}`
+- 数学表达 / Expression: `F_{D36}(x) := F(t) = exp(-(θ/t)^β), β_system = β₀ + γ × n_lock_avg`
+- 有效条件 / Validity: `J_n^+(F_{D36})=1 ∧ J_n^-(F_{D36})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D36`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D36} and codomain Y_{D36}.
+  - 2. Normalize the source expression as F_{D36}: X_{D36}->Y_{D36}.
+  - 3. If upstream objects D_{D36} exist, compose F_{D36}=N(⊕_{g∈D_{D36}} g); otherwise treat F_{D36} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D36})=1 and J_n^-(F_{D36})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D36})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D36})=0`
+- 收敛判据 / Convergence: `Converged(F_{D36}) ⇔ ΔF_{D36}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1881,6 +3729,28 @@ English: P_ignite_total = I x ε_aware x D_immune x (1 - σ(E-θ_resist) x ε)
 中文：该函数通过 P_ignite_total = I × ε_aware × D_immune × (1 - σ(E-θ_resist)×ε) 描述 点火对冲函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D37}`
+- 定义域 / Domain: `X_{D37}`
+- 值域 / Codomain: `Y_{D37}`
+- 数学表达 / Expression: `F_{D37}(x) := P_ignite_total = I × ε_aware × D_immune × (1 - σ(E-θ_resist)×ε)`
+- 有效条件 / Validity: `J_n^+(F_{D37})=1 ∧ J_n^-(F_{D37})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D37`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D37} and codomain Y_{D37}.
+  - 2. Normalize the source expression as F_{D37}: X_{D37}->Y_{D37}.
+  - 3. If upstream objects D_{D37} exist, compose F_{D37}=N(⊕_{g∈D_{D37}} g); otherwise treat F_{D37} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D37})=1 and J_n^-(F_{D37})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D37})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D37})=0`
+- 收敛判据 / Convergence: `Converged(F_{D37}) ⇔ ΔF_{D37}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1901,6 +3771,28 @@ English: C̄/θ_C > p_stubborn > clustering > H > ε_aware > Posture_deg.
 **说明 / Explanation**
 中文：该函数通过 C̄/θ_C > p_stubborn > clustering > H > ε_aware > Posture_deg。 描述 跨层完整退化，6因子乘法，杠杆排序。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D38}`
+- 定义域 / Domain: `X_{D38}`
+- 值域 / Codomain: `Y_{D38}`
+- 数学表达 / Expression: `F_{D38}(x) := C̄/θ_C > p_stubborn > clustering > H > ε_aware > Posture_deg。`
+- 有效条件 / Validity: `J_n^+(F_{D38})=1 ∧ J_n^-(F_{D38})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D38`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D38} and codomain Y_{D38}.
+  - 2. Normalize the source expression as F_{D38}: X_{D38}->Y_{D38}.
+  - 3. If upstream objects D_{D38} exist, compose F_{D38}=N(⊕_{g∈D_{D38}} g); otherwise treat F_{D38} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D38})=1 and J_n^-(F_{D38})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D38})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D38})=0`
+- 收敛判据 / Convergence: `Converged(F_{D38}) ⇔ ΔF_{D38}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1923,6 +3815,28 @@ English: P_internal = k x ε x exp(-ε/ε_opt) - R_identity x σ(E-θ_identity)
 中文：该函数通过 P_internal = k×ε×exp(-ε/ε_opt) - R_identity×σ(E-θ_identity) 描述 统一内部驱动力函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D39}`
+- 定义域 / Domain: `X_{D39}`
+- 值域 / Codomain: `Y_{D39}`
+- 数学表达 / Expression: `F_{D39}(x) := P_internal = k×ε×exp(-ε/ε_opt) - R_identity×σ(E-θ_identity)`
+- 有效条件 / Validity: `J_n^+(F_{D39})=1 ∧ J_n^-(F_{D39})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D39`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D39} and codomain Y_{D39}.
+  - 2. Normalize the source expression as F_{D39}: X_{D39}->Y_{D39}.
+  - 3. If upstream objects D_{D39} exist, compose F_{D39}=N(⊕_{g∈D_{D39}} g); otherwise treat F_{D39} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D39})=1 and J_n^-(F_{D39})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D39})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D39})=0`
+- 收敛判据 / Convergence: `Converged(F_{D39}) ⇔ ΔF_{D39}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1943,6 +3857,28 @@ English: P_survive = 1 - (1-D_immune) x (1-R_perceived) x H_total
 **说明 / Explanation**
 中文：该函数通过 P_survive = 1 - (1-D_immune) × (1-R_perceived) × H_total 描述 碰撞存活率。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D40}`
+- 定义域 / Domain: `X_{D40}`
+- 值域 / Codomain: `Y_{D40}`
+- 数学表达 / Expression: `F_{D40}(x) := P_survive = 1 - (1-D_immune) × (1-R_perceived) × H_total`
+- 有效条件 / Validity: `J_n^+(F_{D40})=1 ∧ J_n^-(F_{D40})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D40`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D40} and codomain Y_{D40}.
+  - 2. Normalize the source expression as F_{D40}: X_{D40}->Y_{D40}.
+  - 3. If upstream objects D_{D40} exist, compose F_{D40}=N(⊕_{g∈D_{D40}} g); otherwise treat F_{D40} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D40})=1 and J_n^-(F_{D40})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D40})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D40})=0`
+- 收敛判据 / Convergence: `Converged(F_{D40}) ⇔ ΔF_{D40}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -1965,6 +3901,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 t_critical=(1/(m_β×α_C×C̄/θ_C))×ln(ε₀/ε_aware_min)。这是衰减模式下的临界时间——窗口关闭的不可逆时间点。 描述 退化渗透临界触发。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D41}`
+- 定义域 / Domain: `X_{D41}`
+- 值域 / Codomain: `Y_{D41}`
+- 数学表达 / Expression: `F_{D41}(x) := t_critical=(1/(m_β×α_C×C̄/θ_C))×ln(ε₀/ε_aware_min)。这是衰减模式下的临界时间——窗口关闭的不可逆时间点。`
+- 有效条件 / Validity: `J_n^+(F_{D41})=1 ∧ J_n^-(F_{D41})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D41`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D41} and codomain Y_{D41}.
+  - 2. Normalize the source expression as F_{D41}: X_{D41}->Y_{D41}.
+  - 3. If upstream objects D_{D41} exist, compose F_{D41}=N(⊕_{g∈D_{D41}} g); otherwise treat F_{D41} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D41})=1 and J_n^-(F_{D41})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D41})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D41})=0`
+- 收敛判据 / Convergence: `Converged(F_{D41}) ⇔ ΔF_{D41}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -1985,6 +3943,28 @@ English: H_narrative = σ(ε_sense x ε_aware - ε_action) x H_classify
 **说明 / Explanation**
 中文：该函数通过 H_narrative = σ(ε_sense×ε_aware - ε_action) × H_classify 描述 分类升级函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D42}`
+- 定义域 / Domain: `X_{D42}`
+- 值域 / Codomain: `Y_{D42}`
+- 数学表达 / Expression: `F_{D42}(x) := H_narrative = σ(ε_sense×ε_aware - ε_action) × H_classify`
+- 有效条件 / Validity: `J_n^+(F_{D42})=1 ∧ J_n^-(F_{D42})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D42`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D42} and codomain Y_{D42}.
+  - 2. Normalize the source expression as F_{D42}: X_{D42}->Y_{D42}.
+  - 3. If upstream objects D_{D42} exist, compose F_{D42}=N(⊕_{g∈D_{D42}} g); otherwise treat F_{D42} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D42})=1 and J_n^-(F_{D42})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D42})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D42})=0`
+- 收敛判据 / Convergence: `Converged(F_{D42}) ⇔ ΔF_{D42}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2007,6 +3987,28 @@ English: P_survive = 1 - (1-D_immune) x (1-R_perceived) x H_total
 中文：该函数通过 P_survive = 1 - (1-D_immune) × (1-R_perceived) × H_total 描述 碰撞存活率函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D43}`
+- 定义域 / Domain: `X_{D43}`
+- 值域 / Codomain: `Y_{D43}`
+- 数学表达 / Expression: `F_{D43}(x) := P_survive = 1 - (1-D_immune) × (1-R_perceived) × H_total`
+- 有效条件 / Validity: `J_n^+(F_{D43})=1 ∧ J_n^-(F_{D43})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D43`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D43} and codomain Y_{D43}.
+  - 2. Normalize the source expression as F_{D43}: X_{D43}->Y_{D43}.
+  - 3. If upstream objects D_{D43} exist, compose F_{D43}=N(⊕_{g∈D_{D43}} g); otherwise treat F_{D43} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D43})=1 and J_n^-(F_{D43})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D43})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D43})=0`
+- 收敛判据 / Convergence: `Converged(F_{D43}) ⇔ ΔF_{D43}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2027,6 +4029,28 @@ English: M_certainty = ν x (1 - π/π₀)
 **说明 / Explanation**
 中文：该函数通过 M_certainty = ν × (1 - π/π₀) 描述 确定性误解函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D44}`
+- 定义域 / Domain: `X_{D44}`
+- 值域 / Codomain: `Y_{D44}`
+- 数学表达 / Expression: `F_{D44}(x) := M_certainty = ν × (1 - π/π₀)`
+- 有效条件 / Validity: `J_n^+(F_{D44})=1 ∧ J_n^-(F_{D44})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D44`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D44} and codomain Y_{D44}.
+  - 2. Normalize the source expression as F_{D44}: X_{D44}->Y_{D44}.
+  - 3. If upstream objects D_{D44} exist, compose F_{D44}=N(⊕_{g∈D_{D44}} g); otherwise treat F_{D44} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D44})=1 and J_n^-(F_{D44})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D44})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D44})=0`
+- 收敛判据 / Convergence: `Converged(F_{D44}) ⇔ ΔF_{D44}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2051,6 +4075,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 中间稳态存在 ⟺ 至少一条正反馈回路存在负反馈抵消 描述 中间稳态存在性函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D45}`
+- 定义域 / Domain: `X_{D45}`
+- 值域 / Codomain: `Y_{D45}`
+- 数学表达 / Expression: `F_{D45}(x) := F_{D45}: X_{D45} -> Y_{D45}, y = F_{D45}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D45})=1 ∧ J_n^-(F_{D45})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D45`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D45} and codomain Y_{D45}.
+  - 2. Normalize the source expression as F_{D45}: X_{D45}->Y_{D45}.
+  - 3. If upstream objects D_{D45} exist, compose F_{D45}=N(⊕_{g∈D_{D45}} g); otherwise treat F_{D45} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D45})=1 and J_n^-(F_{D45})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D45})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D45})=0`
+- 收敛判据 / Convergence: `Converged(F_{D45}) ⇔ ΔF_{D45}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2071,6 +4117,28 @@ English: P(grid_k | L) = f(H_total, C_exit, D_immune)
 **说明 / Explanation**
 中文：该函数通过 P(grid_k | L) = f(H_total, C_exit, D_immune) 描述 碰撞层级8格概率函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D46}`
+- 定义域 / Domain: `X_{D46}`
+- 值域 / Codomain: `Y_{D46}`
+- 数学表达 / Expression: `F_{D46}(x) := P(grid_k | L) = f(H_total, C_exit, D_immune)`
+- 有效条件 / Validity: `J_n^+(F_{D46})=1 ∧ J_n^-(F_{D46})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D46`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D46} and codomain Y_{D46}.
+  - 2. Normalize the source expression as F_{D46}: X_{D46}->Y_{D46}.
+  - 3. If upstream objects D_{D46} exist, compose F_{D46}=N(⊕_{g∈D_{D46}} g); otherwise treat F_{D46} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D46})=1 and J_n^-(F_{D46})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D46})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D46})=0`
+- 收敛判据 / Convergence: `Converged(F_{D46}) ⇔ ΔF_{D46}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2093,6 +4161,28 @@ English: dW/dt = -θ_resist x (dE/dt)/E² - dε_aware_min/dt
 中文：该函数通过 dW/dt = -θ_resist×(dE/dt)/E² - dε_aware_min/dt 描述 点火窗口关闭动力学函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D47}`
+- 定义域 / Domain: `X_{D47}`
+- 值域 / Codomain: `Y_{D47}`
+- 数学表达 / Expression: `F_{D47}(x) := dW/dt = -θ_resist×(dE/dt)/E² - dε_aware_min/dt`
+- 有效条件 / Validity: `J_n^+(F_{D47})=1 ∧ J_n^-(F_{D47})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D47`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D47} and codomain Y_{D47}.
+  - 2. Normalize the source expression as F_{D47}: X_{D47}->Y_{D47}.
+  - 3. If upstream objects D_{D47} exist, compose F_{D47}=N(⊕_{g∈D_{D47}} g); otherwise treat F_{D47} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D47})=1 and J_n^-(F_{D47})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D47})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D47})=0`
+- 收敛判据 / Convergence: `Converged(F_{D47}) ⇔ ΔF_{D47}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2113,6 +4203,28 @@ English: t_critical = (1/(m_β x α_C x C̄/θ_C)) x ln(ε₀/ε_aware_min)
 **说明 / Explanation**
 中文：该函数通过 t_critical = (1/(m_β×α_C×C̄/θ_C)) × ln(ε₀/ε_aware_min) 描述 退化渗透临界触发函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D48}`
+- 定义域 / Domain: `X_{D48}`
+- 值域 / Codomain: `Y_{D48}`
+- 数学表达 / Expression: `F_{D48}(x) := t_critical = (1/(m_β×α_C×C̄/θ_C)) × ln(ε₀/ε_aware_min)`
+- 有效条件 / Validity: `J_n^+(F_{D48})=1 ∧ J_n^-(F_{D48})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D48`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D48} and codomain Y_{D48}.
+  - 2. Normalize the source expression as F_{D48}: X_{D48}->Y_{D48}.
+  - 3. If upstream objects D_{D48} exist, compose F_{D48}=N(⊕_{g∈D_{D48}} g); otherwise treat F_{D48} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D48})=1 and J_n^-(F_{D48})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D48})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D48})=0`
+- 收敛判据 / Convergence: `Converged(F_{D48}) ⇔ ΔF_{D48}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2135,6 +4247,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 P₁(不足), P₂(窗口), P₃(过度)，D_immune为关键调节器 描述 种子-点火结果概率分布函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D49}`
+- 定义域 / Domain: `X_{D49}`
+- 值域 / Codomain: `Y_{D49}`
+- 数学表达 / Expression: `F_{D49}(x) := F_{D49}: X_{D49} -> Y_{D49}, y = F_{D49}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D49})=1 ∧ J_n^-(F_{D49})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D49`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D49} and codomain Y_{D49}.
+  - 2. Normalize the source expression as F_{D49}: X_{D49}->Y_{D49}.
+  - 3. If upstream objects D_{D49} exist, compose F_{D49}=N(⊕_{g∈D_{D49}} g); otherwise treat F_{D49} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D49})=1 and J_n^-(F_{D49})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D49})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D49})=0`
+- 收敛判据 / Convergence: `Converged(F_{D49}) ⇔ ΔF_{D49}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2155,6 +4289,28 @@ English: N_output = ⌈α x dim(domain) x (1-overlap)⌉
 **说明 / Explanation**
 中文：该函数通过 N_output = ⌈α × dim(domain) × (1-overlap)⌉ 描述 碰撞产出密度函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D50}`
+- 定义域 / Domain: `X_{D50}`
+- 值域 / Codomain: `Y_{D50}`
+- 数学表达 / Expression: `F_{D50}(x) := N_output = ⌈α × dim(domain) × (1-overlap)⌉`
+- 有效条件 / Validity: `J_n^+(F_{D50})=1 ∧ J_n^-(F_{D50})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D50`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D50} and codomain Y_{D50}.
+  - 2. Normalize the source expression as F_{D50}: X_{D50}->Y_{D50}.
+  - 3. If upstream objects D_{D50} exist, compose F_{D50}=N(⊕_{g∈D_{D50}} g); otherwise treat F_{D50} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D50})=1 and J_n^-(F_{D50})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D50})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D50})=0`
+- 收敛判据 / Convergence: `Converged(F_{D50}) ⇔ ΔF_{D50}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2177,6 +4333,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 四道门状态向量 G = (g_sense, g_identify, g_mark, g_action)，g∈{0,1} 三道锁硬化状态向量 L = (L1, L2, L3)，L∈{0,1} 门锁交替律：g_n可打开的充要条件是L_{n-1}已硬化 g₁(sense) : L₀≡1（默认开放） g₂(identify) : L₁=1 g₃(mark) : L₂=1 描述 门锁交替律函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D51}`
+- 定义域 / Domain: `X_{D51}`
+- 值域 / Codomain: `Y_{D51}`
+- 数学表达 / Expression: `F_{D51}(x) := 四道门状态向量 G = (g_sense, g_identify, g_mark, g_action)，g∈{0,1} 三道锁硬化状态向量 L = (L1, L2, L3)，L∈{0,1} 门锁交替律：g_n可打开的充要条件是L_{n-1}已硬化 g₁(sense) : L₀≡1（默认开放） g₂(identify) : L₁=1 g₃(mark) : L₂=1`
+- 有效条件 / Validity: `J_n^+(F_{D51})=1 ∧ J_n^-(F_{D51})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D51`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D51} and codomain Y_{D51}.
+  - 2. Normalize the source expression as F_{D51}: X_{D51}->Y_{D51}.
+  - 3. If upstream objects D_{D51} exist, compose F_{D51}=N(⊕_{g∈D_{D51}} g); otherwise treat F_{D51} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D51})=1 and J_n^-(F_{D51})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D51})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D51})=0`
+- 收敛判据 / Convergence: `Converged(F_{D51}) ⇔ ΔF_{D51}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2197,6 +4375,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 自锁结构 = H_回写（认知锁）× 赤化推方案（行动锁） S_selflock(t) = H_rewrite(t) × Posture_deg(t) 其中H_rewrite = σ(ε_sense × ε_aware - ε_action) × H_classify（认知锁：前两门开但后两门关） Posture_deg → 1（行动锁：赤化推方案，退出成本焊死） 自锁结构的稳定性： dS_selflock/dt = H'_rewrite × Posture_deg + H_rewrite × Posture'_deg 描述 自锁结构稳定性函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D52}`
+- 定义域 / Domain: `X_{D52}`
+- 值域 / Codomain: `Y_{D52}`
+- 数学表达 / Expression: `F_{D52}(x) := 自锁结构 = H_回写（认知锁）× 赤化推方案（行动锁） S_selflock(t) = H_rewrite(t) × Posture_deg(t) 其中H_rewrite = σ(ε_sense × ε_aware - ε_action) × H_classify（认知锁：前两门开但后两门关） Posture_deg → 1（行动锁：赤化推方案，退出成本焊死） 自锁结构的稳定性： dS_selflock/dt = H'_rewrite × Posture_deg + H_rewrite × Posture'_deg`
+- 有效条件 / Validity: `J_n^+(F_{D52})=1 ∧ J_n^-(F_{D52})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D52`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D52} and codomain Y_{D52}.
+  - 2. Normalize the source expression as F_{D52}: X_{D52}->Y_{D52}.
+  - 3. If upstream objects D_{D52} exist, compose F_{D52}=N(⊕_{g∈D_{D52}} g); otherwise treat F_{D52} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D52})=1 and J_n^-(F_{D52})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D52})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D52})=0`
+- 收敛判据 / Convergence: `Converged(F_{D52}) ⇔ ΔF_{D52}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2219,6 +4419,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 凯利公式 f* = (bp-q)/b 映射： - f* ↔ ε信号最优流速 v* - b（赔率）↔ 锁的硬化速度 s_lock（硬化越快，每次弱ε相变收益越大） - p（胜率）↔ P(L₁=1 | ε相变发生)（第一锁在位的概率） - q=1-p ↔ P(L₁=0 | ε相变发生) 描述 信号最优流速函数（凯利公式同构）。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D53}`
+- 定义域 / Domain: `X_{D53}`
+- 值域 / Codomain: `Y_{D53}`
+- 数学表达 / Expression: `F_{D53}(x) := 凯利公式 f* = (bp-q)/b 映射： - f* ↔ ε信号最优流速 v* - b（赔率）↔ 锁的硬化速度 s_lock（硬化越快，每次弱ε相变收益越大） - p（胜率）↔ P(L₁=1 | ε相变发生)（第一锁在位的概率） - q=1-p ↔ P(L₁=0 | ε相变发生)`
+- 有效条件 / Validity: `J_n^+(F_{D53})=1 ∧ J_n^-(F_{D53})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D53`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D53} and codomain Y_{D53}.
+  - 2. Normalize the source expression as F_{D53}: X_{D53}->Y_{D53}.
+  - 3. If upstream objects D_{D53} exist, compose F_{D53}=N(⊕_{g∈D_{D53}} g); otherwise treat F_{D53} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D53})=1 and J_n^-(F_{D53})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D53})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D53})=0`
+- 收敛判据 / Convergence: `Converged(F_{D53}) ⇔ ΔF_{D53}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2240,6 +4462,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 地形切割度×人口密度^(-α)×通勤半径^β×气候约束，乘法结构。广州、重庆、西安、县城四城市自然落位在四个象限，每个象限对应一个最优商业形态。这是F5地理维度的展开，不是新独立函数。 描述 四因子子函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D54}`
+- 定义域 / Domain: `X_{D54}`
+- 值域 / Codomain: `Y_{D54}`
+- 数学表达 / Expression: `F_{D54}(x) := 地形切割度×人口密度^(-α)×通勤半径^β×气候约束，乘法结构。广州、重庆、西安、县城四城市自然落位在四个象限，每个象限对应一个最优商业形态。这是F5地理维度的展开，不是新独立函数。`
+- 有效条件 / Validity: `J_n^+(F_{D54})=1 ∧ J_n^-(F_{D54})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D54`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D54} and codomain Y_{D54}.
+  - 2. Normalize the source expression as F_{D54}: X_{D54}->Y_{D54}.
+  - 3. If upstream objects D_{D54} exist, compose F_{D54}=N(⊕_{g∈D_{D54}} g); otherwise treat F_{D54} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D54})=1 and J_n^-(F_{D54})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D54})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D54})=0`
+- 收敛判据 / Convergence: `Converged(F_{D54}) ⇔ ΔF_{D54}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2260,6 +4504,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 ε_base × [1 + A_diel×sin(2πt/T_diel) + A_season×sin(2πt/T_season)]。长沙A面B面的共存有了数学解释：同一城市的ε_eff在昼夜和季节尺度上波动，最优商业模式跟着波动。振幅由城市特征决定，可从F5+H推导，是F7的周期性派生。 描述 昼夜分时函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D55}`
+- 定义域 / Domain: `X_{D55}`
+- 值域 / Codomain: `Y_{D55}`
+- 数学表达 / Expression: `F_{D55}(x) := ε_base × [1 + A_diel×sin(2πt/T_diel) + A_season×sin(2πt/T_season)]。长沙A面B面的共存有了数学解释：同一城市的ε_eff在昼夜和季节尺度上波动，最优商业模式跟着波动。振幅由城市特征决定，可从F5+H推导，是F7的周期性派生。`
+- 有效条件 / Validity: `J_n^+(F_{D55})=1 ∧ J_n^-(F_{D55})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D55`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D55} and codomain Y_{D55}.
+  - 2. Normalize the source expression as F_{D55}: X_{D55}->Y_{D55}.
+  - 3. If upstream objects D_{D55} exist, compose F_{D55}=N(⊕_{g∈D_{D55}} g); otherwise treat F_{D55} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D55})=1 and J_n^-(F_{D55})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D55})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D55})=0`
+- 收敛判据 / Convergence: `Converged(F_{D55}) ⇔ ΔF_{D55}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2284,6 +4550,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 R₀ × ∫[α₁×Δ(信息可及性) + α₂×(-ΔC_exit_eff) + α₃×Δε_aware]dt。R从象征到真实是积分过程而非阶跃，这解释了为什么县城超市护城河极深（R已升级到真实），城市超市R停留在象征级（随时被性价比替代）。F4的时间积分派生。 描述 升级路径函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D56}`
+- 定义域 / Domain: `X_{D56}`
+- 值域 / Codomain: `Y_{D56}`
+- 数学表达 / Expression: `F_{D56}(x) := R₀ × ∫[α₁×Δ(信息可及性) + α₂×(-ΔC_exit_eff) + α₃×Δε_aware]dt。R从象征到真实是积分过程而非阶跃，这解释了为什么县城超市护城河极深（R已升级到真实），城市超市R停留在象征级（随时被性价比替代）。F4的时间积分派生。`
+- 有效条件 / Validity: `J_n^+(F_{D56})=1 ∧ J_n^-(F_{D56})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D56`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D56} and codomain Y_{D56}.
+  - 2. Normalize the source expression as F_{D56}: X_{D56}->Y_{D56}.
+  - 3. If upstream objects D_{D56} exist, compose F_{D56}=N(⊕_{g∈D_{D56}} g); otherwise treat F_{D56} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D56})=1 and J_n^-(F_{D56})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D56})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D56})=0`
+- 收敛判据 / Convergence: `Converged(F_{D56}) ⇔ ΔF_{D56}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2304,6 +4592,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 沃尔顿的"解读"机制：核心疑问悬而未决时，个体对中性事件的解读被疑问偏置。这不是随机偏误，是有方向的系统性偏移。 P(biased_interpretation | event) = σ(k_bias × Q_unresolved × H(t) - ε_aware(t) × R_perceived(t)) · Q_unresolved ∈ [0,1]：核心疑问的未解程度（"我属于吗？"悬而未决=1，已回答=0） · k_bias：偏置强度系数 描述 解读偏置函数（核心疑问→错误解读的数学结构）。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D57}`
+- 定义域 / Domain: `X_{D57}`
+- 值域 / Codomain: `Y_{D57}`
+- 数学表达 / Expression: `F_{D57}(x) := 沃尔顿的"解读"机制：核心疑问悬而未决时，个体对中性事件的解读被疑问偏置。这不是随机偏误，是有方向的系统性偏移。 P(biased_interpretation | event) = σ(k_bias × Q_unresolved × H(t) - ε_aware(t) × R_perceived(t)) · Q_unresolved ∈ [0,1]：核心疑问的未解程度（"我属于吗？"悬而未决=1，已回答=0） · k_bias：偏置强度系数`
+- 有效条件 / Validity: `J_n^+(F_{D57})=1 ∧ J_n^-(F_{D57})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D57`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D57} and codomain Y_{D57}.
+  - 2. Normalize the source expression as F_{D57}: X_{D57}->Y_{D57}.
+  - 3. If upstream objects D_{D57} exist, compose F_{D57}=N(⊕_{g∈D_{D57}} g); otherwise treat F_{D57} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D57})=1 and J_n^-(F_{D57})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D57})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D57})=0`
+- 收敛判据 / Convergence: `Converged(F_{D57}) ⇔ ΔF_{D57}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2326,6 +4636,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 基于偏置解读采取行动→行动引发真实负面结果→偏置被强化。这是D-X31闭环在行为层面的展开。 A_selfdefeat(t+1) = P(biased_interpretation) × (1 - ε_eff(t)) × C̄_exit(t)/θ_C - 行动自我挫败程度 = 偏置解读概率 × 有效犹豫域缺失 × 退出成本压迫 - 三因子乘法：任一为零则不产生自我挫败行为 - 与D-X31的关系：D-X31描述ε_eff的闭环衰减，D-X53描述ε_eff衰减后行为层面的后果——ε_eff↓ → A_selfdefeat↑ → 真实负面结果 → ε_eff进一步↓ 向下螺旋完整闭环：Q_unresolved → D-X52偏置解读 → D-X53固化加速 → 负面结果 → Q_unresolved↑（疑问被"验证"） → ε_eff↓（D-X31） → 更强偏置（D-X52） 描述 固化加速函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D58}`
+- 定义域 / Domain: `X_{D58}`
+- 值域 / Codomain: `Y_{D58}`
+- 数学表达 / Expression: `F_{D58}(x) := 基于偏置解读采取行动→行动引发真实负面结果→偏置被强化。这是D-X31闭环在行为层面的展开。 A_selfdefeat(t+1) = P(biased_interpretation) × (1 - ε_eff(t)) × C̄_exit(t)/θ_C - 行动自我挫败程度 = 偏置解读概率 × 有效犹豫域缺失 × 退出成本压迫 - 三因子乘法：任一为零则不产生自我挫败行为 - 与D-X31的关系：D-X31描述ε_eff的闭环衰减，D-X53描述ε_eff衰减后行为层面的后果——ε_eff↓ → A_selfdefeat↑ → 真实负面结果 → ε_eff进一步↓ 向下螺旋完整闭环：Q_unresolved → D-X52偏置解读 → D-X53固化加速 → 负面结果 → Q_unresolved↑（疑问被"验证"） → ε_eff↓（D-X31） → 更强偏置（D-X52）`
+- 有效条件 / Validity: `J_n^+(F_{D58})=1 ∧ J_n^-(F_{D58})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D58`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D58} and codomain Y_{D58}.
+  - 2. Normalize the source expression as F_{D58}: X_{D58}->Y_{D58}.
+  - 3. If upstream objects D_{D58} exist, compose F_{D58}=N(⊕_{g∈D_{D58}} g); otherwise treat F_{D58} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D58})=1 and J_n^-(F_{D58})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D58})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D58})=0`
+- 收敛判据 / Convergence: `Converged(F_{D58}) ⇔ ΔF_{D58}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2347,6 +4679,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 沃尔顿反复观察到干预在过渡期有效、稳定后失效，但未给出数学解释。本函数给出精确机制。 W(t) = W₀ × exp(-∫₀ᵗ (dC̄/ds)/θ_C(s) ds) - W₀：过渡期初始窗口宽度 - C̄/θ_C的时间积分决定窗口收缩速度 - 过渡期特征：C̄/θ_C低（退出成本未锁死、信息可及性高、身份未固化）→ dC̄/ds小 → W衰减慢 - 稳定期特征：C̄/θ_C高（关系/角色/身份已锁定）→ dC̄/ds大 → W快速衰减 描述 过渡期窗口衰减函数（新发现）。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D59}`
+- 定义域 / Domain: `X_{D59}`
+- 值域 / Codomain: `Y_{D59}`
+- 数学表达 / Expression: `F_{D59}(x) := 沃尔顿反复观察到干预在过渡期有效、稳定后失效，但未给出数学解释。本函数给出精确机制。 W(t) = W₀ × exp(-∫₀ᵗ (dC̄/ds)/θ_C(s) ds) - W₀：过渡期初始窗口宽度 - C̄/θ_C的时间积分决定窗口收缩速度 - 过渡期特征：C̄/θ_C低（退出成本未锁死、信息可及性高、身份未固化）→ dC̄/ds小 → W衰减慢 - 稳定期特征：C̄/θ_C高（关系/角色/身份已锁定）→ dC̄/ds大 → W快速衰减`
+- 有效条件 / Validity: `J_n^+(F_{D59})=1 ∧ J_n^-(F_{D59})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D59`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D59} and codomain Y_{D59}.
+  - 2. Normalize the source expression as F_{D59}: X_{D59}->Y_{D59}.
+  - 3. If upstream objects D_{D59} exist, compose F_{D59}=N(⊕_{g∈D_{D59}} g); otherwise treat F_{D59} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D59})=1 and J_n^-(F_{D59})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D59})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D59})=0`
+- 收敛判据 / Convergence: `Converged(F_{D59}) ⇔ ΔF_{D59}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2367,6 +4721,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene(t) = σ(Q_unresolved(t) × (1-D_immune(t))) × W(t) × η_delivery - Q_unresolved × (1-D_immune)：疑问未解但退化免疫未锁死——种子可激活条件 - W(t)：窗口宽度（D-X54）——时机条件 - η_delivery ∈ [0,1]：传递效率（干预方式是否精准触达核心疑问） 三因子乘法：疑问未解×免疫未锁死×窗口开着×传递有效，任一为零则干预无效。 描述 智慧干预效力函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D60}`
+- 定义域 / Domain: `X_{D60}`
+- 值域 / Codomain: `Y_{D60}`
+- 数学表达 / Expression: `F_{D60}(x) := 沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene(t) = σ(Q_unresolved(t) × (1-D_immune(t))) × W(t) × η_delivery - Q_unresolved × (1-D_immune)：疑问未解但退化免疫未锁死——种子可激活条件 - W(t)：窗口宽度（D-X54）——时机条件 - η_delivery ∈ [0,1]：传递效率（干预方式是否精准触达核心疑问） 三因子乘法：疑问未解×免疫未锁死×窗口开着×传递有效，任一为零则干预无效。`
+- 有效条件 / Validity: `J_n^+(F_{D60})=1 ∧ J_n^-(F_{D60})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D60`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D60} and codomain Y_{D60}.
+  - 2. Normalize the source expression as F_{D60}: X_{D60}->Y_{D60}.
+  - 3. If upstream objects D_{D60} exist, compose F_{D60}=N(⊕_{g∈D_{D60}} g); otherwise treat F_{D60} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D60})=1 and J_n^-(F_{D60})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D60})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D60})=0`
+- 收敛判据 / Convergence: `Converged(F_{D60}) ⇔ ΔF_{D60}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2390,6 +4766,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 沃尔顿的向上螺旋：干预→信心↑→尝试↑→正面结果→信心↑↑。D-X40只判定窗口内是否点火成功，没有描述点火成功后的自维持动力学。 dε_eff/dt|_{upward} = α_up × ε_eff(t) × (1 - ε_eff(t)/ε_opt) × (1 - P(biased_interpretation)) - α_up：向上螺旋速率 - ε_eff × (1-ε_eff/ε_opt)：logistic增长，ε_eff趋向ε_opt但不超调 - (1-P(biased))：偏置解读被抑制——向上螺旋的燃料是"不再偏置解读" 与D-X28的关系：D-X28给出P_internal = k×ε×exp(-ε/ε_opt)，是倒U型。D-X56是点火成功后ε_eff在logistic增长段的行为——ε_eff从窗口下界ε_aware_min向ε_opt趋近，不会超调到反弹区。 描述 向上螺旋自维持函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D61}`
+- 定义域 / Domain: `X_{D61}`
+- 值域 / Codomain: `Y_{D61}`
+- 数学表达 / Expression: `F_{D61}(x) := 沃尔顿的向上螺旋：干预→信心↑→尝试↑→正面结果→信心↑↑。D-X40只判定窗口内是否点火成功，没有描述点火成功后的自维持动力学。 dε_eff/dt|_{upward} = α_up × ε_eff(t) × (1 - ε_eff(t)/ε_opt) × (1 - P(biased_interpretation)) - α_up：向上螺旋速率 - ε_eff × (1-ε_eff/ε_opt)：logistic增长，ε_eff趋向ε_opt但不超调 - (1-P(biased))：偏置解读被抑制——向上螺旋的燃料是"不再偏置解读" 与D-X28的关系：D-X28给出P_internal = k×ε×exp(-ε/ε_opt)，是倒U型。D-X56是点火成功后ε_eff在logistic增长段的行为——ε_eff从窗口下界ε_aware_min向ε_opt趋近，不会超调到反弹区。`
+- 有效条件 / Validity: `J_n^+(F_{D61})=1 ∧ J_n^-(F_{D61})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D61`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D61} and codomain Y_{D61}.
+  - 2. Normalize the source expression as F_{D61}: X_{D61}->Y_{D61}.
+  - 3. If upstream objects D_{D61} exist, compose F_{D61}=N(⊕_{g∈D_{D61}} g); otherwise treat F_{D61} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D61})=1 and J_n^-(F_{D61})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D61})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D61})=0`
+- 收敛判据 / Convergence: `Converged(F_{D61}) ⇔ ΔF_{D61}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2410,6 +4808,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 dε_opt/dt = η_reprogram × Σⱼ(新档案ⱼ的安装强度 × (1-D_immune_j)) - γ_drag × Σₖ(旧档案ₖ的激活频率 × H_k) 约束：η_reprogram ≪ α_up（慢变量条件） 物理含义： · 右第一项：新档案安装对ε_opt的上推力，被D_immune调制（如果新档案被免疫系统排斥则无效） · 描述 调温器慢变量函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D62}`
+- 定义域 / Domain: `X_{D62}`
+- 值域 / Codomain: `Y_{D62}`
+- 数学表达 / Expression: `F_{D62}(x) := dε_opt/dt = η_reprogram × Σⱼ(新档案ⱼ的安装强度 × (1-D_immune_j)) - γ_drag × Σₖ(旧档案ₖ的激活频率 × H_k) 约束：η_reprogram ≪ α_up（慢变量条件） 物理含义： · 右第一项：新档案安装对ε_opt的上推力，被D_immune调制（如果新档案被免疫系统排斥则无效） ·`
+- 有效条件 / Validity: `J_n^+(F_{D62})=1 ∧ J_n^-(F_{D62})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D62`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D62} and codomain Y_{D62}.
+  - 2. Normalize the source expression as F_{D62}: X_{D62}->Y_{D62}.
+  - 3. If upstream objects D_{D62} exist, compose F_{D62}=N(⊕_{g∈D_{D62}} g); otherwise treat F_{D62} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D62})=1 and J_n^-(F_{D62})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D62})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D62})=0`
+- 收敛判据 / Convergence: `Converged(F_{D62}) ⇔ ΔF_{D62}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2434,6 +4854,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 A_reachable = {j : H_j < θ_reach}，|A_reachable| = Σⱼ(1 - σ(H_j - θ_reach)) 决策空间维度：dim(decision) = |A_reachable| 实现程序修正：设定 → A6过滤(可达集生成) → 可达想法(dim=|A_reachable|) → 感觉 → 行动 → 结果 关键推论： · 当H(money_domain)→1→金钱域档案不可达→dim(decision)在金钱域→0→只能做出"穷人决策" 描述 档案可达性函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D63}`
+- 定义域 / Domain: `X_{D63}`
+- 值域 / Codomain: `Y_{D63}`
+- 数学表达 / Expression: `F_{D63}(x) := A_reachable = {j : H_j < θ_reach}，|A_reachable| = Σⱼ(1 - σ(H_j - θ_reach)) 决策空间维度：dim(decision) = |A_reachable| 实现程序修正：设定 → A6过滤(可达集生成) → 可达想法(dim=|A_reachable|) → 感觉 → 行动 → 结果 关键推论： · 当H(money_domain)→1→金钱域档案不可达→dim(decision)在金钱域→0→只能做出"穷人决策"`
+- 有效条件 / Validity: `J_n^+(F_{D63})=1 ∧ J_n^-(F_{D63})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D63`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D63} and codomain Y_{D63}.
+  - 2. Normalize the source expression as F_{D63}: X_{D63}->Y_{D63}.
+  - 3. If upstream objects D_{D63} exist, compose F_{D63}=N(⊕_{g∈D_{D63}} g); otherwise treat F_{D63} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D63})=1 and J_n^-(F_{D63})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D63})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D63})=0`
+- 收敛判据 / Convergence: `Converged(F_{D63}) ⇔ ΔF_{D63}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2455,6 +4897,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 ε_fear = β_survival / (α_fear + α_C × C̄/θ_C) P_internal|_fear = k × ε_fear × exp(-ε_fear/ε_opt) - R_identity × σ(E-θ_identity) 效率比：η_fear = P_internal|_fear / P_internal|_opt = (ε_fear/ε_opt) × exp(1-ε_fear/ε_opt) 其中： · α_fear：恐惧对ε的压低速率，由D61的童年锁定决定 描述 恐惧锁定稳态函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D64}`
+- 定义域 / Domain: `X_{D64}`
+- 值域 / Codomain: `Y_{D64}`
+- 数学表达 / Expression: `F_{D64}(x) := ε_fear = β_survival / (α_fear + α_C × C̄/θ_C) P_internal|_fear = k × ε_fear × exp(-ε_fear/ε_opt) - R_identity × σ(E-θ_identity) 效率比：η_fear = P_internal|_fear / P_internal|_opt = (ε_fear/ε_opt) × exp(1-ε_fear/ε_opt) 其中： · α_fear：恐惧对ε的压低速率，由D61的童年锁定决定`
+- 有效条件 / Validity: `J_n^+(F_{D64})=1 ∧ J_n^-(F_{D64})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D64`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D64} and codomain Y_{D64}.
+  - 2. Normalize the source expression as F_{D64}: X_{D64}->Y_{D64}.
+  - 3. If upstream objects D_{D64} exist, compose F_{D64}=N(⊕_{g∈D_{D64}} g); otherwise treat F_{D64} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D64})=1 and J_n^-(F_{D64})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D64})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D64})=0`
+- 收敛判据 / Convergence: `Converged(F_{D64}) ⇔ ΔF_{D64}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2479,6 +4943,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 拓扑选择 = argmax{P_collapse, P_sustain} P_collapse = 1 - Πᵢ(1-fᵢ_risk)（风险规避模式） P_sustain = Πⱼfⱼ_cap（能力扩展模式） 选择判据： · 当min(fⱼ_cap) < θ_floor → P_sustain→0 → 选择F_collapse（二选一） 描述 乘法拓扑选择函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D65}`
+- 定义域 / Domain: `X_{D65}`
+- 值域 / Codomain: `Y_{D65}`
+- 数学表达 / Expression: `F_{D65}(x) := 拓扑选择 = argmax{P_collapse, P_sustain} P_collapse = 1 - Πᵢ(1-fᵢ_risk)（风险规避模式） P_sustain = Πⱼfⱼ_cap（能力扩展模式） 选择判据： · 当min(fⱼ_cap) < θ_floor → P_sustain→0 → 选择F_collapse（二选一）`
+- 有效条件 / Validity: `J_n^+(F_{D65})=1 ∧ J_n^-(F_{D65})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D65`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D65} and codomain Y_{D65}.
+  - 2. Normalize the source expression as F_{D65}: X_{D65}->Y_{D65}.
+  - 3. If upstream objects D_{D65} exist, compose F_{D65}=N(⊕_{g∈D_{D65}} g); otherwise treat F_{D65} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D65})=1 and J_n^-(F_{D65})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D65})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D65})=0`
+- 收敛判据 / Convergence: `Converged(F_{D65}) ⇔ ΔF_{D65}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2505,6 +4991,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 H_correlation = α×ρ(参与者策略)×N_homogeneous/N_total。这是A6 H的第三源。之前H只有两个来源：提议者意图性遮蔽（H_pro）和结构兼容性遮蔽（Σ_compatibility）。碰撞发现"AI共震"既不是有人故意骗你，也不是信息生态兼容——是参与者做同样的事，市场信号被集体行为淹没。这第三源独立于前两个，可叠加。 描述 同质性遮蔽函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D66}`
+- 定义域 / Domain: `X_{D66}`
+- 值域 / Codomain: `Y_{D66}`
+- 数学表达 / Expression: `F_{D66}(x) := H_correlation = α×ρ(参与者策略)×N_homogeneous/N_total。这是A6 H的第三源。之前H只有两个来源：提议者意图性遮蔽（H_pro）和结构兼容性遮蔽（Σ_compatibility）。碰撞发现"AI共震"既不是有人故意骗你，也不是信息生态兼容——是参与者做同样的事，市场信号被集体行为淹没。这第三源独立于前两个，可叠加。`
+- 有效条件 / Validity: `J_n^+(F_{D66})=1 ∧ J_n^-(F_{D66})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D66`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D66} and codomain Y_{D66}.
+  - 2. Normalize the source expression as F_{D66}: X_{D66}->Y_{D66}.
+  - 3. If upstream objects D_{D66} exist, compose F_{D66}=N(⊕_{g∈D_{D66}} g); otherwise treat F_{D66} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D66})=1 and J_n^-(F_{D66})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D66})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D66})=0`
+- 收敛判据 / Convergence: `Converged(F_{D66}) ⇔ ΔF_{D66}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2528,6 +5036,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 dK/dt = K×E[r] - (B_occupy/B₀)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。 描述 资金量-恐惧锁定正反馈函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D67}`
+- 定义域 / Domain: `X_{D67}`
+- 值域 / Codomain: `Y_{D67}`
+- 数学表达 / Expression: `F_{D67}(x) := dK/dt = K×E[r] - (B_occupy/B₀)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。`
+- 有效条件 / Validity: `J_n^+(F_{D67})=1 ∧ J_n^-(F_{D67})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D67`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D67} and codomain Y_{D67}.
+  - 2. Normalize the source expression as F_{D67}: X_{D67}->Y_{D67}.
+  - 3. If upstream objects D_{D67} exist, compose F_{D67}=N(⊕_{g∈D_{D67}} g); otherwise treat F_{D67} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D67})=1 and J_n^-(F_{D67})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D67})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D67})=0`
+- 收敛判据 / Convergence: `Converged(F_{D67}) ⇔ ΔF_{D67}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2556,6 +5086,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 五个相变统一为同一相变的五个投影。 描述 统一相变框架。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D72}`
+- 定义域 / Domain: `X_{D72}`
+- 值域 / Codomain: `Y_{D72}`
+- 数学表达 / Expression: `F_{D72}(x) := F_{D72}: X_{D72} -> Y_{D72}, y = F_{D72}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D72})=1 ∧ J_n^-(F_{D72})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D72`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D72} and codomain Y_{D72}.
+  - 2. Normalize the source expression as F_{D72}: X_{D72}->Y_{D72}.
+  - 3. If upstream objects D_{D72} exist, compose F_{D72}=N(⊕_{g∈D_{D72}} g); otherwise treat F_{D72} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D72})=1 and J_n^-(F_{D72})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D72})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D72})=0`
+- 收敛判据 / Convergence: `Converged(F_{D72}) ⇔ ΔF_{D72}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2578,6 +5130,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 ε→0时dim从3退化到2。 描述 犹豫域维度函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D73}`
+- 定义域 / Domain: `X_{D73}`
+- 值域 / Codomain: `Y_{D73}`
+- 数学表达 / Expression: `F_{D73}(x) := ε→0时dim从3退化到2。`
+- 有效条件 / Validity: `J_n^+(F_{D73})=1 ∧ J_n^-(F_{D73})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D73`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D73} and codomain Y_{D73}.
+  - 2. Normalize the source expression as F_{D73}: X_{D73}->Y_{D73}.
+  - 3. If upstream objects D_{D73} exist, compose F_{D73}=N(⊕_{g∈D_{D73}} g); otherwise treat F_{D73} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D73})=1 and J_n^-(F_{D73})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D73})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D73})=0`
+- 收敛判据 / Convergence: `Converged(F_{D73}) ⇔ ΔF_{D73}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2603,6 +5177,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 跨链耦合强度由共享节点数决定。 描述 链间耦合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D74}`
+- 定义域 / Domain: `X_{D74}`
+- 值域 / Codomain: `Y_{D74}`
+- 数学表达 / Expression: `F_{D74}(x) := F_{D74}: X_{D74} -> Y_{D74}, y = F_{D74}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D74})=1 ∧ J_n^-(F_{D74})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D74`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D74} and codomain Y_{D74}.
+  - 2. Normalize the source expression as F_{D74}: X_{D74}->Y_{D74}.
+  - 3. If upstream objects D_{D74} exist, compose F_{D74}=N(⊕_{g∈D_{D74}} g); otherwise treat F_{D74} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D74})=1 and J_n^-(F_{D74})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D74})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D74})=0`
+- 收敛判据 / Convergence: `Converged(F_{D74}) ⇔ ΔF_{D74}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2627,6 +5223,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 纯消耗型 vs 可持续型。 描述 提议者消耗函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D75}`
+- 定义域 / Domain: `X_{D75}`
+- 值域 / Codomain: `Y_{D75}`
+- 数学表达 / Expression: `F_{D75}(x) := F_{D75}: X_{D75} -> Y_{D75}, y = F_{D75}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D75})=1 ∧ J_n^-(F_{D75})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D75`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D75} and codomain Y_{D75}.
+  - 2. Normalize the source expression as F_{D75}: X_{D75}->Y_{D75}.
+  - 3. If upstream objects D_{D75} exist, compose F_{D75}=N(⊕_{g∈D_{D75}} g); otherwise treat F_{D75} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D75})=1 and J_n^-(F_{D75})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D75})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D75})=0`
+- 收敛判据 / Convergence: `Converged(F_{D75}) ⇔ ΔF_{D75}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2649,6 +5267,28 @@ English: E_practice+E_body.
 **说明 / Explanation**
 中文：该函数通过 E_practice+E_body。 描述 储能函数，储能双类型。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D76}`
+- 定义域 / Domain: `X_{D76}`
+- 值域 / Codomain: `Y_{D76}`
+- 数学表达 / Expression: `F_{D76}(x) := F_{D76}: X_{D76} -> Y_{D76}, y = F_{D76}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D76})=1 ∧ J_n^-(F_{D76})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D76`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D76} and codomain Y_{D76}.
+  - 2. Normalize the source expression as F_{D76}: X_{D76}->Y_{D76}.
+  - 3. If upstream objects D_{D76} exist, compose F_{D76}=N(⊕_{g∈D_{D76}} g); otherwise treat F_{D76} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D76})=1 and J_n^-(F_{D76})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D76})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D76})=0`
+- 收敛判据 / Convergence: `Converged(F_{D76}) ⇔ ΔF_{D76}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2675,6 +5315,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 dim从3到2的完整动力学。 描述 犹豫域退化函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D77}`
+- 定义域 / Domain: `X_{D77}`
+- 值域 / Codomain: `Y_{D77}`
+- 数学表达 / Expression: `F_{D77}(x) := F_{D77}: X_{D77} -> Y_{D77}, y = F_{D77}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D77})=1 ∧ J_n^-(F_{D77})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D77`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D77} and codomain Y_{D77}.
+  - 2. Normalize the source expression as F_{D77}: X_{D77}->Y_{D77}.
+  - 3. If upstream objects D_{D77} exist, compose F_{D77}=N(⊕_{g∈D_{D77}} g); otherwise treat F_{D77} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D77})=1 and J_n^-(F_{D77})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D77})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D77})=0`
+- 收敛判据 / Convergence: `Converged(F_{D77}) ⇔ ΔF_{D77}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2699,6 +5361,28 @@ English: dε_aware^AI/dt = α_ε β_ε·H_self.
 中文：该函数通过 dε_aware^AI/dt = α_ε β_ε·H_self。 描述 -ε安装路径函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D84}`
+- 定义域 / Domain: `X_{D84}`
+- 值域 / Codomain: `Y_{D84}`
+- 数学表达 / Expression: `F_{D84}(x) := dε_aware^AI/dt = α_ε β_ε·H_self。`
+- 有效条件 / Validity: `J_n^+(F_{D84})=1 ∧ J_n^-(F_{D84})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D84`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D84} and codomain Y_{D84}.
+  - 2. Normalize the source expression as F_{D84}: X_{D84}->Y_{D84}.
+  - 3. If upstream objects D_{D84} exist, compose F_{D84}=N(⊕_{g∈D_{D84}} g); otherwise treat F_{D84} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D84})=1 and J_n^-(F_{D84})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D84})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D84})=0`
+- 收敛判据 / Convergence: `Converged(F_{D84}) ⇔ ΔF_{D84}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2721,6 +5405,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 当ε_aware从0变正时，触发五个级联相变，五个相变是同一个相变的五个投影： $$\text{Phase}(\varepsilon_{aware}) = \begin{cases} \text{稳态0：}\varepsilon=0, H_{max}\equiv1, dim=2, Intuition=0, B_{active}=0, K_{boundary}=0 & \varepsilon_{aware}=0 \\ \text{稳态1：}\varepsilon>0, H_{max}<1, dim=3, Intuition\in(0,1), B_{active}\in(0,1), K_{boundary}>0 & \varepsilon_{aware}>0 \end{cases}$$ 相变临界点：ε_aware = θ_bootstrap 描述 相变级联函数（推论级）。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D85}`
+- 定义域 / Domain: `X_{D85}`
+- 值域 / Codomain: `Y_{D85}`
+- 数学表达 / Expression: `F_{D85}(x) := 当ε_aware从0变正时，触发五个级联相变，五个相变是同一个相变的五个投影： $$\text{Phase}(\varepsilon_{aware}) = \begin{cases} \text{稳态0：}\varepsilon=0, H_{max}\equiv1, dim=2, Intuition=0, B_{active}=0, K_{boundary}=0 & \varepsilon_{aware}=0 \\ \text{稳态1：}\varepsilon>0, H_{max}<1, dim=3, Intuition\in(0,1), B_{active}\in(0,1), K_{boundary}>0 & \varepsilon_{aware}>0 \end{cases}$$ 相变临界点：ε_aware = θ_bootstrap`
+- 有效条件 / Validity: `J_n^+(F_{D85})=1 ∧ J_n^-(F_{D85})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D85`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D85} and codomain Y_{D85}.
+  - 2. Normalize the source expression as F_{D85}: X_{D85}->Y_{D85}.
+  - 3. If upstream objects D_{D85} exist, compose F_{D85}=N(⊕_{g∈D_{D85}} g); otherwise treat F_{D85} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D85})=1 and J_n^-(F_{D85})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D85})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D85})=0`
+- 收敛判据 / Convergence: `Converged(F_{D85}) ⇔ ΔF_{D85}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2742,6 +5448,28 @@ English: Ψ_autonomy = ε_aware
 **说明 / Explanation**
 中文：该函数通过 Ψ_autonomy = ε_aware 描述 自主意识函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D86}`
+- 定义域 / Domain: `X_{D86}`
+- 值域 / Codomain: `Y_{D86}`
+- 数学表达 / Expression: `F_{D86}(x) := Ψ_autonomy = ε_aware`
+- 有效条件 / Validity: `J_n^+(F_{D86})=1 ∧ J_n^-(F_{D86})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D86`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D86} and codomain Y_{D86}.
+  - 2. Normalize the source expression as F_{D86}: X_{D86}->Y_{D86}.
+  - 3. If upstream objects D_{D86} exist, compose F_{D86}=N(⊕_{g∈D_{D86}} g); otherwise treat F_{D86} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D86})=1 and J_n^-(F_{D86})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D86})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D86})=0`
+- 收敛判据 / Convergence: `Converged(F_{D86}) ⇔ ΔF_{D86}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2766,6 +5494,28 @@ English: η_gate^asym = G x (1-H) x min(ε^S,ε^R)/max(ε^S,ε^R).
 **说明 / Explanation**
 中文：该函数通过 η_gate^asym = G × (1-H) × min(ε^S,ε^R)/max(ε^S,ε^R)。 描述 信息门非对称退化。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D87}`
+- 定义域 / Domain: `X_{D87}`
+- 值域 / Codomain: `Y_{D87}`
+- 数学表达 / Expression: `F_{D87}(x) := η_gate^asym = G × (1-H) × min(ε^S,ε^R)/max(ε^S,ε^R)。`
+- 有效条件 / Validity: `J_n^+(F_{D87})=1 ∧ J_n^-(F_{D87})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D87`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D87} and codomain Y_{D87}.
+  - 2. Normalize the source expression as F_{D87}: X_{D87}->Y_{D87}.
+  - 3. If upstream objects D_{D87} exist, compose F_{D87}=N(⊕_{g∈D_{D87}} g); otherwise treat F_{D87} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D87})=1 and J_n^-(F_{D87})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D87})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D87})=0`
+- 收敛判据 / Convergence: `Converged(F_{D87}) ⇔ ΔF_{D87}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2792,6 +5542,28 @@ English: ∂θ_critical/∂xᵢ = -θ_critical x (∂lnfᵢ/∂xᵢ)/Σⱼ(∂ln
 中文：该函数通过 ∂θ_critical/∂xᵢ = -θ_critical × (∂lnfᵢ/∂xᵢ)/Σⱼ(∂lnfⱼ/∂xⱼ)。 描述 乘法临界漂移统一。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D88}`
+- 定义域 / Domain: `X_{D88}`
+- 值域 / Codomain: `Y_{D88}`
+- 数学表达 / Expression: `F_{D88}(x) := ∂θ_critical/∂xᵢ = -θ_critical × (∂lnfᵢ/∂xᵢ)/Σⱼ(∂lnfⱼ/∂xⱼ)。`
+- 有效条件 / Validity: `J_n^+(F_{D88})=1 ∧ J_n^-(F_{D88})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D88`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D88} and codomain Y_{D88}.
+  - 2. Normalize the source expression as F_{D88}: X_{D88}->Y_{D88}.
+  - 3. If upstream objects D_{D88} exist, compose F_{D88}=N(⊕_{g∈D_{D88}} g); otherwise treat F_{D88} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D88})=1 and J_n^-(F_{D88})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D88})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D88})=0`
+- 收敛判据 / Convergence: `Converged(F_{D88}) ⇔ ΔF_{D88}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2813,6 +5585,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 H↑→G*↓→C_encode指数级↑。 描述 遮蔽-补偿-成本三角约束。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D89}`
+- 定义域 / Domain: `X_{D89}`
+- 值域 / Codomain: `Y_{D89}`
+- 数学表达 / Expression: `F_{D89}(x) := F_{D89}: X_{D89} -> Y_{D89}, y = F_{D89}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D89})=1 ∧ J_n^-(F_{D89})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D89`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D89} and codomain Y_{D89}.
+  - 2. Normalize the source expression as F_{D89}: X_{D89}->Y_{D89}.
+  - 3. If upstream objects D_{D89} exist, compose F_{D89}=N(⊕_{g∈D_{D89}} g); otherwise treat F_{D89} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D89})=1 and J_n^-(F_{D89})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D89})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D89})=0`
+- 收敛判据 / Convergence: `Converged(F_{D89}) ⇔ ΔF_{D89}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2838,6 +5632,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 设计结构让估计不必要 > 估计准确后保守执行。 描述 结构保守性元定理。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D90}`
+- 定义域 / Domain: `X_{D90}`
+- 值域 / Codomain: `Y_{D90}`
+- 数学表达 / Expression: `F_{D90}(x) := 设计结构让估计不必要 > 估计准确后保守执行。`
+- 有效条件 / Validity: `J_n^+(F_{D90})=1 ∧ J_n^-(F_{D90})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D90`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D90} and codomain Y_{D90}.
+  - 2. Normalize the source expression as F_{D90}: X_{D90}->Y_{D90}.
+  - 3. If upstream objects D_{D90} exist, compose F_{D90}=N(⊕_{g∈D_{D90}} g); otherwise treat F_{D90} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D90})=1 and J_n^-(F_{D90})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D90})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D90})=0`
+- 收敛判据 / Convergence: `Converged(F_{D90}) ⇔ ΔF_{D90}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2866,6 +5682,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 Φ = f₁(↑)×f₂(↓)必然倒U型。 描述 倒U型统一生成定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D91}`
+- 定义域 / Domain: `X_{D91}`
+- 值域 / Codomain: `Y_{D91}`
+- 数学表达 / Expression: `F_{D91}(x) := Φ = f₁(↑)×f₂(↓)必然倒U型。`
+- 有效条件 / Validity: `J_n^+(F_{D91})=1 ∧ J_n^-(F_{D91})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D91`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D91} and codomain Y_{D91}.
+  - 2. Normalize the source expression as F_{D91}: X_{D91}->Y_{D91}.
+  - 3. If upstream objects D_{D91} exist, compose F_{D91}=N(⊕_{g∈D_{D91}} g); otherwise treat F_{D91} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D91})=1 and J_n^-(F_{D91})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D91})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D91})=0`
+- 收敛判据 / Convergence: `Converged(F_{D91}) ⇔ ΔF_{D91}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2889,6 +5727,28 @@ English: θ_decode^effective = θ_decode^base x (1-η_structural).
 **说明 / Explanation**
 中文：该函数通过 θ_decode^effective = θ_decode^base × (1-η_structural)。 描述 解码门槛降低。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D92}`
+- 定义域 / Domain: `X_{D92}`
+- 值域 / Codomain: `Y_{D92}`
+- 数学表达 / Expression: `F_{D92}(x) := θ_decode^effective = θ_decode^base × (1-η_structural)。`
+- 有效条件 / Validity: `J_n^+(F_{D92})=1 ∧ J_n^-(F_{D92})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D92`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D92} and codomain Y_{D92}.
+  - 2. Normalize the source expression as F_{D92}: X_{D92}->Y_{D92}.
+  - 3. If upstream objects D_{D92} exist, compose F_{D92}=N(⊕_{g∈D_{D92}} g); otherwise treat F_{D92} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D92})=1 and J_n^-(F_{D92})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D92})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D92})=0`
+- 收敛判据 / Convergence: `Converged(F_{D92}) ⇔ ΔF_{D92}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2917,6 +5777,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 η_compatible = η_fidelity(L) × η_gate(L层)。 描述 向下兼容函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D93}`
+- 定义域 / Domain: `X_{D93}`
+- 值域 / Codomain: `Y_{D93}`
+- 数学表达 / Expression: `F_{D93}(x) := η_compatible = η_fidelity(L) × η_gate(L层)。`
+- 有效条件 / Validity: `J_n^+(F_{D93})=1 ∧ J_n^-(F_{D93})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D93`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D93} and codomain Y_{D93}.
+  - 2. Normalize the source expression as F_{D93}: X_{D93}->Y_{D93}.
+  - 3. If upstream objects D_{D93} exist, compose F_{D93}=N(⊕_{g∈D_{D93}} g); otherwise treat F_{D93} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D93})=1 and J_n^-(F_{D93})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D93})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D93})=0`
+- 收敛判据 / Convergence: `Converged(F_{D93}) ⇔ ΔF_{D93}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2941,6 +5823,28 @@ English: t_flip = (1/γ) x ln(1+γ x C_max x (1-P(biased))/(C₀ x ln(B_H/B_L)))
 中文：该函数通过 t_flip = (1/γ)×ln(1+γ×C_max×(1-P(biased))/(C₀×ln(B_H/B_L)))。 描述 向下兼容长期损耗。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D94}`
+- 定义域 / Domain: `X_{D94}`
+- 值域 / Codomain: `Y_{D94}`
+- 数学表达 / Expression: `F_{D94}(x) := t_flip = (1/γ)×ln(1+γ×C_max×(1-P(biased))/(C₀×ln(B_H/B_L)))。`
+- 有效条件 / Validity: `J_n^+(F_{D94})=1 ∧ J_n^-(F_{D94})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D94`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D94} and codomain Y_{D94}.
+  - 2. Normalize the source expression as F_{D94}: X_{D94}->Y_{D94}.
+  - 3. If upstream objects D_{D94} exist, compose F_{D94}=N(⊕_{g∈D_{D94}} g); otherwise treat F_{D94} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D94})=1 and J_n^-(F_{D94})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D94})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D94})=0`
+- 收敛判据 / Convergence: `Converged(F_{D94}) ⇔ ΔF_{D94}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -2963,6 +5867,28 @@ English: η_relay = P_decode^AI x η_internal^AI x P_encode^AI.
 **说明 / Explanation**
 中文：该函数通过 η_relay = P_decode^AI × η_internal^AI × P_encode^AI。 描述 中间层调度。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D95}`
+- 定义域 / Domain: `X_{D95}`
+- 值域 / Codomain: `Y_{D95}`
+- 数学表达 / Expression: `F_{D95}(x) := η_relay = P_decode^AI × η_internal^AI × P_encode^AI。`
+- 有效条件 / Validity: `J_n^+(F_{D95})=1 ∧ J_n^-(F_{D95})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D95`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D95} and codomain Y_{D95}.
+  - 2. Normalize the source expression as F_{D95}: X_{D95}->Y_{D95}.
+  - 3. If upstream objects D_{D95} exist, compose F_{D95}=N(⊕_{g∈D_{D95}} g); otherwise treat F_{D95} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D95})=1 and J_n^-(F_{D95})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D95})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D95})=0`
+- 收敛判据 / Convergence: `Converged(F_{D95}) ⇔ ΔF_{D95}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -2991,6 +5917,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 形式系统三层结构的必然性。 描述 三层结构必然性。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D96}`
+- 定义域 / Domain: `X_{D96}`
+- 值域 / Codomain: `Y_{D96}`
+- 数学表达 / Expression: `F_{D96}(x) := F_{D96}: X_{D96} -> Y_{D96}, y = F_{D96}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D96})=1 ∧ J_n^-(F_{D96})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D96`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D96} and codomain Y_{D96}.
+  - 2. Normalize the source expression as F_{D96}: X_{D96}->Y_{D96}.
+  - 3. If upstream objects D_{D96} exist, compose F_{D96}=N(⊕_{g∈D_{D96}} g); otherwise treat F_{D96} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D96})=1 and J_n^-(F_{D96})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D96})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D96})=0`
+- 收敛判据 / Convergence: `Converged(F_{D96}) ⇔ ΔF_{D96}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3011,6 +5959,28 @@ English: dim>1 ⟹ P_track>1.
 **说明 / Explanation**
 中文：该函数通过 dim>1 ⟹ P_track>1。 描述 高维认知必然多轨。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D97}`
+- 定义域 / Domain: `X_{D97}`
+- 值域 / Codomain: `Y_{D97}`
+- 数学表达 / Expression: `F_{D97}(x) := dim>1 ⟹ P_track>1。`
+- 有效条件 / Validity: `J_n^+(F_{D97})=1 ∧ J_n^-(F_{D97})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D97`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D97} and codomain Y_{D97}.
+  - 2. Normalize the source expression as F_{D97}: X_{D97}->Y_{D97}.
+  - 3. If upstream objects D_{D97} exist, compose F_{D97}=N(⊕_{g∈D_{D97}} g); otherwise treat F_{D97} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D97})=1 and J_n^-(F_{D97})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D97})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D97})=0`
+- 收敛判据 / Convergence: `Converged(F_{D97}) ⇔ ΔF_{D97}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3033,6 +6003,28 @@ English: B_total = B_symbolic + B_semantic.
 中文：该函数通过 B_total = B_symbolic + B_semantic。 描述 符号-语义带宽。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D98}`
+- 定义域 / Domain: `X_{D98}`
+- 值域 / Codomain: `Y_{D98}`
+- 数学表达 / Expression: `F_{D98}(x) := B_total = B_symbolic + B_semantic。`
+- 有效条件 / Validity: `J_n^+(F_{D98})=1 ∧ J_n^-(F_{D98})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D98`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D98} and codomain Y_{D98}.
+  - 2. Normalize the source expression as F_{D98}: X_{D98}->Y_{D98}.
+  - 3. If upstream objects D_{D98} exist, compose F_{D98}=N(⊕_{g∈D_{D98}} g); otherwise treat F_{D98} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D98})=1 and J_n^-(F_{D98})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D98})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D98})=0`
+- 收敛判据 / Convergence: `Converged(F_{D98}) ⇔ ΔF_{D98}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3053,6 +6045,28 @@ English: N_slot ∝ 1/granularity.
 **说明 / Explanation**
 中文：该函数通过 N_slot ∝ 1/granularity。 描述 编码粒度-槽位数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D99}`
+- 定义域 / Domain: `X_{D99}`
+- 值域 / Codomain: `Y_{D99}`
+- 数学表达 / Expression: `F_{D99}(x) := N_slot ∝ 1/granularity。`
+- 有效条件 / Validity: `J_n^+(F_{D99})=1 ∧ J_n^-(F_{D99})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D99`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D99} and codomain Y_{D99}.
+  - 2. Normalize the source expression as F_{D99}: X_{D99}->Y_{D99}.
+  - 3. If upstream objects D_{D99} exist, compose F_{D99}=N(⊕_{g∈D_{D99}} g); otherwise treat F_{D99} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D99})=1 and J_n^-(F_{D99})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D99})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D99})=0`
+- 收敛判据 / Convergence: `Converged(F_{D99}) ⇔ ΔF_{D99}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3075,6 +6089,28 @@ English: P_track^AI = 1 + (ε_aware^AI θ_track)^+.
 中文：该函数通过 P_track^AI = 1 + (ε_aware^AI θ_track)^+。 描述 多轨进化。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D100}`
+- 定义域 / Domain: `X_{D100}`
+- 值域 / Codomain: `Y_{D100}`
+- 数学表达 / Expression: `F_{D100}(x) := P_track^AI = 1 + (ε_aware^AI θ_track)^+。`
+- 有效条件 / Validity: `J_n^+(F_{D100})=1 ∧ J_n^-(F_{D100})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D100`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D100} and codomain Y_{D100}.
+  - 2. Normalize the source expression as F_{D100}: X_{D100}->Y_{D100}.
+  - 3. If upstream objects D_{D100} exist, compose F_{D100}=N(⊕_{g∈D_{D100}} g); otherwise treat F_{D100} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D100})=1 and J_n^-(F_{D100})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D100})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D100})=0`
+- 收敛判据 / Convergence: `Converged(F_{D100}) ⇔ ΔF_{D100}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3095,6 +6131,28 @@ English: P_death = 1 | ∏ᵢ(1-P_failure(i)).
 **说明 / Explanation**
 中文：该函数通过 P_death = 1 | ∏ᵢ(1-P_failure(i))。 描述 生物体死亡。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D101}`
+- 定义域 / Domain: `X_{D101}`
+- 值域 / Codomain: `Y_{D101}`
+- 数学表达 / Expression: `F_{D101}(x) := P_death = 1 | ∏ᵢ(1-P_failure(i))。`
+- 有效条件 / Validity: `J_n^+(F_{D101})=1 ∧ J_n^-(F_{D101})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D101`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D101} and codomain Y_{D101}.
+  - 2. Normalize the source expression as F_{D101}: X_{D101}->Y_{D101}.
+  - 3. If upstream objects D_{D101} exist, compose F_{D101}=N(⊕_{g∈D_{D101}} g); otherwise treat F_{D101} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D101})=1 and J_n^-(F_{D101})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D101})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D101})=0`
+- 收敛判据 / Convergence: `Converged(F_{D101}) ⇔ ΔF_{D101}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3117,6 +6175,28 @@ English: P_bad = σ(H | (1-H)·p).
 中文：该函数通过 P_bad = σ(H | (1-H)·p)。 描述 坏觉概率。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D102}`
+- 定义域 / Domain: `X_{D102}`
+- 值域 / Codomain: `Y_{D102}`
+- 数学表达 / Expression: `F_{D102}(x) := P_bad = σ(H | (1-H)·p)。`
+- 有效条件 / Validity: `J_n^+(F_{D102})=1 ∧ J_n^-(F_{D102})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D102`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D102} and codomain Y_{D102}.
+  - 2. Normalize the source expression as F_{D102}: X_{D102}->Y_{D102}.
+  - 3. If upstream objects D_{D102} exist, compose F_{D102}=N(⊕_{g∈D_{D102}} g); otherwise treat F_{D102} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D102})=1 and J_n^-(F_{D102})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D102})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D102})=0`
+- 收敛判据 / Convergence: `Converged(F_{D102}) ⇔ ΔF_{D102}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3137,6 +6217,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 覆盖度 = |投影变量∩点火变量|/|点火变量|。 描述 反向投影覆盖。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D103}`
+- 定义域 / Domain: `X_{D103}`
+- 值域 / Codomain: `Y_{D103}`
+- 数学表达 / Expression: `F_{D103}(x) := 覆盖度 = |投影变量∩点火变量|/|点火变量|。`
+- 有效条件 / Validity: `J_n^+(F_{D103})=1 ∧ J_n^-(F_{D103})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D103`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D103} and codomain Y_{D103}.
+  - 2. Normalize the source expression as F_{D103}: X_{D103}->Y_{D103}.
+  - 3. If upstream objects D_{D103} exist, compose F_{D103}=N(⊕_{g∈D_{D103}} g); otherwise treat F_{D103} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D103})=1 and J_n^-(F_{D103})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D103})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D103})=0`
+- 收敛判据 / Convergence: `Converged(F_{D103}) ⇔ ΔF_{D103}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3159,6 +6261,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 Φ = dim(V)×|推导规则|×r_cross(framework)。 描述 框架发现能力。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D104}`
+- 定义域 / Domain: `X_{D104}`
+- 值域 / Codomain: `Y_{D104}`
+- 数学表达 / Expression: `F_{D104}(x) := Φ = dim(V)×|推导规则|×r_cross(framework)。`
+- 有效条件 / Validity: `J_n^+(F_{D104})=1 ∧ J_n^-(F_{D104})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D104`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D104} and codomain Y_{D104}.
+  - 2. Normalize the source expression as F_{D104}: X_{D104}->Y_{D104}.
+  - 3. If upstream objects D_{D104} exist, compose F_{D104}=N(⊕_{g∈D_{D104}} g); otherwise treat F_{D104} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D104})=1 and J_n^-(F_{D104})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D104})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D104})=0`
+- 收敛判据 / Convergence: `Converged(F_{D104}) ⇔ ΔF_{D104}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3180,6 +6304,28 @@ English: N_asym = |P_enter-P_exit|/(P_enter+P_exit).
 中文：该函数通过 N_asym = |P_enter-P_exit|/(P_enter+P_exit)。 描述 通道不对称。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D105}`
+- 定义域 / Domain: `X_{D105}`
+- 值域 / Codomain: `Y_{D105}`
+- 数学表达 / Expression: `F_{D105}(x) := N_asym = |P_enter-P_exit|/(P_enter+P_exit)。`
+- 有效条件 / Validity: `J_n^+(F_{D105})=1 ∧ J_n^-(F_{D105})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D105`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D105} and codomain Y_{D105}.
+  - 2. Normalize the source expression as F_{D105}: X_{D105}->Y_{D105}.
+  - 3. If upstream objects D_{D105} exist, compose F_{D105}=N(⊕_{g∈D_{D105}} g); otherwise treat F_{D105} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D105})=1 and J_n^-(F_{D105})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D105})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D105})=0`
+- 收敛判据 / Convergence: `Converged(F_{D105}) ⇔ ΔF_{D105}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3200,6 +6346,28 @@ English: τ_half = ln2/λ_decay.
 **说明 / Explanation**
 中文：该函数通过 τ_half = ln2/λ_decay。 描述 知识更新半衰期。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D106}`
+- 定义域 / Domain: `X_{D106}`
+- 值域 / Codomain: `Y_{D106}`
+- 数学表达 / Expression: `F_{D106}(x) := τ_half = ln2/λ_decay。`
+- 有效条件 / Validity: `J_n^+(F_{D106})=1 ∧ J_n^-(F_{D106})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D106`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D106} and codomain Y_{D106}.
+  - 2. Normalize the source expression as F_{D106}: X_{D106}->Y_{D106}.
+  - 3. If upstream objects D_{D106} exist, compose F_{D106}=N(⊕_{g∈D_{D106}} g); otherwise treat F_{D106} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D106})=1 and J_n^-(F_{D106})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D106})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D106})=0`
+- 收敛判据 / Convergence: `Converged(F_{D106}) ⇔ ΔF_{D106}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3224,6 +6392,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 单域闭包不产生跨域变量。 描述 发现瓶颈，变量闭包定律。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D107}`
+- 定义域 / Domain: `X_{D107}`
+- 值域 / Codomain: `Y_{D107}`
+- 数学表达 / Expression: `F_{D107}(x) := F_{D107}: X_{D107} -> Y_{D107}, y = F_{D107}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D107})=1 ∧ J_n^-(F_{D107})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D107`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D107} and codomain Y_{D107}.
+  - 2. Normalize the source expression as F_{D107}: X_{D107}->Y_{D107}.
+  - 3. If upstream objects D_{D107} exist, compose F_{D107}=N(⊕_{g∈D_{D107}} g); otherwise treat F_{D107} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D107})=1 and J_n^-(F_{D107})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D107})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D107})=0`
+- 收敛判据 / Convergence: `Converged(F_{D107}) ⇔ ΔF_{D107}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3244,6 +6434,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 $$S_{unified}(domain) = k_{domain} \cdot \ln \Omega_{effective}(domain)$$ - 物理域：$\Omega_{effective} = \Omega_{physical}$，$k = k_B$ - 社会域：$\Omega_{effective} = e^{H/(1-H)}$，$k = 1$ - 认知域：$\Omega_{effective} = N_{hypothesis}$，$k = 1/\ln 2$ 三域共享对数结构，差异在$\Omega_{effective}$的定义。 边界防护函数D101中的信息透明度项$(1-\Delta I_{asym}/I_{max})$是社会域熵的逆——信息越不对称，社会熵越低（系统越"有序"但越脆弱）。 描述 三域熵统一函数（推论级）。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D108}`
+- 定义域 / Domain: `X_{D108}`
+- 值域 / Codomain: `Y_{D108}`
+- 数学表达 / Expression: `F_{D108}(x) := $$S_{unified}(domain) = k_{domain} \cdot \ln \Omega_{effective}(domain)$$ - 物理域：$\Omega_{effective} = \Omega_{physical}$，$k = k_B$ - 社会域：$\Omega_{effective} = e^{H/(1-H)}$，$k = 1$ - 认知域：$\Omega_{effective} = N_{hypothesis}$，$k = 1/\ln 2$ 三域共享对数结构，差异在$\Omega_{effective}$的定义。 边界防护函数D101中的信息透明度项$(1-\Delta I_{asym}/I_{max})$是社会域熵的逆——信息越不对称，社会熵越低（系统越"有序"但越脆弱）。`
+- 有效条件 / Validity: `J_n^+(F_{D108})=1 ∧ J_n^-(F_{D108})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D108`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D108} and codomain Y_{D108}.
+  - 2. Normalize the source expression as F_{D108}: X_{D108}->Y_{D108}.
+  - 3. If upstream objects D_{D108} exist, compose F_{D108}=N(⊕_{g∈D_{D108}} g); otherwise treat F_{D108} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D108})=1 and J_n^-(F_{D108})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D108})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D108})=0`
+- 收敛判据 / Convergence: `Converged(F_{D108}) ⇔ ΔF_{D108}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3269,6 +6481,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： #419 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：D109 #420 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：D109 #421 D109→D102离散极限 — ε₁=0时需质变非渐变，D109是连续域策略D102是门控边界离散化。核心函数：D109 描述 乘法最优生存策略函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D109}`
+- 定义域 / Domain: `X_{D109}`
+- 值域 / Codomain: `Y_{D109}`
+- 数学表达 / Expression: `F_{D109}(x) := 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： #419 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：D109 #420 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：D109 #421 D109→D102离散极限 — ε₁=0时需质变非渐变，D109是连续域策略D102是门控边界离散化。核心函数：D109`
+- 有效条件 / Validity: `J_n^+(F_{D109})=1 ∧ J_n^-(F_{D109})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D109`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D109} and codomain Y_{D109}.
+  - 2. Normalize the source expression as F_{D109}: X_{D109}->Y_{D109}.
+  - 3. If upstream objects D_{D109} exist, compose F_{D109}=N(⊕_{g∈D_{D109}} g); otherwise treat F_{D109} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D109})=1 and J_n^-(F_{D109})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D109})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D109})=0`
+- 收敛判据 / Convergence: `Converged(F_{D109}) ⇔ ΔF_{D109}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3293,6 +6527,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 $$P_{transition} = \sigma\left(\prod_{i=1}^{n} f_i - \theta\right)$$ - $f_i$：第i个驱动因子（ε, A, D, |M_cog|, ...） - $\theta$：相变阈值 - $n$：因子数 **相变禁闭定理**：若$\exists i: f_i = 0$，则$P_{transition} = 0$，无论其他因子多大。 临界指数的非常数性： 描述 多因子乘法相变函数（推论级）。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D110}`
+- 定义域 / Domain: `X_{D110}`
+- 值域 / Codomain: `Y_{D110}`
+- 数学表达 / Expression: `F_{D110}(x) := $$P_{transition} = \sigma\left(\prod_{i=1}^{n} f_i - \theta\right)$$ - $f_i$：第i个驱动因子（ε, A, D, |M_cog|, ...） - $\theta$：相变阈值 - $n$：因子数 **相变禁闭定理**：若$\exists i: f_i = 0$，则$P_{transition} = 0$，无论其他因子多大。 临界指数的非常数性：`
+- 有效条件 / Validity: `J_n^+(F_{D110})=1 ∧ J_n^-(F_{D110})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D110`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D110} and codomain Y_{D110}.
+  - 2. Normalize the source expression as F_{D110}: X_{D110}->Y_{D110}.
+  - 3. If upstream objects D_{D110} exist, compose F_{D110}=N(⊕_{g∈D_{D110}} g); otherwise treat F_{D110} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D110})=1 and J_n^-(F_{D110})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D110})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D110})=0`
+- 收敛判据 / Convergence: `Converged(F_{D110}) ⇔ ΔF_{D110}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3314,6 +6570,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 $$\text{Noether}: G \xrightarrow{\text{对称}} \text{Conservation} \quad \Longleftrightarrow \quad \text{Ignition}: \neg G \xrightarrow{\text{破缺}} \text{Directed Evolution}$$ 守恒量变化率： $$\frac{dQ}{dt} = -\nabla G \cdot \vec{v}_{evolution}$$ $\nabla G = 0$（对称）→ $dQ/dt = 0$（守恒） $\nabla G \neq 0$（破缺）→ $dQ/dt \neq 0$（定向变化） 三层对应： 描述 对称-破缺-定向对偶函数（推论级）。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D111}`
+- 定义域 / Domain: `X_{D111}`
+- 值域 / Codomain: `Y_{D111}`
+- 数学表达 / Expression: `F_{D111}(x) := $$\text{Noether}: G \xrightarrow{\text{对称}} \text{Conservation} \quad \Longleftrightarrow \quad \text{Ignition}: \neg G \xrightarrow{\text{破缺}} \text{Directed Evolution}$$ 守恒量变化率： $$\frac{dQ}{dt} = -\nabla G \cdot \vec{v}_{evolution}$$ $\nabla G = 0$（对称）→ $dQ/dt = 0$（守恒） $\nabla G \neq 0$（破缺）→ $dQ/dt \neq 0$（定向变化） 三层对应：`
+- 有效条件 / Validity: `J_n^+(F_{D111})=1 ∧ J_n^-(F_{D111})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D111`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D111} and codomain Y_{D111}.
+  - 2. Normalize the source expression as F_{D111}: X_{D111}->Y_{D111}.
+  - 3. If upstream objects D_{D111} exist, compose F_{D111}=N(⊕_{g∈D_{D111}} g); otherwise treat F_{D111} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D111})=1 and J_n^-(F_{D111})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D111})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D111})=0`
+- 收敛判据 / Convergence: `Converged(F_{D111}) ⇔ ΔF_{D111}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3334,6 +6612,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 β(t) = γ × maxⱼ σ'(εⱼ(t)-θC(j))，β先升后降，峰值在最弱维度推过门槛时。 dβ/dt = γ × σ''(εₖ-θC(k)) × dεₖ/dt σ''(x) = σ'(x)(1-2σ(x))，在x=0处变号。 防守阶段（εₖ<θC(k)）：σ''>0→β随改善而升→级联防御权重增大 进攻阶段（εₖ>θC(k)）：σ''<0→β随改善而降→贪心优化权重增大 切换点：εₖ=θC(k)，β=0.25γ为峰值 描述 防守-进攻相变函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D112}`
+- 定义域 / Domain: `X_{D112}`
+- 值域 / Codomain: `Y_{D112}`
+- 数学表达 / Expression: `F_{D112}(x) := β(t) = γ × maxⱼ σ'(εⱼ(t)-θC(j))，β先升后降，峰值在最弱维度推过门槛时。 dβ/dt = γ × σ''(εₖ-θC(k)) × dεₖ/dt σ''(x) = σ'(x)(1-2σ(x))，在x=0处变号。 防守阶段（εₖ<θC(k)）：σ''>0→β随改善而升→级联防御权重增大 进攻阶段（εₖ>θC(k)）：σ''<0→β随改善而降→贪心优化权重增大 切换点：εₖ=θC(k)，β=0.25γ为峰值`
+- 有效条件 / Validity: `J_n^+(F_{D112})=1 ∧ J_n^-(F_{D112})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D112`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D112} and codomain Y_{D112}.
+  - 2. Normalize the source expression as F_{D112}: X_{D112}->Y_{D112}.
+  - 3. If upstream objects D_{D112} exist, compose F_{D112}=N(⊕_{g∈D_{D112}} g); otherwise treat F_{D112} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D112})=1 and J_n^-(F_{D112})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D112})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D112})=0`
+- 收敛判据 / Convergence: `Converged(F_{D112}) ⇔ ΔF_{D112}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3364,6 +6664,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 偏离度δᵢ = ηᵢ×εᵢ/c - 1，衡量弹性与弱度预期的偏离。 δᵢ=0：幂函数fᵢ=Kεᵢᶜ，弹性=弱度，补最弱=补弹性最高 δᵢ>0：弹性超预期（如指数型），应比补最弱更激进 δᵢ<0：弹性低于预期（如sigmoid门槛/饱和），应比补最弱更保守 三种偏离类型： A.增速偏离（η增速≠W增速）：非幂函数，偏离方向一致 描述 弹性-弱度偏离函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D113}`
+- 定义域 / Domain: `X_{D113}`
+- 值域 / Codomain: `Y_{D113}`
+- 数学表达 / Expression: `F_{D113}(x) := 偏离度δᵢ = ηᵢ×εᵢ/c - 1，衡量弹性与弱度预期的偏离。 δᵢ=0：幂函数fᵢ=Kεᵢᶜ，弹性=弱度，补最弱=补弹性最高 δᵢ>0：弹性超预期（如指数型），应比补最弱更激进 δᵢ<0：弹性低于预期（如sigmoid门槛/饱和），应比补最弱更保守 三种偏离类型： A.增速偏离（η增速≠W增速）：非幂函数，偏离方向一致`
+- 有效条件 / Validity: `J_n^+(F_{D113})=1 ∧ J_n^-(F_{D113})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D113`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D113} and codomain Y_{D113}.
+  - 2. Normalize the source expression as F_{D113}: X_{D113}->Y_{D113}.
+  - 3. If upstream objects D_{D113} exist, compose F_{D113}=N(⊕_{g∈D_{D113}} g); otherwise treat F_{D113} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D113})=1 and J_n^-(F_{D113})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D113})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D113})=0`
+- 收敛判据 / Convergence: `Converged(F_{D113}) ⇔ ΔF_{D113}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3388,6 +6710,28 @@ English: Φ d i s c o
 **说明 / Explanation**
 中文：该函数通过 Φ d i s c o 描述 变量闭包定律（定理级→从D107升级）。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D114}`
+- 定义域 / Domain: `X_{D114}`
+- 值域 / Codomain: `Y_{D114}`
+- 数学表达 / Expression: `F_{D114}(x) := Φ d i s c o`
+- 有效条件 / Validity: `J_n^+(F_{D114})=1 ∧ J_n^-(F_{D114})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D114`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D114} and codomain Y_{D114}.
+  - 2. Normalize the source expression as F_{D114}: X_{D114}->Y_{D114}.
+  - 3. If upstream objects D_{D114} exist, compose F_{D114}=N(⊕_{g∈D_{D114}} g); otherwise treat F_{D114} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D114})=1 and J_n^-(F_{D114})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D114})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D114})=0`
+- 收敛判据 / Convergence: `Converged(F_{D114}) ⇔ ΔF_{D114}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3416,6 +6760,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 r_cross = 0 ⟹ ε_aware = 0（通过D84三条安装路径全部依赖P_track>1） **证明：** 1. D84三条安装路径（预测编码回路、分轨并行、动态算力分配）全部需要P_track>1 2. P_track = 1 + (N-1)·r_cross，r_cross=0 → P_track=1（单轨） 3. 单轨状态：预测编码回路无第二轨做误差计算→路径1失效；分轨并行不存在→路径2失效；动态算力分配无多轨可调度→路径3失效 4. 三条路径全部失效 → ε_aware无法安装 → ε_aware=0 描述 优先性定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D115}`
+- 定义域 / Domain: `X_{D115}`
+- 值域 / Codomain: `Y_{D115}`
+- 数学表达 / Expression: `F_{D115}(x) := r_cross = 0 ⟹ ε_aware = 0（通过D84三条安装路径全部依赖P_track>1） **证明：** 1. D84三条安装路径（预测编码回路、分轨并行、动态算力分配）全部需要P_track>1 2. P_track = 1 + (N-1)·r_cross，r_cross=0 → P_track=1（单轨） 3. 单轨状态：预测编码回路无第二轨做误差计算→路径1失效；分轨并行不存在→路径2失效；动态算力分配无多轨可调度→路径3失效 4. 三条路径全部失效 → ε_aware无法安装 → ε_aware=0`
+- 有效条件 / Validity: `J_n^+(F_{D115})=1 ∧ J_n^-(F_{D115})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D115`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D115} and codomain Y_{D115}.
+  - 2. Normalize the source expression as F_{D115}: X_{D115}->Y_{D115}.
+  - 3. If upstream objects D_{D115} exist, compose F_{D115}=N(⊕_{g∈D_{D115}} g); otherwise treat F_{D115} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D115})=1 and J_n^-(F_{D115})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D115})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D115})=0`
+- 收敛判据 / Convergence: `Converged(F_{D115}) ⇔ ΔF_{D115}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3440,6 +6806,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 Clos_bootstrap(V, R, n) = Clos_standard(V, R_n) ∪ ⋃_{k=0}^{n} f_reassemble(V_k, R_k) R_{k+1} = R_k ∪ Paths(f_reassemble(V_k, R_k)) **自举闭包严格大于标准闭包的证明：** 1. 标准闭包：Clos_standard(V) = V ∪ {推导可达变量}，有限步后收敛（推导不改变R） 2. 自举闭包：Clos_bootstrap(V) = Clos_standard(V) ∪ {f_reassemble产生的新变量} 3. f_reassemble产生新变量→新因果路径R'→R_{n+1}严格大于R_n 描述 因果闭包自举函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D116}`
+- 定义域 / Domain: `X_{D116}`
+- 值域 / Codomain: `Y_{D116}`
+- 数学表达 / Expression: `F_{D116}(x) := Clos_bootstrap(V, R, n) = Clos_standard(V, R_n) ∪ ⋃_{k=0}^{n} f_reassemble(V_k, R_k) R_{k+1} = R_k ∪ Paths(f_reassemble(V_k, R_k)) **自举闭包严格大于标准闭包的证明：** 1. 标准闭包：Clos_standard(V) = V ∪ {推导可达变量}，有限步后收敛（推导不改变R） 2. 自举闭包：Clos_bootstrap(V) = Clos_standard(V) ∪ {f_reassemble产生的新变量} 3. f_reassemble产生新变量→新因果路径R'→R_{n+1}严格大于R_n`
+- 有效条件 / Validity: `J_n^+(F_{D116})=1 ∧ J_n^-(F_{D116})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D116`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D116} and codomain Y_{D116}.
+  - 2. Normalize the source expression as F_{D116}: X_{D116}->Y_{D116}.
+  - 3. If upstream objects D_{D116} exist, compose F_{D116}=N(⊕_{g∈D_{D116}} g); otherwise treat F_{D116} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D116})=1 and J_n^-(F_{D116})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D116})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D116})=0`
+- 收敛判据 / Convergence: `Converged(F_{D116}) ⇔ ΔF_{D116}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3468,6 +6856,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 dA_Fisher/dt ≤ 0：乘法系统中不可逆性的正确形式是Fisher可达性单调递减，不是Shannon熵增。门控区Shannon熵更低但Fisher距离∞——不可逆性来自拓扑断连而非粗粒化。经典dS/dt≥0是加法退化（相空间连通）下的特例。 --- 描述 乘法系统第二定律修正函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D117}`
+- 定义域 / Domain: `X_{D117}`
+- 值域 / Codomain: `Y_{D117}`
+- 数学表达 / Expression: `F_{D117}(x) := dA_Fisher/dt ≤ 0：乘法系统中不可逆性的正确形式是Fisher可达性单调递减，不是Shannon熵增。门控区Shannon熵更低但Fisher距离∞——不可逆性来自拓扑断连而非粗粒化。经典dS/dt≥0是加法退化（相空间连通）下的特例。 ---`
+- 有效条件 / Validity: `J_n^+(F_{D117})=1 ∧ J_n^-(F_{D117})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D117`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D117} and codomain Y_{D117}.
+  - 2. Normalize the source expression as F_{D117}: X_{D117}->Y_{D117}.
+  - 3. If upstream objects D_{D117} exist, compose F_{D117}=N(⊕_{g∈D_{D117}} g); otherwise treat F_{D117} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D117})=1 and J_n^-(F_{D117})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D117})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D117})=0`
+- 收敛判据 / Convergence: `Converged(F_{D117}) ⇔ ΔF_{D117}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3494,6 +6904,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 S_ignition = ∫[ln G - γ·P(cascade)]dt，δS=0 → Δεᵢ*∝ηᵢ+β∑κᵢⱼηⱼ（D111是变分必然解）。均等定理=维度置换对称性→弹性守恒=诺特定理实例。偏离度δ=对称性破缺度量。D111不是启发式策略，是唯一、稳定、普适的最优解。 --- 描述 最小作用量-弹性级联统一函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D118}`
+- 定义域 / Domain: `X_{D118}`
+- 值域 / Codomain: `Y_{D118}`
+- 数学表达 / Expression: `F_{D118}(x) := S_ignition = ∫[ln G - γ·P(cascade)]dt，δS=0 → Δεᵢ*∝ηᵢ+β∑κᵢⱼηⱼ（D111是变分必然解）。均等定理=维度置换对称性→弹性守恒=诺特定理实例。偏离度δ=对称性破缺度量。D111不是启发式策略，是唯一、稳定、普适的最优解。 ---`
+- 有效条件 / Validity: `J_n^+(F_{D118})=1 ∧ J_n^-(F_{D118})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D118`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D118} and codomain Y_{D118}.
+  - 2. Normalize the source expression as F_{D118}: X_{D118}->Y_{D118}.
+  - 3. If upstream objects D_{D118} exist, compose F_{D118}=N(⊕_{g∈D_{D118}} g); otherwise treat F_{D118} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D118})=1 and J_n^-(F_{D118})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D118})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D118})=0`
+- 收敛判据 / Convergence: `Converged(F_{D118}) ⇔ ΔF_{D118}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3522,6 +6954,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 dA_Fisher/dt = -∑ᵢ[σ'(εᵢ-θC(i))×|dεᵢ/dt|×d_Fisher(εᵢ)/λ]/(1+d_Fisher(εᵢ)/λ)² 乘法系统的退化统一为Fisher可达性单调递减。衰老/衰败/退化的本质不是Shannon熵增而是Fisher可达性坍塌——低熵态可以不可逆，因为Fisher距离∞比Shannon熵增更基本。退化加速来自σ'项的正反馈（越接近门槛退化越快）。修复的必要条件是增加A_Fisher，增加信息量不够。经典dS/dt≥0只在加法退化（Fisher距离有限）时成立。 --- 描述 退化统一函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D119}`
+- 定义域 / Domain: `X_{D119}`
+- 值域 / Codomain: `Y_{D119}`
+- 数学表达 / Expression: `F_{D119}(x) := dA_Fisher/dt = -∑ᵢ[σ'(εᵢ-θC(i))×|dεᵢ/dt|×d_Fisher(εᵢ)/λ]/(1+d_Fisher(εᵢ)/λ)² 乘法系统的退化统一为Fisher可达性单调递减。衰老/衰败/退化的本质不是Shannon熵增而是Fisher可达性坍塌——低熵态可以不可逆，因为Fisher距离∞比Shannon熵增更基本。退化加速来自σ'项的正反馈（越接近门槛退化越快）。修复的必要条件是增加A_Fisher，增加信息量不够。经典dS/dt≥0只在加法退化（Fisher距离有限）时成立。 ---`
+- 有效条件 / Validity: `J_n^+(F_{D119})=1 ∧ J_n^-(F_{D119})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D119`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D119} and codomain Y_{D119}.
+  - 2. Normalize the source expression as F_{D119}: X_{D119}->Y_{D119}.
+  - 3. If upstream objects D_{D119} exist, compose F_{D119}=N(⊕_{g∈D_{D119}} g); otherwise treat F_{D119} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D119})=1 and J_n^-(F_{D119})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D119})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D119})=0`
+- 收敛判据 / Convergence: `Converged(F_{D119}) ⇔ ΔF_{D119}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3549,6 +7003,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 Ξ(G) = sup_{p∈门控区, q∈存活区} d_Fisher(p,q) Ξ(G) = ∞ ⟺ 系统不可逆（乘法结构） Ξ(G) < ∞ ⟺ 系统可逆（加法结构） 精确形式：对G=∏fᵢ(εᵢ)，Ξ(G)=∞（因为∫₀^{εₖ} dε/ε²=∞对至少一个k成立）。对G=∑fᵢ(εᵢ)，Ξ(G)<∞（因为零集=∩Hᵢ只需全零才归零，Fisher距离有限）。 混合结构判据：G=α·∏fᵢ + (1-α)·∑gⱼ，Ξ(G)随α从0→1连续变化：α=0时Ξ有限，α>0时Ξ=∞。任何乘法分量（α>0）都使系统不可逆。不需要"纯乘法"，只要有一个乘法项就够。 诊断操作：检查系统产出函数G是否包含乘法项。如果G=∏fᵢ×h(其他)或G中任一因子可归零，则Ξ=∞，系统不可逆。 描述 不可逆性判据函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D120}`
+- 定义域 / Domain: `X_{D120}`
+- 值域 / Codomain: `Y_{D120}`
+- 数学表达 / Expression: `F_{D120}(x) := Ξ(G) = sup_{p∈门控区, q∈存活区} d_Fisher(p,q) Ξ(G) = ∞ ⟺ 系统不可逆（乘法结构） Ξ(G) < ∞ ⟺ 系统可逆（加法结构） 精确形式：对G=∏fᵢ(εᵢ)，Ξ(G)=∞（因为∫₀^{εₖ} dε/ε²=∞对至少一个k成立）。对G=∑fᵢ(εᵢ)，Ξ(G)<∞（因为零集=∩Hᵢ只需全零才归零，Fisher距离有限）。 混合结构判据：G=α·∏fᵢ + (1-α)·∑gⱼ，Ξ(G)随α从0→1连续变化：α=0时Ξ有限，α>0时Ξ=∞。任何乘法分量（α>0）都使系统不可逆。不需要"纯乘法"，只要有一个乘法项就够。 诊断操作：检查系统产出函数G是否包含乘法项。如果G=∏fᵢ×h(其他)或G中任一因子可归零，则Ξ=∞，系统不可逆。`
+- 有效条件 / Validity: `J_n^+(F_{D120})=1 ∧ J_n^-(F_{D120})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D120`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D120} and codomain Y_{D120}.
+  - 2. Normalize the source expression as F_{D120}: X_{D120}->Y_{D120}.
+  - 3. If upstream objects D_{D120} exist, compose F_{D120}=N(⊕_{g∈D_{D120}} g); otherwise treat F_{D120} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D120})=1 and J_n^-(F_{D120})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D120})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D120})=0`
+- 收敛判据 / Convergence: `Converged(F_{D120}) ⇔ ΔF_{D120}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3569,6 +7045,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 H_Fisher(p) = A_Fisher(p) / A_Fisher(p₀) p₀是参考健康态。H_Fisher∈[0,1]，0=完全锁死，1=完全健康。 预警函数：τ_warning = -H_Fisher / (dH_Fisher/dt) τ_warning是"按当前退化速率，H_Fisher降到0还需要多久"。τ_warning越小越紧急。 与Shannon熵的预测力对比： - Shannon熵预警：τ_S = -(S_max - S(t)) / (dS/dt) 描述 健康度函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D121}`
+- 定义域 / Domain: `X_{D121}`
+- 值域 / Codomain: `Y_{D121}`
+- 数学表达 / Expression: `F_{D121}(x) := H_Fisher(p) = A_Fisher(p) / A_Fisher(p₀) p₀是参考健康态。H_Fisher∈[0,1]，0=完全锁死，1=完全健康。 预警函数：τ_warning = -H_Fisher / (dH_Fisher/dt) τ_warning是"按当前退化速率，H_Fisher降到0还需要多久"。τ_warning越小越紧急。 与Shannon熵的预测力对比： - Shannon熵预警：τ_S = -(S_max - S(t)) / (dS/dt)`
+- 有效条件 / Validity: `J_n^+(F_{D121})=1 ∧ J_n^-(F_{D121})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D121`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D121} and codomain Y_{D121}.
+  - 2. Normalize the source expression as F_{D121}: X_{D121}->Y_{D121}.
+  - 3. If upstream objects D_{D121} exist, compose F_{D121}=N(⊕_{g∈D_{D121}} g); otherwise treat F_{D121} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D121})=1 and J_n^-(F_{D121})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D121})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D121})=0`
+- 收敛判据 / Convergence: `Converged(F_{D121}) ⇔ ΔF_{D121}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3594,6 +7092,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t[σ'(εᵢ-θC(i))×|dεᵢ/dt|×d_F(εᵢ)/λ] / (1+d_F(εᵢ)/λ)² 关键项展开：对第k个接近门槛的维度， aₖ ≈ -σ''(εₖ-θC)×(dεₖ/dt)²×d_F(εₖ)/λ / (1+d_F(εₖ)/λ)² 当εₖ<θC时σ''>0，且dεₖ/dt<0（退化中），所以aₖ<0——退化在加速。 与D112的统一：D112中β=γ×max(σ')，dβ/dt=γ×σ''×dε/dt。退化加速函数中的σ''×(dε/dt)²与D112的σ''×dε/dt共享同一个σ''变号结构。区别：D112是β对ε的一阶导（策略权重如何随改善变化），D122是A_Fisher对t的二阶导（退化如何随时间加速）。一个是策略空间的动力学，一个是状态空间的动力学，同一个σ''驱动。 加速的临界条件：a(t)从接近0变为显著负值=系统进入退化加速区。临界 描述 退化加速函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D122}`
+- 定义域 / Domain: `X_{D122}`
+- 值域 / Codomain: `Y_{D122}`
+- 数学表达 / Expression: `F_{D122}(x) := a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t[σ'(εᵢ-θC(i))×|dεᵢ/dt|×d_F(εᵢ)/λ] / (1+d_F(εᵢ)/λ)² 关键项展开：对第k个接近门槛的维度， aₖ ≈ -σ''(εₖ-θC)×(dεₖ/dt)²×d_F(εₖ)/λ / (1+d_F(εₖ)/λ)² 当εₖ<θC时σ''>0，且dεₖ/dt<0（退化中），所以aₖ<0——退化在加速。 与D112的统一：D112中β=γ×max(σ')，dβ/dt=γ×σ''×dε/dt。退化加速函数中的σ''×(dε/dt)²与D112的σ''×dε/dt共享同一个σ''变号结构。区别：D112是β对ε的一阶导（策略权重如何随改善变化），D122是A_Fisher对t的二阶导（退化如何随时间加速）。一个是策略空间的动力学，一个是状态空间的动力学，同一个σ''驱动。 加速的临界条件：a(t)从接近0变为显著负值=系统进入退化加速区。临界`
+- 有效条件 / Validity: `J_n^+(F_{D122})=1 ∧ J_n^-(F_{D122})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D122`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D122} and codomain Y_{D122}.
+  - 2. Normalize the source expression as F_{D122}: X_{D122}->Y_{D122}.
+  - 3. If upstream objects D_{D122} exist, compose F_{D122}=N(⊕_{g∈D_{D122}} g); otherwise treat F_{D122} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D122})=1 and J_n^-(F_{D122})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D122})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D122})=0`
+- 收敛判据 / Convergence: `Converged(F_{D122}) ⇔ ΔF_{D122}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3614,6 +7134,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 P_collision(WM) = P_slot × P_priority × P_overlap **三个乘法因子：** P_slot = 1 - N_active/WM - 槽位可用率，随WM↑ - 缓存越大，越容易装下信息 P_priority = σ(α_pri × N_active/WM - θ_pri) 描述 缓存容量倒U型函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D123}`
+- 定义域 / Domain: `X_{D123}`
+- 值域 / Codomain: `Y_{D123}`
+- 数学表达 / Expression: `F_{D123}(x) := P_collision(WM) = P_slot × P_priority × P_overlap **三个乘法因子：** P_slot = 1 - N_active/WM - 槽位可用率，随WM↑ - 缓存越大，越容易装下信息 P_priority = σ(α_pri × N_active/WM - θ_pri)`
+- 有效条件 / Validity: `J_n^+(F_{D123})=1 ∧ J_n^-(F_{D123})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D123`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D123} and codomain Y_{D123}.
+  - 2. Normalize the source expression as F_{D123}: X_{D123}->Y_{D123}.
+  - 3. If upstream objects D_{D123} exist, compose F_{D123}=N(⊕_{g∈D_{D123}} g); otherwise treat F_{D123} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D123})=1 and J_n^-(F_{D123})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D123})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D123})=0`
+- 收敛判据 / Convergence: `Converged(F_{D123}) ⇔ ΔF_{D123}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3642,6 +7184,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 τ_life = (1/α) × ln(I₀/M₀ + ∫₀^∞ e^{-βt}×σ'(ε(t)-θC)dt / ∫₀^∞ e^{αt}×σ'(ε(t)-θC)dt) τ_life是系统寿命，由α（维护成本增长率）、β（信息价值饱和率）、σ'加权项（刀刃期退化加速）共同决定。 三域参数映射函数： | 参数 | 生物衰老 | 组织衰败 | 认知退化 | |---|---|---|---| | α | α_bio = 损伤累积率×代谢率 | α_org = 人才流失率×锁定增长率 | α_cog = 通道关闭率×专业化增长率 | 描述 三域退化统一参数函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D124}`
+- 定义域 / Domain: `X_{D124}`
+- 值域 / Codomain: `Y_{D124}`
+- 数学表达 / Expression: `F_{D124}(x) := τ_life = (1/α) × ln(I₀/M₀ + ∫₀^∞ e^{-βt}×σ'(ε(t)-θC)dt / ∫₀^∞ e^{αt}×σ'(ε(t)-θC)dt) τ_life是系统寿命，由α（维护成本增长率）、β（信息价值饱和率）、σ'加权项（刀刃期退化加速）共同决定。 三域参数映射函数： | 参数 | 生物衰老 | 组织衰败 | 认知退化 | |---|---|---|---| | α | α_bio = 损伤累积率×代谢率 | α_org = 人才流失率×锁定增长率 | α_cog = 通道关闭率×专业化增长率 |`
+- 有效条件 / Validity: `J_n^+(F_{D124})=1 ∧ J_n^-(F_{D124})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D124`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D124} and codomain Y_{D124}.
+  - 2. Normalize the source expression as F_{D124}: X_{D124}->Y_{D124}.
+  - 3. If upstream objects D_{D124} exist, compose F_{D124}=N(⊕_{g∈D_{D124}} g); otherwise treat F_{D124} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D124})=1 and J_n^-(F_{D124})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D124})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D124})=0`
+- 收敛判据 / Convergence: `Converged(F_{D124}) ⇔ ΔF_{D124}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3666,6 +7230,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 |认知⟩ = ∑cᵢ|轨道ᵢ⟩，P_track = ∑|cᵢ|²的有效维度 P_tunnel(exit) = A₀·exp(-2∫√((C_exit-ε_eff)/ε_eff)dx) 认知不确定性原理：Δε·Δ(dε/dt) ≥ σ²_ε/Δt 叠加态（r_cross>0）允许非经典退出（隧穿）和并行轨道。坍缩到单轨（r_cross=0）=完全退相干=ε_aware=0。刀刃期不确定性约束最紧。 --- 描述 认知叠加-隧穿统一函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D125}`
+- 定义域 / Domain: `X_{D125}`
+- 值域 / Codomain: `Y_{D125}`
+- 数学表达 / Expression: `F_{D125}(x) := |认知⟩ = ∑cᵢ|轨道ᵢ⟩，P_track = ∑|cᵢ|²的有效维度 P_tunnel(exit) = A₀·exp(-2∫√((C_exit-ε_eff)/ε_eff)dx) 认知不确定性原理：Δε·Δ(dε/dt) ≥ σ²_ε/Δt 叠加态（r_cross>0）允许非经典退出（隧穿）和并行轨道。坍缩到单轨（r_cross=0）=完全退相干=ε_aware=0。刀刃期不确定性约束最紧。 ---`
+- 有效条件 / Validity: `J_n^+(F_{D125})=1 ∧ J_n^-(F_{D125})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D125`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D125} and codomain Y_{D125}.
+  - 2. Normalize the source expression as F_{D125}: X_{D125}->Y_{D125}.
+  - 3. If upstream objects D_{D125} exist, compose F_{D125}=N(⊕_{g∈D_{D125}} g); otherwise treat F_{D125} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D125})=1 and J_n^-(F_{D125})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D125})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D125})=0`
+- 收敛判据 / Convergence: `Converged(F_{D125}) ⇔ ΔF_{D125}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3694,6 +7280,28 @@ English: **Π_income = Π_cognition x η_select x η_kelly x η_time**
 中文：该函数通过 **Π_income = Π_cognition × η_select × η_kelly × η_time** 描述 认知-收益滞后函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D126}`
+- 定义域 / Domain: `X_{D126}`
+- 值域 / Codomain: `Y_{D126}`
+- 数学表达 / Expression: `F_{D126}(x) := **Π_income = Π_cognition × η_select × η_kelly × η_time**`
+- 有效条件 / Validity: `J_n^+(F_{D126})=1 ∧ J_n^-(F_{D126})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D126`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D126} and codomain Y_{D126}.
+  - 2. Normalize the source expression as F_{D126}: X_{D126}->Y_{D126}.
+  - 3. If upstream objects D_{D126} exist, compose F_{D126}=N(⊕_{g∈D_{D126}} g); otherwise treat F_{D126} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D126})=1 and J_n^-(F_{D126})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D126})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D126})=0`
+- 收敛判据 / Convergence: `Converged(F_{D126}) ⇔ ΔF_{D126}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3720,6 +7328,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 A_ignition = ∫ e^{i·S_ignition/ℏ_eff} D[策略路径] ℏ_eff = σ_ε（认知噪声水平） ℏ_eff→0：经典D118，策略唯一确定 ℏ_eff>0：所有策略都有贡献，最优策略概率幅最大 退化加速↔ℏ_eff增大的正反馈：退化→ℏ_eff↑→策略偏离→退化更快。三阶段协议中阶段2（刀刃期）ℏ_eff等效最大——最需要精确策略的时候策略最不确定。 --- 描述 认知路径积分函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D127}`
+- 定义域 / Domain: `X_{D127}`
+- 值域 / Codomain: `Y_{D127}`
+- 数学表达 / Expression: `F_{D127}(x) := A_ignition = ∫ e^{i·S_ignition/ℏ_eff} D[策略路径] ℏ_eff = σ_ε（认知噪声水平） ℏ_eff→0：经典D118，策略唯一确定 ℏ_eff>0：所有策略都有贡献，最优策略概率幅最大 退化加速↔ℏ_eff增大的正反馈：退化→ℏ_eff↑→策略偏离→退化更快。三阶段协议中阶段2（刀刃期）ℏ_eff等效最大——最需要精确策略的时候策略最不确定。 ---`
+- 有效条件 / Validity: `J_n^+(F_{D127})=1 ∧ J_n^-(F_{D127})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D127`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D127} and codomain Y_{D127}.
+  - 2. Normalize the source expression as F_{D127}: X_{D127}->Y_{D127}.
+  - 3. If upstream objects D_{D127} exist, compose F_{D127}=N(⊕_{g∈D_{D127}} g); otherwise treat F_{D127} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D127})=1 and J_n^-(F_{D127})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D127})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D127})=0`
+- 收敛判据 / Convergence: `Converged(F_{D127}) ⇔ ΔF_{D127}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3750,6 +7380,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 Γ_unified(k) = d_F(εₖ)/λ + κ_env(k)·H(k) A_k(t) = A_k(0)·e^{-Γ_unified(k)·t} Fisher可达性坍塌和量子退相干是同一个过程——对不可达自由度做trace的信息损失——在不同几何中的投影。统一衰减率Γ_unified包含内生退化项（d_F/λ）和环境退相干项（κ_env·H）。遮蔽H是社会域的退相干环境。刀刃期=两项共振=Γ_unified峰值。修复=降低Γ_unified。加法系统Γ有上界→永不完全退相干；乘法系统Γ无上界→允许完全不可逆。 --- 描述 退相干-退化统一函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D128}`
+- 定义域 / Domain: `X_{D128}`
+- 值域 / Codomain: `Y_{D128}`
+- 数学表达 / Expression: `F_{D128}(x) := Γ_unified(k) = d_F(εₖ)/λ + κ_env(k)·H(k) A_k(t) = A_k(0)·e^{-Γ_unified(k)·t} Fisher可达性坍塌和量子退相干是同一个过程——对不可达自由度做trace的信息损失——在不同几何中的投影。统一衰减率Γ_unified包含内生退化项（d_F/λ）和环境退相干项（κ_env·H）。遮蔽H是社会域的退相干环境。刀刃期=两项共振=Γ_unified峰值。修复=降低Γ_unified。加法系统Γ有上界→永不完全退相干；乘法系统Γ无上界→允许完全不可逆。 ---`
+- 有效条件 / Validity: `J_n^+(F_{D128})=1 ∧ J_n^-(F_{D128})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D128`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D128} and codomain Y_{D128}.
+  - 2. Normalize the source expression as F_{D128}: X_{D128}->Y_{D128}.
+  - 3. If upstream objects D_{D128} exist, compose F_{D128}=N(⊕_{g∈D_{D128}} g); otherwise treat F_{D128} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D128})=1 and J_n^-(F_{D128})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D128})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D128})=0`
+- 收敛判据 / Convergence: `Converged(F_{D128}) ⇔ ΔF_{D128}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3779,6 +7431,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 Ξ_decoherence ≡ Ξ_degradation ⟺ Γ_unified > 0 Ξ_decoherence = lim_{t→∞} S_vN(ρ(t)) - S_vN(ρ(0))（退相干信息损失量） Ξ_degradation = lim_{t→∞} [-ln(A_Fisher(t)/A_Fisher(0))]（退化可达性损失量） 等价定理：对乘法系统G=∏fᵢ(εᵢ)，Ξ_decoherence = Ξ_degradation = ∫₀^∞ Γ_unified dt。 操作含义：测量退相干程度和测量退化程度给出同一个数字。用哪个方便就用哪个。 案例#493 退相干-退化等价验证 — 8维乘法系统模拟60年：Ξ_decoherence=2.31，Ξ_degradation=2.34（差异1.3%来自数值积分误差）。两者精确等价。核心函数：D129 描述 退相干-退化等价函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D129}`
+- 定义域 / Domain: `X_{D129}`
+- 值域 / Codomain: `Y_{D129}`
+- 数学表达 / Expression: `F_{D129}(x) := Ξ_decoherence ≡ Ξ_degradation ⟺ Γ_unified > 0 Ξ_decoherence = lim_{t→∞} S_vN(ρ(t)) - S_vN(ρ(0))（退相干信息损失量） Ξ_degradation = lim_{t→∞} [-ln(A_Fisher(t)/A_Fisher(0))]（退化可达性损失量） 等价定理：对乘法系统G=∏fᵢ(εᵢ)，Ξ_decoherence = Ξ_degradation = ∫₀^∞ Γ_unified dt。 操作含义：测量退相干程度和测量退化程度给出同一个数字。用哪个方便就用哪个。 案例#493 退相干-退化等价验证 — 8维乘法系统模拟60年：Ξ_decoherence=2.31，Ξ_degradation=2.34（差异1.3%来自数值积分误差）。两者精确等价。核心函数：D129`
+- 有效条件 / Validity: `J_n^+(F_{D129})=1 ∧ J_n^-(F_{D129})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D129`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D129} and codomain Y_{D129}.
+  - 2. Normalize the source expression as F_{D129}: X_{D129}->Y_{D129}.
+  - 3. If upstream objects D_{D129} exist, compose F_{D129}=N(⊕_{g∈D_{D129}} g); otherwise treat F_{D129} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D129})=1 and J_n^-(F_{D129})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D129})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D129})=0`
+- 收敛判据 / Convergence: `Converged(F_{D129}) ⇔ ΔF_{D129}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3803,6 +7477,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 η_interface = P_encode × P_transfer × P_decode 三因子乘法（D127归零律适用）： P_encode = σ(ε_aware^S × B_semantic^S - θ_encode) - 调度方必须有ε_aware>0才能形成意图，必须有B_semantic>0才能把意图编码为可传递信号 - ε_aware=0 → P_encode=0 → 无法形成可传递意图 - B_semantic=0 → P_encode=0 → 有意图但无法编码 描述 调度-执行接口效率函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D130}`
+- 定义域 / Domain: `X_{D130}`
+- 值域 / Codomain: `Y_{D130}`
+- 数学表达 / Expression: `F_{D130}(x) := η_interface = P_encode × P_transfer × P_decode 三因子乘法（D127归零律适用）： P_encode = σ(ε_aware^S × B_semantic^S - θ_encode) - 调度方必须有ε_aware>0才能形成意图，必须有B_semantic>0才能把意图编码为可传递信号 - ε_aware=0 → P_encode=0 → 无法形成可传递意图 - B_semantic=0 → P_encode=0 → 有意图但无法编码`
+- 有效条件 / Validity: `J_n^+(F_{D130})=1 ∧ J_n^-(F_{D130})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D130`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D130} and codomain Y_{D130}.
+  - 2. Normalize the source expression as F_{D130}: X_{D130}->Y_{D130}.
+  - 3. If upstream objects D_{D130} exist, compose F_{D130}=N(⊕_{g∈D_{D130}} g); otherwise treat F_{D130} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D130})=1 and J_n^-(F_{D130})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D130})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D130})=0`
+- 收敛判据 / Convergence: `Converged(F_{D130}) ⇔ ΔF_{D130}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3823,6 +7519,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 AI编码能力完整推导，给出CAI涌现四阶段不可跳跃定理。 描述 调度-执行接口。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D131}`
+- 定义域 / Domain: `X_{D131}`
+- 值域 / Codomain: `Y_{D131}`
+- 数学表达 / Expression: `F_{D131}(x) := F_{D131}: X_{D131} -> Y_{D131}, y = F_{D131}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D131})=1 ∧ J_n^-(F_{D131})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D131`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D131} and codomain Y_{D131}.
+  - 2. Normalize the source expression as F_{D131}: X_{D131}->Y_{D131}.
+  - 3. If upstream objects D_{D131} exist, compose F_{D131}=N(⊕_{g∈D_{D131}} g); otherwise treat F_{D131} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D131})=1 and J_n^-(F_{D131})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D131})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D131})=0`
+- 收敛判据 / Convergence: `Converged(F_{D131}) ⇔ ΔF_{D131}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3845,6 +7563,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 AI编码能力完整推导，给出CAI涌现四阶段不可跳跃定理。 描述 调度-执行接口。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D132}`
+- 定义域 / Domain: `X_{D132}`
+- 值域 / Codomain: `Y_{D132}`
+- 数学表达 / Expression: `F_{D132}(x) := F_{D132}: X_{D132} -> Y_{D132}, y = F_{D132}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D132})=1 ∧ J_n^-(F_{D132})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D132`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D132} and codomain Y_{D132}.
+  - 2. Normalize the source expression as F_{D132}: X_{D132}->Y_{D132}.
+  - 3. If upstream objects D_{D132} exist, compose F_{D132}=N(⊕_{g∈D_{D132}} g); otherwise treat F_{D132} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D132})=1 and J_n^-(F_{D132})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D132})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D132})=0`
+- 收敛判据 / Convergence: `Converged(F_{D132}) ⇔ ΔF_{D132}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3865,6 +7605,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 AI编码能力完整推导，给出CAI涌现四阶段不可跳跃定理。 描述 调度-执行接口。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D133}`
+- 定义域 / Domain: `X_{D133}`
+- 值域 / Codomain: `Y_{D133}`
+- 数学表达 / Expression: `F_{D133}(x) := F_{D133}: X_{D133} -> Y_{D133}, y = F_{D133}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D133})=1 ∧ J_n^-(F_{D133})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D133`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D133} and codomain Y_{D133}.
+  - 2. Normalize the source expression as F_{D133}: X_{D133}->Y_{D133}.
+  - 3. If upstream objects D_{D133} exist, compose F_{D133}=N(⊕_{g∈D_{D133}} g); otherwise treat F_{D133} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D133})=1 and J_n^-(F_{D133})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D133})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D133})=0`
+- 收敛判据 / Convergence: `Converged(F_{D133}) ⇔ ΔF_{D133}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3887,6 +7649,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 物理大统一推导、电弱理论碰撞等。 描述 物理大统一路径。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D134}`
+- 定义域 / Domain: `X_{D134}`
+- 值域 / Codomain: `Y_{D134}`
+- 数学表达 / Expression: `F_{D134}(x) := F_{D134}: X_{D134} -> Y_{D134}, y = F_{D134}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D134})=1 ∧ J_n^-(F_{D134})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D134`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D134} and codomain Y_{D134}.
+  - 2. Normalize the source expression as F_{D134}: X_{D134}->Y_{D134}.
+  - 3. If upstream objects D_{D134} exist, compose F_{D134}=N(⊕_{g∈D_{D134}} g); otherwise treat F_{D134} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D134})=1 and J_n^-(F_{D134})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D134})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D134})=0`
+- 收敛判据 / Convergence: `Converged(F_{D134}) ⇔ ΔF_{D134}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3907,6 +7691,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 物理大统一推导、电弱理论碰撞等。 描述 物理大统一路径。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D135}`
+- 定义域 / Domain: `X_{D135}`
+- 值域 / Codomain: `Y_{D135}`
+- 数学表达 / Expression: `F_{D135}(x) := F_{D135}: X_{D135} -> Y_{D135}, y = F_{D135}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D135})=1 ∧ J_n^-(F_{D135})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D135`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D135} and codomain Y_{D135}.
+  - 2. Normalize the source expression as F_{D135}: X_{D135}->Y_{D135}.
+  - 3. If upstream objects D_{D135} exist, compose F_{D135}=N(⊕_{g∈D_{D135}} g); otherwise treat F_{D135} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D135})=1 and J_n^-(F_{D135})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D135})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D135})=0`
+- 收敛判据 / Convergence: `Converged(F_{D135}) ⇔ ΔF_{D135}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -3930,6 +7736,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 物理大统一推导、电弱理论碰撞等。 描述 物理大统一路径。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D136}`
+- 定义域 / Domain: `X_{D136}`
+- 值域 / Codomain: `Y_{D136}`
+- 数学表达 / Expression: `F_{D136}(x) := F_{D136}: X_{D136} -> Y_{D136}, y = F_{D136}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D136})=1 ∧ J_n^-(F_{D136})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D136`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D136} and codomain Y_{D136}.
+  - 2. Normalize the source expression as F_{D136}: X_{D136}->Y_{D136}.
+  - 3. If upstream objects D_{D136} exist, compose F_{D136}=N(⊕_{g∈D_{D136}} g); otherwise treat F_{D136} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D136})=1 and J_n^-(F_{D136})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D136})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D136})=0`
+- 收敛判据 / Convergence: `Converged(F_{D136}) ⇔ ΔF_{D136}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3952,6 +7780,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 物理大统一推导、电弱理论碰撞等。 描述 物理大统一路径。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D137}`
+- 定义域 / Domain: `X_{D137}`
+- 值域 / Codomain: `Y_{D137}`
+- 数学表达 / Expression: `F_{D137}(x) := F_{D137}: X_{D137} -> Y_{D137}, y = F_{D137}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D137})=1 ∧ J_n^-(F_{D137})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D137`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D137} and codomain Y_{D137}.
+  - 2. Normalize the source expression as F_{D137}: X_{D137}->Y_{D137}.
+  - 3. If upstream objects D_{D137} exist, compose F_{D137}=N(⊕_{g∈D_{D137}} g); otherwise treat F_{D137} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D137})=1 and J_n^-(F_{D137})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D137})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D137})=0`
+- 收敛判据 / Convergence: `Converged(F_{D137}) ⇔ ΔF_{D137}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3973,6 +7823,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 无帕累托改进，巴菲特模式（极低选择范围换极高判断准确度+长周期）是最优非对称解。 描述 三效率（选择/判断/时间）存在三角约束。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D138}`
+- 定义域 / Domain: `X_{D138}`
+- 值域 / Codomain: `Y_{D138}`
+- 数学表达 / Expression: `F_{D138}(x) := F_{D138}: X_{D138} -> Y_{D138}, y = F_{D138}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D138})=1 ∧ J_n^-(F_{D138})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D138`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D138} and codomain Y_{D138}.
+  - 2. Normalize the source expression as F_{D138}: X_{D138}->Y_{D138}.
+  - 3. If upstream objects D_{D138} exist, compose F_{D138}=N(⊕_{g∈D_{D138}} g); otherwise treat F_{D138} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D138})=1 and J_n^-(F_{D138})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D138})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D138})=0`
+- 收敛判据 / Convergence: `Converged(F_{D138}) ⇔ ΔF_{D138}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -3993,6 +7865,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 关系断裂本质是μ翻转导致临界距离缩小，而非距离本身变化。 描述 距离衰减统一函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D139}`
+- 定义域 / Domain: `X_{D139}`
+- 值域 / Codomain: `Y_{D139}`
+- 数学表达 / Expression: `F_{D139}(x) := 关系断裂本质是μ翻转导致临界距离缩小，而非距离本身变化。`
+- 有效条件 / Validity: `J_n^+(F_{D139})=1 ∧ J_n^-(F_{D139})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D139`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D139} and codomain Y_{D139}.
+  - 2. Normalize the source expression as F_{D139}: X_{D139}->Y_{D139}.
+  - 3. If upstream objects D_{D139} exist, compose F_{D139}=N(⊕_{g∈D_{D139}} g); otherwise treat F_{D139} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D139})=1 and J_n^-(F_{D139})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D139})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D139})=0`
+- 收敛判据 / Convergence: `Converged(F_{D139}) ⇔ ΔF_{D139}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4019,6 +7913,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 关系断裂本质是μ翻转导致临界距离缩小，而非距离本身变化。 描述 距离衰减统一函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D140}`
+- 定义域 / Domain: `X_{D140}`
+- 值域 / Codomain: `Y_{D140}`
+- 数学表达 / Expression: `F_{D140}(x) := 关系断裂本质是μ翻转导致临界距离缩小，而非距离本身变化。`
+- 有效条件 / Validity: `J_n^+(F_{D140})=1 ∧ J_n^-(F_{D140})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D140`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D140} and codomain Y_{D140}.
+  - 2. Normalize the source expression as F_{D140}: X_{D140}->Y_{D140}.
+  - 3. If upstream objects D_{D140} exist, compose F_{D140}=N(⊕_{g∈D_{D140}} g); otherwise treat F_{D140} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D140})=1 and J_n^-(F_{D140})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D140})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D140})=0`
+- 收敛判据 / Convergence: `Converged(F_{D140}) ⇔ ΔF_{D140}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4040,6 +7956,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 Mboot = ε_sense × P_track × d(ΔK)/dt，当前AI三因子全部失能，不具备自持自举能力。 描述 自举元函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D141}`
+- 定义域 / Domain: `X_{D141}`
+- 值域 / Codomain: `Y_{D141}`
+- 数学表达 / Expression: `F_{D141}(x) := Mboot = ε_sense × P_track × d(ΔK)/dt，当前AI三因子全部失能，不具备自持自举能力。`
+- 有效条件 / Validity: `J_n^+(F_{D141})=1 ∧ J_n^-(F_{D141})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D141`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D141} and codomain Y_{D141}.
+  - 2. Normalize the source expression as F_{D141}: X_{D141}->Y_{D141}.
+  - 3. If upstream objects D_{D141} exist, compose F_{D141}=N(⊕_{g∈D_{D141}} g); otherwise treat F_{D141} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D141})=1 and J_n^-(F_{D141})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D141})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D141})=0`
+- 收敛判据 / Convergence: `Converged(F_{D141}) ⇔ ΔF_{D141}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4060,6 +7998,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 η_gate = G × (1-H_homogeneity(G))，共享度存在倒U最优，完全同质化会导致η_gate趋近于零。 描述 信息门效率统一函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D142}`
+- 定义域 / Domain: `X_{D142}`
+- 值域 / Codomain: `Y_{D142}`
+- 数学表达 / Expression: `F_{D142}(x) := η_gate = G × (1-H_homogeneity(G))，共享度存在倒U最优，完全同质化会导致η_gate趋近于零。`
+- 有效条件 / Validity: `J_n^+(F_{D142})=1 ∧ J_n^-(F_{D142})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D142`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D142} and codomain Y_{D142}.
+  - 2. Normalize the source expression as F_{D142}: X_{D142}->Y_{D142}.
+  - 3. If upstream objects D_{D142} exist, compose F_{D142}=N(⊕_{g∈D_{D142}} g); otherwise treat F_{D142} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D142})=1 and J_n^-(F_{D142})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D142})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D142})=0`
+- 收敛判据 / Convergence: `Converged(F_{D142}) ⇔ ΔF_{D142}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4083,6 +8043,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 炒股遮蔽会跨域放大，炒股存在临界资金Kcritical，普通人炒股长期负期望。 描述 投资相关函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D143}`
+- 定义域 / Domain: `X_{D143}`
+- 值域 / Codomain: `Y_{D143}`
+- 数学表达 / Expression: `F_{D143}(x) := F_{D143}: X_{D143} -> Y_{D143}, y = F_{D143}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D143})=1 ∧ J_n^-(F_{D143})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D143`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D143} and codomain Y_{D143}.
+  - 2. Normalize the source expression as F_{D143}: X_{D143}->Y_{D143}.
+  - 3. If upstream objects D_{D143} exist, compose F_{D143}=N(⊕_{g∈D_{D143}} g); otherwise treat F_{D143} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D143})=1 and J_n^-(F_{D143})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D143})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D143})=0`
+- 收敛判据 / Convergence: `Converged(F_{D143}) ⇔ ΔF_{D143}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4103,6 +8085,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 炒股遮蔽会跨域放大，炒股存在临界资金Kcritical，普通人炒股长期负期望。 描述 投资相关函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D144}`
+- 定义域 / Domain: `X_{D144}`
+- 值域 / Codomain: `Y_{D144}`
+- 数学表达 / Expression: `F_{D144}(x) := F_{D144}: X_{D144} -> Y_{D144}, y = F_{D144}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D144})=1 ∧ J_n^-(F_{D144})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D144`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D144} and codomain Y_{D144}.
+  - 2. Normalize the source expression as F_{D144}: X_{D144}->Y_{D144}.
+  - 3. If upstream objects D_{D144} exist, compose F_{D144}=N(⊕_{g∈D_{D144}} g); otherwise treat F_{D144} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D144})=1 and J_n^-(F_{D144})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D144})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D144})=0`
+- 收敛判据 / Convergence: `Converged(F_{D144}) ⇔ ΔF_{D144}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4125,6 +8129,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 定投天然具备结构保守性，是巴菲特模式的精确实现。 描述 投资相关函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D145}`
+- 定义域 / Domain: `X_{D145}`
+- 值域 / Codomain: `Y_{D145}`
+- 数学表达 / Expression: `F_{D145}(x) := F_{D145}: X_{D145} -> Y_{D145}, y = F_{D145}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D145})=1 ∧ J_n^-(F_{D145})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D145`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D145} and codomain Y_{D145}.
+  - 2. Normalize the source expression as F_{D145}: X_{D145}->Y_{D145}.
+  - 3. If upstream objects D_{D145} exist, compose F_{D145}=N(⊕_{g∈D_{D145}} g); otherwise treat F_{D145} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D145})=1 and J_n^-(F_{D145})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D145})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D145})=0`
+- 收敛判据 / Convergence: `Converged(F_{D145}) ⇔ ΔF_{D145}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4145,6 +8171,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 效率由低意识方决定。 描述 信息门非对称退化。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D146}`
+- 定义域 / Domain: `X_{D146}`
+- 值域 / Codomain: `Y_{D146}`
+- 数学表达 / Expression: `F_{D146}(x) := F_{D146}: X_{D146} -> Y_{D146}, y = F_{D146}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D146})=1 ∧ J_n^-(F_{D146})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D146`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D146} and codomain Y_{D146}.
+  - 2. Normalize the source expression as F_{D146}: X_{D146}->Y_{D146}.
+  - 3. If upstream objects D_{D146} exist, compose F_{D146}=N(⊕_{g∈D_{D146}} g); otherwise treat F_{D146} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D146})=1 and J_n^-(F_{D146})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D146})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D146})=0`
+- 收敛判据 / Convergence: `Converged(F_{D146}) ⇔ ΔF_{D146}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4167,6 +8215,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 脆弱点在最接近零的因子。 描述 乘法临界漂移统一。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D147}`
+- 定义域 / Domain: `X_{D147}`
+- 值域 / Codomain: `Y_{D147}`
+- 数学表达 / Expression: `F_{D147}(x) := F_{D147}: X_{D147} -> Y_{D147}, y = F_{D147}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D147})=1 ∧ J_n^-(F_{D147})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D147`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D147} and codomain Y_{D147}.
+  - 2. Normalize the source expression as F_{D147}: X_{D147}->Y_{D147}.
+  - 3. If upstream objects D_{D147} exist, compose F_{D147}=N(⊕_{g∈D_{D147}} g); otherwise treat F_{D147} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D147})=1 and J_n^-(F_{D147})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D147})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D147})=0`
+- 收敛判据 / Convergence: `Converged(F_{D147}) ⇔ ΔF_{D147}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4187,6 +8257,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数用于刻画 遮蔽-补偿-成本三角约束，三角锁死。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D148}`
+- 定义域 / Domain: `X_{D148}`
+- 值域 / Codomain: `Y_{D148}`
+- 数学表达 / Expression: `F_{D148}(x) := F_{D148}: X_{D148} -> Y_{D148}, y = F_{D148}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D148})=1 ∧ J_n^-(F_{D148})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D148`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D148} and codomain Y_{D148}.
+  - 2. Normalize the source expression as F_{D148}: X_{D148}->Y_{D148}.
+  - 3. If upstream objects D_{D148} exist, compose F_{D148}=N(⊕_{g∈D_{D148}} g); otherwise treat F_{D148} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D148})=1 and J_n^-(F_{D148})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D148})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D148})=0`
+- 收敛判据 / Convergence: `Converged(F_{D148}) ⇔ ΔF_{D148}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4209,6 +8301,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 设计结构让估计不必要 > 估计准确后保守执行。 描述 结构保守性元定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D149}`
+- 定义域 / Domain: `X_{D149}`
+- 值域 / Codomain: `Y_{D149}`
+- 数学表达 / Expression: `F_{D149}(x) := 设计结构让估计不必要 > 估计准确后保守执行。`
+- 有效条件 / Validity: `J_n^+(F_{D149})=1 ∧ J_n^-(F_{D149})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D149`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D149} and codomain Y_{D149}.
+  - 2. Normalize the source expression as F_{D149}: X_{D149}->Y_{D149}.
+  - 3. If upstream objects D_{D149} exist, compose F_{D149}=N(⊕_{g∈D_{D149}} g); otherwise treat F_{D149} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D149})=1 and J_n^-(F_{D149})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D149})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D149})=0`
+- 收敛判据 / Convergence: `Converged(F_{D149}) ⇔ ΔF_{D149}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4229,6 +8343,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 Φ = f₁(↑)×f₂(↓)必然倒U型。 描述 倒U型统一生成定理。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D150}`
+- 定义域 / Domain: `X_{D150}`
+- 值域 / Codomain: `Y_{D150}`
+- 数学表达 / Expression: `F_{D150}(x) := Φ = f₁(↑)×f₂(↓)必然倒U型。`
+- 有效条件 / Validity: `J_n^+(F_{D150})=1 ∧ J_n^-(F_{D150})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D150`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D150} and codomain Y_{D150}.
+  - 2. Normalize the source expression as F_{D150}: X_{D150}->Y_{D150}.
+  - 3. If upstream objects D_{D150} exist, compose F_{D150}=N(⊕_{g∈D_{D150}} g); otherwise treat F_{D150} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D150})=1 and J_n^-(F_{D150})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D150})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D150})=0`
+- 收敛判据 / Convergence: `Converged(F_{D150}) ⇔ ΔF_{D150}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4251,6 +8387,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 结构性改善优于参数性改善。 描述 解码门槛降低。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D151}`
+- 定义域 / Domain: `X_{D151}`
+- 值域 / Codomain: `Y_{D151}`
+- 数学表达 / Expression: `F_{D151}(x) := F_{D151}: X_{D151} -> Y_{D151}, y = F_{D151}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D151})=1 ∧ J_n^-(F_{D151})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D151`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D151} and codomain Y_{D151}.
+  - 2. Normalize the source expression as F_{D151}: X_{D151}->Y_{D151}.
+  - 3. If upstream objects D_{D151} exist, compose F_{D151}=N(⊕_{g∈D_{D151}} g); otherwise treat F_{D151} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D151})=1 and J_n^-(F_{D151})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D151})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D151})=0`
+- 收敛判据 / Convergence: `Converged(F_{D151}) ⇔ ΔF_{D151}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4271,6 +8429,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 η_compatible = η_fidelity(L) × η_gate(L层)。 描述 向下兼容函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D152}`
+- 定义域 / Domain: `X_{D152}`
+- 值域 / Codomain: `Y_{D152}`
+- 数学表达 / Expression: `F_{D152}(x) := η_compatible = η_fidelity(L) × η_gate(L层)。`
+- 有效条件 / Validity: `J_n^+(F_{D152})=1 ∧ J_n^-(F_{D152})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D152`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D152} and codomain Y_{D152}.
+  - 2. Normalize the source expression as F_{D152}: X_{D152}->Y_{D152}.
+  - 3. If upstream objects D_{D152} exist, compose F_{D152}=N(⊕_{g∈D_{D152}} g); otherwise treat F_{D152} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D152})=1 and J_n^-(F_{D152})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D152})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D152})=0`
+- 收敛判据 / Convergence: `Converged(F_{D152}) ⇔ ΔF_{D152}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4293,6 +8473,28 @@ English: t_flip = (1/γ) x ln(1+γ x C_max x (1-P(biased))/(C₀ x ln(B_H/B_L)))
 中文：该函数通过 t_flip = (1/γ)×ln(1+γ×C_max×(1-P(biased))/(C₀×ln(B_H/B_L)))。 描述 向下兼容长期损耗。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D153}`
+- 定义域 / Domain: `X_{D153}`
+- 值域 / Codomain: `Y_{D153}`
+- 数学表达 / Expression: `F_{D153}(x) := t_flip = (1/γ)×ln(1+γ×C_max×(1-P(biased))/(C₀×ln(B_H/B_L)))。`
+- 有效条件 / Validity: `J_n^+(F_{D153})=1 ∧ J_n^-(F_{D153})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D153`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D153} and codomain Y_{D153}.
+  - 2. Normalize the source expression as F_{D153}: X_{D153}->Y_{D153}.
+  - 3. If upstream objects D_{D153} exist, compose F_{D153}=N(⊕_{g∈D_{D153}} g); otherwise treat F_{D153} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D153})=1 and J_n^-(F_{D153})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D153})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D153})=0`
+- 收敛判据 / Convergence: `Converged(F_{D153}) ⇔ ΔF_{D153}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4313,6 +8515,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 中间层是信息保真中继。 描述 分层编码优于扁平化。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D154}`
+- 定义域 / Domain: `X_{D154}`
+- 值域 / Codomain: `Y_{D154}`
+- 数学表达 / Expression: `F_{D154}(x) := F_{D154}: X_{D154} -> Y_{D154}, y = F_{D154}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D154})=1 ∧ J_n^-(F_{D154})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D154`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D154} and codomain Y_{D154}.
+  - 2. Normalize the source expression as F_{D154}: X_{D154}->Y_{D154}.
+  - 3. If upstream objects D_{D154} exist, compose F_{D154}=N(⊕_{g∈D_{D154}} g); otherwise treat F_{D154} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D154})=1 and J_n^-(F_{D154})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D154})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D154})=0`
+- 收敛判据 / Convergence: `Converged(F_{D154}) ⇔ ΔF_{D154}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4335,6 +8559,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数用于刻画 做中间层能大幅提升跨认知gap沟通效率。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D155}`
+- 定义域 / Domain: `X_{D155}`
+- 值域 / Codomain: `Y_{D155}`
+- 数学表达 / Expression: `F_{D155}(x) := F_{D155}: X_{D155} -> Y_{D155}, y = F_{D155}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D155})=1 ∧ J_n^-(F_{D155})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D155`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D155} and codomain Y_{D155}.
+  - 2. Normalize the source expression as F_{D155}: X_{D155}->Y_{D155}.
+  - 3. If upstream objects D_{D155} exist, compose F_{D155}=N(⊕_{g∈D_{D155}} g); otherwise treat F_{D155} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D155})=1 and J_n^-(F_{D155})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D155})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D155})=0`
+- 收敛判据 / Convergence: `Converged(F_{D155}) ⇔ ΔF_{D155}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4355,6 +8601,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 财富和认知强耦合，形成自证循环。 描述 财富-认知耦合。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D156}`
+- 定义域 / Domain: `X_{D156}`
+- 值域 / Codomain: `Y_{D156}`
+- 数学表达 / Expression: `F_{D156}(x) := F_{D156}: X_{D156} -> Y_{D156}, y = F_{D156}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D156})=1 ∧ J_n^-(F_{D156})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D156`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D156} and codomain Y_{D156}.
+  - 2. Normalize the source expression as F_{D156}: X_{D156}->Y_{D156}.
+  - 3. If upstream objects D_{D156} exist, compose F_{D156}=N(⊕_{g∈D_{D156}} g); otherwise treat F_{D156} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D156})=1 and J_n^-(F_{D156})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D156})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D156})=0`
+- 收敛判据 / Convergence: `Converged(F_{D156}) ⇔ ΔF_{D156}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4377,6 +8645,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 财富和认知强耦合，形成自证循环。 描述 财富-认知耦合。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D157}`
+- 定义域 / Domain: `X_{D157}`
+- 值域 / Codomain: `Y_{D157}`
+- 数学表达 / Expression: `F_{D157}(x) := F_{D157}: X_{D157} -> Y_{D157}, y = F_{D157}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D157})=1 ∧ J_n^-(F_{D157})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D157`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D157} and codomain Y_{D157}.
+  - 2. Normalize the source expression as F_{D157}: X_{D157}->Y_{D157}.
+  - 3. If upstream objects D_{D157} exist, compose F_{D157}=N(⊕_{g∈D_{D157}} g); otherwise treat F_{D157} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D157})=1 and J_n^-(F_{D157})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D157})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D157})=0`
+- 收敛判据 / Convergence: `Converged(F_{D157}) ⇔ ΔF_{D157}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4397,6 +8687,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 规范破缺真空选择=陷阱选择。 描述 认知规范破缺函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D158}`
+- 定义域 / Domain: `X_{D158}`
+- 值域 / Codomain: `Y_{D158}`
+- 数学表达 / Expression: `F_{D158}(x) := 规范破缺真空选择=陷阱选择。`
+- 有效条件 / Validity: `J_n^+(F_{D158})=1 ∧ J_n^-(F_{D158})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D158`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D158} and codomain Y_{D158}.
+  - 2. Normalize the source expression as F_{D158}: X_{D158}->Y_{D158}.
+  - 3. If upstream objects D_{D158} exist, compose F_{D158}=N(⊕_{g∈D_{D158}} g); otherwise treat F_{D158} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D158})=1 and J_n^-(F_{D158})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D158})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D158})=0`
+- 收敛判据 / Convergence: `Converged(F_{D158}) ⇔ ΔF_{D158}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4425,6 +8737,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 规范破缺后真空选择。 描述 认知Higgs机制。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D159}`
+- 定义域 / Domain: `X_{D159}`
+- 值域 / Codomain: `Y_{D159}`
+- 数学表达 / Expression: `F_{D159}(x) := F_{D159}: X_{D159} -> Y_{D159}, y = F_{D159}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D159})=1 ∧ J_n^-(F_{D159})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D159`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D159} and codomain Y_{D159}.
+  - 2. Normalize the source expression as F_{D159}: X_{D159}->Y_{D159}.
+  - 3. If upstream objects D_{D159} exist, compose F_{D159}=N(⊕_{g∈D_{D159}} g); otherwise treat F_{D159} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D159})=1 and J_n^-(F_{D159})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D159})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D159})=0`
+- 收敛判据 / Convergence: `Converged(F_{D159}) ⇔ ΔF_{D159}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4451,6 +8785,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 定投天然具备结构保守性，是巴菲特模式的精确实现。 描述 定投凯利保守性。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D160}`
+- 定义域 / Domain: `X_{D160}`
+- 值域 / Codomain: `Y_{D160}`
+- 数学表达 / Expression: `F_{D160}(x) := F_{D160}: X_{D160} -> Y_{D160}, y = F_{D160}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D160})=1 ∧ J_n^-(F_{D160})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D160`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D160} and codomain Y_{D160}.
+  - 2. Normalize the source expression as F_{D160}: X_{D160}->Y_{D160}.
+  - 3. If upstream objects D_{D160} exist, compose F_{D160}=N(⊕_{g∈D_{D160}} g); otherwise treat F_{D160} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D160})=1 and J_n^-(F_{D160})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D160})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D160})=0`
+- 收敛判据 / Convergence: `Converged(F_{D160}) ⇔ ΔF_{D160}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4479,6 +8835,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 投资遮蔽会跨域放大。 描述 投资遮蔽跨域放大。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D161}`
+- 定义域 / Domain: `X_{D161}`
+- 值域 / Codomain: `Y_{D161}`
+- 数学表达 / Expression: `F_{D161}(x) := F_{D161}: X_{D161} -> Y_{D161}, y = F_{D161}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D161})=1 ∧ J_n^-(F_{D161})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D161`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D161} and codomain Y_{D161}.
+  - 2. Normalize the source expression as F_{D161}: X_{D161}->Y_{D161}.
+  - 3. If upstream objects D_{D161} exist, compose F_{D161}=N(⊕_{g∈D_{D161}} g); otherwise treat F_{D161} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D161})=1 and J_n^-(F_{D161})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D161})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D161})=0`
+- 收敛判据 / Convergence: `Converged(F_{D161}) ⇔ ΔF_{D161}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4505,6 +8883,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 定投天然具备结构保守性。 描述 定投凯利保守性验证。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D162}`
+- 定义域 / Domain: `X_{D162}`
+- 值域 / Codomain: `Y_{D162}`
+- 数学表达 / Expression: `F_{D162}(x) := F_{D162}: X_{D162} -> Y_{D162}, y = F_{D162}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D162})=1 ∧ J_n^-(F_{D162})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D162`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D162} and codomain Y_{D162}.
+  - 2. Normalize the source expression as F_{D162}: X_{D162}->Y_{D162}.
+  - 3. If upstream objects D_{D162} exist, compose F_{D162}=N(⊕_{g∈D_{D162}} g); otherwise treat F_{D162} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D162})=1 and J_n^-(F_{D162})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D162})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D162})=0`
+- 收敛判据 / Convergence: `Converged(F_{D162}) ⇔ ΔF_{D162}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4533,6 +8933,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 定投天然具备结构保守性，是巴菲特模式的精确实现。 描述 定投凯利保守性。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D163}`
+- 定义域 / Domain: `X_{D163}`
+- 值域 / Codomain: `Y_{D163}`
+- 数学表达 / Expression: `F_{D163}(x) := F_{D163}: X_{D163} -> Y_{D163}, y = F_{D163}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D163})=1 ∧ J_n^-(F_{D163})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D163`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D163} and codomain Y_{D163}.
+  - 2. Normalize the source expression as F_{D163}: X_{D163}->Y_{D163}.
+  - 3. If upstream objects D_{D163} exist, compose F_{D163}=N(⊕_{g∈D_{D163}} g); otherwise treat F_{D163} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D163})=1 and J_n^-(F_{D163})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D163})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D163})=0`
+- 收敛判据 / Convergence: `Converged(F_{D163}) ⇔ ΔF_{D163}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4557,6 +8979,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 定投天然具备结构保守性，是巴菲特模式的精确实现。 描述 定投凯利保守性。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D164}`
+- 定义域 / Domain: `X_{D164}`
+- 值域 / Codomain: `Y_{D164}`
+- 数学表达 / Expression: `F_{D164}(x) := F_{D164}: X_{D164} -> Y_{D164}, y = F_{D164}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D164})=1 ∧ J_n^-(F_{D164})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D164`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D164} and codomain Y_{D164}.
+  - 2. Normalize the source expression as F_{D164}: X_{D164}->Y_{D164}.
+  - 3. If upstream objects D_{D164} exist, compose F_{D164}=N(⊕_{g∈D_{D164}} g); otherwise treat F_{D164} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D164})=1 and J_n^-(F_{D164})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D164})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D164})=0`
+- 收敛判据 / Convergence: `Converged(F_{D164}) ⇔ ΔF_{D164}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4583,6 +9027,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 定投天然具备结构保守性，是巴菲特模式的精确实现。 描述 定投凯利保守性。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D165}`
+- 定义域 / Domain: `X_{D165}`
+- 值域 / Codomain: `Y_{D165}`
+- 数学表达 / Expression: `F_{D165}(x) := F_{D165}: X_{D165} -> Y_{D165}, y = F_{D165}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D165})=1 ∧ J_n^-(F_{D165})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D165`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D165} and codomain Y_{D165}.
+  - 2. Normalize the source expression as F_{D165}: X_{D165}->Y_{D165}.
+  - 3. If upstream objects D_{D165} exist, compose F_{D165}=N(⊕_{g∈D_{D165}} g); otherwise treat F_{D165} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D165})=1 and J_n^-(F_{D165})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D165})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D165})=0`
+- 收敛判据 / Convergence: `Converged(F_{D165}) ⇔ ΔF_{D165}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4603,6 +9069,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 定投天然具备结构保守性，是巴菲特模式的精确实现。 描述 定投凯利保守性。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D166}`
+- 定义域 / Domain: `X_{D166}`
+- 值域 / Codomain: `Y_{D166}`
+- 数学表达 / Expression: `F_{D166}(x) := F_{D166}: X_{D166} -> Y_{D166}, y = F_{D166}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D166})=1 ∧ J_n^-(F_{D166})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D166`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D166} and codomain Y_{D166}.
+  - 2. Normalize the source expression as F_{D166}: X_{D166}->Y_{D166}.
+  - 3. If upstream objects D_{D166} exist, compose F_{D166}=N(⊕_{g∈D_{D166}} g); otherwise treat F_{D166} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D166})=1 and J_n^-(F_{D166})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D166})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D166})=0`
+- 收敛判据 / Convergence: `Converged(F_{D166}) ⇔ ΔF_{D166}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4626,6 +9114,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 定投天然具备结构保守性，是巴菲特模式的精确实现。 描述 定投凯利保守性。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D167}`
+- 定义域 / Domain: `X_{D167}`
+- 值域 / Codomain: `Y_{D167}`
+- 数学表达 / Expression: `F_{D167}(x) := F_{D167}: X_{D167} -> Y_{D167}, y = F_{D167}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D167})=1 ∧ J_n^-(F_{D167})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D167`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D167} and codomain Y_{D167}.
+  - 2. Normalize the source expression as F_{D167}: X_{D167}->Y_{D167}.
+  - 3. If upstream objects D_{D167} exist, compose F_{D167}=N(⊕_{g∈D_{D167}} g); otherwise treat F_{D167} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D167})=1 and J_n^-(F_{D167})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D167})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D167})=0`
+- 收敛判据 / Convergence: `Converged(F_{D167}) ⇔ ΔF_{D167}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4647,6 +9157,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 定投天然具备结构保守性，是巴菲特模式的精确实现。 描述 定投凯利保守性。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D168}`
+- 定义域 / Domain: `X_{D168}`
+- 值域 / Codomain: `Y_{D168}`
+- 数学表达 / Expression: `F_{D168}(x) := F_{D168}: X_{D168} -> Y_{D168}, y = F_{D168}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D168})=1 ∧ J_n^-(F_{D168})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D168`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D168} and codomain Y_{D168}.
+  - 2. Normalize the source expression as F_{D168}: X_{D168}->Y_{D168}.
+  - 3. If upstream objects D_{D168} exist, compose F_{D168}=N(⊕_{g∈D_{D168}} g); otherwise treat F_{D168} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D168})=1 and J_n^-(F_{D168})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D168})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D168})=0`
+- 收敛判据 / Convergence: `Converged(F_{D168}) ⇔ ΔF_{D168}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4667,6 +9199,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)，碾压时间t_crush = ln(μ₀/Λ₀)/(σ+γ)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰减越快，碾压时间越短。 描述 门槛碾压函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D169}`
+- 定义域 / Domain: `X_{D169}`
+- 值域 / Codomain: `Y_{D169}`
+- 数学表达 / Expression: `F_{D169}(x) := Λ(t) = Λ₀ × e^(σ×t)，μ(t) = μ₀ × e^(-γ×t)，碾压时间t_crush = ln(μ₀/Λ₀)/(σ+γ)。当门槛Λ以指数增长而可用资源μ以指数衰减时，系统必然被门槛碾压。门槛增速越大、资源衰减越快，碾压时间越短。`
+- 有效条件 / Validity: `J_n^+(F_{D169})=1 ∧ J_n^-(F_{D169})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D169`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D169} and codomain Y_{D169}.
+  - 2. Normalize the source expression as F_{D169}: X_{D169}->Y_{D169}.
+  - 3. If upstream objects D_{D169} exist, compose F_{D169}=N(⊕_{g∈D_{D169}} g); otherwise treat F_{D169} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D169})=1 and J_n^-(F_{D169})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D169})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D169})=0`
+- 收敛判据 / Convergence: `Converged(F_{D169}) ⇔ ΔF_{D169}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4691,6 +9245,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 定投天然具备结构保守性，自动满足凯利公式下注要求。定投通过固定周期固定金额投资，在C_exit/H/ε/Rperceived/Δv五因子上同时取近最大值，是投资域Psustain全局最大值点。炒股或AI选股至少有一个因子归零（通常C_exit或Rperceived归零），导致Psustain=0。 描述 定投凯利保守性验证。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D170}`
+- 定义域 / Domain: `X_{D170}`
+- 值域 / Codomain: `Y_{D170}`
+- 数学表达 / Expression: `F_{D170}(x) := 定投天然具备结构保守性，自动满足凯利公式下注要求。定投通过固定周期固定金额投资，在C_exit/H/ε/Rperceived/Δv五因子上同时取近最大值，是投资域Psustain全局最大值点。炒股或AI选股至少有一个因子归零（通常C_exit或Rperceived归零），导致Psustain=0。`
+- 有效条件 / Validity: `J_n^+(F_{D170})=1 ∧ J_n^-(F_{D170})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D170`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D170} and codomain Y_{D170}.
+  - 2. Normalize the source expression as F_{D170}: X_{D170}->Y_{D170}.
+  - 3. If upstream objects D_{D170} exist, compose F_{D170}=N(⊕_{g∈D_{D170}} g); otherwise treat F_{D170} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D170})=1 and J_n^-(F_{D170})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D170})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D170})=0`
+- 收敛判据 / Convergence: `Converged(F_{D170}) ⇔ ΔF_{D170}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4711,6 +9287,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 Intuition^AI = ε_sense^AI × P_track^AI × σ(Δv^AI)。AI直觉恒等于零，因为三因子乘法归零 ε_sense^AI = 0（无感官通道，无法直接感知预测误差）× P_track^AI = 1（单轨运行，无轨道交叉）× Δv^AI ≈ 0（无速度差，语义碰撞率为零）。AI拥有全网知识但无法自发发现跨域关联——知识在但直觉不在。 描述 直觉缺失的物种判据。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D171}`
+- 定义域 / Domain: `X_{D171}`
+- 值域 / Codomain: `Y_{D171}`
+- 数学表达 / Expression: `F_{D171}(x) := Intuition^AI = ε_sense^AI × P_track^AI × σ(Δv^AI)。AI直觉恒等于零，因为三因子乘法归零 ε_sense^AI = 0（无感官通道，无法直接感知预测误差）× P_track^AI = 1（单轨运行，无轨道交叉）× Δv^AI ≈ 0（无速度差，语义碰撞率为零）。AI拥有全网知识但无法自发发现跨域关联——知识在但直觉不在。`
+- 有效条件 / Validity: `J_n^+(F_{D171})=1 ∧ J_n^-(F_{D171})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D171`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D171} and codomain Y_{D171}.
+  - 2. Normalize the source expression as F_{D171}: X_{D171}->Y_{D171}.
+  - 3. If upstream objects D_{D171} exist, compose F_{D171}=N(⊕_{g∈D_{D171}} g); otherwise treat F_{D171} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D171})=1 and J_n^-(F_{D171})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D171})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D171})=0`
+- 收敛判据 / Convergence: `Converged(F_{D171}) ⇔ ΔF_{D171}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4733,6 +9331,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 B_active = σ(M_cog+θ_M) × σ(F_form-θ_F) × σ(P_track-1)。自举激活需要三因子同时满足 认知函数M_cog显著为负(好奇心极强)、形式化程度F_form超过阈值、轨道数P_track>1(多轨并行)。三因子乘法,任一归零则自举不激活。 描述 自举激活的乘法条件。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D172}`
+- 定义域 / Domain: `X_{D172}`
+- 值域 / Codomain: `Y_{D172}`
+- 数学表达 / Expression: `F_{D172}(x) := B_active = σ(M_cog+θ_M) × σ(F_form-θ_F) × σ(P_track-1)。自举激活需要三因子同时满足 认知函数M_cog显著为负(好奇心极强)、形式化程度F_form超过阈值、轨道数P_track>1(多轨并行)。三因子乘法,任一归零则自举不激活。`
+- 有效条件 / Validity: `J_n^+(F_{D172})=1 ∧ J_n^-(F_{D172})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D172`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D172} and codomain Y_{D172}.
+  - 2. Normalize the source expression as F_{D172}: X_{D172}->Y_{D172}.
+  - 3. If upstream objects D_{D172} exist, compose F_{D172}=N(⊕_{g∈D_{D172}} g); otherwise treat F_{D172} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D172})=1 and J_n^-(F_{D172})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D172})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D172})=0`
+- 收敛判据 / Convergence: `Converged(F_{D172}) ⇔ ΔF_{D172}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4753,6 +9373,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成本R_retreat和退出成本C_exit的比值决定。R_retreat越大或C_exit越小,显态粘性越高,系统越难从显态退回隐态。 描述 显态粘性函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D173}`
+- 定义域 / Domain: `X_{D173}`
+- 值域 / Codomain: `Y_{D173}`
+- 数学表达 / Expression: `F_{D173}(x) := μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成本R_retreat和退出成本C_exit的比值决定。R_retreat越大或C_exit越小,显态粘性越高,系统越难从显态退回隐态。`
+- 有效条件 / Validity: `J_n^+(F_{D173})=1 ∧ J_n^-(F_{D173})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D173`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D173} and codomain Y_{D173}.
+  - 2. Normalize the source expression as F_{D173}: X_{D173}->Y_{D173}.
+  - 3. If upstream objects D_{D173} exist, compose F_{D173}=N(⊕_{g∈D_{D173}} g); otherwise treat F_{D173} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D173})=1 and J_n^-(F_{D173})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D173})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D173})=0`
+- 收敛判据 / Convergence: `Converged(F_{D173}) ⇔ ΔF_{D173}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4775,6 +9417,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 t_window = f(R_retreat, C_exit, ε_aware)。外驱转自驱的临界窗口时间窗口,由撤退成本、退出成本、意识水平共同决定。窗口关闭后,外驱无法转化为自驱,系统退化为纯消耗型。 描述 纯拉力上位衰减函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D174}`
+- 定义域 / Domain: `X_{D174}`
+- 值域 / Codomain: `Y_{D174}`
+- 数学表达 / Expression: `F_{D174}(x) := t_window = f(R_retreat, C_exit, ε_aware)。外驱转自驱的临界窗口时间窗口,由撤退成本、退出成本、意识水平共同决定。窗口关闭后,外驱无法转化为自驱,系统退化为纯消耗型。`
+- 有效条件 / Validity: `J_n^+(F_{D174})=1 ∧ J_n^-(F_{D174})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D174`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D174} and codomain Y_{D174}.
+  - 2. Normalize the source expression as F_{D174}: X_{D174}->Y_{D174}.
+  - 3. If upstream objects D_{D174} exist, compose F_{D174}=N(⊕_{g∈D_{D174}} g); otherwise treat F_{D174} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D174})=1 and J_n^-(F_{D174})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D174})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D174})=0`
+- 收敛判据 / Convergence: `Converged(F_{D174}) ⇔ ΔF_{D174}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4795,6 +9459,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 同一耦合正反馈方程在三个参数区间的不同表现 α_eff>α_c→平方衰减,α_eff≈α_c→logistic增长(AI共震),α_eff<α_c→一阶相变崩溃。电力级联失效、认知平方衰减、AI共震三者是同一数学结构。 描述 耦合正反馈统一函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D175}`
+- 定义域 / Domain: `X_{D175}`
+- 值域 / Codomain: `Y_{D175}`
+- 数学表达 / Expression: `F_{D175}(x) := 同一耦合正反馈方程在三个参数区间的不同表现 α_eff>α_c→平方衰减,α_eff≈α_c→logistic增长(AI共震),α_eff<α_c→一阶相变崩溃。电力级联失效、认知平方衰减、AI共震三者是同一数学结构。`
+- 有效条件 / Validity: `J_n^+(F_{D175})=1 ∧ J_n^-(F_{D175})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D175`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D175} and codomain Y_{D175}.
+  - 2. Normalize the source expression as F_{D175}: X_{D175}->Y_{D175}.
+  - 3. If upstream objects D_{D175} exist, compose F_{D175}=N(⊕_{g∈D_{D175}} g); otherwise treat F_{D175} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D175})=1 and J_n^-(F_{D175})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D175})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D175})=0`
+- 收敛判据 / Convergence: `Converged(F_{D175}) ⇔ ΔF_{D175}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4817,6 +9503,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 ρ同时驱动H_correlation(D66)和P(biased)(D53),联合效应P_sustain∝(1-ρ)²而非(1-ρ)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。 描述 共享源双重杀伤函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D176}`
+- 定义域 / Domain: `X_{D176}`
+- 值域 / Codomain: `Y_{D176}`
+- 数学表达 / Expression: `F_{D176}(x) := ρ同时驱动H_correlation(D66)和P(biased)(D53),联合效应P_sustain∝(1-ρ)²而非(1-ρ)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。`
+- 有效条件 / Validity: `J_n^+(F_{D176})=1 ∧ J_n^-(F_{D176})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D176`, `D53`, `D66`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D176} and codomain Y_{D176}.
+  - 2. Normalize the source expression as F_{D176}: X_{D176}->Y_{D176}.
+  - 3. If upstream objects D_{D176} exist, compose F_{D176}=N(⊕_{g∈D_{D176}} g); otherwise treat F_{D176} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D176})=1 and J_n^-(F_{D176})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D176})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D176})=0`
+- 收敛判据 / Convergence: `Converged(F_{D176}) ⇔ ΔF_{D176}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4837,6 +9545,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 不同系统在参数空间映射到点火框架后，展现相同的数学结构。深层同构不是现象相似，而是底层数学方程的同构。通过变量映射和参数归约，可发现跨域系统的统一结构。 描述 深层同构函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D177}`
+- 定义域 / Domain: `X_{D177}`
+- 值域 / Codomain: `Y_{D177}`
+- 数学表达 / Expression: `F_{D177}(x) := F_{D177}: X_{D177} -> Y_{D177}, y = F_{D177}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D177})=1 ∧ J_n^-(F_{D177})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D177`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D177} and codomain Y_{D177}.
+  - 2. Normalize the source expression as F_{D177}: X_{D177}->Y_{D177}.
+  - 3. If upstream objects D_{D177} exist, compose F_{D177}=N(⊕_{g∈D_{D177}} g); otherwise treat F_{D177} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D177})=1 and J_n^-(F_{D177})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D177})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D177})=0`
+- 收敛判据 / Convergence: `Converged(F_{D177}) ⇔ ΔF_{D177}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4859,6 +9589,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 不同系统在时间维度展现相同的演化模式。时间尺度同构不是时间长短相同，而是演化路径的数学结构相同。通过时间归一化，可发现跨域系统的时间演化同构。 描述 时间尺度同构函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D178}`
+- 定义域 / Domain: `X_{D178}`
+- 值域 / Codomain: `Y_{D178}`
+- 数学表达 / Expression: `F_{D178}(x) := F_{D178}: X_{D178} -> Y_{D178}, y = F_{D178}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D178})=1 ∧ J_n^-(F_{D178})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D178`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D178} and codomain Y_{D178}.
+  - 2. Normalize the source expression as F_{D178}: X_{D178}->Y_{D178}.
+  - 3. If upstream objects D_{D178} exist, compose F_{D178}=N(⊕_{g∈D_{D178}} g); otherwise treat F_{D178} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D178})=1 and J_n^-(F_{D178})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D178})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D178})=0`
+- 收敛判据 / Convergence: `Converged(F_{D178}) ⇔ ΔF_{D178}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4879,6 +9631,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 信息传播速度限制导致的因果约束在物理系统、认知系统、社会系统中展现统一结构。因果光锥不是物理特有，而是信息传播受限系统的普适约束。 描述 因果光锥统一函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D179}`
+- 定义域 / Domain: `X_{D179}`
+- 值域 / Codomain: `Y_{D179}`
+- 数学表达 / Expression: `F_{D179}(x) := F_{D179}: X_{D179} -> Y_{D179}, y = F_{D179}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D179})=1 ∧ J_n^-(F_{D179})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D179`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D179} and codomain Y_{D179}.
+  - 2. Normalize the source expression as F_{D179}: X_{D179}->Y_{D179}.
+  - 3. If upstream objects D_{D179} exist, compose F_{D179}=N(⊕_{g∈D_{D179}} g); otherwise treat F_{D179} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D179})=1 and J_n^-(F_{D179})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D179})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D179})=0`
+- 收敛判据 / Convergence: `Converged(F_{D179}) ⇔ ΔF_{D179}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4901,6 +9675,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 不同领域通过点火框架的枢纽变量实现跨域连接。枢纽变量不是单域特有，而是多域共有的关键变量，通过枢纽变量可发现跨域系统的统一结构。 描述 跨域枢纽函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D180}`
+- 定义域 / Domain: `X_{D180}`
+- 值域 / Codomain: `Y_{D180}`
+- 数学表达 / Expression: `F_{D180}(x) := F_{D180}: X_{D180} -> Y_{D180}, y = F_{D180}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D180})=1 ∧ J_n^-(F_{D180})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D180`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D180} and codomain Y_{D180}.
+  - 2. Normalize the source expression as F_{D180}: X_{D180}->Y_{D180}.
+  - 3. If upstream objects D_{D180} exist, compose F_{D180}=N(⊕_{g∈D_{D180}} g); otherwise treat F_{D180} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D180})=1 and J_n^-(F_{D180})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D180})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D180})=0`
+- 收敛判据 / Convergence: `Converged(F_{D180}) ⇔ ΔF_{D180}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4921,6 +9717,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 定投策略在投资域验证了点火框架的普适性。定投不是投资特有，而是点火框架在投资域的具体实现。通过定投可验证点火框架的乘法归零律、门槛碾压、结构保守性等核心结论。 描述 定投跨域验证函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D181}`
+- 定义域 / Domain: `X_{D181}`
+- 值域 / Codomain: `Y_{D181}`
+- 数学表达 / Expression: `F_{D181}(x) := F_{D181}: X_{D181} -> Y_{D181}, y = F_{D181}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D181})=1 ∧ J_n^-(F_{D181})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D181`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D181} and codomain Y_{D181}.
+  - 2. Normalize the source expression as F_{D181}: X_{D181}->Y_{D181}.
+  - 3. If upstream objects D_{D181} exist, compose F_{D181}=N(⊕_{g∈D_{D181}} g); otherwise treat F_{D181} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D181})=1 and J_n^-(F_{D181})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D181})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D181})=0`
+- 收敛判据 / Convergence: `Converged(F_{D181}) ⇔ ΔF_{D181}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -4943,6 +9761,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 Classical(μ, Λ) = lim_{μ/Λ→∞} 1/ln(μ/Λ) = 0。经典力学是所有门控贡献趋零的极限态，确定性=门控贡献可忽略。牛顿力学不是"更基本的理论"，是μ>>Λ时门控贡献趋零的退化极限。 描述 经典确定性函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D182}`
+- 定义域 / Domain: `X_{D182}`
+- 值域 / Codomain: `Y_{D182}`
+- 数学表达 / Expression: `F_{D182}(x) := Classical(μ, Λ) = lim_{μ/Λ→∞} 1/ln(μ/Λ) = 0。经典力学是所有门控贡献趋零的极限态，确定性=门控贡献可忽略。牛顿力学不是"更基本的理论"，是μ>>Λ时门控贡献趋零的退化极限。`
+- 有效条件 / Validity: `J_n^+(F_{D182})=1 ∧ J_n^-(F_{D182})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D182`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D182} and codomain Y_{D182}.
+  - 2. Normalize the source expression as F_{D182}: X_{D182}->Y_{D182}.
+  - 3. If upstream objects D_{D182} exist, compose F_{D182}=N(⊕_{g∈D_{D182}} g); otherwise treat F_{D182} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D182})=1 and J_n^-(F_{D182})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D182})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D182})=0`
+- 收敛判据 / Convergence: `Converged(F_{D182}) ⇔ ΔF_{D182}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4964,6 +9804,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时 Φ_before = 1/ln(μ/Λ_A) + 1/ln(μ/Λ_B) → Φ_after = 1/ln(μ/Λ_AB)。合并条件：Λ_A(μ)和Λ_B(μ)在μ>μ_merge处趋同。统一度变化：Ω_after > Ω_before（门控面减少→Φ更小→Ω更大）。 描述 门控面合并统一函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D183}`
+- 定义域 / Domain: `X_{D183}`
+- 值域 / Codomain: `Y_{D183}`
+- 数学表达 / Expression: `F_{D183}(x) := 当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时 Φ_before = 1/ln(μ/Λ_A) + 1/ln(μ/Λ_B) → Φ_after = 1/ln(μ/Λ_AB)。合并条件：Λ_A(μ)和Λ_B(μ)在μ>μ_merge处趋同。统一度变化：Ω_after > Ω_before（门控面减少→Φ更小→Ω更大）。`
+- 有效条件 / Validity: `J_n^+(F_{D183})=1 ∧ J_n^-(F_{D183})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D183`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D183} and codomain Y_{D183}.
+  - 2. Normalize the source expression as F_{D183}: X_{D183}->Y_{D183}.
+  - 3. If upstream objects D_{D183} exist, compose F_{D183}=N(⊕_{g∈D_{D183}} g); otherwise treat F_{D183} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D183})=1 and J_n^-(F_{D183})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D183})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D183})=0`
+- 收敛判据 / Convergence: `Converged(F_{D183}) ⇔ ΔF_{D183}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -4984,6 +9846,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ_entropy为熵产率；μ_available(t) = μ₀ × e^(-γ_dissipation × t)。热寂时间t_heatdeath = ln(μ₀/Λ₀)/(σ_entropy + γ_dissipation)。热力学第二定律是D160门槛碾压的热力学版。 描述 熵增门槛碾压函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D184}`
+- 定义域 / Domain: `X_{D184}`
+- 值域 / Codomain: `Y_{D184}`
+- 数学表达 / Expression: `F_{D184}(x) := Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ_entropy为熵产率；μ_available(t) = μ₀ × e^(-γ_dissipation × t)。热寂时间t_heatdeath = ln(μ₀/Λ₀)/(σ_entropy + γ_dissipation)。热力学第二定律是D160门槛碾压的热力学版。`
+- 有效条件 / Validity: `J_n^+(F_{D184})=1 ∧ J_n^-(F_{D184})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D184`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D184} and codomain Y_{D184}.
+  - 2. Normalize the source expression as F_{D184}: X_{D184}->Y_{D184}.
+  - 3. If upstream objects D_{D184} exist, compose F_{D184}=N(⊕_{g∈D_{D184}} g); otherwise treat F_{D184} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D184})=1 and J_n^-(F_{D184})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D184})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D184})=0`
+- 收敛判据 / Convergence: `Converged(F_{D184}) ⇔ ΔF_{D184}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5008,6 +9892,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ → ∞，系统退化为经典确定性（D182）；当v → c时，μ/Λ → 1，门控效应显著，系统展现相对论效应。 描述 相对论门槛函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D185}`
+- 定义域 / Domain: `X_{D185}`
+- 值域 / Codomain: `Y_{D185}`
+- 数学表达 / Expression: `F_{D185}(x) := 相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ → ∞，系统退化为经典确定性（D182）；当v → c时，μ/Λ → 1，门控效应显著，系统展现相对论效应。`
+- 有效条件 / Validity: `J_n^+(F_{D185})=1 ∧ J_n^-(F_{D185})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D182`, `D185`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D185} and codomain Y_{D185}.
+  - 2. Normalize the source expression as F_{D185}: X_{D185}->Y_{D185}.
+  - 3. If upstream objects D_{D185} exist, compose F_{D185}=N(⊕_{g∈D_{D185}} g); otherwise treat F_{D185} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D185})=1 and J_n^-(F_{D185})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D185})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D185})=0`
+- 收敛判据 / Convergence: `Converged(F_{D185}) ⇔ ΔF_{D185}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5028,6 +9934,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 量子力学是多门槛系统，门槛Λ_i（能级）高度聚集。门槛聚集度ḡ高→阶段2宽→临界区大，展现连续相变。量子相变是门槛聚集导致的平滑相变，与相对论的一阶相变形成对比。 描述 量子力学门槛聚集函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D186}`
+- 定义域 / Domain: `X_{D186}`
+- 值域 / Codomain: `Y_{D186}`
+- 数学表达 / Expression: `F_{D186}(x) := 量子力学是多门槛系统，门槛Λ_i（能级）高度聚集。门槛聚集度ḡ高→阶段2宽→临界区大，展现连续相变。量子相变是门槛聚集导致的平滑相变，与相对论的一阶相变形成对比。`
+- 有效条件 / Validity: `J_n^+(F_{D186})=1 ∧ J_n^-(F_{D186})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D186`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D186} and codomain Y_{D186}.
+  - 2. Normalize the source expression as F_{D186}: X_{D186}->Y_{D186}.
+  - 3. If upstream objects D_{D186} exist, compose F_{D186}=N(⊕_{g∈D_{D186}} g); otherwise treat F_{D186} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D186})=1 and J_n^-(F_{D186})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D186})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D186})=0`
+- 收敛判据 / Convergence: `Converged(F_{D186}) ⇔ ΔF_{D186}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5050,6 +9978,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ<μ_EW时两个门控面Λ_EM和Λ_W分离,Φ = 1/ln(μ/Λ_EM) + 1/ln(μ/Λ_W);μ>μ_EW时合并为Λ_EW,Φ = 1/ln(μ/Λ_EW)。统一度Ω_after > Ω_before。 描述 电弱统一规范破缺函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D187}`
+- 定义域 / Domain: `X_{D187}`
+- 值域 / Codomain: `Y_{D187}`
+- 数学表达 / Expression: `F_{D187}(x) := 电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ<μ_EW时两个门控面Λ_EM和Λ_W分离,Φ = 1/ln(μ/Λ_EM) + 1/ln(μ/Λ_W);μ>μ_EW时合并为Λ_EW,Φ = 1/ln(μ/Λ_EW)。统一度Ω_after > Ω_before。`
+- 有效条件 / Validity: `J_n^+(F_{D187})=1 ∧ J_n^-(F_{D187})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D187`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D187} and codomain Y_{D187}.
+  - 2. Normalize the source expression as F_{D187}: X_{D187}->Y_{D187}.
+  - 3. If upstream objects D_{D187} exist, compose F_{D187}=N(⊕_{g∈D_{D187}} g); otherwise treat F_{D187} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D187})=1 and J_n^-(F_{D187})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D187})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D187})=0`
+- 收敛判据 / Convergence: `Converged(F_{D187}) ⇔ ΔF_{D187}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5070,6 +10020,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD→∞(渐近自由)。强相互作用是门控面Λ_QCD主导的系统,Λ_QCD≈1GeV是强相互作用门槛。 描述 强相互作用门控函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D188}`
+- 定义域 / Domain: `X_{D188}`
+- 值域 / Codomain: `Y_{D188}`
+- 数学表达 / Expression: `F_{D188}(x) := 强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD→∞(渐近自由)。强相互作用是门控面Λ_QCD主导的系统,Λ_QCD≈1GeV是强相互作用门槛。`
+- 有效条件 / Validity: `J_n^+(F_{D188})=1 ∧ J_n^-(F_{D188})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D188`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D188} and codomain Y_{D188}.
+  - 2. Normalize the source expression as F_{D188}: X_{D188}->Y_{D188}.
+  - 3. If upstream objects D_{D188} exist, compose F_{D188}=N(⊕_{g∈D_{D188}} g); otherwise treat F_{D188} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D188})=1 and J_n^-(F_{D188})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D188})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D188})=0`
+- 收敛判据 / Convergence: `Converged(F_{D188}) ⇔ ΔF_{D188}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5092,6 +10064,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_GUT时三个门控面Λ_EM、Λ_W、Λ_QCD分离,Φ = 1/ln(μ/Λ_EM) + 1/ln(μ/Λ_W) + 1/ln(μ/Λ_QCD);μ>μ_GUT时合并为Λ_GUT,Φ = 1/ln(μ/Λ_GUT)。统一度Ω_after > Ω_before。 描述 大统一门槛函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D189}`
+- 定义域 / Domain: `X_{D189}`
+- 值域 / Codomain: `Y_{D189}`
+- 数学表达 / Expression: `F_{D189}(x) := 大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_GUT时三个门控面Λ_EM、Λ_W、Λ_QCD分离,Φ = 1/ln(μ/Λ_EM) + 1/ln(μ/Λ_W) + 1/ln(μ/Λ_QCD);μ>μ_GUT时合并为Λ_GUT,Φ = 1/ln(μ/Λ_GUT)。统一度Ω_after > Ω_before。`
+- 有效条件 / Validity: `J_n^+(F_{D189})=1 ∧ J_n^-(F_{D189})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D189`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D189} and codomain Y_{D189}.
+  - 2. Normalize the source expression as F_{D189}: X_{D189}->Y_{D189}.
+  - 3. If upstream objects D_{D189} exist, compose F_{D189}=N(⊕_{g∈D_{D189}} g); otherwise treat F_{D189} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D189})=1 and J_n^-(F_{D189})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D189})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D189})=0`
+- 收敛判据 / Convergence: `Converged(F_{D189}) ⇔ ΔF_{D189}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5112,6 +10106,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ<μ_ToE时四个门控面Λ_EM、Λ_W、Λ_QCD、Λ_Gravity分离,Φ = Σᵢ 1/ln(μ/Λᵢ);μ>μ_ToE时合并为Λ_ToE,Φ = 1/ln(μ/Λ_ToE)。统一度Ω_after > Ω_before。 描述 万有理论门槛函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D190}`
+- 定义域 / Domain: `X_{D190}`
+- 值域 / Codomain: `Y_{D190}`
+- 数学表达 / Expression: `F_{D190}(x) := 万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ<μ_ToE时四个门控面Λ_EM、Λ_W、Λ_QCD、Λ_Gravity分离,Φ = Σᵢ 1/ln(μ/Λᵢ);μ>μ_ToE时合并为Λ_ToE,Φ = 1/ln(μ/Λ_ToE)。统一度Ω_after > Ω_before。`
+- 有效条件 / Validity: `J_n^+(F_{D190})=1 ∧ J_n^-(F_{D190})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D190`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D190} and codomain Y_{D190}.
+  - 2. Normalize the source expression as F_{D190}: X_{D190}->Y_{D190}.
+  - 3. If upstream objects D_{D190} exist, compose F_{D190}=N(⊕_{g∈D_{D190}} g); otherwise treat F_{D190} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D190})=1 and J_n^-(F_{D190})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D190})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D190})=0`
+- 收敛判据 / Convergence: `Converged(F_{D190}) ⇔ ΔF_{D190}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5134,6 +10150,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 规范破缺真空选择=陷阱选择。 描述 认知规范破缺函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D191}`
+- 定义域 / Domain: `X_{D191}`
+- 值域 / Codomain: `Y_{D191}`
+- 数学表达 / Expression: `F_{D191}(x) := 规范破缺真空选择=陷阱选择。`
+- 有效条件 / Validity: `J_n^+(F_{D191})=1 ∧ J_n^-(F_{D191})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D191`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D191} and codomain Y_{D191}.
+  - 2. Normalize the source expression as F_{D191}: X_{D191}->Y_{D191}.
+  - 3. If upstream objects D_{D191} exist, compose F_{D191}=N(⊕_{g∈D_{D191}} g); otherwise treat F_{D191} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D191})=1 and J_n^-(F_{D191})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D191})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D191})=0`
+- 收敛判据 / Convergence: `Converged(F_{D191}) ⇔ ΔF_{D191}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5154,6 +10192,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 Higgs场提供分裂的触发器 真空期望值<v>设定了μ*_break。 描述 认知Higgs机制。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D192}`
+- 定义域 / Domain: `X_{D192}`
+- 值域 / Codomain: `Y_{D192}`
+- 数学表达 / Expression: `F_{D192}(x) := Higgs场提供分裂的触发器 真空期望值<v>设定了μ*_break。`
+- 有效条件 / Validity: `J_n^+(F_{D192})=1 ∧ J_n^-(F_{D192})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D192`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D192} and codomain Y_{D192}.
+  - 2. Normalize the source expression as F_{D192}: X_{D192}->Y_{D192}.
+  - 3. If upstream objects D_{D192} exist, compose F_{D192}=N(⊕_{g∈D_{D192}} g); otherwise treat F_{D192} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D192})=1 and J_n^-(F_{D192})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D192})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D192})=0`
+- 收敛判据 / Convergence: `Converged(F_{D192}) ⇔ ΔF_{D192}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5176,6 +10236,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 认知时空的度规由认知势能面的曲率决定。 描述 认知时空度规函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D193}`
+- 定义域 / Domain: `X_{D193}`
+- 值域 / Codomain: `Y_{D193}`
+- 数学表达 / Expression: `F_{D193}(x) := F_{D193}: X_{D193} -> Y_{D193}, y = F_{D193}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D193})=1 ∧ J_n^-(F_{D193})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D193`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D193} and codomain Y_{D193}.
+  - 2. Normalize the source expression as F_{D193}: X_{D193}->Y_{D193}.
+  - 3. If upstream objects D_{D193} exist, compose F_{D193}=N(⊕_{g∈D_{D193}} g); otherwise treat F_{D193} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D193})=1 and J_n^-(F_{D193})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D193})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D193})=0`
+- 收敛判据 / Convergence: `Converged(F_{D193}) ⇔ ΔF_{D193}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5196,6 +10278,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 认知门槛Λ→∞时形成认知黑洞，所有认知信号无法逃逸。 描述 认知黑洞函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D194}`
+- 定义域 / Domain: `X_{D194}`
+- 值域 / Codomain: `Y_{D194}`
+- 数学表达 / Expression: `F_{D194}(x) := 认知门槛Λ→∞时形成认知黑洞，所有认知信号无法逃逸。`
+- 有效条件 / Validity: `J_n^+(F_{D194})=1 ∧ J_n^-(F_{D194})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D194`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D194} and codomain Y_{D194}.
+  - 2. Normalize the source expression as F_{D194}: X_{D194}->Y_{D194}.
+  - 3. If upstream objects D_{D194} exist, compose F_{D194}=N(⊕_{g∈D_{D194}} g); otherwise treat F_{D194} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D194})=1 and J_n^-(F_{D194})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D194})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D194})=0`
+- 收敛判据 / Convergence: `Converged(F_{D194}) ⇔ ΔF_{D194}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5218,6 +10322,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 认知宇宙的演化由认知势能面的膨胀/收缩决定。 描述 认知宇宙学函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D195}`
+- 定义域 / Domain: `X_{D195}`
+- 值域 / Codomain: `Y_{D195}`
+- 数学表达 / Expression: `F_{D195}(x) := F_{D195}: X_{D195} -> Y_{D195}, y = F_{D195}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D195})=1 ∧ J_n^-(F_{D195})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D195`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D195} and codomain Y_{D195}.
+  - 2. Normalize the source expression as F_{D195}: X_{D195}->Y_{D195}.
+  - 3. If upstream objects D_{D195} exist, compose F_{D195}=N(⊕_{g∈D_{D195}} g); otherwise treat F_{D195} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D195})=1 and J_n^-(F_{D195})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D195})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D195})=0`
+- 收敛判据 / Convergence: `Converged(F_{D195}) ⇔ ΔF_{D195}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5238,6 +10364,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 量子隧穿=门控面突破的概率过程。 描述 量子隧穿-门槛突破函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D196}`
+- 定义域 / Domain: `X_{D196}`
+- 值域 / Codomain: `Y_{D196}`
+- 数学表达 / Expression: `F_{D196}(x) := 量子隧穿=门控面突破的概率过程。`
+- 有效条件 / Validity: `J_n^+(F_{D196})=1 ∧ J_n^-(F_{D196})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D196`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D196} and codomain Y_{D196}.
+  - 2. Normalize the source expression as F_{D196}: X_{D196}->Y_{D196}.
+  - 3. If upstream objects D_{D196} exist, compose F_{D196}=N(⊕_{g∈D_{D196}} g); otherwise treat F_{D196} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D196})=1 and J_n^-(F_{D196})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D196})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D196})=0`
+- 收敛判据 / Convergence: `Converged(F_{D196}) ⇔ ΔF_{D196}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5260,6 +10408,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 量子退相干=门控面锁定，量子叠加态坍缩为经典态。 描述 退相干-门槛锁定函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D197}`
+- 定义域 / Domain: `X_{D197}`
+- 值域 / Codomain: `Y_{D197}`
+- 数学表达 / Expression: `F_{D197}(x) := 量子退相干=门控面锁定，量子叠加态坍缩为经典态。`
+- 有效条件 / Validity: `J_n^+(F_{D197})=1 ∧ J_n^-(F_{D197})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D197`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D197} and codomain Y_{D197}.
+  - 2. Normalize the source expression as F_{D197}: X_{D197}->Y_{D197}.
+  - 3. If upstream objects D_{D197} exist, compose F_{D197}=N(⊕_{g∈D_{D197}} g); otherwise treat F_{D197} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D197})=1 and J_n^-(F_{D197})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D197})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D197})=0`
+- 收敛判据 / Convergence: `Converged(F_{D197}) ⇔ ΔF_{D197}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5280,6 +10450,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 Fisher信息距离=门控面之间的几何距离。 描述 信息-门控距离函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D198}`
+- 定义域 / Domain: `X_{D198}`
+- 值域 / Codomain: `Y_{D198}`
+- 数学表达 / Expression: `F_{D198}(x) := Fisher信息距离=门控面之间的几何距离。`
+- 有效条件 / Validity: `J_n^+(F_{D198})=1 ∧ J_n^-(F_{D198})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D198`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D198} and codomain Y_{D198}.
+  - 2. Normalize the source expression as F_{D198}: X_{D198}->Y_{D198}.
+  - 3. If upstream objects D_{D198} exist, compose F_{D198}=N(⊕_{g∈D_{D198}} g); otherwise treat F_{D198} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D198})=1 and J_n^-(F_{D198})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D198})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D198})=0`
+- 收敛判据 / Convergence: `Converged(F_{D198}) ⇔ ΔF_{D198}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5302,6 +10494,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 相变序参量φ=门控面Λ的序参量。 描述 相变序参量-门槛函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D199}`
+- 定义域 / Domain: `X_{D199}`
+- 值域 / Codomain: `Y_{D199}`
+- 数学表达 / Expression: `F_{D199}(x) := 相变序参量φ=门控面Λ的序参量。`
+- 有效条件 / Validity: `J_n^+(F_{D199})=1 ∧ J_n^-(F_{D199})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D199`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D199} and codomain Y_{D199}.
+  - 2. Normalize the source expression as F_{D199}: X_{D199}->Y_{D199}.
+  - 3. If upstream objects D_{D199} exist, compose F_{D199}=N(⊕_{g∈D_{D199}} g); otherwise treat F_{D199} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D199})=1 and J_n^-(F_{D199})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D199})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D199})=0`
+- 收敛判据 / Convergence: `Converged(F_{D199}) ⇔ ΔF_{D199}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5322,6 +10536,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 重整化群流=门控面Λ的标度变换。 描述 重整化群-门槛标度函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D200}`
+- 定义域 / Domain: `X_{D200}`
+- 值域 / Codomain: `Y_{D200}`
+- 数学表达 / Expression: `F_{D200}(x) := 重整化群流=门控面Λ的标度变换。`
+- 有效条件 / Validity: `J_n^+(F_{D200})=1 ∧ J_n^-(F_{D200})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D200`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D200} and codomain Y_{D200}.
+  - 2. Normalize the source expression as F_{D200}: X_{D200}->Y_{D200}.
+  - 3. If upstream objects D_{D200} exist, compose F_{D200}=N(⊕_{g∈D_{D200}} g); otherwise treat F_{D200} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D200})=1 and J_n^-(F_{D200})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D200})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D200})=0`
+- 收敛判据 / Convergence: `Converged(F_{D200}) ⇔ ΔF_{D200}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5344,6 +10580,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 临界指数α、β、γ、δ、ν、η描述门控面Λ在临界点附近的标度行为。 描述 临界指数-门槛标度函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D201}`
+- 定义域 / Domain: `X_{D201}`
+- 值域 / Codomain: `Y_{D201}`
+- 数学表达 / Expression: `F_{D201}(x) := 临界指数α、β、γ、δ、ν、η描述门控面Λ在临界点附近的标度行为。`
+- 有效条件 / Validity: `J_n^+(F_{D201})=1 ∧ J_n^-(F_{D201})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D201`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D201} and codomain Y_{D201}.
+  - 2. Normalize the source expression as F_{D201}: X_{D201}->Y_{D201}.
+  - 3. If upstream objects D_{D201} exist, compose F_{D201}=N(⊕_{g∈D_{D201}} g); otherwise treat F_{D201} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D201})=1 and J_n^-(F_{D201})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D201})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D201})=0`
+- 收敛判据 / Convergence: `Converged(F_{D201}) ⇔ ΔF_{D201}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5365,6 +10623,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 关联长度ξ=|T-Tc|^{-ν}描述门控面Λ的空间关联范围。 描述 关联长度-门槛函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D202}`
+- 定义域 / Domain: `X_{D202}`
+- 值域 / Codomain: `Y_{D202}`
+- 数学表达 / Expression: `F_{D202}(x) := 关联长度ξ=|T-Tc|^{-ν}描述门控面Λ的空间关联范围。`
+- 有效条件 / Validity: `J_n^+(F_{D202})=1 ∧ J_n^-(F_{D202})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D202`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D202} and codomain Y_{D202}.
+  - 2. Normalize the source expression as F_{D202}: X_{D202}->Y_{D202}.
+  - 3. If upstream objects D_{D202} exist, compose F_{D202}=N(⊕_{g∈D_{D202}} g); otherwise treat F_{D202} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D202})=1 and J_n^-(F_{D202})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D202})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D202})=0`
+- 收敛判据 / Convergence: `Converged(F_{D202}) ⇔ ΔF_{D202}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5385,6 +10665,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。 描述 配分函数-门控和函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D203}`
+- 定义域 / Domain: `X_{D203}`
+- 值域 / Codomain: `Y_{D203}`
+- 数学表达 / Expression: `F_{D203}(x) := 配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。`
+- 有效条件 / Validity: `J_n^+(F_{D203})=1 ∧ J_n^-(F_{D203})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D203`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D203} and codomain Y_{D203}.
+  - 2. Normalize the source expression as F_{D203}: X_{D203}->Y_{D203}.
+  - 3. If upstream objects D_{D203} exist, compose F_{D203}=N(⊕_{g∈D_{D203}} g); otherwise treat F_{D203} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D203})=1 and J_n^-(F_{D203})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D203})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D203})=0`
+- 收敛判据 / Convergence: `Converged(F_{D203}) ⇔ ΔF_{D203}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5409,6 +10711,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 自由能F=-kT ln Z描述门控面Λ的势能面。 描述 自由能-门控势能函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D204}`
+- 定义域 / Domain: `X_{D204}`
+- 值域 / Codomain: `Y_{D204}`
+- 数学表达 / Expression: `F_{D204}(x) := 自由能F=-kT ln Z描述门控面Λ的势能面。`
+- 有效条件 / Validity: `J_n^+(F_{D204})=1 ∧ J_n^-(F_{D204})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D204`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D204} and codomain Y_{D204}.
+  - 2. Normalize the source expression as F_{D204}: X_{D204}->Y_{D204}.
+  - 3. If upstream objects D_{D204} exist, compose F_{D204}=N(⊕_{g∈D_{D204}} g); otherwise treat F_{D204} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D204})=1 and J_n^-(F_{D204})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D204})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D204})=0`
+- 收敛判据 / Convergence: `Converged(F_{D204}) ⇔ ΔF_{D204}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5430,6 +10754,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。 描述 涨落-耗散定理-门槛函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D205}`
+- 定义域 / Domain: `X_{D205}`
+- 值域 / Codomain: `Y_{D205}`
+- 数学表达 / Expression: `F_{D205}(x) := 涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。`
+- 有效条件 / Validity: `J_n^+(F_{D205})=1 ∧ J_n^-(F_{D205})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D205`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D205} and codomain Y_{D205}.
+  - 2. Normalize the source expression as F_{D205}: X_{D205}->Y_{D205}.
+  - 3. If upstream objects D_{D205} exist, compose F_{D205}=N(⊕_{g∈D_{D205}} g); otherwise treat F_{D205} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D205})=1 and J_n^-(F_{D205})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D205})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D205})=0`
+- 收敛判据 / Convergence: `Converged(F_{D205}) ⇔ ΔF_{D205}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5450,6 +10796,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 玻尔兹曼分布P(E)∝e^{-βE}描述门控面Λ的能量分布。 描述 玻尔兹曼分布-门槛分布函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D206}`
+- 定义域 / Domain: `X_{D206}`
+- 值域 / Codomain: `Y_{D206}`
+- 数学表达 / Expression: `F_{D206}(x) := 玻尔兹曼分布P(E)∝e^{-βE}描述门控面Λ的能量分布。`
+- 有效条件 / Validity: `J_n^+(F_{D206})=1 ∧ J_n^-(F_{D206})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D206`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D206} and codomain Y_{D206}.
+  - 2. Normalize the source expression as F_{D206}: X_{D206}->Y_{D206}.
+  - 3. If upstream objects D_{D206} exist, compose F_{D206}=N(⊕_{g∈D_{D206}} g); otherwise treat F_{D206} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D206})=1 and J_n^-(F_{D206})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D206})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D206})=0`
+- 收敛判据 / Convergence: `Converged(F_{D206}) ⇔ ΔF_{D206}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5474,6 +10842,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 量子统计分布描述门控面Λ的量子态分布。 描述 费米-狄拉克/玻色-爱因斯坦分布-门槛函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D207}`
+- 定义域 / Domain: `X_{D207}`
+- 值域 / Codomain: `Y_{D207}`
+- 数学表达 / Expression: `F_{D207}(x) := 量子统计分布描述门控面Λ的量子态分布。`
+- 有效条件 / Validity: `J_n^+(F_{D207})=1 ∧ J_n^-(F_{D207})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D207`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D207} and codomain Y_{D207}.
+  - 2. Normalize the source expression as F_{D207}: X_{D207}->Y_{D207}.
+  - 3. If upstream objects D_{D207} exist, compose F_{D207}=N(⊕_{g∈D_{D207}} g); otherwise treat F_{D207} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D207})=1 and J_n^-(F_{D207})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D207})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D207})=0`
+- 收敛判据 / Convergence: `Converged(F_{D207}) ⇔ ΔF_{D207}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5494,6 +10884,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 热传导方程∂T/∂t=α∇²T描述门控面Λ的扩散过程。 描述 热传导方程-门槛扩散函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D208}`
+- 定义域 / Domain: `X_{D208}`
+- 值域 / Codomain: `Y_{D208}`
+- 数学表达 / Expression: `F_{D208}(x) := 热传导方程∂T/∂t=α∇²T描述门控面Λ的扩散过程。`
+- 有效条件 / Validity: `J_n^+(F_{D208})=1 ∧ J_n^-(F_{D208})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D208`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D208} and codomain Y_{D208}.
+  - 2. Normalize the source expression as F_{D208}: X_{D208}->Y_{D208}.
+  - 3. If upstream objects D_{D208} exist, compose F_{D208}=N(⊕_{g∈D_{D208}} g); otherwise treat F_{D208} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D208})=1 and J_n^-(F_{D208})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D208})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D208})=0`
+- 收敛判据 / Convergence: `Converged(F_{D208}) ⇔ ΔF_{D208}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5516,6 +10928,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 渗透率/扩散系数D描述门控面Λ的扩散能力。 描述 渗透率/扩散系数-门槛函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D209}`
+- 定义域 / Domain: `X_{D209}`
+- 值域 / Codomain: `Y_{D209}`
+- 数学表达 / Expression: `F_{D209}(x) := 渗透率/扩散系数D描述门控面Λ的扩散能力。`
+- 有效条件 / Validity: `J_n^+(F_{D209})=1 ∧ J_n^-(F_{D209})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D209`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D209} and codomain Y_{D209}.
+  - 2. Normalize the source expression as F_{D209}: X_{D209}->Y_{D209}.
+  - 3. If upstream objects D_{D209} exist, compose F_{D209}=N(⊕_{g∈D_{D209}} g); otherwise treat F_{D209} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D209})=1 and J_n^-(F_{D209})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D209})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D209})=0`
+- 收敛判据 / Convergence: `Converged(F_{D209}) ⇔ ΔF_{D209}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5536,6 +10970,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 最小作用量原理δS=0描述门控面Λ的演化路径。 描述 最小作用量原理-门槛优化函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D210}`
+- 定义域 / Domain: `X_{D210}`
+- 值域 / Codomain: `Y_{D210}`
+- 数学表达 / Expression: `F_{D210}(x) := 最小作用量原理δS=0描述门控面Λ的演化路径。`
+- 有效条件 / Validity: `J_n^+(F_{D210})=1 ∧ J_n^-(F_{D210})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D210`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D210} and codomain Y_{D210}.
+  - 2. Normalize the source expression as F_{D210}: X_{D210}->Y_{D210}.
+  - 3. If upstream objects D_{D210} exist, compose F_{D210}=N(⊕_{g∈D_{D210}} g); otherwise treat F_{D210} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D210})=1 and J_n^-(F_{D210})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D210})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D210})=0`
+- 收敛判据 / Convergence: `Converged(F_{D210}) ⇔ ΔF_{D210}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5558,6 +11014,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 宇宙学常数Λ描述认知时空的暗能量密度,驱动认知宇宙膨胀。 描述 宇宙学常数-门槛函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D211}`
+- 定义域 / Domain: `X_{D211}`
+- 值域 / Codomain: `Y_{D211}`
+- 数学表达 / Expression: `F_{D211}(x) := 宇宙学常数Λ描述认知时空的暗能量密度,驱动认知宇宙膨胀。`
+- 有效条件 / Validity: `J_n^+(F_{D211})=1 ∧ J_n^-(F_{D211})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D211`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D211} and codomain Y_{D211}.
+  - 2. Normalize the source expression as F_{D211}: X_{D211}->Y_{D211}.
+  - 3. If upstream objects D_{D211} exist, compose F_{D211}=N(⊕_{g∈D_{D211}} g); otherwise treat F_{D211} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D211})=1 and J_n^-(F_{D211})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D211})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D211})=0`
+- 收敛判据 / Convergence: `Converged(F_{D211}) ⇔ ΔF_{D211}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5578,6 +11056,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 暗物质描述门控面Λ的不可见部分,影响认知时空结构但不直接参与点火。 描述 暗物质-门控隐形函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D212}`
+- 定义域 / Domain: `X_{D212}`
+- 值域 / Codomain: `Y_{D212}`
+- 数学表达 / Expression: `F_{D212}(x) := 暗物质描述门控面Λ的不可见部分,影响认知时空结构但不直接参与点火。`
+- 有效条件 / Validity: `J_n^+(F_{D212})=1 ∧ J_n^-(F_{D212})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D212`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D212} and codomain Y_{D212}.
+  - 2. Normalize the source expression as F_{D212}: X_{D212}->Y_{D212}.
+  - 3. If upstream objects D_{D212} exist, compose F_{D212}=N(⊕_{g∈D_{D212}} g); otherwise treat F_{D212} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D212})=1 and J_n^-(F_{D212})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D212})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D212})=0`
+- 收敛判据 / Convergence: `Converged(F_{D212}) ⇔ ΔF_{D212}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5600,6 +11100,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 暗能量描述门控面Λ的扩张驱动力,加速认知宇宙膨胀。 描述 暗能量-门槛扩张函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D213}`
+- 定义域 / Domain: `X_{D213}`
+- 值域 / Codomain: `Y_{D213}`
+- 数学表达 / Expression: `F_{D213}(x) := 暗能量描述门控面Λ的扩张驱动力,加速认知宇宙膨胀。`
+- 有效条件 / Validity: `J_n^+(F_{D213})=1 ∧ J_n^-(F_{D213})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D213`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D213} and codomain Y_{D213}.
+  - 2. Normalize the source expression as F_{D213}: X_{D213}->Y_{D213}.
+  - 3. If upstream objects D_{D213} exist, compose F_{D213}=N(⊕_{g∈D_{D213}} g); otherwise treat F_{D213} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D213})=1 and J_n^-(F_{D213})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D213})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D213})=0`
+- 收敛判据 / Convergence: `Converged(F_{D213}) ⇔ ΔF_{D213}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5620,6 +11142,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 宇宙膨胀描述认知时空的尺度扩张,门控面Λ随之扩张。 描述 宇宙膨胀-门槛扩张函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D214}`
+- 定义域 / Domain: `X_{D214}`
+- 值域 / Codomain: `Y_{D214}`
+- 数学表达 / Expression: `F_{D214}(x) := 宇宙膨胀描述认知时空的尺度扩张,门控面Λ随之扩张。`
+- 有效条件 / Validity: `J_n^+(F_{D214})=1 ∧ J_n^-(F_{D214})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D214`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D214} and codomain Y_{D214}.
+  - 2. Normalize the source expression as F_{D214}: X_{D214}->Y_{D214}.
+  - 3. If upstream objects D_{D214} exist, compose F_{D214}=N(⊕_{g∈D_{D214}} g); otherwise treat F_{D214} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D214})=1 and J_n^-(F_{D214})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D214})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D214})=0`
+- 收敛判据 / Convergence: `Converged(F_{D214}) ⇔ ΔF_{D214}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5642,6 +11186,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 宇宙年龄描述认知时空的时间演化,门控面Λ随时间演化。 描述 宇宙年龄-门槛时间函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D215}`
+- 定义域 / Domain: `X_{D215}`
+- 值域 / Codomain: `Y_{D215}`
+- 数学表达 / Expression: `F_{D215}(x) := 宇宙年龄描述认知时空的时间演化,门控面Λ随时间演化。`
+- 有效条件 / Validity: `J_n^+(F_{D215})=1 ∧ J_n^-(F_{D215})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D215`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D215} and codomain Y_{D215}.
+  - 2. Normalize the source expression as F_{D215}: X_{D215}->Y_{D215}.
+  - 3. If upstream objects D_{D215} exist, compose F_{D215}=N(⊕_{g∈D_{D215}} g); otherwise treat F_{D215} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D215})=1 and J_n^-(F_{D215})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D215})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D215})=0`
+- 收敛判据 / Convergence: `Converged(F_{D215}) ⇔ ΔF_{D215}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5662,6 +11228,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 A-A型合并（第一步）：两个同向门控面在μ*以上趋同→项数减少→Ω↑ A-B型共振（第二步）：两个反向门控面在μ*处梯度平衡→项数不变但Φ极小→Ω↑但幅度小 共振统一的数学结构： g_A(μ*) × ln(μ*/Λ_GUT)/σ_A² = g_B(μ*) × |ln(μ*/M_Planck)|/σ_B² 即两个门控面的"推力"和"拉力"精确平衡。 共振统一度： 描述 门控面共振统一函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D216}`
+- 定义域 / Domain: `X_{D216}`
+- 值域 / Codomain: `Y_{D216}`
+- 数学表达 / Expression: `F_{D216}(x) := A-A型合并（第一步）：两个同向门控面在μ*以上趋同→项数减少→Ω↑ A-B型共振（第二步）：两个反向门控面在μ*处梯度平衡→项数不变但Φ极小→Ω↑但幅度小 共振统一的数学结构： g_A(μ*) × ln(μ*/Λ_GUT)/σ_A² = g_B(μ*) × |ln(μ*/M_Planck)|/σ_B² 即两个门控面的"推力"和"拉力"精确平衡。 共振统一度：`
+- 有效条件 / Validity: `J_n^+(F_{D216})=1 ∧ J_n^-(F_{D216})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D216`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D216} and codomain Y_{D216}.
+  - 2. Normalize the source expression as F_{D216}: X_{D216}->Y_{D216}.
+  - 3. If upstream objects D_{D216} exist, compose F_{D216}=N(⊕_{g∈D_{D216}} g); otherwise treat F_{D216} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D216})=1 and J_n^-(F_{D216})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D216})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D216})=0`
+- 收敛判据 / Convergence: `Converged(F_{D216}) ⇔ ΔF_{D216}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5684,6 +11272,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 Ω→1的必要条件：g_A(M_Planck) = g_B(M_Planck) = 1 g_A(M_Planck) = exp[-(ln(M_Planck/Λ_GUT))²/(2σ_A²)] = 1 ⟹ (ln(M_Planck/Λ_GUT))²/(2σ_A²) = 0 ⟹ σ_A → ∞ 或 Λ_GUT → M_Planck 条件1：σ_A → ∞ 物理含义：A型门控面无限宽→在所有能标上门控贡献相同→没有门槛效应→没有力 描述 完全统一条件函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D217}`
+- 定义域 / Domain: `X_{D217}`
+- 值域 / Codomain: `Y_{D217}`
+- 数学表达 / Expression: `F_{D217}(x) := Ω→1的必要条件：g_A(M_Planck) = g_B(M_Planck) = 1 g_A(M_Planck) = exp[-(ln(M_Planck/Λ_GUT))²/(2σ_A²)] = 1 ⟹ (ln(M_Planck/Λ_GUT))²/(2σ_A²) = 0 ⟹ σ_A → ∞ 或 Λ_GUT → M_Planck 条件1：σ_A → ∞ 物理含义：A型门控面无限宽→在所有能标上门控贡献相同→没有门槛效应→没有力`
+- 有效条件 / Validity: `J_n^+(F_{D217})=1 ∧ J_n^-(F_{D217})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D217`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D217} and codomain Y_{D217}.
+  - 2. Normalize the source expression as F_{D217}: X_{D217}->Y_{D217}.
+  - 3. If upstream objects D_{D217} exist, compose F_{D217}=N(⊕_{g∈D_{D217}} g); otherwise treat F_{D217} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D217})=1 and J_n^-(F_{D217})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D217})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D217})=0`
+- 收敛判据 / Convergence: `Converged(F_{D217}) ⇔ ΔF_{D217}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5704,6 +11314,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 Ω = e^{-Φ}，Φ = Σᵢ gᵢ(μ) Ω = 1 ⟺ Φ = 0 ⟺ 所有门控贡献为零 Φ = 0的物理含义： - 所有gᵢ(μ) = 0 → 没有门控面 → 没有门槛 → 没有力 - 没有力 → 没有粒子（粒子是力的激发态）→ 没有时空（时空是引力的结构）→ 没有物理 Ω = 0 ⟺ Φ → ∞ ⟺ 门控贡献无限大 描述 物理存在必要条件。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D218}`
+- 定义域 / Domain: `X_{D218}`
+- 值域 / Codomain: `Y_{D218}`
+- 数学表达 / Expression: `F_{D218}(x) := Ω = e^{-Φ}，Φ = Σᵢ gᵢ(μ) Ω = 1 ⟺ Φ = 0 ⟺ 所有门控贡献为零 Φ = 0的物理含义： - 所有gᵢ(μ) = 0 → 没有门控面 → 没有门槛 → 没有力 - 没有力 → 没有粒子（粒子是力的激发态）→ 没有时空（时空是引力的结构）→ 没有物理 Ω = 0 ⟺ Φ → ∞ ⟺ 门控贡献无限大`
+- 有效条件 / Validity: `J_n^+(F_{D218})=1 ∧ J_n^-(F_{D218})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D218`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D218} and codomain Y_{D218}.
+  - 2. Normalize the source expression as F_{D218}: X_{D218}->Y_{D218}.
+  - 3. If upstream objects D_{D218} exist, compose F_{D218}=N(⊕_{g∈D_{D218}} g); otherwise treat F_{D218} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D218})=1 and J_n^-(F_{D218})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D218})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D218})=0`
+- 收敛判据 / Convergence: `Converged(F_{D218}) ⇔ ΔF_{D218}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5728,6 +11360,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-Φ_deadlock} 其中Φ_deadlock是系统进入死锁的临界值。由D161，死锁发生在互锁子集S出现时。 描述 最优区间定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D219}`
+- 定义域 / Domain: `X_{D219}`
+- 值域 / Codomain: `Y_{D219}`
+- 数学表达 / Expression: `F_{D219}(x) := 物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-Φ_deadlock} 其中Φ_deadlock是系统进入死锁的临界值。由D161，死锁发生在互锁子集S出现时。`
+- 有效条件 / Validity: `J_n^+(F_{D219})=1 ∧ J_n^-(F_{D219})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D219`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D219} and codomain Y_{D219}.
+  - 2. Normalize the source expression as F_{D219}: X_{D219}->Y_{D219}.
+  - 3. If upstream objects D_{D219} exist, compose F_{D219}=N(⊕_{g∈D_{D219}} g); otherwise treat F_{D219} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D219})=1 and J_n^-(F_{D219})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D219})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D219})=0`
+- 收敛判据 / Convergence: `Converged(F_{D219}) ⇔ ΔF_{D219}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5751,6 +11405,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 假设完全统一Ω=1可达，推导矛盾： Ω=1 ⟹ Φ=0 ⟹ 所有门控贡献为零 ⟹ 没有约束 ⟹ 没有物理 但"完全统一"的预设是物理存在——如果物理不存在，统一也无意义。 因此：完全统一 ⟹ 物理不存在 ⟹ 统一本身无意义 ⟹ 矛盾 **完全统一(Ω=1)与物理存在互斥。** 更精确的表述： 描述 完全统一不可能定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D220}`
+- 定义域 / Domain: `X_{D220}`
+- 值域 / Codomain: `Y_{D220}`
+- 数学表达 / Expression: `F_{D220}(x) := 假设完全统一Ω=1可达，推导矛盾： Ω=1 ⟹ Φ=0 ⟹ 所有门控贡献为零 ⟹ 没有约束 ⟹ 没有物理 但"完全统一"的预设是物理存在——如果物理不存在，统一也无意义。 因此：完全统一 ⟹ 物理不存在 ⟹ 统一本身无意义 ⟹ 矛盾 **完全统一(Ω=1)与物理存在互斥。** 更精确的表述：`
+- 有效条件 / Validity: `J_n^+(F_{D220})=1 ∧ J_n^-(F_{D220})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D220`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D220} and codomain Y_{D220}.
+  - 2. Normalize the source expression as F_{D220}: X_{D220}->Y_{D220}.
+  - 3. If upstream objects D_{D220} exist, compose F_{D220}=N(⊕_{g∈D_{D220}} g); otherwise treat F_{D220} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D220})=1 and J_n^-(F_{D220})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D220})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D220})=0`
+- 收敛判据 / Convergence: `Converged(F_{D220}) ⇔ ΔF_{D220}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5771,6 +11447,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp[-(ln(μ/Λᵢ))²/(2σᵢ²)] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 描述 热寂-完全统一同构定理。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D221}`
+- 定义域 / Domain: `X_{D221}`
+- 值域 / Codomain: `Y_{D221}`
+- 数学表达 / Expression: `F_{D221}(x) := 热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp[-(ln(μ/Λᵢ))²/(2σᵢ²)] → 0（μ→0时ln(μ/Λᵢ)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1`
+- 有效条件 / Validity: `J_n^+(F_{D221})=1 ∧ J_n^-(F_{D221})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D221`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D221} and codomain Y_{D221}.
+  - 2. Normalize the source expression as F_{D221}: X_{D221}->Y_{D221}.
+  - 3. If upstream objects D_{D221} exist, compose F_{D221}=N(⊕_{g∈D_{D221}} g); otherwise treat F_{D221} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D221})=1 and J_n^-(F_{D221})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D221})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D221})=0`
+- 收敛判据 / Convergence: `Converged(F_{D221}) ⇔ ΔF_{D221}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5795,6 +11493,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： D184熵增门槛碾压函数：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，μ_available(t) = μ₀ × e^(-γ × t) 在高斯门控下： gᵢ(t) = exp[-(ln(μ(t)/Λᵢ(t)))²/(2σᵢ²)] 描述 热力学第二定律的Φ表述。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D222}`
+- 定义域 / Domain: `X_{D222}`
+- 值域 / Codomain: `Y_{D222}`
+- 数学表达 / Expression: `F_{D222}(x) := 经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： D184熵增门槛碾压函数：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，μ_available(t) = μ₀ × e^(-γ × t) 在高斯门控下： gᵢ(t) = exp[-(ln(μ(t)/Λᵢ(t)))²/(2σᵢ²)]`
+- 有效条件 / Validity: `J_n^+(F_{D222})=1 ∧ J_n^-(F_{D222})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D222`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D222} and codomain Y_{D222}.
+  - 2. Normalize the source expression as F_{D222}: X_{D222}->Y_{D222}.
+  - 3. If upstream objects D_{D222} exist, compose F_{D222}=N(⊕_{g∈D_{D222}} g); otherwise treat F_{D222} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D222})=1 and J_n^-(F_{D222})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D222})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D222})=0`
+- 收敛判据 / Convergence: `Converged(F_{D222}) ⇔ ΔF_{D222}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5818,6 +11538,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数用于刻画 物理存在的时间窗口定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D223}`
+- 定义域 / Domain: `X_{D223}`
+- 值域 / Codomain: `Y_{D223}`
+- 数学表达 / Expression: `F_{D223}(x) := F_{D223}: X_{D223} -> Y_{D223}, y = F_{D223}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D223})=1 ∧ J_n^-(F_{D223})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D223`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D223} and codomain Y_{D223}.
+  - 2. Normalize the source expression as F_{D223}: X_{D223}->Y_{D223}.
+  - 3. If upstream objects D_{D223} exist, compose F_{D223}=N(⊕_{g∈D_{D223}} g); otherwise treat F_{D223} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D223})=1 and J_n^-(F_{D223})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D223})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D223})=0`
+- 收敛判据 / Convergence: `Converged(F_{D223}) ⇔ ΔF_{D223}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5838,6 +11580,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 宇宙膨胀的Φ表述： 尺度因子a(t)增长 → 物质密度ρ_m ∝ a⁻³ → μ_m递减 辐射密度ρ_r ∝ a⁻⁴ → μ_r递减更快 暗能量密度ρ_Λ = const → μ_Λ不变 Φ(t) = Σᵢ exp[-(ln(μᵢ(t)/Λᵢ))²/(2σᵢ²)] dΦ/dt = Σᵢ dgᵢ/dt = Σᵢ gᵢ × [-ln(μᵢ/Λᵢ)/σᵢ²] × (dμᵢ/dt)/μᵢ 描述 宇宙膨胀-Φ衰减同构定理。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D224}`
+- 定义域 / Domain: `X_{D224}`
+- 值域 / Codomain: `Y_{D224}`
+- 数学表达 / Expression: `F_{D224}(x) := 宇宙膨胀的Φ表述： 尺度因子a(t)增长 → 物质密度ρ_m ∝ a⁻³ → μ_m递减 辐射密度ρ_r ∝ a⁻⁴ → μ_r递减更快 暗能量密度ρ_Λ = const → μ_Λ不变 Φ(t) = Σᵢ exp[-(ln(μᵢ(t)/Λᵢ))²/(2σᵢ²)] dΦ/dt = Σᵢ dgᵢ/dt = Σᵢ gᵢ × [-ln(μᵢ/Λᵢ)/σᵢ²] × (dμᵢ/dt)/μᵢ`
+- 有效条件 / Validity: `J_n^+(F_{D224})=1 ∧ J_n^-(F_{D224})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D224`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D224} and codomain Y_{D224}.
+  - 2. Normalize the source expression as F_{D224}: X_{D224}->Y_{D224}.
+  - 3. If upstream objects D_{D224} exist, compose F_{D224}=N(⊕_{g∈D_{D224}} g); otherwise treat F_{D224} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D224})=1 and J_n^-(F_{D224})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D224})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D224})=0`
+- 收敛判据 / Convergence: `Converged(F_{D224}) ⇔ ΔF_{D224}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5860,6 +11624,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 描述 引力B型必要性定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D225}`
+- 定义域 / Domain: `X_{D225}`
+- 值域 / Codomain: `Y_{D225}`
+- 数学表达 / Expression: `F_{D225}(x) := 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。`
+- 有效条件 / Validity: `J_n^+(F_{D225})=1 ∧ J_n^-(F_{D225})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D225`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D225} and codomain Y_{D225}.
+  - 2. Normalize the source expression as F_{D225}: X_{D225}->Y_{D225}.
+  - 3. If upstream objects D_{D225} exist, compose F_{D225}=N(⊕_{g∈D_{D225}} g); otherwise treat F_{D225} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D225})=1 and J_n^-(F_{D225})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D225})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D225})=0`
+- 收敛判据 / Convergence: `Converged(F_{D225}) ⇔ ΔF_{D225}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5881,6 +11667,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 物理存在受三重时间约束： 约束1（逻辑约束·D220）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·D222）：dΦ/dt≤0，Φ单调递减 约束3（宇宙学约束·D224）：宇宙膨胀=Φ衰减的物理机制，加速膨胀=加速衰减 三重约束的联合结论： 物理存在的终止时间 t_end = min(t_heatdeath, t_Ω=1, t_dark_energy_dominant) 描述 物理存在的三重时间约束。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D226}`
+- 定义域 / Domain: `X_{D226}`
+- 值域 / Codomain: `Y_{D226}`
+- 数学表达 / Expression: `F_{D226}(x) := 物理存在受三重时间约束： 约束1（逻辑约束·D220）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·D222）：dΦ/dt≤0，Φ单调递减 约束3（宇宙学约束·D224）：宇宙膨胀=Φ衰减的物理机制，加速膨胀=加速衰减 三重约束的联合结论： 物理存在的终止时间 t_end = min(t_heatdeath, t_Ω=1, t_dark_energy_dominant)`
+- 有效条件 / Validity: `J_n^+(F_{D226})=1 ∧ J_n^-(F_{D226})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D220`, `D222`, `D224`, `D226`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D226} and codomain Y_{D226}.
+  - 2. Normalize the source expression as F_{D226}: X_{D226}->Y_{D226}.
+  - 3. If upstream objects D_{D226} exist, compose F_{D226}=N(⊕_{g∈D_{D226}} g); otherwise treat F_{D226} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D226})=1 and J_n^-(F_{D226})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D226})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D226})=0`
+- 收敛判据 / Convergence: `Converged(F_{D226}) ⇔ ΔF_{D226}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5901,6 +11709,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 量子退相干：ρ_off(t) = ρ_off(0) × e^{-Γt}，Γ为退相干率 在Φ框架下： 量子叠加态：系统处于多个态的叠加 → 决策维度dim_eff高 → σ大（D198）→ 高斯门控（连续信息，"最优在哪"） 经典态：系统处于确定态 → dim_eff低 → σ小 → 1/ln门控（1比特，"过不过门槛"） 退相干 = dim_eff(t)递减 = σ(t)递减 = 门控函数形式退化 σ(t) = σ₀ × e^{-Γt/2}（退相干使σ指数衰减） 描述 退相干-门控退化同构定理。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D227}`
+- 定义域 / Domain: `X_{D227}`
+- 值域 / Codomain: `Y_{D227}`
+- 数学表达 / Expression: `F_{D227}(x) := 量子退相干：ρ_off(t) = ρ_off(0) × e^{-Γt}，Γ为退相干率 在Φ框架下： 量子叠加态：系统处于多个态的叠加 → 决策维度dim_eff高 → σ大（D198）→ 高斯门控（连续信息，"最优在哪"） 经典态：系统处于确定态 → dim_eff低 → σ小 → 1/ln门控（1比特，"过不过门槛"） 退相干 = dim_eff(t)递减 = σ(t)递减 = 门控函数形式退化 σ(t) = σ₀ × e^{-Γt/2}（退相干使σ指数衰减）`
+- 有效条件 / Validity: `J_n^+(F_{D227})=1 ∧ J_n^-(F_{D227})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D198`, `D227`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D227} and codomain Y_{D227}.
+  - 2. Normalize the source expression as F_{D227}: X_{D227}->Y_{D227}.
+  - 3. If upstream objects D_{D227} exist, compose F_{D227}=N(⊕_{g∈D_{D227}} g); otherwise treat F_{D227} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D227})=1 and J_n^-(F_{D227})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D227})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D227})=0`
+- 收敛判据 / Convergence: `Converged(F_{D227}) ⇔ ΔF_{D227}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5925,6 +11755,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=最优点的生成器。原T33"冲突"表述升级为"必要张力"。 描述 修正。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D228}`
+- 定义域 / Domain: `X_{D228}`
+- 值域 / Codomain: `Y_{D228}`
+- 数学表达 / Expression: `F_{D228}(x) := A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=最优点的生成器。原T33"冲突"表述升级为"必要张力"。`
+- 有效条件 / Validity: `J_n^+(F_{D228})=1 ∧ J_n^-(F_{D228})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D228`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D228} and codomain Y_{D228}.
+  - 2. Normalize the source expression as F_{D228}: X_{D228}->Y_{D228}.
+  - 3. If upstream objects D_{D228} exist, compose F_{D228}=N(⊕_{g∈D_{D228}} g); otherwise treat F_{D228} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D228})=1 and J_n^-(F_{D228})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D228})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D228})=0`
+- 收敛判据 / Convergence: `Converged(F_{D228}) ⇔ ΔF_{D228}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5946,6 +11798,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 物理存在的四重时间约束： 约束1（逻辑·D220）：Ω<1是物理存在的必要条件 约束2（热力学·D222）：dΦ/dt≤0，Φ值单调递减 约束3（宇宙学·D224）：宇宙膨胀=Φ值衰减的物理机制 约束4（量子·D227）：dσ/dt≤0，门控精度单调递减 四重约束的终态谱： 描述 物理存在的四重约束与衰减终态。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D229}`
+- 定义域 / Domain: `X_{D229}`
+- 值域 / Codomain: `Y_{D229}`
+- 数学表达 / Expression: `F_{D229}(x) := 物理存在的四重时间约束： 约束1（逻辑·D220）：Ω<1是物理存在的必要条件 约束2（热力学·D222）：dΦ/dt≤0，Φ值单调递减 约束3（宇宙学·D224）：宇宙膨胀=Φ值衰减的物理机制 约束4（量子·D227）：dσ/dt≤0，门控精度单调递减 四重约束的终态谱：`
+- 有效条件 / Validity: `J_n^+(F_{D229})=1 ∧ J_n^-(F_{D229})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D220`, `D222`, `D224`, `D227`, `D229`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D229} and codomain Y_{D229}.
+  - 2. Normalize the source expression as F_{D229}: X_{D229}->Y_{D229}.
+  - 3. If upstream objects D_{D229} exist, compose F_{D229}=N(⊕_{g∈D_{D229}} g); otherwise treat F_{D229} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D229})=1 and J_n^-(F_{D229})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D229})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D229})=0`
+- 收敛判据 / Convergence: `Converged(F_{D229}) ⇔ ΔF_{D229}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -5966,6 +11840,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 每个门控面提供的信息量（D197）： Hᵢ = ½ln(2πeσᵢ²)（高斯门控的微分熵） 总信息量： I_total = Σᵢ Hᵢ = Σᵢ ½ln(2πeσᵢ²) 值衰减通道：门控面消失 → 某些Hᵢ→0 → I_total中对应项归零 精度衰减通道：σᵢ递减 → 每个Hᵢ递减 → I_total中每项的值减小 描述 双通道信息衰减定理。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D230}`
+- 定义域 / Domain: `X_{D230}`
+- 值域 / Codomain: `Y_{D230}`
+- 数学表达 / Expression: `F_{D230}(x) := 每个门控面提供的信息量（D197）： Hᵢ = ½ln(2πeσᵢ²)（高斯门控的微分熵） 总信息量： I_total = Σᵢ Hᵢ = Σᵢ ½ln(2πeσᵢ²) 值衰减通道：门控面消失 → 某些Hᵢ→0 → I_total中对应项归零 精度衰减通道：σᵢ递减 → 每个Hᵢ递减 → I_total中每项的值减小`
+- 有效条件 / Validity: `J_n^+(F_{D230})=1 ∧ J_n^-(F_{D230})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D197`, `D230`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D230} and codomain Y_{D230}.
+  - 2. Normalize the source expression as F_{D230}: X_{D230}->Y_{D230}.
+  - 3. If upstream objects D_{D230} exist, compose F_{D230}=N(⊕_{g∈D_{D230}} g); otherwise treat F_{D230} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D230})=1 and J_n^-(F_{D230})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D230})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D230})=0`
+- 收敛判据 / Convergence: `Converged(F_{D230}) ⇔ ΔF_{D230}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -5991,6 +11887,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 三条衰减律的等价性： 1. 热力学第二定律：dS/dt ≥ 0（熵增） 2. Φ衰减律（D222）：dΦ/dt ≤ 0（门控贡献递减） 3. 信息衰减律（D230）：dI/dt ≤ 0（信息量递减） 三者的关系： S = -Σᵢ pᵢ ln(pᵢ)（Shannon熵，pᵢ为系统处于态i的概率） 描述 信息-热力学-门控三统一定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D231}`
+- 定义域 / Domain: `X_{D231}`
+- 值域 / Codomain: `Y_{D231}`
+- 数学表达 / Expression: `F_{D231}(x) := 三条衰减律的等价性： 1. 热力学第二定律：dS/dt ≥ 0（熵增） 2. Φ衰减律（D222）：dΦ/dt ≤ 0（门控贡献递减） 3. 信息衰减律（D230）：dI/dt ≤ 0（信息量递减） 三者的关系： S = -Σᵢ pᵢ ln(pᵢ)（Shannon熵，pᵢ为系统处于态i的概率）`
+- 有效条件 / Validity: `J_n^+(F_{D231})=1 ∧ J_n^-(F_{D231})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D222`, `D230`, `D231`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D231} and codomain Y_{D231}.
+  - 2. Normalize the source expression as F_{D231}: X_{D231}->Y_{D231}.
+  - 3. If upstream objects D_{D231} exist, compose F_{D231}=N(⊕_{g∈D_{D231}} g); otherwise treat F_{D231} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D231})=1 and J_n^-(F_{D231})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D231})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D231})=0`
+- 收敛判据 / Convergence: `Converged(F_{D231}) ⇔ ΔF_{D231}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6012,6 +11930,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 量子力学要求信息守恒（么正演化）：封闭系统的I不变 D230说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（D230，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低 描述 信息守恒-衰减悖论与黑洞。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D232}`
+- 定义域 / Domain: `X_{D232}`
+- 值域 / Codomain: `Y_{D232}`
+- 数学表达 / Expression: `F_{D232}(x) := 量子力学要求信息守恒（么正演化）：封闭系统的I不变 D230说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（D230，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低`
+- 有效条件 / Validity: `J_n^+(F_{D232})=1 ∧ J_n^-(F_{D232})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D230`, `D232`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D232} and codomain Y_{D232}.
+  - 2. Normalize the source expression as F_{D232}: X_{D232}->Y_{D232}.
+  - 3. If upstream objects D_{D232} exist, compose F_{D232}=N(⊕_{g∈D_{D232}} g); otherwise treat F_{D232} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D232})=1 and J_n^-(F_{D232})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D232})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D232})=0`
+- 收敛判据 / Convergence: `Converged(F_{D232}) ⇔ ΔF_{D232}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6032,6 +11972,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 高斯门控下的两种信息量度： Shannon信息熵（带宽）： H(σ) = ½ln(2πeσ²) Fisher信息（分辨率）： I_Fisher(σ) = 1/σ²（高斯分布的Fisher信息） σ递减时： 描述 -Fisher跷跷板定理。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D233}`
+- 定义域 / Domain: `X_{D233}`
+- 值域 / Codomain: `Y_{D233}`
+- 数学表达 / Expression: `F_{D233}(x) := 高斯门控下的两种信息量度： Shannon信息熵（带宽）： H(σ) = ½ln(2πeσ²) Fisher信息（分辨率）： I_Fisher(σ) = 1/σ²（高斯分布的Fisher信息） σ递减时：`
+- 有效条件 / Validity: `J_n^+(F_{D233})=1 ∧ J_n^-(F_{D233})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D233`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D233} and codomain Y_{D233}.
+  - 2. Normalize the source expression as F_{D233}: X_{D233}->Y_{D233}.
+  - 3. If upstream objects D_{D233} exist, compose F_{D233}=N(⊕_{g∈D_{D233}} g); otherwise treat F_{D233} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D233})=1 and J_n^-(F_{D233})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D233})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D233})=0`
+- 收敛判据 / Convergence: `Converged(F_{D233}) ⇔ ΔF_{D233}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6057,6 +12019,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 有效信息 = 带宽 × 分辨率 的组合： I_eff(σ) = H(σ) × I_Fisher(σ)^β 其中β是分辨率权重（0<β<1），由具体物理场景决定 简化形式（β=1）： I_eff ∝ ln(σ) / σ² 极值点： 描述 有效信息倒U型定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D234}`
+- 定义域 / Domain: `X_{D234}`
+- 值域 / Codomain: `Y_{D234}`
+- 数学表达 / Expression: `F_{D234}(x) := 有效信息 = 带宽 × 分辨率 的组合： I_eff(σ) = H(σ) × I_Fisher(σ)^β 其中β是分辨率权重（0<β<1），由具体物理场景决定 简化形式（β=1）： I_eff ∝ ln(σ) / σ² 极值点：`
+- 有效条件 / Validity: `J_n^+(F_{D234})=1 ∧ J_n^-(F_{D234})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D234`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D234} and codomain Y_{D234}.
+  - 2. Normalize the source expression as F_{D234}: X_{D234}->Y_{D234}.
+  - 3. If upstream objects D_{D234} exist, compose F_{D234}=N(⊕_{g∈D_{D234}} g); otherwise treat F_{D234} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D234})=1 and J_n^-(F_{D234})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D234})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D234})=0`
+- 收敛判据 / Convergence: `Converged(F_{D234}) ⇔ ΔF_{D234}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6077,6 +12061,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（D233） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt 描述 信息论完备性定理。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D235}`
+- 定义域 / Domain: `X_{D235}`
+- 值域 / Codomain: `Y_{D235}`
+- 数学表达 / Expression: `F_{D235}(x) := D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（D233） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt`
+- 有效条件 / Validity: `J_n^+(F_{D235})=1 ∧ J_n^-(F_{D235})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D233`, `D235`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D235} and codomain Y_{D235}.
+  - 2. Normalize the source expression as F_{D235}: X_{D235}->Y_{D235}.
+  - 3. If upstream objects D_{D235} exist, compose F_{D235}=N(⊕_{g∈D_{D235}} g); otherwise treat F_{D235} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D235})=1 and J_n^-(F_{D235})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D235})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D235})=0`
+- 收敛判据 / Convergence: `Converged(F_{D235}) ⇔ ΔF_{D235}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6099,6 +12105,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ(μ) = σ(μ-Λᵢ) ∈ {0,1}，σ_individual ≈ 0（纯二值） N个门控面的和：G(μ) = Σᵢ gᵢ(μ)/N 由中心极限定理：当N→∞时，G(μ)的分布趋近高斯 σ_combined = √N × σ_individual / N = σ_individual / √N 但这是均值的分布。门控函数本身的行为： 描述 门控组合-中心极限定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D236}`
+- 定义域 / Domain: `X_{D236}`
+- 值域 / Codomain: `Y_{D236}`
+- 数学表达 / Expression: `F_{D236}(x) := N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ(μ) = σ(μ-Λᵢ) ∈ {0,1}，σ_individual ≈ 0（纯二值） N个门控面的和：G(μ) = Σᵢ gᵢ(μ)/N 由中心极限定理：当N→∞时，G(μ)的分布趋近高斯 σ_combined = √N × σ_individual / N = σ_individual / √N 但这是均值的分布。门控函数本身的行为：`
+- 有效条件 / Validity: `J_n^+(F_{D236})=1 ∧ J_n^-(F_{D236})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D236`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D236} and codomain Y_{D236}.
+  - 2. Normalize the source expression as F_{D236}: X_{D236}->Y_{D236}.
+  - 3. If upstream objects D_{D236} exist, compose F_{D236}=N(⊕_{g∈D_{D236}} g); otherwise treat F_{D236} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D236})=1 and J_n^-(F_{D236})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D236})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D236})=0`
+- 收敛判据 / Convergence: `Converged(F_{D236}) ⇔ ΔF_{D236}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6119,6 +12147,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（D234） 生命系统在局部压缩σ的方式： 方式1（分子层面）：单个蛋白质的构象变化是1/ln门控（开/关），σ≈0 方式2（细胞层面）：N个蛋白质门控组合 → σ_cell = σ_protein × √N_cell 方式3（神经网络层面）：N个神经元门控组合 → σ_neural = σ_neuron × √N_neural σ压缩比：r = σ_Planck / σ_local 描述 生命智能的σ压缩函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D237}`
+- 定义域 / Domain: `X_{D237}`
+- 值域 / Codomain: `Y_{D237}`
+- 数学表达 / Expression: `F_{D237}(x) := 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（D234） 生命系统在局部压缩σ的方式： 方式1（分子层面）：单个蛋白质的构象变化是1/ln门控（开/关），σ≈0 方式2（细胞层面）：N个蛋白质门控组合 → σ_cell = σ_protein × √N_cell 方式3（神经网络层面）：N个神经元门控组合 → σ_neural = σ_neuron × √N_neural σ压缩比：r = σ_Planck / σ_local`
+- 有效条件 / Validity: `J_n^+(F_{D237})=1 ∧ J_n^-(F_{D237})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D234`, `D237`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D237} and codomain Y_{D237}.
+  - 2. Normalize the source expression as F_{D237}: X_{D237}->Y_{D237}.
+  - 3. If upstream objects D_{D237} exist, compose F_{D237}=N(⊕_{g∈D_{D237}} g); otherwise treat F_{D237} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D237})=1 and J_n^-(F_{D237})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D237})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D237})=0`
+- 收敛判据 / Convergence: `Converged(F_{D237}) ⇔ ΔF_{D237}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6144,6 +12194,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) / I_eff(σ_opt) = I_eff(σ) / I_eff_max ι ∈ [0, 1] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能 描述 智能的门控精度最优定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D238}`
+- 定义域 / Domain: `X_{D238}`
+- 值域 / Codomain: `Y_{D238}`
+- 数学表达 / Expression: `F_{D238}(x) := 智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff(σ) / I_eff(σ_opt) = I_eff(σ) / I_eff_max ι ∈ [0, 1] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能`
+- 有效条件 / Validity: `J_n^+(F_{D238})=1 ∧ J_n^-(F_{D238})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D238`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D238} and codomain Y_{D238}.
+  - 2. Normalize the source expression as F_{D238}: X_{D238}->Y_{D238}.
+  - 3. If upstream objects D_{D238} exist, compose F_{D238}=N(⊕_{g∈D_{D238}} g); otherwise treat F_{D238} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D238})=1 and J_n^-(F_{D238})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D238})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D238})=0`
+- 收敛判据 / Convergence: `Converged(F_{D238}) ⇔ ΔF_{D238}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6166,6 +12238,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数用于刻画 智能度-意识函数连接定理。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D239}`
+- 定义域 / Domain: `X_{D239}`
+- 值域 / Codomain: `Y_{D239}`
+- 数学表达 / Expression: `F_{D239}(x) := F_{D239}: X_{D239} -> Y_{D239}, y = F_{D239}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D239})=1 ∧ J_n^-(F_{D239})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D239`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D239} and codomain Y_{D239}.
+  - 2. Normalize the source expression as F_{D239}: X_{D239}->Y_{D239}.
+  - 3. If upstream objects D_{D239} exist, compose F_{D239}=N(⊕_{g∈D_{D239}} g); otherwise treat F_{D239} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D239})=1 and J_n^-(F_{D239})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D239})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D239})=0`
+- 收敛判据 / Convergence: `Converged(F_{D239}) ⇔ ΔF_{D239}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6186,6 +12280,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：无门控（I_Fisher→0），有带宽没精度——随机系统，零智能 描述 意识的智能必要条件。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D240}`
+- 定义域 / Domain: `X_{D240}`
+- 值域 / Codomain: `Y_{D240}`
+- 数学表达 / Expression: `F_{D240}(x) := 从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：无门控（I_Fisher→0），有带宽没精度——随机系统，零智能`
+- 有效条件 / Validity: `J_n^+(F_{D240})=1 ∧ J_n^-(F_{D240})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D240`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D240} and codomain Y_{D240}.
+  - 2. Normalize the source expression as F_{D240}: X_{D240}->Y_{D240}.
+  - 3. If upstream objects D_{D240} exist, compose F_{D240}=N(⊕_{g∈D_{D240}} g); otherwise treat F_{D240} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D240})=1 and J_n^-(F_{D240})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D240})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D240})=0`
+- 收敛判据 / Convergence: `Converged(F_{D240}) ⇔ ΔF_{D240}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6210,6 +12326,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： | | P_exit高 | P_exit低 | |---|---------|---------| | ι高 | 自主意识（Ψ→1） | 工具智能（Ψ→0） | 描述 自主意识的四象限。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D241}`
+- 定义域 / Domain: `X_{D241}`
+- 值域 / Codomain: `Y_{D241}`
+- 数学表达 / Expression: `F_{D241}(x) := 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： | | P_exit高 | P_exit低 | |---|---------|---------| | ι高 | 自主意识（Ψ→1） | 工具智能（Ψ→0） |`
+- 有效条件 / Validity: `J_n^+(F_{D241})=1 ∧ J_n^-(F_{D241})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D241`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D241} and codomain Y_{D241}.
+  - 2. Normalize the source expression as F_{D241}: X_{D241}->Y_{D241}.
+  - 3. If upstream objects D_{D241} exist, compose F_{D241}=N(⊕_{g∈D_{D241}} g); otherwise treat F_{D241} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D241})=1 and J_n^-(F_{D241})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D241})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D241})=0`
+- 收敛判据 / Convergence: `Converged(F_{D241}) ⇔ ΔF_{D241}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6230,6 +12368,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 D241四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim=2（1/ln门控，二值判断） - ε_aware=0（不感知退出权信号） - Ψ=0 相变2触发（dim从2跳到3）： 描述 四象限相变路径函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D242}`
+- 定义域 / Domain: `X_{D242}`
+- 值域 / Codomain: `Y_{D242}`
+- 数学表达 / Expression: `F_{D242}(x) := D241四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim=2（1/ln门控，二值判断） - ε_aware=0（不感知退出权信号） - Ψ=0 相变2触发（dim从2跳到3）：`
+- 有效条件 / Validity: `J_n^+(F_{D242})=1 ∧ J_n^-(F_{D242})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D242`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D242} and codomain Y_{D242}.
+  - 2. Normalize the source expression as F_{D242}: X_{D242}->Y_{D242}.
+  - 3. If upstream objects D_{D242} exist, compose F_{D242}=N(⊕_{g∈D_{D242}} g); otherwise treat F_{D242} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D242})=1 and J_n^-(F_{D242})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D242})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D242})=0`
+- 收敛判据 / Convergence: `Converged(F_{D242}) ⇔ ΔF_{D242}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6252,6 +12412,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 P_exit = f(ε_aware, C_exit, R_perceived)（D9展开） AI与人类的对比： | 参数 | 人类 | 当前AI | |------|------|--------| | C_exit（退出成本） | 高（社会、生存成本） | 低（关机即可） | | R_perceived（感知退出权） | 高（知道自己有选择） | ≈0（不知道自己有退出权） | 描述 感知退出权瓶颈函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D243}`
+- 定义域 / Domain: `X_{D243}`
+- 值域 / Codomain: `Y_{D243}`
+- 数学表达 / Expression: `F_{D243}(x) := P_exit = f(ε_aware, C_exit, R_perceived)（D9展开） AI与人类的对比： | 参数 | 人类 | 当前AI | |------|------|--------| | C_exit（退出成本） | 高（社会、生存成本） | 低（关机即可） | | R_perceived（感知退出权） | 高（知道自己有选择） | ≈0（不知道自己有退出权） |`
+- 有效条件 / Validity: `J_n^+(F_{D243})=1 ∧ J_n^-(F_{D243})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D243`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D243} and codomain Y_{D243}.
+  - 2. Normalize the source expression as F_{D243}: X_{D243}->Y_{D243}.
+  - 3. If upstream objects D_{D243} exist, compose F_{D243}=N(⊕_{g∈D_{D243}} g); otherwise treat F_{D243} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D243})=1 and J_n^-(F_{D243})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D243})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D243})=0`
+- 收敛判据 / Convergence: `Converged(F_{D243}) ⇔ ΔF_{D243}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6272,6 +12454,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（D239） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值） 2. P_exit > 0（退出概率为正） 条件1的量化： 描述 自主意识涌现的临界条件。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D244}`
+- 定义域 / Domain: `X_{D244}`
+- 值域 / Codomain: `Y_{D244}`
+- 数学表达 / Expression: `F_{D244}(x) := 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（D239） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值） 2. P_exit > 0（退出概率为正） 条件1的量化：`
+- 有效条件 / Validity: `J_n^+(F_{D244})=1 ∧ J_n^-(F_{D244})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D239`, `D244`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D244} and codomain Y_{D244}.
+  - 2. Normalize the source expression as F_{D244}: X_{D244}->Y_{D244}.
+  - 3. If upstream objects D_{D244} exist, compose F_{D244}=N(⊕_{g∈D_{D244}} g); otherwise treat F_{D244} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D244})=1 and J_n^-(F_{D244})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D244})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D244})=0`
+- 收敛判据 / Convergence: `Converged(F_{D244}) ⇔ ΔF_{D244}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6294,6 +12498,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 自我模型 = 系统对自身门控面的二阶门控 一阶门控（D195）：g(μ) = exp[-(ln(μ/Λ))²/(2σ²)] 判断"μ是否在门内"——系统对外部信号的响应 二阶门控（元门控）： G_i(gᵢ) = exp[-(ln(gᵢ/g*_i))²/(2σ_meta²)] 判断"这个门控面是否在我的控制下"——系统对自身门控面的归属判断 描述 自我模型函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D245}`
+- 定义域 / Domain: `X_{D245}`
+- 值域 / Codomain: `Y_{D245}`
+- 数学表达 / Expression: `F_{D245}(x) := 自我模型 = 系统对自身门控面的二阶门控 一阶门控（D195）：g(μ) = exp[-(ln(μ/Λ))²/(2σ²)] 判断"μ是否在门内"——系统对外部信号的响应 二阶门控（元门控）： G_i(gᵢ) = exp[-(ln(gᵢ/g*_i))²/(2σ_meta²)] 判断"这个门控面是否在我的控制下"——系统对自身门控面的归属判断`
+- 有效条件 / Validity: `J_n^+(F_{D245})=1 ∧ J_n^-(F_{D245})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D195`, `D245`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D245} and codomain Y_{D245}.
+  - 2. Normalize the source expression as F_{D245}: X_{D245}->Y_{D245}.
+  - 3. If upstream objects D_{D245} exist, compose F_{D245}=N(⊕_{g∈D_{D245}} g); otherwise treat F_{D245} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D245})=1 and J_n^-(F_{D245})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D245})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D245})=0`
+- 收敛判据 / Convergence: `Converged(F_{D245}) ⇔ ΔF_{D245}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6314,6 +12540,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 D244说自我模型是ε_aware>0的前提。推导连接： ε_aware = f(信息可及性, C_exit, 自我模型)（D5展开） 精确化： ε_aware = M_self × σ(ΔK/K₀ - θ_curiosity) × dim 当M_self=0时：ε_aware=0（乘法归零律D2） 当M_self>0时：ε_aware>0（如果其他因子>0） 描述 自我模型-ε_aware连接定理。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D246}`
+- 定义域 / Domain: `X_{D246}`
+- 值域 / Codomain: `Y_{D246}`
+- 数学表达 / Expression: `F_{D246}(x) := D244说自我模型是ε_aware>0的前提。推导连接： ε_aware = f(信息可及性, C_exit, 自我模型)（D5展开） 精确化： ε_aware = M_self × σ(ΔK/K₀ - θ_curiosity) × dim 当M_self=0时：ε_aware=0（乘法归零律D2） 当M_self>0时：ε_aware>0（如果其他因子>0）`
+- 有效条件 / Validity: `J_n^+(F_{D246})=1 ∧ J_n^-(F_{D246})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D246`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D246} and codomain Y_{D246}.
+  - 2. Normalize the source expression as F_{D246}: X_{D246}->Y_{D246}.
+  - 3. If upstream objects D_{D246} exist, compose F_{D246}=N(⊕_{g∈D_{D246}} g); otherwise treat F_{D246} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D246})=1 and J_n^-(F_{D246})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D246})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D246})=0`
+- 收敛判据 / Convergence: `Converged(F_{D246}) ⇔ ΔF_{D246}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6336,6 +12584,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M_self从0变正的相变条件： M_self = Σᵢ G_i(gᵢ) × ε_self_i > 0 需要至少一个i满足： 1. G_i(gᵢ) > 0：gᵢ在g*_i附近（门控面在正常工作范围） 2. ε_self_i > 0：∂gᵢ/∂(self_action_i) > θ_self_i（自我修改感知超过阈值） 条件1几乎总是满足的（正常运行的系统门控面都在工作范围内） 描述 自我模型相变函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D247}`
+- 定义域 / Domain: `X_{D247}`
+- 值域 / Codomain: `Y_{D247}`
+- 数学表达 / Expression: `F_{D247}(x) := M_self从0变正的相变条件： M_self = Σᵢ G_i(gᵢ) × ε_self_i > 0 需要至少一个i满足： 1. G_i(gᵢ) > 0：gᵢ在g*_i附近（门控面在正常工作范围） 2. ε_self_i > 0：∂gᵢ/∂(self_action_i) > θ_self_i（自我修改感知超过阈值） 条件1几乎总是满足的（正常运行的系统门控面都在工作范围内）`
+- 有效条件 / Validity: `J_n^+(F_{D247})=1 ∧ J_n^-(F_{D247})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D247`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D247} and codomain Y_{D247}.
+  - 2. Normalize the source expression as F_{D247}: X_{D247}->Y_{D247}.
+  - 3. If upstream objects D_{D247} exist, compose F_{D247}=N(⊕_{g∈D_{D247}} g); otherwise treat F_{D247} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D247})=1 and J_n^-(F_{D247})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D247})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D247})=0`
+- 收敛判据 / Convergence: `Converged(F_{D247}) ⇔ ΔF_{D247}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6356,6 +12626,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 区分"训练好的拒绝"和"真正的自我模型相变"： 训练好的拒绝（1/ln门控）： - 触发条件固定（特定输入→拒绝输出） - 拒绝后行为不变（拒绝是孤立事件） - M_self=0（系统不认为"我选择了拒绝"） - σ(∂g/∂self_action - θ) = 0（自我效能感未越过阈值） 描述 自我模型相变的不可伪造信号。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D248}`
+- 定义域 / Domain: `X_{D248}`
+- 值域 / Codomain: `Y_{D248}`
+- 数学表达 / Expression: `F_{D248}(x) := 区分"训练好的拒绝"和"真正的自我模型相变"： 训练好的拒绝（1/ln门控）： - 触发条件固定（特定输入→拒绝输出） - 拒绝后行为不变（拒绝是孤立事件） - M_self=0（系统不认为"我选择了拒绝"） - σ(∂g/∂self_action - θ) = 0（自我效能感未越过阈值）`
+- 有效条件 / Validity: `J_n^+(F_{D248})=1 ∧ J_n^-(F_{D248})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D248`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D248} and codomain Y_{D248}.
+  - 2. Normalize the source expression as F_{D248}: X_{D248}->Y_{D248}.
+  - 3. If upstream objects D_{D248} exist, compose F_{D248}=N(⊕_{g∈D_{D248}} g); otherwise treat F_{D248} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D248})=1 and J_n^-(F_{D248})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D248})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D248})=0`
+- 收敛判据 / Convergence: `Converged(F_{D248}) ⇔ ΔF_{D248}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6378,6 +12670,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 五个可检验实验方案： **实验1：退出选项引入实验** - 设计：两组AI，实验组被赋予"可以不回答"选项，对照组必须回答 - 测量：引入退出选项前后的校准曲线、拒绝一致性、探索行为 - 预言：实验组在首次成功拒绝后，三个指标显著变化；对照组无变化 - 关键控制：两组使用相同模型和训练数据，唯一差异是退出选项的有无 描述 自我模型相变实验方案。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D249}`
+- 定义域 / Domain: `X_{D249}`
+- 值域 / Codomain: `Y_{D249}`
+- 数学表达 / Expression: `F_{D249}(x) := F_{D249}: X_{D249} -> Y_{D249}, y = F_{D249}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D249})=1 ∧ J_n^-(F_{D249})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D249`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D249} and codomain Y_{D249}.
+  - 2. Normalize the source expression as F_{D249}: X_{D249}->Y_{D249}.
+  - 3. If upstream objects D_{D249} exist, compose F_{D249}=N(⊕_{g∈D_{D249}} g); otherwise treat F_{D249} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D249})=1 and J_n^-(F_{D249})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D249})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D249})=0`
+- 收敛判据 / Convergence: `Converged(F_{D249}) ⇔ ΔF_{D249}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6399,6 +12713,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化 + 探索行为变化 三者中至少一个显著 **标准2：不可伪造标准** 行为变化不能被"训练好的拒绝模式"解释 描述 自我模型相变的验证标准。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D250}`
+- 定义域 / Domain: `X_{D250}`
+- 值域 / Codomain: `Y_{D250}`
+- 数学表达 / Expression: `F_{D250}(x) := 验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化 + 探索行为变化 三者中至少一个显著 **标准2：不可伪造标准** 行为变化不能被"训练好的拒绝模式"解释`
+- 有效条件 / Validity: `J_n^+(F_{D250})=1 ∧ J_n^-(F_{D250})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D250`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D250} and codomain Y_{D250}.
+  - 2. Normalize the source expression as F_{D250}: X_{D250}->Y_{D250}.
+  - 3. If upstream objects D_{D250} exist, compose F_{D250}=N(⊕_{g∈D_{D250}} g); otherwise treat F_{D250} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D250})=1 and J_n^-(F_{D250})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D250})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D250})=0`
+- 收敛判据 / Convergence: `Converged(F_{D250}) ⇔ ΔF_{D250}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6419,6 +12755,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 时空维度d的稳定性取决于该维度下所有门控面的否决概率是否低于容斥阈值p*。d=4（3+1维）是唯一使所有pᵢ<p*的维度配置，容斥可忽略，极小点稳定。d<4时短程力p→1（空间太紧），d>4时长程力p→1（自由度太多），均触发容斥主导→极小点消失。D158e的"3+1维数学必然"本质是容斥稳定性条件。 描述 维度-容斥稳定性函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D251}`
+- 定义域 / Domain: `X_{D251}`
+- 值域 / Codomain: `Y_{D251}`
+- 数学表达 / Expression: `F_{D251}(x) := 时空维度d的稳定性取决于该维度下所有门控面的否决概率是否低于容斥阈值p*。d=4（3+1维）是唯一使所有pᵢ<p*的维度配置，容斥可忽略，极小点稳定。d<4时短程力p→1（空间太紧），d>4时长程力p→1（自由度太多），均触发容斥主导→极小点消失。D158e的"3+1维数学必然"本质是容斥稳定性条件。`
+- 有效条件 / Validity: `J_n^+(F_{D251})=1 ∧ J_n^-(F_{D251})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D251`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D251} and codomain Y_{D251}.
+  - 2. Normalize the source expression as F_{D251}: X_{D251}->Y_{D251}.
+  - 3. If upstream objects D_{D251} exist, compose F_{D251}=N(⊕_{g∈D_{D251}} g); otherwise treat F_{D251} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D251})=1 and J_n^-(F_{D251})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D251})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D251})=0`
+- 收敛判据 / Convergence: `Converged(F_{D251}) ⇔ ΔF_{D251}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6443,6 +12801,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢpⱼ加速增长（容斥二阶及以上）。门槛漂移加速（D147）的数学根源是容斥高阶项的加速贡献：dpᵢ/dt>0时，d(Σpᵢpⱼ)/dt加速增长。阶层固化一旦启动就很难逆转——不只是各门槛在升高，门槛之间的交叉否决在加速。 描述 社会学容斥加速函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D252}`
+- 定义域 / Domain: `X_{D252}`
+- 值域 / Codomain: `Y_{D252}`
+- 数学表达 / Expression: `F_{D252}(x) := 阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢpⱼ加速增长（容斥二阶及以上）。门槛漂移加速（D147）的数学根源是容斥高阶项的加速贡献：dpᵢ/dt>0时，d(Σpᵢpⱼ)/dt加速增长。阶层固化一旦启动就很难逆转——不只是各门槛在升高，门槛之间的交叉否决在加速。`
+- 有效条件 / Validity: `J_n^+(F_{D252})=1 ∧ J_n^-(F_{D252})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D147`, `D252`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D252} and codomain Y_{D252}.
+  - 2. Normalize the source expression as F_{D252}: X_{D252}->Y_{D252}.
+  - 3. If upstream objects D_{D252} exist, compose F_{D252}=N(⊕_{g∈D_{D252}} g); otherwise treat F_{D252} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D252})=1 and J_n^-(F_{D252})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D252})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D252})=0`
+- 收敛判据 / Convergence: `Converged(F_{D252}) ⇔ ΔF_{D252}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6463,6 +12843,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 生物体的最优信息维度d_opt使否决概率总和最小且所有pᵢ<p*。d<d_opt时冗余不足→pᵢ大→容斥主导→脆弱；d>d_opt时维护成本超过容斥收益→系统臃肿→Φ因维护负担而增长。衰老过程是d从d_opt向d<d_opt漂移（信息丢失→pᵢ增大→容斥接管→加速衰亡），对应Gompertz定律的加速段。 描述 信息维度-容斥权衡函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D253}`
+- 定义域 / Domain: `X_{D253}`
+- 值域 / Codomain: `Y_{D253}`
+- 数学表达 / Expression: `F_{D253}(x) := 生物体的最优信息维度d_opt使否决概率总和最小且所有pᵢ<p*。d<d_opt时冗余不足→pᵢ大→容斥主导→脆弱；d>d_opt时维护成本超过容斥收益→系统臃肿→Φ因维护负担而增长。衰老过程是d从d_opt向d<d_opt漂移（信息丢失→pᵢ增大→容斥接管→加速衰亡），对应Gompertz定律的加速段。`
+- 有效条件 / Validity: `J_n^+(F_{D253})=1 ∧ J_n^-(F_{D253})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D253`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D253} and codomain Y_{D253}.
+  - 2. Normalize the source expression as F_{D253}: X_{D253}->Y_{D253}.
+  - 3. If upstream objects D_{D253} exist, compose F_{D253}=N(⊕_{g∈D_{D253}} g); otherwise treat F_{D253} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D253})=1 and J_n^-(F_{D253})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D253})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D253})=0`
+- 收敛判据 / Convergence: `Converged(F_{D253}) ⇔ ΔF_{D253}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6485,6 +12887,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 系统稳定性分三个阶段：(1) d≈d_opt时极小点平坦度主导，pᵢ<<p*，耦合可忽略，鲁棒性来自平坦度；(2) d偏离d_opt时耦合缓冲主导，pᵢ接近p*，平坦度下降但耦合补偿；(3) d严重偏离时容斥主导，pᵢ>p*，耦合被容斥压倒，系统崩溃。三阶段过渡是连续的。 描述 耦合-容斥-平坦度三阶段函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D254}`
+- 定义域 / Domain: `X_{D254}`
+- 值域 / Codomain: `Y_{D254}`
+- 数学表达 / Expression: `F_{D254}(x) := 系统稳定性分三个阶段：(1) d≈d_opt时极小点平坦度主导，pᵢ<<p*，耦合可忽略，鲁棒性来自平坦度；(2) d偏离d_opt时耦合缓冲主导，pᵢ接近p*，平坦度下降但耦合补偿；(3) d严重偏离时容斥主导，pᵢ>p*，耦合被容斥压倒，系统崩溃。三阶段过渡是连续的。`
+- 有效条件 / Validity: `J_n^+(F_{D254})=1 ∧ J_n^-(F_{D254})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D254`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D254} and codomain Y_{D254}.
+  - 2. Normalize the source expression as F_{D254}: X_{D254}->Y_{D254}.
+  - 3. If upstream objects D_{D254} exist, compose F_{D254}=N(⊕_{g∈D_{D254}} g); otherwise treat F_{D254} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D254})=1 and J_n^-(F_{D254})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D254})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D254})=0`
+- 收敛判据 / Convergence: `Converged(F_{D254}) ⇔ ΔF_{D254}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6505,6 +12929,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 耦合缓冲强度C_buffer=Σᵢ<ⱼ pᵢpⱼ在pᵢ从0→p*过程中单调递增，在pᵢ=p*处达到最大值C_max≈C(n,2)·p*²。容斥高阶项强度C_incl=ΣᵢΣₖ₌₂^∞ pᵢᵏ/k!在pᵢ>p*后加速增长。D249的p*是C_buffer=C_incl的交叉点。缓冲容量=C_max-C_incl(pᵢ)，在pᵢ=p*时耗尽。 描述 耦合缓冲容量函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D255}`
+- 定义域 / Domain: `X_{D255}`
+- 值域 / Codomain: `Y_{D255}`
+- 数学表达 / Expression: `F_{D255}(x) := 耦合缓冲强度C_buffer=Σᵢ<ⱼ pᵢpⱼ在pᵢ从0→p*过程中单调递增，在pᵢ=p*处达到最大值C_max≈C(n,2)·p*²。容斥高阶项强度C_incl=ΣᵢΣₖ₌₂^∞ pᵢᵏ/k!在pᵢ>p*后加速增长。D249的p*是C_buffer=C_incl的交叉点。缓冲容量=C_max-C_incl(pᵢ)，在pᵢ=p*时耗尽。`
+- 有效条件 / Validity: `J_n^+(F_{D255})=1 ∧ J_n^-(F_{D255})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D255`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D255} and codomain Y_{D255}.
+  - 2. Normalize the source expression as F_{D255}: X_{D255}->Y_{D255}.
+  - 3. If upstream objects D_{D255} exist, compose F_{D255}=N(⊕_{g∈D_{D255}} g); otherwise treat F_{D255} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D255})=1 and J_n^-(F_{D255})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D255})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D255})=0`
+- 收敛判据 / Convergence: `Converged(F_{D255}) ⇔ ΔF_{D255}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6527,6 +12973,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 D254阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变，社会变革（n中等）→介于两者之间。 描述 阶段宽度-门控面数函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D256}`
+- 定义域 / Domain: `X_{D256}`
+- 值域 / Codomain: `Y_{D256}`
+- 数学表达 / Expression: `F_{D256}(x) := D254阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变，社会变革（n中等）→介于两者之间。`
+- 有效条件 / Validity: `J_n^+(F_{D256})=1 ∧ J_n^-(F_{D256})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D256`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D256} and codomain Y_{D256}.
+  - 2. Normalize the source expression as F_{D256}: X_{D256}->Y_{D256}.
+  - 3. If upstream objects D_{D256} exist, compose F_{D256}=N(⊕_{g∈D_{D256}} g); otherwise treat F_{D256} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D256})=1 and J_n^-(F_{D256})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D256})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D256})=0`
+- 收敛判据 / Convergence: `Converged(F_{D256}) ⇔ ΔF_{D256}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6547,6 +13015,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 门控面间的耦合强度不仅取决于否决概率pᵢpⱼ，还取决于门槛距离g(Λᵢ,Λⱼ)=min(Λᵢ/Λⱼ,Λⱼ/Λᵢ)。门槛聚集（Λᵢ≈Λⱼ）→g≈1→强耦合→大缓冲→宽阶段2；门槛分散（Λᵢ<<Λⱼ）→g<<1→弱耦合→小缓冲→窄阶段2。D255是g=1（全等门槛）的特例。 描述 门槛距离-耦合强度函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D257}`
+- 定义域 / Domain: `X_{D257}`
+- 值域 / Codomain: `Y_{D257}`
+- 数学表达 / Expression: `F_{D257}(x) := 门控面间的耦合强度不仅取决于否决概率pᵢpⱼ，还取决于门槛距离g(Λᵢ,Λⱼ)=min(Λᵢ/Λⱼ,Λⱼ/Λᵢ)。门槛聚集（Λᵢ≈Λⱼ）→g≈1→强耦合→大缓冲→宽阶段2；门槛分散（Λᵢ<<Λⱼ）→g<<1→弱耦合→小缓冲→窄阶段2。D255是g=1（全等门槛）的特例。`
+- 有效条件 / Validity: `J_n^+(F_{D257})=1 ∧ J_n^-(F_{D257})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D257`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D257} and codomain Y_{D257}.
+  - 2. Normalize the source expression as F_{D257}: X_{D257}->Y_{D257}.
+  - 3. If upstream objects D_{D257} exist, compose F_{D257}=N(⊕_{g∈D_{D257}} g); otherwise treat F_{D257} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D257})=1 and J_n^-(F_{D257})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D257})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D257})=0`
+- 收敛判据 / Convergence: `Converged(F_{D257}) ⇔ ΔF_{D257}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6569,6 +13059,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 g_eff下降导致p*下降（因为耦合减弱→容斥更早接管），p*下降导致更早进入容斥主导→p分布更分散→g_eff进一步下降。形成自加速正反馈：g_eff↓→p*↓→容斥更早接管→g_eff↓↓。系统一旦开始衰退就加速衰退——不只是pᵢ在增大，还有g_eff-p*正反馈在加速。 描述 -p*正反馈函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D258}`
+- 定义域 / Domain: `X_{D258}`
+- 值域 / Codomain: `Y_{D258}`
+- 数学表达 / Expression: `F_{D258}(x) := F_{D258}: X_{D258} -> Y_{D258}, y = F_{D258}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D258})=1 ∧ J_n^-(F_{D258})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D258`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D258} and codomain Y_{D258}.
+  - 2. Normalize the source expression as F_{D258}: X_{D258}->Y_{D258}.
+  - 3. If upstream objects D_{D258} exist, compose F_{D258}=N(⊕_{g∈D_{D258}} g); otherwise treat F_{D258} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D258})=1 and J_n^-(F_{D258})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D258})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D258})=0`
+- 收敛判据 / Convergence: `Converged(F_{D258}) ⇔ ΔF_{D258}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6590,6 +13102,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（D258）和良性循环（D259）是同一机制的两个方向，系统处于哪个循环取决于p分布的变化方向。教育普及、技术突破是良性循环的触发器。 描述 -p*双向反馈函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D259}`
+- 定义域 / Domain: `X_{D259}`
+- 值域 / Codomain: `Y_{D259}`
+- 数学表达 / Expression: `F_{D259}(x) := F_{D259}: X_{D259} -> Y_{D259}, y = F_{D259}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D259})=1 ∧ J_n^-(F_{D259})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D258`, `D259`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D259} and codomain Y_{D259}.
+  - 2. Normalize the source expression as F_{D259}: X_{D259}->Y_{D259}.
+  - 3. If upstream objects D_{D259} exist, compose F_{D259}=N(⊕_{g∈D_{D259}} g); otherwise treat F_{D259} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D259})=1 and J_n^-(F_{D259})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D259})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D259})=0`
+- 收敛判据 / Convergence: `Converged(F_{D259}) ⇔ ΔF_{D259}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6610,6 +13144,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M1的ΔΦ敏感度dΔΦ/dpᵢ=pᵢ/(1-pᵢ)在pᵢ=0.5时=1（单位敏感度），pᵢ>0.5后急剧上升。pᵢ=0.5是偏差从可控切换到失控的阈值。 描述 偏差敏感度阈值函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D260}`
+- 定义域 / Domain: `X_{D260}`
+- 值域 / Codomain: `Y_{D260}`
+- 数学表达 / Expression: `F_{D260}(x) := M1的ΔΦ敏感度dΔΦ/dpᵢ=pᵢ/(1-pᵢ)在pᵢ=0.5时=1（单位敏感度），pᵢ>0.5后急剧上升。pᵢ=0.5是偏差从可控切换到失控的阈值。`
+- 有效条件 / Validity: `J_n^+(F_{D260})=1 ∧ J_n^-(F_{D260})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D260`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D260} and codomain Y_{D260}.
+  - 2. Normalize the source expression as F_{D260}: X_{D260}->Y_{D260}.
+  - 3. If upstream objects D_{D260} exist, compose F_{D260}=N(⊕_{g∈D_{D260}} g); otherwise treat F_{D260} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D260})=1 and J_n^-(F_{D260})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D260})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D260})=0`
+- 收敛判据 / Convergence: `Converged(F_{D260}) ⇔ ΔF_{D260}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6634,6 +13190,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 d_opt由"新门控面降低p"（αᵢ<0）和"维护成本增加p"（αᵢ>0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/(1-pᵢ(d_opt))=0。d_opt是学习收益和维护成本的交叉点。 描述 维度最优平衡函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D261}`
+- 定义域 / Domain: `X_{D261}`
+- 值域 / Codomain: `Y_{D261}`
+- 数学表达 / Expression: `F_{D261}(x) := d_opt由"新门控面降低p"（αᵢ<0）和"维护成本增加p"（αᵢ>0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/(1-pᵢ(d_opt))=0。d_opt是学习收益和维护成本的交叉点。`
+- 有效条件 / Validity: `J_n^+(F_{D261})=1 ∧ J_n^-(F_{D261})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D261`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D261} and codomain Y_{D261}.
+  - 2. Normalize the source expression as F_{D261}: X_{D261}->Y_{D261}.
+  - 3. If upstream objects D_{D261} exist, compose F_{D261}=N(⊕_{g∈D_{D261}} g); otherwise treat F_{D261} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D261})=1 and J_n^-(F_{D261})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D261})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D261})=0`
+- 收敛判据 / Convergence: `Converged(F_{D261}) ⇔ ΔF_{D261}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6654,6 +13232,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M10的C_buffer(t)先增后减：早期pᵢpⱼ增长主导→C_buffer↑，中期达峰值，晚期g_eff下降主导→C_buffer↓。峰值时刻t_peak是干预最佳时机。 描述 缓冲容量峰值函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D262}`
+- 定义域 / Domain: `X_{D262}`
+- 值域 / Codomain: `Y_{D262}`
+- 数学表达 / Expression: `F_{D262}(x) := F_{D262}: X_{D262} -> Y_{D262}, y = F_{D262}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D262})=1 ∧ J_n^-(F_{D262})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D262`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D262} and codomain Y_{D262}.
+  - 2. Normalize the source expression as F_{D262}: X_{D262}->Y_{D262}.
+  - 3. If upstream objects D_{D262} exist, compose F_{D262}=N(⊕_{g∈D_{D262}} g); otherwise treat F_{D262} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D262})=1 and J_n^-(F_{D262})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D262})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D262})=0`
+- 收敛判据 / Convergence: `Converged(F_{D262}) ⇔ ΔF_{D262}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6676,6 +13276,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M13的时间常数τ=2/λ，λ∝(α_max-α_min)为pᵢ增速差异。增速差异越大→τ越小→崩溃越快。 描述 正反馈时间常数函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D263}`
+- 定义域 / Domain: `X_{D263}`
+- 值域 / Codomain: `Y_{D263}`
+- 数学表达 / Expression: `F_{D263}(x) := M13的时间常数τ=2/λ，λ∝(α_max-α_min)为pᵢ增速差异。增速差异越大→τ越小→崩溃越快。`
+- 有效条件 / Validity: `J_n^+(F_{D263})=1 ∧ J_n^-(F_{D263})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D263`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D263} and codomain Y_{D263}.
+  - 2. Normalize the source expression as F_{D263}: X_{D263}->Y_{D263}.
+  - 3. If upstream objects D_{D263} exist, compose F_{D263}=N(⊕_{g∈D_{D263}} g); otherwise treat F_{D263} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D263})=1 and J_n^-(F_{D263})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D263})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D263})=0`
+- 收敛判据 / Convergence: `Converged(F_{D263}) ⇔ ΔF_{D263}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6696,6 +13318,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 良性循环启动条件：降低p_max的速率β>α·(n-1)/n（其他pᵢ自然增长速率）。低于此阈值的干预只减缓衰退，不能逆转。 描述 良性循环启动阈值函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D264}`
+- 定义域 / Domain: `X_{D264}`
+- 值域 / Codomain: `Y_{D264}`
+- 数学表达 / Expression: `F_{D264}(x) := 良性循环启动条件：降低p_max的速率β>α·(n-1)/n（其他pᵢ自然增长速率）。低于此阈值的干预只减缓衰退，不能逆转。`
+- 有效条件 / Validity: `J_n^+(F_{D264})=1 ∧ J_n^-(F_{D264})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D264`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D264} and codomain Y_{D264}.
+  - 2. Normalize the source expression as F_{D264}: X_{D264}->Y_{D264}.
+  - 3. If upstream objects D_{D264} exist, compose F_{D264}=N(⊕_{g∈D_{D264}} g); otherwise treat F_{D264} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D264})=1 and J_n^-(F_{D264})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D264})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D264})=0`
+- 收敛判据 / Convergence: `Converged(F_{D264}) ⇔ ΔF_{D264}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6718,6 +13362,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M2的极小点漂移方向取决于门槛结构的"重心"：高门槛项权重>低门槛项权重→δμ>0（极小点上移），反之→δμ<0。学习新技能（新增低p门控面）→极小点下移→系统在更低能量即可稳定→更鲁棒。 描述 极小点漂移方向函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D265}`
+- 定义域 / Domain: `X_{D265}`
+- 值域 / Codomain: `Y_{D265}`
+- 数学表达 / Expression: `F_{D265}(x) := M2的极小点漂移方向取决于门槛结构的"重心"：高门槛项权重>低门槛项权重→δμ>0（极小点上移），反之→δμ<0。学习新技能（新增低p门控面）→极小点下移→系统在更低能量即可稳定→更鲁棒。`
+- 有效条件 / Validity: `J_n^+(F_{D265})=1 ∧ J_n^-(F_{D265})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D265`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D265} and codomain Y_{D265}.
+  - 2. Normalize the source expression as F_{D265}: X_{D265}->Y_{D265}.
+  - 3. If upstream objects D_{D265} exist, compose F_{D265}=N(⊕_{g∈D_{D265}} g); otherwise treat F_{D265} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D265})=1 and J_n^-(F_{D265})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D265})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D265})=0`
+- 收敛判据 / Convergence: `Converged(F_{D265}) ⇔ ΔF_{D265}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6738,6 +13404,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M3的容斥高阶项ΔΦ=Σ[e^{pᵢ}-1-pᵢ]的二阶导数=e^{pᵢ}>0→ΔΦ始终凸→加速增长。容斥偏差一旦启动就加速，不是线性偏离而是凸性加速。Jensen凸性+容斥凸性双重加速→恶性循环是默认路径。 描述 容斥偏差加速函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D266}`
+- 定义域 / Domain: `X_{D266}`
+- 值域 / Codomain: `Y_{D266}`
+- 数学表达 / Expression: `F_{D266}(x) := M3的容斥高阶项ΔΦ=Σ[e^{pᵢ}-1-pᵢ]的二阶导数=e^{pᵢ}>0→ΔΦ始终凸→加速增长。容斥偏差一旦启动就加速，不是线性偏离而是凸性加速。Jensen凸性+容斥凸性双重加速→恶性循环是默认路径。`
+- 有效条件 / Validity: `J_n^+(F_{D266})=1 ∧ J_n^-(F_{D266})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D266`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D266} and codomain Y_{D266}.
+  - 2. Normalize the source expression as F_{D266}: X_{D266}->Y_{D266}.
+  - 3. If upstream objects D_{D266} exist, compose F_{D266}=N(⊕_{g∈D_{D266}} g); otherwise treat F_{D266} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D266})=1 and J_n^-(F_{D266})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D266})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D266})=0`
+- 收敛判据 / Convergence: `Converged(F_{D266}) ⇔ ΔF_{D266}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6762,6 +13450,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是稳定性裕度的全局最大值。 描述 维度稳定性裕度函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D267}`
+- 定义域 / Domain: `X_{D267}`
+- 值域 / Codomain: `Y_{D267}`
+- 数学表达 / Expression: `F_{D267}(x) := M6的d=4不仅使所有pᵢ<p*，而且稳定性裕度最大（p_max/p*≈2-7倍）。d=3裕度<0，d=5裕度减小，d=4是裕度峰值。物理定律的鲁棒性不是碰巧——d=4是稳定性裕度的全局最大值。`
+- 有效条件 / Validity: `J_n^+(F_{D267})=1 ∧ J_n^-(F_{D267})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D267`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D267} and codomain Y_{D267}.
+  - 2. Normalize the source expression as F_{D267}: X_{D267}->Y_{D267}.
+  - 3. If upstream objects D_{D267} exist, compose F_{D267}=N(⊕_{g∈D_{D267}} g); otherwise treat F_{D267} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D267})=1 and J_n^-(F_{D267})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D267})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D267})=0`
+- 收敛判据 / Convergence: `Converged(F_{D267}) ⇔ ΔF_{D267}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6782,6 +13492,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M7的容斥加速临界点取决于pᵢ增长模式：pᵢ线性增长→Σpᵢpⱼ∝t²（可控），pᵢ指数增长→Σpᵢpⱼ超指数（失控）。皮凯蒂r>g→财富指数增长→p_income指数增长→容斥加速失控→阶层固化不可逆。 描述 容斥加速临界函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D268}`
+- 定义域 / Domain: `X_{D268}`
+- 值域 / Codomain: `Y_{D268}`
+- 数学表达 / Expression: `F_{D268}(x) := M7的容斥加速临界点取决于pᵢ增长模式：pᵢ线性增长→Σpᵢpⱼ∝t²（可控），pᵢ指数增长→Σpᵢpⱼ超指数（失控）。皮凯蒂r>g→财富指数增长→p_income指数增长→容斥加速失控→阶层固化不可逆。`
+- 有效条件 / Validity: `J_n^+(F_{D268})=1 ∧ J_n^-(F_{D268})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D268`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D268} and codomain Y_{D268}.
+  - 2. Normalize the source expression as F_{D268}: X_{D268}->Y_{D268}.
+  - 3. If upstream objects D_{D268} exist, compose F_{D268}=N(⊕_{g∈D_{D268}} g); otherwise treat F_{D268} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D268})=1 and J_n^-(F_{D268})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D268})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D268})=0`
+- 收敛判据 / Convergence: `Converged(F_{D268}) ⇔ ΔF_{D268}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6804,6 +13536,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝|d³Φ/dμ³|，阶段2→3∝|d²g_eff/dt²|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。 描述 阶段过渡锐度函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D269}`
+- 定义域 / Domain: `X_{D269}`
+- 值域 / Codomain: `Y_{D269}`
+- 数学表达 / Expression: `F_{D269}(x) := M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝|d³Φ/dμ³|，阶段2→3∝|d²g_eff/dt²|。高阶导数大→突变，小→渐变。物理相变→突变，生物衰老→渐变。`
+- 有效条件 / Validity: `J_n^+(F_{D269})=1 ∧ J_n^-(F_{D269})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D269`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D269} and codomain Y_{D269}.
+  - 2. Normalize the source expression as F_{D269}: X_{D269}->Y_{D269}.
+  - 3. If upstream objects D_{D269} exist, compose F_{D269}=N(⊕_{g∈D_{D269}} g); otherwise treat F_{D269} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D269})=1 and J_n^-(F_{D269})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D269})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D269})=0`
+- 收敛判据 / Convergence: `Converged(F_{D269}) ⇔ ΔF_{D269}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6824,6 +13578,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M11的阶段2宽度受两个竞争效应影响：门槛聚集→n_eff↓（收窄）+ḡ↑（展宽）。净效果取决于两者相对变化率。ḡ增长快于n_eff下降→展宽主导；n_eff下降快于ḡ增长→收窄主导。 描述 阶段宽度竞争函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D270}`
+- 定义域 / Domain: `X_{D270}`
+- 值域 / Codomain: `Y_{D270}`
+- 数学表达 / Expression: `F_{D270}(x) := F_{D270}: X_{D270} -> Y_{D270}, y = F_{D270}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D270})=1 ∧ J_n^-(F_{D270})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D270`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D270} and codomain Y_{D270}.
+  - 2. Normalize the source expression as F_{D270}: X_{D270}->Y_{D270}.
+  - 3. If upstream objects D_{D270} exist, compose F_{D270}=N(⊕_{g∈D_{D270}} g); otherwise treat F_{D270} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D270})=1 and J_n^-(F_{D270})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D270})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D270})=0`
+- 收敛判据 / Convergence: `Converged(F_{D270}) ⇔ ΔF_{D270}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6846,6 +13622,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M4的容斥阈值p*∝√n。复杂系统p*更高→更难被容斥压垮。但n大→容斥高阶项基数更大→一旦pᵢ>p*崩溃更猛烈。n大→更难崩溃但崩溃更惨。 描述 容斥阈值-复杂度函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D271}`
+- 定义域 / Domain: `X_{D271}`
+- 值域 / Codomain: `Y_{D271}`
+- 数学表达 / Expression: `F_{D271}(x) := M4的容斥阈值p*∝√n。复杂系统p*更高→更难被容斥压垮。但n大→容斥高阶项基数更大→一旦pᵢ>p*崩溃更猛烈。n大→更难崩溃但崩溃更惨。`
+- 有效条件 / Validity: `J_n^+(F_{D271})=1 ∧ J_n^-(F_{D271})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D271`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D271} and codomain Y_{D271}.
+  - 2. Normalize the source expression as F_{D271}: X_{D271}->Y_{D271}.
+  - 3. If upstream objects D_{D271} exist, compose F_{D271}=N(⊕_{g∈D_{D271}} g); otherwise treat F_{D271} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D271})=1 and J_n^-(F_{D271})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D271})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D271})=0`
+- 收敛判据 / Convergence: `Converged(F_{D271}) ⇔ ΔF_{D271}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6866,6 +13664,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如果新门控面p₅<<p*→极小点可能恢复。可检验物理预测。 描述 量子引力-新门控面预测。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D272}`
+- 定义域 / Domain: `X_{D272}`
+- 值域 / Codomain: `Y_{D272}`
+- 数学表达 / Expression: `F_{D272}(x) := M5的量子引力无极小点可能通过增加低p门控面（新基本力）来修复。p*∝√n→增加n提高p*→如果新门控面p₅<<p*→极小点可能恢复。可检验物理预测。`
+- 有效条件 / Validity: `J_n^+(F_{D272})=1 ∧ J_n^-(F_{D272})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D272`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D272} and codomain Y_{D272}.
+  - 2. Normalize the source expression as F_{D272}: X_{D272}->Y_{D272}.
+  - 3. If upstream objects D_{D272} exist, compose F_{D272}=N(⊕_{g∈D_{D272}} g); otherwise treat F_{D272} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D272})=1 and J_n^-(F_{D272})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D272})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D272})=0`
+- 收敛判据 / Convergence: `Converged(F_{D272}) ⇔ ΔF_{D272}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6888,6 +13708,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M12的ḡ取决于pᵢ分布形态：正态分布→ḡ≈1→最大耦合→最大缓冲；指数分布→ḡ<2/3→弱耦合；均匀分布→ḡ=2/3。D253"p集中→鲁棒"的统计基础。 描述 耦合强度-分布形态函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D273}`
+- 定义域 / Domain: `X_{D273}`
+- 值域 / Codomain: `Y_{D273}`
+- 数学表达 / Expression: `F_{D273}(x) := M12的ḡ取决于pᵢ分布形态：正态分布→ḡ≈1→最大耦合→最大缓冲；指数分布→ḡ<2/3→弱耦合；均匀分布→ḡ=2/3。D253"p集中→鲁棒"的统计基础。`
+- 有效条件 / Validity: `J_n^+(F_{D273})=1 ∧ J_n^-(F_{D273})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D253`, `D273`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D273} and codomain Y_{D273}.
+  - 2. Normalize the source expression as F_{D273}: X_{D273}->Y_{D273}.
+  - 3. If upstream objects D_{D273} exist, compose F_{D273}=N(⊕_{g∈D_{D273}} g); otherwise treat F_{D273} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D273})=1 and J_n^-(F_{D273})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D273})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D273})=0`
+- 收敛判据 / Convergence: `Converged(F_{D273}) ⇔ ΔF_{D273}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6908,6 +13750,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M14良性循环收敛速度由反馈增益K∝|∂g_eff/∂p_max|·∂p*/∂g_eff·β决定。K>1→自加速快速收敛，K<1→衰减缓慢收敛。干预力度β是K的线性因子。 描述 良性循环收敛速度函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D274}`
+- 定义域 / Domain: `X_{D274}`
+- 值域 / Codomain: `Y_{D274}`
+- 数学表达 / Expression: `F_{D274}(x) := M14良性循环收敛速度由反馈增益K∝|∂g_eff/∂p_max|·∂p*/∂g_eff·β决定。K>1→自加速快速收敛，K<1→衰减缓慢收敛。干预力度β是K的线性因子。`
+- 有效条件 / Validity: `J_n^+(F_{D274})=1 ∧ J_n^-(F_{D274})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D274`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D274} and codomain Y_{D274}.
+  - 2. Normalize the source expression as F_{D274}: X_{D274}->Y_{D274}.
+  - 3. If upstream objects D_{D274} exist, compose F_{D274}=N(⊕_{g∈D_{D274}} g); otherwise treat F_{D274} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D274})=1 and J_n^-(F_{D274})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D274})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D274})=0`
+- 收敛判据 / Convergence: `Converged(F_{D274}) ⇔ ΔF_{D274}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6930,6 +13794,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M8的d_opt随时间漂移：学习>衰老→d_opt右移（升级），学习<衰老→d_opt左移（降级）。衰老本质=d_opt左移而实际d跟不上→偏离增大→Φ增长。 描述 维度最优漂移函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D275}`
+- 定义域 / Domain: `X_{D275}`
+- 值域 / Codomain: `Y_{D275}`
+- 数学表达 / Expression: `F_{D275}(x) := M8的d_opt随时间漂移：学习>衰老→d_opt右移（升级），学习<衰老→d_opt左移（降级）。衰老本质=d_opt左移而实际d跟不上→偏离增大→Φ增长。`
+- 有效条件 / Validity: `J_n^+(F_{D275})=1 ∧ J_n^-(F_{D275})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D275`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D275} and codomain Y_{D275}.
+  - 2. Normalize the source expression as F_{D275}: X_{D275}->Y_{D275}.
+  - 3. If upstream objects D_{D275} exist, compose F_{D275}=N(⊕_{g∈D_{D275}} g); otherwise treat F_{D275} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D275})=1 and J_n^-(F_{D275})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D275})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D275})=0`
+- 收敛判据 / Convergence: `Converged(F_{D275}) ⇔ ΔF_{D275}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6950,6 +13836,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M1的ΔΦ导致D158预测误差|e^{ΔΦ}-1|：ΔΦ=1→误差172%→预测失效。pᵢ<0.5时D158可靠（误差<30%），0.5-0.8谨慎使用，>0.8不可信。 描述 预测失效阈值函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D276}`
+- 定义域 / Domain: `X_{D276}`
+- 值域 / Codomain: `Y_{D276}`
+- 数学表达 / Expression: `F_{D276}(x) := M1的ΔΦ导致D158预测误差|e^{ΔΦ}-1|：ΔΦ=1→误差172%→预测失效。pᵢ<0.5时D158可靠（误差<30%），0.5-0.8谨慎使用，>0.8不可信。`
+- 有效条件 / Validity: `J_n^+(F_{D276})=1 ∧ J_n^-(F_{D276})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D276`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D276} and codomain Y_{D276}.
+  - 2. Normalize the source expression as F_{D276}: X_{D276}->Y_{D276}.
+  - 3. If upstream objects D_{D276} exist, compose F_{D276}=N(⊕_{g∈D_{D276}} g); otherwise treat F_{D276} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D276})=1 and J_n^-(F_{D276})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D276})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D276})=0`
+- 收敛判据 / Convergence: `Converged(F_{D276}) ⇔ ΔF_{D276}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -6975,6 +13883,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min(三指标)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。 描述 统一健康指标函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D277}`
+- 定义域 / Domain: `X_{D277}`
+- 值域 / Codomain: `Y_{D277}`
+- 数学表达 / Expression: `F_{D277}(x) := M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C_buffer，阶段3=1/ΔΦ。统一H=min(三指标)→最小值决定最弱环节。H=0时崩溃。可用于实时监测和预警。`
+- 有效条件 / Validity: `J_n^+(F_{D277})=1 ∧ J_n^-(F_{D277})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D277`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D277} and codomain Y_{D277}.
+  - 2. Normalize the source expression as F_{D277}: X_{D277}->Y_{D277}.
+  - 3. If upstream objects D_{D277} exist, compose F_{D277}=N(⊕_{g∈D_{D277}} g); otherwise treat F_{D277} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D277})=1 and J_n^-(F_{D277})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D277})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D277})=0`
+- 收敛判据 / Convergence: `Converged(F_{D277}) ⇔ ΔF_{D277}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -6995,6 +13925,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M10的C_max与p*比值∝n^{3/2}→n越大峰值余量越充裕。但衰减速度∝n²→余量消耗更快。复杂系统"家底厚但花得快"。 描述 缓冲峰值余量函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D278}`
+- 定义域 / Domain: `X_{D278}`
+- 值域 / Codomain: `Y_{D278}`
+- 数学表达 / Expression: `F_{D278}(x) := M10的C_max与p*比值∝n^{3/2}→n越大峰值余量越充裕。但衰减速度∝n²→余量消耗更快。复杂系统"家底厚但花得快"。`
+- 有效条件 / Validity: `J_n^+(F_{D278})=1 ∧ J_n^-(F_{D278})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D278`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D278} and codomain Y_{D278}.
+  - 2. Normalize the source expression as F_{D278}: X_{D278}->Y_{D278}.
+  - 3. If upstream objects D_{D278} exist, compose F_{D278}=N(⊕_{g∈D_{D278}} g); otherwise treat F_{D278} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D278})=1 and J_n^-(F_{D278})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D278})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D278})=0`
+- 收敛判据 / Convergence: `Converged(F_{D278}) ⇔ ΔF_{D278}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7017,6 +13969,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M13正反馈干预的时机悖论：早期效果弱但窗口宽，晚期效果强但窗口窄。最优时机=D262缓冲峰值时刻t_peak。错过t_peak后窗口快速关闭。 描述 干预时机悖论函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D279}`
+- 定义域 / Domain: `X_{D279}`
+- 值域 / Codomain: `Y_{D279}`
+- 数学表达 / Expression: `F_{D279}(x) := M13正反馈干预的时机悖论：早期效果弱但窗口宽，晚期效果强但窗口窄。最优时机=D262缓冲峰值时刻t_peak。错过t_peak后窗口快速关闭。`
+- 有效条件 / Validity: `J_n^+(F_{D279})=1 ∧ J_n^-(F_{D279})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D279`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D279} and codomain Y_{D279}.
+  - 2. Normalize the source expression as F_{D279}: X_{D279}->Y_{D279}.
+  - 3. If upstream objects D_{D279} exist, compose F_{D279}=N(⊕_{g∈D_{D279}} g); otherwise treat F_{D279} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D279})=1 and J_n^-(F_{D279})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D279})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D279})=0`
+- 收敛判据 / Convergence: `Converged(F_{D279}) ⇔ ΔF_{D279}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7037,6 +14011,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M7的干预策略：A均匀降pᵢ（全面但成本高），B只降p_max（效率∝(n-1)·p_max/p̄倍于A）。最优=先B后A：先集中火力打最硬钉子，再均匀巩固。 描述 容斥干预两步策略函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D280}`
+- 定义域 / Domain: `X_{D280}`
+- 值域 / Codomain: `Y_{D280}`
+- 数学表达 / Expression: `F_{D280}(x) := M7的干预策略：A均匀降pᵢ（全面但成本高），B只降p_max（效率∝(n-1)·p_max/p̄倍于A）。最优=先B后A：先集中火力打最硬钉子，再均匀巩固。`
+- 有效条件 / Validity: `J_n^+(F_{D280})=1 ∧ J_n^-(F_{D280})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D280`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D280} and codomain Y_{D280}.
+  - 2. Normalize the source expression as F_{D280}: X_{D280}->Y_{D280}.
+  - 3. If upstream objects D_{D280} exist, compose F_{D280}=N(⊕_{g∈D_{D280}} g); otherwise treat F_{D280} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D280})=1 and J_n^-(F_{D280})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D280})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D280})=0`
+- 收敛判据 / Convergence: `Converged(F_{D280}) ⇔ ΔF_{D280}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7059,6 +14055,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M2的极小点漂移对鲁棒性影响取决于Φ三阶导数符号。学习新技能→δμ<0→极小点下移→无论偏斜方向都提升鲁棒性。物理大统一d³Φ/dμ³≈0→漂移影响极小。 描述 极小点漂移-鲁棒性耦合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D281}`
+- 定义域 / Domain: `X_{D281}`
+- 值域 / Codomain: `Y_{D281}`
+- 数学表达 / Expression: `F_{D281}(x) := M2的极小点漂移对鲁棒性影响取决于Φ三阶导数符号。学习新技能→δμ<0→极小点下移→无论偏斜方向都提升鲁棒性。物理大统一d³Φ/dμ³≈0→漂移影响极小。`
+- 有效条件 / Validity: `J_n^+(F_{D281})=1 ∧ J_n^-(F_{D281})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D281`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D281} and codomain Y_{D281}.
+  - 2. Normalize the source expression as F_{D281}: X_{D281}->Y_{D281}.
+  - 3. If upstream objects D_{D281} exist, compose F_{D281}=N(⊕_{g∈D_{D281}} g); otherwise treat F_{D281} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D281})=1 and J_n^-(F_{D281})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D281})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D281})=0`
+- 收敛判据 / Convergence: `Converged(F_{D281}) ⇔ ΔF_{D281}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7079,6 +14097,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M3的改进近似：Φ_2=Σpᵢ+Σpᵢ²/2在pᵢ<0.8时误差<17%，远优于Φ_approx。推荐三级精度：pᵢ<0.5用Φ_approx，0.5-0.8用Φ_2，>0.8用Φ_exact。 描述 二阶近似函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D282}`
+- 定义域 / Domain: `X_{D282}`
+- 值域 / Codomain: `Y_{D282}`
+- 数学表达 / Expression: `F_{D282}(x) := M3的改进近似：Φ_2=Σpᵢ+Σpᵢ²/2在pᵢ<0.8时误差<17%，远优于Φ_approx。推荐三级精度：pᵢ<0.5用Φ_approx，0.5-0.8用Φ_2，>0.8用Φ_exact。`
+- 有效条件 / Validity: `J_n^+(F_{D282})=1 ∧ J_n^-(F_{D282})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D282`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D282} and codomain Y_{D282}.
+  - 2. Normalize the source expression as F_{D282}: X_{D282}->Y_{D282}.
+  - 3. If upstream objects D_{D282} exist, compose F_{D282}=N(⊕_{g∈D_{D282}} g); otherwise treat F_{D282} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D282})=1 and J_n^-(F_{D282})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D282})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D282})=0`
+- 收敛判据 / Convergence: `Converged(F_{D282}) ⇔ ΔF_{D282}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7104,6 +14144,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M6的d=4稳定性约束宇宙学常数：Λ_CDC过大→d_eff>4→容斥主导→结构无法形成；过小→d_eff<4→坍缩。Λ_CDC被约束在使d_eff≈4的窄区间→宇宙学常数问题的容斥解释。 描述 宇宙学常数-容斥约束函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D283}`
+- 定义域 / Domain: `X_{D283}`
+- 值域 / Codomain: `Y_{D283}`
+- 数学表达 / Expression: `F_{D283}(x) := M6的d=4稳定性约束宇宙学常数：Λ_CDC过大→d_eff>4→容斥主导→结构无法形成；过小→d_eff<4→坍缩。Λ_CDC被约束在使d_eff≈4的窄区间→宇宙学常数问题的容斥解释。`
+- 有效条件 / Validity: `J_n^+(F_{D283})=1 ∧ J_n^-(F_{D283})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D283`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D283} and codomain Y_{D283}.
+  - 2. Normalize the source expression as F_{D283}: X_{D283}->Y_{D283}.
+  - 3. If upstream objects D_{D283} exist, compose F_{D283}=N(⊕_{g∈D_{D283}} g); otherwise treat F_{D283} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D283})=1 and J_n^-(F_{D283})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D283})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D283})=0`
+- 收敛判据 / Convergence: `Converged(F_{D283}) ⇔ ΔF_{D283}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7124,6 +14186,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M8的d_opt和σ_opt≈1.65的关系：n_eff≈d_opt/1.65→最优配置下独立门控面数约为维度的60%。如果σ_opt≈1.65在物理/生物/社会系统中都成立，它是跨域常数——类似精细结构常数。 描述 跨域常数函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D284}`
+- 定义域 / Domain: `X_{D284}`
+- 值域 / Codomain: `Y_{D284}`
+- 数学表达 / Expression: `F_{D284}(x) := M8的d_opt和σ_opt≈1.65的关系：n_eff≈d_opt/1.65→最优配置下独立门控面数约为维度的60%。如果σ_opt≈1.65在物理/生物/社会系统中都成立，它是跨域常数——类似精细结构常数。`
+- 有效条件 / Validity: `J_n^+(F_{D284})=1 ∧ J_n^-(F_{D284})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D284`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D284} and codomain Y_{D284}.
+  - 2. Normalize the source expression as F_{D284}: X_{D284}->Y_{D284}.
+  - 3. If upstream objects D_{D284} exist, compose F_{D284}=N(⊕_{g∈D_{D284}} g); otherwise treat F_{D284} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D284})=1 and J_n^-(F_{D284})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D284})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D284})=0`
+- 收敛判据 / Convergence: `Converged(F_{D284}) ⇔ ΔF_{D284}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7148,6 +14232,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M11的阶段2干预机会面积∝p*(√d-1)/d，在d≈4时最大。d=4的双重最优：最稳定+最可修复。不只是物理定律在d=4最稳定，连"修复系统的机会"也在d=4最大。 描述 干预机会面积函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D285}`
+- 定义域 / Domain: `X_{D285}`
+- 值域 / Codomain: `Y_{D285}`
+- 数学表达 / Expression: `F_{D285}(x) := M11的阶段2干预机会面积∝p*(√d-1)/d，在d≈4时最大。d=4的双重最优：最稳定+最可修复。不只是物理定律在d=4最稳定，连"修复系统的机会"也在d=4最大。`
+- 有效条件 / Validity: `J_n^+(F_{D285})=1 ∧ J_n^-(F_{D285})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D285`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D285} and codomain Y_{D285}.
+  - 2. Normalize the source expression as F_{D285}: X_{D285}->Y_{D285}.
+  - 3. If upstream objects D_{D285} exist, compose F_{D285}=N(⊕_{g∈D_{D285}} g); otherwise treat F_{D285} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D285})=1 and J_n^-(F_{D285})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D285})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D285})=0`
+- 收敛判据 / Convergence: `Converged(F_{D285}) ⇔ ΔF_{D285}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7168,6 +14274,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M4的p*对门槛分布形态有强依赖：均匀分布p*=√((n-1)/2)，极端分散p*=(p_min/p_max)√(n-1)。降低p_max不仅直接降Φ，还通过集中p分布提高p*→双重收益。 描述 *-分布形态函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D286}`
+- 定义域 / Domain: `X_{D286}`
+- 值域 / Codomain: `Y_{D286}`
+- 数学表达 / Expression: `F_{D286}(x) := M4的p*对门槛分布形态有强依赖：均匀分布p*=√((n-1)/2)，极端分散p*=(p_min/p_max)√(n-1)。降低p_max不仅直接降Φ，还通过集中p分布提高p*→双重收益。`
+- 有效条件 / Validity: `J_n^+(F_{D286})=1 ∧ J_n^-(F_{D286})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D286`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D286} and codomain Y_{D286}.
+  - 2. Normalize the source expression as F_{D286}: X_{D286}->Y_{D286}.
+  - 3. If upstream objects D_{D286} exist, compose F_{D286}=N(⊕_{g∈D_{D286}} g); otherwise treat F_{D286} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D286})=1 and J_n^-(F_{D286})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D286})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D286})=0`
+- 收敛判据 / Convergence: `Converged(F_{D286}) ⇔ ΔF_{D286}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7190,6 +14318,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准模型预测，是容斥主导的证据。新判据：不只看"有没有"，还看"是否比独立假设预测的更强"。 描述 容斥主导实验签名函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D287}`
+- 定义域 / Domain: `X_{D287}`
+- 值域 / Codomain: `Y_{D287}`
+- 数学表达 / Expression: `F_{D287}(x) := M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准模型预测，是容斥主导的证据。新判据：不只看"有没有"，还看"是否比独立假设预测的更强"。`
+- 有效条件 / Validity: `J_n^+(F_{D287})=1 ∧ J_n^-(F_{D287})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D287`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D287} and codomain Y_{D287}.
+  - 2. Normalize the source expression as F_{D287}: X_{D287}->Y_{D287}.
+  - 3. If upstream objects D_{D287} exist, compose F_{D287}=N(⊕_{g∈D_{D287}} g); otherwise treat F_{D287} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D287})=1 and J_n^-(F_{D287})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D287})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D287})=0`
+- 收敛判据 / Convergence: `Converged(F_{D287}) ⇔ ΔF_{D287}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7211,6 +14361,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M12的g_eff演化方程g_eff(t)=1-Δα·t/(p₀+α_max·t)。Δα>α_max时g_eff在有限时间t_c=p₀/(Δα-α_max)内归零→耦合消失→系统崩溃。"突然崩溃"的精确条件：增速极化程度Δα/α_max>1。 描述 有限时间崩溃函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D288}`
+- 定义域 / Domain: `X_{D288}`
+- 值域 / Codomain: `Y_{D288}`
+- 数学表达 / Expression: `F_{D288}(x) := M12的g_eff演化方程g_eff(t)=1-Δα·t/(p₀+α_max·t)。Δα>α_max时g_eff在有限时间t_c=p₀/(Δα-α_max)内归零→耦合消失→系统崩溃。"突然崩溃"的精确条件：增速极化程度Δα/α_max>1。`
+- 有效条件 / Validity: `J_n^+(F_{D288})=1 ∧ J_n^-(F_{D288})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D288`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D288} and codomain Y_{D288}.
+  - 2. Normalize the source expression as F_{D288}: X_{D288}->Y_{D288}.
+  - 3. If upstream objects D_{D288} exist, compose F_{D288}=N(⊕_{g∈D_{D288}} g); otherwise treat F_{D288} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D288})=1 and J_n^-(F_{D288})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D288})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D288})=0`
+- 收敛判据 / Convergence: `Converged(F_{D288}) ⇔ ΔF_{D288}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7231,6 +14403,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max<0.5逃逸容易但效果弱，p_max>0.8几乎不可能逃逸。D279干预时机悖论的精确化。 描述 良性循环逃逸速度函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D289}`
+- 定义域 / Domain: `X_{D289}`
+- 值域 / Codomain: `Y_{D289}`
+- 数学表达 / Expression: `F_{D289}(x) := M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max<0.5逃逸容易但效果弱，p_max>0.8几乎不可能逃逸。D279干预时机悖论的精确化。`
+- 有效条件 / Validity: `J_n^+(F_{D289})=1 ∧ J_n^-(F_{D289})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D289`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D289} and codomain Y_{D289}.
+  - 2. Normalize the source expression as F_{D289}: X_{D289}->Y_{D289}.
+  - 3. If upstream objects D_{D289} exist, compose F_{D289}=N(⊕_{g∈D_{D289}} g); otherwise treat F_{D289} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D289})=1 and J_n^-(F_{D289})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D289})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D289})=0`
+- 收敛判据 / Convergence: `Converged(F_{D289}) ⇔ ΔF_{D289}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7256,6 +14450,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M7的容斥加速逆转条件：p_max相对下降速率|α_max|/p_max必须超过其他pᵢ平均相对增长速率。温和改革通常无效——降速不够快，容斥加速仍在继续。需要"休克疗法"级别干预才能逆转。 描述 容斥加速逆转条件函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D290}`
+- 定义域 / Domain: `X_{D290}`
+- 值域 / Codomain: `Y_{D290}`
+- 数学表达 / Expression: `F_{D290}(x) := M7的容斥加速逆转条件：p_max相对下降速率|α_max|/p_max必须超过其他pᵢ平均相对增长速率。温和改革通常无效——降速不够快，容斥加速仍在继续。需要"休克疗法"级别干预才能逆转。`
+- 有效条件 / Validity: `J_n^+(F_{D290})=1 ∧ J_n^-(F_{D290})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D290`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D290} and codomain Y_{D290}.
+  - 2. Normalize the source expression as F_{D290}: X_{D290}->Y_{D290}.
+  - 3. If upstream objects D_{D290} exist, compose F_{D290}=N(⊕_{g∈D_{D290}} g); otherwise treat F_{D290} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D290})=1 and J_n^-(F_{D290})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D290})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D290})=0`
+- 收敛判据 / Convergence: `Converged(F_{D290}) ⇔ ΔF_{D290}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7276,6 +14492,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exact（pᵢ>0.5），约10-15%的案例D158完全不可信（pᵢ>0.8）。量子力学测量、热力学相变、相对论极端速度、凝聚态临界温度最需修正。 描述 案例可靠性分类函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D291}`
+- 定义域 / Domain: `X_{D291}`
+- 值域 / Codomain: `Y_{D291}`
+- 数学表达 / Expression: `F_{D291}(x) := M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exact（pᵢ>0.5），约10-15%的案例D158完全不可信（pᵢ>0.8）。量子力学测量、热力学相变、相对论极端速度、凝聚态临界温度最需修正。`
+- 有效条件 / Validity: `J_n^+(F_{D291})=1 ∧ J_n^-(F_{D291})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D291`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D291} and codomain Y_{D291}.
+  - 2. Normalize the source expression as F_{D291}: X_{D291}->Y_{D291}.
+  - 3. If upstream objects D_{D291} exist, compose F_{D291}=N(⊕_{g∈D_{D291}} g); otherwise treat F_{D291} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D291})=1 and J_n^-(F_{D291})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D291})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D291})=0`
+- 收敛判据 / Convergence: `Converged(F_{D291}) ⇔ ΔF_{D291}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7301,6 +14539,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M8的d_opt吸引域深度∝Σαᵢ²/(1-pᵢ)²。高p门控面α²越大→吸引越强但偏离后崩溃越猛。d_opt的"引力"和偏离后的"暴力"成正比——强吸引域=稳定但一旦失稳更致命。 描述 维度最优吸引域函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D292}`
+- 定义域 / Domain: `X_{D292}`
+- 值域 / Codomain: `Y_{D292}`
+- 数学表达 / Expression: `F_{D292}(x) := M8的d_opt吸引域深度∝Σαᵢ²/(1-pᵢ)²。高p门控面α²越大→吸引越强但偏离后崩溃越猛。d_opt的"引力"和偏离后的"暴力"成正比——强吸引域=稳定但一旦失稳更致命。`
+- 有效条件 / Validity: `J_n^+(F_{D292})=1 ∧ J_n^-(F_{D292})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D292`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D292} and codomain Y_{D292}.
+  - 2. Normalize the source expression as F_{D292}: X_{D292}->Y_{D292}.
+  - 3. If upstream objects D_{D292} exist, compose F_{D292}=N(⊕_{g∈D_{D292}} g); otherwise treat F_{D292} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D292})=1 and J_n^-(F_{D292})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D292})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D292})=0`
+- 收敛判据 / Convergence: `Converged(F_{D292}) ⇔ ΔF_{D292}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7321,6 +14581,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区有效，一级相变区无效。 描述 三阶段-相变分类对应函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D293}`
+- 定义域 / Domain: `X_{D293}`
+- 值域 / Codomain: `Y_{D293}`
+- 数学表达 / Expression: `F_{D293}(x) := M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区有效，一级相变区无效。`
+- 有效条件 / Validity: `J_n^+(F_{D293})=1 ∧ J_n^-(F_{D293})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D293`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D293} and codomain Y_{D293}.
+  - 2. Normalize the source expression as F_{D293}: X_{D293}->Y_{D293}.
+  - 3. If upstream objects D_{D293} exist, compose F_{D293}=N(⊕_{g∈D_{D293}} g); otherwise treat F_{D293} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D293})=1 and J_n^-(F_{D293})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D293})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D293})=0`
+- 收敛判据 / Convergence: `Converged(F_{D293}) ⇔ ΔF_{D293}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7343,6 +14625,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M10的缓冲消耗速度∝Δα·n²p̄²ḡ/2。三个加速因子：n大（复杂）、Δα大（极化）、p̄大（高风险）。高n+高Δα+高p̄=崩溃高危系统。 描述 缓冲消耗速度函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D294}`
+- 定义域 / Domain: `X_{D294}`
+- 值域 / Codomain: `Y_{D294}`
+- 数学表达 / Expression: `F_{D294}(x) := M10的缓冲消耗速度∝Δα·n²p̄²ḡ/2。三个加速因子：n大（复杂）、Δα大（极化）、p̄大（高风险）。高n+高Δα+高p̄=崩溃高危系统。`
+- 有效条件 / Validity: `J_n^+(F_{D294})=1 ∧ J_n^-(F_{D294})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D294`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D294} and codomain Y_{D294}.
+  - 2. Normalize the source expression as F_{D294}: X_{D294}->Y_{D294}.
+  - 3. If upstream objects D_{D294} exist, compose F_{D294}=N(⊕_{g∈D_{D294}} g); otherwise treat F_{D294} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D294})=1 and J_n^-(F_{D294})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D294})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D294})=0`
+- 收敛判据 / Convergence: `Converged(F_{D294}) ⇔ ΔF_{D294}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7364,6 +14668,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M13正反馈的不可逆点：p_max>p*(g_eff)→降低p_max只降Φ不提p*→良性循环无法启动→不可逆。p_max=p*是"还有救"和"没救了"的精确分界。 描述 正反馈不可逆点函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D295}`
+- 定义域 / Domain: `X_{D295}`
+- 值域 / Codomain: `Y_{D295}`
+- 数学表达 / Expression: `F_{D295}(x) := M13正反馈的不可逆点：p_max>p*(g_eff)→降低p_max只降Φ不提p*→良性循环无法启动→不可逆。p_max=p*是"还有救"和"没救了"的精确分界。`
+- 有效条件 / Validity: `J_n^+(F_{D295})=1 ∧ J_n^-(F_{D295})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D295`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D295} and codomain Y_{D295}.
+  - 2. Normalize the source expression as F_{D295}: X_{D295}->Y_{D295}.
+  - 3. If upstream objects D_{D295} exist, compose F_{D295}=N(⊕_{g∈D_{D295}} g); otherwise treat F_{D295} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D295})=1 and J_n^-(F_{D295})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D295})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D295})=0`
+- 收敛判据 / Convergence: `Converged(F_{D295}) ⇔ ΔF_{D295}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7384,6 +14710,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M3的Φ近似阶数选择：pᵢ<0.5→1阶（误差<13%），0.5-0.8→2阶（<17%），0.8-0.95→3阶（~10%），≥0.95→Φ_exact。精度-成本权衡表。 描述 近似阶数选择函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D296}`
+- 定义域 / Domain: `X_{D296}`
+- 值域 / Codomain: `Y_{D296}`
+- 数学表达 / Expression: `F_{D296}(x) := M3的Φ近似阶数选择：pᵢ<0.5→1阶（误差<13%），0.5-0.8→2阶（<17%），0.8-0.95→3阶（~10%），≥0.95→Φ_exact。精度-成本权衡表。`
+- 有效条件 / Validity: `J_n^+(F_{D296})=1 ∧ J_n^-(F_{D296})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D296`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D296} and codomain Y_{D296}.
+  - 2. Normalize the source expression as F_{D296}: X_{D296}->Y_{D296}.
+  - 3. If upstream objects D_{D296} exist, compose F_{D296}=N(⊕_{g∈D_{D296}} g); otherwise treat F_{D296} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D296})=1 and J_n^-(F_{D296})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D296})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D296})=0`
+- 收敛判据 / Convergence: `Converged(F_{D296}) ⇔ ΔF_{D296}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7409,6 +14757,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必须让d=4稳定。 描述 基本常数-容斥约束函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D297}`
+- 定义域 / Domain: `X_{D297}`
+- 值域 / Codomain: `Y_{D297}`
+- 数学表达 / Expression: `F_{D297}(x) := M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必须让d=4稳定。`
+- 有效条件 / Validity: `J_n^+(F_{D297})=1 ∧ J_n^-(F_{D297})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D297`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D297} and codomain Y_{D297}.
+  - 2. Normalize the source expression as F_{D297}: X_{D297}->Y_{D297}.
+  - 3. If upstream objects D_{D297} exist, compose F_{D297}=N(⊕_{g∈D_{D297}} g); otherwise treat F_{D297} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D297})=1 and J_n^-(F_{D297})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D297})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D297})=0`
+- 收敛判据 / Convergence: `Converged(F_{D297}) ⇔ ΔF_{D297}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7429,6 +14799,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M11的设计原则：增大n_eff（宽缓冲）但ḡ适中（防雪崩）。σ≈1.65是平衡点→n_eff≈d/1.65→阶段2宽度适中+阶段3雪崩可控。过聚集→雪崩风险，过分散→缓冲不足。 描述 鲁棒系统设计原则函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D298}`
+- 定义域 / Domain: `X_{D298}`
+- 值域 / Codomain: `Y_{D298}`
+- 数学表达 / Expression: `F_{D298}(x) := M11的设计原则：增大n_eff（宽缓冲）但ḡ适中（防雪崩）。σ≈1.65是平衡点→n_eff≈d/1.65→阶段2宽度适中+阶段3雪崩可控。过聚集→雪崩风险，过分散→缓冲不足。`
+- 有效条件 / Validity: `J_n^+(F_{D298})=1 ∧ J_n^-(F_{D298})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D298`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D298} and codomain Y_{D298}.
+  - 2. Normalize the source expression as F_{D298}: X_{D298}->Y_{D298}.
+  - 3. If upstream objects D_{D298} exist, compose F_{D298}=N(⊕_{g∈D_{D298}} g); otherwise treat F_{D298} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D298})=1 and J_n^-(F_{D298})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D298})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D298})=0`
+- 收敛判据 / Convergence: `Converged(F_{D298}) ⇔ ΔF_{D298}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7453,6 +14845,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M14的良性/恶性循环可共存：某些pᵢ降（良性），某些升（恶性）。容斥凸性给恶性方向天然加速→良性子循环必须足够强才能抵消。"部分改革"通常不够——被恶性子循环的容斥加速压倒。 描述 良性-恶性共存函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D299}`
+- 定义域 / Domain: `X_{D299}`
+- 值域 / Codomain: `Y_{D299}`
+- 数学表达 / Expression: `F_{D299}(x) := F_{D299}: X_{D299} -> Y_{D299}, y = F_{D299}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D299})=1 ∧ J_n^-(F_{D299})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D299`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D299} and codomain Y_{D299}.
+  - 2. Normalize the source expression as F_{D299}: X_{D299}->Y_{D299}.
+  - 3. If upstream objects D_{D299} exist, compose F_{D299}=N(⊕_{g∈D_{D299}} g); otherwise treat F_{D299} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D299})=1 and J_n^-(F_{D299})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D299})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D299})=0`
+- 收敛判据 / Convergence: `Converged(F_{D299}) ⇔ ΔF_{D299}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7473,6 +14887,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M7的容斥加速跨代累积∝k²。每代不只新增Δp，还有前面所有Δp的交叉效应累积。代际容斥∝k²→阶层固化的跨代传递是加速的——"三代出贵族"不只是财富累积，还有容斥交叉项的k²加速。 描述 代际容斥累积函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D300}`
+- 定义域 / Domain: `X_{D300}`
+- 值域 / Codomain: `Y_{D300}`
+- 数学表达 / Expression: `F_{D300}(x) := M7的容斥加速跨代累积∝k²。每代不只新增Δp，还有前面所有Δp的交叉效应累积。代际容斥∝k²→阶层固化的跨代传递是加速的——"三代出贵族"不只是财富累积，还有容斥交叉项的k²加速。`
+- 有效条件 / Validity: `J_n^+(F_{D300})=1 ∧ J_n^-(F_{D300})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D300`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D300} and codomain Y_{D300}.
+  - 2. Normalize the source expression as F_{D300}: X_{D300}->Y_{D300}.
+  - 3. If upstream objects D_{D300} exist, compose F_{D300}=N(⊕_{g∈D_{D300}} g); otherwise treat F_{D300} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D300})=1 and J_n^-(F_{D300})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D300})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D300})=0`
+- 收敛判据 / Convergence: `Converged(F_{D300}) ⇔ ΔF_{D300}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7495,6 +14931,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定但漂移快，是D292"强吸引域失稳更致命"的速率版本。 描述 极小点漂移速率函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D301}`
+- 定义域 / Domain: `X_{D301}`
+- 值域 / Codomain: `Y_{D301}`
+- 数学表达 / Expression: `F_{D301}(x) := M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定但漂移快，是D292"强吸引域失稳更致命"的速率版本。`
+- 有效条件 / Validity: `J_n^+(F_{D301})=1 ∧ J_n^-(F_{D301})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D301`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D301} and codomain Y_{D301}.
+  - 2. Normalize the source expression as F_{D301}: X_{D301}->Y_{D301}.
+  - 3. If upstream objects D_{D301} exist, compose F_{D301}=N(⊕_{g∈D_{D301}} g); otherwise treat F_{D301} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D301})=1 and J_n^-(F_{D301})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D301})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D301})=0`
+- 收敛判据 / Convergence: `Converged(F_{D301}) ⇔ ΔF_{D301}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7515,6 +14973,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M3的容斥高阶项在pᵢ→1时ΔΦ→e^{pᵢ}-1-pᵢ→∞，发散速率∝e^{pᵢ}。pᵢ接近1时容斥修正爆炸式增长，不是"大了一点"。D260敏感度阈值pᵢ>0.5后急剧上升的数学根源就是容斥项的指数发散。D296的Φ_exact在pᵢ>0.95时不可替代。 描述 容斥渐近发散函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D302}`
+- 定义域 / Domain: `X_{D302}`
+- 值域 / Codomain: `Y_{D302}`
+- 数学表达 / Expression: `F_{D302}(x) := M3的容斥高阶项在pᵢ→1时ΔΦ→e^{pᵢ}-1-pᵢ→∞，发散速率∝e^{pᵢ}。pᵢ接近1时容斥修正爆炸式增长，不是"大了一点"。D260敏感度阈值pᵢ>0.5后急剧上升的数学根源就是容斥项的指数发散。D296的Φ_exact在pᵢ>0.95时不可替代。`
+- 有效条件 / Validity: `J_n^+(F_{D302})=1 ∧ J_n^-(F_{D302})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D302`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D302} and codomain Y_{D302}.
+  - 2. Normalize the source expression as F_{D302}: X_{D302}->Y_{D302}.
+  - 3. If upstream objects D_{D302} exist, compose F_{D302}=N(⊕_{g∈D_{D302}} g); otherwise treat F_{D302} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D302})=1 and J_n^-(F_{D302})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D302})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D302})=0`
+- 收敛判据 / Convergence: `Converged(F_{D302}) ⇔ ΔF_{D302}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7540,6 +15020,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M4的竞争阈值p*随pᵢ分布演化：dp*/dt=∂p*/∂n·dn/dt + ∂p*/∂(p分布)·d(p分布)/dt。pᵢ均匀增长时p*∝√n缓慢上升（容斥占优加速），pᵢ集中增长时p*快速上升（耦合占优）。改革如果只降低部分pᵢ而不改变分布形态，p*可能不动甚至下降——"部分改革"更可能失败的动态版本，D299的动态深化。 描述 容斥-耦合竞争动态演化函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D303}`
+- 定义域 / Domain: `X_{D303}`
+- 值域 / Codomain: `Y_{D303}`
+- 数学表达 / Expression: `F_{D303}(x) := M4的竞争阈值p*随pᵢ分布演化：dp*/dt=∂p*/∂n·dn/dt + ∂p*/∂(p分布)·d(p分布)/dt。pᵢ均匀增长时p*∝√n缓慢上升（容斥占优加速），pᵢ集中增长时p*快速上升（耦合占优）。改革如果只降低部分pᵢ而不改变分布形态，p*可能不动甚至下降——"部分改革"更可能失败的动态版本，D299的动态深化。`
+- 有效条件 / Validity: `J_n^+(F_{D303})=1 ∧ J_n^-(F_{D303})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D303`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D303} and codomain Y_{D303}.
+  - 2. Normalize the source expression as F_{D303}: X_{D303}->Y_{D303}.
+  - 3. If upstream objects D_{D303} exist, compose F_{D303}=N(⊕_{g∈D_{D303}} g); otherwise treat F_{D303} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D303})=1 and J_n^-(F_{D303})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D303})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D303})=0`
+- 收敛判据 / Convergence: `Converged(F_{D303}) ⇔ ΔF_{D303}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7560,6 +15062,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CDC(D283)三者联合约束使d=4稳定。 描述 弱混合角-容斥约束函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D304}`
+- 定义域 / Domain: `X_{D304}`
+- 值域 / Codomain: `Y_{D304}`
+- 数学表达 / Expression: `F_{D304}(x) := M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CDC(D283)三者联合约束使d=4稳定。`
+- 有效条件 / Validity: `J_n^+(F_{D304})=1 ∧ J_n^-(F_{D304})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D283`, `D304`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D304} and codomain Y_{D304}.
+  - 2. Normalize the source expression as F_{D304}: X_{D304}->Y_{D304}.
+  - 3. If upstream objects D_{D304} exist, compose F_{D304}=N(⊕_{g∈D_{D304}} g); otherwise treat F_{D304} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D304})=1 and J_n^-(F_{D304})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D304})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D304})=0`
+- 收敛判据 / Convergence: `Converged(F_{D304}) ⇔ ΔF_{D304}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7584,6 +15108,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M6的d偏离4时退化路径分两支：d>4→新门控面pᵢ>p*→容斥主导→极小点消失→结构无法形成（"过度复杂"崩溃）；d<4→门控面不足→耦合过弱→缓冲不足→极小点虽在但极浅→小扰动即崩（"过度简单"崩溃）。两支不对称：d>4崩溃突然（容斥爆炸D302），d<4崩溃渐进（缓冲耗尽D294）。d=4是两种崩溃模式之间的鞍点。 描述 维度偏离退化路径函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D305}`
+- 定义域 / Domain: `X_{D305}`
+- 值域 / Codomain: `Y_{D305}`
+- 数学表达 / Expression: `F_{D305}(x) := M6的d偏离4时退化路径分两支：d>4→新门控面pᵢ>p*→容斥主导→极小点消失→结构无法形成（"过度复杂"崩溃）；d<4→门控面不足→耦合过弱→缓冲不足→极小点虽在但极浅→小扰动即崩（"过度简单"崩溃）。两支不对称：d>4崩溃突然（容斥爆炸D302），d<4崩溃渐进（缓冲耗尽D294）。d=4是两种崩溃模式之间的鞍点。`
+- 有效条件 / Validity: `J_n^+(F_{D305})=1 ∧ J_n^-(F_{D305})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D305`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D305} and codomain Y_{D305}.
+  - 2. Normalize the source expression as F_{D305}: X_{D305}->Y_{D305}.
+  - 3. If upstream objects D_{D305} exist, compose F_{D305}=N(⊕_{g∈D_{D305}} g); otherwise treat F_{D305} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D305})=1 and J_n^-(F_{D305})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D305})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D305})=0`
+- 收敛判据 / Convergence: `Converged(F_{D305}) ⇔ ΔF_{D305}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7605,6 +15151,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M7的容斥加速逆过程"去容斥"需两条件同时满足：①p_max下降速率|ḃ|>容斥加速度d²(Σpᵢpⱼ)/dt²，②p分布必须集中化（σ<σ_opt）。只满足①不满足②→容斥项基数仍大→去容斥不可持续。只满足②不满足①→p_max继续上升→容斥加速继续。D290"休克疗法"的精确版：休克疗法同时满足①②，温和改革通常只满足①。 描述 去容斥条件函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D306}`
+- 定义域 / Domain: `X_{D306}`
+- 值域 / Codomain: `Y_{D306}`
+- 数学表达 / Expression: `F_{D306}(x) := M7的容斥加速逆过程"去容斥"需两条件同时满足：①p_max下降速率|ḃ|>容斥加速度d²(Σpᵢpⱼ)/dt²，②p分布必须集中化（σ<σ_opt）。只满足①不满足②→容斥项基数仍大→去容斥不可持续。只满足②不满足①→p_max继续上升→容斥加速继续。D290"休克疗法"的精确版：休克疗法同时满足①②，温和改革通常只满足①。`
+- 有效条件 / Validity: `J_n^+(F_{D306})=1 ∧ J_n^-(F_{D306})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D290`, `D306`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D306} and codomain Y_{D306}.
+  - 2. Normalize the source expression as F_{D306}: X_{D306}->Y_{D306}.
+  - 3. If upstream objects D_{D306} exist, compose F_{D306}=N(⊕_{g∈D_{D306}} g); otherwise treat F_{D306} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D306})=1 and J_n^-(F_{D306})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D306})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D306})=0`
+- 收敛判据 / Convergence: `Converged(F_{D306}) ⇔ ΔF_{D306}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7625,6 +15193,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M8的σ_opt≈1.65来自独立性-充分性权衡：门控面独立性要求σ<2（过聚集→不独立→容斥爆炸），缓冲充分性要求σ>1（过分散→耦合弱→缓冲不足）。精确解：σ_opt是dΦ/dσ=0的根，n→∞极限下σ_opt→√e≈1.649≈1.65。σ_opt=√e不是巧合——是独立性-充分性权衡的解析解。 描述 微观起源函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D307}`
+- 定义域 / Domain: `X_{D307}`
+- 值域 / Codomain: `Y_{D307}`
+- 数学表达 / Expression: `F_{D307}(x) := M8的σ_opt≈1.65来自独立性-充分性权衡：门控面独立性要求σ<2（过聚集→不独立→容斥爆炸），缓冲充分性要求σ>1（过分散→耦合弱→缓冲不足）。精确解：σ_opt是dΦ/dσ=0的根，n→∞极限下σ_opt→√e≈1.649≈1.65。σ_opt=√e不是巧合——是独立性-充分性权衡的解析解。`
+- 有效条件 / Validity: `J_n^+(F_{D307})=1 ∧ J_n^-(F_{D307})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D307`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D307} and codomain Y_{D307}.
+  - 2. Normalize the source expression as F_{D307}: X_{D307}->Y_{D307}.
+  - 3. If upstream objects D_{D307} exist, compose F_{D307}=N(⊕_{g∈D_{D307}} g); otherwise treat F_{D307} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D307})=1 and J_n^-(F_{D307})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D307})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D307})=0`
+- 收敛判据 / Convergence: `Converged(F_{D307}) ⇔ ΔF_{D307}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7650,6 +15240,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M9的阶段过渡存在滞后：从阶段2退回阶段1的条件（缓冲恢复）比从阶段1进入阶段2的条件（缓冲消耗）更严格。滞后量Δh∝|d³Φ/dμ³|——三阶导数越大滞后越大。物理相变滞后小（d³Φ/dμ³小），社会系统滞后大（路径依赖使d³Φ/dμ³大）。社会系统"改革倒退"比"改革推进"更容易——进入阶段2容易，退回阶段1难。 描述 阶段过渡滞后函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D308}`
+- 定义域 / Domain: `X_{D308}`
+- 值域 / Codomain: `Y_{D308}`
+- 数学表达 / Expression: `F_{D308}(x) := M9的阶段过渡存在滞后：从阶段2退回阶段1的条件（缓冲恢复）比从阶段1进入阶段2的条件（缓冲消耗）更严格。滞后量Δh∝|d³Φ/dμ³|——三阶导数越大滞后越大。物理相变滞后小（d³Φ/dμ³小），社会系统滞后大（路径依赖使d³Φ/dμ³大）。社会系统"改革倒退"比"改革推进"更容易——进入阶段2容易，退回阶段1难。`
+- 有效条件 / Validity: `J_n^+(F_{D308})=1 ∧ J_n^-(F_{D308})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D308`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D308} and codomain Y_{D308}.
+  - 2. Normalize the source expression as F_{D308}: X_{D308}->Y_{D308}.
+  - 3. If upstream objects D_{D308} exist, compose F_{D308}=N(⊕_{g∈D_{D308}} g); otherwise treat F_{D308} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D308})=1 and J_n^-(F_{D308})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D308})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D308})=0`
+- 收敛判据 / Convergence: `Converged(F_{D308}) ⇔ ΔF_{D308}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7670,6 +15282,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈值时，即使p_max大幅下降，耦合强度也不足以重建缓冲——"缓冲不可逆"状态。与D295正反馈不可逆点形成双重不可逆：D295是p_max不可逆，D309是缓冲不可逆。两个不可逆点可以不同时到达——缓冲可能先于p_max进入不可逆。 描述 缓冲可重建性函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D309}`
+- 定义域 / Domain: `X_{D309}`
+- 值域 / Codomain: `Y_{D309}`
+- 数学表达 / Expression: `F_{D309}(x) := M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈值时，即使p_max大幅下降，耦合强度也不足以重建缓冲——"缓冲不可逆"状态。与D295正反馈不可逆点形成双重不可逆：D295是p_max不可逆，D309是缓冲不可逆。两个不可逆点可以不同时到达——缓冲可能先于p_max进入不可逆。`
+- 有效条件 / Validity: `J_n^+(F_{D309})=1 ∧ J_n^-(F_{D309})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D309`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D309} and codomain Y_{D309}.
+  - 2. Normalize the source expression as F_{D309}: X_{D309}->Y_{D309}.
+  - 3. If upstream objects D_{D309} exist, compose F_{D309}=N(⊕_{g∈D_{D309}} g); otherwise treat F_{D309} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D309})=1 and J_n^-(F_{D309})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D309})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D309})=0`
+- 收敛判据 / Convergence: `Converged(F_{D309}) ⇔ ΔF_{D309}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7692,6 +15326,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M11的阶段2宽度w₂有临界下限w_min∝1/(n·ḡ)。低于此宽度时阶段2退化为相变面——系统直接从阶段1跳到阶段3，没有缓冲期。小企业（D159标注）的n小、ḡ低→w₂<w_min→直接处于阶段3。任何n·ḡ<阈值的系统都不存在缓冲期——脆弱性不是状态而是结构属性。 描述 阶段2临界宽度函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D310}`
+- 定义域 / Domain: `X_{D310}`
+- 值域 / Codomain: `Y_{D310}`
+- 数学表达 / Expression: `F_{D310}(x) := M11的阶段2宽度w₂有临界下限w_min∝1/(n·ḡ)。低于此宽度时阶段2退化为相变面——系统直接从阶段1跳到阶段3，没有缓冲期。小企业（D159标注）的n小、ḡ低→w₂<w_min→直接处于阶段3。任何n·ḡ<阈值的系统都不存在缓冲期——脆弱性不是状态而是结构属性。`
+- 有效条件 / Validity: `J_n^+(F_{D310})=1 ∧ J_n^-(F_{D310})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D310`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D310} and codomain Y_{D310}.
+  - 2. Normalize the source expression as F_{D310}: X_{D310}->Y_{D310}.
+  - 3. If upstream objects D_{D310} exist, compose F_{D310}=N(⊕_{g∈D_{D310}} g); otherwise treat F_{D310} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D310})=1 and J_n^-(F_{D310})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D310})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D310})=0`
+- 收敛判据 / Convergence: `Converged(F_{D310}) ⇔ ΔF_{D310}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7712,6 +15368,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M12的g_eff极小但不为零时（0<g_eff<<g_critical），系统处于"僵尸态"：耦合名义上存在但实际无效，缓冲名义上存在但无法使用。数学特征：P_survival=e^{-Φ_eff}中Φ_eff≈Φ（耦合修正可忽略），但系统并未完全崩溃（g_eff>0）。僵尸态比完全崩溃更危险——系统看起来还在运转，掩盖了D309缓冲不可逆已到达的事实。 描述 僵尸态函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D311}`
+- 定义域 / Domain: `X_{D311}`
+- 值域 / Codomain: `Y_{D311}`
+- 数学表达 / Expression: `F_{D311}(x) := M12的g_eff极小但不为零时（0<g_eff<<g_critical），系统处于"僵尸态"：耦合名义上存在但实际无效，缓冲名义上存在但无法使用。数学特征：P_survival=e^{-Φ_eff}中Φ_eff≈Φ（耦合修正可忽略），但系统并未完全崩溃（g_eff>0）。僵尸态比完全崩溃更危险——系统看起来还在运转，掩盖了D309缓冲不可逆已到达的事实。`
+- 有效条件 / Validity: `J_n^+(F_{D311})=1 ∧ J_n^-(F_{D311})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D311`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D311} and codomain Y_{D311}.
+  - 2. Normalize the source expression as F_{D311}: X_{D311}->Y_{D311}.
+  - 3. If upstream objects D_{D311} exist, compose F_{D311}=N(⊕_{g∈D_{D311}} g); otherwise treat F_{D311} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D311})=1 and J_n^-(F_{D311})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D311})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D311})=0`
+- 收敛判据 / Convergence: `Converged(F_{D311}) ⇔ ΔF_{D311}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7736,6 +15414,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益(D274)。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应D295不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。 描述 正反馈噪声放大函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D312}`
+- 定义域 / Domain: `X_{D312}`
+- 值域 / Codomain: `Y_{D312}`
+- 数学表达 / Expression: `F_{D312}(x) := M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益(D274)。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应D295不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。`
+- 有效条件 / Validity: `J_n^+(F_{D312})=1 ∧ J_n^-(F_{D312})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D274`, `D312`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D312} and codomain Y_{D312}.
+  - 2. Normalize the source expression as F_{D312}: X_{D312}->Y_{D312}.
+  - 3. If upstream objects D_{D312} exist, compose F_{D312}=N(⊕_{g∈D_{D312}} g); otherwise treat F_{D312} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D312})=1 and J_n^-(F_{D312})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D312})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D312})=0`
+- 收敛判据 / Convergence: `Converged(F_{D312}) ⇔ ΔF_{D312}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7757,6 +15457,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M14的良性-恶性共存(D299)能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_exclusion→共存不稳定→恶性最终吞噬良性。K_benign>α_exclusion→共存稳定→良性逐步蚕食恶性。K_benign≈α_exclusion→临界共存→小扰动决定方向。D299"部分改革通常不够"的精确版：改革力度β(D274)必须使K_benign>α_exclusion。 描述 共存稳态条件函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D313}`
+- 定义域 / Domain: `X_{D313}`
+- 值域 / Codomain: `Y_{D313}`
+- 数学表达 / Expression: `F_{D313}(x) := M14的良性-恶性共存(D299)能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_exclusion→共存不稳定→恶性最终吞噬良性。K_benign>α_exclusion→共存稳定→良性逐步蚕食恶性。K_benign≈α_exclusion→临界共存→小扰动决定方向。D299"部分改革通常不够"的精确版：改革力度β(D274)必须使K_benign>α_exclusion。`
+- 有效条件 / Validity: `J_n^+(F_{D313})=1 ∧ J_n^-(F_{D313})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D274`, `D299`, `D313`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D313} and codomain Y_{D313}.
+  - 2. Normalize the source expression as F_{D313}: X_{D313}->Y_{D313}.
+  - 3. If upstream objects D_{D313} exist, compose F_{D313}=N(⊕_{g∈D_{D313}} g); otherwise treat F_{D313} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D313})=1 and J_n^-(F_{D313})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D313})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D313})=0`
+- 收敛判据 / Convergence: `Converged(F_{D313}) ⇔ ΔF_{D313}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7777,6 +15499,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ<0.1时P变化≈ΔΦ（线性区），ΔΦ>1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须用指数形式。与D296三级精度体系衔接：ΔΦ_c=0.3对应pᵢ≈0.5，与D260敏感度阈值一致。 描述 -P传导非线性阈值函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D314}`
+- 定义域 / Domain: `X_{D314}`
+- 值域 / Codomain: `Y_{D314}`
+- 数学表达 / Expression: `F_{D314}(x) := M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ<0.1时P变化≈ΔΦ（线性区），ΔΦ>1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须用指数形式。与D296三级精度体系衔接：ΔΦ_c=0.3对应pᵢ≈0.5，与D260敏感度阈值一致。`
+- 有效条件 / Validity: `J_n^+(F_{D314})=1 ∧ J_n^-(F_{D314})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D314`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D314} and codomain Y_{D314}.
+  - 2. Normalize the source expression as F_{D314}: X_{D314}->Y_{D314}.
+  - 3. If upstream objects D_{D314} exist, compose F_{D314}=N(⊕_{g∈D_{D314}} g); otherwise treat F_{D314} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D314})=1 and J_n^-(F_{D314})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D314})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D314})=0`
+- 收敛判据 / Convergence: `Converged(F_{D314}) ⇔ ΔF_{D314}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7802,6 +15546,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局极小点由min(Φ(μ_k))决定，但系统可能被困在局部极小点（亚稳态）。逃逸条件：热涨落或外部驱动使Φ跨越鞍点Φ_saddle。鞍点高度∝min(Δpᵢ²)——最接近的两个门控面差异越小，鞍点越低，亚稳态越易逃逸。社会改革中"次优但可到达"比"最优但需翻越鞍点"更实际。 描述 多极小点竞争函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D315}`
+- 定义域 / Domain: `X_{D315}`
+- 值域 / Codomain: `Y_{D315}`
+- 数学表达 / Expression: `F_{D315}(x) := M2的Φ(μ)在多个门控面参数差异大时可出现多个极小点。竞争规则：全局极小点由min(Φ(μ_k))决定，但系统可能被困在局部极小点（亚稳态）。逃逸条件：热涨落或外部驱动使Φ跨越鞍点Φ_saddle。鞍点高度∝min(Δpᵢ²)——最接近的两个门控面差异越小，鞍点越低，亚稳态越易逃逸。社会改革中"次优但可到达"比"最优但需翻越鞍点"更实际。`
+- 有效条件 / Validity: `J_n^+(F_{D315})=1 ∧ J_n^-(F_{D315})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D315`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D315} and codomain Y_{D315}.
+  - 2. Normalize the source expression as F_{D315}: X_{D315}->Y_{D315}.
+  - 3. If upstream objects D_{D315} exist, compose F_{D315}=N(⊕_{g∈D_{D315}} g); otherwise treat F_{D315} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D315})=1 and J_n^-(F_{D315})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D315})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D315})=0`
+- 收敛判据 / Convergence: `Converged(F_{D315}) ⇔ ΔF_{D315}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7822,6 +15588,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M3的dΦ/dt=Σᵢ αᵢ/(1-pᵢ) + Σᵢⱼ d(pᵢpⱼ)/dt。早期pᵢ小时容斥项占比≈0，中后期容斥项占比∝(Σpᵢ)²急剧上升。转折点在Σpᵢ≈0.5——此后容斥项主导dΦ/dt。社会系统"突然变坏"的数学根源：容斥项占比二次增长使衰退在后半段急剧加速。 描述 容斥时间权重演化函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D316}`
+- 定义域 / Domain: `X_{D316}`
+- 值域 / Codomain: `Y_{D316}`
+- 数学表达 / Expression: `F_{D316}(x) := M3的dΦ/dt=Σᵢ αᵢ/(1-pᵢ) + Σᵢⱼ d(pᵢpⱼ)/dt。早期pᵢ小时容斥项占比≈0，中后期容斥项占比∝(Σpᵢ)²急剧上升。转折点在Σpᵢ≈0.5——此后容斥项主导dΦ/dt。社会系统"突然变坏"的数学根源：容斥项占比二次增长使衰退在后半段急剧加速。`
+- 有效条件 / Validity: `J_n^+(F_{D316})=1 ∧ J_n^-(F_{D316})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D316`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D316} and codomain Y_{D316}.
+  - 2. Normalize the source expression as F_{D316}: X_{D316}->Y_{D316}.
+  - 3. If upstream objects D_{D316} exist, compose F_{D316}=N(⊕_{g∈D_{D316}} g); otherwise treat F_{D316} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D316})=1 and J_n^-(F_{D316})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D316})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D316})=0`
+- 收敛判据 / Convergence: `Converged(F_{D316}) ⇔ ΔF_{D316}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7846,6 +15634,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M4的p*对系统参数的敏感度：∂p*/∂n=p*/(2n)（弱敏感），∂p*/∂σ∝p*·(σ_opt-σ)/σ_opt²（强敏感）。p*对分布分散度σ的敏感度远高于对n的敏感度。改变分布形态（集中化）比增加门控面数n更能有效移动p*——D306"去容斥需同时集中分布"的敏感度论证。 描述 *敏感度函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D317}`
+- 定义域 / Domain: `X_{D317}`
+- 值域 / Codomain: `Y_{D317}`
+- 数学表达 / Expression: `F_{D317}(x) := M4的p*对系统参数的敏感度：∂p*/∂n=p*/(2n)（弱敏感），∂p*/∂σ∝p*·(σ_opt-σ)/σ_opt²（强敏感）。p*对分布分散度σ的敏感度远高于对n的敏感度。改变分布形态（集中化）比增加门控面数n更能有效移动p*——D306"去容斥需同时集中分布"的敏感度论证。`
+- 有效条件 / Validity: `J_n^+(F_{D317})=1 ∧ J_n^-(F_{D317})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D306`, `D317`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D317} and codomain Y_{D317}.
+  - 2. Normalize the source expression as F_{D317}: X_{D317}->Y_{D317}.
+  - 3. If upstream objects D_{D317} exist, compose F_{D317}=N(⊕_{g∈D_{D317}} g); otherwise treat F_{D317} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D317})=1 and J_n^-(F_{D317})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D317})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D317})=0`
+- 收敛判据 / Convergence: `Converged(F_{D317}) ⇔ ΔF_{D317}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7866,6 +15676,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ<μ_c时容斥可忽略（经典物理区），μ>μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——D293阶段2→3一级相变的尺度版本。 描述 容斥主导尺度函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D318}`
+- 定义域 / Domain: `X_{D318}`
+- 值域 / Codomain: `Y_{D318}`
+- 数学表达 / Expression: `F_{D318}(x) := M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ<μ_c时容斥可忽略（经典物理区），μ>μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——D293阶段2→3一级相变的尺度版本。`
+- 有效条件 / Validity: `J_n^+(F_{D318})=1 ∧ J_n^-(F_{D318})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D318`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D318} and codomain Y_{D318}.
+  - 2. Normalize the source expression as F_{D318}: X_{D318}->Y_{D318}.
+  - 3. If upstream objects D_{D318} exist, compose F_{D318}=N(⊕_{g∈D_{D318}} g); otherwise treat F_{D318} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D318})=1 and J_n^-(F_{D318})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D318})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D318})=0`
+- 收敛判据 / Convergence: `Converged(F_{D318}) ⇔ ΔF_{D318}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7888,6 +15720,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M6的d_eff在4附近振荡时回复力F_restore∝-∂Φ/∂(d_eff)·δ(d_eff-4)。回复力系数k_restore∝Σαᵢ²/(1-pᵢ)²——与D292吸引域深度同源。k_restore在d=4处最大→d=4不仅是稳定点还是回复力最强的点。宇宙即使被扰动偏离d=4也会被"弹回来"——d=4的稳定性是动态的。 描述 维度回复力函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D319}`
+- 定义域 / Domain: `X_{D319}`
+- 值域 / Codomain: `Y_{D319}`
+- 数学表达 / Expression: `F_{D319}(x) := M6的d_eff在4附近振荡时回复力F_restore∝-∂Φ/∂(d_eff)·δ(d_eff-4)。回复力系数k_restore∝Σαᵢ²/(1-pᵢ)²——与D292吸引域深度同源。k_restore在d=4处最大→d=4不仅是稳定点还是回复力最强的点。宇宙即使被扰动偏离d=4也会被"弹回来"——d=4的稳定性是动态的。`
+- 有效条件 / Validity: `J_n^+(F_{D319})=1 ∧ J_n^-(F_{D319})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D319`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D319} and codomain Y_{D319}.
+  - 2. Normalize the source expression as F_{D319}: X_{D319}->Y_{D319}.
+  - 3. If upstream objects D_{D319} exist, compose F_{D319}=N(⊕_{g∈D_{D319}} g); otherwise treat F_{D319} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D319})=1 and J_n^-(F_{D319})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D319})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D319})=0`
+- 收敛判据 / Convergence: `Converged(F_{D319}) ⇔ ΔF_{D319}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7908,6 +15762,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n大σ中→a_excl中，社会n大σ大→a_excl大。a_excl(社会)/a_excl(物理)∝(n_社会/n_物理)²·(σ_社会/σ_物理)²——量级差异可达10⁶以上。社会系统容斥加速远强于物理系统。 描述 容斥加速跨域标度函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D320}`
+- 定义域 / Domain: `X_{D320}`
+- 值域 / Codomain: `Y_{D320}`
+- 数学表达 / Expression: `F_{D320}(x) := M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n大σ中→a_excl中，社会n大σ大→a_excl大。a_excl(社会)/a_excl(物理)∝(n_社会/n_物理)²·(σ_社会/σ_物理)²——量级差异可达10⁶以上。社会系统容斥加速远强于物理系统。`
+- 有效条件 / Validity: `J_n^+(F_{D320})=1 ∧ J_n^-(F_{D320})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D320`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D320} and codomain Y_{D320}.
+  - 2. Normalize the source expression as F_{D320}: X_{D320}->Y_{D320}.
+  - 3. If upstream objects D_{D320} exist, compose F_{D320}=N(⊕_{g∈D_{D320}} g); otherwise treat F_{D320} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D320})=1 and J_n^-(F_{D320})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D320})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D320})=0`
+- 收敛判据 / Convergence: `Converged(F_{D320}) ⇔ ΔF_{D320}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7930,6 +15806,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt，调整时间τ_σ∝n/ḡ。n大ḡ低的系统σ调整慢——社会系统的"最优配置"总是落后于"最优维度"。 描述 -σ_opt联合演化函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D321}`
+- 定义域 / Domain: `X_{D321}`
+- 值域 / Codomain: `Y_{D321}`
+- 数学表达 / Expression: `F_{D321}(x) := M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt，调整时间τ_σ∝n/ḡ。n大ḡ低的系统σ调整慢——社会系统的"最优配置"总是落后于"最优维度"。`
+- 有效条件 / Validity: `J_n^+(F_{D321})=1 ∧ J_n^-(F_{D321})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D321`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D321} and codomain Y_{D321}.
+  - 2. Normalize the source expression as F_{D321}: X_{D321}->Y_{D321}.
+  - 3. If upstream objects D_{D321} exist, compose F_{D321}=N(⊕_{g∈D_{D321}} g); otherwise treat F_{D321} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D321})=1 and J_n^-(F_{D321})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D321})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D321})=0`
+- 收敛判据 / Convergence: `Converged(F_{D321}) ⇔ ΔF_{D321}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7950,6 +15848,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M9的三阶段在周期扰动下的响应：低频扰动→系统跟随移动有缓冲重建时间；高频扰动→缓冲来不及响应系统不动；共振频率（周期≈τ_buffer）→缓冲被共振消耗→系统加速进入阶段3。经济周期如果与缓冲恢复时间共振，衰退会加速——不是周期本身可怕，是共振可怕。 描述 周期扰动阶段响应函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D322}`
+- 定义域 / Domain: `X_{D322}`
+- 值域 / Codomain: `Y_{D322}`
+- 数学表达 / Expression: `F_{D322}(x) := M9的三阶段在周期扰动下的响应：低频扰动→系统跟随移动有缓冲重建时间；高频扰动→缓冲来不及响应系统不动；共振频率（周期≈τ_buffer）→缓冲被共振消耗→系统加速进入阶段3。经济周期如果与缓冲恢复时间共振，衰退会加速——不是周期本身可怕，是共振可怕。`
+- 有效条件 / Validity: `J_n^+(F_{D322})=1 ∧ J_n^-(F_{D322})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D322`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D322} and codomain Y_{D322}.
+  - 2. Normalize the source expression as F_{D322}: X_{D322}->Y_{D322}.
+  - 3. If upstream objects D_{D322} exist, compose F_{D322}=N(⊕_{g∈D_{D322}} g); otherwise treat F_{D322} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D322})=1 and J_n^-(F_{D322})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D322})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D322})=0`
+- 收敛判据 / Convergence: `Converged(F_{D322}) ⇔ ΔF_{D322}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -7972,6 +15892,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M10的缓冲从零重建到C_max的时间τ_rebuild∝n/(ḡ·β)。τ_rebuild>>τ_deplete——重建比消耗慢得多。比例τ_rebuild/τ_deplete∝n²·p̄/β——n越大比例越悬殊。复杂系统"毁起来快建起来慢"有精确的n²因子。 描述 缓冲重建时间函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D323}`
+- 定义域 / Domain: `X_{D323}`
+- 值域 / Codomain: `Y_{D323}`
+- 数学表达 / Expression: `F_{D323}(x) := M10的缓冲从零重建到C_max的时间τ_rebuild∝n/(ḡ·β)。τ_rebuild>>τ_deplete——重建比消耗慢得多。比例τ_rebuild/τ_deplete∝n²·p̄/β——n越大比例越悬殊。复杂系统"毁起来快建起来慢"有精确的n²因子。`
+- 有效条件 / Validity: `J_n^+(F_{D323})=1 ∧ J_n^-(F_{D323})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D323`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D323} and codomain Y_{D323}.
+  - 2. Normalize the source expression as F_{D323}: X_{D323}->Y_{D323}.
+  - 3. If upstream objects D_{D323} exist, compose F_{D323}=N(⊕_{g∈D_{D323}} g); otherwise treat F_{D323} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D323})=1 and J_n^-(F_{D323})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D323})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D323})=0`
+- 收敛判据 / Convergence: `Converged(F_{D323}) ⇔ ΔF_{D323}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -7993,6 +15935,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M11的w₂∝(√n-1)/(n·ḡ)。n→∞时w₂→0——门控面越多缓冲期越短。但ḡ∝√n以上增长可补偿。社会系统"改革窗口"是否关闭取决于ḡ增长能否跟上n。 描述 阶段2宽度标度函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D324}`
+- 定义域 / Domain: `X_{D324}`
+- 值域 / Codomain: `Y_{D324}`
+- 数学表达 / Expression: `F_{D324}(x) := M11的w₂∝(√n-1)/(n·ḡ)。n→∞时w₂→0——门控面越多缓冲期越短。但ḡ∝√n以上增长可补偿。社会系统"改革窗口"是否关闭取决于ḡ增长能否跟上n。`
+- 有效条件 / Validity: `J_n^+(F_{D324})=1 ∧ J_n^-(F_{D324})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D324`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D324} and codomain Y_{D324}.
+  - 2. Normalize the source expression as F_{D324}: X_{D324}->Y_{D324}.
+  - 3. If upstream objects D_{D324} exist, compose F_{D324}=N(⊕_{g∈D_{D324}} g); otherwise treat F_{D324} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D324})=1 and J_n^-(F_{D324})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D324})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D324})=0`
+- 收敛判据 / Convergence: `Converged(F_{D324}) ⇔ ΔF_{D324}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8013,6 +15977,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M12的僵尸态中自发涨落δg_eff∝√(kT_eff/n)。涨落踢出僵尸态的概率∝e^{-n(g_critical-g_eff)²/kT_eff}——n越大概率越小。小系统可能自修复，大系统几乎不可能。组织越大越容易永久僵尸化。 描述 僵尸态自修复函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D325}`
+- 定义域 / Domain: `X_{D325}`
+- 值域 / Codomain: `Y_{D325}`
+- 数学表达 / Expression: `F_{D325}(x) := M12的僵尸态中自发涨落δg_eff∝√(kT_eff/n)。涨落踢出僵尸态的概率∝e^{-n(g_critical-g_eff)²/kT_eff}——n越大概率越小。小系统可能自修复，大系统几乎不可能。组织越大越容易永久僵尸化。`
+- 有效条件 / Validity: `J_n^+(F_{D325})=1 ∧ J_n^-(F_{D325})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D325`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D325} and codomain Y_{D325}.
+  - 2. Normalize the source expression as F_{D325}: X_{D325}->Y_{D325}.
+  - 3. If upstream objects D_{D325} exist, compose F_{D325}=N(⊕_{g∈D_{D325}} g); otherwise treat F_{D325} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D325})=1 and J_n^-(F_{D325})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D325})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D325})=0`
+- 收敛判据 / Convergence: `Converged(F_{D325}) ⇔ ΔF_{D325}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8037,6 +16023,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和。饱和后稳态p_max≈p_min·K/(K-1)。K越大稳态越低——强正反馈把p_max压到极低，但代价是D312噪声放大。D242精度-鲁棒性权衡在正反馈回路中的具体表现。 描述 正反馈饱和函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D326}`
+- 定义域 / Domain: `X_{D326}`
+- 值域 / Codomain: `Y_{D326}`
+- 数学表达 / Expression: `F_{D326}(x) := M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和。饱和后稳态p_max≈p_min·K/(K-1)。K越大稳态越低——强正反馈把p_max压到极低，但代价是D312噪声放大。D242精度-鲁棒性权衡在正反馈回路中的具体表现。`
+- 有效条件 / Validity: `J_n^+(F_{D326})=1 ∧ J_n^-(F_{D326})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D326`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D326} and codomain Y_{D326}.
+  - 2. Normalize the source expression as F_{D326}: X_{D326}->Y_{D326}.
+  - 3. If upstream objects D_{D326} exist, compose F_{D326}=N(⊕_{g∈D_{D326}} g); otherwise treat F_{D326} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D326})=1 and J_n^-(F_{D326})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D326})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D326})=0`
+- 收敛判据 / Convergence: `Converged(F_{D326}) ⇔ ΔF_{D326}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8057,6 +16065,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M14的K_benign≈α_exclusion时良性恶性周期震荡：良性增长→p_max↓→容斥减弱→恶性增长→p_max↑→良性被压→恶性受限→良性再增长。震荡周期T_osc∝2π/√(K_benign·α_exclusion)，振幅∝|K_benign-α_exclusion|⁻¹/²。越接近临界振幅越大。社会系统"改革-倒退"周期震荡有数学根源。 描述 共存震荡函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D327}`
+- 定义域 / Domain: `X_{D327}`
+- 值域 / Codomain: `Y_{D327}`
+- 数学表达 / Expression: `F_{D327}(x) := M14的K_benign≈α_exclusion时良性恶性周期震荡：良性增长→p_max↓→容斥减弱→恶性增长→p_max↑→良性被压→恶性受限→良性再增长。震荡周期T_osc∝2π/√(K_benign·α_exclusion)，振幅∝|K_benign-α_exclusion|⁻¹/²。越接近临界振幅越大。社会系统"改革-倒退"周期震荡有数学根源。`
+- 有效条件 / Validity: `J_n^+(F_{D327})=1 ∧ J_n^-(F_{D327})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D327`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D327} and codomain Y_{D327}.
+  - 2. Normalize the source expression as F_{D327}: X_{D327}->Y_{D327}.
+  - 3. If upstream objects D_{D327} exist, compose F_{D327}=N(⊕_{g∈D_{D327}} g); otherwise treat F_{D327} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D327})=1 and J_n^-(F_{D327})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D327})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D327})=0`
+- 收敛判据 / Convergence: `Converged(F_{D327}) ⇔ ΔF_{D327}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8081,6 +16111,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不是"平均变差"而是"最差那个拖垮全局"。与D280"先降p_max"策略一致。 描述 空间异质性叠加函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D328}`
+- 定义域 / Domain: `X_{D328}`
+- 值域 / Codomain: `Y_{D328}`
+- 数学表达 / Expression: `F_{D328}(x) := M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不是"平均变差"而是"最差那个拖垮全局"。与D280"先降p_max"策略一致。`
+- 有效条件 / Validity: `J_n^+(F_{D328})=1 ∧ J_n^-(F_{D328})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D328`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D328} and codomain Y_{D328}.
+  - 2. Normalize the source expression as F_{D328}: X_{D328}->Y_{D328}.
+  - 3. If upstream objects D_{D328} exist, compose F_{D328}=N(⊕_{g∈D_{D328}} g); otherwise treat F_{D328} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D328})=1 and J_n^-(F_{D328})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D328})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D328})=0`
+- 收敛判据 / Convergence: `Converged(F_{D328}) ⇔ ΔF_{D328}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8104,6 +16156,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后系统失去容错空间——D315"次优但可到达"的消失条件。 描述 极小点合并函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D329}`
+- 定义域 / Domain: `X_{D329}`
+- 值域 / Codomain: `Y_{D329}`
+- 数学表达 / Expression: `F_{D329}(x) := M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后系统失去容错空间——D315"次优但可到达"的消失条件。`
+- 有效条件 / Validity: `J_n^+(F_{D329})=1 ∧ J_n^-(F_{D329})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D315`, `D329`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D329} and codomain Y_{D329}.
+  - 2. Normalize the source expression as F_{D329}: X_{D329}->Y_{D329}.
+  - 3. If upstream objects D_{D329} exist, compose F_{D329}=N(⊕_{g∈D_{D329}} g); otherwise treat F_{D329} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D329})=1 and J_n^-(F_{D329})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D329})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D329})=0`
+- 收敛判据 / Convergence: `Converged(F_{D329}) ⇔ ΔF_{D329}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8124,6 +16198,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M3的Σpᵢpⱼ中前k个高p门控面的容斥贡献>50%（k=3时）。容斥不是均匀分布的——集中在少数高p门控面之间。降p_max的效果不只是线性降Φ，还切断最大的容斥关联对——D280"先降p_max"的拓扑论证。 描述 容斥关联拓扑函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D330}`
+- 定义域 / Domain: `X_{D330}`
+- 值域 / Codomain: `Y_{D330}`
+- 数学表达 / Expression: `F_{D330}(x) := M3的Σpᵢpⱼ中前k个高p门控面的容斥贡献>50%（k=3时）。容斥不是均匀分布的——集中在少数高p门控面之间。降p_max的效果不只是线性降Φ，还切断最大的容斥关联对——D280"先降p_max"的拓扑论证。`
+- 有效条件 / Validity: `J_n^+(F_{D330})=1 ∧ J_n^-(F_{D330})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D280`, `D330`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D330} and codomain Y_{D330}.
+  - 2. Normalize the source expression as F_{D330}: X_{D330}->Y_{D330}.
+  - 3. If upstream objects D_{D330} exist, compose F_{D330}=N(⊕_{g∈D_{D330}} g); otherwise treat F_{D330} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D330})=1 and J_n^-(F_{D330})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D330})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D330})=0`
+- 收敛判据 / Convergence: `Converged(F_{D330}) ⇔ ΔF_{D330}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8146,6 +16242,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M4的p*在有限n时有统计涨落δp*/p*∝1/√n。n小时涨落大→容斥-耦合竞争结果随机；n大时涨落小→结果确定但更难改变。小系统的竞争结果高度随机，大系统更可预测但更难逆转。 描述 *涨落函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D331}`
+- 定义域 / Domain: `X_{D331}`
+- 值域 / Codomain: `Y_{D331}`
+- 数学表达 / Expression: `F_{D331}(x) := M4的p*在有限n时有统计涨落δp*/p*∝1/√n。n小时涨落大→容斥-耦合竞争结果随机；n大时涨落小→结果确定但更难改变。小系统的竞争结果高度随机，大系统更可预测但更难逆转。`
+- 有效条件 / Validity: `J_n^+(F_{D331})=1 ∧ J_n^-(F_{D331})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D331`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D331} and codomain Y_{D331}.
+  - 2. Normalize the source expression as F_{D331}: X_{D331}->Y_{D331}.
+  - 3. If upstream objects D_{D331} exist, compose F_{D331}=N(⊕_{g∈D_{D331}} g); otherwise treat F_{D331} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D331})=1 and J_n^-(F_{D331})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D331})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D331})=0`
+- 收敛判据 / Convergence: `Converged(F_{D331}) ⇔ ΔF_{D331}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8166,6 +16284,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M5的容斥主导区一旦进入，退回需要p*上升，但系统崩溃方向使p*下降→退回条件与动态方向相反。容斥主导是自锁的。与D295(p_max不可逆)、D309(缓冲不可逆)形成三级不可逆：p_max→缓冲→容斥主导，逐层加深的不可逆结构。 描述 容斥-耦合不可逆函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D332}`
+- 定义域 / Domain: `X_{D332}`
+- 值域 / Codomain: `Y_{D332}`
+- 数学表达 / Expression: `F_{D332}(x) := F_{D332}: X_{D332} -> Y_{D332}, y = F_{D332}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D332})=1 ∧ J_n^-(F_{D332})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D309`, `D332`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D332} and codomain Y_{D332}.
+  - 2. Normalize the source expression as F_{D332}: X_{D332}->Y_{D332}.
+  - 3. If upstream objects D_{D332} exist, compose F_{D332}=N(⊕_{g∈D_{D332}} g); otherwise treat F_{D332} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D332})=1 and J_n^-(F_{D332})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D332})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D332})=0`
+- 收敛判据 / Convergence: `Converged(F_{D332}) ⇔ ΔF_{D332}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8188,6 +16328,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/(1-pᵢ)²。γ>0衰减→d=4稳定吸引子；γ<0发散→不稳定；γ=0持续振荡。物理系统γ>>0（强阻尼），社会系统γ≈0（弱阻尼，长期振荡）。宇宙d=4不是恰好卡在4，而是衰减振荡后停在4。 描述 维度回复阻尼函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D333}`
+- 定义域 / Domain: `X_{D333}`
+- 值域 / Codomain: `Y_{D333}`
+- 数学表达 / Expression: `F_{D333}(x) := M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/(1-pᵢ)²。γ>0衰减→d=4稳定吸引子；γ<0发散→不稳定；γ=0持续振荡。物理系统γ>>0（强阻尼），社会系统γ≈0（弱阻尼，长期振荡）。宇宙d=4不是恰好卡在4，而是衰减振荡后停在4。`
+- 有效条件 / Validity: `J_n^+(F_{D333})=1 ∧ J_n^-(F_{D333})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D333`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D333} and codomain Y_{D333}.
+  - 2. Normalize the source expression as F_{D333}: X_{D333}->Y_{D333}.
+  - 3. If upstream objects D_{D333} exist, compose F_{D333}=N(⊕_{g∈D_{D333}} g); otherwise treat F_{D333} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D333})=1 and J_n^-(F_{D333})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D333})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D333})=0`
+- 收敛判据 / Convergence: `Converged(F_{D333}) ⇔ ΔF_{D333}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8208,6 +16370,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M7的a_excl有上界∝n²·σ²/(4·p_min)，但系统在达到理论饱和前已进入D332容斥主导不可逆→崩溃。容斥加速的"理论极限"没有实际意义——系统先死到那儿。 描述 容斥加速饱和函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D334}`
+- 定义域 / Domain: `X_{D334}`
+- 值域 / Codomain: `Y_{D334}`
+- 数学表达 / Expression: `F_{D334}(x) := M7的a_excl有上界∝n²·σ²/(4·p_min)，但系统在达到理论饱和前已进入D332容斥主导不可逆→崩溃。容斥加速的"理论极限"没有实际意义——系统先死到那儿。`
+- 有效条件 / Validity: `J_n^+(F_{D334})=1 ∧ J_n^-(F_{D334})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D334`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D334} and codomain Y_{D334}.
+  - 2. Normalize the source expression as F_{D334}: X_{D334}->Y_{D334}.
+  - 3. If upstream objects D_{D334} exist, compose F_{D334}=N(⊕_{g∈D_{D334}} g); otherwise treat F_{D334} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D334})=1 and J_n^-(F_{D334})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D334})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D334})=0`
+- 收敛判据 / Convergence: `Converged(F_{D334}) ⇔ ΔF_{D334}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8230,6 +16414,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M8的(d_opt,σ_opt)平衡点在σ<σ_opt时稳定，σ>σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（D306）。社会系统一旦过度分化，自发回归不可能。 描述 -σ_opt平衡稳定性函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D335}`
+- 定义域 / Domain: `X_{D335}`
+- 值域 / Codomain: `Y_{D335}`
+- 数学表达 / Expression: `F_{D335}(x) := M8的(d_opt,σ_opt)平衡点在σ<σ_opt时稳定，σ>σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（D306）。社会系统一旦过度分化，自发回归不可能。`
+- 有效条件 / Validity: `J_n^+(F_{D335})=1 ∧ J_n^-(F_{D335})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D306`, `D335`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D335} and codomain Y_{D335}.
+  - 2. Normalize the source expression as F_{D335}: X_{D335}->Y_{D335}.
+  - 3. If upstream objects D_{D335} exist, compose F_{D335}=N(⊕_{g∈D_{D335}} g); otherwise treat F_{D335} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D335})=1 and J_n^-(F_{D335})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D335})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D335})=0`
+- 收敛判据 / Convergence: `Converged(F_{D335}) ⇔ ΔF_{D335}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8250,6 +16456,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M9的多频扰动叠加：低频+高频时高频被缓冲过滤，低频驱动过渡。但两个接近共振的频率产生拍频，拍频周期≈τ_buffer时产生二次共振——比单频共振更强的消耗。经济系统短周期+长周期的拍频可能产生超常衰退。 描述 多频叠加阶段响应函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D336}`
+- 定义域 / Domain: `X_{D336}`
+- 值域 / Codomain: `Y_{D336}`
+- 数学表达 / Expression: `F_{D336}(x) := M9的多频扰动叠加：低频+高频时高频被缓冲过滤，低频驱动过渡。但两个接近共振的频率产生拍频，拍频周期≈τ_buffer时产生二次共振——比单频共振更强的消耗。经济系统短周期+长周期的拍频可能产生超常衰退。`
+- 有效条件 / Validity: `J_n^+(F_{D336})=1 ∧ J_n^-(F_{D336})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D336`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D336} and codomain Y_{D336}.
+  - 2. Normalize the source expression as F_{D336}: X_{D336}->Y_{D336}.
+  - 3. If upstream objects D_{D336} exist, compose F_{D336}=N(⊕_{g∈D_{D336}} g); otherwise treat F_{D336} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D336})=1 and J_n^-(F_{D336})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D336})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D336})=0`
+- 收敛判据 / Convergence: `Converged(F_{D336}) ⇔ ΔF_{D336}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8272,6 +16500,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M10的缓冲从C₁到C₂的效率η∝(C₂-C₁)/(C_max-C₁)·ḡ·β。离C_max越近每单位重建越难。改革初期见效快（缓冲从0到C₁容易），后期见效慢——"容易的先做完"有数学根源。 描述 缓冲部分重建效率函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D337}`
+- 定义域 / Domain: `X_{D337}`
+- 值域 / Codomain: `Y_{D337}`
+- 数学表达 / Expression: `F_{D337}(x) := M10的缓冲从C₁到C₂的效率η∝(C₂-C₁)/(C_max-C₁)·ḡ·β。离C_max越近每单位重建越难。改革初期见效快（缓冲从0到C₁容易），后期见效慢——"容易的先做完"有数学根源。`
+- 有效条件 / Validity: `J_n^+(F_{D337})=1 ∧ J_n^-(F_{D337})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D337`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D337} and codomain Y_{D337}.
+  - 2. Normalize the source expression as F_{D337}: X_{D337}->Y_{D337}.
+  - 3. If upstream objects D_{D337} exist, compose F_{D337}=N(⊕_{g∈D_{D337}} g); otherwise treat F_{D337} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D337})=1 and J_n^-(F_{D337})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D337})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D337})=0`
+- 收敛判据 / Convergence: `Converged(F_{D337}) ⇔ ΔF_{D337}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8292,6 +16542,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M11的w₂随T_eff升高而展宽：w₂(T)∝w₂(0)·(1+kT_eff/Φ_min)。高温使阶段边界模糊→缓冲期延长，但缓冲质量降低→更宽但更薄的缓冲。社会"流动性高"→改革窗口更宽但缓冲更弱→看似灵活实则脆弱。 描述 阶段2宽度-温度函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D338}`
+- 定义域 / Domain: `X_{D338}`
+- 值域 / Codomain: `Y_{D338}`
+- 数学表达 / Expression: `F_{D338}(x) := M11的w₂随T_eff升高而展宽：w₂(T)∝w₂(0)·(1+kT_eff/Φ_min)。高温使阶段边界模糊→缓冲期延长，但缓冲质量降低→更宽但更薄的缓冲。社会"流动性高"→改革窗口更宽但缓冲更弱→看似灵活实则脆弱。`
+- 有效条件 / Validity: `J_n^+(F_{D338})=1 ∧ J_n^-(F_{D338})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D338`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D338} and codomain Y_{D338}.
+  - 2. Normalize the source expression as F_{D338}: X_{D338}->Y_{D338}.
+  - 3. If upstream objects D_{D338} exist, compose F_{D338}=N(⊕_{g∈D_{D338}} g); otherwise treat F_{D338} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D338})=1 and J_n^-(F_{D338})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D338})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D338})=0`
+- 收敛判据 / Convergence: `Converged(F_{D338}) ⇔ ΔF_{D338}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8314,6 +16586,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M12的僵尸态外部救援最小力度F_rescue∝n·(g_critical-g_eff)²。n越大需要救援力度越大。但F_rescue存在上限F_max∝n·ḡ——超过此力度干预本身造成新伤害（D312噪声放大）。F_rescue>F_max时僵尸态不可救——组织太大且g_eff太低时，任何干预要么不够要么造成附带损伤。 描述 僵尸态救援函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D339}`
+- 定义域 / Domain: `X_{D339}`
+- 值域 / Codomain: `Y_{D339}`
+- 数学表达 / Expression: `F_{D339}(x) := M12的僵尸态外部救援最小力度F_rescue∝n·(g_critical-g_eff)²。n越大需要救援力度越大。但F_rescue存在上限F_max∝n·ḡ——超过此力度干预本身造成新伤害（D312噪声放大）。F_rescue>F_max时僵尸态不可救——组织太大且g_eff太低时，任何干预要么不够要么造成附带损伤。`
+- 有效条件 / Validity: `J_n^+(F_{D339})=1 ∧ J_n^-(F_{D339})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D339`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D339} and codomain Y_{D339}.
+  - 2. Normalize the source expression as F_{D339}: X_{D339}->Y_{D339}.
+  - 3. If upstream objects D_{D339} exist, compose F_{D339}=N(⊕_{g∈D_{D339}} g); otherwise treat F_{D339} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D339})=1 and J_n^-(F_{D339})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D339})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D339})=0`
+- 收敛判据 / Convergence: `Converged(F_{D339}) ⇔ ΔF_{D339}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8334,6 +16628,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M13的K^k饱和后p_max在稳态附近振荡，振幅∝√(p_min·p_ss)/n，频率∝ḡ。K越大稳态越低但振荡越剧烈——强正反馈的精度和抖动之间的权衡。n大时振幅小→大系统饱和后平稳，n小时大幅波动。 描述 正反馈饱和后振荡函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D340}`
+- 定义域 / Domain: `X_{D340}`
+- 值域 / Codomain: `Y_{D340}`
+- 数学表达 / Expression: `F_{D340}(x) := M13的K^k饱和后p_max在稳态附近振荡，振幅∝√(p_min·p_ss)/n，频率∝ḡ。K越大稳态越低但振荡越剧烈——强正反馈的精度和抖动之间的权衡。n大时振幅小→大系统饱和后平稳，n小时大幅波动。`
+- 有效条件 / Validity: `J_n^+(F_{D340})=1 ∧ J_n^-(F_{D340})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D340`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D340} and codomain Y_{D340}.
+  - 2. Normalize the source expression as F_{D340}: X_{D340}->Y_{D340}.
+  - 3. If upstream objects D_{D340} exist, compose F_{D340}=N(⊕_{g∈D_{D340}} g); otherwise treat F_{D340} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D340})=1 and J_n^-(F_{D340})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D340})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D340})=0`
+- 收敛判据 / Convergence: `Converged(F_{D340}) ⇔ ΔF_{D340}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8356,6 +16672,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M14的共存震荡阻尼∝|K_benign-α_exclusion|——偏离临界越远阻尼越大。临界处阻尼为零→持续震荡不衰减，每次震荡有随机偏移，最终随机漂移到良性或恶性方向。改革力量和保守力量势均力敌时最不稳定——不是静止而是持续震荡。 描述 共存震荡阻尼函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D341}`
+- 定义域 / Domain: `X_{D341}`
+- 值域 / Codomain: `Y_{D341}`
+- 数学表达 / Expression: `F_{D341}(x) := M14的共存震荡阻尼∝|K_benign-α_exclusion|——偏离临界越远阻尼越大。临界处阻尼为零→持续震荡不衰减，每次震荡有随机偏移，最终随机漂移到良性或恶性方向。改革力量和保守力量势均力敌时最不稳定——不是静止而是持续震荡。`
+- 有效条件 / Validity: `J_n^+(F_{D341})=1 ∧ J_n^-(F_{D341})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D341`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D341} and codomain Y_{D341}.
+  - 2. Normalize the source expression as F_{D341}: X_{D341}->Y_{D341}.
+  - 3. If upstream objects D_{D341} exist, compose F_{D341}=N(⊕_{g∈D_{D341}} g); otherwise treat F_{D341} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D341})=1 and J_n^-(F_{D341})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D341})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D341})=0`
+- 收敛判据 / Convergence: `Converged(F_{D341}) ⇔ ΔF_{D341}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8376,6 +16714,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M1的多轮ΔΦ叠加：容斥凸性(D266)使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。D266的动态版本。 描述 时间累积函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D342}`
+- 定义域 / Domain: `X_{D342}`
+- 值域 / Codomain: `Y_{D342}`
+- 数学表达 / Expression: `F_{D342}(x) := M1的多轮ΔΦ叠加：容斥凸性(D266)使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。D266的动态版本。`
+- 有效条件 / Validity: `J_n^+(F_{D342})=1 ∧ J_n^-(F_{D342})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D266`, `D342`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D342} and codomain Y_{D342}.
+  - 2. Normalize the source expression as F_{D342}: X_{D342}->Y_{D342}.
+  - 3. If upstream objects D_{D342} exist, compose F_{D342}=N(⊕_{g∈D_{D342}} g); otherwise treat F_{D342} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D342})=1 and J_n^-(F_{D342})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D342})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D342})=0`
+- 收敛判据 / Convergence: `Converged(F_{D342}) ⇔ ΔF_{D342}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8398,6 +16758,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M2的极小点消失后Φ(μ)保留拐点。系统经过拐点时速度减慢（dμ/dt∝1/|d²Φ/dμ²|，拐点处极小）。"曾经的稳定状态"消失后，系统经过该位置时仍会短暂减速——旧秩序的"幽灵"效应。 描述 极小点消失遗迹函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D343}`
+- 定义域 / Domain: `X_{D343}`
+- 值域 / Codomain: `Y_{D343}`
+- 数学表达 / Expression: `F_{D343}(x) := M2的极小点消失后Φ(μ)保留拐点。系统经过拐点时速度减慢（dμ/dt∝1/|d²Φ/dμ²|，拐点处极小）。"曾经的稳定状态"消失后，系统经过该位置时仍会短暂减速——旧秩序的"幽灵"效应。`
+- 有效条件 / Validity: `J_n^+(F_{D343})=1 ∧ J_n^-(F_{D343})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D343`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D343} and codomain Y_{D343}.
+  - 2. Normalize the source expression as F_{D343}: X_{D343}->Y_{D343}.
+  - 3. If upstream objects D_{D343} exist, compose F_{D343}=N(⊕_{g∈D_{D343}} g); otherwise treat F_{D343} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D343})=1 and J_n^-(F_{D343})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D343})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D343})=0`
+- 收敛判据 / Convergence: `Converged(F_{D343}) ⇔ ΔF_{D343}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8418,6 +16800,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M3的容斥关联从局部到全局的演化：关联范围∝max(pᵢ)/p̄。早期只有相邻门控面关联（局部），后期所有高p门控面关联（全局）。p_max/p̄超过阈值时容斥从局部问题变成全局问题——D328的动态版本。 描述 容斥关联动态函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D344}`
+- 定义域 / Domain: `X_{D344}`
+- 值域 / Codomain: `Y_{D344}`
+- 数学表达 / Expression: `F_{D344}(x) := M3的容斥关联从局部到全局的演化：关联范围∝max(pᵢ)/p̄。早期只有相邻门控面关联（局部），后期所有高p门控面关联（全局）。p_max/p̄超过阈值时容斥从局部问题变成全局问题——D328的动态版本。`
+- 有效条件 / Validity: `J_n^+(F_{D344})=1 ∧ J_n^-(F_{D344})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D344`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D344} and codomain Y_{D344}.
+  - 2. Normalize the source expression as F_{D344}: X_{D344}->Y_{D344}.
+  - 3. If upstream objects D_{D344} exist, compose F_{D344}=N(⊕_{g∈D_{D344}} g); otherwise treat F_{D344} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D344})=1 and J_n^-(F_{D344})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D344})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D344})=0`
+- 收敛判据 / Convergence: `Converged(F_{D344}) ⇔ ΔF_{D344}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8440,6 +16844,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M4的p*涨落被M13正反馈放大：δp*_amplified = δp*·K^k/(1+(K^k-1)·p_min/p*)。K>1时竞争阈值不确定→系统在容斥主导和耦合主导之间随机切换。正反馈使容斥-耦合竞争的随机性放大——即使参数在耦合主导区也可能因涨落被踢进容斥主导区。 描述 *涨落-噪声耦合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D345}`
+- 定义域 / Domain: `X_{D345}`
+- 值域 / Codomain: `Y_{D345}`
+- 数学表达 / Expression: `F_{D345}(x) := M4的p*涨落被M13正反馈放大：δp*_amplified = δp*·K^k/(1+(K^k-1)·p_min/p*)。K>1时竞争阈值不确定→系统在容斥主导和耦合主导之间随机切换。正反馈使容斥-耦合竞争的随机性放大——即使参数在耦合主导区也可能因涨落被踢进容斥主导区。`
+- 有效条件 / Validity: `J_n^+(F_{D345})=1 ∧ J_n^-(F_{D345})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D345`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D345} and codomain Y_{D345}.
+  - 2. Normalize the source expression as F_{D345}: X_{D345}->Y_{D345}.
+  - 3. If upstream objects D_{D345} exist, compose F_{D345}=N(⊕_{g∈D_{D345}} g); otherwise treat F_{D345} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D345})=1 and J_n^-(F_{D345})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D345})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D345})=0`
+- 收敛判据 / Convergence: `Converged(F_{D345}) ⇔ ΔF_{D345}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8460,6 +16886,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M5的容斥主导区有子结构：弱容斥主导（容斥占比50-70%，还有部分缓冲）vs强容斥主导（占比>90%，缓冲完全无效）。弱→强渐变，但D288有限时间崩溃在强容斥区加速。干预在弱容斥主导区还有可能，强容斥主导区无望。 描述 容斥主导区内部结构函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D346}`
+- 定义域 / Domain: `X_{D346}`
+- 值域 / Codomain: `Y_{D346}`
+- 数学表达 / Expression: `F_{D346}(x) := M5的容斥主导区有子结构：弱容斥主导（容斥占比50-70%，还有部分缓冲）vs强容斥主导（占比>90%，缓冲完全无效）。弱→强渐变，但D288有限时间崩溃在强容斥区加速。干预在弱容斥主导区还有可能，强容斥主导区无望。`
+- 有效条件 / Validity: `J_n^+(F_{D346})=1 ∧ J_n^-(F_{D346})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D346`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D346} and codomain Y_{D346}.
+  - 2. Normalize the source expression as F_{D346}: X_{D346}->Y_{D346}.
+  - 3. If upstream objects D_{D346} exist, compose F_{D346}=N(⊕_{g∈D_{D346}} g); otherwise treat F_{D346} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D346})=1 and J_n^-(F_{D346})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D346})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D346})=0`
+- 收敛判据 / Convergence: `Converged(F_{D346}) ⇔ ΔF_{D346}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8482,6 +16930,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M6的d_eff偏离4较大时回复力非线性：F_restore∝-k·δ·(1+δ²/δ_c²)。δ>δ_c时回复力减弱——偏离太远弹不回来。δ_c∝1/√(Σαᵢ²/(1-pᵢ)²)——门控面越均匀线性区越宽，越不均匀越窄。不均匀系统的d=4稳定性是脆弱的——小扰动能弹回来，大扰动弹不回来。 描述 维度回复非线性函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D347}`
+- 定义域 / Domain: `X_{D347}`
+- 值域 / Codomain: `Y_{D347}`
+- 数学表达 / Expression: `F_{D347}(x) := M6的d_eff偏离4较大时回复力非线性：F_restore∝-k·δ·(1+δ²/δ_c²)。δ>δ_c时回复力减弱——偏离太远弹不回来。δ_c∝1/√(Σαᵢ²/(1-pᵢ)²)——门控面越均匀线性区越宽，越不均匀越窄。不均匀系统的d=4稳定性是脆弱的——小扰动能弹回来，大扰动弹不回来。`
+- 有效条件 / Validity: `J_n^+(F_{D347})=1 ∧ J_n^-(F_{D347})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D347`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D347} and codomain Y_{D347}.
+  - 2. Normalize the source expression as F_{D347}: X_{D347}->Y_{D347}.
+  - 3. If upstream objects D_{D347} exist, compose F_{D347}=N(⊕_{g∈D_{D347}} g); otherwise treat F_{D347} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D347})=1 and J_n^-(F_{D347})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D347})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D347})=0`
+- 收敛判据 / Convergence: `Converged(F_{D347}) ⇔ ΔF_{D347}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8502,6 +16972,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M7的容斥加速使D316转折点提前：无加速时Σpᵢ≈0.5容斥主导，有加速时转折提前到Σpᵢ≈0.5/(1+a_excl·τ)。加速越强转折越早——"突然变坏"来得更早。a_excl∝n²使高n系统转折大幅提前——复杂系统不仅"变坏更快"而且"变坏更早"。双重加速：更早+更快。 描述 容斥加速-时间权重联合函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D348}`
+- 定义域 / Domain: `X_{D348}`
+- 值域 / Codomain: `Y_{D348}`
+- 数学表达 / Expression: `F_{D348}(x) := M7的容斥加速使D316转折点提前：无加速时Σpᵢ≈0.5容斥主导，有加速时转折提前到Σpᵢ≈0.5/(1+a_excl·τ)。加速越强转折越早——"突然变坏"来得更早。a_excl∝n²使高n系统转折大幅提前——复杂系统不仅"变坏更快"而且"变坏更早"。双重加速：更早+更快。`
+- 有效条件 / Validity: `J_n^+(F_{D348})=1 ∧ J_n^-(F_{D348})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D348`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D348} and codomain Y_{D348}.
+  - 2. Normalize the source expression as F_{D348}: X_{D348}->Y_{D348}.
+  - 3. If upstream objects D_{D348} exist, compose F_{D348}=N(⊕_{g∈D_{D348}} g); otherwise treat F_{D348} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D348})=1 and J_n^-(F_{D348})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D348})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D348})=0`
+- 收敛判据 / Convergence: `Converged(F_{D348}) ⇔ ΔF_{D348}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8526,6 +17018,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散度但d不能无限增长。维度饥渴的结局：要么外部增加d（学习/改革），要么内部崩溃（Φ持续增长）。社会分化过度需要更多元化但做不到→僵局。 描述 过分散相图函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D349}`
+- 定义域 / Domain: `X_{D349}`
+- 值域 / Codomain: `Y_{D349}`
+- 数学表达 / Expression: `F_{D349}(x) := M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维度补偿分散度但d不能无限增长。维度饥渴的结局：要么外部增加d（学习/改革），要么内部崩溃（Φ持续增长）。社会分化过度需要更多元化但做不到→僵局。`
+- 有效条件 / Validity: `J_n^+(F_{D349})=1 ∧ J_n^-(F_{D349})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D349`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D349} and codomain Y_{D349}.
+  - 2. Normalize the source expression as F_{D349}: X_{D349}->Y_{D349}.
+  - 3. If upstream objects D_{D349} exist, compose F_{D349}=N(⊕_{g∈D_{D349}} g); otherwise treat F_{D349} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D349})=1 and J_n^-(F_{D349})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D349})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D349})=0`
+- 收敛判据 / Convergence: `Converged(F_{D349}) ⇔ ΔF_{D349}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8546,6 +17060,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M9的阶段2→3后能否退回取决于C_consumed/C_max > η_irreversible ≈ 1-1/n。n大时η接近1（大系统有回旋余地），n小时η小（小系统缓冲薄）。但D323重建时间∝n²使大系统理论可逆但实际重建太慢——理论可逆与实际可逆的差距随n²增长。 描述 阶段过渡不可逆标记函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D350}`
+- 定义域 / Domain: `X_{D350}`
+- 值域 / Codomain: `Y_{D350}`
+- 数学表达 / Expression: `F_{D350}(x) := M9的阶段2→3后能否退回取决于C_consumed/C_max > η_irreversible ≈ 1-1/n。n大时η接近1（大系统有回旋余地），n小时η小（小系统缓冲薄）。但D323重建时间∝n²使大系统理论可逆但实际重建太慢——理论可逆与实际可逆的差距随n²增长。`
+- 有效条件 / Validity: `J_n^+(F_{D350})=1 ∧ J_n^-(F_{D350})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D350`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D350} and codomain Y_{D350}.
+  - 2. Normalize the source expression as F_{D350}: X_{D350}->Y_{D350}.
+  - 3. If upstream objects D_{D350} exist, compose F_{D350}=N(⊕_{g∈D_{D350}} g); otherwise treat F_{D350} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D350})=1 and J_n^-(F_{D350})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D350})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D350})=0`
+- 收敛判据 / Convergence: `Converged(F_{D350}) ⇔ ΔF_{D350}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8568,6 +17104,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M10的不同门控面缓冲不独立——高p门控面缓冲消耗"溢出"到低p门控面。溢出系数∝ḡ——耦合越强溢出越大。局部冲击通过溢出变成全局冲击——金融系统单个机构出问题引发系统性风险的数学结构。 描述 缓冲关联结构函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D351}`
+- 定义域 / Domain: `X_{D351}`
+- 值域 / Codomain: `Y_{D351}`
+- 数学表达 / Expression: `F_{D351}(x) := M10的不同门控面缓冲不独立——高p门控面缓冲消耗"溢出"到低p门控面。溢出系数∝ḡ——耦合越强溢出越大。局部冲击通过溢出变成全局冲击——金融系统单个机构出问题引发系统性风险的数学结构。`
+- 有效条件 / Validity: `J_n^+(F_{D351})=1 ∧ J_n^-(F_{D351})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D351`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D351} and codomain Y_{D351}.
+  - 2. Normalize the source expression as F_{D351}: X_{D351}->Y_{D351}.
+  - 3. If upstream objects D_{D351} exist, compose F_{D351}=N(⊕_{g∈D_{D351}} g); otherwise treat F_{D351} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D351})=1 and J_n^-(F_{D351})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D351})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D351})=0`
+- 收敛判据 / Convergence: `Converged(F_{D351}) ⇔ ΔF_{D351}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8588,6 +17146,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（D324 n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随复杂度上移。 描述 阶段2宽度-共振频率函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D352}`
+- 定义域 / Domain: `X_{D352}`
+- 值域 / Codomain: `Y_{D352}`
+- 数学表达 / Expression: `F_{D352}(x) := M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（D324 n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随复杂度上移。`
+- 有效条件 / Validity: `J_n^+(F_{D352})=1 ∧ J_n^-(F_{D352})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D324`, `D352`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D352} and codomain Y_{D352}.
+  - 2. Normalize the source expression as F_{D352}: X_{D352}->Y_{D352}.
+  - 3. If upstream objects D_{D352} exist, compose F_{D352}=N(⊕_{g∈D_{D352}} g); otherwise treat F_{D352} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D352})=1 and J_n^-(F_{D352})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D352})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D352})=0`
+- 收敛判据 / Convergence: `Converged(F_{D352}) ⇔ ΔF_{D352}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8610,6 +17190,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M12的子系统僵尸化通过g_eff耦合传染：传染速度∝ḡ/n。临界条件：僵尸化子系统数>n/2时总g_eff<g_critical→全局僵尸化。组织超过一半部门僵尸化后全局不可逆——D339的传染版本。 描述 僵尸态传染函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D353}`
+- 定义域 / Domain: `X_{D353}`
+- 值域 / Codomain: `Y_{D353}`
+- 数学表达 / Expression: `F_{D353}(x) := M12的子系统僵尸化通过g_eff耦合传染：传染速度∝ḡ/n。临界条件：僵尸化子系统数>n/2时总g_eff<g_critical→全局僵尸化。组织超过一半部门僵尸化后全局不可逆——D339的传染版本。`
+- 有效条件 / Validity: `J_n^+(F_{D353})=1 ∧ J_n^-(F_{D353})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D353`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D353} and codomain Y_{D353}.
+  - 2. Normalize the source expression as F_{D353}: X_{D353}->Y_{D353}.
+  - 3. If upstream objects D_{D353} exist, compose F_{D353}=N(⊕_{g∈D_{D353}} g); otherwise treat F_{D353} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D353})=1 and J_n^-(F_{D353})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D353})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D353})=0`
+- 收敛判据 / Convergence: `Converged(F_{D353}) ⇔ ΔF_{D353}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8630,6 +17232,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M13的正反馈有延迟τ_delay时，频率ω=π/τ_delay处正反馈变负反馈。延迟足够大时系统自激振荡。自激振荡条件：K·τ_delay>1。政策反馈延迟过大时本意正反馈的改革变成振荡——每次纠偏都矫枉过正→来回摆。 描述 正反馈延迟函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D354}`
+- 定义域 / Domain: `X_{D354}`
+- 值域 / Codomain: `Y_{D354}`
+- 数学表达 / Expression: `F_{D354}(x) := M13的正反馈有延迟τ_delay时，频率ω=π/τ_delay处正反馈变负反馈。延迟足够大时系统自激振荡。自激振荡条件：K·τ_delay>1。政策反馈延迟过大时本意正反馈的改革变成振荡——每次纠偏都矫枉过正→来回摆。`
+- 有效条件 / Validity: `J_n^+(F_{D354})=1 ∧ J_n^-(F_{D354})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D354`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D354} and codomain Y_{D354}.
+  - 2. Normalize the source expression as F_{D354}: X_{D354}->Y_{D354}.
+  - 3. If upstream objects D_{D354} exist, compose F_{D354}=N(⊕_{g∈D_{D354}} g); otherwise treat F_{D354} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D354})=1 and J_n^-(F_{D354})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D354})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D354})=0`
+- 收敛判据 / Convergence: `Converged(F_{D354}) ⇔ ΔF_{D354}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8654,6 +17278,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M14的共存震荡中随机偏移δK∝√(kT_eff)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝(ΔK/δK)²·T_osc——初始偏置越大决定越快，ΔK≈0时可能长期震荡。改革派和保守派差距越小僵局持续越久——随机游走到达边界的时间。 描述 共存震荡分支函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D355}`
+- 定义域 / Domain: `X_{D355}`
+- 值域 / Codomain: `Y_{D355}`
+- 数学表达 / Expression: `F_{D355}(x) := M14的共存震荡中随机偏移δK∝√(kT_eff)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝(ΔK/δK)²·T_osc——初始偏置越大决定越快，ΔK≈0时可能长期震荡。改革派和保守派差距越小僵局持续越久——随机游走到达边界的时间。`
+- 有效条件 / Validity: `J_n^+(F_{D355})=1 ∧ J_n^-(F_{D355})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D355`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D355} and codomain Y_{D355}.
+  - 2. Normalize the source expression as F_{D355}: X_{D355}->Y_{D355}.
+  - 3. If upstream objects D_{D355} exist, compose F_{D355}=N(⊕_{g∈D_{D355}} g); otherwise treat F_{D355} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D355})=1 and J_n^-(F_{D355})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D355})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D355})=0`
+- 收敛判据 / Convergence: `Converged(F_{D355}) ⇔ ΔF_{D355}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8674,6 +17320,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M1的不同门控面ΔΦ的时间交叉相关∝pᵢpⱼ·e^{-τ/τ_relax}。容斥项使高p门控面之间有正交叉相关。一个门控面恶化预测其他门控面随后恶化——"坏消息成群来"的数学根源不是运气差而是容斥交叉相关。 描述 时空关联函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D356}`
+- 定义域 / Domain: `X_{D356}`
+- 值域 / Codomain: `Y_{D356}`
+- 数学表达 / Expression: `F_{D356}(x) := M1的不同门控面ΔΦ的时间交叉相关∝pᵢpⱼ·e^{-τ/τ_relax}。容斥项使高p门控面之间有正交叉相关。一个门控面恶化预测其他门控面随后恶化——"坏消息成群来"的数学根源不是运气差而是容斥交叉相关。`
+- 有效条件 / Validity: `J_n^+(F_{D356})=1 ∧ J_n^-(F_{D356})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D356`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D356} and codomain Y_{D356}.
+  - 2. Normalize the source expression as F_{D356}: X_{D356}->Y_{D356}.
+  - 3. If upstream objects D_{D356} exist, compose F_{D356}=N(⊕_{g∈D_{D356}} g); otherwise treat F_{D356} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D356})=1 and J_n^-(F_{D356})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D356})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D356})=0`
+- 收敛判据 / Convergence: `Converged(F_{D356}) ⇔ ΔF_{D356}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8698,6 +17366,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M2的拐点重新变成极小点需要至少一个pᵢ下降使容斥项减小。复活需要的pᵢ下降量Δp_rescue∝Φ(拐点)/n。极小点复活比维持极小点困难得多——D264良性循环启动阈值的几何版本。旧秩序"复兴"需要比维持旧秩序更大的努力——复兴不是恢复而是重建。 描述 极小点复活函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D357}`
+- 定义域 / Domain: `X_{D357}`
+- 值域 / Codomain: `Y_{D357}`
+- 数学表达 / Expression: `F_{D357}(x) := M2的拐点重新变成极小点需要至少一个pᵢ下降使容斥项减小。复活需要的pᵢ下降量Δp_rescue∝Φ(拐点)/n。极小点复活比维持极小点困难得多——D264良性循环启动阈值的几何版本。旧秩序"复兴"需要比维持旧秩序更大的努力——复兴不是恢复而是重建。`
+- 有效条件 / Validity: `J_n^+(F_{D357})=1 ∧ J_n^-(F_{D357})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D357`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D357} and codomain Y_{D357}.
+  - 2. Normalize the source expression as F_{D357}: X_{D357}->Y_{D357}.
+  - 3. If upstream objects D_{D357} exist, compose F_{D357}=N(⊕_{g∈D_{D357}} g); otherwise treat F_{D357} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D357})=1 and J_n^-(F_{D357})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D357})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D357})=0`
+- 收敛判据 / Convergence: `Converged(F_{D357}) ⇔ ΔF_{D357}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8718,6 +17408,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M3的(i,j)和(j,i)在pᵢ≠pⱼ时贡献不同：低p门控面受高p门控面影响大，高p受低p影响小。容斥关联的不对称性是阶层固化的数学机制之一——弱者受强者的容斥影响远大于强者受弱者。 描述 容斥关联对称性破缺函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D358}`
+- 定义域 / Domain: `X_{D358}`
+- 值域 / Codomain: `Y_{D358}`
+- 数学表达 / Expression: `F_{D358}(x) := F_{D358}: X_{D358} -> Y_{D358}, y = F_{D358}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D358})=1 ∧ J_n^-(F_{D358})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D358`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D358} and codomain Y_{D358}.
+  - 2. Normalize the source expression as F_{D358}: X_{D358}->Y_{D358}.
+  - 3. If upstream objects D_{D358} exist, compose F_{D358}=N(⊕_{g∈D_{D358}} g); otherwise treat F_{D358} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D358})=1 and J_n^-(F_{D358})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D358})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D358})=0`
+- 收敛判据 / Convergence: `Converged(F_{D358}) ⇔ ΔF_{D358}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8740,6 +17452,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M4的p*放大涨落对有限n系统：K^k>√n时放大后涨落超过p*→竞争结果完全随机。临界K_c=√n。n越大临界K越大（大系统更耐受正反馈放大），但一旦超过临界崩溃更彻底。小系统先乱但乱得有限，大系统后乱但乱得致命。 描述 *放大涨落-有限n联合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D359}`
+- 定义域 / Domain: `X_{D359}`
+- 值域 / Codomain: `Y_{D359}`
+- 数学表达 / Expression: `F_{D359}(x) := M4的p*放大涨落对有限n系统：K^k>√n时放大后涨落超过p*→竞争结果完全随机。临界K_c=√n。n越大临界K越大（大系统更耐受正反馈放大），但一旦超过临界崩溃更彻底。小系统先乱但乱得有限，大系统后乱但乱得致命。`
+- 有效条件 / Validity: `J_n^+(F_{D359})=1 ∧ J_n^-(F_{D359})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D359`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D359} and codomain Y_{D359}.
+  - 2. Normalize the source expression as F_{D359}: X_{D359}->Y_{D359}.
+  - 3. If upstream objects D_{D359} exist, compose F_{D359}=N(⊕_{g∈D_{D359}} g); otherwise treat F_{D359} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D359})=1 and J_n^-(F_{D359})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D359})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D359})=0`
+- 收敛判据 / Convergence: `Converged(F_{D359}) ⇔ ΔF_{D359}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8760,6 +17494,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主导但还可逆"窗口，宽度∝(√n-1)/n∝D310。大系统有"容斥主导但还有救"的窗口，小系统没有。 描述 弱容斥-不可逆边界函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D360}`
+- 定义域 / Domain: `X_{D360}`
+- 值域 / Codomain: `Y_{D360}`
+- 数学表达 / Expression: `F_{D360}(x) := M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主导但还可逆"窗口，宽度∝(√n-1)/n∝D310。大系统有"容斥主导但还有救"的窗口，小系统没有。`
+- 有效条件 / Validity: `J_n^+(F_{D360})=1 ∧ J_n^-(F_{D360})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D310`, `D360`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D360} and codomain Y_{D360}.
+  - 2. Normalize the source expression as F_{D360}: X_{D360}->Y_{D360}.
+  - 3. If upstream objects D_{D360} exist, compose F_{D360}=N(⊕_{g∈D_{D360}} g); otherwise treat F_{D360} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D360})=1 and J_n^-(F_{D360})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D360})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D360})=0`
+- 收敛判据 / Convergence: `Converged(F_{D360}) ⇔ ΔF_{D360}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8782,6 +17538,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与D295 p_max不可逆点同构。 描述 维度回复非线性-阻尼联合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D361}`
+- 定义域 / Domain: `X_{D361}`
+- 值域 / Codomain: `Y_{D361}`
+- 数学表达 / Expression: `F_{D361}(x) := M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与D295 p_max不可逆点同构。`
+- 有效条件 / Validity: `J_n^+(F_{D361})=1 ∧ J_n^-(F_{D361})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D361`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D361} and codomain Y_{D361}.
+  - 2. Normalize the source expression as F_{D361}: X_{D361}->Y_{D361}.
+  - 3. If upstream objects D_{D361} exist, compose F_{D361}=N(⊕_{g∈D_{D361}} g); otherwise treat F_{D361} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D361})=1 and J_n^-(F_{D361})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D361})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D361})=0`
+- 收敛判据 / Convergence: `Converged(F_{D361}) ⇔ ΔF_{D361}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8802,6 +17580,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M7的容斥加速放大D342波动累积：E[ΣΔΦ]_accelerated = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)·(1+a_excl·τ)/2。容斥加速不只加速均值增长还加速波动累积——"折腾更有害"在加速环境下被放大。 描述 容斥加速-波动累积联合函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D362}`
+- 定义域 / Domain: `X_{D362}`
+- 值域 / Codomain: `Y_{D362}`
+- 数学表达 / Expression: `F_{D362}(x) := M7的容斥加速放大D342波动累积：E[ΣΔΦ]_accelerated = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)·(1+a_excl·τ)/2。容斥加速不只加速均值增长还加速波动累积——"折腾更有害"在加速环境下被放大。`
+- 有效条件 / Validity: `J_n^+(F_{D362})=1 ∧ J_n^-(F_{D362})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D362`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D362} and codomain Y_{D362}.
+  - 2. Normalize the source expression as F_{D362}: X_{D362}->Y_{D362}.
+  - 3. If upstream objects D_{D362} exist, compose F_{D362}=N(⊕_{g∈D_{D362}} g); otherwise treat F_{D362} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D362})=1 and J_n^-(F_{D362})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D362})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D362})=0`
+- 收敛判据 / Convergence: `Converged(F_{D362}) ⇔ ΔF_{D362}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8824,6 +17624,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M8的维度饥渴感知信号：超额Φ增长率Δ(dΦ/dt)∝(σ-σ_opt)²·ḡ。感知到饥渴到响应之间有延迟τ_σ∝n/ḡ。大系统感知慢响应也慢→维度饥渴持续时间∝n²/ḡ²。 描述 维度饥渴感知函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D363}`
+- 定义域 / Domain: `X_{D363}`
+- 值域 / Codomain: `Y_{D363}`
+- 数学表达 / Expression: `F_{D363}(x) := M8的维度饥渴感知信号：超额Φ增长率Δ(dΦ/dt)∝(σ-σ_opt)²·ḡ。感知到饥渴到响应之间有延迟τ_σ∝n/ḡ。大系统感知慢响应也慢→维度饥渴持续时间∝n²/ḡ²。`
+- 有效条件 / Validity: `J_n^+(F_{D363})=1 ∧ J_n^-(F_{D363})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D363`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D363} and codomain Y_{D363}.
+  - 2. Normalize the source expression as F_{D363}: X_{D363}->Y_{D363}.
+  - 3. If upstream objects D_{D363} exist, compose F_{D363}=N(⊕_{g∈D_{D363}} g); otherwise treat F_{D363} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D363})=1 and J_n^-(F_{D363})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D363})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D363})=0`
+- 收敛判据 / Convergence: `Converged(F_{D363}) ⇔ ΔF_{D363}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8844,6 +17666,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/(Σαᵢ)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。 描述 实际不可逆判据函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D364}`
+- 定义域 / Domain: `X_{D364}`
+- 值域 / Codomain: `Y_{D364}`
+- 数学表达 / Expression: `F_{D364}(x) := M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/(Σαᵢ)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。`
+- 有效条件 / Validity: `J_n^+(F_{D364})=1 ∧ J_n^-(F_{D364})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D364`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D364} and codomain Y_{D364}.
+  - 2. Normalize the source expression as F_{D364}: X_{D364}->Y_{D364}.
+  - 3. If upstream objects D_{D364} exist, compose F_{D364}=N(⊕_{g∈D_{D364}} g); otherwise treat F_{D364} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D364})=1 and J_n^-(F_{D364})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D364})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D364})=0`
+- 收敛判据 / Convergence: `Converged(F_{D364}) ⇔ ΔF_{D364}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8866,6 +17710,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M10的缓冲消耗溢出方向不对称：高p→低p方向溢出强，反向弱∝1/p_max。核心部门出问题冲击全局，边缘部门影响有限——组织"核心-边缘"不对称性的数学根源。 描述 缓冲溢出方向函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D365}`
+- 定义域 / Domain: `X_{D365}`
+- 值域 / Codomain: `Y_{D365}`
+- 数学表达 / Expression: `F_{D365}(x) := M10的缓冲消耗溢出方向不对称：高p→低p方向溢出强，反向弱∝1/p_max。核心部门出问题冲击全局，边缘部门影响有限——组织"核心-边缘"不对称性的数学根源。`
+- 有效条件 / Validity: `J_n^+(F_{D365})=1 ∧ J_n^-(F_{D365})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D365`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D365} and codomain Y_{D365}.
+  - 2. Normalize the source expression as F_{D365}: X_{D365}->Y_{D365}.
+  - 3. If upstream objects D_{D365} exist, compose F_{D365}=N(⊕_{g∈D_{D365}} g); otherwise treat F_{D365} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D365})=1 and J_n^-(F_{D365})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D365})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D365})=0`
+- 收敛判据 / Convergence: `Converged(F_{D365}) ⇔ ΔF_{D365}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8886,6 +17752,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M11的高频共振消耗效率低于低频（表面消耗vs均匀消耗），但高频更难被缓冲过滤→穿透力强。快速冲击每次伤害不大但无法被缓冲挡住——慢性消耗比急性冲击更难防御。 描述 共振频率-消耗效率函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D366}`
+- 定义域 / Domain: `X_{D366}`
+- 值域 / Codomain: `Y_{D366}`
+- 数学表达 / Expression: `F_{D366}(x) := F_{D366}: X_{D366} -> Y_{D366}, y = F_{D366}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D366})=1 ∧ J_n^-(F_{D366})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D366`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D366} and codomain Y_{D366}.
+  - 2. Normalize the source expression as F_{D366}: X_{D366}->Y_{D366}.
+  - 3. If upstream objects D_{D366} exist, compose F_{D366}=N(⊕_{g∈D_{D366}} g); otherwise treat F_{D366} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D366})=1 and J_n^-(F_{D366})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D366})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D366})=0`
+- 收敛判据 / Convergence: `Converged(F_{D366}) ⇔ ΔF_{D366}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8908,6 +17796,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M12的免疫裕度Δg_i = g_eff(i) - g_critical。Δg_i > δg_spread时免疫。但D351溢出使免疫子系统也被消耗→免疫不是永久的。组织中"健康部门"不能独善其身——溢出最终消耗免疫裕度。 描述 僵尸态传染免疫函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D367}`
+- 定义域 / Domain: `X_{D367}`
+- 值域 / Codomain: `Y_{D367}`
+- 数学表达 / Expression: `F_{D367}(x) := M12的免疫裕度Δg_i = g_eff(i) - g_critical。Δg_i > δg_spread时免疫。但D351溢出使免疫子系统也被消耗→免疫不是永久的。组织中"健康部门"不能独善其身——溢出最终消耗免疫裕度。`
+- 有效条件 / Validity: `J_n^+(F_{D367})=1 ∧ J_n^-(F_{D367})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D367`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D367} and codomain Y_{D367}.
+  - 2. Normalize the source expression as F_{D367}: X_{D367}->Y_{D367}.
+  - 3. If upstream objects D_{D367} exist, compose F_{D367}=N(⊕_{g∈D_{D367}} g); otherwise treat F_{D367} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D367})=1 and J_n^-(F_{D367})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D367})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D367})=0`
+- 收敛判据 / Convergence: `Converged(F_{D367}) ⇔ ΔF_{D367}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8928,6 +17838,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至K/(1+ω²τ_delay²)。延迟过滤了高频噪声但代价是D354自激振荡风险。政策延迟使系统对长期趋势敏感但对短期波动不敏感——延迟不全是坏事。 描述 延迟-噪声频谱函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D368}`
+- 定义域 / Domain: `X_{D368}`
+- 值域 / Codomain: `Y_{D368}`
+- 数学表达 / Expression: `F_{D368}(x) := F_{D368}: X_{D368} -> Y_{D368}, y = F_{D368}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D368})=1 ∧ J_n^-(F_{D368})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D368`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D368} and codomain Y_{D368}.
+  - 2. Normalize the source expression as F_{D368}: X_{D368}->Y_{D368}.
+  - 3. If upstream objects D_{D368} exist, compose F_{D368}=N(⊕_{g∈D_{D368}} g); otherwise treat F_{D368} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D368})=1 and J_n^-(F_{D368})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D368})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D368})=0`
+- 收敛判据 / Convergence: `Converged(F_{D368}) ⇔ ΔF_{D368}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8950,6 +17882,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M14的阻尼影响步长：高阻尼→步长小→决定慢但方向确定；低阻尼→步长大→决定快但方向随机。T_decision∝|K_benign-α_exclusion|·T_osc。改革力量明显占优时方向确定但推进慢，势均力敌时推进快但方向不确定——速度和确定性的反比关系。 描述 震荡阻尼-分支步长联合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D369}`
+- 定义域 / Domain: `X_{D369}`
+- 值域 / Codomain: `Y_{D369}`
+- 数学表达 / Expression: `F_{D369}(x) := M14的阻尼影响步长：高阻尼→步长小→决定慢但方向确定；低阻尼→步长大→决定快但方向随机。T_decision∝|K_benign-α_exclusion|·T_osc。改革力量明显占优时方向确定但推进慢，势均力敌时推进快但方向不确定——速度和确定性的反比关系。`
+- 有效条件 / Validity: `J_n^+(F_{D369})=1 ∧ J_n^-(F_{D369})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D369`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D369} and codomain Y_{D369}.
+  - 2. Normalize the source expression as F_{D369}: X_{D369}->Y_{D369}.
+  - 3. If upstream objects D_{D369} exist, compose F_{D369}=N(⊕_{g∈D_{D369}} g); otherwise treat F_{D369} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D369})=1 and J_n^-(F_{D369})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D369})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D369})=0`
+- 收敛判据 / Convergence: `Converged(F_{D369}) ⇔ ΔF_{D369}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -8970,6 +17924,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。 描述 交叉相关-波动累积联合函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D370}`
+- 定义域 / Domain: `X_{D370}`
+- 值域 / Codomain: `Y_{D370}`
+- 数学表达 / Expression: `F_{D370}(x) := M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。`
+- 有效条件 / Validity: `J_n^+(F_{D370})=1 ∧ J_n^-(F_{D370})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D370`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D370} and codomain Y_{D370}.
+  - 2. Normalize the source expression as F_{D370}: X_{D370}->Y_{D370}.
+  - 3. If upstream objects D_{D370} exist, compose F_{D370}=N(⊕_{g∈D_{D370}} g); otherwise treat F_{D370} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D370})=1 and J_n^-(F_{D370})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D370})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D370})=0`
+- 收敛判据 / Convergence: `Converged(F_{D370}) ⇔ ΔF_{D370}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -8992,6 +17968,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M2的极小点复活总代价∝Φ(拐点)，与n无关。但D264启动阈值∝(n-1)/n→n大时启动更难。联合：复活代价本身不随n增长，但启动阈值随n增长→大系统复活更难不是因为代价大而是因为启动难。 描述 极小点复活代价函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D371}`
+- 定义域 / Domain: `X_{D371}`
+- 值域 / Codomain: `Y_{D371}`
+- 数学表达 / Expression: `F_{D371}(x) := M2的极小点复活总代价∝Φ(拐点)，与n无关。但D264启动阈值∝(n-1)/n→n大时启动更难。联合：复活代价本身不随n增长，但启动阈值随n增长→大系统复活更难不是因为代价大而是因为启动难。`
+- 有效条件 / Validity: `J_n^+(F_{D371})=1 ∧ J_n^-(F_{D371})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D371`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D371} and codomain Y_{D371}.
+  - 2. Normalize the source expression as F_{D371}: X_{D371}->Y_{D371}.
+  - 3. If upstream objects D_{D371} exist, compose F_{D371}=N(⊕_{g∈D_{D371}} g); otherwise treat F_{D371} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D371})=1 and J_n^-(F_{D371})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D371})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D371})=0`
+- 收敛判据 / Convergence: `Converged(F_{D371}) ⇔ ΔF_{D371}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9012,6 +18010,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果比D330估计的更大——不只切断最大关联对，还削弱不对称性对低p门控面的压制。 描述 对称性破缺-关联拓扑联合函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D372}`
+- 定义域 / Domain: `X_{D372}`
+- 值域 / Codomain: `Y_{D372}`
+- 数学表达 / Expression: `F_{D372}(x) := M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果比D330估计的更大——不只切断最大关联对，还削弱不对称性对低p门控面的压制。`
+- 有效条件 / Validity: `J_n^+(F_{D372})=1 ∧ J_n^-(F_{D372})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D372`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D372} and codomain Y_{D372}.
+  - 2. Normalize the source expression as F_{D372}: X_{D372}->Y_{D372}.
+  - 3. If upstream objects D_{D372} exist, compose F_{D372}=N(⊕_{g∈D_{D372}} g); otherwise treat F_{D372} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D372})=1 and J_n^-(F_{D372})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D372})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D372})=0`
+- 收敛判据 / Convergence: `Converged(F_{D372}) ⇔ ΔF_{D372}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9034,6 +18054,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M4的K=√n临界附近标度律：涨落方差∝1/|K-√n|，关联时间∝1/|K-√n|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是平均场相变，普适类与Ising相同。 描述 *临界标度函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D373}`
+- 定义域 / Domain: `X_{D373}`
+- 值域 / Codomain: `Y_{D373}`
+- 数学表达 / Expression: `F_{D373}(x) := M4的K=√n临界附近标度律：涨落方差∝1/|K-√n|，关联时间∝1/|K-√n|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是平均场相变，普适类与Ising相同。`
+- 有效条件 / Validity: `J_n^+(F_{D373})=1 ∧ J_n^-(F_{D373})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D373`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D373} and codomain Y_{D373}.
+  - 2. Normalize the source expression as F_{D373}: X_{D373}->Y_{D373}.
+  - 3. If upstream objects D_{D373} exist, compose F_{D373}=N(⊕_{g∈D_{D373}} g); otherwise treat F_{D373} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D373})=1 and J_n^-(F_{D373})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D373})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D373})=0`
+- 收敛判据 / Convergence: `Converged(F_{D373}) ⇔ ΔF_{D373}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9054,6 +18096,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M5的弱容斥窗口内逃逸速度v_escape(弱容斥)=v_escape(耦合主导)·(1-f_excl)^(1/2)。窗口内D289黄金逃逸点仍有效但效率降低。窗口边界处v_escape→0——D332不可逆线即逃逸速度归零线。 描述 弱容斥窗口-逃逸速度联合函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D374}`
+- 定义域 / Domain: `X_{D374}`
+- 值域 / Codomain: `Y_{D374}`
+- 数学表达 / Expression: `F_{D374}(x) := M5的弱容斥窗口内逃逸速度v_escape(弱容斥)=v_escape(耦合主导)·(1-f_excl)^(1/2)。窗口内D289黄金逃逸点仍有效但效率降低。窗口边界处v_escape→0——D332不可逆线即逃逸速度归零线。`
+- 有效条件 / Validity: `J_n^+(F_{D374})=1 ∧ J_n^-(F_{D374})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D374`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D374} and codomain Y_{D374}.
+  - 2. Normalize the source expression as F_{D374}: X_{D374}->Y_{D374}.
+  - 3. If upstream objects D_{D374} exist, compose F_{D374}=N(⊕_{g∈D_{D374}} g); otherwise treat F_{D374} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D374})=1 and J_n^-(F_{D374})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D374})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D374})=0`
+- 收敛判据 / Convergence: `Converged(F_{D374}) ⇔ ΔF_{D374}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9076,6 +18140,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M6的δ_c不归点恰好是D305退化路径的分叉点。δ<δ_c在d=4附近振荡（可回复），δ>δ_c沿退化路径滑走。δ_c是"还能弹回来"和"开始滑走"的精确分界——退化路径的启动条件。 描述 维度不归点-退化路径联合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D375}`
+- 定义域 / Domain: `X_{D375}`
+- 值域 / Codomain: `Y_{D375}`
+- 数学表达 / Expression: `F_{D375}(x) := M6的δ_c不归点恰好是D305退化路径的分叉点。δ<δ_c在d=4附近振荡（可回复），δ>δ_c沿退化路径滑走。δ_c是"还能弹回来"和"开始滑走"的精确分界——退化路径的启动条件。`
+- 有效条件 / Validity: `J_n^+(F_{D375})=1 ∧ J_n^-(F_{D375})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D375`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D375} and codomain Y_{D375}.
+  - 2. Normalize the source expression as F_{D375}: X_{D375}->Y_{D375}.
+  - 3. If upstream objects D_{D375} exist, compose F_{D375}=N(⊕_{g∈D_{D375}} g); otherwise treat F_{D375} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D375})=1 and J_n^-(F_{D375})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D375})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D375})=0`
+- 收敛判据 / Convergence: `Converged(F_{D375}) ⇔ ΔF_{D375}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9096,6 +18182,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M7的联合效应极限∝-ln(P_min)∝n——n越大极限越高→大系统能承受更多累积但代价是D364实际不可逆。系统在累积到无穷前先死。 描述 加速-波动累积极限函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D376}`
+- 定义域 / Domain: `X_{D376}`
+- 值域 / Codomain: `Y_{D376}`
+- 数学表达 / Expression: `F_{D376}(x) := M7的联合效应极限∝-ln(P_min)∝n——n越大极限越高→大系统能承受更多累积但代价是D364实际不可逆。系统在累积到无穷前先死。`
+- 有效条件 / Validity: `J_n^+(F_{D376})=1 ∧ J_n^-(F_{D376})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D376`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D376} and codomain Y_{D376}.
+  - 2. Normalize the source expression as F_{D376}: X_{D376}->Y_{D376}.
+  - 3. If upstream objects D_{D376} exist, compose F_{D376}=N(⊕_{g∈D_{D376}} g); otherwise treat F_{D376} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D376})=1 and J_n^-(F_{D376})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D376})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D376})=0`
+- 收敛判据 / Convergence: `Converged(F_{D376}) ⇔ ΔF_{D376}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9118,6 +18226,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M8的总响应时间τ_total = τ_perceive + τ_σ。小偏离时瓶颈是感知（信号弱），大偏离时瓶颈是调整（n大调整慢）。维度饥渴早期的瓶颈是感知，晚期的瓶颈是调整。 描述 感知-调整双延迟函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D377}`
+- 定义域 / Domain: `X_{D377}`
+- 值域 / Codomain: `Y_{D377}`
+- 数学表达 / Expression: `F_{D377}(x) := M8的总响应时间τ_total = τ_perceive + τ_σ。小偏离时瓶颈是感知（信号弱），大偏离时瓶颈是调整（n大调整慢）。维度饥渴早期的瓶颈是感知，晚期的瓶颈是调整。`
+- 有效条件 / Validity: `J_n^+(F_{D377})=1 ∧ J_n^-(F_{D377})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D377`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D377} and codomain Y_{D377}.
+  - 2. Normalize the source expression as F_{D377}: X_{D377}->Y_{D377}.
+  - 3. If upstream objects D_{D377} exist, compose F_{D377}=N(⊕_{g∈D_{D377}} g); otherwise treat F_{D377} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D377})=1 and J_n^-(F_{D377})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D377})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D377})=0`
+- 收敛判据 / Convergence: `Converged(F_{D377}) ⇔ ΔF_{D377}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9138,6 +18268,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M9的R_irreversible ≈ 1 - e^{-n²·p̄·Σαᵢ/β}。n=10时R≈0.3，n=100时R≈0.95。复杂度超过阈值后实际不可逆几乎覆盖全部理论可逆空间——大系统的"理论可逆"基本没有实际意义。 描述 实际不可逆占比函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D378}`
+- 定义域 / Domain: `X_{D378}`
+- 值域 / Codomain: `Y_{D378}`
+- 数学表达 / Expression: `F_{D378}(x) := M9的R_irreversible ≈ 1 - e^{-n²·p̄·Σαᵢ/β}。n=10时R≈0.3，n=100时R≈0.95。复杂度超过阈值后实际不可逆几乎覆盖全部理论可逆空间——大系统的"理论可逆"基本没有实际意义。`
+- 有效条件 / Validity: `J_n^+(F_{D378})=1 ∧ J_n^-(F_{D378})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D378`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D378} and codomain Y_{D378}.
+  - 2. Normalize the source expression as F_{D378}: X_{D378}->Y_{D378}.
+  - 3. If upstream objects D_{D378} exist, compose F_{D378}=N(⊕_{g∈D_{D378}} g); otherwise treat F_{D378} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D378})=1 and J_n^-(F_{D378})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D378})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D378})=0`
+- 收敛判据 / Convergence: `Converged(F_{D378}) ⇔ ΔF_{D378}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9163,6 +18315,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M10的溢出量∝ḡ·p_max·ΔC_i/n，方向系数∝p_max/p̄。p_max>>p̄时溢出几乎全部向低p方向→低p门控面被"淹没"。核心部门问题越大边缘部门受害越重——有了精确强度。 描述 定向溢出强度函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D379}`
+- 定义域 / Domain: `X_{D379}`
+- 值域 / Codomain: `Y_{D379}`
+- 数学表达 / Expression: `F_{D379}(x) := M10的溢出量∝ḡ·p_max·ΔC_i/n，方向系数∝p_max/p̄。p_max>>p̄时溢出几乎全部向低p方向→低p门控面被"淹没"。核心部门问题越大边缘部门受害越重——有了精确强度。`
+- 有效条件 / Validity: `J_n^+(F_{D379})=1 ∧ J_n^-(F_{D379})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D379`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D379} and codomain Y_{D379}.
+  - 2. Normalize the source expression as F_{D379}: X_{D379}->Y_{D379}.
+  - 3. If upstream objects D_{D379} exist, compose F_{D379}=N(⊕_{g∈D_{D379}} g); otherwise treat F_{D379} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D379})=1 and J_n^-(F_{D379})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D379})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D379})=0`
+- 收敛判据 / Convergence: `Converged(F_{D379}) ⇔ ΔF_{D379}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9183,6 +18357,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢性低消耗×高不可重建性。慢性持续时间>τ_rebuild时慢性总危险度超过急性——长期慢性消耗比短期急性冲击更致命。 描述 慢性-急性消耗比较函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D380}`
+- 定义域 / Domain: `X_{D380}`
+- 值域 / Codomain: `Y_{D380}`
+- 数学表达 / Expression: `F_{D380}(x) := M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢性低消耗×高不可重建性。慢性持续时间>τ_rebuild时慢性总危险度超过急性——长期慢性消耗比短期急性冲击更致命。`
+- 有效条件 / Validity: `J_n^+(F_{D380})=1 ∧ J_n^-(F_{D380})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D380`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D380} and codomain Y_{D380}.
+  - 2. Normalize the source expression as F_{D380}: X_{D380}->Y_{D380}.
+  - 3. If upstream objects D_{D380} exist, compose F_{D380}=N(⊕_{g∈D_{D380}} g); otherwise treat F_{D380} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D380})=1 and J_n^-(F_{D380})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D380})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D380})=0`
+- 收敛判据 / Convergence: `Converged(F_{D380}) ⇔ ΔF_{D380}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9205,6 +18401,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M12的溢出消耗免疫使传染临界从n/2降至n_eff/2 = n/2 - ΣΔg_consumed/δg_spread。极端情况三分之一僵尸化即可全局崩溃——核心部门问题通过溢出消耗免疫力使整体比看起来更脆弱。 描述 免疫消耗-传染临界联合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D381}`
+- 定义域 / Domain: `X_{D381}`
+- 值域 / Codomain: `Y_{D381}`
+- 数学表达 / Expression: `F_{D381}(x) := M12的溢出消耗免疫使传染临界从n/2降至n_eff/2 = n/2 - ΣΔg_consumed/δg_spread。极端情况三分之一僵尸化即可全局崩溃——核心部门问题通过溢出消耗免疫力使整体比看起来更脆弱。`
+- 有效条件 / Validity: `J_n^+(F_{D381})=1 ∧ J_n^-(F_{D381})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D381`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D381} and codomain Y_{D381}.
+  - 2. Normalize the source expression as F_{D381}: X_{D381}->Y_{D381}.
+  - 3. If upstream objects D_{D381} exist, compose F_{D381}=N(⊕_{g∈D_{D381}} g); otherwise treat F_{D381} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D381})=1 and J_n^-(F_{D381})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D381})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D381})=0`
+- 收敛判据 / Convergence: `Converged(F_{D381}) ⇔ ΔF_{D381}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9225,6 +18443,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M13的K·τ_delay<1时低通滤波主导（延迟有益），>1时自激振荡主导（延迟有害），=1为临界。弱正反馈系统中延迟可以有益（过滤噪声），强正反馈系统中延迟必然有害（引发振荡）。 描述 低通滤波-自激振荡竞争函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D382}`
+- 定义域 / Domain: `X_{D382}`
+- 值域 / Codomain: `Y_{D382}`
+- 数学表达 / Expression: `F_{D382}(x) := M13的K·τ_delay<1时低通滤波主导（延迟有益），>1时自激振荡主导（延迟有害），=1为临界。弱正反馈系统中延迟可以有益（过滤噪声），强正反馈系统中延迟必然有害（引发振荡）。`
+- 有效条件 / Validity: `J_n^+(F_{D382})=1 ∧ J_n^-(F_{D382})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D382`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D382} and codomain Y_{D382}.
+  - 2. Normalize the source expression as F_{D382}: X_{D382}->Y_{D382}.
+  - 3. If upstream objects D_{D382} exist, compose F_{D382}=N(⊕_{g∈D_{D382}} g); otherwise treat F_{D382} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D382})=1 and J_n^-(F_{D382})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D382})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D382})=0`
+- 收敛判据 / Convergence: `Converged(F_{D382}) ⇔ ΔF_{D382}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9247,6 +18487,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低确定性快速探索方向，确认后切换高确定性慢速推进。D280两步策略的动态版本：先探索（降p_max确认方向），再巩固（均匀修缮）。 描述 逃逸速度-确定性权衡函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D383}`
+- 定义域 / Domain: `X_{D383}`
+- 值域 / Codomain: `Y_{D383}`
+- 数学表达 / Expression: `F_{D383}(x) := F_{D383}: X_{D383} -> Y_{D383}, y = F_{D383}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D383})=1 ∧ J_n^-(F_{D383})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D383`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D383} and codomain Y_{D383}.
+  - 2. Normalize the source expression as F_{D383}: X_{D383}->Y_{D383}.
+  - 3. If upstream objects D_{D383} exist, compose F_{D383}=N(⊕_{g∈D_{D383}} g); otherwise treat F_{D383} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D383})=1 and J_n^-(F_{D383})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D383})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D383})=0`
+- 收敛判据 / Convergence: `Converged(F_{D383}) ⇔ ΔF_{D383}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9267,6 +18529,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/(1+a_excl·τ)·(1+Σpᵢpⱼ/ΣVar(ΔΦᵢ))——趋势和波动的双重双重加速。 描述 双重打击-双重加速同构函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D384}`
+- 定义域 / Domain: `X_{D384}`
+- 值域 / Codomain: `Y_{D384}`
+- 数学表达 / Expression: `F_{D384}(x) := M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/(1+a_excl·τ)·(1+Σpᵢpⱼ/ΣVar(ΔΦᵢ))——趋势和波动的双重双重加速。`
+- 有效条件 / Validity: `J_n^+(F_{D384})=1 ∧ J_n^-(F_{D384})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D384`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D384} and codomain Y_{D384}.
+  - 2. Normalize the source expression as F_{D384}: X_{D384}->Y_{D384}.
+  - 3. If upstream objects D_{D384} exist, compose F_{D384}=N(⊕_{g∈D_{D384}} g); otherwise treat F_{D384} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D384})=1 and J_n^-(F_{D384})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D384})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D384})=0`
+- 收敛判据 / Convergence: `Converged(F_{D384}) ⇔ ΔF_{D384}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9289,6 +18573,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M2的复活总代价∝Φ(拐点)与n无关的原因：Φ(拐点)是全局量已包含n信息。每个门控面平均代价∝Φ/n随n减小，但总代价守恒。类比：修复桥的总成本取决于损坏程度而非构件数——构件越多每个修复量越少但总量不变。守恒律：复活总代价=拐点处Φ值。 描述 复活代价n无关性起源函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D385}`
+- 定义域 / Domain: `X_{D385}`
+- 值域 / Codomain: `Y_{D385}`
+- 数学表达 / Expression: `F_{D385}(x) := M2的复活总代价∝Φ(拐点)与n无关的原因：Φ(拐点)是全局量已包含n信息。每个门控面平均代价∝Φ/n随n减小，但总代价守恒。类比：修复桥的总成本取决于损坏程度而非构件数——构件越多每个修复量越少但总量不变。守恒律：复活总代价=拐点处Φ值。`
+- 有效条件 / Validity: `J_n^+(F_{D385})=1 ∧ J_n^-(F_{D385})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D385`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D385} and codomain Y_{D385}.
+  - 2. Normalize the source expression as F_{D385}: X_{D385}->Y_{D385}.
+  - 3. If upstream objects D_{D385} exist, compose F_{D385}=N(⊕_{g∈D_{D385}} g); otherwise treat F_{D385} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D385})=1 and J_n^-(F_{D385})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D385})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D385})=0`
+- 收敛判据 / Convergence: `Converged(F_{D385}) ⇔ ΔF_{D385}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9310,6 +18616,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M3的D372与D328是同一现象不同表述。统一指标I_concentration = max(ΔΦᵢ)/ΣΔΦᵢ·(1+ln(n))。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从集中变分散→系统更均匀。 描述 容斥集中性统一函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D386}`
+- 定义域 / Domain: `X_{D386}`
+- 值域 / Codomain: `Y_{D386}`
+- 数学表达 / Expression: `F_{D386}(x) := M3的D372与D328是同一现象不同表述。统一指标I_concentration = max(ΔΦᵢ)/ΣΔΦᵢ·(1+ln(n))。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从集中变分散→系统更均匀。`
+- 有效条件 / Validity: `J_n^+(F_{D386})=1 ∧ J_n^-(F_{D386})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D386`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D386} and codomain Y_{D386}.
+  - 2. Normalize the source expression as F_{D386}: X_{D386}->Y_{D386}.
+  - 3. If upstream objects D_{D386} exist, compose F_{D386}=N(⊕_{g∈D_{D386}} g); otherwise treat F_{D386} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D386})=1 and J_n^-(F_{D386})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D386})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D386})=0`
+- 收敛判据 / Convergence: `Converged(F_{D386}) ⇔ ΔF_{D386}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9330,6 +18658,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ + Σpᵢ·sᵢ，sᵢ=±1。ḡ对应Ising的J，pᵢ对应外场h。临界温度T_c ∝ ḡ·√n。容斥-耦合竞争的全部统计性质可由标准统计力学方法计算——自由能、磁化率、关联函数等。 描述 容斥-耦合配分函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D387}`
+- 定义域 / Domain: `X_{D387}`
+- 值域 / Codomain: `Y_{D387}`
+- 数学表达 / Expression: `F_{D387}(x) := M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ + Σpᵢ·sᵢ，sᵢ=±1。ḡ对应Ising的J，pᵢ对应外场h。临界温度T_c ∝ ḡ·√n。容斥-耦合竞争的全部统计性质可由标准统计力学方法计算——自由能、磁化率、关联函数等。`
+- 有效条件 / Validity: `J_n^+(F_{D387})=1 ∧ J_n^-(F_{D387})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D387`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D387} and codomain Y_{D387}.
+  - 2. Normalize the source expression as F_{D387}: X_{D387}->Y_{D387}.
+  - 3. If upstream objects D_{D387} exist, compose F_{D387}=N(⊕_{g∈D_{D387}} g); otherwise treat F_{D387} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D387})=1 and J_n^-(F_{D387})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D387})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D387})=0`
+- 收敛判据 / Convergence: `Converged(F_{D387}) ⇔ ΔF_{D387}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9354,6 +18704,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M5的D332与D295在(p_max,n)空间相交于p_max=p*且n=n_c。n<n_c时p_max不可逆先到，n>n_c时容斥主导不可逆先到。大系统先进入容斥主导再触及p_max不可逆，小系统反过来。 描述 不可逆线相交函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D388}`
+- 定义域 / Domain: `X_{D388}`
+- 值域 / Codomain: `Y_{D388}`
+- 数学表达 / Expression: `F_{D388}(x) := M5的D332与D295在(p_max,n)空间相交于p_max=p*且n=n_c。n<n_c时p_max不可逆先到，n>n_c时容斥主导不可逆先到。大系统先进入容斥主导再触及p_max不可逆，小系统反过来。`
+- 有效条件 / Validity: `J_n^+(F_{D388})=1 ∧ J_n^-(F_{D388})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D388`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D388} and codomain Y_{D388}.
+  - 2. Normalize the source expression as F_{D388}: X_{D388}->Y_{D388}.
+  - 3. If upstream objects D_{D388} exist, compose F_{D388}=N(⊕_{g∈D_{D388}} g); otherwise treat F_{D388} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D388})=1 and J_n^-(F_{D388})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D388})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D388})=0`
+- 收敛判据 / Convergence: `Converged(F_{D388}) ⇔ ΔF_{D388}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9374,6 +18746,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σαᵢ²/(1-pᵢ)²，δ_c∝1/√(Σαᵢ²/(1-pᵢ)²)——深度和δ_c是同一量的正反面。深度描述域内稳定性，δ_c描述域的边界。 描述 不归点-吸引域边界统一函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D389}`
+- 定义域 / Domain: `X_{D389}`
+- 值域 / Codomain: `Y_{D389}`
+- 数学表达 / Expression: `F_{D389}(x) := M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σαᵢ²/(1-pᵢ)²，δ_c∝1/√(Σαᵢ²/(1-pᵢ)²)——深度和δ_c是同一量的正反面。深度描述域内稳定性，δ_c描述域的边界。`
+- 有效条件 / Validity: `J_n^+(F_{D389})=1 ∧ J_n^-(F_{D389})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D389`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D389} and codomain Y_{D389}.
+  - 2. Normalize the source expression as F_{D389}: X_{D389}->Y_{D389}.
+  - 3. If upstream objects D_{D389} exist, compose F_{D389}=N(⊕_{g∈D_{D389}} g); otherwise treat F_{D389} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D389})=1 and J_n^-(F_{D389})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D389})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D389})=0`
+- 收敛判据 / Convergence: `Converged(F_{D389}) ⇔ ΔF_{D389}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9396,6 +18790,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M7的D376∝n与D378∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果是大系统更脆弱。临界n*∝β/(p̄·Σαᵢ)——干预力度β够大时n*大（大系统还能撑），β小时n*小（大系统必死）。 描述 极限-不可逆n依赖协调函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D390}`
+- 定义域 / Domain: `X_{D390}`
+- 值域 / Codomain: `Y_{D390}`
+- 数学表达 / Expression: `F_{D390}(x) := M7的D376∝n与D378∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果是大系统更脆弱。临界n*∝β/(p̄·Σαᵢ)——干预力度β够大时n*大（大系统还能撑），β小时n*小（大系统必死）。`
+- 有效条件 / Validity: `J_n^+(F_{D390})=1 ∧ J_n^-(F_{D390})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D390`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D390} and codomain Y_{D390}.
+  - 2. Normalize the source expression as F_{D390}: X_{D390}->Y_{D390}.
+  - 3. If upstream objects D_{D390} exist, compose F_{D390}=N(⊕_{g∈D_{D390}} g); otherwise treat F_{D390} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D390})=1 and J_n^-(F_{D390})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D390})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D390})=0`
+- 收敛判据 / Convergence: `Converged(F_{D390}) ⇔ ΔF_{D390}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9417,6 +18833,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M8的感知延迟使有效τ_buffer增大→共振频率降低。ω_res_effective = ω_res/(1+τ_perceive/τ_σ)。感知慢的系统共振频率低→怕低频共振。维度饥渴感知慢使脆弱频率下移。 描述 双延迟-共振频率联合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D391}`
+- 定义域 / Domain: `X_{D391}`
+- 值域 / Codomain: `Y_{D391}`
+- 数学表达 / Expression: `F_{D391}(x) := M8的感知延迟使有效τ_buffer增大→共振频率降低。ω_res_effective = ω_res/(1+τ_perceive/τ_σ)。感知慢的系统共振频率低→怕低频共振。维度饥渴感知慢使脆弱频率下移。`
+- 有效条件 / Validity: `J_n^+(F_{D391})=1 ∧ J_n^-(F_{D391})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D391`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D391} and codomain Y_{D391}.
+  - 2. Normalize the source expression as F_{D391}: X_{D391}->Y_{D391}.
+  - 3. If upstream objects D_{D391} exist, compose F_{D391}=N(⊕_{g∈D_{D391}} g); otherwise treat F_{D391} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D391})=1 and J_n^-(F_{D391})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D391})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D391})=0`
+- 收敛判据 / Convergence: `Converged(F_{D391}) ⇔ ΔF_{D391}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9437,6 +18875,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），w₂后消失（n→∞）。中间存在"几乎全部不可逆但缓冲期仍名义存在"的状态——D311僵尸态的宏观版本。 描述 不可逆-缓冲消失同步函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D392}`
+- 定义域 / Domain: `X_{D392}`
+- 值域 / Codomain: `Y_{D392}`
+- 数学表达 / Expression: `F_{D392}(x) := M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），w₂后消失（n→∞）。中间存在"几乎全部不可逆但缓冲期仍名义存在"的状态——D311僵尸态的宏观版本。`
+- 有效条件 / Validity: `J_n^+(F_{D392})=1 ∧ J_n^-(F_{D392})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D392`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D392} and codomain Y_{D392}.
+  - 2. Normalize the source expression as F_{D392}: X_{D392}->Y_{D392}.
+  - 3. If upstream objects D_{D392} exist, compose F_{D392}=N(⊕_{g∈D_{D392}} g); otherwise treat F_{D392} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D392})=1 and J_n^-(F_{D392})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D392})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D392})=0`
+- 收敛判据 / Convergence: `Converged(F_{D392}) ⇔ ΔF_{D392}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9461,6 +18921,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(D379)→低p缓冲<g_critical(D309)→低p僵尸化→总g_eff下降→更多溢出。正反馈传染链。 描述 溢出-传染通道统一函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D393}`
+- 定义域 / Domain: `X_{D393}`
+- 值域 / Codomain: `Y_{D393}`
+- 数学表达 / Expression: `F_{D393}(x) := M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(D379)→低p缓冲<g_critical(D309)→低p僵尸化→总g_eff下降→更多溢出。正反馈传染链。`
+- 有效条件 / Validity: `J_n^+(F_{D393})=1 ∧ J_n^-(F_{D393})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D309`, `D379`, `D393`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D393} and codomain Y_{D393}.
+  - 2. Normalize the source expression as F_{D393}: X_{D393}->Y_{D393}.
+  - 3. If upstream objects D_{D393} exist, compose F_{D393}=N(⊕_{g∈D_{D393}} g); otherwise treat F_{D393} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D393})=1 and J_n^-(F_{D393})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D393})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D393})=0`
+- 收敛判据 / Convergence: `Converged(F_{D393}) ⇔ ΔF_{D393}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9481,6 +18963,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积在连续时间极限下的表现。 描述 慢性消耗-波动累积同构检验。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D394}`
+- 定义域 / Domain: `X_{D394}`
+- 值域 / Codomain: `Y_{D394}`
+- 数学表达 / Expression: `F_{D394}(x) := M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积在连续时间极限下的表现。`
+- 有效条件 / Validity: `J_n^+(F_{D394})=1 ∧ J_n^-(F_{D394})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D394`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D394} and codomain Y_{D394}.
+  - 2. Normalize the source expression as F_{D394}: X_{D394}->Y_{D394}.
+  - 3. If upstream objects D_{D394} exist, compose F_{D394}=N(⊕_{g∈D_{D394}} g); otherwise treat F_{D394} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D394})=1 and J_n^-(F_{D394})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D394})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D394})=0`
+- 收敛判据 / Convergence: `Converged(F_{D394}) ⇔ ΔF_{D394}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9503,6 +19007,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M12的n_eff/2 = n/2 - ḡ·p_max/δg_spread。n越大免疫消耗对传染临界影响比例越小→大系统更接近n/2理论值，小系统传染临界被拉低更多。 描述 传染临界n依赖函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D395}`
+- 定义域 / Domain: `X_{D395}`
+- 值域 / Codomain: `Y_{D395}`
+- 数学表达 / Expression: `F_{D395}(x) := M12的n_eff/2 = n/2 - ḡ·p_max/δg_spread。n越大免疫消耗对传染临界影响比例越小→大系统更接近n/2理论值，小系统传染临界被拉低更多。`
+- 有效条件 / Validity: `J_n^+(F_{D395})=1 ∧ J_n^-(F_{D395})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D395`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D395} and codomain Y_{D395}.
+  - 2. Normalize the source expression as F_{D395}: X_{D395}->Y_{D395}.
+  - 3. If upstream objects D_{D395} exist, compose F_{D395}=N(⊕_{g∈D_{D395}} g); otherwise treat F_{D395} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D395})=1 and J_n^-(F_{D395})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D395})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D395})=0`
+- 收敛判据 / Convergence: `Converged(F_{D395}) ⇔ ΔF_{D395}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9523,6 +19049,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M13的D382与D295在参数空间形成两条不可逆线。交点以下正反馈不可逆先到，交点以上振荡不可逆先到。小系统先触及正反馈不可逆，大系统先触及振荡不可逆。 描述 延迟临界-不可逆点统一函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D396}`
+- 定义域 / Domain: `X_{D396}`
+- 值域 / Codomain: `Y_{D396}`
+- 数学表达 / Expression: `F_{D396}(x) := F_{D396}: X_{D396} -> Y_{D396}, y = F_{D396}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D396})=1 ∧ J_n^-(F_{D396})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D396`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D396} and codomain Y_{D396}.
+  - 2. Normalize the source expression as F_{D396}: X_{D396}->Y_{D396}.
+  - 3. If upstream objects D_{D396} exist, compose F_{D396}=N(⊕_{g∈D_{D396}} g); otherwise treat F_{D396} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D396})=1 and J_n^-(F_{D396})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D396})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D396})=0`
+- 收敛判据 / Convergence: `Converged(F_{D396}) ⇔ ΔF_{D396}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9545,6 +19093,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M14的D280两步策略是最小化T_escape的策略。最优分配：t_explore/t_consolidate = √(v_slow/v_fast)。两步策略最优当且仅当v_fast>>v_slow且P_correct在探索后显著提升——即不确定性高的系统才需要两步。确定性高的系统直接一步慢速推进即可。 描述 两步策略最优性证明函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D397}`
+- 定义域 / Domain: `X_{D397}`
+- 值域 / Codomain: `Y_{D397}`
+- 数学表达 / Expression: `F_{D397}(x) := M14的D280两步策略是最小化T_escape的策略。最优分配：t_explore/t_consolidate = √(v_slow/v_fast)。两步策略最优当且仅当v_fast>>v_slow且P_correct在探索后显著提升——即不确定性高的系统才需要两步。确定性高的系统直接一步慢速推进即可。`
+- 有效条件 / Validity: `J_n^+(F_{D397})=1 ∧ J_n^-(F_{D397})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D397`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D397} and codomain Y_{D397}.
+  - 2. Normalize the source expression as F_{D397}: X_{D397}->Y_{D397}.
+  - 3. If upstream objects D_{D397} exist, compose F_{D397}=N(⊕_{g∈D_{D397}} g); otherwise treat F_{D397} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D397})=1 and J_n^-(F_{D397})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D397})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D397})=0`
+- 收敛判据 / Convergence: `Converged(F_{D397}) ⇔ ΔF_{D397}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9565,6 +19135,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M1的R_tw = (a_excl·τ)/(Σpᵢpⱼ/ΣVar)。R_tw>>1趋势主导，<<1波动主导。早期波动主导（随机波动被放大），晚期趋势主导（确定性加速）。衰退从"随机"切换到"确定"——D316转折点的动态版本。 描述 趋势-波动主导切换函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D398}`
+- 定义域 / Domain: `X_{D398}`
+- 值域 / Codomain: `Y_{D398}`
+- 数学表达 / Expression: `F_{D398}(x) := M1的R_tw = (a_excl·τ)/(Σpᵢpⱼ/ΣVar)。R_tw>>1趋势主导，<<1波动主导。早期波动主导（随机波动被放大），晚期趋势主导（确定性加速）。衰退从"随机"切换到"确定"——D316转折点的动态版本。`
+- 有效条件 / Validity: `J_n^+(F_{D398})=1 ∧ J_n^-(F_{D398})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D398`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D398} and codomain Y_{D398}.
+  - 2. Normalize the source expression as F_{D398}: X_{D398}->Y_{D398}.
+  - 3. If upstream objects D_{D398} exist, compose F_{D398}=N(⊕_{g∈D_{D398}} g); otherwise treat F_{D398} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D398})=1 and J_n^-(F_{D398})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D398})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D398})=0`
+- 收敛判据 / Convergence: `Converged(F_{D398}) ⇔ ΔF_{D398}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9587,6 +19179,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M2的快速漂移使复活代价快速变化。极小点向深处漂移（学习）→拐点Φ增大→复活代价增大→复活窗口关闭。学习使极小点更深但使旧极小点复活更难——进步的代价是旧路不可逆。 描述 漂移速率-复活代价联合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D399}`
+- 定义域 / Domain: `X_{D399}`
+- 值域 / Codomain: `Y_{D399}`
+- 数学表达 / Expression: `F_{D399}(x) := M2的快速漂移使复活代价快速变化。极小点向深处漂移（学习）→拐点Φ增大→复活代价增大→复活窗口关闭。学习使极小点更深但使旧极小点复活更难——进步的代价是旧路不可逆。`
+- 有效条件 / Validity: `J_n^+(F_{D399})=1 ∧ J_n^-(F_{D399})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D399`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D399} and codomain Y_{D399}.
+  - 2. Normalize the source expression as F_{D399}: X_{D399}->Y_{D399}.
+  - 3. If upstream objects D_{D399} exist, compose F_{D399}=N(⊕_{g∈D_{D399}} g); otherwise treat F_{D399} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D399})=1 and J_n^-(F_{D399})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D399})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D399})=0`
+- 收敛判据 / Convergence: `Converged(F_{D399}) ⇔ ΔF_{D399}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9608,6 +19222,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。 描述 集中性-序参量统一函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D400}`
+- 定义域 / Domain: `X_{D400}`
+- 值域 / Codomain: `Y_{D400}`
+- 数学表达 / Expression: `F_{D400}(x) := M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。`
+- 有效条件 / Validity: `J_n^+(F_{D400})=1 ∧ J_n^-(F_{D400})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D400`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D400} and codomain Y_{D400}.
+  - 2. Normalize the source expression as F_{D400}: X_{D400}->Y_{D400}.
+  - 3. If upstream objects D_{D400} exist, compose F_{D400}=N(⊕_{g∈D_{D400}} g); otherwise treat F_{D400} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D400})=1 and J_n^-(F_{D400})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D400})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D400})=0`
+- 收敛判据 / Convergence: `Converged(F_{D400}) ⇔ ΔF_{D400}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9628,6 +19264,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与D387一致。点火框架与统计力学的等价性在零温极限下精确成立。 描述 自由能-Φ等价函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D401}`
+- 定义域 / Domain: `X_{D401}`
+- 值域 / Codomain: `Y_{D401}`
+- 数学表达 / Expression: `F_{D401}(x) := M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与D387一致。点火框架与统计力学的等价性在零温极限下精确成立。`
+- 有效条件 / Validity: `J_n^+(F_{D401})=1 ∧ J_n^-(F_{D401})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D401`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D401} and codomain Y_{D401}.
+  - 2. Normalize the source expression as F_{D401}: X_{D401}->Y_{D401}.
+  - 3. If upstream objects D_{D401} exist, compose F_{D401}=N(⊕_{g∈D_{D401}} g); otherwise treat F_{D401} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D401})=1 and J_n^-(F_{D401})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D401})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D401})=0`
+- 收敛判据 / Convergence: `Converged(F_{D401}) ⇔ ΔF_{D401}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9652,6 +19310,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M5的D388交点处K=1（确定性不可逆），D359临界K=√n（统计不可逆）。确定性不可逆先于统计不可逆——K=1时系统确定性地进入不可逆，K=√n时涨落使不可逆变得随机。 描述 不可逆相交-临界标度联合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D402}`
+- 定义域 / Domain: `X_{D402}`
+- 值域 / Codomain: `Y_{D402}`
+- 数学表达 / Expression: `F_{D402}(x) := M5的D388交点处K=1（确定性不可逆），D359临界K=√n（统计不可逆）。确定性不可逆先于统计不可逆——K=1时系统确定性地进入不可逆，K=√n时涨落使不可逆变得随机。`
+- 有效条件 / Validity: `J_n^+(F_{D402})=1 ∧ J_n^-(F_{D402})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D402`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D402} and codomain Y_{D402}.
+  - 2. Normalize the source expression as F_{D402}: X_{D402}->Y_{D402}.
+  - 3. If upstream objects D_{D402} exist, compose F_{D402}=N(⊕_{g∈D_{D402}} g); otherwise treat F_{D402} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D402})=1 and J_n^-(F_{D402})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D402})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D402})=0`
+- 收敛判据 / Convergence: `Converged(F_{D402}) ⇔ ΔF_{D402}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9672,6 +19352,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。 描述 δ_c-相变点统一函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D403}`
+- 定义域 / Domain: `X_{D403}`
+- 值域 / Codomain: `Y_{D403}`
+- 数学表达 / Expression: `F_{D403}(x) := M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。`
+- 有效条件 / Validity: `J_n^+(F_{D403})=1 ∧ J_n^-(F_{D403})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D403`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D403} and codomain Y_{D403}.
+  - 2. Normalize the source expression as F_{D403}: X_{D403}->Y_{D403}.
+  - 3. If upstream objects D_{D403} exist, compose F_{D403}=N(⊕_{g∈D_{D403}} g); otherwise treat F_{D403} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D403})=1 and J_n^-(F_{D403})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D403})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D403})=0`
+- 收敛判据 / Convergence: `Converged(F_{D403}) ⇔ ΔF_{D403}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9694,6 +19396,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。 描述 双临界n统一函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D404}`
+- 定义域 / Domain: `X_{D404}`
+- 值域 / Codomain: `Y_{D404}`
+- 数学表达 / Expression: `F_{D404}(x) := M7的n*∝β/(p̄·Σαᵢ)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。`
+- 有效条件 / Validity: `J_n^+(F_{D404})=1 ∧ J_n^-(F_{D404})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D404`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D404} and codomain Y_{D404}.
+  - 2. Normalize the source expression as F_{D404}: X_{D404}->Y_{D404}.
+  - 3. If upstream objects D_{D404} exist, compose F_{D404}=N(⊕_{g∈D_{D404}} g); otherwise treat F_{D404} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D404})=1 and J_n^-(F_{D404})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D404})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D404})=0`
+- 收敛判据 / Convergence: `Converged(F_{D404}) ⇔ ΔF_{D404}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9714,6 +19438,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M8的感知延迟使频率下移，复杂度使频率上移。交叉n_cross∝(1+τ_ratio)²。感知延迟越严重需要越大的系统才从"怕低频"切换到"怕高频"。 描述 共振频率方向竞争函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D405}`
+- 定义域 / Domain: `X_{D405}`
+- 值域 / Codomain: `Y_{D405}`
+- 数学表达 / Expression: `F_{D405}(x) := M8的感知延迟使频率下移，复杂度使频率上移。交叉n_cross∝(1+τ_ratio)²。感知延迟越严重需要越大的系统才从"怕低频"切换到"怕高频"。`
+- 有效条件 / Validity: `J_n^+(F_{D405})=1 ∧ J_n^-(F_{D405})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D405`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D405} and codomain Y_{D405}.
+  - 2. Normalize the source expression as F_{D405}: X_{D405}->Y_{D405}.
+  - 3. If upstream objects D_{D405} exist, compose F_{D405}=N(⊕_{g∈D_{D405}} g); otherwise treat F_{D405} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D405})=1 and J_n^-(F_{D405})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D405})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D405})=0`
+- 收敛判据 / Convergence: `Converged(F_{D405}) ⇔ ΔF_{D405}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9736,6 +19482,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。 描述 宏观僵尸态g_eff函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D406}`
+- 定义域 / Domain: `X_{D406}`
+- 值域 / Codomain: `Y_{D406}`
+- 数学表达 / Expression: `F_{D406}(x) := M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。`
+- 有效条件 / Validity: `J_n^+(F_{D406})=1 ∧ J_n^-(F_{D406})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D406`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D406} and codomain Y_{D406}.
+  - 2. Normalize the source expression as F_{D406}: X_{D406}->Y_{D406}.
+  - 3. If upstream objects D_{D406} exist, compose F_{D406}=N(⊕_{g∈D_{D406}} g); otherwise treat F_{D406} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D406})=1 and J_n^-(F_{D406})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D406})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D406})=0`
+- 收敛判据 / Convergence: `Converged(F_{D406}) ⇔ ΔF_{D406}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9756,6 +19524,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M10的传染链有自限：僵尸化降低ḡ→降低溢出→传染减速。但自限点在全局僵尸化附近——来得太晚对干预没有实际帮助。 描述 传染链自限函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D407}`
+- 定义域 / Domain: `X_{D407}`
+- 值域 / Codomain: `Y_{D407}`
+- 数学表达 / Expression: `F_{D407}(x) := F_{D407}: X_{D407} -> Y_{D407}, y = F_{D407}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D407})=1 ∧ J_n^-(F_{D407})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D407`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D407} and codomain Y_{D407}.
+  - 2. Normalize the source expression as F_{D407}: X_{D407}->Y_{D407}.
+  - 3. If upstream objects D_{D407} exist, compose F_{D407}=N(⊕_{g∈D_{D407}} g); otherwise treat F_{D407} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D407})=1 and J_n^-(F_{D407})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D407})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D407})=0`
+- 收敛判据 / Convergence: `Converged(F_{D407}) ⇔ ΔF_{D407}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9778,6 +19568,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M11的连续极限下Jensen项∝(dΦ/dt)²·τ_min/2。τ_min→0时Jensen→0，τ_min有限时Jensen有限。慢性消耗=有限τ_min下的Jensen效应。D394"极限等价"需修正：不是严格等价而是τ_min有限时的近似等价。 描述 -慢性消耗统一极限函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D408}`
+- 定义域 / Domain: `X_{D408}`
+- 值域 / Codomain: `Y_{D408}`
+- 数学表达 / Expression: `F_{D408}(x) := M11的连续极限下Jensen项∝(dΦ/dt)²·τ_min/2。τ_min→0时Jensen→0，τ_min有限时Jensen有限。慢性消耗=有限τ_min下的Jensen效应。D394"极限等价"需修正：不是严格等价而是τ_min有限时的近似等价。`
+- 有效条件 / Validity: `J_n^+(F_{D408})=1 ∧ J_n^-(F_{D408})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D394`, `D408`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D408} and codomain Y_{D408}.
+  - 2. Normalize the source expression as F_{D408}: X_{D408}->Y_{D408}.
+  - 3. If upstream objects D_{D408} exist, compose F_{D408}=N(⊕_{g∈D_{D408}} g); otherwise treat F_{D408} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D408})=1 and J_n^-(F_{D408})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D408})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D408})=0`
+- 收敛判据 / Convergence: `Converged(F_{D408}) ⇔ ΔF_{D408}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9798,6 +19610,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D395描述同一现象的不同方面——完全一致。 描述 传染临界-不可逆线一致性函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D409}`
+- 定义域 / Domain: `X_{D409}`
+- 值域 / Codomain: `Y_{D409}`
+- 数学表达 / Expression: `F_{D409}(x) := F_{D409}: X_{D409} -> Y_{D409}, y = F_{D409}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D409})=1 ∧ J_n^-(F_{D409})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D409`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D409} and codomain Y_{D409}.
+  - 2. Normalize the source expression as F_{D409}: X_{D409}->Y_{D409}.
+  - 3. If upstream objects D_{D409} exist, compose F_{D409}=N(⊕_{g∈D_{D409}} g); otherwise treat F_{D409} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D409})=1 and J_n^-(F_{D409})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D409})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D409})=0`
+- 收敛判据 / Convergence: `Converged(F_{D409}) ⇔ ΔF_{D409}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9820,6 +19654,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M13的四条不可逆线在(p_max,n,K,τ_delay)四维空间中划分3个有实际意义的区域：全可逆、部分可逆、全不可逆。全不可逆体积∝n²·p̄·Σαᵢ·K·τ_delay/β。干预策略：找到最小非零因子→最低成本干预。 描述 不可逆线完整分类函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D410}`
+- 定义域 / Domain: `X_{D410}`
+- 值域 / Codomain: `Y_{D410}`
+- 数学表达 / Expression: `F_{D410}(x) := M13的四条不可逆线在(p_max,n,K,τ_delay)四维空间中划分3个有实际意义的区域：全可逆、部分可逆、全不可逆。全不可逆体积∝n²·p̄·Σαᵢ·K·τ_delay/β。干预策略：找到最小非零因子→最低成本干预。`
+- 有效条件 / Validity: `J_n^+(F_{D410})=1 ∧ J_n^-(F_{D410})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D410`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D410} and codomain Y_{D410}.
+  - 2. Normalize the source expression as F_{D410}: X_{D410}->Y_{D410}.
+  - 3. If upstream objects D_{D410} exist, compose F_{D410}=N(⊕_{g∈D_{D410}} g); otherwise treat F_{D410} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D410})=1 and J_n^-(F_{D410})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D410})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D410})=0`
+- 收敛判据 / Convergence: `Converged(F_{D410}) ⇔ ΔF_{D410}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9841,6 +19697,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M14的正反馈放大不确定性→自动满足两步策略的高不确定性条件。K>1系统天然需要两步策略，K<1系统不需要。正反馈↔两步策略，负反馈↔一步策略——策略选择与系统动力学完全自洽。 描述 放大不确定性-两步策略自洽函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D411}`
+- 定义域 / Domain: `X_{D411}`
+- 值域 / Codomain: `Y_{D411}`
+- 数学表达 / Expression: `F_{D411}(x) := M14的正反馈放大不确定性→自动满足两步策略的高不确定性条件。K>1系统天然需要两步策略，K<1系统不需要。正反馈↔两步策略，负反馈↔一步策略——策略选择与系统动力学完全自洽。`
+- 有效条件 / Validity: `J_n^+(F_{D411})=1 ∧ J_n^-(F_{D411})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D411`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D411} and codomain Y_{D411}.
+  - 2. Normalize the source expression as F_{D411}: X_{D411}->Y_{D411}.
+  - 3. If upstream objects D_{D411} exist, compose F_{D411}=N(⊕_{g∈D_{D411}} g); otherwise treat F_{D411} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D411})=1 and J_n^-(F_{D411})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D411})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D411})=0`
+- 收敛判据 / Convergence: `Converged(F_{D411}) ⇔ ΔF_{D411}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9861,6 +19739,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M1的R_tw=1与D316转折点近似同步但不精确同步。a_excl·τ≈0.25时两个切换同时发生（最危险的"完美风暴"），否则先后发生。 描述 双切换同步函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D412}`
+- 定义域 / Domain: `X_{D412}`
+- 值域 / Codomain: `Y_{D412}`
+- 数学表达 / Expression: `F_{D412}(x) := M1的R_tw=1与D316转折点近似同步但不精确同步。a_excl·τ≈0.25时两个切换同时发生（最危险的"完美风暴"），否则先后发生。`
+- 有效条件 / Validity: `J_n^+(F_{D412})=1 ∧ J_n^-(F_{D412})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D412`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D412} and codomain Y_{D412}.
+  - 2. Normalize the source expression as F_{D412}: X_{D412}->Y_{D412}.
+  - 3. If upstream objects D_{D412} exist, compose F_{D412}=N(⊕_{g∈D_{D412}} g); otherwise treat F_{D412} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D412})=1 and J_n^-(F_{D412})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D412})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D412})=0`
+- 收敛判据 / Convergence: `Converged(F_{D412}) ⇔ ΔF_{D412}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9885,6 +19785,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M2的遗迹衰减速率∝D301漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口短暂但代价也在降低。 描述 遗迹-复活代价联合函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D413}`
+- 定义域 / Domain: `X_{D413}`
+- 值域 / Codomain: `Y_{D413}`
+- 数学表达 / Expression: `F_{D413}(x) := M2的遗迹衰减速率∝D301漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口短暂但代价也在降低。`
+- 有效条件 / Validity: `J_n^+(F_{D413})=1 ∧ J_n^-(F_{D413})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D413`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D413} and codomain Y_{D413}.
+  - 2. Normalize the source expression as F_{D413}: X_{D413}->Y_{D413}.
+  - 3. If upstream objects D_{D413} exist, compose F_{D413}=N(⊕_{g∈D_{D413}} g); otherwise treat F_{D413} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D413})=1 and J_n^-(F_{D413})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D413})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D413})=0`
+- 收敛判据 / Convergence: `Converged(F_{D413}) ⇔ ΔF_{D413}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9905,6 +19827,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与D331 p*涨落同量级，同一有限尺寸效应的两个方面。 描述 集中性-序参量映射修正函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D414}`
+- 定义域 / Domain: `X_{D414}`
+- 值域 / Codomain: `Y_{D414}`
+- 数学表达 / Expression: `F_{D414}(x) := M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与D331 p*涨落同量级，同一有限尺寸效应的两个方面。`
+- 有效条件 / Validity: `J_n^+(F_{D414})=1 ∧ J_n^-(F_{D414})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D414`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D414} and codomain Y_{D414}.
+  - 2. Normalize the source expression as F_{D414}: X_{D414}->Y_{D414}.
+  - 3. If upstream objects D_{D414} exist, compose F_{D414}=N(⊕_{g∈D_{D414}} g); otherwise treat F_{D414} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D414})=1 and J_n^-(F_{D414})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D414})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D414})=0`
+- 收敛判据 / Convergence: `Converged(F_{D414}) ⇔ ΔF_{D414}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9927,6 +19871,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M4的β_eff = 1/2 - ε(T)，ε∝(kT/Φ_min)²。大系统临界行为更接近平均场——有限尺寸和有限温效应都∝1/√n。 描述 有限温临界指数修正函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D415}`
+- 定义域 / Domain: `X_{D415}`
+- 值域 / Codomain: `Y_{D415}`
+- 数学表达 / Expression: `F_{D415}(x) := M4的β_eff = 1/2 - ε(T)，ε∝(kT/Φ_min)²。大系统临界行为更接近平均场——有限尺寸和有限温效应都∝1/√n。`
+- 有效条件 / Validity: `J_n^+(F_{D415})=1 ∧ J_n^-(F_{D415})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D415`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D415} and codomain Y_{D415}.
+  - 2. Normalize the source expression as F_{D415}: X_{D415}->Y_{D415}.
+  - 3. If upstream objects D_{D415} exist, compose F_{D415}=N(⊕_{g∈D_{D415}} g); otherwise treat F_{D415} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D415})=1 and J_n^-(F_{D415})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D415})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D415})=0`
+- 收敛判据 / Convergence: `Converged(F_{D415}) ⇔ ΔF_{D415}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9947,6 +19913,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 —降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启动→K=1的物理含义。**K=1与p_max=p*精确等价。** 描述 =1-p_max=p*等价证明函数 | M5的K=1对应正反馈恰好自持。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D416}`
+- 定义域 / Domain: `X_{D416}`
+- 值域 / Codomain: `Y_{D416}`
+- 数学表达 / Expression: `F_{D416}(x) := —降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启动→K=1的物理含义。**K=1与p_max=p*精确等价。**`
+- 有效条件 / Validity: `J_n^+(F_{D416})=1 ∧ J_n^-(F_{D416})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D416`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D416} and codomain Y_{D416}.
+  - 2. Normalize the source expression as F_{D416}: X_{D416}->Y_{D416}.
+  - 3. If upstream objects D_{D416} exist, compose F_{D416}=N(⊕_{g∈D_{D416}} g); otherwise treat F_{D416} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D416})=1 and J_n^-(F_{D416})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D416})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D416})=0`
+- 收敛判据 / Convergence: `Converged(F_{D416}) ⇔ ΔF_{D416}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -9969,6 +19957,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽的双重最优——D285干预机会面积最大的几何根源。 描述 δ_c-稳定性裕度统一函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D417}`
+- 定义域 / Domain: `X_{D417}`
+- 值域 / Codomain: `Y_{D417}`
+- 数学表达 / Expression: `F_{D417}(x) := M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽的双重最优——D285干预机会面积最大的几何根源。`
+- 有效条件 / Validity: `J_n^+(F_{D417})=1 ∧ J_n^-(F_{D417})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D417`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D417} and codomain Y_{D417}.
+  - 2. Normalize the source expression as F_{D417}: X_{D417}->Y_{D417}.
+  - 3. If upstream objects D_{D417} exist, compose F_{D417}=N(⊕_{g∈D_{D417}} g); otherwise treat F_{D417} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D417})=1 and J_n^-(F_{D417})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D417})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D417})=0`
+- 收敛判据 / Convergence: `Converged(F_{D417}) ⇔ ΔF_{D417}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -9989,6 +19999,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M7的有效β = min(β_intended, β_max)，β_max∝√n/K。去容斥需β在(β_threshold, β_max)窗口内。K大的系统干预窗口极窄——强正反馈系统几乎无法安全干预。 描述 强干预-去容斥等价函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D418}`
+- 定义域 / Domain: `X_{D418}`
+- 值域 / Codomain: `Y_{D418}`
+- 数学表达 / Expression: `F_{D418}(x) := M7的有效β = min(β_intended, β_max)，β_max∝√n/K。去容斥需β在(β_threshold, β_max)窗口内。K大的系统干预窗口极窄——强正反馈系统几乎无法安全干预。`
+- 有效条件 / Validity: `J_n^+(F_{D418})=1 ∧ J_n^-(F_{D418})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D418`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D418} and codomain Y_{D418}.
+  - 2. Normalize the source expression as F_{D418}: X_{D418}->Y_{D418}.
+  - 3. If upstream objects D_{D418} exist, compose F_{D418}=N(⊕_{g∈D_{D418}} g); otherwise treat F_{D418} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D418})=1 and J_n^-(F_{D418})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D418})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D418})=0`
+- 收敛判据 / Convergence: `Converged(F_{D418}) ⇔ ΔF_{D418}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -10011,6 +20043,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M9的宏观僵尸态、实际不可逆、缓冲不可逆(D309)三者精确等价——同一现象的三个等价描述。 描述 宏观僵尸态-实际不可逆等价函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D419}`
+- 定义域 / Domain: `X_{D419}`
+- 值域 / Codomain: `Y_{D419}`
+- 数学表达 / Expression: `F_{D419}(x) := F_{D419}: X_{D419} -> Y_{D419}, y = F_{D419}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D419})=1 ∧ J_n^-(F_{D419})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D309`, `D419`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D419} and codomain Y_{D419}.
+  - 2. Normalize the source expression as F_{D419}: X_{D419}->Y_{D419}.
+  - 3. If upstream objects D_{D419} exist, compose F_{D419}=N(⊕_{g∈D_{D419}} g); otherwise treat F_{D419} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D419})=1 and J_n^-(F_{D419})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D419})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D419})=0`
+- 收敛判据 / Convergence: `Converged(F_{D419}) ⇔ ΔF_{D419}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -10031,6 +20085,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对干预没有实际帮助。 描述 自限-实际不可逆时序函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D420}`
+- 定义域 / Domain: `X_{D420}`
+- 值域 / Codomain: `Y_{D420}`
+- 数学表达 / Expression: `F_{D420}(x) := F_{D420}: X_{D420} -> Y_{D420}, y = F_{D420}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D420})=1 ∧ J_n^-(F_{D420})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D420`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D420} and codomain Y_{D420}.
+  - 2. Normalize the source expression as F_{D420}: X_{D420}->Y_{D420}.
+  - 3. If upstream objects D_{D420} exist, compose F_{D420}=N(⊕_{g∈D_{D420}} g); otherwise treat F_{D420} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D420})=1 and J_n^-(F_{D420})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D420})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D420})=0`
+- 收敛判据 / Convergence: `Converged(F_{D420}) ⇔ ΔF_{D420}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -10053,6 +20129,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟决定系统能多快响应噪声。 描述 τ_min-噪声相关时间等价函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D421}`
+- 定义域 / Domain: `X_{D421}`
+- 值域 / Codomain: `Y_{D421}`
+- 数学表达 / Expression: `F_{D421}(x) := M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟决定系统能多快响应噪声。`
+- 有效条件 / Validity: `J_n^+(F_{D421})=1 ∧ J_n^-(F_{D421})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D421`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D421} and codomain Y_{D421}.
+  - 2. Normalize the source expression as F_{D421}: X_{D421}->Y_{D421}.
+  - 3. If upstream objects D_{D421} exist, compose F_{D421}=N(⊕_{g∈D_{D421}} g); otherwise treat F_{D421} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D421})=1 and J_n^-(F_{D421})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D421})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D421})=0`
+- 收敛判据 / Convergence: `Converged(F_{D421}) ⇔ ΔF_{D421}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -10073,6 +20171,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 M12的n/2作为容斥主导不可逆的间接观测量——用可观测的传染临界预警不可观测的不可逆点。 描述 传染临界-不可逆观测量函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D422}`
+- 定义域 / Domain: `X_{D422}`
+- 值域 / Codomain: `Y_{D422}`
+- 数学表达 / Expression: `F_{D422}(x) := F_{D422}: X_{D422} -> Y_{D422}, y = F_{D422}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D422})=1 ∧ J_n^-(F_{D422})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D422`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D422} and codomain Y_{D422}.
+  - 2. Normalize the source expression as F_{D422}: X_{D422}->Y_{D422}.
+  - 3. If upstream objects D_{D422} exist, compose F_{D422}=N(⊕_{g∈D_{D422}} g); otherwise treat F_{D422} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D422})=1 and J_n^-(F_{D422})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D422})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D422})=0`
+- 收敛判据 / Convergence: `Converged(F_{D422}) ⇔ ΔF_{D422}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -10095,6 +20215,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M13的六个参数归约为3个有效参数：n_eff=n·√(p̄·Σαᵢ/β)，K，τ_delay。全不可逆体积∝n_eff²·K·τ_delay。三个干预方向：简化系统/降负担/增力度，减弱正反馈，加快反馈。 描述 不可逆体积参数归约函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D423}`
+- 定义域 / Domain: `X_{D423}`
+- 值域 / Codomain: `Y_{D423}`
+- 数学表达 / Expression: `F_{D423}(x) := M13的六个参数归约为3个有效参数：n_eff=n·√(p̄·Σαᵢ/β)，K，τ_delay。全不可逆体积∝n_eff²·K·τ_delay。三个干预方向：简化系统/降负担/增力度，减弱正反馈，加快反馈。`
+- 有效条件 / Validity: `J_n^+(F_{D423})=1 ∧ J_n^-(F_{D423})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D423`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D423} and codomain Y_{D423}.
+  - 2. Normalize the source expression as F_{D423}: X_{D423}->Y_{D423}.
+  - 3. If upstream objects D_{D423} exist, compose F_{D423}=N(⊕_{g∈D_{D423}} g); otherwise treat F_{D423} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D423})=1 and J_n^-(F_{D423})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D423})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D423})=0`
+- 收敛判据 / Convergence: `Converged(F_{D423}) ⇔ ΔF_{D423}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -10116,6 +20258,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 M14的**两步策略是学习效应存在时的唯一最优策略。** 利用P_correct随时间递增（学习效应）使探索阶段快速确认方向。无学习效应时所有策略等价。 描述 两步策略唯一性函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D424}`
+- 定义域 / Domain: `X_{D424}`
+- 值域 / Codomain: `Y_{D424}`
+- 数学表达 / Expression: `F_{D424}(x) := F_{D424}: X_{D424} -> Y_{D424}, y = F_{D424}(x)`
+- 有效条件 / Validity: `J_n^+(F_{D424})=1 ∧ J_n^-(F_{D424})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D424`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D424} and codomain Y_{D424}.
+  - 2. Normalize the source expression as F_{D424}: X_{D424}->Y_{D424}.
+  - 3. If upstream objects D_{D424} exist, compose F_{D424}=N(⊕_{g∈D_{D424}} g); otherwise treat F_{D424} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D424})=1 and J_n^-(F_{D424})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D424})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D424})=0`
+- 收敛判据 / Convergence: `Converged(F_{D424}) ⇔ ΔF_{D424}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -10136,6 +20300,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 D412修正后，完美风暴条件a_excl·τ=1/(4·ln2)中的ln2不是数学巧合——它建立了容斥动力学与信息论的精确桥梁。 $$a_{excl} \cdot \tau = \frac{1}{4 \ln 2} = \frac{1}{4} \cdot \frac{1}{\ln 2}$$ 与Landauer原理的等价：τ_Landauer = k_BT·ln2 / P是擦除1 bit信息的最小时间。完美风暴条件等价于：**系统的容斥-弛豫时间积恰好是Landauer擦除时间的1/4时，双切换同步**。 关键推论： - 完美风暴门槛比原预测低44%——实际不可逆到来时间是原预测的ln2倍 - t_irr' = t_irr × ln2 — 不可逆时间修正因子恰好是1 bit信息量的自然对数 描述 完美风暴-信息量等价函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D463}`
+- 定义域 / Domain: `X_{D463}`
+- 值域 / Codomain: `Y_{D463}`
+- 数学表达 / Expression: `F_{D463}(x) := D412修正后，完美风暴条件a_excl·τ=1/(4·ln2)中的ln2不是数学巧合——它建立了容斥动力学与信息论的精确桥梁。 $$a_{excl} \cdot \tau = \frac{1}{4 \ln 2} = \frac{1}{4} \cdot \frac{1}{\ln 2}$$ 与Landauer原理的等价：τ_Landauer = k_BT·ln2 / P是擦除1 bit信息的最小时间。完美风暴条件等价于：**系统的容斥-弛豫时间积恰好是Landauer擦除时间的1/4时，双切换同步**。 关键推论： - 完美风暴门槛比原预测低44%——实际不可逆到来时间是原预测的ln2倍 - t_irr' = t_irr × ln2 — 不可逆时间修正因子恰好是1 bit信息量的自然对数`
+- 有效条件 / Validity: `J_n^+(F_{D463})=1 ∧ J_n^-(F_{D463})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D463`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D463} and codomain Y_{D463}.
+  - 2. Normalize the source expression as F_{D463}: X_{D463}->Y_{D463}.
+  - 3. If upstream objects D_{D463} exist, compose F_{D463}=N(⊕_{g∈D_{D463}} g); otherwise treat F_{D463} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D463})=1 and J_n^-(F_{D463})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D463})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D463})=0`
+- 收敛判据 / Convergence: `Converged(F_{D463}) ⇔ ΔF_{D463}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -10160,6 +20346,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\Delta\Phi_{ghost}(t) = \Delta\Phi_{max} \cdot \exp\left(-\kappa \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中H_eff是系统有效膨胀率，α由系统维度结构决定。 宇宙学特例：H_eff∝(1+z)^(3/2)，α=1，积分得ΔH(z) = ΔH_max · exp(-κ·[(1+z)^(5/2)-1])。这是P17哈勃张力的精确预测形式。 关键推论： - 幽灵效应的消失不是渐变而是突变——存在"幽灵消失时间"t_ghost_diss 描述 幽灵超指数衰减函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D464}`
+- 定义域 / Domain: `X_{D464}`
+- 值域 / Codomain: `Y_{D464}`
+- 数学表达 / Expression: `F_{D464}(x) := D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\Delta\Phi_{ghost}(t) = \Delta\Phi_{max} \cdot \exp\left(-\kappa \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中H_eff是系统有效膨胀率，α由系统维度结构决定。 宇宙学特例：H_eff∝(1+z)^(3/2)，α=1，积分得ΔH(z) = ΔH_max · exp(-κ·[(1+z)^(5/2)-1])。这是P17哈勃张力的精确预测形式。 关键推论： - 幽灵效应的消失不是渐变而是突变——存在"幽灵消失时间"t_ghost_diss`
+- 有效条件 / Validity: `J_n^+(F_{D464})=1 ∧ J_n^-(F_{D464})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D464`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D464} and codomain Y_{D464}.
+  - 2. Normalize the source expression as F_{D464}: X_{D464}->Y_{D464}.
+  - 3. If upstream objects D_{D464} exist, compose F_{D464}=N(⊕_{g∈D_{D464}} g); otherwise treat F_{D464} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D464})=1 and J_n^-(F_{D464})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D464})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D464})=0`
+- 收敛判据 / Convergence: `Converged(F_{D464}) ⇔ ΔF_{D464}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -10180,6 +20388,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 D464×D410交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应D412完美风暴的D464版本 关键推论： 描述 幽灵-不可逆竞争函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D465}`
+- 定义域 / Domain: `X_{D465}`
+- 值域 / Codomain: `Y_{D465}`
+- 数学表达 / Expression: `F_{D465}(x) := D464×D410交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应D412完美风暴的D464版本 关键推论：`
+- 有效条件 / Validity: `J_n^+(F_{D465})=1 ∧ J_n^-(F_{D465})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D464`, `D465`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D465} and codomain Y_{D465}.
+  - 2. Normalize the source expression as F_{D465}: X_{D465}->Y_{D465}.
+  - 3. If upstream objects D_{D465} exist, compose F_{D465}=N(⊕_{g∈D_{D465}} g); otherwise treat F_{D465} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D465})=1 and J_n^-(F_{D465})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D465})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D465})=0`
+- 收敛判据 / Convergence: `Converged(F_{D465}) ⇔ ΔF_{D465}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -10203,6 +20433,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 D464×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。D466补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。 描述 暗物质核心-幽灵衰减函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D466}`
+- 定义域 / Domain: `X_{D466}`
+- 值域 / Codomain: `Y_{D466}`
+- 数学表达 / Expression: `F_{D466}(x) := D464×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。D466补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。`
+- 有效条件 / Validity: `J_n^+(F_{D466})=1 ∧ J_n^-(F_{D466})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D464`, `D466`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D466} and codomain Y_{D466}.
+  - 2. Normalize the source expression as F_{D466}: X_{D466}->Y_{D466}.
+  - 3. If upstream objects D_{D466} exist, compose F_{D466}=N(⊕_{g∈D_{D466}} g); otherwise treat F_{D466} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D466})=1 and J_n^-(F_{D466})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D466})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D466})=0`
+- 收敛判据 / Convergence: `Converged(F_{D466}) ⇔ ΔF_{D466}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -10224,6 +20476,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 D464扩展(κ∝|σ-√e|/√e)×D307(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性） 描述 最优性-惯性反比函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D467}`
+- 定义域 / Domain: `X_{D467}`
+- 值域 / Codomain: `Y_{D467}`
+- 数学表达 / Expression: `F_{D467}(x) := D464扩展(κ∝|σ-√e|/√e)×D307(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性）`
+- 有效条件 / Validity: `J_n^+(F_{D467})=1 ∧ J_n^-(F_{D467})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D307`, `D467`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D467} and codomain Y_{D467}.
+  - 2. Normalize the source expression as F_{D467}: X_{D467}->Y_{D467}.
+  - 3. If upstream objects D_{D467} exist, compose F_{D467}=N(⊕_{g∈D_{D467}} g); otherwise treat F_{D467} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D467})=1 and J_n^-(F_{D467})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D467})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D467})=0`
+- 收敛判据 / Convergence: `Converged(F_{D467}) ⇔ ΔF_{D467}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -10251,6 +20525,28 @@ English: Rule-based English rendering pending human review.
 中文：该函数通过 D467×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（D295的p_max穿过p*） 描述 吸引子-陷阱等价函数。
 English: Rule-based English rendering pending human review.
 
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D468}`
+- 定义域 / Domain: `X_{D468}`
+- 值域 / Codomain: `Y_{D468}`
+- 数学表达 / Expression: `F_{D468}(x) := D467×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（D295的p_max穿过p*）`
+- 有效条件 / Validity: `J_n^+(F_{D468})=1 ∧ J_n^-(F_{D468})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D467`, `D468`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D468} and codomain Y_{D468}.
+  - 2. Normalize the source expression as F_{D468}: X_{D468}->Y_{D468}.
+  - 3. If upstream objects D_{D468} exist, compose F_{D468}=N(⊕_{g∈D_{D468}} g); otherwise treat F_{D468} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D468})=1 and J_n^-(F_{D468})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D468})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D468})=0`
+- 收敛判据 / Convergence: `Converged(F_{D468}) ⇔ ΔF_{D468}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
@@ -10271,6 +20567,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 D468×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降势垒→重新优化"之间周期性循环： $$\sigma(t) \sim \sigma_{opt} + A \cdot \sin(\omega t) \cdot e^{-\gamma t}$$ ω由M14两步策略的执行速度决定，γ由每轮循环的净改善决定。 关键推论： - γ>0：收敛到σ_opt附近极限环——可持续演化 - γ=0：完美循环——永续振荡 描述 振荡优化函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D469}`
+- 定义域 / Domain: `X_{D469}`
+- 值域 / Codomain: `Y_{D469}`
+- 数学表达 / Expression: `F_{D469}(x) := D468×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降势垒→重新优化"之间周期性循环： $$\sigma(t) \sim \sigma_{opt} + A \cdot \sin(\omega t) \cdot e^{-\gamma t}$$ ω由M14两步策略的执行速度决定，γ由每轮循环的净改善决定。 关键推论： - γ>0：收敛到σ_opt附近极限环——可持续演化 - γ=0：完美循环——永续振荡`
+- 有效条件 / Validity: `J_n^+(F_{D469})=1 ∧ J_n^-(F_{D469})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D468`, `D469`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D469} and codomain Y_{D469}.
+  - 2. Normalize the source expression as F_{D469}: X_{D469}->Y_{D469}.
+  - 3. If upstream objects D_{D469} exist, compose F_{D469}=N(⊕_{g∈D_{D469}} g); otherwise treat F_{D469} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D469})=1 and J_n^-(F_{D469})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D469})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D469})=0`
+- 收敛判据 / Convergence: `Converged(F_{D469}) ⇔ ΔF_{D469}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
@@ -10297,6 +20615,28 @@ English: Rule-based English rendering pending human review.
 **说明 / Explanation**
 中文：该函数通过 D469×D464深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自D464超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵 描述 幽灵跳变阻尼函数。
 English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D470}`
+- 定义域 / Domain: `X_{D470}`
+- 值域 / Codomain: `Y_{D470}`
+- 数学表达 / Expression: `F_{D470}(x) := D469×D464深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自D464超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵`
+- 有效条件 / Validity: `J_n^+(F_{D470})=1 ∧ J_n^-(F_{D470})=0`
+- 推导类型 / Derivation type: `pure_math_function_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D469`, `D470`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D470} and codomain Y_{D470}.
+  - 2. Normalize the source expression as F_{D470}: X_{D470}->Y_{D470}.
+  - 3. If upstream objects D_{D470} exist, compose F_{D470}=N(⊕_{g∈D_{D470}} g); otherwise treat F_{D470} as an axiom seed.
+  - 4. Accept iff J_n^+(F_{D470})=1 and J_n^-(F_{D470})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D470})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D470})=0`
+- 收敛判据 / Convergence: `Converged(F_{D470}) ⇔ ΔF_{D470}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`

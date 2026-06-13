@@ -266,6 +266,57 @@
     "page": "docs/zh/predictions/items/PRED-0001.md",
     "links": {
       "human_page": "docs/zh/predictions/items/PRED-0001.md"
+    },
+    "mathematical_formalization": {
+      "object_type": "prediction",
+      "symbol": "P_{PRED-0001}",
+      "variables": [
+        "x_t",
+        "Δt",
+        "θ_{PRED-0001}",
+        "F_i",
+        "L_j"
+      ],
+      "math_expression": "P_{PRED-0001}(t+Δt)=1 ⇔ (1/5)Σ_i F_i(x_t) - (1/4)Σ_j L_j(x_t) > θ_{PRED-0001}",
+      "domain": "X_t × R_+",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(P_{PRED-0001})=1 ∧ J_n^-(P_{PRED-0001})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "testable_prediction_inequality_derivation",
+      "depends_on": [
+        "D155",
+        "D198",
+        "D203",
+        "D204",
+        "D130",
+        "C-0358",
+        "C-0366",
+        "C-0367",
+        "C-0344"
+      ],
+      "steps_math": [
+        "1. Let R_F={D155, D198, D203, D204, D130} and R_C={C-0358, C-0366, C-0367, C-0344}.",
+        "2. Project related functions onto the future state x_t and encode related cases as loss terms L_j.",
+        "3. Derive the prediction indicator P_{PRED-0001} from the strict inequality between projected support and counter-loss.",
+        "4. Falsify iff the observed statistic satisfies P_{PRED-0001}=0 under the declared test condition."
+      ],
+      "proof_obligations": [
+        "explicit_prediction_operator",
+        "testable_inequality",
+        "falsification_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(P_{PRED-0001})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(P_{PRED-0001})=0"
+      },
+      "convergence": "Converged(P_{PRED-0001}) ⇔ ΔP_{PRED-0001}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
     }
   },
   {
@@ -501,6 +552,55 @@
     "page": "docs/zh/predictions/items/PRED-0002.md",
     "links": {
       "human_page": "docs/zh/predictions/items/PRED-0002.md"
+    },
+    "mathematical_formalization": {
+      "object_type": "prediction",
+      "symbol": "P_{PRED-0002}",
+      "variables": [
+        "x_t",
+        "Δt",
+        "θ_{PRED-0002}",
+        "F_i",
+        "L_j"
+      ],
+      "math_expression": "P_{PRED-0002}(t+Δt)=1 ⇔ (1/4)Σ_i F_i(x_t) - (1/3)Σ_j L_j(x_t) > θ_{PRED-0002}",
+      "domain": "X_t × R_+",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(P_{PRED-0002})=1 ∧ J_n^-(P_{PRED-0002})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "testable_prediction_inequality_derivation",
+      "depends_on": [
+        "D130",
+        "D155",
+        "D198",
+        "D203",
+        "C-0344",
+        "C-0349",
+        "C-0354"
+      ],
+      "steps_math": [
+        "1. Let R_F={D130, D155, D198, D203} and R_C={C-0344, C-0349, C-0354}.",
+        "2. Project related functions onto the future state x_t and encode related cases as loss terms L_j.",
+        "3. Derive the prediction indicator P_{PRED-0002} from the strict inequality between projected support and counter-loss.",
+        "4. Falsify iff the observed statistic satisfies P_{PRED-0002}=0 under the declared test condition."
+      ],
+      "proof_obligations": [
+        "explicit_prediction_operator",
+        "testable_inequality",
+        "falsification_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(P_{PRED-0002})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(P_{PRED-0002})=0"
+      },
+      "convergence": "Converged(P_{PRED-0002}) ⇔ ΔP_{PRED-0002}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
     }
   },
   {
@@ -736,6 +836,55 @@
     "page": "docs/zh/predictions/items/PRED-0003.md",
     "links": {
       "human_page": "docs/zh/predictions/items/PRED-0003.md"
+    },
+    "mathematical_formalization": {
+      "object_type": "prediction",
+      "symbol": "P_{PRED-0003}",
+      "variables": [
+        "x_t",
+        "Δt",
+        "θ_{PRED-0003}",
+        "F_i",
+        "L_j"
+      ],
+      "math_expression": "P_{PRED-0003}(t+Δt)=1 ⇔ (1/4)Σ_i F_i(x_t) - (1/3)Σ_j L_j(x_t) > θ_{PRED-0003}",
+      "domain": "X_t × R_+",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(P_{PRED-0003})=1 ∧ J_n^-(P_{PRED-0003})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "testable_prediction_inequality_derivation",
+      "depends_on": [
+        "A3",
+        "A5",
+        "A7",
+        "A9",
+        "C-0011",
+        "C-0482",
+        "C-0503"
+      ],
+      "steps_math": [
+        "1. Let R_F={A3, A5, A7, A9} and R_C={C-0011, C-0482, C-0503}.",
+        "2. Project related functions onto the future state x_t and encode related cases as loss terms L_j.",
+        "3. Derive the prediction indicator P_{PRED-0003} from the strict inequality between projected support and counter-loss.",
+        "4. Falsify iff the observed statistic satisfies P_{PRED-0003}=0 under the declared test condition."
+      ],
+      "proof_obligations": [
+        "explicit_prediction_operator",
+        "testable_inequality",
+        "falsification_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(P_{PRED-0003})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(P_{PRED-0003})=0"
+      },
+      "convergence": "Converged(P_{PRED-0003}) ⇔ ΔP_{PRED-0003}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
     }
   },
   {
@@ -954,6 +1103,54 @@
     "page": "docs/zh/predictions/items/PRED-0004.md",
     "links": {
       "human_page": "docs/zh/predictions/items/PRED-0004.md"
+    },
+    "mathematical_formalization": {
+      "object_type": "prediction",
+      "symbol": "P_{PRED-0004}",
+      "variables": [
+        "x_t",
+        "Δt",
+        "θ_{PRED-0004}",
+        "F_i",
+        "L_j"
+      ],
+      "math_expression": "P_{PRED-0004}(t+Δt)=1 ⇔ (1/3)Σ_i F_i(x_t) - (1/3)Σ_j L_j(x_t) > θ_{PRED-0004}",
+      "domain": "X_t × R_+",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(P_{PRED-0004})=1 ∧ J_n^-(P_{PRED-0004})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "testable_prediction_inequality_derivation",
+      "depends_on": [
+        "A3",
+        "A5",
+        "A9",
+        "C-0368",
+        "C-0014",
+        "C-0011"
+      ],
+      "steps_math": [
+        "1. Let R_F={A3, A5, A9} and R_C={C-0368, C-0014, C-0011}.",
+        "2. Project related functions onto the future state x_t and encode related cases as loss terms L_j.",
+        "3. Derive the prediction indicator P_{PRED-0004} from the strict inequality between projected support and counter-loss.",
+        "4. Falsify iff the observed statistic satisfies P_{PRED-0004}=0 under the declared test condition."
+      ],
+      "proof_obligations": [
+        "explicit_prediction_operator",
+        "testable_inequality",
+        "falsification_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(P_{PRED-0004})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(P_{PRED-0004})=0"
+      },
+      "convergence": "Converged(P_{PRED-0004}) ⇔ ΔP_{PRED-0004}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
     }
   },
   {
@@ -1189,6 +1386,55 @@
     "page": "docs/zh/predictions/items/PRED-0005.md",
     "links": {
       "human_page": "docs/zh/predictions/items/PRED-0005.md"
+    },
+    "mathematical_formalization": {
+      "object_type": "prediction",
+      "symbol": "P_{PRED-0005}",
+      "variables": [
+        "x_t",
+        "Δt",
+        "θ_{PRED-0005}",
+        "F_i",
+        "L_j"
+      ],
+      "math_expression": "P_{PRED-0005}(t+Δt)=1 ⇔ (1/4)Σ_i F_i(x_t) - (1/3)Σ_j L_j(x_t) > θ_{PRED-0005}",
+      "domain": "X_t × R_+",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(P_{PRED-0005})=1 ∧ J_n^-(P_{PRED-0005})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "testable_prediction_inequality_derivation",
+      "depends_on": [
+        "A8",
+        "T5",
+        "D97",
+        "D193",
+        "C-0150",
+        "C-0248",
+        "C-0205"
+      ],
+      "steps_math": [
+        "1. Let R_F={A8, T5, D97, D193} and R_C={C-0150, C-0248, C-0205}.",
+        "2. Project related functions onto the future state x_t and encode related cases as loss terms L_j.",
+        "3. Derive the prediction indicator P_{PRED-0005} from the strict inequality between projected support and counter-loss.",
+        "4. Falsify iff the observed statistic satisfies P_{PRED-0005}=0 under the declared test condition."
+      ],
+      "proof_obligations": [
+        "explicit_prediction_operator",
+        "testable_inequality",
+        "falsification_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(P_{PRED-0005})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(P_{PRED-0005})=0"
+      },
+      "convergence": "Converged(P_{PRED-0005}) ⇔ ΔP_{PRED-0005}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
     }
   },
   {
@@ -1492,6 +1738,59 @@
     "page": "docs/zh/predictions/items/PRED-0006.md",
     "links": {
       "human_page": "docs/zh/predictions/items/PRED-0006.md"
+    },
+    "mathematical_formalization": {
+      "object_type": "prediction",
+      "symbol": "P_{PRED-0006}",
+      "variables": [
+        "x_t",
+        "Δt",
+        "θ_{PRED-0006}",
+        "F_i",
+        "L_j"
+      ],
+      "math_expression": "P_{PRED-0006}(t+Δt)=1 ⇔ (1/8)Σ_i F_i(x_t) - (1/3)Σ_j L_j(x_t) > θ_{PRED-0006}",
+      "domain": "X_t × R_+",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(P_{PRED-0006})=1 ∧ J_n^-(P_{PRED-0006})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "testable_prediction_inequality_derivation",
+      "depends_on": [
+        "D160",
+        "D163",
+        "D164",
+        "D165",
+        "D166",
+        "D167",
+        "D168",
+        "D181",
+        "C-0162",
+        "C-0263",
+        "C-0554"
+      ],
+      "steps_math": [
+        "1. Let R_F={D160, D163, D164, D165, D166, D167, D168, D181} and R_C={C-0162, C-0263, C-0554}.",
+        "2. Project related functions onto the future state x_t and encode related cases as loss terms L_j.",
+        "3. Derive the prediction indicator P_{PRED-0006} from the strict inequality between projected support and counter-loss.",
+        "4. Falsify iff the observed statistic satisfies P_{PRED-0006}=0 under the declared test condition."
+      ],
+      "proof_obligations": [
+        "explicit_prediction_operator",
+        "testable_inequality",
+        "falsification_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(P_{PRED-0006})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(P_{PRED-0006})=0"
+      },
+      "convergence": "Converged(P_{PRED-0006}) ⇔ ΔP_{PRED-0006}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
     }
   },
   {
@@ -1744,6 +2043,56 @@
     "page": "docs/zh/predictions/items/PRED-0007.md",
     "links": {
       "human_page": "docs/zh/predictions/items/PRED-0007.md"
+    },
+    "mathematical_formalization": {
+      "object_type": "prediction",
+      "symbol": "P_{PRED-0007}",
+      "variables": [
+        "x_t",
+        "Δt",
+        "θ_{PRED-0007}",
+        "F_i",
+        "L_j"
+      ],
+      "math_expression": "P_{PRED-0007}(t+Δt)=1 ⇔ (1/6)Σ_i F_i(x_t) - (1/2)Σ_j L_j(x_t) > θ_{PRED-0007}",
+      "domain": "X_t × R_+",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(P_{PRED-0007})=1 ∧ J_n^-(P_{PRED-0007})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "testable_prediction_inequality_derivation",
+      "depends_on": [
+        "D186",
+        "D220",
+        "D226",
+        "D229",
+        "D272",
+        "D318",
+        "C-0457",
+        "C-0554"
+      ],
+      "steps_math": [
+        "1. Let R_F={D186, D220, D226, D229, D272, D318} and R_C={C-0457, C-0554}.",
+        "2. Project related functions onto the future state x_t and encode related cases as loss terms L_j.",
+        "3. Derive the prediction indicator P_{PRED-0007} from the strict inequality between projected support and counter-loss.",
+        "4. Falsify iff the observed statistic satisfies P_{PRED-0007}=0 under the declared test condition."
+      ],
+      "proof_obligations": [
+        "explicit_prediction_operator",
+        "testable_inequality",
+        "falsification_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(P_{PRED-0007})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(P_{PRED-0007})=0"
+      },
+      "convergence": "Converged(P_{PRED-0007}) ⇔ ΔP_{PRED-0007}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
     }
   },
   {
@@ -1987,6 +2336,55 @@
     "page": "docs/zh/predictions/items/PRED-0008.md",
     "links": {
       "human_page": "docs/zh/predictions/items/PRED-0008.md"
+    },
+    "mathematical_formalization": {
+      "object_type": "prediction",
+      "symbol": "P_{PRED-0008}",
+      "variables": [
+        "x_t",
+        "Δt",
+        "θ_{PRED-0008}",
+        "F_i",
+        "L_j"
+      ],
+      "math_expression": "P_{PRED-0008}(t+Δt)=1 ⇔ (1/4)Σ_i F_i(x_t) - (1/3)Σ_j L_j(x_t) > θ_{PRED-0008}",
+      "domain": "X_t × R_+",
+      "codomain": "{0,1}",
+      "validity_condition": "J_n^+(P_{PRED-0008})=1 ∧ J_n^-(P_{PRED-0008})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "testable_prediction_inequality_derivation",
+      "depends_on": [
+        "D59",
+        "D102",
+        "D116",
+        "D119",
+        "C-0289",
+        "C-0299",
+        "C-0306"
+      ],
+      "steps_math": [
+        "1. Let R_F={D59, D102, D116, D119} and R_C={C-0289, C-0299, C-0306}.",
+        "2. Project related functions onto the future state x_t and encode related cases as loss terms L_j.",
+        "3. Derive the prediction indicator P_{PRED-0008} from the strict inequality between projected support and counter-loss.",
+        "4. Falsify iff the observed statistic satisfies P_{PRED-0008}=0 under the declared test condition."
+      ],
+      "proof_obligations": [
+        "explicit_prediction_operator",
+        "testable_inequality",
+        "falsification_boundary",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(P_{PRED-0008})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(P_{PRED-0008})=0"
+      },
+      "convergence": "Converged(P_{PRED-0008}) ⇔ ΔP_{PRED-0008}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
     }
   }
 ]

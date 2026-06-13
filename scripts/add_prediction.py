@@ -33,6 +33,8 @@ REQUIRED_FIELDS = [
     "updated_at",
     "page",
     "academic_novelty",
+    "mathematical_formalization",
+    "mathematical_derivation",
 ]
 
 
@@ -56,6 +58,18 @@ def normalize_prediction(payload: dict) -> dict:
         raise ValueError("academic_novelty must be a JSON object")
     if "status" not in novelty:
         raise ValueError("academic_novelty.status is required")
+    formal = normalized.get("mathematical_formalization")
+    derivation = normalized.get("mathematical_derivation")
+    if not isinstance(formal, dict) or not isinstance(derivation, dict):
+        raise ValueError("mathematical_formalization and mathematical_derivation must be JSON objects")
+    for field in ["symbol", "math_expression", "domain", "codomain", "validity_condition"]:
+        if not formal.get(field):
+            raise ValueError(f"mathematical_formalization.{field} is required")
+    for field in ["status", "kind", "steps_math", "forward_check", "reverse_check", "convergence"]:
+        if not derivation.get(field):
+            raise ValueError(f"mathematical_derivation.{field} is required")
+    if derivation.get("status") != "converged":
+        raise ValueError("mathematical_derivation.status must be converged")
     return normalized
 
 

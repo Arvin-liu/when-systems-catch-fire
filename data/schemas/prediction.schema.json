@@ -18,6 +18,8 @@
     "confidence",
     "status",
     "academic_novelty",
+    "mathematical_formalization",
+    "mathematical_derivation",
     "created_at",
     "updated_at",
     "page"
@@ -67,6 +69,33 @@
     },
     "academic_novelty": {
       "type": "object"
+    },
+    "mathematical_formalization": {
+      "type": "object",
+      "required": [
+        "symbol",
+        "math_expression",
+        "domain",
+        "codomain",
+        "validity_condition"
+      ]
+    },
+    "mathematical_derivation": {
+      "type": "object",
+      "required": [
+        "status",
+        "kind",
+        "steps_math",
+        "forward_check",
+        "reverse_check",
+        "convergence"
+      ],
+      "properties": {
+        "status": {
+          "const": "converged"
+        }
+      },
+      "additionalProperties": true
     },
     "created_at": {
       "type": "string"

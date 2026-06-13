@@ -69,7 +69,54 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0001.md"
+    "page": "docs/zh/answers/items/ANS-0001.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0001}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0001}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0001})=1 ∧ J_n^-(A_{ANS-0001})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "D153",
+        "D156",
+        "D157",
+        "C-0554"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0001}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0001})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0001})=0"
+      },
+      "convergence": "Converged(A_{ANS-0001}) ⇔ ΔA_{ANS-0001}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   },
   {
     "id": "ANS-0002",
@@ -142,7 +189,56 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0002.md"
+    "page": "docs/zh/answers/items/ANS-0002.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0002}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0002}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0002})=1 ∧ J_n^-(A_{ANS-0002})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "D153",
+        "D156",
+        "D157",
+        "D164",
+        "C-0554",
+        "C-0457"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0002}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0002})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0002})=0"
+      },
+      "convergence": "Converged(A_{ANS-0002}) ⇔ ΔA_{ANS-0002}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   },
   {
     "id": "ANS-0003",
@@ -214,7 +310,54 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0003.md"
+    "page": "docs/zh/answers/items/ANS-0003.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0003}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0003}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0003})=1 ∧ J_n^-(A_{ANS-0003})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "D156",
+        "D157",
+        "D108",
+        "C-0457"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0003}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0003})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0003})=0"
+      },
+      "convergence": "Converged(A_{ANS-0003}) ⇔ ΔA_{ANS-0003}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   },
   {
     "id": "ANS-0004",
@@ -288,7 +431,55 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0004.md"
+    "page": "docs/zh/answers/items/ANS-0004.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0004}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0004}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0004})=1 ∧ J_n^-(A_{ANS-0004})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "A5",
+        "A8",
+        "A9",
+        "C-0003",
+        "C-0162"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0004}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0004})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0004})=0"
+      },
+      "convergence": "Converged(A_{ANS-0004}) ⇔ ΔA_{ANS-0004}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   },
   {
     "id": "ANS-0005",
@@ -369,7 +560,62 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0005.md"
+    "page": "docs/zh/answers/items/ANS-0005.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0005}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0005}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0005})=1 ∧ J_n^-(A_{ANS-0005})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "D260",
+        "D272",
+        "D287",
+        "D373",
+        "D387",
+        "D401",
+        "D307",
+        "D412",
+        "D413",
+        "D295",
+        "C-0554",
+        "C-0457"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0005}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0005})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0005})=0"
+      },
+      "convergence": "Converged(A_{ANS-0005}) ⇔ ΔA_{ANS-0005}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   },
   {
     "id": "ANS-0006",
@@ -444,7 +690,58 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0006.md"
+    "page": "docs/zh/answers/items/ANS-0006.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0006}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0006}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0006})=1 ∧ J_n^-(A_{ANS-0006})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "D260",
+        "D272",
+        "D287",
+        "D401",
+        "D307",
+        "D423",
+        "C-0554",
+        "C-0457"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0006}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0006})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0006})=0"
+      },
+      "convergence": "Converged(A_{ANS-0006}) ⇔ ΔA_{ANS-0006}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   },
   {
     "id": "ANS-0007",
@@ -519,7 +816,57 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0007.md"
+    "page": "docs/zh/answers/items/ANS-0007.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0007}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0007}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0007})=1 ∧ J_n^-(A_{ANS-0007})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "D373",
+        "D387",
+        "D8",
+        "D307",
+        "D401",
+        "C-0554",
+        "C-0457"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0007}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0007})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0007})=0"
+      },
+      "convergence": "Converged(A_{ANS-0007}) ⇔ ΔA_{ANS-0007}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   },
   {
     "id": "ANS-0008",
@@ -594,7 +941,57 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0008.md"
+    "page": "docs/zh/answers/items/ANS-0008.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0008}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0008}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0008})=1 ∧ J_n^-(A_{ANS-0008})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "D401",
+        "D387",
+        "D266",
+        "D397",
+        "D410",
+        "D423",
+        "C-0554"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0008}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0008})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0008})=0"
+      },
+      "convergence": "Converged(A_{ANS-0008}) ⇔ ΔA_{ANS-0008}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   },
   {
     "id": "ANS-0009",
@@ -665,7 +1062,53 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0009.md"
+    "page": "docs/zh/answers/items/ANS-0009.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0009}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0009}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0009})=1 ∧ J_n^-(A_{ANS-0009})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "D335",
+        "D384",
+        "C-0554"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0009}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0009})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0009})=0"
+      },
+      "convergence": "Converged(A_{ANS-0009}) ⇔ ΔA_{ANS-0009}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   },
   {
     "id": "ANS-0010",
@@ -737,7 +1180,55 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0010.md"
+    "page": "docs/zh/answers/items/ANS-0010.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0010}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0010}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0010})=1 ∧ J_n^-(A_{ANS-0010})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "D297",
+        "D410",
+        "D325",
+        "D307",
+        "C-0554"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0010}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0010})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0010})=0"
+      },
+      "convergence": "Converged(A_{ANS-0010}) ⇔ ΔA_{ANS-0010}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   },
   {
     "id": "ANS-0011",
@@ -813,7 +1304,57 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0011.md"
+    "page": "docs/zh/answers/items/ANS-0011.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0011}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0011}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0011})=1 ∧ J_n^-(A_{ANS-0011})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "D412",
+        "D413",
+        "D384",
+        "D295",
+        "D307",
+        "C-0457",
+        "P18"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0011}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0011})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0011})=0"
+      },
+      "convergence": "Converged(A_{ANS-0011}) ⇔ ΔA_{ANS-0011}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   },
   {
     "id": "ANS-0012",
@@ -886,6 +1427,54 @@
     "status": "answer_pending_novelty_review",
     "created_at": "2026-06-13",
     "updated_at": "2026-06-13",
-    "page": "docs/zh/answers/items/ANS-0012.md"
+    "page": "docs/zh/answers/items/ANS-0012.md",
+    "mathematical_formalization": {
+      "object_type": "answer",
+      "symbol": "A_{ANS-0012}",
+      "variables": [
+        "Q",
+        "E",
+        "A_0",
+        "A_1",
+        "L",
+        "Ω"
+      ],
+      "math_expression": "A_{ANS-0012}=A_1 ⇔ L(A_1|Q,E) + Ω(A_1) < L(A_0|Q,E) + Ω(A_0)",
+      "domain": "Q × E × A",
+      "codomain": "{A_0,A_1}",
+      "validity_condition": "J_n^+(A_{ANS-0012})=1 ∧ J_n^-(A_{ANS-0012})=0"
+    },
+    "mathematical_derivation": {
+      "status": "converged",
+      "kind": "answer_objective_rewrite_derivation",
+      "depends_on": [
+        "D86",
+        "D96",
+        "A4",
+        "D307",
+        "C-0457"
+      ],
+      "steps_math": [
+        "1. Encode the old answer as A_0 and the proposed answer as A_1.",
+        "2. Define explanatory loss L(A|Q,E) and structural penalty Ω(A).",
+        "3. Accept A_{ANS-0012}=A_1 iff its total objective is strictly lower than A_0.",
+        "4. Reject the write iff the reverse channel proves L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)."
+      ],
+      "proof_obligations": [
+        "explicit_answer_operator",
+        "old_new_answer_boundary",
+        "testable_objective_comparison",
+        "forward_reverse_non_contradiction"
+      ],
+      "forward_check": {
+        "status": "pass",
+        "condition": "J_n^+(A_{ANS-0012})=1"
+      },
+      "reverse_check": {
+        "status": "fail",
+        "condition": "J_n^-(A_{ANS-0012})=0"
+      },
+      "convergence": "Converged(A_{ANS-0012}) ⇔ ΔA_{ANS-0012}=∅ ∧ (J_n^+,J_n^-)=(1,0)"
+    }
   }
 ]

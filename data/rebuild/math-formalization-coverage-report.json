@@ -1,0 +1,39 @@
+{
+  "run_id": "20260614-050603",
+  "generated_at": "2026-06-13T21:06:03.650336+00:00",
+  "layers": {
+    "function": {
+      "required": 470,
+      "with_math": 470,
+      "blockers": 0
+    },
+    "case": {
+      "required": 578,
+      "with_math": 578,
+      "blockers": 0
+    },
+    "prediction": {
+      "required": 8,
+      "with_math": 8,
+      "blockers": 0
+    },
+    "answer": {
+      "required": 12,
+      "with_math": 12,
+      "blockers": 0
+    },
+    "discovery": {
+      "required": 0,
+      "with_math": 0,
+      "blockers": 0
+    }
+  },
+  "total_required": 1068,
+  "total_with_math": 1068,
+  "blockers": 0,
+  "blocked_items": [],
+  "supplement_hash_round_1": "4fc4415ee5a6f103d7b40c9506b2b89c6b68c94a347fad1c79df2bc582bb44c6",
+  "supplement_hash_round_2": "4fc4415ee5a6f103d7b40c9506b2b89c6b68c94a347fad1c79df2bc582bb44c6",
+  "delta_previous_round": 0,
+  "converged": true
+}

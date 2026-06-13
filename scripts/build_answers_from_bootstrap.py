@@ -47,6 +47,7 @@ from answer_utils import (
     write_jsonl,
     write_text,
 )
+from derive_math_formalizations import answer_formalization
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -800,6 +801,9 @@ def normalize_answer_item(item: dict) -> dict:
     normalized["source_refs"] = normalize_source_refs(normalized.get("source_refs", []))
     if "page" not in normalized:
         normalized["page"] = f"docs/zh/answers/items/{normalized['id']}.md"
+    formal, derivation = answer_formalization(normalized)
+    normalized["mathematical_formalization"] = formal
+    normalized["mathematical_derivation"] = derivation
     return normalized
 
 
@@ -944,6 +948,27 @@ English:
 中文：
 English:
 
+## 纯数学函数 / Pure Mathematical Function
+
+- 对象 / Object: `A_{ANS-____}`
+- 定义域 / Domain: `Q × E × A`
+- 值域 / Codomain: `{A_0,A_1}`
+- 数学表达 / Expression: `A_{ANS-____}=A_1 ⇔ L(A_1|Q,E)+Ω(A_1) < L(A_0|Q,E)+Ω(A_0)`
+- 有效条件 / Validity: `J_n^+(A_{ANS-____})=1 ∧ J_n^-(A_{ANS-____})=0`
+
+## 数学推导 / Mathematical Derivation
+
+- 推导类型 / Derivation type: `answer_objective_rewrite_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 推导步骤 / Steps:
+  - 定义旧答案 `A_0` 与新答案 `A_1`。
+  - 定义解释损失 `L(A|Q,E)` 与结构惩罚 `Ω(A)`。
+  - 证明新答案满足严格目标函数下降。
+  - 通过反向通道排除 `L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)`。
+- 正向检查 / Forward check: `J_n^+(A)=1`
+- 反向检查 / Reverse check: `J_n^-(A)=0`
+- 收敛判据 / Convergence: `ΔA=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 ## 分类 / Categories
 
 -
@@ -1036,6 +1061,27 @@ English:
 
 中文：
 English:
+
+## 纯数学函数 / Pure Mathematical Function
+
+- 对象 / Object: `A_{ANS-____}`
+- 定义域 / Domain: `Q × E × A`
+- 值域 / Codomain: `{A_0,A_1}`
+- 数学表达 / Expression: `A_{ANS-____}=A_1 ⇔ L(A_1|Q,E)+Ω(A_1) < L(A_0|Q,E)+Ω(A_0)`
+- 有效条件 / Validity: `J_n^+(A_{ANS-____})=1 ∧ J_n^-(A_{ANS-____})=0`
+
+## 数学推导 / Mathematical Derivation
+
+- 推导类型 / Derivation type: `answer_objective_rewrite_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 推导步骤 / Steps:
+  - 定义旧答案 `A_0` 与新答案 `A_1`。
+  - 定义解释损失 `L(A|Q,E)` 与结构惩罚 `Ω(A)`。
+  - 证明新答案满足严格目标函数下降。
+  - 通过反向通道排除 `L(A_1|Q,E)+Ω(A_1) ≥ L(A_0|Q,E)+Ω(A_0)`。
+- 正向检查 / Forward check: `J_n^+(A)=1`
+- 反向检查 / Reverse check: `J_n^-(A)=0`
+- 收敛判据 / Convergence: `ΔA=∅ ∧ (J_n^+,J_n^-)=(1,0)`
 
 ## 分类 / Categories
 

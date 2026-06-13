@@ -467,7 +467,7 @@ def enrich_prediction(
         elif status == "draft":
             status = "draft_pending_novelty_review"
 
-    return {
+    result = {
         "id": blueprint["id"],
         "slug": blueprint["id"].lower().replace("_", "-"),
         "title": blueprint["title"],
@@ -489,6 +489,11 @@ def enrich_prediction(
         "page": f"docs/zh/predictions/items/{blueprint['id']}.md",
         "links": {"human_page": f"docs/zh/predictions/items/{blueprint['id']}.md"},
     }
+    if isinstance(existing_prediction, dict):
+        for key in ("mathematical_formalization", "mathematical_derivation"):
+            if key in existing_prediction:
+                result[key] = existing_prediction[key]
+    return result
 
 
 def sort_key(category: dict) -> tuple[int, int, int, str]:
@@ -548,6 +553,8 @@ def build_category_map(predictions: list[dict], category_defs: list[dict]) -> li
 
 def render_prediction_page(prediction: dict) -> str:
     current_path = DOC_DIR / "items" / f"{prediction['id']}.md"
+    formal = prediction.get("mathematical_formalization") or {}
+    derivation = prediction.get("mathematical_derivation") or {}
     lines = [
         f"# {prediction['id']}｜{format_bilingual_title(prediction['title'].get('zh'), prediction['title'].get('en'))}",
         "",
@@ -642,6 +649,27 @@ def render_prediction_page(prediction: dict) -> str:
             "",
             "English:",
             prediction["time_window"]["en"],
+            "",
+            "## 纯数学函数 / Pure Mathematical Function",
+            "",
+            f"- 对象 / Object: `{formal.get('symbol', '')}`",
+            f"- 定义域 / Domain: `{formal.get('domain', '')}`",
+            f"- 值域 / Codomain: `{formal.get('codomain', '')}`",
+            f"- 数学表达 / Expression: `{formal.get('math_expression', '')}`",
+            f"- 有效条件 / Validity: `{formal.get('validity_condition', '')}`",
+            "",
+            "## 数学推导 / Mathematical Derivation",
+            "",
+            f"- 推导类型 / Derivation type: `{derivation.get('kind', '')}`",
+            f"- 收敛状态 / Convergence status: `{derivation.get('status', '')}`",
+            f"- 依赖 / Depends on: {', '.join(f'`{dep}`' for dep in derivation.get('depends_on', [])) if derivation.get('depends_on') else '`source_state`'}",
+            "- 推导步骤 / Steps:",
+            *(f"  - {step}" for step in derivation.get("steps_math", [])),
+            "- 证明义务 / Proof obligations:",
+            *(f"  - `{obligation}`" for obligation in derivation.get("proof_obligations", [])),
+            f"- 正向检查 / Forward check: `{(derivation.get('forward_check') or {}).get('condition', '')}`",
+            f"- 反向检查 / Reverse check: `{(derivation.get('reverse_check') or {}).get('condition', '')}`",
+            f"- 收敛判据 / Convergence: `{derivation.get('convergence', '')}`",
             "",
             "## 相关函数 / Related Functions",
             "",
@@ -971,6 +999,8 @@ def build_prediction_template() -> str:
             '  "confidence": "low / medium / high",',
             '  "status": "draft / active / active_pending_novelty_review / draft_pending_novelty_review / verified / falsified / deprecated / merged",',
             '  "academic_novelty": {"status": "pending / passed / failed / inconclusive", "checked_at": "YYYY-MM-DD", "query_terms": [], "sources_checked": [], "nearest_matches": [], "novelty_claim": {"zh": "", "en": ""}, "reviewer_note": ""},',
+            '  "mathematical_formalization": {"symbol": "P_{PRED-0001}", "domain": "X_t × R_+", "codomain": "{0,1}", "math_expression": "P_{PRED-0001}(t+Δt)=1 ⇔ S_F(x_t)-S_C(x_t)>θ_{PRED-0001}", "validity_condition": "J_n^+(P_{PRED-0001})=1 ∧ J_n^-(P_{PRED-0001})=0"},',
+            '  "mathematical_derivation": {"status": "converged", "kind": "testable_prediction_inequality_derivation", "steps_math": ["define support score", "define counter-loss", "derive strict test inequality"], "forward_check": {"status": "pass", "condition": "J_n^+(P)=1"}, "reverse_check": {"status": "fail", "condition": "J_n^-(P)=0"}, "convergence": "ΔP=∅ ∧ (J_n^+,J_n^-)=(1,0)"},',
             '  "created_at": "YYYY-MM-DD",',
             '  "updated_at": "YYYY-MM-DD",',
             '  "page": "docs/zh/predictions/items/PRED-0001.md"',
@@ -979,6 +1009,7 @@ def build_prediction_template() -> str:
             "",
             "每条正式预测必须有可验证条件、可证伪条件、时间窗口、来源回指、相关对象、分类、状态与置信度。",
             "每条正式预测还必须有 academic_novelty 字段；active 条目只有在 academic_novelty.status = passed 时才可保持 active。",
+            "每条新增或改写预测必须写入 `mathematical_formalization` 与 `mathematical_derivation`；缺少纯数学表达、定义域/值域、推导步骤、正反检查或收敛状态时，按正反交叉自举循环判定为无效写入。",
             "",
         ]
     )
@@ -1033,13 +1064,15 @@ def render_all(predictions: list[dict], category_map: list[dict], check: bool = 
                     "related_cases",
                     "related_discoveries",
                     "source_refs",
-                "confidence",
-                "status",
-                "academic_novelty",
-                "created_at",
-                "updated_at",
-                "page",
-            ],
+                    "confidence",
+                    "status",
+                    "academic_novelty",
+                    "mathematical_formalization",
+                    "mathematical_derivation",
+                    "created_at",
+                    "updated_at",
+                    "page",
+                ],
                 "properties": {
                     "id": {"type": "string"},
                     "title": {"type": "object"},
@@ -1056,6 +1089,16 @@ def render_all(predictions: list[dict], category_map: list[dict], check: bool = 
                     "confidence": {"type": "string"},
                     "status": {"type": "string"},
                     "academic_novelty": {"type": "object"},
+                    "mathematical_formalization": {
+                        "type": "object",
+                        "required": ["symbol", "math_expression", "domain", "codomain", "validity_condition"],
+                    },
+                    "mathematical_derivation": {
+                        "type": "object",
+                        "required": ["status", "kind", "steps_math", "forward_check", "reverse_check", "convergence"],
+                        "properties": {"status": {"const": "converged"}},
+                        "additionalProperties": True,
+                    },
                     "created_at": {"type": "string"},
                     "updated_at": {"type": "string"},
                     "page": {"type": "string"},

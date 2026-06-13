@@ -1,7 +1,7 @@
 # When Systems Catch Fire / 点火
 
-一个人类在好奇心的驱动下，借助 AI 做出的发现。
-A discovery made by a human being, driven by curiosity and aided by AI.
+《点火》不是一本固定成书，而是一个开放维护的函数、案例、发现与预测知识库。
+When Systems Catch Fire is not a fixed book, but an open and maintained knowledge base of functions, cases, discoveries, and predictions.
 
 ## 入口 / Entrance
 

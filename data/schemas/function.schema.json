@@ -13,6 +13,8 @@
     "title",
     "short_definition",
     "formal_expression",
+    "mathematical_formalization",
+    "mathematical_derivation",
     "mechanism",
     "derived_from",
     "derives",
@@ -83,6 +85,12 @@
         }
       },
       "additionalProperties": true
+    },
+    "mathematical_formalization": {
+      "$ref": "#/$defs/mathFormalization"
+    },
+    "mathematical_derivation": {
+      "$ref": "#/$defs/mathDerivation"
     },
     "mechanism": {
       "$ref": "#/$defs/bilingualNullableText"
@@ -316,6 +324,44 @@
             "null"
           ]
         }
+      },
+      "additionalProperties": true
+    },
+    "mathFormalization": {
+      "type": "object",
+      "required": [
+        "symbol",
+        "math_expression",
+        "domain",
+        "codomain",
+        "validity_condition"
+      ],
+      "properties": {
+        "symbol": {"type": "string", "minLength": 1},
+        "math_expression": {"type": "string", "minLength": 1},
+        "domain": {"type": "string", "minLength": 1},
+        "codomain": {"type": "string", "minLength": 1},
+        "validity_condition": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    },
+    "mathDerivation": {
+      "type": "object",
+      "required": [
+        "status",
+        "kind",
+        "steps_math",
+        "forward_check",
+        "reverse_check",
+        "convergence"
+      ],
+      "properties": {
+        "status": {"const": "converged"},
+        "kind": {"type": "string", "minLength": 1},
+        "steps_math": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "forward_check": {"type": "object"},
+        "reverse_check": {"type": "object"},
+        "convergence": {"type": "string", "minLength": 1}
       },
       "additionalProperties": true
     }

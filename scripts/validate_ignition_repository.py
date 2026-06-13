@@ -85,6 +85,10 @@ PREDICTIONS_JSON = REPO_ROOT / "data/predictions/unified-predictions.json"
 PREDICTIONS_INDEX_JSON = REPO_ROOT / "data/predictions/unified-predictions-index.md"
 ANSWERS_JSON_PATH = REPO_ROOT / "data/answers/unified-answers.json"
 ANSWERS_INDEX_JSON = REPO_ROOT / "data/answers/unified-answers-index.md"
+MATH_FORMALIZATION_REPORT_JSON = REPO_ROOT / "data/rebuild/math-formalization-coverage-report.json"
+MATH_FORMALIZATION_REPORT_MD = REPO_ROOT / "data/rebuild/math-formalization-coverage-report.md"
+MATH_FORMALIZATION_SUPPLEMENTS_JSON = REPO_ROOT / "data/rebuild/math-formalization-supplements.json"
+MATH_FORMALIZATION_SUPPLEMENTS_JSONL = REPO_ROOT / "data/rebuild/math-formalization-supplements.jsonl"
 
 
 def fail(errors: list[str]) -> int:
@@ -354,6 +358,60 @@ def check_answers(errors: list[str]) -> dict[str, int]:
     }
 
 
+def check_math_formalization_gate(errors: list[str]) -> dict[str, int]:
+    datasets = {
+        "function": read_discovery_json(REPO_ROOT / "data/functions/unified-functions.json", []),
+        "case": read_discovery_json(REPO_ROOT / "data/cases/unified-cases.json", []),
+        "discovery": read_discovery_json(DISCOVERIES_JSON, []),
+        "prediction": read_discovery_json(PREDICTIONS_JSON, []),
+        "answer": read_answer_json(ANSWERS_JSON_PATH, []),
+    }
+    required_formal = ["symbol", "math_expression", "domain", "codomain", "validity_condition"]
+    required_derivation = ["status", "kind", "steps_math", "forward_check", "reverse_check", "convergence"]
+    required_total = 0
+    with_math = 0
+    for layer, items in datasets.items():
+        for item in items:
+            required_total += 1
+            object_id = item.get("normalized_id") or item.get("id")
+            formal = item.get("mathematical_formalization") or {}
+            derivation = item.get("mathematical_derivation") or {}
+            missing = [key for key in required_formal if not formal.get(key)]
+            missing += [key for key in required_derivation if not derivation.get(key)]
+            if derivation.get("status") != "converged":
+                missing.append("status=converged")
+            if derivation.get("forward_check", {}).get("status") != "pass":
+                missing.append("forward_check.status=pass")
+            if derivation.get("reverse_check", {}).get("status") != "fail":
+                missing.append("reverse_check.status=fail")
+            if missing:
+                errors.append(f"{layer} missing pure math formalization gate fields: {object_id} ({', '.join(missing)})")
+            else:
+                with_math += 1
+
+    report = read_discovery_json(MATH_FORMALIZATION_REPORT_JSON, {})
+    if not report:
+        errors.append("missing math formalization coverage report")
+    else:
+        if not report.get("converged"):
+            errors.append("math formalization coverage report is not converged")
+        if report.get("total_required") != required_total:
+            errors.append(f"math formalization total_required mismatch: {report.get('total_required')} != {required_total}")
+        if report.get("total_with_math") != with_math:
+            errors.append(f"math formalization total_with_math mismatch: {report.get('total_with_math')} != {with_math}")
+        if report.get("blockers") != 0:
+            errors.append(f"math formalization blockers present: {report.get('blockers')}")
+
+    supplements = read_discovery_json(MATH_FORMALIZATION_SUPPLEMENTS_JSON, [])
+    if len(supplements) != required_total:
+        errors.append(f"math formalization supplement count mismatch: {len(supplements)} != {required_total}")
+    return {
+        "required": required_total,
+        "with_math": with_math,
+        "missing": required_total - with_math,
+    }
+
+
 def check_functions_cases(errors: list[str]) -> dict[str, int]:
     functions = parse_function_table(FUNC_SOURCE)
     cases = parse_case_table(CASE_SOURCE)
@@ -415,6 +473,10 @@ def check_presence(errors: list[str]) -> None:
         REPO_ROOT / "data/rebuild/bilingual-label-cleanup-report.json",
         REPO_ROOT / "data/rebuild/repetitive-text-report.md",
         REPO_ROOT / "data/rebuild/repetitive-text-report.json",
+        MATH_FORMALIZATION_REPORT_JSON,
+        MATH_FORMALIZATION_REPORT_MD,
+        MATH_FORMALIZATION_SUPPLEMENTS_JSON,
+        MATH_FORMALIZATION_SUPPLEMENTS_JSONL,
     ]
     for path in expected:
         if not path.exists():
@@ -433,6 +495,7 @@ def main() -> int:
 
     check_readme(errors)
     meta_stats = check_meta_functions(errors)
+    math_stats = check_math_formalization_gate(errors)
     if quick_mode:
         discovery_stats = {
             "curated": len(read_discovery_json(DISCOVERIES_JSON, [])),
@@ -462,6 +525,7 @@ def main() -> int:
         "predictions": prediction_stats,
         "answers": answer_stats,
         "functions": function_stats,
+        "math_formalization": math_stats,
         "errors": errors,
     }
     print(json.dumps(report, ensure_ascii=False, indent=2))

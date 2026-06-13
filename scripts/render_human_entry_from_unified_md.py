@@ -46,6 +46,7 @@ OUT_FUNC_BOOTSTRAP_TABLE_JSON = REPO_ROOT / "data/functions/bootstrap-meta-funct
 OUT_FUNC_BOOTSTRAP_TABLE_JSONL = REPO_ROOT / "data/functions/bootstrap-meta-function-table.jsonl"
 OUT_FUNC_BOOTSTRAP_TABLE_MD = REPO_ROOT / "data/functions/bootstrap-meta-function-table.md"
 OUT_FUNC_DERIVATION_SUPPLEMENTS_JSON = REPO_ROOT / "data/functions/function-derivation-supplements.json"
+OUT_MATH_FORMALIZATION_SUPPLEMENTS_JSON = REPO_ROOT / "data/rebuild/math-formalization-supplements.json"
 
 OUT_CASE_JSON = REPO_ROOT / "data/cases/unified-cases.json"
 OUT_CASE_JSONL = REPO_ROOT / "data/cases/unified-cases.jsonl"
@@ -466,6 +467,7 @@ def parse_function_table(path: Path) -> List[dict]:
         if not record["title"]["zh"].strip():
             raise RuntimeError(f"Empty function title for {record['id']}")
     attach_function_derivations(records)
+    attach_math_formalizations(records)
     return records
 
 
@@ -478,6 +480,18 @@ def attach_function_derivations(records: List[dict]) -> None:
         derivation = by_id.get(record["id"])
         if derivation:
             record["derivation"] = derivation
+
+
+def attach_math_formalizations(records: List[dict]) -> None:
+    if not OUT_MATH_FORMALIZATION_SUPPLEMENTS_JSON.exists():
+        return
+    supplements = json.loads(OUT_MATH_FORMALIZATION_SUPPLEMENTS_JSON.read_text(encoding="utf-8"))
+    by_id = {item["id"]: item for item in supplements if item.get("id")}
+    for record in records:
+        item = by_id.get(record.get("normalized_id")) or by_id.get(record.get("id"))
+        if item:
+            record["mathematical_formalization"] = item.get("mathematical_formalization")
+            record["mathematical_derivation"] = item.get("mathematical_derivation")
 
 
 def parse_case_table(path: Path) -> List[dict]:
@@ -582,6 +596,7 @@ def parse_case_table(path: Path) -> List[dict]:
         seen.add(record["normalized_id"])
         if not record["title"]["zh"].strip():
             raise RuntimeError(f"Empty case title for {record['id']}")
+    attach_math_formalizations(records)
     return records
 
 
@@ -795,6 +810,40 @@ def render_derivation_block(func: dict, current_path: Path | None = None, limit:
     return "\n".join(lines)
 
 
+def render_math_formalization_block(item: dict) -> str:
+    formal = item.get("mathematical_formalization") or {}
+    derivation = item.get("mathematical_derivation") or {}
+    if not formal or not derivation:
+        return "暂无纯数学函数与数学推导 / No pure mathematical function and derivation yet."
+    lines = [
+        f"- 对象 / Object: `{formal.get('symbol', '')}`",
+        f"- 定义域 / Domain: `{formal.get('domain', '')}`",
+        f"- 值域 / Codomain: `{formal.get('codomain', '')}`",
+        f"- 数学表达 / Expression: `{formal.get('math_expression', '')}`",
+        f"- 有效条件 / Validity: `{formal.get('validity_condition', '')}`",
+        f"- 推导类型 / Derivation type: `{derivation.get('kind', '')}`",
+        f"- 收敛状态 / Convergence status: `{derivation.get('status', '')}`",
+    ]
+    deps = derivation.get("depends_on") or []
+    lines.append(f"- 依赖 / Depends on: {', '.join(f'`{dep}`' for dep in deps) if deps else '`source_state`'}")
+    steps = derivation.get("steps_math") or []
+    if steps:
+        lines.append("- 推导步骤 / Steps:")
+        lines.extend(f"  - {step}" for step in steps)
+    obligations = derivation.get("proof_obligations") or []
+    if obligations:
+        lines.append("- 证明义务 / Proof obligations:")
+        lines.extend(f"  - `{item}`" for item in obligations)
+    lines.extend(
+        [
+            f"- 正向检查 / Forward check: `{(derivation.get('forward_check') or {}).get('condition', '')}`",
+            f"- 反向检查 / Reverse check: `{(derivation.get('reverse_check') or {}).get('condition', '')}`",
+            f"- 收敛判据 / Convergence: `{derivation.get('convergence', '')}`",
+        ]
+    )
+    return "\n".join(lines)
+
+
 def render_function_card(func: dict, current_path: Path, related_limit: int = 5) -> str:
     title = format_bilingual_title(func["title"]["zh"], func["title"]["en"])
     detail_link = rel_link(current_path, REPO_ROOT / func["links"]["human_page"])
@@ -804,6 +853,7 @@ def render_function_card(func: dict, current_path: Path, related_limit: int = 5)
     explanation_en = safe_english(func["explanation"]["en"] or translate_text(explanation))
     related_block = render_related_cases_block(func, current_path, limit=related_limit)
     derivation_block = render_derivation_block(func, current_path, limit=2)
+    math_block = render_math_formalization_block(func)
     more_line = ""
     if len(func.get("related_cases", [])) > related_limit:
         more_line = f"- 更多 / More: [查看函数详情 / View function page]({detail_link})"
@@ -819,6 +869,9 @@ def render_function_card(func: dict, current_path: Path, related_limit: int = 5)
             "**说明 / Explanation**",
             f"中文：{explanation}",
             f"English: {explanation_en}",
+            "",
+            "**纯数学函数与推导 / Pure Mathematical Function and Derivation**",
+            math_block,
             "",
             "**推导补充 / Derivation Supplement**",
             derivation_block,
@@ -839,6 +892,7 @@ def render_case_card(case: dict, current_path: Path, related_limit: int = 5) -> 
     explanation = case["explanation"]["zh"]
     explanation_en = safe_english(case["explanation"]["en"] or translate_text(explanation))
     related_block = render_related_functions_block(case, current_path, limit=related_limit)
+    math_block = render_math_formalization_block(case)
     more_line = ""
     if len(case.get("related_functions", [])) > related_limit:
         more_line = f"- 更多 / More: [查看案例详情 / View case page]({detail_link})"
@@ -854,6 +908,9 @@ def render_case_card(case: dict, current_path: Path, related_limit: int = 5) -> 
             "**它说明了什么 / What It Shows**",
             f"中文：{explanation}",
             f"English: {explanation_en}",
+            "",
+            "**纯数学函数与推导 / Pure Mathematical Function and Derivation**",
+            math_block,
             "",
             "**关联函数 / Related Functions**",
             related_block,
@@ -1153,6 +1210,14 @@ def render_detail_function_page(func: dict) -> str:
             "English:",
             safe_english(func["explanation"]["en"] or translate_text(func["explanation"]["zh"])),
             "",
+            "## 纯数学函数 / Pure Mathematical Function",
+            "",
+            "\n".join(render_math_formalization_block(func).splitlines()[:5]),
+            "",
+            "## 数学推导 / Mathematical Derivation",
+            "",
+            "\n".join(render_math_formalization_block(func).splitlines()[5:]),
+            "",
             "## 推导补充 / Derivation Supplement",
             "",
             render_derivation_block(func, current_path),
@@ -1228,6 +1293,14 @@ def render_detail_case_page(case: dict) -> str:
             "",
             "English:",
             safe_english(case["explanation"]["en"] or translate_text(case["explanation"]["zh"])),
+            "",
+            "## 纯数学函数 / Pure Mathematical Function",
+            "",
+            "\n".join(render_math_formalization_block(case).splitlines()[:5]),
+            "",
+            "## 数学推导 / Mathematical Derivation",
+            "",
+            "\n".join(render_math_formalization_block(case).splitlines()[5:]),
             "",
             "## 关联函数 / Related Functions",
             "",

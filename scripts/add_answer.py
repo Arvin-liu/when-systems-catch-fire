@@ -27,6 +27,7 @@ from answer_utils import (
     write_jsonl,
     write_text,
 )
+from derive_math_formalizations import answer_formalization
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -79,6 +80,9 @@ def build_payload(args: argparse.Namespace, answers: list[dict]) -> dict:
     }
     if novelty_status != "passed" and payload["status"] == "active":
         payload["status"] = "answer_pending_novelty_review"
+    formal, derivation = answer_formalization(payload)
+    payload["mathematical_formalization"] = formal
+    payload["mathematical_derivation"] = derivation
     return payload
 
 

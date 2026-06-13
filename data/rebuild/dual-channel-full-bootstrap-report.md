@@ -1,7 +1,7 @@
 # Dual-Channel Full Bootstrap Report
 
-- run_id: 20260614-010609
-- generated_at: 2026-06-13T17:13:59.178827+00:00
+- run_id: 20260614-050700
+- generated_at: 2026-06-13T21:14:53.994123+00:00
 - functions verified: 470 / 470
 - cases verified: 578 / 578
 - rounds_completed: 2

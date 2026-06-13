@@ -10,6 +10,27 @@ English: If this discovery is a new explanation of an existing answer, explain w
 
 ## 推论链条 / Inference Chain
 
+## 纯数学函数 / Pure Mathematical Function
+
+- 对象 / Object: `D_{DISC-____}`
+- 定义域 / Domain: `F × C`
+- 值域 / Codomain: `{0,1}`
+- 数学表达 / Expression: `D_{DISC-____}=1 ⇔ I_new(D,F,C)-I_prior(D)>θ_{DISC-____}`
+- 有效条件 / Validity: `J_n^+(D_{DISC-____})=1 ∧ J_n^-(D_{DISC-____})=0`
+
+## 数学推导 / Mathematical Derivation
+
+- 推导类型 / Derivation type: `discovery_information_gain_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 推导步骤 / Steps:
+  - 将相关函数与案例编码为证据对 `(F,C)`。
+  - 计算相对既有解释的信息增量。
+  - 证明信息增量超过阈值 `θ`。
+  - 通过反向通道排除非独有、矛盾或欠定。
+- 正向检查 / Forward check: `J_n^+(D)=1`
+- 反向检查 / Reverse check: `J_n^-(D)=0`
+- 收敛判据 / Convergence: `ΔD=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
 ## 相关函数 / Related Functions
 
 ## 相关案例 / Related Cases
