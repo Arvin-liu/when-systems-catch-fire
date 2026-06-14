@@ -161,3 +161,13 @@ Relation records live in data/relations/function-case-relations.jsonl.
 # actually be a function candidate, analytic solution candidate, discovery candidate,
 # prediction candidate, answer candidate, supplement note, existing reference,
 # misnumbered item, or needs_human_review item. Do not default-accept EFF leads as effects.
+
+Project-level Normalized JSONL Data Layer:
+Maintain data/normalized-jsonl/ as the formal machine-readable JSONL layer of the repository.
+This is not merely a Get Brain adapter. Get Brain only revealed the preference for JSONL.
+Markdown, JSON, JSONL, index pages, and reports may coexist, but consistency is mandatory.
+Data structure is not the goal; consistency is the goal.
+Do not modify canonical data when rebuilding normalized JSONL.
+Do not hardcode counts.
+Each JSONL line must be one complete object.
+Every JSONL object must include canonical_source, schema_version, generated_at, source_commit, source_sha, and inference_not_conclusion.

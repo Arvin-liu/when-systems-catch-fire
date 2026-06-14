@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "total_errors": 0,
+  "total_warnings": 0,
+  "errors": [],
+  "warnings": [],
+  "files": {
+    "functions.jsonl": 713,
+    "cases.jsonl": 710,
+    "effect-leads.jsonl": 36
+  },
+  "manifest_ok": true
+}

@@ -1,0 +1,27 @@
+{
+  "phase": "minimal_normalized_jsonl_layer",
+  "is_recovery_run": true,
+  "is_not_get_brain_only_adapter": true,
+  "canonical_data_not_replaced": true,
+  "full_bootstrap_not_run": true,
+  "academic_search_not_run": true,
+  "novelty_passed_not_generated": true,
+  "active_promotion_not_executed": true,
+  "files": {
+    "functions.jsonl": {
+      "line_count": 713,
+      "sha256": "ae2144863cc80ea2"
+    },
+    "cases.jsonl": {
+      "line_count": 710,
+      "sha256": "a3ba7d9896c3f044"
+    },
+    "effect-leads.jsonl": {
+      "line_count": 36,
+      "sha256": "045de7908ec8bc2c"
+    }
+  },
+  "required_fields_present": true,
+  "counts_dynamic": true,
+  "workdir_clean_check": "to_be_verified"
+}

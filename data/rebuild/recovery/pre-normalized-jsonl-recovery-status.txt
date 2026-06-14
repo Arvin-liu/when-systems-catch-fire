@@ -1,0 +1,8 @@
+ M data/rebuild/get-note-0000-sync-report.json
+ M data/rebuild/link-entry-merge-report.json
+ M data/rebuild/link-entry-merge-report.md
+ M data/rebuild/no-function-case-entailment-scan-report.md
+?? data/normalized-jsonl/
+?? data/rebuild/pre-eff-identity-audit-dirty-worktree-status.txt
+?? data/rebuild/pre-eff-identity-audit-dirty-worktree.patch
+?? data/rebuild/recovery/

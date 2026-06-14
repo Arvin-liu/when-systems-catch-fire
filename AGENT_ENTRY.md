@@ -400,3 +400,8 @@ English: A function-case relation must not be written as a bidirectional necessa
 - 所有函数-案例关系必须写入 `data/relations/function-case-relations.jsonl`
 - 每条关系必须包含 `entailment_status: non_entailing`
 - `is_definitive`, `is_unique_explanation`, `is_bidirectional_proof` 必须为 `false`
+
+## 项目级规范化 JSONL 数据层 / Project-level Normalized JSONL Data Layer
+
+中文：本仓库维护一套正式的项目级规范化 JSONL 数据层，位于 `data/normalized-jsonl/`。它不是单独为得到大脑创建的适配层；得到大脑只是揭示了 JSONL 更适合机器逐行读取和批量碰撞分析。Markdown、JSON、JSONL、索引页和报告可以共存，但必须通过对象 ID、canonical source、source SHA、schema version 和一致性校验保持同步。数据结构不是目的，一致性才是目的。
+English: This repository maintains a formal project-level normalized JSONL data layer at `data/normalized-jsonl/`. It is not an adapter created only for Get Brain; Get Brain merely revealed that JSONL is better for machine line-by-line reading and batch collision analysis. Markdown, JSON, JSONL, index pages, and reports may coexist, but they must remain synchronized through object IDs, canonical source, source SHA, schema version, and consistency checks. Data structure is not the goal; consistency is the goal.
