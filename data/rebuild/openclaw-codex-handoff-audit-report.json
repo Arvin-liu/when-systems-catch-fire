@@ -1,0 +1,101 @@
+{
+  "report_name": "openclaw-codex-handoff-audit",
+  "source_commit": "bc5ce3d",
+  "expected_commit": "bc5ce3d",
+  "audit_scope": "lightweight handoff audit",
+  "audited_at": "2026-06-14T16:48:39.784198+00:00",
+  "eff_reclassification_overlay": {
+    "exists": true,
+    "total_eff_leads": 36,
+    "function_candidates": 4,
+    "discovery_candidates": 1,
+    "effect_candidates": 31,
+    "dedup_candidate_groups": 13,
+    "migration_executed": false,
+    "active_promotion_executed": false,
+    "novelty_passed_generated": false
+  },
+  "object_id_links": {
+    "script_exists": true,
+    "validation_passed": true,
+    "checked_markdown_files": 1515
+  },
+  "academic_novelty_review": {
+    "exists": true,
+    "reviewed_total": 139,
+    "keep_current_claim_candidates": 70,
+    "needs_human_review": 57,
+    "downgrade_to_function_note_review": 12,
+    "passed_count": 0,
+    "academic_search_rerun": false
+  },
+  "discovery_derivation_pages": {
+    "checked": true,
+    "total_pages": 83,
+    "pages_with_required_sections": 83
+  },
+  "checks": [
+    {
+      "name": "validate_object_id_links",
+      "result": "passed"
+    },
+    {
+      "name": "validate_academic_novelty_review_all",
+      "result": "passed"
+    },
+    {
+      "name": "validate_eff_reclassification_overlay",
+      "result": "passed"
+    },
+    {
+      "name": "validate_normalized_jsonl_all",
+      "result": "passed"
+    },
+    {
+      "name": "check_normalized_jsonl_baseline",
+      "result": "passed"
+    },
+    {
+      "name": "validate_eff_collision_analysis",
+      "result": "passed"
+    },
+    {
+      "name": "validate_no_hardcoded_counts",
+      "result": "passed"
+    },
+    {
+      "name": "validate_project_identity_lock",
+      "result": "passed"
+    },
+    {
+      "name": "validate_project_evaluation_output_lock",
+      "result": "passed"
+    },
+    {
+      "name": "validate_no_function_case_entailment",
+      "result": "passed"
+    },
+    {
+      "name": "validate_ignition_repository --quick",
+      "result": "passed"
+    },
+    {
+      "name": "discovery_derivation_check",
+      "result": "passed (83/83)"
+    }
+  ],
+  "get_note_0000_sync": {
+    "attempted": true,
+    "status": "success",
+    "note_id": "1912823595772489448",
+    "error": ""
+  },
+  "safety": {
+    "canonical_modified": false,
+    "eff_migrated": false,
+    "active_promoted": false,
+    "full_bootstrap_run": false,
+    "full_academic_search_run": false,
+    "old_dirty_files_committed": false
+  }
+}
