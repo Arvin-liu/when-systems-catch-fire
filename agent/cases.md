@@ -12,10 +12,10 @@
 
 | Group | Count | Source file | Main use |
 | --- | --- | --- | --- |
-| 文明级事件 | 18 | `dianhuo/03-evidence/cases/civilization-level.md` | 作为 P6 + T5/T6 区域的工作标签。 |
-| 国家级事件 | 17 | `dianhuo/03-evidence/cases/nation-level.md` | 作为 P5 + T3/T4/T5 区域的工作标签。 |
-| 政策级事件 | 17 | `dianhuo/03-evidence/cases/policy-level.md` | 作为 P4/P5 + T2/T3/T4/T5 区域的工作标签。 |
-| 公司级事件 | 13 | `dianhuo/03-evidence/cases/company-level.md` | 作为 P3 + T3/T4 区域的工作标签。 |
+| 文明级事件 | 18 | `dianhuo/03-evidence/cases/civilization-level.md` | 作为 P6 + [T5](../docs/zh/functions/items/T5.md)/T6 区域的工作标签。 |
+| 国家级事件 | 17 | `dianhuo/03-evidence/cases/nation-level.md` | 作为 P5 + [T3](../docs/zh/functions/items/T3.md)/T4/T5 区域的工作标签。 |
+| 政策级事件 | 17 | `dianhuo/03-evidence/cases/policy-level.md` | 作为 P4/P5 + [T2](../docs/zh/functions/items/T2.md)/T3/T4/T5 区域的工作标签。 |
+| 公司级事件 | 13 | `dianhuo/03-evidence/cases/company-level.md` | 作为 P3 + [T3](../docs/zh/functions/items/T3.md)/T4 区域的工作标签。 |
 | 边界案例 | 6 | `dianhuo/03-evidence/cases/marginal-cases.md` | 标出不应被强行解释为点火的案例。 |
 
 ## 2026-06-07 case tables

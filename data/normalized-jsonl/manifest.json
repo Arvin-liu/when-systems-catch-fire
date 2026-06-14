@@ -72,5 +72,56 @@
       "line_count": 36,
       "sha256": "045de7908ec8bc2c"
     }
-  }
+  },
+  "derived_views": [
+    {
+      "path": "data/reclassification/eff-leads/eff-lead-reclassification.jsonl",
+      "line_count": 36,
+      "sha256": "1f3209400c2f4a6be79ddc78baf7c6a94a9925f63ff310e2f6970857bc6f09e2",
+      "view_type": "derived_reclassification_overlay",
+      "canonical_object_count": false,
+      "source": "data/analysis/eff-collision/"
+    },
+    {
+      "path": "data/reclassification/eff-leads/function-candidate-queue.jsonl",
+      "line_count": 4,
+      "sha256": "e63273178d25513ff04b8a8aa9b011f90a46913534f13c0a4efb5c059081f238",
+      "view_type": "derived_reclassification_overlay",
+      "canonical_object_count": false,
+      "source": "data/analysis/eff-collision/"
+    },
+    {
+      "path": "data/reclassification/eff-leads/discovery-candidate-queue.jsonl",
+      "line_count": 1,
+      "sha256": "75c122230f0b44dfdab87cf79bdf5d311e77453068e00732b40e4b4b26ae64f4",
+      "view_type": "derived_reclassification_overlay",
+      "canonical_object_count": false,
+      "source": "data/analysis/eff-collision/"
+    },
+    {
+      "path": "data/reclassification/eff-leads/effect-candidate-queue.jsonl",
+      "line_count": 31,
+      "sha256": "f751772cd68aea73c1fcf56eb7f98362c08c488a608f95d9c42429038b83098c",
+      "view_type": "derived_reclassification_overlay",
+      "canonical_object_count": false,
+      "source": "data/analysis/eff-collision/"
+    },
+    {
+      "path": "data/reclassification/eff-leads/eff-dedup-candidate-groups.jsonl",
+      "line_count": 13,
+      "sha256": "a93d334d34ada7195cd850ad7f46cb9230489f7284f465cb318f56f389d1b62c",
+      "view_type": "derived_reclassification_overlay",
+      "canonical_object_count": false,
+      "source": "data/analysis/eff-collision/"
+    },
+    {
+      "path": "data/reclassification/eff-leads/reclassification-summary.json",
+      "line_count": 32,
+      "sha256": "cb2186377465c675fd6c83786beb2e169aa9589dcb08fb00431c0c62d80feab3",
+      "view_type": "derived_reclassification_overlay",
+      "canonical_object_count": false,
+      "source": "data/analysis/eff-collision/"
+    }
+  ],
+  "derived_views_updated_at": "2026-06-14T15:44:44.888262+00:00"
 }

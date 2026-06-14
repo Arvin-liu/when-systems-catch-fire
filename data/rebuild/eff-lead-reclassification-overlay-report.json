@@ -1,0 +1,32 @@
+{
+  "report_name": "eff-lead-reclassification-overlay",
+  "generated_at": "2026-06-14T15:44:44.888262+00:00",
+  "source_commit": "6813371",
+  "schema_version": "eff-lead-reclassification-v1",
+  "total_eff_leads": 36,
+  "function_candidates": 4,
+  "discovery_candidates": 1,
+  "effect_candidates": 31,
+  "dedup_candidate_groups": 13,
+  "class_counts": {
+    "effect_candidate": 31,
+    "function_candidate": 4,
+    "discovery_candidate": 1
+  },
+  "migration_executed": false,
+  "active_promotion_executed": false,
+  "academic_search_executed": false,
+  "academic_novelty_passed_generated": false,
+  "canonical_eff_modified": false,
+  "collision_summary": "data/analysis/eff-collision/eff-collision-summary.json",
+  "input_collision_counts": {
+    "function_candidates": 4,
+    "effect_candidates": 31,
+    "discovery_candidates": 1,
+    "answer_candidates": 0,
+    "analytic_solution_candidates": 0,
+    "supplement_note_candidates": 0,
+    "needs_human_review": 0,
+    "near_duplicates": 13
+  }
+}

@@ -5,4 +5,4 @@
 - Candidate count: 1
 
 ## Candidates
-- T20 σ_opt=√e解析解: Title explicitly denotes a closed-form analytic solution.
+- [T20](../../docs/zh/functions/items/T20.md) σ_opt=√e解析解: Title explicitly denotes a closed-form analytic solution.

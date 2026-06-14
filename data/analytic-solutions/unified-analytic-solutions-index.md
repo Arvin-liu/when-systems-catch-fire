@@ -7,4 +7,4 @@
 - [物理 / Physics](docs/zh/analytic-solutions/categories/physics.md) - 1 leads
 
 ## Items
-- SOL-0001 σ_opt=√e解析解 / Analytic solution candidate
+- [SOL-0001](../../docs/zh/analytic-solutions/items/SOL-0001.md) σ_opt=√e解析解 / Analytic solution candidate

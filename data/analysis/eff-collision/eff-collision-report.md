@@ -31,48 +31,48 @@
 
 ## Likely Function Candidates
 
-- `EFF-0011` → `function_candidate` (medium)
-- `EFF-0012` → `function_candidate` (medium)
-- `EFF-0015` → `function_candidate` (medium)
-- `EFF-0024` → `function_candidate` (medium)
+- [EFF-0011](../../../docs/zh/effects/items/EFF-0011.md) → `function_candidate` (medium)
+- [EFF-0012](../../../docs/zh/effects/items/EFF-0012.md) → `function_candidate` (medium)
+- [EFF-0015](../../../docs/zh/effects/items/EFF-0015.md) → `function_candidate` (medium)
+- [EFF-0024](../../../docs/zh/effects/items/EFF-0024.md) → `function_candidate` (medium)
 
 ## Likely Effect Candidates
 
-- `EFF-0001` → `effect_candidate` (high)
-- `EFF-0002` → `effect_candidate` (high)
-- `EFF-0003` → `effect_candidate` (high)
-- `EFF-0004` → `effect_candidate` (high)
-- `EFF-0005` → `effect_candidate` (high)
-- `EFF-0006` → `effect_candidate` (high)
-- `EFF-0007` → `effect_candidate` (high)
-- `EFF-0008` → `effect_candidate` (high)
-- `EFF-0009` → `effect_candidate` (high)
-- `EFF-0010` → `effect_candidate` (high)
-- `EFF-0013` → `effect_candidate` (high)
-- `EFF-0014` → `effect_candidate` (high)
-- `EFF-0016` → `effect_candidate` (high)
-- `EFF-0017` → `effect_candidate` (high)
-- `EFF-0018` → `effect_candidate` (high)
-- `EFF-0019` → `effect_candidate` (high)
-- `EFF-0020` → `effect_candidate` (high)
-- `EFF-0021` → `effect_candidate` (medium)
-- `EFF-0022` → `effect_candidate` (high)
-- `EFF-0023` → `effect_candidate` (medium)
-- `EFF-0025` → `effect_candidate` (high)
-- `EFF-0026` → `effect_candidate` (high)
-- `EFF-0027` → `effect_candidate` (high)
-- `EFF-0028` → `effect_candidate` (medium)
-- `EFF-0029` → `effect_candidate` (medium)
-- `EFF-0030` → `effect_candidate` (medium)
-- `EFF-0031` → `effect_candidate` (high)
-- `EFF-0032` → `effect_candidate` (high)
-- `EFF-0034` → `effect_candidate` (high)
-- `EFF-0035` → `effect_candidate` (high)
-- `EFF-0036` → `effect_candidate` (high)
+- [EFF-0001](../../../docs/zh/effects/items/EFF-0001.md) → `effect_candidate` (high)
+- [EFF-0002](../../../docs/zh/effects/items/EFF-0002.md) → `effect_candidate` (high)
+- [EFF-0003](../../../docs/zh/effects/items/EFF-0003.md) → `effect_candidate` (high)
+- [EFF-0004](../../../docs/zh/effects/items/EFF-0004.md) → `effect_candidate` (high)
+- [EFF-0005](../../../docs/zh/effects/items/EFF-0005.md) → `effect_candidate` (high)
+- [EFF-0006](../../../docs/zh/effects/items/EFF-0006.md) → `effect_candidate` (high)
+- [EFF-0007](../../../docs/zh/effects/items/EFF-0007.md) → `effect_candidate` (high)
+- [EFF-0008](../../../docs/zh/effects/items/EFF-0008.md) → `effect_candidate` (high)
+- [EFF-0009](../../../docs/zh/effects/items/EFF-0009.md) → `effect_candidate` (high)
+- [EFF-0010](../../../docs/zh/effects/items/EFF-0010.md) → `effect_candidate` (high)
+- [EFF-0013](../../../docs/zh/effects/items/EFF-0013.md) → `effect_candidate` (high)
+- [EFF-0014](../../../docs/zh/effects/items/EFF-0014.md) → `effect_candidate` (high)
+- [EFF-0016](../../../docs/zh/effects/items/EFF-0016.md) → `effect_candidate` (high)
+- [EFF-0017](../../../docs/zh/effects/items/EFF-0017.md) → `effect_candidate` (high)
+- [EFF-0018](../../../docs/zh/effects/items/EFF-0018.md) → `effect_candidate` (high)
+- [EFF-0019](../../../docs/zh/effects/items/EFF-0019.md) → `effect_candidate` (high)
+- [EFF-0020](../../../docs/zh/effects/items/EFF-0020.md) → `effect_candidate` (high)
+- [EFF-0021](../../../docs/zh/effects/items/EFF-0021.md) → `effect_candidate` (medium)
+- [EFF-0022](../../../docs/zh/effects/items/EFF-0022.md) → `effect_candidate` (high)
+- [EFF-0023](../../../docs/zh/effects/items/EFF-0023.md) → `effect_candidate` (medium)
+- [EFF-0025](../../../docs/zh/effects/items/EFF-0025.md) → `effect_candidate` (high)
+- [EFF-0026](../../../docs/zh/effects/items/EFF-0026.md) → `effect_candidate` (high)
+- [EFF-0027](../../../docs/zh/effects/items/EFF-0027.md) → `effect_candidate` (high)
+- [EFF-0028](../../../docs/zh/effects/items/EFF-0028.md) → `effect_candidate` (medium)
+- [EFF-0029](../../../docs/zh/effects/items/EFF-0029.md) → `effect_candidate` (medium)
+- [EFF-0030](../../../docs/zh/effects/items/EFF-0030.md) → `effect_candidate` (medium)
+- [EFF-0031](../../../docs/zh/effects/items/EFF-0031.md) → `effect_candidate` (high)
+- [EFF-0032](../../../docs/zh/effects/items/EFF-0032.md) → `effect_candidate` (high)
+- [EFF-0034](../../../docs/zh/effects/items/EFF-0034.md) → `effect_candidate` (high)
+- [EFF-0035](../../../docs/zh/effects/items/EFF-0035.md) → `effect_candidate` (high)
+- [EFF-0036](../../../docs/zh/effects/items/EFF-0036.md) → `effect_candidate` (high)
 
 ## Likely Discovery / Answer / Analytic Solution Candidates
 
-- `EFF-0033` → `discovery_candidate` (high)
+- [EFF-0033](../../../docs/zh/effects/items/EFF-0033.md) → `discovery_candidate` (high)
 
 ## 与已有函数高度重合 / High Function Overlap
 
@@ -84,19 +84,19 @@
 
 ## EFF 内部重复或近似重复 / Internal Similarity Groups
 
-- `EFF-0001` ↔ `EFF-0003` `same_mechanism_different_name` score=0.519
-- `EFF-0001` ↔ `EFF-0009` `same_mechanism_different_name` score=0.5
-- `EFF-0001` ↔ `EFF-0013` `same_mechanism_different_name` score=0.5115
-- `EFF-0001` ↔ `EFF-0021` `same_mechanism_different_name` score=0.5023
-- `EFF-0001` ↔ `EFF-0027` `same_mechanism_different_name` score=0.5023
-- `EFF-0002` ↔ `EFF-0009` `parent_child_relation` score=0.4887
-- `EFF-0003` ↔ `EFF-0021` `same_mechanism_different_name` score=0.5
-- `EFF-0006` ↔ `EFF-0009` `same_mechanism_different_name` score=0.5294
-- `EFF-0006` ↔ `EFF-0025` `same_mechanism_different_name` score=0.5
-- `EFF-0007` ↔ `EFF-0020` `same_mechanism_different_name` score=0.5087
-- `EFF-0011` ↔ `EFF-0024` `same_mechanism_different_name` score=0.5062
-- `EFF-0017` ↔ `EFF-0018` `same_mechanism_different_name` score=0.525
-- `EFF-0025` ↔ `EFF-0034` `same_mechanism_different_name` score=0.567
+- [EFF-0001](../../../docs/zh/effects/items/EFF-0001.md) ↔ [EFF-0003](../../../docs/zh/effects/items/EFF-0003.md) `same_mechanism_different_name` score=0.519
+- [EFF-0001](../../../docs/zh/effects/items/EFF-0001.md) ↔ [EFF-0009](../../../docs/zh/effects/items/EFF-0009.md) `same_mechanism_different_name` score=0.5
+- [EFF-0001](../../../docs/zh/effects/items/EFF-0001.md) ↔ [EFF-0013](../../../docs/zh/effects/items/EFF-0013.md) `same_mechanism_different_name` score=0.5115
+- [EFF-0001](../../../docs/zh/effects/items/EFF-0001.md) ↔ [EFF-0021](../../../docs/zh/effects/items/EFF-0021.md) `same_mechanism_different_name` score=0.5023
+- [EFF-0001](../../../docs/zh/effects/items/EFF-0001.md) ↔ [EFF-0027](../../../docs/zh/effects/items/EFF-0027.md) `same_mechanism_different_name` score=0.5023
+- [EFF-0002](../../../docs/zh/effects/items/EFF-0002.md) ↔ [EFF-0009](../../../docs/zh/effects/items/EFF-0009.md) `parent_child_relation` score=0.4887
+- [EFF-0003](../../../docs/zh/effects/items/EFF-0003.md) ↔ [EFF-0021](../../../docs/zh/effects/items/EFF-0021.md) `same_mechanism_different_name` score=0.5
+- [EFF-0006](../../../docs/zh/effects/items/EFF-0006.md) ↔ [EFF-0009](../../../docs/zh/effects/items/EFF-0009.md) `same_mechanism_different_name` score=0.5294
+- [EFF-0006](../../../docs/zh/effects/items/EFF-0006.md) ↔ [EFF-0025](../../../docs/zh/effects/items/EFF-0025.md) `same_mechanism_different_name` score=0.5
+- [EFF-0007](../../../docs/zh/effects/items/EFF-0007.md) ↔ [EFF-0020](../../../docs/zh/effects/items/EFF-0020.md) `same_mechanism_different_name` score=0.5087
+- [EFF-0011](../../../docs/zh/effects/items/EFF-0011.md) ↔ [EFF-0024](../../../docs/zh/effects/items/EFF-0024.md) `same_mechanism_different_name` score=0.5062
+- [EFF-0017](../../../docs/zh/effects/items/EFF-0017.md) ↔ [EFF-0018](../../../docs/zh/effects/items/EFF-0018.md) `same_mechanism_different_name` score=0.525
+- [EFF-0025](../../../docs/zh/effects/items/EFF-0025.md) ↔ [EFF-0034](../../../docs/zh/effects/items/EFF-0034.md) `same_mechanism_different_name` score=0.567
 
 ## Needs Human Review
 

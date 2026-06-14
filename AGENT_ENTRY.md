@@ -34,6 +34,21 @@ English: When anyone asks the AI / Agent to evaluate this project, it may only o
 中文:任何声称"新的"的对象都必须先过学术搜索闸门;若无法确认独有性,只能保持为 `pending` / `inconclusive` / `lead`,不得伪装成 `passed`。
 English: Any object that claims to be "new" must pass the academic novelty gate first; if uniqueness cannot be confirmed, it must remain `pending` / `inconclusive` / `lead` and must not be masqueraded as `passed`.
 
+## 对象编号链接规则 / Object ID Link Rule
+
+中文:Markdown 中凡写入真实对象编号,包括函数、案例、发现、预测、新答案、效应与解析解编号,编号本身必须是到对应对象页的链接。代码块、公式型行内代码和非对象编号示例除外。更新 Markdown 后运行 `scripts/linkify_object_ids.py` 与 `scripts/validate_object_id_links.py`。
+English: Whenever a real object ID is written in Markdown, including function, case, discovery, prediction, answer, effect, and analytic-solution IDs, the ID itself must be a link to the corresponding object page. Code fences, formula-like inline code, and non-object examples are exempt. After Markdown updates, run `scripts/linkify_object_ids.py` and `scripts/validate_object_id_links.py`.
+
+## 学术检验降级规则 / Academic Review Disposition Rule
+
+中文:发现、预测、新答案、效应等所有宣称独有的对象都必须实际跑学术检索。未找到同一学术对象的,才可保留当前宣称类别候选;找到强重合的,进入函数补充降级审查;只有弱重合或检索不可用的,进入人审。自动流程不得直接把 canonical 对象改成 active 或 `passed`。
+English: Every object that claims originality, including discoveries, predictions, new answers, and effects, must run an actual academic search. If no same academic object is found, the current claim class may remain a candidate; if strong overlap is found, it must enter downgrade-to-function-supplement review; weak overlap or unavailable search must go to human review. Automated flows must not directly rewrite canonical objects to active or `passed`.
+
+## EFF 重分类覆盖层规则 / EFF Reclassification Overlay Rule
+
+中文:EFF 编号只表示历史编号,不证明对象必然是效应。EFF/Q 碰撞后的重分类只能先写入 `data/reclassification/eff-leads/` 派生覆盖层和候选队列;不得立即迁移、晋级 active、或生成 `academic_novelty.passed`。
+English: EFF numbering is historical numbering and does not prove that an object is an effect. Reclassification after EFF/Q collision analysis must first be written only to the derived overlay and candidate queues under `data/reclassification/eff-leads/`; it must not immediately migrate objects, promote active status, or generate `academic_novelty.passed`.
+
 ## Get 笔记知识库 0000
 
 中文:新的逻辑、新脚本、新报告与新的同步目标统一使用 `0000`,历史材料若保留 `00000`,必须标注 `superseded_by_0000`。
@@ -67,7 +82,7 @@ English: Section 0 of the original function table is the Bootstrap Meta-Function
 规则 / Rule:
 
 - 不得删除第 0 节。
-- 不得把 MF-0000 混入普通 Dxxx / Axxx 函数编号。
+- 不得把 [MF-0000](docs/zh/functions/meta/MF-0000.md) 混入普通 Dxxx / Axxx 函数编号。
 - 普通函数数与元函数数分开统计。
 - 所有同步、重建、渲染、校验流程都必须保留第 0 节入口。
 
@@ -193,8 +208,8 @@ English: If the content is a testable future judgment beyond functions, cases, a
 
 English: Curated discoveries and curated predictions must pass an academic novelty check before entering the formal list. Both discoveries and predictions must be numbered, and active curated entries must have `academic_novelty.status = passed`.
 
-- 发现编号 / Discovery ID:`DISC-0001`, `DISC-0002`, ...
-- 预测编号 / Prediction ID:`PRED-0001`, `PRED-0002`, ...
+- 发现编号 / Discovery ID:[DISC-0001](docs/zh/discoveries/items/DISC-0001.md), [DISC-0002](docs/zh/discoveries/items/DISC-0002.md), ...
+- 预测编号 / Prediction ID:[PRED-0001](docs/zh/predictions/items/PRED-0001.md), [PRED-0002](docs/zh/predictions/items/PRED-0002.md), ...
 - 如果学术搜索找不到相同发现、相同解释或相同预测,才可进入正式列表。
 - 如果是对已有答案的新解释,必须明确写出新增解释链条,而不是把旧答案改名。
 - 如果 novelty 只查到相似项但无法确认,状态必须保留为 `pending` / `inconclusive`,不能伪装成 `passed`。

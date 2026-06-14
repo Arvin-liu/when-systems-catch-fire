@@ -3,7 +3,7 @@
 ## Summary
 
 - source_status: found
-- meta_function_id: MF-0000
+- meta_function_id: [MF-0000](../../docs/zh/functions/meta/MF-0000.md)
 - meta_function_page: `docs/zh/functions/meta/MF-0000.md`
 - meta_functions_json: `data/functions/meta-functions.json`
 - meta_functions_jsonl: `data/functions/meta-functions.jsonl`

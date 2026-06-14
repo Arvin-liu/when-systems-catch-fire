@@ -36,6 +36,6 @@
 ## 结论
 
 - 物理学七团乌云已命中本地原文，不再使用气团/雾云作为主检索词。
-- ANS-0005 作为 physics lead 加入新答案系统，但仍保持 answer_pending_novelty_review。
+- [ANS-0005](../../docs/zh/answers/items/ANS-0005.md) 作为 physics lead 加入新答案系统，但仍保持 answer_pending_novelty_review。
 - 未伪造 academic_novelty.passed。
 - 当前未启动长期心跳。

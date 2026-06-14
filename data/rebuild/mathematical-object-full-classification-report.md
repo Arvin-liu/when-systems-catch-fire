@@ -4,8 +4,8 @@
 - Scanned total: 37
 - Classification items: 37
 - Function candidates: 0
-- Effect candidates: 36 (EFF-0001 to EFF-0036, all from answer_new_effect_candidate)
-- Analytic solution candidates: 1 (T20)
+- Effect candidates: 36 ([EFF-0001](../../docs/zh/effects/items/EFF-0001.md) to [EFF-0036](../../docs/zh/effects/items/EFF-0036.md), all from answer_new_effect_candidate)
+- Analytic solution candidates: 1 ([T20](../../docs/zh/functions/items/T20.md))
 - Discovery candidates: 0
 - Prediction candidates: 0
 - Answer candidates: 0

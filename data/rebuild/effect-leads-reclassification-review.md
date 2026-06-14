@@ -1,6 +1,6 @@
 # Effect Leads Reclassification Review
 
-- Reviewed lead effects: 36 (EFF-0001 to EFF-0036)
+- Reviewed lead effects: 36 ([EFF-0001](../../docs/zh/effects/items/EFF-0001.md) to [EFF-0036](../../docs/zh/effects/items/EFF-0036.md))
 - Default accepted as effect: false (each individually reviewed)
 - Confirmed possible effects: 36
 - Suspected misclassified: 0

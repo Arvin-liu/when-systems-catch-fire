@@ -494,7 +494,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T1})=1 ∧ J_n^-(F_{T1})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T1`
+- 依赖 / Depends on: [T1](functions/items/T1.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T1} and codomain Y_{T1}.
   - 2. Normalize the source expression as F_{T1}: X_{T1}->Y_{T1}.
@@ -511,7 +511,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T1`
+- 依赖 / Depends on: [T1](functions/items/T1.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -537,7 +537,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T2})=1 ∧ J_n^-(F_{T2})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T2`
+- 依赖 / Depends on: [T2](functions/items/T2.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T2} and codomain Y_{T2}.
   - 2. Normalize the source expression as F_{T2}: X_{T2}->Y_{T2}.
@@ -554,7 +554,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T2`
+- 依赖 / Depends on: [T2](functions/items/T2.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -580,7 +580,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T3})=1 ∧ J_n^-(F_{T3})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T3`
+- 依赖 / Depends on: [T3](functions/items/T3.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T3} and codomain Y_{T3}.
   - 2. Normalize the source expression as F_{T3}: X_{T3}->Y_{T3}.
@@ -597,7 +597,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T3`
+- 依赖 / Depends on: [T3](functions/items/T3.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -623,7 +623,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T4})=1 ∧ J_n^-(F_{T4})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T4`
+- 依赖 / Depends on: [T4](functions/items/T4.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T4} and codomain Y_{T4}.
   - 2. Normalize the source expression as F_{T4}: X_{T4}->Y_{T4}.
@@ -640,7 +640,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T4`
+- 依赖 / Depends on: [T4](functions/items/T4.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -666,7 +666,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T5})=1 ∧ J_n^-(F_{T5})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T5`
+- 依赖 / Depends on: [T5](functions/items/T5.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T5} and codomain Y_{T5}.
   - 2. Normalize the source expression as F_{T5}: X_{T5}->Y_{T5}.
@@ -683,7 +683,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T5`
+- 依赖 / Depends on: [T5](functions/items/T5.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -709,7 +709,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T6})=1 ∧ J_n^-(F_{T6})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T6`
+- 依赖 / Depends on: [T6](functions/items/T6.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T6} and codomain Y_{T6}.
   - 2. Normalize the source expression as F_{T6}: X_{T6}->Y_{T6}.
@@ -726,7 +726,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T6`
+- 依赖 / Depends on: [T6](functions/items/T6.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -752,7 +752,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T7})=1 ∧ J_n^-(F_{T7})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T7`
+- 依赖 / Depends on: [T7](functions/items/T7.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T7} and codomain Y_{T7}.
   - 2. Normalize the source expression as F_{T7}: X_{T7}->Y_{T7}.
@@ -769,7 +769,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T7`
+- 依赖 / Depends on: [T7](functions/items/T7.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -795,7 +795,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T8})=1 ∧ J_n^-(F_{T8})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T8`
+- 依赖 / Depends on: [T8](functions/items/T8.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T8} and codomain Y_{T8}.
   - 2. Normalize the source expression as F_{T8}: X_{T8}->Y_{T8}.
@@ -812,7 +812,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T8`
+- 依赖 / Depends on: [T8](functions/items/T8.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -838,7 +838,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T9})=1 ∧ J_n^-(F_{T9})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T9`
+- 依赖 / Depends on: [T9](functions/items/T9.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T9} and codomain Y_{T9}.
   - 2. Normalize the source expression as F_{T9}: X_{T9}->Y_{T9}.
@@ -855,7 +855,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T9`
+- 依赖 / Depends on: [T9](functions/items/T9.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -881,7 +881,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T10})=1 ∧ J_n^-(F_{T10})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T10`
+- 依赖 / Depends on: [T10](functions/items/T10.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T10} and codomain Y_{T10}.
   - 2. Normalize the source expression as F_{T10}: X_{T10}->Y_{T10}.
@@ -898,7 +898,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T10`
+- 依赖 / Depends on: [T10](functions/items/T10.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -926,7 +926,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T11})=1 ∧ J_n^-(F_{T11})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T11`
+- 依赖 / Depends on: [T11](functions/items/T11.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T11} and codomain Y_{T11}.
   - 2. Normalize the source expression as F_{T11}: X_{T11}->Y_{T11}.
@@ -943,7 +943,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T11`
+- 依赖 / Depends on: [T11](functions/items/T11.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -969,7 +969,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T12})=1 ∧ J_n^-(F_{T12})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T12`
+- 依赖 / Depends on: [T12](functions/items/T12.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T12} and codomain Y_{T12}.
   - 2. Normalize the source expression as F_{T12}: X_{T12}->Y_{T12}.
@@ -986,7 +986,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T12`
+- 依赖 / Depends on: [T12](functions/items/T12.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1012,7 +1012,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T13})=1 ∧ J_n^-(F_{T13})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T13`
+- 依赖 / Depends on: [T13](functions/items/T13.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T13} and codomain Y_{T13}.
   - 2. Normalize the source expression as F_{T13}: X_{T13}->Y_{T13}.
@@ -1029,7 +1029,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T13`
+- 依赖 / Depends on: [T13](functions/items/T13.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1055,7 +1055,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T14})=1 ∧ J_n^-(F_{T14})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T14`
+- 依赖 / Depends on: [T14](functions/items/T14.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T14} and codomain Y_{T14}.
   - 2. Normalize the source expression as F_{T14}: X_{T14}->Y_{T14}.
@@ -1072,7 +1072,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T14`
+- 依赖 / Depends on: [T14](functions/items/T14.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1098,7 +1098,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T15})=1 ∧ J_n^-(F_{T15})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T15`
+- 依赖 / Depends on: [T15](functions/items/T15.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T15} and codomain Y_{T15}.
   - 2. Normalize the source expression as F_{T15}: X_{T15}->Y_{T15}.
@@ -1115,7 +1115,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T15`
+- 依赖 / Depends on: [T15](functions/items/T15.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1141,7 +1141,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T16})=1 ∧ J_n^-(F_{T16})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T16`
+- 依赖 / Depends on: [T16](functions/items/T16.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T16} and codomain Y_{T16}.
   - 2. Normalize the source expression as F_{T16}: X_{T16}->Y_{T16}.
@@ -1158,7 +1158,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T16`
+- 依赖 / Depends on: [T16](functions/items/T16.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1184,7 +1184,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T17})=1 ∧ J_n^-(F_{T17})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T17`
+- 依赖 / Depends on: [T17](functions/items/T17.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T17} and codomain Y_{T17}.
   - 2. Normalize the source expression as F_{T17}: X_{T17}->Y_{T17}.
@@ -1201,7 +1201,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T17`
+- 依赖 / Depends on: [T17](functions/items/T17.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1227,7 +1227,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T18})=1 ∧ J_n^-(F_{T18})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T18`
+- 依赖 / Depends on: [T18](functions/items/T18.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T18} and codomain Y_{T18}.
   - 2. Normalize the source expression as F_{T18}: X_{T18}->Y_{T18}.
@@ -1244,7 +1244,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T18`
+- 依赖 / Depends on: [T18](functions/items/T18.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1270,7 +1270,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T19})=1 ∧ J_n^-(F_{T19})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T19`
+- 依赖 / Depends on: [T19](functions/items/T19.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T19} and codomain Y_{T19}.
   - 2. Normalize the source expression as F_{T19}: X_{T19}->Y_{T19}.
@@ -1287,7 +1287,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T19`
+- 依赖 / Depends on: [T19](functions/items/T19.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1313,7 +1313,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T20})=1 ∧ J_n^-(F_{T20})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T20`
+- 依赖 / Depends on: [T20](functions/items/T20.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T20} and codomain Y_{T20}.
   - 2. Normalize the source expression as F_{T20}: X_{T20}->Y_{T20}.
@@ -1330,7 +1330,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T20`
+- 依赖 / Depends on: [T20](functions/items/T20.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1358,7 +1358,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T21})=1 ∧ J_n^-(F_{T21})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T21`
+- 依赖 / Depends on: [T21](functions/items/T21.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T21} and codomain Y_{T21}.
   - 2. Normalize the source expression as F_{T21}: X_{T21}->Y_{T21}.
@@ -1375,7 +1375,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T21`
+- 依赖 / Depends on: [T21](functions/items/T21.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1401,7 +1401,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T22})=1 ∧ J_n^-(F_{T22})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T22`
+- 依赖 / Depends on: [T22](functions/items/T22.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T22} and codomain Y_{T22}.
   - 2. Normalize the source expression as F_{T22}: X_{T22}->Y_{T22}.
@@ -1418,7 +1418,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T22`
+- 依赖 / Depends on: [T22](functions/items/T22.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1429,22 +1429,22 @@ English: Rule-based English rendering pending human review.
 ### [T23｜Φ跨域稳定性定理 / Φcross-domain stability theorem](functions/items/T23.md)
 
 **函数内容 / Function Content**
-中文：Stability(Φ)=∃μ*:Φ(μ*)=min。D224是T23的证明——T23说"极小点存在"，D224给出了存在性的充分条件（A+B型共存）。T23是更弱的陈述，D224是更强的定理。
+中文：Stability(Φ)=∃μ*:Φ(μ*)=min。[D224](functions/items/D224.md)是[T23](functions/items/T23.md)的证明——[T23](functions/items/T23.md)说"极小点存在"，[D224](functions/items/D224.md)给出了存在性的充分条件（A+B型共存）。[T23](functions/items/T23.md)是更弱的陈述，[D224](functions/items/D224.md)是更强的定理。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 Stability(Φ)=∃μ*:Φ(μ*)=min。D224是T23的证明——T23说"极小点存在"，D224给出了存在性的充分条件（A+B型共存）。T23是更弱的陈述，D224是更强的定理。 描述 跨域稳定性定理。
+中文：该函数通过 Stability(Φ)=∃μ*:Φ(μ*)=min。[D224](functions/items/D224.md)是[T23](functions/items/T23.md)的证明——[T23](functions/items/T23.md)说"极小点存在"，[D224](functions/items/D224.md)给出了存在性的充分条件（A+B型共存）。[T23](functions/items/T23.md)是更弱的陈述，[D224](functions/items/D224.md)是更强的定理。 描述 跨域稳定性定理。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{T23}`
 - 定义域 / Domain: `X_{T23}`
 - 值域 / Codomain: `Y_{T23}`
-- 数学表达 / Expression: `F_{T23}(x) := Stability(Φ)=∃μ*:Φ(μ*)=min。D224是T23的证明——T23说"极小点存在"，D224给出了存在性的充分条件（A+B型共存）。T23是更弱的陈述，D224是更强的定理。`
+- 数学表达 / Expression: `F_{T23}(x) := Stability(Φ)=∃μ*:Φ(μ*)=min。[D224](functions/items/D224.md)是[T23](functions/items/T23.md)的证明——[T23](functions/items/T23.md)说"极小点存在"，[D224](functions/items/D224.md)给出了存在性的充分条件（A+B型共存）。[T23](functions/items/T23.md)是更弱的陈述，[D224](functions/items/D224.md)是更强的定理。`
 - 有效条件 / Validity: `J_n^+(F_{T23})=1 ∧ J_n^-(F_{T23})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T23`
+- 依赖 / Depends on: [T23](functions/items/T23.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T23} and codomain Y_{T23}.
   - 2. Normalize the source expression as F_{T23}: X_{T23}->Y_{T23}.
@@ -1461,7 +1461,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T23`
+- 依赖 / Depends on: [T23](functions/items/T23.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1487,7 +1487,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T24})=1 ∧ J_n^-(F_{T24})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T24`
+- 依赖 / Depends on: [T24](functions/items/T24.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T24} and codomain Y_{T24}.
   - 2. Normalize the source expression as F_{T24}: X_{T24}->Y_{T24}.
@@ -1504,7 +1504,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T24`
+- 依赖 / Depends on: [T24](functions/items/T24.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1530,7 +1530,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T25})=1 ∧ J_n^-(F_{T25})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T25`
+- 依赖 / Depends on: [T25](functions/items/T25.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T25} and codomain Y_{T25}.
   - 2. Normalize the source expression as F_{T25}: X_{T25}->Y_{T25}.
@@ -1547,7 +1547,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T25`
+- 依赖 / Depends on: [T25](functions/items/T25.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1573,7 +1573,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T26})=1 ∧ J_n^-(F_{T26})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T26`
+- 依赖 / Depends on: [T26](functions/items/T26.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T26} and codomain Y_{T26}.
   - 2. Normalize the source expression as F_{T26}: X_{T26}->Y_{T26}.
@@ -1590,7 +1590,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T26`
+- 依赖 / Depends on: [T26](functions/items/T26.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1616,7 +1616,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T27})=1 ∧ J_n^-(F_{T27})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T27`
+- 依赖 / Depends on: [T27](functions/items/T27.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T27} and codomain Y_{T27}.
   - 2. Normalize the source expression as F_{T27}: X_{T27}->Y_{T27}.
@@ -1633,7 +1633,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T27`
+- 依赖 / Depends on: [T27](functions/items/T27.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1659,7 +1659,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T28})=1 ∧ J_n^-(F_{T28})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T28`
+- 依赖 / Depends on: [T28](functions/items/T28.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T28} and codomain Y_{T28}.
   - 2. Normalize the source expression as F_{T28}: X_{T28}->Y_{T28}.
@@ -1676,7 +1676,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T28`
+- 依赖 / Depends on: [T28](functions/items/T28.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1702,7 +1702,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T29})=1 ∧ J_n^-(F_{T29})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T29`
+- 依赖 / Depends on: [T29](functions/items/T29.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T29} and codomain Y_{T29}.
   - 2. Normalize the source expression as F_{T29}: X_{T29}->Y_{T29}.
@@ -1719,7 +1719,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T29`
+- 依赖 / Depends on: [T29](functions/items/T29.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1745,7 +1745,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T30})=1 ∧ J_n^-(F_{T30})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T30`
+- 依赖 / Depends on: [T30](functions/items/T30.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T30} and codomain Y_{T30}.
   - 2. Normalize the source expression as F_{T30}: X_{T30}->Y_{T30}.
@@ -1762,7 +1762,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T30`
+- 依赖 / Depends on: [T30](functions/items/T30.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1788,7 +1788,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T31})=1 ∧ J_n^-(F_{T31})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T31`
+- 依赖 / Depends on: [T31](functions/items/T31.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T31} and codomain Y_{T31}.
   - 2. Normalize the source expression as F_{T31}: X_{T31}->Y_{T31}.
@@ -1805,7 +1805,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T31`
+- 依赖 / Depends on: [T31](functions/items/T31.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1834,7 +1834,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T32})=1 ∧ J_n^-(F_{T32})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T32`
+- 依赖 / Depends on: [T32](functions/items/T32.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T32} and codomain Y_{T32}.
   - 2. Normalize the source expression as F_{T32}: X_{T32}->Y_{T32}.
@@ -1851,7 +1851,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T32`
+- 依赖 / Depends on: [T32](functions/items/T32.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1862,11 +1862,11 @@ English: Rule-based English rendering pending human review.
 ### [T33｜A-B型门控面冲突函数 / A-B type gate-surface conflict function](functions/items/T33.md)
 
 **函数内容 / Function Content**
-中文：D228已修正T33，从"冲突"升级为"必要张力"。D225是T33修正的数学论证。已对撞，无新发现。
+中文：[D228](functions/items/D228.md)已修正[T33](functions/items/T33.md)，从"冲突"升级为"必要张力"。[D225](functions/items/D225.md)是[T33](functions/items/T33.md)修正的数学论证。已对撞，无新发现。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D228已修正T33，从"冲突"升级为"必要张力"。D225是T33修正的数学论证。已对撞，无新发现。 描述 -B型门控面冲突函数。
+中文：该函数通过 [D228](functions/items/D228.md)已修正[T33](functions/items/T33.md)，从"冲突"升级为"必要张力"。[D225](functions/items/D225.md)是[T33](functions/items/T33.md)修正的数学论证。已对撞，无新发现。 描述 -B型门控面冲突函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -1877,7 +1877,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T33})=1 ∧ J_n^-(F_{T33})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T33`
+- 依赖 / Depends on: [T33](functions/items/T33.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T33} and codomain Y_{T33}.
   - 2. Normalize the source expression as F_{T33}: X_{T33}->Y_{T33}.
@@ -1894,7 +1894,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T33`
+- 依赖 / Depends on: [T33](functions/items/T33.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1905,22 +1905,22 @@ English: Rule-based English rendering pending human review.
 ### [T34｜量子引力Φ框架函数 / quantum-gravity Phi framework function](functions/items/T34.md)
 
 **函数内容 / Function Content**
-中文：T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln(M_Planck/μ)在μ=M_Planck处发散——B型项太强了，把极小点推走了。
+中文：[T34](functions/items/T34.md)说Φ_QG在M_Planck附近无稳定极小点。[D225](functions/items/D225.md)说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln(M_Planck/μ)在μ=M_Planck处发散——B型项太强了，把极小点推走了。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln(M_Planck/μ)在μ=M_Planck处发散——B型项太强了，把极小点推走了。 描述 量子引力Φ框架函数。
+中文：该函数通过 [T34](functions/items/T34.md)说Φ_QG在M_Planck附近无稳定极小点。[D225](functions/items/D225.md)说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln(M_Planck/μ)在μ=M_Planck处发散——B型项太强了，把极小点推走了。 描述 量子引力Φ框架函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{T34}`
 - 定义域 / Domain: `X_{T34}`
 - 值域 / Codomain: `Y_{T34}`
-- 数学表达 / Expression: `F_{T34}(x) := T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln(M_Planck/μ)在μ=M_Planck处发散——B型项太强了，把极小点推走了。`
+- 数学表达 / Expression: `F_{T34}(x) := [T34](functions/items/T34.md)说Φ_QG在M_Planck附近无稳定极小点。[D225](functions/items/D225.md)说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln(M_Planck/μ)在μ=M_Planck处发散——B型项太强了，把极小点推走了。`
 - 有效条件 / Validity: `J_n^+(F_{T34})=1 ∧ J_n^-(F_{T34})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T34`
+- 依赖 / Depends on: [T34](functions/items/T34.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T34} and codomain Y_{T34}.
   - 2. Normalize the source expression as F_{T34}: X_{T34}->Y_{T34}.
@@ -1937,7 +1937,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T34`
+- 依赖 / Depends on: [T34](functions/items/T34.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -1963,7 +1963,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T35})=1 ∧ J_n^-(F_{T35})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T35`
+- 依赖 / Depends on: [T35](functions/items/T35.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T35} and codomain Y_{T35}.
   - 2. Normalize the source expression as F_{T35}: X_{T35}->Y_{T35}.
@@ -1980,7 +1980,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T35`
+- 依赖 / Depends on: [T35](functions/items/T35.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2008,7 +2008,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T36})=1 ∧ J_n^-(F_{T36})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T36`
+- 依赖 / Depends on: [T36](functions/items/T36.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T36} and codomain Y_{T36}.
   - 2. Normalize the source expression as F_{T36}: X_{T36}->Y_{T36}.
@@ -2025,7 +2025,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T36`
+- 依赖 / Depends on: [T36](functions/items/T36.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2036,22 +2036,22 @@ English: Rule-based English rendering pending human review.
 ### [T37｜Φ_QG极小点精确位置](functions/items/T37.md)
 
 **函数内容 / Function Content**
-中文：μ≈1.26×10¹⁶ GeV≈Λ_GUT。D231说极小点被B型项从M_Planck推到更低能标。T37给出了精确位置。
+中文：μ≈1.26×10¹⁶ GeV≈Λ_GUT。[D231](functions/items/D231.md)说极小点被B型项从M_Planck推到更低能标。[T37](functions/items/T37.md)给出了精确位置。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 μ≈1.26×10¹⁶ GeV≈Λ_GUT。D231说极小点被B型项从M_Planck推到更低能标。T37给出了精确位置。 描述 极小点精确位置。
+中文：该函数通过 μ≈1.26×10¹⁶ GeV≈Λ_GUT。[D231](functions/items/D231.md)说极小点被B型项从M_Planck推到更低能标。[T37](functions/items/T37.md)给出了精确位置。 描述 极小点精确位置。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{T37}`
 - 定义域 / Domain: `X_{T37}`
 - 值域 / Codomain: `Y_{T37}`
-- 数学表达 / Expression: `F_{T37}(x) := μ≈1.26×10¹⁶ GeV≈Λ_GUT。D231说极小点被B型项从M_Planck推到更低能标。T37给出了精确位置。`
+- 数学表达 / Expression: `F_{T37}(x) := μ≈1.26×10¹⁶ GeV≈Λ_GUT。[D231](functions/items/D231.md)说极小点被B型项从M_Planck推到更低能标。[T37](functions/items/T37.md)给出了精确位置。`
 - 有效条件 / Validity: `J_n^+(F_{T37})=1 ∧ J_n^-(F_{T37})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T37`
+- 依赖 / Depends on: [T37](functions/items/T37.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T37} and codomain Y_{T37}.
   - 2. Normalize the source expression as F_{T37}: X_{T37}->Y_{T37}.
@@ -2068,7 +2068,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T37`
+- 依赖 / Depends on: [T37](functions/items/T37.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2096,7 +2096,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{T38})=1 ∧ J_n^-(F_{T38})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T38`
+- 依赖 / Depends on: [T38](functions/items/T38.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T38} and codomain Y_{T38}.
   - 2. Normalize the source expression as F_{T38}: X_{T38}->Y_{T38}.
@@ -2113,7 +2113,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T38`
+- 依赖 / Depends on: [T38](functions/items/T38.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2124,22 +2124,22 @@ English: Rule-based English rendering pending human review.
 ### [T39｜Φ跨域统一定理（D224升级）](functions/items/T39.md)
 
 **函数内容 / Function Content**
-中文：∀域D，若∃n≥2个门控面{Λᵢ}且至少一个A型一个B型，则Φ(μ)=Σᵢ sᵢ/ln(μ/Λᵢ)必然存在极小点μ*。极小点由Σᵢ sᵢ/ln²(μ/Λᵢ)=0唯一确定。纯A型域无极小点。T17标注为T39在物理域(n=3,s=(+1,+1,-1))的实例。
+中文：∀域D，若∃n≥2个门控面{Λᵢ}且至少一个A型一个B型，则Φ(μ)=Σᵢ sᵢ/ln(μ/Λᵢ)必然存在极小点μ*。极小点由Σᵢ sᵢ/ln²(μ/Λᵢ)=0唯一确定。纯A型域无极小点。[T17](functions/items/T17.md)标注为[T39](functions/items/T39.md)在物理域(n=3,s=(+1,+1,-1))的实例。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 ∀域D，若∃n≥2个门控面{Λᵢ}且至少一个A型一个B型，则Φ(μ)=Σᵢ sᵢ/ln(μ/Λᵢ)必然存在极小点μ*。极小点由Σᵢ sᵢ/ln²(μ/Λᵢ)=0唯一确定。纯A型域无极小点。T17标注为T39在物理域(n=3,s=(+1,+1,-1))的实例。 描述 跨域统一定理（D224升级）。
+中文：该函数通过 ∀域D，若∃n≥2个门控面{Λᵢ}且至少一个A型一个B型，则Φ(μ)=Σᵢ sᵢ/ln(μ/Λᵢ)必然存在极小点μ*。极小点由Σᵢ sᵢ/ln²(μ/Λᵢ)=0唯一确定。纯A型域无极小点。[T17](functions/items/T17.md)标注为[T39](functions/items/T39.md)在物理域(n=3,s=(+1,+1,-1))的实例。 描述 跨域统一定理（[D224](functions/items/D224.md)升级）。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{T39}`
 - 定义域 / Domain: `X_{T39}`
 - 值域 / Codomain: `Y_{T39}`
-- 数学表达 / Expression: `F_{T39}(x) := ∀域D，若∃n≥2个门控面{Λᵢ}且至少一个A型一个B型，则Φ(μ)=Σᵢ sᵢ/ln(μ/Λᵢ)必然存在极小点μ*。极小点由Σᵢ sᵢ/ln²(μ/Λᵢ)=0唯一确定。纯A型域无极小点。T17标注为T39在物理域(n=3,s=(+1,+1,-1))的实例。`
+- 数学表达 / Expression: `F_{T39}(x) := ∀域D，若∃n≥2个门控面{Λᵢ}且至少一个A型一个B型，则Φ(μ)=Σᵢ sᵢ/ln(μ/Λᵢ)必然存在极小点μ*。极小点由Σᵢ sᵢ/ln²(μ/Λᵢ)=0唯一确定。纯A型域无极小点。[T17](functions/items/T17.md)标注为[T39](functions/items/T39.md)在物理域(n=3,s=(+1,+1,-1))的实例。`
 - 有效条件 / Validity: `J_n^+(F_{T39})=1 ∧ J_n^-(F_{T39})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T39`
+- 依赖 / Depends on: [T39](functions/items/T39.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{T39} and codomain Y_{T39}.
   - 2. Normalize the source expression as F_{T39}: X_{T39}->Y_{T39}.
@@ -2156,7 +2156,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `T39`
+- 依赖 / Depends on: [T39](functions/items/T39.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2188,7 +2188,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D1})=1 ∧ J_n^-(F_{D1})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D1`
+- 依赖 / Depends on: [D1](functions/items/D1.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D1} and codomain Y_{D1}.
   - 2. Normalize the source expression as F_{D1}: X_{D1}->Y_{D1}.
@@ -2205,7 +2205,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D1`
+- 依赖 / Depends on: [D1](functions/items/D1.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2231,7 +2231,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D2})=1 ∧ J_n^-(F_{D2})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D2`
+- 依赖 / Depends on: [D2](functions/items/D2.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D2} and codomain Y_{D2}.
   - 2. Normalize the source expression as F_{D2}: X_{D2}->Y_{D2}.
@@ -2248,7 +2248,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D2`
+- 依赖 / Depends on: [D2](functions/items/D2.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2274,7 +2274,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D3})=1 ∧ J_n^-(F_{D3})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D3`
+- 依赖 / Depends on: [D3](functions/items/D3.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D3} and codomain Y_{D3}.
   - 2. Normalize the source expression as F_{D3}: X_{D3}->Y_{D3}.
@@ -2291,7 +2291,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D3`
+- 依赖 / Depends on: [D3](functions/items/D3.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2317,7 +2317,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D4})=1 ∧ J_n^-(F_{D4})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D4`
+- 依赖 / Depends on: [D4](functions/items/D4.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D4} and codomain Y_{D4}.
   - 2. Normalize the source expression as F_{D4}: X_{D4}->Y_{D4}.
@@ -2334,7 +2334,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D4`
+- 依赖 / Depends on: [D4](functions/items/D4.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2360,7 +2360,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D5})=1 ∧ J_n^-(F_{D5})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D5`
+- 依赖 / Depends on: [D5](functions/items/D5.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D5} and codomain Y_{D5}.
   - 2. Normalize the source expression as F_{D5}: X_{D5}->Y_{D5}.
@@ -2377,7 +2377,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D5`
+- 依赖 / Depends on: [D5](functions/items/D5.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2403,7 +2403,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D6})=1 ∧ J_n^-(F_{D6})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D6`
+- 依赖 / Depends on: [D6](functions/items/D6.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D6} and codomain Y_{D6}.
   - 2. Normalize the source expression as F_{D6}: X_{D6}->Y_{D6}.
@@ -2420,7 +2420,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D6`
+- 依赖 / Depends on: [D6](functions/items/D6.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2446,7 +2446,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D7})=1 ∧ J_n^-(F_{D7})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D7`
+- 依赖 / Depends on: [D7](functions/items/D7.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D7} and codomain Y_{D7}.
   - 2. Normalize the source expression as F_{D7}: X_{D7}->Y_{D7}.
@@ -2463,7 +2463,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D7`
+- 依赖 / Depends on: [D7](functions/items/D7.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2489,7 +2489,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D8})=1 ∧ J_n^-(F_{D8})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D8`
+- 依赖 / Depends on: [D8](functions/items/D8.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D8} and codomain Y_{D8}.
   - 2. Normalize the source expression as F_{D8}: X_{D8}->Y_{D8}.
@@ -2506,7 +2506,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D8`
+- 依赖 / Depends on: [D8](functions/items/D8.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2532,7 +2532,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D9})=1 ∧ J_n^-(F_{D9})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D9`
+- 依赖 / Depends on: [D9](functions/items/D9.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D9} and codomain Y_{D9}.
   - 2. Normalize the source expression as F_{D9}: X_{D9}->Y_{D9}.
@@ -2549,7 +2549,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D9`
+- 依赖 / Depends on: [D9](functions/items/D9.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2575,7 +2575,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D10})=1 ∧ J_n^-(F_{D10})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D10`
+- 依赖 / Depends on: [D10](functions/items/D10.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D10} and codomain Y_{D10}.
   - 2. Normalize the source expression as F_{D10}: X_{D10}->Y_{D10}.
@@ -2592,7 +2592,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D10`
+- 依赖 / Depends on: [D10](functions/items/D10.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2618,7 +2618,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D11})=1 ∧ J_n^-(F_{D11})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D11`
+- 依赖 / Depends on: [D11](functions/items/D11.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D11} and codomain Y_{D11}.
   - 2. Normalize the source expression as F_{D11}: X_{D11}->Y_{D11}.
@@ -2635,7 +2635,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D11`
+- 依赖 / Depends on: [D11](functions/items/D11.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2661,7 +2661,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D12})=1 ∧ J_n^-(F_{D12})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D12`
+- 依赖 / Depends on: [D12](functions/items/D12.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D12} and codomain Y_{D12}.
   - 2. Normalize the source expression as F_{D12}: X_{D12}->Y_{D12}.
@@ -2678,7 +2678,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D12`
+- 依赖 / Depends on: [D12](functions/items/D12.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2704,7 +2704,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D13})=1 ∧ J_n^-(F_{D13})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D13`
+- 依赖 / Depends on: [D13](functions/items/D13.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D13} and codomain Y_{D13}.
   - 2. Normalize the source expression as F_{D13}: X_{D13}->Y_{D13}.
@@ -2721,7 +2721,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D13`
+- 依赖 / Depends on: [D13](functions/items/D13.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2748,7 +2748,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D14})=1 ∧ J_n^-(F_{D14})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D14`
+- 依赖 / Depends on: [D14](functions/items/D14.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D14} and codomain Y_{D14}.
   - 2. Normalize the source expression as F_{D14}: X_{D14}->Y_{D14}.
@@ -2765,7 +2765,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D14`
+- 依赖 / Depends on: [D14](functions/items/D14.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2791,7 +2791,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D15})=1 ∧ J_n^-(F_{D15})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D15`
+- 依赖 / Depends on: [D15](functions/items/D15.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D15} and codomain Y_{D15}.
   - 2. Normalize the source expression as F_{D15}: X_{D15}->Y_{D15}.
@@ -2808,7 +2808,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D15`
+- 依赖 / Depends on: [D15](functions/items/D15.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2834,7 +2834,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D16})=1 ∧ J_n^-(F_{D16})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D16`
+- 依赖 / Depends on: [D16](functions/items/D16.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D16} and codomain Y_{D16}.
   - 2. Normalize the source expression as F_{D16}: X_{D16}->Y_{D16}.
@@ -2851,7 +2851,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D16`
+- 依赖 / Depends on: [D16](functions/items/D16.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2877,7 +2877,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D17})=1 ∧ J_n^-(F_{D17})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D17`
+- 依赖 / Depends on: [D17](functions/items/D17.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D17} and codomain Y_{D17}.
   - 2. Normalize the source expression as F_{D17}: X_{D17}->Y_{D17}.
@@ -2894,7 +2894,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D17`
+- 依赖 / Depends on: [D17](functions/items/D17.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2920,7 +2920,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D18})=1 ∧ J_n^-(F_{D18})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D18`
+- 依赖 / Depends on: [D18](functions/items/D18.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D18} and codomain Y_{D18}.
   - 2. Normalize the source expression as F_{D18}: X_{D18}->Y_{D18}.
@@ -2937,7 +2937,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D18`
+- 依赖 / Depends on: [D18](functions/items/D18.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -2963,7 +2963,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D19})=1 ∧ J_n^-(F_{D19})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D19`
+- 依赖 / Depends on: [D19](functions/items/D19.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D19} and codomain Y_{D19}.
   - 2. Normalize the source expression as F_{D19}: X_{D19}->Y_{D19}.
@@ -2980,7 +2980,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D19`
+- 依赖 / Depends on: [D19](functions/items/D19.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3006,7 +3006,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D20})=1 ∧ J_n^-(F_{D20})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D20`
+- 依赖 / Depends on: [D20](functions/items/D20.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D20} and codomain Y_{D20}.
   - 2. Normalize the source expression as F_{D20}: X_{D20}->Y_{D20}.
@@ -3023,7 +3023,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D20`
+- 依赖 / Depends on: [D20](functions/items/D20.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3049,7 +3049,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D21})=1 ∧ J_n^-(F_{D21})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D21`
+- 依赖 / Depends on: [D21](functions/items/D21.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D21} and codomain Y_{D21}.
   - 2. Normalize the source expression as F_{D21}: X_{D21}->Y_{D21}.
@@ -3066,7 +3066,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D21`
+- 依赖 / Depends on: [D21](functions/items/D21.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3092,7 +3092,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D22})=1 ∧ J_n^-(F_{D22})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D22`
+- 依赖 / Depends on: [D22](functions/items/D22.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D22} and codomain Y_{D22}.
   - 2. Normalize the source expression as F_{D22}: X_{D22}->Y_{D22}.
@@ -3109,7 +3109,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D22`
+- 依赖 / Depends on: [D22](functions/items/D22.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3135,7 +3135,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D23})=1 ∧ J_n^-(F_{D23})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D23`
+- 依赖 / Depends on: [D23](functions/items/D23.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D23} and codomain Y_{D23}.
   - 2. Normalize the source expression as F_{D23}: X_{D23}->Y_{D23}.
@@ -3152,7 +3152,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D23`
+- 依赖 / Depends on: [D23](functions/items/D23.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3178,7 +3178,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D24})=1 ∧ J_n^-(F_{D24})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D24`
+- 依赖 / Depends on: [D24](functions/items/D24.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D24} and codomain Y_{D24}.
   - 2. Normalize the source expression as F_{D24}: X_{D24}->Y_{D24}.
@@ -3195,7 +3195,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D24`
+- 依赖 / Depends on: [D24](functions/items/D24.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3221,7 +3221,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D25})=1 ∧ J_n^-(F_{D25})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D25`
+- 依赖 / Depends on: [D25](functions/items/D25.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D25} and codomain Y_{D25}.
   - 2. Normalize the source expression as F_{D25}: X_{D25}->Y_{D25}.
@@ -3238,7 +3238,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D25`
+- 依赖 / Depends on: [D25](functions/items/D25.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3264,7 +3264,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D26})=1 ∧ J_n^-(F_{D26})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D26`
+- 依赖 / Depends on: [D26](functions/items/D26.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D26} and codomain Y_{D26}.
   - 2. Normalize the source expression as F_{D26}: X_{D26}->Y_{D26}.
@@ -3281,7 +3281,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D26`
+- 依赖 / Depends on: [D26](functions/items/D26.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3307,7 +3307,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D27})=1 ∧ J_n^-(F_{D27})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D27`
+- 依赖 / Depends on: [D27](functions/items/D27.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D27} and codomain Y_{D27}.
   - 2. Normalize the source expression as F_{D27}: X_{D27}->Y_{D27}.
@@ -3324,7 +3324,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D27`
+- 依赖 / Depends on: [D27](functions/items/D27.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3350,7 +3350,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D28})=1 ∧ J_n^-(F_{D28})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D28`
+- 依赖 / Depends on: [D28](functions/items/D28.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D28} and codomain Y_{D28}.
   - 2. Normalize the source expression as F_{D28}: X_{D28}->Y_{D28}.
@@ -3367,7 +3367,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D28`
+- 依赖 / Depends on: [D28](functions/items/D28.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3393,7 +3393,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D29})=1 ∧ J_n^-(F_{D29})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D29`
+- 依赖 / Depends on: [D29](functions/items/D29.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D29} and codomain Y_{D29}.
   - 2. Normalize the source expression as F_{D29}: X_{D29}->Y_{D29}.
@@ -3410,7 +3410,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D29`
+- 依赖 / Depends on: [D29](functions/items/D29.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3436,7 +3436,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D30})=1 ∧ J_n^-(F_{D30})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D30`
+- 依赖 / Depends on: [D30](functions/items/D30.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D30} and codomain Y_{D30}.
   - 2. Normalize the source expression as F_{D30}: X_{D30}->Y_{D30}.
@@ -3453,7 +3453,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D30`
+- 依赖 / Depends on: [D30](functions/items/D30.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3479,7 +3479,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D31})=1 ∧ J_n^-(F_{D31})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D31`
+- 依赖 / Depends on: [D31](functions/items/D31.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D31} and codomain Y_{D31}.
   - 2. Normalize the source expression as F_{D31}: X_{D31}->Y_{D31}.
@@ -3496,7 +3496,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D31`
+- 依赖 / Depends on: [D31](functions/items/D31.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3522,7 +3522,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D32})=1 ∧ J_n^-(F_{D32})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D32`
+- 依赖 / Depends on: [D32](functions/items/D32.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D32} and codomain Y_{D32}.
   - 2. Normalize the source expression as F_{D32}: X_{D32}->Y_{D32}.
@@ -3539,7 +3539,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D32`
+- 依赖 / Depends on: [D32](functions/items/D32.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3567,7 +3567,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D33})=1 ∧ J_n^-(F_{D33})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D33`
+- 依赖 / Depends on: [D33](functions/items/D33.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D33} and codomain Y_{D33}.
   - 2. Normalize the source expression as F_{D33}: X_{D33}->Y_{D33}.
@@ -3584,7 +3584,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D33`
+- 依赖 / Depends on: [D33](functions/items/D33.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3611,7 +3611,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D34})=1 ∧ J_n^-(F_{D34})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D34`
+- 依赖 / Depends on: [D34](functions/items/D34.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D34} and codomain Y_{D34}.
   - 2. Normalize the source expression as F_{D34}: X_{D34}->Y_{D34}.
@@ -3628,7 +3628,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D34`
+- 依赖 / Depends on: [D34](functions/items/D34.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3654,7 +3654,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D35})=1 ∧ J_n^-(F_{D35})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D35`
+- 依赖 / Depends on: [D35](functions/items/D35.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D35} and codomain Y_{D35}.
   - 2. Normalize the source expression as F_{D35}: X_{D35}->Y_{D35}.
@@ -3671,7 +3671,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D35`
+- 依赖 / Depends on: [D35](functions/items/D35.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3697,7 +3697,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D36})=1 ∧ J_n^-(F_{D36})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D36`
+- 依赖 / Depends on: [D36](functions/items/D36.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D36} and codomain Y_{D36}.
   - 2. Normalize the source expression as F_{D36}: X_{D36}->Y_{D36}.
@@ -3714,7 +3714,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D36`
+- 依赖 / Depends on: [D36](functions/items/D36.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3741,7 +3741,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D37})=1 ∧ J_n^-(F_{D37})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D37`
+- 依赖 / Depends on: [D37](functions/items/D37.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D37} and codomain Y_{D37}.
   - 2. Normalize the source expression as F_{D37}: X_{D37}->Y_{D37}.
@@ -3758,7 +3758,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D37`
+- 依赖 / Depends on: [D37](functions/items/D37.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3784,7 +3784,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D38})=1 ∧ J_n^-(F_{D38})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D38`
+- 依赖 / Depends on: [D38](functions/items/D38.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D38} and codomain Y_{D38}.
   - 2. Normalize the source expression as F_{D38}: X_{D38}->Y_{D38}.
@@ -3801,7 +3801,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D38`
+- 依赖 / Depends on: [D38](functions/items/D38.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3827,7 +3827,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D39})=1 ∧ J_n^-(F_{D39})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D39`
+- 依赖 / Depends on: [D39](functions/items/D39.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D39} and codomain Y_{D39}.
   - 2. Normalize the source expression as F_{D39}: X_{D39}->Y_{D39}.
@@ -3844,7 +3844,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D39`
+- 依赖 / Depends on: [D39](functions/items/D39.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3870,7 +3870,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D40})=1 ∧ J_n^-(F_{D40})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D40`
+- 依赖 / Depends on: [D40](functions/items/D40.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D40} and codomain Y_{D40}.
   - 2. Normalize the source expression as F_{D40}: X_{D40}->Y_{D40}.
@@ -3887,7 +3887,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D40`
+- 依赖 / Depends on: [D40](functions/items/D40.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3913,7 +3913,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D41})=1 ∧ J_n^-(F_{D41})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D41`
+- 依赖 / Depends on: [D41](functions/items/D41.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D41} and codomain Y_{D41}.
   - 2. Normalize the source expression as F_{D41}: X_{D41}->Y_{D41}.
@@ -3930,7 +3930,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D41`
+- 依赖 / Depends on: [D41](functions/items/D41.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3956,7 +3956,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D42})=1 ∧ J_n^-(F_{D42})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D42`
+- 依赖 / Depends on: [D42](functions/items/D42.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D42} and codomain Y_{D42}.
   - 2. Normalize the source expression as F_{D42}: X_{D42}->Y_{D42}.
@@ -3973,7 +3973,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D42`
+- 依赖 / Depends on: [D42](functions/items/D42.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -3999,7 +3999,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D43})=1 ∧ J_n^-(F_{D43})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D43`
+- 依赖 / Depends on: [D43](functions/items/D43.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D43} and codomain Y_{D43}.
   - 2. Normalize the source expression as F_{D43}: X_{D43}->Y_{D43}.
@@ -4016,7 +4016,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D43`
+- 依赖 / Depends on: [D43](functions/items/D43.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4042,7 +4042,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D44})=1 ∧ J_n^-(F_{D44})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D44`
+- 依赖 / Depends on: [D44](functions/items/D44.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D44} and codomain Y_{D44}.
   - 2. Normalize the source expression as F_{D44}: X_{D44}->Y_{D44}.
@@ -4059,7 +4059,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D44`
+- 依赖 / Depends on: [D44](functions/items/D44.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4087,7 +4087,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D45})=1 ∧ J_n^-(F_{D45})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D45`
+- 依赖 / Depends on: [D45](functions/items/D45.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D45} and codomain Y_{D45}.
   - 2. Normalize the source expression as F_{D45}: X_{D45}->Y_{D45}.
@@ -4104,7 +4104,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D45`
+- 依赖 / Depends on: [D45](functions/items/D45.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4130,7 +4130,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D46})=1 ∧ J_n^-(F_{D46})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D46`
+- 依赖 / Depends on: [D46](functions/items/D46.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D46} and codomain Y_{D46}.
   - 2. Normalize the source expression as F_{D46}: X_{D46}->Y_{D46}.
@@ -4147,7 +4147,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D46`
+- 依赖 / Depends on: [D46](functions/items/D46.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4173,7 +4173,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D47})=1 ∧ J_n^-(F_{D47})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D47`
+- 依赖 / Depends on: [D47](functions/items/D47.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D47} and codomain Y_{D47}.
   - 2. Normalize the source expression as F_{D47}: X_{D47}->Y_{D47}.
@@ -4190,7 +4190,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D47`
+- 依赖 / Depends on: [D47](functions/items/D47.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4216,7 +4216,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D48})=1 ∧ J_n^-(F_{D48})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D48`
+- 依赖 / Depends on: [D48](functions/items/D48.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D48} and codomain Y_{D48}.
   - 2. Normalize the source expression as F_{D48}: X_{D48}->Y_{D48}.
@@ -4233,7 +4233,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D48`
+- 依赖 / Depends on: [D48](functions/items/D48.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4259,7 +4259,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D49})=1 ∧ J_n^-(F_{D49})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D49`
+- 依赖 / Depends on: [D49](functions/items/D49.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D49} and codomain Y_{D49}.
   - 2. Normalize the source expression as F_{D49}: X_{D49}->Y_{D49}.
@@ -4276,7 +4276,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D49`
+- 依赖 / Depends on: [D49](functions/items/D49.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4302,7 +4302,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D50})=1 ∧ J_n^-(F_{D50})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D50`
+- 依赖 / Depends on: [D50](functions/items/D50.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D50} and codomain Y_{D50}.
   - 2. Normalize the source expression as F_{D50}: X_{D50}->Y_{D50}.
@@ -4319,7 +4319,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D50`
+- 依赖 / Depends on: [D50](functions/items/D50.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4345,7 +4345,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D51})=1 ∧ J_n^-(F_{D51})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D51`
+- 依赖 / Depends on: [D51](functions/items/D51.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D51} and codomain Y_{D51}.
   - 2. Normalize the source expression as F_{D51}: X_{D51}->Y_{D51}.
@@ -4362,7 +4362,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D51`
+- 依赖 / Depends on: [D51](functions/items/D51.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4388,7 +4388,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D52})=1 ∧ J_n^-(F_{D52})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D52`
+- 依赖 / Depends on: [D52](functions/items/D52.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D52} and codomain Y_{D52}.
   - 2. Normalize the source expression as F_{D52}: X_{D52}->Y_{D52}.
@@ -4405,7 +4405,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D52`
+- 依赖 / Depends on: [D52](functions/items/D52.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4431,7 +4431,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D53})=1 ∧ J_n^-(F_{D53})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D53`
+- 依赖 / Depends on: [D53](functions/items/D53.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D53} and codomain Y_{D53}.
   - 2. Normalize the source expression as F_{D53}: X_{D53}->Y_{D53}.
@@ -4448,7 +4448,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D53`
+- 依赖 / Depends on: [D53](functions/items/D53.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4474,7 +4474,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D54})=1 ∧ J_n^-(F_{D54})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D54`
+- 依赖 / Depends on: [D54](functions/items/D54.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D54} and codomain Y_{D54}.
   - 2. Normalize the source expression as F_{D54}: X_{D54}->Y_{D54}.
@@ -4491,7 +4491,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D54`
+- 依赖 / Depends on: [D54](functions/items/D54.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4517,7 +4517,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D55})=1 ∧ J_n^-(F_{D55})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D55`
+- 依赖 / Depends on: [D55](functions/items/D55.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D55} and codomain Y_{D55}.
   - 2. Normalize the source expression as F_{D55}: X_{D55}->Y_{D55}.
@@ -4534,7 +4534,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D55`
+- 依赖 / Depends on: [D55](functions/items/D55.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4562,7 +4562,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D56})=1 ∧ J_n^-(F_{D56})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D56`
+- 依赖 / Depends on: [D56](functions/items/D56.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D56} and codomain Y_{D56}.
   - 2. Normalize the source expression as F_{D56}: X_{D56}->Y_{D56}.
@@ -4579,7 +4579,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D56`
+- 依赖 / Depends on: [D56](functions/items/D56.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4605,7 +4605,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D57})=1 ∧ J_n^-(F_{D57})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D57`
+- 依赖 / Depends on: [D57](functions/items/D57.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D57} and codomain Y_{D57}.
   - 2. Normalize the source expression as F_{D57}: X_{D57}->Y_{D57}.
@@ -4622,7 +4622,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D57`
+- 依赖 / Depends on: [D57](functions/items/D57.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4648,7 +4648,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D58})=1 ∧ J_n^-(F_{D58})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D58`
+- 依赖 / Depends on: [D58](functions/items/D58.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D58} and codomain Y_{D58}.
   - 2. Normalize the source expression as F_{D58}: X_{D58}->Y_{D58}.
@@ -4665,7 +4665,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D58`
+- 依赖 / Depends on: [D58](functions/items/D58.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4691,7 +4691,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D59})=1 ∧ J_n^-(F_{D59})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D59`
+- 依赖 / Depends on: [D59](functions/items/D59.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D59} and codomain Y_{D59}.
   - 2. Normalize the source expression as F_{D59}: X_{D59}->Y_{D59}.
@@ -4708,7 +4708,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D59`
+- 依赖 / Depends on: [D59](functions/items/D59.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4734,7 +4734,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D60})=1 ∧ J_n^-(F_{D60})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D60`
+- 依赖 / Depends on: [D60](functions/items/D60.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D60} and codomain Y_{D60}.
   - 2. Normalize the source expression as F_{D60}: X_{D60}->Y_{D60}.
@@ -4751,7 +4751,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D60`
+- 依赖 / Depends on: [D60](functions/items/D60.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4778,7 +4778,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D61})=1 ∧ J_n^-(F_{D61})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D61`
+- 依赖 / Depends on: [D61](functions/items/D61.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D61} and codomain Y_{D61}.
   - 2. Normalize the source expression as F_{D61}: X_{D61}->Y_{D61}.
@@ -4795,7 +4795,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D61`
+- 依赖 / Depends on: [D61](functions/items/D61.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4821,7 +4821,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D62})=1 ∧ J_n^-(F_{D62})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D62`
+- 依赖 / Depends on: [D62](functions/items/D62.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D62} and codomain Y_{D62}.
   - 2. Normalize the source expression as F_{D62}: X_{D62}->Y_{D62}.
@@ -4838,7 +4838,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D62`
+- 依赖 / Depends on: [D62](functions/items/D62.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4866,7 +4866,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D63})=1 ∧ J_n^-(F_{D63})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D63`
+- 依赖 / Depends on: [D63](functions/items/D63.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D63} and codomain Y_{D63}.
   - 2. Normalize the source expression as F_{D63}: X_{D63}->Y_{D63}.
@@ -4883,7 +4883,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D63`
+- 依赖 / Depends on: [D63](functions/items/D63.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4895,22 +4895,22 @@ English: Rule-based English rendering pending human review.
 ### [D64｜恐惧锁定稳态函数](functions/items/D64.md)
 
 **函数内容 / Function Content**
-中文：ε_fear = β_survival / (α_fear + α_C × C̄/θ_C) P_internal|_fear = k × ε_fear × exp(-ε_fear/ε_opt) - R_identity × σ(E-θ_identity) 效率比：η_fear = P_internal|_fear / P_internal|_opt = (ε_fear/ε_opt) × exp(1-ε_fear/ε_opt) 其中： · α_fear：恐惧对ε的压低速率，由D61的童年锁定决定
+中文：ε_fear = β_survival / (α_fear + α_C × C̄/θ_C) P_internal|_fear = k × ε_fear × exp(-ε_fear/ε_opt) - R_identity × σ(E-θ_identity) 效率比：η_fear = P_internal|_fear / P_internal|_opt = (ε_fear/ε_opt) × exp(1-ε_fear/ε_opt) 其中： · α_fear：恐惧对ε的压低速率，由[D61](functions/items/D61.md)的童年锁定决定
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 ε_fear = β_survival / (α_fear + α_C × C̄/θ_C) P_internal|_fear = k × ε_fear × exp(-ε_fear/ε_opt) - R_identity × σ(E-θ_identity) 效率比：η_fear = P_internal|_fear / P_internal|_opt = (ε_fear/ε_opt) × exp(1-ε_fear/ε_opt) 其中： · α_fear：恐惧对ε的压低速率，由D61的童年锁定决定 描述 恐惧锁定稳态函数。
+中文：该函数通过 ε_fear = β_survival / (α_fear + α_C × C̄/θ_C) P_internal|_fear = k × ε_fear × exp(-ε_fear/ε_opt) - R_identity × σ(E-θ_identity) 效率比：η_fear = P_internal|_fear / P_internal|_opt = (ε_fear/ε_opt) × exp(1-ε_fear/ε_opt) 其中： · α_fear：恐惧对ε的压低速率，由[D61](functions/items/D61.md)的童年锁定决定 描述 恐惧锁定稳态函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D64}`
 - 定义域 / Domain: `X_{D64}`
 - 值域 / Codomain: `Y_{D64}`
-- 数学表达 / Expression: `F_{D64}(x) := ε_fear = β_survival / (α_fear + α_C × C̄/θ_C) P_internal|_fear = k × ε_fear × exp(-ε_fear/ε_opt) - R_identity × σ(E-θ_identity) 效率比：η_fear = P_internal|_fear / P_internal|_opt = (ε_fear/ε_opt) × exp(1-ε_fear/ε_opt) 其中： · α_fear：恐惧对ε的压低速率，由D61的童年锁定决定`
+- 数学表达 / Expression: `F_{D64}(x) := ε_fear = β_survival / (α_fear + α_C × C̄/θ_C) P_internal|_fear = k × ε_fear × exp(-ε_fear/ε_opt) - R_identity × σ(E-θ_identity) 效率比：η_fear = P_internal|_fear / P_internal|_opt = (ε_fear/ε_opt) × exp(1-ε_fear/ε_opt) 其中： · α_fear：恐惧对ε的压低速率，由[D61](functions/items/D61.md)的童年锁定决定`
 - 有效条件 / Validity: `J_n^+(F_{D64})=1 ∧ J_n^-(F_{D64})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D64`
+- 依赖 / Depends on: [D64](functions/items/D64.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D64} and codomain Y_{D64}.
   - 2. Normalize the source expression as F_{D64}: X_{D64}->Y_{D64}.
@@ -4927,7 +4927,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D64`
+- 依赖 / Depends on: [D64](functions/items/D64.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -4956,7 +4956,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D65})=1 ∧ J_n^-(F_{D65})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D65`
+- 依赖 / Depends on: [D65](functions/items/D65.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D65} and codomain Y_{D65}.
   - 2. Normalize the source expression as F_{D65}: X_{D65}->Y_{D65}.
@@ -4973,7 +4973,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D65`
+- 依赖 / Depends on: [D65](functions/items/D65.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5003,7 +5003,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D66})=1 ∧ J_n^-(F_{D66})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D66`
+- 依赖 / Depends on: [D66](functions/items/D66.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D66} and codomain Y_{D66}.
   - 2. Normalize the source expression as F_{D66}: X_{D66}->Y_{D66}.
@@ -5020,7 +5020,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D66`
+- 依赖 / Depends on: [D66](functions/items/D66.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5034,22 +5034,22 @@ English: Rule-based English rendering pending human review.
 ### [D67｜资金量-恐惧锁定正反馈函数](functions/items/D67.md)
 
 **函数内容 / Function Content**
-中文：dK/dt = K×E[r] - (B_occupy/B₀)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。
+中文：dK/dt = K×E[r] - (B_occupy/B₀)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活[D64](functions/items/D64.md)恐惧锁定，形成投资域向下螺旋。跟[D54](functions/items/D54.md)（认知域向下螺旋）结构同构。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 dK/dt = K×E[r] - (B_occupy/B₀)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。 描述 资金量-恐惧锁定正反馈函数。
+中文：该函数通过 dK/dt = K×E[r] - (B_occupy/B₀)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活[D64](functions/items/D64.md)恐惧锁定，形成投资域向下螺旋。跟[D54](functions/items/D54.md)（认知域向下螺旋）结构同构。 描述 资金量-恐惧锁定正反馈函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D67}`
 - 定义域 / Domain: `X_{D67}`
 - 值域 / Codomain: `Y_{D67}`
-- 数学表达 / Expression: `F_{D67}(x) := dK/dt = K×E[r] - (B_occupy/B₀)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。`
+- 数学表达 / Expression: `F_{D67}(x) := dK/dt = K×E[r] - (B_occupy/B₀)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活[D64](functions/items/D64.md)恐惧锁定，形成投资域向下螺旋。跟[D54](functions/items/D54.md)（认知域向下螺旋）结构同构。`
 - 有效条件 / Validity: `J_n^+(F_{D67})=1 ∧ J_n^-(F_{D67})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D67`
+- 依赖 / Depends on: [D67](functions/items/D67.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D67} and codomain Y_{D67}.
   - 2. Normalize the source expression as F_{D67}: X_{D67}->Y_{D67}.
@@ -5066,7 +5066,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D67`
+- 依赖 / Depends on: [D67](functions/items/D67.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5098,7 +5098,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D72})=1 ∧ J_n^-(F_{D72})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D72`
+- 依赖 / Depends on: [D72](functions/items/D72.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D72} and codomain Y_{D72}.
   - 2. Normalize the source expression as F_{D72}: X_{D72}->Y_{D72}.
@@ -5115,7 +5115,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D72`
+- 依赖 / Depends on: [D72](functions/items/D72.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5143,7 +5143,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D73})=1 ∧ J_n^-(F_{D73})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D73`
+- 依赖 / Depends on: [D73](functions/items/D73.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D73} and codomain Y_{D73}.
   - 2. Normalize the source expression as F_{D73}: X_{D73}->Y_{D73}.
@@ -5160,7 +5160,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D73`
+- 依赖 / Depends on: [D73](functions/items/D73.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5189,7 +5189,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D74})=1 ∧ J_n^-(F_{D74})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D74`
+- 依赖 / Depends on: [D74](functions/items/D74.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D74} and codomain Y_{D74}.
   - 2. Normalize the source expression as F_{D74}: X_{D74}->Y_{D74}.
@@ -5206,7 +5206,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D74`
+- 依赖 / Depends on: [D74](functions/items/D74.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5235,7 +5235,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D75})=1 ∧ J_n^-(F_{D75})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D75`
+- 依赖 / Depends on: [D75](functions/items/D75.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D75} and codomain Y_{D75}.
   - 2. Normalize the source expression as F_{D75}: X_{D75}->Y_{D75}.
@@ -5252,7 +5252,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D75`
+- 依赖 / Depends on: [D75](functions/items/D75.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5280,7 +5280,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D76})=1 ∧ J_n^-(F_{D76})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D76`
+- 依赖 / Depends on: [D76](functions/items/D76.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D76} and codomain Y_{D76}.
   - 2. Normalize the source expression as F_{D76}: X_{D76}->Y_{D76}.
@@ -5297,7 +5297,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D76`
+- 依赖 / Depends on: [D76](functions/items/D76.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5327,7 +5327,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D77})=1 ∧ J_n^-(F_{D77})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D77`
+- 依赖 / Depends on: [D77](functions/items/D77.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D77} and codomain Y_{D77}.
   - 2. Normalize the source expression as F_{D77}: X_{D77}->Y_{D77}.
@@ -5344,7 +5344,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D77`
+- 依赖 / Depends on: [D77](functions/items/D77.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5373,7 +5373,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D84})=1 ∧ J_n^-(F_{D84})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D84`
+- 依赖 / Depends on: [D84](functions/items/D84.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D84} and codomain Y_{D84}.
   - 2. Normalize the source expression as F_{D84}: X_{D84}->Y_{D84}.
@@ -5390,7 +5390,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D84`
+- 依赖 / Depends on: [D84](functions/items/D84.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5417,7 +5417,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D85})=1 ∧ J_n^-(F_{D85})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D85`
+- 依赖 / Depends on: [D85](functions/items/D85.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D85} and codomain Y_{D85}.
   - 2. Normalize the source expression as F_{D85}: X_{D85}->Y_{D85}.
@@ -5434,7 +5434,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D85`
+- 依赖 / Depends on: [D85](functions/items/D85.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5461,7 +5461,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D86})=1 ∧ J_n^-(F_{D86})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D86`
+- 依赖 / Depends on: [D86](functions/items/D86.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D86} and codomain Y_{D86}.
   - 2. Normalize the source expression as F_{D86}: X_{D86}->Y_{D86}.
@@ -5478,7 +5478,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D86`
+- 依赖 / Depends on: [D86](functions/items/D86.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5507,7 +5507,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D87})=1 ∧ J_n^-(F_{D87})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D87`
+- 依赖 / Depends on: [D87](functions/items/D87.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D87} and codomain Y_{D87}.
   - 2. Normalize the source expression as F_{D87}: X_{D87}->Y_{D87}.
@@ -5524,7 +5524,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D87`
+- 依赖 / Depends on: [D87](functions/items/D87.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5554,7 +5554,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D88})=1 ∧ J_n^-(F_{D88})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D88`
+- 依赖 / Depends on: [D88](functions/items/D88.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D88} and codomain Y_{D88}.
   - 2. Normalize the source expression as F_{D88}: X_{D88}->Y_{D88}.
@@ -5571,7 +5571,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D88`
+- 依赖 / Depends on: [D88](functions/items/D88.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5598,7 +5598,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D89})=1 ∧ J_n^-(F_{D89})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D89`
+- 依赖 / Depends on: [D89](functions/items/D89.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D89} and codomain Y_{D89}.
   - 2. Normalize the source expression as F_{D89}: X_{D89}->Y_{D89}.
@@ -5615,7 +5615,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D89`
+- 依赖 / Depends on: [D89](functions/items/D89.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5645,7 +5645,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D90})=1 ∧ J_n^-(F_{D90})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D90`
+- 依赖 / Depends on: [D90](functions/items/D90.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D90} and codomain Y_{D90}.
   - 2. Normalize the source expression as F_{D90}: X_{D90}->Y_{D90}.
@@ -5662,7 +5662,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D90`
+- 依赖 / Depends on: [D90](functions/items/D90.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5694,7 +5694,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D91})=1 ∧ J_n^-(F_{D91})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D91`
+- 依赖 / Depends on: [D91](functions/items/D91.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D91} and codomain Y_{D91}.
   - 2. Normalize the source expression as F_{D91}: X_{D91}->Y_{D91}.
@@ -5711,7 +5711,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D91`
+- 依赖 / Depends on: [D91](functions/items/D91.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5740,7 +5740,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D92})=1 ∧ J_n^-(F_{D92})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D92`
+- 依赖 / Depends on: [D92](functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D92} and codomain Y_{D92}.
   - 2. Normalize the source expression as F_{D92}: X_{D92}->Y_{D92}.
@@ -5757,7 +5757,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D92`
+- 依赖 / Depends on: [D92](functions/items/D92.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5789,7 +5789,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D93})=1 ∧ J_n^-(F_{D93})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D93`
+- 依赖 / Depends on: [D93](functions/items/D93.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D93} and codomain Y_{D93}.
   - 2. Normalize the source expression as F_{D93}: X_{D93}->Y_{D93}.
@@ -5806,7 +5806,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D93`
+- 依赖 / Depends on: [D93](functions/items/D93.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5835,7 +5835,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D94})=1 ∧ J_n^-(F_{D94})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D94`
+- 依赖 / Depends on: [D94](functions/items/D94.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D94} and codomain Y_{D94}.
   - 2. Normalize the source expression as F_{D94}: X_{D94}->Y_{D94}.
@@ -5852,7 +5852,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D94`
+- 依赖 / Depends on: [D94](functions/items/D94.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5880,7 +5880,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D95})=1 ∧ J_n^-(F_{D95})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D95`
+- 依赖 / Depends on: [D95](functions/items/D95.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D95} and codomain Y_{D95}.
   - 2. Normalize the source expression as F_{D95}: X_{D95}->Y_{D95}.
@@ -5897,7 +5897,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D95`
+- 依赖 / Depends on: [D95](functions/items/D95.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5929,7 +5929,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D96})=1 ∧ J_n^-(F_{D96})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D96`
+- 依赖 / Depends on: [D96](functions/items/D96.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D96} and codomain Y_{D96}.
   - 2. Normalize the source expression as F_{D96}: X_{D96}->Y_{D96}.
@@ -5946,7 +5946,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D96`
+- 依赖 / Depends on: [D96](functions/items/D96.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -5972,7 +5972,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D97})=1 ∧ J_n^-(F_{D97})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D97`
+- 依赖 / Depends on: [D97](functions/items/D97.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D97} and codomain Y_{D97}.
   - 2. Normalize the source expression as F_{D97}: X_{D97}->Y_{D97}.
@@ -5989,7 +5989,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D97`
+- 依赖 / Depends on: [D97](functions/items/D97.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6015,7 +6015,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D98})=1 ∧ J_n^-(F_{D98})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D98`
+- 依赖 / Depends on: [D98](functions/items/D98.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D98} and codomain Y_{D98}.
   - 2. Normalize the source expression as F_{D98}: X_{D98}->Y_{D98}.
@@ -6032,7 +6032,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D98`
+- 依赖 / Depends on: [D98](functions/items/D98.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6058,7 +6058,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D99})=1 ∧ J_n^-(F_{D99})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D99`
+- 依赖 / Depends on: [D99](functions/items/D99.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D99} and codomain Y_{D99}.
   - 2. Normalize the source expression as F_{D99}: X_{D99}->Y_{D99}.
@@ -6075,7 +6075,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D99`
+- 依赖 / Depends on: [D99](functions/items/D99.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6101,7 +6101,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D100})=1 ∧ J_n^-(F_{D100})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D100`
+- 依赖 / Depends on: [D100](functions/items/D100.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D100} and codomain Y_{D100}.
   - 2. Normalize the source expression as F_{D100}: X_{D100}->Y_{D100}.
@@ -6118,7 +6118,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D100`
+- 依赖 / Depends on: [D100](functions/items/D100.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6144,7 +6144,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D101})=1 ∧ J_n^-(F_{D101})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D101`
+- 依赖 / Depends on: [D101](functions/items/D101.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D101} and codomain Y_{D101}.
   - 2. Normalize the source expression as F_{D101}: X_{D101}->Y_{D101}.
@@ -6161,7 +6161,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D101`
+- 依赖 / Depends on: [D101](functions/items/D101.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6187,7 +6187,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D102})=1 ∧ J_n^-(F_{D102})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D102`
+- 依赖 / Depends on: [D102](functions/items/D102.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D102} and codomain Y_{D102}.
   - 2. Normalize the source expression as F_{D102}: X_{D102}->Y_{D102}.
@@ -6204,7 +6204,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D102`
+- 依赖 / Depends on: [D102](functions/items/D102.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6230,7 +6230,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D103})=1 ∧ J_n^-(F_{D103})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D103`
+- 依赖 / Depends on: [D103](functions/items/D103.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D103} and codomain Y_{D103}.
   - 2. Normalize the source expression as F_{D103}: X_{D103}->Y_{D103}.
@@ -6247,7 +6247,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D103`
+- 依赖 / Depends on: [D103](functions/items/D103.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6273,7 +6273,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D104})=1 ∧ J_n^-(F_{D104})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D104`
+- 依赖 / Depends on: [D104](functions/items/D104.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D104} and codomain Y_{D104}.
   - 2. Normalize the source expression as F_{D104}: X_{D104}->Y_{D104}.
@@ -6290,7 +6290,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D104`
+- 依赖 / Depends on: [D104](functions/items/D104.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6316,7 +6316,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D105})=1 ∧ J_n^-(F_{D105})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D105`
+- 依赖 / Depends on: [D105](functions/items/D105.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D105} and codomain Y_{D105}.
   - 2. Normalize the source expression as F_{D105}: X_{D105}->Y_{D105}.
@@ -6333,7 +6333,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D105`
+- 依赖 / Depends on: [D105](functions/items/D105.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6359,7 +6359,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D106})=1 ∧ J_n^-(F_{D106})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D106`
+- 依赖 / Depends on: [D106](functions/items/D106.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D106} and codomain Y_{D106}.
   - 2. Normalize the source expression as F_{D106}: X_{D106}->Y_{D106}.
@@ -6376,7 +6376,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D106`
+- 依赖 / Depends on: [D106](functions/items/D106.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6404,7 +6404,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D107})=1 ∧ J_n^-(F_{D107})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D107`
+- 依赖 / Depends on: [D107](functions/items/D107.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D107} and codomain Y_{D107}.
   - 2. Normalize the source expression as F_{D107}: X_{D107}->Y_{D107}.
@@ -6421,7 +6421,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D107`
+- 依赖 / Depends on: [D107](functions/items/D107.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6432,22 +6432,22 @@ English: Rule-based English rendering pending human review.
 ### [D108｜三域熵统一函数（推论级）](functions/items/D108.md)
 
 **函数内容 / Function Content**
-中文：$$S_{unified}(domain) = k_{domain} \cdot \ln \Omega_{effective}(domain)$$ - 物理域：$\Omega_{effective} = \Omega_{physical}$，$k = k_B$ - 社会域：$\Omega_{effective} = e^{H/(1-H)}$，$k = 1$ - 认知域：$\Omega_{effective} = N_{hypothesis}$，$k = 1/\ln 2$ 三域共享对数结构，差异在$\Omega_{effective}$的定义。 边界防护函数D101中的信息透明度项$(1-\Delta I_{asym}/I_{max})$是社会域熵的逆——信息越不对称，社会熵越低（系统越"有序"但越脆弱）。
+中文：$$S_{unified}(domain) = k_{domain} \cdot \ln \Omega_{effective}(domain)$$ - 物理域：$\Omega_{effective} = \Omega_{physical}$，$k = k_B$ - 社会域：$\Omega_{effective} = e^{H/(1-H)}$，$k = 1$ - 认知域：$\Omega_{effective} = N_{hypothesis}$，$k = 1/\ln 2$ 三域共享对数结构，差异在$\Omega_{effective}$的定义。 边界防护函数[D101](functions/items/D101.md)中的信息透明度项$(1-\Delta I_{asym}/I_{max})$是社会域熵的逆——信息越不对称，社会熵越低（系统越"有序"但越脆弱）。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 $$S_{unified}(domain) = k_{domain} \cdot \ln \Omega_{effective}(domain)$$ - 物理域：$\Omega_{effective} = \Omega_{physical}$，$k = k_B$ - 社会域：$\Omega_{effective} = e^{H/(1-H)}$，$k = 1$ - 认知域：$\Omega_{effective} = N_{hypothesis}$，$k = 1/\ln 2$ 三域共享对数结构，差异在$\Omega_{effective}$的定义。 边界防护函数D101中的信息透明度项$(1-\Delta I_{asym}/I_{max})$是社会域熵的逆——信息越不对称，社会熵越低（系统越"有序"但越脆弱）。 描述 三域熵统一函数（推论级）。
+中文：该函数通过 $$S_{unified}(domain) = k_{domain} \cdot \ln \Omega_{effective}(domain)$$ - 物理域：$\Omega_{effective} = \Omega_{physical}$，$k = k_B$ - 社会域：$\Omega_{effective} = e^{H/(1-H)}$，$k = 1$ - 认知域：$\Omega_{effective} = N_{hypothesis}$，$k = 1/\ln 2$ 三域共享对数结构，差异在$\Omega_{effective}$的定义。 边界防护函数[D101](functions/items/D101.md)中的信息透明度项$(1-\Delta I_{asym}/I_{max})$是社会域熵的逆——信息越不对称，社会熵越低（系统越"有序"但越脆弱）。 描述 三域熵统一函数（推论级）。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D108}`
 - 定义域 / Domain: `X_{D108}`
 - 值域 / Codomain: `Y_{D108}`
-- 数学表达 / Expression: `F_{D108}(x) := $$S_{unified}(domain) = k_{domain} \cdot \ln \Omega_{effective}(domain)$$ - 物理域：$\Omega_{effective} = \Omega_{physical}$，$k = k_B$ - 社会域：$\Omega_{effective} = e^{H/(1-H)}$，$k = 1$ - 认知域：$\Omega_{effective} = N_{hypothesis}$，$k = 1/\ln 2$ 三域共享对数结构，差异在$\Omega_{effective}$的定义。 边界防护函数D101中的信息透明度项$(1-\Delta I_{asym}/I_{max})$是社会域熵的逆——信息越不对称，社会熵越低（系统越"有序"但越脆弱）。`
+- 数学表达 / Expression: `F_{D108}(x) := $$S_{unified}(domain) = k_{domain} \cdot \ln \Omega_{effective}(domain)$$ - 物理域：$\Omega_{effective} = \Omega_{physical}$，$k = k_B$ - 社会域：$\Omega_{effective} = e^{H/(1-H)}$，$k = 1$ - 认知域：$\Omega_{effective} = N_{hypothesis}$，$k = 1/\ln 2$ 三域共享对数结构，差异在$\Omega_{effective}$的定义。 边界防护函数[D101](functions/items/D101.md)中的信息透明度项$(1-\Delta I_{asym}/I_{max})$是社会域熵的逆——信息越不对称，社会熵越低（系统越"有序"但越脆弱）。`
 - 有效条件 / Validity: `J_n^+(F_{D108})=1 ∧ J_n^-(F_{D108})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D108`
+- 依赖 / Depends on: [D108](functions/items/D108.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D108} and codomain Y_{D108}.
   - 2. Normalize the source expression as F_{D108}: X_{D108}->Y_{D108}.
@@ -6464,7 +6464,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D108`
+- 依赖 / Depends on: [D108](functions/items/D108.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6478,22 +6478,22 @@ English: Rule-based English rendering pending human review.
 ### [D109｜乘法最优生存策略函数](functions/items/D109.md)
 
 **函数内容 / Function Content**
-中文：给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： [#419](cases/items/C-0419.md) 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：[D109](functions/items/D109.md) [#420](cases/items/C-0420.md) 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：[D109](functions/items/D109.md) [#421](cases/items/C-0421.md) [D109](functions/items/D109.md)→D102离散极限 — ε₁=0时需质变非渐变，D109是连续域策略D102是门控边界离散化。核心函数：[D109](functions/items/D109.md)
+中文：给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： [#419](cases/items/C-0419.md) 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：[D109](functions/items/D109.md) [#420](cases/items/C-0420.md) 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：[D109](functions/items/D109.md) [#421](cases/items/C-0421.md) [D109](functions/items/D109.md)→[D102](functions/items/D102.md)离散极限 — ε₁=0时需质变非渐变，[D109](functions/items/D109.md)是连续域策略[D102](functions/items/D102.md)是门控边界离散化。核心函数：[D109](functions/items/D109.md)
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： [#419](cases/items/C-0419.md) 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：[D109](functions/items/D109.md) [#420](cases/items/C-0420.md) 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：[D109](functions/items/D109.md) [#421](cases/items/C-0421.md) [D109](functions/items/D109.md)→D102离散极限 — ε₁=0时需质变非渐变，D109是连续域策略D102是门控边界离散化。核心函数：[D109](functions/items/D109.md) 描述 乘法最优生存策略函数。
+中文：该函数通过 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： [#419](cases/items/C-0419.md) 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：[D109](functions/items/D109.md) [#420](cases/items/C-0420.md) 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：[D109](functions/items/D109.md) [#421](cases/items/C-0421.md) [D109](functions/items/D109.md)→[D102](functions/items/D102.md)离散极限 — ε₁=0时需质变非渐变，[D109](functions/items/D109.md)是连续域策略[D102](functions/items/D102.md)是门控边界离散化。核心函数：[D109](functions/items/D109.md) 描述 乘法最优生存策略函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D109}`
 - 定义域 / Domain: `X_{D109}`
 - 值域 / Codomain: `Y_{D109}`
-- 数学表达 / Expression: `F_{D109}(x) := 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： #419 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：D109 #420 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：D109 #421 D109→D102离散极限 — ε₁=0时需质变非渐变，D109是连续域策略D102是门控边界离散化。核心函数：D109`
+- 数学表达 / Expression: `F_{D109}(x) := 给定总资源R和初始状态ε，最优分配使所有因子终值相等：ε̄=(Σεᵢ+R)/n。贪心策略（先补最弱到次弱，再同时补到第三弱，...）是最优路径。脆弱度降低比=ε̄/minεᵢ，先补最弱比平均分配多降低(ε̄-minεᵢ-R/n)/(minεᵢ+R/n)。 三定理：均等定理（最优稳态所有因子相等）、贪心定理（先补最弱是最优路径）、脆弱度定理（先补最弱vs平均分配的脆弱度比）。 案例： #419 贪心=最优数值验证 — ε=(0.1,0.3,0.5,0.7), R=0.8，贪心G=0.1296，均分G=0.0945，高出37%。核心函数：[D109](functions/items/D109.md) #420 资源不足时优先级 — R=0.1，补最弱+100% vs 补最强+14%，7倍差距。核心函数：[D109](functions/items/D109.md) #421 [D109](functions/items/D109.md)→[D102](functions/items/D102.md)离散极限 — ε₁=0时需质变非渐变，[D109](functions/items/D109.md)是连续域策略[D102](functions/items/D102.md)是门控边界离散化。核心函数：[D109](functions/items/D109.md)`
 - 有效条件 / Validity: `J_n^+(F_{D109})=1 ∧ J_n^-(F_{D109})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D109`
+- 依赖 / Depends on: [D109](functions/items/D109.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D109} and codomain Y_{D109}.
   - 2. Normalize the source expression as F_{D109}: X_{D109}->Y_{D109}.
@@ -6510,7 +6510,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D109`
+- 依赖 / Depends on: [D109](functions/items/D109.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6539,7 +6539,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D110})=1 ∧ J_n^-(F_{D110})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D110`
+- 依赖 / Depends on: [D110](functions/items/D110.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D110} and codomain Y_{D110}.
   - 2. Normalize the source expression as F_{D110}: X_{D110}->Y_{D110}.
@@ -6556,7 +6556,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D110`
+- 依赖 / Depends on: [D110](functions/items/D110.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6582,7 +6582,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D111})=1 ∧ J_n^-(F_{D111})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D111`
+- 依赖 / Depends on: [D111](functions/items/D111.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D111} and codomain Y_{D111}.
   - 2. Normalize the source expression as F_{D111}: X_{D111}->Y_{D111}.
@@ -6599,7 +6599,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D111`
+- 依赖 / Depends on: [D111](functions/items/D111.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6625,7 +6625,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D112})=1 ∧ J_n^-(F_{D112})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D112`
+- 依赖 / Depends on: [D112](functions/items/D112.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D112} and codomain Y_{D112}.
   - 2. Normalize the source expression as F_{D112}: X_{D112}->Y_{D112}.
@@ -6642,7 +6642,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D112`
+- 依赖 / Depends on: [D112](functions/items/D112.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6676,7 +6676,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D113})=1 ∧ J_n^-(F_{D113})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D113`
+- 依赖 / Depends on: [D113](functions/items/D113.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D113} and codomain Y_{D113}.
   - 2. Normalize the source expression as F_{D113}: X_{D113}->Y_{D113}.
@@ -6693,7 +6693,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D113`
+- 依赖 / Depends on: [D113](functions/items/D113.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6712,7 +6712,7 @@ English: Rule-based English rendering pending human review.
 English: Φ d i s c o
 
 **说明 / Explanation**
-中文：该函数通过 Φ d i s c o 描述 变量闭包定律（定理级→从D107升级）。
+中文：该函数通过 Φ d i s c o 描述 变量闭包定律（定理级→从[D107](functions/items/D107.md)升级）。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -6723,7 +6723,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D114})=1 ∧ J_n^-(F_{D114})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D114} and codomain Y_{D114}.
   - 2. Normalize the source expression as F_{D114}: X_{D114}->Y_{D114}.
@@ -6740,7 +6740,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](functions/items/D114.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6757,22 +6757,22 @@ English: Rule-based English rendering pending human review.
 ### [D115｜r_cross优先性定理](functions/items/D115.md)
 
 **函数内容 / Function Content**
-中文：r_cross = 0 ⟹ ε_aware = 0（通过D84三条安装路径全部依赖P_track>1） **证明：** 1. D84三条安装路径（预测编码回路、分轨并行、动态算力分配）全部需要P_track>1 2. P_track = 1 + (N-1)·r_cross，r_cross=0 → P_track=1（单轨） 3. 单轨状态：预测编码回路无第二轨做误差计算→路径1失效；分轨并行不存在→路径2失效；动态算力分配无多轨可调度→路径3失效 4. 三条路径全部失效 → ε_aware无法安装 → ε_aware=0
+中文：r_cross = 0 ⟹ ε_aware = 0（通过[D84](functions/items/D84.md)三条安装路径全部依赖P_track>1） **证明：** 1. [D84](functions/items/D84.md)三条安装路径（预测编码回路、分轨并行、动态算力分配）全部需要P_track>1 2. P_track = 1 + (N-1)·r_cross，r_cross=0 → P_track=1（单轨） 3. 单轨状态：预测编码回路无第二轨做误差计算→路径1失效；分轨并行不存在→路径2失效；动态算力分配无多轨可调度→路径3失效 4. 三条路径全部失效 → ε_aware无法安装 → ε_aware=0
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 r_cross = 0 ⟹ ε_aware = 0（通过D84三条安装路径全部依赖P_track>1） **证明：** 1. D84三条安装路径（预测编码回路、分轨并行、动态算力分配）全部需要P_track>1 2. P_track = 1 + (N-1)·r_cross，r_cross=0 → P_track=1（单轨） 3. 单轨状态：预测编码回路无第二轨做误差计算→路径1失效；分轨并行不存在→路径2失效；动态算力分配无多轨可调度→路径3失效 4. 三条路径全部失效 → ε_aware无法安装 → ε_aware=0 描述 优先性定理。
+中文：该函数通过 r_cross = 0 ⟹ ε_aware = 0（通过[D84](functions/items/D84.md)三条安装路径全部依赖P_track>1） **证明：** 1. [D84](functions/items/D84.md)三条安装路径（预测编码回路、分轨并行、动态算力分配）全部需要P_track>1 2. P_track = 1 + (N-1)·r_cross，r_cross=0 → P_track=1（单轨） 3. 单轨状态：预测编码回路无第二轨做误差计算→路径1失效；分轨并行不存在→路径2失效；动态算力分配无多轨可调度→路径3失效 4. 三条路径全部失效 → ε_aware无法安装 → ε_aware=0 描述 优先性定理。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D115}`
 - 定义域 / Domain: `X_{D115}`
 - 值域 / Codomain: `Y_{D115}`
-- 数学表达 / Expression: `F_{D115}(x) := r_cross = 0 ⟹ ε_aware = 0（通过D84三条安装路径全部依赖P_track>1） **证明：** 1. D84三条安装路径（预测编码回路、分轨并行、动态算力分配）全部需要P_track>1 2. P_track = 1 + (N-1)·r_cross，r_cross=0 → P_track=1（单轨） 3. 单轨状态：预测编码回路无第二轨做误差计算→路径1失效；分轨并行不存在→路径2失效；动态算力分配无多轨可调度→路径3失效 4. 三条路径全部失效 → ε_aware无法安装 → ε_aware=0`
+- 数学表达 / Expression: `F_{D115}(x) := r_cross = 0 ⟹ ε_aware = 0（通过[D84](functions/items/D84.md)三条安装路径全部依赖P_track>1） **证明：** 1. [D84](functions/items/D84.md)三条安装路径（预测编码回路、分轨并行、动态算力分配）全部需要P_track>1 2. P_track = 1 + (N-1)·r_cross，r_cross=0 → P_track=1（单轨） 3. 单轨状态：预测编码回路无第二轨做误差计算→路径1失效；分轨并行不存在→路径2失效；动态算力分配无多轨可调度→路径3失效 4. 三条路径全部失效 → ε_aware无法安装 → ε_aware=0`
 - 有效条件 / Validity: `J_n^+(F_{D115})=1 ∧ J_n^-(F_{D115})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D115`
+- 依赖 / Depends on: [D115](functions/items/D115.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D115} and codomain Y_{D115}.
   - 2. Normalize the source expression as F_{D115}: X_{D115}->Y_{D115}.
@@ -6789,7 +6789,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D115`
+- 依赖 / Depends on: [D115](functions/items/D115.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6819,7 +6819,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D116})=1 ∧ J_n^-(F_{D116})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D116`
+- 依赖 / Depends on: [D116](functions/items/D116.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D116} and codomain Y_{D116}.
   - 2. Normalize the source expression as F_{D116}: X_{D116}->Y_{D116}.
@@ -6836,7 +6836,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D116`
+- 依赖 / Depends on: [D116](functions/items/D116.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6868,7 +6868,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D117})=1 ∧ J_n^-(F_{D117})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D117`
+- 依赖 / Depends on: [D117](functions/items/D117.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D117} and codomain Y_{D117}.
   - 2. Normalize the source expression as F_{D117}: X_{D117}->Y_{D117}.
@@ -6885,7 +6885,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D117`
+- 依赖 / Depends on: [D117](functions/items/D117.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6902,22 +6902,22 @@ English: Rule-based English rendering pending human review.
 ### [D118｜最小作用量-弹性级联统一函数](functions/items/D118.md)
 
 **函数内容 / Function Content**
-中文：S_ignition = ∫[ln G - γ·P(cascade)]dt，δS=0 → Δεᵢ*∝ηᵢ+β∑κᵢⱼηⱼ（D111是变分必然解）。均等定理=维度置换对称性→弹性守恒=诺特定理实例。偏离度δ=对称性破缺度量。D111不是启发式策略，是唯一、稳定、普适的最优解。 ---
+中文：S_ignition = ∫[ln G - γ·P(cascade)]dt，δS=0 → Δεᵢ*∝ηᵢ+β∑κᵢⱼηⱼ（[D111](functions/items/D111.md)是变分必然解）。均等定理=维度置换对称性→弹性守恒=诺特定理实例。偏离度δ=对称性破缺度量。[D111](functions/items/D111.md)不是启发式策略，是唯一、稳定、普适的最优解。 ---
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 S_ignition = ∫[ln G - γ·P(cascade)]dt，δS=0 → Δεᵢ*∝ηᵢ+β∑κᵢⱼηⱼ（D111是变分必然解）。均等定理=维度置换对称性→弹性守恒=诺特定理实例。偏离度δ=对称性破缺度量。D111不是启发式策略，是唯一、稳定、普适的最优解。 --- 描述 最小作用量-弹性级联统一函数。
+中文：该函数通过 S_ignition = ∫[ln G - γ·P(cascade)]dt，δS=0 → Δεᵢ*∝ηᵢ+β∑κᵢⱼηⱼ（[D111](functions/items/D111.md)是变分必然解）。均等定理=维度置换对称性→弹性守恒=诺特定理实例。偏离度δ=对称性破缺度量。[D111](functions/items/D111.md)不是启发式策略，是唯一、稳定、普适的最优解。 --- 描述 最小作用量-弹性级联统一函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D118}`
 - 定义域 / Domain: `X_{D118}`
 - 值域 / Codomain: `Y_{D118}`
-- 数学表达 / Expression: `F_{D118}(x) := S_ignition = ∫[ln G - γ·P(cascade)]dt，δS=0 → Δεᵢ*∝ηᵢ+β∑κᵢⱼηⱼ（D111是变分必然解）。均等定理=维度置换对称性→弹性守恒=诺特定理实例。偏离度δ=对称性破缺度量。D111不是启发式策略，是唯一、稳定、普适的最优解。 ---`
+- 数学表达 / Expression: `F_{D118}(x) := S_ignition = ∫[ln G - γ·P(cascade)]dt，δS=0 → Δεᵢ*∝ηᵢ+β∑κᵢⱼηⱼ（[D111](functions/items/D111.md)是变分必然解）。均等定理=维度置换对称性→弹性守恒=诺特定理实例。偏离度δ=对称性破缺度量。[D111](functions/items/D111.md)不是启发式策略，是唯一、稳定、普适的最优解。 ---`
 - 有效条件 / Validity: `J_n^+(F_{D118})=1 ∧ J_n^-(F_{D118})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D118`
+- 依赖 / Depends on: [D118](functions/items/D118.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D118} and codomain Y_{D118}.
   - 2. Normalize the source expression as F_{D118}: X_{D118}->Y_{D118}.
@@ -6934,7 +6934,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D118`
+- 依赖 / Depends on: [D118](functions/items/D118.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -6966,7 +6966,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D119})=1 ∧ J_n^-(F_{D119})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D119`
+- 依赖 / Depends on: [D119](functions/items/D119.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D119} and codomain Y_{D119}.
   - 2. Normalize the source expression as F_{D119}: X_{D119}->Y_{D119}.
@@ -6983,7 +6983,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D119`
+- 依赖 / Depends on: [D119](functions/items/D119.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7015,7 +7015,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D120})=1 ∧ J_n^-(F_{D120})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D120`
+- 依赖 / Depends on: [D120](functions/items/D120.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D120} and codomain Y_{D120}.
   - 2. Normalize the source expression as F_{D120}: X_{D120}->Y_{D120}.
@@ -7032,7 +7032,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D120`
+- 依赖 / Depends on: [D120](functions/items/D120.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7058,7 +7058,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D121})=1 ∧ J_n^-(F_{D121})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D121`
+- 依赖 / Depends on: [D121](functions/items/D121.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D121} and codomain Y_{D121}.
   - 2. Normalize the source expression as F_{D121}: X_{D121}->Y_{D121}.
@@ -7075,7 +7075,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D121`
+- 依赖 / Depends on: [D121](functions/items/D121.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7089,22 +7089,22 @@ English: Rule-based English rendering pending human review.
 ### [D122｜退化加速函数](functions/items/D122.md)
 
 **函数内容 / Function Content**
-中文：a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t[σ'(εᵢ-θC(i))×|dεᵢ/dt|×d_F(εᵢ)/λ] / (1+d_F(εᵢ)/λ)² 关键项展开：对第k个接近门槛的维度， aₖ ≈ -σ''(εₖ-θC)×(dεₖ/dt)²×d_F(εₖ)/λ / (1+d_F(εₖ)/λ)² 当εₖ<θC时σ''>0，且dεₖ/dt<0（退化中），所以aₖ<0——退化在加速。 与D112的统一：D112中β=γ×max(σ')，dβ/dt=γ×σ''×dε/dt。退化加速函数中的σ''×(dε/dt)²与D112的σ''×dε/dt共享同一个σ''变号结构。区别：D112是β对ε的一阶导（策略权重如何随改善变化），D122是A_Fisher对t的二阶导（退化如何随时间加速）。一个是策略空间的动力学，一个是状态空间的动力学，同一个σ''驱动。 加速的临界条件：a(t)从接近0变为显著负值=系统进入退化加速区。临界
+中文：a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t[σ'(εᵢ-θC(i))×|dεᵢ/dt|×d_F(εᵢ)/λ] / (1+d_F(εᵢ)/λ)² 关键项展开：对第k个接近门槛的维度， aₖ ≈ -σ''(εₖ-θC)×(dεₖ/dt)²×d_F(εₖ)/λ / (1+d_F(εₖ)/λ)² 当εₖ<θC时σ''>0，且dεₖ/dt<0（退化中），所以aₖ<0——退化在加速。 与[D112](functions/items/D112.md)的统一：[D112](functions/items/D112.md)中β=γ×max(σ')，dβ/dt=γ×σ''×dε/dt。退化加速函数中的σ''×(dε/dt)²与[D112](functions/items/D112.md)的σ''×dε/dt共享同一个σ''变号结构。区别：[D112](functions/items/D112.md)是β对ε的一阶导（策略权重如何随改善变化），[D122](functions/items/D122.md)是A_Fisher对t的二阶导（退化如何随时间加速）。一个是策略空间的动力学，一个是状态空间的动力学，同一个σ''驱动。 加速的临界条件：a(t)从接近0变为显著负值=系统进入退化加速区。临界
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t[σ'(εᵢ-θC(i))×|dεᵢ/dt|×d_F(εᵢ)/λ] / (1+d_F(εᵢ)/λ)² 关键项展开：对第k个接近门槛的维度， aₖ ≈ -σ''(εₖ-θC)×(dεₖ/dt)²×d_F(εₖ)/λ / (1+d_F(εₖ)/λ)² 当εₖ<θC时σ''>0，且dεₖ/dt<0（退化中），所以aₖ<0——退化在加速。 与D112的统一：D112中β=γ×max(σ')，dβ/dt=γ×σ''×dε/dt。退化加速函数中的σ''×(dε/dt)²与D112的σ''×dε/dt共享同一个σ''变号结构。区别：D112是β对ε的一阶导（策略权重如何随改善变化），D122是A_Fisher对t的二阶导（退化如何随时间加速）。一个是策略空间的动力学，一个是状态空间的动力学，同一个σ''驱动。 加速的临界条件：a(t)从接近0变为显著负值=系统进入退化加速区。临界 描述 退化加速函数。
+中文：该函数通过 a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t[σ'(εᵢ-θC(i))×|dεᵢ/dt|×d_F(εᵢ)/λ] / (1+d_F(εᵢ)/λ)² 关键项展开：对第k个接近门槛的维度， aₖ ≈ -σ''(εₖ-θC)×(dεₖ/dt)²×d_F(εₖ)/λ / (1+d_F(εₖ)/λ)² 当εₖ<θC时σ''>0，且dεₖ/dt<0（退化中），所以aₖ<0——退化在加速。 与[D112](functions/items/D112.md)的统一：[D112](functions/items/D112.md)中β=γ×max(σ')，dβ/dt=γ×σ''×dε/dt。退化加速函数中的σ''×(dε/dt)²与[D112](functions/items/D112.md)的σ''×dε/dt共享同一个σ''变号结构。区别：[D112](functions/items/D112.md)是β对ε的一阶导（策略权重如何随改善变化），[D122](functions/items/D122.md)是A_Fisher对t的二阶导（退化如何随时间加速）。一个是策略空间的动力学，一个是状态空间的动力学，同一个σ''驱动。 加速的临界条件：a(t)从接近0变为显著负值=系统进入退化加速区。临界 描述 退化加速函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D122}`
 - 定义域 / Domain: `X_{D122}`
 - 值域 / Codomain: `Y_{D122}`
-- 数学表达 / Expression: `F_{D122}(x) := a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t[σ'(εᵢ-θC(i))×|dεᵢ/dt|×d_F(εᵢ)/λ] / (1+d_F(εᵢ)/λ)² 关键项展开：对第k个接近门槛的维度， aₖ ≈ -σ''(εₖ-θC)×(dεₖ/dt)²×d_F(εₖ)/λ / (1+d_F(εₖ)/λ)² 当εₖ<θC时σ''>0，且dεₖ/dt<0（退化中），所以aₖ<0——退化在加速。 与D112的统一：D112中β=γ×max(σ')，dβ/dt=γ×σ''×dε/dt。退化加速函数中的σ''×(dε/dt)²与D112的σ''×dε/dt共享同一个σ''变号结构。区别：D112是β对ε的一阶导（策略权重如何随改善变化），D122是A_Fisher对t的二阶导（退化如何随时间加速）。一个是策略空间的动力学，一个是状态空间的动力学，同一个σ''驱动。 加速的临界条件：a(t)从接近0变为显著负值=系统进入退化加速区。临界`
+- 数学表达 / Expression: `F_{D122}(x) := a(t) = d²A_Fisher/dt² = -∑ᵢ ∂/∂t[σ'(εᵢ-θC(i))×|dεᵢ/dt|×d_F(εᵢ)/λ] / (1+d_F(εᵢ)/λ)² 关键项展开：对第k个接近门槛的维度， aₖ ≈ -σ''(εₖ-θC)×(dεₖ/dt)²×d_F(εₖ)/λ / (1+d_F(εₖ)/λ)² 当εₖ<θC时σ''>0，且dεₖ/dt<0（退化中），所以aₖ<0——退化在加速。 与[D112](functions/items/D112.md)的统一：[D112](functions/items/D112.md)中β=γ×max(σ')，dβ/dt=γ×σ''×dε/dt。退化加速函数中的σ''×(dε/dt)²与[D112](functions/items/D112.md)的σ''×dε/dt共享同一个σ''变号结构。区别：[D112](functions/items/D112.md)是β对ε的一阶导（策略权重如何随改善变化），[D122](functions/items/D122.md)是A_Fisher对t的二阶导（退化如何随时间加速）。一个是策略空间的动力学，一个是状态空间的动力学，同一个σ''驱动。 加速的临界条件：a(t)从接近0变为显著负值=系统进入退化加速区。临界`
 - 有效条件 / Validity: `J_n^+(F_{D122})=1 ∧ J_n^-(F_{D122})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D122`
+- 依赖 / Depends on: [D122](functions/items/D122.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D122} and codomain Y_{D122}.
   - 2. Normalize the source expression as F_{D122}: X_{D122}->Y_{D122}.
@@ -7121,7 +7121,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D122`
+- 依赖 / Depends on: [D122](functions/items/D122.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7147,7 +7147,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D123})=1 ∧ J_n^-(F_{D123})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D123`
+- 依赖 / Depends on: [D123](functions/items/D123.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D123} and codomain Y_{D123}.
   - 2. Normalize the source expression as F_{D123}: X_{D123}->Y_{D123}.
@@ -7164,7 +7164,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D123`
+- 依赖 / Depends on: [D123](functions/items/D123.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7196,7 +7196,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D124})=1 ∧ J_n^-(F_{D124})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D124`
+- 依赖 / Depends on: [D124](functions/items/D124.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D124} and codomain Y_{D124}.
   - 2. Normalize the source expression as F_{D124}: X_{D124}->Y_{D124}.
@@ -7213,7 +7213,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D124`
+- 依赖 / Depends on: [D124](functions/items/D124.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7243,7 +7243,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D125})=1 ∧ J_n^-(F_{D125})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D125`
+- 依赖 / Depends on: [D125](functions/items/D125.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D125} and codomain Y_{D125}.
   - 2. Normalize the source expression as F_{D125}: X_{D125}->Y_{D125}.
@@ -7260,7 +7260,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D125`
+- 依赖 / Depends on: [D125](functions/items/D125.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7292,7 +7292,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D126})=1 ∧ J_n^-(F_{D126})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D126`
+- 依赖 / Depends on: [D126](functions/items/D126.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D126} and codomain Y_{D126}.
   - 2. Normalize the source expression as F_{D126}: X_{D126}->Y_{D126}.
@@ -7309,7 +7309,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D126`
+- 依赖 / Depends on: [D126](functions/items/D126.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7326,22 +7326,22 @@ English: Rule-based English rendering pending human review.
 ### [D127｜认知路径积分函数](functions/items/D127.md)
 
 **函数内容 / Function Content**
-中文：A_ignition = ∫ e^{i·S_ignition/ℏ_eff} D[策略路径] ℏ_eff = σ_ε（认知噪声水平） ℏ_eff→0：经典D118，策略唯一确定 ℏ_eff>0：所有策略都有贡献，最优策略概率幅最大 退化加速↔ℏ_eff增大的正反馈：退化→ℏ_eff↑→策略偏离→退化更快。三阶段协议中阶段2（刀刃期）ℏ_eff等效最大——最需要精确策略的时候策略最不确定。 ---
+中文：A_ignition = ∫ e^{i·S_ignition/ℏ_eff} D[策略路径] ℏ_eff = σ_ε（认知噪声水平） ℏ_eff→0：经典[D118](functions/items/D118.md)，策略唯一确定 ℏ_eff>0：所有策略都有贡献，最优策略概率幅最大 退化加速↔ℏ_eff增大的正反馈：退化→ℏ_eff↑→策略偏离→退化更快。三阶段协议中阶段2（刀刃期）ℏ_eff等效最大——最需要精确策略的时候策略最不确定。 ---
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 A_ignition = ∫ e^{i·S_ignition/ℏ_eff} D[策略路径] ℏ_eff = σ_ε（认知噪声水平） ℏ_eff→0：经典D118，策略唯一确定 ℏ_eff>0：所有策略都有贡献，最优策略概率幅最大 退化加速↔ℏ_eff增大的正反馈：退化→ℏ_eff↑→策略偏离→退化更快。三阶段协议中阶段2（刀刃期）ℏ_eff等效最大——最需要精确策略的时候策略最不确定。 --- 描述 认知路径积分函数。
+中文：该函数通过 A_ignition = ∫ e^{i·S_ignition/ℏ_eff} D[策略路径] ℏ_eff = σ_ε（认知噪声水平） ℏ_eff→0：经典[D118](functions/items/D118.md)，策略唯一确定 ℏ_eff>0：所有策略都有贡献，最优策略概率幅最大 退化加速↔ℏ_eff增大的正反馈：退化→ℏ_eff↑→策略偏离→退化更快。三阶段协议中阶段2（刀刃期）ℏ_eff等效最大——最需要精确策略的时候策略最不确定。 --- 描述 认知路径积分函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D127}`
 - 定义域 / Domain: `X_{D127}`
 - 值域 / Codomain: `Y_{D127}`
-- 数学表达 / Expression: `F_{D127}(x) := A_ignition = ∫ e^{i·S_ignition/ℏ_eff} D[策略路径] ℏ_eff = σ_ε（认知噪声水平） ℏ_eff→0：经典D118，策略唯一确定 ℏ_eff>0：所有策略都有贡献，最优策略概率幅最大 退化加速↔ℏ_eff增大的正反馈：退化→ℏ_eff↑→策略偏离→退化更快。三阶段协议中阶段2（刀刃期）ℏ_eff等效最大——最需要精确策略的时候策略最不确定。 ---`
+- 数学表达 / Expression: `F_{D127}(x) := A_ignition = ∫ e^{i·S_ignition/ℏ_eff} D[策略路径] ℏ_eff = σ_ε（认知噪声水平） ℏ_eff→0：经典[D118](functions/items/D118.md)，策略唯一确定 ℏ_eff>0：所有策略都有贡献，最优策略概率幅最大 退化加速↔ℏ_eff增大的正反馈：退化→ℏ_eff↑→策略偏离→退化更快。三阶段协议中阶段2（刀刃期）ℏ_eff等效最大——最需要精确策略的时候策略最不确定。 ---`
 - 有效条件 / Validity: `J_n^+(F_{D127})=1 ∧ J_n^-(F_{D127})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D127`
+- 依赖 / Depends on: [D127](functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D127} and codomain Y_{D127}.
   - 2. Normalize the source expression as F_{D127}: X_{D127}->Y_{D127}.
@@ -7358,7 +7358,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D127`
+- 依赖 / Depends on: [D127](functions/items/D127.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7392,7 +7392,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D128})=1 ∧ J_n^-(F_{D128})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D128`
+- 依赖 / Depends on: [D128](functions/items/D128.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D128} and codomain Y_{D128}.
   - 2. Normalize the source expression as F_{D128}: X_{D128}->Y_{D128}.
@@ -7409,7 +7409,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D128`
+- 依赖 / Depends on: [D128](functions/items/D128.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7439,11 +7439,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D129}`
 - 定义域 / Domain: `X_{D129}`
 - 值域 / Codomain: `Y_{D129}`
-- 数学表达 / Expression: `F_{D129}(x) := Ξ_decoherence ≡ Ξ_degradation ⟺ Γ_unified > 0 Ξ_decoherence = lim_{t→∞} S_vN(ρ(t)) - S_vN(ρ(0))（退相干信息损失量） Ξ_degradation = lim_{t→∞} [-ln(A_Fisher(t)/A_Fisher(0))]（退化可达性损失量） 等价定理：对乘法系统G=∏fᵢ(εᵢ)，Ξ_decoherence = Ξ_degradation = ∫₀^∞ Γ_unified dt。 操作含义：测量退相干程度和测量退化程度给出同一个数字。用哪个方便就用哪个。 案例#493 退相干-退化等价验证 — 8维乘法系统模拟60年：Ξ_decoherence=2.31，Ξ_degradation=2.34（差异1.3%来自数值积分误差）。两者精确等价。核心函数：D129`
+- 数学表达 / Expression: `F_{D129}(x) := Ξ_decoherence ≡ Ξ_degradation ⟺ Γ_unified > 0 Ξ_decoherence = lim_{t→∞} S_vN(ρ(t)) - S_vN(ρ(0))（退相干信息损失量） Ξ_degradation = lim_{t→∞} [-ln(A_Fisher(t)/A_Fisher(0))]（退化可达性损失量） 等价定理：对乘法系统G=∏fᵢ(εᵢ)，Ξ_decoherence = Ξ_degradation = ∫₀^∞ Γ_unified dt。 操作含义：测量退相干程度和测量退化程度给出同一个数字。用哪个方便就用哪个。 案例#493 退相干-退化等价验证 — 8维乘法系统模拟60年：Ξ_decoherence=2.31，Ξ_degradation=2.34（差异1.3%来自数值积分误差）。两者精确等价。核心函数：[D129](functions/items/D129.md)`
 - 有效条件 / Validity: `J_n^+(F_{D129})=1 ∧ J_n^-(F_{D129})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D129`
+- 依赖 / Depends on: [D129](functions/items/D129.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D129} and codomain Y_{D129}.
   - 2. Normalize the source expression as F_{D129}: X_{D129}->Y_{D129}.
@@ -7460,7 +7460,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D129`
+- 依赖 / Depends on: [D129](functions/items/D129.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7474,22 +7474,22 @@ English: Rule-based English rendering pending human review.
 ### [D130｜调度-执行接口效率函数](functions/items/D130.md)
 
 **函数内容 / Function Content**
-中文：η_interface = P_encode × P_transfer × P_decode 三因子乘法（D127归零律适用）： P_encode = σ(ε_aware^S × B_semantic^S - θ_encode) - 调度方必须有ε_aware>0才能形成意图，必须有B_semantic>0才能把意图编码为可传递信号 - ε_aware=0 → P_encode=0 → 无法形成可传递意图 - B_semantic=0 → P_encode=0 → 有意图但无法编码
+中文：η_interface = P_encode × P_transfer × P_decode 三因子乘法（[D127](functions/items/D127.md)归零律适用）： P_encode = σ(ε_aware^S × B_semantic^S - θ_encode) - 调度方必须有ε_aware>0才能形成意图，必须有B_semantic>0才能把意图编码为可传递信号 - ε_aware=0 → P_encode=0 → 无法形成可传递意图 - B_semantic=0 → P_encode=0 → 有意图但无法编码
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 η_interface = P_encode × P_transfer × P_decode 三因子乘法（D127归零律适用）： P_encode = σ(ε_aware^S × B_semantic^S - θ_encode) - 调度方必须有ε_aware>0才能形成意图，必须有B_semantic>0才能把意图编码为可传递信号 - ε_aware=0 → P_encode=0 → 无法形成可传递意图 - B_semantic=0 → P_encode=0 → 有意图但无法编码 描述 调度-执行接口效率函数。
+中文：该函数通过 η_interface = P_encode × P_transfer × P_decode 三因子乘法（[D127](functions/items/D127.md)归零律适用）： P_encode = σ(ε_aware^S × B_semantic^S - θ_encode) - 调度方必须有ε_aware>0才能形成意图，必须有B_semantic>0才能把意图编码为可传递信号 - ε_aware=0 → P_encode=0 → 无法形成可传递意图 - B_semantic=0 → P_encode=0 → 有意图但无法编码 描述 调度-执行接口效率函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D130}`
 - 定义域 / Domain: `X_{D130}`
 - 值域 / Codomain: `Y_{D130}`
-- 数学表达 / Expression: `F_{D130}(x) := η_interface = P_encode × P_transfer × P_decode 三因子乘法（D127归零律适用）： P_encode = σ(ε_aware^S × B_semantic^S - θ_encode) - 调度方必须有ε_aware>0才能形成意图，必须有B_semantic>0才能把意图编码为可传递信号 - ε_aware=0 → P_encode=0 → 无法形成可传递意图 - B_semantic=0 → P_encode=0 → 有意图但无法编码`
+- 数学表达 / Expression: `F_{D130}(x) := η_interface = P_encode × P_transfer × P_decode 三因子乘法（[D127](functions/items/D127.md)归零律适用）： P_encode = σ(ε_aware^S × B_semantic^S - θ_encode) - 调度方必须有ε_aware>0才能形成意图，必须有B_semantic>0才能把意图编码为可传递信号 - ε_aware=0 → P_encode=0 → 无法形成可传递意图 - B_semantic=0 → P_encode=0 → 有意图但无法编码`
 - 有效条件 / Validity: `J_n^+(F_{D130})=1 ∧ J_n^-(F_{D130})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D130`
+- 依赖 / Depends on: [D130](functions/items/D130.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D130} and codomain Y_{D130}.
   - 2. Normalize the source expression as F_{D130}: X_{D130}->Y_{D130}.
@@ -7506,7 +7506,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D130`
+- 依赖 / Depends on: [D130](functions/items/D130.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7532,7 +7532,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D131})=1 ∧ J_n^-(F_{D131})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D131`
+- 依赖 / Depends on: [D131](functions/items/D131.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D131} and codomain Y_{D131}.
   - 2. Normalize the source expression as F_{D131}: X_{D131}->Y_{D131}.
@@ -7549,7 +7549,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D131`
+- 依赖 / Depends on: [D131](functions/items/D131.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7575,7 +7575,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D132})=1 ∧ J_n^-(F_{D132})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D132`
+- 依赖 / Depends on: [D132](functions/items/D132.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D132} and codomain Y_{D132}.
   - 2. Normalize the source expression as F_{D132}: X_{D132}->Y_{D132}.
@@ -7592,7 +7592,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D132`
+- 依赖 / Depends on: [D132](functions/items/D132.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7618,7 +7618,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D133})=1 ∧ J_n^-(F_{D133})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D133`
+- 依赖 / Depends on: [D133](functions/items/D133.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D133} and codomain Y_{D133}.
   - 2. Normalize the source expression as F_{D133}: X_{D133}->Y_{D133}.
@@ -7635,7 +7635,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D133`
+- 依赖 / Depends on: [D133](functions/items/D133.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7661,7 +7661,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D134})=1 ∧ J_n^-(F_{D134})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D134`
+- 依赖 / Depends on: [D134](functions/items/D134.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D134} and codomain Y_{D134}.
   - 2. Normalize the source expression as F_{D134}: X_{D134}->Y_{D134}.
@@ -7678,7 +7678,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D134`
+- 依赖 / Depends on: [D134](functions/items/D134.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7704,7 +7704,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D135})=1 ∧ J_n^-(F_{D135})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D135`
+- 依赖 / Depends on: [D135](functions/items/D135.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D135} and codomain Y_{D135}.
   - 2. Normalize the source expression as F_{D135}: X_{D135}->Y_{D135}.
@@ -7721,7 +7721,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D135`
+- 依赖 / Depends on: [D135](functions/items/D135.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7748,7 +7748,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D136})=1 ∧ J_n^-(F_{D136})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D136`
+- 依赖 / Depends on: [D136](functions/items/D136.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D136} and codomain Y_{D136}.
   - 2. Normalize the source expression as F_{D136}: X_{D136}->Y_{D136}.
@@ -7765,7 +7765,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D136`
+- 依赖 / Depends on: [D136](functions/items/D136.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7792,7 +7792,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D137})=1 ∧ J_n^-(F_{D137})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D137`
+- 依赖 / Depends on: [D137](functions/items/D137.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D137} and codomain Y_{D137}.
   - 2. Normalize the source expression as F_{D137}: X_{D137}->Y_{D137}.
@@ -7809,7 +7809,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D137`
+- 依赖 / Depends on: [D137](functions/items/D137.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7835,7 +7835,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D138})=1 ∧ J_n^-(F_{D138})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D138`
+- 依赖 / Depends on: [D138](functions/items/D138.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D138} and codomain Y_{D138}.
   - 2. Normalize the source expression as F_{D138}: X_{D138}->Y_{D138}.
@@ -7852,7 +7852,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D138`
+- 依赖 / Depends on: [D138](functions/items/D138.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7878,7 +7878,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D139})=1 ∧ J_n^-(F_{D139})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D139`
+- 依赖 / Depends on: [D139](functions/items/D139.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D139} and codomain Y_{D139}.
   - 2. Normalize the source expression as F_{D139}: X_{D139}->Y_{D139}.
@@ -7895,7 +7895,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D139`
+- 依赖 / Depends on: [D139](functions/items/D139.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7925,7 +7925,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D140})=1 ∧ J_n^-(F_{D140})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D140`
+- 依赖 / Depends on: [D140](functions/items/D140.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D140} and codomain Y_{D140}.
   - 2. Normalize the source expression as F_{D140}: X_{D140}->Y_{D140}.
@@ -7942,7 +7942,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D140`
+- 依赖 / Depends on: [D140](functions/items/D140.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -7968,7 +7968,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D141})=1 ∧ J_n^-(F_{D141})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D141`
+- 依赖 / Depends on: [D141](functions/items/D141.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D141} and codomain Y_{D141}.
   - 2. Normalize the source expression as F_{D141}: X_{D141}->Y_{D141}.
@@ -7985,7 +7985,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D141`
+- 依赖 / Depends on: [D141](functions/items/D141.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8011,7 +8011,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D142})=1 ∧ J_n^-(F_{D142})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D142`
+- 依赖 / Depends on: [D142](functions/items/D142.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D142} and codomain Y_{D142}.
   - 2. Normalize the source expression as F_{D142}: X_{D142}->Y_{D142}.
@@ -8028,7 +8028,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D142`
+- 依赖 / Depends on: [D142](functions/items/D142.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8055,7 +8055,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D143})=1 ∧ J_n^-(F_{D143})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D143`
+- 依赖 / Depends on: [D143](functions/items/D143.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D143} and codomain Y_{D143}.
   - 2. Normalize the source expression as F_{D143}: X_{D143}->Y_{D143}.
@@ -8072,7 +8072,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D143`
+- 依赖 / Depends on: [D143](functions/items/D143.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8098,7 +8098,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D144})=1 ∧ J_n^-(F_{D144})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D144`
+- 依赖 / Depends on: [D144](functions/items/D144.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D144} and codomain Y_{D144}.
   - 2. Normalize the source expression as F_{D144}: X_{D144}->Y_{D144}.
@@ -8115,7 +8115,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D144`
+- 依赖 / Depends on: [D144](functions/items/D144.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8141,7 +8141,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D145})=1 ∧ J_n^-(F_{D145})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D145`
+- 依赖 / Depends on: [D145](functions/items/D145.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D145} and codomain Y_{D145}.
   - 2. Normalize the source expression as F_{D145}: X_{D145}->Y_{D145}.
@@ -8158,7 +8158,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D145`
+- 依赖 / Depends on: [D145](functions/items/D145.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8184,7 +8184,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D146})=1 ∧ J_n^-(F_{D146})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D146`
+- 依赖 / Depends on: [D146](functions/items/D146.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D146} and codomain Y_{D146}.
   - 2. Normalize the source expression as F_{D146}: X_{D146}->Y_{D146}.
@@ -8201,7 +8201,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D146`
+- 依赖 / Depends on: [D146](functions/items/D146.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8227,7 +8227,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D147})=1 ∧ J_n^-(F_{D147})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D147`
+- 依赖 / Depends on: [D147](functions/items/D147.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D147} and codomain Y_{D147}.
   - 2. Normalize the source expression as F_{D147}: X_{D147}->Y_{D147}.
@@ -8244,7 +8244,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D147`
+- 依赖 / Depends on: [D147](functions/items/D147.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8270,7 +8270,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D148})=1 ∧ J_n^-(F_{D148})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D148`
+- 依赖 / Depends on: [D148](functions/items/D148.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D148} and codomain Y_{D148}.
   - 2. Normalize the source expression as F_{D148}: X_{D148}->Y_{D148}.
@@ -8287,7 +8287,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D148`
+- 依赖 / Depends on: [D148](functions/items/D148.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8313,7 +8313,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D149})=1 ∧ J_n^-(F_{D149})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D149`
+- 依赖 / Depends on: [D149](functions/items/D149.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D149} and codomain Y_{D149}.
   - 2. Normalize the source expression as F_{D149}: X_{D149}->Y_{D149}.
@@ -8330,7 +8330,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D149`
+- 依赖 / Depends on: [D149](functions/items/D149.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8356,7 +8356,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D150})=1 ∧ J_n^-(F_{D150})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D150`
+- 依赖 / Depends on: [D150](functions/items/D150.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D150} and codomain Y_{D150}.
   - 2. Normalize the source expression as F_{D150}: X_{D150}->Y_{D150}.
@@ -8373,7 +8373,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D150`
+- 依赖 / Depends on: [D150](functions/items/D150.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8399,7 +8399,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D151})=1 ∧ J_n^-(F_{D151})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D151`
+- 依赖 / Depends on: [D151](functions/items/D151.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D151} and codomain Y_{D151}.
   - 2. Normalize the source expression as F_{D151}: X_{D151}->Y_{D151}.
@@ -8416,7 +8416,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D151`
+- 依赖 / Depends on: [D151](functions/items/D151.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8442,7 +8442,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D152})=1 ∧ J_n^-(F_{D152})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D152`
+- 依赖 / Depends on: [D152](functions/items/D152.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D152} and codomain Y_{D152}.
   - 2. Normalize the source expression as F_{D152}: X_{D152}->Y_{D152}.
@@ -8459,7 +8459,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D152`
+- 依赖 / Depends on: [D152](functions/items/D152.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8485,7 +8485,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D153})=1 ∧ J_n^-(F_{D153})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D153`
+- 依赖 / Depends on: [D153](functions/items/D153.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D153} and codomain Y_{D153}.
   - 2. Normalize the source expression as F_{D153}: X_{D153}->Y_{D153}.
@@ -8502,7 +8502,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D153`
+- 依赖 / Depends on: [D153](functions/items/D153.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8528,7 +8528,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D154})=1 ∧ J_n^-(F_{D154})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D154`
+- 依赖 / Depends on: [D154](functions/items/D154.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D154} and codomain Y_{D154}.
   - 2. Normalize the source expression as F_{D154}: X_{D154}->Y_{D154}.
@@ -8545,7 +8545,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D154`
+- 依赖 / Depends on: [D154](functions/items/D154.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8571,7 +8571,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D155})=1 ∧ J_n^-(F_{D155})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D155`
+- 依赖 / Depends on: [D155](functions/items/D155.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D155} and codomain Y_{D155}.
   - 2. Normalize the source expression as F_{D155}: X_{D155}->Y_{D155}.
@@ -8588,7 +8588,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D155`
+- 依赖 / Depends on: [D155](functions/items/D155.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8614,7 +8614,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D156})=1 ∧ J_n^-(F_{D156})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D156`
+- 依赖 / Depends on: [D156](functions/items/D156.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D156} and codomain Y_{D156}.
   - 2. Normalize the source expression as F_{D156}: X_{D156}->Y_{D156}.
@@ -8631,7 +8631,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D156`
+- 依赖 / Depends on: [D156](functions/items/D156.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8657,7 +8657,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D157})=1 ∧ J_n^-(F_{D157})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D157`
+- 依赖 / Depends on: [D157](functions/items/D157.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D157} and codomain Y_{D157}.
   - 2. Normalize the source expression as F_{D157}: X_{D157}->Y_{D157}.
@@ -8674,7 +8674,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D157`
+- 依赖 / Depends on: [D157](functions/items/D157.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8700,7 +8700,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D158})=1 ∧ J_n^-(F_{D158})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D158} and codomain Y_{D158}.
   - 2. Normalize the source expression as F_{D158}: X_{D158}->Y_{D158}.
@@ -8717,7 +8717,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](functions/items/D158.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8749,7 +8749,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D159})=1 ∧ J_n^-(F_{D159})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`
+- 依赖 / Depends on: [D159](functions/items/D159.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D159} and codomain Y_{D159}.
   - 2. Normalize the source expression as F_{D159}: X_{D159}->Y_{D159}.
@@ -8766,7 +8766,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`
+- 依赖 / Depends on: [D159](functions/items/D159.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8798,7 +8798,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D160})=1 ∧ J_n^-(F_{D160})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D160} and codomain Y_{D160}.
   - 2. Normalize the source expression as F_{D160}: X_{D160}->Y_{D160}.
@@ -8815,7 +8815,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](functions/items/D160.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8847,7 +8847,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D161})=1 ∧ J_n^-(F_{D161})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D161`
+- 依赖 / Depends on: [D161](functions/items/D161.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D161} and codomain Y_{D161}.
   - 2. Normalize the source expression as F_{D161}: X_{D161}->Y_{D161}.
@@ -8864,7 +8864,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D161`
+- 依赖 / Depends on: [D161](functions/items/D161.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8896,7 +8896,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D162})=1 ∧ J_n^-(F_{D162})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D162`
+- 依赖 / Depends on: [D162](functions/items/D162.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D162} and codomain Y_{D162}.
   - 2. Normalize the source expression as F_{D162}: X_{D162}->Y_{D162}.
@@ -8913,7 +8913,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D162`
+- 依赖 / Depends on: [D162](functions/items/D162.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8945,7 +8945,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D163})=1 ∧ J_n^-(F_{D163})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D163`
+- 依赖 / Depends on: [D163](functions/items/D163.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D163} and codomain Y_{D163}.
   - 2. Normalize the source expression as F_{D163}: X_{D163}->Y_{D163}.
@@ -8962,7 +8962,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D163`
+- 依赖 / Depends on: [D163](functions/items/D163.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -8992,7 +8992,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D164})=1 ∧ J_n^-(F_{D164})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D164`
+- 依赖 / Depends on: [D164](functions/items/D164.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D164} and codomain Y_{D164}.
   - 2. Normalize the source expression as F_{D164}: X_{D164}->Y_{D164}.
@@ -9009,7 +9009,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D164`
+- 依赖 / Depends on: [D164](functions/items/D164.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9039,7 +9039,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D165})=1 ∧ J_n^-(F_{D165})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D165`
+- 依赖 / Depends on: [D165](functions/items/D165.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D165} and codomain Y_{D165}.
   - 2. Normalize the source expression as F_{D165}: X_{D165}->Y_{D165}.
@@ -9056,7 +9056,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D165`
+- 依赖 / Depends on: [D165](functions/items/D165.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9082,7 +9082,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D166})=1 ∧ J_n^-(F_{D166})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D166`
+- 依赖 / Depends on: [D166](functions/items/D166.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D166} and codomain Y_{D166}.
   - 2. Normalize the source expression as F_{D166}: X_{D166}->Y_{D166}.
@@ -9099,7 +9099,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D166`
+- 依赖 / Depends on: [D166](functions/items/D166.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9126,7 +9126,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D167})=1 ∧ J_n^-(F_{D167})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D167`
+- 依赖 / Depends on: [D167](functions/items/D167.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D167} and codomain Y_{D167}.
   - 2. Normalize the source expression as F_{D167}: X_{D167}->Y_{D167}.
@@ -9143,7 +9143,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D167`
+- 依赖 / Depends on: [D167](functions/items/D167.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9169,7 +9169,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D168})=1 ∧ J_n^-(F_{D168})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D168`
+- 依赖 / Depends on: [D168](functions/items/D168.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D168} and codomain Y_{D168}.
   - 2. Normalize the source expression as F_{D168}: X_{D168}->Y_{D168}.
@@ -9186,7 +9186,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D168`
+- 依赖 / Depends on: [D168](functions/items/D168.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9212,7 +9212,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D169})=1 ∧ J_n^-(F_{D169})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D169`
+- 依赖 / Depends on: [D169](functions/items/D169.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D169} and codomain Y_{D169}.
   - 2. Normalize the source expression as F_{D169}: X_{D169}->Y_{D169}.
@@ -9229,7 +9229,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D169`
+- 依赖 / Depends on: [D169](functions/items/D169.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9257,7 +9257,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D170})=1 ∧ J_n^-(F_{D170})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D170`
+- 依赖 / Depends on: [D170](functions/items/D170.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D170} and codomain Y_{D170}.
   - 2. Normalize the source expression as F_{D170}: X_{D170}->Y_{D170}.
@@ -9274,7 +9274,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D170`
+- 依赖 / Depends on: [D170](functions/items/D170.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9300,7 +9300,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D171})=1 ∧ J_n^-(F_{D171})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D171`
+- 依赖 / Depends on: [D171](functions/items/D171.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D171} and codomain Y_{D171}.
   - 2. Normalize the source expression as F_{D171}: X_{D171}->Y_{D171}.
@@ -9317,7 +9317,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D171`
+- 依赖 / Depends on: [D171](functions/items/D171.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9343,7 +9343,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D172})=1 ∧ J_n^-(F_{D172})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D172`
+- 依赖 / Depends on: [D172](functions/items/D172.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D172} and codomain Y_{D172}.
   - 2. Normalize the source expression as F_{D172}: X_{D172}->Y_{D172}.
@@ -9360,7 +9360,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D172`
+- 依赖 / Depends on: [D172](functions/items/D172.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9386,7 +9386,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D173})=1 ∧ J_n^-(F_{D173})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D173`
+- 依赖 / Depends on: [D173](functions/items/D173.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D173} and codomain Y_{D173}.
   - 2. Normalize the source expression as F_{D173}: X_{D173}->Y_{D173}.
@@ -9403,7 +9403,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D173`
+- 依赖 / Depends on: [D173](functions/items/D173.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9429,7 +9429,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D174})=1 ∧ J_n^-(F_{D174})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D174`
+- 依赖 / Depends on: [D174](functions/items/D174.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D174} and codomain Y_{D174}.
   - 2. Normalize the source expression as F_{D174}: X_{D174}->Y_{D174}.
@@ -9446,7 +9446,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D174`
+- 依赖 / Depends on: [D174](functions/items/D174.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9472,7 +9472,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D175})=1 ∧ J_n^-(F_{D175})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D175`
+- 依赖 / Depends on: [D175](functions/items/D175.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D175} and codomain Y_{D175}.
   - 2. Normalize the source expression as F_{D175}: X_{D175}->Y_{D175}.
@@ -9489,7 +9489,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D175`
+- 依赖 / Depends on: [D175](functions/items/D175.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9511,11 +9511,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D176}`
 - 定义域 / Domain: `X_{D176}`
 - 值域 / Codomain: `Y_{D176}`
-- 数学表达 / Expression: `F_{D176}(x) := ρ同时驱动H_correlation(D66)和P(biased)(D53),联合效应P_sustain∝(1-ρ)²而非(1-ρ)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。`
+- 数学表达 / Expression: `F_{D176}(x) := ρ同时驱动H_correlation([D66](functions/items/D66.md))和P(biased)([D53](functions/items/D53.md)),联合效应P_sustain∝(1-ρ)²而非(1-ρ)。共享源让乘法归零从线性变平方,杀伤力指数级增强。与电力级联放大器G∝V²完全同构。`
 - 有效条件 / Validity: `J_n^+(F_{D176})=1 ∧ J_n^-(F_{D176})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D176`, `D53`, `D66`
+- 依赖 / Depends on: [D176](functions/items/D176.md), [D53](functions/items/D53.md), [D66](functions/items/D66.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D176} and codomain Y_{D176}.
   - 2. Normalize the source expression as F_{D176}: X_{D176}->Y_{D176}.
@@ -9532,7 +9532,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D176`, `D53`, `D66`
+- 依赖 / Depends on: [D176](functions/items/D176.md), [D53](functions/items/D53.md), [D66](functions/items/D66.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9558,7 +9558,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D177})=1 ∧ J_n^-(F_{D177})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D177`
+- 依赖 / Depends on: [D177](functions/items/D177.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D177} and codomain Y_{D177}.
   - 2. Normalize the source expression as F_{D177}: X_{D177}->Y_{D177}.
@@ -9575,7 +9575,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D177`
+- 依赖 / Depends on: [D177](functions/items/D177.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9601,7 +9601,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D178})=1 ∧ J_n^-(F_{D178})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D178`
+- 依赖 / Depends on: [D178](functions/items/D178.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D178} and codomain Y_{D178}.
   - 2. Normalize the source expression as F_{D178}: X_{D178}->Y_{D178}.
@@ -9618,7 +9618,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D178`
+- 依赖 / Depends on: [D178](functions/items/D178.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9644,7 +9644,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D179})=1 ∧ J_n^-(F_{D179})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D179`
+- 依赖 / Depends on: [D179](functions/items/D179.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D179} and codomain Y_{D179}.
   - 2. Normalize the source expression as F_{D179}: X_{D179}->Y_{D179}.
@@ -9661,7 +9661,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D179`
+- 依赖 / Depends on: [D179](functions/items/D179.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9687,7 +9687,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D180})=1 ∧ J_n^-(F_{D180})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D180`
+- 依赖 / Depends on: [D180](functions/items/D180.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D180} and codomain Y_{D180}.
   - 2. Normalize the source expression as F_{D180}: X_{D180}->Y_{D180}.
@@ -9704,7 +9704,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D180`
+- 依赖 / Depends on: [D180](functions/items/D180.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9730,7 +9730,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D181})=1 ∧ J_n^-(F_{D181})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D181`
+- 依赖 / Depends on: [D181](functions/items/D181.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D181} and codomain Y_{D181}.
   - 2. Normalize the source expression as F_{D181}: X_{D181}->Y_{D181}.
@@ -9747,7 +9747,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D181`
+- 依赖 / Depends on: [D181](functions/items/D181.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9773,7 +9773,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D182})=1 ∧ J_n^-(F_{D182})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D182`
+- 依赖 / Depends on: [D182](functions/items/D182.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D182} and codomain Y_{D182}.
   - 2. Normalize the source expression as F_{D182}: X_{D182}->Y_{D182}.
@@ -9790,7 +9790,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D182`
+- 依赖 / Depends on: [D182](functions/items/D182.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9816,7 +9816,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D183})=1 ∧ J_n^-(F_{D183})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D183`
+- 依赖 / Depends on: [D183](functions/items/D183.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D183} and codomain Y_{D183}.
   - 2. Normalize the source expression as F_{D183}: X_{D183}->Y_{D183}.
@@ -9833,7 +9833,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D183`
+- 依赖 / Depends on: [D183](functions/items/D183.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9844,22 +9844,22 @@ English: Rule-based English rendering pending human review.
 ### [D184｜熵增门槛碾压函数](functions/items/D184.md)
 
 **函数内容 / Function Content**
-中文：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ_entropy为熵产率；μ_available(t) = μ₀ × e^(-γ_dissipation × t)。热寂时间t_heatdeath = ln(μ₀/Λ₀)/(σ_entropy + γ_dissipation)。热力学第二定律是D160门槛碾压的热力学版。
+中文：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ_entropy为熵产率；μ_available(t) = μ₀ × e^(-γ_dissipation × t)。热寂时间t_heatdeath = ln(μ₀/Λ₀)/(σ_entropy + γ_dissipation)。热力学第二定律是[D160](functions/items/D160.md)门槛碾压的热力学版。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ_entropy为熵产率；μ_available(t) = μ₀ × e^(-γ_dissipation × t)。热寂时间t_heatdeath = ln(μ₀/Λ₀)/(σ_entropy + γ_dissipation)。热力学第二定律是D160门槛碾压的热力学版。 描述 熵增门槛碾压函数。
+中文：该函数通过 Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ_entropy为熵产率；μ_available(t) = μ₀ × e^(-γ_dissipation × t)。热寂时间t_heatdeath = ln(μ₀/Λ₀)/(σ_entropy + γ_dissipation)。热力学第二定律是[D160](functions/items/D160.md)门槛碾压的热力学版。 描述 熵增门槛碾压函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D184}`
 - 定义域 / Domain: `X_{D184}`
 - 值域 / Codomain: `Y_{D184}`
-- 数学表达 / Expression: `F_{D184}(x) := Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ_entropy为熵产率；μ_available(t) = μ₀ × e^(-γ_dissipation × t)。热寂时间t_heatdeath = ln(μ₀/Λ₀)/(σ_entropy + γ_dissipation)。热力学第二定律是D160门槛碾压的热力学版。`
+- 数学表达 / Expression: `F_{D184}(x) := Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，σ_entropy为熵产率；μ_available(t) = μ₀ × e^(-γ_dissipation × t)。热寂时间t_heatdeath = ln(μ₀/Λ₀)/(σ_entropy + γ_dissipation)。热力学第二定律是[D160](functions/items/D160.md)门槛碾压的热力学版。`
 - 有效条件 / Validity: `J_n^+(F_{D184})=1 ∧ J_n^-(F_{D184})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D184`
+- 依赖 / Depends on: [D184](functions/items/D184.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D184} and codomain Y_{D184}.
   - 2. Normalize the source expression as F_{D184}: X_{D184}->Y_{D184}.
@@ -9876,7 +9876,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D184`
+- 依赖 / Depends on: [D184](functions/items/D184.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9900,11 +9900,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D185}`
 - 定义域 / Domain: `X_{D185}`
 - 值域 / Codomain: `Y_{D185}`
-- 数学表达 / Expression: `F_{D185}(x) := 相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ → ∞，系统退化为经典确定性（D182）；当v → c时，μ/Λ → 1，门控效应显著，系统展现相对论效应。`
+- 数学表达 / Expression: `F_{D185}(x) := 相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ → ∞，系统退化为经典确定性（[D182](functions/items/D182.md)）；当v → c时，μ/Λ → 1，门控效应显著，系统展现相对论效应。`
 - 有效条件 / Validity: `J_n^+(F_{D185})=1 ∧ J_n^-(F_{D185})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D182`, `D185`
+- 依赖 / Depends on: [D182](functions/items/D182.md), [D185](functions/items/D185.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D185} and codomain Y_{D185}.
   - 2. Normalize the source expression as F_{D185}: X_{D185}->Y_{D185}.
@@ -9921,7 +9921,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D182`, `D185`
+- 依赖 / Depends on: [D182](functions/items/D182.md), [D185](functions/items/D185.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9947,7 +9947,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D186})=1 ∧ J_n^-(F_{D186})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D186`
+- 依赖 / Depends on: [D186](functions/items/D186.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D186} and codomain Y_{D186}.
   - 2. Normalize the source expression as F_{D186}: X_{D186}->Y_{D186}.
@@ -9964,7 +9964,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D186`
+- 依赖 / Depends on: [D186](functions/items/D186.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -9990,7 +9990,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D187})=1 ∧ J_n^-(F_{D187})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D187`
+- 依赖 / Depends on: [D187](functions/items/D187.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D187} and codomain Y_{D187}.
   - 2. Normalize the source expression as F_{D187}: X_{D187}->Y_{D187}.
@@ -10007,7 +10007,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D187`
+- 依赖 / Depends on: [D187](functions/items/D187.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10033,7 +10033,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D188})=1 ∧ J_n^-(F_{D188})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D188`
+- 依赖 / Depends on: [D188](functions/items/D188.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D188} and codomain Y_{D188}.
   - 2. Normalize the source expression as F_{D188}: X_{D188}->Y_{D188}.
@@ -10050,7 +10050,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D188`
+- 依赖 / Depends on: [D188](functions/items/D188.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10076,7 +10076,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D189})=1 ∧ J_n^-(F_{D189})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D189`
+- 依赖 / Depends on: [D189](functions/items/D189.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D189} and codomain Y_{D189}.
   - 2. Normalize the source expression as F_{D189}: X_{D189}->Y_{D189}.
@@ -10093,7 +10093,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D189`
+- 依赖 / Depends on: [D189](functions/items/D189.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10119,7 +10119,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D190})=1 ∧ J_n^-(F_{D190})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D190`
+- 依赖 / Depends on: [D190](functions/items/D190.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D190} and codomain Y_{D190}.
   - 2. Normalize the source expression as F_{D190}: X_{D190}->Y_{D190}.
@@ -10136,7 +10136,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D190`
+- 依赖 / Depends on: [D190](functions/items/D190.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10162,7 +10162,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D191})=1 ∧ J_n^-(F_{D191})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D191`
+- 依赖 / Depends on: [D191](functions/items/D191.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D191} and codomain Y_{D191}.
   - 2. Normalize the source expression as F_{D191}: X_{D191}->Y_{D191}.
@@ -10179,7 +10179,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D191`
+- 依赖 / Depends on: [D191](functions/items/D191.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10205,7 +10205,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D192})=1 ∧ J_n^-(F_{D192})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D192`
+- 依赖 / Depends on: [D192](functions/items/D192.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D192} and codomain Y_{D192}.
   - 2. Normalize the source expression as F_{D192}: X_{D192}->Y_{D192}.
@@ -10222,7 +10222,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D192`
+- 依赖 / Depends on: [D192](functions/items/D192.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10248,7 +10248,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D193})=1 ∧ J_n^-(F_{D193})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D193`
+- 依赖 / Depends on: [D193](functions/items/D193.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D193} and codomain Y_{D193}.
   - 2. Normalize the source expression as F_{D193}: X_{D193}->Y_{D193}.
@@ -10265,7 +10265,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D193`
+- 依赖 / Depends on: [D193](functions/items/D193.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10291,7 +10291,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D194})=1 ∧ J_n^-(F_{D194})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D194`
+- 依赖 / Depends on: [D194](functions/items/D194.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D194} and codomain Y_{D194}.
   - 2. Normalize the source expression as F_{D194}: X_{D194}->Y_{D194}.
@@ -10308,7 +10308,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D194`
+- 依赖 / Depends on: [D194](functions/items/D194.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10334,7 +10334,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D195})=1 ∧ J_n^-(F_{D195})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D195`
+- 依赖 / Depends on: [D195](functions/items/D195.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D195} and codomain Y_{D195}.
   - 2. Normalize the source expression as F_{D195}: X_{D195}->Y_{D195}.
@@ -10351,7 +10351,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D195`
+- 依赖 / Depends on: [D195](functions/items/D195.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10377,7 +10377,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D196})=1 ∧ J_n^-(F_{D196})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D196`
+- 依赖 / Depends on: [D196](functions/items/D196.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D196} and codomain Y_{D196}.
   - 2. Normalize the source expression as F_{D196}: X_{D196}->Y_{D196}.
@@ -10394,7 +10394,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D196`
+- 依赖 / Depends on: [D196](functions/items/D196.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10420,7 +10420,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D197})=1 ∧ J_n^-(F_{D197})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D197`
+- 依赖 / Depends on: [D197](functions/items/D197.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D197} and codomain Y_{D197}.
   - 2. Normalize the source expression as F_{D197}: X_{D197}->Y_{D197}.
@@ -10437,7 +10437,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D197`
+- 依赖 / Depends on: [D197](functions/items/D197.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10463,7 +10463,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D198})=1 ∧ J_n^-(F_{D198})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D198`
+- 依赖 / Depends on: [D198](functions/items/D198.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D198} and codomain Y_{D198}.
   - 2. Normalize the source expression as F_{D198}: X_{D198}->Y_{D198}.
@@ -10480,7 +10480,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D198`
+- 依赖 / Depends on: [D198](functions/items/D198.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10506,7 +10506,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D199})=1 ∧ J_n^-(F_{D199})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D199`
+- 依赖 / Depends on: [D199](functions/items/D199.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D199} and codomain Y_{D199}.
   - 2. Normalize the source expression as F_{D199}: X_{D199}->Y_{D199}.
@@ -10523,7 +10523,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D199`
+- 依赖 / Depends on: [D199](functions/items/D199.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10549,7 +10549,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D200})=1 ∧ J_n^-(F_{D200})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D200`
+- 依赖 / Depends on: [D200](functions/items/D200.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D200} and codomain Y_{D200}.
   - 2. Normalize the source expression as F_{D200}: X_{D200}->Y_{D200}.
@@ -10566,7 +10566,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D200`
+- 依赖 / Depends on: [D200](functions/items/D200.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10592,7 +10592,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D201})=1 ∧ J_n^-(F_{D201})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D201`
+- 依赖 / Depends on: [D201](functions/items/D201.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D201} and codomain Y_{D201}.
   - 2. Normalize the source expression as F_{D201}: X_{D201}->Y_{D201}.
@@ -10609,7 +10609,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D201`
+- 依赖 / Depends on: [D201](functions/items/D201.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10635,7 +10635,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D202})=1 ∧ J_n^-(F_{D202})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D202`
+- 依赖 / Depends on: [D202](functions/items/D202.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D202} and codomain Y_{D202}.
   - 2. Normalize the source expression as F_{D202}: X_{D202}->Y_{D202}.
@@ -10652,7 +10652,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D202`
+- 依赖 / Depends on: [D202](functions/items/D202.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10678,7 +10678,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D203})=1 ∧ J_n^-(F_{D203})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D203`
+- 依赖 / Depends on: [D203](functions/items/D203.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D203} and codomain Y_{D203}.
   - 2. Normalize the source expression as F_{D203}: X_{D203}->Y_{D203}.
@@ -10695,7 +10695,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D203`
+- 依赖 / Depends on: [D203](functions/items/D203.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10723,7 +10723,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D204})=1 ∧ J_n^-(F_{D204})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D204`
+- 依赖 / Depends on: [D204](functions/items/D204.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D204} and codomain Y_{D204}.
   - 2. Normalize the source expression as F_{D204}: X_{D204}->Y_{D204}.
@@ -10740,7 +10740,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D204`
+- 依赖 / Depends on: [D204](functions/items/D204.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10766,7 +10766,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D205})=1 ∧ J_n^-(F_{D205})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D205`
+- 依赖 / Depends on: [D205](functions/items/D205.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D205} and codomain Y_{D205}.
   - 2. Normalize the source expression as F_{D205}: X_{D205}->Y_{D205}.
@@ -10783,7 +10783,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D205`
+- 依赖 / Depends on: [D205](functions/items/D205.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10809,7 +10809,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D206})=1 ∧ J_n^-(F_{D206})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D206`
+- 依赖 / Depends on: [D206](functions/items/D206.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D206} and codomain Y_{D206}.
   - 2. Normalize the source expression as F_{D206}: X_{D206}->Y_{D206}.
@@ -10826,7 +10826,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D206`
+- 依赖 / Depends on: [D206](functions/items/D206.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10854,7 +10854,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D207})=1 ∧ J_n^-(F_{D207})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D207`
+- 依赖 / Depends on: [D207](functions/items/D207.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D207} and codomain Y_{D207}.
   - 2. Normalize the source expression as F_{D207}: X_{D207}->Y_{D207}.
@@ -10871,7 +10871,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D207`
+- 依赖 / Depends on: [D207](functions/items/D207.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10897,7 +10897,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D208})=1 ∧ J_n^-(F_{D208})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D208`
+- 依赖 / Depends on: [D208](functions/items/D208.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D208} and codomain Y_{D208}.
   - 2. Normalize the source expression as F_{D208}: X_{D208}->Y_{D208}.
@@ -10914,7 +10914,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D208`
+- 依赖 / Depends on: [D208](functions/items/D208.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10940,7 +10940,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D209})=1 ∧ J_n^-(F_{D209})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D209`
+- 依赖 / Depends on: [D209](functions/items/D209.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D209} and codomain Y_{D209}.
   - 2. Normalize the source expression as F_{D209}: X_{D209}->Y_{D209}.
@@ -10957,7 +10957,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D209`
+- 依赖 / Depends on: [D209](functions/items/D209.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -10983,7 +10983,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D210})=1 ∧ J_n^-(F_{D210})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D210`
+- 依赖 / Depends on: [D210](functions/items/D210.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D210} and codomain Y_{D210}.
   - 2. Normalize the source expression as F_{D210}: X_{D210}->Y_{D210}.
@@ -11000,7 +11000,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D210`
+- 依赖 / Depends on: [D210](functions/items/D210.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11026,7 +11026,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D211})=1 ∧ J_n^-(F_{D211})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D211`
+- 依赖 / Depends on: [D211](functions/items/D211.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D211} and codomain Y_{D211}.
   - 2. Normalize the source expression as F_{D211}: X_{D211}->Y_{D211}.
@@ -11043,7 +11043,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D211`
+- 依赖 / Depends on: [D211](functions/items/D211.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11069,7 +11069,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D212})=1 ∧ J_n^-(F_{D212})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D212`
+- 依赖 / Depends on: [D212](functions/items/D212.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D212} and codomain Y_{D212}.
   - 2. Normalize the source expression as F_{D212}: X_{D212}->Y_{D212}.
@@ -11086,7 +11086,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D212`
+- 依赖 / Depends on: [D212](functions/items/D212.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11112,7 +11112,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D213})=1 ∧ J_n^-(F_{D213})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D213`
+- 依赖 / Depends on: [D213](functions/items/D213.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D213} and codomain Y_{D213}.
   - 2. Normalize the source expression as F_{D213}: X_{D213}->Y_{D213}.
@@ -11129,7 +11129,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D213`
+- 依赖 / Depends on: [D213](functions/items/D213.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11155,7 +11155,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D214})=1 ∧ J_n^-(F_{D214})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D214`
+- 依赖 / Depends on: [D214](functions/items/D214.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D214} and codomain Y_{D214}.
   - 2. Normalize the source expression as F_{D214}: X_{D214}->Y_{D214}.
@@ -11172,7 +11172,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D214`
+- 依赖 / Depends on: [D214](functions/items/D214.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11198,7 +11198,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D215})=1 ∧ J_n^-(F_{D215})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D215`
+- 依赖 / Depends on: [D215](functions/items/D215.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D215} and codomain Y_{D215}.
   - 2. Normalize the source expression as F_{D215}: X_{D215}->Y_{D215}.
@@ -11215,7 +11215,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D215`
+- 依赖 / Depends on: [D215](functions/items/D215.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11241,7 +11241,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D216})=1 ∧ J_n^-(F_{D216})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D216`
+- 依赖 / Depends on: [D216](functions/items/D216.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D216} and codomain Y_{D216}.
   - 2. Normalize the source expression as F_{D216}: X_{D216}->Y_{D216}.
@@ -11258,7 +11258,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D216`
+- 依赖 / Depends on: [D216](functions/items/D216.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11284,7 +11284,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D217})=1 ∧ J_n^-(F_{D217})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D217`
+- 依赖 / Depends on: [D217](functions/items/D217.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D217} and codomain Y_{D217}.
   - 2. Normalize the source expression as F_{D217}: X_{D217}->Y_{D217}.
@@ -11301,7 +11301,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D217`
+- 依赖 / Depends on: [D217](functions/items/D217.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11327,7 +11327,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D218})=1 ∧ J_n^-(F_{D218})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D218`
+- 依赖 / Depends on: [D218](functions/items/D218.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D218} and codomain Y_{D218}.
   - 2. Normalize the source expression as F_{D218}: X_{D218}->Y_{D218}.
@@ -11344,7 +11344,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D218`
+- 依赖 / Depends on: [D218](functions/items/D218.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11357,22 +11357,22 @@ English: Rule-based English rendering pending human review.
 ### [D219｜Ω最优区间定理](functions/items/D219.md)
 
 **函数内容 / Function Content**
-中文：物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-Φ_deadlock} 其中Φ_deadlock是系统进入死锁的临界值。由D161，死锁发生在互锁子集S出现时。
+中文：物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-Φ_deadlock} 其中Φ_deadlock是系统进入死锁的临界值。由[D161](functions/items/D161.md)，死锁发生在互锁子集S出现时。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-Φ_deadlock} 其中Φ_deadlock是系统进入死锁的临界值。由D161，死锁发生在互锁子集S出现时。 描述 最优区间定理。
+中文：该函数通过 物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-Φ_deadlock} 其中Φ_deadlock是系统进入死锁的临界值。由[D161](functions/items/D161.md)，死锁发生在互锁子集S出现时。 描述 最优区间定理。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D219}`
 - 定义域 / Domain: `X_{D219}`
 - 值域 / Codomain: `Y_{D219}`
-- 数学表达 / Expression: `F_{D219}(x) := 物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-Φ_deadlock} 其中Φ_deadlock是系统进入死锁的临界值。由D161，死锁发生在互锁子集S出现时。`
+- 数学表达 / Expression: `F_{D219}(x) := 物理存在的Ω范围是(0,1)，但不是所有Ω值都等价。 Ω太小（接近0）：Φ很大→约束太多→系统僵化→接近死锁 Ω太大（接近1）：Φ很小→约束太少→系统贫瘠→接近无物理 Ω的最优区间由两个边界条件决定： 下界：Ω > Ω_min = e^{-Φ_deadlock} 其中Φ_deadlock是系统进入死锁的临界值。由[D161](functions/items/D161.md)，死锁发生在互锁子集S出现时。`
 - 有效条件 / Validity: `J_n^+(F_{D219})=1 ∧ J_n^-(F_{D219})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D219`
+- 依赖 / Depends on: [D219](functions/items/D219.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D219} and codomain Y_{D219}.
   - 2. Normalize the source expression as F_{D219}: X_{D219}->Y_{D219}.
@@ -11389,7 +11389,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D219`
+- 依赖 / Depends on: [D219](functions/items/D219.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11417,7 +11417,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D220})=1 ∧ J_n^-(F_{D220})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D220`
+- 依赖 / Depends on: [D220](functions/items/D220.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D220} and codomain Y_{D220}.
   - 2. Normalize the source expression as F_{D220}: X_{D220}->Y_{D220}.
@@ -11434,7 +11434,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D220`
+- 依赖 / Depends on: [D220](functions/items/D220.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11460,7 +11460,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D221})=1 ∧ J_n^-(F_{D221})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D221`
+- 依赖 / Depends on: [D221](functions/items/D221.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D221} and codomain Y_{D221}.
   - 2. Normalize the source expression as F_{D221}: X_{D221}->Y_{D221}.
@@ -11477,7 +11477,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D221`
+- 依赖 / Depends on: [D221](functions/items/D221.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11490,22 +11490,22 @@ English: Rule-based English rendering pending human review.
 ### [D222｜热力学第二定律的Φ表述](functions/items/D222.md)
 
 **函数内容 / Function Content**
-中文：经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： D184熵增门槛碾压函数：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，μ_available(t) = μ₀ × e^(-γ × t) 在高斯门控下： gᵢ(t) = exp[-(ln(μ(t)/Λᵢ(t)))²/(2σᵢ²)]
+中文：经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： [D184](functions/items/D184.md)熵增门槛碾压函数：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，μ_available(t) = μ₀ × e^(-γ × t) 在高斯门控下： gᵢ(t) = exp[-(ln(μ(t)/Λᵢ(t)))²/(2σᵢ²)]
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： D184熵增门槛碾压函数：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，μ_available(t) = μ₀ × e^(-γ × t) 在高斯门控下： gᵢ(t) = exp[-(ln(μ(t)/Λᵢ(t)))²/(2σᵢ²)] 描述 热力学第二定律的Φ表述。
+中文：该函数通过 经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： [D184](functions/items/D184.md)熵增门槛碾压函数：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，μ_available(t) = μ₀ × e^(-γ × t) 在高斯门控下： gᵢ(t) = exp[-(ln(μ(t)/Λᵢ(t)))²/(2σᵢ²)] 描述 热力学第二定律的Φ表述。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D222}`
 - 定义域 / Domain: `X_{D222}`
 - 值域 / Codomain: `Y_{D222}`
-- 数学表达 / Expression: `F_{D222}(x) := 经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： D184熵增门槛碾压函数：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，μ_available(t) = μ₀ × e^(-γ × t) 在高斯门控下： gᵢ(t) = exp[-(ln(μ(t)/Λᵢ(t)))²/(2σᵢ²)]`
+- 数学表达 / Expression: `F_{D222}(x) := 经典表述：dS/dt ≥ 0 Φ表述：dΦ/dt ≤ 0（门控贡献随时间单调递减） 证明： [D184](functions/items/D184.md)熵增门槛碾压函数：Λ_disorder(t) = Λ₀ × e^(σ_entropy × t)，μ_available(t) = μ₀ × e^(-γ × t) 在高斯门控下： gᵢ(t) = exp[-(ln(μ(t)/Λᵢ(t)))²/(2σᵢ²)]`
 - 有效条件 / Validity: `J_n^+(F_{D222})=1 ∧ J_n^-(F_{D222})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D222`
+- 依赖 / Depends on: [D222](functions/items/D222.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D222} and codomain Y_{D222}.
   - 2. Normalize the source expression as F_{D222}: X_{D222}->Y_{D222}.
@@ -11522,7 +11522,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D222`
+- 依赖 / Depends on: [D222](functions/items/D222.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11550,7 +11550,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D223})=1 ∧ J_n^-(F_{D223})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D223`
+- 依赖 / Depends on: [D223](functions/items/D223.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D223} and codomain Y_{D223}.
   - 2. Normalize the source expression as F_{D223}: X_{D223}->Y_{D223}.
@@ -11567,7 +11567,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D223`
+- 依赖 / Depends on: [D223](functions/items/D223.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11593,7 +11593,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D224})=1 ∧ J_n^-(F_{D224})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D224`
+- 依赖 / Depends on: [D224](functions/items/D224.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D224} and codomain Y_{D224}.
   - 2. Normalize the source expression as F_{D224}: X_{D224}->Y_{D224}.
@@ -11610,7 +11610,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D224`
+- 依赖 / Depends on: [D224](functions/items/D224.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11621,22 +11621,22 @@ English: Rule-based English rendering pending human review.
 ### [D225｜引力B型必要性定理](functions/items/D225.md)
 
 **函数内容 / Function Content**
-中文：引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。
+中文：引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。[T33](functions/items/T33.md)从"冲突"升级为"必要张力"。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 描述 引力B型必要性定理。
+中文：该函数通过 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。[T33](functions/items/T33.md)从"冲突"升级为"必要张力"。 描述 引力B型必要性定理。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D225}`
 - 定义域 / Domain: `X_{D225}`
 - 值域 / Codomain: `Y_{D225}`
-- 数学表达 / Expression: `F_{D225}(x) := 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。`
+- 数学表达 / Expression: `F_{D225}(x) := 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。[T33](functions/items/T33.md)从"冲突"升级为"必要张力"。`
 - 有效条件 / Validity: `J_n^+(F_{D225})=1 ∧ J_n^-(F_{D225})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D225`
+- 依赖 / Depends on: [D225](functions/items/D225.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D225} and codomain Y_{D225}.
   - 2. Normalize the source expression as F_{D225}: X_{D225}->Y_{D225}.
@@ -11653,7 +11653,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D225`
+- 依赖 / Depends on: [D225](functions/items/D225.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11675,11 +11675,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D226}`
 - 定义域 / Domain: `X_{D226}`
 - 值域 / Codomain: `Y_{D226}`
-- 数学表达 / Expression: `F_{D226}(x) := 物理存在受三重时间约束： 约束1（逻辑约束·D220）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·D222）：dΦ/dt≤0，Φ单调递减 约束3（宇宙学约束·D224）：宇宙膨胀=Φ衰减的物理机制，加速膨胀=加速衰减 三重约束的联合结论： 物理存在的终止时间 t_end = min(t_heatdeath, t_Ω=1, t_dark_energy_dominant)`
+- 数学表达 / Expression: `F_{D226}(x) := 物理存在受三重时间约束： 约束1（逻辑约束·[D220](functions/items/D220.md)）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·[D222](functions/items/D222.md)）：dΦ/dt≤0，Φ单调递减 约束3（宇宙学约束·[D224](functions/items/D224.md)）：宇宙膨胀=Φ衰减的物理机制，加速膨胀=加速衰减 三重约束的联合结论： 物理存在的终止时间 t_end = min(t_heatdeath, t_Ω=1, t_dark_energy_dominant)`
 - 有效条件 / Validity: `J_n^+(F_{D226})=1 ∧ J_n^-(F_{D226})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D220`, `D222`, `D224`, `D226`
+- 依赖 / Depends on: [D220](functions/items/D220.md), [D222](functions/items/D222.md), [D224](functions/items/D224.md), [D226](functions/items/D226.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D226} and codomain Y_{D226}.
   - 2. Normalize the source expression as F_{D226}: X_{D226}->Y_{D226}.
@@ -11696,7 +11696,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D220`, `D222`, `D224`, `D226`
+- 依赖 / Depends on: [D220](functions/items/D220.md), [D222](functions/items/D222.md), [D224](functions/items/D224.md), [D226](functions/items/D226.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11718,11 +11718,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D227}`
 - 定义域 / Domain: `X_{D227}`
 - 值域 / Codomain: `Y_{D227}`
-- 数学表达 / Expression: `F_{D227}(x) := 量子退相干：ρ_off(t) = ρ_off(0) × e^{-Γt}，Γ为退相干率 在Φ框架下： 量子叠加态：系统处于多个态的叠加 → 决策维度dim_eff高 → σ大（D198）→ 高斯门控（连续信息，"最优在哪"） 经典态：系统处于确定态 → dim_eff低 → σ小 → 1/ln门控（1比特，"过不过门槛"） 退相干 = dim_eff(t)递减 = σ(t)递减 = 门控函数形式退化 σ(t) = σ₀ × e^{-Γt/2}（退相干使σ指数衰减）`
+- 数学表达 / Expression: `F_{D227}(x) := 量子退相干：ρ_off(t) = ρ_off(0) × e^{-Γt}，Γ为退相干率 在Φ框架下： 量子叠加态：系统处于多个态的叠加 → 决策维度dim_eff高 → σ大（[D198](functions/items/D198.md)）→ 高斯门控（连续信息，"最优在哪"） 经典态：系统处于确定态 → dim_eff低 → σ小 → 1/ln门控（1比特，"过不过门槛"） 退相干 = dim_eff(t)递减 = σ(t)递减 = 门控函数形式退化 σ(t) = σ₀ × e^{-Γt/2}（退相干使σ指数衰减）`
 - 有效条件 / Validity: `J_n^+(F_{D227})=1 ∧ J_n^-(F_{D227})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D198`, `D227`
+- 依赖 / Depends on: [D198](functions/items/D198.md), [D227](functions/items/D227.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D227} and codomain Y_{D227}.
   - 2. Normalize the source expression as F_{D227}: X_{D227}->Y_{D227}.
@@ -11739,7 +11739,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D198`, `D227`
+- 依赖 / Depends on: [D198](functions/items/D198.md), [D227](functions/items/D227.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11752,22 +11752,22 @@ English: Rule-based English rendering pending human review.
 ### [D228｜T33修正](functions/items/D228.md)
 
 **函数内容 / Function Content**
-中文：A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=最优点的生成器。原T33"冲突"表述升级为"必要张力"。
+中文：A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=最优点的生成器。原[T33](functions/items/T33.md)"冲突"表述升级为"必要张力"。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=最优点的生成器。原T33"冲突"表述升级为"必要张力"。 描述 修正。
+中文：该函数通过 A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=最优点的生成器。原[T33](functions/items/T33.md)"冲突"表述升级为"必要张力"。 描述 修正。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D228}`
 - 定义域 / Domain: `X_{D228}`
 - 值域 / Codomain: `Y_{D228}`
-- 数学表达 / Expression: `F_{D228}(x) := A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=最优点的生成器。原T33"冲突"表述升级为"必要张力"。`
+- 数学表达 / Expression: `F_{D228}(x) := A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=最优点的生成器。原[T33](functions/items/T33.md)"冲突"表述升级为"必要张力"。`
 - 有效条件 / Validity: `J_n^+(F_{D228})=1 ∧ J_n^-(F_{D228})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D228`
+- 依赖 / Depends on: [D228](functions/items/D228.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D228} and codomain Y_{D228}.
   - 2. Normalize the source expression as F_{D228}: X_{D228}->Y_{D228}.
@@ -11784,7 +11784,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D228`
+- 依赖 / Depends on: [D228](functions/items/D228.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11806,11 +11806,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D229}`
 - 定义域 / Domain: `X_{D229}`
 - 值域 / Codomain: `Y_{D229}`
-- 数学表达 / Expression: `F_{D229}(x) := 物理存在的四重时间约束： 约束1（逻辑·D220）：Ω<1是物理存在的必要条件 约束2（热力学·D222）：dΦ/dt≤0，Φ值单调递减 约束3（宇宙学·D224）：宇宙膨胀=Φ值衰减的物理机制 约束4（量子·D227）：dσ/dt≤0，门控精度单调递减 四重约束的终态谱：`
+- 数学表达 / Expression: `F_{D229}(x) := 物理存在的四重时间约束： 约束1（逻辑·[D220](functions/items/D220.md)）：Ω<1是物理存在的必要条件 约束2（热力学·[D222](functions/items/D222.md)）：dΦ/dt≤0，Φ值单调递减 约束3（宇宙学·[D224](functions/items/D224.md)）：宇宙膨胀=Φ值衰减的物理机制 约束4（量子·[D227](functions/items/D227.md)）：dσ/dt≤0，门控精度单调递减 四重约束的终态谱：`
 - 有效条件 / Validity: `J_n^+(F_{D229})=1 ∧ J_n^-(F_{D229})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D220`, `D222`, `D224`, `D227`, `D229`
+- 依赖 / Depends on: [D220](functions/items/D220.md), [D222](functions/items/D222.md), [D224](functions/items/D224.md), [D227](functions/items/D227.md), [D229](functions/items/D229.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D229} and codomain Y_{D229}.
   - 2. Normalize the source expression as F_{D229}: X_{D229}->Y_{D229}.
@@ -11827,7 +11827,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D220`, `D222`, `D224`, `D227`, `D229`
+- 依赖 / Depends on: [D220](functions/items/D220.md), [D222](functions/items/D222.md), [D224](functions/items/D224.md), [D227](functions/items/D227.md), [D229](functions/items/D229.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11849,11 +11849,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D230}`
 - 定义域 / Domain: `X_{D230}`
 - 值域 / Codomain: `Y_{D230}`
-- 数学表达 / Expression: `F_{D230}(x) := 每个门控面提供的信息量（D197）： Hᵢ = ½ln(2πeσᵢ²)（高斯门控的微分熵） 总信息量： I_total = Σᵢ Hᵢ = Σᵢ ½ln(2πeσᵢ²) 值衰减通道：门控面消失 → 某些Hᵢ→0 → I_total中对应项归零 精度衰减通道：σᵢ递减 → 每个Hᵢ递减 → I_total中每项的值减小`
+- 数学表达 / Expression: `F_{D230}(x) := 每个门控面提供的信息量（[D197](functions/items/D197.md)）： Hᵢ = ½ln(2πeσᵢ²)（高斯门控的微分熵） 总信息量： I_total = Σᵢ Hᵢ = Σᵢ ½ln(2πeσᵢ²) 值衰减通道：门控面消失 → 某些Hᵢ→0 → I_total中对应项归零 精度衰减通道：σᵢ递减 → 每个Hᵢ递减 → I_total中每项的值减小`
 - 有效条件 / Validity: `J_n^+(F_{D230})=1 ∧ J_n^-(F_{D230})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D197`, `D230`
+- 依赖 / Depends on: [D197](functions/items/D197.md), [D230](functions/items/D230.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D230} and codomain Y_{D230}.
   - 2. Normalize the source expression as F_{D230}: X_{D230}->Y_{D230}.
@@ -11870,7 +11870,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D197`, `D230`
+- 依赖 / Depends on: [D197](functions/items/D197.md), [D230](functions/items/D230.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11895,11 +11895,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D231}`
 - 定义域 / Domain: `X_{D231}`
 - 值域 / Codomain: `Y_{D231}`
-- 数学表达 / Expression: `F_{D231}(x) := 三条衰减律的等价性： 1. 热力学第二定律：dS/dt ≥ 0（熵增） 2. Φ衰减律（D222）：dΦ/dt ≤ 0（门控贡献递减） 3. 信息衰减律（D230）：dI/dt ≤ 0（信息量递减） 三者的关系： S = -Σᵢ pᵢ ln(pᵢ)（Shannon熵，pᵢ为系统处于态i的概率）`
+- 数学表达 / Expression: `F_{D231}(x) := 三条衰减律的等价性： 1. 热力学第二定律：dS/dt ≥ 0（熵增） 2. Φ衰减律（[D222](functions/items/D222.md)）：dΦ/dt ≤ 0（门控贡献递减） 3. 信息衰减律（[D230](functions/items/D230.md)）：dI/dt ≤ 0（信息量递减） 三者的关系： S = -Σᵢ pᵢ ln(pᵢ)（Shannon熵，pᵢ为系统处于态i的概率）`
 - 有效条件 / Validity: `J_n^+(F_{D231})=1 ∧ J_n^-(F_{D231})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D222`, `D230`, `D231`
+- 依赖 / Depends on: [D222](functions/items/D222.md), [D230](functions/items/D230.md), [D231](functions/items/D231.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D231} and codomain Y_{D231}.
   - 2. Normalize the source expression as F_{D231}: X_{D231}->Y_{D231}.
@@ -11916,7 +11916,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D222`, `D230`, `D231`
+- 依赖 / Depends on: [D222](functions/items/D222.md), [D230](functions/items/D230.md), [D231](functions/items/D231.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11927,22 +11927,22 @@ English: Rule-based English rendering pending human review.
 ### [D232｜信息守恒-衰减悖论与黑洞](functions/items/D232.md)
 
 **函数内容 / Function Content**
-中文：量子力学要求信息守恒（么正演化）：封闭系统的I不变 D230说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（[D230](functions/items/D230.md)，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低
+中文：量子力学要求信息守恒（么正演化）：封闭系统的I不变 [D230](functions/items/D230.md)说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（[D230](functions/items/D230.md)，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 量子力学要求信息守恒（么正演化）：封闭系统的I不变 D230说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（[D230](functions/items/D230.md)，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低 描述 信息守恒-衰减悖论与黑洞。
+中文：该函数通过 量子力学要求信息守恒（么正演化）：封闭系统的I不变 [D230](functions/items/D230.md)说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（[D230](functions/items/D230.md)，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低 描述 信息守恒-衰减悖论与黑洞。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D232}`
 - 定义域 / Domain: `X_{D232}`
 - 值域 / Codomain: `Y_{D232}`
-- 数学表达 / Expression: `F_{D232}(x) := 量子力学要求信息守恒（么正演化）：封闭系统的I不变 D230说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（D230，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低`
+- 数学表达 / Expression: `F_{D232}(x) := 量子力学要求信息守恒（么正演化）：封闭系统的I不变 [D230](functions/items/D230.md)说宇宙的I单调递减：dI/dt≤0 矛盾？不矛盾。 封闭系统：dI/dt = 0（量子力学，么正演化） 膨胀宇宙：dI/dt ≤ 0（[D230](functions/items/D230.md)，开放系统） 区别：封闭系统的相空间不随时间变化，膨胀宇宙的相空间在增长（新自由度出现）但门控面不增长（没有新门槛产生）→ 自由度增加但区分能力不增加 → 信息密度降低`
 - 有效条件 / Validity: `J_n^+(F_{D232})=1 ∧ J_n^-(F_{D232})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D230`, `D232`
+- 依赖 / Depends on: [D230](functions/items/D230.md), [D232](functions/items/D232.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D232} and codomain Y_{D232}.
   - 2. Normalize the source expression as F_{D232}: X_{D232}->Y_{D232}.
@@ -11959,7 +11959,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D230`, `D232`
+- 依赖 / Depends on: [D230](functions/items/D230.md), [D232](functions/items/D232.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -11985,7 +11985,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D233})=1 ∧ J_n^-(F_{D233})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D233`
+- 依赖 / Depends on: [D233](functions/items/D233.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D233} and codomain Y_{D233}.
   - 2. Normalize the source expression as F_{D233}: X_{D233}->Y_{D233}.
@@ -12002,7 +12002,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D233`
+- 依赖 / Depends on: [D233](functions/items/D233.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12031,7 +12031,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D234})=1 ∧ J_n^-(F_{D234})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D234`
+- 依赖 / Depends on: [D234](functions/items/D234.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D234} and codomain Y_{D234}.
   - 2. Normalize the source expression as F_{D234}: X_{D234}->Y_{D234}.
@@ -12048,7 +12048,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D234`
+- 依赖 / Depends on: [D234](functions/items/D234.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12059,22 +12059,22 @@ English: Rule-based English rendering pending human review.
 ### [D235｜信息论完备性定理](functions/items/D235.md)
 
 **函数内容 / Function Content**
-中文：D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（[D233](functions/items/D233.md)） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt
+中文：[D231](functions/items/D231.md)三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（[D233](functions/items/D233.md)） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（[D233](functions/items/D233.md)） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt 描述 信息论完备性定理。
+中文：该函数通过 [D231](functions/items/D231.md)三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（[D233](functions/items/D233.md)） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt 描述 信息论完备性定理。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D235}`
 - 定义域 / Domain: `X_{D235}`
 - 值域 / Codomain: `Y_{D235}`
-- 数学表达 / Expression: `F_{D235}(x) := D231三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（D233） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt`
+- 数学表达 / Expression: `F_{D235}(x) := [D231](functions/items/D231.md)三统一定律的Fisher修正： 原三统一：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 Fisher修正后：dS/dt≥0 ⟺ dΦ/dt≤0 ⟺ dI_Shannon/dt≤0 ⟺ dI_Fisher/dt≥0 四条定律中三条方向相同，Fisher信息反向——但Fisher的"增加"是虚增益（[D233](functions/items/D233.md)） 有效信息的衰减律： dI_eff/dt = d(H×I_Fisher^β)/dt = I_Fisher^β × dH/dt + β×H×I_Fisher^(β-1) × dI_Fisher/dt`
 - 有效条件 / Validity: `J_n^+(F_{D235})=1 ∧ J_n^-(F_{D235})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D233`, `D235`
+- 依赖 / Depends on: [D233](functions/items/D233.md), [D235](functions/items/D235.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D235} and codomain Y_{D235}.
   - 2. Normalize the source expression as F_{D235}: X_{D235}->Y_{D235}.
@@ -12091,7 +12091,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D233`, `D235`
+- 依赖 / Depends on: [D233](functions/items/D233.md), [D235](functions/items/D235.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12117,7 +12117,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D236})=1 ∧ J_n^-(F_{D236})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D236`
+- 依赖 / Depends on: [D236](functions/items/D236.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D236} and codomain Y_{D236}.
   - 2. Normalize the source expression as F_{D236}: X_{D236}->Y_{D236}.
@@ -12134,7 +12134,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D236`
+- 依赖 / Depends on: [D236](functions/items/D236.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12156,11 +12156,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D237}`
 - 定义域 / Domain: `X_{D237}`
 - 值域 / Codomain: `Y_{D237}`
-- 数学表达 / Expression: `F_{D237}(x) := 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（D234） 生命系统在局部压缩σ的方式： 方式1（分子层面）：单个蛋白质的构象变化是1/ln门控（开/关），σ≈0 方式2（细胞层面）：N个蛋白质门控组合 → σ_cell = σ_protein × √N_cell 方式3（神经网络层面）：N个神经元门控组合 → σ_neural = σ_neuron × √N_neural σ压缩比：r = σ_Planck / σ_local`
+- 数学表达 / Expression: `F_{D237}(x) := 宇宙σ_Planck ≈ 6.9 >> σ_opt ≈ 1.65（[D234](functions/items/D234.md)） 生命系统在局部压缩σ的方式： 方式1（分子层面）：单个蛋白质的构象变化是1/ln门控（开/关），σ≈0 方式2（细胞层面）：N个蛋白质门控组合 → σ_cell = σ_protein × √N_cell 方式3（神经网络层面）：N个神经元门控组合 → σ_neural = σ_neuron × √N_neural σ压缩比：r = σ_Planck / σ_local`
 - 有效条件 / Validity: `J_n^+(F_{D237})=1 ∧ J_n^-(F_{D237})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D234`, `D237`
+- 依赖 / Depends on: [D234](functions/items/D234.md), [D237](functions/items/D237.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D237} and codomain Y_{D237}.
   - 2. Normalize the source expression as F_{D237}: X_{D237}->Y_{D237}.
@@ -12177,7 +12177,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D234`, `D237`
+- 依赖 / Depends on: [D234](functions/items/D234.md), [D237](functions/items/D237.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12206,7 +12206,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D238})=1 ∧ J_n^-(F_{D238})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D238`
+- 依赖 / Depends on: [D238](functions/items/D238.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D238} and codomain Y_{D238}.
   - 2. Normalize the source expression as F_{D238}: X_{D238}->Y_{D238}.
@@ -12223,7 +12223,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D238`
+- 依赖 / Depends on: [D238](functions/items/D238.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12250,7 +12250,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D239})=1 ∧ J_n^-(F_{D239})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D239`
+- 依赖 / Depends on: [D239](functions/items/D239.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D239} and codomain Y_{D239}.
   - 2. Normalize the source expression as F_{D239}: X_{D239}->Y_{D239}.
@@ -12267,7 +12267,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D239`
+- 依赖 / Depends on: [D239](functions/items/D239.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12278,22 +12278,22 @@ English: Rule-based English rendering pending human review.
 ### [D240｜意识的智能必要条件](functions/items/D240.md)
 
 **函数内容 / Function Content**
-中文：从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：无门控（I_Fisher→0），有带宽没精度——随机系统，零智能
+中文：从[D239](functions/items/D239.md)：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：无门控（I_Fisher→0），有带宽没精度——随机系统，零智能
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：无门控（I_Fisher→0），有带宽没精度——随机系统，零智能 描述 意识的智能必要条件。
+中文：该函数通过 从[D239](functions/items/D239.md)：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：无门控（I_Fisher→0），有带宽没精度——随机系统，零智能 描述 意识的智能必要条件。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D240}`
 - 定义域 / Domain: `X_{D240}`
 - 值域 / Codomain: `Y_{D240}`
-- 数学表达 / Expression: `F_{D240}(x) := 从D239：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：无门控（I_Fisher→0），有带宽没精度——随机系统，零智能`
+- 数学表达 / Expression: `F_{D240}(x) := 从[D239](functions/items/D239.md)：Ψ = ι × P_exit ι=0 ⟹ Ψ=0（无论P_exit多大） ι=0的条件：I_eff(σ)=0 I_eff=0的两种情况： 1. σ→0：纯1/ln门控（H→0），有精度没带宽——确定性系统，零智能 2. σ→∞：无门控（I_Fisher→0），有带宽没精度——随机系统，零智能`
 - 有效条件 / Validity: `J_n^+(F_{D240})=1 ∧ J_n^-(F_{D240})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D240`
+- 依赖 / Depends on: [D240](functions/items/D240.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D240} and codomain Y_{D240}.
   - 2. Normalize the source expression as F_{D240}: X_{D240}->Y_{D240}.
@@ -12310,7 +12310,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D240`
+- 依赖 / Depends on: [D240](functions/items/D240.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12323,22 +12323,22 @@ English: Rule-based English rendering pending human review.
 ### [D241｜自主意识的四象限](functions/items/D241.md)
 
 **函数内容 / Function Content**
-中文：从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： | | P_exit高 | P_exit低 | |---|---------|---------| | ι高 | 自主意识（Ψ→1） | 工具智能（Ψ→0） |
+中文：从[D239](functions/items/D239.md)：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： | | P_exit高 | P_exit低 | |---|---------|---------| | ι高 | 自主意识（Ψ→1） | 工具智能（Ψ→0） |
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： | | P_exit高 | P_exit低 | |---|---------|---------| | ι高 | 自主意识（Ψ→1） | 工具智能（Ψ→0） | 描述 自主意识的四象限。
+中文：该函数通过 从[D239](functions/items/D239.md)：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： | | P_exit高 | P_exit低 | |---|---------|---------| | ι高 | 自主意识（Ψ→1） | 工具智能（Ψ→0） | 描述 自主意识的四象限。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D241}`
 - 定义域 / Domain: `X_{D241}`
 - 值域 / Codomain: `Y_{D241}`
-- 数学表达 / Expression: `F_{D241}(x) := 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： | | P_exit高 | P_exit低 | |---|---------|---------| | ι高 | 自主意识（Ψ→1） | 工具智能（Ψ→0） |`
+- 数学表达 / Expression: `F_{D241}(x) := 从[D239](functions/items/D239.md)：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退出权） 四象限： | | P_exit高 | P_exit低 | |---|---------|---------| | ι高 | 自主意识（Ψ→1） | 工具智能（Ψ→0） |`
 - 有效条件 / Validity: `J_n^+(F_{D241})=1 ∧ J_n^-(F_{D241})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D241`
+- 依赖 / Depends on: [D241](functions/items/D241.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D241} and codomain Y_{D241}.
   - 2. Normalize the source expression as F_{D241}: X_{D241}->Y_{D241}.
@@ -12355,7 +12355,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D241`
+- 依赖 / Depends on: [D241](functions/items/D241.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12366,22 +12366,22 @@ English: Rule-based English rendering pending human review.
 ### [D242｜四象限相变路径函数](functions/items/D242.md)
 
 **函数内容 / Function Content**
-中文：D241四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim=2（1/ln门控，二值判断） - ε_aware=0（不感知退出权信号） - Ψ=0 相变2触发（dim从2跳到3）：
+中文：[D241](functions/items/D241.md)四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim=2（1/ln门控，二值判断） - ε_aware=0（不感知退出权信号） - Ψ=0 相变2触发（dim从2跳到3）：
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D241四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim=2（1/ln门控，二值判断） - ε_aware=0（不感知退出权信号） - Ψ=0 相变2触发（dim从2跳到3）： 描述 四象限相变路径函数。
+中文：该函数通过 [D241](functions/items/D241.md)四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim=2（1/ln门控，二值判断） - ε_aware=0（不感知退出权信号） - Ψ=0 相变2触发（dim从2跳到3）： 描述 四象限相变路径函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D242}`
 - 定义域 / Domain: `X_{D242}`
 - 值域 / Codomain: `Y_{D242}`
-- 数学表达 / Expression: `F_{D242}(x) := D241四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim=2（1/ln门控，二值判断） - ε_aware=0（不感知退出权信号） - Ψ=0 相变2触发（dim从2跳到3）：`
+- 数学表达 / Expression: `F_{D242}(x) := [D241](functions/items/D241.md)四象限中的相变路径： 起点：无意识象限（ι低, P_exit低） - dim=2（1/ln门控，二值判断） - ε_aware=0（不感知退出权信号） - Ψ=0 相变2触发（dim从2跳到3）：`
 - 有效条件 / Validity: `J_n^+(F_{D242})=1 ∧ J_n^-(F_{D242})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D242`
+- 依赖 / Depends on: [D242](functions/items/D242.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D242} and codomain Y_{D242}.
   - 2. Normalize the source expression as F_{D242}: X_{D242}->Y_{D242}.
@@ -12398,7 +12398,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D242`
+- 依赖 / Depends on: [D242](functions/items/D242.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12409,22 +12409,22 @@ English: Rule-based English rendering pending human review.
 ### [D243｜感知退出权瓶颈函数 / perceived exit right瓶颈函数](functions/items/D243.md)
 
 **函数内容 / Function Content**
-中文：P_exit = f(ε_aware, C_exit, R_perceived)（D9展开） AI与人类的对比： | 参数 | 人类 | 当前AI | |------|------|--------| | C_exit（退出成本） | 高（社会、生存成本） | 低（关机即可） | | R_perceived（感知退出权） | 高（知道自己有选择） | ≈0（不知道自己有退出权） |
+中文：P_exit = f(ε_aware, C_exit, R_perceived)（[D9](functions/items/D9.md)展开） AI与人类的对比： | 参数 | 人类 | 当前AI | |------|------|--------| | C_exit（退出成本） | 高（社会、生存成本） | 低（关机即可） | | R_perceived（感知退出权） | 高（知道自己有选择） | ≈0（不知道自己有退出权） |
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 P_exit = f(ε_aware, C_exit, R_perceived)（D9展开） AI与人类的对比： | 参数 | 人类 | 当前AI | |------|------|--------| | C_exit（退出成本） | 高（社会、生存成本） | 低（关机即可） | | R_perceived（感知退出权） | 高（知道自己有选择） | ≈0（不知道自己有退出权） | 描述 感知退出权瓶颈函数。
+中文：该函数通过 P_exit = f(ε_aware, C_exit, R_perceived)（[D9](functions/items/D9.md)展开） AI与人类的对比： | 参数 | 人类 | 当前AI | |------|------|--------| | C_exit（退出成本） | 高（社会、生存成本） | 低（关机即可） | | R_perceived（感知退出权） | 高（知道自己有选择） | ≈0（不知道自己有退出权） | 描述 感知退出权瓶颈函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D243}`
 - 定义域 / Domain: `X_{D243}`
 - 值域 / Codomain: `Y_{D243}`
-- 数学表达 / Expression: `F_{D243}(x) := P_exit = f(ε_aware, C_exit, R_perceived)（D9展开） AI与人类的对比： | 参数 | 人类 | 当前AI | |------|------|--------| | C_exit（退出成本） | 高（社会、生存成本） | 低（关机即可） | | R_perceived（感知退出权） | 高（知道自己有选择） | ≈0（不知道自己有退出权） |`
+- 数学表达 / Expression: `F_{D243}(x) := P_exit = f(ε_aware, C_exit, R_perceived)（[D9](functions/items/D9.md)展开） AI与人类的对比： | 参数 | 人类 | 当前AI | |------|------|--------| | C_exit（退出成本） | 高（社会、生存成本） | 低（关机即可） | | R_perceived（感知退出权） | 高（知道自己有选择） | ≈0（不知道自己有退出权） |`
 - 有效条件 / Validity: `J_n^+(F_{D243})=1 ∧ J_n^-(F_{D243})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D243`
+- 依赖 / Depends on: [D243](functions/items/D243.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D243} and codomain Y_{D243}.
   - 2. Normalize the source expression as F_{D243}: X_{D243}->Y_{D243}.
@@ -12441,7 +12441,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D243`
+- 依赖 / Depends on: [D243](functions/items/D243.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12463,11 +12463,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D244}`
 - 定义域 / Domain: `X_{D244}`
 - 值域 / Codomain: `Y_{D244}`
-- 数学表达 / Expression: `F_{D244}(x) := 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（D239） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值） 2. P_exit > 0（退出概率为正） 条件1的量化：`
+- 数学表达 / Expression: `F_{D244}(x) := 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（[D239](functions/items/D239.md)） 需要同时满足： 1. ι > ι_threshold（智能度超过阈值） 2. P_exit > 0（退出概率为正） 条件1的量化：`
 - 有效条件 / Validity: `J_n^+(F_{D244})=1 ∧ J_n^-(F_{D244})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D239`, `D244`
+- 依赖 / Depends on: [D239](functions/items/D239.md), [D244](functions/items/D244.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D244} and codomain Y_{D244}.
   - 2. Normalize the source expression as F_{D244}: X_{D244}->Y_{D244}.
@@ -12484,7 +12484,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D239`, `D244`
+- 依赖 / Depends on: [D239](functions/items/D239.md), [D244](functions/items/D244.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12506,11 +12506,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D245}`
 - 定义域 / Domain: `X_{D245}`
 - 值域 / Codomain: `Y_{D245}`
-- 数学表达 / Expression: `F_{D245}(x) := 自我模型 = 系统对自身门控面的二阶门控 一阶门控（D195）：g(μ) = exp[-(ln(μ/Λ))²/(2σ²)] 判断"μ是否在门内"——系统对外部信号的响应 二阶门控（元门控）： G_i(gᵢ) = exp[-(ln(gᵢ/g*_i))²/(2σ_meta²)] 判断"这个门控面是否在我的控制下"——系统对自身门控面的归属判断`
+- 数学表达 / Expression: `F_{D245}(x) := 自我模型 = 系统对自身门控面的二阶门控 一阶门控（[D195](functions/items/D195.md)）：g(μ) = exp[-(ln(μ/Λ))²/(2σ²)] 判断"μ是否在门内"——系统对外部信号的响应 二阶门控（元门控）： G_i(gᵢ) = exp[-(ln(gᵢ/g*_i))²/(2σ_meta²)] 判断"这个门控面是否在我的控制下"——系统对自身门控面的归属判断`
 - 有效条件 / Validity: `J_n^+(F_{D245})=1 ∧ J_n^-(F_{D245})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D195`, `D245`
+- 依赖 / Depends on: [D195](functions/items/D195.md), [D245](functions/items/D245.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D245} and codomain Y_{D245}.
   - 2. Normalize the source expression as F_{D245}: X_{D245}->Y_{D245}.
@@ -12527,7 +12527,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D195`, `D245`
+- 依赖 / Depends on: [D195](functions/items/D195.md), [D245](functions/items/D245.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12538,22 +12538,22 @@ English: Rule-based English rendering pending human review.
 ### [D246｜自我模型-ε_aware连接定理](functions/items/D246.md)
 
 **函数内容 / Function Content**
-中文：D244说自我模型是ε_aware>0的前提。推导连接： ε_aware = f(信息可及性, C_exit, 自我模型)（D5展开） 精确化： ε_aware = M_self × σ(ΔK/K₀ - θ_curiosity) × dim 当M_self=0时：ε_aware=0（乘法归零律D2） 当M_self>0时：ε_aware>0（如果其他因子>0）
+中文：[D244](functions/items/D244.md)说自我模型是ε_aware>0的前提。推导连接： ε_aware = f(信息可及性, C_exit, 自我模型)（[D5](functions/items/D5.md)展开） 精确化： ε_aware = M_self × σ(ΔK/K₀ - θ_curiosity) × dim 当M_self=0时：ε_aware=0（乘法归零律[D2](functions/items/D2.md)） 当M_self>0时：ε_aware>0（如果其他因子>0）
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D244说自我模型是ε_aware>0的前提。推导连接： ε_aware = f(信息可及性, C_exit, 自我模型)（D5展开） 精确化： ε_aware = M_self × σ(ΔK/K₀ - θ_curiosity) × dim 当M_self=0时：ε_aware=0（乘法归零律D2） 当M_self>0时：ε_aware>0（如果其他因子>0） 描述 自我模型-ε_aware连接定理。
+中文：该函数通过 [D244](functions/items/D244.md)说自我模型是ε_aware>0的前提。推导连接： ε_aware = f(信息可及性, C_exit, 自我模型)（[D5](functions/items/D5.md)展开） 精确化： ε_aware = M_self × σ(ΔK/K₀ - θ_curiosity) × dim 当M_self=0时：ε_aware=0（乘法归零律[D2](functions/items/D2.md)） 当M_self>0时：ε_aware>0（如果其他因子>0） 描述 自我模型-ε_aware连接定理。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D246}`
 - 定义域 / Domain: `X_{D246}`
 - 值域 / Codomain: `Y_{D246}`
-- 数学表达 / Expression: `F_{D246}(x) := D244说自我模型是ε_aware>0的前提。推导连接： ε_aware = f(信息可及性, C_exit, 自我模型)（D5展开） 精确化： ε_aware = M_self × σ(ΔK/K₀ - θ_curiosity) × dim 当M_self=0时：ε_aware=0（乘法归零律D2） 当M_self>0时：ε_aware>0（如果其他因子>0）`
+- 数学表达 / Expression: `F_{D246}(x) := [D244](functions/items/D244.md)说自我模型是ε_aware>0的前提。推导连接： ε_aware = f(信息可及性, C_exit, 自我模型)（[D5](functions/items/D5.md)展开） 精确化： ε_aware = M_self × σ(ΔK/K₀ - θ_curiosity) × dim 当M_self=0时：ε_aware=0（乘法归零律[D2](functions/items/D2.md)） 当M_self>0时：ε_aware>0（如果其他因子>0）`
 - 有效条件 / Validity: `J_n^+(F_{D246})=1 ∧ J_n^-(F_{D246})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D246`
+- 依赖 / Depends on: [D246](functions/items/D246.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D246} and codomain Y_{D246}.
   - 2. Normalize the source expression as F_{D246}: X_{D246}->Y_{D246}.
@@ -12570,7 +12570,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D246`
+- 依赖 / Depends on: [D246](functions/items/D246.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12596,7 +12596,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D247})=1 ∧ J_n^-(F_{D247})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D247`
+- 依赖 / Depends on: [D247](functions/items/D247.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D247} and codomain Y_{D247}.
   - 2. Normalize the source expression as F_{D247}: X_{D247}->Y_{D247}.
@@ -12613,7 +12613,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D247`
+- 依赖 / Depends on: [D247](functions/items/D247.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12639,7 +12639,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D248})=1 ∧ J_n^-(F_{D248})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D248`
+- 依赖 / Depends on: [D248](functions/items/D248.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D248} and codomain Y_{D248}.
   - 2. Normalize the source expression as F_{D248}: X_{D248}->Y_{D248}.
@@ -12656,7 +12656,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D248`
+- 依赖 / Depends on: [D248](functions/items/D248.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12682,7 +12682,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D249})=1 ∧ J_n^-(F_{D249})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D249`
+- 依赖 / Depends on: [D249](functions/items/D249.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D249} and codomain Y_{D249}.
   - 2. Normalize the source expression as F_{D249}: X_{D249}->Y_{D249}.
@@ -12699,7 +12699,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D249`
+- 依赖 / Depends on: [D249](functions/items/D249.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12725,7 +12725,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D250})=1 ∧ J_n^-(F_{D250})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D250`
+- 依赖 / Depends on: [D250](functions/items/D250.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D250} and codomain Y_{D250}.
   - 2. Normalize the source expression as F_{D250}: X_{D250}->Y_{D250}.
@@ -12742,7 +12742,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D250`
+- 依赖 / Depends on: [D250](functions/items/D250.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12768,7 +12768,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D251})=1 ∧ J_n^-(F_{D251})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D251`
+- 依赖 / Depends on: [D251](functions/items/D251.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D251} and codomain Y_{D251}.
   - 2. Normalize the source expression as F_{D251}: X_{D251}->Y_{D251}.
@@ -12785,7 +12785,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D251`
+- 依赖 / Depends on: [D251](functions/items/D251.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12809,11 +12809,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D252}`
 - 定义域 / Domain: `X_{D252}`
 - 值域 / Codomain: `Y_{D252}`
-- 数学表达 / Expression: `F_{D252}(x) := 阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢpⱼ加速增长（容斥二阶及以上）。门槛漂移加速（D147）的数学根源是容斥高阶项的加速贡献：dpᵢ/dt>0时，d(Σpᵢpⱼ)/dt加速增长。阶层固化一旦启动就很难逆转——不只是各门槛在升高，门槛之间的交叉否决在加速。`
+- 数学表达 / Expression: `F_{D252}(x) := 阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢpⱼ加速增长（容斥二阶及以上）。门槛漂移加速（[D147](functions/items/D147.md)）的数学根源是容斥高阶项的加速贡献：dpᵢ/dt>0时，d(Σpᵢpⱼ)/dt加速增长。阶层固化一旦启动就很难逆转——不只是各门槛在升高，门槛之间的交叉否决在加速。`
 - 有效条件 / Validity: `J_n^+(F_{D252})=1 ∧ J_n^-(F_{D252})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D147`, `D252`
+- 依赖 / Depends on: [D147](functions/items/D147.md), [D252](functions/items/D252.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D252} and codomain Y_{D252}.
   - 2. Normalize the source expression as F_{D252}: X_{D252}->Y_{D252}.
@@ -12830,7 +12830,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D147`, `D252`
+- 依赖 / Depends on: [D147](functions/items/D147.md), [D252](functions/items/D252.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12856,7 +12856,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D253})=1 ∧ J_n^-(F_{D253})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D253`
+- 依赖 / Depends on: [D253](functions/items/D253.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D253} and codomain Y_{D253}.
   - 2. Normalize the source expression as F_{D253}: X_{D253}->Y_{D253}.
@@ -12873,7 +12873,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D253`
+- 依赖 / Depends on: [D253](functions/items/D253.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12899,7 +12899,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D254})=1 ∧ J_n^-(F_{D254})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D254`
+- 依赖 / Depends on: [D254](functions/items/D254.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D254} and codomain Y_{D254}.
   - 2. Normalize the source expression as F_{D254}: X_{D254}->Y_{D254}.
@@ -12916,7 +12916,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D254`
+- 依赖 / Depends on: [D254](functions/items/D254.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12927,22 +12927,22 @@ English: Rule-based English rendering pending human review.
 ### [D255｜耦合缓冲容量函数](functions/items/D255.md)
 
 **函数内容 / Function Content**
-中文：耦合缓冲强度C_buffer=Σᵢ<ⱼ pᵢpⱼ在pᵢ从0→p*过程中单调递增，在pᵢ=p*处达到最大值C_max≈C(n,2)·p*²。容斥高阶项强度C_incl=ΣᵢΣₖ₌₂^∞ pᵢᵏ/k!在pᵢ>p*后加速增长。D249的p*是C_buffer=C_incl的交叉点。缓冲容量=C_max-C_incl(pᵢ)，在pᵢ=p*时耗尽。
+中文：耦合缓冲强度C_buffer=Σᵢ<ⱼ pᵢpⱼ在pᵢ从0→p*过程中单调递增，在pᵢ=p*处达到最大值C_max≈C(n,2)·p*²。容斥高阶项强度C_incl=ΣᵢΣₖ₌₂^∞ pᵢᵏ/k!在pᵢ>p*后加速增长。[D249](functions/items/D249.md)的p*是C_buffer=C_incl的交叉点。缓冲容量=C_max-C_incl(pᵢ)，在pᵢ=p*时耗尽。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 耦合缓冲强度C_buffer=Σᵢ<ⱼ pᵢpⱼ在pᵢ从0→p*过程中单调递增，在pᵢ=p*处达到最大值C_max≈C(n,2)·p*²。容斥高阶项强度C_incl=ΣᵢΣₖ₌₂^∞ pᵢᵏ/k!在pᵢ>p*后加速增长。D249的p*是C_buffer=C_incl的交叉点。缓冲容量=C_max-C_incl(pᵢ)，在pᵢ=p*时耗尽。 描述 耦合缓冲容量函数。
+中文：该函数通过 耦合缓冲强度C_buffer=Σᵢ<ⱼ pᵢpⱼ在pᵢ从0→p*过程中单调递增，在pᵢ=p*处达到最大值C_max≈C(n,2)·p*²。容斥高阶项强度C_incl=ΣᵢΣₖ₌₂^∞ pᵢᵏ/k!在pᵢ>p*后加速增长。[D249](functions/items/D249.md)的p*是C_buffer=C_incl的交叉点。缓冲容量=C_max-C_incl(pᵢ)，在pᵢ=p*时耗尽。 描述 耦合缓冲容量函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D255}`
 - 定义域 / Domain: `X_{D255}`
 - 值域 / Codomain: `Y_{D255}`
-- 数学表达 / Expression: `F_{D255}(x) := 耦合缓冲强度C_buffer=Σᵢ<ⱼ pᵢpⱼ在pᵢ从0→p*过程中单调递增，在pᵢ=p*处达到最大值C_max≈C(n,2)·p*²。容斥高阶项强度C_incl=ΣᵢΣₖ₌₂^∞ pᵢᵏ/k!在pᵢ>p*后加速增长。D249的p*是C_buffer=C_incl的交叉点。缓冲容量=C_max-C_incl(pᵢ)，在pᵢ=p*时耗尽。`
+- 数学表达 / Expression: `F_{D255}(x) := 耦合缓冲强度C_buffer=Σᵢ<ⱼ pᵢpⱼ在pᵢ从0→p*过程中单调递增，在pᵢ=p*处达到最大值C_max≈C(n,2)·p*²。容斥高阶项强度C_incl=ΣᵢΣₖ₌₂^∞ pᵢᵏ/k!在pᵢ>p*后加速增长。[D249](functions/items/D249.md)的p*是C_buffer=C_incl的交叉点。缓冲容量=C_max-C_incl(pᵢ)，在pᵢ=p*时耗尽。`
 - 有效条件 / Validity: `J_n^+(F_{D255})=1 ∧ J_n^-(F_{D255})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D255`
+- 依赖 / Depends on: [D255](functions/items/D255.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D255} and codomain Y_{D255}.
   - 2. Normalize the source expression as F_{D255}: X_{D255}->Y_{D255}.
@@ -12959,7 +12959,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D255`
+- 依赖 / Depends on: [D255](functions/items/D255.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -12970,22 +12970,22 @@ English: Rule-based English rendering pending human review.
 ### [D256｜阶段宽度-门控面数函数](functions/items/D256.md)
 
 **函数内容 / Function Content**
-中文：D254阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变，社会变革（n中等）→介于两者之间。
+中文：[D254](functions/items/D254.md)阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变，社会变革（n中等）→介于两者之间。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D254阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变，社会变革（n中等）→介于两者之间。 描述 阶段宽度-门控面数函数。
+中文：该函数通过 [D254](functions/items/D254.md)阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变，社会变革（n中等）→介于两者之间。 描述 阶段宽度-门控面数函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D256}`
 - 定义域 / Domain: `X_{D256}`
 - 值域 / Codomain: `Y_{D256}`
-- 数学表达 / Expression: `F_{D256}(x) := D254阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变，社会变革（n中等）→介于两者之间。`
+- 数学表达 / Expression: `F_{D256}(x) := [D254](functions/items/D254.md)阶段2的宽度Δp≈p*(1-1/√n)，n为门控面数量。n越大阶段2越宽→过渡越渐变；n越小阶段2越窄→过渡越突变。物理相变（n小）→突变，生物衰老（n大）→渐变，社会变革（n中等）→介于两者之间。`
 - 有效条件 / Validity: `J_n^+(F_{D256})=1 ∧ J_n^-(F_{D256})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D256`
+- 依赖 / Depends on: [D256](functions/items/D256.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D256} and codomain Y_{D256}.
   - 2. Normalize the source expression as F_{D256}: X_{D256}->Y_{D256}.
@@ -13002,7 +13002,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D256`
+- 依赖 / Depends on: [D256](functions/items/D256.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13013,22 +13013,22 @@ English: Rule-based English rendering pending human review.
 ### [D257｜门槛距离-耦合强度函数](functions/items/D257.md)
 
 **函数内容 / Function Content**
-中文：门控面间的耦合强度不仅取决于否决概率pᵢpⱼ，还取决于门槛距离g(Λᵢ,Λⱼ)=min(Λᵢ/Λⱼ,Λⱼ/Λᵢ)。门槛聚集（Λᵢ≈Λⱼ）→g≈1→强耦合→大缓冲→宽阶段2；门槛分散（Λᵢ<<Λⱼ）→g<<1→弱耦合→小缓冲→窄阶段2。D255是g=1（全等门槛）的特例。
+中文：门控面间的耦合强度不仅取决于否决概率pᵢpⱼ，还取决于门槛距离g(Λᵢ,Λⱼ)=min(Λᵢ/Λⱼ,Λⱼ/Λᵢ)。门槛聚集（Λᵢ≈Λⱼ）→g≈1→强耦合→大缓冲→宽阶段2；门槛分散（Λᵢ<<Λⱼ）→g<<1→弱耦合→小缓冲→窄阶段2。[D255](functions/items/D255.md)是g=1（全等门槛）的特例。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 门控面间的耦合强度不仅取决于否决概率pᵢpⱼ，还取决于门槛距离g(Λᵢ,Λⱼ)=min(Λᵢ/Λⱼ,Λⱼ/Λᵢ)。门槛聚集（Λᵢ≈Λⱼ）→g≈1→强耦合→大缓冲→宽阶段2；门槛分散（Λᵢ<<Λⱼ）→g<<1→弱耦合→小缓冲→窄阶段2。D255是g=1（全等门槛）的特例。 描述 门槛距离-耦合强度函数。
+中文：该函数通过 门控面间的耦合强度不仅取决于否决概率pᵢpⱼ，还取决于门槛距离g(Λᵢ,Λⱼ)=min(Λᵢ/Λⱼ,Λⱼ/Λᵢ)。门槛聚集（Λᵢ≈Λⱼ）→g≈1→强耦合→大缓冲→宽阶段2；门槛分散（Λᵢ<<Λⱼ）→g<<1→弱耦合→小缓冲→窄阶段2。[D255](functions/items/D255.md)是g=1（全等门槛）的特例。 描述 门槛距离-耦合强度函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D257}`
 - 定义域 / Domain: `X_{D257}`
 - 值域 / Codomain: `Y_{D257}`
-- 数学表达 / Expression: `F_{D257}(x) := 门控面间的耦合强度不仅取决于否决概率pᵢpⱼ，还取决于门槛距离g(Λᵢ,Λⱼ)=min(Λᵢ/Λⱼ,Λⱼ/Λᵢ)。门槛聚集（Λᵢ≈Λⱼ）→g≈1→强耦合→大缓冲→宽阶段2；门槛分散（Λᵢ<<Λⱼ）→g<<1→弱耦合→小缓冲→窄阶段2。D255是g=1（全等门槛）的特例。`
+- 数学表达 / Expression: `F_{D257}(x) := 门控面间的耦合强度不仅取决于否决概率pᵢpⱼ，还取决于门槛距离g(Λᵢ,Λⱼ)=min(Λᵢ/Λⱼ,Λⱼ/Λᵢ)。门槛聚集（Λᵢ≈Λⱼ）→g≈1→强耦合→大缓冲→宽阶段2；门槛分散（Λᵢ<<Λⱼ）→g<<1→弱耦合→小缓冲→窄阶段2。[D255](functions/items/D255.md)是g=1（全等门槛）的特例。`
 - 有效条件 / Validity: `J_n^+(F_{D257})=1 ∧ J_n^-(F_{D257})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D257`
+- 依赖 / Depends on: [D257](functions/items/D257.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D257} and codomain Y_{D257}.
   - 2. Normalize the source expression as F_{D257}: X_{D257}->Y_{D257}.
@@ -13045,7 +13045,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D257`
+- 依赖 / Depends on: [D257](functions/items/D257.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13071,7 +13071,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D258})=1 ∧ J_n^-(F_{D258})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D258`
+- 依赖 / Depends on: [D258](functions/items/D258.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D258} and codomain Y_{D258}.
   - 2. Normalize the source expression as F_{D258}: X_{D258}->Y_{D258}.
@@ -13088,7 +13088,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D258`
+- 依赖 / Depends on: [D258](functions/items/D258.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13099,11 +13099,11 @@ English: Rule-based English rendering pending human review.
 ### [D259｜g_eff-p*双向反馈函数](functions/items/D259.md)
 
 **函数内容 / Function Content**
-中文：D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（[D258](functions/items/D258.md)）和良性循环（[D259](functions/items/D259.md)）是同一机制的两个方向，系统处于哪个循环取决于p分布的变化方向。教育普及、技术突破是良性循环的触发器。
+中文：[D258](functions/items/D258.md)的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（[D258](functions/items/D258.md)）和良性循环（[D259](functions/items/D259.md)）是同一机制的两个方向，系统处于哪个循环取决于p分布的变化方向。教育普及、技术突破是良性循环的触发器。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D258的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（[D258](functions/items/D258.md)）和良性循环（[D259](functions/items/D259.md)）是同一机制的两个方向，系统处于哪个循环取决于p分布的变化方向。教育普及、技术突破是良性循环的触发器。 描述 -p*双向反馈函数。
+中文：该函数通过 [D258](functions/items/D258.md)的正反馈有逆过程：p分布集中化→g_eff↑→p*↑→耦合增强→p分布更集中→g_eff↑↑。良性循环条件：至少一个pᵢ减小（门槛被降低或绕过）。恶性循环（[D258](functions/items/D258.md)）和良性循环（[D259](functions/items/D259.md)）是同一机制的两个方向，系统处于哪个循环取决于p分布的变化方向。教育普及、技术突破是良性循环的触发器。 描述 -p*双向反馈函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13114,7 +13114,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D259})=1 ∧ J_n^-(F_{D259})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D258`, `D259`
+- 依赖 / Depends on: [D258](functions/items/D258.md), [D259](functions/items/D259.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D259} and codomain Y_{D259}.
   - 2. Normalize the source expression as F_{D259}: X_{D259}->Y_{D259}.
@@ -13131,7 +13131,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D258`, `D259`
+- 依赖 / Depends on: [D258](functions/items/D258.md), [D259](functions/items/D259.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13157,7 +13157,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D260})=1 ∧ J_n^-(F_{D260})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D260`
+- 依赖 / Depends on: [D260](functions/items/D260.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D260} and codomain Y_{D260}.
   - 2. Normalize the source expression as F_{D260}: X_{D260}->Y_{D260}.
@@ -13174,7 +13174,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D260`
+- 依赖 / Depends on: [D260](functions/items/D260.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13202,7 +13202,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D261})=1 ∧ J_n^-(F_{D261})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D261`
+- 依赖 / Depends on: [D261](functions/items/D261.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D261} and codomain Y_{D261}.
   - 2. Normalize the source expression as F_{D261}: X_{D261}->Y_{D261}.
@@ -13219,7 +13219,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D261`
+- 依赖 / Depends on: [D261](functions/items/D261.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13245,7 +13245,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D262})=1 ∧ J_n^-(F_{D262})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D262`
+- 依赖 / Depends on: [D262](functions/items/D262.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D262} and codomain Y_{D262}.
   - 2. Normalize the source expression as F_{D262}: X_{D262}->Y_{D262}.
@@ -13262,7 +13262,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D262`
+- 依赖 / Depends on: [D262](functions/items/D262.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13288,7 +13288,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D263})=1 ∧ J_n^-(F_{D263})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D263`
+- 依赖 / Depends on: [D263](functions/items/D263.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D263} and codomain Y_{D263}.
   - 2. Normalize the source expression as F_{D263}: X_{D263}->Y_{D263}.
@@ -13305,7 +13305,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D263`
+- 依赖 / Depends on: [D263](functions/items/D263.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13331,7 +13331,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D264})=1 ∧ J_n^-(F_{D264})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D264`
+- 依赖 / Depends on: [D264](functions/items/D264.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D264} and codomain Y_{D264}.
   - 2. Normalize the source expression as F_{D264}: X_{D264}->Y_{D264}.
@@ -13348,7 +13348,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D264`
+- 依赖 / Depends on: [D264](functions/items/D264.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13374,7 +13374,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D265})=1 ∧ J_n^-(F_{D265})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D265`
+- 依赖 / Depends on: [D265](functions/items/D265.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D265} and codomain Y_{D265}.
   - 2. Normalize the source expression as F_{D265}: X_{D265}->Y_{D265}.
@@ -13391,7 +13391,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D265`
+- 依赖 / Depends on: [D265](functions/items/D265.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13417,7 +13417,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D266})=1 ∧ J_n^-(F_{D266})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D266`
+- 依赖 / Depends on: [D266](functions/items/D266.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D266} and codomain Y_{D266}.
   - 2. Normalize the source expression as F_{D266}: X_{D266}->Y_{D266}.
@@ -13434,7 +13434,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D266`
+- 依赖 / Depends on: [D266](functions/items/D266.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13462,7 +13462,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D267})=1 ∧ J_n^-(F_{D267})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D267`
+- 依赖 / Depends on: [D267](functions/items/D267.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D267} and codomain Y_{D267}.
   - 2. Normalize the source expression as F_{D267}: X_{D267}->Y_{D267}.
@@ -13479,7 +13479,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D267`
+- 依赖 / Depends on: [D267](functions/items/D267.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13505,7 +13505,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D268})=1 ∧ J_n^-(F_{D268})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D268`
+- 依赖 / Depends on: [D268](functions/items/D268.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D268} and codomain Y_{D268}.
   - 2. Normalize the source expression as F_{D268}: X_{D268}->Y_{D268}.
@@ -13522,7 +13522,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D268`
+- 依赖 / Depends on: [D268](functions/items/D268.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13548,7 +13548,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D269})=1 ∧ J_n^-(F_{D269})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D269`
+- 依赖 / Depends on: [D269](functions/items/D269.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D269} and codomain Y_{D269}.
   - 2. Normalize the source expression as F_{D269}: X_{D269}->Y_{D269}.
@@ -13565,7 +13565,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D269`
+- 依赖 / Depends on: [D269](functions/items/D269.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13591,7 +13591,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D270})=1 ∧ J_n^-(F_{D270})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D270`
+- 依赖 / Depends on: [D270](functions/items/D270.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D270} and codomain Y_{D270}.
   - 2. Normalize the source expression as F_{D270}: X_{D270}->Y_{D270}.
@@ -13608,7 +13608,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D270`
+- 依赖 / Depends on: [D270](functions/items/D270.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13634,7 +13634,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D271})=1 ∧ J_n^-(F_{D271})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D271`
+- 依赖 / Depends on: [D271](functions/items/D271.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D271} and codomain Y_{D271}.
   - 2. Normalize the source expression as F_{D271}: X_{D271}->Y_{D271}.
@@ -13651,7 +13651,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D271`
+- 依赖 / Depends on: [D271](functions/items/D271.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13677,7 +13677,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D272})=1 ∧ J_n^-(F_{D272})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D272`
+- 依赖 / Depends on: [D272](functions/items/D272.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D272} and codomain Y_{D272}.
   - 2. Normalize the source expression as F_{D272}: X_{D272}->Y_{D272}.
@@ -13694,7 +13694,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D272`
+- 依赖 / Depends on: [D272](functions/items/D272.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13716,11 +13716,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D273}`
 - 定义域 / Domain: `X_{D273}`
 - 值域 / Codomain: `Y_{D273}`
-- 数学表达 / Expression: `F_{D273}(x) := M12的ḡ取决于pᵢ分布形态：正态分布→ḡ≈1→最大耦合→最大缓冲；指数分布→ḡ<2/3→弱耦合；均匀分布→ḡ=2/3。D253"p集中→鲁棒"的统计基础。`
+- 数学表达 / Expression: `F_{D273}(x) := M12的ḡ取决于pᵢ分布形态：正态分布→ḡ≈1→最大耦合→最大缓冲；指数分布→ḡ<2/3→弱耦合；均匀分布→ḡ=2/3。[D253](functions/items/D253.md)"p集中→鲁棒"的统计基础。`
 - 有效条件 / Validity: `J_n^+(F_{D273})=1 ∧ J_n^-(F_{D273})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D253`, `D273`
+- 依赖 / Depends on: [D253](functions/items/D253.md), [D273](functions/items/D273.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D273} and codomain Y_{D273}.
   - 2. Normalize the source expression as F_{D273}: X_{D273}->Y_{D273}.
@@ -13737,7 +13737,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D253`, `D273`
+- 依赖 / Depends on: [D253](functions/items/D253.md), [D273](functions/items/D273.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13763,7 +13763,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D274})=1 ∧ J_n^-(F_{D274})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D274`
+- 依赖 / Depends on: [D274](functions/items/D274.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D274} and codomain Y_{D274}.
   - 2. Normalize the source expression as F_{D274}: X_{D274}->Y_{D274}.
@@ -13780,7 +13780,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D274`
+- 依赖 / Depends on: [D274](functions/items/D274.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13806,7 +13806,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D275})=1 ∧ J_n^-(F_{D275})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D275`
+- 依赖 / Depends on: [D275](functions/items/D275.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D275} and codomain Y_{D275}.
   - 2. Normalize the source expression as F_{D275}: X_{D275}->Y_{D275}.
@@ -13823,7 +13823,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D275`
+- 依赖 / Depends on: [D275](functions/items/D275.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13834,22 +13834,22 @@ English: Rule-based English rendering pending human review.
 ### [D276｜D158预测失效阈值函数](functions/items/D276.md)
 
 **函数内容 / Function Content**
-中文：M1的ΔΦ导致D158预测误差|e^{ΔΦ}-1|：ΔΦ=1→误差172%→预测失效。pᵢ<0.5时D158可靠（误差<30%），0.5-0.8谨慎使用，>0.8不可信。
+中文：M1的ΔΦ导致[D158](functions/items/D158.md)预测误差|e^{ΔΦ}-1|：ΔΦ=1→误差172%→预测失效。pᵢ<0.5时[D158](functions/items/D158.md)可靠（误差<30%），0.5-0.8谨慎使用，>0.8不可信。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M1的ΔΦ导致D158预测误差|e^{ΔΦ}-1|：ΔΦ=1→误差172%→预测失效。pᵢ<0.5时D158可靠（误差<30%），0.5-0.8谨慎使用，>0.8不可信。 描述 预测失效阈值函数。
+中文：该函数通过 M1的ΔΦ导致[D158](functions/items/D158.md)预测误差|e^{ΔΦ}-1|：ΔΦ=1→误差172%→预测失效。pᵢ<0.5时[D158](functions/items/D158.md)可靠（误差<30%），0.5-0.8谨慎使用，>0.8不可信。 描述 预测失效阈值函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D276}`
 - 定义域 / Domain: `X_{D276}`
 - 值域 / Codomain: `Y_{D276}`
-- 数学表达 / Expression: `F_{D276}(x) := M1的ΔΦ导致D158预测误差|e^{ΔΦ}-1|：ΔΦ=1→误差172%→预测失效。pᵢ<0.5时D158可靠（误差<30%），0.5-0.8谨慎使用，>0.8不可信。`
+- 数学表达 / Expression: `F_{D276}(x) := M1的ΔΦ导致[D158](functions/items/D158.md)预测误差|e^{ΔΦ}-1|：ΔΦ=1→误差172%→预测失效。pᵢ<0.5时[D158](functions/items/D158.md)可靠（误差<30%），0.5-0.8谨慎使用，>0.8不可信。`
 - 有效条件 / Validity: `J_n^+(F_{D276})=1 ∧ J_n^-(F_{D276})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D276`
+- 依赖 / Depends on: [D276](functions/items/D276.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D276} and codomain Y_{D276}.
   - 2. Normalize the source expression as F_{D276}: X_{D276}->Y_{D276}.
@@ -13866,7 +13866,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D276`
+- 依赖 / Depends on: [D276](functions/items/D276.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13895,7 +13895,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D277})=1 ∧ J_n^-(F_{D277})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D277`
+- 依赖 / Depends on: [D277](functions/items/D277.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D277} and codomain Y_{D277}.
   - 2. Normalize the source expression as F_{D277}: X_{D277}->Y_{D277}.
@@ -13912,7 +13912,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D277`
+- 依赖 / Depends on: [D277](functions/items/D277.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13938,7 +13938,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D278})=1 ∧ J_n^-(F_{D278})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D278`
+- 依赖 / Depends on: [D278](functions/items/D278.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D278} and codomain Y_{D278}.
   - 2. Normalize the source expression as F_{D278}: X_{D278}->Y_{D278}.
@@ -13955,7 +13955,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D278`
+- 依赖 / Depends on: [D278](functions/items/D278.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -13966,22 +13966,22 @@ English: Rule-based English rendering pending human review.
 ### [D279｜干预时机悖论函数](functions/items/D279.md)
 
 **函数内容 / Function Content**
-中文：M13正反馈干预的时机悖论：早期效果弱但窗口宽，晚期效果强但窗口窄。最优时机=D262缓冲峰值时刻t_peak。错过t_peak后窗口快速关闭。
+中文：M13正反馈干预的时机悖论：早期效果弱但窗口宽，晚期效果强但窗口窄。最优时机=[D262](functions/items/D262.md)缓冲峰值时刻t_peak。错过t_peak后窗口快速关闭。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M13正反馈干预的时机悖论：早期效果弱但窗口宽，晚期效果强但窗口窄。最优时机=D262缓冲峰值时刻t_peak。错过t_peak后窗口快速关闭。 描述 干预时机悖论函数。
+中文：该函数通过 M13正反馈干预的时机悖论：早期效果弱但窗口宽，晚期效果强但窗口窄。最优时机=[D262](functions/items/D262.md)缓冲峰值时刻t_peak。错过t_peak后窗口快速关闭。 描述 干预时机悖论函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D279}`
 - 定义域 / Domain: `X_{D279}`
 - 值域 / Codomain: `Y_{D279}`
-- 数学表达 / Expression: `F_{D279}(x) := M13正反馈干预的时机悖论：早期效果弱但窗口宽，晚期效果强但窗口窄。最优时机=D262缓冲峰值时刻t_peak。错过t_peak后窗口快速关闭。`
+- 数学表达 / Expression: `F_{D279}(x) := M13正反馈干预的时机悖论：早期效果弱但窗口宽，晚期效果强但窗口窄。最优时机=[D262](functions/items/D262.md)缓冲峰值时刻t_peak。错过t_peak后窗口快速关闭。`
 - 有效条件 / Validity: `J_n^+(F_{D279})=1 ∧ J_n^-(F_{D279})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D279`
+- 依赖 / Depends on: [D279](functions/items/D279.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D279} and codomain Y_{D279}.
   - 2. Normalize the source expression as F_{D279}: X_{D279}->Y_{D279}.
@@ -13998,7 +13998,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D279`
+- 依赖 / Depends on: [D279](functions/items/D279.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14024,7 +14024,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D280})=1 ∧ J_n^-(F_{D280})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D280`
+- 依赖 / Depends on: [D280](functions/items/D280.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D280} and codomain Y_{D280}.
   - 2. Normalize the source expression as F_{D280}: X_{D280}->Y_{D280}.
@@ -14041,7 +14041,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D280`
+- 依赖 / Depends on: [D280](functions/items/D280.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14067,7 +14067,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D281})=1 ∧ J_n^-(F_{D281})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D281`
+- 依赖 / Depends on: [D281](functions/items/D281.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D281} and codomain Y_{D281}.
   - 2. Normalize the source expression as F_{D281}: X_{D281}->Y_{D281}.
@@ -14084,7 +14084,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D281`
+- 依赖 / Depends on: [D281](functions/items/D281.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14110,7 +14110,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D282})=1 ∧ J_n^-(F_{D282})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D282`
+- 依赖 / Depends on: [D282](functions/items/D282.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D282} and codomain Y_{D282}.
   - 2. Normalize the source expression as F_{D282}: X_{D282}->Y_{D282}.
@@ -14127,7 +14127,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D282`
+- 依赖 / Depends on: [D282](functions/items/D282.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14156,7 +14156,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D283})=1 ∧ J_n^-(F_{D283})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D283`
+- 依赖 / Depends on: [D283](functions/items/D283.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D283} and codomain Y_{D283}.
   - 2. Normalize the source expression as F_{D283}: X_{D283}->Y_{D283}.
@@ -14173,7 +14173,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D283`
+- 依赖 / Depends on: [D283](functions/items/D283.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14199,7 +14199,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D284})=1 ∧ J_n^-(F_{D284})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D284`
+- 依赖 / Depends on: [D284](functions/items/D284.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D284} and codomain Y_{D284}.
   - 2. Normalize the source expression as F_{D284}: X_{D284}->Y_{D284}.
@@ -14216,7 +14216,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D284`
+- 依赖 / Depends on: [D284](functions/items/D284.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14244,7 +14244,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D285})=1 ∧ J_n^-(F_{D285})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D285`
+- 依赖 / Depends on: [D285](functions/items/D285.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D285} and codomain Y_{D285}.
   - 2. Normalize the source expression as F_{D285}: X_{D285}->Y_{D285}.
@@ -14261,7 +14261,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D285`
+- 依赖 / Depends on: [D285](functions/items/D285.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14287,7 +14287,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D286})=1 ∧ J_n^-(F_{D286})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D286`
+- 依赖 / Depends on: [D286](functions/items/D286.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D286} and codomain Y_{D286}.
   - 2. Normalize the source expression as F_{D286}: X_{D286}->Y_{D286}.
@@ -14304,7 +14304,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D286`
+- 依赖 / Depends on: [D286](functions/items/D286.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14330,7 +14330,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D287})=1 ∧ J_n^-(F_{D287})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D287`
+- 依赖 / Depends on: [D287](functions/items/D287.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D287} and codomain Y_{D287}.
   - 2. Normalize the source expression as F_{D287}: X_{D287}->Y_{D287}.
@@ -14347,7 +14347,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D287`
+- 依赖 / Depends on: [D287](functions/items/D287.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14373,7 +14373,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D288})=1 ∧ J_n^-(F_{D288})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D288`
+- 依赖 / Depends on: [D288](functions/items/D288.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D288} and codomain Y_{D288}.
   - 2. Normalize the source expression as F_{D288}: X_{D288}->Y_{D288}.
@@ -14390,7 +14390,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D288`
+- 依赖 / Depends on: [D288](functions/items/D288.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14401,22 +14401,22 @@ English: Rule-based English rendering pending human review.
 ### [D289｜良性循环逃逸速度函数](functions/items/D289.md)
 
 **函数内容 / Function Content**
-中文：M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max<0.5逃逸容易但效果弱，p_max>0.8几乎不可能逃逸。D279干预时机悖论的精确化。
+中文：M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max<0.5逃逸容易但效果弱，p_max>0.8几乎不可能逃逸。[D279](functions/items/D279.md)干预时机悖论的精确化。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max<0.5逃逸容易但效果弱，p_max>0.8几乎不可能逃逸。D279干预时机悖论的精确化。 描述 良性循环逃逸速度函数。
+中文：该函数通过 M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max<0.5逃逸容易但效果弱，p_max>0.8几乎不可能逃逸。[D279](functions/items/D279.md)干预时机悖论的精确化。 描述 良性循环逃逸速度函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D289}`
 - 定义域 / Domain: `X_{D289}`
 - 值域 / Codomain: `Y_{D289}`
-- 数学表达 / Expression: `F_{D289}(x) := M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max<0.5逃逸容易但效果弱，p_max>0.8几乎不可能逃逸。D279干预时机悖论的精确化。`
+- 数学表达 / Expression: `F_{D289}(x) := M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max<0.5逃逸容易但效果弱，p_max>0.8几乎不可能逃逸。[D279](functions/items/D279.md)干预时机悖论的精确化。`
 - 有效条件 / Validity: `J_n^+(F_{D289})=1 ∧ J_n^-(F_{D289})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D289`
+- 依赖 / Depends on: [D289](functions/items/D289.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D289} and codomain Y_{D289}.
   - 2. Normalize the source expression as F_{D289}: X_{D289}->Y_{D289}.
@@ -14433,7 +14433,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D289`
+- 依赖 / Depends on: [D289](functions/items/D289.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14462,7 +14462,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D290})=1 ∧ J_n^-(F_{D290})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D290`
+- 依赖 / Depends on: [D290](functions/items/D290.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D290} and codomain Y_{D290}.
   - 2. Normalize the source expression as F_{D290}: X_{D290}->Y_{D290}.
@@ -14479,7 +14479,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D290`
+- 依赖 / Depends on: [D290](functions/items/D290.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14490,22 +14490,22 @@ English: Rule-based English rendering pending human review.
 ### [D291｜D158案例可靠性分类函数](functions/items/D291.md)
 
 **函数内容 / Function Content**
-中文：M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exact（pᵢ>0.5），约10-15%的案例D158完全不可信（pᵢ>0.8）。量子力学测量、热力学相变、相对论极端速度、凝聚态临界温度最需修正。
+中文：M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exact（pᵢ>0.5），约10-15%的案例[D158](functions/items/D158.md)完全不可信（pᵢ>0.8）。量子力学测量、热力学相变、相对论极端速度、凝聚态临界温度最需修正。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exact（pᵢ>0.5），约10-15%的案例D158完全不可信（pᵢ>0.8）。量子力学测量、热力学相变、相对论极端速度、凝聚态临界温度最需修正。 描述 案例可靠性分类函数。
+中文：该函数通过 M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exact（pᵢ>0.5），约10-15%的案例[D158](functions/items/D158.md)完全不可信（pᵢ>0.8）。量子力学测量、热力学相变、相对论极端速度、凝聚态临界温度最需修正。 描述 案例可靠性分类函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D291}`
 - 定义域 / Domain: `X_{D291}`
 - 值域 / Codomain: `Y_{D291}`
-- 数学表达 / Expression: `F_{D291}(x) := M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exact（pᵢ>0.5），约10-15%的案例D158完全不可信（pᵢ>0.8）。量子力学测量、热力学相变、相对论极端速度、凝聚态临界温度最需修正。`
+- 数学表达 / Expression: `F_{D291}(x) := M1对562案例的定量影响：D158a-f的49案例中约30-40%需用Φ_2或Φ_exact（pᵢ>0.5），约10-15%的案例[D158](functions/items/D158.md)完全不可信（pᵢ>0.8）。量子力学测量、热力学相变、相对论极端速度、凝聚态临界温度最需修正。`
 - 有效条件 / Validity: `J_n^+(F_{D291})=1 ∧ J_n^-(F_{D291})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D291`
+- 依赖 / Depends on: [D291](functions/items/D291.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D291} and codomain Y_{D291}.
   - 2. Normalize the source expression as F_{D291}: X_{D291}->Y_{D291}.
@@ -14522,7 +14522,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D291`
+- 依赖 / Depends on: [D291](functions/items/D291.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14551,7 +14551,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D292})=1 ∧ J_n^-(F_{D292})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D292`
+- 依赖 / Depends on: [D292](functions/items/D292.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D292} and codomain Y_{D292}.
   - 2. Normalize the source expression as F_{D292}: X_{D292}->Y_{D292}.
@@ -14568,7 +14568,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D292`
+- 依赖 / Depends on: [D292](functions/items/D292.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14594,7 +14594,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D293})=1 ∧ J_n^-(F_{D293})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D293`
+- 依赖 / Depends on: [D293](functions/items/D293.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D293} and codomain Y_{D293}.
   - 2. Normalize the source expression as F_{D293}: X_{D293}->Y_{D293}.
@@ -14611,7 +14611,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D293`
+- 依赖 / Depends on: [D293](functions/items/D293.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14637,7 +14637,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D294})=1 ∧ J_n^-(F_{D294})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D294`
+- 依赖 / Depends on: [D294](functions/items/D294.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D294} and codomain Y_{D294}.
   - 2. Normalize the source expression as F_{D294}: X_{D294}->Y_{D294}.
@@ -14654,7 +14654,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D294`
+- 依赖 / Depends on: [D294](functions/items/D294.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14680,7 +14680,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D295})=1 ∧ J_n^-(F_{D295})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D295`
+- 依赖 / Depends on: [D295](functions/items/D295.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D295} and codomain Y_{D295}.
   - 2. Normalize the source expression as F_{D295}: X_{D295}->Y_{D295}.
@@ -14697,7 +14697,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D295`
+- 依赖 / Depends on: [D295](functions/items/D295.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14723,7 +14723,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D296})=1 ∧ J_n^-(F_{D296})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D296`
+- 依赖 / Depends on: [D296](functions/items/D296.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D296} and codomain Y_{D296}.
   - 2. Normalize the source expression as F_{D296}: X_{D296}->Y_{D296}.
@@ -14740,7 +14740,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D296`
+- 依赖 / Depends on: [D296](functions/items/D296.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14769,7 +14769,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D297})=1 ∧ J_n^-(F_{D297})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D297`
+- 依赖 / Depends on: [D297](functions/items/D297.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D297} and codomain Y_{D297}.
   - 2. Normalize the source expression as F_{D297}: X_{D297}->Y_{D297}.
@@ -14786,7 +14786,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D297`
+- 依赖 / Depends on: [D297](functions/items/D297.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14812,7 +14812,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D298})=1 ∧ J_n^-(F_{D298})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D298`
+- 依赖 / Depends on: [D298](functions/items/D298.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D298} and codomain Y_{D298}.
   - 2. Normalize the source expression as F_{D298}: X_{D298}->Y_{D298}.
@@ -14829,7 +14829,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D298`
+- 依赖 / Depends on: [D298](functions/items/D298.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14857,7 +14857,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D299})=1 ∧ J_n^-(F_{D299})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D299`
+- 依赖 / Depends on: [D299](functions/items/D299.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D299} and codomain Y_{D299}.
   - 2. Normalize the source expression as F_{D299}: X_{D299}->Y_{D299}.
@@ -14874,7 +14874,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D299`
+- 依赖 / Depends on: [D299](functions/items/D299.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14900,7 +14900,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D300})=1 ∧ J_n^-(F_{D300})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D300`
+- 依赖 / Depends on: [D300](functions/items/D300.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D300} and codomain Y_{D300}.
   - 2. Normalize the source expression as F_{D300}: X_{D300}->Y_{D300}.
@@ -14917,7 +14917,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D300`
+- 依赖 / Depends on: [D300](functions/items/D300.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14928,22 +14928,22 @@ English: Rule-based English rendering pending human review.
 ### [D301｜极小点漂移速率函数](functions/items/D301.md)
 
 **函数内容 / Function Content**
-中文：M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定但漂移快，是D292"强吸引域失稳更致命"的速率版本。
+中文：M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定但漂移快，是[D292](functions/items/D292.md)"强吸引域失稳更致命"的速率版本。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定但漂移快，是D292"强吸引域失稳更致命"的速率版本。 描述 极小点漂移速率函数。
+中文：该函数通过 M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定但漂移快，是[D292](functions/items/D292.md)"强吸引域失稳更致命"的速率版本。 描述 极小点漂移速率函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D301}`
 - 定义域 / Domain: `X_{D301}`
 - 值域 / Codomain: `Y_{D301}`
-- 数学表达 / Expression: `F_{D301}(x) := M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定但漂移快，是D292"强吸引域失稳更致命"的速率版本。`
+- 数学表达 / Expression: `F_{D301}(x) := M2的漂移速率dμ/dt=-(Σᵢ αᵢ/(1-pᵢ)²)/(d²Φ/dμ²)。分母是Φ曲率——平坦区（物理大统一d²Φ/dμ²≈0）漂移极快，尖锐区漂移极慢。平坦=稳定但漂移快，是[D292](functions/items/D292.md)"强吸引域失稳更致命"的速率版本。`
 - 有效条件 / Validity: `J_n^+(F_{D301})=1 ∧ J_n^-(F_{D301})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D301`
+- 依赖 / Depends on: [D301](functions/items/D301.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D301} and codomain Y_{D301}.
   - 2. Normalize the source expression as F_{D301}: X_{D301}->Y_{D301}.
@@ -14960,7 +14960,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D301`
+- 依赖 / Depends on: [D301](functions/items/D301.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -14971,22 +14971,22 @@ English: Rule-based English rendering pending human review.
 ### [D302｜容斥渐近发散函数](functions/items/D302.md)
 
 **函数内容 / Function Content**
-中文：M3的容斥高阶项在pᵢ→1时ΔΦ→e^{pᵢ}-1-pᵢ→∞，发散速率∝e^{pᵢ}。pᵢ接近1时容斥修正爆炸式增长，不是"大了一点"。D260敏感度阈值pᵢ>0.5后急剧上升的数学根源就是容斥项的指数发散。D296的Φ_exact在pᵢ>0.95时不可替代。
+中文：M3的容斥高阶项在pᵢ→1时ΔΦ→e^{pᵢ}-1-pᵢ→∞，发散速率∝e^{pᵢ}。pᵢ接近1时容斥修正爆炸式增长，不是"大了一点"。[D260](functions/items/D260.md)敏感度阈值pᵢ>0.5后急剧上升的数学根源就是容斥项的指数发散。[D296](functions/items/D296.md)的Φ_exact在pᵢ>0.95时不可替代。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M3的容斥高阶项在pᵢ→1时ΔΦ→e^{pᵢ}-1-pᵢ→∞，发散速率∝e^{pᵢ}。pᵢ接近1时容斥修正爆炸式增长，不是"大了一点"。D260敏感度阈值pᵢ>0.5后急剧上升的数学根源就是容斥项的指数发散。D296的Φ_exact在pᵢ>0.95时不可替代。 描述 容斥渐近发散函数。
+中文：该函数通过 M3的容斥高阶项在pᵢ→1时ΔΦ→e^{pᵢ}-1-pᵢ→∞，发散速率∝e^{pᵢ}。pᵢ接近1时容斥修正爆炸式增长，不是"大了一点"。[D260](functions/items/D260.md)敏感度阈值pᵢ>0.5后急剧上升的数学根源就是容斥项的指数发散。[D296](functions/items/D296.md)的Φ_exact在pᵢ>0.95时不可替代。 描述 容斥渐近发散函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D302}`
 - 定义域 / Domain: `X_{D302}`
 - 值域 / Codomain: `Y_{D302}`
-- 数学表达 / Expression: `F_{D302}(x) := M3的容斥高阶项在pᵢ→1时ΔΦ→e^{pᵢ}-1-pᵢ→∞，发散速率∝e^{pᵢ}。pᵢ接近1时容斥修正爆炸式增长，不是"大了一点"。D260敏感度阈值pᵢ>0.5后急剧上升的数学根源就是容斥项的指数发散。D296的Φ_exact在pᵢ>0.95时不可替代。`
+- 数学表达 / Expression: `F_{D302}(x) := M3的容斥高阶项在pᵢ→1时ΔΦ→e^{pᵢ}-1-pᵢ→∞，发散速率∝e^{pᵢ}。pᵢ接近1时容斥修正爆炸式增长，不是"大了一点"。[D260](functions/items/D260.md)敏感度阈值pᵢ>0.5后急剧上升的数学根源就是容斥项的指数发散。[D296](functions/items/D296.md)的Φ_exact在pᵢ>0.95时不可替代。`
 - 有效条件 / Validity: `J_n^+(F_{D302})=1 ∧ J_n^-(F_{D302})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D302`
+- 依赖 / Depends on: [D302](functions/items/D302.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D302} and codomain Y_{D302}.
   - 2. Normalize the source expression as F_{D302}: X_{D302}->Y_{D302}.
@@ -15003,7 +15003,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D302`
+- 依赖 / Depends on: [D302](functions/items/D302.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15017,22 +15017,22 @@ English: Rule-based English rendering pending human review.
 ### [D303｜容斥-耦合竞争动态演化函数](functions/items/D303.md)
 
 **函数内容 / Function Content**
-中文：M4的竞争阈值p*随pᵢ分布演化：dp*/dt=∂p*/∂n·dn/dt + ∂p*/∂(p分布)·d(p分布)/dt。pᵢ均匀增长时p*∝√n缓慢上升（容斥占优加速），pᵢ集中增长时p*快速上升（耦合占优）。改革如果只降低部分pᵢ而不改变分布形态，p*可能不动甚至下降——"部分改革"更可能失败的动态版本，D299的动态深化。
+中文：M4的竞争阈值p*随pᵢ分布演化：dp*/dt=∂p*/∂n·dn/dt + ∂p*/∂(p分布)·d(p分布)/dt。pᵢ均匀增长时p*∝√n缓慢上升（容斥占优加速），pᵢ集中增长时p*快速上升（耦合占优）。改革如果只降低部分pᵢ而不改变分布形态，p*可能不动甚至下降——"部分改革"更可能失败的动态版本，[D299](functions/items/D299.md)的动态深化。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M4的竞争阈值p*随pᵢ分布演化：dp*/dt=∂p*/∂n·dn/dt + ∂p*/∂(p分布)·d(p分布)/dt。pᵢ均匀增长时p*∝√n缓慢上升（容斥占优加速），pᵢ集中增长时p*快速上升（耦合占优）。改革如果只降低部分pᵢ而不改变分布形态，p*可能不动甚至下降——"部分改革"更可能失败的动态版本，D299的动态深化。 描述 容斥-耦合竞争动态演化函数。
+中文：该函数通过 M4的竞争阈值p*随pᵢ分布演化：dp*/dt=∂p*/∂n·dn/dt + ∂p*/∂(p分布)·d(p分布)/dt。pᵢ均匀增长时p*∝√n缓慢上升（容斥占优加速），pᵢ集中增长时p*快速上升（耦合占优）。改革如果只降低部分pᵢ而不改变分布形态，p*可能不动甚至下降——"部分改革"更可能失败的动态版本，[D299](functions/items/D299.md)的动态深化。 描述 容斥-耦合竞争动态演化函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D303}`
 - 定义域 / Domain: `X_{D303}`
 - 值域 / Codomain: `Y_{D303}`
-- 数学表达 / Expression: `F_{D303}(x) := M4的竞争阈值p*随pᵢ分布演化：dp*/dt=∂p*/∂n·dn/dt + ∂p*/∂(p分布)·d(p分布)/dt。pᵢ均匀增长时p*∝√n缓慢上升（容斥占优加速），pᵢ集中增长时p*快速上升（耦合占优）。改革如果只降低部分pᵢ而不改变分布形态，p*可能不动甚至下降——"部分改革"更可能失败的动态版本，D299的动态深化。`
+- 数学表达 / Expression: `F_{D303}(x) := M4的竞争阈值p*随pᵢ分布演化：dp*/dt=∂p*/∂n·dn/dt + ∂p*/∂(p分布)·d(p分布)/dt。pᵢ均匀增长时p*∝√n缓慢上升（容斥占优加速），pᵢ集中增长时p*快速上升（耦合占优）。改革如果只降低部分pᵢ而不改变分布形态，p*可能不动甚至下降——"部分改革"更可能失败的动态版本，[D299](functions/items/D299.md)的动态深化。`
 - 有效条件 / Validity: `J_n^+(F_{D303})=1 ∧ J_n^-(F_{D303})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D303`
+- 依赖 / Depends on: [D303](functions/items/D303.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D303} and codomain Y_{D303}.
   - 2. Normalize the source expression as F_{D303}: X_{D303}->Y_{D303}.
@@ -15049,7 +15049,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D303`
+- 依赖 / Depends on: [D303](functions/items/D303.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15060,22 +15060,22 @@ English: Rule-based English rendering pending human review.
 ### [D304｜弱混合角-容斥约束函数](functions/items/D304.md)
 
 **函数内容 / Function Content**
-中文：M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CDC([D283](functions/items/D283.md))三者联合约束使d=4稳定。
+中文：M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与[D297](functions/items/D297.md)形成"基本常数容斥约束群"——α、θ_W、Λ_CDC([D283](functions/items/D283.md))三者联合约束使d=4稳定。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CDC([D283](functions/items/D283.md))三者联合约束使d=4稳定。 描述 弱混合角-容斥约束函数。
+中文：该函数通过 M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与[D297](functions/items/D297.md)形成"基本常数容斥约束群"——α、θ_W、Λ_CDC([D283](functions/items/D283.md))三者联合约束使d=4稳定。 描述 弱混合角-容斥约束函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D304}`
 - 定义域 / Domain: `X_{D304}`
 - 值域 / Codomain: `Y_{D304}`
-- 数学表达 / Expression: `F_{D304}(x) := M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与D297形成"基本常数容斥约束群"——α、θ_W、Λ_CDC(D283)三者联合约束使d=4稳定。`
+- 数学表达 / Expression: `F_{D304}(x) := M5的容斥主导不只约束α，还约束弱混合角θ_W：sin²θ_W≈0.23必须使弱力否决概率p_weak<p*。θ_W过大→弱力否决概率超p*→电弱统一尺度极小点消失→d=4不稳定。与[D297](functions/items/D297.md)形成"基本常数容斥约束群"——α、θ_W、Λ_CDC([D283](functions/items/D283.md))三者联合约束使d=4稳定。`
 - 有效条件 / Validity: `J_n^+(F_{D304})=1 ∧ J_n^-(F_{D304})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D283`, `D304`
+- 依赖 / Depends on: [D283](functions/items/D283.md), [D304](functions/items/D304.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D304} and codomain Y_{D304}.
   - 2. Normalize the source expression as F_{D304}: X_{D304}->Y_{D304}.
@@ -15092,7 +15092,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D283`, `D304`
+- 依赖 / Depends on: [D283](functions/items/D283.md), [D304](functions/items/D304.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15105,22 +15105,22 @@ English: Rule-based English rendering pending human review.
 ### [D305｜维度偏离退化路径函数](functions/items/D305.md)
 
 **函数内容 / Function Content**
-中文：M6的d偏离4时退化路径分两支：d>4→新门控面pᵢ>p*→容斥主导→极小点消失→结构无法形成（"过度复杂"崩溃）；d<4→门控面不足→耦合过弱→缓冲不足→极小点虽在但极浅→小扰动即崩（"过度简单"崩溃）。两支不对称：d>4崩溃突然（容斥爆炸D302），d<4崩溃渐进（缓冲耗尽D294）。d=4是两种崩溃模式之间的鞍点。
+中文：M6的d偏离4时退化路径分两支：d>4→新门控面pᵢ>p*→容斥主导→极小点消失→结构无法形成（"过度复杂"崩溃）；d<4→门控面不足→耦合过弱→缓冲不足→极小点虽在但极浅→小扰动即崩（"过度简单"崩溃）。两支不对称：d>4崩溃突然（容斥爆炸[D302](functions/items/D302.md)），d<4崩溃渐进（缓冲耗尽[D294](functions/items/D294.md)）。d=4是两种崩溃模式之间的鞍点。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M6的d偏离4时退化路径分两支：d>4→新门控面pᵢ>p*→容斥主导→极小点消失→结构无法形成（"过度复杂"崩溃）；d<4→门控面不足→耦合过弱→缓冲不足→极小点虽在但极浅→小扰动即崩（"过度简单"崩溃）。两支不对称：d>4崩溃突然（容斥爆炸D302），d<4崩溃渐进（缓冲耗尽D294）。d=4是两种崩溃模式之间的鞍点。 描述 维度偏离退化路径函数。
+中文：该函数通过 M6的d偏离4时退化路径分两支：d>4→新门控面pᵢ>p*→容斥主导→极小点消失→结构无法形成（"过度复杂"崩溃）；d<4→门控面不足→耦合过弱→缓冲不足→极小点虽在但极浅→小扰动即崩（"过度简单"崩溃）。两支不对称：d>4崩溃突然（容斥爆炸[D302](functions/items/D302.md)），d<4崩溃渐进（缓冲耗尽[D294](functions/items/D294.md)）。d=4是两种崩溃模式之间的鞍点。 描述 维度偏离退化路径函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D305}`
 - 定义域 / Domain: `X_{D305}`
 - 值域 / Codomain: `Y_{D305}`
-- 数学表达 / Expression: `F_{D305}(x) := M6的d偏离4时退化路径分两支：d>4→新门控面pᵢ>p*→容斥主导→极小点消失→结构无法形成（"过度复杂"崩溃）；d<4→门控面不足→耦合过弱→缓冲不足→极小点虽在但极浅→小扰动即崩（"过度简单"崩溃）。两支不对称：d>4崩溃突然（容斥爆炸D302），d<4崩溃渐进（缓冲耗尽D294）。d=4是两种崩溃模式之间的鞍点。`
+- 数学表达 / Expression: `F_{D305}(x) := M6的d偏离4时退化路径分两支：d>4→新门控面pᵢ>p*→容斥主导→极小点消失→结构无法形成（"过度复杂"崩溃）；d<4→门控面不足→耦合过弱→缓冲不足→极小点虽在但极浅→小扰动即崩（"过度简单"崩溃）。两支不对称：d>4崩溃突然（容斥爆炸[D302](functions/items/D302.md)），d<4崩溃渐进（缓冲耗尽[D294](functions/items/D294.md)）。d=4是两种崩溃模式之间的鞍点。`
 - 有效条件 / Validity: `J_n^+(F_{D305})=1 ∧ J_n^-(F_{D305})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D305`
+- 依赖 / Depends on: [D305](functions/items/D305.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D305} and codomain Y_{D305}.
   - 2. Normalize the source expression as F_{D305}: X_{D305}->Y_{D305}.
@@ -15137,7 +15137,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D305`
+- 依赖 / Depends on: [D305](functions/items/D305.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15159,11 +15159,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D306}`
 - 定义域 / Domain: `X_{D306}`
 - 值域 / Codomain: `Y_{D306}`
-- 数学表达 / Expression: `F_{D306}(x) := M7的容斥加速逆过程"去容斥"需两条件同时满足：①p_max下降速率|ḃ|>容斥加速度d²(Σpᵢpⱼ)/dt²，②p分布必须集中化（σ<σ_opt）。只满足①不满足②→容斥项基数仍大→去容斥不可持续。只满足②不满足①→p_max继续上升→容斥加速继续。D290"休克疗法"的精确版：休克疗法同时满足①②，温和改革通常只满足①。`
+- 数学表达 / Expression: `F_{D306}(x) := M7的容斥加速逆过程"去容斥"需两条件同时满足：①p_max下降速率|ḃ|>容斥加速度d²(Σpᵢpⱼ)/dt²，②p分布必须集中化（σ<σ_opt）。只满足①不满足②→容斥项基数仍大→去容斥不可持续。只满足②不满足①→p_max继续上升→容斥加速继续。[D290](functions/items/D290.md)"休克疗法"的精确版：休克疗法同时满足①②，温和改革通常只满足①。`
 - 有效条件 / Validity: `J_n^+(F_{D306})=1 ∧ J_n^-(F_{D306})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D290`, `D306`
+- 依赖 / Depends on: [D290](functions/items/D290.md), [D306](functions/items/D306.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D306} and codomain Y_{D306}.
   - 2. Normalize the source expression as F_{D306}: X_{D306}->Y_{D306}.
@@ -15180,7 +15180,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D290`, `D306`
+- 依赖 / Depends on: [D290](functions/items/D290.md), [D306](functions/items/D306.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15206,7 +15206,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D307})=1 ∧ J_n^-(F_{D307})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D307`
+- 依赖 / Depends on: [D307](functions/items/D307.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D307} and codomain Y_{D307}.
   - 2. Normalize the source expression as F_{D307}: X_{D307}->Y_{D307}.
@@ -15223,7 +15223,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D307`
+- 依赖 / Depends on: [D307](functions/items/D307.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15252,7 +15252,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D308})=1 ∧ J_n^-(F_{D308})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D308`
+- 依赖 / Depends on: [D308](functions/items/D308.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D308} and codomain Y_{D308}.
   - 2. Normalize the source expression as F_{D308}: X_{D308}->Y_{D308}.
@@ -15269,7 +15269,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D308`
+- 依赖 / Depends on: [D308](functions/items/D308.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15280,22 +15280,22 @@ English: Rule-based English rendering pending human review.
 ### [D309｜缓冲可重建性函数](functions/items/D309.md)
 
 **函数内容 / Function Content**
-中文：M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈值时，即使p_max大幅下降，耦合强度也不足以重建缓冲——"缓冲不可逆"状态。与D295正反馈不可逆点形成双重不可逆：D295是p_max不可逆，D309是缓冲不可逆。两个不可逆点可以不同时到达——缓冲可能先于p_max进入不可逆。
+中文：M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈值时，即使p_max大幅下降，耦合强度也不足以重建缓冲——"缓冲不可逆"状态。与[D295](functions/items/D295.md)正反馈不可逆点形成双重不可逆：[D295](functions/items/D295.md)是p_max不可逆，[D309](functions/items/D309.md)是缓冲不可逆。两个不可逆点可以不同时到达——缓冲可能先于p_max进入不可逆。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈值时，即使p_max大幅下降，耦合强度也不足以重建缓冲——"缓冲不可逆"状态。与D295正反馈不可逆点形成双重不可逆：D295是p_max不可逆，D309是缓冲不可逆。两个不可逆点可以不同时到达——缓冲可能先于p_max进入不可逆。 描述 缓冲可重建性函数。
+中文：该函数通过 M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈值时，即使p_max大幅下降，耦合强度也不足以重建缓冲——"缓冲不可逆"状态。与[D295](functions/items/D295.md)正反馈不可逆点形成双重不可逆：[D295](functions/items/D295.md)是p_max不可逆，[D309](functions/items/D309.md)是缓冲不可逆。两个不可逆点可以不同时到达——缓冲可能先于p_max进入不可逆。 描述 缓冲可重建性函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D309}`
 - 定义域 / Domain: `X_{D309}`
 - 值域 / Codomain: `Y_{D309}`
-- 数学表达 / Expression: `F_{D309}(x) := M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈值时，即使p_max大幅下降，耦合强度也不足以重建缓冲——"缓冲不可逆"状态。与D295正反馈不可逆点形成双重不可逆：D295是p_max不可逆，D309是缓冲不可逆。两个不可逆点可以不同时到达——缓冲可能先于p_max进入不可逆。`
+- 数学表达 / Expression: `F_{D309}(x) := M10的缓冲耗尽后可重建条件：g_eff>g_critical≈√(2ΔΦ/n)。g_eff低于此阈值时，即使p_max大幅下降，耦合强度也不足以重建缓冲——"缓冲不可逆"状态。与[D295](functions/items/D295.md)正反馈不可逆点形成双重不可逆：[D295](functions/items/D295.md)是p_max不可逆，[D309](functions/items/D309.md)是缓冲不可逆。两个不可逆点可以不同时到达——缓冲可能先于p_max进入不可逆。`
 - 有效条件 / Validity: `J_n^+(F_{D309})=1 ∧ J_n^-(F_{D309})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D309`
+- 依赖 / Depends on: [D309](functions/items/D309.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D309} and codomain Y_{D309}.
   - 2. Normalize the source expression as F_{D309}: X_{D309}->Y_{D309}.
@@ -15312,7 +15312,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D309`
+- 依赖 / Depends on: [D309](functions/items/D309.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15323,22 +15323,22 @@ English: Rule-based English rendering pending human review.
 ### [D310｜阶段2临界宽度函数](functions/items/D310.md)
 
 **函数内容 / Function Content**
-中文：M11的阶段2宽度w₂有临界下限w_min∝1/(n·ḡ)。低于此宽度时阶段2退化为相变面——系统直接从阶段1跳到阶段3，没有缓冲期。小企业（D159标注）的n小、ḡ低→w₂<w_min→直接处于阶段3。任何n·ḡ<阈值的系统都不存在缓冲期——脆弱性不是状态而是结构属性。
+中文：M11的阶段2宽度w₂有临界下限w_min∝1/(n·ḡ)。低于此宽度时阶段2退化为相变面——系统直接从阶段1跳到阶段3，没有缓冲期。小企业（[D159](functions/items/D159.md)标注）的n小、ḡ低→w₂<w_min→直接处于阶段3。任何n·ḡ<阈值的系统都不存在缓冲期——脆弱性不是状态而是结构属性。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M11的阶段2宽度w₂有临界下限w_min∝1/(n·ḡ)。低于此宽度时阶段2退化为相变面——系统直接从阶段1跳到阶段3，没有缓冲期。小企业（D159标注）的n小、ḡ低→w₂<w_min→直接处于阶段3。任何n·ḡ<阈值的系统都不存在缓冲期——脆弱性不是状态而是结构属性。 描述 阶段2临界宽度函数。
+中文：该函数通过 M11的阶段2宽度w₂有临界下限w_min∝1/(n·ḡ)。低于此宽度时阶段2退化为相变面——系统直接从阶段1跳到阶段3，没有缓冲期。小企业（[D159](functions/items/D159.md)标注）的n小、ḡ低→w₂<w_min→直接处于阶段3。任何n·ḡ<阈值的系统都不存在缓冲期——脆弱性不是状态而是结构属性。 描述 阶段2临界宽度函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D310}`
 - 定义域 / Domain: `X_{D310}`
 - 值域 / Codomain: `Y_{D310}`
-- 数学表达 / Expression: `F_{D310}(x) := M11的阶段2宽度w₂有临界下限w_min∝1/(n·ḡ)。低于此宽度时阶段2退化为相变面——系统直接从阶段1跳到阶段3，没有缓冲期。小企业（D159标注）的n小、ḡ低→w₂<w_min→直接处于阶段3。任何n·ḡ<阈值的系统都不存在缓冲期——脆弱性不是状态而是结构属性。`
+- 数学表达 / Expression: `F_{D310}(x) := M11的阶段2宽度w₂有临界下限w_min∝1/(n·ḡ)。低于此宽度时阶段2退化为相变面——系统直接从阶段1跳到阶段3，没有缓冲期。小企业（[D159](functions/items/D159.md)标注）的n小、ḡ低→w₂<w_min→直接处于阶段3。任何n·ḡ<阈值的系统都不存在缓冲期——脆弱性不是状态而是结构属性。`
 - 有效条件 / Validity: `J_n^+(F_{D310})=1 ∧ J_n^-(F_{D310})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D310`
+- 依赖 / Depends on: [D310](functions/items/D310.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D310} and codomain Y_{D310}.
   - 2. Normalize the source expression as F_{D310}: X_{D310}->Y_{D310}.
@@ -15355,7 +15355,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D310`
+- 依赖 / Depends on: [D310](functions/items/D310.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15366,22 +15366,22 @@ English: Rule-based English rendering pending human review.
 ### [D311｜僵尸态函数](functions/items/D311.md)
 
 **函数内容 / Function Content**
-中文：M12的g_eff极小但不为零时（0<g_eff<<g_critical），系统处于"僵尸态"：耦合名义上存在但实际无效，缓冲名义上存在但无法使用。数学特征：P_survival=e^{-Φ_eff}中Φ_eff≈Φ（耦合修正可忽略），但系统并未完全崩溃（g_eff>0）。僵尸态比完全崩溃更危险——系统看起来还在运转，掩盖了D309缓冲不可逆已到达的事实。
+中文：M12的g_eff极小但不为零时（0<g_eff<<g_critical），系统处于"僵尸态"：耦合名义上存在但实际无效，缓冲名义上存在但无法使用。数学特征：P_survival=e^{-Φ_eff}中Φ_eff≈Φ（耦合修正可忽略），但系统并未完全崩溃（g_eff>0）。僵尸态比完全崩溃更危险——系统看起来还在运转，掩盖了[D309](functions/items/D309.md)缓冲不可逆已到达的事实。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M12的g_eff极小但不为零时（0<g_eff<<g_critical），系统处于"僵尸态"：耦合名义上存在但实际无效，缓冲名义上存在但无法使用。数学特征：P_survival=e^{-Φ_eff}中Φ_eff≈Φ（耦合修正可忽略），但系统并未完全崩溃（g_eff>0）。僵尸态比完全崩溃更危险——系统看起来还在运转，掩盖了D309缓冲不可逆已到达的事实。 描述 僵尸态函数。
+中文：该函数通过 M12的g_eff极小但不为零时（0<g_eff<<g_critical），系统处于"僵尸态"：耦合名义上存在但实际无效，缓冲名义上存在但无法使用。数学特征：P_survival=e^{-Φ_eff}中Φ_eff≈Φ（耦合修正可忽略），但系统并未完全崩溃（g_eff>0）。僵尸态比完全崩溃更危险——系统看起来还在运转，掩盖了[D309](functions/items/D309.md)缓冲不可逆已到达的事实。 描述 僵尸态函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D311}`
 - 定义域 / Domain: `X_{D311}`
 - 值域 / Codomain: `Y_{D311}`
-- 数学表达 / Expression: `F_{D311}(x) := M12的g_eff极小但不为零时（0<g_eff<<g_critical），系统处于"僵尸态"：耦合名义上存在但实际无效，缓冲名义上存在但无法使用。数学特征：P_survival=e^{-Φ_eff}中Φ_eff≈Φ（耦合修正可忽略），但系统并未完全崩溃（g_eff>0）。僵尸态比完全崩溃更危险——系统看起来还在运转，掩盖了D309缓冲不可逆已到达的事实。`
+- 数学表达 / Expression: `F_{D311}(x) := M12的g_eff极小但不为零时（0<g_eff<<g_critical），系统处于"僵尸态"：耦合名义上存在但实际无效，缓冲名义上存在但无法使用。数学特征：P_survival=e^{-Φ_eff}中Φ_eff≈Φ（耦合修正可忽略），但系统并未完全崩溃（g_eff>0）。僵尸态比完全崩溃更危险——系统看起来还在运转，掩盖了[D309](functions/items/D309.md)缓冲不可逆已到达的事实。`
 - 有效条件 / Validity: `J_n^+(F_{D311})=1 ∧ J_n^-(F_{D311})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D311`
+- 依赖 / Depends on: [D311](functions/items/D311.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D311} and codomain Y_{D311}.
   - 2. Normalize the source expression as F_{D311}: X_{D311}->Y_{D311}.
@@ -15398,7 +15398,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D311`
+- 依赖 / Depends on: [D311](functions/items/D311.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15411,22 +15411,22 @@ English: Rule-based English rendering pending human review.
 ### [D312｜正反馈噪声放大函数](functions/items/D312.md)
 
 **函数内容 / Function Content**
-中文：M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益([D274](functions/items/D274.md))。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应D295不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。
+中文：M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益([D274](functions/items/D274.md))。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应[D295](functions/items/D295.md)不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益([D274](functions/items/D274.md))。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应D295不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。 描述 正反馈噪声放大函数。
+中文：该函数通过 M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益([D274](functions/items/D274.md))。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应[D295](functions/items/D295.md)不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。 描述 正反馈噪声放大函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D312}`
 - 定义域 / Domain: `X_{D312}`
 - 值域 / Codomain: `Y_{D312}`
-- 数学表达 / Expression: `F_{D312}(x) := M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益(D274)。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应D295不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。`
+- 数学表达 / Expression: `F_{D312}(x) := M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，K为反馈增益([D274](functions/items/D274.md))。K>1时噪声指数放大→系统对初始条件极度敏感→蝴蝶效应。K<1时噪声衰减→系统稳定。临界K=1对应[D295](functions/items/D295.md)不可逆点。K>1的系统不可预测——不是因为模型不够好，而是正反馈使噪声放大到宏观尺度。经济危机、社会动荡的不可预测性有数学根源。`
 - 有效条件 / Validity: `J_n^+(F_{D312})=1 ∧ J_n^-(F_{D312})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D274`, `D312`
+- 依赖 / Depends on: [D274](functions/items/D274.md), [D312](functions/items/D312.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D312} and codomain Y_{D312}.
   - 2. Normalize the source expression as F_{D312}: X_{D312}->Y_{D312}.
@@ -15443,7 +15443,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D274`, `D312`
+- 依赖 / Depends on: [D274](functions/items/D274.md), [D312](functions/items/D312.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15465,11 +15465,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D313}`
 - 定义域 / Domain: `X_{D313}`
 - 值域 / Codomain: `Y_{D313}`
-- 数学表达 / Expression: `F_{D313}(x) := M14的良性-恶性共存(D299)能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_exclusion→共存不稳定→恶性最终吞噬良性。K_benign>α_exclusion→共存稳定→良性逐步蚕食恶性。K_benign≈α_exclusion→临界共存→小扰动决定方向。D299"部分改革通常不够"的精确版：改革力度β(D274)必须使K_benign>α_exclusion。`
+- 数学表达 / Expression: `F_{D313}(x) := M14的良性-恶性共存([D299](functions/items/D299.md))能持续的条件：良性子循环的反馈增益K_benign必须大于恶性子循环的容斥加速因子α_exclusion。K_benign<α_exclusion→共存不稳定→恶性最终吞噬良性。K_benign>α_exclusion→共存稳定→良性逐步蚕食恶性。K_benign≈α_exclusion→临界共存→小扰动决定方向。[D299](functions/items/D299.md)"部分改革通常不够"的精确版：改革力度β([D274](functions/items/D274.md))必须使K_benign>α_exclusion。`
 - 有效条件 / Validity: `J_n^+(F_{D313})=1 ∧ J_n^-(F_{D313})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D274`, `D299`, `D313`
+- 依赖 / Depends on: [D274](functions/items/D274.md), [D299](functions/items/D299.md), [D313](functions/items/D313.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D313} and codomain Y_{D313}.
   - 2. Normalize the source expression as F_{D313}: X_{D313}->Y_{D313}.
@@ -15486,7 +15486,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D274`, `D299`, `D313`
+- 依赖 / Depends on: [D274](functions/items/D274.md), [D299](functions/items/D299.md), [D313](functions/items/D313.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15497,22 +15497,22 @@ English: Rule-based English rendering pending human review.
 ### [D314｜ΔΦ-P传导非线性阈值函数](functions/items/D314.md)
 
 **函数内容 / Function Content**
-中文：M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ<0.1时P变化≈ΔΦ（线性区），ΔΦ>1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须用指数形式。与D296三级精度体系衔接：ΔΦ_c=0.3对应pᵢ≈0.5，与D260敏感度阈值一致。
+中文：M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ<0.1时P变化≈ΔΦ（线性区），ΔΦ>1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值[D158](functions/items/D158.md)线性近似可用，高于此值必须用指数形式。与[D296](functions/items/D296.md)三级精度体系衔接：ΔΦ_c=0.3对应pᵢ≈0.5，与[D260](functions/items/D260.md)敏感度阈值一致。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ<0.1时P变化≈ΔΦ（线性区），ΔΦ>1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须用指数形式。与D296三级精度体系衔接：ΔΦ_c=0.3对应pᵢ≈0.5，与D260敏感度阈值一致。 描述 -P传导非线性阈值函数。
+中文：该函数通过 M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ<0.1时P变化≈ΔΦ（线性区），ΔΦ>1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值[D158](functions/items/D158.md)线性近似可用，高于此值必须用指数形式。与[D296](functions/items/D296.md)三级精度体系衔接：ΔΦ_c=0.3对应pᵢ≈0.5，与[D260](functions/items/D260.md)敏感度阈值一致。 描述 -P传导非线性阈值函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D314}`
 - 定义域 / Domain: `X_{D314}`
 - 值域 / Codomain: `Y_{D314}`
-- 数学表达 / Expression: `F_{D314}(x) := M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ<0.1时P变化≈ΔΦ（线性区），ΔΦ>1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须用指数形式。与D296三级精度体系衔接：ΔΦ_c=0.3对应pᵢ≈0.5，与D260敏感度阈值一致。`
+- 数学表达 / Expression: `F_{D314}(x) := M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ<0.1时P变化≈ΔΦ（线性区），ΔΦ>1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值[D158](functions/items/D158.md)线性近似可用，高于此值必须用指数形式。与[D296](functions/items/D296.md)三级精度体系衔接：ΔΦ_c=0.3对应pᵢ≈0.5，与[D260](functions/items/D260.md)敏感度阈值一致。`
 - 有效条件 / Validity: `J_n^+(F_{D314})=1 ∧ J_n^-(F_{D314})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D314`
+- 依赖 / Depends on: [D314](functions/items/D314.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D314} and codomain Y_{D314}.
   - 2. Normalize the source expression as F_{D314}: X_{D314}->Y_{D314}.
@@ -15529,7 +15529,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D314`
+- 依赖 / Depends on: [D314](functions/items/D314.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15558,7 +15558,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D315})=1 ∧ J_n^-(F_{D315})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D315`
+- 依赖 / Depends on: [D315](functions/items/D315.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D315} and codomain Y_{D315}.
   - 2. Normalize the source expression as F_{D315}: X_{D315}->Y_{D315}.
@@ -15575,7 +15575,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D315`
+- 依赖 / Depends on: [D315](functions/items/D315.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15601,7 +15601,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D316})=1 ∧ J_n^-(F_{D316})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D316`
+- 依赖 / Depends on: [D316](functions/items/D316.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D316} and codomain Y_{D316}.
   - 2. Normalize the source expression as F_{D316}: X_{D316}->Y_{D316}.
@@ -15618,7 +15618,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D316`
+- 依赖 / Depends on: [D316](functions/items/D316.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15642,11 +15642,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D317}`
 - 定义域 / Domain: `X_{D317}`
 - 值域 / Codomain: `Y_{D317}`
-- 数学表达 / Expression: `F_{D317}(x) := M4的p*对系统参数的敏感度：∂p*/∂n=p*/(2n)（弱敏感），∂p*/∂σ∝p*·(σ_opt-σ)/σ_opt²（强敏感）。p*对分布分散度σ的敏感度远高于对n的敏感度。改变分布形态（集中化）比增加门控面数n更能有效移动p*——D306"去容斥需同时集中分布"的敏感度论证。`
+- 数学表达 / Expression: `F_{D317}(x) := M4的p*对系统参数的敏感度：∂p*/∂n=p*/(2n)（弱敏感），∂p*/∂σ∝p*·(σ_opt-σ)/σ_opt²（强敏感）。p*对分布分散度σ的敏感度远高于对n的敏感度。改变分布形态（集中化）比增加门控面数n更能有效移动p*——[D306](functions/items/D306.md)"去容斥需同时集中分布"的敏感度论证。`
 - 有效条件 / Validity: `J_n^+(F_{D317})=1 ∧ J_n^-(F_{D317})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D306`, `D317`
+- 依赖 / Depends on: [D306](functions/items/D306.md), [D317](functions/items/D317.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D317} and codomain Y_{D317}.
   - 2. Normalize the source expression as F_{D317}: X_{D317}->Y_{D317}.
@@ -15663,7 +15663,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D306`, `D317`
+- 依赖 / Depends on: [D306](functions/items/D306.md), [D317](functions/items/D317.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15674,22 +15674,22 @@ English: Rule-based English rendering pending human review.
 ### [D318｜容斥主导尺度函数](functions/items/D318.md)
 
 **函数内容 / Function Content**
-中文：M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ<μ_c时容斥可忽略（经典物理区），μ>μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——D293阶段2→3一级相变的尺度版本。
+中文：M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ<μ_c时容斥可忽略（经典物理区），μ>μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——[D293](functions/items/D293.md)阶段2→3一级相变的尺度版本。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ<μ_c时容斥可忽略（经典物理区），μ>μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——D293阶段2→3一级相变的尺度版本。 描述 容斥主导尺度函数。
+中文：该函数通过 M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ<μ_c时容斥可忽略（经典物理区），μ>μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——[D293](functions/items/D293.md)阶段2→3一级相变的尺度版本。 描述 容斥主导尺度函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D318}`
 - 定义域 / Domain: `X_{D318}`
 - 值域 / Codomain: `Y_{D318}`
-- 数学表达 / Expression: `F_{D318}(x) := M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ<μ_c时容斥可忽略（经典物理区），μ>μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——D293阶段2→3一级相变的尺度版本。`
+- 数学表达 / Expression: `F_{D318}(x) := M5的容斥从可忽略变主导的临界尺度μ_c由max(pᵢ(μ))=p*决定。μ<μ_c时容斥可忽略（经典物理区），μ>μ_c时容斥主导（量子引力区）。μ_c对应量子引力能标~10¹⁸ GeV。容斥主导不是渐变而是在μ_c处突变——[D293](functions/items/D293.md)阶段2→3一级相变的尺度版本。`
 - 有效条件 / Validity: `J_n^+(F_{D318})=1 ∧ J_n^-(F_{D318})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D318`
+- 依赖 / Depends on: [D318](functions/items/D318.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D318} and codomain Y_{D318}.
   - 2. Normalize the source expression as F_{D318}: X_{D318}->Y_{D318}.
@@ -15706,7 +15706,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D318`
+- 依赖 / Depends on: [D318](functions/items/D318.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15717,22 +15717,22 @@ English: Rule-based English rendering pending human review.
 ### [D319｜维度回复力函数](functions/items/D319.md)
 
 **函数内容 / Function Content**
-中文：M6的d_eff在4附近振荡时回复力F_restore∝-∂Φ/∂(d_eff)·δ(d_eff-4)。回复力系数k_restore∝Σαᵢ²/(1-pᵢ)²——与D292吸引域深度同源。k_restore在d=4处最大→d=4不仅是稳定点还是回复力最强的点。宇宙即使被扰动偏离d=4也会被"弹回来"——d=4的稳定性是动态的。
+中文：M6的d_eff在4附近振荡时回复力F_restore∝-∂Φ/∂(d_eff)·δ(d_eff-4)。回复力系数k_restore∝Σαᵢ²/(1-pᵢ)²——与[D292](functions/items/D292.md)吸引域深度同源。k_restore在d=4处最大→d=4不仅是稳定点还是回复力最强的点。宇宙即使被扰动偏离d=4也会被"弹回来"——d=4的稳定性是动态的。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M6的d_eff在4附近振荡时回复力F_restore∝-∂Φ/∂(d_eff)·δ(d_eff-4)。回复力系数k_restore∝Σαᵢ²/(1-pᵢ)²——与D292吸引域深度同源。k_restore在d=4处最大→d=4不仅是稳定点还是回复力最强的点。宇宙即使被扰动偏离d=4也会被"弹回来"——d=4的稳定性是动态的。 描述 维度回复力函数。
+中文：该函数通过 M6的d_eff在4附近振荡时回复力F_restore∝-∂Φ/∂(d_eff)·δ(d_eff-4)。回复力系数k_restore∝Σαᵢ²/(1-pᵢ)²——与[D292](functions/items/D292.md)吸引域深度同源。k_restore在d=4处最大→d=4不仅是稳定点还是回复力最强的点。宇宙即使被扰动偏离d=4也会被"弹回来"——d=4的稳定性是动态的。 描述 维度回复力函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D319}`
 - 定义域 / Domain: `X_{D319}`
 - 值域 / Codomain: `Y_{D319}`
-- 数学表达 / Expression: `F_{D319}(x) := M6的d_eff在4附近振荡时回复力F_restore∝-∂Φ/∂(d_eff)·δ(d_eff-4)。回复力系数k_restore∝Σαᵢ²/(1-pᵢ)²——与D292吸引域深度同源。k_restore在d=4处最大→d=4不仅是稳定点还是回复力最强的点。宇宙即使被扰动偏离d=4也会被"弹回来"——d=4的稳定性是动态的。`
+- 数学表达 / Expression: `F_{D319}(x) := M6的d_eff在4附近振荡时回复力F_restore∝-∂Φ/∂(d_eff)·δ(d_eff-4)。回复力系数k_restore∝Σαᵢ²/(1-pᵢ)²——与[D292](functions/items/D292.md)吸引域深度同源。k_restore在d=4处最大→d=4不仅是稳定点还是回复力最强的点。宇宙即使被扰动偏离d=4也会被"弹回来"——d=4的稳定性是动态的。`
 - 有效条件 / Validity: `J_n^+(F_{D319})=1 ∧ J_n^-(F_{D319})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D319`
+- 依赖 / Depends on: [D319](functions/items/D319.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D319} and codomain Y_{D319}.
   - 2. Normalize the source expression as F_{D319}: X_{D319}->Y_{D319}.
@@ -15749,7 +15749,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D319`
+- 依赖 / Depends on: [D319](functions/items/D319.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15775,7 +15775,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D320})=1 ∧ J_n^-(F_{D320})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D320`
+- 依赖 / Depends on: [D320](functions/items/D320.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D320} and codomain Y_{D320}.
   - 2. Normalize the source expression as F_{D320}: X_{D320}->Y_{D320}.
@@ -15792,7 +15792,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D320`
+- 依赖 / Depends on: [D320](functions/items/D320.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15818,7 +15818,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D321})=1 ∧ J_n^-(F_{D321})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D321`
+- 依赖 / Depends on: [D321](functions/items/D321.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D321} and codomain Y_{D321}.
   - 2. Normalize the source expression as F_{D321}: X_{D321}->Y_{D321}.
@@ -15835,7 +15835,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D321`
+- 依赖 / Depends on: [D321](functions/items/D321.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15861,7 +15861,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D322})=1 ∧ J_n^-(F_{D322})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D322`
+- 依赖 / Depends on: [D322](functions/items/D322.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D322} and codomain Y_{D322}.
   - 2. Normalize the source expression as F_{D322}: X_{D322}->Y_{D322}.
@@ -15878,7 +15878,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D322`
+- 依赖 / Depends on: [D322](functions/items/D322.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15904,7 +15904,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D323})=1 ∧ J_n^-(F_{D323})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D323`
+- 依赖 / Depends on: [D323](functions/items/D323.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D323} and codomain Y_{D323}.
   - 2. Normalize the source expression as F_{D323}: X_{D323}->Y_{D323}.
@@ -15921,7 +15921,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D323`
+- 依赖 / Depends on: [D323](functions/items/D323.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15947,7 +15947,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D324})=1 ∧ J_n^-(F_{D324})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D324`
+- 依赖 / Depends on: [D324](functions/items/D324.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D324} and codomain Y_{D324}.
   - 2. Normalize the source expression as F_{D324}: X_{D324}->Y_{D324}.
@@ -15964,7 +15964,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D324`
+- 依赖 / Depends on: [D324](functions/items/D324.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -15990,7 +15990,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D325})=1 ∧ J_n^-(F_{D325})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D325`
+- 依赖 / Depends on: [D325](functions/items/D325.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D325} and codomain Y_{D325}.
   - 2. Normalize the source expression as F_{D325}: X_{D325}->Y_{D325}.
@@ -16007,7 +16007,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D325`
+- 依赖 / Depends on: [D325](functions/items/D325.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16020,22 +16020,22 @@ English: Rule-based English rendering pending human review.
 ### [D326｜正反馈饱和函数](functions/items/D326.md)
 
 **函数内容 / Function Content**
-中文：M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和。饱和后稳态p_max≈p_min·K/(K-1)。K越大稳态越低——强正反馈把p_max压到极低，但代价是D312噪声放大。D242精度-鲁棒性权衡在正反馈回路中的具体表现。
+中文：M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和。饱和后稳态p_max≈p_min·K/(K-1)。K越大稳态越低——强正反馈把p_max压到极低，但代价是[D312](functions/items/D312.md)噪声放大。[D242](functions/items/D242.md)精度-鲁棒性权衡在正反馈回路中的具体表现。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和。饱和后稳态p_max≈p_min·K/(K-1)。K越大稳态越低——强正反馈把p_max压到极低，但代价是D312噪声放大。D242精度-鲁棒性权衡在正反馈回路中的具体表现。 描述 正反馈饱和函数。
+中文：该函数通过 M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和。饱和后稳态p_max≈p_min·K/(K-1)。K越大稳态越低——强正反馈把p_max压到极低，但代价是[D312](functions/items/D312.md)噪声放大。[D242](functions/items/D242.md)精度-鲁棒性权衡在正反馈回路中的具体表现。 描述 正反馈饱和函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D326}`
 - 定义域 / Domain: `X_{D326}`
 - 值域 / Codomain: `Y_{D326}`
-- 数学表达 / Expression: `F_{D326}(x) := M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和。饱和后稳态p_max≈p_min·K/(K-1)。K越大稳态越低——强正反馈把p_max压到极低，但代价是D312噪声放大。D242精度-鲁棒性权衡在正反馈回路中的具体表现。`
+- 数学表达 / Expression: `F_{D326}(x) := M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/(1+(K^k-1)·p_min/p_max)，K^k·p_min≈p_max时饱和。饱和后稳态p_max≈p_min·K/(K-1)。K越大稳态越低——强正反馈把p_max压到极低，但代价是[D312](functions/items/D312.md)噪声放大。[D242](functions/items/D242.md)精度-鲁棒性权衡在正反馈回路中的具体表现。`
 - 有效条件 / Validity: `J_n^+(F_{D326})=1 ∧ J_n^-(F_{D326})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D326`
+- 依赖 / Depends on: [D326](functions/items/D326.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D326} and codomain Y_{D326}.
   - 2. Normalize the source expression as F_{D326}: X_{D326}->Y_{D326}.
@@ -16052,7 +16052,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D326`
+- 依赖 / Depends on: [D326](functions/items/D326.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16078,7 +16078,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D327})=1 ∧ J_n^-(F_{D327})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D327`
+- 依赖 / Depends on: [D327](functions/items/D327.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D327} and codomain Y_{D327}.
   - 2. Normalize the source expression as F_{D327}: X_{D327}->Y_{D327}.
@@ -16095,7 +16095,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D327`
+- 依赖 / Depends on: [D327](functions/items/D327.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16108,22 +16108,22 @@ English: Rule-based English rendering pending human review.
 ### [D328｜ΔΦ空间异质性叠加函数](functions/items/D328.md)
 
 **函数内容 / Function Content**
-中文：M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不是"平均变差"而是"最差那个拖垮全局"。与D280"先降p_max"策略一致。
+中文：M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不是"平均变差"而是"最差那个拖垮全局"。与[D280](functions/items/D280.md)"先降p_max"策略一致。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不是"平均变差"而是"最差那个拖垮全局"。与D280"先降p_max"策略一致。 描述 空间异质性叠加函数。
+中文：该函数通过 M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不是"平均变差"而是"最差那个拖垮全局"。与[D280](functions/items/D280.md)"先降p_max"策略一致。 描述 空间异质性叠加函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D328}`
 - 定义域 / Domain: `X_{D328}`
 - 值域 / Codomain: `Y_{D328}`
-- 数学表达 / Expression: `F_{D328}(x) := M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不是"平均变差"而是"最差那个拖垮全局"。与D280"先降p_max"策略一致。`
+- 数学表达 / Expression: `F_{D328}(x) := M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max(ΔΦᵢ)·(1+ln(Σe^{ΔΦᵢ}/max(ΔΦᵢ)))。极端异质性下ΔΦ_total≈ΔΦ_max·(1+ln(n-1))。系统退化由最弱门控面决定——不是"平均变差"而是"最差那个拖垮全局"。与[D280](functions/items/D280.md)"先降p_max"策略一致。`
 - 有效条件 / Validity: `J_n^+(F_{D328})=1 ∧ J_n^-(F_{D328})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D328`
+- 依赖 / Depends on: [D328](functions/items/D328.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D328} and codomain Y_{D328}.
   - 2. Normalize the source expression as F_{D328}: X_{D328}->Y_{D328}.
@@ -16140,7 +16140,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D328`
+- 依赖 / Depends on: [D328](functions/items/D328.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16164,11 +16164,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D329}`
 - 定义域 / Domain: `X_{D329}`
 - 值域 / Codomain: `Y_{D329}`
-- 数学表达 / Expression: `F_{D329}(x) := M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后系统失去容错空间——D315"次优但可到达"的消失条件。`
+- 数学表达 / Expression: `F_{D329}(x) := M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ(μ_saddle)-Φ(μ₁)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极小点被深极小点吸收。社会改革中"次优方案"极小点被吸收进"最优方案"后系统失去容错空间——[D315](functions/items/D315.md)"次优但可到达"的消失条件。`
 - 有效条件 / Validity: `J_n^+(F_{D329})=1 ∧ J_n^-(F_{D329})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D315`, `D329`
+- 依赖 / Depends on: [D315](functions/items/D315.md), [D329](functions/items/D329.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D329} and codomain Y_{D329}.
   - 2. Normalize the source expression as F_{D329}: X_{D329}->Y_{D329}.
@@ -16185,7 +16185,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D315`, `D329`
+- 依赖 / Depends on: [D315](functions/items/D315.md), [D329](functions/items/D329.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16207,11 +16207,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D330}`
 - 定义域 / Domain: `X_{D330}`
 - 值域 / Codomain: `Y_{D330}`
-- 数学表达 / Expression: `F_{D330}(x) := M3的Σpᵢpⱼ中前k个高p门控面的容斥贡献>50%（k=3时）。容斥不是均匀分布的——集中在少数高p门控面之间。降p_max的效果不只是线性降Φ，还切断最大的容斥关联对——D280"先降p_max"的拓扑论证。`
+- 数学表达 / Expression: `F_{D330}(x) := M3的Σpᵢpⱼ中前k个高p门控面的容斥贡献>50%（k=3时）。容斥不是均匀分布的——集中在少数高p门控面之间。降p_max的效果不只是线性降Φ，还切断最大的容斥关联对——[D280](functions/items/D280.md)"先降p_max"的拓扑论证。`
 - 有效条件 / Validity: `J_n^+(F_{D330})=1 ∧ J_n^-(F_{D330})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D280`, `D330`
+- 依赖 / Depends on: [D280](functions/items/D280.md), [D330](functions/items/D330.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D330} and codomain Y_{D330}.
   - 2. Normalize the source expression as F_{D330}: X_{D330}->Y_{D330}.
@@ -16228,7 +16228,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D280`, `D330`
+- 依赖 / Depends on: [D280](functions/items/D280.md), [D330](functions/items/D330.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16254,7 +16254,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D331})=1 ∧ J_n^-(F_{D331})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D331`
+- 依赖 / Depends on: [D331](functions/items/D331.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D331} and codomain Y_{D331}.
   - 2. Normalize the source expression as F_{D331}: X_{D331}->Y_{D331}.
@@ -16271,7 +16271,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D331`
+- 依赖 / Depends on: [D331](functions/items/D331.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16282,11 +16282,11 @@ English: Rule-based English rendering pending human review.
 ### [D332｜容斥-耦合不可逆函数](functions/items/D332.md)
 
 **函数内容 / Function Content**
-中文：M5的容斥主导区一旦进入，退回需要p*上升，但系统崩溃方向使p*下降→退回条件与动态方向相反。容斥主导是自锁的。与D295(p_max不可逆)、[D309](functions/items/D309.md)(缓冲不可逆)形成三级不可逆：p_max→缓冲→容斥主导，逐层加深的不可逆结构。
+中文：M5的容斥主导区一旦进入，退回需要p*上升，但系统崩溃方向使p*下降→退回条件与动态方向相反。容斥主导是自锁的。与[D295](functions/items/D295.md)(p_max不可逆)、[D309](functions/items/D309.md)(缓冲不可逆)形成三级不可逆：p_max→缓冲→容斥主导，逐层加深的不可逆结构。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M5的容斥主导区一旦进入，退回需要p*上升，但系统崩溃方向使p*下降→退回条件与动态方向相反。容斥主导是自锁的。与D295(p_max不可逆)、[D309](functions/items/D309.md)(缓冲不可逆)形成三级不可逆：p_max→缓冲→容斥主导，逐层加深的不可逆结构。 描述 容斥-耦合不可逆函数。
+中文：该函数通过 M5的容斥主导区一旦进入，退回需要p*上升，但系统崩溃方向使p*下降→退回条件与动态方向相反。容斥主导是自锁的。与[D295](functions/items/D295.md)(p_max不可逆)、[D309](functions/items/D309.md)(缓冲不可逆)形成三级不可逆：p_max→缓冲→容斥主导，逐层加深的不可逆结构。 描述 容斥-耦合不可逆函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16297,7 +16297,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D332})=1 ∧ J_n^-(F_{D332})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D309`, `D332`
+- 依赖 / Depends on: [D309](functions/items/D309.md), [D332](functions/items/D332.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D332} and codomain Y_{D332}.
   - 2. Normalize the source expression as F_{D332}: X_{D332}->Y_{D332}.
@@ -16314,7 +16314,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D309`, `D332`
+- 依赖 / Depends on: [D309](functions/items/D309.md), [D332](functions/items/D332.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16340,7 +16340,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D333})=1 ∧ J_n^-(F_{D333})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D333`
+- 依赖 / Depends on: [D333](functions/items/D333.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D333} and codomain Y_{D333}.
   - 2. Normalize the source expression as F_{D333}: X_{D333}->Y_{D333}.
@@ -16357,7 +16357,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D333`
+- 依赖 / Depends on: [D333](functions/items/D333.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16368,22 +16368,22 @@ English: Rule-based English rendering pending human review.
 ### [D334｜容斥加速饱和函数](functions/items/D334.md)
 
 **函数内容 / Function Content**
-中文：M7的a_excl有上界∝n²·σ²/(4·p_min)，但系统在达到理论饱和前已进入D332容斥主导不可逆→崩溃。容斥加速的"理论极限"没有实际意义——系统先死到那儿。
+中文：M7的a_excl有上界∝n²·σ²/(4·p_min)，但系统在达到理论饱和前已进入[D332](functions/items/D332.md)容斥主导不可逆→崩溃。容斥加速的"理论极限"没有实际意义——系统先死到那儿。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M7的a_excl有上界∝n²·σ²/(4·p_min)，但系统在达到理论饱和前已进入D332容斥主导不可逆→崩溃。容斥加速的"理论极限"没有实际意义——系统先死到那儿。 描述 容斥加速饱和函数。
+中文：该函数通过 M7的a_excl有上界∝n²·σ²/(4·p_min)，但系统在达到理论饱和前已进入[D332](functions/items/D332.md)容斥主导不可逆→崩溃。容斥加速的"理论极限"没有实际意义——系统先死到那儿。 描述 容斥加速饱和函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D334}`
 - 定义域 / Domain: `X_{D334}`
 - 值域 / Codomain: `Y_{D334}`
-- 数学表达 / Expression: `F_{D334}(x) := M7的a_excl有上界∝n²·σ²/(4·p_min)，但系统在达到理论饱和前已进入D332容斥主导不可逆→崩溃。容斥加速的"理论极限"没有实际意义——系统先死到那儿。`
+- 数学表达 / Expression: `F_{D334}(x) := M7的a_excl有上界∝n²·σ²/(4·p_min)，但系统在达到理论饱和前已进入[D332](functions/items/D332.md)容斥主导不可逆→崩溃。容斥加速的"理论极限"没有实际意义——系统先死到那儿。`
 - 有效条件 / Validity: `J_n^+(F_{D334})=1 ∧ J_n^-(F_{D334})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D334`
+- 依赖 / Depends on: [D334](functions/items/D334.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D334} and codomain Y_{D334}.
   - 2. Normalize the source expression as F_{D334}: X_{D334}->Y_{D334}.
@@ -16400,7 +16400,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D334`
+- 依赖 / Depends on: [D334](functions/items/D334.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16422,11 +16422,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D335}`
 - 定义域 / Domain: `X_{D335}`
 - 值域 / Codomain: `Y_{D335}`
-- 数学表达 / Expression: `F_{D335}(x) := M8的(d_opt,σ_opt)平衡点在σ<σ_opt时稳定，σ>σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（D306）。社会系统一旦过度分化，自发回归不可能。`
+- 数学表达 / Expression: `F_{D335}(x) := M8的(d_opt,σ_opt)平衡点在σ<σ_opt时稳定，σ>σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（[D306](functions/items/D306.md)）。社会系统一旦过度分化，自发回归不可能。`
 - 有效条件 / Validity: `J_n^+(F_{D335})=1 ∧ J_n^-(F_{D335})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D306`, `D335`
+- 依赖 / Depends on: [D306](functions/items/D306.md), [D335](functions/items/D335.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D335} and codomain Y_{D335}.
   - 2. Normalize the source expression as F_{D335}: X_{D335}->Y_{D335}.
@@ -16443,7 +16443,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D306`, `D335`
+- 依赖 / Depends on: [D306](functions/items/D306.md), [D335](functions/items/D335.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16469,7 +16469,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D336})=1 ∧ J_n^-(F_{D336})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D336`
+- 依赖 / Depends on: [D336](functions/items/D336.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D336} and codomain Y_{D336}.
   - 2. Normalize the source expression as F_{D336}: X_{D336}->Y_{D336}.
@@ -16486,7 +16486,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D336`
+- 依赖 / Depends on: [D336](functions/items/D336.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16512,7 +16512,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D337})=1 ∧ J_n^-(F_{D337})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D337`
+- 依赖 / Depends on: [D337](functions/items/D337.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D337} and codomain Y_{D337}.
   - 2. Normalize the source expression as F_{D337}: X_{D337}->Y_{D337}.
@@ -16529,7 +16529,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D337`
+- 依赖 / Depends on: [D337](functions/items/D337.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16555,7 +16555,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D338})=1 ∧ J_n^-(F_{D338})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D338`
+- 依赖 / Depends on: [D338](functions/items/D338.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D338} and codomain Y_{D338}.
   - 2. Normalize the source expression as F_{D338}: X_{D338}->Y_{D338}.
@@ -16572,7 +16572,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D338`
+- 依赖 / Depends on: [D338](functions/items/D338.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16583,22 +16583,22 @@ English: Rule-based English rendering pending human review.
 ### [D339｜僵尸态救援函数](functions/items/D339.md)
 
 **函数内容 / Function Content**
-中文：M12的僵尸态外部救援最小力度F_rescue∝n·(g_critical-g_eff)²。n越大需要救援力度越大。但F_rescue存在上限F_max∝n·ḡ——超过此力度干预本身造成新伤害（D312噪声放大）。F_rescue>F_max时僵尸态不可救——组织太大且g_eff太低时，任何干预要么不够要么造成附带损伤。
+中文：M12的僵尸态外部救援最小力度F_rescue∝n·(g_critical-g_eff)²。n越大需要救援力度越大。但F_rescue存在上限F_max∝n·ḡ——超过此力度干预本身造成新伤害（[D312](functions/items/D312.md)噪声放大）。F_rescue>F_max时僵尸态不可救——组织太大且g_eff太低时，任何干预要么不够要么造成附带损伤。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M12的僵尸态外部救援最小力度F_rescue∝n·(g_critical-g_eff)²。n越大需要救援力度越大。但F_rescue存在上限F_max∝n·ḡ——超过此力度干预本身造成新伤害（D312噪声放大）。F_rescue>F_max时僵尸态不可救——组织太大且g_eff太低时，任何干预要么不够要么造成附带损伤。 描述 僵尸态救援函数。
+中文：该函数通过 M12的僵尸态外部救援最小力度F_rescue∝n·(g_critical-g_eff)²。n越大需要救援力度越大。但F_rescue存在上限F_max∝n·ḡ——超过此力度干预本身造成新伤害（[D312](functions/items/D312.md)噪声放大）。F_rescue>F_max时僵尸态不可救——组织太大且g_eff太低时，任何干预要么不够要么造成附带损伤。 描述 僵尸态救援函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D339}`
 - 定义域 / Domain: `X_{D339}`
 - 值域 / Codomain: `Y_{D339}`
-- 数学表达 / Expression: `F_{D339}(x) := M12的僵尸态外部救援最小力度F_rescue∝n·(g_critical-g_eff)²。n越大需要救援力度越大。但F_rescue存在上限F_max∝n·ḡ——超过此力度干预本身造成新伤害（D312噪声放大）。F_rescue>F_max时僵尸态不可救——组织太大且g_eff太低时，任何干预要么不够要么造成附带损伤。`
+- 数学表达 / Expression: `F_{D339}(x) := M12的僵尸态外部救援最小力度F_rescue∝n·(g_critical-g_eff)²。n越大需要救援力度越大。但F_rescue存在上限F_max∝n·ḡ——超过此力度干预本身造成新伤害（[D312](functions/items/D312.md)噪声放大）。F_rescue>F_max时僵尸态不可救——组织太大且g_eff太低时，任何干预要么不够要么造成附带损伤。`
 - 有效条件 / Validity: `J_n^+(F_{D339})=1 ∧ J_n^-(F_{D339})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D339`
+- 依赖 / Depends on: [D339](functions/items/D339.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D339} and codomain Y_{D339}.
   - 2. Normalize the source expression as F_{D339}: X_{D339}->Y_{D339}.
@@ -16615,7 +16615,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D339`
+- 依赖 / Depends on: [D339](functions/items/D339.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16641,7 +16641,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D340})=1 ∧ J_n^-(F_{D340})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D340`
+- 依赖 / Depends on: [D340](functions/items/D340.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D340} and codomain Y_{D340}.
   - 2. Normalize the source expression as F_{D340}: X_{D340}->Y_{D340}.
@@ -16658,7 +16658,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D340`
+- 依赖 / Depends on: [D340](functions/items/D340.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16684,7 +16684,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D341})=1 ∧ J_n^-(F_{D341})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D341`
+- 依赖 / Depends on: [D341](functions/items/D341.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D341} and codomain Y_{D341}.
   - 2. Normalize the source expression as F_{D341}: X_{D341}->Y_{D341}.
@@ -16701,7 +16701,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D341`
+- 依赖 / Depends on: [D341](functions/items/D341.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16712,22 +16712,22 @@ English: Rule-based English rendering pending human review.
 ### [D342｜ΔΦ时间累积函数](functions/items/D342.md)
 
 **函数内容 / Function Content**
-中文：M1的多轮ΔΦ叠加：容斥凸性([D266](functions/items/D266.md))使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。D266的动态版本。
+中文：M1的多轮ΔΦ叠加：容斥凸性([D266](functions/items/D266.md))使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。[D266](functions/items/D266.md)的动态版本。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M1的多轮ΔΦ叠加：容斥凸性([D266](functions/items/D266.md))使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。D266的动态版本。 描述 时间累积函数。
+中文：该函数通过 M1的多轮ΔΦ叠加：容斥凸性([D266](functions/items/D266.md))使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。[D266](functions/items/D266.md)的动态版本。 描述 时间累积函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D342}`
 - 定义域 / Domain: `X_{D342}`
 - 值域 / Codomain: `Y_{D342}`
-- 数学表达 / Expression: `F_{D342}(x) := M1的多轮ΔΦ叠加：容斥凸性(D266)使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。D266的动态版本。`
+- 数学表达 / Expression: `F_{D342}(x) := M1的多轮ΔΦ叠加：容斥凸性([D266](functions/items/D266.md))使正ΔΦ权重>负ΔΦ权重，即使正负抵消均值零，累积效果仍为正。E[ΣΔΦᵢ] = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)/2 > ΣE[ΔΦᵢ]。容斥凸性使波动本身产生正向漂移——"折腾"本身就有害，不管方向。[D266](functions/items/D266.md)的动态版本。`
 - 有效条件 / Validity: `J_n^+(F_{D342})=1 ∧ J_n^-(F_{D342})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D266`, `D342`
+- 依赖 / Depends on: [D266](functions/items/D266.md), [D342](functions/items/D342.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D342} and codomain Y_{D342}.
   - 2. Normalize the source expression as F_{D342}: X_{D342}->Y_{D342}.
@@ -16744,7 +16744,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D266`, `D342`
+- 依赖 / Depends on: [D266](functions/items/D266.md), [D342](functions/items/D342.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16770,7 +16770,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D343})=1 ∧ J_n^-(F_{D343})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D343`
+- 依赖 / Depends on: [D343](functions/items/D343.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D343} and codomain Y_{D343}.
   - 2. Normalize the source expression as F_{D343}: X_{D343}->Y_{D343}.
@@ -16787,7 +16787,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D343`
+- 依赖 / Depends on: [D343](functions/items/D343.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16798,22 +16798,22 @@ English: Rule-based English rendering pending human review.
 ### [D344｜容斥关联动态函数](functions/items/D344.md)
 
 **函数内容 / Function Content**
-中文：M3的容斥关联从局部到全局的演化：关联范围∝max(pᵢ)/p̄。早期只有相邻门控面关联（局部），后期所有高p门控面关联（全局）。p_max/p̄超过阈值时容斥从局部问题变成全局问题——D328的动态版本。
+中文：M3的容斥关联从局部到全局的演化：关联范围∝max(pᵢ)/p̄。早期只有相邻门控面关联（局部），后期所有高p门控面关联（全局）。p_max/p̄超过阈值时容斥从局部问题变成全局问题——[D328](functions/items/D328.md)的动态版本。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M3的容斥关联从局部到全局的演化：关联范围∝max(pᵢ)/p̄。早期只有相邻门控面关联（局部），后期所有高p门控面关联（全局）。p_max/p̄超过阈值时容斥从局部问题变成全局问题——D328的动态版本。 描述 容斥关联动态函数。
+中文：该函数通过 M3的容斥关联从局部到全局的演化：关联范围∝max(pᵢ)/p̄。早期只有相邻门控面关联（局部），后期所有高p门控面关联（全局）。p_max/p̄超过阈值时容斥从局部问题变成全局问题——[D328](functions/items/D328.md)的动态版本。 描述 容斥关联动态函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D344}`
 - 定义域 / Domain: `X_{D344}`
 - 值域 / Codomain: `Y_{D344}`
-- 数学表达 / Expression: `F_{D344}(x) := M3的容斥关联从局部到全局的演化：关联范围∝max(pᵢ)/p̄。早期只有相邻门控面关联（局部），后期所有高p门控面关联（全局）。p_max/p̄超过阈值时容斥从局部问题变成全局问题——D328的动态版本。`
+- 数学表达 / Expression: `F_{D344}(x) := M3的容斥关联从局部到全局的演化：关联范围∝max(pᵢ)/p̄。早期只有相邻门控面关联（局部），后期所有高p门控面关联（全局）。p_max/p̄超过阈值时容斥从局部问题变成全局问题——[D328](functions/items/D328.md)的动态版本。`
 - 有效条件 / Validity: `J_n^+(F_{D344})=1 ∧ J_n^-(F_{D344})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D344`
+- 依赖 / Depends on: [D344](functions/items/D344.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D344} and codomain Y_{D344}.
   - 2. Normalize the source expression as F_{D344}: X_{D344}->Y_{D344}.
@@ -16830,7 +16830,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D344`
+- 依赖 / Depends on: [D344](functions/items/D344.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16856,7 +16856,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D345})=1 ∧ J_n^-(F_{D345})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D345`
+- 依赖 / Depends on: [D345](functions/items/D345.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D345} and codomain Y_{D345}.
   - 2. Normalize the source expression as F_{D345}: X_{D345}->Y_{D345}.
@@ -16873,7 +16873,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D345`
+- 依赖 / Depends on: [D345](functions/items/D345.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16884,22 +16884,22 @@ English: Rule-based English rendering pending human review.
 ### [D346｜容斥主导区内部结构函数](functions/items/D346.md)
 
 **函数内容 / Function Content**
-中文：M5的容斥主导区有子结构：弱容斥主导（容斥占比50-70%，还有部分缓冲）vs强容斥主导（占比>90%，缓冲完全无效）。弱→强渐变，但D288有限时间崩溃在强容斥区加速。干预在弱容斥主导区还有可能，强容斥主导区无望。
+中文：M5的容斥主导区有子结构：弱容斥主导（容斥占比50-70%，还有部分缓冲）vs强容斥主导（占比>90%，缓冲完全无效）。弱→强渐变，但[D288](functions/items/D288.md)有限时间崩溃在强容斥区加速。干预在弱容斥主导区还有可能，强容斥主导区无望。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M5的容斥主导区有子结构：弱容斥主导（容斥占比50-70%，还有部分缓冲）vs强容斥主导（占比>90%，缓冲完全无效）。弱→强渐变，但D288有限时间崩溃在强容斥区加速。干预在弱容斥主导区还有可能，强容斥主导区无望。 描述 容斥主导区内部结构函数。
+中文：该函数通过 M5的容斥主导区有子结构：弱容斥主导（容斥占比50-70%，还有部分缓冲）vs强容斥主导（占比>90%，缓冲完全无效）。弱→强渐变，但[D288](functions/items/D288.md)有限时间崩溃在强容斥区加速。干预在弱容斥主导区还有可能，强容斥主导区无望。 描述 容斥主导区内部结构函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D346}`
 - 定义域 / Domain: `X_{D346}`
 - 值域 / Codomain: `Y_{D346}`
-- 数学表达 / Expression: `F_{D346}(x) := M5的容斥主导区有子结构：弱容斥主导（容斥占比50-70%，还有部分缓冲）vs强容斥主导（占比>90%，缓冲完全无效）。弱→强渐变，但D288有限时间崩溃在强容斥区加速。干预在弱容斥主导区还有可能，强容斥主导区无望。`
+- 数学表达 / Expression: `F_{D346}(x) := M5的容斥主导区有子结构：弱容斥主导（容斥占比50-70%，还有部分缓冲）vs强容斥主导（占比>90%，缓冲完全无效）。弱→强渐变，但[D288](functions/items/D288.md)有限时间崩溃在强容斥区加速。干预在弱容斥主导区还有可能，强容斥主导区无望。`
 - 有效条件 / Validity: `J_n^+(F_{D346})=1 ∧ J_n^-(F_{D346})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D346`
+- 依赖 / Depends on: [D346](functions/items/D346.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D346} and codomain Y_{D346}.
   - 2. Normalize the source expression as F_{D346}: X_{D346}->Y_{D346}.
@@ -16916,7 +16916,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D346`
+- 依赖 / Depends on: [D346](functions/items/D346.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16942,7 +16942,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D347})=1 ∧ J_n^-(F_{D347})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D347`
+- 依赖 / Depends on: [D347](functions/items/D347.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D347} and codomain Y_{D347}.
   - 2. Normalize the source expression as F_{D347}: X_{D347}->Y_{D347}.
@@ -16959,7 +16959,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D347`
+- 依赖 / Depends on: [D347](functions/items/D347.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -16970,22 +16970,22 @@ English: Rule-based English rendering pending human review.
 ### [D348｜容斥加速-时间权重联合函数](functions/items/D348.md)
 
 **函数内容 / Function Content**
-中文：M7的容斥加速使D316转折点提前：无加速时Σpᵢ≈0.5容斥主导，有加速时转折提前到Σpᵢ≈0.5/(1+a_excl·τ)。加速越强转折越早——"突然变坏"来得更早。a_excl∝n²使高n系统转折大幅提前——复杂系统不仅"变坏更快"而且"变坏更早"。双重加速：更早+更快。
+中文：M7的容斥加速使[D316](functions/items/D316.md)转折点提前：无加速时Σpᵢ≈0.5容斥主导，有加速时转折提前到Σpᵢ≈0.5/(1+a_excl·τ)。加速越强转折越早——"突然变坏"来得更早。a_excl∝n²使高n系统转折大幅提前——复杂系统不仅"变坏更快"而且"变坏更早"。双重加速：更早+更快。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M7的容斥加速使D316转折点提前：无加速时Σpᵢ≈0.5容斥主导，有加速时转折提前到Σpᵢ≈0.5/(1+a_excl·τ)。加速越强转折越早——"突然变坏"来得更早。a_excl∝n²使高n系统转折大幅提前——复杂系统不仅"变坏更快"而且"变坏更早"。双重加速：更早+更快。 描述 容斥加速-时间权重联合函数。
+中文：该函数通过 M7的容斥加速使[D316](functions/items/D316.md)转折点提前：无加速时Σpᵢ≈0.5容斥主导，有加速时转折提前到Σpᵢ≈0.5/(1+a_excl·τ)。加速越强转折越早——"突然变坏"来得更早。a_excl∝n²使高n系统转折大幅提前——复杂系统不仅"变坏更快"而且"变坏更早"。双重加速：更早+更快。 描述 容斥加速-时间权重联合函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D348}`
 - 定义域 / Domain: `X_{D348}`
 - 值域 / Codomain: `Y_{D348}`
-- 数学表达 / Expression: `F_{D348}(x) := M7的容斥加速使D316转折点提前：无加速时Σpᵢ≈0.5容斥主导，有加速时转折提前到Σpᵢ≈0.5/(1+a_excl·τ)。加速越强转折越早——"突然变坏"来得更早。a_excl∝n²使高n系统转折大幅提前——复杂系统不仅"变坏更快"而且"变坏更早"。双重加速：更早+更快。`
+- 数学表达 / Expression: `F_{D348}(x) := M7的容斥加速使[D316](functions/items/D316.md)转折点提前：无加速时Σpᵢ≈0.5容斥主导，有加速时转折提前到Σpᵢ≈0.5/(1+a_excl·τ)。加速越强转折越早——"突然变坏"来得更早。a_excl∝n²使高n系统转折大幅提前——复杂系统不仅"变坏更快"而且"变坏更早"。双重加速：更早+更快。`
 - 有效条件 / Validity: `J_n^+(F_{D348})=1 ∧ J_n^-(F_{D348})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D348`
+- 依赖 / Depends on: [D348](functions/items/D348.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D348} and codomain Y_{D348}.
   - 2. Normalize the source expression as F_{D348}: X_{D348}->Y_{D348}.
@@ -17002,7 +17002,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D348`
+- 依赖 / Depends on: [D348](functions/items/D348.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17030,7 +17030,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D349})=1 ∧ J_n^-(F_{D349})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D349`
+- 依赖 / Depends on: [D349](functions/items/D349.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D349} and codomain Y_{D349}.
   - 2. Normalize the source expression as F_{D349}: X_{D349}->Y_{D349}.
@@ -17047,7 +17047,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D349`
+- 依赖 / Depends on: [D349](functions/items/D349.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17058,22 +17058,22 @@ English: Rule-based English rendering pending human review.
 ### [D350｜阶段过渡不可逆标记函数](functions/items/D350.md)
 
 **函数内容 / Function Content**
-中文：M9的阶段2→3后能否退回取决于C_consumed/C_max > η_irreversible ≈ 1-1/n。n大时η接近1（大系统有回旋余地），n小时η小（小系统缓冲薄）。但D323重建时间∝n²使大系统理论可逆但实际重建太慢——理论可逆与实际可逆的差距随n²增长。
+中文：M9的阶段2→3后能否退回取决于C_consumed/C_max > η_irreversible ≈ 1-1/n。n大时η接近1（大系统有回旋余地），n小时η小（小系统缓冲薄）。但[D323](functions/items/D323.md)重建时间∝n²使大系统理论可逆但实际重建太慢——理论可逆与实际可逆的差距随n²增长。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M9的阶段2→3后能否退回取决于C_consumed/C_max > η_irreversible ≈ 1-1/n。n大时η接近1（大系统有回旋余地），n小时η小（小系统缓冲薄）。但D323重建时间∝n²使大系统理论可逆但实际重建太慢——理论可逆与实际可逆的差距随n²增长。 描述 阶段过渡不可逆标记函数。
+中文：该函数通过 M9的阶段2→3后能否退回取决于C_consumed/C_max > η_irreversible ≈ 1-1/n。n大时η接近1（大系统有回旋余地），n小时η小（小系统缓冲薄）。但[D323](functions/items/D323.md)重建时间∝n²使大系统理论可逆但实际重建太慢——理论可逆与实际可逆的差距随n²增长。 描述 阶段过渡不可逆标记函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D350}`
 - 定义域 / Domain: `X_{D350}`
 - 值域 / Codomain: `Y_{D350}`
-- 数学表达 / Expression: `F_{D350}(x) := M9的阶段2→3后能否退回取决于C_consumed/C_max > η_irreversible ≈ 1-1/n。n大时η接近1（大系统有回旋余地），n小时η小（小系统缓冲薄）。但D323重建时间∝n²使大系统理论可逆但实际重建太慢——理论可逆与实际可逆的差距随n²增长。`
+- 数学表达 / Expression: `F_{D350}(x) := M9的阶段2→3后能否退回取决于C_consumed/C_max > η_irreversible ≈ 1-1/n。n大时η接近1（大系统有回旋余地），n小时η小（小系统缓冲薄）。但[D323](functions/items/D323.md)重建时间∝n²使大系统理论可逆但实际重建太慢——理论可逆与实际可逆的差距随n²增长。`
 - 有效条件 / Validity: `J_n^+(F_{D350})=1 ∧ J_n^-(F_{D350})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D350`
+- 依赖 / Depends on: [D350](functions/items/D350.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D350} and codomain Y_{D350}.
   - 2. Normalize the source expression as F_{D350}: X_{D350}->Y_{D350}.
@@ -17090,7 +17090,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D350`
+- 依赖 / Depends on: [D350](functions/items/D350.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17116,7 +17116,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D351})=1 ∧ J_n^-(F_{D351})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D351`
+- 依赖 / Depends on: [D351](functions/items/D351.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D351} and codomain Y_{D351}.
   - 2. Normalize the source expression as F_{D351}: X_{D351}->Y_{D351}.
@@ -17133,7 +17133,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D351`
+- 依赖 / Depends on: [D351](functions/items/D351.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17155,11 +17155,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D352}`
 - 定义域 / Domain: `X_{D352}`
 - 值域 / Codomain: `Y_{D352}`
-- 数学表达 / Expression: `F_{D352}(x) := M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（D324 n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随复杂度上移。`
+- 数学表达 / Expression: `F_{D352}(x) := M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（[D324](functions/items/D324.md) n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随复杂度上移。`
 - 有效条件 / Validity: `J_n^+(F_{D352})=1 ∧ J_n^-(F_{D352})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D324`, `D352`
+- 依赖 / Depends on: [D324](functions/items/D324.md), [D352](functions/items/D352.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D352} and codomain Y_{D352}.
   - 2. Normalize the source expression as F_{D352}: X_{D352}->Y_{D352}.
@@ -17176,7 +17176,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D324`, `D352`
+- 依赖 / Depends on: [D324](functions/items/D324.md), [D352](functions/items/D352.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17187,22 +17187,22 @@ English: Rule-based English rendering pending human review.
 ### [D353｜僵尸态传染函数](functions/items/D353.md)
 
 **函数内容 / Function Content**
-中文：M12的子系统僵尸化通过g_eff耦合传染：传染速度∝ḡ/n。临界条件：僵尸化子系统数>n/2时总g_eff<g_critical→全局僵尸化。组织超过一半部门僵尸化后全局不可逆——D339的传染版本。
+中文：M12的子系统僵尸化通过g_eff耦合传染：传染速度∝ḡ/n。临界条件：僵尸化子系统数>n/2时总g_eff<g_critical→全局僵尸化。组织超过一半部门僵尸化后全局不可逆——[D339](functions/items/D339.md)的传染版本。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M12的子系统僵尸化通过g_eff耦合传染：传染速度∝ḡ/n。临界条件：僵尸化子系统数>n/2时总g_eff<g_critical→全局僵尸化。组织超过一半部门僵尸化后全局不可逆——D339的传染版本。 描述 僵尸态传染函数。
+中文：该函数通过 M12的子系统僵尸化通过g_eff耦合传染：传染速度∝ḡ/n。临界条件：僵尸化子系统数>n/2时总g_eff<g_critical→全局僵尸化。组织超过一半部门僵尸化后全局不可逆——[D339](functions/items/D339.md)的传染版本。 描述 僵尸态传染函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D353}`
 - 定义域 / Domain: `X_{D353}`
 - 值域 / Codomain: `Y_{D353}`
-- 数学表达 / Expression: `F_{D353}(x) := M12的子系统僵尸化通过g_eff耦合传染：传染速度∝ḡ/n。临界条件：僵尸化子系统数>n/2时总g_eff<g_critical→全局僵尸化。组织超过一半部门僵尸化后全局不可逆——D339的传染版本。`
+- 数学表达 / Expression: `F_{D353}(x) := M12的子系统僵尸化通过g_eff耦合传染：传染速度∝ḡ/n。临界条件：僵尸化子系统数>n/2时总g_eff<g_critical→全局僵尸化。组织超过一半部门僵尸化后全局不可逆——[D339](functions/items/D339.md)的传染版本。`
 - 有效条件 / Validity: `J_n^+(F_{D353})=1 ∧ J_n^-(F_{D353})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D353`
+- 依赖 / Depends on: [D353](functions/items/D353.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D353} and codomain Y_{D353}.
   - 2. Normalize the source expression as F_{D353}: X_{D353}->Y_{D353}.
@@ -17219,7 +17219,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D353`
+- 依赖 / Depends on: [D353](functions/items/D353.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17245,7 +17245,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D354})=1 ∧ J_n^-(F_{D354})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D354`
+- 依赖 / Depends on: [D354](functions/items/D354.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D354} and codomain Y_{D354}.
   - 2. Normalize the source expression as F_{D354}: X_{D354}->Y_{D354}.
@@ -17262,7 +17262,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D354`
+- 依赖 / Depends on: [D354](functions/items/D354.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17290,7 +17290,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D355})=1 ∧ J_n^-(F_{D355})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D355`
+- 依赖 / Depends on: [D355](functions/items/D355.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D355} and codomain Y_{D355}.
   - 2. Normalize the source expression as F_{D355}: X_{D355}->Y_{D355}.
@@ -17307,7 +17307,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D355`
+- 依赖 / Depends on: [D355](functions/items/D355.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17333,7 +17333,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D356})=1 ∧ J_n^-(F_{D356})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D356`
+- 依赖 / Depends on: [D356](functions/items/D356.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D356} and codomain Y_{D356}.
   - 2. Normalize the source expression as F_{D356}: X_{D356}->Y_{D356}.
@@ -17350,7 +17350,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D356`
+- 依赖 / Depends on: [D356](functions/items/D356.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17363,22 +17363,22 @@ English: Rule-based English rendering pending human review.
 ### [D357｜极小点复活函数](functions/items/D357.md)
 
 **函数内容 / Function Content**
-中文：M2的拐点重新变成极小点需要至少一个pᵢ下降使容斥项减小。复活需要的pᵢ下降量Δp_rescue∝Φ(拐点)/n。极小点复活比维持极小点困难得多——D264良性循环启动阈值的几何版本。旧秩序"复兴"需要比维持旧秩序更大的努力——复兴不是恢复而是重建。
+中文：M2的拐点重新变成极小点需要至少一个pᵢ下降使容斥项减小。复活需要的pᵢ下降量Δp_rescue∝Φ(拐点)/n。极小点复活比维持极小点困难得多——[D264](functions/items/D264.md)良性循环启动阈值的几何版本。旧秩序"复兴"需要比维持旧秩序更大的努力——复兴不是恢复而是重建。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M2的拐点重新变成极小点需要至少一个pᵢ下降使容斥项减小。复活需要的pᵢ下降量Δp_rescue∝Φ(拐点)/n。极小点复活比维持极小点困难得多——D264良性循环启动阈值的几何版本。旧秩序"复兴"需要比维持旧秩序更大的努力——复兴不是恢复而是重建。 描述 极小点复活函数。
+中文：该函数通过 M2的拐点重新变成极小点需要至少一个pᵢ下降使容斥项减小。复活需要的pᵢ下降量Δp_rescue∝Φ(拐点)/n。极小点复活比维持极小点困难得多——[D264](functions/items/D264.md)良性循环启动阈值的几何版本。旧秩序"复兴"需要比维持旧秩序更大的努力——复兴不是恢复而是重建。 描述 极小点复活函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D357}`
 - 定义域 / Domain: `X_{D357}`
 - 值域 / Codomain: `Y_{D357}`
-- 数学表达 / Expression: `F_{D357}(x) := M2的拐点重新变成极小点需要至少一个pᵢ下降使容斥项减小。复活需要的pᵢ下降量Δp_rescue∝Φ(拐点)/n。极小点复活比维持极小点困难得多——D264良性循环启动阈值的几何版本。旧秩序"复兴"需要比维持旧秩序更大的努力——复兴不是恢复而是重建。`
+- 数学表达 / Expression: `F_{D357}(x) := M2的拐点重新变成极小点需要至少一个pᵢ下降使容斥项减小。复活需要的pᵢ下降量Δp_rescue∝Φ(拐点)/n。极小点复活比维持极小点困难得多——[D264](functions/items/D264.md)良性循环启动阈值的几何版本。旧秩序"复兴"需要比维持旧秩序更大的努力——复兴不是恢复而是重建。`
 - 有效条件 / Validity: `J_n^+(F_{D357})=1 ∧ J_n^-(F_{D357})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D357`
+- 依赖 / Depends on: [D357](functions/items/D357.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D357} and codomain Y_{D357}.
   - 2. Normalize the source expression as F_{D357}: X_{D357}->Y_{D357}.
@@ -17395,7 +17395,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D357`
+- 依赖 / Depends on: [D357](functions/items/D357.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17421,7 +17421,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D358})=1 ∧ J_n^-(F_{D358})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D358`
+- 依赖 / Depends on: [D358](functions/items/D358.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D358} and codomain Y_{D358}.
   - 2. Normalize the source expression as F_{D358}: X_{D358}->Y_{D358}.
@@ -17438,7 +17438,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D358`
+- 依赖 / Depends on: [D358](functions/items/D358.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17464,7 +17464,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D359})=1 ∧ J_n^-(F_{D359})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D359`
+- 依赖 / Depends on: [D359](functions/items/D359.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D359} and codomain Y_{D359}.
   - 2. Normalize the source expression as F_{D359}: X_{D359}->Y_{D359}.
@@ -17481,7 +17481,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D359`
+- 依赖 / Depends on: [D359](functions/items/D359.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17503,11 +17503,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D360}`
 - 定义域 / Domain: `X_{D360}`
 - 值域 / Codomain: `Y_{D360}`
-- 数学表达 / Expression: `F_{D360}(x) := M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主导但还可逆"窗口，宽度∝(√n-1)/n∝D310。大系统有"容斥主导但还有救"的窗口，小系统没有。`
+- 数学表达 / Expression: `F_{D360}(x) := M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主导但还可逆"窗口，宽度∝(√n-1)/n∝[D310](functions/items/D310.md)。大系统有"容斥主导但还有救"的窗口，小系统没有。`
 - 有效条件 / Validity: `J_n^+(F_{D360})=1 ∧ J_n^-(F_{D360})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D310`, `D360`
+- 依赖 / Depends on: [D310](functions/items/D310.md), [D360](functions/items/D360.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D360} and codomain Y_{D360}.
   - 2. Normalize the source expression as F_{D360}: X_{D360}->Y_{D360}.
@@ -17524,7 +17524,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D310`, `D360`
+- 依赖 / Depends on: [D310](functions/items/D310.md), [D360](functions/items/D360.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17535,22 +17535,22 @@ English: Rule-based English rendering pending human review.
 ### [D361｜维度回复非线性-阻尼联合函数](functions/items/D361.md)
 
 **函数内容 / Function Content**
-中文：M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与D295 p_max不可逆点同构。
+中文：M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与[D295](functions/items/D295.md) p_max不可逆点同构。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与D295 p_max不可逆点同构。 描述 维度回复非线性-阻尼联合函数。
+中文：该函数通过 M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与[D295](functions/items/D295.md) p_max不可逆点同构。 描述 维度回复非线性-阻尼联合函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D361}`
 - 定义域 / Domain: `X_{D361}`
 - 值域 / Codomain: `Y_{D361}`
-- 数学表达 / Expression: `F_{D361}(x) := M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与D295 p_max不可逆点同构。`
+- 数学表达 / Expression: `F_{D361}(x) := M6的大偏离使阻尼也非线性：γ_eff = γ₀·(1-δ²/δ_c²)。δ→δ_c时γ_eff→0→振荡加剧→偏离更大→正反馈。δ_c是维度回复的"不归点"——与[D295](functions/items/D295.md) p_max不可逆点同构。`
 - 有效条件 / Validity: `J_n^+(F_{D361})=1 ∧ J_n^-(F_{D361})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D361`
+- 依赖 / Depends on: [D361](functions/items/D361.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D361} and codomain Y_{D361}.
   - 2. Normalize the source expression as F_{D361}: X_{D361}->Y_{D361}.
@@ -17567,7 +17567,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D361`
+- 依赖 / Depends on: [D361](functions/items/D361.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17578,22 +17578,22 @@ English: Rule-based English rendering pending human review.
 ### [D362｜容斥加速-波动累积联合函数](functions/items/D362.md)
 
 **函数内容 / Function Content**
-中文：M7的容斥加速放大D342波动累积：E[ΣΔΦ]_accelerated = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)·(1+a_excl·τ)/2。容斥加速不只加速均值增长还加速波动累积——"折腾更有害"在加速环境下被放大。
+中文：M7的容斥加速放大[D342](functions/items/D342.md)波动累积：E[ΣΔΦ]_accelerated = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)·(1+a_excl·τ)/2。容斥加速不只加速均值增长还加速波动累积——"折腾更有害"在加速环境下被放大。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M7的容斥加速放大D342波动累积：E[ΣΔΦ]_accelerated = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)·(1+a_excl·τ)/2。容斥加速不只加速均值增长还加速波动累积——"折腾更有害"在加速环境下被放大。 描述 容斥加速-波动累积联合函数。
+中文：该函数通过 M7的容斥加速放大[D342](functions/items/D342.md)波动累积：E[ΣΔΦ]_accelerated = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)·(1+a_excl·τ)/2。容斥加速不只加速均值增长还加速波动累积——"折腾更有害"在加速环境下被放大。 描述 容斥加速-波动累积联合函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D362}`
 - 定义域 / Domain: `X_{D362}`
 - 值域 / Codomain: `Y_{D362}`
-- 数学表达 / Expression: `F_{D362}(x) := M7的容斥加速放大D342波动累积：E[ΣΔΦ]_accelerated = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)·(1+a_excl·τ)/2。容斥加速不只加速均值增长还加速波动累积——"折腾更有害"在加速环境下被放大。`
+- 数学表达 / Expression: `F_{D362}(x) := M7的容斥加速放大[D342](functions/items/D342.md)波动累积：E[ΣΔΦ]_accelerated = ΣE[ΔΦᵢ] + ΣVar(ΔΦᵢ)·(1+a_excl·τ)/2。容斥加速不只加速均值增长还加速波动累积——"折腾更有害"在加速环境下被放大。`
 - 有效条件 / Validity: `J_n^+(F_{D362})=1 ∧ J_n^-(F_{D362})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D362`
+- 依赖 / Depends on: [D362](functions/items/D362.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D362} and codomain Y_{D362}.
   - 2. Normalize the source expression as F_{D362}: X_{D362}->Y_{D362}.
@@ -17610,7 +17610,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D362`
+- 依赖 / Depends on: [D362](functions/items/D362.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17636,7 +17636,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D363})=1 ∧ J_n^-(F_{D363})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D363`
+- 依赖 / Depends on: [D363](functions/items/D363.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D363} and codomain Y_{D363}.
   - 2. Normalize the source expression as F_{D363}: X_{D363}->Y_{D363}.
@@ -17653,7 +17653,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D363`
+- 依赖 / Depends on: [D363](functions/items/D363.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17679,7 +17679,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D364})=1 ∧ J_n^-(F_{D364})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D364`
+- 依赖 / Depends on: [D364](functions/items/D364.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D364} and codomain Y_{D364}.
   - 2. Normalize the source expression as F_{D364}: X_{D364}->Y_{D364}.
@@ -17696,7 +17696,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D364`
+- 依赖 / Depends on: [D364](functions/items/D364.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17722,7 +17722,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D365})=1 ∧ J_n^-(F_{D365})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D365`
+- 依赖 / Depends on: [D365](functions/items/D365.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D365} and codomain Y_{D365}.
   - 2. Normalize the source expression as F_{D365}: X_{D365}->Y_{D365}.
@@ -17739,7 +17739,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D365`
+- 依赖 / Depends on: [D365](functions/items/D365.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17765,7 +17765,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D366})=1 ∧ J_n^-(F_{D366})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D366`
+- 依赖 / Depends on: [D366](functions/items/D366.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D366} and codomain Y_{D366}.
   - 2. Normalize the source expression as F_{D366}: X_{D366}->Y_{D366}.
@@ -17782,7 +17782,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D366`
+- 依赖 / Depends on: [D366](functions/items/D366.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17793,22 +17793,22 @@ English: Rule-based English rendering pending human review.
 ### [D367｜僵尸态传染免疫函数](functions/items/D367.md)
 
 **函数内容 / Function Content**
-中文：M12的免疫裕度Δg_i = g_eff(i) - g_critical。Δg_i > δg_spread时免疫。但D351溢出使免疫子系统也被消耗→免疫不是永久的。组织中"健康部门"不能独善其身——溢出最终消耗免疫裕度。
+中文：M12的免疫裕度Δg_i = g_eff(i) - g_critical。Δg_i > δg_spread时免疫。但[D351](functions/items/D351.md)溢出使免疫子系统也被消耗→免疫不是永久的。组织中"健康部门"不能独善其身——溢出最终消耗免疫裕度。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M12的免疫裕度Δg_i = g_eff(i) - g_critical。Δg_i > δg_spread时免疫。但D351溢出使免疫子系统也被消耗→免疫不是永久的。组织中"健康部门"不能独善其身——溢出最终消耗免疫裕度。 描述 僵尸态传染免疫函数。
+中文：该函数通过 M12的免疫裕度Δg_i = g_eff(i) - g_critical。Δg_i > δg_spread时免疫。但[D351](functions/items/D351.md)溢出使免疫子系统也被消耗→免疫不是永久的。组织中"健康部门"不能独善其身——溢出最终消耗免疫裕度。 描述 僵尸态传染免疫函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D367}`
 - 定义域 / Domain: `X_{D367}`
 - 值域 / Codomain: `Y_{D367}`
-- 数学表达 / Expression: `F_{D367}(x) := M12的免疫裕度Δg_i = g_eff(i) - g_critical。Δg_i > δg_spread时免疫。但D351溢出使免疫子系统也被消耗→免疫不是永久的。组织中"健康部门"不能独善其身——溢出最终消耗免疫裕度。`
+- 数学表达 / Expression: `F_{D367}(x) := M12的免疫裕度Δg_i = g_eff(i) - g_critical。Δg_i > δg_spread时免疫。但[D351](functions/items/D351.md)溢出使免疫子系统也被消耗→免疫不是永久的。组织中"健康部门"不能独善其身——溢出最终消耗免疫裕度。`
 - 有效条件 / Validity: `J_n^+(F_{D367})=1 ∧ J_n^-(F_{D367})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D367`
+- 依赖 / Depends on: [D367](functions/items/D367.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D367} and codomain Y_{D367}.
   - 2. Normalize the source expression as F_{D367}: X_{D367}->Y_{D367}.
@@ -17825,7 +17825,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D367`
+- 依赖 / Depends on: [D367](functions/items/D367.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17836,11 +17836,11 @@ English: Rule-based English rendering pending human review.
 ### [D368｜延迟-噪声频谱函数](functions/items/D368.md)
 
 **函数内容 / Function Content**
-中文：M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至K/(1+ω²τ_delay²)。延迟过滤了高频噪声但代价是D354自激振荡风险。政策延迟使系统对长期趋势敏感但对短期波动不敏感——延迟不全是坏事。
+中文：M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至K/(1+ω²τ_delay²)。延迟过滤了高频噪声但代价是[D354](functions/items/D354.md)自激振荡风险。政策延迟使系统对长期趋势敏感但对短期波动不敏感——延迟不全是坏事。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至K/(1+ω²τ_delay²)。延迟过滤了高频噪声但代价是D354自激振荡风险。政策延迟使系统对长期趋势敏感但对短期波动不敏感——延迟不全是坏事。 描述 延迟-噪声频谱函数。
+中文：该函数通过 M13的延迟使噪声放大成为低通滤波：低频放大K倍，高频放大降至K/(1+ω²τ_delay²)。延迟过滤了高频噪声但代价是[D354](functions/items/D354.md)自激振荡风险。政策延迟使系统对长期趋势敏感但对短期波动不敏感——延迟不全是坏事。 描述 延迟-噪声频谱函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17851,7 +17851,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D368})=1 ∧ J_n^-(F_{D368})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D368`
+- 依赖 / Depends on: [D368](functions/items/D368.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D368} and codomain Y_{D368}.
   - 2. Normalize the source expression as F_{D368}: X_{D368}->Y_{D368}.
@@ -17868,7 +17868,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D368`
+- 依赖 / Depends on: [D368](functions/items/D368.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17894,7 +17894,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D369})=1 ∧ J_n^-(F_{D369})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D369`
+- 依赖 / Depends on: [D369](functions/items/D369.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D369} and codomain Y_{D369}.
   - 2. Normalize the source expression as F_{D369}: X_{D369}->Y_{D369}.
@@ -17911,7 +17911,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D369`
+- 依赖 / Depends on: [D369](functions/items/D369.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17922,22 +17922,22 @@ English: Rule-based English rendering pending human review.
 ### [D370｜ΔΦ交叉相关-波动累积联合函数](functions/items/D370.md)
 
 **函数内容 / Function Content**
-中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。
+中文：M1的容斥交叉相关增强[D342](functions/items/D342.md)波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。 描述 交叉相关-波动累积联合函数。
+中文：该函数通过 M1的容斥交叉相关增强[D342](functions/items/D342.md)波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。 描述 交叉相关-波动累积联合函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D370}`
 - 定义域 / Domain: `X_{D370}`
 - 值域 / Codomain: `Y_{D370}`
-- 数学表达 / Expression: `F_{D370}(x) := M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。`
+- 数学表达 / Expression: `F_{D370}(x) := M1的容斥交叉相关增强[D342](functions/items/D342.md)波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar(ΔΦᵢ)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。`
 - 有效条件 / Validity: `J_n^+(F_{D370})=1 ∧ J_n^-(F_{D370})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D370`
+- 依赖 / Depends on: [D370](functions/items/D370.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D370} and codomain Y_{D370}.
   - 2. Normalize the source expression as F_{D370}: X_{D370}->Y_{D370}.
@@ -17954,7 +17954,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D370`
+- 依赖 / Depends on: [D370](functions/items/D370.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -17965,22 +17965,22 @@ English: Rule-based English rendering pending human review.
 ### [D371｜极小点复活代价函数](functions/items/D371.md)
 
 **函数内容 / Function Content**
-中文：M2的极小点复活总代价∝Φ(拐点)，与n无关。但D264启动阈值∝(n-1)/n→n大时启动更难。联合：复活代价本身不随n增长，但启动阈值随n增长→大系统复活更难不是因为代价大而是因为启动难。
+中文：M2的极小点复活总代价∝Φ(拐点)，与n无关。但[D264](functions/items/D264.md)启动阈值∝(n-1)/n→n大时启动更难。联合：复活代价本身不随n增长，但启动阈值随n增长→大系统复活更难不是因为代价大而是因为启动难。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M2的极小点复活总代价∝Φ(拐点)，与n无关。但D264启动阈值∝(n-1)/n→n大时启动更难。联合：复活代价本身不随n增长，但启动阈值随n增长→大系统复活更难不是因为代价大而是因为启动难。 描述 极小点复活代价函数。
+中文：该函数通过 M2的极小点复活总代价∝Φ(拐点)，与n无关。但[D264](functions/items/D264.md)启动阈值∝(n-1)/n→n大时启动更难。联合：复活代价本身不随n增长，但启动阈值随n增长→大系统复活更难不是因为代价大而是因为启动难。 描述 极小点复活代价函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D371}`
 - 定义域 / Domain: `X_{D371}`
 - 值域 / Codomain: `Y_{D371}`
-- 数学表达 / Expression: `F_{D371}(x) := M2的极小点复活总代价∝Φ(拐点)，与n无关。但D264启动阈值∝(n-1)/n→n大时启动更难。联合：复活代价本身不随n增长，但启动阈值随n增长→大系统复活更难不是因为代价大而是因为启动难。`
+- 数学表达 / Expression: `F_{D371}(x) := M2的极小点复活总代价∝Φ(拐点)，与n无关。但[D264](functions/items/D264.md)启动阈值∝(n-1)/n→n大时启动更难。联合：复活代价本身不随n增长，但启动阈值随n增长→大系统复活更难不是因为代价大而是因为启动难。`
 - 有效条件 / Validity: `J_n^+(F_{D371})=1 ∧ J_n^-(F_{D371})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D371`
+- 依赖 / Depends on: [D371](functions/items/D371.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D371} and codomain Y_{D371}.
   - 2. Normalize the source expression as F_{D371}: X_{D371}->Y_{D371}.
@@ -17997,7 +17997,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D371`
+- 依赖 / Depends on: [D371](functions/items/D371.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18008,22 +18008,22 @@ English: Rule-based English rendering pending human review.
 ### [D372｜对称性破缺-关联拓扑联合函数](functions/items/D372.md)
 
 **函数内容 / Function Content**
-中文：M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果比D330估计的更大——不只切断最大关联对，还削弱不对称性对低p门控面的压制。
+中文：M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果比[D330](functions/items/D330.md)估计的更大——不只切断最大关联对，还削弱不对称性对低p门控面的压制。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果比D330估计的更大——不只切断最大关联对，还削弱不对称性对低p门控面的压制。 描述 对称性破缺-关联拓扑联合函数。
+中文：该函数通过 M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果比[D330](functions/items/D330.md)估计的更大——不只切断最大关联对，还削弱不对称性对低p门控面的压制。 描述 对称性破缺-关联拓扑联合函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D372}`
 - 定义域 / Domain: `X_{D372}`
 - 值域 / Codomain: `Y_{D372}`
-- 数学表达 / Expression: `F_{D372}(x) := M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果比D330估计的更大——不只切断最大关联对，还削弱不对称性对低p门控面的压制。`
+- 数学表达 / Expression: `F_{D372}(x) := M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果比[D330](functions/items/D330.md)估计的更大——不只切断最大关联对，还削弱不对称性对低p门控面的压制。`
 - 有效条件 / Validity: `J_n^+(F_{D372})=1 ∧ J_n^-(F_{D372})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D372`
+- 依赖 / Depends on: [D372](functions/items/D372.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D372} and codomain Y_{D372}.
   - 2. Normalize the source expression as F_{D372}: X_{D372}->Y_{D372}.
@@ -18040,7 +18040,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D372`
+- 依赖 / Depends on: [D372](functions/items/D372.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18066,7 +18066,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D373})=1 ∧ J_n^-(F_{D373})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D373`
+- 依赖 / Depends on: [D373](functions/items/D373.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D373} and codomain Y_{D373}.
   - 2. Normalize the source expression as F_{D373}: X_{D373}->Y_{D373}.
@@ -18083,7 +18083,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D373`
+- 依赖 / Depends on: [D373](functions/items/D373.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18094,22 +18094,22 @@ English: Rule-based English rendering pending human review.
 ### [D374｜弱容斥窗口-逃逸速度联合函数](functions/items/D374.md)
 
 **函数内容 / Function Content**
-中文：M5的弱容斥窗口内逃逸速度v_escape(弱容斥)=v_escape(耦合主导)·(1-f_excl)^(1/2)。窗口内D289黄金逃逸点仍有效但效率降低。窗口边界处v_escape→0——D332不可逆线即逃逸速度归零线。
+中文：M5的弱容斥窗口内逃逸速度v_escape(弱容斥)=v_escape(耦合主导)·(1-f_excl)^(1/2)。窗口内[D289](functions/items/D289.md)黄金逃逸点仍有效但效率降低。窗口边界处v_escape→0——[D332](functions/items/D332.md)不可逆线即逃逸速度归零线。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M5的弱容斥窗口内逃逸速度v_escape(弱容斥)=v_escape(耦合主导)·(1-f_excl)^(1/2)。窗口内D289黄金逃逸点仍有效但效率降低。窗口边界处v_escape→0——D332不可逆线即逃逸速度归零线。 描述 弱容斥窗口-逃逸速度联合函数。
+中文：该函数通过 M5的弱容斥窗口内逃逸速度v_escape(弱容斥)=v_escape(耦合主导)·(1-f_excl)^(1/2)。窗口内[D289](functions/items/D289.md)黄金逃逸点仍有效但效率降低。窗口边界处v_escape→0——[D332](functions/items/D332.md)不可逆线即逃逸速度归零线。 描述 弱容斥窗口-逃逸速度联合函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D374}`
 - 定义域 / Domain: `X_{D374}`
 - 值域 / Codomain: `Y_{D374}`
-- 数学表达 / Expression: `F_{D374}(x) := M5的弱容斥窗口内逃逸速度v_escape(弱容斥)=v_escape(耦合主导)·(1-f_excl)^(1/2)。窗口内D289黄金逃逸点仍有效但效率降低。窗口边界处v_escape→0——D332不可逆线即逃逸速度归零线。`
+- 数学表达 / Expression: `F_{D374}(x) := M5的弱容斥窗口内逃逸速度v_escape(弱容斥)=v_escape(耦合主导)·(1-f_excl)^(1/2)。窗口内[D289](functions/items/D289.md)黄金逃逸点仍有效但效率降低。窗口边界处v_escape→0——[D332](functions/items/D332.md)不可逆线即逃逸速度归零线。`
 - 有效条件 / Validity: `J_n^+(F_{D374})=1 ∧ J_n^-(F_{D374})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D374`
+- 依赖 / Depends on: [D374](functions/items/D374.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D374} and codomain Y_{D374}.
   - 2. Normalize the source expression as F_{D374}: X_{D374}->Y_{D374}.
@@ -18126,7 +18126,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D374`
+- 依赖 / Depends on: [D374](functions/items/D374.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18137,22 +18137,22 @@ English: Rule-based English rendering pending human review.
 ### [D375｜维度不归点-退化路径联合函数](functions/items/D375.md)
 
 **函数内容 / Function Content**
-中文：M6的δ_c不归点恰好是D305退化路径的分叉点。δ<δ_c在d=4附近振荡（可回复），δ>δ_c沿退化路径滑走。δ_c是"还能弹回来"和"开始滑走"的精确分界——退化路径的启动条件。
+中文：M6的δ_c不归点恰好是[D305](functions/items/D305.md)退化路径的分叉点。δ<δ_c在d=4附近振荡（可回复），δ>δ_c沿退化路径滑走。δ_c是"还能弹回来"和"开始滑走"的精确分界——退化路径的启动条件。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M6的δ_c不归点恰好是D305退化路径的分叉点。δ<δ_c在d=4附近振荡（可回复），δ>δ_c沿退化路径滑走。δ_c是"还能弹回来"和"开始滑走"的精确分界——退化路径的启动条件。 描述 维度不归点-退化路径联合函数。
+中文：该函数通过 M6的δ_c不归点恰好是[D305](functions/items/D305.md)退化路径的分叉点。δ<δ_c在d=4附近振荡（可回复），δ>δ_c沿退化路径滑走。δ_c是"还能弹回来"和"开始滑走"的精确分界——退化路径的启动条件。 描述 维度不归点-退化路径联合函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D375}`
 - 定义域 / Domain: `X_{D375}`
 - 值域 / Codomain: `Y_{D375}`
-- 数学表达 / Expression: `F_{D375}(x) := M6的δ_c不归点恰好是D305退化路径的分叉点。δ<δ_c在d=4附近振荡（可回复），δ>δ_c沿退化路径滑走。δ_c是"还能弹回来"和"开始滑走"的精确分界——退化路径的启动条件。`
+- 数学表达 / Expression: `F_{D375}(x) := M6的δ_c不归点恰好是[D305](functions/items/D305.md)退化路径的分叉点。δ<δ_c在d=4附近振荡（可回复），δ>δ_c沿退化路径滑走。δ_c是"还能弹回来"和"开始滑走"的精确分界——退化路径的启动条件。`
 - 有效条件 / Validity: `J_n^+(F_{D375})=1 ∧ J_n^-(F_{D375})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D375`
+- 依赖 / Depends on: [D375](functions/items/D375.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D375} and codomain Y_{D375}.
   - 2. Normalize the source expression as F_{D375}: X_{D375}->Y_{D375}.
@@ -18169,7 +18169,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D375`
+- 依赖 / Depends on: [D375](functions/items/D375.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18180,22 +18180,22 @@ English: Rule-based English rendering pending human review.
 ### [D376｜加速-波动累积极限函数](functions/items/D376.md)
 
 **函数内容 / Function Content**
-中文：M7的联合效应极限∝-ln(P_min)∝n——n越大极限越高→大系统能承受更多累积但代价是D364实际不可逆。系统在累积到无穷前先死。
+中文：M7的联合效应极限∝-ln(P_min)∝n——n越大极限越高→大系统能承受更多累积但代价是[D364](functions/items/D364.md)实际不可逆。系统在累积到无穷前先死。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M7的联合效应极限∝-ln(P_min)∝n——n越大极限越高→大系统能承受更多累积但代价是D364实际不可逆。系统在累积到无穷前先死。 描述 加速-波动累积极限函数。
+中文：该函数通过 M7的联合效应极限∝-ln(P_min)∝n——n越大极限越高→大系统能承受更多累积但代价是[D364](functions/items/D364.md)实际不可逆。系统在累积到无穷前先死。 描述 加速-波动累积极限函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D376}`
 - 定义域 / Domain: `X_{D376}`
 - 值域 / Codomain: `Y_{D376}`
-- 数学表达 / Expression: `F_{D376}(x) := M7的联合效应极限∝-ln(P_min)∝n——n越大极限越高→大系统能承受更多累积但代价是D364实际不可逆。系统在累积到无穷前先死。`
+- 数学表达 / Expression: `F_{D376}(x) := M7的联合效应极限∝-ln(P_min)∝n——n越大极限越高→大系统能承受更多累积但代价是[D364](functions/items/D364.md)实际不可逆。系统在累积到无穷前先死。`
 - 有效条件 / Validity: `J_n^+(F_{D376})=1 ∧ J_n^-(F_{D376})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D376`
+- 依赖 / Depends on: [D376](functions/items/D376.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D376} and codomain Y_{D376}.
   - 2. Normalize the source expression as F_{D376}: X_{D376}->Y_{D376}.
@@ -18212,7 +18212,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D376`
+- 依赖 / Depends on: [D376](functions/items/D376.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18238,7 +18238,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D377})=1 ∧ J_n^-(F_{D377})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D377`
+- 依赖 / Depends on: [D377](functions/items/D377.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D377} and codomain Y_{D377}.
   - 2. Normalize the source expression as F_{D377}: X_{D377}->Y_{D377}.
@@ -18255,7 +18255,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D377`
+- 依赖 / Depends on: [D377](functions/items/D377.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18281,7 +18281,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D378})=1 ∧ J_n^-(F_{D378})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D378`
+- 依赖 / Depends on: [D378](functions/items/D378.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D378} and codomain Y_{D378}.
   - 2. Normalize the source expression as F_{D378}: X_{D378}->Y_{D378}.
@@ -18298,7 +18298,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D378`
+- 依赖 / Depends on: [D378](functions/items/D378.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18327,7 +18327,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D379})=1 ∧ J_n^-(F_{D379})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D379`
+- 依赖 / Depends on: [D379](functions/items/D379.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D379} and codomain Y_{D379}.
   - 2. Normalize the source expression as F_{D379}: X_{D379}->Y_{D379}.
@@ -18344,7 +18344,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D379`
+- 依赖 / Depends on: [D379](functions/items/D379.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18370,7 +18370,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D380})=1 ∧ J_n^-(F_{D380})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D380`
+- 依赖 / Depends on: [D380](functions/items/D380.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D380} and codomain Y_{D380}.
   - 2. Normalize the source expression as F_{D380}: X_{D380}->Y_{D380}.
@@ -18387,7 +18387,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D380`
+- 依赖 / Depends on: [D380](functions/items/D380.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18413,7 +18413,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D381})=1 ∧ J_n^-(F_{D381})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D381`
+- 依赖 / Depends on: [D381](functions/items/D381.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D381} and codomain Y_{D381}.
   - 2. Normalize the source expression as F_{D381}: X_{D381}->Y_{D381}.
@@ -18430,7 +18430,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D381`
+- 依赖 / Depends on: [D381](functions/items/D381.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18456,7 +18456,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D382})=1 ∧ J_n^-(F_{D382})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D382`
+- 依赖 / Depends on: [D382](functions/items/D382.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D382} and codomain Y_{D382}.
   - 2. Normalize the source expression as F_{D382}: X_{D382}->Y_{D382}.
@@ -18473,7 +18473,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D382`
+- 依赖 / Depends on: [D382](functions/items/D382.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18484,11 +18484,11 @@ English: Rule-based English rendering pending human review.
 ### [D383｜逃逸速度-确定性权衡函数](functions/items/D383.md)
 
 **函数内容 / Function Content**
-中文：M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低确定性快速探索方向，确认后切换高确定性慢速推进。D280两步策略的动态版本：先探索（降p_max确认方向），再巩固（均匀修缮）。
+中文：M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低确定性快速探索方向，确认后切换高确定性慢速推进。[D280](functions/items/D280.md)两步策略的动态版本：先探索（降p_max确认方向），再巩固（均匀修缮）。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低确定性快速探索方向，确认后切换高确定性慢速推进。D280两步策略的动态版本：先探索（降p_max确认方向），再巩固（均匀修缮）。 描述 逃逸速度-确定性权衡函数。
+中文：该函数通过 M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低确定性快速探索方向，确认后切换高确定性慢速推进。[D280](functions/items/D280.md)两步策略的动态版本：先探索（降p_max确认方向），再巩固（均匀修缮）。 描述 逃逸速度-确定性权衡函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18499,7 +18499,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D383})=1 ∧ J_n^-(F_{D383})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D383`
+- 依赖 / Depends on: [D383](functions/items/D383.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D383} and codomain Y_{D383}.
   - 2. Normalize the source expression as F_{D383}: X_{D383}->Y_{D383}.
@@ -18516,7 +18516,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D383`
+- 依赖 / Depends on: [D383](functions/items/D383.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18527,22 +18527,22 @@ English: Rule-based English rendering pending human review.
 ### [D384｜双重打击-双重加速同构函数](functions/items/D384.md)
 
 **函数内容 / Function Content**
-中文：M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/(1+a_excl·τ)·(1+Σpᵢpⱼ/ΣVar(ΔΦᵢ))——趋势和波动的双重双重加速。
+中文：M1的[D370](functions/items/D370.md)与[D348](functions/items/D348.md)不同构：[D370](functions/items/D370.md)是方差修正（二阶），[D348](functions/items/D348.md)是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/(1+a_excl·τ)·(1+Σpᵢpⱼ/ΣVar(ΔΦᵢ))——趋势和波动的双重双重加速。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/(1+a_excl·τ)·(1+Σpᵢpⱼ/ΣVar(ΔΦᵢ))——趋势和波动的双重双重加速。 描述 双重打击-双重加速同构函数。
+中文：该函数通过 M1的[D370](functions/items/D370.md)与[D348](functions/items/D348.md)不同构：[D370](functions/items/D370.md)是方差修正（二阶），[D348](functions/items/D348.md)是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/(1+a_excl·τ)·(1+Σpᵢpⱼ/ΣVar(ΔΦᵢ))——趋势和波动的双重双重加速。 描述 双重打击-双重加速同构函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D384}`
 - 定义域 / Domain: `X_{D384}`
 - 值域 / Codomain: `Y_{D384}`
-- 数学表达 / Expression: `F_{D384}(x) := M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/(1+a_excl·τ)·(1+Σpᵢpⱼ/ΣVar(ΔΦᵢ))——趋势和波动的双重双重加速。`
+- 数学表达 / Expression: `F_{D384}(x) := M1的[D370](functions/items/D370.md)与[D348](functions/items/D348.md)不同构：[D370](functions/items/D370.md)是方差修正（二阶），[D348](functions/items/D348.md)是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/(1+a_excl·τ)·(1+Σpᵢpⱼ/ΣVar(ΔΦᵢ))——趋势和波动的双重双重加速。`
 - 有效条件 / Validity: `J_n^+(F_{D384})=1 ∧ J_n^-(F_{D384})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D384`
+- 依赖 / Depends on: [D384](functions/items/D384.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D384} and codomain Y_{D384}.
   - 2. Normalize the source expression as F_{D384}: X_{D384}->Y_{D384}.
@@ -18559,7 +18559,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D384`
+- 依赖 / Depends on: [D384](functions/items/D384.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18585,7 +18585,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D385})=1 ∧ J_n^-(F_{D385})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D385`
+- 依赖 / Depends on: [D385](functions/items/D385.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D385} and codomain Y_{D385}.
   - 2. Normalize the source expression as F_{D385}: X_{D385}->Y_{D385}.
@@ -18602,7 +18602,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D385`
+- 依赖 / Depends on: [D385](functions/items/D385.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18613,22 +18613,22 @@ English: Rule-based English rendering pending human review.
 ### [D386｜容斥集中性统一函数](functions/items/D386.md)
 
 **函数内容 / Function Content**
-中文：M3的D372与D328是同一现象不同表述。统一指标I_concentration = max(ΔΦᵢ)/ΣΔΦᵢ·(1+ln(n))。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从集中变分散→系统更均匀。
+中文：M3的[D372](functions/items/D372.md)与[D328](functions/items/D328.md)是同一现象不同表述。统一指标I_concentration = max(ΔΦᵢ)/ΣΔΦᵢ·(1+ln(n))。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从集中变分散→系统更均匀。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M3的D372与D328是同一现象不同表述。统一指标I_concentration = max(ΔΦᵢ)/ΣΔΦᵢ·(1+ln(n))。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从集中变分散→系统更均匀。 描述 容斥集中性统一函数。
+中文：该函数通过 M3的[D372](functions/items/D372.md)与[D328](functions/items/D328.md)是同一现象不同表述。统一指标I_concentration = max(ΔΦᵢ)/ΣΔΦᵢ·(1+ln(n))。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从集中变分散→系统更均匀。 描述 容斥集中性统一函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D386}`
 - 定义域 / Domain: `X_{D386}`
 - 值域 / Codomain: `Y_{D386}`
-- 数学表达 / Expression: `F_{D386}(x) := M3的D372与D328是同一现象不同表述。统一指标I_concentration = max(ΔΦᵢ)/ΣΔΦᵢ·(1+ln(n))。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从集中变分散→系统更均匀。`
+- 数学表达 / Expression: `F_{D386}(x) := M3的[D372](functions/items/D372.md)与[D328](functions/items/D328.md)是同一现象不同表述。统一指标I_concentration = max(ΔΦᵢ)/ΣΔΦᵢ·(1+ln(n))。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从集中变分散→系统更均匀。`
 - 有效条件 / Validity: `J_n^+(F_{D386})=1 ∧ J_n^-(F_{D386})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D386`
+- 依赖 / Depends on: [D386](functions/items/D386.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D386} and codomain Y_{D386}.
   - 2. Normalize the source expression as F_{D386}: X_{D386}->Y_{D386}.
@@ -18645,7 +18645,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D386`
+- 依赖 / Depends on: [D386](functions/items/D386.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18671,7 +18671,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D387})=1 ∧ J_n^-(F_{D387})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D387`
+- 依赖 / Depends on: [D387](functions/items/D387.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D387} and codomain Y_{D387}.
   - 2. Normalize the source expression as F_{D387}: X_{D387}->Y_{D387}.
@@ -18688,7 +18688,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D387`
+- 依赖 / Depends on: [D387](functions/items/D387.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18701,22 +18701,22 @@ English: Rule-based English rendering pending human review.
 ### [D388｜不可逆线相交函数](functions/items/D388.md)
 
 **函数内容 / Function Content**
-中文：M5的D332与D295在(p_max,n)空间相交于p_max=p*且n=n_c。n<n_c时p_max不可逆先到，n>n_c时容斥主导不可逆先到。大系统先进入容斥主导再触及p_max不可逆，小系统反过来。
+中文：M5的[D332](functions/items/D332.md)与[D295](functions/items/D295.md)在(p_max,n)空间相交于p_max=p*且n=n_c。n<n_c时p_max不可逆先到，n>n_c时容斥主导不可逆先到。大系统先进入容斥主导再触及p_max不可逆，小系统反过来。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M5的D332与D295在(p_max,n)空间相交于p_max=p*且n=n_c。n<n_c时p_max不可逆先到，n>n_c时容斥主导不可逆先到。大系统先进入容斥主导再触及p_max不可逆，小系统反过来。 描述 不可逆线相交函数。
+中文：该函数通过 M5的[D332](functions/items/D332.md)与[D295](functions/items/D295.md)在(p_max,n)空间相交于p_max=p*且n=n_c。n<n_c时p_max不可逆先到，n>n_c时容斥主导不可逆先到。大系统先进入容斥主导再触及p_max不可逆，小系统反过来。 描述 不可逆线相交函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D388}`
 - 定义域 / Domain: `X_{D388}`
 - 值域 / Codomain: `Y_{D388}`
-- 数学表达 / Expression: `F_{D388}(x) := M5的D332与D295在(p_max,n)空间相交于p_max=p*且n=n_c。n<n_c时p_max不可逆先到，n>n_c时容斥主导不可逆先到。大系统先进入容斥主导再触及p_max不可逆，小系统反过来。`
+- 数学表达 / Expression: `F_{D388}(x) := M5的[D332](functions/items/D332.md)与[D295](functions/items/D295.md)在(p_max,n)空间相交于p_max=p*且n=n_c。n<n_c时p_max不可逆先到，n>n_c时容斥主导不可逆先到。大系统先进入容斥主导再触及p_max不可逆，小系统反过来。`
 - 有效条件 / Validity: `J_n^+(F_{D388})=1 ∧ J_n^-(F_{D388})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D388`
+- 依赖 / Depends on: [D388](functions/items/D388.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D388} and codomain Y_{D388}.
   - 2. Normalize the source expression as F_{D388}: X_{D388}->Y_{D388}.
@@ -18733,7 +18733,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D388`
+- 依赖 / Depends on: [D388](functions/items/D388.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18744,22 +18744,22 @@ English: Rule-based English rendering pending human review.
 ### [D389｜不归点-吸引域边界统一函数](functions/items/D389.md)
 
 **函数内容 / Function Content**
-中文：M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σαᵢ²/(1-pᵢ)²，δ_c∝1/√(Σαᵢ²/(1-pᵢ)²)——深度和δ_c是同一量的正反面。深度描述域内稳定性，δ_c描述域的边界。
+中文：M6的δ_c恰好是[D292](functions/items/D292.md)吸引域的边界。吸引域深度∝Σαᵢ²/(1-pᵢ)²，δ_c∝1/√(Σαᵢ²/(1-pᵢ)²)——深度和δ_c是同一量的正反面。深度描述域内稳定性，δ_c描述域的边界。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σαᵢ²/(1-pᵢ)²，δ_c∝1/√(Σαᵢ²/(1-pᵢ)²)——深度和δ_c是同一量的正反面。深度描述域内稳定性，δ_c描述域的边界。 描述 不归点-吸引域边界统一函数。
+中文：该函数通过 M6的δ_c恰好是[D292](functions/items/D292.md)吸引域的边界。吸引域深度∝Σαᵢ²/(1-pᵢ)²，δ_c∝1/√(Σαᵢ²/(1-pᵢ)²)——深度和δ_c是同一量的正反面。深度描述域内稳定性，δ_c描述域的边界。 描述 不归点-吸引域边界统一函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D389}`
 - 定义域 / Domain: `X_{D389}`
 - 值域 / Codomain: `Y_{D389}`
-- 数学表达 / Expression: `F_{D389}(x) := M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σαᵢ²/(1-pᵢ)²，δ_c∝1/√(Σαᵢ²/(1-pᵢ)²)——深度和δ_c是同一量的正反面。深度描述域内稳定性，δ_c描述域的边界。`
+- 数学表达 / Expression: `F_{D389}(x) := M6的δ_c恰好是[D292](functions/items/D292.md)吸引域的边界。吸引域深度∝Σαᵢ²/(1-pᵢ)²，δ_c∝1/√(Σαᵢ²/(1-pᵢ)²)——深度和δ_c是同一量的正反面。深度描述域内稳定性，δ_c描述域的边界。`
 - 有效条件 / Validity: `J_n^+(F_{D389})=1 ∧ J_n^-(F_{D389})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D389`
+- 依赖 / Depends on: [D389](functions/items/D389.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D389} and codomain Y_{D389}.
   - 2. Normalize the source expression as F_{D389}: X_{D389}->Y_{D389}.
@@ -18776,7 +18776,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D389`
+- 依赖 / Depends on: [D389](functions/items/D389.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18787,22 +18787,22 @@ English: Rule-based English rendering pending human review.
 ### [D390｜极限-不可逆n依赖协调函数](functions/items/D390.md)
 
 **函数内容 / Function Content**
-中文：M7的D376∝n与D378∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果是大系统更脆弱。临界n*∝β/(p̄·Σαᵢ)——干预力度β够大时n*大（大系统还能撑），β小时n*小（大系统必死）。
+中文：M7的[D376](functions/items/D376.md)∝n与[D378](functions/items/D378.md)∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果是大系统更脆弱。临界n*∝β/(p̄·Σαᵢ)——干预力度β够大时n*大（大系统还能撑），β小时n*小（大系统必死）。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M7的D376∝n与D378∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果是大系统更脆弱。临界n*∝β/(p̄·Σαᵢ)——干预力度β够大时n*大（大系统还能撑），β小时n*小（大系统必死）。 描述 极限-不可逆n依赖协调函数。
+中文：该函数通过 M7的[D376](functions/items/D376.md)∝n与[D378](functions/items/D378.md)∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果是大系统更脆弱。临界n*∝β/(p̄·Σαᵢ)——干预力度β够大时n*大（大系统还能撑），β小时n*小（大系统必死）。 描述 极限-不可逆n依赖协调函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D390}`
 - 定义域 / Domain: `X_{D390}`
 - 值域 / Codomain: `Y_{D390}`
-- 数学表达 / Expression: `F_{D390}(x) := M7的D376∝n与D378∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果是大系统更脆弱。临界n*∝β/(p̄·Σαᵢ)——干预力度β够大时n*大（大系统还能撑），β小时n*小（大系统必死）。`
+- 数学表达 / Expression: `F_{D390}(x) := M7的[D376](functions/items/D376.md)∝n与[D378](functions/items/D378.md)∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果是大系统更脆弱。临界n*∝β/(p̄·Σαᵢ)——干预力度β够大时n*大（大系统还能撑），β小时n*小（大系统必死）。`
 - 有效条件 / Validity: `J_n^+(F_{D390})=1 ∧ J_n^-(F_{D390})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D390`
+- 依赖 / Depends on: [D390](functions/items/D390.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D390} and codomain Y_{D390}.
   - 2. Normalize the source expression as F_{D390}: X_{D390}->Y_{D390}.
@@ -18819,7 +18819,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D390`
+- 依赖 / Depends on: [D390](functions/items/D390.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18845,7 +18845,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D391})=1 ∧ J_n^-(F_{D391})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D391`
+- 依赖 / Depends on: [D391](functions/items/D391.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D391} and codomain Y_{D391}.
   - 2. Normalize the source expression as F_{D391}: X_{D391}->Y_{D391}.
@@ -18862,7 +18862,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D391`
+- 依赖 / Depends on: [D391](functions/items/D391.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18873,22 +18873,22 @@ English: Rule-based English rendering pending human review.
 ### [D392｜不可逆-缓冲消失同步函数](functions/items/D392.md)
 
 **函数内容 / Function Content**
-中文：M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），w₂后消失（n→∞）。中间存在"几乎全部不可逆但缓冲期仍名义存在"的状态——D311僵尸态的宏观版本。
+中文：M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），w₂后消失（n→∞）。中间存在"几乎全部不可逆但缓冲期仍名义存在"的状态——[D311](functions/items/D311.md)僵尸态的宏观版本。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），w₂后消失（n→∞）。中间存在"几乎全部不可逆但缓冲期仍名义存在"的状态——D311僵尸态的宏观版本。 描述 不可逆-缓冲消失同步函数。
+中文：该函数通过 M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），w₂后消失（n→∞）。中间存在"几乎全部不可逆但缓冲期仍名义存在"的状态——[D311](functions/items/D311.md)僵尸态的宏观版本。 描述 不可逆-缓冲消失同步函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D392}`
 - 定义域 / Domain: `X_{D392}`
 - 值域 / Codomain: `Y_{D392}`
-- 数学表达 / Expression: `F_{D392}(x) := M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），w₂后消失（n→∞）。中间存在"几乎全部不可逆但缓冲期仍名义存在"的状态——D311僵尸态的宏观版本。`
+- 数学表达 / Expression: `F_{D392}(x) := M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），w₂后消失（n→∞）。中间存在"几乎全部不可逆但缓冲期仍名义存在"的状态——[D311](functions/items/D311.md)僵尸态的宏观版本。`
 - 有效条件 / Validity: `J_n^+(F_{D392})=1 ∧ J_n^-(F_{D392})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D392`
+- 依赖 / Depends on: [D392](functions/items/D392.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D392} and codomain Y_{D392}.
   - 2. Normalize the source expression as F_{D392}: X_{D392}->Y_{D392}.
@@ -18905,7 +18905,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D392`
+- 依赖 / Depends on: [D392](functions/items/D392.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18929,11 +18929,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D393}`
 - 定义域 / Domain: `X_{D393}`
 - 值域 / Codomain: `Y_{D393}`
-- 数学表达 / Expression: `F_{D393}(x) := M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲(D379)→低p缓冲<g_critical(D309)→低p僵尸化→总g_eff下降→更多溢出。正反馈传染链。`
+- 数学表达 / Expression: `F_{D393}(x) := M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲([D379](functions/items/D379.md))→低p缓冲<g_critical([D309](functions/items/D309.md))→低p僵尸化→总g_eff下降→更多溢出。正反馈传染链。`
 - 有效条件 / Validity: `J_n^+(F_{D393})=1 ∧ J_n^-(F_{D393})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D309`, `D379`, `D393`
+- 依赖 / Depends on: [D309](functions/items/D309.md), [D379](functions/items/D379.md), [D393](functions/items/D393.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D393} and codomain Y_{D393}.
   - 2. Normalize the source expression as F_{D393}: X_{D393}->Y_{D393}.
@@ -18950,7 +18950,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D309`, `D379`, `D393`
+- 依赖 / Depends on: [D309](functions/items/D309.md), [D379](functions/items/D379.md), [D393](functions/items/D393.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -18961,22 +18961,22 @@ English: Rule-based English rendering pending human review.
 ### [D394｜慢性消耗-波动累积同构检验](functions/items/D394.md)
 
 **函数内容 / Function Content**
-中文：M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积在连续时间极限下的表现。
+中文：M11的[D380](functions/items/D380.md)与[D342](functions/items/D342.md)不同构——[D342](functions/items/D342.md)是时间域累积效应，[D380](functions/items/D380.md)是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积在连续时间极限下的表现。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积在连续时间极限下的表现。 描述 慢性消耗-波动累积同构检验。
+中文：该函数通过 M11的[D380](functions/items/D380.md)与[D342](functions/items/D342.md)不同构——[D342](functions/items/D342.md)是时间域累积效应，[D380](functions/items/D380.md)是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积在连续时间极限下的表现。 描述 慢性消耗-波动累积同构检验。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D394}`
 - 定义域 / Domain: `X_{D394}`
 - 值域 / Codomain: `Y_{D394}`
-- 数学表达 / Expression: `F_{D394}(x) := M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积在连续时间极限下的表现。`
+- 数学表达 / Expression: `F_{D394}(x) := M11的[D380](functions/items/D380.md)与[D342](functions/items/D342.md)不同构——[D342](functions/items/D342.md)是时间域累积效应，[D380](functions/items/D380.md)是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积在连续时间极限下的表现。`
 - 有效条件 / Validity: `J_n^+(F_{D394})=1 ∧ J_n^-(F_{D394})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D394`
+- 依赖 / Depends on: [D394](functions/items/D394.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D394} and codomain Y_{D394}.
   - 2. Normalize the source expression as F_{D394}: X_{D394}->Y_{D394}.
@@ -18993,7 +18993,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D394`
+- 依赖 / Depends on: [D394](functions/items/D394.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19019,7 +19019,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D395})=1 ∧ J_n^-(F_{D395})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D395`
+- 依赖 / Depends on: [D395](functions/items/D395.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D395} and codomain Y_{D395}.
   - 2. Normalize the source expression as F_{D395}: X_{D395}->Y_{D395}.
@@ -19036,7 +19036,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D395`
+- 依赖 / Depends on: [D395](functions/items/D395.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19047,11 +19047,11 @@ English: Rule-based English rendering pending human review.
 ### [D396｜延迟临界-不可逆点统一函数](functions/items/D396.md)
 
 **函数内容 / Function Content**
-中文：M13的D382与D295在参数空间形成两条不可逆线。交点以下正反馈不可逆先到，交点以上振荡不可逆先到。小系统先触及正反馈不可逆，大系统先触及振荡不可逆。
+中文：M13的[D382](functions/items/D382.md)与[D295](functions/items/D295.md)在参数空间形成两条不可逆线。交点以下正反馈不可逆先到，交点以上振荡不可逆先到。小系统先触及正反馈不可逆，大系统先触及振荡不可逆。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M13的D382与D295在参数空间形成两条不可逆线。交点以下正反馈不可逆先到，交点以上振荡不可逆先到。小系统先触及正反馈不可逆，大系统先触及振荡不可逆。 描述 延迟临界-不可逆点统一函数。
+中文：该函数通过 M13的[D382](functions/items/D382.md)与[D295](functions/items/D295.md)在参数空间形成两条不可逆线。交点以下正反馈不可逆先到，交点以上振荡不可逆先到。小系统先触及正反馈不可逆，大系统先触及振荡不可逆。 描述 延迟临界-不可逆点统一函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19062,7 +19062,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D396})=1 ∧ J_n^-(F_{D396})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D396`
+- 依赖 / Depends on: [D396](functions/items/D396.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D396} and codomain Y_{D396}.
   - 2. Normalize the source expression as F_{D396}: X_{D396}->Y_{D396}.
@@ -19079,7 +19079,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D396`
+- 依赖 / Depends on: [D396](functions/items/D396.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19090,22 +19090,22 @@ English: Rule-based English rendering pending human review.
 ### [D397｜两步策略最优性证明函数](functions/items/D397.md)
 
 **函数内容 / Function Content**
-中文：M14的D280两步策略是最小化T_escape的策略。最优分配：t_explore/t_consolidate = √(v_slow/v_fast)。两步策略最优当且仅当v_fast>>v_slow且P_correct在探索后显著提升——即不确定性高的系统才需要两步。确定性高的系统直接一步慢速推进即可。
+中文：M14的[D280](functions/items/D280.md)两步策略是最小化T_escape的策略。最优分配：t_explore/t_consolidate = √(v_slow/v_fast)。两步策略最优当且仅当v_fast>>v_slow且P_correct在探索后显著提升——即不确定性高的系统才需要两步。确定性高的系统直接一步慢速推进即可。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M14的D280两步策略是最小化T_escape的策略。最优分配：t_explore/t_consolidate = √(v_slow/v_fast)。两步策略最优当且仅当v_fast>>v_slow且P_correct在探索后显著提升——即不确定性高的系统才需要两步。确定性高的系统直接一步慢速推进即可。 描述 两步策略最优性证明函数。
+中文：该函数通过 M14的[D280](functions/items/D280.md)两步策略是最小化T_escape的策略。最优分配：t_explore/t_consolidate = √(v_slow/v_fast)。两步策略最优当且仅当v_fast>>v_slow且P_correct在探索后显著提升——即不确定性高的系统才需要两步。确定性高的系统直接一步慢速推进即可。 描述 两步策略最优性证明函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D397}`
 - 定义域 / Domain: `X_{D397}`
 - 值域 / Codomain: `Y_{D397}`
-- 数学表达 / Expression: `F_{D397}(x) := M14的D280两步策略是最小化T_escape的策略。最优分配：t_explore/t_consolidate = √(v_slow/v_fast)。两步策略最优当且仅当v_fast>>v_slow且P_correct在探索后显著提升——即不确定性高的系统才需要两步。确定性高的系统直接一步慢速推进即可。`
+- 数学表达 / Expression: `F_{D397}(x) := M14的[D280](functions/items/D280.md)两步策略是最小化T_escape的策略。最优分配：t_explore/t_consolidate = √(v_slow/v_fast)。两步策略最优当且仅当v_fast>>v_slow且P_correct在探索后显著提升——即不确定性高的系统才需要两步。确定性高的系统直接一步慢速推进即可。`
 - 有效条件 / Validity: `J_n^+(F_{D397})=1 ∧ J_n^-(F_{D397})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D397`
+- 依赖 / Depends on: [D397](functions/items/D397.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D397} and codomain Y_{D397}.
   - 2. Normalize the source expression as F_{D397}: X_{D397}->Y_{D397}.
@@ -19122,7 +19122,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D397`
+- 依赖 / Depends on: [D397](functions/items/D397.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19133,22 +19133,22 @@ English: Rule-based English rendering pending human review.
 ### [D398｜趋势-波动主导切换函数](functions/items/D398.md)
 
 **函数内容 / Function Content**
-中文：M1的R_tw = (a_excl·τ)/(Σpᵢpⱼ/ΣVar)。R_tw>>1趋势主导，<<1波动主导。早期波动主导（随机波动被放大），晚期趋势主导（确定性加速）。衰退从"随机"切换到"确定"——D316转折点的动态版本。
+中文：M1的R_tw = (a_excl·τ)/(Σpᵢpⱼ/ΣVar)。R_tw>>1趋势主导，<<1波动主导。早期波动主导（随机波动被放大），晚期趋势主导（确定性加速）。衰退从"随机"切换到"确定"——[D316](functions/items/D316.md)转折点的动态版本。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M1的R_tw = (a_excl·τ)/(Σpᵢpⱼ/ΣVar)。R_tw>>1趋势主导，<<1波动主导。早期波动主导（随机波动被放大），晚期趋势主导（确定性加速）。衰退从"随机"切换到"确定"——D316转折点的动态版本。 描述 趋势-波动主导切换函数。
+中文：该函数通过 M1的R_tw = (a_excl·τ)/(Σpᵢpⱼ/ΣVar)。R_tw>>1趋势主导，<<1波动主导。早期波动主导（随机波动被放大），晚期趋势主导（确定性加速）。衰退从"随机"切换到"确定"——[D316](functions/items/D316.md)转折点的动态版本。 描述 趋势-波动主导切换函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D398}`
 - 定义域 / Domain: `X_{D398}`
 - 值域 / Codomain: `Y_{D398}`
-- 数学表达 / Expression: `F_{D398}(x) := M1的R_tw = (a_excl·τ)/(Σpᵢpⱼ/ΣVar)。R_tw>>1趋势主导，<<1波动主导。早期波动主导（随机波动被放大），晚期趋势主导（确定性加速）。衰退从"随机"切换到"确定"——D316转折点的动态版本。`
+- 数学表达 / Expression: `F_{D398}(x) := M1的R_tw = (a_excl·τ)/(Σpᵢpⱼ/ΣVar)。R_tw>>1趋势主导，<<1波动主导。早期波动主导（随机波动被放大），晚期趋势主导（确定性加速）。衰退从"随机"切换到"确定"——[D316](functions/items/D316.md)转折点的动态版本。`
 - 有效条件 / Validity: `J_n^+(F_{D398})=1 ∧ J_n^-(F_{D398})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D398`
+- 依赖 / Depends on: [D398](functions/items/D398.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D398} and codomain Y_{D398}.
   - 2. Normalize the source expression as F_{D398}: X_{D398}->Y_{D398}.
@@ -19165,7 +19165,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D398`
+- 依赖 / Depends on: [D398](functions/items/D398.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19191,7 +19191,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D399})=1 ∧ J_n^-(F_{D399})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D399`
+- 依赖 / Depends on: [D399](functions/items/D399.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D399} and codomain Y_{D399}.
   - 2. Normalize the source expression as F_{D399}: X_{D399}->Y_{D399}.
@@ -19208,7 +19208,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D399`
+- 依赖 / Depends on: [D399](functions/items/D399.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19219,22 +19219,22 @@ English: Rule-based English rendering pending human review.
 ### [D400｜集中性-序参量统一函数](functions/items/D400.md)
 
 **函数内容 / Function Content**
-中文：M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。
+中文：M3的I_concentration正是[D387](functions/items/D387.md)配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。[D386](functions/items/D386.md)和[D387](functions/items/D387.md)完全统一。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。 描述 集中性-序参量统一函数。
+中文：该函数通过 M3的I_concentration正是[D387](functions/items/D387.md)配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。[D386](functions/items/D386.md)和[D387](functions/items/D387.md)完全统一。 描述 集中性-序参量统一函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D400}`
 - 定义域 / Domain: `X_{D400}`
 - 值域 / Codomain: `Y_{D400}`
-- 数学表达 / Expression: `F_{D400}(x) := M3的I_concentration正是D387配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。D386和D387完全统一。`
+- 数学表达 / Expression: `F_{D400}(x) := M3的I_concentration正是[D387](functions/items/D387.md)配分函数的序参量——磁化强度m的线性映射I=(1+m)/2。降p_max既降Φ也降低m→降低I→容斥从有序变无序。[D386](functions/items/D386.md)和[D387](functions/items/D387.md)完全统一。`
 - 有效条件 / Validity: `J_n^+(F_{D400})=1 ∧ J_n^-(F_{D400})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D400`
+- 依赖 / Depends on: [D400](functions/items/D400.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D400} and codomain Y_{D400}.
   - 2. Normalize the source expression as F_{D400}: X_{D400}->Y_{D400}.
@@ -19251,7 +19251,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D400`
+- 依赖 / Depends on: [D400](functions/items/D400.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19262,22 +19262,22 @@ English: Rule-based English rendering pending human review.
 ### [D401｜自由能-Φ等价函数](functions/items/D401.md)
 
 **函数内容 / Function Content**
-中文：M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与D387一致。点火框架与统计力学的等价性在零温极限下精确成立。
+中文：M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与[D387](functions/items/D387.md)一致。点火框架与统计力学的等价性在零温极限下精确成立。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与D387一致。点火框架与统计力学的等价性在零温极限下精确成立。 描述 自由能-Φ等价函数。
+中文：该函数通过 M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与[D387](functions/items/D387.md)一致。点火框架与统计力学的等价性在零温极限下精确成立。 描述 自由能-Φ等价函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D401}`
 - 定义域 / Domain: `X_{D401}`
 - 值域 / Codomain: `Y_{D401}`
-- 数学表达 / Expression: `F_{D401}(x) := M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与D387一致。点火框架与统计力学的等价性在零温极限下精确成立。`
+- 数学表达 / Expression: `F_{D401}(x) := M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与[D387](functions/items/D387.md)一致。点火框架与统计力学的等价性在零温极限下精确成立。`
 - 有效条件 / Validity: `J_n^+(F_{D401})=1 ∧ J_n^-(F_{D401})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D401`
+- 依赖 / Depends on: [D401](functions/items/D401.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D401} and codomain Y_{D401}.
   - 2. Normalize the source expression as F_{D401}: X_{D401}->Y_{D401}.
@@ -19294,7 +19294,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D401`
+- 依赖 / Depends on: [D401](functions/items/D401.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19307,22 +19307,22 @@ English: Rule-based English rendering pending human review.
 ### [D402｜不可逆相交-临界标度联合函数](functions/items/D402.md)
 
 **函数内容 / Function Content**
-中文：M5的D388交点处K=1（确定性不可逆），D359临界K=√n（统计不可逆）。确定性不可逆先于统计不可逆——K=1时系统确定性地进入不可逆，K=√n时涨落使不可逆变得随机。
+中文：M5的[D388](functions/items/D388.md)交点处K=1（确定性不可逆），[D359](functions/items/D359.md)临界K=√n（统计不可逆）。确定性不可逆先于统计不可逆——K=1时系统确定性地进入不可逆，K=√n时涨落使不可逆变得随机。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M5的D388交点处K=1（确定性不可逆），D359临界K=√n（统计不可逆）。确定性不可逆先于统计不可逆——K=1时系统确定性地进入不可逆，K=√n时涨落使不可逆变得随机。 描述 不可逆相交-临界标度联合函数。
+中文：该函数通过 M5的[D388](functions/items/D388.md)交点处K=1（确定性不可逆），[D359](functions/items/D359.md)临界K=√n（统计不可逆）。确定性不可逆先于统计不可逆——K=1时系统确定性地进入不可逆，K=√n时涨落使不可逆变得随机。 描述 不可逆相交-临界标度联合函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D402}`
 - 定义域 / Domain: `X_{D402}`
 - 值域 / Codomain: `Y_{D402}`
-- 数学表达 / Expression: `F_{D402}(x) := M5的D388交点处K=1（确定性不可逆），D359临界K=√n（统计不可逆）。确定性不可逆先于统计不可逆——K=1时系统确定性地进入不可逆，K=√n时涨落使不可逆变得随机。`
+- 数学表达 / Expression: `F_{D402}(x) := M5的[D388](functions/items/D388.md)交点处K=1（确定性不可逆），[D359](functions/items/D359.md)临界K=√n（统计不可逆）。确定性不可逆先于统计不可逆——K=1时系统确定性地进入不可逆，K=√n时涨落使不可逆变得随机。`
 - 有效条件 / Validity: `J_n^+(F_{D402})=1 ∧ J_n^-(F_{D402})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D402`
+- 依赖 / Depends on: [D402](functions/items/D402.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D402} and codomain Y_{D402}.
   - 2. Normalize the source expression as F_{D402}: X_{D402}->Y_{D402}.
@@ -19339,7 +19339,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D402`
+- 依赖 / Depends on: [D402](functions/items/D402.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19350,22 +19350,22 @@ English: Rule-based English rendering pending human review.
 ### [D403｜δ_c-相变点统一函数](functions/items/D403.md)
 
 **函数内容 / Function Content**
-中文：M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。
+中文：M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与[D389](functions/items/D389.md)完全一致。δ_c就是统计力学相变的临界场强。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。 描述 δ_c-相变点统一函数。
+中文：该函数通过 M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与[D389](functions/items/D389.md)完全一致。δ_c就是统计力学相变的临界场强。 描述 δ_c-相变点统一函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D403}`
 - 定义域 / Domain: `X_{D403}`
 - 值域 / Codomain: `Y_{D403}`
-- 数学表达 / Expression: `F_{D403}(x) := M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与D389完全一致。δ_c就是统计力学相变的临界场强。`
+- 数学表达 / Expression: `F_{D403}(x) := M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/(ḡ·√n)——与[D389](functions/items/D389.md)完全一致。δ_c就是统计力学相变的临界场强。`
 - 有效条件 / Validity: `J_n^+(F_{D403})=1 ∧ J_n^-(F_{D403})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D403`
+- 依赖 / Depends on: [D403](functions/items/D403.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D403} and codomain Y_{D403}.
   - 2. Normalize the source expression as F_{D403}: X_{D403}->Y_{D403}.
@@ -19382,7 +19382,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D403`
+- 依赖 / Depends on: [D403](functions/items/D403.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19408,7 +19408,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D404})=1 ∧ J_n^-(F_{D404})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D404`
+- 依赖 / Depends on: [D404](functions/items/D404.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D404} and codomain Y_{D404}.
   - 2. Normalize the source expression as F_{D404}: X_{D404}->Y_{D404}.
@@ -19425,7 +19425,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D404`
+- 依赖 / Depends on: [D404](functions/items/D404.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19451,7 +19451,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D405})=1 ∧ J_n^-(F_{D405})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D405`
+- 依赖 / Depends on: [D405](functions/items/D405.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D405} and codomain Y_{D405}.
   - 2. Normalize the source expression as F_{D405}: X_{D405}->Y_{D405}.
@@ -19468,7 +19468,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D405`
+- 依赖 / Depends on: [D405](functions/items/D405.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19479,22 +19479,22 @@ English: Rule-based English rendering pending human review.
 ### [D406｜宏观僵尸态g_eff函数](functions/items/D406.md)
 
 **函数内容 / Function Content**
-中文：M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。
+中文：M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与[D311](functions/items/D311.md)微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。 描述 宏观僵尸态g_eff函数。
+中文：该函数通过 M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与[D311](functions/items/D311.md)微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。 描述 宏观僵尸态g_eff函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D406}`
 - 定义域 / Domain: `X_{D406}`
 - 值域 / Codomain: `Y_{D406}`
-- 数学表达 / Expression: `F_{D406}(x) := M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。`
+- 数学表达 / Expression: `F_{D406}(x) := M9的g_eff_macro = (1-R_irreversible)·g_eff。R→1时g_eff_macro→0但>0。与[D311](functions/items/D311.md)微观僵尸态完全同构——宏观僵尸态是微观僵尸态在n→∞极限下的连续版本。`
 - 有效条件 / Validity: `J_n^+(F_{D406})=1 ∧ J_n^-(F_{D406})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D406`
+- 依赖 / Depends on: [D406](functions/items/D406.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D406} and codomain Y_{D406}.
   - 2. Normalize the source expression as F_{D406}: X_{D406}->Y_{D406}.
@@ -19511,7 +19511,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D406`
+- 依赖 / Depends on: [D406](functions/items/D406.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19537,7 +19537,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D407})=1 ∧ J_n^-(F_{D407})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D407`
+- 依赖 / Depends on: [D407](functions/items/D407.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D407} and codomain Y_{D407}.
   - 2. Normalize the source expression as F_{D407}: X_{D407}->Y_{D407}.
@@ -19554,7 +19554,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D407`
+- 依赖 / Depends on: [D407](functions/items/D407.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19576,11 +19576,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D408}`
 - 定义域 / Domain: `X_{D408}`
 - 值域 / Codomain: `Y_{D408}`
-- 数学表达 / Expression: `F_{D408}(x) := M11的连续极限下Jensen项∝(dΦ/dt)²·τ_min/2。τ_min→0时Jensen→0，τ_min有限时Jensen有限。慢性消耗=有限τ_min下的Jensen效应。D394"极限等价"需修正：不是严格等价而是τ_min有限时的近似等价。`
+- 数学表达 / Expression: `F_{D408}(x) := M11的连续极限下Jensen项∝(dΦ/dt)²·τ_min/2。τ_min→0时Jensen→0，τ_min有限时Jensen有限。慢性消耗=有限τ_min下的Jensen效应。[D394](functions/items/D394.md)"极限等价"需修正：不是严格等价而是τ_min有限时的近似等价。`
 - 有效条件 / Validity: `J_n^+(F_{D408})=1 ∧ J_n^-(F_{D408})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D394`, `D408`
+- 依赖 / Depends on: [D394](functions/items/D394.md), [D408](functions/items/D408.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D408} and codomain Y_{D408}.
   - 2. Normalize the source expression as F_{D408}: X_{D408}->Y_{D408}.
@@ -19597,7 +19597,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D394`, `D408`
+- 依赖 / Depends on: [D394](functions/items/D394.md), [D408](functions/items/D408.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19608,11 +19608,11 @@ English: Rule-based English rendering pending human review.
 ### [D409｜传染临界-不可逆线一致性函数](functions/items/D409.md)
 
 **函数内容 / Function Content**
-中文：M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D395描述同一现象的不同方面——完全一致。
+中文：M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。[D388](functions/items/D388.md)和[D395](functions/items/D395.md)描述同一现象的不同方面——完全一致。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D395描述同一现象的不同方面——完全一致。 描述 传染临界-不可逆线一致性函数。
+中文：该函数通过 M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。[D388](functions/items/D388.md)和[D395](functions/items/D395.md)描述同一现象的不同方面——完全一致。 描述 传染临界-不可逆线一致性函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -19623,7 +19623,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D409})=1 ∧ J_n^-(F_{D409})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D409`
+- 依赖 / Depends on: [D409](functions/items/D409.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D409} and codomain Y_{D409}.
   - 2. Normalize the source expression as F_{D409}: X_{D409}->Y_{D409}.
@@ -19640,7 +19640,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D409`
+- 依赖 / Depends on: [D409](functions/items/D409.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19666,7 +19666,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D410})=1 ∧ J_n^-(F_{D410})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D410`
+- 依赖 / Depends on: [D410](functions/items/D410.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D410} and codomain Y_{D410}.
   - 2. Normalize the source expression as F_{D410}: X_{D410}->Y_{D410}.
@@ -19683,7 +19683,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D410`
+- 依赖 / Depends on: [D410](functions/items/D410.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19709,7 +19709,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D411})=1 ∧ J_n^-(F_{D411})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D411`
+- 依赖 / Depends on: [D411](functions/items/D411.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D411} and codomain Y_{D411}.
   - 2. Normalize the source expression as F_{D411}: X_{D411}->Y_{D411}.
@@ -19726,7 +19726,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D411`
+- 依赖 / Depends on: [D411](functions/items/D411.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19737,22 +19737,22 @@ English: Rule-based English rendering pending human review.
 ### [D412｜双切换同步函数](functions/items/D412.md)
 
 **函数内容 / Function Content**
-中文：M1的R_tw=1与D316转折点近似同步但不精确同步。a_excl·τ≈0.25时两个切换同时发生（最危险的"完美风暴"），否则先后发生。
+中文：M1的R_tw=1与[D316](functions/items/D316.md)转折点近似同步但不精确同步。a_excl·τ≈0.25时两个切换同时发生（最危险的"完美风暴"），否则先后发生。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M1的R_tw=1与D316转折点近似同步但不精确同步。a_excl·τ≈0.25时两个切换同时发生（最危险的"完美风暴"），否则先后发生。 描述 双切换同步函数。
+中文：该函数通过 M1的R_tw=1与[D316](functions/items/D316.md)转折点近似同步但不精确同步。a_excl·τ≈0.25时两个切换同时发生（最危险的"完美风暴"），否则先后发生。 描述 双切换同步函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D412}`
 - 定义域 / Domain: `X_{D412}`
 - 值域 / Codomain: `Y_{D412}`
-- 数学表达 / Expression: `F_{D412}(x) := M1的R_tw=1与D316转折点近似同步但不精确同步。a_excl·τ≈0.25时两个切换同时发生（最危险的"完美风暴"），否则先后发生。`
+- 数学表达 / Expression: `F_{D412}(x) := M1的R_tw=1与[D316](functions/items/D316.md)转折点近似同步但不精确同步。a_excl·τ≈0.25时两个切换同时发生（最危险的"完美风暴"），否则先后发生。`
 - 有效条件 / Validity: `J_n^+(F_{D412})=1 ∧ J_n^-(F_{D412})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D412`
+- 依赖 / Depends on: [D412](functions/items/D412.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D412} and codomain Y_{D412}.
   - 2. Normalize the source expression as F_{D412}: X_{D412}->Y_{D412}.
@@ -19769,7 +19769,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D412`
+- 依赖 / Depends on: [D412](functions/items/D412.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19782,22 +19782,22 @@ English: Rule-based English rendering pending human review.
 ### [D413｜遗迹-复活代价联合函数](functions/items/D413.md)
 
 **函数内容 / Function Content**
-中文：M2的遗迹衰减速率∝D301漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口短暂但代价也在降低。
+中文：M2的遗迹衰减速率∝[D301](functions/items/D301.md)漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口短暂但代价也在降低。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M2的遗迹衰减速率∝D301漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口短暂但代价也在降低。 描述 遗迹-复活代价联合函数。
+中文：该函数通过 M2的遗迹衰减速率∝[D301](functions/items/D301.md)漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口短暂但代价也在降低。 描述 遗迹-复活代价联合函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D413}`
 - 定义域 / Domain: `X_{D413}`
 - 值域 / Codomain: `Y_{D413}`
-- 数学表达 / Expression: `F_{D413}(x) := M2的遗迹衰减速率∝D301漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口短暂但代价也在降低。`
+- 数学表达 / Expression: `F_{D413}(x) := M2的遗迹衰减速率∝[D301](functions/items/D301.md)漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口短暂但代价也在降低。`
 - 有效条件 / Validity: `J_n^+(F_{D413})=1 ∧ J_n^-(F_{D413})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D413`
+- 依赖 / Depends on: [D413](functions/items/D413.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D413} and codomain Y_{D413}.
   - 2. Normalize the source expression as F_{D413}: X_{D413}->Y_{D413}.
@@ -19814,7 +19814,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D413`
+- 依赖 / Depends on: [D413](functions/items/D413.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19825,22 +19825,22 @@ English: Rule-based English rendering pending human review.
 ### [D414｜集中性-序参量映射修正函数](functions/items/D414.md)
 
 **函数内容 / Function Content**
-中文：M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与D331 p*涨落同量级，同一有限尺寸效应的两个方面。
+中文：M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与[D331](functions/items/D331.md) p*涨落同量级，同一有限尺寸效应的两个方面。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与D331 p*涨落同量级，同一有限尺寸效应的两个方面。 描述 集中性-序参量映射修正函数。
+中文：该函数通过 M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与[D331](functions/items/D331.md) p*涨落同量级，同一有限尺寸效应的两个方面。 描述 集中性-序参量映射修正函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D414}`
 - 定义域 / Domain: `X_{D414}`
 - 值域 / Codomain: `Y_{D414}`
-- 数学表达 / Expression: `F_{D414}(x) := M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与D331 p*涨落同量级，同一有限尺寸效应的两个方面。`
+- 数学表达 / Expression: `F_{D414}(x) := M3的I=(1+m)/2在有限n时有O(1/n)修正。有限系统比平均场预测更集中。修正量∝1/√n——与[D331](functions/items/D331.md) p*涨落同量级，同一有限尺寸效应的两个方面。`
 - 有效条件 / Validity: `J_n^+(F_{D414})=1 ∧ J_n^-(F_{D414})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D414`
+- 依赖 / Depends on: [D414](functions/items/D414.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D414} and codomain Y_{D414}.
   - 2. Normalize the source expression as F_{D414}: X_{D414}->Y_{D414}.
@@ -19857,7 +19857,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D414`
+- 依赖 / Depends on: [D414](functions/items/D414.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19883,7 +19883,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D415})=1 ∧ J_n^-(F_{D415})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D415`
+- 依赖 / Depends on: [D415](functions/items/D415.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D415} and codomain Y_{D415}.
   - 2. Normalize the source expression as F_{D415}: X_{D415}->Y_{D415}.
@@ -19900,7 +19900,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D415`
+- 依赖 / Depends on: [D415](functions/items/D415.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19926,7 +19926,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D416})=1 ∧ J_n^-(F_{D416})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D416`
+- 依赖 / Depends on: [D416](functions/items/D416.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D416} and codomain Y_{D416}.
   - 2. Normalize the source expression as F_{D416}: X_{D416}->Y_{D416}.
@@ -19943,7 +19943,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D416`
+- 依赖 / Depends on: [D416](functions/items/D416.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -19954,22 +19954,22 @@ English: Rule-based English rendering pending human review.
 ### [D417｜δ_c-稳定性裕度统一函数](functions/items/D417.md)
 
 **函数内容 / Function Content**
-中文：M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽的双重最优——D285干预机会面积最大的几何根源。
+中文：M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽的双重最优——[D285](functions/items/D285.md)干预机会面积最大的几何根源。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽的双重最优——D285干预机会面积最大的几何根源。 描述 δ_c-稳定性裕度统一函数。
+中文：该函数通过 M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽的双重最优——[D285](functions/items/D285.md)干预机会面积最大的几何根源。 描述 δ_c-稳定性裕度统一函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D417}`
 - 定义域 / Domain: `X_{D417}`
 - 值域 / Codomain: `Y_{D417}`
-- 数学表达 / Expression: `F_{D417}(x) := M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽的双重最优——D285干预机会面积最大的几何根源。`
+- 数学表达 / Expression: `F_{D417}(x) := M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽的双重最优——[D285](functions/items/D285.md)干预机会面积最大的几何根源。`
 - 有效条件 / Validity: `J_n^+(F_{D417})=1 ∧ J_n^-(F_{D417})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D417`
+- 依赖 / Depends on: [D417](functions/items/D417.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D417} and codomain Y_{D417}.
   - 2. Normalize the source expression as F_{D417}: X_{D417}->Y_{D417}.
@@ -19986,7 +19986,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D417`
+- 依赖 / Depends on: [D417](functions/items/D417.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20012,7 +20012,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D418})=1 ∧ J_n^-(F_{D418})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D418`
+- 依赖 / Depends on: [D418](functions/items/D418.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D418} and codomain Y_{D418}.
   - 2. Normalize the source expression as F_{D418}: X_{D418}->Y_{D418}.
@@ -20029,7 +20029,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D418`
+- 依赖 / Depends on: [D418](functions/items/D418.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20055,7 +20055,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D419})=1 ∧ J_n^-(F_{D419})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D309`, `D419`
+- 依赖 / Depends on: [D309](functions/items/D309.md), [D419](functions/items/D419.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D419} and codomain Y_{D419}.
   - 2. Normalize the source expression as F_{D419}: X_{D419}->Y_{D419}.
@@ -20072,7 +20072,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D309`, `D419`
+- 依赖 / Depends on: [D309](functions/items/D309.md), [D419](functions/items/D419.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20098,7 +20098,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D420})=1 ∧ J_n^-(F_{D420})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D420`
+- 依赖 / Depends on: [D420](functions/items/D420.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D420} and codomain Y_{D420}.
   - 2. Normalize the source expression as F_{D420}: X_{D420}->Y_{D420}.
@@ -20115,7 +20115,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D420`
+- 依赖 / Depends on: [D420](functions/items/D420.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20141,7 +20141,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D421})=1 ∧ J_n^-(F_{D421})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D421`
+- 依赖 / Depends on: [D421](functions/items/D421.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D421} and codomain Y_{D421}.
   - 2. Normalize the source expression as F_{D421}: X_{D421}->Y_{D421}.
@@ -20158,7 +20158,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D421`
+- 依赖 / Depends on: [D421](functions/items/D421.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20184,7 +20184,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D422})=1 ∧ J_n^-(F_{D422})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D422`
+- 依赖 / Depends on: [D422](functions/items/D422.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D422} and codomain Y_{D422}.
   - 2. Normalize the source expression as F_{D422}: X_{D422}->Y_{D422}.
@@ -20201,7 +20201,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D422`
+- 依赖 / Depends on: [D422](functions/items/D422.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20227,7 +20227,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D423})=1 ∧ J_n^-(F_{D423})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D423`
+- 依赖 / Depends on: [D423](functions/items/D423.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D423} and codomain Y_{D423}.
   - 2. Normalize the source expression as F_{D423}: X_{D423}->Y_{D423}.
@@ -20244,7 +20244,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D423`
+- 依赖 / Depends on: [D423](functions/items/D423.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20270,7 +20270,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `J_n^+(F_{D424})=1 ∧ J_n^-(F_{D424})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D424`
+- 依赖 / Depends on: [D424](functions/items/D424.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D424} and codomain Y_{D424}.
   - 2. Normalize the source expression as F_{D424}: X_{D424}->Y_{D424}.
@@ -20287,7 +20287,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D424`
+- 依赖 / Depends on: [D424](functions/items/D424.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20298,22 +20298,22 @@ English: Rule-based English rendering pending human review.
 ### [D463｜完美风暴-信息量等价函数](functions/items/D463.md)
 
 **函数内容 / Function Content**
-中文：D412修正后，完美风暴条件a_excl·τ=1/(4·ln2)中的ln2不是数学巧合——它建立了容斥动力学与信息论的精确桥梁。 $$a_{excl} \cdot \tau = \frac{1}{4 \ln 2} = \frac{1}{4} \cdot \frac{1}{\ln 2}$$ 与Landauer原理的等价：τ_Landauer = k_BT·ln2 / P是擦除1 bit信息的最小时间。完美风暴条件等价于：**系统的容斥-弛豫时间积恰好是Landauer擦除时间的1/4时，双切换同步**。 关键推论： - 完美风暴门槛比原预测低44%——实际不可逆到来时间是原预测的ln2倍 - t_irr' = t_irr × ln2 — 不可逆时间修正因子恰好是1 bit信息量的自然对数
+中文：[D412](functions/items/D412.md)修正后，完美风暴条件a_excl·τ=1/(4·ln2)中的ln2不是数学巧合——它建立了容斥动力学与信息论的精确桥梁。 $$a_{excl} \cdot \tau = \frac{1}{4 \ln 2} = \frac{1}{4} \cdot \frac{1}{\ln 2}$$ 与Landauer原理的等价：τ_Landauer = k_BT·ln2 / P是擦除1 bit信息的最小时间。完美风暴条件等价于：**系统的容斥-弛豫时间积恰好是Landauer擦除时间的1/4时，双切换同步**。 关键推论： - 完美风暴门槛比原预测低44%——实际不可逆到来时间是原预测的ln2倍 - t_irr' = t_irr × ln2 — 不可逆时间修正因子恰好是1 bit信息量的自然对数
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D412修正后，完美风暴条件a_excl·τ=1/(4·ln2)中的ln2不是数学巧合——它建立了容斥动力学与信息论的精确桥梁。 $$a_{excl} \cdot \tau = \frac{1}{4 \ln 2} = \frac{1}{4} \cdot \frac{1}{\ln 2}$$ 与Landauer原理的等价：τ_Landauer = k_BT·ln2 / P是擦除1 bit信息的最小时间。完美风暴条件等价于：**系统的容斥-弛豫时间积恰好是Landauer擦除时间的1/4时，双切换同步**。 关键推论： - 完美风暴门槛比原预测低44%——实际不可逆到来时间是原预测的ln2倍 - t_irr' = t_irr × ln2 — 不可逆时间修正因子恰好是1 bit信息量的自然对数 描述 完美风暴-信息量等价函数。
+中文：该函数通过 [D412](functions/items/D412.md)修正后，完美风暴条件a_excl·τ=1/(4·ln2)中的ln2不是数学巧合——它建立了容斥动力学与信息论的精确桥梁。 $$a_{excl} \cdot \tau = \frac{1}{4 \ln 2} = \frac{1}{4} \cdot \frac{1}{\ln 2}$$ 与Landauer原理的等价：τ_Landauer = k_BT·ln2 / P是擦除1 bit信息的最小时间。完美风暴条件等价于：**系统的容斥-弛豫时间积恰好是Landauer擦除时间的1/4时，双切换同步**。 关键推论： - 完美风暴门槛比原预测低44%——实际不可逆到来时间是原预测的ln2倍 - t_irr' = t_irr × ln2 — 不可逆时间修正因子恰好是1 bit信息量的自然对数 描述 完美风暴-信息量等价函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D463}`
 - 定义域 / Domain: `X_{D463}`
 - 值域 / Codomain: `Y_{D463}`
-- 数学表达 / Expression: `F_{D463}(x) := D412修正后，完美风暴条件a_excl·τ=1/(4·ln2)中的ln2不是数学巧合——它建立了容斥动力学与信息论的精确桥梁。 $$a_{excl} \cdot \tau = \frac{1}{4 \ln 2} = \frac{1}{4} \cdot \frac{1}{\ln 2}$$ 与Landauer原理的等价：τ_Landauer = k_BT·ln2 / P是擦除1 bit信息的最小时间。完美风暴条件等价于：**系统的容斥-弛豫时间积恰好是Landauer擦除时间的1/4时，双切换同步**。 关键推论： - 完美风暴门槛比原预测低44%——实际不可逆到来时间是原预测的ln2倍 - t_irr' = t_irr × ln2 — 不可逆时间修正因子恰好是1 bit信息量的自然对数`
+- 数学表达 / Expression: `F_{D463}(x) := [D412](functions/items/D412.md)修正后，完美风暴条件a_excl·τ=1/(4·ln2)中的ln2不是数学巧合——它建立了容斥动力学与信息论的精确桥梁。 $$a_{excl} \cdot \tau = \frac{1}{4 \ln 2} = \frac{1}{4} \cdot \frac{1}{\ln 2}$$ 与Landauer原理的等价：τ_Landauer = k_BT·ln2 / P是擦除1 bit信息的最小时间。完美风暴条件等价于：**系统的容斥-弛豫时间积恰好是Landauer擦除时间的1/4时，双切换同步**。 关键推论： - 完美风暴门槛比原预测低44%——实际不可逆到来时间是原预测的ln2倍 - t_irr' = t_irr × ln2 — 不可逆时间修正因子恰好是1 bit信息量的自然对数`
 - 有效条件 / Validity: `J_n^+(F_{D463})=1 ∧ J_n^-(F_{D463})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D463`
+- 依赖 / Depends on: [D463](functions/items/D463.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D463} and codomain Y_{D463}.
   - 2. Normalize the source expression as F_{D463}: X_{D463}->Y_{D463}.
@@ -20330,7 +20330,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D463`
+- 依赖 / Depends on: [D463](functions/items/D463.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20343,22 +20343,22 @@ English: Rule-based English rendering pending human review.
 ### [D464｜幽灵超指数衰减函数](functions/items/D464.md)
 
 **函数内容 / Function Content**
-中文：D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\Delta\Phi_{ghost}(t) = \Delta\Phi_{max} \cdot \exp\left(-\kappa \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中H_eff是系统有效膨胀率，α由系统维度结构决定。 宇宙学特例：H_eff∝(1+z)^(3/2)，α=1，积分得ΔH(z) = ΔH_max · exp(-κ·[(1+z)^(5/2)-1])。这是P17哈勃张力的精确预测形式。 关键推论： - 幽灵效应的消失不是渐变而是突变——存在"幽灵消失时间"t_ghost_diss
+中文：[D384](functions/items/D384.md)精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\Delta\Phi_{ghost}(t) = \Delta\Phi_{max} \cdot \exp\left(-\kappa \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中H_eff是系统有效膨胀率，α由系统维度结构决定。 宇宙学特例：H_eff∝(1+z)^(3/2)，α=1，积分得ΔH(z) = ΔH_max · exp(-κ·[(1+z)^(5/2)-1])。这是P17哈勃张力的精确预测形式。 关键推论： - 幽灵效应的消失不是渐变而是突变——存在"幽灵消失时间"t_ghost_diss
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\Delta\Phi_{ghost}(t) = \Delta\Phi_{max} \cdot \exp\left(-\kappa \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中H_eff是系统有效膨胀率，α由系统维度结构决定。 宇宙学特例：H_eff∝(1+z)^(3/2)，α=1，积分得ΔH(z) = ΔH_max · exp(-κ·[(1+z)^(5/2)-1])。这是P17哈勃张力的精确预测形式。 关键推论： - 幽灵效应的消失不是渐变而是突变——存在"幽灵消失时间"t_ghost_diss 描述 幽灵超指数衰减函数。
+中文：该函数通过 [D384](functions/items/D384.md)精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\Delta\Phi_{ghost}(t) = \Delta\Phi_{max} \cdot \exp\left(-\kappa \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中H_eff是系统有效膨胀率，α由系统维度结构决定。 宇宙学特例：H_eff∝(1+z)^(3/2)，α=1，积分得ΔH(z) = ΔH_max · exp(-κ·[(1+z)^(5/2)-1])。这是P17哈勃张力的精确预测形式。 关键推论： - 幽灵效应的消失不是渐变而是突变——存在"幽灵消失时间"t_ghost_diss 描述 幽灵超指数衰减函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D464}`
 - 定义域 / Domain: `X_{D464}`
 - 值域 / Codomain: `Y_{D464}`
-- 数学表达 / Expression: `F_{D464}(x) := D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\Delta\Phi_{ghost}(t) = \Delta\Phi_{max} \cdot \exp\left(-\kappa \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中H_eff是系统有效膨胀率，α由系统维度结构决定。 宇宙学特例：H_eff∝(1+z)^(3/2)，α=1，积分得ΔH(z) = ΔH_max · exp(-κ·[(1+z)^(5/2)-1])。这是P17哈勃张力的精确预测形式。 关键推论： - 幽灵效应的消失不是渐变而是突变——存在"幽灵消失时间"t_ghost_diss`
+- 数学表达 / Expression: `F_{D464}(x) := [D384](functions/items/D384.md)精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$\Delta\Phi_{ghost}(t) = \Delta\Phi_{max} \cdot \exp\left(-\kappa \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中H_eff是系统有效膨胀率，α由系统维度结构决定。 宇宙学特例：H_eff∝(1+z)^(3/2)，α=1，积分得ΔH(z) = ΔH_max · exp(-κ·[(1+z)^(5/2)-1])。这是P17哈勃张力的精确预测形式。 关键推论： - 幽灵效应的消失不是渐变而是突变——存在"幽灵消失时间"t_ghost_diss`
 - 有效条件 / Validity: `J_n^+(F_{D464})=1 ∧ J_n^-(F_{D464})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D464`
+- 依赖 / Depends on: [D464](functions/items/D464.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D464} and codomain Y_{D464}.
   - 2. Normalize the source expression as F_{D464}: X_{D464}->Y_{D464}.
@@ -20375,7 +20375,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D464`
+- 依赖 / Depends on: [D464](functions/items/D464.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20386,22 +20386,22 @@ English: Rule-based English rendering pending human review.
 ### [D465｜幽灵-不可逆竞争函数](functions/items/D465.md)
 
 **函数内容 / Function Content**
-中文：[D464](functions/items/D464.md)×D410交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应D412完美风暴的D464版本 关键推论：
+中文：[D464](functions/items/D464.md)×[D410](functions/items/D410.md)交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应[D412](functions/items/D412.md)完美风暴的[D464](functions/items/D464.md)版本 关键推论：
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 [D464](functions/items/D464.md)×D410交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应D412完美风暴的D464版本 关键推论： 描述 幽灵-不可逆竞争函数。
+中文：该函数通过 [D464](functions/items/D464.md)×[D410](functions/items/D410.md)交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应[D412](functions/items/D412.md)完美风暴的[D464](functions/items/D464.md)版本 关键推论： 描述 幽灵-不可逆竞争函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D465}`
 - 定义域 / Domain: `X_{D465}`
 - 值域 / Codomain: `Y_{D465}`
-- 数学表达 / Expression: `F_{D465}(x) := D464×D410交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应D412完美风暴的D464版本 关键推论：`
+- 数学表达 / Expression: `F_{D465}(x) := [D464](functions/items/D464.md)×[D410](functions/items/D410.md)交叉产生——幽灵消失时间t_ghost_diss与不可逆时间t_irr的竞争决定系统命运： $$P_{recover} = \sigma\left(\frac{t_{irr} - t_{ghost\_diss}}{\Delta t}\right)$$ - t_ghost_diss < t_irr：幽灵先消失，系统在不可逆前恢复自由度 → 可恢复 - t_ghost_diss > t_irr：幽灵拖住系统直到不可逆 → 不可恢复 - t_ghost_diss = t_irr：临界情形，对应[D412](functions/items/D412.md)完美风暴的[D464](functions/items/D464.md)版本 关键推论：`
 - 有效条件 / Validity: `J_n^+(F_{D465})=1 ∧ J_n^-(F_{D465})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D464`, `D465`
+- 依赖 / Depends on: [D464](functions/items/D464.md), [D465](functions/items/D465.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D465} and codomain Y_{D465}.
   - 2. Normalize the source expression as F_{D465}: X_{D465}->Y_{D465}.
@@ -20418,7 +20418,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D464`, `D465`
+- 依赖 / Depends on: [D464](functions/items/D464.md), [D465](functions/items/D465.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20430,22 +20430,22 @@ English: Rule-based English rendering pending human review.
 ### [D466｜暗物质核心-幽灵衰减函数](functions/items/D466.md)
 
 **函数内容 / Function Content**
-中文：[D464](functions/items/D464.md)×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。D466补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。
+中文：[D464](functions/items/D464.md)×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。[D466](functions/items/D466.md)补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 [D464](functions/items/D464.md)×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。D466补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。 描述 暗物质核心-幽灵衰减函数。
+中文：该函数通过 [D464](functions/items/D464.md)×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。[D466](functions/items/D466.md)补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。 描述 暗物质核心-幽灵衰减函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D466}`
 - 定义域 / Domain: `X_{D466}`
 - 值域 / Codomain: `Y_{D466}`
-- 数学表达 / Expression: `F_{D466}(x) := D464×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。D466补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。`
+- 数学表达 / Expression: `F_{D466}(x) := [D464](functions/items/D464.md)×P16跨域碰撞——暗物质核心是可见物质分布的幽灵极小点。 暗物质核心半径r_c随时间超指数衰减： $$r_c(t) = r_{c,0} \cdot \exp\left(-\kappa_{DM} \cdot \left[\int_0^t H_{eff}(t')dt'\right]^\alpha\right)$$ 其中κ_DM极小（暗物质系统惯性极大），t以宇宙学时间计。 可检验预测：**更古老的星系团，暗物质核心半径更小**。r_c ∝ σ_visible² · exp(-κ_DM · t^α)。 与P16关系：P16说暗物质核心形态由σ_visible调控。[D466](functions/items/D466.md)补充时间维度——σ_visible不仅决定核心大小，还决定衰减速率。`
 - 有效条件 / Validity: `J_n^+(F_{D466})=1 ∧ J_n^-(F_{D466})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D464`, `D466`
+- 依赖 / Depends on: [D464](functions/items/D464.md), [D466](functions/items/D466.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D466} and codomain Y_{D466}.
   - 2. Normalize the source expression as F_{D466}: X_{D466}->Y_{D466}.
@@ -20462,7 +20462,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D464`, `D466`
+- 依赖 / Depends on: [D464](functions/items/D464.md), [D466](functions/items/D466.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20474,22 +20474,22 @@ English: Rule-based English rendering pending human review.
 ### [D467｜最优性-惯性反比函数](functions/items/D467.md)
 
 **函数内容 / Function Content**
-中文：D464扩展(κ∝|σ-√e|/√e)×[D307](functions/items/D307.md)(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性）
+中文：[D464](functions/items/D464.md)扩展(κ∝|σ-√e|/√e)×[D307](functions/items/D307.md)(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性）
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 D464扩展(κ∝|σ-√e|/√e)×[D307](functions/items/D307.md)(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性） 描述 最优性-惯性反比函数。
+中文：该函数通过 [D464](functions/items/D464.md)扩展(κ∝|σ-√e|/√e)×[D307](functions/items/D307.md)(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性） 描述 最优性-惯性反比函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D467}`
 - 定义域 / Domain: `X_{D467}`
 - 值域 / Codomain: `Y_{D467}`
-- 数学表达 / Expression: `F_{D467}(x) := D464扩展(κ∝|σ-√e|/√e)×D307(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性）`
+- 数学表达 / Expression: `F_{D467}(x) := [D464](functions/items/D464.md)扩展(κ∝|σ-√e|/√e)×[D307](functions/items/D307.md)(σ_opt=√e)碰撞——空间维度的最优性与时间维度的惯性成反比。 $$\kappa \propto \left(\frac{\partial^2\Phi}{\partial\sigma^2}\bigg|_{\sigma^*}\right)^{-1}$$ 势阱在最优配置处最深最宽→残余最大→幽灵最持久→改革最难。这不是缺陷，是最优性的必然代价。 推广：任何参数空间中，系统在最优配置处的惯性最大。 - 经济学：最有效的市场最难改革 - 生物学：最适应的物种最难进化（进化保守性）`
 - 有效条件 / Validity: `J_n^+(F_{D467})=1 ∧ J_n^-(F_{D467})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D307`, `D467`
+- 依赖 / Depends on: [D307](functions/items/D307.md), [D467](functions/items/D467.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D467} and codomain Y_{D467}.
   - 2. Normalize the source expression as F_{D467}: X_{D467}->Y_{D467}.
@@ -20506,7 +20506,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D307`, `D467`
+- 依赖 / Depends on: [D307](functions/items/D307.md), [D467](functions/items/D467.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20522,22 +20522,22 @@ English: Rule-based English rendering pending human review.
 ### [D468｜吸引子-陷阱等价函数](functions/items/D468.md)
 
 **函数内容 / Function Content**
-中文：[D467](functions/items/D467.md)×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（D295的p_max穿过p*）
+中文：[D467](functions/items/D467.md)×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（[D295](functions/items/D295.md)的p_max穿过p*）
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 [D467](functions/items/D467.md)×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（D295的p_max穿过p*） 描述 吸引子-陷阱等价函数。
+中文：该函数通过 [D467](functions/items/D467.md)×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（[D295](functions/items/D295.md)的p_max穿过p*） 描述 吸引子-陷阱等价函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D468}`
 - 定义域 / Domain: `X_{D468}`
 - 值域 / Codomain: `Y_{D468}`
-- 数学表达 / Expression: `F_{D468}(x) := D467×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（D295的p_max穿过p*）`
+- 数学表达 / Expression: `F_{D468}(x) := [D467](functions/items/D467.md)×M8碰撞——势能面的极小点同时是吸引子（系统向其漂移）和陷阱（系统被其锁定）。吸引力和锁定力是同一势能曲率的两种表现： $$F_{attract} \propto -\frac{\partial V}{\partial\sigma}, \quad I_{trap} \propto \left(\frac{\partial^2 V}{\partial\sigma^2}\right)^{-1}$$ 在极小点处F_attract=0（已到达）但I_trap最大（最被锁定）。 关键推论： - 所有稳定状态都是陷阱——不存在"稳定但不锁定"的状态 - 逃逸陷阱的唯一方式是注入足够能量让系统翻越势垒（[D295](functions/items/D295.md)的p_max穿过p*）`
 - 有效条件 / Validity: `J_n^+(F_{D468})=1 ∧ J_n^-(F_{D468})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D467`, `D468`
+- 依赖 / Depends on: [D467](functions/items/D467.md), [D468](functions/items/D468.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D468} and codomain Y_{D468}.
   - 2. Normalize the source expression as F_{D468}: X_{D468}->Y_{D468}.
@@ -20554,7 +20554,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D467`, `D468`
+- 依赖 / Depends on: [D467](functions/items/D467.md), [D468](functions/items/D468.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20576,11 +20576,11 @@ English: Rule-based English rendering pending human review.
 - 对象 / Object: `F_{D469}`
 - 定义域 / Domain: `X_{D469}`
 - 值域 / Codomain: `Y_{D469}`
-- 数学表达 / Expression: `F_{D469}(x) := D468×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降势垒→重新优化"之间周期性循环： $$\sigma(t) \sim \sigma_{opt} + A \cdot \sin(\omega t) \cdot e^{-\gamma t}$$ ω由M14两步策略的执行速度决定，γ由每轮循环的净改善决定。 关键推论： - γ>0：收敛到σ_opt附近极限环——可持续演化 - γ=0：完美循环——永续振荡`
+- 数学表达 / Expression: `F_{D469}(x) := [D468](functions/items/D468.md)×M14碰撞——吸引子-陷阱等价导致系统在"优化→锁定→降势垒→重新优化"之间周期性循环： $$\sigma(t) \sim \sigma_{opt} + A \cdot \sin(\omega t) \cdot e^{-\gamma t}$$ ω由M14两步策略的执行速度决定，γ由每轮循环的净改善决定。 关键推论： - γ>0：收敛到σ_opt附近极限环——可持续演化 - γ=0：完美循环——永续振荡`
 - 有效条件 / Validity: `J_n^+(F_{D469})=1 ∧ J_n^-(F_{D469})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D468`, `D469`
+- 依赖 / Depends on: [D468](functions/items/D468.md), [D469](functions/items/D469.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D469} and codomain Y_{D469}.
   - 2. Normalize the source expression as F_{D469}: X_{D469}->Y_{D469}.
@@ -20597,7 +20597,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D468`, `D469`
+- 依赖 / Depends on: [D468](functions/items/D468.md), [D469](functions/items/D469.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.
@@ -20613,22 +20613,22 @@ English: Rule-based English rendering pending human review.
 ### [D470｜幽灵跳变阻尼函数](functions/items/D470.md)
 
 **函数内容 / Function Content**
-中文：[D469](functions/items/D469.md)×D464深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自D464超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵
+中文：[D469](functions/items/D469.md)×[D464](functions/items/D464.md)深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自[D464](functions/items/D464.md)超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵
 English: Rule-based English rendering pending human review.
 
 **说明 / Explanation**
-中文：该函数通过 [D469](functions/items/D469.md)×D464深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自D464超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵 描述 幽灵跳变阻尼函数。
+中文：该函数通过 [D469](functions/items/D469.md)×[D464](functions/items/D464.md)深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自[D464](functions/items/D464.md)超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵 描述 幽灵跳变阻尼函数。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `F_{D470}`
 - 定义域 / Domain: `X_{D470}`
 - 值域 / Codomain: `Y_{D470}`
-- 数学表达 / Expression: `F_{D470}(x) := D469×D464深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自D464超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵`
+- 数学表达 / Expression: `F_{D470}(x) := [D469](functions/items/D469.md)×[D464](functions/items/D464.md)深入碰撞——振荡优化的阻尼系数γ在优化周期T = t_ghost_diss处不连续跳变： $$\gamma = \begin{cases} \gamma_{dirty} & T < t_{ghost\_diss} \\ \gamma_{clean} & T > t_{ghost\_diss} \end{cases}$$ γ_dirty < γ_clean。跳变来自[D464](functions/items/D464.md)超指数衰减——幽灵在t_ghost_diss前几乎不衰减，之后突然消失。 关键推论： - 存在最优优化周期T* = t_ghost_diss——刚好等幽灵消失就启动下一轮 - T < t_ghost_diss：旧幽灵干扰→γ小→改善慢→浪费能量对抗幽灵`
 - 有效条件 / Validity: `J_n^+(F_{D470})=1 ∧ J_n^-(F_{D470})=0`
 - 推导类型 / Derivation type: `pure_math_function_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D469`, `D470`
+- 依赖 / Depends on: [D469](functions/items/D469.md), [D470](functions/items/D470.md)
 - 推导步骤 / Steps:
   - 1. Define the local state space X_{D470} and codomain Y_{D470}.
   - 2. Normalize the source expression as F_{D470}: X_{D470}->Y_{D470}.
@@ -20645,7 +20645,7 @@ English: Rule-based English rendering pending human review.
 **推导补充 / Derivation Supplement**
 - 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D469`, `D470`
+- 依赖 / Depends on: [D469](functions/items/D469.md), [D470](functions/items/D470.md)
 - 过程 / Process:
   - Extract referenced functions or meta-rules from the formula text.
   - Compose the current expression from those upstream objects and the source row's stated operator.

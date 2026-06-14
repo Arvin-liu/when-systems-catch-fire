@@ -989,7 +989,7 @@ def render_index(items: list[dict[str, Any]]) -> str:
     for item in items:
         formal = item["mathematical_formalization"]
         lines.append(
-            f"| [{item['id']}]({item['page'].replace('docs/zh/answers/', '')}) | "
+            f"| [{item['id']}](../effects/items/{item['id']}.md) | "
             f"{item['title']['zh']} / {item['title']['en']} | {item['discipline']} | "
             f"{item['status']} | `{formal['math_expression']}` |"
         )
@@ -1003,7 +1003,10 @@ def render_index(items: list[dict[str, Any]]) -> str:
 def render_machine_index(items: list[dict[str, Any]]) -> str:
     lines = ["# 新效应机器索引 / New Effects Machine Index", ""]
     for item in items:
-        lines.append(f"- {item['id']} | {item['title']['zh']} | {item['discipline']} | {item['status']}")
+        lines.append(
+            f"- [{item['id']}](../../docs/zh/effects/items/{item['id']}.md) | "
+            f"{item['title']['zh']} | {item['discipline']} | {item['status']}"
+        )
     lines.append("")
     return "\n".join(lines)
 

@@ -638,7 +638,10 @@ def render_answer_index(answers: list[dict], category_map: list[dict]) -> str:
 def render_answer_index_md(answers: list[dict]) -> str:
     lines = ["# 新答案索引 / New Answers Index", ""]
     for item in answers:
-        lines.append(f"- {item['id']} | {item['title']['zh']} | {item['status']} | {item['academic_novelty']['status']}")
+        lines.append(
+            f"- [{item['id']}](../../docs/zh/answers/items/{item['id']}.md) | "
+            f"{item['title']['zh']} | {item['status']} | {item['academic_novelty']['status']}"
+        )
     lines.append("")
     return "\n".join(lines)
 

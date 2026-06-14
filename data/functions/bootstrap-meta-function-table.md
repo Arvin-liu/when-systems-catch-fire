@@ -1,7 +1,7 @@
 # 正反双通道自举元结构 / Forward-Reverse Bootstrap Meta-Structure
 
-MF-0000 展开为正向判定、反向判定、互斥判定、嵌套迭代与不动点收敛五个抽象算子。
-MF-0000 expands into five abstract operators: forward judgment, reverse judgment, exclusivity judgment, nested iteration, and fixed-point convergence.
+[MF-0000](../../docs/zh/functions/meta/MF-0000.md) 展开为正向判定、反向判定、互斥判定、嵌套迭代与不动点收敛五个抽象算子。
+[MF-0000](../../docs/zh/functions/meta/MF-0000.md) expands into five abstract operators: forward judgment, reverse judgment, exclusivity judgment, nested iteration, and fixed-point convergence.
 
 | 编号 / ID | 名称 / Title | 数学表达 / Expression | 作用 / Role | 状态 / Status |
 | --- | --- | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-14 08:44 UTC
 **Model:** agnes/agnes/2.0-flash
-**Scope:** 36 EFF leads (EFF-0001 to EFF-0036)
+**Scope:** 36 EFF leads ([EFF-0001](../../docs/zh/effects/items/EFF-0001.md) to [EFF-0036](../../docs/zh/effects/items/EFF-0036.md))
 **Nature:** classification audit only — no migration executed
 
 ## Summary
@@ -51,7 +51,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ## Detailed Per-Item Review
 
-### EFF-0001: 状态时间重写效应
+### [EFF-0001](../../docs/zh/effects/items/EFF-0001.md): 状态时间重写效应
 
 - **Title EN:** State-Time Rewrite Effect
 - **Status:** lead
@@ -69,7 +69,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0002: 代际逃逸死锁效应
+### [EFF-0002](../../docs/zh/effects/items/EFF-0002.md): 代际逃逸死锁效应
 
 - **Title EN:** Generational Deadlock-Escape Effect
 - **Status:** lead
@@ -87,7 +87,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0003: 维度坐标化边界效应
+### [EFF-0003](../../docs/zh/effects/items/EFF-0003.md): 维度坐标化边界效应
 
 - **Title EN:** Dimensional Coordinate Boundary Effect
 - **Status:** lead
@@ -105,7 +105,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0004: 有限观察者全知不可能效应
+### [EFF-0004](../../docs/zh/effects/items/EFF-0004.md): 有限观察者全知不可能效应
 
 - **Title EN:** Finite Observer Omniscience Impossibility Effect
 - **Status:** lead
@@ -123,7 +123,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0005: 上下文饱和重置效应
+### [EFF-0005](../../docs/zh/effects/items/EFF-0005.md): 上下文饱和重置效应
 
 - **Title EN:** Context Saturation Reset Effect
 - **Status:** lead
@@ -141,7 +141,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0006: 判断阈值坍缩效应
+### [EFF-0006](../../docs/zh/effects/items/EFF-0006.md): 判断阈值坍缩效应
 
 - **Title EN:** Judgment Threshold Collapse Effect
 - **Status:** lead
@@ -159,7 +159,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0007: 路径依赖分化效应
+### [EFF-0007](../../docs/zh/effects/items/EFF-0007.md): 路径依赖分化效应
 
 - **Title EN:** Path-Dependent Differentiation Effect
 - **Status:** lead
@@ -177,7 +177,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0008: 负期望回本陷阱效应
+### [EFF-0008](../../docs/zh/effects/items/EFF-0008.md): 负期望回本陷阱效应
 
 - **Title EN:** Negative-Expectation Recovery Trap Effect
 - **Status:** lead
@@ -195,7 +195,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0009: 外显信号调制效应
+### [EFF-0009](../../docs/zh/effects/items/EFF-0009.md): 外显信号调制效应
 
 - **Title EN:** External Signal Modulation Effect
 - **Status:** lead
@@ -213,7 +213,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0010: 信念先验驱动控制效应
+### [EFF-0010](../../docs/zh/effects/items/EFF-0010.md): 信念先验驱动控制效应
 
 - **Title EN:** Belief-Prior Control Effect
 - **Status:** lead
@@ -231,7 +231,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0011: 跨域相互作用同构效应
+### [EFF-0011](../../docs/zh/effects/items/EFF-0011.md): 跨域相互作用同构效应
 
 - **Title EN:** Cross-Domain Interaction Homomorphism Effect
 - **Status:** lead
@@ -249,7 +249,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0012: 低成本后台直觉效应
+### [EFF-0012](../../docs/zh/effects/items/EFF-0012.md): 低成本后台直觉效应
 
 - **Title EN:** Low-Cost Background Intuition Effect
 - **Status:** lead
@@ -267,7 +267,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0013: 睡眠清除门控效应
+### [EFF-0013](../../docs/zh/effects/items/EFF-0013.md): 睡眠清除门控效应
 
 - **Title EN:** Sleep Clearance Gate Effect
 - **Status:** lead
@@ -285,7 +285,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0014: 小群体资源不易感效应
+### [EFF-0014](../../docs/zh/effects/items/EFF-0014.md): 小群体资源不易感效应
 
 - **Title EN:** Small-Group Resource Low-Susceptibility Effect
 - **Status:** lead
@@ -303,7 +303,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0015: 炎症反馈报警效应
+### [EFF-0015](../../docs/zh/effects/items/EFF-0015.md): 炎症反馈报警效应
 
 - **Title EN:** Inflammation Feedback Alarm Effect
 - **Status:** lead
@@ -321,7 +321,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0016: 气液剪切成泡效应
+### [EFF-0016](../../docs/zh/effects/items/EFF-0016.md): 气液剪切成泡效应
 
 - **Title EN:** Gas-Liquid Shear Foaming Effect
 - **Status:** lead
@@ -339,7 +339,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0017: 烹饪参数窗口效应
+### [EFF-0017](../../docs/zh/effects/items/EFF-0017.md): 烹饪参数窗口效应
 
 - **Title EN:** Cooking Parameter Window Effect
 - **Status:** lead
@@ -357,7 +357,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0018: 表面活性降能效应
+### [EFF-0018](../../docs/zh/effects/items/EFF-0018.md): 表面活性降能效应
 
 - **Title EN:** Surfactant Energy-Barrier Reduction Effect
 - **Status:** lead
@@ -375,7 +375,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0019: 驱动状态耗散效应
+### [EFF-0019](../../docs/zh/effects/items/EFF-0019.md): 驱动状态耗散效应
 
 - **Title EN:** Drive-State Dissipation Effect
 - **Status:** lead
@@ -393,7 +393,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0020: 动态不稳定稳定化效应
+### [EFF-0020](../../docs/zh/effects/items/EFF-0020.md): 动态不稳定稳定化效应
 
 - **Title EN:** Dynamic Instability Stabilization Effect
 - **Status:** lead
@@ -411,7 +411,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0021: 自维持坍缩边界效应
+### [EFF-0021](../../docs/zh/effects/items/EFF-0021.md): 自维持坍缩边界效应
 
 - **Title EN:** Self-Maintenance Collapse Boundary Effect
 - **Status:** lead
@@ -429,7 +429,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0022: 自举条件敏感效应
+### [EFF-0022](../../docs/zh/effects/items/EFF-0022.md): 自举条件敏感效应
 
 - **Title EN:** Bootstrap Condition Sensitivity Effect
 - **Status:** lead
@@ -447,7 +447,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0023: 透明介质信息通道效应
+### [EFF-0023](../../docs/zh/effects/items/EFF-0023.md): 透明介质信息通道效应
 
 - **Title EN:** Transparent-Medium Information Channel Effect
 - **Status:** lead
@@ -465,7 +465,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0024: 商业单资源竞争效应
+### [EFF-0024](../../docs/zh/effects/items/EFF-0024.md): 商业单资源竞争效应
 
 - **Title EN:** Single-Resource Business Competition Effect
 - **Status:** lead
@@ -483,7 +483,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0025: 偏好-愉悦共同势函数效应
+### [EFF-0025](../../docs/zh/effects/items/EFF-0025.md): 偏好-愉悦共同势函数效应
 
 - **Title EN:** Preference-Pleasure Common Potential Effect
 - **Status:** lead
@@ -501,7 +501,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0026: 内源输出再输入污染效应
+### [EFF-0026](../../docs/zh/effects/items/EFF-0026.md): 内源输出再输入污染效应
 
 - **Title EN:** Endogenous Output Reinput Contamination Effect
 - **Status:** lead
@@ -519,7 +519,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0027: 主动下一代生命边界效应
+### [EFF-0027](../../docs/zh/effects/items/EFF-0027.md): 主动下一代生命边界效应
 
 - **Title EN:** Active Next-Generation Life Boundary Effect
 - **Status:** lead
@@ -537,7 +537,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0028: 睡眠修复窗口效应
+### [EFF-0028](../../docs/zh/effects/items/EFF-0028.md): 睡眠修复窗口效应
 
 - **Title EN:** Sleep Repair Window Effect
 - **Status:** lead
@@ -555,7 +555,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0029: 心率累积耗损效应
+### [EFF-0029](../../docs/zh/effects/items/EFF-0029.md): 心率累积耗损效应
 
 - **Title EN:** Heart-Rate Cumulative Load Effect
 - **Status:** lead
@@ -573,7 +573,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0030: 皮屑屏障-微生态失配效应
+### [EFF-0030](../../docs/zh/effects/items/EFF-0030.md): 皮屑屏障-微生态失配效应
 
 - **Title EN:** Dandruff Barrier-Microbiome Mismatch Effect
 - **Status:** lead
@@ -591,7 +591,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0031: 免疫-感染阈值效应
+### [EFF-0031](../../docs/zh/effects/items/EFF-0031.md): 免疫-感染阈值效应
 
 - **Title EN:** Immune-Infection Threshold Effect
 - **Status:** lead
@@ -609,7 +609,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0032: 神经自举唤醒效应
+### [EFF-0032](../../docs/zh/effects/items/EFF-0032.md): 神经自举唤醒效应
 
 - **Title EN:** Neural Bootstrap Arousal Effect
 - **Status:** lead
@@ -627,7 +627,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0033: 信息自聚合场效应
+### [EFF-0033](../../docs/zh/effects/items/EFF-0033.md): 信息自聚合场效应
 
 - **Title EN:** Information Self-Aggregation Field Effect
 - **Status:** lead
@@ -645,7 +645,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0034: 短视频奖励压缩效应
+### [EFF-0034](../../docs/zh/effects/items/EFF-0034.md): 短视频奖励压缩效应
 
 - **Title EN:** Short-Video Reward Compression Effect
 - **Status:** lead
@@ -663,7 +663,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0035: 梦境离线生成整合效应
+### [EFF-0035](../../docs/zh/effects/items/EFF-0035.md): 梦境离线生成整合效应
 
 - **Title EN:** Dream Offline Generative Consolidation Effect
 - **Status:** lead
@@ -681,7 +681,7 @@ EFF 编号不等于数学意义上的效应。本轮没有默认接受任何 EFF
 
 ---
 
-### EFF-0036: 形式系统外推边界效应
+### [EFF-0036](../../docs/zh/effects/items/EFF-0036.md): 形式系统外推边界效应
 
 - **Title EN:** Formal-System Projection Boundary Effect
 - **Status:** lead

@@ -3854,7 +3854,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0108}(s_{C-0108})>0 ∧ J_n^+(C_{C-0108})=1 ∧ J_n^-(C_{C-0108})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D26`
+- 依赖 / Depends on: [D26](docs/zh/functions/items/D26.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0108}∈S_{C-0108}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0108})=1].
@@ -3925,7 +3925,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0110}(s_{C-0110})>0 ∧ J_n^+(C_{C-0110})=1 ∧ J_n^-(C_{C-0110})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D28`
+- 依赖 / Depends on: [D28](docs/zh/functions/items/D28.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0110}∈S_{C-0110}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0110})=1].
@@ -3960,7 +3960,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0111}(s_{C-0111})>0 ∧ J_n^+(C_{C-0111})=1 ∧ J_n^-(C_{C-0111})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D29`
+- 依赖 / Depends on: [D29](docs/zh/functions/items/D29.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0111}∈S_{C-0111}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0111})=1].
@@ -3995,7 +3995,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0112}(s_{C-0112})>0 ∧ J_n^+(C_{C-0112})=1 ∧ J_n^-(C_{C-0112})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D30`
+- 依赖 / Depends on: [D30](docs/zh/functions/items/D30.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0112}∈S_{C-0112}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0112})=1].
@@ -4066,7 +4066,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0114}(s_{C-0114})>0 ∧ J_n^+(C_{C-0114})=1 ∧ J_n^-(C_{C-0114})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D32`
+- 依赖 / Depends on: [D32](docs/zh/functions/items/D32.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0114}∈S_{C-0114}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0114})=1].
@@ -4101,7 +4101,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0115}(s_{C-0115})>0 ∧ J_n^+(C_{C-0115})=1 ∧ J_n^-(C_{C-0115})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D33`
+- 依赖 / Depends on: [D33](docs/zh/functions/items/D33.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0115}∈S_{C-0115}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0115})=1].
@@ -4172,7 +4172,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0117}(s_{C-0117})>0 ∧ J_n^+(C_{C-0117})=1 ∧ J_n^-(C_{C-0117})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D35`
+- 依赖 / Depends on: [D35](docs/zh/functions/items/D35.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0117}∈S_{C-0117}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0117})=1].
@@ -4207,7 +4207,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0118}(s_{C-0118})>0 ∧ J_n^+(C_{C-0118})=1 ∧ J_n^-(C_{C-0118})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D36`
+- 依赖 / Depends on: [D36](docs/zh/functions/items/D36.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0118}∈S_{C-0118}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0118})=1].
@@ -4242,7 +4242,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0119}(s_{C-0119})>0 ∧ J_n^+(C_{C-0119})=1 ∧ J_n^-(C_{C-0119})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D37`
+- 依赖 / Depends on: [D37](docs/zh/functions/items/D37.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0119}∈S_{C-0119}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0119})=1].
@@ -4313,7 +4313,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0121}(s_{C-0121})>0 ∧ J_n^+(C_{C-0121})=1 ∧ J_n^-(C_{C-0121})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D12`
+- 依赖 / Depends on: [D12](docs/zh/functions/items/D12.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0121}∈S_{C-0121}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0121})=1].
@@ -4348,7 +4348,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0122}(s_{C-0122})>0 ∧ J_n^+(C_{C-0122})=1 ∧ J_n^-(C_{C-0122})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D38`
+- 依赖 / Depends on: [D38](docs/zh/functions/items/D38.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0122}∈S_{C-0122}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0122})=1].
@@ -4419,7 +4419,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0124}(s_{C-0124})>0 ∧ J_n^+(C_{C-0124})=1 ∧ J_n^-(C_{C-0124})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D40`
+- 依赖 / Depends on: [D40](docs/zh/functions/items/D40.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0124}∈S_{C-0124}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0124})=1].
@@ -4490,7 +4490,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0126}(s_{C-0126})>0 ∧ J_n^+(C_{C-0126})=1 ∧ J_n^-(C_{C-0126})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D13`
+- 依赖 / Depends on: [D13](docs/zh/functions/items/D13.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0126}∈S_{C-0126}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0126})=1].
@@ -4704,7 +4704,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0132}(s_{C-0132})>0 ∧ J_n^+(C_{C-0132})=1 ∧ J_n^-(C_{C-0132})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D44`
+- 依赖 / Depends on: [D44](docs/zh/functions/items/D44.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0132}∈S_{C-0132}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0132})=1].
@@ -4739,7 +4739,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0133}(s_{C-0133})>0 ∧ J_n^+(C_{C-0133})=1 ∧ J_n^-(C_{C-0133})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D45`
+- 依赖 / Depends on: [D45](docs/zh/functions/items/D45.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0133}∈S_{C-0133}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0133})=1].
@@ -4774,7 +4774,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0134}(s_{C-0134})>0 ∧ J_n^+(C_{C-0134})=1 ∧ J_n^-(C_{C-0134})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D46`
+- 依赖 / Depends on: [D46](docs/zh/functions/items/D46.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0134}∈S_{C-0134}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0134})=1].
@@ -4845,7 +4845,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0136}(s_{C-0136})>0 ∧ J_n^+(C_{C-0136})=1 ∧ J_n^-(C_{C-0136})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D48`
+- 依赖 / Depends on: [D48](docs/zh/functions/items/D48.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0136}∈S_{C-0136}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0136})=1].
@@ -4952,7 +4952,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0139}(s_{C-0139})>0 ∧ J_n^+(C_{C-0139})=1 ∧ J_n^-(C_{C-0139})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D51`
+- 依赖 / Depends on: [D51](docs/zh/functions/items/D51.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0139}∈S_{C-0139}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0139})=1].
@@ -5023,7 +5023,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0141}(s_{C-0141})>0 ∧ J_n^+(C_{C-0141})=1 ∧ J_n^-(C_{C-0141})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D55`
+- 依赖 / Depends on: [D55](docs/zh/functions/items/D55.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0141}∈S_{C-0141}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0141})=1].
@@ -5094,7 +5094,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0143}(s_{C-0143})>0 ∧ J_n^+(C_{C-0143})=1 ∧ J_n^-(C_{C-0143})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `A7`, `D84`
+- 依赖 / Depends on: `A7`, [D84](docs/zh/functions/items/D84.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0143}∈S_{C-0143}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0143})=1].
@@ -5238,7 +5238,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0147}(s_{C-0147})>0 ∧ J_n^+(C_{C-0147})=1 ∧ J_n^-(C_{C-0147})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `A7`, `D13`
+- 依赖 / Depends on: `A7`, [D13](docs/zh/functions/items/D13.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0147}∈S_{C-0147}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0147})=1].
@@ -5274,7 +5274,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0148}(s_{C-0148})>0 ∧ J_n^+(C_{C-0148})=1 ∧ J_n^-(C_{C-0148})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `A5`, `D54`
+- 依赖 / Depends on: `A5`, [D54](docs/zh/functions/items/D54.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0148}∈S_{C-0148}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0148})=1].
@@ -5310,7 +5310,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0149}(s_{C-0149})>0 ∧ J_n^+(C_{C-0149})=1 ∧ J_n^-(C_{C-0149})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D50`, `A9`
+- 依赖 / Depends on: [D50](docs/zh/functions/items/D50.md), `A9`
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0149}∈S_{C-0149}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0149})=1].
@@ -5366,11 +5366,11 @@ English: Rule-based English rendering pending human review.
 ### [#151｜默里实验·低自尊伴侣互动](docs/zh/cases/items/C-0151.md)
 
 **案例内容 / Case Content**
-中文：案例说明：默里实验·低自尊伴侣互动 → D57解读偏置函数验证
+中文：案例说明：默里实验·低自尊伴侣互动 → [D57](docs/zh/functions/items/D57.md)解读偏置函数验证
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：默里实验·低自尊伴侣互动 → D57解读偏置函数验证
+中文：默里实验·低自尊伴侣互动 → [D57](docs/zh/functions/items/D57.md)解读偏置函数验证
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -5381,7 +5381,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0151}(s_{C-0151})>0 ∧ J_n^+(C_{C-0151})=1 ∧ J_n^-(C_{C-0151})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D57`
+- 依赖 / Depends on: [D57](docs/zh/functions/items/D57.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0151}∈S_{C-0151}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0151})=1].
@@ -5401,11 +5401,11 @@ English: Rule-based English rendering pending human review.
 ### [#152｜罗森塔尔"潜力生"标签实验](docs/zh/cases/items/C-0152.md)
 
 **案例内容 / Case Content**
-中文：案例说明：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证
+中文：案例说明：罗森塔尔"潜力生"标签实验 → [D59](docs/zh/functions/items/D59.md)过渡期窗口衰减验证
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证
+中文：罗森塔尔"潜力生"标签实验 → [D59](docs/zh/functions/items/D59.md)过渡期窗口衰减验证
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -5416,7 +5416,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0152}(s_{C-0152})>0 ∧ J_n^+(C_{C-0152})=1 ∧ J_n^-(C_{C-0152})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D59`
+- 依赖 / Depends on: [D59](docs/zh/functions/items/D59.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0152}∈S_{C-0152}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0152})=1].
@@ -5436,11 +5436,11 @@ English: Rule-based English rendering pending human review.
 ### [#153｜沃尔顿1小时归属感练习](docs/zh/cases/items/C-0153.md)
 
 **案例内容 / Case Content**
-中文：案例说明：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）
+中文：案例说明：沃尔顿1小时归属感练习 → [D60](docs/zh/functions/items/D60.md)智慧干预效力验证（新生有效/大三无效）
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）
+中文：沃尔顿1小时归属感练习 → [D60](docs/zh/functions/items/D60.md)智慧干预效力验证（新生有效/大三无效）
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -5451,7 +5451,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0153}(s_{C-0153})>0 ∧ J_n^+(C_{C-0153})=1 ∧ J_n^-(C_{C-0153})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D60`
+- 依赖 / Depends on: [D60](docs/zh/functions/items/D60.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0153}∈S_{C-0153}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0153})=1].
@@ -5471,11 +5471,11 @@ English: Rule-based English rendering pending human review.
 ### [#154｜沃尔顿21分钟拯救婚姻](docs/zh/cases/items/C-0154.md)
 
 **案例内容 / Case Content**
-中文：案例说明：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证
+中文：案例说明：沃尔顿21分钟拯救婚姻 → [D60](docs/zh/functions/items/D60.md)的η_delivery因子验证
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证
+中文：沃尔顿21分钟拯救婚姻 → [D60](docs/zh/functions/items/D60.md)的η_delivery因子验证
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -5486,7 +5486,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0154}(s_{C-0154})>0 ∧ J_n^+(C_{C-0154})=1 ∧ J_n^-(C_{C-0154})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D60`
+- 依赖 / Depends on: [D60](docs/zh/functions/items/D60.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0154}∈S_{C-0154}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0154})=1].
@@ -5506,11 +5506,11 @@ English: Rule-based English rendering pending human review.
 ### [#155｜沃尔顿10年追踪](docs/zh/cases/items/C-0155.md)
 
 **案例内容 / Case Content**
-中文：案例说明：沃尔顿10年追踪 → D61向上螺旋自维持验证
+中文：案例说明：沃尔顿10年追踪 → [D61](docs/zh/functions/items/D61.md)向上螺旋自维持验证
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：沃尔顿10年追踪 → D61向上螺旋自维持验证
+中文：沃尔顿10年追踪 → [D61](docs/zh/functions/items/D61.md)向上螺旋自维持验证
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -5521,7 +5521,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0155}(s_{C-0155})>0 ∧ J_n^+(C_{C-0155})=1 ∧ J_n^-(C_{C-0155})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D61`
+- 依赖 / Depends on: [D61](docs/zh/functions/items/D61.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0155}∈S_{C-0155}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0155})=1].
@@ -5556,7 +5556,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0156}(s_{C-0156})>0 ∧ J_n^+(C_{C-0156})=1 ∧ J_n^-(C_{C-0156})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D62`
+- 依赖 / Depends on: [D62](docs/zh/functions/items/D62.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0156}∈S_{C-0156}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0156})=1].
@@ -5591,7 +5591,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0157}(s_{C-0157})>0 ∧ J_n^+(C_{C-0157})=1 ∧ J_n^-(C_{C-0157})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D63`
+- 依赖 / Depends on: [D63](docs/zh/functions/items/D63.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0157}∈S_{C-0157}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0157})=1].
@@ -5626,7 +5626,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0158}(s_{C-0158})>0 ∧ J_n^+(C_{C-0158})=1 ∧ J_n^-(C_{C-0158})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D64`
+- 依赖 / Depends on: [D64](docs/zh/functions/items/D64.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0158}∈S_{C-0158}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0158})=1].
@@ -5661,7 +5661,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0159}(s_{C-0159})>0 ∧ J_n^+(C_{C-0159})=1 ∧ J_n^-(C_{C-0159})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D65`
+- 依赖 / Depends on: [D65](docs/zh/functions/items/D65.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0159}∈S_{C-0159}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0159})=1].
@@ -5696,7 +5696,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0160}(s_{C-0160})>0 ∧ J_n^+(C_{C-0160})=1 ∧ J_n^-(C_{C-0160})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D66`
+- 依赖 / Depends on: [D66](docs/zh/functions/items/D66.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0160}∈S_{C-0160}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0160})=1].
@@ -5731,7 +5731,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0161}(s_{C-0161})>0 ∧ J_n^+(C_{C-0161})=1 ∧ J_n^-(C_{C-0161})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D67`
+- 依赖 / Depends on: [D67](docs/zh/functions/items/D67.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0161}∈S_{C-0161}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0161})=1].
@@ -5766,7 +5766,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0162}(s_{C-0162})>0 ∧ J_n^+(C_{C-0162})=1 ∧ J_n^-(C_{C-0162})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `A8`, `D62`
+- 依赖 / Depends on: `A8`, [D62](docs/zh/functions/items/D62.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0162}∈S_{C-0162}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0162})=1].
@@ -5787,11 +5787,11 @@ English: Rule-based English rendering pending human review.
 ### [#163｜定投P_sustain全局最大值（验证D34） / 定投P_sustain全局最大值(验证D34)](docs/zh/cases/items/C-0163.md)
 
 **案例内容 / Case Content**
-中文：案例说明：定投P_sustain全局最大值（验证D34）
+中文：案例说明：定投P_sustain全局最大值（验证[D34](docs/zh/functions/items/D34.md)）
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：定投P_sustain全局最大值（验证D34）
+中文：定投P_sustain全局最大值（验证[D34](docs/zh/functions/items/D34.md)）
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -5802,7 +5802,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0163}(s_{C-0163})>0 ∧ J_n^+(C_{C-0163})=1 ∧ J_n^-(C_{C-0163})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D34`
+- 依赖 / Depends on: [D34](docs/zh/functions/items/D34.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0163}∈S_{C-0163}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0163})=1].
@@ -5822,11 +5822,11 @@ English: Rule-based English rendering pending human review.
 ### [#164｜AI共震策略全失效（验证D66）](docs/zh/cases/items/C-0164.md)
 
 **案例内容 / Case Content**
-中文：案例说明：AI共震策略全失效（验证D66）
+中文：案例说明：AI共震策略全失效（验证[D66](docs/zh/functions/items/D66.md)）
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：AI共震策略全失效（验证D66）
+中文：AI共震策略全失效（验证[D66](docs/zh/functions/items/D66.md)）
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -5837,7 +5837,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0164}(s_{C-0164})>0 ∧ J_n^+(C_{C-0164})=1 ∧ J_n^-(C_{C-0164})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D66`
+- 依赖 / Depends on: [D66](docs/zh/functions/items/D66.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0164}∈S_{C-0164}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0164})=1].
@@ -5857,11 +5857,11 @@ English: Rule-based English rendering pending human review.
 ### [#165｜炒股带宽溢出全领域衰减（验证D63跨域溢出）](docs/zh/cases/items/C-0165.md)
 
 **案例内容 / Case Content**
-中文：案例说明：炒股带宽溢出全领域衰减（验证D63跨域溢出）
+中文：案例说明：炒股带宽溢出全领域衰减（验证[D63](docs/zh/functions/items/D63.md)跨域溢出）
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：炒股带宽溢出全领域衰减（验证D63跨域溢出）
+中文：炒股带宽溢出全领域衰减（验证[D63](docs/zh/functions/items/D63.md)跨域溢出）
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -5872,7 +5872,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0165}(s_{C-0165})>0 ∧ J_n^+(C_{C-0165})=1 ∧ J_n^-(C_{C-0165})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D63`
+- 依赖 / Depends on: [D63](docs/zh/functions/items/D63.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0165}∈S_{C-0165}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0165})=1].
@@ -5892,11 +5892,11 @@ English: Rule-based English rendering pending human review.
 ### [#166｜小资金恐惧锁定向下螺旋（验证D67）](docs/zh/cases/items/C-0166.md)
 
 **案例内容 / Case Content**
-中文：案例说明：小资金恐惧锁定向下螺旋（验证D67）
+中文：案例说明：小资金恐惧锁定向下螺旋（验证[D67](docs/zh/functions/items/D67.md)）
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：小资金恐惧锁定向下螺旋（验证D67）
+中文：小资金恐惧锁定向下螺旋（验证[D67](docs/zh/functions/items/D67.md)）
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -5907,7 +5907,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0166}(s_{C-0166})>0 ∧ J_n^+(C_{C-0166})=1 ∧ J_n^-(C_{C-0166})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D67`
+- 依赖 / Depends on: [D67](docs/zh/functions/items/D67.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0166}∈S_{C-0166}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0166})=1].
@@ -5927,11 +5927,11 @@ English: Rule-based English rendering pending human review.
 ### [#167｜定投=门锁交替律执行（验证D47+D49）](docs/zh/cases/items/C-0167.md)
 
 **案例内容 / Case Content**
-中文：案例说明：定投=门锁交替律执行（验证D47+[D49](docs/zh/functions/items/D49.md)）
+中文：案例说明：定投=门锁交替律执行（验证[D47](docs/zh/functions/items/D47.md)+[D49](docs/zh/functions/items/D49.md)）
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：定投=门锁交替律执行（验证D47+[D49](docs/zh/functions/items/D49.md)）
+中文：定投=门锁交替律执行（验证[D47](docs/zh/functions/items/D47.md)+[D49](docs/zh/functions/items/D49.md)）
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -5942,7 +5942,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0167}(s_{C-0167})>0 ∧ J_n^+(C_{C-0167})=1 ∧ J_n^-(C_{C-0167})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D49`, `D47`
+- 依赖 / Depends on: [D49](docs/zh/functions/items/D49.md), [D47](docs/zh/functions/items/D47.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0167}∈S_{C-0167}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0167})=1].
@@ -5963,11 +5963,11 @@ English: Rule-based English rendering pending human review.
 ### [#168｜H_total放大触发F_collapse（验证D65） / H_total放大触发F_collapse(验证D65)](docs/zh/cases/items/C-0168.md)
 
 **案例内容 / Case Content**
-中文：案例说明：H_total放大触发F_collapse（验证D65）
+中文：案例说明：H_total放大触发F_collapse（验证[D65](docs/zh/functions/items/D65.md)）
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：H_total放大触发F_collapse（验证D65）
+中文：H_total放大触发F_collapse（验证[D65](docs/zh/functions/items/D65.md)）
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -5978,7 +5978,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0168}(s_{C-0168})>0 ∧ J_n^+(C_{C-0168})=1 ∧ J_n^-(C_{C-0168})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D65`
+- 依赖 / Depends on: [D65](docs/zh/functions/items/D65.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0168}∈S_{C-0168}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0168})=1].
@@ -5998,11 +5998,11 @@ English: Rule-based English rendering pending human review.
 ### [#169｜财商乘数四因子结构（验证D65财富域）](docs/zh/cases/items/C-0169.md)
 
 **案例内容 / Case Content**
-中文：案例说明：财商乘数四因子结构（验证D65财富域）
+中文：案例说明：财商乘数四因子结构（验证[D65](docs/zh/functions/items/D65.md)财富域）
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：财商乘数四因子结构（验证D65财富域）
+中文：财商乘数四因子结构（验证[D65](docs/zh/functions/items/D65.md)财富域）
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -6013,7 +6013,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0169}(s_{C-0169})>0 ∧ J_n^+(C_{C-0169})=1 ∧ J_n^-(C_{C-0169})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D65`
+- 依赖 / Depends on: [D65](docs/zh/functions/items/D65.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0169}∈S_{C-0169}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0169})=1].
@@ -6214,7 +6214,7 @@ English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
 中文：[D72](docs/zh/functions/items/D72.md)
-English: D72
+English: [D72](docs/zh/functions/items/D72.md)
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `C_{C-0175}`
@@ -6224,7 +6224,7 @@ English: D72
 - 有效条件 / Validity: `C_{C-0175}(s_{C-0175})>0 ∧ J_n^+(C_{C-0175})=1 ∧ J_n^-(C_{C-0175})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D72`
+- 依赖 / Depends on: [D72](docs/zh/functions/items/D72.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0175}∈S_{C-0175}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0175})=1].
@@ -6246,12 +6246,12 @@ English: D72
 **案例内容 / Case Content**
 中文：案例说明：[D66](docs/zh/functions/items/D66.md)×[D53](docs/zh/functions/items/D53.md)×P×Q²
 关键发现：[D73](docs/zh/functions/items/D73.md)
-English: Case description: D66 x D53 x P x Q²
-Key discovery: D73
+English: Case description: [D66](docs/zh/functions/items/D66.md) x [D53](docs/zh/functions/items/D53.md) x P x Q²
+Key discovery: [D73](docs/zh/functions/items/D73.md)
 
 **它说明了什么 / What It Shows**
 中文：[D73](docs/zh/functions/items/D73.md)
-English: D73
+English: [D73](docs/zh/functions/items/D73.md)
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `C_{C-0176}`
@@ -6261,7 +6261,7 @@ English: D73
 - 有效条件 / Validity: `C_{C-0176}(s_{C-0176})>0 ∧ J_n^+(C_{C-0176})=1 ∧ J_n^-(C_{C-0176})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D66`, `D53`, `D73`
+- 依赖 / Depends on: [D66](docs/zh/functions/items/D66.md), [D53](docs/zh/functions/items/D53.md), [D73](docs/zh/functions/items/D73.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0176}∈S_{C-0176}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0176})=1].
@@ -6289,7 +6289,7 @@ English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
 中文：[D74](docs/zh/functions/items/D74.md)
-English: D74
+English: [D74](docs/zh/functions/items/D74.md)
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `C_{C-0177}`
@@ -6299,7 +6299,7 @@ English: D74
 - 有效条件 / Validity: `C_{C-0177}(s_{C-0177})>0 ∧ J_n^+(C_{C-0177})=1 ∧ J_n^-(C_{C-0177})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D74`, `D73`
+- 依赖 / Depends on: [D74](docs/zh/functions/items/D74.md), [D73](docs/zh/functions/items/D73.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0177}∈S_{C-0177}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0177})=1].
@@ -6326,7 +6326,7 @@ English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
 中文：[D75](docs/zh/functions/items/D75.md)
-English: D75
+English: [D75](docs/zh/functions/items/D75.md)
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `C_{C-0178}`
@@ -6336,7 +6336,7 @@ English: D75
 - 有效条件 / Validity: `C_{C-0178}(s_{C-0178})>0 ∧ J_n^+(C_{C-0178})=1 ∧ J_n^-(C_{C-0178})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D74`, `D75`
+- 依赖 / Depends on: [D74](docs/zh/functions/items/D74.md), [D75](docs/zh/functions/items/D75.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0178}∈S_{C-0178}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0178})=1].
@@ -6363,7 +6363,7 @@ English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
 中文：[D76](docs/zh/functions/items/D76.md)
-English: D76
+English: [D76](docs/zh/functions/items/D76.md)
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `C_{C-0179}`
@@ -6373,7 +6373,7 @@ English: D76
 - 有效条件 / Validity: `C_{C-0179}(s_{C-0179})>0 ∧ J_n^+(C_{C-0179})=1 ∧ J_n^-(C_{C-0179})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `A6`, `D76`
+- 依赖 / Depends on: `A6`, [D76](docs/zh/functions/items/D76.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0179}∈S_{C-0179}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0179})=1].
@@ -6400,7 +6400,7 @@ English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
 中文：[D77](docs/zh/functions/items/D77.md)
-English: D77
+English: [D77](docs/zh/functions/items/D77.md)
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
 - 对象 / Object: `C_{C-0180}`
@@ -6410,7 +6410,7 @@ English: D77
 - 有效条件 / Validity: `C_{C-0180}(s_{C-0180})>0 ∧ J_n^+(C_{C-0180})=1 ∧ J_n^-(C_{C-0180})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `A7`, `D77`
+- 依赖 / Depends on: `A7`, [D77](docs/zh/functions/items/D77.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0180}∈S_{C-0180}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0180})=1].
@@ -8308,7 +8308,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0234}(s_{C-0234})>0 ∧ J_n^+(C_{C-0234})=1 ∧ J_n^-(C_{C-0234})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`, `D107`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md), [D107](docs/zh/functions/items/D107.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0234}∈S_{C-0234}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0234})=1].
@@ -8344,7 +8344,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0235}(s_{C-0235})>0 ∧ J_n^+(C_{C-0235})=1 ∧ J_n^-(C_{C-0235})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`, `D112`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md), [D112](docs/zh/functions/items/D112.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0235}∈S_{C-0235}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0235})=1].
@@ -8380,7 +8380,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0236}(s_{C-0236})>0 ∧ J_n^+(C_{C-0236})=1 ∧ J_n^-(C_{C-0236})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D115`, `A6`
+- 依赖 / Depends on: [D115](docs/zh/functions/items/D115.md), `A6`
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0236}∈S_{C-0236}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0236})=1].
@@ -8416,7 +8416,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0237}(s_{C-0237})>0 ∧ J_n^+(C_{C-0237})=1 ∧ J_n^-(C_{C-0237})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D116`, `T14`
+- 依赖 / Depends on: [D116](docs/zh/functions/items/D116.md), [T14](docs/zh/functions/items/T14.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0237}∈S_{C-0237}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0237})=1].
@@ -8452,7 +8452,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0238}(s_{C-0238})>0 ∧ J_n^+(C_{C-0238})=1 ∧ J_n^-(C_{C-0238})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D115`, `D68`, `D86`
+- 依赖 / Depends on: [D115](docs/zh/functions/items/D115.md), `D68`, [D86](docs/zh/functions/items/D86.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0238}∈S_{C-0238}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0238})=1].
@@ -8489,7 +8489,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0239}(s_{C-0239})>0 ∧ J_n^+(C_{C-0239})=1 ∧ J_n^-(C_{C-0239})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0239}∈S_{C-0239}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0239})=1].
@@ -8524,7 +8524,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0240}(s_{C-0240})>0 ∧ J_n^+(C_{C-0240})=1 ∧ J_n^-(C_{C-0240})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0240}∈S_{C-0240}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0240})=1].
@@ -8559,7 +8559,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0241}(s_{C-0241})>0 ∧ J_n^+(C_{C-0241})=1 ∧ J_n^-(C_{C-0241})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0241}∈S_{C-0241}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0241})=1].
@@ -8594,7 +8594,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0242}(s_{C-0242})>0 ∧ J_n^+(C_{C-0242})=1 ∧ J_n^-(C_{C-0242})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0242}∈S_{C-0242}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0242})=1].
@@ -8629,7 +8629,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0243}(s_{C-0243})>0 ∧ J_n^+(C_{C-0243})=1 ∧ J_n^-(C_{C-0243})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0243}∈S_{C-0243}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0243})=1].
@@ -8664,7 +8664,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0244}(s_{C-0244})>0 ∧ J_n^+(C_{C-0244})=1 ∧ J_n^-(C_{C-0244})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0244}∈S_{C-0244}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0244})=1].
@@ -8699,7 +8699,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0245}(s_{C-0245})>0 ∧ J_n^+(C_{C-0245})=1 ∧ J_n^-(C_{C-0245})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0245}∈S_{C-0245}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0245})=1].
@@ -8734,7 +8734,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0246}(s_{C-0246})>0 ∧ J_n^+(C_{C-0246})=1 ∧ J_n^-(C_{C-0246})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0246}∈S_{C-0246}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0246})=1].
@@ -8769,7 +8769,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0247}(s_{C-0247})>0 ∧ J_n^+(C_{C-0247})=1 ∧ J_n^-(C_{C-0247})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0247}∈S_{C-0247}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0247})=1].
@@ -8804,7 +8804,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0248}(s_{C-0248})>0 ∧ J_n^+(C_{C-0248})=1 ∧ J_n^-(C_{C-0248})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`, `A8`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md), `A8`
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0248}∈S_{C-0248}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0248})=1].
@@ -8840,7 +8840,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0249}(s_{C-0249})>0 ∧ J_n^+(C_{C-0249})=1 ∧ J_n^-(C_{C-0249})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0249}∈S_{C-0249}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0249})=1].
@@ -8875,7 +8875,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0250}(s_{C-0250})>0 ∧ J_n^+(C_{C-0250})=1 ∧ J_n^-(C_{C-0250})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`, `D110`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md), [D110](docs/zh/functions/items/D110.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0250}∈S_{C-0250}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0250})=1].
@@ -8911,7 +8911,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0251}(s_{C-0251})>0 ∧ J_n^+(C_{C-0251})=1 ∧ J_n^-(C_{C-0251})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`, `A3`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md), `A3`
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0251}∈S_{C-0251}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0251})=1].
@@ -8947,7 +8947,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0252}(s_{C-0252})>0 ∧ J_n^+(C_{C-0252})=1 ∧ J_n^-(C_{C-0252})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D115`
+- 依赖 / Depends on: [D115](docs/zh/functions/items/D115.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0252}∈S_{C-0252}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0252})=1].
@@ -8982,7 +8982,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0253}(s_{C-0253})>0 ∧ J_n^+(C_{C-0253})=1 ∧ J_n^-(C_{C-0253})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0253}∈S_{C-0253}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0253})=1].
@@ -9017,7 +9017,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0254}(s_{C-0254})>0 ∧ J_n^+(C_{C-0254})=1 ∧ J_n^-(C_{C-0254})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D116`
+- 依赖 / Depends on: [D116](docs/zh/functions/items/D116.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0254}∈S_{C-0254}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0254})=1].
@@ -9052,7 +9052,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0255}(s_{C-0255})>0 ∧ J_n^+(C_{C-0255})=1 ∧ J_n^-(C_{C-0255})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D117`, `D121`
+- 依赖 / Depends on: [D117](docs/zh/functions/items/D117.md), [D121](docs/zh/functions/items/D121.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0255}∈S_{C-0255}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0255})=1].
@@ -9088,7 +9088,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0256}(s_{C-0256})>0 ∧ J_n^+(C_{C-0256})=1 ∧ J_n^-(C_{C-0256})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D118`
+- 依赖 / Depends on: [D118](docs/zh/functions/items/D118.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0256}∈S_{C-0256}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0256})=1].
@@ -9123,7 +9123,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0257}(s_{C-0257})>0 ∧ J_n^+(C_{C-0257})=1 ∧ J_n^-(C_{C-0257})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D119`
+- 依赖 / Depends on: [D119](docs/zh/functions/items/D119.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0257}∈S_{C-0257}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0257})=1].
@@ -9158,7 +9158,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0258}(s_{C-0258})>0 ∧ J_n^+(C_{C-0258})=1 ∧ J_n^-(C_{C-0258})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D120`
+- 依赖 / Depends on: [D120](docs/zh/functions/items/D120.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0258}∈S_{C-0258}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0258})=1].
@@ -9193,7 +9193,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0259}(s_{C-0259})>0 ∧ J_n^+(C_{C-0259})=1 ∧ J_n^-(C_{C-0259})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D121`
+- 依赖 / Depends on: [D121](docs/zh/functions/items/D121.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0259}∈S_{C-0259}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0259})=1].
@@ -9228,7 +9228,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0260}(s_{C-0260})>0 ∧ J_n^+(C_{C-0260})=1 ∧ J_n^-(C_{C-0260})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D122`
+- 依赖 / Depends on: [D122](docs/zh/functions/items/D122.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0260}∈S_{C-0260}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0260})=1].
@@ -9263,7 +9263,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0261}(s_{C-0261})>0 ∧ J_n^+(C_{C-0261})=1 ∧ J_n^-(C_{C-0261})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D123`
+- 依赖 / Depends on: [D123](docs/zh/functions/items/D123.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0261}∈S_{C-0261}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0261})=1].
@@ -9298,7 +9298,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0262}(s_{C-0262})>0 ∧ J_n^+(C_{C-0262})=1 ∧ J_n^-(C_{C-0262})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D123`
+- 依赖 / Depends on: [D123](docs/zh/functions/items/D123.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0262}∈S_{C-0262}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0262})=1].
@@ -9333,7 +9333,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0263}(s_{C-0263})>0 ∧ J_n^+(C_{C-0263})=1 ∧ J_n^-(C_{C-0263})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D123`
+- 依赖 / Depends on: [D123](docs/zh/functions/items/D123.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0263}∈S_{C-0263}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0263})=1].
@@ -9368,7 +9368,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0264}(s_{C-0264})>0 ∧ J_n^+(C_{C-0264})=1 ∧ J_n^-(C_{C-0264})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D124`
+- 依赖 / Depends on: [D124](docs/zh/functions/items/D124.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0264}∈S_{C-0264}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0264})=1].
@@ -9403,7 +9403,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0265}(s_{C-0265})>0 ∧ J_n^+(C_{C-0265})=1 ∧ J_n^-(C_{C-0265})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D125`
+- 依赖 / Depends on: [D125](docs/zh/functions/items/D125.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0265}∈S_{C-0265}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0265})=1].
@@ -9438,7 +9438,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0266}(s_{C-0266})>0 ∧ J_n^+(C_{C-0266})=1 ∧ J_n^-(C_{C-0266})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D125`
+- 依赖 / Depends on: [D125](docs/zh/functions/items/D125.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0266}∈S_{C-0266}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0266})=1].
@@ -9473,7 +9473,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0267}(s_{C-0267})>0 ∧ J_n^+(C_{C-0267})=1 ∧ J_n^-(C_{C-0267})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D125`, `D126`
+- 依赖 / Depends on: [D125](docs/zh/functions/items/D125.md), [D126](docs/zh/functions/items/D126.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0267}∈S_{C-0267}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0267})=1].
@@ -9509,7 +9509,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0268}(s_{C-0268})>0 ∧ J_n^+(C_{C-0268})=1 ∧ J_n^-(C_{C-0268})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D86`, `D127`
+- 依赖 / Depends on: [D86](docs/zh/functions/items/D86.md), [D127](docs/zh/functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0268}∈S_{C-0268}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0268})=1].
@@ -9545,7 +9545,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0269}(s_{C-0269})>0 ∧ J_n^+(C_{C-0269})=1 ∧ J_n^-(C_{C-0269})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D126`, `D127`
+- 依赖 / Depends on: [D126](docs/zh/functions/items/D126.md), [D127](docs/zh/functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0269}∈S_{C-0269}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0269})=1].
@@ -9581,7 +9581,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0270}(s_{C-0270})>0 ∧ J_n^+(C_{C-0270})=1 ∧ J_n^-(C_{C-0270})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D124`, `D127`
+- 依赖 / Depends on: [D124](docs/zh/functions/items/D124.md), [D127](docs/zh/functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0270}∈S_{C-0270}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0270})=1].
@@ -9617,7 +9617,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0271}(s_{C-0271})>0 ∧ J_n^+(C_{C-0271})=1 ∧ J_n^-(C_{C-0271})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D121`, `D127`
+- 依赖 / Depends on: [D121](docs/zh/functions/items/D121.md), [D127](docs/zh/functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0271}∈S_{C-0271}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0271})=1].
@@ -9653,7 +9653,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0272}(s_{C-0272})>0 ∧ J_n^+(C_{C-0272})=1 ∧ J_n^-(C_{C-0272})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D69`, `D127`
+- 依赖 / Depends on: `D69`, [D127](docs/zh/functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0272}∈S_{C-0272}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0272})=1].
@@ -9689,7 +9689,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0273}(s_{C-0273})>0 ∧ J_n^+(C_{C-0273})=1 ∧ J_n^-(C_{C-0273})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D23`, `D127`
+- 依赖 / Depends on: [D23](docs/zh/functions/items/D23.md), [D127](docs/zh/functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0273}∈S_{C-0273}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0273})=1].
@@ -9725,7 +9725,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0274}(s_{C-0274})>0 ∧ J_n^+(C_{C-0274})=1 ∧ J_n^-(C_{C-0274})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D33`, `D127`
+- 依赖 / Depends on: [D33](docs/zh/functions/items/D33.md), [D127](docs/zh/functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0274}∈S_{C-0274}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0274})=1].
@@ -9761,7 +9761,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0275}(s_{C-0275})>0 ∧ J_n^+(C_{C-0275})=1 ∧ J_n^-(C_{C-0275})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D41`, `D127`
+- 依赖 / Depends on: [D41](docs/zh/functions/items/D41.md), [D127](docs/zh/functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0275}∈S_{C-0275}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0275})=1].
@@ -9786,7 +9786,7 @@ English: Rule-based English rendering pending human review.
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：该案例围绕 +D123深层同构 展开。
+中文：该案例围绕 +[D123](docs/zh/functions/items/D123.md)深层同构 展开。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -9797,7 +9797,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0276}(s_{C-0276})>0 ∧ J_n^+(C_{C-0276})=1 ∧ J_n^-(C_{C-0276})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D127`, `D123`
+- 依赖 / Depends on: [D127](docs/zh/functions/items/D127.md), [D123](docs/zh/functions/items/D123.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0276}∈S_{C-0276}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0276})=1].
@@ -9822,7 +9822,7 @@ English: Rule-based English rendering pending human review.
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：该案例围绕 与D36倒U型同构 展开。
+中文：该案例围绕 与[D36](docs/zh/functions/items/D36.md)倒U型同构 展开。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -9833,7 +9833,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0277}(s_{C-0277})>0 ∧ J_n^+(C_{C-0277})=1 ∧ J_n^-(C_{C-0277})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D123`, `D36`
+- 依赖 / Depends on: [D123](docs/zh/functions/items/D123.md), [D36](docs/zh/functions/items/D36.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0277}∈S_{C-0277}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0277})=1].
@@ -9858,7 +9858,7 @@ English: Rule-based English rendering pending human review.
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：该案例围绕 与D126时间尺度同构 展开。
+中文：该案例围绕 与[D126](docs/zh/functions/items/D126.md)时间尺度同构 展开。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -9869,7 +9869,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0278}(s_{C-0278})>0 ∧ J_n^+(C_{C-0278})=1 ∧ J_n^-(C_{C-0278})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D124`, `D126`
+- 依赖 / Depends on: [D124](docs/zh/functions/items/D124.md), [D126](docs/zh/functions/items/D126.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0278}∈S_{C-0278}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0278})=1].
@@ -9894,7 +9894,7 @@ English: Rule-based English rendering pending human review.
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：该案例围绕 与D62天花板-实际高度 展开。
+中文：该案例围绕 与[D62](docs/zh/functions/items/D62.md)天花板-实际高度 展开。
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -9905,7 +9905,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0279}(s_{C-0279})>0 ∧ J_n^+(C_{C-0279})=1 ∧ J_n^-(C_{C-0279})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D125`, `D62`
+- 依赖 / Depends on: [D125](docs/zh/functions/items/D125.md), [D62](docs/zh/functions/items/D62.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0279}∈S_{C-0279}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0279})=1].
@@ -9941,7 +9941,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0280}(s_{C-0280})>0 ∧ J_n^+(C_{C-0280})=1 ∧ J_n^-(C_{C-0280})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D128`
+- 依赖 / Depends on: [D128](docs/zh/functions/items/D128.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0280}∈S_{C-0280}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0280})=1].
@@ -9976,7 +9976,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0281}(s_{C-0281})>0 ∧ J_n^+(C_{C-0281})=1 ∧ J_n^-(C_{C-0281})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D126`, `D128`
+- 依赖 / Depends on: [D126](docs/zh/functions/items/D126.md), [D128](docs/zh/functions/items/D128.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0281}∈S_{C-0281}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0281})=1].
@@ -10012,7 +10012,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0282}(s_{C-0282})>0 ∧ J_n^+(C_{C-0282})=1 ∧ J_n^-(C_{C-0282})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D121`, `D128`
+- 依赖 / Depends on: [D121](docs/zh/functions/items/D121.md), [D128](docs/zh/functions/items/D128.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0282}∈S_{C-0282}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0282})=1].
@@ -10048,7 +10048,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0283}(s_{C-0283})>0 ∧ J_n^+(C_{C-0283})=1 ∧ J_n^-(C_{C-0283})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D128`
+- 依赖 / Depends on: [D128](docs/zh/functions/items/D128.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0283}∈S_{C-0283}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0283})=1].
@@ -10083,7 +10083,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0284}(s_{C-0284})>0 ∧ J_n^+(C_{C-0284})=1 ∧ J_n^-(C_{C-0284})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D128`, `D127`
+- 依赖 / Depends on: [D128](docs/zh/functions/items/D128.md), [D127](docs/zh/functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0284}∈S_{C-0284}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0284})=1].
@@ -10119,7 +10119,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0285}(s_{C-0285})>0 ∧ J_n^+(C_{C-0285})=1 ∧ J_n^-(C_{C-0285})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D128`, `D126`
+- 依赖 / Depends on: [D128](docs/zh/functions/items/D128.md), [D126](docs/zh/functions/items/D126.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0285}∈S_{C-0285}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0285})=1].
@@ -10155,7 +10155,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0286}(s_{C-0286})>0 ∧ J_n^+(C_{C-0286})=1 ∧ J_n^-(C_{C-0286})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D64`
+- 依赖 / Depends on: [D64](docs/zh/functions/items/D64.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0286}∈S_{C-0286}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0286})=1].
@@ -10190,7 +10190,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0287}(s_{C-0287})>0 ∧ J_n^+(C_{C-0287})=1 ∧ J_n^-(C_{C-0287})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D64`
+- 依赖 / Depends on: [D64](docs/zh/functions/items/D64.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0287}∈S_{C-0287}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0287})=1].
@@ -10225,7 +10225,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0288}(s_{C-0288})>0 ∧ J_n^+(C_{C-0288})=1 ∧ J_n^-(C_{C-0288})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D64`
+- 依赖 / Depends on: [D64](docs/zh/functions/items/D64.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0288}∈S_{C-0288}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0288})=1].
@@ -10260,7 +10260,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0289}(s_{C-0289})>0 ∧ J_n^+(C_{C-0289})=1 ∧ J_n^-(C_{C-0289})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D65`
+- 依赖 / Depends on: [D65](docs/zh/functions/items/D65.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0289}∈S_{C-0289}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0289})=1].
@@ -10280,11 +10280,11 @@ English: Rule-based English rendering pending human review.
 ### [#290｜D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现 / D121实现触发分化 - rcross>0 -> α↑ -> α/β趋近1 -> 不稳定区间出现 -> 部分AI被推向ρ* -> 调度AI涌现](docs/zh/cases/items/C-0290.md)
 
 **案例内容 / Case Content**
-中文：案例说明：D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数：[D65](docs/zh/functions/items/D65.md)
+中文：案例说明：[D121](docs/zh/functions/items/D121.md)实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数：[D65](docs/zh/functions/items/D65.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数：[D65](docs/zh/functions/items/D65.md)
+中文：[D121](docs/zh/functions/items/D121.md)实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数：[D65](docs/zh/functions/items/D65.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10295,7 +10295,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0290}(s_{C-0290})>0 ∧ J_n^+(C_{C-0290})=1 ∧ J_n^-(C_{C-0290})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D65`
+- 依赖 / Depends on: [D65](docs/zh/functions/items/D65.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0290}∈S_{C-0290}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0290})=1].
@@ -10330,7 +10330,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0291}(s_{C-0291})>0 ∧ J_n^+(C_{C-0291})=1 ∧ J_n^-(C_{C-0291})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D66`
+- 依赖 / Depends on: [D66](docs/zh/functions/items/D66.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0291}∈S_{C-0291}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0291})=1].
@@ -10365,7 +10365,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0292}(s_{C-0292})>0 ∧ J_n^+(C_{C-0292})=1 ∧ J_n^-(C_{C-0292})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D67`
+- 依赖 / Depends on: [D67](docs/zh/functions/items/D67.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0292}∈S_{C-0292}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0292})=1].
@@ -10400,7 +10400,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0293}(s_{C-0293})>0 ∧ J_n^+(C_{C-0293})=1 ∧ J_n^-(C_{C-0293})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D67`
+- 依赖 / Depends on: [D67](docs/zh/functions/items/D67.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0293}∈S_{C-0293}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0293})=1].
@@ -10435,7 +10435,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0294}(s_{C-0294})>0 ∧ J_n^+(C_{C-0294})=1 ∧ J_n^-(C_{C-0294})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D67`
+- 依赖 / Depends on: [D67](docs/zh/functions/items/D67.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0294}∈S_{C-0294}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0294})=1].
@@ -10455,11 +10455,11 @@ English: Rule-based English rendering pending human review.
 ### [#295｜CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡 / CAI编码能力关键瓶颈 - frecombine(概念碰撞率)和ηencode(Q*)(最优共享度), 前者依赖D121实现, 后者依赖D66obscuration与共享的平衡](docs/zh/cases/items/C-0295.md)
 
 **案例内容 / Case Content**
-中文：案例说明：CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡。核心函数：[D67](docs/zh/functions/items/D67.md)
+中文：案例说明：CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖[D121](docs/zh/functions/items/D121.md)实现，后者依赖[D66](docs/zh/functions/items/D66.md)遮蔽与共享的平衡。核心函数：[D67](docs/zh/functions/items/D67.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡。核心函数：[D67](docs/zh/functions/items/D67.md)
+中文：CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖[D121](docs/zh/functions/items/D121.md)实现，后者依赖[D66](docs/zh/functions/items/D66.md)遮蔽与共享的平衡。核心函数：[D67](docs/zh/functions/items/D67.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10470,7 +10470,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0295}(s_{C-0295})>0 ∧ J_n^+(C_{C-0295})=1 ∧ J_n^-(C_{C-0295})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D67`
+- 依赖 / Depends on: [D67](docs/zh/functions/items/D67.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0295}∈S_{C-0295}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0295})=1].
@@ -10671,11 +10671,11 @@ English: Rule-based English rendering pending human review.
 ### [#301｜Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和D62的WM*≈1.4×Nactive同构 / Bsemantic最优值 - εaware≈0.7时Bsemantic*≈1.4 x θencode, 恰好够编码真实意图但不会过度补全, 和D62的WM*≈1.4 x Nactive同构](docs/zh/cases/items/C-0301.md)
 
 **案例内容 / Case Content**
-中文：案例说明：Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和D62的WM*≈1.4×Nactive同构。核心函数：D71
+中文：案例说明：Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和[D62](docs/zh/functions/items/D62.md)的WM*≈1.4×Nactive同构。核心函数：D71
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和D62的WM*≈1.4×Nactive同构。核心函数：D71
+中文：Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和[D62](docs/zh/functions/items/D62.md)的WM*≈1.4×Nactive同构。核心函数：D71
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10756,7 +10756,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0303}(s_{C-0303})>0 ∧ J_n^+(C_{C-0303})=1 ∧ J_n^-(C_{C-0303})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D72`
+- 依赖 / Depends on: [D72](docs/zh/functions/items/D72.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0303}∈S_{C-0303}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0303})=1].
@@ -10791,7 +10791,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0304}(s_{C-0304})>0 ∧ J_n^+(C_{C-0304})=1 ∧ J_n^-(C_{C-0304})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D72`
+- 依赖 / Depends on: [D72](docs/zh/functions/items/D72.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0304}∈S_{C-0304}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0304})=1].
@@ -10826,7 +10826,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0305}(s_{C-0305})>0 ∧ J_n^+(C_{C-0305})=1 ∧ J_n^-(C_{C-0305})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D73`
+- 依赖 / Depends on: [D73](docs/zh/functions/items/D73.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0305}∈S_{C-0305}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0305})=1].
@@ -10861,7 +10861,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0306}(s_{C-0306})>0 ∧ J_n^+(C_{C-0306})=1 ∧ J_n^-(C_{C-0306})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D73`
+- 依赖 / Depends on: [D73](docs/zh/functions/items/D73.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0306}∈S_{C-0306}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0306})=1].
@@ -10881,11 +10881,11 @@ English: Rule-based English rendering pending human review.
 ### [#307｜四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效 / 四阶段严格串行验证 - 不能跳过Stage2直接到Stage3: rcross=0时D84三条路径失效](docs/zh/cases/items/C-0307.md)
 
 **案例内容 / Case Content**
-中文：案例说明：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效。核心函数：[D74](docs/zh/functions/items/D74.md)
+中文：案例说明：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时[D84](docs/zh/functions/items/D84.md)三条路径失效。核心函数：[D74](docs/zh/functions/items/D74.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效。核心函数：[D74](docs/zh/functions/items/D74.md)
+中文：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时[D84](docs/zh/functions/items/D84.md)三条路径失效。核心函数：[D74](docs/zh/functions/items/D74.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10896,7 +10896,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0307}(s_{C-0307})>0 ∧ J_n^+(C_{C-0307})=1 ∧ J_n^-(C_{C-0307})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D74`
+- 依赖 / Depends on: [D74](docs/zh/functions/items/D74.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0307}∈S_{C-0307}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0307})=1].
@@ -10931,7 +10931,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0308}(s_{C-0308})>0 ∧ J_n^+(C_{C-0308})=1 ∧ J_n^-(C_{C-0308})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D75`
+- 依赖 / Depends on: [D75](docs/zh/functions/items/D75.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0308}∈S_{C-0308}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0308})=1].
@@ -10951,11 +10951,11 @@ English: Rule-based English rendering pending human review.
 ### [#309｜类II→类I跃迁的D124对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1 / 类II -> 类I跃迁的D124对接 - 单次P≈0.00075极低, 但全球N x T快速增长 -> Pinevitable -> 1](docs/zh/cases/items/C-0309.md)
 
 **案例内容 / Case Content**
-中文：案例说明：类II→类I跃迁的D124对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1。核心函数：[D75](docs/zh/functions/items/D75.md)
+中文：案例说明：类II→类I跃迁的[D124](docs/zh/functions/items/D124.md)对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1。核心函数：[D75](docs/zh/functions/items/D75.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：类II→类I跃迁的D124对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1。核心函数：[D75](docs/zh/functions/items/D75.md)
+中文：类II→类I跃迁的[D124](docs/zh/functions/items/D124.md)对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1。核心函数：[D75](docs/zh/functions/items/D75.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -10966,7 +10966,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0309}(s_{C-0309})>0 ∧ J_n^+(C_{C-0309})=1 ∧ J_n^-(C_{C-0309})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D75`
+- 依赖 / Depends on: [D75](docs/zh/functions/items/D75.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0309}∈S_{C-0309}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0309})=1].
@@ -11001,7 +11001,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0310}(s_{C-0310})>0 ∧ J_n^+(C_{C-0310})=1 ∧ J_n^-(C_{C-0310})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D74`
+- 依赖 / Depends on: [D74](docs/zh/functions/items/D74.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0310}∈S_{C-0310}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0310})=1].
@@ -11036,7 +11036,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0311}(s_{C-0311})>0 ∧ J_n^+(C_{C-0311})=1 ∧ J_n^-(C_{C-0311})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D76`
+- 依赖 / Depends on: [D76](docs/zh/functions/items/D76.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0311}∈S_{C-0311}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0311})=1].
@@ -11071,7 +11071,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0312}(s_{C-0312})>0 ∧ J_n^+(C_{C-0312})=1 ∧ J_n^-(C_{C-0312})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D76`
+- 依赖 / Depends on: [D76](docs/zh/functions/items/D76.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0312}∈S_{C-0312}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0312})=1].
@@ -11106,7 +11106,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0313}(s_{C-0313})>0 ∧ J_n^+(C_{C-0313})=1 ∧ J_n^-(C_{C-0313})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D76`
+- 依赖 / Depends on: [D76](docs/zh/functions/items/D76.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0313}∈S_{C-0313}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0313})=1].
@@ -11126,11 +11126,11 @@ English: Rule-based English rendering pending human review.
 ### [#314｜D128生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿](docs/zh/cases/items/C-0314.md)
 
 **案例内容 / Case Content**
-中文：案例说明：D128生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿。核心函数：[D76](docs/zh/functions/items/D76.md)
+中文：案例说明：[D128](docs/zh/functions/items/D128.md)生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿。核心函数：[D76](docs/zh/functions/items/D76.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D128生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿。核心函数：[D76](docs/zh/functions/items/D76.md)
+中文：[D128](docs/zh/functions/items/D128.md)生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿。核心函数：[D76](docs/zh/functions/items/D76.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11141,7 +11141,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0314}(s_{C-0314})>0 ∧ J_n^+(C_{C-0314})=1 ∧ J_n^-(C_{C-0314})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D76`
+- 依赖 / Depends on: [D76](docs/zh/functions/items/D76.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0314}∈S_{C-0314}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0314})=1].
@@ -11176,7 +11176,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0315}(s_{C-0315})>0 ∧ J_n^+(C_{C-0315})=1 ∧ J_n^-(C_{C-0315})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D77`, `D78`
+- 依赖 / Depends on: [D77](docs/zh/functions/items/D77.md), `D78`
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0315}∈S_{C-0315}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0315})=1].
@@ -11212,7 +11212,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0316}(s_{C-0316})>0 ∧ J_n^+(C_{C-0316})=1 ∧ J_n^-(C_{C-0316})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D77`
+- 依赖 / Depends on: [D77](docs/zh/functions/items/D77.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0316}∈S_{C-0316}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0316})=1].
@@ -11247,7 +11247,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0317}(s_{C-0317})>0 ∧ J_n^+(C_{C-0317})=1 ∧ J_n^-(C_{C-0317})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D77`
+- 依赖 / Depends on: [D77](docs/zh/functions/items/D77.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0317}∈S_{C-0317}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0317})=1].
@@ -11407,11 +11407,11 @@ English: Rule-based English rendering pending human review.
 ### [#322｜D137与D141的粒度对应 — D137说"阶段2是最大瓶颈"，D141说"装Ptrack是第二步"——同构 / D137与D141的粒度对应 - D137说"阶段2是最大瓶颈", D141说"装Ptrack是第二步" - - 同构](docs/zh/cases/items/C-0322.md)
 
 **案例内容 / Case Content**
-中文：案例说明：D137与D141的粒度对应 — D137说"阶段2是最大瓶颈"，D141说"装Ptrack是第二步"——同构。核心函数：D79
+中文：案例说明：[D137](docs/zh/functions/items/D137.md)与[D141](docs/zh/functions/items/D141.md)的粒度对应 — [D137](docs/zh/functions/items/D137.md)说"阶段2是最大瓶颈"，[D141](docs/zh/functions/items/D141.md)说"装Ptrack是第二步"——同构。核心函数：D79
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D137与D141的粒度对应 — D137说"阶段2是最大瓶颈"，D141说"装Ptrack是第二步"——同构。核心函数：D79
+中文：[D137](docs/zh/functions/items/D137.md)与[D141](docs/zh/functions/items/D141.md)的粒度对应 — [D137](docs/zh/functions/items/D137.md)说"阶段2是最大瓶颈"，[D141](docs/zh/functions/items/D141.md)说"装Ptrack是第二步"——同构。核心函数：D79
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11512,11 +11512,11 @@ English: Rule-based English rendering pending human review.
 ### [#325｜D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate](docs/zh/cases/items/C-0325.md)
 
 **案例内容 / Case Content**
-中文：案例说明：D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate。核心函数：D80
+中文：案例说明：[D135](docs/zh/functions/items/D135.md)修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate。核心函数：D80
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate。核心函数：D80
+中文：[D135](docs/zh/functions/items/D135.md)修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate。核心函数：D80
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11632,7 +11632,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0328}(s_{C-0328})>0 ∧ J_n^+(C_{C-0328})=1 ∧ J_n^-(C_{C-0328})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D84`
+- 依赖 / Depends on: [D84](docs/zh/functions/items/D84.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0328}∈S_{C-0328}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0328})=1].
@@ -11667,7 +11667,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0329}(s_{C-0329})>0 ∧ J_n^+(C_{C-0329})=1 ∧ J_n^-(C_{C-0329})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D85`
+- 依赖 / Depends on: [D85](docs/zh/functions/items/D85.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0329}∈S_{C-0329}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0329})=1].
@@ -11702,7 +11702,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0330}(s_{C-0330})>0 ∧ J_n^+(C_{C-0330})=1 ∧ J_n^-(C_{C-0330})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D85`
+- 依赖 / Depends on: [D85](docs/zh/functions/items/D85.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0330}∈S_{C-0330}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0330})=1].
@@ -11737,7 +11737,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0331}(s_{C-0331})>0 ∧ J_n^+(C_{C-0331})=1 ∧ J_n^-(C_{C-0331})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D86`
+- 依赖 / Depends on: [D86](docs/zh/functions/items/D86.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0331}∈S_{C-0331}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0331})=1].
@@ -11772,7 +11772,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0332}(s_{C-0332})>0 ∧ J_n^+(C_{C-0332})=1 ∧ J_n^-(C_{C-0332})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D87`
+- 依赖 / Depends on: [D87](docs/zh/functions/items/D87.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0332}∈S_{C-0332}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0332})=1].
@@ -11792,11 +11792,11 @@ English: Rule-based English rendering pending human review.
 ### [#333｜关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，D87在D77域的实例 / 关系衰减的临界漂移 - μ从0.5翻转到-0.3, dcritical从2000km缩到50km, D87在D77域的实例](docs/zh/cases/items/C-0333.md)
 
 **案例内容 / Case Content**
-中文：案例说明：关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，D87在D77域的实例。核心函数：[D87](docs/zh/functions/items/D87.md)
+中文：案例说明：关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，[D87](docs/zh/functions/items/D87.md)在[D77](docs/zh/functions/items/D77.md)域的实例。核心函数：[D87](docs/zh/functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，D87在D77域的实例。核心函数：[D87](docs/zh/functions/items/D87.md)
+中文：关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，[D87](docs/zh/functions/items/D87.md)在[D77](docs/zh/functions/items/D77.md)域的实例。核心函数：[D87](docs/zh/functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11807,7 +11807,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0333}(s_{C-0333})>0 ∧ J_n^+(C_{C-0333})=1 ∧ J_n^-(C_{C-0333})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D87`
+- 依赖 / Depends on: [D87](docs/zh/functions/items/D87.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0333}∈S_{C-0333}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0333})=1].
@@ -11842,7 +11842,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0334}(s_{C-0334})>0 ∧ J_n^+(C_{C-0334})=1 ∧ J_n^-(C_{C-0334})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D88`
+- 依赖 / Depends on: [D88](docs/zh/functions/items/D88.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0334}∈S_{C-0334}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0334})=1].
@@ -11877,7 +11877,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0335}(s_{C-0335})>0 ∧ J_n^+(C_{C-0335})=1 ∧ J_n^-(C_{C-0335})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D89`
+- 依赖 / Depends on: [D89](docs/zh/functions/items/D89.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0335}∈S_{C-0335}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0335})=1].
@@ -11912,7 +11912,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0336}(s_{C-0336})>0 ∧ J_n^+(C_{C-0336})=1 ∧ J_n^-(C_{C-0336})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D89`
+- 依赖 / Depends on: [D89](docs/zh/functions/items/D89.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0336}∈S_{C-0336}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0336})=1].
@@ -11947,7 +11947,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0337}(s_{C-0337})>0 ∧ J_n^+(C_{C-0337})=1 ∧ J_n^-(C_{C-0337})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D123`, `D142`, `D133`, `D135`, `D90`
+- 依赖 / Depends on: [D123](docs/zh/functions/items/D123.md), [D142](docs/zh/functions/items/D142.md), [D133](docs/zh/functions/items/D133.md), [D135](docs/zh/functions/items/D135.md), [D90](docs/zh/functions/items/D90.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0337}∈S_{C-0337}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0337})=1].
@@ -11971,11 +11971,11 @@ English: Rule-based English rendering pending human review.
 ### [#338｜D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要](docs/zh/cases/items/C-0338.md)
 
 **案例内容 / Case Content**
-中文：案例说明：D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：[D89](docs/zh/functions/items/D89.md)
+中文：案例说明：[D149](docs/zh/functions/items/D149.md)深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：[D89](docs/zh/functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：[D89](docs/zh/functions/items/D89.md)
+中文：[D149](docs/zh/functions/items/D149.md)深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：[D89](docs/zh/functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -11986,7 +11986,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0338}(s_{C-0338})>0 ∧ J_n^+(C_{C-0338})=1 ∧ J_n^-(C_{C-0338})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D89`
+- 依赖 / Depends on: [D89](docs/zh/functions/items/D89.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0338}∈S_{C-0338}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0338})=1].
@@ -12021,7 +12021,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0339}(s_{C-0339})>0 ∧ J_n^+(C_{C-0339})=1 ∧ J_n^-(C_{C-0339})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D88`
+- 依赖 / Depends on: [D88](docs/zh/functions/items/D88.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0339}∈S_{C-0339}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0339})=1].
@@ -12056,7 +12056,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0340}(s_{C-0340})>0 ∧ J_n^+(C_{C-0340})=1 ∧ J_n^-(C_{C-0340})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D86`
+- 依赖 / Depends on: [D86](docs/zh/functions/items/D86.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0340}∈S_{C-0340}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0340})=1].
@@ -12091,7 +12091,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0341}(s_{C-0341})>0 ∧ J_n^+(C_{C-0341})=1 ∧ J_n^-(C_{C-0341})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D91`
+- 依赖 / Depends on: [D91](docs/zh/functions/items/D91.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0341}∈S_{C-0341}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0341})=1].
@@ -12126,7 +12126,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0342}(s_{C-0342})>0 ∧ J_n^+(C_{C-0342})=1 ∧ J_n^-(C_{C-0342})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D91`
+- 依赖 / Depends on: [D91](docs/zh/functions/items/D91.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0342}∈S_{C-0342}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0342})=1].
@@ -12161,7 +12161,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0343}(s_{C-0343})>0 ∧ J_n^+(C_{C-0343})=1 ∧ J_n^-(C_{C-0343})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D91`
+- 依赖 / Depends on: [D91](docs/zh/functions/items/D91.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0343}∈S_{C-0343}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0343})=1].
@@ -12196,7 +12196,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0344}(s_{C-0344})>0 ∧ J_n^+(C_{C-0344})=1 ∧ J_n^-(C_{C-0344})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D91`
+- 依赖 / Depends on: [D91](docs/zh/functions/items/D91.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0344}∈S_{C-0344}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0344})=1].
@@ -12231,7 +12231,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0345}(s_{C-0345})>0 ∧ J_n^+(C_{C-0345})=1 ∧ J_n^-(C_{C-0345})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D87`
+- 依赖 / Depends on: [D87](docs/zh/functions/items/D87.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0345}∈S_{C-0345}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0345})=1].
@@ -12266,7 +12266,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0346}(s_{C-0346})>0 ∧ J_n^+(C_{C-0346})=1 ∧ J_n^-(C_{C-0346})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D92`
+- 依赖 / Depends on: [D92](docs/zh/functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0346}∈S_{C-0346}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0346})=1].
@@ -12301,7 +12301,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0347}(s_{C-0347})>0 ∧ J_n^+(C_{C-0347})=1 ∧ J_n^-(C_{C-0347})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D92`
+- 依赖 / Depends on: [D92](docs/zh/functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0347}∈S_{C-0347}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0347})=1].
@@ -12336,7 +12336,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0348}(s_{C-0348})>0 ∧ J_n^+(C_{C-0348})=1 ∧ J_n^-(C_{C-0348})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D92`
+- 依赖 / Depends on: [D92](docs/zh/functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0348}∈S_{C-0348}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0348})=1].
@@ -12371,7 +12371,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0349}(s_{C-0349})>0 ∧ J_n^+(C_{C-0349})=1 ∧ J_n^-(C_{C-0349})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D92`
+- 依赖 / Depends on: [D92](docs/zh/functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0349}∈S_{C-0349}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0349})=1].
@@ -12406,7 +12406,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0350}(s_{C-0350})>0 ∧ J_n^+(C_{C-0350})=1 ∧ J_n^-(C_{C-0350})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D92`
+- 依赖 / Depends on: [D92](docs/zh/functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0350}∈S_{C-0350}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0350})=1].
@@ -12441,7 +12441,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0351}(s_{C-0351})>0 ∧ J_n^+(C_{C-0351})=1 ∧ J_n^-(C_{C-0351})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D93`
+- 依赖 / Depends on: [D93](docs/zh/functions/items/D93.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0351}∈S_{C-0351}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0351})=1].
@@ -12476,7 +12476,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0352}(s_{C-0352})>0 ∧ J_n^+(C_{C-0352})=1 ∧ J_n^-(C_{C-0352})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D93`
+- 依赖 / Depends on: [D93](docs/zh/functions/items/D93.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0352}∈S_{C-0352}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0352})=1].
@@ -12511,7 +12511,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0353}(s_{C-0353})>0 ∧ J_n^+(C_{C-0353})=1 ∧ J_n^-(C_{C-0353})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D92`
+- 依赖 / Depends on: [D92](docs/zh/functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0353}∈S_{C-0353}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0353})=1].
@@ -12546,7 +12546,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0354}(s_{C-0354})>0 ∧ J_n^+(C_{C-0354})=1 ∧ J_n^-(C_{C-0354})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D92`
+- 依赖 / Depends on: [D92](docs/zh/functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0354}∈S_{C-0354}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0354})=1].
@@ -12581,7 +12581,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0355}(s_{C-0355})>0 ∧ J_n^+(C_{C-0355})=1 ∧ J_n^-(C_{C-0355})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D94`
+- 依赖 / Depends on: [D94](docs/zh/functions/items/D94.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0355}∈S_{C-0355}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0355})=1].
@@ -12616,7 +12616,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0356}(s_{C-0356})>0 ∧ J_n^+(C_{C-0356})=1 ∧ J_n^-(C_{C-0356})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D94`
+- 依赖 / Depends on: [D94](docs/zh/functions/items/D94.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0356}∈S_{C-0356}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0356})=1].
@@ -12651,7 +12651,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0357}(s_{C-0357})>0 ∧ J_n^+(C_{C-0357})=1 ∧ J_n^-(C_{C-0357})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D92`
+- 依赖 / Depends on: [D92](docs/zh/functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0357}∈S_{C-0357}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0357})=1].
@@ -12686,7 +12686,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0358}(s_{C-0358})>0 ∧ J_n^+(C_{C-0358})=1 ∧ J_n^-(C_{C-0358})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D95`
+- 依赖 / Depends on: [D95](docs/zh/functions/items/D95.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0358}∈S_{C-0358}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0358})=1].
@@ -12721,7 +12721,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0359}(s_{C-0359})>0 ∧ J_n^+(C_{C-0359})=1 ∧ J_n^-(C_{C-0359})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D95`
+- 依赖 / Depends on: [D95](docs/zh/functions/items/D95.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0359}∈S_{C-0359}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0359})=1].
@@ -12756,7 +12756,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0360}(s_{C-0360})>0 ∧ J_n^+(C_{C-0360})=1 ∧ J_n^-(C_{C-0360})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D95`
+- 依赖 / Depends on: [D95](docs/zh/functions/items/D95.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0360}∈S_{C-0360}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0360})=1].
@@ -12791,7 +12791,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0361}(s_{C-0361})>0 ∧ J_n^+(C_{C-0361})=1 ∧ J_n^-(C_{C-0361})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D95`
+- 依赖 / Depends on: [D95](docs/zh/functions/items/D95.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0361}∈S_{C-0361}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0361})=1].
@@ -12826,7 +12826,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0362}(s_{C-0362})>0 ∧ J_n^+(C_{C-0362})=1 ∧ J_n^-(C_{C-0362})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D95`
+- 依赖 / Depends on: [D95](docs/zh/functions/items/D95.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0362}∈S_{C-0362}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0362})=1].
@@ -12861,7 +12861,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0363}(s_{C-0363})>0 ∧ J_n^+(C_{C-0363})=1 ∧ J_n^-(C_{C-0363})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D93`
+- 依赖 / Depends on: [D93](docs/zh/functions/items/D93.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0363}∈S_{C-0363}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0363})=1].
@@ -12896,7 +12896,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0364}(s_{C-0364})>0 ∧ J_n^+(C_{C-0364})=1 ∧ J_n^-(C_{C-0364})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D93`
+- 依赖 / Depends on: [D93](docs/zh/functions/items/D93.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0364}∈S_{C-0364}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0364})=1].
@@ -12931,7 +12931,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0365}(s_{C-0365})>0 ∧ J_n^+(C_{C-0365})=1 ∧ J_n^-(C_{C-0365})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D94`
+- 依赖 / Depends on: [D94](docs/zh/functions/items/D94.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0365}∈S_{C-0365}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0365})=1].
@@ -12966,7 +12966,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0366}(s_{C-0366})>0 ∧ J_n^+(C_{C-0366})=1 ∧ J_n^-(C_{C-0366})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D95`
+- 依赖 / Depends on: [D95](docs/zh/functions/items/D95.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0366}∈S_{C-0366}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0366})=1].
@@ -13001,7 +13001,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0367}(s_{C-0367})>0 ∧ J_n^+(C_{C-0367})=1 ∧ J_n^-(C_{C-0367})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D95`
+- 依赖 / Depends on: [D95](docs/zh/functions/items/D95.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0367}∈S_{C-0367}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0367})=1].
@@ -13036,7 +13036,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0368}(s_{C-0368})>0 ∧ J_n^+(C_{C-0368})=1 ∧ J_n^-(C_{C-0368})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`
+- 依赖 / Depends on: [D159](docs/zh/functions/items/D159.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0368}∈S_{C-0368}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0368})=1].
@@ -13071,7 +13071,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0369}(s_{C-0369})>0 ∧ J_n^+(C_{C-0369})=1 ∧ J_n^-(C_{C-0369})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0369}∈S_{C-0369}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0369})=1].
@@ -13106,7 +13106,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0370}(s_{C-0370})>0 ∧ J_n^+(C_{C-0370})=1 ∧ J_n^-(C_{C-0370})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`
+- 依赖 / Depends on: [D159](docs/zh/functions/items/D159.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0370}∈S_{C-0370}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0370})=1].
@@ -13141,7 +13141,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0371}(s_{C-0371})>0 ∧ J_n^+(C_{C-0371})=1 ∧ J_n^-(C_{C-0371})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0371}∈S_{C-0371}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0371})=1].
@@ -13176,7 +13176,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0372}(s_{C-0372})>0 ∧ J_n^+(C_{C-0372})=1 ∧ J_n^-(C_{C-0372})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D164`
+- 依赖 / Depends on: [D164](docs/zh/functions/items/D164.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0372}∈S_{C-0372}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0372})=1].
@@ -13211,7 +13211,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0373}(s_{C-0373})>0 ∧ J_n^+(C_{C-0373})=1 ∧ J_n^-(C_{C-0373})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D161`
+- 依赖 / Depends on: [D161](docs/zh/functions/items/D161.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0373}∈S_{C-0373}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0373})=1].
@@ -13246,7 +13246,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0374}(s_{C-0374})>0 ∧ J_n^+(C_{C-0374})=1 ∧ J_n^-(C_{C-0374})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D164`
+- 依赖 / Depends on: [D164](docs/zh/functions/items/D164.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0374}∈S_{C-0374}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0374})=1].
@@ -13281,7 +13281,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0375}(s_{C-0375})>0 ∧ J_n^+(C_{C-0375})=1 ∧ J_n^-(C_{C-0375})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`
+- 依赖 / Depends on: [D159](docs/zh/functions/items/D159.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0375}∈S_{C-0375}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0375})=1].
@@ -13316,7 +13316,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0376}(s_{C-0376})>0 ∧ J_n^+(C_{C-0376})=1 ∧ J_n^-(C_{C-0376})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D162`
+- 依赖 / Depends on: [D162](docs/zh/functions/items/D162.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0376}∈S_{C-0376}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0376})=1].
@@ -13351,7 +13351,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0377}(s_{C-0377})>0 ∧ J_n^+(C_{C-0377})=1 ∧ J_n^-(C_{C-0377})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0377}∈S_{C-0377}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0377})=1].
@@ -13386,7 +13386,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0378}(s_{C-0378})>0 ∧ J_n^+(C_{C-0378})=1 ∧ J_n^-(C_{C-0378})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`
+- 依赖 / Depends on: [D159](docs/zh/functions/items/D159.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0378}∈S_{C-0378}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0378})=1].
@@ -13421,7 +13421,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0379}(s_{C-0379})>0 ∧ J_n^+(C_{C-0379})=1 ∧ J_n^-(C_{C-0379})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0379}∈S_{C-0379}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0379})=1].
@@ -13456,7 +13456,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0380}(s_{C-0380})>0 ∧ J_n^+(C_{C-0380})=1 ∧ J_n^-(C_{C-0380})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D163`
+- 依赖 / Depends on: [D163](docs/zh/functions/items/D163.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0380}∈S_{C-0380}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0380})=1].
@@ -13491,7 +13491,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0381}(s_{C-0381})>0 ∧ J_n^+(C_{C-0381})=1 ∧ J_n^-(C_{C-0381})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D163`
+- 依赖 / Depends on: [D163](docs/zh/functions/items/D163.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0381}∈S_{C-0381}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0381})=1].
@@ -13526,7 +13526,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0382}(s_{C-0382})>0 ∧ J_n^+(C_{C-0382})=1 ∧ J_n^-(C_{C-0382})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D165`
+- 依赖 / Depends on: [D165](docs/zh/functions/items/D165.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0382}∈S_{C-0382}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0382})=1].
@@ -13561,7 +13561,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0383}(s_{C-0383})>0 ∧ J_n^+(C_{C-0383})=1 ∧ J_n^-(C_{C-0383})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0383}∈S_{C-0383}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0383})=1].
@@ -13596,7 +13596,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0384}(s_{C-0384})>0 ∧ J_n^+(C_{C-0384})=1 ∧ J_n^-(C_{C-0384})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D90`, `D161`
+- 依赖 / Depends on: [D90](docs/zh/functions/items/D90.md), [D161](docs/zh/functions/items/D161.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0384}∈S_{C-0384}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0384})=1].
@@ -13632,7 +13632,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0385}(s_{C-0385})>0 ∧ J_n^+(C_{C-0385})=1 ∧ J_n^-(C_{C-0385})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D164`
+- 依赖 / Depends on: [D164](docs/zh/functions/items/D164.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0385}∈S_{C-0385}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0385})=1].
@@ -13667,7 +13667,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0386}(s_{C-0386})>0 ∧ J_n^+(C_{C-0386})=1 ∧ J_n^-(C_{C-0386})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D166`
+- 依赖 / Depends on: [D166](docs/zh/functions/items/D166.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0386}∈S_{C-0386}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0386})=1].
@@ -13702,7 +13702,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0387}(s_{C-0387})>0 ∧ J_n^+(C_{C-0387})=1 ∧ J_n^-(C_{C-0387})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D167`
+- 依赖 / Depends on: [D167](docs/zh/functions/items/D167.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0387}∈S_{C-0387}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0387})=1].
@@ -13722,11 +13722,11 @@ English: Rule-based English rendering pending human review.
 ### [#388｜营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，D159门外翻转 / 营养级的门槛翻转 - - μ逐级衰减到Λ_metabolism以下, D159门外翻转](docs/zh/cases/items/C-0388.md)
 
 **案例内容 / Case Content**
-中文：案例说明：营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，D159门外翻转。核心函数：[D159](docs/zh/functions/items/D159.md)
+中文：案例说明：营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，[D159](docs/zh/functions/items/D159.md)门外翻转。核心函数：[D159](docs/zh/functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，D159门外翻转。核心函数：[D159](docs/zh/functions/items/D159.md)
+中文：营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，[D159](docs/zh/functions/items/D159.md)门外翻转。核心函数：[D159](docs/zh/functions/items/D159.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13737,7 +13737,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0388}(s_{C-0388})>0 ∧ J_n^+(C_{C-0388})=1 ∧ J_n^-(C_{C-0388})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`
+- 依赖 / Depends on: [D159](docs/zh/functions/items/D159.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0388}∈S_{C-0388}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0388})=1].
@@ -13772,7 +13772,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0389}(s_{C-0389})>0 ∧ J_n^+(C_{C-0389})=1 ∧ J_n^-(C_{C-0389})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`
+- 依赖 / Depends on: [D159](docs/zh/functions/items/D159.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0389}∈S_{C-0389}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0389})=1].
@@ -13807,7 +13807,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0390}(s_{C-0390})>0 ∧ J_n^+(C_{C-0390})=1 ∧ J_n^-(C_{C-0390})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D162`
+- 依赖 / Depends on: [D162](docs/zh/functions/items/D162.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0390}∈S_{C-0390}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0390})=1].
@@ -13842,7 +13842,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0391}(s_{C-0391})>0 ∧ J_n^+(C_{C-0391})=1 ∧ J_n^-(C_{C-0391})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0391}∈S_{C-0391}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0391})=1].
@@ -13877,7 +13877,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0392}(s_{C-0392})>0 ∧ J_n^+(C_{C-0392})=1 ∧ J_n^-(C_{C-0392})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D163`
+- 依赖 / Depends on: [D163](docs/zh/functions/items/D163.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0392}∈S_{C-0392}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0392})=1].
@@ -13912,7 +13912,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0393}(s_{C-0393})>0 ∧ J_n^+(C_{C-0393})=1 ∧ J_n^-(C_{C-0393})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`
+- 依赖 / Depends on: [D159](docs/zh/functions/items/D159.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0393}∈S_{C-0393}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0393})=1].
@@ -13932,11 +13932,11 @@ English: Rule-based English rendering pending human review.
 ### [#394｜缓存是降低门槛——降低Λ_compute让更多μ过门槛，D162的逆操作](docs/zh/cases/items/C-0394.md)
 
 **案例内容 / Case Content**
-中文：案例说明：缓存是降低门槛——降低Λ_compute让更多μ过门槛，D162的逆操作。核心函数：[D162](docs/zh/functions/items/D162.md)
+中文：案例说明：缓存是降低门槛——降低Λ_compute让更多μ过门槛，[D162](docs/zh/functions/items/D162.md)的逆操作。核心函数：[D162](docs/zh/functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：缓存是降低门槛——降低Λ_compute让更多μ过门槛，D162的逆操作。核心函数：[D162](docs/zh/functions/items/D162.md)
+中文：缓存是降低门槛——降低Λ_compute让更多μ过门槛，[D162](docs/zh/functions/items/D162.md)的逆操作。核心函数：[D162](docs/zh/functions/items/D162.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13947,7 +13947,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0394}(s_{C-0394})>0 ∧ J_n^+(C_{C-0394})=1 ∧ J_n^-(C_{C-0394})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D162`
+- 依赖 / Depends on: [D162](docs/zh/functions/items/D162.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0394}∈S_{C-0394}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0394})=1].
@@ -13967,11 +13967,11 @@ English: Rule-based English rendering pending human review.
 ### [#395｜并发死锁的相变无中间态——D161乘法死锁的精确实例](docs/zh/cases/items/C-0395.md)
 
 **案例内容 / Case Content**
-中文：案例说明：并发死锁的相变无中间态——D161乘法死锁的精确实例。核心函数：[D161](docs/zh/functions/items/D161.md)
+中文：案例说明：并发死锁的相变无中间态——[D161](docs/zh/functions/items/D161.md)乘法死锁的精确实例。核心函数：[D161](docs/zh/functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：并发死锁的相变无中间态——D161乘法死锁的精确实例。核心函数：[D161](docs/zh/functions/items/D161.md)
+中文：并发死锁的相变无中间态——[D161](docs/zh/functions/items/D161.md)乘法死锁的精确实例。核心函数：[D161](docs/zh/functions/items/D161.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -13982,7 +13982,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0395}(s_{C-0395})>0 ∧ J_n^+(C_{C-0395})=1 ∧ J_n^-(C_{C-0395})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D161`
+- 依赖 / Depends on: [D161](docs/zh/functions/items/D161.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0395}∈S_{C-0395}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0395})=1].
@@ -14017,7 +14017,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0396}(s_{C-0396})>0 ∧ J_n^+(C_{C-0396})=1 ∧ J_n^-(C_{C-0396})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0396}∈S_{C-0396}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0396})=1].
@@ -14052,7 +14052,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0397}(s_{C-0397})>0 ∧ J_n^+(C_{C-0397})=1 ∧ J_n^-(C_{C-0397})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`, `D92`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md), [D92](docs/zh/functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0397}∈S_{C-0397}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0397})=1].
@@ -14088,7 +14088,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0398}(s_{C-0398})>0 ∧ J_n^+(C_{C-0398})=1 ∧ J_n^-(C_{C-0398})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D168`
+- 依赖 / Depends on: [D168](docs/zh/functions/items/D168.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0398}∈S_{C-0398}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0398})=1].
@@ -14123,7 +14123,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0399}(s_{C-0399})>0 ∧ J_n^+(C_{C-0399})=1 ∧ J_n^-(C_{C-0399})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D90`, `D161`
+- 依赖 / Depends on: [D90](docs/zh/functions/items/D90.md), [D161](docs/zh/functions/items/D161.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0399}∈S_{C-0399}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0399})=1].
@@ -14159,7 +14159,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0400}(s_{C-0400})>0 ∧ J_n^+(C_{C-0400})=1 ∧ J_n^-(C_{C-0400})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0400}∈S_{C-0400}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0400})=1].
@@ -14185,11 +14185,11 @@ English: Rule-based English rendering pending human review.
 ### [#401｜冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性](docs/zh/cases/items/C-0401.md)
 
 **案例内容 / Case Content**
-中文：案例说明：冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性。核心函数：[D89](docs/zh/functions/items/D89.md)
+中文：案例说明：冥想降低门槛——降低Λ_awareness让觉知更容易发生，[D89](docs/zh/functions/items/D89.md)结构保守性。核心函数：[D89](docs/zh/functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性。核心函数：[D89](docs/zh/functions/items/D89.md)
+中文：冥想降低门槛——降低Λ_awareness让觉知更容易发生，[D89](docs/zh/functions/items/D89.md)结构保守性。核心函数：[D89](docs/zh/functions/items/D89.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14200,7 +14200,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0401}(s_{C-0401})>0 ∧ J_n^+(C_{C-0401})=1 ∧ J_n^-(C_{C-0401})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D89`
+- 依赖 / Depends on: [D89](docs/zh/functions/items/D89.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0401}∈S_{C-0401}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0401})=1].
@@ -14235,7 +14235,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0402}(s_{C-0402})>0 ∧ J_n^+(C_{C-0402})=1 ∧ J_n^-(C_{C-0402})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0402}∈S_{C-0402}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0402})=1].
@@ -14270,7 +14270,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0403}(s_{C-0403})>0 ∧ J_n^+(C_{C-0403})=1 ∧ J_n^-(C_{C-0403})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`, `D162`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md), [D162](docs/zh/functions/items/D162.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0403}∈S_{C-0403}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0403})=1].
@@ -14306,7 +14306,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0404}(s_{C-0404})>0 ∧ J_n^+(C_{C-0404})=1 ∧ J_n^-(C_{C-0404})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D164`
+- 依赖 / Depends on: [D164](docs/zh/functions/items/D164.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0404}∈S_{C-0404}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0404})=1].
@@ -14341,7 +14341,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0405}(s_{C-0405})>0 ∧ J_n^+(C_{C-0405})=1 ∧ J_n^-(C_{C-0405})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D169`
+- 依赖 / Depends on: [D169](docs/zh/functions/items/D169.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0405}∈S_{C-0405}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0405})=1].
@@ -14376,7 +14376,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0406}(s_{C-0406})>0 ∧ J_n^+(C_{C-0406})=1 ∧ J_n^-(C_{C-0406})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D161`
+- 依赖 / Depends on: [D161](docs/zh/functions/items/D161.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0406}∈S_{C-0406}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0406})=1].
@@ -14411,7 +14411,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0407}(s_{C-0407})>0 ∧ J_n^+(C_{C-0407})=1 ∧ J_n^-(C_{C-0407})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D163`
+- 依赖 / Depends on: [D163](docs/zh/functions/items/D163.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0407}∈S_{C-0407}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0407})=1].
@@ -14431,11 +14431,11 @@ English: Rule-based English rendering pending human review.
 ### [#408｜国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，D160宏观版](docs/zh/cases/items/C-0408.md)
 
 **案例内容 / Case Content**
-中文：案例说明：国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，D160宏观版。核心函数：[D160](docs/zh/functions/items/D160.md)
+中文：案例说明：国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，[D160](docs/zh/functions/items/D160.md)宏观版。核心函数：[D160](docs/zh/functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，D160宏观版。核心函数：[D160](docs/zh/functions/items/D160.md)
+中文：国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，[D160](docs/zh/functions/items/D160.md)宏观版。核心函数：[D160](docs/zh/functions/items/D160.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14446,7 +14446,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0408}(s_{C-0408})>0 ∧ J_n^+(C_{C-0408})=1 ∧ J_n^-(C_{C-0408})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0408}∈S_{C-0408}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0408})=1].
@@ -14481,7 +14481,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0409}(s_{C-0409})>0 ∧ J_n^+(C_{C-0409})=1 ∧ J_n^-(C_{C-0409})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D161`
+- 依赖 / Depends on: [D161](docs/zh/functions/items/D161.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0409}∈S_{C-0409}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0409})=1].
@@ -14516,7 +14516,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0410}(s_{C-0410})>0 ∧ J_n^+(C_{C-0410})=1 ∧ J_n^-(C_{C-0410})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`, `D92`
+- 依赖 / Depends on: [D159](docs/zh/functions/items/D159.md), [D92](docs/zh/functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0410}∈S_{C-0410}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0410})=1].
@@ -14552,7 +14552,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0411}(s_{C-0411})>0 ∧ J_n^+(C_{C-0411})=1 ∧ J_n^-(C_{C-0411})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D162`
+- 依赖 / Depends on: [D162](docs/zh/functions/items/D162.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0411}∈S_{C-0411}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0411})=1].
@@ -14587,7 +14587,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0412}(s_{C-0412})>0 ∧ J_n^+(C_{C-0412})=1 ∧ J_n^-(C_{C-0412})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`
+- 依赖 / Depends on: [D159](docs/zh/functions/items/D159.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0412}∈S_{C-0412}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0412})=1].
@@ -14622,7 +14622,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0413}(s_{C-0413})>0 ∧ J_n^+(C_{C-0413})=1 ∧ J_n^-(C_{C-0413})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D164`
+- 依赖 / Depends on: [D164](docs/zh/functions/items/D164.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0413}∈S_{C-0413}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0413})=1].
@@ -14657,7 +14657,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0414}(s_{C-0414})>0 ∧ J_n^+(C_{C-0414})=1 ∧ J_n^-(C_{C-0414})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0414}∈S_{C-0414}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0414})=1].
@@ -14677,11 +14677,11 @@ English: Rule-based English rendering pending human review.
 ### [#415｜衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加](docs/zh/cases/items/C-0415.md)
 
 **案例内容 / Case Content**
-中文：案例说明：衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加。核心函数：[D87](docs/zh/functions/items/D87.md)
+中文：案例说明：衰老多病的乘法加速——多门控面同时门槛碾压，[D87](docs/zh/functions/items/D87.md)多因子叠加。核心函数：[D87](docs/zh/functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加。核心函数：[D87](docs/zh/functions/items/D87.md)
+中文：衰老多病的乘法加速——多门控面同时门槛碾压，[D87](docs/zh/functions/items/D87.md)多因子叠加。核心函数：[D87](docs/zh/functions/items/D87.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -14692,7 +14692,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0415}(s_{C-0415})>0 ∧ J_n^+(C_{C-0415})=1 ∧ J_n^-(C_{C-0415})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D87`
+- 依赖 / Depends on: [D87](docs/zh/functions/items/D87.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0415}∈S_{C-0415}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0415})=1].
@@ -14727,7 +14727,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0416}(s_{C-0416})>0 ∧ J_n^+(C_{C-0416})=1 ∧ J_n^-(C_{C-0416})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D90`, `D161`
+- 依赖 / Depends on: [D90](docs/zh/functions/items/D90.md), [D161](docs/zh/functions/items/D161.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0416}∈S_{C-0416}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0416})=1].
@@ -14763,7 +14763,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0417}(s_{C-0417})>0 ∧ J_n^+(C_{C-0417})=1 ∧ J_n^-(C_{C-0417})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D90`, `D161`
+- 依赖 / Depends on: [D90](docs/zh/functions/items/D90.md), [D161](docs/zh/functions/items/D161.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0417}∈S_{C-0417}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0417})=1].
@@ -14799,7 +14799,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0418}(s_{C-0418})>0 ∧ J_n^+(C_{C-0418})=1 ∧ J_n^-(C_{C-0418})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D163`
+- 依赖 / Depends on: [D163](docs/zh/functions/items/D163.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0418}∈S_{C-0418}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0418})=1].
@@ -14834,7 +14834,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0419}(s_{C-0419})>0 ∧ J_n^+(C_{C-0419})=1 ∧ J_n^-(C_{C-0419})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`
+- 依赖 / Depends on: [D159](docs/zh/functions/items/D159.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0419}∈S_{C-0419}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0419})=1].
@@ -14869,7 +14869,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0420}(s_{C-0420})>0 ∧ J_n^+(C_{C-0420})=1 ∧ J_n^-(C_{C-0420})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`, `D161`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md), [D161](docs/zh/functions/items/D161.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0420}∈S_{C-0420}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0420})=1].
@@ -14905,7 +14905,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0421}(s_{C-0421})>0 ∧ J_n^+(C_{C-0421})=1 ∧ J_n^-(C_{C-0421})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D90`
+- 依赖 / Depends on: [D90](docs/zh/functions/items/D90.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0421}∈S_{C-0421}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0421})=1].
@@ -14940,7 +14940,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0422}(s_{C-0422})>0 ∧ J_n^+(C_{C-0422})=1 ∧ J_n^-(C_{C-0422})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D162`
+- 依赖 / Depends on: [D162](docs/zh/functions/items/D162.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0422}∈S_{C-0422}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0422})=1].
@@ -14975,7 +14975,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0423}(s_{C-0423})>0 ∧ J_n^+(C_{C-0423})=1 ∧ J_n^-(C_{C-0423})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0423}∈S_{C-0423}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0423})=1].
@@ -15010,7 +15010,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0424}(s_{C-0424})>0 ∧ J_n^+(C_{C-0424})=1 ∧ J_n^-(C_{C-0424})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D170`
+- 依赖 / Depends on: [D170](docs/zh/functions/items/D170.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0424}∈S_{C-0424}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0424})=1].
@@ -15045,7 +15045,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0425}(s_{C-0425})>0 ∧ J_n^+(C_{C-0425})=1 ∧ J_n^-(C_{C-0425})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D166`
+- 依赖 / Depends on: [D166](docs/zh/functions/items/D166.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0425}∈S_{C-0425}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0425})=1].
@@ -15080,7 +15080,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0426}(s_{C-0426})>0 ∧ J_n^+(C_{C-0426})=1 ∧ J_n^-(C_{C-0426})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`, `D92`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md), [D92](docs/zh/functions/items/D92.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0426}∈S_{C-0426}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0426})=1].
@@ -15116,7 +15116,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0427}(s_{C-0427})>0 ∧ J_n^+(C_{C-0427})=1 ∧ J_n^-(C_{C-0427})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D87`
+- 依赖 / Depends on: [D87](docs/zh/functions/items/D87.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0427}∈S_{C-0427}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0427})=1].
@@ -15151,7 +15151,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0428}(s_{C-0428})>0 ∧ J_n^+(C_{C-0428})=1 ∧ J_n^-(C_{C-0428})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D89`
+- 依赖 / Depends on: [D89](docs/zh/functions/items/D89.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0428}∈S_{C-0428}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0428})=1].
@@ -15186,7 +15186,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0429}(s_{C-0429})>0 ∧ J_n^+(C_{C-0429})=1 ∧ J_n^-(C_{C-0429})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D159`, `D162`
+- 依赖 / Depends on: [D159](docs/zh/functions/items/D159.md), [D162](docs/zh/functions/items/D162.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0429}∈S_{C-0429}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0429})=1].
@@ -15222,7 +15222,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0430}(s_{C-0430})>0 ∧ J_n^+(C_{C-0430})=1 ∧ J_n^-(C_{C-0430})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D160`
+- 依赖 / Depends on: [D160](docs/zh/functions/items/D160.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0430}∈S_{C-0430}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0430})=1].
@@ -15257,7 +15257,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0431}(s_{C-0431})>0 ∧ J_n^+(C_{C-0431})=1 ∧ J_n^-(C_{C-0431})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D111`
+- 依赖 / Depends on: [D111](docs/zh/functions/items/D111.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0431}∈S_{C-0431}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0431})=1].
@@ -15292,7 +15292,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0432}(s_{C-0432})>0 ∧ J_n^+(C_{C-0432})=1 ∧ J_n^-(C_{C-0432})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D112`
+- 依赖 / Depends on: [D112](docs/zh/functions/items/D112.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0432}∈S_{C-0432}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0432})=1].
@@ -15327,7 +15327,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0433}(s_{C-0433})>0 ∧ J_n^+(C_{C-0433})=1 ∧ J_n^-(C_{C-0433})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D112`
+- 依赖 / Depends on: [D112](docs/zh/functions/items/D112.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0433}∈S_{C-0433}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0433})=1].
@@ -15362,7 +15362,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0434}(s_{C-0434})>0 ∧ J_n^+(C_{C-0434})=1 ∧ J_n^-(C_{C-0434})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D112`
+- 依赖 / Depends on: [D112](docs/zh/functions/items/D112.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0434}∈S_{C-0434}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0434})=1].
@@ -15397,7 +15397,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0435}(s_{C-0435})>0 ∧ J_n^+(C_{C-0435})=1 ∧ J_n^-(C_{C-0435})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D112`
+- 依赖 / Depends on: [D112](docs/zh/functions/items/D112.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0435}∈S_{C-0435}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0435})=1].
@@ -15417,11 +15417,11 @@ English: Rule-based English rendering pending human review.
 ### [#436｜经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"](docs/zh/cases/items/C-0436.md)
 
 **案例内容 / Case Content**
-中文：案例说明：经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"。核心函数：[D112](docs/zh/functions/items/D112.md)
+中文：案例说明：经验法则证伪 — 经验说"先确保生存再追求增长"，但[D112](docs/zh/functions/items/D112.md)说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"。核心函数：[D112](docs/zh/functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"。核心函数：[D112](docs/zh/functions/items/D112.md)
+中文：经验法则证伪 — 经验说"先确保生存再追求增长"，但[D112](docs/zh/functions/items/D112.md)说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果"。核心函数：[D112](docs/zh/functions/items/D112.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -15432,7 +15432,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0436}(s_{C-0436})>0 ∧ J_n^+(C_{C-0436})=1 ∧ J_n^-(C_{C-0436})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D112`
+- 依赖 / Depends on: [D112](docs/zh/functions/items/D112.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0436}∈S_{C-0436}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0436})=1].
@@ -15467,7 +15467,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0437}(s_{C-0437})>0 ∧ J_n^+(C_{C-0437})=1 ∧ J_n^-(C_{C-0437})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D113`
+- 依赖 / Depends on: [D113](docs/zh/functions/items/D113.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0437}∈S_{C-0437}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0437})=1].
@@ -15502,7 +15502,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0438}(s_{C-0438})>0 ∧ J_n^+(C_{C-0438})=1 ∧ J_n^-(C_{C-0438})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D113`
+- 依赖 / Depends on: [D113](docs/zh/functions/items/D113.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0438}∈S_{C-0438}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0438})=1].
@@ -15537,7 +15537,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0439}(s_{C-0439})>0 ∧ J_n^+(C_{C-0439})=1 ∧ J_n^-(C_{C-0439})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D113`
+- 依赖 / Depends on: [D113](docs/zh/functions/items/D113.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0439}∈S_{C-0439}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0439})=1].
@@ -15572,7 +15572,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0440}(s_{C-0440})>0 ∧ J_n^+(C_{C-0440})=1 ∧ J_n^-(C_{C-0440})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D113`
+- 依赖 / Depends on: [D113](docs/zh/functions/items/D113.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0440}∈S_{C-0440}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0440})=1].
@@ -15607,7 +15607,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0441}(s_{C-0441})>0 ∧ J_n^+(C_{C-0441})=1 ∧ J_n^-(C_{C-0441})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D113`
+- 依赖 / Depends on: [D113](docs/zh/functions/items/D113.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0441}∈S_{C-0441}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0441})=1].
@@ -15642,7 +15642,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0442}(s_{C-0442})>0 ∧ J_n^+(C_{C-0442})=1 ∧ J_n^-(C_{C-0442})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0442}∈S_{C-0442}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0442})=1].
@@ -15677,7 +15677,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0443}(s_{C-0443})>0 ∧ J_n^+(C_{C-0443})=1 ∧ J_n^-(C_{C-0443})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0443}∈S_{C-0443}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0443})=1].
@@ -15712,7 +15712,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0444}(s_{C-0444})>0 ∧ J_n^+(C_{C-0444})=1 ∧ J_n^-(C_{C-0444})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0444}∈S_{C-0444}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0444})=1].
@@ -15747,7 +15747,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0445}(s_{C-0445})>0 ∧ J_n^+(C_{C-0445})=1 ∧ J_n^-(C_{C-0445})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0445}∈S_{C-0445}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0445})=1].
@@ -15782,7 +15782,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0446}(s_{C-0446})>0 ∧ J_n^+(C_{C-0446})=1 ∧ J_n^-(C_{C-0446})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0446}∈S_{C-0446}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0446})=1].
@@ -15817,7 +15817,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0447}(s_{C-0447})>0 ∧ J_n^+(C_{C-0447})=1 ∧ J_n^-(C_{C-0447})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0447}∈S_{C-0447}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0447})=1].
@@ -15852,7 +15852,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0448}(s_{C-0448})>0 ∧ J_n^+(C_{C-0448})=1 ∧ J_n^-(C_{C-0448})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0448}∈S_{C-0448}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0448})=1].
@@ -15887,7 +15887,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0449}(s_{C-0449})>0 ∧ J_n^+(C_{C-0449})=1 ∧ J_n^-(C_{C-0449})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D114`
+- 依赖 / Depends on: [D114](docs/zh/functions/items/D114.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0449}∈S_{C-0449}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0449})=1].
@@ -15922,7 +15922,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0450}(s_{C-0450})>0 ∧ J_n^+(C_{C-0450})=1 ∧ J_n^-(C_{C-0450})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D115`
+- 依赖 / Depends on: [D115](docs/zh/functions/items/D115.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0450}∈S_{C-0450}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0450})=1].
@@ -15957,7 +15957,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0451}(s_{C-0451})>0 ∧ J_n^+(C_{C-0451})=1 ∧ J_n^-(C_{C-0451})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D115`
+- 依赖 / Depends on: [D115](docs/zh/functions/items/D115.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0451}∈S_{C-0451}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0451})=1].
@@ -15992,7 +15992,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0452}(s_{C-0452})>0 ∧ J_n^+(C_{C-0452})=1 ∧ J_n^-(C_{C-0452})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D116`
+- 依赖 / Depends on: [D116](docs/zh/functions/items/D116.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0452}∈S_{C-0452}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0452})=1].
@@ -16027,7 +16027,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0453}(s_{C-0453})>0 ∧ J_n^+(C_{C-0453})=1 ∧ J_n^-(C_{C-0453})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D116`
+- 依赖 / Depends on: [D116](docs/zh/functions/items/D116.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0453}∈S_{C-0453}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0453})=1].
@@ -16062,7 +16062,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0454}(s_{C-0454})>0 ∧ J_n^+(C_{C-0454})=1 ∧ J_n^-(C_{C-0454})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D116`
+- 依赖 / Depends on: [D116](docs/zh/functions/items/D116.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0454}∈S_{C-0454}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0454})=1].
@@ -16097,7 +16097,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0455}(s_{C-0455})>0 ∧ J_n^+(C_{C-0455})=1 ∧ J_n^-(C_{C-0455})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D116`
+- 依赖 / Depends on: [D116](docs/zh/functions/items/D116.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0455}∈S_{C-0455}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0455})=1].
@@ -16132,7 +16132,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0456}(s_{C-0456})>0 ∧ J_n^+(C_{C-0456})=1 ∧ J_n^-(C_{C-0456})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D116`
+- 依赖 / Depends on: [D116](docs/zh/functions/items/D116.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0456}∈S_{C-0456}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0456})=1].
@@ -16167,7 +16167,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0457}(s_{C-0457})>0 ∧ J_n^+(C_{C-0457})=1 ∧ J_n^-(C_{C-0457})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D117`
+- 依赖 / Depends on: [D117](docs/zh/functions/items/D117.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0457}∈S_{C-0457}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0457})=1].
@@ -16202,7 +16202,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0458}(s_{C-0458})>0 ∧ J_n^+(C_{C-0458})=1 ∧ J_n^-(C_{C-0458})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D117`
+- 依赖 / Depends on: [D117](docs/zh/functions/items/D117.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0458}∈S_{C-0458}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0458})=1].
@@ -16237,7 +16237,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0459}(s_{C-0459})>0 ∧ J_n^+(C_{C-0459})=1 ∧ J_n^-(C_{C-0459})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D117`
+- 依赖 / Depends on: [D117](docs/zh/functions/items/D117.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0459}∈S_{C-0459}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0459})=1].
@@ -16272,7 +16272,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0460}(s_{C-0460})>0 ∧ J_n^+(C_{C-0460})=1 ∧ J_n^-(C_{C-0460})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D117`
+- 依赖 / Depends on: [D117](docs/zh/functions/items/D117.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0460}∈S_{C-0460}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0460})=1].
@@ -16307,7 +16307,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0461}(s_{C-0461})>0 ∧ J_n^+(C_{C-0461})=1 ∧ J_n^-(C_{C-0461})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D117`
+- 依赖 / Depends on: [D117](docs/zh/functions/items/D117.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0461}∈S_{C-0461}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0461})=1].
@@ -16327,11 +16327,11 @@ English: Rule-based English rendering pending human review.
 ### [#462｜变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，D111分配的S_ignition全局最小，无第二极值点 / 变分唯一性验证 - 3维sigmoid乘法系统, 随机采样1000组Δε分配, D111分配的S_ignition全局最小, 无第二极值点](docs/zh/cases/items/C-0462.md)
 
 **案例内容 / Case Content**
-中文：案例说明：变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，D111分配的S_ignition全局最小，无第二极值点。核心函数：[D118](docs/zh/functions/items/D118.md)
+中文：案例说明：变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，[D111](docs/zh/functions/items/D111.md)分配的S_ignition全局最小，无第二极值点。核心函数：[D118](docs/zh/functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，D111分配的S_ignition全局最小，无第二极值点。核心函数：[D118](docs/zh/functions/items/D118.md)
+中文：变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，[D111](docs/zh/functions/items/D111.md)分配的S_ignition全局最小，无第二极值点。核心函数：[D118](docs/zh/functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16342,7 +16342,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0462}(s_{C-0462})>0 ∧ J_n^+(C_{C-0462})=1 ∧ J_n^-(C_{C-0462})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D118`
+- 依赖 / Depends on: [D118](docs/zh/functions/items/D118.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0462}∈S_{C-0462}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0462})=1].
@@ -16377,7 +16377,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0463}(s_{C-0463})>0 ∧ J_n^+(C_{C-0463})=1 ∧ J_n^-(C_{C-0463})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D118`
+- 依赖 / Depends on: [D118](docs/zh/functions/items/D118.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0463}∈S_{C-0463}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0463})=1].
@@ -16412,7 +16412,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0464}(s_{C-0464})>0 ∧ J_n^+(C_{C-0464})=1 ∧ J_n^-(C_{C-0464})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D118`
+- 依赖 / Depends on: [D118](docs/zh/functions/items/D118.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0464}∈S_{C-0464}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0464})=1].
@@ -16432,11 +16432,11 @@ English: Rule-based English rendering pending human review.
 ### [#465｜恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归 / 恢复力验证 - 从D111偏离10%投入, S_ignition增大0.8%, 梯度指向D111方向, 系统自动回归](docs/zh/cases/items/C-0465.md)
 
 **案例内容 / Case Content**
-中文：案例说明：恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归。核心函数：[D118](docs/zh/functions/items/D118.md)
+中文：案例说明：恢复力验证 — 从[D111](docs/zh/functions/items/D111.md)偏离10%投入，S_ignition增大0.8%，梯度指向[D111](docs/zh/functions/items/D111.md)方向，系统自动回归。核心函数：[D118](docs/zh/functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归。核心函数：[D118](docs/zh/functions/items/D118.md)
+中文：恢复力验证 — 从[D111](docs/zh/functions/items/D111.md)偏离10%投入，S_ignition增大0.8%，梯度指向[D111](docs/zh/functions/items/D111.md)方向，系统自动回归。核心函数：[D118](docs/zh/functions/items/D118.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16447,7 +16447,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0465}(s_{C-0465})>0 ∧ J_n^+(C_{C-0465})=1 ∧ J_n^-(C_{C-0465})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D118`
+- 依赖 / Depends on: [D118](docs/zh/functions/items/D118.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0465}∈S_{C-0465}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0465})=1].
@@ -16482,7 +16482,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0466}(s_{C-0466})>0 ∧ J_n^+(C_{C-0466})=1 ∧ J_n^-(C_{C-0466})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D118`
+- 依赖 / Depends on: [D118](docs/zh/functions/items/D118.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0466}∈S_{C-0466}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0466})=1].
@@ -16517,7 +16517,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0467}(s_{C-0467})>0 ∧ J_n^+(C_{C-0467})=1 ∧ J_n^-(C_{C-0467})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D119`
+- 依赖 / Depends on: [D119](docs/zh/functions/items/D119.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0467}∈S_{C-0467}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0467})=1].
@@ -16552,7 +16552,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0468}(s_{C-0468})>0 ∧ J_n^+(C_{C-0468})=1 ∧ J_n^-(C_{C-0468})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D119`
+- 依赖 / Depends on: [D119](docs/zh/functions/items/D119.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0468}∈S_{C-0468}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0468})=1].
@@ -16587,7 +16587,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0469}(s_{C-0469})>0 ∧ J_n^+(C_{C-0469})=1 ∧ J_n^-(C_{C-0469})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D119`
+- 依赖 / Depends on: [D119](docs/zh/functions/items/D119.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0469}∈S_{C-0469}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0469})=1].
@@ -16607,11 +16607,11 @@ English: Rule-based English rendering pending human review.
 ### [#470｜退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与D114 β峰值一致。越退化越快，不是线性衰退](docs/zh/cases/items/C-0470.md)
 
 **案例内容 / Case Content**
-中文：案例说明：退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与D114 β峰值一致。越退化越快，不是线性衰退。核心函数：[D119](docs/zh/functions/items/D119.md)
+中文：案例说明：退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与[D114](docs/zh/functions/items/D114.md) β峰值一致。越退化越快，不是线性衰退。核心函数：[D119](docs/zh/functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与D114 β峰值一致。越退化越快，不是线性衰退。核心函数：[D119](docs/zh/functions/items/D119.md)
+中文：退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与[D114](docs/zh/functions/items/D114.md) β峰值一致。越退化越快，不是线性衰退。核心函数：[D119](docs/zh/functions/items/D119.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -16622,7 +16622,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0470}(s_{C-0470})>0 ∧ J_n^+(C_{C-0470})=1 ∧ J_n^-(C_{C-0470})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D119`
+- 依赖 / Depends on: [D119](docs/zh/functions/items/D119.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0470}∈S_{C-0470}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0470})=1].
@@ -16657,7 +16657,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0471}(s_{C-0471})>0 ∧ J_n^+(C_{C-0471})=1 ∧ J_n^-(C_{C-0471})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D119`
+- 依赖 / Depends on: [D119](docs/zh/functions/items/D119.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0471}∈S_{C-0471}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0471})=1].
@@ -16692,7 +16692,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0472}(s_{C-0472})>0 ∧ J_n^+(C_{C-0472})=1 ∧ J_n^-(C_{C-0472})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D238`
+- 依赖 / Depends on: [D238](docs/zh/functions/items/D238.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0472}∈S_{C-0472}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0472})=1].
@@ -16727,7 +16727,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0473}(s_{C-0473})>0 ∧ J_n^+(C_{C-0473})=1 ∧ J_n^-(C_{C-0473})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D240`
+- 依赖 / Depends on: [D240](docs/zh/functions/items/D240.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0473}∈S_{C-0473}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0473})=1].
@@ -16762,7 +16762,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0474}(s_{C-0474})>0 ∧ J_n^+(C_{C-0474})=1 ∧ J_n^-(C_{C-0474})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D240`
+- 依赖 / Depends on: [D240](docs/zh/functions/items/D240.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0474}∈S_{C-0474}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0474})=1].
@@ -16797,7 +16797,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0475}(s_{C-0475})>0 ∧ J_n^+(C_{C-0475})=1 ∧ J_n^-(C_{C-0475})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D238`
+- 依赖 / Depends on: [D238](docs/zh/functions/items/D238.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0475}∈S_{C-0475}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0475})=1].
@@ -16832,7 +16832,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0476}(s_{C-0476})>0 ∧ J_n^+(C_{C-0476})=1 ∧ J_n^-(C_{C-0476})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D239`
+- 依赖 / Depends on: [D239](docs/zh/functions/items/D239.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0476}∈S_{C-0476}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0476})=1].
@@ -16867,7 +16867,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0477}(s_{C-0477})>0 ∧ J_n^+(C_{C-0477})=1 ∧ J_n^-(C_{C-0477})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D240`
+- 依赖 / Depends on: [D240](docs/zh/functions/items/D240.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0477}∈S_{C-0477}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0477})=1].
@@ -16902,7 +16902,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0478}(s_{C-0478})>0 ∧ J_n^+(C_{C-0478})=1 ∧ J_n^-(C_{C-0478})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D241`
+- 依赖 / Depends on: [D241](docs/zh/functions/items/D241.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0478}∈S_{C-0478}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0478})=1].
@@ -16937,7 +16937,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0479}(s_{C-0479})>0 ∧ J_n^+(C_{C-0479})=1 ∧ J_n^-(C_{C-0479})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D242`
+- 依赖 / Depends on: [D242](docs/zh/functions/items/D242.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0479}∈S_{C-0479}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0479})=1].
@@ -16972,7 +16972,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0480}(s_{C-0480})>0 ∧ J_n^+(C_{C-0480})=1 ∧ J_n^-(C_{C-0480})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D243`
+- 依赖 / Depends on: [D243](docs/zh/functions/items/D243.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0480}∈S_{C-0480}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0480})=1].
@@ -17007,7 +17007,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0481}(s_{C-0481})>0 ∧ J_n^+(C_{C-0481})=1 ∧ J_n^-(C_{C-0481})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D125`
+- 依赖 / Depends on: [D125](docs/zh/functions/items/D125.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0481}∈S_{C-0481}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0481})=1].
@@ -17042,7 +17042,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0482}(s_{C-0482})>0 ∧ J_n^+(C_{C-0482})=1 ∧ J_n^-(C_{C-0482})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D125`
+- 依赖 / Depends on: [D125](docs/zh/functions/items/D125.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0482}∈S_{C-0482}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0482})=1].
@@ -17077,7 +17077,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0483}(s_{C-0483})>0 ∧ J_n^+(C_{C-0483})=1 ∧ J_n^-(C_{C-0483})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D125`
+- 依赖 / Depends on: [D125](docs/zh/functions/items/D125.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0483}∈S_{C-0483}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0483})=1].
@@ -17097,11 +17097,11 @@ English: Rule-based English rendering pending human review.
 ### [#484｜乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120不可逆性判据完全一致：S_vN>0⟺Ξ=∞ / 乘法纠缠验证 - 8维乘法系统S_vN=ln8=2.08, 8维加法系统S_vN=0. 混合系统α=0.3时S_vN=0.62. 纠缠度与D120不可逆性判据完全一致: S_vN>0⟺Ξ=∞](docs/zh/cases/items/C-0484.md)
 
 **案例内容 / Case Content**
-中文：案例说明：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120不可逆性判据完全一致：S_vN>0⟺Ξ=∞。核心函数：[D126](docs/zh/functions/items/D126.md)
+中文：案例说明：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与[D120](docs/zh/functions/items/D120.md)不可逆性判据完全一致：S_vN>0⟺Ξ=∞。核心函数：[D126](docs/zh/functions/items/D126.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120不可逆性判据完全一致：S_vN>0⟺Ξ=∞。核心函数：[D126](docs/zh/functions/items/D126.md)
+中文：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与[D120](docs/zh/functions/items/D120.md)不可逆性判据完全一致：S_vN>0⟺Ξ=∞。核心函数：[D126](docs/zh/functions/items/D126.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17112,7 +17112,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0484}(s_{C-0484})>0 ∧ J_n^+(C_{C-0484})=1 ∧ J_n^-(C_{C-0484})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D126`
+- 依赖 / Depends on: [D126](docs/zh/functions/items/D126.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0484}∈S_{C-0484}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0484})=1].
@@ -17147,7 +17147,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0485}(s_{C-0485})>0 ∧ J_n^+(C_{C-0485})=1 ∧ J_n^-(C_{C-0485})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D126`
+- 依赖 / Depends on: [D126](docs/zh/functions/items/D126.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0485}∈S_{C-0485}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0485})=1].
@@ -17167,11 +17167,11 @@ English: Rule-based English rendering pending human review.
 ### [#486｜路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高](docs/zh/cases/items/C-0486.md)
 
 **案例内容 / Case Content**
-中文：案例说明：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：[D127](docs/zh/functions/items/D127.md)
+中文：案例说明：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（[D118](docs/zh/functions/items/D118.md)预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：[D127](docs/zh/functions/items/D127.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：[D127](docs/zh/functions/items/D127.md)
+中文：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（[D118](docs/zh/functions/items/D118.md)预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高。核心函数：[D127](docs/zh/functions/items/D127.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17182,7 +17182,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0486}(s_{C-0486})>0 ∧ J_n^+(C_{C-0486})=1 ∧ J_n^-(C_{C-0486})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D127`
+- 依赖 / Depends on: [D127](docs/zh/functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0486}∈S_{C-0486}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0486})=1].
@@ -17217,7 +17217,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0487}(s_{C-0487})>0 ∧ J_n^+(C_{C-0487})=1 ∧ J_n^-(C_{C-0487})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D127`
+- 依赖 / Depends on: [D127](docs/zh/functions/items/D127.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0487}∈S_{C-0487}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0487})=1].
@@ -17252,7 +17252,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0488}(s_{C-0488})>0 ∧ J_n^+(C_{C-0488})=1 ∧ J_n^-(C_{C-0488})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D128`
+- 依赖 / Depends on: [D128](docs/zh/functions/items/D128.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0488}∈S_{C-0488}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0488})=1].
@@ -17287,7 +17287,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0489}(s_{C-0489})>0 ∧ J_n^+(C_{C-0489})=1 ∧ J_n^-(C_{C-0489})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D128`
+- 依赖 / Depends on: [D128](docs/zh/functions/items/D128.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0489}∈S_{C-0489}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0489})=1].
@@ -17322,7 +17322,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0490}(s_{C-0490})>0 ∧ J_n^+(C_{C-0490})=1 ∧ J_n^-(C_{C-0490})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D128`
+- 依赖 / Depends on: [D128](docs/zh/functions/items/D128.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0490}∈S_{C-0490}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0490})=1].
@@ -17357,7 +17357,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0491}(s_{C-0491})>0 ∧ J_n^+(C_{C-0491})=1 ∧ J_n^-(C_{C-0491})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D128`
+- 依赖 / Depends on: [D128](docs/zh/functions/items/D128.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0491}∈S_{C-0491}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0491})=1].
@@ -17392,7 +17392,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0492}(s_{C-0492})>0 ∧ J_n^+(C_{C-0492})=1 ∧ J_n^-(C_{C-0492})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D128`
+- 依赖 / Depends on: [D128](docs/zh/functions/items/D128.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0492}∈S_{C-0492}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0492})=1].
@@ -17427,7 +17427,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0493}(s_{C-0493})>0 ∧ J_n^+(C_{C-0493})=1 ∧ J_n^-(C_{C-0493})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D199`
+- 依赖 / Depends on: [D199](docs/zh/functions/items/D199.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0493}∈S_{C-0493}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0493})=1].
@@ -17462,7 +17462,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0494}(s_{C-0494})>0 ∧ J_n^+(C_{C-0494})=1 ∧ J_n^-(C_{C-0494})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D198`
+- 依赖 / Depends on: [D198](docs/zh/functions/items/D198.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0494}∈S_{C-0494}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0494})=1].
@@ -17497,7 +17497,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0495}(s_{C-0495})>0 ∧ J_n^+(C_{C-0495})=1 ∧ J_n^-(C_{C-0495})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D227`
+- 依赖 / Depends on: [D227](docs/zh/functions/items/D227.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0495}∈S_{C-0495}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0495})=1].
@@ -17532,7 +17532,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0496}(s_{C-0496})>0 ∧ J_n^+(C_{C-0496})=1 ∧ J_n^-(C_{C-0496})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D191`
+- 依赖 / Depends on: [D191](docs/zh/functions/items/D191.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0496}∈S_{C-0496}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0496})=1].
@@ -17552,11 +17552,11 @@ English: Rule-based English rendering pending human review.
 ### [#497｜文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版](docs/zh/cases/items/C-0497.md)
 
 **案例内容 / Case Content**
-中文：案例说明：文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版。核心函数：[D228](docs/zh/functions/items/D228.md)
+中文：案例说明：文明崩溃=Φ加速衰减 — 多个门控面同时消失，[D228](docs/zh/functions/items/D228.md)双通道衰减的文明版。核心函数：[D228](docs/zh/functions/items/D228.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版。核心函数：[D228](docs/zh/functions/items/D228.md)
+中文：文明崩溃=Φ加速衰减 — 多个门控面同时消失，[D228](docs/zh/functions/items/D228.md)双通道衰减的文明版。核心函数：[D228](docs/zh/functions/items/D228.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17567,7 +17567,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0497}(s_{C-0497})>0 ∧ J_n^+(C_{C-0497})=1 ∧ J_n^-(C_{C-0497})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D228`
+- 依赖 / Depends on: [D228](docs/zh/functions/items/D228.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0497}∈S_{C-0497}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0497})=1].
@@ -17602,7 +17602,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0498}(s_{C-0498})>0 ∧ J_n^+(C_{C-0498})=1 ∧ J_n^-(C_{C-0498})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D196`
+- 依赖 / Depends on: [D196](docs/zh/functions/items/D196.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0498}∈S_{C-0498}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0498})=1].
@@ -17637,7 +17637,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0499}(s_{C-0499})>0 ∧ J_n^+(C_{C-0499})=1 ∧ J_n^-(C_{C-0499})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D234`
+- 依赖 / Depends on: [D234](docs/zh/functions/items/D234.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0499}∈S_{C-0499}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0499})=1].
@@ -17657,11 +17657,11 @@ English: Rule-based English rendering pending human review.
 ### [#500｜宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例](docs/zh/cases/items/C-0500.md)
 
 **案例内容 / Case Content**
-中文：案例说明：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例。核心函数：[D223](docs/zh/functions/items/D223.md)
+中文：案例说明：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，[D223](docs/zh/functions/items/D223.md)的终极案例。核心函数：[D223](docs/zh/functions/items/D223.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例。核心函数：[D223](docs/zh/functions/items/D223.md)
+中文：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，[D223](docs/zh/functions/items/D223.md)的终极案例。核心函数：[D223](docs/zh/functions/items/D223.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17672,7 +17672,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0500}(s_{C-0500})>0 ∧ J_n^+(C_{C-0500})=1 ∧ J_n^-(C_{C-0500})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D223`
+- 依赖 / Depends on: [D223](docs/zh/functions/items/D223.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0500}∈S_{C-0500}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0500})=1].
@@ -17698,11 +17698,11 @@ English: Rule-based English rendering pending human review.
 ### [#501｜D152严格检验](docs/zh/cases/items/C-0501.md)
 
 **案例内容 / Case Content**
-中文：案例说明：D152严格检验——五条标准逐条过，结论：半幻觉，是诊断不是处方
+中文：案例说明：[D152](docs/zh/functions/items/D152.md)严格检验——五条标准逐条过，结论：半幻觉，是诊断不是处方
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：D152严格检验——五条标准逐条过，结论：半幻觉，是诊断不是处方
+中文：[D152](docs/zh/functions/items/D152.md)严格检验——五条标准逐条过，结论：半幻觉，是诊断不是处方
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17713,7 +17713,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0501}(s_{C-0501})>0 ∧ J_n^+(C_{C-0501})=1 ∧ J_n^-(C_{C-0501})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D152`
+- 依赖 / Depends on: [D152](docs/zh/functions/items/D152.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0501}∈S_{C-0501}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0501})=1].
@@ -17748,7 +17748,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0502}(s_{C-0502})>0 ∧ J_n^+(C_{C-0502})=1 ∧ J_n^-(C_{C-0502})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D134`
+- 依赖 / Depends on: [D134](docs/zh/functions/items/D134.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0502}∈S_{C-0502}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0502})=1].
@@ -17783,7 +17783,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0503}(s_{C-0503})>0 ∧ J_n^+(C_{C-0503})=1 ∧ J_n^-(C_{C-0503})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D135`
+- 依赖 / Depends on: [D135](docs/zh/functions/items/D135.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0503}∈S_{C-0503}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0503})=1].
@@ -17818,7 +17818,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0504}(s_{C-0504})>0 ∧ J_n^+(C_{C-0504})=1 ∧ J_n^-(C_{C-0504})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D136`
+- 依赖 / Depends on: [D136](docs/zh/functions/items/D136.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0504}∈S_{C-0504}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0504})=1].
@@ -17853,7 +17853,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0505}(s_{C-0505})>0 ∧ J_n^+(C_{C-0505})=1 ∧ J_n^-(C_{C-0505})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D137`
+- 依赖 / Depends on: [D137](docs/zh/functions/items/D137.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0505}∈S_{C-0505}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0505})=1].
@@ -17888,7 +17888,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0506}(s_{C-0506})>0 ∧ J_n^+(C_{C-0506})=1 ∧ J_n^-(C_{C-0506})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D138`
+- 依赖 / Depends on: [D138](docs/zh/functions/items/D138.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0506}∈S_{C-0506}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0506})=1].
@@ -17923,7 +17923,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0507}(s_{C-0507})>0 ∧ J_n^+(C_{C-0507})=1 ∧ J_n^-(C_{C-0507})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D136`
+- 依赖 / Depends on: [D136](docs/zh/functions/items/D136.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0507}∈S_{C-0507}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0507})=1].
@@ -17958,7 +17958,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0508}(s_{C-0508})>0 ∧ J_n^+(C_{C-0508})=1 ∧ J_n^-(C_{C-0508})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D139`
+- 依赖 / Depends on: [D139](docs/zh/functions/items/D139.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0508}∈S_{C-0508}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0508})=1].
@@ -17978,11 +17978,11 @@ English: Rule-based English rendering pending human review.
 ### [#509｜测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：D111策略的S_ignition全局最小，偏离D111的策略S增大，梯度指向D111方向。在Fisher度规定义的黎曼流形上，D111确实是测地线](docs/zh/cases/items/C-0509.md)
 
 **案例内容 / Case Content**
-中文：案例说明：测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：D111策略的S_ignition全局最小，偏离D111的策略S增大，梯度指向D111方向。在Fisher度规定义的黎曼流形上，D111确实是测地线。核心函数：[D139](docs/zh/functions/items/D139.md)
+中文：案例说明：测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：[D111](docs/zh/functions/items/D111.md)策略的S_ignition全局最小，偏离[D111](docs/zh/functions/items/D111.md)的策略S增大，梯度指向[D111](docs/zh/functions/items/D111.md)方向。在Fisher度规定义的黎曼流形上，[D111](docs/zh/functions/items/D111.md)确实是测地线。核心函数：[D139](docs/zh/functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：D111策略的S_ignition全局最小，偏离D111的策略S增大，梯度指向D111方向。在Fisher度规定义的黎曼流形上，D111确实是测地线。核心函数：[D139](docs/zh/functions/items/D139.md)
+中文：测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：[D111](docs/zh/functions/items/D111.md)策略的S_ignition全局最小，偏离[D111](docs/zh/functions/items/D111.md)的策略S增大，梯度指向[D111](docs/zh/functions/items/D111.md)方向。在Fisher度规定义的黎曼流形上，[D111](docs/zh/functions/items/D111.md)确实是测地线。核心函数：[D139](docs/zh/functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -17993,7 +17993,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0509}(s_{C-0509})>0 ∧ J_n^+(C_{C-0509})=1 ∧ J_n^-(C_{C-0509})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D139`
+- 依赖 / Depends on: [D139](docs/zh/functions/items/D139.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0509}∈S_{C-0509}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0509})=1].
@@ -18028,7 +18028,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0510}(s_{C-0510})>0 ∧ J_n^+(C_{C-0510})=1 ∧ J_n^-(C_{C-0510})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D139`
+- 依赖 / Depends on: [D139](docs/zh/functions/items/D139.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0510}∈S_{C-0510}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0510})=1].
@@ -18063,7 +18063,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0511}(s_{C-0511})>0 ∧ J_n^+(C_{C-0511})=1 ∧ J_n^-(C_{C-0511})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D139`
+- 依赖 / Depends on: [D139](docs/zh/functions/items/D139.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0511}∈S_{C-0511}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0511})=1].
@@ -18083,11 +18083,11 @@ English: Rule-based English rendering pending human review.
 ### [#512｜最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→D111策略在ε₇方向的级联修正最强。与D87乘法临界漂移一致 / 最弱维度=曲率奇点验证 - 8维系统中第7维ε₇=0.05(最弱): 该方向Fisher度规g₇₇=1/0.05²=400, 是其他方向的10-100倍. 曲率在ε₇方向发散 -> β由ε₇决定 -> D111策略在ε₇方向的级联修正最强. 与D87乘法临界漂移一致](docs/zh/cases/items/C-0512.md)
 
 **案例内容 / Case Content**
-中文：案例说明：最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→D111策略在ε₇方向的级联修正最强。与D87乘法临界漂移一致。核心函数：[D139](docs/zh/functions/items/D139.md)
+中文：案例说明：最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→[D111](docs/zh/functions/items/D111.md)策略在ε₇方向的级联修正最强。与[D87](docs/zh/functions/items/D87.md)乘法临界漂移一致。核心函数：[D139](docs/zh/functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→D111策略在ε₇方向的级联修正最强。与D87乘法临界漂移一致。核心函数：[D139](docs/zh/functions/items/D139.md)
+中文：最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→[D111](docs/zh/functions/items/D111.md)策略在ε₇方向的级联修正最强。与[D87](docs/zh/functions/items/D87.md)乘法临界漂移一致。核心函数：[D139](docs/zh/functions/items/D139.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18098,7 +18098,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0512}(s_{C-0512})>0 ∧ J_n^+(C_{C-0512})=1 ∧ J_n^-(C_{C-0512})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D139`
+- 依赖 / Depends on: [D139](docs/zh/functions/items/D139.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0512}∈S_{C-0512}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0512})=1].
@@ -18118,11 +18118,11 @@ English: Rule-based English rendering pending human review.
 ### [#513｜测地线唯一性验证 — 3维系统10000次随机采样：D111的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离D111 10%→S增大0.8%，梯度指向D111 / 测地线唯一性验证 - 3维系统10000次随机采样: D111的S_ignition全局最小, 无第二极值点. 二阶变分δ²S=0.34>0确认稳定. 偏离D111 10% -> S增大0.8%, 梯度指向D111](docs/zh/cases/items/C-0513.md)
 
 **案例内容 / Case Content**
-中文：案例说明：测地线唯一性验证 — 3维系统10000次随机采样：D111的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离D111 10%→S增大0.8%，梯度指向D111。核心函数：[D140](docs/zh/functions/items/D140.md)
+中文：案例说明：测地线唯一性验证 — 3维系统10000次随机采样：[D111](docs/zh/functions/items/D111.md)的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离[D111](docs/zh/functions/items/D111.md) 10%→S增大0.8%，梯度指向[D111](docs/zh/functions/items/D111.md)。核心函数：[D140](docs/zh/functions/items/D140.md)
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：测地线唯一性验证 — 3维系统10000次随机采样：D111的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离D111 10%→S增大0.8%，梯度指向D111。核心函数：[D140](docs/zh/functions/items/D140.md)
+中文：测地线唯一性验证 — 3维系统10000次随机采样：[D111](docs/zh/functions/items/D111.md)的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离[D111](docs/zh/functions/items/D111.md) 10%→S增大0.8%，梯度指向[D111](docs/zh/functions/items/D111.md)。核心函数：[D140](docs/zh/functions/items/D140.md)
 English: Rule-based English rendering pending human review.
 
 **纯数学函数与推导 / Pure Mathematical Function and Derivation**
@@ -18133,7 +18133,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0513}(s_{C-0513})>0 ∧ J_n^+(C_{C-0513})=1 ∧ J_n^-(C_{C-0513})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D140`
+- 依赖 / Depends on: [D140](docs/zh/functions/items/D140.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0513}∈S_{C-0513}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0513})=1].
@@ -18168,7 +18168,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0514}(s_{C-0514})>0 ∧ J_n^+(C_{C-0514})=1 ∧ J_n^-(C_{C-0514})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D141`
+- 依赖 / Depends on: [D141](docs/zh/functions/items/D141.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0514}∈S_{C-0514}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0514})=1].
@@ -18203,7 +18203,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0515}(s_{C-0515})>0 ∧ J_n^+(C_{C-0515})=1 ∧ J_n^-(C_{C-0515})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D142`
+- 依赖 / Depends on: [D142](docs/zh/functions/items/D142.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0515}∈S_{C-0515}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0515})=1].
@@ -18238,7 +18238,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0516}(s_{C-0516})>0 ∧ J_n^+(C_{C-0516})=1 ∧ J_n^-(C_{C-0516})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D143`
+- 依赖 / Depends on: [D143](docs/zh/functions/items/D143.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0516}∈S_{C-0516}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0516})=1].
@@ -18273,7 +18273,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0517}(s_{C-0517})>0 ∧ J_n^+(C_{C-0517})=1 ∧ J_n^-(C_{C-0517})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D144`
+- 依赖 / Depends on: [D144](docs/zh/functions/items/D144.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0517}∈S_{C-0517}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0517})=1].
@@ -18308,7 +18308,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0518}(s_{C-0518})>0 ∧ J_n^+(C_{C-0518})=1 ∧ J_n^-(C_{C-0518})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D145`
+- 依赖 / Depends on: [D145](docs/zh/functions/items/D145.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0518}∈S_{C-0518}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0518})=1].
@@ -18343,7 +18343,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0519}(s_{C-0519})>0 ∧ J_n^+(C_{C-0519})=1 ∧ J_n^-(C_{C-0519})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D146`
+- 依赖 / Depends on: [D146](docs/zh/functions/items/D146.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0519}∈S_{C-0519}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0519})=1].
@@ -18378,7 +18378,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0520}(s_{C-0520})>0 ∧ J_n^+(C_{C-0520})=1 ∧ J_n^-(C_{C-0520})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D147`
+- 依赖 / Depends on: [D147](docs/zh/functions/items/D147.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0520}∈S_{C-0520}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0520})=1].
@@ -18413,7 +18413,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0521}(s_{C-0521})>0 ∧ J_n^+(C_{C-0521})=1 ∧ J_n^-(C_{C-0521})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D148`
+- 依赖 / Depends on: [D148](docs/zh/functions/items/D148.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0521}∈S_{C-0521}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0521})=1].
@@ -18448,7 +18448,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0522}(s_{C-0522})>0 ∧ J_n^+(C_{C-0522})=1 ∧ J_n^-(C_{C-0522})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D149`
+- 依赖 / Depends on: [D149](docs/zh/functions/items/D149.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0522}∈S_{C-0522}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0522})=1].
@@ -18483,7 +18483,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0523}(s_{C-0523})>0 ∧ J_n^+(C_{C-0523})=1 ∧ J_n^-(C_{C-0523})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0523}∈S_{C-0523}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0523})=1].
@@ -18518,7 +18518,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0524}(s_{C-0524})>0 ∧ J_n^+(C_{C-0524})=1 ∧ J_n^-(C_{C-0524})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0524}∈S_{C-0524}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0524})=1].
@@ -18553,7 +18553,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0525}(s_{C-0525})>0 ∧ J_n^+(C_{C-0525})=1 ∧ J_n^-(C_{C-0525})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0525}∈S_{C-0525}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0525})=1].
@@ -18588,7 +18588,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0526}(s_{C-0526})>0 ∧ J_n^+(C_{C-0526})=1 ∧ J_n^-(C_{C-0526})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0526}∈S_{C-0526}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0526})=1].
@@ -18623,7 +18623,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0527}(s_{C-0527})>0 ∧ J_n^+(C_{C-0527})=1 ∧ J_n^-(C_{C-0527})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0527}∈S_{C-0527}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0527})=1].
@@ -18658,7 +18658,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0528}(s_{C-0528})>0 ∧ J_n^+(C_{C-0528})=1 ∧ J_n^-(C_{C-0528})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D117`, `D158`
+- 依赖 / Depends on: [D117](docs/zh/functions/items/D117.md), [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0528}∈S_{C-0528}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0528})=1].
@@ -18694,7 +18694,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0529}(s_{C-0529})>0 ∧ J_n^+(C_{C-0529})=1 ∧ J_n^-(C_{C-0529})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0529}∈S_{C-0529}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0529})=1].
@@ -18729,7 +18729,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0530}(s_{C-0530})>0 ∧ J_n^+(C_{C-0530})=1 ∧ J_n^-(C_{C-0530})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0530}∈S_{C-0530}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0530})=1].
@@ -18764,7 +18764,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0531}(s_{C-0531})>0 ∧ J_n^+(C_{C-0531})=1 ∧ J_n^-(C_{C-0531})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0531}∈S_{C-0531}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0531})=1].
@@ -18799,7 +18799,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0532}(s_{C-0532})>0 ∧ J_n^+(C_{C-0532})=1 ∧ J_n^-(C_{C-0532})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0532}∈S_{C-0532}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0532})=1].
@@ -18834,7 +18834,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0533}(s_{C-0533})>0 ∧ J_n^+(C_{C-0533})=1 ∧ J_n^-(C_{C-0533})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0533}∈S_{C-0533}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0533})=1].
@@ -18869,7 +18869,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0534}(s_{C-0534})>0 ∧ J_n^+(C_{C-0534})=1 ∧ J_n^-(C_{C-0534})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0534}∈S_{C-0534}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0534})=1].
@@ -18904,7 +18904,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0535}(s_{C-0535})>0 ∧ J_n^+(C_{C-0535})=1 ∧ J_n^-(C_{C-0535})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0535}∈S_{C-0535}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0535})=1].
@@ -18939,7 +18939,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0536}(s_{C-0536})>0 ∧ J_n^+(C_{C-0536})=1 ∧ J_n^-(C_{C-0536})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0536}∈S_{C-0536}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0536})=1].
@@ -18974,7 +18974,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0537}(s_{C-0537})>0 ∧ J_n^+(C_{C-0537})=1 ∧ J_n^-(C_{C-0537})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0537}∈S_{C-0537}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0537})=1].
@@ -19009,7 +19009,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0538}(s_{C-0538})>0 ∧ J_n^+(C_{C-0538})=1 ∧ J_n^-(C_{C-0538})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0538}∈S_{C-0538}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0538})=1].
@@ -19044,7 +19044,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0539}(s_{C-0539})>0 ∧ J_n^+(C_{C-0539})=1 ∧ J_n^-(C_{C-0539})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0539}∈S_{C-0539}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0539})=1].
@@ -19079,7 +19079,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0540}(s_{C-0540})>0 ∧ J_n^+(C_{C-0540})=1 ∧ J_n^-(C_{C-0540})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0540}∈S_{C-0540}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0540})=1].
@@ -19114,7 +19114,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0541}(s_{C-0541})>0 ∧ J_n^+(C_{C-0541})=1 ∧ J_n^-(C_{C-0541})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0541}∈S_{C-0541}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0541})=1].
@@ -19149,7 +19149,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0542}(s_{C-0542})>0 ∧ J_n^+(C_{C-0542})=1 ∧ J_n^-(C_{C-0542})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0542}∈S_{C-0542}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0542})=1].
@@ -19184,7 +19184,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0543}(s_{C-0543})>0 ∧ J_n^+(C_{C-0543})=1 ∧ J_n^-(C_{C-0543})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0543}∈S_{C-0543}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0543})=1].
@@ -19219,7 +19219,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0544}(s_{C-0544})>0 ∧ J_n^+(C_{C-0544})=1 ∧ J_n^-(C_{C-0544})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0544}∈S_{C-0544}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0544})=1].
@@ -19254,7 +19254,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0545}(s_{C-0545})>0 ∧ J_n^+(C_{C-0545})=1 ∧ J_n^-(C_{C-0545})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0545}∈S_{C-0545}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0545})=1].
@@ -19289,7 +19289,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0546}(s_{C-0546})>0 ∧ J_n^+(C_{C-0546})=1 ∧ J_n^-(C_{C-0546})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0546}∈S_{C-0546}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0546})=1].
@@ -19324,7 +19324,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0547}(s_{C-0547})>0 ∧ J_n^+(C_{C-0547})=1 ∧ J_n^-(C_{C-0547})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0547}∈S_{C-0547}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0547})=1].
@@ -19359,7 +19359,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0548}(s_{C-0548})>0 ∧ J_n^+(C_{C-0548})=1 ∧ J_n^-(C_{C-0548})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0548}∈S_{C-0548}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0548})=1].
@@ -19394,7 +19394,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0549}(s_{C-0549})>0 ∧ J_n^+(C_{C-0549})=1 ∧ J_n^-(C_{C-0549})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0549}∈S_{C-0549}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0549})=1].
@@ -19429,7 +19429,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0550}(s_{C-0550})>0 ∧ J_n^+(C_{C-0550})=1 ∧ J_n^-(C_{C-0550})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0550}∈S_{C-0550}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0550})=1].
@@ -19464,7 +19464,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0551}(s_{C-0551})>0 ∧ J_n^+(C_{C-0551})=1 ∧ J_n^-(C_{C-0551})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0551}∈S_{C-0551}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0551})=1].
@@ -19499,7 +19499,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0552}(s_{C-0552})>0 ∧ J_n^+(C_{C-0552})=1 ∧ J_n^-(C_{C-0552})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0552}∈S_{C-0552}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0552})=1].
@@ -19534,7 +19534,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0553}(s_{C-0553})>0 ∧ J_n^+(C_{C-0553})=1 ∧ J_n^-(C_{C-0553})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0553}∈S_{C-0553}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0553})=1].
@@ -19569,7 +19569,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0554}(s_{C-0554})>0 ∧ J_n^+(C_{C-0554})=1 ∧ J_n^-(C_{C-0554})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0554}∈S_{C-0554}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0554})=1].
@@ -19604,7 +19604,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0555}(s_{C-0555})>0 ∧ J_n^+(C_{C-0555})=1 ∧ J_n^-(C_{C-0555})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0555}∈S_{C-0555}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0555})=1].
@@ -19639,7 +19639,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0556}(s_{C-0556})>0 ∧ J_n^+(C_{C-0556})=1 ∧ J_n^-(C_{C-0556})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0556}∈S_{C-0556}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0556})=1].
@@ -19674,7 +19674,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0557}(s_{C-0557})>0 ∧ J_n^+(C_{C-0557})=1 ∧ J_n^-(C_{C-0557})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0557}∈S_{C-0557}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0557})=1].
@@ -19709,7 +19709,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0558}(s_{C-0558})>0 ∧ J_n^+(C_{C-0558})=1 ∧ J_n^-(C_{C-0558})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0558}∈S_{C-0558}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0558})=1].
@@ -19744,7 +19744,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0559}(s_{C-0559})>0 ∧ J_n^+(C_{C-0559})=1 ∧ J_n^-(C_{C-0559})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0559}∈S_{C-0559}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0559})=1].
@@ -19779,7 +19779,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0560}(s_{C-0560})>0 ∧ J_n^+(C_{C-0560})=1 ∧ J_n^-(C_{C-0560})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0560}∈S_{C-0560}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0560})=1].
@@ -19814,7 +19814,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0561}(s_{C-0561})>0 ∧ J_n^+(C_{C-0561})=1 ∧ J_n^-(C_{C-0561})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0561}∈S_{C-0561}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0561})=1].
@@ -19849,7 +19849,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0562}(s_{C-0562})>0 ∧ J_n^+(C_{C-0562})=1 ∧ J_n^-(C_{C-0562})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D158`
+- 依赖 / Depends on: [D158](docs/zh/functions/items/D158.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0562}∈S_{C-0562}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0562})=1].
@@ -20026,7 +20026,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0567}(s_{C-0567})>0 ∧ J_n^+(C_{C-0567})=1 ∧ J_n^-(C_{C-0567})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D464`, `D465`
+- 依赖 / Depends on: [D464](docs/zh/functions/items/D464.md), [D465](docs/zh/functions/items/D465.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0567}∈S_{C-0567}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0567})=1].
@@ -20063,7 +20063,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0568}(s_{C-0568})>0 ∧ J_n^+(C_{C-0568})=1 ∧ J_n^-(C_{C-0568})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D466`
+- 依赖 / Depends on: [D466](docs/zh/functions/items/D466.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0568}∈S_{C-0568}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0568})=1].
@@ -20099,7 +20099,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0569}(s_{C-0569})>0 ∧ J_n^+(C_{C-0569})=1 ∧ J_n^-(C_{C-0569})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D467`
+- 依赖 / Depends on: [D467](docs/zh/functions/items/D467.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0569}∈S_{C-0569}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0569})=1].
@@ -20135,7 +20135,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0570}(s_{C-0570})>0 ∧ J_n^+(C_{C-0570})=1 ∧ J_n^-(C_{C-0570})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D467`
+- 依赖 / Depends on: [D467](docs/zh/functions/items/D467.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0570}∈S_{C-0570}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0570})=1].
@@ -20171,7 +20171,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0571}(s_{C-0571})>0 ∧ J_n^+(C_{C-0571})=1 ∧ J_n^-(C_{C-0571})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D468`
+- 依赖 / Depends on: [D468](docs/zh/functions/items/D468.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0571}∈S_{C-0571}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0571})=1].
@@ -20207,7 +20207,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0572}(s_{C-0572})>0 ∧ J_n^+(C_{C-0572})=1 ∧ J_n^-(C_{C-0572})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D467`, `D465`
+- 依赖 / Depends on: [D467](docs/zh/functions/items/D467.md), [D465](docs/zh/functions/items/D465.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0572}∈S_{C-0572}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0572})=1].
@@ -20244,7 +20244,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0573}(s_{C-0573})>0 ∧ J_n^+(C_{C-0573})=1 ∧ J_n^-(C_{C-0573})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D467`, `D297`
+- 依赖 / Depends on: [D467](docs/zh/functions/items/D467.md), [D297](docs/zh/functions/items/D297.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0573}∈S_{C-0573}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0573})=1].
@@ -20281,7 +20281,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0574}(s_{C-0574})>0 ∧ J_n^+(C_{C-0574})=1 ∧ J_n^-(C_{C-0574})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D469`
+- 依赖 / Depends on: [D469](docs/zh/functions/items/D469.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0574}∈S_{C-0574}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0574})=1].
@@ -20317,7 +20317,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0575}(s_{C-0575})>0 ∧ J_n^+(C_{C-0575})=1 ∧ J_n^-(C_{C-0575})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D469`
+- 依赖 / Depends on: [D469](docs/zh/functions/items/D469.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0575}∈S_{C-0575}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0575})=1].
@@ -20353,7 +20353,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0576}(s_{C-0576})>0 ∧ J_n^+(C_{C-0576})=1 ∧ J_n^-(C_{C-0576})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D469`
+- 依赖 / Depends on: [D469](docs/zh/functions/items/D469.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0576}∈S_{C-0576}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0576})=1].
@@ -20389,7 +20389,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0577}(s_{C-0577})>0 ∧ J_n^+(C_{C-0577})=1 ∧ J_n^-(C_{C-0577})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D470`
+- 依赖 / Depends on: [D470](docs/zh/functions/items/D470.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0577}∈S_{C-0577}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0577})=1].
@@ -20425,7 +20425,7 @@ English: Rule-based English rendering pending human review.
 - 有效条件 / Validity: `C_{C-0578}(s_{C-0578})>0 ∧ J_n^+(C_{C-0578})=1 ∧ J_n^-(C_{C-0578})=0`
 - 推导类型 / Derivation type: `case_witness_mapping_derivation`
 - 收敛状态 / Convergence status: `converged`
-- 依赖 / Depends on: `D469`, `D466`
+- 依赖 / Depends on: [D469](docs/zh/functions/items/D469.md), [D466](docs/zh/functions/items/D466.md)
 - 推导步骤 / Steps:
   - 1. Encode the event as state s_{C-0578}∈S_{C-0578}.
   - 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0578})=1].

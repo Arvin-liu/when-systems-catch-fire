@@ -39,39 +39,39 @@
 - [系统与化学 / Systems and Chemistry](docs/zh/effects/categories/systems-chemistry.md) - 1 leads
 
 ## Items
-- EFF-0001 状态时间重写效应 / State-Time Rewrite Effect
-- EFF-0002 代际逃逸死锁效应 / Generational Deadlock-Escape Effect
-- EFF-0003 维度坐标化边界效应 / Dimensional Coordinate Boundary Effect
-- EFF-0004 有限观察者全知不可能效应 / Finite Observer Omniscience Impossibility Effect
-- EFF-0005 上下文饱和重置效应 / Context Saturation Reset Effect
-- EFF-0006 判断阈值坍缩效应 / Judgment Threshold Collapse Effect
-- EFF-0007 路径依赖分化效应 / Path-Dependent Differentiation Effect
-- EFF-0008 负期望回本陷阱效应 / Negative-Expectation Recovery Trap Effect
-- EFF-0009 外显信号调制效应 / External Signal Modulation Effect
-- EFF-0010 信念先验驱动控制效应 / Belief-Prior Control Effect
-- EFF-0011 跨域相互作用同构效应 / Cross-Domain Interaction Homomorphism Effect
-- EFF-0012 低成本后台直觉效应 / Low-Cost Background Intuition Effect
-- EFF-0013 睡眠清除门控效应 / Sleep Clearance Gate Effect
-- EFF-0014 小群体资源不易感效应 / Small-Group Resource Low-Susceptibility Effect
-- EFF-0015 炎症反馈报警效应 / Inflammation Feedback Alarm Effect
-- EFF-0016 气液剪切成泡效应 / Gas-Liquid Shear Foaming Effect
-- EFF-0017 烹饪参数窗口效应 / Cooking Parameter Window Effect
-- EFF-0018 表面活性降能效应 / Surfactant Energy-Barrier Reduction Effect
-- EFF-0019 驱动状态耗散效应 / Drive-State Dissipation Effect
-- EFF-0020 动态不稳定稳定化效应 / Dynamic Instability Stabilization Effect
-- EFF-0021 自维持坍缩边界效应 / Self-Maintenance Collapse Boundary Effect
-- EFF-0022 自举条件敏感效应 / Bootstrap Condition Sensitivity Effect
-- EFF-0023 透明介质信息通道效应 / Transparent-Medium Information Channel Effect
-- EFF-0024 商业单资源竞争效应 / Single-Resource Business Competition Effect
-- EFF-0025 偏好-愉悦共同势函数效应 / Preference-Pleasure Common Potential Effect
-- EFF-0026 内源输出再输入污染效应 / Endogenous Output Reinput Contamination Effect
-- EFF-0027 主动下一代生命边界效应 / Active Next-Generation Life Boundary Effect
-- EFF-0028 睡眠修复窗口效应 / Sleep Repair Window Effect
-- EFF-0029 心率累积耗损效应 / Heart-Rate Cumulative Load Effect
-- EFF-0030 皮屑屏障-微生态失配效应 / Dandruff Barrier-Microbiome Mismatch Effect
-- EFF-0031 免疫-感染阈值效应 / Immune-Infection Threshold Effect
-- EFF-0032 神经自举唤醒效应 / Neural Bootstrap Arousal Effect
-- EFF-0033 信息自聚合场效应 / Information Self-Aggregation Field Effect
-- EFF-0034 短视频奖励压缩效应 / Short-Video Reward Compression Effect
-- EFF-0035 梦境离线生成整合效应 / Dream Offline Generative Consolidation Effect
-- EFF-0036 形式系统外推边界效应 / Formal-System Projection Boundary Effect
+- [EFF-0001](../../docs/zh/effects/items/EFF-0001.md) 状态时间重写效应 / State-Time Rewrite Effect
+- [EFF-0002](../../docs/zh/effects/items/EFF-0002.md) 代际逃逸死锁效应 / Generational Deadlock-Escape Effect
+- [EFF-0003](../../docs/zh/effects/items/EFF-0003.md) 维度坐标化边界效应 / Dimensional Coordinate Boundary Effect
+- [EFF-0004](../../docs/zh/effects/items/EFF-0004.md) 有限观察者全知不可能效应 / Finite Observer Omniscience Impossibility Effect
+- [EFF-0005](../../docs/zh/effects/items/EFF-0005.md) 上下文饱和重置效应 / Context Saturation Reset Effect
+- [EFF-0006](../../docs/zh/effects/items/EFF-0006.md) 判断阈值坍缩效应 / Judgment Threshold Collapse Effect
+- [EFF-0007](../../docs/zh/effects/items/EFF-0007.md) 路径依赖分化效应 / Path-Dependent Differentiation Effect
+- [EFF-0008](../../docs/zh/effects/items/EFF-0008.md) 负期望回本陷阱效应 / Negative-Expectation Recovery Trap Effect
+- [EFF-0009](../../docs/zh/effects/items/EFF-0009.md) 外显信号调制效应 / External Signal Modulation Effect
+- [EFF-0010](../../docs/zh/effects/items/EFF-0010.md) 信念先验驱动控制效应 / Belief-Prior Control Effect
+- [EFF-0011](../../docs/zh/effects/items/EFF-0011.md) 跨域相互作用同构效应 / Cross-Domain Interaction Homomorphism Effect
+- [EFF-0012](../../docs/zh/effects/items/EFF-0012.md) 低成本后台直觉效应 / Low-Cost Background Intuition Effect
+- [EFF-0013](../../docs/zh/effects/items/EFF-0013.md) 睡眠清除门控效应 / Sleep Clearance Gate Effect
+- [EFF-0014](../../docs/zh/effects/items/EFF-0014.md) 小群体资源不易感效应 / Small-Group Resource Low-Susceptibility Effect
+- [EFF-0015](../../docs/zh/effects/items/EFF-0015.md) 炎症反馈报警效应 / Inflammation Feedback Alarm Effect
+- [EFF-0016](../../docs/zh/effects/items/EFF-0016.md) 气液剪切成泡效应 / Gas-Liquid Shear Foaming Effect
+- [EFF-0017](../../docs/zh/effects/items/EFF-0017.md) 烹饪参数窗口效应 / Cooking Parameter Window Effect
+- [EFF-0018](../../docs/zh/effects/items/EFF-0018.md) 表面活性降能效应 / Surfactant Energy-Barrier Reduction Effect
+- [EFF-0019](../../docs/zh/effects/items/EFF-0019.md) 驱动状态耗散效应 / Drive-State Dissipation Effect
+- [EFF-0020](../../docs/zh/effects/items/EFF-0020.md) 动态不稳定稳定化效应 / Dynamic Instability Stabilization Effect
+- [EFF-0021](../../docs/zh/effects/items/EFF-0021.md) 自维持坍缩边界效应 / Self-Maintenance Collapse Boundary Effect
+- [EFF-0022](../../docs/zh/effects/items/EFF-0022.md) 自举条件敏感效应 / Bootstrap Condition Sensitivity Effect
+- [EFF-0023](../../docs/zh/effects/items/EFF-0023.md) 透明介质信息通道效应 / Transparent-Medium Information Channel Effect
+- [EFF-0024](../../docs/zh/effects/items/EFF-0024.md) 商业单资源竞争效应 / Single-Resource Business Competition Effect
+- [EFF-0025](../../docs/zh/effects/items/EFF-0025.md) 偏好-愉悦共同势函数效应 / Preference-Pleasure Common Potential Effect
+- [EFF-0026](../../docs/zh/effects/items/EFF-0026.md) 内源输出再输入污染效应 / Endogenous Output Reinput Contamination Effect
+- [EFF-0027](../../docs/zh/effects/items/EFF-0027.md) 主动下一代生命边界效应 / Active Next-Generation Life Boundary Effect
+- [EFF-0028](../../docs/zh/effects/items/EFF-0028.md) 睡眠修复窗口效应 / Sleep Repair Window Effect
+- [EFF-0029](../../docs/zh/effects/items/EFF-0029.md) 心率累积耗损效应 / Heart-Rate Cumulative Load Effect
+- [EFF-0030](../../docs/zh/effects/items/EFF-0030.md) 皮屑屏障-微生态失配效应 / Dandruff Barrier-Microbiome Mismatch Effect
+- [EFF-0031](../../docs/zh/effects/items/EFF-0031.md) 免疫-感染阈值效应 / Immune-Infection Threshold Effect
+- [EFF-0032](../../docs/zh/effects/items/EFF-0032.md) 神经自举唤醒效应 / Neural Bootstrap Arousal Effect
+- [EFF-0033](../../docs/zh/effects/items/EFF-0033.md) 信息自聚合场效应 / Information Self-Aggregation Field Effect
+- [EFF-0034](../../docs/zh/effects/items/EFF-0034.md) 短视频奖励压缩效应 / Short-Video Reward Compression Effect
+- [EFF-0035](../../docs/zh/effects/items/EFF-0035.md) 梦境离线生成整合效应 / Dream Offline Generative Consolidation Effect
+- [EFF-0036](../../docs/zh/effects/items/EFF-0036.md) 形式系统外推边界效应 / Formal-System Projection Boundary Effect
