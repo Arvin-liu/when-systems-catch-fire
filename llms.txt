@@ -154,3 +154,10 @@ Allowed:
 
 Every function-case relation must include entailment_status = non_entailing.
 Relation records live in data/relations/function-case-relations.jsonl.
+
+# Effect Lead Identity Audit:
+# EFF numbering does not prove that an object is an effect. A lead effect must be
+# mathematically audited before it can be treated as an effect candidate. It may
+# actually be a function candidate, analytic solution candidate, discovery candidate,
+# prediction candidate, answer candidate, supplement note, existing reference,
+# misnumbered item, or needs_human_review item. Do not default-accept EFF leads as effects.
