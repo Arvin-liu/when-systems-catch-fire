@@ -204,9 +204,9 @@ English: Curated discoveries and curated predictions must pass an academic novel
 - 发现回答：我们已经看见了什么。 / Discovery answers: what have we already seen.
 - 预测回答：由此可以预期什么，并且未来如何验证或证伪。 / Prediction answers: what can be expected and how it will be tested or falsified.
 
-## 五层知识对象 / Five Knowledge Object Layers
+## 知识对象层 / Knowledge Object Layers
 
-中文：点火仓库的五层知识对象分别是函数、案例、发现、预测与新答案。不要把五层写混，也不要把发现、预测与新答案混为一层。
+中文：点火仓库的知识对象包括函数、案例、发现、预测、新答案等。这些对象层不是封闭的，可能随新项目增长。不要把不同对象类型写混，也不要把发现、预测与新答案混为一层。
 
 English: The five knowledge object layers in the Ignition repository are function, case, discovery, prediction, and new answer. Do not mix the five layers, and do not collapse discovery into prediction or prediction into new answer.
 
@@ -218,11 +218,11 @@ English: The five knowledge object layers in the Ignition repository are functio
 
 ## 动态数字与排序规则 / Dynamic Counts and Sorting Rule
 
-中文：仓库中所有数量都必须由脚本从数据源动态统计，不得手写固定数。凡是带数量且可排序的表，都必须按数量动态排序。README 的五入口保持语义顺序，但数量必须动态渲染。
+中文：仓库中所有数量都必须由脚本从数据源动态统计，不得手写固定数。凡是带数量且可排序的表，都必须按数量动态排序。README 的动态入口保持语义顺序，但数量必须动态渲染。
 
 English: All counts in the repository must be dynamically generated from data sources. Any count-bearing table that can be sorted must be dynamically sorted. The README five-entry table keeps the semantic order, but its counts must be rendered dynamically.
 
-- README.md 四入口数量
+- README.md 动态入口数量
 - DISCOVERIES.md 分类表
 - PREDICTIONS.md 分类表
 - ANSWERS.md 分类表
@@ -237,6 +237,37 @@ English: All counts in the repository must be dynamically generated from data so
 - 分类表按正式条目数、待整理线索数、覆盖量降序排序。
 - Recent 列表按 updated_at / created_at 降序排序。
 - 统计表按数量降序排序。
+
+## 动态知识对象层 / Dynamic Knowledge Object Layers
+
+中文：本仓库的知识对象层不是封闭的。函数、效应、案例、发现、预测、新答案、解析解等对象均可因新问题、新好奇、新案例、新推导而增长。任何 Agent 不得将当前数量视为终局数量，也不得将当前结构视为封闭结构。数学对象分类先行于验证：必须先判断对象属于哪一类（函数、效应、解析解、发现、预测、新答案、案例、补充说明），再决定是否进入对应系统。
+
+English: The knowledge object layers in this repository are not closed. Functions, effects, cases, discoveries, predictions, new answers, and analytic solutions may grow through new questions, curiosities, cases, and derivations. No Agent may treat current counts as final or current layers as closed. Classify before validating: determine what class an object belongs to (function, effect, analytic solution, discovery, prediction, answer, case, note) before deciding which system it enters.
+
+## 自举验证不是增长锁 / Bootstrap Verification Is Not a Growth Lock
+
+中文：正反交叉自举循环的作用是验证，不是阻止增长。一个新对象没有通过完整验证时，不得进入 active 状态，但可以进入 candidate、lead、pending、needs_evidence、needs_human_review、existing_reference 等非 active 状态。自举循环用于防止幻觉式 active 结论，而不是阻止新问题、新好奇、新线索进入仓库。
+
+状态机：
+  new curiosity / user question -> candidate -> lead -> academic_search_pending -> academic_search_passed / existing_reference / inconclusive / pending -> dual_channel_pending -> active / needs_evidence / contradiction / underdetermined
+
+关键规则：
+1. 未通过学术搜索，不得 active。
+2. 未通过正反自举，不得 active。
+3. 未通过不等于删除。
+4. 未通过可以保留为 lead / candidate / pending。
+5. contradiction 进入 blocker，不代表整个项目停止增长。
+6. 自举循环可以阻止"定稿"，不能阻止"进入候选池"。
+
+English: The dual-channel bootstrap verification loop is for validation, not for blocking growth. An unverified object must not enter active status but may enter candidate, lead, pending, needs_evidence, needs_human_review, or existing_reference. Bootstrap prevents hallucinated active conclusions, not new leads entering the repository.
+
+Key rules:
+1. Must pass academic search before becoming active.
+2. Must pass dual-channel bootstrap before becoming active.
+3. Failure to pass does NOT mean deletion.
+4. Failed items may be kept as lead / candidate / pending.
+5. Contradiction entries go to blocker, do NOT stop project growth.
+6. Bootstrap prevents "finalized" conclusions, not "candidate pool" entries.
 
 ## 双语标题规则 / Bilingual Title Rule
 

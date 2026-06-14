@@ -1,0 +1,24 @@
+{
+  "run_type": "mathematical_object_classification",
+  "scanned_total": 37,
+  "classification_items": 37,
+  "function_candidates": 0,
+  "effect_candidates": 36,
+  "analytic_solution_candidates": 1,
+  "discovery_candidates": 0,
+  "prediction_candidates": 0,
+  "answer_candidates": 0,
+  "case_candidates": 0,
+  "note_candidates": 0,
+  "existing_reference_candidates": 0,
+  "needs_human_review": 0,
+  "lead_effects_reviewed": 36,
+  "lead_effects_confirmed_effect": 36,
+  "lead_effects_misclassified": 0,
+  "lead_effects_effect_candidate": 36,
+  "generated_at": "2026-06-14T12:45:00+08:00",
+  "source_files": [
+    "data/object-classification/classification-candidates.json",
+    "data/object-classification/classification-candidates-report.md"
+  ]
+}

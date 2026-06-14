@@ -1,0 +1,14 @@
+{
+  "report_type": "effect-leads-reclassification-review",
+  "reviewed_lead_effects": 36,
+  "default_accepted_as_effect": false,
+  "confirmed_possible_effects": 36,
+  "suspected_misclassified": 0,
+  "downgraded_to_note_or_reference": 0,
+  "needs_human_review": 0,
+  "classification_basis": "All 36 items (EFF-0001 to EFF-0036) were previously classified as answer_new_effect_candidate. Mathematical classification criteria applied: each describes a stable observable phenomenon under specific conditions (C => delta Y != 0), answers 'what stable phenomenon occurred', is not the mechanism itself, and can be explained by functions. All 36 meet effect criteria.",
+  "recommendation": "All 36 are classified as effect candidates with medium confidence. They require dual-channel bootstrap verification before becoming active effects. Migration to data/effects/ is proposed but not executed in this classification-only phase.",
+  "migration_executed": false,
+  "migration_proposed": true,
+  "file": "data/object-classification/effect-leads-reclassification-review.json"
+}
