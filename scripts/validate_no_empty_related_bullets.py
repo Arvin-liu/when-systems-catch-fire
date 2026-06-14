@@ -31,7 +31,7 @@ def find_empty_bullets():
 
             in_related_section = False
             for i, line in enumerate(lines, 1):
-                if re.match(r'^##\s*(?:相关对象|Related Objects|相关函数|Related Functions|关联案例|Related Cases|相关发现|Related Discoveries|相关预测|Related Predictions|相关答案|Related Answers|相关效应|Related Effects|相关解析解|Related Analytic Solutions)', line, re.IGNORECASE):
+                if re.match(r'^##\s*(?:相关对象|Related Objects|相关函数|Related Functions|关联案例|Related Cases|相关发现|Related Discoveries|相关预测|Related Predictions|相关答案|Related Answers|相关解析解|Related Analytic Solutions)', line, re.IGNORECASE):
                     in_related_section = True
                     continue
                 if line.startswith("## "):
@@ -63,7 +63,7 @@ def fix_empty_bullets():
             in_related_section = False
 
             for i, line in enumerate(lines):
-                if re.match(r'^##\s*(?:相关对象|Related Objects|相关函数|Related Functions|关联案例|Related Cases|相关发现|Related Discoveries|相关预测|Related Predictions|相关答案|Related Answers|相关效应|Related Effects|相关解析解|Related Analytic Solutions)', line, re.IGNORECASE):
+                if re.match(r'^##\s*(?:相关对象|Related Objects|相关函数|Related Functions|关联案例|Related Cases|相关发现|Related Discoveries|相关预测|Related Predictions|相关答案|Related Answers|相关解析解|Related Analytic Solutions)', line, re.IGNORECASE):
                     in_related_section = True
                 if line.startswith("## ") and not re.match(r'^##\s*(?:相关对象|Related Objects)', line, re.IGNORECASE):
                     in_related_section = False

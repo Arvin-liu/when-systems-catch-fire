@@ -1,7 +1,7 @@
 # 项目级规范化 JSONL 数据层 / Project-level Normalized JSONL Data Layer
 
-中文：本目录是《点火》仓库的正式机器可读数据层，不是单独为得到大脑创建的适配层。得到大脑只是揭示了 JSONL 对机器逐行读取和批量碰撞分析更友好。
-English: This directory is the formal machine-readable data layer of the Ignition repository. It is not an adapter created only for Get Brain; Get Brain merely revealed that JSONL is friendlier for machine line-by-line reading and batch collision analysis.
+中文：本目录是《点火》仓库的正式机器可读数据层。
+English: This directory is the formal machine-readable data layer of the Ignition repository.
 
 中文：数据结构不是目的，一致性才是目的。
 English: Data structure is not the goal; consistency is the goal.
@@ -10,7 +10,6 @@ English: Data structure is not the goal; consistency is the goal.
 
 - `functions.jsonl` — 函数 / Functions
 - `cases.jsonl` — 案例 / Cases
-- `effect-leads.jsonl` — 效果线索 / Effect Leads
 - `manifest.json` — 清单 / Manifest
 - `schema/` — JSON Schema 定义
 
@@ -48,5 +47,4 @@ English: JSONL is not an external adapter; it is the formal machine-readable dat
 English: Data structure is not the goal; consistency is the goal.
 
 - `function-case-relations.jsonl` 为 0 行时，必须由诊断报告支持，不得伪造关系。
-- EFF 编号不证明对象是效应。
 - `lead` 不等于 `active`，不得把 lead 默认晋级为 active。

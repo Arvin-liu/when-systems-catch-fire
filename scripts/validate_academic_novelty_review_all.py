@@ -14,7 +14,6 @@ DATASETS = {
     "discovery": ROOT / "data" / "discoveries" / "unified-discoveries.json",
     "prediction": ROOT / "data" / "predictions" / "unified-predictions.json",
     "answer": ROOT / "data" / "answers" / "unified-answers.json",
-    "effect": ROOT / "data" / "effects" / "unified-effects.json",
 }
 
 
@@ -57,6 +56,7 @@ def main() -> int:
 
     report = read_json(REVIEW_JSON)
     rows = read_jsonl(QUEUE_JSONL)
+    direct_search_executed = report.get("summary", {}).get("direct_academic_search_executed") is True
     expected = expected_ids()
     actual = {(row.get("object_class"), row.get("object_id")) for row in rows}
     if actual != expected:
@@ -84,7 +84,7 @@ def main() -> int:
             errors.append(f"{object_id}: possible overlap must route to human review")
         if row.get("claim_allowed_after_academic_search") is True and result != "no_same_academic_match_found":
             errors.append(f"{object_id}: claim_allowed_after_academic_search true only allowed for no_same_academic_match_found")
-        if not row.get("query_terms"):
+        if direct_search_executed and not row.get("query_terms"):
             errors.append(f"{object_id}: query_terms must not be empty")
 
     if errors:

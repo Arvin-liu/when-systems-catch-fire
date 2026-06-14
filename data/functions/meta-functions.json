@@ -34,13 +34,18 @@
     },
     "source_status": "source_pending",
     "source_refs": [
-      "canonical-math:MF-0000-forward-reverse-fixed-point"
+      "canonical-math:MF-0000-forward-reverse-fixed-point",
+      "bootstrap-note:2026-06-15-target-function-boundary"
     ],
+    "boundary_note": {
+      "zh": "自举循环收敛只说明当前目标函数 G 与当前证据集 B_n 达到不动点；若 G 本身写错或证据集偏置，循环仍可能稳定在错误固定点。因此新增或改写必须保留反向通道、外部来源回指、数学推导与欠定标记。",
+      "en": "Bootstrap convergence only means that the current target function G and evidence state B_n reached a fixed point; if G is wrong or the evidence state is biased, the loop can still stabilize on a wrong fixed point. Therefore every addition or rewrite must keep the reverse channel, external source trace, mathematical derivation, and underdetermined marker."
+    },
     "related_objects": [],
     "page": "docs/zh/functions/meta/MF-0000.md",
-    "reviewer_note": "Pure mathematical representation of the root meta-operator. The current form defines abstract states, relations, forward and reverse judges, normalization, contradiction rejection, and fixed-point convergence without binding the formula to any concrete object class.",
+    "reviewer_note": "Pure mathematical representation of the root meta-operator. The current form defines abstract states, relations, forward and reverse judges, normalization, contradiction rejection, and fixed-point convergence without binding the formula to any concrete object class. Bootstrap convergence is not a proof that the target function is absolutely correct; it is a fixed-point result under the declared target and evidence state.",
     "created_at": "2026-06-13",
-    "updated_at": "2026-06-13",
+    "updated_at": "2026-06-15",
     "license": "CC-BY-NC-4.0"
   }
 ]

@@ -16,7 +16,7 @@ BASE = Path(__file__).resolve().parent.parent
 TARGET_FILES = [
     "README.md", "AGENT_ENTRY.md", "llms.txt",
     "FUNCTIONS.md", "CASES.md", "DISCOVERIES.md",
-    "PREDICTIONS.md", "ANSWERS.md", "EFFECTS.md",
+    "PREDICTIONS.md", "ANSWERS.md",
     "ANALYTIC_SOLUTIONS.md",
 ]
 

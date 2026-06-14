@@ -24,7 +24,6 @@ OBJECT_SPECS = {
     "discovery": (re.compile(r"^(DISC-\d+)$"), DOCS_ZH / "discoveries" / "items", "data/discoveries/unified-discoveries.json"),
     "prediction": (re.compile(r"^(PRED-\d+)$"), DOCS_ZH / "predictions" / "items", "data/predictions/unified-predictions.json"),
     "answer": (re.compile(r"^(ANS-\d+)$"), DOCS_ZH / "answers" / "items", "data/answers/unified-answers.json"),
-    "effect": (re.compile(r"^(EFF-\d+)$"), DOCS_ZH / "effects" / "items", "data/effects/unified-effects.json"),
     "analytic-solution": (re.compile(r"^(SOL-\d+)$"), DOCS_ZH / "analytic-solutions" / "items", "data/analytic-solutions/unified-analytic-solutions.json"),
 }
 
@@ -54,7 +53,7 @@ def build_registry():
         # Scan items directory for actual files
         if items_dir.exists():
             for f in sorted(items_dir.glob("*.md")):
-                obj_id = f.stem  # e.g. D1, EFF-0001
+                obj_id = f.stem  # e.g. D1, SOL-0001
                 if pattern.match(obj_id):
                     # Compute relative link path from root
                     rel_path = str(f.relative_to(BASE))

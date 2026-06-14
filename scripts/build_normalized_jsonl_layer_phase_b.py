@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 Phase B: Build remaining object-layer JSONL files.
-Reads canonical sources and generates effects, discoveries, predictions,
+Reads canonical sources and generates discoveries, predictions,
 answers, analytic-solutions, function-case-relations, object-classification-crosswalk.
-Does NOT touch functions/cases/effect-leads unless --refresh-core is passed.
+Does NOT touch functions/cases unless --refresh-core is passed.
 """
 
 import argparse
@@ -117,47 +117,6 @@ def write_jsonl(path, entries):
 
 # ---- builders ----
 
-def build_effects():
-    entries = []
-    src = CANONICAL_SRC / "effects" / "unified-effects.jsonl"
-    items = load_jsonl(src)
-    source_file = str(src)
-    source_sha = sha256_file(src)
-
-    for obj in items:
-        eff_id = obj.get("id", obj.get("ID", ""))
-        if not eff_id:
-            continue
-        entries.append({
-            "id": str(eff_id),
-            "object_class": "effect",
-            "name": safe_zh(obj.get("title", obj.get("name", obj.get("标题", "")))),
-            "name_en": safe_en(obj.get("title", obj.get("name", obj.get("英文名", "")))),
-            "definition": safe_str(obj.get("definition", obj.get("DEFINITION", obj.get("定义", obj.get("observed_change", ""))))),
-            "definition_en": safe_en(obj.get("definition", obj.get("DEFINITION_EN", obj.get("英文定义", obj.get("observed_change", ""))))),
-            "trigger_conditions": safe_list(obj.get("trigger_conditions", [])),
-            "observed_change": safe_str(obj.get("observed_change", obj.get("OBSERVED_CHANGE", ""))),
-            "effect_direction": safe_str(obj.get("effect_direction", obj.get("EFFECT_DIRECTION", ""))),
-            "measurable_signal": safe_str(obj.get("measurable_signal", obj.get("MEASURABLE_SIGNAL", ""))),
-            "expression": safe_str(obj.get("expression", obj.get("EXPRESSION", obj.get("math_expression", obj.get("measurable_signal", ""))))),
-            "derivation": safe_str(obj.get("mathematical_derivation", obj.get("DERIVATION", ""))),
-            "related_functions": extract_related_ids(obj.get("related_functions", [])),
-            "related_cases": extract_related_ids(obj.get("related_cases", [])),
-            "related_discoveries": extract_related_ids(obj.get("related_discoveries", [])),
-            "related_analytic_solutions": extract_related_ids(obj.get("related_analytic_solutions", [])),
-            "status": safe_str(obj.get("status", obj.get("STATUS", ""))),
-            "academic_novelty_status": safe_str(obj.get("academic_novelty", {}).get("status", "")),
-            "dual_channel_verification_status": safe_str(obj.get("bootstrap_status", "")),
-            "canonical_source": source_file,
-            "canonical_page": canonical_page_from_obj(obj.get("page", "")),
-            "schema_version": "normalized-jsonl-v1",
-            "generated_at": utc_now_iso(),
-            "source_commit": git_short_head(),
-            "source_sha": source_sha,
-            "inference_not_conclusion": True,
-        })
-    return entries
-
 def build_discoveries():
     entries = []
     src = CANONICAL_SRC / "discoveries" / "unified-discoveries.jsonl"
@@ -179,7 +138,6 @@ def build_discoveries():
             "description_en": safe_en(obj.get("summary", obj.get("content", obj.get("description", obj.get("DESCRIPTION_EN", ""))))),
             "related_functions": extract_related_ids(obj.get("related_functions", [])),
             "related_cases": extract_related_ids(obj.get("related_cases", [])),
-            "related_effects": extract_related_ids(obj.get("related_effects", [])),
             "related_analytic_solutions": extract_related_ids(obj.get("related_analytic_solutions", [])),
             "status": safe_str(obj.get("status", obj.get("STATUS", ""))),
             "academic_novelty_status": safe_str(obj.get("academic_novelty", {}).get("status", "")),
@@ -216,7 +174,6 @@ def build_predictions():
             "description": safe_str(obj.get("statement", obj.get("DESCRIPTION", obj.get("basis", "")))),
             "related_functions": extract_related_ids(obj.get("related_functions", [])),
             "related_cases": extract_related_ids(obj.get("related_cases", [])),
-            "related_effects": extract_related_ids(obj.get("related_effects", [])),
             "status": safe_str(obj.get("status", obj.get("STATUS", ""))),
             "academic_novelty_status": safe_str(obj.get("academic_novelty", {}).get("status", "")),
             "canonical_source": source_file,
@@ -250,7 +207,6 @@ def build_answers():
             "answer_en": safe_en(obj.get("answer", obj.get("ANSWER_EN", obj.get("new_explanation", "")))),
             "related_functions": extract_related_ids(obj.get("related_functions", [])),
             "related_cases": extract_related_ids(obj.get("related_cases", [])),
-            "related_effects": extract_related_ids(obj.get("related_effects", [])),
             "related_analytic_solutions": extract_related_ids(obj.get("related_analytic_solutions", [])),
             "status": safe_str(obj.get("status", obj.get("STATUS", ""))),
             "academic_novelty_status": safe_str(obj.get("academic_novelty", {}).get("status", "")),
@@ -288,7 +244,6 @@ def build_analytic_solutions():
             "verification": safe_str(obj.get("verification", obj.get("VERIFICATION", ""))),
             "related_functions": extract_related_ids(obj.get("related_functions", [])),
             "related_cases": extract_related_ids(obj.get("related_cases", [])),
-            "related_effects": extract_related_ids(obj.get("related_effects", [])),
             "status": safe_str(obj.get("status", obj.get("STATUS", ""))),
             "academic_novelty_status": safe_str(obj.get("academic_novelty", {}).get("status", "")),
             "canonical_source": source_file,
@@ -401,9 +356,9 @@ def main():
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--all", action="store_true")
     parser.add_argument("--skip-refresh-core", action="store_true", default=True,
-                        help="Skip rebuilding functions/cases/effect-leads (default: skip)")
+                        help="Skip rebuilding functions/cases (default: skip)")
     parser.add_argument("--refresh-core", action="store_true", dest="refresh_core",
-                        help="Also rebuild functions/cases/effect-leads (implies --all)")
+                        help="Also rebuild functions/cases (implies --all)")
     args = parser.parse_args()
 
     if not args.all and not args.dry_run:
@@ -414,7 +369,6 @@ def main():
     REBUILD_DIR.mkdir(parents=True, exist_ok=True)
 
     builders = [
-        ("effects.jsonl", build_effects, "effect"),
         ("discoveries.jsonl", build_discoveries, "discovery"),
         ("predictions.jsonl", build_predictions, "prediction"),
         ("answers.jsonl", build_answers, "answer"),
@@ -439,19 +393,16 @@ def main():
     if args.refresh_core:
         print("Rebuilding core JSONL files...")
         from scripts.build_normalized_jsonl_layer_minimal import (
-            build_functions, build_cases, build_effect_leads,
+            build_functions, build_cases,
             write_jsonl as write_jsonl_minimal, build_manifest
         )
         funcs = build_functions(True, True)
         cases = build_cases(True, True)
-        leads = build_effect_leads()
         write_jsonl_minimal(OUTPUT_DIR / "functions.jsonl", funcs)
         write_jsonl_minimal(OUTPUT_DIR / "cases.jsonl", cases)
-        write_jsonl_minimal(OUTPUT_DIR / "effect-leads.jsonl", leads)
-        build_manifest(len(funcs), len(cases), len(leads))
+        build_manifest(len(funcs), len(cases))
         results["functions.jsonl"] = funcs
         results["cases.jsonl"] = cases
-        results["effect-leads.jsonl"] = leads
         print("  core rebuilt")
 
     # Phase B report

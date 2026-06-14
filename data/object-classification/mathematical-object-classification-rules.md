@@ -3,7 +3,6 @@
 This repository separates mathematical object classes instead of collapsing everything into functions.
 
 - `function`: Has a reusable mapping, operator, mechanism, or structural expression with domain and codomain or explicit input-output relation.
-- `effect`: Describes a stable observed change, phenomenon, or output shift under conditions rather than the generating mechanism itself.
 - `analytic_solution`: Gives an explicit symbolic, closed-form, or verifiable solution to a defined mathematical problem.
 - `discovery`: States a new structural insight derived from functions, cases, or bootstrap reasoning.
 - `prediction`: States a testable future judgment with conditions and falsification criteria.
@@ -12,7 +11,6 @@ This repository separates mathematical object classes instead of collapsing ever
 
 ## Supported Classes
 - function
-- effect
 - analytic_solution
 - discovery
 - prediction

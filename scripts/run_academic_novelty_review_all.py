@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run academic novelty review for discoveries, predictions, answers, and effects.
+"""Run academic novelty review for discoveries, predictions, and answers.
 
 This script records a disposition queue instead of rewriting canonical object
 classes. Strong academic overlap is routed to downgrade review; weak overlap is
@@ -34,11 +34,10 @@ DATASETS = {
     "discovery": ROOT / "data" / "discoveries" / "unified-discoveries.json",
     "prediction": ROOT / "data" / "predictions" / "unified-predictions.json",
     "answer": ROOT / "data" / "answers" / "unified-answers.json",
-    "effect": ROOT / "data" / "effects" / "unified-effects.json",
 }
 REQUEST_TIMEOUT_SECONDS = 12
 
-OBJECT_ID_RE = re.compile(r"\b(?:D\d+|T\d+|MF-\d+|C-\d{4}|DISC-\d{4}|PRED-\d{4}|ANS-\d{4}|EFF-\d{4}|SOL-\d{4})\b")
+OBJECT_ID_RE = re.compile(r"\b(?:D\d+|T\d+|MF-\d+|C-\d{4}|DISC-\d{4}|PRED-\d{4}|ANS-\d{4}|SOL-\d{4})\b")
 TAG_RE = re.compile(r"<[^>]+>")
 
 
@@ -135,7 +134,6 @@ def query_fields(object_class: str) -> list[str]:
         "discovery": ["title", "summary", "content", "why_it_matters", "inference_chain"],
         "prediction": ["title", "statement", "basis", "test_condition", "falsification_condition"],
         "answer": ["title", "question", "answer", "prior_answers", "new_explanation", "testability"],
-        "effect": ["title", "observed_change", "trigger_conditions", "measurable_signal", "discipline"],
     }[object_class]
 
 
@@ -152,6 +150,8 @@ def related_title_queries(item: dict) -> list[str]:
 
 
 def generate_queries(object_class: str, item: dict, max_queries: int) -> list[str]:
+    if max_queries <= 0:
+        return []
     candidates: list[str] = []
     for field in query_fields(object_class):
         candidates.extend(text_values(item.get(field)))
@@ -411,6 +411,9 @@ def run(args: argparse.Namespace) -> dict:
 
     rows = [row for _, row in sorted(indexed_rows, key=lambda pair: pair[0])]
 
+    summary = summary_for(rows)
+    if args.max_queries_per_item <= 0:
+        summary["direct_academic_search_executed"] = False
     report = {
         "report_name": "all-object-academic-novelty-review",
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -422,7 +425,7 @@ def run(args: argparse.Namespace) -> dict:
             "match_limit": args.match_limit,
             "limit": args.limit,
         },
-        "summary": summary_for(rows),
+        "summary": summary,
         "results": rows,
     }
 

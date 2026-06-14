@@ -81,7 +81,7 @@ English: Whenever a new discovery is produced, add it as a separate discovery en
 - [DISC-0064｜D469 | 振荡优化函数 / D469 |](docs/zh/discoveries/items/DISC-0064.md) — novelty: inconclusive · Technology and Engineering
 - [DISC-0065｜D470 | 幽灵跳变阻尼函数 / D470 |](docs/zh/discoveries/items/DISC-0065.md) — novelty: inconclusive · Technology and Engineering
 - [DISC-0066｜D123 | 缓存容量倒U型函数 / D123 |](docs/zh/discoveries/items/DISC-0066.md) — novelty: inconclusive · Technology and Engineering
-- [[DISC-0067](docs/zh/discoveries/items/DISC-0067.md)｜[C-0498](docs/zh/cases/items/C-0498.md) | 技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp[-ln²]的技术版 / [C-0498](docs/zh/cases/items/C-0498.md) |](docs/zh/discoveries/items/DISC-0067.md) — novelty: inconclusive · Technology and Engineering
+- [DISC-0067｜C-0498 | 技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp[-ln²]的技术版 / C-0498 |](docs/zh/discoveries/items/DISC-0067.md) — novelty: inconclusive · Technology and Engineering
 - [DISC-0068｜C-0286 | 提示词工程=ηinterface优化 — 人类调高Pencode（精确描述意图），AI调高Pdecode（指令遵循），Ptransfer... / C-0286 | 提示词工程=ηinterface优化 - 人类调高Pencode(精确描述意图), AI调高Pdecode(指令遵循), Ptransfer受限于token窗口, 当前η≈0.3-0.7](docs/zh/discoveries/items/DISC-0068.md) — novelty: inconclusive · Technology and Engineering
 - [DISC-0069｜D424 | 两步策略唯一性函数 / D424 |](docs/zh/discoveries/items/DISC-0069.md) — novelty: inconclusive · Education and Learning
 - [DISC-0070｜D275 | 维度最优漂移函数 / D275 |](docs/zh/discoveries/items/DISC-0070.md) — novelty: inconclusive · Education and Learning
@@ -98,4 +98,9 @@ English: Whenever a new discovery is produced, add it as a separate discovery en
 - [DISC-0081｜A9 | P_exit(t,L,C) 退出概率 / A9 | P_exit(t,L,C) exit probability](docs/zh/discoveries/items/DISC-0081.md) — novelty: inconclusive · Other
 - [DISC-0082｜C-0064 | 阿兹特克 / C-0064 |](docs/zh/discoveries/items/DISC-0082.md) — novelty: inconclusive · Other
 - [DISC-0083｜C-0065 | 印加 / C-0065 |](docs/zh/discoveries/items/DISC-0083.md) — novelty: inconclusive · Other
+- [DISC-0084｜状态时间是序列计数投影，不是外部本体假设 / State time is a sequence-count projection, not an external ontology assumption](docs/zh/discoveries/items/DISC-0084.md) — novelty: inconclusive · Physics, Neuroscience and Consciousness, Philosophy
+- [DISC-0085｜维度可作为解释压缩坐标，而非对象固有标签 / Dimension can be an explanatory compression coordinate rather than an intrinsic label](docs/zh/discoveries/items/DISC-0085.md) — novelty: inconclusive · Physics, Philosophy, Technology and Engineering
+- [DISC-0086｜黑洞边界可表达为自维持系统的外部信息失配 / A black-hole boundary can be expressed as external information mismatch in a self-maintaining system](docs/zh/discoveries/items/DISC-0086.md) — novelty: inconclusive · Physics, AI and Systems, Philosophy
+- [DISC-0087｜生命式系统需要主动变体生成，而不只是被动复制 / Life-like systems require active variant generation, not only passive copying](docs/zh/discoveries/items/DISC-0087.md) — novelty: inconclusive · Biology, AI and Systems, Sociology and Politics
+- [DISC-0088｜形式系统外推必须保留可证明、可反驳、独立与欠定四个出口 / Formal-system extrapolation must keep provable, refutable, independent, and underdetermined exits](docs/zh/discoveries/items/DISC-0088.md) — novelty: inconclusive · Philosophy, Technology and Engineering, AI and Systems
 <!-- DISCOVERY_LIST_END -->

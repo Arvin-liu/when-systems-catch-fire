@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import json
-from collections import Counter
 from datetime import date
 from pathlib import Path
 
@@ -22,9 +21,7 @@ CANDIDATES_JSONL = OUT_DIR / "classification-candidates.jsonl"
 CANDIDATES_REPORT_MD = OUT_DIR / "classification-candidates-report.md"
 
 FUNCTIONS_JSON = REPO_ROOT / "data/functions/unified-functions.json"
-EFFECTS_JSON = REPO_ROOT / "data/effects/unified-effects.json"
 ANALYTIC_SOLUTIONS_JSON = REPO_ROOT / "data/analytic-solutions/unified-analytic-solutions.json"
-NEW_EFFECTS_JSON = REPO_ROOT / "data/answers/new-effects.json"
 
 
 def read_json(path: Path, default):
@@ -62,10 +59,6 @@ def build_rules_payload() -> dict:
                 "criterion": "Has a reusable mapping, operator, mechanism, or structural expression with domain and codomain or explicit input-output relation.",
             },
             {
-                "object_class": "effect",
-                "criterion": "Describes a stable observed change, phenomenon, or output shift under conditions rather than the generating mechanism itself.",
-            },
-            {
                 "object_class": "analytic_solution",
                 "criterion": "Gives an explicit symbolic, closed-form, or verifiable solution to a defined mathematical problem.",
             },
@@ -91,9 +84,6 @@ def build_rules_payload() -> dict:
 
 def build_candidates() -> list[dict]:
     functions = read_json(FUNCTIONS_JSON, [])
-    effects = read_json(EFFECTS_JSON, [])
-    analytic_solutions = read_json(ANALYTIC_SOLUTIONS_JSON, [])
-    new_effects = read_json(NEW_EFFECTS_JSON, [])
 
     candidates = []
     for item in functions:
@@ -112,22 +102,6 @@ def build_candidates() -> list[dict]:
                     "preserve_legacy_link": True,
                 }
             )
-
-    for item in new_effects:
-        candidates.append(
-            {
-                "legacy_id": item["id"],
-                "legacy_class": "answer_new_effect_candidate",
-                "new_class": "effect",
-                "new_id": item["id"],
-                "reason": "Structured effect candidate with conjecture, conclusion, and dual-channel derivation.",
-                "mathematical_criterion": "stable phenomenon under conditions",
-                "migration_action": "copy_with_crosslink",
-                "source_path": item.get("page", ""),
-                "target_path": f"docs/zh/effects/items/{item['id']}.md",
-                "preserve_legacy_link": True,
-            }
-        )
 
     report_items = [
         {
@@ -150,23 +124,17 @@ def build_candidates() -> list[dict]:
 
 def build_report_payload() -> dict:
     functions = read_json(FUNCTIONS_JSON, [])
-    effects = read_json(EFFECTS_JSON, [])
     analytic_solutions = read_json(ANALYTIC_SOLUTIONS_JSON, [])
-    new_effects = read_json(NEW_EFFECTS_JSON, [])
     report_items = build_candidates()
-    counts = Counter(entry["new_class"] for entry in report_items)
     return {
         "generated_at": date.today().isoformat(),
         "functions_count": len(functions),
-        "effects_count": len(effects) or sum(1 for item in new_effects if item.get("status")),
         "analytic_solutions_count": len(analytic_solutions),
         "needs_human_review_count": 0,
         "crosswalk_count": len(report_items),
-        "crosswalk_effect_count": counts.get("effect", 0),
-        "crosswalk_solution_count": counts.get("analytic_solution", 0),
+        "crosswalk_solution_count": sum(1 for entry in report_items if entry["new_class"] == "analytic_solution"),
         "legacy_links_preserved": True,
         "ordinary_functions_preserved": len(functions),
-        "effect_candidates_from_answers": len(new_effects),
         "active_new_items_with_passed_novelty": 0,
         "active_new_items_with_pending_novelty": 0,
         "items": report_items,
@@ -188,7 +156,6 @@ def render_rules_md() -> str:
             "",
             "## Supported Classes",
             "- function",
-            "- effect",
             "- analytic_solution",
             "- discovery",
             "- prediction",
@@ -205,7 +172,6 @@ def render_report_md(payload: dict) -> str:
         "",
         f"- Generated at: {payload['generated_at']}",
         f"- Ordinary functions preserved: {payload['ordinary_functions_preserved']}",
-        f"- Effect candidates: {payload['effect_candidates_from_answers']}",
         f"- Analytic solution candidates: {payload['analytic_solutions_count']}",
         f"- Crosswalk entries: {payload['crosswalk_count']}",
         f"- Legacy links preserved: {str(payload['legacy_links_preserved']).lower()}",

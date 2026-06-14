@@ -23,7 +23,6 @@ ANSWERS_JSONL = DATA_DIR / "unified-answers.jsonl"
 ANSWERS_INDEX_MD = DATA_DIR / "unified-answers-index.md"
 ANSWERS_LIST_MD = REPO_ROOT / "ANSWERS.md"
 ANSWER_TEMPLATE_MD = ANSWER_DIR / "ANSWER_TEMPLATE.md"
-NEW_EFFECTS_MD = ANSWER_DIR / "new-effects.md"
 CATEGORIES_JSON = DATA_DIR / "categories.json"
 CATEGORIES_JSONL = DATA_DIR / "categories.jsonl"
 CATEGORY_MAP_JSON = DATA_DIR / "category-map.json"
@@ -619,14 +618,6 @@ def render_answers_index(answers: list[dict], category_map: list[dict]) -> str:
     else:
         lines.append("- 暂无新答案。 / No answers yet.")
     lines.append(END_MARKER)
-    lines.extend(
-        [
-            "",
-            "## 新效应表 / New Effects",
-            "",
-            "- [新效应表 / New Effects](docs/zh/answers/new-effects.md)",
-        ]
-    )
     lines.append("")
     return "\n".join(lines)
 

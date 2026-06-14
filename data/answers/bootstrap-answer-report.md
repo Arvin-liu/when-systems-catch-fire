@@ -9,11 +9,11 @@
 
 ## Sources
 
-- dianhuo/originals: 2716
-- dianhuo/04-materials/raw-notes: 21
-- functions: 470
-- cases: 578
-- discoveries: 83
+- dianhuo/originals: 0
+- dianhuo/04-materials/raw-notes: 0
+- functions: 475
+- cases: 594
+- discoveries: 88
 - predictions: 8
 
 ## Notes

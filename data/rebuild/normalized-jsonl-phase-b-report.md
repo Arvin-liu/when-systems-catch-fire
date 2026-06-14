@@ -12,13 +12,12 @@
 
 | File | Line Count |
 |------|-----------|
-| effects.jsonl | 36 |
-| discoveries.jsonl | 83 |
+| discoveries.jsonl | 88 |
 | predictions.jsonl | 8 |
 | answers.jsonl | 12 |
 | analytic-solutions.jsonl | 1 |
 | function-case-relations.jsonl | 0 |
-| object-classification-crosswalk.jsonl | 37 |
+| object-classification-crosswalk.jsonl | 1 |
 
 - Required fields: dynamic
 - Counts: dynamic (not hardcoded)

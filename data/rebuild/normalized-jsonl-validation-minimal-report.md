@@ -8,6 +8,5 @@
 
 | File | Lines |
 |------|-------|
-| functions.jsonl | 713 |
-| cases.jsonl | 710 |
-| effect-leads.jsonl | 36 |
+| functions.jsonl | 718 |
+| cases.jsonl | 726 |

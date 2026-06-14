@@ -691,6 +691,8 @@ def write_reports(run_dir: Path, run_id: str, rounds: int) -> dict[str, Any]:
 
     function_rows = [row for row in latest_rows if row["type"] == "function"]
     case_rows = [row for row in latest_rows if row["type"] == "case"]
+    expected_function_total = len(read_json(FUNCTIONS_JSON, []))
+    expected_case_total = len(read_json(CASES_JSON, []))
     write_jsonl(REBUILD_DIR / "dual-channel-function-verification.jsonl", function_rows)
     write_jsonl(REBUILD_DIR / "dual-channel-case-verification.jsonl", case_rows)
     write_jsonl(REBUILD_DIR / "dual-channel-contradictions.jsonl", contradiction_rows)
@@ -701,8 +703,8 @@ def write_reports(run_dir: Path, run_id: str, rounds: int) -> dict[str, Any]:
     write_jsonl(run_dir / "results/deltas.jsonl", [{"round": rounds, "delta_from_previous_round": round_delta}])
 
     converged = (
-        len(function_rows) == 470
-        and len(case_rows) == 578
+        len(function_rows) == expected_function_total
+        and len(case_rows) == expected_case_total
         and not contradiction_rows
         and not underdetermined_rows
         and not pending_rows
@@ -727,6 +729,8 @@ def write_reports(run_dir: Path, run_id: str, rounds: int) -> dict[str, Any]:
         "generated_at": utc_now(),
         "function_total": len(function_rows),
         "case_total": len(case_rows),
+        "expected_function_total": expected_function_total,
+        "expected_case_total": expected_case_total,
         "rounds_completed": rounds,
         "function_true": count_by_result(latest_rows, "function", "true"),
         "function_false": count_by_result(latest_rows, "function", "false"),
@@ -765,8 +769,8 @@ def write_reports(run_dir: Path, run_id: str, rounds: int) -> dict[str, Any]:
         "",
         f"- run_id: {run_id}",
         f"- generated_at: {summary['generated_at']}",
-        f"- functions verified: {summary['function_total']} / 470",
-        f"- cases verified: {summary['case_total']} / 578",
+        f"- functions verified: {summary['function_total']} / {summary['expected_function_total']}",
+        f"- cases verified: {summary['case_total']} / {summary['expected_case_total']}",
         f"- rounds_completed: {rounds}",
         f"- converged: {str(converged).lower()}",
         f"- status: {status}",
@@ -797,8 +801,8 @@ def write_reports(run_dir: Path, run_id: str, rounds: int) -> dict[str, Any]:
     (run_dir / "reports/round-001-report.md").write_text(full_md, encoding="utf-8", newline="\n")
     (run_dir / "reports/round-002-report.md").write_text(full_md, encoding="utf-8", newline="\n")
 
-    function_md = ["# Dual-Channel Function Verification", "", render_table("Functions", function_rows, limit=470)]
-    case_md = ["# Dual-Channel Case Verification", "", render_table("Cases", case_rows, limit=578)]
+    function_md = ["# Dual-Channel Function Verification", "", render_table("Functions", function_rows, limit=expected_function_total)]
+    case_md = ["# Dual-Channel Case Verification", "", render_table("Cases", case_rows, limit=expected_case_total)]
     contradiction_md = ["# Dual-Channel Contradictions", "", render_table("Contradictions", contradiction_rows, limit=500)]
     under_md = ["# Dual-Channel Underdetermined", "", render_table("Underdetermined", underdetermined_rows, limit=1000)]
     (REBUILD_DIR / "dual-channel-function-verification.md").write_text("\n".join(function_md), encoding="utf-8", newline="\n")
@@ -958,8 +962,8 @@ def main() -> int:
         return 0
 
     functions, cases = load_sources()
-    if len(functions) != 470 or len(cases) != 578:
-        print(f"ERROR: expected 470 functions and 578 cases, got {len(functions)} and {len(cases)}", file=sys.stderr)
+    if not functions or not cases:
+        print(f"ERROR: expected non-empty functions and cases, got {len(functions)} and {len(cases)}", file=sys.stderr)
         return 1
 
     run_dir = run_dir_for(args.run_id)

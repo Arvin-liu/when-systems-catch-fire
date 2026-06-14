@@ -40,7 +40,6 @@ def main():
 
     # Collect all Phase B files
     phase_b_files = [
-        "effects.jsonl",
         "discoveries.jsonl",
         "predictions.jsonl",
         "answers.jsonl",
@@ -50,7 +49,7 @@ def main():
     ]
 
     # Also include core files if they exist (they may have been updated)
-    core_files = ["functions.jsonl", "cases.jsonl", "effect-leads.jsonl"]
+    core_files = ["functions.jsonl", "cases.jsonl"]
 
     files = []
     for fname in phase_b_files + core_files:
@@ -92,19 +91,7 @@ def main():
     else:
         manifest = {"schema_version": "normalized-jsonl-v1", "generated_at": "", "files": []}
 
-    # Normalize files to dict for merging
-    existing_entries = {}
-    files_raw = manifest.get("files", [])
-    if isinstance(files_raw, dict):
-        existing_entries = dict(files_raw)
-    elif isinstance(files_raw, list):
-        existing_entries = {item.get("path", ""): item for item in files_raw if isinstance(item, dict)}
-    
-    for f in files:
-        existing_entries[f["path"]] = f
-
-    # Write back as dict (preserves existing format)
-    manifest["files"] = existing_entries
+    manifest["files"] = {f["path"]: f for f in files}
 
     with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2)

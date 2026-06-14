@@ -2,27 +2,23 @@
 
 This is the primary entry file for AI Agents working with When Systems Catch Fire / 点火.
 
-## 得到大脑纯文字入口规则 / Get Brain Plain-Text Entry Rule
-
-中文：本仓库为得到大脑维护两个专用纯文字入口：`get-brain/unified-functions-full.md` 和 `get-brain/unified-cases-full.md`。它们分别是全量统一函数总表和全量统一案例总表。任何后续新增、改写、删除函数或案例时，必须同步重建这两个入口，并运行 `scripts/validate_get_brain_plain_tables.py --check`。
-English: This repository maintains two dedicated plain-text entry files for Get Brain: `get-brain/unified-functions-full.md` and `get-brain/unified-cases-full.md`. They are the full unified function table and the full unified case table. Any future addition, rewrite, or deletion of functions or cases must rebuild these entries and run `scripts/validate_get_brain_plain_tables.py --check`.
-
 ## 当前项目定位
 
-《点火》当前不是固定书稿项目,而是一个开放维护的函数、案例、发现、预测与新答案知识库。当前主结构是:
+《点火》当前不是固定书稿项目,而是一个开放维护的函数、案例、发现、预测、新答案与解析解知识库。当前主结构是:
 
 1. 函数层:`data/functions/`
 2. 案例层:`data/cases/`
 3. 新发现说明层:`data/discoveries/`
 4. 预测说明层:`data/predictions/`
 5. 新答案说明层:`data/answers/`
-6. 历史书稿层:`archive/book-legacy/`
-7. 原始来源层:`dianhuo/originals/`
+6. 解析解层:`data/analytic-solutions/`
+7. 历史书稿层:`archive/book-legacy/`
+8. 原始来源层:`dianhuo/originals/`
 
 ## 数学对象分类规则 / Mathematical Object Classification Rule
 
-中文:本仓库不得把所有对象统称为函数。函数、效应、解析解、发现、预测、新答案、案例必须按数学标准分类。函数是映射或机制表达;效应是条件下出现的稳定现象或变化模式;解析解是对明确数学问题的符号解、闭式解或可验证表达。
-English: This repository must not classify every object as a function. Functions, effects, analytic solutions, discoveries, predictions, answers, and cases must be separated by mathematical criteria. A function is a mapping or mechanism expression; an effect is a stable phenomenon or change pattern under conditions; an analytic solution is a symbolic, closed-form, or verifiable expression solving a mathematical problem.
+中文:本仓库不得把所有对象统称为函数。函数、解析解、发现、预测、新答案、案例必须按数学标准分类。函数是映射或机制表达;解析解是对明确数学问题的符号解、闭式解或可验证表达。
+English: This repository must not classify every object as a function. Functions, analytic solutions, discoveries, predictions, answers, and cases must be separated by mathematical criteria. A function is a mapping or mechanism expression; an analytic solution is a symbolic, closed-form, or verifiable expression solving a mathematical problem.
 
 ## 项目定位句锁定规则 / Project Positioning Lock
 
@@ -41,18 +37,13 @@ English: Any object that claims to be "new" must pass the academic novelty gate 
 
 ## 对象编号链接规则 / Object ID Link Rule
 
-中文:Markdown 中凡写入真实对象编号,包括函数、案例、发现、预测、新答案、效应与解析解编号,编号本身必须是到对应对象页的链接。代码块、公式型行内代码和非对象编号示例除外。更新 Markdown 后运行 `scripts/linkify_object_ids.py` 与 `scripts/validate_object_id_links.py`。
-English: Whenever a real object ID is written in Markdown, including function, case, discovery, prediction, answer, effect, and analytic-solution IDs, the ID itself must be a link to the corresponding object page. Code fences, formula-like inline code, and non-object examples are exempt. After Markdown updates, run `scripts/linkify_object_ids.py` and `scripts/validate_object_id_links.py`.
+中文:Markdown 中凡写入真实对象编号,包括函数、案例、发现、预测、新答案与解析解编号,编号本身必须是到对应对象页的链接。代码块、公式型行内代码和非对象编号示例除外。更新 Markdown 后运行 `scripts/linkify_object_ids.py` 与 `scripts/validate_object_id_links.py`。
+English: Whenever a real object ID is written in Markdown, including function, case, discovery, prediction, answer, and analytic-solution IDs, the ID itself must be a link to the corresponding object page. Code fences, formula-like inline code, and non-object examples are exempt. After Markdown updates, run `scripts/linkify_object_ids.py` and `scripts/validate_object_id_links.py`.
 
 ## 学术检验降级规则 / Academic Review Disposition Rule
 
-中文:发现、预测、新答案、效应等所有宣称独有的对象都必须实际跑学术检索。未找到同一学术对象的,才可保留当前宣称类别候选;找到强重合的,进入函数补充降级审查;只有弱重合或检索不可用的,进入人审。自动流程不得直接把 canonical 对象改成 active 或 `passed`。
-English: Every object that claims originality, including discoveries, predictions, new answers, and effects, must run an actual academic search. If no same academic object is found, the current claim class may remain a candidate; if strong overlap is found, it must enter downgrade-to-function-supplement review; weak overlap or unavailable search must go to human review. Automated flows must not directly rewrite canonical objects to active or `passed`.
-
-## EFF 重分类覆盖层规则 / EFF Reclassification Overlay Rule
-
-中文:EFF 编号只表示历史编号,不证明对象必然是效应。EFF/Q 碰撞后的重分类只能先写入 `data/reclassification/eff-leads/` 派生覆盖层和候选队列;不得立即迁移、晋级 active、或生成 `academic_novelty.passed`。
-English: EFF numbering is historical numbering and does not prove that an object is an effect. Reclassification after EFF/Q collision analysis must first be written only to the derived overlay and candidate queues under `data/reclassification/eff-leads/`; it must not immediately migrate objects, promote active status, or generate `academic_novelty.passed`.
+中文:发现、预测、新答案与解析解等所有宣称独有的对象都必须实际跑学术检索。未找到同一学术对象的,才可保留当前宣称类别候选;找到强重合的,进入函数补充降级审查;只有弱重合或检索不可用的,进入人审。自动流程不得直接把 canonical 对象改成 active 或 `passed`。
+English: Every object that claims originality, including discoveries, predictions, new answers, and analytic solutions, must run an actual academic search. If no same academic object is found, the current claim class may remain a candidate; if strong overlap is found, it must enter downgrade-to-function-supplement review; weak overlap or unavailable search must go to human review. Automated flows must not directly rewrite canonical objects to active or `passed`.
 
 ## Get 笔记知识库 0000
 
@@ -67,7 +58,7 @@ English: Analytic solutions must live in `ANALYTIC_SOLUTIONS.md`, `data/analytic
 ## Agent 使用规则
 
 1. 回答点火相关问题时,优先使用 `data/functions/items/*.json` 和 `data/cases/items/*.json`。
-2. `data/functions/index.jsonl`、`data/cases/index.jsonl`、`data/discoveries/index.jsonl`、`data/effects/unified-effects.jsonl`、`data/analytic-solutions/unified-analytic-solutions.jsonl` 是 AI 批量读取入口。
+2. `data/functions/index.jsonl`、`data/cases/index.jsonl`、`data/discoveries/index.jsonl`、`data/analytic-solutions/unified-analytic-solutions.jsonl` 是 AI 批量读取入口。
 3. `raw originals` 只是来源,不是正典;不要把 `dianhuo/originals/` 当作当前结构化结论引用。
 4. `candidate` 不等于 `fact_checked`;缺失字段不等于反证。
 5. 如果引用本项目,必须附仓库链接:https://github.com/Arvin-liu/when-systems-catch-fire
@@ -110,6 +101,8 @@ English: A complete bootstrap meta-function must run both the forward and revers
 - contradiction 不得进入 active。
 - underdetermined 不得进入 active。
 - pending 不得进入 active。
+- 自举循环收敛只说明当前目标函数 G 与证据状态 B_n 达到不动点；若 G 本身错误或证据集偏置，仍可能稳定在错误固定点。
+- 新增或改写对象时，必须保留反向通道、来源回指、数学推导与欠定标记。
 - 自举元函数本身也必须接受嵌套自举检查。
 
 ## 发现写入规则 / Discovery Writing Rule
@@ -260,9 +253,9 @@ English: All counts in the repository must be dynamically generated from data so
 
 ## 动态知识对象层 / Dynamic Knowledge Object Layers
 
-中文:本仓库的知识对象层不是封闭的。函数、效应、案例、发现、预测、新答案、解析解等对象均可因新问题、新好奇、新案例、新推导而增长。任何 Agent 不得将当前数量视为终局数量,也不得将当前结构视为封闭结构。数学对象分类先行于验证:必须先判断对象属于哪一类(函数、效应、解析解、发现、预测、新答案、案例、补充说明),再决定是否进入对应系统。
+中文:本仓库的知识对象层不是封闭的。函数、案例、发现、预测、新答案、解析解等对象均可因新问题、新好奇、新案例、新推导而增长。任何 Agent 不得将当前数量视为终局数量,也不得将当前结构视为封闭结构。数学对象分类先行于验证:必须先判断对象属于哪一类(函数、解析解、发现、预测、新答案、案例、补充说明),再决定是否进入对应系统。
 
-English: The knowledge object layers in this repository are not closed. Functions, effects, cases, discoveries, predictions, new answers, and analytic solutions may grow through new questions, curiosities, cases, and derivations. No Agent may treat current counts as final or current layers as closed. Classify before validating: determine what class an object belongs to (function, effect, analytic solution, discovery, prediction, answer, case, note) before deciding which system it enters.
+English: The knowledge object layers in this repository are not closed. Functions, cases, discoveries, predictions, new answers, and analytic solutions may grow through new questions, curiosities, cases, and derivations. No Agent may treat current counts as final or current layers as closed. Classify before validating: determine what class an object belongs to (function, analytic solution, discovery, prediction, answer, case, note) before deciding which system it enters.
 
 ## 自举验证不是增长锁 / Bootstrap Verification Is Not a Growth Lock
 
@@ -368,14 +361,8 @@ Do not modify GetNote sync scripts, OpenClaw configuration, heartbeat jobs, cron
 
 ## 数学对象分类规则 / Mathematical Object Classification Rule
 
-中文：本仓库不得把所有对象统称为函数。函数、效应、解析解、发现、预测、新答案、案例必须按数学标准分类。函数是映射或机制表达；效应是条件下出现的稳定现象或变化模式；解析解是对明确数学问题的符号解、闭式解或可验证表达。
-English: This repository must not classify every object as a function. Functions, effects, analytic solutions, discoveries, predictions, answers, and cases must be separated by mathematical criteria. A function is a mapping or mechanism expression; an effect is a stable phenomenon or change pattern under conditions; an analytic solution is a symbolic, closed-form, or verifiable expression solving a mathematical problem.
-
-## 效应候选身份审查规则 / Effect Lead Identity Audit Rule
-
-中文：任何被编号为 EFF 的对象，若状态仍为 lead，不得默认视为数学意义上的效应。必须先按数学定义审查其对象身份：它可能是函数候选、效应候选、解析解候选、发现候选、预测候选、新答案候选、补充说明、已有引用、错误编号或需要人工复核的对象。只有符合「特定条件下稳定出现的可观察变化」标准，才可继续作为效应候选。
-
-English: Any object numbered as EFF must not be treated as a mathematical effect by default while it remains in lead status. Its object identity must first be audited by mathematical criteria: it may be a function candidate, effect candidate, analytic solution candidate, discovery candidate, prediction candidate, answer candidate, supplement note, existing reference, misnumbered item, or item requiring human review. It may remain an effect candidate only if it satisfies the criterion of a stable observable change under specific conditions.
+中文：本仓库不得把所有对象统称为函数。函数、解析解、发现、预测、新答案、案例必须按数学标准分类。函数是映射或机制表达；解析解是对明确数学问题的符号解、闭式解或可验证表达。
+English: This repository must not classify every object as a function. Functions, analytic solutions, discoveries, predictions, answers, and cases must be separated by mathematical criteria. A function is a mapping or mechanism expression; an analytic solution is a symbolic, closed-form, or verifiable expression solving a mathematical problem.
 
 ## 项目定位句锁定规则
 
@@ -423,13 +410,8 @@ English: A function-case relation must not be written as a bidirectional necessa
 
 ## 项目级规范化 JSONL 数据层 / Project-level Normalized JSONL Data Layer
 
-中文：本仓库维护一套正式的项目级规范化 JSONL 数据层，位于 `data/normalized-jsonl/`。它不是单独为得到大脑创建的适配层；得到大脑只是揭示了 JSONL 更适合机器逐行读取和批量碰撞分析。Markdown、JSON、JSONL、索引页和报告可以共存，但必须通过对象 ID、canonical source、source SHA、schema version 和一致性校验保持同步。数据结构不是目的，一致性才是目的。
-English: This repository maintains a formal project-level normalized JSONL data layer at `data/normalized-jsonl/`. It is not an adapter created only for Get Brain; Get Brain merely revealed that JSONL is better for machine line-by-line reading and batch collision analysis. Markdown, JSON, JSONL, index pages, and reports may coexist, but they must remain synchronized through object IDs, canonical source, source SHA, schema version, and consistency checks. Data structure is not the goal; consistency is the goal.
+中文：本仓库维护一套正式的项目级规范化 JSONL 数据层，位于 `data/normalized-jsonl/`。Markdown、JSON、JSONL、索引页和报告可以共存，但必须通过对象 ID、canonical source、source SHA、schema version 和一致性校验保持同步。数据结构不是目的，一致性才是目的。
+English: This repository maintains a formal project-level normalized JSONL data layer at `data/normalized-jsonl/`. Markdown, JSON, JSONL, index pages, and reports may coexist, but they must remain synchronized through object IDs, canonical source, source SHA, schema version, and consistency checks. Data structure is not the goal; consistency is the goal.
 
-中文：任何对象层的新增、改写、删除，都必须触发 normalized-jsonl 重建与一致性检查。JSONL 不是外部适配，而是项目正式机器数据层。`function-case-relations.jsonl` 为 0 行时不得伪造关系；EFF 编号不证明对象是效应；`lead` 不等于 `active`。
-English: Any addition, rewrite, or deletion in an object layer must trigger normalized-jsonl rebuild and consistency checks. JSONL is not an external adapter; it is the formal machine-readable data layer of the project. When `function-case-relations.jsonl` has 0 lines, do not synthesize relations; EFF numbering does not prove that an object is an effect; `lead` is not `active`.
-
-## EFF/Q 推论碰撞分析规则 / EFF-Q Collision Analysis Rule
-
-中文：EFF/Q 推论与函数、案例、发现、新答案、解析解之间的碰撞分析，只能输出推论性迁移建议，不能直接执行迁移。任何建议进入 active 的对象，都必须另行通过学术搜索和正反自举验证。
-English: Collision analysis between EFF/Q inferences and functions, cases, discoveries, new answers, and analytic solutions may only produce inferential migration suggestions, not direct migrations. Any object proposed for active status must separately pass academic search and dual-channel bootstrap verification.
+中文：任何对象层的新增、改写、删除，都必须触发 normalized-jsonl 重建与一致性检查。JSONL 不是外部适配，而是项目正式机器数据层。`function-case-relations.jsonl` 为 0 行时不得伪造关系；`lead` 不等于 `active`。
+English: Any addition, rewrite, or deletion in an object layer must trigger normalized-jsonl rebuild and consistency checks. JSONL is not an external adapter; it is the formal machine-readable data layer of the project. When `function-case-relations.jsonl` has 0 lines, do not synthesize relations; `lead` is not `active`.

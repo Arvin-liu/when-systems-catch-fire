@@ -13,7 +13,6 @@ from object_classification_utils import (
     CROSSWALK_JSON,
     CROSSWALK_JSONL,
     FUNCTIONS_JSON,
-    NEW_EFFECTS_JSON,
     ANALYTIC_SOLUTIONS_JSON,
     REPORT_JSON,
     REPORT_MD,

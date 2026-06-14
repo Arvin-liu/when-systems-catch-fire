@@ -20,8 +20,6 @@ REPORT_MD = REBUILD / "normalized-jsonl-final-validation-report.md"
 REQUIRED_JSONL = [
     "functions.jsonl",
     "cases.jsonl",
-    "effect-leads.jsonl",
-    "effects.jsonl",
     "discoveries.jsonl",
     "predictions.jsonl",
     "answers.jsonl",
@@ -42,7 +40,6 @@ REQUIRED_FIELDS = [
 ARRAY_FIELDS = [
     "related_function_ids",
     "related_case_ids",
-    "related_effect_ids",
     "related_discovery_ids",
     "related_prediction_ids",
     "related_answer_ids",
@@ -50,11 +47,9 @@ ARRAY_FIELDS = [
     "child_ids",
     "referenced_function_ids",
     "referenced_case_ids",
-    "effect_ids",
     "function_ids",
     "related_functions",
     "related_cases",
-    "related_effects",
     "related_discoveries",
     "related_predictions",
     "related_answers",
@@ -112,12 +107,6 @@ def validate_file(name: str, rows: list[dict]) -> list[str]:
         for field in ARRAY_FIELDS:
             if field in obj and not isinstance(obj[field], list):
                 errors.append(f"Array field '{field}' is not a list in {obj_id} ({name})")
-        if obj.get("object_class") == "effect_lead" and obj.get("status") == "active":
-            errors.append(f"effect_lead has status=active: {obj_id} ({name})")
-        if obj.get("object_class") == "effect_lead" and name != "effect-leads.jsonl":
-            errors.append(f"effect_lead appears outside effect-leads.jsonl: {obj_id} ({name})")
-        if name == "effect-leads.jsonl" and obj.get("object_class") != "effect_lead":
-            errors.append(f"effect-leads.jsonl contains non-effect_lead object: {obj_id}")
         if obj.get("status") == "active" and str(obj.get("object_class", "")).endswith("_lead"):
             errors.append(f"lead object has active status: {obj_id} ({name})")
     return errors
@@ -242,7 +231,6 @@ def build_report() -> dict:
             "canonical_data_not_replaced": True,
             "inference_not_conclusion_required": True,
             "lead_not_active": True,
-            "eff_numbering_not_effect_proof": True,
             "zero_function_case_relations_allowed_if_diagnosed": True,
         },
         "total_errors": len(all_errors),

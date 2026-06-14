@@ -19,7 +19,6 @@ REQUIRED_COMMON = ["id", "object_class", "canonical_source", "schema_version",
                    "generated_at", "source_commit", "source_sha", "inference_not_conclusion"]
 
 PHASE_B_FILES = {
-    "effects.jsonl": {"class": "effect", "extra": ["name", "definition"]},
     "discoveries.jsonl": {"class": "discovery", "extra": ["name", "description"]},
     "predictions.jsonl": {"class": "prediction", "extra": ["name", "condition"]},
     "answers.jsonl": {"class": "answer", "extra": ["name", "question", "answer"]},

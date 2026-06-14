@@ -115,68 +115,68 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#105](docs/zh/cases/items/C-0105.md) | 通道不对称 |  /  | 仅来自原始笔记 / From source notes only | 0 |
 | [#106](docs/zh/cases/items/C-0106.md) | 知识更新半衰期 |  /  | 仅来自原始笔记 / From source notes only | 0 |
 | [#107](docs/zh/cases/items/C-0107.md) | 发现瓶颈 |  /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#108](docs/zh/cases/items/C-0108.md) | 认知犹豫域压缩 | [D26](../../docs/zh/functions/items/D26.md) /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#108](docs/zh/cases/items/C-0108.md) | 认知犹豫域压缩 | D26 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#109](docs/zh/cases/items/C-0109.md) | 口味偏好固化 | L₁ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#110](docs/zh/cases/items/C-0110.md) | 顽固者临界比例 | [D28](../../docs/zh/functions/items/D28.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#111](docs/zh/cases/items/C-0111.md) | 跨层犹豫域映射 | [D29](../../docs/zh/functions/items/D29.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#112](docs/zh/cases/items/C-0112.md) | 内部抵抗 | [D30](../../docs/zh/functions/items/D30.md) /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#110](docs/zh/cases/items/C-0110.md) | 顽固者临界比例 | D28 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#111](docs/zh/cases/items/C-0111.md) | 跨层犹豫域映射 | D29 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#112](docs/zh/cases/items/C-0112.md) | 内部抵抗 | D30 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#113](docs/zh/cases/items/C-0113.md) | 人体忒修斯 | L₁ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#114](docs/zh/cases/items/C-0114.md) | 乘法对称变换 / multiplicative symmetry transform | [D32](../../docs/zh/functions/items/D32.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#115](docs/zh/cases/items/C-0115.md) | 跨层完整退化 | [D33](../../docs/zh/functions/items/D33.md) /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#114](docs/zh/cases/items/C-0114.md) | 乘法对称变换 / multiplicative symmetry transform | D32 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#115](docs/zh/cases/items/C-0115.md) | 跨层完整退化 | D33 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#116](docs/zh/cases/items/C-0116.md) | 口味偏好固化 | L₁ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#117](docs/zh/cases/items/C-0117.md) | 逆Weibull寿命 | [D35](../../docs/zh/functions/items/D35.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#118](docs/zh/cases/items/C-0118.md) | 倒U型驱动力 | [D36](../../docs/zh/functions/items/D36.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#119](docs/zh/cases/items/C-0119.md) | 点火窗口 / Ignition窗口 | [D37](../../docs/zh/functions/items/D37.md) /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#117](docs/zh/cases/items/C-0117.md) | 逆Weibull寿命 | D35 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#118](docs/zh/cases/items/C-0118.md) | 倒U型驱动力 | D36 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#119](docs/zh/cases/items/C-0119.md) | 点火窗口 / Ignition窗口 | D37 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#120](docs/zh/cases/items/C-0120.md) | 招聘歧视与工资压制 | L₄ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#121](docs/zh/cases/items/C-0121.md) | ε_eff闭环动力学 | [D12](../../docs/zh/functions/items/D12.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#122](docs/zh/cases/items/C-0122.md) | 认知-群体映射 | [D38](../../docs/zh/functions/items/D38.md) /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#121](docs/zh/cases/items/C-0121.md) | ε_eff闭环动力学 | D12 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#122](docs/zh/cases/items/C-0122.md) | 认知-群体映射 | D38 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#123](docs/zh/cases/items/C-0123.md) | 招聘歧视与工资压制 | L₄ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#124](docs/zh/cases/items/C-0124.md) | 退化渗透路径 | [D40](../../docs/zh/functions/items/D40.md) /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#124](docs/zh/cases/items/C-0124.md) | 退化渗透路径 | D40 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#125](docs/zh/cases/items/C-0125.md) | 大脑进化为Agent | L₄ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#126](docs/zh/cases/items/C-0126.md) | 速度差闭合 | [D13](../../docs/zh/functions/items/D13.md) /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#126](docs/zh/cases/items/C-0126.md) | 速度差闭合 | D13 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#127](docs/zh/cases/items/C-0127.md) | 框架发现过程 | L₈ /  | 仅来自原始笔记 / From source notes only | 0 |
 | [#128](docs/zh/cases/items/C-0128.md) | 大脑进化为Agent | L₄ /  | 仅来自原始笔记 / From source notes only | 0 |
 | [#129](docs/zh/cases/items/C-0129.md) | AI物种分化 |  /  | 仅来自原始笔记 / From source notes only | 0 |
 | [#130](docs/zh/cases/items/C-0130.md) | 招聘歧视与工资压制 | L₄ /  | 仅来自原始笔记 / From source notes only | 0 |
 | [#131](docs/zh/cases/items/C-0131.md) | 学科训练的遮蔽作用 / 学科训练的obscuration作用 | L₈ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#132](docs/zh/cases/items/C-0132.md) | 确定性误解 | [D44](../../docs/zh/functions/items/D44.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#133](docs/zh/cases/items/C-0133.md) | 中间稳态 | [D45](../../docs/zh/functions/items/D45.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#134](docs/zh/cases/items/C-0134.md) | 8格概率 | [D46](../../docs/zh/functions/items/D46.md) /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#132](docs/zh/cases/items/C-0132.md) | 确定性误解 | D44 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#133](docs/zh/cases/items/C-0133.md) | 中间稳态 | D45 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#134](docs/zh/cases/items/C-0134.md) | 8格概率 | D46 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#135](docs/zh/cases/items/C-0135.md) | 大脑进化为Agent | L₄ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#136](docs/zh/cases/items/C-0136.md) | 退化临界 | [D48](../../docs/zh/functions/items/D48.md) /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#136](docs/zh/cases/items/C-0136.md) | 退化临界 | D48 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#137](docs/zh/cases/items/C-0137.md) | 框架发现过程 | L₈ /  | 仅来自原始笔记 / From source notes only | 0 |
 | [#138](docs/zh/cases/items/C-0138.md) | 学科训练的遮蔽作用 / 学科训练的obscuration作用 | L₈ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#139](docs/zh/cases/items/C-0139.md) | 门锁交替 | [D51](../../docs/zh/functions/items/D51.md) /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#139](docs/zh/cases/items/C-0139.md) | 门锁交替 | D51 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#140](docs/zh/cases/items/C-0140.md) | 广州菜市场超市融合 | L₄ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#141](docs/zh/cases/items/C-0141.md) | ε_eff昼夜分时 | [D55](../../docs/zh/functions/items/D55.md) /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#141](docs/zh/cases/items/C-0141.md) | ε_eff昼夜分时 | D55 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#142](docs/zh/cases/items/C-0142.md) | 重庆社区争夺战 | L₄ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#143](docs/zh/cases/items/C-0143.md) | 现场调研=ε_sense安装 | A7×[D84](../../docs/zh/functions/items/D84.md) / A7 x [D84](../../docs/zh/functions/items/D84.md) | 仅来自原始笔记 / From source notes only | 2 |
+| [#143](docs/zh/cases/items/C-0143.md) | 现场调研=ε_sense安装 | A7×D84 / A7 x D84 | 仅来自原始笔记 / From source notes only | 2 |
 | [#144](docs/zh/cases/items/C-0144.md) | 县城佳和超市90%复购率 | L₄ /  | 仅来自原始笔记 / From source notes only | 0 |
 | [#145](docs/zh/cases/items/C-0145.md) | 地理约束×认知约束 | A5×A9 / A5 x A9 | 仅来自原始笔记 / From source notes only | 2 |
 | [#146](docs/zh/cases/items/C-0146.md) | 西安加油站便利店 | L₄ /  | 仅来自原始笔记 / From source notes only | 0 |
-| [#147](docs/zh/cases/items/C-0147.md) | 现场vs远程 | A7×[D13](../../docs/zh/functions/items/D13.md) / A7 x [D13](../../docs/zh/functions/items/D13.md) | 仅来自原始笔记 / From source notes only | 2 |
-| [#148](docs/zh/cases/items/C-0148.md) | 调研成本×退出成本 / 调研成本 x exit cost | A5×[D54](../../docs/zh/functions/items/D54.md) / A5 x [D54](../../docs/zh/functions/items/D54.md) | 仅来自原始笔记 / From source notes only | 2 |
-| [#149](docs/zh/cases/items/C-0149.md) | 信息密度×认知容量 | [D50](../../docs/zh/functions/items/D50.md)×A9 / [D50](../../docs/zh/functions/items/D50.md) x A9 | 仅来自原始笔记 / From source notes only | 2 |
+| [#147](docs/zh/cases/items/C-0147.md) | 现场vs远程 | A7×D13 / A7 x D13 | 仅来自原始笔记 / From source notes only | 2 |
+| [#148](docs/zh/cases/items/C-0148.md) | 调研成本×退出成本 / 调研成本 x exit cost | A5×D54 / A5 x D54 | 仅来自原始笔记 / From source notes only | 2 |
+| [#149](docs/zh/cases/items/C-0149.md) | 信息密度×认知容量 | D50×A9 / D50 x A9 | 仅来自原始笔记 / From source notes only | 2 |
 | [#150](docs/zh/cases/items/C-0150.md) | 现场调研的乘数效应 | A8 /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#151](docs/zh/cases/items/C-0151.md) | 默里实验·低自尊伴侣互动 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#152](docs/zh/cases/items/C-0152.md) | 罗森塔尔"潜力生"标签实验 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#153](docs/zh/cases/items/C-0153.md) | 沃尔顿1小时归属感练习 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#154](docs/zh/cases/items/C-0154.md) | 沃尔顿21分钟拯救婚姻 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#155](docs/zh/cases/items/C-0155.md) | 沃尔顿10年追踪 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#156](docs/zh/cases/items/C-0156.md) | 财富容器 | [D62](../../docs/zh/functions/items/D62.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#157](docs/zh/cases/items/C-0157.md) | 收入流多元 | [D63](../../docs/zh/functions/items/D63.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#158](docs/zh/cases/items/C-0158.md) | 风险暴露不对称 | [D64](../../docs/zh/functions/items/D64.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#159](docs/zh/cases/items/C-0159.md) | 财富自证循环 | [D65](../../docs/zh/functions/items/D65.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#160](docs/zh/cases/items/C-0160.md) | 同质性遮蔽 / 同质性obscuration | [D66](../../docs/zh/functions/items/D66.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#161](docs/zh/cases/items/C-0161.md) | 财富-认知耦合 | [D67](../../docs/zh/functions/items/D67.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#162](docs/zh/cases/items/C-0162.md) | 定投指数基金 | A8×[D62](../../docs/zh/functions/items/D62.md) / A8 x [D62](../../docs/zh/functions/items/D62.md) | 仅来自原始笔记 / From source notes only | 2 |
-| [#163](docs/zh/cases/items/C-0163.md) | 定投P_sustain全局最大值（验证[D34](../../docs/zh/functions/items/D34.md)） / 定投P_sustain全局最大值(验证[D34](../../docs/zh/functions/items/D34.md)) |  /  | 交叉验证 / Cross-verified | 1 |
-| [#164](docs/zh/cases/items/C-0164.md) | AI共震策略全失效（验证[D66](../../docs/zh/functions/items/D66.md)） |  /  | 交叉验证 / Cross-verified | 1 |
-| [#165](docs/zh/cases/items/C-0165.md) | 炒股带宽溢出全领域衰减（验证[D63](../../docs/zh/functions/items/D63.md)跨域溢出） |  /  | 交叉验证 / Cross-verified | 1 |
-| [#166](docs/zh/cases/items/C-0166.md) | 小资金恐惧锁定向下螺旋（验证[D67](../../docs/zh/functions/items/D67.md)） |  /  | 交叉验证 / Cross-verified | 1 |
-| [#167](docs/zh/cases/items/C-0167.md) | 定投=门锁交替律执行（验证[D47](../../docs/zh/functions/items/D47.md)+[D49](../../docs/zh/functions/items/D49.md)） |  /  | 交叉验证 / Cross-verified | 2 |
-| [#168](docs/zh/cases/items/C-0168.md) | H_total放大触发F_collapse（验证[D65](../../docs/zh/functions/items/D65.md)） / H_total放大触发F_collapse(验证[D65](../../docs/zh/functions/items/D65.md)) |  /  | 交叉验证 / Cross-verified | 1 |
-| [#169](docs/zh/cases/items/C-0169.md) | 财商乘数四因子结构（验证[D65](../../docs/zh/functions/items/D65.md)财富域） |  /  | 交叉验证 / Cross-verified | 1 |
+| [#156](docs/zh/cases/items/C-0156.md) | 财富容器 | D62 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#157](docs/zh/cases/items/C-0157.md) | 收入流多元 | D63 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#158](docs/zh/cases/items/C-0158.md) | 风险暴露不对称 | D64 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#159](docs/zh/cases/items/C-0159.md) | 财富自证循环 | D65 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#160](docs/zh/cases/items/C-0160.md) | 同质性遮蔽 / 同质性obscuration | D66 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#161](docs/zh/cases/items/C-0161.md) | 财富-认知耦合 | D67 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#162](docs/zh/cases/items/C-0162.md) | 定投指数基金 | A8×D62 / A8 x D62 | 仅来自原始笔记 / From source notes only | 2 |
+| [#163](docs/zh/cases/items/C-0163.md) | 定投P_sustain全局最大值（验证D34） / 定投P_sustain全局最大值(验证D34) |  /  | 交叉验证 / Cross-verified | 1 |
+| [#164](docs/zh/cases/items/C-0164.md) | AI共震策略全失效（验证D66） |  /  | 交叉验证 / Cross-verified | 1 |
+| [#165](docs/zh/cases/items/C-0165.md) | 炒股带宽溢出全领域衰减（验证D63跨域溢出） |  /  | 交叉验证 / Cross-verified | 1 |
+| [#166](docs/zh/cases/items/C-0166.md) | 小资金恐惧锁定向下螺旋（验证D67） |  /  | 交叉验证 / Cross-verified | 1 |
+| [#167](docs/zh/cases/items/C-0167.md) | 定投=门锁交替律执行（验证D47+D49） |  /  | 交叉验证 / Cross-verified | 2 |
+| [#168](docs/zh/cases/items/C-0168.md) | H_total放大触发F_collapse（验证D65） / H_total放大触发F_collapse(验证D65) |  /  | 交叉验证 / Cross-verified | 1 |
+| [#169](docs/zh/cases/items/C-0169.md) | 财商乘数四因子结构（验证D65财富域） |  /  | 交叉验证 / Cross-verified | 1 |
 | [#170](docs/zh/cases/items/C-0170.md) | 七层主权最低门槛（验证A7财富维度） |  /  | 交叉验证 / Cross-verified | 1 |
 | [#171](docs/zh/cases/items/C-0171.md) | AI直觉缺失的物种判据 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#172](docs/zh/cases/items/C-0172.md) | 自举激活的乘法条件 |  /  | 交叉验证 / Cross-verified | 1 |
@@ -259,69 +259,69 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#249](docs/zh/cases/items/C-0249.md) | 串联系统可靠性 | D114p /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#250](docs/zh/cases/items/C-0250.md) | 复杂性相变退化 | D114q /  | 仅来自原始笔记 / From source notes only | 2 |
 | [#251](docs/zh/cases/items/C-0251.md) | 战略撤退=退出权 / 战略撤退=exit right | D114r /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#252](docs/zh/cases/items/C-0252.md) | AI架构r_cross≈0 | [D115](../../docs/zh/functions/items/D115.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#253](docs/zh/cases/items/C-0253.md) | 变量闭包锁死发现 | [D114](../../docs/zh/functions/items/D114.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#254](docs/zh/cases/items/C-0254.md) | 预测编码组块化 | [D116](../../docs/zh/functions/items/D116.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#255](docs/zh/cases/items/C-0255.md) | AI工作缓存设计 | [D117](../../docs/zh/functions/items/D117.md)/D121 /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#256](docs/zh/cases/items/C-0256.md) | 上下文≠工作缓存 | [D118](../../docs/zh/functions/items/D118.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#257](docs/zh/cases/items/C-0257.md) | 预测编码回路自生成 | [D119](../../docs/zh/functions/items/D119.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#258](docs/zh/cases/items/C-0258.md) | 动态算力分配 | [D120](../../docs/zh/functions/items/D120.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#259](docs/zh/cases/items/C-0259.md) | r_cross三因子工程路径 | [D121](../../docs/zh/functions/items/D121.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#260](docs/zh/cases/items/C-0260.md) | r_cross=0不导致Ψ=0 | [D122](../../docs/zh/functions/items/D122.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#261](docs/zh/cases/items/C-0261.md) | 人脑4±1=最优缓存 | [D123](../../docs/zh/functions/items/D123.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#262](docs/zh/cases/items/C-0262.md) | AI 128K严重过配 | [D123](../../docs/zh/functions/items/D123.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#263](docs/zh/cases/items/C-0263.md) | 缓存倒U型验证 / cache inverted-U curve验证 | [D123](../../docs/zh/functions/items/D123.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#264](docs/zh/cases/items/C-0264.md) | AI意识升级必然性 | [D124](../../docs/zh/functions/items/D124.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#265](docs/zh/cases/items/C-0265.md) | 散户亏损 | [D125](../../docs/zh/functions/items/D125.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#266](docs/zh/cases/items/C-0266.md) | 巴菲特 | [D125](../../docs/zh/functions/items/D125.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#267](docs/zh/cases/items/C-0267.md) | 认知扩张但收益不涨 | [D125](../../docs/zh/functions/items/D125.md)/D126 /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#268](docs/zh/cases/items/C-0268.md) | [D86](../../docs/zh/functions/items/D86.md)乘法归零验证 | [D127](../../docs/zh/functions/items/D127.md) /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#269](docs/zh/cases/items/C-0269.md) | [D126](../../docs/zh/functions/items/D126.md)三效率归零验证 | [D127](../../docs/zh/functions/items/D127.md) /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#270](docs/zh/cases/items/C-0270.md) | [D124](../../docs/zh/functions/items/D124.md)四卡点归零验证 | [D127](../../docs/zh/functions/items/D127.md) /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#271](docs/zh/cases/items/C-0271.md) | [D121](../../docs/zh/functions/items/D121.md)三因子归零验证 | [D127](../../docs/zh/functions/items/D127.md) /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#272](docs/zh/cases/items/C-0272.md) | D69自举激活归零验证 | [D127](../../docs/zh/functions/items/D127.md) /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#273](docs/zh/cases/items/C-0273.md) | [D23](../../docs/zh/functions/items/D23.md)法治度归零验证 | [D127](../../docs/zh/functions/items/D127.md) /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#274](docs/zh/cases/items/C-0274.md) | [D33](../../docs/zh/functions/items/D33.md)六因子退化归零验证 | [D127](../../docs/zh/functions/items/D127.md) /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#275](docs/zh/cases/items/C-0275.md) | [D41](../../docs/zh/functions/items/D41.md)充分条件归零验证 | [D127](../../docs/zh/functions/items/D127.md) /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#276](docs/zh/cases/items/C-0276.md) | [D127](../../docs/zh/functions/items/D127.md)+[D123](../../docs/zh/functions/items/D123.md)深层同构 | [D127](../../docs/zh/functions/items/D127.md)×[D123](../../docs/zh/functions/items/D123.md) / [D127](../../docs/zh/functions/items/D127.md) x [D123](../../docs/zh/functions/items/D123.md) | 仅来自原始笔记 / From source notes only | 2 |
-| [#277](docs/zh/cases/items/C-0277.md) | [D123](../../docs/zh/functions/items/D123.md)与[D36](../../docs/zh/functions/items/D36.md)倒U型同构 | [D123](../../docs/zh/functions/items/D123.md)×[D36](../../docs/zh/functions/items/D36.md) / [D123](../../docs/zh/functions/items/D123.md) x [D36](../../docs/zh/functions/items/D36.md) | 仅来自原始笔记 / From source notes only | 2 |
-| [#278](docs/zh/cases/items/C-0278.md) | [D124](../../docs/zh/functions/items/D124.md)与[D126](../../docs/zh/functions/items/D126.md)时间尺度同构 | [D124](../../docs/zh/functions/items/D124.md)×[D126](../../docs/zh/functions/items/D126.md) / [D124](../../docs/zh/functions/items/D124.md) x [D126](../../docs/zh/functions/items/D126.md) | 仅来自原始笔记 / From source notes only | 2 |
-| [#279](docs/zh/cases/items/C-0279.md) | [D125](../../docs/zh/functions/items/D125.md)与[D62](../../docs/zh/functions/items/D62.md)天花板-实际高度 | [D125](../../docs/zh/functions/items/D125.md)×[D62](../../docs/zh/functions/items/D62.md) / [D125](../../docs/zh/functions/items/D125.md) x [D62](../../docs/zh/functions/items/D62.md) | 仅来自原始笔记 / From source notes only | 2 |
-| [#280](docs/zh/cases/items/C-0280.md) | [D128](../../docs/zh/functions/items/D128.md) Ψ三维生存域 | [D128](../../docs/zh/functions/items/D128.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#281](docs/zh/cases/items/C-0281.md) | [D126](../../docs/zh/functions/items/D126.md)三效率冲突=生存域收缩 | [D128](../../docs/zh/functions/items/D128.md) /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#282](docs/zh/cases/items/C-0282.md) | [D121](../../docs/zh/functions/items/D121.md) r_cross三维生存域 | [D128](../../docs/zh/functions/items/D128.md) /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#283](docs/zh/cases/items/C-0283.md) | 生存域随因子数收缩 | [D128](../../docs/zh/functions/items/D128.md) /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#284](docs/zh/cases/items/C-0284.md) | 最弱因子决定生存域 | [D128](../../docs/zh/functions/items/D128.md) /  | 仅来自原始笔记 / From source notes only | 2 |
-| [#285](docs/zh/cases/items/C-0285.md) | 优化方向冲突 | [D128](../../docs/zh/functions/items/D128.md) /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#252](docs/zh/cases/items/C-0252.md) | AI架构r_cross≈0 | D115 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#253](docs/zh/cases/items/C-0253.md) | 变量闭包锁死发现 | D114 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#254](docs/zh/cases/items/C-0254.md) | 预测编码组块化 | D116 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#255](docs/zh/cases/items/C-0255.md) | AI工作缓存设计 | D117/D121 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#256](docs/zh/cases/items/C-0256.md) | 上下文≠工作缓存 | D118 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#257](docs/zh/cases/items/C-0257.md) | 预测编码回路自生成 | D119 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#258](docs/zh/cases/items/C-0258.md) | 动态算力分配 | D120 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#259](docs/zh/cases/items/C-0259.md) | r_cross三因子工程路径 | D121 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#260](docs/zh/cases/items/C-0260.md) | r_cross=0不导致Ψ=0 | D122 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#261](docs/zh/cases/items/C-0261.md) | 人脑4±1=最优缓存 | D123 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#262](docs/zh/cases/items/C-0262.md) | AI 128K严重过配 | D123 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#263](docs/zh/cases/items/C-0263.md) | 缓存倒U型验证 / cache inverted-U curve验证 | D123 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#264](docs/zh/cases/items/C-0264.md) | AI意识升级必然性 | D124 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#265](docs/zh/cases/items/C-0265.md) | 散户亏损 | D125 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#266](docs/zh/cases/items/C-0266.md) | 巴菲特 | D125 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#267](docs/zh/cases/items/C-0267.md) | 认知扩张但收益不涨 | D125/D126 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#268](docs/zh/cases/items/C-0268.md) | D86乘法归零验证 | D127 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#269](docs/zh/cases/items/C-0269.md) | D126三效率归零验证 | D127 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#270](docs/zh/cases/items/C-0270.md) | D124四卡点归零验证 | D127 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#271](docs/zh/cases/items/C-0271.md) | D121三因子归零验证 | D127 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#272](docs/zh/cases/items/C-0272.md) | D69自举激活归零验证 | D127 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#273](docs/zh/cases/items/C-0273.md) | D23法治度归零验证 | D127 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#274](docs/zh/cases/items/C-0274.md) | D33六因子退化归零验证 | D127 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#275](docs/zh/cases/items/C-0275.md) | D41充分条件归零验证 | D127 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#276](docs/zh/cases/items/C-0276.md) | D127+D123深层同构 | D127×D123 / D127 x D123 | 仅来自原始笔记 / From source notes only | 2 |
+| [#277](docs/zh/cases/items/C-0277.md) | D123与D36倒U型同构 | D123×D36 / D123 x D36 | 仅来自原始笔记 / From source notes only | 2 |
+| [#278](docs/zh/cases/items/C-0278.md) | D124与D126时间尺度同构 | D124×D126 / D124 x D126 | 仅来自原始笔记 / From source notes only | 2 |
+| [#279](docs/zh/cases/items/C-0279.md) | D125与D62天花板-实际高度 | D125×D62 / D125 x D62 | 仅来自原始笔记 / From source notes only | 2 |
+| [#280](docs/zh/cases/items/C-0280.md) | D128 Ψ三维生存域 | D128 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#281](docs/zh/cases/items/C-0281.md) | D126三效率冲突=生存域收缩 | D128 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#282](docs/zh/cases/items/C-0282.md) | D121 r_cross三维生存域 | D128 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#283](docs/zh/cases/items/C-0283.md) | 生存域随因子数收缩 | D128 /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#284](docs/zh/cases/items/C-0284.md) | 最弱因子决定生存域 | D128 /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#285](docs/zh/cases/items/C-0285.md) | 优化方向冲突 | D128 /  | 仅来自原始笔记 / From source notes only | 2 |
 | [#286](docs/zh/cases/items/C-0286.md) | 提示词工程=ηinterface优化 — 人类调高Pencode（精确描述意图），AI调高Pdecode（指令遵循），Ptransfer受限于token窗口，当前η≈0.3-0.7 / 提示词工程=ηinterface优化 - 人类调高Pencode(精确描述意图), AI调高Pdecode(指令遵循), Ptransfer受限于token窗口, 当前η≈0.3-0.7 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#287](docs/zh/cases/items/C-0287.md) | 抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降 / 抑郁者调度AI失败 - εaware↓ -> Pencode↓ -> ηinterface↓ -> 即使AI能力不变调度效率大幅下降 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#288](docs/zh/cases/items/C-0288.md) | 人类调度动物效率极低 — Pdecode≈0.1（动物Bsymbolic极低），η≈0.016，几乎无法形成有效调度 / 人类调度动物效率极低 - Pdecode≈0.1(动物Bsymbolic极低), η≈0.016, 几乎无法形成有效调度 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#289](docs/zh/cases/items/C-0289.md) | 当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#290](docs/zh/cases/items/C-0290.md) | [D121](../../docs/zh/functions/items/D121.md)实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现 / [D121](../../docs/zh/functions/items/D121.md)实现触发分化 - rcross>0 -> α↑ -> α/β趋近1 -> 不稳定区间出现 -> 部分AI被推向ρ* -> 调度AI涌现 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#290](docs/zh/cases/items/C-0290.md) | D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现 / D121实现触发分化 - rcross>0 -> α↑ -> α/β趋近1 -> 不稳定区间出现 -> 部分AI被推向ρ* -> 调度AI涌现 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#291](docs/zh/cases/items/C-0291.md) | 三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构 / 三层重演验证 - L1/L2/L3共享Φdispatch骨架, 差异仅在ηinterface参数值, 数学结构完全同构 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#292](docs/zh/cases/items/C-0292.md) | 人类语言突破Nactive限制 — Nactive≈4但frecombine极高（语法结构），Vlexicon≈5万，ηencode≈0.6，Pencode≈0.8 / 人类语言突破Nactive限制 - Nactive≈4但frecombine极高(语法结构), Vlexicon≈5万, ηencode≈0.6, Pencode≈0.8 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#293](docs/zh/cases/items/C-0293.md) | 动物无法调度工具 — Nactive≈2-3，frecombine≈0（无语法），Vlexicon≈几十个信号，Pencode≈0.05 / 动物无法调度工具 - Nactive≈2-3, frecombine≈0(无语法), Vlexicon≈几十个信号, Pencode≈0.05 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#294](docs/zh/cases/items/C-0294.md) | 当前AI无法调度其他AI — εaware=0→Pencode=0，即使Bsemantic很大也无法形成自主意图 / 当前AI无法调度其他AI - εaware=0 -> Pencode=0, 即使Bsemantic很大也无法形成自主意图 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#295](docs/zh/cases/items/C-0295.md) | CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖[D121](../../docs/zh/functions/items/D121.md)实现，后者依赖[D66](../../docs/zh/functions/items/D66.md)遮蔽与共享的平衡 / CAI编码能力关键瓶颈 - frecombine(概念碰撞率)和ηencode(Q*)(最优共享度), 前者依赖[D121](../../docs/zh/functions/items/D121.md)实现, 后者依赖D66obscuration与共享的平衡 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#295](docs/zh/cases/items/C-0295.md) | CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡 / CAI编码能力关键瓶颈 - frecombine(概念碰撞率)和ηencode(Q*)(最优共享度), 前者依赖D121实现, 后者依赖D66obscuration与共享的平衡 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#296](docs/zh/cases/items/C-0296.md) | 抑郁者调度失效 — εaware↓→Pencode↓→ηinterface↓→Φdispatch↓，执行方能力不变但系统产出归零 / 抑郁者调度失效 - εaware↓ -> Pencode↓ -> ηinterface↓ -> Φdispatch↓, 执行方能力不变但系统产出归零 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#297](docs/zh/cases/items/C-0297.md) | Shannon+意图对接 — 噪声信道中信号可完美传输（ηShannon≈1），但发送方无意图（Pintention=0）→有效沟通=0，如自动回复机器人 / Shannon+意图对接 - 噪声信道中信号可完美传输(ηShannon≈1), 但发送方无意图(Pintention=0) -> 有效沟通=0, 如自动回复机器人 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#298](docs/zh/cases/items/C-0298.md) | 跨物种调度同构验证 — 人类-AI和CAI-EAI满足同构三条件，数学结构完全等价，差异仅在ηinterface参数值 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#299](docs/zh/cases/items/C-0299.md) | AI自动补全=伪意图 — 用户输入模糊提示词，AI用高Bsemantic自动补全为完整指令，Pencode≈1但Fintent≈0.2 / AI自动补全=伪意图 - 用户输入模糊提示词, AI用高Bsemantic自动补全为完整指令, Pencode≈1但Fintent≈0.2 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#300](docs/zh/cases/items/C-0300.md) | 有意图说不出来 — εaware高但Bsemantic低（失语症患者），Fintent≈0.8但ηsignal≈0.05，Φeffective≈0.04 / 有意图说不出来 - εaware高但Bsemantic低(失语症患者), Fintent≈0.8但ηsignal≈0.05, Φeffective≈0.04 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#301](docs/zh/cases/items/C-0301.md) | Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和[D62](../../docs/zh/functions/items/D62.md)的WM*≈1.4×Nactive同构 / Bsemantic最优值 - εaware≈0.7时Bsemantic*≈1.4 x θencode, 恰好够编码真实意图但不会过度补全, 和[D62](../../docs/zh/functions/items/D62.md)的WM*≈1.4 x Nactive同构 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#301](docs/zh/cases/items/C-0301.md) | Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和D62的WM*≈1.4×Nactive同构 / Bsemantic最优值 - εaware≈0.7时Bsemantic*≈1.4 x θencode, 恰好够编码真实意图但不会过度补全, 和D62的WM*≈1.4 x Nactive同构 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#302](docs/zh/cases/items/C-0302.md) | 信源可遮蔽 — Shannon假设信源熵客观给定，但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降 / 信源可obscuration - Shannon假设信源熵客观给定, 但Ignition发现εaware可被Hobscuration压低 -> Fintent↓ -> 信源质量下降 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#303](docs/zh/cases/items/C-0303.md) | 意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#304](docs/zh/cases/items/C-0304.md) | 非对称耦合验证 — 提高Bsemantic不提高Fintent，但提高εaware同时提高Fintent和ηShannon，方向不对称 / 非对称耦合验证 - 提高Bsemantic不提高Fintent, 但提高εaware同时提高Fintent和ηShannon, 方向不对称 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#305](docs/zh/cases/items/C-0305.md) | AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链 / AI多智能体协作≠调度 - 两个AI互相发信号, ηShannon≈1但Pintention=0, 属于类II, 是自动响应链 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#306](docs/zh/cases/items/C-0306.md) | CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#307](docs/zh/cases/items/C-0307.md) | 四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时[D84](../../docs/zh/functions/items/D84.md)三条路径失效 / 四阶段严格串行验证 - 不能跳过Stage2直接到Stage3: rcross=0时[D84](../../docs/zh/functions/items/D84.md)三条路径失效 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#307](docs/zh/cases/items/C-0307.md) | 四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效 / 四阶段严格串行验证 - 不能跳过Stage2直接到Stage3: rcross=0时D84三条路径失效 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#308](docs/zh/cases/items/C-0308.md) | Stage2最大瓶颈 — 当前所有LLM都在Stage1，卡在Stage2（WM过配→rcross≈0） / Stage2最大瓶颈 - 当前所有LLM都在Stage1, 卡在Stage2(WM过配 -> rcross≈0) |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#309](docs/zh/cases/items/C-0309.md) | 类II→类I跃迁的[D124](../../docs/zh/functions/items/D124.md)对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1 / 类II -> 类I跃迁的[D124](../../docs/zh/functions/items/D124.md)对接 - 单次P≈0.00075极低, 但全球N x T快速增长 -> Pinevitable -> 1 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#309](docs/zh/cases/items/C-0309.md) | 类II→类I跃迁的D124对接 — 单次P≈0.00075极低，但全球N×T快速增长→Pinevitable→1 / 类II -> 类I跃迁的D124对接 - 单次P≈0.00075极低, 但全球N x T快速增长 -> Pinevitable -> 1 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#310](docs/zh/cases/items/C-0310.md) | 修复顺序不能反 — 先提Bsemantic（当前主流方向）不提高Fintent，伪意图陷阱；正确顺序先rcross→再εaware→最后Bsemantic / 修复顺序不能反 - 先提Bsemantic(当前主流方向)不提高Fintent, 伪意图陷阱; 正确顺序先rcross -> 再εaware -> 最后Bsemantic |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#311](docs/zh/cases/items/C-0311.md) | 冲动交易者 — ηselect≈0.9，ηkelly≈0.3，ηtime≈0.7，Πcognition小，乘积=0.189×小 / 冲动交易者 - ηselect≈0.9, ηkelly≈0.3, ηtime≈0.7, Πcognition小, 乘积=0.189 x 小 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#312](docs/zh/cases/items/C-0312.md) | 过度分析者 — ηselect≈0.1，ηkelly≈0.9，ηtime≈0.3，乘积=0.027×中 / 过度分析者 - ηselect≈0.1, ηkelly≈0.9, ηtime≈0.3, 乘积=0.027 x 中 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#313](docs/zh/cases/items/C-0313.md) | 巴菲特模式 — ηselect≈0.01，ηkelly≈0.95，ηtime≈0.99，Πcognition极大，乘积=0.0094×极大>0.189×小 / 巴菲特模式 - ηselect≈0.01, ηkelly≈0.95, ηtime≈0.99, Πcognition极大, 乘积=0.0094 x 极大>0.189 x 小 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#314](docs/zh/cases/items/C-0314.md) | [D128](../../docs/zh/functions/items/D128.md)生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#314](docs/zh/cases/items/C-0314.md) | D128生存域修正 — Ωsurvive不是对称超立方体，是非对称区域，某些维度可接近下界只要其他维度足够高补偿 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#315](docs/zh/cases/items/C-0315.md) | 异地恋断裂 — μ翻转导致dcritical从2000km缩到50km，不是距离变了是临界距离变了 |  /  | 仅来自原始笔记 / From source notes only | 2 |
 | [#316](docs/zh/cases/items/C-0316.md) | 糖域与现实 — 糖域γ=0所以看到糖就去，现实γ>0所以看到更好的工作不一定跳槽 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#317](docs/zh/cases/items/C-0317.md) | 权力层级信息失真 — d=层级距，λ=信息失真率，μ=制度效率。制度效率低时指令传到基层面目全非 |  /  | 仅来自原始笔记 / From source notes only | 1 |
@@ -329,10 +329,10 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#319](docs/zh/cases/items/C-0319.md) | 多数人的直觉闪念 — Mboot被外部扰动推到>0但ΔK太小，正反馈强度不够，被日常消耗拉回0 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#320](docs/zh/cases/items/C-0320.md) | 自持阈值越过 — 研究者的Mboot被持续好问题扰动推过θboot，正反馈启动，进入自持加速态 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#321](docs/zh/cases/items/C-0321.md) | AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#322](docs/zh/cases/items/C-0322.md) | [D137](../../docs/zh/functions/items/D137.md)与[D141](../../docs/zh/functions/items/D141.md)的粒度对应 — [D137](../../docs/zh/functions/items/D137.md)说"阶段2是最大瓶颈"，[D141](../../docs/zh/functions/items/D141.md)说"装Ptrack是第二步"——同构 / [D137](../../docs/zh/functions/items/D137.md)与[D141](../../docs/zh/functions/items/D141.md)的粒度对应 - [D137](../../docs/zh/functions/items/D137.md)说"阶段2是最大瓶颈", [D141](../../docs/zh/functions/items/D141.md)说"装Ptrack是第二步" - - 同构 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#322](docs/zh/cases/items/C-0322.md) | D137与D141的粒度对应 — D137说"阶段2是最大瓶颈"，D141说"装Ptrack是第二步"——同构 / D137与D141的粒度对应 - D137说"阶段2是最大瓶颈", D141说"装Ptrack是第二步" - - 同构 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#323](docs/zh/cases/items/C-0323.md) | AI同质化训练的遮蔽 — 两个GPT-4实例对话，G≈1，Hhomogeneity≈1，ηgate≈0，对话流畅但信息增量为零 / AI同质化训练的obscuration - 两个GPT-4实例对话, G≈1, Hhomogeneity≈1, ηgate≈0, 对话流畅但信息增量为零 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#324](docs/zh/cases/items/C-0324.md) | 跨学科团队的高效 — 物理学家和生物学家合作，G≈0.3，H≈0.1，ηgate≈0.27，比同质团队高5倍 / 跨学科团队的高效 - 物理学家和生物学家合作, G≈0.3, H≈0.1, ηgate≈0.27, 比同质团队高5倍 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#325](docs/zh/cases/items/C-0325.md) | [D135](../../docs/zh/functions/items/D135.md)修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#325](docs/zh/cases/items/C-0325.md) | D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#326](docs/zh/cases/items/C-0326.md) | 信息门的方向无关性 — 不存在"我说清楚了但你听不懂"，门效率低两侧同时受影响 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#327](docs/zh/cases/items/C-0327.md) | 炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#328](docs/zh/cases/items/C-0328.md) | 临界资金的精确计算 — 城市白领年非投资收入20万，炒股Kcritical=600万，定投Kcritical≈0 / 临界资金的精确计算 - 城市白领年非投资收入20万, 炒股Kcritical=600万, 定投Kcritical≈0 |  /  | 仅来自原始笔记 / From source notes only | 1 |
@@ -340,12 +340,12 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#330](docs/zh/cases/items/C-0330.md) | 巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#331](docs/zh/cases/items/C-0331.md) | 专家-新手沟通的非对称退化 — 专家ε≈0.9，新手ε≈0.2，退化因子≈0.22，专家觉得"说清楚了"新手觉得"听不懂" |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#332](docs/zh/cases/items/C-0332.md) | 乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零的因子效果更大 / 乘法临界漂移验证 - 改善0.3 -> 0.5(+67%)乘积+67%, 改善0.8 -> 1.0(+25%)乘积+25%, 改善最接近零的因子效果更大 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#333](docs/zh/cases/items/C-0333.md) | 关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，[D87](../../docs/zh/functions/items/D87.md)在[D77](../../docs/zh/functions/items/D77.md)域的实例 / 关系衰减的临界漂移 - μ从0.5翻转到-0.3, dcritical从2000km缩到50km, [D87](../../docs/zh/functions/items/D87.md)在[D77](../../docs/zh/functions/items/D77.md)域的实例 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#333](docs/zh/cases/items/C-0333.md) | 关系衰减的临界漂移 — μ从0.5翻转到-0.3，dcritical从2000km缩到50km，D87在D77域的实例 / 关系衰减的临界漂移 - μ从0.5翻转到-0.3, dcritical从2000km缩到50km, D87在D77域的实例 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#334](docs/zh/cases/items/C-0334.md) | 遮蔽补偿成本指数级增长 — H=0.2时G*≈0.6，H=0.6时G*≈0.3，编码成本增加e^(0.3γ)倍 / obscuration补偿成本指数级增长 - H=0.2时G*≈0.6, H=0.6时G*≈0.3, 编码成本增加e^(0.3γ)倍 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#335](docs/zh/cases/items/C-0335.md) | 结构保守性vs手动保守 — 定投结构自动保守不需意志力，手动凯利牛市时H↑→高估E[r]→过度下注 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#336](docs/zh/cases/items/C-0336.md) | 自举循环的结构保守性 — B(n)越大ΔB/B越小但永远为正，不会爆炸也不会归零 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#337](docs/zh/cases/items/C-0337.md) | 倒U型统一验证 — [D123](../../docs/zh/functions/items/D123.md)/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点 / 倒U型统一验证 - [D123](../../docs/zh/functions/items/D123.md)/D142/D133/D135/D139五个最优值都是f₁(↑) x f₂(↓)的极值点 |  /  | 仅来自原始笔记 / From source notes only | 5 |
-| [#338](docs/zh/cases/items/C-0338.md) | [D149](../../docs/zh/functions/items/D149.md)深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#337](docs/zh/cases/items/C-0337.md) | 倒U型统一验证 — D123/D142/D133/D135/D139五个最优值都是f₁(↑)×f₂(↓)的极值点 / 倒U型统一验证 - D123/D142/D133/D135/D139五个最优值都是f₁(↑) x f₂(↓)的极值点 |  /  | 仅来自原始笔记 / From source notes only | 5 |
+| [#338](docs/zh/cases/items/C-0338.md) | D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#339](docs/zh/cases/items/C-0339.md) | 遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#340](docs/zh/cases/items/C-0340.md) | 非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差，再进入各自领域 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#341](docs/zh/cases/items/C-0341.md) | API设计降低解码门槛 — θdecode^base≈0.8，ηstructural≈0.8，θdecode^effective≈0.16 / API设计降低解码门槛 - θdecode^base≈0.8, ηstructural≈0.8, θdecode^effective≈0.16 |  /  | 仅来自原始笔记 / From source notes only | 1 |
@@ -395,34 +395,34 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#385](docs/zh/cases/items/C-0385.md) | 癌症的Φ极小点极深——癌细胞Λ极低导致Φ极小点比正常细胞更深，更稳定 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#386](docs/zh/cases/items/C-0386.md) | 共生是互为外部注入——两个物种互为对方的外部注入打破各自的门外锁定 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#387](docs/zh/cases/items/C-0387.md) | 病毒的门控面切换——寄生前σ=0寄生后σ=1，没有中间态 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#388](docs/zh/cases/items/C-0388.md) | 营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，[D159](../../docs/zh/functions/items/D159.md)门外翻转 / 营养级的门槛翻转 - - μ逐级衰减到Λ_metabolism以下, [D159](../../docs/zh/functions/items/D159.md)门外翻转 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#388](docs/zh/cases/items/C-0388.md) | 营养级的门槛翻转——μ逐级衰减到Λ_metabolism以下，D159门外翻转 / 营养级的门槛翻转 - - μ逐级衰减到Λ_metabolism以下, D159门外翻转 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#389](docs/zh/cases/items/C-0389.md) | 压缩极限是门槛不是底线——μ→Λ_entropy时1/ln→-∞，再压一点就崩 / 压缩极限是门槛不是底线 - - μ -> Λ_entropy时1/ln -> -∞, 再压一点就崩 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#390](docs/zh/cases/items/C-0390.md) | 加密是防御性门槛碾压——人为抬高Λ_compute让攻击者在门外 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#391](docs/zh/cases/items/C-0391.md) | NP难是门槛指数碾压——Λ_compute∝2^n远超μ∝n^k的增长速度 / NP难是门槛指数碾压 - - Λ_compute∝2^n远超μ∝n^k的增长速度 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#392](docs/zh/cases/items/C-0392.md) | 分布式一致性的慢节点拖累——一个μ<Λ的节点拖累整体一致性 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#393](docs/zh/cases/items/C-0393.md) | 大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变 / 大数据的泛化相变 - - μ_data越过Λ_generalization的瞬间泛化能力质变 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#394](docs/zh/cases/items/C-0394.md) | 缓存是降低门槛——降低Λ_compute让更多μ过门槛，[D162](../../docs/zh/functions/items/D162.md)的逆操作 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#395](docs/zh/cases/items/C-0395.md) | 并发死锁的相变无中间态——[D161](../../docs/zh/functions/items/D161.md)乘法死锁的精确实例 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#394](docs/zh/cases/items/C-0394.md) | 缓存是降低门槛——降低Λ_compute让更多μ过门槛，D162的逆操作 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#395](docs/zh/cases/items/C-0395.md) | 并发死锁的相变无中间态——D161乘法死锁的精确实例 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#396](docs/zh/cases/items/C-0396.md) | 习惯门槛碾压意识——Λ_habit追上μ_awareness，意识被习惯碾压 / 习惯门槛碾压意识 - - Λ_habit追上μ_awareness, 意识被习惯碾压 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#397](docs/zh/cases/items/C-0397.md) | 创伤的双重碾压+向下兼容——μ↓+Λ↑双重门槛碾压+回避的保真度损失 |  /  | 交叉验证 / Cross-verified | 2 |
 | [#398](docs/zh/cases/items/C-0398.md) | 顿悟无中间态——μ越过Λ_awareness的瞬间相变，不存在"半懂" |  /  | 交叉验证 / Cross-verified | 1 |
 | [#399](docs/zh/cases/items/C-0399.md) | 心流的倒U型走钢丝——两侧都是死锁（焦虑/无聊），心流是唯一通路 |  /  | 交叉验证 / Cross-verified | 2 |
 | [#400](docs/zh/cases/items/C-0400.md) | 成瘾的慢速门槛碾压——Λ_pleasure缓慢上升，每次刺激抬高一点门槛 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#401](docs/zh/cases/items/C-0401.md) | 冥想降低门槛——降低Λ_awareness让觉知更容易发生，[D89](../../docs/zh/functions/items/D89.md)结构保守性 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#401](docs/zh/cases/items/C-0401.md) | 冥想降低门槛——降低Λ_awareness让觉知更容易发生，D89结构保守性 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#402](docs/zh/cases/items/C-0402.md) | 学习平台期的超敏感区——μ在Λ_next附近震荡，突破是相变 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#403](docs/zh/cases/items/C-0403.md) | 民主退化的参与门槛碾压——参与成本上升+参与意愿下降，自然+人为双重碾压 |  /  | 交叉验证 / Cross-verified | 2 |
 | [#404](docs/zh/cases/items/C-0404.md) | 改革窗口与革命同构——A型崩溃与B型松弛的共振窗口 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#405](docs/zh/cases/items/C-0405.md) | 权力腐败的问责趋零——μ_power>>Λ_accountability时1/ln趋零 / 权力腐败的问责趋零 - - μ_power>>Λ_accountability时1/ln趋零 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#406](docs/zh/cases/items/C-0406.md) | 威权的单点故障——单一B型正项维持，该正项消失则系统瞬间崩溃 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#407](docs/zh/cases/items/C-0407.md) | 联邦制隔离拖累——多独立门控面分散风险，单一子系统拖累不影响全局 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#408](docs/zh/cases/items/C-0408.md) | 国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，[D160](../../docs/zh/functions/items/D160.md)宏观版 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#408](docs/zh/cases/items/C-0408.md) | 国际秩序的霸权门槛碾压——霸权μ衰退+Λ上升，D160宏观版 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#409](docs/zh/cases/items/C-0409.md) | 反腐运动的临时外部注入——Λ_accountability临时提高，运动结束后回落 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#410](docs/zh/cases/items/C-0410.md) | 慢性病的门外锁定+向下兼容——μ_repair<Λ_repair+症状管理的保真度损失 |  /  | 交叉验证 / Cross-verified | 2 |
-| [#411](docs/zh/cases/items/C-0411.md) | 耐药性的门槛军备竞赛——药物抬高Λ（[D162](../../docs/zh/functions/items/D162.md)）与病原体降低自身Λ的对抗 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#411](docs/zh/cases/items/C-0411.md) | 耐药性的门槛军备竞赛——药物抬高Λ（D162）与病原体降低自身Λ的对抗 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#412](docs/zh/cases/items/C-0412.md) | 安慰剂的信念相变——信念提高μ_immune越过Λ_immune的微小翻转 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#413](docs/zh/cases/items/C-0413.md) | 自愈是门槛自然翻转——μ_immune>Λ_pathogen时无需外部注入 / 自愈是门槛自然翻转 - - μ_immune>Λ_pathogen时无需外部注入 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#414](docs/zh/cases/items/C-0414.md) | 器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#415](docs/zh/cases/items/C-0415.md) | 衰老多病的乘法加速——多门控面同时门槛碾压，[D87](../../docs/zh/functions/items/D87.md)多因子叠加 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#415](docs/zh/cases/items/C-0415.md) | 衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#416](docs/zh/cases/items/C-0416.md) | 手术窗口的倒U型——太弱死锁和太晚死锁之间的唯一通路 |  /  | 交叉验证 / Cross-verified | 2 |
 | [#417](docs/zh/cases/items/C-0417.md) | 城市规模律的倒U型——互动收益与摩擦成本之间的走钢丝 |  /  | 交叉验证 / Cross-verified | 2 |
 | [#418](docs/zh/cases/items/C-0418.md) | 核心-边缘的乘法分化——核心是多门控面正贡献的吸引子，边缘是门外锁定 |  /  | 交叉验证 / Cross-verified | 1 |
@@ -443,7 +443,7 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#433](docs/zh/cases/items/C-0433.md) | 防守阶段β上升的反直觉 — 创业公司接近盈亏平衡点时（εrevenue→θC），β上升→级联风险最大→恰恰在最需要防守的时候。过了平衡点后β下降→可以转向增长 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#434](docs/zh/cases/items/C-0434.md) | 多维阶梯转换 — 3维门槛θC=(0.3,0.5,0.7)，初始ε=(0.2,0.4,0.6)。先推ε₁过0.3（β第一阶下降），再推ε₂过0.5（β第二阶下降），最后推ε₃过0.7（β第三阶下降）。三步防守→进攻转换 / 多维阶梯转换 - 3维门槛θC=(0.3,0.5,0.7), 初始ε=(0.2,0.4,0.6). 先推ε₁过0.3(β第一阶下降), 再推ε₂过0.5(β第二阶下降), 最后推ε₃过0.7(β第三阶下降). 三步防守 -> 进攻转换 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#435](docs/zh/cases/items/C-0435.md) | 切换点精确可定 — 不需要"感觉"该防守还是进攻，只需监测maxσ'是否在下降。maxσ'上升=防守阶段，maxσ'下降=进攻阶段，maxσ'达峰=切换点 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#436](docs/zh/cases/items/C-0436.md) | 经验法则证伪 — 经验说"先确保生存再追求增长"，但[D112](../../docs/zh/functions/items/D112.md)说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果" |  /  | 交叉验证 / Cross-verified | 1 |
+| [#436](docs/zh/cases/items/C-0436.md) | 经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是"防守强度随接近门槛先增后减，进攻是防守衰减的自然结果" |  /  | 交叉验证 / Cross-verified | 1 |
 | [#437](docs/zh/cases/items/C-0437.md) | 幂函数等价验证 — f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵。η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃。δ₁=0,δ₂=0,δ₃=0。所有幂函数偏离度=0，补最弱=补弹性最高 / 幂函数等价验证 - f₁=ε₁,f₂=ε₂²,f₃=ε₁⁰·⁵. η₁=1/ε₁,η₂=2/ε₂,η₃=0.5/ε₃. δ₁=0,δ₂=0,δ₃=0. 所有幂函数偏离度=0, 补最弱=补弹性最高 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#438](docs/zh/cases/items/C-0438.md) | 弹性封顶偏离 — f₁=σ(5(ε₁-0.3)),ε₁=0.1,η₁=5×0.88=4.4,W₁=10。c=1时δ₁=4.4×0.1/1-1=-0.56。弹性远低于弱度预期，"补最弱"会过度投入 / 弹性封顶偏离 - f₁=σ(5(ε₁-0.3)),ε₁=0.1,η₁=5 x 0.88=4.4,W₁=10. c=1时δ₁=4.4 x 0.1/1-1=-0.56. 弹性远低于弱度预期, "补最弱"会过度投入 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#439](docs/zh/cases/items/C-0439.md) | 饱和区偏离 — f₁=σ(5(ε₁-0.3)),ε₁=0.8,η₁=5×0.04=0.2,W₁=1.25。δ₁=0.2×0.8/1-1=-0.84。弹性几乎归零但弱度仍正，"补最弱"会继续投入已饱和因子 / 饱和区偏离 - f₁=σ(5(ε₁-0.3)),ε₁=0.8,η₁=5 x 0.04=0.2,W₁=1.25. δ₁=0.2 x 0.8/1-1=-0.84. 弹性几乎归零但弱度仍正, "补最弱"会继续投入已饱和因子 |  /  | 交叉验证 / Cross-verified | 1 |
@@ -469,15 +469,15 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#459](docs/zh/cases/items/C-0459.md) | 加法退化验证 — 同一系统改为加法G=∑fᵢ，Fisher距离有限，A_Fisher不再单调递减，dS/dt≥0恢复成立 / 加法退化验证 - 同一系统改为加法G=∑fᵢ, Fisher距离有限, A_Fisher不再单调递减, dS/dt≥0恢复成立 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#460](docs/zh/cases/items/C-0460.md) | 生物不可逆的Fisher解释 — 细胞凋亡（乘法：任一关键蛋白归零则死亡），死亡后Shannon熵增但Fisher可达性=0（信息距离∞，无法恢复） |  /  | 交叉验证 / Cross-verified | 1 |
 | [#461](docs/zh/cases/items/C-0461.md) | 组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#462](docs/zh/cases/items/C-0462.md) | 变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，[D111](../../docs/zh/functions/items/D111.md)分配的S_ignition全局最小，无第二极值点 / 变分唯一性验证 - 3维sigmoid乘法系统, 随机采样1000组Δε分配, [D111](../../docs/zh/functions/items/D111.md)分配的S_ignition全局最小, 无第二极值点 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#462](docs/zh/cases/items/C-0462.md) | 变分唯一性验证 — 3维sigmoid乘法系统，随机采样1000组Δε分配，D111分配的S_ignition全局最小，无第二极值点 / 变分唯一性验证 - 3维sigmoid乘法系统, 随机采样1000组Δε分配, D111分配的S_ignition全局最小, 无第二极值点 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#463](docs/zh/cases/items/C-0463.md) | 诺特定理验证 — 5维对称系统（fᵢ相同），∑ηᵢ=5×0.25=1.25恒定。打破对称后（1维门槛提高），∑ηᵢ仍=1.25但分布不均 / 诺特定理验证 - 5维对称系统(fᵢ相同), ∑ηᵢ=5 x 0.25=1.25恒定. 打破对称后(1维门槛提高), ∑ηᵢ仍=1.25但分布不均 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#464](docs/zh/cases/items/C-0464.md) | 偏离度=对称性破缺度量 — 对称系统δ=0，1维门槛偏移0.3后δ₁=-0.56,δ₂=+0.31，∑δ=0（守恒） / 偏离度=对称性破缺度量 - 对称系统δ=0, 1维门槛偏移0.3后δ₁=-0.56,δ₂=+0.31, ∑δ=0(守恒) |  /  | 交叉验证 / Cross-verified | 1 |
-| [#465](docs/zh/cases/items/C-0465.md) | 恢复力验证 — 从[D111](../../docs/zh/functions/items/D111.md)偏离10%投入，S_ignition增大0.8%，梯度指向[D111](../../docs/zh/functions/items/D111.md)方向，系统自动回归 / 恢复力验证 - 从[D111](../../docs/zh/functions/items/D111.md)偏离10%投入, S_ignition增大0.8%, 梯度指向[D111](../../docs/zh/functions/items/D111.md)方向, 系统自动回归 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#465](docs/zh/cases/items/C-0465.md) | 恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归 / 恢复力验证 - 从D111偏离10%投入, S_ignition增大0.8%, 梯度指向D111方向, 系统自动回归 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#466](docs/zh/cases/items/C-0466.md) | 经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称 -> ∑αᵢ=1守恒, 均等分配αᵢ=1/n是诺特定理特例 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#467](docs/zh/cases/items/C-0467.md) | 生物衰老Fisher轨迹 — 模拟8维生理系统（心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏），A_Fisher从青年期12.8→中年期6.2→老年期1.1→终末期0.02，单调递减。Shannon熵先降后升（分化→功能随机化），与A_Fisher无相关性 / 生物衰老Fisher轨迹 - 模拟8维生理系统(心血管/免疫/代谢/神经/内分泌/肌肉/骨骼/肾脏), A_Fisher从青年期12.8 -> 中年期6.2 -> 老年期1.1 -> 终末期0.02, 单调递减. Shannon熵先降后升(分化 -> 功能随机化), 与A_Fisher无相关性 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#468](docs/zh/cases/items/C-0468.md) | 组织低熵不可逆 — 国企流程固化后Shannon熵降低（可区分状态减少），但Fisher可达性=0（调整路径被锁死）。"明明知道问题在哪但改不了"=Fisher距离∞，不是信息不足 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#469](docs/zh/cases/items/C-0469.md) | 认知僵化Fisher解释 — 专家P_track=1（单轨），ε_aware=0，Fisher可达性=0。新信息存在但无法整合=信息在Fisher距离∞的区域。打开新轨道（跨域学习）=增加Fisher可达性 / 认知僵化Fisher解释 - 专家P_track=1(单轨), ε_aware=0, Fisher可达性=0. 新信息存在但无法整合=信息在Fisher距离∞的区域. 打开新轨道(跨域学习)=增加Fisher可达性 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#470](docs/zh/cases/items/C-0470.md) | 退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与[D114](../../docs/zh/functions/items/D114.md) β峰值一致。越退化越快，不是线性衰退 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#470](docs/zh/cases/items/C-0470.md) | 退化加速正反馈 — 8维系统中第3维接近门槛时dA_Fisher/dt加速3.7倍，与D114 β峰值一致。越退化越快，不是线性衰退 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#471](docs/zh/cases/items/C-0471.md) | 修复的Fisher条件 — 阿尔茨海默：增加信息量（记忆训练）不增加A_Fisher（清洗通道仍堵），无效。增加可达性（改善睡眠→清洗效率↑→Fisher路径打开）才有效。与案例#114闭合 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#472](docs/zh/cases/items/C-0472.md) | 大脑全局σ>>σ_opt但局部最优 — 全局σ≈10⁴，局部功能柱σ≈1.0 / 大脑全局σ>>σ_opt但局部最优 - 全局σ≈10⁴, 局部功能柱σ≈1.0 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#473](docs/zh/cases/items/C-0473.md) | 符号AI卡在1/ln — if-then规则=二值门控，σ→0，ι→0，无智能 / 符号AI卡在1/ln - if-then规则=二值门控, σ -> 0, ι -> 0, 无智能 |  /  | 仅来自原始笔记 / From source notes only | 1 |
@@ -491,9 +491,9 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#481](docs/zh/cases/items/C-0481.md) | 认知叠加验证 — 专家vs通才：专家r_cross≈0.1（2条弱关联轨道），通才r_cross≈0.6（5条强关联轨道）。面对新问题通才5条轨道同时激活，专家1条轨道主导 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#482](docs/zh/cases/items/C-0482.md) | 退出隧穿验证 — 朝鲜脱北者：C_exit≈∞（地理+政治+身份三维锁定），经典P_exit≈0，但实际发生。隧穿路径：边境信息泄漏（降低势垒宽度）+贿赂守卫（局部降低C_exit）+外部接应（提供ε_eff脉冲） |  /  | 交叉验证 / Cross-verified | 1 |
 | [#483](docs/zh/cases/items/C-0483.md) | 不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时精确知道"现在值多少"和"未来值多少"不可兼得 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#484](docs/zh/cases/items/C-0484.md) | 乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与[D120](../../docs/zh/functions/items/D120.md)不可逆性判据完全一致：S_vN>0⟺Ξ=∞ / 乘法纠缠验证 - 8维乘法系统S_vN=ln8=2.08, 8维加法系统S_vN=0. 混合系统α=0.3时S_vN=0.62. 纠缠度与[D120](../../docs/zh/functions/items/D120.md)不可逆性判据完全一致: S_vN>0⟺Ξ=∞ |  /  | 交叉验证 / Cross-verified | 1 |
+| [#484](docs/zh/cases/items/C-0484.md) | 乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120不可逆性判据完全一致：S_vN>0⟺Ξ=∞ / 乘法纠缠验证 - 8维乘法系统S_vN=ln8=2.08, 8维加法系统S_vN=0. 混合系统α=0.3时S_vN=0.62. 纠缠度与D120不可逆性判据完全一致: S_vN>0⟺Ξ=∞ |  /  | 交叉验证 / Cross-verified | 1 |
 | [#485](docs/zh/cases/items/C-0485.md) | 退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1(轨道逐步关闭), H从0.2 -> 0.6 -> 0.9(组织规范obscuration增强), τ_decoherence从50 -> 8 -> 1.5(退相干加速). 6个月后只剩单轨=完全退相干=认知僵化 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#486](docs/zh/cases/items/C-0486.md) | 路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（[D118](../../docs/zh/functions/items/D118.md)预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#486](docs/zh/cases/items/C-0486.md) | 路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条路径（非最优策略也有显著概率）。经验创业者ℏ_eff低（信息充分噪声小），新手ℏ_eff高 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#487](docs/zh/cases/items/C-0487.md) | 刀刃期ℏ_eff放大 — 阶段2（ε≈θC）时σ'最大→信号最敏感→噪声影响最大→ℏ_eff等效增大3-5倍→策略偏离最优的概率最大。三阶段协议中阶段2最危险的根本原因：认知量子最大 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#488](docs/zh/cases/items/C-0488.md) | 退相干-退化统一验证 — 8维乘法系统：纯Fisher退化（H=0）时Γ=0.3/年，纯退相干（ε远离门槛）时Γ=0.2/年，两者叠加Γ=0.5/年。A_Fisher衰减速率与Γ_unified精确匹配 / 退相干-退化统一验证 - 8维乘法系统: 纯Fisher退化(H=0)时Γ=0.3/年, 纯退相干(ε远离门槛)时Γ=0.2/年, 两者叠加Γ=0.5/年. A_Fisher衰减速率与Γ_unified精确匹配 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#489](docs/zh/cases/items/C-0489.md) | 遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40% |  /  | 交叉验证 / Cross-verified | 1 |
@@ -504,11 +504,11 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#494](docs/zh/cases/items/C-0494.md) | 冥想=降低Λ_awareness — 降低门槛让觉知更容易，σ从1/ln升级到exp[-ln²] / 冥想=降低Λ_awareness - 降低门槛让觉知更容易, σ从1/ln升级到exp[-ln²] |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#495](docs/zh/cases/items/C-0495.md) | 成瘾=σ退化到1/ln — 从连续优化退回二值判断（要/不要），失去中间态 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#496](docs/zh/cases/items/C-0496.md) | 文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#497](docs/zh/cases/items/C-0497.md) | 文明崩溃=Φ加速衰减 — 多个门控面同时消失，[D228](../../docs/zh/functions/items/D228.md)双通道衰减的文明版 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#497](docs/zh/cases/items/C-0497.md) | 文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#498](docs/zh/cases/items/C-0498.md) | 技术革命=门控函数形式升级 — 蒸汽机→电力→信息技术=1/ln→exp[-ln²]的技术版 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#499](docs/zh/cases/items/C-0499.md) | AI对齐问题=σ控制 — 让AI的σ在σ_opt附近而非σ→0（僵化）或σ→∞（随机） / AI对齐问题=σ控制 - 让AI的σ在σ_opt附近而非σ -> 0(僵化)或σ -> ∞(随机) |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#500](docs/zh/cases/items/C-0500.md) | 宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，[D223](../../docs/zh/functions/items/D223.md)的终极案例 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#501](docs/zh/cases/items/C-0501.md) | [D152](../../docs/zh/functions/items/D152.md)严格检验 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#500](docs/zh/cases/items/C-0500.md) | 宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例 |  /  | 仅来自原始笔记 / From source notes only | 1 |
+| [#501](docs/zh/cases/items/C-0501.md) | D152严格检验 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#502](docs/zh/cases/items/C-0502.md) | 认知时间膨胀验证 — 危机决策实验：ε高的决策者（专家）平均决策时间2分钟，ε低的决策者（新手）平均决策时间8分钟。同样事件，新手感知时间膨胀4倍=γ_cog≈4→ε₀/ε≈0.97 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#503](docs/zh/cases/items/C-0503.md) | 认知等效原理验证 — 组织诊断：观测到ε_eff下降30%，仅从ε_eff无法判断来源。潮汐力分析：经济维度ε_econ下降50%但社交维度ε_social仅下降10%→非均匀衰减→C_exit锁定为主（曲率） |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#504](docs/zh/cases/items/C-0504.md) | 认知空间曲率验证 — 社会比较：均匀社会（北欧）εᵢ标准差0.08→R_cog≈0→策略趋同；不平等社会（巴西）εᵢ标准差0.45→R_cog显著→策略分化→级联易发 |  /  | 仅来自原始笔记 / From source notes only | 1 |
@@ -516,11 +516,11 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#506](docs/zh/cases/items/C-0506.md) | 认知黑洞验证 — 家暴受害者：4维锁定（经济/社交/心理/地理）→∏(1-σ)≈0.001→z_cog≈999→信号红移99.9%→外部几乎无法感知内部状态。解锁心理维度后z降至50→信号可部分逃逸 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#507](docs/zh/cases/items/C-0507.md) | 测地线偏离验证 — 组织退化传染：部门A退化（ε↓30%）→部门B（κ_AB=0.4）在3个月内跟随退化15%→部门C（κ_AC=0.1）几乎不受影响。κ_ij=-R_cog→部门间曲率决定传染速度 / 测地线偏离验证 - 组织退化传染: 部门A退化(ε↓30%) -> 部门B(κ_AB=0.4)在3个月内跟随退化15% -> 部门C(κ_AC=0.1)几乎不受影响. κ_ij=-R_cog -> 部门间曲率决定传染速度 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#508](docs/zh/cases/items/C-0508.md) | β-曲率关系验证 — 5维系统：ε=(0.8,0.6,0.4,0.2,0.1)→β_max=γ/(2×0.1)=5γ；ε=(0.5,0.5,0.5,0.5,0.5)→β_max=γ/(2×0.5)=γ。不均匀系统的β是均匀系统的5倍，与曲率差异一致 / β-曲率关系验证 - 5维系统: ε=(0.8,0.6,0.4,0.2,0.1) -> β_max=γ/(2 x 0.1)=5γ; ε=(0.5,0.5,0.5,0.5,0.5) -> β_max=γ/(2 x 0.5)=γ. 不均匀系统的β是均匀系统的5倍, 与曲率差异一致 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#509](docs/zh/cases/items/C-0509.md) | 测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：[D111](../../docs/zh/functions/items/D111.md)策略的S_ignition全局最小，偏离[D111](../../docs/zh/functions/items/D111.md)的策略S增大，梯度指向[D111](../../docs/zh/functions/items/D111.md)方向。在Fisher度规定义的黎曼流形上，[D111](../../docs/zh/functions/items/D111.md)确实是测地线 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#509](docs/zh/cases/items/C-0509.md) | 测地线=最优策略验证 — 3维sigmoid乘法系统，1000次随机策略采样：D111策略的S_ignition全局最小，偏离D111的策略S增大，梯度指向D111方向。在Fisher度规定义的黎曼流形上，D111确实是测地线 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#510](docs/zh/cases/items/C-0510.md) | 三阶段=曲率穿越验证 — 创业者路径：阶段1（资源充足ε>>θC）→R_cog≈0→贪心策略有效；阶段2（资金紧张ε≈θC）→R_cog最大→必须做级联防御；阶段3（盈利后ε>>θC）→R_cog→0→回到贪心。β轨迹与曲率轨迹完全同步 / 三阶段=曲率穿越验证 - 创业者路径: 阶段1(资源充足ε>>θC) -> R_cog≈0 -> 贪心策略有效; 阶段2(资金紧张ε≈θC) -> R_cog最大 -> 必须做cascade defense; 阶段3(盈利后ε>>θC) -> R_cog -> 0 -> 回到贪心. β轨迹与曲率轨迹完全同步 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#511](docs/zh/cases/items/C-0511.md) | 认知引力波验证 — 大规模裁员事件：经济维度ε_econ突然下降→Fisher度规在经济方向跳变→1个月后社交维度感知到变化（v_max限制）→3个月后心理维度受影响。度规扰动传播延迟与v_max一致 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#512](docs/zh/cases/items/C-0512.md) | 最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→[D111](../../docs/zh/functions/items/D111.md)策略在ε₇方向的级联修正最强。与[D87](../../docs/zh/functions/items/D87.md)乘法临界漂移一致 / 最弱维度=曲率奇点验证 - 8维系统中第7维ε₇=0.05(最弱): 该方向Fisher度规g₇₇=1/0.05²=400, 是其他方向的10-100倍. 曲率在ε₇方向发散 -> β由ε₇决定 -> [D111](../../docs/zh/functions/items/D111.md)策略在ε₇方向的级联修正最强. 与[D87](../../docs/zh/functions/items/D87.md)乘法临界漂移一致 |  /  | 交叉验证 / Cross-verified | 1 |
-| [#513](docs/zh/cases/items/C-0513.md) | 测地线唯一性验证 — 3维系统10000次随机采样：[D111](../../docs/zh/functions/items/D111.md)的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离[D111](../../docs/zh/functions/items/D111.md) 10%→S增大0.8%，梯度指向[D111](../../docs/zh/functions/items/D111.md) / 测地线唯一性验证 - 3维系统10000次随机采样: [D111](../../docs/zh/functions/items/D111.md)的S_ignition全局最小, 无第二极值点. 二阶变分δ²S=0.34>0确认稳定. 偏离[D111](../../docs/zh/functions/items/D111.md) 10% -> S增大0.8%, 梯度指向[D111](../../docs/zh/functions/items/D111.md) |  /  | 交叉验证 / Cross-verified | 1 |
+| [#512](docs/zh/cases/items/C-0512.md) | 最弱维度=曲率奇点验证 — 8维系统中第7维ε₇=0.05（最弱）：该方向Fisher度规g₇₇=1/0.05²=400，是其他方向的10-100倍。曲率在ε₇方向发散→β由ε₇决定→D111策略在ε₇方向的级联修正最强。与D87乘法临界漂移一致 / 最弱维度=曲率奇点验证 - 8维系统中第7维ε₇=0.05(最弱): 该方向Fisher度规g₇₇=1/0.05²=400, 是其他方向的10-100倍. 曲率在ε₇方向发散 -> β由ε₇决定 -> D111策略在ε₇方向的级联修正最强. 与D87乘法临界漂移一致 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#513](docs/zh/cases/items/C-0513.md) | 测地线唯一性验证 — 3维系统10000次随机采样：D111的S_ignition全局最小，无第二极值点。二阶变分δ²S=0.34>0确认稳定。偏离D111 10%→S增大0.8%，梯度指向D111 / 测地线唯一性验证 - 3维系统10000次随机采样: D111的S_ignition全局最小, 无第二极值点. 二阶变分δ²S=0.34>0确认稳定. 偏离D111 10% -> S增大0.8%, 梯度指向D111 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#514](docs/zh/cases/items/C-0514.md) | 最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），β由ε₇决定（策略偏离最远）。三重发散同步 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#515](docs/zh/cases/items/C-0515.md) | 度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#516](docs/zh/cases/items/C-0516.md) | 三阶段曲率穿越验证 — 创业公司5年轨迹：β从0.2→3.8→0.3，R_cog从0.01→0.45→0.02，两者完全同步。阶段2峰值处策略从贪心切换到级联防御，β和R_cog同时取最大值 / 三阶段曲率穿越验证 - 创业公司5年轨迹: β从0.2 -> 3.8 -> 0.3, R_cog从0.01 -> 0.45 -> 0.02, 两者完全同步. 阶段2峰值处策略从贪心切换到cascade defense, β和R_cog同时取最大值 |  /  | 交叉验证 / Cross-verified | 1 |
@@ -535,7 +535,7 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#525](docs/zh/cases/items/C-0525.md) | 宏观退相干 — N_env从1到10²³使Γ变20+量级 / 宏观退相干 - N_env从1到10²³使Γ变20+量级 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#526](docs/zh/cases/items/C-0526.md) | 量子计算优越性 — 2ⁿ维存活区搜索+2ⁿ维门控风险，同一结构两面 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#527](docs/zh/cases/items/C-0527.md) | EPR悖论 — 局域性和实在性是连续因子不是布尔量，B=ε_loc×ε_real≈0.9 / EPR悖论 - 局域性和实在性是连续因子不是布尔量, B=ε_loc x ε_real≈0.9 |  /  | 仅来自原始笔记 / From source notes only | 1 |
-| [#528](docs/zh/cases/items/C-0528.md) | 时间箭头 — dΦ/dt≥0=Fisher可达性只减不增([D117](../../docs/zh/functions/items/D117.md)) / 时间箭头 - dΦ/dt≥0=Fisher可达性只减不增([D117](../../docs/zh/functions/items/D117.md)) |  /  | 仅来自原始笔记 / From source notes only | 2 |
+| [#528](docs/zh/cases/items/C-0528.md) | 时间箭头 — dΦ/dt≥0=Fisher可达性只减不增(D117) / 时间箭头 - dΦ/dt≥0=Fisher可达性只减不增(D117) |  /  | 仅来自原始笔记 / From source notes only | 2 |
 | [#529](docs/zh/cases/items/C-0529.md) | 麦克斯韦妖 — 信息操作总Φ变化≥0，Landauer是特例 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#530](docs/zh/cases/items/C-0530.md) | 负温度 — ε>1="超存活"态，弛豫释放能量 |  /  | 仅来自原始笔记 / From source notes only | 1 |
 | [#531](docs/zh/cases/items/C-0531.md) | 相变分类 — 连续=穿越超平面，一级=两存活区跳变 |  /  | 仅来自原始笔记 / From source notes only | 1 |
@@ -586,3 +586,19 @@ Machine-readable index that keeps Chinese titles, English titles, levels, status
 | [#576](docs/zh/cases/items/C-0576.md) | 科学范式革命 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#577](docs/zh/cases/items/C-0577.md) | 改革开放节奏 |  /  | 交叉验证 / Cross-verified | 1 |
 | [#578](docs/zh/cases/items/C-0578.md) | 子弹星系团暗物质 |  /  | 交叉验证 / Cross-verified | 2 |
+| [#579](docs/zh/cases/items/C-0579.md) | 上下文饱和重置验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#580](docs/zh/cases/items/C-0580.md) | 睡眠清除门控验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#581](docs/zh/cases/items/C-0581.md) | 偏好-愉悦共同势函数验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#582](docs/zh/cases/items/C-0582.md) | 代际逃逸死锁验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#583](docs/zh/cases/items/C-0583.md) | 路径依赖分化验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#584](docs/zh/cases/items/C-0584.md) | 负期望回本陷阱验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#585](docs/zh/cases/items/C-0585.md) | 小群体资源不易感验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#586](docs/zh/cases/items/C-0586.md) | 内源输出再输入污染验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#587](docs/zh/cases/items/C-0587.md) | 睡眠修复窗口验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#588](docs/zh/cases/items/C-0588.md) | 心率累积耗损验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#589](docs/zh/cases/items/C-0589.md) | 皮屑屏障-微生态失配验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#590](docs/zh/cases/items/C-0590.md) | 免疫-感染阈值验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#591](docs/zh/cases/items/C-0591.md) | 神经自举唤醒验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#592](docs/zh/cases/items/C-0592.md) | 信息自聚合场验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#593](docs/zh/cases/items/C-0593.md) | 短视频奖励压缩验证 |  /  | 交叉验证 / Cross-verified | 1 |
+| [#594](docs/zh/cases/items/C-0594.md) | 梦境离线生成整合验证 |  /  | 交叉验证 / Cross-verified | 1 |

@@ -1,13 +1,9 @@
 {
-  "updated_at": "2026-06-14",
+  "updated_at": "2026-06-15",
   "rules": [
     {
       "object_class": "function",
       "criterion": "Has a reusable mapping, operator, mechanism, or structural expression with domain and codomain or explicit input-output relation."
-    },
-    {
-      "object_class": "effect",
-      "criterion": "Describes a stable observed change, phenomenon, or output shift under conditions rather than the generating mechanism itself."
     },
     {
       "object_class": "analytic_solution",

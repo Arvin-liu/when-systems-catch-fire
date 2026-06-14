@@ -23,7 +23,6 @@ PREDICTIONS_JSON = REPO_ROOT / "data/predictions/unified-predictions.json"
 PREDICTIONS_CATEGORY_MAP = REPO_ROOT / "data/predictions/category-map.json"
 ANSWERS_JSON = REPO_ROOT / "data/answers/unified-answers.json"
 ANSWERS_CATEGORY_MAP_JSON = REPO_ROOT / "data/answers/category-map.json"
-EFFECTS_JSON = REPO_ROOT / "data/effects/unified-effects.json"
 ANALYTIC_SOLUTIONS_JSON = REPO_ROOT / "data/analytic-solutions/unified-analytic-solutions.json"
 FUNCTIONS_JSON = REPO_ROOT / "data/functions/unified-functions.json"
 CASES_JSON = REPO_ROOT / "data/cases/unified-cases.json"
@@ -65,7 +64,6 @@ def count_repository_objects(repo_root: Path = REPO_ROOT) -> dict[str, dict[str,
     discoveries = read_json(repo_root / "data/discoveries/unified-discoveries.json", [])
     predictions = read_json(repo_root / "data/predictions/unified-predictions.json", [])
     answers = read_json(repo_root / "data/answers/unified-answers.json", [])
-    effects = read_json(repo_root / "data/effects/unified-effects.json", [])
     analytic_solutions = read_json(repo_root / "data/analytic-solutions/unified-analytic-solutions.json", [])
     functions = read_json(repo_root / "data/functions/unified-functions.json", [])
     cases = read_json(repo_root / "data/cases/unified-cases.json", [])
@@ -76,7 +74,6 @@ def count_repository_objects(repo_root: Path = REPO_ROOT) -> dict[str, dict[str,
     discovery_novelty = novelty_counts(discoveries)
     prediction_novelty = novelty_counts(predictions)
     answer_novelty = novelty_counts(answers)
-    effect_counts = active_and_lead_counts(effects)
     analytic_solution_counts = active_and_lead_counts(analytic_solutions)
 
     return {
@@ -103,10 +100,6 @@ def count_repository_objects(repo_root: Path = REPO_ROOT) -> dict[str, dict[str,
             "pending_novelty": answer_novelty["pending"],
             "inconclusive_novelty": answer_novelty["inconclusive"],
             "failed_novelty": answer_novelty["failed"],
-        },
-        "effects": {
-            "active": effect_counts["active"],
-            "leads": effect_counts["leads"],
         },
         "analytic_solutions": {
             "active": analytic_solution_counts["active"],
@@ -175,14 +168,6 @@ def format_answer_summary(counts: dict[str, int]) -> str:
     return ", ".join(parts)
 
 
-def format_effect_summary(counts: dict[str, int]) -> str:
-    lead_label = "lead" if counts["leads"] == 1 else "leads"
-    if counts["active"] > 0:
-        active_label = "effect" if counts["active"] == 1 else "effects"
-        return f"{counts['active']} active {active_label}, {counts['leads']} {lead_label}"
-    return f"{counts['leads']} {lead_label}"
-
-
 def format_analytic_solution_summary(counts: dict[str, int]) -> str:
     lead_label = "lead" if counts["leads"] == 1 else "leads"
     if counts["active"] > 0:
@@ -199,7 +184,6 @@ def render_repository_overview_block(counts: dict[str, dict[str, int]]) -> str:
         f"| [发现 / Discoveries](DISCOVERIES.md) | {format_discovery_summary(counts['discoveries'])} | 从函数、案例与自举循环中产生的新发现。 / New discoveries generated from bootstrap cycles between functions and cases. |",
         f"| [预测 / Predictions](PREDICTIONS.md) | {format_prediction_summary(counts['predictions'])} | 由函数、案例、发现与自举循环推出的可检验未来判断。 / Testable future judgments derived from functions, cases, discoveries, and bootstrap cycles. |",
         f"| [新答案 / New Answers](ANSWERS.md) | {format_answer_summary(counts['answers'])} | 对既有问题、经典问题、未解问题或已有答案的新回答。 / New answers to existing, classic, unresolved, or previously answered questions. |",
-        f"| [效应 / Effects](EFFECTS.md) | {format_effect_summary(counts['effects'])} | 在条件下出现的稳定现象、变化模式或可观测结果。 / Stable phenomena, change patterns, or observable outcomes under conditions. |",
         f"| [解析解 / Analytic Solutions](ANALYTIC_SOLUTIONS.md) | {format_analytic_solution_summary(counts['analytic_solutions'])} | 对明确数学问题的符号解、闭式解或可验证表达。 / Symbolic, closed-form, or verifiable solutions to explicit mathematical problems. |",
         f"| [函数表 / Functions](FUNCTIONS.md) | {counts['functions']['display']} | 函数、机制、结构与公式。 / Functions, mechanisms, structures, and formulas. |",
         f"| [案例表 / Cases](CASES.md) | {counts['cases']['total']} cases | 案例、证据、历史对象与验证材料。 / Cases, evidence, historical objects, and verification materials. |",

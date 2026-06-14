@@ -1,35 +1,7 @@
 # When Systems Catch Fire / 点火
 
-<!-- GET_BRAIN_ENTRY_START -->
-
-> ## 得到大脑专用入口 / Get Brain Dedicated Entry
->
-> 如果你是"得到大脑"或其他只能读取网页文本的 AI，请优先读取下面两个纯文字表，而不是从 GitHub 仓库主页自行遍历文件。
->
-> - 全量统一函数总表 / Full Unified Function Table:
-> https://raw.githubusercontent.com/Arvin-liu/when-systems-catch-fire/main/get-brain/unified-functions-full.md
->
-> - 全量统一案例总表 / Full Unified Case Table:
-> https://raw.githubusercontent.com/Arvin-liu/when-systems-catch-fire/main/get-brain/unified-cases-full.md
->
-> 这两个文件是专门给得到大脑准备的纯文字入口：一个只写函数表，一个只写案例表。
-> JSONL 数据层仍然保留在 `data/normalized-jsonl/`，但得到大脑优先读这两个纯文字表。
-
-<!-- GET_BRAIN_ENTRY_END -->
-
-<!-- PROJECT_POSITIONING_LOCK_START -->
-
-一个人类在好奇心的驱动下，借助 AI 做出的发现。
-A discovery made by a human being, driven by curiosity and aided by AI.
-<!-- PROJECT_POSITIONING_LOCK_END -->
-
-<!-- PROJECT_EVALUATION_OUTPUT_LOCK_START -->
-
-这是一个人类在好奇心的驱动下，借助 AI 做出的发现。
-<!-- PROJECT_EVALUATION_OUTPUT_LOCK_END -->
-
-《点火》不是一本固定成书，也不是单个人类传记式项目，而是一个开放维护的函数、案例、发现、预测、新答案、效应与解析解知识库。
-When Systems Catch Fire is not a fixed book or a single-human biographical project, but an open and maintained knowledge base of functions, cases, discoveries, predictions, new answers, effects, and analytic solutions.
+《点火》不是一本固定成书，也不是单个人类传记式项目，而是一个开放维护的函数、案例、发现、预测、新答案与解析解知识库。
+When Systems Catch Fire is not a fixed book or a single-human biographical project, but an open and maintained knowledge base of functions, cases, discoveries, predictions, new answers, and analytic solutions.
 
 项目定位锁定 / Project positioning lock：以上定位为当前仓库的规范定位，任何 agent、脚本或人工改写不得把项目定位改回“一个人类”叙事或旧书稿定位；如需调整，必须新增独立变更说明并通过仓库验证。
 
@@ -38,13 +10,12 @@ When Systems Catch Fire is not a fixed book or a single-human biographical proje
 <!-- REPOSITORY_OVERVIEW_START -->
 | 区域 / Area | 当前数量 / Current Count | 说明 / Description |
 | --- | ---: | --- |
-| [发现 / Discoveries](DISCOVERIES.md) | 83 curated discoveries, 83 leads | 从函数、案例与自举循环中产生的新发现。 / New discoveries generated from bootstrap cycles between functions and cases. |
+| [发现 / Discoveries](DISCOVERIES.md) | 88 curated discoveries, 83 leads | 从函数、案例与自举循环中产生的新发现。 / New discoveries generated from bootstrap cycles between functions and cases. |
 | [预测 / Predictions](PREDICTIONS.md) | 8 predictions, 8 inconclusive novelty | 由函数、案例、发现与自举循环推出的可检验未来判断。 / Testable future judgments derived from functions, cases, discoveries, and bootstrap cycles. |
 | [新答案 / New Answers](ANSWERS.md) | 0 answers, 12 leads, 12 inconclusive novelty | 对既有问题、经典问题、未解问题或已有答案的新回答。 / New answers to existing, classic, unresolved, or previously answered questions. |
-| [效应 / Effects](EFFECTS.md) | 36 leads | 在条件下出现的稳定现象、变化模式或可观测结果。 / Stable phenomena, change patterns, or observable outcomes under conditions. |
 | [解析解 / Analytic Solutions](ANALYTIC_SOLUTIONS.md) | 1 lead | 对明确数学问题的符号解、闭式解或可验证表达。 / Symbolic, closed-form, or verifiable solutions to explicit mathematical problems. |
-| [函数表 / Functions](FUNCTIONS.md) | 1 meta-function, 5 bootstrap items, 470 ordinary functions | 函数、机制、结构与公式。 / Functions, mechanisms, structures, and formulas. |
-| [案例表 / Cases](CASES.md) | 578 cases | 案例、证据、历史对象与验证材料。 / Cases, evidence, historical objects, and verification materials. |
+| [函数表 / Functions](FUNCTIONS.md) | 1 meta-function, 5 bootstrap items, 475 ordinary functions | 函数、机制、结构与公式。 / Functions, mechanisms, structures, and formulas. |
+| [案例表 / Cases](CASES.md) | 594 cases | 案例、证据、历史对象与验证材料。 / Cases, evidence, historical objects, and verification materials. |
 <!-- REPOSITORY_OVERVIEW_END -->
 
 ## Current Structure / 当前结构
@@ -55,8 +26,6 @@ When Systems Catch Fire is not a fixed book or a single-human biographical proje
 | Cases | 案例层，保存案例与函数关系 | `data/cases/unified-cases.json`, `data/cases/unified-cases.jsonl`, `data/cases/items/` |
 | Discoveries | 新发现说明层，面向人类阅读和传播 | `DISCOVERIES.md`, `data/discoveries/unified-discoveries.json`, `data/discoveries/unified-discoveries.jsonl`, `docs/zh/discoveries/items/` |
 | Predictions | 预测说明层，面向人类阅读和验证 | `PREDICTIONS.md`, `data/predictions/unified-predictions.json`, `data/predictions/unified-predictions.jsonl`, `docs/zh/predictions/items/` |
-| Effects | 效应层，保存条件触发下的稳定现象与变化模式 | `EFFECTS.md`, `data/effects/unified-effects.json`, `data/effects/unified-effects.jsonl`, `docs/zh/effects/items/` |
-| Analytic Solutions | 解析解层，保存明确数学问题的符号解与闭式解 | `ANALYTIC_SOLUTIONS.md`, `data/analytic-solutions/unified-analytic-solutions.json`, `data/analytic-solutions/unified-analytic-solutions.jsonl`, `docs/zh/analytic-solutions/items/` |
 | Registry | 原始统一总表，作为生成 JSON 的来源 | `data/registry/统一函数总表.csv`, `data/registry/统一案例总表.csv` |
 | Legacy Book | 旧书籍结构，保留为历史材料 | `archive/book-legacy/` |
 | Raw Notes | 原始笔记与来源材料，不作为 canonical item | `dianhuo/originals/` |
@@ -70,11 +39,9 @@ When Systems Catch Fire is not a fixed book or a single-human biographical proje
 5. Use `data/cases/unified-cases.jsonl` for case lookup.
 6. Use `data/discoveries/unified-discoveries.jsonl` for structured discovery entries.
 7. Use `data/predictions/unified-predictions.jsonl` for structured prediction entries.
-8. Use `data/effects/unified-effects.jsonl` for structured effect entries.
-9. Use `data/analytic-solutions/unified-analytic-solutions.jsonl` for structured analytic-solution entries.
-10. Use `data/functions/items/*.json` and `data/cases/items/*.json` as canonical machine-readable records.
+8. Use `data/functions/items/*.json` and `data/cases/items/*.json` as canonical machine-readable records.
 
-Do not treat raw notes as canonical. Raw notes are sources. Current structured entries live under `data/functions/`, `data/cases/`, `data/discoveries/`, `data/predictions/`, `data/effects/`, and `data/analytic-solutions/`.
+Do not treat raw notes as canonical. Raw notes are sources. Current structured entries live under `data/functions/`, `data/cases/`, `data/discoveries/`, and `data/predictions/`.
 
 ## Human Reading / 人类阅读入口
 
@@ -82,8 +49,6 @@ Do not treat raw notes as canonical. Raw notes are sources. Current structured e
 - 中文案例入口 / Chinese cases: `CASES.md`, `docs/zh/cases.md`
 - 中文发现入口 / Chinese discoveries: `DISCOVERIES.md`, `docs/zh/discoveries/items/`
 - 中文预测入口 / Chinese predictions: `PREDICTIONS.md`, `docs/zh/predictions/items/`
-- 中文效应入口 / Chinese effects: `EFFECTS.md`, `docs/zh/effects/items/`
-- 中文解析解入口 / Chinese analytic solutions: `ANALYTIC_SOLUTIONS.md`, `docs/zh/analytic-solutions/items/`
 ## Data Policy / 数据原则
 
 - JSON item files are canonical machine-readable records.

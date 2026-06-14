@@ -60,7 +60,6 @@ def main() -> int:
     args = parser.parse_args()
 
     layers = {
-        "effects": scan_layer(REPO_ROOT / "data/effects/unified-effects.json"),
         "analytic_solutions": scan_layer(REPO_ROOT / "data/analytic-solutions/unified-analytic-solutions.json"),
         "discoveries": scan_layer(REPO_ROOT / "data/discoveries/unified-discoveries.json"),
         "predictions": scan_layer(REPO_ROOT / "data/predictions/unified-predictions.json"),

@@ -29,7 +29,7 @@ def main() -> int:
             print("Missing classification files:", missing)
             return 1
         for item in report["items"]:
-            if item["new_class"] in {"effect", "analytic_solution"} and not item.get("preserve_legacy_link"):
+            if item["new_class"] == "analytic_solution" and not item.get("preserve_legacy_link"):
                 print("Missing legacy link preservation:", item["legacy_id"])
                 return 1
         return 0

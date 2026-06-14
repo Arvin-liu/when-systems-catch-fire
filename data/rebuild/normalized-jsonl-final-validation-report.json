@@ -1,64 +1,50 @@
 {
   "report_name": "normalized-jsonl-final-validation-report",
-  "generated_at": "2026-06-14T14:48:22.570782+00:00",
-  "head": "fbb8a54",
+  "generated_at": "2026-06-14T20:21:27.541434+00:00",
+  "head": "3f6dd0d",
   "schema_version": "normalized-jsonl-v1",
-  "files_checked": 10,
+  "files_checked": 8,
   "files": [
     {
       "path": "data/normalized-jsonl/functions.jsonl",
       "name": "functions.jsonl",
-      "line_count": 713,
-      "sha256": "ae2144863cc80ea2a8d6612347d28aac90625295fd4246e6bee0ec3195a3f8e6",
+      "line_count": 718,
+      "sha256": "287765b8aec9b75f6b0178e009b17bd8b17798227d23aa5b6fcea95a43e2f4b1",
       "errors": []
     },
     {
       "path": "data/normalized-jsonl/cases.jsonl",
       "name": "cases.jsonl",
-      "line_count": 710,
-      "sha256": "a3ba7d9896c3f04411182621bb1e6eb38a9b233572777c217fdb992bc3e08f3d",
-      "errors": []
-    },
-    {
-      "path": "data/normalized-jsonl/effect-leads.jsonl",
-      "name": "effect-leads.jsonl",
-      "line_count": 36,
-      "sha256": "045de7908ec8bc2c9dcd49eea5dc68a2664b74a3414603ded32568875c1b5857",
-      "errors": []
-    },
-    {
-      "path": "data/normalized-jsonl/effects.jsonl",
-      "name": "effects.jsonl",
-      "line_count": 36,
-      "sha256": "3cfd68d32842ca154e9f2e843dd78c9b4b019f75830a00f67d83ca2831578a95",
+      "line_count": 726,
+      "sha256": "2b11c824c822630fe7dd7b49492ceceab19814f0559e64d5b46bd5bdc37e68b8",
       "errors": []
     },
     {
       "path": "data/normalized-jsonl/discoveries.jsonl",
       "name": "discoveries.jsonl",
-      "line_count": 83,
-      "sha256": "bdf97a6acec09ff5bb1b2e0af8cea7f6ddf9c0c0ec31136bed21f6462bcec114",
+      "line_count": 88,
+      "sha256": "7e561a26a8cd0c4e70b68e88006b2ffd634148aa047213ebb21c91a83743f454",
       "errors": []
     },
     {
       "path": "data/normalized-jsonl/predictions.jsonl",
       "name": "predictions.jsonl",
       "line_count": 8,
-      "sha256": "d1c674ea69d0469097122af6687540a5a126dd4641b7cc7d36e6d36aebb7c0a8",
+      "sha256": "48e70950fbbcd5af0b3552c5f760329c3e8dbd4bf263ed84571ba47a3e894cab",
       "errors": []
     },
     {
       "path": "data/normalized-jsonl/answers.jsonl",
       "name": "answers.jsonl",
       "line_count": 12,
-      "sha256": "62e27a765a2dc0a3a6c73f0431342df4040048f66f8b01dc7ef51044c522eb4e",
+      "sha256": "d7ed0e6f2671e0fe1c528a69a943d308492da2358efbe7f4ffc7d7e86751754b",
       "errors": []
     },
     {
       "path": "data/normalized-jsonl/analytic-solutions.jsonl",
       "name": "analytic-solutions.jsonl",
       "line_count": 1,
-      "sha256": "2fe82e1fb0ceca058053774dee680c866160bb164d5add0804295743949cf902",
+      "sha256": "538913ecf47e59cef65ffc66da047437ee78a2a2a103a018c3f09c4277b553d6",
       "errors": []
     },
     {
@@ -71,8 +57,8 @@
     {
       "path": "data/normalized-jsonl/object-classification-crosswalk.jsonl",
       "name": "object-classification-crosswalk.jsonl",
-      "line_count": 37,
-      "sha256": "7d5f6de0485fadda7f71b694de70d0e4b91d9c2cc878c16fa184d8501da2fbb1",
+      "line_count": 1,
+      "sha256": "627f00287419ba3c4c9399eb2f3edb78b97b19fdca62b3f0a029f36c605a04f2",
       "errors": []
     }
   ],
@@ -82,46 +68,28 @@
     "files": [
       {
         "path": "data/normalized-jsonl/functions.jsonl",
-        "manifest_line_count": 713,
-        "actual_line_count": 713,
-        "manifest_sha256": "ae2144863cc80ea2",
-        "actual_sha256": "ae2144863cc80ea2a8d6612347d28aac90625295fd4246e6bee0ec3195a3f8e6",
+        "manifest_line_count": 718,
+        "actual_line_count": 718,
+        "manifest_sha256": "287765b8aec9b75f",
+        "actual_sha256": "287765b8aec9b75f6b0178e009b17bd8b17798227d23aa5b6fcea95a43e2f4b1",
         "sha256_match": true,
         "manifest_sha256_is_full": false
       },
       {
         "path": "data/normalized-jsonl/cases.jsonl",
-        "manifest_line_count": 710,
-        "actual_line_count": 710,
-        "manifest_sha256": "a3ba7d9896c3f044",
-        "actual_sha256": "a3ba7d9896c3f04411182621bb1e6eb38a9b233572777c217fdb992bc3e08f3d",
-        "sha256_match": true,
-        "manifest_sha256_is_full": false
-      },
-      {
-        "path": "data/normalized-jsonl/effect-leads.jsonl",
-        "manifest_line_count": 36,
-        "actual_line_count": 36,
-        "manifest_sha256": "045de7908ec8bc2c",
-        "actual_sha256": "045de7908ec8bc2c9dcd49eea5dc68a2664b74a3414603ded32568875c1b5857",
-        "sha256_match": true,
-        "manifest_sha256_is_full": false
-      },
-      {
-        "path": "data/normalized-jsonl/effects.jsonl",
-        "manifest_line_count": 36,
-        "actual_line_count": 36,
-        "manifest_sha256": "3cfd68d32842ca15",
-        "actual_sha256": "3cfd68d32842ca154e9f2e843dd78c9b4b019f75830a00f67d83ca2831578a95",
+        "manifest_line_count": 726,
+        "actual_line_count": 726,
+        "manifest_sha256": "2b11c824c822630f",
+        "actual_sha256": "2b11c824c822630fe7dd7b49492ceceab19814f0559e64d5b46bd5bdc37e68b8",
         "sha256_match": true,
         "manifest_sha256_is_full": false
       },
       {
         "path": "data/normalized-jsonl/discoveries.jsonl",
-        "manifest_line_count": 83,
-        "actual_line_count": 83,
-        "manifest_sha256": "bdf97a6acec09ff5",
-        "actual_sha256": "bdf97a6acec09ff5bb1b2e0af8cea7f6ddf9c0c0ec31136bed21f6462bcec114",
+        "manifest_line_count": 88,
+        "actual_line_count": 88,
+        "manifest_sha256": "7e561a26a8cd0c4e",
+        "actual_sha256": "7e561a26a8cd0c4e70b68e88006b2ffd634148aa047213ebb21c91a83743f454",
         "sha256_match": true,
         "manifest_sha256_is_full": false
       },
@@ -129,8 +97,8 @@
         "path": "data/normalized-jsonl/predictions.jsonl",
         "manifest_line_count": 8,
         "actual_line_count": 8,
-        "manifest_sha256": "d1c674ea69d04690",
-        "actual_sha256": "d1c674ea69d0469097122af6687540a5a126dd4641b7cc7d36e6d36aebb7c0a8",
+        "manifest_sha256": "48e70950fbbcd5af",
+        "actual_sha256": "48e70950fbbcd5af0b3552c5f760329c3e8dbd4bf263ed84571ba47a3e894cab",
         "sha256_match": true,
         "manifest_sha256_is_full": false
       },
@@ -138,8 +106,8 @@
         "path": "data/normalized-jsonl/answers.jsonl",
         "manifest_line_count": 12,
         "actual_line_count": 12,
-        "manifest_sha256": "62e27a765a2dc0a3",
-        "actual_sha256": "62e27a765a2dc0a3a6c73f0431342df4040048f66f8b01dc7ef51044c522eb4e",
+        "manifest_sha256": "d7ed0e6f2671e0fe",
+        "actual_sha256": "d7ed0e6f2671e0fe1c528a69a943d308492da2358efbe7f4ffc7d7e86751754b",
         "sha256_match": true,
         "manifest_sha256_is_full": false
       },
@@ -147,8 +115,8 @@
         "path": "data/normalized-jsonl/analytic-solutions.jsonl",
         "manifest_line_count": 1,
         "actual_line_count": 1,
-        "manifest_sha256": "2fe82e1fb0ceca05",
-        "actual_sha256": "2fe82e1fb0ceca058053774dee680c866160bb164d5add0804295743949cf902",
+        "manifest_sha256": "538913ecf47e59ce",
+        "actual_sha256": "538913ecf47e59cef65ffc66da047437ee78a2a2a103a018c3f09c4277b553d6",
         "sha256_match": true,
         "manifest_sha256_is_full": false
       },
@@ -163,10 +131,10 @@
       },
       {
         "path": "data/normalized-jsonl/object-classification-crosswalk.jsonl",
-        "manifest_line_count": 37,
-        "actual_line_count": 37,
-        "manifest_sha256": "7d5f6de0485fadda",
-        "actual_sha256": "7d5f6de0485fadda7f71b694de70d0e4b91d9c2cc878c16fa184d8501da2fbb1",
+        "manifest_line_count": 1,
+        "actual_line_count": 1,
+        "manifest_sha256": "627f00287419ba3c",
+        "actual_sha256": "627f00287419ba3c4c9399eb2f3edb78b97b19fdca62b3f0a029f36c605a04f2",
         "sha256_match": true,
         "manifest_sha256_is_full": false
       }
@@ -182,7 +150,6 @@
     "canonical_data_not_replaced": true,
     "inference_not_conclusion_required": true,
     "lead_not_active": true,
-    "eff_numbering_not_effect_proof": true,
     "zero_function_case_relations_allowed_if_diagnosed": true
   },
   "total_errors": 0,

@@ -5309,6 +5309,150 @@
     "title_en": "",
     "title_zh": "C-0578｜子弹星系团暗物质"
   },
+  "C-0579": {
+    "canonical_path": "docs/zh/cases/items/C-0579.md",
+    "exists": true,
+    "id": "C-0579",
+    "link_text": "C-0579｜上下文饱和重置验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0579｜上下文饱和重置验证"
+  },
+  "C-0580": {
+    "canonical_path": "docs/zh/cases/items/C-0580.md",
+    "exists": true,
+    "id": "C-0580",
+    "link_text": "C-0580｜睡眠清除门控验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0580｜睡眠清除门控验证"
+  },
+  "C-0581": {
+    "canonical_path": "docs/zh/cases/items/C-0581.md",
+    "exists": true,
+    "id": "C-0581",
+    "link_text": "C-0581｜偏好-愉悦共同势函数验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0581｜偏好-愉悦共同势函数验证"
+  },
+  "C-0582": {
+    "canonical_path": "docs/zh/cases/items/C-0582.md",
+    "exists": true,
+    "id": "C-0582",
+    "link_text": "C-0582｜代际逃逸死锁验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0582｜代际逃逸死锁验证"
+  },
+  "C-0583": {
+    "canonical_path": "docs/zh/cases/items/C-0583.md",
+    "exists": true,
+    "id": "C-0583",
+    "link_text": "C-0583｜路径依赖分化验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0583｜路径依赖分化验证"
+  },
+  "C-0584": {
+    "canonical_path": "docs/zh/cases/items/C-0584.md",
+    "exists": true,
+    "id": "C-0584",
+    "link_text": "C-0584｜负期望回本陷阱验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0584｜负期望回本陷阱验证"
+  },
+  "C-0585": {
+    "canonical_path": "docs/zh/cases/items/C-0585.md",
+    "exists": true,
+    "id": "C-0585",
+    "link_text": "C-0585｜小群体资源不易感验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0585｜小群体资源不易感验证"
+  },
+  "C-0586": {
+    "canonical_path": "docs/zh/cases/items/C-0586.md",
+    "exists": true,
+    "id": "C-0586",
+    "link_text": "C-0586｜内源输出再输入污染验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0586｜内源输出再输入污染验证"
+  },
+  "C-0587": {
+    "canonical_path": "docs/zh/cases/items/C-0587.md",
+    "exists": true,
+    "id": "C-0587",
+    "link_text": "C-0587｜睡眠修复窗口验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0587｜睡眠修复窗口验证"
+  },
+  "C-0588": {
+    "canonical_path": "docs/zh/cases/items/C-0588.md",
+    "exists": true,
+    "id": "C-0588",
+    "link_text": "C-0588｜心率累积耗损验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0588｜心率累积耗损验证"
+  },
+  "C-0589": {
+    "canonical_path": "docs/zh/cases/items/C-0589.md",
+    "exists": true,
+    "id": "C-0589",
+    "link_text": "C-0589｜皮屑屏障-微生态失配验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0589｜皮屑屏障-微生态失配验证"
+  },
+  "C-0590": {
+    "canonical_path": "docs/zh/cases/items/C-0590.md",
+    "exists": true,
+    "id": "C-0590",
+    "link_text": "C-0590｜免疫-感染阈值验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0590｜免疫-感染阈值验证"
+  },
+  "C-0591": {
+    "canonical_path": "docs/zh/cases/items/C-0591.md",
+    "exists": true,
+    "id": "C-0591",
+    "link_text": "C-0591｜神经自举唤醒验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0591｜神经自举唤醒验证"
+  },
+  "C-0592": {
+    "canonical_path": "docs/zh/cases/items/C-0592.md",
+    "exists": true,
+    "id": "C-0592",
+    "link_text": "C-0592｜信息自聚合场验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0592｜信息自聚合场验证"
+  },
+  "C-0593": {
+    "canonical_path": "docs/zh/cases/items/C-0593.md",
+    "exists": true,
+    "id": "C-0593",
+    "link_text": "C-0593｜短视频奖励压缩验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0593｜短视频奖励压缩验证"
+  },
+  "C-0594": {
+    "canonical_path": "docs/zh/cases/items/C-0594.md",
+    "exists": true,
+    "id": "C-0594",
+    "link_text": "C-0594｜梦境离线生成整合验证",
+    "object_class": "case",
+    "title_en": "",
+    "title_zh": "C-0594｜梦境离线生成整合验证"
+  },
   "D1": {
     "canonical_path": "docs/zh/functions/items/D1.md",
     "exists": true,
@@ -8684,6 +8828,51 @@
     "title_en": "",
     "title_zh": "D470｜幽灵跳变阻尼函数"
   },
+  "D471": {
+    "canonical_path": "docs/zh/functions/items/D471.md",
+    "exists": true,
+    "id": "D471",
+    "link_text": "D471｜状态时间重写函数",
+    "object_class": "function",
+    "title_en": "",
+    "title_zh": "D471｜状态时间重写函数"
+  },
+  "D472": {
+    "canonical_path": "docs/zh/functions/items/D472.md",
+    "exists": true,
+    "id": "D472",
+    "link_text": "D472｜维度坐标化边界函数",
+    "object_class": "function",
+    "title_en": "",
+    "title_zh": "D472｜维度坐标化边界函数"
+  },
+  "D473": {
+    "canonical_path": "docs/zh/functions/items/D473.md",
+    "exists": true,
+    "id": "D473",
+    "link_text": "D473｜自维持坍缩边界函数",
+    "object_class": "function",
+    "title_en": "",
+    "title_zh": "D473｜自维持坍缩边界函数"
+  },
+  "D474": {
+    "canonical_path": "docs/zh/functions/items/D474.md",
+    "exists": true,
+    "id": "D474",
+    "link_text": "D474｜主动下一代生命边界函数",
+    "object_class": "function",
+    "title_en": "",
+    "title_zh": "D474｜主动下一代生命边界函数"
+  },
+  "D475": {
+    "canonical_path": "docs/zh/functions/items/D475.md",
+    "exists": true,
+    "id": "D475",
+    "link_text": "D475｜形式系统外推边界函数",
+    "object_class": "function",
+    "title_en": "",
+    "title_zh": "D475｜形式系统外推边界函数"
+  },
   "D48": {
     "canonical_path": "docs/zh/functions/items/D48.md",
     "exists": true,
@@ -9854,329 +10043,50 @@
     "title_en": "",
     "title_zh": "DISC-0083｜C-0065 | 印加"
   },
-  "EFF-0001": {
-    "canonical_path": "docs/zh/effects/items/EFF-0001.md",
+  "DISC-0084": {
+    "canonical_path": "docs/zh/discoveries/items/DISC-0084.md",
     "exists": true,
-    "id": "EFF-0001",
-    "link_text": "状态时间重写效应",
-    "object_class": "effect",
+    "id": "DISC-0084",
+    "link_text": "DISC-0084｜状态时间是序列计数投影，不是外部本体假设",
+    "object_class": "discovery",
     "title_en": "",
-    "title_zh": "状态时间重写效应"
+    "title_zh": "DISC-0084｜状态时间是序列计数投影，不是外部本体假设"
   },
-  "EFF-0002": {
-    "canonical_path": "docs/zh/effects/items/EFF-0002.md",
+  "DISC-0085": {
+    "canonical_path": "docs/zh/discoveries/items/DISC-0085.md",
     "exists": true,
-    "id": "EFF-0002",
-    "link_text": "代际逃逸死锁效应",
-    "object_class": "effect",
+    "id": "DISC-0085",
+    "link_text": "DISC-0085｜维度可作为解释压缩坐标，而非对象固有标签",
+    "object_class": "discovery",
     "title_en": "",
-    "title_zh": "代际逃逸死锁效应"
+    "title_zh": "DISC-0085｜维度可作为解释压缩坐标，而非对象固有标签"
   },
-  "EFF-0003": {
-    "canonical_path": "docs/zh/effects/items/EFF-0003.md",
+  "DISC-0086": {
+    "canonical_path": "docs/zh/discoveries/items/DISC-0086.md",
     "exists": true,
-    "id": "EFF-0003",
-    "link_text": "维度坐标化边界效应",
-    "object_class": "effect",
+    "id": "DISC-0086",
+    "link_text": "DISC-0086｜黑洞边界可表达为自维持系统的外部信息失配",
+    "object_class": "discovery",
     "title_en": "",
-    "title_zh": "维度坐标化边界效应"
+    "title_zh": "DISC-0086｜黑洞边界可表达为自维持系统的外部信息失配"
   },
-  "EFF-0004": {
-    "canonical_path": "docs/zh/effects/items/EFF-0004.md",
+  "DISC-0087": {
+    "canonical_path": "docs/zh/discoveries/items/DISC-0087.md",
     "exists": true,
-    "id": "EFF-0004",
-    "link_text": "有限观察者全知不可能效应",
-    "object_class": "effect",
+    "id": "DISC-0087",
+    "link_text": "DISC-0087｜生命式系统需要主动变体生成，而不只是被动复制",
+    "object_class": "discovery",
     "title_en": "",
-    "title_zh": "有限观察者全知不可能效应"
+    "title_zh": "DISC-0087｜生命式系统需要主动变体生成，而不只是被动复制"
   },
-  "EFF-0005": {
-    "canonical_path": "docs/zh/effects/items/EFF-0005.md",
+  "DISC-0088": {
+    "canonical_path": "docs/zh/discoveries/items/DISC-0088.md",
     "exists": true,
-    "id": "EFF-0005",
-    "link_text": "上下文饱和重置效应",
-    "object_class": "effect",
+    "id": "DISC-0088",
+    "link_text": "DISC-0088｜形式系统外推必须保留可证明、可反驳、独立与欠定四个出口",
+    "object_class": "discovery",
     "title_en": "",
-    "title_zh": "上下文饱和重置效应"
-  },
-  "EFF-0006": {
-    "canonical_path": "docs/zh/effects/items/EFF-0006.md",
-    "exists": true,
-    "id": "EFF-0006",
-    "link_text": "判断阈值坍缩效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "判断阈值坍缩效应"
-  },
-  "EFF-0007": {
-    "canonical_path": "docs/zh/effects/items/EFF-0007.md",
-    "exists": true,
-    "id": "EFF-0007",
-    "link_text": "路径依赖分化效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "路径依赖分化效应"
-  },
-  "EFF-0008": {
-    "canonical_path": "docs/zh/effects/items/EFF-0008.md",
-    "exists": true,
-    "id": "EFF-0008",
-    "link_text": "负期望回本陷阱效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "负期望回本陷阱效应"
-  },
-  "EFF-0009": {
-    "canonical_path": "docs/zh/effects/items/EFF-0009.md",
-    "exists": true,
-    "id": "EFF-0009",
-    "link_text": "外显信号调制效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "外显信号调制效应"
-  },
-  "EFF-0010": {
-    "canonical_path": "docs/zh/effects/items/EFF-0010.md",
-    "exists": true,
-    "id": "EFF-0010",
-    "link_text": "信念先验驱动控制效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "信念先验驱动控制效应"
-  },
-  "EFF-0011": {
-    "canonical_path": "docs/zh/effects/items/EFF-0011.md",
-    "exists": true,
-    "id": "EFF-0011",
-    "link_text": "跨域相互作用同构效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "跨域相互作用同构效应"
-  },
-  "EFF-0012": {
-    "canonical_path": "docs/zh/effects/items/EFF-0012.md",
-    "exists": true,
-    "id": "EFF-0012",
-    "link_text": "低成本后台直觉效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "低成本后台直觉效应"
-  },
-  "EFF-0013": {
-    "canonical_path": "docs/zh/effects/items/EFF-0013.md",
-    "exists": true,
-    "id": "EFF-0013",
-    "link_text": "睡眠清除门控效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "睡眠清除门控效应"
-  },
-  "EFF-0014": {
-    "canonical_path": "docs/zh/effects/items/EFF-0014.md",
-    "exists": true,
-    "id": "EFF-0014",
-    "link_text": "小群体资源不易感效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "小群体资源不易感效应"
-  },
-  "EFF-0015": {
-    "canonical_path": "docs/zh/effects/items/EFF-0015.md",
-    "exists": true,
-    "id": "EFF-0015",
-    "link_text": "炎症反馈报警效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "炎症反馈报警效应"
-  },
-  "EFF-0016": {
-    "canonical_path": "docs/zh/effects/items/EFF-0016.md",
-    "exists": true,
-    "id": "EFF-0016",
-    "link_text": "气液剪切成泡效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "气液剪切成泡效应"
-  },
-  "EFF-0017": {
-    "canonical_path": "docs/zh/effects/items/EFF-0017.md",
-    "exists": true,
-    "id": "EFF-0017",
-    "link_text": "烹饪参数窗口效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "烹饪参数窗口效应"
-  },
-  "EFF-0018": {
-    "canonical_path": "docs/zh/effects/items/EFF-0018.md",
-    "exists": true,
-    "id": "EFF-0018",
-    "link_text": "表面活性降能效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "表面活性降能效应"
-  },
-  "EFF-0019": {
-    "canonical_path": "docs/zh/effects/items/EFF-0019.md",
-    "exists": true,
-    "id": "EFF-0019",
-    "link_text": "驱动状态耗散效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "驱动状态耗散效应"
-  },
-  "EFF-0020": {
-    "canonical_path": "docs/zh/effects/items/EFF-0020.md",
-    "exists": true,
-    "id": "EFF-0020",
-    "link_text": "动态不稳定稳定化效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "动态不稳定稳定化效应"
-  },
-  "EFF-0021": {
-    "canonical_path": "docs/zh/effects/items/EFF-0021.md",
-    "exists": true,
-    "id": "EFF-0021",
-    "link_text": "自维持坍缩边界效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "自维持坍缩边界效应"
-  },
-  "EFF-0022": {
-    "canonical_path": "docs/zh/effects/items/EFF-0022.md",
-    "exists": true,
-    "id": "EFF-0022",
-    "link_text": "自举条件敏感效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "自举条件敏感效应"
-  },
-  "EFF-0023": {
-    "canonical_path": "docs/zh/effects/items/EFF-0023.md",
-    "exists": true,
-    "id": "EFF-0023",
-    "link_text": "透明介质信息通道效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "透明介质信息通道效应"
-  },
-  "EFF-0024": {
-    "canonical_path": "docs/zh/effects/items/EFF-0024.md",
-    "exists": true,
-    "id": "EFF-0024",
-    "link_text": "商业单资源竞争效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "商业单资源竞争效应"
-  },
-  "EFF-0025": {
-    "canonical_path": "docs/zh/effects/items/EFF-0025.md",
-    "exists": true,
-    "id": "EFF-0025",
-    "link_text": "偏好-愉悦共同势函数效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "偏好-愉悦共同势函数效应"
-  },
-  "EFF-0026": {
-    "canonical_path": "docs/zh/effects/items/EFF-0026.md",
-    "exists": true,
-    "id": "EFF-0026",
-    "link_text": "内源输出再输入污染效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "内源输出再输入污染效应"
-  },
-  "EFF-0027": {
-    "canonical_path": "docs/zh/effects/items/EFF-0027.md",
-    "exists": true,
-    "id": "EFF-0027",
-    "link_text": "主动下一代生命边界效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "主动下一代生命边界效应"
-  },
-  "EFF-0028": {
-    "canonical_path": "docs/zh/effects/items/EFF-0028.md",
-    "exists": true,
-    "id": "EFF-0028",
-    "link_text": "睡眠修复窗口效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "睡眠修复窗口效应"
-  },
-  "EFF-0029": {
-    "canonical_path": "docs/zh/effects/items/EFF-0029.md",
-    "exists": true,
-    "id": "EFF-0029",
-    "link_text": "心率累积耗损效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "心率累积耗损效应"
-  },
-  "EFF-0030": {
-    "canonical_path": "docs/zh/effects/items/EFF-0030.md",
-    "exists": true,
-    "id": "EFF-0030",
-    "link_text": "皮屑屏障-微生态失配效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "皮屑屏障-微生态失配效应"
-  },
-  "EFF-0031": {
-    "canonical_path": "docs/zh/effects/items/EFF-0031.md",
-    "exists": true,
-    "id": "EFF-0031",
-    "link_text": "免疫-感染阈值效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "免疫-感染阈值效应"
-  },
-  "EFF-0032": {
-    "canonical_path": "docs/zh/effects/items/EFF-0032.md",
-    "exists": true,
-    "id": "EFF-0032",
-    "link_text": "神经自举唤醒效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "神经自举唤醒效应"
-  },
-  "EFF-0033": {
-    "canonical_path": "docs/zh/effects/items/EFF-0033.md",
-    "exists": true,
-    "id": "EFF-0033",
-    "link_text": "信息自聚合场效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "信息自聚合场效应"
-  },
-  "EFF-0034": {
-    "canonical_path": "docs/zh/effects/items/EFF-0034.md",
-    "exists": true,
-    "id": "EFF-0034",
-    "link_text": "短视频奖励压缩效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "短视频奖励压缩效应"
-  },
-  "EFF-0035": {
-    "canonical_path": "docs/zh/effects/items/EFF-0035.md",
-    "exists": true,
-    "id": "EFF-0035",
-    "link_text": "梦境离线生成整合效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "梦境离线生成整合效应"
-  },
-  "EFF-0036": {
-    "canonical_path": "docs/zh/effects/items/EFF-0036.md",
-    "exists": true,
-    "id": "EFF-0036",
-    "link_text": "形式系统外推边界效应",
-    "object_class": "effect",
-    "title_en": "",
-    "title_zh": "形式系统外推边界效应"
+    "title_zh": "DISC-0088｜形式系统外推必须保留可证明、可反驳、独立与欠定四个出口"
   },
   "MF-0000": {
     "canonical_path": "docs/zh/functions/meta/MF-0000.md",

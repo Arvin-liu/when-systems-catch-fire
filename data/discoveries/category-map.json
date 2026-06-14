@@ -860,6 +860,24 @@
         "score": 9
       },
       {
+        "id": "D473",
+        "title": {
+          "zh": "自维持坍缩边界函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D473.md",
+        "score": 9
+      },
+      {
+        "id": "D474",
+        "title": {
+          "zh": "主动下一代生命边界函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D474.md",
+        "score": 9
+      },
+      {
         "id": "D60",
         "title": {
           "zh": "智慧干预效力函数",
@@ -1019,6 +1037,15 @@
           "en": ""
         },
         "page": "docs/zh/functions/items/D415.md",
+        "score": 7
+      },
+      {
+        "id": "D472",
+        "title": {
+          "zh": "维度坐标化边界函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D472.md",
         "score": 7
       },
       {
@@ -1553,6 +1580,16 @@
         "normalized_id": "C-0541"
       },
       {
+        "id": "C-0592",
+        "title": {
+          "zh": "信息自聚合场验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0592.md",
+        "score": 15,
+        "normalized_id": "C-0592"
+      },
+      {
         "id": "C-0072",
         "title": {
           "zh": "统一相变框架",
@@ -1853,6 +1890,16 @@
         "normalized_id": "C-0140"
       },
       {
+        "id": "C-0584",
+        "title": {
+          "zh": "负期望回本陷阱验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0584.md",
+        "score": 4,
+        "normalized_id": "C-0584"
+      },
+      {
         "id": "C-0176",
         "title": {
           "zh": "AI共震中P×Q²平方加速——共享源的双重杀伤",
@@ -1968,6 +2015,33 @@
         },
         "page": "docs/zh/discoveries/items/DISC-0005.md",
         "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0084",
+        "title": {
+          "zh": "状态时间是序列计数投影，不是外部本体假设",
+          "en": "State time is a sequence-count projection, not an external ontology assumption"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0084.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0085",
+        "title": {
+          "zh": "维度可作为解释压缩坐标，而非对象固有标签",
+          "en": "Dimension can be an explanatory compression coordinate rather than an intrinsic label"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0085.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0086",
+        "title": {
+          "zh": "黑洞边界可表达为自维持系统的外部信息失配",
+          "en": "A black-hole boundary can be expressed as external information mismatch in a self-maintaining system"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0086.md",
+        "status": "active_pending_novelty_review"
       }
     ],
     "discovery_leads": [
@@ -2018,9 +2092,9 @@
       }
     ],
     "coverage": {
-      "related_functions_count": 133,
-      "related_cases_count": 71,
-      "curated_discoveries_count": 5,
+      "related_functions_count": 136,
+      "related_cases_count": 73,
+      "curated_discoveries_count": 8,
       "discovery_leads_count": 5
     }
   },
@@ -3070,6 +3144,16 @@
         "normalized_id": "C-0487"
       },
       {
+        "id": "C-0581",
+        "title": {
+          "zh": "偏好-愉悦共同势函数验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0581.md",
+        "score": 11,
+        "normalized_id": "C-0581"
+      },
+      {
         "id": "C-0131",
         "title": {
           "zh": "学科训练的遮蔽作用",
@@ -3088,6 +3172,16 @@
         "page": "docs/zh/cases/items/C-0224.md",
         "score": 10,
         "normalized_id": "C-0224"
+      },
+      {
+        "id": "C-0594",
+        "title": {
+          "zh": "梦境离线生成整合验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0594.md",
+        "score": 10,
+        "normalized_id": "C-0594"
       },
       {
         "id": "C-0120",
@@ -3406,7 +3500,7 @@
     ],
     "coverage": {
       "related_functions_count": 61,
-      "related_cases_count": 72,
+      "related_cases_count": 74,
       "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
@@ -3579,12 +3673,48 @@
         "score": 0
       },
       {
+        "id": "D119",
+        "title": {
+          "zh": "Fisher退化统一函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D119.md",
+        "score": 0
+      },
+      {
+        "id": "D124",
+        "title": {
+          "zh": "三域退化统一参数函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D124.md",
+        "score": 0
+      },
+      {
+        "id": "D160",
+        "title": {
+          "zh": "定投凯利保守性",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D160.md",
+        "score": 0
+      },
+      {
         "id": "D467",
         "title": {
           "zh": "最优性-惯性反比函数",
           "en": ""
         },
         "page": "docs/zh/functions/items/D467.md",
+        "score": 0
+      },
+      {
+        "id": "D471",
+        "title": {
+          "zh": "状态时间重写函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D471.md",
         "score": 0
       },
       {
@@ -3685,6 +3815,36 @@
         "page": "docs/zh/cases/items/C-0461.md",
         "score": 11,
         "normalized_id": "C-0461"
+      },
+      {
+        "id": "C-0581",
+        "title": {
+          "zh": "偏好-愉悦共同势函数验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0581.md",
+        "score": 8,
+        "normalized_id": "C-0581"
+      },
+      {
+        "id": "C-0589",
+        "title": {
+          "zh": "皮屑屏障-微生态失配验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0589.md",
+        "score": 8,
+        "normalized_id": "C-0589"
+      },
+      {
+        "id": "C-0592",
+        "title": {
+          "zh": "信息自聚合场验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0592.md",
+        "score": 8,
+        "normalized_id": "C-0592"
       },
       {
         "id": "C-0578",
@@ -4665,6 +4825,136 @@
         "page": "docs/zh/cases/items/C-0577.md",
         "score": 2,
         "normalized_id": "C-0577"
+      },
+      {
+        "id": "C-0579",
+        "title": {
+          "zh": "上下文饱和重置验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0579.md",
+        "score": 2,
+        "normalized_id": "C-0579"
+      },
+      {
+        "id": "C-0580",
+        "title": {
+          "zh": "睡眠清除门控验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0580.md",
+        "score": 2,
+        "normalized_id": "C-0580"
+      },
+      {
+        "id": "C-0582",
+        "title": {
+          "zh": "代际逃逸死锁验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0582.md",
+        "score": 2,
+        "normalized_id": "C-0582"
+      },
+      {
+        "id": "C-0583",
+        "title": {
+          "zh": "路径依赖分化验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0583.md",
+        "score": 2,
+        "normalized_id": "C-0583"
+      },
+      {
+        "id": "C-0584",
+        "title": {
+          "zh": "负期望回本陷阱验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0584.md",
+        "score": 2,
+        "normalized_id": "C-0584"
+      },
+      {
+        "id": "C-0585",
+        "title": {
+          "zh": "小群体资源不易感验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0585.md",
+        "score": 2,
+        "normalized_id": "C-0585"
+      },
+      {
+        "id": "C-0586",
+        "title": {
+          "zh": "内源输出再输入污染验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0586.md",
+        "score": 2,
+        "normalized_id": "C-0586"
+      },
+      {
+        "id": "C-0587",
+        "title": {
+          "zh": "睡眠修复窗口验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0587.md",
+        "score": 2,
+        "normalized_id": "C-0587"
+      },
+      {
+        "id": "C-0588",
+        "title": {
+          "zh": "心率累积耗损验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0588.md",
+        "score": 2,
+        "normalized_id": "C-0588"
+      },
+      {
+        "id": "C-0590",
+        "title": {
+          "zh": "免疫-感染阈值验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0590.md",
+        "score": 2,
+        "normalized_id": "C-0590"
+      },
+      {
+        "id": "C-0591",
+        "title": {
+          "zh": "神经自举唤醒验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0591.md",
+        "score": 2,
+        "normalized_id": "C-0591"
+      },
+      {
+        "id": "C-0593",
+        "title": {
+          "zh": "短视频奖励压缩验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0593.md",
+        "score": 2,
+        "normalized_id": "C-0593"
+      },
+      {
+        "id": "C-0594",
+        "title": {
+          "zh": "梦境离线生成整合验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0594.md",
+        "score": 2,
+        "normalized_id": "C-0594"
       }
     ],
     "curated_discoveries": [
@@ -4762,8 +5052,8 @@
       }
     ],
     "coverage": {
-      "related_functions_count": 21,
-      "related_cases_count": 105,
+      "related_functions_count": 25,
+      "related_cases_count": 121,
       "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
@@ -4799,6 +5089,15 @@
         },
         "page": "docs/zh/functions/items/D467.md",
         "score": 36
+      },
+      {
+        "id": "D474",
+        "title": {
+          "zh": "主动下一代生命边界函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D474.md",
+        "score": 27
       },
       {
         "id": "D124",
@@ -4889,6 +5188,15 @@
         },
         "page": "docs/zh/functions/items/D256.md",
         "score": 5
+      },
+      {
+        "id": "D119",
+        "title": {
+          "zh": "Fisher退化统一函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D119.md",
+        "score": 0
       }
     ],
     "related_cases": [
@@ -4973,6 +5281,16 @@
         "normalized_id": "C-0493"
       },
       {
+        "id": "C-0589",
+        "title": {
+          "zh": "皮屑屏障-微生态失配验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0589.md",
+        "score": 16,
+        "normalized_id": "C-0589"
+      },
+      {
         "id": "C-0129",
         "title": {
           "zh": "AI物种分化",
@@ -5031,6 +5349,36 @@
         "page": "docs/zh/cases/items/C-0386.md",
         "score": 11,
         "normalized_id": "C-0386"
+      },
+      {
+        "id": "C-0580",
+        "title": {
+          "zh": "睡眠清除门控验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0580.md",
+        "score": 10,
+        "normalized_id": "C-0580"
+      },
+      {
+        "id": "C-0583",
+        "title": {
+          "zh": "路径依赖分化验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0583.md",
+        "score": 10,
+        "normalized_id": "C-0583"
+      },
+      {
+        "id": "C-0588",
+        "title": {
+          "zh": "心率累积耗损验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0588.md",
+        "score": 10,
+        "normalized_id": "C-0588"
       },
       {
         "id": "C-0113",
@@ -5138,6 +5486,15 @@
         },
         "page": "docs/zh/discoveries/items/DISC-0020.md",
         "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0087",
+        "title": {
+          "zh": "生命式系统需要主动变体生成，而不只是被动复制",
+          "en": "Life-like systems require active variant generation, not only passive copying"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0087.md",
+        "status": "active_pending_novelty_review"
       }
     ],
     "discovery_leads": [
@@ -5160,10 +5517,10 @@
         "status": "lead"
       },
       {
-        "zh": "D124｜三域退化统一参数函数 仍可继续整理为 生物学 方向的独立发现。",
-        "en": "D124 |  remains a curation lead in Biology.",
+        "zh": "D474｜主动下一代生命边界函数 仍可继续整理为 生物学 方向的独立发现。",
+        "en": "D474 |  remains a curation lead in Biology.",
         "related_functions": [
-          "D124"
+          "D474"
         ],
         "related_cases": [],
         "status": "lead"
@@ -5188,9 +5545,9 @@
       }
     ],
     "coverage": {
-      "related_functions_count": 12,
-      "related_cases_count": 20,
-      "curated_discoveries_count": 5,
+      "related_functions_count": 14,
+      "related_cases_count": 24,
+      "curated_discoveries_count": 6,
       "discovery_leads_count": 5
     }
   },
@@ -5725,6 +6082,16 @@
         "normalized_id": "C-0125"
       },
       {
+        "id": "C-0591",
+        "title": {
+          "zh": "神经自举唤醒验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0591.md",
+        "score": 23,
+        "normalized_id": "C-0591"
+      },
+      {
         "id": "C-0086",
         "title": {
           "zh": "自主意识函数",
@@ -6235,6 +6602,16 @@
         "normalized_id": "C-0231"
       },
       {
+        "id": "C-0588",
+        "title": {
+          "zh": "心率累积耗损验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0588.md",
+        "score": 6,
+        "normalized_id": "C-0588"
+      },
+      {
         "id": "C-0135",
         "title": {
           "zh": "大脑进化为Agent",
@@ -6253,6 +6630,16 @@
         "page": "docs/zh/cases/items/C-0175.md",
         "score": 5,
         "normalized_id": "C-0175"
+      },
+      {
+        "id": "C-0580",
+        "title": {
+          "zh": "睡眠清除门控验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0580.md",
+        "score": 4,
+        "normalized_id": "C-0580"
       },
       {
         "id": "C-0268",
@@ -6340,6 +6727,15 @@
         },
         "page": "docs/zh/discoveries/items/DISC-0025.md",
         "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0084",
+        "title": {
+          "zh": "状态时间是序列计数投影，不是外部本体假设",
+          "en": "State time is a sequence-count projection, not an external ontology assumption"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0084.md",
+        "status": "active_pending_novelty_review"
       }
     ],
     "discovery_leads": [
@@ -6391,8 +6787,8 @@
     ],
     "coverage": {
       "related_functions_count": 46,
-      "related_cases_count": 67,
-      "curated_discoveries_count": 5,
+      "related_cases_count": 70,
+      "curated_discoveries_count": 6,
       "discovery_leads_count": 5
     }
   },
@@ -6544,6 +6940,15 @@
         },
         "page": "docs/zh/functions/items/D290.md",
         "score": 5
+      },
+      {
+        "id": "D119",
+        "title": {
+          "zh": "Fisher退化统一函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D119.md",
+        "score": 0
       }
     ],
     "related_cases": [
@@ -6556,6 +6961,16 @@
         "page": "docs/zh/cases/items/C-0411.md",
         "score": 65,
         "normalized_id": "C-0411"
+      },
+      {
+        "id": "C-0590",
+        "title": {
+          "zh": "免疫-感染阈值验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0590.md",
+        "score": 35,
+        "normalized_id": "C-0590"
       },
       {
         "id": "C-0575",
@@ -6628,6 +7043,16 @@
         "normalized_id": "C-0557"
       },
       {
+        "id": "C-0591",
+        "title": {
+          "zh": "神经自举唤醒验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0591.md",
+        "score": 12,
+        "normalized_id": "C-0591"
+      },
+      {
         "id": "C-0415",
         "title": {
           "zh": "衰老多病的乘法加速——多门控面同时门槛碾压，D87多因子叠加",
@@ -6666,6 +7091,16 @@
         "page": "docs/zh/cases/items/C-0501.md",
         "score": 8,
         "normalized_id": "C-0501"
+      },
+      {
+        "id": "C-0588",
+        "title": {
+          "zh": "心率累积耗损验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0588.md",
+        "score": 8,
+        "normalized_id": "C-0588"
       },
       {
         "id": "C-0028",
@@ -6763,18 +7198,18 @@
         "status": "lead"
       },
       {
-        "zh": "C-0575｜免疫系统更新 仍可继续整理为 医学与健康 方向的独立发现。",
-        "en": "C-0575 |  remains a curation lead in Medicine and Health.",
+        "zh": "C-0590｜免疫-感染阈值验证 仍可继续整理为 医学与健康 方向的独立发现。",
+        "en": "C-0590 |  remains a curation lead in Medicine and Health.",
         "related_functions": [],
         "related_cases": [
-          "C-0575"
+          "C-0590"
         ],
         "status": "lead"
       }
     ],
     "coverage": {
-      "related_functions_count": 15,
-      "related_cases_count": 13,
+      "related_functions_count": 16,
+      "related_cases_count": 16,
       "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
@@ -6812,6 +7247,15 @@
         "score": 30
       },
       {
+        "id": "D471",
+        "title": {
+          "zh": "状态时间重写函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D471.md",
+        "score": 27
+      },
+      {
         "id": "T23",
         "title": {
           "zh": "Φ跨域稳定性定理",
@@ -6845,6 +7289,15 @@
           "en": ""
         },
         "page": "docs/zh/functions/items/D392.md",
+        "score": 14
+      },
+      {
+        "id": "D472",
+        "title": {
+          "zh": "维度坐标化边界函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D472.md",
         "score": 14
       },
       {
@@ -7228,6 +7681,42 @@
         },
         "page": "docs/zh/discoveries/items/DISC-0035.md",
         "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0084",
+        "title": {
+          "zh": "状态时间是序列计数投影，不是外部本体假设",
+          "en": "State time is a sequence-count projection, not an external ontology assumption"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0084.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0085",
+        "title": {
+          "zh": "维度可作为解释压缩坐标，而非对象固有标签",
+          "en": "Dimension can be an explanatory compression coordinate rather than an intrinsic label"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0085.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0086",
+        "title": {
+          "zh": "黑洞边界可表达为自维持系统的外部信息失配",
+          "en": "A black-hole boundary can be expressed as external information mismatch in a self-maintaining system"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0086.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0088",
+        "title": {
+          "zh": "形式系统外推必须保留可证明、可反驳、独立与欠定四个出口",
+          "en": "Formal-system extrapolation must keep provable, refutable, independent, and underdetermined exits"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0088.md",
+        "status": "active_pending_novelty_review"
       }
     ],
     "discovery_leads": [
@@ -7250,10 +7739,10 @@
         "status": "lead"
       },
       {
-        "zh": "T23｜Φ跨域稳定性定理 仍可继续整理为 哲学 方向的独立发现。",
-        "en": "T23 | Φcross-domain stability theorem remains a curation lead in Philosophy.",
+        "zh": "D471｜状态时间重写函数 仍可继续整理为 哲学 方向的独立发现。",
+        "en": "D471 |  remains a curation lead in Philosophy.",
         "related_functions": [
-          "T23"
+          "D471"
         ],
         "related_cases": [],
         "status": "lead"
@@ -7278,9 +7767,9 @@
       }
     ],
     "coverage": {
-      "related_functions_count": 33,
+      "related_functions_count": 35,
       "related_cases_count": 9,
-      "curated_discoveries_count": 5,
+      "curated_discoveries_count": 9,
       "discovery_leads_count": 5
     }
   },
@@ -7377,6 +7866,15 @@
           "en": ""
         },
         "page": "docs/zh/functions/items/D416.md",
+        "score": 9
+      },
+      {
+        "id": "D475",
+        "title": {
+          "zh": "形式系统外推边界函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D475.md",
         "score": 9
       },
       {
@@ -7503,6 +8001,15 @@
           "en": ""
         },
         "page": "docs/zh/functions/items/D119.md",
+        "score": 0
+      },
+      {
+        "id": "D124",
+        "title": {
+          "zh": "三域退化统一参数函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D124.md",
         "score": 0
       },
       {
@@ -7641,6 +8148,15 @@
         "score": 0
       },
       {
+        "id": "D165",
+        "title": {
+          "zh": "定投凯利保守性",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D165.md",
+        "score": 0
+      },
+      {
         "id": "D166",
         "title": {
           "zh": "定投凯利保守性",
@@ -7701,6 +8217,15 @@
           "en": ""
         },
         "page": "docs/zh/functions/items/D469.md",
+        "score": 0
+      },
+      {
+        "id": "D471",
+        "title": {
+          "zh": "状态时间重写函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D471.md",
         "score": 0
       },
       {
@@ -7809,6 +8334,15 @@
           "en": ""
         },
         "page": "docs/zh/functions/items/D77.md",
+        "score": 0
+      },
+      {
+        "id": "D84",
+        "title": {
+          "zh": "AI-ε安装路径函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D84.md",
         "score": 0
       },
       {
@@ -8094,6 +8628,16 @@
         "normalized_id": "C-0563"
       },
       {
+        "id": "C-0580",
+        "title": {
+          "zh": "睡眠清除门控验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0580.md",
+        "score": 15,
+        "normalized_id": "C-0580"
+      },
+      {
         "id": "C-0067",
         "title": {
           "zh": "非洲班图文明",
@@ -8214,6 +8758,16 @@
         "normalized_id": "C-0063"
       },
       {
+        "id": "C-0579",
+        "title": {
+          "zh": "上下文饱和重置验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0579.md",
+        "score": 8,
+        "normalized_id": "C-0579"
+      },
+      {
         "id": "C-0002",
         "title": {
           "zh": "孔子作春秋",
@@ -8292,6 +8846,16 @@
         "page": "docs/zh/cases/items/C-0157.md",
         "score": 7,
         "normalized_id": "C-0157"
+      },
+      {
+        "id": "C-0590",
+        "title": {
+          "zh": "免疫-感染阈值验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0590.md",
+        "score": 6,
+        "normalized_id": "C-0590"
       },
       {
         "id": "C-0008",
@@ -12824,6 +13388,146 @@
         "normalized_id": "C-0578"
       },
       {
+        "id": "C-0581",
+        "title": {
+          "zh": "偏好-愉悦共同势函数验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0581.md",
+        "score": 2,
+        "normalized_id": "C-0581"
+      },
+      {
+        "id": "C-0582",
+        "title": {
+          "zh": "代际逃逸死锁验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0582.md",
+        "score": 2,
+        "normalized_id": "C-0582"
+      },
+      {
+        "id": "C-0583",
+        "title": {
+          "zh": "路径依赖分化验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0583.md",
+        "score": 2,
+        "normalized_id": "C-0583"
+      },
+      {
+        "id": "C-0584",
+        "title": {
+          "zh": "负期望回本陷阱验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0584.md",
+        "score": 2,
+        "normalized_id": "C-0584"
+      },
+      {
+        "id": "C-0585",
+        "title": {
+          "zh": "小群体资源不易感验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0585.md",
+        "score": 2,
+        "normalized_id": "C-0585"
+      },
+      {
+        "id": "C-0586",
+        "title": {
+          "zh": "内源输出再输入污染验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0586.md",
+        "score": 2,
+        "normalized_id": "C-0586"
+      },
+      {
+        "id": "C-0587",
+        "title": {
+          "zh": "睡眠修复窗口验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0587.md",
+        "score": 2,
+        "normalized_id": "C-0587"
+      },
+      {
+        "id": "C-0588",
+        "title": {
+          "zh": "心率累积耗损验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0588.md",
+        "score": 2,
+        "normalized_id": "C-0588"
+      },
+      {
+        "id": "C-0589",
+        "title": {
+          "zh": "皮屑屏障-微生态失配验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0589.md",
+        "score": 2,
+        "normalized_id": "C-0589"
+      },
+      {
+        "id": "C-0591",
+        "title": {
+          "zh": "神经自举唤醒验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0591.md",
+        "score": 2,
+        "normalized_id": "C-0591"
+      },
+      {
+        "id": "C-0592",
+        "title": {
+          "zh": "信息自聚合场验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0592.md",
+        "score": 2,
+        "normalized_id": "C-0592"
+      },
+      {
+        "id": "C-0593",
+        "title": {
+          "zh": "短视频奖励压缩验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0593.md",
+        "score": 2,
+        "normalized_id": "C-0593"
+      },
+      {
+        "id": "C-0594",
+        "title": {
+          "zh": "梦境离线生成整合验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0594.md",
+        "score": 2,
+        "normalized_id": "C-0594"
+      },
+      {
+        "id": "C-0143",
+        "title": {
+          "zh": "现场调研=ε_sense安装",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0143.md",
+        "score": 0,
+        "normalized_id": "C-0143"
+      },
+      {
         "id": "C-0235",
         "title": {
           "zh": "点火Level升至6.66",
@@ -12882,6 +13586,26 @@
         "page": "docs/zh/cases/items/C-0269.md",
         "score": 0,
         "normalized_id": "C-0269"
+      },
+      {
+        "id": "C-0270",
+        "title": {
+          "zh": "D124四卡点归零验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0270.md",
+        "score": 0,
+        "normalized_id": "C-0270"
+      },
+      {
+        "id": "C-0278",
+        "title": {
+          "zh": "D124与D126时间尺度同构",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0278.md",
+        "score": 0,
+        "normalized_id": "C-0278"
       },
       {
         "id": "C-0281",
@@ -13009,8 +13733,8 @@
       }
     ],
     "coverage": {
-      "related_functions_count": 67,
-      "related_cases_count": 501,
+      "related_functions_count": 72,
+      "related_cases_count": 520,
       "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
@@ -13361,6 +14085,15 @@
           "en": ""
         },
         "page": "docs/zh/functions/items/D296.md",
+        "score": 9
+      },
+      {
+        "id": "D474",
+        "title": {
+          "zh": "主动下一代生命边界函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D474.md",
         "score": 9
       },
       {
@@ -13758,6 +14491,16 @@
         "normalized_id": "C-0343"
       },
       {
+        "id": "C-0585",
+        "title": {
+          "zh": "小群体资源不易感验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0585.md",
+        "score": 27,
+        "normalized_id": "C-0585"
+      },
+      {
         "id": "C-0079",
         "title": {
           "zh": "收益-风险投影-网结构",
@@ -13968,6 +14711,16 @@
         "normalized_id": "C-0148"
       },
       {
+        "id": "C-0587",
+        "title": {
+          "zh": "睡眠修复窗口验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0587.md",
+        "score": 18,
+        "normalized_id": "C-0587"
+      },
+      {
         "id": "C-0120",
         "title": {
           "zh": "招聘歧视与工资压制",
@@ -14006,6 +14759,16 @@
         "page": "docs/zh/cases/items/C-0522.md",
         "score": 15,
         "normalized_id": "C-0522"
+      },
+      {
+        "id": "C-0588",
+        "title": {
+          "zh": "心率累积耗损验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0588.md",
+        "score": 14,
+        "normalized_id": "C-0588"
       },
       {
         "id": "C-0169",
@@ -14208,6 +14971,26 @@
         "normalized_id": "C-0455"
       },
       {
+        "id": "C-0593",
+        "title": {
+          "zh": "短视频奖励压缩验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0593.md",
+        "score": 10,
+        "normalized_id": "C-0593"
+      },
+      {
+        "id": "C-0584",
+        "title": {
+          "zh": "负期望回本陷阱验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0584.md",
+        "score": 8,
+        "normalized_id": "C-0584"
+      },
+      {
         "id": "C-0156",
         "title": {
           "zh": "财富容器",
@@ -14358,6 +15141,16 @@
         "normalized_id": "C-0113"
       },
       {
+        "id": "C-0586",
+        "title": {
+          "zh": "内源输出再输入污染验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0586.md",
+        "score": 4,
+        "normalized_id": "C-0586"
+      },
+      {
         "id": "C-0176",
         "title": {
           "zh": "AI共震中P×Q²平方加速——共享源的双重杀伤",
@@ -14503,8 +15296,8 @@
       }
     ],
     "coverage": {
-      "related_functions_count": 60,
-      "related_cases_count": 70,
+      "related_functions_count": 61,
+      "related_cases_count": 76,
       "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
@@ -14688,6 +15481,16 @@
         "page": "docs/zh/cases/items/C-0567.md",
         "score": 5,
         "normalized_id": "C-0567"
+      },
+      {
+        "id": "C-0583",
+        "title": {
+          "zh": "路径依赖分化验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0583.md",
+        "score": 4,
+        "normalized_id": "C-0583"
       }
     ],
     "curated_discoveries": [
@@ -14786,7 +15589,7 @@
     ],
     "coverage": {
       "related_functions_count": 6,
-      "related_cases_count": 11,
+      "related_cases_count": 12,
       "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
@@ -15092,6 +15895,15 @@
         },
         "page": "docs/zh/functions/items/D136.md",
         "score": 0
+      },
+      {
+        "id": "D160",
+        "title": {
+          "zh": "定投凯利保守性",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D160.md",
+        "score": 0
       }
     ],
     "related_cases": [
@@ -15194,6 +16006,16 @@
         "page": "docs/zh/cases/items/C-0566.md",
         "score": 15,
         "normalized_id": "C-0566"
+      },
+      {
+        "id": "C-0585",
+        "title": {
+          "zh": "小群体资源不易感验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0585.md",
+        "score": 15,
+        "normalized_id": "C-0585"
       },
       {
         "id": "C-0195",
@@ -15514,6 +16336,36 @@
         "page": "docs/zh/cases/items/C-0054.md",
         "score": 5,
         "normalized_id": "C-0054"
+      },
+      {
+        "id": "C-0582",
+        "title": {
+          "zh": "代际逃逸死锁验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0582.md",
+        "score": 5,
+        "normalized_id": "C-0582"
+      },
+      {
+        "id": "C-0583",
+        "title": {
+          "zh": "路径依赖分化验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0583.md",
+        "score": 4,
+        "normalized_id": "C-0583"
+      },
+      {
+        "id": "C-0586",
+        "title": {
+          "zh": "内源输出再输入污染验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0586.md",
+        "score": 4,
+        "normalized_id": "C-0586"
       }
     ],
     "curated_discoveries": [
@@ -15560,6 +16412,15 @@
           "en": "C-0515 | 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3(obscuration降低) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致"
         },
         "page": "docs/zh/discoveries/items/DISC-0058.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0087",
+        "title": {
+          "zh": "生命式系统需要主动变体生成，而不只是被动复制",
+          "en": "Life-like systems require active variant generation, not only passive copying"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0087.md",
         "status": "active_pending_novelty_review"
       }
     ],
@@ -15611,9 +16472,9 @@
       }
     ],
     "coverage": {
-      "related_functions_count": 32,
-      "related_cases_count": 42,
-      "curated_discoveries_count": 5,
+      "related_functions_count": 33,
+      "related_cases_count": 46,
+      "curated_discoveries_count": 6,
       "discovery_leads_count": 5
     }
   },
@@ -16253,6 +17114,15 @@
         "score": 9
       },
       {
+        "id": "D474",
+        "title": {
+          "zh": "主动下一代生命边界函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D474.md",
+        "score": 9
+      },
+      {
         "id": "D50",
         "title": {
           "zh": "碰撞产出密度函数",
@@ -16349,6 +17219,15 @@
           "en": ""
         },
         "page": "docs/zh/functions/items/D401.md",
+        "score": 7
+      },
+      {
+        "id": "D472",
+        "title": {
+          "zh": "维度坐标化边界函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D472.md",
         "score": 7
       },
       {
@@ -17739,6 +18618,16 @@
         "normalized_id": "C-0548"
       },
       {
+        "id": "C-0580",
+        "title": {
+          "zh": "睡眠清除门控验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0580.md",
+        "score": 11,
+        "normalized_id": "C-0580"
+      },
+      {
         "id": "C-0187",
         "title": {
           "zh": "ε相变级联",
@@ -17857,6 +18746,16 @@
         "page": "docs/zh/cases/items/C-0221.md",
         "score": 6,
         "normalized_id": "C-0221"
+      },
+      {
+        "id": "C-0579",
+        "title": {
+          "zh": "上下文饱和重置验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0579.md",
+        "score": 6,
+        "normalized_id": "C-0579"
       },
       {
         "id": "C-0127",
@@ -18004,6 +18903,33 @@
         },
         "page": "docs/zh/discoveries/items/DISC-0063.md",
         "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0086",
+        "title": {
+          "zh": "黑洞边界可表达为自维持系统的外部信息失配",
+          "en": "A black-hole boundary can be expressed as external information mismatch in a self-maintaining system"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0086.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0087",
+        "title": {
+          "zh": "生命式系统需要主动变体生成，而不只是被动复制",
+          "en": "Life-like systems require active variant generation, not only passive copying"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0087.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0088",
+        "title": {
+          "zh": "形式系统外推必须保留可证明、可反驳、独立与欠定四个出口",
+          "en": "Formal-system extrapolation must keep provable, refutable, independent, and underdetermined exits"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0088.md",
+        "status": "active_pending_novelty_review"
       }
     ],
     "discovery_leads": [
@@ -18054,9 +18980,9 @@
       }
     ],
     "coverage": {
-      "related_functions_count": 135,
-      "related_cases_count": 111,
-      "curated_discoveries_count": 5,
+      "related_functions_count": 137,
+      "related_cases_count": 113,
+      "curated_discoveries_count": 8,
       "discovery_leads_count": 5
     }
   },
@@ -18684,6 +19610,24 @@
         },
         "page": "docs/zh/discoveries/items/DISC-0068.md",
         "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0085",
+        "title": {
+          "zh": "维度可作为解释压缩坐标，而非对象固有标签",
+          "en": "Dimension can be an explanatory compression coordinate rather than an intrinsic label"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0085.md",
+        "status": "active_pending_novelty_review"
+      },
+      {
+        "id": "DISC-0088",
+        "title": {
+          "zh": "形式系统外推必须保留可证明、可反驳、独立与欠定四个出口",
+          "en": "Formal-system extrapolation must keep provable, refutable, independent, and underdetermined exits"
+        },
+        "page": "docs/zh/discoveries/items/DISC-0088.md",
+        "status": "active_pending_novelty_review"
       }
     ],
     "discovery_leads": [
@@ -18736,7 +19680,7 @@
     "coverage": {
       "related_functions_count": 28,
       "related_cases_count": 31,
-      "curated_discoveries_count": 5,
+      "curated_discoveries_count": 7,
       "discovery_leads_count": 5
     }
   },
@@ -19061,6 +20005,16 @@
         "page": "docs/zh/cases/items/C-0138.md",
         "score": 9,
         "normalized_id": "C-0138"
+      },
+      {
+        "id": "C-0581",
+        "title": {
+          "zh": "偏好-愉悦共同势函数验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0581.md",
+        "score": 6,
+        "normalized_id": "C-0581"
       }
     ],
     "curated_discoveries": [
@@ -19159,7 +20113,7 @@
     ],
     "coverage": {
       "related_functions_count": 14,
-      "related_cases_count": 18,
+      "related_cases_count": 19,
       "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }
@@ -19332,6 +20286,15 @@
         "score": 9
       },
       {
+        "id": "D474",
+        "title": {
+          "zh": "主动下一代生命边界函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D474.md",
+        "score": 9
+      },
+      {
         "id": "D66",
         "title": {
           "zh": "同质性遮蔽函数",
@@ -19437,6 +20400,15 @@
           "en": ""
         },
         "page": "docs/zh/functions/items/D115.md",
+        "score": 0
+      },
+      {
+        "id": "D124",
+        "title": {
+          "zh": "三域退化统一参数函数",
+          "en": ""
+        },
+        "page": "docs/zh/functions/items/D124.md",
         "score": 0
       },
       {
@@ -19558,6 +20530,16 @@
         "page": "docs/zh/cases/items/C-0510.md",
         "score": 19,
         "normalized_id": "C-0510"
+      },
+      {
+        "id": "C-0585",
+        "title": {
+          "zh": "小群体资源不易感验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0585.md",
+        "score": 19,
+        "normalized_id": "C-0585"
       },
       {
         "id": "C-0569",
@@ -19700,6 +20682,26 @@
         "normalized_id": "C-0445"
       },
       {
+        "id": "C-0583",
+        "title": {
+          "zh": "路径依赖分化验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0583.md",
+        "score": 10,
+        "normalized_id": "C-0583"
+      },
+      {
+        "id": "C-0589",
+        "title": {
+          "zh": "皮屑屏障-微生态失配验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0589.md",
+        "score": 9,
+        "normalized_id": "C-0589"
+      },
+      {
         "id": "C-0159",
         "title": {
           "zh": "财富自证循环",
@@ -19718,6 +20720,26 @@
         "page": "docs/zh/cases/items/C-0238.md",
         "score": 7,
         "normalized_id": "C-0238"
+      },
+      {
+        "id": "C-0591",
+        "title": {
+          "zh": "神经自举唤醒验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0591.md",
+        "score": 6,
+        "normalized_id": "C-0591"
+      },
+      {
+        "id": "C-0586",
+        "title": {
+          "zh": "内源输出再输入污染验证",
+          "en": ""
+        },
+        "page": "docs/zh/cases/items/C-0586.md",
+        "score": 5,
+        "normalized_id": "C-0586"
       },
       {
         "id": "C-0148",
@@ -19825,8 +20847,8 @@
       }
     ],
     "coverage": {
-      "related_functions_count": 31,
-      "related_cases_count": 27,
+      "related_functions_count": 33,
+      "related_cases_count": 32,
       "curated_discoveries_count": 5,
       "discovery_leads_count": 5
     }

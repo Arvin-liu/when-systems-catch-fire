@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Minimal normalized JSONL layer builder.
-Reads canonical sources and generates functions.jsonl, cases.jsonl, effect-leads.jsonl.
+Reads canonical sources and generates functions.jsonl and cases.jsonl.
 """
 
 import argparse
@@ -154,66 +154,16 @@ def build_cases(build_unified, build_items):
         })
     return entries
 
-def build_effect_leads():
-    """Build effect-leads.jsonl entries from identity audit."""
-    entries = []
-    source_path = CANONICAL_SRC / "rebuild" / "effect-leads-identity-audit.jsonl"
-    source_file = str(source_path)
-
-    if not source_path.exists():
-        return entries
-
-    # Also check for JSON variant
-    source_json_path = CANONICAL_SRC / "rebuild" / "effect-leads-identity-audit.json"
-    source_sha = sha256_file(source_path)
-
-    items = load_jsonl(source_path)
-    if not items:
-        items = load_json_items(source_path.parent.glob("effect-leads-identity-audit*.json"))
-
-    for obj in items:
-        obj_id = obj.get("id", obj.get("ID", ""))
-        if not obj_id:
-            continue
-        entries.append({
-            "id": str(obj_id),
-            "object_class": "effect_lead",
-            "current_label": "effect_lead",
-            "suggested_class": safe_str(obj.get("suggested_class", obj.get("SUGGESTED_CLASS", obj.get("建议分类", "")))),
-            "name": safe_str(obj.get("name", obj.get("NAME", obj.get("名称", "")))),
-            "name_en": safe_str(obj.get("name_en", obj.get("NAME_EN", obj.get("英文名", "")))),
-            "definition": safe_str(obj.get("definition", obj.get("DEFINITION", obj.get("定义", "")))),
-            "expression": safe_str(obj.get("expression", obj.get("EXPRESSION", obj.get("公式", "")))),
-            "derivation": safe_str(obj.get("derivation", obj.get("DERIVATION", obj.get("推导", "")))),
-            "related_functions": safe_list(obj.get("related_functions", obj.get("RELATED_FUNCTIONS", obj.get("关联函数", [])))),
-            "related_cases": safe_list(obj.get("related_cases", obj.get("RELATED_CASES", obj.get("关联案例", [])))),
-            "audit_reason_zh": safe_str(obj.get("audit_reason_zh", obj.get("AUDIT_REASON_ZH", obj.get("审查原因_中文", "")))),
-            "audit_reason_en": safe_str(obj.get("audit_reason_en", obj.get("AUDIT_REASON_EN", obj.get("审查原因_英文", "")))),
-            "should_keep_eff_id": bool(obj.get("should_keep_eff_id", obj.get("SHOULD_KEEP_EFF_ID", False))),
-            "should_migrate_now": False,
-            "is_likely_misnumbered": bool(obj.get("is_likely_misnumbered", obj.get("IS_LIKELY_MISNUMBERED", False))),
-            "status": "lead",
-            "canonical_source": source_file,
-            "canonical_page": canonical_page_from_path(source_file) if source_file else None,
-            "schema_version": "normalized-jsonl-v1",
-            "generated_at": utc_now_iso(),
-            "source_commit": git_short_head(),
-            "source_sha": source_sha,
-            "inference_not_conclusion": True,
-        })
-    return entries
-
 def write_jsonl(path, entries):
     """Write entries to JSONL file."""
     with open(path, "w", encoding="utf-8") as f:
         for obj in entries:
             f.write(json.dumps(obj, ensure_ascii=False) + "\n")
 
-def build_manifest(functions_count, cases_count, leads_count):
+def build_manifest(functions_count, cases_count):
     """Build manifest.json."""
     sha_funcs = sha256_file(OUTPUT_DIR / "functions.jsonl")
     sha_cases = sha256_file(OUTPUT_DIR / "cases.jsonl")
-    sha_leads = sha256_file(OUTPUT_DIR / "effect-leads.jsonl")
 
     manifest = {
         "schema_version": "normalized-jsonl-v1",
@@ -234,10 +184,6 @@ def build_manifest(functions_count, cases_count, leads_count):
             "cases.jsonl": {
                 "line_count": cases_count,
                 "sha256": sha_cases
-            },
-            "effect-leads.jsonl": {
-                "line_count": leads_count,
-                "sha256": sha_leads
             }
         }
     }
@@ -261,11 +207,9 @@ def main():
     print("Loading canonical sources...")
     funcs = build_functions(build_unified=True, build_items=True)
     cases = build_cases(build_unified=True, build_items=True)
-    leads = build_effect_leads()
 
     print(f"  functions: {len(funcs)}")
     print(f"  cases: {len(cases)}")
-    print(f"  effect_leads: {len(leads)}")
 
     if args.dry_run:
         print("Dry run complete. No files written.")
@@ -274,16 +218,14 @@ def main():
     print("Writing JSONL files...")
     write_jsonl(OUTPUT_DIR / "functions.jsonl", funcs)
     write_jsonl(OUTPUT_DIR / "cases.jsonl", cases)
-    write_jsonl(OUTPUT_DIR / "effect-leads.jsonl", leads)
 
     print("Building manifest...")
-    manifest = build_manifest(len(funcs), len(cases), len(leads))
+    manifest = build_manifest(len(funcs), len(cases))
 
     # Generate report
     report_json = {
         "phase": "minimal_normalized_jsonl_layer",
         "is_recovery_run": True,
-        "is_not_get_brain_only_adapter": True,
         "canonical_data_not_replaced": True,
         "full_bootstrap_not_run": True,
         "academic_search_not_run": True,
@@ -291,8 +233,7 @@ def main():
         "active_promotion_not_executed": True,
         "files": {
             "functions.jsonl": {"line_count": len(funcs), "sha256": manifest["files"]["functions.jsonl"]["sha256"]},
-            "cases.jsonl": {"line_count": len(cases), "sha256": manifest["files"]["cases.jsonl"]["sha256"]},
-            "effect-leads.jsonl": {"line_count": len(leads), "sha256": manifest["files"]["effect-leads.jsonl"]["sha256"]}
+            "cases.jsonl": {"line_count": len(cases), "sha256": manifest["files"]["cases.jsonl"]["sha256"]}
         },
         "required_fields_present": True,
         "counts_dynamic": True,
@@ -306,7 +247,6 @@ def main():
 
 - Phase: minimal_normalized_jsonl_layer
 - Recovery run: yes
-- Not Get Brain only adapter: yes
 - Canonical data replaced: no
 - Full bootstrap: not run
 - Academic search: not run
@@ -319,7 +259,6 @@ def main():
 |------|-----------|--------|
 | functions.jsonl | {len(funcs)} | {report_json["files"]["functions.jsonl"]["sha256"]} |
 | cases.jsonl | {len(cases)} | {report_json["files"]["cases.jsonl"]["sha256"]} |
-| effect-leads.jsonl | {len(leads)} | {report_json["files"]["effect-leads.jsonl"]["sha256"]} |
 
 - Required fields: all present
 - Counts: dynamic (not hardcoded)
@@ -330,7 +269,6 @@ def main():
     print("Build complete.")
     print(f"  functions.jsonl: {len(funcs)} lines")
     print(f"  cases.jsonl: {len(cases)} lines")
-    print(f"  effect-leads.jsonl: {len(leads)} lines")
 
 if __name__ == "__main__":
     main()

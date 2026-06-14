@@ -242,7 +242,12 @@ def clean_title(text: str) -> str:
     return text.strip()
 
 
+def strip_markdown_links(text: str) -> str:
+    return re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
+
+
 def normalize_signature(text: str) -> str:
+    text = strip_markdown_links(text)
     chars: list[str] = []
     depth = 0
     for ch in text:
@@ -400,9 +405,9 @@ def parse_function_table(path: Path) -> List[dict]:
             raise RuntimeError(f"Malformed function row at {path}:{lineno}: {line}")
 
         seq = parts[1]
-        fid = parts[2]
-        level_zh = parts[3]
-        middle_parts = parts[4:-4]
+        fid = strip_markdown_links(parts[2]).strip()
+        level_zh = strip_markdown_links(parts[3]).strip()
+        middle_parts = [strip_markdown_links(part) for part in parts[4:-4]]
         source_ref = parts[-4]
         source_type = parts[-3]
         status = parts[-2]
@@ -472,8 +477,8 @@ def parse_function_table(path: Path) -> List[dict]:
         }
         records.append(record)
 
-    if len(records) != 470:
-        raise RuntimeError(f"Expected 470 functions, parsed {len(records)} from {path}")
+    if not records:
+        raise RuntimeError(f"No functions parsed from {path}")
 
     seen = set()
     for record in records:
@@ -528,10 +533,10 @@ def parse_case_table(path: Path) -> List[dict]:
             raise RuntimeError(f"Malformed case row at {path}:{lineno}: {line}")
 
         seq = parts[1]
-        cid = parts[2]
+        cid = strip_markdown_links(parts[2]).strip()
         title_zh = normalize_signature(parts[3]).strip() or cid
-        level_zh = parts[4]
-        middle_parts = parts[5:-3]
+        level_zh = strip_markdown_links(parts[4]).strip()
+        middle_parts = [strip_markdown_links(part) for part in parts[5:-3]]
         source_ref = parts[-3]
         status = parts[-2]
 
@@ -602,8 +607,8 @@ def parse_case_table(path: Path) -> List[dict]:
         }
         records.append(record)
 
-    if len(records) != 578:
-        raise RuntimeError(f"Expected 578 cases, parsed {len(records)} from {path}")
+    if not records:
+        raise RuntimeError(f"No cases parsed from {path}")
 
     seen = set()
     for record in records:
@@ -1141,6 +1146,9 @@ def render_meta_function_page(meta: dict) -> str:
     state_expression = meta_text(meta.get("state_expression"))
     bootstrap_cycle = meta_text(meta.get("bootstrap_cycle"))
     convergence = meta_text(meta.get("convergence"))
+    boundary_note = meta.get("boundary_note", {})
+    boundary_note_zh = boundary_note.get("zh", "")
+    boundary_note_en = boundary_note.get("en", "")
     source_refs = meta.get("source_refs", [])
     source_status = meta.get("source_status", "found")
 
@@ -1228,6 +1236,11 @@ def render_meta_function_page(meta: dict) -> str:
             "",
             f"中文：{convergence or '||ΔB_n|| = 0 ∧ ||ΔB_(n+1)|| = 0 ∧ LinkGraphStable(B_n) ∧ DynamicCountsStable(B_n) ∧ NoDuplicateLabels(B_n) ∧ AcademicNoveltyGate(B_n)'}",
             f"English: {(convergence or '||DeltaB_n|| = 0 and ||DeltaB_n+1|| = 0 and LinkGraphStable(B_n) and DynamicCountsStable(B_n) and NoDuplicateLabels(B_n) and AcademicNoveltyGate(B_n)').replace('Δ', 'Delta')}",
+            "",
+            "## 边界注释 / Boundary Note",
+            "",
+            f"中文：{boundary_note_zh or '自举收敛是当前目标函数与证据状态下的不动点，不等于目标函数绝对正确。'}",
+            f"English: {boundary_note_en or 'Bootstrap convergence is a fixed point under the current target function and evidence state; it is not absolute correctness of the target function.'}",
             "",
             "## 双通道入口 / Dual-channel Entry",
             "",
@@ -1795,8 +1808,8 @@ def write_outputs(functions: List[dict], cases: List[dict], dangling: List[dict]
 
 
 def validate_outputs(functions: List[dict], cases: List[dict]) -> None:
-    assert len(functions) == 470, len(functions)
-    assert len(cases) == 578, len(cases)
+    assert functions, len(functions)
+    assert cases, len(cases)
     assert len({f["id"] for f in functions}) == len(functions)
     assert len({c["normalized_id"] for c in cases}) == len(cases)
     assert all(f["title"]["zh"].strip() for f in functions)
@@ -1832,8 +1845,8 @@ def main() -> None:
     # Lightweight post-write checks.
     func_pages = list(DOC_FUNC_DIR.glob("*.md"))
     case_pages = list(DOC_CASE_DIR.glob("*.md"))
-    assert len(func_pages) == 470, len(func_pages)
-    assert len(case_pages) == 578, len(case_pages)
+    assert len(func_pages) == len(functions), len(func_pages)
+    assert len(case_pages) == len(cases), len(case_pages)
     assert ROOT_FUNCTIONS.exists()
     assert ROOT_CASES.exists()
     assert DOC_FUNC_INDEX.exists()

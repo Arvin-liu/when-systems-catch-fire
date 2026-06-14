@@ -257,18 +257,6 @@ def fix_related_section_format(text, registry):
                 parts.append("暂无。")
                 parts.append("None.")
 
-        if related_effects is not None or related_effects == []:
-            parts.append("")
-            parts.append("### 相关效应 / Related Effects")
-            parts.append("")
-            if related_effects and related_effects[0]:
-                for item in related_effects:
-                    if item:
-                        parts.append(f"- {item}")
-            else:
-                parts.append("暂无。")
-                parts.append("None.")
-
         if related_discoveries is not None or related_discoveries == []:
             parts.append("")
             parts.append("### 相关发现 / Related Discoveries")
@@ -369,7 +357,7 @@ def main():
         return 1
 
     pages_to_process = []
-    for base_dir in ["docs/zh/functions/items", "docs/zh/cases/items", "docs/zh/effects/items",
+    for base_dir in ["docs/zh/functions/items", "docs/zh/cases/items",
                       "docs/zh/analytic-solutions/items", "docs/zh/discoveries/items",
                       "docs/zh/predictions/items", "docs/zh/answers/items",
                       "data/rebuild", "data/relations", "data/object-classification",

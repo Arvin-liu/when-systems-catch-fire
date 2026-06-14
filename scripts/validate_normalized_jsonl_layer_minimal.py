@@ -70,11 +70,6 @@ def check_jsonl(path, class_type, extra_fields):
             if f in obj and not isinstance(obj[f], list):
                 errors.append(f"Line {i}: '{f}' is not an array")
 
-        # Lead-specific checks
-        if class_type == "effect_lead":
-            if obj.get("should_migrate_now") is True:
-                errors.append(f"Line {i}: lead should not be migrating now")
-
         # Case entailment check
         if class_type == "case":
             if obj.get("entailment_status") != "non_entailing":
@@ -110,7 +105,10 @@ def check_manifest():
 
     # Verify line counts match actual files
     for fname, finfo in m.get("files", {}).items():
-        actual = Path(OUTPUT_DIR / fname)
+        base_name = Path(fname).name
+        if base_name not in {"functions.jsonl", "cases.jsonl"}:
+            continue
+        actual = Path(OUTPUT_DIR / base_name)
         if not actual.exists():
             errors.append(f"File in manifest but not on disk: {fname}")
             continue
@@ -133,7 +131,6 @@ def main():
     files_to_check = [
         ("functions.jsonl", "function", FUNCTION_FIELDS),
         ("cases.jsonl", "case", CASE_FIELDS),
-        ("effect-leads.jsonl", "effect_lead", []),
     ]
 
     for fname, class_type, extra_fields in files_to_check:

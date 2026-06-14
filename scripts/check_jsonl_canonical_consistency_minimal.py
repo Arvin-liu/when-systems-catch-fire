@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Minimal consistency check: canonical sources exist, source_sha not empty,
-IDs not empty, and function/case/lead counts reasonable.
+IDs not empty, and function/case counts reasonable.
 """
 
 import argparse
@@ -21,7 +21,6 @@ def check_consistency():
     files_to_check = [
         "functions.jsonl",
         "cases.jsonl",
-        "effect-leads.jsonl",
     ]
 
     total_lines = 0

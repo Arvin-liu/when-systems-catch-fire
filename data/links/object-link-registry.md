@@ -1,6 +1,6 @@
 # Object Link Registry
 
-**Total objects registered**: 1180
+**Total objects registered**: 1170
 **Missing pages** (referenced but no file): 10
 
 | ID | Class | Link Text | Path |
@@ -595,6 +595,22 @@
 | [C-0576](../../docs/zh/cases/items/C-0576.md) | case | [C-0576](../../docs/zh/cases/items/C-0576.md)｜科学范式革命 | docs/zh/cases/items/C-0576.md |
 | [C-0577](../../docs/zh/cases/items/C-0577.md) | case | [C-0577](../../docs/zh/cases/items/C-0577.md)｜改革开放节奏 | docs/zh/cases/items/C-0577.md |
 | [C-0578](../../docs/zh/cases/items/C-0578.md) | case | [C-0578](../../docs/zh/cases/items/C-0578.md)｜子弹星系团暗物质 | docs/zh/cases/items/C-0578.md |
+| [C-0579](../../docs/zh/cases/items/C-0579.md) | case | [C-0579](../../docs/zh/cases/items/C-0579.md)｜上下文饱和重置验证 | docs/zh/cases/items/C-0579.md |
+| [C-0580](../../docs/zh/cases/items/C-0580.md) | case | [C-0580](../../docs/zh/cases/items/C-0580.md)｜睡眠清除门控验证 | docs/zh/cases/items/C-0580.md |
+| [C-0581](../../docs/zh/cases/items/C-0581.md) | case | [C-0581](../../docs/zh/cases/items/C-0581.md)｜偏好-愉悦共同势函数验证 | docs/zh/cases/items/C-0581.md |
+| [C-0582](../../docs/zh/cases/items/C-0582.md) | case | [C-0582](../../docs/zh/cases/items/C-0582.md)｜代际逃逸死锁验证 | docs/zh/cases/items/C-0582.md |
+| [C-0583](../../docs/zh/cases/items/C-0583.md) | case | [C-0583](../../docs/zh/cases/items/C-0583.md)｜路径依赖分化验证 | docs/zh/cases/items/C-0583.md |
+| [C-0584](../../docs/zh/cases/items/C-0584.md) | case | [C-0584](../../docs/zh/cases/items/C-0584.md)｜负期望回本陷阱验证 | docs/zh/cases/items/C-0584.md |
+| [C-0585](../../docs/zh/cases/items/C-0585.md) | case | [C-0585](../../docs/zh/cases/items/C-0585.md)｜小群体资源不易感验证 | docs/zh/cases/items/C-0585.md |
+| [C-0586](../../docs/zh/cases/items/C-0586.md) | case | [C-0586](../../docs/zh/cases/items/C-0586.md)｜内源输出再输入污染验证 | docs/zh/cases/items/C-0586.md |
+| [C-0587](../../docs/zh/cases/items/C-0587.md) | case | [C-0587](../../docs/zh/cases/items/C-0587.md)｜睡眠修复窗口验证 | docs/zh/cases/items/C-0587.md |
+| [C-0588](../../docs/zh/cases/items/C-0588.md) | case | [C-0588](../../docs/zh/cases/items/C-0588.md)｜心率累积耗损验证 | docs/zh/cases/items/C-0588.md |
+| [C-0589](../../docs/zh/cases/items/C-0589.md) | case | [C-0589](../../docs/zh/cases/items/C-0589.md)｜皮屑屏障-微生态失配验证 | docs/zh/cases/items/C-0589.md |
+| [C-0590](../../docs/zh/cases/items/C-0590.md) | case | [C-0590](../../docs/zh/cases/items/C-0590.md)｜免疫-感染阈值验证 | docs/zh/cases/items/C-0590.md |
+| [C-0591](../../docs/zh/cases/items/C-0591.md) | case | [C-0591](../../docs/zh/cases/items/C-0591.md)｜神经自举唤醒验证 | docs/zh/cases/items/C-0591.md |
+| [C-0592](../../docs/zh/cases/items/C-0592.md) | case | [C-0592](../../docs/zh/cases/items/C-0592.md)｜信息自聚合场验证 | docs/zh/cases/items/C-0592.md |
+| [C-0593](../../docs/zh/cases/items/C-0593.md) | case | [C-0593](../../docs/zh/cases/items/C-0593.md)｜短视频奖励压缩验证 | docs/zh/cases/items/C-0593.md |
+| [C-0594](../../docs/zh/cases/items/C-0594.md) | case | [C-0594](../../docs/zh/cases/items/C-0594.md)｜梦境离线生成整合验证 | docs/zh/cases/items/C-0594.md |
 | [D1](../../docs/zh/functions/items/D1.md) | function | [D1](../../docs/zh/functions/items/D1.md)｜锁定强度函数 | docs/zh/functions/items/D1.md |
 | [D10](../../docs/zh/functions/items/D10.md) | function | [D10](../../docs/zh/functions/items/D10.md)｜点火窗口函数 | docs/zh/functions/items/D10.md |
 | [D100](../../docs/zh/functions/items/D100.md) | function | [D100](../../docs/zh/functions/items/D100.md)｜AI多轨进化 | docs/zh/functions/items/D100.md |
@@ -970,6 +986,11 @@
 | [D469](../../docs/zh/functions/items/D469.md) | function | [D469](../../docs/zh/functions/items/D469.md)｜振荡优化函数 | docs/zh/functions/items/D469.md |
 | [D47](../../docs/zh/functions/items/D47.md) | function | [D47](../../docs/zh/functions/items/D47.md)｜点火窗口关闭动力学函数 | docs/zh/functions/items/D47.md |
 | [D470](../../docs/zh/functions/items/D470.md) | function | [D470](../../docs/zh/functions/items/D470.md)｜幽灵跳变阻尼函数 | docs/zh/functions/items/D470.md |
+| [D471](../../docs/zh/functions/items/D471.md) | function | [D471](../../docs/zh/functions/items/D471.md)｜状态时间重写函数 | docs/zh/functions/items/D471.md |
+| [D472](../../docs/zh/functions/items/D472.md) | function | [D472](../../docs/zh/functions/items/D472.md)｜维度坐标化边界函数 | docs/zh/functions/items/D472.md |
+| [D473](../../docs/zh/functions/items/D473.md) | function | [D473](../../docs/zh/functions/items/D473.md)｜自维持坍缩边界函数 | docs/zh/functions/items/D473.md |
+| [D474](../../docs/zh/functions/items/D474.md) | function | [D474](../../docs/zh/functions/items/D474.md)｜主动下一代生命边界函数 | docs/zh/functions/items/D474.md |
+| [D475](../../docs/zh/functions/items/D475.md) | function | [D475](../../docs/zh/functions/items/D475.md)｜形式系统外推边界函数 | docs/zh/functions/items/D475.md |
 | [D48](../../docs/zh/functions/items/D48.md) | function | [D48](../../docs/zh/functions/items/D48.md)｜退化渗透临界触发函数 | docs/zh/functions/items/D48.md |
 | [D49](../../docs/zh/functions/items/D49.md) | function | [D49](../../docs/zh/functions/items/D49.md)｜种子-点火结果概率分布函数 | docs/zh/functions/items/D49.md |
 | [D5](../../docs/zh/functions/items/D5.md) | function | [D5](../../docs/zh/functions/items/D5.md)｜偏好伪造崩塌 | docs/zh/functions/items/D5.md |
@@ -1100,42 +1121,11 @@
 | [DISC-0081](../../docs/zh/discoveries/items/DISC-0081.md) | discovery | [DISC-0081](../../docs/zh/discoveries/items/DISC-0081.md)｜A9 | P_exit(t,L,C) 退出概率 | docs/zh/discoveries/items/DISC-0081.md |
 | [DISC-0082](../../docs/zh/discoveries/items/DISC-0082.md) | discovery | [DISC-0082](../../docs/zh/discoveries/items/DISC-0082.md)｜[C-0064](../../docs/zh/cases/items/C-0064.md) | 阿兹特克 | docs/zh/discoveries/items/DISC-0082.md |
 | [DISC-0083](../../docs/zh/discoveries/items/DISC-0083.md) | discovery | [DISC-0083](../../docs/zh/discoveries/items/DISC-0083.md)｜[C-0065](../../docs/zh/cases/items/C-0065.md) | 印加 | docs/zh/discoveries/items/DISC-0083.md |
-| [EFF-0001](../../docs/zh/effects/items/EFF-0001.md) | effect | 状态时间重写效应 | docs/zh/effects/items/EFF-0001.md |
-| [EFF-0002](../../docs/zh/effects/items/EFF-0002.md) | effect | 代际逃逸死锁效应 | docs/zh/effects/items/EFF-0002.md |
-| [EFF-0003](../../docs/zh/effects/items/EFF-0003.md) | effect | 维度坐标化边界效应 | docs/zh/effects/items/EFF-0003.md |
-| [EFF-0004](../../docs/zh/effects/items/EFF-0004.md) | effect | 有限观察者全知不可能效应 | docs/zh/effects/items/EFF-0004.md |
-| [EFF-0005](../../docs/zh/effects/items/EFF-0005.md) | effect | 上下文饱和重置效应 | docs/zh/effects/items/EFF-0005.md |
-| [EFF-0006](../../docs/zh/effects/items/EFF-0006.md) | effect | 判断阈值坍缩效应 | docs/zh/effects/items/EFF-0006.md |
-| [EFF-0007](../../docs/zh/effects/items/EFF-0007.md) | effect | 路径依赖分化效应 | docs/zh/effects/items/EFF-0007.md |
-| [EFF-0008](../../docs/zh/effects/items/EFF-0008.md) | effect | 负期望回本陷阱效应 | docs/zh/effects/items/EFF-0008.md |
-| [EFF-0009](../../docs/zh/effects/items/EFF-0009.md) | effect | 外显信号调制效应 | docs/zh/effects/items/EFF-0009.md |
-| [EFF-0010](../../docs/zh/effects/items/EFF-0010.md) | effect | 信念先验驱动控制效应 | docs/zh/effects/items/EFF-0010.md |
-| [EFF-0011](../../docs/zh/effects/items/EFF-0011.md) | effect | 跨域相互作用同构效应 | docs/zh/effects/items/EFF-0011.md |
-| [EFF-0012](../../docs/zh/effects/items/EFF-0012.md) | effect | 低成本后台直觉效应 | docs/zh/effects/items/EFF-0012.md |
-| [EFF-0013](../../docs/zh/effects/items/EFF-0013.md) | effect | 睡眠清除门控效应 | docs/zh/effects/items/EFF-0013.md |
-| [EFF-0014](../../docs/zh/effects/items/EFF-0014.md) | effect | 小群体资源不易感效应 | docs/zh/effects/items/EFF-0014.md |
-| [EFF-0015](../../docs/zh/effects/items/EFF-0015.md) | effect | 炎症反馈报警效应 | docs/zh/effects/items/EFF-0015.md |
-| [EFF-0016](../../docs/zh/effects/items/EFF-0016.md) | effect | 气液剪切成泡效应 | docs/zh/effects/items/EFF-0016.md |
-| [EFF-0017](../../docs/zh/effects/items/EFF-0017.md) | effect | 烹饪参数窗口效应 | docs/zh/effects/items/EFF-0017.md |
-| [EFF-0018](../../docs/zh/effects/items/EFF-0018.md) | effect | 表面活性降能效应 | docs/zh/effects/items/EFF-0018.md |
-| [EFF-0019](../../docs/zh/effects/items/EFF-0019.md) | effect | 驱动状态耗散效应 | docs/zh/effects/items/EFF-0019.md |
-| [EFF-0020](../../docs/zh/effects/items/EFF-0020.md) | effect | 动态不稳定稳定化效应 | docs/zh/effects/items/EFF-0020.md |
-| [EFF-0021](../../docs/zh/effects/items/EFF-0021.md) | effect | 自维持坍缩边界效应 | docs/zh/effects/items/EFF-0021.md |
-| [EFF-0022](../../docs/zh/effects/items/EFF-0022.md) | effect | 自举条件敏感效应 | docs/zh/effects/items/EFF-0022.md |
-| [EFF-0023](../../docs/zh/effects/items/EFF-0023.md) | effect | 透明介质信息通道效应 | docs/zh/effects/items/EFF-0023.md |
-| [EFF-0024](../../docs/zh/effects/items/EFF-0024.md) | effect | 商业单资源竞争效应 | docs/zh/effects/items/EFF-0024.md |
-| [EFF-0025](../../docs/zh/effects/items/EFF-0025.md) | effect | 偏好-愉悦共同势函数效应 | docs/zh/effects/items/EFF-0025.md |
-| [EFF-0026](../../docs/zh/effects/items/EFF-0026.md) | effect | 内源输出再输入污染效应 | docs/zh/effects/items/EFF-0026.md |
-| [EFF-0027](../../docs/zh/effects/items/EFF-0027.md) | effect | 主动下一代生命边界效应 | docs/zh/effects/items/EFF-0027.md |
-| [EFF-0028](../../docs/zh/effects/items/EFF-0028.md) | effect | 睡眠修复窗口效应 | docs/zh/effects/items/EFF-0028.md |
-| [EFF-0029](../../docs/zh/effects/items/EFF-0029.md) | effect | 心率累积耗损效应 | docs/zh/effects/items/EFF-0029.md |
-| [EFF-0030](../../docs/zh/effects/items/EFF-0030.md) | effect | 皮屑屏障-微生态失配效应 | docs/zh/effects/items/EFF-0030.md |
-| [EFF-0031](../../docs/zh/effects/items/EFF-0031.md) | effect | 免疫-感染阈值效应 | docs/zh/effects/items/EFF-0031.md |
-| [EFF-0032](../../docs/zh/effects/items/EFF-0032.md) | effect | 神经自举唤醒效应 | docs/zh/effects/items/EFF-0032.md |
-| [EFF-0033](../../docs/zh/effects/items/EFF-0033.md) | effect | 信息自聚合场效应 | docs/zh/effects/items/EFF-0033.md |
-| [EFF-0034](../../docs/zh/effects/items/EFF-0034.md) | effect | 短视频奖励压缩效应 | docs/zh/effects/items/EFF-0034.md |
-| [EFF-0035](../../docs/zh/effects/items/EFF-0035.md) | effect | 梦境离线生成整合效应 | docs/zh/effects/items/EFF-0035.md |
-| [EFF-0036](../../docs/zh/effects/items/EFF-0036.md) | effect | 形式系统外推边界效应 | docs/zh/effects/items/EFF-0036.md |
+| [DISC-0084](../../docs/zh/discoveries/items/DISC-0084.md) | discovery | [DISC-0084](../../docs/zh/discoveries/items/DISC-0084.md)｜状态时间是序列计数投影，不是外部本体假设 | docs/zh/discoveries/items/DISC-0084.md |
+| [DISC-0085](../../docs/zh/discoveries/items/DISC-0085.md) | discovery | [DISC-0085](../../docs/zh/discoveries/items/DISC-0085.md)｜维度可作为解释压缩坐标，而非对象固有标签 | docs/zh/discoveries/items/DISC-0085.md |
+| [DISC-0086](../../docs/zh/discoveries/items/DISC-0086.md) | discovery | [DISC-0086](../../docs/zh/discoveries/items/DISC-0086.md)｜黑洞边界可表达为自维持系统的外部信息失配 | docs/zh/discoveries/items/DISC-0086.md |
+| [DISC-0087](../../docs/zh/discoveries/items/DISC-0087.md) | discovery | [DISC-0087](../../docs/zh/discoveries/items/DISC-0087.md)｜生命式系统需要主动变体生成，而不只是被动复制 | docs/zh/discoveries/items/DISC-0087.md |
+| [DISC-0088](../../docs/zh/discoveries/items/DISC-0088.md) | discovery | [DISC-0088](../../docs/zh/discoveries/items/DISC-0088.md)｜形式系统外推必须保留可证明、可反驳、独立与欠定四个出口 | docs/zh/discoveries/items/DISC-0088.md |
 | [MF-0000](../../docs/zh/functions/meta/MF-0000.md) | meta-function | [MF-0000](../../docs/zh/functions/meta/MF-0000.md)｜自举元函数 | docs/zh/functions/meta/MF-0000.md |
 | [PRED-0001](../../docs/zh/predictions/items/PRED-0001.md) | prediction | [PRED-0001](../../docs/zh/predictions/items/PRED-0001.md)｜CAI 中间层会持续提高意图中继保真度 | docs/zh/predictions/items/PRED-0001.md |
 | [PRED-0002](../../docs/zh/predictions/items/PRED-0002.md) | prediction | [PRED-0002](../../docs/zh/predictions/items/PRED-0002.md)｜结构化 API 提示在 token 紧张时更准但更窄 | docs/zh/predictions/items/PRED-0002.md |

@@ -1,221 +1,5 @@
 [
   {
-    "layer": "effects",
-    "id": "EFF-0001",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0002",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0003",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0004",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0005",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0006",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0007",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0008",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0009",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0010",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0011",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0012",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0013",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0014",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0015",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0016",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0017",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0018",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0019",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0020",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0021",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0022",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0023",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0024",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0025",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0026",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0027",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0028",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0029",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0030",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0031",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0032",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0033",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0034",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0035",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
-    "layer": "effects",
-    "id": "EFF-0036",
-    "status": "lead",
-    "novelty": "pending"
-  },
-  {
     "layer": "analytic_solutions",
     "id": "SOL-0001",
     "status": "lead",
@@ -716,6 +500,36 @@
   {
     "layer": "discoveries",
     "id": "DISC-0083",
+    "status": "active_pending_novelty_review",
+    "novelty": "inconclusive"
+  },
+  {
+    "layer": "discoveries",
+    "id": "DISC-0084",
+    "status": "active_pending_novelty_review",
+    "novelty": "inconclusive"
+  },
+  {
+    "layer": "discoveries",
+    "id": "DISC-0085",
+    "status": "active_pending_novelty_review",
+    "novelty": "inconclusive"
+  },
+  {
+    "layer": "discoveries",
+    "id": "DISC-0086",
+    "status": "active_pending_novelty_review",
+    "novelty": "inconclusive"
+  },
+  {
+    "layer": "discoveries",
+    "id": "DISC-0087",
+    "status": "active_pending_novelty_review",
+    "novelty": "inconclusive"
+  },
+  {
+    "layer": "discoveries",
+    "id": "DISC-0088",
     "status": "active_pending_novelty_review",
     "novelty": "inconclusive"
   },

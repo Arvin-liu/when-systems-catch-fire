@@ -7,26 +7,26 @@ English: This report records the bootstrap scan of the function-case-discovery c
 ## 汇总 / Summary
 
 - 分类总数 / Total categories：18
-- 函数总数 / Total functions：470
-- 案例总数 / Total cases：578
+- 函数总数 / Total functions：475
+- 案例总数 / Total cases：594
 
 | 分类 / Category | 相关函数 / Related functions | 相关案例 / Related cases | 待整理线索 / Leads |
 | --- | --- | --- | --- |
-| 历史与文明 / History and Civilization | 67 | 501 | 5 |
-| AI 与系统 / AI and Systems | 135 | 111 | 5 |
-| 物理学 / Physics | 133 | 71 | 5 |
-| 心理学 / Psychology | 61 | 72 | 5 |
-| 经济与财富 / Economics and Wealth | 60 | 70 | 5 |
-| 化学 / Chemistry | 21 | 105 | 5 |
-| 神经科学与意识 / Neuroscience and Consciousness | 46 | 67 | 5 |
-| 社会学与政治 / Sociology and Politics | 32 | 42 | 5 |
+| 哲学 / Philosophy | 35 | 9 | 5 |
+| AI 与系统 / AI and Systems | 137 | 113 | 5 |
+| 物理学 / Physics | 136 | 73 | 5 |
 | 技术与工程 / Technology and Engineering | 28 | 31 | 5 |
-| 生态与环境 / Ecology and Environment | 31 | 27 | 5 |
-| 哲学 / Philosophy | 33 | 9 | 5 |
-| 生物学 / Biology | 12 | 20 | 5 |
-| 教育与学习 / Education and Learning | 14 | 18 | 5 |
-| 医学与健康 / Medicine and Health | 15 | 13 | 5 |
-| 法律与制度 / Law and Institutions | 6 | 11 | 5 |
+| 神经科学与意识 / Neuroscience and Consciousness | 46 | 70 | 5 |
+| 社会学与政治 / Sociology and Politics | 33 | 46 | 5 |
+| 生物学 / Biology | 14 | 24 | 5 |
+| 历史与文明 / History and Civilization | 72 | 520 | 5 |
+| 化学 / Chemistry | 25 | 121 | 5 |
+| 经济与财富 / Economics and Wealth | 61 | 76 | 5 |
+| 心理学 / Psychology | 61 | 74 | 5 |
+| 生态与环境 / Ecology and Environment | 33 | 32 | 5 |
+| 教育与学习 / Education and Learning | 14 | 19 | 5 |
+| 医学与健康 / Medicine and Health | 16 | 16 | 5 |
+| 法律与制度 / Law and Institutions | 6 | 12 | 5 |
 | 文学与叙事 / Literature and Narrative | 2 | 0 | 2 |
 | 艺术与摄影 / Art and Photography | 0 | 1 | 1 |
 

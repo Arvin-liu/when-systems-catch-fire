@@ -28,7 +28,7 @@ def validate():
     scanned = 0
 
     # Scan all item pages for Related Objects sections
-    for base_dir in ["docs/zh/functions/items", "docs/zh/cases/items", "docs/zh/effects/items",
+    for base_dir in ["docs/zh/functions/items", "docs/zh/cases/items",
                       "docs/zh/analytic-solutions/items", "docs/zh/discoveries/items",
                       "docs/zh/predictions/items", "docs/zh/answers/items"]:
         dir_path = BASE / base_dir

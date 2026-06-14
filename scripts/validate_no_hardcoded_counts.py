@@ -15,7 +15,6 @@ ROOT = Path(__file__).parent.parent
 SCAN_PATTERNS = [
     # Chinese patterns
     (r'(\d+)\s*个\s*函数', 'functions'),
-    (r'(\d+)\s*个\s*效应', 'effects'),
     (r'(\d+)\s*个\s*案例', 'cases'),
     (r'(\d+)\s*个\s*发现', 'discoveries'),
     (r'(\d+)\s*个\s*预测', 'predictions'),
@@ -25,7 +24,6 @@ SCAN_PATTERNS = [
     (r'五层|五入口|四入口', 'entry_count'),
     # English patterns
     (r'(\d+)\s+functions', 'functions'),
-    (r'(\d+)\s+effects', 'effects'),
     (r'(\d+)\s+cases', 'cases'),
     (r'(\d+)\s+discoveries', 'discoveries'),
     (r'(\d+)\s+predictions', 'predictions'),

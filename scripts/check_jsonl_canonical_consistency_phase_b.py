@@ -82,7 +82,7 @@ def check_source_existence():
     warnings = []
 
     phase_b_files = [
-        "effects.jsonl", "discoveries.jsonl", "predictions.jsonl",
+        "discoveries.jsonl", "predictions.jsonl",
         "answers.jsonl", "analytic-solutions.jsonl",
         "function-case-relations.jsonl", "object-classification-crosswalk.jsonl"
     ]

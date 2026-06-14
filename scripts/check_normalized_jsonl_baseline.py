@@ -21,8 +21,6 @@ AUDIT_MD = REBUILD / "normalized-jsonl-final-audit-report.md"
 REQUIRED_JSONL = [
     ("functions.jsonl", "function"),
     ("cases.jsonl", "case"),
-    ("effect-leads.jsonl", "effect_lead"),
-    ("effects.jsonl", "effect"),
     ("discoveries.jsonl", "discovery"),
     ("predictions.jsonl", "prediction"),
     ("answers.jsonl", "answer"),
@@ -38,7 +36,6 @@ REQUIRED_RULES = {
     "function_case_relations_non_entailing": True,
     "zero_function_case_relations_allowed_if_diagnosed": True,
     "lead_not_active": True,
-    "eff_numbering_not_effect_proof": True,
     "novelty_passed_not_generated": True,
     "active_promotion_not_executed": True,
 }
