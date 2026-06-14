@@ -1,12 +1,19 @@
 {
-  "generated_at": "2026-06-14T03:49:43Z",
-  "get_note_0000_sync_status": "success",
+  "report_type": "get-note-0000-sync-report",
+  "get_note_0000_sync_status": "pending",
   "topic_id": "JlWNZWj0",
   "topic_name": "0000",
-  "note_id": "1912773330696482536",
-  "note_title": "点火｜0000数学对象分类与闸门更新报告｜2026-06-14",
-  "created_at": "2026-06-14 11:49:43",
-  "note_count_after_sync": 24,
-  "batch_add_success_count": 1,
-  "batch_add_failed_note_ids": []
+  "note_count_in_topic": 24,
+  "sync_attempts": 3,
+  "error": "API endpoint /open/api/v1/resource/knowledge/notes POST returns 404; note creation endpoint unknown",
+  "reports_available": [
+    "no-hardcoded-counts-report.md",
+    "project-growth-rule-report.md",
+    "bootstrap-verification-not-growth-lock-report.md",
+    "mathematical-object-full-classification-report.md",
+    "effect-leads-reclassification-review.md",
+    "classification-only-run-report.md"
+  ],
+  "generated_at": "2026-06-14T04:50:00Z",
+  "retry_needed": true
 }
