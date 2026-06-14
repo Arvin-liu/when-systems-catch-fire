@@ -1028,7 +1028,7 @@ def render_report(items: list[dict[str, Any]]) -> tuple[dict[str, Any], str]:
     lines = [
         "# 0000 知识库猜想全量数学推论报告",
         "",
-        "- API 未返回精确名为 `00000` 的知识库；本轮按 API 中唯一对应的 `0000` 知识库执行。`00000` 已 superseded_by_0000。",
+        "- API 未返回精确名为 `00000` 的知识库；本轮按 API 中当前解释路径之一的 `0000` 知识库执行。`00000` 已 superseded_by_0000。",
         "- 已下载知识库笔记：22 条列表记录、22 条详情记录。",
         f"- 新效应对象：{len(items)} 条。",
         f"- 内部正反交叉自举收敛：{len(converged)}/{len(items)}。",

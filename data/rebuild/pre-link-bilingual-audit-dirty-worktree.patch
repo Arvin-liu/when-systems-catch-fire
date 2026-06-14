@@ -1,0 +1,96 @@
+diff --git a/data/rebuild/get-note-0000-sync-report.json b/data/rebuild/get-note-0000-sync-report.json
+index d9e94e4..7725b0b 100644
+--- a/data/rebuild/get-note-0000-sync-report.json
++++ b/data/rebuild/get-note-0000-sync-report.json
+@@ -1,19 +1,15 @@
+ {
+-  "report_type": "get-note-0000-sync-report",
+-  "get_note_0000_sync_status": "pending",
++  "scan_run_at": "2026-06-14 05:55:11 UTC",
++  "get_note_sync_status": "pending",
++  "knowledge_base": "0000",
+   "topic_id": "JlWNZWj0",
+-  "topic_name": "0000",
+-  "note_count_in_topic": 24,
+-  "sync_attempts": 3,
+-  "error": "API endpoint /open/api/v1/resource/knowledge/notes POST returns 404; note creation endpoint unknown",
+-  "reports_available": [
+-    "no-hardcoded-counts-report.md",
+-    "project-growth-rule-report.md",
+-    "bootstrap-verification-not-growth-lock-report.md",
+-    "mathematical-object-full-classification-report.md",
+-    "effect-leads-reclassification-review.md",
+-    "classification-only-run-report.md"
++  "reason": "POST create note endpoint returned 404 in previous attempt. Sync content pending: function-case non-entailment rule, relation data structure, migration report, scan report.",
++  "next_step": "Confirm correct note creation API endpoint",
++  "sync_content": [
++    "Function-Case Non-Entailment Rule",
++    "Function-Case Relation Data Structure",
++    "Migration Report",
++    "No-Entailment Scan Report"
+   ],
+-  "generated_at": "2026-06-14T04:50:00Z",
+-  "retry_needed": true
++  "api_note": "POST create note endpoint returned 404"
+ }
+\ No newline at end of file
+diff --git a/data/rebuild/link-entry-merge-report.json b/data/rebuild/link-entry-merge-report.json
+index 26ca6f6..12ecdb9 100644
+--- a/data/rebuild/link-entry-merge-report.json
++++ b/data/rebuild/link-entry-merge-report.json
+@@ -1,5 +1,5 @@
+ {
+-  "scanned_files": 1477,
++  "scanned_files": 1493,
+   "changed_files": 0,
+   "tables_merged": 0,
+   "columns_removed": 0,
+diff --git a/data/rebuild/link-entry-merge-report.md b/data/rebuild/link-entry-merge-report.md
+index 01036ef..995894b 100644
+--- a/data/rebuild/link-entry-merge-report.md
++++ b/data/rebuild/link-entry-merge-report.md
+@@ -1,6 +1,6 @@
+ # Link Entry Merge Report / 链接入口合并报告
+ 
+-- Scanned files / 扫描文件：1477
++- Scanned files / 扫描文件：1493
+ - Changed files / 变更文件：0
+ - Tables merged / 合并表格：0
+ - Columns removed / 删除列：0
+diff --git a/data/rebuild/no-function-case-entailment-scan-report.md b/data/rebuild/no-function-case-entailment-scan-report.md
+index fcb09ca..6a60e04 100644
+--- a/data/rebuild/no-function-case-entailment-scan-report.md
++++ b/data/rebuild/no-function-case-entailment-scan-report.md
+@@ -1,9 +1,13 @@
+ # No Function-Case Entailment Scan Report
+ 
+-Date: 2026-06-14 05:51:10 UTC
++Date: 2026-06-14 05:54:13 UTC
+ 
+-Files scanned: 1450
+-Risky phrases found: 0
+-Auto fixed: 0
+-Needs human review: 0
+-Blocking entailment phrases remaining: 0
++- Files scanned: 1450
++- Risky phrases found: 0
++- Auto fixed: 0
++- Needs human review: 0
++- Blocking entailment phrases: 0
++
++## Verdict
++
++No blocking function-case entailment phrases found in the repository.
+diff --git a/scripts/build_getnote_conjecture_effects.py b/scripts/build_getnote_conjecture_effects.py
+index c682e71..bbbe702 100644
+--- a/scripts/build_getnote_conjecture_effects.py
++++ b/scripts/build_getnote_conjecture_effects.py
+@@ -1028,7 +1028,7 @@ def render_report(items: list[dict[str, Any]]) -> tuple[dict[str, Any], str]:
+     lines = [
+         "# 0000 知识库猜想全量数学推论报告",
+         "",
+-        "- API 未返回精确名为 `00000` 的知识库；本轮按 API 中唯一对应的 `0000` 知识库执行。`00000` 已 superseded_by_0000。",
++        "- API 未返回精确名为 `00000` 的知识库；本轮按 API 中当前解释路径之一的 `0000` 知识库执行。`00000` 已 superseded_by_0000。",
+         "- 已下载知识库笔记：22 条列表记录、22 条详情记录。",
+         f"- 新效应对象：{len(items)} 条。",
+         f"- 内部正反交叉自举收敛：{len(converged)}/{len(items)}。",

@@ -1,0 +1,9 @@
+ M data/rebuild/get-note-0000-sync-report.json
+ M data/rebuild/link-entry-merge-report.json
+ M data/rebuild/link-entry-merge-report.md
+ M data/rebuild/no-function-case-entailment-scan-report.md
+ M scripts/build_getnote_conjecture_effects.py
+?? data/rebuild/function-case-non-entailment-report.md
+?? data/rebuild/function-case-relation-migration-report.md
+?? data/rebuild/pre-link-bilingual-audit-dirty-worktree-status.txt
+?? data/rebuild/pre-link-bilingual-audit-dirty-worktree.patch
