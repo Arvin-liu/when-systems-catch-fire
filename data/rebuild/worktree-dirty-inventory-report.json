@@ -1,0 +1,293 @@
+{
+  "report_name": "worktree-dirty-inventory-report",
+  "generated_at": "2026-06-14T14:47:55.548181+00:00",
+  "head": "fbb8a54",
+  "branch": "main",
+  "total_dirty_items": 27,
+  "unrelated_dirty_items": 7,
+  "unknown_items": 2,
+  "prior_dirty_commit": null,
+  "unknown_items_left_unstaged": 2,
+  "unrelated_dirty_files_left_unstaged": 7,
+  "diff_stat": " AGENT_ENTRY.md                                     |  3 +++\n data/normalized-jsonl/README.md                    | 15 +++++++++++++\n data/rebuild/get-note-0000-sync-report.json        | 26 +++++++++-------------\n data/rebuild/link-entry-merge-report.json          |  2 +-\n data/rebuild/link-entry-merge-report.md            |  2 +-\n .../no-function-case-entailment-scan-report.json   | 16 ++++++++-----\n .../no-function-case-entailment-scan-report.md     | 16 ++++++++-----\n llms.txt                                           |  6 +++++\n 8 files changed, 58 insertions(+), 28 deletions(-)\n",
+  "items": [
+    {
+      "path": "AGENT_ENTRY.md",
+      "git_status": "M",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "data/normalized-jsonl/README.md",
+      "git_status": "M",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "data/rebuild/get-note-0000-sync-report.json",
+      "git_status": "M",
+      "category": "get_note_dirty",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": false,
+      "safe_to_discard": false,
+      "recommended_action": "leave_unstaged",
+      "reason": "get-note artifact unrelated to the current baseline commit"
+    },
+    {
+      "path": "data/rebuild/link-entry-merge-report.json",
+      "git_status": "M",
+      "category": "link_entry_dirty",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": false,
+      "safe_to_discard": false,
+      "recommended_action": "leave_unstaged",
+      "reason": "link-entry artifact unrelated to the current baseline commit"
+    },
+    {
+      "path": "data/rebuild/link-entry-merge-report.md",
+      "git_status": "M",
+      "category": "link_entry_dirty",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": false,
+      "safe_to_discard": false,
+      "recommended_action": "leave_unstaged",
+      "reason": "link-entry artifact unrelated to the current baseline commit"
+    },
+    {
+      "path": "data/rebuild/no-function-case-entailment-scan-report.json",
+      "git_status": "M",
+      "category": "entailment_dirty",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": false,
+      "safe_to_discard": false,
+      "recommended_action": "leave_unstaged",
+      "reason": "function-case entailment artifact unrelated to the current baseline commit"
+    },
+    {
+      "path": "data/rebuild/no-function-case-entailment-scan-report.md",
+      "git_status": "M",
+      "category": "entailment_dirty",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": false,
+      "safe_to_discard": false,
+      "recommended_action": "leave_unstaged",
+      "reason": "function-case entailment artifact unrelated to the current baseline commit"
+    },
+    {
+      "path": "llms.txt",
+      "git_status": "M",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "data/normalized-jsonl/baseline.json",
+      "git_status": "??",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": false,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "data/rebuild/normalized-jsonl-final-audit-report.json",
+      "git_status": "??",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": false,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "data/rebuild/normalized-jsonl-final-audit-report.md",
+      "git_status": "??",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": false,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "data/rebuild/normalized-jsonl-final-validation-report.json",
+      "git_status": "??",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": false,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "data/rebuild/normalized-jsonl-final-validation-report.md",
+      "git_status": "??",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": false,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "data/rebuild/pre-eff-identity-audit-dirty-worktree-status.txt",
+      "git_status": "??",
+      "category": "unknown",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": false,
+      "safe_to_discard": false,
+      "recommended_action": "needs_user_review",
+      "reason": "path does not match a known safe current-task category"
+    },
+    {
+      "path": "data/rebuild/pre-eff-identity-audit-dirty-worktree.patch",
+      "git_status": "??",
+      "category": "unknown",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": false,
+      "safe_to_discard": false,
+      "recommended_action": "needs_user_review",
+      "reason": "path does not match a known safe current-task category"
+    },
+    {
+      "path": "data/rebuild/recovery/dirty-inventory-diff-stat.txt",
+      "git_status": "??",
+      "category": "current_inventory_artifact",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "dirty inventory artifact for the current takeover run"
+    },
+    {
+      "path": "data/rebuild/recovery/dirty-inventory-head.txt",
+      "git_status": "??",
+      "category": "current_inventory_artifact",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "dirty inventory artifact for the current takeover run"
+    },
+    {
+      "path": "data/rebuild/recovery/dirty-inventory-status.txt",
+      "git_status": "??",
+      "category": "current_inventory_artifact",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "dirty inventory artifact for the current takeover run"
+    },
+    {
+      "path": "data/rebuild/recovery/pre-normalized-jsonl-phase-b-diff-stat.txt",
+      "git_status": "??",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": false,
+      "safe_to_discard": false,
+      "recommended_action": "leave_unstaged",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "data/rebuild/recovery/pre-normalized-jsonl-phase-b-status.txt",
+      "git_status": "??",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": false,
+      "safe_to_discard": false,
+      "recommended_action": "leave_unstaged",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "data/rebuild/recovery/pre-normalized-jsonl-recovery.patch",
+      "git_status": "??",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": false,
+      "safe_to_discard": false,
+      "recommended_action": "leave_unstaged",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "data/rebuild/worktree-dirty-inventory-report.json",
+      "git_status": "??",
+      "category": "current_inventory_artifact",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "dirty inventory artifact for the current takeover run"
+    },
+    {
+      "path": "data/rebuild/worktree-dirty-inventory-report.md",
+      "git_status": "??",
+      "category": "current_inventory_artifact",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "dirty inventory artifact for the current takeover run"
+    },
+    {
+      "path": "scripts/check_normalized_jsonl_baseline.py",
+      "git_status": "??",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "scripts/inventory_dirty_worktree.py",
+      "git_status": "??",
+      "category": "current_inventory_artifact",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "dirty inventory artifact for the current takeover run"
+    },
+    {
+      "path": "scripts/validate_normalized_jsonl_all.py",
+      "git_status": "??",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    },
+    {
+      "path": "scripts/validate_project_identity_lock.py",
+      "git_status": "??",
+      "category": "normalized_jsonl_related",
+      "appeared_before_current_run": true,
+      "safe_to_commit_now": true,
+      "safe_to_discard": false,
+      "recommended_action": "include_in_current_commit",
+      "reason": "normalized-jsonl baseline, report, script, or maintenance rule"
+    }
+  ],
+  "safety": {
+    "no_files_discarded": true,
+    "no_files_staged": true,
+    "no_commit_executed_by_script": true,
+    "no_push_executed_by_script": true,
+    "no_full_diff_written": true,
+    "no_sensitive_env_content_read": true
+  }
+}

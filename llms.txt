@@ -171,3 +171,9 @@ Do not modify canonical data when rebuilding normalized JSONL.
 Do not hardcode counts.
 Each JSONL line must be one complete object.
 Every JSONL object must include canonical_source, schema_version, generated_at, source_commit, source_sha, and inference_not_conclusion.
+Any addition, rewrite, or deletion in an object layer must trigger normalized-jsonl rebuild and consistency checks.
+JSONL is not an external adapter; it is the formal machine-readable data layer of the project.
+Data structure is not the goal; consistency is the goal.
+When function-case-relations has 0 lines, do not synthesize relations.
+EFF numbering does not prove that an object is an effect.
+lead is not active and must not be promoted by default.
