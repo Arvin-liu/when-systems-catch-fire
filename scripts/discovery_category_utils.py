@@ -736,10 +736,124 @@ def discovery_page_categories(item: dict) -> list[dict]:
     return resolve_categories([cat["id"] for cat in item.get("categories", [])])
 
 
+def _related_ref_label(entry: dict, case: bool = False) -> str:
+    if case:
+        rid = entry.get("normalized_id") or entry.get("id") or ""
+    else:
+        rid = entry.get("id") or entry.get("function_id") or ""
+    title = (entry.get("title") or {}).get("zh") or rid
+    return f"{rid}（{title}）" if title and title != rid else rid
+
+
+def _related_ref_ids(item: dict, key: str, case: bool = False) -> list[str]:
+    ids = []
+    for entry in item.get(key, []) or []:
+        if isinstance(entry, dict):
+            value = entry.get("normalized_id") if case else (entry.get("id") or entry.get("function_id"))
+            value = value or entry.get("id")
+        else:
+            value = str(entry)
+        if value and value not in ids:
+            ids.append(value)
+    return ids
+
+
+def _discovery_page_chain(item: dict) -> dict[str, str]:
+    did = item["id"]
+    title = item["title"].get("zh") or did
+    category = ", ".join(cat["title"].get("zh", cat["id"]) for cat in item.get("categories", [])) or "未分类"
+    functions = item.get("related_functions", []) or []
+    cases = item.get("related_cases", []) or []
+    function_labels = "、".join(_related_ref_label(entry) for entry in functions[:4])
+    case_labels = "、".join(_related_ref_label(entry, case=True) for entry in cases[:4])
+    if functions and cases:
+        zh = (
+            f"本发现把 {function_labels} 与 {case_labels} 放入同一个可审计对象：函数侧提供机制、变量或约束，案例侧提供状态见证。"
+            f"推导先检查这些对象能否回指到源页，再把它们在“{category}”问题域中的共同结构写作信息增益 ΔI_{{{did}}}。"
+            f"若 ΔI_{{{did}}} 高于阈值且内部反向检查未发现冲突，则保留为待学术独有性检索的发现线索；这仍是推论，不是定论。"
+        )
+        en = (
+            f"This discovery places {function_labels} and {case_labels} into one auditable object: functions provide mechanisms, variables, or constraints, while cases provide state witnesses. "
+            f"The derivation first checks source traceability, then records their shared structure in the {category} domain as information gain ΔI_{{{did}}}. "
+            "If the gain clears the threshold and the internal reverse check finds no conflict, the item remains a discovery lead pending academic novelty review; this is an inference, not a conclusion."
+        )
+    elif functions:
+        zh = (
+            f"本发现来自 {function_labels} 的机制抽象。推导先读取相关函数的标题、定义、数学表达和依赖关系，"
+            f"再判断该机制在“{category}”问题域中是否形成独立可审计的结构洞见。由于当前没有明确案例见证，"
+            f"页面只给出机制侧发现线索，后续仍需案例补证与学术独有性检索；这不是 active 结论。"
+        )
+        en = (
+            f"This discovery is derived from the mechanism abstraction of {function_labels}. The derivation reads the related function titles, definitions, mathematical expressions, and dependencies, "
+            f"then checks whether the mechanism forms an auditable structural insight in the {category} domain. Because no explicit case witness is attached yet, the page records a function-side discovery lead only; case support and academic novelty review are still required."
+        )
+    elif cases:
+        zh = (
+            f"本发现来自 {case_labels} 的案例状态。推导先把案例描述编码为状态见证，抽取其中可复核的函数线索或结构模式，"
+            f"再判断该模式是否足以成为“{category}”方向的发现候选。当前不补造函数，也不把案例写成证明；"
+            f"页面只保留案例触发的推论路径。"
+        )
+        en = (
+            f"This discovery is derived from the case state of {case_labels}. The derivation encodes the case description as a state witness, extracts auditable function clues or structural patterns, "
+            f"and checks whether the pattern can stand as a {category} discovery candidate. It does not synthesize functions or treat the case as proof; it records a case-triggered inference path."
+        )
+    else:
+        zh = (
+            f"本发现暂时只有来源笔记和分类线索。推导先保留 {title} 的来源回指，再等待函数、案例或数学表达补齐后重新计算 ΔI_{{{did}}}。"
+            "当前状态只能作为待复核发现线索。"
+        )
+        en = (
+            f"This discovery currently has only source-note and category traces. The derivation preserves the source reference for {title} and waits for related functions, cases, or mathematical expressions before recomputing ΔI_{{{did}}}. "
+            "The current state is a reviewable discovery lead only."
+        )
+    return {"zh": zh, "en": en}
+
+
+def _discovery_page_derivation(item: dict, derivation: dict) -> dict:
+    did = item["id"]
+    fids = _related_ref_ids(item, "related_functions")
+    cids = _related_ref_ids(item, "related_cases", case=True)
+    deps = fids + cids
+    function_set = "{" + ", ".join(fids) + "}" if fids else "∅"
+    case_set = "{" + ", ".join(cids) + "}" if cids else "∅"
+    if fids and cids:
+        support_step = f"3. Compute ΔI_{{{did}}}=I(structure | F={function_set}, C={case_set})-I(prior | category) and keep the item only as an inference lead."
+    elif fids:
+        support_step = f"3. Compute ΔI_{{{did}}}=I(structure | F={function_set})-I(prior | category); because C=∅, mark the case side as support pending."
+    elif cids:
+        support_step = f"3. Compute ΔI_{{{did}}}=I(pattern | C={case_set})-I(prior | category); because F=∅, do not synthesize a function."
+    else:
+        support_step = f"3. Keep ΔI_{{{did}}} pending until at least one related function or case becomes traceable."
+    return {
+        "kind": derivation.get("kind") or "discovery_information_gain_derivation",
+        "status": derivation.get("status") or "internal_page_derivation_completed",
+        "depends_on": deps,
+        "steps_math": [
+            f"1. Trace the discovery object D_{{{did}}} back to its source note, category, and human page.",
+            f"2. Build the evidence pair (F,C) with F={function_set} and C={case_set}; missing sides are left empty rather than fabricated.",
+            support_step,
+            f"4. Accept the page-level derivation only as inference_not_conclusion when J_n^+(D_{{{did}}})=1 and the internal reverse check does not find contradiction.",
+            "5. Leave external novelty, active status, and migration decisions to later academic search and dual-channel bootstrap tasks.",
+        ],
+        "proof_obligations": [
+            "source_reference_traceable",
+            "related_object_traceable_or_explicitly_empty",
+            "information_gain_boundary_declared",
+            "inference_not_conclusion",
+            "external_novelty_still_inconclusive",
+        ],
+        "forward_check": {"condition": f"J_n^+(D_{{{did}}})=1 ∧ trace(F,C,source)=true"},
+        "reverse_check": {"condition": f"J_n^-(D_{{{did}}})=0 under internal duplicate/conflict scan"},
+        "convergence": f"PageDerivation(D_{{{did}}}) ⇔ trace(source)=true ∧ ΔI_{{{did}}} declared ∧ inference_not_conclusion=true",
+    }
+
+
 def render_discovery_page(item: dict) -> str:
     current_path = DISCOVERY_DIR / "items" / f"{item['id']}.md"
     formal = item.get("mathematical_formalization") or {}
     derivation = item.get("mathematical_derivation") or {}
+    page_chain = _discovery_page_chain(item)
+    page_derivation = _discovery_page_derivation(item, derivation)
     lines = [
         f"# {item['id']}｜{format_bilingual_title(item['title'].get('zh'), item['title'].get('en'))}",
         "",
@@ -788,10 +902,10 @@ def render_discovery_page(item: dict) -> str:
             "## 推论链条 / Inference Chain",
             "",
             "中文：",
-            item["inference_chain"]["zh"],
+            page_chain["zh"],
             "",
             "English:",
-            safe_english(item["inference_chain"]["en"]),
+            page_chain["en"],
             "",
             "## 纯数学函数 / Pure Mathematical Function",
             "",
@@ -803,16 +917,16 @@ def render_discovery_page(item: dict) -> str:
             "",
             "## 数学推导 / Mathematical Derivation",
             "",
-            f"- 推导类型 / Derivation type: `{derivation.get('kind', '')}`",
-            f"- 收敛状态 / Convergence status: `{derivation.get('status', '')}`",
-            f"- 依赖 / Depends on: {', '.join(f'`{dep}`' for dep in derivation.get('depends_on', [])) if derivation.get('depends_on') else '`source_state`'}",
+            f"- 推导类型 / Derivation type: `{page_derivation.get('kind', '')}`",
+            f"- 收敛状态 / Convergence status: `{page_derivation.get('status', '')}`",
+            f"- 依赖 / Depends on: {', '.join(f'`{dep}`' for dep in page_derivation.get('depends_on', [])) if page_derivation.get('depends_on') else '`source_state`'}",
             "- 推导步骤 / Steps:",
-            *(f"  - {step}" for step in derivation.get("steps_math", [])),
+            *(f"  - {step}" for step in page_derivation.get("steps_math", [])),
             "- 证明义务 / Proof obligations:",
-            *(f"  - `{obligation}`" for obligation in derivation.get("proof_obligations", [])),
-            f"- 正向检查 / Forward check: `{(derivation.get('forward_check') or {}).get('condition', '')}`",
-            f"- 反向检查 / Reverse check: `{(derivation.get('reverse_check') or {}).get('condition', '')}`",
-            f"- 收敛判据 / Convergence: `{derivation.get('convergence', '')}`",
+            *(f"  - `{obligation}`" for obligation in page_derivation.get("proof_obligations", [])),
+            f"- 正向检查 / Forward check: `{(page_derivation.get('forward_check') or {}).get('condition', '')}`",
+            f"- 反向检查 / Reverse check: `{(page_derivation.get('reverse_check') or {}).get('condition', '')}`",
+            f"- 收敛判据 / Convergence: `{page_derivation.get('convergence', '')}`",
             "",
             "## 相关函数 / Related Functions",
             "",

@@ -177,3 +177,10 @@ Data structure is not the goal; consistency is the goal.
 When function-case-relations has 0 lines, do not synthesize relations.
 EFF numbering does not prove that an object is an effect.
 lead is not active and must not be promoted by default.
+
+EFF-Q Collision Analysis:
+Collision analysis produces recommendations, not migrations.
+Do not convert EFF leads into functions/effects/discoveries automatically.
+Do not mark anything active.
+Do not generate academic_novelty.passed.
+All recommendations must be inference_not_conclusion=true.

@@ -408,3 +408,8 @@ English: This repository maintains a formal project-level normalized JSONL data 
 
 中文：任何对象层的新增、改写、删除，都必须触发 normalized-jsonl 重建与一致性检查。JSONL 不是外部适配，而是项目正式机器数据层。`function-case-relations.jsonl` 为 0 行时不得伪造关系；EFF 编号不证明对象是效应；`lead` 不等于 `active`。
 English: Any addition, rewrite, or deletion in an object layer must trigger normalized-jsonl rebuild and consistency checks. JSONL is not an external adapter; it is the formal machine-readable data layer of the project. When `function-case-relations.jsonl` has 0 lines, do not synthesize relations; EFF numbering does not prove that an object is an effect; `lead` is not `active`.
+
+## EFF/Q 推论碰撞分析规则 / EFF-Q Collision Analysis Rule
+
+中文：EFF/Q 推论与函数、案例、发现、新答案、解析解之间的碰撞分析，只能输出推论性迁移建议，不能直接执行迁移。任何建议进入 active 的对象，都必须另行通过学术搜索和正反自举验证。
+English: Collision analysis between EFF/Q inferences and functions, cases, discoveries, new answers, and analytic solutions may only produce inferential migration suggestions, not direct migrations. Any object proposed for active status must separately pass academic search and dual-channel bootstrap verification.

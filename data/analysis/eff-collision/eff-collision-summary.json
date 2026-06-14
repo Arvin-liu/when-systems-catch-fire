@@ -1,0 +1,49 @@
+{
+  "report_name": "eff-collision-summary",
+  "generated_at": "2026-06-14T15:26:25.374086+00:00",
+  "source_commit": "9184eb4",
+  "baseline_source_commit": "fbb8a54",
+  "collision_analysis_only": true,
+  "migration_executed": false,
+  "academic_search_executed": false,
+  "novelty_passed_generated": false,
+  "active_promotion_executed": false,
+  "full_bootstrap_executed": false,
+  "function_case_relation_synthesized": false,
+  "missing_input": [],
+  "input_counts": {
+    "effect_leads": 36,
+    "functions": 713,
+    "cases": 710,
+    "effects": 36,
+    "discoveries": 83,
+    "answers": 12,
+    "analytic_solutions": 1,
+    "predictions": 8
+  },
+  "output_counts": {
+    "function_candidates": 4,
+    "effect_candidates": 31,
+    "discovery_candidates": 1,
+    "answer_candidates": 0,
+    "analytic_solution_candidates": 0,
+    "supplement_note_candidates": 0,
+    "needs_human_review": 0,
+    "near_duplicates": 13
+  },
+  "function_match_counts": {
+    "not_function_like": 32,
+    "new_function_candidate": 4
+  },
+  "case_match_counts": {
+    "case_missing": 36
+  },
+  "other_match_counts": {
+    "existing_effect_overlap": 36
+  },
+  "internal_dedup_counts": {
+    "distinct_item": 617,
+    "same_mechanism_different_name": 12,
+    "parent_child_relation": 1
+  }
+}
