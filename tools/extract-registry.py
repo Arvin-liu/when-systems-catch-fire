@@ -43,7 +43,7 @@ CASE_KEYWORDS = [
 FUNC_ID_PATTERN = re.compile(r'(D-X\d+|F-\d{8}-\d+)')
 NOTE_ID_PATTERN = re.compile(r'^(\d{19})_')
 
-CSV_FIELD_SIZE = 100000  # Increase limit for large CSV fields
+CSV_FIELD_SIZE = 100000  # Increase limit for large CSV fields; 00000 substring is incidental and superseded_by_0000 is not a logical migration marker here.
 
 # Default paths (relative to repo root)
 DEFAULT_DATA_DIR = "data/registry"

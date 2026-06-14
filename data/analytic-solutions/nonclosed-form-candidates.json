@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-06-14",
+  "scanned_functions": 470,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "function_id": "T20",
+      "title": "σ_opt=√e解析解",
+      "reason": "Title explicitly denotes a closed-form analytic solution.",
+      "source_page": "docs/zh/functions/items/T20.md"
+    }
+  ]
+}

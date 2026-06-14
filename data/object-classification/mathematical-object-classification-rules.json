@@ -1,0 +1,33 @@
+{
+  "updated_at": "2026-06-14",
+  "rules": [
+    {
+      "object_class": "function",
+      "criterion": "Has a reusable mapping, operator, mechanism, or structural expression with domain and codomain or explicit input-output relation."
+    },
+    {
+      "object_class": "effect",
+      "criterion": "Describes a stable observed change, phenomenon, or output shift under conditions rather than the generating mechanism itself."
+    },
+    {
+      "object_class": "analytic_solution",
+      "criterion": "Gives an explicit symbolic, closed-form, or verifiable solution to a defined mathematical problem."
+    },
+    {
+      "object_class": "discovery",
+      "criterion": "States a new structural insight derived from functions, cases, or bootstrap reasoning."
+    },
+    {
+      "object_class": "prediction",
+      "criterion": "States a testable future judgment with conditions and falsification criteria."
+    },
+    {
+      "object_class": "answer",
+      "criterion": "Provides a new answer to an existing, classic, unresolved, or previously answered question."
+    },
+    {
+      "object_class": "case",
+      "criterion": "Provides evidence, historical context, or verification material for another object class."
+    }
+  ]
+}

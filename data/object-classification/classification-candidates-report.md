@@ -1,0 +1,41 @@
+# Classification Candidates
+
+- Total candidates: 37
+
+- T20 (function) -> SOL-0001 (analytic_solution): Title explicitly names a closed-form solution.
+- EFF-0001 (answer_new_effect_candidate) -> EFF-0001 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0002 (answer_new_effect_candidate) -> EFF-0002 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0003 (answer_new_effect_candidate) -> EFF-0003 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0004 (answer_new_effect_candidate) -> EFF-0004 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0005 (answer_new_effect_candidate) -> EFF-0005 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0006 (answer_new_effect_candidate) -> EFF-0006 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0007 (answer_new_effect_candidate) -> EFF-0007 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0008 (answer_new_effect_candidate) -> EFF-0008 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0009 (answer_new_effect_candidate) -> EFF-0009 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0010 (answer_new_effect_candidate) -> EFF-0010 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0011 (answer_new_effect_candidate) -> EFF-0011 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0012 (answer_new_effect_candidate) -> EFF-0012 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0013 (answer_new_effect_candidate) -> EFF-0013 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0014 (answer_new_effect_candidate) -> EFF-0014 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0015 (answer_new_effect_candidate) -> EFF-0015 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0016 (answer_new_effect_candidate) -> EFF-0016 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0017 (answer_new_effect_candidate) -> EFF-0017 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0018 (answer_new_effect_candidate) -> EFF-0018 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0019 (answer_new_effect_candidate) -> EFF-0019 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0020 (answer_new_effect_candidate) -> EFF-0020 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0021 (answer_new_effect_candidate) -> EFF-0021 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0022 (answer_new_effect_candidate) -> EFF-0022 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0023 (answer_new_effect_candidate) -> EFF-0023 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0024 (answer_new_effect_candidate) -> EFF-0024 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0025 (answer_new_effect_candidate) -> EFF-0025 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0026 (answer_new_effect_candidate) -> EFF-0026 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0027 (answer_new_effect_candidate) -> EFF-0027 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0028 (answer_new_effect_candidate) -> EFF-0028 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0029 (answer_new_effect_candidate) -> EFF-0029 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0030 (answer_new_effect_candidate) -> EFF-0030 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0031 (answer_new_effect_candidate) -> EFF-0031 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0032 (answer_new_effect_candidate) -> EFF-0032 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0033 (answer_new_effect_candidate) -> EFF-0033 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0034 (answer_new_effect_candidate) -> EFF-0034 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0035 (answer_new_effect_candidate) -> EFF-0035 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
+- EFF-0036 (answer_new_effect_candidate) -> EFF-0036 (effect): Structured effect candidate with conjecture, conclusion, and dual-channel derivation.
