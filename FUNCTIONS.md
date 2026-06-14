@@ -3,6 +3,9 @@
 本表收录 1 条第 0 节主入口、5 条内部子项和 470 条普通函数。每条条目都包含编号、名称、函数内容、关联对象和来源回指。
 This table contains 1 Section 0 root meta-function, 5 internal subitems, and 470 ordinary functions. Each entry includes its ID, title, content, related objects, and source reference.
 
+**函数与案例之间的关系是推论、映射、支持、限制或反证关系，不是必然证明关系。**
+Relations between functions and cases are inferential, mapping, supporting, limiting, or falsifying relations, not necessary proof relations.
+
 ## 快速入口 / Quick Entry
 
 - [第 0 节 / Section 0](#section-0-bootstrap-meta-function)：1 条主入口 + 5 条内部子项 / 1 root entry + 5 internal subitems

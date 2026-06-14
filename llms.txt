@@ -129,3 +129,28 @@ Bootstrap verification is not a growth lock.
 Failed objects enter candidate/lead/pending pools, not deletion.
 Only passed objects become active.
 Contradiction entries do not stop project growth.
+
+Function-Case Non-Entailment Rule:
+Function-case relations are inferential relations, not definitive entailments.
+
+Do not say:
+- a case proves a function
+- a case necessarily derives a function
+- a function necessarily points to a case
+- a function is the only explanation of a case
+- a function and a case prove each other
+
+Allowed:
+- inspired by
+- triggered by
+- supported by
+- limited by
+- falsified by
+- can explain
+- partially explains
+- current mapping
+- candidate explanation
+- inference, not conclusion
+
+Every function-case relation must include entailment_status = non_entailing.
+Relation records live in data/relations/function-case-relations.jsonl.

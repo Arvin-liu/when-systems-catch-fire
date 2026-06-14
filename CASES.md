@@ -3,6 +3,9 @@
 本表收录 578 个点火案例。每个案例都包含编号、案例内容、关联函数和来源回指。
 This table contains 578 ignition cases. Each case includes its ID, content, related functions, and source reference.
 
+**函数与案例之间的关系是推论、映射、支持、限制或反证关系，不是必然证明关系。**
+Relations between functions and cases are inferential, mapping, supporting, limiting, or falsifying relations, not necessary proof relations.
+
 ## 快速入口 / Quick Entry
 
 - [#1–#100](#case-range-1-100)
