@@ -1,0 +1,32 @@
+{
+  "phase": "phase_b",
+  "is_not_core_rebuild": true,
+  "canonical_data_not_replaced": true,
+  "full_bootstrap_not_run": true,
+  "academic_search_not_run": true,
+  "novelty_passed_not_generated": true,
+  "active_promotion_not_executed": true,
+  "files": {
+    "effects.jsonl": {
+      "line_count": 36
+    },
+    "discoveries.jsonl": {
+      "line_count": 83
+    },
+    "predictions.jsonl": {
+      "line_count": 8
+    },
+    "answers.jsonl": {
+      "line_count": 12
+    },
+    "analytic-solutions.jsonl": {
+      "line_count": 1
+    },
+    "function-case-relations.jsonl": {
+      "line_count": 0
+    },
+    "object-classification-crosswalk.jsonl": {
+      "line_count": 37
+    }
+  }
+}

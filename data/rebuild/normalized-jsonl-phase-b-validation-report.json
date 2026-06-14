@@ -1,0 +1,44 @@
+{
+  "total_files": 7,
+  "files_with_errors": 0,
+  "total_errors": 0,
+  "total_warnings": 0,
+  "manifest_ok": true,
+  "file_results": {
+    "effects.jsonl": {
+      "line_count": 36,
+      "errors": 0,
+      "warnings": 0
+    },
+    "discoveries.jsonl": {
+      "line_count": 83,
+      "errors": 0,
+      "warnings": 0
+    },
+    "predictions.jsonl": {
+      "line_count": 8,
+      "errors": 0,
+      "warnings": 0
+    },
+    "answers.jsonl": {
+      "line_count": 12,
+      "errors": 0,
+      "warnings": 0
+    },
+    "analytic-solutions.jsonl": {
+      "line_count": 1,
+      "errors": 0,
+      "warnings": 0
+    },
+    "function-case-relations.jsonl": {
+      "line_count": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    "object-classification-crosswalk.jsonl": {
+      "line_count": 37,
+      "errors": 0,
+      "warnings": 0
+    }
+  }
+}

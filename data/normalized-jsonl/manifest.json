@@ -21,6 +21,56 @@
     "effect-leads.jsonl": {
       "line_count": 36,
       "sha256": "045de7908ec8bc2c"
+    },
+    "data/normalized-jsonl/effects.jsonl": {
+      "path": "data/normalized-jsonl/effects.jsonl",
+      "line_count": 36,
+      "sha256": "3cfd68d32842ca15"
+    },
+    "data/normalized-jsonl/discoveries.jsonl": {
+      "path": "data/normalized-jsonl/discoveries.jsonl",
+      "line_count": 83,
+      "sha256": "bdf97a6acec09ff5"
+    },
+    "data/normalized-jsonl/predictions.jsonl": {
+      "path": "data/normalized-jsonl/predictions.jsonl",
+      "line_count": 8,
+      "sha256": "d1c674ea69d04690"
+    },
+    "data/normalized-jsonl/answers.jsonl": {
+      "path": "data/normalized-jsonl/answers.jsonl",
+      "line_count": 12,
+      "sha256": "62e27a765a2dc0a3"
+    },
+    "data/normalized-jsonl/analytic-solutions.jsonl": {
+      "path": "data/normalized-jsonl/analytic-solutions.jsonl",
+      "line_count": 1,
+      "sha256": "2fe82e1fb0ceca05"
+    },
+    "data/normalized-jsonl/function-case-relations.jsonl": {
+      "path": "data/normalized-jsonl/function-case-relations.jsonl",
+      "line_count": 0,
+      "sha256": "e3b0c44298fc1c14"
+    },
+    "data/normalized-jsonl/object-classification-crosswalk.jsonl": {
+      "path": "data/normalized-jsonl/object-classification-crosswalk.jsonl",
+      "line_count": 37,
+      "sha256": "7d5f6de0485fadda"
+    },
+    "data/normalized-jsonl/functions.jsonl": {
+      "path": "data/normalized-jsonl/functions.jsonl",
+      "line_count": 713,
+      "sha256": "ae2144863cc80ea2"
+    },
+    "data/normalized-jsonl/cases.jsonl": {
+      "path": "data/normalized-jsonl/cases.jsonl",
+      "line_count": 710,
+      "sha256": "a3ba7d9896c3f044"
+    },
+    "data/normalized-jsonl/effect-leads.jsonl": {
+      "path": "data/normalized-jsonl/effect-leads.jsonl",
+      "line_count": 36,
+      "sha256": "045de7908ec8bc2c"
     }
   }
 }
