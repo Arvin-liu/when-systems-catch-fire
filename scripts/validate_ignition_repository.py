@@ -32,6 +32,17 @@ from answer_utils import (
     render_category_page as render_answer_category_page,
     read_json as read_answer_json,
 )
+from build_getnote_conjecture_effects import (
+    DATA_INDEX as NEW_EFFECTS_INDEX_MD,
+    DATA_JSON as NEW_EFFECTS_JSON,
+    DATA_JSONL as NEW_EFFECTS_JSONL,
+    DOC_INDEX as NEW_EFFECTS_DOC_MD,
+    EFFECTS as NEW_EFFECT_BLUEPRINTS,
+    REPORT_JSON as CONJECTURE_REPORT_JSON,
+    REPORT_MD as CONJECTURE_REPORT_MD,
+    render_index as render_new_effects_index,
+    render_machine_index as render_new_effects_machine_index,
+)
 from discovery_category_utils import (
     BOOTSTRAP_REPORT_MD,
     CATEGORY_MAP_JSON,
@@ -92,6 +103,8 @@ MATH_FORMALIZATION_SUPPLEMENTS_JSONL = REPO_ROOT / "data/rebuild/math-formalizat
 DISCUSSION_RECALL_JSON = REPO_ROOT / "data/rebuild/discussion-inference-recall.json"
 DISCUSSION_RECALL_JSONL = REPO_ROOT / "data/rebuild/discussion-inference-recall.jsonl"
 DISCUSSION_RECALL_MD = REPO_ROOT / "data/rebuild/discussion-inference-recall.md"
+DISCUSSION_RECALL_SUMMARY_JSON = REPO_ROOT / "data/rebuild/discussion-inference-recall-summary.json"
+DISCUSSION_RECALL_SUMMARY_MD = REPO_ROOT / "data/rebuild/discussion-inference-recall-summary.md"
 
 
 def fail(errors: list[str]) -> int:
@@ -369,6 +382,47 @@ def check_answers(errors: list[str]) -> dict[str, int]:
     }
 
 
+def check_new_effects(errors: list[str]) -> dict[str, int]:
+    effects = read_answer_json(NEW_EFFECTS_JSON, [])
+    if not effects:
+        errors.append("data/answers/new-effects.json is missing or empty")
+        return {"effects": 0, "with_math": 0}
+    if len(effects) != len(NEW_EFFECT_BLUEPRINTS):
+        errors.append(f"new effect count mismatch: {len(effects)} != {len(NEW_EFFECT_BLUEPRINTS)}")
+    expected_doc = render_new_effects_index(effects)
+    current_doc = NEW_EFFECTS_DOC_MD.read_text(encoding="utf-8") if NEW_EFFECTS_DOC_MD.exists() else ""
+    if expected_doc != current_doc:
+        errors.append("docs/zh/answers/new-effects.md is out of date")
+    expected_machine = render_new_effects_machine_index(effects)
+    current_machine = NEW_EFFECTS_INDEX_MD.read_text(encoding="utf-8") if NEW_EFFECTS_INDEX_MD.exists() else ""
+    if expected_machine != current_machine:
+        errors.append("data/answers/new-effects-index.md is out of date")
+    with_math = 0
+    for item in effects:
+        if not re.match(r"^EFF-\d{4}$", item.get("id", "")):
+            errors.append(f"bad new effect id: {item.get('id')}")
+        page = REPO_ROOT / item.get("page", "")
+        if not page.exists():
+            errors.append(f"new effect page missing: {item.get('page')}")
+        formal = item.get("mathematical_formalization") or {}
+        derivation = item.get("mathematical_derivation") or {}
+        required_formal = ["symbol", "math_expression", "domain", "codomain", "validity_condition"]
+        required_derivation = ["status", "kind", "steps_math", "forward_check", "reverse_check", "convergence"]
+        missing = [key for key in required_formal if not formal.get(key)]
+        missing += [key for key in required_derivation if not derivation.get(key)]
+        if derivation.get("status") != "converged":
+            missing.append("status=converged")
+        if derivation.get("forward_check", {}).get("status") != "pass":
+            missing.append("forward_check.status=pass")
+        if derivation.get("reverse_check", {}).get("status") != "fail":
+            missing.append("reverse_check.status=fail")
+        if missing:
+            errors.append(f"new effect missing pure math gate fields: {item.get('id')} ({', '.join(missing)})")
+        else:
+            with_math += 1
+    return {"effects": len(effects), "with_math": with_math}
+
+
 def check_math_formalization_gate(errors: list[str]) -> dict[str, int]:
     datasets = {
         "function": read_discovery_json(REPO_ROOT / "data/functions/unified-functions.json", []),
@@ -376,6 +430,7 @@ def check_math_formalization_gate(errors: list[str]) -> dict[str, int]:
         "discovery": read_discovery_json(DISCOVERIES_JSON, []),
         "prediction": read_discovery_json(PREDICTIONS_JSON, []),
         "answer": read_answer_json(ANSWERS_JSON_PATH, []),
+        "effect": read_answer_json(NEW_EFFECTS_JSON, []),
     }
     required_formal = ["symbol", "math_expression", "domain", "codomain", "validity_condition"]
     required_derivation = ["status", "kind", "steps_math", "forward_check", "reverse_check", "convergence"]
@@ -424,9 +479,21 @@ def check_math_formalization_gate(errors: list[str]) -> dict[str, int]:
 
 
 def check_discussion_recall(errors: list[str]) -> dict[str, int]:
+    summary = read_discovery_json(DISCUSSION_RECALL_SUMMARY_JSON, {})
+    if summary:
+        if summary.get("redacted_public_detail") is not True:
+            errors.append("discussion recall summary must mark public detail as redacted")
+        if not summary.get("private_archive"):
+            errors.append("discussion recall summary must point to the private archive")
+        return {
+            "total_recalled": int(summary.get("total_recalled", 0)),
+            "not_fully_listed": int(summary.get("not_fully_listed", 0)),
+            "verification_failed": int(summary.get("verification_failed", 0)),
+        }
+
     payload = read_discovery_json(DISCUSSION_RECALL_JSON, {})
     if not payload:
-        errors.append("data/rebuild/discussion-inference-recall.json is missing or empty")
+        errors.append("discussion inference recall summary is missing or empty")
         return {"total_recalled": 0, "not_fully_listed": 0, "verification_failed": 0}
     rows = payload.get("all_recalled", [])
     failed = [
@@ -482,6 +549,12 @@ def check_presence(errors: list[str]) -> None:
         ANSWERS_LIST_MD,
         ANSWERS_INDEX_MD,
         ANSWER_TEMPLATE_MD,
+        NEW_EFFECTS_JSON,
+        NEW_EFFECTS_JSONL,
+        NEW_EFFECTS_INDEX_MD,
+        NEW_EFFECTS_DOC_MD,
+        CONJECTURE_REPORT_JSON,
+        CONJECTURE_REPORT_MD,
         REPO_ROOT / "scripts/display_utils.py",
         REPO_ROOT / "scripts/build_answers_from_function_projection.py",
         REPO_ROOT / "scripts/normalize_bilingual_labels.py",
@@ -507,9 +580,8 @@ def check_presence(errors: list[str]) -> None:
         MATH_FORMALIZATION_REPORT_MD,
         MATH_FORMALIZATION_SUPPLEMENTS_JSON,
         MATH_FORMALIZATION_SUPPLEMENTS_JSONL,
-        DISCUSSION_RECALL_JSON,
-        DISCUSSION_RECALL_JSONL,
-        DISCUSSION_RECALL_MD,
+        DISCUSSION_RECALL_SUMMARY_JSON,
+        DISCUSSION_RECALL_SUMMARY_MD,
     ]
     for path in expected:
         if not path.exists():
@@ -538,6 +610,7 @@ def main() -> int:
     meta_stats = check_meta_functions(errors)
     math_stats = check_math_formalization_gate(errors)
     discussion_recall_stats = check_discussion_recall(errors)
+    new_effect_stats = check_new_effects(errors)
     if quick_mode:
         discovery_stats = {
             "curated": len(read_discovery_json(DISCOVERIES_JSON, [])),
@@ -569,6 +642,7 @@ def main() -> int:
         "functions": function_stats,
         "math_formalization": math_stats,
         "discussion_recall": discussion_recall_stats,
+        "new_effects": new_effect_stats,
         "errors": errors,
     }
     print(json.dumps(report, ensure_ascii=False, indent=2))

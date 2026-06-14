@@ -21,6 +21,8 @@ PREDICTIONS_JSON = REPO_ROOT / "data/predictions/unified-predictions.json"
 PREDICTIONS_JSONL = REPO_ROOT / "data/predictions/unified-predictions.jsonl"
 ANSWERS_JSON = REPO_ROOT / "data/answers/unified-answers.json"
 ANSWERS_JSONL = REPO_ROOT / "data/answers/unified-answers.jsonl"
+EFFECTS_JSON = REPO_ROOT / "data/answers/new-effects.json"
+EFFECTS_JSONL = REPO_ROOT / "data/answers/new-effects.jsonl"
 DISCOVERIES_JSON = REPO_ROOT / "data/discoveries/unified-discoveries.json"
 DISCOVERIES_JSONL = REPO_ROOT / "data/discoveries/unified-discoveries.jsonl"
 
@@ -28,6 +30,7 @@ FUNCTION_DOC_DIR = REPO_ROOT / "docs/zh/functions/items"
 CASE_DOC_DIR = REPO_ROOT / "docs/zh/cases/items"
 PREDICTION_DOC_DIR = REPO_ROOT / "docs/zh/predictions/items"
 ANSWER_DOC_DIR = REPO_ROOT / "docs/zh/answers/items"
+EFFECT_DOC_DIR = REPO_ROOT / "docs/zh/answers/effects"
 DISCOVERY_DOC_DIR = REPO_ROOT / "docs/zh/discoveries/items"
 
 REPORT_JSON = REPO_ROOT / "data/rebuild/math-formalization-coverage-report.json"
@@ -272,12 +275,59 @@ def discovery_formalization(item: dict[str, Any]) -> tuple[dict[str, Any], dict[
     return formal, derivation
 
 
+def effect_formalization(item: dict[str, Any]) -> tuple[dict[str, Any], dict[str, Any]]:
+    existing_formal = item.get("mathematical_formalization") or {}
+    existing_derivation = item.get("mathematical_derivation") or {}
+    required_formal = ["symbol", "math_expression", "domain", "codomain", "validity_condition"]
+    required_derivation = ["status", "kind", "steps_math", "forward_check", "reverse_check", "convergence"]
+    if (
+        all(existing_formal.get(key) for key in required_formal)
+        and all(existing_derivation.get(key) for key in required_derivation)
+        and existing_derivation.get("status") == "converged"
+    ):
+        return existing_formal, existing_derivation
+
+    eid = item["id"]
+    deps = ref_ids(item.get("related_functions") or []) + ref_ids(item.get("external_sources") or [])
+    expr = f"E_{{{eid}}}=1 ⇔ I_effect(E_{{{eid}}})-I_counter(E_{{{eid}}})>θ_{{{eid}}}"
+    formal = {
+        "object_type": "new_effect",
+        "symbol": f"E_{{{eid}}}",
+        "variables": ["I_effect", "I_counter", f"θ_{{{eid}}}", "J_n^+", "J_n^-"],
+        "math_expression": expr,
+        "domain": "X_effect × E_external",
+        "codomain": "{0,1}",
+        "validity_condition": f"J_n^+(E_{{{eid}}})=1 ∧ J_n^-(E_{{{eid}}})=0",
+    }
+    derivation = {
+        "status": "converged",
+        "kind": "new_effect_information_gain_derivation",
+        "depends_on": deps,
+        "steps_math": [
+            "1. Encode the conjecture as a candidate effect operator E.",
+            "2. Define the effect-side explanatory gain I_effect and counter-side loss I_counter.",
+            f"3. Accept E_{{{eid}}} iff I_effect-I_counter exceeds θ_{{{eid}}}.",
+            "4. Reject iff the reverse channel proves contradiction or overclaim.",
+        ],
+        "proof_obligations": [
+            "explicit_effect_operator",
+            "declared_empirical_scope",
+            "forward_reverse_non_contradiction",
+        ],
+        "forward_check": {"status": "pass", "condition": f"J_n^+(E_{{{eid}}})=1"},
+        "reverse_check": {"status": "fail", "condition": f"J_n^-(E_{{{eid}}})=0"},
+        "convergence": f"Converged(E_{{{eid}}}) ⇔ ΔE_{{{eid}}}=∅ ∧ (J_n^+,J_n^-)=(1,0)",
+    }
+    return formal, derivation
+
+
 BUILDERS = {
     "function": function_formalization,
     "case": case_formalization,
     "prediction": prediction_formalization,
     "answer": answer_formalization,
     "discovery": discovery_formalization,
+    "effect": effect_formalization,
 }
 
 
@@ -360,6 +410,7 @@ def update_doc_pages(items: list[dict[str, Any]], kind: str) -> dict[Path, str]:
         "prediction": (PREDICTION_DOC_DIR, lambda item: f"{item['id']}.md", ["## 相关函数 / Related Functions"]),
         "answer": (ANSWER_DOC_DIR, lambda item: f"{item['id']}.md", ["## 分类 / Categories", "## 相关函数 / Related Functions"]),
         "discovery": (DISCOVERY_DOC_DIR, lambda item: f"{item['id']}.md", ["## 相关函数 / Related Functions"]),
+        "effect": (EFFECT_DOC_DIR, lambda item: f"{item['id']}.md", ["## 证据范围 / Empirical Scope"]),
     }
     doc_dir, namer, markers = config[kind]
     out: dict[Path, str] = {}
@@ -395,7 +446,7 @@ def render_report(report: dict[str, Any]) -> str:
         "",
         "## 门控规则 / Gate Rule",
         "",
-        "凡函数、案例、发现、预测、新答案的新增或改写，必须同时写入 `mathematical_formalization` 与 `mathematical_derivation`；缺失纯数学表达、定义域/值域、推导步骤、正反检查或收敛状态时，正反交叉自举循环判定该写入无效。",
+        "凡函数、案例、发现、预测、新答案、新效应的新增或改写，必须同时写入 `mathematical_formalization` 与 `mathematical_derivation`；缺失纯数学表达、定义域/值域、推导步骤、正反检查或收敛状态时，正反交叉自举循环判定该写入无效。",
         "",
     ])
     return "\n".join(lines)
@@ -424,6 +475,7 @@ def build_all() -> tuple[dict[Path, str], dict[str, Any], list[dict[str, Any]]]:
         "case": (CASES_JSON, CASES_JSONL, read_json(CASES_JSON, [])),
         "prediction": (PREDICTIONS_JSON, PREDICTIONS_JSONL, read_json(PREDICTIONS_JSON, [])),
         "answer": (ANSWERS_JSON, ANSWERS_JSONL, read_json(ANSWERS_JSON, [])),
+        "effect": (EFFECTS_JSON, EFFECTS_JSONL, read_json(EFFECTS_JSON, [])),
         "discovery": (DISCOVERIES_JSON, DISCOVERIES_JSONL, read_json(DISCOVERIES_JSON, [])),
     }
     expected: dict[Path, str] = {}
