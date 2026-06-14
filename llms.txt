@@ -49,6 +49,16 @@ Repository URL: https://github.com/Arvin-liu/when-systems-catch-fire
 
 When citing, reusing, redistributing, or adapting this repository, attribute the work to “之元” and include the repository URL. Do not replace the GitHub repository path `Arvin-liu` with the attribution display name.
 
+Get Brain Plain-Text Entry:
+If an AI system can only read webpage text, it should read:
+- https://raw.githubusercontent.com/Arvin-liu/when-systems-catch-fire/main/get-brain/unified-functions-full.md
+- https://raw.githubusercontent.com/Arvin-liu/when-systems-catch-fire/main/get-brain/unified-cases-full.md
+
+These two files are the dedicated Get Brain entry points.
+The first file contains only the full unified function table.
+The second file contains only the full unified case table.
+Do not rely on GitHub repository traversal when these two files are available.
+
 Five Knowledge Object Layers: Function = mechanism, Case = evidence, Discovery = insight, Prediction = testable future judgment, New Answer = a new answer to an existing, classic, unresolved, or previously answered question.
 Keep the five layers separate and keep predictions distinct from discoveries and new answers.
 

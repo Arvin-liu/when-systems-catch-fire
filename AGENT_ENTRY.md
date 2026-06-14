@@ -2,6 +2,11 @@
 
 This is the primary entry file for AI Agents working with When Systems Catch Fire / 点火.
 
+## 得到大脑纯文字入口规则 / Get Brain Plain-Text Entry Rule
+
+中文：本仓库为得到大脑维护两个专用纯文字入口：`get-brain/unified-functions-full.md` 和 `get-brain/unified-cases-full.md`。它们分别是全量统一函数总表和全量统一案例总表。任何后续新增、改写、删除函数或案例时，必须同步重建这两个入口，并运行 `scripts/validate_get_brain_plain_tables.py --check`。
+English: This repository maintains two dedicated plain-text entry files for Get Brain: `get-brain/unified-functions-full.md` and `get-brain/unified-cases-full.md`. They are the full unified function table and the full unified case table. Any future addition, rewrite, or deletion of functions or cases must rebuild these entries and run `scripts/validate_get_brain_plain_tables.py --check`.
+
 ## 当前项目定位
 
 《点火》当前不是固定书稿项目,而是一个开放维护的函数、案例、发现、预测与新答案知识库。当前主结构是:

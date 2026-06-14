@@ -1,5 +1,22 @@
 # When Systems Catch Fire / 点火
 
+<!-- GET_BRAIN_ENTRY_START -->
+
+> ## 得到大脑专用入口 / Get Brain Dedicated Entry
+>
+> 如果你是"得到大脑"或其他只能读取网页文本的 AI，请优先读取下面两个纯文字表，而不是从 GitHub 仓库主页自行遍历文件。
+>
+> - 全量统一函数总表 / Full Unified Function Table:
+> https://raw.githubusercontent.com/Arvin-liu/when-systems-catch-fire/main/get-brain/unified-functions-full.md
+>
+> - 全量统一案例总表 / Full Unified Case Table:
+> https://raw.githubusercontent.com/Arvin-liu/when-systems-catch-fire/main/get-brain/unified-cases-full.md
+>
+> 这两个文件是专门给得到大脑准备的纯文字入口：一个只写函数表，一个只写案例表。
+> JSONL 数据层仍然保留在 `data/normalized-jsonl/`，但得到大脑优先读这两个纯文字表。
+
+<!-- GET_BRAIN_ENTRY_END -->
+
 <!-- PROJECT_POSITIONING_LOCK_START -->
 
 一个人类在好奇心的驱动下，借助 AI 做出的发现。
