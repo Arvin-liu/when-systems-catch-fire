@@ -8,9 +8,9 @@
 
 ## Forward Pass
 
-- Functions accepted into the canonical sequence: D471, D472, D473, D474, D475.
-- Cases accepted into the canonical sequence: C-0579 through C-0594.
-- Discoveries accepted into the canonical sequence: DISC-0084, DISC-0085, DISC-0086, DISC-0087, DISC-0088.
+- Functions accepted into the canonical sequence: [D471](../../docs/zh/functions/items/D471.md), [D472](../../docs/zh/functions/items/D472.md), [D473](../../docs/zh/functions/items/D473.md), [D474](../../docs/zh/functions/items/D474.md), D475.
+- Cases accepted into the canonical sequence: [C-0579](../../docs/zh/cases/items/C-0579.md) through C-0594.
+- Discoveries accepted into the canonical sequence: [DISC-0084](../../docs/zh/discoveries/items/DISC-0084.md), [DISC-0085](../../docs/zh/discoveries/items/DISC-0085.md), [DISC-0086](../../docs/zh/discoveries/items/DISC-0086.md), [DISC-0087](../../docs/zh/discoveries/items/DISC-0087.md), DISC-0088.
 - Annotation accepted: the bootstrap loop convergence note in `AGENT_ENTRY.md` clarifies that convergence can still stabilize on a wrong fixed point if the goal function or evidence set is biased.
 
 ## Reverse Pass

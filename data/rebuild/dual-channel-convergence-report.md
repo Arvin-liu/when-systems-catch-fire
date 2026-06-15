@@ -1,9 +1,9 @@
 # Dual-Channel Full Bootstrap Report
 
-- run_id: 20260614-1027
-- generated_at: 2026-06-14T02:35:32.176133+00:00
-- functions verified: 470 / 470
-- cases verified: 578 / 578
+- run_id: 20260615-005536-function-case-full
+- generated_at: 2026-06-15T01:05:13.759628+00:00
+- functions verified: 475 / 475
+- cases verified: 594 / 594
 - rounds_completed: 2
 - converged: true
 - status: converged
@@ -14,11 +14,11 @@
 
 ## Result Counts
 
-- function true: 470
+- function true: 475
 - function false: 0
 - function contradiction: 0
 - function underdetermined: 0
-- case true: 578
+- case true: 594
 - case failed_mapping: 0
 - case contradiction: 0
 - case underdetermined: 0

@@ -157,7 +157,7 @@
 | [D226](../../docs/zh/functions/items/D226.md) | function | 2 | true | keep_active | pass:0.91 | fail:0.0 |
 | [D227](../../docs/zh/functions/items/D227.md) | function | 2 | true | keep_active | pass:1.0 | fail:0.0 |
 | [D228](../../docs/zh/functions/items/D228.md) | function | 2 | true | keep_active | pass:1.0 | fail:0.0 |
-| [D229](../../docs/zh/functions/items/D229.md) | function | 2 | true | keep_active | pass:0.91 | fail:0.0 |
+| [D229](../../docs/zh/functions/items/D229.md) | function | 2 | true | keep_active | pass:1.0 | fail:0.0 |
 | [D23](../../docs/zh/functions/items/D23.md) | function | 2 | true | keep_active | pass:1.0 | fail:0.0 |
 | [D230](../../docs/zh/functions/items/D230.md) | function | 2 | true | keep_active | pass:0.91 | fail:0.0 |
 | [D231](../../docs/zh/functions/items/D231.md) | function | 2 | true | keep_active | pass:0.91 | fail:0.0 |
@@ -388,6 +388,11 @@
 | [D469](../../docs/zh/functions/items/D469.md) | function | 2 | true | keep_active | pass:1.0 | fail:0.0 |
 | [D47](../../docs/zh/functions/items/D47.md) | function | 2 | true | keep_active | pass:1.0 | fail:0.0 |
 | [D470](../../docs/zh/functions/items/D470.md) | function | 2 | true | keep_active | pass:1.0 | fail:0.0 |
+| [D471](../../docs/zh/functions/items/D471.md) | function | 2 | true | keep_active | pass:1.0 | fail:0.0 |
+| [D472](../../docs/zh/functions/items/D472.md) | function | 2 | true | keep_active | pass:0.91 | fail:0.0 |
+| [D473](../../docs/zh/functions/items/D473.md) | function | 2 | true | keep_active | pass:1.0 | fail:0.0 |
+| [D474](../../docs/zh/functions/items/D474.md) | function | 2 | true | keep_active | pass:0.91 | fail:0.0 |
+| [D475](../../docs/zh/functions/items/D475.md) | function | 2 | true | keep_active | pass:0.91 | fail:0.0 |
 | [D48](../../docs/zh/functions/items/D48.md) | function | 2 | true | keep_active | pass:1.0 | fail:0.0 |
 | [D49](../../docs/zh/functions/items/D49.md) | function | 2 | true | keep_active | pass:1.0 | fail:0.0 |
 | [D5](../../docs/zh/functions/items/D5.md) | function | 2 | true | keep_active | pass:0.91 | fail:0.0 |

@@ -1,7 +1,7 @@
 {
   "report_name": "normalized-jsonl-final-validation-report",
-  "generated_at": "2026-06-14T20:21:27.541434+00:00",
-  "head": "3f6dd0d",
+  "generated_at": "2026-06-15T01:05:45.962983+00:00",
+  "head": "3da8a9f",
   "schema_version": "normalized-jsonl-v1",
   "files_checked": 8,
   "files": [

@@ -1,11 +1,11 @@
 # Object ID Linkification Report
 
-- Generated at: 2026-06-14T20:29:13.640793+00:00
-- HEAD: `3f6dd0d`
+- Generated at: 2026-06-15T01:07:15.093736+00:00
+- HEAD: `3da8a9f`
 - Registry: `data/links/object-link-registry.json`
-- Checked Markdown files: 1530
-- Changed Markdown files: 1189
-- Replacements: 12738
+- Checked Markdown files: 1531
+- Changed Markdown files: 1183
+- Replacements: 10917
 - Dry run: false
 - Link text policy: object ID itself
 
@@ -13,36 +13,30 @@
 
 | File | Replacements | Distinct IDs |
 |---|---:|---:|
-| `.private/github/zy-agent-memory-vault/projects/when-systems-catch-fire/grs-8/new-notes-overview-20260612.md` | 7 | 6 |
 | `CASES.md` | 551 | 132 |
 | `DISCOVERIES.md` | 3 | 2 |
 | `FUNCTIONS.md` | 1495 | 469 |
 | `data/cases/unified-cases-index.md` | 175 | 65 |
-| `data/cases/统一案例总表_578案例_源文交叉重建版_v4.md` | 19 | 8 |
 | `data/discoveries/unified-discoveries-index.md` | 90 | 89 |
 | `data/functions/unified-functions-index.md` | 471 | 4 |
-| `data/functions/统一函数总表_470条_源文交叉重建版_v4.md` | 13 | 13 |
-| `data/links/object-link-registry.md` | 2491 | 1169 |
-| `data/novelty-gate/all-object-academic-novelty-review.md` | 108 | 108 |
-| `data/object-classification/classification-candidates-report.md` | 2 | 2 |
-| `data/object-classification/object-reclassification-report.md` | 2 | 2 |
 | `data/predictions/index.md` | 8 | 0 |
 | `data/predictions/unified-predictions-index.md` | 8 | 0 |
-| `data/rebuild/all-object-academic-novelty-review-report.md` | 108 | 108 |
-| `data/rebuild/answer-leads-quality-report.md` | 12 | 12 |
+| `data/rebuild/bootstrap-docx-coverage-verification-2026-06-15.md` | 9 | 9 |
+| `data/rebuild/dual-channel-case-verification.md` | 594 | 594 |
+| `data/rebuild/dual-channel-function-verification.md` | 466 | 466 |
 | `data/rebuild/human-entry-render-report.md` | 24 | 24 |
-| `docs/zh/answers/items/ANS-0001.md` | 9 | 5 |
-| `docs/zh/answers/items/ANS-0002.md` | 13 | 7 |
-| `docs/zh/answers/items/ANS-0003.md` | 9 | 5 |
-| `docs/zh/answers/items/ANS-0004.md` | 5 | 3 |
-| `docs/zh/answers/items/ANS-0005.md` | 25 | 13 |
-| `docs/zh/answers/items/ANS-0006.md` | 17 | 9 |
-| `docs/zh/answers/items/ANS-0007.md` | 15 | 8 |
-| `docs/zh/answers/items/ANS-0008.md` | 15 | 8 |
-| `docs/zh/answers/items/ANS-0009.md` | 9 | 4 |
-| `docs/zh/answers/items/ANS-0010.md` | 11 | 6 |
-| `docs/zh/answers/items/ANS-0011.md` | 13 | 7 |
-| `docs/zh/answers/items/ANS-0012.md` | 9 | 5 |
+| `docs/zh/answers/items/ANS-0001.md` | 4 | 4 |
+| `docs/zh/answers/items/ANS-0002.md` | 6 | 6 |
+| `docs/zh/answers/items/ANS-0003.md` | 4 | 4 |
+| `docs/zh/answers/items/ANS-0004.md` | 2 | 2 |
+| `docs/zh/answers/items/ANS-0005.md` | 12 | 12 |
+| `docs/zh/answers/items/ANS-0006.md` | 8 | 8 |
+| `docs/zh/answers/items/ANS-0007.md` | 7 | 7 |
+| `docs/zh/answers/items/ANS-0008.md` | 7 | 7 |
+| `docs/zh/answers/items/ANS-0009.md` | 3 | 3 |
+| `docs/zh/answers/items/ANS-0010.md` | 5 | 5 |
+| `docs/zh/answers/items/ANS-0011.md` | 6 | 6 |
+| `docs/zh/answers/items/ANS-0012.md` | 4 | 4 |
 | `docs/zh/cases/items/C-0001.md` | 1 | 1 |
 | `docs/zh/cases/items/C-0002.md` | 1 | 1 |
 | `docs/zh/cases/items/C-0003.md` | 1 | 1 |
@@ -641,90 +635,90 @@
 | `docs/zh/discoveries/items/DISC-0001.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0002.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0003.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0004.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0005.md` | 11 | 2 |
+| `docs/zh/discoveries/items/DISC-0004.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0005.md` | 10 | 2 |
 | `docs/zh/discoveries/items/DISC-0006.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0007.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0008.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0009.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0010.md` | 11 | 2 |
+| `docs/zh/discoveries/items/DISC-0009.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0010.md` | 10 | 2 |
 | `docs/zh/discoveries/items/DISC-0011.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0012.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0013.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0014.md` | 20 | 4 |
-| `docs/zh/discoveries/items/DISC-0015.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0014.md` | 19 | 4 |
+| `docs/zh/discoveries/items/DISC-0015.md` | 9 | 2 |
 | `docs/zh/discoveries/items/DISC-0016.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0017.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0018.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0019.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0020.md` | 11 | 2 |
+| `docs/zh/discoveries/items/DISC-0019.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0020.md` | 10 | 2 |
 | `docs/zh/discoveries/items/DISC-0021.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0022.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0023.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0024.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0025.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0024.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0025.md` | 9 | 2 |
 | `docs/zh/discoveries/items/DISC-0026.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0027.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0028.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0029.md` | 16 | 3 |
-| `docs/zh/discoveries/items/DISC-0030.md` | 11 | 2 |
+| `docs/zh/discoveries/items/DISC-0029.md` | 15 | 3 |
+| `docs/zh/discoveries/items/DISC-0030.md` | 10 | 2 |
 | `docs/zh/discoveries/items/DISC-0031.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0032.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0033.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0034.md` | 10 | 2 |
-| `docs/zh/discoveries/items/DISC-0035.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0034.md` | 9 | 2 |
+| `docs/zh/discoveries/items/DISC-0035.md` | 9 | 2 |
 | `docs/zh/discoveries/items/DISC-0036.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0037.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0038.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0039.md` | 16 | 3 |
-| `docs/zh/discoveries/items/DISC-0040.md` | 11 | 2 |
+| `docs/zh/discoveries/items/DISC-0039.md` | 15 | 3 |
+| `docs/zh/discoveries/items/DISC-0040.md` | 10 | 2 |
 | `docs/zh/discoveries/items/DISC-0041.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0042.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0043.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0043.md` | 9 | 2 |
 | `docs/zh/discoveries/items/DISC-0044.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0045.md` | 10 | 2 |
 | `docs/zh/discoveries/items/DISC-0046.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0047.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0048.md` | 11 | 2 |
+| `docs/zh/discoveries/items/DISC-0047.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0048.md` | 10 | 2 |
 | `docs/zh/discoveries/items/DISC-0049.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0050.md` | 10 | 2 |
 | `docs/zh/discoveries/items/DISC-0051.md` | 2 | 1 |
-| `docs/zh/discoveries/items/DISC-0052.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0053.md` | 11 | 2 |
+| `docs/zh/discoveries/items/DISC-0052.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0053.md` | 10 | 2 |
 | `docs/zh/discoveries/items/DISC-0054.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0055.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0056.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0057.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0058.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0057.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0058.md` | 9 | 2 |
 | `docs/zh/discoveries/items/DISC-0059.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0060.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0061.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0062.md` | 10 | 2 |
-| `docs/zh/discoveries/items/DISC-0063.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0062.md` | 9 | 2 |
+| `docs/zh/discoveries/items/DISC-0063.md` | 9 | 2 |
 | `docs/zh/discoveries/items/DISC-0064.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0065.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0066.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0067.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0068.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0067.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0068.md` | 9 | 2 |
 | `docs/zh/discoveries/items/DISC-0069.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0070.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0071.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0072.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0073.md` | 11 | 2 |
+| `docs/zh/discoveries/items/DISC-0072.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0073.md` | 10 | 2 |
 | `docs/zh/discoveries/items/DISC-0074.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0075.md` | 11 | 2 |
 | `docs/zh/discoveries/items/DISC-0076.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0077.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0078.md` | 11 | 2 |
+| `docs/zh/discoveries/items/DISC-0077.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0078.md` | 10 | 2 |
 | `docs/zh/discoveries/items/DISC-0079.md` | 2 | 1 |
 | `docs/zh/discoveries/items/DISC-0080.md` | 2 | 1 |
 | `docs/zh/discoveries/items/DISC-0081.md` | 2 | 1 |
-| `docs/zh/discoveries/items/DISC-0082.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0083.md` | 11 | 2 |
-| `docs/zh/discoveries/items/DISC-0084.md` | 14 | 5 |
+| `docs/zh/discoveries/items/DISC-0082.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0083.md` | 10 | 2 |
+| `docs/zh/discoveries/items/DISC-0084.md` | 12 | 5 |
 | `docs/zh/discoveries/items/DISC-0085.md` | 10 | 3 |
-| `docs/zh/discoveries/items/DISC-0086.md` | 18 | 5 |
-| `docs/zh/discoveries/items/DISC-0087.md` | 26 | 7 |
+| `docs/zh/discoveries/items/DISC-0086.md` | 15 | 5 |
+| `docs/zh/discoveries/items/DISC-0087.md` | 18 | 7 |
 | `docs/zh/discoveries/items/DISC-0088.md` | 7 | 2 |
 | `docs/zh/functions/items/D1.md` | 3 | 1 |
 | `docs/zh/functions/items/D10.md` | 3 | 1 |
