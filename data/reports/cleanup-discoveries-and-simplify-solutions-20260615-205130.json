@@ -1,0 +1,18 @@
+{
+ "task": "cleanup_discoveries_and_simplify_analytic_solutions",
+ "timestamp": "20260615-205130",
+ "old_discoveries_cleaned": true,
+ "discoveries_items_deleted": true,
+ "discoveries_categories_deleted": true,
+ "discoveries_sets_reset": true,
+ "discoveries_index_rewritten_as_placeholder": true,
+ "analytic_solutions_index_simplified": true,
+ "sol_0001_rewritten_from_t20": true,
+ "t20_source": "docs/zh/functions/items/T20.md",
+ "functions_md_modified": false,
+ "cases_md_modified": false,
+ "predictions_modified": false,
+ "answers_modified": false,
+ "quality_controls_modified": false,
+ "forbidden_files_modified": false
+}
