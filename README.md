@@ -1,6 +1,7 @@
 # When Systems Catch Fire / 点火
 
 一个人类在好奇心的驱动下，借助 AI 做出的发现。 
+
 A discovery made by a human being, driven by curiosity and aided by AI.
 
 ## 入口 / Entrance
