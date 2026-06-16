@@ -1,0 +1,43 @@
+{
+ "operation": "visible_core_tables_main_merge",
+ "timestamp": "2026-06-17T03:03:00+08:00",
+ "main_before": "5bfc55cdd4a71f9920ec2af8a4e0678cfa11951c",
+ "main_after": "916fea00aed6996dbdd3b6dbd8588e7f0f995b4d",
+ "merge_commit": "916fea00aed6996dbdd3b6dbd8588e7f0f995b4d",
+ "branch": "review/update-visible-core-tables-20260617-0256",
+ "merge_strategy": "no-ff",
+ "force_push_used": false,
+ "readme_visible": {
+  "functions": "D515 / D476-D515",
+  "cases": "C-0654 / C-0595-C-0654",
+  "discovery_projection_set": 55,
+  "prediction_projection_set": 31,
+  "new_answer_projection_set": 30,
+  "analytic_solution_projection_set": 1
+ },
+ "safety": {
+  "no_new_function_ids": true,
+  "no_new_case_ids": true,
+  "no_scholarly_search_restored": true,
+  "no_exclusive_claim": true,
+  "no_novelty_passed": true,
+  "secrets_detected": false,
+  "no_content_reprocessing": true,
+  "no_force_push": true
+ },
+ "files_updated": [
+  "README.md",
+  "FUNCTIONS.md",
+  "CASES.md",
+  "DISCOVERIES.md",
+  "PREDICTIONS.md",
+  "ANSWERS.md",
+  "ANALYTIC_SOLUTIONS.md",
+  "DISCOVERY_PROJECTION_SETS.md",
+  "data/projection-sets/discovery-projection-sets.md",
+  "data/reports/visible-core-tables-update.md",
+  "data/reports/visible-core-tables-update.json",
+  "data/reports/visible-core-tables-main-merge.md",
+  "data/reports/visible-core-tables-main-merge.json"
+ ]
+}
