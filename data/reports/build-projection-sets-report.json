@@ -22,7 +22,7 @@
     "links_required_for_found": true,
     "exclusive_claim_used": false,
     "all_not_found_statuses_have_query_logs": true,
-    "note": "T20 (解析解) 和 D307 (σ_opt微观起源函数) 已完成真实逐条学术搜索。其余102个函数标记为search_pending，待后续批次执行。"
+    "note": "T20 (解析解) 和 D307 (σ_opt微观起源函数) 已完成真实逐条学术搜索。其余函数标记为search_pending，待后续批次执行。"
   },
   "analytic_solution": {
     "analytic_solution_count": 1,
