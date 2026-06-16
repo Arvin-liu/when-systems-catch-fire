@@ -11,7 +11,8 @@
 | 字段 | 值 |
 |--------|-------|
 | main_before | `529eff7eb59f2420b12c225b9c329069c99c5578` |
-| main_after | `be1fc8f867d01f776368f788adc1a8c6dab2ac94` |
+| final_main_head_after_report | `7a5deb188e51ca961a2a03e0aa56be3c60925e9b` |
+| main_after (merge) | `be1fc8f867d01f776368f788adc1a8c6dab2ac94` |
 | review_branch | `review/projection-sets-only-20260617-0227` |
 | review_branch_head | `53df8e45b30ffd48b319559cd45277c67084820f` |
 | force_push_used | false |
