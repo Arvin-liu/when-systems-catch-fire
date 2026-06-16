@@ -20851,3 +20851,1692 @@ English: Rule-based English rendering pending human review.
 - 暂无明确关联案例 / No explicit related cases yet.
 
 </details>
+
+
+<a id="function-range-new"></a>
+<details open>
+<summary>新增函数（D476–D515 / 40条·空间/退出权/宇宙域）</summary>
+
+> 来源：正反交叉自举复核（2026-06-16）| 方法：J⁺/J⁻ 核验 | 状态：全部 converged
+
+### [D476｜基础空间函数](#)
+
+**函数内容 / Function Content**
+中文：Ω = {x | C₁(x) ∧ C₂(x) ∧ ... ∧ Cₙ(x)}
+English: Ω = {x | C₁(x) ∧ C₂(x) ∧ ... ∧ Cₙ(x)}
+
+**说明 / Explanation**
+中文：该函数通过 Ω = {x | C₁(x) ∧ C₂(x) ∧ ... ∧ Cₙ(x)} 描述 基础空间函数。所有约束同时满足时形成可能性空间；约束不是单纯限制，而是形成空间的条件。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D476}`
+- 类型 / Type: 空间函数
+- 定义域 / Domain: `X_{D476}`
+- 值域 / Codomain: `Y_{D476}`
+- 数学表达 / Expression: `F_{D476}(x) := Ω = {x | C₁(x) ∧ C₂(x) ∧ ... ∧ Cₙ(x)}`
+- 有效条件 / Validity: `J_n^+(F_{D476})=1 ∧ J_n^-(F_{D476})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D476`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D476} and codomain Y_{D476}.
+  - 2. Normalize the source expression as F_{D476}: X_{D476}->Y_{D476}.
+  - 3. Accept iff J_n^+(F_{D476})=1 and J_n^-(F_{D476})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D476})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D476})=0`
+- 收敛判据 / Convergence: `Converged(F_{D476}) ⇔ ΔF_{D476}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0611~C-0620（空间函数案例群）
+
+---
+
+### [D477｜空间有界性函数](#)
+
+**函数内容 / Function Content**
+中文：Ω_min ≤ |Ω| ≤ Ω_max
+English: Ω_min ≤ |Ω| ≤ Ω_max
+
+**说明 / Explanation**
+中文：该函数通过 Ω_min ≤ |Ω| ≤ Ω_max 描述 空间有界性函数。任何可操作空间都有下界与上界。无选择或过度开放都会导致有效退出权下降。需与既有 Ω_min 符号归一化。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D477}`
+- 类型 / Type: 空间函数
+- 定义域 / Domain: `X_{D477}`
+- 值域 / Codomain: `Y_{D477}`
+- 数学表达 / Expression: `F_{D477}(x) := Ω_min ≤ |Ω| ≤ Ω_max`
+- 有效条件 / Validity: `J_n^+(F_{D477})=1 ∧ J_n^-(F_{D477})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D477`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D477} and codomain Y_{D477}.
+  - 2. Normalize the source expression as F_{D477}: X_{D477}->Y_{D477}.
+  - 3. Accept iff J_n^+(F_{D477})=1 and J_n^-(F_{D477})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D477})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D477})=0`
+- 收敛判据 / Convergence: `Converged(F_{D477}) ⇔ ΔF_{D477}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0611~C-0620（空间函数案例群）
+
+---
+
+### [D478｜空间竞争性函数](#)
+
+**函数内容 / Function Content**
+中文：Σᵢ |Ωᵢ| ≤ Ω_total
+English: Σᵢ |Ωᵢ| ≤ Ω_total
+
+**说明 / Explanation**
+中文：该函数通过 Σᵢ |Ωᵢ| ≤ Ω_total 描述 空间竞争性函数。多个子空间争夺同一总空间，扩张一个子空间会压缩其他子空间。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D478}`
+- 类型 / Type: 空间函数
+- 定义域 / Domain: `X_{D478}`
+- 值域 / Codomain: `Y_{D478}`
+- 数学表达 / Expression: `F_{D478}(x) := Σᵢ |Ωᵢ| ≤ Ω_total`
+- 有效条件 / Validity: `J_n^+(F_{D478})=1 ∧ J_n^-(F_{D478})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D478`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D478} and codomain Y_{D478}.
+  - 2. Normalize the source expression as F_{D478}: X_{D478}->Y_{D478}.
+  - 3. Accept iff J_n^+(F_{D478})=1 and J_n^-(F_{D478})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D478})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D478})=0`
+- 收敛判据 / Convergence: `Converged(F_{D478}) ⇔ ΔF_{D478}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0611~C-0620（空间函数案例群）
+
+---
+
+### [D479｜空间耦合函数](#)
+
+**函数内容 / Function Content**
+中文：Ω₁ = f(Ω₂, Ω₃, ..., Ωₙ)
+English: Ω₁ = f(Ω₂, Ω₃, ..., Ωₙ)
+
+**说明 / Explanation**
+中文：该函数通过 Ω₁ = f(Ω₂, Ω₃, ..., Ωₙ) 描述 空间耦合函数。一个空间的规模与可达性由其他空间共同决定，空间之间不是彼此独立。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D479}`
+- 类型 / Type: 空间函数
+- 定义域 / Domain: `X_{D479}`
+- 值域 / Codomain: `Y_{D479}`
+- 数学表达 / Expression: `F_{D479}(x) := Ω₁ = f(Ω₂, Ω₃, ..., Ωₙ)`
+- 有效条件 / Validity: `J_n^+(F_{D479})=1 ∧ J_n^-(F_{D479})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D479`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D479} and codomain Y_{D479}.
+  - 2. Normalize the source expression as F_{D479}: X_{D479}->Y_{D479}.
+  - 3. Accept iff J_n^+(F_{D479})=1 and J_n^-(F_{D479})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D479})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D479})=0`
+- 收敛判据 / Convergence: `Converged(F_{D479}) ⇔ ΔF_{D479}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0611~C-0620（空间函数案例群）
+
+---
+
+### [D480｜空间动态性函数](#)
+
+**函数内容 / Function Content**
+中文：Ω(t) = {x | C₁(x,t) ∧ C₂(x,t) ∧ ... ∧ Cₙ(x,t)}
+English: Ω(t) = {x | C₁(x,t) ∧ C₂(x,t) ∧ ... ∧ Cₙ(x,t)}
+
+**说明 / Explanation**
+中文：该函数通过 Ω(t) = {x | C₁(x,t) ∧ C₂(x,t) ∧ ... ∧ Cₙ(x,t)} 描述 空间动态性函数。空间随时间、约束与环境改变而变化。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D480}`
+- 类型 / Type: 空间函数
+- 定义域 / Domain: `X_{D480}`
+- 值域 / Codomain: `Y_{D480}`
+- 数学表达 / Expression: `F_{D480}(x) := Ω(t) = {x | C₁(x,t) ∧ C₂(x,t) ∧ ... ∧ Cₙ(x,t)}`
+- 有效条件 / Validity: `J_n^+(F_{D480})=1 ∧ J_n^-(F_{D480})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D480`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D480} and codomain Y_{D480}.
+  - 2. Normalize the source expression as F_{D480}: X_{D480}->Y_{D480}.
+  - 3. Accept iff J_n^+(F_{D480})=1 and J_n^-(F_{D480})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D480})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D480})=0`
+- 收敛判据 / Convergence: `Converged(F_{D480}) ⇔ ΔF_{D480}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0611~C-0620（空间函数案例群）
+
+---
+
+### [D481｜P_sustain空间互补函数](#)
+
+**函数内容 / Function Content**
+中文：P_sustain(Ω) = 1 - P_exit(Ω)
+English: P_sustain(Ω) = 1 - P_exit(Ω)
+
+**说明 / Explanation**
+中文：该函数通过 P_sustain(Ω) = 1 - P_exit(Ω) 描述 P_sustain空间互补函数。留存概率是退出概率的互补量；用于把退出权与持续性放到同一空间框架中。需与既有 P_sustain 符号归一化。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D481}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D481}`
+- 值域 / Codomain: `Y_{D481}`
+- 数学表达 / Expression: `F_{D481}(x) := P_sustain(Ω) = 1 - P_exit(Ω)`
+- 有效条件 / Validity: `J_n^+(F_{D481})=1 ∧ J_n^-(F_{D481})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D481`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D481} and codomain Y_{D481}.
+  - 2. Normalize the source expression as F_{D481}: X_{D481}->Y_{D481}.
+  - 3. Accept iff J_n^+(F_{D481})=1 and J_n^-(F_{D481})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D481})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D481})=0`
+- 收敛判据 / Convergence: `Converged(F_{D481}) ⇔ ΔF_{D481}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D482｜退出权序贯动力学函数](#)
+
+**函数内容 / Function Content**
+中文：dP_exit/dt = Σᵢ (∂P_exit/∂xᵢ × dxᵢ/dt)
+English: dP_exit/dt = Σᵢ (∂P_exit/∂xᵢ × dxᵢ/dt)
+
+**说明 / Explanation**
+中文：该函数通过 dP_exit/dt = Σᵢ (∂P_exit/∂xᵢ × dxᵢ/dt) 描述 退出权序贯动力学函数。退出权不是静态属性，而是由多个变量沿时间共同驱动的序贯变化。对话记录推导来源：为什么是我发现——P_track↑因子。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D482}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D482}`
+- 值域 / Codomain: `Y_{D482}`
+- 数学表达 / Expression: `F_{D482}(x) := dP_exit/dt = Σᵢ (∂P_exit/∂xᵢ × dxᵢ/dt)`
+- 有效条件 / Validity: `J_n^+(F_{D482})=1 ∧ J_n^-(F_{D482})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D482`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D482} and codomain Y_{D482}.
+  - 2. Normalize the source expression as F_{D482}: X_{D482}->Y_{D482}.
+  - 3. Accept iff J_n^+(F_{D482})=1 and J_n^-(F_{D482})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D482})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D482})=0`
+- 收敛判据 / Convergence: `Converged(F_{D482}) ⇔ ΔF_{D482}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D483｜认知最大可估空间函数](#)
+
+**函数内容 / Function Content**
+中文：Ω_cognitive_max = {x | E[r](x) 和 Var(r)(x) 可准确估计}
+English: Ω_cognitive_max = {x | E[r](x) 和 Var(r)(x) 可准确估计}
+
+**说明 / Explanation**
+中文：该函数通过 Ω_cognitive_max = {x | E[r](x) 和 Var(r)(x) 可准确估计} 描述 认知最大可估空间函数。认知空间上界由个体能否估计收益期望和风险方差决定。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D483}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D483}`
+- 值域 / Codomain: `Y_{D483}`
+- 数学表达 / Expression: `F_{D483}(x) := Ω_cognitive_max = {x | E[r](x) 和 Var(r)(x) 可准确估计}`
+- 有效条件 / Validity: `J_n^+(F_{D483})=1 ∧ J_n^-(F_{D483})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D483`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D483} and codomain Y_{D483}.
+  - 2. Normalize the source expression as F_{D483}: X_{D483}->Y_{D483}.
+  - 3. Accept iff J_n^+(F_{D483})=1 and J_n^-(F_{D483})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D483})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D483})=0`
+- 收敛判据 / Convergence: `Converged(F_{D483}) ⇔ ΔF_{D483}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D484｜退出权自举激活函数](#)
+
+**函数内容 / Function Content**
+中文：B_active = P_exit × σ(Δv) > θ_boot
+English: B_active = P_exit × σ(Δv) > θ_boot
+
+**说明 / Explanation**
+中文：该函数通过 B_active = P_exit × σ(Δv) > θ_boot 描述 退出权自举激活函数。退出权与价值差异共同超过阈值时自举被激活。需与既有 B_active 符号归一化。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D484}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D484}`
+- 值域 / Codomain: `Y_{D484}`
+- 数学表达 / Expression: `F_{D484}(x) := B_active = P_exit × σ(Δv) > θ_boot`
+- 有效条件 / Validity: `J_n^+(F_{D484})=1 ∧ J_n^-(F_{D484})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D484`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D484} and codomain Y_{D484}.
+  - 2. Normalize the source expression as F_{D484}: X_{D484}->Y_{D484}.
+  - 3. Accept iff J_n^+(F_{D484})=1 and J_n^-(F_{D484})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D484})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D484})=0`
+- 收敛判据 / Convergence: `Converged(F_{D484}) ⇔ ΔF_{D484}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D485｜退出权相变级联函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit_phase(ε_aware) = {5个相变点}
+English: P_exit_phase(ε_aware) = {5个相变点}
+
+**说明 / Explanation**
+中文：该函数通过 P_exit_phase(ε_aware) = {5个相变点} 描述 退出权相变级联函数。退出权随 ε_aware 的觉察安装出现级联相变。与 D85 相变级联关联。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D485}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D485}`
+- 值域 / Codomain: `Y_{D485}`
+- 数学表达 / Expression: `F_{D485}(x) := P_exit_phase(ε_aware) = {5个相变点}`
+- 有效条件 / Validity: `J_n^+(F_{D485})=1 ∧ J_n^-(F_{D485})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D485`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D485} and codomain Y_{D485}.
+  - 2. Normalize the source expression as F_{D485}: X_{D485}->Y_{D485}.
+  - 3. Accept iff J_n^+(F_{D485})=1 and J_n^-(F_{D485})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D485})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D485})=0`
+- 收敛判据 / Convergence: `Converged(F_{D485}) ⇔ ΔF_{D485}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D486｜退出权净收益函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit(Ω) = R(Ω) - C(Ω)
+English: P_exit(Ω) = R(Ω) - C(Ω)
+
+**说明 / Explanation**
+中文：该函数通过 P_exit(Ω) = R(Ω) - C(Ω) 描述 退出权净收益函数。退出权可写成空间收益与空间成本之差。A9空间化。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D486}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D486}`
+- 值域 / Codomain: `Y_{D486}`
+- 数学表达 / Expression: `F_{D486}(x) := P_exit(Ω) = R(Ω) - C(Ω)`
+- 有效条件 / Validity: `J_n^+(F_{D486})=1 ∧ J_n^-(F_{D486})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D486`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D486} and codomain Y_{D486}.
+  - 2. Normalize the source expression as F_{D486}: X_{D486}->Y_{D486}.
+  - 3. Accept iff J_n^+(F_{D486})=1 and J_n^-(F_{D486})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D486})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D486})=0`
+- 收敛判据 / Convergence: `Converged(F_{D486}) ⇔ ΔF_{D486}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D487｜选择空间上下界函数](#)
+
+**函数内容 / Function Content**
+中文：Ω_min = 2, Ω_max = C × T
+English: Ω_min = 2, Ω_max = C × T
+
+**说明 / Explanation**
+中文：该函数通过 Ω_min = 2, Ω_max = C × T 描述 选择空间上下界函数。可用选择空间至少需要两个可区分选项，上界受认知能力与可用时间乘积限制。需与既有 Ω_min/Ω_max 符号归一化。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D487}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D487}`
+- 值域 / Codomain: `Y_{D487}`
+- 数学表达 / Expression: `F_{D487}(x) := Ω_min = 2, Ω_max = C × T`
+- 有效条件 / Validity: `J_n^+(F_{D487})=1 ∧ J_n^-(F_{D487})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D487`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D487} and codomain Y_{D487}.
+  - 2. Normalize the source expression as F_{D487}: X_{D487}->Y_{D487}.
+  - 3. Accept iff J_n^+(F_{D487})=1 and J_n^-(F_{D487})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D487})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D487})=0`
+- 收敛判据 / Convergence: `Converged(F_{D487}) ⇔ ΔF_{D487}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D488｜认知能力门控函数](#)
+
+**函数内容 / Function Content**
+中文：C = f(η_gate, H_homogeneity)
+English: C = f(η_gate, H_homogeneity)
+
+**说明 / Explanation**
+中文：该函数通过 C = f(η_gate, H_homogeneity) 描述 认知能力门控函数。认知能力由信息门效率与同质化遮蔽共同决定。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D488}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D488}`
+- 值域 / Codomain: `Y_{D488}`
+- 数学表达 / Expression: `F_{D488}(x) := C = f(η_gate, H_homogeneity)`
+- 有效条件 / Validity: `J_n^+(F_{D488})=1 ∧ J_n^-(F_{D488})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D488`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D488} and codomain Y_{D488}.
+  - 2. Normalize the source expression as F_{D488}: X_{D488}->Y_{D488}.
+  - 3. Accept iff J_n^+(F_{D488})=1 and J_n^-(F_{D488})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D488})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D488})=0`
+- 收敛判据 / Convergence: `Converged(F_{D488}) ⇔ ΔF_{D488}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D489｜退出成本-遮蔽-时间三角约束函数](#)
+
+**函数内容 / Function Content**
+中文：C_exit ↔ H ↔ T
+English: C_exit ↔ H ↔ T
+
+**说明 / Explanation**
+中文：该函数通过 C_exit ↔ H ↔ T 描述 退出成本-遮蔽-时间三角约束函数。退出成本、遮蔽强度与可用时间形成相互约束的三角结构。对话记录推导来源：为什么是我发现——C_exit↓因子。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D489}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D489}`
+- 值域 / Codomain: `Y_{D489}`
+- 数学表达 / Expression: `F_{D489}(x) := C_exit ↔ H ↔ T`
+- 有效条件 / Validity: `J_n^+(F_{D489})=1 ∧ J_n^-(F_{D489})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D489`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D489} and codomain Y_{D489}.
+  - 2. Normalize the source expression as F_{D489}: X_{D489}->Y_{D489}.
+  - 3. Accept iff J_n^+(F_{D489})=1 and J_n^-(F_{D489})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D489})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D489})=0`
+- 收敛判据 / Convergence: `Converged(F_{D489}) ⇔ ΔF_{D489}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D490｜退出权自举元函数投影](#)
+
+**函数内容 / Function Content**
+中文：M_boot = f(P_exit, σ(Δv), d(ΔK)/dt)
+English: M_boot = f(P_exit, σ(Δv), d(ΔK)/dt)
+
+**说明 / Explanation**
+中文：该函数通过 M_boot = f(P_exit, σ(Δv), d(ΔK)/dt) 描述 退出权自举元函数投影。自举元函数在退出权域的投影。不替代 MF-0000。对话记录来源：为什么是我发现——三因子整合。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D490}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D490}`
+- 值域 / Codomain: `Y_{D490}`
+- 数学表达 / Expression: `F_{D490}(x) := M_boot = f(P_exit, σ(Δv), d(ΔK)/dt)`
+- 有效条件 / Validity: `J_n^+(F_{D490})=1 ∧ J_n^-(F_{D490})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D490`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D490} and codomain Y_{D490}.
+  - 2. Normalize the source expression as F_{D490}: X_{D490}->Y_{D490}.
+  - 3. Accept iff J_n^+(F_{D490})=1 and J_n^-(F_{D490})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D490})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D490})=0`
+- 收敛判据 / Convergence: `Converged(F_{D490}) ⇔ ΔF_{D490}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D491｜退出权脆弱性瓶颈函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit_vulnerable = min(Ω, T, C, σ)
+English: P_exit_vulnerable = min(Ω, T, C, σ)
+
+**说明 / Explanation**
+中文：该函数通过 P_exit_vulnerable = min(Ω, T, C, σ) 描述 退出权脆弱性瓶颈函数。退出权由空间、时间、认知、分布中最弱项决定。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D491}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D491}`
+- 值域 / Codomain: `Y_{D491}`
+- 数学表达 / Expression: `F_{D491}(x) := P_exit_vulnerable = min(Ω, T, C, σ)`
+- 有效条件 / Validity: `J_n^+(F_{D491})=1 ∧ J_n^-(F_{D491})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D491`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D491} and codomain Y_{D491}.
+  - 2. Normalize the source expression as F_{D491}: X_{D491}->Y_{D491}.
+  - 3. Accept iff J_n^+(F_{D491})=1 and J_n^-(F_{D491})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D491})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D491})=0`
+- 收敛判据 / Convergence: `Converged(F_{D491}) ⇔ ΔF_{D491}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D492｜最优空间规模函数](#)
+
+**函数内容 / Function Content**
+中文：Ω* = [1/(2α)]^(1/(2α-1))
+English: Ω* = [1/(2α)]^(1/(2α-1))
+
+**说明 / Explanation**
+中文：该函数通过 Ω* = [1/(2α)]^(1/(2α-1)) 描述 最优空间规模函数。在参数 α 下存在使退出权最优的空间规模。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D492}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D492}`
+- 值域 / Codomain: `Y_{D492}`
+- 数学表达 / Expression: `F_{D492}(x) := Ω* = [1/(2α)]^(1/(2α-1))`
+- 有效条件 / Validity: `J_n^+(F_{D492})=1 ∧ J_n^-(F_{D492})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D492`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D492} and codomain Y_{D492}.
+  - 2. Normalize the source expression as F_{D492}: X_{D492}->Y_{D492}.
+  - 3. Accept iff J_n^+(F_{D492})=1 and J_n^-(F_{D492})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D492})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D492})=0`
+- 收敛判据 / Convergence: `Converged(F_{D492}) ⇔ ΔF_{D492}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D493｜不可逆空间函数](#)
+
+**函数内容 / Function Content**
+中文：Ω_irreversible = {Ω | P_exit(Ω)=0 且无法恢复}
+English: Ω_irreversible = {Ω | P_exit(Ω)=0 且无法恢复}
+
+**说明 / Explanation**
+中文：该函数通过 Ω_irreversible = {Ω | P_exit(Ω)=0 且无法恢复} 描述 不可逆空间函数。当退出权归零且恢复路径关闭时，空间进入不可逆区域。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D493}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D493}`
+- 值域 / Codomain: `Y_{D493}`
+- 数学表达 / Expression: `F_{D493}(x) := Ω_irreversible = {Ω | P_exit(Ω)=0 且无法恢复}`
+- 有效条件 / Validity: `J_n^+(F_{D493})=1 ∧ J_n^-(F_{D493})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D493`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D493} and codomain Y_{D493}.
+  - 2. Normalize the source expression as F_{D493}: X_{D493}->Y_{D493}.
+  - 3. Accept iff J_n^+(F_{D493})=1 and J_n^-(F_{D493})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D493})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D493})=0`
+- 收敛判据 / Convergence: `Converged(F_{D493}) ⇔ ΔF_{D493}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D494｜退出权-Φ极值同构函数](#)
+
+**函数内容 / Function Content**
+中文：dP_exit/dΩ = 0 ↔ dΦ/dμ = 0
+English: dP_exit/dΩ = 0 ↔ dΦ/dμ = 0
+
+**说明 / Explanation**
+中文：该函数通过 dP_exit/dΩ = 0 ↔ dΦ/dμ = 0 描述 退出权-Φ极值同构函数。退出权空间极值点与 Φ 函数极小点同构。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D494}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D494}`
+- 值域 / Codomain: `Y_{D494}`
+- 数学表达 / Expression: `F_{D494}(x) := dP_exit/dΩ = 0 ↔ dΦ/dμ = 0`
+- 有效条件 / Validity: `J_n^+(F_{D494})=1 ∧ J_n^-(F_{D494})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D494`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D494} and codomain Y_{D494}.
+  - 2. Normalize the source expression as F_{D494}: X_{D494}->Y_{D494}.
+  - 3. Accept iff J_n^+(F_{D494})=1 and J_n^-(F_{D494})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D494})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D494})=0`
+- 收敛判据 / Convergence: `Converged(F_{D494}) ⇔ ΔF_{D494}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D495｜空间锁死维度计数函数](#)
+
+**函数内容 / Function Content**
+中文：n_lock(Ω) = Σᵢ step(C_exit(Ωᵢ) > θ_C(Ωᵢ))
+English: n_lock(Ω) = Σᵢ step(C_exit(Ωᵢ) > θ_C(Ωᵢ))
+
+**说明 / Explanation**
+中文：该函数通过 n_lock(Ω) = Σᵢ step(C_exit(Ωᵢ) > θ_C(Ωᵢ)) 描述 空间锁死维度计数函数。A5/n_lock空间化。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D495}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D495}`
+- 值域 / Codomain: `Y_{D495}`
+- 数学表达 / Expression: `F_{D495}(x) := n_lock(Ω) = Σᵢ step(C_exit(Ωᵢ) > θ_C(Ωᵢ))`
+- 有效条件 / Validity: `J_n^+(F_{D495})=1 ∧ J_n^-(F_{D495})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D495`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D495} and codomain Y_{D495}.
+  - 2. Normalize the source expression as F_{D495}: X_{D495}->Y_{D495}.
+  - 3. Accept iff J_n^+(F_{D495})=1 and J_n^-(F_{D495})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D495})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D495})=0`
+- 收敛判据 / Convergence: `Converged(F_{D495}) ⇔ ΔF_{D495}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D496｜姿态-遮蔽方差函数](#)
+
+**函数内容 / Function Content**
+中文：σ = f(Posture_deg, H)
+English: σ = f(Posture_deg, H)
+
+**说明 / Explanation**
+中文：该函数通过 σ = f(Posture_deg, H) 描述 姿态-遮蔽方差函数。提议者姿态与遮蔽强度改变选项分布方差。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D496}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D496}`
+- 值域 / Codomain: `Y_{D496}`
+- 数学表达 / Expression: `F_{D496}(x) := σ = f(Posture_deg, H)`
+- 有效条件 / Validity: `J_n^+(F_{D496})=1 ∧ J_n^-(F_{D496})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D496`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D496} and codomain Y_{D496}.
+  - 2. Normalize the source expression as F_{D496}: X_{D496}->Y_{D496}.
+  - 3. Accept iff J_n^+(F_{D496})=1 and J_n^-(F_{D496})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D496})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D496})=0`
+- 收敛判据 / Convergence: `Converged(F_{D496}) ⇔ ΔF_{D496}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D497｜退出权边界相变函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit_boundary_phase = f(δ,1/ln,exp[-ln²],5个相变点)
+English: P_exit_boundary_phase = f(δ,1/ln,exp[-ln²],5个相变点)
+
+**说明 / Explanation**
+中文：该函数通过 P_exit_boundary_phase = f(δ,1/ln,exp[-ln²],5个相变点) 描述 退出权边界相变函数。退出权边界存在多种边界形态。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D497}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D497}`
+- 值域 / Codomain: `Y_{D497}`
+- 数学表达 / Expression: `F_{D497}(x) := P_exit_boundary_phase = f(δ,1/ln,exp[-ln²],5个相变点)`
+- 有效条件 / Validity: `J_n^+(F_{D497})=1 ∧ J_n^-(F_{D497})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D497`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D497} and codomain Y_{D497}.
+  - 2. Normalize the source expression as F_{D497}: X_{D497}->Y_{D497}.
+  - 3. Accept iff J_n^+(F_{D497})=1 and J_n^-(F_{D497})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D497})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D497})=0`
+- 收敛判据 / Convergence: `Converged(F_{D497}) ⇔ ΔF_{D497}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D498｜退出权统一衰减率函数](#)
+
+**函数内容 / Function Content**
+中文：Γ_Pexit = d_C(Ω)/λ + κ_env(Ω)·H(Ω)
+English: Γ_Pexit = d_C(Ω)/λ + κ_env(Ω)·H(Ω)
+
+**说明 / Explanation**
+中文：该函数通过 Γ_Pexit = d_C(Ω)/λ + κ_env(Ω)·H(Ω) 描述 退出权统一衰减率函数。退出权衰减由内生成本距离与环境遮蔽共同决定。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D498}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D498}`
+- 值域 / Codomain: `Y_{D498}`
+- 数学表达 / Expression: `F_{D498}(x) := Γ_Pexit = d_C(Ω)/λ + κ_env(Ω)·H(Ω)`
+- 有效条件 / Validity: `J_n^+(F_{D498})=1 ∧ J_n^-(F_{D498})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D498`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D498} and codomain Y_{D498}.
+  - 2. Normalize the source expression as F_{D498}: X_{D498}->Y_{D498}.
+  - 3. Accept iff J_n^+(F_{D498})=1 and J_n^-(F_{D498})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D498})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D498})=0`
+- 收敛判据 / Convergence: `Converged(F_{D498}) ⇔ ΔF_{D498}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D499｜退出权时间衰减函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit(t)=P_exit(Ω,T,C,σ) × e^(-Γ_unified×t)
+English: P_exit(t)=P_exit(Ω,T,C,σ) × e^(-Γ_unified×t)
+
+**说明 / Explanation**
+中文：该函数通过 P_exit(t)=P_exit(Ω,T,C,σ) × e^(-Γ_unified×t) 描述 退出权时间衰减函数。退出权随统一衰减率指数下降。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D499}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D499}`
+- 值域 / Codomain: `Y_{D499}`
+- 数学表达 / Expression: `F_{D499}(x) := P_exit(t)=P_exit(Ω,T,C,σ) × e^(-Γ_unified×t)`
+- 有效条件 / Validity: `J_n^+(F_{D499})=1 ∧ J_n^-(F_{D499})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D499`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D499} and codomain Y_{D499}.
+  - 2. Normalize the source expression as F_{D499}: X_{D499}->Y_{D499}.
+  - 3. Accept iff J_n^+(F_{D499})=1 and J_n^-(F_{D499})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D499})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D499})=0`
+- 收敛判据 / Convergence: `Converged(F_{D499}) ⇔ ΔF_{D499}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D500｜空间集中性函数](#)
+
+**函数内容 / Function Content**
+中文：I_concentration(Ω) = (1 + σ(Ω))/2
+English: I_concentration(Ω) = (1 + σ(Ω))/2
+
+**说明 / Explanation**
+中文：该函数通过 I_concentration(Ω) = (1 + σ(Ω))/2 描述 空间集中性函数。集中性由空间分布方差决定，上升会压缩有效维度。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D500}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D500}`
+- 值域 / Codomain: `Y_{D500}`
+- 数学表达 / Expression: `F_{D500}(x) := I_concentration(Ω) = (1 + σ(Ω))/2`
+- 有效条件 / Validity: `J_n^+(F_{D500})=1 ∧ J_n^-(F_{D500})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D500`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D500} and codomain Y_{D500}.
+  - 2. Normalize the source expression as F_{D500}: X_{D500}->Y_{D500}.
+  - 3. Accept iff J_n^+(F_{D500})=1 and J_n^-(F_{D500})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D500})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D500})=0`
+- 收敛判据 / Convergence: `Converged(F_{D500}) ⇔ ΔF_{D500}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D501｜退出权最大化函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit_max = max[P_exit(Ω,T,C,σ)]
+English: P_exit_max = max[P_exit(Ω,T,C,σ)]
+
+**说明 / Explanation**
+中文：该函数通过 P_exit_max = max[P_exit(Ω,T,C,σ)] 描述 退出权最大化函数。在空间、时间、认知与分布约束下存在退出权最大值。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D501}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D501}`
+- 值域 / Codomain: `Y_{D501}`
+- 数学表达 / Expression: `F_{D501}(x) := P_exit_max = max[P_exit(Ω,T,C,σ)]`
+- 有效条件 / Validity: `J_n^+(F_{D501})=1 ∧ J_n^-(F_{D501})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D501`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D501} and codomain Y_{D501}.
+  - 2. Normalize the source expression as F_{D501}: X_{D501}->Y_{D501}.
+  - 3. Accept iff J_n^+(F_{D501})=1 and J_n^-(F_{D501})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D501})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D501})=0`
+- 收敛判据 / Convergence: `Converged(F_{D501}) ⇔ ΔF_{D501}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D502｜退出权阻抗函数](#)
+
+**函数内容 / Function Content**
+中文：z_Pexit = 1/(1 - P_exit)
+English: z_Pexit = 1/(1 - P_exit)
+
+**说明 / Explanation**
+中文：该函数通过 z_Pexit = 1/(1 - P_exit) 描述 退出权阻抗函数。退出权越接近1，系统迁移阻抗越趋向无穷。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D502}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D502}`
+- 值域 / Codomain: `Y_{D502}`
+- 数学表达 / Expression: `F_{D502}(x) := z_Pexit = 1/(1 - P_exit)`
+- 有效条件 / Validity: `J_n^+(F_{D502})=1 ∧ J_n^-(F_{D502})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D502`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D502} and codomain Y_{D502}.
+  - 2. Normalize the source expression as F_{D502}: X_{D502}->Y_{D502}.
+  - 3. Accept iff J_n^+(F_{D502})=1 and J_n^-(F_{D502})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D502})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D502})=0`
+- 收敛判据 / Convergence: `Converged(F_{D502}) ⇔ ΔF_{D502}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D503｜退出权最弱项瓶颈函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit_bottleneck = min(Ω,T,C,σ)
+English: P_exit_bottleneck = min(Ω,T,C,σ)
+
+**说明 / Explanation**
+中文：该函数通过 P_exit_bottleneck = min(Ω,T,C,σ) 描述 退出权最弱项瓶颈函数。退出权由最小门控项锁定。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D503}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D503}`
+- 值域 / Codomain: `Y_{D503}`
+- 数学表达 / Expression: `F_{D503}(x) := P_exit_bottleneck = min(Ω,T,C,σ)`
+- 有效条件 / Validity: `J_n^+(F_{D503})=1 ∧ J_n^-(F_{D503})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D503`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D503} and codomain Y_{D503}.
+  - 2. Normalize the source expression as F_{D503}: X_{D503}->Y_{D503}.
+  - 3. Accept iff J_n^+(F_{D503})=1 and J_n^-(F_{D503})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D503})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D503})=0`
+- 收敛判据 / Convergence: `Converged(F_{D503}) ⇔ ΔF_{D503}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D504｜退出权自举激活专门函数](#)
+
+**函数内容 / Function Content**
+中文：B_active_Pexit = P_exit × σ(Δv) > θ_boot
+English: B_active_Pexit = P_exit × σ(Δv) > θ_boot
+
+**说明 / Explanation**
+中文：该函数通过 B_active_Pexit = P_exit × σ(Δv) > θ_boot 描述 退出权自举激活专门函数。退出权场景的自举激活专门表达。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D504}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D504}`
+- 值域 / Codomain: `Y_{D504}`
+- 数学表达 / Expression: `F_{D504}(x) := B_active_Pexit = P_exit × σ(Δv) > θ_boot`
+- 有效条件 / Validity: `J_n^+(F_{D504})=1 ∧ J_n^-(F_{D504})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D504`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D504} and codomain Y_{D504}.
+  - 2. Normalize the source expression as F_{D504}: X_{D504}->Y_{D504}.
+  - 3. Accept iff J_n^+(F_{D504})=1 and J_n^-(F_{D504})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D504})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D504})=0`
+- 收敛判据 / Convergence: `Converged(F_{D504}) ⇔ ΔF_{D504}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D505｜空间函数三元投影](#)
+
+**函数内容 / Function Content**
+中文：Space_Function(Ω) = {I(Ω), D_immune(Ω), R(Ω)}
+English: Space_Function(Ω) = {I(Ω), D_immune(Ω), R(Ω)}
+
+**说明 / Explanation**
+中文：该函数通过 Space_Function(Ω) = {I(Ω), D_immune(Ω), R(Ω)} 描述 空间函数三元投影。意识、退化免疫与退出权统一为认知空间三种投影。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D505}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D505}`
+- 值域 / Codomain: `Y_{D505}`
+- 数学表达 / Expression: `F_{D505}(x) := Space_Function(Ω) = {I(Ω), D_immune(Ω), R(Ω)}`
+- 有效条件 / Validity: `J_n^+(F_{D505})=1 ∧ J_n^-(F_{D505})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D505`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D505} and codomain Y_{D505}.
+  - 2. Normalize the source expression as F_{D505}: X_{D505}->Y_{D505}.
+  - 3. Accept iff J_n^+(F_{D505})=1 and J_n^-(F_{D505})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D505})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D505})=0`
+- 收敛判据 / Convergence: `Converged(F_{D505}) ⇔ ΔF_{D505}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D506｜认知空间四层结构函数](#)
+
+**函数内容 / Function Content**
+中文：Ω_total ⊇ Ω_reachable ⊇ Ω_topology ⊇ Ω_boundary
+English: Ω_total ⊇ Ω_reachable ⊇ Ω_topology ⊇ Ω_boundary
+
+**说明 / Explanation**
+中文：该函数通过 Ω_total ⊇ Ω_reachable ⊇ Ω_topology ⊇ Ω_boundary 描述 认知空间四层结构函数。认知空间由四层嵌套构成。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D506}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D506}`
+- 值域 / Codomain: `Y_{D506}`
+- 数学表达 / Expression: `F_{D506}(x) := Ω_total ⊇ Ω_reachable ⊇ Ω_topology ⊇ Ω_boundary`
+- 有效条件 / Validity: `J_n^+(F_{D506})=1 ∧ J_n^-(F_{D506})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D506`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D506} and codomain Y_{D506}.
+  - 2. Normalize the source expression as F_{D506}: X_{D506}->Y_{D506}.
+  - 3. Accept iff J_n^+(F_{D506})=1 and J_n^-(F_{D506})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D506})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D506})=0`
+- 收敛判据 / Convergence: `Converged(F_{D506}) ⇔ ΔF_{D506}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D507｜退出权空间总函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit(Ω)=f(Ω,T,C,σ)
+English: P_exit(Ω)=f(Ω,T,C,σ)
+
+**说明 / Explanation**
+中文：该函数通过 P_exit(Ω)=f(Ω,T,C,σ) 描述 退出权空间总函数。退出权是选择空间、时间、认知能力与选项分布方差的函数。A9空间化扩展。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D507}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D507}`
+- 值域 / Codomain: `Y_{D507}`
+- 数学表达 / Expression: `F_{D507}(x) := P_exit(Ω)=f(Ω,T,C,σ)`
+- 有效条件 / Validity: `J_n^+(F_{D507})=1 ∧ J_n^-(F_{D507})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D507`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D507} and codomain Y_{D507}.
+  - 2. Normalize the source expression as F_{D507}: X_{D507}->Y_{D507}.
+  - 3. Accept iff J_n^+(F_{D507})=1 and J_n^-(F_{D507})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D507})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D507})=0`
+- 收敛判据 / Convergence: `Converged(F_{D507}) ⇔ ΔF_{D507}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D508｜退出权时变空间函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit(t)=f(Ω(t),T(t),C(t),σ(t))
+English: P_exit(t)=f(Ω(t),T(t),C(t),σ(t))
+
+**说明 / Explanation**
+中文：该函数通过 P_exit(t)=f(Ω(t),T(t),C(t),σ(t)) 描述 退出权时变空间函数。退出权四个因子均可随时间变化。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D508}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D508}`
+- 值域 / Codomain: `Y_{D508}`
+- 数学表达 / Expression: `F_{D508}(x) := P_exit(t)=f(Ω(t),T(t),C(t),σ(t))`
+- 有效条件 / Validity: `J_n^+(F_{D508})=1 ∧ J_n^-(F_{D508})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D508`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D508} and codomain Y_{D508}.
+  - 2. Normalize the source expression as F_{D508}: X_{D508}->Y_{D508}.
+  - 3. Accept iff J_n^+(F_{D508})=1 and J_n^-(F_{D508})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D508})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D508})=0`
+- 收敛判据 / Convergence: `Converged(F_{D508}) ⇔ ΔF_{D508}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D509｜退出权共振函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit_resonance = max[P_exit(Ω,T,C,σ)]
+English: P_exit_resonance = max[P_exit(Ω,T,C,σ)]
+
+**说明 / Explanation**
+中文：该函数通过 P_exit_resonance = max[P_exit(Ω,T,C,σ)] 描述 退出权共振函数。当四个因子达到共振时退出权最大化。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D509}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D509}`
+- 值域 / Codomain: `Y_{D509}`
+- 数学表达 / Expression: `F_{D509}(x) := P_exit_resonance = max[P_exit(Ω,T,C,σ)]`
+- 有效条件 / Validity: `J_n^+(F_{D509})=1 ∧ J_n^-(F_{D509})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D509`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D509} and codomain Y_{D509}.
+  - 2. Normalize the source expression as F_{D509}: X_{D509}->Y_{D509}.
+  - 3. Accept iff J_n^+(F_{D509})=1 and J_n^-(F_{D509})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D509})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D509})=0`
+- 收敛判据 / Convergence: `Converged(F_{D509}) ⇔ ΔF_{D509}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D510｜退出权空间衰减函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit_decay(Ω,t) = P_exit(Ω,0) × e^(-λ·t)
+English: P_exit_decay(Ω,t) = P_exit(Ω,0) × e^(-λ·t)
+
+**说明 / Explanation**
+中文：该函数通过 P_exit_decay(Ω,t) = P_exit(Ω,0) × e^(-λ·t) 描述 退出权空间衰减函数。给定空间中的退出权随时间衰减。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D510}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D510}`
+- 值域 / Codomain: `Y_{D510}`
+- 数学表达 / Expression: `F_{D510}(x) := P_exit_decay(Ω,t) = P_exit(Ω,0) × e^(-λ·t)`
+- 有效条件 / Validity: `J_n^+(F_{D510})=1 ∧ J_n^-(F_{D510})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D510`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D510} and codomain Y_{D510}.
+  - 2. Normalize the source expression as F_{D510}: X_{D510}->Y_{D510}.
+  - 3. Accept iff J_n^+(F_{D510})=1 and J_n^-(F_{D510})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D510})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D510})=0`
+- 收敛判据 / Convergence: `Converged(F_{D510}) ⇔ ΔF_{D510}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D511｜退出权归零函数](#)
+
+**函数内容 / Function Content**
+中文：P_exit_zero = step(min(Ω,T,C,σ) - θ_zero)
+English: P_exit_zero = step(min(Ω,T,C,σ) - θ_zero)
+
+**说明 / Explanation**
+中文：该函数通过 P_exit_zero = step(min(Ω,T,C,σ) - θ_zero) 描述 退出权归零函数。当最小因子低于归零阈值时退出权归零。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D511}`
+- 类型 / Type: 退出权空间化
+- 定义域 / Domain: `X_{D511}`
+- 值域 / Codomain: `Y_{D511}`
+- 数学表达 / Expression: `F_{D511}(x) := P_exit_zero = step(min(Ω,T,C,σ) - θ_zero)`
+- 有效条件 / Validity: `J_n^+(F_{D511})=1 ∧ J_n^-(F_{D511})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D511`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D511} and codomain Y_{D511}.
+  - 2. Normalize the source expression as F_{D511}: X_{D511}->Y_{D511}.
+  - 3. Accept iff J_n^+(F_{D511})=1 and J_n^-(F_{D511})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D511})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D511})=0`
+- 收敛判据 / Convergence: `Converged(F_{D511}) ⇔ ΔF_{D511}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0621~C-0651（退出权空间化案例群）
+
+---
+
+### [D512｜宇宙约束空间函数](#)
+
+**函数内容 / Function Content**
+中文：Ω_universe(t) = {x | 所有硬约束 Cᵢ(x,t) 同时满足}
+English: Ω_universe(t) = {x | 所有硬约束 Cᵢ(x,t) 同时满足}
+
+**说明 / Explanation**
+中文：该函数通过 Ω_universe(t) = {x | 所有硬约束 Cᵢ(x,t) 同时满足} 描述 宇宙约束空间函数。宇宙是在硬约束共同满足下形成的局部实现空间。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D512}`
+- 类型 / Type: 宇宙/信息
+- 定义域 / Domain: `X_{D512}`
+- 值域 / Codomain: `Y_{D512}`
+- 数学表达 / Expression: `F_{D512}(x) := Ω_universe(t) = {x | 所有硬约束 Cᵢ(x,t) 同时满足}`
+- 有效条件 / Validity: `J_n^+(F_{D512})=1 ∧ J_n^-(F_{D512})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D512`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D512} and codomain Y_{D512}.
+  - 2. Normalize the source expression as F_{D512}: X_{D512}->Y_{D512}.
+  - 3. Accept iff J_n^+(F_{D512})=1 and J_n^-(F_{D512})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D512})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D512})=0`
+- 收敛判据 / Convergence: `Converged(F_{D512}) ⇔ ΔF_{D512}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0652~C-0654（宇宙/信息案例群）
+
+---
+
+### [D513｜信息可区分性函数](#)
+
+**函数内容 / Function Content**
+中文：I(Ω) = log₂ |{x | 所有硬约束 Cᵢ(x) 同时满足}|
+English: I(Ω) = log₂ |{x | 所有硬约束 Cᵢ(x) 同时满足}|
+
+**说明 / Explanation**
+中文：该函数通过 I(Ω) = log₂ |{x | 所有硬约束 Cᵢ(x) 同时满足}| 描述 信息可区分性函数。信息量 = 约束下可区分状态数的二进制对数。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D513}`
+- 类型 / Type: 宇宙/信息
+- 定义域 / Domain: `X_{D513}`
+- 值域 / Codomain: `Y_{D513}`
+- 数学表达 / Expression: `F_{D513}(x) := I(Ω) = log₂ |{x | 所有硬约束 Cᵢ(x) 同时满足}|`
+- 有效条件 / Validity: `J_n^+(F_{D513})=1 ∧ J_n^-(F_{D513})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D513`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D513} and codomain Y_{D513}.
+  - 2. Normalize the source expression as F_{D513}: X_{D513}->Y_{D513}.
+  - 3. Accept iff J_n^+(F_{D513})=1 and J_n^-(F_{D513})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D513})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D513})=0`
+- 收敛判据 / Convergence: `Converged(F_{D513}) ⇔ ΔF_{D513}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0652~C-0654（宇宙/信息案例群）
+
+---
+
+### [D514｜信息守恒函数](#)
+
+**函数内容 / Function Content**
+中文：|Ω(t)| = constant
+English: |Ω(t)| = constant
+
+**说明 / Explanation**
+中文：该函数通过 |Ω(t)| = constant 描述 信息守恒函数。约束空间意义下的信息守恒。熵增与信息守恒不互斥。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D514}`
+- 类型 / Type: 宇宙/信息
+- 定义域 / Domain: `X_{D514}`
+- 值域 / Codomain: `Y_{D514}`
+- 数学表达 / Expression: `F_{D514}(x) := |Ω(t)| = constant`
+- 有效条件 / Validity: `J_n^+(F_{D514})=1 ∧ J_n^-(F_{D514})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D514`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D514} and codomain Y_{D514}.
+  - 2. Normalize the source expression as F_{D514}: X_{D514}->Y_{D514}.
+  - 3. Accept iff J_n^+(F_{D514})=1 and J_n^-(F_{D514})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D514})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D514})=0`
+- 收敛判据 / Convergence: `Converged(F_{D514}) ⇔ ΔF_{D514}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0652~C-0654（宇宙/信息案例群）
+
+---
+
+### [D515｜宇宙约束边界函数](#)
+
+**函数内容 / Function Content**
+中文：∂Ω_universe = {x | Cᵢ(x) = 边界值}
+English: ∂Ω_universe = {x | Cᵢ(x) = 边界值}
+
+**说明 / Explanation**
+中文：该函数通过 ∂Ω_universe = {x | Cᵢ(x) = 边界值} 描述 宇宙约束边界函数。宇宙边界是硬约束取边界值形成的约束边界。
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `F_{D515}`
+- 类型 / Type: 宇宙/信息
+- 定义域 / Domain: `X_{D515}`
+- 值域 / Codomain: `Y_{D515}`
+- 数学表达 / Expression: `F_{D515}(x) := ∂Ω_universe = {x | Cᵢ(x) = 边界值}`
+- 有效条件 / Validity: `J_n^+(F_{D515})=1 ∧ J_n^-(F_{D515})=0`
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `D515`
+- 推导步骤 / Steps:
+  - 1. Define the local state space X_{D515} and codomain Y_{D515}.
+  - 2. Normalize the source expression as F_{D515}: X_{D515}->Y_{D515}.
+  - 3. Accept iff J_n^+(F_{D515})=1 and J_n^-(F_{D515})=0.
+- 证明义务 / Proof obligations:
+  - `non_empty_math_expression`
+  - `defined_domain_and_codomain`
+  - `forward_reverse_non_contradiction`
+- 正向检查 / Forward check: `J_n^+(F_{D515})=1`
+- 反向检查 / Reverse check: `J_n^-(F_{D515})=0`
+- 收敛判据 / Convergence: `Converged(F_{D515}) ⇔ ΔF_{D515}=∅ ∧ (J_n^+,J_n^-)=(1,0)`
+
+**推导补充 / Derivation Supplement**
+- 推导类型 / Derivation type: `composed_or_bootstrapped_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 过程 / Process: 从新增函数表（正反交叉自举复核版·2026-06-16）复核口径确认。正向通道 J⁺ 经过自举收敛、ΔB 归零确认。反向通道 J⁻ 与 475 版函数表全量比对，无重复。
+
+**关联案例 / Related Cases**
+- C-0652~C-0654（宇宙/信息案例群）
+
+---
+
+</details>

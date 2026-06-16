@@ -21017,3 +21017,1872 @@ English: Rule-based English rendering pending human review.
 - [状态时间重写函数](docs/zh/functions/items/D471.md)
 
 </details>
+
+
+<a id="case-range-new"></a>
+<details open>
+<summary>#595–#654 / 新增60个案例（OrcaRouter/跑步API/空间函数/退出权空间化/宇宙信息）</summary>
+
+> 来源：正反交叉自举复核（2026-06-16）| 方法：J⁺/J⁻ 核验 | 状态：全部 converged
+
+### [#595｜OrcaRouter多模型并行扇出验证](#)
+
+**案例内容 / Case Content**
+中文：OrcaRouter 将请求并行发送给多个模型，再由仲裁器选择更优输出。多模型协同增益来自结构拓扑，而不只来自单模型能力。
+关键发现：多模型协同增益来自结构拓扑
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：多模型协同增益来自结构拓扑
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-595}`
+- 定义域 / Domain: `S_{C-595}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-595}(s_{C-595}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-595}(s_{C-595})>0 ∧ J_n^+(C_{C-595})=1 ∧ J_n^-(C_{C-595})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-595}∈S_{C-595}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-595}>0 and reverse channel does not derive ¬C_{C-595}.
+
+**关联函数 / Related Functions**
+- D66（同质性遮蔽函数 / 并行冗余）；D53（信号最优流速函数 / 仲裁退出权）；P×Q² 框架（平方加速效应）
+
+---
+
+### [#596｜OrcaRouter智能分流机制验证](#)
+
+**案例内容 / Case Content**
+中文：简单请求走低成本单模型，困难请求走多模型并行。智能分流验证倒U型最优：资源不足和资源过度都非最优。
+关键发现：智能分流验证倒U型最优
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：智能分流验证倒U型最优
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-596}`
+- 定义域 / Domain: `S_{C-596}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-596}(s_{C-596}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-596}(s_{C-596})>0 ∧ J_n^+(C_{C-596})=1 ∧ J_n^-(C_{C-596})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-596}∈S_{C-596}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-596}>0 and reverse channel does not derive ¬C_{C-596}.
+
+**关联函数 / Related Functions**
+- D90（结构保守性元定理 / 倒U型最优）
+
+---
+
+### [#597｜模型异质性共享度倒U验证](#)
+
+**案例内容 / Case Content**
+中文：完全同质导致 η_gate 下降，过度异质导致协同成本上升。异质性与共享层之间存在中间最优点。
+关键发现：异质性与共享层之间存在中间最优点
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：异质性与共享层之间存在中间最优点
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-597}`
+- 定义域 / Domain: `S_{C-597}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-597}(s_{C-597}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-597}(s_{C-597})>0 ∧ J_n^+(C_{C-597})=1 ∧ J_n^-(C_{C-597})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-597}∈S_{C-597}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-597}>0 and reverse channel does not derive ¬C_{C-597}.
+
+**关联函数 / Related Functions**
+- D142（信息门效率统一函数）
+
+---
+
+### [#598｜单体模型到模型网络相变验证](#)
+
+**案例内容 / Case Content**
+中文：性能突破来自模型网络编排，而不是单体模型继续堆参数。AI 系统从单体能力范式转向拓扑结构范式。
+关键发现：AI 系统从单体能力范式转向拓扑结构范式
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：AI 系统从单体能力范式转向拓扑结构范式
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-598}`
+- 定义域 / Domain: `S_{C-598}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-598}(s_{C-598}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-598}(s_{C-598})>0 ∧ J_n^+(C_{C-598})=1 ∧ J_n^-(C_{C-598})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-598}∈S_{C-598}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-598}>0 and reverse channel does not derive ¬C_{C-598}.
+
+**关联函数 / Related Functions**
+- D72（统一相变框架）
+
+---
+
+### [#599｜仲裁机制让判断不必要验证](#)
+
+**案例内容 / Case Content**
+中文：系统不需要预先知道哪个模型最强，而是通过并行+仲裁自动筛选。结构优势替代人工判断优势。
+关键发现：结构优势替代人工判断优势
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：结构优势替代人工判断优势
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-599}`
+- 定义域 / Domain: `S_{C-599}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-599}(s_{C-599}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-599}(s_{C-599})>0 ∧ J_n^+(C_{C-599})=1 ∧ J_n^-(C_{C-599})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-599}∈S_{C-599}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-599}>0 and reverse channel does not derive ¬C_{C-599}.
+
+**关联函数 / Related Functions**
+- D149（结构保守性元定理）
+
+---
+
+### [#600｜仲裁模型最弱维度锁死验证](#)
+
+**案例内容 / Case Content**
+中文：整体性能上限受限于仲裁模型判断能力。最弱仲裁维度形成系统曲率奇点。
+关键发现：最弱仲裁维度形成系统曲率奇点
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：最弱仲裁维度形成系统曲率奇点
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-600}`
+- 定义域 / Domain: `S_{C-600}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-600}(s_{C-600}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-600}(s_{C-600})>0 ∧ J_n^+(C_{C-600})=1 ∧ J_n^-(C_{C-600})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-600}∈S_{C-600}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-600}>0 and reverse channel does not derive ¬C_{C-600}.
+
+**关联函数 / Related Functions**
+- D400（集中性-序参量统一函数）
+
+---
+
+### [#601｜多模型并行/仲裁三域熵统一验证](#)
+
+**案例内容 / Case Content**
+中文：并行增加状态空间，仲裁筛选降低无效熵，整体智能提升。物理/社会/认知三域共享对数结构。
+关键发现：三域共享对数结构
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：三域共享对数结构
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-601}`
+- 定义域 / Domain: `S_{C-601}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-601}(s_{C-601}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-601}(s_{C-601})>0 ∧ J_n^+(C_{C-601})=1 ∧ J_n^-(C_{C-601})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-601}∈S_{C-601}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-601}>0 and reverse channel does not derive ¬C_{C-601}.
+
+**关联函数 / Related Functions**
+- C-0223、D108（三域熵统一函数）
+
+---
+
+### [#602｜Opus×2自我组合协同验证](#)
+
+**案例内容 / Case Content**
+中文：同一模型重复采样并仲裁也能带来性能提升。协同效应来自轨道差异与仲裁结构，不必依赖完全不同模型。
+关键发现：协同来自轨道差异与仲裁结构
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：协同来自轨道差异与仲裁结构
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-602}`
+- 定义域 / Domain: `S_{C-602}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-602}(s_{C-602}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-602}(s_{C-602})>0 ∧ J_n^+(C_{C-602})=1 ∧ J_n^-(C_{C-602})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-602}∈S_{C-602}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-602}>0 and reverse channel does not derive ¬C_{C-602}.
+
+**关联函数 / Related Functions**
+- D66、D53
+
+---
+
+### [#603｜成本-性能空间拓扑优化验证](#)
+
+**案例内容 / Case Content**
+中文：OrcaRouter DSL 在成本-性能空间里配置最优模型路径。工程配置可视为拓扑优化。
+关键发现：工程配置可视为拓扑优化
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：工程配置可视为拓扑优化
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-603}`
+- 定义域 / Domain: `S_{C-603}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-603}(s_{C-603}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-603}(s_{C-603})>0 ∧ J_n^+(C_{C-603})=1 ∧ J_n^-(C_{C-603})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-603}∈S_{C-603}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-603}>0 and reverse channel does not derive ¬C_{C-603}.
+
+**关联函数 / Related Functions**
+- D149、D90
+
+---
+
+### [#604｜仲裁模型能力上限预测验证](#)
+
+**案例内容 / Case Content**
+中文：仲裁模型若不能识别某任务最优答案，系统性能无法突破该方向。多模型系统存在仲裁上限锁死效应。
+关键发现：仲裁上限锁死效应
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：仲裁上限锁死效应
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-604}`
+- 定义域 / Domain: `S_{C-604}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-604}(s_{C-604}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-604}(s_{C-604})>0 ∧ J_n^+(C_{C-604})=1 ∧ J_n^-(C_{C-604})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-604}∈S_{C-604}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-604}>0 and reverse channel does not derive ¬C_{C-604}.
+
+**关联函数 / Related Functions**
+- D400、D142
+
+---
+
+### [#605｜仲裁模型升级自举循环验证](#)
+
+**案例内容 / Case Content**
+中文：仲裁模型升级后，即使并行候选模型不变，系统性能也应同步变化。仲裁层升级可触发系统再自举。
+关键发现：仲裁层升级触发系统再自举
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：仲裁层升级触发系统再自举
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-605}`
+- 定义域 / Domain: `S_{C-605}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-605}(s_{C-605}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-605}(s_{C-605})>0 ∧ J_n^+(C_{C-605})=1 ∧ J_n^-(C_{C-605})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-605}∈S_{C-605}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-605}>0 and reverse channel does not derive ¬C_{C-605}.
+
+**关联函数 / Related Functions**
+- MF-0000（自举元函数）、D400
+
+---
+
+### [#606｜置信度级联二级退出权验证](#)
+
+**案例内容 / Case Content**
+中文：低置信度时从当前答案退出并进入重试/更强模型路径。置信度级联是工程化退出权。
+关键发现：置信度级联是工程化退出权
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：置信度级联是工程化退出权
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-606}`
+- 定义域 / Domain: `S_{C-606}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-606}(s_{C-606}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-606}(s_{C-606})>0 ∧ J_n^+(C_{C-606})=1 ∧ J_n^-(C_{C-606})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-606}∈S_{C-606}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-606}>0 and reverse channel does not derive ¬C_{C-606}.
+
+**关联函数 / Related Functions**
+- D53（信号最优流速函数 / 退出权映射）
+
+---
+
+### [#607｜仲裁策略验证](#)
+
+**案例内容 / Case Content**
+中文：不同仲裁策略（tests_pass/majority/best_of_n）对应不同退出/筛选规则。仲裁策略是退出权在输出空间的操作化。
+关键发现：仲裁是退出权在输出空间的操作化
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：仲裁是退出权在输出空间的操作化
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-607}`
+- 定义域 / Domain: `S_{C-607}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-607}(s_{C-607}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-607}(s_{C-607})>0 ∧ J_n^+(C_{C-607})=1 ∧ J_n^-(C_{C-607})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-607}∈S_{C-607}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-607}>0 and reverse channel does not derive ¬C_{C-607}.
+
+**关联函数 / Related Functions**
+- D53、D66
+
+---
+
+### [#608｜同质组合与异质组合权衡验证](#)
+
+**案例内容 / Case Content**
+中文：同质组合提供稳定冗余，异质组合提供边界突破。组合结构存在任务依赖的最优混合比例。
+关键发现：组合结构存在任务依赖的最优混合比例
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：组合结构存在任务依赖的最优混合比例
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-608}`
+- 定义域 / Domain: `S_{C-608}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-608}(s_{C-608}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-608}(s_{C-608})>0 ∧ J_n^+(C_{C-608})=1 ∧ J_n^-(C_{C-608})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-608}∈S_{C-608}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-608}>0 and reverse channel does not derive ¬C_{C-608}.
+
+**关联函数 / Related Functions**
+- D142、D66
+
+---
+
+### [#609｜跑步训练σ_opt=√e收敛验证](#)
+
+**案例内容 / Case Content**
+中文：跑步训练中 σ≈1.2 时空间太小、刺激不足；过高又会损伤/低效，最优区间收敛到 σ_opt≈√e。人体运动系统存在与 σ_opt=√e 同构的效率最优点。
+关键发现：人体运动系统存在与 σ_opt=√e 同构的最优点
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：人体运动系统存在与 σ_opt=√e 同构的最优点
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-609}`
+- 定义域 / Domain: `S_{C-609}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-609}(s_{C-609}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-609}(s_{C-609})>0 ∧ J_n^+(C_{C-609})=1 ∧ J_n^-(C_{C-609})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-609}∈S_{C-609}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-609}>0 and reverse channel does not derive ¬C_{C-609}.
+
+**关联函数 / Related Functions**
+- D90（倒U型最优）、T16（反向单调函数乘积）、D400（集中性-序参量）
+
+---
+
+### [#610｜API成本σ_opt=√e收敛验证](#)
+
+**案例内容 / Case Content**
+中文：API 成本优化中 σ≈2.0 时可选空间过大、路由/比较成本上升；最优区间同样收敛到 σ_opt≈√e。AI 资源分配系统与跑步训练共享同一最优方差结构。
+关键发现：AI 资源分配系统与跑步训练共享同一最优方差结构
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：AI 资源分配系统与跑步训练共享同一最优方差结构
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-610}`
+- 定义域 / Domain: `S_{C-610}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-610}(s_{C-610}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-610}(s_{C-610})>0 ∧ J_n^+(C_{C-610})=1 ∧ J_n^-(C_{C-610})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-610}∈S_{C-610}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-610}>0 and reverse channel does not derive ¬C_{C-610}.
+
+**关联函数 / Related Functions**
+- D90、T16、D66
+
+---
+
+### [#611｜词汇空间验证](#)
+
+**案例内容 / Case Content**
+中文：人类语言词汇量≈10万-100万。
+关键发现：空间函数断言∀场景Ω={x|C₁∧...∧Cₙ}
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：空间函数断言∀场景Ω={x|C₁∧...∧Cₙ}
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-611}`
+- 定义域 / Domain: `S_{C-611}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-611}(s_{C-611}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-611}(s_{C-611})>0 ∧ J_n^+(C_{C-611})=1 ∧ J_n^-(C_{C-611})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-611}∈S_{C-611}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-611}>0 and reverse channel does not derive ¬C_{C-611}.
+
+**关联函数 / Related Functions**
+- D476~D480（空间函数）
+
+---
+
+### [#612｜投资组合空间验证](#)
+
+**案例内容 / Case Content**
+中文：可投资标的≈10万-100万。
+关键发现：同上
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：同上
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-612}`
+- 定义域 / Domain: `S_{C-612}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-612}(s_{C-612}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-612}(s_{C-612})>0 ∧ J_n^+(C_{C-612})=1 ∧ J_n^-(C_{C-612})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-612}∈S_{C-612}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-612}>0 and reverse channel does not derive ¬C_{C-612}.
+
+**关联函数 / Related Functions**
+- D476~D480
+
+---
+
+### [#613｜工具箱空间验证](#)
+
+**案例内容 / Case Content**
+中文：工人能掌握的工具≈10-100。
+关键发现：同上
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：同上
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-613}`
+- 定义域 / Domain: `S_{C-613}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-613}(s_{C-613}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-613}(s_{C-613})>0 ∧ J_n^+(C_{C-613})=1 ∧ J_n^-(C_{C-613})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-613}∈S_{C-613}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-613}>0 and reverse channel does not derive ¬C_{C-613}.
+
+**关联函数 / Related Functions**
+- D476~D480
+
+---
+
+### [#614｜目的地空间验证](#)
+
+**案例内容 / Case Content**
+中文：能到达的目的地≈100-1000。
+关键发现：同上
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：同上
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-614}`
+- 定义域 / Domain: `S_{C-614}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-614}(s_{C-614}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-614}(s_{C-614})>0 ∧ J_n^+(C_{C-614})=1 ∧ J_n^-(C_{C-614})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-614}∈S_{C-614}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-614}>0 and reverse channel does not derive ¬C_{C-614}.
+
+**关联函数 / Related Functions**
+- D476~D480
+
+---
+
+### [#615｜候选者空间验证](#)
+
+**案例内容 / Case Content**
+中文：能接触的潜在伴侣≈10-100。
+关键发现：同上
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：同上
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-615}`
+- 定义域 / Domain: `S_{C-615}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-615}(s_{C-615}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-615}(s_{C-615})>0 ∧ J_n^+(C_{C-615})=1 ∧ J_n^-(C_{C-615})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-615}∈S_{C-615}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-615}>0 and reverse channel does not derive ¬C_{C-615}.
+
+**关联函数 / Related Functions**
+- D476~D480
+
+---
+
+### [#616｜菜品空间验证](#)
+
+**案例内容 / Case Content**
+中文：厨子能掌握的菜品≈100-1000。
+关键发现：同上
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：同上
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-616}`
+- 定义域 / Domain: `S_{C-616}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-616}(s_{C-616}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-616}(s_{C-616})>0 ∧ J_n^+(C_{C-616})=1 ∧ J_n^-(C_{C-616})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-616}∈S_{C-616}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-616}>0 and reverse channel does not derive ¬C_{C-616}.
+
+**关联函数 / Related Functions**
+- D476~D480
+
+---
+
+### [#617｜厕所空间验证](#)
+
+**案例内容 / Case Content**
+中文：区域内可选厕所≈1-10。
+关键发现：同上
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：同上
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-617}`
+- 定义域 / Domain: `S_{C-617}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-617}(s_{C-617}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-617}(s_{C-617})>0 ∧ J_n^+(C_{C-617})=1 ∧ J_n^-(C_{C-617})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-617}∈S_{C-617}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-617}>0 and reverse channel does not derive ¬C_{C-617}.
+
+**关联函数 / Related Functions**
+- D476~D480
+
+---
+
+### [#618｜繁衍空间验证](#)
+
+**案例内容 / Case Content**
+中文：鱼的最大密度≈1000条/亩。
+关键发现：同上
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：同上
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-618}`
+- 定义域 / Domain: `S_{C-618}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-618}(s_{C-618}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-618}(s_{C-618})>0 ∧ J_n^+(C_{C-618})=1 ∧ J_n^-(C_{C-618})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-618}∈S_{C-618}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-618}>0 and reverse channel does not derive ¬C_{C-618}.
+
+**关联函数 / Related Functions**
+- D476~D480
+
+---
+
+### [#619｜大脑容量空间验证](#)
+
+**案例内容 / Case Content**
+中文：人类大脑神经元≈860亿。
+关键发现：同上
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：同上
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-619}`
+- 定义域 / Domain: `S_{C-619}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-619}(s_{C-619}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-619}(s_{C-619})>0 ∧ J_n^+(C_{C-619})=1 ∧ J_n^-(C_{C-619})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-619}∈S_{C-619}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-619}>0 and reverse channel does not derive ¬C_{C-619}.
+
+**关联函数 / Related Functions**
+- D476~D480
+
+---
+
+### [#620｜早产5年空间验证](#)
+
+**案例内容 / Case Content**
+中文：人类大脑容量受盆骨限制。
+关键发现：同上
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：同上
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-620}`
+- 定义域 / Domain: `S_{C-620}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-620}(s_{C-620}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-620}(s_{C-620})>0 ∧ J_n^+(C_{C-620})=1 ∧ J_n^-(C_{C-620})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-620}∈S_{C-620}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-620}>0 and reverse channel does not derive ¬C_{C-620}.
+
+**关联函数 / Related Functions**
+- D476~D480
+
+---
+
+### [#621｜退出权空间案例01](#)
+
+**案例内容 / Case Content**
+中文：C=0→Ω_cognitive=∅→P_exit=0。认知能力为零时认知空间为空，退出权归零。
+关键发现：认知能力为零→退出权为零
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：认知能力为零→退出权为零
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-621}`
+- 定义域 / Domain: `S_{C-621}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-621}(s_{C-621}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-621}(s_{C-621})>0 ∧ J_n^+(C_{C-621})=1 ∧ J_n^-(C_{C-621})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-621}∈S_{C-621}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-621}>0 and reverse channel does not derive ¬C_{C-621}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#622｜退出权空间案例02](#)
+
+**案例内容 / Case Content**
+中文：Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。
+关键发现：空间极值归零
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：空间极值归零
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-622}`
+- 定义域 / Domain: `S_{C-622}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-622}(s_{C-622}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-622}(s_{C-622})>0 ∧ J_n^+(C_{C-622})=1 ∧ J_n^-(C_{C-622})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-622}∈S_{C-622}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-622}>0 and reverse channel does not derive ¬C_{C-622}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#623｜退出权空间案例03](#)
+
+**案例内容 / Case Content**
+中文：σ_opt=√e≈1.65（跑步训练和API成本优化验证）。
+关键发现：σ_opt=√e验证
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：σ_opt=√e验证
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-623}`
+- 定义域 / Domain: `S_{C-623}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-623}(s_{C-623}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-623}(s_{C-623})>0 ∧ J_n^+(C_{C-623})=1 ∧ J_n^-(C_{C-623})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-623}∈S_{C-623}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-623}>0 and reverse channel does not derive ¬C_{C-623}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#624｜退出权空间案例04](#)
+
+**案例内容 / Case Content**
+中文：P_exit=0→B_active=0。退出权为零时自举无法激活。
+关键发现：退出权归零→自举归零
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：退出权归零→自举归零
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-624}`
+- 定义域 / Domain: `S_{C-624}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-624}(s_{C-624}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-624}(s_{C-624})>0 ∧ J_n^+(C_{C-624})=1 ∧ J_n^-(C_{C-624})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-624}∈S_{C-624}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-624}>0 and reverse channel does not derive ¬C_{C-624}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#625｜退出权空间案例05](#)
+
+**案例内容 / Case Content**
+中文：ε_aware越过第一个相变点→C↑→P_exit↑。认知觉醒提升认知能力从而提升退出权。
+关键发现：认知相变→退出权提升
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：认知相变→退出权提升
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-625}`
+- 定义域 / Domain: `S_{C-625}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-625}(s_{C-625}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-625}(s_{C-625})>0 ∧ J_n^+(C_{C-625})=1 ∧ J_n^-(C_{C-625})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-625}∈S_{C-625}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-625}>0 and reverse channel does not derive ¬C_{C-625}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#626｜退出权空间案例06](#)
+
+**案例内容 / Case Content**
+中文：跑步训练σ=1.2→Ω太小→P_exit低；API成本σ=2.0→Ω太大→P_exit低。
+关键发现：σ偏离最优导致P_exit下降
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：σ偏离最优导致P_exit下降
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-626}`
+- 定义域 / Domain: `S_{C-626}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-626}(s_{C-626}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-626}(s_{C-626})>0 ∧ J_n^+(C_{C-626})=1 ∧ J_n^-(C_{C-626})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-626}∈S_{C-626}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-626}>0 and reverse channel does not derive ¬C_{C-626}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#627｜退出权空间案例07](#)
+
+**案例内容 / Case Content**
+中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。
+关键发现：无选择=无退出权
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：无选择=无退出权
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-627}`
+- 定义域 / Domain: `S_{C-627}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-627}(s_{C-627}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-627}(s_{C-627})>0 ∧ J_n^+(C_{C-627})=1 ∧ J_n^-(C_{C-627})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-627}∈S_{C-627}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-627}>0 and reverse channel does not derive ¬C_{C-627}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#628｜退出权空间案例08](#)
+
+**案例内容 / Case Content**
+中文：η_gate↓→C↓→P_exit↓。信息门效率下降导致认知能力下降进而退出权下降。
+关键发现：信息门效率影响退出权
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：信息门效率影响退出权
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-628}`
+- 定义域 / Domain: `S_{C-628}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-628}(s_{C-628}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-628}(s_{C-628})>0 ∧ J_n^+(C_{C-628})=1 ∧ J_n^-(C_{C-628})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-628}∈S_{C-628}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-628}>0 and reverse channel does not derive ¬C_{C-628}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#629｜退出权空间案例09](#)
+
+**案例内容 / Case Content**
+中文：T↓→C_exit↑→P_exit↓。时间不足导致退出成本上升进而退出权下降。
+关键发现：时间约束影响退出权
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：时间约束影响退出权
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-629}`
+- 定义域 / Domain: `S_{C-629}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-629}(s_{C-629}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-629}(s_{C-629})>0 ∧ J_n^+(C_{C-629})=1 ∧ J_n^-(C_{C-629})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-629}∈S_{C-629}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-629}>0 and reverse channel does not derive ¬C_{C-629}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#630｜退出权空间案例10](#)
+
+**案例内容 / Case Content**
+中文：P_exit=0→M_boot=0。退出权为零时自举元函数归零。
+关键发现：退出权归零→自举归零
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：退出权归零→自举归零
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-630}`
+- 定义域 / Domain: `S_{C-630}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-630}(s_{C-630}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-630}(s_{C-630})>0 ∧ J_n^+(C_{C-630})=1 ∧ J_n^-(C_{C-630})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-630}∈S_{C-630}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-630}>0 and reverse channel does not derive ¬C_{C-630}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#631｜退出权空间案例11](#)
+
+**案例内容 / Case Content**
+中文：C=0（认知能力最低）→P_exit=0。认知能力为零导致退出权归零。
+关键发现：认知为零→退出权归零
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：认知为零→退出权归零
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-631}`
+- 定义域 / Domain: `S_{C-631}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-631}(s_{C-631}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-631}(s_{C-631})>0 ∧ J_n^+(C_{C-631})=1 ∧ J_n^-(C_{C-631})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-631}∈S_{C-631}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-631}>0 and reverse channel does not derive ¬C_{C-631}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#632｜退出权空间案例12](#)
+
+**案例内容 / Case Content**
+中文：α=1.5→Ω*≈1.65（与σ_opt=√e一致）。最优空间规模与最优方差同构。
+关键发现：最优空间规模=σ_opt
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：最优空间规模=σ_opt
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-632}`
+- 定义域 / Domain: `S_{C-632}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-632}(s_{C-632}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-632}(s_{C-632})>0 ∧ J_n^+(C_{C-632})=1 ∧ J_n^-(C_{C-632})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-632}∈S_{C-632}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-632}>0 and reverse channel does not derive ¬C_{C-632}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#633｜退出权空间案例13](#)
+
+**案例内容 / Case Content**
+中文：Ω超过Ω_max→进入不可逆区域→P_exit→0。超出空间上界导致退出权消失且不可恢复。
+关键发现：空间上界超过→不可逆
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：空间上界超过→不可逆
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-633}`
+- 定义域 / Domain: `S_{C-633}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-633}(s_{C-633}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-633}(s_{C-633})>0 ∧ J_n^+(C_{C-633})=1 ∧ J_n^-(C_{C-633})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-633}∈S_{C-633}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-633}>0 and reverse channel does not derive ¬C_{C-633}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#634｜退出权空间案例14](#)
+
+**案例内容 / Case Content**
+中文：Φ的极小点μ*≈1.26×10¹⁶ GeV↔P_exit的最大点Ω*≈1.65。退出权极值与Φ极值同构。
+关键发现：P_exit-Φ极值同构
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：P_exit-Φ极值同构
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-634}`
+- 定义域 / Domain: `S_{C-634}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-634}(s_{C-634}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-634}(s_{C-634})>0 ∧ J_n^+(C_{C-634})=1 ∧ J_n^-(C_{C-634})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-634}∈S_{C-634}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-634}>0 and reverse channel does not derive ¬C_{C-634}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#635｜退出权空间案例15](#)
+
+**案例内容 / Case Content**
+中文：Ω的维度间存在耦合。选择空间各维度不是独立变化。
+关键发现：空间维度耦合
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：空间维度耦合
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-635}`
+- 定义域 / Domain: `S_{C-635}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-635}(s_{C-635}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-635}(s_{C-635})>0 ∧ J_n^+(C_{C-635})=1 ∧ J_n^-(C_{C-635})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-635}∈S_{C-635}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-635}>0 and reverse channel does not derive ¬C_{C-635}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#636｜退出权空间案例16](#)
+
+**案例内容 / Case Content**
+中文：Posture_deg↑→H↑→σ估计偏差→P_exit计算错误。姿态激进导致遮蔽导致方差估计错误。
+关键发现：姿态影响退出权计算
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：姿态影响退出权计算
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-636}`
+- 定义域 / Domain: `S_{C-636}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-636}(s_{C-636}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-636}(s_{C-636})>0 ∧ J_n^+(C_{C-636})=1 ∧ J_n^-(C_{C-636})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-636}∈S_{C-636}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-636}>0 and reverse channel does not derive ¬C_{C-636}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#637｜退出权空间案例17](#)
+
+**案例内容 / Case Content**
+中文：δ(Ω)：二值边界；1/ln(Ω)：门槛边界；exp[-ln²(Ω)]：最优边界。退出权边界有多个形态。
+关键发现：退出权边界多种形态
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：退出权边界多种形态
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-637}`
+- 定义域 / Domain: `S_{C-637}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-637}(s_{C-637}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-637}(s_{C-637})>0 ∧ J_n^+(C_{C-637})=1 ∧ J_n^-(C_{C-637})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-637}∈S_{C-637}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-637}>0 and reverse channel does not derive ¬C_{C-637}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#638｜退出权空间案例18](#)
+
+**案例内容 / Case Content**
+中文：d_C(Ω)/λ：内生衰减；κ_env(Ω)·H(Ω)：环境衰减。退出权衰减有内外两个来源。
+关键发现：退出权内外衰减
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：退出权内外衰减
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-638}`
+- 定义域 / Domain: `S_{C-638}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-638}(s_{C-638}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-638}(s_{C-638})>0 ∧ J_n^+(C_{C-638})=1 ∧ J_n^-(C_{C-638})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-638}∈S_{C-638}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-638}>0 and reverse channel does not derive ¬C_{C-638}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#639｜退出权空间案例19](#)
+
+**案例内容 / Case Content**
+中文：Ω的维度随时间衰减。选择空间的有效维度随时间缩小。
+关键发现：空间维度时间衰减
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：空间维度时间衰减
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-639}`
+- 定义域 / Domain: `S_{C-639}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-639}(s_{C-639}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-639}(s_{C-639})>0 ∧ J_n^+(C_{C-639})=1 ∧ J_n^-(C_{C-639})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-639}∈S_{C-639}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-639}>0 and reverse channel does not derive ¬C_{C-639}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#640｜退出权空间案例20](#)
+
+**案例内容 / Case Content**
+中文：σ↑→I_concentration↑→Ω有效维度↓→P_exit↓。集中性上升压缩有效维度降低退出权。
+关键发现：集中性→退出权下降
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：集中性→退出权下降
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-640}`
+- 定义域 / Domain: `S_{C-640}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-640}(s_{C-640}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-640}(s_{C-640})>0 ∧ J_n^+(C_{C-640})=1 ∧ J_n^-(C_{C-640})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-640}∈S_{C-640}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-640}>0 and reverse channel does not derive ¬C_{C-640}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#641｜退出权空间案例21](#)
+
+**案例内容 / Case Content**
+中文：Ω、T、C、σ达到共振条件→P_exit最大化。四个因子共振时退出权最大。
+关键发现：四因子共振最大化退出权
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：四因子共振最大化退出权
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-641}`
+- 定义域 / Domain: `S_{C-641}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-641}(s_{C-641}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-641}(s_{C-641})>0 ∧ J_n^+(C_{C-641})=1 ∧ J_n^-(C_{C-641})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-641}∈S_{C-641}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-641}>0 and reverse channel does not derive ¬C_{C-641}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#642｜退出权空间案例22](#)
+
+**案例内容 / Case Content**
+中文：P_exit→0→z_Pexit→1；P_exit→1→z_Pexit→∞。退出权趋向零时阻抗趋低，趋向1时阻抗无穷大。
+关键发现：退出权阻抗函数验证
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：退出权阻抗函数验证
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-642}`
+- 定义域 / Domain: `S_{C-642}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-642}(s_{C-642}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-642}(s_{C-642})>0 ∧ J_n^+(C_{C-642})=1 ∧ J_n^-(C_{C-642})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-642}∈S_{C-642}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-642}>0 and reverse channel does not derive ¬C_{C-642}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#643｜退出权空间案例23](#)
+
+**案例内容 / Case Content**
+中文：C是最小值→C成为卡点→P_exit由C决定。最弱维度决定退出权。
+关键发现：最弱项瓶颈验证
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：最弱项瓶颈验证
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-643}`
+- 定义域 / Domain: `S_{C-643}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-643}(s_{C-643}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-643}(s_{C-643})>0 ∧ J_n^+(C_{C-643})=1 ∧ J_n^-(C_{C-643})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-643}∈S_{C-643}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-643}>0 and reverse channel does not derive ¬C_{C-643}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#644｜退出权空间案例24](#)
+
+**案例内容 / Case Content**
+中文：P_exit=0→无法启动自举。退出权为零时自举元函数无法运行。
+关键发现：退出权为零→自举不可用
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：退出权为零→自举不可用
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-644}`
+- 定义域 / Domain: `S_{C-644}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-644}(s_{C-644}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-644}(s_{C-644})>0 ∧ J_n^+(C_{C-644})=1 ∧ J_n^-(C_{C-644})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-644}∈S_{C-644}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-644}>0 and reverse channel does not derive ¬C_{C-644}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#645｜退出权空间案例25](#)
+
+**案例内容 / Case Content**
+中文：糖域实验 Agent 的视野Ω_vision决定 I。Agent 的可视空间决定其信息量。
+关键发现：视野空间→信息量
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：视野空间→信息量
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-645}`
+- 定义域 / Domain: `S_{C-645}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-645}(s_{C-645}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-645}(s_{C-645})>0 ∧ J_n^+(C_{C-645})=1 ∧ J_n^-(C_{C-645})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-645}∈S_{C-645}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-645}>0 and reverse channel does not derive ¬C_{C-645}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#646｜退出权空间案例26](#)
+
+**案例内容 / Case Content**
+中文：凯利公式的有效边界是 Ω_cognitive 的上界。认知空间上界决定了凯利公式的有效范围。
+关键发现：凯利公式 = 认知空间边界
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：凯利公式 = 认知空间边界
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-646}`
+- 定义域 / Domain: `S_{C-646}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-646}(s_{C-646}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-646}(s_{C-646})>0 ∧ J_n^+(C_{C-646})=1 ∧ J_n^-(C_{C-646})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-646}∈S_{C-646}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-646}>0 and reverse channel does not derive ¬C_{C-646}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#647｜退出权空间案例27](#)
+
+**案例内容 / Case Content**
+中文：A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的不同投影。
+关键发现：A1-A3=认知空间投影
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：A1-A3=认知空间投影
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-647}`
+- 定义域 / Domain: `S_{C-647}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-647}(s_{C-647}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-647}(s_{C-647})>0 ∧ J_n^+(C_{C-647})=1 ∧ J_n^-(C_{C-647})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-647}∈S_{C-647}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-647}>0 and reverse channel does not derive ¬C_{C-647}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#648｜退出权空间案例28](#)
+
+**案例内容 / Case Content**
+中文：Ω_reachable = Ω_total × I。可达空间=总空间×信息量。
+关键发现：可达空间=总空间×信息量
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：可达空间=总空间×信息量
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-648}`
+- 定义域 / Domain: `S_{C-648}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-648}(s_{C-648}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-648}(s_{C-648})>0 ∧ J_n^+(C_{C-648})=1 ∧ J_n^-(C_{C-648})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-648}∈S_{C-648}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-648}>0 and reverse channel does not derive ¬C_{C-648}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#649｜退出权空间案例29](#)
+
+**案例内容 / Case Content**
+中文：Ω_topology 的退化导致 D_immune 下降。拓扑空间退化导致系统退化免疫力下降。
+关键发现：拓扑退化→免疫力下降
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：拓扑退化→免疫力下降
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-649}`
+- 定义域 / Domain: `S_{C-649}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-649}(s_{C-649}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-649}(s_{C-649})>0 ∧ J_n^+(C_{C-649})=1 ∧ J_n^-(C_{C-649})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-649}∈S_{C-649}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-649}>0 and reverse channel does not derive ¬C_{C-649}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#650｜退出权空间案例30](#)
+
+**案例内容 / Case Content**
+中文：R=真实/事实/心理/象征对应Ω的不同边界类型。退出权四种类型对应不同空间边界。
+关键发现：退出权四类型=四边界
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：退出权四类型=四边界
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-650}`
+- 定义域 / Domain: `S_{C-650}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-650}(s_{C-650}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-650}(s_{C-650})>0 ∧ J_n^+(C_{C-650})=1 ∧ J_n^-(C_{C-650})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-650}∈S_{C-650}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-650}>0 and reverse channel does not derive ¬C_{C-650}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#651｜退出权空间案例31](#)
+
+**案例内容 / Case Content**
+中文：Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。
+关键发现：选项无差异=退出权归零
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：选项无差异=退出权归零
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-651}`
+- 定义域 / Domain: `S_{C-651}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-651}(s_{C-651}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-651}(s_{C-651})>0 ∧ J_n^+(C_{C-651})=1 ∧ J_n^-(C_{C-651})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-651}∈S_{C-651}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-651}>0 and reverse channel does not derive ¬C_{C-651}.
+
+**关联函数 / Related Functions**
+- D481~D511
+
+---
+
+### [#652｜宇宙平坦vs有界](#)
+
+**案例内容 / Case Content**
+中文：几何平坦（零曲率）≠约束有界；"无界"说的是几何，"有边界"说的是约束边界。几何无边界与约束有边界不矛盾。
+关键发现：几何无边界≠约束无边界
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：几何无边界≠约束无边界
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-652}`
+- 定义域 / Domain: `S_{C-652}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-652}(s_{C-652}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-652}(s_{C-652})>0 ∧ J_n^+(C_{C-652})=1 ∧ J_n^-(C_{C-652})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-652}∈S_{C-652}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-652}>0 and reverse channel does not derive ¬C_{C-652}.
+
+**关联函数 / Related Functions**
+- D512（宇宙约束空间函数）；D515（宇宙约束边界函数）
+
+---
+
+### [#653｜黑洞信息守恒](#)
+
+**案例内容 / Case Content**
+中文：黑洞蒸发与信息守恒问题可写成约束空间中的信息转换，而非凭空消失。信息守恒与熵增可以在不同层级同时成立。
+关键发现：信息守恒与熵增不互斥
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：信息守恒与熵增不互斥
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-653}`
+- 定义域 / Domain: `S_{C-653}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-653}(s_{C-653}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-653}(s_{C-653})>0 ∧ J_n^+(C_{C-653})=1 ∧ J_n^-(C_{C-653})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-653}∈S_{C-653}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-653}>0 and reverse channel does not derive ¬C_{C-653}.
+
+**关联函数 / Related Functions**
+- D513（信息可区分性函数）；D514（信息守恒函数）
+
+---
+
+### [#654｜写书的信息转换](#)
+
+**案例内容 / Case Content**
+中文：写书是从 Ω_potential 中选择一个具体实现，不是从无到有创造信息。创作是约束下的信息选择与转换。
+关键发现：创作=约束下的信息选择
+English: Rule-based English rendering pending human review.
+
+**它说明了什么 / What It Shows**
+中文：创作=约束下的信息选择
+English: Rule-based English rendering pending human review.
+
+**纯数学函数与推导 / Pure Mathematical Function and Derivation**
+- 对象 / Object: `C_{C-654}`
+- 定义域 / Domain: `S_{C-654}`
+- 值域 / Codomain: `[0,1]`
+- 数学表达 / Expression: `C_{C-654}(s_{C-654}) = (Σ_i 1[F_i(s)=1]) / |I|`
+- 有效条件 / Validity: `C_{C-654}(s_{C-654})>0 ∧ J_n^+(C_{C-654})=1 ∧ J_n^-(C_{C-654})=0`
+- 推导类型 / Derivation type: `case_witness_mapping_derivation`
+- 收敛状态 / Convergence status: `converged`
+- 依赖 / Depends on: `source_state`
+- 推导步骤 / Steps:
+  - 1. Encode the event as state s_{C-654}∈S_{C-654}.
+  - 2. Evaluate each related function on the event state.
+  - 3. Aggregate the witness score.
+  - 4. Accept iff C_{C-654}>0 and reverse channel does not derive ¬C_{C-654}.
+
+**关联函数 / Related Functions**
+- D513；D514
+
+---
+
+</details>
