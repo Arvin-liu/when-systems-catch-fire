@@ -1,0 +1,82 @@
+{
+  "task": "push_ignition_increments",
+  "trigger": "推送点火",
+  "model": "deepseek/deepseek-v4-flash",
+  "thinking": "off",
+  "mode": "review_branch_only",
+  "review_branch": "review/push-ignition-20260616-1541",
+  "review_branch_head_before_final_push": "85a371fbc3d3",
+  "source": {
+    "source_repo": "Arvin-liu/1111",
+    "function_table": "1111/data/点火 | 统一函数总表.516版.2026.06.16.14.34.md",
+    "case_table": "1111/data/点火 | 统一案例总表.654版.2026.06.16.14.35.md",
+    "latest_1111_fix_commit": "6fc4483"
+  },
+  "increment_summary": {
+    "new_functions": 40,
+    "new_function_ids": [
+      "D476", "D477", "D478", "D479", "D480",
+      "D481", "D482", "D483", "D484", "D485",
+      "D486", "D487", "D488", "D489", "D490",
+      "D491", "D492", "D493", "D494", "D495",
+      "D496", "D497", "D498", "D499", "D500",
+      "D501", "D502", "D503", "D504", "D505",
+      "D506", "D507", "D508", "D509", "D510",
+      "D511", "D512", "D513", "D514", "D515"
+    ],
+    "new_cases": 60,
+    "new_case_ids": [
+      "C-0595", "C-0596", "C-0597", "C-0598", "C-0599",
+      "C-0600", "C-0601", "C-0602", "C-0603", "C-0604",
+      "C-0605", "C-0606", "C-0607", "C-0608", "C-0609",
+      "C-0610", "C-0611", "C-0612", "C-0613", "C-0614",
+      "C-0615", "C-0616", "C-0617", "C-0618", "C-0619",
+      "C-0620", "C-0621", "C-0622", "C-0623", "C-0624",
+      "C-0625", "C-0626", "C-0627", "C-0628", "C-0629",
+      "C-0630", "C-0631", "C-0632", "C-0633", "C-0634",
+      "C-0635", "C-0636", "C-0637", "C-0638", "C-0639",
+      "C-0640", "C-0641", "C-0642", "C-0643", "C-0644",
+      "C-0645", "C-0646", "C-0647", "C-0648", "C-0649",
+      "C-0650", "C-0651", "C-0652", "C-0653", "C-0654"
+    ],
+    "new_annotations": 1,
+    "new_extension_annotations": 14,
+    "new_information_increments": 0,
+    "delta_B_positive": true
+  },
+  "modified_files": [
+    "FUNCTIONS.md",
+    "CASES.md",
+    "data/reports/push-ignition-20260616-1541.md",
+    "data/reports/push-ignition-20260616-1541-dynamic-count-fix-report.md",
+    "data/reports/push-ignition-20260616-1541-dynamic-count-fix-report.json",
+    "data/reports/push-ignition-20260616-1541-updated-table-issue-report.md",
+    "data/reports/push-ignition-20260616-1541-updated-table-issue-report.json",
+    "data/reports/push-ignition-20260616-1541-validation-after-count-fix.md",
+    "data/reports/push-ignition-20260616-1541-validation-after-count-fix.json",
+    "data/reports/push-ignition-20260616-1541-verification-matrix.md",
+    "data/reports/push-ignition-20260616-1541-verification-matrix.jsonl"
+  ],
+  "validation": {
+    "bootstrap_positive_negative_cross_check": "passed",
+    "verification_matrix_rows": 100,
+    "ready_for_final_review": 100,
+    "requires_user_review": 0,
+    "blocked": 0,
+    "scripts_failed": 0
+  },
+  "github": {
+    "review_branch_pushed": true,
+    "main_push_executed": false,
+    "final_main_push_required": true
+  },
+  "safety": {
+    "forbidden_files_committed": false,
+    "secrets_detected": false,
+    "main_modified": false,
+    "project_positioning_modified": false,
+    "evaluation_language_detected": false,
+    "novelty_passed_fabricated": false,
+    "force_push_used": false
+  }
+}
