@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/workspace/when-systems-catch-fire/scripts/validate_ignition_repository.py", line 612, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/workspace/when-systems-catch-fire/scripts/validate_ignition_repository.py", line 587, in main
+    discovery_stats = check_discoveries(errors)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/when-systems-catch-fire/scripts/validate_ignition_repository.py", line 252, in check_discoveries
+    if machine_index != machine_path.read_text(encoding="utf-8"):
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/pathlib.py", line 1059, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/pathlib.py", line 1045, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/when-systems-catch-fire/data/discoveries/unified-discoveries-index.md'

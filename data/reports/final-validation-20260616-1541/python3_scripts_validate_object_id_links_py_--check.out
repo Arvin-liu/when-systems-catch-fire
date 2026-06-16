@@ -1,0 +1,530 @@
+{
+  "passed": false,
+  "bare_id_findings": [
+    {
+      "line": 5367,
+      "object_id": "D57",
+      "context": "中文：案例说明：默里实验·低自尊伴侣互动 → D57解读偏置函数验证",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5371,
+      "object_id": "D57",
+      "context": "中文：默里实验·低自尊伴侣互动 → D57解读偏置函数验证",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5402,
+      "object_id": "D59",
+      "context": "中文：案例说明：罗森塔尔\"潜力生\"标签实验 → D59过渡期窗口衰减验证",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5406,
+      "object_id": "D59",
+      "context": "中文：罗森塔尔\"潜力生\"标签实验 → D59过渡期窗口衰减验证",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5437,
+      "object_id": "D60",
+      "context": "中文：案例说明：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5441,
+      "object_id": "D60",
+      "context": "中文：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5472,
+      "object_id": "D60",
+      "context": "中文：案例说明：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5476,
+      "object_id": "D60",
+      "context": "中文：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5507,
+      "object_id": "D61",
+      "context": "中文：案例说明：沃尔顿10年追踪 → D61向上螺旋自维持验证",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5511,
+      "object_id": "D61",
+      "context": "中文：沃尔顿10年追踪 → D61向上螺旋自维持验证",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5788,
+      "object_id": "D34",
+      "context": "中文：案例说明：定投P_sustain全局最大值（验证D34）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5792,
+      "object_id": "D34",
+      "context": "中文：定投P_sustain全局最大值（验证D34）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5823,
+      "object_id": "D66",
+      "context": "中文：案例说明：AI共震策略全失效（验证D66）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5827,
+      "object_id": "D66",
+      "context": "中文：AI共震策略全失效（验证D66）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5858,
+      "object_id": "D63",
+      "context": "中文：案例说明：炒股带宽溢出全领域衰减（验证D63跨域溢出）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5862,
+      "object_id": "D63",
+      "context": "中文：炒股带宽溢出全领域衰减（验证D63跨域溢出）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5893,
+      "object_id": "D67",
+      "context": "中文：案例说明：小资金恐惧锁定向下螺旋（验证D67）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5897,
+      "object_id": "D67",
+      "context": "中文：小资金恐惧锁定向下螺旋（验证D67）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5928,
+      "object_id": "D47",
+      "context": "中文：案例说明：定投=门锁交替律执行（验证D47+[D49](docs/zh/functions/items/D49.md)）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5932,
+      "object_id": "D47",
+      "context": "中文：定投=门锁交替律执行（验证D47+[D49](docs/zh/functions/items/D49.md)）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5964,
+      "object_id": "D65",
+      "context": "中文：案例说明：H_total放大触发F_collapse（验证D65）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5968,
+      "object_id": "D65",
+      "context": "中文：H_total放大触发F_collapse（验证D65）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 5999,
+      "object_id": "D65",
+      "context": "中文：案例说明：财商乘数四因子结构（验证D65财富域）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 6003,
+      "object_id": "D65",
+      "context": "中文：财商乘数四因子结构（验证D65财富域）",
+      "path": "CASES.md"
+    },
+    {
+      "line": 6215,
+      "object_id": "D72",
+      "context": "English: D72",
+      "path": "CASES.md"
+    },
+    {
+      "line": 6247,
+      "object_id": "D66",
+      "context": "English: Case description: D66 x D53 x P x Q²",
+      "path": "CASES.md"
+    },
+    {
+      "line": 6247,
+      "object_id": "D53",
+      "context": "English: Case description: D66 x D53 x P x Q²",
+      "path": "CASES.md"
+    },
+    {
+      "line": 6248,
+      "object_id": "D73",
+      "context": "Key discovery: D73",
+      "path": "CASES.md"
+    },
+    {
+      "line": 6252,
+      "object_id": "D73",
+      "context": "English: D73",
+      "path": "CASES.md"
+    },
+    {
+      "line": 6290,
+      "object_id": "D74",
+      "context": "English: D74",
+      "path": "CASES.md"
+    },
+    {
+      "line": 6327,
+      "object_id": "D75",
+      "context": "English: D75",
+      "path": "CASES.md"
+    },
+    {
+      "line": 6364,
+      "object_id": "D76",
+      "context": "English: D76",
+      "path": "CASES.md"
+    },
+    {
+      "line": 6401,
+      "object_id": "D77",
+      "context": "English: D77",
+      "path": "CASES.md"
+    },
+    {
+      "line": 9787,
+      "object_id": "D123",
+      "context": "中文：该案例围绕 +D123深层同构 展开。",
+      "path": "CASES.md"
+    },
+    {
+      "line": 9823,
+      "object_id": "D36",
+      "context": "中文：该案例围绕 与D36倒U型同构 展开。",
+      "path": "CASES.md"
+    },
+    {
+      "line": 9859,
+      "object_id": "D126",
+      "context": "中文：该案例围绕 与D126时间尺度同构 展开。",
+      "path": "CASES.md"
+    },
+    {
+      "line": 9895,
+      "object_id": "D62",
+      "context": "中文：该案例围绕 与D62天花板-实际高度 展开。",
+      "path": "CASES.md"
+    },
+    {
+      "line": 10281,
+      "object_id": "D121",
+      "context": "中文：案例说明：D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数：[D65](docs/zh/functions/items/D65.md)",
+      "path": "CASES.md"
+    },
+    {
+      "line": 10285,
+      "object_id": "D121",
+      "context": "中文：D121实现触发分化 — rcross>0→α↑→α/β趋近1→不稳定区间出现→部分AI被推向ρ*→调度AI涌现。核心函数：[D65](docs/zh/functions/items/D65.md)",
+      "path": "CASES.md"
+    },
+    {
+      "line": 10456,
+      "object_id": "D121",
+      "context": "中文：案例说明：CAI编码能力关键瓶颈 — frecombine（概念碰撞率）和ηencode(Q*)（最优共享度），前者依赖D121实现，后者依赖D66遮蔽与共享的平衡。核心函数：[D67](docs/zh/functions/items/D67.md)",
+      "path": "CASES.md"
+    }
+  ],
+  "bare_id_finding_count": 3359,
+  "target_errors": [
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 20,
+      "object_id": "T1",
+      "actual": "docs/zh/functions/items/T1.md",
+      "expected": "../../docs/zh/functions/items/T1.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 21,
+      "object_id": "T2",
+      "actual": "docs/zh/functions/items/T2.md",
+      "expected": "../../docs/zh/functions/items/T2.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 22,
+      "object_id": "T3",
+      "actual": "docs/zh/functions/items/T3.md",
+      "expected": "../../docs/zh/functions/items/T3.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 23,
+      "object_id": "T4",
+      "actual": "docs/zh/functions/items/T4.md",
+      "expected": "../../docs/zh/functions/items/T4.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 24,
+      "object_id": "T5",
+      "actual": "docs/zh/functions/items/T5.md",
+      "expected": "../../docs/zh/functions/items/T5.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 25,
+      "object_id": "T6",
+      "actual": "docs/zh/functions/items/T6.md",
+      "expected": "../../docs/zh/functions/items/T6.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 26,
+      "object_id": "T7",
+      "actual": "docs/zh/functions/items/T7.md",
+      "expected": "../../docs/zh/functions/items/T7.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 27,
+      "object_id": "T8",
+      "actual": "docs/zh/functions/items/T8.md",
+      "expected": "../../docs/zh/functions/items/T8.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 28,
+      "object_id": "T9",
+      "actual": "docs/zh/functions/items/T9.md",
+      "expected": "../../docs/zh/functions/items/T9.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 29,
+      "object_id": "T10",
+      "actual": "docs/zh/functions/items/T10.md",
+      "expected": "../../docs/zh/functions/items/T10.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 30,
+      "object_id": "T11",
+      "actual": "docs/zh/functions/items/T11.md",
+      "expected": "../../docs/zh/functions/items/T11.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 31,
+      "object_id": "T12",
+      "actual": "docs/zh/functions/items/T12.md",
+      "expected": "../../docs/zh/functions/items/T12.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 32,
+      "object_id": "T13",
+      "actual": "docs/zh/functions/items/T13.md",
+      "expected": "../../docs/zh/functions/items/T13.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 33,
+      "object_id": "T14",
+      "actual": "docs/zh/functions/items/T14.md",
+      "expected": "../../docs/zh/functions/items/T14.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 34,
+      "object_id": "T15",
+      "actual": "docs/zh/functions/items/T15.md",
+      "expected": "../../docs/zh/functions/items/T15.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 35,
+      "object_id": "T16",
+      "actual": "docs/zh/functions/items/T16.md",
+      "expected": "../../docs/zh/functions/items/T16.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 36,
+      "object_id": "T17",
+      "actual": "docs/zh/functions/items/T17.md",
+      "expected": "../../docs/zh/functions/items/T17.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 37,
+      "object_id": "T18",
+      "actual": "docs/zh/functions/items/T18.md",
+      "expected": "../../docs/zh/functions/items/T18.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 38,
+      "object_id": "T19",
+      "actual": "docs/zh/functions/items/T19.md",
+      "expected": "../../docs/zh/functions/items/T19.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 39,
+      "object_id": "T20",
+      "actual": "docs/zh/functions/items/T20.md",
+      "expected": "../../docs/zh/functions/items/T20.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 40,
+      "object_id": "T21",
+      "actual": "docs/zh/functions/items/T21.md",
+      "expected": "../../docs/zh/functions/items/T21.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 41,
+      "object_id": "T22",
+      "actual": "docs/zh/functions/items/T22.md",
+      "expected": "../../docs/zh/functions/items/T22.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 42,
+      "object_id": "T23",
+      "actual": "docs/zh/functions/items/T23.md",
+      "expected": "../../docs/zh/functions/items/T23.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 43,
+      "object_id": "T24",
+      "actual": "docs/zh/functions/items/T24.md",
+      "expected": "../../docs/zh/functions/items/T24.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 44,
+      "object_id": "T25",
+      "actual": "docs/zh/functions/items/T25.md",
+      "expected": "../../docs/zh/functions/items/T25.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 45,
+      "object_id": "T26",
+      "actual": "docs/zh/functions/items/T26.md",
+      "expected": "../../docs/zh/functions/items/T26.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 46,
+      "object_id": "T27",
+      "actual": "docs/zh/functions/items/T27.md",
+      "expected": "../../docs/zh/functions/items/T27.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 47,
+      "object_id": "T28",
+      "actual": "docs/zh/functions/items/T28.md",
+      "expected": "../../docs/zh/functions/items/T28.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 48,
+      "object_id": "T29",
+      "actual": "docs/zh/functions/items/T29.md",
+      "expected": "../../docs/zh/functions/items/T29.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 49,
+      "object_id": "T30",
+      "actual": "docs/zh/functions/items/T30.md",
+      "expected": "../../docs/zh/functions/items/T30.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 50,
+      "object_id": "T31",
+      "actual": "docs/zh/functions/items/T31.md",
+      "expected": "../../docs/zh/functions/items/T31.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 51,
+      "object_id": "T32",
+      "actual": "docs/zh/functions/items/T32.md",
+      "expected": "../../docs/zh/functions/items/T32.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 52,
+      "object_id": "T33",
+      "actual": "docs/zh/functions/items/T33.md",
+      "expected": "../../docs/zh/functions/items/T33.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 53,
+      "object_id": "T34",
+      "actual": "docs/zh/functions/items/T34.md",
+      "expected": "../../docs/zh/functions/items/T34.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 54,
+      "object_id": "T35",
+      "actual": "docs/zh/functions/items/T35.md",
+      "expected": "../../docs/zh/functions/items/T35.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 55,
+      "object_id": "T36",
+      "actual": "docs/zh/functions/items/T36.md",
+      "expected": "../../docs/zh/functions/items/T36.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 56,
+      "object_id": "T37",
+      "actual": "docs/zh/functions/items/T37.md",
+      "expected": "../../docs/zh/functions/items/T37.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 57,
+      "object_id": "T38",
+      "actual": "docs/zh/functions/items/T38.md",
+      "expected": "../../docs/zh/functions/items/T38.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 58,
+      "object_id": "T39",
+      "actual": "docs/zh/functions/items/T39.md",
+      "expected": "../../docs/zh/functions/items/T39.md"
+    },
+    {
+      "path": "data/functions/unified-functions-index.md",
+      "line": 59,
+      "object_id": "D1",
+      "actual": "docs/zh/functions/items/D1.md",
+      "expected": "../../docs/zh/functions/items/D1.md"
+    }
+  ],
+  "target_error_count": 482,
+  "skipped_files": []
+}
