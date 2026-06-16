@@ -1,0 +1,47 @@
+{
+  "report_type": "build_projection_sets",
+  "branch": "review/build-projection-sets-20260616-2350",
+  "commit": "289579e0d0b0190034e0773372fd2165463ed5f1",
+  "generated_at": "2026-06-17T00:59:49Z",
+  "projection_set_counts": {
+    "discovery": 55,
+    "prediction": 31,
+    "new_answer": 30,
+    "analytic_solution": 1,
+    "total_functions": 104,
+    "total_rows": 117,
+    "projection_set_crosswalk_items": 155
+  },
+  "scholarly_search": {
+    "total_projection_functions": 104,
+    "actual_functions_searched": 2,
+    "scholarly_search_found": 0,
+    "scholarly_search_not_found_yet": 2,
+    "search_pending": 102,
+    "coverage_complete": false,
+    "links_required_for_found": true,
+    "exclusive_claim_used": false,
+    "all_not_found_statuses_have_query_logs": true,
+    "note": "T20 (解析解) 和 D307 (σ_opt微观起源函数) 已完成真实逐条学术搜索。其余函数标记为search_pending，待后续批次执行。"
+  },
+  "analytic_solution": {
+    "analytic_solution_count": 1,
+    "needs_human_review": true,
+    "confirmed_solutions": [
+      "SOL-0001"
+    ],
+    "ambiguous_candidates": [
+      "D307",
+      "ANS-0010"
+    ]
+  },
+  "safety": {
+    "main_push_executed": false,
+    "no_exclusive_claim": true,
+    "no_novelty_passed": true,
+    "no_function_body_modified": true,
+    "no_case_body_modified": true,
+    "secrets_detected": false
+  },
+  "pipeline_stage": "fix_audit_review"
+}

@@ -1,0 +1,28 @@
+{
+  "task": "confirm_analytic_solution_count",
+  "analytic_solution_count": 1,
+  "analytic_solution_ids": [
+    "SOL-0001"
+  ],
+  "analytic_solution_titles": [
+    "σ_opt=√e解析解"
+  ],
+  "source_files_checked": [
+    "ANALYTIC_SOLUTIONS.md",
+    "data/analytic-solutions/unified-analytic-solutions.json",
+    "data/analytic-solutions/unified-analytic-solutions.jsonl",
+    "data/normalized-jsonl/analytic-solutions.jsonl",
+    "data/rebuild/analytic-solution-derivation-report.md",
+    "data/rebuild/analytic-solutions-bootstrap-closure-report.md"
+  ],
+  "ambiguous_candidates": [
+    "D307",
+    "ANS-0010"
+  ],
+  "confirmed_solutions": [
+    "SOL-0001"
+  ],
+  "needs_human_review": true,
+  "note": "经全面检索，当前仓库中仅有一个解析解 (SOL-0001)。D307 正文虽提到'解析解'但指向同一结果；ANS-0010 标题含'解析解'但属于答案条目而非解析解表条目。如果 D307 应升级为独立的解析解条目，或 ANS-0010 应同时加入解析解表，需人工判定。",
+  "reason": "D307 与 ANS-0010 是否应升级为独立解析解条目需人工判断。D307 正文提及与 SOL-0001 相同的结果 σ_opt=√e，不形成独立第二个解析解；ANS-0010 标题含'解析解'但属于 Answer 条目而非解析解表条目。但这些判断存在潜在争议，保留人工复核。"
+}
