@@ -57,9 +57,10 @@ Do not treat raw notes as canonical. Raw notes are sources. Current structured e
 
 投影集合是从统一函数总表中抽取出符合某类发现性质的函数子集。
 
+此集合源于函数表与案例表交叉自举发现。投影集合不是学术新颖性声明，也不包含外部学术检索结论。外部检索可由读者或后续研究者自行进行。
+
 - [投影集合入口 / Projection Sets](DISCOVERY_PROJECTION_SETS.md)
 - 机器数据: `data/projection-sets/discovery-projection-sets.jsonl`
-- 学术搜索状态: `data/projection-sets/scholarly-search-status.jsonl`
 - 解析解数量报告: `data/projection-sets/analytic-solution-count-report.md`
 - 交叉引用表: `data/projection-sets/projection-set-crosswalk.md`
 - 构建报告: `data/reports/build-projection-sets-report.md`
