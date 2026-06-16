@@ -1,0 +1,42 @@
+{
+  "discoveries": {
+    "curated": 0,
+    "leads": 0,
+    "passed_novelty": 0,
+    "pending_novelty": 0,
+    "inconclusive_novelty": 0,
+    "failed_novelty": 0
+  },
+  "predictions": {
+    "curated": 8,
+    "leads": 0,
+    "passed_novelty": 0,
+    "pending_novelty": 0,
+    "inconclusive_novelty": 8,
+    "failed_novelty": 0
+  },
+  "answers": {
+    "curated": 0,
+    "leads": 12,
+    "passed_novelty": 0,
+    "pending_novelty": 0,
+    "inconclusive_novelty": 12,
+    "failed_novelty": 0
+  },
+  "analytic_solutions": {
+    "active": 0,
+    "leads": 1
+  },
+  "functions": {
+    "meta": 1,
+    "bootstrap_internal": 5,
+    "bootstrap_total": 6,
+    "ordinary": 475,
+    "total": 476,
+    "display": "1 meta-function, 5 bootstrap items, 475 ordinary functions"
+  },
+  "cases": {
+    "total": 594
+  }
+}
+README overview block is out of date

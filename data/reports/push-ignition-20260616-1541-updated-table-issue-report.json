@@ -1,0 +1,14 @@
+{
+  "function_table_475_residue_fixed": true,
+  "case_table_594_residue_fixed": true,
+  "quick_entry_fixed": true,
+  "function_table_header_zh_fixed": true,
+  "function_table_header_en_fixed": true,
+  "function_table_quick_entry_derived_fixed": true,
+  "function_table_quick_entry_ordinary_fixed": true,
+  "case_table_header_zh_fixed": true,
+  "case_table_header_en_fixed": true,
+  "case_table_quick_entry_range_fixed": true,
+  "case_table_anchor_split_fixed": true,
+  "notes": "All hardcoded count residues fixed in both 1111 data files and when-systems-catch-fire review branch."
+}

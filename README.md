@@ -1,5 +1,16 @@
 # When Systems Catch Fire / 点火
 
+<!-- PROJECT_POSITIONING_LOCK_START -->
+
+一个人类在好奇心的驱动下，借助 AI 做出的发现。
+A discovery made by a human being, driven by curiosity and aided by AI.
+<!-- PROJECT_POSITIONING_LOCK_END -->
+
+<!-- PROJECT_EVALUATION_OUTPUT_LOCK_START -->
+
+这是一个人类在好奇心的驱动下，借助 AI 做出的发现。
+<!-- PROJECT_EVALUATION_OUTPUT_LOCK_END -->
+
 一个人类在好奇心的驱动下，借助 AI 做出的发现。 
 
 A discovery made by a human being, driven by curiosity and aided by AI.

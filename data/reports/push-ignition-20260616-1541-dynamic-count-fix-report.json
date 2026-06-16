@@ -1,0 +1,15 @@
+{
+  "function_table_old_count_detected": 475,
+  "function_table_expected_ordinary_functions": 515,
+  "function_table_count_fixed": true,
+  "case_table_old_count_detected": 594,
+  "case_table_expected_cases": 654,
+  "case_table_count_fixed": true,
+  "quick_entry_fixed": true,
+  "readme_count_checked": false,
+  "functions_md_checked": true,
+  "cases_md_checked": true,
+  "normalized_jsonl_checked": "unknown",
+  "object_links_checked": "unknown",
+  "notes": "FUNCTIONS.md and CASES.md header counts updated; quick entry sections split. Normalized JSONL and object links skipped as they contain raw data, not header metadata."
+}

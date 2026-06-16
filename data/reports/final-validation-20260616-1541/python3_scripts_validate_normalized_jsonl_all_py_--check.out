@@ -1,0 +1,9 @@
+Normalized JSONL validation passed: True
+  functions.jsonl: lines=718 OK
+  cases.jsonl: lines=726 OK
+  discoveries.jsonl: lines=88 OK
+  predictions.jsonl: lines=8 OK
+  answers.jsonl: lines=12 OK
+  analytic-solutions.jsonl: lines=1 OK
+  function-case-relations.jsonl: lines=0 OK
+  object-classification-crosswalk.jsonl: lines=1 OK
