@@ -1,7 +1,7 @@
 # 统一案例总表 / Unified Case Table
 
-本表收录 594 个点火案例。每个案例都包含编号、案例内容、关联函数和来源回指。
-This table contains 594 ignition cases. Each case includes its ID, content, related functions, and source reference.
+本表收录 654 个点火案例。每个案例都包含编号、案例内容、关联函数和来源回指。
+This table contains 654 ignition cases. Each case includes its ID, content, related functions, and source reference.
 
 ## 快速入口 / Quick Entry
 
@@ -10,7 +10,8 @@ This table contains 594 ignition cases. Each case includes its ID, content, rela
 - [#201–#300](#case-range-201-300)
 - [#301–#400](#case-range-301-400)
 - [#401–#500](#case-range-401-500)
-- [#501–#594](#case-range-501-594)
+- [#501–#600](#case-range-501-600)
+- [#601–#654](#case-range-601-654)
 - 机器数据 / Machine data：[`data/cases/unified-cases.json`](data/cases/unified-cases.json)
 - JSONL：[`data/cases/unified-cases.jsonl`](data/cases/unified-cases.jsonl)
 - 重建审计 / Rebuild audit：[`data/rebuild/human-entry-render-report.md`](data/rebuild/human-entry-render-report.md)
@@ -17688,9 +17689,9 @@ English: Rule-based English rendering pending human review.
 
 </details>
 
-<a id="case-range-501-594"></a>
+<a id="case-range-501-600"></a>
 <details>
-<summary>#501–#594 / #501–#594</summary>
+<summary>#501–#600 / #501–#600</summary>
 
 ### [#501｜D152严格检验](docs/zh/cases/items/C-0501.md)
 
@@ -21019,9 +21020,9 @@ English: Rule-based English rendering pending human review.
 </details>
 
 
-<a id="case-range-new"></a>
+<a id="case-range-601-654"></a>
 <details open>
-<summary>#595–#654 / 新增60个案例（OrcaRouter/跑步API/空间函数/退出权空间化/宇宙信息）</summary>
+<summary>#601–#654 / #601–#654</summary>
 
 > 来源：正反交叉自举复核（2026-06-16）| 方法：J⁺/J⁻ 核验 | 状态：全部 converged
 

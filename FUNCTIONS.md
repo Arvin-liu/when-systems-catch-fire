@@ -1,15 +1,15 @@
 # 统一函数总表 / Unified Function Table
 
-本表收录 1 条第 0 节主入口、5 条内部子项和 475 条普通函数。每条条目都包含编号、名称、函数内容、关联对象和来源回指。
-This table contains 1 Section 0 root meta-function, 5 internal subitems, and 475 ordinary functions. Each entry includes its ID, title, content, related objects, and source reference.
+本表收录 1 条第 0 节主入口、5 条内部子项和 515 条普通函数。每条条目都包含编号、名称、函数内容、关联对象和来源回指。
+This table contains 1 Section 0 root meta-function, 5 internal subitems, and 515 ordinary functions. Each entry includes its ID, title, content, related objects, and source reference.
 
 ## 快速入口 / Quick Entry
 
 - [第 0 节 / Section 0](#section-0-bootstrap-meta-function)：1 条主入口 + 5 条内部子项 / 1 root entry + 5 internal subitems
 - [公理层 / Axioms](#function-level-axiom)：9 条 / 9 entries
 - [定理层 / Theorems](#function-level-theorem)：39 条 / 39 entries
-- [推论层 / Derived functions](#function-level-derived-function)：427 条 / 427 entries
-- [普通函数 / Ordinary functions](#function-level-derived-function)：475 条 / 475 entries
+- [推论层 / Derived functions](#function-level-derived-function)：467 条 / 467 entries
+- [普通函数 / Ordinary functions](#function-level-derived-function)：515 条 / 515 entries
 - 机器数据 / Machine data：[`data/functions/meta-functions.json`](data/functions/meta-functions.json), [`data/functions/unified-functions.json`](data/functions/unified-functions.json)
 - 双通道结构 / Dual-channel structure：[`data/functions/bootstrap-meta-function-table.md`](data/functions/bootstrap-meta-function-table.md), [`data/functions/bootstrap-meta-function-table.json`](data/functions/bootstrap-meta-function-table.json), [`data/functions/bootstrap-meta-function-table.jsonl`](data/functions/bootstrap-meta-function-table.jsonl)
 - JSONL：[`data/functions/meta-functions.jsonl`](data/functions/meta-functions.jsonl), [`data/functions/unified-functions.jsonl`](data/functions/unified-functions.jsonl)
