@@ -1,0 +1,1554 @@
+{
+  "relations": [
+    {
+      "relation_id": "REL-0001",
+      "from_type": "function",
+      "from_id": "D226",
+      "to_type": "discovery",
+      "to_id": "DISC-0001",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D226 is a core function for discovery DISC-0001"
+    },
+    {
+      "relation_id": "REL-0002",
+      "from_type": "function",
+      "from_id": "D217",
+      "to_type": "discovery",
+      "to_id": "DISC-0002",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D217 is a core function for discovery DISC-0002"
+    },
+    {
+      "relation_id": "REL-0003",
+      "from_type": "function",
+      "from_id": "T34",
+      "to_type": "discovery",
+      "to_id": "DISC-0003",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "T34 is a core function for discovery DISC-0003"
+    },
+    {
+      "relation_id": "REL-0004",
+      "from_type": "function",
+      "from_id": "D58",
+      "to_type": "discovery",
+      "to_id": "DISC-0006",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D58 is a core function for discovery DISC-0006"
+    },
+    {
+      "relation_id": "REL-0005",
+      "from_type": "function",
+      "from_id": "D245",
+      "to_type": "discovery",
+      "to_id": "DISC-0007",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D245 is a core function for discovery DISC-0007"
+    },
+    {
+      "relation_id": "REL-0006",
+      "from_type": "function",
+      "from_id": "D250",
+      "to_type": "discovery",
+      "to_id": "DISC-0008",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D250 is a core function for discovery DISC-0008"
+    },
+    {
+      "relation_id": "REL-0007",
+      "from_type": "function",
+      "from_id": "D466",
+      "to_type": "discovery",
+      "to_id": "DISC-0011",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D466 is a core function for discovery DISC-0011"
+    },
+    {
+      "relation_id": "REL-0008",
+      "from_type": "function",
+      "from_id": "D212",
+      "to_type": "discovery",
+      "to_id": "DISC-0012",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D212 is a core function for discovery DISC-0012"
+    },
+    {
+      "relation_id": "REL-0009",
+      "from_type": "function",
+      "from_id": "D122",
+      "to_type": "discovery",
+      "to_id": "DISC-0013",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D122 is a core function for discovery DISC-0013"
+    },
+    {
+      "relation_id": "REL-0010",
+      "from_type": "function",
+      "from_id": "D237",
+      "to_type": "discovery",
+      "to_id": "DISC-0016",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D237 is a core function for discovery DISC-0016"
+    },
+    {
+      "relation_id": "REL-0011",
+      "from_type": "function",
+      "from_id": "D467",
+      "to_type": "discovery",
+      "to_id": "DISC-0017",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D467 is a core function for discovery DISC-0017"
+    },
+    {
+      "relation_id": "REL-0012",
+      "from_type": "function",
+      "from_id": "D124",
+      "to_type": "discovery",
+      "to_id": "DISC-0018",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D124 is a core function for discovery DISC-0018"
+    },
+    {
+      "relation_id": "REL-0013",
+      "from_type": "function",
+      "from_id": "D241",
+      "to_type": "discovery",
+      "to_id": "DISC-0021",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D241 is a core function for discovery DISC-0021"
+    },
+    {
+      "relation_id": "REL-0014",
+      "from_type": "function",
+      "from_id": "D244",
+      "to_type": "discovery",
+      "to_id": "DISC-0022",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D244 is a core function for discovery DISC-0022"
+    },
+    {
+      "relation_id": "REL-0015",
+      "from_type": "function",
+      "from_id": "D125",
+      "to_type": "discovery",
+      "to_id": "DISC-0023",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D125 is a core function for discovery DISC-0023"
+    },
+    {
+      "relation_id": "REL-0016",
+      "from_type": "function",
+      "from_id": "D367",
+      "to_type": "discovery",
+      "to_id": "DISC-0026",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D367 is a core function for discovery DISC-0026"
+    },
+    {
+      "relation_id": "REL-0017",
+      "from_type": "function",
+      "from_id": "D121",
+      "to_type": "discovery",
+      "to_id": "DISC-0027",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D121 is a core function for discovery DISC-0027"
+    },
+    {
+      "relation_id": "REL-0018",
+      "from_type": "function",
+      "from_id": "D60",
+      "to_type": "discovery",
+      "to_id": "DISC-0028",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D60 is a core function for discovery DISC-0028"
+    },
+    {
+      "relation_id": "REL-0019",
+      "from_type": "function",
+      "from_id": "D226",
+      "to_type": "discovery",
+      "to_id": "DISC-0031",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D226 is a core function for discovery DISC-0031"
+    },
+    {
+      "relation_id": "REL-0020",
+      "from_type": "function",
+      "from_id": "D220",
+      "to_type": "discovery",
+      "to_id": "DISC-0032",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D220 is a core function for discovery DISC-0032"
+    },
+    {
+      "relation_id": "REL-0021",
+      "from_type": "function",
+      "from_id": "T23",
+      "to_type": "discovery",
+      "to_id": "DISC-0033",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "T23 is a core function for discovery DISC-0033"
+    },
+    {
+      "relation_id": "REL-0022",
+      "from_type": "function",
+      "from_id": "D108",
+      "to_type": "discovery",
+      "to_id": "DISC-0036",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D108 is a core function for discovery DISC-0036"
+    },
+    {
+      "relation_id": "REL-0023",
+      "from_type": "function",
+      "from_id": "D115",
+      "to_type": "discovery",
+      "to_id": "DISC-0037",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D115 is a core function for discovery DISC-0037"
+    },
+    {
+      "relation_id": "REL-0024",
+      "from_type": "function",
+      "from_id": "D116",
+      "to_type": "discovery",
+      "to_id": "DISC-0038",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D116 is a core function for discovery DISC-0038"
+    },
+    {
+      "relation_id": "REL-0025",
+      "from_type": "function",
+      "from_id": "D25",
+      "to_type": "discovery",
+      "to_id": "DISC-0041",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D25 is a core function for discovery DISC-0041"
+    },
+    {
+      "relation_id": "REL-0026",
+      "from_type": "function",
+      "from_id": "D14",
+      "to_type": "discovery",
+      "to_id": "DISC-0042",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D14 is a core function for discovery DISC-0042"
+    },
+    {
+      "relation_id": "REL-0027",
+      "from_type": "function",
+      "from_id": "D261",
+      "to_type": "discovery",
+      "to_id": "DISC-0044",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D261 is a core function for discovery DISC-0044"
+    },
+    {
+      "relation_id": "REL-0028",
+      "from_type": "function",
+      "from_id": "D161",
+      "to_type": "discovery",
+      "to_id": "DISC-0045",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D161 is a core function for discovery DISC-0045"
+    },
+    {
+      "relation_id": "REL-0029",
+      "from_type": "function",
+      "from_id": "D170",
+      "to_type": "discovery",
+      "to_id": "DISC-0046",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D170 is a core function for discovery DISC-0046"
+    },
+    {
+      "relation_id": "REL-0030",
+      "from_type": "function",
+      "from_id": "D23",
+      "to_type": "discovery",
+      "to_id": "DISC-0049",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D23 is a core function for discovery DISC-0049"
+    },
+    {
+      "relation_id": "REL-0031",
+      "from_type": "function",
+      "from_id": "D22",
+      "to_type": "discovery",
+      "to_id": "DISC-0050",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D22 is a core function for discovery DISC-0050"
+    },
+    {
+      "relation_id": "REL-0032",
+      "from_type": "function",
+      "from_id": "A7",
+      "to_type": "discovery",
+      "to_id": "DISC-0051",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "A7 is a core function for discovery DISC-0051"
+    },
+    {
+      "relation_id": "REL-0033",
+      "from_type": "function",
+      "from_id": "D320",
+      "to_type": "discovery",
+      "to_id": "DISC-0054",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D320 is a core function for discovery DISC-0054"
+    },
+    {
+      "relation_id": "REL-0034",
+      "from_type": "function",
+      "from_id": "D108",
+      "to_type": "discovery",
+      "to_id": "DISC-0055",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D108 is a core function for discovery DISC-0055"
+    },
+    {
+      "relation_id": "REL-0035",
+      "from_type": "function",
+      "from_id": "D252",
+      "to_type": "discovery",
+      "to_id": "DISC-0056",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D252 is a core function for discovery DISC-0056"
+    },
+    {
+      "relation_id": "REL-0036",
+      "from_type": "function",
+      "from_id": "D171",
+      "to_type": "discovery",
+      "to_id": "DISC-0059",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D171 is a core function for discovery DISC-0059"
+    },
+    {
+      "relation_id": "REL-0037",
+      "from_type": "function",
+      "from_id": "D245",
+      "to_type": "discovery",
+      "to_id": "DISC-0060",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D245 is a core function for discovery DISC-0060"
+    },
+    {
+      "relation_id": "REL-0038",
+      "from_type": "function",
+      "from_id": "D95",
+      "to_type": "discovery",
+      "to_id": "DISC-0061",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D95 is a core function for discovery DISC-0061"
+    },
+    {
+      "relation_id": "REL-0039",
+      "from_type": "function",
+      "from_id": "D469",
+      "to_type": "discovery",
+      "to_id": "DISC-0064",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D469 is a core function for discovery DISC-0064"
+    },
+    {
+      "relation_id": "REL-0040",
+      "from_type": "function",
+      "from_id": "D470",
+      "to_type": "discovery",
+      "to_id": "DISC-0065",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D470 is a core function for discovery DISC-0065"
+    },
+    {
+      "relation_id": "REL-0041",
+      "from_type": "function",
+      "from_id": "D123",
+      "to_type": "discovery",
+      "to_id": "DISC-0066",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D123 is a core function for discovery DISC-0066"
+    },
+    {
+      "relation_id": "REL-0042",
+      "from_type": "function",
+      "from_id": "D424",
+      "to_type": "discovery",
+      "to_id": "DISC-0069",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D424 is a core function for discovery DISC-0069"
+    },
+    {
+      "relation_id": "REL-0043",
+      "from_type": "function",
+      "from_id": "D275",
+      "to_type": "discovery",
+      "to_id": "DISC-0070",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D275 is a core function for discovery DISC-0070"
+    },
+    {
+      "relation_id": "REL-0044",
+      "from_type": "function",
+      "from_id": "D248",
+      "to_type": "discovery",
+      "to_id": "DISC-0071",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D248 is a core function for discovery DISC-0071"
+    },
+    {
+      "relation_id": "REL-0045",
+      "from_type": "function",
+      "from_id": "D469",
+      "to_type": "discovery",
+      "to_id": "DISC-0074",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D469 is a core function for discovery DISC-0074"
+    },
+    {
+      "relation_id": "REL-0046",
+      "from_type": "function",
+      "from_id": "D259",
+      "to_type": "discovery",
+      "to_id": "DISC-0075",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D259 is a core function for discovery DISC-0075"
+    },
+    {
+      "relation_id": "REL-0047",
+      "from_type": "function",
+      "from_id": "D128",
+      "to_type": "discovery",
+      "to_id": "DISC-0076",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D128 is a core function for discovery DISC-0076"
+    },
+    {
+      "relation_id": "REL-0048",
+      "from_type": "function",
+      "from_id": "A4",
+      "to_type": "discovery",
+      "to_id": "DISC-0079",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "A4 is a core function for discovery DISC-0079"
+    },
+    {
+      "relation_id": "REL-0049",
+      "from_type": "function",
+      "from_id": "A6",
+      "to_type": "discovery",
+      "to_id": "DISC-0080",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "A6 is a core function for discovery DISC-0080"
+    },
+    {
+      "relation_id": "REL-0050",
+      "from_type": "function",
+      "from_id": "A9",
+      "to_type": "discovery",
+      "to_id": "DISC-0081",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "A9 is a core function for discovery DISC-0081"
+    },
+    {
+      "relation_id": "REL-0051",
+      "from_type": "function",
+      "from_id": "D471",
+      "to_type": "discovery",
+      "to_id": "DISC-0084",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D471 is a core function for discovery DISC-0084"
+    },
+    {
+      "relation_id": "REL-0052",
+      "from_type": "function",
+      "from_id": "D342",
+      "to_type": "discovery",
+      "to_id": "DISC-0084",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D342 is a core function for discovery DISC-0084"
+    },
+    {
+      "relation_id": "REL-0053",
+      "from_type": "function",
+      "from_id": "D472",
+      "to_type": "discovery",
+      "to_id": "DISC-0085",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D472 is a core function for discovery DISC-0085"
+    },
+    {
+      "relation_id": "REL-0054",
+      "from_type": "function",
+      "from_id": "A8",
+      "to_type": "discovery",
+      "to_id": "DISC-0085",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "A8 is a core function for discovery DISC-0085"
+    },
+    {
+      "relation_id": "REL-0055",
+      "from_type": "function",
+      "from_id": "D237",
+      "to_type": "discovery",
+      "to_id": "DISC-0085",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D237 is a core function for discovery DISC-0085"
+    },
+    {
+      "relation_id": "REL-0056",
+      "from_type": "function",
+      "from_id": "D473",
+      "to_type": "discovery",
+      "to_id": "DISC-0086",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D473 is a core function for discovery DISC-0086"
+    },
+    {
+      "relation_id": "REL-0057",
+      "from_type": "function",
+      "from_id": "D194",
+      "to_type": "discovery",
+      "to_id": "DISC-0086",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D194 is a core function for discovery DISC-0086"
+    },
+    {
+      "relation_id": "REL-0058",
+      "from_type": "function",
+      "from_id": "D232",
+      "to_type": "discovery",
+      "to_id": "DISC-0086",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D232 is a core function for discovery DISC-0086"
+    },
+    {
+      "relation_id": "REL-0059",
+      "from_type": "function",
+      "from_id": "D474",
+      "to_type": "discovery",
+      "to_id": "DISC-0087",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D474 is a core function for discovery DISC-0087"
+    },
+    {
+      "relation_id": "REL-0060",
+      "from_type": "function",
+      "from_id": "D124",
+      "to_type": "discovery",
+      "to_id": "DISC-0087",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D124 is a core function for discovery DISC-0087"
+    },
+    {
+      "relation_id": "REL-0061",
+      "from_type": "function",
+      "from_id": "D475",
+      "to_type": "discovery",
+      "to_id": "DISC-0088",
+      "relation_type": "function_to_discovery",
+      "confidence": "medium",
+      "note": "D475 is a core function for discovery DISC-0088"
+    },
+    {
+      "relation_id": "REL-0062",
+      "from_type": "function",
+      "from_id": "D155",
+      "to_type": "prediction",
+      "to_id": "PRED-0001",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D155 is a core function for prediction PRED-0001"
+    },
+    {
+      "relation_id": "REL-0063",
+      "from_type": "function",
+      "from_id": "D198",
+      "to_type": "prediction",
+      "to_id": "PRED-0001",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D198 is a core function for prediction PRED-0001"
+    },
+    {
+      "relation_id": "REL-0064",
+      "from_type": "function",
+      "from_id": "D203",
+      "to_type": "prediction",
+      "to_id": "PRED-0001",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D203 is a core function for prediction PRED-0001"
+    },
+    {
+      "relation_id": "REL-0065",
+      "from_type": "function",
+      "from_id": "D204",
+      "to_type": "prediction",
+      "to_id": "PRED-0001",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D204 is a core function for prediction PRED-0001"
+    },
+    {
+      "relation_id": "REL-0066",
+      "from_type": "function",
+      "from_id": "D130",
+      "to_type": "prediction",
+      "to_id": "PRED-0001",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D130 is a core function for prediction PRED-0001"
+    },
+    {
+      "relation_id": "REL-0067",
+      "from_type": "function",
+      "from_id": "D130",
+      "to_type": "prediction",
+      "to_id": "PRED-0002",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D130 is a core function for prediction PRED-0002"
+    },
+    {
+      "relation_id": "REL-0068",
+      "from_type": "function",
+      "from_id": "D155",
+      "to_type": "prediction",
+      "to_id": "PRED-0002",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D155 is a core function for prediction PRED-0002"
+    },
+    {
+      "relation_id": "REL-0069",
+      "from_type": "function",
+      "from_id": "D198",
+      "to_type": "prediction",
+      "to_id": "PRED-0002",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D198 is a core function for prediction PRED-0002"
+    },
+    {
+      "relation_id": "REL-0070",
+      "from_type": "function",
+      "from_id": "D203",
+      "to_type": "prediction",
+      "to_id": "PRED-0002",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D203 is a core function for prediction PRED-0002"
+    },
+    {
+      "relation_id": "REL-0071",
+      "from_type": "function",
+      "from_id": "A3",
+      "to_type": "prediction",
+      "to_id": "PRED-0003",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "A3 is a core function for prediction PRED-0003"
+    },
+    {
+      "relation_id": "REL-0072",
+      "from_type": "function",
+      "from_id": "A5",
+      "to_type": "prediction",
+      "to_id": "PRED-0003",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "A5 is a core function for prediction PRED-0003"
+    },
+    {
+      "relation_id": "REL-0073",
+      "from_type": "function",
+      "from_id": "A7",
+      "to_type": "prediction",
+      "to_id": "PRED-0003",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "A7 is a core function for prediction PRED-0003"
+    },
+    {
+      "relation_id": "REL-0074",
+      "from_type": "function",
+      "from_id": "A9",
+      "to_type": "prediction",
+      "to_id": "PRED-0003",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "A9 is a core function for prediction PRED-0003"
+    },
+    {
+      "relation_id": "REL-0075",
+      "from_type": "function",
+      "from_id": "A3",
+      "to_type": "prediction",
+      "to_id": "PRED-0004",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "A3 is a core function for prediction PRED-0004"
+    },
+    {
+      "relation_id": "REL-0076",
+      "from_type": "function",
+      "from_id": "A5",
+      "to_type": "prediction",
+      "to_id": "PRED-0004",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "A5 is a core function for prediction PRED-0004"
+    },
+    {
+      "relation_id": "REL-0077",
+      "from_type": "function",
+      "from_id": "A9",
+      "to_type": "prediction",
+      "to_id": "PRED-0004",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "A9 is a core function for prediction PRED-0004"
+    },
+    {
+      "relation_id": "REL-0078",
+      "from_type": "function",
+      "from_id": "A8",
+      "to_type": "prediction",
+      "to_id": "PRED-0005",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "A8 is a core function for prediction PRED-0005"
+    },
+    {
+      "relation_id": "REL-0079",
+      "from_type": "function",
+      "from_id": "T5",
+      "to_type": "prediction",
+      "to_id": "PRED-0005",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "T5 is a core function for prediction PRED-0005"
+    },
+    {
+      "relation_id": "REL-0080",
+      "from_type": "function",
+      "from_id": "D97",
+      "to_type": "prediction",
+      "to_id": "PRED-0005",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D97 is a core function for prediction PRED-0005"
+    },
+    {
+      "relation_id": "REL-0081",
+      "from_type": "function",
+      "from_id": "D193",
+      "to_type": "prediction",
+      "to_id": "PRED-0005",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D193 is a core function for prediction PRED-0005"
+    },
+    {
+      "relation_id": "REL-0082",
+      "from_type": "function",
+      "from_id": "D160",
+      "to_type": "prediction",
+      "to_id": "PRED-0006",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D160 is a core function for prediction PRED-0006"
+    },
+    {
+      "relation_id": "REL-0083",
+      "from_type": "function",
+      "from_id": "D163",
+      "to_type": "prediction",
+      "to_id": "PRED-0006",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D163 is a core function for prediction PRED-0006"
+    },
+    {
+      "relation_id": "REL-0084",
+      "from_type": "function",
+      "from_id": "D164",
+      "to_type": "prediction",
+      "to_id": "PRED-0006",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D164 is a core function for prediction PRED-0006"
+    },
+    {
+      "relation_id": "REL-0085",
+      "from_type": "function",
+      "from_id": "D165",
+      "to_type": "prediction",
+      "to_id": "PRED-0006",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D165 is a core function for prediction PRED-0006"
+    },
+    {
+      "relation_id": "REL-0086",
+      "from_type": "function",
+      "from_id": "D166",
+      "to_type": "prediction",
+      "to_id": "PRED-0006",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D166 is a core function for prediction PRED-0006"
+    },
+    {
+      "relation_id": "REL-0087",
+      "from_type": "function",
+      "from_id": "D167",
+      "to_type": "prediction",
+      "to_id": "PRED-0006",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D167 is a core function for prediction PRED-0006"
+    },
+    {
+      "relation_id": "REL-0088",
+      "from_type": "function",
+      "from_id": "D168",
+      "to_type": "prediction",
+      "to_id": "PRED-0006",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D168 is a core function for prediction PRED-0006"
+    },
+    {
+      "relation_id": "REL-0089",
+      "from_type": "function",
+      "from_id": "D181",
+      "to_type": "prediction",
+      "to_id": "PRED-0006",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D181 is a core function for prediction PRED-0006"
+    },
+    {
+      "relation_id": "REL-0090",
+      "from_type": "function",
+      "from_id": "D186",
+      "to_type": "prediction",
+      "to_id": "PRED-0007",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D186 is a core function for prediction PRED-0007"
+    },
+    {
+      "relation_id": "REL-0091",
+      "from_type": "function",
+      "from_id": "D220",
+      "to_type": "prediction",
+      "to_id": "PRED-0007",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D220 is a core function for prediction PRED-0007"
+    },
+    {
+      "relation_id": "REL-0092",
+      "from_type": "function",
+      "from_id": "D226",
+      "to_type": "prediction",
+      "to_id": "PRED-0007",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D226 is a core function for prediction PRED-0007"
+    },
+    {
+      "relation_id": "REL-0093",
+      "from_type": "function",
+      "from_id": "D229",
+      "to_type": "prediction",
+      "to_id": "PRED-0007",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D229 is a core function for prediction PRED-0007"
+    },
+    {
+      "relation_id": "REL-0094",
+      "from_type": "function",
+      "from_id": "D272",
+      "to_type": "prediction",
+      "to_id": "PRED-0007",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D272 is a core function for prediction PRED-0007"
+    },
+    {
+      "relation_id": "REL-0095",
+      "from_type": "function",
+      "from_id": "D318",
+      "to_type": "prediction",
+      "to_id": "PRED-0007",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D318 is a core function for prediction PRED-0007"
+    },
+    {
+      "relation_id": "REL-0096",
+      "from_type": "function",
+      "from_id": "D59",
+      "to_type": "prediction",
+      "to_id": "PRED-0008",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D59 is a core function for prediction PRED-0008"
+    },
+    {
+      "relation_id": "REL-0097",
+      "from_type": "function",
+      "from_id": "D102",
+      "to_type": "prediction",
+      "to_id": "PRED-0008",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D102 is a core function for prediction PRED-0008"
+    },
+    {
+      "relation_id": "REL-0098",
+      "from_type": "function",
+      "from_id": "D116",
+      "to_type": "prediction",
+      "to_id": "PRED-0008",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D116 is a core function for prediction PRED-0008"
+    },
+    {
+      "relation_id": "REL-0099",
+      "from_type": "function",
+      "from_id": "D119",
+      "to_type": "prediction",
+      "to_id": "PRED-0008",
+      "relation_type": "function_to_prediction",
+      "confidence": "medium",
+      "note": "D119 is a core function for prediction PRED-0008"
+    },
+    {
+      "relation_id": "REL-0100",
+      "from_type": "function",
+      "from_id": "D153",
+      "to_type": "new_answer",
+      "to_id": "ANS-0001",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D153 is a core function for answer ANS-0001"
+    },
+    {
+      "relation_id": "REL-0101",
+      "from_type": "function",
+      "from_id": "D156",
+      "to_type": "new_answer",
+      "to_id": "ANS-0001",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D156 is a core function for answer ANS-0001"
+    },
+    {
+      "relation_id": "REL-0102",
+      "from_type": "function",
+      "from_id": "D157",
+      "to_type": "new_answer",
+      "to_id": "ANS-0001",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D157 is a core function for answer ANS-0001"
+    },
+    {
+      "relation_id": "REL-0103",
+      "from_type": "function",
+      "from_id": "D153",
+      "to_type": "new_answer",
+      "to_id": "ANS-0002",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D153 is a core function for answer ANS-0002"
+    },
+    {
+      "relation_id": "REL-0104",
+      "from_type": "function",
+      "from_id": "D156",
+      "to_type": "new_answer",
+      "to_id": "ANS-0002",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D156 is a core function for answer ANS-0002"
+    },
+    {
+      "relation_id": "REL-0105",
+      "from_type": "function",
+      "from_id": "D157",
+      "to_type": "new_answer",
+      "to_id": "ANS-0002",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D157 is a core function for answer ANS-0002"
+    },
+    {
+      "relation_id": "REL-0106",
+      "from_type": "function",
+      "from_id": "D164",
+      "to_type": "new_answer",
+      "to_id": "ANS-0002",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D164 is a core function for answer ANS-0002"
+    },
+    {
+      "relation_id": "REL-0107",
+      "from_type": "function",
+      "from_id": "D156",
+      "to_type": "new_answer",
+      "to_id": "ANS-0003",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D156 is a core function for answer ANS-0003"
+    },
+    {
+      "relation_id": "REL-0108",
+      "from_type": "function",
+      "from_id": "D157",
+      "to_type": "new_answer",
+      "to_id": "ANS-0003",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D157 is a core function for answer ANS-0003"
+    },
+    {
+      "relation_id": "REL-0109",
+      "from_type": "function",
+      "from_id": "D108",
+      "to_type": "new_answer",
+      "to_id": "ANS-0003",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D108 is a core function for answer ANS-0003"
+    },
+    {
+      "relation_id": "REL-0110",
+      "from_type": "function",
+      "from_id": "A5",
+      "to_type": "new_answer",
+      "to_id": "ANS-0004",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "A5 is a core function for answer ANS-0004"
+    },
+    {
+      "relation_id": "REL-0111",
+      "from_type": "function",
+      "from_id": "A8",
+      "to_type": "new_answer",
+      "to_id": "ANS-0004",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "A8 is a core function for answer ANS-0004"
+    },
+    {
+      "relation_id": "REL-0112",
+      "from_type": "function",
+      "from_id": "A9",
+      "to_type": "new_answer",
+      "to_id": "ANS-0004",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "A9 is a core function for answer ANS-0004"
+    },
+    {
+      "relation_id": "REL-0113",
+      "from_type": "function",
+      "from_id": "D260",
+      "to_type": "new_answer",
+      "to_id": "ANS-0005",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D260 is a core function for answer ANS-0005"
+    },
+    {
+      "relation_id": "REL-0114",
+      "from_type": "function",
+      "from_id": "D272",
+      "to_type": "new_answer",
+      "to_id": "ANS-0005",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D272 is a core function for answer ANS-0005"
+    },
+    {
+      "relation_id": "REL-0115",
+      "from_type": "function",
+      "from_id": "D287",
+      "to_type": "new_answer",
+      "to_id": "ANS-0005",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D287 is a core function for answer ANS-0005"
+    },
+    {
+      "relation_id": "REL-0116",
+      "from_type": "function",
+      "from_id": "D373",
+      "to_type": "new_answer",
+      "to_id": "ANS-0005",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D373 is a core function for answer ANS-0005"
+    },
+    {
+      "relation_id": "REL-0117",
+      "from_type": "function",
+      "from_id": "D387",
+      "to_type": "new_answer",
+      "to_id": "ANS-0005",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D387 is a core function for answer ANS-0005"
+    },
+    {
+      "relation_id": "REL-0118",
+      "from_type": "function",
+      "from_id": "D401",
+      "to_type": "new_answer",
+      "to_id": "ANS-0005",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D401 is a core function for answer ANS-0005"
+    },
+    {
+      "relation_id": "REL-0119",
+      "from_type": "function",
+      "from_id": "D307",
+      "to_type": "new_answer",
+      "to_id": "ANS-0005",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D307 is a core function for answer ANS-0005"
+    },
+    {
+      "relation_id": "REL-0120",
+      "from_type": "function",
+      "from_id": "D412",
+      "to_type": "new_answer",
+      "to_id": "ANS-0005",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D412 is a core function for answer ANS-0005"
+    },
+    {
+      "relation_id": "REL-0121",
+      "from_type": "function",
+      "from_id": "D413",
+      "to_type": "new_answer",
+      "to_id": "ANS-0005",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D413 is a core function for answer ANS-0005"
+    },
+    {
+      "relation_id": "REL-0122",
+      "from_type": "function",
+      "from_id": "D295",
+      "to_type": "new_answer",
+      "to_id": "ANS-0005",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D295 is a core function for answer ANS-0005"
+    },
+    {
+      "relation_id": "REL-0123",
+      "from_type": "function",
+      "from_id": "D260",
+      "to_type": "new_answer",
+      "to_id": "ANS-0006",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D260 is a core function for answer ANS-0006"
+    },
+    {
+      "relation_id": "REL-0124",
+      "from_type": "function",
+      "from_id": "D272",
+      "to_type": "new_answer",
+      "to_id": "ANS-0006",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D272 is a core function for answer ANS-0006"
+    },
+    {
+      "relation_id": "REL-0125",
+      "from_type": "function",
+      "from_id": "D287",
+      "to_type": "new_answer",
+      "to_id": "ANS-0006",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D287 is a core function for answer ANS-0006"
+    },
+    {
+      "relation_id": "REL-0126",
+      "from_type": "function",
+      "from_id": "D401",
+      "to_type": "new_answer",
+      "to_id": "ANS-0006",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D401 is a core function for answer ANS-0006"
+    },
+    {
+      "relation_id": "REL-0127",
+      "from_type": "function",
+      "from_id": "D307",
+      "to_type": "new_answer",
+      "to_id": "ANS-0006",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D307 is a core function for answer ANS-0006"
+    },
+    {
+      "relation_id": "REL-0128",
+      "from_type": "function",
+      "from_id": "D423",
+      "to_type": "new_answer",
+      "to_id": "ANS-0006",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D423 is a core function for answer ANS-0006"
+    },
+    {
+      "relation_id": "REL-0129",
+      "from_type": "function",
+      "from_id": "D373",
+      "to_type": "new_answer",
+      "to_id": "ANS-0007",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D373 is a core function for answer ANS-0007"
+    },
+    {
+      "relation_id": "REL-0130",
+      "from_type": "function",
+      "from_id": "D387",
+      "to_type": "new_answer",
+      "to_id": "ANS-0007",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D387 is a core function for answer ANS-0007"
+    },
+    {
+      "relation_id": "REL-0131",
+      "from_type": "function",
+      "from_id": "D8",
+      "to_type": "new_answer",
+      "to_id": "ANS-0007",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D8 is a core function for answer ANS-0007"
+    },
+    {
+      "relation_id": "REL-0132",
+      "from_type": "function",
+      "from_id": "D307",
+      "to_type": "new_answer",
+      "to_id": "ANS-0007",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D307 is a core function for answer ANS-0007"
+    },
+    {
+      "relation_id": "REL-0133",
+      "from_type": "function",
+      "from_id": "D401",
+      "to_type": "new_answer",
+      "to_id": "ANS-0007",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D401 is a core function for answer ANS-0007"
+    },
+    {
+      "relation_id": "REL-0134",
+      "from_type": "function",
+      "from_id": "D401",
+      "to_type": "new_answer",
+      "to_id": "ANS-0008",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D401 is a core function for answer ANS-0008"
+    },
+    {
+      "relation_id": "REL-0135",
+      "from_type": "function",
+      "from_id": "D387",
+      "to_type": "new_answer",
+      "to_id": "ANS-0008",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D387 is a core function for answer ANS-0008"
+    },
+    {
+      "relation_id": "REL-0136",
+      "from_type": "function",
+      "from_id": "D266",
+      "to_type": "new_answer",
+      "to_id": "ANS-0008",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D266 is a core function for answer ANS-0008"
+    },
+    {
+      "relation_id": "REL-0137",
+      "from_type": "function",
+      "from_id": "D397",
+      "to_type": "new_answer",
+      "to_id": "ANS-0008",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D397 is a core function for answer ANS-0008"
+    },
+    {
+      "relation_id": "REL-0138",
+      "from_type": "function",
+      "from_id": "D410",
+      "to_type": "new_answer",
+      "to_id": "ANS-0008",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D410 is a core function for answer ANS-0008"
+    },
+    {
+      "relation_id": "REL-0139",
+      "from_type": "function",
+      "from_id": "D423",
+      "to_type": "new_answer",
+      "to_id": "ANS-0008",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D423 is a core function for answer ANS-0008"
+    },
+    {
+      "relation_id": "REL-0140",
+      "from_type": "function",
+      "from_id": "D335",
+      "to_type": "new_answer",
+      "to_id": "ANS-0009",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D335 is a core function for answer ANS-0009"
+    },
+    {
+      "relation_id": "REL-0141",
+      "from_type": "function",
+      "from_id": "D384",
+      "to_type": "new_answer",
+      "to_id": "ANS-0009",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D384 is a core function for answer ANS-0009"
+    },
+    {
+      "relation_id": "REL-0142",
+      "from_type": "function",
+      "from_id": "D297",
+      "to_type": "new_answer",
+      "to_id": "ANS-0010",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D297 is a core function for answer ANS-0010"
+    },
+    {
+      "relation_id": "REL-0143",
+      "from_type": "function",
+      "from_id": "D410",
+      "to_type": "new_answer",
+      "to_id": "ANS-0010",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D410 is a core function for answer ANS-0010"
+    },
+    {
+      "relation_id": "REL-0144",
+      "from_type": "function",
+      "from_id": "D325",
+      "to_type": "new_answer",
+      "to_id": "ANS-0010",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D325 is a core function for answer ANS-0010"
+    },
+    {
+      "relation_id": "REL-0145",
+      "from_type": "function",
+      "from_id": "D307",
+      "to_type": "new_answer",
+      "to_id": "ANS-0010",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D307 is a core function for answer ANS-0010"
+    },
+    {
+      "relation_id": "REL-0146",
+      "from_type": "function",
+      "from_id": "D412",
+      "to_type": "new_answer",
+      "to_id": "ANS-0011",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D412 is a core function for answer ANS-0011"
+    },
+    {
+      "relation_id": "REL-0147",
+      "from_type": "function",
+      "from_id": "D413",
+      "to_type": "new_answer",
+      "to_id": "ANS-0011",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D413 is a core function for answer ANS-0011"
+    },
+    {
+      "relation_id": "REL-0148",
+      "from_type": "function",
+      "from_id": "D384",
+      "to_type": "new_answer",
+      "to_id": "ANS-0011",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D384 is a core function for answer ANS-0011"
+    },
+    {
+      "relation_id": "REL-0149",
+      "from_type": "function",
+      "from_id": "D295",
+      "to_type": "new_answer",
+      "to_id": "ANS-0011",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D295 is a core function for answer ANS-0011"
+    },
+    {
+      "relation_id": "REL-0150",
+      "from_type": "function",
+      "from_id": "D307",
+      "to_type": "new_answer",
+      "to_id": "ANS-0011",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D307 is a core function for answer ANS-0011"
+    },
+    {
+      "relation_id": "REL-0151",
+      "from_type": "function",
+      "from_id": "D86",
+      "to_type": "new_answer",
+      "to_id": "ANS-0012",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D86 is a core function for answer ANS-0012"
+    },
+    {
+      "relation_id": "REL-0152",
+      "from_type": "function",
+      "from_id": "D96",
+      "to_type": "new_answer",
+      "to_id": "ANS-0012",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D96 is a core function for answer ANS-0012"
+    },
+    {
+      "relation_id": "REL-0153",
+      "from_type": "function",
+      "from_id": "A4",
+      "to_type": "new_answer",
+      "to_id": "ANS-0012",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "A4 is a core function for answer ANS-0012"
+    },
+    {
+      "relation_id": "REL-0154",
+      "from_type": "function",
+      "from_id": "D307",
+      "to_type": "new_answer",
+      "to_id": "ANS-0012",
+      "relation_type": "function_to_new_answer",
+      "confidence": "medium",
+      "note": "D307 is a core function for answer ANS-0012"
+    },
+    {
+      "relation_id": "REL-0155",
+      "from_type": "function",
+      "from_id": "T20",
+      "to_type": "analytic_solution",
+      "to_id": "SOL-0001",
+      "relation_type": "analytic_solution_to_function",
+      "confidence": "high",
+      "note": "T20 produces the analytic solution SOL-0001 (σ_opt=√e)"
+    }
+  ]
+}

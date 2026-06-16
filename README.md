@@ -53,6 +53,17 @@ A discovery made by a human being, driven by curiosity and aided by AI.
 
 Do not treat raw notes as canonical. Raw notes are sources. Current structured entries live under `data/functions/`, `data/cases/`, `data/discoveries/`, and `data/predictions/`.
 
+## Projection Sets / 投影集合
+
+投影集合是从统一函数总表中抽取出符合某类发现性质的函数子集。
+
+- [投影集合入口 / Projection Sets](DISCOVERY_PROJECTION_SETS.md)
+- 机器数据: `data/projection-sets/discovery-projection-sets.jsonl`
+- 学术搜索状态: `data/projection-sets/scholarly-search-status.jsonl`
+- 解析解数量报告: `data/projection-sets/analytic-solution-count-report.md`
+- 交叉引用表: `data/projection-sets/projection-set-crosswalk.md`
+- 构建报告: `data/reports/build-projection-sets-report.md`
+
 ## Human Reading / 人类阅读入口
 
 - 中文函数入口 / Chinese functions: `FUNCTIONS.md`, `docs/zh/functions.md`

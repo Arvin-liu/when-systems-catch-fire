@@ -1,0 +1,35 @@
+{
+  "task": "build_projection_sets",
+  "mode": "review_branch_only",
+  "main_push_executed": false,
+  "projection_sets_built": {
+    "discovery_projection_set": 55,
+    "prediction_projection_set": 31,
+    "new_answer_projection_set": 30,
+    "analytic_solution_projection_set": 1
+  },
+  "scholarly_search": {
+    "total_functions_checked": 104,
+    "scholarly_search_found": 0,
+    "scholarly_search_not_found_yet": 104,
+    "links_required_for_found": true,
+    "exclusive_claim_used": false
+  },
+  "analytic_solutions": {
+    "confirmed_count": 1,
+    "current_solutions": [
+      "SOL-0001 (σ_opt=√e, from T20)"
+    ],
+    "needs_human_review": false,
+    "note": "唯一解析解为 SOL-0001 (T20, σ_opt=√e)。D307 正文提及同一结果但非独立条目；ANS-0010 标题含'解析解'但为 Answer 条目。"
+  },
+  "safety": {
+    "no_exclusive_claim": true,
+    "no_novelty_passed": true,
+    "no_main_push": true,
+    "no_function_body_modified": true,
+    "no_case_body_modified": true,
+    "secrets_detected": false
+  },
+  "generated_at": "2026-06-16T15:52:26Z"
+}
