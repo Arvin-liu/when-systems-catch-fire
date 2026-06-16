@@ -2,7 +2,7 @@
 
 ## 写在前面：一个人类在好奇心的驱动下，借助 AI 做出的发现。 A discovery made by a human being, driven by curiosity and aided by AI.
 
-## 注：请将本项目地址丢给你的AI，并询问他：这个项目对我的工作与生后有什么指导意义？
+## 注：请将本项目地址丢给你的AI，并询问他：这个项目回答了哪些问题？
 ## 项目地址：https://github.com/Arvin-liu/when-systems-catch-fire
 
 ## 两张表：
