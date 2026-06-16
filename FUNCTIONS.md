@@ -1,7 +1,21 @@
 # 统一函数总表 / Unified Function Table
 
-本表收录 1 条第 0 节主入口、5 条内部子项和 515 条普通函数。每条条目都包含编号、名称、函数内容、关联对象和来源回指。
+当前状态：
+
+- 已更新至：D515
+- 普通函数：515 条
+- 内部子项：5 条
+- 第 0 节主入口：1 条
+- 最近增量：D476-D515（40 条）
+
+本表是点火框架的函数总表。函数正文来自最新统一函数总表；本次只更新可见表，不新增函数编号。
 This table contains 1 Section 0 root meta-function, 5 internal subitems, and 515 ordinary functions. Each entry includes its ID, title, content, related objects, and source reference.
+
+## 最近增量 / Latest Increment
+
+| 范围 | 数量 | 来源 | 状态 |
+|---|---:|---|---|
+| D476-D515 | 40 | 统一函数总表.516版 | 已验证并合入 main |
 
 ## 快速入口 / Quick Entry
 
