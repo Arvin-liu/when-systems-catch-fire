@@ -1,0 +1,31 @@
+{
+ "task": "projection_sets_stage_one_main_merge",
+ "merged_to_main": true,
+ "main_push_executed": true,
+ "force_push_used": false,
+ "source_review_branch": "review/build-projection-sets-20260616-2350",
+ "review_branch_head": "c4baed37c9ad5556239ff8cd9c69ef3f766d430d",
+ "main_before": "8b0c0014fc918b0c488f85914ca0511ca8fdcecd",
+ "main_after": "21d6d28fdf2e56cccacc4abdece8af44086df30a",
+ "stage_one_status": {
+  "total_projection_functions": 104,
+  "actual_functions_searched": 2,
+  "scholarly_search_not_found_yet": 2,
+  "scholarly_search_found": 0,
+  "search_pending": 102,
+  "coverage_complete": false,
+  "formal_status_rows_without_query_logs": 0
+ },
+ "analytic_solution": {
+  "analytic_solution_count": 1,
+  "needs_human_review": true,
+  "ambiguous_candidates": ["D307", "ANS-0010"]
+ },
+ "safety": {
+  "no_exclusive_claim": true,
+  "no_novelty_passed": true,
+  "no_function_body_modified": true,
+  "no_case_body_modified": true,
+  "secrets_detected": false
+ }
+}
