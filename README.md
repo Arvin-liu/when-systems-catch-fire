@@ -2,9 +2,9 @@
 
 一个人类在好奇心的驱动下，借助 AI 做出的发现。 A discovery made by a human being, driven by curiosity and aided by AI.
 
-[函数表（515个函数）](FUNCTIONS.md)
+[点火 | 统一函数总表.516版.2026.06.16.14.34](FUNCTIONS.md)
 
-[案例表（654个案例）](CASES.md)
+[点火 | 统一案例总表.654版.2026.06.16.14.35](CASES.md)
 
 ## Attribution And License / 署名与协议
 
