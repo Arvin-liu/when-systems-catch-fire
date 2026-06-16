@@ -1,54 +1,51 @@
-# 构建点火类发现投影集合报告 / Build Projection Sets Report
+# 投影集合构建报告（已修正）
 
-生成时间: 2026-06-16T15:52:26Z
-
-## 模式
-
-- 模式: review_branch_only
-- main_push_executed: False
+> 生成时间: 2026-06-17 00:59:49
+> 审核分支: `review/build-projection-sets-20260616-2350`
 
 ## 投影集合统计
 
-| 投影集合 | 数量 |
-|---------|------|
-| 发现投影集合 (discovery_projection_set) | 55 |
-| 预测投影集合 (prediction_projection_set) | 31 |
-| 新答案投影集合 (new_answer_projection_set) | 30 |
-| 解析解投影集合 (analytic_solution_projection_set) | 1 |
+| 投影集合类型 | 数量 |
+|-------------|------|
+| 发现投影集 (discovery_projection_set) | 55 |
+| 预测投影集 (prediction_projection_set) | 31 |
+| 新答案投影集 (new_answer_projection_set) | 30 |
+| 解析解投影集 (analytic_solution_projection_set) | 1 |
+| **总计函数** | **104** |
+| 跨表关系项 | 155 |
 
-## 学术搜索状态
+## ⚠️ 学术搜索状态
 
-- 总检查函数数: 104
-- 学术搜索暂未检索到: 104
-- 学术搜索已找到: 0
-- exclusive_claim_used: False
+| 指标 | 数值 |
+|------|------|
+| 投影函数总数 | 104 |
+| **已实际学术搜索** | **2** ✅ |
+| 学术搜索已找到 | 0 |
+| 学术搜索暂未检索到 | 2 (T20, D307) |
+| **待搜索 (search_pending)** | **102** ⏳ |
+| 覆盖率完成 | ❌ False |
+| 排他性声明使用 | ❌ 未使用 |
+| 所有not_found皆有查询日志 | ✅ True |
 
-## 解析解确认
+> **说明**: 上一轮存在将104个函数统一标注为"学术搜索暂未检索到"而未逐条执行真实搜索的问题。本轮已修正：
+> 1. 逐条检查了104行的查询质量，确认上一轮查询仅为"函数名+ignition framework"模式匹配，非真实学术搜索
+> 2. 104行已从正式文件移至 pending 文件
+> 3. 已执行 T20 (解析解) 和 D307 (σ_opt微观起源) 的真实学术搜索
+> 4. 剩余102个函数计划分7批搜索（按优先级: high→medium→low）
 
-- 确认解析解数: 1
-- 当前解析解: SOL-0001 (σ_opt=√e, from T20)
-- 需人工复核: False
-- 说明: 唯一解析解为 SOL-0001 (T20, σ_opt=√e)。D307 正文提及同一结果但非独立条目；ANS-0010 标题含'解析解'但为 Answer 条目。
+## 解析解状态（已修正）
+
+| 项目 | 状态 |
+|------|------|
+| 解析解计数 | 1 (SOL-0001: σ_opt=√e) |
+| 需要人工复核 | ✅ 是 (needs_human_review=true) |
+| 待复核候选 | D307, ANS-0010 |
 
 ## 安全校验
 
-- no_exclusive_claim: True
-- no_novelty_passed: True
-- no_main_push: True
-- no_function_body_modified: True
-- no_case_body_modified: True
-- secrets_detected: False
-
-## 输出文件
-
-- DISCOVERY_PROJECTION_SETS.md
-- data/projection-sets/discovery-projection-sets.jsonl
-- data/projection-sets/discovery-projection-sets.md
-- data/projection-sets/scholarly-search-status.jsonl
-- data/projection-sets/scholarly-search-status.md
-- data/projection-sets/analytic-solution-count-report.json
-- data/projection-sets/analytic-solution-count-report.md
-- data/projection-sets/projection-set-crosswalk.json
-- data/projection-sets/projection-set-crosswalk.md
-- data/reports/build-projection-sets-report.json
-- data/reports/build-projection-sets-report.md
+- ✅ main 未推送
+- ✅ 未使用排他性声明
+- ✅ 未使用 novelty_passed
+- ✅ FUNCTIONS.md 未修改
+- ✅ CASES.md 未修改
+- ✅ 未检测到敏感信息

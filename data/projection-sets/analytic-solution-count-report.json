@@ -16,32 +16,13 @@
     "data/rebuild/analytic-solutions-bootstrap-closure-report.md"
   ],
   "ambiguous_candidates": [
-    {
-      "source": "ANS-0010",
-      "title": "层级问题是 d=4 稳定性约束的解析解",
-      "type": "new_answer",
-      "reason": "ANS-0010 标题虽含'解析解'，但其 object_class 为 'answer'，属于新答案条目，不纳入解析解表。解析解表只收录具有明确闭式解析表达式(closed-form expression)的函数条目。该条目的回答是定性描述而非闭式解析表达。",
-      "disposition": "not_an_analytic_solution"
-    },
-    {
-      "source": "D307",
-      "title": "σ_opt微观起源函数",
-      "type": "function_reference",
-      "reason": "D307 正文提到'精确解：σ_opt是dΦ/dσ=0的根，n→∞极限下σ_opt→√e≈1.649≈1.65。σ_opt=√e不是巧合——是独立性-充分性权衡的解析解。' 但 D307 是完整的函数条目，不是独立的解析解条目。其解析结果与 T20/SOL-0001 指向同一个数学结果 (σ_opt=√e)，不形成独立的第二个解析解。",
-      "disposition": "same_as_SOL-0001"
-    }
+    "D307",
+    "ANS-0010"
   ],
   "confirmed_solutions": [
-    {
-      "solution_id": "SOL-0001",
-      "title": "σ_opt=√e解析解",
-      "related_function_id": "T20",
-      "formula": "σ_opt = √e",
-      "source_path": "docs/zh/analytic-solutions/items/SOL-0001.md",
-      "is_distinct_from_others": true,
-      "reason": "T20函数明确声明 σ_opt=√e 为闭式解析解。该结果经 D307 (σ_opt微观起源函数) 交叉确认：σ_opt 是 dΦ/dσ=0 的根，n→∞ 极限下 σ_opt→√e≈1.649。已验证为单一解析解。"
-    }
+    "SOL-0001"
   ],
-  "needs_human_review": false,
-  "note": "经全面检索，当前仓库中仅有一个解析解 (SOL-0001)。D307 正文虽提到'解析解'但指向同一结果；ANS-0010 标题含'解析解'但属于答案条目而非解析解表条目。如果 D307 应升级为独立的解析解条目，或 ANS-0010 应同时加入解析解表，需人工判定。"
+  "needs_human_review": true,
+  "note": "经全面检索，当前仓库中仅有一个解析解 (SOL-0001)。D307 正文虽提到'解析解'但指向同一结果；ANS-0010 标题含'解析解'但属于答案条目而非解析解表条目。如果 D307 应升级为独立的解析解条目，或 ANS-0010 应同时加入解析解表，需人工判定。",
+  "reason": "D307 与 ANS-0010 是否应升级为独立解析解条目需人工判断。D307 正文提及与 SOL-0001 相同的结果 σ_opt=√e，不形成独立第二个解析解；ANS-0010 标题含'解析解'但属于 Answer 条目而非解析解表条目。但这些判断存在潜在争议，保留人工复核。"
 }
