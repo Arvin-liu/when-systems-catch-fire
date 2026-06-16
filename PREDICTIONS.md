@@ -1,5 +1,12 @@
 # 预测总表 / Prediction Index
 
+## 当前状态
+
+- 预测投影集合已建立：31 个函数。
+- 此集合源于函数表与案例表交叉自举发现。
+- 本表当前保留既有预测条目，并链接投影集合关系表。
+- 本表不维护外部学术检索状态。
+
 中文：这里收录《点火》框架从函数、案例、发现与自举循环中推出的可检验预测。预测不是发现本身，而是由机制、证据和洞见共同推出的未来判断或待验证推论。
 
 English: This index collects testable predictions derived by the Ignition framework from functions, cases, discoveries, and bootstrap cycles. A prediction is not a discovery itself, but a future-facing or pending inference derived from mechanisms, evidence, and insights.

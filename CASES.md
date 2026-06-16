@@ -1,7 +1,19 @@
 # 统一案例总表 / Unified Case Table
 
-本表收录 654 个点火案例。每个案例都包含编号、案例内容、关联函数和来源回指。
+当前状态：
+
+- 已更新至：C-0654
+- 案例总数：654 个
+- 最近增量：C-0595-C-0654（60 个）
+
+本表是点火框架的案例总表。案例正文来自最新统一案例总表；本次只更新可见表，不新增案例编号。
 This table contains 654 ignition cases. Each case includes its ID, content, related functions, and source reference.
+
+## 最近增量 / Latest Increment
+
+| 范围 | 数量 | 来源 | 状态 |
+|---|---:|---|---|
+| C-0595-C-0654 | 60 | 统一案例总表.654版 | 已验证并合入 main |
 
 ## 快速入口 / Quick Entry
 

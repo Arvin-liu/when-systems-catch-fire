@@ -1,0 +1,37 @@
+{
+ "task": "visible_core_tables_update",
+ "mode": "review_branch_only",
+ "main_push_executed": false,
+ "tables_updated": {
+  "README.md": true,
+  "FUNCTIONS.md": true,
+  "CASES.md": true,
+  "DISCOVERIES.md": true,
+  "PREDICTIONS.md": true,
+  "ANSWERS.md": true,
+  "ANALYTIC_SOLUTIONS.md": true,
+  "DISCOVERY_PROJECTION_SETS.md": true,
+  "data/projection-sets/discovery-projection-sets.md": true,
+  "data/projection-sets/analytic-solution-count-report.md": true
+ },
+ "visible_status": {
+  "functions_updated_to": "D515",
+  "cases_updated_to": "C-0654",
+  "latest_function_increment": "D476-D515",
+  "latest_case_increment": "C-0595-C-0654",
+  "discovery_projection_set": 55,
+  "prediction_projection_set": 31,
+  "new_answer_projection_set": 30,
+  "analytic_solution_projection_set": 1
+ },
+ "source_statement_zh": "此集合源于函数表与案例表交叉自举发现。",
+ "scholarly_search_status": "not_maintained",
+ "safety": {
+  "no_new_function_ids": true,
+  "no_new_case_ids": true,
+  "no_scholarly_search_restored": true,
+  "no_exclusive_claim": true,
+  "no_novelty_passed": true,
+  "secrets_detected": false
+ }
+}

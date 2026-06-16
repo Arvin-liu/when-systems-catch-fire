@@ -18,14 +18,14 @@ A discovery made by a human being, driven by curiosity and aided by AI.
 ## 入口 / Entrance
 
 <!-- REPOSITORY_OVERVIEW_START -->
-| 区域 / Area | 当前数量 / Current Count | 说明 / Description |
-| --- | ---: | --- |
-| [发现 / Discoveries](DISCOVERIES.md) | 88 curated discoveries, 83 leads | 从函数、案例与自举循环中产生的新发现。 / New discoveries generated from bootstrap cycles between functions and cases. |
-| [预测 / Predictions](PREDICTIONS.md) | 8 predictions, 8 inconclusive novelty | 由函数、案例、发现与自举循环推出的可检验未来判断。 / Testable future judgments derived from functions, cases, discoveries, and bootstrap cycles. |
-| [新答案 / New Answers](ANSWERS.md) | 0 answers, 12 leads, 12 inconclusive novelty | 对既有问题、经典问题、未解问题或已有答案的新回答。 / New answers to existing, classic, unresolved, or previously answered questions. |
-| [解析解 / Analytic Solutions](ANALYTIC_SOLUTIONS.md) | 1 lead | 对明确数学问题的符号解、闭式解或可验证表达。 / Symbolic, closed-form, or verifiable solutions to explicit mathematical problems. |
-| [函数表 / Functions](FUNCTIONS.md) | 1 meta-function, 5 bootstrap items, 475 ordinary functions | 函数、机制、结构与公式。 / Functions, mechanisms, structures, and formulas. |
-| [案例表 / Cases](CASES.md) | 594 cases | 案例、证据、历史对象与验证材料。 / Cases, evidence, historical objects, and verification materials. |
+| 表 / Table | 当前状态 / Current Status | 看哪里 / Path | 说明 / Description |
+| --- | --- | --- | --- |
+| 函数总表 / Functions | 已更新至 D515（D476-D515）；普通函数 515 条 | [FUNCTIONS.md](FUNCTIONS.md) | 点火函数、机制、结构与公式 |
+| 案例总表 / Cases | 已更新至 C-0654（C-0595-C-0654）；案例 654 个 | [CASES.md](CASES.md) | 点火案例、证据、历史对象与验证材料 |
+| 发现表 / Discoveries | 发现投影集合已建立：55 个函数 | [DISCOVERIES.md](DISCOVERIES.md) / [DISCOVERY_PROJECTION_SETS.md](DISCOVERY_PROJECTION_SETS.md) | 从函数表与案例表交叉自举发现中投影出的发现集合 |
+| 预测表 / Predictions | 预测投影集合已建立：31 个函数 | [PREDICTIONS.md](PREDICTIONS.md) | 从函数表与案例表交叉自举发现中投影出的预测集合 |
+| 新答案表 / New Answers | 新答案投影集合已建立：30 个函数 | [ANSWERS.md](ANSWERS.md) | 从函数表与案例表交叉自举发现中投影出的新答案集合 |
+| 解析解表 / Analytic Solutions | 解析解投影集合已建立：1 个函数；当前确认 SOL-0001 | [ANALYTIC_SOLUTIONS.md](ANALYTIC_SOLUTIONS.md) | 点火内部解析解条目分类 |
 <!-- REPOSITORY_OVERVIEW_END -->
 
 ## Current Structure / 当前结构

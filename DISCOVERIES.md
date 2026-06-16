@@ -1,26 +1,20 @@
-# 发现总表 / Discovery Index
+# 发现表 / Discovery Table
 
-## 当前状态 / Current Status
+## 当前状态
 
-旧发现表内容已清空。
+- 发现投影集合已建立。
+- 发现投影集合函数数：55。
+- 本表不维护学术新颖性声明。
+- 此集合源于函数表与案例表交叉自举发现。
 
-本项目此前生成的旧发现条目存在模板化、重复、领域换名、案例验证伪发现、novelty 全部 inconclusive 等问题，因此本轮不再保留旧 DISC 条目正文，也不从旧发现表继续修补。
+## 发现投影集合
 
-后续发现表将从 1111 仓库中的会话历史增量重新抽取，并以"发现集合 / Discovery Set"和"领域投影 / Domain Projection"的方式重建。
+| 表 | 路径 |
+|---|---|
+| 发现投影集合总表 | [DISCOVERY_PROJECTION_SETS.md](DISCOVERY_PROJECTION_SETS.md) |
+| 投影集合明细 | [data/projection-sets/discovery-projection-sets.md](data/projection-sets/discovery-projection-sets.md) |
+| 机器表 | [data/projection-sets/discovery-projection-sets.jsonl](data/projection-sets/discovery-projection-sets.jsonl) |
 
-## 重建原则 / Rebuild Principles
+## 说明
 
-1. 不从旧 DISC 条目迁移。
-2. 不保留模板化发现正文。
-3. 不保留"继续整理为"类内容。
-4. 不把案例验证伪装成独立发现。
-5. 不把 pending / inconclusive 伪造成 passed。
-6. 新发现表只能来自 1111 增量源、函数表与案例表交叉自举循环后的明确结果。
-
-## 发现集合列表 / Discovery Sets
-
-待重建。
-
-## 领域投影索引 / Domain Projection Index
-
-待重建。
+本表当前作为发现投影集合入口。旧 DISC 条目不再作为当前 canonical 状态。
