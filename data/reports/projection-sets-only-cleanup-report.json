@@ -1,0 +1,59 @@
+{
+  "task": "projection_sets_only_cleanup",
+  "mode": "review_branch_only",
+  "main_push_executed": false,
+  "user_decision": "stop_scholarly_search_keep_projection_sets_only",
+  "source_statement_zh": "此集合源于函数表与案例表交叉自举发现。",
+  "source_statement_en": "This collection is derived from cross-bootstrap findings between the function table and the case table.",
+  "canonical_status": {
+    "projection_sets_kept": true,
+    "scholarly_search_status_removed": true,
+    "scholarly_search_pending_removed": true,
+    "scholarly_search_batches_removed": true,
+    "coverage_complete_field_removed": true
+  },
+  "abandoned_branches": [
+    {
+      "branch_pattern": "review/scholarly-search-batch-001-*",
+      "status": "abandoned_by_user_decision",
+      "reason": "用户决定停止学术检索，只保留投影集合。"
+    }
+  ],
+  "safety": {
+    "no_exclusive_claim": true,
+    "no_novelty_passed": true,
+    "no_scholarly_novelty_claim": true,
+    "no_function_body_modified": true,
+    "no_case_body_modified": true,
+    "no_main_push": true,
+    "secrets_detected": false
+  },
+  "files_kept": [
+    "DISCOVERY_PROJECTION_SETS.md",
+    "data/projection-sets/discovery-projection-sets.jsonl",
+    "data/projection-sets/discovery-projection-sets.md",
+    "data/projection-sets/projection-set-crosswalk.json",
+    "data/projection-sets/projection-set-crosswalk.md",
+    "data/projection-sets/analytic-solution-count-report.json",
+    "data/projection-sets/analytic-solution-count-report.md"
+  ],
+  "files_removed": [
+    "data/projection-sets/scholarly-search-status.jsonl",
+    "data/projection-sets/scholarly-search-status.md",
+    "data/projection-sets/scholarly-search-pending.jsonl",
+    "data/projection-sets/scholarly-search-batches.json",
+    "data/projection-sets/scholarly-search-batches.md"
+  ],
+  "files_updated": [
+    "README.md",
+    "DISCOVERY_PROJECTION_SETS.md",
+    "data/projection-sets/discovery-projection-sets.jsonl",
+    "data/projection-sets/discovery-projection-sets.md",
+    "data/projection-sets/analytic-solution-count-report.json",
+    "data/projection-sets/analytic-solution-count-report.md"
+  ],
+  "files_untouched": [
+    "FUNCTIONS.md",
+    "CASES.md"
+  ]
+}
