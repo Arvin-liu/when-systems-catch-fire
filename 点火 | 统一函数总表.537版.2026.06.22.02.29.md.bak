@@ -11,7 +11,7 @@ Each entry contains three sections: Mathematical Expression, Mathematical Deriva
 - [元函数 / Yuan Function](#section-0-y1-meta-function)：1 条 / 1 entry
 - [公理 / Axiom](#function-level-axiom)：9 条 / 9 entries
 - [定理 / Theorem](#function-level-theorem)：39 条 / 39 entries
-- [推理 / Derived Function](#function-level-derived-function)：488 条 / 488 entries
+- [推理 / Derived](#function-level-derived-function)：488 条 / 488 entries
 <a id="section-0-y1-meta-function"></a>
 <details open>
 <summary>元函数 / Yuan Function</summary>
@@ -16434,7 +16434,12 @@ English: Rule-based English rendering pending human review.
 **关联案例 / Related Cases**
 - 暂无明确关联案例 / No explicit related cases yet.
 
----
+</details>
+
+
+<a id="function-range-new"></a>
+<details open>
+<summary>新增函数（D476–D515 / 40条·空间/退出权/宇宙域）</summary>
 
 > 来源：正反交叉自举复核（2026-06-16）| 方法：J⁺/J⁻ 核验 | 状态：全部 converged
 
@@ -18064,6 +18069,13 @@ English: Three frameworks' matching operations form a precision-fluctuation chai
 
 ---
 
+</details>
+
+<a id="function-level-derived-function-d520"></a>
+<details>
+<summary>新增：D520 元竞争动力学函数（抽象版）</summary>
+
+
 ### [D520｜元竞争动力学函数（抽象版） / Meta-Competition Dynamics Function (Abstracted)](docs/zh/functions/items/D520.md)
 
 **数学表达 / Mathematical Expression**
@@ -18096,8 +18108,6 @@ English: The scarcity dynamics of any competable target (resources, information,
 
 **关联案例 / Related Cases**
 - 暂无 / None
-
----
 
 ### [D522｜Willmore能量极小点函数 / Willmore Energy Minimizer Function](#)
 
@@ -18799,4 +18809,7 @@ English: Obsession O triggers escape E(O)>0, escape itself becomes new obsession
 
 **关联案例 / Related Cases**
 - C-执念→逃避→逃避的逃避（防御机制域）
-</details>
+
+---
+---
+
