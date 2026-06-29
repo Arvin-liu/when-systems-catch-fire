@@ -1,7 +1,6 @@
 # 项目名称：When Systems Catch Fire / 点火
 
 ## 写在前面
-一个人类在好奇心的驱动下，借助 AI 做出的发现。 A discovery made by a human being, driven by curiosity and aided by AI.
 这是一个人类在好奇心的驱动下，借助 AI 做出的发现。
 我们不宣称自己发现了任何究极真理，此项目尚未历经严格学术检验，当前只推荐将此项目作为个人发现来理解。
 
