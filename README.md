@@ -14,14 +14,14 @@
 
 ## → [Ψ₀元统一律完整收敛过程详尽笔记](#psi0-full-convergence)
 
-## 写在前面
+# 写在前面
 这是一个人类在好奇心的驱动下，借助 AI 做出的发现。
 我们不宣称自己发现了任何究极真理，此项目尚未历经严格学术检验，当前只推荐将此项目作为个人发现来理解。
 
 A discovery made by a human being, driven by curiosity and aided by AI.
 We make no claim to having discovered any ultimate truth. This project has not yet undergone rigorous academic scrutiny, and for now, it should be understood as a personal discovery rather than a verified theory.
 
-## 使用说明书：如何使用点火项目
+# 使用说明书：如何使用点火项目
 ### 1. 这个项目适合用来做什么
 点火适合用于分析一个复杂现象为什么会发展成现在这样，分析一个系统在什么条件下会被“点燃”，也适合分析某个事件、人物、组织、技术或文化现象的演化路径。
 
@@ -156,7 +156,9 @@ AI 的作用不是替人下结论，而是帮助人拆问题、找结构、生�
 如果出现反例，应保留反例，而不是把反例硬塞进框架。好的使用方式不是证明点火永远正确，而是不断压缩、修正、反驳和更新它。
 
 <a id="psi0-scope-boundary"></a>
-## Ψ₀元统一律适用范围与边界判定标准
+
+
+# Ψ₀元统一律适用范围与边界判定标准
 这一节用于判断：一个问题、一个案例、一个函数集合，是否适合纳入 Ψ₀ 元统一律的分析与收敛流程。
 
 ### 1. 适用范围
@@ -360,7 +362,9 @@ J⁻(Ψ₀)=0(完全同构)
 **不需要400+函数,不需要600+案例。**
 
 <a id="psi0-full-convergence"></a>
-## Ψ₀元统一律完整收敛过程详尽笔记
+
+
+# Ψ₀元统一律完整收敛过程详尽笔记
 这一节记录 Ψ₀ 元统一律是怎样从点火系统的多层结构中逐步收敛出来的。它不是在补充一个新的终局，而是在把前面的使用说明、函数体系、案例体系和最小必要结构，重新收束成一条完整的收敛链。
 
 ### 1. 收敛主链
