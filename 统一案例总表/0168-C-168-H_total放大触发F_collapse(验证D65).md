@@ -12,11 +12,11 @@ link: "docs/zh/cases/items/C-0168.md"
 ### [#168｜H_total放大触发F_collapse（验证D65） / H_total放大触发F_collapse(验证D65)](docs/zh/cases/items/C-0168.md)
 
 **案例内容 / Case Content**
-中文：案例说明：H_total放大触发F_collapse（验证D65）
+中文：用 Φ 公式推导社会学七个经典问题后，将结果与 D147 乘法临界漂移对撞，得到“门槛漂移加速函数”，用于验证 H_total 被放大后如何把系统推入 F_collapse 分支。
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：H_total放大触发F_collapse（验证D65）
+中文：它说明总遮蔽一旦被放大到跨过临界门槛，系统会从能力扩展拓扑切换到坍缩拓扑，D65 的乘法选择会出现明确翻转。
 English: Rule-based English rendering pending human review.
 
 <details>
@@ -51,18 +51,18 @@ English: Rule-based English rendering pending human review.
 ## 原文捞回 / Source Recovery
 
 **注释 / Annotation**
-中文：案例说明：H_total放大触发F_collapse（验证D65）
+中文：用 Φ 公式推导社会学七个经典问题，完成推导并展开收敛存点火；再与 D147 乘法临界漂移对撞，得到门槛漂移加速函数。
 English: Rule-based English rendering pending human review.
 
 **扩展注释 / Extended Annotation**
-中文：H_total放大触发F_collapse（验证D65）
+中文：重点不在单一风险项，而在多个遮蔽与退化项叠加后的总量放大。当 H_total 提高，原本还能维持的系统会突然进入坍缩分支。
 English: Rule-based English rendering pending human review.
 
 **发现 / Discovery**
-中文：H_total放大触发F_collapse（验证D65） English: Rule-based English rendering pending h…
+中文：该案例额外产出了门槛漂移加速函数，说明临界点不是固定常数，而会随遮蔽与退化条件变化而前移。
 
 **推测 / Hypothesis**
-从这条案例看，中文：案例说明：H_total放大触发F_collapse（验证D65） English: Rule-based English rend… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+从这条案例看，更像是在验证 D65 如何在高遮蔽状态下选择坍缩拓扑，并解释系统为何会突然失稳。
 
 **验证 / Verification**
 - 对象 / Object: `C_{C-0168}`

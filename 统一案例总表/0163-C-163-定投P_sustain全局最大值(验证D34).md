@@ -12,11 +12,11 @@ link: "docs/zh/cases/items/C-0163.md"
 ### [#163｜定投P_sustain全局最大值（验证D34） / 定投P_sustain全局最大值(验证D34)](docs/zh/cases/items/C-0163.md)
 
 **案例内容 / Case Content**
-中文：案例说明：定投P_sustain全局最大值（验证D34）
+中文：对定投指数基金做数学论证后，将未收敛部分继续函数化展开，并与统一函数总表碰撞核验；最终收敛出 5 个新函数，用于验证 D34 在投资场景中的全局最大值判定。
 English: Rule-based English rendering pending human review.
 
 **它说明了什么 / What It Shows**
-中文：定投P_sustain全局最大值（验证D34）
+中文：它说明定投的持续性峰值不是经验判断，而是可以通过 D34 及相关投资函数给出全局最大值与执行区间的结构化判定。
 English: Rule-based English rendering pending human review.
 
 <details>
@@ -61,18 +61,18 @@ English: Rule-based English rendering pending human review.
 ## 原文捞回 / Source Recovery
 
 **注释 / Annotation**
-中文：案例说明：定投P_sustain全局最大值（验证D34）
+中文：对定投指数基金做数学论证，多轮推导后函数化存入点火知识库，并将定投推导中未收敛的新发现继续数学化展开，最终收敛为 5 个新函数。
 English: Rule-based English rendering pending human review.
 
 **扩展注释 / Extended Annotation**
-中文：定投P_sustain全局最大值（验证D34）
+中文：该案例关注定投作为长期执行结构时的全局最优点，重点不是“是否要定投”，而是定投何时落在可持续峰值附近，以及这一峰值如何被统一函数表验证。
 English: Rule-based English rendering pending human review.
 
 **发现 / Discovery**
-中文：定投P_sustain全局最大值（验证D34） English: Rule-based English rendering pending human…
+中文：定投场景中的全局峰值可以被明确函数化表达；在多轮碰撞后，该案例额外产出 5 个可入表的新函数，证明 D34 在财富域具有可重复的推导能力。
 
 **推测 / Hypothesis**
-从这条案例看，中文：案例说明：定投P_sustain全局最大值（验证D34） English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+从这条案例看，更像是在验证 D34 的充分条件结构能否稳定落到定投执行问题上，并进一步推出新的投资域派生函数。
 
 **验证 / Verification**
 - 对象 / Object: `C_{C-0163}`
