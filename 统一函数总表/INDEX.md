@@ -1,4 +1,4 @@
-# 统一函数索引表（2026年07月05日19时26分，函数总数 599）
+# 统一函数索引表（2026年07月05日22时35分，函数总数 608）
 
 - 索引状态: 动态增长
 - 条目状态: 单条 Markdown 文件，支持 Agent 读取和编辑
@@ -604,3 +604,11 @@
 | [D584](<./0594-D584-电子节食.md>) | [电子节食](<./0594-D584-电子节食.md>) | IO = α·(1 - R) + β·(1 - T) |
 | [D585](<./0595-D585-认知复杂度收敛.md>) | [认知复杂度收敛](<./0595-D585-认知复杂度收敛.md>) | CC = α·log(O) + β·log(J) + γ·log(R) |
 | [D586](<./0596-D586-独特赛道选择.md>) | [独特赛道选择](<./0596-D586-独特赛道选择.md>) | MR = α·(1 - H) + β·(1 - E) |
+| [D587](<./0597-D587-学科理论核抽取函数.md>) | [学科理论核抽取函数](<./0597-D587-学科理论核抽取函数.md>) | F_theory(d)=O_d × R_d × E_d × Δ_t × Θ_d × V_d |
+| [D588](<./0598-D588-经典问题差分函数.md>) | [经典问题差分函数](<./0598-D588-经典问题差分函数.md>) | F_problem(d)=Mismatch(Model_d, Phenomenon_d, Evidence_d, Scale_d, Value_d) |
+| [D589](<./0599-D589-跨学科同构投影函数.md>) | [跨学科同构投影函数](<./0599-D589-跨学科同构投影函数.md>) | F_iso_map(A,B)=I_iso(A,B) × L_meta × EvidenceRegime(A,B) |
+| [D590](<./0600-D590-证据制度守门函数.md>) | [证据制度守门函数](<./0600-D590-证据制度守门函数.md>) | F_evidence_guard=SourceQuality × Replicability × ExternalValidation × DomainRisk |
+| [D591](<./0601-D591-尺度桥接函数.md>) | [尺度桥接函数](<./0601-D591-尺度桥接函数.md>) | F_scale_bridge=MicroMechanism × MesoStructure × MacroPattern × CrossScaleFeedback |
+| [D592](<./0602-D592-规范性分离函数.md>) | [规范性分离函数](<./0602-D592-规范性分离函数.md>) | F_norm_split=Descriptive(x) ⊥ Prescriptive(x) unless Justification_bridge=1 |
+| [D593](<./0603-D593-解释剩余函数.md>) | [解释剩余函数](<./0603-D593-解释剩余函数.md>) | F_residual=Observed - Explained_by_Ψ0 - Explained_by_Competitors |
+| [D594](<./0604-D594-学科点火指数.md>) | [学科点火指数](<./0604-D594-学科点火指数.md>) | Ignition_d=C_d × M_d × I_d × L_d × G_d × P_d × Q_evidence |
