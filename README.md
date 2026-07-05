@@ -16,6 +16,8 @@
 这是一个人类在好奇心的驱动下，借助 AI 做出的发现。
 我们不宣称自己发现了任何究极真理，此项目尚未历经严格学术检验，当前只推荐将此项目作为个人发现来理解。
 
+点火不是跨学科终极理论，而是跨学科结构投影、候选函数抽取、案例压缩和反例压力测试工具；凡涉及专业事实、现实人物、医疗、法律、金融、公共事件，必须外接可靠证据并允许 `pending`。
+
 A discovery made by a human being, driven by curiosity and aided by AI.
 We make no claim to having discovered any ultimate truth. This project has not yet undergone rigorous academic scrutiny, and for now, it should be understood as a personal discovery rather than a verified theory.
 
