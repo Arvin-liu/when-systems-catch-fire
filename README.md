@@ -21,6 +21,8 @@
 A discovery made by a human being, driven by curiosity and aided by AI.
 We make no claim to having discovered any ultimate truth. This project has not yet undergone rigorous academic scrutiny, and for now, it should be understood as a personal discovery rather than a verified theory.
 
+This project is not a cross-disciplinary ultimate theory. It is a tool for structural projection across disciplines, candidate function extraction, case compression, and pressure-testing against counterexamples. For any domain involving professional facts, real people, medicine, law, finance, or public events, it must be backed by reliable external evidence and is allowed to remain `pending`.
+
 # 使用说明书：如何使用点火项目
 ### 1. 这个项目适合用来做什么
 点火适合用于分析一个复杂现象为什么会发展成现在这样，分析一个系统在什么条件下会被“点燃”，也适合分析某个事件、人物、组织、技术或文化现象的演化路径。
