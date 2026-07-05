@@ -37,7 +37,7 @@ link: "统一案例总表/0674-C-0679-Willmore猜想.md"
 
 ## 关联函数 / Related Functions
 
-- [D522](../统一函数总表/0519-D522-Willmore能量极小点函数.md)
+- [D522｜3维流形几何化与递归函数族](../统一函数总表/0519-D522-Willmore能量极小点函数.md)
 
 ## 原文捞回 / Source Recovery
 

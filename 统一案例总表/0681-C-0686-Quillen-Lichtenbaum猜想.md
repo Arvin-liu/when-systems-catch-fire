@@ -37,7 +37,7 @@ link: "统一案例总表/0681-C-0686-Quillen-Lichtenbaum猜想.md"
 
 ## 关联函数 / Related Functions
 
-- [D529](../统一函数总表/0526-D529-代数K理论伽罗瓦同构函数.md)
+- [D529｜3维流形几何化与递归函数族](../统一函数总表/0526-D529-代数K理论伽罗瓦同构函数.md)
 
 ## 原文捞回 / Source Recovery
 

@@ -37,7 +37,7 @@ J⁺=0.2, J⁻=1.1，反例证据表明可能不成立
 
 ## 关联函数 / Related Functions
 
-- [D524](../统一函数总表/0521-D524-Unique Games近似算法函数.md)
+- [D524｜3维流形几何化与递归函数族](../统一函数总表/0521-D524-Unique Games近似算法函数.md)
 
 ## 原文捞回 / Source Recovery
 
