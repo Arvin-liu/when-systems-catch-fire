@@ -8,8 +8,12 @@
 - 新增得到大脑输出索引目录 `outputs/getbrain/`；
 - 将点火项目总体定位更新整理为正式仓库文档；
 - 将 v0.2 结构缺漏审计整理为正式仓库文档；
+- 将 v0.2 函数依赖图初稿整理为正式仓库文档；
+- 将三门学科理论核试跑整理为正式仓库文档；
 - 新增 `docs/project_positioning.md` 作为项目总体定位说明；
 - 将 `docs/structural_gap_audit.md` 升级为正式审计索引；
+- 新增 `docs/function_dependency_map.md` 作为函数依赖图索引；
+- 新增 `docs/discipline_kernel_pilot.md` 作为学科理论核试跑索引；
 - 在 README 中加入得到大脑输出入口；
 - 保持 `v0.1-public-prototype` 之后的公开化结构不变。
 
