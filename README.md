@@ -34,6 +34,7 @@ English: This project is a generative model of cross-disciplinary phase transiti
 ## → [欢迎贡献](#欢迎贡献)
 ## → [致谢](#致谢)
 ## → [开源协议](#开源协议)
+## → [v0.2 路线图](#v02-路线图)
 ## ↳ [统一函数索引表（2026年07月06日12时40分，函数总数 602，收敛 6 条）](./统一函数总表/INDEX.md)
 ## ↳ [统一案例索引表（2026年07月06日12时40分，案例总数 790，收敛 11 条）](./统一案例总表/INDEX.md)
 
@@ -257,6 +258,11 @@ AI 不只可以帮你做解释，也可以帮你做验证。你可以让它寻�
 
 ## 开源协议
 详见 [LICENSE](LICENSE)。
+
+## v0.2 路线图
+下一阶段的工作重心不是继续下沉到新闻、文章、书籍和课程等材料层，而是先做结构层升级：审计框架自身缺漏，建立学科理论核二次细化模板，准备后续 UNESCO 学科深跑。
+
+阶段路线见 [docs/roadmap_v0.2.md](./docs/roadmap_v0.2.md)，结构缺漏审计见 [docs/structural_gap_audit.md](./docs/structural_gap_audit.md)。
 
 ## 核心概念索引
 - `Ψ₀` 元函数：系统入口，由六个构件共同组成的总判定式。
