@@ -17,3 +17,8 @@
 
 - `examples/`：放单个失败案例的 Markdown 文件
 
+## 示例
+
+- [牛顿苹果故事的误读与重构](./examples/apple_gravity_failure.md)
+- [技术创新一定带来经济增长吗？](./examples/technology_economic_growth_failure.md)
+- [跨领域协同不一定带来正面效应](./examples/cross_domain_synergy_risk.md)
