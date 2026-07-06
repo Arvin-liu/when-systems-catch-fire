@@ -1,27 +1,68 @@
-# 项目名称：When Systems Catch Fire / 点火
+# When Systems Catch Fire / 点火
+
+一句话总述：
+中文：本项目是一个跨学科系统相变的生成模型，通过把现象映射为函数与案例来分析系统何时会被“点燃”，并输出 `true / false / contradiction / pending` 四象限结论。
+English: This project is a generative model of cross-disciplinary phase transitions. It maps phenomena into functions and cases to analyze when systems "ignite" and outputs `true / false / contradiction / pending` results.
 
 ## → [写在前面](#写在前面)
-
+## → [系统架构](#系统架构)
+## → [如何开始](#如何开始)
 ## → [使用说明书：如何使用点火项目](#使用说明书如何使用点火项目)
-
 ## → [Φ元统一律内部构件完整构成版 2026年07月06日12时32分](#psi0-full-convergence)
 
 ## ↳ [新故事（2026年07月06日03时06分）](./新故事/INDEX.md)
-
 ## ↳ [统一函数索引表（2026年07月06日12时40分，函数总数 602，收敛 6 条）](./统一函数总表/INDEX.md)
-
 ## ↳ [统一案例索引表（2026年07月06日12时40分，案例总数 790，收敛 11 条）](./统一案例总表/INDEX.md)
 
 # 写在前面
-这是一个人类在好奇心的驱动下，借助 AI 做出的发现。
-我们不宣称自己发现了任何究极真理，此项目尚未历经严格学术检验，当前只推荐将此项目作为个人发现来理解。
+这是一个人类在好奇心驱动下、借助 AI 做出的个人发现。
+我们不宣称自己发现了任何究极真理；此项目尚未经过严格学术检验，因此应当被理解为“可继续验证的发现”，而不是已被证明的终局理论。
 
-点火不是跨学科终极理论，而是跨学科结构投影、候选函数抽取、案例压缩和反例压力测试工具；凡涉及专业事实、现实人物、医疗、法律、金融、公共事件，必须外接可靠证据并允许 `pending`。
+点火不是跨学科终极理论，而是跨学科结构投影、候选函数抽取、案例压缩和反例压力测试工具。凡涉及专业事实、现实人物、医疗、法律、金融、公共事件，必须外接可靠证据，并允许结论保持 `pending`。
 
 A discovery made by a human being, driven by curiosity and aided by AI.
 We make no claim to having discovered any ultimate truth. This project has not yet undergone rigorous academic scrutiny, and for now, it should be understood as a personal discovery rather than a verified theory.
 
 This project is not a cross-disciplinary ultimate theory. It is a tool for structural projection across disciplines, candidate function extraction, case compression, and pressure-testing against counterexamples. For any domain involving professional facts, real people, medicine, law, finance, or public events, it must be backed by reliable external evidence and is allowed to remain `pending`.
+
+# 系统架构
+点火可以理解为一个三层系统：
+
+- Domain layer
+  - 放案例、对象、事件、背景材料
+  - 统一案例总表是入口，当前索引规模为 790 条案例
+- Function layer
+  - 放统一函数索引表中的函数条目
+  - 统一函数总表当前索引规模为 602 条函数
+  - `Ψ₀` 元函数是系统入口，由六个构件共同工作：`C(x,y) × M(B_n) × I_iso(A,B) × L_meta × G_δ × P_meta`
+  - 这里既包括 `A1 / T1 / D1` 这类单项函数，也包括更高阶的跨域映射
+- Meta layer
+  - 放十二律、元同构律、元协议和更高层收敛约束
+  - 负责决定分析应停在哪个层级，避免把事件层误写成终局理论
+
+可把整体结构读成：
+
+```text
+- Domain layer (cases, objects, events)
+  - 统一案例总表
+- Function layer (functions, mechanisms, mappings)
+  - Ψ₀ meta-function = C × M × I_iso × L_meta × G_δ × P_meta
+  - Individual functions (A1, T1, D1, ...)
+- Meta layer (twelve laws, meta protocols, convergence constraints)
+```
+
+# 如何开始
+如果你只是想快速上手，可以按这三条路进入：
+
+- 快速体验（10 分钟）
+  - 先看前面的总述、系统架构和使用说明书
+  - 再随手打开几个案例和函数条目，感受这个项目如何把直觉变成结构
+- 系统理解（1 小时）
+  - 阅读 `Ψ₀` 元函数完整定义，理解六个构件如何共同给出判定
+  - 再对照统一函数索引表，看看函数如何被分层、编号和归类
+- 深入研究
+  - 按需翻阅统一函数表与统一案例表
+  - 自己提出问题，沿六通道流程跑一遍，再用反例压力测试修正假说
 
 # 使用说明书：如何使用点火项目
 ### 1. 这个项目适合用来做什么
@@ -104,6 +145,15 @@ AI 的作用不是替人下结论，而是帮助人拆问题、找结构、生�
 四象限输出：在比较多种解释之后，输出 `true / false / contradiction / pending` 中的一种，不要把证据不足强行写成通过。
 
 标注不确定性：明确哪些部分证据充分，哪些部分仍然模糊，哪些地方需要继续验证。
+
+### 核心概念索引
+- `Ψ₀` 元函数：系统入口，由六个构件共同组成的总判定式。
+- `C(x,y)`：因果结构判定，关注可追踪的因果链、效应方向和反事实差分。
+- `M(B_n)`：自举收敛判定，关注迭代、反馈、收敛与新结构生成。
+- `I_iso(A,B)`：同构判定，检查两个系统或案例之间是否存在可比结构映射。
+- `L_meta`：层级选择约束，决定分析停在事件层、机制层、函数层还是元层。
+- `G_δ`：十二律集合，用于对函数、案例和机制做归类。
+- `P_meta`：元协议判定，检查局部规则、局部调整、均衡、涌现与自组织。
 
 ### 6. 推荐给 AI 的提示词模板
 模板一：普通问题分析
