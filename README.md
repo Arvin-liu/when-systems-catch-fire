@@ -35,6 +35,7 @@ English: This project is a generative model of cross-disciplinary phase transiti
 ## → [致谢](#致谢)
 ## → [开源协议](#开源协议)
 ## → [v0.2 路线图](#v02-路线图)
+## → [得到大脑输出索引](#得到大脑输出索引)
 ## ↳ [统一函数索引表（2026年07月06日12时40分，函数总数 602，收敛 6 条）](./统一函数总表/INDEX.md)
 ## ↳ [统一案例索引表（2026年07月06日12时40分，案例总数 790，收敛 11 条）](./统一案例总表/INDEX.md)
 
@@ -262,7 +263,15 @@ AI 不只可以帮你做解释，也可以帮你做验证。你可以让它寻�
 ## v0.2 路线图
 下一阶段的工作重心不是继续下沉到新闻、文章、书籍和课程等材料层，而是先做结构层升级：审计框架自身缺漏，建立学科理论核二次细化模板，准备后续 UNESCO 学科深跑。
 
-阶段路线见 [docs/roadmap_v0.2.md](./docs/roadmap_v0.2.md)，结构缺漏审计见 [docs/structural_gap_audit.md](./docs/structural_gap_audit.md)。
+阶段路线见 [docs/roadmap_v0.2.md](./docs/roadmap_v0.2.md)，项目总体定位见 [docs/project_positioning.md](./docs/project_positioning.md)，结构缺漏审计见 [docs/structural_gap_audit.md](./docs/structural_gap_audit.md)。
+
+## 得到大脑输出索引
+v0.2 的两份结构性输入已经整理进仓库，作为后续学科深跑和结构审计的正式材料入口。
+
+完整索引见 [outputs/getbrain/README.md](./outputs/getbrain/README.md)；其中包括：
+
+- [点火项目总体定位更新](./outputs/getbrain/project-position-update-20260706.md)
+- [v0.2 结构缺漏审计](./outputs/getbrain/v0.2-structural-gap-audit-20260706.md)
 
 ## 核心概念索引
 - `Ψ₀` 元函数：系统入口，由六个构件共同组成的总判定式。
