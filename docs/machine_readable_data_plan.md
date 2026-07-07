@@ -419,6 +419,14 @@ P1 初期可以先保留空数组，不强制补齐所有交叉引用。
 检查每个 Markdown 源文件是否能稳定抽取字段。  
 输出审计报告，不生成数据。
 
+### P1-1 状态
+
+P1-1 抽取可行性审计已完成：
+
+- `outputs/audit/p1-extraction-feasibility-audit-20260707.md`
+
+下一步进入 P1-2：建立 JSON Schema。
+
 ### P1-2：建立 JSON Schema
 
 创建：

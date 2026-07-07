@@ -4,6 +4,7 @@
 
 ### Added
 
+- 新增 `outputs/audit/p1-extraction-feasibility-audit-20260707.md`，审计 P1 机器可读化数据集的抽取可行性。
 - 新增 `docs/author_motivation_and_boundary_note.md`，澄清点火项目的好奇心驱动动机，并防止被误读为"野心驱动的大一统理论"。
 - 新增 `docs/machine_readable_data_plan.md`，定义 P1 机器可读化数据集、字段、来源、校验规则和后续执行顺序。
 - 新增 `outputs/audit/v0.2-p0-closeout-audit-20260707.md`，作为 v0.2 P0 收口复核审计记录；
@@ -12,6 +13,7 @@
 
 ### Changed
 
+- 将 P1 机器可读化任务推进到 P1-2：建立 JSON Schema。
 - 在 README、项目定位、v0.2 总结和机器可读化规划中加入动机与边界说明入口。
 - 将 v0.2 后续任务推进到 P1 机器可读化准备阶段。
 
