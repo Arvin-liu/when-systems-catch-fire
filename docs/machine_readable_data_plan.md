@@ -491,6 +491,14 @@ outputs/audit/p1-machine-readable-data-audit-20260707.md
 
 复核所有数据文件、schema 和校验器。
 
+## 表达边界提醒
+
+机器可读化数据不应把项目描述为"野心驱动的大一统理论"。相关公开表达应遵守：
+
+- [动机与边界说明](author_motivation_and_boundary_note.md)
+- [公开前风险检查清单](publication_risk_checklist.md)
+- [Pending 强结论登记表](pending_claims_register.md)
+
 ## 14. P1 边界
 
 P1 不做以下事情：

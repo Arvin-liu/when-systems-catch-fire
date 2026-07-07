@@ -4,6 +4,7 @@
 
 ### Added
 
+- 新增 `docs/author_motivation_and_boundary_note.md`，澄清点火项目的好奇心驱动动机，并防止被误读为"野心驱动的大一统理论"。
 - 新增 `docs/machine_readable_data_plan.md`，定义 P1 机器可读化数据集、字段、来源、校验规则和后续执行顺序。
 - 新增 `outputs/audit/v0.2-p0-closeout-audit-20260707.md`，作为 v0.2 P0 收口复核审计记录；
 - 更新 `README.md`，新增 v0.2 治理与索引入口，集中链接总索引、编号表、风险表和 pending 登记；
@@ -11,6 +12,7 @@
 
 ### Changed
 
+- 在 README、项目定位、v0.2 总结和机器可读化规划中加入动机与边界说明入口。
 - 将 v0.2 后续任务推进到 P1 机器可读化准备阶段。
 
 - 新增 `docs/pending_claims_register.md`，集中登记 v0.2 必须保持 pending 的强结论与高风险表达；

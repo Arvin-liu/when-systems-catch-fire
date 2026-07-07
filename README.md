@@ -297,6 +297,12 @@ v0.2 总索引页见：[v0.2 总结](./docs/v0.2_summary.md)。
 - [公开前风险检查清单](./docs/publication_risk_checklist.md)
 - [Pending 强结论登记表](./docs/pending_claims_register.md)
 
+## 动机与边界
+
+点火项目不是大一统理论，也不是解释一切的终极框架。它是一个好奇心驱动的跨域结构化分析工具：把跨域阅读、写作、诗歌、摄影、学习和现实观察中产生的问题感，约束到可检查、可反证、可 pending 的分析流程中。
+
+更多说明见：[动机与边界说明](docs/author_motivation_and_boundary_note.md)。
+
 ## v0.2 治理与索引
 v0.2 的核心治理入口集中在这里，方便先看总索引，再进入编号表、风险表和 pending 表。
 
