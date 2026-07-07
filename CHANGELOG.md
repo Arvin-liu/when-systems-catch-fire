@@ -4,6 +4,10 @@
 
 ### Added
 
+- 收录得到大脑输出的《经典问题 benchmark 初稿》；
+- 新增 `docs/classic_problems_benchmark.md`，作为 v0.2 经典问题 benchmark 索引；
+- 更新 `outputs/getbrain/README.md`，记录任务 G 已完成初稿；
+- 更新 `docs/v0.2_next_tasks.md`，将任务 G 调整为“已完成初稿，待补条目与计数复核”；
 - 收录得到大脑输出的《失败类型学初稿》；
 - 新增 `docs/failure_typology.md`，作为 v0.2 失败类型学索引；
 - 更新 `outputs/getbrain/README.md`，记录任务 F 已完成；
