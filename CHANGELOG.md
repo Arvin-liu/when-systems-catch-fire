@@ -4,6 +4,10 @@
 
 ### Added
 
+- 新增 `outputs/audit/v0.2-p0-closeout-audit-20260707.md`，作为 v0.2 P0 收口复核审计记录；
+- 更新 `README.md`，新增 v0.2 治理与索引入口，集中链接总索引、编号表、风险表和 pending 登记；
+- 更新 `docs/v0.2_next_tasks.md`，将 P0 调整为已收口，并把后续重点切到 P1 机器可读化准备。
+
 - 新增 `docs/pending_claims_register.md`，集中登记 v0.2 必须保持 pending 的强结论与高风险表达；
 - 新增 `docs/publication_risk_checklist.md`，作为 README、docs、benchmark、故事化案例和对外材料的公开前风险检查清单。
 - 新增 `docs/classic_problem_ids.md`，为 34 个经典问题 benchmark 分配 `CP-001` 至 `CP-034` 编号；
@@ -36,6 +40,7 @@
 
 - 修正 v0.2 文档中的经典问题 benchmark 计数，从 33 个更新为 34 个。
 - 将公开前风险检查清单标记为 v0.2 后续 P0 整理任务中的已完成项。
+- 将 v0.2 P0 状态收束为已完成收口，并补充收口审计记录。
 
 ## v0.2-getbrain-ingestion
 这是点火项目将得到大脑 v0.2 输出整理进入 GitHub 仓库的落地版本。
