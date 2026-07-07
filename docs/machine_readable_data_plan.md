@@ -482,7 +482,19 @@ P1-5 evidence / function dependency 数据已生成：
 - `data/function_dependency.json`
 - `data/function_dependency.csv`
 
-下一步进入 P1-6：建立数据校验器。
+### P1-6 状态
+
+P1-6 数据校验器已建立：
+
+- `tools/validate_data.py`
+
+运行方式：
+
+```bash
+python3 tools/validate_data.py
+```
+
+下一步进入 P1-7：P1 数据完整性审计。
 
 ### P1-3：生成 CP / SB 数据
 

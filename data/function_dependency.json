@@ -93,8 +93,7 @@
       "FUNC-L0-LMETA"
     ],
     "used_by": [
-      "FUNC-L1-EVIDENCE",
-      "FUNC-L1-PENDING"
+      "FUNC-L1-EVIDENCE"
     ],
     "created_in": "v0.2",
     "updated_in": null,
