@@ -292,6 +292,10 @@ v0.2 总索引页见：[v0.2 总结](./docs/v0.2_summary.md)。
 - [经典问题 benchmark 编号索引](./docs/classic_problem_ids.md)
 - [故事化 backlog 编号索引](./docs/storytelling_backlog_ids.md)
 
+风险检查：
+
+- [公开前风险检查清单](./docs/publication_risk_checklist.md)
+
 ## 得到大脑输出索引
 v0.2 的九份结构性输入已经整理进仓库，作为后续学科深跑和结构审计的正式材料入口。
 

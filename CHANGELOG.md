@@ -4,6 +4,7 @@
 
 ### Added
 
+- 新增 `docs/publication_risk_checklist.md`，作为 README、docs、benchmark、故事化案例和对外材料的公开前风险检查清单。
 - 新增 `docs/classic_problem_ids.md`，为 34 个经典问题 benchmark 分配 `CP-001` 至 `CP-034` 编号；
 - 新增 `docs/storytelling_backlog_ids.md`，为 30 个故事化 backlog 条目分配 `SB-001` 至 `SB-030` 编号；
 - 收录得到大脑输出的《v0.2 总结与收口》；
@@ -33,6 +34,7 @@
 ### Fixed
 
 - 修正 v0.2 文档中的经典问题 benchmark 计数，从 33 个更新为 34 个。
+- 将公开前风险检查清单标记为 v0.2 后续 P0 整理任务中的已完成项。
 
 ## v0.2-getbrain-ingestion
 这是点火项目将得到大脑 v0.2 输出整理进入 GitHub 仓库的落地版本。
