@@ -1,0 +1,35 @@
+id,title,source_file,source_line,domain,benchmark_type,claim_level_max,pending_required,related_pend_ids,related_failure_types,related_evidence_regime,public_safe,created_in,updated_in,status,tags,notes
+CP-001,黎曼猜想,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,20,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-002,P vs NP,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,85,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-003,哥德尔不完备性,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,150,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-004,量子引力,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,212,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-005,四种基本力统一,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,278,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-006,暗物质 / 暗能量本质,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,344,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-007,罗马帝国为何衰亡,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,409,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-008,工业革命为什么首先发生在英国,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,482,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-009,中国王朝周期为何反复出现,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,555,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-010,经济增长从何而来,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,628,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-011,为什么会发生金融危机,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,701,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-012,市场为何会失灵,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,774,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-013,社会信任如何形成,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,844,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-014,社会阶层为何固化,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,917,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-015,集体行动如何可能,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,990,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-016,国家为什么形成,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1063,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-017,民主为什么会衰退,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1136,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-018,威权体制为何稳定或崩溃,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1209,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-019,战争为何发生,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1282,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-020,制度为何会锁定,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1355,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-021,人为什么会产生偏见,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1428,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-022,动机如何形成,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1498,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-023,人如何改变习惯,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1568,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-024,学习迁移如何发生,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1638,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-025,为什么教育会加剧或缓解不平等,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1708,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-026,学生动机如何形成,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1781,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-027,AI 泛化能力从何而来,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1851,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-028,AI 对齐为何困难,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1926,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-029,大模型涌现是否真实,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,1996,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-030,文学作品为什么能跨时代有效,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,2066,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-031,艺术作品的意义如何生成,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,2133,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-032,审美判断是否有客观性,outputs/getbrain/classic-problems-benchmark-draft-20260706.md,2200,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-033,叙事为什么能改变人的理解,outputs/getbrain/classic-problems-benchmark-supplement-20260707.md,18,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。
+CP-034,现代艺术为何成立,outputs/getbrain/classic-problems-benchmark-supplement-20260707.md,100,,,pending,true,[],[],,,v0.2,,active,[],P1-3 初版：domain / benchmark_type / related_* 待后续交叉引用补齐。

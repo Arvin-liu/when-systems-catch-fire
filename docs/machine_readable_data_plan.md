@@ -451,6 +451,17 @@ P1-2 JSON Schema 已建立：
 
 下一步进入 P1-3：生成 CP / SB 数据。
 
+### P1-3 状态
+
+P1-3 CP / SB 数据已生成：
+
+- `data/classic_problems_benchmark.json`
+- `data/classic_problems_benchmark.csv`
+- `data/storytelling_backlog.json`
+- `data/storytelling_backlog.csv`
+
+下一步进入 P1-4：生成 pending / risk / failure 数据。
+
 ### P1-3：生成 CP / SB 数据
 
 创建：
