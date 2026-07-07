@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- 收录得到大脑输出的《失败类型学初稿》；
+- 新增 `docs/failure_typology.md`，作为 v0.2 失败类型学索引；
+- 更新 `outputs/getbrain/README.md`，记录任务 F 已完成；
+- 更新 `docs/v0.2_next_tasks.md`，将任务 F 调整为“已完成初稿，待复核与案例绑定”。
+
 ## v0.2-getbrain-ingestion
 这是点火项目将得到大脑 v0.2 输出整理进入 GitHub 仓库的落地版本。
 
