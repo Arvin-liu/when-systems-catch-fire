@@ -265,7 +265,7 @@ AI 不只可以帮你做解释，也可以帮你做验证。你可以让它寻�
 
 阶段路线见 [docs/roadmap_v0.2.md](./docs/roadmap_v0.2.md)，项目总体定位见 [docs/project_positioning.md](./docs/project_positioning.md)，结构缺漏审计见 [docs/structural_gap_audit.md](./docs/structural_gap_audit.md)。
 
-v0.2 的七项内容生产已经由得到大脑完成：
+v0.2 的 A-H 内容生产已经由得到大脑完成：
 
 - [点火项目总体定位更新](./outputs/getbrain/project-position-update-20260706.md)
 - [v0.2 结构缺漏审计](./outputs/getbrain/v0.2-structural-gap-audit-20260706.md)
@@ -275,12 +275,14 @@ v0.2 的七项内容生产已经由得到大脑完成：
 - [失败类型学初稿](./outputs/getbrain/failure-typology-draft-20260706.md)
 - [经典问题 benchmark 初稿](./outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
 - [经典问题 benchmark 补丁：补齐 2 个条目与计数复核](./outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+- [故事化案例 backlog 初稿](./outputs/getbrain/storytelling-case-backlog-draft-20260707.md)
 
 函数依赖图索引见：[函数依赖图](./docs/function_dependency_map.md)。
 学科理论核试跑索引见：[学科理论核试跑](./docs/discipline_kernel_pilot.md)。
 证据制度库索引见：[证据制度库](./docs/evidence_regime_library.md)。
 失败类型学索引见：[失败类型学](./docs/failure_typology.md)。
 经典问题 benchmark 索引见：[经典问题 benchmark](./docs/classic_problems_benchmark.md)。
+故事化案例 backlog 索引见：[故事化案例 backlog](./docs/storytelling_case_backlog.md)。
 任务 G 补丁已补齐 2 个缺口，并将当前 benchmark 计数复核为 33 个条目。后续工作是编号与机器可读化。
 
 ## 得到大脑输出索引
