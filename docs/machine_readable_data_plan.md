@@ -32,8 +32,8 @@ P1 规划以下数据集：
 | pending_claims | `data/pending_claims.json` / `.csv` | `docs/pending_claims_register.md` | 待生成 |
 | publication_risk_rules | `data/publication_risk_rules.json` / `.csv` | `docs/publication_risk_checklist.md` | 待生成 |
 | failure_typology | `data/failure_typology.json` / `.csv` | `docs/failure_typology.md` | 待生成 |
-| evidence_regimes | `data/evidence_regimes.json` / `.csv` | `docs/evidence_regime_library.md` | 待生成 |
-| function_dependency | `data/function_dependency.json` / `.csv` | `docs/function_dependency_map.md` | 待生成 |
+| evidence_regimes | `data/evidence_regimes.json` / `.csv` | `docs/evidence_regime_library.md` | 已生成（P1-5） |
+| function_dependency | `data/function_dependency.json` / `.csv` | `docs/function_dependency_map.md` | 已生成（P1-5） |
 
 后续可以新增：
 
@@ -473,7 +473,16 @@ P1-4 pending / risk / failure 数据已生成：
 - `data/failure_typology.json`
 - `data/failure_typology.csv`
 
-下一步进入 P1-5：生成 evidence / function dependency 数据。
+### P1-5 状态
+
+P1-5 evidence / function dependency 数据已生成：
+
+- `data/evidence_regimes.json`
+- `data/evidence_regimes.csv`
+- `data/function_dependency.json`
+- `data/function_dependency.csv`
+
+下一步进入 P1-6：建立数据校验器。
 
 ### P1-3：生成 CP / SB 数据
 

@@ -1,0 +1,14 @@
+id,name,layer,role,depends_on,used_by,created_in,updated_in,status,tags,notes
+FUNC-L0-C,"C(x,y) 因果结构判定",L0,判定两个对象或变量之间的因果结构，是点火元函数的入口之一。,[],"[""FUNC-L1-EXIT"", ""FUNC-L1-GATE"", ""FUNC-L1-BOOTSTRAP""]",v0.2,,active,"[""meta-function"", ""causality""]",P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。
+FUNC-L0-M,M(B_n) 自举收敛判定,L0,判定系统是否形成自举循环及其收敛方向。,"[""FUNC-L0-C""]","[""FUNC-L1-BOOTSTRAP"", ""FUNC-L1-MULTIPLICATIVE""]",v0.2,,active,"[""meta-function"", ""bootstrap""]",P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。
+FUNC-L0-IISO,"I_iso(A,B) 同构判定",L0,判定跨域对象之间是否存在结构同构，而非仅仅表面相似。,"[""FUNC-L0-C""]","[""FUNC-L1-EXIT"", ""FUNC-L1-GATE"", ""FUNC-L1-COGNITION""]",v0.2,,active,"[""meta-function"", ""isomorphism""]",P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。
+FUNC-L0-LMETA,L_meta 元层面收敛,L0,约束函数与案例向元层面收敛，避免无限材料扩张。,"[""FUNC-L0-M"", ""FUNC-L0-IISO""]","[""FUNC-L1-EVIDENCE"", ""FUNC-L1-FAILURE""]",v0.2,,active,"[""meta-function"", ""convergence""]",P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。
+FUNC-L0-GDELTA,G_δ 哥德尔不完备性判定,L0,用于识别框架完备性、边界和 pending 条件，防止强断言越界。,"[""FUNC-L0-LMETA""]","[""FUNC-L1-EVIDENCE"", ""FUNC-L1-PENDING""]",v0.2,,active,"[""meta-function"", ""incompleteness""]",P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。
+FUNC-L0-PMETA,P_meta 元协议投影,L0,将元协议投影到具体学科、案例和执行层。,"[""FUNC-L0-C"", ""FUNC-L0-IISO"", ""FUNC-L0-LMETA""]","[""FUNC-L1-GATE"", ""FUNC-L1-EVIDENCE"", ""FUNC-L1-FAILURE""]",v0.2,,active,"[""meta-function"", ""protocol""]",P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。
+FUNC-L1-EXIT,退出权函数族,L1,处理系统中的退出权、退出成本、退出空间和制度弹性。,"[""FUNC-L0-C"", ""FUNC-L0-IISO""]",[],v0.2,,review,"[""function-family"", ""exit-right""]",P1-5 初版：依赖边仍需后续人工结构化。
+FUNC-L1-GATE,门控函数族,L1,处理信息、能量、制度、认知等系统中的门控、阈值和通道效率。,"[""FUNC-L0-C"", ""FUNC-L0-IISO"", ""FUNC-L0-PMETA""]",[],v0.2,,review,"[""function-family"", ""gate""]",P1-5 初版：依赖边仍需后续人工结构化。
+FUNC-L1-BOOTSTRAP,自举函数族,L1,处理自激活、自增强、反馈循环和系统内生增长。,"[""FUNC-L0-C"", ""FUNC-L0-M""]",[],v0.2,,review,"[""function-family"", ""bootstrap""]",P1-5 初版：依赖边仍需后续人工结构化。
+FUNC-L1-MULTIPLICATIVE,乘法临界漂移函数族,L1,处理乘法效应、临界漂移、遮蔽补偿和系统相变。,"[""FUNC-L0-M"", ""FUNC-L0-LMETA""]",[],v0.2,,review,"[""function-family"", ""multiplicative""]",P1-5 初版：依赖边仍需后续人工结构化。
+FUNC-L1-COGNITION,认知函数族,L1,处理好奇心、自主意识、认知调度、AI 认知和学习系统。,"[""FUNC-L0-IISO"", ""FUNC-L0-LMETA""]",[],v0.2,,review,"[""function-family"", ""cognition""]",P1-5 初版：依赖边仍需后续人工结构化。
+FUNC-L1-EVIDENCE,证据制度守门函数族,L1,将学科证据制度绑定到断言等级和 pending 条件。,"[""FUNC-L0-LMETA"", ""FUNC-L0-GDELTA"", ""FUNC-L0-PMETA""]",[],v0.2,,review,"[""function-family"", ""evidence""]",P1-5 初版：由 v0.2 证据制度库和风险治理层抽象得到。
+FUNC-L1-FAILURE,失败类型与反向修正函数族,L1,将失败案例、失败类型、反例和修正机制反馈到函数与案例治理。,"[""FUNC-L0-LMETA"", ""FUNC-L0-PMETA""]",[],v0.2,,review,"[""function-family"", ""failure""]",P1-5 初版：由 v0.2 失败类型学和公开风险检查清单抽象得到。

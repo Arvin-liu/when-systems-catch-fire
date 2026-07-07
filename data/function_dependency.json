@@ -1,0 +1,267 @@
+[
+  {
+    "id": "FUNC-L0-C",
+    "name": "C(x,y) 因果结构判定",
+    "layer": "L0",
+    "role": "判定两个对象或变量之间的因果结构，是点火元函数的入口之一。",
+    "depends_on": [],
+    "used_by": [
+      "FUNC-L1-EXIT",
+      "FUNC-L1-GATE",
+      "FUNC-L1-BOOTSTRAP"
+    ],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [
+      "meta-function",
+      "causality"
+    ],
+    "notes": "P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。"
+  },
+  {
+    "id": "FUNC-L0-M",
+    "name": "M(B_n) 自举收敛判定",
+    "layer": "L0",
+    "role": "判定系统是否形成自举循环及其收敛方向。",
+    "depends_on": [
+      "FUNC-L0-C"
+    ],
+    "used_by": [
+      "FUNC-L1-BOOTSTRAP",
+      "FUNC-L1-MULTIPLICATIVE"
+    ],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [
+      "meta-function",
+      "bootstrap"
+    ],
+    "notes": "P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。"
+  },
+  {
+    "id": "FUNC-L0-IISO",
+    "name": "I_iso(A,B) 同构判定",
+    "layer": "L0",
+    "role": "判定跨域对象之间是否存在结构同构，而非仅仅表面相似。",
+    "depends_on": [
+      "FUNC-L0-C"
+    ],
+    "used_by": [
+      "FUNC-L1-EXIT",
+      "FUNC-L1-GATE",
+      "FUNC-L1-COGNITION"
+    ],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [
+      "meta-function",
+      "isomorphism"
+    ],
+    "notes": "P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。"
+  },
+  {
+    "id": "FUNC-L0-LMETA",
+    "name": "L_meta 元层面收敛",
+    "layer": "L0",
+    "role": "约束函数与案例向元层面收敛，避免无限材料扩张。",
+    "depends_on": [
+      "FUNC-L0-M",
+      "FUNC-L0-IISO"
+    ],
+    "used_by": [
+      "FUNC-L1-EVIDENCE",
+      "FUNC-L1-FAILURE"
+    ],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [
+      "meta-function",
+      "convergence"
+    ],
+    "notes": "P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。"
+  },
+  {
+    "id": "FUNC-L0-GDELTA",
+    "name": "G_δ 哥德尔不完备性判定",
+    "layer": "L0",
+    "role": "用于识别框架完备性、边界和 pending 条件，防止强断言越界。",
+    "depends_on": [
+      "FUNC-L0-LMETA"
+    ],
+    "used_by": [
+      "FUNC-L1-EVIDENCE",
+      "FUNC-L1-PENDING"
+    ],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [
+      "meta-function",
+      "incompleteness"
+    ],
+    "notes": "P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。"
+  },
+  {
+    "id": "FUNC-L0-PMETA",
+    "name": "P_meta 元协议投影",
+    "layer": "L0",
+    "role": "将元协议投影到具体学科、案例和执行层。",
+    "depends_on": [
+      "FUNC-L0-C",
+      "FUNC-L0-IISO",
+      "FUNC-L0-LMETA"
+    ],
+    "used_by": [
+      "FUNC-L1-GATE",
+      "FUNC-L1-EVIDENCE",
+      "FUNC-L1-FAILURE"
+    ],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [
+      "meta-function",
+      "protocol"
+    ],
+    "notes": "P1-5 初版：来自函数依赖图文档中的 Ψ₀ 六大组件。"
+  },
+  {
+    "id": "FUNC-L1-EXIT",
+    "name": "退出权函数族",
+    "layer": "L1",
+    "role": "处理系统中的退出权、退出成本、退出空间和制度弹性。",
+    "depends_on": [
+      "FUNC-L0-C",
+      "FUNC-L0-IISO"
+    ],
+    "used_by": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "review",
+    "tags": [
+      "function-family",
+      "exit-right"
+    ],
+    "notes": "P1-5 初版：依赖边仍需后续人工结构化。"
+  },
+  {
+    "id": "FUNC-L1-GATE",
+    "name": "门控函数族",
+    "layer": "L1",
+    "role": "处理信息、能量、制度、认知等系统中的门控、阈值和通道效率。",
+    "depends_on": [
+      "FUNC-L0-C",
+      "FUNC-L0-IISO",
+      "FUNC-L0-PMETA"
+    ],
+    "used_by": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "review",
+    "tags": [
+      "function-family",
+      "gate"
+    ],
+    "notes": "P1-5 初版：依赖边仍需后续人工结构化。"
+  },
+  {
+    "id": "FUNC-L1-BOOTSTRAP",
+    "name": "自举函数族",
+    "layer": "L1",
+    "role": "处理自激活、自增强、反馈循环和系统内生增长。",
+    "depends_on": [
+      "FUNC-L0-C",
+      "FUNC-L0-M"
+    ],
+    "used_by": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "review",
+    "tags": [
+      "function-family",
+      "bootstrap"
+    ],
+    "notes": "P1-5 初版：依赖边仍需后续人工结构化。"
+  },
+  {
+    "id": "FUNC-L1-MULTIPLICATIVE",
+    "name": "乘法临界漂移函数族",
+    "layer": "L1",
+    "role": "处理乘法效应、临界漂移、遮蔽补偿和系统相变。",
+    "depends_on": [
+      "FUNC-L0-M",
+      "FUNC-L0-LMETA"
+    ],
+    "used_by": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "review",
+    "tags": [
+      "function-family",
+      "multiplicative"
+    ],
+    "notes": "P1-5 初版：依赖边仍需后续人工结构化。"
+  },
+  {
+    "id": "FUNC-L1-COGNITION",
+    "name": "认知函数族",
+    "layer": "L1",
+    "role": "处理好奇心、自主意识、认知调度、AI 认知和学习系统。",
+    "depends_on": [
+      "FUNC-L0-IISO",
+      "FUNC-L0-LMETA"
+    ],
+    "used_by": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "review",
+    "tags": [
+      "function-family",
+      "cognition"
+    ],
+    "notes": "P1-5 初版：依赖边仍需后续人工结构化。"
+  },
+  {
+    "id": "FUNC-L1-EVIDENCE",
+    "name": "证据制度守门函数族",
+    "layer": "L1",
+    "role": "将学科证据制度绑定到断言等级和 pending 条件。",
+    "depends_on": [
+      "FUNC-L0-LMETA",
+      "FUNC-L0-GDELTA",
+      "FUNC-L0-PMETA"
+    ],
+    "used_by": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "review",
+    "tags": [
+      "function-family",
+      "evidence"
+    ],
+    "notes": "P1-5 初版：由 v0.2 证据制度库和风险治理层抽象得到。"
+  },
+  {
+    "id": "FUNC-L1-FAILURE",
+    "name": "失败类型与反向修正函数族",
+    "layer": "L1",
+    "role": "将失败案例、失败类型、反例和修正机制反馈到函数与案例治理。",
+    "depends_on": [
+      "FUNC-L0-LMETA",
+      "FUNC-L0-PMETA"
+    ],
+    "used_by": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "review",
+    "tags": [
+      "function-family",
+      "failure"
+    ],
+    "notes": "P1-5 初版：由 v0.2 失败类型学和公开风险检查清单抽象得到。"
+  }
+]

@@ -324,6 +324,10 @@ v0.2 的核心治理入口集中在这里，方便先看总索引，再进入编
   - `data/publication_risk_rules.csv`
   - `data/failure_typology.json`
   - `data/failure_typology.csv`
+  - `data/evidence_regimes.json`
+  - `data/evidence_regimes.csv`
+  - `data/function_dependency.json`
+  - `data/function_dependency.csv`
 
 ## 得到大脑输出索引
 v0.2 的九份结构性输入已经整理进仓库，作为后续学科深跑和结构审计的正式材料入口。
