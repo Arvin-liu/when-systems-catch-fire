@@ -1,0 +1,35 @@
+id,domain,claim,allowed_level,forbidden_wording,recommended_wording,handling,default_decision,related_cp_ids,related_sb_ids,created_in,updated_in,status,tags,notes
+PEND-001,数学,黎曼猜想,L2 / L3 / pending,点火框架证明了黎曼猜想,点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明,保持 pending，除非有外部数学证明,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-002,数学,P vs NP,L2 / L3 / pending,点火框架解决了 P vs NP,点火框架可分析该问题的结构张力，但不能给出复杂性理论证明,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-003,数学,哥德尔不完备性相关外推,L2 / L3 / pending,点火框架从哥德尔推出所有系统结论,哥德尔可作为结构案例，但跨域外推必须标注边界,公开前检查外推范围,REVISE,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-004,物理学,四种基本力统一,L2 / L3 / pending,点火框架统一了四种基本力,点火框架只能提供统一问题的结构性解释路径,保持 pending，需要物理理论和实验证据,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-005,物理学,量子引力,L2 / L3 / pending,点火框架解决了量子引力,点火框架只能讨论量子引力的结构性困境,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-006,物理学,暗物质 / 暗能量本质,L2 / L3 / pending,点火框架解释了暗物质 / 暗能量的本质,点火框架只能把该问题列为结构性未知,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-007,物理学,标准模型、广义相对论、量子场论边界,L2 / L3 / pending,点火框架替代现有物理理论,点火框架不是物理理论替代品,公开前强制加边界说明,HOLD,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-008,历史学,罗马帝国为何衰亡,L2 / L3 / pending,点火框架给出了罗马衰亡的真实原因,点火框架可提供结构性解释框架，但不能替代史料研究,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-009,历史学,工业革命为什么首先发生在英国,L2 / L3 / pending,点火框架确定了工业革命首发英国的原因,点火框架可重写变量关系，但不能替代历史因果考证,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-010,历史学,中国王朝周期为何反复出现,L2 / L3 / pending,点火框架发现了王朝周期定律,点火框架可分析周期结构，但不能写成历史因果定律,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-011,经济学,经济增长从何而来,L2 / L3 / pending,点火框架证明了经济增长机制,点火框架可提供结构性解释，不提供经济学实证定论,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-012,经济学,市场为何会失灵,L2 / L3 / pending,点火框架解决了市场失灵问题,点火框架可分析失灵结构，不替代经济模型和数据,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-013,经济学,金融危机为何发生,L2 / L3 / pending,点火框架预测或解释了具体金融危机,点火框架可做结构性解释，不提供投资或政策建议,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-014,社会科学,社会信任如何形成,L2 / L3 / pending,点火框架证明了社会信任的形成机制,点火框架可提出结构假设，需社会科学实证验证,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-015,社会科学,社会阶层为何固化,L2 / L3 / pending,点火框架给出阶层固化定论,点火框架可分析结构机制，不能替代数据研究,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-016,社会科学,集体行动如何可能,L2 / L3 / pending,点火框架解决了集体行动问题,点火框架可重写问题结构，不替代社会科学理论和实证,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-017,教育学,为什么教育会加剧或缓解不平等,L2 / L3 / pending,点火框架证明教育导致不平等,点火框架可分析教育结构张力，不能给出现实政策结论,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-018,心理学 / 行为,人如何改变习惯,L2 / L3 / pending,点火框架给出改变习惯的方法处方,点火框架可提供结构观察，不替代心理咨询或医学建议,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-019,心理学 / 行为,动机如何形成,L2 / L3 / pending,点火框架证明动机形成机制,点火框架可提供结构解释，不替代心理学实证,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-020,心理学 / 行为,人为什么会产生偏见,L2 / L3 / pending,点火框架解决偏见问题,点火框架可分析偏见的结构生成条件，不能写成最终心理学结论,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-021,法律 / 制度,制度为何会锁定,L2 / L3 / pending,点火框架证明某制度应如何改革,点火框架可分析锁定结构，不给法律或政策建议,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-022,AI / 计算机科学,AI 泛化能力从何而来,L2 / L3 / pending,点火框架证明了 AI 泛化来源,点火框架可分析泛化结构，需实验和理论验证,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-023,AI / 计算机科学,大模型涌现是否真实,L2 / L3 / pending,点火框架证明大模型涌现真实 / 不真实,点火框架可分析涌现争议的结构，不能替代评测和实验,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-024,AI / 计算机科学,AI 对齐为何困难,L2 / L3 / pending,点火框架解决了 AI 对齐,点火框架可分析对齐困难结构，不提供部署安全结论,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-025,文学,文学作品为什么能跨时代有效,L2 / L3 / pending,点火框架证明文学跨时代有效的本质,点火框架可提供解释路径，不替代文学史和接受史研究,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-026,艺术,艺术作品的意义如何生成,L2 / L3 / pending,点火框架证明艺术意义生成机制,点火框架可做结构阐释，不给唯一审美定论,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-027,艺术,现代艺术为何成立,L2 / L3 / pending,点火框架证明现代艺术成立,点火框架可解释现代艺术成立的结构条件，不替代艺术史研究,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-028,叙事理论,叙事为什么能改变人的理解,L2 / L3 / pending,点火框架证明叙事改变理解的机制,点火框架可分析叙事的结构作用，不能替代认知科学实证,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-029,工程 / 技术,工程可行性、成本、性能、部署判断,L2 / L3 / pending,点火框架证明某工程方案可行,点火框架可做结构分析，不替代工程验证,保持 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-030,医学 / 健康,任何诊断、治疗、用药、心理健康建议,不应给出专业结论,点火框架建议如何治疗 / 用药,点火框架不提供医学建议，只能做一般结构观察,默认 HOLD,HOLD,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-031,法律 / 合规,任何具体法律责任、合同、诉讼、犯罪判断,不应给出专业结论,点火框架判断某行为违法 / 合法,点火框架不提供法律意见，只能做结构分析,默认 HOLD,HOLD,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-032,金融 / 投资,任何投资、交易、资产配置、风险处置建议,不应给出专业结论,点火框架建议买入 / 卖出 / 配置资产,点火框架不提供金融建议，只能做结构观察,默认 HOLD,HOLD,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-033,政策 / 治理,任何现实政策执行建议,L2 / L3 / pending,点火框架建议政府 / 机构应执行某政策,点火框架可分析政策结构，不给现实执行建议,默认 pending,pending,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。
+PEND-034,公开故事化,任何故事化案例,L1 / L2 / L3 / pending,故事证明了点火框架正确,故事化案例只帮助理解结构关系，不是证明,公开前必须过风险检查,REVISE,[],[],v0.2,,active,[],P1-4 初版：related_cp_ids / related_sb_ids 待后续交叉引用补齐。

@@ -1,0 +1,9 @@
+id,category,trigger,required_action,decision,related_failure_type,related_pend_ids,created_in,updated_in,status,tags,notes
+RISK-001,断言等级越界,将 L0-L3 的结构性推论写成 L4-L5 的证明、实证结论或专业定论。,降级为结构性推论，明确 claim level，并在证据不足时标注 pending。,REVISE,FAIL-008,[],v0.2,,active,"[""claim-level"", ""pending""]",P1-4 初版：由公开前风险检查清单结构化生成。
+RISK-002,高风险领域,涉及医学、法律、金融、工程安全、政策建议等高风险领域的具体建议或判断。,默认 HOLD 或强制降级为非专业、非决策性说明；不得替代专业意见。,HOLD,FAIL-009,[],v0.2,,active,"[""high-risk-domain""]",P1-4 初版：由公开前风险检查清单结构化生成。
+RISK-003,跨域同构误判,仅凭表面结构相似就断言不同领域机制相同。,要求列出差异、边界、反例和竞争解释；必要时标为 pending。,REVISE,FAIL-005,[],v0.2,,active,"[""isomorphism"", ""analogy-risk""]",P1-4 初版：由公开前风险检查清单结构化生成。
+RISK-004,证据制度误配,用框架内部判断替代数学证明、实验验证、史料考证、统计识别或专业证据。,补充对应领域证据制度；无法补充时降级并标 pending。,REVISE,FAIL-009,[],v0.2,,active,"[""evidence-regime""]",P1-4 初版：由公开前风险检查清单结构化生成。
+RISK-005,材料与来源不足,案例材料、原始来源、上下文或引用不足，无法支撑判断。,补材料、补来源，或将结论改为观察 / 假说 / pending。,REVISE,FAIL-001,[],v0.2,,active,"[""source"", ""evidence""]",P1-4 初版：由公开前风险检查清单结构化生成。
+RISK-006,边界与尺度错误,系统边界、时间尺度、空间尺度或分析层级没有说明，导致结论泛化。,重写边界和尺度；无法重写时标为 pending。,REVISE,FAIL-002,[],v0.2,,active,"[""boundary"", ""scale""]",同时关联 FAIL-003，但 schema 当前只允许一个 related_failure_type，后续可在 notes 或 tags 中扩展。
+RISK-007,AI 过度解释,AI 将项目描述成野心、大一统、解释一切、终极框架或万能理论。,改写为好奇心驱动的跨域结构化分析工具，并链接动机与边界说明。,REVISE,FAIL-007,[],v0.2,,active,"[""ai-output"", ""motivation-boundary""]",与 docs/author_motivation_and_boundary_note.md 的表达边界一致。
+RISK-008,局部机制泛化,把某一案例、局部机制或历史叙事写成普遍规律。,加入适用范围、反例、竞争解释，并降级为局部结构性推论。,REVISE,FAIL-011,[],v0.2,,active,"[""overgeneralization""]",同时关联 FAIL-012，但 schema 当前只允许一个 related_failure_type，后续可在 notes 或 tags 中扩展。

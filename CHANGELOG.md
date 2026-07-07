@@ -9,6 +9,7 @@
 - 新增 `docs/machine_readable_data_plan.md`，定义 P1 机器可读化数据集、字段、来源、校验规则和后续执行顺序。
 - 新增 `data/schemas/` 下 7 个 JSON Schema，覆盖 classic problems、storytelling backlog、pending claims、publication risk rules、failure typology、evidence regimes 和 function dependency。
 - 新增 CP / SB 机器可读数据：`data/classic_problems_benchmark.json`、`data/classic_problems_benchmark.csv`、`data/storytelling_backlog.json`、`data/storytelling_backlog.csv`。
+- 新增 pending / risk / failure 机器可读数据：`data/pending_claims.json`、`data/pending_claims.csv`、`data/publication_risk_rules.json`、`data/publication_risk_rules.csv`、`data/failure_typology.json`、`data/failure_typology.csv`。
 - 新增 `outputs/audit/v0.2-p0-closeout-audit-20260707.md`，作为 v0.2 P0 收口复核审计记录；
 - 更新 `README.md`，新增 v0.2 治理与索引入口，集中链接总索引、编号表、风险表和 pending 登记；
 - 更新 `docs/v0.2_next_tasks.md`，将 P0 调整为已收口，并把后续重点切到 P1 机器可读化准备。
@@ -17,6 +18,7 @@
 
 - 将 P1 机器可读化任务推进到 P1-2：建立 JSON Schema。
 - 将 P1 机器可读化任务推进到 P1-4：生成 pending / risk / failure 数据。
+- 将 P1 机器可读化任务推进到 P1-5：生成 evidence / function dependency 数据。
 - 在 README、项目定位、v0.2 总结和机器可读化规划中加入动机与边界说明入口。
 - 将 v0.2 后续任务推进到 P1 机器可读化准备阶段。
 

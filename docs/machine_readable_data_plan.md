@@ -462,6 +462,19 @@ P1-3 CP / SB 数据已生成：
 
 下一步进入 P1-4：生成 pending / risk / failure 数据。
 
+### P1-4 状态
+
+P1-4 pending / risk / failure 数据已生成：
+
+- `data/pending_claims.json`
+- `data/pending_claims.csv`
+- `data/publication_risk_rules.json`
+- `data/publication_risk_rules.csv`
+- `data/failure_typology.json`
+- `data/failure_typology.csv`
+
+下一步进入 P1-5：生成 evidence / function dependency 数据。
+
 ### P1-3：生成 CP / SB 数据
 
 创建：

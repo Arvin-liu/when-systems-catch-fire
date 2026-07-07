@@ -1,0 +1,185 @@
+[
+  {
+    "id": "FAIL-001",
+    "name": "材料错误",
+    "description": "输入材料、事实、引用或案例基础错误，导致后续结构判断失效。",
+    "symptom": "材料来源不清、事实错误、引用缺失。",
+    "correction": "补充来源、修正材料；无法修正时暂停判断。",
+    "related_risk_rules": [
+      "RISK-005"
+    ],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  },
+  {
+    "id": "FAIL-002",
+    "name": "边界选错",
+    "description": "系统边界划定错误，把不属于同一系统的对象放入同一判断框架。",
+    "symptom": "对象范围含混，分析对象前后不一致。",
+    "correction": "重设对象、边界和外部变量。",
+    "related_risk_rules": [
+      "RISK-006"
+    ],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  },
+  {
+    "id": "FAIL-003",
+    "name": "尺度错配",
+    "description": "把不同时间、空间、层级或组织尺度上的机制直接类比。",
+    "symptom": "宏观结论套用到微观个体，或短期机制写成长周期规律。",
+    "correction": "明确尺度，拆分层级，限制结论适用范围。",
+    "related_risk_rules": [],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  },
+  {
+    "id": "FAIL-004",
+    "name": "函数过度泛化",
+    "description": "把局部函数或局部案例中的结构关系写成普遍函数。",
+    "symptom": "函数解释范围不断扩大，缺少反例约束。",
+    "correction": "收窄函数适用域，增加反例和 pending 标记。",
+    "related_risk_rules": [],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  },
+  {
+    "id": "FAIL-005",
+    "name": "同构误判",
+    "description": "把表面相似的结构误判为底层机制相同。",
+    "symptom": "只列相似点，不列差异和机制证据。",
+    "correction": "补充差异、竞争解释和证据制度。",
+    "related_risk_rules": [
+      "RISK-003"
+    ],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  },
+  {
+    "id": "FAIL-006",
+    "name": "证据等级不足",
+    "description": "证据只支持观察或推论，却被写成证明、实证结论或专业定论。",
+    "symptom": "L1/L2 结论被写成 L4/L5。",
+    "correction": "降级 claim level，标注 pending。",
+    "related_risk_rules": [],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  },
+  {
+    "id": "FAIL-007",
+    "name": "AI 过度解释",
+    "description": "AI 将框架、案例或作者动机过度拔高，生成万能论、野心论或终极理论叙事。",
+    "symptom": "出现“大一统”“解释一切”“野心勃勃”等宣传式表述。",
+    "correction": "改写为好奇心驱动的分析工具，补充边界说明。",
+    "related_risk_rules": [
+      "RISK-007"
+    ],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  },
+  {
+    "id": "FAIL-008",
+    "name": "L2 推论误写成 L5 结论",
+    "description": "把结构推论直接写成外部验证完成的结论。",
+    "symptom": "缺少证明或实证，却使用确定性结论。",
+    "correction": "改为结构性假说或 pending。",
+    "related_risk_rules": [
+      "RISK-001"
+    ],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  },
+  {
+    "id": "FAIL-009",
+    "name": "学科证据制度误配",
+    "description": "用一个领域的证据标准替代另一个领域的证据标准。",
+    "symptom": "用类比替代数学证明、实验、史料、临床或法律证据。",
+    "correction": "切换到对应领域证据制度。",
+    "related_risk_rules": [
+      "RISK-002",
+      "RISK-004"
+    ],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  },
+  {
+    "id": "FAIL-010",
+    "name": "观察者位置错误",
+    "description": "忽略分析者、材料生产者或系统参与者的位置差异。",
+    "symptom": "把局内经验当成局外规律，或把局外模型强套局内行动。",
+    "correction": "标注观察者位置和信息边界。",
+    "related_risk_rules": [],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  },
+  {
+    "id": "FAIL-011",
+    "name": "把局部机制误写成全局规律",
+    "description": "将局部成立的机制扩展成全系统或跨系统规律。",
+    "symptom": "以单点案例概括整体。",
+    "correction": "限制适用域，补充反例和竞争机制。",
+    "related_risk_rules": [
+      "RISK-008"
+    ],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  },
+  {
+    "id": "FAIL-012",
+    "name": "把历史叙事误写成因果定律",
+    "description": "把叙事连贯性误认为因果必然性。",
+    "symptom": "故事讲通了，但证据链和反事实不足。",
+    "correction": "区分叙事解释、因果推断和历史证据。",
+    "related_risk_rules": [],
+    "related_pend_ids": [],
+    "created_in": "v0.2",
+    "updated_in": null,
+    "status": "active",
+    "tags": [],
+    "notes": "P1-4 初版：基于 v0.2 失败类型清单结构化生成。"
+  }
+]
