@@ -437,6 +437,20 @@ data/schemas/*.schema.json
 
 只建立 schema，不生成实际数据。
 
+### P1-2 状态
+
+P1-2 JSON Schema 已建立：
+
+- `data/schemas/classic_problems_benchmark.schema.json`
+- `data/schemas/storytelling_backlog.schema.json`
+- `data/schemas/pending_claims.schema.json`
+- `data/schemas/publication_risk_rules.schema.json`
+- `data/schemas/failure_typology.schema.json`
+- `data/schemas/evidence_regimes.schema.json`
+- `data/schemas/function_dependency.schema.json`
+
+下一步进入 P1-3：生成 CP / SB 数据。
+
 ### P1-3：生成 CP / SB 数据
 
 创建：

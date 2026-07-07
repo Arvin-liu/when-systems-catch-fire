@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/function_dependency.schema.json",
+  "title": "Function Dependency Dataset",
+  "description": "Machine-readable function dependency and layer records.",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "name",
+      "layer",
+      "created_in",
+      "status"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "layer": {
+        "type": "string",
+        "enum": [
+          "L0",
+          "L1",
+          "L2",
+          "L3",
+          "L4",
+          "L5",
+          "L6"
+        ]
+      },
+      "role": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "depends_on": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "used_by": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "created_in": {
+        "type": "string",
+        "const": "v0.2"
+      },
+      "updated_in": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "review",
+          "pending",
+          "deprecated",
+          "draft"
+        ]
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "notes": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  }
+}

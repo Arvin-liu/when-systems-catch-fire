@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/storytelling_backlog.schema.json",
+  "title": "Storytelling Backlog Dataset",
+  "description": "Machine-readable records for SB-001 through SB-030 storytelling backlog items.",
+  "type": "array",
+  "minItems": 30,
+  "maxItems": 30,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "priority",
+      "title",
+      "publish_status",
+      "created_in",
+      "status"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^SB-\\d{3}$"
+      },
+      "priority": {
+        "type": "string",
+        "enum": [
+          "高",
+          "中",
+          "暂缓"
+        ]
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1
+      },
+      "source": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "domain": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "score": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "minimum": 0,
+        "maximum": 40
+      },
+      "recommended_form": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "main_risk": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "related_cp_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^CP-\\d{3}$"
+        },
+        "uniqueItems": true
+      },
+      "related_pend_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^PEND-\\d{3}$"
+        },
+        "uniqueItems": true
+      },
+      "publish_status": {
+        "type": "string",
+        "enum": [
+          "draft",
+          "hold",
+          "ready"
+        ]
+      },
+      "created_in": {
+        "type": "string",
+        "const": "v0.2"
+      },
+      "updated_in": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "pending",
+          "deprecated",
+          "draft"
+        ]
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "notes": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  }
+}

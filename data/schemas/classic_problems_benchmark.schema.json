@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/classic_problems_benchmark.schema.json",
+  "title": "Classic Problems Benchmark Dataset",
+  "description": "Machine-readable records for CP-001 through CP-034 classic problem benchmark items.",
+  "type": "array",
+  "minItems": 34,
+  "maxItems": 34,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "title",
+      "source_file",
+      "source_line",
+      "claim_level_max",
+      "pending_required",
+      "created_in",
+      "status"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^CP-\\d{3}$"
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1
+      },
+      "source_file": {
+        "type": "string",
+        "minLength": 1
+      },
+      "source_line": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "domain": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "benchmark_type": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "claim_level_max": {
+        "type": "string",
+        "enum": [
+          "L0",
+          "L1",
+          "L2",
+          "L3",
+          "L4",
+          "L5",
+          "pending"
+        ]
+      },
+      "pending_required": {
+        "type": "boolean"
+      },
+      "related_pend_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^PEND-\\d{3}$"
+        },
+        "uniqueItems": true
+      },
+      "related_failure_types": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^FAIL-\\d{3}$"
+        },
+        "uniqueItems": true
+      },
+      "related_evidence_regime": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "public_safe": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      },
+      "created_in": {
+        "type": "string",
+        "const": "v0.2"
+      },
+      "updated_in": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "pending",
+          "deprecated",
+          "draft"
+        ]
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "notes": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  }
+}

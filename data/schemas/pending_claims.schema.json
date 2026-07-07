@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/pending_claims.schema.json",
+  "title": "Pending Claims Dataset",
+  "description": "Machine-readable records for PEND-001 through PEND-034 high-risk pending claims.",
+  "type": "array",
+  "minItems": 34,
+  "maxItems": 34,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "domain",
+      "claim",
+      "allowed_level",
+      "forbidden_wording",
+      "recommended_wording",
+      "handling",
+      "default_decision",
+      "created_in",
+      "status"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^PEND-\\d{3}$"
+      },
+      "domain": {
+        "type": "string",
+        "minLength": 1
+      },
+      "claim": {
+        "type": "string",
+        "minLength": 1
+      },
+      "allowed_level": {
+        "type": "string",
+        "minLength": 1
+      },
+      "forbidden_wording": {
+        "type": "string",
+        "minLength": 1
+      },
+      "recommended_wording": {
+        "type": "string",
+        "minLength": 1
+      },
+      "handling": {
+        "type": "string",
+        "minLength": 1
+      },
+      "default_decision": {
+        "type": "string",
+        "enum": [
+          "PASS",
+          "REVISE",
+          "HOLD",
+          "pending"
+        ]
+      },
+      "related_cp_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^CP-\\d{3}$"
+        },
+        "uniqueItems": true
+      },
+      "related_sb_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^SB-\\d{3}$"
+        },
+        "uniqueItems": true
+      },
+      "created_in": {
+        "type": "string",
+        "const": "v0.2"
+      },
+      "updated_in": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "pending",
+          "deprecated",
+          "draft"
+        ]
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "notes": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  }
+}

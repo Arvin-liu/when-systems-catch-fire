@@ -312,6 +312,7 @@ v0.2 的核心治理入口集中在这里，方便先看总索引，再进入编
 - [公开前风险检查清单](./docs/publication_risk_checklist.md)
 - [Pending 强结论登记表](./docs/pending_claims_register.md)
 - [机器可读化数据结构规范](./docs/machine_readable_data_plan.md)
+- JSON Schema：`data/schemas/`
 
 ## 得到大脑输出索引
 v0.2 的九份结构性输入已经整理进仓库，作为后续学科深跑和结构审计的正式材料入口。

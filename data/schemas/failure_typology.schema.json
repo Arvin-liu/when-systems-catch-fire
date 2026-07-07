@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/failure_typology.schema.json",
+  "title": "Failure Typology Dataset",
+  "description": "Machine-readable records for v0.2 failure types.",
+  "type": "array",
+  "minItems": 12,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "name",
+      "description",
+      "created_in",
+      "status"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^FAIL-\\d{3}$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1
+      },
+      "symptom": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "correction": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "related_risk_rules": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^RISK-\\d{3}$"
+        },
+        "uniqueItems": true
+      },
+      "related_pend_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^PEND-\\d{3}$"
+        },
+        "uniqueItems": true
+      },
+      "created_in": {
+        "type": "string",
+        "const": "v0.2"
+      },
+      "updated_in": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "pending",
+          "deprecated",
+          "draft"
+        ]
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "notes": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  }
+}

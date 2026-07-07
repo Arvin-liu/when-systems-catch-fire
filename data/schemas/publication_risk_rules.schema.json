@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/publication_risk_rules.schema.json",
+  "title": "Publication Risk Rules Dataset",
+  "description": "Machine-readable publication risk rules using PASS / REVISE / HOLD decisions.",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "category",
+      "trigger",
+      "required_action",
+      "decision",
+      "created_in",
+      "status"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^RISK-\\d{3}$"
+      },
+      "category": {
+        "type": "string",
+        "minLength": 1
+      },
+      "trigger": {
+        "type": "string",
+        "minLength": 1
+      },
+      "required_action": {
+        "type": "string",
+        "minLength": 1
+      },
+      "decision": {
+        "type": "string",
+        "enum": [
+          "PASS",
+          "REVISE",
+          "HOLD"
+        ]
+      },
+      "related_failure_type": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "pattern": "^FAIL-\\d{3}$"
+      },
+      "related_pend_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^PEND-\\d{3}$"
+        },
+        "uniqueItems": true
+      },
+      "created_in": {
+        "type": "string",
+        "const": "v0.2"
+      },
+      "updated_in": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "pending",
+          "deprecated",
+          "draft"
+        ]
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "notes": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  }
+}
