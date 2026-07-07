@@ -4,6 +4,12 @@
 
 ### Added
 
+- 收录得到大脑输出的《v0.2 总结与收口》；
+- 新增 `outputs/getbrain/v0.2-summary-and-closure-20260707.md`，汇总任务 A-H 成果与收口建议；
+- 新增 `docs/v0.2_summary.md`，作为 v0.2 总索引页；
+- 更新 `outputs/getbrain/README.md`，记录任务 I 已完成；
+- 更新 `docs/v0.2_next_tasks.md`，将任务 I 调整为“已完成”，并新增 v0.2 后续整理任务；
+- 更新 `README.md`，加入 v0.2 总索引页入口。
 - 收录得到大脑输出的《故事化案例 backlog 初稿》；
 - 新增 `outputs/getbrain/storytelling-case-backlog-draft-20260707.md`，记录 30 个故事化 backlog 条目；
 - 新增 `docs/storytelling_case_backlog.md`，作为 v0.2 故事化案例 backlog 索引；
