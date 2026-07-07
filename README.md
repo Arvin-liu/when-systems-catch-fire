@@ -274,12 +274,14 @@ v0.2 的七项内容生产已经由得到大脑完成：
 - [证据制度库初稿](./outputs/getbrain/evidence-regime-library-draft-20260706.md)
 - [失败类型学初稿](./outputs/getbrain/failure-typology-draft-20260706.md)
 - [经典问题 benchmark 初稿](./outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+- [经典问题 benchmark 补丁：补齐 2 个条目与计数复核](./outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
 
 函数依赖图索引见：[函数依赖图](./docs/function_dependency_map.md)。
 学科理论核试跑索引见：[学科理论核试跑](./docs/discipline_kernel_pilot.md)。
 证据制度库索引见：[证据制度库](./docs/evidence_regime_library.md)。
 失败类型学索引见：[失败类型学](./docs/failure_typology.md)。
 经典问题 benchmark 索引见：[经典问题 benchmark](./docs/classic_problems_benchmark.md)。
+任务 G 补丁已补齐 2 个缺口，并将当前 benchmark 计数复核为 33 个条目。后续工作是编号与机器可读化。
 
 ## 得到大脑输出索引
 v0.2 的七份结构性输入已经整理进仓库，作为后续学科深跑和结构审计的正式材料入口。
@@ -293,6 +295,7 @@ v0.2 的七份结构性输入已经整理进仓库，作为后续学科深跑和
 - [证据制度库初稿](./outputs/getbrain/evidence-regime-library-draft-20260706.md)
 - [失败类型学初稿](./outputs/getbrain/failure-typology-draft-20260706.md)
 - [经典问题 benchmark 初稿](./outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+- [经典问题 benchmark 补丁：补齐 2 个条目与计数复核](./outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
 
 ## 核心概念索引
 - `Ψ₀` 元函数：系统入口，由六个构件共同组成的总判定式。

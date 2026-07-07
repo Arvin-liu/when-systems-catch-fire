@@ -115,6 +115,17 @@
 
 该文件是经典问题 benchmark 初稿，不代表 benchmark 已最终完成。原稿中存在计数待复核与待补条目，后续需要补充“叙事为什么能改变人的理解”和“现代艺术为何成立”两个问题，并复核总表计数。
 
+补丁文件：[classic-problems-benchmark-supplement-20260707.md](classic-problems-benchmark-supplement-20260707.md)
+
+补丁用途：
+
+- 补齐“叙事为什么能改变人的理解”；
+- 补齐“现代艺术为何成立”；
+- 复核任务 G benchmark 计数；
+- 标注原任务 G 总表实际为 31 个条目；
+- 标注补丁后当前 benchmark 总数为 33 个；
+- 建议后续为 benchmark 分配 CP-001 至 CP-033 编号。
+
 ## 当前状态
 
 - 任务 A：已完成，已进入 GitHub 文档体系；
@@ -123,5 +134,5 @@
 - 任务 D：三门学科理论核试跑，已完成，已进入 GitHub 文档体系；
 - 任务 E：证据制度库初稿，已完成，已进入 GitHub 文档体系；
 - 任务 F：失败类型学初稿，已完成，已进入 GitHub 文档体系；
-- 任务 G：经典问题 benchmark 初稿，已完成初稿，已进入 GitHub 文档体系；待补 2 个条目并复核计数；
+- 任务 G：经典问题 benchmark 初稿，已完成初稿并已补齐 2 个缺口；当前计数复核为 33 个 benchmark 条目；
 - 任务 H：故事化案例 backlog，待得到大脑继续执行。

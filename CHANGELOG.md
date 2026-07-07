@@ -4,6 +4,10 @@
 
 ### Added
 
+- 收录得到大脑输出的《经典问题 benchmark 补丁》；
+- 新增 `outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`，补齐“叙事为什么能改变人的理解”和“现代艺术为何成立”两个 benchmark 条目；
+- 更新 `docs/classic_problems_benchmark.md`，记录任务 G 计数复核结果：原总表 31 个条目，补丁后当前为 33 个条目；
+- 更新 `docs/v0.2_next_tasks.md`，将任务 G 后续调整为 benchmark 编号与机器可读化；
 - 收录得到大脑输出的《经典问题 benchmark 初稿》；
 - 新增 `docs/classic_problems_benchmark.md`，作为 v0.2 经典问题 benchmark 索引；
 - 更新 `outputs/getbrain/README.md`，记录任务 G 已完成初稿；
