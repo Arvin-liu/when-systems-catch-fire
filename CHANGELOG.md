@@ -4,6 +4,7 @@
 
 ### Added
 
+- 新增 `docs/pending_claims_register.md`，集中登记 v0.2 必须保持 pending 的强结论与高风险表达；
 - 新增 `docs/publication_risk_checklist.md`，作为 README、docs、benchmark、故事化案例和对外材料的公开前风险检查清单。
 - 新增 `docs/classic_problem_ids.md`，为 34 个经典问题 benchmark 分配 `CP-001` 至 `CP-034` 编号；
 - 新增 `docs/storytelling_backlog_ids.md`，为 30 个故事化 backlog 条目分配 `SB-001` 至 `SB-030` 编号；
