@@ -496,6 +496,14 @@ python3 tools/validate_data.py
 
 下一步进入 P1-7：P1 数据完整性审计。
 
+### P1-7 状态
+
+P1-7 数据完整性审计已完成：
+
+- `outputs/audit/p1-machine-readable-data-audit-20260707.md`
+
+P1 机器可读化阶段已完成。
+
 ### P1-3：生成 CP / SB 数据
 
 创建：
