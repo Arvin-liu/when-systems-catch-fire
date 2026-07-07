@@ -4,6 +4,8 @@
 
 ### Added
 
+- 新增 `docs/classic_problem_ids.md`，为 34 个经典问题 benchmark 分配 `CP-001` 至 `CP-034` 编号；
+- 新增 `docs/storytelling_backlog_ids.md`，为 30 个故事化 backlog 条目分配 `SB-001` 至 `SB-030` 编号；
 - 收录得到大脑输出的《v0.2 总结与收口》；
 - 新增 `outputs/getbrain/v0.2-summary-and-closure-20260707.md`，汇总任务 A-H 成果与收口建议；
 - 新增 `docs/v0.2_summary.md`，作为 v0.2 总索引页；
@@ -17,7 +19,7 @@
 - 更新 `docs/v0.2_next_tasks.md`，将任务 H 调整为“已完成初稿”，并新增 v0.2 后续整理任务。
 - 收录得到大脑输出的《经典问题 benchmark 补丁》；
 - 新增 `outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`，补齐“叙事为什么能改变人的理解”和“现代艺术为何成立”两个 benchmark 条目；
-- 更新 `docs/classic_problems_benchmark.md`，记录任务 G 计数复核结果：原总表 31 个条目，补丁后当前为 33 个条目；
+- 更新 `docs/classic_problems_benchmark.md`，记录任务 G 计数复核结果：原总表 32 个条目，补丁后当前为 34 个条目；
 - 更新 `docs/v0.2_next_tasks.md`，将任务 G 后续调整为 benchmark 编号与机器可读化；
 - 收录得到大脑输出的《经典问题 benchmark 初稿》；
 - 新增 `docs/classic_problems_benchmark.md`，作为 v0.2 经典问题 benchmark 索引；
@@ -27,6 +29,10 @@
 - 新增 `docs/failure_typology.md`，作为 v0.2 失败类型学索引；
 - 更新 `outputs/getbrain/README.md`，记录任务 F 已完成；
 - 更新 `docs/v0.2_next_tasks.md`，将任务 F 调整为“已完成初稿，待复核与案例绑定”。
+
+### Fixed
+
+- 修正 v0.2 文档中的经典问题 benchmark 计数，从 33 个更新为 34 个。
 
 ## v0.2-getbrain-ingestion
 这是点火项目将得到大脑 v0.2 输出整理进入 GitHub 仓库的落地版本。

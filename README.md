@@ -285,7 +285,12 @@ v0.2 的 A-I 内容生产已经由得到大脑完成：
 经典问题 benchmark 索引见：[经典问题 benchmark](./docs/classic_problems_benchmark.md)。
 故事化案例 backlog 索引见：[故事化案例 backlog](./docs/storytelling_case_backlog.md)。
 v0.2 总索引页见：[v0.2 总结](./docs/v0.2_summary.md)。
-任务 G 补丁已补齐 2 个缺口，并将当前 benchmark 计数复核为 33 个条目。后续工作是编号与机器可读化。
+任务 G 补丁已补齐 2 个缺口，并将当前 benchmark 计数复核为 34 个条目。后续工作是编号与机器可读化。
+
+编号索引：
+
+- [经典问题 benchmark 编号索引](./docs/classic_problem_ids.md)
+- [故事化 backlog 编号索引](./docs/storytelling_backlog_ids.md)
 
 ## 得到大脑输出索引
 v0.2 的九份结构性输入已经整理进仓库，作为后续学科深跑和结构审计的正式材料入口。

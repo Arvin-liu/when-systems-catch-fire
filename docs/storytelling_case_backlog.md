@@ -5,6 +5,10 @@
 
 - [故事化案例 backlog 初稿：得到大脑输出 20260707](../outputs/getbrain/storytelling-case-backlog-draft-20260707.md)
 
+## 编号索引
+
+- [故事化 backlog 编号索引](storytelling_backlog_ids.md)
+
 ## 定位
 
 故事化案例 backlog 用于回答：
