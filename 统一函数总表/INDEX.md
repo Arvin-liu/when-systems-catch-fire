@@ -616,3 +616,4 @@
 | [D596](<./0606-D596-避风港.md>) | [避风港](<./0606-D596-避风港.md>) | S_refuge = I_inner × (1 - M_metric) × R_relation |
 | [D597](<./0607-D597-量化指标替代真实价值.md>) | [量化指标替代真实价值](<./0607-D597-量化指标替代真实价值.md>) | V_effective = V_real × (1 - Q_substitution) |
 | [D598](<./0608-D598-系统性钝化.md>) | [系统性钝化](<./0608-D598-系统性钝化.md>) | D_system = P_pressure × (1 - R_refusal) × (1 - H_repair) × A_adaptation |
+| [D599](<./0609-D599-刷分博弈.md>) | [刷分博弈](<./0609-D599-刷分博弈.md>) | G_score = B_metric × D_decomposable × R_reward × (1 - C_reality) |
