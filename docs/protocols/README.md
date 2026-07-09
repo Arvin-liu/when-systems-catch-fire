@@ -22,6 +22,11 @@ L3  Case 层 —— 统一案例总表（C 编号）+ 22 本书候选（candidat
 - 架构说明：[protocol-architecture.md](./protocol-architecture.md)
 - 12 元协议索引：[protocol-index.md](./protocol-index.md)
 - 条目模板：[../templates/protocol-entry-template.md](../templates/protocol-entry-template.md)
+- **12 协议独立条目**：[entries/](./entries/)（V1–V4 / S1–S4 / E1–E4）
+- **Protocol 与两张表关系**：[protocol-table-relation.md](./protocol-table-relation.md)
+- **related_function_ids 映射草案**：[related-function-ids.md](./related-function-ids.md)
+（分析用，不新增编号、不改函数表）
+- **formal_protocol 状态规范**：[formal-protocol-status.md](./formal-protocol-status.md)
 - 底层数据：`data/meta-protocols/meta-protocols.json`（12 协议 schema）、`data/meta-protocols/meta-protocol-combinations.json`（64 组合）
 
 ## 编号体系
@@ -51,4 +56,4 @@ Protocol 层编号（`V/S/E`）与 Function 层编号（`D/MF/T/A`）**命名空
 - `python3 tools/validate_data.py` → `ALL_P1_DATA_VALID`
 - `python3 tools/validate_meta_protocols.py` → `ALL_META_PROTOCOL_DATA_VALID`
 
-建立时间：2026-07-09（IGNITION-20260709-012）
+建立时间：2026-07-09（IGNITION-20260709-012，015 增补 entries/ 与关系/映射/状态文档）
