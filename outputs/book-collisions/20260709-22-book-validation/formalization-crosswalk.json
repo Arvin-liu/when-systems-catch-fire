@@ -1,0 +1,40 @@
+{
+  "task": "IGNITION-20260709-007",
+  "branch": "case/book-validation-22-20260709",
+  "base_main_commit": "bb8144c76c956082eea183fb49d31b2a41e8a254",
+  "conclusion": "no_formal_entry",
+  "candidate_count": 22,
+  "entered_count": 0,
+  "deferred_count": 22,
+  "duplicate_count": 0,
+  "reject_count": 0,
+  "c_numbers_assigned": [],
+  "blocking_reasons": [
+    "entry-writing-standard requires a formal function reference (D/MF/A/T/Y id); candidates only cite Psi0 notation (M1, L3, P_meta, G_delta, sigma_opt, 1/ln, Phi, epsilon_eff, I_iso, P_exit, H) which are not formal table ids",
+    "all candidates are single-source (one convergence report) with author=pending_human_review, violating single-material universal-conclusion prohibition and missing-field pending requirement"
+  ],
+  "entries": [
+    {"bc_id": "BC-20260709-001", "book": "\u300a\u7cfb\u7edf\u4e4b\u7f8e\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["M1"], "proposed_function_mapping": "pending_locate(enhancement_loop)", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-002", "book": "\u300a\u7b2c\u4e94\u9879\u4fee\u70bc\u300b", "related_meta_protocols": ["S3"], "candidate_functions": ["L3", "epsilon_eff"], "proposed_function_mapping": "pending_locate(epsilon_eff)", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-003", "book": "\u300a\u67aa\u70ae\u3001\u75c5\u83cc\u4e0e\u94a2\u94c1\u300b", "related_meta_protocols": ["V1"], "candidate_functions": ["P_meta"], "proposed_function_mapping": "Y1(Psi0)/P_meta_pending_locate", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-004", "book": "\u300a\u56fd\u5bb6\u4e3a\u4ec0\u4e48\u4f1a\u5931\u8d25\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["P_exit"], "proposed_function_mapping": "A4(R_perceived_exit_right)", "adjudication": "candidate_only", "reason": "candidate id exists (A4) but lacks formal mapping confirmation; single source"},
+    {"bc_id": "BC-20260709-005", "book": "\u300a\u521b\u65b0\u8005\u7684\u7a98\u5883\u300b", "related_meta_protocols": ["V3"], "candidate_functions": ["1/ln"], "proposed_function_mapping": "pending_locate(gating_function)", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-006", "book": "\u300a\u9ed1\u5929\u9e45\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["G_delta"], "proposed_function_mapping": "Y1(Psi0)/G_delta_pending_locate", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-007", "book": "\u300a\u53cd\u8106\u5f31\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["M1"], "proposed_function_mapping": "pending_locate(enhancement_loop)", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-008", "book": "\u300a\u601d\u8003\uff0c\u5feb\u4e0e\u6162\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["1/ln", "exp[-ln^2]"], "proposed_function_mapping": "pending_locate(gating_function)", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-009", "book": "\u300a\u5f71\u54cd\u529b\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["P_meta"], "proposed_function_mapping": "Y1(Psi0)/P_meta_pending_locate", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-010", "book": "\u300a\u4eba\u7c7b\u7b80\u53f2\u300b", "related_meta_protocols": ["pending"], "candidate_functions": [], "proposed_function_mapping": "pending_locate", "adjudication": "candidate_only", "reason": "no function reference at all; single source"},
+    {"bc_id": "BC-20260709-011", "book": "\u300a\u672a\u6765\u7b80\u53f2\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["Phi"], "proposed_function_mapping": "Y1(Phi_meta_law)", "adjudication": "candidate_only", "reason": "candidate id exists (Y1) but lacks formal mapping confirmation; single source"},
+    {"bc_id": "BC-20260709-012", "book": "\u300a\u6587\u660e\u7684\u51b2\u7a81\u300b", "related_meta_protocols": ["S1"], "candidate_functions": [], "proposed_function_mapping": "pending_locate", "adjudication": "candidate_only", "reason": "no function reference at all; single source"},
+    {"bc_id": "BC-20260709-013", "book": "\u300a\u4e4c\u5408\u4e4b\u4f17\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["H", "epsilon_eff"], "proposed_function_mapping": "pending_locate(H_occlusion_family)", "adjudication": "candidate_only", "reason": "no precise formal function id; single source"},
+    {"bc_id": "BC-20260709-014", "book": "\u300a\u5a31\u4e50\u81f3\u6b7b\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["epsilon_eff"], "proposed_function_mapping": "pending_locate(epsilon_eff)", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-015", "book": "\u300a\u6280\u672f\u4e0e\u6587\u660e\u300b", "related_meta_protocols": ["pending"], "candidate_functions": [], "proposed_function_mapping": "pending_locate", "adjudication": "candidate_only", "reason": "no function reference at all; single source"},
+    {"bc_id": "BC-20260709-016", "book": "\u300a\u590d\u6742\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["I_iso"], "proposed_function_mapping": "D177(deep_isomorphism)", "adjudication": "candidate_only", "reason": "candidate id exists (D177) but lacks formal mapping confirmation; single source"},
+    {"bc_id": "BC-20260709-017", "book": "\u300a\u6709\u9650\u4e0e\u65e0\u9650\u7684\u6e38\u6208\u300b", "related_meta_protocols": ["V1", "V3"], "candidate_functions": [], "proposed_function_mapping": "pending_locate", "adjudication": "candidate_only", "reason": "no function reference at all; single source"},
+    {"bc_id": "BC-20260709-018", "book": "\u300a\u8d2a\u7a77\u7684\u672c\u8d28\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["M1"], "proposed_function_mapping": "pending_locate(enhancement_loop)", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-019", "book": "\u300a\u89c4\u6a21\u300b", "related_meta_protocols": ["E4"], "candidate_functions": ["sigma_opt"], "proposed_function_mapping": "T20(sigma_opt=sqrt(e))", "adjudication": "candidate_only", "reason": "candidate id exists (T20) but lacks formal mapping confirmation; single source"},
+    {"bc_id": "BC-20260709-020", "book": "\u300a\u5927\u56fe\u666f\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["G_delta"], "proposed_function_mapping": "Y1(Psi0)/G_delta_pending_locate", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-021", "book": "\u300a\u539f\u5219\u300b", "related_meta_protocols": ["pending"], "candidate_functions": ["P_meta"], "proposed_function_mapping": "Y1(Psi0)/P_meta_pending_locate", "adjudication": "candidate_only", "reason": "no formal function id; single source"},
+    {"bc_id": "BC-20260709-022", "book": "\u300a\u6df7\u6c8c\u300b", "related_meta_protocols": ["E1", "E2"], "candidate_functions": [], "proposed_function_mapping": "pending_locate(nonlinear_evolution_protocol)", "adjudication": "candidate_only", "reason": "no function reference at all; single source"}
+  ]
+}
