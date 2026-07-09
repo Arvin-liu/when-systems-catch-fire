@@ -9,6 +9,14 @@
 - 项目本体整体版本升级：升级 README（架构总览/快速入口/边界/红线）、新建 SUMMARY.md、llms.txt、docs/PROJECT-ARCHITECTURE.md、docs/USAGE.md、docs/AGENT-GUIDE.md、docs/GET-BRAIN-WORKFLOW.md、docs/VERSIONING.md、docs/versions/2026-07-09-meta-protocol-generation-layer.md。
 - 保留 Ψ₀，不替换正式两张表（函数 617 / 案例 804）。
 
+## 2026-07-09 · IGNITION-20260709-007 22 本书候选入表复核
+
+- 对 22 本书验证候选（BC-20260709-001~022）逐条查重与入表门槛复核。
+- 结论：**0 条正式入表，22 条全部维持 candidate_only，未分配任何 C 编号**。
+- 暂缓原因：候选的「相关函数」均为 Ψ₀/框架记号（M1、P_meta、G_δ、σ_opt、1/ln、Φ 等），非统一函数表的正式 ID（Dxxxx/MF-xxxx/Axx/Txx/Y1）；且每条为单材料证据（author=pending_human_review），违反「案例须对应形式化函数」「不得从单一材料推出普遍结论」的入表硬门槛。
+- 产出：`outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md`(+.json)、`outputs/audit/book-validation-case-table-formalization-audit-20260709.md`。
+- 未改正式两张表、未改 Ψ₀、未改 12 元协议定义、未自动 merge（开 draft PR 等待审核）。正式入表待下一轮完成「12 元协议/函数表映射」。
+
 ## Unreleased
 
 ### Added
