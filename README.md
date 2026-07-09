@@ -27,6 +27,7 @@ English: This project is a generative model of cross-disciplinary phase transiti
 ## → [写在前面](#写在前面)
 ## → [使用指南](#使用指南)
 ## → [系统架构](#系统架构)
+## → [元协议生成层](#元协议生成层版本迭代-2026-07-09)
 ## → [故事与案例](#故事与案例)
 ## → [为什么这很重要](#为什么这很重要)
 ## → [反证机制与失败案例库](#反证机制与失败案例库)
@@ -151,6 +152,23 @@ This project is not a cross-disciplinary ultimate theory. It is a tool for struc
 - **L_meta**：帮助判断分析应该停在什么层级，避免无限下钻。 [查看完整定义](./docs/phi_meta_law.md)
 - **G_δ**：帮助把函数和案例放进十二律的归类框架里。 [查看完整定义](./docs/phi_meta_law.md)
 - **P_meta**：帮助判断局部规则、均衡、涌现和自组织是否真的出现。 [查看完整定义](./docs/phi_meta_law.md)
+
+
+
+## 元协议生成层（版本迭代 · 2026-07-09）
+点火项目当前定位为跨域结构性推论与理论生成框架。项目由 Ψ₀ 元判定框架、12 个基础元协议、64 种元协议组合理论空间，以及统一函数总表 / 统一案例总表组成。
+
+其中，Ψ₀ 负责判定、同构识别与收敛审核；12 个基础元协议是 `P_meta` 的向下展开，用于描述理论生成空间；两张表用于沉淀已经审核的函数与案例资产。
+
+边界说明：12 个元协议不等同于外部学科证明；64 种组合不等同于经验穷尽；22 本书籍验证案例目前为候选材料，尚未自动进入统一案例总表。
+
+快速入口：
+- 12 元协议：[docs/meta-protocols/12-meta-protocols.md](./docs/meta-protocols/12-meta-protocols.md)
+- 64 组合矩阵：[docs/meta-protocols/meta-protocol-64-combination-matrix.md](./docs/meta-protocols/meta-protocol-64-combination-matrix.md)
+- 22 本书验证案例候选：[docs/meta-protocols/book-validation-22-cases-20260709.md](./docs/meta-protocols/book-validation-22-cases-20260709.md)
+- 版本迭代说明：[docs/meta-protocols/version-iteration-note-20260709.md](./docs/meta-protocols/version-iteration-note-20260709.md)
+
+> 第 0 层当前形成双结构：Ψ₀ 元判定框架 + `P_meta` 展开的 12 元协议生成层。原 Ψ₀ 完整定义保留未被改写。
 
 
 ## 附录：使用说明（完整版）
