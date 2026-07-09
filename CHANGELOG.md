@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-07-09 · 元协议生成层版本
+
+- 新增 12 元协议理论生成层（V1–V4 / S1–S4 / E1–E4）。
+- 新增 64 组合理论空间（V×S×E=64）。
+- 新增 22 本书验证案例候选暂存层（candidate_only，未入正式案例表）。
+- 新增 meta-protocol 数据、模板、验证器（tools/validate_meta_protocols.py）。
+- 项目本体整体版本升级：升级 README（架构总览/快速入口/边界/红线）、新建 SUMMARY.md、llms.txt、docs/PROJECT-ARCHITECTURE.md、docs/USAGE.md、docs/AGENT-GUIDE.md、docs/GET-BRAIN-WORKFLOW.md、docs/VERSIONING.md、docs/versions/2026-07-09-meta-protocol-generation-layer.md。
+- 保留 Ψ₀，不替换正式两张表（函数 617 / 案例 804）。
+
 ## Unreleased
 
 ### Added

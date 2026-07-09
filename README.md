@@ -1,17 +1,24 @@
 # When Systems Catch Fire / 点火
 
+> **当前版本：2026-07-09 元协议生成层版本（meta-protocol generation layer）**
+> 项目已进入从「元函数判定框架」到「元协议生成框架」的版本迭代期；Ψ₀ 保留为判定与收敛框架，12 个元协议作为 `P_meta` 的展开进入第 0 层生成结构。
+
 一句话总述：
-中文：本项目是一个跨学科系统相变的生成模型，通过把现象映射为函数与案例来分析系统何时会被“点燃”，并输出 `true / false / contradiction / pending` 四象限结论。
-English: This project is a generative model of cross-disciplinary phase transitions. It maps phenomena into functions and cases to analyze when systems "ignite" and outputs `true / false / contradiction / pending` results.
+中文：点火是一个跨域结构性推论与理论生成框架。它把现象映射为函数与案例，由 Ψ₀ 做判定与收敛，由 12 个元协议生成理论空间，并输出 `true / false / contradiction / pending` 四象限结论。
+English: Ignition is a cross-domain structural-inference and theory-generation framework. It maps phenomena into functions and cases, uses Ψ₀ for judgment and convergence, uses 12 meta-protocols to generate theory space, and outputs `true / false / contradiction / pending`.
 
 你是否想过，为什么两件原本毫不相干的事一碰撞，就会改变一群人的选择、一个组织的命运，甚至一个时代的走向？
 
 本项目采用 MIT License。详情见 [LICENSE](LICENSE)。
 
+---
+
 ## 项目定位与边界
 点火框架不是物理学理论、数学证明工具，也不是任何具体学科的替代品。
 
-它更准确的定位是一个 **跨域结构性推论的元工具**：通过因果结构、自举收敛、同构映射、门控面合并、元层级判定和反证机制，帮助人和 AI 发现不同领域之间共享的结构性规律。
+它当前最准确的定位是一个 **跨域结构性推论与理论生成框架**：通过 Ψ₀ 元判定框架（因果、自举、同构、层级、十二律、元协议判定）与 12 个基础元协议（价值 / 结构 / 演化三维）、64 种元协议组合理论空间，帮助人和 AI 发现不同领域之间共享的结构性规律，并生成可继续检验的理论形态。
+
+> 历史口径：早期文档曾把点火表述为「跨域结构性推论的元工具」。该表述仍成立，但自 2026-07-09 起，项目本体的完整形态已升级为「元协议生成框架」，见 [版本说明](./docs/VERSIONING.md) 与 [项目架构](./docs/PROJECT-ARCHITECTURE.md)。
 
 因此，本项目中的“统一”“不可能”“解决”“证明”等表达，除非另有明确说明，默认指的是：
 
@@ -23,21 +30,106 @@ English: This project is a generative model of cross-disciplinary phase transiti
 
 关于不同结论的强度，请参阅 [断言等级说明](./docs/claim_levels.md)。
 
+---
+
+## 架构总览（2026-07-09 元协议生成层版本）
+
+```text
+点火项目 =
+  Ψ₀ 元判定与收敛框架        （保留，不替换；负责 J⁺/J⁻、I_iso、L_meta、G_δ、P_meta）
+  + 12 元协议理论生成层       （V1–V4 × S1–S4 × E1–E4，是 P_meta 的向下展开）
+  + 64 组合理论空间           （V×S×E = 4×4×4，理论生成空间，非经验穷尽）
+  + 统一函数总表资产库        （已审核函数，D/MF/A/T 编号体系，当前 617）
+  + 统一案例总表资产库        （已审核案例，C 编号体系，当前 804）
+```
+
+- `Ψ₀` 仍由六个构件组成：`C(x,y) × M(B_n) × I_iso(A,B) × L_meta × G_δ × P_meta`。
+- `P_meta` 现在具有展开层：其元协议投影算子展开为 12 个基础元协议（注意：此 12 元协议 ≠ Ψ₀ 内 `P_meta` 原先的 6 个协议判定子，文档已显式区分）。
+- 64 组合矩阵属理论生成空间，每条组合区分「现实案例」与「推论形态」；逻辑矛盾的组合保留为推论形态，不强行配现实案例。
+- 两张表是已审核资产库，独立于候选层；候选内容须经复核才入表。
+
+---
+
+## 快速入口
+
+- 人类阅读导航：[SUMMARY.md](./SUMMARY.md)
+- 面向 AI / Agent 入口：[llms.txt](./llms.txt)
+- 项目架构：[docs/PROJECT-ARCHITECTURE.md](./docs/PROJECT-ARCHITECTURE.md)
+- 人类使用说明：[docs/USAGE.md](./docs/USAGE.md)
+- Agent / AI 使用指南：[docs/AGENT-GUIDE.md](./docs/AGENT-GUIDE.md)
+- 得到大脑协作流程：[docs/GET-BRAIN-WORKFLOW.md](./docs/GET-BRAIN-WORKFLOW.md)
+- 版本与升级规范：[docs/VERSIONING.md](./docs/VERSIONING.md)
+- 本次版本说明：[docs/versions/2026-07-09-meta-protocol-generation-layer.md](./docs/versions/2026-07-09-meta-protocol-generation-layer.md)
+- 元协议生成层：
+  - [12 元协议](./docs/meta-protocols/12-meta-protocols.md)
+  - [64 组合矩阵](./docs/meta-protocols/meta-protocol-64-combination-matrix.md)
+  - [22 本书验证案例候选](./docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - [元协议版本迭代说明](./docs/meta-protocols/version-iteration-note-20260709.md)
+- 两张表入口：
+  - [统一函数索引表（2026-07-09，函数 617，收敛 6）](./统一函数总表/INDEX.md)
+  - [统一案例索引表（2026-07-09，案例 804，收敛 11）](./统一案例总表/INDEX.md)
+
+---
+
+## 人类读者如何使用
+最简单的方式：把仓库链接发给 AI 助手，提出你的问题，让它结合函数、案例与元协议生成层输出四象限结论，证据不足时保留 `pending`。详见 [docs/USAGE.md](./docs/USAGE.md)。
+
+## Agent / AI 如何使用
+Agent 执行点火任务前，必须先读 [docs/AGENT-GUIDE.md](./docs/AGENT-GUIDE.md)：区分正式表与候选文件、用 1111 作中转、写审计、跑校验器、守红线。机器可读入口见 [llms.txt](./llms.txt)。
+
+## 得到大脑如何作为碰撞引擎
+得到大脑（Get 笔记）产出书籍碰撞 / 学科碰撞的候选材料，经 `1111` 中转仓库暂存，再由点火主仓库审核入表。候选不等于结论，详见 [docs/GET-BRAIN-WORKFLOW.md](./docs/GET-BRAIN-WORKFLOW.md)。
+
+## 两张表的边界
+统一函数总表与统一案例总表是**已审核资产库**。其 INDEX 与正文在 2026-07-09 元协议版本迭代中**未改动**；正式计数（函数 617 / 案例 804）不因候选材料变化。候选函数 / 候选案例 / 候选元协议须经复核、补齐字段、标注 pending 后才可入表。
+
+## 元协议的边界
+12 个元协议是 `P_meta` 的展开，属理论生成层，**不是普通函数**，不计入统一函数总表 D/MF/A/T 编号；64 种组合是理论生成空间，不是经验穷尽；元协议不等同于外部学科证明，外部证明需另接证据。
+
+## 22 本书案例候选的边界
+22 本书籍验证案例（BC-20260709-001~022）为 **candidate_only** 候选材料，未分配 C 编号，未进入统一案例总表；是否入表须逐本人工复核。详见 [docs/meta-protocols/book-validation-22-cases-20260709.md](./docs/meta-protocols/book-validation-22-cases-20260709.md)。
+
+## 断言等级 / pending / 证据边界
+所有强断言必须保留 L0–L5 / pending / evidence 边界。框架内部推论不等于外部定理；证据不足时必须 `pending`。详见 [docs/claim_levels.md](./docs/claim_levels.md)。
+
+## 不应声称的内容
+- 不得声称点火项目已经外部证明科学或数学定理；
+- 不得声称 64 组合经验穷尽全部现实；
+- 不得把 12 元协议写成普通函数或计入函数总数；
+- 不得把 22 本书候选直接写成正式案例；
+- 不得删除或替换 Ψ₀。
+
+## 当前维护状态
+- 第二步元协议生成层维护已完成（分支 `version/meta-protocols-20260709`，commit `974b121e`）。
+- 本轮（第三步）为项目本体整体版本升级：新增/升级 README、SUMMARY、llms.txt、架构/使用/Agent/得到大脑/版本说明等文档。
+- 正式 Ψ₀ 与两张表未改动；本仓库尚未合并到 main，待 GPT 审核后决定是否合并。
+- 维护规范见 [docs/two-tables-entry-writing-standard-20260709.md](./docs/two-tables-entry-writing-standard-20260709.md) 与 [docs/VERSIONING.md](./docs/VERSIONING.md)。
+
+---
+
+## 导航
+
 ## → [项目定位与边界](#项目定位与边界)
-## → [写在前面](#写在前面)
+## → [架构总览](#架构总览2026-07-09-元协议生成层版本)
+## → [快速入口](#快速入口)
 ## → [使用指南](#使用指南)
+## → [写在前面](#写在前面)
 ## → [系统架构](#系统架构)
 ## → [故事与案例](#故事与案例)
 ## → [为什么这很重要](#为什么这很重要)
 ## → [反证机制与失败案例库](#反证机制与失败案例库)
 ## → [完整函数定义](#完整函数定义)
+## → [元协议生成层](#元协议生成层版本迭代-2026-07-09)
 ## → [欢迎贡献](#欢迎贡献)
 ## → [致谢](#致谢)
 ## → [开源协议](#开源协议)
-## → [v0.2 路线图](#v02-路线图)
+## → [v0.2 路线图（历史阶段）](#v02-路线图历史阶段)
 ## → [得到大脑输出索引](#得到大脑输出索引)
+## → [核心概念索引](#核心概念索引)
 ## ↳ [统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）](./统一函数总表/INDEX.md)
 ## ↳ [统一案例索引表（2026年07月09日00时30分，案例总数 804，收敛 11 条）](./统一案例总表/INDEX.md)
+
+---
 
 ## 使用指南
 这个项目最容易上手的方式，不是先啃公式，而是直接把仓库链接发给 AI 助手，让它陪你分析问题。
@@ -76,6 +168,8 @@ We make no claim to having discovered any ultimate truth. This project has not y
 This project is not a cross-disciplinary ultimate theory. It is a tool for structural projection across disciplines, candidate function extraction, case compression, and pressure-testing against counterexamples. For any domain involving professional facts, real people, medicine, law, finance, or public events, it must be backed by reliable external evidence and is allowed to remain `pending`.
 
 ## 系统架构
+> 历史口径：本段为 v0.2 阶段的「三层系统」描述，保留作演进记录；当前权威架构见上方 [架构总览](#架构总览2026-07-09-元协议生成层版本) 与 [docs/PROJECT-ARCHITECTURE.md](./docs/PROJECT-ARCHITECTURE.md)。
+
 点火可以理解为一个三层系统：
 
 - Domain layer
@@ -151,6 +245,23 @@ This project is not a cross-disciplinary ultimate theory. It is a tool for struc
 - **L_meta**：帮助判断分析应该停在什么层级，避免无限下钻。 [查看完整定义](./docs/phi_meta_law.md)
 - **G_δ**：帮助把函数和案例放进十二律的归类框架里。 [查看完整定义](./docs/phi_meta_law.md)
 - **P_meta**：帮助判断局部规则、均衡、涌现和自组织是否真的出现。 [查看完整定义](./docs/phi_meta_law.md)
+
+
+
+## 元协议生成层（版本迭代 · 2026-07-09）
+点火项目当前定位为跨域结构性推论与理论生成框架。项目由 Ψ₀ 元判定框架、12 个基础元协议、64 种元协议组合理论空间，以及统一函数总表 / 统一案例总表组成。
+
+其中，Ψ₀ 负责判定、同构识别与收敛审核；12 个基础元协议是 `P_meta` 的向下展开，用于描述理论生成空间；两张表用于沉淀已经审核的函数与案例资产。
+
+边界说明：12 个元协议不等同于外部学科证明；64 种组合不等同于经验穷尽；22 本书籍验证案例目前为候选材料，尚未自动进入统一案例总表。
+
+快速入口：
+- 12 元协议：[docs/meta-protocols/12-meta-protocols.md](./docs/meta-protocols/12-meta-protocols.md)
+- 64 组合矩阵：[docs/meta-protocols/meta-protocol-64-combination-matrix.md](./docs/meta-protocols/meta-protocol-64-combination-matrix.md)
+- 22 本书验证案例候选：[docs/meta-protocols/book-validation-22-cases-20260709.md](./docs/meta-protocols/book-validation-22-cases-20260709.md)
+- 版本迭代说明：[docs/meta-protocols/version-iteration-note-20260709.md](./docs/meta-protocols/version-iteration-note-20260709.md)
+
+> 第 0 层当前形成双结构：Ψ₀ 元判定框架 + `P_meta` 展开的 12 元协议生成层。原 Ψ₀ 完整定义保留未被改写。
 
 
 ## 附录：使用说明（完整版）
@@ -260,7 +371,7 @@ AI 不只可以帮你做解释，也可以帮你做验证。你可以让它寻�
 ## 开源协议
 详见 [LICENSE](LICENSE)。
 
-## v0.2 路线图
+## v0.2 路线图（历史阶段）
 下一阶段的工作重心不是继续下沉到新闻、文章、书籍和课程等材料层，而是先做结构层升级：审计框架自身缺漏，建立学科理论核二次细化模板，准备后续 UNESCO 学科深跑。
 
 阶段路线见 [docs/roadmap_v0.2.md](./docs/roadmap_v0.2.md)，项目总体定位见 [docs/project_positioning.md](./docs/project_positioning.md)，结构缺漏审计见 [docs/structural_gap_audit.md](./docs/structural_gap_audit.md)。
