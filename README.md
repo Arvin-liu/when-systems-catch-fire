@@ -1,604 +1,65 @@
 # When Systems Catch Fire / 点火
 
-> **当前版本：2026-07-09 元协议生成层版本（meta-protocol generation layer）**
-> 项目已进入从「元函数判定框架」到「元协议生成框架」的版本迭代期；Ψ₀ 保留为判定与收敛框架，12 个元协议作为 `P_meta` 的展开进入第 0 层生成结构。
+> 这是点火项目的首页。它先回答三个问题：这是什么、为什么存在、从哪里开始读。
 
-一句话总述：
-中文：点火是一个跨域结构性推论与理论生成框架。它把现象映射为函数与案例，由 Ψ₀ 做判定与收敛，由 12 个元协议生成理论空间，并输出 `true / false / contradiction / pending` 四象限结论。
-English: Ignition is a cross-domain structural-inference and theory-generation framework. It maps phenomena into functions and cases, uses Ψ₀ for judgment and convergence, uses 12 meta-protocols to generate theory space, and outputs `true / false / contradiction / pending`.
+点火是一个跨域结构性推论与理论生成框架。它把现象整理成函数、案例与元协议，让人和 AI 可以在同一套结构里比较、收敛、反证，并在证据不足时保留 `pending`。
 
-你是否想过，为什么两件原本毫不相干的事一碰撞，就会改变一群人的选择、一个组织的命运，甚至一个时代的走向？
+If you prefer English first: this repo explores cross-domain structural inference and theory generation. It keeps the front door short and sends the detailed method to dedicated docs.
 
 本项目采用 MIT License。详情见 [LICENSE](LICENSE)。
 
----
+## 先从哪里进入
 
-## 项目定位与边界
-点火框架不是物理学理论、数学证明工具，也不是任何具体学科的替代品。
+- 想先看全貌，请读 [人类导航页](./SUMMARY.md)。
+- 想给 AI / Agent 一个机器可读入口，请读 [llms.txt](./llms.txt)。
+- 想知道当前架构与边界，请读 [项目架构](./docs/PROJECT-ARCHITECTURE.md) 和 [版本规范](./docs/VERSIONING.md)。
+- 想知道怎么用，请读 [使用说明](./docs/USAGE.md)。
+- 想按 Agent 方式操作，请读 [Agent 指南](./docs/AGENT-GUIDE.md)。
+- 想理解 Get 笔记如何进入这套系统，请读 [得到大脑协作流程](./docs/GET-BRAIN-WORKFLOW.md)。
 
-它当前最准确的定位是一个 **跨域结构性推论与理论生成框架**：通过 Ψ₀ 元判定框架（因果、自举、同构、层级、十二律、元协议判定）与 12 个基础元协议（价值 / 结构 / 演化三维）、64 种元协议组合理论空间，帮助人和 AI 发现不同领域之间共享的结构性规律，并生成可继续检验的理论形态。
+## 这套仓库在做什么
 
-> 历史口径：早期文档曾把点火表述为「跨域结构性推论的元工具」。该表述仍成立，但自 2026-07-09 起，项目本体的完整形态已升级为「元协议生成框架」，见 [版本说明](./docs/VERSIONING.md) 与 [项目架构](./docs/PROJECT-ARCHITECTURE.md)。
+点火的核心是把一个问题放进可复核的结构里：对象是什么，因果在哪里，系统如何反馈，哪些部分可以比较，分析应该停在哪一层，最后再判断结论是 `true`、`false`、`contradiction` 还是 `pending`。
 
-因此，本项目中的“统一”“不可能”“解决”“证明”等表达，除非另有明确说明，默认指的是：
+当前仓库里，已经审核的正式资产放在两张表里，候选材料和理论展开放在专门的文档里。README 不再重复这些细节，只负责把入口摆清楚。
 
-- 结构层面的统一，而不是物理机制上的统一；
-- 框架内部的候选推论，而不是外部数学定理；
-- 可讨论、可反驳、可继续验证的研究命题，而不是已经被学界接受的最终结论。
+## 阅读路径
 
-对物理、数学、医学、法律、金融、公共政策等专业领域，本项目只提供结构性视角。任何现实结论都必须连接外部证据；证据不足时，应标记为 `pending`。
+### 如果你是第一次接触
 
-关于不同结论的强度，请参阅 [断言等级说明](./docs/claim_levels.md)。
+先看 [SUMMARY.md](./SUMMARY.md)，再看 [docs/USAGE.md](./docs/USAGE.md)。这两个页面能最快告诉你项目是什么，以及它适合怎么用。
 
----
+### 如果你是 Agent 或研究助手
 
-## 架构总览（2026-07-09 元协议生成层版本）
+先看 [llms.txt](./llms.txt) 和 [docs/AGENT-GUIDE.md](./docs/AGENT-GUIDE.md)。这两个文件会告诉你该先读什么、哪些东西不能混、哪里需要写审计。
 
-```text
-点火项目 =
-  Ψ₀ 元判定与收敛框架        （保留，不替换；负责 J⁺/J⁻、I_iso、L_meta、G_δ、P_meta）
-  + 12 元协议理论生成层       （V1–V4 × S1–S4 × E1–E4，是 P_meta 的向下展开）
-  + 64 组合理论空间           （V×S×E = 4×4×4，理论生成空间，非经验穷尽）
-  + 统一函数总表资产库        （已审核函数，D/MF/A/T 编号体系，当前 617）
-  + 统一案例总表资产库        （已审核案例，C 编号体系，当前 804）
-```
+### 如果你关心证据和反例
 
-- `Ψ₀` 仍由六个构件组成：`C(x,y) × M(B_n) × I_iso(A,B) × L_meta × G_δ × P_meta`。
-- `P_meta` 现在具有展开层：其元协议投影算子展开为 12 个基础元协议（注意：此 12 元协议 ≠ Ψ₀ 内 `P_meta` 原先的 6 个协议判定子，文档已显式区分）。
-- 64 组合矩阵属理论生成空间，每条组合区分「现实案例」与「推论形态」；逻辑矛盾的组合保留为推论形态，不强行配现实案例。
-- 两张表是已审核资产库，独立于候选层；候选内容须经复核才入表。
+先看 [断言等级说明](./docs/claim_levels.md)、[反证模板](./docs/falsifiability/README.md) 和 [失败案例库](./case_failures/README.md)。
 
----
+### 如果你关心正式资产
 
-## 快速入口
+先看 [统一函数索引表](./统一函数总表/INDEX.md) 和 [统一案例索引表](./统一案例总表/INDEX.md)。
 
-- 人类阅读导航：[SUMMARY.md](./SUMMARY.md)
-- 面向 AI / Agent 入口：[llms.txt](./llms.txt)
-- 项目架构：[docs/PROJECT-ARCHITECTURE.md](./docs/PROJECT-ARCHITECTURE.md)
-- 人类使用说明：[docs/USAGE.md](./docs/USAGE.md)
-- Agent / AI 使用指南：[docs/AGENT-GUIDE.md](./docs/AGENT-GUIDE.md)
-- 得到大脑协作流程：[docs/GET-BRAIN-WORKFLOW.md](./docs/GET-BRAIN-WORKFLOW.md)
-- 版本与升级规范：[docs/VERSIONING.md](./docs/VERSIONING.md)
-- 本次版本说明：[docs/versions/2026-07-09-meta-protocol-generation-layer.md](./docs/versions/2026-07-09-meta-protocol-generation-layer.md)
-- 元协议生成层：
-  - [12 元协议](./docs/meta-protocols/12-meta-protocols.md)
-  - [64 组合矩阵](./docs/meta-protocols/meta-protocol-64-combination-matrix.md)
-  - [22 本书验证案例候选](./docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - [元协议版本迭代说明](./docs/meta-protocols/version-iteration-note-20260709.md)
-- 两张表入口：
-  - [统一函数索引表（2026-07-09，函数 617，收敛 6）](./统一函数总表/INDEX.md)
-  - [统一案例索引表（2026-07-09，案例 804，收敛 11）](./统一案例总表/INDEX.md)
+## 关键参考
 
----
-
-## 人类读者如何使用
-最简单的方式：把仓库链接发给 AI 助手，提出你的问题，让它结合函数、案例与元协议生成层输出四象限结论，证据不足时保留 `pending`。详见 [docs/USAGE.md](./docs/USAGE.md)。
-
-## Agent / AI 如何使用
-Agent 执行点火任务前，必须先读 [docs/AGENT-GUIDE.md](./docs/AGENT-GUIDE.md)：区分正式表与候选文件、用 1111 作中转、写审计、跑校验器、守红线。机器可读入口见 [llms.txt](./llms.txt)。
-
-## 得到大脑如何作为碰撞引擎
-得到大脑（Get 笔记）产出书籍碰撞 / 学科碰撞的候选材料，经 `1111` 中转仓库暂存，再由点火主仓库审核入表。候选不等于结论，详见 [docs/GET-BRAIN-WORKFLOW.md](./docs/GET-BRAIN-WORKFLOW.md)。
-
-## 两张表的边界
-统一函数总表与统一案例总表是**已审核资产库**。其 INDEX 与正文在 2026-07-09 元协议版本迭代中**未改动**；正式计数（函数 617 / 案例 804）不因候选材料变化。候选函数 / 候选案例 / 候选元协议须经复核、补齐字段、标注 pending 后才可入表。
-
-## 元协议的边界
-12 个元协议是 `P_meta` 的展开，属理论生成层，**不是普通函数**，不计入统一函数总表 D/MF/A/T 编号；64 种组合是理论生成空间，不是经验穷尽；元协议不等同于外部学科证明，外部证明需另接证据。
-
-## 22 本书案例候选的边界
-22 本书籍验证案例（BC-20260709-001~022）为 **candidate_only** 候选材料，未分配 C 编号，未进入统一案例总表；是否入表须逐本人工复核。详见 [docs/meta-protocols/book-validation-22-cases-20260709.md](./docs/meta-protocols/book-validation-22-cases-20260709.md)。
-
-## 断言等级 / pending / 证据边界
-所有强断言必须保留 L0–L5 / pending / evidence 边界。框架内部推论不等于外部定理；证据不足时必须 `pending`。详见 [docs/claim_levels.md](./docs/claim_levels.md)。
-
-## 不应声称的内容
-- 不得声称点火项目已经外部证明科学或数学定理；
-- 不得声称 64 组合经验穷尽全部现实；
-- 不得把 12 元协议写成普通函数或计入函数总数；
-- 不得把 22 本书候选直接写成正式案例；
-- 不得删除或替换 Ψ₀。
-
-## 当前维护状态
-- 第二步元协议生成层维护已完成（分支 `version/meta-protocols-20260709`，commit `974b121e`）。
-- 本轮（第三步）为项目本体整体版本升级：新增/升级 README、SUMMARY、llms.txt、架构/使用/Agent/得到大脑/版本说明等文档。
-- 正式 Ψ₀ 与两张表未改动；本仓库尚未合并到 main，待 GPT 审核后决定是否合并。
-- 维护规范见 [docs/two-tables-entry-writing-standard-20260709.md](./docs/two-tables-entry-writing-standard-20260709.md) 与 [docs/VERSIONING.md](./docs/VERSIONING.md)。
-
----
-
-## 导航
-
-## → [项目定位与边界](#项目定位与边界)
-## → [架构总览](#架构总览2026-07-09-元协议生成层版本)
-## → [快速入口](#快速入口)
-## → [使用指南](#使用指南)
-## → [写在前面](#写在前面)
-## → [系统架构](#系统架构)
-## → [故事与案例](#故事与案例)
-## → [为什么这很重要](#为什么这很重要)
-## → [反证机制与失败案例库](#反证机制与失败案例库)
-## → [完整函数定义](#完整函数定义)
-## → [元协议生成层](#元协议生成层版本迭代-2026-07-09)
-## → [欢迎贡献](#欢迎贡献)
-## → [致谢](#致谢)
-## → [开源协议](#开源协议)
-## → [v0.2 路线图（历史阶段）](#v02-路线图历史阶段)
-## → [得到大脑输出索引](#得到大脑输出索引)
-## → [核心概念索引](#核心概念索引)
-## ↳ [统一函数索引表（2026年07月09日00时30分，函数总数 617，收敛 6 条）](./统一函数总表/INDEX.md)
-## ↳ [统一案例索引表（2026年07月09日00时30分，案例总数 804，收敛 11 条）](./统一案例总表/INDEX.md)
-
----
-
-## 使用指南
-这个项目最容易上手的方式，不是先啃公式，而是直接把仓库链接发给 AI 助手，让它陪你分析问题。
-
-### AI 驱动使用
-推荐做法是：把这个仓库链接发给 AI，然后直接提出你的问题。AI 会结合仓库里的函数、案例和反证材料，帮你输出四象限结论，并在证据不足时保留 `pending`。
-
-你可以直接试这些提示：
-
-- `请用点火框架分析互联网普及对民主制度的影响。`
-- `基于点火项目，解释为什么西方工业革命发生在 18 世纪而不是其他时期。`
-- `我想了解美国的大萧条发生的原因，请你用点火框架分析。`
-
-如果问题涉及现实议题、人物、医学、法律、金融或公共事件，请提醒 AI 引用外部证据，不足时标注 `pending`。
-
-### 手动使用（可选）
-如果你想进一步理解框架内部如何运作，也可以按六通道流程手动分析：
-
-- 写下问题与核心对象。
-- 定义系统边界、资源与约束。
-- 分析 `C / M / I / L / G / P` 六个通道。
-- 创建假设并主动寻求反例。
-- 输出 `true / false / contradiction / pending` 四象限。
-
-详细步骤仍然收在下面的折叠附录里，想深入时可以再展开。
-
-## 写在前面
-这是一个人类在好奇心驱动下、借助 AI 做出的个人发现。
-我们不宣称自己发现了任何究极真理；此项目尚未经过严格学术检验，因此应当被理解为“可继续验证的发现”，而不是已被证明的终局理论。
-
-点火不是跨学科终极理论，而是跨学科结构投影、候选函数抽取、案例压缩和反例压力测试工具。凡涉及专业事实、现实人物、医疗、法律、金融、公共事件，必须外接可靠证据，并允许结论保持 `pending`。
-
-A discovery made by a human being, driven by curiosity and aided by AI.
-We make no claim to having discovered any ultimate truth. This project has not yet undergone rigorous academic scrutiny, and for now, it should be understood as a personal discovery rather than a verified theory.
-
-This project is not a cross-disciplinary ultimate theory. It is a tool for structural projection across disciplines, candidate function extraction, case compression, and pressure-testing against counterexamples. For any domain involving professional facts, real people, medicine, law, finance, or public events, it must be backed by reliable external evidence and is allowed to remain `pending`.
-
-## 系统架构
-> 历史口径：本段为 v0.2 阶段的「三层系统」描述，保留作演进记录；当前权威架构见上方 [架构总览](#架构总览2026-07-09-元协议生成层版本) 与 [docs/PROJECT-ARCHITECTURE.md](./docs/PROJECT-ARCHITECTURE.md)。
-
-点火可以理解为一个三层系统：
-
-- Domain layer
-  - 放案例、对象、事件、背景材料
-  - 统一案例总表是入口，当前索引规模为 804 条案例
-- Function layer
-  - 放统一函数索引表中的函数条目
-  - 统一函数总表当前索引规模为 617 条函数
-  - `Ψ₀` 元函数是系统入口，由六个构件共同工作：`C(x,y) × M(B_n) × I_iso(A,B) × L_meta × G_δ × P_meta`
-  - 这里既包括 `A1 / T1 / D1` 这类单项函数，也包括更高阶的跨域映射
-- Meta layer
-  - 放十二律、元同构律、元协议和更高层收敛约束
-  - 负责决定分析应停在哪个层级，避免把事件层误写成终局理论
-
-可把整体结构读成：
-
-```text
-- Domain layer (cases, objects, events)
-  - 统一案例总表
-- Function layer (functions, mechanisms, mappings)
-  - Ψ₀ meta-function = C × M × I_iso × L_meta × G_δ × P_meta
-  - Individual functions (A1, T1, D1, ...)
-- Meta layer (twelve laws, meta protocols, convergence constraints)
-```
-
-## 故事与案例
-此板块将随时间逐渐收录更多故事版本的案例，欢迎在贡献指南中了解如何贡献。真实故事最容易让人看见“点燃”是怎么发生的。下面这些卡片都来自仓库里的案例表，它们讲的不是抽象定义，而是人、选择和后果。
-
-- **英国光荣革命**  
-  当贵族真的有能力离开，忠诚就不再只是服从，而变成一种有条件的合作。这个故事最有力量的地方，是它让“留下”第一次带上了选择的重量。  
-  [阅读全文](./统一案例总表/0011-C-11-英国光荣革命.md)
-
-- **戈尔巴乔夫改革**  
-  旧的认同先被拆掉，新的共同信念却没来得及长出来。人们手里握着退出的可能，却找不到继续相信的支点，结果系统像失去骨架一样倒了下去。  
-  [阅读全文](./统一案例总表/0026-C-26-戈尔巴乔夫改革.md)
-
-- **华为员工持股**  
-  员工不只是被管理的人，他们也能离开，甚至能成为所有者。正因为退出权是真的，留下来才更像一次主动选择，组织认同也更容易变得稳定。  
-  [阅读全文](./统一案例总表/0050-C-50-华为员工持股.md)
-
-## 为什么这很重要
-很多看起来复杂、遥远的社会变化，其实都能在日常生活里找到影子。你会在工作、教育、亲密关系、平台规则，甚至一个社群的气氛变化里，看到“点燃”的前兆。
-
-理解跨域点火，不是为了把世界简化成公式，而是为了更快看见隐藏的连接：谁在推动变化，谁在被迫留下，什么条件会让一个系统突然转向。对普通人来说，这会直接影响你如何判断新闻、组织、合作和自己的下一步选择。
-
-## 反证机制与失败案例库
-点火要变得更可靠，就不能只收集“看起来说得通”的例子，也要认真记录它什么时候说不通、哪里和现实对不上。反证和失败案例不是麻烦，而是让模型更稳、更诚实的关键。
-
-涉及物理学问题时，请优先阅读 [点火框架与物理学问题的边界](./docs/physics_boundary.md)。该文档说明“门控面合并”“大一统”“四种基本力统一”“七团乌云”等表达在本项目中的含义与限制。
-
-如果你正在用这个项目分析新问题，可以顺手把测试写进这里：
-
-- [反证模板与测试说明](./docs/falsifiability/README.md)
+- [项目定位](./docs/project_positioning.md)
+- [项目架构](./docs/PROJECT-ARCHITECTURE.md)
+- [Get 笔记协作流程](./docs/GET-BRAIN-WORKFLOW.md)
+- [版本规范](./docs/VERSIONING.md)
+- [断言等级说明](./docs/claim_levels.md)
+- [证据机制说明](./docs/evidence_regime_library.md)
+- [反证模板](./docs/falsifiability/README.md)
 - [失败案例库](./case_failures/README.md)
-- [数据接入指南](./docs/data_integration.md)
-
-建议你在以下情况新增一条测试或失败记录：
-
-- 你用一个新问题跑了 `C(x,y)`、`M(B_n)`、`I_iso(A,B)`、`L_meta`、`G_δ` 或 `P_meta`
-- AI 给出了看起来合理、但你直觉上不放心的解释
-- 外部数据、案例或事实把原来的判断推翻了
-- 你发现同一个问题在不同材料下得出冲突结论
-
-对普通读者来说，最简单的参与方式就是：把问题、数据、结论和失败点写下来，放进反证模板里。这样每一次使用点火，都会让仓库更可信一点。
-
-## 完整函数定义
-如果你想看 Ψ₀ 及其组成部分的完整展开，附录已经单独整理好了。这里保留的是入口和作用，详细公式、推导和层级关系请移步：[Φ元统一律完整定义](./docs/phi_meta_law.md)。
-
-- **Ψ₀ 元函数**：把因果、自举、同构、层级、十二律和元协议合成一个总入口，用来输出四象限结论。 [查看完整定义](./docs/phi_meta_law.md)
-- **C(x,y)**：帮助判断两个事件之间是否真的有因果链，而不只是表面同时发生。 [查看完整定义](./docs/phi_meta_law.md)
-- **M(B_n)**：帮助判断系统是否在迭代中收敛，还是只是反复重复。 [查看完整定义](./docs/phi_meta_law.md)
-- **I_iso(A,B)**：帮助判断不同系统之间是否存在可比的结构映射。 [查看完整定义](./docs/phi_meta_law.md)
-- **L_meta**：帮助判断分析应该停在什么层级，避免无限下钻。 [查看完整定义](./docs/phi_meta_law.md)
-- **G_δ**：帮助把函数和案例放进十二律的归类框架里。 [查看完整定义](./docs/phi_meta_law.md)
-- **P_meta**：帮助判断局部规则、均衡、涌现和自组织是否真的出现。 [查看完整定义](./docs/phi_meta_law.md)
-
-
-
-## 元协议生成层（版本迭代 · 2026-07-09）
-点火项目当前定位为跨域结构性推论与理论生成框架。项目由 Ψ₀ 元判定框架、12 个基础元协议、64 种元协议组合理论空间，以及统一函数总表 / 统一案例总表组成。
-
-其中，Ψ₀ 负责判定、同构识别与收敛审核；12 个基础元协议是 `P_meta` 的向下展开，用于描述理论生成空间；两张表用于沉淀已经审核的函数与案例资产。
-
-边界说明：12 个元协议不等同于外部学科证明；64 种组合不等同于经验穷尽；22 本书籍验证案例目前为候选材料，尚未自动进入统一案例总表。
-
-快速入口：
-- 12 元协议：[docs/meta-protocols/12-meta-protocols.md](./docs/meta-protocols/12-meta-protocols.md)
-- 64 组合矩阵：[docs/meta-protocols/meta-protocol-64-combination-matrix.md](./docs/meta-protocols/meta-protocol-64-combination-matrix.md)
-- 22 本书验证案例候选：[docs/meta-protocols/book-validation-22-cases-20260709.md](./docs/meta-protocols/book-validation-22-cases-20260709.md)
-- 版本迭代说明：[docs/meta-protocols/version-iteration-note-20260709.md](./docs/meta-protocols/version-iteration-note-20260709.md)
-
-> 第 0 层当前形成双结构：Ψ₀ 元判定框架 + `P_meta` 展开的 12 元协议生成层。原 Ψ₀ 完整定义保留未被改写。
-
-
-## 附录：使用说明（完整版）
-<details>
-<summary>展开查看完整使用说明</summary>
-
-### 1. 这个项目适合用来做什么
-点火适合用于分析一个复杂现象为什么会发展成现在这样，分析一个系统在什么条件下会被“点燃”，也适合分析某个事件、人物、组织、技术或文化现象的演化路径。
-
-它也适合把模糊直觉转成结构化假说，把分散材料整理成对象、因果、反馈、同构、函数、案例、十二律候选归属和元协议判定，并帮助人和 AI 一起澄清“我真正想问的问题是什么”。
-
-更具体地说，它适合做六类工作：
-
-1. 分析复杂现象的因果结构。
-2. 判断系统是否存在反馈、自举、路径锁定或收敛。
-3. 把案例整理成可复核的结构化记录。
-4. 把现象抽取成候选函数，并尝试写成数学表达。
-5. 判断函数是否可以归入十二律，允许多律联合归纳。
-6. 判断一个系统是否存在局部规则、均衡、涌现或自组织等元协议结构。
-
-它更适合生成可讨论、可修改、可检验的解释假说，不等于生成最终答案。
-
-### 2. 这个项目不适合用来做什么
-点火不适合替代专业学术研究，也不适合替代法律、医疗、金融等专业判断。
-
-它不是算命工具，不是预言工具，也不是万能公式，更不是直接证明一切结论的工具。
-
-它不适合被用来为任何先入为主的观点强行找解释，也不适合把复杂问题压缩成一个单一答案后就停止思考。
-
-如果一个问题缺少对象、边界、材料来源、因果链、反馈过程、可比案例或反例空间，就不应强行使用点火给出结论。此时更合适的输出是 `pending`，也就是证据不足、暂不收敛。
-
-### 3. 人类如何直接使用本项目
-最直接的用法，是先用一句话写下自己想推论的问题，然后把问题中的关键对象列出来。
-
-接着给这个问题画出最小系统边界：哪些对象在系统内，哪些只是背景，材料来自哪里，时间范围从哪里到哪里。
-
-然后按六个通道逐项检查：
-
-1. `C(x,y)`：是否存在可追踪因果链。
-2. `M(B_n)`：是否存在迭代、反馈、自举或收敛。
-3. `I_iso(A,B)`：是否能找到跨案例、跨系统的可比结构。
-4. `L_meta`：这个问题应停在事件层、机制层、函数层、规律层还是元协议层。
-5. `G_δ`：是否能归入十二律的一条或多条。
-6. `P_meta`：是否存在局部规则、反馈、均衡、涌现或自组织。
-
-最后写出一个临时假说，主动寻找反例和竞争解释，根据反例修改假说，并明确输出 `true / false / contradiction / pending` 四种状态之一。
-
-### 4. 如果你想进一步做手动验证
-这份折叠手册保留的是更完整的手动分析流程，方便你在需要时自己一步步推。
-
-### AI 辅助验证与反例生成
-AI 不只可以帮你做解释，也可以帮你做验证。你可以让它寻找相关外部数据源，设计反例，或者把失败案例按模板整理出来。
-
-- 让 AI 帮你找能验证或推翻假说的数据源。
-- 让 AI 基于具体函数设计反例测试。
-- 让 AI 按 [反证模板](./docs/falsifiability/README.md) 记录失败案例。
-- 如果证据还不够，就把结论标成 `pending`，不要强行下结论。
-
-### 5. 用点火框架推论一个问题的基本流程
-问题输入：先把你真正想问的事写清楚，尽量只保留一个主问题。
-
-明确对象：说明这个问题里有哪些人、事、物、组织、技术或制度对象。
-
-确定系统边界：判断哪些因素算在系统内，哪些因素只是背景，不要一上来把所有东西都算进去。
-
-识别约束与资源：找出限制条件、可用资源、成本、机会和结构性条件。
-
-识别冲突与激励：看对象之间是否存在竞争、合作、信息不对称、收益不一致或反馈回路。
-
-识别触发条件：判断系统是否存在某个临界点、外部刺激或事件，使它从潜伏状态转入明显变化。
-
-六通道判定：依次检查因果、自举、同构、层级、十二律和元协议六个通道是否成立。
-
-观察是否出现自举循环：判断某个结构是否会在一次行动之后反过来增强下一次行动。
-
-判断十二律归属：给出一条或多条候选十二律，并说明为什么可以归入、哪里仍然不能归入。
-
-判断元协议结构：检查是否存在局部规则、局部调整、均衡、涌现、自组织等更高层结构。
-
-生成点火假说：把上面的观察整理成一个临时解释框架，说明它为什么会这样演化。
-
-生成反例：主动找出这个假说解释不了的情况，避免只看支持证据。
-
-生成竞争解释：给出至少一种不同于点火框架的解释路径，避免把单一框架当成全部真相。
-
-四象限输出：在比较多种解释之后，输出 `true / false / contradiction / pending` 中的一种，不要把证据不足强行写成通过。
-
-标注不确定性：明确哪些部分证据充分，哪些部分仍然模糊，哪些地方需要继续验证。
-</details>
-
-## 欢迎贡献
-欢迎查看 [CONTRIBUTING.md](./CONTRIBUTING.md) 了解如何提交故事、函数、测试和反例。
-
-阶段性版本记录见：[CHANGELOG.md](CHANGELOG.md)。
-
-## 致谢
-点火项目不是一个人单独完成的。它在生成、整理、函数化、案例化、反证、文档重构和边界澄清过程中，长期得到了许多 AI Agents 的参与和帮助。
-
-同时，本项目也得益于许多人类读者、提问者和反馈者的推动。阅读、追问、质疑、提醒和误解本身，都是项目澄清边界、改进表达和走向公开形态的重要力量。
-
-这些 Agents 完成了大量琐碎、重复、细密而必要的工作，使这个项目能够从零散的直觉、问题和笔记，逐渐形成一个具有跨域解释力的结构性推论工具。
-
-项目判断、发布和责任仍由人类维护者承担，但 AI Agents 与人类读者在项目生成过程中的协作位置，都应被看见和感谢。
-
-完整致谢见：[致谢：献给参与点火项目的 AI Agents 与人类读者](ACKNOWLEDGEMENTS.md)。
-
-## 开源协议
-详见 [LICENSE](LICENSE)。
-
-## v0.2 路线图（历史阶段）
-下一阶段的工作重心不是继续下沉到新闻、文章、书籍和课程等材料层，而是先做结构层升级：审计框架自身缺漏，建立学科理论核二次细化模板，准备后续 UNESCO 学科深跑。
-
-阶段路线见 [docs/roadmap_v0.2.md](./docs/roadmap_v0.2.md)，项目总体定位见 [docs/project_positioning.md](./docs/project_positioning.md)，结构缺漏审计见 [docs/structural_gap_audit.md](./docs/structural_gap_audit.md)。
-
-v0.2 的 A-I 内容生产已经由得到大脑完成：
-
-- [点火项目总体定位更新](./outputs/getbrain/project-position-update-20260706.md)
-- [v0.2 结构缺漏审计](./outputs/getbrain/v0.2-structural-gap-audit-20260706.md)
-- [v0.2 函数依赖图初稿](./outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-- [三门学科理论核试跑](./outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-- [证据制度库初稿](./outputs/getbrain/evidence-regime-library-draft-20260706.md)
-- [失败类型学初稿](./outputs/getbrain/failure-typology-draft-20260706.md)
-- [经典问题 benchmark 初稿](./outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-- [经典问题 benchmark 补丁：补齐 2 个条目与计数复核](./outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-- [故事化案例 backlog 初稿](./outputs/getbrain/storytelling-case-backlog-draft-20260707.md)
-- [v0.2 总结与收口](./outputs/getbrain/v0.2-summary-and-closure-20260707.md)
-
-函数依赖图索引见：[函数依赖图](./docs/function_dependency_map.md)。
-学科理论核试跑索引见：[学科理论核试跑](./docs/discipline_kernel_pilot.md)。
-证据制度库索引见：[证据制度库](./docs/evidence_regime_library.md)。
-失败类型学索引见：[失败类型学](./docs/failure_typology.md)。
-经典问题 benchmark 索引见：[经典问题 benchmark](./docs/classic_problems_benchmark.md)。
-故事化案例 backlog 索引见：[故事化案例 backlog](./docs/storytelling_case_backlog.md)。
-v0.2 总索引页见：[v0.2 总结](./docs/v0.2_summary.md)。
-任务 G 补丁已补齐 2 个缺口，并将当前 benchmark 计数复核为 34 个条目。后续工作是编号与机器可读化。
-
-编号索引：
-
-- [经典问题 benchmark 编号索引](./docs/classic_problem_ids.md)
-- [故事化 backlog 编号索引](./docs/storytelling_backlog_ids.md)
-
-风险检查：
-
-- [公开前风险检查清单](./docs/publication_risk_checklist.md)
-- [Pending 强结论登记表](./docs/pending_claims_register.md)
-
-## 动机与边界
-
-点火项目不是大一统理论，也不是解释一切的终极框架。它是一个好奇心驱动的跨域结构化分析工具：把跨域阅读、写作、诗歌、摄影、学习和现实观察中产生的问题感，约束到可检查、可反证、可 pending 的分析流程中。
-
-更多说明见：[动机与边界说明](docs/author_motivation_and_boundary_note.md)。
-
-## v0.2 治理与索引
-v0.2 的核心治理入口集中在这里，方便先看总索引，再进入编号表、风险表和 pending 表。
-
-- [v0.2 总结](./docs/v0.2_summary.md)
-- [经典问题 benchmark 编号索引](./docs/classic_problem_ids.md)
-- [故事化 backlog 编号索引](./docs/storytelling_backlog_ids.md)
-- [公开前风险检查清单](./docs/publication_risk_checklist.md)
-- [Pending 强结论登记表](./docs/pending_claims_register.md)
-- [机器可读化数据结构规范](./docs/machine_readable_data_plan.md)
-- JSON Schema：`data/schemas/`
-- 已生成数据：
-  - `data/classic_problems_benchmark.json`
-  - `data/classic_problems_benchmark.csv`
-  - `data/storytelling_backlog.json`
-  - `data/storytelling_backlog.csv`
-  - `data/pending_claims.json`
-  - `data/pending_claims.csv`
-  - `data/publication_risk_rules.json`
-  - `data/publication_risk_rules.csv`
-  - `data/failure_typology.json`
-  - `data/failure_typology.csv`
-  - `data/evidence_regimes.json`
-  - `data/evidence_regimes.csv`
-  - `data/function_dependency.json`
-  - `data/function_dependency.csv`
-
-数据校验：
-
-- `tools/validate_data.py`
-
-运行：
-
-```bash
-python3 tools/validate_data.py
-```
-
-P1 完整性审计：
-
-- `outputs/audit/p1-machine-readable-data-audit-20260707.md`
-
-## 得到大脑输出索引
-v0.2 的九份结构性输入已经整理进仓库，作为后续学科深跑和结构审计的正式材料入口。
-
-完整索引见 [outputs/getbrain/README.md](./outputs/getbrain/README.md)；其中包括：
-
-- [点火项目总体定位更新](./outputs/getbrain/project-position-update-20260706.md)
-- [v0.2 结构缺漏审计](./outputs/getbrain/v0.2-structural-gap-audit-20260706.md)
-- [v0.2 函数依赖图初稿](./outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-- [三门学科理论核试跑](./outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-- [证据制度库初稿](./outputs/getbrain/evidence-regime-library-draft-20260706.md)
-- [失败类型学初稿](./outputs/getbrain/failure-typology-draft-20260706.md)
-- [经典问题 benchmark 初稿](./outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-- [经典问题 benchmark 补丁：补齐 2 个条目与计数复核](./outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-
-## 核心概念索引
-- `Ψ₀` 元函数：系统入口，由六个构件共同组成的总判定式。
-- `C(x,y)`：因果结构判定，关注可追踪的因果链、效应方向和反事实差分。
-- `M(B_n)`：自举收敛判定，关注迭代、反馈、收敛与新结构生成。
-- `I_iso(A,B)`：同构判定，检查两个系统或案例之间是否存在可比结构映射。
-- `L_meta`：层级选择约束，决定分析停在事件层、机制层、函数层还是元层。
-- `G_δ`：十二律集合，用于对函数、案例和机制做归类。
-- `P_meta`：元协议判定，检查局部规则、局部调整、均衡、涌现与自组织。
-
-### 6. 推荐给 AI 的提示词模板
-模板一：普通问题分析
-
-```text
-请根据点火框架分析以下问题：[填写问题]
-要求：
-1. 先澄清问题对象和系统边界；
-2. 再识别约束、资源、冲突、激励、反馈和时间线；
-3. 按 C(x,y)、M(B_n)、I_iso(A,B)、L_meta、G_δ、P_meta 六个通道逐项判断；
-4. 判断是否存在点火条件、触发事件、自举循环、十二律候选归属和元协议结构；
-5. 给出一个临时解释假说；
-6. 主动给出至少 3 个反例或限制条件；
-7. 给出至少 2 个竞争解释；
-8. 最后输出 true / false / contradiction / pending 四种状态之一，并说明证据强度。
-```
-
-模板二：案例分析
-
-```text
-请把以下案例放入点火框架中分析：[粘贴案例]
-要求：
-1. 提取案例中的关键对象、时间线和冲突结构；
-2. 判断系统是否经历了因果触发、反馈、自举、路径放大或收敛；
-3. 判断这个案例可以映射到哪些已有函数、哪些十二律、哪些元协议；
-4. 说明这个案例支持点火框架的哪一部分；
-5. 同时说明它不能支持哪一部分；
-6. 给出可加入案例表的结构化摘要；
-7. 标注该案例目前只是 candidate、hypothesis 还是 fact_checked；
-8. 如果证据不足，明确输出 pending。
-```
-
-模板三：反例压力测试
-
-```text
-请不要顺着点火框架解释，而是专门对以下点火假说做反例压力测试：[填写假说]
-要求：
-1. 找出这个假说最容易失败的地方；
-2. 给出至少 5 个可能反例；
-3. 给出至少 3 个竞争理论或竞争解释；
-4. 分别检查 C(x,y)、M(B_n)、I_iso(A,B)、L_meta、G_δ、P_meta 哪些通道不成立；
-5. 判断哪些部分需要降级为弱假说；
-6. 判断哪些部分仍然有解释力；
-7. 最后给出一个更克制、更可检验的版本。
-```
-
-模板四：函数提取与十二律归属
-
-```text
-请从以下材料中提取候选函数：[粘贴材料]
-要求：
-1. 提取材料中的关键对象、变量、关系和变化方向；
-2. 把每个候选机制写成函数名称、中文说明和数学表达草案；
-3. 给出每个函数可能归属的十二律，允许多律联合归纳；
-4. 判断是否存在独立函数候选；
-5. 给出反例、适用边界和证据强度；
-6. 输出每个函数的状态：candidate / hypothesis / verified / pending。
-```
-
-模板五：元协议验证
-
-```text
-请对以下系统做元协议验证：[填写系统或材料]
-要求：
-1. 判断是否存在局部规则；
-2. 判断是否存在局部信息到局部调整的反馈；
-3. 判断是否形成稳定均衡或纳什式策略稳定；
-4. 判断是否出现涌现结构；
-5. 判断是否形成自组织循环；
-6. 对每一项输出 true / false / contradiction / pending；
-7. 最后给出系统是否通过 P_meta 元协议判定。
-```
-
-也可以额外要求 AI 写作生成模板、函数提取模板或案例入库模板，但都要保留反例、竞争解释、证据强度和四象限输出。
-
-### 7. 输出结果应当长什么样
-推荐把输出写成下面这种结构：
-
-```text
-## 问题
-……
-## 系统边界
-……
-## 关键对象
-……
-## 约束与资源
-……
-## 冲突、激励与反馈
-……
-## 六通道判定
-C(x,y)：……
-M(B_n)：……
-I_iso(A,B)：……
-L_meta：……
-G_δ：……
-P_meta：……
-## 可能的点火路径
-……
-## 十二律候选归属
-……
-## 元协议判定
-……
-## 临时假说
-……
-## 反例与限制
-……
-## 竞争解释
-……
-## 暂时结论
-……
-## 四象限输出
-true / false / contradiction / pending
-## 不确定性
-……
-```
-
-这样的输出，便于人类复核，也便于后续继续拆解、补充和归档。
-
-### 8. 使用时必须保留的边界
-点火输出的是解释假说，不是事实本身；案例支持不等于理论证明；AI 生成内容必须经过人类审查。
-
-对现实人物、法律、医疗、金融、公共事件等问题，必须参考可靠外部资料；如果没有足够证据，应明确写“证据不足”。
-
-如果出现反例，应保留反例，而不是把反例硬塞进框架。好的使用方式不是证明点火永远正确，而是不断压缩、修正、反驳和更新它。
-
-任何一次推论都必须允许四种结果：通过、否定、矛盾、证据不足。尤其要避免把 `pending` 伪装成 `true`，也要避免把十二律归属写成不可反驳的终局判断。
+- [元协议概览](./docs/meta-protocols/README.md)
+- [12 个元协议](./docs/meta-protocols/12-meta-protocols.md)
+- [64 组合矩阵](./docs/meta-protocols/meta-protocol-64-combination-matrix.md)
+- [22 个书籍验证候选](./docs/meta-protocols/book-validation-22-cases-20260709.md)
+- [元协议迭代说明](./docs/meta-protocols/version-iteration-note-20260709.md)
+- [Φ 元统一律完整定义](./docs/phi_meta_law.md)
+- [两张表的写入规范](./docs/two-tables-entry-writing-standard-20260709.md)
+
+## 说明
+
+- 详细方法、函数定义、案例故事、反例工作流和历史路线图都保留在各自的专门页面里。
+- 这页尽量只做“前言 + 导航”，避免把读者一开始就带进过多防御性说明。
