@@ -1,5 +1,4 @@
 # Formal Protocol Promotion Standard
-
 ## 1. Purpose
 
 Define a repeatable, evidence-backed gate for deciding when a protocol may be recommended for formal promotion to `formal_protocol`.
@@ -305,4 +304,3 @@ A protocol may be formally promoted only when:
 
 Validator output never equals formal approval.
 Machine audit result and formal repository approval are separate steps.
-

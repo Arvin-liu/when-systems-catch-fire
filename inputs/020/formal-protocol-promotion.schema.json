@@ -136,4 +136,3 @@
     "soft_warnings": {"type": "array", "items": {"type": "string"}}
   }
 }
-
