@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """Validate meta-protocol promotion readiness.
-
 This validator is read-only. It inspects the ignition repository and emits
 recommendation-level results only.
 """
@@ -290,4 +289,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
