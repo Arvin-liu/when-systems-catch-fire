@@ -1,0 +1,124 @@
+{
+  "protocols": [
+    {
+      "protocol_id": "V1",
+      "title_zh": "延续性协议",
+      "title_en": "Continuity Protocol",
+      "source_status": "candidate_formalized",
+      "definition_original": "选择使系统延续时间最大（或延续概率最高）的行动。",
+      "constraint_result": "V1 是 P_meta 向下展开后的基础元协议之一，构成理论生成空间的一个坐标轴（value 维度）。",
+      "scope": "value",
+      "neighbor_protocols": [
+        "V1-S1-E1: **现实案例：** 传统家族企业——封闭血缘边界，线性代际传承，追求家族延续",
+        "V1-S1-E2: **现实案例：** 北宋开封城——封闭边界，人口虹吸、财政预算形成自我强化链条，最终非线性崩溃[[831ea016]]",
+        "V1-S1-E3: **现实案例：** 封建王朝周期律——封闭边界，朝代更替循环，追求皇权延续"
+      ],
+      "circular_definition_check": "V1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [],
+        "relation": "projection"
+      },
+      "p_meta_relation": "V1 是 P_meta 向下展开后的基础元协议之一，构成理论生成空间的一个坐标轴（value 维度）。",
+      "positive_evidence": [
+        "V1-S1-E1: **现实案例：** 传统家族企业——封闭血缘边界，线性代际传承，追求家族延续",
+        "V1-S1-E2: **现实案例：** 北宋开封城——封闭边界，人口虹吸、财政预算形成自我强化链条，最终非线性崩溃[[831ea016]]",
+        "V1-S1-E3: **现实案例：** 封建王朝周期律——封闭边界，朝代更替循环，追求皇权延续"
+      ],
+      "boundary_evidence": [
+        "仅描述理论生成空间的一个维度，不单独预测系统命运。",
+        "与另两维度组合后才形成可检验理论形态。"
+      ],
+      "source_references": [
+        "2026-07-09 1902/延续性协议64种可能性（V/S/E 各一篇）",
+        "2026-07-09 1902/元协议64种可能性全矩阵案例映射",
+        "2026-07-09 1902/价值/结构/演化维度64种可能性案例映射"
+      ],
+      "assertion_level": "L2",
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-10T21:10:00+08:00",
+        "source_record_keys": [
+          "assertion_level",
+          "basic_meaning",
+          "boundaries",
+          "definition",
+          "dimension",
+          "examples",
+          "formal_expression",
+          "id",
+          "name_en",
+          "name_zh",
+          "pending_human_review",
+          "relation_to_Psi0",
+          "risks",
+          "role_in_P_meta",
+          "source_files",
+          "status"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy name_zh",
+          "title_en: from legacy name_en",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition",
+          "constraint_result: from legacy role_in_P_meta",
+          "scope: from legacy dimension",
+          "neighbor_protocols: from legacy examples",
+          "circular_definition_check: from legacy relation_to_Psi0",
+          "psi0_mapping: from legacy relation_to_Psi0",
+          "p_meta_relation: from legacy role_in_P_meta",
+          "positive_evidence: from legacy examples",
+          "boundary_evidence: from legacy boundaries",
+          "source_references: from legacy source_files"
+        ],
+        "is_draft_derived": false
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-10T21:10:00+08:00",
+        "source_label": "ignition_source",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy name_zh",
+          "title_en: from legacy name_en",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition",
+          "constraint_result: from legacy role_in_P_meta",
+          "scope: from legacy dimension",
+          "neighbor_protocols: from legacy examples",
+          "circular_definition_check: from legacy relation_to_Psi0",
+          "psi0_mapping: from legacy relation_to_Psi0",
+          "p_meta_relation: from legacy role_in_P_meta",
+          "positive_evidence: from legacy examples",
+          "boundary_evidence: from legacy boundaries",
+          "source_references: from legacy source_files"
+        ]
+      },
+      "normative_type": "mixed",
+      "trigger_conditions": [],
+      "exclusions": [],
+      "invalid_conditions": [],
+      "conflict_resolution": "pending",
+      "function_layer_relation": "reference",
+      "case_layer_relation": "pending",
+      "document_path": "pending",
+      "index_entry": "pending",
+      "machine_record_path": "pending",
+      "review": {
+        "reviewer": null,
+        "review_date": null,
+        "review_decision": "pending",
+        "review_notes": null
+      },
+      "gate_results": [],
+      "structure_status": "partially_structured",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "constrained_object": "continuity_action"
+    }
+  ]
+}
