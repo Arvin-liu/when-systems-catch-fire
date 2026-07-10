@@ -175,6 +175,46 @@ check("T28_021_draft_compatible", all(k in d0 for k in ["protocol_id","title_zh"
       "definition_original","normative_type","constrained_object","trigger_conditions",
       "constraint_result","scope","neighbor_protocols","conflict_resolution","psi0_mapping"]))
 
+# ---- T29: S2 persisted derived status must match validator on canonical release records ----
+persisted = json.loads((ROOT/"data/meta-protocols/protocols-canonical.json").read_text())
+persisted_records = persisted["protocols"]
+persisted_input = ROOT/"tests/fixtures/persisted-release.json"
+persisted_input.write_text(json.dumps(persisted_records, ensure_ascii=False), encoding="utf-8")
+persisted_out = ROOT/"tests/fixtures/persisted-release-result.json"
+persisted_md = ROOT/"tests/fixtures/persisted-release.md"
+rcp = subprocess.run([sys.executable, str(VALIDATOR), "--input", str(persisted_input),
+    "--repo", str(ROOT), "--schema", str(SCHEMA), "--gate-registry", str(GATE), "--legacy-map", str(MAP),
+    "--json-output", str(persisted_out), "--markdown-output", str(persisted_md)],
+    capture_output=True, text=True)
+check("T29_persisted_run", rcp.returncode in (0, 1), rcp.stderr[:200])
+persisted_live = {r["protocol_id"]: r for r in json.loads(persisted_out.read_text())["results"]}
+s2_rec = next(rec for rec in persisted_records if rec["protocol_id"] == "S2")
+s2_live = persisted_live["S2"]
+s2_persisted_gates = {g["gate_id"]: g["result"] for g in s2_rec.get("gate_results", [])}
+s2_live_gates = {g["gate_id"]: g["result"] for g in s2_live["gate_results"]}
+s2_live_blocking_issues = [gid for gid in ("G20", "G33") if s2_live_gates.get(gid) in {"FAIL", "PENDING", "NOT_FOUND"}]
+for gid in ("G20", "G33"):
+    check(f"T29_S2_gate_sync_{gid}", s2_persisted_gates.get(gid) == s2_live_gates.get(gid),
+          f"persisted={s2_persisted_gates.get(gid)} live={s2_live_gates.get(gid)}")
+check("T29_S2_machine_validation_status_sync",
+      s2_rec.get("machine_validation_status") == s2_live["machine_validation_status"],
+      f"persisted={s2_rec.get('machine_validation_status')} live={s2_live['machine_validation_status']}")
+check("T29_S2_blocking_issues_sync",
+      s2_rec.get("blocking_issues") == s2_live_blocking_issues,
+      f"persisted={s2_rec.get('blocking_issues')} live={s2_live_blocking_issues}")
+check("T29_S2_content_machine_eligible_sync",
+      s2_rec.get("content_machine_eligible") == s2_live["content_machine_eligible"],
+      f"persisted={s2_rec.get('content_machine_eligible')} live={s2_live['content_machine_eligible']}")
+check("T29_S2_ratification_ready_sync",
+      s2_rec.get("ratification_ready") == s2_live["ratification_ready"],
+      f"persisted={s2_rec.get('ratification_ready')} live={s2_live['ratification_ready']}")
+check("T29_S2_G20_pending", s2_live_gates.get("G20") == "PENDING", f"S2 G20={s2_live_gates.get('G20')}")
+check("T29_S2_G33_pending", s2_live_gates.get("G33") == "PENDING", f"S2 G33={s2_live_gates.get('G33')}")
+check("T29_S2_content_machine_eligible_false", s2_live["content_machine_eligible"] is False,
+      f"S2 content_machine_eligible={s2_live['content_machine_eligible']}")
+check("T29_S2_ratification_ready_false", s2_live["ratification_ready"] is False,
+      f"S2 ratification_ready={s2_live['ratification_ready']}")
+
 # ---- summary ----
 passed = sum(1 for _, p, _ in results if p)
 failed = [r for r in results if not r[1]]

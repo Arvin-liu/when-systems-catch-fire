@@ -141,8 +141,10 @@ def validate_record(rec: dict, repo: Optional[Path], gate_reg: dict, strict: boo
                       "select","prioritize","terminate","validate","reference","other"} else "PENDING", "semi_automatic",
                       data_path, f"$.protocols[{idx}].function_layer_relation", "函数层关系在枚举内", "补关系"))
     gates.append(gate("G19", "PASS", "automatic", data_path, f"$.protocols[{idx}].status", "协议不计入函数总数", "无"))
-    gates.append(gate("G20", "PASS" if get("function_layer_relation") else "PENDING", "semi_automatic", data_path,
-                      f"$.protocols[{idx}].source_files", "与函数表相似性需人工/对照判定", "对比最近函数"))
+    gates.append(gate("G20", "PENDING", "semi_automatic", data_path,
+                      f"$.protocols[{idx}].function_layer_relation",
+                      "需真实函数表对照证据；仅有 function_layer_relation 等字段不足以自动判为 PASS",
+                      "补函数表对照证据并人工确认"))
     gates.append(gate("G21", "PASS" if get("positive_evidence") or get("examples") else "PENDING", "semi_automatic",
                       doc_path, f"section:{pid}", "正向证据存在", "补证据"))
     gates.append(gate("G22", "PASS" if get("boundary_evidence") or get("boundaries") else "PENDING", "semi_automatic",

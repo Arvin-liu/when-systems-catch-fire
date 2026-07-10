@@ -212,9 +212,9 @@
           "result": "PENDING",
           "mode": "semi_automatic",
           "evidence_path": "data/meta-protocols/meta-protocols.json",
-          "locator": "$.protocols[0].source_files",
-          "reason": "与函数表相似性需人工/对照判定",
-          "repair_action": "对比最近函数"
+          "locator": "$.protocols[0].function_layer_relation",
+          "reason": "需真实函数表对照证据；仅有 function_layer_relation 等字段不足以自动判为 PASS",
+          "repair_action": "补函数表对照证据并人工确认"
         },
         {
           "gate_id": "G21",
