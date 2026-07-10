@@ -1,0 +1,138 @@
+{
+  "protocol_id": [
+    "id"
+  ],
+  "title_zh": [
+    "name_zh"
+  ],
+  "title_en": [
+    "name_en"
+  ],
+  "stable_slug": [
+    "stable_slug"
+  ],
+  "source_status": [
+    "status",
+    "current_status"
+  ],
+  "definition_original": [
+    "definition"
+  ],
+  "definition_normative": [
+    "definition_normative"
+  ],
+  "normative_type": [
+    "normative_type"
+  ],
+  "constrained_object": [
+    "constrained_object"
+  ],
+  "trigger_conditions": [
+    "trigger_conditions"
+  ],
+  "constraint_result": [
+    "constraint_result",
+    "role_in_P_meta"
+  ],
+  "scope": [
+    "scope",
+    "dimension"
+  ],
+  "applicable_system_levels": [
+    "applicable_system_levels"
+  ],
+  "exclusions": [
+    "exclusions"
+  ],
+  "invalid_conditions": [
+    "invalid_conditions"
+  ],
+  "termination_conditions": [
+    "termination_conditions"
+  ],
+  "neighbor_protocols": [
+    "neighbor_protocols",
+    "examples"
+  ],
+  "boundary_with_neighbors": [
+    "boundary_with_neighbors"
+  ],
+  "conflict_resolution": [
+    "conflict_resolution"
+  ],
+  "priority_rule": [
+    "priority_rule"
+  ],
+  "circular_definition_check": [
+    "circular_definition_check",
+    "relation_to_Psi0"
+  ],
+  "psi0_mapping": [
+    "psi0_mapping",
+    "relation_to_Psi0"
+  ],
+  "p_meta_relation": [
+    "p_meta_relation",
+    "role_in_P_meta"
+  ],
+  "function_layer_relation": [
+    "function_layer_relation"
+  ],
+  "case_layer_relation": [
+    "case_layer_relation"
+  ],
+  "positive_evidence": [
+    "positive_evidence",
+    "examples"
+  ],
+  "boundary_evidence": [
+    "boundary_evidence",
+    "boundaries"
+  ],
+  "source_references": [
+    "source_references",
+    "source_files"
+  ],
+  "assertion_level": [
+    "assertion_level"
+  ],
+  "document_path": [
+    "document_path"
+  ],
+  "index_entry": [
+    "index_entry"
+  ],
+  "machine_record_path": [
+    "machine_record_path"
+  ],
+  "review": [
+    "review"
+  ],
+  "structure_status": [
+    "structure_status"
+  ],
+  "machine_validation_status": [
+    "machine_validation_status"
+  ],
+  "semantic_review_status": [
+    "semantic_review_status"
+  ],
+  "governance_status": [
+    "governance_status"
+  ],
+  "gate_results": [
+    "gate_results"
+  ],
+  "blocking_issues": [
+    "blocking_issues"
+  ],
+  "soft_warnings": [
+    "soft_warnings"
+  ],
+  "provenance": [
+    "provenance"
+  ],
+  "version_metadata": [
+    "version_metadata"
+  ]
+}
