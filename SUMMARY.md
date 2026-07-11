@@ -4,6 +4,7 @@
 
 ## 项目定位
 - [README.md](./README.md) — 项目总入口、架构总览、快速入口、边界与红线
+- [docs/governance/life-community-value-charter.md](./docs/governance/life-community-value-charter.md) — 生命共同体价值宪章（规范性价值前提）
 - [docs/VERSIONING.md](./docs/VERSIONING.md) — 版本阶段与升级规范
 - [docs/PROJECT-ARCHITECTURE.md](./docs/PROJECT-ARCHITECTURE.md) — 当前整体架构
 
