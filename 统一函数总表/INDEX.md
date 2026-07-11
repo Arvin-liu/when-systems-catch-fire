@@ -622,3 +622,6 @@
 | [D597](<./0607-D597-量化指标替代真实价值.md>) | [量化指标替代真实价值](<./0607-D597-量化指标替代真实价值.md>) | V_effective = V_real × (1 - Q_substitution) |
 | [D598](<./0608-D598-系统性钝化.md>) | [系统性钝化](<./0608-D598-系统性钝化.md>) | D_system = P_pressure × (1 - R_refusal) × (1 - H_repair) × A_adaptation |
 | [D599](<./0609-D599-刷分博弈.md>) | [刷分博弈](<./0609-D599-刷分博弈.md>) | G_score = B_metric × D_decomposable × R_reward × (1 - C_reality) |
+| [D600](<./0610-D600-资源托举退化为路径控制.md>) | [资源托举退化为路径控制](<./0610-D600-资源托举退化为路径控制.md>) | C_path = R_support × B_condition × (1 - I_independence) |
+| [D601](<./0611-D601-角色覆盖主体身份.md>) | [角色覆盖主体身份](<./0611-D601-角色覆盖主体身份.md>) | S_cover = R_role × (1 - I_self) × A_stable |
+| [D602](<./0612-D602-价值创造权与决策权错配与回收.md>) | [价值创造权与决策权错配与回收](<./0612-D602-价值创造权与决策权错配与回收.md>) | Misalign = V_source × (1 - D_decision) |
