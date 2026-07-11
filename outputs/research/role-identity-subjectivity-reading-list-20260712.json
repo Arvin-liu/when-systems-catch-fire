@@ -176,15 +176,17 @@
   "extended_batch": [
     {
       "id": "RIS-011",
-      "title_original": "The Cultural Politics of Emotion",
-      "author": "Sara Ahmed",
-      "year": 2004
+      "title_zh": "文化认同与族裔散居",
+      "title_original": "Cultural Identity and Diaspora",
+      "author": "Stuart Hall",
+      "year": 1990
     },
     {
       "id": "RIS-012",
-      "title_original": "Sources of the Self",
-      "author": "Charles Taylor",
-      "year": 1989
+      "title_zh": "知觉现象学",
+      "title_original": "Phenomenology of Perception",
+      "author": "Maurice Merleau-Ponty",
+      "year": 1945
     },
     {
       "id": "RIS-013",
@@ -194,6 +196,7 @@
     },
     {
       "id": "RIS-014",
+      "title_zh": "社会认同",
       "title_original": "Social Identity",
       "author": "Richard Jenkins",
       "year": 1996

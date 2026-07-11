@@ -32,8 +32,13 @@
 | P2 | 自我的根源 | Sources of the Self | Charles Taylor | 现代性 / 自我理论 | 1989 | 有中译本 | 补现代自我形成的大背景 |
 | P2 | Masculine Domination | Masculine Domination | Pierre Bourdieu | 性别 / 实践理论 | 1998 | 有中译本 | 补性别权力如何被自然化 |
 | P2 | Social Identity | Social Identity | Richard Jenkins | 社会身份研究 | 1996 | 中文系统译本较少 | 补个体 / 群体 / 分类之间的桥梁 |
-| P2 | 文化身份与族裔 | Cultural Identity and Ethnicity | Stuart Hall 等相关文集 | 文化研究 | 1990s | 论文译介较多 | 补集体身份、边界与政治身份 |
-| P2 | 身体化的主体 | 相关身体社会学与现象学文献包 | Merleau-Ponty / Crossley 等 | 身体社会学 / 现象学 | 1945+ | 需后续分书细化 | 补身体与主体性当前薄弱区 |
+| P2 | 文化身份与族裔 | Cultural Identity and Ethnicity | Stuart Hall | 文化研究 | 1996 | 论文译介较多 | 补集体身份、边界与政治身份 |
+| P2 | 身体知觉现象学 | Phenomenology of Perception | Maurice Merleau-Ponty | 现象学 / 身体哲学 | 1945 | 有中译本 | 补身体与主体性当前薄弱区 |
+
+## 后续研究方向（不计入书单）
+
+- Stuart Hall 的其他文化身份文集，可作为下一轮扩展阅读，但不再用“等相关文集”充数。
+- 身体社会学补充线可继续扩到 Crossley 等作者，但需要逐本拆分后再入表。
 
 ## 为什么这批书优先
 

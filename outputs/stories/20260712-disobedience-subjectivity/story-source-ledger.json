@@ -16,9 +16,10 @@
       "source_id": "SRC-LOCAL-57",
       "title": "57｜李丹阳 × 脱不花：不听话的人",
       "source_type": "local_note",
-      "locator": "/Users/zhiyuan/我的笔记/57｜李丹阳 × 脱不花：不听话的人-2026年07月11日-来自【Get 笔记】.md",
+      "locator": "Get 笔记 note_id 1915319279935456112",
+      "content_sha256": "585ee797cf92b93f19b5747fbc6f90c21df93ecf490ff24ee647f9d7f2fd6add",
       "reliability": "primary",
-      "notes": "实际碰撞材料"
+      "notes": "实际碰撞材料；以 note_id 与 content_sha256 作为可移植锚点"
     },
     {
       "source_id": "SRC-REPO-MECH",

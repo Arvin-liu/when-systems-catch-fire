@@ -43,6 +43,8 @@ def validate_required(schema: dict, data: dict) -> None:
 
 def validate_claims(data: dict) -> None:
     sources = {row["source_id"] for row in data["sources"]}
+    if len(sources) != len(data["sources"]):
+        raise ValidationError("DUPLICATE_SOURCE_ID")
     for section in data["sections"]:
         for row in section["assertions"]:
             claim_type = row["claim_type"]
@@ -54,6 +56,12 @@ def validate_claims(data: dict) -> None:
                 raise ValidationError(f"EMPTY_MAPPED_VARIABLES {row['assertion_id']}")
             if not row["non_isomorphic_limits"]:
                 raise ValidationError(f"EMPTY_NON_ISO_LIMITS {row['assertion_id']}")
+    for source in data["sources"]:
+        locator = source.get("locator", "")
+        if locator.startswith("/") or locator.startswith("file:") or locator.startswith("C:\\"):
+            raise ValidationError(f"ABSOLUTE_PATH_IN_SOURCE {source['source_id']}")
+        if source["source_type"] == "local_note" and not source.get("content_sha256"):
+            raise ValidationError(f"MISSING_LOCAL_CONTENT_SHA {source['source_id']}")
 
 
 def validate_supporting_files() -> None:
