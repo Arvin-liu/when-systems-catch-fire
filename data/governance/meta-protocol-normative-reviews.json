@@ -1,0 +1,502 @@
+[
+  {
+    "protocol_id": "V1",
+    "dimension": "value",
+    "name": "延续性协议 (Continuity Protocol)",
+    "original_definition": "选择使系统延续时间最大（或延续概率最高）的行动。",
+    "revised_definition": "受约束的长期延续：在身份、功能、伦理、生态与资源约束下，选择提升系统长期延续能力、保留纠错与恢复可能、并避免对更大生命共同体造成不可逆伤害的行动。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：延续生命共同体的身份与功能，是价值前提与一切可能性的基础。条件：仅当延续不外部化不可逆生态/代际代价、保留纠错与恢复能力、不伤害更大生命共同体时才有价值。伤害：当无条件延续、外壳延续而核心功能丧失、或以局部延续损害更大共同体时，会伤害共同体。不可缺少的约束：不得外部化不可逆代价、以 V4 为硬边界、保留退出与纠错能力、形式存在≠功能延续、局部不得伤害更大共同体。",
+    "primary_risks": [
+      "无条件延续可伤害更大共同体",
+      "外壳延续但核心功能消失",
+      "短长期目标冲突被误判"
+    ],
+    "hard_constraints": [
+      "不得外部化不可逆生态/代际成本",
+      "V4 为硬边界",
+      "保留退出与纠错能力",
+      "形式存在≠功能延续",
+      "局部不得伤害更大共同体"
+    ],
+    "stop_conditions": [
+      "延续策略导致更早崩溃",
+      "局部延续显著伤害更大共同体",
+      "外壳延续而核心功能消失"
+    ],
+    "factual_pending": [
+      "跨物种/跨文明延续度量试点",
+      "短期安全阈值的形式化",
+      "组合层可证伪案例"
+    ],
+    "cross_protocol_exception": null,
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-040"
+  },
+  {
+    "protocol_id": "V2",
+    "dimension": "value",
+    "name": "效率性协议 (Efficiency Protocol)",
+    "original_definition": "选择产出/投入效率最大（单位资源产出最高）的行动。",
+    "revised_definition": "在不外部化生命、生态、代际和主体性成本的前提下，以较少资源实现共同体认可目标；效率提升必须保留纠错、退出与恢复能力，且净收益在多时间尺度上为正。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：在资源有限的生命共同体中，减少浪费、释放注意力与未来选择空间，是有价值的工具性优化。条件：仅当它服务于共同体认可的目标，且不把成本外部化时才有价值。伤害：当它以效率为由压缩退出权、牺牲主体尊严、转嫁生态或代际代价时，会伤害共同体。不可缺少的约束：全成本口径、可逆优先、不得压缩退出权与主体尊严、以 V4 为硬边界。",
+    "primary_risks": [
+      "未定义成本的边界，默认只算直接投入，容易把生命、生态、代际与主体性代价排除在外（歧义）。",
+      "适用边界不清：把效率当成无条件的好，未区分局部效率与共同体净收益（适用边界）。",
+      "可被用来把伤害转嫁给弱势成员或外部系统，以局部提速冒充整体增益（滥用风险）。",
+      "与 V1/V4 重叠：效率优化常与延续、可持续目标混同，缺少优先级约定（与其他协议重叠）。",
+      "缺少硬停止条件：何时因外部化成本而必须放弃效率提升，原定义未给（缺少停止条件）。"
+    ],
+    "hard_constraints": [
+      "禁止把伤害转嫁给弱势成员或外部系统",
+      "全成本口径：生态、代际、主体性成本计入",
+      "禁止以效率为由压缩退出权与主体尊严",
+      "短期速度不得替代长期净收益",
+      "V4（可持续/再生）为硬边界，冲突时效率让位",
+      "效率提升必须可停止、可逆转"
+    ],
+    "stop_conditions": [
+      "效率方案显著外部化不可逆生命/生态代价",
+      "效率提升以牺牲主体尊严或退出权为代价",
+      "局部效率导致更大共同体净损失",
+      "效率优化不可逆且丧失纠错空间"
+    ],
+    "factual_pending": [
+      "全成本效率度量的跨域可操作指标（经济学/生态/伦理）仍需外部验证",
+      "效率与 V4 再生能力冲突时的量化权衡函数待实证",
+      "压缩退出权的阈值与可测信号待案例验证"
+    ],
+    "cross_protocol_exception": "全成本效率度量待验证（事实 pending，非价值宪章冲突）",
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-042"
+  },
+  {
+    "protocol_id": "V3",
+    "dimension": "value",
+    "name": "创新性协议 (Innovation Protocol)",
+    "original_definition": "选择提高系统新可能性、复杂度或生成能力的行动。",
+    "revised_definition": "增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：增加生命共同体的适应能力、问题解决能力与未来选择空间，是应对不确定性的关键。条件：仅当可检验、可逆优先、风险隔离、可停止、有失败反馈时才有价值。伤害：当以“创新”为由制造不可控、不可逆、外部化风险时，会伤害共同体。不可缺少的约束：可逆优先、小规模试验、风险隔离、可停止、失败反馈、禁止不可控外部风险。",
+    "primary_risks": [
+      "未要求可检验性，'新可能性'主观化，易被任何变化冒充创新（歧义）。",
+      "未限定可逆性、规模与隔离，可能制造不可控外部风险（适用边界/滥用风险）。",
+      "与 V2 重叠：创新常以'效率/竞争力'包装，缺少边界（与其他协议重叠）。",
+      "原定义无失败反馈与停止机制（缺少停止条件）。",
+      "未区分适应能力提升与单纯复杂度堆高（歧义）。"
+    ],
+    "hard_constraints": [
+      "可逆优先于不可逆",
+      "先小规模试验，后扩大",
+      "风险隔离，防止扩散到更大共同体",
+      "全程可停止、可回滚",
+      "必须有失败反馈与学习回路",
+      "禁止以创新为由制造不可控/不可逆外部风险"
+    ],
+    "stop_conditions": [
+      "创新产生不可逆且不可补偿的共同体伤害",
+      "风险超出沙盒/隔离边界并开始扩散",
+      "失败反馈缺失且无法停止",
+      "创新实质退化为对弱势成员的掠夺"
+    ],
+    "factual_pending": [
+      "'可检验变化'的形式化判据待定义与验证",
+      "可逆性度量与不可逆风险上限的量化标准待建立",
+      "创新增益 vs 风险成本的跨域实证案例待补充"
+    ],
+    "cross_protocol_exception": "可逆性度量与不可逆风险上限待建立（事实 pending，非价值宪章冲突）",
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-042"
+  },
+  {
+    "protocol_id": "V4",
+    "dimension": "value",
+    "name": "可持续性协议 (Sustainability Protocol)",
+    "original_definition": "选择长期极限效用或长期稳定性最大的行动。",
+    "revised_definition": "在多时间尺度上维持生命共同体的再生能力、承载能力、多样性和代际公平；不得退化为维持任何现状、保护有害系统或只维护资源存量而忽略主体尊严。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤害共同体。不可缺少的约束：再生优先于存量维持、不得保护有害系统、代际公平、多样性、不得无限压倒个体。",
+    "primary_risks": [
+      "'长期极限效用/稳定性'未界定尺度与主体，易退化为维持任何现状（歧义/适用边界）。",
+      "可能用于保护有害系统或阻止必要改革（滥用风险）。",
+      "与 V1 重叠：两者都面向长期，缺少'延续 vs 再生/承载'的区分（与其他协议重叠）。",
+      "原定义未排除'只维护资源存量而忽略主体尊严'的退化路径（缺少停止条件）。",
+      "未说明 V4 本身不是绝对压倒一切的价值（歧义）。"
+    ],
+    "hard_constraints": [
+      "再生能力优先于单纯资源存量维持",
+      "不得用于保护或延续有害系统",
+      "不得阻止必要的结构性改革",
+      "代际公平：不得无限转嫁代价给未来世代",
+      "多样性与主体尊严不可牺牲",
+      "V4 不是绝对压倒一切的价值，须受宪章原则 4 约束"
+    ],
+    "stop_conditions": [
+      "可持续性论证被用于固化有害现状",
+      "维持存量但以牺牲主体尊严为代价",
+      "代际不公平达到不可补偿程度",
+      "以保护可持续为由无限压制个体与少数群体"
+    ],
+    "factual_pending": [
+      "'再生能力/承载能力'的可操作跨域度量待外部学科验证",
+      "V4 与 V1 在长期目标上的非冗余区分待数学澄清",
+      "代际公平的量化权重函数待治理讨论"
+    ],
+    "cross_protocol_exception": null,
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-042"
+  },
+  {
+    "protocol_id": "S1",
+    "dimension": "structure",
+    "name": "封闭边界协议 (Closed-Boundary Protocol)",
+    "original_definition": "系统在封闭或强边界内演化，外部输入/退出/迁移受限。",
+    "revised_definition": "在限定、可复核、保留退出权的前提下，以封闭或强边界隔离风险、保护脆弱系统、守护隐私、孵化新结构或防止污染与入侵；不得退化为永久封锁、排斥异己、信息垄断、资源囤积或无退出权。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：隔离风险、保护脆弱系统、守护隐私、孵化新结构、防止污染或入侵，是有价值的情境工具。条件：仅当目标正当（隔离风险/保护脆弱/隐私/孵化/防污染）且设有时限与退出权时才有价值。伤害：当变成永久封锁、排斥异己、信息垄断、资源囤积或无退出权时，会伤害共同体。不可缺少的约束：正当用途限定、必须有退出权、不得信息垄断、设有时限与复核。",
+    "primary_risks": [
+      "'封闭'程度未分级，易被用作永久封锁的借口（歧义/适用边界）。",
+      "可退化为排斥异己、信息垄断、资源囤积（滥用风险）。",
+      "与 S2 互补但缺少清晰选择条件，易误用为默认（与其他协议重叠）。",
+      "原定义无'必须有退出权'的硬约束（缺少停止条件）。",
+      "未说明封闭的正当用途清单（歧义）。"
+    ],
+    "hard_constraints": [
+      "仅用于隔离风险/保护脆弱/隐私/孵化/防污染入侵等正当用途",
+      "必须保留成员退出权",
+      "禁止信息垄断与资源囤积",
+      "边界须设时限并可复核、可解除",
+      "不得用于排斥异己或固化特权",
+      "封闭不得造成对外部共同体的不可逆污染"
+    ],
+    "stop_conditions": [
+      "封闭退化为永久封锁且无解除机制",
+      "封闭被用于排斥异己或信息垄断",
+      "成员丧失真实退出权",
+      "封闭造成外部不可逆污染或入侵风险外溢"
+    ],
+    "factual_pending": [
+      "'脆弱系统'与'必要封闭'的判定标准待案例验证",
+      "退出权在封闭结构中的可操作保障待建模",
+      "封闭/开放的成本收益跨域实证待补充"
+    ],
+    "cross_protocol_exception": null,
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-042"
+  },
+  {
+    "protocol_id": "S2",
+    "dimension": "structure",
+    "name": "开放边界协议 (Open-Boundary Protocol)",
+    "original_definition": "系统允许外部输入、退出、迁移或扩展，边界可渗透。",
+    "revised_definition": "在承载力与风险可控范围内，允许外部输入、退出、迁移或扩展以促进交流、迁移、知识传播、资源互助与系统适应；不得退化为无限开放、污染无控扩散、隐私消失、承载突破或强者掠夺。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：交流、迁移、知识传播、资源互助与系统适应，是共同体活力与适应的关键。条件：仅当在承载力与风险可控范围内，且保护隐私与弱势成员时才有价值。伤害：当无限开放导致污染扩散、隐私消失、承载突破或强者掠夺时，会伤害共同体。不可缺少的约束：承载力上限、风险可控、隐私保护、防止掠夺、可逆调节。",
+    "primary_risks": [
+      "'可渗透'无上限，易变成无限开放导致病原/污染/风险无控扩散（歧义/适用边界）。",
+      "可退化为隐私消失、生态承载力被突破、强者借开放掠夺（滥用风险）。",
+      "与 S1 互补但缺少清晰选择条件（与其他协议重叠）。",
+      "原定义未设承载力与风险上限（缺少停止条件）。",
+      "未说明开放的正当用途清单（歧义）。"
+    ],
+    "hard_constraints": [
+      "开放须在生态/社会承载力上限内",
+      "病原、污染与风险须受控，不得无限制扩散",
+      "必须保护隐私",
+      "防止强者借开放实施掠夺",
+      "开放程度可随风险反馈可逆调节",
+      "弱势成员须有对等参与与保护机制"
+    ],
+    "stop_conditions": [
+      "开放导致不可逆污染或病原扩散",
+      "生态/社会承载力被突破",
+      "开放造成隐私系统性消失",
+      "开放被强者用于掠夺弱势成员"
+    ],
+    "factual_pending": [
+      "'承载力上限'的可操作度量待跨域验证",
+      "开放—封闭的最优切换条件待建模与案例验证",
+      "防掠夺机制的有效性待实证"
+    ],
+    "cross_protocol_exception": null,
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-042"
+  },
+  {
+    "protocol_id": "S3",
+    "dimension": "structure",
+    "name": "层级协议 (Hierarchy Protocol)",
+    "original_definition": "系统由层级结构组织，上下层存在控制或信息梯度。",
+    "revised_definition": "为责任清晰、应急协调、专业分工与大规模复杂任务而组织的上下层控制/信息梯度结构；权力须可问责、层级可撤销、决策可复核，底层成员有申诉与退出机制，且不得把服从本身当成价值。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：责任清晰、应急协调、专业分工与大规模复杂任务，是有效组织的工具。条件：仅当权力可问责、层级可撤销、决策可复核且底层有申诉与退出机制时才有价值。伤害：当层级不可问责、不可撤销、把服从当价值或剥夺底层权利时，会伤害共同体。不可缺少的约束：权力可问责、层级可撤销、决策可复核、申诉与退出、服从非价值。",
+    "primary_risks": [
+      "'层级'未限定权责关系，易把服从本身当成价值（歧义/滥用风险）。",
+      "可退化为不可问责、不可撤销、决策不可复核的权力结构（适用边界）。",
+      "与 S4 互补但缺少权力—责任边界（与其他协议重叠）。",
+      "原定义无底层申诉与退出机制（缺少停止条件）。",
+      "未说明层级的正当用途（应急/分工/复杂任务）与限度（歧义）。"
+    ],
+    "hard_constraints": [
+      "权力必须可问责",
+      "层级必须可撤销、可调整",
+      "关键决策可复核",
+      "底层成员有申诉与退出机制",
+      "服从本身不是价值",
+      "层级不得用于固化不可挑战的特权"
+    ],
+    "stop_conditions": [
+      "层级不可问责且不可撤销",
+      "决策不可复核且持续伤害成员",
+      "底层丧失真实申诉与退出权",
+      "层级退化为压迫性结构"
+    ],
+    "factual_pending": [
+      "'权力可问责'的可操作指标待治理定义",
+      "层级 vs 网络(S4)的适用边界量化待案例验证",
+      "申诉/退出机制在层级中的有效性待实证"
+    ],
+    "cross_protocol_exception": null,
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-042"
+  },
+  {
+    "protocol_id": "S4",
+    "dimension": "structure",
+    "name": "网络协议 (Network Protocol)",
+    "original_definition": "系统由节点—边网络构成，交互通过连接发生。",
+    "revised_definition": "由节点—边网络构成、交互通过连接发生的多中心结构，用于分布式协作、冗余、知识共享与局部失效隔离；须防止责任消失、隐形中心、信息传染、平台垄断与网络效应锁定。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：分布式协作、多中心治理、冗余、知识共享与局部失效隔离，提升系统韧性。条件：仅当责任可追溯、无隐形中心垄断、且局部失效可隔离时才有价值。伤害：当责任消失、隐形中心垄断、信息传染或网络效应锁定时，会伤害共同体。不可缺少的约束：责任可追溯、防止隐形中心、反锁定、局部失效隔离、多中心。",
+    "primary_risks": [
+      "未处理'隐形中心'与'网络效应锁定'，易退化为平台垄断（歧义/滥用风险）。",
+      "可造成责任消失与信息传染（适用边界）。",
+      "与 S3 互补但缺少权力—责任边界（与其他协议重叠）。",
+      "原定义无反锁定与责任追溯机制（缺少停止条件）。",
+      "未说明网络的正当用途（分布式协作/冗余/隔离）与风险（歧义）。"
+    ],
+    "hard_constraints": [
+      "责任必须可追溯，不得因去中心而消失",
+      "防止隐形中心与平台垄断",
+      "防止信息传染与群体失控",
+      "具备反锁定与可退出机制",
+      "支持局部失效隔离",
+      "保持多中心而非单点控制"
+    ],
+    "stop_conditions": [
+      "网络退化为隐形中心垄断",
+      "责任完全消失且无法追溯",
+      "网络效应锁定剥夺成员选择权",
+      "信息传染造成不可逆共同体伤害"
+    ],
+    "factual_pending": [
+      "'隐形中心'的识别与度量待方法学验证",
+      "网络—层级(S3)切换的最优条件待建模",
+      "信息传染的阻断机制有效性待实证"
+    ],
+    "cross_protocol_exception": null,
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-042"
+  },
+  {
+    "protocol_id": "E1",
+    "dimension": "evolution",
+    "name": "线性演化协议 (Linear-Evolution Protocol)",
+    "original_definition": "状态沿可预测线性路径演化。",
+    "revised_definition": "在局部、低耦合、关系稳定、可预测范围内，假设状态沿可预测路径演化的建模与行动方式；须设反馈点、偏差检测与非线性退出条件，禁止把复杂生命系统强行简化为直线模型。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：在局部、低耦合、关系稳定、可预测范围内，线性近似是简洁有效的建模与规划工具。条件：仅当系统满足低耦合、关系稳定、可预测，且设反馈与偏差检测时才有价值。伤害：当把复杂生命系统强行简化为直线、忽略临界点时会伤害共同体（误判崩溃）。不可缺少的约束：限定适用域、设反馈点、偏差检测、非线性退出条件、禁止过度简化。",
+    "primary_risks": [
+      "未限定适用范围，易把复杂生命系统强行简化成直线模型（歧义/适用边界）。",
+      "在耦合强、关系不稳、不可预测处误用会导致错误决策（滥用风险）。",
+      "与 E2 互补但缺少'何时退出线性假设'的判据（与其他协议重叠）。",
+      "原定义无反馈点与非线性退出条件（缺少停止条件）。",
+      "未说明仅适用于局部、低耦合、关系稳定、可预测范围（歧义）。"
+    ],
+    "hard_constraints": [
+      "仅适用于局部、低耦合、关系稳定、可预测范围",
+      "必须设置反馈点",
+      "必须设置偏差检测",
+      "达到非线性退出条件时改用 E2/E3/E4",
+      "禁止把复杂生命系统强行线性简化",
+      "线性结论须标注适用边界"
+    ],
+    "stop_conditions": [
+      "实际演化偏离线性假设且偏差扩大",
+      "出现临界点/放大信号",
+      "系统耦合度升高超出线性适用域",
+      "线性简化导致错误且不可逆决策"
+    ],
+    "factual_pending": [
+      "线性适用域的量化判据（耦合度/可预测度阈值）待验证",
+      "非线性退出条件的触发指标待跨域案例校准",
+      "线性模型在生命系统的误用成本待实证"
+    ],
+    "cross_protocol_exception": null,
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-042"
+  },
+  {
+    "protocol_id": "E2",
+    "dimension": "evolution",
+    "name": "非线性演化协议 (Nonlinear-Evolution Protocol)",
+    "original_definition": "状态非线性、涌现、放大或不可预测地演化。",
+    "revised_definition": "承认临界点、放大效应、涌现、不确定性与小因大果的演化描述；须配套预防原则、沙盒、风险上限、可逆操作与实时反馈，并区分良性涌现与恶性失控。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：承认临界点、放大、涌现与不确定性，是对复杂系统的诚实描述，支撑预防原则。条件：仅当配套预防原则、沙盒、风险上限、可逆操作与实时反馈时才有价值。伤害：当以“不可预测”为由放弃约束、制造不可逆风险时会伤害共同体。不可缺少的约束：预防原则、沙盒、风险上限、可逆操作、实时反馈、区分良性/恶性涌现。",
+    "primary_risks": [
+      "未要求预防原则与风险上限，易被用作'不可预测所以随便试'的借口（歧义/滥用风险）。",
+      "临界点与小因大果若缺约束会放大灾难（适用边界）。",
+      "与 E1 互补但缺少切换判据（与其他协议重叠）。",
+      "原定义无沙盒、风险上限与实时反馈（缺少停止条件）。",
+      "未区分'良性涌现'与'恶性失控'（歧义）。"
+    ],
+    "hard_constraints": [
+      "必须采用预防原则",
+      "必须在沙盒/受控环境验证",
+      "必须设风险上限",
+      "操作须可逆",
+      "须有实时反馈与中止能力",
+      "区分良性涌现与恶性失控"
+    ],
+    "stop_conditions": [
+      "出现不可逆且超出风险上限的效应",
+      "沙盒外溢失去控制",
+      "实时反馈缺失导致无法中止",
+      "恶性失控信号出现"
+    ],
+    "factual_pending": [
+      "'风险上限'的跨域统一度量待建立",
+      "临界点早期信号的可检测性待实证",
+      "预防原则触发阈值待治理与案例校准"
+    ],
+    "cross_protocol_exception": null,
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-042"
+  },
+  {
+    "protocol_id": "E3",
+    "dimension": "evolution",
+    "name": "循环演化协议 (Cyclic-Evolution Protocol)",
+    "original_definition": "状态在有限集合或周期结构内循环演化。",
+    "revised_definition": "状态在有限集合或周期结构内循环演化，用于生态循环、资源再生、学习迭代、修复与周期恢复；须区分良性循环、恶性循环、路径依赖与表面重复，并支持真正再生、及时停止恶性循环。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：生态循环、资源再生、学习迭代、修复与周期性恢复，是再生能力的重要载体。条件：仅当循环是良性、真正再生而非路径依赖或表面重复时才有价值。伤害：当循环退化为恶性循环、路径依赖或锁定有害结构时会伤害共同体。不可缺少的约束：区分良性/恶性、识别路径依赖、支持真正再生、恶性循环须可停止。",
+    "primary_risks": [
+      "未区分良性循环、恶性循环、路径依赖与表面重复（歧义）。",
+      "恶性循环（如贫困陷阱）易被误当成中性'循环'而延续（滥用风险）。",
+      "与 E4 互补但缺少'循环 vs 收敛'的判据（与其他协议重叠）。",
+      "原定义无'真正再生'与'恶性循环停止'的条件（缺少停止条件）。",
+      "未说明正当用途（生态循环/再生/学习迭代/修复）（歧义）。"
+    ],
+    "hard_constraints": [
+      "必须区分良性循环与恶性循环",
+      "必须识别路径依赖与表面重复",
+      "须支持真正再生而非空转",
+      "恶性循环必须可检测、可停止",
+      "循环不得锁定有害结构",
+      "循环收益须跨周期为正"
+    ],
+    "stop_conditions": [
+      "循环退化为恶性循环且持续放大伤害",
+      "循环仅为路径依赖/表面重复无再生",
+      "循环锁定有害结构且不可退出",
+      "跨周期净收益为负"
+    ],
+    "factual_pending": [
+      "'真正再生'与'表面重复'的判别指标待验证",
+      "恶性循环的早期信号与干预窗口待案例校准",
+      "循环周期与承载力的匹配度量待实证"
+    ],
+    "cross_protocol_exception": null,
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-042"
+  },
+  {
+    "protocol_id": "E4",
+    "dimension": "evolution",
+    "name": "收敛演化协议 (Convergent-Evolution Protocol)",
+    "original_definition": "状态向某个均衡点、目标或吸引子收敛。",
+    "revised_definition": "状态向安全吸引子、合作稳定、风险降低或系统协调的均衡点收敛；须防止强制同质化、单一文化/物种/模型占据全部空间、过早收敛与锁死未来选择。",
+    "normative_result": "CONDITIONAL_ACCEPTANCE",
+    "value_charter": "价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未来）。不可缺少的约束：禁止强制同质化、保留多样性、避免过早收敛、保留未来选择空间。",
+    "primary_risks": [
+      "未防止强制同质化与过早收敛，易锁死未来选择（歧义/适用边界）。",
+      "可退化为单一文化/单一物种/单一模型占据全部空间（滥用风险）。",
+      "与 E3 互补但缺少'收敛 vs 循环'判据（与其他协议重叠）。",
+      "原定义无'过早收敛/多样性保留'的约束（缺少停止条件）。",
+      "未说明正当用途（安全吸引子/合作稳定/风险降低）（歧义）。"
+    ],
+    "hard_constraints": [
+      "禁止强制同质化",
+      "必须保留多样性",
+      "避免过早收敛",
+      "必须保留未来选择空间",
+      "单一文化/物种/模型不得独占全部空间",
+      "收敛目标须经共同体可复核"
+    ],
+    "stop_conditions": [
+      "收敛导致强制同质化",
+      "单一占据全部空间压制多样性",
+      "过早收敛锁死未来选择",
+      "收敛目标损害更大共同体"
+    ],
+    "factual_pending": [
+      "'安全吸引子'的形式化与稳定性判据待验证",
+      "过早收敛的识别指标待跨域校准",
+      "多样性保留的最低阈值待治理与实证"
+    ],
+    "cross_protocol_exception": null,
+    "independent_review_completed": false,
+    "governance_status": "not_submitted",
+    "ratification_ready": false,
+    "formal_promotion": false,
+    "canonical_status_unchanged": true,
+    "source_review_task": "IGNITION-20260709-042"
+  }
+]

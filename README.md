@@ -81,6 +81,10 @@ If you prefer English first: this repo explores cross-domain structural inferenc
 - [失败案例库](./case_failures/README.md)
 - [元协议概览](./docs/meta-protocols/README.md)
 - [12 个元协议](./docs/meta-protocols/12-meta-protocols.md)
+- [生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
+- [12 元协议规范性审核矩阵（外部治理记录）](./docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+- [跨协议红队结果（外部治理记录）](./docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
+- [事实 pending 总表（外部治理记录）](./docs/governance/meta-protocol-reviews/factual-pending-register.md)
 - [64 组合矩阵](./docs/meta-protocols/meta-protocol-64-combination-matrix.md)
 - [22 个书籍验证候选](./docs/meta-protocols/book-validation-22-cases-20260709.md)
 - [元协议迭代说明](./docs/meta-protocols/version-iteration-note-20260709.md)
@@ -92,3 +96,8 @@ If you prefer English first: this repo explores cross-domain structural inferenc
 
 - 详细方法、函数定义、案例故事、反例工作流和历史路线图都保留在各自的专门页面里。
 - 这页尽量只做“前言 + 导航”，避免把读者一开始就带进过多防御性说明。
+
+## 元协议规范性审核（外部治理记录，非 canonical 改动）
+
+- 12 个元协议均依据《生命共同体价值宪章》完成条件接受（CONDITIONAL_ACCEPTANCE）的规范性审核，外部治理记录见 [docs/governance/meta-protocol-reviews/](./docs/governance/meta-protocol-reviews/)。
+- 该记录回答“协议应受到什么价值边界约束”，不等于数学形式化、经验验证、独立人类复核、治理批准或正式协议晋级；canonical 协议状态未修改，V2、V3 保留事实度量 pending。
