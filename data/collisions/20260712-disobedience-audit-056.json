@@ -12,13 +12,10 @@
     "note": "初次审计仅读到 0000 摘要（不含百分比）；用户提供完整验证报告后确认 f1=15%/3%、同构度70/65/68%、A层复用率100%、617→620/804→806、扩展注释归零 等均存在。初次 UNREPRODUCIBLE 误判作废。"
   },
   "authoritative_counts": {
-    "function_table_files": 622,
-    "function_D_unique": 548,
-    "function_max_D": "D602",
-    "case_table_files": 807,
-    "case_C_unique": 806,
-    "case_max_C": "C-0811",
-    "head": "5d2f56b9e"
+    "report_baseline_2026-07-09": {"function_table_INDEX": 617, "case_table_INDEX": 804},
+    "pre_056_main_5d2f56b9e": {"function_table_files": 622, "function_D_unique": 548, "function_max_D": "D602", "case_table_files": 807, "case_C_unique": 806, "case_max_C": "C-0811"},
+    "post_056_branch": {"function_table_files": 624, "function_D_unique": 550, "function_max_D": "D604", "case_table_files": 807, "case_C_unique": 806, "case_max_C": "C-0811"},
+    "head": "1885c73"
   },
   "candidates": [
     {"key": "M3", "fn": "D600", "primary_classification": "NEW_FUNCTION", "status": "KEEP", "anchors": ["A2", "A3", "A4"], "nearest_neighbor_diff": "vs D595: 支持退化 vs 待遇绑定"},
