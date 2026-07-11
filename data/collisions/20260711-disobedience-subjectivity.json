@@ -1,0 +1,222 @@
+{
+  "task": "IGNITION-20260709-047",
+  "closeout_task": "IGNITION-20260709-049",
+  "material": "57｜李丹阳 × 脱不花：不听话的人（Get 笔记整理稿，之元，2026-07-11）",
+  "material_size_bytes": 137161,
+  "material_lines": 713,
+  "hash_convention": {
+    "authoritative_material_text_sha256": "ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497",
+    "authoritative_note": "实际参与全文读取与两张表碰撞的 Markdown 整理稿；为权威文本 hash",
+    "transport_pdf_sha256": "218ec306ce1c8e6a8a437cb3d929ac788dd6d771e683489d4309a0c8f011f208",
+    "transport_note": "PDF 传输／渲染载体，同一材料的展示用载体，非逐字节分析文本；已降为 transport hash"
+  },
+  "collision_branch": "collision/disobedience-subjectivity-20260711",
+  "base_commit": "19fdec647b2d4d28e36dc905e3242ce8591bbd4e",
+  "pr": {
+    "repo": "Arvin-liu/when-systems-catch-fire",
+    "number": 11,
+    "state_at_closeout": "merged_by_049",
+    "merge_method": "merge_commit"
+  },
+  "authoritative_counts": {
+    "functions_before": 545,
+    "functions_added": 3,
+    "functions_removed": 0,
+    "functions_after": 548,
+    "cases_before": 804,
+    "cases_added": 2,
+    "cases_removed": 0,
+    "cases_after": 806,
+    "note": "按唯一 D-id / C-id 计；047 回执 622/807 为含 MF/A-T 条目的文件总数，口径不同"
+  },
+  "new_functions": [
+    {
+      "id": "D600",
+      "title": "资源托举退化为路径控制",
+      "mechanism": "M3",
+      "anchors": [
+        "A2",
+        "A3",
+        "A4"
+      ],
+      "assertion": "材料内成立",
+      "pending": "E2",
+      "iso_distinct_from": [
+        "D595"
+      ]
+    },
+    {
+      "id": "D601",
+      "title": "角色覆盖主体身份",
+      "mechanism": "M4",
+      "anchors": [
+        "A5",
+        "A8",
+        "A15"
+      ],
+      "assertion": "材料内成立",
+      "pending": "E5",
+      "iso_distinct_from": [
+        "D245"
+      ]
+    },
+    {
+      "id": "D602",
+      "title": "价值创造权与决策权错配与回收",
+      "mechanism": "M5",
+      "anchors": [
+        "A7",
+        "A8",
+        "A9"
+      ],
+      "assertion": "材料内成立",
+      "pending": "E6",
+      "iso_distinct_from": [
+        "T40"
+      ]
+    }
+  ],
+  "new_cases": [
+    {
+      "id": "C-0810",
+      "title": "价值创造权—决策权错配与回收",
+      "linked_functions": [
+        "D602",
+        "T40"
+      ],
+      "anchors": [
+        "A7",
+        "A8",
+        "A9"
+      ]
+    },
+    {
+      "id": "C-0811",
+      "title": "角色覆盖主体到身份提问",
+      "linked_functions": [
+        "D601",
+        "D600"
+      ],
+      "anchors": [
+        "A5",
+        "A8",
+        "A10",
+        "A15"
+      ]
+    }
+  ],
+  "boundary_extensions_no_new_id": [
+    {
+      "target": "D595",
+      "mechanism": "M1",
+      "kind": "isomorphic_extension",
+      "protocol_hit": "V1"
+    },
+    {
+      "target": "D583",
+      "mechanism": "M6",
+      "kind": "reverse_constraint_edge",
+      "note": "高执行力双刃：单一评价绑定下世界模型窄化"
+    }
+  ],
+  "covered_no_new_id": [
+    {
+      "target": "D598+D597",
+      "mechanism": "M2",
+      "kind": "existing_covered",
+      "note": "家庭/女性轴补强证据"
+    }
+  ],
+  "deferred_candidates": [
+    {
+      "mechanism": "M7",
+      "title": "计划过期识别与主动刹车",
+      "reason": "真新原语，受≤5约束进候选"
+    },
+    {
+      "mechanism": "M8",
+      "title": "努力—结果—自我价值解耦",
+      "reason": "M2 补充扩展候选"
+    },
+    {
+      "mechanism": "M9",
+      "title": "模糊需求显性化协作排序",
+      "reason": "协作协议实例化候选"
+    }
+  ],
+  "pending_external_evidence": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6"
+  ],
+  "value_charter_review": "conditional_pass",
+  "governance_unchanged": {
+    "canonical": true,
+    "life_community_value_charter": true,
+    "meta_protocol_records": true,
+    "schema": true,
+    "validator": true,
+    "gate": true
+  },
+  "pre_existing_repository_debt": {
+    "id": "D583-abs-path",
+    "detail": "统一函数总表/0593-D583-认知肌肉锻炼.md 含一条本机绝对路径（指向本机 Get 笔记本地缓存目录），该路径存在于 origin/main 历史文件，非 047 引入；本 PR 不展开写出该路径",
+    "action": "登记为历史债务，不在本 PR 清理，未修改治理层"
+  },
+  "published_evidence_files": {
+    "dir": "outputs/collisions/20260711-disobedience-subjectivity/",
+    "files": [
+      {
+        "name": "README.md",
+        "sha256": "f814f151acd02edd9d45d37ec7ddab61a742fd047d301d6cbc2c820a489b10f0",
+        "kind": "newly_authored_049"
+      },
+      {
+        "name": "source-layer-map.md",
+        "sha256": "ec6a5e7a1b17d899256c157c8cb24a6183474cebba1dfda255c017ad8552017e",
+        "kind": "original_verbatim_047"
+      },
+      {
+        "name": "mechanism-extraction.md",
+        "sha256": "c24df41ec8614a2073c1cc6e373054a2cc2adfa3fd18a46a223eda0df5ce4cd4",
+        "kind": "original_verbatim_047"
+      },
+      {
+        "name": "psi0-decision-matrix.md",
+        "sha256": "57f1e7244dfa742af8cde3ace2ff69423147213cac4555e4a56fe48717d838be",
+        "kind": "original_verbatim_047"
+      },
+      {
+        "name": "two-tables-full-collision-report.md",
+        "sha256": "7390f606b1af6e781b4210a771e32b4bbb6e7f9f0339cc6c780c71dcbc7956bb",
+        "kind": "original_verbatim_047"
+      },
+      {
+        "name": "candidate-decision-summary.md",
+        "sha256": "b2cfd4009e13f5896d99d586da212bc79963a4c4a32a469d065c04660219f7d2",
+        "kind": "original_verbatim_047"
+      },
+      {
+        "name": "12-meta-protocol-projection.md",
+        "sha256": "30b0dd2cd6106cb1f03a913e7d0228d8b125827719e317341ff0c249ed0b83ae",
+        "kind": "original_verbatim_047"
+      },
+      {
+        "name": "life-community-value-audit.md",
+        "sha256": "100f3703fbd422fdfaf9f817a7b63a525a37865ff1a11e8f359bfb02edac24e7",
+        "kind": "original_verbatim_047"
+      },
+      {
+        "name": "validation-report.md",
+        "sha256": "abd3406f8ae02ce2ea9058137afe1fef4ba6fbea496cda1d16d7bbd76e7276c6",
+        "kind": "newly_authored_049"
+      }
+    ]
+  },
+  "reconstructed_after_047": false,
+  "no_original_text_submitted": true,
+  "force_push": false
+}
