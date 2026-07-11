@@ -4,11 +4,12 @@
   "material": "57｜李丹阳 × 脱不花：不听话的人",
   "material_sha256": "ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497",
   "external_report": {
-    "title": "脱不花 × 李丹阳长谈：点火碰撞全部增量记录（D600—D602 / C-0810—C-0811）",
-    "note_id": "1915319279935456112",
-    "sha256": "585ee797cf92b93f19b5747fbc6f90c21df93ecf490ff24ee647f9d7f2fd6add",
-    "access": "read_only_getnote_0000",
-    "contains_command_attributed_numbers": false
+    "title": "脱不花 × 李丹阳长谈碰撞验证报告（完整版，2026-07-11）",
+    "material_sha256": "ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497",
+    "summary_note_0000_id": "1915319279935456112",
+    "summary_sha256": "585ee797cf92b93f19b5747fbc6f90c21df93ecf490ff24ee647f9d7f2fd6add",
+    "access": "read_only_getnote_0000_then_user_pasted_full_report",
+    "note": "初次审计仅读到 0000 摘要（不含百分比）；用户提供完整验证报告后确认 f1=15%/3%、同构度70/65/68%、A层复用率100%、617→620/804→806、扩展注释归零 等均存在。初次 UNREPRODUCIBLE 误判作废。"
   },
   "authoritative_counts": {
     "function_table_files": 622,
@@ -35,9 +36,9 @@
     {"key": "C-0811", "classification": "KEEP", "fn": "D601", "anchors": ["A5", "A8", "A15"]}
   ],
   "corrections": [
-    "command_attributed_numbers (617->620, f1=15%/3%, isomorph 70/65/68, A-layer reuse 100%) NOT in external report; unreproducible; not used",
-    "M7/M8/M9 were paused due to <=5 quota; quota abolished by this task; M7/M9 promoted, M8 held pending",
-    "counting口径 split: file_total vs D_unique vs C_unique; not mixed"
+    "first_pass_read_only_0000_summary (note 1915319279935456112) missed numbers; user_pasted_full_report confirms f1=15%/3%, isomorph 70/65/68, A-layer reuse 100%, 617->620/804->806, ext-annot-zero ALL PRESENT -> first_pass UNREPRODUCIBLE retracted",
+    "counts_baseline_vs_current: report uses 2026-07-09 baseline (617/804); 056 recomputes current origin/main 5d2f56b9e (fn files 622 / D-unique 548 / max D602; case files 807 / C-unique 806 / max C-0811); not mixed",
+    "M7/M8/M9 were paused under <=5 quota in report; quota abolished by this task; M7/M9 promoted to D603/D604, M8 held pending"
   ],
   "summary": {
     "new_functions": 5,
