@@ -3,6 +3,7 @@ Ignition is a cross-domain structural inference and theory-generation framework.
 Current version: 2026-07-09 meta-protocol generation layer.
 Ψ₀ is the meta-judgment and convergence framework (C × M × I_iso × L_meta × G_δ × P_meta).
 12 meta-protocols are the expanded P_meta theory-generation layer (V1–V4 value, S1–S4 structure, E1–E4 evolution).
+The 12 meta-protocol normative reviews are external governance records grounded in the Life Community Value Charter. They do not modify canonical protocol status or replace factual validation.
 64 protocol combinations (V×S×E) are a theoretical generation space, not empirical exhaustion.
 Unified Function Table and Unified Case Table are reviewed asset stores (617 functions, 804 cases as of 2026-07-09).
 Book validation cases (22) are candidate materials unless assigned formal C IDs.

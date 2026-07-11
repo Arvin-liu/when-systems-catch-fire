@@ -17,6 +17,10 @@
 - [docs/meta-protocols/12-meta-protocols.md](./docs/meta-protocols/12-meta-protocols.md)
 - [docs/meta-protocols/meta-protocol-64-combination-matrix.md](./docs/meta-protocols/meta-protocol-64-combination-matrix.md)
 - [docs/meta-protocols/book-validation-22-cases-20260709.md](./docs/meta-protocols/book-validation-22-cases-20260709.md)
+- [生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
+- [12 元协议规范性审核（外部治理记录）](./docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+- [跨协议红队结果（外部治理记录）](./docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
+- [事实 pending 总表（外部治理记录）](./docs/governance/meta-protocol-reviews/factual-pending-register.md)
 
 ## 两张表（已审核资产库）
 - [统一函数总表/INDEX.md](../统一函数总表/INDEX.md)
