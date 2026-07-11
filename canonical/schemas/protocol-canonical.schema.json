@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/canonical/schemas/protocol-canonical.schema.json",
+  "title": "Protocol Canonical Schema (022 frozen model)",
+  "type": "object",
+  "required": [
+    "protocol_id", "title_zh", "title_en", "source_status",
+    "definition_original", "normative_type", "constrained_object",
+    "trigger_conditions", "constraint_result", "scope", "exclusions",
+    "invalid_conditions", "neighbor_protocols", "conflict_resolution",
+    "psi0_mapping", "p_meta_relation", "function_layer_relation",
+    "case_layer_relation", "positive_evidence", "boundary_evidence",
+    "source_references", "assertion_level", "document_path", "index_entry",
+    "machine_record_path", "review", "gate_results", "provenance",
+    "version_metadata"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "protocol_id": {"type": "string", "pattern": "^(V|S|E)[1-4]$"},
+    "title_zh": {"type": "string", "minLength": 1},
+    "title_en": {"type": "string", "minLength": 1},
+    "stable_slug": {"type": "string"},
+    "source_status": {"type": "string", "enum": ["candidate_formalized", "machine_eligible", "formal_protocol", "pending", "rejected"]},
+    "structure_status": {"type": "string", "enum": ["unstructured", "partially_structured", "schema_valid", "schema_invalid"]},
+    "machine_validation_status": {"type": "string", "enum": ["not_run", "pass", "fail", "pending", "error"]},
+    "semantic_review_status": {"type": "string", "enum": ["not_reviewed", "in_review", "approved", "rejected", "needs_revision"]},
+    "governance_status": {"type": "string", "enum": ["not_submitted", "submitted", "approved", "rejected", "withdrawn"]},
+    "definition_original": {"type": "string", "minLength": 1},
+    "definition_normative": {"type": "string"},
+    "normative_type": {"type": "string", "enum": ["hard", "soft", "governance", "mixed"]},
+    "constrained_object": {},
+    "trigger_conditions": {"type": "array", "items": {"type": "string"}},
+    "constraint_result": {"type": "string", "minLength": 1},
+    "scope": {"type": "string", "minLength": 1},
+    "applicable_system_levels": {"type": "array"},
+    "exclusions": {"type": "array", "items": {"type": "string"}},
+    "invalid_conditions": {"type": "array", "items": {"type": "string"}},
+    "termination_conditions": {"type": "array"},
+    "neighbor_protocols": {"type": "array", "items": {"type": "string"}},
+    "boundary_with_neighbors": {"type": "string"},
+    "conflict_resolution": {"type": "string", "minLength": 1},
+    "priority_rule": {"type": "string"},
+    "circular_definition_check": {"type": "string"},
+    "psi0_mapping": {
+      "type": "object",
+      "required": ["primary", "secondary", "relation"],
+      "additionalProperties": true,
+      "properties": {
+        "primary": {"type": "array", "items": {"type": "string"}},
+        "secondary": {"type": "array", "items": {"type": "string"}},
+        "relation": {"type": "string", "minLength": 1}
+      }
+    },
+    "p_meta_relation": {"type": "string", "minLength": 1},
+    "function_layer_relation": {"type": "string", "enum": ["constrain", "permit", "prohibit", "generate", "select", "prioritize", "terminate", "validate", "reference", "other"]},
+    "case_layer_relation": {"type": "string"},
+    "positive_evidence": {"type": "array"},
+    "boundary_evidence": {"type": "array"},
+    "source_references": {"type": "array", "items": {"type": "string"}},
+    "assertion_level": {"type": "string", "enum": ["L0", "L1", "L2", "L3", "L4", "L5", "pending"]},
+    "document_path": {"type": "string"},
+    "index_entry": {"type": "string"},
+    "machine_record_path": {"type": "string"},
+    "gate_results": {"type": "array"},
+    "review": {
+      "type": "object",
+      "required": ["reviewer", "review_date", "review_decision", "review_notes"],
+      "additionalProperties": true,
+      "properties": {
+        "reviewer": {},
+        "review_date": {},
+        "review_decision": {"type": "string"},
+        "review_notes": {}
+      }
+    },
+    "blocking_issues": {"type": "array", "items": {"type": "string"}},
+    "soft_warnings": {"type": "array"},
+    "provenance": {"type": "object"},
+    "version_metadata": {"type": "object"}
+  }
+}

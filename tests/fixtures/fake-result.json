@@ -1,0 +1,429 @@
+{
+  "generated_at": "2026-07-10T20:50:00+08:00",
+  "count": 1,
+  "results": [
+    {
+      "protocol_id": "V2",
+      "title_zh": null,
+      "title_en": null,
+      "source_status": "candidate_formalized",
+      "structure_status": "partially_structured",
+      "machine_validation_status": "fail",
+      "semantic_review_status": "rejected",
+      "governance_status": "not_submitted",
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "technical_misjudged_gates": [],
+      "real_blocking_gates": [
+        "G02",
+        "G03",
+        "G05",
+        "G06",
+        "G07",
+        "G08",
+        "G09",
+        "G10",
+        "G11",
+        "G13",
+        "G16",
+        "G18",
+        "G20",
+        "G21",
+        "G22",
+        "G23",
+        "G24",
+        "G30"
+      ],
+      "gate_results": [
+        {
+          "gate_id": "G01",
+          "result": "PASS",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].id",
+          "reason": "protocol id format/unique",
+          "repair_action": "fix id"
+        },
+        {
+          "gate_id": "G02",
+          "result": "FAIL",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].name_zh",
+          "reason": "中文名存在",
+          "repair_action": "补中文名"
+        },
+        {
+          "gate_id": "G03",
+          "result": "FAIL",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].name_en",
+          "reason": "英文名存在",
+          "repair_action": "补英文名"
+        },
+        {
+          "gate_id": "G04",
+          "result": "PASS",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].status",
+          "reason": "状态在枚举内",
+          "repair_action": "规范化状态"
+        },
+        {
+          "gate_id": "G05",
+          "result": "FAIL",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].definition",
+          "reason": "定义含规范性措辞",
+          "repair_action": "补规范性定义"
+        },
+        {
+          "gate_id": "G06",
+          "result": "FAIL",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].constrained_object",
+          "reason": "约束对象明确（可由 dimension 推导候选）",
+          "repair_action": "明确约束对象"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "触发条件已显式列出",
+          "repair_action": "补触发条件"
+        },
+        {
+          "gate_id": "G08",
+          "result": "FAIL",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].constraint_result",
+          "reason": "约束结果明确（role_in_P_meta 可候选）",
+          "repair_action": "补约束结果"
+        },
+        {
+          "gate_id": "G09",
+          "result": "FAIL",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].scope",
+          "reason": "适用范围明确（dimension 可候选）",
+          "repair_action": "补范围"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "排除/失效条件已列",
+          "repair_action": "补失效条件"
+        },
+        {
+          "gate_id": "G11",
+          "result": "FAIL",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].neighbor_protocols",
+          "reason": "已列邻近协议边界",
+          "repair_action": "补邻近边界"
+        },
+        {
+          "gate_id": "G12",
+          "result": "PASS",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].normative_type",
+          "reason": "定义为规范/约束",
+          "repair_action": "重写为规范"
+        },
+        {
+          "gate_id": "G13",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "冲突/优先级机制已说明",
+          "repair_action": "补冲突规则"
+        },
+        {
+          "gate_id": "G14",
+          "result": "PASS",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].relation_to_Psi0",
+          "reason": "Ψ₀ 锚定存在",
+          "repair_action": "补外部锚"
+        },
+        {
+          "gate_id": "G15",
+          "result": "PASS",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].psi0_mapping",
+          "reason": "Ψ₀ 映射明确",
+          "repair_action": "补映射"
+        },
+        {
+          "gate_id": "G16",
+          "result": "FAIL",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].p_meta_relation",
+          "reason": "P_meta 关系明确",
+          "repair_action": "补P_meta关系"
+        },
+        {
+          "gate_id": "G17",
+          "result": "PASS",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "文档明确保留Ψ₀不被改写",
+          "repair_action": "无"
+        },
+        {
+          "gate_id": "G18",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].function_layer_relation",
+          "reason": "函数层关系在枚举内",
+          "repair_action": "补关系"
+        },
+        {
+          "gate_id": "G19",
+          "result": "PASS",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].status",
+          "reason": "协议不计入函数总数",
+          "repair_action": "无"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].function_layer_relation",
+          "reason": "需真实函数表对照证据；仅有 function_layer_relation 等字段不足以自动判为 PASS",
+          "repair_action": "补函数表对照证据并人工确认"
+        },
+        {
+          "gate_id": "G21",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "正向证据存在",
+          "repair_action": "补证据"
+        },
+        {
+          "gate_id": "G22",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "边界/反例证据存在",
+          "repair_action": "补反例"
+        },
+        {
+          "gate_id": "G23",
+          "result": "PENDING",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "案例关系类型已标注",
+          "repair_action": "标注类型"
+        },
+        {
+          "gate_id": "G24",
+          "result": "FAIL",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].source_files",
+          "reason": "来源回指完整",
+          "repair_action": "补来源"
+        },
+        {
+          "gate_id": "G25",
+          "result": "PASS",
+          "mode": "automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "证据路径可指向",
+          "repair_action": "无"
+        },
+        {
+          "gate_id": "G26",
+          "result": "PASS",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].assertion_level",
+          "reason": "断言等级明确",
+          "repair_action": "无"
+        },
+        {
+          "gate_id": "G27",
+          "result": "PASS",
+          "mode": "automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "独立条目存在",
+          "repair_action": "无"
+        },
+        {
+          "gate_id": "G28",
+          "result": "PASS",
+          "mode": "automatic",
+          "evidence_path": "docs/meta-protocols/README.md",
+          "locator": "index",
+          "reason": "索引可检索",
+          "repair_action": "无"
+        },
+        {
+          "gate_id": "G29",
+          "result": "PASS",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1]",
+          "reason": "机器记录存在",
+          "repair_action": "无"
+        },
+        {
+          "gate_id": "G30",
+          "result": "PENDING",
+          "mode": "automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1]",
+          "reason": "字段自洽",
+          "repair_action": "修漂移"
+        },
+        {
+          "gate_id": "G31",
+          "result": "PASS",
+          "mode": "automatic",
+          "evidence_path": "canonical/schemas/protocol-canonical.schema.json",
+          "locator": "$",
+          "reason": "草案通过canonical schema",
+          "repair_action": "修schema"
+        },
+        {
+          "gate_id": "G32",
+          "result": "PASS",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json",
+          "locator": "$.protocols[1].status",
+          "reason": "无阻塞冲突",
+          "repair_action": "解冲突"
+        },
+        {
+          "gate_id": "G33",
+          "result": "FAIL",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "reviewer 为伪造（Codex/GPT/Agent 等），违反审核规则",
+          "repair_action": "更换人工审核人"
+        },
+        {
+          "gate_id": "G34",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不做治理批准",
+          "repair_action": "需项目治理"
+        },
+        {
+          "gate_id": "G35",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不改正式状态",
+          "repair_action": "需独立变更集"
+        },
+        {
+          "gate_id": "S01",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "S01 质量项（本任务不强制）",
+          "repair_action": "改进文档"
+        },
+        {
+          "gate_id": "S02",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "S02 质量项（本任务不强制）",
+          "repair_action": "改进文档"
+        },
+        {
+          "gate_id": "S03",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "S03 质量项（本任务不强制）",
+          "repair_action": "改进文档"
+        },
+        {
+          "gate_id": "S04",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "S04 质量项（本任务不强制）",
+          "repair_action": "改进文档"
+        },
+        {
+          "gate_id": "S05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "S05 质量项（本任务不强制）",
+          "repair_action": "改进文档"
+        },
+        {
+          "gate_id": "S06",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "S06 质量项（本任务不强制）",
+          "repair_action": "改进文档"
+        },
+        {
+          "gate_id": "S07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "S07 质量项（本任务不强制）",
+          "repair_action": "改进文档"
+        },
+        {
+          "gate_id": "S08",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:V2",
+          "reason": "S08 质量项（本任务不强制）",
+          "repair_action": "改进文档"
+        }
+      ],
+      "provenance": {}
+    }
+  ]
+}

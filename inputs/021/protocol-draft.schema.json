@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/protocol-draft.schema.json",
+  "title": "Protocol Draft Schema (021 superset of 020 promotion schema + draft fields)",
+  "type": "object",
+  "required": [
+    "protocol_id", "title_zh", "title_en", "status", "definition",
+    "normative_type", "constrained_object", "trigger_conditions", "constraint_result",
+    "scope", "exclusions", "invalid_conditions", "neighbor_protocols",
+    "conflict_resolution", "psi0_mapping", "p_meta_relation", "function_layer_relation",
+    "case_layer_relation", "positive_evidence", "boundary_evidence", "source_references",
+    "assertion_level", "document_path", "index_entry", "machine_record_path",
+    "review", "gate_results", "machine_eligible", "blocking_issues", "soft_warnings",
+    "current_status", "draft_status", "definition_original", "definition_normative_draft",
+    "stable_slug", "draft_change_notes", "missing_evidence"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "protocol_id": {"type": "string", "pattern": "^(V|S|E)[1-4]$"},
+    "title_zh": {"type": "string", "minLength": 1},
+    "title_en": {"type": "string", "minLength": 1},
+    "status": {"type": "string", "enum": ["candidate_formalized", "machine_eligible", "formal_protocol", "pending", "rejected"]},
+    "definition": {"type": "string", "minLength": 1},
+    "normative_type": {"type": "string", "enum": ["hard", "soft", "governance", "mixed"]},
+    "constrained_object": {},
+    "trigger_conditions": {"type": "array", "items": {"type": "string"}},
+    "constraint_result": {"type": "string", "minLength": 1},
+    "scope": {"type": "string", "minLength": 1},
+    "exclusions": {"type": "array", "items": {"type": "string"}},
+    "invalid_conditions": {"type": "array", "items": {"type": "string"}},
+    "neighbor_protocols": {"type": "array", "items": {"type": "string"}},
+    "conflict_resolution": {"type": "string", "minLength": 1},
+    "psi0_mapping": {
+      "type": "object",
+      "required": ["primary", "secondary", "relation"],
+      "additionalProperties": true,
+      "properties": {
+        "primary": {"type": "array", "items": {"type": "string"}},
+        "secondary": {"type": "array", "items": {"type": "string"}},
+        "relation": {"type": "string", "minLength": 1}
+      }
+    },
+    "p_meta_relation": {"type": "string", "minLength": 1},
+    "function_layer_relation": {"type": "string", "enum": ["constrain", "permit", "prohibit", "generate", "select", "prioritize", "terminate", "validate", "reference", "other"]},
+    "case_layer_relation": {"type": "string", "minLength": 1},
+    "positive_evidence": {"type": "array"},
+    "boundary_evidence": {"type": "array"},
+    "source_references": {"type": "array", "items": {"type": "string"}},
+    "assertion_level": {"type": "string", "enum": ["L0", "L1", "L2", "L3", "L4", "L5", "pending"]},
+    "document_path": {"type": "string"},
+    "index_entry": {"type": "string"},
+    "machine_record_path": {"type": "string"},
+    "review": {
+      "type": "object",
+      "required": ["reviewer", "review_date", "review_decision", "review_notes"],
+      "additionalProperties": true,
+      "properties": {
+        "reviewer": {},
+        "review_date": {},
+        "review_decision": {"type": "string"},
+        "review_notes": {}
+      }
+    },
+    "gate_results": {"type": "array"},
+    "machine_eligible": {"type": "boolean"},
+    "blocking_issues": {"type": "array", "items": {"type": "string"}},
+    "soft_warnings": {"type": "array"},
+    "current_status": {"type": "string"},
+    "draft_status": {"type": "string"},
+    "definition_original": {"type": "string"},
+    "definition_normative_draft": {"type": "string"},
+    "stable_slug": {"type": "string"},
+    "draft_change_notes": {"type": "string"},
+    "missing_evidence": {"type": "array"}
+  }
+}

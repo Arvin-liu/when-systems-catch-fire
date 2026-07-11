@@ -1,0 +1,3180 @@
+{
+  "protocols": [
+    {
+      "protocol_id": "V1",
+      "title_zh": "延续性协议",
+      "title_en": "Continuity Protocol",
+      "source_status": "candidate_formalized",
+      "definition_original": "选择使系统延续时间最大（或延续概率最高）的行动。",
+      "constraint_result": "V1 是 P_meta 向下展开后的基础元协议之一，构成理论生成空间的一个坐标轴（value 维度）。",
+      "scope": "value",
+      "neighbor_protocols": [
+        "V1-S1-E1: **现实案例：** 传统家族企业——封闭血缘边界，线性代际传承，追求家族延续",
+        "V1-S1-E2: **现实案例：** 北宋开封城——封闭边界，人口虹吸、财政预算形成自我强化链条，最终非线性崩溃[[831ea016]]",
+        "V1-S1-E3: **现实案例：** 封建王朝周期律——封闭边界，朝代更替循环，追求皇权延续"
+      ],
+      "circular_definition_check": "V1 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [],
+        "relation": "projection"
+      },
+      "p_meta_relation": "V1 是 P_meta 向下展开后的基础元协议之一，构成理论生成空间的一个坐标轴（value 维度）。",
+      "positive_evidence": [
+        "V1-S1-E1: **现实案例：** 传统家族企业——封闭血缘边界，线性代际传承，追求家族延续",
+        "V1-S1-E2: **现实案例：** 北宋开封城——封闭边界，人口虹吸、财政预算形成自我强化链条，最终非线性崩溃[[831ea016]]",
+        "V1-S1-E3: **现实案例：** 封建王朝周期律——封闭边界，朝代更替循环，追求皇权延续"
+      ],
+      "boundary_evidence": [
+        "仅描述理论生成空间的一个维度，不单独预测系统命运。",
+        "与另两维度组合后才形成可检验理论形态。"
+      ],
+      "source_references": [
+        "2026-07-09 1902/延续性协议64种可能性（V/S/E 各一篇）",
+        "2026-07-09 1902/元协议64种可能性全矩阵案例映射",
+        "2026-07-09 1902/价值/结构/演化维度64种可能性案例映射"
+      ],
+      "assertion_level": "L2",
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-10T21:10:00+08:00",
+        "source_record_keys": [
+          "assertion_level",
+          "basic_meaning",
+          "boundaries",
+          "definition",
+          "dimension",
+          "examples",
+          "formal_expression",
+          "id",
+          "name_en",
+          "name_zh",
+          "pending_human_review",
+          "relation_to_Psi0",
+          "risks",
+          "role_in_P_meta",
+          "source_files",
+          "status"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy name_zh",
+          "title_en: from legacy name_en",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition",
+          "constraint_result: from legacy role_in_P_meta",
+          "scope: from legacy dimension",
+          "neighbor_protocols: from legacy examples",
+          "circular_definition_check: from legacy relation_to_Psi0",
+          "psi0_mapping: from legacy relation_to_Psi0",
+          "p_meta_relation: from legacy role_in_P_meta",
+          "positive_evidence: from legacy examples",
+          "boundary_evidence: from legacy boundaries",
+          "source_references: from legacy source_files"
+        ],
+        "is_draft_derived": false
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-10T21:10:00+08:00",
+        "source_label": "ignition_source",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy name_zh",
+          "title_en: from legacy name_en",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition",
+          "constraint_result: from legacy role_in_P_meta",
+          "scope: from legacy dimension",
+          "neighbor_protocols: from legacy examples",
+          "circular_definition_check: from legacy relation_to_Psi0",
+          "psi0_mapping: from legacy relation_to_Psi0",
+          "p_meta_relation: from legacy role_in_P_meta",
+          "positive_evidence: from legacy examples",
+          "boundary_evidence: from legacy boundaries",
+          "source_references: from legacy source_files"
+        ]
+      },
+      "normative_type": "mixed",
+      "trigger_conditions": [],
+      "exclusions": [],
+      "invalid_conditions": [],
+      "conflict_resolution": "pending",
+      "function_layer_relation": "reference",
+      "case_layer_relation": "pending",
+      "document_path": "pending",
+      "index_entry": "pending",
+      "machine_record_path": "pending",
+      "review": {
+        "reviewer": null,
+        "review_date": null,
+        "review_decision": "pending",
+        "review_notes": null
+      },
+      "gate_results": [],
+      "structure_status": "partially_structured",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "constrained_object": "continuity_action"
+    },
+    {
+      "protocol_id": "V2",
+      "title_zh": "效率性协议",
+      "title_en": "Efficiency Protocol",
+      "stable_slug": "efficiency-protocol",
+      "source_status": "candidate_formalized",
+      "structure_status": "schema_valid",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "definition_original": "选择产出/投入效率最大（单位资源产出最高）的行动。",
+      "definition_normative": "选择产出/投入效率最大（单位资源产出最高）的行动。",
+      "normative_type": "hard",
+      "constrained_object": "候选行动集与资源配置方案",
+      "trigger_conditions": [
+        "系统需要在资源约束下比较候选行动效率"
+      ],
+      "constraint_result": "V2 是 P_meta 向下展开后的基础元协议之一，构成理论生成空间的一个坐标轴（value 维度）。",
+      "scope": "value",
+      "applicable_system_levels": [],
+      "exclusions": [
+        "不将效率单独解释为价值判断完成结论"
+      ],
+      "invalid_conditions": [
+        "缺少可比的投入产出信息时不应强行排序"
+      ],
+      "termination_conditions": [
+        "当效率比较已不足以区分候选方案时由上层治理继续判定"
+      ],
+      "neighbor_protocols": [
+        "V2-S1-E1: **现实案例：** 工厂流水线——封闭边界，线性生产，追求效率最大化",
+        "V2-S1-E2: **现实案例：** 股票交易算法——封闭规则边界，非线性市场，追求交易效率",
+        "V2-S1-E3: **现实案例：** JIT生产——封闭边界，生产循环，追求零库存效率"
+      ],
+      "boundary_with_neighbors": "与V1/V3/V4同属价值轴，区别在于以效率而非延续、创新或长期稳定作为优先准则。",
+      "conflict_resolution": "当短期效率与长期稳定冲突时，记录冲突而不擅自晋级。",
+      "priority_rule": "优先保留可审计的效率依据，再进入后续治理。",
+      "circular_definition_check": "V2 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [],
+        "relation": "projection"
+      },
+      "p_meta_relation": "效率性协议是 P_meta 向下展开后的基础元协议之一，构成理论生成空间的一个坐标轴（value 维度）。",
+      "function_layer_relation": "prioritize",
+      "case_layer_relation": "illustrate",
+      "positive_evidence": [
+        "V2-S1-E1: **现实案例：** 工厂流水线——封闭边界，线性生产，追求效率最大化",
+        "V2-S1-E2: **现实案例：** 股票交易算法——封闭规则边界，非线性市场，追求交易效率",
+        "V2-S1-E3: **现实案例：** JIT生产——封闭边界，生产循环，追求零库存效率"
+      ],
+      "boundary_evidence": [
+        "仅描述理论生成空间的一个维度，不单独预测系统命运。"
+      ],
+      "source_references": [
+        "2026-07-09 1902/效率性协议64种可能性（V/S/E 各一篇）"
+      ],
+      "assertion_level": "L2",
+      "document_path": "docs/meta-protocols/12-meta-protocols.md",
+      "index_entry": "meta-protocols:V2",
+      "machine_record_path": "data/meta-protocols/protocols-canonical.json",
+      "gate_results": [
+        {
+          "gate_id": "G05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V2",
+          "reason": "candidate-formalized; structural migration only",
+          "repair_action": "retain pending"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V2",
+          "reason": "trigger conditions are provisional",
+          "repair_action": "retain pending"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V2",
+          "reason": "exclusions / invalid conditions remain pending",
+          "repair_action": "retain pending"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V2",
+          "reason": "function-layer relation remains provisional",
+          "repair_action": "retain pending"
+        }
+      ],
+      "review": null,
+      "blocking_issues": [],
+      "soft_warnings": [],
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "unresolved_questions": [
+        "效率指标在不同场景中的统一口径仍未完成。",
+        "与延续性和可持续性的冲突规则尚需后续治理确认。"
+      ],
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-11T03:00:00+08:00",
+        "source_record_keys": [
+          "assertion_level",
+          "basic_meaning",
+          "boundaries",
+          "definition",
+          "dimension",
+          "examples",
+          "formal_expression",
+          "id",
+          "name_en",
+          "name_zh",
+          "pending_human_review",
+          "relation_to_Psi0",
+          "risks",
+          "role_in_P_meta",
+          "source_files",
+          "status"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy name_zh",
+          "title_en: from legacy name_en",
+          "source_status: preserved as candidate_formalized",
+          "definition_original: from legacy definition",
+          "constraint_result: from legacy role_in_P_meta",
+          "scope: from legacy dimension",
+          "neighbor_protocols: from legacy examples",
+          "circular_definition_check: from legacy relation_to_Psi0",
+          "psi0_mapping: from legacy relation_to_Psi0",
+          "p_meta_relation: from legacy role_in_P_meta",
+          "positive_evidence: from legacy examples",
+          "boundary_evidence: from legacy boundaries",
+          "source_references: from legacy source_files"
+        ],
+        "is_draft_derived": false,
+        "batch": "A",
+        "migration_mode": "structural_only",
+        "unresolved_questions": []
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-11T03:00:00+08:00",
+        "source_label": "ignition_batch_A",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy name_zh",
+          "title_en: from legacy name_en",
+          "source_status: preserved as candidate_formalized",
+          "definition_original: from legacy definition",
+          "constraint_result: from legacy role_in_P_meta",
+          "scope: from legacy dimension",
+          "neighbor_protocols: from legacy examples",
+          "circular_definition_check: from legacy relation_to_Psi0",
+          "psi0_mapping: from legacy relation_to_Psi0",
+          "p_meta_relation: from legacy role_in_P_meta",
+          "positive_evidence: from legacy examples",
+          "boundary_evidence: from legacy boundaries",
+          "source_references: from legacy source_files"
+        ],
+        "batch": "A"
+      }
+    },
+    {
+      "protocol_id": "V3",
+      "title_zh": "创新性协议",
+      "title_en": "Innovation Protocol",
+      "stable_slug": "innovation-protocol",
+      "source_status": "candidate_formalized",
+      "structure_status": "schema_valid",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "definition_original": "选择提高系统新可能性、复杂度或生成能力的行动。",
+      "definition_normative": "选择提高系统新可能性、复杂度或生成能力的行动。",
+      "normative_type": "hard",
+      "constrained_object": "候选行动集、设计空间与生成路径",
+      "trigger_conditions": [
+        "系统需要扩展新的可能性或生成路径"
+      ],
+      "constraint_result": "V3 是 P_meta 向下展开后的基础元协议之一，构成理论生成空间的一个坐标轴（value 维度）。",
+      "scope": "value",
+      "applicable_system_levels": [],
+      "exclusions": [
+        "不将创新自动等同为已验证收益"
+      ],
+      "invalid_conditions": [
+        "无可解释的新可能性增量时不应宣称创新"
+      ],
+      "termination_conditions": [
+        "当创新路径已转入验证阶段时由下游审查接管"
+      ],
+      "neighbor_protocols": [
+        "V3-S1-E1: **现实案例：** 实验室研发——封闭边界，线性试错，追求技术创新",
+        "V3-S1-E2: **现实案例：** 《创新者的窘境》的颠覆性创新——封闭市场边界，非线性技术突变，追求创新突破",
+        "V3-S1-E3: **现实案例：** 迭代设计——封闭边界，设计循环，追求产品创新"
+      ],
+      "boundary_with_neighbors": "与V2/V4同属价值轴，但以新可能性而非效率或稳定性作为优先准则。",
+      "conflict_resolution": "当创新与既有约束冲突时，仅记录冲突与待审，不自动通过。",
+      "priority_rule": "优先保留可追踪的生成依据与来源。",
+      "circular_definition_check": "V3 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [],
+        "relation": "projection"
+      },
+      "p_meta_relation": "创新性协议是 P_meta 向下展开后的基础元协议之一，构成理论生成空间的一个坐标轴（value 维度）。",
+      "function_layer_relation": "generate",
+      "case_layer_relation": "illustrate",
+      "positive_evidence": [
+        "V3-S1-E1: **现实案例：** 实验室研发——封闭边界，线性试错，追求技术创新",
+        "V3-S1-E2: **现实案例：** 《创新者的窘境》的颠覆性创新——封闭市场边界，非线性技术突变，追求创新突破",
+        "V3-S1-E3: **现实案例：** 迭代设计——封闭边界，设计循环，追求产品创新"
+      ],
+      "boundary_evidence": [
+        "仅描述理论生成空间的一个维度，不单独预测系统命运。"
+      ],
+      "source_references": [
+        "2026-07-09 1902/创新性协议64种可能性（V/S/E 各一篇）"
+      ],
+      "assertion_level": "L2",
+      "document_path": "docs/meta-protocols/12-meta-protocols.md",
+      "index_entry": "meta-protocols:V3",
+      "machine_record_path": "data/meta-protocols/protocols-canonical.json",
+      "gate_results": [
+        {
+          "gate_id": "G05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V3",
+          "reason": "candidate-formalized; structural migration only",
+          "repair_action": "retain pending"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V3",
+          "reason": "trigger conditions are provisional",
+          "repair_action": "retain pending"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V3",
+          "reason": "exclusions / invalid conditions remain pending",
+          "repair_action": "retain pending"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V3",
+          "reason": "function-layer relation remains provisional",
+          "repair_action": "retain pending"
+        }
+      ],
+      "review": null,
+      "blocking_issues": [],
+      "soft_warnings": [],
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "unresolved_questions": [
+        "创新的可测量增量与评价口径尚未统一。",
+        "与效率、稳定性之间的优先级仍需治理层确认。"
+      ],
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-11T03:00:00+08:00",
+        "source_record_keys": [
+          "assertion_level",
+          "basic_meaning",
+          "boundaries",
+          "definition",
+          "dimension",
+          "examples",
+          "formal_expression",
+          "id",
+          "name_en",
+          "name_zh",
+          "pending_human_review",
+          "relation_to_Psi0",
+          "risks",
+          "role_in_P_meta",
+          "source_files",
+          "status"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy name_zh",
+          "title_en: from legacy name_en",
+          "source_status: preserved as candidate_formalized",
+          "definition_original: from legacy definition",
+          "constraint_result: from legacy role_in_P_meta",
+          "scope: from legacy dimension",
+          "neighbor_protocols: from legacy examples",
+          "circular_definition_check: from legacy relation_to_Psi0",
+          "psi0_mapping: from legacy relation_to_Psi0",
+          "p_meta_relation: from legacy role_in_P_meta",
+          "positive_evidence: from legacy examples",
+          "boundary_evidence: from legacy boundaries",
+          "source_references: from legacy source_files"
+        ],
+        "is_draft_derived": false,
+        "batch": "A",
+        "migration_mode": "structural_only",
+        "unresolved_questions": []
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-11T03:00:00+08:00",
+        "source_label": "ignition_batch_A",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy name_zh",
+          "title_en: from legacy name_en",
+          "source_status: preserved as candidate_formalized",
+          "definition_original: from legacy definition",
+          "constraint_result: from legacy role_in_P_meta",
+          "scope: from legacy dimension",
+          "neighbor_protocols: from legacy examples",
+          "circular_definition_check: from legacy relation_to_Psi0",
+          "psi0_mapping: from legacy relation_to_Psi0",
+          "p_meta_relation: from legacy role_in_P_meta",
+          "positive_evidence: from legacy examples",
+          "boundary_evidence: from legacy boundaries",
+          "source_references: from legacy source_files"
+        ],
+        "batch": "A"
+      }
+    },
+    {
+      "protocol_id": "V4",
+      "title_zh": "可持续性协议",
+      "title_en": "Sustainability Protocol",
+      "stable_slug": "sustainability-protocol",
+      "source_status": "candidate_formalized",
+      "structure_status": "schema_valid",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "definition_original": "选择长期极限效用或长期稳定性最大的行动。",
+      "definition_normative": "选择长期极限效用或长期稳定性最大的行动。",
+      "normative_type": "hard",
+      "constrained_object": "候选行动集与长期状态演化",
+      "trigger_conditions": [
+        "系统需要在长期稳定与短期收益之间做选择"
+      ],
+      "constraint_result": "V4 是 P_meta 向下展开后的基础元协议之一，构成理论生成空间的一个坐标轴（value 维度）。",
+      "scope": "value",
+      "applicable_system_levels": [],
+      "exclusions": [
+        "不把短期波动误判为长期可持续性结论"
+      ],
+      "invalid_conditions": [
+        "缺少长期视角或稳定性信息时不应提前判定"
+      ],
+      "termination_conditions": [
+        "当长期稳态指标进入更高层治理审查时停止本层判定"
+      ],
+      "neighbor_protocols": [
+        "V4-S1-E1: **现实案例：** 封闭生态系统——封闭边界，线性循环，追求生态可持续",
+        "V4-S1-E2: **现实案例：** 《贫穷的本质》的贫困陷阱——封闭边界，非线性贫困循环，追求脱贫可持续",
+        "V4-S1-E3: **现实案例：** 封闭循环经济——封闭边界，资源循环，追求经济可持续"
+      ],
+      "boundary_with_neighbors": "与V1/V2/V3同属价值轴，但以长期稳定与可持续为优先准则。",
+      "conflict_resolution": "当短期收益与长期稳定冲突时，记录冲突并保留待审状态。",
+      "priority_rule": "优先保留可追踪的长期性证据。",
+      "circular_definition_check": "V4 属于 Ψ₀ 中 P_meta 元协议投影算子展开出的生成层；Ψ₀ 仍负责判定(J⁺/J⁻)、同构识别(I_iso)与收敛审核(L_meta)，不被替代。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [],
+        "relation": "projection"
+      },
+      "p_meta_relation": "可持续性协议是 P_meta 向下展开后的基础元协议之一，构成理论生成空间的一个坐标轴（value 维度）。",
+      "function_layer_relation": "prioritize",
+      "case_layer_relation": "illustrate",
+      "positive_evidence": [
+        "V4-S1-E1: **现实案例：** 封闭生态系统——封闭边界，线性循环，追求生态可持续",
+        "V4-S1-E2: **现实案例：** 《贫穷的本质》的贫困陷阱——封闭边界，非线性贫困循环，追求脱贫可持续",
+        "V4-S1-E3: **现实案例：** 封闭循环经济——封闭边界，资源循环，追求经济可持续"
+      ],
+      "boundary_evidence": [
+        "仅描述理论生成空间的一个维度，不单独预测系统命运。"
+      ],
+      "source_references": [
+        "2026-07-09 1902/可持续性协议64种可能性（V/S/E 各一篇）"
+      ],
+      "assertion_level": "L2",
+      "document_path": "docs/meta-protocols/12-meta-protocols.md",
+      "index_entry": "meta-protocols:V4",
+      "machine_record_path": "data/meta-protocols/protocols-canonical.json",
+      "gate_results": [
+        {
+          "gate_id": "G05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V4",
+          "reason": "candidate-formalized; structural migration only",
+          "repair_action": "retain pending"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V4",
+          "reason": "trigger conditions are provisional",
+          "repair_action": "retain pending"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V4",
+          "reason": "exclusions / invalid conditions remain pending",
+          "repair_action": "retain pending"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "V4",
+          "reason": "function-layer relation remains provisional",
+          "repair_action": "retain pending"
+        }
+      ],
+      "review": null,
+      "blocking_issues": [],
+      "soft_warnings": [],
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "unresolved_questions": [
+        "长期稳定性的量化与时间窗定义仍待统一。",
+        "与效率和创新的优先级分配还需后续治理。"
+      ],
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-11T03:00:00+08:00",
+        "source_record_keys": [
+          "assertion_level",
+          "basic_meaning",
+          "boundaries",
+          "definition",
+          "dimension",
+          "examples",
+          "formal_expression",
+          "id",
+          "name_en",
+          "name_zh",
+          "pending_human_review",
+          "relation_to_Psi0",
+          "risks",
+          "role_in_P_meta",
+          "source_files",
+          "status"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy name_zh",
+          "title_en: from legacy name_en",
+          "source_status: preserved as candidate_formalized",
+          "definition_original: from legacy definition",
+          "constraint_result: from legacy role_in_P_meta",
+          "scope: from legacy dimension",
+          "neighbor_protocols: from legacy examples",
+          "circular_definition_check: from legacy relation_to_Psi0",
+          "psi0_mapping: from legacy relation_to_Psi0",
+          "p_meta_relation: from legacy role_in_P_meta",
+          "positive_evidence: from legacy examples",
+          "boundary_evidence: from legacy boundaries",
+          "source_references: from legacy source_files"
+        ],
+        "is_draft_derived": false,
+        "batch": "A",
+        "migration_mode": "structural_only",
+        "unresolved_questions": []
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-11T03:00:00+08:00",
+        "source_label": "ignition_batch_A",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy name_zh",
+          "title_en: from legacy name_en",
+          "source_status: preserved as candidate_formalized",
+          "definition_original: from legacy definition",
+          "constraint_result: from legacy role_in_P_meta",
+          "scope: from legacy dimension",
+          "neighbor_protocols: from legacy examples",
+          "circular_definition_check: from legacy relation_to_Psi0",
+          "psi0_mapping: from legacy relation_to_Psi0",
+          "p_meta_relation: from legacy role_in_P_meta",
+          "positive_evidence: from legacy examples",
+          "boundary_evidence: from legacy boundaries",
+          "source_references: from legacy source_files"
+        ],
+        "batch": "A"
+      }
+    },
+    {
+      "protocol_id": "S1",
+      "title_zh": "封闭边界协议",
+      "title_en": "Closed-Boundary Protocol",
+      "stable_slug": "closed-boundary",
+      "source_status": "candidate_formalized",
+      "structure_status": "schema_valid",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "definition_original": "系统在封闭或强边界内演化，外部输入/退出/迁移受限。",
+      "definition_normative": "【候选规范性定义·待人工确认】当在理论生成空间中建模系统时，封闭边界协议要求选择使「系统在封闭或强边界内演化，外部输入/退出/迁移受限。」成立的行动方案；它约束/优先该structure坐标轴，但不单独预测系统命运。",
+      "normative_type": "hard",
+      "constrained_object": [
+        "system"
+      ],
+      "trigger_conditions": [
+        "在构建/生成系统理论时，需要确定价值/结构/演化某一坐标轴的选择。",
+        "当建模目标要求沿该坐标轴最大化、约束或演化时，该协议生效。",
+        "存在对应的书级现实案例映射（book-validation-22）。",
+        "与另两维度的组合权重不由单协议决定，需 P_meta 投影选择。"
+      ],
+      "constraint_result": "constrain —— 约束系统的边界/拓扑结构及其可渗透性。",
+      "scope": "理论生成空间的structure坐标轴（value/structure/evolution 之一）；须与另两维度组合后方形成具体可检验的理论形态；不单独预测系统命运。",
+      "applicable_system_levels": [
+        "theoretical-generation-space",
+        "meta-protocol-layer"
+      ],
+      "exclusions": [
+        "不单独作为学科定论",
+        "不替代 Ψ₀ 的判定(J⁺/J⁻)/同构(I_iso)/收敛(L_meta)职责",
+        "不自动计入函数总数"
+      ],
+      "invalid_conditions": [
+        "当缺乏另两维度组合、仅作孤立生成层候选时，不得外推为系统命运结论",
+        "当断言等级超过 L3 时须另接外部学科证据"
+      ],
+      "termination_conditions": [
+        "当进入正式 formal_protocol 状态需治理批准（G34）"
+      ],
+      "neighbor_protocols": [
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "boundary_with_neighbors": "与同维度 S2, S3, S4 为互补坐标轴而非替代关系；跨维度须组合，不互斥。",
+      "conflict_resolution": "同维度内各协议为并列坐标轴、互补不互斥；跨维度需组合；若同时适用且目标冲突，由 P_meta 投影选择、由 L_meta 在元层收敛，单协议不自行裁决。",
+      "priority_rule": "同维度无单一优先级；按建模目标选择；跨维度组合由 P_meta 协调。",
+      "circular_definition_check": "主锚为 P_meta（Ψ₀ 的元协议投影算子）展开；非纯自指循环，依赖 Ψ₀ 外部框架锚定。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [
+          "I_iso",
+          "L_meta"
+        ],
+        "relation_type": "generation",
+        "input_relation": "P_meta 向下展开",
+        "constraint_relation": "Ψ₀ 负责判定/同构/收敛，不被替代",
+        "output_relation": "生成层候选协议",
+        "unresolved_mapping": "与 C(x,y)/M(B_n)/G_δ 的细粒度映射待 formal_protocol 阶段补全",
+        "relation": "P_meta 元协议投影算子向下展开生成该协议；Ψ₀ 的 C/M/I_iso/L_meta/G_δ 负责判定与收敛审核，不被替代。"
+      },
+      "p_meta_relation": "由 P_meta 生成；作为 P_meta 生成层输出；受 P_meta 投影约束。",
+      "function_layer_relation": "reference",
+      "case_layer_relation": "support",
+      "positive_evidence": [
+        {
+          "type": "book_validation_case",
+          "path": "data/meta-protocols/book-validation-cases-20260709.json",
+          "locator": "$.cases",
+          "summary": "书级验证案例映射存在，作为正向证据",
+          "confidence": "medium",
+          "limitations": "book-level，非外部学科证明"
+        },
+        {
+          "type": "doc_example",
+          "path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S1",
+          "summary": "§示例含现实案例（如文档所列）",
+          "confidence": "medium",
+          "limitations": "示例非独立验证"
+        }
+      ],
+      "boundary_evidence": [
+        {
+          "type": "pending",
+          "path": "n/a",
+          "locator": "n/a",
+          "summary": "暂无以区别于实例的边界/反例/失败案例证据，需补充",
+          "confidence": "low",
+          "limitations": "缺失真实边界案例"
+        }
+      ],
+      "source_references": [
+        "docs/meta-protocols/12-meta-protocols.md",
+        "data/meta-protocols/meta-protocols.json",
+        "data/meta-protocols/meta-protocols.jsonl",
+        "data/meta-protocols/book-validation-cases-20260709.json",
+        "docs/meta-protocols/book-validation-22-cases-20260709.md",
+        "docs/meta-protocols/meta-protocol-64-combination-matrix.md",
+        "1111/2026-07-09 1902/ 元协议64种可能性全矩阵案例映射"
+      ],
+      "assertion_level": "L2",
+      "document_path": "docs/meta-protocols/12-meta-protocols.md",
+      "index_entry": "docs/meta-protocols/12-meta-protocols.md#section-S1",
+      "machine_record_path": "data/meta-protocols/meta-protocols.json#/protocols/0",
+      "gate_results": [
+        {
+          "gate_id": "G05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/0",
+          "locator": "$.definition",
+          "reason": "定义含规范性措辞（要求/约束/禁止/允许）",
+          "repair_action": "补充规范性定义"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S1",
+          "reason": "触发条件已显式列出",
+          "repair_action": "补触发条件"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S1",
+          "reason": "排除/失效条件已列",
+          "repair_action": "补失效条件"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/0",
+          "locator": "$.source_references",
+          "reason": "与函数表相似性需人工/对照判定",
+          "repair_action": "对比最近函数"
+        },
+        {
+          "gate_id": "G33",
+          "result": "PENDING",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S1",
+          "reason": "人工复核未完成（reviewer/review_decision 待定）",
+          "repair_action": "人工复核"
+        },
+        {
+          "gate_id": "G34",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不做治理批准",
+          "repair_action": "需项目治理"
+        },
+        {
+          "gate_id": "G35",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不改正式状态",
+          "repair_action": "需独立变更集"
+        }
+      ],
+      "review": {
+        "reviewer": null,
+        "review_date": null,
+        "review_decision": "pending",
+        "review_notes": null
+      },
+      "blocking_issues": [
+        "G05",
+        "G20",
+        "G33"
+      ],
+      "soft_warnings": [
+        "S05:PENDING",
+        "S06:PENDING"
+      ],
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "unresolved_questions": [
+        "formal_expression 仍待补全。",
+        "与函数表的相似性人工判定仍待完成。"
+      ],
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-11T04:00:00+08:00",
+        "source_record_keys": [
+          "applicable_system_levels",
+          "assertion_level",
+          "blocking_issues",
+          "boundary_evidence",
+          "boundary_with_neighbors",
+          "case_layer_relation",
+          "circular_definition_check",
+          "conflict_resolution",
+          "constrained_object",
+          "constraint_result",
+          "current_status",
+          "definition",
+          "definition_normative_draft",
+          "definition_original",
+          "document_path",
+          "draft_change_notes",
+          "draft_machine_eligible",
+          "draft_status",
+          "exclusions",
+          "function_layer_relation",
+          "gate_results",
+          "index_entry",
+          "invalid_conditions",
+          "machine_eligible",
+          "machine_record_path",
+          "missing_evidence",
+          "neighbor_protocols",
+          "normative_type",
+          "p_meta_relation",
+          "positive_evidence",
+          "priority_rule",
+          "protocol_id",
+          "psi0_mapping",
+          "review",
+          "scope",
+          "soft_warnings",
+          "source_references",
+          "stable_slug",
+          "status",
+          "termination_conditions",
+          "title_en",
+          "title_zh",
+          "trigger_conditions"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "is_draft_derived": true,
+        "batch": "B",
+        "migration_mode": "structural_only",
+        "unresolved_questions": [
+          "formal_expression",
+          "G20 similarity check"
+        ]
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-11T04:00:00+08:00",
+        "source_label": "ignition_batch_B",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "batch": "B"
+      }
+    },
+    {
+      "protocol_id": "S2",
+      "title_zh": "开放边界协议",
+      "title_en": "Open-Boundary Protocol",
+      "stable_slug": "open-boundary",
+      "source_status": "candidate_formalized",
+      "structure_status": "schema_valid",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "definition_original": "系统允许外部输入、退出、迁移或扩展，边界可渗透。",
+      "definition_normative": "【候选规范性定义·待人工确认】当在理论生成空间中建模系统时，开放边界协议要求选择使「系统允许外部输入、退出、迁移或扩展，边界可渗透。」成立的行动方案；它约束/优先该structure坐标轴，但不单独预测系统命运。",
+      "normative_type": "hard",
+      "constrained_object": [
+        "system"
+      ],
+      "trigger_conditions": [
+        "在构建/生成系统理论时，需要确定价值/结构/演化某一坐标轴的选择。",
+        "当建模目标要求沿该坐标轴最大化、约束或演化时，该协议生效。",
+        "存在对应的书级现实案例映射（book-validation-22）。",
+        "与另两维度的组合权重不由单协议决定，需 P_meta 投影选择。"
+      ],
+      "constraint_result": "constrain —— 约束系统的边界/拓扑结构及其可渗透性。",
+      "scope": "理论生成空间的structure坐标轴（value/structure/evolution 之一）；须与另两维度组合后方形成具体可检验的理论形态；不单独预测系统命运。",
+      "applicable_system_levels": [
+        "theoretical-generation-space",
+        "meta-protocol-layer"
+      ],
+      "exclusions": [
+        "不单独作为学科定论",
+        "不替代 Ψ₀ 的判定(J⁺/J⁻)/同构(I_iso)/收敛(L_meta)职责",
+        "不自动计入函数总数"
+      ],
+      "invalid_conditions": [
+        "当缺乏另两维度组合、仅作孤立生成层候选时，不得外推为系统命运结论",
+        "当断言等级超过 L3 时须另接外部学科证据"
+      ],
+      "termination_conditions": [
+        "当进入正式 formal_protocol 状态需治理批准（G34）"
+      ],
+      "neighbor_protocols": [
+        "S1",
+        "S3",
+        "S4"
+      ],
+      "boundary_with_neighbors": "与同维度 S1, S3, S4 为互补坐标轴而非替代关系；跨维度须组合，不互斥。",
+      "conflict_resolution": "同维度内各协议为并列坐标轴、互补不互斥；跨维度需组合；若同时适用且目标冲突，由 P_meta 投影选择、由 L_meta 在元层收敛，单协议不自行裁决。",
+      "priority_rule": "同维度无单一优先级；按建模目标选择；跨维度组合由 P_meta 协调。",
+      "circular_definition_check": "主锚为 P_meta（Ψ₀ 的元协议投影算子）展开；非纯自指循环，依赖 Ψ₀ 外部框架锚定。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [
+          "I_iso",
+          "L_meta"
+        ],
+        "relation_type": "generation",
+        "input_relation": "P_meta 向下展开",
+        "constraint_relation": "Ψ₀ 负责判定/同构/收敛，不被替代",
+        "output_relation": "生成层候选协议",
+        "unresolved_mapping": "与 C(x,y)/M(B_n)/G_δ 的细粒度映射待 formal_protocol 阶段补全",
+        "relation": "P_meta 元协议投影算子向下展开生成该协议；Ψ₀ 的 C/M/I_iso/L_meta/G_δ 负责判定与收敛审核，不被替代。"
+      },
+      "p_meta_relation": "由 P_meta 生成；作为 P_meta 生成层输出；受 P_meta 投影约束。",
+      "function_layer_relation": "reference",
+      "case_layer_relation": "support",
+      "positive_evidence": [
+        {
+          "type": "book_validation_case",
+          "path": "data/meta-protocols/book-validation-cases-20260709.json",
+          "locator": "$.cases",
+          "summary": "书级验证案例映射存在，作为正向证据",
+          "confidence": "medium",
+          "limitations": "book-level，非外部学科证明"
+        },
+        {
+          "type": "doc_example",
+          "path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S2",
+          "summary": "§示例含现实案例（如文档所列）",
+          "confidence": "medium",
+          "limitations": "示例非独立验证"
+        }
+      ],
+      "boundary_evidence": [
+        {
+          "type": "pending",
+          "path": "n/a",
+          "locator": "n/a",
+          "summary": "暂无以区别于实例的边界/反例/失败案例证据，需补充",
+          "confidence": "low",
+          "limitations": "缺失真实边界案例"
+        }
+      ],
+      "source_references": [
+        "docs/meta-protocols/12-meta-protocols.md",
+        "data/meta-protocols/meta-protocols.json",
+        "data/meta-protocols/meta-protocols.jsonl",
+        "data/meta-protocols/book-validation-cases-20260709.json",
+        "docs/meta-protocols/book-validation-22-cases-20260709.md",
+        "docs/meta-protocols/meta-protocol-64-combination-matrix.md",
+        "1111/2026-07-09 1902/ 元协议64种可能性全矩阵案例映射"
+      ],
+      "assertion_level": "L2",
+      "document_path": "docs/meta-protocols/12-meta-protocols.md",
+      "index_entry": "docs/meta-protocols/12-meta-protocols.md#section-S2",
+      "machine_record_path": "data/meta-protocols/meta-protocols.json#/protocols/1",
+      "gate_results": [
+        {
+          "gate_id": "G05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/1",
+          "locator": "$.definition",
+          "reason": "定义含规范性措辞（要求/约束/禁止/允许）",
+          "repair_action": "补充规范性定义"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S2",
+          "reason": "触发条件已显式列出",
+          "repair_action": "补触发条件"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S2",
+          "reason": "排除/失效条件已列",
+          "repair_action": "补失效条件"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/1",
+          "locator": "$.source_references",
+          "reason": "与函数表相似性需人工/对照判定",
+          "repair_action": "对比最近函数"
+        },
+        {
+          "gate_id": "G33",
+          "result": "PENDING",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S2",
+          "reason": "人工复核未完成（reviewer/review_decision 待定）",
+          "repair_action": "人工复核"
+        },
+        {
+          "gate_id": "G34",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不做治理批准",
+          "repair_action": "需项目治理"
+        },
+        {
+          "gate_id": "G35",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不改正式状态",
+          "repair_action": "需独立变更集"
+        }
+      ],
+      "review": {
+        "reviewer": null,
+        "review_date": null,
+        "review_decision": "pending",
+        "review_notes": null
+      },
+      "blocking_issues": [
+        "G20",
+        "G33"
+      ],
+      "soft_warnings": [
+        "S05:PENDING",
+        "S06:PENDING"
+      ],
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "unresolved_questions": [
+        "formal_expression 仍待补全。",
+        "与函数表的相似性人工判定仍待完成。"
+      ],
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-11T04:00:00+08:00",
+        "source_record_keys": [
+          "applicable_system_levels",
+          "assertion_level",
+          "blocking_issues",
+          "boundary_evidence",
+          "boundary_with_neighbors",
+          "case_layer_relation",
+          "circular_definition_check",
+          "conflict_resolution",
+          "constrained_object",
+          "constraint_result",
+          "current_status",
+          "definition",
+          "definition_normative_draft",
+          "definition_original",
+          "document_path",
+          "draft_change_notes",
+          "draft_machine_eligible",
+          "draft_status",
+          "exclusions",
+          "function_layer_relation",
+          "gate_results",
+          "index_entry",
+          "invalid_conditions",
+          "machine_eligible",
+          "machine_record_path",
+          "missing_evidence",
+          "neighbor_protocols",
+          "normative_type",
+          "p_meta_relation",
+          "positive_evidence",
+          "priority_rule",
+          "protocol_id",
+          "psi0_mapping",
+          "review",
+          "scope",
+          "soft_warnings",
+          "source_references",
+          "stable_slug",
+          "status",
+          "termination_conditions",
+          "title_en",
+          "title_zh",
+          "trigger_conditions"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "is_draft_derived": true,
+        "batch": "B",
+        "migration_mode": "structural_only",
+        "unresolved_questions": [
+          "formal_expression",
+          "G20 similarity check"
+        ]
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-11T04:00:00+08:00",
+        "source_label": "ignition_batch_B",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "batch": "B"
+      }
+    },
+    {
+      "protocol_id": "S3",
+      "title_zh": "层级协议",
+      "title_en": "Hierarchy Protocol",
+      "stable_slug": "hierarchy",
+      "source_status": "candidate_formalized",
+      "structure_status": "schema_valid",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "definition_original": "系统由层级结构组织，上下层存在控制或信息梯度。",
+      "definition_normative": "【候选规范性定义·待人工确认】当在理论生成空间中建模系统时，层级协议要求选择使「系统由层级结构组织，上下层存在控制或信息梯度。」成立的行动方案；它约束/优先该structure坐标轴，但不单独预测系统命运。",
+      "normative_type": "hard",
+      "constrained_object": [
+        "system"
+      ],
+      "trigger_conditions": [
+        "在构建/生成系统理论时，需要确定价值/结构/演化某一坐标轴的选择。",
+        "当建模目标要求沿该坐标轴最大化、约束或演化时，该协议生效。",
+        "存在对应的书级现实案例映射（book-validation-22）。",
+        "与另两维度的组合权重不由单协议决定，需 P_meta 投影选择。"
+      ],
+      "constraint_result": "constrain —— 约束系统的边界/拓扑结构及其可渗透性。",
+      "scope": "理论生成空间的structure坐标轴（value/structure/evolution 之一）；须与另两维度组合后方形成具体可检验的理论形态；不单独预测系统命运。",
+      "applicable_system_levels": [
+        "theoretical-generation-space",
+        "meta-protocol-layer"
+      ],
+      "exclusions": [
+        "不单独作为学科定论",
+        "不替代 Ψ₀ 的判定(J⁺/J⁻)/同构(I_iso)/收敛(L_meta)职责",
+        "不自动计入函数总数"
+      ],
+      "invalid_conditions": [
+        "当缺乏另两维度组合、仅作孤立生成层候选时，不得外推为系统命运结论",
+        "当断言等级超过 L3 时须另接外部学科证据"
+      ],
+      "termination_conditions": [
+        "当进入正式 formal_protocol 状态需治理批准（G34）"
+      ],
+      "neighbor_protocols": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "boundary_with_neighbors": "与同维度 S1, S2, S4 为互补坐标轴而非替代关系；跨维度须组合，不互斥。",
+      "conflict_resolution": "同维度内各协议为并列坐标轴、互补不互斥；跨维度需组合；若同时适用且目标冲突，由 P_meta 投影选择、由 L_meta 在元层收敛，单协议不自行裁决。",
+      "priority_rule": "同维度无单一优先级；按建模目标选择；跨维度组合由 P_meta 协调。",
+      "circular_definition_check": "主锚为 P_meta（Ψ₀ 的元协议投影算子）展开；非纯自指循环，依赖 Ψ₀ 外部框架锚定。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [
+          "I_iso",
+          "L_meta"
+        ],
+        "relation_type": "generation",
+        "input_relation": "P_meta 向下展开",
+        "constraint_relation": "Ψ₀ 负责判定/同构/收敛，不被替代",
+        "output_relation": "生成层候选协议",
+        "unresolved_mapping": "与 C(x,y)/M(B_n)/G_δ 的细粒度映射待 formal_protocol 阶段补全",
+        "relation": "P_meta 元协议投影算子向下展开生成该协议；Ψ₀ 的 C/M/I_iso/L_meta/G_δ 负责判定与收敛审核，不被替代。"
+      },
+      "p_meta_relation": "由 P_meta 生成；作为 P_meta 生成层输出；受 P_meta 投影约束。",
+      "function_layer_relation": "reference",
+      "case_layer_relation": "support",
+      "positive_evidence": [
+        {
+          "type": "book_validation_case",
+          "path": "data/meta-protocols/book-validation-cases-20260709.json",
+          "locator": "$.cases",
+          "summary": "书级验证案例映射存在，作为正向证据",
+          "confidence": "medium",
+          "limitations": "book-level，非外部学科证明"
+        },
+        {
+          "type": "doc_example",
+          "path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S3",
+          "summary": "§示例含现实案例（如文档所列）",
+          "confidence": "medium",
+          "limitations": "示例非独立验证"
+        }
+      ],
+      "boundary_evidence": [
+        {
+          "type": "pending",
+          "path": "n/a",
+          "locator": "n/a",
+          "summary": "暂无以区别于实例的边界/反例/失败案例证据，需补充",
+          "confidence": "low",
+          "limitations": "缺失真实边界案例"
+        }
+      ],
+      "source_references": [
+        "docs/meta-protocols/12-meta-protocols.md",
+        "data/meta-protocols/meta-protocols.json",
+        "data/meta-protocols/meta-protocols.jsonl",
+        "data/meta-protocols/book-validation-cases-20260709.json",
+        "docs/meta-protocols/book-validation-22-cases-20260709.md",
+        "docs/meta-protocols/meta-protocol-64-combination-matrix.md",
+        "1111/2026-07-09 1902/ 元协议64种可能性全矩阵案例映射"
+      ],
+      "assertion_level": "L2",
+      "document_path": "docs/meta-protocols/12-meta-protocols.md",
+      "index_entry": "docs/meta-protocols/12-meta-protocols.md#section-S3",
+      "machine_record_path": "data/meta-protocols/meta-protocols.json#/protocols/2",
+      "gate_results": [
+        {
+          "gate_id": "G05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/2",
+          "locator": "$.definition",
+          "reason": "定义含规范性措辞（要求/约束/禁止/允许）",
+          "repair_action": "补充规范性定义"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S3",
+          "reason": "触发条件已显式列出",
+          "repair_action": "补触发条件"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S3",
+          "reason": "排除/失效条件已列",
+          "repair_action": "补失效条件"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/2",
+          "locator": "$.source_references",
+          "reason": "与函数表相似性需人工/对照判定",
+          "repair_action": "对比最近函数"
+        },
+        {
+          "gate_id": "G33",
+          "result": "PENDING",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S3",
+          "reason": "人工复核未完成（reviewer/review_decision 待定）",
+          "repair_action": "人工复核"
+        },
+        {
+          "gate_id": "G34",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不做治理批准",
+          "repair_action": "需项目治理"
+        },
+        {
+          "gate_id": "G35",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不改正式状态",
+          "repair_action": "需独立变更集"
+        }
+      ],
+      "review": {
+        "reviewer": null,
+        "review_date": null,
+        "review_decision": "pending",
+        "review_notes": null
+      },
+      "blocking_issues": [
+        "G05",
+        "G20",
+        "G33"
+      ],
+      "soft_warnings": [
+        "S05:PENDING",
+        "S06:PENDING"
+      ],
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "unresolved_questions": [
+        "formal_expression 仍待补全。",
+        "与函数表的相似性人工判定仍待完成。"
+      ],
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-11T04:00:00+08:00",
+        "source_record_keys": [
+          "applicable_system_levels",
+          "assertion_level",
+          "blocking_issues",
+          "boundary_evidence",
+          "boundary_with_neighbors",
+          "case_layer_relation",
+          "circular_definition_check",
+          "conflict_resolution",
+          "constrained_object",
+          "constraint_result",
+          "current_status",
+          "definition",
+          "definition_normative_draft",
+          "definition_original",
+          "document_path",
+          "draft_change_notes",
+          "draft_machine_eligible",
+          "draft_status",
+          "exclusions",
+          "function_layer_relation",
+          "gate_results",
+          "index_entry",
+          "invalid_conditions",
+          "machine_eligible",
+          "machine_record_path",
+          "missing_evidence",
+          "neighbor_protocols",
+          "normative_type",
+          "p_meta_relation",
+          "positive_evidence",
+          "priority_rule",
+          "protocol_id",
+          "psi0_mapping",
+          "review",
+          "scope",
+          "soft_warnings",
+          "source_references",
+          "stable_slug",
+          "status",
+          "termination_conditions",
+          "title_en",
+          "title_zh",
+          "trigger_conditions"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "is_draft_derived": true,
+        "batch": "B",
+        "migration_mode": "structural_only",
+        "unresolved_questions": [
+          "formal_expression",
+          "G20 similarity check"
+        ]
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-11T04:00:00+08:00",
+        "source_label": "ignition_batch_B",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "batch": "B"
+      }
+    },
+    {
+      "protocol_id": "S4",
+      "title_zh": "网络协议",
+      "title_en": "Network Protocol",
+      "stable_slug": "network",
+      "source_status": "candidate_formalized",
+      "structure_status": "schema_valid",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "definition_original": "系统由节点—边网络构成，交互通过连接发生。",
+      "definition_normative": "【候选规范性定义·待人工确认】当在理论生成空间中建模系统时，网络协议要求选择使「系统由节点—边网络构成，交互通过连接发生。」成立的行动方案；它约束/优先该structure坐标轴，但不单独预测系统命运。",
+      "normative_type": "hard",
+      "constrained_object": [
+        "system"
+      ],
+      "trigger_conditions": [
+        "在构建/生成系统理论时，需要确定价值/结构/演化某一坐标轴的选择。",
+        "当建模目标要求沿该坐标轴最大化、约束或演化时，该协议生效。",
+        "存在对应的书级现实案例映射（book-validation-22）。",
+        "与另两维度的组合权重不由单协议决定，需 P_meta 投影选择。"
+      ],
+      "constraint_result": "constrain —— 约束系统的边界/拓扑结构及其可渗透性。",
+      "scope": "理论生成空间的structure坐标轴（value/structure/evolution 之一）；须与另两维度组合后方形成具体可检验的理论形态；不单独预测系统命运。",
+      "applicable_system_levels": [
+        "theoretical-generation-space",
+        "meta-protocol-layer"
+      ],
+      "exclusions": [
+        "不单独作为学科定论",
+        "不替代 Ψ₀ 的判定(J⁺/J⁻)/同构(I_iso)/收敛(L_meta)职责",
+        "不自动计入函数总数"
+      ],
+      "invalid_conditions": [
+        "当缺乏另两维度组合、仅作孤立生成层候选时，不得外推为系统命运结论",
+        "当断言等级超过 L3 时须另接外部学科证据"
+      ],
+      "termination_conditions": [
+        "当进入正式 formal_protocol 状态需治理批准（G34）"
+      ],
+      "neighbor_protocols": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "boundary_with_neighbors": "与同维度 S1, S2, S3 为互补坐标轴而非替代关系；跨维度须组合，不互斥。",
+      "conflict_resolution": "同维度内各协议为并列坐标轴、互补不互斥；跨维度需组合；若同时适用且目标冲突，由 P_meta 投影选择、由 L_meta 在元层收敛，单协议不自行裁决。",
+      "priority_rule": "同维度无单一优先级；按建模目标选择；跨维度组合由 P_meta 协调。",
+      "circular_definition_check": "主锚为 P_meta（Ψ₀ 的元协议投影算子）展开；非纯自指循环，依赖 Ψ₀ 外部框架锚定。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [
+          "I_iso",
+          "L_meta"
+        ],
+        "relation_type": "generation",
+        "input_relation": "P_meta 向下展开",
+        "constraint_relation": "Ψ₀ 负责判定/同构/收敛，不被替代",
+        "output_relation": "生成层候选协议",
+        "unresolved_mapping": "与 C(x,y)/M(B_n)/G_δ 的细粒度映射待 formal_protocol 阶段补全",
+        "relation": "P_meta 元协议投影算子向下展开生成该协议；Ψ₀ 的 C/M/I_iso/L_meta/G_δ 负责判定与收敛审核，不被替代。"
+      },
+      "p_meta_relation": "由 P_meta 生成；作为 P_meta 生成层输出；受 P_meta 投影约束。",
+      "function_layer_relation": "reference",
+      "case_layer_relation": "support",
+      "positive_evidence": [
+        {
+          "type": "book_validation_case",
+          "path": "data/meta-protocols/book-validation-cases-20260709.json",
+          "locator": "$.cases",
+          "summary": "书级验证案例映射存在，作为正向证据",
+          "confidence": "medium",
+          "limitations": "book-level，非外部学科证明"
+        },
+        {
+          "type": "doc_example",
+          "path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S4",
+          "summary": "§示例含现实案例（如文档所列）",
+          "confidence": "medium",
+          "limitations": "示例非独立验证"
+        }
+      ],
+      "boundary_evidence": [
+        {
+          "type": "pending",
+          "path": "n/a",
+          "locator": "n/a",
+          "summary": "暂无以区别于实例的边界/反例/失败案例证据，需补充",
+          "confidence": "low",
+          "limitations": "缺失真实边界案例"
+        }
+      ],
+      "source_references": [
+        "docs/meta-protocols/12-meta-protocols.md",
+        "data/meta-protocols/meta-protocols.json",
+        "data/meta-protocols/meta-protocols.jsonl",
+        "data/meta-protocols/book-validation-cases-20260709.json",
+        "docs/meta-protocols/book-validation-22-cases-20260709.md",
+        "docs/meta-protocols/meta-protocol-64-combination-matrix.md",
+        "1111/2026-07-09 1902/ 元协议64种可能性全矩阵案例映射"
+      ],
+      "assertion_level": "L2",
+      "document_path": "docs/meta-protocols/12-meta-protocols.md",
+      "index_entry": "docs/meta-protocols/12-meta-protocols.md#section-S4",
+      "machine_record_path": "data/meta-protocols/meta-protocols.json#/protocols/3",
+      "gate_results": [
+        {
+          "gate_id": "G05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/3",
+          "locator": "$.definition",
+          "reason": "定义含规范性措辞（要求/约束/禁止/允许）",
+          "repair_action": "补充规范性定义"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S4",
+          "reason": "触发条件已显式列出",
+          "repair_action": "补触发条件"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S4",
+          "reason": "排除/失效条件已列",
+          "repair_action": "补失效条件"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/3",
+          "locator": "$.source_references",
+          "reason": "与函数表相似性需人工/对照判定",
+          "repair_action": "对比最近函数"
+        },
+        {
+          "gate_id": "G33",
+          "result": "PENDING",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:S4",
+          "reason": "人工复核未完成（reviewer/review_decision 待定）",
+          "repair_action": "人工复核"
+        },
+        {
+          "gate_id": "G34",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不做治理批准",
+          "repair_action": "需项目治理"
+        },
+        {
+          "gate_id": "G35",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不改正式状态",
+          "repair_action": "需独立变更集"
+        }
+      ],
+      "review": {
+        "reviewer": null,
+        "review_date": null,
+        "review_decision": "pending",
+        "review_notes": null
+      },
+      "blocking_issues": [
+        "G05",
+        "G20",
+        "G33"
+      ],
+      "soft_warnings": [
+        "S05:PENDING",
+        "S06:PENDING"
+      ],
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "unresolved_questions": [
+        "formal_expression 仍待补全。",
+        "与函数表的相似性人工判定仍待完成。"
+      ],
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-11T04:00:00+08:00",
+        "source_record_keys": [
+          "applicable_system_levels",
+          "assertion_level",
+          "blocking_issues",
+          "boundary_evidence",
+          "boundary_with_neighbors",
+          "case_layer_relation",
+          "circular_definition_check",
+          "conflict_resolution",
+          "constrained_object",
+          "constraint_result",
+          "current_status",
+          "definition",
+          "definition_normative_draft",
+          "definition_original",
+          "document_path",
+          "draft_change_notes",
+          "draft_machine_eligible",
+          "draft_status",
+          "exclusions",
+          "function_layer_relation",
+          "gate_results",
+          "index_entry",
+          "invalid_conditions",
+          "machine_eligible",
+          "machine_record_path",
+          "missing_evidence",
+          "neighbor_protocols",
+          "normative_type",
+          "p_meta_relation",
+          "positive_evidence",
+          "priority_rule",
+          "protocol_id",
+          "psi0_mapping",
+          "review",
+          "scope",
+          "soft_warnings",
+          "source_references",
+          "stable_slug",
+          "status",
+          "termination_conditions",
+          "title_en",
+          "title_zh",
+          "trigger_conditions"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "is_draft_derived": true,
+        "batch": "B",
+        "migration_mode": "structural_only",
+        "unresolved_questions": [
+          "formal_expression",
+          "G20 similarity check"
+        ]
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-11T04:00:00+08:00",
+        "source_label": "ignition_batch_B",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "batch": "B"
+      }
+    },
+    {
+      "protocol_id": "E1",
+      "title_zh": "线性演化协议",
+      "title_en": "Linear-Evolution Protocol",
+      "stable_slug": "linear-evolution",
+      "source_status": "candidate_formalized",
+      "structure_status": "schema_valid",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "definition_original": "状态沿可预测线性路径演化。",
+      "definition_normative": "【候选规范性定义·待人工确认】当在理论生成空间中建模系统时，线性演化协议要求选择使「状态沿可预测线性路径演化。」成立的行动方案；它约束/优先该evolution坐标轴，但不单独预测系统命运。",
+      "normative_type": "hard",
+      "constrained_object": [
+        "state_transition"
+      ],
+      "trigger_conditions": [
+        "在构建/生成系统理论时，需要确定价值/结构/演化某一坐标轴的选择。",
+        "当建模目标要求沿该坐标轴最大化、约束或演化时，该协议生效。",
+        "存在对应的书级现实案例映射（book-validation-22）。",
+        "与另两维度的组合权重不由单协议决定，需 P_meta 投影选择。"
+      ],
+      "constraint_result": "prioritize —— 在演化路径中选择该演化模式作为系统状态走向。",
+      "scope": "理论生成空间的evolution坐标轴（value/structure/evolution 之一）；须与另两维度组合后方形成具体可检验的理论形态；不单独预测系统命运。",
+      "applicable_system_levels": [
+        "theoretical-generation-space",
+        "meta-protocol-layer"
+      ],
+      "exclusions": [
+        "不单独作为学科定论",
+        "不替代 Ψ₀ 的判定(J⁺/J⁻)/同构(I_iso)/收敛(L_meta)职责",
+        "不自动计入函数总数"
+      ],
+      "invalid_conditions": [
+        "当缺乏另两维度组合、仅作孤立生成层候选时，不得外推为系统命运结论",
+        "当断言等级超过 L3 时须另接外部学科证据"
+      ],
+      "termination_conditions": [
+        "当进入正式 formal_protocol 状态需治理批准（G34）"
+      ],
+      "neighbor_protocols": [
+        "E2",
+        "E3",
+        "E4"
+      ],
+      "boundary_with_neighbors": "与同维度 E2, E3, E4 为互补坐标轴而非替代关系；跨维度须组合，不互斥。",
+      "conflict_resolution": "同维度内各协议为并列坐标轴、互补不互斥；跨维度需组合；若同时适用且目标冲突，由 P_meta 投影选择、由 L_meta 在元层收敛，单协议不自行裁决。",
+      "priority_rule": "同维度无单一优先级；按建模目标选择；跨维度组合由 P_meta 协调。",
+      "circular_definition_check": "主锚为 P_meta（Ψ₀ 的元协议投影算子）展开；非纯自指循环，依赖 Ψ₀ 外部框架锚定。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [
+          "L_meta"
+        ],
+        "relation_type": "generation",
+        "input_relation": "P_meta 向下展开",
+        "constraint_relation": "Ψ₀ 负责判定/同构/收敛，不被替代",
+        "output_relation": "生成层候选协议",
+        "unresolved_mapping": "与 C(x,y)/M(B_n)/G_δ 的细粒度映射待 formal_protocol 阶段补全",
+        "relation": "P_meta 元协议投影算子向下展开生成该协议；Ψ₀ 的 C/M/I_iso/L_meta/G_δ 负责判定与收敛审核，不被替代。"
+      },
+      "p_meta_relation": "由 P_meta 生成；作为 P_meta 生成层输出；受 P_meta 投影约束。",
+      "function_layer_relation": "reference",
+      "case_layer_relation": "support",
+      "positive_evidence": [
+        {
+          "type": "book_validation_case",
+          "path": "data/meta-protocols/book-validation-cases-20260709.json",
+          "locator": "$.cases",
+          "summary": "书级验证案例映射存在，作为正向证据",
+          "confidence": "medium",
+          "limitations": "book-level，非外部学科证明"
+        },
+        {
+          "type": "doc_example",
+          "path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E1",
+          "summary": "§示例含现实案例（如文档所列）",
+          "confidence": "medium",
+          "limitations": "示例非独立验证"
+        }
+      ],
+      "boundary_evidence": [
+        {
+          "type": "pending",
+          "path": "n/a",
+          "locator": "n/a",
+          "summary": "暂无以区别于实例的边界/反例/失败案例证据，需补充",
+          "confidence": "low",
+          "limitations": "缺失真实边界案例"
+        }
+      ],
+      "source_references": [
+        "docs/meta-protocols/12-meta-protocols.md",
+        "data/meta-protocols/meta-protocols.json",
+        "data/meta-protocols/meta-protocols.jsonl",
+        "data/meta-protocols/book-validation-cases-20260709.json",
+        "docs/meta-protocols/book-validation-22-cases-20260709.md",
+        "docs/meta-protocols/meta-protocol-64-combination-matrix.md",
+        "1111/2026-07-09 1902/ 元协议64种可能性全矩阵案例映射"
+      ],
+      "assertion_level": "L2",
+      "document_path": "docs/meta-protocols/12-meta-protocols.md",
+      "index_entry": "docs/meta-protocols/12-meta-protocols.md#section-E1",
+      "machine_record_path": "data/meta-protocols/meta-protocols.json#/protocols/0",
+      "gate_results": [
+        {
+          "gate_id": "G05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/0",
+          "locator": "$.definition",
+          "reason": "定义含规范性措辞（要求/约束/禁止/允许）",
+          "repair_action": "补充规范性定义"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E1",
+          "reason": "触发条件已显式列出",
+          "repair_action": "补触发条件"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E1",
+          "reason": "排除/失效条件已列",
+          "repair_action": "补失效条件"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/0",
+          "locator": "$.source_references",
+          "reason": "与函数表相似性需人工/对照判定",
+          "repair_action": "对比最近函数"
+        },
+        {
+          "gate_id": "G33",
+          "result": "PENDING",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E1",
+          "reason": "人工复核未完成（reviewer/review_decision 待定）",
+          "repair_action": "人工复核"
+        },
+        {
+          "gate_id": "G34",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不做治理批准",
+          "repair_action": "需项目治理"
+        },
+        {
+          "gate_id": "G35",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不改正式状态",
+          "repair_action": "需独立变更集"
+        }
+      ],
+      "review": {
+        "reviewer": null,
+        "review_date": null,
+        "review_decision": "pending",
+        "review_notes": null
+      },
+      "blocking_issues": [
+        "G05",
+        "G20",
+        "G33"
+      ],
+      "soft_warnings": [
+        "S05:PENDING",
+        "S06:PENDING"
+      ],
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "unresolved_questions": [
+        "formal_expression 仍待补全。",
+        "与函数表的相似性人工判定仍待完成。"
+      ],
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-11T04:30:00+08:00",
+        "source_record_keys": [
+          "applicable_system_levels",
+          "assertion_level",
+          "blocking_issues",
+          "boundary_evidence",
+          "boundary_with_neighbors",
+          "case_layer_relation",
+          "circular_definition_check",
+          "conflict_resolution",
+          "constrained_object",
+          "constraint_result",
+          "current_status",
+          "definition",
+          "definition_normative_draft",
+          "definition_original",
+          "document_path",
+          "draft_change_notes",
+          "draft_machine_eligible",
+          "draft_status",
+          "exclusions",
+          "function_layer_relation",
+          "gate_results",
+          "index_entry",
+          "invalid_conditions",
+          "machine_eligible",
+          "machine_record_path",
+          "missing_evidence",
+          "neighbor_protocols",
+          "normative_type",
+          "p_meta_relation",
+          "positive_evidence",
+          "priority_rule",
+          "protocol_id",
+          "psi0_mapping",
+          "review",
+          "scope",
+          "soft_warnings",
+          "source_references",
+          "stable_slug",
+          "status",
+          "termination_conditions",
+          "title_en",
+          "title_zh",
+          "trigger_conditions"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "is_draft_derived": true,
+        "batch": "C",
+        "migration_mode": "structural_only",
+        "unresolved_questions": [
+          "formal_expression",
+          "G20 similarity check"
+        ]
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-11T04:30:00+08:00",
+        "source_label": "ignition_batch_C",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "batch": "C"
+      }
+    },
+    {
+      "protocol_id": "E2",
+      "title_zh": "非线性演化协议",
+      "title_en": "Nonlinear-Evolution Protocol",
+      "stable_slug": "nonlinear-evolution",
+      "source_status": "candidate_formalized",
+      "structure_status": "schema_valid",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "definition_original": "状态非线性、涌现、放大或不可预测地演化。",
+      "definition_normative": "【候选规范性定义·待人工确认】当在理论生成空间中建模系统时，非线性演化协议要求选择使「状态非线性、涌现、放大或不可预测地演化。」成立的行动方案；它约束/优先该evolution坐标轴，但不单独预测系统命运。",
+      "normative_type": "hard",
+      "constrained_object": [
+        "state_transition"
+      ],
+      "trigger_conditions": [
+        "在构建/生成系统理论时，需要确定价值/结构/演化某一坐标轴的选择。",
+        "当建模目标要求沿该坐标轴最大化、约束或演化时，该协议生效。",
+        "存在对应的书级现实案例映射（book-validation-22）。",
+        "与另两维度的组合权重不由单协议决定，需 P_meta 投影选择。"
+      ],
+      "constraint_result": "prioritize —— 在演化路径中选择该演化模式作为系统状态走向。",
+      "scope": "理论生成空间的evolution坐标轴（value/structure/evolution 之一）；须与另两维度组合后方形成具体可检验的理论形态；不单独预测系统命运。",
+      "applicable_system_levels": [
+        "theoretical-generation-space",
+        "meta-protocol-layer"
+      ],
+      "exclusions": [
+        "不单独作为学科定论",
+        "不替代 Ψ₀ 的判定(J⁺/J⁻)/同构(I_iso)/收敛(L_meta)职责",
+        "不自动计入函数总数"
+      ],
+      "invalid_conditions": [
+        "当缺乏另两维度组合、仅作孤立生成层候选时，不得外推为系统命运结论",
+        "当断言等级超过 L3 时须另接外部学科证据"
+      ],
+      "termination_conditions": [
+        "当进入正式 formal_protocol 状态需治理批准（G34）"
+      ],
+      "neighbor_protocols": [
+        "E1",
+        "E3",
+        "E4"
+      ],
+      "boundary_with_neighbors": "与同维度 E1, E3, E4 为互补坐标轴而非替代关系；跨维度须组合，不互斥。",
+      "conflict_resolution": "同维度内各协议为并列坐标轴、互补不互斥；跨维度需组合；若同时适用且目标冲突，由 P_meta 投影选择、由 L_meta 在元层收敛，单协议不自行裁决。",
+      "priority_rule": "同维度无单一优先级；按建模目标选择；跨维度组合由 P_meta 协调。",
+      "circular_definition_check": "主锚为 P_meta（Ψ₀ 的元协议投影算子）展开；非纯自指循环，依赖 Ψ₀ 外部框架锚定。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [
+          "L_meta"
+        ],
+        "relation_type": "generation",
+        "input_relation": "P_meta 向下展开",
+        "constraint_relation": "Ψ₀ 负责判定/同构/收敛，不被替代",
+        "output_relation": "生成层候选协议",
+        "unresolved_mapping": "与 C(x,y)/M(B_n)/G_δ 的细粒度映射待 formal_protocol 阶段补全",
+        "relation": "P_meta 元协议投影算子向下展开生成该协议；Ψ₀ 的 C/M/I_iso/L_meta/G_δ 负责判定与收敛审核，不被替代。"
+      },
+      "p_meta_relation": "由 P_meta 生成；作为 P_meta 生成层输出；受 P_meta 投影约束。",
+      "function_layer_relation": "reference",
+      "case_layer_relation": "support",
+      "positive_evidence": [
+        {
+          "type": "book_validation_case",
+          "path": "data/meta-protocols/book-validation-cases-20260709.json",
+          "locator": "$.cases",
+          "summary": "书级验证案例映射存在，作为正向证据",
+          "confidence": "medium",
+          "limitations": "book-level，非外部学科证明"
+        },
+        {
+          "type": "doc_example",
+          "path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E2",
+          "summary": "§示例含现实案例（如文档所列）",
+          "confidence": "medium",
+          "limitations": "示例非独立验证"
+        }
+      ],
+      "boundary_evidence": [
+        {
+          "type": "pending",
+          "path": "n/a",
+          "locator": "n/a",
+          "summary": "暂无以区别于实例的边界/反例/失败案例证据，需补充",
+          "confidence": "low",
+          "limitations": "缺失真实边界案例"
+        }
+      ],
+      "source_references": [
+        "docs/meta-protocols/12-meta-protocols.md",
+        "data/meta-protocols/meta-protocols.json",
+        "data/meta-protocols/meta-protocols.jsonl",
+        "data/meta-protocols/book-validation-cases-20260709.json",
+        "docs/meta-protocols/book-validation-22-cases-20260709.md",
+        "docs/meta-protocols/meta-protocol-64-combination-matrix.md",
+        "1111/2026-07-09 1902/ 元协议64种可能性全矩阵案例映射"
+      ],
+      "assertion_level": "L2",
+      "document_path": "docs/meta-protocols/12-meta-protocols.md",
+      "index_entry": "docs/meta-protocols/12-meta-protocols.md#section-E2",
+      "machine_record_path": "data/meta-protocols/meta-protocols.json#/protocols/1",
+      "gate_results": [
+        {
+          "gate_id": "G05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/1",
+          "locator": "$.definition",
+          "reason": "定义含规范性措辞（要求/约束/禁止/允许）",
+          "repair_action": "补充规范性定义"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E2",
+          "reason": "触发条件已显式列出",
+          "repair_action": "补触发条件"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E2",
+          "reason": "排除/失效条件已列",
+          "repair_action": "补失效条件"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/1",
+          "locator": "$.source_references",
+          "reason": "与函数表相似性需人工/对照判定",
+          "repair_action": "对比最近函数"
+        },
+        {
+          "gate_id": "G33",
+          "result": "PENDING",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E2",
+          "reason": "人工复核未完成（reviewer/review_decision 待定）",
+          "repair_action": "人工复核"
+        },
+        {
+          "gate_id": "G34",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不做治理批准",
+          "repair_action": "需项目治理"
+        },
+        {
+          "gate_id": "G35",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不改正式状态",
+          "repair_action": "需独立变更集"
+        }
+      ],
+      "review": {
+        "reviewer": null,
+        "review_date": null,
+        "review_decision": "pending",
+        "review_notes": null
+      },
+      "blocking_issues": [
+        "G05",
+        "G20",
+        "G33"
+      ],
+      "soft_warnings": [
+        "S05:PENDING",
+        "S06:PENDING"
+      ],
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "unresolved_questions": [
+        "formal_expression 仍待补全。",
+        "与函数表的相似性人工判定仍待完成。"
+      ],
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-11T04:30:00+08:00",
+        "source_record_keys": [
+          "applicable_system_levels",
+          "assertion_level",
+          "blocking_issues",
+          "boundary_evidence",
+          "boundary_with_neighbors",
+          "case_layer_relation",
+          "circular_definition_check",
+          "conflict_resolution",
+          "constrained_object",
+          "constraint_result",
+          "current_status",
+          "definition",
+          "definition_normative_draft",
+          "definition_original",
+          "document_path",
+          "draft_change_notes",
+          "draft_machine_eligible",
+          "draft_status",
+          "exclusions",
+          "function_layer_relation",
+          "gate_results",
+          "index_entry",
+          "invalid_conditions",
+          "machine_eligible",
+          "machine_record_path",
+          "missing_evidence",
+          "neighbor_protocols",
+          "normative_type",
+          "p_meta_relation",
+          "positive_evidence",
+          "priority_rule",
+          "protocol_id",
+          "psi0_mapping",
+          "review",
+          "scope",
+          "soft_warnings",
+          "source_references",
+          "stable_slug",
+          "status",
+          "termination_conditions",
+          "title_en",
+          "title_zh",
+          "trigger_conditions"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "is_draft_derived": true,
+        "batch": "C",
+        "migration_mode": "structural_only",
+        "unresolved_questions": [
+          "formal_expression",
+          "G20 similarity check"
+        ]
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-11T04:30:00+08:00",
+        "source_label": "ignition_batch_C",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "batch": "C"
+      }
+    },
+    {
+      "protocol_id": "E3",
+      "title_zh": "循环演化协议",
+      "title_en": "Cyclic-Evolution Protocol",
+      "stable_slug": "cyclic-evolution",
+      "source_status": "candidate_formalized",
+      "structure_status": "schema_valid",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "definition_original": "状态在有限集合或周期结构内循环演化。",
+      "definition_normative": "【候选规范性定义·待人工确认】当在理论生成空间中建模系统时，循环演化协议要求选择使「状态在有限集合或周期结构内循环演化。」成立的行动方案；它约束/优先该evolution坐标轴，但不单独预测系统命运。",
+      "normative_type": "hard",
+      "constrained_object": [
+        "state_transition"
+      ],
+      "trigger_conditions": [
+        "在构建/生成系统理论时，需要确定价值/结构/演化某一坐标轴的选择。",
+        "当建模目标要求沿该坐标轴最大化、约束或演化时，该协议生效。",
+        "存在对应的书级现实案例映射（book-validation-22）。",
+        "与另两维度的组合权重不由单协议决定，需 P_meta 投影选择。"
+      ],
+      "constraint_result": "prioritize —— 在演化路径中选择该演化模式作为系统状态走向。",
+      "scope": "理论生成空间的evolution坐标轴（value/structure/evolution 之一）；须与另两维度组合后方形成具体可检验的理论形态；不单独预测系统命运。",
+      "applicable_system_levels": [
+        "theoretical-generation-space",
+        "meta-protocol-layer"
+      ],
+      "exclusions": [
+        "不单独作为学科定论",
+        "不替代 Ψ₀ 的判定(J⁺/J⁻)/同构(I_iso)/收敛(L_meta)职责",
+        "不自动计入函数总数"
+      ],
+      "invalid_conditions": [
+        "当缺乏另两维度组合、仅作孤立生成层候选时，不得外推为系统命运结论",
+        "当断言等级超过 L3 时须另接外部学科证据"
+      ],
+      "termination_conditions": [
+        "当进入正式 formal_protocol 状态需治理批准（G34）"
+      ],
+      "neighbor_protocols": [
+        "E1",
+        "E2",
+        "E4"
+      ],
+      "boundary_with_neighbors": "与同维度 E1, E2, E4 为互补坐标轴而非替代关系；跨维度须组合，不互斥。",
+      "conflict_resolution": "同维度内各协议为并列坐标轴、互补不互斥；跨维度需组合；若同时适用且目标冲突，由 P_meta 投影选择、由 L_meta 在元层收敛，单协议不自行裁决。",
+      "priority_rule": "同维度无单一优先级；按建模目标选择；跨维度组合由 P_meta 协调。",
+      "circular_definition_check": "主锚为 P_meta（Ψ₀ 的元协议投影算子）展开；非纯自指循环，依赖 Ψ₀ 外部框架锚定。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [
+          "L_meta"
+        ],
+        "relation_type": "generation",
+        "input_relation": "P_meta 向下展开",
+        "constraint_relation": "Ψ₀ 负责判定/同构/收敛，不被替代",
+        "output_relation": "生成层候选协议",
+        "unresolved_mapping": "与 C(x,y)/M(B_n)/G_δ 的细粒度映射待 formal_protocol 阶段补全",
+        "relation": "P_meta 元协议投影算子向下展开生成该协议；Ψ₀ 的 C/M/I_iso/L_meta/G_δ 负责判定与收敛审核，不被替代。"
+      },
+      "p_meta_relation": "由 P_meta 生成；作为 P_meta 生成层输出；受 P_meta 投影约束。",
+      "function_layer_relation": "reference",
+      "case_layer_relation": "support",
+      "positive_evidence": [
+        {
+          "type": "book_validation_case",
+          "path": "data/meta-protocols/book-validation-cases-20260709.json",
+          "locator": "$.cases",
+          "summary": "书级验证案例映射存在，作为正向证据",
+          "confidence": "medium",
+          "limitations": "book-level，非外部学科证明"
+        },
+        {
+          "type": "doc_example",
+          "path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E3",
+          "summary": "§示例含现实案例（如文档所列）",
+          "confidence": "medium",
+          "limitations": "示例非独立验证"
+        }
+      ],
+      "boundary_evidence": [
+        {
+          "type": "pending",
+          "path": "n/a",
+          "locator": "n/a",
+          "summary": "暂无以区别于实例的边界/反例/失败案例证据，需补充",
+          "confidence": "low",
+          "limitations": "缺失真实边界案例"
+        }
+      ],
+      "source_references": [
+        "docs/meta-protocols/12-meta-protocols.md",
+        "data/meta-protocols/meta-protocols.json",
+        "data/meta-protocols/meta-protocols.jsonl",
+        "data/meta-protocols/book-validation-cases-20260709.json",
+        "docs/meta-protocols/book-validation-22-cases-20260709.md",
+        "docs/meta-protocols/meta-protocol-64-combination-matrix.md",
+        "1111/2026-07-09 1902/ 元协议64种可能性全矩阵案例映射"
+      ],
+      "assertion_level": "L2",
+      "document_path": "docs/meta-protocols/12-meta-protocols.md",
+      "index_entry": "docs/meta-protocols/12-meta-protocols.md#section-E3",
+      "machine_record_path": "data/meta-protocols/meta-protocols.json#/protocols/2",
+      "gate_results": [
+        {
+          "gate_id": "G05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/2",
+          "locator": "$.definition",
+          "reason": "定义含规范性措辞（要求/约束/禁止/允许）",
+          "repair_action": "补充规范性定义"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E3",
+          "reason": "触发条件已显式列出",
+          "repair_action": "补触发条件"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E3",
+          "reason": "排除/失效条件已列",
+          "repair_action": "补失效条件"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/2",
+          "locator": "$.source_references",
+          "reason": "与函数表相似性需人工/对照判定",
+          "repair_action": "对比最近函数"
+        },
+        {
+          "gate_id": "G33",
+          "result": "PENDING",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E3",
+          "reason": "人工复核未完成（reviewer/review_decision 待定）",
+          "repair_action": "人工复核"
+        },
+        {
+          "gate_id": "G34",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不做治理批准",
+          "repair_action": "需项目治理"
+        },
+        {
+          "gate_id": "G35",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不改正式状态",
+          "repair_action": "需独立变更集"
+        }
+      ],
+      "review": {
+        "reviewer": null,
+        "review_date": null,
+        "review_decision": "pending",
+        "review_notes": null
+      },
+      "blocking_issues": [
+        "G05",
+        "G20",
+        "G33"
+      ],
+      "soft_warnings": [
+        "S05:PENDING",
+        "S06:PENDING"
+      ],
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "unresolved_questions": [
+        "formal_expression 仍待补全。",
+        "与函数表的相似性人工判定仍待完成。"
+      ],
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-11T04:30:00+08:00",
+        "source_record_keys": [
+          "applicable_system_levels",
+          "assertion_level",
+          "blocking_issues",
+          "boundary_evidence",
+          "boundary_with_neighbors",
+          "case_layer_relation",
+          "circular_definition_check",
+          "conflict_resolution",
+          "constrained_object",
+          "constraint_result",
+          "current_status",
+          "definition",
+          "definition_normative_draft",
+          "definition_original",
+          "document_path",
+          "draft_change_notes",
+          "draft_machine_eligible",
+          "draft_status",
+          "exclusions",
+          "function_layer_relation",
+          "gate_results",
+          "index_entry",
+          "invalid_conditions",
+          "machine_eligible",
+          "machine_record_path",
+          "missing_evidence",
+          "neighbor_protocols",
+          "normative_type",
+          "p_meta_relation",
+          "positive_evidence",
+          "priority_rule",
+          "protocol_id",
+          "psi0_mapping",
+          "review",
+          "scope",
+          "soft_warnings",
+          "source_references",
+          "stable_slug",
+          "status",
+          "termination_conditions",
+          "title_en",
+          "title_zh",
+          "trigger_conditions"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "is_draft_derived": true,
+        "batch": "C",
+        "migration_mode": "structural_only",
+        "unresolved_questions": [
+          "formal_expression",
+          "G20 similarity check"
+        ]
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-11T04:30:00+08:00",
+        "source_label": "ignition_batch_C",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "batch": "C"
+      }
+    },
+    {
+      "protocol_id": "E4",
+      "title_zh": "收敛演化协议",
+      "title_en": "Convergent-Evolution Protocol",
+      "stable_slug": "convergent-evolution",
+      "source_status": "candidate_formalized",
+      "structure_status": "schema_valid",
+      "machine_validation_status": "pending",
+      "semantic_review_status": "not_reviewed",
+      "governance_status": "not_submitted",
+      "definition_original": "状态向某个均衡点、目标或吸引子收敛。",
+      "definition_normative": "【候选规范性定义·待人工确认】当在理论生成空间中建模系统时，收敛演化协议要求选择使「状态向某个均衡点、目标或吸引子收敛。」成立的行动方案；它约束/优先该evolution坐标轴，但不单独预测系统命运。",
+      "normative_type": "hard",
+      "constrained_object": [
+        "state_transition"
+      ],
+      "trigger_conditions": [
+        "在构建/生成系统理论时，需要确定价值/结构/演化某一坐标轴的选择。",
+        "当建模目标要求沿该坐标轴最大化、约束或演化时，该协议生效。",
+        "存在对应的书级现实案例映射（book-validation-22）。",
+        "与另两维度的组合权重不由单协议决定，需 P_meta 投影选择。"
+      ],
+      "constraint_result": "prioritize —— 在演化路径中选择该演化模式作为系统状态走向。",
+      "scope": "理论生成空间的evolution坐标轴（value/structure/evolution 之一）；须与另两维度组合后方形成具体可检验的理论形态；不单独预测系统命运。",
+      "applicable_system_levels": [
+        "theoretical-generation-space",
+        "meta-protocol-layer"
+      ],
+      "exclusions": [
+        "不单独作为学科定论",
+        "不替代 Ψ₀ 的判定(J⁺/J⁻)/同构(I_iso)/收敛(L_meta)职责",
+        "不自动计入函数总数"
+      ],
+      "invalid_conditions": [
+        "当缺乏另两维度组合、仅作孤立生成层候选时，不得外推为系统命运结论",
+        "当断言等级超过 L3 时须另接外部学科证据"
+      ],
+      "termination_conditions": [
+        "当进入正式 formal_protocol 状态需治理批准（G34）"
+      ],
+      "neighbor_protocols": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "boundary_with_neighbors": "与同维度 E1, E2, E3 为互补坐标轴而非替代关系；跨维度须组合，不互斥。",
+      "conflict_resolution": "同维度内各协议为并列坐标轴、互补不互斥；跨维度需组合；若同时适用且目标冲突，由 P_meta 投影选择、由 L_meta 在元层收敛，单协议不自行裁决。",
+      "priority_rule": "同维度无单一优先级；按建模目标选择；跨维度组合由 P_meta 协调。",
+      "circular_definition_check": "主锚为 P_meta（Ψ₀ 的元协议投影算子）展开；非纯自指循环，依赖 Ψ₀ 外部框架锚定。",
+      "psi0_mapping": {
+        "primary": [
+          "P_meta"
+        ],
+        "secondary": [
+          "L_meta"
+        ],
+        "relation_type": "generation",
+        "input_relation": "P_meta 向下展开",
+        "constraint_relation": "Ψ₀ 负责判定/同构/收敛，不被替代",
+        "output_relation": "生成层候选协议",
+        "unresolved_mapping": "与 C(x,y)/M(B_n)/G_δ 的细粒度映射待 formal_protocol 阶段补全",
+        "relation": "P_meta 元协议投影算子向下展开生成该协议；Ψ₀ 的 C/M/I_iso/L_meta/G_δ 负责判定与收敛审核，不被替代。"
+      },
+      "p_meta_relation": "由 P_meta 生成；作为 P_meta 生成层输出；受 P_meta 投影约束。",
+      "function_layer_relation": "reference",
+      "case_layer_relation": "support",
+      "positive_evidence": [
+        {
+          "type": "book_validation_case",
+          "path": "data/meta-protocols/book-validation-cases-20260709.json",
+          "locator": "$.cases",
+          "summary": "书级验证案例映射存在，作为正向证据",
+          "confidence": "medium",
+          "limitations": "book-level，非外部学科证明"
+        },
+        {
+          "type": "doc_example",
+          "path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E4",
+          "summary": "§示例含现实案例（如文档所列）",
+          "confidence": "medium",
+          "limitations": "示例非独立验证"
+        }
+      ],
+      "boundary_evidence": [
+        {
+          "type": "pending",
+          "path": "n/a",
+          "locator": "n/a",
+          "summary": "暂无以区别于实例的边界/反例/失败案例证据，需补充",
+          "confidence": "low",
+          "limitations": "缺失真实边界案例"
+        }
+      ],
+      "source_references": [
+        "docs/meta-protocols/12-meta-protocols.md",
+        "data/meta-protocols/meta-protocols.json",
+        "data/meta-protocols/meta-protocols.jsonl",
+        "data/meta-protocols/book-validation-cases-20260709.json",
+        "docs/meta-protocols/book-validation-22-cases-20260709.md",
+        "docs/meta-protocols/meta-protocol-64-combination-matrix.md",
+        "1111/2026-07-09 1902/ 元协议64种可能性全矩阵案例映射"
+      ],
+      "assertion_level": "L2",
+      "document_path": "docs/meta-protocols/12-meta-protocols.md",
+      "index_entry": "docs/meta-protocols/12-meta-protocols.md#section-E4",
+      "machine_record_path": "data/meta-protocols/meta-protocols.json#/protocols/3",
+      "gate_results": [
+        {
+          "gate_id": "G05",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/3",
+          "locator": "$.definition",
+          "reason": "定义含规范性措辞（要求/约束/禁止/允许）",
+          "repair_action": "补充规范性定义"
+        },
+        {
+          "gate_id": "G07",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E4",
+          "reason": "触发条件已显式列出",
+          "repair_action": "补触发条件"
+        },
+        {
+          "gate_id": "G10",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E4",
+          "reason": "排除/失效条件已列",
+          "repair_action": "补失效条件"
+        },
+        {
+          "gate_id": "G20",
+          "result": "PENDING",
+          "mode": "semi_automatic",
+          "evidence_path": "data/meta-protocols/meta-protocols.json#/protocols/3",
+          "locator": "$.source_references",
+          "reason": "与函数表相似性需人工/对照判定",
+          "repair_action": "对比最近函数"
+        },
+        {
+          "gate_id": "G33",
+          "result": "PENDING",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/12-meta-protocols.md",
+          "locator": "section:E4",
+          "reason": "人工复核未完成（reviewer/review_decision 待定）",
+          "repair_action": "人工复核"
+        },
+        {
+          "gate_id": "G34",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不做治理批准",
+          "repair_action": "需项目治理"
+        },
+        {
+          "gate_id": "G35",
+          "result": "NOT_APPLICABLE",
+          "mode": "manual",
+          "evidence_path": "docs/meta-protocols/version-iteration-note-20260709.md",
+          "locator": "$",
+          "reason": "本任务不改正式状态",
+          "repair_action": "需独立变更集"
+        }
+      ],
+      "review": {
+        "reviewer": null,
+        "review_date": null,
+        "review_decision": "pending",
+        "review_notes": null
+      },
+      "blocking_issues": [
+        "G05",
+        "G20",
+        "G33"
+      ],
+      "soft_warnings": [
+        "S05:PENDING",
+        "S06:PENDING"
+      ],
+      "content_machine_eligible": false,
+      "ratification_ready": false,
+      "unresolved_questions": [
+        "formal_expression 仍待补全。",
+        "与函数表的相似性人工判定仍待完成。"
+      ],
+      "provenance": {
+        "generated_by": "migrate_legacy_protocol_record",
+        "generated_at": "2026-07-11T04:30:00+08:00",
+        "source_record_keys": [
+          "applicable_system_levels",
+          "assertion_level",
+          "blocking_issues",
+          "boundary_evidence",
+          "boundary_with_neighbors",
+          "case_layer_relation",
+          "circular_definition_check",
+          "conflict_resolution",
+          "constrained_object",
+          "constraint_result",
+          "current_status",
+          "definition",
+          "definition_normative_draft",
+          "definition_original",
+          "document_path",
+          "draft_change_notes",
+          "draft_machine_eligible",
+          "draft_status",
+          "exclusions",
+          "function_layer_relation",
+          "gate_results",
+          "index_entry",
+          "invalid_conditions",
+          "machine_eligible",
+          "machine_record_path",
+          "missing_evidence",
+          "neighbor_protocols",
+          "normative_type",
+          "p_meta_relation",
+          "positive_evidence",
+          "priority_rule",
+          "protocol_id",
+          "psi0_mapping",
+          "review",
+          "scope",
+          "soft_warnings",
+          "source_references",
+          "stable_slug",
+          "status",
+          "termination_conditions",
+          "title_en",
+          "title_zh",
+          "trigger_conditions"
+        ],
+        "mapping_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "is_draft_derived": true,
+        "batch": "C",
+        "migration_mode": "structural_only",
+        "unresolved_questions": [
+          "formal_expression",
+          "G20 similarity check"
+        ]
+      },
+      "version_metadata": {
+        "schema": "protocol-canonical.schema.json",
+        "migrated_at": "2026-07-11T04:30:00+08:00",
+        "source_label": "ignition_batch_C",
+        "migration_notes": [
+          "protocol_id: from legacy id",
+          "title_zh: from legacy title_zh",
+          "title_en: from legacy title_en",
+          "stable_slug: from legacy stable_slug",
+          "source_status: from legacy status",
+          "definition_original: from legacy definition_original",
+          "definition_normative: from legacy definition_normative_draft",
+          "normative_type: from legacy normative_type",
+          "constrained_object: from legacy constrained_object",
+          "trigger_conditions: from legacy trigger_conditions",
+          "constraint_result: from legacy constraint_result",
+          "scope: from legacy scope",
+          "applicable_system_levels: from legacy applicable_system_levels",
+          "exclusions: from legacy exclusions",
+          "invalid_conditions: from legacy invalid_conditions",
+          "termination_conditions: from legacy termination_conditions",
+          "neighbor_protocols: from legacy neighbor_protocols",
+          "boundary_with_neighbors: from legacy boundary_with_neighbors",
+          "conflict_resolution: from legacy conflict_resolution",
+          "priority_rule: from legacy priority_rule",
+          "circular_definition_check: from legacy circular_definition_check",
+          "psi0_mapping: from legacy psi0_mapping",
+          "p_meta_relation: from legacy p_meta_relation",
+          "function_layer_relation: from legacy function_layer_relation",
+          "case_layer_relation: from legacy case_layer_relation",
+          "positive_evidence: from legacy positive_evidence",
+          "boundary_evidence: from legacy boundary_evidence",
+          "source_references: from legacy source_references"
+        ],
+        "batch": "C"
+      }
+    }
+  ]
+}

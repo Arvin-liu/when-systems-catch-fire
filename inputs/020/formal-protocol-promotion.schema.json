@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/formal-protocol-promotion.schema.json",
+  "title": "Formal Protocol Promotion Schema",
+  "type": "object",
+  "required": [
+    "protocol_id",
+    "title_zh",
+    "title_en",
+    "status",
+    "definition",
+    "normative_type",
+    "constrained_object",
+    "trigger_conditions",
+    "constraint_result",
+    "scope",
+    "exclusions",
+    "invalid_conditions",
+    "neighbor_protocols",
+    "conflict_resolution",
+    "psi0_mapping",
+    "p_meta_relation",
+    "function_layer_relation",
+    "case_layer_relation",
+    "positive_evidence",
+    "boundary_evidence",
+    "source_references",
+    "assertion_level",
+    "document_path",
+    "index_entry",
+    "machine_record_path",
+    "review",
+    "gate_results",
+    "machine_eligible",
+    "blocking_issues",
+    "soft_warnings"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "protocol_id": {
+      "type": "string",
+      "pattern": "^(V|S|E)[1-4]$"
+    },
+    "title_zh": {"type": "string", "minLength": 1},
+    "title_en": {"type": "string", "minLength": 1},
+    "status": {
+      "type": "string",
+      "enum": ["candidate_formalized", "machine_eligible", "formal_protocol", "pending", "rejected"]
+    },
+    "definition": {"type": "string", "minLength": 1},
+    "normative_type": {"type": "string", "enum": ["hard", "soft", "governance", "mixed"]},
+    "constrained_object": {"type": "string", "minLength": 1},
+    "trigger_conditions": {"type": "array", "items": {"type": "string"}},
+    "constraint_result": {"type": "string", "minLength": 1},
+    "scope": {"type": "string", "minLength": 1},
+    "exclusions": {"type": "array", "items": {"type": "string"}},
+    "invalid_conditions": {"type": "array", "items": {"type": "string"}},
+    "neighbor_protocols": {"type": "array", "items": {"type": "string"}},
+    "conflict_resolution": {"type": "string", "minLength": 1},
+    "psi0_mapping": {
+      "type": "object",
+      "required": ["primary", "secondary", "relation"],
+      "additionalProperties": false,
+      "properties": {
+        "primary": {"type": "array", "items": {"type": "string"}},
+        "secondary": {"type": "array", "items": {"type": "string"}},
+        "relation": {"type": "string", "minLength": 1}
+      }
+    },
+    "p_meta_relation": {"type": "string", "minLength": 1},
+    "function_layer_relation": {"type": "string", "enum": ["constrain", "permit", "prohibit", "generate", "select", "prioritize", "terminate", "validate", "reference", "other"]},
+    "case_layer_relation": {"type": "string", "minLength": 1},
+    "positive_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "path", "locator", "summary"],
+        "additionalProperties": false,
+        "properties": {
+          "type": {"type": "string"},
+          "path": {"type": "string"},
+          "locator": {"type": "string"},
+          "summary": {"type": "string"}
+        }
+      }
+    },
+    "boundary_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "path", "locator", "summary"],
+        "additionalProperties": false,
+        "properties": {
+          "type": {"type": "string"},
+          "path": {"type": "string"},
+          "locator": {"type": "string"},
+          "summary": {"type": "string"}
+        }
+      }
+    },
+    "source_references": {"type": "array", "items": {"type": "string"}},
+    "assertion_level": {"type": "string", "enum": ["L0", "L1", "L2", "L3", "L4", "L5", "pending"]},
+    "document_path": {"type": "string"},
+    "index_entry": {"type": "string"},
+    "machine_record_path": {"type": "string"},
+    "review": {
+      "type": "object",
+      "required": ["reviewer", "review_date", "review_decision", "review_notes"],
+      "additionalProperties": false,
+      "properties": {
+        "reviewer": {"type": "string"},
+        "review_date": {"type": "string"},
+        "review_decision": {"type": "string"},
+        "review_notes": {"type": "string"}
+      }
+    },
+    "gate_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["gate_id", "result", "mode", "evidence_path", "locator", "reason", "repair_action"],
+        "additionalProperties": false,
+        "properties": {
+          "gate_id": {"type": "string"},
+          "result": {"type": "string", "enum": ["PASS", "FAIL", "PENDING", "NOT_APPLICABLE", "NOT_FOUND"]},
+          "mode": {"type": "string", "enum": ["automatic", "semi_automatic", "manual"]},
+          "evidence_path": {"type": "string"},
+          "locator": {"type": "string"},
+          "reason": {"type": "string"},
+          "repair_action": {"type": "string"}
+        }
+      }
+    },
+    "machine_eligible": {"type": "boolean"},
+    "blocking_issues": {"type": "array", "items": {"type": "string"}},
+    "soft_warnings": {"type": "array", "items": {"type": "string"}}
+  }
+}
