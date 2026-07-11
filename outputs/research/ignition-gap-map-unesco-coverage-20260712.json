@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-07-12",
+  "coverage_basis": {
+    "unesco_record_total": 250,
+    "major_cluster_count": 24,
+    "method": "classify by major theory cluster, then project the status to the corresponding four-digit UNESCO rows"
+  },
+  "summary": {
+    "touched_rows": 240,
+    "theory_core_extracted_rows": 87,
+    "collision_validated_rows": 59,
+    "metaphor_only_rows": 6,
+    "function_partial_rows": 119,
+    "case_only_rows": 28,
+    "narrative_ready_rows": 24,
+    "not_touched_rows": 10
+  },
+  "major_clusters": [
+    {"major_code": "11", "major_name": "逻辑学", "row_count": 6, "primary_status": "NARRATIVE_READY", "gap_types": ["measurement_gap", "narrative_gap_low"]},
+    {"major_code": "12", "major_name": "数学", "row_count": 11, "primary_status": "NARRATIVE_READY", "gap_types": ["evidence_governance_gap"]},
+    {"major_code": "21", "major_name": "天文学与天体物理学", "row_count": 7, "primary_status": "FUNCTION_PARTIAL", "gap_types": ["structure_gap", "counterexample_gap"]},
+    {"major_code": "22", "major_name": "物理学", "row_count": 16, "primary_status": "COLLISION_VALIDATED", "gap_types": ["narrative_gap", "measurement_gap"]},
+    {"major_code": "23", "major_name": "化学", "row_count": 10, "primary_status": "FUNCTION_PARTIAL", "gap_types": ["theory_coverage_gap", "measurement_gap"]},
+    {"major_code": "24", "major_name": "生命科学", "row_count": 22, "primary_status": "FUNCTION_PARTIAL", "gap_types": ["theory_coverage_gap", "counterexample_gap"]},
+    {"major_code": "25", "major_name": "地球空间科学", "row_count": 13, "primary_status": "FUNCTION_PARTIAL", "gap_types": ["theory_coverage_gap", "narrative_gap"]},
+    {"major_code": "31", "major_name": "农业科学", "row_count": 10, "primary_status": "NOT_TOUCHED", "gap_types": ["theory_coverage_gap", "structure_gap"]},
+    {"major_code": "32", "major_name": "医学科学", "row_count": 15, "primary_status": "FUNCTION_PARTIAL", "gap_types": ["measurement_gap", "counterexample_gap"]},
+    {"major_code": "33", "major_name": "技术科学", "row_count": 30, "primary_status": "COLLISION_VALIDATED", "gap_types": ["narrative_gap", "source_governance_gap"]},
+    {"major_code": "51", "major_name": "人类学", "row_count": 4, "primary_status": "FUNCTION_PARTIAL", "gap_types": ["subjectivity_gap", "theory_coverage_gap"]},
+    {"major_code": "52", "major_name": "人口学", "row_count": 8, "primary_status": "CASE_ONLY", "gap_types": ["theory_coverage_gap", "measurement_gap"]},
+    {"major_code": "53", "major_name": "经济科学", "row_count": 13, "primary_status": "COLLISION_VALIDATED", "gap_types": ["counterexample_gap", "narrative_gap"]},
+    {"major_code": "54", "major_name": "地理学", "row_count": 5, "primary_status": "CASE_ONLY", "gap_types": ["theory_coverage_gap", "scale_gap"]},
+    {"major_code": "55", "major_name": "历史学", "row_count": 7, "primary_status": "NARRATIVE_READY", "gap_types": ["source_governance_gap"]},
+    {"major_code": "56", "major_name": "法学", "row_count": 6, "primary_status": "FUNCTION_PARTIAL", "gap_types": ["theory_coverage_gap", "measurement_gap"]},
+    {"major_code": "57", "major_name": "语言学", "row_count": 6, "primary_status": "METAPHOR_ONLY", "gap_types": ["theory_coverage_gap", "narrative_gap"]},
+    {"major_code": "58", "major_name": "教育学", "row_count": 4, "primary_status": "FUNCTION_PARTIAL", "gap_types": ["subjectivity_gap", "counterexample_gap"]},
+    {"major_code": "59", "major_name": "政治科学", "row_count": 11, "primary_status": "FUNCTION_PARTIAL", "gap_types": ["theory_coverage_gap", "source_governance_gap"]},
+    {"major_code": "61", "major_name": "心理学", "row_count": 15, "primary_status": "FUNCTION_PARTIAL", "gap_types": ["subjectivity_gap", "measurement_gap"]},
+    {"major_code": "62", "major_name": "伦理学", "row_count": 4, "primary_status": "THEORY_CORE_EXTRACTED", "gap_types": ["evidence_gap", "narrative_gap"]},
+    {"major_code": "63", "major_name": "社会学", "row_count": 12, "primary_status": "FUNCTION_PARTIAL", "gap_types": ["subjectivity_gap", "narrative_gap"]},
+    {"major_code": "71", "major_name": "艺术类", "row_count": 6, "primary_status": "CASE_ONLY", "gap_types": ["theory_coverage_gap", "narrative_gap"]},
+    {"major_code": "72", "major_name": "传播/媒体/艺术交叉类", "row_count": 9, "primary_status": "CASE_ONLY", "gap_types": ["theory_coverage_gap", "narrative_gap"]}
+  ],
+  "next_batches": [
+    {
+      "batch_id": "GAP-B1",
+      "name": "角色—身份—主体性主线",
+      "targets": ["63", "61", "62", "51"],
+      "goal": "补角色、身份、承认、叙事主体的理论核"
+    },
+    {
+      "batch_id": "GAP-B2",
+      "name": "照护—情感—身体",
+      "targets": ["61", "63", "32"],
+      "goal": "补情感劳动、照护政治与身体主体性"
+    },
+    {
+      "batch_id": "GAP-B3",
+      "name": "语言—传播—组织接口",
+      "targets": ["57", "72", "33"],
+      "goal": "补称呼、标签、职位如何成为主体入口"
+    }
+  ]
+}

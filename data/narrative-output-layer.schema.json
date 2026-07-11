@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/narrative-output-layer.schema.json",
+  "title": "Narrative Output Layer Package",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "story_id",
+    "title",
+    "focus_functions",
+    "core_case_ids",
+    "primary_status",
+    "sources",
+    "sections",
+    "rejected_or_downgraded_candidates"
+  ],
+  "properties": {
+    "story_id": {
+      "type": "string",
+      "pattern": "^STORY-\\d{8}-[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 8
+    },
+    "focus_functions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^D\\d{3,4}$"
+      }
+    },
+    "core_case_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^C-\\d{4}$"
+      }
+    },
+    "primary_status": {
+      "type": "string",
+      "enum": [
+        "draft_story_sample",
+        "narrative_ready",
+        "boundary_locked"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_id",
+          "title",
+          "source_type",
+          "locator",
+          "reliability"
+        ],
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^SRC-[A-Z0-9-]+$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 4
+          },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "local_note",
+              "repo_artifact",
+              "official_biography",
+              "official_patent",
+              "museum_archive",
+              "library_record"
+            ]
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 4
+          },
+          "reliability": {
+            "type": "string",
+            "enum": [
+              "primary",
+              "high",
+              "medium"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "section_id",
+          "section_type",
+          "mental_layer",
+          "assertions"
+        ],
+        "properties": {
+          "section_id": {
+            "type": "string"
+          },
+          "section_type": {
+            "type": "string",
+            "enum": [
+              "opening_scene",
+              "self_explanation",
+              "role_overlay",
+              "cross_domain_jump",
+              "boundary_check",
+              "return"
+            ]
+          },
+          "mental_layer": {
+            "type": "string",
+            "enum": [
+              "L1",
+              "L2",
+              "L3",
+              "L4",
+              "L5",
+              "L6",
+              "L7"
+            ]
+          },
+          "jump_hinge": {
+            "type": "string"
+          },
+          "assertions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "assertion_id",
+                "claim_type",
+                "source_id",
+                "assertion_text",
+                "mapped_variables",
+                "non_isomorphic_limits"
+              ],
+              "properties": {
+                "assertion_id": {
+                  "type": "string",
+                  "pattern": "^A-\\d{2}$"
+                },
+                "claim_type": {
+                  "type": "string",
+                  "enum": [
+                    "FACT",
+                    "INFERENCE",
+                    "ANALOGY",
+                    "METAPHOR",
+                    "PENDING"
+                  ]
+                },
+                "source_id": {
+                  "type": "string",
+                  "pattern": "^SRC-[A-Z0-9-]+$"
+                },
+                "assertion_text": {
+                  "type": "string",
+                  "minLength": 8
+                },
+                "mapped_variables": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "non_isomorphic_limits": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rejected_or_downgraded_candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidate",
+          "status",
+          "reason"
+        ],
+        "properties": {
+          "candidate": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "REJECTED",
+              "METAPHOR_ONLY",
+              "PARTIAL_ISOMORPHISM"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 12
+          }
+        }
+      }
+    }
+  }
+}
