@@ -5,7 +5,7 @@ from __future__ import annotations
 import json, datetime
 from pathlib import Path
 
-ROOT = Path("/Users/zhiyuan/Documents/Codex/2026-07-10/ignition-20260709-022")
+ROOT = Path(__file__).resolve().parent.parent
 NOW = "2026-07-10T21:45:00+08:00"
 results = json.loads((ROOT/"data/protocol-canonical-validation-results.json").read_text())["results"]
 by_pid = {r["protocol_id"]: r for r in results}

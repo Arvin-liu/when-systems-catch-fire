@@ -4,9 +4,9 @@ from __future__ import annotations
 import json, hashlib, subprocess, datetime
 from pathlib import Path
 
-ROOT = Path("/Users/zhiyuan/Documents/Codex/2026-07-10/ignition-20260709-022")
+ROOT = Path(__file__).resolve().parent.parent
 NOW = "2026-07-10T22:00:00+08:00"
-REPO = Path("/Users/zhiyuan/Agent 工作区/Codex/2026-06-25/github-cp-agent-500-600-1000/when-systems-catch-fire")
+REPO = ROOT
 results = json.loads((ROOT/"data/protocol-canonical-validation-results.json").read_text())["results"]
 by_pid = {r["protocol_id"]: r for r in results}
 
@@ -78,7 +78,7 @@ generated_at: {NOW}
 - 021：12 份结构化草案 + 晋级预演。draft_machine_eligible=0/12（真实缺口，canonical 字段缺失）。
 
 ## 3. 实际点火仓库路径
-/Users/zhiyuan/Agent 工作区/Codex/2026-06-25/github-cp-agent-500-600-1000/when-systems-catch-fire
+{REPO}
 
 ## 4. 分支和 HEAD
 case/book-validation-22-20260709 / dba07ea792d33c031c3163a4d40451a9d5cc5dd3

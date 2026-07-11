@@ -5,7 +5,7 @@ from __future__ import annotations
 import json, re, sys
 from pathlib import Path
 
-ROOT = Path("/Users/zhiyuan/Documents/Codex/2026-07-10/ignition-20260709-022")
+ROOT = Path(__file__).resolve().parent.parent
 
 def main():
     vsrc = (ROOT / "inputs/020/validate_formal_protocol.py").read_text(encoding="utf-8")

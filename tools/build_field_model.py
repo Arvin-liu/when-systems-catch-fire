@@ -4,8 +4,8 @@ from __future__ import annotations
 import json, re, sys, subprocess
 from pathlib import Path
 
-ROOT = Path("/Users/zhiyuan/Documents/Codex/2026-07-10/ignition-20260709-022")
-REPO = Path("/Users/zhiyuan/Agent 工作区/Codex/2026-06-25/github-cp-agent-500-600-1000/when-systems-catch-fire")
+ROOT = Path(__file__).resolve().parent.parent
+REPO = ROOT
 NOW = "2026-07-10T21:00:00+08:00"
 
 def read(p): return p.read_text(encoding="utf-8")

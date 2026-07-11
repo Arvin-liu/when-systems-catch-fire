@@ -14,7 +14,7 @@ VALIDATOR = ROOT / "tools/validate_protocol_canonical.py"
 SCHEMA = ROOT / "canonical/schemas/protocol-canonical.schema.json"
 GATE = ROOT / "canonical/data/gate-registry.json"
 MAP = ROOT / "canonical/mappings/legacy-to-canonical-field-map.json"
-REPO = "/Users/zhiyuan/Agent 工作区/Codex/2026-06-25/github-cp-agent-500-600-1000/when-systems-catch-fire"
+REPO = ROOT
 FAKE = ["codex", "gpt", "agent", "openclaw", "qclaw", "claude"]
 
 results = []  # (name, passed, detail)
@@ -64,7 +64,7 @@ check("T3_all_required_fields_covered", required_covered)
 
 # ---- T4-T8: legacy mapping equivalence/approx/one-to-many/many-to-one/info-loss ----
 # build a sample legacy record from source
-src = json.loads(Path(f"{REPO}/data/meta-protocols/meta-protocols.json").read_text())
+src = json.loads((REPO / "data/meta-protocols/meta-protocols.json").read_text())
 sample = src["protocols"][0]
 # many-to-one: constraint_result <- [constraint_result, role_in_P_meta]
 check("T4_legacy_exact_fields_mapped", "definition" in legacy["definition_original"])
@@ -76,7 +76,7 @@ check("T7_many_to_one", legacy["psi0_mapping"] == ["psi0_mapping", "relation_to_
 # ---- Run validator on SOURCE data (migrated via legacy map) ----
 migrated_out = ROOT / "canonical/data/protocols-canonical.json"
 subprocess.run([sys.executable, str(ROOT/"tools/migrate_legacy_protocol_record.py"),
-                "--input", f"{REPO}/data/meta-protocols/meta-protocols.json",
+                "--input", str(REPO / "data/meta-protocols/meta-protocols.json"),
                 "--source-label", "ignition_source", "--output", str(migrated_out)], check=True)
 
 val_json = ROOT / "data/protocol-canonical-validation-results.json"
@@ -174,6 +174,46 @@ d0 = draft["protocols"][0]
 check("T28_021_draft_compatible", all(k in d0 for k in ["protocol_id","title_zh","title_en",
       "definition_original","normative_type","constrained_object","trigger_conditions",
       "constraint_result","scope","neighbor_protocols","conflict_resolution","psi0_mapping"]))
+
+# ---- T29: S2 persisted derived status must match validator on canonical release records ----
+persisted = json.loads((ROOT/"data/meta-protocols/protocols-canonical.json").read_text())
+persisted_records = persisted["protocols"]
+persisted_input = ROOT/"tests/fixtures/persisted-release.json"
+persisted_input.write_text(json.dumps(persisted_records, ensure_ascii=False), encoding="utf-8")
+persisted_out = ROOT/"tests/fixtures/persisted-release-result.json"
+persisted_md = ROOT/"tests/fixtures/persisted-release.md"
+rcp = subprocess.run([sys.executable, str(VALIDATOR), "--input", str(persisted_input),
+    "--repo", str(ROOT), "--schema", str(SCHEMA), "--gate-registry", str(GATE), "--legacy-map", str(MAP),
+    "--json-output", str(persisted_out), "--markdown-output", str(persisted_md)],
+    capture_output=True, text=True)
+check("T29_persisted_run", rcp.returncode in (0, 1), rcp.stderr[:200])
+persisted_live = {r["protocol_id"]: r for r in json.loads(persisted_out.read_text())["results"]}
+s2_rec = next(rec for rec in persisted_records if rec["protocol_id"] == "S2")
+s2_live = persisted_live["S2"]
+s2_persisted_gates = {g["gate_id"]: g["result"] for g in s2_rec.get("gate_results", [])}
+s2_live_gates = {g["gate_id"]: g["result"] for g in s2_live["gate_results"]}
+s2_live_blocking_issues = [gid for gid in ("G20", "G33") if s2_live_gates.get(gid) in {"FAIL", "PENDING", "NOT_FOUND"}]
+for gid in ("G20", "G33"):
+    check(f"T29_S2_gate_sync_{gid}", s2_persisted_gates.get(gid) == s2_live_gates.get(gid),
+          f"persisted={s2_persisted_gates.get(gid)} live={s2_live_gates.get(gid)}")
+check("T29_S2_machine_validation_status_sync",
+      s2_rec.get("machine_validation_status") == s2_live["machine_validation_status"],
+      f"persisted={s2_rec.get('machine_validation_status')} live={s2_live['machine_validation_status']}")
+check("T29_S2_blocking_issues_sync",
+      s2_rec.get("blocking_issues") == s2_live_blocking_issues,
+      f"persisted={s2_rec.get('blocking_issues')} live={s2_live_blocking_issues}")
+check("T29_S2_content_machine_eligible_sync",
+      s2_rec.get("content_machine_eligible") == s2_live["content_machine_eligible"],
+      f"persisted={s2_rec.get('content_machine_eligible')} live={s2_live['content_machine_eligible']}")
+check("T29_S2_ratification_ready_sync",
+      s2_rec.get("ratification_ready") == s2_live["ratification_ready"],
+      f"persisted={s2_rec.get('ratification_ready')} live={s2_live['ratification_ready']}")
+check("T29_S2_G20_pending", s2_live_gates.get("G20") == "PENDING", f"S2 G20={s2_live_gates.get('G20')}")
+check("T29_S2_G33_pending", s2_live_gates.get("G33") == "PENDING", f"S2 G33={s2_live_gates.get('G33')}")
+check("T29_S2_content_machine_eligible_false", s2_live["content_machine_eligible"] is False,
+      f"S2 content_machine_eligible={s2_live['content_machine_eligible']}")
+check("T29_S2_ratification_ready_false", s2_live["ratification_ready"] is False,
+      f"S2 ratification_ready={s2_live['ratification_ready']}")
 
 # ---- summary ----
 passed = sum(1 for _, p, _ in results if p)
