@@ -1,0 +1,54 @@
+{
+  "task_id": "IGNITION-20260709-056",
+  "audit_mode": "independent_second_angle_no_quota",
+  "material": "57｜李丹阳 × 脱不花：不听话的人",
+  "material_sha256": "ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497",
+  "external_report": {
+    "title": "脱不花 × 李丹阳长谈：点火碰撞全部增量记录（D600—D602 / C-0810—C-0811）",
+    "note_id": "1915319279935456112",
+    "sha256": "585ee797cf92b93f19b5747fbc6f90c21df93ecf490ff24ee647f9d7f2fd6add",
+    "access": "read_only_getnote_0000",
+    "contains_command_attributed_numbers": false
+  },
+  "authoritative_counts": {
+    "function_table_files": 622,
+    "function_D_unique": 548,
+    "function_max_D": "D602",
+    "case_table_files": 807,
+    "case_C_unique": 806,
+    "case_max_C": "C-0811",
+    "head": "5d2f56b9e"
+  },
+  "candidates": [
+    {"key": "M3", "fn": "D600", "primary_classification": "NEW_FUNCTION", "status": "KEEP", "anchors": ["A2", "A3", "A4"], "nearest_neighbor_diff": "vs D595: 支持退化 vs 待遇绑定"},
+    {"key": "M4", "fn": "D601", "primary_classification": "NEW_FUNCTION", "status": "KEEP", "anchors": ["A5", "A8", "A15"], "nearest_neighbor_diff": "vs D245: 社会角色遮蔽 vs 数学门控"},
+    {"key": "M5", "fn": "D602", "primary_classification": "NEW_FUNCTION", "status": "KEEP", "anchors": ["A7", "A8", "A9"], "nearest_neighbor_diff": "vs T40: 价值-决策分离 vs 决策-信息对称"},
+    {"key": "M7", "fn": "D603", "primary_classification": "NEW_FUNCTION", "status": "PROMOTE_FROM_CANDIDATE", "anchors": ["A10", "B5", "A9"], "nearest_neighbor_diff": "vs D467: 主体主动刹车 vs 势阱惯性"},
+    {"key": "M8", "fn": null, "primary_classification": "PENDING_EVIDENCE", "status": "HOLD", "anchors": ["B6", "A11", "A12"], "nearest_neighbor_diff": "vs D597/D598: 努力≠人格 层需外部判"},
+    {"key": "M9", "fn": "D604", "primary_classification": "NEW_FUNCTION", "status": "PROMOTE_FROM_CANDIDATE", "anchors": ["A13"], "nearest_neighbor_diff": "vs D602: 协作需求排序 vs 权力错配"},
+    {"key": "M1", "fn": "D595", "primary_classification": "BOUNDARY_EXTENSION", "status": "KEEP"},
+    {"key": "M6", "fn": "D583", "primary_classification": "BOUNDARY_EXTENSION", "status": "KEEP"},
+    {"key": "M2", "fn": null, "primary_classification": "ALREADY_COVERED", "status": "KEEP", "note": "-> D598+D597"}
+  ],
+  "cases": [
+    {"key": "C-0810", "classification": "KEEP", "fn": "D602", "anchors": ["A7", "A8", "A9"]},
+    {"key": "C-0811", "classification": "KEEP", "fn": "D601", "anchors": ["A5", "A8", "A15"]}
+  ],
+  "corrections": [
+    "command_attributed_numbers (617->620, f1=15%/3%, isomorph 70/65/68, A-layer reuse 100%) NOT in external report; unreproducible; not used",
+    "M7/M8/M9 were paused due to <=5 quota; quota abolished by this task; M7/M9 promoted, M8 held pending",
+    "counting口径 split: file_total vs D_unique vs C_unique; not mixed"
+  ],
+  "summary": {
+    "new_functions": 5,
+    "new_functions_kept": 3,
+    "new_functions_promoted": 2,
+    "new_cases": 0,
+    "boundary_extensions": 2,
+    "pending_evidence": 1,
+    "rejected": 0,
+    "canonical_changed": false,
+    "charter_changed": false,
+    "meta_protocols_changed": false
+  }
+}
