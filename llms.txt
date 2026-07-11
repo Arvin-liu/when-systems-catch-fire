@@ -6,6 +6,8 @@ Current version: 2026-07-09 meta-protocol generation layer.
 64 protocol combinations (V×S×E) are a theoretical generation space, not empirical exhaustion.
 Unified Function Table and Unified Case Table are reviewed asset stores (617 functions, 804 cases as of 2026-07-09).
 Book validation cases (22) are candidate materials unless assigned formal C IDs.
+The Life Community Value Charter is the project’s normative value boundary. It does not replace evidence, validation, semantic review, or governance approval.
+See: docs/governance/life-community-value-charter.md
 
 Key paths:
 - README.md : human + project entry
