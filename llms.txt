@@ -1,31 +1,38 @@
 Project identity:
 Ignition is a cross-domain structural inference and theory-generation framework.
-Current version: 2026-07-09 meta-protocol generation layer.
-Ψ₀ is the meta-judgment and convergence framework (C × M × I_iso × L_meta × G_δ × P_meta).
-12 meta-protocols are the expanded P_meta theory-generation layer (V1–V4 value, S1–S4 structure, E1–E4 evolution).
-The 12 meta-protocol normative reviews are external governance records grounded in the Life Community Value Charter. They do not modify canonical protocol status or replace factual validation.
-64 protocol combinations (V×S×E) are a theoretical generation space, not empirical exhaustion.
-Unified Function Table and Unified Case Table are reviewed asset stores (617 functions, 804 cases as of 2026-07-09).
-Book validation cases (22) are candidate materials unless assigned formal C IDs.
-The Life Community Value Charter is the project’s normative value boundary. It does not replace evidence, validation, semantic review, or governance approval.
-See: docs/governance/life-community-value-charter.md
 
-Key paths:
-- README.md : human + project entry
-- SUMMARY.md : reading navigation
-- docs/PROJECT-ARCHITECTURE.md : architecture
-- docs/USAGE.md : human usage
-- docs/AGENT-GUIDE.md : agent execution rules
-- docs/GET-BRAIN-WORKFLOW.md : Get-Brain (得到大脑) collaboration
-- docs/VERSIONING.md : versioning policy
-- docs/meta-protocols/ : 12 protocols + 64 matrix + 22 book candidates
-- data/meta-protocols/ : machine-readable JSON (validate with tools/validate_meta_protocols.py)
-- 统一函数总表/ and 统一案例总表/ : formal reviewed tables (DO NOT modify unless explicit task)
+AI entry order:
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/README.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-HANDOFF.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/PROJECT-ARCHITECTURE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/VERSIONING.md
 
-Red lines for agents:
-- Do NOT modify Ψ₀ math definition or replace Ψ₀.
-- Do NOT modify 统一函数总表/ or 统一案例总表/ (INDEX or bodies).
-- Do NOT assign C IDs to the 22 book candidates, and do NOT count 12 meta-protocols as functions.
-- Never claim Ignition has externally proven a scientific or mathematical theorem.
-- Never claim 64 combinations exhaust all reality; distinguish real_case vs inferred_shape.
-- Always run tools/validate_meta_protocols.py and tools/validate_data.py before commit.
+Machine-readable guardrails:
+- Do not invent repository contents when a file is not visible.
+- If the AI cannot read a GitHub file directly, it should ask the user to upload the file.
+- Do not modify canonical, formal function tables, or formal case tables unless the task explicitly says so.
+- Treat candidate materials, prompts, and drafts as non-canonical until explicitly promoted.
+- Mark uncertainty as pending or partial instead of upgrading it to fact.
+
+Entry branches:
+- Readable GitHub files: follow the main links above.
+- PR preview only: use the PR preview links and label the result `PR preview only`.
+- Single-file read limited: ask for the smallest upload set listed in `docs/AI-USAGE.md`.
+- Fully offline: use the offline prompt package in `docs/AI-PROMPT-TEMPLATES.md` and wait for uploads.
+
+Project structure:
+- README is the dual front door.
+- AI-START-HERE is the AI start page.
+- AI-HANDOFF is the live-link truth page.
+- docs/AI-USAGE.md explains how to work safely.
+- docs/AI-PROMPT-TEMPLATES.md provides copy-paste prompts.
+- 统一函数总表/ and 统一案例总表/ are formal reviewed assets and must not be changed without an explicit task.
+
+Safety defaults:
+- Read boundaries before conclusions.
+- Verify source visibility before summarizing.
+- Prefer partial truth over confident invention.
+
