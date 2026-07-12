@@ -1,42 +1,11 @@
-# 点火下一轮碰撞路线图（2026-07）
+# IGNITION 059 next collision roadmap
 
-## Batch 1｜角色—身份—主体性主线
+- total rows reviewed from inventory: 250
+- rows with explicit coverage evidence in this pass: 0
+- next step: manually map only those four-digit disciplines with direct function/case/collision/story anchors.
+- next step: keep the remainder UNASSESSED rather than inheriting major-level status.
+- next step: refresh the Get note copy with the corrected conservative wording.
 
-- 目标区域：社会学 / 心理学 / 承认理论 / 叙事身份
-- 材料类型：理论经典、人物口述、组织传记、家庭叙事
-- 预期补全：
-  - D601 上游形成机制
-  - “角色覆盖主体”与“价值创造权—决策权错配”之间的桥
-  - 主体性恢复的边界条件
-- 验证要求：
-  - 至少 1 个高质量 rejected candidate
-  - 至少 1 个 narrative-ready 样稿
-  - 不把哲学判断写成经验事实
-- 停止条件：
-  - 能稳定区分角色、身份、承认、主体化四层
-
-## Batch 2｜照护—情感—身体
-
-- 目标区域：照护伦理、情感劳动、身体社会学
-- 材料类型：照护研究、临床 / 家庭非虚构、劳动研究
-- 预期补全：
-  - 点火对“好妈妈 / 贤内助 / 情绪稳定器”角色的结构解释
-  - M8 及相关价值羞耻结构的外部证据
-- 验证要求：
-  - 不能只做价值宣言
-  - 每条候选至少要有一个反例
-- 停止条件：
-  - 至少抽出 1 个可稳定复用的情感 / 照护函数或边界扩展
-
-## Batch 3｜语言—传播—组织接口
-
-- 目标区域：语言学、传播学、组织身份
-- 材料类型：媒体研究、品牌命名、组织沟通、职业身份材料
-- 预期补全：
-  - “名字变成接口”的传播机制
-  - 称呼、标签、职位如何稳定塑造主体入口
-- 验证要求：
-  - 不把修辞效果误写成因果原语
-  - 传播材料必须回到组织或身份结构
-- 停止条件：
-  - 语言学从 `METAPHOR_ONLY` 至少推进到 `FUNCTION_PARTIAL`
+## Operating rule
+- inventory source is not coverage evidence.
+- summary is derived only from row-level records.
