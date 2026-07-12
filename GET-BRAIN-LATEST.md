@@ -1,6 +1,6 @@
-# 点火项目最新现状｜2026-07-12 11:45:00 +08:00
+# 点火项目最新现状｜2026-07-12 12:20:00 +08:00
 
-- generated_at: `2026-07-12T11:45:00+08:00`
+- generated_at: `2026-07-12T12:20:00+08:00`
 - maintained_by: `Agent`
 - reviewed_by: `GPT`
 - review_status: `PENDING_GPT_REVIEW`
@@ -8,9 +8,9 @@
 ## Authority
 
 - ignition_main_sha: `771349da3e241cdff29eaf3cf880ae2ce158549f`
-- ignition_main_baseline_at: `2026-07-12T11:44:00+08:00`
-- 1111_main_sha: `8cf1430a018f3eddc5e15946a051210be1027e37`
-- 1111_main_baseline_at: `2026-07-12T11:40:00+08:00`
+- ignition_main_baseline_at: `2026-07-12T12:20:00+08:00`
+- 1111_main_sha: `104a11c624426631757f765c8bb1618b78a8ab9b`
+- 1111_main_baseline_at: `2026-07-12T12:18:00+08:00`
 
 ## Counts
 
@@ -27,6 +27,8 @@
 - OPEN_PR:
   - `#3` draft protocol audit
   - `#5` draft protocol entry/table relation
+  - `#15` GET-BRAIN-LATEST maintenance draft
+  - `#18` 1111 Getnote corpus relay draft
 - EXTERNAL_IN_PROGRESS:
   - `role-identity-subjectivity`
   - `structural-gap-unesco`
@@ -35,7 +37,7 @@
 - PENDING_EVIDENCE:
   - V2 full cost efficiency measurement
   - V3 innovation reversibility measurement
-  - 2026-07-12 late-arriving Get 笔记 increment after the failed 429 retry
+  - 2026-07-12 late-arriving Get 笔记 increment is confirmed and archived, but not promoted to formal authority
 
 ## Working Rules
 
@@ -52,4 +54,3 @@
 - formal cases: `data/case-items/`
 - validators: `tests/`, `tools/`
 - 1111 relay: `https://github.com/Arvin-liu/1111`
-
