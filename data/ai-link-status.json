@@ -1,0 +1,62 @@
+{
+  "project": "Arvin-liu/when-systems-catch-fire",
+  "updated_at": "2026-07-12 18:05 (GMT+8)",
+  "status_model": [
+    "main",
+    "pr_preview_only",
+    "merged_main"
+  ],
+  "links": [
+    {
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/README.md",
+      "status": "main",
+      "note": "human front door"
+    },
+    {
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md",
+      "status": "pr_preview_only",
+      "note": "AI start page is not yet in main"
+    },
+    {
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-HANDOFF.md",
+      "status": "pr_preview_only",
+      "note": "AI handoff page is not yet in main"
+    },
+    {
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/llms.txt",
+      "status": "pr_preview_only",
+      "note": "machine-readable AI entry is preview only"
+    },
+    {
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md",
+      "status": "pr_preview_only",
+      "note": "usage guide is preview only"
+    },
+    {
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md",
+      "status": "pr_preview_only",
+      "note": "prompt templates are preview only"
+    },
+    {
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/README.md",
+      "status": "pr_preview_only",
+      "note": "preview branch truth source"
+    },
+    {
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-START-HERE.md",
+      "status": "pr_preview_only",
+      "note": "preview branch truth source"
+    },
+    {
+      "url": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-HANDOFF.md",
+      "status": "pr_preview_only",
+      "note": "preview branch truth source"
+    }
+  ],
+  "truth_notes": [
+    "main URLs for AI entry files 404 until merged",
+    "default copy text must point to preview absolute links",
+    "main links remain valid only for already-merged human navigation pages"
+  ]
+}
+
