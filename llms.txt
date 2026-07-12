@@ -2,12 +2,12 @@ Project identity:
 Ignition is a cross-domain structural inference and theory-generation framework.
 
 AI entry order:
-- README.md
-- AI-START-HERE.md
-- docs/AI-USAGE.md
-- docs/AI-PROMPT-TEMPLATES.md
-- docs/PROJECT-ARCHITECTURE.md
-- docs/VERSIONING.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/README.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/PROJECT-ARCHITECTURE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/VERSIONING.md
 
 Machine-readable guardrails:
 - Do not invent repository contents when a file is not visible.
@@ -16,13 +16,17 @@ Machine-readable guardrails:
 - Treat candidate materials, prompts, and drafts as non-canonical until explicitly promoted.
 - Mark uncertainty as pending or partial instead of upgrading it to fact.
 
+Entry branches:
+- Readable GitHub files: follow the main links above.
+- Single-file read limited: ask for the smallest upload set listed in `docs/AI-USAGE.md`.
+- Fully offline: use the offline prompt package in `docs/AI-PROMPT-TEMPLATES.md` and wait for uploads.
+
 Project structure:
-- `README.md` is the AI-first front door.
-- `AI-START-HERE.md` is the first-click handoff for any AI.
-- `docs/AI-USAGE.md` explains how to work safely.
-- `docs/AI-PROMPT-TEMPLATES.md` provides copy-paste prompts.
-- `docs/PROJECT-ARCHITECTURE.md` and `docs/VERSIONING.md` describe the deeper structure.
-- `统一函数总表/` and `统一案例总表/` are formal reviewed assets and must not be changed without an explicit task.
+- README is the AI-first front door.
+- AI-START-HERE is the first-click handoff for any AI.
+- docs/AI-USAGE.md explains how to work safely.
+- docs/AI-PROMPT-TEMPLATES.md provides copy-paste prompts.
+- 统一函数总表/ and 统一案例总表/ are formal reviewed assets and must not be changed without an explicit task.
 
 Safety defaults:
 - Read boundaries before conclusions.

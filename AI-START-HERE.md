@@ -23,10 +23,24 @@
 - 再说明哪些地方需要核验。
 - 最后给出最短可执行步骤。
 
+## 三类 AI 能力分支
+
+- 可读 GitHub：直接打开 main 链接继续。
+- 单文件读取受限：请求最小上传清单。
+- 完全离线：只使用我上传的文件，不猜测仓库内容。
+
+## 最小上传清单
+
+- `README.md`
+- `AI-START-HERE.md`
+- `llms.txt`
+- `docs/AI-USAGE.md`
+- `docs/AI-PROMPT-TEMPLATES.md`
+
 ## 快速入口
 
-- 仓库首页：`./`
-- 机器可读入口：`./llms.txt`
-- AI 使用指南：`./docs/AI-USAGE.md`
-- 提示词模板：`./docs/AI-PROMPT-TEMPLATES.md`
+- 仓库首页：https://github.com/Arvin-liu/when-systems-catch-fire
+- 机器可读入口：https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/llms.txt
+- AI 使用指南：https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md
+- 提示词模板：https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md
 

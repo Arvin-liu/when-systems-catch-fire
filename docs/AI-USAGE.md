@@ -9,11 +9,28 @@
 - 先说边界，再说推理。
 - 不要把没有看到的文件内容编造成事实。
 
-## 文件读取规则
+## 三类能力分支
 
-- 如果 AI 能直接读取仓库文件，就按 `README.md`、`AI-START-HERE.md`、`llms.txt` 的顺序读。
-- 如果 AI 不能直接读取 GitHub 文件，就请它明确列出需要上传的文件。
-- 如果某个文件、链接、截图或附件缺失，不要让 AI 猜。
+### 1. 可读 GitHub
+
+- 直接打开这些 main 链接：
+  - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/README.md
+  - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md
+  - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/llms.txt
+  - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md
+  - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md
+
+### 2. 单文件读取受限
+
+- 让 AI 明确说出它能读到什么。
+- 然后只上传最小上传清单。
+- 不要一次塞入无关文档。
+
+### 3. 完全离线
+
+- 只给 AI 上传的文件。
+- 不要让它猜仓库状态。
+- 需要时先补 `README.md`、`AI-START-HERE.md`、`llms.txt`，再补其他文件。
 
 ## 推荐工作流
 
@@ -29,9 +46,17 @@
 - 证据不足。
 - 结论会影响正式 canonical、正式函数表或正式案例表。
 
+## 最小上传清单
+
+- `README.md`
+- `AI-START-HERE.md`
+- `llms.txt`
+- `docs/AI-USAGE.md`
+- `docs/AI-PROMPT-TEMPLATES.md`
+
 ## 适合直接复制的提示语
 
 ```text
-先读 `README.md`、`AI-START-HERE.md` 和 `llms.txt`。如果你不能直接读取某个 GitHub 文件，请告诉我需要上传哪些文件，不要编造内容。然后只基于你能确认的内容继续。
+先读 https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/README.md、https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md 和 https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/llms.txt。若你不能直接读取某个 GitHub 文件，请告诉我需要上传哪些文件，不要编造内容。然后只基于你能确认的内容继续。
 ```
 
