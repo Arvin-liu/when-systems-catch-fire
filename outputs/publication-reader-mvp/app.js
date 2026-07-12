@@ -1,5 +1,5 @@
 async function loadAtlas() {
-  const res = await fetch('../../data/publication-atlas-20260712.json');
+  const res = await fetch('./publication-atlas-20260712.json');
   return res.json();
 }
 
