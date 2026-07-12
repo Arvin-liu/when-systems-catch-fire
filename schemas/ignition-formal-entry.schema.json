@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ignition Formal Entry",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "object_type",
+    "domain",
+    "codomain",
+    "variables",
+    "units",
+    "assumptions",
+    "expression",
+    "semantics",
+    "scope",
+    "boundary_conditions",
+    "failure_conditions",
+    "sources",
+    "proof_obligations",
+    "validation_method",
+    "workflow_status",
+    "formal_status",
+    "proof_status",
+    "evidence_status",
+    "scope_status",
+    "provenance_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "object_type": {
+      "enum": [
+        "ALGORITHM",
+        "CAUSAL_MODEL",
+        "FORMAL_PROPOSITION",
+        "FUNCTION",
+        "METRIC",
+        "NATURAL_LANGUAGE_CANDIDATE",
+        "OPERATOR",
+        "OPTIMIZATION_PROBLEM",
+        "ORDER",
+        "PREDICATE",
+        "PROBABILISTIC_MODEL",
+        "RELATION",
+        "STATE_TRANSITION"
+      ]
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "codomain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "variables": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "type"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "unit": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "units": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expression": {
+      "type": "string",
+      "minLength": 1
+    },
+    "semantics": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "boundary_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "failure_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "proof_obligations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "validation_method": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "workflow_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "formal_status": {
+      "enum": [
+        "UNFORMALIZED",
+        "WELL_FORMED",
+        "TYPE_ERROR",
+        "SEMANTICALLY_UNDEFINED",
+        "FORMALIZATION_INCOMPLETE",
+        "COUNTEREXAMPLE_FOUND"
+      ]
+    },
+    "proof_status": {
+      "enum": [
+        "DEFINITION_ONLY",
+        "UNPROVED_PROPOSITION",
+        "PROVED_IN_DECLARED_SYSTEM",
+        "EXTERNAL_THEOREM",
+        "DISPROVED",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "evidence_status": {
+      "enum": [
+        "SOURCE_ONLY",
+        "CASE_SUPPORTED",
+        "MULTI_CASE_SUPPORTED",
+        "EMPIRICALLY_TESTED",
+        "EXTERNALLY_VALIDATED",
+        "PENDING"
+      ]
+    },
+    "scope_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance_status": {
+      "enum": [
+        "DIRECT_SOURCE_FOUND",
+        "GENERATED_WITHOUT_TRACEABLE_SOURCE",
+        "INDIRECT_SOURCE_ONLY",
+        "MULTIPLE_CONFLICTING_SOURCES",
+        "SOURCE_NOT_FOUND"
+      ]
+    },
+    "converged": {
+      "not": {}
+    }
+  },
+  "additionalProperties": true
+}

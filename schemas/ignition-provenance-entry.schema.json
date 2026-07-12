@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ignition Provenance Entry",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "current_path",
+    "current_status",
+    "formal_layer",
+    "first_known_date",
+    "first_known_file",
+    "first_known_commit_or_pr",
+    "source_note_paths",
+    "source_case_ids",
+    "intermediate_reports",
+    "authoring_agent_or_source",
+    "original_natural_language_claim",
+    "original_expression",
+    "later_rewrites",
+    "provenance_status",
+    "conflicts",
+    "missing_sources",
+    "audit_priority"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "current_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "current_status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "formal_layer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "first_known_date": {
+      "type": "string"
+    },
+    "first_known_file": {
+      "type": "string"
+    },
+    "first_known_commit_or_pr": {
+      "type": "string"
+    },
+    "source_note_paths": {
+      "type": "string"
+    },
+    "source_case_ids": {
+      "type": "string"
+    },
+    "intermediate_reports": {
+      "type": "string"
+    },
+    "authoring_agent_or_source": {
+      "type": "string"
+    },
+    "original_natural_language_claim": {
+      "type": "string"
+    },
+    "original_expression": {
+      "type": "string"
+    },
+    "later_rewrites": {
+      "type": "string"
+    },
+    "provenance_status": {
+      "enum": [
+        "DIRECT_SOURCE_FOUND",
+        "GENERATED_WITHOUT_TRACEABLE_SOURCE",
+        "INDIRECT_SOURCE_ONLY",
+        "MULTIPLE_CONFLICTING_SOURCES",
+        "SOURCE_NOT_FOUND"
+      ]
+    },
+    "conflicts": {
+      "type": "string"
+    },
+    "missing_sources": {
+      "type": "string"
+    },
+    "audit_priority": {
+      "enum": [
+        "HIGH",
+        "MEDIUM",
+        "NORMAL"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
