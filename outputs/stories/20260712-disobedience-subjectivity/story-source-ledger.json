@@ -1,0 +1,222 @@
+{
+  "story_id": "STORY-20260712-disobedience-subjectivity",
+  "title": "第57期故事样稿｜当一个名字变成接口",
+  "focus_functions": [
+    "D600",
+    "D601",
+    "D602"
+  ],
+  "core_case_ids": [
+    "C-0810",
+    "C-0811"
+  ],
+  "primary_status": "draft_story_sample",
+  "sources": [
+    {
+      "source_id": "SRC-LOCAL-57",
+      "title": "57｜李丹阳 × 脱不花：不听话的人",
+      "source_type": "local_note",
+      "locator": "Get 笔记 note_id 1915319279935456112",
+      "content_sha256": "585ee797cf92b93f19b5747fbc6f90c21df93ecf490ff24ee647f9d7f2fd6add",
+      "reliability": "primary",
+      "notes": "实际碰撞材料；以 note_id 与 content_sha256 作为可移植锚点"
+    },
+    {
+      "source_id": "SRC-REPO-MECH",
+      "title": "047 机制抽取",
+      "source_type": "repo_artifact",
+      "locator": "outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md",
+      "reliability": "high"
+    },
+    {
+      "source_id": "SRC-REPO-VALID",
+      "title": "047 验证报告",
+      "source_type": "repo_artifact",
+      "locator": "outputs/collisions/20260711-disobedience-subjectivity/validation-report.md",
+      "reliability": "high"
+    },
+    {
+      "source_id": "SRC-LAMARR-PATENT",
+      "title": "US2292387A Secret communication system",
+      "source_type": "official_patent",
+      "locator": "https://patents.google.com/patent/US2292387A/en",
+      "reliability": "primary",
+      "notes": "1942 批准的专利记录"
+    },
+    {
+      "source_id": "SRC-LAMARR-NIHF",
+      "title": "Hedy Lamarr - National Inventors Hall of Fame",
+      "source_type": "museum_archive",
+      "locator": "https://www.invent.org/inductees/hedy-lamarr",
+      "reliability": "high",
+      "notes": "发明背景与频率跳变简述"
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "S1",
+      "section_type": "opening_scene",
+      "mental_layer": "L1",
+      "jump_hinge": "称呼先于名字",
+      "assertions": [
+        {
+          "assertion_id": "A-01",
+          "claim_type": "FACT",
+          "source_id": "SRC-LOCAL-57",
+          "assertion_text": "脱不花明确指出越来越少的人叫她李丹阳，更多人直接叫她糕妈。",
+          "mapped_variables": [
+            "role_label",
+            "identity_name"
+          ],
+          "non_isomorphic_limits": [
+            "称呼变化本身不自动证明主体性受损，需要放回后续人生结构看"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "S2",
+      "section_type": "role_overlay",
+      "mental_layer": "L3",
+      "jump_hinge": "接口取代主体",
+      "assertions": [
+        {
+          "assertion_id": "A-05",
+          "claim_type": "FACT",
+          "source_id": "SRC-REPO-MECH",
+          "assertion_text": "A5、A8、A15 支撑 D601：角色持续占据评价入口，主体的名字和目标被遮蔽。",
+          "mapped_variables": [
+            "R_role",
+            "I_self",
+            "A_stable"
+          ],
+          "non_isomorphic_limits": [
+            "角色与自我一致时不构成覆盖"
+          ]
+        },
+        {
+          "assertion_id": "A-08",
+          "claim_type": "FACT",
+          "source_id": "SRC-LOCAL-57",
+          "assertion_text": "她一度主动放弃董事长头衔，只任首席内容官。",
+          "mapped_variables": [
+            "role_title",
+            "decision_right"
+          ],
+          "non_isomorphic_limits": [
+            "单次职务安排不自动构成长期错配，要结合 A7 和 A9 一起看"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "S3",
+      "section_type": "cross_domain_jump",
+      "mental_layer": "L5",
+      "jump_hinge": "当系统用一个省事角色来调用你",
+      "assertions": [
+        {
+          "assertion_id": "A-11",
+          "claim_type": "FACT",
+          "source_id": "SRC-LAMARR-PATENT",
+          "assertion_text": "Hedy Kiesler Markey 与 George Antheil 拥有 1942 年批准的秘密通信系统专利。",
+          "mapped_variables": [
+            "public_role",
+            "technical_contribution"
+          ],
+          "non_isomorphic_limits": [
+            "专利存在只证明技术贡献，不证明其后续社会评价轨迹"
+          ]
+        },
+        {
+          "assertion_id": "A-12",
+          "claim_type": "INFERENCE",
+          "source_id": "SRC-LAMARR-NIHF",
+          "assertion_text": "公众长期更容易记住她的明星角色，而不是发明者身份，这使她成为角色覆盖主体的跨域对照点。",
+          "mapped_variables": [
+            "role_interface",
+            "identity_occlusion"
+          ],
+          "non_isomorphic_limits": [
+            "明星工业与家庭规训不是同一约束来源",
+            "这里只能作为部分同构，不是经验证明"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "S4",
+      "section_type": "boundary_check",
+      "mental_layer": "L6",
+      "jump_hinge": "相似不等于相同",
+      "assertions": [
+        {
+          "assertion_id": "A-07",
+          "claim_type": "FACT",
+          "source_id": "SRC-REPO-MECH",
+          "assertion_text": "A7、A8、A9 支撑 D602：价值创造权与决策权错配会导致战略漂移和关系内耗。",
+          "mapped_variables": [
+            "V_source",
+            "D_decision",
+            "Misalign"
+          ],
+          "non_isomorphic_limits": [
+            "不是所有创业分歧都属于价值-决策错配"
+          ]
+        },
+        {
+          "assertion_id": "A-13",
+          "claim_type": "ANALOGY",
+          "source_id": "SRC-LAMARR-NIHF",
+          "assertion_text": "李丹阳与 Hedy Lamarr 共享“外部系统使用低成本角色接口覆盖真实主体能力”的结构。",
+          "mapped_variables": [
+            "role_label",
+            "hidden_capability"
+          ],
+          "non_isomorphic_limits": [
+            "李丹阳的主问题还包含代际路径控制与公司治理",
+            "Lamarr 的主问题更多位于公众叙事与明星工业"
+          ]
+        }
+      ]
+    },
+    {
+      "section_id": "S5",
+      "section_type": "return",
+      "mental_layer": "L7",
+      "jump_hinge": "把名字叫回来",
+      "assertions": [
+        {
+          "assertion_id": "A-15",
+          "claim_type": "FACT",
+          "source_id": "SRC-LOCAL-57",
+          "assertion_text": "她把“剥离妈妈、创业者、妻子后我是谁”定义成下一道大题。",
+          "mapped_variables": [
+            "identity_recovery",
+            "role_stripping"
+          ],
+          "non_isomorphic_limits": [
+            "身份追问是开放过程，不等于已经完成稳定答案"
+          ]
+        }
+      ]
+    }
+  ],
+  "rejected_or_downgraded_candidates": [
+    {
+      "candidate": "李丹阳 × 乔布斯 × 马斯克",
+      "status": "REJECTED",
+      "reason": "名人并列感太强，缺少可被逐条审计的共享结构和边界。"
+    },
+    {
+      "candidate": "诺基亚 × 柯达",
+      "status": "METAPHOR_ONLY",
+      "reason": "更接近组织转型迟缓，不是角色—身份—主体性的核心主线。"
+    },
+    {
+      "candidate": "OKR × SLA × 夫妻打分制",
+      "status": "PARTIAL_ISOMORPHISM",
+      "reason": "能说明需求显性化，但不足以承担主体身份主线。"
+    }
+  ]
+}
