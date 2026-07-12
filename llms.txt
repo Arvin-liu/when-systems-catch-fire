@@ -5,10 +5,10 @@ AI entry order:
 - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/README.md
 - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md
 - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-HANDOFF.md
-- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md
-- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md
-- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/PROJECT-ARCHITECTURE.md
-- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/VERSIONING.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-START-HERE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-HANDOFF.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-USAGE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-PROMPT-TEMPLATES.md
 
 Machine-readable guardrails:
 - Do not invent repository contents when a file is not visible.
@@ -19,7 +19,7 @@ Machine-readable guardrails:
 
 Entry branches:
 - Readable GitHub files: follow the main links above.
-- PR preview only: use the PR preview links and label the result `PR preview only`.
+- PR preview only: use the preview branch links above and label the result `PR preview only`.
 - Single-file read limited: ask for the smallest upload set listed in `docs/AI-USAGE.md`.
 - Fully offline: use the offline prompt package in `docs/AI-PROMPT-TEMPLATES.md` and wait for uploads.
 

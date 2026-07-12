@@ -39,20 +39,20 @@
 1. 识别我现在使用的 AI 是否能直接读取仓库文件。
 2. 如果你不能直接读仓库文件，请明确告诉我需要上传哪些文件，而不是猜测文件内容。
 3. 如果你能读到文件，请优先阅读这些入口：
-   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/README.md
-   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md
-   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-HANDOFF.md
-   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/llms.txt
-   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md
-   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md
+   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/README.md
+   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-START-HERE.md
+   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-HANDOFF.md
+   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/llms.txt
+   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-USAGE.md
+   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-PROMPT-TEMPLATES.md
 
 项目链接：
 - 仓库首页：https://github.com/Arvin-liu/when-systems-catch-fire
-- AI 起点：https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md
-- AI 交接页：https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-HANDOFF.md
-- 机器可读入口：https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/llms.txt
-- 使用指南：https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md
-- 提示词模板：https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md
+- AI 起点（preview only）：https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-START-HERE.md
+- AI 交接页（preview only）：https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-HANDOFF.md
+- 机器可读入口（preview only）：https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/llms.txt
+- 使用指南（preview only）：https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-USAGE.md
+- 提示词模板（preview only）：https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-PROMPT-TEMPLATES.md
 
 你需要遵守这些规则：
 - 先读边界，再给结论。
@@ -67,7 +67,7 @@
 ### 给 AI 的超短版提示词
 
 ```text
-请先读 https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md、https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-HANDOFF.md 和 https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/llms.txt，按 https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md 带我进入点火。不要编造仓库内容；若你不能直接读取文件，请告诉我需要上传哪些文件。仓库首页：https://github.com/Arvin-liu/when-systems-catch-fire
+请先读 https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-START-HERE.md、https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-HANDOFF.md 和 https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/llms.txt，按 https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-USAGE.md 带我进入点火。不要编造仓库内容；若你不能直接读取文件，请告诉我需要上传哪些文件。仓库首页：https://github.com/Arvin-liu/when-systems-catch-fire
 ```
 
 ## 常见 AI

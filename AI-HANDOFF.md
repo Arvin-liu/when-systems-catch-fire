@@ -2,35 +2,28 @@
 
 这是给跨会话、跨工具、跨模型交接用的最小页面。
 
-## 你先判断链接状态
+## 链接状态
 
-### main 可直接访问
+### main 已上线
 
 - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/README.md
-- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md
-- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-HANDOFF.md
-- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/llms.txt
-- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md
-- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/SUMMARY.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/USAGE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/PROJECT-ARCHITECTURE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/governance/life-community-value-charter.md
 
-### PR preview 可访问但 main 尚未上线
+### PR preview only
 
-- 用 PR 页面中的文件预览链接读取。
-- 结论必须标记为 `PR preview only`，不能假装已经进入 main。
-- 不能把 preview 里的文案当成 canonical。
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-START-HERE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-HANDOFF.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/llms.txt
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-USAGE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-PROMPT-TEMPLATES.md
 
-### 只能单文件读取
+### merged main
 
-- 先读 `README.md`。
-- 再读 `AI-START-HERE.md`。
-- 再读 `AI-HANDOFF.md`。
-- 最后只按需补 `llms.txt` 和 `docs/AI-USAGE.md`。
-
-### 完全离线
-
-- 只使用上传文件。
-- 如果缺文件，先请求最小上传清单。
-- 不要猜测 main 状态。
+- only use this after the PR has landed in main
+- do not pretend preview-only files are already canonical
 
 ## 交接清单
 

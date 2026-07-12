@@ -21,11 +21,17 @@
   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md
   - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md
 
-### 2. 单文件读取受限
+### 2. PR preview only
 
-- 让 AI 明确说出它能读到什么。
-- 然后只上传最小上传清单。
-- 不要一次塞入无关文档。
+- 用 preview branch 的绝对链接：
+  - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/README.md
+  - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-START-HERE.md
+  - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-HANDOFF.md
+  - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/llms.txt
+  - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-USAGE.md
+  - https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-PROMPT-TEMPLATES.md
+- 明确标记为 `PR preview only`。
+- 不要把 preview 里的文案当成 canonical。
 
 ### 3. 完全离线
 
@@ -59,6 +65,6 @@
 ## 适合直接复制的提示语
 
 ```text
-先读 https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/README.md、https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md 和 https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-HANDOFF.md。若你不能直接读取某个 GitHub 文件，请告诉我需要上传哪些文件，不要编造内容。然后只基于你能确认的内容继续。
+先读 https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/README.md、https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-START-HERE.md 和 https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-HANDOFF.md。若你不能直接读取某个 GitHub 文件，请告诉我需要上传哪些文件，不要编造内容。然后只基于你能确认的内容继续。
 ```
 

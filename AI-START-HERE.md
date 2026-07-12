@@ -5,7 +5,7 @@
 ## 你先做什么
 
 1. 读 `README.md` 的 AI 协助入口。
-2. 读 `AI-HANDOFF.md`，判断 main / PR preview only / 离线三种状态。
+2. 读 `AI-HANDOFF.md`，判断 main / PR preview only / merged main 三种状态。
 3. 读 `llms.txt`。
 4. 读 `docs/AI-USAGE.md`。
 5. 读 `docs/AI-PROMPT-TEMPLATES.md`。
@@ -42,7 +42,7 @@
 ## 快速入口
 
 - 仓库首页：https://github.com/Arvin-liu/when-systems-catch-fire
-- 机器可读入口：https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/llms.txt
-- AI 使用指南：https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md
-- 提示词模板：https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md
+- 机器可读入口：https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/llms.txt
+- AI 使用指南：https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-USAGE.md
+- 提示词模板：https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-PROMPT-TEMPLATES.md
 

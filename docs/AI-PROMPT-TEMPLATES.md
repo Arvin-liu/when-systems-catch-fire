@@ -7,7 +7,7 @@
 1. 只读导航
 2. 目录理解
 3. 文件上传受限排查
-4. 离线复核
+4. PR preview only 复核
 5. 任务改写或总结
 
 ## 可读 GitHub 场景
@@ -21,6 +21,19 @@
 - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md
 - https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-PROMPT-TEMPLATES.md
 然后只基于你确认过的内容继续，不要编造仓库里看不到的东西。
+```
+
+## PR preview only 场景
+
+```text
+请先读这些 preview branch 链接：
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/README.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-START-HERE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-HANDOFF.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/llms.txt
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-USAGE.md
+- https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-PROMPT-TEMPLATES.md
+并明确标记为 PR preview only，不要假装已经进入 main。
 ```
 
 ## 单文件读取受限场景
@@ -59,6 +72,6 @@
 ## 超短版
 
 ```text
-请先读 https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-START-HERE.md、https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/AI-HANDOFF.md 和 https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/llms.txt，按 https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/AI-USAGE.md 带我进入点火。不能直接读文件就请我上传，不要编造。
+请先读 https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-START-HERE.md、https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/AI-HANDOFF.md 和 https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/llms.txt，按 https://github.com/Arvin-liu/when-systems-catch-fire/blob/records/ignition-074-preview-link-truth-20260712/docs/AI-USAGE.md 带我进入点火。不能直接读文件就请我上传，不要编造。
 ```
 
