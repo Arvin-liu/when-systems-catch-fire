@@ -1,0 +1,82 @@
+{
+  "audit_id": "082-structure-audit",
+  "task_id": "IGNITION-20260709-082",
+  "executed_at": "2026-07-13T15:51:18.561899+08:00",
+  "executor": "QClaw GLM-5.2",
+  "total_records_audited": 617,
+  "sample_size": 203,
+  "sample_seed": 82,
+  "verdicts": {
+    "PASS": 37,
+    "MINOR_CORRECTION": 27,
+    "MAJOR_SEMANTIC_ERROR": 0,
+    "SOURCE_MISMATCH": 0,
+    "TEMPLATE_NOT_SOURCE_SPECIFIC": 128,
+    "FABRICATED_OR_UNSUPPORTED": 0,
+    "UNRESOLVED_HIGH_RISK": 11
+  },
+  "template_clusters_recomputed": {
+    "hidden_premises": {
+      "template_value": "mapping to external concepts not independently verified",
+      "count": 567,
+      "pct": "91.9%"
+    },
+    "failure_conditions": {
+      "template_value": "if upstream dependencies invalid",
+      "count": 567,
+      "pct": "91.9%"
+    },
+    "forbidden_wording": {
+      "template_value": "proved theorem of external truth, universal theorem",
+      "count": 0,
+      "pct": "0.0%"
+    },
+    "confidence": {
+      "template_value": "0.65",
+      "count": 504,
+      "pct": "81.7%"
+    },
+    "escalation_reason": {
+      "template_value": "Cross-domain unified theorem claim",
+      "count": 480,
+      "pct": "77.8%"
+    }
+  },
+  "template_clusters_original": {
+    "hidden_premises": {
+      "template_value": "mapping to external concepts not independently verified",
+      "count": 1134,
+      "pct": "183.8%"
+    },
+    "failure_conditions": {
+      "template_value": "if upstream dependencies invalid",
+      "count": 1013,
+      "pct": "164.2%"
+    },
+    "forbidden_wording": {
+      "template_value": "proved theorem of external truth, universal theorem",
+      "count": 1159,
+      "pct": "187.8%"
+    },
+    "confidence": {
+      "template_value": "0.65",
+      "count": 504,
+      "pct": "81.7%"
+    },
+    "escalation_reason": {
+      "template_value": "Cross-domain unified theorem claim",
+      "count": 480,
+      "pct": "77.8%"
+    }
+  },
+  "systematic_review_defect": true,
+  "error_rate_pct": 63.05418719211823,
+  "threshold_pct": 2.0,
+  "threshold_exceeded": true,
+  "correction_queue_count": 155,
+  "acceptance_ledger_count": 617,
+  "missing_ids": 0,
+  "missing_sources": 0,
+  "missing_anchors": 0,
+  "note": "executed by GLM-5.2, not cross-model independent acceptance"
+}

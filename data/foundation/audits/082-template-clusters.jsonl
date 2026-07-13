@@ -1,0 +1,5 @@
+{"field": "hidden_premises", "template_value": "mapping to external concepts not independently verified", "count": 567, "pct": "91.9%"}
+{"field": "failure_conditions", "template_value": "if upstream dependencies invalid", "count": 567, "pct": "91.9%"}
+{"field": "forbidden_wording", "template_value": "proved theorem of external truth, universal theorem", "count": 0, "pct": "0.0%"}
+{"field": "confidence", "template_value": "0.65", "count": 504, "pct": "81.7%"}
+{"field": "escalation_reason", "template_value": "Cross-domain unified theorem claim", "count": 480, "pct": "77.8%"}
