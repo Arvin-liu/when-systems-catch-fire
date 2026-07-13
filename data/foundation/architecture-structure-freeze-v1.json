@@ -1,0 +1,98 @@
+{
+  "version": "v1",
+  "freeze_timestamp": "2026-07-13T17:00:00+08:00",
+  "status": "ARCHITECTURE_STRUCTURE_FROZEN_CLAIM_TRUTH_PROVISIONAL",
+  "frozen_components": [
+    "object_type_system",
+    "seven_axis_status_system",
+    "strong_claim_gates",
+    "source_provenance_anchor_hash_contract",
+    "legacy_overlay_migration_rollback_rules",
+    "adjudication_record_schema",
+    "proof_artifact_interface",
+    "evidence_obligation_interface",
+    "validator_ci_failure_gates",
+    "layered_accounting_rules"
+  ],
+  "not_frozen": [
+    "353 individual proposition truth values",
+    "351 empirical proposition validity",
+    "any theorem without reproducible artifact",
+    "any causal/strict-isomorphism/precise-cross-domain conclusion without external evidence",
+    "strong-label final retain/downgrade (may be updated by future proof/evidence/cross-model work)"
+  ],
+  "object_types": {
+    "strong_assertion_type": [
+      "mathematical_proof",
+      "structural_isomorphism",
+      "causal_identification",
+      "precise_cross_domain",
+      "other_strong"
+    ],
+    "claim_type": [
+      "P1_proof_equivalence",
+      "P4_structural_isomorphism",
+      "P5_causal",
+      "P7_precise_cross_domain",
+      "P8_other_strong"
+    ]
+  },
+  "status_axes": {
+    "semantic_status": [
+      "INTERPRETED",
+      "AMBIGUOUS"
+    ],
+    "logic_status": [
+      "WELL_FORMED",
+      "UNDER_SPECIFIED"
+    ],
+    "formal_status": [
+      "FORMALIZED_COMPLETE",
+      "FORMALIZED_PARTIAL",
+      "UNFORMALIZED"
+    ],
+    "proof_status": [
+      "PROVED_WITH_ARTIFACT",
+      "REFUTED",
+      "UNPROVED",
+      "PENDING",
+      "NOT_APPLICABLE"
+    ],
+    "evidence_status": [
+      "EMPIRICAL_EVIDENCE_AVAILABLE",
+      "NO_EMPIRICAL_EVIDENCE",
+      "INTERNAL_REFERENCE_ONLY"
+    ],
+    "scope_status": [
+      "FRAMEWORK_INTERNAL",
+      "DOMAIN_SCOPED",
+      "UNSCOPED"
+    ],
+    "provenance_status": [
+      "LEGACY_TRACEABLE",
+      "LEGACY_PATH_ONLY"
+    ]
+  },
+  "strong_claim_gates": {
+    "PROVED_ORIGINAL_CLAIM_WITH_ARTIFACT": "requires reproducible Lean/Z3/SymPy artifact",
+    "REFUTED_ORIGINAL_CLAIM_WITH_COUNTEREXAMPLE": "requires constructive counterexample",
+    "STRICT_ISOMORPHISM": "requires structure, bijection, operation preservation, bidirectional verification",
+    "CAUSAL_IDENTIFIED": "requires identification assumptions and evidence",
+    "EMPIRICALLY_VALIDATED": "requires external source or experiment record"
+  },
+  "layered_accounting": {
+    "GLM_review": "model-generated reasoning record, not proof",
+    "rule_based_gate": "deterministic rule output, labeled DETERMINISTIC_RULE_BASED",
+    "machine_proof": "requires artifact + type_check",
+    "external_evidence": "requires external source citation",
+    "cross_model_acceptance": "requires independent verification by different model"
+  },
+  "forbidden_accounting": [
+    "coverage_rate_as_truth_acceptance_rate",
+    "read_rate_as_completion_rate",
+    "rule_gate_rate_as_semantic_adjudication_rate",
+    "obligation_generation_as_obligation_fulfillment",
+    "internal_verification_id_as_external_evidence",
+    "model_config_max_as_per_record_reasoning_evidence"
+  ]
+}
