@@ -17,6 +17,7 @@ jobs:
       - uses: leanprover/lean-action@v1
         with:
           auto-config: false
+          lake-package-directory: formal/lean
           use-mathlib-cache: false
           use-github-cache: false
       - run: cd formal/lean && lake env lean Foundation.lean
