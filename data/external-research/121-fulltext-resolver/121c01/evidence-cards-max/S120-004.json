@@ -1,0 +1,86 @@
+{
+  "source_id": "S120-004",
+  "canonical_title": "A Survey of Weight Space Learning: Understanding, Representation, and Generation",
+  "authors": "Xiaolong Han, Zehong Wang, Bo Zhao, Binchi Zhang, Jundong Li, Damian Borth, Rose Yu, Haggai Maron, Yanfang Ye, Lu Yin, Ferrante Neri",
+  "year": 2026,
+  "venue": "arXiv preprint arXiv:2603.10090",
+  "doi_or_identifier": "arXiv:2603.10090v1",
+  "source_family": 1,
+  "url": "https://arxiv.org/pdf/2603.10090",
+  "version": "preprint v1",
+  "sha256": "542e410a7e38ddc559e1ab6a2a2e428d77b18a5f5f6b8a86b5b8c8e8e3c6d1f5",
+  "file_size_bytes": 1559699,
+  "page_count": 51,
+  "content_access_status": "ANCHOR_VERIFIED",
+  "semantic_review_status": "MAX_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "Abstract",
+    "1 Introduction",
+    "Contents (full taxonomy outline)",
+    "2 Weight Space Understanding (2.1 Structural Foundations: Functional Invariance, Functional Equivariance; 2.2 Technique-Level Use Cases: Model Compression, Model Optimization, Weight Space Augmentation; 2.3 Discussion)",
+    "3 Weight Space Representation (3.1 Representation Approaches: Model-based, Model-free; 3.2 Technique-Level Use Cases: Behavior Prediction, Model Retrieval, Model Editing; 3.3 Discussion)",
+    "4 Weight Space Generation (4.1 Generation Approaches: Hypernetworks, Generative Models; 4.2 Technique-Level Use Cases: Conditional Weight Generation, Real-Time Weight Optimization, Model Merging, Weight Initialization, Data Generation)"
+  ],
+  "page_or_section_anchors": [
+    "1 Introduction 4", "2 Weight Space Understanding 7", "2.1 Structural Foundations 8", "2.1.1 Functional Invariance 8", "2.1.2 Functional Equivariance 10", "2.2 Technique-Level Use Cases 11", "3 Weight Space Representation 13", "3.1 Representation Approaches 14", "4 Weight Space Generation 19", "4.1 Generation Approaches 21", "4.1.1 Hypernetworks 21", "4.1.2 Generative Models 23"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "Weight Space Learning (WSL) treats neural weights as a meaningful domain for analysis and modeling, not just the end product of training.",
+    "WSL has three core dimensions: Weight Space Understanding (WSU, geometry and symmetries), Weight Space Representation (WSR, learning embeddings over weights), and Weight Space Generation (WSG, synthesizing new weights via hypernetworks or generative models).",
+    "Pretrained models form organized distributions, exhibit symmetries (functional invariance under permutation, equivariance), and can be embedded, compared, or generated.",
+    "Weight-space operations enable practical applications: model retrieval, continual/federated learning, NAS, data-free reconstruction, model merging, weight initialization, and model editing.",
+    "The survey provides the first unified taxonomy consolidating fragmented progress under a coherent framework.",
+    "Functional invariance (neurons can be permuted without changing function) and functional equivariance (permutation-equivariant operations on weights) are structural foundations for weight-space operations.",
+    "Model merging (Section 4.2.3) is identified as a key technique-level use case of weight-space generation."
+  ],
+  "function_concept_used_by_paper": "Functions are viewed as points in a structured weight space. The weight space has geometry (distances, basins), symmetries (permutation invariance/equivariance), and supports operations (embedding, comparison, generation, merging). A function is identified with its weight vector, modulo permutation symmetries.",
+  "representation_or_carrier": "Raw weight vectors (flattened parameters), weight embeddings (learned via model-based or model-free approaches), and generated weights (via hypernetworks or generative models). The survey covers MLP, Transformer, RNN, CNN architectures.",
+  "compiler_or_generator": "Hypernetworks (Section 4.1.1) and generative models (Section 4.1.2) serve as weight-space generators. The survey distinguishes model-based (neural network as generator) and model-free (non-parametric) generation approaches.",
+  "interpreter_or_runtime": "Implicit: the target network whose weights are generated or modified. The survey does not discuss a unified interpreter concept.",
+  "composition_rule": "Model merging (Section 4.2.3) is the primary composition operation: averaging, task arithmetic, and other weight-space combinations. The survey catalogs these as empirical techniques without a formal algebra.",
+  "state_or_effect_model": "Not addressed. The survey focuses on weight-space structure and operations, not on execution-time effects or state management.",
+  "validation_regime": "Empirical benchmarks across applications. The survey catalogs evaluation methods per application area (accuracy for classification, retrieval metrics for model retrieval, etc.) but does not propose a unified validation framework.",
+  "equivalence_notions": "Functional invariance under permutation is the primary equivalence notion: two weight vectors are functionally equivalent if one can be obtained from the other by permuting neurons. This is a structural equivalence, not a semantic one. The survey does not define equivalence across different architectures or representation types.",
+  "limitations_and_failure_boundaries": [
+    "The survey is taxonomic/survey-level; it does not propose new methods or formal frameworks.",
+    "No single formal composition algebra is proposed; merging is cataloged as empirical heuristics.",
+    "Equivalence is limited to permutation invariance within a single architecture; cross-representation equivalence is not defined.",
+    "The survey does not address formal specification or verification of weight-space functions.",
+    "Weight-space generation quality depends on the generator architecture and training data; no guarantees on generated weight quality."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "NOT_ADDRESSED: The survey does not discuss formal specification languages for weight-space functions.",
+    "GAP-016": "PARTIAL_SUPPORT: Catalogs weight-space composition operations (averaging, task arithmetic, merging) but does not formalize them as an algebra. Provides the landscape for where a composition algebra would fit.",
+    "GAP-017": "PARTIAL_SUPPORT: Identifies permutation invariance as an equivalence notion. Discusses weight-space embeddings for comparison. But no cross-representation equivalence checker is proposed.",
+    "GAP-018": "NOT_ADDRESSED: No discussion of effects or state in weight-space operations.",
+    "GAP-019": "PARTIAL_SUPPORT: Model retrieval and model merging use registries of models, but no formal versioned registry with provenance is proposed.",
+    "GAP-020": "NOT_ADDRESSED: No probabilistic semantics for weight-space functions."
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "NO_EVIDENCE: No formal specification language discussed.",
+    "N2_Representation": "MULTI_SOURCE_EVIDENCE: Comprehensive evidence that weights are a meaningful representation domain. Covers model-based and model-free representation approaches, embeddings, and structural properties.",
+    "N3_Compiler": "WEAK_EVIDENCE: Hypernetworks and generative models are cataloged as weight generators, but not framed as compilers from spec to artifact.",
+    "N4_Artifact": "MULTI_SOURCE_EVIDENCE: Weight vectors and generated weights as artifacts. Model merging produces composed artifacts.",
+    "N5_Interpreter": "NO_EVIDENCE: No unified interpreter concept discussed.",
+    "N6_ExecutionTrace": "NO_EVIDENCE: Not discussed.",
+    "N7_Validator": "WEAK_EVIDENCE: Behavior prediction and model evaluation are cataloged but not as a unified validation layer.",
+    "N8_ComposerRouter": "MULTI_SOURCE_EVIDENCE: Model merging, task arithmetic, and weight-space operations are direct evidence for composition. Multiple empirical approaches cataloged.",
+    "N9_VersionedRegistry": "WEAK_EVIDENCE: Model retrieval implies a registry-like structure, but no formal versioned registry with provenance is proposed."
+  },
+  "what_the_paper_does_not_support": [
+    "Does not propose a formal specification language (GAP-015).",
+    "Does not define a formal composition algebra with guarantees (GAP-016).",
+    "Does not provide cross-representation equivalence checking (GAP-017).",
+    "Does not address effect tracking (GAP-018).",
+    "Does not propose a versioned registry with provenance (GAP-019).",
+    "Does not address probabilistic semantics (GAP-020).",
+    "Does not propose a unified compiler or interpreter architecture."
+  ],
+  "claim_support_status": "PARTIAL",
+  "claim_support_reasoning": "The survey provides the strongest available taxonomic foundation for weight-space learning, covering representation, generation, and composition. It directly supports the Representation and Artifact nodes and provides landscape evidence for composition. However, it is a survey: it catalogs rather than proposes, and none of the formal gaps (specification, equivalence, effects, probabilistic semantics) are addressed.",
+  "reviewer_model": "qclaw/pool-glm-5.2",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T18:41:00Z",
+  "supersedes_provisional_card_id": "S120-004-provisional-121"
+}

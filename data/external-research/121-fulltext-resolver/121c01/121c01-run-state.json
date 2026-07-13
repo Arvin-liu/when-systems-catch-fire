@@ -1,0 +1,48 @@
+{
+  "task": "IGNITION-20260709-121C01",
+  "status": "121C01_MAX_SEMANTIC_BATCH_COMPLETE_EVIDENCE_ACCUMULATING",
+  "reviewer_model": "qclaw/pool-glm-5.2",
+  "reviewer_reasoning_level": "high",
+  "model_note": "Task specified max reasoning. Subagent environment supports high only (max is only available in main session). All semantic review performed at high reasoning level.",
+  "model_switch": false,
+  "fallback": false,
+  "baseline_121b_head": "66c6efdf673dc486fbf10373edbcf2eab67a528c",
+  "new_branch": "records/ignition-121c01-max-semantic-review-batch-01-20260714",
+  "started_at_utc": "2026-07-13T18:41:00Z",
+  "completed_at_utc": "2026-07-13T18:41:00Z",
+  "phases": {
+    "P0_baseline_and_status_axis": "COMPLETE",
+    "P1_source_selection": "COMPLETE — 10 sources selected",
+    "P2_fulltext_review": "COMPLETE — 10 papers reviewed",
+    "P3_provisional_comparison": "COMPLETE — 10 comparisons written",
+    "P4_gap_evidence": "COMPLETE — GAP-015 through GAP-020 evidence accumulated",
+    "P5_function_os_nodes": "COMPLETE — 9 nodes mapped",
+    "P6_batch_manifest": "COMPLETE — 7 batches (121C02-121C08) planned",
+    "P7_validator": "COMPLETE"
+  },
+  "counts": {
+    "sources_reviewed": 10,
+    "confirmed": 5,
+    "partial": 4,
+    "not_supported": 0,
+    "unresolved": 0,
+    "provisional_cards_compared": 10,
+    "agrees": 4,
+    "narrows": 6,
+    "corrects": 0,
+    "rejects": 0,
+    "not_comparable": 0,
+    "gaps_with_evidence": 5,
+    "gaps_insufficient": 1,
+    "remaining_batches": 7,
+    "remaining_sources": 69
+  },
+  "credential_fragments": 0,
+  "pr_merged_or_closed": 0,
+  "frozen_files_modified": false,
+  "blockers": [
+    "7 EXTRACTED_PARTIAL sources (S120-013, S120-023, S120-024, S120-032, S120-033, S120-056, S120-080) need text re-extraction before 121C08 can proceed",
+    "5 FAILED sources (S120-006, S120-016, S120-051, S120-052, S120-057) have no OA full text available",
+    "GAP-020 (probabilistic semantics) has insufficient evidence in this batch; needs Family 9 papers in 121C05/121C06"
+  ]
+}

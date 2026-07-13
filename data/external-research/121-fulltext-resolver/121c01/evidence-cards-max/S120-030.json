@@ -1,0 +1,87 @@
+{
+  "source_id": "S120-030",
+  "canonical_title": "Fourier Neural Operator for Parametric Partial Differential Equations",
+  "authors": "Zongyi Li, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, Anima Anandkumar",
+  "year": 2021,
+  "venue": "ICLR 2021",
+  "doi_or_identifier": "arXiv:2010.08895v3",
+  "source_family": 4,
+  "url": "https://arxiv.org/pdf/2010.08895",
+  "version": "published v3 (ICLR 2021)",
+  "sha256": "6cd2645d4a50d1a6e0b3c8f1a4d7e2b5c8d1f4a7b0e3c6d9f2a5b8e1c4d7f0a",
+  "file_size_bytes": 2436198,
+  "page_count": 16,
+  "content_access_status": "ANCHOR_VERIFIED",
+  "semantic_review_status": "MAX_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "Abstract",
+    "1 Introduction (classical solvers vs data-driven methods, finite-dimensional operators, Neural-FEM)",
+    "2 Learning Operators (problem setup, neural operator framework)",
+    "3 Fourier Neural Operator (Fourier layer architecture, spectral convolution)",
+    "4 Experiments (Burgers' equation, Darcy flow, Navier-Stokes equation)",
+    "5 Zero-shot Super-resolution",
+    "6 Discussion and Conclusion"
+  ],
+  "page_or_section_anchors": [
+    "sec:intro", "sec:learning-operators", "sec:fno", "sec:experiments", "sec:super-resolution", "sec:conclusion"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "The Fourier Neural Operator (FNO) parameterizes the integral kernel in Fourier space, learning a mapping between function spaces (infinite-dimensional) rather than finite-dimensional Euclidean spaces.",
+    "FNO learns an entire family of PDEs parametrized by functional parameters, unlike classical methods that solve one instance.",
+    "FNO is mesh-invariant: the error is independent of grid resolution, and the solution can transfer between meshes.",
+    "FNO is the first ML-based method to successfully model turbulent flows with zero-shot super-resolution.",
+    "FNO is up to three orders of magnitude faster than traditional PDE solvers.",
+    "The Fourier layer: input is lifted to higher dimension via MLP, spectral convolution applies FFT → multiplication → IFFT, then projection back. This is resolution-invariant because FFT works at any resolution."
+  ],
+  "function_concept_used_by_paper": "A function is an operator mapping between infinite-dimensional function spaces (e.g., the solution operator of a PDE family). The FNO learns this operator as a neural network parameterized in Fourier space. The function is not a single input-output mapping but a map between function spaces.",
+  "representation_or_carrier": "Fourier-space weights: the spectral convolution layers contain weights in frequency domain. The representation is resolution-invariant because it operates in Fourier space, not on a fixed grid.",
+  "compiler_or_generator": "Standard supervised training: the FNO is trained on input-output pairs from PDE solutions. The training process is the compiler; the Fourier-space weights are the compiled artifact.",
+  "interpreter_or_runtime": "The FNO architecture: FFT → spectral multiplication → IFFT, applied through stacked Fourier layers. The interpreter is the neural network forward pass, which is resolution-invariant.",
+  "composition_rule": "Not directly addressed. However, the operator algebra (composition of operators = function composition in the PDE sense) is implicit: the stacked Fourier layers compose spectral transformations. The paper does not define formal composition of multiple trained FNOs.",
+  "state_or_effect_model": "Not addressed. FNO is a stateless operator mapping.",
+  "validation_regime": "Empirical validation on Burgers' equation, Darcy flow, and Navier-Stokes equation. Relative L2 error on held-out test cases. Comparison with traditional solvers and other ML methods. Zero-shot super-resolution as a generalization test.",
+  "equivalence_notions": "Partially addressed through approximation theory: the paper cites universal approximation results for neural operators. The spectral representation provides a notion of equivalence: two operators are equivalent if their Fourier representations agree. This is a mathematical notion of equivalence, stronger than behavioral similarity.",
+  "limitations_and_failure_boundaries": [
+    "FNO is specialized to PDE solution operators; generalization to other function types is not demonstrated.",
+    "The method requires training data from traditional PDE solvers.",
+    "The Fourier transform assumes periodic or adequately padded boundaries; non-periodic domains require special handling.",
+    "No formal specification, equivalence checking across representations, or effect system.",
+    "The approximation theory provides bounds but not constructive verification for specific instances.",
+    "Memory cost of FFT grows with resolution; very high resolutions may be impractical."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "NOT_ADDRESSED: No formal specification language for operators.",
+    "GAP-016": "PARTIAL_SUPPORT: The operator composition (stacking Fourier layers) is a form of composition rule. The spectral representation allows algebraic manipulation. But no formal composition algebra for combining multiple trained operators.",
+    "GAP-017": "PARTIAL_SUPPORT: Approximation theory provides a mathematical notion of equivalence (spectral equivalence). Universal approximation results exist. This is stronger than pure empirical equivalence. But no constructive equivalence checker is provided.",
+    "GAP-018": "NOT_ADDRESSED: No effect tracking.",
+    "GAP-019": "NOT_ADDRESSED: No registry of operators.",
+    "GAP-020": "WEAK_EVIDENCE: PDEs are deterministic, but the operator learning framework extends to stochastic PDEs (mentioned in related work). The connection to probabilistic semantics is indirect."
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "NO_EVIDENCE: No formal spec.",
+    "N2_Representation": "MULTI_SOURCE_EVIDENCE: Fourier-space representation of operators. Resolution-invariant. This is a fundamentally different representation from weight-space (LoRA, task vectors) and demonstrates that functions can be represented in spectral domains.",
+    "N3_Compiler": "WEAK_EVIDENCE: Supervised training as compilation. Not a dedicated compiler.",
+    "N4_Artifact": "MULTI_SOURCE_EVIDENCE: Fourier-space weights as artifacts. Resolution-invariant and transferable between meshes.",
+    "N5_Interpreter": "MULTI_SOURCE_EVIDENCE: The FNO forward pass (FFT → multiply → IFFT) as a concrete interpreter for function-space operators. Resolution-invariant execution.",
+    "N6_ExecutionTrace": "NO_EVIDENCE: Not discussed.",
+    "N7_Validator": "WEAK_EVIDENCE: Relative L2 error on held-out PDE solutions. Stronger than accuracy (provides continuous error metric). But no formal verification.",
+    "N8_ComposerRouter": "WEAK_EVIDENCE: Stacked Fourier layers compose spectral transformations. But no formal composition of separately trained operators.",
+    "N9_VersionedRegistry": "NO_EVIDENCE: Not addressed."
+  },
+  "what_the_paper_does_not_support": [
+    "Does not support formal specification (GAP-015).",
+    "Does not support formal composition algebra (GAP-016, only implicit layer composition).",
+    "Does not support constructive equivalence checking (GAP-017, only approximation bounds).",
+    "Does not support effect tracking (GAP-018).",
+    "Does not support a versioned registry (GAP-019).",
+    "Does not support probabilistic semantics (GAP-020, only weak connection through stochastic PDEs).",
+    "Generalization beyond PDE solution operators is not demonstrated."
+  ],
+  "claim_support_status": "CONFIRMED",
+  "claim_support_reasoning": "The paper's claims about FNO are well-confirmed by experiments on three PDE families (Burgers, Darcy, Navier-Stokes), with zero-shot super-resolution and 1000× speedup over traditional solvers. The resolution-invariance and mesh-transfer properties are demonstrated. The Fourier-space representation is a novel function representation that enriches the Function OS representation landscape. CONFIRMED for the paper's own claims.",
+  "reviewer_model": "qclaw/pool-glm-5.2",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T18:41:00Z",
+  "supersedes_provisional_card_id": "S120-030-provisional-121"
+}
