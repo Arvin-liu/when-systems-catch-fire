@@ -1,6 +1,20 @@
-# 点火 076 正式架构
+# 点火 078 正式架构（继承 076）
 
-状态：`ARCHITECTURE_COMPLETE_PENDING_CONTENT_PROOFS`。本状态只表示架构、迁移覆盖和验证工具完整，不表示 622 个遗留对象已被证明。
+状态：`CORE_KERNEL_ADJUDICATED_REMAINING_CONTENT_QUEUE`。迁移覆盖为 622/622；registry 语义审定为 621/622，另有 9 个 Y1/MF-0000 内部组件记录。该状态不表示 622 个对象全部被证明。
+
+## 迁移与审定分层
+
+```mermaid
+flowchart LR
+  LEGACY[冻结 legacy 资产] --> MIG[保守迁移占位]
+  MIG -->|TITLE_HEURISTIC| PROV[PROVISIONAL registry]
+  LEGACY --> ADJ[逐对象来源文本审定]
+  ADJ -->|SOURCE_TEXT| OVR[classification overrides]
+  OVR --> FINAL[ADJUDICATED registry]
+  MIG -.不得覆盖.-> OVR
+```
+
+`migration_coverage=complete` 只说明 ID 与来源映射存在；`semantic_adjudication=incomplete` 说明仍有 D598 未深审。迁移器只能产生 `PROVISIONAL` 占位，已审定记录由独立 override 层保护。
 
 ## 七层关系
 
@@ -90,5 +104,7 @@ flowchart TB
 - 十二元协议是规范、启发式或治理算子，不自动成为公理。
 - 64 组合是设计/生成空间，不是理论证明空间。
 - G_delta 仅可作为有适用条件的外部定理引用或受限类比。
+- C(x,y) 是机制假说，不是已识别因果；I_iso 是结构对应关系，不是严格同构。
+- Ψ0 中的乘号表示流程组合或联合约束，不表示普通数值乘法。
 
 执行入口与门禁见 [FOUNDATION.md](FOUNDATION.md)。

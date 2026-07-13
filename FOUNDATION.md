@@ -1,6 +1,6 @@
 # 数学与逻辑地基
 
-本页是 076 的人工入口；机器权威位于 `data/foundation/`。架构已完成，内容证明仍逐条开放。
+本页是 078 的人工入口；机器权威位于 `data/foundation/`。076 架构已被继承，但迁移覆盖与语义审定严格分开：622/622 迁移完成，621/622 registry 对象完成来源文本审定，D598 仍为 `PROVISIONAL`。
 
 ## 权威注册表
 
@@ -15,6 +15,9 @@
 | `proofs/` | 证明义务与证明工件索引 |
 | `validations/` | 可重放验证与反例契约 |
 | `migrations/` | 迁移覆盖快照 |
+| `adjudications/` | 逐对象受控语义、正确类型、逻辑检查、处置与证明义务 |
+| `coverage/` | 迁移覆盖率与语义审定覆盖率的独立口径 |
+| `work-queues/` | 未深审对象的依赖/风险排序队列 |
 
 ## 不可越权的门禁
 
@@ -27,12 +30,13 @@
 
 ## 可复算入口
 
+    python3 tools/foundation/adjudicate_core.py --check
     python3 tools/foundation/migrate_legacy.py --check
     python3 tools/foundation/validate_foundation.py
-    python3 tools/foundation/run_benchmarks.py --check
+    python3 tools/foundation/verify_core_claims.py --check
     python3 -m unittest tests.foundation.test_foundation
 
-Lean、SymPy、Z3 在本机均未发现，因此 Lean 仅提供项目骨架并保留真实 blocker；没有宣称 Lean proof passed。当前可执行基准包括代数正规化、具体有理数反例、保持 pending 的开放猜想、真值表有效演绎、反模型和可废止类比。
+Lean 4 固定为 v4.19.0，SymPy 固定为 1.14.0，Z3 固定为 4.16.0。T2 的 Nat 范围命题同时通过 Lean 与 Z3；T16 有可重放 SymPy 反例；D220 有可重放 Z3 反模型；T23 保持 `UNPROVED_PROPOSITION`。这些工件只证明各自受控命题，不证明整个点火框架。
 
 ## 深入阅读
 

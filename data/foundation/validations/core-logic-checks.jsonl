@@ -1,0 +1,2 @@
+{"id":"T2","kind":"valid_deduction","replay":"python3 tools/foundation/verify_core_claims.py --check","result":"VALID_DEDUCTION"}
+{"id":"D220","kind":"invalid_argument","replay":"python3 tools/foundation/verify_core_claims.py --check","result":"COUNTERMODEL_FOUND"}

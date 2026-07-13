@@ -1,2 +1,4 @@
-# The 076 migration, validators and executable benchmarks use Python standard library only.
-# Lean 4, SymPy and Z3 are optional backends and must never be reported as passed when absent.
+# 078 replay dependencies. Lean is pinned separately by formal/lean/lean-toolchain.
+sympy==1.14.0
+z3-solver==4.16.0.0
+jsonschema==4.26.0

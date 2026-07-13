@@ -1,0 +1,20 @@
+{
+  "snapshot_id": "IGNITION-20260709-078",
+  "migration_coverage": {
+    "status": "complete",
+    "covered": 622,
+    "total": 622,
+    "rate": 1.0
+  },
+  "semantic_adjudication": {
+    "status": "incomplete",
+    "adjudicated_registry_objects": 621,
+    "total_registry_objects": 622,
+    "rate": 0.9983922829581994
+  },
+  "additional_core_component_adjudications": 9,
+  "total_adjudication_records": 630,
+  "classification_basis_076": "heuristic_title_and_id_rules",
+  "content_truth_status_076": "pending_item_level_review",
+  "remaining_registry_objects": 1
+}

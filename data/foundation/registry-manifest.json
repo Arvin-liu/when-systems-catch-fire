@@ -1,5 +1,5 @@
 {
-  "snapshot_id": "IGNITION-20260709-076",
+  "snapshot_id": "IGNITION-20260709-078",
   "counts": {
     "formal_objects": 622,
     "formal_cases": 806,
@@ -7,15 +7,23 @@
     "pending_claims": 34,
     "scope_entities": 678,
     "verified_legacy_counterexamples": 0,
-    "benchmark_counterexamples": 2,
+    "benchmark_and_core_counterexamples": 4,
     "object_types": {
-      "PREDICATE": 6,
-      "STATE_TRANSITION": 1,
+      "PREDICATE": 18,
+      "STATE_TRANSITION": 82,
       "ALGORITHM": 1,
-      "NATURAL_LANGUAGE_CANDIDATE": 548,
-      "METRIC": 35,
-      "RELATION": 27,
-      "ARGUMENT_SCHEMA": 4
+      "METRIC": 77,
+      "RELATION": 229,
+      "MECHANISM_MODEL": 60,
+      "PROBABILISTIC_MODEL": 9,
+      "FORMAL_PROPOSITION": 43,
+      "OPTIMIZATION_PROBLEM": 1,
+      "ARGUMENT_SCHEMA": 25,
+      "NATURAL_LANGUAGE_CANDIDATE": 77
+    },
+    "classification_status": {
+      "ADJUDICATED": 621,
+      "PROVISIONAL": 1
     }
   },
   "registries": [
@@ -36,6 +44,11 @@
     "data/foundation/validations/counterexamples.jsonl",
     "views/legacy-functions.jsonl",
     "views/legacy-cases.jsonl",
-    "data/foundation-architecture/075-counterexample-ledger.jsonl"
+    "data/foundation/adjudications/core-kernel.jsonl",
+    "data/foundation/adjudications/classification-overrides.jsonl",
+    "data/foundation/work-queues/content-proof-queue.jsonl",
+    "data/foundation/proofs/core-artifacts.jsonl",
+    "data/foundation/validations/core-counterexamples.jsonl",
+    "data/foundation/validations/core-logic-checks.jsonl"
   ]
 }
