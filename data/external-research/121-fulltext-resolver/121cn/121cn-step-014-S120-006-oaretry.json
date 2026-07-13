@@ -1,0 +1,11 @@
+{
+  "step": 14,
+  "source_id": "S120-006",
+  "title": "Symmetries in Weight Space Learning: To Retain or Remove?",
+  "previous_status": "FAILED_LEGAL_OA_NOT_FOUND (OpenReview 403)",
+  "new_status": "FAILED_LEGAL_OA_NOT_FOUND",
+  "method": "OpenAlex (0 results), arXiv (0 results), Semantic Scholar (no OA PDF), web search (no results)",
+  "success": false,
+  "reason": "OpenReview paper (id=ptfu9Pr3dk) returns 403. No arXiv version, no author preprint, no OA copy found in any database searched.",
+  "action": "BLOCKED_INSUFFICIENT_TEXT"
+}

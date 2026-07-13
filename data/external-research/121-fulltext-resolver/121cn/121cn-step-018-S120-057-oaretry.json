@@ -1,0 +1,11 @@
+{
+  "step": 18,
+  "source_id": "S120-057",
+  "title": "Algebraic Effects and Handlers",
+  "previous_status": "FAILED_LEGAL_OA_NOT_FOUND (MSR link 404)",
+  "new_status": "FAILED_LEGAL_OA_NOT_FOUND",
+  "method": "OpenAlex (20 results, no exact title match), arXiv (no exact match), MSR URL (404)",
+  "success": false,
+  "reason": "Original Microsoft Research URL returns 404. No paper with exact title 'Algebraic Effects and Handlers' found. Likely a MSR technical report or tutorial talk, not a formally published paper. The closely related paper 'Programming with Algebraic Effects and Handlers' (Bauer & Pretnar) is already S120-056 and has been successfully retrieved.",
+  "action": "BLOCKED_INSUFFICIENT_TEXT. May be duplicate of S120-056. Report to GPT for clarification."
+}
