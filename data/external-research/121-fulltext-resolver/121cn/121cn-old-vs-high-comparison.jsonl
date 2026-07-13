@@ -5,3 +5,8 @@
 {"source_id": "S120-008", "comparison": "NOT_COMPARABLE", "reason": "Short technical paper, unlikely to have a detailed provisional card."}
 {"source_id": "S120-010", "comparison": "AGREES", "reason": "Survey of hypernetworks; high review confirms compiler/interpreter paradigm."}
 {"source_id": "S120-011", "comparison": "AGREES", "reason": "Hypernetwork for personalized FL; high review confirms compiler/registry pattern."}
+{"source_id": "S120-012", "comparison": "AGREES", "reason": "Hypernetwork for feature adaptation; confirms compiler pattern."}
+{"source_id": "S120-014", "comparison": "AGREES", "reason": "Input-conditioned hypernetwork; confirms compiler pattern."}
+{"source_id": "S120-015", "comparison": "NOT_COMPARABLE", "reason": "Limited paper, unlikely to have provisional card."}
+{"source_id": "S120-017", "comparison": "NARROWS", "reason": "High review reveals latent execution contribution not likely captured in provisional card."}
+{"source_id": "S120-018", "comparison": "NARROWS", "reason": "High review reveals test-case validation contribution to N7 not likely in provisional card."}
