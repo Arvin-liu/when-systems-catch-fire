@@ -1,3 +1,7 @@
 {"step": 7, "source_id": "S120-013", "title": "Conditional LoRA Parameter Generation", "previous_status": "FAILED_LEGAL_OA_NOT_FOUND (OpenReview 403)", "new_status": "EXTRACTED_FULL", "method": "OpenAlex API \u2192 arXiv 2408.01415", "sha256": "0e874caa102cb44eba2e2883baa5b6dd3e2cdb5ac2158f57b7f7c11b645c0e8f", "pages": 18, "words": 9064, "success": true}
 {"step": 8, "source_id": "S120-023", "title": "Neuro-Symbolic Program Synthesis", "previous_status": "FAILED_LEGAL_OA_NOT_FOUND (OpenReview 403)", "new_status": "EXTRACTED_FULL", "method": "OpenAlex API \u2192 arXiv 1611.01855", "sha256": "1bcd5710a1ccdb6fd2389dbb02c7342903968b64b386713440147ffa72701dca", "pages": 14, "words": 8159, "success": true}
 {"step": 9, "source_id": "S120-024", "title": "Neural Operator: Learning Maps Between Function Spaces", "previous_status": "EXTRACTED_PARTIAL (271w, HTML landing)", "new_status": "EXTRACTED_FULL", "method": "JMLR direct PDF URL", "sha256": "1120cf00b75d2fef61a6aa34831def4a84d10e7838339c5bfedb9eca459c7da2", "pages": 97, "words": 41335, "success": true}
+{"step": 10, "source_id": "S120-032", "title": "Hybrid Routing for a Mixture of LoRA Experts", "success": true}
+{"step": 11, "source_id": "S120-033", "title": "IC-LoRA: In-Context Low-Rank Adaptation", "success": false}
+{"step": 12, "source_id": "S120-056", "title": "Programming with algebraic effects and handlers", "success": true}
+{"step": 13, "source_id": "S120-080", "title": "Dynamic Neural Turing Machine", "success": false}
