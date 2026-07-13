@@ -1,0 +1,5 @@
+{
+  "open_proof_obligations": 622,
+  "lean_available": false,
+  "note": "No legacy theorem is promoted without a machine-checkable artifact."
+}

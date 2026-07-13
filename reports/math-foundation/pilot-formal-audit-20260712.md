@@ -1,5 +1,7 @@
 # Pilot Formal Audit
 
+> 076 correction notice: this is a preserved 075 heuristic pilot, not an object-level proof audit. Its 110 selections mix A/MF/T/high-risk D/normal D and the first 12 BC candidates, omit Ψ₀/Y1 and all PEND claims, and are not the same statistical population as the 714-row ledger. “类型错误” and “反例信号” below are keyword triggers; none satisfies the replayable counterexample contract. See reports/foundation-architecture/075-truth-audit-20260712.md.
+
 ## Method
 
 - 本试审只做审计，不改正式正文。

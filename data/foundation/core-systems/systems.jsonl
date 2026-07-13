@@ -1,0 +1,3 @@
+{"asset_kind":"core_system","entity_key":"core-system:Y1","id":"Y1","not_a_proof_oracle":true,"role":"workflow_orchestrator"}
+{"asset_kind":"core_system","entity_key":"core-system:JPLUS","id":"JPLUS","role":"positive_evidence_channel"}
+{"asset_kind":"core_system","entity_key":"core-system:JMINUS","id":"JMINUS","role":"negative_evidence_channel"}

@@ -1,0 +1,41 @@
+{
+  "snapshot_id": "IGNITION-20260709-076",
+  "counts": {
+    "formal_objects": 622,
+    "formal_cases": 806,
+    "candidate_cases": 22,
+    "pending_claims": 34,
+    "scope_entities": 678,
+    "verified_legacy_counterexamples": 0,
+    "benchmark_counterexamples": 2,
+    "object_types": {
+      "PREDICATE": 6,
+      "STATE_TRANSITION": 1,
+      "ALGORITHM": 1,
+      "NATURAL_LANGUAGE_CANDIDATE": 548,
+      "METRIC": 35,
+      "RELATION": 27,
+      "ARGUMENT_SCHEMA": 4
+    }
+  },
+  "registries": [
+    "data/foundation/formal-objects/objects.jsonl",
+    "data/foundation/core-systems/systems.jsonl",
+    "data/foundation/core-systems/protocol-roles.jsonl",
+    "data/foundation/claims/claims.jsonl",
+    "data/foundation/arguments/arguments.jsonl",
+    "data/foundation/evidence/evidence.jsonl",
+    "data/foundation/sources/sources.jsonl",
+    "data/foundation/mappings/legacy-mappings.jsonl",
+    "data/foundation/proofs/obligations.jsonl",
+    "data/foundation/mappings/object-evidence-mappings.jsonl",
+    "data/foundation/proofs/artifacts.jsonl",
+    "data/foundation/proofs/proof-artifacts.jsonl",
+    "data/foundation/validations/records.jsonl",
+    "data/foundation/validations/validation-records.jsonl",
+    "data/foundation/validations/counterexamples.jsonl",
+    "views/legacy-functions.jsonl",
+    "views/legacy-cases.jsonl",
+    "data/foundation-architecture/075-counterexample-ledger.jsonl"
+  ]
+}

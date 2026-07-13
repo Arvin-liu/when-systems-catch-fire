@@ -1,0 +1,2 @@
+# The 076 migration, validators and executable benchmarks use Python standard library only.
+# Lean 4, SymPy and Z3 are optional backends and must never be reported as passed when absent.

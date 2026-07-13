@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-07-12 · IGNITION-20260709-076 数学与逻辑双地基七层架构
+
+- 建立 L0-L6 七层正式架构与数学、逻辑双地基。
+- 建立对象、命题、论证、来源、证据、映射、证明、验证和迁移注册表。
+- 独立复算 075，将文件数、对象数、索引行、问题命中和真实反例分开。
+- 建立九个独立状态轴与 THEOREM / AXIOM / ISOMORPHISM / CAUSAL / PROVED 门禁。
+- 将 Ψ₀ 重分类为 workflow orchestrator / algorithm protocol，将旧两张表转为 legacy source / compatibility view。
+- 新增 schema、validator、数学与逻辑基准、tests、CI、兼容视图和全量迁移报告。
+- 保留全部 legacy 资产与旧 ID；零删除、零重编号、零不可逆覆盖。
+- 明确架构完成不等于内容证明完成。
+
 ## 2026-07-09 · 元协议生成层版本
 
 - 新增 12 元协议理论生成层（V1–V4 / S1–S4 / E1–E4）。

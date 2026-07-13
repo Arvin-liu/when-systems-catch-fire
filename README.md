@@ -2,9 +2,9 @@
 
 > 这是点火项目的首页。它先回答三个问题：这是什么、为什么存在、从哪里开始读。
 
-点火是一个跨域结构性推论与理论生成框架。它把现象整理成函数、案例与元协议，让人和 AI 可以在同一套结构里比较、收敛、反证，并在证据不足时保留 `pending`。
+点火是一套面向跨领域材料的、证据可追溯、对象类型明确、推理过程可检查、结论等级可审计的形式化机制发现与建模系统。它不是现成的统一数学理论、物理理论、万能证明器，也不是纯文学或纯哲学知识库。
 
-If you prefer English first: this repo explores cross-domain structural inference and theory generation. It keeps the front door short and sends the detailed method to dedicated docs.
+If you prefer English first: this repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system. It is not a unified mathematical theory, physical theory or universal prover.
 
 本项目采用 MIT License。详情见 [LICENSE](LICENSE)。
 
@@ -12,16 +12,17 @@ If you prefer English first: this repo explores cross-domain structural inferenc
 
 - 想先看全貌，请读 [人类导航页](./SUMMARY.md)。
 - 想给 AI / Agent 一个机器可读入口，请读 [llms.txt](./llms.txt)。
-- 想知道当前架构与边界，请读 [项目架构](./docs/PROJECT-ARCHITECTURE.md) 和 [版本规范](./docs/VERSIONING.md)。
+- 想让 AI 从零背景接手，请读 [AI-START-HERE.md](./AI-START-HERE.md) 与 [AI-HANDOFF.md](./AI-HANDOFF.md)。
+- 想知道当前架构与边界，请读现行权威 [ARCHITECTURE.md](./ARCHITECTURE.md)、双地基 [FOUNDATION.md](./FOUNDATION.md) 和 [版本规范](./docs/VERSIONING.md)；[旧架构路径](./docs/PROJECT-ARCHITECTURE.md) 仅为稳定兼容入口。
 - 想知道怎么用，请读 [使用说明](./docs/USAGE.md)。
 - 想按 Agent 方式操作，请读 [Agent 指南](./docs/AGENT-GUIDE.md)。
 - 想理解 Get 笔记如何进入这套系统，请读 [得到大脑协作流程](./docs/GET-BRAIN-WORKFLOW.md)。
 
 ## 这套仓库在做什么
 
-点火的核心是把一个问题放进可复核的结构里：对象是什么，因果在哪里，系统如何反馈，哪些部分可以比较，分析应该停在哪一层，最后再判断结论是 `true`、`false`、`contradiction` 还是 `pending`。
+点火采用七层正式架构：L0 来源与证据、L1 受控语义命题、L2 形式对象、L3 逻辑论证、L4 数学模型与证明、L5 验证与有效性、L6 解释应用与出版。数学与逻辑互相约束；workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 九个状态轴彼此独立，任何一轴不能自动推出另一轴。
 
-当前仓库里，已经审核的正式资产放在两张表里，候选材料和理论展开放在专门的文档里。README 不再重复这些细节，只负责把入口摆清楚。
+data/foundation/ 下的对象、命题、论证、来源、证据、映射、证明、验证和迁移注册表承担新架构的状态权威。统一函数总表和统一案例总表完整保留为 legacy source / compatibility view：零删除、零重编号、不得独立生长，也不得用案例或工作流收口替代数学证明、逻辑有效性或经验真实性。
 
 ## 生命共同体价值宪章
 
@@ -59,7 +60,7 @@ If you prefer English first: this repo explores cross-domain structural inferenc
 
 ### 如果你是 Agent 或研究助手
 
-先看 [llms.txt](./llms.txt) 和 [docs/AGENT-GUIDE.md](./docs/AGENT-GUIDE.md)。这两个文件会告诉你该先读什么、哪些东西不能混、哪里需要写审计。
+先看 [AI-START-HERE.md](./AI-START-HERE.md)、[llms.txt](./llms.txt)、[AI-HANDOFF.md](./AI-HANDOFF.md) 和 [docs/AGENT-GUIDE.md](./docs/AGENT-GUIDE.md)。这些文件会告诉你该先读什么、哪些东西不能混、哪里需要写审计。
 
 ### 如果你关心证据和反例
 
@@ -67,12 +68,18 @@ If you prefer English first: this repo explores cross-domain structural inferenc
 
 ### 如果你关心正式资产
 
-先看 [统一函数索引表](./统一函数总表/INDEX.md) 和 [统一案例索引表](./统一案例总表/INDEX.md)。
+先看 [项目状态](./data/foundation/project-state.json)、[注册表清单](./data/foundation/registry-manifest.json) 和 [迁移摘要](./data/foundation/migration-summary.json)。[统一函数索引表](./统一函数总表/INDEX.md) 与 [统一案例索引表](./统一案例总表/INDEX.md) 是历史兼容入口，不是新状态权威。
 
 ## 关键参考
 
+- [现行架构权威](./ARCHITECTURE.md)
+- [数学与逻辑双地基](./FOUNDATION.md)
+- [Foundation 文档入口](./docs/foundation/README.md)
+- [AI 冷启动入口](./AI-START-HERE.md)
+- [AI 交接契约](./AI-HANDOFF.md)
+- [机器注册表状态](./data/foundation/project-state.json)
 - [项目定位](./docs/project_positioning.md)
-- [项目架构](./docs/PROJECT-ARCHITECTURE.md)
+- [项目架构兼容入口](./docs/PROJECT-ARCHITECTURE.md)
 - [Get 笔记协作流程](./docs/GET-BRAIN-WORKFLOW.md)
 - [版本规范](./docs/VERSIONING.md)
 - [断言等级说明](./docs/claim_levels.md)
@@ -88,9 +95,8 @@ If you prefer English first: this repo explores cross-domain structural inferenc
 - [64 组合矩阵](./docs/meta-protocols/meta-protocol-64-combination-matrix.md)
 - [22 个书籍验证候选](./docs/meta-protocols/book-validation-22-cases-20260709.md)
 - [元协议迭代说明](./docs/meta-protocols/version-iteration-note-20260709.md)
-- [Φ 元统一律完整定义](./docs/phi_meta_law.md)
+- [Ψ₀ 历史表达（legacy source）](./docs/phi_meta_law.md)
 - [两张表的写入规范](./docs/two-tables-entry-writing-standard-20260709.md)
-- [生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
 
 ## 说明
 

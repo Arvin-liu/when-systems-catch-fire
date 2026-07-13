@@ -1,0 +1,7 @@
+name = "ignition_foundation"
+version = "0.1.0"
+defaultTargets = ["IgnitionFoundation"]
+
+[[lean_lib]]
+name = "IgnitionFoundation"
+srcDir = "."

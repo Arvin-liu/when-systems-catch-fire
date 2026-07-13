@@ -1,0 +1,40 @@
+{
+  "snapshot_id": "IGNITION-20260709-076",
+  "status": "ARCHITECTURE_COMPLETE_PENDING_CONTENT_PROOFS",
+  "base_075_head": "e55b1d366195fd1cc05babf2010774862157924b",
+  "counts": {
+    "formal_objects": 622,
+    "formal_cases": 806,
+    "candidate_cases": 22,
+    "pending_claims": 34,
+    "scope_entities": 678,
+    "verified_legacy_counterexamples": 0,
+    "benchmark_counterexamples": 2,
+    "object_types": {
+      "PREDICATE": 6,
+      "STATE_TRANSITION": 1,
+      "ALGORITHM": 1,
+      "NATURAL_LANGUAGE_CANDIDATE": 548,
+      "METRIC": 35,
+      "RELATION": 27,
+      "ARGUMENT_SCHEMA": 4
+    }
+  },
+  "authority": {
+    "machine_readable": "data/foundation",
+    "human_entry": "FOUNDATION.md",
+    "legacy_views": "views"
+  },
+  "invariants": {
+    "legacy_tables_immutable": true,
+    "old_statistics_historical_only": true,
+    "J_channels_are_evidence_not_truth_oracles": true,
+    "protocols_are_not_automatically_theorems": true
+  },
+  "validation_commands": [
+    "python3 tools/foundation/migrate_legacy.py --check",
+    "python3 tools/foundation/validate_foundation.py",
+    "python3 tools/foundation/run_benchmarks.py --check",
+    "python3 -m unittest tests.foundation.test_foundation"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "entity_key",
+    "id",
+    "asset_kind",
+    "stable_id",
+    "legacy_id",
+    "formal_object_type",
+    "claim_type",
+    "status"
+  ],
+  "properties": {
+    "entity_key": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "asset_kind": {
+      "type": "string"
+    },
+    "stable_id": {
+      "type": "string"
+    },
+    "legacy_id": {
+      "type": "string"
+    },
+    "formal_object_type": {
+      "enum": [
+        "FUNCTION",
+        "PARTIAL_FUNCTION",
+        "PREDICATE",
+        "RELATION",
+        "STATE_TRANSITION",
+        "CAUSAL_MODEL",
+        "PROBABILISTIC_MODEL",
+        "METRIC",
+        "ORDER",
+        "OPTIMIZATION_PROBLEM",
+        "OPERATOR",
+        "ALGORITHM",
+        "FORMAL_PROPOSITION",
+        "ARGUMENT_SCHEMA",
+        "MECHANISM_MODEL",
+        "NATURAL_LANGUAGE_CANDIDATE"
+      ]
+    },
+    "claim_type": {
+      "enum": [
+        "DEFINITION",
+        "MATHEMATICAL_PROPOSITION",
+        "ALGORITHMIC_CLAIM",
+        "EMPIRICAL_ASSOCIATION",
+        "EMPIRICAL_CAUSAL_CLAIM",
+        "HISTORICAL_INTERPRETATION",
+        "STRUCTURAL_ANALOGY",
+        "STRICT_ISOMORPHISM_CLAIM",
+        "NORMATIVE_CLAIM",
+        "PHILOSOPHICAL_CLAIM",
+        "EXPLANATORY_HYPOTHESIS",
+        "EXTERNAL_THEOREM_REFERENCE"
+      ]
+    },
+    "status": {
+      "type": "object",
+      "required": [
+        "workflow_status",
+        "semantic_status",
+        "formal_status",
+        "logic_status",
+        "proof_status",
+        "evidence_status",
+        "scope_status",
+        "provenance_status",
+        "migration_status"
+      ],
+      "properties": {
+        "workflow_status": {
+          "type": "string"
+        },
+        "semantic_status": {
+          "type": "string"
+        },
+        "formal_status": {
+          "enum": [
+            "UNFORMALIZED",
+            "FORMALIZATION_INCOMPLETE",
+            "WELL_TYPED",
+            "TYPE_ERROR",
+            "SEMANTICALLY_UNDEFINED",
+            "DIMENSION_ERROR",
+            "COUNTEREXAMPLE_FOUND",
+            "FORMALLY_REFUTED"
+          ]
+        },
+        "logic_status": {
+          "enum": [
+            "NOT_ASSESSED",
+            "VALID_DEDUCTION",
+            "INVALID_INFERENCE",
+            "DEFEASIBLE_SUPPORT",
+            "COUNTERMODEL_FOUND",
+            "HIDDEN_PREMISE",
+            "CIRCULAR",
+            "INCONSISTENT_PREMISES",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "proof_status": {
+          "type": "string"
+        },
+        "evidence_status": {
+          "type": "string"
+        },
+        "scope_status": {
+          "type": "string"
+        },
+        "provenance_status": {
+          "type": "string"
+        },
+        "migration_status": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true,
+  "title": "Formal Object"
+}

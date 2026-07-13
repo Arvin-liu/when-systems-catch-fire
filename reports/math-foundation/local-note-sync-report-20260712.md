@@ -1,5 +1,7 @@
 # Local Note Sync Report
 
+> 076 correction notice: this is a preserved 075 filesystem snapshot. A fresh read-only check found /Users/zhiyuan/我的笔记/getnote-notes present with 117986 files, while /Users/zhiyuan/我的笔记/得到大脑 remained absent. Current evidence is recorded in reports/foundation-architecture/local-source-recovery-audit-20260712.md. Directory existence alone does not verify per-object provenance.
+
 ## Scope
 
 - `/Users/zhiyuan/Documents/GetNoteVault/getnote-notes`: exists=no

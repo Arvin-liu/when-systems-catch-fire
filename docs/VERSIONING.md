@@ -1,23 +1,42 @@
-# 版本说明（VERSIONING）
+# 版本说明
 
-## 点火项目版本阶段
-- **v0.1**：早期函数/案例积累期（历史）。
-- **v0.2**：结构层升级与机器可读化期（历史阶段，见 README「v0.2 路线图（历史阶段）」）。
-- **2026-07-09 元协议生成层版本（当前）**：项目本体从「元函数判定框架」升级为「元协议生成框架」。新增 12 元协议生成层、64 组合理论空间、22 本书候选暂存；Ψ₀ 保留；两张表未改。
+## 版本阶段
+
+- v0.1：早期函数与案例积累期（历史）。
+- v0.2：结构层升级与机器可读化期（历史，见 [v0.2 总结](./v0.2_summary.md)）。
+- 2026-07-09 元协议生成层（历史）：12 元协议、64 组合和候选暂存阶段。
+- 2026-07-12 数学与逻辑双地基七层架构版本（IGNITION-20260709-076，当前）：建立双地基、七层架构、新权威注册表、legacy 兼容视图、九状态轴与强术语门禁。
+
+架构完成不等于内容证明完成。当前架构允许后续逐对象补源、补定义、补证明、补实验、发现反例或降级，而不再推倒整体架构。
 
 ## 什么算版本升级
-版本升级 = 项目本体形态变化 + 全量文档/导航/入口刷新 + 红线制度化。例如本次：第 0 层形成双结构、新增生成层、README/SUMMARY/llms.txt/架构/使用/Agent/得到大脑/版本说明统一升级。
 
-## 什么只是候选增量
-候选增量 = 向候选层追加材料（如新的书籍碰撞、新的学科碰撞），不改变正式架构与两张表。例如 22 本书候选暂存。
+版本升级必须改变项目本体或权威数据契约，并同步更新入口、架构、schema、工具、测试、CI、报告和兼容策略。普通候选增量不构成架构版本升级。
 
-## 版本升级时必须更新哪些文件
-- `README.md`（架构总览、快速入口、边界、红线）
-- `SUMMARY.md`、`llms.txt`
-- `docs/PROJECT-ARCHITECTURE.md`、`docs/USAGE.md`、`docs/AGENT-GUIDE.md`、`docs/GET-BRAIN-WORKFLOW.md`、`docs/VERSIONING.md`
-- `docs/versions/YYYY-MM-DD-*.md`
-- `CHANGELOG.md`
-- 相关 `docs/meta-protocols/`、`outputs/audit/`
+## 当前版本必须同步的表面
+
+- README.md、SUMMARY.md、llms.txt
+- ARCHITECTURE.md、FOUNDATION.md、docs/foundation/
+- docs/PROJECT-ARCHITECTURE.md、USAGE.md、AGENT-GUIDE.md、VERSIONING.md
+- data/foundation/、schemas/foundation/
+- tools/foundation/、tests/foundation/、formal/、views/
+- .github/workflows/、reports/foundation-architecture/
+- CHANGELOG.md 与对应审计记录
 
 ## 审计要求
-每次版本升级须在 `outputs/audit/` 写审计，核对：是否改 Ψ₀、是否改两张表、是否改 data/functions|cases|rebuild、12/64/22 校验、git diff --stat、commit hash、PR 链接、pending 清单。
+
+每次架构版本升级必须核对：
+
+1. 输入分支、HEAD 与开放 PR 真值；
+2. 文件、索引、对象、案例、候选、pending、问题命中和反例的去重口径；
+3. 全量迁移覆盖及 silent omission；
+4. legacy 资产零丢失、零重编号、零不可逆覆盖；
+5. THEOREM、AXIOM、ISOMORPHISM、CAUSAL、PROVED 门禁；
+6. 九状态轴不非法联动；
+7. 数学与逻辑后端真实状态；
+8. schema、validator、test、CI 与兼容视图；
+9. blocker、未解决证明义务、commit 和 Draft PR。
+
+## 兼容策略
+
+新注册表合并后承担对象、命题、论证、来源、证据、证明和验证状态权威。旧两张表继续作为 legacy source / compatibility view，保留原 ID 和正文，不独立生长。计数不得手写，必须来自可复算的 project-state 和 migration-summary。

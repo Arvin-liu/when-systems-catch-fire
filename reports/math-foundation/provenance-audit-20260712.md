@@ -1,5 +1,7 @@
 # Provenance Audit
 
+> 076 correction notice: the 075 labels below are raw-row heuristics, not verified provenance facts. DIRECT_SOURCE_FOUND meant that an absolute-path string appeared, without existence or hash verification; MULTIPLE_CONFLICTING_SOURCES could be triggered by the conceptual word “冲突”; PEND representations were duplicated across Markdown and JSON. The counts remain only as audit history. See reports/foundation-architecture/075-truth-audit-20260712.md.
+
 ## Summary
 
 - DIRECT_SOURCE_FOUND: 596

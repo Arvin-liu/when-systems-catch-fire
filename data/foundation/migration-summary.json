@@ -1,0 +1,32 @@
+{
+  "source_commit": "e55b1d366195fd1cc05babf2010774862157924b",
+  "method": "deterministic_non_destructive_registry_projection",
+  "counts": {
+    "formal_objects": 622,
+    "formal_cases": 806,
+    "candidate_cases": 22,
+    "pending_claims": 34,
+    "scope_entities": 678,
+    "verified_legacy_counterexamples": 0,
+    "benchmark_counterexamples": 2,
+    "object_types": {
+      "PREDICATE": 6,
+      "STATE_TRANSITION": 1,
+      "ALGORITHM": 1,
+      "NATURAL_LANGUAGE_CANDIDATE": 548,
+      "METRIC": 35,
+      "RELATION": 27,
+      "ARGUMENT_SCHEMA": 4
+    }
+  },
+  "dedup_key": [
+    "asset_kind",
+    "normalized_namespace",
+    "normalized_id"
+  ],
+  "representation_key": [
+    "entity_key",
+    "path",
+    "git_blob_sha"
+  ]
+}

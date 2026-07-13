@@ -1,5 +1,7 @@
 # Full Object Inventory
 
+> 076 correction notice: this is a preserved 075 historical artifact. The value 624 below is the number of Markdown files and includes INDEX plus a legacy redirect. The deduplicated legacy formal-object count is 622. The 22 BC records are candidate cases and the 34 PEND records are pending claims, not formal functions. See reports/foundation-architecture/075-truth-audit-20260712.md.
+
 ## Counts
 
 - formal function entries: 624
