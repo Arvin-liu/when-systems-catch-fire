@@ -1,0 +1,23 @@
+{
+  "task": "IGNITION-20260709-121B",
+  "phase": "2_extension_mismatch_repair",
+  "timestamp_utc": "2026-07-14T01:45:00+08:00",
+  "file": "data/external-research/121-fulltext-resolver/121-function-os-node-readjudication.json",
+  "detected_issue": "File has .json extension but contains JSONL (newline-delimited JSON) content",
+  "verification": {
+    "magic_bytes": "7b 22 66 75 6e 63 74 69 6f 6e",
+    "line_count": 9,
+    "valid_json_single_object": false,
+    "valid_jsonl_lines": 9,
+    "jsonl_parse_errors": 0
+  },
+  "repair_action": "RENAME_TO_JSONL",
+  "new_filename": "data/external-research/121-fulltext-resolver/121-function-os-node-readjudication.jsonl",
+  "references_to_update": [
+    "data/external-research/121-fulltext-resolver/121-run-state.json (outputs list)",
+    "reports/external-research/121-legal-fulltext-resolver-report.md",
+    "data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md"
+  ],
+  "repair_status": "IDENTIFIED_PENDING_RENAME",
+  "notes": "File will be renamed in 121B commit. All references updated. SHA256 of content unchanged, only filename changes."
+}

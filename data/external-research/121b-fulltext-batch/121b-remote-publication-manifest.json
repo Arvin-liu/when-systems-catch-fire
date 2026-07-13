@@ -1,0 +1,33 @@
+{
+  "task": "IGNITION-20260709-121B",
+  "phase": "1_remote_publication",
+  "timestamp_utc": "2026-07-14T01:45:00+08:00",
+  "wscf_repository": {
+    "remote": "https://github.com/Arvin-liu/when-systems-catch-fire.git",
+    "branch_pushed": "records/ignition-121-fulltext-resolver-and-120-repair-20260714",
+    "remote_head_sha": "47adc68a686582f866e96b8f6297b33d787ef777",
+    "local_head_sha": "47adc68a686582f866e96b8f6297b33d787ef777",
+    "sha_match": true,
+    "push_timestamp": "2026-07-14T01:45:00+08:00",
+    "base_commit": "f423361aab5736aecbf3dcb87ff421a5cfb13a39",
+    "commits_pushed": 4,
+    "files_in_diff": 73,
+    "draft_pr_status": "BRANCH_PUSHED_NO_PR_CREATED",
+    "pr_note": "Branch pushed for GPT verification. Draft PR creation deferred to avoid touching PR #30."
+  },
+  "1111_repository": {
+    "remote": "https://github.com/Arvin-liu/1111.git",
+    "branch": "records/ignition-121b-result-20260714",
+    "base_main_sha": "f46f954a4c87b791f9a78b3c15c713e9bab8658f",
+    "allowed_directories": [
+      "agent-progress/",
+      "agent-results/"
+    ],
+    "forbidden_directories": [
+      "data/obsidian-getnote/notes/asset/"
+    ],
+    "status": "IN_PROGRESS"
+  },
+  "option_chosen": "A_direct_push",
+  "option_rationale": "Local branch already correctly derived from f423361, all 4 commits are 121-related, no rebuild needed"
+}

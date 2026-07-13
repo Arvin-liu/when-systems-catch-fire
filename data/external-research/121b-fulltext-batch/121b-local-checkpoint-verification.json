@@ -1,0 +1,68 @@
+{
+  "task": "IGNITION-20260709-121B",
+  "phase": "0_local_checkpoint_verification",
+  "timestamp_utc": "2026-07-14T01:45:00+08:00",
+  "salvage_site": "/tmp/wscf-121",
+  "salvage_site_exists": true,
+  "checkpoint": {
+    "short_sha_reported_by_121A": "47adc68",
+    "full_sha": "47adc68a686582f866e96b8f6297b33d787ef777",
+    "exists_locally": true,
+    "parent_sha": "83aa4d94c986274da9dc97e3d83fc970467ec5ba",
+    "tree_sha": "9f412cfdfb7616f8556baaa5bbeec50754bddc1a",
+    "branch": "records/ignition-121-fulltext-resolver-and-120-repair-20260714",
+    "working_tree_dirty": false,
+    "dirty_files_count": 0,
+    "merge_base_with_f423361": "f423361aab5736aecbf3dcb87ff421a5cfb13a39",
+    "ahead_of_f423361": 4,
+    "behind_f423361": 0,
+    "commit_chain": [
+      {
+        "sha": "47adc68a686582f866e96b8f6297b33d787ef777",
+        "subject": "121A: night recovery \u2014 salvage Kimi 121 work, audit, format check, clean checkpoint"
+      },
+      {
+        "sha": "83aa4d94c986274da9dc97e3d83fc970467ec5ba",
+        "subject": "121: add task artifact summary"
+      },
+      {
+        "sha": "9361c1ef7cadd5047fcb06bdc1b39b64769928a4",
+        "subject": "121: legal fulltext resolver, 30 evidence cards, GAP re-adjudication, validator"
+      },
+      {
+        "sha": "5d33b72199973fe78db3e2f2183faed8f471eebc",
+        "subject": "feat(120): add openalex_client.py"
+      }
+    ],
+    "frozen_baseline": "f423361aab5736aecbf3dcb87ff421a5cfb13a39"
+  },
+  "sensitive_file_scan": {
+    "pdf_files_in_diff": 0,
+    "cookie_files_in_diff": 0,
+    "env_files_in_diff": 0,
+    "cache_files_in_diff": 0,
+    "credential_files_in_diff": 0,
+    "largest_files_in_diff": [
+      {
+        "path": "scripts/external-research/openalex_client.py",
+        "insertions": 363
+      },
+      {
+        "path": "scripts/external-research/121_generate_evidence_cards.py",
+        "insertions": 316
+      },
+      {
+        "path": "scripts/external-research/fulltext_resolver.py",
+        "insertions": 296
+      }
+    ]
+  },
+  "frozen_files_check": {
+    "psi0_modified": false,
+    "085_frozen_v1_modified": false,
+    "unified_function_table_modified": false,
+    "unified_case_table_modified": false
+  },
+  "verification_result": "CHECKPOINT_VERIFIED",
+  "notes": "47adc68 exists locally, tree is clean, all 4 commits are 121-related, no sensitive files, frozen files untouched"
+}

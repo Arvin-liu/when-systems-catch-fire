@@ -1,0 +1,45 @@
+{
+  "task": "IGNITION-20260709-121B",
+  "model_used": "qclaw/pool-glm-5.2-night",
+  "thinking_used": "high",
+  "model_switch": false,
+  "fallback": false,
+  "timestamp_utc": "2026-07-14T01:45:00+08:00",
+  "phase_status": {
+    "P0_local_checkpoint_verification": "COMPLETE",
+    "P1_remote_publication_wscf": "COMPLETE",
+    "P1_remote_publication_1111": "IN_PROGRESS",
+    "P2_quarantine_report": "COMPLETE",
+    "P2_extension_mismatch_repair": "IDENTIFIED",
+    "P2_openalex_provenance": "COMPLETE",
+    "P2_credential_cleanup": "VERIFIED",
+    "P3_fulltext_resolution": "COMPLETE_84_sources",
+    "P4_download_extraction": "COMPLETE_79_of_84",
+    "P5_remaining_10_retry": "5_SUCCESS_5_FAILED",
+    "P6_review_queue": "COMPLETE",
+    "P6_provisional_audit": "COMPLETE"
+  },
+  "counts": {
+    "total_sources": 84,
+    "located": 84,
+    "downloaded": 79,
+    "extracted": 79,
+    "anchor_verified": 30,
+    "failed": 5,
+    "provisional_review_downgraded": 30,
+    "review_queue_for_121c": 79,
+    "landing_page_only": 0
+  },
+  "credential_fragments": 0,
+  "pr_merged_or_closed": 0,
+  "frozen_files_modified": false,
+  "1111_forbidden_dir_changed": false,
+  "status": "121B_FULLTEXT_BATCH_READY_FOR_MAX_SEMANTIC_REVIEW",
+  "blockers": [
+    "5 sources still failed (S120-006, S120-016, S120-051, S120-052, S120-057)",
+    "5 retry downloads need full text extraction (first page verified only)",
+    "1111 branch and draft PR not yet created",
+    "Extension mismatch file rename pending commit"
+  ],
+  "handoff_to_121c": "data/external-research/121b-fulltext-batch/reports/external-research/121b-handoff-to-121c.md"
+}
