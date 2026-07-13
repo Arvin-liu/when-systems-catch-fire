@@ -21,8 +21,8 @@
   "1111_pr_state": "OPEN",
   "1111_pr_draft": true,
   "started_at_utc": "2026-07-13T19:13:00Z",
-  "last_completed_step": 6,
-  "next_step": 7,
+  "last_completed_step": 7,
+  "next_step": 8,
   "phases": {
     "A_baseline_correction_manifest": "COMPLETE",
     "B_partial_extraction_repair": "IN_PROGRESS",
