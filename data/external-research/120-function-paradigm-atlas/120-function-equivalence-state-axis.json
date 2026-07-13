@@ -1,0 +1,74 @@
+{
+  "description": "Eight equivalence states for comparing function representations, from weakest to strongest",
+  "states": {
+    "SYNTACTIC_MATCH": {
+      "level": 1,
+      "definition": "String or AST representation is identical",
+      "check_method": "String comparison or AST diff",
+      "allowed_claim": "These functions have identical syntax",
+      "forbidden_claim": "These functions are equivalent (syntax match alone does not imply behavioral equivalence)"
+    },
+    "SPECIFICATION_MATCH": {
+      "level": 2,
+      "definition": "Function specifications (preconditions, postconditions, types) match",
+      "check_method": "Compare specification fields",
+      "allowed_claim": "These functions have matching specifications",
+      "forbidden_claim": "These functions are equivalent (specification match does not imply implementation equivalence)"
+    },
+    "FINITE_TEST_BEHAVIOR_MATCH": {
+      "level": 3,
+      "definition": "Functions produce identical outputs on a finite test set",
+      "check_method": "Run both on test suite and compare outputs",
+      "allowed_claim": "These functions match on the tested inputs",
+      "forbidden_claim": "These functions are equivalent (finite testing cannot prove equivalence)"
+    },
+    "DISTRIBUTIONAL_APPROXIMATION": {
+      "level": 4,
+      "definition": "Functions produce statistically similar output distributions",
+      "check_method": "Statistical test (KS test, Wasserstein distance, etc.)",
+      "allowed_claim": "These functions have similar output distributions",
+      "forbidden_claim": "These functions are equivalent (distributional similarity is not equivalence)"
+    },
+    "OBSERVATIONAL_EQUIVALENCE": {
+      "level": 5,
+      "definition": "No observable difference exists between functions under defined observation model",
+      "check_method": "Differential testing under observation model",
+      "allowed_claim": "These functions are observationally equivalent under the defined model",
+      "forbidden_claim": "These functions are semantically equivalent (observational equivalence is model-dependent)"
+    },
+    "FORMAL_SEMANTIC_EQUIVALENCE": {
+      "level": 6,
+      "definition": "Functions are provably equivalent under formal denotational or operational semantics",
+      "check_method": "Formal proof using denotational/operational semantics",
+      "allowed_claim": "These functions are formally semantically equivalent",
+      "forbidden_claim": "This equivalence extends beyond the formalized semantic domain"
+    },
+    "EMPIRICAL_PERFORMANCE_SIMILARITY": {
+      "level": 7,
+      "definition": "Functions achieve similar performance on empirical benchmarks",
+      "check_method": "Benchmark comparison with confidence intervals",
+      "allowed_claim": "These functions have similar empirical performance",
+      "forbidden_claim": "These functions are equivalent (performance similarity is not functional equivalence)"
+    },
+    "NOT_COMPARABLE": {
+      "level": 0,
+      "definition": "Functions use different representations or domains that prevent comparison",
+      "check_method": "Check if comparison methods are applicable",
+      "allowed_claim": "These functions are not comparable with available methods",
+      "forbidden_claim": "These functions are equivalent or non-equivalent (no claim can be made)"
+    }
+  },
+  "transition_rules": {
+    "SYNTACTIC_MATCH → SPECIFICATION_MATCH": "Automatic if specifications are extracted from syntax",
+    "SPECIFICATION_MATCH → FINITE_TEST_BEHAVIOR_MATCH": "Requires test suite execution",
+    "FINITE_TEST_BEHAVIOR_MATCH → DISTRIBUTIONAL_APPROXIMATION": "Requires statistical analysis on larger sample",
+    "DISTRIBUTIONAL_APPROXIMATION → OBSERVATIONAL_EQUIVALENCE": "Requires defined observation model",
+    "OBSERVATIONAL_EQUIVALENCE → FORMAL_SEMANTIC_EQUIVALENCE": "Requires formal proof",
+    "Any → NOT_COMPARABLE": "When comparison methods are inapplicable"
+  },
+  "forbidden_transitions": [
+    "Cannot skip from SYNTACTIC_MATCH directly to FORMAL_SEMANTIC_EQUIVALENCE",
+    "Cannot claim FORMAL_SEMANTIC_EQUIVALENCE from EMPIRICAL_PERFORMANCE_SIMILARITY alone",
+    "Cannot derive EQUIVALENT from NOT_COMPARABLE"
+  ]
+}
