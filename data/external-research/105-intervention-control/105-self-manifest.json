@@ -1,0 +1,56 @@
+{
+  "task_id": "IGNITION-105",
+  "task_name": "intervention-control-evidence",
+  "executed_at": "2026-07-13T21:21:46+08:00",
+  "executor": "qclaw/pool-glm-5.2 | thinking=adaptive(max)",
+  "parent_branch": "records/ignition-104-dual-088-reconciliation-external-evidence-layer-20260713",
+  "parent_head": "669e0612",
+  "new_branch": "records/ignition-105-intervention-control-evidence-20260713",
+  "artifacts": [
+    {
+      "filename": "105-intervention-control-source-pack.jsonl",
+      "description": "25条外部来源包：8条继承自088-B GAP-001，17条新增（含3条补充学科覆盖）",
+      "line_count": 25
+    },
+    {
+      "filename": "105-discipline-coverage-matrix.json",
+      "description": "18学科压力测试覆盖矩阵"
+    },
+    {
+      "filename": "105-interface-options-analysis.json",
+      "description": "4种接口方案对抗审查分析"
+    },
+    {
+      "filename": "105-evidence-validator.py",
+      "description": "验证器脚本：10项自动检查",
+      "lines": 97
+    },
+    {
+      "filename": "105-self-manifest.json",
+      "description": "本文件：自述清单"
+    }
+  ],
+  "source_statistics": {
+    "total_sources": 25,
+    "evidence_tiers": {
+      "FULLTEXT_REVIEWED": 8,
+      "ABSTRACT_REVIEWED": 11,
+      "METADATA_VERIFIED": 6
+    },
+    "source_families": {
+      "1_SCM_theory": 7,
+      "2_experimental": 7,
+      "3_control_systems": 1,
+      "4_RL_policy": 2,
+      "5_transportability": 4,
+      "6_identification_failure": 3
+    },
+    "discipline_coverage": "18/18",
+    "doi_verification": "25/25 verified (Crossref/arXiv)",
+    "fabricated_sources": 0
+  },
+  "interface_recommendation": "Option C: Separate Evidence Layer (LOWEST constitutional risk)",
+  "red_line_checks": "10/10 PASS",
+  "validator_result": "ALL CHECKS PASS",
+  "next_task_suggestion": "IGNITION-106: 对GAP-002进行全文证据深挖（如用户指定）"
+}

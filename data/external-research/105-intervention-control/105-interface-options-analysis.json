@@ -1,0 +1,70 @@
+{
+  "Option A: New Object Type Interface": {
+    "description": "在点火框架中新增 InterventionControl 对象类型，包含 intervention_target, control_group, identification_strategy, effect_estimate, sensitivity_bounds 字段",
+    "pros": [
+      "结构化最强，每个干预-对照实例有独立对象",
+      "便于在函数表/案例表中追踪",
+      "直接映射到SCM的do-operator语义",
+      "支持元协议投影(P_meta)"
+    ],
+    "cons": [
+      "新增对象类型需要框架级变更审查",
+      "可能过度结构化简单因果关系",
+      "与现有CausalStructure对象可能重叠",
+      "需要更新验证器以支持新类型"
+    ],
+    "evidence_support": "S03(Pearl), S10(Pearl 1995), S04(DML), S05(Athey-Wager) 均支持结构化干预定义",
+    "constitutional_risk": "MEDIUM - 新增对象类型不修改Ψ₀定义，但扩展了框架本体"
+  },
+  "Option B: Enhancement Fields on Existing Objects": {
+    "description": "在现有CausalStructure和BootstrapConvergence对象上添加 intervention_control_status, identification_method, sensitivity_analysis_result 字段",
+    "pros": [
+      "不新增对象类型，改动最小",
+      "向后兼容现有函数表",
+      "字段级添加可通过ENHANCE_KEEP补丁实现",
+      "不影响现有验证流程"
+    ],
+    "cons": [
+      "干预-控制信息散布在多个对象上",
+      "难以维护干预实例的一致性",
+      "查询效率低",
+      "可能造成字段语义模糊"
+    ],
+    "evidence_support": "S06(Cinelli-Hazlett sensitivity), S07(BART), S08(Synthetic Control) 可映射为字段",
+    "constitutional_risk": "LOW - ENHANCE_KEEP不修改现有结构，只添加可选字段"
+  },
+  "Option C: Separate Evidence Layer (Standalone)": {
+    "description": "创建独立的外部证据层文件(external-evidence-layer.jsonl)，与框架核心对象解耦，通过reference_id关联",
+    "pros": [
+      "完全解耦，不影响框架核心",
+      "外部证据可独立更新/扩展",
+      "支持多版本证据层",
+      "符合'local-first, external-second'原则"
+    ],
+    "cons": [
+      "证据与框架之间的关联可能断裂",
+      "需要额外维护reference映射",
+      "查询需要跨层join",
+      "可能在收敛判定中被忽略"
+    ],
+    "evidence_support": "所有25条来源都可放入证据层，通过DOI关联",
+    "constitutional_risk": "LOWEST - 不触及框架核心结构"
+  },
+  "Option D: Hybrid (Object Type + Evidence Layer)": {
+    "description": "在框架中新增轻量级 InterventionControlRef 对象(只含reference和metadata)，详细证据放在外部证据层",
+    "pros": [
+      "框架内有对象引用，保证可追溯",
+      "详细证据在外部层，不膨胀框架",
+      "支持证据版本管理",
+      "可在收敛判定中引用"
+    ],
+    "cons": [
+      "需要维护两套结构的一致性",
+      "复杂度最高",
+      "对象-证据映射可能不同步",
+      "验证器需要跨层检查"
+    ],
+    "evidence_support": "结合S03/S10(结构) + S06/S20/S21(失败/限制) + 其余(方法/标准)",
+    "constitutional_risk": "MEDIUM - 新增轻量对象类型+外部层"
+  }
+}
