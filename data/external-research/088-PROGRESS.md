@@ -46,3 +46,12 @@
 - 端点：POST https://api.anysearch.com/v1/search，body {"query","limit"}，免 key、CORS 开放
 - 闭环规则：anysearch 仅找线索 → 抽取 DOI 须 Crossref 双向验真后才入产物（反幻觉）
 - 用途：解决 web_fetch 受限；扩补 6 MEDIUM 缺口外部文献；任何「找线索→验真」文献任务
+
+## MEDIUM 缺口外部文献补完（GAP-009~014）
+- 方法：anysearch 客户端找线索 → 抽 DOI → Crossref 双向验真 → 才入产物（反幻觉闭环）。
+- 结果：`088-external-source-atlas-medium.jsonl` 43 条，全部 crossref_verified=true，零伪造。
+  - GAP-009:10 / 010:12 / 011:4 / 012:5 / 013:8 / 014:4（GAP-014 有 1 候选验真失败已过滤）。
+- 阶段4 总包升版 v3：117 条（v2 74 + MEDIUM 43）。
+- 094 补丁库：6 个 ENHANCE_KEEP 升级为 ENHANCE_WITH_EXTERNAL_SOURCES。
+- 099 回填：6 MEDIUM 标记 GROUNDED_WITH_EXTERNAL。全 14 缺口已落地外部支撑。
+- 红线：MEDIUM 仅补引擎内部增强字段（open_system_boundary / construct_validity / domain_ontology / transportability / reproducibility / negative_result 等），未改 Ψ₀ 现有判定结构。
