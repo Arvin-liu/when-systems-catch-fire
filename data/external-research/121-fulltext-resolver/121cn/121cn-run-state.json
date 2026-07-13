@@ -21,8 +21,8 @@
   "1111_pr_state": "OPEN",
   "1111_pr_draft": true,
   "started_at_utc": "2026-07-13T19:13:00Z",
-  "last_completed_step": 4,
-  "next_step": 5,
+  "last_completed_step": 5,
+  "next_step": 6,
   "phases": {
     "A_baseline_correction_manifest": "IN_PROGRESS",
     "B_partial_extraction_repair": "PENDING",
@@ -52,5 +52,6 @@
   "credential_fragments": 0,
   "pr_merged_or_closed": 0,
   "frozen_files_modified": false,
-  "blockers": []
+  "blockers": [],
+  "sources_clean_for_review": 62
 }
