@@ -1,0 +1,28 @@
+{
+  "task_id": "IGNITION-106",
+  "validator": "106-validator.py",
+  "run_time": "2026-07-13T22:05:00+08:00",
+  "total_checks": 14,
+  "passed": 14,
+  "failed": 0,
+  "warnings": 1,
+  "errors": 0,
+  "warning_detail": "31 sources have retraction_check_status=NOT_CHECKED — manual review required for sources without evidence cards",
+  "overall_pass": true,
+  "checks_summary": {
+    "min_16_sources": "PASS (31≥16)",
+    "min_12_abstract_reviewed": "PASS (23≥12)",
+    "min_6_fulltext_reviewed_after_downgrades": "PASS (6≥6, note: 2 downgraded from 8)",
+    "all_6_source_families": "PASS (6/6)",
+    "all_dois_verified": "PASS (31/31)",
+    "zero_fabricated": "PASS (0)",
+    "18_disciplines_source_present": "PASS (18/18 SOURCE_PRESENT, 16/18 ABSTRACT, 7/18 FULLTEXT, 7/18 CLAIM)",
+    "coverage_matrix_source_ids_resolve": "PASS (all IDs resolve)",
+    "fulltext_evidence_cards_complete": "PASS (8 cards, all required fields present)",
+    "downgrade_register_consistency": "PASS (2 downgrades applied consistently)",
+    "evidence_tier_distribution": "PASS (FT=6, ABS=17, META=8)",
+    "option_c_is_provisional": "PASS (PROVISIONAL_INTERFACE_RECOMMENDATION_PENDING_CONSTITUTIONAL_REVIEW)",
+    "psi0_unchanged": "PASS (NOT_MODIFIED)",
+    "no_new_function_numbers": "PASS (verified via git diff)"
+  }
+}

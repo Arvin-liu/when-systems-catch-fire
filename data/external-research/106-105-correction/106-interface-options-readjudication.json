@@ -1,0 +1,66 @@
+{
+  "option_a": {
+    "name": "Option A: New Object Type (InterventionControl) merged into C(x,y)",
+    "overlap_with_C_xy": "HIGH — C(x,y) already handles causal structure; adding InterventionControl would duplicate identification logic",
+    "overlap_with_GAP_003_temporal": "MEDIUM — temporal dynamics of interventions would need separate handling",
+    "overlap_with_GAP_012_identification": "HIGH — identification strategy is core to GAP-012; new object type would fragment this",
+    "control_theory_relation": "Feedback control maps to do-operator; system identification maps to causal identification; stability maps to convergence — all already in Ψ₀",
+    "impact_on_psi0_minimal_structure": "EXPANSION — requires new object type definition, new validation rules, new convergence criteria",
+    "reversibility": "LOW — once object type is in framework, removing it breaks references",
+    "migration_cost": "HIGH — need to update all validators, function table, case table references",
+    "misuse_risk": "MEDIUM — could be confused with CausalStructure objects",
+    "final_status": "NOT_RECOMMENDED — overlaps too heavily with C(x,y) and GAP-012"
+  },
+  "option_b": {
+    "name": "Option B: Enhancement Fields (ENHANCE_KEEP on existing objects)",
+    "overlap_with_C_xy": "LOW — adds optional fields, doesn't change structure",
+    "overlap_with_GAP_003_temporal": "LOW — fields can reference temporal data without temporal model",
+    "overlap_with_GAP_012_identification": "MEDIUM — identification_method field would partially overlap",
+    "control_theory_relation": "Fields can reference control theory concepts without encoding them",
+    "impact_on_psi0_minimal_structure": "MINIMAL — ENHANCE_KEEP is additive only",
+    "reversibility": "HIGH — fields can be ignored or removed",
+    "migration_cost": "LOW — only additive changes",
+    "misuse_risk": "LOW — fields are optional",
+    "final_status": "VIABLE_ALTERNATIVE — safe but limited expressiveness"
+  },
+  "option_c": {
+    "name": "Option C: Separate Evidence Layer (standalone external file)",
+    "overlap_with_C_xy": "NONE — completely decoupled from framework core",
+    "overlap_with_GAP_003_temporal": "NONE — evidence layer doesn't touch temporal dynamics",
+    "overlap_with_GAP_012_identification": "NONE — identification stays in framework core",
+    "control_theory_relation": "Evidence layer can reference control theory concepts as external citations",
+    "impact_on_psi0_minimal_structure": "ZERO — no changes to Ψ₀ or framework objects",
+    "reversibility": "HIGHEST — evidence layer is just a file; can be deleted without framework impact",
+    "migration_cost": "LOWEST — no framework changes needed",
+    "misuse_risk": "LOW — evidence layer cannot be mistaken for framework truth",
+    "final_status": "PROVISIONAL_INTERFACE_RECOMMENDATION_PENDING_CONSTITUTIONAL_REVIEW — lowest risk, maintains clean separation, can be upgraded to hybrid later"
+  },
+  "option_d": {
+    "name": "Option D: Hybrid (lightweight InterventionControlRef + external evidence layer)",
+    "overlap_with_C_xy": "LOW — reference object is lightweight, doesn't duplicate C(x,y)",
+    "overlap_with_GAP_003_temporal": "LOW — reference can point to temporal evidence",
+    "overlap_with_GAP_012_identification": "LOW — reference doesn't encode identification logic",
+    "control_theory_relation": "Reference can point to control theory evidence without encoding it",
+    "impact_on_psi0_minimal_structure": "MODERATE — new lightweight object type needed in framework",
+    "reversibility": "MEDIUM — object type removal is harder than file deletion",
+    "migration_cost": "MODERATE — need framework changes for reference object",
+    "misuse_risk": "MEDIUM — reference objects could accumulate and bloat framework",
+    "final_status": "DEFERRED — viable upgrade path from Option C if framework integration is needed"
+  },
+  "final_recommendation": "PROVISIONAL_INTERFACE_RECOMMENDATION_PENDING_CONSTITUTIONAL_REVIEW",
+  "recommended_option": "Option C",
+  "reasoning": [
+    "Option C has ZERO impact on Ψ₀ minimal structure",
+    "All 31 sources (25 original + 6 new) are external evidence — they belong in an external layer",
+    "Option C is fully reversible (delete file = undo)",
+    "Option C can be upgraded to Option D if future tasks require framework-level references",
+    "Option C maintains consistent separation between framework truth and external evidence",
+    "Option C is consistent with 088-B's external source atlas approach",
+    "Option C does NOT require constitutional review to implement — only to upgrade beyond provisional"
+  ],
+  "conditions_for_upgrade": [
+    "Option C → Option D: if a future IGNITION task requires framework-level traceability to evidence",
+    "Option D → Option A: if the framework needs to treat intervention/control as first-class objects with convergence criteria",
+    "Any upgrade requires explicit constitutional review and GPT approval"
+  ]
+}

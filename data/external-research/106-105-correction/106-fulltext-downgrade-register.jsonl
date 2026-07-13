@@ -1,0 +1,2 @@
+{"source_id": "105-S10", "old_tier": "FULLTEXT_REVIEWED", "new_tier": "ABSTRACT_REVIEWED", "reason": "PDF text extraction failed (scanned/image-based encoding); only cover page readable; cannot perform genuine fulltext review", "claim_support_change": "NOT_ASSESSED → UNRESOLVED"}
+{"source_id": "105-S13", "old_tier": "FULLTEXT_REVIEWED", "new_tier": "ABSTRACT_REVIEWED", "reason": "AEA website requires JavaScript/cookies; PDF download returned 403; only abstract available", "claim_support_change": "NOT_ASSESSED → UNRESOLVED"}

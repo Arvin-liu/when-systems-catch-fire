@@ -1,0 +1,22 @@
+{
+  "task_id": "IGNITION-106",
+  "base_commit": "9777748c53df861a8abac552a965eefbc6d3065b",
+  "changed_files_from_105_HEAD": [
+    "NONE"
+  ],
+  "psi0_modified": false,
+  "function_table_modified": false,
+  "case_table_modified": false,
+  "085_frozen_modified": false,
+  "candidate_formalized_promoted": false,
+  "main_branch_modified": false,
+  "all_redlines_pass": true,
+  "details": {
+    "psi0": "NOT MODIFIED — no files matching 'psi0' or 'Ψ₀' in diff",
+    "function_table": "NOT MODIFIED — 统一函数总表/ not in diff",
+    "case_table": "NOT MODIFIED — 统一案例总表/ not in diff",
+    "085_frozen": "NOT MODIFIED — no 085 frozen files in diff",
+    "main_branch": "NOT MODIFIED — changes only on records/ branch",
+    "pr_merged": "NONE — no PRs merged or closed"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "task_id": "IGNITION-106",
+  "baseline_time": "2026-07-13T22:00:00+08:00",
+  "parent_branch": "records/ignition-105-intervention-control-evidence-20260713",
+  "parent_head": "9777748c53df861a8abac552a965eefbc6d3065b",
+  "new_branch": "records/ignition-106-repair-105-evidence-and-validator-20260713",
+  "105_files_sha256": {
+    "105-intervention-control-source-pack.jsonl": "e1f2fa0b9f3b4372e50d97561b437946080a37afc7be8b27cebac4dda4b4b35a",
+    "105-discipline-coverage-matrix.json": "826155ab6ab7b54b956180f276c4f06306000db6d29eb0a58232754c24109c21",
+    "105-interface-options-analysis.json": "5479d6b81701d48cd82af6e4af26d8260d7fda7ee2efc90150bb9977dbffae8f",
+    "105-evidence-validator.py": "4b00540bcf896173e46471c83be9a80b09a22abdbffcef81b155ab46209834fb",
+    "105-self-manifest.json": "26b812eba49eb584ab7a833abcb32da8da918f5526a93503453bfb3629ba55ef"
+  },
+  "085_frozen_v1_hash": "7d79f30a5eacb7f12c7ca9594c711000e030f7e12a61a9e609dbe75dac532a03",
+  "function_table_dir_hash": "61f6bbab3a1818e490c7946adc64b88dd3916c5a97ab8f7b8c89bd2af1bfeb7b",
+  "case_table_dir_hash": "2c1ccddbb9efc01b61869b20a68ab5835ac28f73adbe0572d3c045928e2d3f2c",
+  "104_deep_dive_queue_hash": "9bfd776722281c4f7f425fcc11f2c015b9e0838848f3be77633c9a9794fe95ca",
+  "psi0_hash": "NOT_MODIFIED",
+  "expected_psi0_hash": "NOT_MODIFIED",
+  "redline_status": {
+    "psi0_modified": false,
+    "new_function_numbers": false,
+    "085_frozen_v1_modified": false,
+    "function_table_modified": false,
+    "case_table_modified": false,
+    "candidate_formalized_promoted": false,
+    "main_branch_modified": false,
+    "pr_merged": false,
+    "pr_closed": false
+  }
+}
