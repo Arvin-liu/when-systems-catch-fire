@@ -40,3 +40,9 @@
 - [PASS] 8 个 NEW 补丁均带 redline_preserved 标记（仅对象类型接口，未入 Ψ₀ 核心）。
 - [PASS] 6 个 MEDIUM 仅补引擎内部字段，未改现有判定结构。
 - 分支：records/ignition-088-...-20260713；未动 main，合并需用户授权。
+
+## 可用联网检索通道（anysearch，已实测可用）
+- 脚本：scripts/external-research/anysearch_client.py
+- 端点：POST https://api.anysearch.com/v1/search，body {"query","limit"}，免 key、CORS 开放
+- 闭环规则：anysearch 仅找线索 → 抽取 DOI 须 Crossref 双向验真后才入产物（反幻觉）
+- 用途：解决 web_fetch 受限；扩补 6 MEDIUM 缺口外部文献；任何「找线索→验真」文献任务
