@@ -1,0 +1,93 @@
+{
+  "source_id": "S120-001",
+  "canonical_title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+  "authors": "Wentao Zhang, Liliana Hotsko, Woojeong Kim, Pengyu Nie, Stuart Shieber, Yuntian Deng",
+  "year": 2026,
+  "venue": "arXiv preprint arXiv:2607.02512",
+  "doi_or_identifier": "arXiv:2607.02512v1",
+  "source_family": 1,
+  "url": "https://arxiv.org/pdf/2607.02512",
+  "version": "preprint v1",
+  "sha256": "546f833487392f7dc31cf72c04e13eeac77c794420e575d7af2041308f7cdb7d",
+  "file_size_bytes": 1811878,
+  "page_count": 28,
+  "content_access_status": "ANCHOR_VERIFIED",
+  "semantic_review_status": "MAX_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "Abstract",
+    "1 Introduction",
+    "2 Programs as Weights",
+    "3 The Compiler-Interpreter System (3.1 Compiler-interpreter abstraction, 3.2 Text-to-LoRA, 3.3 Prefix-tuning)",
+    "4 Training",
+    "5 FuzzyBench",
+    "6 Main Results",
+    "7 Ablations",
+    "8 Robustness to Noisy Specifications",
+    "9 Local Execution",
+    "11 Conclusion",
+    "Appendix N Limitations"
+  ],
+  "page_or_section_anchors": [
+    "sec:intro", "sec:programs-as-weights", "sec:compiler-interpreter", "sec:training", "sec:fuzzybench", "sec:results", "sec:ablations", "sec:robustness", "sec:local", "sec:related", "Appendix N"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "Fuzzy functions — tasks that resist clean rule-based implementation — can be compiled from natural-language specifications into compact, locally-executable neural artifacts (PEFT adapters).",
+    "A 4B compiler (Qwen3-4B) trained on FuzzyBench (10M examples, 800+ categories) emits LoRA adapters for a frozen 0.6B Qwen3 interpreter.",
+    "The PAW paradigm reframes the foundation model from a per-input problem solver into a tool builder: invoked once per function definition, producing a reusable artifact whose subsequent calls are cheap and offline.",
+    "PAW programs are hybrid: a discrete pseudo-program (natural language restatement + examples) and a continuous PEFT module (LoRA). The discrete half shields against typos; the continuous half supplies fine-grained behavioral control.",
+    "A 0.6B interpreter executing PAW programs outperforms direct prompting of Qwen3-32B (73.78% vs 68.70% exact match) at ~1/50th inference memory.",
+    "Quantized PAW runs at 30 tokens/s on MacBook M3; ~430MB shared base + 23MB per-program LoRA adapter.",
+    "The compile pipeline has two stages: (1) pseudo compiler (off-the-shelf Qwen3-4B, never trained) that produces a discrete pseudo-program; (2) LoRA compiler (trained 4B model) that emits LoRA from hidden states via a LoRA mapper using shared learnable bases and mixing coefficients."
+  ],
+  "function_concept_used_by_paper": "Functions are compiled artifacts: a natural-language spec is compiled into a weight-space adapter (LoRA) that specializes a frozen interpreter. The function is the adapter+interpreter pair, not the code. Functions have a name, version, and can be cached, version-controlled, and distributed via package managers.",
+  "representation_or_carrier": "LoRA adapter (low-rank matrices A_ex, B_ex composed from shared learnable bases via mixing coefficients) + a discrete pseudo-program (token sequence). The artifact is a single file (~23MB at Q4_0).",
+  "compiler_or_generator": "Two-stage compiler: (1) pseudo compiler = off-the-shelf Qwen3-4B-Instruct with task-rewriting prompt; (2) LoRA compiler = trained 4B Qwen3 model that reads spec + pseudo-program + learned prefix tokens, extracts hidden states, and maps them through a LoRA mapper (MLP + linear projection into mixing coefficients over shared bases).",
+  "interpreter_or_runtime": "Frozen Qwen3-0.6B model that ingests the LoRA adapter (hot-attached to target modules) and the pseudo-program (prepended to user input), generating output autoregressively. Comparable to a CPU or byte-code interpreter in conventional software stacks.",
+  "composition_rule": "Not directly addressed. PAW programs are standalone artifacts. The paper does not define a formal composition algebra for combining multiple PAW programs. However, the architecture is modular: different PEFT methods can serve as the program form, and the compiler/interpreter abstraction is PEFT-agnostic.",
+  "state_or_effect_model": "Not addressed. PAW programs are stateless fuzzy function implementations. No effect tracking, no state management, no side-effect calculus is provided.",
+  "validation_regime": "Empirical validation on FuzzyBench (exact match accuracy). No formal verification, no precondition/postcondition checking, no SMT-based validation. The paper explicitly acknowledges this is a fuzzy paradigm where correctness is probabilistic.",
+  "equivalence_notions": "Not addressed. The paper does not define or check equivalence between PAW programs, between a PAW program and a reference implementation, or across different PEFT instantiations.",
+  "limitations_and_failure_boundaries": [
+    "The compiler is trained on FuzzyBench, a proprietary 10M-example dataset; generalization outside fuzzy-text tasks is untested.",
+    "PAW does not provide formal verification or correctness guarantees — the function is a neural artifact whose behavior is probabilistic.",
+    "The interpreter is a fixed model; if the model has biases or failure modes, all PAW programs inherit them.",
+    "The paper's Appendix N acknowledges limitations including compiler capacity, interpreter size constraints, and domain coverage.",
+    "No equivalence checking between PAW programs and symbolic implementations.",
+    "No effect tracking or state management for stateful tasks."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "EXPOSES: PAW uses natural-language specs, not formal preconditions/postconditions. The 'fuzzy function' paradigm explicitly avoids formal specification. This gap is directly visible: PAW cannot guarantee what function it compiled.",
+    "GAP-016": "PARTIAL_SUPPORT: PAW programs are modular artifacts that can be cached and distributed, suggesting composition is feasible. But no formal composition algebra is defined.",
+    "GAP-017": "EXPOSES: PAW has no equivalence checking. Two different compilations of the same spec may produce different behaviors. No way to verify a PAW program matches a reference function.",
+    "GAP-018": "NOT_ADDRESSED: PAW programs are stateless.",
+    "GAP-019": "SUPPORTS: PAW programs are versioned files that can be distributed via package managers. The artifact has name, version, and is a single file. This is direct evidence for a versioned registry.",
+    "GAP-020": "PARTIAL_SUPPORT: PAW explicitly treats functions as probabilistic/fuzzy, which aligns with probabilistic semantics. But it does not use a formal probabilistic programming language."
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "WEAK_EVIDENCE: Natural-language spec is used, not a formal specification language. The pseudo-program is a restatement, not a contract.",
+    "N2_Representation": "MULTI_SOURCE_EVIDENCE: LoRA adapters as function representation is concretely demonstrated. The hybrid discrete+continuous representation is novel.",
+    "N3_Compiler": "MULTI_SOURCE_EVIDENCE: Two-stage neural compiler (pseudo compiler + LoRA compiler) is a concrete compilation pipeline. The LoRA mapper (hidden states → mixing coefficients → composed LoRA) is a specific compilation mechanism.",
+    "N4_Artifact": "MULTI_SOURCE_EVIDENCE: ~23MB LoRA file as a distributable, cacheable, versionable artifact. Directly demonstrates the Artifact node.",
+    "N5_Interpreter": "MULTI_SOURCE_EVIDENCE: Frozen 0.6B Qwen3 interpreter executing PAW programs. Clear separation between compiler (heavy, run once) and interpreter (light, run many).",
+    "N6_ExecutionTrace": "WEAK_EVIDENCE: The paper mentions 'local execution' and performance metrics but does not produce structured execution traces.",
+    "N7_Validator": "NO_EVIDENCE: No formal validation. Only empirical accuracy on FuzzyBench.",
+    "N8_ComposerRouter": "NO_EVIDENCE: No composition or routing of multiple PAW programs is demonstrated.",
+    "N9_VersionedRegistry": "INTERNAL_USE_CASE_PRESENT: PAW programs have names and versions, can be distributed via package managers, and the shared base + per-program adapter model resembles a registry."
+  },
+  "what_the_paper_does_not_support": [
+    "Does not support formal specification of fuzzy functions (GAP-015 not resolved).",
+    "Does not support equivalence checking between compiled programs (GAP-017 not resolved).",
+    "Does not support formal composition algebra (GAP-016 partially addressed but no formal guarantee).",
+    "Does not support effect tracking or stateful execution (GAP-018 not addressed).",
+    "Does not support formal verification of compiled artifacts.",
+    "Does not demonstrate generalization beyond fuzzy-text tasks.",
+    "The compiler requires a large proprietary training dataset (FuzzyBench, 10M examples)."
+  ],
+  "claim_support_status": "PARTIAL",
+  "claim_support_reasoning": "PAW strongly demonstrates the compilation-representation-artifact-interpreter pipeline (nodes 2-5, 9) but provides no formal specification, equivalence, validation, or composition framework. The paper's own claims are well-supported by experiments, but the ignition architecture projections beyond what the paper demonstrates are marked as architecture projections, not paper-supported claims.",
+  "reviewer_model": "qclaw/pool-glm-5.2",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T18:41:00Z",
+  "supersedes_provisional_card_id": "S120-001-provisional-121"
+}

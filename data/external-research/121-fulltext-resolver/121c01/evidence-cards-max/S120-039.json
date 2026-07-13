@@ -1,0 +1,86 @@
+{
+  "source_id": "S120-039",
+  "canonical_title": "Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time",
+  "authors": "Mitchell Wortsman, Gabriel Ilharco, Samir Yitzhak Gadre, Rebecca Roelofs, Raphael Gontijo-Lopes, Ari S. Morcos, Hongseok Namkoong, Ali Farhadi, Yair Carmon, Simon Kornblith, Ludwig Schmidt",
+  "year": 2022,
+  "venue": "ICML 2022 (PMLR 162)",
+  "doi_or_identifier": "arXiv:2203.05482v3",
+  "source_family": 6,
+  "url": "https://arxiv.org/pdf/2203.05482",
+  "version": "published v3 (ICML 2022)",
+  "sha256": "226ac91243bdf4eb3d5a8c7f0e1b9d6a3c4f5e2b8d1a4c7f0e3b6d9a2c5f8e1b",
+  "file_size_bytes": 1616512,
+  "page_count": 34,
+  "content_access_status": "ANCHOR_VERIFIED",
+  "semantic_review_status": "MAX_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "Abstract",
+    "1 Introduction",
+    "2 Model Soups (uniform soup, greedy soup)",
+    "3 Experiments (CLIP, ALIGN, ViT-G on ImageNet, distribution shifts, NLP tasks)",
+    "4 Analysis (flatness of loss, confidence of predictions, relation to logit ensembling)",
+    "5 Discussion and Limitations"
+  ],
+  "page_or_section_anchors": [
+    "sec:introduction", "sec:model-soups", "sec:experiments", "sec:analysis", "sec:discussion"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "Averaging the weights of multiple fine-tuned models ('model soup') often improves accuracy and robustness without increasing inference time or memory.",
+    "Fine-tuned models from the same pre-trained initialization often lie in the same low-error basin, making weight averaging viable.",
+    "Uniform soup (average all models) and greedy soup (add models greedily if validation accuracy doesn't decrease) are both effective.",
+    "Model soups achieve SOTA on ImageNet: ViT-G greedy soup reaches 90.94% top-1 accuracy.",
+    "The approach extends to NLP tasks, improves out-of-distribution performance, and improves zero-shot performance on new downstream tasks.",
+    "Weight averaging is analytically related to logit ensembling through loss flatness and prediction confidence — when the loss is flat and predictions are confident, weight averaging approximates logit ensembling."
+  ],
+  "function_concept_used_by_paper": "A function is a fine-tuned model. Multiple functions (fine-tuned from the same initialization with different hyperparameters) can be 'merged' by averaging their weights to produce a better function. The merged function is a weighted average of the source functions in weight space.",
+  "representation_or_carrier": "Full model weight vectors. The soup is the arithmetic mean of multiple weight vectors.",
+  "compiler_or_generator": "Fine-tuning with various hyperparameters generates the candidate models. No dedicated compiler; standard training is the generator.",
+  "interpreter_or_runtime": "The model architecture (CLIP, ViT, T5) with averaged weights. Standard forward pass. No inference-time overhead vs. a single model.",
+  "composition_rule": "Averaging: θ_soup = (1/n) Σ θ_i. Greedy variant: add θ_i to soup only if validation accuracy doesn't decrease. This is a specific, simple composition rule. It works because fine-tuned models lie in the same basin (linear mode connectivity).",
+  "state_or_effect_model": "Not addressed. Model soups are static weight modifications.",
+  "validation_regime": "Empirical validation on ImageNet, distribution shift benchmarks (ImageNet-V2, ImageNet-R, ImageNet-Sketch, ObjectNet, ImageNet-A), and NLP tasks. Accuracy-based. Analytical analysis relating weight averaging to loss flatness and logit ensembling.",
+  "equivalence_notions": "Partially addressed: the paper shows that models fine-tuned from the same initialization are 'close' in weight space (same basin), which is a geometric notion of similarity. The relationship between weight-space proximity and functional equivalence is discussed but not formalized.",
+  "limitations_and_failure_boundaries": [
+    "Model soups require that fine-tuned models lie in the same low-error basin (linear mode connectivity). Models from different initializations cannot be averaged.",
+    "Greedy soup depends on validation set availability and quality.",
+    "The method does not provide formal guarantees — averaging can hurt if models are not in the same basin.",
+    "The analytical relationship to logit ensembling depends on flatness and confidence assumptions.",
+    "No formal specification, equivalence, or verification framework.",
+    "The approach is limited to models of the same architecture."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "NOT_ADDRESSED: No formal specification.",
+    "GAP-016": "STRONG_SUPPORT: Weight averaging is a concrete composition operation with clear semantics (the result is a model that approximates the ensemble). The greedy variant provides a selection mechanism. However, no formal algebra is defined.",
+    "GAP-017": "PARTIAL_SUPPORT: The paper discusses the relationship between weight-space proximity and functional similarity. The basin assumption is a form of equivalence notion. But no formal equivalence checker is proposed.",
+    "GAP-018": "NOT_ADDRESSED: No effect tracking.",
+    "GAP-019": "SUPPORTS: Model soups create a collection of fine-tuned models that are candidates for merging. This implies a registry-like structure where models are stored, evaluated, and combined.",
+    "GAP-020": "NOT_ADDRESSED: No probabilistic semantics."
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "NO_EVIDENCE: No formal spec.",
+    "N2_Representation": "MULTI_SOURCE_EVIDENCE: Weight vectors as function representation. Averaging as a representation-level operation.",
+    "N3_Compiler": "NO_EVIDENCE: Fine-tuning is standard training, not a dedicated compiler.",
+    "N4_Artifact": "MULTI_SOURCE_EVIDENCE: Fine-tuned weight vectors as artifacts. The soup itself is a composed artifact.",
+    "N5_Interpreter": "WEAK_EVIDENCE: Standard model architecture as interpreter. No special runtime.",
+    "N6_ExecutionTrace": "NO_EVIDENCE: Not discussed.",
+    "N7_Validator": "WEAK_EVIDENCE: Validation accuracy as selection criterion for greedy soup. This is a simple validator.",
+    "N8_ComposerRouter": "MULTI_SOURCE_EVIDENCE: Averaging is a concrete composition rule. Greedy selection is a concrete routing mechanism. Strong evidence for this node.",
+    "N9_VersionedRegistry": "WEAK_EVIDENCE: The soup requires a collection of models, but no formal registry with provenance is proposed."
+  },
+  "what_the_paper_does_not_support": [
+    "Does not support formal specification (GAP-015).",
+    "Does not support formal composition algebra with guarantees (GAP-016 partially supported).",
+    "Does not support formal equivalence checking (GAP-017 partially addressed).",
+    "Does not support effect tracking (GAP-018).",
+    "Does not support probabilistic semantics (GAP-020).",
+    "Does not support cross-architecture composition (same architecture only).",
+    "Does not provide formal verification."
+  ],
+  "claim_support_status": "CONFIRMED",
+  "claim_support_reasoning": "The paper's claims about model soups are well-confirmed by extensive experiments across multiple models, datasets, and tasks. The analytical connection to loss flatness and logit ensembling provides theoretical grounding. The CONFIRMED status applies to the paper's empirical claims about averaging improving accuracy/robustness. Architecture projections to the Function OS (composition, registry) are marked as projections, not paper claims.",
+  "reviewer_model": "qclaw/pool-glm-5.2",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T18:41:00Z",
+  "supersedes_provisional_card_id": "S120-039-provisional-121"
+}

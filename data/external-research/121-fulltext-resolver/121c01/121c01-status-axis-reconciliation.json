@@ -1,0 +1,76 @@
+{
+  "task": "IGNITION-20260709-121C01",
+  "generated_at_utc": "2026-07-13T18:41:00Z",
+  "reviewer_model": "qclaw/pool-glm-5.2",
+  "reviewer_reasoning_level": "high",
+  "model_note": "Task specified max reasoning; subagent environment supports high only. Main session supports max.",
+  "baseline_121b_head": "66c6efdf673dc486fbf10373edbcf2eab67a528c",
+  "axis_definitions": {
+    "content_access_status": [
+      "LOCATED",
+      "DOWNLOADED",
+      "EXTRACTED_PARTIAL",
+      "EXTRACTED_FULL",
+      "ANCHOR_VERIFIED",
+      "FAILED_LEGAL_OA_NOT_FOUND"
+    ],
+    "semantic_review_status": [
+      "NOT_REVIEWED",
+      "PROVISIONAL_NON_MAX_REVIEW",
+      "MAX_REVIEW_IN_PROGRESS",
+      "MAX_REVIEW_COMPLETE",
+      "INSUFFICIENT_CONTENT"
+    ]
+  },
+  "reconciliation": {
+    "total_sources": 84,
+    "content_access_counts": {
+      "LOCATED": 84,
+      "DOWNLOADED": 79,
+      "EXTRACTED_PARTIAL": 7,
+      "EXTRACTED_FULL": 72,
+      "ANCHOR_VERIFIED": 30,
+      "FAILED_LEGAL_OA_NOT_FOUND": 5
+    },
+    "semantic_review_counts": {
+      "NOT_REVIEWED": 49,
+      "PROVISIONAL_NON_MAX_REVIEW": 30,
+      "MAX_REVIEW_IN_PROGRESS": 10,
+      "MAX_REVIEW_COMPLETE": 0,
+      "INSUFFICIENT_CONTENT": 0
+    },
+    "notes": "The 121B run used model qclaw/pool-glm-5.2-night with high thinking, and the 121 run used qclaw/pool-kimi-k2.7-code-highspeed with adaptive thinking. Neither used GLM-5.2 max. The 30 cards with FULLTEXT_REVIEWED status in the old registry are reclassified as PROVISIONAL_NON_MAX_REVIEW because they were produced by non-max models. The 7 EXTRACTED_PARTIAL entries have downloaded PDFs but extraction yielded minimal or no usable text."
+  },
+  "extracted_partial_sources": [
+    {"source_id": "S120-024", "word_count": 271, "reason": "PDF downloaded via arxiv_pdf_landing_fix but extraction yielded only 271 words (likely HTML landing page misidentified as PDF)"},
+    {"source_id": "S120-032", "word_count": 94, "reason": "PDF downloaded via arxiv_pdf_landing_fix but extraction yielded only 94 words"},
+    {"source_id": "S120-013", "word_count": 0, "reason": "PDF downloaded via arxiv_pdf_retry but no text extracted (possible scanned/encoded PDF)"},
+    {"source_id": "S120-023", "word_count": 0, "reason": "PDF downloaded via arxiv_pdf_retry but no text extracted"},
+    {"source_id": "S120-033", "word_count": 0, "reason": "PDF downloaded via arxiv_pdf_retry but no text extracted"},
+    {"source_id": "S120-056", "word_count": 0, "reason": "PDF downloaded via arxiv_pdf_retry but no text extracted"},
+    {"source_id": "S120-080", "word_count": 0, "reason": "PDF downloaded via arxiv_pdf_retry but no text extracted"}
+  ],
+  "failed_sources": [
+    {"source_id": "S120-006", "reason": "OpenReview 403 + no arXiv version found"},
+    {"source_id": "S120-016", "reason": "OpenReview 403 + no arXiv version found"},
+    {"source_id": "S120-051", "reason": "ACM paywalled, no OA version exists"},
+    {"source_id": "S120-052", "reason": "Source is not a paper (GitHub repo deleted)"},
+    {"source_id": "S120-057", "reason": "MSR link 404, no OA version found"}
+  ],
+  "old_status_conflation_fixed": {
+    "old_status": "FULLTEXT_REVIEWED",
+    "old_count": 30,
+    "new_content_access_status": "ANCHOR_VERIFIED",
+    "new_semantic_review_status": "PROVISIONAL_NON_MAX_REVIEW",
+    "reason": "30 sources had chapter/page anchors and provisional semantic cards produced by Kimi/non-max GLM. These are content-access-level ANCHOR_VERIFIED but semantic-review-level PROVISIONAL_NON_MAX_REVIEW. The old FULLTEXT_REVIEWED conflated file access with semantic review."
+  },
+  "old_status_resolved_extracted_fixed": {
+    "old_status": "RESOLVED_EXTRACTED",
+    "old_count": 44,
+    "new_breakdown": {
+      "EXTRACTED_FULL_without_anchors": 42,
+      "EXTRACTED_PARTIAL": 2,
+      "note": "S120-024 and S120-032 were in the old 121-extracts.jsonl with minimal word counts but counted as RESOLVED_EXTRACTED. They are now correctly EXTRACTED_PARTIAL. The remaining 42 have word_count >= 1000 but lack verified section anchors."
+    }
+  }
+}

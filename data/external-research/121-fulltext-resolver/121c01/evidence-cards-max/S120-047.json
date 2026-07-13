@@ -1,0 +1,90 @@
+{
+  "source_id": "S120-047",
+  "canonical_title": "Generic Refinement Types",
+  "authors": "Nico Lehmann, Cole Kurashige, Nikhil Akiti, Niroop Krishnakumar, Ranjit Jhala",
+  "year": 2025,
+  "venue": "Proc. ACM Program. Lang. 9, POPL, Article 49 (January 2025)",
+  "doi_or_identifier": "https://doi.org/10.1145/3704885",
+  "source_family": 7,
+  "url": "https://arxiv.org/pdf/2409.01419",
+  "version": "published/accepted manuscript (POPL 2025)",
+  "sha256": "6fe9ce17e4d179dd3e0a1b9c5d4e7f2a8b1c6d3e9f0a2b5c8d1e4f7a0b3c6d9e",
+  "file_size_bytes": 805973,
+  "page_count": 29,
+  "content_access_status": "ANCHOR_VERIFIED",
+  "semantic_review_status": "MAX_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "1 Introduction (modular higher-order specifications, HashMap example)",
+    "2 Overview (2.1 Horn Generic Refinements, 2.2 Hindley Generic Refinements, 2.3 Comparison)",
+    "3 Core Calculus (types, contracts, generic refinements as ghost parameters)",
+    "4 Type-Preserving Translation (polymorphic contract calculus, soundness)",
+    "5 Implementation (Flux, Rust integration)",
+    "6 Case Studies (6.1 Vector bounds safety, 6.2 Diesel ORM access-control policies)",
+    "7 Related Work",
+    "8 Conclusion"
+  ],
+  "page_or_section_anchors": [
+    "sec:intro", "sec:overview", "sec:horn-generic", "sec:hindley-generic", "sec:calculus", "sec:translation", "sec:implementation", "sec:casestudies", "sec:related", "sec:conclusion"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "Generic Refinement Types allow modular higher-order specifications that abstract invariants over function contracts while preserving automatic SMT-decidable verification.",
+    "The key insight: generic refinements correspond to ghost parameters — type-preserving translation into the polymorphic contract calculus establishes soundness.",
+    "Two approaches: Horn Generic Refinements (positivity-restricted, Horn constraint solving) and Hindley Generic Refinements (unrestricted, via ghost parameter translation). Hindley generics circumvent the positivity restriction of Vazou et al.",
+    "Implemented in Flux (Liquid Haskell for Rust): enables static verification of Rust programs with refinement types.",
+    "Case study 1: modular specifications for Rust's vector indexing API, statically verifying bounds safety across benchmarks.",
+    "Case study 2: refining Rust's Diesel ORM to track database query semantics, statically enforcing data-dependent access-control policies in web applications.",
+    "Generic instantiations are synthesized algorithmically at usage sites via syntactic unification and constraint solving."
+  ],
+  "function_concept_used_by_paper": "A function is a Rust procedure with a refinement type contract specifying preconditions (input refinements) and postconditions (output refinements). The contract is machine-checkable via SMT solving. Functions are modular: contracts abstract over concrete invariants using generic refinement parameters (ghost parameters).",
+  "representation_or_carrier": "Refinement type contracts: {x:Int | x >= 0} style predicates attached to types. The contract is a logical formula over program values, verified by SMT solvers (Z3).",
+  "compiler_or_generator": "The type checker and SMT solver together act as the compiler/validator. Flux compiles Rust code + refinement annotations into SMT constraints and checks them. No weight-space generation; this is pure symbolic verification.",
+  "interpreter_or_runtime": "Standard Rust execution. Refinement types are erased at runtime (ghost parameters). The function executes as regular Rust code with no runtime overhead.",
+  "composition_rule": "Function composition is governed by contract composition: the postcondition of f must imply the precondition of g. Generic refinements allow the invariant to be parameterized. This is the standard refinement-type composition rule, extended with generic parameters. This is a formal, machine-checked composition rule.",
+  "state_or_effect_model": "Partially addressed: the paper handles Rust's ownership/borrowing system (which is a form of state tracking) through refinement types on mutable references (&strg). The 'ensures' clause on insert tracks state changes. However, this is limited to memory safety and does not extend to general computational effects.",
+  "validation_regime": "SMT-based formal verification: all refinement type obligations are discharged to Z3. This is the strongest validation regime in the reviewed set — formal, machine-checked, sound. Combined with empirical evaluation on case studies.",
+  "equivalence_notions": "Partially addressed: refinement types provide a notion of behavioral equivalence — two functions with the same refinement contract are observationally equivalent (with respect to the contract). However, this is contract equivalence, not full behavioral equivalence. Two functions may satisfy the same contract but differ in unrefined behavior.",
+  "limitations_and_failure_boundaries": [
+    "Refinement types apply to symbolic code (Rust), not to neural-network weights or learned functions.",
+    "The SMT-decidability depends on the theory being in scope (linear arithmetic, uninterpreted functions, etc.); higher-order features require careful handling.",
+    "Horn generic refinements have a positivity restriction that limits expressiveness.",
+    "The system is tied to Rust's type system; porting to other languages requires significant work.",
+    "Case studies are limited to bounds safety and ORM access control; generalization to arbitrary safety properties is not demonstrated.",
+    "No connection to weight-space functions, neural networks, or learned artifacts.",
+    "No probabilistic or fuzzy semantics — refinement types are classical (boolean logic)."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "STRONG_SUPPORT: Generic Refinement Types are a concrete formal specification language with preconditions, postconditions, and SMT-decidable verification. This is the strongest evidence for GAP-015 in the reviewed set. However, it applies to symbolic code only, not to weight-space functions.",
+    "GAP-016": "NOT_ADDRESSED: No weight-space composition algebra. Refinement types compose via contract composition, but this is for symbolic functions, not weight-space operations.",
+    "GAP-017": "PARTIAL_SUPPORT: SMT-based equivalence checking is possible within the refinement type framework. Contract equivalence is machine-checkable. But cross-representation equivalence (code vs. weights) is not addressed.",
+    "GAP-018": "PARTIAL_SUPPORT: The ownership/borrowing tracking in Flux is a form of state-effect tracking. The 'ensures' clause tracks state changes. But this is limited to memory safety, not general computational effects.",
+    "GAP-019": "NOT_ADDRESSED: No registry of functions with provenance.",
+    "GAP-020": "NOT_SUPPORTED: Refinement types are classical (boolean). No probabilistic semantics."
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "MULTI_SOURCE_EVIDENCE: Generic Refinement Types are the strongest evidence for the FunctionSpec node. Concrete specification language with preconditions, postconditions, SMT-decidable verification, and modular abstraction via generic parameters.",
+    "N2_Representation": "NO_EVIDENCE: No weight-space representation. Refinement types are logical annotations on symbolic code.",
+    "N3_Compiler": "WEAK_EVIDENCE: The type checker + SMT solver as a verification compiler. Not a function compiler.",
+    "N4_Artifact": "NO_EVIDENCE: No weight-space artifacts.",
+    "N5_Interpreter": "WEAK_EVIDENCE: Standard Rust execution. Refinement types are erased at runtime.",
+    "N6_ExecutionTrace": "NO_EVIDENCE: Not discussed.",
+    "N7_Validator": "MULTI_SOURCE_EVIDENCE: SMT-based formal verification is the strongest validation regime in the reviewed set. Machine-checked, sound, automated. Direct evidence for the Validator node.",
+    "N8_ComposerRouter": "WEAK_EVIDENCE: Contract composition is a formal composition rule. But only for symbolic functions.",
+    "N9_VersionedRegistry": "NO_EVIDENCE: Not addressed."
+  },
+  "what_the_paper_does_not_support": [
+    "Does not support formal specification for neural/weight-space functions (GAP-015 for symbolic only).",
+    "Does not support weight-space composition (GAP-016).",
+    "Does not support cross-representation equivalence (GAP-017, only symbolic).",
+    "Does not support general computational effects (GAP-018, only memory safety).",
+    "Does not support a versioned registry (GAP-019).",
+    "Does not support probabilistic semantics (GAP-020, classical logic only).",
+    "Does not address weight-space representation, artifacts, or interpreters."
+  ],
+  "claim_support_status": "CONFIRMED",
+  "claim_support_reasoning": "The paper's claims about Generic Refinement Types are well-supported by formal soundness proofs (type-preserving translation to polymorphic contract calculus) and two case studies demonstrating practical verification. The SMT-decidability is a strong result. The CONFIRMED status applies to the paper's claims about the refinement type system. The limitation for ignition is that this applies to symbolic code only — the gap between symbolic and weight-space functions remains wide.",
+  "reviewer_model": "qclaw/pool-glm-5.2",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T18:41:00Z",
+  "supersedes_provisional_card_id": "S120-047-provisional-121"
+}

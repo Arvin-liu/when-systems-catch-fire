@@ -1,0 +1,87 @@
+{
+  "source_id": "S120-035",
+  "canonical_title": "LoRA: Low-Rank Adaptation of Large Language Models",
+  "authors": "Edward Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+  "year": 2021,
+  "venue": "arXiv preprint arXiv:2106.09685 (ICLR 2022)",
+  "doi_or_identifier": "arXiv:2106.09685v2",
+  "source_family": 5,
+  "url": "https://arxiv.org/pdf/2106.09685",
+  "version": "preprint v2",
+  "sha256": "e9a0d3128767db61e5c4f7a0b3d6e9c2f5a8b1d4e7c0f3a6b9d2e5c8f1a4b7d",
+  "file_size_bytes": 1609513,
+  "page_count": 26,
+  "content_access_status": "ANCHOR_VERIFIED",
+  "semantic_review_status": "MAX_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "Abstract",
+    "1 Introduction",
+    "2 Problem Statement (low intrinsic rank hypothesis)",
+    "3 Method (LoRA architecture, rank decomposition, no additional inference latency)",
+    "4 Empirical Experiments (RoBERTa, DeBERTa, GPT-2, GPT-3)",
+    "5 Related Work",
+    "6 Discussion and Limitations"
+  ],
+  "page_or_section_anchors": [
+    "sec:intro", "sec:problem", "sec:method", "sec:experiments", "sec:related", "sec:discussion"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "The change in weights during model adaptation has low 'intrinsic rank' — a very low rank decomposition (r=1 or 2) suffices even when the full rank is 12,288.",
+    "LoRA freezes pre-trained weights and injects trainable rank decomposition matrices (A, B) where ΔW = B·A, reducing trainable parameters by 10,000× for GPT-3 175B.",
+    "LoRA performs on-par or better than full fine-tuning on RoBERTa, DeBERTa, GPT-2, and GPT-3.",
+    "LoRA introduces no additional inference latency: the low-rank matrices can be merged into the pre-trained weights (W' = W + BA).",
+    "LoRA modules are swappable: a shared pre-trained model can host different LoRA modules for different tasks, reducing storage and task-switching overhead.",
+    "The low-rank constraint acts as a regularizer, improving generalization on small datasets."
+  ],
+  "function_concept_used_by_paper": "A function is a low-rank adaptation of a frozen pre-trained model. The function is encoded as two small matrices (A, B) whose product approximates the weight change. The function is executed by adding BA to the pre-trained weights and running a standard forward pass.",
+  "representation_or_carrier": "Low-rank matrix pair (A ∈ R^{r×d}, B ∈ R^{d×r}) where r << d. The product ΔW = BA is the effective weight change. For GPT-3 175B, r=2 reduces trainable parameters from 175B to 4.7M.",
+  "compiler_or_generator": "Standard gradient-based training (Adam optimizer) on the LoRA matrices while pre-trained weights are frozen. The compiler is the training loop, not a separate architecture.",
+  "interpreter_or_runtime": "The pre-trained model with W' = W + BA. Standard forward pass. After training, A and B can be merged into W for zero-overhead inference, or kept separate for task switching.",
+  "composition_rule": "Not formally addressed. However, LoRA modules are swappable, enabling a form of composition: different LoRA modules can be applied for different tasks. The paper does not define formal composition operations (addition, merging, etc.) — this was left to subsequent work (LoRA routing, TIES, etc.).",
+  "state_or_effect_model": "Not addressed. LoRA modules are static weight modifications.",
+  "validation_regime": "Empirical validation on GLUE, SuperGLUE, and generation tasks. Accuracy-based. The paper also provides an empirical investigation into rank deficiency in language model adaptation.",
+  "equivalence_notions": "Not addressed. The paper does not define equivalence between different LoRA modules or between a LoRA-adapted model and a fully fine-tuned model.",
+  "limitations_and_failure_boundaries": [
+    "LoRA's effectiveness depends on the low intrinsic rank hypothesis, which may not hold for all tasks or architectures.",
+    "The optimal rank r is task-dependent and must be tuned.",
+    "LoRA is applied to Transformer attention/MLP weights; applicability to other architectures is not guaranteed.",
+    "No formal composition, equivalence, or verification framework.",
+    "Batched inference with different LoRA modules is not straightforward (requires merging or separate forward passes).",
+    "The paper acknowledges that the method may not capture all adaptation signal — full fine-tuning can sometimes outperform LoRA."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "NOT_ADDRESSED: No formal specification language for LoRA-adapted functions.",
+    "GAP-016": "PARTIAL_SUPPORT: LoRA modules are modular and swappable, suggesting composition is feasible. The low-rank structure provides a natural parameterization for composition. But no formal algebra is defined.",
+    "GAP-017": "NOT_ADDRESSED: No equivalence checking between LoRA modules.",
+    "GAP-018": "NOT_ADDRESSED: No effect tracking.",
+    "GAP-019": "STRONG_SUPPORT: LoRA modules are natural registry entries: compact (4.7M params for GPT-3), swappable, and task-specific. The shared base + per-task module model is exactly a registry pattern.",
+    "GAP-020": "NOT_ADDRESSED: No probabilistic semantics."
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "NO_EVIDENCE: No formal spec.",
+    "N2_Representation": "MULTI_SOURCE_EVIDENCE: Low-rank matrices as function representation. The low-rank decomposition is a concrete, compact representation of weight changes.",
+    "N3_Compiler": "WEAK_EVIDENCE: Gradient-based training as compilation. Not a dedicated compiler architecture.",
+    "N4_Artifact": "MULTI_SOURCE_EVIDENCE: LoRA matrices (A, B) as compact, storable, reusable artifacts. 10,000× parameter reduction for GPT-3. Directly demonstrates the Artifact node.",
+    "N5_Interpreter": "MULTI_SOURCE_EVIDENCE: Frozen pre-trained model as interpreter. LoRA modules are hot-attachable and mergeable. Clear separation between base (interpreter) and adapter (artifact).",
+    "N6_ExecutionTrace": "NO_EVIDENCE: Not discussed.",
+    "N7_Validator": "NO_EVIDENCE: Only empirical accuracy.",
+    "N8_ComposerRouter": "WEAK_EVIDENCE: Swappable modules suggest routing, but no formal routing mechanism is defined.",
+    "N9_VersionedRegistry": "MULTI_SOURCE_EVIDENCE: The shared base + per-task LoRA module pattern is a direct instance of a versioned registry. The paper explicitly describes storing and loading small task-specific modules alongside a shared model."
+  },
+  "what_the_paper_does_not_support": [
+    "Does not support formal specification (GAP-015).",
+    "Does not support formal composition algebra (GAP-016).",
+    "Does not support equivalence checking (GAP-017).",
+    "Does not support effect tracking (GAP-018).",
+    "Does not support probabilistic semantics (GAP-020).",
+    "Does not provide formal verification.",
+    "Does not define routing or composition of multiple LoRA modules."
+  ],
+  "claim_support_status": "CONFIRMED",
+  "claim_support_reasoning": "LoRA's claims about low-rank adaptation are well-confirmed by experiments across four model families (RoBERTa, DeBERTa, GPT-2, GPT-3) and multiple tasks. The low intrinsic rank hypothesis is empirically validated. The 10,000× parameter reduction with on-par performance is a strong, reproducible result. The CONFIRMED status applies to the paper's empirical claims. Architecture projections to the Function OS (representation, artifact, interpreter, registry) are well-grounded.",
+  "reviewer_model": "qclaw/pool-glm-5.2",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T18:41:00Z",
+  "supersedes_provisional_card_id": "S120-035-provisional-121"
+}
