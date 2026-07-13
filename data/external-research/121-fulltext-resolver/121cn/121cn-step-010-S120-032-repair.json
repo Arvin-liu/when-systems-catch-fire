@@ -1,0 +1,14 @@
+{
+  "step": 10,
+  "source_id": "S120-032",
+  "title": "Hybrid Routing for a Mixture of LoRA Experts",
+  "previous_status": "EXTRACTED_PARTIAL (94 words from AAAI HTML)",
+  "new_status": "EXTRACTED_FULL",
+  "method": "AAAI direct PDF: ojs.aaai.org/index.php/AAAI/article/download/40383/44344",
+  "sha256": "17f9fc4e3da29fee1e40f1e3f97878c25fe9cc370716c95c991f7c08015b6d8b",
+  "pages": 9,
+  "words": 6433,
+  "success": true,
+  "authors": "Yitong Huang, Ziqi Yang, Zihui Wang, Jianzhong Qi, Rongshan Yu, Xiaoliang Fan, Cheng Wang",
+  "venue": "AAAI 2025"
+}

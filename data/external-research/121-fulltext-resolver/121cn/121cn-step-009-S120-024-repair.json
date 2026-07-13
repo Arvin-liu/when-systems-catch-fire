@@ -1,0 +1,13 @@
+{
+  "step": 9,
+  "source_id": "S120-024",
+  "title": "Neural Operator: Learning Maps Between Function Spaces",
+  "previous_status": "EXTRACTED_PARTIAL (271 words, HTML landing page only)",
+  "new_status": "EXTRACTED_FULL",
+  "method": "JMLR direct PDF: jmlr.org/papers/volume24/21-1524/21-1524.pdf",
+  "sha256": "1120cf00b75d2fef61a6aa34831def4a84d10e7838339c5bfedb9eca459c7da2",
+  "pages": 97,
+  "words": 41335,
+  "success": true,
+  "note": "Previous fetch got HTML landing page (6589 bytes, 271 words). Direct PDF URL gives full 97-page paper."
+}

@@ -1,0 +1,52 @@
+{
+  "task": "IGNITION-20260709-121CN",
+  "step": 2,
+  "action": "recount_121c01_evidence_cards",
+  "description": "Read all 10 121C01 evidence cards, recount CONFIRMED/PARTIAL/NOT_SUPPORTED/UNRESOLVED, identify count discrepancy",
+  "generated_at_utc": "2026-07-13T19:15:00Z",
+  "total_cards": 10,
+  "actual_counts": {
+    "confirmed": 6,
+    "partial": 4,
+    "not_supported": 0,
+    "unresolved": 0,
+    "total": 10
+  },
+  "run_state_reported_counts": {
+    "confirmed": 5,
+    "partial": 4,
+    "not_supported": 0,
+    "unresolved": 0,
+    "reviewed": 10,
+    "total_field_sum": 9
+  },
+  "discrepancy": {
+    "field": "confirmed",
+    "run_state_value": 5,
+    "actual_value": 6,
+    "difference": 1,
+    "root_cause": "One CONFIRMED card was not counted in the run-state confirmed field. The run-state sum (5+4+0+0=9) does not match total reviewed (10). The actual card-by-card count yields 6 CONFIRMED + 4 PARTIAL = 10.",
+    "likely_miscounted_source": "The discrepancy suggests one of the 6 CONFIRMED cards (S120-030, S120-035, S120-039, S120-045, S120-047, S120-053) was accidentally tallied as PARTIAL during run-state generation."
+  },
+  "per_card_detail": [
+    {"source_id": "S120-001", "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions", "claim_support_status": "PARTIAL", "semantic_review_status_original": "MAX_REVIEW_COMPLETE", "semantic_review_status_corrected": "GLM52_HIGH_REVIEW_COMPLETE"},
+    {"source_id": "S120-004", "title": "A Survey of Weight Space Learning", "claim_support_status": "PARTIAL", "semantic_review_status_original": "MAX_REVIEW_COMPLETE", "semantic_review_status_corrected": "GLM52_HIGH_REVIEW_COMPLETE"},
+    {"source_id": "S120-009", "title": "HyperNetworks", "claim_support_status": "PARTIAL", "semantic_review_status_original": "MAX_REVIEW_COMPLETE", "semantic_review_status_corrected": "GLM52_HIGH_REVIEW_COMPLETE"},
+    {"source_id": "S120-021", "title": "Execution Guided Line-by-Line Code Generation", "claim_support_status": "PARTIAL", "semantic_review_status_original": "MAX_REVIEW_COMPLETE", "semantic_review_status_corrected": "GLM52_HIGH_REVIEW_COMPLETE"},
+    {"source_id": "S120-030", "title": "Fourier Neural Operator for Parametric PDEs", "claim_support_status": "CONFIRMED", "semantic_review_status_original": "MAX_REVIEW_COMPLETE", "semantic_review_status_corrected": "GLM52_HIGH_REVIEW_COMPLETE"},
+    {"source_id": "S120-035", "title": "LoRA: Low-Rank Adaptation of Large Language Models", "claim_support_status": "CONFIRMED", "semantic_review_status_original": "MAX_REVIEW_COMPLETE", "semantic_review_status_corrected": "GLM52_HIGH_REVIEW_COMPLETE"},
+    {"source_id": "S120-039", "title": "Model Soups", "claim_support_status": "CONFIRMED", "semantic_review_status_original": "MAX_REVIEW_COMPLETE", "semantic_review_status_corrected": "GLM52_HIGH_REVIEW_COMPLETE"},
+    {"source_id": "S120-045", "title": "Editing Models with Task Arithmetic", "claim_support_status": "CONFIRMED", "semantic_review_status_original": "MAX_REVIEW_COMPLETE", "semantic_review_status_corrected": "GLM52_HIGH_REVIEW_COMPLETE"},
+    {"source_id": "S120-047", "title": "Generic Refinement Types", "claim_support_status": "CONFIRMED", "semantic_review_status_original": "MAX_REVIEW_COMPLETE", "semantic_review_status_corrected": "GLM52_HIGH_REVIEW_COMPLETE"},
+    {"source_id": "S120-053", "title": "Handlers of Algebraic Effects", "claim_support_status": "CONFIRMED", "semantic_review_status_original": "MAX_REVIEW_COMPLETE", "semantic_review_status_corrected": "GLM52_HIGH_REVIEW_COMPLETE"}
+  ],
+  "corrected_run_state_counts": {
+    "sources_reviewed": 10,
+    "confirmed": 6,
+    "partial": 4,
+    "not_supported": 0,
+    "unresolved": 0,
+    "total": 10,
+    "sum_check": "6+4+0+0=10 ✓"
+  }
+}

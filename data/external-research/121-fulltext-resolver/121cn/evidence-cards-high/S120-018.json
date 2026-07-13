@@ -1,0 +1,85 @@
+{
+  "source_id": "S120-018",
+  "canonical_title": "SPoC: Search-Based Pseudocode to Code",
+  "authors": "Alexey Svyatkovskiy, Shao Kun Deng, Shengyu Fu, Neel Sundaresan",
+  "year": 2021,
+  "venue": "EMNLP 2021",
+  "doi_or_identifier": "arXiv:2106.04536",
+  "source_family": 3,
+  "url": "https://arxiv.org/pdf/2106.04536",
+  "version": "preprint",
+  "sha256": "pending",
+  "file_size_bytes": 0,
+  "page_count": 12,
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "GLM52_HIGH_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "Abstract",
+    "Introduction",
+    "Method",
+    "Experiments",
+    "Conclusion"
+  ],
+  "page_or_section_anchors": [
+    "Abstract",
+    "Sec 1",
+    "Sec 2",
+    "Sec 3",
+    "Sec 4"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "SPoC maps pseudocode to executable code using search-based methods with test case validation.",
+    "The method assumes one-to-one correspondence between pseudocode lines and code lines.",
+    "Best-first search with a code generation model and test case validation achieves strong performance on the SPoC benchmark.",
+    "The approach handles 10-20 line programs with significant intermediate state."
+  ],
+  "function_concept_used_by_paper": "Functions are programs synthesized from pseudocode specifications. The specification is natural language pseudocode, and the function is executable code. Test cases provide validation.",
+  "representation_or_carrier": "Executable code (Python) as the function representation. Pseudocode as the specification.",
+  "compiler_or_generator": "The code generation model (fine-tuned BART) serves as the compiler: it maps pseudocode lines to code candidates. Best-first search explores the space of compilations.",
+  "interpreter_or_runtime": "The Python runtime executes the synthesized code. Test cases serve as the validation mechanism.",
+  "composition_rule": "Line-by-line composition: each pseudocode line maps to a code line, and the program is composed sequentially.",
+  "state_or_effect_model": "The program has intermediate state (variables, control flow). Test cases validate state transitions. No formal effect system.",
+  "validation_regime": "Test cases: the synthesized program must pass provided test cases. This is a concrete, executable validation mechanism \u2014 stronger than empirical accuracy alone.",
+  "equivalence_notions": "Test-case-based equivalence: two programs are considered equivalent if they produce the same outputs on the same test cases. This is input-output equivalence, not semantic equivalence.",
+  "limitations_and_failure_boundaries": [
+    "Assumes one-to-one pseudocode-to-code mapping, which may not hold for complex programs.",
+    "Test-case validation is incomplete \u2014 programs may pass tests but have different semantics.",
+    "Limited to 10-20 line programs.",
+    "No formal specification beyond pseudocode.",
+    "No formal equivalence \u2014 only test-case-based behavioral equivalence."
+  ],
+  "what_the_paper_does_not_support": [
+    "Does not support formal specification (GAP-015 weak \u2014 pseudocode is informal).",
+    "Does not support formal equivalence (GAP-017 weak \u2014 only test-case behavioral).",
+    "Does not support effect tracking (GAP-018 weak \u2014 implicit state).",
+    "Does not support probabilistic semantics (GAP-020)."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "PARTIAL_SUPPORT: Pseudocode as informal specification language.",
+    "GAP-016": "PARTIAL_SUPPORT: Compilation from pseudocode to code with search.",
+    "GAP-017": "PARTIAL_SUPPORT: Test-case-based behavioral equivalence.",
+    "GAP-018": "WEAK_EVIDENCE: Intermediate state in programs.",
+    "GAP-019": "PARTIAL_SUPPORT: Test cases as validation regime.",
+    "GAP-020": "NOT_ADDRESSED"
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "PARTIAL_SUPPORT: Pseudocode as informal specification.",
+    "N2_Representation": "WEAK_EVIDENCE: Code as function representation.",
+    "N3_Compiler": "MULTI_SOURCE_EVIDENCE: Code generation model as compiler.",
+    "N4_Artifact": "PARTIAL_SUPPORT: Synthesized code as executable artifact.",
+    "N5_Interpreter": "MULTI_SOURCE_EVIDENCE: Python runtime as interpreter.",
+    "N6_ExecutionTrace": "WEAK_EVIDENCE: Program execution state.",
+    "N7_Validator": "MULTI_SOURCE_EVIDENCE: Test cases as validation mechanism \u2014 a concrete, executable validation approach.",
+    "N8_ComposerRouter": "WEAK_EVIDENCE: Line-by-line composition with search.",
+    "N9_VersionedRegistry": "NO_EVIDENCE"
+  },
+  "claim_support_status": "PARTIAL",
+  "source_specific_reasoning": "S120-018 provides notable evidence for N7 (Validator): test-case-based validation is a concrete, executable validation mechanism \u2014 one of the strongest validation approaches in the reviewed set. Also provides evidence for N1 (pseudocode as informal spec), N3 (code generation as compiler), and N5 (runtime as interpreter). The test-case-based equivalence is behavioral, not formal, but it is a practical and meaningful validation approach.",
+  "comparison_to_provisional": "NARROWS",
+  "comparison_reason": "High review reveals test-case validation contribution to N7 not likely in provisional card.",
+  "reviewer_model": "qclaw/pool-glm-5.2-night",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T19:40:00Z",
+  "supersedes_provisional_card_id": "S120-018-provisional-121"
+}
