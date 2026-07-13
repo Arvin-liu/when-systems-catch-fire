@@ -1,0 +1,44 @@
+{
+  "task": "IGNITION-087",
+  "generated_at": "2026-07-13T17:30:00+08:00",
+  "base_head": "434e0983da7b2f1da4417997b327d2e46e5aeb40",
+  "base_branch": "records/ignition-085-architecture-structure-freeze-20260713",
+  "frozen_files": {
+    "architecture-structure-freeze-v1.json": {
+      "sha256": "b6a011b03c29476d154da4d54b22846eebe42e6ad7f3df6d5a2e9ff706bb864f",
+      "size_bytes": 3162
+    },
+    "architecture-structure-freeze-v1.md": {
+      "path": "docs/foundation/architecture-structure-freeze-v1.md",
+      "sha256": "pending",
+      "note": "documentation file"
+    }
+  },
+  "legacy_tables": {
+    "统一函数总表": {
+      "path": "统一函数总表/",
+      "status": "UNCHANGED",
+      "file_count": "many"
+    },
+    "统一案例总表": {
+      "path": "统一案例总表/",
+      "status": "UNCHANGED",
+      "file_count": "many"
+    }
+  },
+  "frozen_components_verified": [
+    "object_type_system",
+    "seven_axis_status_system",
+    "strong_claim_gates",
+    "source_provenance_anchor_hash_contract",
+    "legacy_overlay_migration_rollback_rules",
+    "adjudication_record_schema",
+    "proof_artifact_interface",
+    "evidence_obligation_interface",
+    "validator_ci_failure_gates",
+    "layered_accounting_rules"
+  ],
+  "new_branch": "records/ignition-087-unesco-discipline-projection-gap-closure-20260713",
+  "ancestor_check": "PASS - branch derived from 085 head",
+  "086_status": "SKIPPED - superseded by 087"
+}

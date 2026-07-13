@@ -1,0 +1,32 @@
+{
+  "task": "IGNITION-087",
+  "generated_at": "2026-07-13T17:25:00+08:00",
+  "input_files": [
+    {
+      "file_id": "file_1",
+      "description": "UNESCO 4位学科理论问题总表",
+      "path": "/Users/zhiyuan/我的笔记/全量学科理论报告/01_UNESCO_4位学科理论问题总表.md",
+      "sha256": "f3bf0651885046e464a43ecf1c7edb47da99ac43dc2cdaa5be50bdbffbfd893a",
+      "lines": 256,
+      "size_bytes": 89681
+    },
+    {
+      "file_id": "file_2",
+      "description": "UNESCO 36大类主干理论清单·2026-07-02",
+      "path": "/Users/zhiyuan/我的笔记/getnote-notes/_uncategorized/2026-07-02_1914399605031474872_UNESCO_36大类主干理论清单·2026-07-02.md",
+      "sha256": "a02311109a51bbf6946d0034fbc9e149ec978f6895940218e01925fcd2ad10b5",
+      "lines": 264,
+      "size_bytes": 9117
+    }
+  ],
+  "parser": {
+    "version": "087-registry-parser-v1",
+    "script": "tools/foundation/parse_087_registry.py"
+  },
+  "parsed_counts": {
+    "total_disciplines": 250,
+    "total_major_categories": 24,
+    "codes_unique": true
+  },
+  "coverage_status": "FULL_INPUT_COVERAGE"
+}
