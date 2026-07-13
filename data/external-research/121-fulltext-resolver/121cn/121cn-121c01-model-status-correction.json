@@ -1,0 +1,69 @@
+{
+  "task": "IGNITION-20260709-121CN",
+  "step": 1,
+  "action": "model_status_correction_overlay",
+  "description": "Corrects 121C01 model/reasoning level mislabeling. All 'max' terminology is mapped to 'high' equivalents. Original 121C01 files are NOT modified — this overlay is authoritative for 121CN and all downstream work.",
+  "generated_at_utc": "2026-07-13T19:14:00Z",
+  "reviewer_model": "qclaw/pool-glm-5.2-night",
+  "reviewer_reasoning_level": "high",
+  "correction_rationale": "121C01 task file specified 'max' reasoning, but subagent environment only supports 'high'. The actual model was qclaw/pool-glm-5.2 (not night pool) with high reasoning. All semantic review in 121C01 was performed at high level, not max. 121CN uses qclaw/pool-glm-5.2-night with high reasoning. The correction overlay ensures status axes reflect reality.",
+  "status_axis_corrections": {
+    "semantic_review_status": {
+      "MAX_REVIEW_COMPLETE": "GLM52_HIGH_REVIEW_COMPLETE",
+      "MAX_REVIEW_IN_PROGRESS": "GLM52_HIGH_REVIEW_IN_PROGRESS",
+      "PROVISIONAL_NON_MAX_REVIEW": "PROVISIONAL_NON_GLM_HIGH",
+      "MAX_SEMANTIC_BATCH_COMPLETE_EVIDENCE_ACCUMULATING": "GLM52_HIGH_BATCH_COMPLETE_EVIDENCE_ACCUMULATING"
+    },
+    "task_status": {
+      "121C01_MAX_SEMANTIC_BATCH_COMPLETE_EVIDENCE_ACCUMULATING": "121C01_HIGH_SEMANTIC_BATCH_COMPLETE_EVIDENCE_ACCUMULATING"
+    },
+    "field_renames": {
+      "max_card_id": "high_card_id",
+      "max_claim_status": "high_claim_status",
+      "max_review": "high_review"
+    }
+  },
+  "forbidden_statuses": [
+    "MAX_REVIEW_COMPLETE",
+    "MAX_VERIFIED",
+    "FINAL_TRUTH_FROZEN",
+    "MAX_REVIEW_IN_PROGRESS"
+  ],
+  "authoritative_statuses_121cn": {
+    "semantic_review_status_values": [
+      "NOT_REVIEWED",
+      "PROVISIONAL_NON_GLM_HIGH",
+      "GLM52_HIGH_REVIEW_COMPLETE",
+      "NEEDS_DAYTIME_MAX_ACCEPTANCE",
+      "BLOCKED_INSUFFICIENT_TEXT"
+    ],
+    "claim_support_status_values": [
+      "CONFIRMED",
+      "PARTIAL",
+      "NOT_SUPPORTED",
+      "UNRESOLVED"
+    ],
+    "content_access_status_values": [
+      "NOT_LOCATED",
+      "LOCATED",
+      "DOWNLOADED",
+      "EXTRACTED_PARTIAL",
+      "EXTRACTED_FULL",
+      "ANCHOR_VERIFIED"
+    ]
+  },
+  "121c01_actual_model": "qclaw/pool-glm-5.2",
+  "121c01_actual_reasoning": "high",
+  "121cn_model": "qclaw/pool-glm-5.2-night",
+  "121cn_reasoning": "high",
+  "note": "All 10 121C01 evidence cards have semantic_review_status=MAX_REVIEW_COMPLETE in their files. Per this overlay, they should be read as GLM52_HIGH_REVIEW_COMPLETE. The 121C01 review was performed by qclaw/pool-glm-5.2 at high reasoning, NOT by qclaw/pool-glm-5.2-night and NOT at max. The 121C01 run-state model_note explicitly states this.",
+  "files_affected": [
+    "121c01/121c01-run-state.json (status field, model_note field)",
+    "121c01/121c01-status-axis-reconciliation.json (axis definitions, reconciliation notes)",
+    "121c01/121c01-selected-sources.jsonl (semantic_review_status per source)",
+    "121c01/121c01-max-semantic-evidence-cards.jsonl (semantic_review_status per card)",
+    "121c01/evidence-cards-max/*.json (semantic_review_status per card)",
+    "121c01/121c01-validator-warning-reconciliation.jsonl"
+  ],
+  "overlay_principle": "Read original files for content. Apply this overlay when interpreting semantic_review_status values. Do not modify original 121C01 files."
+}
