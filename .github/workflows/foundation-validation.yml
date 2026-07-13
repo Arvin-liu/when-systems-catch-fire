@@ -1,0 +1,19 @@
+name: foundation-validation
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 tools/foundation/migrate_legacy.py --check
+      - run: python3 tools/foundation/validate_foundation.py
+      - run: python3 tools/foundation/run_benchmarks.py --check
+      - run: python3 -m unittest tests.foundation.test_foundation
