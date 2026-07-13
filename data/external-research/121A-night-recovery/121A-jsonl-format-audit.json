@@ -1,0 +1,145 @@
+{
+  "audit_id": "121A-jsonl-audit-20260714",
+  "created_utc": "2026-07-14T01:16:00Z",
+  "jsonl_files_audited": [
+    {
+      "file": "121-extracts.jsonl",
+      "line_count": 74,
+      "valid_count": 74,
+      "invalid_count": 0,
+      "invalid_line_numbers": [],
+      "duplicate_ids": [],
+      "id_field": "source_id",
+      "status": "PASS"
+    },
+    {
+      "file": "121-fetch-records.jsonl",
+      "line_count": 84,
+      "valid_count": 84,
+      "invalid_count": 0,
+      "invalid_line_numbers": [],
+      "duplicate_ids": [],
+      "id_field": "source_id",
+      "status": "PASS"
+    },
+    {
+      "file": "121-fulltext-evidence-cards.jsonl",
+      "line_count": 30,
+      "valid_count": 30,
+      "invalid_count": 0,
+      "invalid_line_numbers": [],
+      "duplicate_ids": [],
+      "id_field": "source_id",
+      "status": "PASS"
+    },
+    {
+      "file": "121-fulltext-failure-register.jsonl",
+      "line_count": 10,
+      "valid_count": 10,
+      "invalid_count": 0,
+      "invalid_line_numbers": [],
+      "duplicate_ids": [],
+      "id_field": "source_id",
+      "status": "PASS"
+    },
+    {
+      "file": "121-fulltext-provider-capability-matrix.jsonl",
+      "line_count": 17,
+      "valid_count": 17,
+      "invalid_count": 0,
+      "invalid_line_numbers": [],
+      "duplicate_ids": [],
+      "id_field": "provider",
+      "status": "PASS"
+    },
+    {
+      "file": "121-fulltext-resolution-log.jsonl",
+      "line_count": 84,
+      "valid_count": 84,
+      "invalid_count": 0,
+      "invalid_line_numbers": [],
+      "duplicate_ids": [],
+      "id_field": "source_id",
+      "status": "PASS"
+    },
+    {
+      "file": "121-fulltext-source-registry.jsonl",
+      "line_count": 84,
+      "valid_count": 84,
+      "invalid_count": 0,
+      "invalid_line_numbers": [],
+      "duplicate_ids": [],
+      "id_field": "source_id",
+      "status": "PASS"
+    },
+    {
+      "file": "121-function-paradigm-cards-fulltext-backed.jsonl",
+      "line_count": 10,
+      "valid_count": 10,
+      "invalid_count": 0,
+      "invalid_line_numbers": [],
+      "duplicate_ids": [],
+      "id_field": "function_paradigm_id",
+      "status": "PASS"
+    },
+    {
+      "file": "121-gap-015-020-readjudications.jsonl",
+      "line_count": 6,
+      "valid_count": 6,
+      "invalid_count": 0,
+      "invalid_line_numbers": [],
+      "duplicate_ids": [],
+      "id_field": "gap_id",
+      "status": "PASS"
+    }
+  ],
+  "json_files_audited": [
+    {
+      "file": "121-baseline-and-contamination-audit.json",
+      "status": "PASS",
+      "valid_json": true
+    },
+    {
+      "file": "121-credential-hygiene-audit.json",
+      "status": "PASS",
+      "valid_json": true
+    },
+    {
+      "file": "121-openalex-client-migration-record.json",
+      "status": "PASS",
+      "valid_json": true
+    },
+    {
+      "file": "121-run-state.json",
+      "status": "PASS",
+      "valid_json": true
+    },
+    {
+      "file": "121-template-risk-reaudit.json",
+      "status": "PASS",
+      "valid_json": true
+    },
+    {
+      "file": "121-function-os-node-readjudication.json",
+      "status": "NEEDS_REPAIR",
+      "valid_json": false,
+      "issue": "File has .json extension but contains JSONL content (9 lines, each a valid JSON object). Not a single JSON object.",
+      "repair_action": "Rename to .jsonl or wrap content in JSON array. Content itself is valid — all 9 lines parse as independent JSON objects."
+    }
+  ],
+  "evidence_card_files_audited": {
+    "directory": "evidence-cards/",
+    "count": 30,
+    "all_valid_json": true,
+    "status": "PASS"
+  },
+  "total_jsonl_files": 9,
+  "total_json_files": 6,
+  "total_jsonl_lines": 389,
+  "total_valid_jsonl_lines": 389,
+  "total_invalid_jsonl_lines": 0,
+  "total_jsonl_format_errors": 0,
+  "total_json_parse_errors": 1,
+  "total_repairs_needed": 1,
+  "overall_status": "PASS_WITH_ONE_FORMAT_NOTE"
+}

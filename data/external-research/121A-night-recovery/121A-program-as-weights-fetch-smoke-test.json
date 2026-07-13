@@ -1,0 +1,38 @@
+{
+  "smoke_test_id": "121A-paw-fetch-20260714",
+  "created_utc": "2026-07-14T01:14:00Z",
+  "source": "arXiv:2607.02512 (Program-as-Weights: A Programming Paradigm for Fuzzy Functions)",
+  "authors": ["Wentao Zhang", "Liliana Hotsko", "Woojeong Kim", "Pengyu Nie", "Stuart Shieber", "Yuntian Deng"],
+  "html_url": "https://arxiv.org/html/2607.02512",
+  "pdf_url": "https://arxiv.org/pdf/2607.02512",
+  "html_fetch": {
+    "http_status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "content_length_bytes": 618169,
+    "local_cache_path": ".cache/fulltext/2607.02512.html",
+    "sha256": "a2f205d7605dc526fd7b955618eb4b5b6c40c310f16fa37e905a618c43004804",
+    "reachable": true
+  },
+  "pdf_fetch": {
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "content_length_bytes": 1811878,
+    "content_disposition": "inline; filename=\"2607.02512v1.pdf\"",
+    "local_cache_path": ".cache/fulltext/2607.02512.pdf",
+    "sha256": "546f833487392f7dc31cf72c04e13eeac77c794420e575d7af2041308f7cdb7d",
+    "etag": "sha256:a74661756b313db86c972d8a8f182e0b55ba750e0daaa22bcc2740760c5bbdd6",
+    "reachable": true
+  },
+  "text_extraction": {
+    "extract_file": "data/external-research/121-fulltext-resolver/121-extracts.jsonl (line for S120-001)",
+    "format": "pdf",
+    "word_count": 13147,
+    "extraction_successful": true,
+    "section_headers_found": ["Abstract", "1 Introduction", "2 Programs as Weights", "3 The Compiler–Interpreter System", "3.1 Compiler–interpreter abstraction"],
+    "first_200_chars": "--- Page 1 --- Program-as-Weights: A Programming Paradigm for Fuzzy Functions Wentao Zhang1,∗ Liliana Hotsko1,∗..."
+  },
+  "section_anchors": "Available via PDF page markers (--- Page N ---) and HTML section headers",
+  "semantic_review_status": "FULLTEXT_FETCH_AND_EXTRACTION_VERIFIED_PENDING_SEMANTIC_REVIEW",
+  "note": "Fetch and extraction verified. Semantic review (evidence card with source-specific claims) deferred to 121C.",
+  "overall_status": "PASS"
+}
