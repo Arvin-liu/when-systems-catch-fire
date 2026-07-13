@@ -25,4 +25,5 @@ jobs:
       - run: python3 tools/foundation/migrate_legacy.py --check
       - run: python3 tools/foundation/validate_foundation.py
       - run: python3 tools/foundation/verify_core_claims.py --check
+      - run: python3 tools/foundation/verify_079.py --check
       - run: python3 -m unittest tests.foundation.test_foundation

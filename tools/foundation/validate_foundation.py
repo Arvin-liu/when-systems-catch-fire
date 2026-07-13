@@ -46,6 +46,10 @@ def main():
     proof_artifacts=load("data/foundation/proofs/core-artifacts.jsonl")
     core_counterexamples=load("data/foundation/validations/core-counterexamples.jsonl")
     logic_checks=load("data/foundation/validations/core-logic-checks.jsonl")
+    method_079=load("data/foundation/adjudications/079-method-audit.jsonl")
+    reviews_079=load("data/foundation/adjudications/079-independent-semantic-review.jsonl")
+    dossiers_079=load("data/foundation/proofs/079-proof-dossiers.jsonl")
+    equivalence_079=load("data/foundation/validations/079-equivalence-checks.jsonl")
     expected={"objects":622,"claims":678,"arguments":678,"evidence":828,"mappings":622,"obligations":622,"validations":6,"counterexamples":4,"adjudications":630,"overrides":621,"queue":1,"proof_artifacts":1,"core_counterexamples":2,"logic_checks":2}
     actual={"objects":len(objects),"claims":len(claims),"arguments":len(args),"evidence":len(evidence),"mappings":len(maps),"obligations":len(obligations),"validations":len(validations),"counterexamples":len(counterexamples)}
     actual.update({"adjudications":len(adjudications),"overrides":len(overrides),"queue":len(queue),"proof_artifacts":len(proof_artifacts),"core_counterexamples":len(core_counterexamples),"logic_checks":len(logic_checks)})
@@ -66,30 +70,34 @@ def main():
     check("classification:counts",Counter(x["classification_status"] for x in objects)==Counter({"ADJUDICATED":621,"PROVISIONAL":1}))
     check("classification:provisional-title-heuristic",all(x["classification_basis"]==["TITLE_HEURISTIC"] and x["review_required"] for x in objects if x["classification_status"]=="PROVISIONAL"))
     check("classification:only-d598-provisional",{x["id"] for x in objects if x["classification_status"]=="PROVISIONAL"}=={"D598"})
-    check("classification:adjudicated-source-text",all("SOURCE_TEXT" in x["classification_basis"] and x["semantic_justification"] and x["source_excerpt_refs"] for x in objects if x["classification_status"]=="ADJUDICATED"))
+    check("classification:078-labels-retained-as-legacy",all("SOURCE_TEXT" in x["classification_basis"] and x["semantic_justification"] and x["source_excerpt_refs"] for x in objects if x["classification_status"]=="ADJUDICATED"))
     object_by_id={x["id"]:x for x in objects}
     check("classification:override-preserved",all(object_by_id[x["stable_id"]]["formal_object_type"]==x["formal_object_type"] and object_by_id[x["stable_id"]]["classification_status"]=="ADJUDICATED" for x in overrides))
     adjudication_min={"adjudication_id","stable_id","legacy_id","original_title","earliest_source","current_source","original_natural_language_proposition","controlled_semantic_proposition","subject","object","conditions","quantifiers","modal_terms","applicability_scope","formal_object_type","claim_type","why_not_other_object_types","typed_variables","domain","codomain_or_target_type","parameters","units_or_dimensions","assumptions_and_boundaries","premise_set","inference_type","inference_rule","conclusion","hidden_premises","known_counterexamples_or_countermodels","proof_obligations","evidence_status","final_disposition","unresolved_questions"}
     check("adjudication:complete-records",all(adjudication_min <= set(x) for x in adjudications))
-    check("adjudication:not-title-only",all(x.get("automated_title_only") is False for x in adjudications))
+    check("adjudication:078-self-label-not-independent-proof",len(method_079)==622 and all(not x["semantic_adjudication_verified"] for x in method_079))
     check("adjudication:registry-coverage",len({x["stable_id"] for x in adjudications if x["stable_id"] in object_by_id})==621)
     for name,schema_rel,rows in [
         ("formal-objects","data/foundation/schemas/formal-object.schema.json",objects),
         ("adjudications","data/foundation/schemas/adjudication.schema.json",adjudications),
         ("classification-overrides","data/foundation/schemas/classification-override.schema.json",overrides),
         ("content-work-queue","data/foundation/schemas/content-work-item.schema.json",queue),
+        ("079-independent-reviews","data/foundation/schemas/independent-semantic-review.schema.json",reviews_079),
     ]:
         ok,detail=schema_ok(schema_rel,rows)
         check(f"schema:{name}",ok,detail)
     coverage=json.loads((ROOT/"data/foundation/coverage/migration-vs-semantic-coverage-20260713.json").read_text(encoding="utf-8"))
     ok,detail=schema_ok("data/foundation/schemas/coverage.schema.json",[coverage])
     check("schema:coverage",ok,detail)
-    check("gate:theorem-only-t2",{x["id"] for x in objects if x["status"]["proof_status"]=="PROVED"}=={"T2"})
+    check("gate:t2-legacy-not-proved",any(x["id"]=="T2" and x["equivalence"]=="NOT_EQUIVALENT_WEAKENED_LEMMA" for x in equivalence_079))
     check("gate:no-strict-isomorphism",all(x.get("claim_type")!="STRICT_ISOMORPHISM_CLAIM" for x in objects))
     check("gate:no-established-causal",all(x.get("claim_type")!="EMPIRICAL_CAUSAL_CLAIM" for x in objects))
     check("gate:t16-refuted",object_by_id["T16"]["status"]["proof_status"]=="REFUTED")
     check("gate:d220-countermodel",object_by_id["D220"]["status"]["logic_status"]=="COUNTERMODEL_FOUND")
     check("gate:t23-pending",object_by_id["T23"]["status"]["proof_status"]=="UNPROVED_PROPOSITION")
+    check("079:method-split",Counter(x["adjudication_method"] for x in method_079)==Counter({"REGEX_PRECLASSIFICATION":548,"HARDCODED_MAPPING":74}))
+    check("079:verified-registry-only-five",sum(x["registry_object"] for x in reviews_079)==5)
+    check("079:proof-dossiers-forty",len(dossiers_079)==40 and len({x["id"] for x in dossiers_079})==40)
     required_ce={"target_claim","domain","assumptions","input","derivation","violated_conclusion","source","replay","expected_result"}
     check("counterexample:replay-contract",all(required_ce <= set(x) for x in counterexamples))
     legacy_diff=subprocess.run(["git","diff","--quiet","fc3f2ae309ad3dd485716ab5675948a6a46cd75d","--","统一函数总表","统一案例总表"],cwd=ROOT).returncode

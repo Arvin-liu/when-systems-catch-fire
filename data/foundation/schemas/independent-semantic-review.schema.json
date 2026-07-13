@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id", "adjudication_method", "source_body_actually_read", "source_excerpt",
+    "source_line_range", "controlled_proposition", "object_type_rationale",
+    "logic_form", "quantifiers", "assumptions", "scope",
+    "counterexample_conditions", "proof_or_evidence_requirement",
+    "review_confidence", "review_status", "independent_reviewer",
+    "semantic_adjudication_verified"
+  ],
+  "properties": {
+    "adjudication_method": {
+      "enum": [
+        "REGEX_PRECLASSIFICATION", "HARDCODED_MAPPING",
+        "SOURCE_TEXT_SEMANTIC_REVIEW", "FORMAL_PROOF_REVIEW",
+        "COUNTEREXAMPLE_REVIEW", "EXTERNAL_REFERENCE_REVIEW"
+      ]
+    },
+    "source_body_actually_read": {"const": true},
+    "source_excerpt": {"type": "string", "minLength": 1},
+    "source_line_range": {"type": "string", "pattern": "^L[0-9]+-L[0-9]+$"},
+    "controlled_proposition": {"type": "string", "minLength": 1},
+    "object_type_rationale": {"type": "string", "minLength": 1},
+    "independent_reviewer": {"type": "string", "minLength": 1},
+    "semantic_adjudication_verified": {"const": true},
+    "review_confidence": {"type": "number", "minimum": 0, "maximum": 1}
+  },
+  "additionalProperties": true
+}
