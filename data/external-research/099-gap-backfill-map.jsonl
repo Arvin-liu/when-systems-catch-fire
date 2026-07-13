@@ -1,0 +1,14 @@
+{"gap_id": "GAP-001", "title": "干预与控制", "priority": "HIGH", "recomputed_087_coverage": "missing=250, partial=0", "external_sources_landed": 8, "backfill_status": "GROUNDED"}
+{"gap_id": "GAP-002", "title": "层级尺度", "priority": "HIGH", "recomputed_087_coverage": "missing=206, partial=44", "external_sources_landed": 8, "backfill_status": "GROUNDED"}
+{"gap_id": "GAP-003", "title": "时间动态", "priority": "HIGH", "recomputed_087_coverage": "missing=222, partial=28", "external_sources_landed": 12, "backfill_status": "GROUNDED"}
+{"gap_id": "GAP-004", "title": "随机不确定性", "priority": "HIGH", "recomputed_087_coverage": "missing=209, partial=41", "external_sources_landed": 8, "backfill_status": "GROUNDED"}
+{"gap_id": "GAP-005", "title": "优化权衡", "priority": "HIGH", "recomputed_087_coverage": "missing=242, partial=8", "external_sources_landed": 8, "backfill_status": "GROUNDED"}
+{"gap_id": "GAP-006", "title": "路径依赖与历史", "priority": "HIGH", "recomputed_087_coverage": "missing=234, partial=16", "external_sources_landed": 13, "backfill_status": "GROUNDED"}
+{"gap_id": "GAP-007", "title": "表示语言", "priority": "HIGH", "recomputed_087_coverage": "missing=168, partial=82", "external_sources_landed": 9, "backfill_status": "GROUNDED"}
+{"gap_id": "GAP-008", "title": "计算复杂度", "priority": "HIGH", "recomputed_087_coverage": "missing=212, partial=38", "external_sources_landed": 8, "backfill_status": "GROUNDED"}
+{"gap_id": "GAP-009", "title": "不完备性与不可判定", "priority": "MEDIUM", "recomputed_087_coverage": "missing=104, partial=146", "external_sources_landed": 0, "backfill_status": "PENDING_EXTERNAL"}
+{"gap_id": "GAP-010", "title": "测量与可观测性", "priority": "MEDIUM", "recomputed_087_coverage": "missing=116, partial=134", "external_sources_landed": 0, "backfill_status": "PENDING_EXTERNAL"}
+{"gap_id": "GAP-011", "title": "本体论", "priority": "MEDIUM", "recomputed_087_coverage": "missing=0, partial=250", "external_sources_landed": 0, "backfill_status": "PENDING_EXTERNAL"}
+{"gap_id": "GAP-012", "title": "因果识别", "priority": "MEDIUM", "recomputed_087_coverage": "missing=0, partial=250", "external_sources_landed": 0, "backfill_status": "PENDING_EXTERNAL"}
+{"gap_id": "GAP-013", "title": "证据制度", "priority": "MEDIUM", "recomputed_087_coverage": "missing=0, partial=250", "external_sources_landed": 0, "backfill_status": "PENDING_EXTERNAL"}
+{"gap_id": "GAP-014", "title": "反例与失败", "priority": "MEDIUM", "recomputed_087_coverage": "missing=0, partial=250", "external_sources_landed": 0, "backfill_status": "PENDING_EXTERNAL"}
