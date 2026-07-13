@@ -1,0 +1,43 @@
+{
+  "source_id": "S120-046",
+  "title": "TIES-Merging: Resolving Interference When Merging Models",
+  "authors": "Yadav, P., et al.",
+  "year": 2023,
+  "venue": "NeurIPS 2023",
+  "doi_or_identifier": "arXiv:2306.01708",
+  "source_family": 6,
+  "url": "https://arxiv.org/abs/2306.01708",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2306.01708.pdf",
+  "effective_url": "https://arxiv.org/pdf/2306.01708",
+  "access_time_utc": "2026-07-13T16:43:37Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "828742490193a58a3be52c339318f341e7eafced2ffa919d8e45e0ffeebaeb6f",
+  "local_cache_path": ".cache/fulltext/S120-046_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 1179222,
+  "page_count": 23,
+  "sections": [
+    "1 Introduction",
+    "2 Interference in Model Merging",
+    "3 TIES-Merging",
+    "4 Experiments",
+    "5 Analysis",
+    "6 Related Work",
+    "7 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:interference",
+    "sec:ties",
+    "sec:experiments",
+    "sec:analysis"
+  ],
+  "abstract_snippet": "--- Page 1 --- TIES -MERGING : Resolving Interference When Merging Models Prateek Yadav1 Derek Tam1 Leshem Choshen2,3 Colin Raffel1 Mohit Bansal1 1 University of North Carolina at Chapel Hill 2 IBM Research 3 MIT leshem.choshen@ibm.com {praty,dtredsox,craffel,mbansal}@cs.unc.edu Abstract Transfer learning – i.e.",
+  "what_the_paper_supports": "TIES-Merging explicitly identifies and resolves interference (redundant values and sign conflicts) when merging models. Supports the ignition claim that weight-space composition requires careful handling of parameter conflicts (GAP-016, Function OS node 8 ComposerRouter). It also shows that merging can be done without retraining, producing a single artifact (node 4 Artifact).",
+  "what_the_paper_does_not_support": "The method is a practical merge algorithm, not a formal specification or equivalence framework (GAP-015, GAP-017). It does not address effects (GAP-018) or probabilistic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (23 pages, 1179222 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

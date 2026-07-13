@@ -1,0 +1,43 @@
+{
+  "source_id": "S120-002",
+  "title": "Linear Transformers Are Secretly Fast Weight Programmers",
+  "authors": "Schlag, I., Irie, K., Schmidhuber, J.",
+  "year": 2021,
+  "venue": "ICML 2021",
+  "doi_or_identifier": "arXiv:2102.11174",
+  "source_family": 1,
+  "url": "https://arxiv.org/pdf/2102.11174",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2102.11174.pdf",
+  "effective_url": "https://arxiv.org/pdf/2102.11174",
+  "access_time_utc": "2026-07-13T16:41:13Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "6891c3b7f048f436cebb6f4aaee0343b3e3b2b91793f3412819383ccea5c962b",
+  "local_cache_path": ".cache/fulltext/S120-002_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 1452993,
+  "page_count": 16,
+  "sections": [
+    "1 Introduction",
+    "2 Background",
+    "3 Linear Transformers as Fast Weight Programmers",
+    "4 A Delta Rule for Fast Weight Programmers",
+    "5 Experiments",
+    "6 Related Work",
+    "7 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:background",
+    "sec:fwps",
+    "sec:delta",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Linear Transformers Are Secretly Fast Weight Programmers Imanol Schlag∗ 1 Kazuki Irie∗ 1 J ¨urgen Schmidhuber 1 Abstract We show the formal equivalence of linearised self- attention mechanisms and fast weight controllers from the early ’90s, where a “slow” neural net learns by gradient descent to program the “fast weights” of another net through sequences of ele- mentary programming...",
+  "what_the_paper_supports": "Proves a formal equivalence between linearised self-attention and fast weight programmers (FWPs): a slow network learns by gradient descent to program the fast weights of another network through additive outer products (keys/values). This supports the ignition claim that weight-space dynamics can be interpreted as a programming process (Function OS node 2 Representation, node 3 Compiler). The delta-rule variant shows that the FWP can learn to correct and update its weight memory, supporting weight-space composition and incremental modification (node 8 ComposerRouter).",
+  "what_the_paper_does_not_support": "The equivalence is between specific attention mechanisms and fast weight systems, not between arbitrary functions and neural networks. The paper does not provide a general composition algebra for functions (GAP-016). It does not address equivalence checking across representations (GAP-017), nor does it give a formal semantics for the resulting functions. Memory capacity limitation is an empirical observation, not a guarantee. Results are on sequence tasks and do not generalize to all computational functions.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (16 pages, 1452993 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

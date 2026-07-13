@@ -1,0 +1,33 @@
+{
+  "audit_target": "120 function-paradigm evidence cards and gap adjudications",
+  "120_template_risk_fields": [
+    {
+      "field": "claim_support_status",
+      "risk": "MEDIUM",
+      "reason": "120 cards used a shared set of status labels but did not always ground the status in source-specific evidence. Some cards may have been generated from abstracts rather than full text."
+    },
+    {
+      "field": "what_the_paper_supports",
+      "risk": "HIGH",
+      "reason": "120 cards often reused phrasing that could apply to multiple papers (e.g., 'supports neural functions as weights'). The support statement was not always tied to a specific mechanism or section anchor."
+    },
+    {
+      "field": "what_the_paper_does_not_support",
+      "risk": "MEDIUM",
+      "reason": "Limitations were sometimes generic ('does not solve all tasks') rather than specific to the paper's actual scope, methodology, or evaluation."
+    },
+    {
+      "field": "source_family_claim",
+      "risk": "LOW",
+      "reason": "Family assignments were mostly accurate because they were tied to the source registry."
+    }
+  ],
+  "121_remediation": [
+    "Each 121 evidence card now includes real page counts, SHA256, local cache paths, access timestamps, and section/anchor lists.",
+    "Support and non-support statements are source-specific: they name the exact mechanism, model, dataset, or limitation from the paper.",
+    "No card uses 'strict function equivalence' without qualification; all composition claims are explicitly empirical or formal.",
+    "All 30 evidence cards are backed by successfully fetched full-text files.",
+    "GAP and Function OS readjudications are derived from the 30 evidence cards, not from the 120 cards."
+  ],
+  "remaining_risk": "Some 121 cards still rely on the author's own claims of performance (e.g., 'PAW matches Qwen3-32B'). These are reported as the paper's findings, not as independently verified ignition facts. The 'what_the_paper_does_not_support' field explicitly notes this limitation."
+}

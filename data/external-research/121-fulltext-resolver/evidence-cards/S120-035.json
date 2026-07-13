@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-035",
+  "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+  "authors": "Hu, E.J., et al.",
+  "year": 2021,
+  "venue": "arXiv preprint / ICLR 2022",
+  "doi_or_identifier": "arXiv:2106.09685",
+  "source_family": 5,
+  "url": "https://arxiv.org/abs/2106.09685",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2106.09685.pdf",
+  "effective_url": "https://arxiv.org/pdf/2106.09685",
+  "access_time_utc": "2026-07-13T16:42:29Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "e9a0d3128767db616085dc0f4e6e455e672e89af823e8ed1282793682787395a",
+  "local_cache_path": ".cache/fulltext/S120-035_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 1609513,
+  "page_count": 26,
+  "sections": [
+    "1 Introduction",
+    "2 Problem Statement",
+    "3 LoRA",
+    "4 Experiments",
+    "5 Related Work",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:problem",
+    "sec:lora",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- LORA: L OW-R ANK ADAPTATION OF LARGE LAN- GUAGE MODELS Edward Hu∗ Yelong Shen∗ Phillip Wallis Zeyuan Allen-Zhu Yuanzhi Li Shean Wang Lu Wang Weizhu Chen Microsoft Corporation {edwardhu, yeshe, phwallis, zeyuana, yuanzhil, swang, luw, wzchen }@microsoft.com yuanzhil@andrew.cmu.",
+  "what_the_paper_supports": "LoRA freezes pretrained weights and injects trainable low-rank matrices, creating a compact adapter that can be stored, composed, and reused. Directly supports the ignition claim that functions can be represented as small parameter increments (Function OS node 2 Representation, node 4 Artifact, node 9 VersionedRegistry). Also shows that adapters can be combined in practice, which relates to GAP-016 and GAP-019.",
+  "what_the_paper_does_not_support": "LoRA does not define a formal semantics or precondition/postcondition language for the adapted function (GAP-015). It does not provide an equivalence criterion between adapters (GAP-017) or a closed-form composition algebra (GAP-016). It does not address side effects (GAP-018) or probabilistic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (26 pages, 1609513 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

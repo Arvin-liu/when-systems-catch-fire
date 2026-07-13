@@ -1,0 +1,71 @@
+{
+  "ignition_task": "IGNITION-20260709-121",
+  "ignition_repo": "/tmp/wscf-121",
+  "ignition_current_head": "5d33b72199973fe78db3e2f2183faed8f471eebc",
+  "ignition_head_short": "5d33b72",
+  "ignition_120_baseline_commit": "f423361aab5736aecbf3dcb87ff421a5cfb13a39",
+  "ignition_120_parent_commit": "a797b07eb22dd203545ea09fa7b58430f744a613",
+  "ignition_120_draft_pr": 30,
+  "ignition_120_draft_pr_note": "DO NOT MODIFY/CLOSE/MERGE",
+  "1111_repo": "/tmp/1111-ignition-121",
+  "1111_main_head": "a061b2901383a43f174b3c23c67efa2374da24a4",
+  "1111_120_contaminated_branch_head": "a98bcad4279ead4eecd643d46d2bb7cf981b58cc",
+  "1111_120_clean_baseline": "0fc7f437a67a9834b404ecdd2b0c68d6b2ab85f5",
+  "120_output_dir": "data/external-research/120-function-paradigm-atlas",
+  "120_files_count": 18,
+  "120_files_sha256": {
+    "120-baseline-manifest.json": "dbad87f5ef7d14df3cd8291de8750d5dfe4165221f2bdc38284de576ae6b4679",
+    "120-existing-gap-overlap-matrix.jsonl": "f47af4f4094f0978144c5e38c0af900aa857398c43e7870e1c95b55ea87afccb",
+    "120-followup-queue-121-126.jsonl": "81a088982a424833f7c0cbba789c5f4daf40902ea90a6f359bc751681a63e006",
+    "120-forbidden-wording.jsonl": "16bbfcb1707f6625518b32f43a8889455995cc0589232a56eedc6f3ed5801363",
+    "120-fulltext-evidence-cards.jsonl": "bb7e429f23034d8010cab472d18fa5863826a8379e74181672c3f63669284599",
+    "120-function-equivalence-state-axis.json": "18268270f3bb0271cafb68bbbec1bc82d5a3d6ab74178056eac7f46d410ad1c8",
+    "120-function-os-candidate-overlay.json": "3109e5f0d204fe412eb86a6895cd65b7fc0266f0706a7090354a1a14f3de9782",
+    "120-function-paradigm-cards.jsonl": "4a4024fcc31e3e9d9e0bb14b891ce72c12912ad03d2396450b33abe1a1d0a676",
+    "120-function-source-registry.jsonl": "68e989a83ff641bc648c6b3b828ef61c86120f61c5481f1e8369d4c73cbb4f35",
+    "120-gap-015-020-adjudications.jsonl": "c8ad3fd7c6ec55cbd96a0e7e4c4636bcd95c5c6863b8e7812734bfb5080da91a",
+    "120-internal-function-asset-inventory.jsonl": "f3a7cca6cbe7ed7de7076859d26393f73c37264f92736376fff9f88fec62e45b",
+    "120-provider-and-tool-audit.md": "cab5e3d99bbcf4202f23e98467b421b7ab547be07525b66a2aff699551495b6b",
+    "120-run-state.json": "dca73b1882665a0ea437a683bc6581547f4bb1642bc27714ece522d2980b816c",
+    "120-source-family-coverage.json": "3af0e9b7b15a5a77b3a7ea206a86c82f0611f756742a129403a45316d094906d",
+    "120-validator.py": "8907c6f8ac1ee6c441d16f94d5eee6451e702863fbfe340fd91acc49be42d663"
+  },
+  "1111_contamination_diff_summary": {
+    "deleted_files": 19711,
+    "modified_files": 1,
+    "added_files": 1,
+    "deleted_non_obsidian_files": [
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/.gitignore",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/.openclaw/cross-session-review-tasks-2026-06-10.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/AGENT_ENTRY.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/ANALYTIC_SOLUTIONS.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/ANSWERS.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/CHANGELOG.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/CITATION.cff",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/DISCOVERIES.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/DISCOVERY_PROJECTION_SETS.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/EFFECTS.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/LICENSE",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/LICENSE-CODE.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/LICENSE-SUMMARY.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/NOTICE.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/PREDICTIONS.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/RESTORE_MANIFEST.tsv",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/RESTORE_README.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/agent/agent-operation-checklist.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/agent/book-summary.md",
+      "data/old_tables/dianhuo/deleted_from_when-systems-catch-fire/agent/cases.md"
+    ],
+    "added_non_obsidian_files": [
+      "agent-results/IGNITION-20260709-120-result.md"
+    ],
+    "modified_obsidian_files": [
+      "data/obsidian-getnote/notes/asset/no-id__多人闲聊与植物智能项目元协议研究记录_1914496922547217176_audio.mp3"
+    ]
+  },
+  "contamination_assessment": {
+    "scope": "The 120 branch in 1111 carries large deletions of old_table assets that appear to originate from the when-systems-catch-fire repository. These deletions are out-of-scope for a pure external-research task and constitute cross-repo contamination.",
+    "credential_bearing_files": [],
+    "recommended_action": "Create a clean 121 branch from 1111 main and do not carry the 120 deletions forward. Archive 120 branch information in a QUARANTINED_DO_NOT_MERGE marker."
+  }
+}

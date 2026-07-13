@@ -1,0 +1,43 @@
+{
+  "source_id": "S120-017",
+  "title": "Latent Execution for Neural Program Synthesis",
+  "authors": "Shi, K., et al.",
+  "year": 2021,
+  "venue": "NeurIPS 2021",
+  "doi_or_identifier": "NeurIPS-2021-ba3c95c2",
+  "source_family": 3,
+  "url": "https://proceedings.neurips.cc/paper/2021/file/ba3c95c2962d3aab2f6e667932daa3c5-Paper.pdf",
+  "access_channel": "neurips_pdf",
+  "access_url": "https://proceedings.neurips.cc/paper/2021/file/ba3c95c2962d3aab2f6e667932daa3c5-Paper.pdf",
+  "effective_url": "https://proceedings.neurips.cc/paper/2021/file/ba3c95c2962d3aab2f6e667932daa3c5-Paper.pdf",
+  "access_time_utc": "2026-07-13T16:41:48Z",
+  "version": "published/accepted manuscript",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "4c3ac93493d260c5cccdc5e2b1b831345103c6f5706b01e44906d96740c6aef0",
+  "local_cache_path": ".cache/fulltext/S120-017_neurips_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 2101787,
+  "page_count": 13,
+  "sections": [
+    "1 Introduction",
+    "2 Method",
+    "3 Latent Execution Model",
+    "4 Training",
+    "5 Experiments",
+    "6 Related Work",
+    "7 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:method",
+    "sec:latent",
+    "sec:training",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Latent Execution for Neural Program Synthesis Xinyun Chen UC Berkeley xinyun.chen@berkeley.edu Dawn Song UC Berkeley dawnsong@cs.berkeley.edu Yuandong Tian Facebook AI Research yuandong@fb.com Abstract Program synthesis from input-output (IO) examples has been a long-standing challenge.",
+  "what_the_paper_supports": "LaSynth learns a latent representation to approximate execution of partially generated programs in real languages like C. Supports the ignition claim that program synthesis can be guided by execution feedback (Function OS node 5 Interpreter, node 6 ExecutionTrace). Addresses the challenge of compiling and executing programs in a general-purpose language, not just a DSL.",
+  "what_the_paper_does_not_support": "The approach is restricted to C programs with tens of tokens and no library calls. It does not provide a formal specification language (GAP-015) or equivalence checking (GAP-017). It does not address weight-space or probabilistic semantics (GAP-016, GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (13 pages, 2101787 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

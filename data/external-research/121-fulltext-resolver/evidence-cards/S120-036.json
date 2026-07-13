@@ -1,0 +1,42 @@
+{
+  "source_id": "S120-036",
+  "title": "Task-Aware LoRA Adapter Composition via Similarity Retrieval in Vector Databases",
+  "authors": "Anonymous",
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi_or_identifier": "arXiv:2602.21222",
+  "source_family": 5,
+  "url": "https://arxiv.org/html/2602.21222",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2602.21222.pdf",
+  "effective_url": "https://arxiv.org/pdf/2602.21222",
+  "access_time_utc": "2026-07-13T16:42:31Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "931d8dad4e885fd27bfe053bb823b82fd07ff90d74cc291dd1ad1d840295b175",
+  "local_cache_path": ".cache/fulltext/S120-036_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 464296,
+  "page_count": 12,
+  "sections": [
+    "1 Introduction",
+    "2 Method",
+    "3 Task-Aware Retrieval",
+    "4 Adapter Fusion",
+    "5 Experiments",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:method",
+    "sec:retrieval",
+    "sec:fusion",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Task-Aware LoRA Adapter Composition via Similarity Retrieval in Vector Databases Riya Adsul Balachandra Devarangadi Isha Nalawade Sudharshan Govindan (radsul, bdevarangadi, inalawade, sgovindan)@umass.",
+  "what_the_paper_supports": "Dynamically composes LoRA adapters via similarity retrieval in a vector database and merging strategies (Linear, TIES, Magnitude Prune). Supports the ignition claim that multiple function adapters can be retrieved and composed at runtime (Function OS node 8 ComposerRouter, node 9 VersionedRegistry) and that composition can be empirical rather than requiring a full closed-form algebra.",
+  "what_the_paper_does_not_support": "The composition is heuristic and evaluated on NLP benchmarks. It does not provide a formal specification language (GAP-015), equivalence checker (GAP-017), or universal composition algebra (GAP-016). It does not address effects (GAP-018) or probabilistic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (12 pages, 464296 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-020",
+  "title": "Parsel: Algorithmic Reasoning with Language Models by Composing Decompositions",
+  "authors": "Jain, N., et al.",
+  "year": 2023,
+  "venue": "ICML 2023",
+  "doi_or_identifier": "arXiv:2212.10561",
+  "source_family": 3,
+  "url": "http://arxiv.org/pdf/2212.10561v1",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2212.10561.pdf",
+  "effective_url": "https://arxiv.org/pdf/2212.10561",
+  "access_time_utc": "2026-07-13T16:41:53Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "7e40c20c64f10766adb7fc05514c6073e3ceeb58d2b76041d8bc4bcea0240c31",
+  "local_cache_path": ".cache/fulltext/S120-020_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 1733039,
+  "page_count": 55,
+  "sections": [
+    "1 Introduction",
+    "2 Parsel Framework",
+    "3 Decomposition and Search",
+    "4 Experiments",
+    "5 Related Work",
+    "6 Discussion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:parsel",
+    "sec:decomposition",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Parsel : Algorithmic Reasoning with Language Models by Composing Decompositions Eric Zelikman, Qian Huang, Gabriel Poesia, Noah D. Goodman, Nick Haber Stanford University {ezelikman, qhwang, poesia, ngoodman, nhaber}@stanford.",
+  "what_the_paper_supports": "Parsel decomposes algorithmic tasks into hierarchical natural-language function descriptions and searches over implementations using tests. Supports the ignition claim that complex functions can be built compositionally from simpler function descriptions (Function OS node 3 Compiler, node 8 ComposerRouter). Also shows that generated programs can be validated against tests, supporting node 7 Validator.",
+  "what_the_paper_does_not_support": "Parsel relies on a language model and test cases; it does not produce formal preconditions/postconditions (GAP-015). It does not define equivalence between its generated code and other representations (GAP-017). It does not treat functions as weight-space artifacts (GAP-016) or address probabilistic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (55 pages, 1733039 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

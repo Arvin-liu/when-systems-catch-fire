@@ -1,0 +1,42 @@
+{
+  "source_id": "S120-050",
+  "title": "Refinement Reflection: Complete Verification with SMT",
+  "authors": "Vazou, N., et al.",
+  "year": 2018,
+  "venue": "POPL 2018",
+  "doi_or_identifier": "POPL-2018-refinement-reflection",
+  "source_family": 7,
+  "url": "https://nikivazou.github.io/static/popl18/refinement-reflection.pdf",
+  "access_channel": "direct_pdf",
+  "access_url": "https://nikivazou.github.io/static/popl18/refinement-reflection.pdf",
+  "effective_url": "https://nikivazou.github.io/static/popl18/refinement-reflection.pdf",
+  "access_time_utc": "2026-07-13T16:43:45Z",
+  "version": "published/accepted manuscript",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "aac09f5e36b5113f41a0c47adf1e5d230c26d1fd3abede797f977f59fe49fa7c",
+  "local_cache_path": ".cache/fulltext/S120-050_direct_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 1167388,
+  "page_count": 31,
+  "sections": [
+    "1 Introduction",
+    "2 Refinement Types",
+    "3 Refinement Reflection",
+    "4 Proof by Logical Evaluation",
+    "5 Evaluation",
+    "6 Related Work",
+    "7 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:rt",
+    "sec:reflection",
+    "sec:evaluation"
+  ],
+  "abstract_snippet": "--- Page 1 --- 1 Refinement Reflection: Complete Verification with SMT NIKI VAZOU, University of Maryland ANISH TONDWALKAR, University of California, San Diego VIKRAMAN CHOUDHURY, Indiana University RYAN G. SCOTT, Indiana University RYAN R.",
+  "what_the_paper_supports": "Refinement Reflection reflects function definitions into output refinement types, enabling complete SMT-based equational reasoning. Supports the ignition claim that functions can be verified against their specifications (GAP-015, Function OS node 1 FunctionSpec, node 7 Validator). It also provides a form of formal equivalence checking between implementations and specifications (GAP-017).",
+  "what_the_paper_does_not_support": "The framework is for Haskell and pure functional programs; it does not address neural-network or weight-space functions (GAP-016), runtime effects (GAP-018), or probabilistic semantics (GAP-020). It also requires decidable theories and cannot verify arbitrary mathematical properties.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (31 pages, 1167388 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

@@ -3,3 +3,7 @@
 .DS_Store
 .venv-foundation/
 .lake/
+.cache/fulltext/
+
+.cache/fulltest/
+scripts/external-research/__pycache__/

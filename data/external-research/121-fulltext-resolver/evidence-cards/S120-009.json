@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-009",
+  "title": "HyperNetworks",
+  "authors": "Ha, D., Dai, A., Le, Q.V.",
+  "year": 2016,
+  "venue": "ICLR 2017",
+  "doi_or_identifier": "arXiv:1609.09106",
+  "source_family": 2,
+  "url": "https://arxiv.org/pdf/1609.09106",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/1609.09106.pdf",
+  "effective_url": "https://arxiv.org/pdf/1609.09106",
+  "access_time_utc": "2026-07-13T16:41:33Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "cc7057fe9b03ea8aa98d581eae1630bd6e03e25ac6057f7c53f45c50610cb4c5",
+  "local_cache_path": ".cache/fulltext/S120-009_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 3125291,
+  "page_count": 29,
+  "sections": [
+    "1 Introduction",
+    "2 Hypernetworks",
+    "3 Experiments",
+    "4 Analysis",
+    "5 Related Work",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:hypernetworks",
+    "sec:experiments",
+    "sec:analysis"
+  ],
+  "abstract_snippet": "--- Page 1 --- HYPER NETWORKS David Ha∗, Andrew Dai, Quoc V . Le Google Brain {hadavid,adai,qvl}@google.com ABSTRACT This work explores hypernetworks: an approach of using a one network, also known as a hypernetwork, to generate the weights for another network.",
+  "what_the_paper_supports": "HyperNetworks explicitly generate the weights of a main network from an embedding, showing that one neural network can compile another into a weight artifact. Supports the ignition claim that a function can be represented as generated weights (Function OS node 2 Representation, node 3 Compiler, node 4 Artifact). Demonstrates this on CNNs and LSTMs with fewer learnable parameters than direct weight matrices, supporting weight-space generation and compression.",
+  "what_the_paper_does_not_support": "The hypernetwork is itself a neural network trained end-to-end; it does not provide a formal semantics or contract for the generated function (GAP-015). It does not define an equivalence relation between hypernetwork-generated weights and other representations (GAP-017). It does not address composition of multiple hypernetwork-generated functions (GAP-016) or probabilistic effects (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (29 pages, 3125291 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

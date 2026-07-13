@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-007",
+  "title": "Neural Programmer: Inducing Latent Programs with Gradient Descent",
+  "authors": "Neelakantan, A., et al.",
+  "year": 2015,
+  "venue": "arXiv preprint",
+  "doi_or_identifier": "arXiv:1511.04834",
+  "source_family": 1,
+  "url": "https://ar5iv.labs.arxiv.org/html/1511.04834",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/1511.04834.pdf",
+  "effective_url": "https://arxiv.org/pdf/1511.04834",
+  "access_time_utc": "2026-07-13T16:41:25Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "966360b41deaf1252827476a157fe1c8e5c710b4ac86842039d8bbdac6a7c65f",
+  "local_cache_path": ".cache/fulltext/S120-007_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 577767,
+  "page_count": 18,
+  "sections": [
+    "1 Introduction",
+    "2 Related Work",
+    "3 Neural Programmer",
+    "4 Model",
+    "5 Experiments",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:related",
+    "sec:model",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Published as a conference paper at ICLR 2016 NEURAL PROGRAMMER : I NDUCING LATENT PROGRAMS WITH GRADIENT DESCENT Arvind Neelakantan∗ University of Massachusetts Amherst arvind@cs.umass.edu Quoc V . Le Google Brain qvl@google.com Ilya Sutskever Google Brain ilyasu@google.",
+  "what_the_paper_supports": "Neural Programmer augments a neural network with a small set of arithmetic/logic operations and learns to compose them into programs via gradient descent from weak supervision (execution results). Supports the ignition claim that neural architectures can be designed to induce latent programs (Function OS nodes 2 Representation, 3 Compiler, 5 Interpreter). Demonstrates that program-like behavior can emerge from a differentiable architecture trained on I/O examples.",
+  "what_the_paper_does_not_support": "Operations are hard-coded (addition, subtraction, comparison, etc.) and the paper does not provide a user-specified function language with preconditions/postconditions (GAP-015). It does not address equivalence of learned programs to other representations (GAP-017), nor does it handle weight-space composition (GAP-016), side effects (GAP-018), or probabilistic semantics (GAP-020). Experiments are limited to synthetic table QA.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (18 pages, 577767 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

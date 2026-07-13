@@ -1,0 +1,42 @@
+{
+  "source_id": "S120-055",
+  "title": "Handlers in Action",
+  "authors": "Kammar, O., Lindley, S., Oury, N.",
+  "year": 2013,
+  "venue": "ICFP 2013",
+  "doi_or_identifier": "10.1145/2500365.2500590",
+  "source_family": 8,
+  "url": "https://denotational.co.uk/publications/kammar-lindley-oury-handlers-in-action.pdf",
+  "access_channel": "direct_pdf",
+  "access_url": "https://denotational.co.uk/publications/kammar-lindley-oury-handlers-in-action.pdf",
+  "effective_url": "https://denotational.co.uk/publications/kammar-lindley-oury-handlers-in-action.pdf",
+  "access_time_utc": "2026-07-13T16:43:54Z",
+  "version": "published/accepted manuscript",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "ae77ba7066959571e55d4dce586bde3776fc553bf8240657bd188617544716c0",
+  "local_cache_path": ".cache/fulltext/S120-055_direct_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 464059,
+  "page_count": 14,
+  "sections": [
+    "1 Introduction",
+    "2 Handlers",
+    "3 Examples",
+    "4 Operational Semantics",
+    "5 Implementation",
+    "6 Related Work",
+    "7 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:handlers",
+    "sec:examples",
+    "sec:semantics"
+  ],
+  "abstract_snippet": "--- Page 1 --- Handlers in Action Ohad Kammar University of Cambridge ohad.kammar@cl.cam.ac.uk Sam Lindley University of Strathclyde Sam.Lindley@ed.ac.uk Nicolas Oury nicolas.oury@gmail.com Abstract Plotkin and Pretnar’s handlers for algebraic effects occupy a sweet spot in the design space of abstractions for effectful computation.",
+  "what_the_paper_supports": "Handlers in Action presents an operational semantics and practical implementations of algebraic effect handlers in Haskell, OCaml, SML, and Racket. Supports the ignition claim that an effect system is implementable across languages and paradigms (GAP-018, Function OS node 5 Interpreter). It also shows that effectful programs can be written independently of their concrete interpreters, supporting modularity (node 8 ComposerRouter).",
+  "what_the_paper_does_not_support": "The paper is a position/tutorial paper and does not provide a formal verification framework (GAP-015) or equivalence checker (GAP-017). It does not address weight-space composition (GAP-016) or probabilistic semantics in detail (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (14 pages, 464059 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

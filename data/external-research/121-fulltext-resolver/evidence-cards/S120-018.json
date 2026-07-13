@@ -1,0 +1,43 @@
+{
+  "source_id": "S120-018",
+  "title": "SPoC: Search-based Pseudocode to Code",
+  "authors": "Kulal, S., et al.",
+  "year": 2019,
+  "venue": "NeurIPS 2019",
+  "doi_or_identifier": "NeurIPS-2019-7298332",
+  "source_family": 3,
+  "url": "https://proceedings.neurips.cc/paper/2019/file/7298332f04ac004a0ca44cc69ecf6f6b-Paper.pdf",
+  "access_channel": "neurips_pdf",
+  "access_url": "https://proceedings.neurips.cc/paper/2019/file/7298332f04ac004a0ca44cc69ecf6f6b-Paper.pdf",
+  "effective_url": "https://proceedings.neurips.cc/paper/2019/file/7298332f04ac004a0ca44cc69ecf6f6b-Paper.pdf",
+  "access_time_utc": "2026-07-13T16:41:50Z",
+  "version": "published/accepted manuscript",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "2350dfbd002f951893a2333bb09e1d9a7dff27c04ab198c41282d50ef408c663",
+  "local_cache_path": ".cache/fulltext/S120-018_neurips_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 412277,
+  "page_count": 12,
+  "sections": [
+    "1 Introduction",
+    "2 Task and Dataset",
+    "3 Search-based Synthesis",
+    "4 Model",
+    "5 Experiments",
+    "6 Related Work",
+    "7 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:task",
+    "sec:search",
+    "sec:model",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- SPoC: Search-based Pseudocode to Code Sumith Kulal∗, Panupong Pasupat∗, Kartik Chandra, Mina Lee, Oded Padon, Alex Aiken, Percy Liang Department of Computer Science Stanford University {sumith,ppasupat,kach,minalee,padon,aaiken,pliang}@cs.stanford.",
+  "what_the_paper_supports": "SPoC maps pseudocode to executable C++ code via search guided by compilation errors and test cases. Supports the ignition claim that natural-language/program specifications can be turned into executable code through a search/compilation process (Function OS node 3 Compiler, node 5 Interpreter, node 7 Validator). The dataset shows that many failures are compilation errors, highlighting the need for validation during compilation.",
+  "what_the_paper_does_not_support": "Assumes a one-to-one correspondence between pseudocode lines and code lines, which is a strong restriction. Does not provide a formal function specification language (GAP-015) or equivalence semantics (GAP-017). It does not address weight-space composition (GAP-016) or probabilistic effects (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (12 pages, 412277 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

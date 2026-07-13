@@ -1,0 +1,40 @@
+{
+  "source_id": "S120-010",
+  "title": "A Brief Review of Hypernetworks in Deep Learning",
+  "authors": "Cueva, C.J., Wei, X.-X.",
+  "year": 2023,
+  "venue": "arXiv preprint",
+  "doi_or_identifier": "arXiv:2306.06955",
+  "source_family": 2,
+  "url": "https://arxiv.org/html/2306.06955v3",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2306.06955.pdf",
+  "effective_url": "https://arxiv.org/pdf/2306.06955",
+  "access_time_utc": "2026-07-13T16:41:35Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "a52d92a43e547f421d820c505b9ba30bba8a9ed603faaf2a4343b9e8ebd945cf",
+  "local_cache_path": ".cache/fulltext/S120-010_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 437022,
+  "page_count": 19,
+  "sections": [
+    "1 Introduction",
+    "2 Preliminaries",
+    "3 Hypernetworks in Deep Learning",
+    "4 Applications",
+    "5 Challenges and Future Directions"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:preliminaries",
+    "sec:hypernets",
+    "sec:applications"
+  ],
+  "abstract_snippet": "--- Page 1 --- A BRIEF REVIEW OF HYPERNETWORKS IN DEEP LEARNING Vinod Kumar Chauhan1∗, Jiandong Zhou 1, Ping Lu 1, Soheila Molaei 1 and David A.",
+  "what_the_paper_supports": "Consolidates hypernetwork research and shows that hypernetworks can generate, compress, and share weights across tasks. Supports the ignition claim that weight-space generation is a reusable paradigm (Function OS node 2 Representation, node 8 ComposerRouter). Notes applications in continual learning, transfer learning, and federated learning, which relate to versioned adaptation and reuse.",
+  "what_the_paper_does_not_support": "As a review, it does not introduce new formal composition operators. It does not solve the weight-space equivalence problem (GAP-017) or provide a specification language (GAP-015). It remains within neural-network empirical successes and does not generalize to arbitrary mathematical functions.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (19 pages, 437022 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

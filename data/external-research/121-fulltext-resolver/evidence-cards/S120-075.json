@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-075",
+  "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks",
+  "authors": "Finn, C., Abbeel, P., Levine, S.",
+  "year": 2017,
+  "venue": "ICML 2017",
+  "doi_or_identifier": "PMLR-v70-finn17a",
+  "source_family": 5,
+  "url": "http://proceedings.mlr.press/v70/finn17a/finn17a.pdf",
+  "access_channel": "pmlr",
+  "access_url": "https://proceedings.mlr.press/v70/finn17a/finn17a.pdf",
+  "effective_url": "https://proceedings.mlr.press/v70/finn17a/finn17a.pdf",
+  "access_time_utc": "2026-07-13T16:49:22Z",
+  "version": "published/accepted manuscript",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "e9f197b4b3a18c7d5f693e87442ce8ec7837726b4218451eb726565799612353",
+  "local_cache_path": ".cache/fulltext/S120-075_pmlr.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 2784662,
+  "page_count": 10,
+  "sections": [
+    "1 Introduction",
+    "2 Model-Agnostic Meta-Learning",
+    "3 MAML Algorithm",
+    "4 Experiments",
+    "5 Related Work",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:maml",
+    "sec:algorithm",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks Chelsea Finn 1 Pieter Abbeel 1 2 Sergey Levine 1 Abstract We propose an algorithm for meta-learning that is model-agnostic, in the sense that it is com- patible with any model trained with gradient de- scent and applicable to a variety of different learning problems, including classiﬁcation, re- gression, and reinforc...",
+  "what_the_paper_supports": "MAML trains model parameters so that a few gradient steps on a new task produce good generalization. Supports the ignition claim that a function can be prepared to be rapidly specialized (Function OS node 2 Representation, node 3 Compiler). It is a foundational example of learning-to-learn in weight space, relevant to GAP-016 (weight-space composition) and GAP-019 (versioned/provenance-aware function artifacts).",
+  "what_the_paper_does_not_support": "MAML is a training algorithm, not a function specification language (GAP-015). It does not address equivalence between task-specialized models (GAP-017) or effects (GAP-018). It does not define a probabilistic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (10 pages, 2784662 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

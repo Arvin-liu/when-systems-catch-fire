@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-064",
+  "title": "Pyro: Deep Universal Probabilistic Programming",
+  "authors": "Bingham, E., et al.",
+  "year": 2019,
+  "venue": "JMLR 20",
+  "doi_or_identifier": "JMLR:v20:18:403",
+  "source_family": 9,
+  "url": "http://jmlr.org/papers/v20/18-403.html",
+  "access_channel": "jmlr_pdf",
+  "access_url": "http://jmlr.org/papers/volume20/18-403/18-403.pdf",
+  "effective_url": "http://jmlr.org/papers/volume20/18-403/18-403.pdf",
+  "access_time_utc": "2026-07-13T16:44:22Z",
+  "version": "published/accepted manuscript",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "a1ab7757547176bd67963c80c532c082a96947de378c640fd739584321f819c6",
+  "local_cache_path": ".cache/fulltext/S120-064_jmlr.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 199595,
+  "page_count": 6,
+  "sections": [
+    "1 Introduction",
+    "2 Pyro Design",
+    "3 Stochastic Variational Inference",
+    "4 Poutine Effects",
+    "5 Examples",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:design",
+    "sec:svi",
+    "sec:poutine"
+  ],
+  "abstract_snippet": "Pyro: Deep Universal Probabilistic Programming Home Page Papers Submissions News Scope --> Editorial Board Special Issues Open Source Software Proceedings (PMLR) Data (DMLR) Transactions (TMLR) Search Statistics Login Frequently Asked Questions Contact Us Pyro: Deep Universal Probabilistic Programming Eli Bingham, Jonathan P.",
+  "what_the_paper_supports": "Pyro is a universal probabilistic programming language built on PyTorch, using composable effect handlers (Poutine) for inference. Supports the ignition claim that probabilistic functions can be implemented with a library of effect primitives (GAP-020, Function OS node 5 Interpreter, node 8 ComposerRouter). It also demonstrates versioned, reusable probabilistic model components.",
+  "what_the_paper_does_not_support": "Pyro is a general PPL, not a function specification system for ignition (GAP-015). It does not provide a weight-space composition algebra (GAP-016) or equivalence checker (GAP-017). Its effect system is for inference, not general side effects (GAP-018).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full HTML obtained (6 pages, 199595 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}
