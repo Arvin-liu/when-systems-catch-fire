@@ -1,0 +1,249 @@
+{
+  "task": "IGNITION-20260709-121CX",
+  "audit": "canonical_resume_checkpoint",
+  "audited_at_utc": "2026-07-14T04:00:49Z",
+  "audited_exact_heads": {
+    "121cn_point_repo": "ba0d46d09d77f2fae85970f19f1b635d9f7eed5c",
+    "121cn_1111": "a02a5df9e41fef021c331cb49da699f8669e1091",
+    "121cx_initial_point_push": "b62aa40d20c79d49e6062a8a8cb8ed084237172a",
+    "121cx_initial_1111_push": "d67af6508641c83c46a9589d14c10aeb84a0be3c"
+  },
+  "remote_pr_facts": {
+    "point_pr_32": {
+      "state": "OPEN",
+      "draft": true,
+      "merged": false,
+      "head": "ba0d46d09d77f2fae85970f19f1b635d9f7eed5c"
+    },
+    "1111_pr_36": {
+      "state": "OPEN",
+      "draft": true,
+      "merged": false,
+      "head": "a02a5df9e41fef021c331cb49da699f8669e1091"
+    },
+    "point_pr_33": {
+      "state": "OPEN",
+      "draft": true,
+      "merged": false,
+      "base": "records/ignition-121cn-night-long-haul-20260714"
+    },
+    "1111_pr_37": {
+      "state": "OPEN",
+      "draft": true,
+      "merged": false,
+      "base": "main"
+    }
+  },
+  "inputs_checked": [
+    "121cn-run-state.json",
+    "121cn-step-ledger.jsonl",
+    "121cn-microstep-manifest.jsonl",
+    "evidence-cards-high/*.json",
+    "121cn-high-semantic-evidence-cards.jsonl",
+    "121c01-max-semantic-evidence-cards.jsonl",
+    "point-repository reachable commit history through ba0d46d09d77f2fae85970f19f1b635d9f7eed5c",
+    "1111 PR #36 progress and result paths through a02a5df9e41fef021c331cb49da699f8669e1091"
+  ],
+  "canonical_conclusion": {
+    "canonical_last_completed_step": 30,
+    "canonical_next_step": 31,
+    "next_source_id": "S120-019",
+    "basis": [
+      "Steps 0-30 each have exactly one COMPLETE ledger record; Step 1 also has one earlier IN_PROGRESS event but not a second COMPLETE event.",
+      "The 12 Phase D COMPLETE records for Steps 19-30 have 12 unique individual cards and 12 matching aggregate JSONL entries.",
+      "All 12 individual cards are byte-semantically identical to the normalized aggregate objects, contain non-empty anchors and source-specific reasoning, and are reachable from the exact remote head.",
+      "The 121CN run-state reports last_completed_step=30, next_step=31, and high_review_completed_121cn=12.",
+      "The 1111 PR #36 progress file reports 12/62 reviewed and next Step 31; no 121CN result file exists at its exact head."
+    ]
+  },
+  "step_31_through_35_audit": [
+    {
+      "step": 31,
+      "source_id": "S120-019",
+      "manifest_status": "NOT_REVIEWED",
+      "complete_ledger_records": 0,
+      "individual_card_present": false,
+      "aggregate_card_present": false,
+      "reachable_completion_commit_present": false
+    },
+    {
+      "step": 32,
+      "source_id": "S120-020",
+      "manifest_status": "NOT_REVIEWED",
+      "complete_ledger_records": 0,
+      "individual_card_present": false,
+      "aggregate_card_present": false,
+      "reachable_completion_commit_present": false
+    },
+    {
+      "step": 33,
+      "source_id": "S120-022",
+      "manifest_status": "NOT_REVIEWED",
+      "complete_ledger_records": 0,
+      "individual_card_present": false,
+      "aggregate_card_present": false,
+      "reachable_completion_commit_present": false
+    },
+    {
+      "step": 34,
+      "source_id": "S120-025",
+      "manifest_status": "NOT_REVIEWED",
+      "complete_ledger_records": 0,
+      "individual_card_present": false,
+      "aggregate_card_present": false,
+      "reachable_completion_commit_present": false
+    },
+    {
+      "step": 35,
+      "source_id": "S120-026",
+      "manifest_status": "NOT_REVIEWED",
+      "complete_ledger_records": 0,
+      "individual_card_present": false,
+      "aggregate_card_present": false,
+      "reachable_completion_commit_present": false
+    }
+  ],
+  "user_report_difference": {
+    "reported_claim": "Step 35 complete, next Step 36, 17 new 121CN reviews",
+    "remote_canonical_fact": "Step 30 complete, next Step 31, 12 new 121CN reviews",
+    "difference": {
+      "steps": 5,
+      "review_cards": 5
+    },
+    "source_assessment": "No Step 35 or next Step 36 claim is present in either audited exact remote head. The discrepancy can only be classified as an off-repository or unpushed user-facing report; its exact origin is not recoverable from remote evidence.",
+    "canonical_treatment": "Do not credit Steps 31-35; resume at Step 31."
+  },
+  "ledger_audit": {
+    "records": 32,
+    "unique_step_numbers": 31,
+    "min_step": 0,
+    "max_step": 30,
+    "steps_with_exactly_one_complete_record": 31,
+    "duplicate_complete_step_numbers": [],
+    "noncomplete_events": [
+      {
+        "step": 1,
+        "status": "IN_PROGRESS",
+        "interpretation": "event history preceding the unique Step 1 COMPLETE record"
+      }
+    ],
+    "missing_complete_steps_through_30": []
+  },
+  "manifest_audit": {
+    "records": 74,
+    "unique_steps": 74,
+    "unique_source_ids": 74,
+    "step_range": [
+      7,
+      80
+    ],
+    "duplicate_steps": [],
+    "duplicate_source_ids": [],
+    "action_counts": {
+      "partial_extraction_repair": 7,
+      "legal_oa_retry": 5,
+      "high_semantic_review": 62
+    },
+    "prose_plan_expected_phase_d_range": [
+      19,
+      87
+    ],
+    "prose_plan_expected_phase_d_source_count": 69,
+    "reconciliation_required": true,
+    "missing_phase_d_semantic_disposition_steps": [
+      {
+        "planned_step": 81,
+        "source_id": "S120-013",
+        "post_repair_status": "EXTRACTED_FULL"
+      },
+      {
+        "planned_step": 82,
+        "source_id": "S120-023",
+        "post_repair_status": "EXTRACTED_FULL"
+      },
+      {
+        "planned_step": 83,
+        "source_id": "S120-024",
+        "post_repair_status": "EXTRACTED_FULL"
+      },
+      {
+        "planned_step": 84,
+        "source_id": "S120-032",
+        "post_repair_status": "EXTRACTED_FULL"
+      },
+      {
+        "planned_step": 85,
+        "source_id": "S120-033",
+        "post_repair_status": "BLOCKED_INSUFFICIENT_TEXT"
+      },
+      {
+        "planned_step": 86,
+        "source_id": "S120-056",
+        "post_repair_status": "EXTRACTED_FULL"
+      },
+      {
+        "planned_step": 87,
+        "source_id": "S120-080",
+        "post_repair_status": "BLOCKED_INSUFFICIENT_TEXT"
+      }
+    ]
+  },
+  "review_card_audit": {
+    "121c01_unique_cards": 10,
+    "121cn_unique_cards": 12,
+    "cross_set_duplicate_source_ids": [],
+    "prior_non_codex_unique_cards_requiring_acceptance": 22,
+    "canonical_support_distribution": {
+      "CONFIRMED": 6,
+      "PARTIAL": 16,
+      "NOT_SUPPORTED": 0,
+      "UNRESOLVED": 0
+    },
+    "121cn_individual_vs_aggregate": "EXACT_NORMALIZED_MATCH",
+    "121cn_empty_anchor_cards": [],
+    "121cn_empty_source_specific_reasoning_cards": [],
+    "121cn_prose_contract_warning": {
+      "affected_cards": 12,
+      "missing_fields_on_each": [
+        "specification_language",
+        "uncertainty_model",
+        "lifecycle_and_provenance"
+      ],
+      "checkpoint_treatment": "WARN_AND_CORRECT_DURING_CODEX_ACCEPTANCE",
+      "reason": "The cards are structurally reproducible and anchor-bearing, and the explicit 121CX fallback requires Step 31 when Steps 31-35 do not exist. The missing prose-contract fields must not be silently backfilled or attributed to the prior model."
+    }
+  },
+  "source_count_truth": {
+    "total_unique_sources": 84,
+    "prior_reviewed_unique_sources": 22,
+    "remaining_reviewable_unique_sources": 55,
+    "reviewable_unique_sources_total": 77,
+    "blocked_or_excluded_unique_sources": 7,
+    "blocked_or_excluded_source_ids": [
+      "S120-006",
+      "S120-016",
+      "S120-033",
+      "S120-051",
+      "S120-052",
+      "S120-057",
+      "S120-080"
+    ]
+  },
+  "validation_observations": {
+    "json_and_jsonl_parse": "PASS",
+    "121c01_validator": "PASS_187_FAIL_0",
+    "121cn_dedicated_validator_present": false,
+    "top_level_121_validator": "FAIL_BASELINE_CACHE_NOT_VERSIONED_AND_FUNCTION_OS_ARTIFACT_MISSING",
+    "top_level_validator_interpretation": "The isolated clone intentionally lacks ignored PDF/cache files, so this is not evidence of a new 121CX content regression. Fresh source retrieval and the 121CX validator remain required before semantic review completion."
+  },
+  "missing_or_duplicate_summary": {
+    "missing_step_31_through_35_complete_records": 5,
+    "missing_step_31_through_35_cards": 5,
+    "missing_phase_d_manifest_dispositions": 7,
+    "duplicate_complete_ledger_steps": 0,
+    "duplicate_manifest_source_ids": 0,
+    "duplicate_review_source_ids": 0,
+    "run_state_count_mismatch": "121CN reports sources_clean_for_review=62, while five repaired sources also became reviewable; canonical reviewable remaining set is therefore 67 before subtracting the 12 completed 121CN reviews."
+  },
+  "decision": "CANONICAL_RESUME_AT_STEP_31_AFTER_CX_002_RECONCILIATION"
+}
