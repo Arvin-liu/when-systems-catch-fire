@@ -149,5 +149,6 @@
   "reviewed_by_model": "qclaw/pool-deepseek-v4-pro",
   "reviewed_at": "2026-07-14T15:21:32Z",
   "review_batch": "ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714",
-  "step_number": 99
+  "step_number": 100,
+  "_acceptance_layer": "121q1/acceptance/S120-014.json — overlay, no historical card existed at baseline"
 }

@@ -1,0 +1,157 @@
+{
+  "source_id": "S120-011",
+  "title": "Personalized Federated Learning using Hypernetworks",
+  "authors": "Aviv Shamsian, Aviv Navon, Ethan Fetaya, Gal Chechik",
+  "year": 2021,
+  "venue": "ICML 2021",
+  "doi_or_identifier": "arXiv:2103.04628",
+  "source_family": 2,
+  "url": "https://ar5iv.labs.arxiv.org/html/2103.04628",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2103.04628.pdf",
+  "effective_url": "https://arxiv.org/pdf/2103.04628",
+  "access_time_utc": "2026-07-13T16:41:36Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "85f5c92f7fef22c46766e846a03f0a03ca6188f93f2579c7eba3109e62517eca",
+  "local_cache_path": ".cache/fulltext/S120-011_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 2003961,
+  "page_count": 14,
+  "sections": [
+    "1 Introduction",
+    "2 Method",
+    "3 Theoretical Analysis",
+    "4 Experiments",
+    "5 Related Work",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:method",
+    "sec:theory",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Personalized Federated Learning using Hypernetworks Aviv Shamsian∗ 1 Aviv Navon∗ 1 Ethan Fetaya 1 Gal Chechik 1 2 Abstract Personalized federated learning is tasked with training machine learning models for multiple clients, each with its own data distribution.",
+  "what_the_paper_supports": "pFedHN uses a central hypernetwork to generate personalized models for federated clients, demonstrating a single weight-generation function that can be parameterized by client context. Supports the ignition claim that a function-as-weights can be contextually generated and deployed to multiple consumers (Function OS node 3 Compiler, node 8 ComposerRouter, node 9 VersionedRegistry). Also shows that communication cost can be decoupled from model size by transmitting only hypernetwork updates.",
+  "what_the_paper_does_not_support": "Focuses on federated learning and does not provide a general function specification language (GAP-015). It does not address equivalence between personalized models (GAP-017) or effect tracking (GAP-018). The composition is implicit in the hypernetwork, not an explicit algebraic rule (GAP-016).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (14 pages, 2003961 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims.",
+  "reviewed_by_model": "qclaw/pool-deepseek-v4-pro",
+  "reviewed_at": "2026-07-14T14:44:52Z",
+  "review_batch": "ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714",
+  "step_number": 98,
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "85f5c92f7fef22c46766e846a03f0a03ca6188f93f2579c7eba3109e62517eca",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "Old 121cn high-review card had WRONG arXiv ID (2203.04310 vs correct 2103.04628)",
+      "arXiv 2203.04310 belongs to a completely different paper (traffic light control by Zhu et al.)",
+      "Old card never downloaded actual PDF (sha256: unknown, file_size_bytes: 0)",
+      "Old card had wrong year (2022 vs 2021), wrong venue (ICML 2022 vs ICML 2021), wrong authors",
+      "Substantive claims in old card describe pFedHN correctly but metadata attribution is broken"
+    ],
+    "strengths_noted": [
+      "Proposition 1: linear pFedHN = PCA on ERM solutions — dimensionality reduction interpretation",
+      "Theorem 1 provides formal generalization bound O(k/ε² + N/(n·ε²))",
+      "Table 2: same HN generates different-sized models for heterogeneous clients — true heterogeneous deployment",
+      "Figure 2: novel client generalization via embedding-only optimization — few-shot transfer",
+      "Communication cost decoupled from model size via chain rule (Sec 3.2)"
+    ]
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No formal specification language for functions"
+    },
+    "GAP-016": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Hypernetwork as compiler generating weights from embeddings; no explicit algebraic composition between client models"
+    },
+    "GAP-017": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No notion of equivalence between personalized models"
+    },
+    "GAP-018": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Local SGD update steps modify model state; no formal effect tracking or state management"
+    },
+    "GAP-019": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Central hypernetwork could be viewed as a registry of per-client artifacts; not versioned"
+    },
+    "GAP-020": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No formal verification or validation regime"
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "NO_EVIDENCE",
+      "reason": "No formal specification of what each client model computes"
+    },
+    "N2_Representation": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Client embedding vi as input to hypernetwork produces weight representation; the embedding space (t-SNE Fig 4) shows semantic structure"
+    },
+    "N3_Compiler": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "STRONGEST MATCH. Algorithm 1: θ_i = h(vi; φ) → local train → update φ via chain rule. This is a compile-train-update loop. The hypernetwork IS a compiler mapping specification (embedding) to executable weights."
+    },
+    "N4_Artifact": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Generated weights can be seen as per-client artifacts; no versioning or artifact lifecycle management"
+    },
+    "N5_Interpreter": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Client-side model f(·; θ_i) executes the generated weights on local data"
+    },
+    "N6_ExecutionTrace": {
+      "status": "NO_EVIDENCE",
+      "reason": "No logging or tracing of model execution"
+    },
+    "N7_Validator": {
+      "status": "NO_EVIDENCE",
+      "reason": "No validation mechanism for generated model correctness"
+    },
+    "N8_ComposerRouter": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Client embedding-based routing is implicit; no composition of multiple clients' functions"
+    },
+    "N9_VersionedRegistry": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Hypernetwork stores shared knowledge; embedding vectors provide per-client specialization. But no explicit versioning"
+    }
+  },
+  "paper_core_claims": [
+    "Central hypernetwork h(·; φ) generates personalized model weights θ_i = h(v_i; φ) for each client",
+    "Client embedding v_i is a learnable descriptor; provides per-client specialization within shared HN",
+    "Communication cost is decoupled from HN size — only target network gradients are transmitted (chain rule)",
+    "Multiple local SGD steps per round (K=50) improve convergence without extra communication",
+    "Same hypernetwork can produce networks of different sizes (heterogeneous compute budgets)",
+    "Novel clients only need embedding optimization (not full retraining) — few-shot generalization",
+    "PCA equivalence for linear case (Proposition 1); formal generalization bound (Theorem 1)"
+  ],
+  "limitations_and_failure_boundaries": [
+    "Hypernetwork capacity limits diversity of personalized models",
+    "All clients must share same hypernetwork — single point of failure",
+    "No formal specification language for what each model computes",
+    "No equivalence checking between different clients' models",
+    "No effect tracking or formal state management",
+    "Scalability: HN parameter count grows with target network size",
+    "Practical applicability limited to model-homogeneous FL settings"
+  ],
+  "detailed_sections": {
+    "1 Introduction": "Motivates PFL, describes hypernetwork approach",
+    "2 Related Work": "FL, PFL, Hypernetworks literature review",
+    "3 Method": "Problem formulation, pFedHN algorithm, personal classifier variant",
+    "4 Analysis": "Linear model analysis (PCA), generalization bounds (Theorem 1)",
+    "5 Experiments": "Heterogeneous data (Table 1), computational budget (Table 2), novel clients (Fig 2), personalization study (Fig 3), embedding visualization (Fig 4)",
+    "6 Conclusion": "Summary, future work directions"
+  },
+  "_acceptance_layer": "121q1/acceptance/S120-011.json — overlay, do not modify historical evidence-cards/S120-011.json",
+  "_prior_card_preserved_at": "evidence-cards/S120-011.json (baseline b57f9f82)"
+}
