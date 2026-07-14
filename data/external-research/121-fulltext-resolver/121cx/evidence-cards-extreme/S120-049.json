@@ -1,0 +1,134 @@
+{
+  "source_id": "S120-049",
+  "canonical_title": "Principles and Applications of Refinement Types",
+  "authors": ["Andrew D. Gordon", "Cédric Fournet"],
+  "year": 2010,
+  "version": "MSR-TR-2009-147, December 2010 corrected version; Marktoberdorf Summer School proceedings version",
+  "doi_or_identifier": "MSR-TR-2009-147",
+  "identifier": "MSR-TR-2009-147",
+  "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/MSR-TR-2009-147-SP1.pdf",
+  "source_family": 7,
+  "source_family_name": "refinement types and verified functional programming",
+  "license": "Microsoft Research publicly distributed technical report; no separate open-content license was found in the reviewed PDF",
+  "sha256": "7b6d7ba9b70c156df6c0a21ff0ffa1caa10b75e9bda6cbd09a15c3045cf5ff30",
+  "file_size_bytes": 362618,
+  "page_count": 35,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "publication_identity": "Tutorial article in Logics and Languages for Reliability and Security, NATO Science for Peace and Security Series D, volume 25, IOS Press 2010, pp. 73-104",
+    "identity_cross_checks": ["Microsoft Research publication record", "PDF title and publication-history pages"],
+    "pdf_visually_checked_pages": [1, 20, 28, 31, 33],
+    "artifact_review": {
+      "implementation_named": "F7 1.0 for F# and Objective Caml, using Z3",
+      "paper_era_commit_or_release_pinned": false,
+      "review_status": "TUTORIAL_DESCRIPTION_AND_APPLICATION_SUMMARIES_REVIEWED_NO_IMMUTABLE_IMPLEMENTATION_SNAPSHOT",
+      "boundary": "The report describes F7 and several applications but supplies neither a repository revision nor an executable study bundle; those cited projects were not silently treated as independently reproduced by this review."
+    }
+  },
+  "sections_reviewed": [
+    "FPC syntax, deterministic reduction, typing, preservation and progress",
+    "Concurrent FPC message passing, heating, nondeterminism, deadlock and preservation",
+    "RCF assumptions, assertions, structures, semantic safety and refinement types",
+    "dependent subtyping, formula derivation, fork typing and the RCF safety theorem",
+    "request-response typing examples and refinement erasure",
+    "F7 implementation architecture and Z3 obligation discharge",
+    "cryptographic protocols, session synthesis, secure web compilation and auditability applications",
+    "refined state monad, access control, history and limitations",
+    "historical comparison, exercises, conclusions and complete references"
+  ],
+  "page_or_section_anchors": [
+    {"anchors": "§§2-2.2, pp. 4-9, Lemmas 1-2, Propositions 1-2, Theorem 1", "checked_for": "FPC carrier, deterministic semantics, preservation, progress and divergence boundary"},
+    {"anchors": "§§3-3.2, pp. 12-17, Lemma 3, Proposition 3", "checked_for": "concurrency, channels, heating, state encodings, preservation and explicit deadlock/nondeterminism limits"},
+    {"anchors": "§§4-4.2, pp. 19-26, Lemma 4, Theorem 2", "checked_for": "logical log, semantic safety, dependent refinements, subtyping and static assertion guarantee"},
+    {"anchors": "§4.3, pp. 26-27", "checked_for": "request-response contracts and typed message composition"},
+    {"anchors": "§§5.1-5.6, pp. 28-32", "checked_for": "F7 implementation and bounded security, synthesis, audit and state-monad application claims"},
+    {"anchors": "§§6-7, pp. 32-35", "checked_for": "historical alternatives, annotation/inference tradeoffs and conclusion scope"}
+  ],
+  "paper_core_claims": [
+    {"claim": "A closed well-typed FPC expression either diverges or deterministically yields a unique value.", "anchors": "Theorem 1, p. 9"},
+    {"claim": "Concurrent FPC preserves types but deliberately does not guarantee determinism, deadlock freedom or progress.", "anchors": "§3.2, Proposition 3 and Exercises 19-22"},
+    {"claim": "RCF uses refinements, assumptions and assertions so that a well-typed expression satisfies the paper's semantic assertion-safety property.", "anchors": "§§4.1-4.2 and Theorem 2"},
+    {"claim": "F7 implements a practical approximation of RCF for F#/Objective Caml, erases refinements for ordinary runtime execution, and sends logical obligations to Z3.", "anchors": "§5.1"},
+    {"claim": "Refinement contracts can encode authenticity, session causality, audit-evidence correctness/completeness and stateful access-control obligations.", "anchors": "§§5.2-5.6"}
+  ],
+  "function_concept_used_by_paper": "A function is a typed lambda-calculus value whose dependent refinement type carries logical preconditions and postconditions. Type checking composes these contracts with assumptions, channel refinements and solver deductions, producing an ordinary executable after refinements are erased.",
+  "representation_or_carrier": "The formal carriers are FPC/Concurrent-FPC/RCF expressions, values, dependent refinement types, logical formulas, typing environments, assumed-formula logs, typed channels, structures and proof obligations. The paper also derives channel pairs, mutable references and a refined state monad as encodings. These are symbolic program carriers, not learned weights or probabilistic functions.",
+  "specification_language": "RCF admits value-dependent refinements {x:T|C}, dependent functions and pairs, assume/assert formulas and typed channels over a parameter logic with basic closure properties. Preconditions and postconditions can mention values and protocol predicates. Expressiveness and decidability depend on the chosen logic, prover, axioms and subtyping discipline; the source does not define resource, privacy, deployment, ownership or lifecycle contracts.",
+  "compiler_or_generator": "The formal checker extracts formulas from typing environments, reduces refinement subtyping to logical deduction and enforces assertion obligations. F7 adds partial inference, polymorphism, controlled subtyping and algebraic datatypes, sends nontrivial first-order obligations to Z3, and emits plain F# interfaces by erasing refinements. A separate session compiler is described as generating protocol code plus detailed refinements for F7 verification, but its implementation is not packaged here.",
+  "interpreter_or_runtime": "FPC has deterministic call-by-value reduction; Concurrent FPC/RCF adds asynchronous messages, fresh names, fork, nondeterministic scheduling and possible deadlock. Assumptions update a logical log for the safety model and assertions reduce without runtime enforcement. F7 refinements are erased, so ordinary F#/Objective Caml runtime behavior and cryptographic libraries remain outside the static checker unless modeled by trusted contracts.",
+  "composition_rule": "Dependent application substitutes argument values into result refinements; channel types transfer asserted facts across message boundaries; fork typing exchanges active assumptions; and the refined state monad composes pre/post-state predicates. This is a formal contract-flow discipline. It neither supplies arbitrary effect isolation nor proves that separately written specifications are mutually complete or semantically compatible.",
+  "state_or_effect_model": "Concurrent FPC directly models threads, channels, message stores, name generation, nondeterminism and deadlock, and can encode mutable references. RCF adds a global assumption log and assertion observations; the refined state monad describes permission-state transitions. Exceptions, timing, resource consumption, probabilistic effects, Byzantine implementation faults, lifecycle changes and real network cryptography are not fully operationalized by the core calculus.",
+  "uncertainty_model": "Judgments and logical deductions are categorical within the selected formal model; there is no calibrated probability or confidence. Conservative rejection can occur for safe but untypable programs, and proof success is conditional on trusted assumptions, axioms, library contracts and prover behavior. Application summaries report no repeated trials, confidence intervals or independent replication, so they are qualitative evidence rather than uncertainty estimates.",
+  "validation_regime": {
+    "formal": "syntax, operational semantics, typing rules, preservation/progress results, semantic safety definition and a stated RCF Safety Theorem",
+    "proof_boundary": "many proofs are sketches or exercises and the complete development is referred to technical report [4], so this tutorial is not a self-contained machine-checked proof artifact",
+    "implementation": "F7 1.0 architecture, refinement erasure and Z3 checking are described",
+    "applications_summarized": ["CardSpace protocol", "zero-knowledge protocol work", "multiparty-session compiler", "secure Links compilation", "auditability", "state-based access control"],
+    "boundary": "The applications are literature summaries with selected scale examples, not a common empirical study or independently rerun artifact in this source."
+  },
+  "equivalence_notions": [
+    {"notion": "type preservation", "support": "REDUCTION_PRESERVES_STATIC_TYPE", "boundary": "For concurrency this does not imply progress, determinism or deadlock freedom."},
+    {"notion": "semantic assertion safety", "support": "EVERY_REACHABLE_ASSERTION_FOLLOWS_FROM_THE_CURRENT_ASSUMPTION_LOG", "boundary": "This is relative to the logic and admitted assumptions and does not assert liveness or full functional correctness."},
+    {"notion": "contract subtyping", "support": "LOGICAL_IMPLICATION_WITH_CONTRAVARIANT_INPUTS_AND_COVARIANT_OUTPUTS", "boundary": "Decidability is conditional on an oracle for formula derivability."},
+    {"notion": "refinement erasure", "support": "VERIFIED_INTERFACE_ERASES_TO_ORDINARY_RUNTIME_INTERFACE", "boundary": "Erasure preserves base typing, not runtime monitoring or provenance."},
+    {"notion": "audit evidence validity", "support": "SEPARATE_CORRECTNESS_AND_COMPLETENESS_POSTCONDITIONS", "boundary": "Both depend on the judge and evidence contracts being faithful to the intended property."}
+  ],
+  "lifecycle_and_provenance": "The PDF records report identity, a December 2010 correction, publication history, named F7 version and citations. It does not pin F7, Z3, F#/OCaml, library, protocol, compiler or case-study revisions; publish hashes or verification receipts; define compatibility migrations; or model approval, monitoring, revalidation, rollback, supersession and retirement. Refinement results can become stale when code, interfaces, axioms, solvers or trusted cryptographic libraries change.",
+  "limitations_and_failure_boundaries": [
+    "The exact atlas metadata was wrong: the source is by Gordon and Fournet, not Vazou, and is a 2009 technical report with a December 2010 corrected version, not a 2016 work.",
+    "FPC type safety permits divergence, and Concurrent FPC additionally permits nondeterminism and deadlock; preservation is not total correctness or liveness.",
+    "RCF assumes formulas may be introduced with assume; the authors explicitly say program assumptions should be carefully reviewed.",
+    "Assertions have no runtime checking effect in the calculus, and F7 erases refinements before normal execution.",
+    "The safety theorem covers assertion entailment in the modeled calculus, not arbitrary exceptions, resource use, timing, privacy, availability or real cryptographic implementation defects.",
+    "Logical strength and decidability depend on the chosen logic, axioms and prover; conservative typing rejects some semantically safe programs.",
+    "The theorem presentation is tutorial-level: several proofs are sketched or exercises and complete proofs are delegated to a cited report.",
+    "The security applications rely on trusted typed libraries and contracts and are summarized from related projects rather than independently evaluated here.",
+    "F7 and all application artifacts lack immutable revisions and a durable verification-result manifest in this PDF.",
+    "Categorical SAFE/typable judgments are not empirical confidence and do not establish the completeness of the specification."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove deadlock freedom, liveness, termination or complete functional correctness for concurrent programs.",
+    "It does not make arbitrary assumptions, axioms, cryptographic libraries or specifications trustworthy.",
+    "It does not supply runtime refinement enforcement, probabilistic uncertainty or end-to-end artifact lifecycle governance.",
+    "It does not independently reproduce every cited security application or validate the complete Function OS architecture."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {"status": "CONFIRMED", "reason": "Dependent refinements, channel contracts, assumptions/assertions and state predicates form a precise bounded FunctionSpec language."},
+    "GAP-016": {"status": "CONFIRMED", "reason": "RCF/F7 compile contract and subtyping obligations into logical deduction and Z3 queries, then erase refinements to an executable interface."},
+    "GAP-017": {"status": "CONFIRMED", "reason": "Preservation, progress, assertion safety, deadlock, divergence, audit correctness and audit completeness are explicitly distinct validation notions."},
+    "GAP-018": {"status": "CONFIRMED", "reason": "Dependent application, typed channels, fork assumption flow and the refined state monad define several formal composition/effect rules."},
+    "GAP-019": {"status": "PARTIAL", "reason": "The tutorial states formal results and implementation/application evidence, while complete proofs and reproducible artifacts live elsewhere or are absent."},
+    "GAP-020": {"status": "PARTIAL", "reason": "Assumption logs and assertion obligations provide observability, but calibrated uncertainty and durable lifecycle provenance are absent."}
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {"status": "CONFIRMED", "reason": "Dependent pre/postconditions, protocol predicates and state contracts directly specify function behavior."},
+    "N2_Representation": {"status": "CONFIRMED", "reason": "Types, formulas, environments, logs, channels, structures and state predicates are explicit carriers."},
+    "N3_Compiler": {"status": "CONFIRMED", "reason": "RCF/F7 translate subtyping and assertions into solver obligations and refinement-erased interfaces."},
+    "N4_Artifact": {"status": "CONFIRMED", "reason": "Successful F7 checking yields ordinary F# interfaces and code with static contract evidence, though immutable packaging is absent."},
+    "N5_Interpreter": {"status": "CONFIRMED", "reason": "Deterministic and concurrent operational semantics plus ordinary erased runtime execution are explicitly separated."},
+    "N6_ExecutionTrace": {"status": "PARTIAL", "reason": "The semantic log and solver obligations are inspectable traces but no durable runtime or provenance receipt format is defined."},
+    "N7_Validator": {"status": "CONFIRMED", "reason": "Logical derivation, subtyping, stated soundness results and F7/Z3 form a strong bounded validator."},
+    "N8_ComposerRouter": {"status": "CONFIRMED", "reason": "Typed application, channel protocols, forks and state-monad sequencing provide formal composition; no adaptive router is supplied."},
+    "N9_VersionedRegistry": {"status": "PARTIAL", "reason": "Report versioning and named tools exist without immutable artifact lineage, revalidation, rollback or retirement governance."}
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_FULLTEXT_FORMAL_AND_IMPLEMENTATION_DESCRIPTIVE_CONFIRMED_CARD",
+    "corrections": [
+      "Replaced the atlas's incorrect Vazou/2016 metadata with Gordon/Fournet and the 2009 report plus December 2010 corrected-version identity.",
+      "Separated FPC progress from Concurrent FPC preservation and recorded nondeterminism/deadlock as explicit boundaries.",
+      "Distinguished semantic assertion safety, trusted assumptions, refinement erasure and application-level cryptographic contracts.",
+      "Recorded the tutorial proof boundary, lack of pinned F7/application artifacts, categorical uncertainty and lifecycle gaps."
+    ]
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "The tutorial gives direct formal and implementation-descriptive support for a dependent FunctionSpec, symbolic Representation, solver-backed Compiler, refinement-erased Artifact, explicit concurrent Interpreter semantics, Validator and contract-flow Composer. Execution receipts, probabilistic uncertainty and VersionedRegistry lifecycle remain partial.",
+  "source_specific_reasoning": "CONFIRMED is warranted for the bounded architectural pattern: the paper builds three calculi from first principles, distinguishes preservation/progress/safety, defines dependent refinements and formula flow, states the RCF safety theorem, describes the F7/Z3 checker and connects it to several security patterns. The status is not a claim of complete proof or empirical reproduction: many proofs are exercises or delegated, applications are summaries, assumptions and library contracts are trusted, concurrency can deadlock, and refinements are erased at runtime.",
+  "projection_boundary": "These are 121CX projections from the exact hash-matched 35-page corrected Microsoft Research report and primary Microsoft publication metadata. Formal statements apply within the paper's calculi; implementation and application descriptions were not independently rerun. This is not proof of the complete Function OS, real-world security, liveness, specification completeness or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T05:52:45Z"
+}
