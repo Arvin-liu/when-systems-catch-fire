@@ -1,0 +1,251 @@
+{
+  "step": 4,
+  "action": "PHASE_2_CANONICAL_CLOSEOUT",
+  "timestamp": "2026-07-14T16:58:47Z",
+  "canonical_prior22_total": 22,
+  "all_22_covered": true,
+  "sources": [
+    {
+      "source_id": "S120-001",
+      "ordinal": 1,
+      "done_by": "121CX",
+      "cx_step_range": "CX 88-89",
+      "verdict": "COMPLETE",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121cx/121cx-prior-review-acceptance.jsonl"
+    },
+    {
+      "source_id": "S120-002",
+      "ordinal": 2,
+      "done_by": "121CX",
+      "cx_step_range": "CX 90-90",
+      "verdict": "COMPLETE",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121cx/121cx-prior-review-acceptance.jsonl"
+    },
+    {
+      "source_id": "S120-003",
+      "ordinal": 3,
+      "done_by": "121CX",
+      "cx_step_range": "CX 91-91",
+      "verdict": "COMPLETE",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121cx/121cx-prior-review-acceptance.jsonl"
+    },
+    {
+      "source_id": "S120-004",
+      "ordinal": 4,
+      "done_by": "121CX",
+      "cx_step_range": "CX 92-92",
+      "verdict": "COMPLETE",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121cx/121cx-prior-review-acceptance.jsonl"
+    },
+    {
+      "source_id": "S120-005",
+      "ordinal": 5,
+      "done_by": "121CX",
+      "cx_step_range": "CX 93-93",
+      "verdict": "COMPLETE",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121cx/121cx-prior-review-acceptance.jsonl"
+    },
+    {
+      "source_id": "S120-007",
+      "ordinal": 6,
+      "done_by": "121CX",
+      "cx_step_range": "CX 94-94",
+      "verdict": "COMPLETE",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121cx/121cx-prior-review-acceptance.jsonl"
+    },
+    {
+      "source_id": "S120-008",
+      "ordinal": 7,
+      "done_by": "121CX",
+      "cx_step_range": "CX 95-95",
+      "verdict": "COMPLETE_PRIOR_CARD_REJECTED_EXACT_SOURCE_BLOCKED",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121cx/121cx-prior-review-acceptance.jsonl"
+    },
+    {
+      "source_id": "S120-009",
+      "ordinal": 8,
+      "done_by": "121CX",
+      "cx_step_range": "CX 96-96",
+      "verdict": "COMPLETE",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121cx/121cx-prior-review-acceptance.jsonl"
+    },
+    {
+      "source_id": "S120-010",
+      "ordinal": 9,
+      "done_by": "121CX",
+      "cx_step_range": "CX 97-97",
+      "verdict": "COMPLETE",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121cx/121cx-prior-review-acceptance.jsonl"
+    },
+    {
+      "source_id": "S120-011",
+      "ordinal": 10,
+      "done_by": "121Q1",
+      "cx_step": null,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121q1/acceptance/S120-011.json"
+    },
+    {
+      "source_id": "S120-012",
+      "ordinal": 11,
+      "done_by": "121Q1",
+      "cx_step": null,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121q1/acceptance/S120-012.json"
+    },
+    {
+      "source_id": "S120-014",
+      "ordinal": 12,
+      "done_by": "121Q1",
+      "cx_step": null,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "provenance": "121q1/acceptance/S120-014.json"
+    },
+    {
+      "source_id": "S120-015",
+      "ordinal": 13,
+      "done_by": "121Q1",
+      "cx_step": 101,
+      "verdict": "UNRESOLVED",
+      "claim_support": "UNRESOLVED",
+      "identity_status": "UNKNOWN",
+      "provenance": "121q1/acceptance/S120-015.json"
+    },
+    {
+      "source_id": "S120-017",
+      "ordinal": 14,
+      "done_by": "121Q2/121Q2R",
+      "cx_step": 102,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "CORRECTED",
+      "provenance": "121q2/acceptance/S120-017.json"
+    },
+    {
+      "source_id": "S120-018",
+      "ordinal": 15,
+      "done_by": "121Q2/121Q2R",
+      "cx_step": 103,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "CORRECTED",
+      "provenance": "121q2/acceptance/S120-018.json"
+    },
+    {
+      "source_id": "S120-021",
+      "ordinal": 16,
+      "done_by": "121Q2/121Q2R",
+      "cx_step": 104,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "provenance": "121q2/acceptance/S120-021.json"
+    },
+    {
+      "source_id": "S120-030",
+      "ordinal": 17,
+      "done_by": "121Q2/121Q2R",
+      "cx_step": 105,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "provenance": "121q2/acceptance/S120-030.json"
+    },
+    {
+      "source_id": "S120-035",
+      "ordinal": 18,
+      "done_by": "121Q2/121Q2R",
+      "cx_step": 106,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "provenance": "121q2/acceptance/S120-035.json"
+    },
+    {
+      "source_id": "S120-039",
+      "ordinal": 19,
+      "done_by": "121Q2/121Q2R",
+      "cx_step": 107,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "provenance": "121q2/acceptance/S120-039.json"
+    },
+    {
+      "source_id": "S120-045",
+      "ordinal": 20,
+      "done_by": "121Q2/121Q2R",
+      "cx_step": 108,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "provenance": "121q2/acceptance/S120-045.json"
+    },
+    {
+      "source_id": "S120-047",
+      "ordinal": 21,
+      "done_by": "121Q2/121Q2R",
+      "cx_step": 109,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "provenance": "121q2/acceptance/S120-047.json"
+    },
+    {
+      "source_id": "S120-053",
+      "ordinal": 22,
+      "done_by": "121Q2/121Q2R",
+      "cx_step": 110,
+      "verdict": "PARTIAL",
+      "claim_support": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "provenance": "121q2/acceptance/S120-053.json"
+    }
+  ],
+  "summary": {
+    "total": 22,
+    "all_covered": true,
+    "verdict_counts": {
+      "PARTIAL": 12,
+      "CONFIRMED": 9,
+      "UNRESOLVED": 2,
+      "UNKNOWN": 0
+    },
+    "identity_counts": {
+      "VERIFIED": 7,
+      "CORRECTED": 2,
+      "BLOCKED": 0,
+      "UNKNOWN": 13
+    },
+    "by_executor": {
+      "121CX": 9,
+      "121Q1": 4,
+      "121Q2/121Q2R": 9
+    }
+  },
+  "phase_2_status": "COMPLETE"
+}

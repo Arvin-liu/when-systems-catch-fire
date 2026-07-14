@@ -2,10 +2,10 @@
   "task": "121Q2R",
   "instruction_commit": "c7ec5acc49d74ceefa6b52d80f4940c6e1e9e07b",
   "baseline_head": "fae8241cfc4035b411bc71305a10650edea3181c",
-  "current_step": 3,
+  "current_step": 4,
   "current_step_status": "COMPLETE",
-  "next_step": 4,
-  "next_step_description": "Phase 2 canonical closeout: 22/22 verification",
+  "next_step": 5,
+  "next_step_description": "prior22 identity chain audit",
   "draft_pr": 35,
   "phase_2_acceptance": {
     "canonical_prior22_total": 22,
@@ -18,7 +18,28 @@
       "S120-033",
       "S120-036"
     ],
-    "phase_2_complete": true
+    "phase_2_complete": true,
+    "closeout": {
+      "total": 22,
+      "all_covered": true,
+      "verdict_counts": {
+        "PARTIAL": 12,
+        "CONFIRMED": 9,
+        "UNRESOLVED": 2,
+        "UNKNOWN": 0
+      },
+      "identity_counts": {
+        "VERIFIED": 7,
+        "CORRECTED": 2,
+        "BLOCKED": 0,
+        "UNKNOWN": 13
+      },
+      "by_executor": {
+        "121CX": 9,
+        "121Q1": 4,
+        "121Q2/121Q2R": 9
+      }
+    }
   },
-  "last_updated": "2026-07-14T16:58:13Z"
+  "last_updated": "2026-07-14T16:58:47Z"
 }
