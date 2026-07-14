@@ -1,0 +1,54 @@
+{
+  "agent": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "batch": "ignition-121q2-night-acceptance-family-synthesis-20260714",
+  "cx_phase": "Phase 2: remaining 9 non-Codex evidence card cross-model acceptance → Phase 3: source family synthesis",
+  "base_pr": 34,
+  "base_head": "5229e224eb500daaf4411e072c15f973e502117a",
+  "branch": "records/ignition-121q2-night-acceptance-family-synthesis-20260714",
+  "121q1_state": {
+    "last_completed_cx_step": 101,
+    "next_cx_step": 102,
+    "next_source_id": "S120-017",
+    "acceptance_count": 4
+  },
+  "current_step": 0,
+  "total_steps": 24,
+  "phase_2_acceptance": {
+    "total_prior": 22,
+    "completed_prior": 4,
+    "remaining": 9,
+    "blocked": 1,
+    "scope": [
+      "S120-017",
+      "S120-018",
+      "S120-021",
+      "S120-030",
+      "S120-035",
+      "S120-039",
+      "S120-045",
+      "S120-047",
+      "S120-053"
+    ]
+  },
+  "family_synthesis": {
+    "scope": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9",
+      "F10"
+    ],
+    "completed": 0
+  },
+  "integrity_flags": [
+    "SYSTEMATIC_SOURCE_IDENTITY_INTEGRITY_RISK"
+  ],
+  "last_updated": "2026-07-14T16:26:47Z",
+  "status": "IN_PROGRESS"
+}
