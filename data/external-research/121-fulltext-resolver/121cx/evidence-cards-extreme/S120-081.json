@@ -1,0 +1,295 @@
+{
+  "source_id": "S120-081",
+  "canonical_title": "Rapid Learning or Feature Reuse? Towards Understanding the Effectiveness of MAML",
+  "authors": [
+    "Aniruddh Raghu",
+    "Maithra Raghu",
+    "Samy Bengio",
+    "Oriol Vinyals"
+  ],
+  "year": 2020,
+  "source_family": 5,
+  "source_family_name": "LoRA, adapters and meta-learning",
+  "identifier": "ICLR 2020; arXiv:1909.09157v2",
+  "doi_or_identifier": "arXiv:1909.09157v2; OpenReview rkgMkCEtPB",
+  "url": "https://arxiv.org/pdf/1909.09157",
+  "version": "arXiv v2, revised 2020-02-12; published as an ICLR 2020 conference paper",
+  "license": "arXiv non-exclusive distribution license; the paper-linked baseline code repositories are MIT licensed",
+  "file_size_bytes": 889223,
+  "page_count": 21,
+  "sha256": "4312ee0c3dc360f4eb862aeb9278a4e413ca1434b89a927c6160a044bb94532c",
+  "reviewed_at": "2026-07-14T10:21:08Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "claim_support_status": "PARTIAL",
+  "retrieval_and_integrity": {
+    "registered_pdf": {
+      "url": "https://arxiv.org/pdf/1909.09157",
+      "sha256": "4312ee0c3dc360f4eb862aeb9278a4e413ca1434b89a927c6160a044bb94532c",
+      "file_size_bytes": 889223,
+      "page_count": 21,
+      "registry_hash_size_page_match": true
+    },
+    "official_metadata": {
+      "arxiv_version": "v2",
+      "arxiv_last_revised": "2020-02-12",
+      "arxiv_comments": "ICLR 2020",
+      "openreview_forum": "https://openreview.net/forum?id=rkgMkCEtPB",
+      "openreview_classification": "ICLR 2020 Conference Blind Submission / published conference paper"
+    },
+    "visual_review": "All 21 pages were rendered at 144 DPI and visually inspected. Equations, Figures 1-11, Tables 1-8, references and appendices A-D were legible; no blank, clipped, substituted or malformed page was found.",
+    "text_review": "The complete 10,784-word extraction and complete v2 TeX source were reviewed, including all experimental protocols, second-order ANIL derivation, representation-similarity appendices, timing table and stated future-work boundary.",
+    "arxiv_source": {
+      "url": "https://arxiv.org/src/1909.09157v2",
+      "sha256": "9ef2b6a7e18c707a2225c1862b54c871c691dced1af57aa8020c3adb0745d9b5",
+      "file_count": 41,
+      "contents": "TeX, bibliography and figure assets; no training code, checkpoints, raw runs or result-generation scripts"
+    },
+    "paper_linked_supervised_baseline": {
+      "url": "https://github.com/cbfinn/maml",
+      "audited_current_head": "a7f45f1bcd7457fe97b227a21e89b8a82cc5fa49",
+      "audited_commit_count": 25,
+      "tracked_file_count": 13,
+      "license": "MIT",
+      "scope_boundary": "This is the original MAML baseline. Its current maml.py updates every entry in fast_weights during the inner loop and contains no ANIL, NIL or paper-title implementation marker. It is not a released implementation of this paper's body-freezing modification."
+    },
+    "paper_linked_rl_baseline": {
+      "url": "https://github.com/tristandeleu/pytorch-maml-rl",
+      "audited_current_head": "21d4ba1ccd300a403928e6db553c9529bcc3fbdf",
+      "audited_commit_count": 227,
+      "tracked_file_count": 57,
+      "license": "MIT",
+      "scope_boundary": "This third-party MAML-RL baseline exposes full-policy gradient adaptation and contains no ANIL, NIL or paper-title implementation marker. Its audited current head postdates arXiv v2 and cannot serve as an immutable paper-run receipt."
+    },
+    "author_specific_artifact": "No author-specific ANIL/NIL repository, patch, checkpoint, raw seed output, split manifest or timing harness was identified in the paper source or official paper records. OpenReview links community implementations, not an author-certified release.",
+    "integrity_boundary": "The registered PDF hash, byte size and page count were reproduced exactly. Current baseline repository heads are code-structure evidence only, not claimed paper-era ANIL releases or reproduced experiments."
+  },
+  "sections_reviewed": [
+    "abstract and sections 1-3, including MAML formalism, freezing ablation and CCA/CKA analysis",
+    "section 4, ANIL equations, computational claim, classification and reinforcement-learning results",
+    "section 5, NIL test-time classifier and network-head/body training-regime analysis",
+    "sections 6-7, broader meta-learning discussion, conclusion and explicit benchmark-scope future work",
+    "appendix A dataset/task definitions and architectures",
+    "appendix B weight distance, CCA/CKA methods, cross-seed comparisons and early-training results",
+    "appendix C ANIL derivation, learning curves, implementation details and single-GPU timing",
+    "appendix D alternate head/body training regimes and representation comparisons",
+    "complete arXiv v2 TeX source and both paper-linked baseline repository trees/histories"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 3-6, sections 3.1-3.2, equations 1-2, Table 1 and Figures 1-3",
+      "checked_for": "MAML support/query objective, body/head distinction, test-time layer freezing, CCA/CKA operationalization and early-training evidence"
+    },
+    {
+      "anchors": "pp. 6-8, section 4, Figure 4, Tables 2-3 and appendix C.1",
+      "checked_for": "head-only inner adaptation, retained second-order path, benchmark point estimates and the non-equivalence of ANIL to first-order MAML"
+    },
+    {
+      "anchors": "pp. 8-10, sections 5-7 and Tables 4-5",
+      "checked_for": "NIL cosine classifier, role of task-specific training, broader extrapolation and stated benchmark limitation"
+    },
+    {
+      "anchors": "pp. 13-15, appendices A-B and Figures 6-9",
+      "checked_for": "dataset splits, architectures, seed count, training/evaluation updates, weight-distance caveat and cross-seed representation comparisons"
+    },
+    {
+      "anchors": "pp. 16-21, appendix C-D, Figures 10-11 and Tables 6-8",
+      "checked_for": "ANIL derivative structure, code provenance, RL selection rule, timing protocol and alternate training/head results"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "For the evaluated four-convolution MAML classifiers, freezing the entire network body during test-time inner adaptation causes only a modest accuracy change, while body activations remain highly similar by CCA/CKA.",
+      "anchors": "section 3.2, Table 1 and Figures 2-3"
+    },
+    {
+      "claim": "ANIL removes inner-loop updates from the body during both training and testing but retains task-specific gradient adaptation of the head and outer-loop meta-gradients through that adaptation.",
+      "anchors": "section 4, Figure 4, ANIL equation and appendix C.1 equations 1-10"
+    },
+    {
+      "claim": "Across three initializations, ANIL reports broadly comparable point performance to MAML on Omniglot, MiniImageNet and three simulated RL benchmarks, with lower measured iteration time on one Titan-Xp setup.",
+      "anchors": "section 4, Table 2 and appendix C.4-C.5/Table 6"
+    },
+    {
+      "claim": "After MAML/ANIL training, NIL can discard the learned head at test time and classify with cosine similarity between frozen body representations and support examples.",
+      "anchors": "section 5.1 and Table 4"
+    },
+    {
+      "claim": "The authors explicitly restrict their study mainly to benchmark datasets and leave other few-shot distributions for future work.",
+      "anchors": "section 7 conclusion"
+    }
+  ],
+  "function_concept_used_by_paper": "The paper treats a neural network as a body feature function plus a task-specific classification or policy head. Meta-training learns a reusable body and head initialization. ANIL generates per-task head parameters from support data through gradient descent while leaving body parameters fixed in the inner loop; NIL reuses the body directly and constructs test predictions from cosine similarity to support representations. This is localized task adaptation, not a low-rank adapter, task-description-to-delta generator, arbitrary function compiler or weight-space composition algebra.",
+  "specification_language": "A task is represented implicitly by a distribution over support and target examples or trajectories, a loss/return objective, way/shot counts, model architecture and update hyperparameters. This is a mathematical learning-task specification, not a typed FunctionSpec with named inputs/outputs, preconditions, postconditions, effects, authority, failure semantics, resource budgets or version constraints.",
+  "representation_or_carrier": {
+    "shared_carrier": "meta-trained body parameters and a head initialization",
+    "anil_task_carrier": "ephemeral task-specific head parameters produced by inner-loop gradient steps; body parameters are shared unchanged within each task adaptation",
+    "nil_task_carrier": "frozen body representations of support examples, their labels and cosine similarities; the trained head is removed at test time",
+    "analysis_carrier": "layer activations before/after adaptation and complete parameter vectors used for CCA, CKA and Euclidean comparisons",
+    "explicit_non_lora_boundary": "The paper uses ordinary dense convolutional/MLP parameters and a full dense final head. It defines no rank factorization, adapter module, delta checkpoint format or learned task-description-to-adapter generator."
+  },
+  "compiler_or_generator": {
+    "outer_process": "Meta-optimize the shared body/head initialization from target losses across tasks, differentiating through support-set head adaptation in ANIL.",
+    "anil_inner_process": "For each task, keep body parameters fixed and update only the final-layer/head parameters by one or more support-loss gradient steps.",
+    "nil_process": "At test time, discard the head, embed labelled support and query items with the frozen body, and weight support labels by representation similarity.",
+    "classification": "ANIL is a concrete bounded task-to-head weight generator and a training-time partial-update rule. It is only a compiler analogy because task intent is implicit in samples, no declarative contract is lowered, and no semantic-preservation guarantee is supplied."
+  },
+  "interpreter_or_runtime": "Execution is an ordinary neural forward pass under the fixed body and adapted head, or a body embedding plus cosine-similarity classifier in NIL. The paper defines no instruction language, evaluator for independently represented functions, effect handler, capability model, exception contract or general function runtime.",
+  "state_or_effect_model": "Training mutates shared parameters and ANIL task adaptation creates ephemeral head state; RL interacts with simulated environments through trajectories and stochastic policies. These are learning and environment states, not language-level effects: there are no effect signatures, capabilities, transaction boundaries, idempotence rules, compensation, rollback or external-action safety model.",
+  "composition_rule": "ANIL structurally attaches one adapted head to one shared body and composes gradient operations over time. NIL combines cosine similarities with support labels. Neither operation combines independently versioned callable functions or parameter deltas, and no addition, interpolation, merge compatibility, router or algebraic law is defined.",
+  "equivalence_notions": [
+    {
+      "notion": "benchmark performance match",
+      "support": "MAML, ANIL and NIL point estimates are compared by mean accuracy or average return across three initializations.",
+      "boundary": "The paper reports standard deviations but no equivalence margin, hypothesis test or confidence interval. Several point estimates differ materially, so 'identical' or 'matches' is an empirical shorthand, not statistical or semantic equivalence."
+    },
+    {
+      "notion": "representation similarity",
+      "support": "CCA and CKA compare pre/post-adaptation body activations and MAML/ANIL representations across seeds.",
+      "boundary": "High CCA/CKA indicates similarity under those metrics and sampled inputs; it does not prove equal functions, equal outputs on all inputs, equal parameters or semantic substitutability."
+    },
+    {
+      "notion": "freezing ablation",
+      "support": "MiniImageNet accuracy is measured while freezing increasingly many body layers during test adaptation.",
+      "boundary": "A modest benchmark accuracy change does not prove body updates are universally unnecessary, and freezing all four layers changes reported 5-shot accuracy from 63.1+-0.4 to 61.0+-0.6."
+    },
+    {
+      "notion": "learning-curve similarity",
+      "support": "Training and validation loss/accuracy curves for ANIL and MAML visually track one another.",
+      "boundary": "Visual curve similarity without released run data is not trace equivalence or independent reproduction."
+    }
+  ],
+  "validation_regime": {
+    "formal": "The paper writes the MAML/ANIL objectives and a two-layer derivation showing that ANIL removes the body inner update but retains second-order terms through head adaptation. It gives no theorem proving feature reuse, performance equivalence, convergence, generalization or semantic preservation.",
+    "freezing": "On MiniImageNet 5-way, no freezing reports 46.9+-0.2 1-shot and 63.1+-0.4 5-shot; freezing all four body layers reports 46.3+-0.4 and 61.0+-0.6. Results are averaged over three seeds. The drop is described as small, not formally tested for equivalence.",
+    "representation_analysis": "CCA/CKA on activations before and after inner adaptation, cross-seed controls and Euclidean weight distances all support limited body change in the evaluated shallow networks. The authors themselves note Euclidean distance is a weaker proxy for functional change.",
+    "classification": "Table 2 reports MAML versus ANIL as 93.7+-0.7 versus 96.2+-0.5 and 96.4+-0.1 versus 98.0+-0.3 on Omniglot 20-way 1-/5-shot, and 46.9+-0.2 versus 46.7+-0.4 and 63.1+-0.4 versus 61.5+-0.5 on MiniImageNet 5-way 1-/5-shot. Means and standard deviations are over only three random initializations.",
+    "nil": "NIL reports 96.7+-0.3, 98.0+-0.04, 48.0+-0.7 and 62.2+-0.5 on the four classification tasks, showing that a cosine classifier over learned features is competitive in this protocol, not that a head is irrelevant for all tasks.",
+    "reinforcement_learning": "Three MAML and three ANIL initializations are evaluated on HalfCheetah-Direction, HalfCheetah-Velocity and 2D-Navigation. The authors disclose that their MAML results do not match the original paper and may have large initialization variance. They select the best-performing model over 500 training iterations and then test it on new tasks, without a separately specified validation selection rule.",
+    "timing": "Forward/backward timing uses one TensorFlow implementation on a single NVIDIA Titan-Xp, task batch size 1, target set size 1, preloaded images and 2,000 batches. Reported average summary speedups are about 1.7x per training iteration and 4.1x per inference iteration. This excludes data loading and is not a systems-level throughput, memory or energy evaluation.",
+    "dataset_protocol_ambiguity": "Appendix A says MiniImageNet has 64 training, 12 validation and 24 test classes, but describes the test-time task as drawing randomly chosen validation classes. With no released ANIL split/run artifact, whether this wording is a typo or the actual evaluation split cannot be resolved from the paper package.",
+    "artifact": "The paper specifies architectures and central hyperparameters, but supplies no ANIL/NIL code, dependency environment, exact seeds, checkpoints, raw curves, timing logs, task/split manifest or result script. The two linked repositories implement baseline MAML rather than the reviewed modification.",
+    "reproducibility": "Document-level reconstruction is possible, but exact result reproduction is not established because the method patch and paper-run receipts are absent, the baseline frameworks are old, RL results are selection-sensitive and the MiniImageNet split wording is ambiguous."
+  },
+  "uncertainty_model": "Tasks, support/query samples, random initialization, trajectories and stochastic policies are probabilistic sources. Reported values use mean plus standard deviation across three initializations, while representation plots also average over tasks/repeats. No seed identities, raw per-run values, confidence intervals, equivalence tests, calibrated predictive uncertainty, posterior semantics or propagation of best-iterate/model-selection uncertainty is provided.",
+  "lifecycle_and_provenance": "The conceptual lifecycle is meta-training, shared body/head initialization, per-task ephemeral head adaptation, target evaluation and optional NIL head removal. The exact PDF/source are identifiable, but no released ANIL checkpoint or immutable method code binds reported results to a repository state. The linked supervised and RL repositories are baseline dependencies, not provenance-complete derived artifacts. No registry records body/head compatibility, dataset/split identity, lineage, approval, deployment, monitoring, deprecation, migration or rollback.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Task distributions, support/query sets, objectives and way/shot protocols specify bounded learning problems, but not typed callable contracts with pre/postconditions and effects."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "A reusable body plus an ephemeral task-adapted dense head is an explicit neural function carrier, and NIL supplies a second body-representation-plus-support-set carrier."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Outer meta-learning plus head-only inner gradients concretely generates task-specific weights from support data, but no declarative specification is lowered and no semantic guarantee is given."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Shared body/checkpoint and adapted head are natural artifacts, but the paper releases neither ANIL/NIL code nor paper-run checkpoints, configurations or immutable receipts."
+    },
+    "N5_Interpreter": {
+      "status": "NOT_SUPPORTED",
+      "reason": "A standard network forward pass or cosine classifier is an execution mechanism, not an interpreter for a function language or independently packaged function representation."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Learning curves and representation probes are aggregate analyses; no per-task adaptation/execution trace schema or replayable trace artifact is defined."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Held-out accuracy, return, layer-freezing ablations, representation metrics and timing provide bounded empirical checks without equivalence, safety or semantic validation."
+    },
+    "N8_ComposerRouter": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Attaching one task head to one shared body and weighting labels by cosine similarity do not compose or route among independently versioned callable functions."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "No versioned registry, lineage manifest, compatibility rule, rollout state or rollback protocol for bodies, heads, tasks or checkpoints is defined."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "The task objective and support/query protocol are useful mathematical specification fragments but omit machine-checkable callable, pre/postcondition and effect contracts."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "ANIL provides a real localized task-to-head parameter transformation, but not low-rank adaptation, independent-delta composition or a weight-space function algebra."
+    },
+    "GAP-017": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Accuracy/return proximity and CCA/CKA similarity do not constitute a checker for semantic or behavioral equivalence across MAML, ANIL, NIL or other carriers."
+    },
+    "GAP-018": {
+      "status": "NOT_SUPPORTED",
+      "reason": "RL trajectories and mutable training state expose an application domain but no language-level effects, handlers, authority, transaction or rollback semantics."
+    },
+    "GAP-019": {
+      "status": "NOT_SUPPORTED",
+      "reason": "The paper distinguishes shared and task-specific parameters but supplies no method release or versioned provenance/compatibility/rollback registry."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Task distributions, stochastic policies and run variability are explicit, but the method has no calibrated probabilistic function semantics or governed uncertainty interface."
+    }
+  },
+  "source_specific_reasoning": "PARTIAL is the evidence-corrected result. The exact paper directly confirms a reusable-body/task-specific-head representation and a bounded task-to-head adaptation operator, with carefully scoped benchmark evidence that body feature reuse dominates in the tested MAML configurations. It does not confirm the historical card's low-rank adapter, task-description input, weight-delta checkpoint, stateless adapter runtime or adapter arithmetic/routing template. Three-seed point estimates, CCA/CKA similarity and baseline repositories do not establish equivalence or independent reproduction.",
+  "confirmed_projection": "The exact ICLR paper confirms a bounded neural Representation and partial Compiler/Artifact pattern: meta-training can learn a reusable feature body while support-data gradients produce an ephemeral task-specific head, and a cosine classifier can reuse body features directly on the tested few-shot classification distributions. This is evidence for localized neural adaptation, not for low-rank adapters, arbitrary function compilation, weight algebra, routing or a governed runtime.",
+  "projection_boundary": "These are 121CX projections from the exact registered 21-page arXiv v2 paper, every rendered page, complete TeX source and audited current states of both paper-linked baseline repositories. ANIL/NIL experiments were not rerun and no author-specific implementation or paper-run receipt was available. This model review is not a proof, statistical equivalence test, independent replication, empirical validation of the reported results, or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not define or evaluate LoRA, low-rank matrices, adapter modules or compact delta checkpoints.",
+    "It does not map a natural-language task description to a parameter delta; adaptation consumes labelled support examples or trajectories and a loss.",
+    "It does not compose, add, interpolate, merge or route among independently learned adapters or callable functions.",
+    "It does not prove that MAML always performs feature reuse or that body adaptation is unnecessary outside the evaluated architectures and task distributions.",
+    "It does not establish semantic, functional or statistical equivalence between MAML, ANIL or NIL.",
+    "High CCA/CKA similarity does not prove identical input-output behavior or substitutability on all inputs.",
+    "It does not turn an ordinary neural forward pass into a function-language interpreter.",
+    "It does not define external effect contracts, capabilities, execution traces or a versioned function registry.",
+    "It does not release an author-certified ANIL/NIL implementation or provenance-complete experiment artifact.",
+    "This review does not independently validate the paper's reported accuracy, return or speedup."
+  ],
+  "limitations_and_failure_boundaries": [
+    "The central feature-reuse conclusion is empirical and scoped mainly to shallow four-layer convolutional MAML models on Omniglot and MiniImageNet, plus three simulated RL tasks.",
+    "Freezing all body layers reduces reported MiniImageNet 5-shot accuracy by 2.1 points; describing the change as negligible is a judgment, not a formal equivalence result.",
+    "Only three training initializations are used, with no seed IDs, raw values, confidence intervals, paired tests, effect sizes or predeclared equivalence margins.",
+    "MAML and ANIL point estimates are not uniformly close: ANIL is much higher on HalfCheetah-Direction and lower on MiniImageNet 5-shot, among other differences.",
+    "Representation similarity metrics have invariances and input-sampling dependence; they do not certify semantic identity.",
+    "The paper's CCA language sometimes moves from high similarity to little functional change, which remains an inference supported by freezing results rather than a proof.",
+    "Euclidean parameter distance is explicitly acknowledged as a weaker proxy for functional change.",
+    "Appendix A describes MiniImageNet test-time tasks as using validation classes despite separately listing 24 test classes, leaving the exact evaluation split textually ambiguous.",
+    "The RL MAML results do not reproduce the original paper's numbers, and the authors attribute this in part to large initialization variance.",
+    "RL selects the best model over 500 training iterations before test-task evaluation without a separately specified validation-selection protocol.",
+    "ANIL still differentiates through adapted head parameters and retains second-order terms; it is not equivalent to first-order MAML.",
+    "NIL depends on a meta-trained representation and labelled support examples; no-inner-loop does not mean task-free or data-free inference.",
+    "Timing excludes data loading and uses one TensorFlow graph, one Titan-Xp, batch/target size 1 and 2,000 batches; speedups may not transfer to other frameworks, devices or workloads.",
+    "The TeX package contains figures and prose but no ANIL/NIL code, exact seeds, checkpoints, raw metrics, timing logs or environment lock.",
+    "The linked cbfinn/maml and tristandeleu/pytorch-maml-rl repositories implement baseline MAML and contain no identifiable ANIL/NIL modification.",
+    "Current repository heads are mutable states and cannot be assumed to be the exact dependency revisions used for the paper.",
+    "No distribution-shift, adversarial, calibration, safety, real-world effects, long-horizon lifecycle or cross-version compatibility evaluation is reported.",
+    "This audit verifies the paper package and public artifact boundary but does not execute the legacy TensorFlow/PyTorch experiments."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "METADATA_ONLY",
+    "verdict": "PRIOR_LOW_RANK_ADAPTER_CARD_REJECTED; BOUNDED_FEATURE_REUSE_AND_HEAD_ONLY_ADAPTATION_ACCEPTED",
+    "corrections": [
+      "Replaced the metadata-only 2019/preprint framing with the exact arXiv v2 and ICLR 2020 published-paper identity.",
+      "Reviewed all 21 pages, complete TeX source and both paper-linked baseline repository states rather than projecting from the title.",
+      "Rejected the prior function definition 'incremental parameter delta' and replaced it with a reusable body plus dense task-adapted head and NIL support-representation carrier.",
+      "Rejected the invented task-description input and low-rank-weight-delta output; the actual inner loop consumes support data/trajectories and updates the full dense head.",
+      "Rejected adapter parameters, base-model-plus-adapter runtime and adapter arithmetic/routing because none appears in the paper.",
+      "Confirmed a bounded task-to-head gradient generator and body feature-reuse result while preserving the lack of formal callable contracts and semantic guarantees.",
+      "Separated CCA/CKA representation similarity, benchmark-performance proximity and freezing ablations from semantic or statistical equivalence.",
+      "Recorded three-seed statistics, RL best-iterate selection, mismatched original-MAML RL results, single-device timing scope and MiniImageNet split wording ambiguity.",
+      "Separated baseline MAML repositories from a missing author-specific ANIL/NIL release and paper-run receipt.",
+      "Did not call equations proof, point-estimate similarity equivalence, public baseline code reproduction, or this model review validation of ignition."
+    ],
+    "prior_card_superseded": true
+  }
+}
