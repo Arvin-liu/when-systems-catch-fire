@@ -1,0 +1,262 @@
+{
+  "source_id": "S120-031",
+  "canonical_title": "Effective LoRA Adapter Routing using Task Representations",
+  "title": "Effective LoRA Adapter Routing using Task Representations",
+  "authors": [
+    "Akash Dhasade",
+    "Anne-Marie Kermarrec",
+    "Igor Pavlovic",
+    "Diana Petrescu",
+    "Rafael Pires",
+    "Mathis Randl",
+    "Martijn de Vos"
+  ],
+  "year": 2026,
+  "version": "arXiv:2601.21795v2, 2026-01-30",
+  "doi_or_identifier": "arXiv:2601.21795v2",
+  "identifier": "arXiv:2601.21795v2",
+  "url": "https://arxiv.org/abs/2601.21795v2",
+  "source_family": 5,
+  "source_family_name": "adapter routing and task-aware composition",
+  "license": "Publicly accessible arXiv preprint; no explicit reuse license was identified in the reviewed PDF or arXiv API metadata",
+  "sha256": "684de82fbdd03fb0c3a5c59dc4c5e702e221f4364281210aa4b4be4167d1da46",
+  "file_size_bytes": 2291125,
+  "page_count": 29,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_sha256_match": true,
+    "registered_file_size_match": true,
+    "registered_page_count_match": true,
+    "arxiv_api_identity": "http://arxiv.org/abs/2601.21795v2",
+    "published_at_utc": "2026-01-29T14:41:24Z",
+    "updated_at_utc": "2026-01-30T09:21:58Z",
+    "pdf_visually_checked_pages": [1, 4, 6, 7, 20],
+    "sources_cross_checked": [
+      "arXiv v2 PDF",
+      "arXiv API metadata",
+      "arXiv abstract record"
+    ],
+    "code_or_artifact_link_status": "No LORAUTER implementation or immutable adapter-pool manifest is linked in the paper."
+  },
+  "sections_reviewed": [
+    "Abstract and introduction",
+    "LoRA, adapter composition, routing problem formulation, and prior-method comparison",
+    "LORAUTER task database, task-adapter pairing, task retrieval, and adapter composition",
+    "Experimental setup, non-OOD, semi-OOD, OOD, and large-pool results",
+    "Retrieval/composition, pseudo-task, and Successive Halving ablations",
+    "Related work, conclusions, and impact statement",
+    "Appendix A evaluation protocol and baseline details",
+    "Appendix B validation matrix, per-domain results, Successive Halving algorithm, and K selection",
+    "Appendix C full per-task tables"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "§2.3-2.4, pp. 2-3, Table 1",
+      "checked_for": "router problem statement, adapter-pool assumptions, selection/composition contract, and claimed complexity"
+    },
+    {
+      "anchors": "§3.1-3.4, pp. 4-5, Fig. 1, eqs. 3-4",
+      "checked_for": "task database, validation-mediated adapter pairing, query embeddings, softmax weights, and output-space fusion"
+    },
+    {
+      "anchors": "§4.1-4.5, pp. 5-8, Figs. 2-5, Tables 2-3",
+      "checked_for": "models, datasets, baselines, routing regimes, large pool, ablations, pseudo tasks, and search efficiency"
+    },
+    {
+      "anchors": "Impact statement, p. 9",
+      "checked_for": "base-model and adapter risks, misuse boundary, vetting, safety filtering, and regulatory caveat"
+    },
+    {
+      "anchors": "Appendix A, pp. 12-13",
+      "checked_for": "fixed LoRA configuration, precision, K and temperature, validation/test size, normalization, and baseline asymmetries"
+    },
+    {
+      "anchors": "Appendix B, pp. 14-21, Figs. 8-10, Tables 4-10, Algorithm 1",
+      "checked_for": "OOD degradation, weighted-fusion contribution, noisy-pool scope, randomness reporting, and Successive Halving procedure"
+    },
+    {
+      "anchors": "Appendix C, pp. 21-29, Tables 11-18",
+      "checked_for": "per-task support and variation hidden by normalized averages"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "LORAUTER makes representative tasks first-class routing intermediaries: labeled validation queries define task embeddings and a validation-performance map from tasks to adapters.",
+      "anchors": "§3.1-3.3"
+    },
+    {
+      "claim": "At inference, a query is embedded, matched to the top-K task representations, and the corresponding compatible LoRA outputs are fused with softmax-normalized similarity weights.",
+      "anchors": "§3.3-3.4, eqs. 3-4"
+    },
+    {
+      "claim": "Inference-time selection compares against T representative tasks rather than N adapters, yielding O(T) retrieval under the paper's accounting; task-adapter pairing remains an offline evaluation problem over the adapter pool.",
+      "anchors": "Table 1 and §3.2"
+    },
+    {
+      "claim": "On a reused 48-task LLaMA2 benchmark, weighted fusion reaches 101.2% and 98.8% of task-aligned normalized performance in-domain and 88.4% and 86.8% in OOD settings for 7B and 13B models respectively.",
+      "anchors": "Fig. 2 and Table 6"
+    },
+    {
+      "claim": "On 1,567 rank-bounded public LLaMA2-7B adapters without the curated pool, the paper reports 89.6% semi-OOD and 85.7% OOD normalized performance, but does not compare all baselines at that scale.",
+      "anchors": "§4.2 and Tables 7-8"
+    },
+    {
+      "claim": "Successive Halving reduces validation evaluations needed to approach peak adapter-selection performance by more than twofold in a 100-run resampling study.",
+      "anchors": "§4.5, Appendix B.5, Fig. 10, Algorithm 1"
+    }
+  ],
+  "function_concept_used_by_paper": "The reusable function-like unit is a LoRA adapter ϕi=(Bi,Ai) attached to a fixed base LLM. A task is represented by an aggregate embedding of labeled validation queries and maps to the empirically best adapter. The router maps an unlabeled query to a weighted set of task-associated adapters, and their low-rank updates are composed during inference.",
+  "representation_or_carrier": {
+    "query_carrier": "plain-text query plus sentence-encoder vector",
+    "task_carrier": "task label or K-Means pseudo-task, validation set, aggregate task embedding, and task-specific evaluation metric",
+    "adapter_carrier": "pairs of low-rank matrices across implicit target layers, tied to a compatible base model",
+    "routing_carrier": "task-to-adapter mapping M, top-K task identities, cosine similarities, softmax probabilities, and selected adapter handles",
+    "output_carrier": "base-model layer output plus weighted sum of selected low-rank adapter outputs"
+  },
+  "specification_language": "The paper supplies an operational router specification: a compatible base model and adapter pool Φ; representative task set T_rep; labeled validation sets D_i; task-specific metrics; text encoder E and instruction; K, temperature τ, and search budget; and evaluation regimes. This is concrete enough to define the experimental function, but it lacks a machine-checkable adapter contract for base revision, tokenizer, target modules, rank, dtype, license, safety, provenance, side effects, and output semantics.",
+  "compiler_or_generator": {
+    "offline_catalog_build": "Validation queries are embedded and aggregated into task representations; each task is paired with the best-scoring adapter, using exhaustive evaluation or Successive Halving.",
+    "pseudo_task_generation": "K-Means can replace ground-truth task labels with validation-derived clusters.",
+    "online_generation": "The query embedding retrieves top-K tasks and produces similarity weights used to compose their mapped adapter outputs.",
+    "boundary": "The method is called training-free because it does not train a new router or require adapter training data; it still relies on a pretrained sentence encoder, labeled validation data, task metrics, and potentially expensive offline adapter execution."
+  },
+  "interpreter_or_runtime": "A LLaMA2 base model executes compatible LoRA modules in bfloat16. For each affected layer, LORAUTER evaluates the base output and adds a weighted sum of selected BiAi x contributions. The router also runs a sentence encoder and task-index search. Adapter loading, placement, caching, batching, concurrency, latency and failure isolation are outside the evaluated runtime model.",
+  "composition_rule": "For the top-K mapped adapters, LORAUTER applies h'=Wx+Σ_i w_i B_i A_i x with nonnegative softmax weights summing to one. This is an explicit, input-aware linear output-space composition rule. It assumes compatible layer locations and a shared base model; it is not a general algebra for heterogeneous functions, adapters with conflicting effects, or non-linear tool composition.",
+  "state_or_effect_model": "Offline state includes task validation sets, embeddings, metrics, adapter scores, catalog mappings and Successive Halving budgets. Online state includes query embeddings, retrieved tasks, weights and adapter activations. The paper does not specify durable catalog transactions, atomic adapter updates, cache invalidation, permission checks, isolation, rollback, or audit traces; base-model and adapter harms are acknowledged in the impact statement.",
+  "uncertainty_model": "The method describes softmax-normalized cosine similarities as task probabilities and calls the fusion uncertainty-aware, but no calibration, proper-scoring, reliability, entropy threshold, abstention, confidence interval, or uncertainty propagation is demonstrated. Main performance tables are point estimates; standard deviation is reported for the 100-run Successive Halving resampling experiment, not for the full routing results. The weights should therefore be treated as affinity scores rather than validated probabilities.",
+  "validation_regime": {
+    "controlled_pool": "48 task-specific rank-6 adapters on LLaMA2-7B and 13B, 10 reported benchmark groups, at most 200 validation examples and 50 held-out test examples per task",
+    "routing_regimes": "non-OOD retains aligned validation and adapter; semi-OOD removes the aligned adapter; OOD removes both aligned validation and adapter",
+    "large_pool": "1,567 public LLaMA2-7B adapters with rank ≤64, plus a 1,615-adapter combined-pool condition",
+    "baselines": "LoRAHub, LoRARetriever, Arrow, SpectR and a task-aligned adapter, with documented but not fully symmetric data, optimization and K assumptions",
+    "ablations": "retrieval versus composition, K=1 versus K=3, pseudo-task cluster count, weighted LoRARetriever, and Successive Halving",
+    "metrics": "EM, BLEU and ROUGE normalized per task by task-aligned adapter performance, then macro-averaged",
+    "boundary": "The full review validates the reported protocol and results, not an independent rerun. No implementation is linked; main-result seeds, repeated-run variation, confidence intervals, latency, memory and failure rates are not reported."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "task affinity",
+      "support": "EMPIRICAL_EMBEDDING_SIMILARITY",
+      "boundary": "Cosine similarity under one sentence encoder is not semantic task equivalence and can degrade under OOD shift."
+    },
+    {
+      "notion": "adapter suitability",
+      "support": "VALIDATION_METRIC_MAXIMUM",
+      "boundary": "The selected adapter is best only for the sampled validation set and chosen metric among evaluated candidates; no dominance or contract equivalence follows."
+    },
+    {
+      "notion": "composed behavior",
+      "support": "EMPIRICALLY_BOUNDED_LINEAR_FUSION",
+      "boundary": "Weighted output addition improved the benchmark but does not guarantee non-interference, semantic preservation, safety or monotonicity."
+    },
+    {
+      "notion": "task-aligned oracle",
+      "support": "NORMALIZATION_REFERENCE_NOT_UPPER_BOUND",
+      "boundary": "A fused result can exceed 100% because the single task-trained adapter is a reference denominator, not a theoretical oracle upper bound."
+    }
+  ],
+  "lifecycle_and_provenance": "The architecture names an adapter pool, task catalog, validation data, task metrics, task embeddings, task-adapter mappings, dynamic addition/removal, and a safety-vetting obligation. These are meaningful VersionedRegistry precursors. However, the paper links no code, artifact manifests, exact Hugging Face adapter identifiers, immutable dataset snapshots, environment, model hashes, catalog schema, license policy, signatures, promotion stages, health telemetry, drift triggers, supersession links, rollback procedure or retirement records. The phrase 'dynamic adapter pool' is therefore an architectural capability claim, not a demonstrated governed production registry.",
+  "limitations_and_failure_boundaries": [
+    "Training-free excludes new router optimization but not the pretrained encoder, labeled validation sets, task-specific metrics or offline adapter evaluation.",
+    "O(T) describes inference-time task retrieval; catalog construction and updates still score adapters against representative tasks, and Successive Halving only reduces this cost empirically.",
+    "The task count may cease to be much smaller than adapter count, and pseudo-task granularity has a regime-dependent inverted-U sensitivity.",
+    "Softmax similarities are not calibrated uncertainty estimates and the method defines no abstention or low-confidence fallback.",
+    "The fusion equation assumes adapters share a compatible base model and layer structure; rank alone is not a complete compatibility contract.",
+    "The 48-task benchmark reuses one adapter family, text encoder and LLaMA2 setup; conclusions need not transfer to other architectures, languages, modalities or long-running dynamic registries.",
+    "The large-pool result lacks full baseline comparisons and an immutable manifest of the 1,567 fetched adapters, limiting reproduction and causal attribution.",
+    "Macro-normalizing by a task-aligned adapter can amplify tasks with low denominators and values above 100% do not mean an oracle bound was beaten.",
+    "Main routing results omit repeated-run uncertainty, statistical significance, latency, memory, adapter-loading overhead and operational failure analysis.",
+    "Linear adapter addition can create interference or unsafe behavior; the impact statement calls for vetting and filters but the method does not implement them."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not define a formal semantic contract or prove equivalence among adapters, tasks or fused outputs.",
+    "It does not show that arbitrary adapters can be safely composed or that similarity weights are calibrated probabilities.",
+    "It does not demonstrate a production-grade versioned registry, scheduler, loader, rollback path or security boundary.",
+    "It does not validate the point architecture as a whole, prove universal routing optimality, or establish causal generalization beyond its benchmark."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Tasks, queries, adapter pools, metrics and router hyperparameters are explicit, while compatibility, semantics, effects and governance are not machine-checkable."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "Offline catalog construction, online retrieval and explicit weighted adapter execution form distinct implemented architectural stages."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Task affinity and validation performance are operational comparison notions, not semantic equivalence or behavioral contracts."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "The paper provides a concrete input-aware top-K composition and routing rule, with empirical ablations isolating both components."
+    },
+    "GAP-019": {
+      "status": "CONFIRMED",
+      "reason": "Three routing regimes, two base sizes, multiple baselines, large/noisy pools, per-task tables and ablations provide substantial bounded validation."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Affinity weights and limited resampling variation exist, but calibration, abstention, traceability and lifecycle governance are absent."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Task validation sets and metrics specify desired behavior operationally but omit a formal adapter contract."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Queries, tasks, adapters, catalog mappings, similarities and weights have distinct concrete carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Catalog building and Successive Halving compile validations into mappings, but do not generate adapters or certified compositions."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "LoRA matrices and the derived task-to-adapter catalog are explicit reusable artifacts."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The base LLM executes weighted low-rank updates selected for each query."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Selections, similarities, weights and scores could form traces, but no durable trace schema or integrity rule is defined."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Task metrics, disjoint validation/test sets, routing regimes and ablations directly validate routing choices."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Task retrieval, top-K selection and input-aware output-space fusion are the paper's central mechanism and are evaluated independently."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "The task-indexed adapter catalog and update concept are strong registry primitives without identity, version, promotion, health, rollback or retirement governance."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "PARTIAL",
+    "verdict": "UNDERSTATED_AND_BIBLIOGRAPHICALLY_INCOMPLETE",
+    "corrections": [
+      "The provisional card lists the authors as Anonymous; arXiv v2 identifies Akash Dhasade, Anne-Marie Kermarrec, Igor Pavlovic, Diana Petrescu, Rafael Pires, Mathis Randl, and Martijn de Vos.",
+      "The version is precisely arXiv v2 dated 2026-01-30, and the registered PDF hash, size and 29-page count all match.",
+      "The prior card says the paper does not provide a general composition algebra but omits that it does provide a concrete input-aware weighted output-space LoRA composition rule.",
+      "The prior card overstates VersionedRegistry support from scale alone; the full paper supports a task-indexed catalog precursor but lacks durable identity and lifecycle governance.",
+      "The full evidence supports a bounded CONFIRMED ComposerRouter projection while preserving PARTIAL judgments for semantic contracts, uncertainty and registry governance."
+    ],
+    "prior_card_superseded": true
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "Within compatible single-base-model LoRA pools, LORAUTER directly demonstrates a bounded ComposerRouter: validation-backed task representations index adapter artifacts, query similarity selects top-K task mappings, and explicit input-aware weights compose their low-rank outputs. A task-indexed registry precursor is present, while durable version and lifecycle governance remain partial.",
+  "source_specific_reasoning": "The paper is direct evidence for composition and routing because it defines each carrier and transition rather than merely recommending modularity. The strongest chain is task validation set → task embedding → empirically selected adapter mapping → query-task similarity → top-K weighted LoRA execution. Its ablations show that retrieval and composition contribute separately. The extreme review narrows three marketing-adjacent phrases: 'training-free' still requires pretrained representation and labeled validation infrastructure; 'uncertainty-aware' is uncalibrated similarity weighting; and 'scales with tasks' is an inference-time claim that excludes catalog construction. With those boundaries enforced, N8 and GAP-018 are CONFIRMED, while N9, formal equivalence, operational effects and uncertainty remain partial.",
+  "projection_boundary": "All GAP and Function OS impacts above are 121CX architectural projections from arXiv v2. Full-text review is not independent empirical replication, code verification, proof of routing optimality, certification of public adapters, proof of safe composition, or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T04:46:12Z"
+}
