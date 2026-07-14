@@ -4,12 +4,12 @@
   "baseline_head": "a344c20c29d78d8e7c52e0eca53c64eb930a8bc4",
   "branch": "records/ignition-121q2v-verification-repair-20260715",
   "pr_35_unchanged": true,
-  "current_step": 5,
+  "current_step": 6,
   "current_step_status": "COMPLETE",
-  "next_step": 6,
-  "next_step_description": "121Q2R step ledger reconstruction",
+  "next_step": 7,
+  "next_step_description": "Full validation and corrected report",
   "defects_registered": 9,
-  "last_updated": "2026-07-14T17:20:47Z",
+  "last_updated": "2026-07-14T17:21:16Z",
   "phase2_counts": {
     "CONFIRMED": 0,
     "PARTIAL": 20,
@@ -64,5 +64,10 @@
     "NOT_SUPPORTED": 0,
     "UNRESOLVED": 2
   },
-  "phase_2_total": 22
+  "phase_2_total": 22,
+  "ledger_reconstructed": {
+    "entries": 18,
+    "unique_steps": true,
+    "range": "000-017"
+  }
 }
