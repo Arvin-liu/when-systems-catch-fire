@@ -1,0 +1,13 @@
+{
+  "task": "121Q2V",
+  "instruction_commit": "4d9f35816b7e25012c4c4056e4a921d32788424b",
+  "baseline_head": "a344c20c29d78d8e7c52e0eca53c64eb930a8bc4",
+  "branch": "records/ignition-121q2v-verification-repair-20260715",
+  "pr_35_unchanged": true,
+  "current_step": 0,
+  "current_step_status": "COMPLETE",
+  "next_step": 1,
+  "next_step_description": "Phase 2 verdict per-source reconstruction",
+  "defects_registered": 9,
+  "last_updated": "2026-07-14T17:16:35Z"
+}
