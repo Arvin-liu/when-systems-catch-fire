@@ -1,0 +1,274 @@
+{
+  "source_id": "S120-076",
+  "canonical_title": "Neural Turing Machines",
+  "authors": [
+    "Alex Graves",
+    "Greg Wayne",
+    "Ivo Danihelka"
+  ],
+  "year": 2014,
+  "source_family": 1,
+  "source_family_name": "program-as-weights and weight-space computation",
+  "identifier": "arXiv:1410.5401v2 [cs.NE]",
+  "doi_or_identifier": "arXiv:1410.5401v2; DOI 10.48550/arXiv.1410.5401",
+  "url": "https://arxiv.org/pdf/1410.5401v2",
+  "version": "arXiv v2, submitted 2014-12-10",
+  "license": "Openly accessible arXiv preprint; no reusable code or data license is stated in the paper/source package",
+  "file_size_bytes": 1357690,
+  "page_count": 26,
+  "sha256": "b8d2939cd7c76097f2cc2e5061188ca824ef8cad12de4500dfbd014b60dd16a9",
+  "reviewed_at": "2026-07-14T09:29:49Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "claim_support_status": "CONFIRMED",
+  "retrieval_and_integrity": {
+    "registered_pdf": {
+      "url": "https://arxiv.org/pdf/1410.5401v2",
+      "sha256": "b8d2939cd7c76097f2cc2e5061188ca824ef8cad12de4500dfbd014b60dd16a9",
+      "file_size_bytes": 1357690,
+      "page_count": 26,
+      "registry_match": true,
+      "pdf_creation_timestamp": "2014-12-11T01:51:20Z as embedded in the PDF metadata"
+    },
+    "arxiv_source": {
+      "url": "https://arxiv.org/e-print/1410.5401v2",
+      "sha256": "3995234e017c0257f0b393bd269386e42fcd93d5e120f0c316ed7e39f785ef34",
+      "file_size_bytes": 782096,
+      "source_version": "arXiv v2",
+      "archive_timestamp": "2014-12-11",
+      "title_match": true,
+      "main_tex": "ntm_arxiv.tex"
+    },
+    "visual_review": "All 26 pages were rendered and visually inspected; text, equations, tables, memory heatmaps and learning curves were legible, and no blank, truncated or substituted page was found.",
+    "text_review": "The complete extracted text and complete title-matched TeX source were reviewed, including active text, figure captions, tables and relevant commented draft material.",
+    "artifact_search": "Neither the paper nor its arXiv source supplies a code, dataset, checkpoint or raw-results URL. Searches of the official Google DeepMind GitHub namespace did not identify an author-released NTM repository. Third-party reimplementations were not treated as evidence for the reported experiments.",
+    "integrity_boundary": "The exact registered v2 document was verified. No executable paper artifact exists in the reviewed source package, so architecture equations and reported figures can be audited documentary-wise but not replayed from author-provided code."
+  },
+  "sections_reviewed": [
+    "abstract and sections 1-6",
+    "section 3 read, write, content/location addressing and controller equations",
+    "section 4 all five experiments and experimental details",
+    "Figures 1-18 and Tables 1-3",
+    "complete arXiv v2 TeX source and all bundled figure assets"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 5-10, sections 3-3.4, equations 1-9, Figures 1-2",
+      "checked_for": "controller-memory boundary, read/write state transitions, soft addressing, location iteration, sharpening and runtime limitations"
+    },
+    {
+      "anchors": "pp. 10-14, sections 4-4.2, Figures 3-9",
+      "checked_for": "copy and repeat-copy training, out-of-range examples, inferred pseudocode, memory traces and disclosed failures"
+    },
+    {
+      "anchors": "pp. 14-18, section 4.3, Figures 10-12",
+      "checked_for": "associative recall protocol, learning speed, length generalization and inferred content-plus-offset lookup strategy"
+    },
+    {
+      "anchors": "pp. 18-21, sections 4.4-4.5, Figures 13-17, equation 10",
+      "checked_for": "dynamic N-gram probability model, same-distribution validation, optimal estimator comparison, priority-sort strategy and error cases"
+    },
+    {
+      "anchors": "pp. 21-23, section 4.6, Figure 18, Tables 1-3",
+      "checked_for": "optimizer, clipping, architecture sizes, head counts, memory size, learning rates, parameter imbalance and omitted reproducibility fields"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "A neural controller coupled to an external memory matrix through differentiable read/write attention can be trained end-to-end with gradient descent.",
+      "anchors": "section 3; equations 1-9; Figures 1-2"
+    },
+    {
+      "claim": "Content addressing retrieves by similarity while gated interpolation, circular shifts and sharpening support iterative location-based memory traversal.",
+      "anchors": "section 3.3; equations 5-9"
+    },
+    {
+      "claim": "On preliminary synthetic tasks, trained NTMs learn strategies consistent with copying, repeated copying, associative lookup, online N-gram counting and priority sorting.",
+      "anchors": "section 4; Figures 3-18"
+    },
+    {
+      "claim": "Several learned strategies generalize to sequence lengths outside the training range better than the evaluated LSTM baselines, while important failure cases remain.",
+      "anchors": "sections 4.1-4.3; Figures 4-5, 8 and 11"
+    },
+    {
+      "claim": "The architecture is analogous to a Turing or von Neumann machine but uses continuous soft memory operations rather than discrete exact addressing.",
+      "anchors": "abstract; sections 1 and 3"
+    }
+  ],
+  "function_concept_used_by_paper": "The paper treats a learned recurrent controller plus its differentiable memory-access policy as a latent program operating on sequence data. The carrier is not weights alone: behavior arises from fixed NTM equations, trained controller/head parameters, time-varying controller state, read vectors, soft attention weightings and a mutable external memory matrix. 'Program' is inferred from systematic input-output behavior and memory traces; the system emits no symbolic source program or reusable named function artifact.",
+  "specification_language": "Each supervised task is specified procedurally through an episode generator, binary-vector input format, delimiters/auxiliary scalars, a target sequence and cross-entropy loss. The NTM architecture specifies controller size, memory dimensions, head count and differentiable read/write equations. This is a concrete experimental task specification, not a machine-checkable FunctionSpec language: it lacks typed contracts, preconditions, postconditions, effects, permissions, resource bounds, failure modes, equivalence criteria, uncertainty declarations and version constraints.",
+  "representation_or_carrier": {
+    "static_carrier": "trained controller parameters and output projections together with the fixed NTM addressing/read/write architecture",
+    "dynamic_carrier": "controller state, prior read vectors, N-by-M external memory matrix, per-head soft location weightings, erase vectors and add vectors",
+    "program_carrier": "a distributed recurrent policy that emits head parameters; the apparent algorithm is latent rather than a decoded instruction sequence",
+    "address_carrier": "content keys and strengths, interpolation gates, circular shift distributions and sharpening exponents",
+    "output_carrier": "time-indexed sigmoid prediction vectors and observable memory-access heatmaps",
+    "reset_boundary": "All experiments reset controller state, read vectors and memory to bias values at each episode; the reported artifact is not a persistent cross-episode store."
+  },
+  "compiler_or_generator": {
+    "training_process": "RMSProp with momentum 0.9 and elementwise gradient clipping learns controller/head parameters from binary input-target sequences under cross-entropy loss.",
+    "source_to_artifact": "Examples and losses shape a latent memory-control policy; no explicit intermediate representation, synthesized source or separately compiled function is produced.",
+    "classification": "Gradient training is a bounded neural program-induction/compiler analogy. It generates executable controller weights but offers no semantic-preserving lowering, proof of the inferred algorithm or stable extraction of the latent program."
+  },
+  "interpreter_or_runtime": "At each update cycle, the controller consumes the external input and prior read vectors, emits external outputs and head parameters, reads a convex combination of memory rows, erases and adds weighted content, then advances its recurrent state. These equations define a genuine bounded differentiable state-machine runtime. It interprets controller-emitted continuous operations, not a separately authored program language, and it is not equivalent to a discrete Turing machine with exact tape/head semantics.",
+  "state_or_effect_model": "The internal state is explicit: controller state, memory contents, read vectors and per-head locations evolve over time. Reads observe convex combinations; writes erase then add across weighted locations; multiple erasures/additions commute within a step. This is a strong internal mutable-memory model. The external environment boundary is only input/output vectors. There are no effect signatures, capabilities, filesystem/network actions, irreversible operations, concurrency rules, transactions, idempotence, compensation or rollback semantics.",
+  "composition_rule": "The runtime composes differentiable primitives sequentially: content lookup, interpolation with prior location, circular shift, sharpening, read, erase and add. Multiple heads operate in parallel and per-step erasures/additions have order-independent formulas. The learned controller can reuse a latent loop-like strategy across time, but the paper does not compose independently trained programs, weights or function artifacts, and supplies no routing or compatibility algebra.",
+  "equivalence_notions": [
+    {
+      "notion": "input-output task agreement",
+      "support": "Cross-entropy and bits-per-sequence measure agreement with target sequences on generated episodes.",
+      "boundary": "Finite and mostly synthetic examples do not establish semantic equivalence to a copy loop, associative table, N-gram estimator or sorting algorithm."
+    },
+    {
+      "notion": "trace-to-pseudocode correspondence",
+      "support": "Sharp memory weightings and read/write trajectories motivate pseudocode for copying and verbal algorithms for other tasks.",
+      "boundary": "The authors explicitly use inferential language such as 'we believe', 'suggests', 'postulate' and 'hypothesise'; no program extraction or trace proof establishes exact correspondence."
+    },
+    {
+      "notion": "out-of-range generalization",
+      "support": "Selected copy, repeat-copy and associative-recall tests extend sequence lengths beyond training and compare with LSTM behavior.",
+      "boundary": "Displayed examples and curves have no run-level uncertainty or exhaustive length-domain guarantee; copy length 120 has local and global errors, and repeat count generalization fails to terminate correctly."
+    },
+    {
+      "notion": "Turing-machine analogy",
+      "support": "A controller plus external addressable memory evokes a Turing/von Neumann architecture and all operations are differentiable.",
+      "boundary": "Analogy is not an equivalence theorem. Memory is finite, addressing is soft, writes can interfere, and the learned controller is not shown to implement an arbitrary or universal program."
+    }
+  ],
+  "validation_regime": {
+    "formal": "Equations 1-9 specify normalized reads, erase/add writes, cosine content addressing, interpolation, circular convolution and sharpening. No mechanized semantics, computational-universality proof for the NTM architecture, training convergence theorem, semantic-equivalence theorem or numerical-stability proof is provided.",
+    "common_protocol": "All tasks are episodic supervised binary-target problems with cross-entropy and sigmoid outputs. Controller state, read vectors and memory reset at episode start. Compare feedforward-controller NTM, LSTM-controller NTM and a three-layer LSTM baseline. Results are bits per sequence.",
+    "copy": "Train on random eight-bit-vector sequences of length 1-20. NTM learns faster/lower than LSTM in the shown curve. Selected outputs at lengths 10/20/30/50 are high quality; length 120 has local errors plus one duplicated vector that shifts the remaining output. Memory has 128 locations, after which circular addressing overwrites earlier writes.",
+    "repeat_copy": "Train sequence lengths and repeat counts 1-10. Both architectures solve the in-range task in the plotted run; NTM handles longer sequences and continues more than ten copies, but after the eleventh repetition it mispredicts termination by emitting end markers repeatedly.",
+    "associative_recall": "Train 2-6 items, each three six-bit vectors. NTM reaches near-zero cost around 30,000 episodes in the shown curve; LSTM does not reach zero by one million. Feedforward NTM is nearly perfect at 12 items and below one bit per sequence at 15, but figures provide no uncertainty across training runs.",
+    "dynamic_ngrams": "Sample binary 6-gram probability tables from Beta(1/2,1/2), generate length-200 sequences and compare to a beta-binomial optimal estimator. Use 1000 same-distribution validation sequences. NTM is described as slightly but significantly better than LSTM and worse than optimal, but no test statistic, p-value, interval or run count supports 'significant'. Commented TeX mentions 131.61 versus 133.19 bits for optimal versus NTM, but those draft comments are not published results and were not promoted.",
+    "priority_sort": "Input 20 binary vectors with uniform [-1,1] priorities and output the top 16 sorted vectors. Eight parallel heads are needed for best feedforward-controller performance. A fitted linear relation between priority and write location matches one observed strategy; this supports linear memory placement, not the hoped-for depth-4 binary heap sort or general sorting correctness.",
+    "architecture_and_optimization": "All NTMs use 128x20 memory. Feedforward NTM parameter counts range 14,656-508,305; LSTM-controller NTM 61,749-269,038; plain LSTM 331,905-5,312,007. Learning rates and head counts vary by task. Baselines are not parameter matched; plain LSTM is often much larger, while memory-capacity and computation costs are not normalized.",
+    "statistics": "No training seeds, number of independent runs, failed-run denominator, standard deviations, confidence intervals, error bands or statistical-test details are reported. Curves appear as single traces and qualitative memory figures are selected episodes.",
+    "artifact": "The exact paper, complete source and figures are public, but no author code, environment, dataset generator, checkpoint, raw curve data, run logs or result-generation script is supplied.",
+    "reproducibility": "Equations, synthetic task descriptions and architecture tables are detailed enough for reimplementation, but multiple implementation choices remain implicit and exact results cannot be reproduced from a released paper artifact."
+  },
+  "uncertainty_model": "Address weightings and sigmoid predictions are continuous distributions over memory locations or binary outputs, but they are control/optimization quantities rather than calibrated epistemic uncertainty. The dynamic N-gram task has an explicit stochastic data-generating process and probabilistic predictor, yet the NTM is evaluated as a point predictive network rather than a general probabilistic program. Experimental uncertainty is largely unreported: no seed/run distributions or confidence bands accompany the curves, and the word 'significant' is unsupported by a disclosed statistical test.",
+  "lifecycle_and_provenance": "The conceptual lifecycle is architecture selection, synthetic task generation, gradient training, controller checkpoint, episode reset, recurrent execution and visual inspection of memory behavior. The paper identifies no checkpoint hash, dataset seed, code revision, dependency environment, run receipt or immutable mapping from a curve to a model. It defines no extracted-program identity, compatibility contract, admission decision, usage monitoring, deprecation, migration, rollback or tombstone. Git/arXiv versions identify the document, not a governed learned-function artifact registry.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Episode generators, targets, delimiters, dimensions and loss specify five bounded tasks, without typed contracts, pre/postconditions or effects."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Controller weights plus explicit mutable memory, read vectors and attention heads form a concrete distributed carrier for learned sequential functions."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Gradient training generates an executable latent memory-control policy from examples, but emits no source/IR and guarantees no intended algorithm or semantic preservation."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Trained controller parameters would be an executable artifact, but no paper checkpoint, code package or immutable run receipt is released."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The recurrent controller-memory equations define a concrete bounded differentiable runtime for continuous read, write and address operations; confirmation does not imply discrete Turing-machine equivalence."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Figures expose memory contents, add vectors and read/write weightings for selected episodes, but no machine-readable trace corpus or complete run ledger is released."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Cross-entropy, bits-per-sequence, length probes and qualitative traces validate bounded task behavior, not semantics, safety or run-stable correctness."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Fixed differentiable primitives and parallel heads compose within one recurrent runtime, but there is no composition or routing of independently trained function artifacts."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "No versioned, provenance-complete or rollback-capable learned-program registry is defined."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "The tasks and NTM equations are concrete mathematical specifications, but not a general formal pre/postcondition language."
+    },
+    "GAP-016": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Training and recurrent primitive sequencing do not define weight-space arithmetic or composition between independently learned functions."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Finite input-output loss, traces and generalization probes are useful behavioral comparison evidence, not equivalence checking across representations."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Read/erase/add operations give explicit internal mutable-memory effects, while external effect signatures, authority, transactions and rollback are absent."
+    },
+    "GAP-019": {
+      "status": "NOT_SUPPORTED",
+      "reason": "No versioned/provenance-complete function registry or operational artifact lifecycle is supplied."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Soft addressing, stochastic N-gram generation and predictive probabilities provide bounded stochastic structure, not a general calibrated probabilistic function semantics framework."
+    }
+  },
+  "source_specific_reasoning": "CONFIRMED is bounded to the NTM architectural projection, not to universal program induction. The exact paper supplies complete equations for a differentiable stateful memory runtime and detailed traces showing controller-directed read/write strategies on five tasks; this directly confirms Representation and Interpreter nodes and partially supports Compiler, Artifact, Trace, Validator and internal Composer patterns. The verdict does not accept the abstract card's weights-only, stateless-inference or weight-arithmetic framing. Latent programs are inferred rather than extracted, experiments are preliminary and unreleased, statistical uncertainty is absent, several generalization failures are visible, and no external effects or registry lifecycle exists.",
+  "confirmed_projection": "The exact 26-page paper and source directly confirm a bounded Representation-Interpreter architecture: a learned controller operates an explicit mutable memory through differentiable content/location addressing, erase/add writes and recurrent reads, with observable traces that can resemble compact algorithms. Confirmation is architectural and documentary. It is not proof of Turing-machine equivalence, exact learned algorithms, arbitrary program synthesis, reliable out-of-distribution behavior or reproducible empirical superiority.",
+  "projection_boundary": "These are 121CX projections from the exact registered arXiv v2 PDF, all 26 rendered pages, complete TeX source and bundled figures. No author implementation or checkpoint was available to execute. This model review is not a proof, independent replication, empirical validation of the reported curves, or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not prove that an NTM is semantically equivalent to a discrete Turing machine or von Neumann computer.",
+    "It does not extract a symbolic program or prove that the inferred copy, lookup, counting or sorting pseudocode is the exact learned computation.",
+    "It does not demonstrate arbitrary program synthesis, universal reliable computation or general-purpose software execution.",
+    "It does not define weight arithmetic, model merging or composition of independently learned functions.",
+    "It does not establish behavioral equivalence across controllers, checkpoints or symbolic algorithms.",
+    "It does not provide external effect contracts, authority, transactions, compensation or rollback.",
+    "It does not provide a versioned learned-program registry or provenance-complete artifact lifecycle.",
+    "It does not provide calibrated probabilistic function semantics beyond bounded predictive tasks and soft control weights.",
+    "It does not establish reproducible empirical superiority across seeds or implementations.",
+    "This review is not proof or independent empirical validation of the authors' experiments."
+  ],
+  "limitations_and_failure_boundaries": [
+    "The architecture uses finite 128-location memory in every experiment; copy operations wrap and overwrite prior memory beyond capacity.",
+    "Soft addressing reads and writes mixtures of locations, so focus precision and interference differ from exact discrete memory semantics.",
+    "Location shifts are circular and a fixed small shift kernel is assumed; this is not an unbounded tape or arbitrary pointer arithmetic.",
+    "Sharpening is needed to combat diffusion of head weightings over time, but no long-horizon numerical stability bound is supplied.",
+    "All reported memory is reset at episode boundaries, so the experiments do not establish persistent operational memory or continual learning.",
+    "A feedforward controller can transform only one memory vector per head per step; priority sort needs eight parallel heads for best performance.",
+    "The copy length-120 example contains local errors and a global duplicated vector that offsets all subsequent output.",
+    "Repeat-copy length generalization is stronger than LSTM, but repeat-count generalization fails to predict correct termination beyond the trained range.",
+    "Associative recall generalization is reported from curves without run variance, and performance degrades beyond twice the training item count.",
+    "Dynamic N-gram validation is sampled from the same distribution as training and the NTM remains worse than the analytic optimal estimator.",
+    "The claim of a statistically significant N-gram advantage gives no statistical test, run count, interval or uncertainty band.",
+    "Priority sort is fixed to 20 inputs and top 16 outputs; observed behavior is linear placement by priority, not the hypothesized binary heap or general sorting algorithm.",
+    "Most evidence consists of single learning curves and selected qualitative traces, with no raw data or repeated-run aggregation.",
+    "No training seeds, independent run count, failed-run denominator, standard deviations, confidence intervals or error bars are reported.",
+    "Baseline model sizes differ substantially by task; comparisons are not controlled for parameter count, memory capacity or compute.",
+    "The paper does not report wall-clock time, memory bandwidth, addressing complexity, hardware or energy cost.",
+    "No author code, dependency lock, synthetic data generator, checkpoint, raw results or result-generation script is released with the paper.",
+    "Third-party implementations cannot establish exact fidelity to the unpublished implementation and were excluded from evidence.",
+    "Turing completeness of recurrent neural networks in prior theory does not imply that a trained finite NTM learns arbitrary algorithms.",
+    "The external I/O boundary has no effect, safety or capability semantics, and internal memory mutations cannot be generalized to real-world side effects.",
+    "This review verifies documents and semantic claims; it does not reproduce the training runs or independently validate their measurements."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "SUPPORTED_BY_ABSTRACT_ONLY",
+    "verdict": "CENTRAL_ARCHITECTURE_CONFIRMED_WITH_MAJOR_CARRIER_AND_COMPOSITION_CORRECTIONS",
+    "corrections": [
+      "Verified the exact registered arXiv v2 paper, all 26 rendered pages, complete TeX source and all figures rather than relying on the abstract.",
+      "Corrected the weights-only carrier: NTM behavior depends on fixed runtime equations, controller parameters, dynamic controller state, read vectors, attention weightings and mutable external memory.",
+      "Corrected 'stateless inference': the runtime is explicitly stateful within an episode and resets only at episode boundaries.",
+      "Rejected 'weight arithmetic or layer stacking' as the composition rule; the paper composes differentiable memory primitives over time and does not merge independent weights or functions.",
+      "Separated a genuine bounded differentiable memory runtime from unsupported equivalence to a Turing machine or symbolic program interpreter.",
+      "Separated inferred latent pseudocode from an extracted, verified or versioned program artifact.",
+      "Recorded copy-memory capacity, repeat-termination failure, nonoptimal N-gram prediction and the distinction between linear priority placement and heap/general sorting.",
+      "Recorded unequal baseline sizes, absent seeds/run uncertainty/raw artifacts and the absence of an author-released implementation.",
+      "Did not call equations proof, selected traces semantic equivalence, reported experiments independent validation, or NTM validation of ignition."
+    ],
+    "prior_card_superseded": true
+  }
+}
