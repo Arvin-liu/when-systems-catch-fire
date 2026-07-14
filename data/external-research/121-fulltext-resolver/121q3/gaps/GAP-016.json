@@ -1,0 +1,61 @@
+{
+  "gap_id": "GAP-016",
+  "canonical_title": "No weight-space composition algebra for function combination",
+  "canonical_definition": "External research (families 1, 2, 6) shows that weight-space operations (model soups, task arithmetic, hypernetworks) enable function composition via parameter arithmetic. Ignition has no such algebra.",
+  "source_path": "120-gap-015-020-adjudications.jsonl + 121-gap-015-020-readjudications.jsonl",
+  "dependencies": [],
+  "affected_nodes": [
+    "N8",
+    "N2"
+  ],
+  "affected_assets": [],
+  "direct_evidence": {
+    "sources": [
+      "S120-039",
+      "S120-045"
+    ],
+    "summary": "S120-045 (Task Arithmetic) and S120-039 (Model Soups) demonstrate weight-space composition with VERIFIED identity."
+  },
+  "structural_evidence": {
+    "sources": [],
+    "summary": "S120-017 (LaSynth) and S120-018 (SPoC) show structural composition via execution feedback."
+  },
+  "analogical_evidence": {
+    "sources": [
+      "S120-002",
+      "S120-009"
+    ],
+    "summary": "121CX entries provide indirect support."
+  },
+  "negative_evidence": {
+    "sources": [
+      "S120-046",
+      "S120-077"
+    ],
+    "summary": "No source provides formal algebra guaranteeing composed weights correspond to composed functions. Empirical only."
+  },
+  "strongest_verified_sources": [
+    "S120-045",
+    "S120-039"
+  ],
+  "blocked_or_unknown_sources_excluded": [
+    "S120-046",
+    "S120-077"
+  ],
+  "supported_claims": [
+    "Weight-space operations (averaging, arithmetic, sign-aware merging) are practically effective",
+    "Composition works empirically for fine-tuned models"
+  ],
+  "unsupported_claims": [
+    "No formal algebra guarantees composed artifact = composed function",
+    "Geometric assumptions unvalidated beyond benchmark accuracy"
+  ],
+  "residual_gap": "Strong practical evidence but no formal algebraic grounding. Weight-space composition should be treated as empirical approximation, not strict function equivalence.",
+  "adjudication_status": "PARTIALLY_RESOLVED",
+  "confidence_basis": "MEDIUM. Multiple VERIFIED sources with practical demonstrations, but formal algebra is missing.",
+  "recommended_next_action": "Treat N8 (ComposerRouter) as empirical composition with documented limitations. Research formal algebra as follow-up.",
+  "prohibited_wording": "Do not claim 'weight-space composition is formally proven' or 'papers validate Function OS N8'.",
+  "previous_adjudication_120": "RESEARCH_CANDIDATE_INSUFFICIENT_EVIDENCE",
+  "previous_readjudication_121": "RESEARCH_CANDIDATE_INSUFFICIENT_EVIDENCE",
+  "timestamp": "2026-07-14T17:54:17Z"
+}
