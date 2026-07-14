@@ -1,0 +1,308 @@
+{
+  "source_id": "S120-024",
+  "canonical_title": "Neural Operator: Learning Maps Between Function Spaces With Applications to PDEs",
+  "authors": [
+    "Nikola Kovachki",
+    "Zongyi Li",
+    "Burigede Liu",
+    "Kamyar Azizzadenesheli",
+    "Kaushik Bhattacharya",
+    "Andrew Stuart",
+    "Anima Anandkumar"
+  ],
+  "year": 2023,
+  "source_family": 4,
+  "source_family_name": "neural_operators_and_function_spaces",
+  "identifier": "JMLR 24(89):1-97; arXiv:2108.08481",
+  "doi_or_identifier": "JMLR 21-1524; arXiv:2108.08481; ACM DOI 10.5555/3648699.3648788",
+  "url": "https://jmlr.org/papers/volume24/21-1524/21-1524.pdf",
+  "version": "JMLR volume 24 article 89, published 2023; submitted 2021-12, revised 2022-10, published 2022-12; 97-page canonical journal PDF",
+  "license": "CC BY 4.0",
+  "file_size_bytes": 7533814,
+  "page_count": 97,
+  "sha256": "1120cf00b75d2fef61a6aa34831def4a84d10e7838339c5bfedb9eca459c7da2",
+  "reviewed_at": "2026-07-14T11:22:05Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE_WITH_FROZEN_SOURCE_BINDING_CORRECTION",
+  "claim_support_status": "CONFIRMED",
+  "retrieval_and_integrity": {
+    "frozen_121b_binding": {
+      "registered_arxiv_identifier": "arXiv:2205.07366",
+      "registered_sha256": "b81bf7a53960b3298c4321d1da94d38173db23d0dd9e8688729ea2f5d40de184",
+      "registered_file_size_bytes": 5355737,
+      "actual_arxiv_identity": "Particle acceleration in an MHD-scale system of multiple current sheets, M. Nakanotani et al.",
+      "semantic_credit": "NONE: arXiv:2205.07366 is an unrelated plasma-physics paper and cannot support any neural-operator claim",
+      "preservation_boundary": "The frozen 121B manifest and old tables were not rewritten. The erroneous binding is recorded here and receives zero semantic credit."
+    },
+    "canonical_jmlr_binding": {
+      "landing_page": "https://jmlr.org/papers/v24/21-1524.html",
+      "direct_pdf": "https://jmlr.org/papers/volume24/21-1524/21-1524.pdf",
+      "sha256": "1120cf00b75d2fef61a6aa34831def4a84d10e7838339c5bfedb9eca459c7da2",
+      "file_size_bytes": 7533814,
+      "page_count": 97,
+      "complete_extraction": "46,302 words and 328,889 characters in the independent layout-preserving extraction",
+      "121cn_repair_match": true,
+      "authors_title_and_volume_match": true
+    },
+    "official_arxiv_metadata": {
+      "correct_identifier": "arXiv:2108.08481",
+      "submitted": "2021-08-19",
+      "latest_metadata_update": "2024-05-02",
+      "journal_reference": "Journal of Machine Learning Research 24(89):1-97, 2023",
+      "doi": "10.5555/3648699.3648788",
+      "review_choice": "The canonical JMLR PDF, rather than an arXiv revision, was used for semantic review."
+    },
+    "visual_review": "All 97 pages were rendered at 144 DPI into 25 contact sheets and visually inspected. Definitions, architecture diagrams, equations, theorem statements, PDE setups, result tables, zero-shot and inverse-problem figures, references, notation tables and proof appendices were legible; no blank, clipped, substituted or malformed page was found.",
+    "text_and_source_review": "The complete 46,302-word JMLR extraction was reviewed. The JmlrOrg/v24 repository was inspected at 585343b06f82ed9684c4dfc2731b7212a9b322f6 and contains the PDF and metadata for 21-1524 but no TeX source or experiment code.",
+    "paper_linked_code_audit": {
+      "graph_pde_url": "https://github.com/zongyi-li/graph-pde",
+      "graph_pde_current_head": "c28220a6558554a193303975adb60d8857d48c0c",
+      "graph_pde_last_prepaper_head": "08ab9d8f8e9d1a6d95017a6f803a53d8a603e66e",
+      "graph_pde_license": "MIT",
+      "graph_pde_findings": "The paper-era tree has 27 tracked files and standalone GNO/MGNO experiment scripts plus two model blobs. Current README marks it deprecated and unmaintained. Several MGNO scripts seed Torch and NumPy to zero, but there are no tests, dependency/environment lock, raw result receipts or complete immutable data bundle; scripts use hard-coded CUDA/paths and link external Google Drive datasets.",
+      "fourier_repository_url": "https://github.com/zongyi-li/fourier_neural_operator",
+      "fourier_repository_resolution": "Redirects to https://github.com/neuraloperator/neuraloperator",
+      "fourier_current_head": "86a8bc7812a31b42c4f7895693cf4ac11521c066",
+      "fourier_history_boundary": "Accessible redirected history begins in February 2023, after the journal paper's December 2022 publication; it does not preserve a paper-era immutable experiment state.",
+      "execution_boundary": "Paper-linked source structure and graph-pde Python syntax were inspected, but datasets, models and experiments were not run. Syntax success and current-package tests are not reproduction of the journal results."
+    }
+  },
+  "sections_reviewed": [
+    "abstract and sections 1-2, function-space learning problem, risks and precise discretization-invariance definitions",
+    "section 3, lift-integral/local-activation-project neural-operator architecture and preprocessing",
+    "section 4, graph, low-rank, multipole graph and Fourier parameterizations plus geometry restrictions",
+    "section 5, DeepONet and transformer relationships and discretization-invariant adaptations",
+    "section 6, Poisson, Darcy, Burgers, Navier-Stokes and Bayesian inverse formulations",
+    "section 7, all training settings, error/resolution/cost results, zero-shot super-resolution, inverse problem, refinability and noise robustness",
+    "sections 8-10, literature comparison, sources of error, universal approximation theory, conclusions and future directions",
+    "all references, notation/function-space appendices, theorem assumptions, lemmas and proofs through page 97",
+    "JMLR metadata and both paper-linked code repositories, including history and paper-era availability boundaries"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 1-9, abstract and sections 1-2, Definitions 1-4 and equations 2-5",
+      "checked_for": "function-space map, i.i.d. input measure, ERM objective, pointwise discretizations and fixed-parameter refinement convergence"
+    },
+    {
+      "anchors": "pp. 9-16, section 3, Figure 2 and equation 6",
+      "checked_for": "lift P, repeated integral/local/activation layers, projection Q, query-point runtime and error decomposition"
+    },
+    {
+      "anchors": "pp. 16-29, sections 4-5 and Figures 3-5",
+      "checked_for": "GNO/LNO/MGNO/FNO representations, computational complexity, uniform-periodic implementation boundary and related architecture special cases"
+    },
+    {
+      "anchors": "pp. 30-47, sections 6-7, Figures 6-15 and Tables 2-9",
+      "checked_for": "PDE specifications, training/test sizes, hardware, point results, resolution transfer, zero-shot claims, Bayesian inverse cost and noise robustness"
+    },
+    {
+      "anchors": "pp. 48-59, sections 8-10 and Theorems 8, 11-14",
+      "checked_for": "discretization and universal-approximation theorem scope, unstudied sample/optimization errors, conclusion and future-work boundaries"
+    },
+    {
+      "anchors": "pp. 60-97, references and appendices A-E",
+      "checked_for": "citation context, notation, Banach-space assumptions, finite-rank/integral approximation lemmas and complete proof chain"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "Neural operators parameterize nonlinear maps between function spaces using compositions of nonlocal integral operators, local linear maps and nonlinear activations, with finite-dimensional lifting and projection.",
+      "anchors": "sections 2-3, equation 6 and Figure 2"
+    },
+    {
+      "claim": "For fixed learned parameters, the proposed function-space architectures admit discretized implementations that converge to the continuum operator under refinement; this is the paper's precise discretization-invariance notion.",
+      "anchors": "Definitions 1-4, Theorem 8 and section 3.3"
+    },
+    {
+      "claim": "Under stated function-space, compactness, activation and approximation-property assumptions, the paper proves existence of neural operators approximating continuous nonlinear operators arbitrarily well in uniform-on-compact or risk norms.",
+      "anchors": "section 9, Theorems 11-14 and appendices"
+    },
+    {
+      "claim": "Graph, low-rank, multipole graph and Fourier neural operators instantiate different integral-kernel parameterizations with distinct geometry, cost and approximation tradeoffs.",
+      "anchors": "section 4"
+    },
+    {
+      "claim": "On the paper's Poisson, Darcy, Burgers and Navier-Stokes datasets, neural-operator variants are evaluated as learned PDE solution-operator surrogates; FNO gives the strongest tested numerical results and resolution transfer in several settings.",
+      "anchors": "sections 6-7 and Tables 2-9"
+    },
+    {
+      "claim": "The Bayesian inverse example reports 0.005 seconds per FNO forward evaluation versus 2.2 seconds for the selected traditional solver and 2.5 minutes versus over 18 hours for 30,000 MCMC evaluations, while also reporting 12 hours for offline data generation and training.",
+      "anchors": "section 7.3.4 and Figure 14"
+    }
+  ],
+  "function_concept_used_by_paper": "A function is an element of a Banach function space over a bounded domain, and the learned object is a finitely parameterized nonlinear operator Gθ mapping input functions to output functions. In PDE applications it approximates a coefficient-, forcing- or initial-condition-to-solution map. A fixed checkpoint can be evaluated through discretized observations at new resolutions, but it is an approximate black-box surrogate rather than a symbolic program, exact solver or function-space isomorphism.",
+  "specification_language": "The mathematical specification comprises input and output Banach spaces, bounded domains, a target operator or PDE with boundary/initial conditions, an input probability measure, paired function observations and a norm/risk objective. Experiments instantiate these with explicit PDE equations and distributions. The paper does not define a portable Function OS contract language, effects, permissions, pre/postconditions for arbitrary actions, schema evolution, service-level objectives or ambiguity-resolution rules.",
+  "representation_or_carrier": {
+    "continuum_model": "A parametric operator Gθ:A→U composed from a pointwise lifting P, repeated layers v↦σ(Wv+K(a;φ)v), and a pointwise projection Q.",
+    "parameterizations": "GNO represents kernels on graph neighborhoods; LNO uses low-rank separable kernels; MGNO uses multilevel graph structure; FNO represents convolutional kernels with truncated Fourier modes.",
+    "finite_runtime_instance": "Point samples or coefficients of input functions, coordinates/mesh, finite activations and output evaluations on chosen query points.",
+    "artifact": "Learned numerical weights plus architecture, normalization and discretization conventions; the paper does not release a complete exact journal checkpoint bundle.",
+    "boundary": "The carrier approximates operators over supported function distributions/domains. It is not arbitrary code, a semantic AST, a lossless function encoding or a proof certificate."
+  },
+  "compiler_or_generator": {
+    "training": "Empirical risk minimization with Adam on finitely sampled input-output functions estimates θ. Typical experiments use 1,000 training and 200 test instances for 500 epochs on one Nvidia V100 16GB GPU.",
+    "output": "A trained neural-operator checkpoint that numerically approximates the target map for the covered distribution and domain.",
+    "theory_boundary": "Universal approximation establishes representational existence under assumptions; it does not show that the specified optimizer, sample count or parameter budget finds that approximant.",
+    "classification": "Training is a stochastic approximate artifact generator, not a semantics-preserving compiler and not a theorem-backed lowering from arbitrary PDE text to a correct solver."
+  },
+  "interpreter_or_runtime": "For fixed parameters and input samples, a forward pass lifts pointwise features, repeatedly applies a discretized nonlocal kernel plus local transform and activation, then projects to requested output values. FNO uses FFT-based spectral convolutions on the paper's uniform-grid implementation; graph variants use sampled neighborhood interactions. Runtime output is deterministic for a fixed numerical environment and fixed inputs, while training, data generation, subsampling and noise injection need not be.",
+  "state_or_effect_model": "The modeled state is a field/function and, for dynamical PDEs, a spatial field evolving through time. Neural-operator evaluation is a numerical pure-map surrogate at the paper's abstraction level. It has no external effect/authority system, filesystem/network action model, transaction semantics, exceptions, idempotence, compensation, rollback or safety sandbox. Bayesian MCMC state belongs to a downstream inference procedure, not an effect contract for the operator.",
+  "composition_rule": "Within one neural operator, composition is explicit: P followed by a sequence of integral-plus-local nonlinear layers followed by Q. PDE solution operators can also be used inside repeated-query workflows such as MCMC. This does not establish an algebra for composing independently trained checkpoints, arbitrary Function OS artifacts, heterogeneous domains or weight vectors while preserving semantics.",
+  "equivalence_notions": [
+    {
+      "notion": "approximation in norm or risk",
+      "support": "Distance between target and learned operators is measured in an input-distribution Bochner norm or uniformly over compact input sets.",
+      "boundary": "Small error is approximate numerical agreement, not exact extensional equality or semantic equivalence."
+    },
+    {
+      "notion": "discretization consistency",
+      "support": "For fixed θ, discretized implementations converge to the corresponding continuum operator as a nested discretization is refined.",
+      "boundary": "This is not invariance of every finite-resolution prediction, training outcome or numerical backend; discretization error remains finite."
+    },
+    {
+      "notion": "universal approximation",
+      "support": "Theorems establish existence of sufficiently expressive neural operators under compactness, function-space and activation assumptions.",
+      "boundary": "Existence does not imply exactness, finite-sample learnability, optimizer convergence, feasible parameter growth or correctness outside the assumed compact/distribution support."
+    },
+    {
+      "notion": "posterior-summary similarity",
+      "support": "The Bayesian inverse example visually compares posterior means obtained with FNO and a traditional solver.",
+      "boundary": "No formal posterior-equivalence test, uncertainty interval or divergence criterion is supplied."
+    }
+  ],
+  "validation_regime": {
+    "tasks": "Poisson, Darcy flow, Burgers, Navier-Stokes, advection/noise robustness and a Navier-Stokes Bayesian inverse problem.",
+    "default_protocol": "Unless otherwise specified: 1,000 training instances, 200 test instances, 500 Adam epochs, scheduled learning-rate halving and one Nvidia V100 16GB GPU.",
+    "metrics": "Relative L2-type test errors, error versus resolution/data/parameters, time/complexity, qualitative fields and downstream posterior means.",
+    "resolution_tests": "The work studies approximation error under refined discretization and demonstrates selected FNO zero-shot spatial super-resolution from lower to higher grids.",
+    "baselines": "Finite-dimensional neural architectures and other operator-learning methods are compared. Traditional solvers are not used as general accuracy baselines, but a selected GPU solver is timed in the Bayesian inverse example.",
+    "noise_tests": "Clean/noisy train-test combinations use pointwise Gaussian perturbations. Smoothing Darcy/Navier-Stokes cases are more robust than discontinuous advection and steep-front Burgers; noisy training can trade clean accuracy for robustness.",
+    "uncertainty": "Tables report point estimates. The paper does not identify repeated training runs, seed counts, standard deviations, confidence intervals, hypothesis tests or calibration of operator error for a new input.",
+    "artifact": "Paper-linked repositories support architecture-level inspection, but lack an immutable journal-code-data-environment-run binding. No experiment was rerun in this review.",
+    "safety": "No adversarial, out-of-distribution detection, physical-constraint violation, stability-certificate, security, privacy or external-action safety acceptance is performed."
+  },
+  "uncertainty_model": "Inputs are modeled as samples from a probability measure µ and outputs may be noisy; the Bayesian inverse case places the learned deterministic surrogate inside pCN MCMC. The forward operator itself produces point predictions for fixed θ and input. Training initialization/data/subsampling and injected noise can be stochastic, but the journal results provide no run-level variance, calibrated predictive distribution, epistemic/aleatoric decomposition, abstention rule or confidence bound. The approximation theorems are not uncertainty calibration.",
+  "lifecycle_and_provenance": "A governed neural-operator artifact would need hashes and versions for equations/domain/BC/IC, train/test generators and samples, coordinate grids, preprocessing/normalization, architecture/modes, optimizer schedule, RNG seeds, source commit, dependencies/hardware, checkpoint, evaluation queries and numerical/error receipts. The paper supplies substantial narrative setup and code links, but the graph repository is now deprecated and the FNO URL redirects to a later package whose accessible history starts after publication. No immutable paper-era checkpoint/data/environment/run bundle, promotion approval, drift monitor, deprecation plan, migration rule or rollback registry is provided.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Function spaces, domains, target operator/PDE conditions, input measure and error norm provide a precise bounded mathematical function specification."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "The continuum operator architecture and GNO/LNO/MGNO/FNO parameterizations are explicit reusable numerical function carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "ERM produces a checkpoint from paired functions, but training is stochastic approximation without semantics-preserving compilation or optimizer-success guarantees."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "A checkpoint plus configuration is reusable across discretizations, but no exact immutable journal checkpoint/data/environment receipt is released."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "Integral/local layer evaluation and projection define a concrete numerical runtime for querying the learned operator."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Layers, meshes, modes and refinement error are inspectable, but no standardized captured trace, replay schema or causal explanation is supplied."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Held-out norm errors, resolution studies, cost measurements and noise tests form an explicit approximate numerical validator, not semantic verification."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "P, repeated nonlocal/local nonlinear layers and Q provide explicit operator-layer composition; confirmation is bounded to one architecture, not arbitrary artifact routing."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "The paper defines no versioned registry or lifecycle policy, and its two code links do not preserve a complete immutable publication bundle."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "PDE equations, domains, conditions, function spaces, input measure and error norms demonstrate a rigorous bounded FunctionSpec pattern."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "The lift-integral/local-nonlinearity-project architecture supplies explicit operator composition, while not supporting independent checkpoint or weight algebra."
+    },
+    "GAP-017": {
+      "status": "CONFIRMED",
+      "reason": "Norm/risk error, discretization convergence and held-out numerical tests provide concrete approximate equivalence and validation notions with clearly stated non-exact boundaries."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "The paper models mathematical field state and downstream MCMC state, but no external effect, authority, failure or rollback semantics."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Checkpoint, grid, data, equation and environment lineage is essential, yet the linked artifacts do not provide a publication-bound versioned receipt."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "The input measure, observation noise and Bayesian inverse workflow expose uncertainty needs, but the forward surrogate is a point predictor without calibrated predictive or run-level uncertainty."
+    }
+  },
+  "source_specific_reasoning": "CONFIRMED is appropriate for the bounded claim that neural operators learn approximate maps between function spaces: the paper precisely defines the target, architecture, discretization invariance, approximation norms, theorem assumptions, PDE experiments and runtime. 121CX gives no semantic credit to the frozen arXiv:2205.07366 artifact because it is unrelated plasma physics and instead uses the exact 121CN-repaired canonical JMLR PDF. The review distinguishes a paper-proved representation-existence theorem from trainability, finite-sample learning and this review itself; distinguishes discretization-invariant architecture from invariant training or identical finite-grid outputs; and bounds fast inference, super-resolution, robustness and Bayesian inverse claims to the reported settings and point estimates.",
+  "confirmed_projection": "The paper confirms a Function OS-relevant pattern in which a mathematical function-space specification is represented by a reusable parameterized operator, generated approximately from paired function observations, evaluated by a concrete discretized runtime, composed from explicit operator layers and checked with norm-based validators across selected resolutions. It also makes the missing lifecycle layer visible: a checkpoint is only governable when equations, distributions, meshes, preprocessing, code, environment and evaluation receipts are bound together.",
+  "projection_boundary": "This projection is based on the exact 97-page canonical JMLR PDF, every rendered page, complete extracted text, official JMLR/arXiv metadata and paper-linked repository/history inspection. Code syntax inspection was not experiment execution. The paper's formal theorem is reported within its stated assumptions; this model review is not a proof, formal verification, independent empirical validation, statistical replication, PDE-solver certification, posterior-equivalence test or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not support the frozen arXiv:2205.07366 binding, which is an unrelated MHD current-sheet particle-acceleration paper.",
+    "It does not show exact equality or isomorphism between learned and target function-space operators.",
+    "It does not show that empirical-risk training always finds the approximant whose existence is established by universal approximation.",
+    "It does not bound fixed-sample or fixed-parameter error, optimizer failure or practical parameter growth to a desired tolerance.",
+    "It does not make every finite-grid prediction invariant; discretized implementations converge under refinement and retain finite discretization error.",
+    "It does not establish arbitrary geometry support for the fast paper FNO implementation; that implementation uses uniform grids and periodic-function machinery with extensions required elsewhere.",
+    "It does not establish zero-shot super-resolution for all operators, resolutions or geometries.",
+    "It does not demonstrate general traditional-solver replacement; the general experiment suite omits solver accuracy comparison and the timing claim is bounded to one Bayesian inverse workflow.",
+    "It does not provide repeated-run statistics, calibrated predictive uncertainty, confidence intervals or statistical significance.",
+    "It does not enforce PDE constraints, conservation laws, stability or safe behavior outside the training distribution.",
+    "It does not define effect semantics, permissions, transactions, rollback or a versioned Function OS registry.",
+    "It does not release a complete immutable paper-era code/data/checkpoint/environment/run bundle.",
+    "This review does not reproduce or independently validate the published numerical results."
+  ],
+  "limitations_and_failure_boundaries": [
+    "Universal approximation is conditional on stated Banach/function-space, compactness, activation and approximation-property assumptions.",
+    "The theory is existential and does not characterize error at fixed p or N, sample complexity, optimizer convergence or feasible scaling.",
+    "The paper explicitly leaves balancing approximation, discretization and finite-data errors unstudied and notes optimization may miss the global minimum.",
+    "Training and evaluation use finite generated datasets from selected measures; performance outside their support is not certified.",
+    "Most experiments use 1,000 training and 200 test samples with point estimates and no disclosed repeated-run distribution.",
+    "FNO's efficient FFT realization is tied to structured uniform grids and periodic embedding/continuation assumptions; general geometry requires additional machinery.",
+    "Discontinuous/non-smoothing advection and steep-front Burgers cases are less noise-robust than smoothing operators.",
+    "Noise augmentation can improve noisy-test behavior while degrading clean-data accuracy.",
+    "Higher spatial resolution can help spatial approximation yet can worsen autoregressive temporal behavior through error accumulation in some settings.",
+    "The Bayesian inverse posterior comparison is based on means/figures and selected timing, not a formal posterior-distance or end-to-end uncertainty analysis.",
+    "The offline cost of data generation and training is material and task-specific; fast online inference does not erase that cost.",
+    "No physical residual, conservation, monotonicity, stability or adversarial/out-of-distribution acceptance gate is mandatory in the architecture.",
+    "The graph repository is deprecated/unmaintained, uses external data links and hard-coded runtime assumptions, and lacks complete tests/locks/receipts.",
+    "The Fourier repository URL redirects to a later package whose accessible history does not bind an exact prepublication experiment state.",
+    "No exact published checkpoint and complete dataset/environment manifest were available for independent rerun.",
+    "The old 121B wrong source binding demonstrates that title/identifier/hash provenance must be jointly validated before semantic credit."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "METADATA_ONLY_WITH_WRONG_FROZEN_ARXIV_BINDING",
+    "verdict": "FROZEN_ARXIV_BINDING_REJECTED; CANONICAL_JMLR_FUNCTION_SPACE_OPERATOR_CLAIM_CONFIRMED_WITH_APPROXIMATION_AND_ARTIFACT_BOUNDARIES",
+    "corrections": [
+      "Recorded that frozen arXiv:2205.07366 is unrelated plasma physics and assigned it zero semantic credit without rewriting frozen data.",
+      "Confirmed the 121CN repair to the exact 97-page canonical JMLR PDF and identified the correct arXiv mirror as 2108.08481.",
+      "Corrected the full title and JMLR author order and bound year/version to the journal publication record.",
+      "Replaced the coarse input description with function spaces, domains, target operator/PDE conditions, probability measure, paired observations and norm/risk objective.",
+      "Replaced discretization-invariant training with the paper's precise fixed-parameter architecture/refinement-consistency definition.",
+      "Bound universal approximation to its assumptions and existence scope; removed implications of exactness, isomorphism, optimizer success or finite-sample guarantee.",
+      "Separated deterministic fixed-checkpoint inference from stochastic training, sampling, subsampling, noise and Bayesian MCMC.",
+      "Confirmed explicit lift-layer-project composition but rejected arbitrary checkpoint or weight-space algebra.",
+      "Narrowed equivalence to approximate norm/risk agreement and discretization consistency, not exact semantic equivalence.",
+      "Bound FNO speed, zero-shot super-resolution, robustness and inverse-problem claims to the paper's tested settings and point estimates.",
+      "Audited both paper-linked repositories and recorded deprecation, redirect/history, environment/data and immutable-run-receipt limitations.",
+      "Did not call the model review proof, code syntax experiment reproduction or published numerical tables independent empirical validation."
+    ],
+    "prior_card_superseded": true
+  }
+}
