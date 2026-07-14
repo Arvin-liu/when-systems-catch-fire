@@ -1,0 +1,40 @@
+{
+  "task": "121Q3",
+  "instruction_commit": "6b0c14fb11c95c88c51e6441db5c06f9a1c752a4",
+  "baseline_head": "ba4c011dbab680b6041be126b8d658e4295171d4",
+  "baseline_pr": {
+    "number": 37,
+    "state": "OPEN",
+    "is_draft": true,
+    "mergeable": "MERGEABLE"
+  },
+  "branch": "records/ignition-121q3-gap-functionos-asset-mapping-20260715",
+  "source_of_truth_hierarchy": [
+    "121Q3 overlay (this round)",
+    "121Q2W final consistency seal",
+    "121Q2V/121Q2R/121Q2/121Q1/121CX latest valid overlay",
+    "Historical evidence card",
+    "Old report statistical descriptions"
+  ],
+  "frozen_boundaries": [
+    "Ψ₀ (psi-0-metavisor-formal-definition.md)",
+    "085 frozen v1",
+    "Old two-tables (unified function/case tables)",
+    "Historical evidence cards (no rewrite)",
+    "Function OS nodes (no freezing this round)"
+  ],
+  "non_goals": [
+    "No core architecture rewrite",
+    "No Function OS freezing",
+    "No PR merge/close",
+    "No batch re-reading of 84 full texts",
+    "No model switching/fallback/sub-agents",
+    "No amend/rebase/squash/force-push"
+  ],
+  "total_steps": 25,
+  "current_step": 0,
+  "current_step_status": "COMPLETE",
+  "next_step": 1,
+  "next_step_description": "Adjudication protocol, canonical name resolution, evidence routing",
+  "last_updated": "2026-07-14T17:52:20Z"
+}
