@@ -32,10 +32,10 @@
     "No amend/rebase/squash/force-push"
   ],
   "total_steps": 25,
-  "current_step": 1,
+  "current_step": 2,
   "current_step_status": "COMPLETE",
-  "next_step": 2,
-  "next_step_description": "GAP-015 independent adjudication",
-  "last_updated": "2026-07-14T17:53:18Z",
+  "next_step": 3,
+  "next_step_description": "GAP-016 independent adjudication",
+  "last_updated": "2026-07-14T17:53:50Z",
   "asset_count": 35
 }
