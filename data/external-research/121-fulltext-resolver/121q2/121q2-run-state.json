@@ -2,10 +2,10 @@
   "task": "121Q2R",
   "instruction_commit": "c7ec5acc49d74ceefa6b52d80f4940c6e1e9e07b",
   "baseline_head": "fae8241cfc4035b411bc71305a10650edea3181c",
-  "current_step": 5,
+  "current_step": 6,
   "current_step_status": "COMPLETE",
-  "next_step": 6,
-  "next_step_description": "84-source canonical semantic index",
+  "next_step": 7,
+  "next_step_description": "F1 neural weight program family synthesis",
   "draft_pr": 35,
   "phase_2_acceptance": {
     "canonical_prior22_total": 22,
@@ -47,5 +47,16 @@
       "UNKNOWN": 4
     }
   },
-  "last_updated": "2026-07-14T16:59:37Z"
+  "last_updated": "2026-07-14T17:00:11Z",
+  "canonical_index": {
+    "total_sources": 84,
+    "by_source": {
+      "121CX": 9,
+      "NONE": 5,
+      "121Q1": 4,
+      "121CX-extreme": 55,
+      "121Q2R": 11
+    },
+    "conflicts": 16
+  }
 }
