@@ -1,0 +1,267 @@
+{
+  "source_id": "S120-073",
+  "canonical_title": "Programming with a Differentiable Forth Interpreter",
+  "authors": [
+    "Matko Bošnjak",
+    "Tim Rocktäschel",
+    "Jason Naradowsky",
+    "Sebastian Riedel"
+  ],
+  "year": 2017,
+  "version": "ICML 2017 / PMLR 70 published paper; arXiv:1605.06640v3, revised 2017-07-23",
+  "doi_or_identifier": "PMLR 70:547-556; arXiv:1605.06640v3; DOI 10.48550/arXiv.1605.06640",
+  "identifier": "ICML 2017; cs.NE; cs.AI; cs.LG",
+  "url": "https://proceedings.mlr.press/v70/bosnjak17a.html",
+  "source_family": 1,
+  "source_family_name": "program synthesis and execution guidance",
+  "license": "Copyright 2017 by the authors in the PMLR paper; arXiv non-exclusive distribution license 1.0 for arXiv v3",
+  "sha256": "4c925dc0a22729f559cf0abeacf45499ec4a419f7af3f86a7eda5650e411d472",
+  "file_size_bytes": 510997,
+  "page_count": 10,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "registered_url": "https://proceedings.mlr.press/v70/bosnjak17a/bosnjak17a.pdf",
+    "sha256": "4c925dc0a22729f559cf0abeacf45499ec4a419f7af3f86a7eda5650e411d472",
+    "file_size_bytes": 510997,
+    "page_count": 10,
+    "registered_pdf_visual_check": "all 10 pages rendered and individually inspected; equations, Forth listings, Figures 1-2, Tables 1-3, discussion and references are complete and legible",
+    "official_supplement": {
+      "url": "https://proceedings.mlr.press/v70/bosnjak17a/bosnjak17a-supp.pdf",
+      "sha256": "b55dbd47c9b7e3faa31385286f4e17e3304af575e9d0f460ab72eb8d84a635d8",
+      "file_size_bytes": 836587,
+      "page_count": 8,
+      "visual_check": "all 8 pages rendered and individually inspected; Forth-word semantics, implementation equations, complete BubbleSort execution, runtime plots, experimental details, program-counter traces and full word-algebra sketch are legible"
+    },
+    "arxiv_metadata": "v1 submitted 2016-05-21; v2 submitted 2016-11-05; v3 revised 2017-07-23; four named authors; ICML 2017 comment; primary cs.NE with cs.AI and cs.LG cross-lists",
+    "source_archive": {
+      "url": "https://export.arxiv.org/e-print/1605.06640v3",
+      "sha256": "1848c8ad7a8a6a9eb04f2077089ae03c12e9fb0bbeb9fa84b388080fbca718a5",
+      "file_size_bytes": 229895,
+      "contents": "complete LaTeX, bibliography, style and figures corresponding to the published paper and supplement; no executable TensorFlow implementation, dependency environment, datasets, checkpoints, seeds, run logs or table-generation receipts"
+    },
+    "linked_public_repository": "No paper-authored code repository is linked from the PMLR paper page, main paper, supplement or arXiv source, and no credible official implementation was identified during the bounded audit."
+  },
+  "sections_reviewed": [
+    "abstract, introduction and stated contributions",
+    "Forth abstract machine, supported subset and low-level lowering",
+    "continuous machine-state encoding and differentiable Forth words",
+    "program-sketch syntax, encoder and decoder families",
+    "execution RNN, symbolic execution and branch interpolation",
+    "input-output training objective and discretized test execution",
+    "sorting and addition setups, tables and length generalization",
+    "word-algebra model, baselines and Common Core result",
+    "discussion, scaling/training failures, related work and future boundary",
+    "supplemental word semantics, BubbleSort trace, optimization plots, hyperparameters, program-counter traces and complete WAP sketch",
+    "complete arXiv source and official version/license metadata"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "main sections 2-3.3, pp. 2-4; Figure 1; supplement Tables 4-5",
+      "checked_for": "symbolic and continuous machine state, Forth subset, sketch lowering, slot language, encoder/decoder contracts and execution recurrence"
+    },
+    {
+      "anchors": "main sections 3.4-3.5, pp. 4-5; supplement C.2/E",
+      "checked_for": "symbolic-execution/if-branch optimization, input-output loss, optimization setup, ten-run runtime plot and missing reproducibility receipts"
+    },
+    {
+      "anchors": "main sections 4.1-4.3, pp. 5-6; Tables 1-2; supplement C.1/E.1-E.3",
+      "checked_for": "sorting/addition denominators, test-length claims, train-length-four failures, training sizes and convergence boundaries"
+    },
+    {
+      "anchors": "main section 4.4, pp. 6-7; Table 3; supplement E.4/G",
+      "checked_for": "Common Core split, direct-answer WAP architecture, baselines, 96-percent result and absence of an explicit formula artifact"
+    },
+    {
+      "anchors": "main sections 5-7, pp. 7-8",
+      "checked_for": "120-state BubbleSort training instability, role of prior structure, differentiable-only environment boundary and future non-differentiable transitions"
+    },
+    {
+      "anchors": "supplement B/Figures 3-6/Listings 4, pp. 3-8",
+      "checked_for": "complete symbolic trace, training-example curves, runtime-relative plots, program-counter trajectories and full 55-line WAP sketch"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "A subset of Forth can be represented as a differentiable dual-stack abstract machine whose program sketches mix fixed words with trainable transition slots.",
+      "anchors": "sections 2-3.3; Figure 1; supplement A"
+    },
+    {
+      "claim": "The trainable slot language exposes static/observe/linear/sigmoid/tanh encoders and choose/manipulate/permute decoders, optimized from only initial and target machine states.",
+      "anchors": "sections 3.2 and 3.5"
+    },
+    {
+      "claim": "Symbolic execution and interpolation of branch-free branches reduce recurrent execution work, while loops/function calls can still require full unrolling.",
+      "anchors": "section 3.4; supplement C.2"
+    },
+    {
+      "claim": "Strong procedural sketches can learn sorting and addition from small synthetic sets and generalize to longer test sequences when the intended discrete behavior is learned.",
+      "anchors": "sections 4.2-4.3; Tables 1-2; supplement C.1"
+    },
+    {
+      "claim": "A BiLSTM plus differentiable Forth sketch reaches 96 percent on the 200-item Common Core test set, one point above the cited same-data Seq2Seq result and below a 98.5-percent data-augmented baseline.",
+      "anchors": "section 4.4; Table 3; supplement E.4/G"
+    }
+  ],
+  "function_concept_used_by_paper": "A function is a Forth word or subroutine interpreted as a machine-state transition w:S→S. A program is a sequence/composition of such transitions, and a sketch replaces selected transitions with trainable neural slots. This is a concrete hybrid symbolic-neural function architecture, but the learned behavior is identified by finite input-output loss rather than a proof of semantic equivalence.",
+  "representation_or_carrier": "The symbolic carrier is low-level Forth code plus stack comments and sketch slots. The differentiable carrier is S=(D,R,H,c): matrix-valued data and return stacks with soft pointers, a heap and an attention-valued program counter. Slot encoders observe named state elements; decoders emit weighted Forth-word choices or direct linear/softmax state transformations. Training artifacts are neural parameters, but no serialized checkpoint or code package is released.",
+  "specification_language": "The external specification combines an ordinary Forth subset with slots written `{ encoder -> decoder }`. Encoders are static, observe and repeated linear/sigmoid/tanh transformations; decoders are choose, manipulate and permute over named words/state elements. Stack-effect comments and fixed control structure express intended interfaces. The language has no static types beyond shapes/addresses, no declared pre/postconditions, effects, permissions, failure modes, uncertainty, version constraints or resource bounds.",
+  "compiler_or_generator": "A Forth sketch is lowered to low-level code with branches, jumps and labeled subroutine blocks; each slot is replaced by a parameterized neural transition. Symbolic execution collapses branch-free known-word sequences and certain if-branches are interpolated in parallel. Gradient descent then fits slot parameters from start/end states. This is a concrete described hybrid compiler/trainer, but the implementation is not released and no lowering or semantic-preservation proof is supplied.",
+  "interpreter_or_runtime": "The ∂4 execution RNN repeatedly applies every low-level transition to the current continuous state and weights next states by the soft program counter. Data/return-stack pointers, heap addressing, calls, loops and branches are differentiable approximations of the Forth machine. At test time transduction memory is discretized. The runtime is described through equations, listings and traces, but no executable public runtime was audited, and external non-differentiable effects are explicitly future work.",
+  "composition_rule": "Forth concatenation, subroutine calls, recursion, loops and branches compose known transitions; sketches splice trainable slots into this control skeleton. Symbolic execution composes branch-free sequences into one transition, while branch interpolation weights two branch outputs. Composition is structural and operational, not governed by type/effect compatibility, learned-module contracts, equivalence checking, regression tests or capability boundaries.",
+  "state_or_effect_model": "The state model explicitly contains two mutable stacks, a random-access heap and a program counter, with differentiable read/write, push/pop, arithmetic, comparisons, jumps and subroutine control. These are internal machine effects inside a fixed tensor runtime. No model is provided for filesystem/network/robot/environment authority, irreversible actions, transactions, idempotence, compensation, rollback or concurrent interference; real-environment non-differentiable transitions are deferred to future work.",
+  "uncertainty_model": "The learned program counter and word selections may be distributed during training and are discretized for some tests, but these soft weights are optimization representations rather than calibrated epistemic or aleatoric uncertainty. The paper reports point accuracies and a relative-runtime plot from ten repeats, yet gives no model-run seed count, variance/confidence intervals, significance tests, calibration, failed-run denominator or raw run data. Randomly generated datasets and random hyperparameter search are described without seeds. Consequently the exact stability and reproducibility of the neural results are unresolved.",
+  "validation_regime": {
+    "formal": "explicit symbolic and continuous transition equations, stack-word definitions and execution traces; no mechanized semantics, proof of lowering correctness, convergence theorem or semantic-equivalence proof",
+    "sorting": "256 train, 32 development and 32 test examples; training sequence lengths 2/3/4 and test lengths 8/64. Compare and Permute reach 100 percent after length-2/3 training, but length-4 training drops to 49.22/20.65 and 19.82/7.81 respectively",
+    "addition": "512 train, 256 development and 1024 test examples; train lengths 2/4/8 and test lengths 8/64. Choose is 100 percent in the table; Manipulate is 98.58/99.49 after length-2 training and 100 percent otherwise. A length-24 to length-128 result is asserted without a table or released run receipt",
+    "word_algebra": "Common Core split of 300 train, 100 development and 200 test; ∂4 scores 96 percent, cited same-data Seq2Seq 95 percent, data-augmented GeNeRe 98.5 percent and a local classifier 55.5 percent. ∂4 predicts the final answer directly rather than emitting an inspectable formula",
+    "optimization": "Adam, gradient clipping at 1.0, gradient noise and development-set random search over learning rate/batch/noise parameters; no seeds, run count, per-run outcomes or selected-search ledger",
+    "runtime": "relative BubbleSort speedups over ten repeated runs are plotted against sequence length, without absolute times, hardware, variability data or code",
+    "trace": "a single BubbleSort program-counter trajectory is shown at early, middle and final training stages; illustrative trace only",
+    "artifact": "published paper, official supplement and complete TeX source are available; no executable implementation, environment lock, datasets, checkpoints, logs or result-generation scripts were identified",
+    "reproducibility": "equations and sketches are unusually specific, but missing code, seeds, raw trials, dependency pins and machine receipts prevent exact present-day reproduction"
+  },
+  "equivalence_notions": [
+    {
+      "notion": "symbolic/continuous execution correspondence",
+      "support": "With no trainable slots and one-hot state/program-counter values, the authors state that the final recurrent state corresponds to symbolic execution.",
+      "boundary": "The statement is not proved, mechanized or tested over the supported word subset; soft states and numerical approximation weaken exact correspondence."
+    },
+    {
+      "notion": "input-output agreement",
+      "support": "Cross-entropy on selected final stack values/pointers trains a slot to match finite target end states.",
+      "boundary": "Finite end-state agreement does not establish transition-level semantic equivalence, safety or behavior on all inputs."
+    },
+    {
+      "notion": "length generalization after discretization",
+      "support": "Some learned sorting/addition sketches retain 100-percent point accuracy from short training lengths to displayed test lengths 64.",
+      "boundary": "The result is conditional on converging to the intended discrete behavior; length-4 sorting training fails sharply and run-level uncertainty is absent."
+    },
+    {
+      "notion": "symbolic-execution replacement",
+      "support": "A branch-free sequence of known words is replaced with one composed transition derived by symbolic execution.",
+      "boundary": "No compiler-correctness proof, executable test suite or numerical error analysis establishes preservation for the published implementation."
+    }
+  ],
+  "lifecycle_and_provenance": "The paper identifies fixed Forth source, lowered code, trainable slots, datasets and learned parameters, but publishes only the paper/supplement/source text. It defines no immutable artifact identity, source-data hash, seed, model/checkpoint lineage, compiler/runtime version, dependency graph, training receipt, per-slot validation result, approval, deployment, usage history, monitoring, deprecation, migration, rollback or tombstone. Forth names identify words inside one sketch, not a governed versioned function registry.",
+  "limitations_and_failure_boundaries": [
+    "The exact registered PMLR PDF and supplement are source-complete, but no paper-authored executable runtime, checkpoint, dataset package or experiment ledger was identified.",
+    "The implementation covers only a subset of Forth; Turing completeness of the language does not imply complete Forth compatibility or practical scalability of ∂4.",
+    "Continuous stacks, heap addressing and program counters approximate symbolic machine state and can accumulate numerical ambiguity.",
+    "The correspondence between one-hot recurrent execution and symbolic execution is stated rather than formally proved or exhaustively tested.",
+    "Finite input-output supervision underdetermines slot semantics and cannot establish behavioral equivalence on all states.",
+    "Sorting generalization is conditional: both sketches score 100 percent after length-2/3 training but fail badly when trained on length 4.",
+    "The paper attributes length-4 failure to long unrolled execution and training instability; BubbleSort at input length 4 uses 120 machine states.",
+    "The Permute sketch does not always converge to an output of the correct length, and both sketches are described as nontrivial to train.",
+    "The stronger Compare and Choose results depend on substantial human-supplied algorithmic scaffolding, so learned capability should not be attributed to unconstrained program induction.",
+    "Test-time discretization is part of the displayed transduction results and changes the continuous training regime.",
+    "The claimed perfect length-24-to-128 addition experiment is not accompanied by a table, per-run data or artifact receipt.",
+    "Common Core has only 200 test items; the 96-percent result is one point above the cited same-data Seq2Seq result and below the 98.5-percent extra-data GeNeRe result.",
+    "The WAP system predicts final answers directly and does not produce the explicit formula representation used by template-mapping systems, limiting interpretability claims.",
+    "No model seed count, error bars, confidence intervals, significance tests or failed-run accounting is reported for accuracy results.",
+    "The runtime plot uses ten repeats but omits absolute time, hardware, raw measurements and executable benchmarking code.",
+    "Hyperparameter search uses development data but has no released search space, selected-trial ledger or seed.",
+    "The machine effect model is internal tensor memory only; non-differentiable transitions in real environments are explicitly future work.",
+    "No type/effect/capability system, sandbox, transaction, compensation or rollback boundary is defined.",
+    "No versioned registry, provenance-complete learned-slot package, admission receipt or lifecycle governance is present.",
+    "This review checks documentary evidence and source integrity; it does not reproduce the experiments or independently validate their measurements."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove that a learned slot is the intended algorithm or is semantically equivalent on all inputs.",
+    "It does not prove compiler/lowering correctness, numerical fidelity or safe execution.",
+    "It does not establish reliable optimization for longer unrolls; its length-4 sorting results show the opposite boundary.",
+    "It does not establish a released, reproducible, production-ready differentiable Forth system.",
+    "It does not provide external effect contracts, permissions, transactions, rollback or a versioned artifact registry.",
+    "It does not define calibrated stochastic function semantics or uncertainty-aware admission.",
+    "It does not empirically validate ignition, Function OS deployment or neural-weight composition.",
+    "The model review is not proof or independent empirical validation of the authors' experiments."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "The Forth-plus-slot syntax is a concrete executable specification language for fixed control structure and underspecified trainable transitions, bounded by untyped contracts and missing effects."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "Lowering, slot replacement, symbolic execution, branch interpolation and gradient fitting define a concrete hybrid compiler/trainer path, though no code or correctness proof is released."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "One-hot correspondence, finite end-state agreement and length generalization are useful equivalence proxies, not general semantic preservation."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Stacks, heap and program-counter mutations are explicit internal effects, while external capabilities, transactions and rollback are absent."
+    },
+    "GAP-019": {
+      "status": "NOT_SUPPORTED",
+      "reason": "The paper has no versioned/provenance-complete learned-function registry or operational lifecycle."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Distributed state and soft word choices represent optimization uncertainty, but no calibrated stochastic function semantics or uncertainty governance is defined."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Forth words, stack-effect comments, fixed control skeletons and explicit trainable slots form concrete bounded FunctionSpecs."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Low-level Forth, dual stacks, heap, program counter, soft pointers and slot networks provide explicit symbolic and differentiable carriers."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "Sketch lowering, slot substitution, symbolic execution and differentiable parameter fitting are a concrete described compiler/trainer pipeline."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Learned slot parameters constitute artifacts in the described system, but no executable implementation or checkpoint package is released."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The execution RNN gives explicit operational semantics for continuous Forth state transitions."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "The supplement shows full symbolic and program-counter traces, but no machine-readable per-run trace ledger is released."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Final-state loss and held-out task accuracy validate selected outputs, without semantic postconditions, independent tests, uncertainty or proof."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Forth sequencing, calls, recursion, loops, branches and slot insertion concretely compose transitions, bounded by absent compatibility and safety checks."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "No versioned, provenance-complete or rollback-capable registry is defined."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "NO_PRIOR_SEMANTIC_EVIDENCE_CARD",
+    "verdict": "NEW_CODEX56_EXTREME_CARD_WITH_CONFIRMED_BOUNDED_SUPPORT",
+    "corrections": [
+      "Verified the exact registered PMLR paper, official supplement, all 18 rendered pages and complete arXiv v3 source rather than relying on abstract claims.",
+      "Separated the concrete Forth/slot/compiler/interpreter architecture from the absence of a released executable implementation or checkpoints.",
+      "Bounded perfect length-generalization language to runs that learn the intended discrete behavior and recorded the sharp length-4 sorting failures.",
+      "Placed the 96-percent Common Core result against both the 95-percent same-data Seq2Seq and 98.5-percent extra-data GeNeRe baselines.",
+      "Separated distributed program-counter weights from calibrated probabilistic semantics.",
+      "Recorded unreported model-run uncertainty, missing seeds/raw receipts, internal-only effects and absent lifecycle governance.",
+      "Did not treat this model review, symbolic equations or unreproduced reported results as proof or independent empirical validation."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "The exact paper and supplement directly confirm a bounded hybrid FunctionSpec-Representation-Compiler-Interpreter-Composer architecture: a Forth sketch supplies reusable control structure, trainable slots fill underspecified state transitions, a differentiable abstract machine executes them, and symbolic execution composes known segments. Confirmation is architectural, not a proof or independent replication: code/checkpoints are absent, semantic equivalence is not proved, long unrolls fail to train, empirical uncertainty is sparse, and external effects/versioned lifecycle are missing.",
+  "source_specific_reasoning": "CONFIRMED is justified because the source contributes a detailed implemented architecture, not merely a perspective: exact state equations, supported words, slot grammar, lowering/execution rules, optimization procedures, full sketches, traces and bounded experiments jointly establish the central Function OS projection. The verdict does not promote all claims. Artifact reproducibility remains partial, exact equivalence is unsupported, Common Core gains are small and conditional, sorting exposes a major scaling/training boundary, and no public code or governed registry was found.",
+  "projection_boundary": "These are 121CX projections from the exact 10-page registered PMLR paper, 8-page official supplement, every rendered page, complete arXiv v3 source and official metadata/license. This model review is not a mechanized proof, execution of the described runtime, reproduction of any experiment, independent empirical validation, or validation of ignition.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T08:25:10Z"
+}
