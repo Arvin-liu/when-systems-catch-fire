@@ -1,0 +1,285 @@
+{
+  "source_id": "S120-082",
+  "canonical_title": "Language Models are Super Mario: Absorbing Abilities from Homologous Models as a Free Lunch",
+  "authors": [
+    "Le Yu",
+    "Bowen Yu",
+    "Haiyang Yu",
+    "Fei Huang",
+    "Yongbin Li"
+  ],
+  "year": 2024,
+  "source_family": 6,
+  "source_family_name": "Model merging and weight-space arithmetic",
+  "identifier": "ICML 2024; PMLR 235:57755-57775; arXiv:2311.03099v3",
+  "doi_or_identifier": "PMLR 235:57755-57775; arXiv:2311.03099v3; OpenReview fq0NaiU8Ex",
+  "url": "https://proceedings.mlr.press/v235/yu24p.html",
+  "version": "ICML 2024 published paper and arXiv v3, revised 2024-06-13; frozen registry URL arXiv:2402.12045 is a different quant-ph paper",
+  "license": "Published paper and OpenReview record are CC BY 4.0; frozen wrong-binding arXiv PDF has the arXiv non-exclusive distribution license; audited code repository has no LICENSE file",
+  "file_size_bytes": 1480470,
+  "page_count": 8,
+  "sha256": "b072eab5f384ce20385f0b43c50b0a41878e9be13534986eb9d6910469aefc81",
+  "reviewed_at": "2026-07-14T10:35:37Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE_WITH_FROZEN_SOURCE_BINDING_CORRECTION",
+  "claim_support_status": "CONFIRMED",
+  "retrieval_and_integrity": {
+    "frozen_registry_binding": {
+      "registered_title": "DARE: Language Model Alignment via Activation Level Fine-tuning",
+      "registered_url": "https://arxiv.org/pdf/2402.12045",
+      "registered_sha256": "b072eab5f384ce20385f0b43c50b0a41878e9be13534986eb9d6910469aefc81",
+      "registered_file_size_bytes": 1480470,
+      "registered_page_count": 8,
+      "hash_size_page_match": true,
+      "actual_pdf_identity": "Broadband parametric amplification in DARTWARS, Marco Faverzani et al., arXiv:2402.12045v1 [quant-ph]",
+      "semantic_credit": "NONE: the exact frozen PDF is unrelated quantum-device physics and contains no DARE model-merging method",
+      "preservation_boundary": "The frozen registry, historical atlas card and manifests were not rewritten. This card records the corruption and does not pretend that the frozen bytes support the model-merging claim."
+    },
+    "intended_source_recovery": {
+      "basis": "The frozen metadata jointly names first author Yu, year 2024, method DARE, multiple-model weight arithmetic and source-checkpoint composition. These fields uniquely identify the ICML paper that introduces Drop And REscale; the registered title and arXiv identifier do not.",
+      "published_pdf_url": "https://proceedings.mlr.press/v235/yu24p.html",
+      "published_pdf_sha256": "0a2c1e2c245ee548fdf421df2615c613e962e864074e37ccd748d5c5d15f2d8c",
+      "published_pdf_file_size_bytes": 6553079,
+      "published_pdf_page_count": 21,
+      "published_status": "ICML 2024 Poster; Proceedings of Machine Learning Research volume 235, pages 57755-57775",
+      "openreview_forum": "https://openreview.net/forum?id=fq0NaiU8Ex"
+    },
+    "visual_review": "All 8 pages of the exact frozen wrong-binding PDF and all 21 pages of the recovered official PMLR paper were rendered at 144 DPI and visually inspected. Equations, algorithms, tables, figures, references and appendices were legible; no blank, clipped, substituted or malformed page was found.",
+    "text_and_source_review": "The complete extracted text of both PDFs and all 35 files in the arXiv v3 source package were reviewed, including the method derivation, every main/appendix result table, hyperparameters, impact statement and limitations.",
+    "arxiv_source": {
+      "url": "https://arxiv.org/src/2311.03099v3",
+      "sha256": "1441b8897dd01b5b397e7f19a7224aaf623eda06331ba5b88f1ab3612211ea3d",
+      "file_count": 35,
+      "contents": "Complete TeX, bibliography, style and figure assets; no raw run outputs, checkpoints or environment lock"
+    },
+    "official_code_repository": {
+      "url": "https://github.com/yule-BUAA/MergeLM",
+      "audited_current_head": "6d49ad96fd69c92013654b837041b868aa806564",
+      "audited_commit_count": 17,
+      "tracked_file_count": 24,
+      "head_date": "2024-05-05",
+      "license": "NO LICENSE FILE",
+      "artifact_findings": "The repository implements DARE-style random masking/rescaling before Task Arithmetic, averaging, Fisher, RegMean and TIES. All tracked Python files passed syntax compilation, with one invalid-escape SyntaxWarning. It has no tests, CI, tags, dependency lock, raw result logs, checkpoints or immutable paper-run receipt.",
+      "evaluation_leakage_finding": "merge_plms_glue.py assigns the original GLUE validation split to eval_dataset=test_dataset and then selects scaling coefficients, Fisher examples, RegMean examples, TIES masks and DARE drop rates by maximizing metrics on that same reported test dataset. Encoder selection and evaluation are therefore not separated.",
+      "portability_findings": "utils/load_config.py contains author-machine cache paths. README GPU memory instructions contradict an unqualified reading of the paper's no-GPU rhetoric for the full decoder merge/evaluation workflow."
+    },
+    "execution_boundary": "Repository source structure and syntax were audited, but model downloads and experiments were not executed. Current code head predates arXiv v3 by about five weeks and is a mutable implementation state, not proof that it generated the published numbers."
+  },
+  "sections_reviewed": [
+    "exact frozen 8-page arXiv:2402.12045 PDF, establishing that it is unrelated DARTWARS quantum-amplifier work",
+    "official paper abstract and sections 1-2, motivation, homologous-model scope and related merging methods",
+    "section 3, task-vector definition, Drop And REscale equations, affine-layer expectation argument and merge integration",
+    "section 4, encoder/decoder experiments, ablations, failure cases and all main tables/figures",
+    "section 5 conclusion, impact statement and limitations",
+    "appendix algorithms, settings, hyperparameter grids, detailed GLUE/decoder results and additional analyses",
+    "complete arXiv v3 TeX package and complete audited official repository tree/history"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "frozen PDF pp. 1-8",
+      "checked_for": "identity, domain and absence of any language-model DARE method; the document is Broadband parametric amplification in DARTWARS"
+    },
+    {
+      "anchors": "published paper pp. 3-5, section 3, equations 1-6 and Figure 2",
+      "checked_for": "fine-tuned delta definition, Bernoulli drop mask, 1/(1-p) rescaling, affine-layer expectation and use before Task Arithmetic"
+    },
+    {
+      "anchors": "published paper pp. 5-9, section 4, Tables 1-4 and Figures 3-5",
+      "checked_for": "encoder/decoder protocols, non-uniform task trades, high-drop behavior, wrong-base collapse and direct-weight-drop failure"
+    },
+    {
+      "anchors": "published paper pp. 10-21, conclusion and appendices A-F",
+      "checked_for": "algorithms, hyperparameter search, dynamic leaderboard claim, hardware, missing uncertainty reporting and extended results"
+    },
+    {
+      "anchors": "MergeLM merge_plms_glue.py lines 172 and 219-307 plus model_merging_methods",
+      "checked_for": "reported-test-set hyperparameter selection, random masks, rescaling, merging operators and artifact limitations"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "DARE constructs a sparse task delta by randomly dropping delta parameters and rescaling retained entries by 1/(1-p), then applies an existing model-merging operator to the processed same-base deltas.",
+      "anchors": "section 3.1-3.2, equations 1-6 and Algorithms 1-2"
+    },
+    {
+      "claim": "For one affine layer with a fixed input and independent Bernoulli mask, rescaling makes the masked layer output equal to the original fine-tuned layer output in expectation.",
+      "anchors": "section 3.2, equations 3-5"
+    },
+    {
+      "claim": "On the selected encoder and decoder benchmarks, DARE preprocessing often improves existing merging methods and can tolerate high drop rates when fine-tuning deltas are small.",
+      "anchors": "section 4, Tables 1-4 and Figures 3-5"
+    },
+    {
+      "claim": "Compatibility with the same pretrained base is operationally critical; using an incorrect base or directly dropping fine-tuned weights can collapse performance.",
+      "anchors": "section 4.3-4.4 and appendix ablations"
+    },
+    {
+      "claim": "The paper's open-ended merger examples are weight-space capability combinations, not guarantees of equivalence, monotonic improvement or safe behavior.",
+      "anchors": "Tables 1-2, limitations and impact statement"
+    }
+  ],
+  "function_concept_used_by_paper": "A model is represented as a pretrained base parameter vector plus a task-specific fine-tuning delta. DARE stochastically sparsifies and rescales each delta, after which a compatible merging rule such as Task Arithmetic, averaging, Fisher, RegMean or TIES produces one combined parameter vector. This directly instantiates bounded weight-space function composition among homologous same-architecture, same-base neural models; it is not activation-level fine-tuning, arbitrary callable composition or semantic equivalence.",
+  "specification_language": "The merge recipe comprises exact base/source checkpoint identities, task deltas, drop probability p, rescaling choice, merge method and method-specific coefficients. This is an operational numerical recipe, not a typed FunctionSpec with named input/output schemas, preconditions, effects, authority, failure semantics, resource budgets or lifecycle policy.",
+  "representation_or_carrier": {
+    "base_carrier": "pretrained checkpoint parameter vector theta_PRE",
+    "source_carrier": "fine-tuned checkpoint theta_SFT^t and derived task delta delta^t = theta_SFT^t - theta_PRE",
+    "dare_carrier": "Bernoulli mask plus sparse rescaled task delta hat_delta^t",
+    "composed_carrier": "one merged parameter vector theta_M with the same architecture and tensor shapes",
+    "compatibility_boundary": "The evaluated source models are homologous derivatives of one base. Same shape alone is insufficient when the actual originating base differs."
+  },
+  "compiler_or_generator": {
+    "dare_transform": "Sample an elementwise Bernoulli drop mask, zero selected delta entries and divide retained entries by 1-p.",
+    "merge_transform": "Feed processed deltas/checkpoints to an existing arithmetic merger and materialize one merged checkpoint.",
+    "classification": "This is a concrete artifact generator and weight-space lowering pipeline, but only a partial compiler analogy because the input intent is not a declarative callable contract and no semantic-preservation theorem is supplied."
+  },
+  "interpreter_or_runtime": "The merged checkpoint executes through its ordinary transformer forward pass and decoding/evaluation stack. The paper defines no function bytecode, evaluator for independently represented callable functions, effect handler, capability runtime, exception contract or general Function OS interpreter.",
+  "state_or_effect_model": "Merging reads and writes large parameter tensors; inference maintains ordinary model/cache state. Benchmarks exercise text generation and classification, but the method gives no language-level effect signatures, authority, transactions, idempotence, compensation, rollback or external-action safety semantics.",
+  "composition_rule": "For Task Arithmetic, theta_M = theta_PRE + lambda times the sum of DARE-processed task deltas. Other evaluated methods substitute their own averaging, Fisher, RegMean or TIES rule after the same masking preprocessing. Composition is restricted to architecture-compatible homologous checkpoints and is not closed over arbitrary functions.",
+  "equivalence_notions": [
+    {
+      "notion": "affine-output expectation",
+      "support": "The paper derives equality in expectation for a single affine layer under independent random masking and fixed input.",
+      "boundary": "This does not prove equality for an individual mask, nonlinear multilayer outputs, embeddings, task behavior or merged-model semantics. The omitted elementwise delta variance is p/(1-p) times delta squared and grows sharply as p approaches 1."
+    },
+    {
+      "notion": "benchmark performance preservation",
+      "support": "Source, dropped and merged models are compared on GLUE, AlpacaEval, GSM8K, MATH, HumanEval and MBPP point metrics.",
+      "boundary": "No equivalence margin, repeated-run uncertainty, confidence interval or significance test is supplied, and metrics trade off across DARE settings."
+    },
+    {
+      "notion": "capability absorption",
+      "support": "A merged model can score on several source-task benchmarks after weight arithmetic.",
+      "boundary": "This is a finite benchmark observation, not proof that source functions are preserved, combined without interference or equivalent to an ensemble or joint training."
+    }
+  ],
+  "validation_regime": {
+    "formal": "The paper provides definitions and a limited expected-output calculation for one affine layer. It gives no theorem for end-to-end functional equivalence, semantic preservation, convergence, generalization, interference bounds or safety.",
+    "encoder": "Fine-tuned RoBERTa-base models are merged across GLUE tasks. The original train split is divided 90/10 for training/validation and original GLUE validation is called test. The released script then grid-searches merge and DARE hyperparameters directly on that reported test dataset, so the headline encoder results are selection-contaminated.",
+    "decoder": "WizardLM-13B, WizardMath-13B and llama-2-13b-code-alpaca are merged from the Llama2-13B base and evaluated by greedy decoding on instruction, math and code benchmarks. Results are point estimates; no seed/run count, error bar, confidence interval or statistical test is given.",
+    "tradeoffs": "DARE is not uniformly dominant. For three-model TIES it raises AlpacaEval 65.91 to 72.50 and HumanEval 21.95 to 29.27 while GSM8K falls 62.55 to 58.00 and MATH 9.54 to 9.20. Other rows likewise mix gains and losses.",
+    "failure_cases": "WizardCoder-Python-13B evaluated against Llama2 rather than its CodeLlama base falls from 63.41/55.4 on HumanEval/MBPP to 0/0 after only 10 percent delta dropping. Directly dropping fine-tuned weights also collapses at low rates. WizardLM-70B on AlpacaEval is not robust to every high drop rate.",
+    "leaderboard_boundary": "The supermario_v2 Open LLM leaderboard rank is explicitly time-bounded to January 28, 2024; the comparison is dynamic and one listed source model lacks a directly reported row in the paper table.",
+    "hardware": "Experiments used V100/A100 GPUs. The code README says decoder merging requires GPU memory proportional to number of models times tensor parallel size, so no-retraining/no-extra-training must not be rewritten as a GPU-free full workflow.",
+    "artifact": "Official code exposes the method and grids but lacks a license, tests, CI, environment lock, exact dependency versions, raw logs, checkpoints and result receipts. Syntax review is not experimental reproduction.",
+    "safety": "No safety, bias, privacy, adversarial, robustness-under-shift or external-action evaluation is reported; the impact statement acknowledges source harms may persist."
+  },
+  "uncertainty_model": "DARE explicitly samples independent Bernoulli masks and reasons about one-layer expectation, but does not report mask seeds, repeated-mask dispersion or variance. The retained delta estimator has elementwise variance p/(1-p) times delta squared under the stated mask, which the paper does not propagate through nonlinear layers or benchmark metrics. Experimental tables are uncalibrated point estimates without run counts, error bars, confidence intervals or selection-adjusted uncertainty; released code fixes random seed 0.",
+  "lifecycle_and_provenance": "The method requires a named pretrained base, compatible fine-tuned source checkpoints, derived deltas, mask/drop settings, merge method/coefficient and a materialized merged checkpoint. This is useful lineage structure, but the paper/repository provide no immutable manifest binding each reported number to source hashes, code commit, environment, mask seed and evaluation receipt. There is no governed compatibility registry, approval, rollout monitoring, deprecation, migration or rollback protocol. The frozen S120-082 binding itself demonstrates why identity and hash-to-semantics checks are mandatory.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Base/source identities and a numerical merge recipe specify a bounded operation, but not a typed callable contract with pre/postconditions and effects."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Base checkpoint, task deltas, masks and the merged vector are explicit weight-space neural-function carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "DARE plus a merge operator concretely generates a merged artifact, but it does not lower a declarative function specification or guarantee semantic preservation."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Source and merged checkpoints are concrete artifacts, while immutable paper-run hashes, environments, mask seeds and evaluation receipts are missing."
+    },
+    "N5_Interpreter": {
+      "status": "NOT_SUPPORTED",
+      "reason": "An ordinary transformer forward pass is not an interpreter for independently represented functions or a function language."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Aggregate benchmark outputs and merge logs do not define a replayable per-execution trace schema."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Multiple benchmarks and ablations provide bounded empirical checks, but encoder test-set tuning, point-only results and absent safety/equivalence tests sharply limit validation."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "DARE preprocessing plus Task Arithmetic and related merge operators is genuine bounded weight-space composition of homologous models; it is not a runtime router."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Base/source/merged identities and recipes are necessary registry fields, but no immutable compatibility, lineage, rollout or rollback registry is implemented."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "The merge recipe is machine-operational but lacks typed callable, effect and lifecycle contracts."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "The paper directly defines same-base neural weight deltas and arithmetic composition, with explicit compatibility and interference boundaries."
+    },
+    "GAP-017": {
+      "status": "NOT_SUPPORTED",
+      "reason": "One-layer expectation and finite benchmark scores are not semantic, behavioral or statistical equivalence checkers."
+    },
+    "GAP-018": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Tensor mutation and inference do not supply language-level effects, authority, transactions or rollback semantics."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Base/source/merged checkpoint lineage and merge recipes are direct provenance fragments, but immutable receipts, compatibility policy and governed rollback are absent."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Bernoulli masking and expected affine output are explicit stochastic elements, but variance is not propagated or calibrated and experiments lack uncertainty reporting."
+    }
+  },
+  "source_specific_reasoning": "CONFIRMED is bounded to the uniquely recovered intended ICML paper, not to the frozen wrong PDF or invented frozen title. The exact frozen bytes are an unrelated quantum-amplifier paper and receive zero semantic credit. The intended paper directly confirms homologous-model weight deltas and weight-space composition, including concrete DARE masking/rescaling before established merge operators. Confirmation does not extend to arbitrary functions, activation-level alignment, equivalence, uniform improvement, GPU-free execution, safe deployment or provenance-complete reproduction.",
+  "confirmed_projection": "The recovered published DARE paper confirms N2 Representation and N8 ComposerRouter for a narrow but genuine case: architecture-compatible models derived from the same base can be represented as task deltas, stochastically transformed and combined by weight arithmetic into one executable checkpoint. It also exposes base identity, tensor compatibility, interference, stochastic variance and immutable provenance as first-class Function OS constraints.",
+  "projection_boundary": "These are 121CX projections from the exact frozen 8-page wrong-binding PDF, every rendered page of the recovered 21-page official paper, complete arXiv v3 source and audited current official repository. Experiments were not rerun. This model review is not a proof, statistical equivalence test, independent replication, empirical validation of reported results, validation of ignition, or authority to repair frozen registries.",
+  "what_the_paper_does_not_support": [
+    "The frozen title 'DARE: Language Model Alignment via Activation Level Fine-tuning' and arXiv:2402.12045 do not identify this method; that PDF is unrelated quantum physics.",
+    "DARE does not fine-tune or align activations; it drops and rescales elements of weight deltas before model merging.",
+    "It does not compose arbitrary architectures, arbitrary callable functions or checkpoints with different originating bases.",
+    "It does not prove that a sampled sparse delta, final embedding, output distribution or merged behavior equals the source model.",
+    "It does not establish uniform metric improvement, non-interference, ensemble equivalence or joint-training equivalence.",
+    "It does not define a typed FunctionSpec, external effect/capability model, execution-trace contract or general interpreter.",
+    "It does not provide calibrated uncertainty, repeated-mask confidence intervals or statistical tests.",
+    "It does not validate safety, bias, privacy, adversarial robustness or downstream external actions.",
+    "It does not provide a provenance-complete, licensed, immutable reproduction package for the reported results.",
+    "This review does not independently validate the paper's benchmark numbers or claims."
+  ],
+  "limitations_and_failure_boundaries": [
+    "The frozen registry is bibliographically corrupted: title, identifier and exact bytes point to different works. Semantic recovery rests on the remaining author/year/method/function metadata and is recorded rather than silently repairing frozen files.",
+    "DARE requires homologous same-shape models derived from the same pretrained base; a wrong-base example collapses to zero code benchmark scores after a small drop rate.",
+    "The single-affine-layer expectation argument assumes an independent mask and fixed input; it is not an end-to-end nonlinear-network theorem.",
+    "Per-element estimator variance p/(1-p) times delta squared diverges as p approaches 1, while the paper reports no variance propagation or repeated-mask dispersion.",
+    "High drop tolerance depends on small fine-tuning deltas and task/model particulars; even a 70B instruction model is not uniformly robust at high rates.",
+    "Directly masking fine-tuned weights rather than base-relative deltas causes severe failure, so representation choice is essential.",
+    "Main tables contain metric tradeoffs; DARE often helps selected objectives but can reduce math, instruction or code metrics in the same merge.",
+    "Encoder hyperparameters are selected on the same original GLUE validation split reported as test, contaminating model selection and evaluation.",
+    "No experiment seeds, run counts, error bars, confidence intervals, statistical tests or selection-adjusted uncertainty are reported; code uses a fixed seed 0.",
+    "Decoder evaluation uses greedy decoding and finite benchmark samples; no distribution-shift, prompt-sensitivity or contamination analysis is supplied.",
+    "The leaderboard rank is a dated snapshot, not a stable property, and source-model comparison is incomplete in the corresponding table.",
+    "The no-GPU rhetoric applies at most to no additional training/arithmetic concept; the paper used V100/A100 hardware and the README requires substantial GPU memory for its decoder workflow.",
+    "The repository has no LICENSE, tags, tests, CI, environment lock, raw logs, checkpoints or immutable result receipts, and includes author-machine paths.",
+    "The audited repository head predates arXiv v3 and cannot be assumed to be the exact camera-ready experiment state.",
+    "No safety or harmful-capability evaluation is reported; model merging can preserve or combine undesirable source behavior."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "METADATA_ONLY",
+    "verdict": "FROZEN_IDENTITY_REJECTED; UNIQUELY_RECOVERED_DARE_WEIGHT_COMPOSITION_CONFIRMED_WITH_STRICT_BOUNDARIES",
+    "corrections": [
+      "Recorded that exact frozen arXiv:2402.12045 is Broadband parametric amplification in DARTWARS and supplies no model-merging evidence.",
+      "Rejected the fabricated/misattributed frozen title and activation-level fine-tuning description.",
+      "Recovered the intended Le Yu et al. ICML 2024 paper from the jointly unique author/year/DARE/weight-arithmetic metadata without rewriting frozen registries.",
+      "Reviewed all pages and source of both the wrong frozen binding and intended published paper, plus the official repository implementation/history.",
+      "Confirmed base-relative deltas, Bernoulli drop/rescale and bounded homologous-model weight composition.",
+      "Replaced an unqualified deterministic label with the actual stochastic mask, one-layer expectation and unreported variance boundary.",
+      "Separated merge performance from semantic/equivalence claims and recorded non-uniform metric tradeoffs and catastrophic wrong-base failure.",
+      "Exposed reported-test-set hyperparameter selection in the released GLUE code and absence of run-level uncertainty.",
+      "Separated no additional training from the GPU/memory needs of the published implementation and evaluation workflow.",
+      "Recorded missing code license, immutable code-paper bind, environment lock, raw results and provenance receipts.",
+      "Did not call equations proof, published benchmarks reproduction, public code validation, or this model review empirical validation."
+    ],
+    "prior_card_superseded": true
+  }
+}

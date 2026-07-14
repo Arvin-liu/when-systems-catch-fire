@@ -29,15 +29,15 @@
     "state": "OPEN",
     "draft": true
   },
-  "last_completed_cx_step": 77,
-  "next_cx_step": 78,
+  "last_completed_cx_step": 78,
+  "next_cx_step": 79,
   "canonical_121cn_last_completed_step": 30,
   "canonical_121cn_next_step": 31,
-  "canonical_source_last_completed_step": 77,
-  "canonical_source_next_step": 78,
-  "last_completed_source_id": "S120-081",
-  "next_source_id": "S120-082",
-  "canonical_resume_status": "RESUMED_AND_IN_PROGRESS_AT_STEP_78",
+  "canonical_source_last_completed_step": 78,
+  "canonical_source_next_step": 79,
+  "last_completed_source_id": "S120-082",
+  "next_source_id": "S120-083",
+  "canonical_resume_status": "RESUMED_AND_IN_PROGRESS_AT_STEP_79",
   "active_manifest": {
     "historical_base": "data/external-research/121-fulltext-resolver/121cn/121cn-microstep-manifest.jsonl",
     "121cx_overlay": "data/external-research/121-fulltext-resolver/121cx/121cx-microstep-manifest-overlay.jsonl",
@@ -72,9 +72,9 @@
     "prior_non_codex_review_cards_unique": 22,
     "reviewed_121c01_unique": 10,
     "reviewed_121cn_unique": 12,
-    "remaining_reviewable_unique": 8,
-    "codex56_extreme_new_reviews": 47,
-    "confirmed": 33,
+    "remaining_reviewable_unique": 7,
+    "codex56_extreme_new_reviews": 48,
+    "confirmed": 34,
     "partial": 35,
     "not_supported": 0,
     "unresolved": 0
@@ -83,7 +83,8 @@
     "Added a 121CX overlay for missing Phase D semantic disposition steps 81-87 without rewriting the historical 121CN manifest.",
     "Confirmed there are no valid Step 31-35 cards to backfill; no ledger, run-state, or semantic result was fabricated.",
     "Corrected the post-Step-33 next-source cursor from overlay Step 83 source S120-024 to historical manifest Step 34 source S120-025 before beginning Step 34.",
-    "Corrected the post-Step-76 next-source cursor from overlay Step 87 blocked source S120-080 to historical manifest Step 77 source S120-081 before beginning Step 77."
+    "Corrected the post-Step-76 next-source cursor from overlay Step 87 blocked source S120-080 to historical manifest Step 77 source S120-081 before beginning Step 77.",
+    "Recorded without rewriting frozen data that S120-082 arXiv:2402.12045 is an unrelated quantum-physics PDF; gave it zero semantic credit and recovered the uniquely identified ICML 2024 DARE model-merging paper from the remaining author/year/method metadata."
   ],
   "deferred_acceptance_corrections": [
     "Preserve the 12 prior 121CN cards but correct their missing specification_language, uncertainty_model, and lifecycle_and_provenance coverage during independent Codex acceptance."
