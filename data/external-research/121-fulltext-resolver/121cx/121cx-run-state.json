@@ -1,0 +1,61 @@
+{
+  "task": "IGNITION-20260709-121CX",
+  "task_name": "Codex 5.6 Sol Extreme Takeover and Final Acceptance",
+  "status": "121CX_IN_PROGRESS",
+  "executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "extreme",
+  "speed": "standard",
+  "model_identity_basis": "User-specified current Codex App session configuration in IGNITION-20260709-121CX",
+  "delegated_subagents": false,
+  "model_switch": false,
+  "fallback": false,
+  "started_at_utc": "2026-07-14T03:56:19Z",
+  "baseline_121cn_head": "ba0d46d09d77f2fae85970f19f1b635d9f7eed5c",
+  "baseline_1111_main_head": "e011f30b54f4fb1c3dd6abc0a53ba92e208ec802",
+  "branch": "records/ignition-121cx-codex56-extreme-takeover-20260714",
+  "base_branch": "records/ignition-121cn-night-long-haul-20260714",
+  "wscf_pr": {
+    "number": null,
+    "url": null,
+    "state": "PENDING_FIRST_PUSH",
+    "draft": true
+  },
+  "1111_branch": "records/ignition-121cx-result-20260714",
+  "1111_base_branch": "main",
+  "1111_pr": {
+    "number": null,
+    "url": null,
+    "state": "PENDING_FIRST_PUSH",
+    "draft": true
+  },
+  "last_completed_cx_step": 0,
+  "next_cx_step": 1,
+  "canonical_121cn_last_completed_step": null,
+  "canonical_121cn_next_step": null,
+  "canonical_resume_status": "PENDING_CX_001_CROSS_AUDIT",
+  "phases": {
+    "0_checkpoint_and_count_truth_audit": "IN_PROGRESS",
+    "1_remaining_paper_reviews": "PENDING",
+    "2_prior_review_cross_model_acceptance": "PENDING",
+    "3_family_synthesis": "PENDING",
+    "4_gap_readjudication": "PENDING",
+    "5_function_os_node_synthesis": "PENDING",
+    "6_internal_asset_mapping": "PENDING",
+    "7_horizontal_synthesis": "PENDING",
+    "8_final_validation_and_closeout": "PENDING"
+  },
+  "baseline_counts_reported_by_121cn": {
+    "total_sources": 84,
+    "sources_reviewed_121c01": 10,
+    "sources_remaining_manifest": 69,
+    "sources_failed_oa": 5,
+    "sources_clean_for_review": 62,
+    "high_review_completed_121cn": 12,
+    "high_review_blocked_insufficient": 0
+  },
+  "blockers": [],
+  "credential_fragments": 0,
+  "pr_merged_or_closed": 0,
+  "frozen_files_modified": false
+}
