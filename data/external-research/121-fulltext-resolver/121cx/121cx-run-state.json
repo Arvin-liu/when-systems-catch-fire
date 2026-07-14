@@ -29,16 +29,16 @@
     "state": "OPEN",
     "draft": true
   },
-  "last_completed_cx_step": 94,
-  "next_cx_step": 95,
+  "last_completed_cx_step": 95,
+  "next_cx_step": 96,
   "canonical_121cn_last_completed_step": 30,
   "canonical_121cn_next_step": 31,
   "canonical_source_last_completed_step": 87,
   "canonical_source_next_step": null,
-  "last_completed_source_id": "S120-007",
-  "next_source_id": "S120-008",
+  "last_completed_source_id": "S120-008",
+  "next_source_id": "S120-009",
   "next_phase_action": "codex56_extreme_accept_prior_non_codex_review",
-  "canonical_resume_status": "PHASE_1_COMPLETE_PHASE_2_IN_PROGRESS_AT_STEP_95",
+  "canonical_resume_status": "PHASE_1_COMPLETE_PHASE_2_IN_PROGRESS_AT_STEP_96",
   "active_manifest": {
     "historical_base": "data/external-research/121-fulltext-resolver/121cn/121cn-microstep-manifest.jsonl",
     "121cx_overlay": "data/external-research/121-fulltext-resolver/121cx/121cx-microstep-manifest-overlay.jsonl",
@@ -82,10 +82,10 @@
   },
   "prior_review_acceptance": {
     "total_unique": 22,
-    "completed": 6,
-    "remaining": 16,
-    "last_completed_source_id": "S120-007",
-    "next_source_id": "S120-008",
+    "completed": 7,
+    "remaining": 15,
+    "last_completed_source_id": "S120-008",
+    "next_source_id": "S120-009",
     "ordered_source_ids": [
       "S120-001",
       "S120-002",
@@ -114,7 +114,7 @@
       "ACCEPT": 0,
       "NARROW": 0,
       "CORRECT": 6,
-      "REJECT": 0,
+      "REJECT": 1,
       "BLOCKED_INSUFFICIENT_TEXT": 0
     }
   },
@@ -128,7 +128,8 @@
     "Recorded without rewriting frozen data that the 121B S120-032 arXiv:2402.11285 artifact is an unrelated O-RAN resource-allocation paper; used the exact canonical 9-page AAAI-26 PDF, corrected the 121CN repair venue year from 2025 to 2026, and gave the frozen wrong binding zero semantic credit.",
     "Corrected S120-056 from the old atlas's sole-author/Journal of Functional Programming/Cambridge DOI metadata to the exact Bauer-and-Pretnar JLAMP article DOI 10.1016/j.jlamp.2014.02.001, while preserving the frozen old record and independently matching the 121B/121CN arXiv bytes.",
     "Superseded the planned S120-080 blocked disposition after proving that exact frozen arXiv:1607.00036 hash/size bytes are the intended D-NTM paper; completed all-page/full-text/source-code review and corrected Anonymous/2020/volume-32 metadata to four authors/2018/volume 30.",
-    "Recomputed the post-Phase-1 semantic-card distribution directly from all 22 prior and 56 Codex cards as 41 CONFIRMED and 37 PARTIAL; this corrects the prior run-state's one-card PARTIAL undercount."
+    "Recomputed the post-Phase-1 semantic-card distribution directly from all 22 prior and 56 Codex cards as 41 CONFIRMED and 37 PARTIAL; this corrects the prior run-state's one-card PARTIAL undercount.",
+    "Rejected the prior S120-008 card because arXiv:2407.18295 is an unrelated general-relativity paper; recovered the canonical ICONIP 2018 DOI and abstract metadata, but left semantic support UNRESOLVED because the stored extraction and advertised PDF endpoint are only a closed Springer landing page and no exact lawful repository full text was located."
   ],
   "deferred_acceptance_corrections": [
     "Preserve the 12 prior 121CN cards but correct their missing specification_language, uncertainty_model, and lifecycle_and_provenance coverage during independent Codex acceptance."
@@ -141,6 +142,14 @@
       "semantic_review_status": "BLOCKED_INSUFFICIENT_TEXT",
       "claim_support_status": "UNRESOLVED",
       "reason": "The recorded Emergent Mind URL is a five-paper topic synthesis, the recorded arXiv identifier is invalid, and the frozen arXiv:2501.17635 bytes are the distinct ICM-LoRA paper; no unique exact-title work/full text exists to review without substitution."
+    },
+    {
+      "cx_step": 95,
+      "source_id": "S120-008",
+      "content_access_status": "EXTRACTED_PARTIAL_ABSTRACT_AND_METADATA_ONLY",
+      "semantic_review_status": "BLOCKED_INSUFFICIENT_TEXT",
+      "claim_support_status": "UNRESOLVED",
+      "reason": "The prior arXiv identifier resolves to an unrelated general-relativity paper. The canonical ICONIP 2018 Springer chapter is uniquely identified by DOI 10.1007/978-3-030-04179-3_54, but the stored extraction and advertised PDF endpoint are publisher landing-page HTML, OpenAlex reports closed access with no repository full text, and later PLOS/thesis materials cannot substitute for the exact body."
     }
   ],
   "credential_fragments": 0,
