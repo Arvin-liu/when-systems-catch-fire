@@ -1,0 +1,165 @@
+{
+  "source_id": "S120-017",
+  "cx_step": 102,
+  "step_number": 102,
+  "_acceptance_layer": "121q2/acceptance/S120-017.json — overlay, historical card preserved at evidence-cards/S120-017.json",
+  "canonical_title": "Latent Execution for Neural Program Synthesis",
+  "authors": "Xinyun Chen, Dawn Song, Yuandong Tian",
+  "year": 2021,
+  "venue": "NeurIPS 2021 (35th Conference on Neural Information Processing Systems)",
+  "doi_or_identifier": "arXiv:2112.00385 (proceedings: ba3c95c2962d3aab2f6e667932daa3c5)",
+  "prior_identity": {
+    "title": "Latent Execution for Neural Program Synthesis (CORRECT)",
+    "authors": "Shi, K., et al. (WRONG — actual: Chen, Song, Tian)",
+    "year": 2021,
+    "venue": "NeurIPS 2021 (CORRECT in evidence-card; WRONG in 121cn: ICLR 2022)",
+    "doi_or_identifier": "NeurIPS-2021-ba3c95c2 (CORRECT)",
+    "sha256": "pending",
+    "file_size_bytes": 2101787
+  },
+  "corrected_identity": {
+    "title": "Latent Execution for Neural Program Synthesis",
+    "authors": "Xinyun Chen (UC Berkeley), Dawn Song (UC Berkeley), Yuandong Tian (Facebook AI Research)",
+    "year": 2021,
+    "venue": "NeurIPS 2021",
+    "doi_or_identifier": "arXiv:2112.00385",
+    "exact_fulltext_used": "NeurIPS proceedings PDF, SHA256: 4c3ac93493d260c5cccdc5e2b1b831345103c6f5706b01e44906d96740c6aef0",
+    "url": "https://proceedings.neurips.cc/paper/2021/file/ba3c95c2962d3aab2f6e667932daa3c5-Paper.pdf"
+  },
+  "identity_status": "CORRECTED",
+  "identity_corrections": [
+    "Authors: evidence-card had 'Shi, K., et al.' → corrected to 'Xinyun Chen, Dawn Song, Yuandong Tian'",
+    "121cn high-review card had venue ICLR 2022 → actual NeurIPS 2021",
+    "121cn high-review card had year 2022 → actual 2021",
+    "121cn authors listed 'Pengcheng Yin' who is not an author; missing 'Yuandong Tian' who is"
+  ],
+  "url": "https://proceedings.neurips.cc/paper/2021/file/ba3c95c2962d3aab2f6e667932daa3c5-Paper.pdf",
+  "access_url": "https://proceedings.neurips.cc/paper/2021/file/ba3c95c2962d3aab2f6e667932daa3c5-Paper.pdf",
+  "access_time_utc": "2026-07-14T16:29:59Z",
+  "file_sha256": "4c3ac93493d260c5cccdc5e2b1b831345103c6f5706b01e44906d96740c6aef0",
+  "file_size_bytes": 2101787,
+  "page_count": 13,
+  "content_type": "application/pdf",
+  "sections": [
+    "1 Introduction",
+    "2 Overview of LaSynth (Sec 2)",
+    "3 Method (Sec 3: Model Overview, Program Decoder, Latent Executor, Data Regeneration)",
+    "4 Restricted C Program Synthesis Domain (Sec 4: Data Generation, Operation Predictor)",
+    "5 Experiments (Sec 5: Karel, C, Iterative Retraining, Ablation)",
+    "6 Related Work",
+    "7 Conclusion"
+  ],
+  "abstract_snippet": "We propose LaSynth, which learns the latent representation to approximate the execution of partially generated programs, even if they are incomplete in syntax. The learned execution significantly improves the performance of next token prediction over existing approaches, facilitating search. LaSynth achieves 55.2% accuracy on generating simple C code with tens of tokens including loops and branches, outperforming existing approaches without executors by around 20%.",
+  "what_the_paper_supports": "LaSynth introduces a Latent Executor that learns latent execution traces (LaET) for partially generated programs without requiring an interpreter. The Latent Executor approximates program execution state in a learned continuous space, enabling next-token prediction for program synthesis from I/O examples. Key architectural components: (1) IO Encoder with double attention, (2) Program Decoder with LSTM + operation predictor, (3) Latent Executor (LSTM-based, predicts intermediate execution states). The system demonstrates that latent execution representation improves synthesis accuracy by ~20% over baselines without executors. Iterative retraining with synthesized programs improves dataset quality and sample efficiency.",
+  "what_the_paper_does_not_support": "No formal specification language for programs (GAP-015). No formal equivalence checking between programs (GAP-017). No versioning or registry of synthesized programs (GAP-019). Latent execution is probabilistic approximation, not verified execution (GAP-020). Restricted to simple C (loops, branches, arithmetic — no functions, pointers, complex types). No formal verification that synthesized programs are correct — only checked against I/O examples.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "paper_core_claims": [
+    "Latent Executor learns to approximate program execution without an interpreter, even for partial/incomplete programs",
+    "Latent Execution Trace (LaET) models hypothetical input signal for remaining partial program to reach desired output",
+    "Operation predictor improves numerical reasoning by learning input-output arithmetic relationships",
+    "LaSynth achieves 55.2% accuracy on C program synthesis (loops+branches), +20% over baselines without executors",
+    "Iterative retraining: model synthesizes more concise programs than random ground truth, improving dataset quality",
+    "Ablation: removing Latent Executor drops accuracy from 55.2% to 38.6% (NoExecutor) — critical component"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "I/O examples serve as implicit specification; no formal spec language. The paper uses input-output pairs as the sole specification — programs are 'correct' if they satisfy I/O pairs, but this is testing not specification."
+    },
+    "GAP-016": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Latent Executor provides approximate compilation: I/O examples → latent execution states → program tokens. The latent execution space is a learned approximation of program semantics, enabling search through program space."
+    },
+    "GAP-017": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Latent execution provides approximate equivalence (programs with similar latent traces likely produce similar outputs), but no formal equivalence checking. Two different programs could have similar latent traces without being semantically equivalent."
+    },
+    "GAP-018": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Latent state updates (LaET) track approximate execution state through program generation. Each token generation step updates the latent state, forming an implicit effect model."
+    },
+    "GAP-019": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No versioning or registry of synthesized programs. Iterative retraining replaces training data but does not maintain program versions."
+    },
+    "GAP-020": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Latent execution is probabilistic — no formal verification that synthesized programs are correct. Validation is empirical: check if program output matches I/O pairs."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "I/O examples as implicit specification. No formal function spec language. The 'specification' is a set of input-output pairs — incomplete by nature."
+    },
+    "N2_Representation": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Dual representation: (1) regular LSTM recurrent state for autoregressive generation, (2) Latent Execution Trace (LaET) for approximate execution state. Operation predictor adds arithmetic reasoning representation."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Neural synthesizer compiles I/O examples → program tokens via learned latent execution. However, the 'compilation' is probabilistic and does not guarantee correctness. The latent executor acts as an approximate compiler from I/O specification to program intermediate representation."
+    },
+    "N4_Artifact": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Synthesized programs are artifacts, but ephemeral — no persistent storage, no metadata, no registry. Iterative retraining uses synthesized programs to improve training data but does not maintain an artifact registry."
+    },
+    "N5_Interpreter": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Latent Executor is an approximate learned interpreter — it predicts intermediate execution states for partial programs without actual execution. Ablation shows it's critical (55.2% → 38.6% without it)."
+    },
+    "N6_ExecutionTrace": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "LaET (Latent Execution Trace) explicitly models hypothetical execution states through program generation steps. This is the paper's key contribution — a learned, approximate execution trace for programs that cannot be executed (C programs need compilation)."
+    },
+    "N7_Validator": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Validation is only empirical: synthesized program is checked against I/O pairs. No formal verification. No proof that program generalizes beyond provided examples."
+    },
+    "N8_ComposerRouter": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Sequential token-by-token generation with attention over I/O pairs. No explicit composition of sub-programs or routing between different synthesis strategies."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NO_EVIDENCE",
+      "reason": "No versioning, registry, or retrieval of previously synthesized programs."
+    }
+  },
+  "limitations_and_failure_boundaries": [
+    "Restricted to simple C: loops, branches, integer arithmetic only — no functions, pointers, structs, or complex types",
+    "Program length ≤ 256 tokens",
+    "No formal verification of synthesized programs — correctness only checked against I/O examples",
+    "Latent execution is probabilistic approximation — no guarantee that learned traces correspond to actual execution",
+    "55.2% accuracy means ~45% of synthesized programs fail on held-out I/O pairs",
+    "Iterative retraining may amplify model biases — synthesized programs become training data",
+    "Only tested on list processing tasks — unclear generalization to other domains",
+    "Operation predictor limited to addition/subtraction in [-4, 4] range"
+  ],
+  "strengths_noted": [
+    "First neural program synthesis for C code from I/O examples only",
+    "Latent Executor is a novel contribution: learns approximate execution without interpreter",
+    "Ablation study is thorough: NoExecutor drops accuracy by 16.6 percentage points",
+    "Iterative retraining improves sample efficiency — useful when training data is scarce",
+    "Operation predictor addresses a real weakness in neural program synthesis (numerical reasoning)",
+    "Code released: https://github.com/Jungyhuk/latent-execution"
+  ],
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "4c3ac93493d260c5cccdc5e2b1b831345103c6f5706b01e44906d96740c6aef0",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "Authors in evidence-card wrong: 'Shi, K., et al.' → actual Chen, Song, Tian",
+      "121cn card had wrong venue (ICLR 2022) and wrong year (2022) — actual NeurIPS 2021",
+      "121cn card listed 'Pengcheng Yin' as author — not an author of this paper",
+      "Paper URL and NeurIPS ID correct in evidence-card",
+      "Key ablation: NoExecutor=38.6% vs full=55.2% — Latent Executor is critical",
+      "N5 Interpreter and N6 ExecutionTrace: STRONG evidence — LaET is the paper's core contribution"
+    ]
+  },
+  "reviewed_by_model": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "reviewed_at": "2026-07-14T16:29:59Z",
+  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714"
+}
