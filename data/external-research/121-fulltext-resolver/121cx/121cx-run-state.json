@@ -29,15 +29,15 @@
     "state": "OPEN",
     "draft": true
   },
-  "last_completed_cx_step": 84,
-  "next_cx_step": 85,
+  "last_completed_cx_step": 85,
+  "next_cx_step": 86,
   "canonical_121cn_last_completed_step": 30,
   "canonical_121cn_next_step": 31,
-  "canonical_source_last_completed_step": 84,
-  "canonical_source_next_step": 85,
-  "last_completed_source_id": "S120-032",
-  "next_source_id": "S120-033",
-  "canonical_resume_status": "RESUMED_AND_IN_PROGRESS_AT_STEP_85",
+  "canonical_source_last_completed_step": 85,
+  "canonical_source_next_step": 86,
+  "last_completed_source_id": "S120-033",
+  "next_source_id": "S120-056",
+  "canonical_resume_status": "RESUMED_AND_IN_PROGRESS_AT_STEP_86",
   "active_manifest": {
     "historical_base": "data/external-research/121-fulltext-resolver/121cn/121cn-microstep-manifest.jsonl",
     "121cx_overlay": "data/external-research/121-fulltext-resolver/121cx/121cx-microstep-manifest-overlay.jsonl",
@@ -91,7 +91,16 @@
   "deferred_acceptance_corrections": [
     "Preserve the 12 prior 121CN cards but correct their missing specification_language, uncertainty_model, and lifecycle_and_provenance coverage during independent Codex acceptance."
   ],
-  "blockers": [],
+  "blockers": [
+    {
+      "cx_step": 85,
+      "source_id": "S120-033",
+      "content_access_status": "NOT_LOCATED",
+      "semantic_review_status": "BLOCKED_INSUFFICIENT_TEXT",
+      "claim_support_status": "UNRESOLVED",
+      "reason": "The recorded Emergent Mind URL is a five-paper topic synthesis, the recorded arXiv identifier is invalid, and the frozen arXiv:2501.17635 bytes are the distinct ICM-LoRA paper; no unique exact-title work/full text exists to review without substitution."
+    }
+  ],
   "credential_fragments": 0,
   "pr_merged_or_closed": 0,
   "frozen_files_modified": false
