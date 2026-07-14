@@ -1,0 +1,246 @@
+{
+  "source_id": "S120-080",
+  "canonical_title": "Dynamic Neural Turing Machine with Continuous and Discrete Addressing Schemes",
+  "authors": [
+    "Caglar Gulcehre",
+    "Sarath Chandar",
+    "Kyunghyun Cho",
+    "Yoshua Bengio"
+  ],
+  "year": 2018,
+  "source_family": 1,
+  "source_family_name": "neural_weights_and_memory_augmented_computation",
+  "identifier": "Neural Computation 30(4), 857-884; arXiv:1607.00036",
+  "doi_or_identifier": "10.1162/neco_a_01060",
+  "url": "https://arxiv.org/pdf/1607.00036",
+  "version": "arXiv v2 dated 2017-03-17; journal article published April 2018",
+  "license": "Reviewed arXiv preprint distributed through arXiv; official code declares CRAPL v0 Beta 1",
+  "file_size_bytes": 663655,
+  "page_count": 24,
+  "sha256": "efb84513f8fbfb96a5900b0641b1fe9439046f6d2bc9806444911cd75ba77d5d",
+  "reviewed_at": "2026-07-14T11:49:12Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE_WITH_METADATA_AND_ACCESS_CORRECTION",
+  "claim_support_status": "CONFIRMED",
+  "retrieval_and_integrity": {
+    "frozen_arxiv_binding": "The exact 121B arXiv:1607.00036 PDF was independently re-fetched. Its 663,655-byte size and SHA-256 exactly match the frozen record, and all 24 pages identify the intended D-NTM paper. Unlike S120-024/S120-032, this is a correct frozen source binding.",
+    "access_correction": "121CN Step 13 stated that no legal OA version or arXiv preprint existed and planned BLOCKED_INSUFFICIENT_TEXT. That disposition is factually superseded by the exact, already frozen arXiv v2 artifact. No access control was bypassed.",
+    "metadata_correction": "The old atlas lists Anonymous, year 2020 and Neural Computation 32. Official arXiv and Crossref metadata identify Caglar Gulcehre, Sarath Chandar, Kyunghyun Cho and Yoshua Bengio; the journal publication is April 2018, Neural Computation 30(4), pages 857-884. The old record remains frozen but receives no credit where it conflicts.",
+    "title_version_note": "The arXiv API labels v2 'Soft and Hard Addressing Schemes', while the exact v2 PDF and final journal DOI use 'Continuous and Discrete Addressing Schemes'. The reviewed content is the exact v2 PDF and matches the final work semantically and bibliographically.",
+    "extraction": "Independent layout-preserving extraction produced 9,292 words and 69,939 characters across all 24 pages.",
+    "visual_review": "All 24 pages were rendered at 144 DPI and visually inspected in six contact sheets. Architecture diagrams, all equations, seven result tables, four figures and references were legible; no blank, clipped, substituted or malformed page was found.",
+    "official_repository": {
+      "url": "https://github.com/caglar/dntm",
+      "head": "070e20fba5a0d7aa64cad1b346b2f0c484e92719",
+      "head_date": "2017-05-10T11:42:54-04:00",
+      "commit_count": 42,
+      "tracked_file_count": 120,
+      "tags_or_releases": "NONE",
+      "license": "CRAPL v0 Beta 1",
+      "paper_link": "README explicitly identifies arXiv:1607.00036 and describes code for bAbI, permuted MNIST and NTM toy experiments.",
+      "code_findings": "The repository implements Theano-era controllers, external memory, continuous/discrete addressing, REINFORCE baselines, bAbI preprocessing, pMNIST/SNLI/toy-task training scripts and many launch/search scripts. The six files under a tests directory are interactive data-reconstruction/debug scripts with hard-coded private filesystem paths and ipdb breakpoints, not an automated assertion suite.",
+      "reproducibility_findings": "There is no dependency lockfile, environment manifest, CI, tag/release, checkpoint, raw result table, trained model, dataset snapshot or complete run receipt. Current Python 3 syntax compilation fails across core/model/train files because the code uses Python 2 print/xrange/cPickle conventions; no matching legacy Theano environment is provided.",
+      "execution_boundary": "Repository history and relevant source/config/scripts were audited and Python 3 incompatibility was checked, but data and legacy dependencies were not installed and experiments were not run. No reproduction or independent empirical-validation credit is assigned."
+    }
+  },
+  "sections_reviewed": [
+    "abstract and introduction, claimed D-NTM motivation, contributions and comparison scope",
+    "sections 2-3, controller, mutable external memory, trainable address/content split, read/write/erase/NOP, dynamic LRU, continuous/discrete and multi-step addressing",
+    "section 4, differentiable training, REINFORCE with baselines/variance normalization, continuous-to-discrete curriculum and regularizers/pathological solutions",
+    "section 5 related-work boundaries",
+    "section 6, complete bAbI setup, all seven tables/figures and per-task/family-level failures",
+    "sections 7-9, pMNIST, SNLI, copy and associative-recall protocols and results",
+    "section 10, conclusions, conjectures, future-work limits and all references",
+    "official repository history, README/license, controller/address/memory implementation, experiment scripts and debug fixtures"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 1-4, abstract and sections 1-2.3",
+      "checked_for": "learnable address/content split, controller state, memory reset, read/write/erase equations and task-general architecture claim"
+    },
+    {
+      "anchors": "pp. 5-9, sections 3-4.3, equations 7-15",
+      "checked_for": "cosine/LRU routing, soft versus categorical one-hot addressing, argmax inference, REINFORCE/curriculum and memory-avoidance pathology"
+    },
+    {
+      "anchors": "pp. 10-15, sections 6-6.7 and Tables 1-4",
+      "checked_for": "bAbI splits/settings, per-task error, recurrent versus feedforward, continuous/discrete/multistep comparisons and external-baseline gap"
+    },
+    {
+      "anchors": "pp. 16-19, sections 7-10 and Tables 5-7",
+      "checked_for": "pMNIST/SNLI/toy-task evidence, overfitting, discrete associative-recall failure and future-work boundaries"
+    },
+    {
+      "anchors": "pp. 20-24 references; official repository HEAD 070e20f",
+      "checked_for": "citation scope, implementation identity, dependency/test/checkpoint/result/provenance limits"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "D-NTM augments each fixed memory cell with a learned address vector and a mutable content vector, allowing a controller to learn nonlinear location-sensitive read/write addressing.",
+      "anchors": "sections 2.1-3.1, equations 3-11"
+    },
+    {
+      "claim": "Continuous addressing uses differentiable soft weights, while discrete addressing samples one categorical memory cell during training, uses REINFORCE with variance reduction and switches to argmax at inference.",
+      "anchors": "sections 3.2 and 4-4.2, equations 12-14"
+    },
+    {
+      "claim": "On the paper's individually trained bAbI setup, three-step discrete D-NTM with a GRU reports the best D-NTM/NTM average error (21.79%), but remains far worse than MemN2N (4.24%) and DMN+ (2.81%).",
+      "anchors": "section 6.3 and Table 1"
+    },
+    {
+      "claim": "Addressing/controller choices are task- and regime-dependent: feedforward discrete D-NTM is poor without curriculum, soft D-NTM is best among reported D-NTM variants on pMNIST, and discrete D-NTM fails associative recall.",
+      "anchors": "Tables 2-5 and 7"
+    },
+    {
+      "claim": "Training needs explicit safeguards against ignoring memory or treating the address matrix as an extra weight matrix, and recurrent variants can rapidly overfit selected tasks.",
+      "anchors": "sections 4.3, 6.3, 7 and 8"
+    }
+  ],
+  "function_concept_used_by_paper": "A D-NTM is a learned recurrent state transition and output function over current input, controller state and an episode-local external memory. The controller generates read/write/erase decisions, mutates content cells and emits task outputs. It is not a claim that an arbitrary neural weight vector is a first-class program or that weight-space arithmetic implements program composition.",
+  "specification_language": "Tasks are specified by supervised input/output examples, negative log-likelihood, dataset-specific metrics and architectural/hyperparameter choices. The architecture defines tensor shapes and update equations. It supplies no symbolic function language, pre/postconditions, memory invariants, effect/authority declarations, negative constraints, resource SLA or behavioral contract for an independently deployable function.",
+  "representation_or_carrier": {
+    "controller": "Feedforward or GRU neural controller parameters and hidden state.",
+    "external_memory": "A fixed-size matrix whose address portion is learned during training and frozen during inference, while its content portion is zeroed per episode then read, erased and written at runtime.",
+    "router": "Cosine/content logits optionally adjusted by learned LRU pressure, represented as soft weights or a sampled/argmax one-hot selection.",
+    "artifact": "The trained model parameters plus architecture and data preprocessing; runtime behavior additionally depends on mutable episode memory and input order.",
+    "boundary": "The paper does not define weight vectors as symbolic programs, portable function modules or composable checkpoints."
+  },
+  "compiler_or_generator": {
+    "continuous": "Backpropagation through differentiable memory/address operations with Adam learns controller, address and output parameters.",
+    "discrete": "Categorical read/write actions use REINFORCE, reward baselines, variance normalization, entropy regularization and optionally a soft-to-hard curriculum.",
+    "selection": "Validation subsets support early stopping and hyperparameter search, with separate bAbI models trained per subtask.",
+    "classification": "This is stochastic gradient-based parameter estimation, not a semantics-preserving compiler from a function specification to a verified artifact."
+  },
+  "interpreter_or_runtime": "For each input step the controller computes address weights, reads from memory, updates hidden state/output, erases and writes selected memory content and may take multiple addressing steps. Continuous inference uses weighted memory access; discrete inference chooses argmax rather than sampling. Content state is refreshed at each episode, so inference is stateful within an episode even when parameters are fixed.",
+  "state_or_effect_model": "D-NTM explicitly models mutable internal controller and external-memory state. Reads, erases and writes are differentiable or discrete tensor operations scoped to one episode; the address matrix remains a learned parameter and content resets to zero at episode start. This is not an operating-system side-effect, permission, transaction, rollback, idempotence, concurrent-isolation or persistent-storage model, and no audit semantics for memory mutations is defined.",
+  "composition_rule": "At each time step, controller computation composes with learned addressing, memory read, hidden-state update, output prediction and gated erase/write; multiple addressing steps repeat access within a step. Soft composition is a weighted sum across cells, while hard routing selects one cell. The paper does not compose independent trained functions or checkpoints by weight arithmetic or layer stacking.",
+  "equivalence_notions": [
+    {
+      "notion": "benchmark performance",
+      "support": "Models are compared by per-task/average bAbI error, pMNIST/SNLI accuracy and thresholded toy-task validation loss.",
+      "boundary": "Metric proximity is not input-output equivalence, structural isomorphism or formal semantic equivalence."
+    },
+    {
+      "notion": "soft/hard addressing relation",
+      "support": "Both derive from the same categorical probability vector; hard training samples a one-hot address and hard inference takes argmax.",
+      "boundary": "Soft weighted access and hard selected access are generally different computations and are not proven equivalent."
+    },
+    {
+      "notion": "architecture comparison",
+      "support": "Original NTM, dynamic addresses, controller types, step counts and routing modes are compared on selected tasks.",
+      "boundary": "The comparisons are point results with confounds and no own run dispersion, significance or paired equivalence test."
+    }
+  ],
+  "validation_regime": {
+    "babi": "Twenty 10k-example bAbI subtasks, a random 10% training validation split, one model per subtask, early stopping/hyperparameter search and per-task/average test error across LSTM, memory-network and NTM/D-NTM variants.",
+    "other_tasks": "Sequential permuted MNIST test accuracy, SNLI test accuracy, and copy/associative-recall success defined as validation binary cross-entropy below 0.02 at maximum training length.",
+    "bounded_results": "Three-step discrete GRU D-NTM has 21.79% average bAbI error versus 24.24% soft D-NTM, but MemN2N/DMN+ report 4.24%/2.81%. Soft D-NTM reaches 93.4% pMNIST versus 95.6% recurrent batch normalization. D-NTM+normalization/dropout reaches 82.3% SNLI versus 83.5% word-by-word attention. Discrete D-NTM fails associative recall.",
+    "uncertainty": "The paper does not state repeated-run counts, seeds, standard deviations, confidence intervals or significance tests for its own tables. The cited 28.5% plus/minus 2.9 NTM comparison belongs to another study and is not uncertainty for D-NTM results.",
+    "selection_boundary": "Validation data are used for early stopping and hyperparameter search; SNLI learning rate is selected by random search. Exact selection counts and per-run values are not reported.",
+    "artifact_boundary": "Source code exists but lacks a runnable pinned environment, checkpoints, raw results and automated tests; this review did not rerun experiments.",
+    "safety": "No privacy, security, adversarial-memory, poisoning, leakage, fairness, robustness, harmful-output or operational-safety evaluation is reported."
+  },
+  "uncertainty_model": "Discrete training defines categorical read/write action distributions and samples from them with REINFORCE; curriculum switching also uses a Bernoulli variable. These are stochastic training/control mechanisms, not calibrated uncertainty about correctness. Inference uses deterministic argmax for hard addressing. The paper provides no predictive calibration, confidence threshold, abstention, OOD detection, risk bound or routing fallback, and its empirical point estimates omit own run dispersion.",
+  "lifecycle_and_provenance": "A governed D-NTM artifact would bind code/environment commits, Python/Theano/CUDA versions, dataset snapshots/splits, preprocessing, architecture/memory size, seeds, hyperparameter-search space, checkpoint hash/license and raw evaluation/attention receipts. The official repository supplies a 42-commit research-code history and CRAPL license but no release/tag, lockfile, CI, checkpoints, raw results or full run manifest. Its Python-2-era syntax and hard-coded author paths make the current artifact nonportable without reconstruction.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Datasets, objectives, tensor shapes and metrics specify training tasks, but there are no explicit functional contracts, memory invariants, permissions or failure policies."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Controller parameters plus separately represented learned addresses and mutable content memory form a concrete stateful function carrier."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Backpropagation/REINFORCE generate a trained carrier from examples, but this is stochastic optimization without semantics-preservation or correctness guarantees."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Source and experiment scripts exist, while absent pinned environment/checkpoints/results/releases prevent an immutable accepted runtime artifact."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The recurrent controller plus explicit read/erase/write memory transition is a concrete stateful execution runtime."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Read/write weights and memory locations can be visualized, but no durable trace schema, complete memory-delta log, causal receipt or replay contract is defined."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Multiple tasks, baselines, ablations and failure cases supply bounded empirical validators, without independent reproduction or formal verification."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Learned continuous or hard address selection routes controller reads/writes over memory cells, including multi-step and LRU-biased access."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "No machine-readable function/memory capability registry, immutable release, compatibility matrix, monitoring or lifecycle state is defined."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Supervised data/objectives specify behavior empirically, while absence of pre/postconditions and memory/effect contracts leaves formal FunctionSpec needs open."
+    },
+    "GAP-016": {
+      "status": "NOT_SUPPORTED",
+      "reason": "The paper does not provide weight-space composition of independent functions; it composes controller and memory operations inside one jointly trained model."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Benchmark metrics compare carriers, but no cross-representation equivalence criterion or checker is defined."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Mutable episode memory is explicit state, but there is no typed effect signature, authority, transaction or external-side-effect discipline."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Code history supplies limited provenance, while no versioned checkpoint registry, full lineage receipt, compatibility or rollback process exists."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Categorical/Bernoulli training choices are formal stochastic mechanisms, but no calibrated uncertainty, probabilistic function contract, risk or fallback semantics is supplied."
+    }
+  },
+  "source_specific_reasoning": "CONFIRMED applies to the bounded D-NTM mechanism and evidence: the paper directly defines and evaluates trainable address vectors, mutable episode memory and continuous/discrete read-write routing. It does not confirm the atlas template that weights are programs, weight arithmetic composes programs, inference is stateless or the uncertainty model is deterministic. 121CX also supersedes the 121CN blocked-access conclusion because the exact frozen arXiv bytes are the intended legal OA full text. Performance claims are narrowed by regime: hard routing is strongest among recurrent D-NTM bAbI variants but not feedforward D-NTM, pMNIST or associative recall, and even the best D-NTM bAbI aggregate trails memory-network baselines substantially.",
+  "confirmed_projection": "The paper confirms a Function OS representation/runtime/router pattern: separate stable learned addresses from invocation-local mutable content, make read/write/erase operations explicit, record whether routing is weighted or single-target, and validate router/controller choices per workload instead of assuming a universal best policy. Its training pathologies and mixed results motivate memory invariants, trace receipts, uncertainty/fallback policy and immutable artifact provenance before a learned stateful router is accepted.",
+  "projection_boundary": "This projection is based on the exact 24-page arXiv v2 bytes, every rendered page, complete extracted text, official arXiv/Crossref metadata and the official repository's history/source/scripts/license. The legacy code was not executed against datasets because no pinned Python/Theano environment or result/checkpoint bundle exists. This model review is not a proof, formal verification, causal proof, code reproduction, independent empirical validation, security audit or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not support the old atlas's Anonymous/2020/Neural Computation volume 32 metadata.",
+    "It does not support 121CN's conclusion that no legal OA/arXiv full text exists; the exact frozen arXiv v2 is the intended paper.",
+    "It does not treat arbitrary neural weights as symbolic programs or demonstrate weight-space program arithmetic/layer composition.",
+    "It does not provide stateless inference; controller and external-memory content evolve within each episode.",
+    "It does not show discrete addressing universally outperforms continuous addressing across controllers and tasks.",
+    "It does not show D-NTM dominates memory networks, recurrent-batch-normalized pMNIST models or word-attention SNLI models.",
+    "It does not establish Turing completeness, unbounded memory or demonstrated scaling to arbitrarily long horizons; concrete memory is fixed-size and future scalability is conjectural.",
+    "It does not report repeated-run uncertainty or significance for its own tables.",
+    "It does not define formal behavioral equivalence, effect/authority contracts, safety guarantees or a versioned function registry.",
+    "The released source does not by itself reproduce the paper's results and this review did not rerun them."
+  ],
+  "limitations_and_failure_boundaries": [
+    "Memory has a fixed number of cells; content is reset each episode and learned addresses are base-model parameters.",
+    "Discrete actions are non-differentiable and require high-variance REINFORCE estimators, baselines, normalization and exploration regularization.",
+    "The controller can ignore memory or misuse the address matrix as an extra weight matrix without regularization.",
+    "Feedforward discrete D-NTM reports 68.30% average bAbI error without curriculum; curriculum improves but remains worse than soft feedforward D-NTM.",
+    "GRU models can overfit selected bAbI tasks quickly, while feedforward models can underfit them.",
+    "The best reported D-NTM bAbI aggregate remains much worse than MemN2N and DMN+ under the compared setup.",
+    "Soft D-NTM, not hard D-NTM, is the best D-NTM pMNIST variant; discrete D-NTM fails associative recall.",
+    "Individual-task training and other-study setup differences limit direct comparison and generalization.",
+    "Own result tables omit run counts, seeds and dispersion; validation data influence early stopping/hyperparameter choice.",
+    "The official repository is unpinned Python-2/Theano research code with hard-coded local paths, interactive debug files, no automated tests, checkpoints or raw result receipts."
+  ],
+  "prior_provisional_comparison": {
+    "old_status": "METADATA_ONLY",
+    "old_template": "Program encoded as neural network weights; weight space as program space; stateless inference/stateful training; deterministic uncertainty; weight arithmetic or layer stacking; forward-pass activations; checkpoint plus training configuration.",
+    "accepted_after_full_review": "A learned neural controller and external memory form an executable stateful carrier; training uses gradient descent/REINFORCE, forward execution exposes read/write addressing, and artifact provenance would require checkpoints/configuration.",
+    "corrected_after_full_review": "The work is a stateful memory-augmented architecture, not weights-as-programs or weight arithmetic. Discrete training is stochastic; inference mutates episode memory; attention visualization is not a standardized execution trace; no formal equivalence or complete checkpoint/provenance bundle is supplied; and the author/year/volume metadata are corrected."
+  }
+}
