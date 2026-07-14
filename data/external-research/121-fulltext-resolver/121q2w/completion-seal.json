@@ -1,0 +1,90 @@
+{
+  "task": "121Q2W",
+  "seal_status": "COMPLETE",
+  "timestamp": "2026-07-14T17:39:02Z",
+  "baseline_head": "8b95f7457f0fbcc553676b9ddb722f7b4176fd09",
+  "content_head": "1abc5c41bcd54ef4c7dd788cd86159bc36d23a7b",
+  "seal_commit_head": "PENDING — will be confirmed after push",
+  "branch": "records/ignition-121q2w-final-consistency-seal-20260715",
+  "pr_37": {
+    "number": 37,
+    "state": "OPEN",
+    "is_draft": true
+  },
+  "pr_35_unchanged": true,
+  "pr_36_unchanged": true,
+  "steps": {
+    "000": {
+      "sha": "fabb3dd",
+      "action": "BASELINE_AUDIT",
+      "result": "9 defects registered"
+    },
+    "001": {
+      "sha": "20aa332",
+      "action": "IDENTITY_CHAIN_FIX",
+      "result": "VERIFIED=7, CORRECTED=5, BLOCKED=2, UNKNOWN=8, total=22"
+    },
+    "002": {
+      "sha": "8f0ab5a",
+      "action": "PHASE2_AND_INDEX_REBUILD",
+      "result": "sem=0+20+0+2=22, 84 slots, 11 conflicts"
+    },
+    "003": {
+      "sha": "2e6f0ef",
+      "action": "FAMILY_RUNSTATE_REPORT_UNIFY",
+      "result": "changed=6/unchanged=4, no dup keys, S120-012=PARTIAL"
+    },
+    "004": {
+      "sha": "1abc5c4",
+      "action": "ENHANCED_VALIDATION",
+      "result": "19/19 ALL PASS"
+    }
+  },
+  "step_005_note": "This is the seal commit. Its SHA cannot be known until after push. content_head points to Step 004 (parent).",
+  "validators": {
+    "json_jsonl_strict_parse": true,
+    "no_duplicate_keys": true,
+    "phase2_semantic_sum_22": true,
+    "identity_sum_22": true,
+    "s120_012_partial": true,
+    "s120_011_corrected": true,
+    "s120_012_corrected": true,
+    "s120_014_corrected": true,
+    "s120_035_verified": true,
+    "unknown_has_reason": true,
+    "empty_verified_fields_zero": true,
+    "canonical_84_unique": true,
+    "family_sum_10": true,
+    "ledger_18_unique": true,
+    "frozen_zero_diff": true,
+    "credential_scan_clean": true,
+    "pr_merge_close_zero": true,
+    "cross_file_s120_012": true,
+    "cross_file_identity_counts": true
+  },
+  "validation_overall": true,
+  "validation_total_checks": 19,
+  "validation_passed": 19,
+  "artifacts": [
+    "121q2w/baseline-audit.json",
+    "121q2w/prior22-identity-ledger-final.jsonl",
+    "121q2w/phase2-final.json",
+    "121q2w/canonical-index-final.jsonl",
+    "121q2w/family-summary.json",
+    "121q2w/validation.json",
+    "121q2w/121q2w-run-state.json",
+    "121q2w/121q2w-step-ledger.jsonl",
+    "reports/external-research/121Q2W-final-consistency-seal-report.md"
+  ],
+  "non_actions": [
+    "Did NOT enter GAP adjudication",
+    "Did NOT freeze Function OS nodes",
+    "Did NOT perform 35-asset mapping",
+    "Did NOT modify Ψ₀/085/old two-tables",
+    "Did NOT merge/close any PR",
+    "Did NOT use sub-agents/model-switching/fallback",
+    "Did NOT re-read any full text",
+    "Did NOT amend/rebase/squash/force-push"
+  ],
+  "next_action": "AWAITING_GPT_VERIFICATION"
+}

@@ -4,10 +4,10 @@
   "baseline_head": "8b95f7457f0fbcc553676b9ddb722f7b4176fd09",
   "branch": "records/ignition-121q2w-final-consistency-seal-20260715",
   "pr_36_unchanged": true,
-  "current_step": 4,
+  "current_step": 5,
   "current_step_status": "COMPLETE",
-  "next_step": 5,
-  "next_step_description": "Final seal and 1111 receipt",
+  "next_step": null,
+  "next_step_description": "FORCED STOP — awaiting GPT verification",
   "phase2_semantic_counts": {
     "CONFIRMED": 0,
     "PARTIAL": 20,
@@ -42,8 +42,9 @@
     "canonical_index": "121q2w/canonical-index-final.jsonl",
     "family_summary": "121q2w/family-summary.json"
   },
-  "last_updated": "2026-07-14T17:38:36Z",
+  "last_updated": "2026-07-14T17:39:02Z",
   "validation_passed": true,
   "validation_total_checks": 19,
-  "validation_passed_count": 19
+  "validation_passed_count": 19,
+  "content_head": "1abc5c41bcd54ef4c7dd788cd86159bc36d23a7b"
 }
