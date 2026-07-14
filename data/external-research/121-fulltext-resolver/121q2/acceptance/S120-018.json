@@ -1,0 +1,175 @@
+{
+  "source_id": "S120-018",
+  "cx_step": 103,
+  "step_number": 103,
+  "_acceptance_layer": "121q2/acceptance/S120-018.json — overlay, historical card preserved at evidence-cards/S120-018.json",
+  "canonical_title": "SPoC: Search-based Pseudocode to Code",
+  "authors": "Sumith Kulal, Panupong Pasupat, Kartik Chandra, Mina Lee, Oded Padon, Alex Aiken, Percy Liang",
+  "year": 2019,
+  "venue": "NeurIPS 2019 (33rd Conference on Neural Information Processing Systems)",
+  "doi_or_identifier": "NeurIPS-2019-7298332 (proceedings hash: 7298332f04ac004a0ca44cc69ecf6f6b)",
+  "prior_identity": {
+    "evidence_card": {
+      "title": "SPoC: Search-based Pseudocode to Code (CORRECT)",
+      "authors": "Kulal, S., et al. (CORRECT — first author matches)",
+      "year": 2019,
+      "venue": "NeurIPS 2019 (CORRECT)",
+      "doi_or_identifier": "NeurIPS-2019-7298332 (CORRECT)",
+      "url": "https://proceedings.neurips.cc/paper/2019/file/7298332f04ac004a0ca44cc69ecf6f6b-Paper.pdf (CORRECT)",
+      "sha256": "pending",
+      "file_size_bytes": 412277
+    },
+    "121cn_high_review": {
+      "title": "SPoC: Search-Based Pseudocode to Code (CORRECT title)",
+      "authors": "Alexey Svyatkovskiy, Shao Kun Deng, Shengyu Fu, Neel Sundaresan (COMPLETELY WRONG — these are NOT authors of this paper)",
+      "year": 2021,
+      "venue": "EMNLP 2021 (WRONG — actual NeurIPS 2019)",
+      "doi_or_identifier": "arXiv:2106.04536 (WRONG — this arXiv ID likely points to a different paper)",
+      "sha256": "pending"
+    }
+  },
+  "corrected_identity": {
+    "title": "SPoC: Search-based Pseudocode to Code",
+    "authors": "Sumith Kulal*, Panupong Pasupat*, Kartik Chandra, Mina Lee, Oded Padon, Alex Aiken, Percy Liang (Stanford University)",
+    "year": 2019,
+    "venue": "NeurIPS 2019",
+    "doi_or_identifier": "NeurIPS-2019-7298332",
+    "exact_fulltext_used": "NeurIPS proceedings PDF, SHA256: 2350dfbd002f951893a2333bb09e1d9a7dff27c04ab198c41282d50ef408c663",
+    "url": "https://proceedings.neurips.cc/paper/2019/file/7298332f04ac004a0ca44cc69ecf6f6b-Paper.pdf"
+  },
+  "identity_status": "CORRECTED",
+  "identity_corrections": [
+    "Evidence-card identity: CORRECT (title, authors, venue, URL all match)",
+    "121cn high-review card: COMPLETELY WRONG identity — different authors, wrong venue (EMNLP 2021 vs NeurIPS 2019), wrong year, wrong arXiv ID",
+    "121cn high-review card reviewed a DIFFERENT paper (possibly arXiv:2106.04536 by Svyatkovskiy et al.) and labeled it as S120-018",
+    "All 121cn semantic conclusions (paper_core_claims, function_os_node_impacts, ignition_gap_impacts) are UNRELIABLE — they describe a different paper"
+  ],
+  "url": "https://proceedings.neurips.cc/paper/2019/file/7298332f04ac004a0ca44cc69ecf6f6b-Paper.pdf",
+  "access_url": "https://proceedings.neurips.cc/paper/2019/file/7298332f04ac004a0ca44cc69ecf6f6b-Paper.pdf",
+  "access_time_utc": "2026-07-14T16:31:34Z",
+  "file_sha256": "2350dfbd002f951893a2333bb09e1d9a7dff27c04ab198c41282d50ef408c663",
+  "file_size_bytes": 412277,
+  "page_count": 12,
+  "content_type": "application/pdf",
+  "sections": [
+    "1 Introduction",
+    "2 Task Formulation (pseudocode → C++ code, test case validation)",
+    "3 SPoC Dataset (18,356 C++ programs, human-authored pseudocode, test cases)",
+    "4 Method (Best-First Search, Error Localization: Multiclass Classifier + Prefix-based Pruning)",
+    "5 Experiments (success rates, ablation, error analysis)",
+    "6 Results (44.7% success with search vs 25.6% top-one, under 100 compilations)",
+    "7 Related Work and Discussion"
+  ],
+  "abstract_snippet": "We consider the task of mapping pseudocode to executable code, assuming a one-to-one correspondence between lines of pseudocode and lines of code. Given test cases as a mechanism to validate programs, we search over the space of possible translations of the pseudocode to find a program that compiles and passes the test cases. We collected the SPoC dataset containing 18,356 C++ programs with human-authored pseudocode and test cases. Under a budget of 100 program compilations, performing search improves the synthesis success rate over using the top-one translation from 25.6% to 44.7%.",
+  "what_the_paper_supports": "SPoC introduces a search-based pseudocode-to-code synthesis pipeline: (1) pseudocode provides line-level specification, (2) code generation model produces candidate translations per line, (3) best-first search with test case validation finds correct programs, (4) error localization (multiclass classifier + prefix-based pruning) identifies failing lines. The SPoC dataset (18,356 C++ programs, 14.7 lines avg, 38.6 test cases avg) is a significant contribution. Test cases serve as executable validation (N7). Compilation serves as a hard gate — 88.7% of failures are compilation errors. Search improves success from 25.6% to 44.7% under 100 compilations.",
+  "what_the_paper_does_not_support": "No formal specification language beyond pseudocode (GAP-015 — pseudocode is informal). No formal equivalence checking between programs (GAP-017 — only test case validation). No versioning of synthesized programs (GAP-019). No formal verification of program correctness (GAP-020 — only empirical test case checking). No execution trace beyond compilation success/failure (GAP-018 — no intermediate state tracking). Programs limited to C++ with 10-20 lines. One-to-one pseudocode-to-code line assumption is restrictive.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "paper_core_claims": [
+    "Pseudocode-to-code synthesis with search over translation space improves success from 25.6% to 44.7%",
+    "Error localization using compiler feedback (88.7% of failures are compilation errors) guides search",
+    "Two error localization methods: multiclass classifier (uses error message + pseudocode) and prefix-based pruning (guaranteed correct identification via additional compilations)",
+    "SPoC dataset: 18,356 C++ programs with human-authored pseudocode and test cases",
+    "Best-first search with credit assignment outperforms naive beam search",
+    "Prefix-based pruning is more effective at higher compilation budgets; classifier better at lower budgets"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Pseudocode serves as informal line-level specification. Each pseudocode line corresponds to ~1-2 code statements. However, pseudocode is natural language — no formal spec language."
+    },
+    "GAP-016": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Code generation model compiles pseudocode → code candidates. Search over candidate space with compilation as hard gate. But compilation only checks syntax, not semantics."
+    },
+    "GAP-017": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Test cases provide behavioral equivalence checking: if program passes all test cases, it's considered correct. But this is testing, not formal equivalence — may miss edge cases."
+    },
+    "GAP-018": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "No intermediate state tracking. Programs are validated only end-to-end via test cases. Error localization identifies failing lines but does not track execution state."
+    },
+    "GAP-019": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Test cases serve as validation regime, but no versioning or registry of synthesized programs. Search produces a single best program, not a versioned set."
+    },
+    "GAP-020": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No formal verification. Program correctness is only checked empirically via test cases. No proof of correctness, no edge case coverage guarantee."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Pseudocode + test cases as specification. Pseudocode provides line-level guidance, test cases provide functional spec. More structured than I/O-only but still informal."
+    },
+    "N2_Representation": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Code as representation. Pseudocode-to-code line mapping provides structured decomposition. BPE tokenization for code tokens."
+    },
+    "N3_Compiler": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Code generation model (BERT-to-BERT style) compiles pseudocode → code candidates. C++ compiler provides hard compilation gate. Two-stage compilation: neural translation + symbolic compilation."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Synthesized C++ programs are executable artifacts. SPoC dataset provides reusable artifact collection. But no persistent registry or versioning."
+    },
+    "N5_Interpreter": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "C++ compiler + runtime as interpreter. Test case execution is the validation mechanism. Compilation itself is a hard interpretive gate."
+    },
+    "N6_ExecutionTrace": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "No intermediate execution trace. Error localization identifies failing lines but does not produce execution traces. Only binary success/failure per compilation."
+    },
+    "N7_Validator": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Test cases as concrete, executable validation. Compilation as syntactic validation. Two-tier validation: (1) does it compile? (2) does it pass test cases? This is a strong, practical validator."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Line-by-line composition: each pseudocode line → code line, combined into full program. Search explores different combinations. But composition is sequential, not hierarchical."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NO_EVIDENCE",
+      "reason": "No versioning, registry, or retrieval of synthesized programs."
+    }
+  },
+  "limitations_and_failure_boundaries": [
+    "One-to-one pseudocode-to-code line assumption — restrictive, doesn't hold for all programs",
+    "Only C++ programs, 10-20 lines average — unclear generalization to longer programs or other languages",
+    "44.7% success rate means >55% of programs fail even with search",
+    "Test case validation is not formal verification — edge cases may be missed",
+    "88.7% of failures are compilation errors — semantic errors are harder to catch",
+    "Search budget (100-1500 compilations) is expensive",
+    "Pseudocode quality directly affects synthesis quality — annotator bias possible",
+    "No intermediate state tracking — cannot diagnose semantic errors beyond test case failure"
+  ],
+  "strengths_noted": [
+    "SPoC dataset is a major contribution: 18,356 programs with human-authored pseudocode and test cases",
+    "Two error localization methods with complementary strengths (classifier for low budget, prefix pruning for high budget)",
+    "Compilation as hard gate is practical and effective — catches 88.7% of failures",
+    "Credit assignment via error localization is novel for program synthesis",
+    "Dataset and code publicly available: https://sumith1896.github.io/spoc/",
+    "Detailed error analysis with prototypical examples (Figure 5)"
+  ],
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "2350dfbd002f951893a2333bb09e1d9a7dff27c04ab198c41282d50ef408c663",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "CRITICAL: 121cn high-review card reviewed a COMPLETELY DIFFERENT paper (wrong authors, wrong venue, wrong arXiv ID)",
+      "Evidence-card identity: CORRECT (NeurIPS 2019, Kulal et al.)",
+      "121cn semantic conclusions are UNRELIABLE — they describe arXiv:2106.04536 by Svyatkovskiy et al., not this paper",
+      "N7 Validator: STRONG evidence — two-tier validation (compilation + test cases) is concrete and practical",
+      "N3 Compiler: two-stage compilation (neural translation + symbolic compilation) is notable"
+    ]
+  },
+  "reviewed_by_model": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "reviewed_at": "2026-07-14T16:31:34Z",
+  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714"
+}

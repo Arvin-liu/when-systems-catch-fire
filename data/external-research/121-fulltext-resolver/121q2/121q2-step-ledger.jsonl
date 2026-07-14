@@ -1,3 +1,4 @@
 {"step": 0, "cx_step": null, "source_id": null, "action": "INIT", "verdict": null, "timestamp": "2026-07-14T16:26:47Z"}
 {"step": 1, "cx_step": null, "source_id": null, "action": "121Q1_REPAIR_REVERIFICATION", "verdict": "PASS", "timestamp": "2026-07-14T16:27:27Z"}
 {"step": 2, "cx_step": 102, "source_id": "S120-017", "action": "ACCEPTANCE_REVIEW", "verdict": "PARTIAL", "identity_status": "CORRECTED", "timestamp": "2026-07-14T16:29:59Z"}
+{"step": 3, "cx_step": 103, "source_id": "S120-018", "action": "ACCEPTANCE_REVIEW", "verdict": "PARTIAL", "identity_status": "CORRECTED", "timestamp": "2026-07-14T16:31:34Z"}
