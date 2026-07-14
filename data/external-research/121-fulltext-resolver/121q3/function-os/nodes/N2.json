@@ -1,0 +1,85 @@
+{
+  "node_id": "N2",
+  "canonical_name": "Representation",
+  "canonical_definition": "Machine-readable encoding of a function (weights, code, mathematical formula, AST)",
+  "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+  "inputs": "FunctionSpec",
+  "outputs": "encoded_function_artifact",
+  "preconditions": "See node registry (Step 009)",
+  "invariants": [
+    "No FROZEN/FINAL/PROVEN status"
+  ],
+  "strongest_verified_sources": [
+    {
+      "source_id": "S120-001",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions"
+    },
+    {
+      "source_id": "S120-002",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "Linear Transformers Are Secretly Fast Weight Programmers"
+    },
+    {
+      "source_id": "S120-035",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models"
+    },
+    {
+      "source_id": "S120-039",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy Without Increasing Inference Time"
+    },
+    {
+      "source_id": "S120-045",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Editing Models with Task Arithmetic"
+    }
+  ],
+  "partial_or_analogical_sources": [
+    {
+      "source_id": "S120-004",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "A Survey of Weight Space Learning: Understanding, Representation, and Generation"
+    },
+    {
+      "source_id": "S120-009",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "HyperNetworks"
+    },
+    {
+      "source_id": "S120-027",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Operator Learning: Algorithms and Analysis"
+    },
+    {
+      "source_id": "S120-030",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Fourier Neural Operator for Parametric Partial Differential Equations"
+    }
+  ],
+  "counterevidence": "Cross-representation equivalence not established.",
+  "limitations": "No unified representation across code, weights, and specs.",
+  "linked_gaps": [
+    "GAP-016",
+    "GAP-017"
+  ],
+  "candidate_interface": "Union type: mathematical_formula (LaTeX) | python_code (str) | weight_artifact (bytes) | adapter (bytes)",
+  "candidate_status": "SUPPORTED_CANDIDATE",
+  "unresolved_questions": "No unified representation across code, weights, and specs.",
+  "prohibited_wording": [
+    "Do not claim FROZEN/FINAL/PROVEN",
+    "Do not claim papers verify N2",
+    "Do not claim external research solves N2"
+  ],
+  "timestamp": "2026-07-14T17:57:23Z"
+}

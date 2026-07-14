@@ -1,0 +1,85 @@
+{
+  "node_id": "N5",
+  "canonical_name": "Interpreter",
+  "canonical_definition": "Executes function artifact with given inputs",
+  "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+  "inputs": "Artifact + input_values",
+  "outputs": "execution_result",
+  "preconditions": "See node registry (Step 009)",
+  "invariants": [
+    "No FROZEN/FINAL/PROVEN status"
+  ],
+  "strongest_verified_sources": [
+    {
+      "source_id": "S120-001",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions"
+    },
+    {
+      "source_id": "S120-021",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Execution Guided Line-by-Line Code Generation"
+    },
+    {
+      "source_id": "S120-030",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Fourier Neural Operator for Parametric Partial Differential Equations"
+    },
+    {
+      "source_id": "S120-053",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Handlers of Algebraic Effects"
+    }
+  ],
+  "partial_or_analogical_sources": [
+    {
+      "source_id": "S120-007",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "Neural Programmer: Inducing Latent Programs with Gradient Descent"
+    },
+    {
+      "source_id": "S120-017",
+      "identity": "CORRECTED",
+      "semantic": "PARTIAL",
+      "title": "Latent Execution for Neural Program Synthesis"
+    },
+    {
+      "source_id": "S120-027",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Operator Learning: Algorithms and Analysis"
+    },
+    {
+      "source_id": "S120-055",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Handlers in Action"
+    },
+    {
+      "source_id": "S120-064",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Pyro: Deep Universal Probabilistic Programming"
+    }
+  ],
+  "counterevidence": "Effect tracking and cross-representation interpretation not unified.",
+  "limitations": "Cross-representation interpretation and effect tracking.",
+  "linked_gaps": [
+    "GAP-018",
+    "GAP-020"
+  ],
+  "candidate_interface": "Dispatch interpreter: artifact_type to executor, effect_signature to effect_handler",
+  "candidate_status": "SUPPORTED_CANDIDATE",
+  "unresolved_questions": "Cross-representation interpretation and effect tracking.",
+  "prohibited_wording": [
+    "Do not claim FROZEN/FINAL/PROVEN",
+    "Do not claim papers verify N5",
+    "Do not claim external research solves N5"
+  ],
+  "timestamp": "2026-07-14T17:57:23Z"
+}

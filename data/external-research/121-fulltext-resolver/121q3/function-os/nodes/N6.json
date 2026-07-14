@@ -1,0 +1,78 @@
+{
+  "node_id": "N6",
+  "canonical_name": "ExecutionTrace",
+  "canonical_definition": "Detailed log of function execution including inputs, outputs, intermediate states, and timing",
+  "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+  "inputs": "Interpreter execution",
+  "outputs": "structured_trace_log",
+  "preconditions": "See node registry (Step 009)",
+  "invariants": [
+    "No FROZEN/FINAL/PROVEN status"
+  ],
+  "strongest_verified_sources": [
+    {
+      "source_id": "S120-021",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Execution Guided Line-by-Line Code Generation"
+    },
+    {
+      "source_id": "S120-053",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Handlers of Algebraic Effects"
+    }
+  ],
+  "partial_or_analogical_sources": [
+    {
+      "source_id": "S120-017",
+      "identity": "CORRECTED",
+      "semantic": "PARTIAL",
+      "title": "Latent Execution for Neural Program Synthesis"
+    },
+    {
+      "source_id": "S120-018",
+      "identity": "CORRECTED",
+      "semantic": "PARTIAL",
+      "title": "SPoC: Search-based Pseudocode to Code"
+    },
+    {
+      "source_id": "S120-022",
+      "identity": "NOT_FOUND",
+      "semantic": "PARTIAL",
+      "title": "Learning to Reason via Program Generation, Emulation, and Search"
+    },
+    {
+      "source_id": "S120-055",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Handlers in Action"
+    },
+    {
+      "source_id": "S120-058",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Probabilistic Programming with Stochastic Probabilities"
+    },
+    {
+      "source_id": "S120-070",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models"
+    }
+  ],
+  "counterevidence": "Traces not systematically recorded as first-class objects.",
+  "limitations": "Traces available but not unified or queryable.",
+  "linked_gaps": [
+    "GAP-018"
+  ],
+  "candidate_interface": "Structured log: step_id, function_id, input, output, duration, effect_log, verification_status",
+  "candidate_status": "PARTIAL_CANDIDATE",
+  "unresolved_questions": "Traces available but not unified or queryable.",
+  "prohibited_wording": [
+    "Do not claim FROZEN/FINAL/PROVEN",
+    "Do not claim papers verify N6",
+    "Do not claim external research solves N6"
+  ],
+  "timestamp": "2026-07-14T17:57:23Z"
+}
