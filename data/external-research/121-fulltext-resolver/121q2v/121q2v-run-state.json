@@ -4,12 +4,12 @@
   "baseline_head": "a344c20c29d78d8e7c52e0eca53c64eb930a8bc4",
   "branch": "records/ignition-121q2v-verification-repair-20260715",
   "pr_35_unchanged": true,
-  "current_step": 4,
+  "current_step": 5,
   "current_step_status": "COMPLETE",
-  "next_step": 5,
-  "next_step_description": "run-state and completion cursor repair",
+  "next_step": 6,
+  "next_step_description": "121Q2R step ledger reconstruction",
   "defects_registered": 9,
-  "last_updated": "2026-07-14T17:20:24Z",
+  "last_updated": "2026-07-14T17:20:47Z",
   "phase2_counts": {
     "CONFIRMED": 0,
     "PARTIAL": 20,
@@ -49,5 +49,20 @@
   "family_impacts": {
     "changed": 6,
     "unchanged": 4
-  }
+  },
+  "phase_2_status": "COMPLETE",
+  "phase_2_next_cx_step": null,
+  "phase_2_next_source_id": null,
+  "phase_2_next_phase": "AWAITING_GPT_DECISION",
+  "phase_2_verdicts_ref": "121q2v/phase2-verdict-reconstruction.json",
+  "identity_ledger_ref": "121q2v/prior22-identity-ledger-corrected.jsonl",
+  "canonical_index_ref": "121q2v/canonical-semantic-index-corrected.jsonl",
+  "family_impact_ref": "121q2v/family-count-impact.json",
+  "phase_2_counts": {
+    "CONFIRMED": 0,
+    "PARTIAL": 20,
+    "NOT_SUPPORTED": 0,
+    "UNRESOLVED": 2
+  },
+  "phase_2_total": 22
 }
