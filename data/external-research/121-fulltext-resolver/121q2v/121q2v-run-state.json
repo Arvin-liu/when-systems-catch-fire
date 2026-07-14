@@ -4,17 +4,24 @@
   "baseline_head": "a344c20c29d78d8e7c52e0eca53c64eb930a8bc4",
   "branch": "records/ignition-121q2v-verification-repair-20260715",
   "pr_35_unchanged": true,
-  "current_step": 1,
+  "current_step": 2,
   "current_step_status": "COMPLETE",
-  "next_step": 2,
-  "next_step_description": "prior22 identity chain reconstruction",
+  "next_step": 3,
+  "next_step_description": "84-source canonical index reconstruction",
   "defects_registered": 9,
-  "last_updated": "2026-07-14T17:17:30Z",
+  "last_updated": "2026-07-14T17:18:13Z",
   "phase2_counts": {
     "CONFIRMED": 0,
     "PARTIAL": 20,
     "NOT_SUPPORTED": 0,
     "UNRESOLVED": 2
   },
-  "phase2_total": 22
+  "phase2_total": 22,
+  "identity_counts": {
+    "VERIFIED": 7,
+    "CORRECTED": 2,
+    "BLOCKED": 2,
+    "UNKNOWN": 11
+  },
+  "identity_total": 22
 }

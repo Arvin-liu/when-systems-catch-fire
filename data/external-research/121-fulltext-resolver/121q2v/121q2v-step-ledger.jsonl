@@ -1,2 +1,3 @@
 {"step": 0, "action": "BASELINE_AUDIT", "result": "9 defects confirmed, PR #35 verified, 18 commits verified", "timestamp": "2026-07-14T17:16:35Z"}
 {"step": 1, "action": "PHASE2_VERDICT_RECONSTRUCTION", "result": "counts={'CONFIRMED': 0, 'PARTIAL': 20, 'NOT_SUPPORTED': 0, 'UNRESOLVED': 2}, total=22", "timestamp": "2026-07-14T17:17:30Z"}
+{"step": 2, "action": "IDENTITY_LEDGER_RECONSTRUCTION", "result": "counts={'VERIFIED': 7, 'CORRECTED': 2, 'BLOCKED': 2, 'UNKNOWN': 11}, total=22", "timestamp": "2026-07-14T17:18:13Z"}
