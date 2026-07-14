@@ -29,15 +29,15 @@
     "state": "OPEN",
     "draft": true
   },
-  "last_completed_cx_step": 85,
-  "next_cx_step": 86,
+  "last_completed_cx_step": 86,
+  "next_cx_step": 87,
   "canonical_121cn_last_completed_step": 30,
   "canonical_121cn_next_step": 31,
-  "canonical_source_last_completed_step": 85,
-  "canonical_source_next_step": 86,
-  "last_completed_source_id": "S120-033",
-  "next_source_id": "S120-056",
-  "canonical_resume_status": "RESUMED_AND_IN_PROGRESS_AT_STEP_86",
+  "canonical_source_last_completed_step": 86,
+  "canonical_source_next_step": 87,
+  "last_completed_source_id": "S120-056",
+  "next_source_id": "S120-080",
+  "canonical_resume_status": "RESUMED_AND_IN_PROGRESS_AT_STEP_87",
   "active_manifest": {
     "historical_base": "data/external-research/121-fulltext-resolver/121cn/121cn-microstep-manifest.jsonl",
     "121cx_overlay": "data/external-research/121-fulltext-resolver/121cx/121cx-microstep-manifest-overlay.jsonl",
@@ -72,9 +72,9 @@
     "prior_non_codex_review_cards_unique": 22,
     "reviewed_121c01_unique": 10,
     "reviewed_121cn_unique": 12,
-    "remaining_reviewable_unique": 1,
-    "codex56_extreme_new_reviews": 54,
-    "confirmed": 39,
+    "remaining_reviewable_unique": 0,
+    "codex56_extreme_new_reviews": 55,
+    "confirmed": 40,
     "partial": 36,
     "not_supported": 0,
     "unresolved": 0
@@ -86,7 +86,8 @@
     "Corrected the post-Step-76 next-source cursor from overlay Step 87 blocked source S120-080 to historical manifest Step 77 source S120-081 before beginning Step 77.",
     "Recorded without rewriting frozen data that S120-082 arXiv:2402.12045 is an unrelated quantum-physics PDF; gave it zero semantic credit and recovered the uniquely identified ICML 2024 DARE model-merging paper from the remaining author/year/method metadata.",
     "Recorded without rewriting frozen data that the 121B S120-024 arXiv:2205.07366 artifact is an unrelated MHD current-sheet particle-acceleration paper; used the exact canonical 97-page JMLR v24:21-1524 PDF repaired by 121CN and gave the frozen wrong binding zero semantic credit.",
-    "Recorded without rewriting frozen data that the 121B S120-032 arXiv:2402.11285 artifact is an unrelated O-RAN resource-allocation paper; used the exact canonical 9-page AAAI-26 PDF, corrected the 121CN repair venue year from 2025 to 2026, and gave the frozen wrong binding zero semantic credit."
+    "Recorded without rewriting frozen data that the 121B S120-032 arXiv:2402.11285 artifact is an unrelated O-RAN resource-allocation paper; used the exact canonical 9-page AAAI-26 PDF, corrected the 121CN repair venue year from 2025 to 2026, and gave the frozen wrong binding zero semantic credit.",
+    "Corrected S120-056 from the old atlas's sole-author/Journal of Functional Programming/Cambridge DOI metadata to the exact Bauer-and-Pretnar JLAMP article DOI 10.1016/j.jlamp.2014.02.001, while preserving the frozen old record and independently matching the 121B/121CN arXiv bytes."
   ],
   "deferred_acceptance_corrections": [
     "Preserve the 12 prior 121CN cards but correct their missing specification_language, uncertainty_model, and lifecycle_and_provenance coverage during independent Codex acceptance."
