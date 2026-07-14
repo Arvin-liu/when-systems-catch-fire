@@ -1,0 +1,293 @@
+{
+  "source_id": "S120-065",
+  "canonical_title": "MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation",
+  "authors": [
+    "Huawei Lin",
+    "Peng Li",
+    "Jie Song",
+    "Fuxin Jiang",
+    "Tieying Zhang"
+  ],
+  "year": 2026,
+  "version": "arXiv:2605.27366v2, under-review preprint; submitted 2026-05-26 and revised 2026-07-03",
+  "doi_or_identifier": "arXiv:2605.27366v2",
+  "identifier": "cs.AI primary; cs.CL, cs.LG and cs.MA cross-lists",
+  "url": "https://arxiv.org/abs/2605.27366v2",
+  "source_family": 10,
+  "source_family_name": "agent skills and reusable capability libraries",
+  "license": "CC BY 4.0",
+  "sha256": "be16a9327f3bf6fb7cea476c51e3128825f5698b80cf428464b817360075348d",
+  "file_size_bytes": 2085173,
+  "page_count": 30,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "registered_url": "https://arxiv.org/pdf/2605.27366",
+    "versioned_url": "https://arxiv.org/pdf/2605.27366v2",
+    "sha256": "be16a9327f3bf6fb7cea476c51e3128825f5698b80cf428464b817360075348d",
+    "file_size_bytes": 2085173,
+    "page_count": 30,
+    "registered_pdf_visual_check": "all 30 pages rendered and inspected; architecture/context figures, 15 tables, appendices, pseudocode, task list and references are present and legible",
+    "arxiv_metadata": "v1 submitted 2026-05-26 17:59:19 UTC; v2 revised 2026-07-03 08:22:38 UTC; 30 pages, nine figures, 15 tables; under review",
+    "identity_correction": "the provisional card called the authors Anonymous even though the exact PDF and arXiv metadata name five authors",
+    "section_correction": "the provisional seven-section summary does not match the document; the paper has Introduction, Related Work, MUSE-Autoskill Agent, Experiments, Real-World Deployment and Impact, Conclusion, Limitations and appendices A-L",
+    "source_archive": {
+      "url": "https://arxiv.org/e-print/2605.27366v2",
+      "sha256": "42adbb886656aa0485f6eb79a978074a577e420da2561d12416774fb0dd48d37",
+      "contents": "LaTeX, bibliography, class/fonts and figure PDFs; no MUSE implementation, generated-skill bank, benchmark run archive or result log"
+    },
+    "external_leaderboard_receipt": {
+      "url": "https://fdabench.github.io/static/data/method_aggregated.csv",
+      "sha256_at_review": "f7fca40ba9cd5246d80891229b89e1a59d6fbfd8a4d0573cc0e9f88777943971",
+      "support": "the public row named Data Analysis Agent (ByteDance Lark Base & Hydra & NovaBase Team) reports 0.852, 0.741 and 0.497 for report, single-choice and multiple-choice metrics",
+      "boundary": "the leaderboard row is not named MUSE-Autoskill and supplies no code, run trace or causal attribution to the skill lifecycle"
+    },
+    "metadata_discrepancy": "arXiv records v2 on July 3 while the PDF prints Date: July 7, 2026 and the fetched source archive has a July 7 gzip timestamp; the review binds exact bytes rather than inferring a third public version"
+  },
+  "sections_reviewed": [
+    "abstract, headline claims, authorship and dates",
+    "introduction, lifecycle framing and contributions",
+    "related agent, automatic-skill and benchmark systems",
+    "planning-action-observation master loop",
+    "skill package, creation, evaluation, execution, memory and management",
+    "short-, long- and skill-level memory",
+    "conversation DAG, adaptive context compression and session persistence",
+    "SkillsBench and SkillLearnBench setup, model bridge and denominators",
+    "human-skill, self-created-skill and cross-agent-transfer results",
+    "cost, case studies, skill anatomy, leakage audit and coverage analysis",
+    "production-adoption claims, conclusion and limitations",
+    "all appendices: task list, FDABench, schema, filesystem, hyperparameters, memory ablation, compression, tokens, deviations, latency, stability and uncovered tasks",
+    "complete LaTeX source archive, arXiv metadata and linked FDABench aggregate row"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "abstract and section 1, pp. 1-3",
+      "checked_for": "five-stage lifecycle, skill-level memory, headline SkillsBench/SkillLearnBench results, transfer and self-evolution claims"
+    },
+    {
+      "anchors": "section 2 and Table 1, pp. 3-5",
+      "checked_for": "comparison taxonomy, training-free claim, cross-agent definition and literature-derived lifecycle coverage"
+    },
+    {
+      "anchors": "sections 3.1-3.2 and Figures 2-3, pp. 5-7",
+      "checked_for": "ReAct loop, SKILL.md package, create-evaluate-register loop, tests, sandbox execution, retrieval, refinement, merge and pruning"
+    },
+    {
+      "anchors": "sections 3.3-3.4 and Figure 4, pp. 8-9",
+      "checked_for": "three memory scopes, conversation DAG, active versus immutable history, two-level compression and cross-session snapshot"
+    },
+    {
+      "anchors": "sections 4.1-4.4 and Tables 2-5, pp. 9-12",
+      "checked_for": "shared GPT-5.5 deployment, Docker verifiers, 75x5 and 100-instance denominators, generated-skill coverage and transfer protocol"
+    },
+    {
+      "anchors": "sections 4.5-4.6 and Tables 6-8, pp. 12-16",
+      "checked_for": "covered-subset costs, case studies/regression, 50-package manual audit, test prevalence, token comparability and coverage bottleneck"
+    },
+    {
+      "anchors": "sections 5-6 and Limitations, pp. 15-17",
+      "checked_for": "production/planned feature distinction, 94-to-75 task exclusion, single-trajectory overfit, one transfer target, incomplete tokens and hallucination risk"
+    },
+    {
+      "anchors": "appendices C-G, pp. 23-28",
+      "checked_for": "skill schema, eager catalog, dependency policy, memory-transfer exclusion, filesystem/events/snapshot schema, fixed constants, memory ablation and compression pseudocode"
+    },
+    {
+      "anchors": "appendices H-L, pp. 28-30",
+      "checked_for": "parseable token sample sizes, task-level deviations, latency/turn tails, run stability and 28 uncovered tasks"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "MUSE-Autoskill treats skills as structured, long-lived assets governed by a unified creation, memory, management, evaluation and refinement lifecycle.",
+      "anchors": "sections 1 and 3; Figures 2-3"
+    },
+    {
+      "claim": "A SKILL.md-centered package with optional code/tests/resources, progressive catalog disclosure, sandbox execution, per-skill memory and failure-triggered repair enables reuse across tasks and agents.",
+      "anchors": "section 3; appendices C-D"
+    },
+    {
+      "claim": "A conversation DAG with two-level summarization and immutable history plus session snapshots supports long-horizon and cross-session work.",
+      "anchors": "section 3.4; Figure 4; appendices D and G"
+    },
+    {
+      "claim": "On the selected 75-task SkillsBench common set and 100 SkillLearnBench instances, MUSE reports the highest compared no-skill, human-skill and self-created-skill scores under a shared GPT-5.5 backend.",
+      "anchors": "section 4; Tables 2-4"
+    },
+    {
+      "claim": "Skills generated from successful trajectories transfer to Hermes and can be more accurate and cheaper on their covered task subset, while incomplete generation coverage remains the main bottleneck.",
+      "anchors": "sections 4.3-4.6; Tables 4-6"
+    }
+  ],
+  "function_concept_used_by_paper": "A skill is an externalized agent function packaged as a directory: its natural-language SKILL.md declares name, description, triggers, principles, tools and workflow, while optional scripts implement procedures, tests check selected behavior and resources/references supply passive context. A catalog routes tasks to skills; an LLM may create or patch packages; the agent interprets the instructions and executes scripts. This is an operational capability abstraction rather than a formal mathematical function or typed software interface.",
+  "representation_or_carrier": "The carrier is a kebab-case directory with YAML-frontmatter SKILL.md and optional scripts/, tests/, resources/ and references/. Per-agent experience lives in a sibling .memory.md excluded from the shipped tarball. The bank is a filesystem directory; eager name/description YAML forms the catalog. Session state includes instruction, inputs, outputs, final response, stdout, ordered events.jsonl, short memory, a serialized conversation DAG, profiling and run metadata. Execution occurs in a process/container sandbox rooted at /sandbox.",
+  "specification_language": "SKILL.md provides a natural-language schema for name, description, when-to-use triggers, core invariants, recommended tools and stepwise workflow; prose says creation additionally receives purpose, inputs and expected outputs. It has no formal type system, machine-checkable pre/postconditions, effects, permissions, dependency/environment lock, resource budgets, security classification, provenance fields, semantic version, compatibility range or deprecation state. Only directory/name consistency and optional pytest behavior are concrete checks described.",
+  "compiler_or_generator": "The LLM-based skill_create procedure distills a high-level intent or successful trajectory into SKILL.md and optional scripts/resources/tests, then may call update_skill after failures. This is generative synthesis, not a verified compiler: the paper gives no released prompt/code, deterministic lowering, syntax/type checker, provenance-preserving transformation or guarantee that the generated package generalizes beyond its source task.",
+  "interpreter_or_runtime": "A master ReAct agent reads the catalog, loads a selected SKILL.md, optionally reads resources, invokes sandbox lifecycle tools for scripts, observes outputs and decides further actions. Unit tests block registration only when tests exist; otherwise source-trajectory, sandbox and runtime checks are used. The runtime also maintains memory, a conversation DAG, summarization and session snapshots. There is no published executable artifact with which to independently inspect or rerun these mechanisms.",
+  "composition_rule": "Skills compose informally through the master agent's planning and successive invocations; overlapping packages may be merged and entire agents are proposed as future skills. Retrieval is LLM selection from eagerly injected names/descriptions, not a measured ranking algorithm. The paper does not specify input/output unification, effect compatibility, transactionality, dependency resolution, conflict/ordering semantics, merge correctness or composition tests.",
+  "state_or_effect_model": "Execution produces ordered plan/action/observation events, files, tool calls, outputs, resource use and failure feedback inside a sandbox; session and skill memories append observations; update/merge/prune mutate the bank; context compression rewires the active parent chain but retains immutable history pointers. This is useful operational tracing but not a formal effect system. Process/container isolation alone does not prove that network calls or external services have no side effects, and no permission, capability, secret, concurrency or rollback policy is specified.",
+  "uncertainty_model": "The agent/model is stochastic at provider-default decoding, and SkillsBench repeats each task five times. The paper reports task-level standard deviation and stability summaries but no explicit random seeds, temperature/top-p values, paired confidence intervals, hypothesis tests or multiplicity control. SkillLearnBench instances run once per headline condition. Uncertainty about generated-skill correctness is handled heuristically through tests/runtime feedback, not probabilistically calibrated confidence.",
+  "validation_regime": {
+    "skillsbench": "75 tasks shared by four runtimes, five independent Docker runs per agent/task/configuration, automated final-artifact reward in [0,1], strict 375-run denominator with uncovered generated-skill tasks scored zero",
+    "skilllearnbench": "20 tasks and 100 verified instances, one run per headline condition; a separate two-pass memory ablation reports 100 instances per memory condition",
+    "headline": "MUSE reports 46.95/59.67/53.42 percent without/human/self-created skills on SkillsBench and 43/72/48 percent on SkillLearnBench",
+    "generation": "MUSE creates usable skills for 47/75 tasks; 85.24 percent covered-subset reward exceeds 81.17 percent human-skill reward on the same selected subset, while all-task self-created reward is 53.42 percent",
+    "transfer": "Hermes with MUSE-created skills reports 82.8 percent on the MUSE-covered subset and 51.90 percent with uncovered tasks zeroed, versus 64.3 percent human-skill reward on that covered subset",
+    "artifact_audit": "authors manually inspect 50 MUSE packages across 47 tasks; 90 percent are SKILL.md-only, eight percent contain scripts and eight percent contain tests; one reported HVAC regression falls from 80 to 20 percent",
+    "formal": "none; tests and automated verifiers are behavioral checks, not proofs",
+    "reproducibility": "no MUSE code, generated skill bank, prompts, per-run outputs, events.jsonl, run_meta, containers, verifier receipts, model API receipts or exact scripts are released in the paper/source archive",
+    "boundary": "results are author-reported, use a shared but non-released model deployment at provider-default decoding, select 75 of 94 SkillsBench tasks, distill each covered skill from one successful same-task trajectory and do not report paired significance"
+  },
+  "equivalence_notions": [
+    {
+      "notion": "portable skill-package identity",
+      "support": "DIRECTORY_NAME_AND_FRONTMATTER_NAME_MUST_MATCH_AND_THE_PACKAGE_MIRRORS_ANTHROPIC_AGENT_SKILLS",
+      "boundary": "Natural-language compatibility does not establish equivalent execution across agents, tools, environments or dependency versions."
+    },
+    {
+      "notion": "test acceptance",
+      "support": "WHEN_A_TESTS_DIRECTORY_EXISTS_REGISTRATION_IS_BLOCKED_UNTIL_PYTEST_CHECKS_PASS",
+      "boundary": "Only four of 50 audited MUSE packages contain tests; generated tests may share the generator's assumptions and cannot prove correctness or generalization."
+    },
+    {
+      "notion": "trajectory-to-skill behavioral reuse",
+      "support": "PHASE_2_REEVALUATES_A_SKILL_DISTILLED_FROM_ONE_SUCCESSFUL_PHASE_1_TRAJECTORY_ON_THE_SAME_TASK",
+      "boundary": "Same-task selection and reruns measure reuse under task-specific conditions, not semantic equivalence to the source procedure or out-of-distribution behavior."
+    },
+    {
+      "notion": "cross-agent transfer",
+      "support": "THE_SAME_GENERATED_PACKAGE_IS_INJECTED_INTO_HERMES_WITHOUT_TASK_SPECIFIC_MODIFICATION",
+      "boundary": "Only one target agent is tested; per-skill memory is deliberately excluded from transfer, and no pairwise significance or environment-compatibility proof is reported."
+    },
+    {
+      "notion": "compressed versus full history recoverability",
+      "support": "ACTIVE_PARENT_POINTERS_MAY_BE_REWIRED_WHILE_IMMUTABLE_HISTORY_POINTERS_AND_ORIGINAL_INPUTS_RETAIN_THE_ORIGINAL_TURN_SEQUENCE",
+      "boundary": "Recovering source events is not equivalent to preserving all decision-relevant information in model-generated summaries."
+    }
+  ],
+  "lifecycle_and_provenance": "The paper defines a useful five-stage lifecycle and supplies concrete paths for skill/session artifacts, ordered event logs and append-only memories. Yet the skill schema has no version, content hash, author/source trajectory, generator/model/prompt, creation time, dependency lock, permissions, test coverage, approval, compatibility, supersession, rollback, revocation or retirement fields. Merge/prune/refinement are prose operations without released algorithms or audit receipts; versioning is described as a planned production feature, not the evaluated bank. Per-skill experience is intentionally excluded from transferred tarballs, so transferred skills are not the same experience-aware assets used locally. The exact paper/source bytes are CC BY 4.0 and hash-bound, but no system artifact or experiment archive is public; even the printed July 7 date postdates arXiv's v2 timestamp of July 3.",
+  "limitations_and_failure_boundaries": [
+    "The preprint is under review and supplies no public MUSE implementation or result archive.",
+    "The five lifecycle stages are an architectural taxonomy; creation, refinement, merge, prune and lifecycle versioning are not separately ablated or formally specified.",
+    "Only 47 of 75 selected SkillsBench tasks receive a usable MUSE skill; 28 uncovered tasks are concentrated in Ops & Planning and Data Analysis.",
+    "The evaluation excludes 19 of the 94 SkillsBench tasks because all four runtimes could not run them locally; the paper says excluded environments may be harder.",
+    "Each generated skill is distilled from one successful trajectory and rerun on the same task, creating selection and within-task overfitting risks.",
+    "The 85.24 versus 81.17 percent comparison is conditional on MUSE's successfully covered subset and must not be generalized to all 75 tasks.",
+    "A reported HVAC skill regresses from 80 to 20 percent because source-run calibration assumptions fail on fresh runs.",
+    "Only one cross-agent target, Hermes, is tested; full pairwise transfer and task/environment drift remain untested.",
+    "Transferred packages exclude .memory.md, so the transfer experiment tests procedure portability rather than transfer of accumulated per-skill experience.",
+    "Of 50 MUSE packages, 90 percent contain only SKILL.md and only eight percent contain tests; unit-test-driven wording does not characterize most generated packages.",
+    "Sandbox/runtime survival is weaker than correctness and can miss silent errors, underspecified outputs, adversarial inputs and unsafe external side effects.",
+    "A process/container filesystem does not by itself prove the paper's claim that no skill execution can affect host or external state; network/API capabilities and secrets are unspecified.",
+    "The natural-language skill interface lacks typed inputs/outputs, formal effects, dependency/environment pinning and machine-checkable pre/postconditions.",
+    "Catalog cost is not flat in bank size as claimed: injecting every name/description is linear in the number and length of entries, even though it avoids eagerly loading bodies.",
+    "Long-term and skill memories grow without compression, retention, conflict resolution, quality scoring or poisoning defenses.",
+    "Append-only Markdown is claimed safe for concurrent sessions without a described lock, atomic append protocol or conflict test.",
+    "Merge, overlap detection, retrieval, pruning and forgetting criteria are described qualitatively and receive no accuracy, conflict or provenance evaluation.",
+    "All compared agents share a named GPT-5.5 deployment but use provider-default decoding, and the paper releases no API receipt, seed or exact prompt/tool configuration for independent control.",
+    "SkillsBench has five runs per task but no paired confidence intervals or hypothesis tests; task-level standard deviations mix easy/hard tasks rather than quantify treatment uncertainty.",
+    "SkillLearnBench headline cells are single-run per instance, and the separate memory ablation uses verifier feedback and sequential within-task state that should not be pooled with the headline result.",
+    "Cost accounting is incomplete and nonuniform across agents; covered-subset medians differ by agent and do not establish system-wide cost superiority.",
+    "Production adoption claims name SkillMarket, ArkClaw and SkillHub without deployment counts, reliability incidents, independent metrics or public receipts; some listed capabilities are explicitly planned.",
+    "The public FDABench row corroborates three aggregate values but is named for a ByteDance team rather than MUSE and cannot attribute performance to the skill lifecycle.",
+    "The paper's self-evolving label is not supported by a long-duration bank-evolution study across drift, adversarial updates, version rollback or retirement.",
+    "No formal equivalence, probabilistic semantics, weight-space composition or general effect calculus is provided."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not establish a formally specified, versioned and provenance-complete registry of reusable functions.",
+    "It does not prove generated skills correct, safe, equivalent across agents or robust outside the task that produced their source trajectory.",
+    "It does not show that all five lifecycle stages or per-skill memory independently cause the headline gains.",
+    "It does not establish domain-general superiority, full-benchmark coverage, production reliability or reproducible cost advantage.",
+    "It does not provide weight-space composition, stochastic ignition semantics, a general effect tracker or empirical validation of ignition."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "SKILL.md gives a portable natural-language interface and workflow schema, but lacks typed, effect-aware, provenance-aware and machine-checkable contracts."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "LLM skill creation compiles trajectories/intents into packages empirically, without verified lowering or neural-weight composition."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Tests, same-task reruns and one cross-agent transfer provide behavioral comparisons, not semantic or general equivalence."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Events, sandbox observations and failure feedback expose operational effects, while host/external effects, permissions, transactions and composition remain unmodeled."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "The filesystem bank, catalog, metadata, memory and maintenance operations are strong registry design evidence, but evaluated skills have no versions/hashes/provenance and versioning is planned rather than demonstrated."
+    },
+    "GAP-020": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Run-to-run stochasticity is measured descriptively; no probabilistic or stochastic semantics for skills or ignition is defined."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "SKILL.md specifies names, descriptions, triggers, principles and workflows in natural language without formal contracts."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Skill directories, optional code/tests/resources, memories, catalog entries, events and session DAG snapshots are concrete carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "skill_create distills intent/trajectories into packages, but no released or verified compiler exists."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "The paper defines inspectable package and session schemas, but releases neither MUSE nor the evaluated packages/traces."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The ReAct agent loads SKILL.md and executes scripts/resources through a unified sandbox tool interface."
+    },
+    "N6_ExecutionTrace": {
+      "status": "CONFIRMED",
+      "reason": "events.jsonl and the immutable-history conversation DAG define ordered plan/action/observation and resume traces."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Optional pytest, sandbox/runtime feedback and external verifiers provide concrete checks, but tests are rare and no correctness guarantee follows."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Progressive catalog disclosure and LLM routing enable reuse, while retrieval/merge/composition semantics and scalability are not evaluated."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "A persistent managed skill bank is explicit, but version identifiers, lineage, approvals, rollback and lifecycle receipts are missing or future work."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "PARTIAL",
+    "verdict": "PARTIAL_RETAINED_WITH_MATERIAL_CORRECTIONS_AND_STRONGER_BOUNDED_ARCHITECTURE_EVIDENCE",
+    "corrections": [
+      "Replaced Anonymous with the five named authors and bound review to arXiv v2 metadata and exact bytes.",
+      "Replaced the invented section list with the actual six main sections, Limitations and appendices A-L.",
+      "Added the exact skill, memory, session, event, sandbox and context-DAG schemas instead of summarizing only the abstract.",
+      "Separated a managed filesystem bank from a genuinely versioned/provenance-complete registry; versioning is a planned deployment feature.",
+      "Separated optional tests from correctness and recorded that only eight percent of audited MUSE packages contain tests.",
+      "Recorded strict all-task denominators, incomplete 47/75 coverage and the selected covered-subset basis of the 85.24 percent result.",
+      "Recorded same-task single-trajectory overfit, one Hermes transfer target, the HVAC regression and absent paired significance.",
+      "Separated shipped skills from .memory.md, which is intentionally excluded from cross-agent transfer.",
+      "Recorded the absence of public MUSE code, skills, prompts, traces, containers and result receipts.",
+      "Bounded production and FDABench statements to the evidence actually linked by the paper."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "PARTIAL",
+  "partial_projection": "MUSE-Autoskill supplies unusually concrete design evidence for an externalized skill Representation-Interpreter-ExecutionTrace pattern and credible partial evidence for synthesis, validation, routing and registry nodes. It does not close a versioned Function OS registry: contracts are natural language, tests are sparse, memory is not transferred, lifecycle operations are informal, artifacts/receipts are absent and experiments are vulnerable to coverage selection and same-task trajectory overfit.",
+  "source_specific_reasoning": "PARTIAL remains necessary despite strong paper detail. The 30-page primary source defines paths, schemas, state transitions, denominators and limitations and reports large automated evaluations. Yet the central reusable/self-evolving/versioned reading exceeds the evidence: 28/75 tasks are uncovered, most skills are untested text, each skill comes from one successful same-task trajectory, only Hermes receives transfer, no longitudinal evolution/version rollback is studied, and no system or run artifact is public.",
+  "projection_boundary": "These are 121CX projections from the complete exact arXiv v2 PDF, all rendered pages, the complete CC BY source archive, current arXiv metadata and the linked FDABench aggregate CSV. This model review is not a reproduction of SkillsBench/SkillLearnBench, an audit of unreleased MUSE code or production systems, a proof of skill correctness/portability, or empirical validation of ignition.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T07:11:44Z"
+}
