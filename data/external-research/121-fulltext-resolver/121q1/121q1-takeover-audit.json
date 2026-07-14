@@ -1,0 +1,58 @@
+{
+  "task": "IGNITION-20260709-121Q1",
+  "task_name": "QClaw DeepSeek-V4-Pro Batch 01: Prior Non-Codex Evidence Card Independent Acceptance (CX Step 98-102)",
+  "parent_task": "IGNITION-20260709-121CX",
+  "executor": "QClaw main session",
+  "actual_model": "qclaw/pool-deepseek-v4-pro",
+  "reasoning_mode": "deep-thinking",
+  "delegated_subagents": false,
+  "model_switch": false,
+  "fallback": false,
+  "batch_label": "BATCH01",
+  "batch_scope": "CX Step 98 through 102",
+  "batch_sources": ["S120-011", "S120-012", "S120-014", "S120-015", "S120-017"],
+  "max_sources_this_batch": 5,
+  "started_at_utc": "2026-07-14T14:35:00Z",
+  "baseline_verified": {
+    "wscf_branch": "records/ignition-121cx-codex56-extreme-takeover-20260714",
+    "wscf_head": "b57f9f82c7cbcb7994775a86c798ffbc6a100af0",
+    "wscf_head_message": "121CX step 97 accept S120-010 with corrections",
+    "verified_at_utc": "2026-07-14T14:36:00Z",
+    "head_match": true
+  },
+  "pr33_status": {
+    "number": 33,
+    "state": "OPEN",
+    "draft": true,
+    "mergeable": "MERGEABLE",
+    "base": "records/ignition-121cn-night-long-haul-20260714"
+  },
+  "1111_status": {
+    "baseline_1111_main_head": "efc44865c4143aec6a84c43224093fd8566bbf0e",
+    "command_file_commit": "efc44865c4143aec6a84c43224093fd8566bbf0e",
+    "pr37_state": "OPEN_DRAFT_UNCHANGED"
+  },
+  "pre_run_verifications": {
+    "run_state_last_completed_cx_step": 97,
+    "run_state_next_cx_step": 98,
+    "run_state_next_source": "S120-011",
+    "step_ledger_total_steps": 72,
+    "acceptance_records": 9,
+    "phase_2_in_progress": true,
+    "matches_user_report": true
+  },
+  "qclaw_branch": "records/ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714",
+  "qclaw_base_branch": "records/ignition-121cx-codex56-extreme-takeover-20260714",
+  "frozen_files": [
+    "Psi0 mathematical definition",
+    "085 frozen v1",
+    "unified function table (old)",
+    "unified case table (old)",
+    "121CX historical model identity",
+    "PR #33 base/state",
+    "PR #37 base/state"
+  ],
+  "frozen_intact": true,
+  "credentials_in_repo": false,
+  "fulltext_caches_committed": false
+}

@@ -1,0 +1,30 @@
+{
+  "task": "IGNITION-20260709-121Q1",
+  "status": "121Q1_IN_PROGRESS",
+  "executor": "QClaw main session",
+  "model": "qclaw/pool-deepseek-v4-pro",
+  "reasoning_mode": "deep-thinking",
+  "batch": "BATCH01",
+  "batch_label": "CX Step 98 through 102",
+  "batch_sources": ["S120-011", "S120-012", "S120-014", "S120-015", "S120-017"],
+  "started_at_utc": "2026-07-14T14:36:00Z",
+  "inherited_from_121cx": {
+    "branch": "records/ignition-121cx-codex56-extreme-takeover-20260714",
+    "head": "b57f9f82c7cbcb7994775a86c798ffbc6a100af0",
+    "last_completed_cx_step": 97,
+    "next_cx_step": 98,
+    "next_source_id": "S120-011",
+    "prior_non_codex_cards": 22,
+    "codex_accepted": 9,
+    "remaining": 13
+  },
+  "last_completed_q1_step": null,
+  "next_q1_step": 0,
+  "last_completed_source_id": null,
+  "next_source_id": "S120-011",
+  "subagent_used": false,
+  "model_switch": false,
+  "fallback": false,
+  "frozen_files_intact": true,
+  "credentials_in_repo": false
+}
