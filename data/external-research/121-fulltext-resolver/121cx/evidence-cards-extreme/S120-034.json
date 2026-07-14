@@ -1,0 +1,259 @@
+{
+  "source_id": "S120-034",
+  "canonical_title": "Learning to Route for Dynamic Adapter Composition in Continual Learning with Language Models",
+  "title": "Learning to Route for Dynamic Adapter Composition in Continual Learning with Language Models",
+  "authors": [
+    "Vladimir Araujo",
+    "Marie-Francine Moens",
+    "Tinne Tuytelaars"
+  ],
+  "year": 2024,
+  "version": "Findings of EMNLP 2024, pages 687-696",
+  "doi_or_identifier": "10.18653/v1/2024.findings-emnlp.38",
+  "identifier": "ACL Anthology 2024.findings-emnlp.38",
+  "url": "https://aclanthology.org/2024.findings-emnlp.38/",
+  "source_family": 5,
+  "source_family_name": "adapter routing and task-aware composition",
+  "license": "©2024 Association for Computational Linguistics; publicly accessible through the ACL Anthology",
+  "sha256": "5f50833318232b4ab1361828fc582fab7a2adeddc5466c1b64cf4539a144527e",
+  "file_size_bytes": 386489,
+  "page_count": 10,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_sha256_match": true,
+    "registered_file_size_match": true,
+    "registered_page_count_match": true,
+    "registered_local_extension_issue": "The registered local path ends in .html although its bytes and registry content type are PDF; the exact registered hash is unchanged.",
+    "official_identity": "ACL Anthology 2024.findings-emnlp.38",
+    "doi": "10.18653/v1/2024.findings-emnlp.38",
+    "published_at": "2024-11",
+    "pdf_visually_checked_pages": [
+      1,
+      2,
+      4,
+      5,
+      10
+    ],
+    "sources_cross_checked": [
+      "ACL Anthology paper record",
+      "ACL Anthology final PDF",
+      "registered source hash, byte size, and page count"
+    ],
+    "code_or_artifact_link_status": "The paper and ACL record do not provide an implementation or immutable artifact manifest; no official code repository was identified."
+  },
+  "sections_reviewed": [
+    "Abstract and introduction",
+    "Related work on continual learning, local adaptation, and learned routing",
+    "Task-specific adapter isolation, memory construction, and router learning",
+    "Weighted-average and parameter-merge composition rules",
+    "Class-incremental and task-incremental experimental protocols",
+    "Main accuracy results, memory-size study, and Gumbel-sigmoid comparison",
+    "Conclusion, limitations, hyperparameters, full task-order results, and FLOPs analysis"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "Abstract and §1, p. 1",
+      "checked_for": "claimed continual-learning problem, adapter isolation, memory-backed routing, dynamic composition, and scope language"
+    },
+    {
+      "anchors": "§3 and Fig. 1, pp. 2-3",
+      "checked_for": "task sequence, per-task LoRA training, memory sampling, layerwise router, Gumbel-sigmoid allocation, and two composition modes"
+    },
+    {
+      "anchors": "§4 and Appendix A-B, pp. 3-4 and 6-7",
+      "checked_for": "CIL/TIL definitions, datasets, model sizes, LoRA configuration, memory percentage, task orders, and training hyperparameters"
+    },
+    {
+      "anchors": "§5, Tables 1-2, Figs. 2-3, pp. 4-5",
+      "checked_for": "main performance, memory-size sensitivity, merge interference, router allocations, and Gumbel-versus-softmax ablation"
+    },
+    {
+      "anchors": "Limitations, p. 6",
+      "checked_for": "raw-example storage and privacy, limited model scale, and absence of LLM experiments"
+    },
+    {
+      "anchors": "Appendix C-D, Tables 3-5, pp. 8-10",
+      "checked_for": "per-order result variation and theoretical FLOPs accounting"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "L2R trains a separate LoRA adapter for each arriving task while deactivating prior adapters, so the newly trained adapter is isolated from earlier adapter modules.",
+      "anchors": "§3, Task-specific Adapters, Fig. 1a"
+    },
+    {
+      "claim": "After task-adapter training, layerwise routers learn from a small labeled replay memory to allocate multiple task adapters independently through Gumbel-sigmoid outputs.",
+      "anchors": "§3, Router Learning"
+    },
+    {
+      "claim": "L2R-wavg composes adapter outputs with learned weights, whereas L2R-merge forms a weighted parameter merge; the former costs more inference computation but avoids some merge interference.",
+      "anchors": "§3, Adapter Composition; §5; Appendix D"
+    },
+    {
+      "claim": "Across BERT-base MTL5 and WOS plus AfroXLMR-base AfriSenti task sequences, L2R-wavg is competitive with the compared PEFT continual-learning baselines in CIL and TIL, while not winning every dataset and setup.",
+      "anchors": "Table 1, Tables 3-4"
+    },
+    {
+      "claim": "Increasing replay-memory size generally improves routing, and replacing Gumbel-sigmoid with softmax especially degrades WOS CIL performance in the reported ablation.",
+      "anchors": "Figs. 2-3, Table 2"
+    },
+    {
+      "claim": "The reported efficiency comparison is theoretical FLOPs for batch size one and sequence length 128; it does not measure end-to-end latency, memory construction, router training, or adapter-management overhead.",
+      "anchors": "Appendix D, Table 5"
+    }
+  ],
+  "function_concept_used_by_paper": "The reusable function-like unit is a task-specific LoRA adapter attached to a frozen pretrained language model. A layerwise router is another learned function that maps an input representation to independent adapter allocations, and the selected adapter transformations are composed by weighted output averaging or weighted parameter merging.",
+  "representation_or_carrier": {
+    "task_carrier": "ordered task dataset and task identity, with separate CIL and TIL visibility assumptions",
+    "adapter_carrier": "one rank-8 LoRA module per task on query and value projection matrices of a shared frozen backbone",
+    "memory_carrier": "randomly sampled labeled raw inputs from prior tasks, stored as a small replay memory",
+    "router_carrier": "one linear router per model layer over the [CLS] representation, producing Gumbel-sigmoid adapter allocations",
+    "composition_carrier": "per-layer adapter outputs or a derived weighted merged adapter",
+    "evaluation_carrier": "dataset accuracy averaged across fixed task orders"
+  },
+  "specification_language": "The paper operationally specifies a sequence of labeled tasks, frozen BERT-base or AfroXLMR-base backbone, rank-8 LoRA modules on Wq and Wv, a 10% per-task replay-memory sample, layerwise linear routers, Gumbel-sigmoid allocations, CIL/TIL conditions, and weighted-average or merge execution. It does not supply a machine-checkable contract for task semantics, adapter compatibility, version identity, memory retention and privacy, side effects, failure handling, or output guarantees.",
+  "compiler_or_generator": {
+    "adapter_generation": "For each task, supervised training produces a new task-specialized LoRA artifact while the backbone is frozen and prior adapters are inactive.",
+    "router_generation": "After adapters are trained, labeled replay-memory examples supervise layerwise routing functions using a Gumbel-sigmoid relaxation.",
+    "composition_generation": "At inference, router allocations generate either a weighted sum of adapter outputs or a weighted parameter-merged adapter.",
+    "boundary": "The method is not a zero-training dynamic loader: every task requires adapter training, replay-memory retention, and router training or retraining before the new task can participate in routing."
+  },
+  "interpreter_or_runtime": "A frozen pretrained transformer executes one or more task LoRA adapters at each layer under learned allocations. L2R-wavg evaluates all relevant adapter paths and sums their outputs, while L2R-merge first combines low-rank parameters and executes the merge. The paper does not define production loading, concurrency, cache, fault isolation, access control, latency service levels, or rollback behavior.",
+  "composition_rule": "For each layer, L2R-wavg computes a router-weighted sum of task-adapter outputs, while L2R-merge computes a router-weighted sum of task-adapter parameters. Gumbel-sigmoid permits multiple adapters to be active independently instead of forcing a softmax competition. The rule is explicit and evaluated, but only for structurally compatible LoRA modules on a shared backbone; parameter merging can introduce interference and performs substantially worse on AfriSenti.",
+  "state_or_effect_model": "Persistent experimental state includes the ordered task sequence, one frozen adapter per task, raw labeled replay examples, and learned routers. Adding a task grows the adapter set and memory, and incorporating it requires new adapter optimization plus router learning. The paper does not specify transactional registry updates, memory deletion, privacy controls, adapter supersession, audit trails, failure recovery, or safe retirement. Prior adapters are parameter-frozen, but system behavior can still change when routers and compositions change.",
+  "uncertainty_model": "Gumbel-sigmoid outputs are stochastic relaxed allocation scores during router learning and are interpreted qualitatively in Fig. 3; they are not calibrated predictive probabilities. The paper reports point accuracies averaged over task orders without standard deviations, confidence intervals, significance tests, reliability curves, abstention thresholds, or propagated composition uncertainty. Router scores therefore support selection, not validated uncertainty claims.",
+  "validation_regime": {
+    "models": "BERT-base for MTL5 and WOS, and AfroXLMR-base for AfriSenti; no large language model evaluation",
+    "benchmarks": "MTL5 with five tasks, WOS with seven tasks, and AfriSenti with twelve language/task partitions under multiple orders",
+    "continual_learning_setups": "class-incremental learning without task identity and task-incremental learning with task identity",
+    "baselines": "DAM, EPI, MoCL, ProgPrompt and a task-specific adapter reference, with daggered values imported from prior work where marked",
+    "ablations": "memory size from 1% to 30%, Gumbel-sigmoid versus softmax, and weighted-average versus parameter-merge composition",
+    "efficiency": "theoretical FLOPs for batch size one and sequence length 128 on MTL5",
+    "boundary": "This is full-text adjudication of the reported evidence, not independent training or execution. The paper supplies no code, seeds, repeated-run dispersion, statistical significance, measured latency, or production-scale lifecycle tests."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "task specialization",
+      "support": "SUPERVISED_TASK_ADAPTER_TRAINING",
+      "boundary": "Isolation during optimization reduces direct adapter interference but does not prove semantic equivalence to the task or preservation after later routing changes."
+    },
+    {
+      "notion": "input-to-adapter relevance",
+      "support": "LEARNED_ROUTER_ALLOCATION",
+      "boundary": "Allocation scores are trained empirical affinities, not calibrated probabilities or proofs that the selected adapters are behaviorally correct."
+    },
+    {
+      "notion": "weighted composition",
+      "support": "EMPIRICALLY_BOUNDED_OUTPUT_OR_PARAMETER_FUSION",
+      "boundary": "Output averaging and parameter merging are not equivalent in general; the AfriSenti gap demonstrates material merge interference."
+    },
+    {
+      "notion": "upper bound",
+      "support": "TASK_SPECIFIC_REFERENCE_ONLY",
+      "boundary": "The table label refers to a task-specific adapter reference, not a mathematical upper bound; composed routing can match or surpass it."
+    }
+  ],
+  "lifecycle_and_provenance": "The method exposes a minimal continual lifecycle: tasks arrive in order, new adapters are trained in isolation, prior adapters are retained, labeled examples enter replay memory, routers are learned, and compositions are evaluated. This is useful Artifact and ComposerRouter evidence, but it is not a governed VersionedRegistry. There are no immutable adapter or dataset identifiers, repository or environment snapshot, provenance schema, license policy, promotion gate, health metric, drift trigger, router-version linkage, rollback record, memory-deletion process, or retirement state.",
+  "limitations_and_failure_boundaries": [
+    "The replay memory stores raw labeled inputs, creating privacy and retention risks explicitly acknowledged by the authors.",
+    "The evaluation uses base-size encoders; computational limits prevented testing large language models.",
+    "Each new task adds an adapter and replay samples, so storage and routing state grow with the task sequence.",
+    "Adding a task is not demonstrated as an online atomic registry operation; adapter and router training are prerequisites.",
+    "Gumbel-sigmoid allocations are not calibrated uncertainty estimates and the router has no abstention or safe fallback rule.",
+    "L2R-wavg executes multiple adapter paths, while the cheaper parameter merge can suffer substantial interference.",
+    "The reported theoretical FLOPs omit router training, memory management, adapter loading, wall-clock latency, energy, and failures.",
+    "Main results omit seeds, standard deviations, confidence intervals and significance tests, and some baseline results are imported.",
+    "The benchmarks cover text classification task sequences and do not establish transfer to generation, tools, multimodal functions, or heterogeneous adapters.",
+    "No code or immutable artifact manifest is linked, limiting reproduction and direct lifecycle verification."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove semantic equivalence, non-interference, routing optimality, or safe composition.",
+    "It does not validate Gumbel-sigmoid allocations as calibrated uncertainty or define abstention.",
+    "It does not demonstrate instant plug-and-play addition of arbitrary adapters without retraining.",
+    "It does not implement a versioned production registry, provenance ledger, rollback mechanism, privacy controller, or execution-trace standard.",
+    "It does not empirically validate the point architecture as a whole or constitute proof or independent empirical reproduction."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Tasks, adapters, routers, memory, composition mode and experimental conditions are operationally explicit, but semantic, compatibility, effect and lifecycle contracts are absent."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "The paper implements distinct task-adapter training, router training and inference-time composition stages."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Task specialization and routing affinity are empirical notions without behavioral or semantic equivalence guarantees."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "Layerwise learned routing plus two explicit multi-adapter composition rules are the central evaluated contribution."
+    },
+    "GAP-019": {
+      "status": "CONFIRMED",
+      "reason": "Three benchmarks, CIL/TIL settings, multiple task orders, baselines and composition, memory and activation ablations provide bounded validation."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "The study exposes memory and interference risks, but lacks calibration, statistical uncertainty, durable traces and lifecycle governance."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Task datasets and supervised objectives specify adapter behavior operationally but do not form machine-checkable semantic contracts."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Tasks, LoRA artifacts, replay memory, router allocations and compositions have distinct concrete carriers."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "Supervised optimization compiles task data into isolated adapters and replay data into layerwise routers."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "One retained LoRA module per task and the learned routers are explicit reusable artifacts."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The frozen transformer executes routed adapter outputs or a parameter-merged adapter at inference."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Per-layer allocations are observable experimental signals, but no durable trace schema, lineage or integrity rule is defined."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Held-out benchmark accuracy, task orders, baselines and targeted ablations validate the bounded routing mechanism."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "A learned input-aware router independently activates and composes compatible task adapters through two explicit rules."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "The growing task-indexed adapter collection is a registry precursor without version identity, promotion, health, rollback, provenance or retirement governance."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_FULLTEXT_CARD_WITH_LOCAL_EXTENSION_CORRECTION",
+    "corrections": [
+      "No per-source provisional evidence card existed for S120-034.",
+      "The registered local file suffix is .html although the exact registered bytes are a valid 10-page PDF; the registered SHA-256, byte size and page count all match the official ACL PDF.",
+      "The full text supports a bounded CONFIRMED ComposerRouter projection while retaining PARTIAL judgments for specification, equivalence, uncertainty and registry governance."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "Within fixed-backbone, task-sequential LoRA classification settings, L2R directly demonstrates a bounded Compiler-Artifact-Interpreter-ComposerRouter lifecycle: tasks produce isolated adapters, replay examples produce layerwise routers, and learned allocations drive explicit output-space or parameter-space composition. Durable registry, privacy, equivalence and uncertainty governance remain partial.",
+  "source_specific_reasoning": "The evidential chain is direct: an ordered labeled task produces a retained LoRA artifact; a labeled replay sample trains layerwise input-dependent routers; Gumbel-sigmoid permits multiple independent activations; and the runtime composes structurally compatible adapters. The weighted-average versus merge comparison also supplies unusually clear negative evidence that two plausible composition carriers are not behaviorally interchangeable. The projection is deliberately bounded because the study uses small text classifiers, raw memory, point estimates and no published code, and because adding a task still requires adapter and router optimization rather than an atomic registry update.",
+  "projection_boundary": "All GAP and Function OS impacts above are 121CX architectural projections from the ACL version of record. Full-text review is not independent empirical replication, proof, privacy certification, proof of routing optimality, proof of semantic equivalence, or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T04:51:46Z"
+}
