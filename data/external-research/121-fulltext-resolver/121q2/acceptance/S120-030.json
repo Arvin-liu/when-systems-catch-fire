@@ -1,0 +1,162 @@
+{
+  "source_id": "S120-030",
+  "cx_step": 105,
+  "step_number": 105,
+  "_acceptance_layer": "121q2/acceptance/S120-030.json — overlay",
+  "canonical_title": "Fourier Neural Operator for Parametric Partial Differential Equations",
+  "authors": "Zongyi Li, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, Anima Anandkumar",
+  "year": 2021,
+  "venue": "ICLR 2021",
+  "doi_or_identifier": "arXiv:2010.08895v3",
+  "prior_identity": {
+    "title": "Fourier Neural Operator for Parametric Partial Differential Equations (CORRECT)",
+    "authors": "Li, Z., et al. (CORRECT — first author matches)",
+    "year": 2021,
+    "venue": "ICLR 2021 (CORRECT)",
+    "doi_or_identifier": "arXiv:2010.08895 (CORRECT)",
+    "url": "https://arxiv.org/abs/2010.08895 (CORRECT)",
+    "sha256": "pending",
+    "file_size_bytes": 2436198
+  },
+  "corrected_identity": {
+    "title": "Fourier Neural Operator for Parametric Partial Differential Equations",
+    "authors": "Zongyi Li, Nikola Kovachki, Kamyar Azizzadenesheli, Burigede Liu, Kaushik Bhattacharya, Andrew Stuart, Anima Anandkumar (Caltech/Purdue)",
+    "year": 2021,
+    "venue": "ICLR 2021",
+    "doi_or_identifier": "arXiv:2010.08895v3",
+    "exact_fulltext_used": "arXiv PDF, SHA256: 6cd2645d4a50d1a61a261529b33747c674d78851bdbe6993b0961f81a17dc6f2",
+    "url": "https://arxiv.org/pdf/2010.08895"
+  },
+  "identity_status": "VERIFIED",
+  "identity_corrections": [
+    "All identity fields correct. No corrections needed."
+  ],
+  "url": "https://arxiv.org/pdf/2010.08895",
+  "access_url": "https://arxiv.org/pdf/2010.08895",
+  "access_time_utc": "2026-07-14T16:35:06Z",
+  "file_sha256": "6cd2645d4a50d1a61a261529b33747c674d78851bdbe6993b0961f81a17dc6f2",
+  "file_size_bytes": 2436198,
+  "page_count": 16,
+  "content_type": "application/pdf",
+  "sections": [
+    "1 Introduction (classical solvers vs data-driven, Neural-FEM, Neural Operators)",
+    "2 Learning Operators (Banach spaces, operator approximation)",
+    "3 Neural Operator (iterative architecture, kernel integral operator)",
+    "4 Fourier Neural Operator (FFT-based parameterization, Fourier layer)",
+    "5 Experiments (Burgers, Darcy Flow, Navier-Stokes, super-resolution, Bayesian inverse)",
+    "6 Conclusion",
+    "Appendix (notation table, spectral analysis, data generation details)"
+  ],
+  "abstract_snippet": "We formulate a new neural operator by parameterizing the integral kernel directly in Fourier space, allowing for an expressive and efficient architecture. Experiments on Burgers' equation, Darcy flow, and Navier-Stokes equation. The Fourier neural operator is the first ML-based method to successfully model turbulent flows with zero-shot super-resolution. Up to three orders of magnitude faster compared to traditional PDE solvers.",
+  "what_the_paper_supports": "FNO learns resolution-invariant solution operators for parametric PDEs: (1) input function lifted to higher-dimensional representation, (2) iterative Fourier layers apply FFT → linear transform on lower modes → inverse FFT, (3) projection back to target dimension. Key properties: mesh-invariant (same parameters work across discretizations), zero-shot super-resolution (train on 64×64, evaluate on 256×256), 1000× faster than traditional solvers. The Fourier layer is the key innovation: parameterizing the integral kernel in Fourier space via FFT enables quasi-linear time complexity O(N log N).",
+  "what_the_paper_does_not_support": "No formal specification language for PDEs (GAP-015 — only data-driven). No formal equivalence checking between operators (GAP-017). No versioning of learned operators (GAP-019). No formal verification of solution correctness (GAP-020 — empirical error metrics only). Requires training data from high-fidelity solvers. Truncation of higher Fourier modes may lose information. No execution trace in the traditional sense — this is operator learning, not program execution.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "paper_core_claims": [
+    "FNO parameterizes integral kernel in Fourier space via FFT — quasi-linear time complexity",
+    "Resolution-invariant: same network parameters work across different discretizations",
+    "Zero-shot super-resolution: trained on 64×64, evaluated on 256×256 for Navier-Stokes",
+    "First ML method to successfully model turbulent flows (viscosity ν=1e-4)",
+    "Up to 3 orders of magnitude faster than traditional PDE solvers (0.005s vs 2.2s on 256×256)",
+    "30% lower error on Burgers, 60% lower on Darcy Flow, 30% lower on Navier-Stokes vs previous ML methods"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "PDE coefficients/parameters as implicit specification. No formal spec language — the 'specification' is the training data of input-output pairs."
+    },
+    "GAP-016": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "FNO compiles PDE parameter → solution operator via learned Fourier-space kernel. This is a form of operator compilation: continuous function space → discretized solution. But it's data-driven, not rule-based."
+    },
+    "GAP-017": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "No formal equivalence checking between different operator approximations. Only empirical error metrics (relative L2 error)."
+    },
+    "GAP-018": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Fourier modes as frequency-domain state representation. Spectral analysis provides some state tracking, but this is not execution state in the traditional sense."
+    },
+    "GAP-019": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No versioning or registry of learned operators."
+    },
+    "GAP-020": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "No formal verification of solution correctness. Empirical error metrics only (relative L2 error, spectral analysis). Solutions may deviate from true PDE solutions, especially at high frequencies."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "PDE parameters as implicit specification. Input coefficient function a(x) specifies the PDE instance. No formal spec language."
+    },
+    "N2_Representation": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Fourier-space representation of integral kernels. Lift → Fourier layers → Project architecture. Spectral representation captures frequency-domain structure of solutions. Resolution-invariant representation is notable."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "FNO compiles: PDE parameter function → solution function. The Fourier layer (FFT → R → IFFT) is a compilation step from coefficient space to solution space. But it's learned, not symbolic."
+    },
+    "N4_Artifact": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Learned neural operator is an artifact, but no persistent registry or versioning. Different operators for different PDEs are separate models."
+    },
+    "N5_Interpreter": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "FNO interprets PDE parameters into solutions, but this is learned approximation, not symbolic interpretation. No explicit execution model."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NO_EVIDENCE",
+      "reason": "No execution trace in the traditional sense. FNO learns an operator mapping, not a step-by-step execution. Fourier transform is a mathematical operation, not an execution trace."
+    },
+    "N7_Validator": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Empirical validation via relative L2 error against ground-truth solver outputs. No formal verification. Spectral analysis provides some diagnostic validation."
+    },
+    "N8_ComposerRouter": {
+      "status": "NO_EVIDENCE",
+      "reason": "No composition or routing between different operators. Each PDE type has a separate FNO model."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NO_EVIDENCE",
+      "reason": "No versioning, registry, or retrieval of learned operators."
+    }
+  },
+  "limitations_and_failure_boundaries": [
+    "Requires training data from high-fidelity traditional solvers — cannot learn from scratch",
+    "Truncation of higher Fourier modes (kmax) may lose information — especially for high-frequency phenomena",
+    "Only tested on 3 PDE types (Burgers, Darcy, Navier-Stokes) — unclear generalization to other PDEs",
+    "No formal verification of solution correctness — only empirical error metrics",
+    "Resolution-invariance is approximate, not exact — error may increase at very different resolutions",
+    "Learned operator is PDE-specific — no universal PDE solver",
+    "Bayesian inverse problem application requires additional MCMC sampling — not fully integrated",
+    "Periodic boundary conditions assumed for FFT — extensions to other BCs require modification"
+  ],
+  "strengths_noted": [
+    "Fourier-space parameterization is mathematically elegant and computationally efficient (O(N log N))",
+    "Zero-shot super-resolution is a notable capability — train low, evaluate high",
+    "Resolution-invariance is a fundamental advantage over grid-based methods",
+    "1000× speedup over traditional solvers with competitive accuracy",
+    "Spectral analysis (Figure 4) shows FNO captures turbulent energy spectrum (k^{-5/3} slope)",
+    "Comprehensive evaluation across 3 distinct PDE types with varying complexity"
+  ],
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "6cd2645d4a50d1a61a261529b33747c674d78851bdbe6993b0961f81a17dc6f2",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "Identity fully verified: arXiv:2010.08895, Li et al., ICLR 2021",
+      "N6 ExecutionTrace: NO_EVIDENCE — FNO learns operator mapping, not step-by-step execution",
+      "N2 Representation: notable — Fourier-space representation with resolution invariance",
+      "N3 Compiler: PARTIAL_SUPPORT — Fourier layer as compilation from parameter to solution space",
+      "This paper is relevant to Function OS more as a mathematical operator learning approach than as a program execution model"
+    ]
+  },
+  "reviewed_by_model": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "reviewed_at": "2026-07-14T16:35:06Z",
+  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714"
+}
