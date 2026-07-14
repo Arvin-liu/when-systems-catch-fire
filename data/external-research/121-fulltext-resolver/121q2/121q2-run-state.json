@@ -2,10 +2,10 @@
   "task": "121Q2R",
   "instruction_commit": "c7ec5acc49d74ceefa6b52d80f4940c6e1e9e07b",
   "baseline_head": "fae8241cfc4035b411bc71305a10650edea3181c",
-  "current_step": 4,
+  "current_step": 5,
   "current_step_status": "COMPLETE",
-  "next_step": 5,
-  "next_step_description": "prior22 identity chain audit",
+  "next_step": 6,
+  "next_step_description": "84-source canonical semantic index",
   "draft_pr": 35,
   "phase_2_acceptance": {
     "canonical_prior22_total": 22,
@@ -39,7 +39,13 @@
         "121Q1": 4,
         "121Q2/121Q2R": 9
       }
+    },
+    "identity_audit": {
+      "VERIFIED": 16,
+      "CORRECTED": 2,
+      "BLOCKED": 0,
+      "UNKNOWN": 4
     }
   },
-  "last_updated": "2026-07-14T16:58:47Z"
+  "last_updated": "2026-07-14T16:59:37Z"
 }
