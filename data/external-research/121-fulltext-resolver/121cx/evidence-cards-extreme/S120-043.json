@@ -1,0 +1,129 @@
+{
+  "source_id": "S120-043",
+  "canonical_title": "Souper-Model: How Simple Arithmetic Unlocks State-of-the-Art LLM Performance",
+  "authors": ["Shalini Maiti", "Amar Budhiraja", "Bhavul Gauri", "Gaurav Chaurasia", "Anton Protopopov", "Alexis Audran-Reiss", "Michael Slater", "Despoina Magka", "Tatiana Shavrina", "Roberta Raileanu", "Yoram Bachrach"],
+  "year": 2025,
+  "version": "arXiv:2511.13254v1, 2025-11-17; preprint",
+  "identifier": "arXiv:2511.13254v1",
+  "url": "https://arxiv.org/abs/2511.13254v1",
+  "source_family": 6,
+  "source_family_name": "model merging and task arithmetic",
+  "license": "arXiv distribution terms for the paper; linked repository MIT",
+  "sha256": "c34233274669d533ada81a64d8ddb1789780d1ba79b64c644f47784706979ada",
+  "file_size_bytes": 3227258,
+  "page_count": 18,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "arxiv_identity": "arXiv:2511.13254v1",
+    "pdf_visually_checked_pages": [1, 4, 5, 6, 7, 9, 10, 14],
+    "code_artifact": {
+      "repository": "https://github.com/facebookresearch/llm_souping",
+      "reviewed_commit": "621e57190b10c0dead9d7cab4f580df6e4ba9443",
+      "license": "MIT",
+      "static_scope": "all tracked source, configuration, shell, documentation and license files",
+      "runtime_boundary": "syntax and semantics were inspected; 8B/70B downloads, GPU averaging and benchmark execution were not run",
+      "correspondence_boundary": "The repository implements fixed-weight checkpoint averaging for two published BFCL soups, but not the paper's correlation analysis, thresholding, expert selection, weight-grid search, benchmark evaluation or Shapley analysis."
+    }
+  },
+  "sections_reviewed": [
+    "Abstract, introduction and related work",
+    "SoCE correlation, expert-selection, weight-search and weighted-soup algorithm",
+    "BFCL, MGSM, Infinity-Bench and FLORES experiments and ablations",
+    "large-scale correlation and Shapley analyses",
+    "discussion, limitations, scaling and ethics",
+    "all appendices and example outputs",
+    "paper-linked repository at exact commit"
+  ],
+  "page_or_section_anchors": [
+    {"anchors": "§3, Algorithm 1, pp. 3-4", "checked_for": "selection rule, correlation threshold, expert identity, weight grid and soup construction"},
+    {"anchors": "§4, Tables 1-2, pp. 5-8", "checked_for": "BFCL, MGSM and Infinity-Bench gains, ablations, correlation and Shapley interpretation"},
+    {"anchors": "§§5-8, pp. 9-10", "checked_for": "generalization, acknowledged leaderboard leakage, shared-base boundary and lifecycle disclosure"},
+    {"anchors": "Appendices A-E, pp. 14-18", "checked_for": "unrelated-task checks, win rates, souping populations, FLORES categories and qualitative examples"},
+    {"anchors": "repository commit 621e571", "checked_for": "actual algorithm coverage, model compatibility checks, fixed recipes, dependency identity and reproducibility"}
+  ],
+  "paper_core_claims": [
+    {"claim": "SoCE selects experts for weakly correlated benchmark categories and searches non-uniform convex weights to maximize the same benchmark aggregate.", "anchors": "Algorithm 1"},
+    {"claim": "The tuned BFCL soups score 80.68% at 70B and 76.50% at 8B, above the listed single-model and uniform-soup baselines.", "anchors": "Table 1"},
+    {"claim": "Smaller gains are reported on MGSM and Infinity-Bench, and FLORES is used mainly for ablation.", "anchors": "Table 2 and Appendix C"},
+    {"claim": "Souped checkpoint populations show higher cross-category Pearson correlations than unsouped populations.", "anchors": "Fig. 2"},
+    {"claim": "The authors explicitly acknowledge using BFCL and MGSM leaderboard scores for candidate selection and posit a future oracle development set.", "anchors": "§7.1, p. 10"}
+  ],
+  "function_concept_used_by_paper": "A benchmark supplies category-score vectors; SoCE analyzes their correlation, selects category experts, searches convex coefficients, and compiles aligned checkpoints into one model. This is a benchmark-conditioned static composer, not a runtime router.",
+  "representation_or_carrier": "Carriers are same-architecture Llama-derivative checkpoints, category performance vectors, a candidate set and convex weights. The implementation checks only the architecture-name field and does not verify tokenizer, vocabulary, base revision, parameter keys, alignment history, license or safety compatibility before loading.",
+  "specification_language": "Algorithm 1 names the benchmark, categories, candidates, correlation threshold and weight simplex, while fixed repository configs encode two final soups. The threshold tau, duplicate-expert handling, exact evaluation revisions, candidate snapshots, data splits, model revisions, seeds and study-wide executable recipes are absent. Algorithm notation also inconsistently sums over k categories versus l selected experts.",
+  "compiler_or_generator": "The paper's intended generator performs category correlation, expert selection, a 0.1-step convex weight search and weighted checkpoint averaging. The released code only performs the final weighted average from hand-authored 8B and 70B configurations, using CPU or GPU variants; it cannot regenerate SoCE selection or optimized weights from benchmark data.",
+  "interpreter_or_runtime": "The artifact is an ordinary Llama checkpoint executed by external benchmark harnesses. There is no input-conditioned routing or effect isolation. The repository installs floating latest dependencies, downloads unpinned Hub models and saves the averaged weights and config but not the tokenizer, evaluation receipt or lineage manifest.",
+  "composition_rule": "SoCE uses convex parameter averaging of aligned descendants selected and weighted from target-benchmark category scores. This confirms a static composition primitive, but optimization on the reported target benchmark makes the measured gain a selected in-sample result rather than clean held-out generalization evidence.",
+  "state_or_effect_model": "State includes category scores, candidate identities, correlation matrix, selected experts, weights, source checkpoints and output checkpoint. Effects are benchmark performance and resource use. There is no governed provenance, safety inheritance, privacy accounting, atomic promotion, monitoring, rollback, supersession or retirement.",
+  "uncertainty_model": "Pearson correlations and many generated soups are reported without confidence intervals, hypothesis tests, seed disclosure or dependence correction. 'Significantly higher' is descriptive rather than a reported statistical test. Soup populations share parents and are not independent; convex averaging can mechanically reduce variance and raise cross-category correlation without demonstrating robustness. Weight and expert selection on the evaluation benchmark adds selection uncertainty and optimistic bias.",
+  "validation_regime": {
+    "benchmarks": ["BFCL", "MGSM", "Infinity-Bench", "FLORES-36", "HellaSwag", "IFEval", "BBH"],
+    "reported_scales": ["6.7B/8B", "70B"],
+    "baselines": ["individual checkpoints", "uniform soup of all candidates", "uniform soup of SoCE-selected candidates"],
+    "positive_evidence": "Direct tables show target-benchmark gains and candidate-selection/weighting ablations.",
+    "critical_boundary": "BFCL and MGSM leaderboard scores are used directly to select candidates and tune weights; no oracle development set, clean held-out replicate or independent reproduction is supplied."
+  },
+  "equivalence_notions": [
+    {"notion": "architectural alignment", "support": "SAME_LLAMA_DERIVATIVE_SHAPE", "boundary": "Shape and architecture-name equality do not establish tokenizer, base-revision or semantic compatibility."},
+    {"notion": "expert complementarity", "support": "LOW_CATEGORY_SCORE_CORRELATION", "boundary": "Low sample correlation across leaderboard entries is not causal independence or transferable expertise."},
+    {"notion": "robustness", "support": "HIGHER_POST_SOUP_CATEGORY_CORRELATION", "boundary": "Correlation among dependent convex averages is not robustness, calibration or uncertainty evidence."},
+    {"notion": "state of the art", "support": "MAXIMIZED_BFCL_SCORE", "boundary": "The score is optimized on the same public leaderboard categories and is not held-out evidence."}
+  ],
+  "lifecycle_and_provenance": "The code names Hub repositories and final weights and the paper recommends disclosure of souping procedures. It does not pin source revisions or hashes, preserve benchmark-selection receipts, record training/data/license lineage, test inherited risks, sign an output manifest, or define health, rollback, supersession and retirement. The README correctly links an MIT LICENSE but incorrectly paraphrases it as non-commercial-only, creating documentation ambiguity.",
+  "limitations_and_failure_boundaries": [
+    "The paper is a v1 preprint and all experiments use Llama 3 derivative dense checkpoints with essentially the same pretrained base.",
+    "Candidate selection and weight optimization use the reported benchmark or public leaderboard itself; the authors acknowledge this leakage and only hypothesize a future development set.",
+    "No correlation threshold tau, exact candidate snapshot, model revision, evaluation version, seed, raw result artifact, confidence interval or significance test is supplied.",
+    "The weight grid performs multiple target-benchmark comparisons without held-out selection correction, so claimed SOTA gains can be optimistic.",
+    "Post-soup correlation is computed over dependent soups sharing parent models and can reflect variance smoothing rather than robustness or coherence.",
+    "The repository omits the defining selection and optimization algorithm and only reproduces fixed final averaging recipes.",
+    "Architecture checking is too weak for safe composition, dependencies and model downloads are unpinned, and no automated tests or evaluation pipeline are present.",
+    "Unrelated-task checks cover only three aggregate benchmarks and do not establish safety, calibration, privacy or regression freedom.",
+    "The method assumes category-rich benchmarks and does not validate cross-architecture, different-base, MoE, training-stage or unaligned checkpoint composition."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove that low category correlation identifies complementary knowledge.",
+    "It does not establish held-out state of the art, general robustness or safe capability composition.",
+    "It does not release an executable end-to-end SoCE optimizer or reproducible benchmark receipt.",
+    "It does not validate dynamic routing or a governed VersionedRegistry."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {"status": "PARTIAL", "reason": "Algorithm and configs exist, but key selection, identity, compatibility and lifecycle semantics are missing."},
+    "GAP-016": {"status": "PARTIAL", "reason": "Weighted averaging is executable, while the defining SoCE selector and optimizer are unreleased."},
+    "GAP-017": {"status": "PARTIAL", "reason": "Correlation and benchmark comparisons are explicit but statistically and semantically under-specified."},
+    "GAP-018": {"status": "CONFIRMED", "reason": "Static convex checkpoint composition is directly implemented and reported at two scales."},
+    "GAP-019": {"status": "PARTIAL", "reason": "Multi-benchmark results exist, but target-set tuning prevents clean held-out validation."},
+    "GAP-020": {"status": "PARTIAL", "reason": "Scores and correlations are observable; uncertainty, provenance and lifecycle traces are absent."}
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {"status": "PARTIAL", "reason": "Algorithm prose omits decisive parameters and executable identity."},
+    "N2_Representation": {"status": "CONFIRMED", "reason": "Aligned checkpoints, score vectors and convex weights are explicit carriers."},
+    "N3_Compiler": {"status": "PARTIAL", "reason": "Final averaging is released; selection and search are not."},
+    "N4_Artifact": {"status": "CONFIRMED", "reason": "A single deployable checkpoint is materialized."},
+    "N5_Interpreter": {"status": "CONFIRMED", "reason": "The soup uses ordinary Llama inference."},
+    "N6_ExecutionTrace": {"status": "PARTIAL", "reason": "Tables expose outcomes but no durable run receipts or lineage."},
+    "N7_Validator": {"status": "PARTIAL", "reason": "Several benchmarks are used, but selection and evaluation are not held apart."},
+    "N8_ComposerRouter": {"status": "CONFIRMED", "reason": "Benchmark-conditioned static composition is the central method; no runtime router is supported."},
+    "N9_VersionedRegistry": {"status": "PARTIAL", "reason": "Repository names are present without revisions, hashes, health or lifecycle governance."}
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_FULLTEXT_AND_EXACT_CODE_PARTIAL_CARD",
+    "corrections": [
+      "The full v1 identity, eleven authors and exact artifact hashes were recorded.",
+      "The paper's acknowledged leaderboard leakage was promoted to the primary validation boundary.",
+      "The released code was shown to implement fixed averaging rather than the defining SoCE selection and optimization pipeline.",
+      "Correlation increase was separated from statistical robustness and causal complementarity."
+    ]
+  },
+  "claim_support_status": "PARTIAL",
+  "confirmed_projection": "SoCE directly supports aligned-checkpoint Representation, static Artifact and Composer primitives, and the repository provides executable fixed-weight averaging. Its FunctionSpec, complete Compiler, Validator, uncertainty and registry projection remain partial.",
+  "source_specific_reasoning": "The paper reports promising target-benchmark tables and useful ablations, but its own limitations state that leaderboard scores select candidates; Algorithm 1 then searches weights to maximize that same benchmark. This circularity prevents treating the reported SOTA gains as held-out validation. Exact-code review further shows that only final fixed-weight averaging is released. PARTIAL therefore preserves the real executable composition evidence without accepting robustness, complementarity or generalized effectiveness claims.",
+  "projection_boundary": "These are 121CX projections from the exact arXiv v1 PDF and static review of repository commit 621e571. They are not proof, held-out replication, safety validation or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T05:35:50Z"
+}
