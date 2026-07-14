@@ -29,14 +29,21 @@
     "state": "OPEN",
     "draft": true
   },
-  "last_completed_cx_step": 1,
-  "next_cx_step": 2,
+  "last_completed_cx_step": 2,
+  "next_cx_step": 31,
   "canonical_121cn_last_completed_step": 30,
   "canonical_121cn_next_step": 31,
-  "canonical_resume_status": "DETERMINED_STEP_30_NEXT_STEP_31_RECONCILIATION_PENDING",
+  "canonical_resume_status": "RECONCILED_RESUME_AT_STEP_31",
+  "active_manifest": {
+    "historical_base": "data/external-research/121-fulltext-resolver/121cn/121cn-microstep-manifest.jsonl",
+    "121cx_overlay": "data/external-research/121-fulltext-resolver/121cx/121cx-microstep-manifest-overlay.jsonl",
+    "combined_unique_steps": 81,
+    "phase_d_semantic_dispositions": 69,
+    "remaining_phase_d_steps_from_31": 57
+  },
   "phases": {
-    "0_checkpoint_and_count_truth_audit": "IN_PROGRESS",
-    "1_remaining_paper_reviews": "PENDING",
+    "0_checkpoint_and_count_truth_audit": "COMPLETE",
+    "1_remaining_paper_reviews": "READY_AT_STEP_31",
     "2_prior_review_cross_model_acceptance": "PENDING",
     "3_family_synthesis": "PENDING",
     "4_gap_readjudication": "PENDING",
@@ -67,8 +74,11 @@
     "not_supported": 0,
     "unresolved": 0
   },
-  "reconciliation_items": [
-    "Append missing Phase D semantic disposition steps 81-87 for the seven partial-repair sources; five are now reviewable and two remain blocked.",
+  "resolved_reconciliation_items": [
+    "Added a 121CX overlay for missing Phase D semantic disposition steps 81-87 without rewriting the historical 121CN manifest.",
+    "Confirmed there are no valid Step 31-35 cards to backfill; no ledger, run-state, or semantic result was fabricated."
+  ],
+  "deferred_acceptance_corrections": [
     "Preserve the 12 prior 121CN cards but correct their missing specification_language, uncertainty_model, and lifecycle_and_provenance coverage during independent Codex acceptance."
   ],
   "blockers": [],
