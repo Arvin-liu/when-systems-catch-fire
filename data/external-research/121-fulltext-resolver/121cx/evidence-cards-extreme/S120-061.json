@@ -1,0 +1,260 @@
+{
+  "source_id": "S120-061",
+  "canonical_title": "Compositional Imprecise Probability: A Solution from Graded Monads and Markov Categories",
+  "authors": [
+    "Jack Liell-Cock",
+    "Sam Staton"
+  ],
+  "year": 2025,
+  "version": "registered arXiv v2 revised 2024-10-29; subsequently published 2025-01-07 in PACMPL 9 (POPL)",
+  "doi_or_identifier": "10.1145/3704890",
+  "identifier": "arXiv:2405.09391v2; PACMPL 9 (POPL), pp. 1596-1626",
+  "url": "https://arxiv.org/pdf/2405.09391",
+  "source_family": 9,
+  "source_family_name": "probabilistic programming and stochastic semantics",
+  "license": "the registered arXiv copy uses the arXiv non-exclusive distribution license; Crossref records the 2025 version of record as CC BY 4.0",
+  "sha256": "28864d20b6a0ed3feeadcf03d48f1930fe3d7bc95d7feef4d3525b679459cbf4",
+  "file_size_bytes": 474162,
+  "page_count": 30,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "registered_pdf_visual_check": "all 30 pages rendered and inspected; figures, diagrams, displayed equations and references are present and legible",
+    "source_archive_reviewed": true,
+    "source_archive_entry": "paper.tex from the arXiv source package was searched and section-level claims were checked against the rendered PDF",
+    "arxiv_history": "submitted 2024-05-15; v2 revised 2024-10-29 and described as conditionally accepted at POPL 2025",
+    "publication_identity": "Proceedings of the ACM on Programming Languages, volume 9, issue POPL, pages 1596-1626, published 2025-01-07",
+    "publication_doi": "10.1145/3704890",
+    "publication_metadata_source": "Crossref DOI record and official POPL 2025 program page",
+    "version_boundary": "the hash-bound reviewed artifact is the 30-page arXiv v2, not the 31-page ACM pagination; the ACM PDF endpoint returned HTTP 403 and was not represented as independently hash-reviewed"
+  },
+  "sections_reviewed": [
+    "overview, compositional desiderata and the paradox for unnamed Knightian choices",
+    "named Knightian choices, reader-transformer intuition and grading for renamings",
+    "graded Markov-category syntax, typing, coercions and equational laws",
+    "graded commutative affine relative monads and enriched-category correspondence",
+    "finite stochastic maps and the graded Markov category ImP",
+    "finite worked examples separating shared and independent Knightian choices",
+    "finitely generated convex powersets, Kan extension and op-lax interpretation",
+    "tighter uncertainty-bound theorem and its strict example",
+    "maximality theorem and alternative open-term quotients",
+    "algebraic and graded-algebraic perspectives",
+    "summary, related work, limitations and future directions",
+    "all references and publication/version metadata"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "sections 1.1-1.3, pp. 2-7; Figures 2-3",
+      "checked_for": "first-order language boundary, commutative/affine sequencing, if-hoisting, named choices, reader semantics, tighter-bound and maximality claim scope"
+    },
+    {
+      "anchors": "sections 2.1-2.3, pp. 7-10; Definitions 2.1-2.3 and Proposition 2.4",
+      "checked_for": "distributive Markov categories, graded syntax, grade coercions, associativity, commutativity, weakening and hoisting equations"
+    },
+    {
+      "anchors": "sections 3.1-3.2, pp. 10-13; Propositions 3.2-3.5",
+      "checked_for": "graded commutative affine relative monads, Kleisli correspondence, enriched formulation and unproved biequivalence conjecture"
+    },
+    {
+      "anchors": "sections 4.1-4.4, pp. 14-17; Definitions 4.1-4.5 and Proposition 4.3",
+      "checked_for": "finite carrier, surjective stochastic regradings, ImP construction, Bernoulli/Knightian operations and concrete matrices"
+    },
+    {
+      "anchors": "sections 5.1-5.4, pp. 17-21; Lemma 5.2, Propositions 5.3-5.4 and Theorem 5.6",
+      "checked_for": "finitely generated convex sets, noncommutativity of CP, Kan extension, op-lax inclusion and strict tighter-bound example"
+    },
+    {
+      "anchors": "sections 6-6.1, pp. 21-22; Definition 6.1 and Theorem 6.2",
+      "checked_for": "exact assumptions of maximality, faithfulness result, open-term quantifier order and which compositional desideratum each quotient loses"
+    },
+    {
+      "anchors": "sections 7.1-7.3, pp. 23-25; equations 9-19",
+      "checked_for": "distributive-law comparison, Eckmann-Hilton-like obstruction, named graded operations and regrading-dependent symmetry"
+    },
+    {
+      "anchors": "section 8, pp. 25-26",
+      "checked_for": "finite-generation, absence of iteration, infinite-domain and higher-order gaps, conditioning/inference absence and future-work boundaries"
+    },
+    {
+      "anchors": "pp. 27-30",
+      "checked_for": "complete reference provenance and absence of an implementation or evaluation appendix"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "Naming Knightian nondeterministic choices and tracking their renaming/disjointness with grades yields a commutative, affine and distributive account that supports dataflow-style categorical and monoidal composition.",
+      "anchors": "sections 1.2, 2.3 and 4; Proposition 2.4 and Definition 4.5"
+    },
+    {
+      "claim": "ImP is a FinStochSurj-graded distributive Markov category, equivalently a graded Kleisli model based on finite stochastic maps, and it combines finite probability with Knightian nondeterminism.",
+      "anchors": "sections 4.1-4.3; Proposition 4.3 and Definition 4.5"
+    },
+    {
+      "claim": "Mapping an ImP morphism to the convex image of its stochastic map defines an identity-on-objects op-lax functor to the convex-powerset Kleisli category, with R(g o f) contained in R(g) o R(f).",
+      "anchors": "sections 5.2-5.3; Proposition 5.4 and Theorem 5.6"
+    },
+    {
+      "claim": "Preserving shared named Knightian choices can make the inclusion strict, producing a tighter finitely generated convex uncertainty region than composition after forgetting the names.",
+      "anchors": "section 5.4; Example 5.7"
+    },
+    {
+      "claim": "Under a precise FinStochSurj-graded distributive Markov functor and a factorization of the convex-image interpretation, any such functor from ImP is faithful.",
+      "anchors": "section 6; Theorem 6.2"
+    }
+  ],
+  "function_concept_used_by_paper": "A program denotes a morphism in a graded distributive Markov category. Ordinary values are finite objects, Bernoulli sampling is a grade-I stochastic morphism, and each one-use Knightian choice is a named graded morphism. Sequencing, tensor/dataflow juxtaposition, copying, discarding and finite case analysis compose these morphisms while grades record the sample space and permissible regradings of uncertain choices.",
+  "representation_or_carrier": "The concrete carrier is finite: objects are finite sets; precise probabilistic computations are stochastic matrices; a grade gamma is a finite set/sample space connected by surjective stochastic maps; and an ImP morphism X to Y at grade gamma is a stochastic map gamma x X to Y. Closed computations induce finitely generated convex subsets of finite probability simplices. Open terms retain intensional named-choice structure that is intentionally not quotiented to convex sets.",
+  "specification_language": "The paper gives a typed first-order functional metalanguage with immutable sequencing, finite sums/products, if-then-else, fair bernoulli, named knight(a) choices and explicit grade coercions c_f. Grades specify which uncertain names/sample spaces a term uses, while equations specify associativity, commutativity, weakening, hoisting and graded algebraic laws. It does not specify recursion, higher-order functions, conditioning, observations, mutable state, operational resource budgets, numerical tolerances, deployment contracts or lifecycle policy; even practical coercion inference is future work.",
+  "compiler_or_generator": "No compiler, elaborator or code generator is implemented or validated. The syntax-to-category interpretation is a denotational construction, and the paper explicitly leaves practical grade/coercion inference to future work. The Kan-extension result extracts the convex-powerset functor mathematically but is not a compiler and supplies no algorithmic complexity or executable translation receipt.",
+  "interpreter_or_runtime": "No interpreter or inference runtime is supplied. Matrix calculations and program equations illustrate denotations in the finite model, but there is no parser, evaluator, sampler, conditioning engine, robust-statistics procedure, benchmark or artifact. Statistical inference for a probabilistic programming language with imprecise probability is listed as an open practical question.",
+  "composition_rule": "For f in ImP_gamma(X,Y) and g in ImP_epsilon(Y,Z), graded composition uses the tensor grade gamma x epsilon, swaps/reassociates the grade factors and composes the corresponding stochastic maps; tensor juxtaposition composes independent dataflow branches. Surjective stochastic regradings express renaming, forgetting or coupling of Knightian sources. The convex-set projection is only op-lax: R(g o f) is a subset of R(g) o R(f), because the former preserves one shared epsilon-choice across intermediate outcomes while the latter may choose separately for each outcome.",
+  "state_or_effect_model": "The only modeled effects are finite probability and named one-use Knightian nondeterminism. Commutativity, affinity and distributive finite case analysis are deliberate laws; the model excludes mutable memory, recursion, unbounded iteration and repeated learning about an urn. Choice names encode intensional sharing/dependence and grades encode reindexing, but there is no operational heap, concurrency, external I/O, persistent trace, failure recovery or deployment state.",
+  "uncertainty_model": "Precise uncertainty is a finite probability vector or stochastic matrix. Imprecision is the convex image obtained by ranging over probability distributions on a finite grade/sample space; only finitely generated convex sets over finite outcomes occur. Named Knightian choices distinguish shared from independent unknown probabilities and thereby retain dependence information lost by the ordinary convex-powerset monad. This is not Bayesian updating: there are no observations, posterior conditioning, interval estimators, calibration guarantees, convergence rates or complexity bounds, and iteration/infinite spaces remain open.",
+  "validation_regime": {
+    "formal": "definitions, categorical constructions, proof notes, a Kan-extension proposition, the op-lax tighter-bound theorem with a strict finite example, and a faithfulness/maximality theorem under explicit structure-preserving assumptions",
+    "implementation": "none; no artifact, code, executable semantics, compiler or runtime",
+    "empirical": "none; no datasets, benchmarks, robust-statistics experiment, sampling study or user evaluation",
+    "publication": "peer-reviewed POPL 2025 paper in PACMPL 9 with DOI 10.1145/3704890; the reviewed registered artifact is arXiv v2",
+    "boundary": "proof notes are often concise; the biequivalence is conjectured rather than proved; maximality is relative to the specified grading, strict distributive Markov functors and convex-image factorization, not a theorem over every imprecise-probability formalism"
+  },
+  "equivalence_notions": [
+    {
+      "notion": "graded morphism equality",
+      "support": "PROGRAMS_ARE_EQUAL_WHEN_THEIR_STOCHASTIC_MAPS_AGREE_AT_THE_SAME_GRADE_AFTER_EXPLICIT_REGRADING",
+      "boundary": "The model does not supply a decision procedure or normalization algorithm for arbitrary syntax."
+    },
+    {
+      "notion": "equational program reasoning",
+      "support": "ASSOCIATIVITY_COMMUTATIVITY_WEAKENING_HOISTING_AND_FINITE_SUM_PRODUCT_LAWS_ARE_SOUND_IN_ANY_GRADED_DISTRIBUTIVE_MARKOV_CATEGORY",
+      "boundary": "Coherence and coercion terms may be required, and practical coercion inference is future work."
+    },
+    {
+      "notion": "convex-image equality for closed terms",
+      "support": "CLOSED_TERMS_WITH_THE_SAME_FINITE_CONVEX_IMAGE_ARE_IDENTIFIED_AFTER_FORGETTING_NAMES",
+      "boundary": "For open terms the quantifier order matters; one quotient loses commutativity and the alternative loses if-hoisting/coproducts."
+    },
+    {
+      "notion": "op-lax refinement",
+      "support": "R_OF_COMPOSED_IMP_MORPHISMS_IS_CONTAINED_IN_COMPOSITION_OF_THEIR_CONVEX_POWERSET_IMAGES",
+      "boundary": "This is inclusion rather than functorial equality and is proved only in the finite finitely-generated setting."
+    },
+    {
+      "notion": "maximal compositional theory",
+      "support": "ANY_STRUCTURE_PRESERVING_FACTORING_FUNCTOR_IN_THEOREM_6_2_IS_FAITHFUL",
+      "boundary": "Maximality is conditional on FinStochSurj grading, strict preservation of distributive Markov structure and factorization through the stated convex-image family."
+    }
+  ],
+  "lifecycle_and_provenance": "The registered source has a stable arXiv identifier, exact SHA-256, byte count, page count, source archive and v2 timestamp. The later peer-reviewed version has a Crossref DOI, PACMPL volume/issue/pages, official POPL program record and CC BY 4.0 version-of-record metadata. The registry's provisional year/venue/authorship were superseded by the final publication identity and full two-author list. No software artifact, release tag, dependency lock, CI, proof-assistant development, signed provenance manifest, compatibility matrix, revalidation cadence, rollback or retirement policy accompanies the work. The ACM PDF could not be fetched from the command-line endpoint, so no equivalence between arXiv v2 and the version of record is asserted beyond publication metadata.",
+  "limitations_and_failure_boundaries": [
+    "The language is deliberately minimal and first-order: it has no first-class functions, recursion, mutation or unbounded iteration.",
+    "Outcomes, grades and stochastic matrices are finite, and the resulting convex uncertainty sets are finitely generated; infinite domains, metrics, domain theory and unbounded Knightian choices are future work.",
+    "Each Knightian urn is fresh and used once. The model does not learn an unknown ratio through repeated observations or frequencies.",
+    "The semantics represents imprecise prior choice but provides no conditioning, Bayesian update, likelihood, posterior inference or decision rule.",
+    "The paper explicitly leaves statistical inference for an imprecise-probability programming language as an open practical question.",
+    "No compiler, interpreter, code repository, executable artifact, benchmark or empirical evaluation is supplied.",
+    "Practical grade/coercion inference is future work, so the formal notation is not yet an ergonomic implementable type-and-effect system.",
+    "The correspondence between graded distributive Markov categories and graded commutative affine relative monads is conjectured to be a biequivalence but is not proved.",
+    "Theorem 5.6 establishes an op-lax inclusion, not equality; tighter bounds arise because named dependence is retained, not because all uncertainty has been eliminated or calibrated.",
+    "Theorem 6.2 is a conditional faithfulness result under a specific FinStochSurj grading, strict preservation of structure and factorization through convex images; it is not universal maximality over all formalisms.",
+    "Open-term intensional names cannot simply be quotiented away while retaining both desiderata: the forall-exists quotient loses commutativity and the exists-forall quotient loses if-hoisting/coproducts.",
+    "The authors leave open how results depend on the particular grading subcategory, so alternative grade systems may change the theory.",
+    "The convex-powerset model discussed in comparison is noncommutative in the relevant sense; translating to it forgets shared-choice dependencies and may enlarge bounds.",
+    "The work proves semantic properties, not computational complexity, numerical stability, sampling convergence, calibration or scalability.",
+    "No result connects this finite categorical model to neural weights, learned Function OS assets, ignition epsilon, frozen Psi_0 or production governance."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not implement or empirically validate an imprecise-probability programming system.",
+    "It does not provide posterior updating, inference algorithms, convergence guarantees, error bars or complexity bounds.",
+    "It does not show that arbitrary continuous, higher-order, recursive or infinite-state probabilistic programs fit the finite ImP construction.",
+    "It does not prove unconditional maximality across all imprecise-probability theories; its theorem has explicit categorical and factorization hypotheses.",
+    "It does not establish that convex-set equality is a fully compositional equivalence for open programs.",
+    "It does not supply empirical validation of ignition, a probability law for ignition epsilon, neural-function equivalence or artifact lifecycle closure."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Typed grades and named uncertainty choices form a precise stochastic FunctionSpec fragment, but there are no general contracts, operational limits, inference requirements or governance fields."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "Syntax has a rigorous denotational interpretation and convex-image projection, but no compiler, elaborator, generator or executable transformation is built."
+    },
+    "GAP-017": {
+      "status": "CONFIRMED",
+      "reason": "Graded morphism equality, sound equational laws, convex-image equality/inclusion and conditional maximality provide explicit bounded equivalence and refinement notions."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "Finite probability, named Knightian nondeterminism, grade reindexing, copying, discarding and case analysis are explicit composable effects."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Theorems and a strict finite example validate the semantic construction, while the absence of mechanized proofs, implementation and empirical evaluation blocks full validator closure."
+    },
+    "GAP-020": {
+      "status": "CONFIRMED",
+      "reason": "The paper directly supplies finite stochastic-function semantics, imprecise convex uncertainty, named dependence and a formal composition law."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "The graded first-order syntax precisely specifies finite probabilistic and named Knightian functions."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Finite sets, stochastic matrices, grades, named choices and finitely generated convex images are explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "A denotational syntax-to-ImP interpretation exists, but practical coercion inference and an executable compiler are absent."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "The hash-bound paper/source and peer-reviewed publication are durable research artifacts, but there is no software or mechanized-proof release."
+    },
+    "N5_Interpreter": {
+      "status": "PARTIAL",
+      "reason": "Finite stochastic-matrix denotations define mathematical evaluation, but no interpreter, sampler or conditioning runtime is supplied."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Named grades preserve dependency/provenance of Knightian choices denotationally, but no operational trace format, archive or replay receipt exists."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "The op-lax inclusion, strict example and conditional maximality theorem validate core finite semantics, bounded by concise paper proofs and no mechanization."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Graded categorical composition, tensor/dataflow composition, finite branching and regrading explicitly route and compose uncertain functions."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "arXiv versioning, exact hash and final DOI provide publication provenance without runtime versions, compatibility, health or retirement governance."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "NO_PRIOR_SEMANTIC_EVIDENCE_CARD",
+    "verdict": "NEW_CODEX56_EXTREME_CARD_WITH_CONFIRMED_BOUNDED_SUPPORT",
+    "corrections": [
+      "Replaced the registry's et-al authorship and preprint-only identity with both authors and the 2025 PACMPL/POPL DOI record.",
+      "Separated the formal finite graded composition theorem from any claim about general probabilistic-program composition.",
+      "Bounded maximality to Theorem 6.2's grading, strict structure-preservation and convex-image factorization assumptions.",
+      "Recorded that the convex-set projection is op-lax inclusion rather than equality and can forget shared-choice dependence.",
+      "Corrected the provisional inference-compiler and sampling-engine fields: the paper supplies neither implementation.",
+      "Separated Knightian uncertainty representation from conditioning or Bayesian updating, which the model does not provide.",
+      "Recorded the first-order, finite, nonrecursive, finitely generated and one-use-choice boundaries plus the unproved biequivalence conjecture."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "Within its explicitly finite first-order scope, the source confirms a rigorous stochastic FunctionSpec-Representation-Validator-Composer architecture: named Knightian uncertainty is carried by grades, finite stochastic functions compose in ImP, convex uncertainty is recovered op-laxly, and semantic faithfulness is proved under stated assumptions. Compiler, executable Artifact/Interpreter, operational Trace and lifecycle Registry closure remain partial.",
+  "source_specific_reasoning": "CONFIRMED is warranted for the bounded architectural claim because the complete paper defines the carrier, syntax, effect model and composition, proves the key op-lax uncertainty refinement and a conditional maximality theorem, and gives a strict finite calculation. The status does not extend to a runnable system, inference or updating, unbounded/continuous/higher-order programs, computational feasibility or empirical performance. Those absences are explicit limits rather than contradictions of the finite semantic contribution.",
+  "projection_boundary": "These are 121CX projections from the complete hash-matched 30-page arXiv v2, its source archive, all rendered pages, Crossref DOI metadata and the official POPL 2025 program record. The ACM version-of-record PDF was not independently retrieved. This model review is not a proof assistant check, implementation validation, statistical inference result, empirical validation of ignition or evidence for modifying frozen Psi_0.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T06:43:33Z"
+}
