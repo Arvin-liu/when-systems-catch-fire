@@ -4,35 +4,43 @@
   "baseline_head": "8b95f7457f0fbcc553676b9ddb722f7b4176fd09",
   "branch": "records/ignition-121q2w-final-consistency-seal-20260715",
   "pr_36_unchanged": true,
-  "current_step": 2,
+  "current_step": 3,
   "current_step_status": "COMPLETE",
-  "next_step": 3,
-  "next_step_description": "Unify family, run-state, and report",
-  "defects_registered": 9,
-  "last_updated": "2026-07-14T17:37:11Z",
-  "identity_counts_final": {
-    "VERIFIED": 7,
-    "CORRECTED": 5,
-    "BLOCKED": 2,
-    "UNKNOWN": 8
-  },
-  "identity_total_final": 22,
+  "next_step": 4,
+  "next_step_description": "Enhanced validation and full check",
   "phase2_semantic_counts": {
     "CONFIRMED": 0,
     "PARTIAL": 20,
     "NOT_SUPPORTED": 0,
     "UNRESOLVED": 2
   },
+  "phase2_semantic_total": 22,
   "phase2_identity_counts": {
     "VERIFIED": 7,
     "CORRECTED": 5,
     "BLOCKED": 2,
     "UNKNOWN": 8
   },
+  "phase2_identity_total": 22,
   "canonical_index_stats": {
     "total": 84,
     "present": 78,
     "no_record": 6,
     "conflicts": 11
-  }
+  },
+  "family_stats": {
+    "changed": 6,
+    "unchanged": 4,
+    "total": 10
+  },
+  "phase2_next_cx_step": null,
+  "phase2_next_source_id": null,
+  "phase2_next_phase": "AWAITING_GPT_DECISION",
+  "references": {
+    "phase2_final": "121q2w/phase2-final.json",
+    "identity_ledger": "121q2w/prior22-identity-ledger-final.jsonl",
+    "canonical_index": "121q2w/canonical-index-final.jsonl",
+    "family_summary": "121q2w/family-summary.json"
+  },
+  "last_updated": "2026-07-14T17:37:46Z"
 }
