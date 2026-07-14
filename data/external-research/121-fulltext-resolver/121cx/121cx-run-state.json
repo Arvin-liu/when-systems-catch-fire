@@ -29,8 +29,8 @@
     "state": "OPEN",
     "draft": true
   },
-  "last_completed_cx_step": 88,
-  "next_cx_step": 89,
+  "last_completed_cx_step": 89,
+  "next_cx_step": 90,
   "canonical_121cn_last_completed_step": 30,
   "canonical_121cn_next_step": 31,
   "canonical_source_last_completed_step": 87,
@@ -38,7 +38,7 @@
   "last_completed_source_id": "S120-001",
   "next_source_id": "S120-002",
   "next_phase_action": "codex56_extreme_accept_prior_non_codex_review",
-  "canonical_resume_status": "PHASE_1_COMPLETE_PHASE_2_IN_PROGRESS_AT_STEP_89",
+  "canonical_resume_status": "PHASE_1_COMPLETE_PHASE_2_IN_PROGRESS_AT_STEP_90",
   "active_manifest": {
     "historical_base": "data/external-research/121-fulltext-resolver/121cn/121cn-microstep-manifest.jsonl",
     "121cx_overlay": "data/external-research/121-fulltext-resolver/121cx/121cx-microstep-manifest-overlay.jsonl",
