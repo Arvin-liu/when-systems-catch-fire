@@ -1,0 +1,13 @@
+{
+  "task": "121Q2W",
+  "instruction_commit": "0ca7b89ce3f6761a85c2207eab8b95ae7373e7c6",
+  "baseline_head": "8b95f7457f0fbcc553676b9ddb722f7b4176fd09",
+  "branch": "records/ignition-121q2w-final-consistency-seal-20260715",
+  "pr_36_unchanged": true,
+  "current_step": 0,
+  "current_step_status": "COMPLETE",
+  "next_step": 1,
+  "next_step_description": "Fix prior22 identity chain",
+  "defects_registered": 9,
+  "last_updated": "2026-07-14T17:35:30Z"
+}
