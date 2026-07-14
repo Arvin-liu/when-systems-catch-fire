@@ -1,0 +1,153 @@
+{
+  "source_id": "S120-014",
+  "prior_identity_incorrect": {
+    "title": "MISSING",
+    "venue": "claimed BMVC 2021, actual CVPR (confirmed by arxiv comment: IEEE/CVF Conference on Computer Vision and Pattern Recognition)",
+    "year": "claimed 2021, actual 2020 (arxiv published 2020-12-21)",
+    "pdf_downloaded": false,
+    "sha256": "pending"
+  },
+  "corrected_identity": {
+    "title": "HyperSeg: Patch-wise Hypernetwork for Real-time Semantic Segmentation",
+    "authors": "Yuval Nirkin (Facebook AI & Bar-Ilan University), Lior Wolf (Facebook AI & Tel Aviv University), Tal Hassner (Facebook AI)",
+    "year": 2020,
+    "venue": "IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "doi_or_identifier": "arXiv:2012.11582",
+    "exact_fulltext_used": "arxiv PDF SHA256: b6cb923bb035c019232e23c7fc92ce6ba85a8ca12c9b02c598dbe731088ca448"
+  },
+  "source_family": 2,
+  "url": "https://arxiv.org/abs/2012.11582",
+  "access_url": "https://arxiv.org/pdf/2012.11582",
+  "effective_url": "https://arxiv.org/pdf/2012.11582",
+  "access_time_utc": "2026-07-14T15:21:32Z",
+  "file_sha256": "b6cb923bb035c019232e23c7fc92ce6ba85a8ca12c9b02c598dbe731088ca448",
+  "file_size_bytes": 3073076,
+  "page_count": 15,
+  "content_type": "application/pdf",
+  "sections": [
+    "1 Introduction",
+    "2 Related Work (Hypernetworks, Locally Connected Layers, Semantic Segmentation)",
+    "3 Method (Encoder/Hypernetwork, Context Head, Dynamic Patch-wise Convolution)",
+    "4 Experiments (PASCAL VOC, Cityscapes, CamVid + ablations)"
+  ],
+  "abstract_snippet": "We present a novel, real-time, semantic segmentation network in which the encoder both encodes and generates the parameters (weights) of the decoder. Furthermore, to allow maximal adaptivity, the weights at each decoder block vary spatially. For this purpose, we design a new type of hypernetwork, composed of a nested U-Net for drawing higher level context features, a multi-headed weight generating module which generates the weights of each block in the decoder immediately before they are consumed, for efficient memory utilization, and a primary network that is composed of novel dynamic patch-wise convolutions.",
+  "what_the_paper_supports": "HyperSeg introduces a hypernetwork architecture where an encoder (EfficientNet backbone + nested U-Net context head) generates the weights of the decoder's meta blocks dynamically and per-spatial-patch. The weight mapping network acts as a compiler: context features from the encoder → decoder parameters. Each spatial patch in the image gets its own dynamically generated convolutional weights via dynamic patch-wise convolution (DPWConv). The system achieves SotA accuracy vs. runtime trade-off on semantic segmentation benchmarks (Cityscapes, CamVid, PASCAL VOC 2012). The ablated metrics show progressive improvement with finer grid partitioning (1x1→4x4→8x8→16x16) and positional encoding.",
+  "what_the_paper_does_not_support": "No formal specification language (GAP-015). No composition between dynamically generated weights (GAP-016). No equivalence checking between patches (GAP-017). No versioning of generated weights (GAP-019). No execution trace or validation of generated weights (GAP-020). The 'compilation' is purely a forward pass — no verification that generated weights are correct or consistent.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "paper_core_claims": [
+    "Encoder both encodes image features AND generates decoder weights via hypernetwork",
+    "Dynamic Patch-wise Convolution (DPWConv): weights vary both per input image AND per spatial location",
+    "Nested U-Net context head draws multi-scale context for weight generation",
+    "Multi-headed weight mapping network generates meta-block weights with channel allocation proportional to weight count",
+    "SotA accuracy vs. runtime on Cityscapes (76.2/78.2 mIoU test), CamVid (78.4% mIoU at 38FPS), PASCAL VOC (80.6% mIoU)",
+    "Ablation confirms spatial adaptivity: 16x16 grid > 8x8 > 4x4 > 1x1 in mIoU"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No formal specification language for what each patch's dynamic convolution should compute"
+    },
+    "GAP-016": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Weights per spatial patch are independently generated from context features — implicit spatial decomposition but no explicit algebraic composition or interchange between patches"
+    },
+    "GAP-017": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No equivalence checking between different spatial patches' generated weights"
+    },
+    "GAP-018": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "State is implicit: image features → context encoding → patch weights. Each forward pass dynamically generates new weights — no persistent state across inferences"
+    },
+    "GAP-019": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Weights are generated and consumed immediately; no registry, versioning, or retrieval of past weight generations"
+    },
+    "GAP-020": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No formal verification of generated weight correctness; quality judged only by downstream segmentation accuracy"
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "NO_EVIDENCE"
+    },
+    "N2_Representation": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Nested U-Net context head extracts multi-scale features; EfficientNet backbone provides hierarchical feature maps F1..Fn at different resolutions; positional encoding augments input with spatial identity"
+    },
+    "N3_Compiler": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "STRONG CANDIDATE MATCH (candidate mapping). Weight mapping network w = [w0..wn] takes context features φ and generates full decoder meta-block weights θmi per spatial patch. Channel division algorithm (Algorithm 1) allocates context signal channels proportionally to weight counts. This is a dynamic compilation pipeline: context encoding → parameters. Notable difference from S120-011 (pFedHN) and S120-012 (CHN): HyperSeg generates per-patch INSTANCE-LEVEL parameters, not feature-level. The compilation is conditioned on image content, not feature identity."
+    },
+    "N4_Artifact": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Generated weights are ephemeral — consumed immediately in DPWConv and discarded"
+    },
+    "N5_Interpreter": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Decoder meta blocks execute the generated weights via Dynamic Patch-wise Convolution — the decoder IS the interpreter; batch-norm layers fused with weight mapping during inference (Appendix E)"
+    },
+    "N6_ExecutionTrace": {
+      "status": "NO_EVIDENCE"
+    },
+    "N7_Validator": {
+      "status": "NO_EVIDENCE"
+    },
+    "N8_ComposerRouter": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Implicit spatial routing: each patch gets its own dynamically generated weight set"
+    },
+    "N9_VersionedRegistry": {
+      "status": "NO_EVIDENCE"
+    }
+  },
+  "limitations_and_failure_boundaries": [
+    "DPWConv operations unoptimized — large run-time penalty compared to GFLOPs metric (Fig 4)",
+    "Only tested on semantic segmentation in driving/street scenes; unclear cross-domain generalization",
+    "Weight generation depends on EfficientNet backbone — changing backbone requires retraining weight mapper",
+    "Generated weights are model-dependent — no transfer to other architectures",
+    "Patch-wise adaptation limited to spatial partitioning — no temporal or feature-level adaptivity",
+    "Ablation shows diminishing returns beyond 16x16 grid",
+    "Failure cases: truck↔car confusion, pole segmentation gaps, top-view object detection failures (Fig 5-7)",
+    "No mechanism for verifying that generated per-patch weights are semantically meaningful"
+  ],
+  "strengths_noted": [
+    "Dynamic Patch-wise Convolution: novel fusion of hypernetworks with spatially-varying locally-connected layers",
+    "Nested U-Net context head for multi-scale context aggregation is computationally efficient (2×2 stride conv, no padding overhead)",
+    "Batch-norm fusion at inference (Appendix E) eliminates normalization overhead",
+    "Channel division algorithm (Algorithm 1) optimally allocates context signal to weight generators",
+    "3-5 model variants across benchmarks demonstrate systematic scalability trade-off",
+    "Ablation study isolates contributions: spatial adaptivity (+3 mIoU from 1×1→16×16), positional encoding (+0.3 mIoU)",
+    "SotA CamVid results WITHOUT external Cityscapes data — outperforms prior SotA that used Cityscapes as extra training data"
+  ],
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "b6cb923bb035c019232e23c7fc92ce6ba85a8ca12c9b02c598dbe731088ca448",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "arXiv ID 2012.11582 confirmed correct via arxiv API — first correct ID in this batch",
+      "Old card had no title — filled in from paper",
+      "Old card venue wrong: claimed BMVC 2021, actual CVPR (confirmed by arxiv comment tag)",
+      "Old card year wrong: claimed 2021, paper published Dec 2020",
+      "Old card never downloaded PDF (sha256: pending, file_size_bytes: 0) — actual PDF is 3MB, 15 pages, verified SHA256",
+      "N3 Compiler: candidate_mapping (not verified) — per-patch dynamic weight generation from context features via weight mapping network"
+    ],
+    "metadata_comparison": {
+      "old_card_title": "MISSING",
+      "correct_title": "HyperSeg: Patch-wise Hypernetwork for Real-time Semantic Segmentation",
+      "old_card_venue": "BMVC 2021 (WRONG)",
+      "correct_venue": "CVPR (IEEE/CVF Conference on Computer Vision and Pattern Recognition)",
+      "old_card_year": "2021 (WRONG)",
+      "correct_year": "2020 (arxiv published 2020-12-21)",
+      "old_card_authors": "Nirkin, Wolf, Hassner (CORRECT — confirmed via arxiv API)",
+      "old_card_pdf_downloaded": "False (sha256: pending)"
+    }
+  },
+  "reviewed_by_model": "qclaw/pool-deepseek-v4-pro",
+  "reviewed_at": "2026-07-14T15:21:32Z",
+  "review_batch": "ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714",
+  "step_number": 99
+}
