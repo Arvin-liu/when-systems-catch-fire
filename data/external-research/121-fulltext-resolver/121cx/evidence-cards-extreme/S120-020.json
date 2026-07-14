@@ -1,0 +1,261 @@
+{
+  "source_id": "S120-020",
+  "canonical_title": "Parsel: Algorithmic Reasoning with Language Models by Composing Decompositions",
+  "title": "Parsel: Algorithmic Reasoning with Language Models by Composing Decompositions",
+  "authors": [
+    "Eric Zelikman",
+    "Qian Huang",
+    "Gabriel Poesia",
+    "Noah D. Goodman",
+    "Nick Haber"
+  ],
+  "year": 2023,
+  "version": "arXiv v3, 2023-05-28",
+  "doi_or_identifier": "arXiv:2212.10561",
+  "identifier": "arXiv:2212.10561",
+  "url": "https://arxiv.org/pdf/2212.10561",
+  "source_family": 3,
+  "source_family_name": "program synthesis and execution guidance",
+  "license": "open access preprint",
+  "sha256": "7e40c20c64f10766adb7fc05514c6073e3ceeb58d2b76041d8bc4bcea0240c31",
+  "file_size_bytes": 1733039,
+  "page_count": 55,
+  "content_access_status": "ANCHOR_VERIFIED",
+  "retrieval_and_integrity": {
+    "official_source": "arXiv PDF",
+    "http_retrieval_verified": true,
+    "registered_sha256_match": true,
+    "registered_file_size_match": true,
+    "registered_page_count_match": true,
+    "visual_pages_checked": [
+      1,
+      2,
+      5,
+      9,
+      15
+    ]
+  },
+  "sections_reviewed": [
+    "Abstract",
+    "1 Introduction",
+    "2 Methods",
+    "2.1 Specifying Parsel Programs",
+    "2.2 Generating Parsel Programs",
+    "2.3 Implementing Parsel Programs",
+    "2.3.2 Searching Over Function Combinations",
+    "3 Experiments",
+    "3.1 Python Code Generation",
+    "3.2 Robotic Planning in VirtualHome",
+    "5 Discussion and Limitations",
+    "6 Conclusion",
+    "Appendix B Limitations",
+    "Appendix E Optimizations",
+    "Appendix F Parsel Pseudocode",
+    "Appendix G Parsel Overview (Detailed)",
+    "Appendix Q Parsel Language Nuances"
+  ],
+  "page_or_section_anchors": [
+    {
+      "pages": "1-2",
+      "sections": "Abstract; 1 Introduction; 2 Methods; Figure 1",
+      "checked_for": "decompose-implement-compose pipeline, modular functions, constraints, SCC factorization"
+    },
+    {
+      "pages": "2-4",
+      "sections": "2.1-2.3.2; Figures 2-3",
+      "checked_for": "Parsel descriptions/references/constraints, candidate generation, DAG and SCC search, missing-constraint handling"
+    },
+    {
+      "pages": "4-7",
+      "sections": "3.1 Python Code Generation; 3.2 Robotic Planning; Figures 4-7",
+      "checked_for": "APPS and HumanEval results, ablation, sample/evaluation budget, VirtualHome executability and human ranking"
+    },
+    {
+      "page": 9,
+      "sections": "5 Discussion and Limitations; 6 Conclusion",
+      "checked_for": "closed-model dependence, language robustness, rate-limit and cost boundaries, claimed scope"
+    },
+    {
+      "pages": "15-16",
+      "sections": "Appendix B Limitations; Appendix C Future Work",
+      "checked_for": "complex-function failures, exponential SCC combinations, test-generation and confidence limitations"
+    },
+    {
+      "pages": "18-20",
+      "sections": "Appendix F Parsel Pseudocode; Appendix G Detailed Overview",
+      "checked_for": "parser, dependency graph, SCC compilation, candidate testing, composition and failure path"
+    },
+    {
+      "pages": "50-51",
+      "sections": "Appendix Q.1-Q.5",
+      "checked_for": "syntax, constraint semantics, headers, repeated decomposition, scoping and target-language-specific execution"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "Parsel represents a complex task as a hierarchy of natural-language function descriptions, references, and executable constraints.",
+      "anchors": "Sections 1-2.1; Appendix Q.1; PDF pages 1-3 and 50"
+    },
+    {
+      "claim": "A code LLM proposes multiple implementations per function and the synthesizer selects compatible combinations by executing constraints, using topological order for acyclic dependencies and joint search within SCCs for recursive dependencies.",
+      "anchors": "Sections 2.3-2.3.2; Appendices F-G; PDF pages 3-4 and 18-20"
+    },
+    {
+      "claim": "On the evaluated competition-level APPS subset, Parsel raises pass rate from the compared 14.5% direct baseline to 25.5%, and an ablation that keeps the high-level plan but emits Python directly drops to 6% on the sampled comparison.",
+      "anchors": "Section 3.1; Figure 4; PDF pages 4-5"
+    },
+    {
+      "claim": "With GPT-4 and generated tests, Parsel reports about 85% HumanEval pass@1 versus the cited 67% state of the art, while generated tests themselves may be wrong and are ranked using CodeT.",
+      "anchors": "Section 3.1; Figure 5; PDF pages 5-6"
+    },
+    {
+      "claim": "The framework's benefits are bounded by code-LLM capability, incomplete or absent constraints, exponential combination growth inside large SCCs, target-language differences, and dependence on mutable closed-model services.",
+      "anchors": "Sections 2.3.2 and 5; Appendix B; Appendix Q.5; PDF pages 4, 9, 15-16, 51"
+    }
+  ],
+  "function_concept_used_by_paper": "A function is a named natural-language description with optional arguments and return variables, references to callable dependencies, multiple target-language implementations, and constraints used to select acceptable implementations.",
+  "representation_or_carrier": {
+    "specification_carrier": "indentation-scoped Parsel text containing descriptions, references, headers, and constraints",
+    "dependency_carrier": "function call graph and derived test-dependency graph partitioned into strongly connected components",
+    "candidate_carrier": "sets of code-LLM-generated function implementation strings",
+    "artifact_carrier": "composed target-language program, including Python, C++, Lean, or VirtualHome-oriented output in the paper's examples"
+  },
+  "specification_language": "Parsel's semi-formal DSL: function-name/argument/optional-return descriptions in natural language, indentation-based scope, explicit references, input-output or language-specific constraints, and optional global headers. Constraint representation and execution are target-language specific.",
+  "compiler_or_generator": {
+    "decomposition_stage": "A human or LLM converts a task or high-level plan into Parsel descriptions and dependencies.",
+    "implementation_stage": "A code LLM samples implementations for each described function using child signatures and descriptions as context.",
+    "synthesis_stage": "The Parsel compiler parses the program, builds dependency/SCC graphs, tests candidate implementation sets, composes solved SCCs, and emits the target program.",
+    "failure_and_extension": "Compilation can fail on an SCC, optionally trigger function infilling or repeated decomposition, or exhaust the candidate/constraint search."
+  },
+  "interpreter_or_runtime": "There is no single Parsel runtime. Candidate constraints and final artifacts are evaluated by target-specific mechanisms: Python assertions/evaluation, compilation and execution for C++, proof checking for Lean, or VirtualHome executability for robotic plans.",
+  "composition_rule": "For acyclic graphs, implement children before parents in post-order. For recursive or mutually dependent functions, jointly sample implementation tuples within each SCC and accept a set satisfying all applicable constraints. Functions lacking local constraints inherit test dependency from constrained parents or use generated tests at the top level.",
+  "state_or_effect_model": "Parsel models call and test dependencies but does not define a general typed state/effect calculus. Side effects, exceptions, timeouts, environmental state, and proof obligations are delegated to the chosen target language and constraint evaluator.",
+  "uncertainty_model": "Uncertainty is operational: sample multiple decompositions and implementations, randomly explore combinations without replacement, measure pass@n times k, and use CodeT scores when tests are generated. This is search under stochastic model outputs, not a calibrated probabilistic or fuzzy program semantics.",
+  "validation_regime": {
+    "local": "function-level input-output constraints or target-language-specific checks",
+    "composed": "constraints on parents or SCCs after candidate functions are linked",
+    "benchmarks": [
+      "competition-level APPS pass rate",
+      "HumanEval pass@1 and pass@any",
+      "VirtualHome executability",
+      "human accuracy and clarity rankings"
+    ],
+    "boundary": "Constraint satisfaction is only as strong as test coverage and correctness; generated tests can be wrong and target-language validators differ."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "constraint-observational substitutability",
+      "support": "SUPPORTED_WITHIN_GIVEN_CONSTRAINTS",
+      "boundary": "Candidate implementations are interchangeable only insofar as the available constraints and dependent functions cannot distinguish them."
+    },
+    {
+      "notion": "composed benchmark behavior",
+      "support": "SUPPORTED_ON_EVALUATED_TASKS",
+      "boundary": "Passing APPS/HumanEval/VirtualHome evaluations does not establish behavior outside those tasks or tests."
+    },
+    {
+      "notion": "formal semantic equivalence",
+      "support": "NOT_SUPPORTED",
+      "boundary": "No general semantics-preservation proof relates descriptions, all candidate implementations, and emitted programs."
+    }
+  ],
+  "lifecycle_and_provenance": "The source provides an arXiv version, public code repository, prompts, hyperparameters, sample budgets, compiled examples, and target-language configuration details. It also implements prompt-response caching for stability. It does not define durable artifact identities, signed provenance, deployed-version monitoring, drift detection, supersession, or retirement in a versioned registry.",
+  "limitations_and_failure_boundaries": [
+    "A function that the underlying code LLM cannot implement remains a failure unless further decomposition makes it simpler.",
+    "Candidate combinations grow exponentially with the largest SCC and can also be costly when constraints are sparse.",
+    "Generated tests may be wrong; assertions cannot determine all semantic properties, and missing constraints allow incorrect implementations to survive.",
+    "Constraint meaning, execution, and prompts vary across target languages, so one validator/compiler contract is not shown to generalize unchanged.",
+    "The strongest reported implementation depends on closed Codex/GPT-4 services whose behavior, availability, price, and rate limits can change; the tested 2.7B CodeGen model solved none of 25 sampled APPS problems.",
+    "The APPS evaluation does not cover real programs with thousands of lines, which the paper identifies as a missing benchmark.",
+    "VirtualHome executability is easier to test than task correctness; correctness relied on a small human-ranking study and did not assert subsequent world-state relations."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove that satisfying finite constraints makes an implementation semantically equivalent to its natural-language description.",
+    "It does not provide a universal interpreter, typed effect system, permission model, rollback protocol, execution-trace schema, or versioned artifact registry.",
+    "It does not establish that combinatorial composition remains tractable for arbitrarily large SCCs or weakly constrained programs.",
+    "It does not validate the point architecture as a whole, freeze a Function OS, or turn benchmark improvements into mathematical proof or production reliability."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "The paper directly distinguishes semi-formal descriptions, dependency graphs/SCCs, candidate implementations, constraints, and emitted target artifacts."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "It gives a concrete staged compiler/synthesizer and explicitly separates target-specific execution or proof checking from compilation."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Executable constraints act as behavioral contracts, but there is no general pre/postcondition type system or effect algebra."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "DAG/SCC decomposition, dependency-aware synthesis, candidate combination, and constraint-based selection directly support bounded composition; runtime routing and fallback policy remain absent."
+    },
+    "GAP-019": {
+      "status": "CONFIRMED",
+      "reason": "Constraint execution and benchmark tests are explicit behavioral acceptance mechanisms, with clear evidence that their equivalence reach is finite and test-relative."
+    },
+    "GAP-020": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Sampling and caching do not amount to lifecycle/provenance governance or probabilistic/fuzzy semantics."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Parsel descriptions, signatures, references, and constraints form an explicit function specification surface."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "The Parsel program, dependency/SCC graphs, candidate sets, and target program are distinct representations."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "The parser, graph builder, code-LLM generator, SCC solver, tester, and composer form a concrete compiler/synthesizer pipeline."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Candidate functions and composed programs are artifacts, but durable identity, packaging, signing, and version semantics are absent."
+    },
+    "N5_Interpreter": {
+      "status": "PARTIAL",
+      "reason": "Execution is explicitly delegated to Python/C++/Lean/VirtualHome-specific evaluators; a common interpreter boundary is implied but not specified."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Test outcomes and failures are used internally, but no first-class persistent execution-trace object is defined."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Constraints, generated tests, target evaluators, benchmark tests, and human plan judgments provide direct bounded validation evidence."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Dependency/SCC ordering and combinatorial candidate selection directly support the Composer portion; this does not confirm a general runtime Router."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Caching improves repeated generation stability but is not a versioned registry or lifecycle state machine."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "PARTIAL",
+    "verdict": "CORRECT",
+    "corrections": [
+      "The prior provisional card incorrectly lists the authors as 'Jain, N., et al.'; the PDF names Eric Zelikman, Qian Huang, Gabriel Poesia, Noah D. Goodman, and Nick Haber.",
+      "The verified section structure is substantially more detailed than the provisional six-section summary and includes extensive appendices on pseudocode, limitations, examples, and language nuances.",
+      "The source directly supports a narrowly stated compiler-composer-validator projection strongly enough for CONFIRMED, while formal equivalence and lifecycle claims remain unsupported."
+    ],
+    "prior_card_superseded": true
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "Parsel provides direct implemented and evaluated evidence that hierarchical natural-language function specifications can be compiled into dependency-aware candidate implementations, composed by DAG/SCC structure, and selected with executable constraints across several target domains.",
+  "source_specific_reasoning": "Parsel exposes more of the candidate Function OS pipeline than a generic code-generation benchmark: FunctionSpec is a real DSL surface, Representation includes dependency/SCC graphs and candidate sets, Compiler performs LLM generation plus constrained graph synthesis, Composer combines implementations, and Validator executes language-specific constraints. The confirmation must remain test-relative and system-specific. The same paper supplies decisive boundaries: constraints can be absent or wrong, SCC search is exponential, target evaluators differ, and closed-model drift undermines reproducibility. Thus it confirms a bounded architecture projection but not formal equivalence, general routing, lifecycle governance, or a frozen Function OS.",
+  "projection_boundary": "All GAP and Function OS impacts are 121CX projections from the paper's bounded implementation and experiments. They are not claims made by the authors about the point project and are not proof, causal identification, production validation, or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T04:12:29Z"
+}
