@@ -19,3 +19,6 @@
 {"step": 18, "action": "N9_SYNTHESIS", "result": "status=SUPPORTED_CANDIDATE", "timestamp": "2026-07-14T17:57:23Z"}
 {"step": 19, "action": "CROSS_NODE_COMPOSITION", "result": "Min closed loop PARTIALLY FEASIBLE, 3 missing interfaces, 3 non-observable states", "timestamp": "2026-07-14T17:57:51Z"}
 {"step": 20, "action": "ASSET_INVENTORY", "result": "35 assets normalized, all unique", "timestamp": "2026-07-14T17:58:10Z"}
+{"step": 21, "action": "ASSET_MAPPING_BATCH_1", "result": "12 assets mapped", "timestamp": "2026-07-14T17:58:50Z"}
+{"step": 22, "action": "ASSET_MAPPING_BATCH_2", "result": "12 assets mapped", "timestamp": "2026-07-14T17:58:50Z"}
+{"step": 23, "action": "ASSET_MAPPING_BATCH_3", "result": "11 assets mapped", "timestamp": "2026-07-14T17:58:50Z"}

@@ -1,0 +1,261 @@
+{
+  "step": 22,
+  "batch": "013-024",
+  "count": 12,
+  "mappings": [
+    {
+      "asset_id": "IGN-ASSET-013",
+      "canonical_name": "0007-A6-H(t,L) 遮蔽函数(双源).md",
+      "path": "统一函数总表/0007-A6-H(t,L) 遮蔽函数(双源).md",
+      "type": "unknown",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 13/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-014",
+      "canonical_name": "0008-A7-退出权信号.md",
+      "path": "统一函数总表/0008-A7-退出权信号.md",
+      "type": "unknown",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 14/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-015",
+      "canonical_name": "0009-A8-dim(t,L) 决策维度.md",
+      "path": "统一函数总表/0009-A8-dim(t,L) 决策维度.md",
+      "type": "unknown",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 15/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-016",
+      "canonical_name": "0010-A9-P_exit(t,L,C) 退出概率.md",
+      "path": "统一函数总表/0010-A9-P_exit(t,L,C) 退出概率.md",
+      "type": "unknown",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 16/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-017",
+      "canonical_name": "0011-T1-点火充要条件.md",
+      "path": "统一函数总表/0011-T1-点火充要条件.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 17/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-018",
+      "canonical_name": "0012-T2-乘法归零律.md",
+      "path": "统一函数总表/0012-T2-乘法归零律.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 18/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-019",
+      "canonical_name": "0013-T3-ε双向动力学.md",
+      "path": "统一函数总表/0013-T3-ε双向动力学.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 19/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-020",
+      "canonical_name": "0014-T4-乘法对称变换.md",
+      "path": "统一函数总表/0014-T4-乘法对称变换.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 20/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-021",
+      "canonical_name": "0015-T5-凯利公式认知边界.md",
+      "path": "统一函数总表/0015-T5-凯利公式认知边界.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 21/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-022",
+      "canonical_name": "0016-T6-自举激活条件.md",
+      "path": "统一函数总表/0016-T6-自举激活条件.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-015"
+      ],
+      "mapped_nodes": [
+        "N1",
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Bootstrap function specification — defines convergence criteria",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "HIGH",
+      "implementation_risk": "LOW",
+      "notes": "Asset 22/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-023",
+      "canonical_name": "0017-T7-好奇心驱动函数.md",
+      "path": "统一函数总表/0017-T7-好奇心驱动函数.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 23/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-024",
+      "canonical_name": "0018-T8-ε相变级联.md",
+      "path": "统一函数总表/0018-T8-ε相变级联.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 24/35. Markdown specification, not executable."
+    }
+  ],
+  "timestamp": "2026-07-14T17:58:50Z"
+}
