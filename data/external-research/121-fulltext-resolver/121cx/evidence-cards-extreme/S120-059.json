@@ -1,0 +1,263 @@
+{
+  "source_id": "S120-059",
+  "canonical_title": "Semantics for probabilistic programming: higher-order functions, continuous distributions, and soft constraints",
+  "authors": [
+    "Sam Staton",
+    "Hongseok Yang",
+    "Chris Heunen",
+    "Ohad Kammar",
+    "Frank Wood"
+  ],
+  "year": 2016,
+  "version": "hash-matched 2016-01-18 author manuscript plus arXiv v3 dated 2016-05-05",
+  "doi_or_identifier": "10.1145/2933575.2935313",
+  "identifier": "DOI:10.1145/2933575.2935313; arXiv:1601.04943v3; LICS 2016, pp. 525-534",
+  "url": "https://www.cs.ubc.ca/~fwood/papers/staton2016semanticslics.pdf",
+  "source_family": 9,
+  "source_family_name": "probabilistic programming and stochastic semantics",
+  "license": "author manuscript is openly accessible; arXiv uses its non-exclusive distribution license; no accompanying executable artifact license applies",
+  "sha256": "53944dc3679fef85e3c3674439bf7adf49d96ca8d92deae523402943e289239e",
+  "file_size_bytes": 373091,
+  "page_count": 10,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "registered_pdf_date": "2016-01-18",
+    "registered_pdf_visual_check": "all 10 pages rendered and inspected for layout, formulas, theorem blocks and references",
+    "latest_author_version": {
+      "url": "https://arxiv.org/pdf/1601.04943",
+      "version": "v3",
+      "date": "2016-05-05",
+      "sha256": "61f8aea6a49e008a7147681f7e165dc44c8f729f4e8069bf7c4b0318c20c03ac",
+      "file_size_bytes": 248646,
+      "page_count": 10,
+      "source_package_reviewed": true,
+      "reviewed_for": "formal definitions, assumptions, theorem boundaries, SMC correction, density limitations and future-work statements"
+    },
+    "bibliographic_correction": {
+      "registry_doi": "10.1145/2933575.2933579",
+      "correct_doi": "10.1145/2933575.2935313",
+      "verification": "Crossref assigns 2935313 to this paper at pages 525-534; 2933579 identifies Invisible Pushdown Languages at pages 867-872"
+    },
+    "code_or_data_artifact": "none identified or claimed by the paper; arXiv supplies manuscript source only"
+  },
+  "sections_reviewed": [
+    "motivation and exact-semantics objective for expressive probabilistic programming",
+    "measure-theoretic preliminaries and stochastic relations",
+    "first-order deterministic/probabilistic typing and sample, score and norm constructs",
+    "denotational semantics over probability measures of score-result pairs",
+    "normalization, model evidence and program equations including the SMC transformation",
+    "configuration-space operational semantics for discrete and continuous sampling",
+    "termination, soundness, adequacy and perfect-normalization assumption",
+    "higher-order functions, thunks, operational restriction and logical-relations termination",
+    "functor-category denotational semantics, lifted probability monads and first-order conservativity",
+    "continuous density types, soft constraints and importance-sampling equation",
+    "conclusion, omitted features and future correctness work"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "Abstract and section 1, pp. 1-2",
+      "checked_for": "scope, idealized-Anglican positioning, exact-semantics objective and claimed applications"
+    },
+    {
+      "anchors": "sections 2-3, pp. 2-3",
+      "checked_for": "measurable spaces, stochastic relations, typing, score semantics, nesting and normalization errors"
+    },
+    {
+      "anchors": "section 4 and section 4.1, pp. 3-4",
+      "checked_for": "score-result measure monad, evidence normalization, compiler equations and corrected SMC transform"
+    },
+    {
+      "anchors": "section 5, pp. 4-7, Propositions 5.3, 5.5, 5.6 and 5.9",
+      "checked_for": "measurable reduction, stochastic transition, termination, perfect normalization, soundness and adequacy"
+    },
+    {
+      "anchors": "sections 6-7, pp. 7-8, Assumption 7.1 and Proposition 7.2",
+      "checked_for": "function/thunk types, higher-order operational restriction and recursion-free termination"
+    },
+    {
+      "anchors": "section 8, pp. 8-9, Lemmas 8.1-8.2 and Propositions 8.3, 8.5-8.6",
+      "checked_for": "functor-category carrier, lifted probability, conservativity, countable reachability and higher-order soundness"
+    },
+    {
+      "anchors": "sections 9-10, pp. 9-10",
+      "checked_for": "continuous-density restriction, importance sampling, unsupported features and future inference-algorithm proofs"
+    },
+    {
+      "anchors": "arXiv v3 source files fo-densem.tex, fo-opsem.tex, ho-opsem.tex, ho-densem.tex, density.tex and future.tex",
+      "checked_for": "formula-level qualification and differences from the registered January manuscript"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "The idealized probabilistic metalanguage has denotational semantics for score-result probability measures and measurable configuration-based operational semantics for continuous sampling.",
+      "anchors": "sections 3-5"
+    },
+    {
+      "claim": "Within the recursion-free language and a perfect normalization assumption, deterministic evaluation is total, probabilistic evaluation is stochastic, and denotational semantics is sound and adequate for operational evaluation.",
+      "anchors": "Proposition 5.6, Assumption 5.7, Proposition 5.9 and adequacy paragraph"
+    },
+    {
+      "claim": "A countable-product-preserving functor category supplies function spaces unavailable in ordinary measurable spaces, lifts probability monads and conservatively extends first-order semantics.",
+      "anchors": "section 8, Lemmas 8.1-8.2 and Proposition 8.3"
+    },
+    {
+      "claim": "The semantics validates a corrected normalize-resample program equation used by sequential Monte Carlo and an importance-sampling equation for continuous densities.",
+      "anchors": "sections 4.1 and 9 in arXiv v3"
+    },
+    {
+      "claim": "Continuous density types support score-based soft constraints when densities are continuous relative to chosen sigma-finite base measures, while normalized measures need not themselves have continuous densities.",
+      "anchors": "section 9"
+    }
+  ],
+  "function_concept_used_by_paper": "A deterministic function is a measurable map at first order and a natural transformation in the higher-order functor model. A probabilistic function is a Kleisli arrow whose result is a probability measure over nonnegative score-result pairs. Higher-order probabilistic programs are suspended by T(A), and distributions over functions are represented indirectly by probability distributions over measurable codes rather than a measurable function space.",
+  "representation_or_carrier": "First-order carriers are measurable spaces, probability spaces P(A), products and countable sums. Operational carriers are measurable spaces of closures/configurations with stochastic transition relations and accumulated scores. Higher-order carriers are countable-product-preserving functors Meas-op to Set, with Yoneda embeddings and lifted Giry/score monads. Continuous likelihoods use normalized continuous density functions over separable metrizable spaces with selected sigma-finite base measures.",
+  "specification_language": "The metalanguage separates deterministic and probabilistic typing judgments and provides return/let, products, countable sums, measurable constants, sample, score and norm; the higher-order extension adds functions, thunks and force, and density types specify continuous likelihoods. It deliberately includes constants for every measurable function and infinitary forms, so it is a mathematical compiler target rather than an implementable user language. It specifies probabilistic effects and evidence errors but not general pre/postconditions, resources, security, concurrency or lifecycle policies.",
+  "compiler_or_generator": "No compiler or code generator is implemented. The authors position the calculus as a semantic target for practical languages and use denotational equality to justify compiler optimizations, a normalize-resample SMC transformation and importance sampling. These are equation-level correctness results under semantic assumptions, not a verified compilation pipeline or a proof of an entire inference implementation.",
+  "interpreter_or_runtime": "The paper defines a formal small-step runtime over measurable closures: deterministic reductions are functions, probabilistic reductions are stochastic relations, score multiplies accumulated weight, sample branches by a distribution and norm invokes an abstract perfect normalizer. There is no executable interpreter, sampler, numerical backend or empirical runtime. Exact norm is semantic; it must not be read as an available finite Monte Carlo procedure.",
+  "composition_rule": "Return/let compose through the commutative monad P(R>=0 x -), multiplying scores and integrating over intermediate results. Stochastic relations compose by integration. At higher order, lifted monads, Cartesian closure, lambda/application and thunk/force compose functions and probabilistic computations. The SMC equation inserts normalization, evidence scoring and resampling at a top-level score, reverting to the original term for infinite evidence in v3. General normalization is not a monad morphism, because Fubini fails for all measures.",
+  "state_or_effect_model": "The explicit effects are random sampling, soft conditioning by nonnegative multiplicative scores and normalization/nested query. Operational configurations hold environments that act as dynamically allocated read-only cells; probability and score are tracked through stochastic transitions. Recursion, mutation, external I/O, concurrency, resource use, distribution over higher-order values in the operational model and measure-zero conditioning are outside the proven system.",
+  "uncertainty_model": "Uncertainty is measure-theoretic: probability measures, stochastic relations, continuous densities, evidence integrals and posterior normalization. The semantics tracks zero and infinite evidence as distinct errors. It is exact and extensional, not a calibrated finite-computation uncertainty analysis: it supplies no Monte Carlo error, convergence rate, effective sample size, mixing, numerical stability or approximation certificate. Expected termination steps can be infinite even though evaluation terminates almost surely in the recursion-free calculus.",
+  "validation_regime": {
+    "formal": "measure-theoretic definitions, operational and denotational models, theorem/proof sketches for measurability, termination, soundness, adequacy, higher-order conservativity and program equations",
+    "implementation": "none; arXiv manuscript source was inspected but is not an executable semantics artifact",
+    "benchmarks": "none",
+    "reported_result": "The paper proves bounded semantic relationships and demonstrates equations; it reports no runtime, accuracy, convergence or empirical comparison.",
+    "boundary": "First-order soundness assumes perfect normalization; higher-order operational soundness forbids sampling distributions over non-measurable higher-order types; termination omits recursion; densities are continuous; practical inference correctness is explicitly future work."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "denotational equality",
+      "support": "PROGRAM_TERMS_ARE_EQUAL_WHEN_THEIR_MEASURABLE_OR_NATURAL_TRANSFORMATION_DENOTATIONS_COINCIDE",
+      "boundary": "The paper validates selected equations but gives no decidable or automated equivalence checker."
+    },
+    {
+      "notion": "operational-denotational correspondence",
+      "support": "DENOTATION_EQUALS_THE_PUSHFORWARD_OF_THE_OPERATIONAL_EVALUATION_MEASURE",
+      "boundary": "Conditional on termination and the abstract perfect-normalization assumption."
+    },
+    {
+      "notion": "higher-order conservativity",
+      "support": "FIRST_ORDER_EQUALITY_IS_PRESERVED_AND_EVERY_FIRST_ORDER_RESULT_HAS_A_FIRST_ORDER_REPRESENTATIVE",
+      "boundary": "Applies to the paper's recursion-free calculus and does not yield a source-language normalization algorithm."
+    },
+    {
+      "notion": "SMC transformation equality",
+      "support": "NORMALIZE_SCORE_THEN_RESAMPLE_HAS_THE_SAME_DENOTATION_WITH_ZERO_AND_INFINITE_EVIDENCE_CASES_HANDLED",
+      "boundary": "A single semantic program equation, not a proof of particle convergence, estimator variance or a concrete SMC engine."
+    },
+    {
+      "notion": "importance-sampling equality",
+      "support": "SAMPLING_FROM_A_TARGET_DENSITY_EQUALS_PROPOSAL_SAMPLING_WITH_DENSITY_RATIO_SCORING_AND_NORMALIZATION",
+      "boundary": "Requires a proposal with full support and continuous normalized densities relative to the selected base measure."
+    }
+  ],
+  "lifecycle_and_provenance": "The paper has a corrected ACM DOI, LICS pagination, an openly accessible January author manuscript and a May arXiv v3 with source. The registry DOI is wrong and names another paper. The v3 text repairs the infinite-evidence branch of the SMC equation by undoing the transformation; this review therefore records both the hash-matched registry file and the later authoritative correction. No code, data, immutable executable artifact, test suite, signed paper-source manifest, release tag, CI receipt, dependency lock, compatibility policy, revalidation cadence, supersession map or retirement policy is supplied.",
+  "limitations_and_failure_boundaries": [
+    "The calculus is intentionally an idealized semantic metalanguage, not a useful or implemented programming language; it admits all measurable functions as constants and countable infinitary constructs.",
+    "Termination is obtained by omitting recursion. Each probabilistic branch terminates, but the expected number of evaluation steps may still be infinite.",
+    "First-order operational soundness assumes a perfect normalization operation corresponding exactly to the denotational evidence/posterior function; no computable implementation is provided.",
+    "The higher-order operational semantics forbids P(A) when A is not a measurable first-order type, so it does not operationally sample arbitrary distributions over functions even though the denotational functor model represents them.",
+    "The category of ordinary measurable spaces is not Cartesian closed; the functor-category construction solves the semantic carrier problem but adds a nontrivial abstraction gap to practical runtimes.",
+    "The continuous-density extension requires continuity and chosen sigma-finite base measures. Norm may produce singular or discontinuous measures such as a Dirac measure.",
+    "Measure-zero conditioning, disintegration, recursion, memoization and exchangeability are named as future work rather than solved features.",
+    "Normalization is not a monad morphism and a commutative monad of all measures is unavailable because the Fubini property fails in general.",
+    "The SMC result validates a normalize-resample equation but does not prove a complete inference algorithm, asymptotic convergence, finite-particle accuracy, variance, mixing or numerical behavior; the conclusion calls inference-algorithm correctness future work.",
+    "The January manuscript's infinite-evidence SMC branch was revised in arXiv v3; relying only on the registered hash would preserve a superseded equation.",
+    "There is no implementation or empirical evaluation, so transfer from formal definitions to Anglican, Church, Venture or any concrete runtime is unverified.",
+    "The work does not connect stochastic semantics to neural weight-space composition, ignition epsilon, the frozen Psi_0 formalization, distributed execution or governed function registries."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not provide an executable probabilistic programming system, verified compiler, concrete exact normalizer or reproducible inference benchmark.",
+    "It does not prove that practical SMC, importance sampling or other Monte Carlo implementations converge or meet finite-sample accuracy targets.",
+    "It does not support recursion, arbitrary function-valued sampling in the operational model, discontinuous density types or measure-zero conditioning.",
+    "It does not offer an automatic program-equivalence checker, general effect system, artifact registry, lifecycle governance or execution-certificate format.",
+    "It does not make ignition's epsilon stochastic, define its law, validate a neural composition rule or empirically validate any ignition claim."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Typed deterministic/probabilistic terms and score/norm contracts give a precise probabilistic specification language but not arbitrary function contracts or governance constraints."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "Semantic equations justify bounded transformations and the calculus is a compiler target, but no compiler, generator or neural composition transform is supplied."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Denotational equality, adequacy and conservativity define strong equivalence notions without an automated decision or validation procedure."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "Sampling, scoring, normalization and probabilistic sequencing are explicit compositional effects with formal operational and denotational treatment."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Formal proofs validate the idealized semantics, but important assumptions, proof sketches and the absence of implementation or experiments prevent artifact-level validation."
+    },
+    "GAP-020": {
+      "status": "CONFIRMED",
+      "reason": "The paper directly supplies a rigorous bounded stochastic-function foundation spanning continuous distributions, soft constraints, higher-order functions and inference-related program equations."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "The typed metalanguage precisely specifies deterministic and probabilistic computations, distributions, scores and normalization."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Measurable spaces, stochastic configurations, score-result measures, functors, lifted monads and density spaces are explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "The calculus is positioned as a compiler target and validates selected transformations, but there is no implemented or end-to-end verified compiler."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Stable manuscripts and TeX source exist without executable semantics, code, tests, data or a paper-bound release."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "A detailed stochastic operational semantics interprets sample, score, norm, functions and thunks, although it is mathematical rather than executable."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Configurations, environments, scores and stochastic reductions expose execution state, but the paper defines no durable trace artifact or replay ledger."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Soundness, adequacy, termination, conservativity and program equations form a strong formal validator layer within stated assumptions."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Monadic sequencing, stochastic-relation composition, higher-order application, normalization and resampling compose probabilistic functions."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "DOI and arXiv versioning exist, but the source registry contains a wrong DOI and there is no executable lineage, compatibility, health or retirement governance."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "PARTIAL",
+    "verdict": "ACCEPTED_WITH_BIBLIOGRAPHIC_SCOPE_ASSUMPTION_AND_INFERENCE_CORRECTIONS_TO_CONFIRMED_BOUNDED_SUPPORT",
+    "corrections": [
+      "Corrected the DOI from 10.1145/2933575.2933579, which belongs to a different LICS paper, to 10.1145/2933575.2935313.",
+      "Compared the registered January manuscript with arXiv v3 and adopted the corrected infinite-evidence SMC branch.",
+      "Separated exact denotational normalization and an equation used by SMC from implementation or convergence claims; full inference-algorithm correctness is future work.",
+      "Made perfect normalization, recursion omission, higher-order sampling restriction, density continuity and proposal-support requirements explicit.",
+      "Replaced generic section labels with the paper's actual sections 2-9 and theorem-level anchors.",
+      "Recorded the absence of executable artifacts, empirical evaluation, finite-computation uncertainty and lifecycle governance."
+    ],
+    "prior_card_superseded": true
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "This source directly confirms a bounded probabilistic FunctionSpec, semantic Representation, formal Interpreter, Validator and ComposerRouter, with strong support for GAP-018 and GAP-020. Compiler, Artifact, ExecutionTrace and VersionedRegistry closure remain partial. No theorem transfers automatically to concrete inference engines, neural weight composition or ignition's epsilon.",
+  "source_specific_reasoning": "CONFIRMED is justified for the bounded semantic architecture because the paper constructs operational and denotational models for continuous, scored, higher-order probabilistic programs and proves their correspondence while validating precise program equations. Extreme review narrows that confirmation to the recursion-free idealized calculus, exact perfect normalization, the operational restriction on distributions over higher-order values and continuous density assumptions. It also distinguishes a semantic SMC equation from algorithmic convergence, corrects the registry DOI, uses the v3 repair for infinite evidence and records the absence of code or empirical validation.",
+  "projection_boundary": "These are 121CX projections from the exact hash-matched 10-page registered manuscript, the complete arXiv v3 PDF and its source package. Formal results are proof-backed only inside the stated calculus and assumptions. This model review is not proof that any concrete PPL or inference engine is correct and is not empirical validation of ignition.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T06:27:58Z"
+}
