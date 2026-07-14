@@ -1,6 +1,6 @@
 {
   "source_id": "S120-045",
-  "cx_step": 110,
+  "cx_step": 108,
   "step_number": 110,
   "_acceptance_layer": "121q2/acceptance/S120-045.json — overlay",
   "canonical_title": "Editing Models with Task Arithmetic",
@@ -151,5 +151,7 @@
   "reviewed_by_model": "qclaw/pool-glm-5.2-night",
   "reasoning_level": "high",
   "reviewed_at": "2026-07-14T16:42:51Z",
-  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714"
+  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714",
+  "cx_step_reconciled_from": 110,
+  "reconciliation_note": "CX step corrected from 110 to 108 per 121Q2R Step 001 canonical queue reconciliation."
 }

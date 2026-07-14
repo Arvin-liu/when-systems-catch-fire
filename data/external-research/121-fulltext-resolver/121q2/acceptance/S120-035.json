@@ -1,6 +1,6 @@
 {
   "source_id": "S120-035",
-  "cx_step": 107,
+  "cx_step": 106,
   "step_number": 107,
   "_acceptance_layer": "121q2/acceptance/S120-035.json — overlay",
   "canonical_title": "LoRA: Low-Rank Adaptation of Large Language Models",
@@ -156,5 +156,7 @@
   "reviewed_by_model": "qclaw/pool-glm-5.2-night",
   "reasoning_level": "high",
   "reviewed_at": "2026-07-14T16:37:14Z",
-  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714"
+  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714",
+  "cx_step_reconciled_from": 107,
+  "reconciliation_note": "CX step corrected from 107 to 106 per 121Q2R Step 001 canonical queue reconciliation."
 }

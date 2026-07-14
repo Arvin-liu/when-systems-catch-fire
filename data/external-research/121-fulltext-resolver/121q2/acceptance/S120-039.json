@@ -1,6 +1,6 @@
 {
   "source_id": "S120-039",
-  "cx_step": 109,
+  "cx_step": 107,
   "step_number": 109,
   "_acceptance_layer": "121q2/acceptance/S120-039.json — overlay",
   "canonical_title": "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy Without Increasing Inference Time",
@@ -148,5 +148,7 @@
   "reviewed_by_model": "qclaw/pool-glm-5.2-night",
   "reasoning_level": "high",
   "reviewed_at": "2026-07-14T16:40:15Z",
-  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714"
+  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714",
+  "cx_step_reconciled_from": 109,
+  "reconciliation_note": "CX step corrected from 109 to 107 per 121Q2R Step 001 canonical queue reconciliation."
 }

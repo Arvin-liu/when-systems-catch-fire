@@ -1,36 +1,103 @@
 {
-  "step": 0,
-  "action": "HEAD_VERIFICATION_AND_PR_CREATION",
-  "timestamp": "2026-07-14T16:53:33Z",
-  "expected_head": "fae8241cfc4035b411bc71305a10650edea3181c",
-  "actual_head": "fae8241cfc4035b411bc71305a10650edea3181c",
-  "head_match": true,
-  "baseline": "5229e224eb500daaf4411e072c15f973e502117a",
-  "ahead_by": 11,
-  "behind_by": 0,
-  "all_commits_pushed": true,
-  "draft_pr": {
-    "pr_number": 35,
-    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/35",
-    "state": "OPEN",
-    "is_draft": true,
-    "head": "records/ignition-121q2-night-acceptance-family-synthesis-20260714",
-    "base": "records/ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714"
-  },
-  "commit_log": [
-    "4a67544 121Q2 Step 000: baseline verification and branch setup",
-    "4b8d78d 121Q2 Step 001: 121Q1 repair re-verification — ALL CHECKS PASSED",
-    "5700b04 121Q2 Step 002: CX Step 102 S120-017 acceptance review (LaSynth @ NeurIPS 2021)",
-    "becf19e 121Q2 Step 003: CX Step 103 S120-018 acceptance review (SPoC @ NeurIPS 2019)",
-    "0c3d8fd 121Q2 Step 004: CX Step 104 S120-021 acceptance review (EG-CFG @ NeurIPS 2025)",
-    "f4308a0 121Q2 Step 005: CX Step 105 S120-030 acceptance review (FNO @ ICLR 2021)",
-    "a6da4a7 121Q2 Step 006: CX Step 106 S120-033 carried forward (BLOCKED — not a real paper)",
-    "e6bd067 121Q2 Step 007: CX Step 107 S120-035 acceptance review (LoRA @ ICLR 2022)",
-    "3acac85 121Q2 Step 008: CX Step 108 S120-036 acceptance review (Task-Aware LoRA Composition)",
-    "e1142ff 121Q2 Step 009: CX Step 109 S120-039 acceptance review (Model Soups @ ICML 2022)",
-    "fae8241 121Q2 Step 010: CX Step 110 S120-045 acceptance review (Task Arithmetic @ ICLR 2023)"
+  "step": 1,
+  "action": "CANONICAL_QUEUE_RECONCILIATION",
+  "timestamp": "2026-07-14T16:55:50Z",
+  "canonical_22_ordered_source_ids": [
+    "S120-001",
+    "S120-002",
+    "S120-003",
+    "S120-004",
+    "S120-005",
+    "S120-007",
+    "S120-008",
+    "S120-009",
+    "S120-010",
+    "S120-011",
+    "S120-012",
+    "S120-014",
+    "S120-015",
+    "S120-017",
+    "S120-018",
+    "S120-021",
+    "S120-030",
+    "S120-035",
+    "S120-039",
+    "S120-045",
+    "S120-047",
+    "S120-053"
   ],
-  "deviation_acknowledged": true,
-  "deviation_summary": "Steps 002-010 deviated from canonical Phase 2 prior-review queue: S120-033 and S120-036 were incorrectly inserted as CX 106 and CX 108; S120-035/039/045 CX step numbers were shifted accordingly. Reconciliation will be performed in Step 001.",
-  "next_step": "Step 001: Canonical queue reconciliation"
+  "canonical_cx_step_mapping": {
+    "S120-001": "CX 88 (121CX)",
+    "S120-002": "CX 89 (121CX)",
+    "S120-003": "CX 90 (121CX)",
+    "S120-004": "CX 91 (121CX)",
+    "S120-005": "CX 92 (121CX)",
+    "S120-007": "CX 93 (121CX)",
+    "S120-008": "CX 94 (121CX)",
+    "S120-009": "CX 95 (121CX)",
+    "S120-010": "CX 96-97 (121CX, with correction)",
+    "S120-011": "CX 98 (121Q1)",
+    "S120-012": "CX 99 (121Q1)",
+    "S120-014": "CX 100 (121Q1)",
+    "S120-015": "CX 101 (121Q1)",
+    "S120-017": "CX 102 (121Q2)",
+    "S120-018": "CX 103 (121Q2)",
+    "S120-021": "CX 104 (121Q2)",
+    "S120-030": "CX 105 (121Q2)",
+    "S120-035": "CX 106 (121Q2, reconciled from 107)",
+    "S120-039": "CX 107 (121Q2, reconciled from 109)",
+    "S120-045": "CX 108 (121Q2, reconciled from 110)",
+    "S120-047": "CX 109 (pending)",
+    "S120-053": "CX 110 (pending)"
+  },
+  "supplemental_overlay_sources": {
+    "S120-033": {
+      "canonical_phase2_member": false,
+      "reason": "Not in the 22 prior-review ordered source IDs. Emergent Mind topic page misrecorded as paper.",
+      "original_121q2_step": 6,
+      "original_cx_step_assigned": 106,
+      "corrected_cx_step": null,
+      "preserved_as": "supplemental/S120-033.json"
+    },
+    "S120-036": {
+      "canonical_phase2_member": false,
+      "reason": "Not in the 22 prior-review ordered source IDs. Task-Aware LoRA Adapter Composition (arXiv:2602.21222).",
+      "original_121q2_step": 8,
+      "original_cx_step_assigned": 108,
+      "corrected_cx_step": null,
+      "preserved_as": "supplemental/S120-036.json"
+    }
+  },
+  "cx_step_corrections": [
+    {
+      "source_id": "S120-035",
+      "old_cx_step": 107,
+      "new_cx_step": 106,
+      "reason": "Queue drift from S120-033 insertion"
+    },
+    {
+      "source_id": "S120-039",
+      "old_cx_step": 109,
+      "new_cx_step": 107,
+      "reason": "Queue drift from S120-033 and S120-036 insertions"
+    },
+    {
+      "source_id": "S120-045",
+      "old_cx_step": 110,
+      "new_cx_step": 108,
+      "reason": "Queue drift from S120-033 and S120-036 insertions"
+    }
+  ],
+  "canonical_completion_count": {
+    "121CX_completed": 9,
+    "121Q1_completed": 4,
+    "121Q2_completed": 7,
+    "total_completed": 20,
+    "remaining": 2,
+    "total": 22
+  },
+  "next_canonical_cx_step": 109,
+  "next_source_id": "S120-047",
+  "audit_history_preserved": true,
+  "note": "Old 121Q2 step ledger entries with incorrect CX steps are preserved as historical entries. Reconciliation entries are appended, not substituted."
 }

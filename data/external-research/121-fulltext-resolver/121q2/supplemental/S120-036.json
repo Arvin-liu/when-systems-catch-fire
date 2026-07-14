@@ -1,0 +1,161 @@
+{
+  "source_id": "S120-036",
+  "cx_step": null,
+  "step_number": 108,
+  "_acceptance_layer": "121q2/acceptance/S120-036.json — overlay",
+  "canonical_title": "Task-Aware LoRA Adapter Composition via Similarity Retrieval in Vector Databases",
+  "authors": "Riya Adsul, Balachandra Devarangadi, Isha Nalawade, Sudharshan Govindan (UMass)",
+  "year": 2026,
+  "venue": "arXiv preprint (Feb 2026)",
+  "doi_or_identifier": "arXiv:2602.21222v1",
+  "prior_identity": {
+    "title": "Task-Aware LoRA Adapter Composition via Similarity Retrieval in Vector Databases (CORRECT)",
+    "authors": "Anonymous (CORRECTED — actual authors identified)",
+    "year": 2026,
+    "venue": "arXiv preprint (CORRECT)",
+    "doi_or_identifier": "arXiv:2602.21222 (CORRECT)",
+    "sha256": "pending",
+    "file_size_bytes": 464296
+  },
+  "corrected_identity": {
+    "title": "Task-Aware LoRA Adapter Composition via Similarity Retrieval in Vector Databases",
+    "authors": "Riya Adsul, Balachandra Devarangadi, Isha Nalawade, Sudharshan Govindan (University of Massachusetts)",
+    "year": 2026,
+    "venue": "arXiv:2602.21222v1 [cs.CL] 1 Feb 2026",
+    "exact_fulltext_used": "arXiv PDF, SHA256: 931d8dad4e885fd27bfe053bb823b82fd07ff90d74cc291dd1ad1d840295b175",
+    "url": "https://arxiv.org/pdf/2602.21222"
+  },
+  "identity_status": "VERIFIED",
+  "identity_corrections": [
+    "Authors: evidence-card had 'Anonymous' → actual: Adsul et al. (UMass). All other fields correct."
+  ],
+  "url": "https://arxiv.org/pdf/2602.21222",
+  "access_url": "https://arxiv.org/pdf/2602.21222",
+  "access_time_utc": "2026-07-14T16:38:45Z",
+  "file_sha256": "931d8dad4e885fd27bfe053bb823b82fd07ff90d74cc291dd1ad1d840295b175",
+  "file_size_bytes": 464296,
+  "page_count": 12,
+  "content_type": "application/pdf",
+  "sections": [
+    "1 Abstract",
+    "2 Introduction",
+    "3 Related Work (PEFT, LoRA composition, retrieval-based routing)",
+    "4 Methodology (datasets, pre-processing, vector DB construction, retrieval, merging strategies)",
+    "5 Results (Linear, Concatenation, TIES, Magnitude Prune)",
+    "6 Conclusion"
+  ],
+  "abstract_snippet": "We present a framework for dynamic LoRA adapter composition that leverages similarity retrieval in vector databases to enable zero-shot generalization across diverse NLP tasks. Constructs a task-aware vector database from 22 datasets spanning commonsense reasoning, QA, NLI, and sentiment. At inference time, retrieves most similar training examples, computes task similarity distributions, and dynamically merges relevant LoRA adapters. Linear merging achieves 70.95% on PIQA and 77.62% on RTE, outperforming single-task baselines.",
+  "what_the_paper_supports": "Retrieval-based dynamic LoRA adapter composition: (1) train task-specific LoRA adapters on 22 datasets, (2) embed training examples into vector DB, (3) at inference, retrieve similar examples → compute task similarity → merge adapters using Linear/Concatenation/TIES/Magnitude Prune. Key finding: Linear merging often matches or exceeds individual task-specific adapters. No additional retriever training needed — uses frozen embeddings. Framework enables zero-shot generalization to unseen tasks.",
+  "what_the_paper_does_not_support": "No formal specification language (GAP-015). No formal equivalence checking (GAP-017). No versioning of adapters beyond ad-hoc (GAP-019). No formal verification (GAP-020). No execution trace. Limited to NLP classification tasks. No theoretical analysis of merging properties.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "paper_core_claims": [
+    "Vector DB-based retrieval enables zero-shot LoRA adapter composition for unseen tasks",
+    "Linear merging often outperforms individual task-specific adapters (70.95% PIQA vs 46% baseline)",
+    "No additional retriever training needed — frozen embeddings suffice",
+    "Four merging strategies compared: Linear, Concatenation, TIES, Magnitude Prune",
+    "22 datasets spanning commonsense, QA, NLI, sentiment, paraphrase, lexical semantics"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No specification language. Tasks defined by training datasets."
+    },
+    "GAP-016": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Retrieval + merging is a form of compilation: input → similar examples → adapter weights → merged model. But very informal."
+    },
+    "GAP-017": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No equivalence checking between merged models."
+    },
+    "GAP-018": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No intermediate state tracking."
+    },
+    "GAP-019": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "LoRA adapters are stored in a library and retrieved — a primitive registry. But no versioning, no metadata, no formal registry structure."
+    },
+    "GAP-020": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No formal verification. Empirical accuracy only."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "NO_EVIDENCE",
+      "reason": "No function specification language. Tasks defined by datasets."
+    },
+    "N2_Representation": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Vector DB embeddings as task representation. LoRA weights as adapter representation. But representations are standard (frozen embeddings, LoRA matrices)."
+    },
+    "N3_Compiler": {
+      "status": "NO_EVIDENCE",
+      "reason": "Not a compiler. Retrieval + merging of pre-trained adapters."
+    },
+    "N4_Artifact": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "LoRA adapters as reusable artifacts stored in a library. Retrieved and merged at inference. This is a practical artifact registry pattern — more developed than most papers in the batch."
+    },
+    "N5_Interpreter": {
+      "status": "NO_EVIDENCE",
+      "reason": "Not an interpreter."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NO_EVIDENCE",
+      "reason": "No execution trace."
+    },
+    "N7_Validator": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Task accuracy as validation. No formal checking."
+    },
+    "N8_ComposerRouter": {
+      "status": "STRONG_EVIDENCE",
+      "reason": "This is the paper's core contribution: retrieval-based routing to select and compose LoRA adapters. Vector DB → similarity retrieval → weighted merging. Four merging strategies. This is the most explicit composer/router implementation in the batch."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Adapter library + vector DB is a primitive versioned registry: adapters are stored, indexed, and retrieved. But no explicit versioning, no metadata, no conflict resolution."
+    }
+  },
+  "limitations_and_failure_boundaries": [
+    "Only tested on NLP classification tasks — unclear generalization to generation or other modalities",
+    "No universally optimal merging strategy — performance varies by task and method",
+    "TIES merging is sensitive and sometimes degrades performance",
+    "Uses general-purpose frozen embeddings for retrieval — may not capture task-specific similarity",
+    "Only 22 datasets — unclear scaling to larger adapter libraries",
+    "No theoretical analysis of when/why merging works or fails",
+    "Paper is a course project (not peer-reviewed) — quality of analysis is lower than published work",
+    "Comparison against single-task baselines is the main evaluation — no comparison with other multi-task methods"
+  ],
+  "strengths_noted": [
+    "N8 ComposerRouter: STRONGEST evidence in batch — explicit retrieval-based routing + 4 merging strategies",
+    "N4 Artifact + N9 VersionedRegistry: adapter library + vector DB is a practical registry pattern",
+    "Linear merging outperforming single-task adapters is a notable result",
+    "Zero-shot generalization to unseen tasks without additional training",
+    "Simple, practical framework — easy to implement and deploy"
+  ],
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "931d8dad4e885fd27bfe053bb823b82fd07ff90d74cc291dd1ad1d840295b175",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "Identity verified: arXiv:2602.21222, Adsul et al. (UMass). Authors were 'Anonymous' in evidence-card.",
+      "N8 ComposerRouter: strongest in batch — explicit retrieval→routing→merging pipeline",
+      "N4/N9: adapter library + vector DB = primitive registry",
+      "Paper appears to be a course project (not peer-reviewed) — lower rigor than other papers in batch",
+      "Still valuable for Function OS: concrete implementation of composer/router pattern"
+    ]
+  },
+  "reviewed_by_model": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "reviewed_at": "2026-07-14T16:38:45Z",
+  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714",
+  "canonical_phase2_member": false,
+  "supplemental_reason": "Not a canonical Phase 2 prior-review source. Inserted into 121Q2 Steps 006/008 by queue deviation. Preserved as supplemental overlay per 121Q2R Step 001.",
+  "original_121q2_step": 8,
+  "original_cx_step_assigned": 108
+}
