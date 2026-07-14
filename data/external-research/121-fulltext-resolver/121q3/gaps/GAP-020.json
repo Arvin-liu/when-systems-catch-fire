@@ -1,0 +1,63 @@
+{
+  "gap_id": "GAP-020",
+  "canonical_title": "No probabilistic/stochastic function semantics framework",
+  "canonical_definition": "Family 9 shows probabilistic programming provides function semantics with uncertainty. Ignition's ε (epsilon) parameter introduces stochasticity but lacks a formal probabilistic semantics framework.",
+  "source_path": "120-gap-015-020-adjudications.jsonl + 121-gap-015-020-readjudications.jsonl",
+  "dependencies": [
+    "GAP-018"
+  ],
+  "affected_nodes": [
+    "N5",
+    "N1"
+  ],
+  "affected_assets": [],
+  "direct_evidence": {
+    "sources": [],
+    "summary": "S120-053 (VERIFIED) connects effect handlers to probabilistic programming. S120-021 (EG-CFG, VERIFIED) provides multi-agent parallel inference."
+  },
+  "structural_evidence": {
+    "sources": [],
+    "summary": "121CX entries with probabilistic content."
+  },
+  "analogical_evidence": {
+    "sources": [],
+    "summary": "121CX entries provide indirect support."
+  },
+  "negative_evidence": {
+    "sources": [
+      "S120-058",
+      "S120-059",
+      "S120-060",
+      "S120-061",
+      "S120-064"
+    ],
+    "summary": "No source connects probabilistic semantics to weight-space composition. S120-001 is a fuzzy-function compiler, not a PPL. Ignition's ε is a mathematical parameter, not a probabilistic program."
+  },
+  "strongest_verified_sources": [
+    "S120-053",
+    "S120-021"
+  ],
+  "blocked_or_unknown_sources_excluded": [
+    "S120-058",
+    "S120-059",
+    "S120-060",
+    "S120-061",
+    "S120-064"
+  ],
+  "supported_claims": [
+    "Probabilistic programming provides formal semantics for stochastic functions",
+    "Effect handlers can model probabilistic effects"
+  ],
+  "unsupported_claims": [
+    "No connection between PPL semantics and weight-space composition",
+    "Ignition's ε is deterministic math, not a probabilistic program"
+  ],
+  "residual_gap": "Strong theoretical foundation but ignition's ε parameter is not a probabilistic program. PPL semantics may not directly apply.",
+  "adjudication_status": "PARTIALLY_RESOLVED",
+  "confidence_basis": "MEDIUM-HIGH. Theory is strong but direct applicability to ignition is uncertain.",
+  "recommended_next_action": "Add uncertainty_model field to N1. Document ε as 'deterministic parameter' not 'probabilistic program'. Research PPL-to-weight-space bridge.",
+  "prohibited_wording": "Do not claim 'probabilistic programming solves ignition's epsilon' or 'PPL semantics apply directly to Ψ₀'.",
+  "previous_adjudication_120": "FIELD_ENHANCEMENT_ONLY",
+  "previous_readjudication_121": "ARCHITECTURE_CANDIDATE_READY_FOR_REVIEW",
+  "timestamp": "2026-07-14T17:55:00Z"
+}

@@ -1,0 +1,66 @@
+{
+  "gap_id": "GAP-018",
+  "canonical_title": "No effect system for tracking side effects in function execution",
+  "canonical_definition": "Families 8, 9, 10 show that algebraic effect handlers, probabilistic programming, and agent skill compilation all require explicit effect tracking. Ignition functions have no effect system.",
+  "source_path": "120-gap-015-020-adjudications.jsonl + 121-gap-015-020-readjudications.jsonl",
+  "dependencies": [],
+  "affected_nodes": [
+    "N5",
+    "N6",
+    "N9"
+  ],
+  "affected_assets": [],
+  "direct_evidence": {
+    "sources": [
+      "S120-053"
+    ],
+    "summary": "S120-053 (Algebraic Effects, JLC 2009, VERIFIED) provides effect handlers separating effect signatures from interpreters."
+  },
+  "structural_evidence": {
+    "sources": [],
+    "summary": "121CX entries with effect-related content."
+  },
+  "analogical_evidence": {
+    "sources": [],
+    "summary": "121CX entries provide indirect support for agent skill effects."
+  },
+  "negative_evidence": {
+    "sources": [
+      "S120-055",
+      "S120-058",
+      "S120-059",
+      "S120-065",
+      "S120-067",
+      "S120-070"
+    ],
+    "summary": "Effect handlers are language-level, not tied to neural function execution. Agent skill systems lack formal effect calculus. No cross-representation effect tracking."
+  },
+  "strongest_verified_sources": [
+    "S120-053"
+  ],
+  "blocked_or_unknown_sources_excluded": [
+    "S120-055",
+    "S120-058",
+    "S120-059",
+    "S120-065",
+    "S120-067",
+    "S120-070"
+  ],
+  "supported_claims": [
+    "Algebraic effect handlers provide rigorous separation of effects from interpreters",
+    "Effect tracking is feasible for symbolic program execution"
+  ],
+  "unsupported_claims": [
+    "Effect handlers not tied to neural function execution",
+    "No formal effect calculus for agent skills",
+    "No cross-representation effect tracking"
+  ],
+  "residual_gap": "Strong theoretical foundation but requires integration into ignition's execution runtime. Most ignition functions are pure math with no side effects.",
+  "adjudication_status": "PARTIALLY_RESOLVED",
+  "confidence_basis": "MEDIUM. Strong theory (S120-053 VERIFIED) but limited applicability to ignition's mathematical functions.",
+  "recommended_next_action": "Add effect_signature field to N1 (FunctionSpec). Most ignition functions will be 'pure'. Track effects only for agent-facing functions.",
+  "prohibited_wording": "Do not claim 'ignition functions have proven side effects' or 'algebraic effects solve Function OS execution'.",
+  "previous_adjudication_120": "FIELD_ENHANCEMENT_ONLY",
+  "previous_readjudication_121": "ARCHITECTURE_CANDIDATE_READY_FOR_REVIEW",
+  "timestamp": "2026-07-14T17:55:00Z"
+}

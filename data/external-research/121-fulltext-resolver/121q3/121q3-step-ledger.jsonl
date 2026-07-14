@@ -2,3 +2,7 @@
 {"step": 1, "action": "EVIDENCE_ROUTING", "result": "6 GAPs, 9 nodes, 35 assets routed", "timestamp": "2026-07-14T17:53:18Z"}
 {"step": 2, "action": "GAP_015_ADJUDICATION", "result": "status=PARTIALLY_RESOLVED, direct=2, structural=0, analogical=0, blocked=6", "timestamp": "2026-07-14T17:53:50Z"}
 {"step": 3, "action": "GAP_016_ADJUDICATION", "result": "status=PARTIALLY_RESOLVED, direct=2, blocked=2", "timestamp": "2026-07-14T17:54:17Z"}
+{"step": 4, "action": "GAP-017_ADJUDICATION", "result": "status=UNRESOLVED_INSUFFICIENT_EVIDENCE", "timestamp": "2026-07-14T17:55:00Z"}
+{"step": 5, "action": "GAP-018_ADJUDICATION", "result": "status=PARTIALLY_RESOLVED", "timestamp": "2026-07-14T17:55:00Z"}
+{"step": 6, "action": "GAP-019_ADJUDICATION", "result": "status=RESOLVED_BY_EXISTING_EVIDENCE", "timestamp": "2026-07-14T17:55:00Z"}
+{"step": 7, "action": "GAP-020_ADJUDICATION", "result": "status=PARTIALLY_RESOLVED", "timestamp": "2026-07-14T17:55:00Z"}
