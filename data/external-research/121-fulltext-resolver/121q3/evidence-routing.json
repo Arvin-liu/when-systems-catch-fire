@@ -1,0 +1,376 @@
+{
+  "step": 1,
+  "action": "CANONICAL_NAME_RESOLUTION_AND_EVIDENCE_ROUTING",
+  "timestamp": "2026-07-14T17:53:18Z",
+  "gaps": {
+    "GAP-015": {
+      "canonical_title": "No function specification language with formal preconditions/postconditions",
+      "canonical_definition_source": "120-gap-015-020-adjudications.jsonl + 121-gap-015-020-readjudications.jsonl",
+      "previous_adjudication_120": "FIELD_ENHANCEMENT_ONLY",
+      "previous_readjudication_121": "RESEARCH_CANDIDATE_INSUFFICIENT_EVIDENCE",
+      "routed_families": [
+        "F3",
+        "F7",
+        "F1"
+      ],
+      "routed_sources": [
+        "S120-016",
+        "S120-047",
+        "S120-050",
+        "S120-051",
+        "S120-053",
+        "S120-055",
+        "S120-071",
+        "S120-072"
+      ],
+      "affected_nodes": [
+        "N1",
+        "N7"
+      ],
+      "affected_assets": []
+    },
+    "GAP-016": {
+      "canonical_title": "No weight-space composition algebra for function combination",
+      "canonical_definition_source": "120-gap-015-020-adjudications.jsonl + 121-gap-015-020-readjudications.jsonl",
+      "previous_adjudication_120": "RESEARCH_CANDIDATE_INSUFFICIENT_EVIDENCE",
+      "previous_readjudication_121": "RESEARCH_CANDIDATE_INSUFFICIENT_EVIDENCE",
+      "routed_families": [
+        "F1",
+        "F2",
+        "F6"
+      ],
+      "routed_sources": [
+        "S120-002",
+        "S120-009",
+        "S120-039",
+        "S120-045",
+        "S120-046",
+        "S120-077"
+      ],
+      "affected_nodes": [
+        "N8",
+        "N2"
+      ],
+      "affected_assets": []
+    },
+    "GAP-017": {
+      "canonical_title": "No equivalence checker across different function representations",
+      "canonical_definition_source": "120-gap-015-020-adjudications.jsonl + 121-gap-015-020-readjudications.jsonl",
+      "previous_adjudication_120": "FIELD_ENHANCEMENT_ONLY",
+      "previous_readjudication_121": "RESEARCH_CANDIDATE_INSUFFICIENT_EVIDENCE",
+      "routed_families": [
+        "F1",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ],
+      "routed_sources": [
+        "S120-001",
+        "S120-003",
+        "S120-016",
+        "S120-024",
+        "S120-035",
+        "S120-039",
+        "S120-045",
+        "S120-046",
+        "S120-075",
+        "S120-076"
+      ],
+      "affected_nodes": [
+        "N7",
+        "N2",
+        "N1"
+      ],
+      "affected_assets": []
+    },
+    "GAP-018": {
+      "canonical_title": "No effect system for tracking side effects in function execution",
+      "canonical_definition_source": "120-gap-015-020-adjudications.jsonl + 121-gap-015-020-readjudications.jsonl",
+      "previous_adjudication_120": "FIELD_ENHANCEMENT_ONLY",
+      "previous_readjudication_121": "ARCHITECTURE_CANDIDATE_READY_FOR_REVIEW",
+      "routed_families": [
+        "F8",
+        "F9",
+        "F10"
+      ],
+      "routed_sources": [
+        "S120-053",
+        "S120-055",
+        "S120-058",
+        "S120-059",
+        "S120-065",
+        "S120-067",
+        "S120-070"
+      ],
+      "affected_nodes": [
+        "N5",
+        "N6",
+        "N9"
+      ],
+      "affected_assets": []
+    },
+    "GAP-019": {
+      "canonical_title": "No versioned function registry with provenance tracking",
+      "canonical_definition_source": "120-gap-015-020-adjudications.jsonl + 121-gap-015-020-readjudications.jsonl",
+      "previous_adjudication_120": "FIELD_ENHANCEMENT_ONLY",
+      "previous_readjudication_121": "ARCHITECTURE_CANDIDATE_READY_FOR_REVIEW",
+      "routed_families": [
+        "F5",
+        "F6",
+        "F10"
+      ],
+      "routed_sources": [
+        "S120-035",
+        "S120-039",
+        "S120-045",
+        "S120-065",
+        "S120-066",
+        "S120-067",
+        "S120-070"
+      ],
+      "affected_nodes": [
+        "N9",
+        "N4"
+      ],
+      "affected_assets": []
+    },
+    "GAP-020": {
+      "canonical_title": "No probabilistic/stochastic function semantics framework",
+      "canonical_definition_source": "120-gap-015-020-adjudications.jsonl + 121-gap-015-020-readjudications.jsonl",
+      "previous_adjudication_120": "FIELD_ENHANCEMENT_ONLY",
+      "previous_readjudication_121": "ARCHITECTURE_CANDIDATE_READY_FOR_REVIEW",
+      "routed_families": [
+        "F9",
+        "F1",
+        "F8"
+      ],
+      "routed_sources": [
+        "S120-058",
+        "S120-059",
+        "S120-060",
+        "S120-061",
+        "S120-064"
+      ],
+      "affected_nodes": [
+        "N5",
+        "N1"
+      ],
+      "affected_assets": []
+    }
+  },
+  "function_os_nodes": {
+    "N1": {
+      "canonical_name": "FunctionSpec",
+      "canonical_definition_source": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "routed_sources": [
+        "S120-047",
+        "S120-050",
+        "S120-001",
+        "S120-007",
+        "S120-017",
+        "S120-018",
+        "S120-020",
+        "S120-053"
+      ],
+      "linked_gaps": [
+        "GAP-015",
+        "GAP-017",
+        "GAP-020"
+      ]
+    },
+    "N2": {
+      "canonical_name": "Representation",
+      "canonical_definition_source": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "routed_sources": [
+        "S120-001",
+        "S120-002",
+        "S120-004",
+        "S120-009",
+        "S120-027",
+        "S120-030",
+        "S120-035"
+      ],
+      "linked_gaps": [
+        "GAP-016",
+        "GAP-017"
+      ]
+    },
+    "N3": {
+      "canonical_name": "Compiler",
+      "canonical_definition_source": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "routed_sources": [
+        "S120-001",
+        "S120-007",
+        "S120-009",
+        "S120-017",
+        "S120-018",
+        "S120-020",
+        "S120-021",
+        "S120-022",
+        "S120-075"
+      ],
+      "linked_gaps": []
+    },
+    "N4": {
+      "canonical_name": "Artifact",
+      "canonical_definition_source": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "routed_sources": [
+        "S120-001",
+        "S120-009",
+        "S120-035",
+        "S120-039",
+        "S120-045",
+        "S120-046"
+      ],
+      "linked_gaps": [
+        "GAP-019"
+      ]
+    },
+    "N5": {
+      "canonical_name": "Interpreter",
+      "canonical_definition_source": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "routed_sources": [
+        "S120-001",
+        "S120-007",
+        "S120-017",
+        "S120-021",
+        "S120-027",
+        "S120-030",
+        "S120-053",
+        "S120-055",
+        "S120-064"
+      ],
+      "linked_gaps": [
+        "GAP-018",
+        "GAP-020"
+      ]
+    },
+    "N6": {
+      "canonical_name": "ExecutionTrace",
+      "canonical_definition_source": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "routed_sources": [
+        "S120-017",
+        "S120-018",
+        "S120-021",
+        "S120-022",
+        "S120-053",
+        "S120-055",
+        "S120-058",
+        "S120-070"
+      ],
+      "linked_gaps": [
+        "GAP-018"
+      ]
+    },
+    "N7": {
+      "canonical_name": "Validator",
+      "canonical_definition_source": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "routed_sources": [
+        "S120-018",
+        "S120-020",
+        "S120-021",
+        "S120-047",
+        "S120-050",
+        "S120-070"
+      ],
+      "linked_gaps": [
+        "GAP-015",
+        "GAP-017"
+      ]
+    },
+    "N8": {
+      "canonical_name": "ComposerRouter",
+      "canonical_definition_source": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "routed_sources": [
+        "S120-002",
+        "S120-009",
+        "S120-020",
+        "S120-031",
+        "S120-035",
+        "S120-036",
+        "S120-039",
+        "S120-045",
+        "S120-046",
+        "S120-070"
+      ],
+      "linked_gaps": [
+        "GAP-016"
+      ]
+    },
+    "N9": {
+      "canonical_name": "VersionedRegistry",
+      "canonical_definition_source": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "routed_sources": [
+        "S120-011",
+        "S120-031",
+        "S120-035",
+        "S120-036",
+        "S120-039",
+        "S120-065",
+        "S120-070"
+      ],
+      "linked_gaps": [
+        "GAP-018",
+        "GAP-019"
+      ]
+    }
+  },
+  "internal_assets": {
+    "source_path": "data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl",
+    "count": 35,
+    "asset_ids": [
+      "IGN-ASSET-001",
+      "IGN-ASSET-002",
+      "IGN-ASSET-003",
+      "IGN-ASSET-004",
+      "IGN-ASSET-005",
+      "IGN-ASSET-006",
+      "IGN-ASSET-007",
+      "IGN-ASSET-008",
+      "IGN-ASSET-009",
+      "IGN-ASSET-010",
+      "IGN-ASSET-011",
+      "IGN-ASSET-012",
+      "IGN-ASSET-013",
+      "IGN-ASSET-014",
+      "IGN-ASSET-015",
+      "IGN-ASSET-016",
+      "IGN-ASSET-017",
+      "IGN-ASSET-018",
+      "IGN-ASSET-019",
+      "IGN-ASSET-020",
+      "IGN-ASSET-021",
+      "IGN-ASSET-022",
+      "IGN-ASSET-023",
+      "IGN-ASSET-024",
+      "IGN-ASSET-025",
+      "IGN-ASSET-026",
+      "IGN-ASSET-027",
+      "IGN-ASSET-028",
+      "IGN-ASSET-029",
+      "IGN-ASSET-030",
+      "IGN-ASSET-031",
+      "IGN-ASSET-032",
+      "IGN-ASSET-033",
+      "IGN-ASSET-034",
+      "IGN-ASSET-035"
+    ]
+  },
+  "source_of_truth_priority": [
+    "121Q3 overlay (this round)",
+    "121Q2W final consistency seal",
+    "121Q2V/121Q2R/121Q2/121Q1/121CX latest valid overlay",
+    "Historical evidence card",
+    "Old report statistical descriptions"
+  ]
+}
