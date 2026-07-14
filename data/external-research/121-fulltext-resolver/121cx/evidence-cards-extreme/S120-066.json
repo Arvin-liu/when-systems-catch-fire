@@ -1,0 +1,279 @@
+{
+  "source_id": "S120-066",
+  "canonical_title": "SKILL-DISCO: Distilling and Compiling Agent Traces into Reusable Procedural Skills",
+  "authors": [
+    "Zhongxin Guo",
+    "Danrui Qi",
+    "Hanwen Gu",
+    "Peng Cheng",
+    "Yongqiang Xiong"
+  ],
+  "year": 2026,
+  "version": "arXiv:2606.26669v1 preprint, submitted 2026-06-25",
+  "doi_or_identifier": "arXiv:2606.26669v1",
+  "identifier": "cs.AI",
+  "url": "https://arxiv.org/abs/2606.26669v1",
+  "source_family": 10,
+  "source_family_name": "agent skills and reusable capability libraries",
+  "license": "CC BY 4.0",
+  "sha256": "38045cf7c60d69d617189f7057b7f09b0864ff59a6e09fa2bc723d7773c27804",
+  "file_size_bytes": 1224110,
+  "page_count": 16,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "registered_url": "https://arxiv.org/pdf/2606.26669",
+    "versioned_url": "https://arxiv.org/pdf/2606.26669v1",
+    "sha256": "38045cf7c60d69d617189f7057b7f09b0864ff59a6e09fa2bc723d7773c27804",
+    "file_size_bytes": 1224110,
+    "page_count": 16,
+    "registered_pdf_visual_check": "all 16 pages rendered and inspected; formal definitions, pipeline figures, seven tables, prompts and two code listings are complete and legible",
+    "arxiv_metadata": "first and only public version submitted 2026-06-25 07:02:32 UTC; five named authors; cs.AI",
+    "source_archive": {
+      "url": "https://arxiv.org/e-print/2606.26669v1",
+      "sha256": "64f1595d36293f64ce9c6b2f515e36c19b3b6d2f82bf9bac53241c45a4d80edf",
+      "contents": "LaTeX, bibliography, style files and figures; no executable SKILL-DISCO implementation, trace corpus, skill library, benchmark configuration or result log"
+    },
+    "artifact_link_status": "the paper and source archive give no project repository, code/data URL or immutable experiment receipt; appendix references internal-looking prompt paths but only abbreviated prompt text is published"
+  },
+  "sections_reviewed": [
+    "abstract, motivation, scope and contributions",
+    "FSM-defined scenario, primitive operator and successful trace definitions",
+    "PFSM definition, parameterized trace graph and procedural-skill discovery problem",
+    "distillation and compilation framework overview",
+    "trace normalization and subgoal-level operation extraction",
+    "semantic clustering, consolidation and reusability score",
+    "skill contract, synthesis, runtime verification and rejection loop",
+    "ALFWorld/WebArena setup, splits, baselines and metrics",
+    "end-to-end, cross-model, usage/error and ablation results",
+    "related work, conclusion and stated limitations",
+    "token/cost tables, pricing assumptions, all five stage prompts and two compiled-skill listings",
+    "complete arXiv LaTeX source and publication metadata"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "abstract and section 1, pp. 1-2; Figure 1",
+      "checked_for": "PFSM target, corpus-level distillation, compilation, environment branching, transfer and scope claims"
+    },
+    {
+      "anchors": "sections 2.1-2.2, pp. 2-4; Definitions 1-4, Example 1 and Problem 1",
+      "checked_for": "finite deterministic state/action assumptions, primitive pre/postconditions, observation traces, parameter binding and desired coverage/utility/compactness"
+    },
+    {
+      "anchors": "sections 3.1-3.2, pp. 4-5; Figure 2",
+      "checked_for": "actual LLM-based trace-to-program, operation extraction and semantic-clustering approximation rather than exact PFSM recovery"
+    },
+    {
+      "anchors": "section 3.3, pp. 5-6",
+      "checked_for": "signature, typed parameters, return type, pre/postconditions, side effects, confidence metadata, Python synthesis and held-out runtime checks"
+    },
+    {
+      "anchors": "sections 4.1-4.3, pp. 6-7; Tables 1-2",
+      "checked_for": "200/134 ALFWorld and 406/406 WebArena splits, GPT-4o induction, agent baselines, target-model transfer and one-episode success/turn metrics"
+    },
+    {
+      "anchors": "sections 4.4-4.5, pp. 7-8; Tables 3-4",
+      "checked_for": "five versus 110 and 20 versus 146 skills, primitive-step compression, execution-error rates and no-distill/no-compile ablations"
+    },
+    {
+      "anchors": "Limitations, p. 9",
+      "checked_for": "procedural-only scope, compiler-model dependence and successful-trace requirement"
+    },
+    {
+      "anchors": "appendix A, pp. 10-11; Tables 5-7",
+      "checked_for": "cached/input/output tokens, execution-only costs, price source and ablation cost tradeoffs"
+    },
+    {
+      "anchors": "appendices B-C, pp. 10-16; Listings 1-8",
+      "checked_for": "abbreviated generation prompts, merge bias, contract schema, runtime assumptions and self-containment/correctness gaps in emitted code"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "For finite-state, deterministic procedural environments, reusable skills can be conceptualized as parameterized control-flow subgraphs shared by multiple successful traces.",
+      "anchors": "section 2; Definitions 1-4 and Problem 1"
+    },
+    {
+      "claim": "SKILL-DISCO approximates latent PFSM discovery through LLM trace normalization, subgoal extraction and semantic clustering, then compiles clusters into explicit contracts and Python functions.",
+      "anchors": "section 3; Figure 2"
+    },
+    {
+      "claim": "Execution-grounded checks discard or regenerate functions that fail runtime, postcondition or action-saving requirements on a held-out set.",
+      "anchors": "section 3.3"
+    },
+    {
+      "claim": "Author-reported ALFWorld and WebArena evaluations show higher success and fewer agent turns than matching ReAct/CodeAct agents and prior offline workflow/skill baselines.",
+      "anchors": "section 4.2; Table 1"
+    },
+    {
+      "claim": "A GPT-4o-induced library transfers without modification to five additional model configurations, and compact compiled libraries show fewer execution errors and shorter invoked procedures than ASIoffline.",
+      "anchors": "sections 4.3-4.4; Tables 2-3"
+    }
+  ],
+  "function_concept_used_by_paper": "A primitive function/operator has input/output spaces plus pre/post predicates and is assumed deterministic. A procedural skill is first idealized as a parameterized PFSM control-flow subgraph supported by multiple successful traces, then realized operationally as a Python function over typed domain parameters and a global environment. It invokes primitive env.step actions, branches on observations and returns success, the latest observation/available actions and a process trace.",
+  "representation_or_carrier": "The theoretical carrier is a finite deterministic FSM, its latent PFSM, parameter assignments and trace subgraphs. The implemented intermediate representation is LLM-emitted Python-like control flow with symbolic variables, observations and primitive calls. Extracted operations contain a name, summary, primitive sequence and code. Clusters become JSON contracts containing signatures, descriptions, typed/default parameters, return type, pre/postconditions, declared side effects, canonical actions, abstraction level, estimated action savings and a confidence score; emitted Python and a prompt-visible library are the deployed carriers.",
+  "specification_language": "Stage 4 defines a concrete JSON contract schema with callable name, typed parameters/defaults, Dict return, natural-language description/docstring, preconditions, postconditions, declared side effects, canonical action templates, abstraction level, action-savings estimate and confidence. This is stronger than a free-form skill document, but its types/predicates/effects are strings for LLM guidance rather than statically checked assertions; the code examples do not embed contract monitors, permissions, dependencies, resource bounds, provenance, versions or compatibility metadata.",
+  "compiler_or_generator": "Five LLM-driven transformations normalize raw traces, extract operations, group then consolidate semantic clusters, create contracts and synthesize Python. This is a corpus-level generative compiler only by analogy: neither the latent PFSM nor lifting/matching function is computed exactly, Stage 3 uses semantic prompts including a when-in-doubt merge bias, and no preservation/soundness theorem connects traces, inferred structure, contract and code. Failed functions are reportedly regenerated up to R times, but R and the validation-set construction are not reported.",
+  "interpreter_or_runtime": "At inference, every skill signature/description is appended to the agent prompt; the LLM chooses either a skill or primitive action. A selected Python function calls a global env.step, branches on observations/admissible actions and returns structured state. This can collapse multiple primitive steps into one agent turn. The WebArena example depends on an undefined find_bid helper despite the synthesis prompt saying only env.step and the Python standard library may be used, so the published listing is not self-contained under its stated contract.",
+  "composition_rule": "Primitive actions compose as Python sequences, loops and branches; parameter binding abstracts objects/locations; clusters merge operations judged semantically similar; skills expose callable signatures and can be chosen by ReAct/CodeAct agents. No skill-to-skill dependency graph, type/effect unification, conflict rule, transaction, rollback, concurrency model or proof of safe composition is supplied; all signatures/descriptions are eagerly added to the prompt, so selection degrades as libraries grow and the no-distill ablation illustrates wrong-variant routing.",
+  "state_or_effect_model": "FSM transitions and observations are the theoretical state/effect carrier. Contracts declare side effects in natural language, emitted code mutates the environment through env.step and process_trace records action/observation pairs. The system does not enforce declared effects, distinguish reversible from irreversible actions, model partial observability or external I/O, control permissions/secrets, or provide rollback. Real WebArena state may include dynamic/asynchronous behavior beyond the paper's deterministic finite-state idealization.",
+  "uncertainty_model": "No probabilistic semantics is defined. LLM transformation and action selection are stochastic, yet the paper reports one aggregate outcome per task/model setting without seeds, repeated trials, confidence intervals or significance tests. Confidence_score is inherited from empirical cluster coverage rather than calibrated predictive uncertainty. The deterministic-operator definition excludes stochastic/nondeterministic effects rather than modeling them.",
+  "validation_regime": {
+    "formal": "four definitions, one problem statement and an approximate coverage score; no theorem proves PFSM recovery, clustering correctness, contract satisfaction, compiler preservation or safe composition",
+    "induction_evaluation_split": "ALFWorld uses 200 sampled official-train tasks for induction and 134 official unseen tasks for evaluation; WebArena uses the first 406 tasks for induction and remaining 406 for evaluation",
+    "verification": "paper says synthesized functions are checked on a held-out set for runtime correctness, postconditions and action savings, with up to R retries, but gives neither the held-out set identity/size nor R, per-skill outcomes or separation from final evaluation",
+    "end_to_end": "with GPT-4o, ALFWorld CodeAct rises from 96.27 to 99.25 percent and ReAct from 82.00 to 92.40; WebArena ReAct rises from 23.89 to 29.06 and CodeAct from 19.95 to 22.91, while average turns fall",
+    "scale_boundary": "on 134 ALFWorld evaluation episodes, 96.27 to 99.25 percent corresponds to approximately four additional successes; no repeated-run uncertainty is reported",
+    "transfer": "one GPT-4o-induced library is deployed on Qwen3.5-4B/9B, GPT-4o/mini and GPT-5-chat/mini; all table cells have nondecreasing success and fewer average turns",
+    "usage": "author-reported execution error falls from 75.3 to 0 percent versus ASIoffline on ALFWorld and from 33.9 to 21.5 on WebArena, but error definition, call denominators and intervals are absent",
+    "ablation": "no-distill produces 43 skills and 52.99 percent ALFWorld success; no-compile keeps natural-language procedures and reaches 97.01 percent; full five-skill library reaches 99.25 percent",
+    "cost": "execution-only tables show some reductions but WebArena skill variants cost 5.5 and 11.9 percent more than base agents; offline induction, clustering, synthesis and verification cost is omitted",
+    "reproducibility": "no implementation, prompts in full, traces, generated libraries, environment/container revisions, seeds, decoding settings, result logs or verification receipts are released"
+  },
+  "equivalence_notions": [
+    {
+      "notion": "parameterized subgraph matching",
+      "support": "AN_IDEAL_SKILL_K_MATCHES_MULTIPLE_PARAMETERIZED_TRACE_GRAPHS_UNDER_PARAMETER_BINDING",
+      "boundary": "The PFSM and lifting function are unavailable; no exact matcher, equivalence relation or closed-form criterion is implemented."
+    },
+    {
+      "notion": "semantic operation consolidation",
+      "support": "TWO_LLM_PROMPT_PASSES_GROUP_OPERATIONS_WITH_SIMILAR_GOALS_ACTION_OBSERVATION_PATTERNS_AND_STATE_CHANGES",
+      "boundary": "Grouping is judgment-based, prompt-biased toward merging and has no labeled clustering evaluation, stability test or false-merge rate."
+    },
+    {
+      "notion": "contract-implementation satisfaction",
+      "support": "SYNTHESIZED_CODE_IS_REPORTEDLY_RUN_ON_HELD_OUT_TASKS_AND_CHECKED_FOR_RUNTIME_POSTCONDITION_AND_ACTION_SAVINGS",
+      "boundary": "Predicates and effects are not executable contract checks, validation details are missing and published code includes an undeclared helper dependency."
+    },
+    {
+      "notion": "cross-model procedural portability",
+      "support": "THE_SAME_GPT_4O_INDUCED_LIBRARY_IS_DEPLOYED_WITHOUT_REINDUCTION_ACROSS_SIX_TARGET_MODEL_CONFIGURATIONS",
+      "boundary": "This is behavioral transfer on two environments, not semantic equivalence across model prompts, tool interfaces or future environment versions."
+    },
+    {
+      "notion": "compiled versus textual procedure",
+      "support": "THE_NO_COMPILE_ABLATION_COMPARES_PROMPTED_PROCEDURE_DESCRIPTIONS_WITH_CALLABLE_CODE_ON_ALFWORLD",
+      "boundary": "A single benchmark/backbone comparison with no repeated trials cannot isolate general compiler correctness or reliability."
+    }
+  ],
+  "lifecycle_and_provenance": "The paper describes a final callable library but supplies no skill identifier/version schema, content hash, source-trace IDs, generator prompt/model revision, validation receipt, creation time, dependency/environment lock, authorship, approval, compatibility, supersession, rollback, revocation or retirement policy. Confidence and action-savings metadata are mentioned but not shown in published library records. Only successful traces enter induction, failed candidate skills may be discarded without a ledger, and libraries are not studied under updates or environment drift. The exact paper/source archive is CC BY 4.0 and hash-bound here, but the implementation and evaluated artifacts are unavailable.",
+  "limitations_and_failure_boundaries": [
+    "The formal scope is finite state/action spaces with deterministic transitions; open-ended generation, reading comprehension and nonprocedural tasks are explicitly excluded.",
+    "Observed agent traces need not reveal the underlying Markov state, and WebArena can include partial, dynamic or asynchronous state not captured by the deterministic FSM idealization.",
+    "Primitive operators are assumed to return a unique output satisfying a postcondition; stochastic, flaky, nondeterministic or externally changing tools violate this premise.",
+    "The PFSM, parameterized trace graphs and subgraph matching are conceptual targets; the actual system uses LLM-generated code and semantic grouping rather than recovering those formal objects.",
+    "The reusability score is an approximation from cluster/trace statistics, with no reported threshold, calibration or comparison to ground-truth reusable subgraphs.",
+    "Stage 3 instructs the LLM to prefer fewer/larger groups and merge when in doubt, which can collapse behaviorally distinct operations.",
+    "Only successful traces supply induction signal, so rare-success domains may lack coverage and failure-recovery skills are systematically underrepresented.",
+    "Compiler quality depends on the LLM and may yield incorrect or overly specific skills; the paper explicitly acknowledges degradation with weaker models.",
+    "Typed parameters, preconditions, postconditions and side effects are natural-language JSON fields, not enforced static or runtime contracts.",
+    "The paper does not identify the held-out verification set, retry budget R, per-skill test cases, rejection counts or whether verification data are disjoint from final evaluation.",
+    "The published WebArena skill calls find_bid without defining/importing it, conflicting with the stated self-contained/stdlib-only synthesis rule unless an undocumented runtime helper exists.",
+    "Published success checks are observation-string heuristics and can differ from authoritative environment goal predicates.",
+    "Eagerly appending every skill signature/description makes routing prompt size grow with the library; the 43-skill no-distill ablation shows substantial selection interference.",
+    "ALFWorld's strongest CodeAct gain is about four additional successes among 134 episodes; no repeats, confidence interval or paired significance is reported.",
+    "WebArena is split by first versus remaining task order with no randomization/stratification analysis, so induction/evaluation distribution balance is unknown.",
+    "Baseline implementation details, model endpoints/versions, prompts, seeds, temperature, hardware and environment revisions are not fully specified.",
+    "Execution-error percentages lack a definition, number of calls and uncertainty; they cannot be treated as verified reliability rates.",
+    "Fewer agent turns do not always mean lower input tokens or cost: both WebArena skill configurations cost more than their base agents in Appendix Table 5.",
+    "Reported cost excludes one-time trace normalization, operation extraction, two-pass clustering, contract synthesis, code generation and repeated verification.",
+    "No public code, trace corpus, generated five/20-skill libraries, validation cases or result logs permit independent reproduction.",
+    "No lifecycle versioning, provenance chain, security policy, permission/effect enforcement or rollback is demonstrated.",
+    "The paper does not address neural-weight functions, general Function OS representation interoperability or probabilistic ignition semantics."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not provide an exact PFSM discovery algorithm, formal compiler-soundness result or machine-checked contract system.",
+    "It does not show correctness for stochastic, open-ended, partially observable or continuously changing tasks.",
+    "It does not establish semantic equivalence between traces, clusters, contracts and emitted skills or between executions on different models.",
+    "It does not provide a reproducible, versioned and provenance-complete skill registry.",
+    "It does not empirically validate ignition, weight-space composition or stochastic ignition semantics."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "The JSON skill contract explicitly covers signatures, typed/default parameters, return values, pre/postconditions, effects, canonical actions and metadata, bounded by non-enforcement."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "A five-stage trace-to-program-to-cluster-to-contract-to-code generator is specified and evaluated for narrow procedural environments, without formal preservation or weight composition."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Parameter binding, semantic clustering, runtime verification and cross-model transfer provide bounded behavioral relations, not an executable semantic equivalence checker."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Contracts declare side effects and process traces record env.step actions, while effect declarations, permissions, external effects and composition are unenforced."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Compact callable libraries and metadata are concrete, but there is no version/provenance/lifecycle schema or public registry artifact."
+    },
+    "GAP-020": {
+      "status": "NOT_SUPPORTED",
+      "reason": "The framework assumes deterministic transitions and reports no probabilistic semantics for skills or ignition."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Stage 4 defines a rich explicit skill contract, though fields are LLM-facing rather than formally enforced."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "FSM/PFSM targets, executable program IR, operations, clusters, JSON contracts, Python functions and traces are explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "The five LLM stages implement a bounded corpus-level procedural-skill compiler with execution filtering."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Callable Python skills and two listings are described, but evaluated code/libraries/environments are not released."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "ReAct/CodeAct select and invoke skills that drive a global environment through primitive actions."
+    },
+    "N6_ExecutionTrace": {
+      "status": "CONFIRMED",
+      "reason": "Raw action/observation histories, normalized programs and returned process_trace records drive both compilation and execution."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Held-out runtime/postcondition/action checks and final environment success metrics are claimed, but test identities, predicates and receipts are missing."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Prompt-visible signatures let multiple agents route to skills, but selection, skill composition and conflict semantics are not formalized."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Five/20-skill reusable libraries are reported without versions, hashes, lineage, updates, rollback or public registry receipts."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "NO_PRIOR_SEMANTIC_EVIDENCE_CARD",
+    "verdict": "NEW_CODEX56_EXTREME_CARD_WITH_PARTIAL_SUPPORT",
+    "corrections": [
+      "Bounded the formal contribution to deterministic finite-state procedural scenarios rather than general agent tasks.",
+      "Separated ideal PFSM subgraph discovery from the actual five-stage LLM approximation.",
+      "Recorded the complete contract schema while distinguishing string declarations from enforced types, predicates and effects.",
+      "Separated execution-grounded filtering from formal verification and exposed the unspecified validation set and retry budget.",
+      "Audited exact denominators, strongest gains, transfer cells, error-rate omissions and ablation tradeoffs.",
+      "Recorded that WebArena examples depend on an undeclared helper and that cost excludes compilation while sometimes increasing at execution.",
+      "Verified the exact PDF and source archive and recorded the absence of code, skills, traces and result receipts."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "PARTIAL",
+  "partial_projection": "SKILL-DISCO provides direct bounded design evidence for a FunctionSpec-Representation-Compiler-Interpreter-ExecutionTrace pattern and useful behavioral evidence for validation, routing and library reuse in deterministic procedural tasks. It remains partial because the PFSM theory is approximated by unverified LLM transformations, contracts/effects are not enforced, verification and uncertainty are underspecified, one example is not self-contained, and no code/library/result provenance is public.",
+  "source_specific_reasoning": "PARTIAL is the strongest defensible status. The complete source specifies a meaningful contract and compilation pipeline and reports held-out environment improvements across agents/models. But model review cannot upgrade author-reported runtime checks into compiler correctness or empirical validation: the formal-to-operational bridge lacks a theorem, the verification set is unidentified, results have no repeated uncertainty, costs omit induction, and the artifact required for independent execution is absent.",
+  "projection_boundary": "These are 121CX projections from the complete exact 16-page arXiv v1 PDF, all rendered pages, complete CC BY source archive and official arXiv metadata. This model review is not a formal PFSM/compiler proof, independent execution of unreleased skills, reproduction of ALFWorld/WebArena results, or empirical validation of ignition.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T07:17:27Z"
+}
