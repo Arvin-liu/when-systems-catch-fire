@@ -1,0 +1,280 @@
+{
+  "source_id": "S120-013",
+  "canonical_title": "Conditional LoRA Parameter Generation",
+  "authors": [
+    "Xiaolong Jin",
+    "Kai Wang",
+    "Dongwen Tang",
+    "Wangbo Zhao",
+    "Yukun Zhou",
+    "Junshu Tang",
+    "Yang You"
+  ],
+  "year": 2024,
+  "source_family": 2,
+  "source_family_name": "hypernetworks_and_weight_generation",
+  "identifier": "arXiv:2408.01415v1; OpenReview:AjunxrcKa2",
+  "doi_or_identifier": "10.48550/arXiv.2408.01415; OpenReview:AjunxrcKa2",
+  "url": "https://arxiv.org/pdf/2408.01415",
+  "version": "arXiv v1 submitted 2024-08-02; preprint marked Under review",
+  "license": "arXiv non-exclusive distribution license; the linked code repository exposes no LICENSE file",
+  "file_size_bytes": 3056080,
+  "page_count": 18,
+  "sha256": "0e874caa102cb44eba2e2883baa5b6dd3e2cdb5ac2158f57b7f7c11b645c0e8f",
+  "reviewed_at": "2026-07-14T11:04:36Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "claim_support_status": "CONFIRMED",
+  "retrieval_and_integrity": {
+    "registered_and_repaired_binding": {
+      "historical_openreview_url": "https://openreview.net/forum?id=AjunxrcKa2",
+      "historical_openreview_pdf_status": "403 Forbidden during both the original resolver and this review",
+      "repair_method": "121CN used OpenAlex to identify arXiv:2408.01415 as the same titled work; 121CX independently retrieved and checked that exact arXiv PDF",
+      "title_authors_method_match": true,
+      "registry_hash_match": true,
+      "sha256": "0e874caa102cb44eba2e2883baa5b6dd3e2cdb5ac2158f57b7f7c11b645c0e8f",
+      "file_size_bytes": 3056080,
+      "page_count": 18
+    },
+    "visual_review": "All 18 PDF pages were rendered at 144 DPI and visually inspected. Title, equations, framework figures, tables, ablations, analysis plots, references and appendix pages were legible; no blank, clipped, malformed or substituted page was found.",
+    "text_and_source_review": "The complete 9,268-word layout-preserving extraction and all 40 files in the arXiv source package were reviewed, including every section, all table sources, figures, bibliography and appendix. The source archive hash was f5fea5cd9792dbffaa24f5bd846f9b1a6e7d6e5be61c5fb939ccdc6cbe3cdf83.",
+    "linked_code_audit": {
+      "paper_link": "https://github.com/NUS-HPC-AI-Lab/Neural-Network-Parameter-Diffusion",
+      "remote_heads": [
+        "main@0ecca89fe6cdf4faaecad7d563c5e70d7c2a3d36",
+        "project-page@6610456cea726913e5c0063612e313d511a3a804"
+      ],
+      "main_history": "The accessible main branch contains exactly one commit dated 2025-01-03.",
+      "finding": "README, model and workspace files implement and describe the separate unconditional Neural Network Diffusion / P-Diff paper arXiv:2402.13144. Searches found no COND-P-DIFF task-condition pipeline or released reproduction path for this paper.",
+      "license": "No LICENSE or COPYING file found.",
+      "artifact_credit": "No implementation, checkpoint, generated parameter set, raw GLUE/FID measurement or environment receipt was credited to S120-013."
+    },
+    "peer_review_boundary": "The inspected v1 PDF says Preprint. Under review. The OpenReview API and PDF remained challenge-blocked, so no acceptance decision or review history was inferred."
+  },
+  "sections_reviewed": [
+    "abstract and section 1, motivation, claimed practicality and contribution scope",
+    "section 2, LoRA and conditional-diffusion preliminaries and equations 1-5",
+    "section 3, autoencoder, task normalization, condition encoders, conditional latent diffusion and equations 6-8",
+    "section 4.1, GLUE and style-transfer data, checkpoint collection, hardware, candidate generation, selection and baselines",
+    "sections 4.2-4.4, all result tables, normalization/data/condition/layer ablations, distance/distribution/trajectory analysis and interpolation",
+    "sections 5-6.1, related work, conclusion, limitations and future work",
+    "complete references and appendices A-C, including architecture hyperparameters, task prompts and constructed style-continuous split",
+    "complete arXiv source package and the exact paper-linked repository branches/history"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 1-3, abstract, sections 1-2",
+      "checked_for": "conditional high-performance parameter-generation claim, LoRA carrier, conditioning semantics and diffusion formulation"
+    },
+    {
+      "anchors": "pp. 3-5, sections 3.1-3.3, Figure 2 and equations 6-8",
+      "checked_for": "checkpoint dataset, task normalization, autoencoder representation, domain-specific condition projector and conditional reverse generation"
+    },
+    {
+      "anchors": "pp. 5-7, sections 4.1-4.3 and Tables 1-4",
+      "checked_for": "candidate selection, validation protocol, GLUE/FID results, model-soup baseline and ablation evidence"
+    },
+    {
+      "anchors": "pp. 7-9, sections 4.4-6.1 and Figures 3-4",
+      "checked_for": "non-memorization indicators, parameter trajectories, interpolation, limitations and strength of generalization language"
+    },
+    {
+      "anchors": "pp. 14-18, appendices B-C and Figures 5-7",
+      "checked_for": "architectures, training settings, LoRA configuration, natural-language conditions, constructed test gaps and PCA-based generalization analysis"
+    },
+    {
+      "anchors": "arXiv source package and linked GitHub repository",
+      "checked_for": "document completeness, exact experiment wording, implementation availability, code-paper match, history and licensing"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "COND-P-DIFF trains an autoencoder over task-normalized LoRA checkpoints and a condition-guided latent diffusion model, then maps random noise and task information to a new LoRA parameter vector.",
+      "anchors": "sections 3.1-3.3, Figure 2 and equations 6-8"
+    },
+    {
+      "claim": "For six GLUE tasks across BERT, RoBERTa and DeBERTa LoRA configurations, selected generated candidates usually attain validation scores close to the best original checkpoint or model soup, with mixed task-level wins and losses.",
+      "anchors": "sections 4.1-4.2 and Table 1"
+    },
+    {
+      "claim": "For four reported style groups, generated LoRA parameters merged into PixArt-alpha produce FID values close to the original/model-soup LoRAs and far better than the no-LoRA baseline.",
+      "anchors": "section 4.2 and Table 2"
+    },
+    {
+      "claim": "Task-wise normalization, richer task-description-plus-few-shot conditions, more checkpoint samples and generation across more LoRA layers improve selected reported results.",
+      "anchors": "section 4.3 and Tables 3-4"
+    },
+    {
+      "claim": "L2, t-SNE, trajectory and constructed style-continuity analyses suggest that generated parameters need not exactly copy collected checkpoints and can fill held-out intervals in a deliberately constructed one-dimensional style subspace.",
+      "anchors": "section 4.4, Figures 3-4 and appendix C, Figures 6-7"
+    }
+  ],
+  "function_concept_used_by_paper": "A learned conditional generator maps task information plus random noise to LoRA update tensors that alter a frozen pretrained model's behavior. This is a bounded meta-function pattern: a conditional latent diffusion network and decoder generate parameters for another network. It is not a general-purpose symbolic function compiler, does not generate arbitrary full programs, and supplies no semantic contract for the generated target behavior.",
+  "specification_language": "The generation condition is an untyped domain-specific signal: CLIP text embeddings of a natural-language task description plus two example-label pairs for GLUE, or a ResNet-derived style-image embedding for image generation. Architecture, LoRA rank/alpha, target layers, normalization, base model and training objectives further constrain generation. There are no typed input/output schemas, preconditions, postconditions, effect declarations, authority bounds, failure modes, service levels or compatibility clauses.",
+  "representation_or_carrier": {
+    "training_carrier": "The last N LoRA checkpoint tensors collected during ordinary fine-tuning for each task, flattened and task-wise Z-score normalized.",
+    "latent_carrier": "A 1D-CNN autoencoder maps a flattened LoRA vector to a learned latent; Gaussian noise is added during autoencoder reconstruction training.",
+    "generated_carrier": "A conditional latent diffusion process produces a latent from random noise and condition embeddings; the frozen decoder produces LoRA A/B parameter tensors.",
+    "execution_carrier": "Generated LoRA updates are merged into a fixed compatible pretrained BERT/RoBERTa/DeBERTa or PixArt-alpha base model before downstream inference.",
+    "boundary": "The carrier is architecture-, layer-, shape-, rank-, base-model- and normalization-specific. It is not a portable function object and the paper does not establish that nearby or distribution-matched weights are semantically equivalent."
+  },
+  "compiler_or_generator": {
+    "dataset_construction": "Ordinary LoRA fine-tuning supplies 150 late checkpoints per NLP configuration or 64 checkpoints per style group; this is prerequisite training data rather than a direct specification-to-artifact compiler.",
+    "learned_pipeline": "Train task-normalized parameter autoencoder; encode checkpoints; train a condition-guided latent DDPM in latent space; reverse-sample from noise; decode; de-normalize; reshape; merge into the compatible base model.",
+    "conditioning": "CLIP text embeddings encode task description plus two-shot examples; a ResNet-based projector encodes style images.",
+    "selection": "For NLP, 20 generated LoRA candidates are evaluated on the training set and the best is reported on the validation set.",
+    "classification": "This is a concrete stochastic learned parameter generator and therefore directly supports a bounded N3 pattern. It is not a semantics-preserving compiler and no target contract is statically checked."
+  },
+  "interpreter_or_runtime": "Runtime has two stages: the conditional diffusion sampler and autoencoder decoder generate a LoRA tensor, then ordinary framework operations merge it into one exact base architecture and run that target model. The target neural forward pass interprets neither a general function language nor effect declarations; compatibility depends on implicit tensor names, shapes, normalization statistics and LoRA placement.",
+  "state_or_effect_model": "Training mutates autoencoder, diffusion and LoRA checkpoints; stochastic sampling creates candidate latents; merging LoRA changes the effective target parameters. The paper models these tensor states but defines no external effects, capabilities, transactions, idempotence, compensation, privacy policy, rollback or side-effect isolation. Generated models are evaluated only on benchmark prediction or image-style behavior.",
+  "composition_rule": "The main composition is shape-compatible LoRA merge W0 + BA into a fixed base model after generation. The paper also averages collected checkpoints for a model-soup baseline and linearly interpolates two generated style LoRAs in a constructed continuity analysis. These operations are bounded parameter arithmetic under a common base/architecture; they are not a closed algebra for arbitrary functions, and no preservation theorem or automatic compatibility checker is supplied.",
+  "equivalence_notions": [
+    {
+      "notion": "downstream performance proximity",
+      "support": "Generated-candidate validation metrics are often close to the best original LoRA checkpoint and model-soup baseline across Table 1; style FID is likewise close in Table 2.",
+      "boundary": "Scalar score proximity is neither behavioral nor semantic equivalence. Results are mixed by task, no equivalence margin or paired test is defined, and NLP candidates are selected on the training set."
+    },
+    {
+      "notion": "parameter non-identity and distribution separation",
+      "support": "L2 plots, t-SNE projections and five sampling trajectories show generated vectors that differ from collected optimization checkpoints while retaining selected performance.",
+      "boundary": "L2/t-SNE separation does not establish a calibrated generated-weight distribution, functional novelty or lack of memorization; t-SNE is projection-sensitive and no statistical two-sample test is reported."
+    },
+    {
+      "notion": "interpolation continuity",
+      "support": "Linear interpolation between two generated style LoRAs yields visually gradual style changes, and a synthetic held-out-lambda experiment shows images at omitted intervals.",
+      "boundary": "This is a constructed one-dimensional subspace made from interpolated endpoint LoRAs and AI-generated images. It does not establish general out-of-distribution task generation or closure under arbitrary weight arithmetic."
+    }
+  ],
+  "validation_regime": {
+    "nlp": "Six GLUE tasks, three pretrained model families and multiple LoRA ranks are reported. For each task the method samples 20 generated LoRAs, chooses the training-set-best candidate and reports validation performance against best-original-validation and model-soup baselines.",
+    "vision": "PixArt-alpha LoRAs for style transfer are evaluated with FID on four displayed styles against original, model-soup and no-LoRA baselines; qualitative images are also shown.",
+    "ablations": "Training-set size, normalization, condition representation and generated-layer coverage are ablated for selected BERT rank-1 tasks. The paper does not report a full factorial design or uncertainty over training/sampling runs.",
+    "generalization_analysis": "L2, t-SNE, trajectories and interpolation are descriptive. Appendix C constructs 1,000 linearly interpolated endpoint parameter-image pairs, trains on alternating lambda intervals and evaluates held-out intervals with qualitative images/PCA rather than a broad natural task shift.",
+    "hardware": "Four NVIDIA A100 GPUs are named, with architecture and many optimizer/training settings in the appendix, but no wall time, energy, memory peak, software lock, seed policy or executable receipt is released.",
+    "artifact": "The arXiv source reconstructs the paper. The linked repository does not implement the conditional paper, so experiments cannot be independently replayed from the cited artifact.",
+    "statistical_boundary": "No confidence interval, standard deviation, significance/equivalence test, repeated end-to-end run count, sampling-success rate or multiple-selection correction is reported."
+  },
+  "uncertainty_model": "Generation is explicitly stochastic: inference begins from random noise, the autoencoder is trained with latent Gaussian noise, and 20 NLP candidates are sampled before training-set selection. The work provides five illustrative trajectories but no distribution over benchmark scores, failure probability, calibrated confidence, seed sensitivity, posterior semantics, abstention rule or propagation of uncertainty from condition encoding through LoRA generation to target outputs. Calling the method deterministic would be false.",
+  "lifecycle_and_provenance": "The paper identifies source checkpoints, task groups, normalization, base models, LoRA configurations, generator architecture and hardware at a narrative level. It does not publish immutable identifiers for training data slices, ordinary-fine-tuning checkpoints, learned autoencoder/diffusion checkpoints, generated candidates, chosen candidate, environment, seeds or raw results. The linked repository is a mismatched P-Diff artifact with a mutable branch and no license. No registry records compatibility, approval, deployment, monitoring, drift, deprecation, migration or rollback; generated-LoRA/base-model lineage remains implicit.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Natural-language task descriptions, examples, style images and architecture/LoRA constraints act as conditioning fragments, but they are untyped and omit behavioral, effect and lifecycle contracts."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "The paper directly defines checkpoint, normalized vector, learned latent and generated LoRA tensor carriers, all with explicit architecture/base compatibility boundaries."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "A concrete learned stochastic pipeline lowers task conditions and noise through conditional latent diffusion and a decoder into target LoRA tensors, although it is not semantics preserving."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Generated LoRA tensors are executable adaptation artifacts when merged with the exact base, but no actual checkpoint, manifest, immutable candidate receipt or matched implementation is released."
+    },
+    "N5_Interpreter": {
+      "status": "PARTIAL",
+      "reason": "The base model executes merged LoRA parameters, yet this is ordinary neural inference rather than an interpreter for a general FunctionSpec/effect language."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Reverse-diffusion trajectories, generated candidates and downstream evaluations expose trace stages, but no standardized trace schema, persisted run receipt or deterministic replay path exists."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Training-set candidate selection plus GLUE/FID/ablation analyses validate bounded predictive objectives, not semantic equivalence, calibration, safety or lifecycle fitness."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Same-base LoRA merge, checkpoint averaging and generated-LoRA interpolation are explicit bounded parameter-composition operations; arbitrary cross-base composition is unsupported."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "No versioned compatibility, lineage, approval, rollout, monitoring, deprecation or rollback registry is defined, and the paper-linked code does not match the method."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Conditions demonstrate that prose/examples/images can guide artifact generation, but the paper exposes the absence of typed I/O, effects, failures and acceptance criteria."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "LoRA merge, model-soup averaging and same-base interpolation are explicit weight-space composition patterns, bounded by common architecture, base, shape and normalization."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Downstream metrics and candidate selection provide a validation pattern while also showing the need for equivalence margins, repeated runs, selection-aware uncertainty and artifact-backed replay."
+    },
+    "GAP-018": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Tensor mutation and inference supply no effect types, external authority, transaction, compensation or rollback semantics."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "The multi-stage checkpoint-to-latent-to-generated-LoRA lifecycle makes provenance necessary, but the paper provides only narrative lineage and a mismatched code link rather than a governed registry."
+    },
+    "GAP-020": {
+      "status": "CONFIRMED",
+      "reason": "Random-noise generation and best-of-20 selection make stochastic uncertainty operationally central, while the missing score distributions and failure rates expose the exact uncertainty-interface gap."
+    }
+  },
+  "source_specific_reasoning": "CONFIRMED is appropriate for the bounded source-family claim: this exact paper implements a conditional learned generator whose output is a LoRA parameter artifact for another network. The prior metadata captured the high-level meta-function, conditioning and chained generation-execution pattern. 121CX corrects the carrier from generic hypernetwork parameters to checkpoint-trained conditional latent diffusion plus an autoencoder decoder; rejects deterministic uncertainty and generated-distribution matching as equivalence; and limits composition to compatible same-base LoRA arithmetic. Evidence strength is reduced by training-set best-of-20 selection, missing repeated-run uncertainty, a deliberately constructed style subspace and a paper-linked repository that contains the separate unconditional P-Diff work rather than this implementation.",
+  "confirmed_projection": "The paper directly supports a bounded Function OS design pattern in which a partial task specification conditions a stochastic generator that emits an executable, base-compatible parameter artifact, and a validator selects/evaluates generated candidates. It also shows that representation metadata, base compatibility, sampling uncertainty, candidate-selection provenance and post-generation validation must be first-class because a plausible task condition alone does not guarantee the intended behavior.",
+  "projection_boundary": "This projection is based on the exact 18-page arXiv v1 PDF, all rendered pages, complete extracted text, complete 40-file arXiv source package and an audit of the paper-linked repository and its exposed history. The experiments were not rerun because the cited repository does not implement COND-P-DIFF and no checkpoints/raw results were released. This model review is not a proof, empirical validation, statistical equivalence test, code reproduction, peer-review decision, validation of ignition or evidence that generated LoRAs are safe for deployment.",
+  "what_the_paper_does_not_support": [
+    "It does not define generated parameters as symbolic programs or provide a general function language.",
+    "It does not establish semantic, behavioral or statistical equivalence between a generated LoRA and a conventionally trained model.",
+    "It does not provide a semantics-preserving compiler or statically verify the task condition against the generated behavior.",
+    "It does not show arbitrary cross-model, cross-architecture or cross-base weight composition; its merges and interpolations assume compatible LoRA carriers.",
+    "It does not show that generated parameter distributions match the ordinary optimization distribution; it emphasizes visible differences instead.",
+    "It does not justify deterministic uncertainty; sampling starts from random noise and NLP reporting selects among 20 candidates.",
+    "It does not demonstrate unrestricted out-of-distribution task generation; the strongest held-out-style analysis uses a constructed interpolated one-dimensional subspace.",
+    "It does not report confidence intervals, standard deviations, equivalence margins, sampling failure rates or seed sensitivity.",
+    "It does not release the COND-P-DIFF implementation, checkpoints, generated candidates, raw metrics or immutable run receipts through its cited code link.",
+    "It does not define effects, capabilities, transactions, compensation, privacy, safety policy or rollback semantics.",
+    "It does not establish acceptance at a peer-reviewed venue; the exact PDF is marked Under review.",
+    "This review does not independently verify the reported GLUE, FID, ablation or generalization results."
+  ],
+  "limitations_and_failure_boundaries": [
+    "The method requires task-specific collections of late LoRA fine-tuning checkpoints, so it does not eliminate ordinary optimization or its data/compute cost.",
+    "Generated artifacts are tied to exact base-model architecture, parameter names/shapes, target layers, LoRA rank/alpha and task-normalization statistics.",
+    "NLP conditions cover six familiar GLUE tasks and include hand-written task descriptions plus two labeled examples; broad unseen task semantics are not tested.",
+    "For each NLP task, 20 candidates are sampled and the training-set-best is reported on validation, introducing selection effects whose variance is not measured.",
+    "The original baseline is itself the best validation checkpoint, model soup averages the checkpoint set, and full fine-tuning is shown without a uniform inferential comparison.",
+    "Reported task-level results are mixed: generated LoRAs are sometimes better, equal or worse than original/model soup, and no equivalence criterion is specified.",
+    "Style results display four categories although appendix data preparation describes 16 groups; coverage and selection of reported groups are not justified statistically.",
+    "FID and qualitative images do not measure semantic correctness, safety, robustness, privacy, bias or action reliability of the adapted model.",
+    "L2 distance, t-SNE, PCA and trajectory plots are descriptive and cannot by themselves rule out memorization or establish distributional generalization.",
+    "The Appendix C dataset is created by linearly interpolating two endpoint LoRAs and generating associated images, so held-out intervals are not independent natural domains.",
+    "The authors explicitly state that generalizability is limited by available parameter data and that enough sampling of weight space is difficult.",
+    "Memory demand for large architectures and condition representation remain unresolved according to the paper.",
+    "Four A100 GPUs are named, but wall time, energy, peak memory, seed policy, software versions and repeated-run statistics are absent.",
+    "The paper's linked GitHub main branch contains only the separate P-Diff implementation and one accessible commit, so the conditional experiment pipeline is not reproducible from that artifact.",
+    "No code license is present, and no immutable release/tag binds document, implementation, data, checkpoints and results.",
+    "OpenReview access remained challenge-blocked; no review, rebuttal, acceptance or later-version claims were inferred."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "METADATA_ONLY",
+    "verdict": "BOUNDED_CONDITIONAL_PARAMETER_GENERATOR_CONFIRMED; GENERIC_HYPERNETWORK_EQUIVALENCE_AND_DETERMINISM_TEMPLATE_CORRECTED",
+    "corrections": [
+      "Replaced Anonymous/OpenReview-only metadata with the seven named authors and exact arXiv v1/OpenReview binding.",
+      "Upgraded from no full text to an all-18-page visual/full-text/source review with exact hash, size and page count.",
+      "Confirmed that task conditions plus random noise are lowered through a conditional latent diffusion model and decoder into LoRA tensors for another network.",
+      "Replaced generic hypernetwork_parameters with the actual late-checkpoint, task-normalized vector, autoencoder latent, diffusion latent and generated-LoRA carriers.",
+      "Replaced deterministic uncertainty with the explicit stochastic sampler, latent Gaussian noise and best-of-20 NLP candidate selection.",
+      "Rejected generated_weight_distribution match as an equivalence criterion; the paper reports score proximity and descriptive parameter-distribution differences without an equivalence test.",
+      "Bounded chained_generation to generator-decode-de-normalize-reshape-LoRA-merge-target execution under exact base/shape compatibility.",
+      "Confirmed same-base LoRA merge, checkpoint averaging and interpolation as limited composition operations, not an algebra for arbitrary functions.",
+      "Recorded training-set candidate selection, mixed per-task results, missing uncertainty statistics and constructed style-subspace limits.",
+      "Audited the cited repository and denied reproduction credit because its accessible code/history implements the separate unconditional P-Diff paper.",
+      "Added explicit specification-language, lifecycle/provenance, code-license, effects, safety and rollback boundaries.",
+      "Did not call reported experiments proof, independent empirical validation or semantic equivalence."
+    ],
+    "prior_card_superseded": true
+  }
+}
