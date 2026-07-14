@@ -1,0 +1,31 @@
+{
+  "step": 4,
+  "action": "ENHANCED_VALIDATION",
+  "timestamp": "2026-07-14T17:38:36Z",
+  "validators": {
+    "json_jsonl_strict_parse": true,
+    "no_duplicate_keys": true,
+    "phase2_semantic_sum_22": true,
+    "identity_sum_22": true,
+    "s120_012_partial": true,
+    "s120_011_corrected": true,
+    "s120_012_corrected": true,
+    "s120_014_corrected": true,
+    "s120_035_verified": true,
+    "unknown_has_reason": true,
+    "empty_verified_fields_zero": true,
+    "canonical_84_unique": true,
+    "family_sum_10": true,
+    "ledger_18_unique": true,
+    "frozen_zero_diff": true,
+    "credential_scan_clean": true,
+    "pr_merge_close_zero": true,
+    "cross_file_s120_012": true,
+    "cross_file_identity_counts": true
+  },
+  "overall": true,
+  "errors": [],
+  "total_checks": 19,
+  "passed": 19,
+  "failed": 0
+}
