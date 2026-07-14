@@ -1,0 +1,158 @@
+{
+  "source_id": "S120-050",
+  "canonical_title": "Refinement Reflection: Complete Verification with SMT",
+  "authors": ["Niki Vazou", "Anish Tondwalkar", "Vikraman Choudhury", "Ryan G. Scott", "Ryan R. Newton", "Philip Wadler", "Ranjit Jhala"],
+  "year": 2018,
+  "version": "2017-11-09 prepublication 31-page manuscript corresponding to PACMPL 2 (POPL), Article 53, January 2018; 55-page extended version also reviewed",
+  "doi_or_identifier": "10.1145/3158141",
+  "identifier": "DOI:10.1145/3158141; arXiv:1711.03842",
+  "url": "https://nikivazou.github.io/static/popl18/refinement-reflection.pdf",
+  "source_family": 7,
+  "source_family_name": "refinement types and verified functional programming",
+  "license": "Final publication is CC BY; reviewed author manuscript and extended version were publicly distributed; linked LiquidHaskell repository is BSD-3-Clause",
+  "sha256": "aac09f5e36b5113f41a0c47adf1e5d230c26d1fd3abede797f977f59fe49fa7c",
+  "file_size_bytes": 1167388,
+  "page_count": 31,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "publication_identity": "Proceedings of the ACM on Programming Languages 2 (POPL), Article 53, pp. 53:1-53:31, January 2018",
+    "identity_cross_checks": ["POPL 2018 research-paper page", "POPL 2018 artifact-evaluation page", "ACM DOI metadata", "author paper page"],
+    "registered_manuscript_caveat": "The hash-matched PDF is a November 2017 prepublication manuscript whose footer still contains placeholder DOI/article metadata; final DOI and article identity were obtained from primary publication records rather than silently attributed to the file.",
+    "pdf_visually_checked_pages": [1, 8, 24, 26, 29],
+    "extended_version": {
+      "url": "https://nikivazou.github.io/static/popl18/extended-refinement-reflection.pdf",
+      "sha256": "9b19cfed9b9ac8fffbc7bf56fcbc3cbd0f6e950878fe8a536a948a8ec0aa2041",
+      "file_size_bytes": 1332939,
+      "page_count": 55,
+      "reviewed_for": "omitted proofs, lambda reasoning, proof combinators, implementation limits and deterministic-parallelism evaluation"
+    },
+    "code_artifact": {
+      "repository": "https://github.com/ucsd-progsys/liquidhaskell",
+      "branch": "popl18",
+      "reviewed_commit": "244f572e85fa088a3cd9b198050b84ddc4d69410",
+      "commit_date": "2017-10-14",
+      "license": "BSD-3-Clause",
+      "tracked_files": 2616,
+      "benchmark_tree": "benchmarks/popl18 contains 33 with-PLE positive files, 37 without-PLE positive files, 14 negative files and one TODO, totaling 10,312 lines",
+      "dependency_identity": "Stack lts-8.9 / GHC 8.0.2 with liquid-fixpoint submodule 109a52f23be8d42cef15db222ac30179be58de60",
+      "static_correspondence": "The exact branch contains reflection/automatic-instance plumbing, LawsForLists, natural-deduction, arithmetic, typeclass-law, SAT-solver and unification benchmarks corresponding to core paper categories.",
+      "runtime_boundary": "The historical GHC/Stack toolchain was not available on this machine and benchmarks were not rerun; source and configuration were reviewed statically. The deterministic-parallelism artifacts named in the extended version are not all located under the same popl18 benchmark tree."
+    }
+  },
+  "sections_reviewed": [
+    "overview, refinement reflection, proof combinators and list laws",
+    "natural-deduction encoding and its non-isomorphism",
+    "lambda-R denotational system, reflection and soundness",
+    "lambda-S QF-EUFLIA translation and algorithmic subtyping",
+    "PLE algorithm, soundness, equational completeness and transparent-environment termination",
+    "all benchmark groups, proof effort, query counts and timing",
+    "theorem-prover comparison, limitations and future work",
+    "extended proofs of soundness, translation and PLE termination",
+    "extended lambda-equivalence, extensionality and proof-combinator implementation",
+    "extended engineering limits and deterministic-parallelism experiments",
+    "LiquidHaskell popl18 branch at exact commit"
+  ],
+  "page_or_section_anchors": [
+    {"anchors": "§§2-3, pp. 3-14", "checked_for": "proof-as-program specifications, reflection, induction, PLE automation and natural-deduction expressiveness"},
+    {"anchors": "§4, pp. 14-18, Theorem 4.1", "checked_for": "lambda-R denotation, totality, reflection restriction and soundness"},
+    {"anchors": "§5, pp. 19-20, Theorem 5.2", "checked_for": "first-order translation, decidable QF-EUFLIA checking and conservative algorithmic soundness"},
+    {"anchors": "§6, pp. 21-25, Theorems 6.2, 6.10 and 6.16", "checked_for": "PLE soundness, exact completeness relation and transparent-environment termination"},
+    {"anchors": "§7, Table 1, pp. 26-27", "checked_for": "benchmark categories, proof lines, timing, SMT queries and runtime erasure"},
+    {"anchors": "§§8-9, pp. 27-31", "checked_for": "certificate/trusted-base comparison, debugging and interaction limits"},
+    {"anchors": "extended §§H-I, pp. 47-53", "checked_for": "incomplete but sound lambda instantiation, assumed extensionality, unverified operator and implementation limits"},
+    {"anchors": "extended §J, pp. 53-55", "checked_for": "parallel runtime results and floating-point associativity caveat"},
+    {"anchors": "repository commit 244f572", "checked_for": "paper-era code, dependencies, benchmark presence and source correspondence"}
+  ],
+  "paper_core_claims": [
+    {"claim": "Refinement reflection strengthens a total function's output type with an equality to its definition, so dependent application exposes precise instances without universal axioms.", "anchors": "§§2.2 and 4.4"},
+    {"claim": "Propositions-as-types plus dependent functions, pairs and sums can encode natural-deduction proofs while SMT handles quantifier-free obligations.", "anchors": "§3 and Theorem 3.1"},
+    {"claim": "PLE repeatedly unfolds enabled guarded definitions and is sound, complete for the paper's equational-proof relation, and terminating under total reflected definitions and transparent environments.", "anchors": "§6, Theorems 6.2, 6.10 and 6.16"},
+    {"claim": "In the reported suite PLE reduces proof code from 1,524 to 638 lines while total verification time changes from 148.76 to 150.88 seconds and SMT queries rise from 1,626 to 4,068.", "anchors": "Table 1 and §7"},
+    {"claim": "The approach verifies selected arithmetic, typeclass-law, higher-order, SAT/unification and deterministic-parallelism properties in LiquidHaskell.", "anchors": "§7 and extended §J"}
+  ],
+  "function_concept_used_by_paper": "A total Haskell function is an executable definition and a logical carrier: reflection compiles its guarded definition into the output refinement, while proof functions inhabit specifications. PLE evaluates reflected applications in the solver logic to validate equational properties.",
+  "representation_or_carrier": "Carriers include refinement types, proof-returning Haskell functions, reflected function symbols, guarded definitions, lambda-R programs, lambda-S QF-EUFLIA terms, definitional and logical environments, unfold instances and benchmark modules. Reflection is restricted to provably total functions; non-reflected diverging functions may coexist but cannot supply logical definitions.",
+  "specification_language": "Dependent refinements encode pre/postconditions and arbitrary natural-deduction proposition structure using functions, pairs and sums; native predicates stay quantifier-free. Reflected equalities expose total user functions. This is expressive for pure functional properties but requires user specifications, termination metrics, case/induction structure and helper lemma instantiations; effects, resources, privacy, deployment and lifecycle are not specified.",
+  "compiler_or_generator": "LiquidHaskell checks totality, converts reflected definitions to guarded form, defunctionalizes higher-order terms into first-order SMT symbols, generates QF-EUFLIA VCs and lets PLE unfold enabled instances until proof or fixpoint. The compiler does not synthesize induction or arbitrary lemmas, and historical class-method/module/data-type engineering restrictions narrow the accepted source language.",
+  "interpreter_or_runtime": "Proofs and refinements are compile-time artifacts; proof arguments are intended never to be evaluated and can be rewritten to unit. Executable code uses ordinary lazy Haskell runtime. PLE is a verifier-side interpreter of logical definitions, not runtime monitoring. The trusted path includes LiquidHaskell translation, SMT answers and assumed combinators, and the paper notes mature proof assistants instead emit small checkable certificates.",
+  "composition_rule": "Dependent function application instantiates reflected definitions; proof combinators and natural-deduction constructors compose propositions; recursion supplies induction; PLE composes guarded unfoldings and SMT theory reasoning; verified typeclass-style laws constrain parallel reducers. This is symbolic proof composition, not a cross-representation composer or adaptive router.",
+  "state_or_effect_model": "The core theory is pure, total functional evaluation. Divergence is tracked as a soundness boundary and non-total functions cannot be reflected. The deterministic-parallelism case uses algebraic-law specifications over existing parallel libraries, but concurrency semantics and effects are not modeled in lambda-R/lambda-S. Mutable state, exceptions, I/O, nondeterminism, probability, distributed failures and lifecycle effects are outside the core proof system.",
+  "uncertainty_model": "Soundness and completeness judgments are categorical relative to the formal systems and assumptions. Completeness means: if a proof exists in the paper's equational-proof relation, PLE finds it; it does not mean all true functional properties are automatically proved. Evaluation reports one machine and aggregate counts without repeated-run uncertainty. Failure may mean a false goal, missing induction/lemma, nontransparent environment, implementation restriction, timeout or specification/tool defect; no calibrated confidence is supplied.",
+  "validation_regime": {
+    "formal": "denotational soundness, preservation, conservative algorithmic checking, PLE soundness, equational completeness and termination proofs; the extended version contains supporting proof detail",
+    "implementation": "LiquidHaskell popl18 branch with exact historical dependency configuration and paper-aligned benchmark modules",
+    "benchmarks": "1,176 implementation lines, 1,279 specification lines, 13 reported benchmark groups spanning arithmetic, class laws, higher-order properties, functional correctness and deterministic parallelism",
+    "reported_result": "PLE proof lines 1,524 to 638; verification 148.76s to 150.88s; SMT queries 1,626 to 4,068",
+    "artifact_status": "listed in the POPL 2018 Artifact Evaluation track; current listing does not expose a stable evaluation report or immutable artifact receipt",
+    "boundary": "No independent rerun was performed, several artifacts/configurations are historical, and the paper's parallel case studies include assumptions not captured by the pure core theory."
+  },
+  "equivalence_notions": [
+    {"notion": "denotational refinement validity", "support": "TYPING_IMPLIES_MEMBERSHIP_IN_TYPE_DENOTATION", "boundary": "Depends on total refinements, faithful translation and trusted implementation."},
+    {"notion": "equational-proof completeness", "support": "PLE_FINDS_A_PROOF_DERIVABLE_BY_THE_DEFINED_UNFOLDING_RELATION", "boundary": "Not completeness for all valid program properties; induction and lemmas remain user supplied."},
+    {"notion": "lambda equality", "support": "FINITE_ALPHA_BETA_INSTANCES_PLUS_OPTIONAL_EXTensionality_ASSUMPTION", "boundary": "The extended version explicitly says lambda reasoning is sound but not provably complete and extensionality is an assumed, unimplemented combinator."},
+    {"notion": "typeclass law", "support": "REFINEMENT_PROOFS_FOR_REDEFINED_SELECTED_INSTANCES", "boundary": "Paper-era implementation cannot reflect class methods and must redefine instances; library-provided instances are not directly verified."},
+    {"notion": "deterministic parallel composition", "support": "VERIFIED_ASSOCIATIVITY_ORDERING_AND_COMMUTATIVITY_CONTRACTS", "boundary": "One n-body case models floating-point doubles as mathematical Real even though floating-point addition is not associative."}
+  ],
+  "lifecycle_and_provenance": "The publication has a DOI, author manuscripts, an extended version, an artifact-evaluation listing and a historical repository branch with exact commit and submodule identity. The PDF itself contains placeholder metadata, and the branch is not an immutable release. There is no signed manifest joining paper tables to benchmark runs, seed/timing receipts, solver binary, machine image, output hashes, approval state, revalidation policy, compatibility migration, rollback, supersession or retirement. Modern LiquidHaskell behavior must not be assumed identical to this 2017 artifact.",
+  "limitations_and_failure_boundaries": [
+    "'Complete verification' is scoped to completeness of PLE for a defined equational-proof relation, not automatic proof of every true program property.",
+    "Sound reflection requires totality; reflecting a divergent definition makes the logic inconsistent, and lazy or unsoundError escape hatches can create invalid proof terms.",
+    "Users still supply case splits, recursion/induction, lemma instantiations and high-level proof structure.",
+    "PLE termination is proven for transparent environments and total reflected definitions, not arbitrary SMT contexts.",
+    "The lambda encoding is explicitly not provably complete; extensional equality is supplied by an assumed, unimplemented combinator.",
+    "The proof library includes an undefined assume-equality operator that can prove any statement and marks proofs using it incomplete.",
+    "Paper-era implementation cannot reflect class instance methods, requires redefined instances and user-defined datatypes, uses typed refinement lambdas, and lacks module support.",
+    "The paper contrasts its larger trusted base with theorem provers that emit small independently checkable certificates; certificate generation is future work.",
+    "The reported evaluation is a single historical run without confidence intervals or independently preserved result receipts; PLE increases SMT queries 2.5x overall.",
+    "The deterministic n-body example uses floating-point doubles while approximating them as associative mathematical Real, so its algebraic proof does not establish exact runtime associativity or bitwise schedule independence.",
+    "Core theory covers pure code and does not verify neural weights, arbitrary effects, probabilistic semantics, privacy or registry lifecycle.",
+    "The registered 31-page PDF has placeholder publication metadata and must be cross-referenced with final DOI records."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not provide a decision procedure complete for all functional correctness or all Haskell programs.",
+    "It does not eliminate trusted specifications, totality assumptions, SMT/LiquidHaskell implementation trust or unsound escape hatches.",
+    "It does not prove floating-point algebraic laws that fail under actual IEEE arithmetic or all parallel runtime behavior.",
+    "It does not validate neural/weight functions, runtime effects, calibrated uncertainty, artifact lifecycle governance or the complete Function OS."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {"status": "CONFIRMED", "reason": "Dependent refinements and propositions-as-types provide a highly expressive bounded FunctionSpec language for total pure functions."},
+    "GAP-016": {"status": "CONFIRMED", "reason": "Reflection, lambda-S translation and PLE form a concrete solver-backed specification-to-verification compiler."},
+    "GAP-017": {"status": "CONFIRMED", "reason": "Denotational validity, operational equality, equational derivability, lambda equivalence and algebraic laws are formally distinguished."},
+    "GAP-018": {"status": "CONFIRMED", "reason": "Proof combinators, dependent application, unfolding and algebraic constraints provide explicit symbolic composition rules."},
+    "GAP-019": {"status": "CONFIRMED", "reason": "Formal proofs, exact implementation branch, multiple benchmark families and effort/timing comparisons provide substantial bounded validation."},
+    "GAP-020": {"status": "PARTIAL", "reason": "VCs, unfoldings and proof code are observable, while calibrated uncertainty, checkable result receipts and lifecycle health are absent."}
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {"status": "CONFIRMED", "reason": "Refinement propositions specify total pure functions and algebraic laws precisely."},
+    "N2_Representation": {"status": "CONFIRMED", "reason": "Types, reflected definitions, guarded formulas, proof programs and logical environments are explicit carriers."},
+    "N3_Compiler": {"status": "CONFIRMED", "reason": "LiquidHaskell and PLE translate, unfold and discharge specifications with SMT."},
+    "N4_Artifact": {"status": "CONFIRMED", "reason": "Verified Haskell modules and proof programs are executable artifacts, though certificate and immutable packaging are incomplete."},
+    "N5_Interpreter": {"status": "CONFIRMED", "reason": "Concrete Haskell semantics and logical PLE evaluation are explicitly connected while kept distinct."},
+    "N6_ExecutionTrace": {"status": "PARTIAL", "reason": "VCs, SMT queries and unfold chains are available internally but no durable proof/result receipt is defined."},
+    "N7_Validator": {"status": "CONFIRMED", "reason": "Soundness, bounded completeness, implementation and benchmark evidence make this a strong symbolic validator."},
+    "N8_ComposerRouter": {"status": "CONFIRMED", "reason": "Proof and function composition are explicit; no input-dependent router or cross-carrier composer is supplied."},
+    "N9_VersionedRegistry": {"status": "PARTIAL", "reason": "DOI, branch, commit and submodule identity exist without full run lineage, health, rollback or retirement governance."}
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "PARTIAL_PROVISIONAL_KIMI_K2_7",
+    "verdict": "ACCEPTED_WITH_MAJOR_COMPLETENESS_IMPLEMENTATION_AND_PROVENANCE_CORRECTIONS_TO_CONFIRMED_BOUNDED_SUPPORT",
+    "corrections": [
+      "The prior card correctly identified reflection and pure-Haskell scope but did not define what 'complete' means; completeness is now restricted to the formal equational-proof relation.",
+      "The final DOI/article identity was separated from the hash-matched prepublication PDF's placeholder metadata.",
+      "The 55-page extended version was reviewed for proofs, lambda limits, assumed operators, engineering restrictions and floating-point caveat.",
+      "The official popl18 branch, exact commit, submodule, historical toolchain and benchmark tree were reviewed; experiments were not rerun.",
+      "Formal, empirical, uncertainty, certificate, effect and lifecycle boundaries were independently recorded."
+    ],
+    "prior_card_superseded": true
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "The work gives direct formal, implementation and benchmark support for a rich FunctionSpec, symbolic Representation, solver-backed Compiler, proof-bearing Haskell Artifact, concrete/logical Interpreter pair, Validator and proof Composer. It does not solve cross-carrier equivalence, runtime effects, calibrated uncertainty, checkable result receipts or VersionedRegistry lifecycle.",
+  "source_specific_reasoning": "CONFIRMED applies to the bounded symbolic architecture, not the title read literally. The paper precisely defines reflection and PLE, proves denotational and algorithmic soundness, proves completeness for its equational relation and termination under transparent total contexts, implements the approach and evaluates diverse examples. The extreme review narrows the claim because high-level proof structure remains manual, lambda reasoning is not complete, extensionality is assumed, an unsafe proof operator exists, paper-era engineering restrictions are material, and a floating-point parallel example uses a mathematically invalid associativity approximation.",
+  "projection_boundary": "These are 121CX projections from the exact hash-matched 31-page manuscript, the 55-page extended version, primary POPL/DOI metadata, the prior provisional card and static review of LiquidHaskell commit 244f572. Theorems are proof-backed within the stated systems; benchmark results were not independently rerun. This is not universal verification, proof of all runtime behavior, neural/weight validation or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T05:59:52Z"
+}
