@@ -1,54 +1,17 @@
 {
-  "agent": "qclaw/pool-glm-5.2-night",
-  "reasoning_level": "high",
-  "batch": "ignition-121q2-night-acceptance-family-synthesis-20260714",
-  "cx_phase": "Phase 2: remaining 9 non-Codex evidence card cross-model acceptance → Phase 3: source family synthesis",
-  "base_pr": 34,
-  "base_head": "5229e224eb500daaf4411e072c15f973e502117a",
-  "branch": "records/ignition-121q2-night-acceptance-family-synthesis-20260714",
-  "121q1_state": {
-    "last_completed_cx_step": 101,
-    "next_cx_step": 102,
-    "next_source_id": "S120-017",
-    "acceptance_count": 4
-  },
-  "current_step": 10,
-  "total_steps": 24,
+  "task": "121Q2R",
+  "instruction_commit": "c7ec5acc49d74ceefa6b52d80f4940c6e1e9e07b",
+  "baseline_head": "fae8241cfc4035b411bc71305a10650edea3181c",
+  "current_step": 0,
+  "current_step_status": "COMPLETE",
+  "next_step": 1,
+  "next_step_description": "Canonical queue reconciliation",
+  "draft_pr": 35,
   "phase_2_acceptance": {
-    "total_prior": 22,
-    "completed_prior": 13,
-    "remaining": 9,
-    "blocked": 1,
-    "scope": [
-      "S120-017",
-      "S120-018",
-      "S120-021",
-      "S120-030",
-      "S120-035",
-      "S120-039",
-      "S120-045",
-      "S120-047",
-      "S120-053"
-    ]
+    "canonical_prior22_total": 22,
+    "canonical_completed": 8,
+    "canonical_remaining": 14,
+    "note": "8 completed = S120-017/018/021/030/035/039/045 + S120-047(pending) + S120-053(pending). S120-033/036 are NOT canonical Phase 2 members."
   },
-  "family_synthesis": {
-    "scope": [
-      "F1",
-      "F2",
-      "F3",
-      "F4",
-      "F5",
-      "F6",
-      "F7",
-      "F8",
-      "F9",
-      "F10"
-    ],
-    "completed": 0
-  },
-  "integrity_flags": [
-    "SYSTEMATIC_SOURCE_IDENTITY_INTEGRITY_RISK"
-  ],
-  "last_updated": "2026-07-14T16:42:51Z",
-  "status": "IN_PROGRESS"
+  "last_updated": "2026-07-14T16:53:33Z"
 }

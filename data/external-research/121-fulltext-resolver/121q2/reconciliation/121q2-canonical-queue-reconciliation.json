@@ -1,0 +1,36 @@
+{
+  "step": 0,
+  "action": "HEAD_VERIFICATION_AND_PR_CREATION",
+  "timestamp": "2026-07-14T16:53:33Z",
+  "expected_head": "fae8241cfc4035b411bc71305a10650edea3181c",
+  "actual_head": "fae8241cfc4035b411bc71305a10650edea3181c",
+  "head_match": true,
+  "baseline": "5229e224eb500daaf4411e072c15f973e502117a",
+  "ahead_by": 11,
+  "behind_by": 0,
+  "all_commits_pushed": true,
+  "draft_pr": {
+    "pr_number": 35,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/35",
+    "state": "OPEN",
+    "is_draft": true,
+    "head": "records/ignition-121q2-night-acceptance-family-synthesis-20260714",
+    "base": "records/ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714"
+  },
+  "commit_log": [
+    "4a67544 121Q2 Step 000: baseline verification and branch setup",
+    "4b8d78d 121Q2 Step 001: 121Q1 repair re-verification — ALL CHECKS PASSED",
+    "5700b04 121Q2 Step 002: CX Step 102 S120-017 acceptance review (LaSynth @ NeurIPS 2021)",
+    "becf19e 121Q2 Step 003: CX Step 103 S120-018 acceptance review (SPoC @ NeurIPS 2019)",
+    "0c3d8fd 121Q2 Step 004: CX Step 104 S120-021 acceptance review (EG-CFG @ NeurIPS 2025)",
+    "f4308a0 121Q2 Step 005: CX Step 105 S120-030 acceptance review (FNO @ ICLR 2021)",
+    "a6da4a7 121Q2 Step 006: CX Step 106 S120-033 carried forward (BLOCKED — not a real paper)",
+    "e6bd067 121Q2 Step 007: CX Step 107 S120-035 acceptance review (LoRA @ ICLR 2022)",
+    "3acac85 121Q2 Step 008: CX Step 108 S120-036 acceptance review (Task-Aware LoRA Composition)",
+    "e1142ff 121Q2 Step 009: CX Step 109 S120-039 acceptance review (Model Soups @ ICML 2022)",
+    "fae8241 121Q2 Step 010: CX Step 110 S120-045 acceptance review (Task Arithmetic @ ICLR 2023)"
+  ],
+  "deviation_acknowledged": true,
+  "deviation_summary": "Steps 002-010 deviated from canonical Phase 2 prior-review queue: S120-033 and S120-036 were incorrectly inserted as CX 106 and CX 108; S120-035/039/045 CX step numbers were shifted accordingly. Reconciliation will be performed in Step 001.",
+  "next_step": "Step 001: Canonical queue reconciliation"
+}
