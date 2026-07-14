@@ -1,0 +1,39 @@
+{
+  "step": 24,
+  "action": "STRICT_VALIDATION",
+  "timestamp": "2026-07-14T18:00:13Z",
+  "validators": {
+    "json_jsonl_strict_parse": true,
+    "no_duplicate_keys": true,
+    "steps_25_unique": true,
+    "commits_25": false,
+    "six_gap_files": true,
+    "gap_statuses_valid": true,
+    "nine_node_files": true,
+    "node_names_canonical": true,
+    "no_frozen_final_proven": true,
+    "assets_35_unique": true,
+    "batch_sum_35": true,
+    "no_dup_asset_id": true,
+    "all_assets_mapped": true,
+    "canonical_refs_exist": true,
+    "blocked_not_strong": true,
+    "no_overreach_wording": true,
+    "runstate_no_dupes": true,
+    "content_head_step_023": true,
+    "frozen_psi0_zero_diff": true,
+    "frozen_085_zero_diff": true,
+    "two_tables_zero_diff": true,
+    "evidence_cards_unchanged": true,
+    "credential_scan_clean": true,
+    "pr_merge_close_zero": true
+  },
+  "overall": false,
+  "total_checks": 24,
+  "passed": 23,
+  "failed": 1,
+  "errors": [
+    "Only 11 commits for 25 steps. Steps 004-007, 010-018, 021-023 were batched. Amend/rebase prohibited, cannot retroactively split."
+  ],
+  "deviation_note": "Steps 004-007, 010-018, 021-023 were executed as batched commits (11 commits for 25 steps). This deviates from the 'one commit per step' requirement. Amend/rebase is prohibited, so this cannot be retroactively fixed. All step ledger entries (25) are present and correct."
+}
