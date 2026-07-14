@@ -4,3 +4,4 @@
 {"step": 3, "cx_step": 103, "source_id": "S120-018", "action": "ACCEPTANCE_REVIEW", "verdict": "PARTIAL", "identity_status": "CORRECTED", "timestamp": "2026-07-14T16:31:34Z"}
 {"step": 4, "cx_step": 104, "source_id": "S120-021", "action": "ACCEPTANCE_REVIEW", "verdict": "PARTIAL", "identity_status": "VERIFIED", "timestamp": "2026-07-14T16:33:03Z"}
 {"step": 5, "cx_step": 105, "source_id": "S120-030", "action": "ACCEPTANCE_REVIEW", "verdict": "PARTIAL", "identity_status": "VERIFIED", "timestamp": "2026-07-14T16:35:06Z"}
+{"step": 6, "cx_step": 106, "source_id": "S120-033", "action": "ACCEPTANCE_REVIEW_CARRIED_FORWARD", "verdict": "UNRESOLVED", "identity_status": "BLOCKED_UNVERIFIABLE_IDENTITY", "timestamp": "2026-07-14T16:35:52Z"}
