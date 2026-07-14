@@ -2,25 +2,24 @@
   "task": "121Q2R",
   "instruction_commit": "c7ec5acc49d74ceefa6b52d80f4940c6e1e9e07b",
   "baseline_head": "fae8241cfc4035b411bc71305a10650edea3181c",
-  "current_step": 1,
+  "current_step": 2,
   "current_step_status": "COMPLETE",
-  "next_step": 2,
-  "next_step_description": "CX Step 109: S120-047 acceptance review",
+  "next_step": 3,
+  "next_step_description": "CX Step 110: S120-053 acceptance review",
   "draft_pr": 35,
   "phase_2_acceptance": {
     "canonical_prior22_total": 22,
-    "canonical_completed": 20,
-    "canonical_remaining": 2,
+    "canonical_completed": 21,
+    "canonical_remaining": 1,
     "remaining_sources": [
-      "S120-047",
       "S120-053"
     ],
-    "next_cx_step": 109,
-    "next_source_id": "S120-047",
+    "next_cx_step": 110,
+    "next_source_id": "S120-053",
     "supplemental_sources": [
       "S120-033",
       "S120-036"
     ]
   },
-  "last_updated": "2026-07-14T16:55:50Z"
+  "last_updated": "2026-07-14T16:56:59Z"
 }
