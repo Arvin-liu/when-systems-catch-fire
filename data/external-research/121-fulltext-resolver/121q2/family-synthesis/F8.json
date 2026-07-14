@@ -1,0 +1,63 @@
+{
+  "family_id": "F8",
+  "family_name": "Computational Effects",
+  "description": "Algebraic effects, effect handlers, monads",
+  "canonical_included_source_ids": [
+    "S120-053"
+  ],
+  "total_sources": 1,
+  "verified_identity_count": 1,
+  "corrected_identity_count": 0,
+  "blocked_identity_count": 0,
+  "unknown_identity_count": 0,
+  "confirmed_semantic_count": 0,
+  "partial_semantic_count": 1,
+  "unresolved_semantic_count": 0,
+  "not_found_semantic_count": 0,
+  "strongest_supported_claims": [
+    "Handlers for arbitrary algebraic effects via universal property",
+    "Sound denotational semantics via free model homomorphisms",
+    "Unifies exceptions, I/O, concurrency, state, timeout, rollback"
+  ],
+  "unsupported_or_overclaimed_claims": [
+    "Implementation in programming language",
+    "Parallel handling",
+    "Operational semantics"
+  ],
+  "within_family_disagreements": [
+    "None — single paper"
+  ],
+  "evidence_limitations": [
+    "Evidence limited to fulltext-reviewed sources; sources without fulltext review not included",
+    "Identity chain issues may affect some sources (see identity ledger)",
+    "Semantic verdicts are based on independent model review, not human expert validation"
+  ],
+  "candidate_function_os_implications": [
+    "N5 Interpreter: STRONGEST mathematical foundation — handlers as homomorphisms",
+    "N6 ExecutionTrace: notable — computation tree as structured trace",
+    "N1 FunctionSpec: partial — algebraic theories as spec",
+    "N8 ComposerRouter: partial — handler composition via theory combination"
+  ],
+  "candidate_gap_implications": [
+    "GAP-015: partial — algebraic theories as effect specification",
+    "GAP-018: partial — effect operations as state transitions",
+    "GAP-020: weak — denotational only"
+  ],
+  "prohibited_wording": [
+    "This family validates Function OS",
+    "This family proves the ignition framework",
+    "These papers constitute mathematical proof",
+    "Function OS is verified by these sources"
+  ],
+  "confidence_basis": "Based on canonical semantic index (Step 006) with priority: 121Q2R > 121Q2 > 121Q1 > 121CX > evidence-card. Only fulltext-reviewed sources included.",
+  "synthesized_at": "2026-07-14T17:01:06Z",
+  "included_sources": [
+    {
+      "source_id": "S120-053",
+      "title": "Handlers of Algebraic Effects",
+      "verdict": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "canonical_source": "121Q2R"
+    }
+  ]
+}
