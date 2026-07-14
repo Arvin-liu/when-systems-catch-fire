@@ -1,0 +1,99 @@
+{
+  "task": "121Q2V",
+  "status": "COMPLETE",
+  "timestamp": "2026-07-14T17:22:35Z",
+  "baseline": {
+    "ignition_head": "a344c20c29d78d8e7c52e0eca53c64eb930a8bc4",
+    "pr_35": {
+      "number": 35,
+      "state": "OPEN",
+      "is_draft": true,
+      "mergeable": "MERGEABLE"
+    }
+  },
+  "final_head": "fdf38f47d43b770bb1faad93429bf535b1da3e25",
+  "branch": "records/ignition-121q2v-verification-repair-20260715",
+  "pr_36": {
+    "number": 36,
+    "state": "OPEN",
+    "is_draft": true
+  },
+  "steps": {
+    "000": {
+      "sha": "bfc041dcd75c82f062c4a85f5792f07265dc23ad",
+      "action": "BASELINE_AUDIT",
+      "result": "9 defects confirmed"
+    },
+    "001": {
+      "sha": "6dea69237d2fa2edd9b3791a1a620a8114a53222",
+      "action": "PHASE2_VERDICT_RECONSTRUCTION",
+      "result": "CONFIRMED=0, PARTIAL=20, UNRESOLVED=2, total=22"
+    },
+    "002": {
+      "sha": "22ca068161fd0225376bc5c1302589f4391764d5",
+      "action": "IDENTITY_LEDGER_RECONSTRUCTION",
+      "result": "VERIFIED=7, CORRECTED=2, BLOCKED=2, UNKNOWN=11, total=22"
+    },
+    "003": {
+      "sha": "765633ab40b7da2aa1861bcbc5b9d3a4c223c049",
+      "action": "CANONICAL_INDEX_RECONSTRUCTION",
+      "result": "84 slots, 78 PRESENT, 6 NO_CANONICAL_RECORD, 12 conflicts"
+    },
+    "004": {
+      "sha": "3ed7caba488458b75f044f2871c061a5dc76e7ca",
+      "action": "FAMILY_COUNT_IMPACT_REPAIR",
+      "result": "7 changed, 4 unchanged, no re-reading"
+    },
+    "005": {
+      "sha": "e09aeca87505ece03e8c18a5c7728ed686f3905e",
+      "action": "RUN_STATE_CURSOR_REPAIR",
+      "result": "next_cx_step=null, next_phase=AWAITING_GPT_DECISION"
+    },
+    "006": {
+      "sha": "a4b0a90826d97d17d7751953d24a5901d090debb",
+      "action": "LEDGER_RECONSTRUCTION",
+      "result": "18/18 unique steps 000-017"
+    },
+    "007": {
+      "sha": "fdf38f47d43b770bb1faad93429bf535b1da3e25",
+      "action": "FULL_VALIDATION_AND_REPORT",
+      "result": "ALL 12 PASS"
+    }
+  },
+  "validators": {
+    "json_jsonl_parse": true,
+    "phase2_semantic_sum_22": true,
+    "identity_sum_22": true,
+    "canonical_index_84_unique": true,
+    "empty_verified_conflicts": true,
+    "complete_as_confirmed": true,
+    "blocked_as_partial": true,
+    "family_counts_consistent": true,
+    "ledger_18_unique": true,
+    "frozen_files_zero_diff": true,
+    "credential_scan_clean": true,
+    "pr_merge_close_zero": true
+  },
+  "validation_overall": true,
+  "artifacts": [
+    "121q2v/121q2v-run-state.json",
+    "121q2v/121q2v-step-ledger.jsonl",
+    "121q2v/phase2-verdict-reconstruction.json",
+    "121q2v/prior22-identity-ledger-corrected.jsonl",
+    "121q2v/canonical-semantic-index-corrected.jsonl",
+    "121q2v/family-count-impact.json",
+    "121q2v/121q2r-step-ledger-reconstructed.jsonl",
+    "reports/external-research/121Q2V-verification-repair-report.md"
+  ],
+  "non_actions": [
+    "Did NOT enter GAP adjudication",
+    "Did NOT freeze Function OS nodes",
+    "Did NOT perform 35-asset mapping",
+    "Did NOT modify Ψ₀/085/old two-tables",
+    "Did NOT merge/close any PR",
+    "Did NOT use sub-agents/model-switching/fallback",
+    "Did NOT re-read any full text"
+  ],
+  "blockers": [],
+  "next_action": "AWAITING_GPT_VERIFICATION"
+}
