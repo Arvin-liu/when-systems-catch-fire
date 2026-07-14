@@ -2,24 +2,23 @@
   "task": "121Q2R",
   "instruction_commit": "c7ec5acc49d74ceefa6b52d80f4940c6e1e9e07b",
   "baseline_head": "fae8241cfc4035b411bc71305a10650edea3181c",
-  "current_step": 2,
+  "current_step": 3,
   "current_step_status": "COMPLETE",
-  "next_step": 3,
-  "next_step_description": "CX Step 110: S120-053 acceptance review",
+  "next_step": 4,
+  "next_step_description": "Phase 2 canonical closeout: 22/22 verification",
   "draft_pr": 35,
   "phase_2_acceptance": {
     "canonical_prior22_total": 22,
-    "canonical_completed": 21,
-    "canonical_remaining": 1,
-    "remaining_sources": [
-      "S120-053"
-    ],
+    "canonical_completed": 22,
+    "canonical_remaining": 0,
+    "remaining_sources": [],
     "next_cx_step": 110,
     "next_source_id": "S120-053",
     "supplemental_sources": [
       "S120-033",
       "S120-036"
-    ]
+    ],
+    "phase_2_complete": true
   },
-  "last_updated": "2026-07-14T16:56:59Z"
+  "last_updated": "2026-07-14T16:58:13Z"
 }
