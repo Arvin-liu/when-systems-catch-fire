@@ -1,0 +1,274 @@
+{
+  "source_id": "S120-025",
+  "canonical_title": "Neural Operator: Learning Maps Between Function Spaces With Applications to PDEs",
+  "title": "Neural Operator: Learning Maps Between Function Spaces With Applications to PDEs",
+  "authors": [
+    "Nikola Kovachki",
+    "Zongyi Li",
+    "Burigede Liu",
+    "Kamyar Azizzadenesheli",
+    "Kaushik Bhattacharya",
+    "Andrew Stuart",
+    "Anima Anandkumar"
+  ],
+  "year": 2023,
+  "version": "arXiv v6, 2024-05-02; JMLR 24(89), 2023",
+  "doi_or_identifier": "arXiv:2108.08481; JMLR 24(89)",
+  "identifier": "arXiv:2108.08481",
+  "url": "https://arxiv.org/pdf/2108.08481",
+  "source_family": 4,
+  "source_family_name": "neural operators and function-space learning",
+  "license": "CC BY 4.0",
+  "sha256": "49cfb7b76ab9b422da6d0c61d6ba8538b9b4dab1cc4b07a8e78dc767f1081165",
+  "file_size_bytes": 7849648,
+  "page_count": 97,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "official_sources": [
+      "arXiv v6 PDF",
+      "JMLR article record"
+    ],
+    "http_retrieval_verified": true,
+    "registered_sha256_match": true,
+    "registered_file_size_match": true,
+    "registered_page_count_match": true,
+    "visual_pages_checked": [1, 4, 36, 46, 52, 57]
+  },
+  "sections_reviewed": [
+    "Abstract",
+    "1 Introduction",
+    "1.1 Our Approach",
+    "1.2 Background and Context",
+    "2 Learning Operators",
+    "2.2 Problem Setting",
+    "2.3 Discretization",
+    "3 Neural Operators",
+    "4 Parameterization and Computation",
+    "4.1 Graph Neural Operator",
+    "4.2 Low-rank Neural Operator",
+    "4.3 Multipole Graph Neural Operator",
+    "4.4 Fourier Neural Operator",
+    "5 Neural Operators and Other Deep Learning Models",
+    "5.1 DeepONets",
+    "5.2 Transformers as a Special Case of Neural Operators",
+    "6 Test Problems",
+    "7 Numerical Results",
+    "7.4 Discussion and Comparison of the Four Methods",
+    "8 Approximation Theory",
+    "8.2 Discretization Invariance",
+    "8.3 Approximation Theorems",
+    "9 Literature Review and Sources of Error",
+    "10 Conclusions",
+    "10.1 Future Directions",
+    "Appendices A-G, including theorem-supporting definitions, lemmas, and proofs"
+  ],
+  "page_or_section_anchors": [
+    {
+      "pages": "1-5",
+      "sections": "Abstract; 1 Introduction; 1.1 Our Approach; Figure 2",
+      "checked_for": "function-space operator definition, discretization invariance, integral-operator/nonlinearity composition, implementations, and claimed PDE scope"
+    },
+    {
+      "pages": "6-12",
+      "sections": "2 Learning Operators; 3 Neural Operators",
+      "checked_for": "Banach-space problem setting, empirical risk, discretization definitions, lifting-kernel-projection architecture, and parameter carrier"
+    },
+    {
+      "pages": "12-29",
+      "sections": "4 Parameterization and Computation; 5 Relations to DeepONets and transformers",
+      "checked_for": "GNO, LNO, MGNO, FNO realization rules, computational boundaries, and special-case relationships"
+    },
+    {
+      "pages": "30-46",
+      "sections": "6 Test Problems; 7 Numerical Results",
+      "checked_for": "PDE definitions, train/test regime, resolution transfer, comparative error, runtime, complexity, refinability, and robustness"
+    },
+    {
+      "pages": "47-53",
+      "sections": "8 Approximation Theory; Theorems 8 and 11-14",
+      "checked_for": "assumptions, topology, compact-set and Bochner-risk approximation, discretization theorem, and theorem scope"
+    },
+    {
+      "pages": "53-59",
+      "sections": "9 Literature Review and Sources of Error; 10 Conclusions and Future Directions",
+      "checked_for": "unanalysed discretization, finite-data, optimization and parameter-growth errors, experimental boundary, and open theory"
+    },
+    {
+      "pages": "70-97",
+      "sections": "Appendices A-G",
+      "checked_for": "notation, approximation-property lemmas, linear-functional approximations, neural-operator constructions, and proof dependencies for the stated theorems"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "A neural operator is a finite-parameter map between infinite-dimensional function spaces built from pointwise lifting, repeated local linear plus nonlocal integral operators with nonlinearities, and pointwise projection.",
+      "anchors": "Sections 1.1 and 3; Equation 6; Figure 2; PDF pages 2-4 and 9-12"
+    },
+    {
+      "claim": "The paper defines discretization invariance as convergence of fixed-parameter discrete realizations to a continuum operator under refinement and proves it for the specified neural-operator class under stated embedding and continuity assumptions.",
+      "anchors": "Section 2.3 Definitions 1-4; Section 8.2 Theorem 8; Appendix E; PDF pages 8-9, 51, and 92-93"
+    },
+    {
+      "claim": "Graph, low-rank, multipole-graph, and Fourier parameterizations instantiate the nonlocal operator layer with different grid, complexity, and expressiveness tradeoffs.",
+      "anchors": "Section 4; Figure 2; PDF pages 12-24"
+    },
+    {
+      "claim": "Under explicit Banach-space, compactness, continuity, activation, and norm assumptions, the paper establishes universal-approximation results for continuous operators; these are existence/density results rather than fixed-budget sample or parameter rates.",
+      "anchors": "Sections 8.1-8.3; Theorems 11-14; Appendices F-G; PDF pages 49-53 and 94-97"
+    },
+    {
+      "claim": "The numerical study evaluates Poisson, Darcy, Burgers, and Navier-Stokes settings, including resolution transfer, runtime, robustness, and inverse-problem use, while separately documenting unanalysed discretization, finite-sample, optimization, and parameter-growth errors.",
+      "anchors": "Sections 6-7 and Sources of Error; PDF pages 30-47 and 57"
+    }
+  ],
+  "function_concept_used_by_paper": "A function is an element of a specified Banach function space on a bounded domain, observed numerically through point evaluations or other possible finite representations. A neural operator is a parametric function-to-function map that approximates a target operator between such spaces while admitting consistent discrete realizations.",
+  "representation_or_carrier": {
+    "mathematical_carrier": "input and output functions in Banach spaces A and U, compact subsets, probability measures, and target operator G-dagger",
+    "model_carrier": "finite parameter vector theta defining lifting P, projection Q, local matrices W, bias functions, and kernel operators K",
+    "discrete_carrier": "point sets, sampled function values, quadrature or graph structures, truncated bases, and Fourier modes",
+    "artifact_variants": "GNO, LNO, MGNO, and FNO parameterizations sharing the continuum neural-operator abstraction"
+  },
+  "specification_language": "The specification is mathematical: domains, Banach input/output spaces, a target operator or input-output sample distribution, norm or risk, discretization/refinement scheme, and architecture hyperparameters. In PDE applications, coefficient/initial-condition functions specify inputs and solution functions specify outputs. This is not a user-facing function DSL and contains no operational contracts for permissions or effects.",
+  "compiler_or_generator": {
+    "construction": "Choose a lifting, T integral/local/nonlinear layers, a projection, and one of several kernel parameterizations, then concatenate their finite parameters into theta.",
+    "training": "Fit theta by empirical risk minimization over discretized input-output function pairs.",
+    "realization": "Evaluate the same continuum-defined parameterization through a grid- or mesh-specific discrete approximation such as Nystrom sums or Fourier transforms.",
+    "boundary": "Training does not compile a symbolic specification into a semantics-preserving executable; it estimates a surrogate operator from finite data."
+  },
+  "interpreter_or_runtime": "The runtime numerically realizes the learned operator on sampled input functions and evaluates the output at requested points. GNO/LNO/MGNO use graph, low-rank, or multilevel approximations; FNO transforms to Fourier space, multiplies retained modes, and transforms back. Runtime behavior depends on discretization, numerical integration or transforms, learned parameters, and the chosen domain assumptions.",
+  "composition_rule": "The core rule is typed operator composition: pointwise lifting P, repeated sigma(W + K + b) layers, then projection Q. Integral kernels communicate nonlocally across the domain, while activation functions act pointwise. The paper also relates attention and DeepONet constructions to special or reduced cases, but does not define arbitrary artifact composition or runtime routing.",
+  "state_or_effect_model": "Hidden functions v_t evolve layer by layer and PDE examples may represent physical time through an input/output map, but the architecture has no software state/effect calculus. I/O, mutation, exceptions, external resources, permissions, transactions, rollback, and deployment side effects are outside the formalism.",
+  "uncertainty_model": "The learning problem uses i.i.d. input functions from a probability measure, possibly noisy outputs, expected Bochner risk, finite empirical risk, and selected noise-robustness experiments. This supplies a statistical training/evaluation setting but not calibrated predictive uncertainty, posterior semantics, or a probabilistic/fuzzy operator execution model.",
+  "validation_regime": {
+    "mathematical": "discretization-invariance theorem and universal-approximation/density theorems under explicit assumptions",
+    "empirical": "held-out relative error, mesh/refinement transfer, zero-shot super-resolution, speed, complexity, parameter refinability, noise robustness, and Bayesian inverse-problem comparisons",
+    "problems": [
+      "Poisson equation",
+      "Darcy flow",
+      "Burgers equation",
+      "Navier-Stokes equation"
+    ],
+    "boundary": "The paper does not bound finite-sample error, fixed-parameter approximation rate, optimizer error, or all discretization error, and some parameter growth may be super-exponential."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "discretization consistency",
+      "support": "FORMALLY_SUPPORTED_UNDER_ASSUMPTIONS",
+      "boundary": "Fixed-parameter discrete realizations converge uniformly over compact input sets to the continuum operator; this is not equality across every finite mesh."
+    },
+    {
+      "notion": "universal approximation",
+      "support": "FORMALLY_SUPPORTED_AS_DENSITY_OR_EXISTENCE",
+      "boundary": "For covered spaces and continuous target operators, some sufficiently large neural operator reaches arbitrary tolerance on compacta or in stated risk; no fixed architecture, learned checkpoint, or finite dataset is thereby equivalent to the target."
+    },
+    {
+      "notion": "benchmark approximation",
+      "support": "EMPIRICALLY_SUPPORTED_ON_TESTED_PDES",
+      "boundary": "Held-out error and resolution-transfer results are task, distribution, solver-data, architecture, and metric relative."
+    },
+    {
+      "notion": "general software-function semantic equivalence",
+      "support": "NOT_SUPPORTED",
+      "boundary": "The analysis concerns mathematical operators, not arbitrary effectful programs or system behavior."
+    }
+  ],
+  "lifecycle_and_provenance": "The paper identifies data-generation solvers, train/test sizes, architectures, hyperparameters, source code, mathematical assumptions, and JMLR/arXiv versions. It does not define artifact identities, signed dataset/model lineage, environment locking, registry promotion, drift monitoring, supersession, rollback, or retirement.",
+  "limitations_and_failure_boundaries": [
+    "Universal approximation is an existence result; the paper does not characterize error for a fixed parameter dimension or fixed sample count.",
+    "Discretization invariance is asymptotic consistency under stated spaces and refinements, not zero error or identical outputs at all finite resolutions.",
+    "Discretization error, empirical finite-data error, and optimization failure are recognized but not jointly analyzed.",
+    "Parameter growth with decreasing tolerance may be super-exponential, and avoiding the curse of dimensionality is problem-class dependent.",
+    "GNO integration can be quadratic in discretization size; FNO is efficient on structured grids but truncates modes and has difficulties with discontinuities and some nonperiodic settings.",
+    "Noise robustness is partly obtained through noisy training and regularization and can trade off clean-data performance.",
+    "The tested PDE families and generated datasets do not establish correctness for arbitrary operators, domains, meshes, physical regimes, or production use.",
+    "No effect, safety, trace, policy, or lifecycle semantics is supplied for general Function OS artifacts."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not show that a finite trained neural operator is exactly equivalent to a PDE solution operator or conventional numerical solver.",
+    "It does not turn universal approximation into a rate, sample-complexity guarantee, optimizer guarantee, or production reliability claim.",
+    "It does not define general software-function specifications, execution traces, side effects, runtime routing, or registry governance.",
+    "It does not validate the point architecture as a whole; its theorems apply only to the paper's mathematical classes and assumptions."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "The source gives a precise function/operator ontology across Banach spaces, finite parameter vectors, discrete observations, and continuum maps."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "It cleanly separates continuum operator definition, learned parameter construction, and mesh-specific numerical realization."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Domains, codomains, continuity, norms, and PDE maps provide strong mathematical contracts, but software preconditions, effects, and permissions are absent."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Layer and operator composition is explicit and typed, but arbitrary artifact composition, routing, fallbacks, and conflict policies are not treated."
+    },
+    "GAP-019": {
+      "status": "CONFIRMED",
+      "reason": "The paper distinguishes theorem-scoped approximation and discretization properties from finite benchmark validation and lists major unanalysed error sources."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Probability measures, risk, noisy observations, and robustness experiments support statistical semantics, but calibrated uncertainty and lifecycle governance remain absent."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Input/output spaces, domains, target operator, measure, norm, and tolerance form a precise mathematical operator specification."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Continuum functions, discrete samples, hidden functions, kernels, Fourier modes, graphs, and parameter vectors are explicitly separated."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Architecture construction and empirical fitting produce an operator artifact, but this is learning rather than semantics-preserving compilation."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "A finite parameter vector plus architecture and kernel realization is a reusable discretization-invariant operator artifact."
+    },
+    "N5_Interpreter": {
+      "status": "PARTIAL",
+      "reason": "Mesh-specific Nystrom, graph, low-rank, multilevel, or Fourier evaluation supplies concrete execution, without a general interpreter contract."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Layer activations and numerical outputs exist, but no standardized persistent trace object, event semantics, or provenance chain is defined."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Norm/risk objectives, convergence conditions, held-out errors, resolution transfer, robustness, and inverse-problem checks provide a rich bounded validation regime."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Operator-layer composition is central, while runtime selection and routing across independently versioned artifacts are absent."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Publication and code provenance are available, but no artifact registry lifecycle or version-state machine is specified."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_FULLTEXT_CARD",
+    "corrections": [
+      "No per-source provisional evidence card existed for S120-025, so this review establishes the first source-specific semantic card.",
+      "The canonical publication record is JMLR 24(89), 2023, while the registered PDF is the later arXiv v6 dated 2024-05-02."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "Within its mathematical domain, the paper directly specifies, realizes, analyzes, and tests finite-parameter operators that map between function spaces and remain consistent across discretization refinement, supporting a bounded Representation-Artifact-Validator projection.",
+  "source_specific_reasoning": "This paper supplies unusually strong evidence for the mathematical side of a Function OS because the object being learned is explicitly an operator between function spaces, not merely a vector-to-vector proxy. It distinguishes continuum specification, discrete carriers, finite learned artifacts, numerical realizations, theorem-scoped properties, and benchmark error. The strongest reusable lesson is the separation between asymptotic discretization consistency, universal-approximation existence, finite trained-model error, and unanalysed data/optimization sources. The CONFIRMED status is therefore limited to this function-space operator projection; it does not extend to exact PDE equivalence, general software effects, execution traces, routing, or lifecycle governance.",
+  "projection_boundary": "All GAP and Function OS impacts above are 121CX architectural projections from the paper's bounded claims. The paper contains mathematical proofs for its stated neural-operator theorems, but this model review is not itself proof, causal identification, empirical validation of the point architecture, or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T04:23:07Z"
+}
