@@ -1,0 +1,136 @@
+{
+  "source_id": "S120-044",
+  "canonical_title": "Rethinking Weight-Averaged Model-merging",
+  "authors": ["Hu Wang", "Congbo Ma", "Ibrahim Almakky", "Ian Reid", "Gustavo Carneiro", "Mohammad Yaqub"],
+  "year": 2026,
+  "version": "AAAI 2026 manuscript; arXiv:2411.09263v5, 2025-08-19",
+  "identifier": "arXiv:2411.09263v5",
+  "url": "https://arxiv.org/abs/2411.09263v5",
+  "source_family": 6,
+  "source_family_name": "model merging and task arithmetic",
+  "license": "Copyright 2026 AAAI; all rights reserved in the reviewed manuscript; no repository license file was present",
+  "sha256": "65b2867316915854fb38d2017e52b82264e0a4ed593caeab399b3b8977b85d62",
+  "file_size_bytes": 30544041,
+  "page_count": 23,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "arxiv_identity": "arXiv:2411.09263v5",
+    "published_at_utc": "2024-11-14T08:02:14Z",
+    "updated_at_utc": "2025-08-19T12:07:46Z",
+    "pdf_visually_checked_pages": [1, 4, 5, 7, 11, 12, 22],
+    "code_artifact": {
+      "repository": "https://github.com/billhhh/Rethink-Merge",
+      "reviewed_commit": "64e2ff96bebfd0480bf336379574e320610712c2",
+      "tracked_lines": 2031,
+      "syntax_check": "all tracked Python files compiled",
+      "license": "NO_LICENSE_FILE_FOUND",
+      "correspondence_boundary": "The repository contains visualization scripts and a CIFAR-10 VGG19 training/merge program, but not the full multi-dataset, multi-architecture experiment set, paper result artifacts, checkpoints or environment lock.",
+      "execution_blocker": "Wt_vs_Ft/cifar10_merge.py imports train_cifar100, which is absent; the provided run_merge.sh therefore cannot start from a clean clone without repair."
+    }
+  },
+  "sections_reviewed": [
+    "Abstract, motivation and related work",
+    "linear-classifier template interpretation and deep-kernel visualizations",
+    "weight-space versus feature/logit averaging derivations",
+    "maximum-entry, parameter-variance and output-bound arguments",
+    "multi-architecture and multi-dataset empirical comparisons",
+    "artificial weight-magnification experiments",
+    "complete supplement, proofs, tables and figures",
+    "paper-linked repository at exact commit"
+  ],
+  "page_or_section_anchors": [
+    {"anchors": "pp. 2-3, Figs. 1-3, Proposal 1", "checked_for": "template-matching representation and its extension from linear classifiers to deep networks"},
+    {"anchors": "pp. 3-4, eqs. 1-4, Proposal 2", "checked_for": "exact linear equivalence and non-linear divergence of weight and feature averaging"},
+    {"anchors": "pp. 4-5, eqs. 5-11, Property 1, Theorem 1, Proposal 3", "checked_for": "magnitude/variance bounds and claimed regularization mechanism"},
+    {"anchors": "pp. 6-7, Fig. 7, Table 1", "checked_for": "architecture, dataset, cost and magnification comparisons"},
+    {"anchors": "supplement pp. 9-12, Tables 2-10", "checked_for": "settings, proofs, cross-task experiments and full performance tables"},
+    {"anchors": "supplement pp. 13-23, Figs. 8-24", "checked_for": "complete visual evidence and model-count/magnitude sweeps"},
+    {"anchors": "repository commit 64e2ff9", "checked_for": "reproducibility, implementation completeness, seeds, state-dict scaling and runnable entry points"}
+  ],
+  "paper_core_claims": [
+    {"claim": "For purely linear aligned models, averaging weights before the forward pass equals averaging their features or logits.", "anchors": "eqs. 1-2"},
+    {"claim": "Nonlinear activations break that equivalence, allowing weight averaging to cancel information while feature averaging preserves separate paths at higher inference cost.", "anchors": "eqs. 3-4 and Proposal 2"},
+    {"claim": "A convex average cannot exceed the largest source maximum-entry norm, and under independent random-matrix assumptions has reduced parameter variance.", "anchors": "eqs. 5-9"},
+    {"claim": "The authors interpret reduced magnitude and variance as implicit regularization and greater prediction robustness under artificial uniform parameter scaling.", "anchors": "Property 1, Theorem 1, Fig. 7 and Proposal 3"},
+    {"claim": "Across ordinary unscaled same-task experiments, logit ensembling usually outperforms uniform soups, especially for ViTs and as more models are added.", "anchors": "Fig. 3 and Tables 1, 4-9"}
+  ],
+  "function_concept_used_by_paper": "Aligned parameter tensors are static function carriers. Uniform or greedy averaging compiles them into one checkpoint; logit or feature averaging retains multiple interpreters at runtime. The paper compares these representations and their cost/performance behavior.",
+  "representation_or_carrier": "The source distinguishes weight matrices and full state dictionaries from per-model features and logits. Linear classifier rows can be visualized as class templates, but deep convolution kernels are distributed, symmetry-sensitive representations; visual texture resemblance is not a semantic contract or proof of compatible features.",
+  "specification_language": "Equations precisely specify two-model uniform averaging, linear and nonlinear forward semantics, maximum-entry bounds and idealized random-network assumptions. Experimental prose lists datasets, architectures, counts and magnitude factors. It does not specify immutable code/data/model identities, all hyperparameters, checkpoint selection receipts, tensor compatibility beyond shared architecture, acceptance thresholds, effects or lifecycle transitions.",
+  "compiler_or_generator": "Uniform soups average same-key state dictionaries and greedy soups select candidates using a validation loader. The repository implements CIFAR-10 training, uniform/greedy weight averages and logit/feature ensembles, but the clean-clone merge entry point imports a missing module and the broader published experiments are absent.",
+  "interpreter_or_runtime": "A merged checkpoint uses one ordinary forward pass; logits and feature ensembles invoke every constituent model. The paper correctly identifies this deployment-cost distinction. It does not define deterministic provenance, runtime failure isolation, safety policy, trace export, resource SLOs or rollback.",
+  "composition_rule": "Linear equality of weight and output averaging is exact only when layers are aligned and no intervening nonlinearity or symmetry mismatch matters. In deep networks uniform parameter averaging is a heuristic whose performance depends strongly on architecture, dataset, initialization/training alignment and model count; the paper's own tables show uniform soups can collapse while ensembles improve.",
+  "state_or_effect_model": "State includes model parameters, validation scores, features/logits, architecture, dataset and artificial magnitude factor. Effects include accuracy, AUROC, FLOPs, parameter count and output sensitivity. No provenance, privacy, license, safety, atomic promotion, monitoring or retirement semantics are provided.",
+  "uncertainty_model": "Ten models per configuration are reported, but the paper supplies plots and aggregate tables without confidence intervals, hypothesis tests, per-seed result files or multiple-comparison handling. The theoretical variance reduction requires independent weight matrices or zero covariance; trained checkpoint weights are correlated and are not i.i.d. sub-Gaussian samples. Output upper bounds do not quantify predictive calibration or generalization uncertainty.",
+  "validation_regime": {
+    "datasets": ["CIFAR-10", "CIFAR-100", "PathMNIST", "DermaMNIST", "CelebA", "TinyImageNet", "ChestXRay14"],
+    "architectures": ["VGG", "ResNet", "DenseNet", "ViT", "DeiT", "CNN", "MLP"],
+    "model_counts": [2, 3, 5, 7, 10],
+    "methods": ["uniform soup", "greedy soup", "logit ensemble", "feature ensemble", "greedy ensembles"],
+    "stress_test": "uniform scaling of entire state dictionaries by roughly 50x through 150x",
+    "boundary": "The stress test is an extreme synthetic parameter rescaling, not adversarial, distributional, calibration or natural-corruption robustness; the released code does not reproduce the full table set."
+  },
+  "equivalence_notions": [
+    {"notion": "linear functional equivalence", "support": "EXACT_FOR_ALIGNED_LINEAR_MAPS", "boundary": "Nonlinearities, biases, normalization, permutations and multilayer cross-terms break the equality."},
+    {"notion": "template similarity", "support": "VISUAL_LINEAR_CLASSIFIER_CORRESPONDENCE", "boundary": "A reshaped classifier row or kernel texture is an interpretation aid, not a quantitative semantic equivalence metric."},
+    {"notion": "parameter stability", "support": "MAX_NORM_AND_IDEALIZED_VARIANCE_BOUNDS", "boundary": "Smaller parameter magnitude is neither necessary nor sufficient for functional robustness or generalization."},
+    {"notion": "predictive robustness", "support": "ACCURACY_UNDER_EXTREME_UNIFORM_SCALING", "boundary": "Relative survival under artificial scaling does not establish robustness to realistic perturbations or safety failures."}
+  ],
+  "lifecycle_and_provenance": "The paper names methods, datasets and code, but the repository has no license, releases, tags, dependency versions, result artifacts, complete experiment scripts or checkpoints. It does not record input/output hashes, source lineage, validation receipts, approval, health, rollback, supersession or retirement. The code multiplies every state-dict value by the magnitude factor, including buffers rather than only learned floating weights, which further distances the stress test from a governed parameter perturbation.",
+  "limitations_and_failure_boundaries": [
+    "The exact linear equivalence is sound but narrow; the paper's template intuition does not mathematically explain deep nonlinear model merging.",
+    "Equation 8 omits covariance under an independence assumption that is not justified for trained checkpoints; i.i.d. sub-Gaussian layer assumptions in Property 1 and Theorem 1 are likewise far from the empirical models.",
+    "A smaller maximum entry or random-weight variance bound does not imply regularization, adversarial robustness, calibration, generalization or safer decisions.",
+    "Uniformly multiplying entire networks by 50x-150x is an extreme synthetic failure mode; averaging scaled models can partly cancel or dilute that construction by arithmetic, so relative accuracy is not broad robustness evidence.",
+    "The released scaling implementation multiplies complete state dictionaries, including non-parameter buffers, and cannot isolate weight magnitude from batch-normalization or bias effects.",
+    "Ordinary unscaled results often favor logits ensembles; uniform soup degrades severely for ViTs as model count rises, contradicting any universal merging advantage.",
+    "No statistical uncertainty or raw result receipts are released for the many architectures, datasets and comparisons.",
+    "The exact repository is incomplete and non-runnable from its documented merge entry point because train_cifar100.py is missing; only a fraction of the paper experiments is present.",
+    "The paper invokes AI safety and reliability but performs no safety, adversarial, calibration, OOD, privacy or subgroup evaluation."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove why weight averaging works in general deep networks.",
+    "It does not establish that magnitude reduction is equivalent to trained regularization or produces real-world robustness.",
+    "It does not validate universal model compatibility, semantic preservation, safety or production readiness.",
+    "It does not provide a complete reproducible implementation of all published results."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {"status": "PARTIAL", "reason": "Equations clarify carriers and execution, but compatibility, effects, identity and lifecycle contracts are missing."},
+    "GAP-016": {"status": "PARTIAL", "reason": "Uniform and greedy generators are described and partly coded, but the released pipeline is incomplete."},
+    "GAP-017": {"status": "CONFIRMED", "reason": "Linear equality, feature/logit behavior, norm bounds and accuracy expose several non-equivalent validation notions."},
+    "GAP-018": {"status": "CONFIRMED", "reason": "Static weight composition and runtime feature/logit composition are directly contrasted."},
+    "GAP-019": {"status": "PARTIAL", "reason": "Broad vision experiments support bounded comparisons without statistical or safety validation."},
+    "GAP-020": {"status": "PARTIAL", "reason": "Accuracy, AUROC and cost are visible; uncertainty, provenance and lifecycle observability are absent."}
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {"status": "PARTIAL", "reason": "Mathematical recipes are explicit but governed compatibility and effects are not."},
+    "N2_Representation": {"status": "CONFIRMED", "reason": "Weights, features and logits are clearly separated carriers."},
+    "N3_Compiler": {"status": "PARTIAL", "reason": "Static averaging is implemented but the released experiment compiler is incomplete and broken at its documented entry point."},
+    "N4_Artifact": {"status": "CONFIRMED", "reason": "Weight averaging materializes one ordinary checkpoint."},
+    "N5_Interpreter": {"status": "CONFIRMED", "reason": "Single-model, feature-ensemble and logit-ensemble runtimes are explicitly compared."},
+    "N6_ExecutionTrace": {"status": "PARTIAL", "reason": "Metrics and costs are reported without durable run receipts or lineage."},
+    "N7_Validator": {"status": "PARTIAL", "reason": "The experiment matrix is broad, but inference, uncertainty and safety coverage are weak."},
+    "N8_ComposerRouter": {"status": "CONFIRMED", "reason": "Static merge versus runtime ensemble is the central controlled comparison; no dynamic router is implied."},
+    "N9_VersionedRegistry": {"status": "PARTIAL", "reason": "No immutable artifact identity or lifecycle governance is defined."}
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_FULLTEXT_THEORY_EXPERIMENT_AND_EXACT_CODE_PARTIAL_CARD",
+    "corrections": [
+      "The AAAI 2026/arXiv v5 identity and six authors replaced the generic preprint placeholder.",
+      "The exact linear equality was separated from the unsupported deep-network template extrapolation.",
+      "The covariance, i.i.d. random-weight and artificial-magnification boundaries were made explicit.",
+      "The repository's missing module, partial experiment coverage and absent license were recorded."
+    ]
+  },
+  "claim_support_status": "PARTIAL",
+  "confirmed_projection": "The paper directly confirms distinct weight, feature and logit carriers, exact linear-map equivalence, a static merged Artifact and an Interpreter/Composer cost trade-off. Its explanation of deep merging, regularization, robustness, statistical uncertainty and lifecycle governance remains partial.",
+  "source_specific_reasoning": "This is useful bounded evidence because its own ordinary experiments reveal where uniform soups lose to ensembles, particularly for ViTs and larger model counts. However, the mechanism story overreaches: idealized norm and variance inequalities plus extreme parameter scaling do not establish real predictive robustness or generalization, and the template visualization does not solve nonlinear symmetry and alignment. The exact code snapshot is incomplete and cannot run its documented merge path. PARTIAL preserves the exact linear and empirical comparisons without accepting the broader explanatory claim.",
+  "projection_boundary": "These are 121CX projections from the exact AAAI/arXiv v5 manuscript and static review of repository commit 64e2ff9. They are not independent replication, general robustness proof, safety validation or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T05:39:09Z"
+}
