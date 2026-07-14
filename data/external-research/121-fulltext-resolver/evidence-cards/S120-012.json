@@ -1,0 +1,151 @@
+{
+  "source_id": "S120-012",
+  "title": "Contextual HyperNetworks for Novel Feature Adaptation",
+  "authors": "Angus Lamb, Evgeny Saveliev, Yingzhen Li, Sebastian Tschiatschek, Camilla Longden, Simon Woodhead, José Miguel Hernández-Lobato, Richard E. Turner, Pashmina Cameron, Cheng Zhang",
+  "year": 2021,
+  "venue": "NeurIPS 2020 Meta-Learning Workshop",
+  "doi_or_identifier": "arXiv:2104.05860",
+  "source_family": 2,
+  "url": "https://arxiv.org/abs/2104.05860",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2104.05860",
+  "effective_url": "https://arxiv.org/pdf/2104.05860",
+  "access_time_utc": "2026-07-14T15:05:06Z",
+  "version": "preprint (NeurIPS workshop)",
+  "license": "open access (arXiv)",
+  "file_sha256": "a999996dab07ae63adbff094431a5d57017cd7f4423f8c06b88477aa2e759968",
+  "content_type": "application/pdf",
+  "file_size_bytes": 594565,
+  "page_count": 17,
+  "sections": [
+    "1 Introduction",
+    "2 Method (Contextual HyperNetworks)",
+    "3 Related Work",
+    "4 Experiments (Recommender Systems, Healthcare, E-learning)",
+    "5 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:method",
+    "sec:related",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "While deep learning has obtained state-of-the-art results in many applications, the adaptation of neural network architectures to incorporate new output features remains a challenge... we propose the Contextual HyperNetwork (CHN), an auxiliary model which generates parameters for extending the base model to a new feature, by utilizing both existing data as well as any observations and/or metadata associated with the new feature.",
+  "what_the_paper_supports": "CHN is a hypernetwork that acts as a compiler: given observed values for a new feature + feature metadata, it generates feature-specific decoder head parameters (weights + biases). The CHN uses a set encoder (PointNet-style) to aggregate context observations + the base model's internal representation + metadata embedding → outputs parameters. This is a concrete compile pipeline: context → parameters for a new function. The model is evaluated across 3 domains (recommender systems, healthcare, e-learning) with consistent improvement over MAML, k-NN, and mean-imputing baselines.",
+  "what_the_paper_does_not_support": "Focus is strictly on parameter prediction for extending decoder heads of a pre-trained P-VAE. No formal specification language (GAP-015). No composition between generated heads (GAP-016 weak). No equivalence checking between feature heads (GAP-017). No versioning of generated heads (GAP-019). No execution trace or validation (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "paper_core_claims": [
+    "Contextual HyperNetwork generates parameters for extending a base model to handle novel output features",
+    "Uses both existing data (via base model representation) and new feature context (observed values + metadata) as inputs",
+    "Single forward pass at prediction time — orders of magnitude faster than retraining or fine-tuning",
+    "Set encoder (PointNet-style) processes variable-size context set into fixed-length context vector",
+    "Applied to P-VAE base model; shows consistent improvement across recommender systems, healthcare, and e-learning domains",
+    "Outperforms MAML, k-NN head averaging, mean imputing, and train-from-random baselines across all context set sizes"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No formal specification language for what each generated feature head computes"
+    },
+    "GAP-016": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "CHN generates parameters conditionally — a form of context-conditioned compilation. But no explicit algebraic composition between feature heads"
+    },
+    "GAP-017": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No notion of equivalence or interchangeability between feature heads"
+    },
+    "GAP-018": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Fine-tuning from CHN initialization adapts to new data (Fig 9b); no formal state or effect tracking"
+    },
+    "GAP-019": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Each feature gets an independent decoder head; no explicit versioning or registry mechanism"
+    },
+    "GAP-020": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No formal verification of generated parameter correctness"
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "NO_EVIDENCE"
+    },
+    "N2_Representation": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Base model's latent representation encodes existing features; metadata embedding encodes feature identity; set encoder aggregates context observations into fixed-length vector"
+    },
+    "N3_Compiler": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "STRONG MATCH. CHN is a compiler: context set + metadata → feature-specific parameters (Algorithm 1). Set encoder → context vector → [cm; mn] → feed-forward network → θn. The CHN maps a specification (observations + metadata) to executable parameters. Unlike pFedHN which outputs entire model weights, CHN outputs only the feature-specific head, which is more focused and parameter-efficient."
+    },
+    "N4_Artifact": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Generated decoder head parameters are per-feature artifacts; no lifecycle management"
+    },
+    "N5_Interpreter": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Base P-VAE model serves as interpreter: takes latent z + generated head params → decodes feature values"
+    },
+    "N6_ExecutionTrace": {
+      "status": "NO_EVIDENCE"
+    },
+    "N7_Validator": {
+      "status": "NO_EVIDENCE"
+    },
+    "N8_ComposerRouter": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Each new feature gets its own head — implicit routing by feature identity; no inter-feature composition"
+    },
+    "N9_VersionedRegistry": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Training set features' head parameters form an implicit registry; but no versioning or retrieval mechanism"
+    }
+  },
+  "limitations_and_failure_boundaries": [
+    "Only tested with P-VAE base model — unclear how well it generalizes to other architectures",
+    "Generates only simple decoder head parameters (weights + biases), not arbitrary functions",
+    "Retraining CHN needed when base model architecture changes",
+    "Performance degrades on temporally-ordered features vs random splits (Fig 6)",
+    "No formal guarantee that generated parameters preserve model semantics",
+    "Scalability: CHN must be retrained for each new base model",
+    "No mechanism for removing or deprecating feature heads"
+  ],
+  "strengths_noted": [
+    "Set encoder enables variable-size context — elegant handling of few-shot regimes (0 to 32 observations)",
+    "Metadata conditioning allows zero-shot parameter prediction (context set size = 0, Table 1 metadata-only)",
+    "Three diverse domains show consistent behavior: MovieLens (regression), healthcare (imbalanced binary), e-learning (binary)",
+    "CHN initialization → fine-tuning outperforms random initialization → fine-tuning (Fig 9b) — strong evidence for transfer",
+    "Theoretical: CHN relates to meta-learning (MAML), hypernetworks, and conditional neural processes within one architecture",
+    "Only single forward pass at prediction time — practical for real-time deployment"
+  ],
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "a999996dab07ae63adbff094431a5d57017cd7f4423f8c06b88477aa2e759968",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "CRITICAL: Old 121cn high-review card had WRONG arXiv ID (2111.02785 → correct: 2104.05860)",
+      "CRITICAL: arXiv 2111.02785 = 'Game-driven random walks: Survival time statistics' (Krivonosov et al.) — completely unrelated paper",
+      "CRITICAL: Old card had COMPLETELY FABRICATED author list: 'Ari S. Benjamin, David K. Lee, Bingni W. Brunton'",
+      "CRITICAL: Real authors are Lamb, Saveliev, Li, Tschiatschek, Longden, Woodhead, Hernández-Lobato, Turner, Cameron, Zhang (Microsoft Research Cambridge + Cambridge + Vienna)",
+      "CRITICAL: Old card venue listed as just 'arXiv' — actual venue is NeurIPS 2020 Meta-Learning Workshop",
+      "CRITICAL: Old card never downloaded the real PDF (sha256: pending, file_size_bytes: 0)",
+      "METADATA FAILURE RATE: 5/7 fields wrong (ID, all authors, venue, year listed wrong). Same pattern as S120-011."
+    ],
+    "metadata_comparison": {
+      "old_card_arxiv_id": "2111.02785 (WRONG)",
+      "correct_arxiv_id": "2104.05860",
+      "old_card_authors": "Ari S. Benjamin, David K. Lee, Bingni W. Brunton (WRONG)",
+      "correct_authors": "Angus Lamb, Evgeny Saveliev, Yingzhen Li, Sebastian Tschiatschek, Camilla Longden, Simon Woodhead, José Miguel Hernández-Lobato, Richard E. Turner, Pashmina Cameron, Cheng Zhang",
+      "old_card_venue": "arXiv",
+      "correct_venue": "NeurIPS 2020 Meta-Learning Workshop"
+    }
+  },
+  "reviewed_by_model": "qclaw/pool-deepseek-v4-pro",
+  "reviewed_at": "2026-07-14T15:05:06Z",
+  "review_batch": "ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714",
+  "step_number": 99
+}
