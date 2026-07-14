@@ -4,12 +4,12 @@
   "baseline_head": "a344c20c29d78d8e7c52e0eca53c64eb930a8bc4",
   "branch": "records/ignition-121q2v-verification-repair-20260715",
   "pr_35_unchanged": true,
-  "current_step": 2,
+  "current_step": 3,
   "current_step_status": "COMPLETE",
-  "next_step": 3,
-  "next_step_description": "84-source canonical index reconstruction",
+  "next_step": 4,
+  "next_step_description": "F1-F10 dependency impact repair",
   "defects_registered": 9,
-  "last_updated": "2026-07-14T17:18:13Z",
+  "last_updated": "2026-07-14T17:19:01Z",
   "phase2_counts": {
     "CONFIRMED": 0,
     "PARTIAL": 20,
@@ -23,5 +23,27 @@
     "BLOCKED": 2,
     "UNKNOWN": 11
   },
-  "identity_total": 22
+  "identity_total": 22,
+  "canonical_index": {
+    "total_slots": 84,
+    "present": 78,
+    "no_canonical_record": 6,
+    "identity_counts": {
+      "VERIFIED": 8,
+      "CORRECTED": 2,
+      "BLOCKED": 2,
+      "UNKNOWN": 65,
+      "NOT_FOUND": 6,
+      "BLOCKED_UNVERIFIABLE_IDENTITY": 1
+    },
+    "semantic_counts": {
+      "CONFIRMED": 35,
+      "PARTIAL": 40,
+      "NOT_SUPPORTED": 0,
+      "UNRESOLVED": 3,
+      "NOT_FOUND": 6,
+      "UNKNOWN": 0
+    },
+    "cross_layer_conflicts": 12
+  }
 }
