@@ -1,1 +1,2 @@
 {"step": 0, "action": "BASELINE_AUDIT", "result": "9 defects registered", "timestamp": "2026-07-14T17:35:30Z"}
+{"step": 1, "action": "IDENTITY_CHAIN_FIX", "result": "counts={'VERIFIED': 7, 'CORRECTED': 5, 'BLOCKED': 2, 'UNKNOWN': 8}, total=22", "timestamp": "2026-07-14T17:36:23Z"}

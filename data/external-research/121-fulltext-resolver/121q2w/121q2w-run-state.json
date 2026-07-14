@@ -4,10 +4,17 @@
   "baseline_head": "8b95f7457f0fbcc553676b9ddb722f7b4176fd09",
   "branch": "records/ignition-121q2w-final-consistency-seal-20260715",
   "pr_36_unchanged": true,
-  "current_step": 0,
+  "current_step": 1,
   "current_step_status": "COMPLETE",
-  "next_step": 1,
-  "next_step_description": "Fix prior22 identity chain",
+  "next_step": 2,
+  "next_step_description": "Rebuild Phase 2 and canonical index",
   "defects_registered": 9,
-  "last_updated": "2026-07-14T17:35:30Z"
+  "last_updated": "2026-07-14T17:36:23Z",
+  "identity_counts_final": {
+    "VERIFIED": 7,
+    "CORRECTED": 5,
+    "BLOCKED": 2,
+    "UNKNOWN": 8
+  },
+  "identity_total_final": 22
 }
