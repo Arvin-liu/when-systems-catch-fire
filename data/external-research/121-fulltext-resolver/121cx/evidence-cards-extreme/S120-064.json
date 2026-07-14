@@ -1,0 +1,269 @@
+{
+  "source_id": "S120-064",
+  "canonical_title": "Pyro: Deep Universal Probabilistic Programming",
+  "authors": [
+    "Eli Bingham",
+    "Jonathan P. Chen",
+    "Martin Jankowiak",
+    "Fritz Obermeyer",
+    "Neeraj Pradhan",
+    "Theofanis Karaletsos",
+    "Rohit Singh",
+    "Paul Szerlip",
+    "Paul Horsfall",
+    "Noah D. Goodman"
+  ],
+  "year": 2019,
+  "version": "published JMLR 20(28) article; submitted June 2018, revised January 2019 and published February 2019",
+  "doi_or_identifier": "JMLR:v20:18-403",
+  "identifier": "Journal of Machine Learning Research 20(28):1-6",
+  "url": "https://jmlr.org/papers/v20/18-403.html",
+  "source_family": 9,
+  "source_family_name": "probabilistic programming and stochastic semantics",
+  "license": "paper CC BY 4.0; associated Pyro source release MIT",
+  "sha256": "a1ab7757547176bd67963c80c532c082a96947de378c640fd739584321f819c6",
+  "file_size_bytes": 199595,
+  "page_count": 6,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "registered_url": "http://jmlr.org/papers/volume20/18-403/18-403.pdf",
+    "canonical_https_url": "https://jmlr.org/papers/volume20/18-403/18-403.pdf",
+    "sha256": "a1ab7757547176bd67963c80c532c082a96947de378c640fd739584321f819c6",
+    "file_size_bytes": 199595,
+    "page_count": 6,
+    "registered_pdf_visual_check": "all six pages rendered and inspected; title, two code examples, two design/experiment tables, notes and complete references are present and legible",
+    "registry_section_correction": "the provisional card invented sections named Stochastic Variational Inference, Poutine Effects, Examples and Conclusion; the actual numbered sections are Introduction, Design Principles, Project Openness and Development, Existing Systems and Experiments",
+    "publication_identity": "JMLR volume 20, issue 28, pages 1-6; submitted 6/18, revised 1/19, published 2/19",
+    "associated_repository": {
+      "current_url": "https://github.com/pyro-ppl/pyro",
+      "historical_paper_url": "https://github.com/uber/pyro",
+      "history_continuity": "the repository moved organizations while retaining Git history",
+      "nearest_release": "0.3.1",
+      "release_commit": "92af2196a0bb41ef05885ada9eb93a951856f1a9",
+      "release_date": "2019-02-13",
+      "last_prepublication_commit": "aa3f4a27cc83bcf3b69c416a125368ba0b386222",
+      "source_license": "MIT",
+      "release_scope": "488 tracked files, including 119 test files and seven Poutine-focused test files",
+      "environment_boundary": "setup metadata names Python 2.7/3.6 and requires PyTorch >=1.0 but leaves several dependency versions open; CI explicitly installed torch 1.0.1.post2"
+    }
+  },
+  "sections_reviewed": [
+    "abstract, author list, license and paper metadata",
+    "introduction and four design-goal claims",
+    "expressiveness, scalability, flexibility and minimality design principles",
+    "sample/param primitives, observations, model-guide contract and generic inference",
+    "Poutine effect-handler architecture and handler composition",
+    "project openness, tests, documentation and development claims",
+    "existing-system comparison and its stated simplifications",
+    "VAE timing and DMM ELBO experiments",
+    "complete references and artifact links",
+    "associated Pyro 0.3.1 source, setup metadata, CI, tests, examples, handlers, traces, validation utilities and release history"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "abstract and section 1, pp. 1-2",
+      "checked_for": "embedded-Python/PyTorch identity, high-dimensional model scope, effect-handler contribution and expressive/scalable/flexible/minimal design claims"
+    },
+    {
+      "anchors": "section 2, pp. 2-3; Figure 1",
+      "checked_for": "sample/param primitives, arbitrary Python control flow, recursion, model/guide separation, SVI/HMC/NUTS, observations, minibatching and Poutine"
+    },
+    {
+      "anchors": "section 3, pp. 3-4",
+      "checked_for": "MIT repository, documentation, tests, CI, PyTorch upstream contribution and host-language tradeoffs"
+    },
+    {
+      "anchors": "section 4 and Figure 2, p. 4",
+      "checked_for": "Stan/Church/Venture/webPPL/Edward/Pyro comparison and author-acknowledged simplification"
+    },
+    {
+      "anchors": "section 5, pp. 4-5; Figures 3-4",
+      "checked_for": "VAE timing hardware/configuration, DMM configurations, reported means, ELBOs and experimental omissions"
+    },
+    {
+      "anchors": "Pyro tag 0.3.1 setup.py, .travis.yml, pyro/primitives.py, pyro/poutine, pyro/util.py and examples/vae, examples/dmm",
+      "checked_for": "publication-near implementation, dependencies, CI matrix, effect-message/stack mechanics, trace/replay handlers, model-guide checks, plate warning, seeds/defaults and absent result receipts"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "Pyro is a Python-embedded probabilistic programming library on PyTorch that combines arbitrary Python control flow with GPU tensors and automatic differentiation.",
+      "anchors": "abstract and section 2"
+    },
+    {
+      "claim": "A small core of sample and param primitives plus composable Poutine effect handlers separates model, inference and runtime behavior while allowing generic SVI, HMC and NUTS.",
+      "anchors": "section 2 and Figure 1"
+    },
+    {
+      "claim": "Pyro's model-guide interface permits learned approximate posterior programs while aligning unconstrained latent sample sites and their shapes.",
+      "anchors": "section 2; corroborated by 0.3.1 check_model_guide_match"
+    },
+    {
+      "claim": "The released system is open source, documented, tested and developed with continuous integration around a PyTorch backend.",
+      "anchors": "section 3; corroborated by tag 0.3.1 repository"
+    },
+    {
+      "claim": "Two publication experiments report moderate Pyro overhead relative to handwritten PyTorch VAE updates and DMM test ELBOs close to or better than a cited reference implementation.",
+      "anchors": "section 5; Figures 3-4"
+    }
+  ],
+  "function_concept_used_by_paper": "A Pyro probabilistic function is an ordinary Python callable whose execution contains named sample, observation and parameter sites. Models specify joint distributions and guides specify approximate posteriors; inference algorithms invoke and transform those functions through Poutine handlers. The word universal refers to host-language expressive power over computable distributions, not a proved total or tractably inferable Function OS contract.",
+  "representation_or_carrier": "The static carrier is Python/PyTorch source plus modules, tensors and named distributions. At runtime, each primitive constructs a message containing site name, distribution/function, arguments, observed value, inference metadata, scale, mask and conditional-independence stack. A global Poutine stack routes messages through messengers; trace records sample/param/module/subsample sites, values, shapes and dependencies; the global parameter store holds mutable named tensors.",
+  "specification_language": "Python functions specify model and guide programs. pyro.sample declares a named random/observed site, pyro.param a learnable constrained value, pyro.module registers neural parameters, and plate declares conditionally independent replicated structure with optional subsampling. The model and guide share arguments; publication-near runtime checks compare latent-site coverage, auxiliary/enumerated sites, event dimensions, shapes and plate nesting. This remains a dynamic convention rather than a closed static contract: support, normalization, termination, conditional independence, approximation quality, effects outside Pyro, privacy, resources and lifecycle policy are not generally specified or proved.",
+  "compiler_or_generator": "No general compiler or function generator is presented. PyTorch automatic differentiation and optional JIT-compiled ELBO evaluation optimize tensor kernels/gradients, while SVI constructs an optimization objective from model and guide traces. Arbitrary Python and dynamic effects limit ahead-of-time analysis; the paper supplies neither verified lowering, neural-weight composition algebra nor synthesis procedure.",
+  "interpreter_or_runtime": "Python executes user control flow, PyTorch evaluates tensors/autodiff, and Pyro primitives send messages through the Poutine handler stack. Trace captures executions, replay substitutes prior site values, condition/do/lift/block/broadcast transform behavior, and inference drivers such as SVI, HMC and NUTS repeatedly interpret model/guide programs. Tag 0.3.1 code pops handlers on exceptions and checks important model-guide invariants, but user code, global parameter state and declared plate independence remain trust boundaries.",
+  "composition_rule": "Ordinary Python calls/modules compose deterministic and stochastic functions; names align model and guide sites; PyTorch modules compose neural layers; Poutine messengers nest around execution and apply per-message process/postprocess transformations; trace plus replay composes posterior proposals with models; plate composes independent replicated factors and rescales subsamples. Handler order, name collisions, mutable globals, dynamic control flow and false independence declarations can change meaning, and the paper gives no formal algebra or commutation/soundness theorem for arbitrary compositions.",
+  "state_or_effect_model": "Sampling, observation, learnable parameters, module registration, subsampling and inference metadata are explicit Pyro effects encoded as messages. Poutine handlers intercept them on a process-global stack; traces preserve site-level execution; the parameter store and optimizer mutate tensors; RNG state drives samples. Arbitrary Python also permits untracked I/O, mutation, exceptions and nondeterminism, so Poutine is not a general effect system for all host-language effects. Tag 0.3.1 plate documentation explicitly places conditional-independence correctness on the user.",
+  "uncertainty_model": "A model denotes an execution-defined joint distribution over named latent and observed sites; a guide denotes an approximate posterior used by SVI, while HMC/NUTS target posterior sampling. Monte Carlo samples estimate ELBO terms, enumeration handles selected discrete sites and minibatch scaling estimates full-data objectives. The paper gives no denotational semantics, normalization or convergence theorem, posterior-error bound, calibration analysis, ESS/R-hat diagnostics, repeated-seed uncertainty for DMM, or uncertainty interval for reported ELBOs.",
+  "validation_regime": {
+    "formal": "none; no operational/denotational semantics, handler-soundness proof, inference-convergence theorem or mechanized artifact appears",
+    "implementation": "publication-near tag 0.3.1 contains a broad CI matrix, 119 test files, seven Poutine test files, runtime model-guide/shape checks, VAE and DMM examples and an MIT license",
+    "vae": "single NVIDIA GTX 1080 Ti, batch 128, ten epochs; four architecture rows report Pyro mean update times 6.67-10.19 ms versus PyTorch 3.73-7.66 ms, with approximately 33-79 percent overhead; same test ELBO is asserted but values are absent",
+    "dmm": "JSB chorales, 5000 epochs; paper reports test ELBO -6.93 for the original implementation and -6.87/-6.82/-6.80 for Pyro with zero/one/two IAFs; no error bars, seed list or repeated-run distribution is reported",
+    "artifact_audit": "tag 0.3.1 examples encode paper-like VAE defaults including seed 0 and 10 epochs, and DMM hyperparameters including 5000 epochs, but the repository contains no checked-in logs, checkpoints or machine-readable receipts for Figures 3-4",
+    "boundary": "the historical environment is only partly pinned and was not independently rerun on publication hardware; repository/code corroboration is implementation evidence, not reproduction of numerical results or empirical validation of ignition"
+  },
+  "equivalence_notions": [
+    {
+      "notion": "model-guide site compatibility",
+      "support": "TAG_0_3_1_CHECKS_LATENT_SITE_COVERAGE_AUXILIARY_OR_ENUMERATED_EXCEPTIONS_EVENT_DIMENSIONS_SHAPES_AND_PLATE_NESTING",
+      "boundary": "These dynamic structural checks do not prove support equality, finite variance, posterior accuracy or semantic equivalence."
+    },
+    {
+      "notion": "trace replay agreement",
+      "support": "POUTINE_REPLAY_REUSES_VALUES_AT_MATCHING_NAMED_SITES_TO_COMPOSE_GUIDE_OR_PRIOR_TRACES_WITH_MODEL_EXECUTION",
+      "boundary": "Dynamic branching, site-name discipline and user code can invalidate intended alignment; no general equivalence decision procedure is supplied."
+    },
+    {
+      "notion": "objective agreement",
+      "support": "SVI_INTENDS_TO_OPTIMIZE_A_MONTE_CARLO_ELBO_DERIVED_FROM_MODEL_AND_GUIDE_TRACES",
+      "boundary": "Estimator bias/variance depends on choices and the paper does not prove convergence or compare estimates with exact targets."
+    },
+    {
+      "notion": "Pyro versus handwritten VAE behavior",
+      "support": "THE_PAPER_ASSERTS_THE_TWO_IMPLEMENTATIONS_REACH_THE_SAME_TEST_ELBO_AND_REPORTS_PER_UPDATE_TIMINGS",
+      "boundary": "Exact ELBO values, seeds, traces, logs and equivalence tests are not published in the paper."
+    },
+    {
+      "notion": "DMM implementation comparison",
+      "support": "PAPER_TABLE_COMPARES_FINAL_TEST_ELBO_WITH_A_CITED_ORIGINAL_IMPLEMENTATION_AND_ADDED_IAF_GUIDES",
+      "boundary": "The Pyro implementation uses Monte Carlo rather than analytic KL, and one result per configuration without uncertainty does not establish reproducible equality or superiority."
+    }
+  ],
+  "lifecycle_and_provenance": "The exact six-page JMLR PDF matches the resolver hash and carries CC BY 4.0. The associated MIT repository moved from uber/pyro to pyro-ppl/pyro while retaining history; release 0.3.1 at commit 92af2196 is six days after the paper's last prepublication code commit and asserts its version in VAE/DMM examples. CI covered Python 2.7/3.6 with PyTorch 1.0.1.post2 and multiple lint, docs, unit, integration, notebook and example jobs, but setup requirements are not fully locked. The paper provides no immutable code commit, container, dataset hash, experiment command, hardware receipt, logs, checkpoints, security threat model, compatibility horizon, migration/rollback policy or retirement record. Current repository success cannot be projected backward as exact 2019 experiment reproducibility.",
+  "limitations_and_failure_boundaries": [
+    "The paper's universal label means expressiveness through Python control flow and probabilistic primitives; it does not prove termination, normalization, decidability or tractable inference for arbitrary programs.",
+    "There is no formal semantics or handler-composition soundness proof in the six-page system paper.",
+    "Only sample and param are Pyro primitives, but arbitrary Python permits mutation, I/O, exceptions and nondeterminism outside Poutine's visibility.",
+    "The global handler stack and global parameter store create order, naming and state interactions that are not specified by a static effect system.",
+    "Model-guide site and shape checks are necessary structural checks, not proof that the guide's support covers the posterior or that ELBO gradients are reliable.",
+    "plate correctness relies on the user truthfully declaring conditional independence; subsampling then rescales factors on that assumption.",
+    "Arbitrary dynamic control flow can create changing trace structures and frustrate static analysis, JIT compilation and reliable site alignment.",
+    "Generic inference availability does not imply all algorithms apply to every model or mix/converge efficiently.",
+    "The VAE experiment uses one GPU and four architecture settings; identical test ELBO is asserted without values or uncertainty.",
+    "VAE timing excludes end-to-end training, data loading, memory use, compilation cost and hardware diversity.",
+    "The DMM table supplies no repeated seeds, error bars, convergence curves, train/validation dispersion or statistical test.",
+    "The DMM implementation changes analytic KL to Monte Carlo estimation, limiting direct equivalence to the cited baseline.",
+    "The existing-system table is explicitly simplified and author-coded; it is not a controlled benchmark or exhaustive capability audit.",
+    "Tag 0.3.1 is publication-near rather than an exact paper-pinned commit, and its environment dependencies are only partially pinned.",
+    "Code examples and tests survive, but paper result logs/checkpoints and machine-readable Figure 3-4 receipts do not.",
+    "No independent historical-environment rerun was performed here, so code audit must not be described as reproduced empirical validation.",
+    "The paper does not define an ignition FunctionSpec, neural-weight composition law, general equivalence checker, governed asset registry or ignition probability law."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove that arbitrary Pyro programs define valid normalized distributions, terminate or admit accurate generic inference.",
+    "It does not prove Poutine handler order is semantics-preserving or track all Python side effects.",
+    "It does not establish numerical superiority, posterior calibration or exact reproducibility from the two small experiment tables.",
+    "It does not provide weight-space composition, general program equivalence, governed Function OS lifecycle closure or ignition validation.",
+    "It does not turn a model review or code audit into formal proof or empirical validation of ignition."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "Named model/guide callables, sample/param sites, plates and runtime shape/site checks form a concrete probabilistic FunctionSpec pattern, bounded by dynamic Python and missing general contracts."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "Autodiff, JIT ELBO evaluation and trace transforms generate execution/gradients but do not provide a verified compiler or neural-weight composition algebra."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Site/shape compatibility and trace replay supply executable local relations, while support, distributional and behavioral equivalence remain unchecked."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "Poutine explicitly reifies, intercepts, composes and traces probabilistic effects, with the important boundary that ordinary Python effects remain opaque."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Tests, CI and two paper experiments establish implementation plausibility; absent formal results, result receipts, repeated runs and independent reproduction prevent validation closure."
+    },
+    "GAP-020": {
+      "status": "CONFIRMED",
+      "reason": "Executable model/guide programs, named stochastic traces and generic inference provide direct bounded probabilistic-function semantics at the operational library level."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Python model/guide interfaces and named stochastic/parameter sites specify probabilistic functions concretely."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "PyTorch modules/tensors, distribution objects, effect messages, parameter state and execution traces are explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Autodiff/JIT and inference transforms exist without a general verified compiler or Function OS generator."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "A publication-near MIT release, tests and examples survive, but the paper pins no commit/environment and preserves no numerical-result receipts."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "Python/PyTorch plus Poutine and SVI/HMC/NUTS execute and transform probabilistic programs."
+    },
+    "N6_ExecutionTrace": {
+      "status": "CONFIRMED",
+      "reason": "Named site messages and Poutine traces are first-class inference/runtime objects."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Runtime model-guide checks and a broad test suite validate local invariants, not semantic correctness, inference convergence or paper-result reproduction."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Nested handlers route primitive messages, while replay, trace, condition, lift, block, broadcast and plates compose model/inference behavior."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "JMLR and Git tags provide versioned receipts, but no paper-pinned code/environment/result registry or governed migration history closes the lifecycle."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "PARTIAL",
+    "verdict": "UPGRADED_TO_CONFIRMED_BOUNDED_ARCHITECTURAL_SUPPORT",
+    "corrections": [
+      "Replaced the provisional invented section list with the paper's actual five-section structure.",
+      "Verified the exact registered PDF hash and visually inspected all six pages.",
+      "Audited the publication-near 0.3.1 release, CI, tests, effect stack, trace/replay implementation and model-guide checks instead of inferring implementation from the abstract.",
+      "Bounded universality to host-language expressiveness rather than validity, termination or tractable inference.",
+      "Separated Poutine-managed probabilistic effects from untracked arbitrary Python side effects.",
+      "Separated site/shape validation from posterior-support or semantic equivalence.",
+      "Recorded exact VAE timing and DMM ELBO rows while rejecting them as broad empirical validation.",
+      "Recorded that examples survive but paper result logs, checkpoints and a fully locked historical environment do not."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "Within an embedded dynamic-Python boundary, Pyro confirms an executable probabilistic FunctionSpec-Representation-Interpreter-ExecutionTrace-Composer pattern: named stochastic functions are carried by tensors/distributions, Poutine reifies and routes effects, model-guide checks validate local structural invariants, and generic inference consumes traces. Compiler, Artifact, Validator and VersionedRegistry closure remain partial.",
+  "source_specific_reasoning": "CONFIRMED is warranted only for the bounded architectural claim because the complete primary paper and publication-near code independently expose the named-site function interface, effect-message stack, trace/replay composition, inference drivers, validation checks, tests and CI. It does not confirm the strongest universal, correctness or performance reading: arbitrary Python effects are opaque, independence is user-asserted, no formal semantics/convergence proof appears, experiments are small and their receipts are absent.",
+  "projection_boundary": "These are 121CX projections from the exact six-page JMLR PDF, all rendered pages, official publication metadata and a source audit of Pyro release 0.3.1 plus its immediate prepublication history. This model review and code audit are not a formal semantics proof, inference-convergence proof, reproduction of the 2019 experiments, empirical validation of ignition, or proof that Pyro's operational design transfers unchanged to governed Function OS assets.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T07:06:00Z"
+}
