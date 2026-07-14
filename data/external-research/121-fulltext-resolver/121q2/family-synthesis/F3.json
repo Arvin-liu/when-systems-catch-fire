@@ -1,0 +1,94 @@
+{
+  "family_id": "F3",
+  "family_name": "Program Synthesis",
+  "description": "Neural program induction, code generation, program synthesis",
+  "canonical_included_source_ids": [
+    "S120-014",
+    "S120-015",
+    "S120-017",
+    "S120-018",
+    "S120-021"
+  ],
+  "total_sources": 5,
+  "verified_identity_count": 1,
+  "corrected_identity_count": 2,
+  "blocked_identity_count": 0,
+  "unknown_identity_count": 2,
+  "confirmed_semantic_count": 0,
+  "partial_semantic_count": 4,
+  "unresolved_semantic_count": 1,
+  "not_found_semantic_count": 0,
+  "strongest_supported_claims": [
+    "Neural models can synthesize programs from specifications",
+    "Execution feedback improves program synthesis",
+    "Search-based approaches with compiler guidance outperform pure neural methods"
+  ],
+  "unsupported_or_overclaimed_claims": [
+    "Universal program synthesis",
+    "Guaranteed correctness of synthesized programs"
+  ],
+  "within_family_disagreements": [
+    "Whether neural approaches or symbolic search is more effective"
+  ],
+  "evidence_limitations": [
+    "Evidence limited to fulltext-reviewed sources; sources without fulltext review not included",
+    "Identity chain issues may affect some sources (see identity ledger)",
+    "Semantic verdicts are based on independent model review, not human expert validation"
+  ],
+  "candidate_function_os_implications": [
+    "N1 FunctionSpec: moderate — synthesis target as spec",
+    "N3 Compiler: partial — synthesis as compilation",
+    "N5 Interpreter: strong — execution feedback as interpretation",
+    "N6 ExecutionTrace: strong — execution traces central to synthesis"
+  ],
+  "candidate_gap_implications": [
+    "GAP-015: moderate — synthesis specifications",
+    "GAP-016: weak — no compilation",
+    "GAP-018: strong — execution traces guide synthesis"
+  ],
+  "prohibited_wording": [
+    "This family validates Function OS",
+    "This family proves the ignition framework",
+    "These papers constitute mathematical proof",
+    "Function OS is verified by these sources"
+  ],
+  "confidence_basis": "Based on canonical semantic index (Step 006) with priority: 121Q2R > 121Q2 > 121Q1 > 121CX > evidence-card. Only fulltext-reviewed sources included.",
+  "synthesized_at": "2026-07-14T17:01:06Z",
+  "included_sources": [
+    {
+      "source_id": "S120-014",
+      "title": "",
+      "verdict": "PARTIAL",
+      "identity_status": "",
+      "canonical_source": "121Q1"
+    },
+    {
+      "source_id": "S120-015",
+      "title": "Hypernetworks for Specialized Instructions (UNVERIFIABLE)",
+      "verdict": "UNRESOLVED",
+      "identity_status": "",
+      "canonical_source": "121Q1"
+    },
+    {
+      "source_id": "S120-017",
+      "title": "Latent Execution for Neural Program Synthesis",
+      "verdict": "PARTIAL",
+      "identity_status": "CORRECTED",
+      "canonical_source": "121Q2R"
+    },
+    {
+      "source_id": "S120-018",
+      "title": "SPoC: Search-based Pseudocode to Code",
+      "verdict": "PARTIAL",
+      "identity_status": "CORRECTED",
+      "canonical_source": "121Q2R"
+    },
+    {
+      "source_id": "S120-021",
+      "title": "Execution Guided Line-by-Line Code Generation",
+      "verdict": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "canonical_source": "121Q2R"
+    }
+  ]
+}
