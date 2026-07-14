@@ -1,0 +1,320 @@
+{
+  "source_id": "S120-077",
+  "canonical_title": "Hybrid computing using a neural network with dynamic external memory",
+  "authors": [
+    "Alex Graves",
+    "Greg Wayne",
+    "Malcolm Reynolds",
+    "Tim Harley",
+    "Ivo Danihelka",
+    "Agnieszka Grabska-Barwińska",
+    "Sergio Gómez Colmenarejo",
+    "Edward Grefenstette",
+    "Tiago Ramalho",
+    "John Agapiou",
+    "Adrià Puigdomènech Badia",
+    "Karl Moritz Hermann",
+    "Yori Zwols",
+    "Georg Ostrovski",
+    "Adam Cain",
+    "Helen King",
+    "Christopher Summerfield",
+    "Phil Blunsom",
+    "Koray Kavukcuoglu",
+    "Demis Hassabis"
+  ],
+  "year": 2016,
+  "source_family": 1,
+  "source_family_name": "program-as-weights and weight-space computation",
+  "identifier": "Nature 538(7626):471-476",
+  "doi_or_identifier": "DOI 10.1038/nature20101",
+  "url": "https://ora.ox.ac.uk/objects/uuid%3Add8473bd-2d70-424d-881b-86d9c9c66b51/files/m3e245240c75381f2c3b847442dd4fcf1",
+  "version": "Oxford University Research Archive accepted manuscript deposited 2016-11-10, bound to the final Nature article published 2016-10-12; manuscript title 'Symbolic Reasoning with Differentiable Neural Computers'",
+  "license": "Accepted manuscript available under Oxford University Research Archive terms, copyright Graves et al. 2016; official code is Apache-2.0",
+  "file_size_bytes": 3584954,
+  "page_count": 64,
+  "sha256": "57bd3da8945471ce076ba3684ba66af96a879a956e7ea581b732f3477d673415",
+  "reviewed_at": "2026-07-14T09:43:57Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "claim_support_status": "CONFIRMED",
+  "retrieval_and_integrity": {
+    "frozen_registry_record": {
+      "registered_url": "https://deepmind.google/blog/differentiable-neural-computers/",
+      "registered_sha256": "5f9663f4a9606a80510604f03c912019baa89163c1e083285a61109376ecf439",
+      "registered_file_size_bytes": 144775,
+      "actual_artifact_type": "Google DeepMind blog HTML",
+      "registry_content_type_claim": "application/pdf",
+      "binding_result": "BLOG_SUMMARY_NOT_PAPER_FULLTEXT"
+    },
+    "corrected_primary_fulltext": {
+      "repository": "Oxford University Research Archive",
+      "record_url": "https://ora.ox.ac.uk/objects/uuid%3Add8473bd-2d70-424d-881b-86d9c9c66b51",
+      "file_url": "https://ora.ox.ac.uk/objects/uuid%3Add8473bd-2d70-424d-881b-86d9c9c66b51/files/m3e245240c75381f2c3b847442dd4fcf1",
+      "sha256": "57bd3da8945471ce076ba3684ba66af96a879a956e7ea581b732f3477d673415",
+      "file_size_bytes": 3584954,
+      "page_count": 64,
+      "record_binding": "Accepted manuscript explicitly linked to DOI 10.1038/nature20101, final Nature 538:471-476",
+      "deposit_date": "2016-11-10",
+      "title_boundary": "Accepted manuscript uses the prepublication title 'Symbolic Reasoning with Differentiable Neural Computers'; author list, content and repository metadata bind it to the final article."
+    },
+    "visual_review": "All 64 pages were rendered and visually inspected. Main text, Methods, Supplementary Information, equations, Tables 1-9 and all figures were legible; no blank, truncated or substituted page was found.",
+    "text_review": "The complete 16,168-word extracted accepted manuscript was reviewed, including 21 pages of main text/references, 26 pages of Methods/references and 17 pages of supplementary equations, results, figures and tables.",
+    "official_repository": {
+      "url": "https://github.com/google-deepmind/dnc",
+      "audited_current_head": "f5981c66ac6fe27978014c314c4aba39f1962ee3",
+      "current_head_date": "2021-07-23",
+      "audited_commit_count": 13,
+      "first_public_commit": "ec42da6304f2c9ea8bdd5a76bf3b83c900d6312c at 2017-04-18",
+      "tracked_file_count": 16,
+      "release_tags": 0,
+      "declared_package_version": "0.0.2",
+      "license": "Apache-2.0",
+      "test_methods_located": 18,
+      "syntax_check": "All current Python modules passed Python 3 syntax compilation.",
+      "runtime_test_status": "NOT_RUN_DEPENDENCIES_UNAVAILABLE: TensorFlow and Sonnet are not installed in the audit environment, and setup.py declares no install_requires or version pins.",
+      "scope_boundary": "The public repository appeared after publication and supplies the DNC core, memory-access unit tests and a repeat-copy example, not the bAbI, graph or Mini-SHRDLU experiment pipelines, paper checkpoints or result data."
+    },
+    "integrity_boundary": "121CX did not rewrite the frozen registry. It corrected source binding in the extreme card and used the DOI-bound institutional accepted manuscript plus the official code repository for semantic review."
+  },
+  "sections_reviewed": [
+    "accepted manuscript main text pp. 1-21, including Figures 1-5",
+    "Methods pp. 22-47, sections 1-13 and equations 1-32",
+    "Supplementary Information pp. 48-64, reinforcement-learning derivation, complete equations, Tables 1-9 and Supplementary Figures 1-3",
+    "official google-deepmind/dnc repository current tree, initial publication commit and complete available history"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "main pp. 1-6; Methods pp. 22-31; equations 1-25; Figure 1",
+      "checked_for": "controller, memory carrier, content lookup, allocation, deallocation, write update, temporal linkage, read modes and scalability claims"
+    },
+    {
+      "anchors": "main pp. 6-10; Methods pp. 31-38; Figure 2; Supplementary Tables 1-4 and 6-8",
+      "checked_for": "bAbI and graph protocols, train/validation/test separation, curriculum, DAgger-style supervision, best-versus-mean results and transfer to London/family graphs"
+    },
+    {
+      "anchors": "main pp. 10-15; Methods pp. 38-45; Figures 4-5; Supplementary Tables 5 and 9",
+      "checked_for": "Mini-SHRDLU reward shaping, curriculum, 20-seed results, plan decoding, effect boundary and evaluation criteria"
+    },
+    {
+      "anchors": "Supplementary pp. 51-58; Tables 1-5; Supplementary Figures 1-3",
+      "checked_for": "20-run distributions, selected best network, larger-memory transfer, sparse-link approximation and dynamic deallocation"
+    },
+    {
+      "anchors": "official repository README, dnc.py, access.py, addressing.py, train.py and *_test.py",
+      "checked_for": "released operational semantics, checkpoint behavior, test coverage, dependency provenance, dense-link implementation and experiment-release limits"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "A recurrent controller can learn to read, write, allocate, free and temporally link locations in an external differentiable memory.",
+      "anchors": "main pp. 2-5; Methods sections 1-4; equations 1-25"
+    },
+    {
+      "claim": "Dynamic allocation separates learned controller behavior from memory size until capacity is exhausted, and temporal links permit forward/backward sequence traversal independent of physical location.",
+      "anchors": "main pp. 4-5; Methods sections 3-4; Supplementary Figures 1-3"
+    },
+    {
+      "claim": "DNCs outperform evaluated LSTM/NTM baselines on synthetic bAbI and random-graph tasks and transfer learned graph procedures to a London map and a family tree.",
+      "anchors": "main pp. 6-10; Figure 2; Supplementary Tables 1-4 and 6-8"
+    },
+    {
+      "claim": "With reinforcement learning and curriculum, DNCs can execute symbolically specified block-world goals in Mini-SHRDLU better than the evaluated LSTM baseline.",
+      "anchors": "main pp. 10-15; Figures 4-5; Methods sections 9-13; Supplementary Table 9"
+    },
+    {
+      "claim": "Memory-access visualizations and post-hoc decoders reveal task-relevant graph traversal and predictive action information in memory.",
+      "anchors": "main Figures 3-4; Methods section 12"
+    }
+  ],
+  "function_concept_used_by_paper": "A learned DNC function is a recurrent controller plus fixed differentiable memory-access machinery operating on episode inputs. The carrier includes weights, controller state, external memory, usage values, temporal links, precedence/read/write weightings and read vectors. The controller's learned operations are CPU-like only by analogy: no symbolic instruction stream or extracted source program is emitted, and graph/planning procedures are inferred from performance and decoded memory state.",
+  "specification_language": "Tasks are operationally specified by token/triple encodings, graph generators, query/answer phases, target sequences, reward functions, curriculum lessons and evaluation thresholds. Mini-SHRDLU goals are sequences of symbolic adjacency constraints; graph tasks use (source, edge, destination) triples. This is unusually concrete task specification, but not a general FunctionSpec language: types, preconditions, postconditions, external effects, permissions, failure semantics, resource limits, uncertainty, provenance and compatibility are not encoded as machine-checkable contracts.",
+  "representation_or_carrier": {
+    "static_carrier": "learned LSTM controller/output weights plus fixed DNC access equations",
+    "dynamic_carrier": "controller state, N-by-W memory, usage vector, precedence weighting, N-by-N temporal link matrix, read/write weightings and read vectors",
+    "graph_carrier": "unordered edge triples are written to memory; content keys and temporal links support traversal and associative lookup",
+    "goal_carrier": "Mini-SHRDLU constraint sequences are written into memory and used by the recurrent policy to choose moves",
+    "artifact_carrier": "TensorFlow/Sonnet RNNCore implementation and optional TensorFlow checkpoints in the later public repository",
+    "non_weights_only_boundary": "Memory content and access state are first-class runtime carriers; describing DNC as weights alone or stateless inference is false."
+  },
+  "compiler_or_generator": {
+    "training_process": "Backpropagation through time with RMSProp learns supervised DNCs; Mini-SHRDLU uses policy-gradient/value-network learning. Sixteen asynchronous workers share one master model in the reported setup.",
+    "curriculum_process": "Graph and Mini-SHRDLU tasks progress through hand-designed lessons with completion thresholds; selected tasks replay 10 percent of earlier lessons to reduce forgetting.",
+    "structured_prediction_process": "Shortest-path training uses a DAgger-like mixture of network actions and an optimal planner, so later states may be teacher-induced during training.",
+    "classification": "These processes generate an executable latent memory-control policy and partially resemble compilation from examples/rewards, but they emit no source/IR, provide no semantic-preservation guarantee and depend on curriculum, teacher and reward design."
+  },
+  "interpreter_or_runtime": "At each step, the controller consumes input and prior reads, emits output plus an interface vector, chooses content/allocation writes, erases/adds memory, updates usage and temporal links, and mixes backward/content/forward reads. The Methods give complete equations and the official repository materializes them as composable TensorFlow RNNCore modules. This confirms a bounded differentiable state-machine runtime, not an interpreter for a separately specified function language or exact conventional RAM semantics.",
+  "state_or_effect_model": "Internal effects are explicit and rich: allocate, free, content-update, erase/add, temporal-link creation and forward/backward traversal. Mini-SHRDLU adds stochastic policy actions that mutate a simulated block world. Yet no programming-language effect signature governs memory/environment operations; there are no capabilities, authority checks, transaction boundaries, idempotence, compensation, concurrency control, irreversible-action policy or rollback. Reward penalties are task shaping, not effect safety.",
+  "composition_rule": "Within one DNC, content lookup, dynamic allocation, write, link update and mixed read modes compose sequentially; multiple read heads operate in parallel, and RNNCore modules can be plugged together in the public implementation. Curricula compose task difficulty and the controller applies learned procedures across graph instances. The paper does not combine independently trained function artifacts or define weight arithmetic, semantic compatibility, typed routing or safe cross-function composition.",
+  "equivalence_notions": [
+    {
+      "notion": "task-level exact answer agreement",
+      "support": "bAbI and graph outputs are scored by exact question/sequence correctness; shortest paths must be minimum length.",
+      "boundary": "Finite benchmark agreement does not prove semantic equivalence to symbolic inference, graph search or a conventional program."
+    },
+    {
+      "notion": "procedure transfer",
+      "support": "Networks trained on random graphs are evaluated on a fixed London Underground graph and family tree with novel labels/connectivity.",
+      "boundary": "These are still synthetic vectorized graph tasks; London traversal 98.8 percent, shortest path 55.3 percent and family relations 81.8 percent show incomplete, task-specific transfer."
+    },
+    {
+      "notion": "memory-size independence",
+      "support": "A path-traversal DNC trained with 256 locations is evaluated with different memory sizes and works when available memory is sufficient.",
+      "boundary": "Controller parameters are size-independent, but runtime allocation, dense link memory and capacity constraints are not; unbounded memory is proposed rather than implemented."
+    },
+    {
+      "notion": "decoded plan",
+      "support": "Logistic classifiers predict early Mini-SHRDLU actions from memory contents recorded before execution; first-action accuracy is 89 percent versus a 17-percent frequency baseline.",
+      "boundary": "Predictive information does not identify a symbolic plan, prove causal use of those locations or establish equivalence to a planner."
+    },
+    {
+      "notion": "equation/code correspondence",
+      "support": "The later official repository implements memory, linkage, allocation and read/write equations and contains 18 unit/gradient test methods.",
+      "boundary": "The repository postdates publication, lacks release tags/dependency pins and does not reproduce the paper experiment pipelines or reported results."
+    }
+  ],
+  "validation_regime": {
+    "formal": "Methods and supplement provide complete controller, allocation, usage, erase/write, temporal-link, read-mode, structured-prediction and reinforcement-learning equations. No mechanized semantics, universality proof, training convergence theorem, semantic-equivalence theorem or safety proof is supplied.",
+    "babi_protocol": "Use the en-10k data: 10,000 questions train and 1,000 test per task, with about 10 percent of training stories held for validation. A single model is jointly trained on all 20 tasks. Grid-search hyperparameters and validation early stopping are used.",
+    "babi_best_vs_distribution": "Main-text 3.8-percent mean test error with two failed tasks is the single validation-selected best DNC2 network among 20 runs, compared with the cited previous jointly trained 7.5 percent/six failures. Across all 20 runs, DNC1 is 16.7+-7.6 percent with 11.2+-5.4 failed tasks and DNC2 is 20.8+-7.1 percent with 14.0+-5.0 failures. The headline best run is therefore not representative of run-average performance.",
+    "graph_protocol": "Random geometric graphs have random numeric labels and shuffled triples. Curriculum varies node count, degree and path/relation length. Twenty randomly initialized networks share selected hyperparameters. Path traversal and inferred-relation lessons complete at 90-percent modal accuracy; shortest path completes at 80 percent within one extra step of optimum.",
+    "graph_transfer": "On a fixed London map, seven-step traversal is 98.8 percent and all four-step shortest paths average 55.3 percent; on the fixed family tree, four-step inferred relations average 81.8 percent. Supplementary final-lesson distributions give 98.8+-1.6 test/99.0+-1.1 final for traversal, 55.3+-6.4/64.0+-3.5 for shortest path and 81.8+-13.5/95.5+-2.2 for inferred relations.",
+    "shortest_path_teacher_boundary": "Training mixes the network policy with an optimal planner through a DAgger-like beta=0.8 setup and supplies chosen outgoing triples during answer steps. Performance is not evidence of unaided discovery from terminal supervision alone.",
+    "mini_shrdlu": "Twenty seed-replicated DNC and LSTM runs follow a 26-lesson curriculum over goals, blocks, constraints and search depth. Problems are reported as not learnable in reasonable time without curriculum. Rewards count satisfied constraints, subtract invalid-move cost and penalize achieving then undoing a goal; a direct entropy error is also applied.",
+    "plan_decoder": "From 800 validation episodes, memory locations read above a threshold are averaged and logistic classifiers predict the first five later actions. One hundred random 80/20 splits yield percentile intervals; first-action accuracy is 89 percent versus 17-percent action-frequency baseline. The decoder is post-hoc and does not establish an explicit or causal plan representation.",
+    "optimization": "Statistics are based on 20 random initializations per reported setting. Hyperparameters come from prior grid searches. Supervised and RL models use one central parameter copy updated by 16 asynchronous workers with RMSProp and backpropagation through time; LSTM controller gradients are clipped elementwise to [-10,10].",
+    "sparse_link_scaling": "Dense temporal linkage costs O(N^2) memory and compute. A top-K approximation is analyzed at O(N log N) compute and O(N) memory for fixed K; K=5 is tested on a repeat-copy experiment over 20 runs and appears close to dense performance. The public code implements the dense link, not this sparse/unbounded production design.",
+    "memory_reuse": "Supplementary copy experiments show larger-memory transfer and free-gate reuse in controlled synthetic settings. They do not validate automatic unbounded growth, concurrent allocation or long-lived production memory.",
+    "released_artifact": "The official 2017+ Apache-2.0 repository provides 16 files, DNC/access/addressing modules, 18 located tests and a repeat-copy trainer. It provides no paper task generators for bAbI/graphs/Mini-SHRDLU, no paper checkpoints/results/logs and no dependency pins; setup.py omits install_requires.",
+    "code_audit": "Current code passes syntax compilation. Runtime tests were not executable because legacy TensorFlow/Sonnet dependencies are unavailable. The audit does not claim test passage or reproduction.",
+    "reproducibility": "Paper equations, curricula, hyperparameters and 20-run summaries are unusually detailed. Exact replay remains blocked by missing paper experiment code, seeds, checkpoints, raw episodes/curves and a pinned environment."
+  },
+  "uncertainty_model": "Read/write weightings, usage, gates, policy distributions and stochastic environment trajectories are explicit continuous or probabilistic quantities. They are operational control/state variables, not calibrated epistemic uncertainty. The paper improves experimental uncertainty reporting over NTM by using 20 random initializations, means/standard deviations and percentile intervals for the plan decoder. However headline results select the best validation run, hyperparameters are grid-selected, curriculum completion is adaptive and no calibrated predictive uncertainty or uncertainty-aware admission/lifecycle is defined.",
+  "lifecycle_and_provenance": "The conceptual lifecycle is task/curriculum generation, distributed training, validation selection, controller checkpoint, episode initialization, memory allocation/use/free, evaluation and post-hoc decoding. The paper does not publish immutable seeds, model hashes, raw run receipts or a mapping from each figure/table row to a checkpoint. The official repository begins six months after publication, has 13 commits, no tags, package version 0.0.2, optional checkpoints disabled by default and no dependency lock. Its README warns users to delete a checkpoint directory before resuming with changed shapes. Git history supplies code provenance but no governed learned-function registry with compatibility, approvals, monitoring, deprecation, migration, rollback or tombstones.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Token/triple tasks, constraint goals, losses/rewards and curriculum thresholds form concrete bounded specs, without general typed pre/post/effect contracts."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Controller weights plus memory, usage, links, head weightings and read vectors are an explicit distributed carrier for learned stateful functions and data structures."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Supervised/RL training, curriculum and teacher mixture generate executable latent memory-control policies, but no source/IR or semantic-preservation guarantee."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "A public Apache-2.0 implementation and optional checkpoints exist, but no paper checkpoints, experiment packages or immutable learned-function receipts are released."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "Complete equations and public RNNCore modules implement a bounded differentiable runtime for allocation, freeing, linking, reading and writing."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Selected read/write/link/memory visualizations and post-hoc decoders expose internal trajectories, but no complete machine-readable trace ledger is released."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Exact-answer metrics, shortest-path optimality, held-out graphs, 20-run statistics and unit tests are useful bounded validators, not semantic or safety validation."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Access primitives, read heads and RNNCore modules compose internally, while independently trained function artifacts are neither routed nor semantically composed."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Git and a package version track source code, but there is no provenance-complete learned-function registry, compatibility model or rollback lifecycle."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Symbolic triples/constraints and task protocols are concrete specifications, but no general formal precondition/postcondition/effect language is supplied."
+    },
+    "GAP-016": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Internal recurrent composition and training do not define weight-space arithmetic or combination of independently learned functions."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Exact-answer, path-optimality and transfer metrics compare behavior, but do not establish equivalence between neural and symbolic representations."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Allocation/free/write/link operations and simulated block actions expose rich internal/environment effects, without effect signatures, authority, transactions or rollback."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "The later official repository and optional checkpoints provide limited provenance fragments, not a versioned learned-function registry or complete lifecycle."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Stochastic policies, gates and 20-run uncertainty are explicit, but no calibrated probabilistic function semantics or uncertainty governance is defined."
+    }
+  },
+  "source_specific_reasoning": "CONFIRMED is bounded to the DNC architecture and documentary/released-code evidence. The DOI-bound 64-page manuscript provides complete operational equations, task protocols, 20-run distributions and negative boundaries; the later official repository materializes the dense core and unit tests. Together they directly confirm Representation and Interpreter and partially support FunctionSpec, Compiler, Artifact, Trace, Validator and internal composition. The verdict does not accept the frozen registry's blog as fulltext, the abstract card's weights-only/stateless/weight-arithmetic framing, best-run bAbI as typical behavior, the post-hoc decoder as a symbolic plan, or hypothetical sparse/unbounded memory as a deployed artifact.",
+  "confirmed_projection": "The exact DOI-bound accepted manuscript and official implementation confirm a bounded stateful Representation-Interpreter architecture: a learned controller operates dynamically allocated, content-addressed and temporally linked memory through complete differentiable equations, and can be validated on exact synthetic graph/constraint tasks. Confirmation is architectural and limited. It is not proof of symbolic reasoning equivalence, general planning, unbounded memory, run-stable performance or production-ready lifecycle governance.",
+  "projection_boundary": "These are 121CX projections from the Oxford DOI-bound 64-page accepted manuscript, all rendered pages and the complete official repository/history. The frozen registry's DeepMind blog is retained only as a source-binding error record. Legacy TensorFlow/Sonnet tests and paper experiments were not run. This model review is not proof, independent replication, empirical validation of the paper, or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not prove that DNC memory operations are semantically equivalent to conventional RAM, a symbolic computer or a graph algorithm.",
+    "It does not extract a symbolic source program or prove that decoded memory contents are an explicit causal plan.",
+    "It does not establish arbitrary symbolic reasoning, general planning or reliable transfer beyond the tested synthetic structures.",
+    "It does not define weight arithmetic, merging or composition of independent learned functions.",
+    "It does not establish equivalence between neural behaviors and symbolic specifications across all inputs.",
+    "It does not implement or empirically validate automatically growing unbounded memory in the released code.",
+    "It does not provide external effect contracts, capabilities, transactions, compensation or rollback.",
+    "It does not provide a provenance-complete versioned learned-function registry.",
+    "The validation-selected 3.8-percent bAbI run does not describe typical 20-run performance.",
+    "This review is not proof or independent empirical validation of the authors' experiments."
+  ],
+  "limitations_and_failure_boundaries": [
+    "The frozen registry points to a blog HTML artifact and incorrectly labels its content type as PDF; it is not paper fulltext.",
+    "The accepted manuscript has a prepublication title, requiring DOI/repository metadata binding rather than title-only matching.",
+    "The bAbI 3.8-percent headline is a single validation-selected best network out of 20; all-run means are 16.7+-7.6 and 20.8+-7.1 percent for the two DNC settings.",
+    "Across bAbI runs DNC still averages 11.2+-5.4 or 14.0+-5.0 failed tasks, showing substantial seed sensitivity.",
+    "Hyperparameters are selected by prior grid searches and early stopping uses validation, adding selection uncertainty beyond run standard deviations.",
+    "London Underground transfer is incomplete: four-step shortest-path accuracy is 55.3 percent, far below traversal at 98.8 percent.",
+    "Family-tree inferred-relation test accuracy is 81.8 percent with 13.5-point standard deviation, indicating instability.",
+    "The London and family evaluations are vectorized graph problems, not natural-language or real-world deployment evidence.",
+    "Shortest-path training uses an optimal planner through DAgger-like action mixing and cannot be characterized as terminal-supervision-only discovery.",
+    "Graph and Mini-SHRDLU tasks require hand-designed curricula; the Methods state they could not be learned in reasonable time without curriculum.",
+    "Earlier-lesson replay is required on several curricula to mitigate performance degradation, so catastrophic forgetting is not eliminated.",
+    "Mini-SHRDLU uses shaped rewards, invalid-move costs, an undo penalty and a direct entropy error, not sparse success reward alone.",
+    "Post-hoc plan decoding averages selected memory locations and trains logistic classifiers; predictive accuracy does not prove a discrete plan representation or causal reliance.",
+    "Memory-size independence holds only while capacity suffices; runtime memory and access costs still grow with memory size.",
+    "The exact temporal link matrix costs O(N^2) memory/compute; the proposed O(N log N)/O(N) sparse approximation is tested only on a controlled copy task.",
+    "Automatic unbounded memory growth is a proposal, not an implemented or evaluated result.",
+    "Allocation sorting is only piecewise differentiable; the paper reports no adverse effect in experiments but gives no general optimization guarantee.",
+    "Internal soft addressing can split reads/writes and does not have exact discrete memory semantics.",
+    "The official repository starts after publication and releases a core/repeat-copy example, not the paper's bAbI, graph or Mini-SHRDLU systems.",
+    "No paper checkpoints, raw episodes, curves, seed ledger, full configuration receipts or result-generation scripts are released.",
+    "The public package has no release tags, dependency lock or install_requires; TensorFlow/Sonnet runtime compatibility is not reproducible from setup.py.",
+    "The public code's checkpointing is disabled by default and its README instructs manual deletion before changing shapes, not governed compatibility/rollback.",
+    "The released dense implementation does not materialize the paper's sparse or automatically expanding memory proposal.",
+    "This review verifies documents, source history and code structure; it does not reproduce the reported experiments or independently validate their measurements."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "SUPPORTED_BY_ABSTRACT_ONLY",
+    "verdict": "CENTRAL_ARCHITECTURE_CONFIRMED_WITH_SOURCE_BINDING_AND_RESULT_SELECTION_CORRECTIONS",
+    "corrections": [
+      "Corrected the frozen fulltext binding: the registered artifact is a DeepMind blog HTML page, not the Nature paper.",
+      "Located and verified the DOI-bound Oxford accepted manuscript, reviewed all 64 pages and preserved its prepublication-title boundary.",
+      "Audited the complete official google-deepmind/dnc repository/history rather than assuming the paper had no released implementation.",
+      "Corrected the weights-only carrier and stateless-inference claim: DNC is explicitly stateful and depends on mutable memory, usage, temporal links and read/write state.",
+      "Rejected weight arithmetic/layer stacking as the composition rule; DNC composes memory primitives and RNNCore modules, not independent learned functions.",
+      "Separated the validation-selected best bAbI result of 3.8 percent from all-run means of 16.7+-7.6 and 20.8+-7.1 percent.",
+      "Bounded transfer with the actual London/family accuracies and the use of an optimal-planner mixture for shortest-path training.",
+      "Separated predictive post-hoc memory decoding from an extracted symbolic or causal plan.",
+      "Separated hypothetical sparse/unbounded scaling from the released dense implementation and controlled copy tests.",
+      "Recorded curriculum/reward shaping, seed variability, incomplete paper artifacts and legacy dependency gaps.",
+      "Did not call equations proof, repository unit tests paper reproduction, reported experiments independent validation, or DNC validation of ignition."
+    ],
+    "prior_card_superseded": true
+  }
+}
