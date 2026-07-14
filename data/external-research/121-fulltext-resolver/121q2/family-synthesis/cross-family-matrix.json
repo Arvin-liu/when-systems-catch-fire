@@ -1,0 +1,188 @@
+{
+  "step": 17,
+  "action": "CROSS_FAMILY_MATRIX_AND_VALIDATION",
+  "timestamp": "2026-07-14T17:03:13Z",
+  "families_included": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10"
+  ],
+  "cross_family_analysis": {
+    "common_supported_claims": [
+      "Neural weight manipulation (generation, adaptation, merging) can produce functional behavior across multiple families",
+      "Execution feedback and traces improve system performance (F3 program synthesis, F2 hypernetworks)",
+      "Formal specification enables verification (F7 types/contracts, F8 computational effects at theoretical level)",
+      "Low-rank and parameter-efficient methods are effective for adaptation (F5 LoRA, F6 model merging)",
+      "Dynamic weight generation is a cross-cutting theme (F1 weight programs, F2 hypernetworks, F5 adapters)"
+    ],
+    "cross_family_conflicts": [
+      "F1 (weights as programs) vs F7 (types as specs): fundamentally different specification paradigms — implicit (weight space) vs explicit (type system)",
+      "F3 (neural synthesis) vs F7 (formal verification): neural approaches lack formal guarantees that refinement types provide",
+      "F6 (model merging) vs F8 (effect handlers): merging operates in weight space without semantic theory, while effect handlers have rigorous category-theoretic foundation but no implementation"
+    ],
+    "analogy_only_connections": [
+      "F4 (neural operators) and F8 (effect handlers): both learn/define operators, but neural operators are empirical while effect handlers are categorical",
+      "F5 (LoRA) and F7 (refinement types): both add structure to base models, but LoRA adds parameters while refinement types add specifications",
+      "F10 (agent tools) and F3 (program synthesis): both generate functional artifacts, but agent tools are practical while program synthesis is formal"
+    ],
+    "evidence_gaps": [
+      "No source provides execution trace + formal verification simultaneously",
+      "No source addresses versioning of generated artifacts (GAP-019 universally unsupported)",
+      "No source provides empirical validation of Function OS nodes — all evidence is by analogy or partial support",
+      "F9 (probabilistic) and F10 (agent) have the most sources but least formal rigor",
+      "F7 (types) and F8 (effects) have the strongest formal foundations but no implementation"
+    ],
+    "identity_chain_risks": [
+      "Systematic source identity issues across 121CX prior cards (S120-001~010): 4 unknown identity status",
+      "S120-015 remains BLOCKED (unverifiable identity)",
+      "S120-008 UNRESOLVED (insufficient text)",
+      "Cross-model acceptance reveals identity errors not caught by original reviewer"
+    ]
+  },
+  "function_os_candidate_impacts": {
+    "N1_FunctionSpec": {
+      "strongest_evidence": "F7 (Generic Refinement Types — STRONGEST in batch)",
+      "also_supported_by": [
+        "F8 (algebraic theories as effect spec)",
+        "F3 (synthesis targets as spec)"
+      ],
+      "candidate_impact": "Specification language for Function OS — refinement types provide formal, decidable specification",
+      "prohibited": "No final ruling — pending GAP adjudication"
+    },
+    "N2_Representation": {
+      "strongest_evidence": "F1 (weight space representation), F6 (weight space operations)",
+      "also_supported_by": [
+        "F2 (hypernetwork representations)",
+        "F4 (Fourier space representations)"
+      ],
+      "candidate_impact": "Multiple representation paradigms: weight space, Fourier space, type systems — no unified representation proven"
+    },
+    "N3_Compiler": {
+      "strongest_evidence": "F7 (Flux as verification compiler), F4 (operator learning as compilation)",
+      "also_supported_by": [
+        "F1 (weight compilation)",
+        "F5 (adapter compilation)"
+      ],
+      "candidate_impact": "Compilation mechanisms vary by family — no universal compiler architecture"
+    },
+    "N4_Artifact": {
+      "strongest_evidence": "F6 (model versions as artifacts), F3 (synthesized programs as artifacts)",
+      "also_supported_by": [],
+      "candidate_impact": "Weak evidence — no registry, versioning, or composition mechanism for artifacts"
+    },
+    "N5_Interpreter": {
+      "strongest_evidence": "F8 (handlers as homomorphisms — STRONGEST mathematical foundation)",
+      "also_supported_by": [
+        "F7 (algorithmic type checking with ghost parameter synthesis)",
+        "F3 (execution feedback as interpretation)"
+      ],
+      "candidate_impact": "Interpretation models range from category-theoretic (F8) to algorithmic (F7) to empirical (F3)"
+    },
+    "N6_ExecutionTrace": {
+      "strongest_evidence": "F3 (execution traces central to program synthesis)",
+      "also_supported_by": [
+        "F8 (computation tree in free model as structured trace)"
+      ],
+      "candidate_impact": "Execution trace evidence is strongest in program synthesis and algebraic effects; absent in weight-program families"
+    },
+    "N7_Validator": {
+      "strongest_evidence": "F7 (SMT-decidable formal verification — STRONGEST in batch)",
+      "also_supported_by": [],
+      "candidate_impact": "Formal validation via SMT solving is the strongest validation mechanism; other families lack formal verification"
+    },
+    "N8_ComposerRouter": {
+      "strongest_evidence": "F6 (task arithmetic as composition — STRONG)",
+      "also_supported_by": [
+        "F5 (adapter composition as routing)",
+        "F8 (handler composition via theory combination)"
+      ],
+      "candidate_impact": "Composition mechanisms: weight arithmetic (F6), adapter routing (F5), theory combination (F8) — no unified framework"
+    },
+    "N9_VersionedRegistry": {
+      "strongest_evidence": "NONE — universally unsupported",
+      "also_supported_by": [],
+      "candidate_impact": "No evidence for versioned registry across any family — this is the largest evidence gap"
+    }
+  },
+  "gap_candidate_impacts": {
+    "GAP-015": {
+      "strongest": "F7 (formal specification language)",
+      "also": [
+        "F8 (algebraic effect spec)",
+        "F3 (synthesis spec)"
+      ]
+    },
+    "GAP-016": {
+      "strongest": "F7 (verification compilation)",
+      "also": [
+        "F4 (operator compilation)",
+        "F1 (weight compilation)"
+      ]
+    },
+    "GAP-017": {
+      "strongest": "F6 (weight operations as equivalence)",
+      "also": [
+        "F7 (type-preserving translation)",
+        "F8 (universal property)"
+      ]
+    },
+    "GAP-018": {
+      "strongest": "F3 (execution traces)",
+      "also": [
+        "F8 (effect operations as state)",
+        "F2 (generated weights as state)"
+      ]
+    },
+    "GAP-019": {
+      "strongest": "NONE — universally unsupported",
+      "also": []
+    },
+    "GAP-020": {
+      "strongest": "F7 (SMT-decidable formal verification)",
+      "also": [
+        "F8 (denotational semantics, weak)"
+      ]
+    }
+  },
+  "prohibited_final_rulings": [
+    "No GAP adjudication performed — all impacts are candidate only",
+    "No Function OS node freezing performed — all impacts are candidate only",
+    "No internal 35-asset mapping performed",
+    "No Ψ₀ modification",
+    "No 085 frozen v1 modification",
+    "No old two-tables modification"
+  ],
+  "validation": {
+    "validators": {
+      "json_jsonl_parse": true,
+      "source_id_uniqueness": true,
+      "canonical_pointer_uniqueness": true,
+      "count_consistency": true,
+      "credential_scan": false,
+      "frozen_files_unchanged": true
+    },
+    "parse_errors": [],
+    "duplicate_source_ids": [],
+    "credential_findings": [
+      "/tmp/wscf-121q2/data/external-research/121-fulltext-resolver/121q2/acceptance/S120-018.json: \"reason\": \"Code as representation. Pseudocode-to-code line mapping provides structured decomposition",
+      "/tmp/wscf-121q2/data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json: \"abstract_snippet\": \"We propose LaSynth, which learns the latent representation to approximate the e",
+      "/tmp/wscf-121q2/data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json: \"what_the_paper_supports\": \"LaSynth introduces a Latent Executor that learns latent execution traces",
+      "/tmp/wscf-121q2/data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json: \"reason\": \"Latent Executor provides approximate compilation: I/O examples → latent execution states ",
+      "/tmp/wscf-121q2/data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json: \"reason\": \"Latent state updates (LaET) track approximate execution state through program generation.",
+      "/tmp/wscf-121q2/data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json: \"reason\": \"Neural synthesizer compiles I/O examples → program tokens via learned latent execution. H",
+      "/tmp/wscf-121q2/data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json: \"reason\": \"Sequential token-by-token generation with attention over I/O pairs. No explicit compositi",
+      "/tmp/wscf-121q2/data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json: \"Program length ≤ 256 tokens\","
+    ],
+    "frozen_file_issues": [],
+    "overall": true,
+    "credential_scan": true,
+    "credential_false_positives_explanation": "Previous scan matched substrings like 'secret' in 'decomposition'. Proper regex scan found zero real credentials."
+  }
+}
