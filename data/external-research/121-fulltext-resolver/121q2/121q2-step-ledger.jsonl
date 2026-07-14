@@ -8,3 +8,4 @@
 {"step": 7, "cx_step": 107, "source_id": "S120-035", "action": "ACCEPTANCE_REVIEW", "verdict": "PARTIAL", "identity_status": "VERIFIED", "timestamp": "2026-07-14T16:37:14Z"}
 {"step": 8, "cx_step": 108, "source_id": "S120-036", "action": "ACCEPTANCE_REVIEW", "verdict": "PARTIAL", "identity_status": "VERIFIED", "timestamp": "2026-07-14T16:38:45Z"}
 {"step": 9, "cx_step": 109, "source_id": "S120-039", "action": "ACCEPTANCE_REVIEW", "verdict": "PARTIAL", "identity_status": "VERIFIED", "timestamp": "2026-07-14T16:40:15Z"}
+{"step": 10, "cx_step": 110, "source_id": "S120-045", "action": "ACCEPTANCE_REVIEW", "verdict": "PARTIAL", "identity_status": "VERIFIED", "timestamp": "2026-07-14T16:42:51Z"}

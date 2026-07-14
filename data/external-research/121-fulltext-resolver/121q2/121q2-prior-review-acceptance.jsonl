@@ -6,3 +6,4 @@
 {"source_id": "S120-035", "cx_step": 107, "verdict": "PARTIAL", "identity_status": "VERIFIED", "evidence_tier": "FULLTEXT_REVIEWED", "file": "121q2/acceptance/S120-035.json", "reviewed_at": "2026-07-14T16:37:14Z"}
 {"source_id": "S120-036", "cx_step": 108, "verdict": "PARTIAL", "identity_status": "VERIFIED", "evidence_tier": "FULLTEXT_REVIEWED", "file": "121q2/acceptance/S120-036.json", "reviewed_at": "2026-07-14T16:38:45Z"}
 {"source_id": "S120-039", "cx_step": 109, "verdict": "PARTIAL", "identity_status": "VERIFIED", "evidence_tier": "FULLTEXT_REVIEWED", "file": "121q2/acceptance/S120-039.json", "reviewed_at": "2026-07-14T16:40:15Z"}
+{"source_id": "S120-045", "cx_step": 110, "verdict": "PARTIAL", "identity_status": "VERIFIED", "evidence_tier": "FULLTEXT_REVIEWED", "file": "121q2/acceptance/S120-045.json", "reviewed_at": "2026-07-14T16:42:51Z"}
