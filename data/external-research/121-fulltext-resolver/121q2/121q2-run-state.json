@@ -12,7 +12,7 @@
     "next_source_id": "S120-017",
     "acceptance_count": 4
   },
-  "current_step": 0,
+  "current_step": 1,
   "total_steps": 24,
   "phase_2_acceptance": {
     "total_prior": 22,
@@ -49,6 +49,6 @@
   "integrity_flags": [
     "SYSTEMATIC_SOURCE_IDENTITY_INTEGRITY_RISK"
   ],
-  "last_updated": "2026-07-14T16:26:47Z",
+  "last_updated": "2026-07-14T16:27:27Z",
   "status": "IN_PROGRESS"
 }
