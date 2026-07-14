@@ -29,16 +29,16 @@
     "state": "OPEN",
     "draft": true
   },
-  "last_completed_cx_step": 89,
-  "next_cx_step": 90,
+  "last_completed_cx_step": 90,
+  "next_cx_step": 91,
   "canonical_121cn_last_completed_step": 30,
   "canonical_121cn_next_step": 31,
   "canonical_source_last_completed_step": 87,
   "canonical_source_next_step": null,
-  "last_completed_source_id": "S120-001",
-  "next_source_id": "S120-002",
+  "last_completed_source_id": "S120-002",
+  "next_source_id": "S120-003",
   "next_phase_action": "codex56_extreme_accept_prior_non_codex_review",
-  "canonical_resume_status": "PHASE_1_COMPLETE_PHASE_2_IN_PROGRESS_AT_STEP_90",
+  "canonical_resume_status": "PHASE_1_COMPLETE_PHASE_2_IN_PROGRESS_AT_STEP_91",
   "active_manifest": {
     "historical_base": "data/external-research/121-fulltext-resolver/121cn/121cn-microstep-manifest.jsonl",
     "121cx_overlay": "data/external-research/121-fulltext-resolver/121cx/121cx-microstep-manifest-overlay.jsonl",
@@ -82,10 +82,10 @@
   },
   "prior_review_acceptance": {
     "total_unique": 22,
-    "completed": 1,
-    "remaining": 21,
-    "last_completed_source_id": "S120-001",
-    "next_source_id": "S120-002",
+    "completed": 2,
+    "remaining": 20,
+    "last_completed_source_id": "S120-002",
+    "next_source_id": "S120-003",
     "ordered_source_ids": [
       "S120-001",
       "S120-002",
@@ -113,7 +113,7 @@
     "verdict_counts": {
       "ACCEPT": 0,
       "NARROW": 0,
-      "CORRECT": 1,
+      "CORRECT": 2,
       "REJECT": 0,
       "BLOCKED_INSUFFICIENT_TEXT": 0
     }
