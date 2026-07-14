@@ -29,16 +29,16 @@
     "state": "OPEN",
     "draft": true
   },
-  "last_completed_cx_step": 95,
-  "next_cx_step": 96,
+  "last_completed_cx_step": 96,
+  "next_cx_step": 97,
   "canonical_121cn_last_completed_step": 30,
   "canonical_121cn_next_step": 31,
   "canonical_source_last_completed_step": 87,
   "canonical_source_next_step": null,
-  "last_completed_source_id": "S120-008",
-  "next_source_id": "S120-009",
+  "last_completed_source_id": "S120-009",
+  "next_source_id": "S120-010",
   "next_phase_action": "codex56_extreme_accept_prior_non_codex_review",
-  "canonical_resume_status": "PHASE_1_COMPLETE_PHASE_2_IN_PROGRESS_AT_STEP_96",
+  "canonical_resume_status": "PHASE_1_COMPLETE_PHASE_2_IN_PROGRESS_AT_STEP_97",
   "active_manifest": {
     "historical_base": "data/external-research/121-fulltext-resolver/121cn/121cn-microstep-manifest.jsonl",
     "121cx_overlay": "data/external-research/121-fulltext-resolver/121cx/121cx-microstep-manifest-overlay.jsonl",
@@ -80,12 +80,23 @@
     "not_supported": 0,
     "unresolved": 0
   },
+  "canonical_counts_current": {
+    "total_unique_sources": 84,
+    "historical_card_bearing_sources": 78,
+    "accepted_fulltext_semantic_cards": 77,
+    "blocked_or_excluded_unique_sources": 7,
+    "confirmed": 41,
+    "partial": 36,
+    "not_supported": 0,
+    "unresolved": 1,
+    "note": "The S120-008 prior PARTIAL card was rejected at Step 95 because its exact source body is unavailable; S120-009 remains PARTIAL after Step 96 correction. Historical source cards are preserved and these are canonical acceptance counts, not destructive rewrites."
+  },
   "prior_review_acceptance": {
     "total_unique": 22,
-    "completed": 7,
-    "remaining": 15,
-    "last_completed_source_id": "S120-008",
-    "next_source_id": "S120-009",
+    "completed": 8,
+    "remaining": 14,
+    "last_completed_source_id": "S120-009",
+    "next_source_id": "S120-010",
     "ordered_source_ids": [
       "S120-001",
       "S120-002",
@@ -113,7 +124,7 @@
     "verdict_counts": {
       "ACCEPT": 0,
       "NARROW": 0,
-      "CORRECT": 6,
+      "CORRECT": 7,
       "REJECT": 1,
       "BLOCKED_INSUFFICIENT_TEXT": 0
     }
@@ -129,7 +140,8 @@
     "Corrected S120-056 from the old atlas's sole-author/Journal of Functional Programming/Cambridge DOI metadata to the exact Bauer-and-Pretnar JLAMP article DOI 10.1016/j.jlamp.2014.02.001, while preserving the frozen old record and independently matching the 121B/121CN arXiv bytes.",
     "Superseded the planned S120-080 blocked disposition after proving that exact frozen arXiv:1607.00036 hash/size bytes are the intended D-NTM paper; completed all-page/full-text/source-code review and corrected Anonymous/2020/volume-32 metadata to four authors/2018/volume 30.",
     "Recomputed the post-Phase-1 semantic-card distribution directly from all 22 prior and 56 Codex cards as 41 CONFIRMED and 37 PARTIAL; this corrects the prior run-state's one-card PARTIAL undercount.",
-    "Rejected the prior S120-008 card because arXiv:2407.18295 is an unrelated general-relativity paper; recovered the canonical ICONIP 2018 DOI and abstract metadata, but left semantic support UNRESOLVED because the stored extraction and advertised PDF endpoint are only a closed Springer landing page and no exact lawful repository full text was located."
+    "Rejected the prior S120-008 card because arXiv:2407.18295 is an unrelated general-relativity paper; recovered the canonical ICONIP 2018 DOI and abstract metadata, but left semantic support UNRESOLVED because the stored extraction and advertised PDF endpoint are only a closed Springer landing page and no exact lawful repository full text was located.",
+    "Corrected S120-009 after exact 29-page and official-source review: retained bounded PARTIAL parameter-generation support while demoting compiler/interpreter, manifold, composition, routing and registry claims to explicit analogies or no evidence; promoted bounded internal-state, weight-change trace and behavioral-check evidence without calling it proof or Function OS validation."
   ],
   "deferred_acceptance_corrections": [
     "Preserve the 12 prior 121CN cards but correct their missing specification_language, uncertainty_model, and lifecycle_and_provenance coverage during independent Codex acceptance."
