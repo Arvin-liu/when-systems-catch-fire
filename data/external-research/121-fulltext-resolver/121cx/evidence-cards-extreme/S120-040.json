@@ -1,0 +1,296 @@
+{
+  "source_id": "S120-040",
+  "canonical_title": "MetaGPT: Merging Large Language Models Using Model Exclusive Task Arithmetic",
+  "title": "MetaGPT: Merging Large Language Models Using Model Exclusive Task Arithmetic",
+  "authors": [
+    "Yuyan Zhou",
+    "Liang Song",
+    "Bingning Wang",
+    "Weipeng Chen"
+  ],
+  "year": 2024,
+  "version": "EMNLP 2024 published proceedings version, ACL Anthology ID 2024.emnlp-main.102, pp. 1711-1724; arXiv counterpart 2406.11385v2",
+  "doi_or_identifier": "10.18653/v1/2024.emnlp-main.102",
+  "identifier": "ACL Anthology:2024.emnlp-main.102; DOI:10.18653/v1/2024.emnlp-main.102; arXiv:2406.11385v2",
+  "url": "https://aclanthology.org/2024.emnlp-main.102/",
+  "source_family": 6,
+  "source_family_name": "model merging and task arithmetic",
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0), per the ACL Anthology license for materials published in or after 2016",
+  "sha256": "62f94d215b9b1861b82fdc5a242726ceb0880853b4e762e412f45f71ad2b0016",
+  "file_size_bytes": 802979,
+  "page_count": 14,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_sha256_match": true,
+    "registered_file_size_match": true,
+    "registered_page_count_match": true,
+    "published_identity": "ACL Anthology 2024.emnlp-main.102",
+    "published_pages": "1711-1724",
+    "published_month": "2024-11",
+    "arxiv_api_identity": "http://arxiv.org/abs/2406.11385v2",
+    "arxiv_published_at_utc": "2024-06-17T10:12:45Z",
+    "arxiv_updated_at_utc": "2024-06-27T16:01:28Z",
+    "pdf_visually_checked_pages": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      12,
+      13,
+      14
+    ],
+    "sources_cross_checked": [
+      "exact registered ACL Anthology PDF",
+      "ACL Anthology bibliographic record and BibTeX",
+      "ACL Anthology licensing statement",
+      "arXiv API metadata",
+      "GitHub repository search for an official implementation"
+    ],
+    "identity_corrections": [
+      "The provisional arXiv identifier 2404.13736 is incorrect; the title and authors resolve to arXiv:2406.11385.",
+      "The authoritative published DOI is 10.18653/v1/2024.emnlp-main.102, not an arXiv DOI alias.",
+      "The Anonymous author placeholder was replaced with the four authors in the published record."
+    ],
+    "code_artifact": {
+      "official_repository_identified": false,
+      "paper_code_link": "ABSENT",
+      "search_result": "No author-linked or official implementation was identified; search results were bibliography and survey repositories only.",
+      "related_tool_link": "The paper cites arcee-ai/mergekit for DARE and TIES baseline merging, not as a MetaGPT implementation.",
+      "verification": "No MetaGPT code, configuration, checkpoint, test, or result artifact was available for execution or inspection."
+    }
+  },
+  "sections_reviewed": [
+    "Abstract, introduction, and contribution claims",
+    "Related work and scalability framing",
+    "Task-arithmetic notation and coefficient problem",
+    "Average-loss-difference objective",
+    "NTK linearization and task-vector orthogonality assumptions",
+    "Theorems 7-10 and closed-form coefficient recipe",
+    "Property-verification figures",
+    "7B and 13B model-merging experiments",
+    "DARE and TIES integration and out-of-distribution tables",
+    "Complexity comparison and limitations",
+    "Appendix proofs, model/dataset table, hardware, and hyperparameter note"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "§3.2-3.4, pp. 1713-1714, eqs. 1-2",
+      "checked_for": "task-vector carrier, scaled parameter addition, grid-search and data-dependent alternatives"
+    },
+    {
+      "anchors": "§4.2-4.4, pp. 1714-1715, eqs. 3-15",
+      "checked_for": "TLD/ALD objective, Taylor expansion, exact-orthogonality premise, upper bound, decomposition, and norm-squared coefficient formula"
+    },
+    {
+      "anchors": "§5, pp. 1715-1716, Figs. 3-4",
+      "checked_for": "three-output NTK visualization and six-task-vector cosine matrix"
+    },
+    {
+      "anchors": "§6.1, pp. 1716-1718, Tables 1-4",
+      "checked_for": "LLaMA-2-7B, Mistral-7B, LLaMA-2-13B results and integration with DARE/TIES"
+    },
+    {
+      "anchors": "§6.2 and §7, pp. 1718-1719, Tables 5-6",
+      "checked_for": "three-dataset out-of-distribution averages and claimed time/space/privacy/optimality comparison"
+    },
+    {
+      "anchors": "§§8-9, p. 1719",
+      "checked_for": "conclusion and stated common-initialization, architecture, orthogonality, NTK, and small-model limitations"
+    },
+    {
+      "anchors": "Appendix A.1-A.5, pp. 1722-1723, eqs. 16-49",
+      "checked_for": "loss specialization, stationarity premise, Hessian substitution, Lemma 11, orthogonal norm expansion, and published proof defects"
+    },
+    {
+      "anchors": "Appendices B-D, pp. 1723-1724, Tables 7-8",
+      "checked_for": "dataset sizes, model identifiers, A100/PyTorch note, DARE/TIES density, and missing revisions or evaluation configurations"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "MetaGPT represents each task as τ_t=θ_t-θ0 and produces one merged checkpoint θ_final=θ0+Σ_t λ_tτ_t.",
+      "anchors": "§3.2, eqs. 1-2"
+    },
+    {
+      "claim": "Under local NTK-style linearity, exact task-vector orthogonality, a stationary fine-tuned solution, and a squared-loss specialization introduced only in the appendix, the paper seeks coefficients minimizing an upper bound on average task loss difference.",
+      "anchors": "§4 and Appendix A, eqs. 3-49"
+    },
+    {
+      "claim": "The operational recipe assigns λ_t=||θ_t-θ0||²/Σ_k||θ_k-θ0||², requiring model weights but no task examples or coefficient search at merge time.",
+      "anchors": "§4.4, eq. 15; Appendix A.5, eq. 49"
+    },
+    {
+      "claim": "The published proof is not valid as printed: Eq. 39-40 sums only over k≠t while trying to include the k=t term, and writes 1−λ_k² where the norm expansion from Eq. 38 requires (1−λ_t)². The stated coefficient can be recovered only after correcting both expressions and retaining the strong assumptions.",
+      "anchors": "Appendix A.2, eqs. 38-40; §4.3-4.4"
+    },
+    {
+      "claim": "The method has the highest reported aggregate averages in Tables 1-3 under the authors' evaluation, but loses individual tasks to baselines and offers no repeated-run uncertainty or accessible implementation.",
+      "anchors": "§6.1, Tables 1-3"
+    },
+    {
+      "claim": "The reported out-of-distribution average is 31.78 versus 31.63 for the next listed baseline, a 0.15-point table difference without variance or significance analysis.",
+      "anchors": "§6.2, Table 5"
+    }
+  ],
+  "function_concept_used_by_paper": "Each fine-tuned checkpoint is treated as a function-carrying parameter artifact relative to a common base. Subtraction creates task vectors, a global norm-derived scalar recipe composes them, and a conventional model runtime interprets the resulting static merged checkpoint. There is no per-input routing or late binding after merge.",
+  "representation_or_carrier": {
+    "base_carrier": "common pretrained parameter vector θ0",
+    "task_carrier": "task vector τ_t=θ_t-θ0 from a compatible fine-tuned checkpoint",
+    "composition_carrier": "one nonnegative global scalar λ_t per task, computed from squared Euclidean task-vector norms",
+    "artifact_carrier": "materialized merged parameter vector θ_final",
+    "compatibility_requirement": "same parameterization, architecture, tensor alignment, and common initialization",
+    "semantic_boundary": "Parameter alignment and near-orthogonality do not establish behavioral equivalence, task isolation, safety, or absence of interference."
+  },
+  "specification_language": "The paper specifies the task-vector equation, norm-squared coefficient recipe, named model families, benchmark names, shot counts, metrics, model-repository labels, A100/PyTorch environment class, and a density of 0.55 for DARE/TIES. It omits an executable MetaGPT implementation, exact model revisions and hashes, tokenizer revisions, evaluation harness and prompts, numerical precision, parameter inclusion/exclusion rules, merge order and serialization details, seeds, repeated-run protocol, normalized-average formula, provenance validation, compatibility/failure behavior, and lifecycle governance.",
+  "compiler_or_generator": {
+    "inputs": "a common base checkpoint θ0 and T task-fine-tuned checkpoints θ_t",
+    "transformation": "compute every τ_t, compute its squared Euclidean norm, normalize those norms into λ_t, and materialize θ0+Σ_tλ_tτ_t",
+    "output": "one merged checkpoint with no runtime ensemble",
+    "boundary": "The recipe is mathematically explicit, but no official code or precision/parameter-selection rules were released and the printed optimality proof contains two consequential algebraic defects."
+  },
+  "interpreter_or_runtime": "The merged checkpoint executes through the ordinary LLaMA-2 or Mistral forward path. All task vectors have already been combined globally, so runtime has no expert selection, input-conditioned routing, provenance lookup, trace of component contribution, abstention, or fallback. Inference behavior is therefore inherited from a single static parameter artifact.",
+  "composition_rule": "Static weighted task arithmetic: θ_final=θ0+Σ_tλ_t(θ_t-θ0), where λ_t is proportional to the squared norm of task t's parameter delta. DARE or TIES can first alter task vectors and the same norm-weighting recipe can then be applied. This is global weight composition over aligned checkpoints, not semantic composition of arbitrary independently versioned functions.",
+  "state_or_effect_model": "Merge state includes base and source checkpoint identities, full parameter tensors, norm accumulators, scaling coefficients, optional DARE/TIES preprocessing, precision and output serialization. Runtime state is that of the merged model. The paper does not define source authorization, sensitive-information threat model, compatibility validation, tensor mismatch behavior, numerical overflow, atomic promotion, lineage manifest, monitoring, rollback, supersession, or retirement. Avoiding task data at merge time is not equivalent to preventing information leakage from fine-tuned weights.",
+  "uncertainty_model": "The coefficient formula is deterministic and does not model epistemic or aleatoric uncertainty. No task-vector norm uncertainty, approximation error, NTK residual, orthogonality deviation tolerance, confidence interval, repeated-run variance, significance test, calibration, abstention, or merge-risk estimate is provided. The property checks are descriptive figures, and the normalized-average metric is not formally defined in the paper text.",
+  "validation_regime": {
+    "model_families": "LLaMA-2-7B, Mistral-7B, and LLaMA-2-13B compatible checkpoint groups",
+    "in_distribution": "WinoGrande, AGIEval, GSM8K, MATH, MBPP, and HumanEval with reported few-shot settings",
+    "out_of_distribution": "JEC-QA, FinanceIQ, and MedQA, all reported as 5-shot accuracy",
+    "baselines": "weight average, task arithmetic, TIES-Merging, and DARE; DARE/TIES integration is also tabulated",
+    "property_checks": "three randomly selected model-output components along one interpolation and a six-task cosine-similarity matrix",
+    "boundary": "No released MetaGPT code, source checkpoint hashes, evaluation harness version, prompt text, repeated runs, confidence estimates, statistical tests, held-out coefficient audit, privacy attack, or independent reproduction is supplied."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "task-vector compatibility",
+      "support": "COMMON_PARAMETERIZATION_AND_INITIALIZATION",
+      "boundary": "Same-shaped aligned tensors are necessary but do not guarantee shared semantics or safe composition."
+    },
+    {
+      "notion": "task-vector independence",
+      "support": "APPROXIMATE_COSINE_ORTHOGONALITY_IN_ONE FIGURE",
+      "boundary": "The proof assumes exact zero inner products; Fig. 4 includes nonzero values up to 0.0428 and does not establish the premise for arbitrary source sets."
+    },
+    {
+      "notion": "merged-versus-specialist performance",
+      "support": "AVERAGE_TABLE_METRICS",
+      "boundary": "Average accuracy is not behavioral equivalence, per-task preservation, robustness, calibration, or safety."
+    },
+    {
+      "notion": "optimal coefficient",
+      "support": "CORRECTABLE_BOUND_MINIMIZER_UNDER_STRONG_ASSUMPTIONS",
+      "boundary": "It minimizes a corrected upper-bound expression under NTK, squared-loss, stationarity, scalar-gradient and exact-orthogonality assumptions; it is not a universal optimizer of empirical task loss."
+    }
+  ],
+  "lifecycle_and_provenance": "The published paper has a stable ACL Anthology identity, DOI, authors, venue, pages, CC BY 4.0 license, and an arXiv counterpart. Appendix Table 8 names model repositories, but no exact revisions, hashes, tokenizer identities, licenses, source lineage checks, MetaGPT code revision, merge manifest, coefficient record, output checkpoint, result log, evaluation trace, compatibility declaration, promotion gate, monitoring, rollback, supersession or retirement policy is supplied. These omissions leave a useful merge recipe but not a VersionedRegistry lifecycle.",
+  "limitations_and_failure_boundaries": [
+    "The provisional registry cites the wrong arXiv paper number and Anonymous authors; both are corrected by the ACL and arXiv records.",
+    "Eq. 39-40 omit the target-task norm term through a k≠t summation and use 1−λ² rather than the required (1−λ)²; the proof is not valid as printed.",
+    "The analysis begins with a general task loss but Appendix Eq. 28 silently specializes to half squared error, while the evaluated language-model fine-tuning losses are not documented as squared error.",
+    "The derivation assumes a fine-tuned stationary point and collapses multi-step, multi-example output gradients into a scalar-proportional direction without an empirical error bound.",
+    "The exact task-vector orthogonality premise is stronger than the near-zero cosine observations; Fig. 4 contains nonzero cosine values as high as 0.0428.",
+    "The NTK check samples only three output components from one LLaMA-2-7B interpolation, subtracts a shared endpoint for visualization, and reports no approximation residual or tolerance.",
+    "The term 'optimal' applies at most to a corrected analytical upper bound under the stated assumptions, not directly to actual multi-task accuracy or arbitrary LLM merges.",
+    "The method avoids raw task data during merging but provides no privacy definition, differential privacy, membership/model-inversion evaluation, or proof that task vectors do not leak training information.",
+    "Table 6 reports O(1) merge time while omitting the required traversal and arithmetic over T parameter vectors; operational work is at least proportional to task count and parameter count.",
+    "No official implementation, exact source revisions, output checkpoints, seeds, prompts, evaluation-harness version, or result artifacts are available.",
+    "The normalized average metric is named but not formally defined, and all reported comparisons lack repeated-run variance or statistical tests.",
+    "Table text occasionally swaps metric values and average gains are small on some settings; MetaGPT is not best on every individual task.",
+    "Compatibility requires common initialization and architecture; independently trained, permuted, quantized, structurally modified, or cross-family checkpoints are outside the demonstrated contract.",
+    "A single static merge has no input-conditioned router and cannot isolate, disable, trace, or roll back one component function at runtime."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove universally optimal model merging, exact multi-task loss minimization, privacy protection, non-interference, semantic equivalence, or calibrated uncertainty.",
+    "It does not support cross-architecture or independently initialized checkpoint composition.",
+    "It does not provide a dynamic ComposerRouter, per-input expert attribution, or governed function registry.",
+    "It does not provide independent empirical reproduction or validation of the point architecture as a whole."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "The numerical merge recipe and checkpoint compatibility premise are explicit, while identity, precision, semantics, failure, effect, and lifecycle contracts are incomplete."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "A deterministic generator maps a base and compatible task checkpoints into one concrete merged parameter artifact."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Norms and cosine orthogonality provide parameter-space notions, not behavioral or semantic equivalence."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "The paper gives an exact static task-vector composition operator and demonstrates optional composition after DARE/TIES preprocessing."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Three checkpoint families and multiple benchmark tables support a bounded empirical pattern, but the optimality proof is defective as printed and reproducibility/statistical evidence is incomplete."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Norms, coefficients and table metrics are inspectable, while approximation residuals, uncertainty, durable traces, privacy tests and lifecycle monitoring are absent."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "The merge equation is explicit but source identity, compatibility, semantics, precision, effects, and failure behavior are not fully specified."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Base weights, task vectors, norm-derived coefficients, and merged weights are concrete carriers."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "The norm computation and task arithmetic define a deterministic checkpoint generator despite absent reference code."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "The output is a materialized single-model parameter artifact."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The merged artifact executes through the ordinary compatible LLM runtime without an ensemble."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Task norms and coefficients can be recorded, but no trace schema, component attribution, or lineage export is defined."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Multiple model sizes and task tables are reported, but proof defects, missing code, undefined normalized metric, absent statistics, and weak property checks limit validation."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Static global composition is explicit; there is no input-conditioned routing, expert isolation, abstention, or late binding."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Publication and repository labels exist without exact source revisions, merge lineage, compatibility metadata, health, rollback, supersession, or retirement."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_FULLTEXT_CARD_WITH_IDENTITY_AND_PROOF_CORRECTIONS",
+    "corrections": [
+      "No per-source provisional evidence card existed for S120-040.",
+      "Anonymous authors, arXiv:2404.13736, and the arXiv DOI alias were corrected to the published author list, arXiv:2406.11385v2, and ACL DOI 10.18653/v1/2024.emnlp-main.102.",
+      "The generic claim that multiple weights can be combined was narrowed to aligned common-initialization task vectors with norm-squared global coefficients.",
+      "The published Eq. 39-40 defects, undeclared squared-loss specialization, weak assumption checks, privacy boundary, complexity understatement, missing code, and uncertainty gaps were recorded."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "PARTIAL",
+  "confirmed_projection": "The paper supports a bounded static Representation-Compiler-Artifact-Interpreter composition pattern: compatible fine-tuned checkpoints become task vectors, squared norms define global coefficients, parameter addition materializes one merged checkpoint, and several LLM benchmark tables evaluate it. It does not confirm the printed optimality proof, privacy claim, dynamic routing, uncertainty handling, or registry lifecycle.",
+  "source_specific_reasoning": "The operational carrier and merge recipe are clear enough to confirm representation, compilation, artifact, interpreter, and static composition primitives. Overall support remains PARTIAL because the central optimality argument is not valid as printed: the norm expansion omits its target term and uses the wrong squared expression, while the appendix silently changes the loss and relies on unquantified stationarity, NTK, gradient-direction and exact-orthogonality assumptions. Empirical tables show a narrow average-performance pattern but no released implementation, repeated-run uncertainty, formal privacy analysis, or complete provenance.",
+  "projection_boundary": "All GAP and Function OS impacts above are 121CX architectural projections from the exact EMNLP 2024 published PDF and official metadata. The algebraic audit is a review of the printed derivation; it is not a claim that no corrected variant can work. The review is not benchmark reproduction, security or privacy certification, formal verification, or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T05:16:57Z"
+}
