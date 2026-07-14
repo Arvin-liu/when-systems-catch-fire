@@ -1,0 +1,142 @@
+{
+  "step": 8,
+  "action": "CROSS_GAP_HORIZONTAL_CONSISTENCY_MATRIX",
+  "timestamp": "2026-07-14T17:55:30Z",
+  "gap_statuses": {
+    "GAP-015": "PARTIALLY_RESOLVED",
+    "GAP-016": "PARTIALLY_RESOLVED",
+    "GAP-017": "UNRESOLVED_INSUFFICIENT_EVIDENCE",
+    "GAP-018": "PARTIALLY_RESOLVED",
+    "GAP-019": "RESOLVED_BY_EXISTING_EVIDENCE",
+    "GAP-020": "PARTIALLY_RESOLVED"
+  },
+  "dependency_graph": {
+    "GAP-015": {
+      "depends_on": [],
+      "blocks": [
+        "GAP-017"
+      ],
+      "overlaps_with": [
+        "GAP-020"
+      ]
+    },
+    "GAP-016": {
+      "depends_on": [],
+      "blocks": [],
+      "overlaps_with": [
+        "GAP-017"
+      ]
+    },
+    "GAP-017": {
+      "depends_on": [
+        "GAP-015",
+        "GAP-016"
+      ],
+      "blocks": [],
+      "overlaps_with": []
+    },
+    "GAP-018": {
+      "depends_on": [],
+      "blocks": [
+        "GAP-020"
+      ],
+      "overlaps_with": []
+    },
+    "GAP-019": {
+      "depends_on": [],
+      "blocks": [],
+      "overlaps_with": []
+    },
+    "GAP-020": {
+      "depends_on": [
+        "GAP-018"
+      ],
+      "blocks": [],
+      "overlaps_with": [
+        "GAP-015"
+      ]
+    }
+  },
+  "shared_root_causes": [
+    {
+      "root": "No formal specification language for weight-space functions",
+      "gaps": [
+        "GAP-015",
+        "GAP-017",
+        "GAP-020"
+      ]
+    },
+    {
+      "root": "No formal algebra for weight-space operations",
+      "gaps": [
+        "GAP-016",
+        "GAP-017"
+      ]
+    },
+    {
+      "root": "No cross-representation verification layer",
+      "gaps": [
+        "GAP-017",
+        "GAP-018"
+      ]
+    }
+  ],
+  "overlap_analysis": [
+    {
+      "gaps": [
+        "GAP-015",
+        "GAP-020"
+      ],
+      "overlap": "Both concern specification of function behavior. GAP-015 is about formal specs, GAP-020 is about probabilistic specs. Not redundant — probabilistic is a special case."
+    },
+    {
+      "gaps": [
+        "GAP-016",
+        "GAP-017"
+      ],
+      "overlap": "GAP-016 asks for composition algebra, GAP-017 asks for equivalence checking. Equivalence depends on composition definition. Not redundant but sequential."
+    },
+    {
+      "gaps": [
+        "GAP-018",
+        "GAP-020"
+      ],
+      "overlap": "Both involve effect systems. GAP-018 is general effects, GAP-020 is probabilistic effects. GAP-020 depends on GAP-018."
+    }
+  ],
+  "no_duplicate_counting": true,
+  "recommended_processing_order": [
+    {
+      "order": 1,
+      "gap": "GAP-019",
+      "reason": "Most strongly supported (RESOLVED_BY_EXISTING_EVIDENCE). Building blocks ready."
+    },
+    {
+      "order": 2,
+      "gap": "GAP-015",
+      "reason": "Foundational — specification language needed before equivalence and effects."
+    },
+    {
+      "order": 3,
+      "gap": "GAP-018",
+      "reason": "Effect system needed before probabilistic effects."
+    },
+    {
+      "order": 4,
+      "gap": "GAP-020",
+      "reason": "Depends on GAP-018 (effect system)."
+    },
+    {
+      "order": 5,
+      "gap": "GAP-016",
+      "reason": "Composition algebra; practical evidence exists but formal grounding needed."
+    },
+    {
+      "order": 6,
+      "gap": "GAP-017",
+      "reason": "Equivalence checking; depends on GAP-015 (spec) and GAP-016 (composition). Lowest confidence."
+    }
+  ],
+  "canonical_gap_files_unchanged": true,
+  "note": "Only 121Q3 overlay written. Canonical GAP files in 120/121 directories not modified."
+}
