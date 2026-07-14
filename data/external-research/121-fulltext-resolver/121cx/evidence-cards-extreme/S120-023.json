@@ -1,0 +1,281 @@
+{
+  "source_id": "S120-023",
+  "canonical_title": "Neuro-Symbolic Program Synthesis",
+  "authors": [
+    "Emilio Parisotto",
+    "Abdel-rahman Mohamed",
+    "Rishabh Singh",
+    "Lihong Li",
+    "Dengyong Zhou",
+    "Pushmeet Kohli"
+  ],
+  "year": 2016,
+  "source_family": 3,
+  "source_family_name": "program_synthesis_and_nl_to_code",
+  "identifier": "arXiv:1611.01855v1; OpenReview:rJ0JwFcex",
+  "doi_or_identifier": "10.48550/arXiv.1611.01855; OpenReview:rJ0JwFcex",
+  "url": "https://arxiv.org/pdf/1611.01855",
+  "version": "arXiv v1 submitted 2016-11-06; exact PDF marked Under review as a conference paper at ICLR 2017",
+  "license": "arXiv non-exclusive distribution license; no software license applies because the paper/source package links or contains no implementation",
+  "file_size_bytes": 822418,
+  "page_count": 14,
+  "sha256": "1bcd5710a1ccdb6fd2389dbb02c7342903968b64b386713440147ffa72701dca",
+  "reviewed_at": "2026-07-14T11:10:28Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "claim_support_status": "CONFIRMED",
+  "retrieval_and_integrity": {
+    "registered_and_repaired_binding": {
+      "historical_openreview_url": "https://openreview.net/forum?id=rJ0JwFcex",
+      "historical_openreview_pdf_status": "403 Forbidden during the original resolver; OpenReview API remained challenge-blocked during this review",
+      "repair_method": "121CN used OpenAlex to identify arXiv:1611.01855; 121CX independently retrieved the exact same-title, same-venue-identifier work",
+      "title_and_work_match": true,
+      "registry_hash_match": true,
+      "sha256": "1bcd5710a1ccdb6fd2389dbb02c7342903968b64b386713440147ffa72701dca",
+      "file_size_bytes": 822418,
+      "page_count": 14
+    },
+    "official_arxiv_metadata": {
+      "version": "v1",
+      "submitted": "2016-11-06T22:23:56Z",
+      "primary_category": "cs.AI",
+      "secondary_category": "cs.PL",
+      "authors_match_pdf": true
+    },
+    "visual_review": "All 14 pages were rendered at 144 DPI and visually inspected. The DSL grammar/semantics, pipeline, R3NN diagrams, probability equations, result tables, FlashFill plots, solved/unsolved examples, references and appendix were legible; no blank, clipped, substituted or malformed page was found.",
+    "text_and_source_review": "The complete 8,349-word layout-preserving extraction and all 29 files in the arXiv source package were reviewed, including section sources, hidden comments, tables, bibliography, figures and DSL semantics. The source-package hash was 16e0942368e3db61005c7844398739a9c108f310bbf588abb2ba137e5cc13cc4.",
+    "implementation_search": {
+      "paper_or_source_code_link": false,
+      "arxiv_source_contains_executable_code": false,
+      "github_exact-title_repository_search": "No repository result",
+      "github_R3NN_program_synthesis_repository_search": "No repository result; code search returned paper/dataset copies only",
+      "artifact_credit": "No implementation, trained model, enumerated program corpus, benchmark split, sampled candidates, raw predictions, environment or run receipt was credited."
+    },
+    "peer_review_boundary": "The exact source says Under review. Because the OpenReview record was not directly accessible, no acceptance decision, review score or rebuttal fact was inferred from third-party datasets."
+  },
+  "sections_reviewed": [
+    "abstract and section 1, program-induction limitations, program-synthesis framing and claimed contribution",
+    "section 2 and appendix A, exact string-transformation DSL syntax, operational semantics and consistency equation",
+    "section 3 and Figure 2, synthetic training-corpus construction and test-time conditional generation workflow",
+    "section 4, partial-program trees, recursive/reverse-recursive state propagation, expansion scoring and probabilities",
+    "section 5, LSTM/cross-correlation I/O encoders and pre/root/post conditioning alternatives",
+    "sections 6.1-6.4, synthetic splits, hyperparameters, I/O encoders, io2seq baseline and sampling/backtracking results",
+    "section 6.5, all 238 FlashFill benchmarks, top-k results and solved/unsolved complexity boundaries",
+    "sections 7-8, related work, no-explicit-search wording, supervised target-program dependency and future work",
+    "complete references, all 29 arXiv source files and public implementation-search results"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 1-3, abstract, sections 1-3, Figure 1 and equation 1",
+      "checked_for": "I/O-only specification, DSL restriction, consistency criterion, training program sampler and claimed unseen-program generalization"
+    },
+    {
+      "anchors": "pp. 4-6, sections 4-5 and Figures 2-3",
+      "checked_for": "partial-program-tree carrier, grammar-valid expansion, global tree state, probability distribution and condition encoding"
+    },
+    {
+      "anchors": "pp. 7-9, sections 5.2-6.4 and Tables 1-3",
+      "checked_for": "conditioning injection, synthetic program split, fixed length limit, per-example equivalence, top-k sampling and baseline results"
+    },
+    {
+      "anchors": "pp. 9-11, section 6.5 and Figures 4-6",
+      "checked_for": "real-world benchmark success rates, top-2000/5000 saturation, more-example degradation and program-size failure boundary"
+    },
+    {
+      "anchors": "pp. 11-14, sections 7-8, references and appendix A/Figure 7",
+      "checked_for": "comparison to symbolic search, supervised target-program limitation, exact DSL runtime semantics and source completeness"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "NSPS uses an I/O-example encoder and a Recursive-Reverse-Recursive Neural Network to assign probabilities to grammar-valid expansions and incrementally generate a complete DSL program tree.",
+      "anchors": "sections 3-5, Figures 2-3"
+    },
+    {
+      "claim": "The generated artifact is an interpretable, executable regular-expression-based string-transformation program rather than an opaque neural mapping trained separately for each task.",
+      "anchors": "sections 1-2, 7 and appendix A"
+    },
+    {
+      "claim": "On 1,000 synthetic test programs whose trees and I/O pairs were held out, the best R3NN reaches 63% with greedy 1-best, 94% with 100 samples and 97% with 300 samples under the paper's finite-example success criterion.",
+      "anchors": "sections 6.1-6.4 and Table 3"
+    },
+    {
+      "claim": "On 238 FlashFill benchmarks, the model solves 91 tasks (38.2%) with up to 2,000 sampled programs; among the 110 tasks expressible with programs of size at most 13, it solves 82.7%.",
+      "anchors": "section 6.5 and Figure 4"
+    },
+    {
+      "claim": "Performance is bounded by DSL/program size, sampling budget and example encoding: programs needing four or more Concat operations fail, and the 10-example model drops to about 29% on FlashFill.",
+      "anchors": "section 6.5 and Figures 4-6"
+    }
+  ],
+  "function_concept_used_by_paper": "A function is a first-class symbolic program in a fixed DSL: a terminal grammar derivation/AST whose specified operational semantics map one input string to one output string. A shared neural generator proposes such programs from a finite set of I/O examples. The artifact is inspectable and executable, but the examples generally underdetermine its behavior on unseen inputs and the DSL excludes conditionals and general effects.",
+  "specification_language": "The actual specification is a finite set of input-output string pairs together with a fixed DSL grammar and operational semantics. It is not natural language in this paper. Consistency means P(ij)=oj for every provided pair. There are no quantified all-input postconditions, invariants, negative examples, precondition schema, effect declarations, resource budgets, security policy, ambiguity resolution rule or version compatibility clauses.",
+  "representation_or_carrier": {
+    "partial_artifact": "A partial program tree with terminal/nonterminal symbol leaves and production-rule internal nodes.",
+    "complete_artifact": "A terminal parse tree/AST in the string-transformation DSL, comprising Concat, ConstStr, SubStr, ConstPos and regex-relative position expressions.",
+    "neural_state": "Learned symbol/rule vectors, per-rule forward and reverse networks, a bottom-up root encoding, top-down global leaf encodings and an I/O condition vector.",
+    "runtime_state": "An input string, regex matches, evaluated left/right positions, substrings and concatenated output.",
+    "boundary": "The representation is restricted to one DSL with a finite constant universe, eight regex token classes and no conditionals; it is not arbitrary source code or a general-purpose program carrier."
+  },
+  "compiler_or_generator": {
+    "training": "Programs up to 13 instructions are enumerated/partitioned; training programs are sampled, well-formed inputs are generated by rules, and outputs are obtained by executing the programs. Supervised learning requires the target program tree.",
+    "generation": "The I/O encoder conditions the R3NN. At each step, the model scores every grammar-valid leaf/rule expansion from global tree state and samples or greedily chooses an expansion until all leaves are terminals.",
+    "candidate_check": "For evaluation and practical top-k use, completed candidates are executed on the finite I/O set and counted successful when one matches the required outputs.",
+    "classification": "This is a concrete probabilistic syntax-constrained program generator and therefore directly supports N3. It is not natural-language compilation, not execution-guided repair, and not a proof-producing or complete synthesizer."
+  },
+  "interpreter_or_runtime": "The DSL has explicit deterministic operational semantics: ConstStr returns a constant, SubStr evaluates two position logics against the input, regex-relative positions select match boundaries, and Concat recursively joins substrings. Completed trees can be executed and inspected. The runtime has no type checker, exception model, sandbox, effect system, resource meter or general language implementation artifact in the release.",
+  "state_or_effect_model": "The synthesized programs are pure string-to-string transformations within the described semantics. Evaluation reads an input string, computes regex matches/indices and returns a string. Generation maintains a mutable partial tree and stochastic sampling state, but the DSL has no external I/O, filesystem/network access, durable state, authority, transactions, exceptions, idempotence, compensation or rollback.",
+  "composition_rule": "Programs compose structurally through context-free-grammar expansion and recursively through Concat and nested position/substr operations. The paper additionally states that programs larger than 13 can be expressed as compositions of subprograms of at most 13 in this DSL, but the learned generator is still trained/evaluated with a size-13 ceiling and does not supply a general automatic decomposition/composition algorithm for larger tasks.",
+  "equivalence_notions": [
+    {
+      "notion": "finite-example consistency",
+      "support": "A candidate succeeds when it returns the specified output for every supplied/tested input in the particular I/O set.",
+      "boundary": "The paper explicitly permits different operations/programs to count as equivalent on that set. This is not extensional equality over all strings and provides no generalization guarantee."
+    },
+    {
+      "notion": "latent-program recovery benchmark",
+      "support": "Synthetic tasks have a known source program and held-out program trees; up to 100 or 300 candidates are executed and checked on an I/O set.",
+      "boundary": "The reported criterion is still output agreement on a specific set, not AST identity or formal semantic equivalence to the latent program."
+    },
+    {
+      "notion": "interpretability",
+      "support": "A completed DSL tree is human-readable and has defined operational semantics, unlike a purely neural mapping.",
+      "boundary": "Interpretability does not establish correctness, uniqueness, safety or suitability outside the observed examples."
+    }
+  ],
+  "validation_regime": {
+    "synthetic_corpus": "All DSL programs up to size 13 are enumerated and partitioned into train/validation/test program sets. Training sees fewer than 2 million of roughly 5 million training programs; Tables 1-3 use 1,000 sampled train programs and 1,000 test programs.",
+    "generalization_split": "Train evaluation uses unseen I/O pairs for previously seen program trees; test evaluation uses both unseen trees and unseen I/O pairs. The partition method and leakage controls are described only narratively and no split artifact is released.",
+    "metric": "Success@k is whether any of k sampled programs agrees with the tested outputs on the finite I/O set. Table 3 reports greedy 1-best 63% test, stochastic 1-sample 57%, 10-sample 79%, 50-sample 89%, 100-sample 94% and 300-sample 97%.",
+    "baselines_and_ablations": "Five I/O encoders are compared at 100 samples; io2seq reaches 42% test versus about 91% for the referenced R3NN setting. Pre-conditioning is selected from preliminary alternatives, without complete tables for all injection strategies.",
+    "real_world": "Two models trained on synthetic programs are applied to 238 FlashFill tasks. A five-example model reaches 38.2% with top-2,000 candidates and saturates; a ten-example model reaches about 29%. No standard symbolic FlashFill implementation is run as a controlled baseline.",
+    "uncertainty": "The work varies candidate count but supplies no repeated training runs, random seeds, standard deviations, confidence intervals, significance tests, calibration or probability-of-success estimate for a new task.",
+    "artifact": "The TeX package reconstructs the paper, but no model code, weights, dataset generator, exact program split, benchmark data, candidate outputs or environment is released from the paper.",
+    "safety": "No malformed-input, regex/index failure, adversarial-example, privacy, security, fairness or external-action evaluation is performed."
+  },
+  "uncertainty_model": "The R3NN defines a categorical probability distribution over valid expansions, and whole-program generation is stochastic unless greedy 1-best is used. Top-k success improves sharply from 57% for one stochastic sample to 97% for 300 on the synthetic test set, demonstrating material search uncertainty. These probabilities are not calibrated as correctness confidence; the paper gives no beam mass, entropy, posterior over semantic equivalence classes, abstention rule, training-seed variance or task-level success interval.",
+  "lifecycle_and_provenance": "A reproducible artifact would need the exact DSL/version, constant universe, target-program corpus, generated I/O pairs, program split, model architecture/weights, conditioning mode, sampling seed/budget, candidate AST, I/O validation receipt and benchmark identity. The paper narrates many of these stages but releases only the document source. It supplies no code/model/data hash, immutable program manifest, license, approval, deployment monitoring, drift, deprecation, migration or rollback registry. A synthesized AST can be hashed in principle, but the paper does not define such provenance.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Finite I/O examples plus a fixed DSL constitute an explicit, machine-checkable though incomplete behavioral specification."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Partial and complete grammar trees/ASTs are first-class symbolic function carriers with defined operational semantics."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "The conditioned R3NN probabilistically lowers example specifications into grammar-valid executable programs."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "A terminal program tree is an inspectable executable artifact, though the release contains no generated artifact files or manifests."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The paper specifies deterministic execution semantics for every DSL construct used by generated programs."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Expansion sequences and DSL evaluation steps are naturally traceable, but no trace schema, captured log or replay receipt is released."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Candidates are executed against I/O examples and success@k is based on finite-set agreement; this validator is explicit but incomplete for all-input correctness."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Grammar expansion and Concat/nested expressions provide typed-by-grammar structural composition; larger-program decomposition is asserted but not operationalized."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "No versioned DSL/model/program registry or lifecycle governance is defined, and no implementation/data artifacts are released."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "Finite examples are a concrete machine-checkable FunctionSpec pattern, while their underdetermination exposes the need for richer contracts and ambiguity policy."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "Grammar/AST construction and Concat/nested DSL semantics supply an explicit symbolic composition algebra, distinct from weight arithmetic."
+    },
+    "GAP-017": {
+      "status": "CONFIRMED",
+      "reason": "Execution against examples is an explicit validator/equivalence approximation, and the paper clearly reveals its finite-set boundary."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "The pure string DSL provides a tightly bounded no-external-effect case, but it does not model or control real effects, authority, failures or rollback."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "DSL/model/candidate/sampling/validation lineage is visibly necessary, yet the paper releases no governed hashes, manifests or registry."
+    },
+    "GAP-020": {
+      "status": "CONFIRMED",
+      "reason": "Expansion probabilities and the large success@k curve make generation/search uncertainty explicit, while absent calibration and abstention expose the gap."
+    }
+  },
+  "source_specific_reasoning": "CONFIRMED is appropriate because the paper directly implements the full bounded pattern: finite I/O specification, symbolic grammar carrier, probabilistic neural generator, executable DSL artifact, interpreter semantics, structural composition and execution-based validator. 121CX rejects the provisional natural-language and deterministic claims, and narrows 'equivalence' to output agreement on a specific finite input set. It also separates neural guidance plus top-k sampling from formal correctness or execution-guided repair. The strongest synthetic 94%/97% figures require 100/300 candidates; real-world coverage is 38.2% at top-2,000 and fails on larger Concat structures, with no released implementation or repeated-run uncertainty.",
+  "confirmed_projection": "The paper confirms a bounded Function OS pipeline in which an incomplete behavioral specification is encoded, a grammar constrains the artifact space, a learned generator proposes symbolic candidates, a deterministic runtime executes them, and a validator filters them by examples. It demonstrates why representation, interpreter and validator must remain separate: grammar validity and example consistency make a candidate executable, but do not make it uniquely intended or correct on all inputs.",
+  "projection_boundary": "This projection is based on the exact 14-page arXiv v1 PDF, every rendered page, complete extracted text, all 29 arXiv source files, official arXiv metadata and a public implementation search. No experiment was rerun because no implementation, weights, corpus or split was released. This model review is not a proof, formal verification, independent empirical validation, all-input equivalence check, peer-review decision, code reproduction or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not synthesize from natural-language specifications; the inspected system consumes finite input-output string pairs.",
+    "It does not generate arbitrary source code or programs in a Turing-complete language; the target is one restricted string DSL without conditionals.",
+    "It does not prove that a candidate agreeing on provided examples is extensionally equal to the intended function on all strings.",
+    "It does not claim formal verification, type safety, totality, termination proof or a proof certificate.",
+    "It does not implement execution-guided repair or symbolic constraint solving; it learns expansion probabilities and samples/greedily generates candidates.",
+    "It does not make generation deterministic; only the 1-best option is deterministic and most headline results use many stochastic samples.",
+    "It does not show complete synthesis: 3% of synthetic test tasks remain unsolved at 300 samples and 61.8% of FlashFill tasks remain unsolved at top-2,000.",
+    "It does not show that adding examples monotonically improves synthesis; the 10-example FlashFill model performs worse than the 5-example model.",
+    "It does not operationalize arbitrary composition of size-13 atoms into successful larger programs.",
+    "It does not define external effects, permissions, transactions, sandboxing, compensation or rollback.",
+    "It does not release code, trained models, data generators, exact splits, benchmark instances or run receipts.",
+    "This review does not independently validate the reported synthetic or FlashFill results."
+  ],
+  "limitations_and_failure_boundaries": [
+    "Finite I/O examples underdetermine behavior; multiple syntactically and semantically different programs can pass the same tested inputs.",
+    "The DSL excludes conditionals, assumes a finite universe of constants and supports only a fixed set of regex tokens and string operations.",
+    "Training is supervised by target program trees, so it requires a large synthetic program corpus rather than learning from output oracles alone.",
+    "The training/evaluation ceiling is 13 instructions; real benchmarks needing four or more Concat operations are reported as unsolved.",
+    "Although larger programs are said to compose from size-13 atoms, the model is not shown decomposing and recombining them automatically.",
+    "Synthetic tables use only 1,000 sampled train and 1,000 test programs, while training covers under 2 million of roughly 5 million candidate training programs.",
+    "The exact program-tree split, input-generation rules, random seeds and leakage checks are not released.",
+    "Success depends strongly on the sampling budget: test performance is 57% at one stochastic sample, 79% at 10, 94% at 100 and 97% at 300.",
+    "Top-k execution cost and latency are not measured; real benchmarks use up to 2,000/5,000 candidates.",
+    "The 38.2% FlashFill result has no controlled comparison to the production FlashFill/version-space algorithm or other symbolic synthesizers.",
+    "The five-example model solves 82.7% only within the subset of 110 benchmarks whose smallest DSL program is at most 13, not 82.7% of all 238 tasks.",
+    "The ten-example model reaches only about 29%, plausibly from a narrower consistent set or encoder confusion; the cause is not resolved.",
+    "Greedy 1-best can outperform one random sample, and learned probabilities are not calibrated to correctness or used for principled abstention.",
+    "No repeated training runs, variance, confidence interval, significance test, hardware, runtime or resource profile is reported.",
+    "Index/regex failure behavior, malformed inputs, Unicode/localization, ambiguity and exceptions are not modeled.",
+    "The paper provides no implementation or data artifact, preventing end-to-end reproduction and precise provenance audit.",
+    "The exact PDF is an under-review v1; inaccessible OpenReview state was not used to infer later acceptance or revisions.",
+    "No security, privacy, adversarial, fairness or external-action safety evaluation is included."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "METADATA_ONLY",
+    "verdict": "BOUNDED_IO_TO_DSL_PROGRAM_SYNTHESIS_CONFIRMED; NL_EXECUTION_GUIDANCE_DETERMINISM_AND_GLOBAL_EQUIVALENCE_CORRECTED",
+    "corrections": [
+      "Replaced the incorrect Devlin et al. authorship with the six authors on the exact paper and corrected the year to the 2016 arXiv submission.",
+      "Upgraded from OpenReview-only metadata to exact all-14-page visual/full-text/source review with official arXiv metadata.",
+      "Removed natural_language from the specification: the method consumes finite input-output string examples only.",
+      "Confirmed partial/complete grammar trees as first-class executable symbolic artifacts with explicit DSL semantics.",
+      "Confirmed the I/O encoder plus R3NN as a probabilistic grammar-valid program generator.",
+      "Replaced execution-guided search with neural expansion scoring plus greedy or stochastic top-k generation followed by finite-example execution checks.",
+      "Replaced deterministic uncertainty with categorical expansion probabilities and success that changes materially with sample count.",
+      "Narrowed test_case_passing equivalence to output equality on a specific finite I/O set, as the paper explicitly allows different operation sequences.",
+      "Bound program composition to grammar construction, Concat and nested DSL expressions rather than arbitrary general-language composition.",
+      "Recorded size-13 training, four-Concat failure, top-2,000 real-world sampling, 38.2% overall coverage and worse 10-example performance.",
+      "Added the absence of code, model, corpus, split, environment, license and immutable validation receipts.",
+      "Did not call finite-example agreement formal verification, proof, all-input equivalence or independent empirical validation."
+    ],
+    "prior_card_superseded": true
+  }
+}
