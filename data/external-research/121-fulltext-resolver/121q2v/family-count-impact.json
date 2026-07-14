@@ -1,0 +1,522 @@
+{
+  "step": 4,
+  "action": "FAMILY_COUNT_IMPACT_REPAIR",
+  "timestamp": "2026-07-14T17:20:24Z",
+  "method": "No re-reading of full text. Counts re-derived from corrected canonical index (Step 003). Semantic conclusions preserved where evidence supports them.",
+  "families_impacted": [
+    "F1",
+    "F2",
+    "F3",
+    "F5",
+    "F9",
+    "F10"
+  ],
+  "families_unchanged": [
+    "F4",
+    "F6",
+    "F7",
+    "F8"
+  ],
+  "all_families": [
+    {
+      "family_id": "F1",
+      "family_name": "Neural Weight Programs",
+      "changed": true,
+      "impacts": [
+        {
+          "field": "identity_counts",
+          "old": {
+            "VERIFIED": 5,
+            "CORRECTED": 0,
+            "BLOCKED": 0,
+            "UNKNOWN": 0
+          },
+          "new": {
+            "VERIFIED": 0,
+            "CORRECTED": 0,
+            "BLOCKED": 0,
+            "UNKNOWN": 5,
+            "NOT_FOUND": 0
+          }
+        },
+        {
+          "field": "semantic_counts",
+          "old": {
+            "CONFIRMED": 0,
+            "PARTIAL": 5,
+            "UNRESOLVED": 0,
+            "NOT_FOUND": 0
+          },
+          "new": {
+            "CONFIRMED": 0,
+            "PARTIAL": 5,
+            "NOT_SUPPORTED": 0,
+            "UNRESOLVED": 0,
+            "NOT_FOUND": 0
+          }
+        }
+      ],
+      "old_counts": {
+        "verified": 5,
+        "corrected": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "confirmed": 0,
+        "partial": 5,
+        "unresolved": 0,
+        "not_found": 0
+      },
+      "new_id_counts": {
+        "VERIFIED": 0,
+        "CORRECTED": 0,
+        "BLOCKED": 0,
+        "UNKNOWN": 5,
+        "NOT_FOUND": 0
+      },
+      "new_sem_counts": {
+        "CONFIRMED": 0,
+        "PARTIAL": 5,
+        "NOT_SUPPORTED": 0,
+        "UNRESOLVED": 0,
+        "NOT_FOUND": 0
+      }
+    },
+    {
+      "family_id": "F2",
+      "family_name": "Hypernetworks",
+      "changed": true,
+      "impacts": [
+        {
+          "field": "identity_counts",
+          "old": {
+            "VERIFIED": 3,
+            "CORRECTED": 0,
+            "BLOCKED": 0,
+            "UNKNOWN": 2
+          },
+          "new": {
+            "VERIFIED": 0,
+            "CORRECTED": 0,
+            "BLOCKED": 0,
+            "UNKNOWN": 4,
+            "NOT_FOUND": 1
+          }
+        },
+        {
+          "field": "semantic_counts",
+          "old": {
+            "CONFIRMED": 0,
+            "PARTIAL": 5,
+            "UNRESOLVED": 0,
+            "NOT_FOUND": 0
+          },
+          "new": {
+            "CONFIRMED": 0,
+            "PARTIAL": 4,
+            "NOT_SUPPORTED": 0,
+            "UNRESOLVED": 0,
+            "NOT_FOUND": 1
+          }
+        }
+      ],
+      "old_counts": {
+        "verified": 3,
+        "corrected": 0,
+        "blocked": 0,
+        "unknown": 2,
+        "confirmed": 0,
+        "partial": 5,
+        "unresolved": 0,
+        "not_found": 0
+      },
+      "new_id_counts": {
+        "VERIFIED": 0,
+        "CORRECTED": 0,
+        "BLOCKED": 0,
+        "UNKNOWN": 4,
+        "NOT_FOUND": 1
+      },
+      "new_sem_counts": {
+        "CONFIRMED": 0,
+        "PARTIAL": 4,
+        "NOT_SUPPORTED": 0,
+        "UNRESOLVED": 0,
+        "NOT_FOUND": 1
+      }
+    },
+    {
+      "family_id": "F3",
+      "family_name": "Program Synthesis",
+      "changed": true,
+      "impacts": [
+        {
+          "field": "identity_counts",
+          "old": {
+            "VERIFIED": 1,
+            "CORRECTED": 2,
+            "BLOCKED": 0,
+            "UNKNOWN": 2
+          },
+          "new": {
+            "VERIFIED": 2,
+            "CORRECTED": 2,
+            "BLOCKED": 1,
+            "UNKNOWN": 0,
+            "NOT_FOUND": 0
+          }
+        },
+        {
+          "field": "semantic_counts",
+          "old": {
+            "CONFIRMED": 0,
+            "PARTIAL": 4,
+            "UNRESOLVED": 1,
+            "NOT_FOUND": 0
+          },
+          "new": {
+            "CONFIRMED": 0,
+            "PARTIAL": 4,
+            "NOT_SUPPORTED": 0,
+            "UNRESOLVED": 1,
+            "NOT_FOUND": 0
+          }
+        }
+      ],
+      "old_counts": {
+        "verified": 1,
+        "corrected": 2,
+        "blocked": 0,
+        "unknown": 2,
+        "confirmed": 0,
+        "partial": 4,
+        "unresolved": 1,
+        "not_found": 0
+      },
+      "new_id_counts": {
+        "VERIFIED": 2,
+        "CORRECTED": 2,
+        "BLOCKED": 1,
+        "UNKNOWN": 0,
+        "NOT_FOUND": 0
+      },
+      "new_sem_counts": {
+        "CONFIRMED": 0,
+        "PARTIAL": 4,
+        "NOT_SUPPORTED": 0,
+        "UNRESOLVED": 1,
+        "NOT_FOUND": 0
+      }
+    },
+    {
+      "family_id": "F4",
+      "family_name": "Neural Operators",
+      "changed": false,
+      "impacts": [],
+      "old_counts": {
+        "verified": 1,
+        "corrected": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "confirmed": 0,
+        "partial": 1,
+        "unresolved": 0,
+        "not_found": 0
+      },
+      "new_id_counts": {
+        "VERIFIED": 1,
+        "CORRECTED": 0,
+        "BLOCKED": 0,
+        "UNKNOWN": 0,
+        "NOT_FOUND": 0
+      },
+      "new_sem_counts": {
+        "CONFIRMED": 0,
+        "PARTIAL": 1,
+        "NOT_SUPPORTED": 0,
+        "UNRESOLVED": 0,
+        "NOT_FOUND": 0
+      }
+    },
+    {
+      "family_id": "F5",
+      "family_name": "LoRA / Adapters",
+      "changed": true,
+      "impacts": [
+        {
+          "field": "identity_counts",
+          "old": {
+            "VERIFIED": 2,
+            "CORRECTED": 0,
+            "BLOCKED": 0,
+            "UNKNOWN": 0
+          },
+          "new": {
+            "VERIFIED": 1,
+            "CORRECTED": 0,
+            "BLOCKED": 0,
+            "UNKNOWN": 1,
+            "NOT_FOUND": 0
+          }
+        },
+        {
+          "field": "semantic_counts",
+          "old": {
+            "CONFIRMED": 0,
+            "PARTIAL": 2,
+            "UNRESOLVED": 0,
+            "NOT_FOUND": 0
+          },
+          "new": {
+            "CONFIRMED": 0,
+            "PARTIAL": 2,
+            "NOT_SUPPORTED": 0,
+            "UNRESOLVED": 0,
+            "NOT_FOUND": 0
+          }
+        }
+      ],
+      "old_counts": {
+        "verified": 2,
+        "corrected": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "confirmed": 0,
+        "partial": 2,
+        "unresolved": 0,
+        "not_found": 0
+      },
+      "new_id_counts": {
+        "VERIFIED": 1,
+        "CORRECTED": 0,
+        "BLOCKED": 0,
+        "UNKNOWN": 1,
+        "NOT_FOUND": 0
+      },
+      "new_sem_counts": {
+        "CONFIRMED": 0,
+        "PARTIAL": 2,
+        "NOT_SUPPORTED": 0,
+        "UNRESOLVED": 0,
+        "NOT_FOUND": 0
+      }
+    },
+    {
+      "family_id": "F6",
+      "family_name": "Model Merging",
+      "changed": false,
+      "impacts": [],
+      "old_counts": {
+        "verified": 2,
+        "corrected": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "confirmed": 0,
+        "partial": 2,
+        "unresolved": 0,
+        "not_found": 0
+      },
+      "new_id_counts": {
+        "VERIFIED": 2,
+        "CORRECTED": 0,
+        "BLOCKED": 0,
+        "UNKNOWN": 0,
+        "NOT_FOUND": 0
+      },
+      "new_sem_counts": {
+        "CONFIRMED": 0,
+        "PARTIAL": 2,
+        "NOT_SUPPORTED": 0,
+        "UNRESOLVED": 0,
+        "NOT_FOUND": 0
+      }
+    },
+    {
+      "family_id": "F7",
+      "family_name": "Types / Contracts",
+      "changed": false,
+      "impacts": [],
+      "old_counts": {
+        "verified": 1,
+        "corrected": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "confirmed": 0,
+        "partial": 1,
+        "unresolved": 0,
+        "not_found": 0
+      },
+      "new_id_counts": {
+        "VERIFIED": 1,
+        "CORRECTED": 0,
+        "BLOCKED": 0,
+        "UNKNOWN": 0,
+        "NOT_FOUND": 0
+      },
+      "new_sem_counts": {
+        "CONFIRMED": 0,
+        "PARTIAL": 1,
+        "NOT_SUPPORTED": 0,
+        "UNRESOLVED": 0,
+        "NOT_FOUND": 0
+      }
+    },
+    {
+      "family_id": "F8",
+      "family_name": "Computational Effects",
+      "changed": false,
+      "impacts": [],
+      "old_counts": {
+        "verified": 1,
+        "corrected": 0,
+        "blocked": 0,
+        "unknown": 0,
+        "confirmed": 0,
+        "partial": 1,
+        "unresolved": 0,
+        "not_found": 0
+      },
+      "new_id_counts": {
+        "VERIFIED": 1,
+        "CORRECTED": 0,
+        "BLOCKED": 0,
+        "UNKNOWN": 0,
+        "NOT_FOUND": 0
+      },
+      "new_sem_counts": {
+        "CONFIRMED": 0,
+        "PARTIAL": 1,
+        "NOT_SUPPORTED": 0,
+        "UNRESOLVED": 0,
+        "NOT_FOUND": 0
+      }
+    },
+    {
+      "family_id": "F9",
+      "family_name": "Probabilistic / Fuzzy Programs",
+      "changed": true,
+      "impacts": [
+        {
+          "field": "identity_counts",
+          "old": {
+            "VERIFIED": 1,
+            "CORRECTED": 0,
+            "BLOCKED": 0,
+            "UNKNOWN": 6
+          },
+          "new": {
+            "VERIFIED": 0,
+            "CORRECTED": 0,
+            "BLOCKED": 0,
+            "UNKNOWN": 7,
+            "NOT_FOUND": 0
+          }
+        },
+        {
+          "field": "semantic_counts",
+          "old": {
+            "CONFIRMED": 4,
+            "PARTIAL": 3,
+            "UNRESOLVED": 0,
+            "NOT_FOUND": 0
+          },
+          "new": {
+            "CONFIRMED": 4,
+            "PARTIAL": 3,
+            "NOT_SUPPORTED": 0,
+            "UNRESOLVED": 0,
+            "NOT_FOUND": 0
+          }
+        }
+      ],
+      "old_counts": {
+        "verified": 1,
+        "corrected": 0,
+        "blocked": 0,
+        "unknown": 6,
+        "confirmed": 4,
+        "partial": 3,
+        "unresolved": 0,
+        "not_found": 0
+      },
+      "new_id_counts": {
+        "VERIFIED": 0,
+        "CORRECTED": 0,
+        "BLOCKED": 0,
+        "UNKNOWN": 7,
+        "NOT_FOUND": 0
+      },
+      "new_sem_counts": {
+        "CONFIRMED": 4,
+        "PARTIAL": 3,
+        "NOT_SUPPORTED": 0,
+        "UNRESOLVED": 0,
+        "NOT_FOUND": 0
+      }
+    },
+    {
+      "family_id": "F10",
+      "family_name": "Agent Tool Making",
+      "changed": true,
+      "impacts": [
+        {
+          "field": "identity_counts",
+          "old": {
+            "VERIFIED": 2,
+            "CORRECTED": 0,
+            "BLOCKED": 0,
+            "UNKNOWN": 11
+          },
+          "new": {
+            "VERIFIED": 0,
+            "CORRECTED": 0,
+            "BLOCKED": 0,
+            "UNKNOWN": 13,
+            "NOT_FOUND": 0
+          }
+        },
+        {
+          "field": "semantic_counts",
+          "old": {
+            "CONFIRMED": 6,
+            "PARTIAL": 7,
+            "UNRESOLVED": 0,
+            "NOT_FOUND": 0
+          },
+          "new": {
+            "CONFIRMED": 6,
+            "PARTIAL": 7,
+            "NOT_SUPPORTED": 0,
+            "UNRESOLVED": 0,
+            "NOT_FOUND": 0
+          }
+        }
+      ],
+      "old_counts": {
+        "verified": 2,
+        "corrected": 0,
+        "blocked": 0,
+        "unknown": 11,
+        "confirmed": 6,
+        "partial": 7,
+        "unresolved": 0,
+        "not_found": 0
+      },
+      "new_id_counts": {
+        "VERIFIED": 0,
+        "CORRECTED": 0,
+        "BLOCKED": 0,
+        "UNKNOWN": 13,
+        "NOT_FOUND": 0
+      },
+      "new_sem_counts": {
+        "CONFIRMED": 6,
+        "PARTIAL": 7,
+        "NOT_SUPPORTED": 0,
+        "UNRESOLVED": 0,
+        "NOT_FOUND": 0
+      }
+    }
+  ],
+  "strongest_claims_preserved": true,
+  "strongest_claim_rule": "STRONGEST claims point to specific sources with VERIFIED identity; none invalidated by count corrections"
+}

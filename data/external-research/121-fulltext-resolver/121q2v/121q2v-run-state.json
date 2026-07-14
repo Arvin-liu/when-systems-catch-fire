@@ -4,12 +4,12 @@
   "baseline_head": "a344c20c29d78d8e7c52e0eca53c64eb930a8bc4",
   "branch": "records/ignition-121q2v-verification-repair-20260715",
   "pr_35_unchanged": true,
-  "current_step": 3,
+  "current_step": 4,
   "current_step_status": "COMPLETE",
-  "next_step": 4,
-  "next_step_description": "F1-F10 dependency impact repair",
+  "next_step": 5,
+  "next_step_description": "run-state and completion cursor repair",
   "defects_registered": 9,
-  "last_updated": "2026-07-14T17:19:01Z",
+  "last_updated": "2026-07-14T17:20:24Z",
   "phase2_counts": {
     "CONFIRMED": 0,
     "PARTIAL": 20,
@@ -45,5 +45,9 @@
       "UNKNOWN": 0
     },
     "cross_layer_conflicts": 12
+  },
+  "family_impacts": {
+    "changed": 6,
+    "unchanged": 4
   }
 }
