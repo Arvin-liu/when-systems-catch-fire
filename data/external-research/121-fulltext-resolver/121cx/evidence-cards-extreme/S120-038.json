@@ -1,0 +1,278 @@
+{
+  "source_id": "S120-038",
+  "canonical_title": "Efficient Knowledge Transfer in Multi-Task Learning through Task-Adaptive Low-Rank Representation",
+  "title": "Efficient Knowledge Transfer in Multi-Task Learning through Task-Adaptive Low-Rank Representation",
+  "authors": [
+    "Xiao Zhang",
+    "Kangsheng Wang",
+    "Tianyu Hu",
+    "Huimin Ma"
+  ],
+  "year": 2025,
+  "version": "arXiv:2505.00009v1, 2025-04-20; accepted at IEEE ICME 2025",
+  "doi_or_identifier": "10.1109/ICME59968.2025.11210217",
+  "identifier": "arXiv:2505.00009v1; DOI:10.1109/ICME59968.2025.11210217",
+  "url": "https://arxiv.org/abs/2505.00009v1",
+  "source_family": 5,
+  "source_family_name": "adapter routing and task-aware composition",
+  "license": "arXiv non-exclusive distribution license for the reviewed v1 manuscript; the IEEE proceedings version is governed separately by publisher terms; the linked anonymous code archive did not expose a license because access returned HTTP 401",
+  "sha256": "f5211b46bfd46355b3958ca4badf300d023140b5c8ee05c480efca3c4b102dba",
+  "file_size_bytes": 689934,
+  "page_count": 8,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_sha256_match": true,
+    "registered_file_size_match": true,
+    "registered_page_count_match": true,
+    "arxiv_api_identity": "http://arxiv.org/abs/2505.00009v1",
+    "published_at_utc": "2025-04-20T06:33:19Z",
+    "updated_at_utc": "2025-04-20T06:33:19Z",
+    "publication_cross_check": {
+      "doi": "10.1109/ICME59968.2025.11210217",
+      "venue": "2025 IEEE International Conference on Multimedia and Expo (ICME)",
+      "publisher": "IEEE",
+      "published_date": "2025-06-30",
+      "proceedings_pages": "1-6",
+      "basis": "Crossref DOI metadata"
+    },
+    "pdf_visually_checked_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8
+    ],
+    "sources_cross_checked": [
+      "arXiv v1 PDF",
+      "arXiv API metadata",
+      "arXiv abstract record",
+      "Crossref DOI metadata",
+      "paper-linked anonymous code archive endpoint"
+    ],
+    "code_artifact": {
+      "paper_url": "https://anonymous.4open.science/r/TA-LoRA-EB27",
+      "current_access_result": "Redirected to /api/repo/TA-LoRA-EB27/file/ and returned HTTP 401",
+      "review_status": "UNAVAILABLE_FOR_INSPECTION",
+      "boundary": "No implementation, environment, tests, checkpoint, results, license, or immutable source revision could be independently reviewed."
+    }
+  },
+  "sections_reviewed": [
+    "Abstract and introduction",
+    "Parameter-efficient fine-tuning and multi-task prompt-tuning background",
+    "Task-adaptive low-rank representation",
+    "Fast-slow weight mechanism and orthogonality objective",
+    "Zero-initialized attention",
+    "Source-task and target-task training protocol",
+    "Full-data, few-shot, ablation, and parameter-efficiency results",
+    "Layer-similarity analysis and dataset appendix"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "§III.A, pp. 2-3, Fig. 1, eqs. 1-4",
+      "checked_for": "source-specific prompt training, shared prompt mean, low-rank decomposition, shared slow matrix B, task-specific fast A_i, and rank-one u_i-v_i factorization"
+    },
+    {
+      "anchors": "§III.B, p. 3, eqs. 5-6",
+      "checked_for": "inter-task orthogonality objective and distinct fast-versus-slow learning rates"
+    },
+    {
+      "anchors": "§III.C, pp. 3-4, Fig. 2, eqs. 7-9",
+      "checked_for": "separate attention normalization and tanh-gated zero initialization for adaptable prompt components"
+    },
+    {
+      "anchors": "§IV.A, pp. 4-5, Table I",
+      "checked_for": "Qwen2.5-7B setup, eight source tasks, eight target tasks, full-data protocol, and reported aggregate results"
+    },
+    {
+      "anchors": "§IV.B-C, pp. 5-6, Tables II-III",
+      "checked_for": "16/32/64-shot target adaptation, per-task exceptions, and component ablations"
+    },
+    {
+      "anchors": "§IV.D and Appendix, pp. 6-8, Fig. 3, Table IV",
+      "checked_for": "parameter-count framing, layer-similarity interpretation, dataset descriptions, and documentation inconsistencies"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "TA-LoRA is a prompt-tuning method: it factorizes adaptable prompt representations, not the frozen model's weight deltas used by standard LoRA.",
+      "anchors": "§§I and III.A, pp. 1-3, Fig. 1"
+    },
+    {
+      "claim": "Eight independently trained source prompts are averaged into a shared prompt, while task deviations are approximated with a shared slow matrix B and task-specific rank-one fast factors A_i=u_i⊗v_i.",
+      "anchors": "§III.A-B, eqs. 1-6"
+    },
+    {
+      "claim": "A separate-softmax attention path and a learnable tanh gate initialized at zero gradually introduce adaptable prompt information into the last fourteen Qwen2.5-7B layers.",
+      "anchors": "§III.C, Fig. 2, eqs. 7-9; §IV.A"
+    },
+    {
+      "claim": "The paper's 'unseen task' results require initializing and optimizing a new task-specific fast factor using target-task labels; they are supervised transfer results, not zero-shot routing or zero-shot execution.",
+      "anchors": "§III.A and §IV.A-C, Tables I-II"
+    },
+    {
+      "claim": "The paper reports averages of 74.3 in full-data target adaptation and 76.7, 80.0, and 81.3 at 16, 32, and 64 shots, respectively, under its own protocol; individual target tasks contain exceptions where MPT is higher.",
+      "anchors": "Tables I-II"
+    },
+    {
+      "claim": "Ablations lower the selected-task averages when equal learning rates, the shared B matrix, or zero-initialized attention are removed, but the results do not identify which component semantically stores shared versus task-specific knowledge.",
+      "anchors": "§IV.C, Table III"
+    }
+  ],
+  "function_concept_used_by_paper": "The function-like artifact is a frozen language model augmented with a shared prompt carrier and a selected task-specific low-rank prompt factor. For a new target task, labels compile a new fast factor before execution. This is task-conditioned artifact adaptation, not selection among executable functions by a per-input router.",
+  "representation_or_carrier": {
+    "base_carrier": "frozen Qwen2.5-7B parameters and original prompt tokens",
+    "shared_carrier": "mean source prompt θ0 and shared slow matrix B",
+    "task_carrier": "task-specific rank-one fast factor A_i=u_i⊗v_i",
+    "attention_carrier": "adaptable prompt key/value components, separately normalized attention, and a learned tanh gate per augmented layer",
+    "target_carrier": "new task-specific fast factor initialized and optimized from labeled target examples",
+    "artifact_boundary": "The reported 1.3M per-task figure does not transparently account for all source-prompt training, shared artifacts, optimization compute, or total multi-task storage."
+  },
+  "specification_language": "The manuscript identifies the frozen backbone family, prompt length, fourteen augmented layers, eight source tasks, eight target tasks, target shot counts, principal equations, selected parameter counts, metrics, and table protocols. It omits optimizer, batch size, epoch count, both fast and slow learning rates, low-rank dimensions and scaling details, orthogonality coefficient, gate schedule, exact splits and dataset revisions, augmentation/downsampling procedure, random seeds and run count. It therefore supplies an experimental sketch rather than a reproducible or governed FunctionSpec.",
+  "compiler_or_generator": {
+    "source_stage": "Train one prompt on each source task, average the prompts into θ0, then optimize shared B and task-specific A_i factors with different unspecified learning rates and an orthogonality penalty.",
+    "target_stage": "For each target task, initialize and train a new rank-one task-specific factor using full or few-shot labeled target data while transferring the learned shared representation.",
+    "boundary": "The linked code archive currently returns HTTP 401, and essential hyperparameters, dataset revisions, seeds, run counts, checkpoints, and environment are unavailable, so the compiler path cannot be independently reproduced."
+  },
+  "interpreter_or_runtime": "The augmented transformer layers concatenate or otherwise expose original and adaptable prompt components, normalize their attention contributions separately, scale the adaptable branch by a learned tanh gate, and execute with the task-specific factor chosen by known task identity. No learned input router, abstention path, dynamic function discovery, or arbitrary adapter loading protocol is specified.",
+  "composition_rule": "TA-LoRA reconstructs a task-conditioned adaptable prompt through a shared matrix B and one task-specific rank-one factor A_i, then combines its separately normalized attention contribution with the original prompt path using a learned gate. The operator selects A_i by task and trains a new A_i for a target task. This is factor sharing and supervised adaptation, not runtime composition of independently versioned functions or experts.",
+  "state_or_effect_model": "Training state includes eight source datasets, eight target datasets, source prompts, θ0, B, A_i factors, gate parameters, optimizer state, learning-rate separation, orthogonality weight and target labels. Inference state includes the frozen backbone, shared carrier, a known task-specific factor, gates and prompt inputs. The paper defines no artifact identity, task-authority check, effect contract, trace schema, compatibility test, atomic promotion, rollback, monitoring, supersession or retirement behavior.",
+  "uncertainty_model": "The reported ± values for TA-LoRA are not accompanied by a stated run count, seed protocol, confidence interval, significance test, or variance definition; baselines are mostly single point estimates. Attention weights and gates are allocation variables rather than calibrated uncertainty. There is no out-of-distribution detector, abstention, confidence calibration, uncertainty propagation, or sensitivity analysis for missing hyperparameters.",
+  "validation_regime": {
+    "source_data": "eight Chinese source tasks evaluated on held-out or described validation data",
+    "target_data": "eight Chinese target tasks adapted with full training sets or 16, 32, and 64 labeled examples",
+    "baselines": "full fine-tuning, prompt tuning, ATTEMPT, and MPT under the reported table setup",
+    "ablations": "same learning rate, shared-B removal, and zero-initialized-attention removal on four source and four target tasks",
+    "parameter_analysis": "reported trainable parameters per task and selected layer-similarity visualization",
+    "boundary": "No accessible implementation, repeated-run protocol, contamination audit, exact dataset snapshot, latency, memory, failure testing, cross-backbone study, or independent replication is provided."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "shared-versus-task-specific knowledge",
+      "support": "STRUCTURAL_FACTOR_ASSIGNMENT_WITH_ABLATION",
+      "boundary": "Assigning B and A_i different update rates and observing score changes does not prove that their semantic contents are exclusively shared and task-specific."
+    },
+    {
+      "notion": "target-task transfer",
+      "support": "SUPERVISED_TARGET_ADAPTATION_PERFORMANCE",
+      "boundary": "Target labels train a new fast factor; this is not zero-shot equivalence, discovery, or routing."
+    },
+    {
+      "notion": "low-rank prompt approximation",
+      "support": "EMPIRICAL_PARAMETERIZATION",
+      "boundary": "Equation 1 is a decomposition and the low-rank premise is not a theorem guaranteeing preserved behavior or optimal rank."
+    },
+    {
+      "notion": "layer specialization",
+      "support": "DESCRIPTIVE_SIMILARITY_PLOT",
+      "boundary": "A three-layer prompt-tuning similarity plot has inconsistent layer references and cannot establish causal early-shared/deep-specific semantics."
+    }
+  ],
+  "lifecycle_and_provenance": "The reviewed paper supplies an arXiv v1 identity, author list, eventual DOI and named tasks, but the executable artifact is not currently inspectable: the linked anonymous archive returns HTTP 401 and no official public immutable mirror was identified. There is no verified code revision, license, environment lock, dataset snapshot, checkpoint hash, result log, seed manifest, lineage record, compatibility metadata, registry, promotion gate, monitoring, rollback, supersession or retirement mechanism. The paper therefore motivates compiler and artifact concepts but does not implement a VersionedRegistry lifecycle.",
+  "limitations_and_failure_boundaries": [
+    "TA-LoRA factorizes adaptable prompt representations and should not be described as standard LoRA over model-weight deltas.",
+    "An 'unseen task' is unseen during source training but receives supervised target adaptation; zero-shot task execution is not evaluated.",
+    "Task identity selects the fast factor; there is no per-input learned router or composition of arbitrary independent adapters.",
+    "The claimed shared/task-specific separation is an architectural interpretation supported by bounded ablations, not an identifiability theorem.",
+    "The paper does not report optimizer, batch size, epochs, fast/slow learning rates, ranks, scaling, regularization weight, gate schedule, exact splits, seeds, or run count.",
+    "The linked anonymous code archive currently returns HTTP 401, preventing implementation and result reproduction.",
+    "All headline comparisons come from one paper and lack independently replicated baselines or significance testing.",
+    "Per-task results are not uniformly best despite state-of-the-art aggregate wording.",
+    "The parameter-efficiency comparison does not make the complete two-stage source-training compute and shared/source artifact storage transparent.",
+    "Dataset provenance is weak: several sources are described only as GitHub, and augmentation or downsampling lacks immutable algorithms and rates.",
+    "The claim that selected data minimizes pretraining leakage is not backed by a contamination audit of Qwen2.5-7B.",
+    "The layer-similarity discussion inconsistently identifies plotted layer numbers and does not prove knowledge disentanglement.",
+    "The study covers one 7B Chinese-language backbone and sixteen tasks; cross-model, multilingual, production, safety and lifecycle generalization are outside scope."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not support zero-shot target-task execution, dynamic input routing, arbitrary adapter composition, semantic equivalence, non-interference, or calibrated uncertainty.",
+    "It does not prove that B contains only shared knowledge or A_i only task-specific knowledge.",
+    "It does not provide an independently reproducible implementation or a governed artifact registry.",
+    "It does not provide a formal proof, external empirical validation, or validation of the point architecture as a whole."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Tasks, prompt dimensions, layers and equations define a bounded experimental surface, but hyperparameters, semantics, effects, provenance and failure contracts are incomplete."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "The two-stage source and target training procedure is an explicit compiler pattern from labeled tasks to shared and task-specific prompt artifacts."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Low-rank approximation, layer similarity and shared/task-specific factor labels are operational notions without behavioral equivalence guarantees."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Shared and task-specific factors combine algebraically, but there is no runtime router or composition of independently governed functions."
+    },
+    "GAP-019": {
+      "status": "CONFIRMED",
+      "reason": "Sixteen tasks, full-data and few-shot target adaptation, multiple baselines and targeted ablations validate the bounded prompt-transfer mechanism in the reported setting."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Tables and ablations expose performance signals, while run uncertainty, traceability, code provenance and lifecycle observability are absent."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Task sets and prompt equations are specified, but executable hyperparameters, contracts, effects and provenance are incomplete."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Shared prompts, B, rank-one A_i factors and gated adaptable attention are explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "Source training, averaging, factor learning and supervised target adaptation explicitly generate task artifacts."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "The method defines concrete shared and task-specific learned prompt parameters, though released artifacts are unavailable."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The paper specifies gated execution of original and adaptable prompt attention in selected transformer layers."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Attention and gates are inspectable mathematical intermediates, but no durable trace or lineage export is defined."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Full-data, few-shot, parameter and ablation tables validate a bounded single-backbone mechanism."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Shared and task-specific factors are composed, but a known task selects A_i and new targets require labeled optimization; no input router exists."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Paper and DOI identities exist, but code, artifacts, compatibility metadata, health, rollback and retirement governance do not."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_FULLTEXT_CARD_WITH_CONCEPT_CORRECTION",
+    "corrections": [
+      "No per-source provisional evidence card existed for S120-038.",
+      "The source-registry Anonymous author placeholder was replaced with Xiao Zhang, Kangsheng Wang, Tianyu Hu, and Huimin Ma.",
+      "The method was corrected from a generic LoRA weight-delta and adapter-routing description to low-rank factorization of adaptable prompt representations.",
+      "The 'unseen task' claim was bounded to supervised target adaptation, and the inaccessible code, missing hyperparameters, dataset-provenance, uncertainty and layer-analysis limitations were recorded."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "TA-LoRA supplies direct full-text evidence for a bounded Representation-Compiler-Artifact-Interpreter-Validator chain: source-task prompts are decomposed into shared and task-specific low-rank prompt carriers, a new target factor is compiled from labeled examples, gated prompt attention executes the artifact, and full-data, few-shot and ablation tables evaluate that mechanism. ComposerRouter, uncertainty and governed registry lifecycle remain partial.",
+  "source_specific_reasoning": "Confirmation attaches only to the narrow prompt-transfer mechanism visible in the equations and reported experiments. The carrier, source/target compiler sequence, gated interpreter and targeted validation are concrete enough for a confirmed architectural projection. Stronger readings are rejected because the method is not standard LoRA over model weights, target tasks are adapted with labels, task identity selects the artifact, low-rank factors do not prove semantic disentanglement, essential reproduction details are absent, and the linked implementation cannot currently be inspected.",
+  "projection_boundary": "All GAP and Function OS impacts above are 121CX architectural projections from arXiv v1 with Crossref publication-metadata cross-check. They are not independent benchmark reproduction, proof, empirical validation of an implementation, calibration, security review, lifecycle certification, or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T05:11:48Z"
+}
