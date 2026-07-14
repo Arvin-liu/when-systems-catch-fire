@@ -1,0 +1,63 @@
+{
+  "step": 19,
+  "action": "CROSS_NODE_COMPOSITION_AND_MIN_CLOSED_LOOP",
+  "timestamp": "2026-07-14T17:57:51Z",
+  "candidate_dataflow": {
+    "spec_to_artifact": "N1(FunctionSpec) → N3(Compiler) → N4(Artifact)",
+    "artifact_to_execution": "N4(Artifact) → N5(Interpreter) → N6(ExecutionTrace)",
+    "execution_to_validation": "N6(ExecutionTrace) → N7(Validator) ← N1(FunctionSpec)",
+    "artifact_to_registry": "N4(Artifact) → N9(VersionedRegistry)",
+    "registry_to_composition": "N9(VersionedRegistry) → N8(ComposerRouter) → N4(Artifact)",
+    "representation_input": "N2(Representation) → N3(Compiler), N7(Validator)"
+  },
+  "candidate_control_flow": {
+    "primary_loop": "N1 → N3 → N4 → N5 → N6 → N7 → (pass: deploy | fail: back to N1)",
+    "composition_loop": "N9 → N8 → N4 → N9 (registry-driven composition)",
+    "validation_loop": "N7 → N1 (validator feeds back to specification)"
+  },
+  "candidate_validation_flow": {
+    "test_based": "N6(trace) → test_oracle → pass/fail",
+    "smt_based": "N1(spec) → SMT_solver → sat/unsat (symbolic only)",
+    "behavioral": "N4(artifact) → N5(interpret) → compare with expected behavior",
+    "note": "Cross-representation validation (code vs weights vs spec) is NOT available — GAP-017 UNRESOLVED"
+  },
+  "candidate_version_flow": {
+    "creation": "N3(compiler) → N4(artifact) → N9(registry)",
+    "update": "N1(spec change) → N3(recompile) → N4(new artifact version) → N9(registry update)",
+    "rollback": "N9(registry) → previous N4(artifact) → N5(interpreter)",
+    "provenance": "N9(registry) tracks: source spec, compiler version, representation, dependencies"
+  },
+  "min_closed_loop_check": {
+    "loop": "N1 → N3 → N4 → N5 → N6 → N7 → N1",
+    "status": "PARTIALLY_FEASIBLE",
+    "missing_interfaces": [
+      "N7 → N1 feedback channel (validator results must inform spec revision)",
+      "N3 meta-compiler dispatch (no single compiler handles all types)",
+      "N6 trace standardization (no unified trace format)"
+    ],
+    "circular_dependencies": "None detected — the loop is acyclic with feedback",
+    "non_observable_states": [
+      "N3 compilation intermediate states",
+      "N5 interpretation internal state (for weight-based artifacts)",
+      "N8 composition decision rationale"
+    ],
+    "version_issues": [
+      "N4 artifacts need immutable versioning (not yet implemented)",
+      "N9 registry needs conflict resolution for concurrent updates"
+    ]
+  },
+  "gap_impact_on_loop": {
+    "GAP-015": "N1 spec incomplete for weight-space → loop only works for symbolic specs",
+    "GAP-016": "N8 composition not formal → composition loop is empirical only",
+    "GAP-017": "N7 cannot validate cross-representation → validation loop incomplete",
+    "GAP-018": "N5/N6 effect tracking missing → side effects untracked",
+    "GAP-019": "N9 registry not unified → version flow fragmented",
+    "GAP-020": "N1/N5 probabilistic semantics missing → stochastic functions unhandled"
+  },
+  "overall_assessment": "Minimum closed loop is PARTIALLY FEASIBLE. The spec→compile→artifact→interpret→trace→validate→spec cycle can work for symbolic functions but has 3 missing interfaces and 3 non-observable states. Weight-space functions cannot complete the loop due to GAP-015 (no spec) and GAP-017 (no cross-rep validation).",
+  "prohibited_wording": [
+    "Do not claim the closed loop is 'proven' or 'verified'",
+    "Do not claim all 9 nodes form a working system"
+  ],
+  "frozen_assets_unchanged": true
+}
