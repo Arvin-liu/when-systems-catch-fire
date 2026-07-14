@@ -4,12 +4,12 @@
   "baseline_head": "a344c20c29d78d8e7c52e0eca53c64eb930a8bc4",
   "branch": "records/ignition-121q2v-verification-repair-20260715",
   "pr_35_unchanged": true,
-  "current_step": 6,
+  "current_step": 7,
   "current_step_status": "COMPLETE",
-  "next_step": 7,
-  "next_step_description": "Full validation and corrected report",
+  "next_step": 8,
+  "next_step_description": "Completion seal and 1111 receipt",
   "defects_registered": 9,
-  "last_updated": "2026-07-14T17:21:16Z",
+  "last_updated": "2026-07-14T17:22:03Z",
   "phase2_counts": {
     "CONFIRMED": 0,
     "PARTIAL": 20,
@@ -69,5 +69,20 @@
     "entries": 18,
     "unique_steps": true,
     "range": "000-017"
-  }
+  },
+  "validators": {
+    "json_jsonl_parse": true,
+    "phase2_semantic_sum_22": true,
+    "identity_sum_22": true,
+    "canonical_index_84_unique": true,
+    "empty_verified_conflicts": true,
+    "complete_as_confirmed": true,
+    "blocked_as_partial": true,
+    "family_counts_consistent": true,
+    "ledger_18_unique": true,
+    "frozen_files_zero_diff": true,
+    "credential_scan_clean": true,
+    "pr_merge_close_zero": true
+  },
+  "validation_overall": true
 }

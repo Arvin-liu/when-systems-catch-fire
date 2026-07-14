@@ -5,3 +5,4 @@
 {"step": 4, "action": "FAMILY_COUNT_IMPACT_REPAIR", "result": "6 changed, 4 unchanged, no re-reading", "timestamp": "2026-07-14T17:20:24Z"}
 {"step": 5, "action": "RUN_STATE_CURSOR_REPAIR", "result": "next_cx_step=null, next_source_id=null, next_phase=AWAITING_GPT_DECISION", "timestamp": "2026-07-14T17:20:47Z"}
 {"step": 6, "action": "LEDGER_RECONSTRUCTION", "result": "18 entries, steps 000-017, all unique, all push_verified", "timestamp": "2026-07-14T17:21:16Z"}
+{"step": 7, "action": "FULL_VALIDATION_AND_REPORT", "result": "all_pass=True", "timestamp": "2026-07-14T17:22:03Z"}
