@@ -1,0 +1,272 @@
+{
+  "source_id": "S120-036",
+  "canonical_title": "Task-Aware LoRA Adapter Composition via Similarity Retrieval in Vector Databases",
+  "title": "Task-Aware LoRA Adapter Composition via Similarity Retrieval in Vector Databases",
+  "authors": [
+    "Riya Adsul",
+    "Balachandra Devarangadi Sunil",
+    "Isha Nalawade",
+    "Sudharshan Govindan"
+  ],
+  "year": 2026,
+  "version": "arXiv:2602.21222v1, 2026-02-01",
+  "doi_or_identifier": "arXiv:2602.21222v1",
+  "identifier": "arXiv:2602.21222v1",
+  "url": "https://arxiv.org/abs/2602.21222v1",
+  "source_family": 5,
+  "source_family_name": "adapter routing and task-aware composition",
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0), recorded in the PDF XMP metadata",
+  "sha256": "931d8dad4e885fd27bfe053bb823b82fd07ff90d74cc291dd1ad1d840295b175",
+  "file_size_bytes": 464296,
+  "page_count": 12,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_sha256_match": true,
+    "registered_file_size_match": true,
+    "registered_page_count_match": true,
+    "arxiv_api_identity": "http://arxiv.org/abs/2602.21222v1",
+    "published_at_utc": "2026-02-01T22:20:04Z",
+    "updated_at_utc": "2026-02-01T22:20:04Z",
+    "pdf_visually_checked_pages": [
+      1,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ],
+    "sources_cross_checked": [
+      "arXiv v1 PDF",
+      "arXiv API metadata",
+      "arXiv HTML rendering",
+      "PDF XMP metadata"
+    ],
+    "code_or_artifact_link_status": "No implementation, adapter checkpoints, vector-database snapshot, run configuration, or immutable artifact manifest is linked in the paper or arXiv record."
+  },
+  "sections_reviewed": [
+    "Abstract, introduction, and related work",
+    "Dataset list, preprocessing, and instruction scaffolding",
+    "LoraRetriever baseline description and admitted non-replication",
+    "Vector database construction and task-similarity distribution",
+    "Linear, concatenation, TIES, and magnitude-prune merge definitions",
+    "Adapter fine-tuning configuration and evaluation description",
+    "Single-query case study",
+    "Fifteen-task result table and baseline discussion",
+    "Manual error-analysis narrative and conclusion",
+    "References and artifact-availability boundary"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "Abstract and §§1-3, pp. 1-2",
+      "checked_for": "zero-shot, unseen-task, efficiency, interpretability, and no-retriever-training claims"
+    },
+    {
+      "anchors": "§4-4.1, pp. 2-4",
+      "checked_for": "22-dataset adapter bank, inconsistent 24-corpus wording, preprocessing, task hints, and label-space boundary"
+    },
+    {
+      "anchors": "§5.1-5.5, pp. 4-5",
+      "checked_for": "baseline provenance, explicit non-replication, frozen MiniLM retriever, top-100, p=0.9, and train/test statement"
+    },
+    {
+      "anchors": "§6.1-6.4, pp. 5-7, Fig. 1, Table 1, eqs. 1-6",
+      "checked_for": "vector index, similarity aggregation, nucleus routing, four merge rules, adapter hyperparameters, and model-identity ambiguity"
+    },
+    {
+      "anchors": "§7, pp. 8-9, Table 2 and mislabeled Fig. 2",
+      "checked_for": "single-query case study and contradiction between weighted TIES equation and equal-weight failure explanation"
+    },
+    {
+      "anchors": "§8, pp. 9-10, Table 3",
+      "checked_for": "15 in-bank task results, comparison protocol, per-task wins and losses, and absence of uncertainty"
+    },
+    {
+      "anchors": "§9-10, pp. 10-11",
+      "checked_for": "qualitative error taxonomy, missing annotation protocol, lack of a universally optimal merge, and conclusion scope"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "A frozen all-MiniLM-L6-v2 encoder and Chroma cosine index retrieve 100 neighboring training examples from an approximately 44,000-example, 22-task collection.",
+      "anchors": "§5.5 and §6.1"
+    },
+    {
+      "claim": "Neighbor similarities exp(-distance) are summed by task, normalized, truncated to the smallest task prefix reaching top-p mass 0.9, and renormalized into adapter-fusion weights.",
+      "anchors": "§6.2"
+    },
+    {
+      "claim": "The paper defines and evaluates four PEFT-supported merge families: weighted linear, rank concatenation, sign-aware TIES, and magnitude pruning.",
+      "anchors": "§6.3, eqs. 1-6"
+    },
+    {
+      "claim": "The reported adapter bank comprises 22 rank-64 LoRA modules trained for three epochs on task data and applied to attention and MLP projections.",
+      "anchors": "§6.4"
+    },
+    {
+      "claim": "On the reported 15-task table, no merge strategy dominates: linear, concatenation, and magnitude pruning show large gains on some tasks and large deficits on others, while TIES is especially unstable across tasks.",
+      "anchors": "§8, Table 3"
+    },
+    {
+      "claim": "The paper's zero-shot unseen-task conclusion is not established by its reported table because every named evaluation task is also included in the 22-task adapter-bank list and no held-out-task protocol or result partition is supplied.",
+      "anchors": "§4, §5.5, §6.6, §8"
+    }
+  ],
+  "function_concept_used_by_paper": "A task-specific LoRA delta is the reusable function-like artifact. Training examples act as task-index entries; a frozen embedding retriever maps an input to a weighted task distribution; and the runtime maps those task labels to compatible adapters before applying one of four weight-space merge procedures.",
+  "representation_or_carrier": {
+    "query_carrier": "instruction-scaffolded text embedded by all-MiniLM-L6-v2",
+    "task_carrier": "dataset label plus up to 2,000 indexed training-example embeddings",
+    "registry_carrier": "persistent Chroma HNSW collection of approximately 44,000 vectors with canonical task-label metadata",
+    "adapter_carrier": "rank-64 LoRA matrices targeting q, k, v, o, gate, up, and down projections",
+    "routing_carrier": "top-100 neighbors, exp(-cosine-distance) scores, task aggregates, top-p nucleus, and normalized task weights",
+    "composition_carrier": "weighted LoRA matrices or deltas produced by linear, concatenation, TIES, or magnitude-prune merging"
+  },
+  "specification_language": "The paper provides an operational recipe containing dataset identifiers, task hints, a frozen embedding model, sample cap, index type, top-100 retrieval, exp(-distance) kernel, p=0.9 task nucleus, LoRA rank and targets, training hyperparameters, and four merge rules. The recipe is not an executable contract: the exact backbone is inconsistent ('Llama 2B' in §6.4, 'Llama-2-7b' in Table 3, and 'llama2B' adapter names), dataset revisions and preprocessing code are absent, label/output schemas are not defined, and compatibility, effects, provenance, failure and acceptance rules are not machine-checkable.",
+  "compiler_or_generator": {
+    "adapter_generation": "Three-epoch supervised PEFT training produces one rank-64 task adapter from each dataset's train split.",
+    "index_generation": "A fixed-seed sample of up to 2,000 rows per task is instruction-scaffolded, embedded, normalized, and inserted with task metadata into Chroma.",
+    "online_generation": "Query retrieval produces task weights which parameterize one of four derived merged adapters.",
+    "boundary": "The paper calls the retrieval method training-free only relative to retriever fine-tuning; it still depends on a pretrained MiniLM encoder, 22 separately trained adapters, labeled task metadata, preprocessing, and a prebuilt vector index."
+  },
+  "interpreter_or_runtime": "The intended runtime embeds a query, searches Chroma, aggregates task identities, selects a top-p task nucleus, resolves task labels to adapters, constructs a merged LoRA artifact, and runs it with a shared Llama-family backbone. The paper does not specify merge caching, per-query construction latency, GPU transfer, batching, classification or generation decoding, heterogeneous output heads, failure isolation, concurrency, or safe fallback.",
+  "composition_rule": "Linear merge scales same-rank A and B factors so their product gives a weighted delta; concatenation preserves the weighted sum while increasing rank; TIES trims and resolves signs before merging; and magnitude prune sparsifies a weighted raw delta. These are explicit empirical weight-space operations, not semantic function composition. The TIES account is internally inconsistent: §6.3 includes retrieval weights w_i in the TIES equation, but §7.4 attributes a case-study failure to TIES assigning equal contributions irrespective of those weights.",
+  "state_or_effect_model": "Durable state includes dataset-derived embeddings, task labels, a Chroma collection, 22 adapter checkpoints, task-to-adapter naming, and merge hyperparameters. Per-query state includes neighbors, similarity mass, selected tasks, weights, derived adapter parameters, and a prediction. The paper does not specify dataset consent, deletion propagation, adapter identity, index/adapter atomicity, version compatibility, stale-index detection, authorization, audit logs, cache invalidation, rollback, or retirement. Instruction scaffolding can also reveal task identity to retrieval, but this effect is not isolated.",
+  "uncertainty_model": "The normalized exp(-distance) task masses and top-p nucleus are routing heuristics, not calibrated probabilities. No reliability diagram, proper score, entropy threshold, abstention, sensitivity interval, repeated-run dispersion, confidence interval, significance test, or uncertainty propagation is reported. A fixed shuffle seed is mentioned for index sampling, but experimental seeds and run counts are not. The table values are point estimates and cannot support claims of consistent or significant superiority.",
+  "validation_regime": {
+    "adapter_bank": "22 public NLP datasets with up to 2,000 indexed examples per task and one trained adapter per named task",
+    "reported_results": "15 task test sets using four proposed merge methods, presented alongside Perfect Selection, Selection, Fusion, MoE, SMEAR, Adapter Soup and LoRA values",
+    "case_study": "one tennis-ball multiple-choice query with retrieved task weights and four strategy predictions",
+    "error_analysis": "qualitative categories for errors on StoryCloze, PIQA, RTE and BoolQ, without sample counts, selection procedure, annotator count or agreement",
+    "baseline_boundary": "The paper explicitly states that it did not replicate the full LoraRetriever pipeline and instead compares with published results; model, data, prompting and evaluation-protocol equivalence are not demonstrated.",
+    "unseen_task_boundary": "All 15 table tasks appear in the listed adapter-bank datasets; no held-out task identities, adapter exclusions, or unseen-task table is provided.",
+    "reproduction_boundary": "This full-text review did not execute the unavailable code or reproduce the experiments."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "query-task similarity",
+      "support": "FROZEN_EMBEDDING_NEIGHBOR_AFFINITY",
+      "boundary": "Cosine proximity of instruction-scaffolded examples does not establish task equivalence and may partly expose the task through its prompt hint."
+    },
+    {
+      "notion": "adapter compatibility",
+      "support": "SHARED_UNDER-SPECIFIED_BACKBONE_AND_TARGET_LAYERS",
+      "boundary": "Rank and target-module agreement are necessary but insufficient; exact backbone revision, tokenizer, dtype, output protocol and adapter provenance are missing."
+    },
+    {
+      "notion": "merge equivalence",
+      "support": "ALGEBRAIC_DELTA_IDENTITY_FOR_LINEAR_AND_CONCAT_ONLY",
+      "boundary": "Linear factor scaling and concatenation can represent weighted low-rank deltas under compatible conventions, while TIES and pruning alter them; none guarantees semantic or behavioral equivalence."
+    },
+    {
+      "notion": "baseline comparability",
+      "support": "PUBLISHED_NUMBER_ALIGNMENT_ONLY",
+      "boundary": "Shared task names do not establish matched models, inputs, metrics or protocols, and the baseline pipeline was not replicated."
+    }
+  ],
+  "lifecycle_and_provenance": "The paper demonstrates registry-shaped components: a persistent vector index, task labels, a task-specific adapter bank, routing weights, derived merged adapters, and experiment tracking with Weights & Biases. It does not demonstrate a VersionedRegistry. There are no exact dataset revisions, adapter hashes, base-model identifier, code revision, environment lock, Chroma snapshot, PEFT version, run IDs, metric definitions, promotion policy, compatibility check, lineage from merged artifact to source adapters, health signal, rollback, supersession or retirement record.",
+  "limitations_and_failure_boundaries": [
+    "The claimed unseen-task and zero-shot evaluation is not identifiable from the reported protocol because all table tasks are in the adapter-training bank and no held-out-task partition is shown.",
+    "The backbone identity is internally inconsistent between 'Llama 2B', 'Llama-2-7b', and adapter names beginning 'llama2B'.",
+    "The paper alternates between 22 datasets and 24 source corpora without reconciling the count.",
+    "Instruction scaffolding embeds task-purpose hints and may make task retrieval easier; no ablation removes those hints.",
+    "Published baseline numbers are compared without replicating or establishing protocol equivalence.",
+    "The TIES formula uses retrieval weights, whereas the case-study explanation says TIES ignores them; the implementation behavior cannot be checked without code.",
+    "The result table omits metric definitions, prompting/decoding details, adapter checkpoint identities, dataset revisions, seeds, repetitions, dispersion and significance.",
+    "Heterogeneous task label and output spaces are acknowledged but the common prediction contract is not specified.",
+    "The single case study cannot validate interpretability or generalization, and its figure is mislabeled as an error-category distribution.",
+    "The manual error analysis provides no sample counts, annotation protocol, annotator agreement or quantitative category results.",
+    "No one merge strategy is consistently best; large task-specific failures show composition interference and retrieval/merge sensitivity.",
+    "No code, checkpoints, index snapshot or immutable run artifacts are linked."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not establish zero-shot generalization to truly held-out tasks under the reported experiment.",
+    "It does not prove semantic equivalence, non-interference, routing correctness, merge optimality, efficiency, or calibrated uncertainty.",
+    "It does not establish that its proposed and published baseline scores are directly comparable.",
+    "It does not demonstrate a governed versioned adapter registry or reproducible artifact lifecycle.",
+    "It does not independently validate the point architecture, provide empirical reproduction, or constitute proof."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "The retrieval and merge recipe is concrete, but identity, output, compatibility, effect and lifecycle contracts are incomplete or inconsistent."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "Training, indexing, routing and merge stages are described, but no implementation is linked and key backbone and evaluation details are unresolved."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Embedding affinity and algebraic weighted deltas provide operational comparisons without semantic or behavioral equivalence."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "An explicit retrieval-to-composition mechanism is present, but its TIES specification is contradictory and its unseen-task validation is not established."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "The paper reports a broad task table, but unmatched baselines, missing metrics and absent statistical and held-out protocols sharply bound the evidence."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Top-p scores and qualitative error categories exist, but calibration, uncertainty, durable traces, privacy and lifecycle governance do not."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Dataset names and task instructions approximate specifications, but label/output and compatibility contracts are missing."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Examples, embeddings, task labels, adapters, retrieval weights and merged deltas have explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Adapter training and index construction are described but not available as inspectable code or immutable outputs."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Adapter and index artifacts are central to the method but are neither published nor immutably identified."
+    },
+    "N5_Interpreter": {
+      "status": "PARTIAL",
+      "reason": "The intended retrieve-merge-run path is described, while decoding, loading, timing and failure semantics are absent."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Neighbors, task masses, weights and a case-study prediction are trace precursors without durable schema or provenance."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "A 15-task table and qualitative error discussion exist, but protocol comparability, held-out validation and uncertainty are inadequate."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "The paper directly defines retrieval-based routing and four merge operators, but internal specification contradictions and validation gaps prevent a confirmed projection."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Chroma task metadata and an adapter bank are registry precursors without exact identities, versions, provenance, health, rollback or retirement."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "PARTIAL",
+    "verdict": "STATUS_UPHELD_BUT_SCOPE_AND_BIBLIOGRAPHY_CORRECTED",
+    "corrections": [
+      "The provisional card lists the authors as Anonymous; arXiv v1 identifies Riya Adsul, Balachandra Devarangadi Sunil, Isha Nalawade, and Sudharshan Govindan.",
+      "The registered PDF exactly matches arXiv v1, and its XMP metadata records a CC BY 4.0 license.",
+      "The prior card overstates demonstrated runtime composition and VersionedRegistry support: no code or artifact registry is published, and the per-query merge runtime is not measured.",
+      "The paper's claimed zero-shot unseen-task generalization is not established by Table 3 because all reported tasks belong to the 22-task adapter bank and no held-out protocol is supplied.",
+      "The full review identifies unresolved dataset-count, backbone-identity, TIES-weighting, baseline-comparability, metric, and uncertainty inconsistencies that require a PARTIAL judgment."
+    ],
+    "prior_card_superseded": true
+  },
+  "claim_support_status": "PARTIAL",
+  "source_specific_reasoning": "The source is useful mechanism evidence because it explicitly maps indexed examples to task weights and then to four LoRA merge operations. That is enough to retain partial ComposerRouter and registry-precursor support. It is not enough for confirmation. The central unseen-task claim is not identifiable from the table, the baseline pipeline was not replicated, model identity is inconsistent, TIES weighting is described two incompatible ways, and no code or statistical uncertainty is available. The extreme review therefore preserves the mechanism while rejecting the paper's strongest empirical and lifecycle extrapolations.",
+  "projection_boundary": "All GAP and Function OS impacts above are 121CX architectural projections from arXiv v1. Full-text review is not independent empirical replication, proof, verification of unavailable code, validation of unseen-task generalization, certification of adapter compatibility, or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T04:56:38Z"
+}
