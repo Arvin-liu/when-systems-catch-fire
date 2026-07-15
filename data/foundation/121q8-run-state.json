@@ -1,7 +1,7 @@
 {
   "task_id": "IGNITION-20260715-121Q8",
   "status": "IN_PROGRESS",
-  "current_step": "007",
+  "current_step": "008",
   "branch": "governance/121q8-charter-sustainability-licensing-20260715",
   "stacked_base_pr": 44,
   "stacked_base_branch": "ops/121q7-foundation-ci-mail-storm-repair-20260715",
@@ -18,7 +18,7 @@
   "root_license_replaced": false,
   "frozen_assets_policy": "Do not modify Psi0 frozen assets, 085 frozen v1, legacy two tables, or historical evidence cards.",
   "created_at_utc": "2026-07-15T07:46:04Z",
-  "updated_at_utc": "2026-07-15T08:28:00Z",
+  "updated_at_utc": "2026-07-15T08:31:00Z",
   "last_audit": "data/foundation/121q8-080-audit.json",
   "last_repair": "Restored 080 canonical artifacts via build_080_queue.py and fixed remaining-count contract to count all non-COMPLETED_ACCEPTED queue rows, including provisional 083 labels.",
   "foundation_closeout": "data/foundation/121q8-foundation-closeout.json",
