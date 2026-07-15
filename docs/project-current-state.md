@@ -16,6 +16,8 @@ Current state must be inferred from actual repository artifacts: architecture fi
 
 121Q14 adds a current atlas overlay. It projects existing registries, matrices, architecture surfaces, validation workflows, sustainability documents, and operation flows into versioned maps for declared observers and decision questions. These maps are navigation and resource-decision views, not a new source of truth or a fixed project identity.
 
+121Q15 records Q12-Q14 as a continuous cumulative release candidate chain pending main merge. This sentence describes the current release state of the chain; it does not turn the overlays into a fixed project identity or permanent total map.
+
 ## Current Shape
 
 At this version, the repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system for cross-domain material. That sentence is a current-state description, not a fixed essence. It can change if future work changes the actual assets, evidence rules, execution layer, or governance boundaries.
