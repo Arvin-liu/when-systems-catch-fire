@@ -2,9 +2,11 @@
 
 v0.2: adapted from v0.1 n9_registry_store/updater/validator.
 """
-import hashlib, json
+import hashlib, json, re
 from typing import Dict, Any, List, Optional
 from datetime import datetime
+
+FUNCTION_ID_RE = re.compile(r'^FN-\d{8}-\d{4}$')
 
 class N9RegistryStore:
     VERSION = "0.2.1-candidate"
@@ -14,7 +16,10 @@ class N9RegistryStore:
 
     def create(self, record: dict) -> dict:
         """Add initial record for a function."""
-        fn_id = record['function_id']
+        fn_id = record.get('function_id')
+        if not isinstance(fn_id, str) or not FUNCTION_ID_RE.match(fn_id):
+            raise ValueError(
+                f"function_id '{fn_id}' invalid (expected FN-YYYYMMDD-NNNN)")
         if fn_id in self._records:
             raise ValueError(f"function_id {fn_id} already exists — use update()")
 
@@ -134,30 +139,3 @@ class N9RegistryValidator:
         return {"valid": all(c.get('passed', True) for c in checks), "checks": checks}
 
 
-# Smoke test
-if __name__ == '__main__':
-    store = N9RegistryStore()
-    updater = N9RegistryUpdater(store)
-    validator = N9RegistryValidator()
-
-    record = {
-        "function_id": "FN-20260715-0001",
-        "spec_hash": "abc123", "artifact_hash": "def456",
-        "representation_hash": "ghi789", "trace_hash": "jkl012",
-        "compiler_version": "0.2.0", "content_hash": "abc123"
-    }
-    r1 = store.create(record)
-    print("Created:", r1['function_id'], "rev:", r1['revision'])
-
-    r2 = updater.update("FN-20260715-0001", {"spec_hash": "new_hash"})
-    print("Updated: rev:", r2['revision'])
-
-    history = store.history("FN-20260715-0001")
-    print("History:", len(history), "revisions")
-
-    r3 = updater.rollback("FN-20260715-0001", 1)
-    print("Rollback: rev:", r3['revision'])
-
-    vresult = validator.validate(store)
-    print("Validation:", vresult['valid'])
-    print("N9: ALL OK")
