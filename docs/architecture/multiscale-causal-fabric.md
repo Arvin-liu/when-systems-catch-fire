@@ -6,6 +6,8 @@ The Multiscale Causal Fabric (MCF) is a versioned modeling and navigation struct
 
 MCF exists because the repository already has local causal components but lacks a shared object model for time, scale, propagation, feedback, entropy, irreversibility, projection, diff, and residue.
 
+PSD extension: `docs/architecture/probabilistic-system-dynamics.md` adds probability semantics and system-dynamics records for cases where a fabric needs stochastic evolution, partial observation, calibration, transition laws, or explicit system boundaries. PSD is a derived operational extension to MCF, not a replacement for MCF and not a new truth layer.
+
 ## Placement
 
 - Charter Gate decides whether an action or publication remains normatively allowed.
@@ -25,6 +27,7 @@ MCF exists because the repository already has local causal components but lacks 
 5. Statistical causality, physical propagation, mechanism hypothesis, intervention support, correlation, analogy, and unknown relation are different relation classes.
 6. Scale transitions are not automatically faithful. They need bridge mechanisms, evidence, or explicit residue.
 7. A map, network path, centrality score, dependency edge, or visual position is not proof.
+8. Probability values must declare semantics, conditions, time scope, system boundary, source, estimation method, uncertainty, and claim ceiling; a naked number is not a PSD probability.
 
 ## Objects
 
