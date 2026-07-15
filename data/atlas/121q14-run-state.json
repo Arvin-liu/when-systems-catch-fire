@@ -4,20 +4,20 @@
   "branch": "architecture/121q14-ignition-atlas-dynamic-landscape-20260715",
   "base_pr": 48,
   "base_head": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
-  "draft_pr": null,
-  "status": "STEP_000_COMPLETE",
+  "draft_pr": 49,
+  "status": "STEP_001_COMPLETE",
   "steps": [
     {
       "step": "000",
       "name": "121Q13 baseline, latent maps, and matrix-map boundary audit",
       "status": "complete",
-      "commit": null,
-      "pushed": false
+      "commit": "01941d9e",
+      "pushed": true
     },
     {
       "step": "001",
       "name": "atlas schemas and deterministic projection",
-      "status": "pending",
+      "status": "complete",
       "commit": null,
       "pushed": false
     },
