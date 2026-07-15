@@ -1,0 +1,23 @@
+{
+  "schema": "ignition.architecture.action_claim_scale_thresholds.v1",
+  "thresholds": [
+    {
+      "id": "ACTION",
+      "allows": "low-risk reversible action under affordable loss",
+      "requires": ["Charter Gate pass", "rollback condition", "loss envelope", "claim boundary"],
+      "does_not_allow": ["mechanism truth claim", "scale deployment", "irreversible intervention"]
+    },
+    {
+      "id": "CLAIM",
+      "allows": "bounded mechanism or interpretation claim",
+      "requires": ["distinguishing evidence", "alternative mechanism review", "claim ceiling", "downgrade conditions"],
+      "does_not_allow": ["scale deployment by itself", "external fact claim from AI samples"]
+    },
+    {
+      "id": "SCALE",
+      "allows": "larger deployment, commercial use path, or higher-impact intervention",
+      "requires": ["stronger evidence", "Charter Gate review", "silent-subject risk review", "sustainability analysis", "rollback or refusal path"],
+      "does_not_allow": ["bypassing unresolved value conflicts", "using deadline pressure as truth"]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "ignition.architecture.decision_collapse_record.v1",
+  "id": "DCR-121Q13-IMPLEMENTATION",
+  "distribution_ref": "HDIST-121Q13-CONTROL-SURFACES",
+  "threshold_used": "ACTION",
+  "collapse_trigger": "User issued a bounded command with four macro steps and clear rollback via Draft PR.",
+  "selected_action": "Implement Q13 as a stacked Draft PR control overlay.",
+  "pre_collapse_candidates": [
+    "separate Q13 overlay",
+    "fold into Q12 mechanism adjudication",
+    "defer until Q12 merge"
+  ],
+  "dissent": [
+    "Separate overlay may add terminology before real-world use proves need.",
+    "Stacking before Q12 merge increases review dependency."
+  ],
+  "unresolved_items": [
+    "Whether future reviewers find controls too abstract.",
+    "Whether the validator catches enough pseudo-chunk cases."
+  ],
+  "rollback_conditions": [
+    "Keep PR #48 draft and unmerged.",
+    "Downgrade to partial if validator or CI fails.",
+    "Preserve Q12 unchanged if Q13 is rejected."
+  ],
+  "truth_claim_made": false
+}

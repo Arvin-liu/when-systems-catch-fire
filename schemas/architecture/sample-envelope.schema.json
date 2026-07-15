@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/sample-envelope.schema.json",
+  "title": "Sample Envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "sampler_type",
+    "model",
+    "model_version",
+    "prompt_hash",
+    "context_hash",
+    "sampling_conditions",
+    "output_hash",
+    "proposed_mechanism",
+    "proposed_action",
+    "uncertainty",
+    "order_sensitivity",
+    "stance_sensitivity",
+    "provenance_class",
+    "evidence_boundary"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^SAMPLE-[A-Z0-9-]+$" },
+    "sampler_type": { "enum": ["ai_model", "human_judgment", "repository_artifact", "external_source"] },
+    "model": { "type": "string", "minLength": 1 },
+    "model_version": { "type": "string", "minLength": 1 },
+    "prompt_hash": { "type": "string", "minLength": 1 },
+    "context_hash": { "type": "string", "minLength": 1 },
+    "sampling_conditions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["temperature", "order", "role", "memory_state"],
+      "properties": {
+        "temperature": { "type": "string", "minLength": 1 },
+        "order": { "type": "string", "minLength": 1 },
+        "role": { "type": "string", "minLength": 1 },
+        "memory_state": { "type": "string", "minLength": 1 }
+      }
+    },
+    "output_hash": { "type": "string", "minLength": 1 },
+    "proposed_mechanism": { "type": "string", "minLength": 1 },
+    "proposed_action": { "type": "string", "minLength": 1 },
+    "uncertainty": { "type": "string", "minLength": 1 },
+    "order_sensitivity": { "enum": ["unknown", "low", "medium", "high", "not_tested"] },
+    "stance_sensitivity": { "enum": ["unknown", "low", "medium", "high", "not_tested"] },
+    "provenance_class": { "enum": ["hypothesis", "interpretation", "review", "fact_evidence", "proof_artifact", "empirical_observation"] },
+    "evidence_boundary": { "type": "string", "minLength": 1 }
+  }
+}

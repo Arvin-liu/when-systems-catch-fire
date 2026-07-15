@@ -5,7 +5,7 @@
   "base_pr": 47,
   "base_head": "338cfff999e26dce623c6c55d810587db4a668ba",
   "draft_pr": 48,
-  "status": "STEP_001_COMPLETE",
+  "status": "STEP_002_COMPLETE",
   "steps": [
     {
       "step": "000",
@@ -18,13 +18,13 @@
       "step": "001",
       "name": "attention and attractor control plane",
       "status": "complete",
-      "commit": null,
-      "pushed": false
+      "commit": "a99630c3",
+      "pushed": true
     },
     {
       "step": "002",
       "name": "distribution judgment and decision collapse control plane",
-      "status": "pending",
+      "status": "complete",
       "commit": null,
       "pushed": false
     },
