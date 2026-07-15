@@ -1,0 +1,29 @@
+{
+  "decisions": [
+    {
+      "map_id": "map-maintainer-sustainability-economics",
+      "max_uncertainty": "Actual willingness of sponsors or commercial users to cover costs.",
+      "new_decision_revealed": "Separate retained maintainer judgment from rentable AI/CI infrastructure: sponsorship should cover quota and CI costs, but cannot buy truth or governance authority.",
+      "unmapped_residue": [
+        "residue-real-funding-response"
+      ]
+    },
+    {
+      "map_id": "map-epistemic-architecture",
+      "max_uncertainty": "Whether Q12/Q13 controls improve future reasoning behavior.",
+      "new_decision_revealed": "Treat Q12/Q13 overlays as controls around L0-L6 rather than stages inside the truth chain; this prevents overlay language from becoming a second proof path.",
+      "unmapped_residue": [
+        "residue-architecture-real-world-effect"
+      ]
+    },
+    {
+      "map_id": "map-agent-delivery-operations",
+      "max_uncertainty": "Actual quality and independence of future human/GPT review.",
+      "new_decision_revealed": "Keep the 1111 receipt and Draft PR review as custom audit surfaces while renting execution and CI infrastructure; do not equate PR mergeability with acceptance.",
+      "unmapped_residue": [
+        "residue-human-review-quality"
+      ]
+    }
+  ],
+  "schema": "ignition.atlas.map_decisions.v1"
+}

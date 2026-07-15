@@ -114,6 +114,122 @@ def structural_architecture_map() -> dict:
     }
 
 
+def sustainability_economics_map() -> dict:
+    nodes = [
+        node("maintainer_judgment", "Maintainer judgment and Charter responsibility", "docs/governance/life-community-value-charter.md", "docs/governance/life-community-value-charter.md", "GENESIS", "Closest to maintainer sustainability and affected subjects", ["maintainer"], "maintainer", "Cannot be outsourced without losing accountability.", "preserve", "Normative judgment and refusal rights must stay accountable."),
+        node("ai_quota", "AI quota and model access", "SUSTAINABILITY.md", "SUSTAINABILITY.md", "PRODUCT_RENTAL", "High for execution speed", ["maintainer", "sponsors"], "maintainer", "Provider availability and cost can change.", "rent", "Rent model access; do not make provider output a truth source."),
+        node("ci_compute", "CI compute", ".github/workflows", ".github/workflows/foundation-validation.yml", "COMMODITY_UTILITY", "High for validation repeatability", ["maintainer", "GitHub Actions"], "maintainer", "CI pass is workflow evidence only.", "rent", "Use commodity CI while retaining claim boundaries."),
+        node("foundation_validators", "Foundation validators", "tools/foundation", "tools/foundation/validate_foundation.py", "CUSTOM_BUILT", "High for publication safety", ["maintainer"], "maintainer", "Validator scope is repository-specific.", "automate", "Automate repeat checks to reduce maintenance load."),
+        node("commercial_license", "Commercial license and reciprocity path", "LICENSES/COMMERCIAL-TERMS.md", "LICENSES/COMMERCIAL-TERMS.md", "CUSTOM_BUILT", "High for commercial users and maintainer sustainability", ["commercial users", "maintainer"], "maintainer", "Real-world uptake unknown.", "standardize", "Standardize terms while preserving case-by-case refusal and reciprocity review."),
+        node("sponsorship", "Sponsorship and sustainability funding", "SUSTAINABILITY.md", "SUSTAINABILITY.md", "GENESIS", "High for maintainer life and project continuity", ["sponsors", "maintainer"], "maintainer", "Funding is not guaranteed and must not buy truth claims.", "co_build", "Seek support without governance capture."),
+        node("storage_network", "Storage, network, and repository hosting", "GitHub repository", "README.md", "COMMODITY_UTILITY", "Medium-high for access and collaboration", ["maintainer", "platform"], "maintainer", "Platform terms and availability can change.", "rent", "Use commodity hosting while keeping exportable repository state.")
+    ]
+    edges = [
+        edge("econ_judgment_license", "maintainer_judgment", "commercial_license", "control_flow", "docs/governance/life-community-value-charter.md"),
+        edge("econ_sponsor_quota", "sponsorship", "ai_quota", "value_flow", "SUSTAINABILITY.md"),
+        edge("econ_sponsor_ci", "sponsorship", "ci_compute", "value_flow", "SUSTAINABILITY.md"),
+        edge("econ_ai_validators", "ai_quota", "foundation_validators", "information_flow", "tools/foundation/validate_foundation.py"),
+        edge("econ_ci_validators", "ci_compute", "foundation_validators", "evidence_flow", ".github/workflows/foundation-validation.yml"),
+        edge("econ_hosting_license", "storage_network", "commercial_license", "dependency", "README.md")
+    ]
+    return {
+        "id": "map-maintainer-sustainability-economics",
+        "map_type": "WARDLEY_STYLE_EVOLUTION",
+        "as_of_commit": AS_OF_COMMIT,
+        "observer_or_decision_owner": "maintainer deciding what to keep, rent, automate, standardize, or fund",
+        "decision_question": "Which costs and responsibilities must be retained, automated, rented, standardized, or covered by sponsorship?",
+        "value_recipient_or_affected_subject": "maintainer, noncommercial users, commercial users, and affected subjects",
+        "layout_semantics": {
+            "x_axis": "evolution stage from genesis to commodity utility",
+            "y_axis": "visibility to maintainer sustainability and project continuity",
+            "visual_boundary": "rightward movement is not moral progress or inevitable commodification"
+        },
+        "data_sources": ["SUSTAINABILITY.md", "LICENSES/COMMERCIAL-TERMS.md", ".github/workflows", "tools/foundation", "docs/governance/life-community-value-charter.md"],
+        "generation_method": "Deterministic static projection from declared sustainability, license, validation, CI, and charter surfaces.",
+        "claim_ceiling": "derived_resource_navigation_view",
+        "update_triggers": ["license scope change", "sponsorship policy change", "CI cost change", "model access change", "Charter Gate change"],
+        "nodes": nodes,
+        "edges": edges,
+        "projections": [
+            {
+                "id": "projection-sustainability-static-v1",
+                "input_sources": ["SUSTAINABILITY.md", "LICENSES/COMMERCIAL-TERMS.md", ".github/workflows", "tools/foundation"],
+                "projection_rule": "Map declared cost-bearing surfaces and reusable infrastructure into Wardley-style evolution stages with sourcing decisions.",
+                "deterministic": True,
+                "reviewer": "Codex main session",
+                "uncertainty": "Does not predict actual sponsor or commercial behavior."
+            }
+        ],
+        "unmapped_residue": [
+            {
+                "id": "residue-real-funding-response",
+                "description": "Actual willingness of sponsors or commercial users to cover costs.",
+                "reason": "Requires real-world response beyond repository artifacts.",
+                "next_condition": "Record signed sponsorship, commercial license, or refusal evidence."
+            }
+        ]
+    }
+
+
+def agent_operations_map() -> dict:
+    nodes = [
+        node("user_request", "User request", "conversation / 1111 command", "agent-commands", "GENESIS", "Highest for user intent", ["user", "maintainer"], "user and maintainer", "Conversation context can be incomplete.", "preserve", "Intent interpretation remains human/accountable."),
+        node("command_bus", "1111 command bus", "Arvin-liu/1111", "agent-commands", "CUSTOM_BUILT", "High for cross-session continuity", ["maintainer"], "maintainer", "Command bus is metadata/control, not proof.", "preserve", "Keep lightweight and auditable."),
+        node("codex_execution", "Codex execution session", "current branch work", "AI-HANDOFF.md", "PRODUCT_RENTAL", "High for implementation throughput", ["maintainer", "AI quota"], "maintainer", "Model output is not independent evidence.", "rent", "Rent execution capacity while retaining verification."),
+        node("repo_artifacts", "Repository artifacts", "git commits", "data/atlas/121q14-ledger.jsonl", "CUSTOM_BUILT", "High for reviewable work", ["maintainer", "reviewers"], "maintainer", "Artifacts can still overclaim if unvalidated.", "preserve", "Commit history remains audit surface."),
+        node("local_validation", "Local validation", "tools and tests", "tools/validate_attention_distribution_compression.py", "CUSTOM_BUILT", "High before push", ["maintainer", "local compute"], "maintainer", "Local pass can differ from CI.", "automate", "Automate checks while preserving failure reports."),
+        node("remote_ci", "Remote CI", "GitHub Actions", ".github/workflows", "COMMODITY_UTILITY", "High for reproducibility", ["GitHub Actions", "maintainer"], "maintainer", "Workflow pass is not truth.", "rent", "Use platform CI as workflow evidence."),
+        node("draft_pr", "Draft PR", "GitHub PR", "reports/atlas/121Q14-baseline-latent-map-audit.md", "COMMODITY_UTILITY", "High for external review", ["reviewers", "maintainer"], "maintainer", "Mergeability is not acceptance.", "standardize", "Keep draft until GPT verification."),
+        node("receipt", "1111 result receipt", "agent-results", "agent-results", "CUSTOM_BUILT", "High for cross-thread trace", ["maintainer"], "maintainer", "Receipt records facts but does not certify legal or empirical truth.", "preserve", "Write concise independent closeout.")
+    ]
+    edges = [
+        edge("ops_user_command", "user_request", "command_bus", "information_flow", "agent-commands"),
+        edge("ops_command_execution", "command_bus", "codex_execution", "control_flow", "AI-HANDOFF.md"),
+        edge("ops_execution_artifacts", "codex_execution", "repo_artifacts", "information_flow", "git commits"),
+        edge("ops_artifacts_local", "repo_artifacts", "local_validation", "evidence_flow", "tools"),
+        edge("ops_artifacts_ci", "repo_artifacts", "remote_ci", "evidence_flow", ".github/workflows"),
+        edge("ops_artifacts_pr", "repo_artifacts", "draft_pr", "control_flow", "GitHub PR"),
+        edge("ops_pr_receipt", "draft_pr", "receipt", "information_flow", "agent-results")
+    ]
+    return {
+        "id": "map-agent-delivery-operations",
+        "map_type": "WARDLEY_STYLE_EVOLUTION",
+        "as_of_commit": AS_OF_COMMIT,
+        "observer_or_decision_owner": "maintainer coordinating AI execution, validation, PR review, and command-bus receipt",
+        "decision_question": "Which delivery steps should remain human/accountable, which can be automated, and which are rented infrastructure?",
+        "value_recipient_or_affected_subject": "user, maintainer, reviewers, and future agents",
+        "layout_semantics": {
+            "x_axis": "evolution stage of delivery component",
+            "y_axis": "visibility to successful audited delivery",
+            "visual_boundary": "workflow proximity is not evidence independence"
+        },
+        "data_sources": ["agent-commands", "AI-HANDOFF.md", "tools", ".github/workflows", "GitHub PRs", "agent-results"],
+        "generation_method": "Deterministic static projection from observed delivery workflow surfaces.",
+        "claim_ceiling": "derived_operations_navigation_view",
+        "update_triggers": ["new command-bus protocol", "new CI workflow", "new validation gate", "review process change"],
+        "nodes": nodes,
+        "edges": edges,
+        "projections": [
+            {
+                "id": "projection-agent-ops-static-v1",
+                "input_sources": ["agent-commands", "AI-HANDOFF.md", "tools", ".github/workflows"],
+                "projection_rule": "Map delivery workflow steps into nodes and information/control/evidence edges.",
+                "deterministic": True,
+                "reviewer": "Codex main session",
+                "uncertainty": "Does not measure actual human cognitive load or future agent reliability."
+            }
+        ],
+        "unmapped_residue": [
+            {
+                "id": "residue-human-review-quality",
+                "description": "Actual quality and independence of future human/GPT review.",
+                "reason": "Requires later review behavior, not current repository topology.",
+                "next_condition": "Compare review findings against PR contents and CI outcomes."
+            }
+        ]
+    }
+
+
 def build_atlas() -> dict:
     return {
         "atlas_spec": {
@@ -124,7 +240,11 @@ def build_atlas() -> dict:
             "canonical_truth_source": "Repository registries, matrices, schemas, tests, and source artifacts remain authoritative.",
             "permanent_total_map": False
         },
-        "maps": [structural_architecture_map()]
+        "maps": [
+            sustainability_economics_map(),
+            structural_architecture_map(),
+            agent_operations_map()
+        ]
     }
 
 

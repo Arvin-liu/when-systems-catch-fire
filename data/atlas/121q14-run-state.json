@@ -5,7 +5,7 @@
   "base_pr": 48,
   "base_head": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
   "draft_pr": 49,
-  "status": "STEP_001_COMPLETE",
+  "status": "STEP_002_COMPLETE",
   "steps": [
     {
       "step": "000",
@@ -18,13 +18,13 @@
       "step": "001",
       "name": "atlas schemas and deterministic projection",
       "status": "complete",
-      "commit": null,
-      "pushed": false
+      "commit": "f5856a9e",
+      "pushed": true
     },
     {
       "step": "002",
       "name": "first real maps and sourcing decisions",
-      "status": "pending",
+      "status": "complete",
       "commit": null,
       "pushed": false
     },
