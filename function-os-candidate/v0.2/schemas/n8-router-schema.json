@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "function-os/v0.2/schemas/n8-router-schema.json",
+  "title": "N8 ComposerRouter Schema v0.2",
+  "type": "object",
+  "required": [
+    "task_id",
+    "status",
+    "plan_type",
+    "steps",
+    "errors"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "OK",
+        "PARTIAL",
+        "FAILED"
+      ]
+    },
+    "plan_type": {
+      "enum": [
+        "sequential"
+      ]
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "capabilities": {
+    "sequential_composition": true,
+    "conditional_routing": true,
+    "failure_propagation": true,
+    "excluded": [
+      "weight-space algebra",
+      "automatic function discovery"
+    ]
+  }
+}

@@ -12,7 +12,12 @@ class N8ComposerRouter:
     def plan(self, task: dict, candidates: list) -> dict:
         """Generate execution plan from task + candidate functions."""
         required = task.get('required_functions', [])
-        available = {c.get('function_id', ''): c for c in candidates}
+        # Build lookup: first by function_id, then by payload.function_id
+        available = {}
+        for c in candidates:
+            key = c.get('function_id') or c.get('payload', {}).get('function_id') or ''
+            if key:
+                available[key] = c
 
         plan = {"task_id": task.get('task_id', 'TASK-0000'),
                 "status": "OK",
@@ -23,13 +28,6 @@ class N8ComposerRouter:
         for i, req in enumerate(required):
             fn_id = req.get('function_id', '')
             candidate = available.get(fn_id)
-
-            # Fallback: look up by payload.function_id (for artifacts)
-            if candidate is None:
-                for v in available.values():
-                    if v.get('payload', {}).get('function_id') == fn_id:
-                        candidate = v
-                        break
 
             if candidate is None:
                 plan['errors'].append({
