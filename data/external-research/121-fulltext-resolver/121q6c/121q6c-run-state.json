@@ -12,7 +12,7 @@
   "target_steps": 8,
   "current_step": 0,
   "next_step": 1,
-  "commits_from_base": 1,
+  "commits_from_base": 2,
   "final_verdict": null,
   "merge_readiness": null,
   "inherited_foundation_ci_failure": "tools/foundation/migrate_legacy.py --check (present in PR #40, inherited by #41)",
@@ -32,6 +32,8 @@
     "close-merge-any-PR"
   ],
   "created_at": "2026-07-15T12:50:39+08:00",
-  "last_updated": "2026-07-15T12:51:40+08:00",
-  "this_pr": 42
+  "last_updated": "${NOW}",
+  "this_pr": 42,
+  "step0_actual_commits": 2,
+  "step0_note": "PR #42 number known only after first push; recorded in 2nd commit (no amend/force-push)"
 }
