@@ -1,0 +1,51 @@
+{
+  "step": "000",
+  "purpose": "Baseline, deviation, inherited-CI truth capture for 121Q6C",
+  "captured_at": "2026-07-15T12:50:00+08:00",
+  "executor": "QClaw",
+  "model": "Hy3",
+  "pr41_truth": {
+    "state": "OPEN",
+    "is_draft": true,
+    "mergeable": true,
+    "base_branch": "records/ignition-121q5-v4pro-canonical-function-os-v02-20260715",
+    "base_is_pr": 40,
+    "head_branch": "records/ignition-121q6-hy3-v021-hardening-reproducibility-20260715",
+    "head_sha": "afa9831f14e45ab7873a1ee467f1dafbaf68d31b",
+    "commits_vs_base": 22,
+    "note": "GPT-verified 22 commits, not the 21 reported by 121Q6 self-report"
+  },
+  "121q6_control_plane_deviations": {
+    "ledger_lines": 20,
+    "ledger_unique_step_numbers": 19,
+    "ledger_missing_step": 17,
+    "ledger_duplicate_step": 18,
+    "commit_guard_missing_step": 17,
+    "commit_guard_duplicate_step": 18,
+    "run_state": {
+      "target_steps": 25,
+      "current_step": 19,
+      "status": "IN_PROGRESS",
+      "commits_from_base": 21,
+      "literal_now_placeholder": true
+    },
+    "final_status_head_mismatch": true,
+    "final_status_commits_mismatch": 21
+  },
+  "inherited_foundation_ci_failure": {
+    "present_in_pr": [40, 41],
+    "failing_step": "tools/foundation/migrate_legacy.py --check",
+    "classification": "INHERITED_FOUNDATION_CI_FAILURE",
+    "is_new_regression_in_121q6": false,
+    "counts_against_function_os_ci": false
+  },
+  "preserved_implementation_progress": {
+    "n1_0.0.0_rejected": true,
+    "n6_deterministic_trace_hash": true,
+    "path_independent_tests": true,
+    "cache_cleaned": true,
+    "test_assets_retained": true
+  },
+  "original_steps_019_024_status": "NOT_COMPLETED",
+  "normative_status_after_121q6": "PARTIAL_RESUMABLE_AFTER_HARDENING"
+}
