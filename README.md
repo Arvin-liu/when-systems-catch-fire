@@ -18,6 +18,12 @@ If you prefer English first: this repository is an evidence-traceable, object-ty
 - 想按 Agent 方式操作，请读 [Agent 指南](./docs/AGENT-GUIDE.md)。
 - 想理解 Get 笔记如何进入这套系统，请读 [得到大脑协作流程](./docs/GET-BRAIN-WORKFLOW.md)。
 
+## 致谢
+
+感谢提供推理、检索、编程、执行、校验和长程协作能力的 AI 系统；感谢提供问题、材料、验证、纠错、贡献与批评的人类参与者；感谢提供独立审查、红队反馈、规范约束和缺口暴露的外部治理。
+
+外部反馈不是“攻击/防御”叙事的一部分。经验证后，它进入“缺口发现 -> 结构修正 -> 再验证”的系统输入链。上述致谢不表示任何个人、AI 系统或机构对项目全部结论背书，也不声称 AI 具有法律人格或独立 ratification 权限。
+
 ## 这套仓库在做什么
 
 点火采用七层正式架构：L0 来源与证据、L1 受控语义命题、L2 形式对象、L3 逻辑论证、L4 数学模型与证明、L5 验证与有效性、L6 解释应用与出版。数学与逻辑互相约束；workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 九个状态轴彼此独立，任何一轴不能自动推出另一轴。
