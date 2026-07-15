@@ -6,13 +6,16 @@
   "base_head": "5396889f04f115bfa4e6996a2cbd961366110d12",
   "this_branch": "ops/121q7-foundation-ci-mail-storm-repair-20260715",
   "this_pr": 44,
-  "current_step": 1,
-  "next_step": 2,
+  "current_step": 4,
+  "next_step": 5,
   "total_steps": 7,
-  "commits_from_base": 0,
+  "commits_from_base": 4,
   "root_cause": "data/foundation/project-state.json polluted by external runtime state (083_* / next_task fields) not produced by migrate_legacy.py deterministic generation; --check always OUT_OF_DATE",
   "mail_storm_mechanism": "foundation-validation had no paths filter; every Agent push (100+) re-triggered same migrate_legacy failure -> 200+ qq mails",
-  "final_verdict": null,
+  "final_verdict": "PARTIAL_ROOT_CAUSE_FIXED_MAIL_STORM_STOPPED_FOR_ORDINARY_PUSHES; 080_PREEXISTING_OPEN",
   "merge_readiness": null,
-  "last_updated": "2026-07-15T13:57:31+08:00"
+  "last_updated": "2026-07-15T14:06:22+08:00",
+  "migrate_root_cause_fixed": true,
+  "mail_storm_hemostasis": true,
+  "residual_080_preexisting": true
 }
