@@ -6,7 +6,7 @@
   "base_head": "33f453a0fd8aec355000ccf3253544858cf460c3",
   "base_branch": "records/ignition-121q6c-hy3-completion-merge-readiness-20260715",
   "this_branch": "records/ignition-121q6d-hy3-ci-e2e-seal-repair-20260715",
-  "this_pr": null,
+  "this_pr": 43,
   "current_step": 0,
   "next_step": 1,
   "total_steps": 7,
@@ -16,5 +16,5 @@
   "inherited_foundation_ci_failure": "tools/foundation/migrate_legacy.py --check (from PR #40)",
   "final_verdict": null,
   "merge_readiness": null,
-  "last_updated": "2026-07-15T13:19:51+08:00"
+  "last_updated": "2026-07-15T13:20:11+08:00"
 }
