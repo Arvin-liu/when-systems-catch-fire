@@ -4,3 +4,4 @@
 {"step":3,"description":"Q5 status correction overlay: commits=17, head=314b5fa, model MIXED_OR_UNVERIFIED, status PARTIAL_ACCEPTED_AS_IMPLEMENTATION_CANDIDATE","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"ac5b21e1cd686d3d0eee36e180cb941ac34c2f8e"}
 {"step":4,"description":"v0.2.1-candidate: pyproject.toml (py>=3.10, zero deps), version bump N1-N9","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"4d5fa92df330f38ac0b07104e7a98cc16c2c0b6f"}
 {"step":5,"description":"Path-independent imports: removed sys.path hacks, standard pkg import, verified from /tmp","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"9f6f4523bcf14293753acb90a763d6f7b0797a73"}
+{"step":6,"description":"E2E fix: named BuildResult (no positional unpacking), per-test isolation, regression test_14 N6 binds real FunctionSpec","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"29a7972d103acde5d83224b21bdeba2009bcb29c"}
