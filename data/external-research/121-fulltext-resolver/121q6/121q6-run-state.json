@@ -1,0 +1,23 @@
+{
+  "task": "IGNITION-20260715-121Q6",
+  "title": "Hy3 Function OS v0.2.1 Hardening & Reproducibility",
+  "executor": "QClaw main session",
+  "model_declared": "Hy3",
+  "model_runtime_observed": "qclaw/pool-hy3-preview",
+  "inference_level": "high (deep thinking)",
+  "model_selection_note": "User selected Hy3 x0.5; runtime model identity QClaw/pool-hy3-preview confirmed from session runtime + user instruction. No model switch/fallback/subagent used.",
+  "q5_model_identity": "MIXED_OR_UNVERIFIED (switch from DeepSeek-V4-Pro to Hy3 occurred mid-Q5; no per-step runtime proof in Q5 history)",
+  "base_pr": 40,
+  "base_pr_state": "OPEN/DRAFT/UNMERGED/MERGEABLE",
+  "base_branch": "records/ignition-121q5-v4pro-canonical-function-os-v02-20260715",
+  "base_head": "314b5fa7e5ff74c9e3f71bb01dc242c1465e6a9f",
+  "base_commit_count": 17,
+  "current_branch": "records/ignition-121q6-hy3-v021-hardening-reproducibility-20260715",
+  "target_steps": 25,
+  "current_step": 0,
+  "next_step": 1,
+  "commits_from_base": 0,
+  "status": "IN_PROGRESS",
+  "next_phase": "AWAITING_GPT_REVIEW",
+  "last_updated": "2026-07-15T11:47:42+08:00"
+}
