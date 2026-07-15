@@ -3,20 +3,20 @@
   "task": "IGNITION-20260715-121Q12",
   "branch": "architecture/121q12-effectual-mechanism-dual-loop-20260715",
   "base_main_head": "8189dde91d0adbb7957c8aa642bc76d14afe6534",
-  "draft_pr": null,
-  "status": "STEP_000_COMPLETE",
+  "draft_pr": 47,
+  "status": "STEP_001_COMPLETE",
   "steps": [
     {
       "step": "000",
       "name": "baseline and current architecture audit",
       "status": "complete",
-      "commit": null,
-      "pushed": false
+      "commit": "152db8b7",
+      "pushed": true
     },
     {
       "step": "001",
       "name": "effectual action plane",
-      "status": "pending",
+      "status": "complete",
       "commit": null,
       "pushed": false
     },

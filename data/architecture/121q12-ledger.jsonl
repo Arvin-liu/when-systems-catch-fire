@@ -1,1 +1,2 @@
 {"step":"000","event":"baseline_audited","status":"complete","main_head":"8189dde91d0adbb7957c8aa642bc76d14afe6534","q11_receipt_commit":"b9d088d98","notes":"121Q12 starts as a cross-layer operation overlay, not a replacement for L0-L6."}
+{"step":"001","event":"effectual_action_plane_created","status":"complete","draft_pr":47,"previous_commit":"152db8b7","notes":"Minimum State-Changing Action, affordable loss, real commitments, surprise register, and Explore/Exploit router established."}

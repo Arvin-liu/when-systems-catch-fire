@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/effectual-action.schema.json",
+  "title": "Effectual Action Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "mode",
+    "current_state_ref",
+    "who_we_are",
+    "what_we_know",
+    "whom_we_can_reach",
+    "available_assets",
+    "reversible_action",
+    "affordable_loss",
+    "real_commitments",
+    "expected_state_change",
+    "information_gain",
+    "capability_gain",
+    "real_commitment_gain",
+    "option_space_gain",
+    "surprise_observed",
+    "next_state_update",
+    "conditions",
+    "charter_gate"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^EA-[A-Z0-9-]+$" },
+    "mode": { "enum": ["EFFECTUAL", "CAUSAL"] },
+    "mode_reason": { "type": "string", "minLength": 1 },
+    "current_state_ref": { "type": "string", "minLength": 1 },
+    "who_we_are": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "what_we_know": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "whom_we_can_reach": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "available_assets": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "reversible_action": { "type": "string", "minLength": 1 },
+    "affordable_loss": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["time", "money", "ai_quota", "reputation", "maintenance_load", "opportunity_cost", "sleep_or_attention"],
+      "properties": {
+        "time": { "type": "string", "minLength": 1 },
+        "money": { "type": "string", "minLength": 1 },
+        "ai_quota": { "type": "string", "minLength": 1 },
+        "reputation": { "type": "string", "minLength": 1 },
+        "maintenance_load": { "type": "string", "minLength": 1 },
+        "opportunity_cost": { "type": "string", "minLength": 1 },
+        "sleep_or_attention": { "type": "string", "minLength": 1 }
+      }
+    },
+    "real_commitments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["actor", "commitment", "resource", "verification"],
+        "properties": {
+          "actor": { "type": "string", "minLength": 1 },
+          "commitment": { "type": "string", "minLength": 1 },
+          "resource": { "type": "string", "minLength": 1 },
+          "verification": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "expected_state_change": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "information_gain": { "type": "string", "minLength": 1 },
+    "capability_gain": { "type": "string", "minLength": 1 },
+    "real_commitment_gain": { "type": "string", "minLength": 1 },
+    "option_space_gain": { "type": "string", "minLength": 1 },
+    "surprise_observed": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "next_state_update": { "type": "string", "minLength": 1 },
+    "conditions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stop", "pivot", "scale", "rollback"],
+      "properties": {
+        "stop": { "type": "string", "minLength": 1 },
+        "pivot": { "type": "string", "minLength": 1 },
+        "scale": { "type": "string", "minLength": 1 },
+        "rollback": { "type": "string", "minLength": 1 }
+      }
+    },
+    "charter_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["affected_subjects", "expected_benefit", "cost_bearers", "reversibility", "harm_visibility", "maintainer_sustainability", "evidence_threshold_for_scaling", "gate_status"],
+      "properties": {
+        "affected_subjects": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+        "expected_benefit": { "type": "string", "minLength": 1 },
+        "cost_bearers": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+        "reversibility": { "type": "string", "minLength": 1 },
+        "harm_visibility": { "type": "string", "minLength": 1 },
+        "maintainer_sustainability": { "type": "string", "minLength": 1 },
+        "evidence_threshold_for_scaling": { "type": "string", "minLength": 1 },
+        "gate_status": { "enum": ["PASS", "CONSTRAINED_PASS", "BLOCKED", "PENDING"] }
+      }
+    }
+  }
+}

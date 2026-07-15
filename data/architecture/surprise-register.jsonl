@@ -1,0 +1,1 @@
+{"id":"SURPRISE-121Q12-001","status":"open","observed":"121Q12 starts after 121Q11 sealed main and after a subsequent 1111 command commit for 121Q12 already exists.","state_change":"Use current 1111 main as command authority while preserving the verified 121Q11 receipt boundary.","response":"Record both the 121Q11 receipt commit and 121Q12 command commit in baseline data."}
