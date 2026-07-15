@@ -1,0 +1,92 @@
+{
+  "task": "121Q21R",
+  "as_of_commit": "1e6ff2279b6dba0c01ab94ee1bb8a34834925fec",
+  "status": "PARTIAL_COMPONENTS_WITHOUT_UNIFIED_MULTISCALE_FABRIC",
+  "inventory": [
+    {
+      "asset_id": "foundation-cxy",
+      "path": "tools/foundation/adjudicate_core.py",
+      "coverage": ["causal relation candidate", "claim ceiling", "downgrade boundary"],
+      "finding": "C(x,y) is retained as a mechanism-hypothesis score, not as an established causal relation without intervention and identification evidence.",
+      "gap": "No multiscale event/state/relation fabric or propagation channel representation."
+    },
+    {
+      "asset_id": "math-foundation-local-causal-objects",
+      "path": "reports/math-foundation/full-object-inventory-20260712.md",
+      "coverage": ["causal closure", "causal cone", "irreversibility", "entropy", "lock-in"],
+      "finding": "Legacy function-table objects include local causal, cone, entropy, and irreversibility terms, preserved as historical/formal candidates.",
+      "gap": "Objects are not integrated into a versioned multiscale fabric and must not be rewritten as established causal facts."
+    },
+    {
+      "asset_id": "foundation-claim-gates",
+      "path": "reports/foundation-architecture/core-strong-claim-audit-20260713.md",
+      "coverage": ["causal downgrade", "strong claim gate"],
+      "finding": "Established causal claims retained: 0; causal/mechanism candidates are downgraded unless evidence thresholds are met.",
+      "gap": "Gate result prevents overclaiming but does not itself provide navigation across time, scale, propagation, or residues."
+    },
+    {
+      "asset_id": "q12-effectual-mechanism-overlay",
+      "path": "docs/architecture/mechanism-adjudication-plane.md",
+      "coverage": ["M0 mechanism sketch", "M1 mechanism adjudication", "claim ceiling"],
+      "finding": "Q12 separates action choice from mechanism interpretation and blocks completion language without criteria.",
+      "gap": "It does not define a persistent multiscale causal event graph."
+    },
+    {
+      "asset_id": "q13-attention-distribution-compression",
+      "path": "reports/architecture/121Q13-attention-distribution-compression.md",
+      "coverage": ["IterationDelta", "HypothesisDistribution", "compression audit"],
+      "finding": "Q13 detects attractor loops, no-information increments, narrative provenance, and collapse records.",
+      "gap": "It controls attention and compression rather than representing causal propagation."
+    },
+    {
+      "asset_id": "q14-atlas",
+      "path": "docs/architecture/ignition-atlas.md",
+      "coverage": ["MapSpec", "MapNode", "MapEdge", "MapProjection", "MapDiff", "UnmappedResidue"],
+      "finding": "Atlas explicitly records not_causality=true and says map position, visual proximity, stage, and dependency do not prove causality.",
+      "gap": "Atlas can host projections but is not itself a causal fabric."
+    },
+    {
+      "asset_id": "function-os-v02",
+      "path": "function-os-candidate/v0.2/README.md",
+      "coverage": ["specification", "artifact", "trace", "validator feedback"],
+      "finding": "Function OS can execute specified analysis steps and retain traces, but PASS does not prove empirical truth, causality, or ethical rightness.",
+      "gap": "No causal fabric objects are specified for Function OS execution."
+    },
+    {
+      "asset_id": "charter-gate",
+      "path": "docs/governance/life-community-value-charter.md",
+      "coverage": ["beneficiaries", "risk bearers", "silent subjects", "irreversibility", "rollback"],
+      "finding": "Charter Gate provides normative boundaries for action and publication.",
+      "gap": "Normative burden distribution needs a causal projection that remains subordinate to evidence and claim ceilings."
+    }
+  ],
+  "coverage_matrix": {
+    "events": "partial",
+    "states": "partial",
+    "relation_classes": "partial",
+    "propagation_channels": "missing",
+    "scale_domains": "missing",
+    "temporal_dynamics": "partial",
+    "feedback": "partial",
+    "entropy_and_irreversibility": "partial",
+    "cones_and_horizons": "partial",
+    "termination_and_residue": "partial",
+    "projection_and_diff": "partial via Atlas only",
+    "unified_schema": "missing",
+    "deterministic_validator": "missing"
+  },
+  "historical_risks": [
+    "C(x,y) could be misread as established causality rather than mechanism hypothesis.",
+    "Path existence, map adjacency, dependency edges, temporal order, analogy, or structural similarity could be over-promoted as actual causal proof.",
+    "Entropy-arrow language could be collapsed into causal-arrow language.",
+    "Light-cone reachability could be over-read as actual mechanism.",
+    "Quantum entanglement language could be misprojected into social or AI systems."
+  ],
+  "unmapped_residue_policy": [
+    "Unresolved quantum/classical transition questions remain residue.",
+    "Missing mediator chains remain residue.",
+    "Conflicting causal models remain residue.",
+    "Narrative-only associations remain residue.",
+    "Scale transitions without bridge evidence remain residue."
+  ]
+}
