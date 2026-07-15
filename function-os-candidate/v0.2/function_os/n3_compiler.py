@@ -103,26 +103,3 @@ class N3SymbolicCompiler:
         }
 
 
-# Smoke test
-if __name__ == '__main__':
-    import sys, os
-    sys.path.insert(0, os.path.dirname(__file__))
-    from n1_functionspec_parser import N1FunctionSpecParser
-    from n2_representation import N2RepresentationEncoder, N2RepresentationDecoder
-
-    parser, encoder = N1FunctionSpecParser(), N2RepresentationEncoder()
-    spec = parser.parse(json.dumps({
-        "function_id":"FN-20260715-0001","spec_version":"1.0.0","name":"add","domain":"symbolic",
-        "inputs":{"x":"integer","y":"integer"},"outputs":{"result":"integer"},
-        "preconditions":[{"expression":"x >= 0","message":"x"}],
-        "postconditions":[{"expression":"result == x + y","message":"r"}],
-        "effects_declared":["pure"],"created_at":"2026-07-15T12:00:00Z"
-    }))
-    rep = encoder.encode(spec)
-
-    compiler = N3SymbolicCompiler()
-    compiled = compiler.compile(spec, rep)
-    print("Status:", compiled['status'])
-    print("Errors:", len(compiled['errors']))
-    print("Payload entrypoint:", compiled['payload']['entrypoint'])
-    print("N3: ALL OK")
