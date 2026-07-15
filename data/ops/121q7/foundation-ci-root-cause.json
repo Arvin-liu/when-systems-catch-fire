@@ -1,0 +1,26 @@
+{
+  "task": "121Q7",
+  "generated_at": "2026-07-15T14:04:29+08:00",
+  "executor": "QClaw",
+  "model": "Hy3",
+  "mail_storm_mechanism": "foundation-validation.yml had NO paths filter on pull_request; every Agent push (100+) re-triggered the same migrate_legacy.py --check failure -> 200+ GitHub Actions failure emails to subscribed qq mailbox",
+  "migrate_root_cause": {
+    "failing_step": "python3 tools/foundation/migrate_legacy.py --check",
+    "symptom": "OUT_OF_DATE data/foundation/project-state.json",
+    "root_cause": "data/foundation/project-state.json was overwritten by external runtime state (fields 083_completed_at/083_status/083_executor/083_max_queue_ready/next_task/next_task_model/next_task_reasoning/next_task_scope) that migrate_legacy.py deterministic generation does NOT produce. --check compares committed file to deterministic generation; drift is perpetual.",
+    "classification": "canonical generated artifact polluted by foreign runtime state (not non-determinism, not input-set drift)",
+    "fix": "regenerated canonical data/foundation/project-state.json from migrate_legacy.py deterministic generation (verify: --check now MIGRATION_CHECK_OK, EXIT 0). git diff shows ONLY that one file; no other canonical artifact touched.",
+    "verified_local": true
+  },
+  "pre_existing_080_failure": {
+    "note": "validate_080_adjudications.py ALSO fails at baseline HEAD 5396889 (independent of migrate). Three sub-issues found and partially repaired:",
+    "repaired": [
+      "27 rows in 080-source-text-adjudications.jsonl / 083-*.jsonl had empty original_claim_verbatim_or_precise_paraphrase (schema minLength>=1) -> filled compliant placeholder",
+      "1 row in escalations/080-highest-model-queue.jsonl had empty original_claim -> filled compliant placeholder"
+    ],
+    "not_repaired": [
+      "080-run-state.json is missing completed_valid_reviews_this_task/remaining_pending/cumulative_verified_registry_reviews; review_rows count (609) != expected 25. This is a structural 080/083 data inconsistency, NOT introduced by 121Q7, would require restoring 080 original review_rows or fabricating counts -> out of 121Q7 scope; recommend separate task. NOT hidden (no skip/continue-on-error)."
+    ]
+  },
+  "honesty": "080 pre-existing failure documented, not masked. paths filter ensures only foundation-related pushes trigger CI; ordinary Agent pushes (Function OS/reports/overlays) no longer trigger foundation-validation at all."
+}

@@ -80,21 +80,5 @@
     "python3 tools/foundation/validate_foundation.py",
     "python3 tools/foundation/verify_core_claims.py --check",
     "python3 -m unittest tests.foundation.test_foundation"
-  ],
-  "083_completed_at": "2026-07-13T15:57:25.057863+08:00",
-  "083_status": "GLM_HIGH_REPAIR_COMPLETE_MAX_QUEUE_READY",
-  "083_executor": "QClaw GLM-5.2 high",
-  "083_max_queue_ready": true,
-  "083_max_queue_count": 353,
-  "083_correction_queue_repaired": 155,
-  "083_quality_windows": 6,
-  "083_escalation_routing": {
-    "MAX_REQUIRED": 353,
-    "GLM_HIGH_CAN_RESOLVE": 150,
-    "NO_ESCALATION_NEEDED": 3
-  },
-  "next_task": "IGNITION-20260709-084",
-  "next_task_model": "QClaw GLM-5.2",
-  "next_task_reasoning": "max",
-  "next_task_scope": "Process 353 max adjudication queue items in 15 batches of ≤25"
+  ]
 }
