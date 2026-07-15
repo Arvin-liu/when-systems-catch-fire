@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "function-os/v0.2/schemas/n1-functionspec-schema.json",
+  "title": "N1 FunctionSpec Schema v0.2",
+  "description": "Canonical symbolic FunctionSpec — formal function specification with preconditions, postconditions, and structured failure semantics",
+  "type": "object",
+  "required": [
+    "function_id",
+    "spec_version",
+    "name",
+    "domain",
+    "inputs",
+    "outputs",
+    "preconditions",
+    "postconditions",
+    "effects_declared",
+    "created_at"
+  ],
+  "properties": {
+    "function_id": {
+      "type": "string",
+      "pattern": "^FN-\\d{8}-\\d{4}$",
+      "description": "Unique function identifier: FN-YYYYMMDD-NNNN"
+    },
+    "spec_version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+      "description": "Semantic version of this spec (MAJOR.MINOR.PATCH)"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "description": "Human-readable function name"
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "symbolic"
+      ],
+      "description": "Function domain — v0.2 only supports 'symbolic'"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 1024,
+      "description": "Optional natural-language description"
+    },
+    "inputs": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Input variable names → type strings"
+    },
+    "outputs": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "Output variable names → type strings"
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "expression",
+          "message"
+        ],
+        "properties": {
+          "expression": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "description": "Preconditions that must be true before execution"
+    },
+    "postconditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "expression",
+          "message"
+        ],
+        "properties": {
+          "expression": {
+            "type": "string",
+            "minLength": 1
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "description": "Postconditions that must be true after execution"
+    },
+    "effects_declared": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "description": "Declared effects: 'pure', 'stateful', 'io', etc."
+    },
+    "uncertainty": {
+      "type": "object",
+      "properties": {
+        "model": {
+          "type": "string",
+          "enum": [
+            "deterministic",
+            "unknown"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "description": "Uncertainty declaration (deterministic-only in v0.2)"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 creation timestamp"
+    }
+  },
+  "failure_semantics": {
+    "precondition_failure": "Execution blocked; input does not satisfy preconditions",
+    "postcondition_failure": "Output violates declared postconditions; bug or spec error",
+    "type_mismatch": "Input/output types do not match schema",
+    "undefined_symbol": "Expression references undeclared variable"
+  },
+  "domain_constraints": {
+    "v0.2_only": "symbolic",
+    "excluded": [
+      "neural_weight",
+      "hybrid",
+      "probabilistic"
+    ],
+    "excluded_gaps": [
+      "GAP-016 (weight-space)",
+      "GAP-017 (cross-representation)",
+      "GAP-020 (probabilistic)"
+    ]
+  }
+}
