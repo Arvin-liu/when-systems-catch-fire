@@ -1,0 +1,32 @@
+{
+  "schema": "ignition.reality.121q16.run_state.v1",
+  "task": "IGNITION-20260715-121Q16",
+  "branch": "reality/121q16-sustainability-signal-pilot-20260715",
+  "base_head": "94119ac126b3d06c3ef3f0b41d7c50e7092a755c",
+  "draft_pr": null,
+  "status": "STEP_000_COMPLETE",
+  "steps": [
+    {
+      "step": "000",
+      "name": "baseline, action collapse, and experiment boundary",
+      "status": "complete",
+      "commit": null,
+      "pushed": false
+    },
+    {
+      "step": "001",
+      "name": "public support and participation interface",
+      "status": "pending",
+      "commit": null,
+      "pushed": false
+    },
+    {
+      "step": "002",
+      "name": "validator, observation plan, report, CI, and receipt",
+      "status": "pending",
+      "commit": null,
+      "pushed": false
+    }
+  ],
+  "allowed_final_status": "READY_AS_SUSTAINABILITY_SIGNAL_INTERFACE_CANDIDATE"
+}

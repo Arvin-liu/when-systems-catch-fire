@@ -1,0 +1,39 @@
+{
+  "schema": "ignition.reality.121q16.decision_collapse.v1",
+  "id": "DCR-121Q16-SUSTAINABILITY-SIGNAL",
+  "threshold_used": "ACTION",
+  "collapse_trigger": "Q14 atlas left real sponsorship or commercial-user willingness as unmapped residue; user authorized a bounded public-interface pilot.",
+  "selected_action": "Build a public, auditable sustainability and participation signal interface without external outreach before GPT review.",
+  "selected_action_not_truth_claim": true,
+  "candidates": [
+    {
+      "id": "continue_internal_architecture_iteration",
+      "description": "Continue building internal architecture or map controls.",
+      "reason_not_selected": "Would add internal structure while the current map residue asks for real external signal readiness."
+    },
+    {
+      "id": "external_theory_review_pilot",
+      "description": "Create an interface centered on external theoretical review.",
+      "reason_not_selected": "Valuable, but less directly tied to maintainer sustainability and immediate resource continuity."
+    },
+    {
+      "id": "maintainer_sustainability_external_signal_pilot",
+      "description": "Create SUPPORT, participation docs, and three issue forms for review, noncommercial use, and sponsorship/commercial-license inquiry.",
+      "reason_selected": "Low cost, reversible, directly addresses Q14 unmapped residue, and can produce real future signals without claiming they already exist."
+    }
+  ],
+  "affordable_loss": {
+    "max_project_commits": 3,
+    "work_scope": "bounded docs, issue forms, validator, observation plan, and reports",
+    "new_paid_services": "none",
+    "private_data_exposure": "none",
+    "public_outreach_before_review": "none",
+    "rollback": "close or revise Draft PR before merge if GPT review rejects the interface"
+  },
+  "dissent_and_risks": [
+    "A public support page could be misread as pressure unless it explicitly rejects emotional coercion.",
+    "Sponsorship inquiry could be misread as governance purchase unless anti-capture terms are explicit.",
+    "Issue forms may create maintainer load; the 30-day observation plan must track burden."
+  ],
+  "claim_boundary": "Selecting this action only means the action threshold is met; it does not prove external recognition, funding willingness, or real-world usefulness."
+}
