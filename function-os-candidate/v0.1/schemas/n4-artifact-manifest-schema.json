@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Function OS v0.1 — N4 Artifact Manifest Schema",
+  "version": "0.1",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "spec_hash",
+    "compiler_version",
+    "format",
+    "content_hash",
+    "created_at"
+  ],
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^ART-FN-\\d{8}-\\d{4}-\\d+\\.\\d+\\.\\d+$"
+    },
+    "spec_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "compiler_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "format": {
+      "type": "string",
+      "enum": [
+        "symbolic_expression",
+        "json_artifact"
+      ]
+    },
+    "entrypoint": {
+      "type": "string"
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "function_id": {
+            "type": "string"
+          },
+          "min_spec_version": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "pure",
+          "arithmetic",
+          "comparison",
+          "boolean",
+          "conditional"
+        ]
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "provenance_id": {
+          "type": "string"
+        },
+        "spec_created_at": {
+          "type": "string"
+        },
+        "compiled_at": {
+          "type": "string"
+        },
+        "compiler_version": {
+          "type": "string"
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+    },
+    "artifact_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

@@ -4,3 +4,4 @@
 {"step": 3, "action": "ID_VERSION_HASH_SPEC", "result": "ID formats, semver, SHA-256, canonicalization, immutability rules defined", "timestamp": "2026-07-15T02:08:45Z"}
 {"step": 4, "action": "N9_REGISTRY_RECORD_SCHEMA", "result": "JSON Schema: 11 required fields, versioned record with provenance, supersedes chain, content hash", "timestamp": "2026-07-15T02:09:16Z"}
 {"step": 8, "action": "N1_FUNCTIONSPEC_SCHEMA", "result": "Symbolic FunctionSpec schema: 8 required fields, 13 type options, safe expressions only", "timestamp": "2026-07-15T02:25:18Z"}
+{"step": 12, "action": "N4_ARTIFACT_MANIFEST_SCHEMA", "result": "6 required fields, 2 formats", "timestamp": "2026-07-15T03:20:00Z"}
