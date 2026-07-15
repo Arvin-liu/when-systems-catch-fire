@@ -1,0 +1,1 @@
+{"step":0,"description":"Baseline truth: PR#42 OPEN/DRAFT/MERGEABLE/10 commits/HEAD 33f453a; function-os-ci pytest FAIL (command not found); foundation inherited FAIL. New isolation branch + control files.","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"33f453a0fd8aec355000ccf3253544858cf460c3"}
