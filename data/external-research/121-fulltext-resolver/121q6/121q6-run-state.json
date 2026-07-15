@@ -14,10 +14,12 @@
   "base_commit_count": 17,
   "current_branch": "records/ignition-121q6-hy3-v021-hardening-reproducibility-20260715",
   "target_steps": 25,
-  "current_step": 18,
-  "next_step": 19,
-  "commits_from_base": 18,
+  "current_step": 19,
+  "next_step": null,
+  "commits_from_base": 19,
   "status": "IN_PROGRESS",
   "next_phase": "AWAITING_GPT_REVIEW",
-  "last_updated": "2026-07-15T12:22:35+08:00"
+  "last_updated": "${NOW}",
+  "final_verdict": "PARTIAL_ACCEPTED_AS_HARDENED_CANDIDATE",
+  "model_identity": "VERIFIED_HY3"
 }
