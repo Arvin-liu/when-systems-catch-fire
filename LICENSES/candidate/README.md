@@ -1,8 +1,12 @@
-# Candidate License Set
+# Candidate License Notes
 
-These files describe candidate future licensing only. They do not replace the root `LICENSE`, do not revoke existing MIT grants, and are not legal advice.
+These files are retained as historical candidate notes from 121Q8. The active license scope for the current distribution is controlled by the root `LICENSE` and `LICENSES/README.md`.
 
-- `BUSL-1.1-parameters.md`: candidate parameters for future core executable software.
-- `AGPL-3.0-or-later.md`: candidate change-license target after the BUSL change date.
-- `CC-BY-NC-SA-4.0.md`: candidate for original research documents, reports, and curated data.
-- `INTEROPERABILITY-LAYER.md`: candidate options for value charter, public interfaces, and schema.
+Adopted in 121Q9:
+
+- BUSL-1.1 for original core executable software, with AGPL-3.0-or-later as the Change License.
+- CC BY-NC-SA 4.0 for original documentation, reports, and copyrightable curated content.
+- CC BY-SA 4.0 for the life-community value charter and general governance principles.
+- Apache-2.0 for public interfaces and interoperability schemas.
+
+Historical MIT rights remain preserved in `LICENSES/legacy/MIT-pre-121Q9.md`.

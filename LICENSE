@@ -1,21 +1,31 @@
-MIT License
+When Systems Catch Fire / 点火 - Layered License Notice
 
-Copyright (c) 2026 Zhiyuan
+Effective for this distribution version and later modifications that include this notice, this repository uses a layered licensing model. This notice replaces the former single MIT repository-wide notice for current and future distributions only. It does not revoke MIT rights already granted for earlier MIT-licensed versions, earlier commits, old copies, or existing forks.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Core executable software
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Original core executable software, including runtime tools, validators, executors, Function OS implementations, scripts under `tools/`, workflow implementation code, and other software files not otherwise marked, is licensed under the Business Source License 1.1 as parameterized in `LICENSES/active/BUSL-1.1.md`.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This material is source-available before its Change Date. It must not be described as OSI open source during the BUSL period. On the Change Date for each covered version, it changes to AGPL-3.0-or-later.
+
+2. Original documentation, reports, and copyrightable curated content
+
+Original prose documentation, reports, narrative explanations, and copyrightable curated content are licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International, unless a file or directory says otherwise. See `LICENSES/active/CC-BY-NC-SA-4.0.md`.
+
+3. Value charter and general governance principles
+
+The life-community value charter and general governance principle texts are licensed under Creative Commons Attribution-ShareAlike 4.0 International, unless a file says otherwise. See `LICENSES/active/CC-BY-SA-4.0.md`.
+
+4. Public interfaces and interoperability schemas
+
+Public interface specifications, interoperability schemas, and files explicitly marked as interface/schema assets are licensed under Apache License 2.0. See `LICENSES/active/APACHE-2.0.md`. This grant does not expand to core executable software merely because that software reads or writes a schema.
+
+5. Third-party material and unclear rights
+
+Third-party materials, factual statements, quotations, paper metadata, references, imported exports, and unclear-rights content are not relicensed by inclusion in this repository. Their original rights status remains in force unless separately stated.
+
+6. Historical MIT boundary
+
+The complete pre-121Q9 MIT text is preserved at `LICENSES/legacy/MIT-pre-121Q9.md`. Anyone who obtained earlier MIT-licensed versions may continue to use those versions under MIT, including existing forks. New versions and new modifications distributed with this notice are governed by the layered licenses above.
+
+This licensing notice is not legal advice. Commercial production use beyond the BUSL Additional Use Grant requires a separate commercial license or written reciprocal agreement from the rights holder.
