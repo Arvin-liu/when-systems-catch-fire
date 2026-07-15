@@ -2,7 +2,7 @@
 
 点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型。它把项目现状、生命共同体价值宪章、Foundation 注册表、Function OS、操作控制 overlay、地图集与现实反馈环放在同一个可审计仓库里；这个说法描述当前提交下已经长成的状态，不是永久定位、最终身份或不可改变的项目本质。
 
-**首要入口：** [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
+**首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 
 ## 项目现状
 
