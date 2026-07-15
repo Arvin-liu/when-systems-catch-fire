@@ -1,0 +1,28 @@
+{
+  "step": "004",
+  "items_processed": [
+    {
+      "asset_id": "IGN-ASSET-001",
+      "draft_function_id": "DRAFT-IGN-ASSET-001",
+      "n1_rejected_draft": true,
+      "legalized_function_id": "FN-20260715-9001",
+      "spec_hash": "66cf9e5ec83464ae1e1f82a191e03cc8c626bf4c9ce3756f870b05ed82fb7804",
+      "artifact_hash": "36e7b3f69c49603911e213eb9551f7d4f39deea28c6571413aaa6af65c4fab6a",
+      "n5_status": "OK",
+      "manual_review_required": true
+    },
+    {
+      "asset_id": "IGN-ASSET-002",
+      "draft_function_id": "DRAFT-IGN-ASSET-002",
+      "n1_rejected_draft": true,
+      "legalized_function_id": "FN-20260715-9001",
+      "spec_hash": "66cf9e5ec83464ae1e1f82a191e03cc8c626bf4c9ce3756f870b05ed82fb7804",
+      "artifact_hash": "36e7b3f69c49603911e213eb9551f7d4f39deea28c6571413aaa6af65c4fab6a",
+      "n5_status": "OK",
+      "manual_review_required": true
+    }
+  ],
+  "note": "drafts only; N5 skipped (empty body); manual_review_required",
+  "executor": "QClaw",
+  "model": "Hy3"
+}
