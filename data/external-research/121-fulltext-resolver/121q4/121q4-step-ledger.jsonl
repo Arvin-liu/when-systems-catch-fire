@@ -8,3 +8,5 @@
 {"step": 20, "action": "N8_TRACE_ARCHIVER", "result": "JSON trace serializer/loader/summary", "timestamp": "2026-07-15T03:40:00Z"}
 {"step": 21, "action": "V01_MANIFEST", "result": "13-node manifest, 4 schemas, 2 test suites, constraints", "timestamp": "2026-07-15T03:40:00Z"}
 {"step": 22, "action": "BATCH_COMMIT", "result": "Steps 020-022: N8 archiver, v0.1 manifest, batch state update", "timestamp": "2026-07-15T03:40:00Z"}
+{"step": 23, "action": "CONSISTENCY_SEAL", "result": "23/23 checks PASS, all nodes/schemas/contracts/tests present", "timestamp": "2026-07-15T03:50:00Z"}
+{"step": 24, "action": "FINAL_REPORT", "result": "Full report + seal + run-state completion", "timestamp": "2026-07-15T03:50:00Z"}
