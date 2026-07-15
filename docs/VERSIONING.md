@@ -40,3 +40,6 @@
 ## 兼容策略
 
 新注册表合并后承担对象、命题、论证、来源、证据、证明和验证状态权威。旧两张表继续作为 legacy source / compatibility view，保留原 ID 和正文，不独立生长。计数不得手写，必须来自可复算的 project-state 和 migration-summary。
+## 许可边界
+
+当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

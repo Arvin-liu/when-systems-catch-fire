@@ -13,6 +13,8 @@
 - [docs/PROJECT-ARCHITECTURE.md](./docs/PROJECT-ARCHITECTURE.md) — 稳定兼容入口；冲突时以根 ARCHITECTURE.md 为准
 - [docs/VERSIONING.md](./docs/VERSIONING.md) — 版本阶段与升级规范
 - [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) — 规范性价值前提
+- [许可作用域](./LICENSES/README.md) — 当前分层许可权威
+- [商业许可](./COMMERCIAL-LICENSING.md) 与 [可持续性政策](./SUSTAINABILITY.md)
 
 ## 七层正式架构
 

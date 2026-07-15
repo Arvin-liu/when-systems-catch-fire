@@ -1,6 +1,4 @@
-# Sustainability Policy Candidate
-
-Status: candidate policy. This document does not create a payment account, commercial license, or legal obligation.
+# Sustainability Policy
 
 ## Why Sustainability Matters
 
@@ -14,10 +12,10 @@ The maintainer is part of the life community the project claims to protect. Publ
 - Independent review, red-team work, legal/accounting review, and governance support.
 - Maintainer time, recovery time, attention, documentation, release work, and basic living support.
 
-## Candidate Support Paths
+## Support Paths
 
-- Public-benefit, education, personal learning, and independent non-commercial research: low-friction access and possible fee waiver.
-- Commercial evaluation: allowed under the candidate Additional Use Grant where marked, before production use.
+- Public-benefit, education, personal learning, and independent non-commercial research: low-friction access and possible fee waiver within the BUSL Additional Use Grant.
+- Commercial evaluation: allowed where it does not create commercial production advantage.
 - Commercial production deployment: commercial license or written reciprocal agreement.
 - Infrastructure sponsorship: may support compute, AI quotas, review, or documentation without buying conclusions.
 
@@ -25,6 +23,6 @@ The maintainer is part of the life community the project claims to protect. Publ
 
 Support does not buy factual conclusions, rankings, evidence grades, merge rights, governance vetoes, privacy access, roadmap control, suppression of criticism, or exemption from red-team review. Any material sponsorship or commercial relationship should be disclosed near the work it affects.
 
-## Transparency Candidate
+## Transparency
 
 Future budgets should separate maintenance costs, review costs, infrastructure costs, and living-support needs. The project should prefer transparent ranges and plain-language explanations over pressure tactics or hidden dependency.

@@ -46,3 +46,6 @@ docs/claim_levels.md 中的历史 L0-L5 是 legacy claim_level / assertion_grade
 - 数值采样、符号化简和有限模型都有后端范围。
 - 缺字段、缺来源、不可形式化和真实反例是不同状态。
 - 解释与出版内容必须回指下层证据和验证。
+## 许可边界
+
+当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

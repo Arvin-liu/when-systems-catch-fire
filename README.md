@@ -6,9 +6,9 @@
 
 If you prefer English first: this repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system. It is not a unified mathematical theory, physical theory or universal prover.
 
-本项目采用 MIT License。详情见 [LICENSE](LICENSE)。
+本项目当前采用分层许可：核心可执行软件为 BUSL-1.1（source-available，2030-07-15 起转换为 AGPL-3.0-or-later），原创文档/报告/可版权化策展内容为 CC BY-NC-SA 4.0，价值宪章与一般治理原则为 CC BY-SA 4.0，公开接口与互操作 schema 为 Apache-2.0。详情见 [LICENSE](LICENSE) 与 [LICENSES/README.md](./LICENSES/README.md)。
 
-未来版本的分层许可、商业互惠和维护者可持续性方案仍处于候选阶段，尚未替换根 LICENSE。商业生产使用和项目支持入口见 [COMMERCIAL-LICENSING.md](./COMMERCIAL-LICENSING.md) 与 [SUSTAINABILITY.md](./SUSTAINABILITY.md)。
+历史 MIT 版本、旧提交、旧副本和既有 fork 的 MIT 权利继续有效，不被追溯撤销。商业生产使用和项目支持入口见 [COMMERCIAL-LICENSING.md](./COMMERCIAL-LICENSING.md) 与 [SUSTAINABILITY.md](./SUSTAINABILITY.md)。
 
 ## 先从哪里进入
 
@@ -92,6 +92,8 @@ data/foundation/ 下的对象、命题、论证、来源、证据、映射、证
 - [项目架构兼容入口](./docs/PROJECT-ARCHITECTURE.md)
 - [Get 笔记协作流程](./docs/GET-BRAIN-WORKFLOW.md)
 - [版本规范](./docs/VERSIONING.md)
+- [许可作用域](./LICENSES/README.md)
+- [商业许可](./COMMERCIAL-LICENSING.md) 与 [可持续性政策](./SUSTAINABILITY.md)
 - [断言等级说明](./docs/claim_levels.md)
 - [证据机制说明](./docs/evidence_regime_library.md)
 - [反证模板](./docs/falsifiability/README.md)

@@ -25,3 +25,6 @@
 ## 最小验证
 
 执行 tools/foundation 下的 migration check、strict validator、benchmarks 和 tests/foundation；任何失败都保留为 blocker，不得用散文覆盖。
+## 许可边界
+
+当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。
