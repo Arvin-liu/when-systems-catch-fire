@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "function-os/v0.2/schemas/n6-trace-schema.json",
+  "type": "object",
+  "required": [
+    "trace_id",
+    "artifact_id",
+    "spec_id",
+    "inputs",
+    "outputs",
+    "events",
+    "intermediate_states",
+    "timing_ms",
+    "effects",
+    "errors"
+  ],
+  "properties": {
+    "trace_id": {
+      "type": "string"
+    },
+    "artifact_id": {
+      "type": "string"
+    },
+    "spec_id": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "object"
+    },
+    "outputs": {
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "OK",
+        "FAILED",
+        "ERROR"
+      ]
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "intermediate_states": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "timing_ms": {
+      "type": "number"
+    },
+    "effects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

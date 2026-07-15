@@ -3,7 +3,7 @@
 v0.2: adapted, detects undefined refs, unsafe expressions, version 0.0.0.
 """
 import re
-from .n1_safe_expression_dsl import SafeExpressionDSL
+from function_os.n1_safe_expression_dsl import SafeExpressionDSL
 
 SEMVER_RE = re.compile(r'^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$')
 

@@ -5,7 +5,7 @@ Flow: precondition_check → execute → postcondition_check → result.
 """
 import hashlib, json, time
 from typing import Dict, Any
-from .n1_safe_expression_dsl import SafeExpressionDSL
+from function_os.n1_safe_expression_dsl import SafeExpressionDSL
 
 class N5Interpreter:
     VERSION = "0.2.0"

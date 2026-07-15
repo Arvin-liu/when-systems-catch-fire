@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "function-os/v0.2/schemas/n7-validator-schema.json",
+  "type": "object",
+  "required": [
+    "validation_id",
+    "artifact_id",
+    "status",
+    "checks",
+    "feedback"
+  ],
+  "properties": {
+    "validation_id": {
+      "type": "string",
+      "pattern": "^VAL-FN-\\d{8}-\\d{4}-\\d+$"
+    },
+    "artifact_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "WARNING"
+      ]
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "feedback": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}
