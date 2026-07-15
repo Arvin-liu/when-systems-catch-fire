@@ -16,10 +16,12 @@
   "target_steps": 25,
   "current_step": 19,
   "next_step": null,
-  "commits_from_base": 19,
+  "commits_from_base": 21,
   "status": "IN_PROGRESS",
   "next_phase": "AWAITING_GPT_REVIEW",
   "last_updated": "${NOW}",
   "final_verdict": "PARTIAL_ACCEPTED_AS_HARDENED_CANDIDATE",
-  "model_identity": "VERIFIED_HY3"
+  "model_identity": "VERIFIED_HY3",
+  "steps": 20,
+  "note_commit_count": "20 step objects (000-019); 21 commits because Step 018 retained 2 commits (buggy 9869e31 + fixed 78fd8ec) per no-amend rule"
 }

@@ -23,11 +23,23 @@
   ],
   "test_suite": {
     "total_tests": 155,
-    "modules_covered": ["n1","n2","n3","n4","n5","n6","n7","n8","n9"],
+    "modules_covered": [
+      "n1",
+      "n2",
+      "n3",
+      "n4",
+      "n5",
+      "n6",
+      "n7",
+      "n8",
+      "n9"
+    ],
     "integration": "full-chain N1->N9 + N8 real control-plane routing",
     "reproducibility": "151-pass verified under unittest AND pytest from TWO CWDs (repo root + /tmp)"
   },
   "verdict": "PARTIAL_ACCEPTED_AS_HARDENED_CANDIDATE",
   "notes": "v0.2.1-candidate is now reproducible, path-independent, and model-identity-verified. Canonical node realignment (121Q5) confirmed intact. Excludes weight-space/probabilistic semantics per protocol. Ready for GPT final acceptance.",
-  "generated_at": "2026-07-15T12:23:08+08:00"
+  "generated_at": "2026-07-15T12:23:08+08:00",
+  "commit_count_honest": "20 step objects; 21 commits (Step 018 = 2 commits, no-amend rule)",
+  "final_head": "51b03ebf2d3e033df4fcbba05e6ff26909cc8293"
 }
