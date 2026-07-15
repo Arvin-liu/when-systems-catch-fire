@@ -1,0 +1,23 @@
+{
+  "task": "121Q22",
+  "status": "121Q22_READY_AS_PROBABILISTIC_SYSTEM_DYNAMICS_CANDIDATE",
+  "as_of_commit_before_step_003": "71c7971f",
+  "claim_ceiling": "Derived operational extension for probability semantics and system dynamics; not a truth layer or causal proof.",
+  "validators": [
+    "tools/validate_multiscale_causal_fabric.py",
+    "tools/validate_probabilistic_system_dynamics.py"
+  ],
+  "tests": [
+    "tests/test_multiscale_causal_fabric.py",
+    "tests/test_probabilistic_system_dynamics.py"
+  ],
+  "boundaries": {
+    "conditional_vs_intervention": "P(Y|X) remains separate from P(Y|do(X)).",
+    "probability_vs_causality": "High probability is not causal strength or proof.",
+    "posterior_vs_randomness": "Posterior belief is not physical randomness.",
+    "assumption_defaults": "Markov, stationary, ergodic, linear, Gaussian, and closed-system assumptions must be declared.",
+    "entropy": "Information entropy and thermodynamic entropy are not merged.",
+    "system_boundary": "Boundary choices are observer/question-conditioned model choices."
+  },
+  "frozen_assets_modified": false
+}

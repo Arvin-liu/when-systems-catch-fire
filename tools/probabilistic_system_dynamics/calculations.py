@@ -45,3 +45,13 @@ def system_boundary_diff(before: dict, after: dict) -> dict:
         "claim_ceiling": "Boundary diff records modeling changes only, not a natural system partition."
     }
 
+
+def probabilistic_system_diff(before: dict, after: dict) -> dict:
+    return {
+        "before": before.get("psd_id"),
+        "after": after.get("psd_id"),
+        "boundary": system_boundary_diff(before, after),
+        "transition_law_changed": before.get("transition_law") != after.get("transition_law"),
+        "probability_semantics_changed": before.get("probability_semantics") != after.get("probability_semantics"),
+        "claim_ceiling": "ProbabilisticSystemDiff records representation changes only; it is not evidence that the world changed."
+    }
