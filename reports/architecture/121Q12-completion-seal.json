@@ -1,0 +1,15 @@
+{
+  "schema": "ignition.architecture.121q12.completion_seal.v1",
+  "status": "READY_FOR_GPT_VERIFICATION",
+  "draft_pr": 47,
+  "base_main_head": "8189dde91d0adbb7957c8aa642bc76d14afe6534",
+  "macro_steps": 5,
+  "truth_layer_added": false,
+  "l0_l6_changed": false,
+  "psi0_modified": false,
+  "project_state_085_modified": false,
+  "legacy_tables_modified": false,
+  "historical_evidence_cards_modified": false,
+  "validator": "tools/validate_effectual_mechanism_overlay.py",
+  "final_claim_ceiling": "schema_validated_pending_remote_review"
+}

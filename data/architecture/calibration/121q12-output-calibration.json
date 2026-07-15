@@ -1,0 +1,75 @@
+{
+  "schema": "ignition.architecture.calibration_record.v1",
+  "id": "CAL-121Q12-OUTPUT",
+  "claim": "121Q12 creates an operation overlay for effectual action and mechanism adjudication without changing L0-L6 truth relationships.",
+  "stance_blind_review": {
+    "reviewer_input": [
+      "artifact",
+      "claim",
+      "evidence",
+      "mechanism_map",
+      "failure_conditions"
+    ],
+    "separated_context": [
+      "maintainer enthusiasm or preferred conclusion",
+      "conversation-level encouragement",
+      "nonessential emotional framing",
+      "future sponsorship or commercial expectations"
+    ],
+    "not_deception": true
+  },
+  "calibration_sources": {
+    "external_source": [
+      "Get note source concepts referenced by the 1111 command, not copied into this repository as proof"
+    ],
+    "repository_artifact": [
+      "docs/architecture/effectual-action-plane.md",
+      "docs/architecture/mechanism-adjudication-plane.md",
+      "schemas/architecture/effectual-action.schema.json",
+      "schemas/architecture/mechanism-map.schema.json",
+      "data/architecture/pilots/*.json"
+    ],
+    "executable_test_or_CI": [
+      "tools/validate_effectual_mechanism_overlay.py",
+      "Foundation validation",
+      "Function OS CI"
+    ],
+    "real_world_response": [
+      "PR #47 remote checks and reviewer feedback are pending at creation time"
+    ],
+    "human_judgment": [
+      "Maintainer authorized 121Q12 as a bounded five-step architecture overlay"
+    ],
+    "independent_model_or_review": [
+      "GPT verification remains pending after Draft PR completion"
+    ]
+  },
+  "positive_claim_bindings": [
+    {
+      "word": "complete",
+      "object": "121Q12 local overlay artifact set",
+      "criterion": "all five macro-step artifacts exist and validator passes",
+      "version": "Draft PR #47 head after Step 004",
+      "evidence": "tools/validate_effectual_mechanism_overlay.py",
+      "boundary": "does not mean merged, causally proven, or universally correct"
+    },
+    {
+      "word": "verified",
+      "object": "main prerequisite baseline",
+      "criterion": "PR #46 merged, main CI success, current-state tag exists, 1111 Q11 receipt exists",
+      "version": "main 8189dde91d0adbb7957c8aa642bc76d14afe6534",
+      "evidence": "121Q12 baseline JSON",
+      "boundary": "only verifies startup conditions, not 121Q12 final correctness"
+    },
+    {
+      "word": "green",
+      "object": "remote CI checks",
+      "criterion": "GitHub Actions conclusion is success",
+      "version": "specific run ID and head SHA",
+      "evidence": "GitHub Actions API or gh run list",
+      "boundary": "CI green does not prove empirical or normative truth"
+    }
+  ],
+  "strongest_residual_countermechanism": "The overlay may improve claim discipline in repository artifacts without yet changing real future behavior; real-world calibration depends on later use and external review.",
+  "non_sycophancy_status": "PASS"
+}

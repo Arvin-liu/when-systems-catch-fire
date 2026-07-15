@@ -4,7 +4,7 @@
   "branch": "architecture/121q12-effectual-mechanism-dual-loop-20260715",
   "base_main_head": "8189dde91d0adbb7957c8aa642bc76d14afe6534",
   "draft_pr": 47,
-  "status": "STEP_003_COMPLETE",
+  "status": "READY_FOR_GPT_VERIFICATION",
   "steps": [
     {
       "step": "000",
@@ -31,13 +31,13 @@
       "step": "003",
       "name": "dual-loop integration and historical pilots",
       "status": "complete",
-      "commit": null,
-      "pushed": false
+      "commit": "b9e0571c",
+      "pushed": true
     },
     {
       "step": "004",
       "name": "validator, report, CI, and seal",
-      "status": "pending",
+      "status": "complete",
       "commit": null,
       "pushed": false
     }
