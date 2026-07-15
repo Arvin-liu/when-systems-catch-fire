@@ -153,30 +153,3 @@ class N2RepresentationValidator:
         return issues
 
 
-# Smoke test
-if __name__ == '__main__':
-    import sys, os
-    sys.path.insert(0, os.path.dirname(__file__))
-    from n1_functionspec_parser import N1FunctionSpecParser
-    parser = N1FunctionSpecParser()
-    spec = parser.parse(json.dumps({
-        "function_id":"FN-20260715-0001","spec_version":"1.0.0","name":"add","domain":"symbolic",
-        "inputs":{"x":"integer","y":"integer"},"outputs":{"result":"integer"},
-        "preconditions":[{"expression":"x >= 0","message":"x"}],
-        "postconditions":[{"expression":"result == x + y","message":"r"}],
-        "effects_declared":["pure"],"created_at":"2026-07-15T12:00:00Z"
-    }))
-
-    encoder = N2RepresentationEncoder()
-    rep = encoder.encode(spec)
-    print("Encoded:", rep['representation_id'])
-
-    decoder = N2RepresentationDecoder()
-    decoded = decoder.decode(rep)
-    print("Decoded entrypoint:", decoded['entrypoint'])
-    print("Expressions:", decoded['expressions'])
-
-    validator = N2RepresentationValidator()
-    issues = validator.validate(rep, spec)
-    print("Validation issues:", len(issues))
-    print("N2: ALL OK")
