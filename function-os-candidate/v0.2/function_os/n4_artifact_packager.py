@@ -87,30 +87,3 @@ class N4ArtifactVerifier:
         }
 
 
-# Smoke test
-if __name__ == '__main__':
-    import sys, os
-    sys.path.insert(0, os.path.dirname(__file__))
-    from n1_functionspec_parser import N1FunctionSpecParser
-    from n2_representation import N2RepresentationEncoder
-    from n3_compiler import N3SymbolicCompiler
-
-    parser, encoder, compiler = N1FunctionSpecParser(), N2RepresentationEncoder(), N3SymbolicCompiler()
-    spec = parser.parse(json.dumps({
-        "function_id":"FN-20260715-0001","spec_version":"1.0.0","name":"add","domain":"symbolic",
-        "inputs":{"x":"integer","y":"integer"},"outputs":{"result":"integer"},
-        "preconditions":[{"expression":"x >= 0","message":"x"}],
-        "postconditions":[{"expression":"result == x + y","message":"r"}],
-        "effects_declared":["pure"],"created_at":"2026-07-15T12:00:00Z"
-    }))
-    rep = encoder.encode(spec)
-    compiled = compiler.compile(spec, rep)
-
-    packager = N4ArtifactPackager()
-    artifact = packager.package(compiled, spec, rep)
-    print("Artifact:", artifact['artifact_id'], "hash:", artifact['artifact_hash'][:12])
-
-    verifier = N4ArtifactVerifier()
-    result = verifier.verify(artifact)
-    print("Verification:", "VALID" if result['valid'] else "INVALID")
-    print("N4: ALL OK")
