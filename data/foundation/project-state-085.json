@@ -1,0 +1,56 @@
+{
+  "task_id": "IGNITION-20260709-085",
+  "timestamp": "2026-07-13T16:47:55.334753+08:00",
+  "status": "ARCHITECTURE_STRUCTURE_FROZEN_CLAIM_TRUTH_PROVISIONAL",
+  "084_generation_method": "DETERMINISTIC_RULE_BASED_HEURISTIC_GATE",
+  "084_model_configuration": "QCLAW_GLM_5_2_MAX_SESSION",
+  "084_semantic_acceptance_status": "NOT_INDEPENDENTLY_VERIFIED",
+  "084_truth_status": "PROVISIONAL_CONSERVATIVE_GATE_OUTPUT",
+  "084_dual_pass_status": "SINGLE_PIPELINE_GENERATED_PRIMARY_ADVERSARIAL_RECONCILED",
+  "total_records": 353,
+  "recomputed_from_jsonl_truth": true,
+  "decision_distribution": {
+    "RETAIN_FORMAL_PROPOSITION_UNPROVED": 2,
+    "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE": 184,
+    "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION": 53,
+    "RETAIN_SCOPED_DEFINITION": 113,
+    "DOWNGRADE_TO_STRUCTURAL_ANALOGY": 1
+  },
+  "decision_sum_check": 353,
+  "category_distribution": {
+    "P1_proof_equivalence": 2,
+    "P4_structural_isomorphism": 173,
+    "P5_causal": 53,
+    "P7_precise_cross_domain": 3,
+    "P8_other_strong": 122,
+    "sum_check": 353
+  },
+  "p8_corrected_counts": {
+    "total": 122,
+    "retained_scoped_definition": 113,
+    "downgraded_to_natural_language": 8,
+    "downgraded_to_structural_analogy": 1,
+    "sum_check": 122
+  },
+  "t4_corrected": {
+    "report_said": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+    "jsonl_truth": "RETAIN_FORMAL_PROPOSITION_UNPROVED",
+    "overlay_confirms": "RETAIN_FORMAL_PROPOSITION_UNPROVED"
+  },
+  "t18_corrected": {
+    "original_evidence_status": "EMPIRICAL_EVIDENCE_AVAILABLE",
+    "corrected_evidence_status": "NO_EMPIRICAL_EVIDENCE",
+    "reason": "keyword match on internal '验证' text, no external empirical source"
+  },
+  "proved_count": 0,
+  "refuted_count": 0,
+  "unproved_count": 353,
+  "external_empirical_validated_count": 0,
+  "strict_isomorphism_accepted_count": 0,
+  "causal_identified_count": 0,
+  "primary_adversarial_consistent": 352,
+  "primary_adversarial_inconsistent": 1,
+  "proof_obligations_count": 353,
+  "evidence_obligations_count": 351,
+  "architecture_freeze_status": "ARCHITECTURE_STRUCTURE_FROZEN_CLAIM_TRUTH_PROVISIONAL"
+}

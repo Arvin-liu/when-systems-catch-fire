@@ -1,0 +1,11 @@
+{
+  "step": 17,
+  "source_id": "S120-052",
+  "title": "Design by Contract for R",
+  "previous_status": "FAILED_LEGAL_OA_NOT_FOUND (GitHub repo deleted)",
+  "new_status": "NOT_A_TRADITIONAL_PAPER",
+  "method": "OpenAlex (0 results), web search (GitHub repo uzh/dbc not found)",
+  "success": false,
+  "reason": "Source is/was a GitHub repository (github.com/uzh/dbc), not a traditional academic paper. The repository appears deleted or moved. No associated paper found in any database.",
+  "action": "NOT_A_TRADITIONAL_PAPER \u2014 excluded from semantic review"
+}

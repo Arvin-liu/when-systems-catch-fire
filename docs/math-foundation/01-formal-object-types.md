@@ -1,0 +1,20 @@
+# Formal Object Types
+
+允许的正式对象类型：
+
+- FUNCTION
+- PREDICATE
+- RELATION
+- STATE_TRANSITION
+- CAUSAL_MODEL
+- PROBABILISTIC_MODEL
+- METRIC
+- ORDER
+- OPTIMIZATION_PROBLEM
+- OPERATOR
+- ALGORITHM
+- FORMAL_PROPOSITION
+- NATURAL_LANGUAGE_CANDIDATE
+
+禁止把所有条目统一包装成 `F_ID:X_ID->Y_ID`。
+当条目只是一段机制叙述、边界规则或待证命题时，应降级为更合适的对象类型，而不是强制函数化。

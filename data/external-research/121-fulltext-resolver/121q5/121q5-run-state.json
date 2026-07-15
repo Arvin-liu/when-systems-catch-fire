@@ -1,0 +1,29 @@
+{
+  "task": "IGNITION-20260715-121Q5",
+  "title": "Function OS v0.2 Canonical Node Realignment",
+  "model": "qclaw/pool-deepseek-v4-pro",
+  "status": "COMPLETE",
+  "total_steps": 25,
+  "actual_commits": 16,
+  "last_completed_step": 24,
+  "next_step": null,
+  "next_phase": "AWAITING_GPT_REVIEW",
+  "test_results": "46/46 PASS (33 unit + 13 E2E)",
+  "final_head": "371ef65",
+  "pr_number": 40,
+  "branch": "records/ignition-121q5-v4pro-canonical-function-os-v02-20260715",
+  "canonical_nodes": {
+    "N1": "FunctionSpec",
+    "N2": "Representation",
+    "N3": "Compiler",
+    "N4": "Artifact",
+    "N5": "Interpreter",
+    "N6": "ExecutionTrace",
+    "N7": "Validator",
+    "N8": "ComposerRouter",
+    "N9": "VersionedRegistry"
+  },
+  "v0.1_status": "PROTOTYPE_ONLY — kept as-is",
+  "v0.2_status": "CANDIDATE — 46/46 PASS, 9 nodes, symbolic-only",
+  "last_updated": "2026-07-15T11:27:22+08:00"
+}

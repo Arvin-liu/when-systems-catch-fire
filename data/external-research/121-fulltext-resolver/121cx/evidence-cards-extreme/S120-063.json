@@ -1,0 +1,275 @@
+{
+  "source_id": "S120-063",
+  "canonical_title": "Church: A Language for Generative Models",
+  "authors": [
+    "Noah D. Goodman",
+    "Vikash K. Mansinghka",
+    "Daniel M. Roy",
+    "Keith Bonawitz",
+    "Joshua B. Tenenbaum"
+  ],
+  "year": 2008,
+  "version": "official 10-page UAI 2008 camera-ready paper, byte-identical to the PMLR R6 reissue; cross-checked against the May 31, 2008 minor-corrections version archived as arXiv:1206.3255",
+  "doi_or_identifier": "PMLR:R6:goodman08a",
+  "identifier": "Proceedings of the 24th Conference on Uncertainty in Artificial Intelligence, pp. 220-229; arXiv:1206.3255",
+  "url": "https://proceedings.mlr.press/r6/goodman08a.html",
+  "source_family": 9,
+  "source_family_name": "probabilistic programming and stochastic semantics",
+  "license": "official UAI/PMLR PDFs are openly downloadable but state no per-paper reuse license; the arXiv correction version uses the arXiv non-exclusive distribution license",
+  "sha256": "c3151aa7d5b2a1fc638871b82f6da868909ed7d1ca8843ebbf32aaa9e6969960",
+  "file_size_bytes": 284023,
+  "page_count": 10,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": false,
+    "registry_correction": "the registered URL https://probmods.org/ and SHA-256 71b3bd701e7ede78f9f33632ea6dc78a9de5a0e8dab6a4653c7d0d7682f1f917 identify an 11,951-byte HTML homepage for the 2016 second edition of Probabilistic Models of Cognition, not this paper",
+    "registered_html_reverified": "the exact 11,951-byte registered object remains available over HTTP and still hashes to the registry value; the HTTPS hostname currently fails certificate-name validation",
+    "official_camera_ready": {
+      "url": "https://www.auai.org/uai2008/UAI_camera_ready/goodman.pdf",
+      "sha256": "c3151aa7d5b2a1fc638871b82f6da868909ed7d1ca8843ebbf32aaa9e6969960",
+      "file_size_bytes": 284023,
+      "page_count": 10
+    },
+    "pmlr_reissue": {
+      "url": "https://raw.githubusercontent.com/mlresearch/r6/main/assets/goodman08a/goodman08a.pdf",
+      "reissued_at": "2024-10-09",
+      "byte_identical_to_uai_camera_ready": true,
+      "sha256": "c3151aa7d5b2a1fc638871b82f6da868909ed7d1ca8843ebbf32aaa9e6969960"
+    },
+    "minor_corrections_version": {
+      "url": "https://arxiv.org/pdf/1206.3255",
+      "version_note": "minor corrections dated 2008-05-31; arXiv submitted 2012-06-13 and last updated 2014-07-15",
+      "sha256": "2c42f4de6acd80ae0e6c9c9eafebcc34cebac09aeacff0d5082d4e5fba70727f",
+      "file_size_bytes": 449561,
+      "page_count": 10
+    },
+    "registered_pdf_visual_check": "all 10 official pages and all 10 minor-corrections pages rendered and inspected; language rules, code listings, figures, traces, convergence plot and references are present and legible",
+    "publication_identity": "UAI 2008, Helsinki, 9-12 July 2008, pages 220-229; reissued in Proceedings of Machine Learning Research volume R6"
+  },
+  "sections_reviewed": [
+    "introduction, universality language and contribution claims",
+    "Church syntax, values, environments and elementary random procedures",
+    "eval semantics, finite evaluation histories, weight and admissibility",
+    "query and lex-query conditional-distribution semantics",
+    "stochastic memoization, random-world semantics, exchangeability and DPmem",
+    "semantic correctness lemmas and theorem with proof sketches",
+    "causal, infinite-mixture, relational, PCFG, HMM and planning examples",
+    "finite implementation of mem and exact/collapsed rejection query",
+    "computation traces and approximate Metropolis-Hastings query",
+    "prototype results for mixtures, planning and sprinkler inference",
+    "discussion, related languages, metacircularity and stated efficiency limits",
+    "official UAI/PMLR metadata, arXiv corrections and complete references"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "section 1 and section 2 opening, printed p. 220",
+      "checked_for": "universal-language claim, composability, Lisp basis, evaluation-as-sampling, query-as-conditional-sampling and three stated contributions"
+    },
+    {
+      "anchors": "section 2, printed pp. 220-222; Figure 1",
+      "checked_for": "dynamic applicative syntax, countable/fixed-precision primitives, procedures, probability functions, eval rules, evaluation histories, weight and admissibility"
+    },
+    {
+      "anchors": "sections 2-2.1, printed pp. 222-223; Figure 2",
+      "checked_for": "query/lex-query, undefined cases, top-level environment, memoized persistent random values, countably extended environments, DP and DPmem"
+    },
+    {
+      "anchors": "section 2.2, printed pp. 223-224; Lemmas 2.1-2.2 and Theorem 2.3",
+      "checked_for": "proof-sketch status, equivalence classes of histories, admissibility, recursion/nontermination and positive-evidence condition for query"
+    },
+    {
+      "anchors": "section 3, printed pp. 224-226; Figures 3-5",
+      "checked_for": "sprinkler causality, persistent latent classes, infinite mixture/relational models, PCFG/HDP-HMM/adaptor grammar and planning-as-inference"
+    },
+    {
+      "anchors": "section 4, printed pp. 226-227; Figures 6-7",
+      "checked_for": "finite mutable implementation of mem, metacircular rejection query, collapsed rejection, intractability statement and qualitative prototype plots"
+    },
+    {
+      "anchors": "section 4.1, printed pp. 227-228; Figures 8-9",
+      "checked_for": "trace carrier, proposal repair, Metropolis-Hastings acceptance, omitted details, nested-query and mem limitations, one-run convergence plot"
+    },
+    {
+      "anchors": "section 5, printed pp. 228-229",
+      "checked_for": "higher-order comparison, sampling-based semantics, eval/query nesting, program induction, efficiency limitation and future program-analysis inference"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "Church is a dynamically typed applicative-order stochastic Lisp in which pure Lisp is deterministic, elementary random procedures introduce sampling, first-class expressions compose generative processes, eval samples them and query denotes conditional sampling.",
+      "anchors": "sections 1-2"
+    },
+    {
+      "claim": "Admissible expressions, including expressions with stochastic memoization, induce probability distributions over equivalence classes of evaluation histories and hence return values; positive-probability predicates give well-defined conditional query distributions.",
+      "anchors": "section 2.2; Lemmas 2.1-2.2 and Theorem 2.3"
+    },
+    {
+      "claim": "Stochastic mem shares sampled generative history across calls, provides persistent random-world structure and can express Dirichlet-process memoization and several nonparametric models compactly.",
+      "anchors": "section 2.1 and section 3; Figures 2-4"
+    },
+    {
+      "claim": "Exact rejection and collapsed rejection implement query in principle, while a Metropolis-Hastings algorithm over computation traces is proposed for approximate conditional inference.",
+      "anchors": "sections 4-4.1"
+    },
+    {
+      "claim": "A single higher-order language can express causal Bayes-style models, infinite mixture/relational models, stochastic transition grammars and planning by inference without model-specific inference code.",
+      "anchors": "section 3"
+    }
+  ],
+  "function_concept_used_by_paper": "A Church expression is a first-class higher-order stochastic function/program describing a generative process. Ordinary procedures close over an environment; elementary random procedures additionally expose a conditional probability function; eval turns expressions into samples; query conditions their induced history/value distribution; mem converts an admissible procedure into a persistent random function; and nested eval/query lets programs manipulate or reason about programs.",
+  "representation_or_carrier": "Syntax and Scheme-like values are countable; real numbers are fixed/floating approximations. A procedure is body, arguments and environment, with elementary random procedures adding a distribution function. The semantic carrier is an evaluation history and its product probability; admissible expressions have total finite-history weight one and induce a value distribution mu(e,env). With mem, histories are quotiented by unused memo-table values. Approximate runtime state is a computation-trace DAG containing an evaluation tree, environment-extension tree and binding dependencies.",
+  "specification_language": "Church provides dynamically typed Lisp syntax for constants, variables, application, lambda, if, define and quote; a standard library supplies higher-order operations and elementary random procedures; eval/query/lex-query specify generative and conditional computation; mem/DPmem specify persistent and exchangeable random functions. It does not statically specify types, support, admissibility, termination, evidence positivity, resource bounds, inference accuracy, convergence diagnostics, privacy, deployment or lifecycle policy, and the paper gives no machine-checkable contract language.",
+  "compiler_or_generator": "No compiler or ahead-of-time generator is presented. The paper gives an informal interpreter definition and suggests future program analyses that might transform query into eval for exact enumeration. Because expressions are values, Church can describe priors over programs and program induction, but this is a representational possibility rather than an implemented or verified synthesis compiler.",
+  "interpreter_or_runtime": "A prototype implements Scheme-like eval, finite memo tables and query. Exact recursive rejection is definable metacircularly but can be nonterminating or intractable; collapsed rejection marginalizes predicate randomness. Approximate query uses Metropolis-Hastings proposals over evaluation-history traces, repairing dependent evaluations and applying proposal corrections. At publication the MCMC implementation omitted mem, did not fully handle nested queries, omitted delicate trace-update equations for space and was explicitly too inefficient for typical machine-learning applications.",
+  "composition_rule": "Lambda abstraction/application and higher-order functions compose deterministic and stochastic procedures; lexical environments route bindings; eval recursively composes sampling histories; query conditions the composed history distribution; mem shares results by procedure/argument; DPmem composes a Dirichlet-process cache; nested eval/query composes inference and program interpretation. Composition does not ensure admissibility, positive evidence, efficient inference, good mixing or bounded memory.",
+  "state_or_effect_model": "Random primitive calls are probabilistic effects recorded in evaluation histories. Memoization creates persistent per-argument random state and supports random worlds; query conditions effects; recursion may diverge; approximate inference mutates a trace proposal. The denotational language is intended to preserve exchangeability/purity, while its finite implementation necessarily uses mutable association lists. General mutable state, concurrency, distributed execution, I/O failure, checkpointing and durable provenance are outside scope.",
+  "uncertainty_model": "Uncertainty is a probability distribution over finite evaluation histories and marginal return values; conditional uncertainty is defined by query when the expression/predicate are admissible and the predicate has positive probability. Memoized random functions share latent variables; DPmem supplies nonparametric uncertainty; approximate MCMC adds algorithmic error. The paper gives no finite-sample error bound, posterior calibration, mixing theorem, ESS, acceptance-rate report, confidence interval or systematic comparison with ground truth.",
+  "validation_regime": {
+    "formal": "two lemmas and one theorem with proof sketches establish history weight, admissibility with mem and well-defined positive-evidence conditional queries",
+    "implementation": "a Blaise-based prototype is said to be implemented and verified on examples exercising recursion/trace updates; mem was not implemented in MCMC and nested-query details were not handled",
+    "examples": "code listings cover a sprinkler model, infinite mixtures/relational models, PCFG/HDP-HMM/adaptor grammar and a red-light planning model",
+    "reported_results": "Figure 6 shows qualitative collapsed-rejection posterior samples for two tiny Gaussian-mixture datasets; Figure 7 plots planning action probability for gamma=.2 and cheat-det=.7; Figure 9 shows one sprinkler MCMC run over 100 samples with 30 MCMC steps per query sample",
+    "boundary": "there are no datasets, released artifact, repeated runs, exact-target comparison, error bars, acceptance/mixing diagnostics, runtime/memory measurements, ablations or benchmarks; formal arguments are proof sketches rather than mechanized proofs"
+  },
+  "equivalence_notions": [
+    {
+      "notion": "evaluation-history equivalence",
+      "support": "WITH_MEM_HISTORIES_ARE_EQUIVALENT_UP_TO_UNUSED_MEMOIZED_BINDINGS_WHILE_AGREEING_ON_ACCESSED_ARGUMENTS_AND_RETURNS",
+      "boundary": "The paper sketches the measure construction and gives no executable equivalence checker."
+    },
+    {
+      "notion": "induced-distribution equality",
+      "support": "ADMISSIBLE_EXPRESSIONS_DENOTE_MARGINAL_DISTRIBUTIONS_OVER_RETURN_VALUES_OBTAINED_FROM_HISTORY_DISTRIBUTIONS",
+      "boundary": "Syntactically distinct programs can agree distributionally, but no general decision procedure is supplied."
+    },
+    {
+      "notion": "eval-query agreement",
+      "support": "QUERY_WITH_THE_CONSTANT_TRUE_PREDICATE_HAS_THE_SAME_VALUE_DISTRIBUTION_AS_EVAL_FOR_ADMISSIBLE_EXPRESSIONS",
+      "boundary": "Undefined for inadmissible expressions and requires the conditioning event to have positive probability."
+    },
+    {
+      "notion": "trace-history correspondence",
+      "support": "COMPUTATION_TRACES_ARE_CLAIMED_TO_BE_IN_ONE_TO_ONE_CORRESPONDENCE_WITH_EQUIVALENCE_CLASSES_OF_EVALUATION_HISTORIES",
+      "boundary": "Trace repair details are omitted, nested-query support is incomplete and the MCMC implementation did not yet support mem."
+    },
+    {
+      "notion": "exact versus approximate query target",
+      "support": "REJECTION_AND_METROPOLIS_HASTINGS_ARE_INTENDED_TO_SAMPLE_THE_CONDITIONAL_DISTRIBUTION_DEFINED_BY_QUERY",
+      "boundary": "No convergence/mixing proof or quantitative target-agreement experiment is supplied for the proposed MCMC implementation."
+    }
+  ],
+  "lifecycle_and_provenance": "The 2008 paper is preserved by the official UAI site and a 2024 PMLR reissue with byte-identical PDFs, plus a separately hash-bound arXiv minor-corrections version. The provisional resolver instead captured an unrelated 2016 textbook homepage; its exact hash is reproducible only over HTTP because the current HTTPS hostname certificate does not validate. The paper cites a Blaise-based prototype and thesis but supplies no source URL, release tag, build instructions, dependency/runtime lock, test corpus, random seeds, trace archive, CI, security policy, compatibility matrix, revalidation cadence, rollback or retirement record. Later Church/WebChurch systems are not evidence that this specific 2008 artifact was reproducible as published.",
+  "limitations_and_failure_boundaries": [
+    "The universal-language claim is about expressive computability/generative description, not guaranteed termination, normalized probability, efficient inference or practical learnability.",
+    "Only admissible expressions with total finite-history weight one define value distributions; recursion/fix can be inadmissible, and no admissibility checker is provided.",
+    "Query is undefined if the expression or predicate is inadmissible or if no supported value makes the predicate true with non-zero probability.",
+    "Recursive rejection query may not terminate for impossible evidence and is expected to be intractable for many low-probability events.",
+    "Countable primitive types and fixed/floating representations bound the language's numeric model; continuous distributions are runtime primitives rather than a measure-theoretic language proof here.",
+    "Formal semantic results are proof sketches, including the countably infinite memoized environment and quotient over histories; they are not mechanized.",
+    "Stochastic memoization can imply infinitely many latent values denotationally; the finite runtime creates entries lazily and can grow without a resource bound.",
+    "Exchangeability is proposed as stochastic purity, but general stateful extensions and their semantic conditions are explicitly future work.",
+    "The prototype MCMC algorithm had not implemented programs using mem, despite mem being a central language feature.",
+    "Nested-query handling is acknowledged as incomplete, and delicate trace-consistency/proposal corrections are omitted from the paper.",
+    "The MCMC section gives no stationarity, irreducibility, convergence-rate, mixing, variance or finite-sample correctness theorem.",
+    "Figure 9 is one 100-sample sprinkler run with 30 MCMC steps per sample, not a reproducibility or convergence study; no exact target or uncertainty band is shown.",
+    "Figures 6-7 are illustrative qualitative outputs with tiny synthetic setups, not empirical validation across tasks or comparison to baselines.",
+    "The authors explicitly state that the implementation is not efficient enough for typical machine-learning applications.",
+    "No runnable paper artifact, code receipt, seeds, environment, datasets, tests or trace logs accompany the source.",
+    "The registered probmods URL is an unrelated textbook landing page and its HTTPS certificate currently fails hostname validation, demonstrating weak source-registry lifecycle hygiene.",
+    "The paper does not connect Church semantics to neural weights, governed Function OS assets, ignition epsilon, frozen Psi_0 or production deployment."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove that all Church programs terminate, normalize or admit well-defined conditional queries.",
+    "It does not provide complete or efficient generic inference for programs using mem, nested queries or rare/impossible evidence.",
+    "It does not provide an automatic equivalence checker, compiler, convergence-certified MCMC runtime or current reproducible release.",
+    "It does not establish quantitative superiority across Bayesian networks, nonparametric models, grammars or planning tasks.",
+    "It does not empirically validate neural function composition, artifact lifecycle governance, a probability law for ignition epsilon or ignition itself."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "Church gives a concrete higher-order stochastic FunctionSpec syntax with random primitives, conditional queries and persistent random functions, bounded by missing static contracts and resource policy."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "Metacircular eval and suggested query-to-eval analyses define interpretation/transformation ideas, but no compiler or verified generator is delivered."
+    },
+    "GAP-017": {
+      "status": "CONFIRMED",
+      "reason": "History equivalence classes, induced value distributions, eval/query agreement and trace correspondence provide explicit bounded semantic notions."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "Random sampling, recursion, memoized latent state, conditioning, nested inference and trace mutation are explicit effects with composition rules."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Proof sketches and prototype figures validate feasibility, while incomplete central features, one-run plots, omitted diagnostics and no artifact prevent strong validation."
+    },
+    "GAP-020": {
+      "status": "CONFIRMED",
+      "reason": "The paper directly defines stochastic higher-order function semantics, conditional distributions, persistent uncertainty and generic exact/approximate inference targets."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Higher-order Church syntax, elementary random procedures, eval/query and mem specify stochastic functions directly."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Expressions, closures, environments, history distributions, memoized worlds and trace DAGs are explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "The language is interpreted and future query-elimination analysis is suggested, but no compiler or verified synthesis pipeline appears."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Stable official/reissue/correction PDFs exist, but the prototype code, build, tests, seeds and datasets are absent."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "Eval, exact/collapsed rejection and trace-MCMC define and partially implement the Church interpreter/inference runtime."
+    },
+    "N6_ExecutionTrace": {
+      "status": "CONFIRMED",
+      "reason": "Evaluation histories and computation-trace DAGs are central semantic and approximate-inference objects, despite no archived traces."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Semantic proof sketches and prototype examples check bounded claims without mechanization, complete inference coverage or quantitative diagnostics."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Higher-order application, environments, eval/query nesting, memoization and reusable libraries compose and route stochastic processes."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "UAI, PMLR and arXiv receipts provide document provenance, while the provisional registry pointed to an unrelated page and no software lifecycle is supplied."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "NO_PRIOR_SEMANTIC_EVIDENCE_CARD",
+    "verdict": "NEW_CODEX56_EXTREME_CARD_WITH_CONFIRMED_BOUNDED_SUPPORT",
+    "corrections": [
+      "Proved that the registered hash belongs to the unrelated Probabilistic Models of Cognition homepage, then replaced it with byte-identical official UAI/PMLR paper receipts.",
+      "Added the separate arXiv minor-corrections receipt instead of conflating it with the official camera-ready bytes.",
+      "Bounded universality to expressive stochastic generative description and admissible semantics, not termination, normalization or tractable inference.",
+      "Recorded the positive-evidence and admissibility preconditions under which query is well defined.",
+      "Separated exact rejection semantics from the incomplete prototype trace-MCMC implementation.",
+      "Recorded that MCMC lacked mem, nested-query details and quantitative convergence diagnostics at publication.",
+      "Separated illustrative one-run figures from empirical or convergence validation and recorded the absent paper artifact/lifecycle."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "Within the paper's admissible-program and prototype boundaries, Church confirms a stochastic FunctionSpec-Representation-Interpreter-ExecutionTrace-Composer architecture: higher-order expressions denote history/value distributions, query specifies conditioning, mem carries persistent latent state, and exact/approximate inference targets operate over explicit traces. Compiler, executable Artifact, robust Validator and VersionedRegistry closure remain partial.",
+  "source_specific_reasoning": "CONFIRMED is warranted for the bounded architectural claim because the full primary paper specifies a stochastic higher-order language, gives semantic proof sketches, defines exact conditional query, constructs persistent random functions and describes a trace-based approximate runtime with concrete examples. The status does not endorse the broadest universality rhetoric or production readiness: admissibility and positive evidence are mandatory, inference can be nonterminating/intractable, MCMC omitted mem/nested details, validation is qualitative and no runnable artifact survives in the paper record.",
+  "projection_boundary": "These are 121CX projections from the complete byte-identical official UAI/PMLR 10-page paper, the full arXiv minor-corrections version, all rendered pages, official PMLR metadata and the exact registered-but-unrelated probmods HTML. This model review is not a mechanized semantic proof, MCMC convergence proof, current runtime validation, neural implementation or empirical validation of ignition.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T06:55:00Z"
+}

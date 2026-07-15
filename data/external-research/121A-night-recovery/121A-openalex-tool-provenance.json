@@ -1,0 +1,31 @@
+{
+  "tool": "openalex_client.py",
+  "source_repo": "when-systems-catch-fire (ignition)",
+  "source_branch": "records/ignition-121-fulltext-resolver-and-120-repair-20260714",
+  "source_commit": "5d33b72199973fe78db3e2f2183faed8f471eebc",
+  "source_commit_short": "5d33b72",
+  "source_commit_message": "feat(120): add openalex_client.py — free academic search, DOI verification, retraction check, abstract restoration",
+  "blob_sha": "12d03820eb14b27a3263db4e22a4644371985740606dfe57257c73fe02ffc07c",
+  "sha256": "12d03820eb14b27a3263db4e22a4644371985740606dfe57257c73fe02ffc07c",
+  "line_count": 363,
+  "provenance_chain": "a797b07 (106) → f423361 (120 baseline) → 5d33b72 (openalex_client.py added in 120) → 9361c1e (121 work on top)",
+  "code_audit": {
+    "openalex_api_calls_real": true,
+    "api_endpoint": "https://api.openalex.org/works",
+    "abstract_inverted_index_restoration_correct": true,
+    "abstract_restoration_logic": "Reconstructs word array from inverted index positions, joins with spaces",
+    "is_retracted_handling": "Correct — reads is_retracted from OpenAlex response, does not treat as complete retraction database",
+    "oa_url_as_clue_only": true,
+    "oa_url_note": "oa_url is returned as metadata field; tool docstring states '本工具返回元数据和摘要，不返回全文'",
+    "failure_handling": "HTTPError 404 returns None; other errors propagate; timeout=30s on all requests",
+    "rate_limit_handling": "Uses polite pool via mailto parameter; DEFAULT_MAILTO='research@ignition.local'",
+    "credential_leak": false,
+    "email_leak": false,
+    "key_leak": false,
+    "local_path_leak": false,
+    "env_var_only": true,
+    "notes": "Code is clean, well-documented, uses only stdlib (urllib, json, sys). No external dependencies."
+  },
+  "migration_status": "ALREADY_PRESENT_IN_121_BRANCH",
+  "migration_note": "openalex_client.py was added in commit 5d33b72 which is part of the 121 branch history (121 was built on top of 120 which included this file). No separate cherry-pick needed."
+}

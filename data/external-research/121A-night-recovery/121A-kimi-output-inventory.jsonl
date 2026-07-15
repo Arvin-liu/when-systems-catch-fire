@@ -1,0 +1,32 @@
+{"file": "data/external-research/121-fulltext-resolver/121-baseline-and-contamination-audit.json", "size": 2847, "sha256": "present", "status": "COMPLETE", "evidence": "Valid JSON, contains contamination assessment for 1111 120 branch, credential scan results, 120 file hashes"}
+{"file": "data/external-research/121-fulltext-resolver/121-credential-hygiene-audit.json", "size": 2744, "sha256": "present", "status": "COMPLETE", "evidence": "Valid JSON, 4 findings all LOW risk, no key rotation required, 121 sanitization applied"}
+{"file": "data/external-research/121-fulltext-resolver/121-openalex-client-migration-record.json", "size": 412, "sha256": "present", "status": "COMPLETE", "evidence": "Valid JSON, records source commit 5d33b72, source branch, SHA256"}
+{"file": "data/external-research/121-fulltext-resolver/121-run-state.json", "size": 1846, "sha256": "present", "status": "COMPLETE", "evidence": "Valid JSON, all 6 phases marked COMPLETE, counts: 74 fetched, 30 reviewed, 6 gaps readjudicated"}
+{"file": "data/external-research/121-fulltext-resolver/121-template-risk-reaudit.json", "size": 1232, "sha256": "present", "status": "COMPLETE", "evidence": "Valid JSON, template risk reaudit results"}
+{"file": "data/external-research/121-fulltext-resolver/121-function-os-node-readjudication.json", "size": 6600, "sha256": "present", "status": "NEEDS_REPAIR", "evidence": "File extension is .json but content is JSONL (9 JSON objects, one per line). Should be .jsonl or wrapped as JSON array."}
+{"file": "data/external-research/121-fulltext-resolver/121-fulltext-provider-capability-matrix.jsonl", "lines": 17, "status": "COMPLETE", "evidence": "17 valid JSONL lines, 12+ providers listed"}
+{"file": "data/external-research/121-fulltext-resolver/121-fulltext-source-registry.jsonl", "lines": 84, "status": "COMPLETE", "evidence": "84 valid JSONL lines, source registry with SHA256 hashes and cache paths"}
+{"file": "data/external-research/121-fulltext-resolver/121-fulltext-resolution-log.jsonl", "lines": 84, "status": "COMPLETE", "evidence": "84 valid JSONL lines, resolution log with HTTP status and content types"}
+{"file": "data/external-research/121-fulltext-resolver/121-fetch-records.jsonl", "lines": 84, "status": "COMPLETE", "evidence": "84 valid JSONL lines, fetch records with URLs and HTTP status"}
+{"file": "data/external-research/121-fulltext-resolver/121-extracts.jsonl", "lines": 74, "status": "COMPLETE", "evidence": "74 valid JSONL lines, text extracts with word counts and headers"}
+{"file": "data/external-research/121-fulltext-resolver/121-fulltext-evidence-cards.jsonl", "lines": 30, "status": "COMPLETE", "evidence": "30 valid JSONL lines, 10 source families, all FULLTEXT_REVIEWED via legal OA channels"}
+{"file": "data/external-research/121-fulltext-resolver/121-fulltext-failure-register.jsonl", "lines": 10, "status": "COMPLETE", "evidence": "10 valid JSONL lines, failed sources recorded with reasons"}
+{"file": "data/external-research/121-fulltext-resolver/121-function-paradigm-cards-fulltext-backed.jsonl", "lines": 10, "status": "COMPLETE", "evidence": "10 valid JSONL lines, function paradigm cards with fulltext backing assessment"}
+{"file": "data/external-research/121-fulltext-resolver/121-gap-015-020-readjudications.jsonl", "lines": 6, "status": "COMPLETE", "evidence": "6 valid JSONL lines, GAP-015 to GAP-020 readjudicated with supporting sources"}
+{"file": "data/external-research/121-fulltext-resolver/121-validator.py", "status": "COMPLETE", "evidence": "Python validator script present"}
+{"file": "data/external-research/121-fulltext-resolver/121-task-artifact.md", "status": "COMPLETE", "evidence": "Task artifact summary markdown"}
+{"file": "data/external-research/121-fulltext-resolver/evidence-cards/", "count": 30, "status": "COMPLETE", "evidence": "30 individual evidence card JSON files (S120-001 to S120-075)"}
+{"file": "scripts/external-research/openalex_client.py", "status": "COMPLETE", "evidence": "363 lines, commit 5d33b72, SHA256 12d03820eb14b27a3263db4e22a4644371985740606dfe57257c73fe02ffc07c, smoke test passed"}
+{"file": "scripts/external-research/fulltext_resolver.py", "status": "COMPLETE", "evidence": "296 lines, resolver with arXiv/OpenAlex/Crossref/Unpaywall/direct URL providers"}
+{"file": "scripts/external-research/fulltext_fetcher.py", "status": "COMPLETE", "evidence": "158 lines, curl-based fetcher with SHA256 and content type recording"}
+{"file": "scripts/external-research/fulltext_extract.py", "status": "COMPLETE", "evidence": "123 lines, PDF/HTML text extraction with section anchors"}
+{"file": "scripts/external-research/fulltext_resolver_config.example.json", "status": "COMPLETE", "evidence": "55 lines, config template with env var placeholders only, no secrets"}
+{"file": "scripts/external-research/.env.example", "status": "COMPLETE", "evidence": "Environment variable template, all commented, no real values"}
+{"file": "scripts/external-research/121_fetch_one.py", "status": "COMPLETE", "evidence": "Kimi temporary script, 160 lines"}
+{"file": "scripts/external-research/121_extract_all.py", "status": "COMPLETE", "evidence": "Kimi temporary script, 89 lines"}
+{"file": "scripts/external-research/121_build_registry_and_logs.py", "status": "COMPLETE", "evidence": "Kimi temporary script, 104 lines"}
+{"file": "scripts/external-research/121_generate_evidence_cards.py", "status": "COMPLETE", "evidence": "Kimi temporary script, 316 lines"}
+{"file": "reports/external-research/121-legal-fulltext-resolver-report.md", "status": "COMPLETE", "evidence": "52 lines, resolver report with provider list, smoke test results, credential hygiene"}
+{"file": "reports/external-research/121-function-paradigm-fulltext-review-report.md", "status": "COMPLETE", "evidence": "69 lines, fulltext review report with GAP readjudications and Function OS assessment"}
+{"file": "docs/external-research/legal-fulltext-resolution-protocol.md", "status": "COMPLETE", "evidence": "73 lines, legal resolution protocol document"}
+{"file": "data/external-research/121-fulltext-resolver/121-1111-quarantine-report.md", "status": "NOT_STARTED", "evidence": "File does not exist. Quarantine info is embedded in 121-baseline-and-contamination-audit.json instead."}

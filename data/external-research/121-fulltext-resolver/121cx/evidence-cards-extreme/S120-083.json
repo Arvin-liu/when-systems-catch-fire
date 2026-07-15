@@ -1,0 +1,268 @@
+{
+  "source_id": "S120-083",
+  "canonical_title": "Efficient Transformers: A Survey",
+  "authors": [
+    "Yi Tay",
+    "Mostafa Dehghani",
+    "Dara Bahri",
+    "Donald Metzler"
+  ],
+  "year": 2022,
+  "source_family": 1,
+  "source_family_name": "program-as-weights and weight-space computation",
+  "identifier": "ACM Computing Surveys 55(6), Article 109; arXiv:2009.06732v3",
+  "doi_or_identifier": "10.1145/3530811; arXiv:2009.06732v3",
+  "url": "https://arxiv.org/pdf/2009.06732",
+  "version": "exact registered arXiv v3, revised 2022-03-14; peer-reviewed ACM Computing Surveys version published 2022-12-07",
+  "license": "ACM version-of-record metadata specifies CC BY-ND 4.0; arXiv copy is distributed under the arXiv non-exclusive distribution license",
+  "file_size_bytes": 847824,
+  "page_count": 39,
+  "sha256": "d4f2425d4487fa3097d1c0f274df161901748a40f10877cdc5447d711ea2ef35",
+  "reviewed_at": "2026-07-14T10:42:42Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "claim_support_status": "PARTIAL",
+  "retrieval_and_integrity": {
+    "registered_pdf": {
+      "url": "https://arxiv.org/pdf/2009.06732",
+      "sha256": "d4f2425d4487fa3097d1c0f274df161901748a40f10877cdc5447d711ea2ef35",
+      "file_size_bytes": 847824,
+      "page_count": 39,
+      "registry_hash_size_page_match": true
+    },
+    "official_metadata": {
+      "arxiv_version": "v3",
+      "arxiv_first_submitted": "2020-09-14",
+      "arxiv_last_revised": "2022-03-14",
+      "journal": "ACM Computing Surveys",
+      "doi": "10.1145/3530811",
+      "volume_issue_pages": "55(6), Article 109, version-of-record pages 1-28",
+      "published_date": "2022-12-07",
+      "version_of_record_license": "CC BY-ND 4.0"
+    },
+    "visual_review": "All 39 pages were rendered at 144 DPI and visually inspected. The architecture/taxonomy figures, complexity table, equations, restriction paragraphs, discussion, references and final page were legible; no blank, clipped, substituted or malformed source page was found.",
+    "text_review": "The complete 16,827-word layout-preserving extraction and complete v3 TeX/bibliography package were reviewed. Exact searches found no 'weight space', 'weight-space', 'weight arithmetic', 'program space', 'program encoded', 'gradient descent', 'loss function', 'training data' or 'semantic equivalence' claim. The sole 'weights are' occurrence refers to attention weights being approximated in Synthesizer, not neural weights as programs.",
+    "arxiv_source": {
+      "url": "https://arxiv.org/src/2009.06732v3",
+      "sha256": "4cec5a51a494a98d8c2f77409cd8e5a64f25b967dc4eda69a0afd712f56c0961",
+      "file_count": 62,
+      "contents": "Main TeX, bibliography, JMLR style and figure assets; no executable implementation, checkpoints, raw measurements, benchmark outputs or environment lock"
+    },
+    "artifact_boundary": "This is a literature survey, not a new model release or replication package. The source archive supports document reconstruction only and does not bind any surveyed model result to code, weights, hardware traces or run receipts."
+  },
+  "sections_reviewed": [
+    "abstract and section 1, scope, efficiency definition, taxonomy purpose and revision notes",
+    "section 2, Transformer equations, encoder/decoder modes, causal constraints and compute-cost caveat",
+    "section 3.1, fixed/learned patterns, memory, low-rank/kernel, recurrence, downsampling, sparsity and conditional-computation taxonomy",
+    "section 3.2, all detailed model walkthroughs, equations, parameter/memory complexity and restrictions",
+    "section 4.1, non-comparable benchmarks, hyperparameter/pretraining confounds and LRA scope",
+    "sections 4.2-4.4, model-design trends, weight sharing, pruning, distillation, NAS, adapters, retrospective and real-throughput caveats",
+    "section 5 conclusion, complete references and complete arXiv v3 TeX/bibliography package"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 1-7, sections 1-3 and Table 1",
+      "checked_for": "survey scope, Transformer forward equations, quadratic attention cost, encoder/decoder compatibility and taxonomy-level complexity claims"
+    },
+    {
+      "anchors": "pp. 8-25, sections 3.1-3.2 and equations 1-16",
+      "checked_for": "fixed/learned routing patterns, neural memory, low-rank/kernel approximations, recurrence, compression, MoE top-k routing and implementation restrictions"
+    },
+    {
+      "anchors": "pp. 25-28, sections 4.1-4.3",
+      "checked_for": "benchmark incomparability, architecture-mode mismatch, weight sharing, pruning, distillation, NAS and task adapters"
+    },
+    {
+      "anchors": "pp. 29-31, sections 4.4-5",
+      "checked_for": "retrospective, absence of a de facto winner, theoretical-versus-real efficiency caveat, causal/packing constraints and conclusion"
+    },
+    {
+      "anchors": "pp. 32-39 and complete v3 TeX/bibliography",
+      "checked_for": "citation provenance, revision completeness and exact absence of the historical weight-program/weight-arithmetic terminology"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "Efficient Transformer methods can be organized by fixed or combined attention patterns, learned patterns, neural memory, low-rank and kernel approximations, recurrence, downsampling, sparse models and conditional computation.",
+      "anchors": "sections 3.1-3.2, Figure 2 and Table 1"
+    },
+    {
+      "claim": "The standard dense self-attention matrix has quadratic sequence-length time and memory cost, while different architectural transformations reduce selected asymptotic costs under method-specific assumptions and restrictions.",
+      "anchors": "sections 2.4 and 3.2"
+    },
+    {
+      "claim": "MoE layers route each token to selected experts through a learned softmax gate and top-k selection, then linearly combine selected expert outputs.",
+      "anchors": "section 3.2.18"
+    },
+    {
+      "claim": "Published efficient-Transformer results are difficult to compare because models use different modes, benchmarks, sizes, hyperparameters and pretraining setups.",
+      "anchors": "section 4.1"
+    },
+    {
+      "claim": "Lower asymptotic attention complexity does not guarantee lower end-to-end latency, memory or higher throughput; causal masking, packing, sequence length, kernels and hardware can reverse the apparent benefit.",
+      "anchors": "section 2.4 footnote, Performer discussion and section 4.4"
+    }
+  ],
+  "function_concept_used_by_paper": "The survey describes Transformers as parameterized compositions of embeddings, attention, feed-forward layers, residual/normalization operations and optional routing/memory/compression modules. It treats weights as ordinary matrices inside these equations and discusses parameter sharing, pruning and adapters for efficiency. It does not conceptualize a checkpoint as a program, define weight space as program space, perform weight arithmetic, or claim that training compiles a function specification.",
+  "specification_language": "Surveyed architectures are specified by module equations, attention/connectivity patterns, encoder/decoder mode, causal masking, sequence length, tensor dimensions, sparsity/routing rules and theoretical complexity. These are architecture and resource-design specifications, not typed callable FunctionSpecs with named I/O schemas, preconditions, postconditions, effects, authority, failures, service levels or version constraints.",
+  "representation_or_carrier": {
+    "model_carrier": "a stack of parameterized Transformer blocks with embedding, Q/K/V/output matrices, feed-forward layers, normalization and residual connections",
+    "structural_carriers": "attention masks/patterns, buckets/clusters, inducing/global tokens, recurrent/compressed activation memories, low-rank projections, kernel features and sparse experts",
+    "runtime_carriers": "input/activation tensors, attention matrices, cached or compressed memory and selected expert outputs",
+    "boundary": "These are neural architecture and state representations. The survey neither defines a portable callable artifact schema nor equates parameter vectors with symbolic programs."
+  },
+  "compiler_or_generator": {
+    "surveyed_design_processes": "Architecture search can remove redundant operations and use hardware-efficiency feedback; training learns attention patterns, centroids, gates and ordinary parameters.",
+    "document_contribution": "The paper supplies a human taxonomy and mathematical walkthrough, not a generator or compiler implementation.",
+    "classification": "Training and NAS are mentioned as optimization/design techniques, not formal compilation from declarative function intent; the historical gradient-descent/backpropagation compiler claim is unsupported by this source."
+  },
+  "interpreter_or_runtime": "Execution is a conventional encoder-only, decoder-only or encoder-decoder forward computation. Causal masks, routing gates, recurrent memories and custom kernels are runtime mechanisms inside that graph, not an interpreter for independently represented functions, effects, capabilities or a general Function OS language.",
+  "state_or_effect_model": "Some surveyed models retain recurrent or compressed activation memory and training updates parameters, while inference may cache history or route tokens. The survey gives no language-level effect signatures, external authority, transactions, idempotence, compensation, rollback, privacy or action-safety model.",
+  "composition_rule": "Transformer blocks compose sequentially; residual paths add tensors; multi-head outputs concatenate; fixed/learned access patterns can be combined; MoE gates select top-k experts and linearly combine their outputs; some layers share parameters. These are intra-architecture tensor/operator compositions, not arithmetic over independently trained weight vectors or governed composition of versioned callable functions.",
+  "equivalence_notions": [
+    {
+      "notion": "predictive performance comparison",
+      "support": "The survey summarizes task scores reported by primary papers and notes that pruning or alternatives may show little predictive degradation or sometimes match Transformer performance.",
+      "boundary": "It explicitly warns that different benchmarks, configurations and pretraining confound attribution; no equivalence margin, paired test or common experiment is supplied."
+    },
+    {
+      "notion": "asymptotic complexity reduction",
+      "support": "Per-method formulas compare attention time/memory classes such as quadratic, local, low-rank, kernel or sparse variants.",
+      "boundary": "Asymptotic class is not behavioral equivalence and not even guaranteed systems efficiency; constants, kernel availability, sequence length, causal scans and packing matter."
+    },
+    {
+      "notion": "expressive/theoretical properties of cited models",
+      "support": "The survey cites primary theoretical work on permutation invariance, universal approximation and sparse-attention expressiveness.",
+      "boundary": "These are attributed results from other papers, not proved or independently checked by this survey, and do not establish semantic equivalence among implementations."
+    }
+  ],
+  "validation_regime": {
+    "document_type": "Narrative and mathematical literature survey. It proposes a taxonomy, restates mechanisms/complexities and discusses reported evaluation practices; it conducts no new controlled experiment, benchmark or replication.",
+    "comparability_audit": "Section 4.1 explicitly finds side-by-side comparison difficult because authors choose different benchmarks, model sizes, configurations and pretraining regimes. Encoder-only and autoregressive models are often evaluated on incompatible task families.",
+    "benchmark_scope": "Long Range Arena is identified as a partial unifier for ten encoder-only variants but does not cover generative/autoregressive causal tasks. No survey-wide common hardware, latency, memory, energy, quality or cost protocol is executed.",
+    "complexity_scope": "Table 1 and walkthroughs report selected asymptotic attention or memory costs, often not whole-model cost. Feed-forward layers can account for roughly half the compute, parameter changes vary, and implementation constants are excluded.",
+    "systems_scope": "The paper repeatedly notes custom GPU kernels, TPU incompatibility, causal-masking problems, packing constraints and scan-induced slowdowns. A nominally linear method can be slower than quadratic attention in practice.",
+    "uncertainty": "No systematic risk-of-bias assessment, search protocol, inclusion/exclusion flow, quality score, uncertainty interval or meta-analysis is reported. Statements aggregate heterogeneous cited evidence.",
+    "artifact": "The exact TeX package reconstructs the paper, but no survey data table, extraction script, code, checkpoints, raw timings or evidence-to-claim ledger is released.",
+    "safety": "The survey does not evaluate reliability, safety, privacy, bias, adversarial behavior or external-action consequences of efficient architectures."
+  },
+  "uncertainty_model": "Several surveyed mechanisms are stochastic or approximate, including random attention, random projections/features, hashing, learned clustering and sparse gating. The survey discusses approximation and implementation tradeoffs but defines no probability model for function outputs, calibrated confidence, error propagation, routing uncertainty, benchmark uncertainty or evidence-quality uncertainty. It reports no new run distributions or confidence intervals.",
+  "lifecycle_and_provenance": "The document identifies named model families, architectural constraints and citations, and notes deployment-relevant hardware/causality limitations. Parameter sharing, pruning, distillation and task adapters imply checkpoint/configuration lineage, but no machine-readable manifest binds architecture, training data, code, checkpoint, hardware, benchmark and result. There is no versioned registry, compatibility contract, approval, rollout monitoring, deprecation, migration or rollback protocol. The authors explicitly anticipate future survey revisions, so the taxonomy is a dated March 2022 snapshot rather than a live registry.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Tensor shapes, mode, causality, routing and resource constraints are useful architecture-specification fragments, but they omit typed callable contracts, effects and lifecycle policy."
+    },
+    "N2_Representation": {
+      "status": "PARTIAL",
+      "reason": "The survey precisely describes parameter, attention-pattern, memory and sparse-expert carriers, but does not define weights as programs or a portable Function OS representation."
+    },
+    "N3_Compiler": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Training and NAS are mentioned, but the survey provides no compiler and does not frame gradient optimization as specification-preserving lowering."
+    },
+    "N4_Artifact": {
+      "status": "NOT_SUPPORTED",
+      "reason": "No model checkpoint, executable package, manifest or run receipt is contributed; the released source reconstructs only the survey document."
+    },
+    "N5_Interpreter": {
+      "status": "NOT_SUPPORTED",
+      "reason": "A Transformer forward graph and its kernels are not an interpreter for a function language or independently packaged functions."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Attention maps, routed experts and recurrent/compressed memories identify internal trace candidates, but no standardized trace schema, capture method or replay artifact is defined."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "The survey directly exposes benchmark, model-size, pretraining, mode and hardware confounds that a validator must control, but supplies no common validation suite or equivalence checker."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "MoE top-k routing and combinations of attention patterns are concrete intra-model routing/composition mechanisms, not composition of independently versioned callable functions or weight vectors."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "A dated human-readable taxonomy and citations are not an immutable model/function registry with compatibility, lineage, rollout and rollback state."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Architecture equations, modes, causal masks and resource constraints demonstrate important specification dimensions but not a machine-checkable callable/effect contract."
+    },
+    "GAP-016": {
+      "status": "NOT_SUPPORTED",
+      "reason": "The paper defines no weight-space program representation, delta operation or weight arithmetic; layer/tensor composition is not weight-vector algebra."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Its critique identifies comparability and systems-measurement requirements for validation, while providing no semantic/behavioral equivalence checker or common controlled evidence."
+    },
+    "GAP-018": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Runtime state and routing do not supply language-level effects, authority, transactions, compensation or rollback."
+    },
+    "GAP-019": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Citations and taxonomy provide literature provenance only; no checkpoint/code/data/result lineage or governed version registry is defined."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Random, approximate and learned routing mechanisms expose uncertainty sources, but the survey provides no calibrated uncertainty interface or propagation rule."
+    }
+  },
+  "source_specific_reasoning": "PARTIAL is the evidence-corrected result. The survey directly supports bounded architecture Representation, internal routing/composition and Validator-design constraints: it formalizes attention operators, catalogs resource transformations, describes MoE top-k gating, and warns that theoretical complexity and heterogeneous benchmark scores do not establish real efficiency. It does not support the historical card's central program-as-weights, weight-space arithmetic, gradient-descent compiler, behavioral-equivalence or deterministic-function claims. Those projections are absent from the complete paper and source package.",
+  "confirmed_projection": "The exact survey supports a bounded Function OS lesson: neural execution artifacts need explicit tensor/mode/causal/resource compatibility; routing and composition can occur inside an architecture through attention patterns and MoE gates; and validation must separate asymptotic complexity from measured latency, memory, throughput and quality under a common workload/hardware protocol. It does not confirm weights as programs or weight arithmetic.",
+  "projection_boundary": "These are 121CX projections from the exact registered 39-page arXiv v3 PDF, all rendered pages, complete TeX/bibliography package and official arXiv/DOI metadata. Primary xformer experiments and implementations were not re-audited or rerun. This model review is not a proof, systematic-review replication, experimental validation, equivalence test, validation of the cited primary studies, or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not state that neural-network weights are programs or that weight space is program space.",
+    "It does not add, subtract, interpolate, merge or otherwise perform arithmetic over trained checkpoint vectors.",
+    "It does not define a loss-and-data FunctionSpec or frame gradient descent/backpropagation as a compiler.",
+    "It does not establish semantic or behavioral equivalence among Transformer variants.",
+    "It does not show that lower asymptotic attention complexity guarantees faster, cheaper or lower-memory end-to-end execution.",
+    "It does not provide a unified experiment proving one architecture family dominates the others.",
+    "It does not turn ordinary encoder/decoder execution into a function-language interpreter.",
+    "It does not define external effects, capabilities, safety policy or transactional execution.",
+    "It does not release models, checkpoints, raw measurements, code or a provenance-complete evidence package.",
+    "This review does not independently validate the results of the many primary papers summarized by the survey."
+  ],
+  "limitations_and_failure_boundaries": [
+    "The survey is a March 2022 literature snapshot in a rapidly changing field; later architectures, kernels, hardware and evaluations are outside its scope.",
+    "It leans toward language applications and does not claim balanced coverage across all modalities or deployment contexts.",
+    "The taxonomy has overlapping categories and explicitly has no sharp boundaries; many architectures combine several mechanisms.",
+    "Table 1 compresses heterogeneous papers into selected complexity classes and decode/category labels; these are not standardized end-to-end measurements.",
+    "Asymptotic attention complexity omits constants, kernel quality, packing, communication, feed-forward compute, optimizer state and device-specific memory behavior.",
+    "Many cited results use different model sizes, hyperparameters, pretraining regimes, benchmarks and output modes, preventing clean causal attribution.",
+    "LRA covers selected encoder-only long-range tasks and does not validate causal/generative workloads.",
+    "Some efficient mechanisms cannot autoregressively decode, cannot be causally masked or require custom GPU kernels unavailable on other accelerators.",
+    "Kernel/linear methods may trade lower memory complexity for sequential scans or slower real throughput, especially on short sequences or causal training.",
+    "The survey contains no systematic search strategy, inclusion/exclusion flow, evidence-quality grading, meta-analysis or publication-bias analysis.",
+    "It reports no new runs, raw data, uncertainty intervals, energy measurements or reproducible hardware benchmark matrix.",
+    "The TeX archive has document assets only; it provides no executable artifact or evidence ledger linking summary claims to machine-verifiable primary results.",
+    "The published CC BY-ND license applies to the version of record, while the arXiv package has separate distribution terms.",
+    "No security, privacy, bias, reliability, adversarial or external-action safety evaluation is part of the survey.",
+    "Internal attention, recurrence and MoE state do not imply Function OS effects, trace replay, version compatibility or rollback semantics."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "METADATA_ONLY",
+    "verdict": "PRIOR_PROGRAM_AS_WEIGHTS_AND_WEIGHT_ARITHMETIC_PROJECTION_REJECTED; BOUNDED_ARCHITECTURE_ROUTING_AND_VALIDATION_CONSTRAINTS_ACCEPTED",
+    "corrections": [
+      "Replaced metadata-only treatment with all-39-page visual/full-text review, complete v3 source review and official arXiv/DOI metadata.",
+      "Rejected 'program encoded as neural network weights' because the survey does not use or develop that concept.",
+      "Rejected weight space as program space and weight arithmetic/layer-stacking conflation; the paper discusses tensor operators and architecture stacking, not checkpoint arithmetic.",
+      "Rejected the invented loss-function/training-data specification and gradient-descent/backpropagation compiler because neither is a survey contribution or framing.",
+      "Rejected deterministic uncertainty: surveyed random features, hashing, random attention, learned routing and approximations are explicit, while no uncertainty model is supplied.",
+      "Replaced generic test-set behavioral equivalence with the paper's own warning that heterogeneous benchmarks, sizes, configurations and pretraining prevent clean comparison.",
+      "Confirmed bounded tensor/attention/memory/expert representations and MoE top-k routing as internal architecture patterns only.",
+      "Recorded causal-mask, encoder/decoder, custom-kernel, TPU-packing and sequence-length compatibility boundaries.",
+      "Elevated the paper's strongest systems lesson: lower theoretical complexity can be slower in practice and must not be treated as end-to-end efficiency evidence.",
+      "Separated the journal survey document from missing primary-model code, checkpoints, raw metrics and reproduction receipts.",
+      "Did not call cited theorems survey proofs, literature summaries empirical validation, or this model review independent verification."
+    ],
+    "prior_card_superseded": true
+  }
+}

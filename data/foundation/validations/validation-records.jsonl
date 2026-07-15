@@ -1,0 +1,6 @@
+{"asset_kind":"validation_record","claim":"binomial square identity","entity_key":"validation:076-math-true","id":"076-MATH-TRUE","replay":"python3 tools/foundation/run_benchmarks.py --check","result":"PROVED_BY_NORMALIZATION"}
+{"asset_kind":"validation_record","claim":"forall rational x, x squared is at least x","counterexample":"x=1/2","entity_key":"validation:076-math-false","id":"076-MATH-FALSE","replay":"python3 tools/foundation/run_benchmarks.py --check","result":"COUNTEREXAMPLE_VERIFIED"}
+{"asset_kind":"validation_record","claim":"Goldbach conjecture","entity_key":"validation:076-math-pending","id":"076-MATH-PENDING","result":"PENDING_NOT_PROVED"}
+{"asset_kind":"validation_record","claim":"modus ponens","entity_key":"validation:076-logic-valid","id":"076-LOGIC-VALID","replay":"python3 tools/foundation/run_benchmarks.py --check","result":"VALID_BY_TRUTH_TABLE"}
+{"asset_kind":"validation_record","claim":"affirming the consequent","counterexample":"p=false,q=true","entity_key":"validation:076-logic-invalid","id":"076-LOGIC-INVALID","replay":"python3 tools/foundation/run_benchmarks.py --check","result":"COUNTERMODEL_VERIFIED"}
+{"asset_kind":"validation_record","claim":"cross-domain analogy","entity_key":"validation:076-analogy","id":"076-ANALOGY","result":"DEFEASIBLE_SUPPORT"}

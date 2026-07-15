@@ -1,0 +1,68 @@
+{
+  "node_id": "N1",
+  "canonical_name": "FunctionSpec",
+  "canonical_definition": "Formal specification of a function including preconditions, postconditions, effect signature, and uncertainty model",
+  "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+  "inputs": "natural_language_description + mathematical_definition",
+  "outputs": "structured_function_specification",
+  "preconditions": "See node registry (Step 009)",
+  "invariants": [
+    "No FROZEN/FINAL/PROVEN status"
+  ],
+  "strongest_verified_sources": [
+    {
+      "source_id": "S120-047",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Generic Refinement Types"
+    },
+    {
+      "source_id": "S120-053",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Handlers of Algebraic Effects"
+    }
+  ],
+  "partial_or_analogical_sources": [
+    {
+      "source_id": "S120-001",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions"
+    },
+    {
+      "source_id": "S120-007",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "Neural Programmer: Inducing Latent Programs with Gradient Descent"
+    },
+    {
+      "source_id": "S120-017",
+      "identity": "CORRECTED",
+      "semantic": "PARTIAL",
+      "title": "Latent Execution for Neural Program Synthesis"
+    },
+    {
+      "source_id": "S120-018",
+      "identity": "CORRECTED",
+      "semantic": "PARTIAL",
+      "title": "SPoC: Search-based Pseudocode to Code"
+    }
+  ],
+  "counterevidence": "No formal spec for neural-weight functions. Refinement types apply to symbolic code only.",
+  "limitations": "Weight-space specification language does not exist. Must restrict to symbolic specs in Phase 1.",
+  "linked_gaps": [
+    "GAP-015",
+    "GAP-017",
+    "GAP-020"
+  ],
+  "candidate_interface": "JSON schema: name, definition, preconditions, postconditions, effect_signature, uncertainty_model",
+  "candidate_status": "PARTIAL_CANDIDATE",
+  "unresolved_questions": "Weight-space specification language does not exist. Must restrict to symbolic specs in Phase 1.",
+  "prohibited_wording": [
+    "Do not claim FROZEN/FINAL/PROVEN",
+    "Do not claim papers verify N1",
+    "Do not claim external research solves N1"
+  ],
+  "timestamp": "2026-07-14T17:57:23Z"
+}

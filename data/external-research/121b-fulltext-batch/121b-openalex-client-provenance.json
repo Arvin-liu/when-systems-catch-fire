@@ -1,0 +1,30 @@
+{
+  "task": "IGNITION-20260709-121B",
+  "phase": "2_openalex_provenance",
+  "timestamp_utc": "2026-07-14T01:45:00+08:00",
+  "file": "scripts/external-research/openalex_client.py",
+  "source_commit_sha": "5d33b72199973fe78db3e2f2183faed8f471eebc",
+  "source_commit_subject": "feat(120): add openalex_client.py \u2014 free academic search, DOI verification, retraction check, abstract restoration",
+  "blob_sha": "9675ba1ca43348e5107ff18c724d20c55692096b",
+  "file_sha256": "12d03820eb14b27a3263db4e22a4644371985740606dfe57257c73fe02ffc07c",
+  "file_size_bytes": 12457,
+  "line_count": 364,
+  "introducing_commits": [
+    "5d33b72 feat(120): add openalex_client.py \u2014 free academic search, DOI verification, retraction check, abstract restoration"
+  ],
+  "smoke_test": {
+    "search_endpoint": "https://api.openalex.org/works?search=...",
+    "doi_endpoint": "https://api.openalex.org/works/doi:{doi}",
+    "openalex_id_endpoint": "https://api.openalex.org/works/{id}",
+    "retraction_check": "Implemented via work.is_retracted field",
+    "batch_doi": "Implemented via multiple DOI lookups",
+    "auth": "mailto parameter (no API key required)",
+    "status": "VERIFIED_STRUCTURE"
+  },
+  "credential_check": {
+    "api_key_in_file": false,
+    "token_in_file": false,
+    "env_var_references": [],
+    "hardcoded_credentials": false
+  }
+}

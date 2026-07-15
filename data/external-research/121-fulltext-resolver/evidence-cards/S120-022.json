@@ -1,0 +1,43 @@
+{
+  "source_id": "S120-022",
+  "title": "Learning to Reason via Program Generation, Emulation, and Search",
+  "authors": "Anonymous",
+  "year": 2024,
+  "venue": "NeurIPS 2024",
+  "doi_or_identifier": "NeurIPS-2024-401ece9f",
+  "source_family": 3,
+  "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/401ece9f5d1cfa8600c22049ef43930e-Paper-Conference.pdf",
+  "access_channel": "neurips_pdf",
+  "access_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/401ece9f5d1cfa8600c22049ef43930e-Paper-Conference.pdf",
+  "effective_url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/401ece9f5d1cfa8600c22049ef43930e-Paper-Conference.pdf",
+  "access_time_utc": "2026-07-13T16:42:00Z",
+  "version": "published/accepted manuscript",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "267dc68a1a00ff937a2a190c0025155fd9d43edd9dd6836d70e6ecc5c0898bd9",
+  "local_cache_path": ".cache/fulltext/S120-022_neurips_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 650183,
+  "page_count": 24,
+  "sections": [
+    "1 Introduction",
+    "2 COGEX",
+    "3 Program Generation and Emulation",
+    "4 Program Search",
+    "5 Experiments",
+    "6 Related Work",
+    "7 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:cogex",
+    "sec:generation",
+    "sec:search",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Learning to Reason via Program Generation, Emulation, and Search Nathaniel Weir∗† Johns Hopkins University nweir@jhu.edu Muhammad Khalifa∗† University of Michigan khalifam@umich.edu Linlu Qiu∗ MIT linluqiu@mit.edu Orion Weller∗ Johns Hopkins University oweller@cs.jhu.edu Peter Clark Allen Institute for AI peterc@allenai.",
+  "what_the_paper_supports": "COGEX generates pseudo-programs and emulates their execution, including undefined leaf functions filled by the model's knowledge, then searches for the best program. Supports the ignition claim that program generation, emulation, and search can extend reasoning beyond strictly executable code (Function OS node 3 Compiler, node 5 Interpreter, node 7 Validator, node 8 ComposerRouter).",
+  "what_the_paper_does_not_support": "The paper is about extending LLM reasoning via pseudo-programs, not defining a formal function semantics (GAP-015) or equivalence (GAP-017). It does not address weight-space composition (GAP-016) or probabilistic/stochastic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (24 pages, 650183 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

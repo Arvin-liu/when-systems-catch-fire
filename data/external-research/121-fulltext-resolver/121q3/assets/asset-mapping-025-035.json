@@ -1,0 +1,383 @@
+{
+  "step": 23,
+  "batch": "025-035 + master",
+  "count": 11,
+  "mappings": [
+    {
+      "asset_id": "IGN-ASSET-025",
+      "canonical_name": "0019-T9-自主意识函数.md",
+      "path": "统一函数总表/0019-T9-自主意识函数.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 25/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-026",
+      "canonical_name": "0020-T10-缓存倒U型.md",
+      "path": "统一函数总表/0020-T10-缓存倒U型.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 26/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-027",
+      "canonical_name": "0021-T11-生存域函数.md",
+      "path": "统一函数总表/0021-T11-生存域函数.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 27/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-028",
+      "canonical_name": "0022-T12-信息门效率统一.md",
+      "path": "统一函数总表/0022-T12-信息门效率统一.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 28/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-029",
+      "canonical_name": "0023-T13-三效率冲突三角约束.md",
+      "path": "统一函数总表/0023-T13-三效率冲突三角约束.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 29/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-030",
+      "canonical_name": "0024-T14-自举元函数层级.md",
+      "path": "统一函数总表/0024-T14-自举元函数层级.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-015"
+      ],
+      "mapped_nodes": [
+        "N1",
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Bootstrap function specification — defines convergence criteria",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "HIGH",
+      "implementation_risk": "LOW",
+      "notes": "Asset 30/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-031",
+      "canonical_name": "0025-T15-乘法临界漂移统一.md",
+      "path": "统一函数总表/0025-T15-乘法临界漂移统一.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 31/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-032",
+      "canonical_name": "0026-T16-两个反向单调函数相乘必然生成倒U型.md",
+      "path": "统一函数总表/0026-T16-两个反向单调函数相乘必然生成倒U型.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 32/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-033",
+      "canonical_name": "0027-T17-Φ=零温自由能 - Φ与统计力学零温自由能精确等价.md",
+      "path": "统一函数总表/0027-T17-Φ=零温自由能 - Φ与统计力学零温自由能精确等价.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 33/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-034",
+      "canonical_name": "0028-T18-容斥-耦合竞争Ising同构.md",
+      "path": "统一函数总表/0028-T18-容斥-耦合竞争Ising同构.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-017"
+      ],
+      "mapped_nodes": [
+        "N7",
+        "N2"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Isomorphism detection — cross-system structural comparison",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "HIGH",
+      "implementation_risk": "MEDIUM",
+      "notes": "Asset 34/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-035",
+      "canonical_name": "0029-T19-容斥项精确结构.md",
+      "path": "统一函数总表/0029-T19-容斥项精确结构.md",
+      "type": "theorem_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 35/35. Markdown specification, not executable."
+    }
+  ],
+  "timestamp": "2026-07-14T17:58:50Z",
+  "master": {
+    "total_assets": 35,
+    "all_unique": true,
+    "action_summary": {
+      "KEEP": 35
+    },
+    "by_gap": {
+      "GAP-015": [
+        "IGN-ASSET-001",
+        "IGN-ASSET-002",
+        "IGN-ASSET-003",
+        "IGN-ASSET-004",
+        "IGN-ASSET-005",
+        "IGN-ASSET-022",
+        "IGN-ASSET-030"
+      ],
+      "GAP-017": [
+        "IGN-ASSET-003",
+        "IGN-ASSET-034"
+      ],
+      "GAP-019": [
+        "IGN-ASSET-006",
+        "IGN-ASSET-007",
+        "IGN-ASSET-008",
+        "IGN-ASSET-009",
+        "IGN-ASSET-010",
+        "IGN-ASSET-011",
+        "IGN-ASSET-012",
+        "IGN-ASSET-013",
+        "IGN-ASSET-014",
+        "IGN-ASSET-015",
+        "IGN-ASSET-016",
+        "IGN-ASSET-017",
+        "IGN-ASSET-018",
+        "IGN-ASSET-019",
+        "IGN-ASSET-020",
+        "IGN-ASSET-021",
+        "IGN-ASSET-023",
+        "IGN-ASSET-024",
+        "IGN-ASSET-025",
+        "IGN-ASSET-026",
+        "IGN-ASSET-027",
+        "IGN-ASSET-028",
+        "IGN-ASSET-029",
+        "IGN-ASSET-031",
+        "IGN-ASSET-032",
+        "IGN-ASSET-033",
+        "IGN-ASSET-035"
+      ]
+    },
+    "by_node": {
+      "N1": [
+        "IGN-ASSET-001",
+        "IGN-ASSET-002",
+        "IGN-ASSET-003",
+        "IGN-ASSET-004",
+        "IGN-ASSET-005",
+        "IGN-ASSET-022",
+        "IGN-ASSET-030"
+      ],
+      "N9": [
+        "IGN-ASSET-001",
+        "IGN-ASSET-002",
+        "IGN-ASSET-004",
+        "IGN-ASSET-005",
+        "IGN-ASSET-006",
+        "IGN-ASSET-007",
+        "IGN-ASSET-008",
+        "IGN-ASSET-009",
+        "IGN-ASSET-010",
+        "IGN-ASSET-011",
+        "IGN-ASSET-012",
+        "IGN-ASSET-013",
+        "IGN-ASSET-014",
+        "IGN-ASSET-015",
+        "IGN-ASSET-016",
+        "IGN-ASSET-017",
+        "IGN-ASSET-018",
+        "IGN-ASSET-019",
+        "IGN-ASSET-020",
+        "IGN-ASSET-021",
+        "IGN-ASSET-022",
+        "IGN-ASSET-023",
+        "IGN-ASSET-024",
+        "IGN-ASSET-025",
+        "IGN-ASSET-026",
+        "IGN-ASSET-027",
+        "IGN-ASSET-028",
+        "IGN-ASSET-029",
+        "IGN-ASSET-030",
+        "IGN-ASSET-031",
+        "IGN-ASSET-032",
+        "IGN-ASSET-033",
+        "IGN-ASSET-035"
+      ],
+      "N7": [
+        "IGN-ASSET-003",
+        "IGN-ASSET-034"
+      ],
+      "N2": [
+        "IGN-ASSET-034"
+      ]
+    },
+    "priority_queue": [
+      "IGN-ASSET-001",
+      "IGN-ASSET-002",
+      "IGN-ASSET-003",
+      "IGN-ASSET-004",
+      "IGN-ASSET-005",
+      "IGN-ASSET-022",
+      "IGN-ASSET-030",
+      "IGN-ASSET-034",
+      "IGN-ASSET-006",
+      "IGN-ASSET-007",
+      "IGN-ASSET-008",
+      "IGN-ASSET-009",
+      "IGN-ASSET-010",
+      "IGN-ASSET-011",
+      "IGN-ASSET-012",
+      "IGN-ASSET-013",
+      "IGN-ASSET-014",
+      "IGN-ASSET-015",
+      "IGN-ASSET-016",
+      "IGN-ASSET-017",
+      "IGN-ASSET-018",
+      "IGN-ASSET-019",
+      "IGN-ASSET-020",
+      "IGN-ASSET-021",
+      "IGN-ASSET-023",
+      "IGN-ASSET-024",
+      "IGN-ASSET-025",
+      "IGN-ASSET-026",
+      "IGN-ASSET-027",
+      "IGN-ASSET-028",
+      "IGN-ASSET-029",
+      "IGN-ASSET-031",
+      "IGN-ASSET-032",
+      "IGN-ASSET-033",
+      "IGN-ASSET-035"
+    ],
+    "next_phase_recommendation": "Implement N9 (VersionedRegistry) first as it has the strongest evidence base. Then N1 (FunctionSpec) restricted to symbolic specs. Then N4 (Artifact) and N5 (Interpreter)."
+  }
+}

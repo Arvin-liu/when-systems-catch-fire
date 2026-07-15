@@ -1,0 +1,86 @@
+{
+  "ignition_task": "IGNITION-20260709-121A",
+  "created_utc": "2026-07-14T01:15:00Z",
+  "stage_completion": {
+    "CP0_baseline_contamination_credential_audit": {
+      "status": "COMPLETE",
+      "files": ["121-baseline-and-contamination-audit.json", "121-credential-hygiene-audit.json"],
+      "evidence": "Contamination identified in 1111 120 branch (19711 deleted files), credential scan: 4 LOW findings, no key rotation required"
+    },
+    "CP1_program_as_weights_smoke_test": {
+      "status": "COMPLETE",
+      "files": [".cache/fulltext/2607.02512.html", ".cache/fulltext/2607.02512.pdf"],
+      "evidence": "HTML 200 text/html 618169 bytes SHA256 a2f205d7..., PDF 200 application/pdf 1811878 bytes SHA256 546f8334..., text extracted 13147 words with section headers"
+    },
+    "CP2_resolver_providers_6_plus": {
+      "status": "COMPLETE",
+      "files": ["fulltext_resolver.py", "fulltext_fetcher.py", "fulltext_extract.py", "121-fulltext-provider-capability-matrix.jsonl"],
+      "evidence": "12+ providers: arXiv, NeurIPS, PMLR, ACL, JMLR, OpenReview, direct PDF, OpenAlex, Crossref, Unpaywall, Semantic Scholar, Europe PMC"
+    },
+    "CP3_10_evidence_cards": {
+      "status": "COMPLETE",
+      "files": ["121-fulltext-evidence-cards.jsonl", "evidence-cards/"],
+      "evidence": "30 evidence cards produced (target was 10+), 10 source families, all via legal OA channels"
+    },
+    "CP4_20_evidence_cards": {
+      "status": "COMPLETE",
+      "files": ["121-fulltext-evidence-cards.jsonl"],
+      "evidence": "30 FULLTEXT_REVIEWED cards, exceeding 20 minimum. Families: arxiv_pdf(19), neurips_pdf(3), direct_pdf(6), pmlr(1), jmlr_pdf(1)"
+    },
+    "CP5_gap_readjudications": {
+      "status": "COMPLETE",
+      "files": ["121-gap-015-020-readjudications.jsonl"],
+      "evidence": "6 GAPs readjudicated: GAP-015/016/017 = RESEARCH_CANDIDATE_INSUFFICIENT_EVIDENCE, GAP-018/019/020 = ARCHITECTURE_CANDIDATE_READY_FOR_REVIEW"
+    },
+    "CP6_validator_reports": {
+      "status": "COMPLETE",
+      "files": ["121-validator.py", "121-legal-fulltext-resolver-report.md", "121-function-paradigm-fulltext-review-report.md", "legal-fulltext-resolution-protocol.md"],
+      "evidence": "Validator script and 3 report documents produced"
+    },
+    "CP7_openalex_migration": {
+      "status": "COMPLETE",
+      "files": ["121-openalex-client-migration-record.json", "scripts/external-research/openalex_client.py"],
+      "evidence": "Migrated from commit 5d33b72, SHA256 verified, smoke test passed (keyword search, DOI query, batch DOI verification)"
+    },
+    "CP8_function_os_readjudication": {
+      "status": "COMPLETE",
+      "files": ["121-function-os-node-readjudication.json"],
+      "evidence": "9 Function OS nodes readjudicated: N1 PARTIALLY_SUPPORTED, N2 STRONGLY_SUPPORTED, N3 PARTIALLY_SUPPORTED, N4 STRONGLY_SUPPORTED, N5 STRONGLY_SUPPORTED, N6 PARTIALLY_SUPPORTED, N7 PARTIALLY_SUPPORTED, N8 PARTIALLY_SUPPORTED, N9 STRONGLY_SUPPORTED"
+    },
+    "CP9_fulltext_source_registry": {
+      "status": "COMPLETE",
+      "files": ["121-fulltext-source-registry.jsonl"],
+      "evidence": "84 sources registered with SHA256, content_type, file_size, local_cache_path"
+    },
+    "CP10_fulltext_failure_register": {
+      "status": "COMPLETE",
+      "files": ["121-fulltext-failure-register.jsonl"],
+      "evidence": "10 failures recorded with failure_reason, http_status, attempted_url"
+    },
+    "CP11_function_paradigm_cards_fulltext_backed": {
+      "status": "COMPLETE",
+      "files": ["121-function-paradigm-cards-fulltext-backed.jsonl"],
+      "evidence": "10 function paradigm cards with fulltext backing assessment"
+    },
+    "CP12_template_risk_reaudit": {
+      "status": "COMPLETE",
+      "files": ["121-template-risk-reaudit.json"],
+      "evidence": "Template risk reaudit completed"
+    },
+    "CP13_1111_quarantine_report": {
+      "status": "NOT_STARTED",
+      "files": [],
+      "evidence": "Standalone quarantine report file not created. Quarantine info embedded in 121-baseline-and-contamination-audit.json."
+    }
+  },
+  "summary": {
+    "COMPLETE": 12,
+    "PARTIAL": 0,
+    "NOT_STARTED": 1,
+    "INVALID": 0,
+    "NEEDS_REPAIR": 1
+  },
+  "needs_repair_detail": "121-function-os-node-readjudication.json has .json extension but contains JSONL content (9 JSON objects, one per line). Should be renamed to .jsonl or wrapped as JSON array.",
+  "kimi_model_used": "qclaw/pool-kimi-k2.7-code-highspeed",
+  "kiri_model_deviation": "Task file specified GLM-5.2 + max; Kimi used kimi-k2.7-code-highspeed + adaptive. This is recorded but 121A does not re-adjudicate model choice."
+}

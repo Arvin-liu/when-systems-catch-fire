@@ -1,0 +1,13 @@
+{
+  "spec": "v0.2 ID / Version / Hash Convention",
+  "function_id_pattern": "FN-YYYYMMDD-NNNN",
+  "representation_id_pattern": "REP-FN-YYYYMMDD-NNNN-REV",
+  "compiled_id_pattern": "CMP-FN-YYYYMMDD-NNNN-REV",
+  "artifact_id_pattern": "ART-FN-YYYYMMDD-NNNN-REV",
+  "execution_id_pattern": "EXE-FN-YYYYMMDD-NNNN-REV-N",
+  "trace_id_pattern": "TRC-FN-YYYYMMDD-NNNN-REV-N",
+  "validation_id_pattern": "VAL-FN-YYYYMMDD-NNNN-REV",
+  "hash_algorithm": "SHA-256",
+  "hash_encoding": "hex (64 chars)",
+  "version_semantics": "MAJOR.MINOR.PATCH (semver)"
+}

@@ -1,0 +1,2188 @@
+{
+  "task_id": "IGNITION-20260709-084",
+  "executor": "QClaw",
+  "model": "qclaw/pool-glm-5.2",
+  "reasoning_level": "max",
+  "start_time": "2026-07-13T16:18:00+08:00",
+  "completion_time": "2026-07-13T16:28:57.374150+08:00",
+  "status": "MAX_ADJUDICATION_COMPLETE_ARCHITECTURE_TRUTH_FREEZE_CANDIDATE",
+  "total_records": 353,
+  "completed_records": 353,
+  "remaining_records": 0,
+  "current_batch": null,
+  "completed_batches": [
+    "084-batch-1",
+    "084-batch-2",
+    "084-batch-3",
+    "084-batch-4",
+    "084-batch-5",
+    "084-batch-6",
+    "084-batch-7",
+    "084-batch-8",
+    "084-batch-9",
+    "084-batch-10",
+    "084-batch-11",
+    "084-batch-12",
+    "084-batch-13",
+    "084-batch-14",
+    "084-batch-15"
+  ],
+  "primary_complete_rate": 1.0,
+  "adversarial_complete_rate": 1.0,
+  "reconciled_complete_rate": 1.0,
+  "primary_adversarial_consistent_rate": 0.9971671388101983,
+  "main_status_distribution": {
+    "RETAIN_FORMAL_PROPOSITION_UNPROVED": 2,
+    "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE": 184,
+    "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION": 53,
+    "RETAIN_SCOPED_DEFINITION": 113,
+    "DOWNGRADE_TO_STRUCTURAL_ANALOGY": 1
+  },
+  "category_results": {
+    "P1_proof_equivalence": {
+      "total": 2,
+      "results": [
+        {
+          "stable_id": "T4",
+          "decision": "RETAIN_FORMAL_PROPOSITION_UNPROVED",
+          "proof_status": "UNPROVED",
+          "consistent": true
+        },
+        {
+          "stable_id": "T10",
+          "decision": "RETAIN_FORMAL_PROPOSITION_UNPROVED",
+          "proof_status": "UNPROVED",
+          "consistent": true
+        }
+      ]
+    },
+    "P4_structural_isomorphism": {
+      "total": 173,
+      "results": [
+        {
+          "stable_id": "T18",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "T26",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "T30",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "T38",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D36",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D53",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D62",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D66",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D67",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D72",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D73",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D100",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D123",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D124",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D126",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D127",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D164",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D169",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D176",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D177",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D178",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D179",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D181",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D182",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D183",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D184",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D185",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D186",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D187",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D188",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D189",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D190",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D191",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D192",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D193",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D194",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D195",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D196",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D197",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D198",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D199",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D200",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D201",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D202",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D203",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D204",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D205",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D206",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D207",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D208",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D209",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D210",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D211",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D212",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D213",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D214",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D215",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D217",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D218",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D219",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D221",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D224",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D225",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D226",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D227",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D228",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D229",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D230",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D231",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D232",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D233",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D234",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D235",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D237",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D238",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D239",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D240",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D241",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D242",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D243",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D244",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D245",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D246",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D247",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D248",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D249",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D250",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D251",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D252",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D253",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D254",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D256",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D258",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D259",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D260",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D261",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D262",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D263",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D264",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D265",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D266",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D267",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D268",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D269",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D270",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D361",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D362",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D363",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D364",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D365",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D366",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D367",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D368",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D369",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D370",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D371",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D372",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D373",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D374",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D375",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D376",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D377",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D378",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D379",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D380",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D381",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D382",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D383",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D384",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D385",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D386",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D387",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D388",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D389",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D390",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D391",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D392",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D393",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D394",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D395",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D396",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D397",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D398",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D399",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D400",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D401",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D402",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D403",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D404",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D405",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D406",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D407",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D408",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D409",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D410",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D411",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D412",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D413",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D414",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D415",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D416",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D417",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D418",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D419",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D420",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D421",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D422",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D423",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D424",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D494",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D528",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D529",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D602",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        }
+      ]
+    },
+    "P5_causal": {
+      "total": 53,
+      "results": [
+        {
+          "stable_id": "T50",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D65",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D90",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D98",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D110",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D114",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D115",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D116",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D131",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D132",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D133",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D134",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D135",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D136",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D137",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D141",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D149",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D223",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D283",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D293",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D295",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D296",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D297",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D298",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D299",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D300",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D302",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D304",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D313",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D318",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D320",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D322",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D324",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D327",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D334",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D338",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D340",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D346",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D349",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D350",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D352",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D354",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D359",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D516",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D517",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D518",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D519",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D524",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D527",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D531",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D533",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D534",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D535",
+          "decision": "DOWNGRADE_TO_EMPIRICAL_ASSOCIATION",
+          "proof_status": "PENDING",
+          "consistent": true
+        }
+      ]
+    },
+    "P7_precise_cross_domain": {
+      "total": 3,
+      "results": [
+        {
+          "stable_id": "D129",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D522",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D532",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        }
+      ]
+    },
+    "P8_other_strong": {
+      "total": 122,
+      "results": [
+        {
+          "stable_id": "T17",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "T20",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "T34",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "T35",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "T37",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "T39",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "T45",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "T55",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D1",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D23",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D40",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D41",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D42",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D43",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D44",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D45",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D46",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D47",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D48",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D49",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D50",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D51",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D52",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D54",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D55",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D56",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D57",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D58",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D59",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D60",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D61",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D63",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D64",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D85",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D91",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D92",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D109",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D118",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D120",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D130",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D150",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D170",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D172",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D236",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D290",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D291",
+          "decision": "DOWNGRADE_TO_STRUCTURAL_ANALOGY",
+          "proof_status": "PENDING",
+          "consistent": false
+        },
+        {
+          "stable_id": "D292",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D294",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D301",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D306",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D308",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D314",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D315",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D316",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D317",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D319",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D321",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D323",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D325",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D326",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D329",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D330",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D335",
+          "decision": "DOWNGRADE_TO_NATURAL_LANGUAGE_CANDIDATE",
+          "proof_status": "NOT_APPLICABLE",
+          "consistent": true
+        },
+        {
+          "stable_id": "D336",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D337",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D339",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D342",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D343",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D344",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D347",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D348",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D355",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D356",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D357",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D358",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D360",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D463",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D471",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D472",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D473",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D474",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D475",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D476",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D477",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D478",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D480",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D481",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D482",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D483",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D484",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D485",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D486",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D487",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D488",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D490",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D491",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D492",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D493",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D495",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D497",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D500",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D501",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D502",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D503",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D504",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D505",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D506",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D507",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D508",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D509",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D511",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D512",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D513",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D514",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D515",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D523",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D525",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D526",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D530",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D538",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D540",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        },
+        {
+          "stable_id": "D573",
+          "decision": "RETAIN_SCOPED_DEFINITION",
+          "proof_status": "PENDING",
+          "consistent": true
+        }
+      ]
+    }
+  },
+  "blockers": [],
+  "notes": "All 353 records adjudicated with double-pass adversarial review. Validator passed with 0 errors."
+}

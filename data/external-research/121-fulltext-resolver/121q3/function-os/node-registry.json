@@ -1,0 +1,265 @@
+{
+  "step": 9,
+  "action": "FUNCTION_OS_NODE_REGISTRY_AND_SYNTHESIS_PROTOCOL",
+  "timestamp": "2026-07-14T17:56:09Z",
+  "nodes": {
+    "N1": {
+      "canonical_name": "FunctionSpec",
+      "canonical_definition": "Formal specification of a function including preconditions, postconditions, effect signature, and uncertainty model",
+      "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "inputs": "natural_language_description + mathematical_definition",
+      "outputs": "structured_function_specification",
+      "preconditions": "Not specified in 120 overlay",
+      "invariants": [],
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "evidence_sources": [
+        "S120-047",
+        "S120-050",
+        "S120-001",
+        "S120-007",
+        "S120-017",
+        "S120-018",
+        "S120-020",
+        "S120-053"
+      ],
+      "linked_gaps": [
+        "GAP-015",
+        "GAP-017",
+        "GAP-020"
+      ],
+      "candidate_status": "PENDING_SYNTHESIS",
+      "prohibited_wording": "HIGH — without a formal spec, equivalence, composition, and verification claims are under-specified."
+    },
+    "N2": {
+      "canonical_name": "Representation",
+      "canonical_definition": "Machine-readable encoding of a function (weights, code, mathematical formula, AST)",
+      "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "inputs": "FunctionSpec",
+      "outputs": "encoded_function_artifact",
+      "preconditions": "Not specified in 120 overlay",
+      "invariants": [],
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "evidence_sources": [
+        "S120-001",
+        "S120-002",
+        "S120-004",
+        "S120-009",
+        "S120-027",
+        "S120-030",
+        "S120-035"
+      ],
+      "linked_gaps": [
+        "GAP-016",
+        "GAP-017"
+      ],
+      "candidate_status": "PENDING_SYNTHESIS",
+      "prohibited_wording": "LOW — representation is demonstrated, but cross-representation equivalence is not."
+    },
+    "N3": {
+      "canonical_name": "Compiler",
+      "canonical_definition": "Transforms FunctionSpec + Representation into executable artifact",
+      "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "inputs": "FunctionSpec + Representation",
+      "outputs": "compiled_artifact",
+      "preconditions": "Not specified in 120 overlay",
+      "invariants": [],
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "evidence_sources": [
+        "S120-001",
+        "S120-007",
+        "S120-009",
+        "S120-017",
+        "S120-018",
+        "S120-020",
+        "S120-021",
+        "S120-022",
+        "S120-075"
+      ],
+      "linked_gaps": [],
+      "candidate_status": "PENDING_SYNTHESIS",
+      "prohibited_wording": "MEDIUM-HIGH — multiple compilers will be needed, or a meta-compiler must be built."
+    },
+    "N4": {
+      "canonical_name": "Artifact",
+      "canonical_definition": "Compiled, versioned, hashable function artifact",
+      "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "inputs": "Compiler output",
+      "outputs": "versioned_artifact_with_hash",
+      "preconditions": "Not specified in 120 overlay",
+      "invariants": [],
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "evidence_sources": [
+        "S120-001",
+        "S120-009",
+        "S120-035",
+        "S120-039",
+        "S120-045",
+        "S120-046"
+      ],
+      "linked_gaps": [
+        "GAP-019"
+      ],
+      "candidate_status": "PENDING_SYNTHESIS",
+      "prohibited_wording": "LOW — artifacts are small and reusable, but provenance and versioning must be added."
+    },
+    "N5": {
+      "canonical_name": "Interpreter",
+      "canonical_definition": "Executes function artifact with given inputs",
+      "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "inputs": "Artifact + input_values",
+      "outputs": "execution_result",
+      "preconditions": "Not specified in 120 overlay",
+      "invariants": [],
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "evidence_sources": [
+        "S120-001",
+        "S120-007",
+        "S120-017",
+        "S120-021",
+        "S120-027",
+        "S120-030",
+        "S120-053",
+        "S120-055",
+        "S120-064"
+      ],
+      "linked_gaps": [
+        "GAP-018",
+        "GAP-020"
+      ],
+      "candidate_status": "PENDING_SYNTHESIS",
+      "prohibited_wording": "LOW — execution is feasible, but effect tracking and cross-representation interpretation are not yet unified."
+    },
+    "N6": {
+      "canonical_name": "ExecutionTrace",
+      "canonical_definition": "Detailed log of function execution including inputs, outputs, intermediate states, and timing",
+      "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "inputs": "Interpreter execution",
+      "outputs": "structured_trace_log",
+      "preconditions": "Not specified in 120 overlay",
+      "invariants": [],
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "evidence_sources": [
+        "S120-017",
+        "S120-018",
+        "S120-021",
+        "S120-022",
+        "S120-053",
+        "S120-055",
+        "S120-058",
+        "S120-070"
+      ],
+      "linked_gaps": [
+        "GAP-018"
+      ],
+      "candidate_status": "PENDING_SYNTHESIS",
+      "prohibited_wording": "MEDIUM — traces are available but not yet a unified, queryable layer."
+    },
+    "N7": {
+      "canonical_name": "Validator",
+      "canonical_definition": "Validates function artifacts against specifications and evidence",
+      "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "inputs": "Artifact + FunctionSpec + evidence",
+      "outputs": "validation_result (pass/fail/warning)",
+      "preconditions": "Not specified in 120 overlay",
+      "invariants": [],
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "evidence_sources": [
+        "S120-018",
+        "S120-020",
+        "S120-021",
+        "S120-047",
+        "S120-050",
+        "S120-070"
+      ],
+      "linked_gaps": [
+        "GAP-015",
+        "GAP-017"
+      ],
+      "candidate_status": "PENDING_SYNTHESIS",
+      "prohibited_wording": "HIGH — empirical validation is not equivalent to formal verification."
+    },
+    "N8": {
+      "canonical_name": "ComposerRouter",
+      "canonical_definition": "Composes and routes between multiple functions based on task requirements",
+      "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "inputs": "task_description + available_functions",
+      "outputs": "execution_plan",
+      "preconditions": "Not specified in 120 overlay",
+      "invariants": [],
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "evidence_sources": [
+        "S120-002",
+        "S120-009",
+        "S120-020",
+        "S120-031",
+        "S120-035",
+        "S120-036",
+        "S120-039",
+        "S120-045",
+        "S120-046",
+        "S120-070"
+      ],
+      "linked_gaps": [
+        "GAP-016"
+      ],
+      "candidate_status": "PENDING_SYNTHESIS",
+      "prohibited_wording": "MEDIUM-HIGH — composition works in practice but cannot yet be claimed as strict function composition."
+    },
+    "N9": {
+      "canonical_name": "VersionedRegistry",
+      "canonical_definition": "Central registry of all function artifacts with version history and provenance",
+      "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+      "inputs": "new_artifact + metadata",
+      "outputs": "registered_artifact_with_version",
+      "preconditions": "Not specified in 120 overlay",
+      "invariants": [],
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "evidence_sources": [
+        "S120-011",
+        "S120-031",
+        "S120-035",
+        "S120-036",
+        "S120-039",
+        "S120-065",
+        "S120-070"
+      ],
+      "linked_gaps": [
+        "GAP-018",
+        "GAP-019"
+      ],
+      "candidate_status": "PENDING_SYNTHESIS",
+      "prohibited_wording": "LOW — registry can be built, but interoperability and provenance standards are needed."
+    }
+  },
+  "evidence_inclusion_rules": {
+    "VERIFIED": "Full evidence — can support affirmative claims",
+    "CORRECTED": "Full evidence — can support claims with corrected metadata",
+    "UNKNOWN": "Limited support — cannot anchor affirmative conclusions alone",
+    "BLOCKED": "Excluded — cannot support any affirmative conclusion",
+    "NO_CANONICAL_RECORD": "Excluded — no evidence available"
+  },
+  "prohibited_for_all_nodes": [
+    "FROZEN",
+    "FINAL",
+    "PROVEN",
+    "Claims that 'papers verify Function OS'",
+    "Claims that external research 'solves' a node"
+  ],
+  "interface_specification": {
+    "N1_to_N3": "FunctionSpec → Compiler (specification input)",
+    "N1_to_N7": "FunctionSpec → Validator (specification for validation)",
+    "N2_to_N3": "Representation → Compiler (representation to compile)",
+    "N2_to_N7": "Representation → Validator (representation to validate)",
+    "N3_to_N4": "Compiler → Artifact (compilation output)",
+    "N4_to_N5": "Artifact → Interpreter (artifact to execute)",
+    "N4_to_N9": "Artifact → VersionedRegistry (artifact to register)",
+    "N5_to_N6": "Interpreter → ExecutionTrace (execution output)",
+    "N6_to_N7": "ExecutionTrace → Validator (trace for validation)",
+    "N6_to_N9": "ExecutionTrace → VersionedRegistry (trace for provenance)",
+    "N8_to_N4": "ComposerRouter → Artifact (composed artifact)",
+    "N8_to_N2": "ComposerRouter → Representation (composition of representations)",
+    "N9_to_N8": "VersionedRegistry → ComposerRouter (registry for composition)"
+  },
+  "min_closed_loop": "N1(spec) → N3(compile) → N4(artifact) → N5(interpret) → N6(trace) → N7(validate) → N1(spec check)",
+  "no_freeze_this_round": true
+}

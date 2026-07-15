@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "migration_coverage",
+    "semantic_adjudication",
+    "classification_basis_076",
+    "content_truth_status_076",
+    "remaining_registry_objects"
+  ],
+  "properties": {
+    "migration_coverage": {
+      "type": "object",
+      "required": [
+        "status",
+        "covered",
+        "total",
+        "rate"
+      ]
+    },
+    "semantic_adjudication": {
+      "type": "object",
+      "required": [
+        "status",
+        "adjudicated_registry_objects",
+        "total_registry_objects",
+        "rate"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

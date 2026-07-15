@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-053",
+  "title": "Handlers of Algebraic Effects",
+  "authors": "Plotkin, G.D., Pretnar, M.",
+  "year": 2009,
+  "venue": "Journal of Logic and Computation",
+  "doi_or_identifier": "10.1093/logcom/exp023",
+  "source_family": 8,
+  "url": "https://homepages.inf.ed.ac.uk/gdp/publications/Effect_Handlers.pdf",
+  "access_channel": "direct_pdf",
+  "access_url": "https://homepages.inf.ed.ac.uk/gdp/publications/Effect_Handlers.pdf",
+  "effective_url": "https://homepages.inf.ed.ac.uk/gdp/publications/Effect_Handlers.pdf",
+  "access_time_utc": "2026-07-13T16:43:50Z",
+  "version": "published/accepted manuscript",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "310e168be020973a1b7e43ffe4eac86ce4119a8c3cfe6a31b19c670a6c88da0e",
+  "local_cache_path": ".cache/fulltext/S120-053_direct_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 214285,
+  "page_count": 15,
+  "sections": [
+    "1 Introduction",
+    "2 Algebraic Effects",
+    "3 Handlers",
+    "4 Examples",
+    "5 Semantics",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:effects",
+    "sec:handlers",
+    "sec:semantics"
+  ],
+  "abstract_snippet": "--- Page 1 --- Handlers of Algebraic Eﬀects Gordon Plotkin ⋆ and Matija Pretnar ⋆⋆ Laboratory for Foundations of Computer Science, School of Informatics, University of Edinburgh, Scotland Abstract. We present an algebraic treatment of exception handlers and, more generally, introduce handlers for other computational eﬀects repre- sentable by an algebraic theory.",
+  "what_the_paper_supports": "Handlers of algebraic effects separate effect signatures from their implementation, providing a modular way to track and interpret side effects (state, I/O, nondeterminism, exceptions). Directly supports the ignition claim that an effect system can track side effects in function execution (GAP-018, Function OS node 1 FunctionSpec). It also relates to probabilistic effects (GAP-020) because the free-model monad can represent probabilistic computations.",
+  "what_the_paper_does_not_support": "The paper is theoretical and does not provide a concrete implementation integrated with ignition's function registry. It does not address weight-space composition (GAP-016) or general equivalence checking (GAP-017). It does not define a full precondition/postcondition language (GAP-015).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (15 pages, 214285 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

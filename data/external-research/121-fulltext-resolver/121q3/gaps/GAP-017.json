@@ -1,0 +1,71 @@
+{
+  "gap_id": "GAP-017",
+  "canonical_title": "No equivalence checker across different function representations",
+  "canonical_definition": "Families 1, 3, 4, 5, 6 all define functions with different carriers (weights, code, operators, adapters, merged models) but ignition has no framework for determining equivalence between representations.",
+  "source_path": "120-gap-015-020-adjudications.jsonl + 121-gap-015-020-readjudications.jsonl",
+  "dependencies": [
+    "GAP-015"
+  ],
+  "affected_nodes": [
+    "N7",
+    "N2",
+    "N1"
+  ],
+  "affected_assets": [],
+  "direct_evidence": {
+    "sources": [
+      "S120-035",
+      "S120-039",
+      "S120-045"
+    ],
+    "summary": "S120-047 provides SMT-based equational reasoning for functional programs. S120-030 (FNO) gives approximation theory for neural operators."
+  },
+  "structural_evidence": {
+    "sources": [],
+    "summary": "S120-017/018 show structural equivalence via execution feedback."
+  },
+  "analogical_evidence": {
+    "sources": [
+      "S120-001",
+      "S120-003"
+    ],
+    "summary": "121CX entries provide indirect support."
+  },
+  "negative_evidence": {
+    "sources": [
+      "S120-016",
+      "S120-024",
+      "S120-046",
+      "S120-075",
+      "S120-076"
+    ],
+    "summary": "No source provides cross-representation equivalence (code vs weights vs spec). Neural operator bounds are for PDE operators only. Weight-space similarity is behavioral, not semantic."
+  },
+  "strongest_verified_sources": [
+    "S120-047",
+    "S120-030"
+  ],
+  "blocked_or_unknown_sources_excluded": [
+    "S120-016",
+    "S120-024",
+    "S120-046",
+    "S120-075",
+    "S120-076"
+  ],
+  "supported_claims": [
+    "SMT-based equational reasoning exists for symbolic code",
+    "Approximation theory exists for neural operators within specific domains"
+  ],
+  "unsupported_claims": [
+    "No cross-representation equivalence checker exists",
+    "No semantic equivalence between code, weights, and specs"
+  ],
+  "residual_gap": "GAP-017 is largely unsatisfied. The Function OS should not claim strict equivalence between code, weights, and specs without a dedicated verification layer.",
+  "adjudication_status": "UNRESOLVED_INSUFFICIENT_EVIDENCE",
+  "confidence_basis": "LOW. No source provides cross-representation equivalence. Existing tools cover only narrow domains.",
+  "recommended_next_action": "Do not claim equivalence across representations. Restrict N7 (Validator) to same-representation validation in Phase 1.",
+  "prohibited_wording": "Do not claim 'papers show equivalence between code and weights' or 'cross-representation verification is solved'.",
+  "previous_adjudication_120": "FIELD_ENHANCEMENT_ONLY",
+  "previous_readjudication_121": "RESEARCH_CANDIDATE_INSUFFICIENT_EVIDENCE",
+  "timestamp": "2026-07-14T17:55:00Z"
+}

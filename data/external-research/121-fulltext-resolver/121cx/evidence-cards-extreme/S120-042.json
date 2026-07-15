@@ -1,0 +1,328 @@
+{
+  "source_id": "S120-042",
+  "canonical_title": "A Systematic Study of In-the-Wild Model Merging for Large Language Models",
+  "title": "A Systematic Study of In-the-Wild Model Merging for Large Language Models",
+  "authors": [
+    "Oğuz Kağan Hitit",
+    "Leander Girrbach",
+    "Zeynep Akata"
+  ],
+  "year": 2026,
+  "version": "TMLR 03/2026; arXiv:2511.21437v2, 2026-03-29",
+  "doi_or_identifier": "OpenReview:6zSIyrqS7J; arXiv:2511.21437v2",
+  "identifier": "arXiv:2511.21437v2",
+  "url": "https://arxiv.org/abs/2511.21437v2",
+  "source_family": 6,
+  "source_family_name": "model merging and task arithmetic",
+  "license": "TMLR/OpenReview publication and arXiv distribution terms apply to the paper; the reviewed code repository declares MIT",
+  "sha256": "483db8648260a27c4286a039f140e570d2584e67db134bd06e1c48cf3ffa5d50",
+  "file_size_bytes": 5798877,
+  "page_count": 39,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_sha256_match": true,
+    "registered_file_size_match": true,
+    "registered_page_count_match": true,
+    "arxiv_api_identity": "http://arxiv.org/abs/2511.21437v2",
+    "published_at_utc": "2025-11-26T14:28:11Z",
+    "updated_at_utc": "2026-03-29T15:10:49Z",
+    "publication_identity": "Transactions on Machine Learning Research, March 2026; reviewed OpenReview forum 6zSIyrqS7J",
+    "pdf_visually_checked_pages": [
+      1,
+      3,
+      5,
+      7,
+      8,
+      9,
+      12,
+      13,
+      19,
+      25,
+      30,
+      31,
+      38,
+      39
+    ],
+    "sources_cross_checked": [
+      "exact registered arXiv v2 PDF",
+      "arXiv API metadata",
+      "TMLR/OpenReview publication identity",
+      "paper-linked MergeVal repository at exact commit"
+    ],
+    "code_artifact": {
+      "repository": "https://github.com/kaganhitit11/mergeval",
+      "reviewed_commit": "2271ca5fa56802f8c10d53f2658dd24e13a02121",
+      "repository_license": "MIT",
+      "review_scope": "All six tracked files and 663 total lines at the exact commit; README, example configuration, mergeval.py, requirements and license",
+      "static_checks": "Python syntax compilation passed",
+      "runtime_checks": "Dependencies, checkpoint merges and benchmark evaluations were not run because they require large model downloads and GPU execution",
+      "artifact_boundary": "The repository is a generic MergeKit plus lm-eval-harness wrapper. It contains no study configurations, sampled subsets, random seed, result tables, plots, checkpoint revisions, subspace-method implementations, tests, CI, tagged release or immutable dependency lock."
+    }
+  },
+  "sections_reviewed": [
+    "Abstract, introduction, research questions and contributions",
+    "Related work and method definitions",
+    "In-the-wild checkpoint selection, merging protocol and evaluation suite",
+    "Task Arithmetic, TIES and ModelStock results across four bases",
+    "Constructive-interference comparison against the best fine-tuned checkpoint",
+    "TSV-Merge, Iso-C and Subspace Boosting experiments",
+    "Discussion, limitations, conclusion and broader-impact statement",
+    "All supplementary checkpoint lists, hyperparameter ablations, cosine-similarity plots, homogeneous-domain study and lm-eval configuration",
+    "Paper-linked MergeVal repository at exact commit"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "§§1-3 and Table 1, pp. 1-8",
+      "checked_for": "study questions, four base models, 48 public fine-tuned checkpoints, sampling design, merge methods, 16 evaluation tasks and primary accuracy trends"
+    },
+    {
+      "anchors": "§4 and Tables 2-3, Figs. 4-6, pp. 8-12",
+      "checked_for": "best-expert comparisons, task-vector norms, subspace variants, sample variability and bounded constructive-interference claims"
+    },
+    {
+      "anchors": "§§5-6, pp. 12-14",
+      "checked_for": "heterogeneous versus homogeneous interpretation, limitations, conclusion and ethical boundary"
+    },
+    {
+      "anchors": "Appendices A-B, pp. 19-24",
+      "checked_for": "all source checkpoint names and study hyperparameters"
+    },
+    {
+      "anchors": "Appendix C, eq. 12 and Figs. 11-18, pp. 25-30",
+      "checked_for": "normalization, cancellation, parameter sensitivity and same-suite hyperparameter selection"
+    },
+    {
+      "anchors": "Appendices D-F, Figs. 19-28 and Table 6, pp. 30-39",
+      "checked_for": "pairwise task-vector similarity, homogeneous math-medical study and exact lm-eval few-shot defaults"
+    },
+    {
+      "anchors": "mergeval.py, README.md, examples/example.yaml and requirements.txt at 2271ca5",
+      "checked_for": "merge/evaluation control flow, output identity, cleanup behavior, seed handling, dependency reproducibility and correspondence to the published study"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "Across four base models and heterogeneous public fine-tunes, normalized Task Arithmetic is the only tested method that consistently improves over the base as more checkpoints are merged.",
+      "anchors": "Table 1 and Fig. 3"
+    },
+    {
+      "claim": "Some normalized Task Arithmetic merges outperform the best individual fine-tuned checkpoint under the paper's 16-task average, but this does not hold for every base.",
+      "anchors": "Table 2"
+    },
+    {
+      "claim": "TIES, ModelStock and three tested subspace variants often underperform normalized Task Arithmetic in the deliberately heterogeneous in-the-wild pool.",
+      "anchors": "Tables 1 and 3, Figs. 3 and 6"
+    },
+    {
+      "claim": "With equal coefficients and MergeKit normalization, the paper's Task Arithmetic update is the mean of source task deltas; at lambda equals one the resulting parameters are algebraically the arithmetic mean of the fine-tuned checkpoints.",
+      "anchors": "eq. 12, Appendix C.1 and the stated lambda equals one main setting"
+    },
+    {
+      "claim": "The authors attribute normalized Task Arithmetic stability to cancellation among largely orthogonal or oppositely signed task deltas and show a normalization-off ablation that degrades as scale increases.",
+      "anchors": "Appendices C.1 and D, Figs. 11-12 and 19-26"
+    },
+    {
+      "claim": "A smaller homogeneous Qwen study with three math and three medical experts reports little average interference when all six are merged.",
+      "anchors": "Appendix E, Figs. 27-28"
+    }
+  ],
+  "function_concept_used_by_paper": "A compatible base checkpoint and its fine-tuned descendants define task-vector carriers. A static merge recipe selects a subset, method and hyperparameters, constructs one checkpoint, then an external benchmark interpreter evaluates the compiled artifact. The source studies composition and validation, not a general Function OS.",
+  "representation_or_carrier": {
+    "base_models": "Llama-3.2-3B-Instruct, Llama-3.1-8B-Instruct, Qwen3-4B and Qwen3-8B",
+    "source_models": "12 publicly named fine-tuned checkpoints per base, 48 total, without immutable model revisions or hashes",
+    "delta_carrier": "task vector delta_i equals fine-tuned checkpoint i minus its shared base",
+    "subspace_carriers": "singular-vector decompositions, isotropic projections and boosted low-energy directions",
+    "evaluation_carrier": "mean accuracy over 16 lm-eval-harness tasks plus per-subset dispersion",
+    "boundary": "Tensor alignment through a common base supports parameter arithmetic but does not establish semantic, safety, data-lineage or license compatibility."
+  },
+  "specification_language": "The paper specifies model names, subset sizes, methods, central equations, main hyperparameters, benchmark task names, precision and few-shot defaults in prose and tables. It does not publish the actual experiment configurations, immutable checkpoint and library revisions, sampled-subset list, random seed, chat-template policy as executable data, output schema, acceptance threshold, provenance manifest or lifecycle contract. The example repository YAML is generic and is not the study specification.",
+  "compiler_or_generator": {
+    "task_arithmetic": "base plus lambda times the normalized weighted sum of task deltas; with equal weights normalization turns this into an average delta",
+    "ties": "trim low-magnitude deltas, elect a consensus sign and merge sign-consistent parameters",
+    "modelstock": "derive a mixing ratio from geometric relationships among checkpoints under its design assumptions",
+    "subspace_variants": "apply TSV-Merge, Iso-C or Subspace Boosting around Task Arithmetic or TIES",
+    "implementation": "MergeKit is used for the main methods; the linked MergeVal wrapper launches MergeKit as a subprocess and then lm-eval-harness",
+    "boundary": "No study-exact compiler configuration or released merged checkpoint was available for deterministic reproduction."
+  },
+  "interpreter_or_runtime": "Every compiled checkpoint uses the ordinary language-model forward pass and lm-eval-harness task adapters; there is no input-conditioned expert router. The published evaluation uses float16, automatic batch size, task-default decoding and few-shot counts, and no model-specific chat template. The linked wrapper runs merge then evaluation sequentially, but its default evaluation path is not wired to the generated timestamped merge directory.",
+  "composition_rule": "The central confirmed rule is bounded static composition of shared-base checkpoints. Normalized equal-weight Task Arithmetic averages deltas and, at lambda one, weights; TIES and subspace transformations modify this carrier before addition. Reported gains are benchmark-relative and method-, base-, checkpoint-pool- and hyperparameter-dependent, not a universal semantic union operator.",
+  "state_or_effect_model": "Required state includes base and fine-tuned checkpoint identities, subset membership, method and hyperparameters, merge output, evaluation harness configuration and result rows. Observable effects are aggregate and per-task accuracy, difference from base or best fine-tune, task-vector norm and cosine similarity. The paper lacks immutable identities, transactionality, privacy and license effects, safety evaluation, persistent execution receipts, promotion, rollback, supersession and retirement.",
+  "uncertainty_model": "For subset sizes 2, 4, 6, 8 and 10 the study samples 15 checkpoint combinations and plots or tabulates variation across those subsets; for 12 checkpoints there is only one combination. This is subset heterogeneity, not repeated-run, seed or measurement uncertainty. No confidence intervals, hypothesis tests, multiple-comparison control or independent held-out hyperparameter selection are reported. Hyperparameters are selected through ablations on the same evaluation suite, and the random subset seed is absent.",
+  "validation_regime": {
+    "bases": 4,
+    "fine_tuned_checkpoints_per_base": 12,
+    "subset_sizes": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "sampled_combinations": "15 per subset size except the unique all-12 combination",
+    "tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "piqa",
+      "openbookqa",
+      "commonsense_qa",
+      "headqa",
+      "prost",
+      "truthfulqa_mc1",
+      "mmlu",
+      "medmcqa",
+      "leaderboard_gpqa",
+      "leaderboard_bbh",
+      "leaderboard_mmlu_pro"
+    ],
+    "primary_metric": "unweighted average task accuracy",
+    "controls": "unmerged base and best individual fine-tuned checkpoint under the same aggregate metric",
+    "boundary": "No checkpoint revisions, harness revision, random seed, study configs, raw results, statistical significance, safety suite or independent reproduction are released."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "parameter compatibility",
+      "support": "SHARED_BASE_AND_ARCHITECTURE",
+      "boundary": "Aligned tensors permit arithmetic but do not ensure tokenizer, data, safety, license or functional equivalence."
+    },
+    {
+      "notion": "task-vector orthogonality",
+      "support": "PAIRWISE_GLOBAL_AND_LAYERWISE_COSINE",
+      "boundary": "Most global similarities are near zero, but some Llama-8B pairs are materially positive; near-zero cosine does not identify independent knowledge or causal complementarity."
+    },
+    {
+      "notion": "constructive interference",
+      "support": "MERGED_AVERAGE_EXCEEDS_BEST_FINE_TUNE_ON_THE_SAME_TASK_SUITE",
+      "boundary": "For two Qwen bases the base already exceeds every selected fine-tune, so beating the best fine-tune can partly reflect cancellation of harmful deltas or regression toward the base."
+    },
+    {
+      "notion": "capability preservation",
+      "support": "AGGREGATE_16_TASK_ACCURACY",
+      "boundary": "An aggregate average can hide task-level, subgroup, calibration, safety and generation-quality regressions."
+    }
+  ],
+  "lifecycle_and_provenance": "The appendix names all checkpoints and the code wrapper can delete a merged artifact after evaluation, but neither source defines immutable input revisions, hashes, dataset or training lineage, license compatibility, exact recipe identity, result receipts, approvals, health monitoring, rollback, supersession or retirement. The wrapper unconditionally removes the configured output directory after evaluation, even when a user supplies a persistent path, so it is unsuitable as a governed artifact lifecycle without correction.",
+  "code_semantic_audit": {
+    "confirmed_correspondence": [
+      "The wrapper accepts MergeKit YAML, invokes mergekit-yaml, and invokes lm_eval with configured tasks and logging arguments.",
+      "The repository license is MIT and the main module passes syntax compilation."
+    ],
+    "defects_and_reproducibility_gaps": [
+      "README claims an automatic merged-model path, but the code neither replaces pretrained:auto nor injects the generated timestamped output directory into lm_eval model_args; the provided example evaluates a separate hard-coded path.",
+      "Cleanup unconditionally removes merged_output_dir after the run, including a user-specified persistent output path.",
+      "The README seed example is a list of dictionaries, while the code stringifies each entry into the lm-eval --seed argument rather than validating the expected seed format.",
+      "Empty wandb and Hugging Face logging arguments are always appended, and an inline temporary merge configuration is not removed.",
+      "Dependencies are unpinned Git heads and there are no tests, CI, releases or environment lock.",
+      "The repository omits the study's experiment recipes, sampled subsets and seed, raw results, figures, checkpoint revisions and subspace implementations."
+    ]
+  },
+  "limitations_and_failure_boundaries": [
+    "The study is peer reviewed and broad within its stated setting, but covers only four decoder-only instruction bases from two model families and two parameter scales.",
+    "The 48 source checkpoints are named but not pinned to revisions or hashes; source training data, fine-tuning recipes, contamination and safety properties are not normalized.",
+    "Uniformly sampled subsets have no reported random seed; all-12 results have one combination and cannot support a reliability percentage or sampling uncertainty estimate.",
+    "No repeated-run variance, confidence interval, significance test, multiple-comparison correction or raw per-item result release is provided.",
+    "Hyperparameters are selected through the same evaluation suite used for main reporting rather than a held-out validation protocol.",
+    "Normalized equal-weight Task Arithmetic at lambda one is arithmetic checkpoint averaging, so its stability should not be attributed to unnormalized additive task arithmetic without qualification.",
+    "The 'best expert' comparison is selected and measured on the same 16-task average; for Qwen-4B and Qwen-8B the base already beats every fine-tuned candidate, weakening a complementary-knowledge interpretation.",
+    "Task-vector near-orthogonality and norm-performance association are descriptive; neither proves a causal loss-basin mechanism or knowledge composition.",
+    "Subspace methods are tested in a regime deliberately outside some original assumptions and do not receive a fully independent tuning budget; failure here is not a universal refutation.",
+    "The homogeneous math-medical experiment uses only Qwen-4B and Qwen-8B, six experts and aggregate task scores, with no repeated uncertainty.",
+    "No safety, privacy, memorization, calibration, generation, multilingual, latency, energy, legal or license-compatibility evaluation is reported.",
+    "The paper's stated limitations omit several reproducibility and statistical boundaries above, and its conclusion should not be generalized to all model families or merging settings.",
+    "The linked repository does not reproduce the published study and contains a default output-to-evaluation path mismatch plus destructive cleanup semantics."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove that averaged or merged checkpoints contain a semantic union of source knowledge.",
+    "It does not establish universal superiority of Task Arithmetic, model merging reliability, safety preservation or production readiness.",
+    "It does not validate dynamic routing, effect isolation, provenance governance or a VersionedRegistry lifecycle.",
+    "It does not provide a complete runnable reproduction of the reported experiments through the linked repository."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "The paper supplies mathematical and tabular merge specifications but not an immutable executable contract or governed effect semantics."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "Shared-base checkpoints are compiled through explicit static Task Arithmetic, TIES, ModelStock and subspace recipes into executable artifacts."
+    },
+    "GAP-017": {
+      "status": "CONFIRMED",
+      "reason": "Base-relative accuracy, best-expert comparison, task-vector norm and cosine similarity expose distinct and non-equivalent validation notions."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "The work directly evaluates multiple static composition rules and identifies bounded success and failure regimes."
+    },
+    "GAP-019": {
+      "status": "CONFIRMED",
+      "reason": "Four bases, 48 source checkpoints, sampled subset sizes and 16 tasks form a substantial bounded empirical validator despite missing formal inference."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Accuracy, dispersion, norm and similarity are observable, while immutable provenance, raw receipts, calibrated uncertainty and lifecycle state are absent."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Recipes and evaluation settings are human-readable but incomplete as executable, versioned contracts."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Shared-base checkpoints, task deltas, sparse masks and subspace factors are explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "Multiple parameter-space compilation rules are defined and executed through MergeKit."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "Each merge materializes one ordinary checkpoint, although study artifacts are not released with immutable manifests."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "Merged checkpoints execute through the normal model forward pass and lm-eval task interpreters."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Scores, subset membership and vector diagnostics are trace candidates, but raw study receipts and durable lineage are absent."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "The primary contribution is a direct multi-model, multi-subset and multi-task empirical comparison with explicit controls."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Static composition choices are directly compared; the paper does not validate input-conditioned routing."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Checkpoint names and a code commit are recoverable, but revisions, hashes, lineage, health, rollback and retirement are absent."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_FULLTEXT_AND_EXACT_CODE_CARD",
+    "corrections": [
+      "The provisional Anonymous 2025 preprint identity and older title were replaced by the named-author TMLR March 2026 final identity and final title.",
+      "The exact registered PDF already matches arXiv v2 and the final 39-page TMLR manuscript.",
+      "Normalized equal-weight Task Arithmetic at lambda one was identified algebraically as arithmetic averaging of fine-tuned checkpoints.",
+      "Best-expert, subset-uncertainty, hyperparameter-selection and generalization boundaries were made explicit.",
+      "The linked MergeVal repository was reviewed at an exact commit and its study-reproduction omissions, output-path mismatch and cleanup risk were recorded."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "The peer-reviewed full study directly confirms a bounded static Representation-Compiler-Artifact-Interpreter-Validator-Composer chain for shared-base checkpoint merging. It provides unusually broad evidence that normalized checkpoint averaging can be robust in the selected heterogeneous pools and that several more structured methods can underperform there. FunctionSpec completeness, causal mechanism, calibrated uncertainty, exact reproducibility and VersionedRegistry governance remain partial.",
+  "source_specific_reasoning": "CONFIRMED is assigned to the bounded empirical projection, not to universal merging claims. Four bases, 48 named source checkpoints, sampled subset sizes, 16 tasks, multiple baselines and extensive appendix ablations directly support the paper's comparative result. The decisive semantic correction is that normalized equal-weight Task Arithmetic at lambda one equals arithmetic averaging, and that two apparent best-expert wins can partly be return toward a stronger base. The paper is therefore strong evidence for a static composer plus validator under its protocol, but not proof of complementary knowledge, semantic union, safety or production lifecycle. The exact-code audit further shows that the public wrapper is not a study-complete reproduction package.",
+  "projection_boundary": "All GAP and Function OS impacts above are 121CX architectural projections from the exact TMLR/arXiv v2 manuscript and static review of MergeVal commit 2271ca5. They are empirical evidence under the published benchmark protocol, not mathematical proof, independent reproduction, safety validation or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T05:31:58Z"
+}

@@ -1,0 +1,35 @@
+{
+  "total_sources": 25,
+  "unique_dois": 25,
+  "duplicate_dois": 0,
+  "evidence_tiers": {
+    "FULLTEXT_REVIEWED": 8,
+    "ABSTRACT_REVIEWED": 11,
+    "METADATA_VERIFIED": 6
+  },
+  "claim_support_status": {
+    "NOT_ASSESSED": 25,
+    "CONFIRMED": 0,
+    "PARTIAL": 0,
+    "NOT_SUPPORTED": 0,
+    "UNRESOLVED": 0
+  },
+  "retraction_check_status": {
+    "NOT_CHECKED": 25,
+    "CHECKED_NO_RETRACTION": 0,
+    "RETRACTED": 0
+  },
+  "discipline_coverage_five_tiers": {
+    "ENUMERATED": "18/18",
+    "SOURCE_PRESENT": "14/18",
+    "ABSTRACT_SUPPORTED": "13/18",
+    "FULLTEXT_SUPPORTED": "9/18",
+    "CLAIM_SUPPORT_CONFIRMED": "0/18"
+  },
+  "zero_source_disciplines": [
+    "Environmental Science",
+    "Finance",
+    "Ecology",
+    "Agricultural Science"
+  ]
+}

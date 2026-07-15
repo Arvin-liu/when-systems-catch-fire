@@ -1,0 +1,20 @@
+{
+  "audit_status": "PARTIAL_UNVERIFIED_COUNTS",
+  "superseded_by": "reports/foundation-architecture/075-truth-audit-20260712.md",
+  "correction_notice": "The original numeric fields below are preserved as 075 historical outputs. formal_count is a Markdown file count; type_errors, counterexamples and non_function_recommendations are heuristic row hits, not verified object-level conclusions.",
+  "generated_at": "2026-07-12T19:08:47.266664",
+  "formal_count": 624,
+  "candidate_only_count": 22,
+  "pending_count": 34,
+  "provenance_counts": {
+    "SOURCE_NOT_FOUND": 93,
+    "DIRECT_SOURCE_FOUND": 596,
+    "MULTIPLE_CONFLICTING_SOURCES": 14,
+    "INDIRECT_SOURCE_ONLY": 9,
+    "GENERATED_WITHOUT_TRACEABLE_SOURCE": 2
+  },
+  "pilot_count": 110,
+  "type_errors": 608,
+  "counterexamples": 546,
+  "non_function_recommendations": 714
+}

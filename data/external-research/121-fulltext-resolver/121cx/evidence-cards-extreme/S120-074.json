@@ -1,0 +1,290 @@
+{
+  "source_id": "S120-074",
+  "canonical_title": "Compile Once, Differentiate Everywhere: A Differentiable Meta-Circular Interpreter",
+  "authors": [
+    "Lucas Sheneman"
+  ],
+  "year": 2026,
+  "version": "arXiv:2606.09930v1, submitted 2026-06-07",
+  "doi_or_identifier": "arXiv:2606.09930v1; DOI 10.48550/arXiv.2606.09930",
+  "identifier": "cs.PL; cs.AI; cs.LG",
+  "url": "https://arxiv.org/abs/2606.09930v1",
+  "source_family": 1,
+  "source_family_name": "program synthesis and execution guidance",
+  "license": "CC BY 4.0 for arXiv v1; public implementation is MIT licensed",
+  "sha256": "ae0e98b0e69f1fe3e6c2fa42fda4a8927359fa02b688bc05447067ec6a4e7b92",
+  "file_size_bytes": 1169003,
+  "page_count": 65,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "registered_url": "https://arxiv.org/pdf/2606.09930",
+    "sha256": "ae0e98b0e69f1fe3e6c2fa42fda4a8927359fa02b688bc05447067ec6a4e7b92",
+    "file_size_bytes": 1169003,
+    "page_count": 65,
+    "registered_pdf_visual_check": "all 65 pages rendered and individually inspected; main text, 38 tables, 21 figures, formal appendices, complete evaluator listing, experiment protocols and failure-mode summary are present and legible",
+    "arxiv_metadata": "v1 submitted 2026-06-07 15:13:41 UTC; one named author; 65 pages; primary cs.PL with cs.AI and cs.LG cross-lists; CC BY 4.0",
+    "source_archive": {
+      "url": "https://export.arxiv.org/e-print/2606.09930v1",
+      "sha256": "ca43318bcfb008ec121f99cd1b976cd04f4592b353d7f98b35a6ad99f998c489",
+      "file_size_bytes": 220092,
+      "contents": "complete LaTeX, bibliography, figures and underlying figure-data files; implementation and experiment artifacts are hosted separately in the linked repository"
+    },
+    "linked_public_repository": {
+      "url": "https://github.com/sheneman/dmci",
+      "audited_revision": "e82bad5ea5e51446168e420fb8293cf57b35a6b4",
+      "audited_tag": "v1.1",
+      "license": "MIT",
+      "history": "four public commits; v1.0 code/artifacts commit 407c6c6 was dated 2026-06-08, one day after arXiv v1 submission; v1.1 changes README, Git LFS attributes and logo but not implementation or experiment artifacts",
+      "tracked_files": 2734,
+      "lfs_materialization": "all tracked Git LFS objects were pulled; zero residual pointer files were detected; materialized checkout was approximately 101 MB",
+      "tests": "fresh Python 3.12 environment at audited v1.1: 1103 passed and 13 skipped in 22.62 seconds; static collection found 918 test functions across 33 modules, not the paper's stated 1225 tests or README's stated 823 functions across 30 modules",
+      "manifest_check": "python -m experiments.check_manifests passed filename inventories for exp_a 617, exp_b 600, exp_b/results_llm 600, exp_c 288, exp_d 10 and exp_h 19; checker compares tracked basenames/counts only and does not hash or validate file contents",
+      "artifact_self_checks": "released aggregators reproduced their own internal inventories and headline summaries: Exp B 65/65 and 60/60 figure coordinates, Exp C 43/43 with 36 matched pairs, Exp D 10/10, and Exp H 275/275; these are repository self-checks, not independent replication",
+      "dependency_boundary": "pyproject and requirements use lower bounds such as torch>=2.0, numpy>=1.24, scipy>=1.10 and pytest>=7 rather than a lockfile; comments record a cluster build but do not pin a reproducible environment"
+    }
+  },
+  "sections_reviewed": [
+    "abstract, introduction, contributions and relationship to prior work",
+    "compiler pipeline, tagged-value representation, heap, evaluator and backend scope",
+    "trace-constant theory, compilation/gradient/composition proof sketches and scoping conditions",
+    "Experiments A-C on gradient fidelity, generated programs and recursive models",
+    "LIM-ENSO real-data likelihood calibration, preprocessing, model selection and forecast protocol",
+    "battery and FluZoo program-and-parameter co-search, fitness-fidelity stress tests and rescoring",
+    "batching, population calibration, JAX and torch.compile comparisons, and large-model benchmarks",
+    "Experiments D-J on search cost, operator recovery, LLM loops, composition, calibration and program-space economics",
+    "complete 288-line self-hosted evaluator, implementation appendices and failure-mode tables",
+    "complete public repository, all test modules, dependency declarations, Git history, LFS artifacts, manifest checker and result aggregators"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "main sections 1-2, pp. 1-4; Figure 1; appendices B-D, pp. 20-25",
+      "checked_for": "program-as-data claim, parse-to-ANF-to-ComputeGraph pipeline, 14-dimensional tagged values, dictionary heap, four-level tail calls, evaluator source and backend limits"
+    },
+    {
+      "anchors": "main section 3, pp. 4-5; appendix A, pp. 17-20",
+      "checked_for": "trace-constant and omega-PAP conditions, compilation/gradient/composition proof sketches, primitive clamps, branch boundaries, detached addresses and lack of mechanization"
+    },
+    {
+      "anchors": "main sections 4.1-4.3, pp. 5-8; appendices F-I, pp. 26-44",
+      "checked_for": "A-C denominators, trajectory fidelity, LLM prompt refinement, recursive costs, LIM-ENSO gates, full-record preprocessing and held-out selection boundary"
+    },
+    {
+      "anchors": "main sections 4.4-4.5, pp. 8-11; appendices N-O and R, pp. 49-59 and 63-65",
+      "checked_for": "battery and FluZoo co-search, full-lifetime grid, inner-fitness fidelity, synthetic mechanism recovery, real-data forecast boundary, batching and vectorization baselines"
+    },
+    {
+      "anchors": "appendices J-M and P-Q, pp. 44-49 and 60-63",
+      "checked_for": "per-program compile path, structural search economics, operator-recovery asymmetry, LLM-loop failures, runtime composition, dimensional calibration and one-frozen-interpreter program-space experiment"
+    },
+    {
+      "anchors": "section 6 and reproducibility paragraph, pp. 12-13; repository revision e82bad5, tests, manifests, LFS artifacts and experiment READMEs",
+      "checked_for": "claimed versus observed test counts, dependency pinning, artifact integrity, release chronology, executable bare-interpreter path and experiment-specific compile paths"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "A compiler for a substantial pure Scheme subset can compile its own evaluator into a differentiable PyTorch computation graph with closures, recursion, pairs/lists and runtime-supplied programs.",
+      "anchors": "sections 1-2; appendices B-D; released neural_compiler and bootstrap/compiler.scm"
+    },
+    {
+      "claim": "Within terminating trace-constant regions, the compiled interpreter preserves source values and reverse-mode gradients almost everywhere, and this property is preserved under composition.",
+      "anchors": "section 3; appendix A"
+    },
+    {
+      "claim": "Released experiments show close numerical agreement between interpreted and directly compiled paths, exact-gradient calibration of fixed program structures, and strong amortization through batching.",
+      "anchors": "sections 4.1-4.5; appendices F-O; committed results and aggregators"
+    },
+    {
+      "claim": "A single bare compiled interpreter can accept distinct Scheme programs as runtime data without per-program recompilation, demonstrated at scale in Experiment J.",
+      "anchors": "appendix Q; neural_compiler.dmci.compile_interpreter/evaluate_program; experiments/exp_j"
+    },
+    {
+      "claim": "Program-and-parameter co-search can recover a synthetic battery structure and produce competitive real-data forecasts, while FluZoo demonstrates that an underconverged inner fitness can erase apparent gains.",
+      "anchors": "section 4.4; appendices N and R"
+    }
+  ],
+  "function_concept_used_by_paper": "A function is an executable Scheme program or closure whose discrete structure is supplied as symbolic data and whose continuous constants are bound as differentiable tensors. The compiler can produce either a program-specific graph or one compiled evaluator that interprets arbitrary program data. Functions therefore have source, graph, artifact, environment, execution trace and gradient behavior, but the paper does not define a governed cross-system function identity or lifecycle.",
+  "representation_or_carrier": "Scheme source is parsed to an AST, transformed to ANF and lowered to a typed-by-convention ComputeGraph. Runtime values use a 14-component tagged carrier: ten one-hot type slots plus four payload slots. Lists, pairs, closures and environments are heap objects in a write-once Python dictionary addressed by detached integers; numeric/vector/matrix payloads remain tensors. Serialized .ncg graphs are concrete artifacts. Type tags and addresses are discrete routing data, while learnable numeric payloads retain autograd chains.",
+  "specification_language": "The accepted language is a substantial pure Scheme subset with variables, constants, lambda/application, let/letrec, define, begin, quote, cond/if, closures, first-class functions, general and tail recursion, pairs/lists, comparisons, transcendental functions and vector/matrix primitives. Free-variable names define the binding contract and a supported-operator prescan rejects unknown heads. The language excludes call/cc, set!, mutation and exact-integer semantics, and it has no static effect/capability declarations, pre/postconditions, uncertainty contracts, resource budgets or version constraints.",
+  "compiler_or_generator": "The shared compiler performs parsing, macro expansion, ANF conversion and ComputeGraph construction, then evaluates graphs through backend-specific tensor operations. Direct mode compiles each scientific program; meta-circular mode compiles evaluator source. Two distinct APIs matter: compile_dmci bakes one quoted object program into its graph, while compile_interpreter leaves program and environment as runtime inputs and can be serialized once. The paper's central reusable-artifact claim is implemented by the latter, but Experiments A-C and multiple other harnesses use program-specific compile_program/compile_dmci caches, so their results do not themselves demonstrate zero recompilation across distinct programs.",
+  "interpreter_or_runtime": "The 288-line Scheme evaluator performs association-list environment lookup, special-form dispatch, closure application, recursive evaluation and 52 primitive operations. A four-level tail-call strategy and lazy branch evaluation avoid divergent eager expansion and Python-stack growth for supported tail recursion. PyTorch define-by-run supplies reverse-mode AD over the realized trace. Scalar straight-line direct graphs also run on JAX, NumPy and CuPy, but the heap-using, data-dependent meta-circular interpreter is differentiable only on PyTorch in this release.",
+  "composition_rule": "Scheme application, closures, letrec, list construction, sequential forms, recursion and higher-order calls compose programs through the evaluator; serialized interpreter artifacts can route many program datums through one runtime. The composition proof sketch uses omega-PAP closure on open full-measure trace regions. Operational composition is concrete, but compatibility is enforced mainly by parsing, free-variable bindings and an operator allowlist rather than static types, effect contracts, semantic adapters or governed admission receipts.",
+  "state_or_effect_model": "Internal state comprises environments, immutable/write-once heap cells, tagged payloads, runtime inputs and recursive control. The pure subset intentionally excludes mutation so stored tensors preserve autograd version chains. The evaluator has no external filesystem, network, device-authority, transaction, compensation, idempotence, rollback or concurrency semantics. Experiment orchestration, LLM calls and data loading occur in host Python outside the formal language and are not covered by the correctness argument.",
+  "uncertainty_model": "The compiler and gradients are deterministic conditional on code, tensor values, backend order and realized trace; stochasticity enters initialization, optimizers, LLM proposals, search islands and datasets. The released result files and aggregators improve auditability, and several studies report multiple seeds, but confidence intervals are sparse, some major claims rely on three seeds or one hardware run, and no calibrated epistemic/aleatoric function semantics are defined. Trace-boundary uncertainty is a mathematical exceptional-set qualification, not a calibrated probability. Model-selection reuse of held-out data further prevents treating displayed held-out scores as unbiased uncertainty estimates.",
+  "validation_regime": {
+    "formal": "four conventional proof sketches for source/compiled value correspondence, almost-everywhere gradients and composition on terminating trace-constant regions; no proof assistant, mechanized semantics or exhaustive compiler verification",
+    "repository_tests": "at audited v1.1, 1103 tests passed and 13 skipped in Python 3.12; static discovery found 918 functions across 33 modules. This contradicts both the paper's 1225-test statement and README's 823-function/30-module statement",
+    "gradient_fidelity": "Experiments A-C report 171 program/seed pairs with interpreted/direct trajectory agreement within about 7e-7; repository aggregators self-check 65/65 B runs and 43/43 C result files. A is synthetic and noiseless with no held-out split; B's final prompt was iteratively refined to 15 fixed tasks; C is recursively deeper but very slow",
+    "bare_interpreter": "integration tests exercise compile_interpreter, serialization and multiple runtime programs; Experiment J explicitly uses one interpreter plus evaluate_program, reports 0.02-second one-time compile, and tests 10000 synthetic and 260 LLM-authored programs",
+    "compile_path_boundary": "Experiments A-C use program-specific sources compiled/cached per model; LIM-ENSO and FluZoo use compile_dmci, which bakes one program. The reusable bare-interpreter path is therefore real but should not be retroactively attributed to every experiment",
+    "performance": "sequential DMCI is about 14x per evaluation in decomposition, 19x direct in A, 73x direct and 248x hand-coded in B, 74-158x direct in C and 25.3x in D with no crossover. Batching yields large speedups relative to sequential DMCI, while jax.vmap of direct graphs remains faster where applicable: geometric-mean DMCI forward 0.27x and train 0.076x",
+    "search": "Experiment E finds the discrete operator pair in 26/240 DMCI restarts versus 240/240 exhaustive, 199/240 evolutionary and 5/240 random; DMCI is about 57000x slower than exhaustive and uniquely receives an extra derivative-matching loss term",
+    "llm_and_composition": "Experiment F reports 11/12 successful runs only after reasoning plus optimizer portfolio; G tests three small composition targets and one remains structurally ambiguous. These are bounded workflow demonstrations rather than autonomous scientific discovery validation",
+    "enso": "released code fits monthly climatology, linear trend, three-month smoothing, area weights, economy SVD/EOF basis and PC scaling on the full 1950-2024 record before using 1950-1979 for fit and 1980-1989 for held-out scoring. It also chooses optimizer/model portfolios on that held-out skill, with no independent final test; the displayed forecast result is therefore leakage-affected and selection-conditional",
+    "battery": "synthetic mechanism recovery is anchored by algebraic identity and rigorous rescoring. Real cells are resampled over their full observed lifetime to a 100-point life-fraction grid before early/late splitting, so the coordinate of an early observation depends on future total life; the same cell tails guide search/selection and reported scores, with no independent held-out cells. The result is a conditional retrospective curve-completion score, not a clean deployable early-life forecast",
+    "fluzoo": "rigorous 300-step rescoring erases the cheap-fitness evolved advantage and ties the SEIR reference, directly documenting inner-objective overfitting",
+    "artifacts": "2734 tracked files and approximately 101 MB of materialized LFS data include many per-run results, accepted-program caches, scripts and summaries. Manifest checking validates only filenames/counts, dependencies are lower-bounded rather than locked, and full 200-program-per-island OpenEvolve archives are not released",
+    "reproducibility": "source, code, tests and many raw artifacts are unusually extensive, but public code was committed after arXiv v1, test-count documentation is inconsistent, environments are not locked, some external data/models/services are needed, and self-checks do not independently replicate reported measurements"
+  },
+  "equivalence_notions": [
+    {
+      "notion": "source-to-compiled value correspondence",
+      "support": "Theorem 2 and repository tests compare direct/source and compiled execution to floating-point precision.",
+      "boundary": "It is a paper proof sketch and finite test suite, not mechanized compiler correctness; primitive clamps intentionally change ideal sqrt/log behavior."
+    },
+    {
+      "notion": "almost-everywhere gradient correspondence",
+      "support": "On terminating trace-constant regions, reverse-mode AD follows the same numeric operations and 171 reported program/seed pairs closely match direct trajectories.",
+      "boundary": "Branch boundaries, degenerate predicates, trace changes, nontermination and parameters used only in conditions are excluded; S3 confirms zero-gradient failure."
+    },
+    {
+      "notion": "runtime-program reuse",
+      "support": "compile_interpreter plus evaluate_program exposes a single serialized graph with program and environment as runtime inputs; tests and Experiment J exercise it.",
+      "boundary": "compile_dmci and many main experiment harnesses instead bake a program and compile/cache per model; zero recompilation is path-specific."
+    },
+    {
+      "notion": "artifact-result integrity",
+      "support": "LFS materialization, inventory manifests, per-experiment aggregators and a large passing test suite make numerous reported quantities inspectable.",
+      "boundary": "Manifest checks are filename-only, dependency versions are not locked, several archives are summarized rather than complete and self-checks are not independent replication."
+    },
+    {
+      "notion": "held-out predictive validity",
+      "support": "ENSO and battery code separates later time/cycle segments for scoring and compares baselines under common fit loops.",
+      "boundary": "Full-record ENSO preprocessing and selection-on-held-out, plus full-lifetime battery normalization and same-cell tail selection, contaminate the purported held-out boundary."
+    }
+  ],
+  "lifecycle_and_provenance": "The repository supplies source files, Git revisions/tags, an MIT license, .ncg serialization, LFS-backed result artifacts, manifests and experiment-specific READMEs. This is materially stronger provenance than paper-only work. It still lacks content hashes in result manifests, a lockfile/container digest, signed releases, immutable data/model/service identities, formal admission/approval records, deployment telemetry, compatibility migrations, deprecation, rollback policy and tombstones. The four-commit history and post-submission public code also leave no exact pre-submission implementation snapshot.",
+  "limitations_and_failure_boundaries": [
+    "The paper's central compile-once path exists, but compile_dmci bakes one program and Experiments A-C compile/cache a distinct evaluator-plus-program graph per model; only compile_interpreter/evaluate_program provides literal cross-program reuse.",
+    "The almost-everywhere theory is a conventional proof sketch, not mechanized proof, and is scoped to terminating trace-constant regions with generic nondegenerate predicates.",
+    "Parameters that affect only discrete branch predicates receive zero gradients almost everywhere; S3 converges 0/10 and cannot learn its threshold.",
+    "sqrt and log clamps define modified runtime semantics in their clamped regions; correctness applies to the implemented functions rather than ideal mathematical primitives.",
+    "The pure subset excludes call/cc, set!, mutation and exact integers; external effects and authority are outside the model.",
+    "The differentiable heap-using interpreter is PyTorch-only; JAX support is limited to suitable direct graphs and a fixed-length rewrite is future work.",
+    "Unknown evaluator operators historically fall through to a zero-like value, so correctness depends on the host-side supported-operator prescan; bypassing it risks silent corruption.",
+    "Sequential interpretation is consistently much slower than direct compilation or hand code, and structural search Experiment D shows no wall-clock crossover.",
+    "Batching speedups are measured primarily against DMCI's own sequential execution; direct jax.vmap remains substantially faster where it covers the program.",
+    "torch.compile is slower for every reported batched model, so it does not remove current graph-walk latency.",
+    "Experiment A uses self-generated noiseless training data with no held-out split; trajectory agreement demonstrates implementation fidelity, not scientific-model correctness.",
+    "Experiment B's 15/15 generation follows iterative prompt refinement on a fixed task set, with ten first-order tasks, four recursive/iterative tasks and one closure/composition task; it is not open-ended synthesis.",
+    "The paper's 1225-test claim and README's 823-test-function/30-module claim both disagree with audited v1.1/v1.0 code: 1103 passed, 13 skipped, 918 functions and 33 modules.",
+    "Requirements specify lower bounds and comments rather than a dependency lock, so the environment is not actually pinned.",
+    "The manifest checker validates filenames and counts, not artifact hashes or content integrity, despite broader reproducibility language.",
+    "Complete long-running OpenEvolve island archives are not committed; released winners, accepted caches and summaries cannot reconstruct every proposal/selection event.",
+    "Experiment E's DMCI discrete recovery is 10.8 percent, far below exhaustive and evolutionary baselines, about 57000 times slower than exhaustive, and benefits from a derivative loss unavailable to comparators.",
+    "Experiment I uses three seeds; beyond six parameters no method reaches the stated 1e-3 threshold, so high-dimensional results are relative robustness comparisons rather than recovery demonstrations.",
+    "Experiment J's B2 recursive coverage counts hand-port feasibility/LOC even where no executable generated JAX port or recovery measurement exists; engineering-burden totals are proxies, not observed human effort.",
+    "Experiment J's LLM hard-recursive parameter recovery is effectively unsuccessful for DMCI despite 100-percent execution coverage; coverage is not optimization success.",
+    "LIM-ENSO full-record climatology, detrending, EOF basis and normalization use future data before the train/held-out split, and the same held-out window selects optimizers/structures; the forecast score is not an independent generalization estimate.",
+    "Battery real-data life-fraction normalization requires each cell's eventual life endpoint; early-window inputs therefore encode future lifetime information and are not deployable early-life observations.",
+    "Battery structure search, selection and headline scoring reuse tails from the same 117 cells with no independent held-out cells; real-data claims support retrospective conditional curve completion only.",
+    "The battery synthetic recovery is more credible than the real-data forecast because the data-generating mechanism is known and the recovered structure is checked algebraically after rigorous rescoring.",
+    "FluZoo's search-time win disappears under converged rescoring, showing that program-and-parameter co-search can optimize an underfit inner proxy rather than real skill.",
+    "Several major measurements are repository self-checks on released artifacts, not clean reruns from raw external inputs or independent empirical validation.",
+    "No static effect/capability system, external transaction model, compensation, rollback or governed versioned function registry is provided.",
+    "This model review and local code/test audit do not prove the theorems, independently reproduce all experiments or empirically validate ignition."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not establish mechanized compiler, interpreter or gradient correctness.",
+    "It does not establish gradient learnability across branch choices or discrete program structure.",
+    "It does not establish that every reported DMCI experiment used one frozen cross-program interpreter; several compile a program-specific graph.",
+    "It does not establish a general speed advantage over direct compilation, JAX vectorization or exhaustive search.",
+    "It does not establish clean out-of-sample ENSO skill because preprocessing and selection cross the stated held-out boundary.",
+    "It does not establish deployable early-life battery forecasting because full lifetime determines the input grid and the same cell tails drive selection.",
+    "It does not establish autonomous scientific discovery; LLM and co-search outcomes depend on constrained languages, repaired prompts, optimizer portfolios and converged inner objectives.",
+    "It does not provide a fully pinned environment, content-hashed artifact manifest, complete search history or signed release provenance.",
+    "It does not model external effects, permissions, transactions, compensation or rollback.",
+    "It does not define calibrated stochastic function semantics or a governed lifecycle registry.",
+    "The model review is not proof or independent empirical validation of the authors' experiments."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "The pure Scheme subset, explicit bindings and supported-operator contract constitute a concrete executable specification language for runtime-supplied programs, bounded by missing static effects and resource contracts."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "Parsing, macro expansion, ANF lowering, ComputeGraph generation and evaluator compilation form a released, tested compiler path, with an important distinction between program-baked and bare-interpreter APIs."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Value, gradient and composition correspondence are explicit and tested, but theory is non-mechanized, almost-everywhere and trace-conditional, while held-out scientific validity is contaminated in two real-data studies."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Internal heap/environment/control semantics are precise and mutation is deliberately excluded, but external effects, capabilities, transactions and rollback are absent."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Git tags, serialized .ncg graphs, LFS artifacts, manifests and READMEs provide substantial provenance, but hashes, locked environments, admission/deployment history, migration and rollback lifecycle are incomplete."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Multiple seeds and explicit trace-boundary qualifications expose some uncertainty, but no calibrated stochastic function semantics or uncertainty-aware admission policy is defined."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Scheme source, free-variable bindings, pure-language rules and operator allowlists form executable bounded function specifications."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "AST/ANF/ComputeGraph, 14-dimensional tagged values, tensor payloads, closures, environments and detached heap addresses provide explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "The released parser-to-ANF-to-graph pipeline compiles both object programs and the evaluator itself and is covered by a large passing test suite."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "Serializable .ncg graphs, code, accepted programs and LFS-backed results are concrete artifacts, though their lifecycle and environment identities remain incomplete."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The released 288-line self-hosted Scheme evaluator plus PyTorch graph engine implements runtime program interpretation and differentiation."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Define-by-run execution realizes program-dependent traces and many per-run outputs are committed, but there is no uniform tamper-evident trace ledger across compiler, LLM and search events."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Tests, operator prescan, numerical parity gates, manifests and aggregators are concrete validators, but counts conflict, manifests are filename-only and real-data held-out boundaries are compromised."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Closures, higher-order application, recursion, runtime program data and one reusable interpreter concretely compose and route functions, without static effect compatibility."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Git tags, files and serialized artifacts provide identifiers and provenance, but no governed admission, usage, compatibility, migration, deprecation or rollback registry exists."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "NO_PRIOR_SEMANTIC_EVIDENCE_CARD",
+    "verdict": "NEW_CODEX56_EXTREME_CARD_WITH_CONFIRMED_BOUNDED_SUPPORT",
+    "corrections": [
+      "Verified the exact registered 65-page PDF, all rendered pages, arXiv source and complete materialized public repository rather than relying on the abstract.",
+      "Confirmed the genuine bare compiled-interpreter API while separating it from compile_dmci and Experiments A-C, which bake or compile a graph per object program/model.",
+      "Ran the complete released test suite and recorded 1103 passed plus 13 skipped, correcting both paper and README test-count claims.",
+      "Separated filename inventory checks from content-integrity verification and lower-bound dependencies from an actual pinned environment.",
+      "Bounded sequential and batched performance against direct-compilation, JAX, torch.compile and exhaustive-search baselines rather than repeating within-DMCI speedups alone.",
+      "Identified full-record preprocessing and selection leakage in LIM-ENSO, so held-out forecast skill is not accepted as a clean generalization estimate.",
+      "Identified future-dependent full-lifetime normalization and same-cell tail selection in the battery study, so real-data forecasting is accepted only as retrospective conditional curve completion.",
+      "Preserved the stronger synthetic battery algebraic recovery and the negative FluZoo rescoring result as useful bounded evidence.",
+      "Did not call proof sketches mechanized proof, repository self-checks independent replication, or this model review empirical validation."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "The exact paper and released repository directly confirm a bounded FunctionSpec-Representation-Compiler-Artifact-Interpreter-ExecutionTrace-Validator-Composer architecture: a pure Scheme specification is lowered through AST/ANF to a graph, the same compiler builds a self-hosted evaluator, a serialized bare interpreter accepts program/environment data at runtime, tagged heap values preserve tensor gradients, and tests/artifacts validate many paths. Confirmation is architectural and implementation-level, not blanket acceptance of every empirical claim: reusable and program-baked compile paths must be distinguished, theory is non-mechanized and trace-conditional, sequential cost is high, discrete/branch optimization fails, documentation counts conflict, provenance is incomplete, and the ENSO/battery real-data evaluations cross their claimed held-out boundaries.",
+  "source_specific_reasoning": "CONFIRMED is justified because this source releases the central compiler, evaluator, bare-interpreter artifact path, integration tests and extensive experiment artifacts. The Function OS projection does not depend on accepting the contaminated real-data forecasts or all headline throughput language. The reusable compile-once claim is concretely implemented and exercised in Experiment J, while the card explicitly corrects the broader narrative wherever harnesses compile per program. Source inspection also exposes meaningful negative boundaries: operator prescan is safety-critical, branch-condition learning fails, JAX cannot host the interpreter, direct/vectorized paths are faster where applicable, and search/recovery quality depends strongly on optimization and clean validation design.",
+  "projection_boundary": "These are 121CX projections from the exact 65-page registered arXiv v1 PDF, every rendered page, complete source archive, public Git history at e82bad5, fully materialized LFS checkout, passing test suite, manifest checker, released result aggregators and targeted source inspection. This model review is not a mechanized proof, an independent rerun of every external-data/LLM/GPU experiment, independent empirical validation, or validation of ignition.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T08:50:15Z"
+}

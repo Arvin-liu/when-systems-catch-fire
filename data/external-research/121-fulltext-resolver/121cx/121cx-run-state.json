@@ -1,0 +1,171 @@
+{
+  "task": "IGNITION-20260709-121CX",
+  "task_name": "Codex 5.6 Sol Extreme Takeover and Final Acceptance",
+  "status": "121CX_IN_PROGRESS",
+  "executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "extreme",
+  "speed": "standard",
+  "model_identity_basis": "User-specified current Codex App session configuration in IGNITION-20260709-121CX",
+  "delegated_subagents": false,
+  "model_switch": false,
+  "fallback": false,
+  "started_at_utc": "2026-07-14T03:56:19Z",
+  "baseline_121cn_head": "ba0d46d09d77f2fae85970f19f1b635d9f7eed5c",
+  "baseline_1111_main_head": "e011f30b54f4fb1c3dd6abc0a53ba92e208ec802",
+  "branch": "records/ignition-121cx-codex56-extreme-takeover-20260714",
+  "base_branch": "records/ignition-121cn-night-long-haul-20260714",
+  "wscf_pr": {
+    "number": 33,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/33",
+    "state": "OPEN",
+    "draft": true
+  },
+  "1111_branch": "records/ignition-121cx-result-20260714",
+  "1111_base_branch": "main",
+  "1111_pr": {
+    "number": 37,
+    "url": "https://github.com/Arvin-liu/1111/pull/37",
+    "state": "OPEN",
+    "draft": true
+  },
+  "last_completed_cx_step": 97,
+  "next_cx_step": 98,
+  "canonical_121cn_last_completed_step": 30,
+  "canonical_121cn_next_step": 31,
+  "canonical_source_last_completed_step": 87,
+  "canonical_source_next_step": null,
+  "last_completed_source_id": "S120-010",
+  "next_source_id": "S120-011",
+  "next_phase_action": "codex56_extreme_accept_prior_non_codex_review",
+  "canonical_resume_status": "PHASE_1_COMPLETE_PHASE_2_IN_PROGRESS_AT_STEP_98",
+  "active_manifest": {
+    "historical_base": "data/external-research/121-fulltext-resolver/121cn/121cn-microstep-manifest.jsonl",
+    "121cx_overlay": "data/external-research/121-fulltext-resolver/121cx/121cx-microstep-manifest-overlay.jsonl",
+    "combined_unique_steps": 81,
+    "phase_d_semantic_dispositions": 71,
+    "remaining_phase_d_steps_from_31": 57
+  },
+  "phases": {
+    "0_checkpoint_and_count_truth_audit": "COMPLETE",
+    "1_remaining_paper_reviews": "COMPLETE",
+    "2_prior_review_cross_model_acceptance": "IN_PROGRESS",
+    "3_family_synthesis": "PENDING",
+    "4_gap_readjudication": "PENDING",
+    "5_function_os_node_synthesis": "PENDING",
+    "6_internal_asset_mapping": "PENDING",
+    "7_horizontal_synthesis": "PENDING",
+    "8_final_validation_and_closeout": "PENDING"
+  },
+  "baseline_counts_reported_by_121cn": {
+    "total_sources": 84,
+    "sources_reviewed_121c01": 10,
+    "sources_remaining_manifest": 69,
+    "sources_failed_oa": 5,
+    "sources_clean_for_review": 62,
+    "high_review_completed_121cn": 12,
+    "high_review_blocked_insufficient": 0
+  },
+  "canonical_counts_after_cx_001": {
+    "total_unique_sources": 84,
+    "reviewable_unique_sources": 78,
+    "blocked_or_excluded_unique_sources": 6,
+    "prior_non_codex_review_cards_unique": 22,
+    "reviewed_121c01_unique": 10,
+    "reviewed_121cn_unique": 12,
+    "remaining_reviewable_unique": 0,
+    "codex56_extreme_new_reviews": 56,
+    "confirmed": 41,
+    "partial": 37,
+    "not_supported": 0,
+    "unresolved": 0
+  },
+  "canonical_counts_current": {
+    "total_unique_sources": 84,
+    "historical_card_bearing_sources": 78,
+    "accepted_fulltext_semantic_cards": 77,
+    "blocked_or_excluded_unique_sources": 7,
+    "confirmed": 41,
+    "partial": 36,
+    "not_supported": 0,
+    "unresolved": 1,
+    "note": "The S120-008 prior PARTIAL card was rejected at Step 95 because its exact source body is unavailable; S120-009 and S120-010 remain PARTIAL after Steps 96-97 correction. Historical source cards are preserved and these are canonical acceptance counts, not destructive rewrites."
+  },
+  "prior_review_acceptance": {
+    "total_unique": 22,
+    "completed": 9,
+    "remaining": 13,
+    "last_completed_source_id": "S120-010",
+    "next_source_id": "S120-011",
+    "ordered_source_ids": [
+      "S120-001",
+      "S120-002",
+      "S120-003",
+      "S120-004",
+      "S120-005",
+      "S120-007",
+      "S120-008",
+      "S120-009",
+      "S120-010",
+      "S120-011",
+      "S120-012",
+      "S120-014",
+      "S120-015",
+      "S120-017",
+      "S120-018",
+      "S120-021",
+      "S120-030",
+      "S120-035",
+      "S120-039",
+      "S120-045",
+      "S120-047",
+      "S120-053"
+    ],
+    "verdict_counts": {
+      "ACCEPT": 0,
+      "NARROW": 0,
+      "CORRECT": 8,
+      "REJECT": 1,
+      "BLOCKED_INSUFFICIENT_TEXT": 0
+    }
+  },
+  "resolved_reconciliation_items": [
+    "Added a 121CX overlay for missing Phase D semantic disposition steps 81-87 without rewriting the historical 121CN manifest.",
+    "Confirmed there are no valid Step 31-35 cards to backfill; no ledger, run-state, or semantic result was fabricated.",
+    "Corrected the post-Step-33 next-source cursor from overlay Step 83 source S120-024 to historical manifest Step 34 source S120-025 before beginning Step 34.",
+    "Corrected the post-Step-76 next-source cursor from overlay Step 87 blocked source S120-080 to historical manifest Step 77 source S120-081 before beginning Step 77.",
+    "Recorded without rewriting frozen data that S120-082 arXiv:2402.12045 is an unrelated quantum-physics PDF; gave it zero semantic credit and recovered the uniquely identified ICML 2024 DARE model-merging paper from the remaining author/year/method metadata.",
+    "Recorded without rewriting frozen data that the 121B S120-024 arXiv:2205.07366 artifact is an unrelated MHD current-sheet particle-acceleration paper; used the exact canonical 97-page JMLR v24:21-1524 PDF repaired by 121CN and gave the frozen wrong binding zero semantic credit.",
+    "Recorded without rewriting frozen data that the 121B S120-032 arXiv:2402.11285 artifact is an unrelated O-RAN resource-allocation paper; used the exact canonical 9-page AAAI-26 PDF, corrected the 121CN repair venue year from 2025 to 2026, and gave the frozen wrong binding zero semantic credit.",
+    "Corrected S120-056 from the old atlas's sole-author/Journal of Functional Programming/Cambridge DOI metadata to the exact Bauer-and-Pretnar JLAMP article DOI 10.1016/j.jlamp.2014.02.001, while preserving the frozen old record and independently matching the 121B/121CN arXiv bytes.",
+    "Superseded the planned S120-080 blocked disposition after proving that exact frozen arXiv:1607.00036 hash/size bytes are the intended D-NTM paper; completed all-page/full-text/source-code review and corrected Anonymous/2020/volume-32 metadata to four authors/2018/volume 30.",
+    "Recomputed the post-Phase-1 semantic-card distribution directly from all 22 prior and 56 Codex cards as 41 CONFIRMED and 37 PARTIAL; this corrects the prior run-state's one-card PARTIAL undercount.",
+    "Rejected the prior S120-008 card because arXiv:2407.18295 is an unrelated general-relativity paper; recovered the canonical ICONIP 2018 DOI and abstract metadata, but left semantic support UNRESOLVED because the stored extraction and advertised PDF endpoint are only a closed Springer landing page and no exact lawful repository full text was located.",
+    "Corrected S120-009 after exact 29-page and official-source review: retained bounded PARTIAL parameter-generation support while demoting compiler/interpreter, manifold, composition, routing and registry claims to explicit analogies or no evidence; promoted bounded internal-state, weight-change trace and behavioral-check evidence without calling it proof or Function OS validation.",
+    "Corrected S120-010 after proving the prior arXiv identity is an unrelated hadronic-physics paper: independently reviewed the exact Chauhan et al. arXiv v3 and Artificial Intelligence Review version of record, retained PARTIAL secondary taxonomy support, and bounded all application results to a non-exhaustive narrative review rather than new empirical validation."
+  ],
+  "deferred_acceptance_corrections": [
+    "Preserve the 12 prior 121CN cards but correct their missing specification_language, uncertainty_model, and lifecycle_and_provenance coverage during independent Codex acceptance."
+  ],
+  "blockers": [
+    {
+      "cx_step": 85,
+      "source_id": "S120-033",
+      "content_access_status": "NOT_LOCATED",
+      "semantic_review_status": "BLOCKED_INSUFFICIENT_TEXT",
+      "claim_support_status": "UNRESOLVED",
+      "reason": "The recorded Emergent Mind URL is a five-paper topic synthesis, the recorded arXiv identifier is invalid, and the frozen arXiv:2501.17635 bytes are the distinct ICM-LoRA paper; no unique exact-title work/full text exists to review without substitution."
+    },
+    {
+      "cx_step": 95,
+      "source_id": "S120-008",
+      "content_access_status": "EXTRACTED_PARTIAL_ABSTRACT_AND_METADATA_ONLY",
+      "semantic_review_status": "BLOCKED_INSUFFICIENT_TEXT",
+      "claim_support_status": "UNRESOLVED",
+      "reason": "The prior arXiv identifier resolves to an unrelated general-relativity paper. The canonical ICONIP 2018 Springer chapter is uniquely identified by DOI 10.1007/978-3-030-04179-3_54, but the stored extraction and advertised PDF endpoint are publisher landing-page HTML, OpenAlex reports closed access with no repository full text, and later PLOS/thesis materials cannot substitute for the exact body."
+    }
+  ],
+  "credential_fragments": 0,
+  "pr_merged_or_closed": 0,
+  "frozen_files_modified": false
+}

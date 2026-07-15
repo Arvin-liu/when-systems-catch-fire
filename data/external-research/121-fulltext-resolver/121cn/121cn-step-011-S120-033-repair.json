@@ -1,0 +1,11 @@
+{
+  "step": 11,
+  "source_id": "S120-033",
+  "title": "IC-LoRA: In-Context Low-Rank Adaptation",
+  "previous_status": "FAILED_LEGAL_OA_NOT_FOUND (arxiv URL 'ic-lora-2026.pdf' returned 404)",
+  "new_status": "CANNOT_LOCATE_NOT_A_TRADITIONAL_PAPER",
+  "method": "OpenAlex, arXiv API, web search \u2014 no matching paper found",
+  "success": false,
+  "reason": "Original URL 'arxiv.org/pdf/ic-lora-2026.pdf' appears fabricated. No paper with exact title 'IC-LoRA: In-Context Low-Rank Adaptation' exists in any database searched. Closest match is 'In-Context LoRA for Diffusion Transformers' (arXiv:2410.23775), which is a different paper by different authors. Source may be a misrecorded or non-existent reference.",
+  "action": "Mark as BLOCKED_INSUFFICIENT_TEXT. Cannot review. Report to GPT for clarification."
+}

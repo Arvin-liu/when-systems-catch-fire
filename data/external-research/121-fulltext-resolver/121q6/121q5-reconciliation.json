@@ -1,0 +1,87 @@
+{
+  "reconciliation_of": "121Q5 (IGNITION-20260715-121Q5)",
+  "reconciled_by": "121Q6 Step 001",
+  "executor": "QClaw main session",
+  "model": "Hy3",
+  "timestamp": "2026-07-15T11:56:11+08:00",
+  "pr_40_verified": {
+    "number": 40,
+    "state": "OPEN",
+    "isDraft": true,
+    "mergeable": "MERGEABLE",
+    "base_branch": "records/ignition-121q4-v4pro-symbolic-function-os-reference-20260715",
+    "base_head": "9a06c3afd7e77c089d128ed4611898249bfe3644",
+    "head_branch": "records/ignition-121q5-v4pro-canonical-function-os-v02-20260715",
+    "head_ref_oid": "314b5fa7e5ff74c9e3f71bb01dc242c1465e6a9f",
+    "actual_commit_count": 17,
+    "claimed_in_q5": "25 (incorrect)"
+  },
+  "defects_found_in_q5": [
+    {
+      "id": "D1",
+      "field": "121q5-run-state.json.actual_commits",
+      "claimed": 16,
+      "actual": 17,
+      "status": "CONFIRMED_MISMATCH"
+    },
+    {
+      "id": "D2",
+      "field": "121q5-run-state.json.final_head",
+      "claimed": "371ef65",
+      "actual_head": "314b5fa7e5ff74c9e3f71bb01dc242c1465e6a9f",
+      "status": "CONFIRMED_MISMATCH"
+    },
+    {
+      "id": "D3",
+      "field": "121q5-step-ledger.jsonl",
+      "claimed": "25-step ledger",
+      "actual_lines": 12,
+      "missing_steps": "001-013",
+      "status": "CONFIRMED_INCOMPLETE"
+    },
+    {
+      "id": "D4",
+      "field": "PR #40 body",
+      "claimed": "IN_PROGRESS (Step 000 completed)",
+      "actual": "completed (17 commits, run-state COMPLETE)",
+      "status": "CONFIRMED_STALE"
+    },
+    {
+      "id": "D5",
+      "field": "tracked files",
+      "claimed": "no pycache",
+      "actual": "3 .pyc tracked (function_os/__pycache__/*.cpython-311.pyc)",
+      "status": "CONFIRMED_HYGIENE_DEFECT"
+    },
+    {
+      "id": "D6",
+      "field": "test_05_n6_trace_all unpacking",
+      "claimed": "N6 trace on FunctionSpec",
+      "actual": "Representation unpacked as FunctionSpec (variable order bug)",
+      "status": "CONFIRMED_TEST_BUG"
+    },
+    {
+      "id": "D7",
+      "field": "model identity",
+      "claimed": "qclaw/pool-deepseek-v4-pro (single model)",
+      "actual": "user switched to Hy3 mid-Q5; no per-step runtime proof",
+      "corrected_identity": "MIXED_OR_UNVERIFIED",
+      "status": "CONFIRMED_IDENTITY_UNCERTAIN"
+    },
+    {
+      "id": "D8",
+      "field": "test result provenance",
+      "claimed": "46/46 PASS",
+      "actual": "executor-local report; no independent CI run at Q5 time",
+      "status": "CONFIRMED_LOCAL_ONLY"
+    }
+  ],
+  "commit_history_policy": "NOT rewritten, NOT split, NOT amended. Reconciliation is an overlay only.",
+  "new_commits_added_by_q5": [
+    "1b22a6d","84dfac4","05911e3","48d3532","bac33f1","c36c85c","af25cc3","4a61b9a",
+    "44f9f57","752c005","799e752","b14c6b0","3de836c","089e4b6","a1de921","371ef65","314b5fa"
+  ],
+  "note_on_count": "17 oids listed; 314b5fa is the final head commit, 1b22a6d is the first Q5 commit on top of PR#39 head 9a06c3a.",
+  "q5_normalized_status": "PARTIAL_ACCEPTED_AS_IMPLEMENTATION_CANDIDATE",
+  "next_action": "Step 002 will fix hygiene; Steps 003-024 will harden to v0.2.1 candidate."
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "IGNITION-20260715-121Q10",
+  "status": "READY_FOR_FINAL_RELEASE_DECISION_PENDING_REMOTE_CI",
+  "pr": 46,
+  "base_head": "47a637ebd7743726a76450669d75f7d0ff517bd7",
+  "step000_head": "1cbe2dce",
+  "step001_head": "2a986f31",
+  "step002_head": "recorded_by_git_after_commit_and_1111_receipt",
+  "canonical_current_state_page": "docs/project-current-state.md",
+  "deprecated_positioning_compatibility_page": "docs/project_positioning.md",
+  "license_texts_complete": true,
+  "local_preflight": "PASS",
+  "remote_ci": "pending_after_push",
+  "prs_merged": 0,
+  "prs_closed": 0,
+  "mark_ready": false
+}

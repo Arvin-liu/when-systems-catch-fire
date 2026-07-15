@@ -1,0 +1,89 @@
+{
+  "task": "121Q2V",
+  "instruction_commit": "4d9f35816b7e25012c4c4056e4a921d32788424b",
+  "baseline_head": "a344c20c29d78d8e7c52e0eca53c64eb930a8bc4",
+  "branch": "records/ignition-121q2v-verification-repair-20260715",
+  "pr_35_unchanged": true,
+  "current_step": 8,
+  "current_step_status": "COMPLETE",
+  "next_step": null,
+  "next_step_description": "FORCED STOP — awaiting GPT verification",
+  "defects_registered": 9,
+  "last_updated": "2026-07-14T17:22:35Z",
+  "phase2_counts": {
+    "CONFIRMED": 0,
+    "PARTIAL": 20,
+    "NOT_SUPPORTED": 0,
+    "UNRESOLVED": 2
+  },
+  "phase2_total": 22,
+  "identity_counts": {
+    "VERIFIED": 7,
+    "CORRECTED": 2,
+    "BLOCKED": 2,
+    "UNKNOWN": 11
+  },
+  "identity_total": 22,
+  "canonical_index": {
+    "total_slots": 84,
+    "present": 78,
+    "no_canonical_record": 6,
+    "identity_counts": {
+      "VERIFIED": 8,
+      "CORRECTED": 2,
+      "BLOCKED": 2,
+      "UNKNOWN": 65,
+      "NOT_FOUND": 6,
+      "BLOCKED_UNVERIFIABLE_IDENTITY": 1
+    },
+    "semantic_counts": {
+      "CONFIRMED": 35,
+      "PARTIAL": 40,
+      "NOT_SUPPORTED": 0,
+      "UNRESOLVED": 3,
+      "NOT_FOUND": 6,
+      "UNKNOWN": 0
+    },
+    "cross_layer_conflicts": 12
+  },
+  "family_impacts": {
+    "changed": 6,
+    "unchanged": 4
+  },
+  "phase_2_status": "COMPLETE",
+  "phase_2_next_cx_step": null,
+  "phase_2_next_source_id": null,
+  "phase_2_next_phase": "AWAITING_GPT_DECISION",
+  "phase_2_verdicts_ref": "121q2v/phase2-verdict-reconstruction.json",
+  "identity_ledger_ref": "121q2v/prior22-identity-ledger-corrected.jsonl",
+  "canonical_index_ref": "121q2v/canonical-semantic-index-corrected.jsonl",
+  "family_impact_ref": "121q2v/family-count-impact.json",
+  "phase_2_counts": {
+    "CONFIRMED": 0,
+    "PARTIAL": 20,
+    "NOT_SUPPORTED": 0,
+    "UNRESOLVED": 2
+  },
+  "phase_2_total": 22,
+  "ledger_reconstructed": {
+    "entries": 18,
+    "unique_steps": true,
+    "range": "000-017"
+  },
+  "validators": {
+    "json_jsonl_parse": true,
+    "phase2_semantic_sum_22": true,
+    "identity_sum_22": true,
+    "canonical_index_84_unique": true,
+    "empty_verified_conflicts": true,
+    "complete_as_confirmed": true,
+    "blocked_as_partial": true,
+    "family_counts_consistent": true,
+    "ledger_18_unique": true,
+    "frozen_files_zero_diff": true,
+    "credential_scan_clean": true,
+    "pr_merge_close_zero": true
+  },
+  "validation_overall": true,
+  "final_head": "fdf38f47d43b770bb1faad93429bf535b1da3e25"
+}

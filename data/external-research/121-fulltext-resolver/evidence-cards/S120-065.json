@@ -1,0 +1,42 @@
+{
+  "source_id": "S120-065",
+  "title": "MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation",
+  "authors": "Anonymous",
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi_or_identifier": "arXiv:2605.27366",
+  "source_family": 10,
+  "url": "https://arxiv.org/html/2605.27366",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2605.27366.pdf",
+  "effective_url": "https://arxiv.org/pdf/2605.27366",
+  "access_time_utc": "2026-07-13T16:44:26Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "be16a9327f3bf6fb7cea476c51e3128825f5698b80cf428464b817360075348d",
+  "local_cache_path": ".cache/fulltext/S120-065_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 2085173,
+  "page_count": 30,
+  "sections": [
+    "1 Introduction",
+    "2 MUSE-Autoskill Framework",
+    "3 Skill Lifecycle",
+    "4 Memory, Management, Evaluation",
+    "5 Experiments",
+    "6 Related Work",
+    "7 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:framework",
+    "sec:lifecycle",
+    "sec:memory"
+  ],
+  "abstract_snippet": "--- Page 1 --- MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation Huawei Lin 1,2,∗,Peng Li 1,Jie Song 1,Fuxin Jiang 1,Tieying Zhang 1,† 1ByteDance Inc.",
+  "what_the_paper_supports": "MUSE-Autoskill creates, stores, retrieves, and refines reusable skills across tasks, with a skill catalog and per-skill experience accumulation. Supports the ignition claim that a versioned registry of reusable functions is needed (GAP-019, Function OS node 9 VersionedRegistry). It also relates to effect tracking (GAP-018) because skills are executed by agents and can have side effects.",
+  "what_the_paper_does_not_support": "The paper is an agent framework, not a formal function specification language (GAP-015). It does not define weight-space composition (GAP-016) or equivalence between skills (GAP-017). It does not provide a probabilistic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (30 pages, 2085173 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

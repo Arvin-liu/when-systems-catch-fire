@@ -1,0 +1,48 @@
+{
+  "task": "IGNITION-20260709-121CN",
+  "step": 3,
+  "action": "paw_conflict_audit",
+  "source_id": "S120-001",
+  "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+  "generated_at_utc": "2026-07-13T19:16:00Z",
+  "conflict_description": "User reported PAW (S120-001) as CONFIRMED, but the actual evidence card has claim_support_status=PARTIAL. This audit checks all 121C01 artifacts for consistency.",
+  "evidence_card_file": {
+    "path": "121c01/evidence-cards-max/S120-001.json",
+    "claim_support_status": "PARTIAL",
+    "claim_support_reasoning": "PAW strongly demonstrates the compilation-representation-artifact-interpreter pipeline (nodes 2-5, 9) but provides no formal specification, equivalence, validation, or composition framework. The paper's own claims are well-supported by experiments, but the ignition architecture projections beyond what the paper demonstrates are marked as architecture projections, not paper-supported claims.",
+    "semantic_review_status": "MAX_REVIEW_COMPLETE",
+    "semantic_review_status_corrected": "GLM52_HIGH_REVIEW_COMPLETE",
+    "reviewer_model": "qclaw/pool-glm-5.2",
+    "reviewer_reasoning_level": "high"
+  },
+  "jsonl_summary": {
+    "path": "121c01/121c01-max-semantic-evidence-cards.jsonl",
+    "claim_support_status": "PARTIAL",
+    "consistent_with_card": true
+  },
+  "selected_sources_entry": {
+    "path": "121c01/121c01-selected-sources.jsonl",
+    "semantic_review_status": "MAX_REVIEW_IN_PROGRESS",
+    "note": "Stale — should have been updated to MAX_REVIEW_COMPLETE after review completed. With correction overlay: GLM52_HIGH_REVIEW_COMPLETE."
+  },
+  "comparison_entry": {
+    "path": "121c01/121c01-provisional-vs-max-comparison.jsonl",
+    "provisional_claim_status": "PARTIAL",
+    "max_claim_status": "PARTIAL",
+    "comparison": "AGREES",
+    "consistent": true
+  },
+  "run_state": {
+    "path": "121c01/121c01-run-state.json",
+    "confirmed_count": 5,
+    "partial_count": 4,
+    "note": "Run-state does not break down per-source, but with confirmed=5 and PAW being PARTIAL, the count is consistent with PAW=PARTIAL. The confirmed=5 miscount (actual=6) is a separate issue addressed in Step 002."
+  },
+  "canonical_conclusion": {
+    "source_id": "S120-001",
+    "claim_support_status": "PARTIAL",
+    "semantic_review_status": "GLM52_HIGH_REVIEW_COMPLETE",
+    "reasoning": "The evidence card, JSONL summary, and comparison entry all agree that PAW is PARTIAL. The user's recollection of PAW as CONFIRMED is incorrect — the card explicitly states that while PAW's own claims are well-supported, the ignition architecture projections (formal spec, equivalence, validation, composition) go beyond what the paper demonstrates. The PARTIAL rating is correct and consistent across all 121C01 artifacts.",
+    "action": "No change to evidence card needed. The canonical status is PARTIAL. User should be informed that PAW is PARTIAL, not CONFIRMED."
+  }
+}

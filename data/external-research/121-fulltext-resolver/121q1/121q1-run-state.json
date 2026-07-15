@@ -1,0 +1,28 @@
+{
+  "agent": "qclaw/pool-deepseek-v4-pro",
+  "batch": "ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714",
+  "cx_phase": "Phase 2: non-Codex evidence card cross-model acceptance",
+  "branch": "records/ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714",
+  "last_completed_cx_step": 101,
+  "next_cx_step": 102,
+  "last_completed_source_id": "S120-015",
+  "next_source_id": "S120-017",
+  "batch_scope": [
+    "S120-011",
+    "S120-012",
+    "S120-014",
+    "S120-015",
+    "S120-017"
+  ],
+  "batch_progress": {
+    "completed": 4,
+    "blocked": 1,
+    "remaining": 1,
+    "total": 5
+  },
+  "integrity_flags": [
+    "SYSTEMATIC_SOURCE_IDENTITY_INTEGRITY_RISK"
+  ],
+  "last_updated": "2026-07-14T15:37:56Z",
+  "notes": "S120-015 BLOCKED: unverifiable identity. S120-011 baseline card restored (unmodified). Acceptance overlays in 121q1/acceptance/."
+}

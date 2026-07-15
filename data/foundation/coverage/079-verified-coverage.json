@@ -1,0 +1,56 @@
+{
+  "snapshot_id": "IGNITION-20260709-079",
+  "registry_total": 622,
+  "migration_coverage": {
+    "covered": 622,
+    "total": 622,
+    "rate": 1.0
+  },
+  "preclassification_coverage": {
+    "covered": 622,
+    "total": 622,
+    "rate": 1.0
+  },
+  "method_counts": {
+    "HARDCODED_MAPPING": 74,
+    "REGEX_PRECLASSIFICATION": 548
+  },
+  "source_text_semantic_review_coverage": {
+    "covered": 5,
+    "total": 622,
+    "rate": 0.008038585209003215
+  },
+  "independently_verified_semantic_coverage": {
+    "covered": 5,
+    "total": 622,
+    "rate": 0.008038585209003215
+  },
+  "remaining_independent_semantic_queue": 617,
+  "internal_component_review": {
+    "covered": 9,
+    "total": 9,
+    "rate": 1.0
+  },
+  "formal_proof_coverage": {
+    "proved_original_claims": 0,
+    "proved_weakened_lemmas": 1,
+    "total_registry_objects": 622
+  },
+  "empirical_evidence_coverage": {
+    "covered": 0,
+    "total": 622,
+    "rate": 0.0
+  },
+  "proof_dossier_counts": {
+    "DEFINITION_ONLY": 2,
+    "EMPIRICAL_NOT_PURE_MATH": 3,
+    "EXTERNAL_THEOREM_REFERENCE": 1,
+    "FALSE_OR_COUNTEREXAMPLE_FOUND": 2,
+    "NEEDS_ADDITIONAL_ASSUMPTIONS": 21,
+    "PROVABLE_FINITE_OR_ELEMENTARY": 2,
+    "SEMANTICALLY_UNDEFINED": 5,
+    "STRUCTURAL_ANALOGY_ONLY": 4
+  },
+  "status": "PARTIAL_SEMANTIC_ADJUDICATION",
+  "warning": "Automatic method coverage is not semantic adjudication coverage."
+}

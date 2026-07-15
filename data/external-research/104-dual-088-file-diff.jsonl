@@ -1,0 +1,19 @@
+{"file_id": "088-A-sentinel-selection", "instance_088A": "EXPECTED_NOT_FOUND", "instance_088B": "NOT_APPLICABLE", "verdict": "088-A never executed; no file to compare", "action": "skip"}
+{"file_id": "088-A-source-registry", "instance_088A": "EXPECTED_NOT_FOUND", "instance_088B": "NOT_APPLICABLE", "verdict": "088-A never executed; no file to compare", "action": "skip"}
+{"file_id": "088-A-frontier-evidence-packs", "instance_088A": "EXPECTED_NOT_FOUND", "instance_088B": "NOT_APPLICABLE", "verdict": "088-A never executed; no file to compare", "action": "skip"}
+{"file_id": "088-C-EXECUTIVE-REPORT", "instance_088C": "EXPECTED_NOT_FOUND", "instance_088B": "NOT_APPLICABLE", "verdict": "088-C never executed; no file to compare", "action": "skip"}
+{"file_id": "088-C-PAPER-EVIDENCE-CARDS", "instance_088C": "EXPECTED_NOT_FOUND", "instance_088B": "NOT_APPLICABLE", "verdict": "088-C never executed; no file to compare", "action": "skip"}
+{"file_id": "088-B-087-count-reconciliation.json", "instance_088B": "EXISTS", "path": "data/external-research/088-087-count-reconciliation.json", "verdict": "AUTHORITATIVE", "reason": "Only executed 088 product; 087 overlay correction 143→250", "action": "KEEP"}
+{"file_id": "088-B-discipline-source-routing.jsonl", "instance_088B": "EXISTS", "path": "data/external-research/088-discipline-source-routing.jsonl", "verdict": "AUTHORITATIVE", "reason": "250 discipline-specific search routes", "action": "KEEP"}
+{"file_id": "088-B-gap-source-atlas.jsonl", "instance_088B": "EXISTS", "path": "data/external-research/088-gap-source-atlas.jsonl", "verdict": "AUTHORITATIVE", "reason": "14 gap source families", "action": "KEEP"}
+{"file_id": "088-B-external-source-atlas-v1.jsonl", "instance_088B": "EXISTS (65 entries)", "verdict": "SUPERSEDED", "reason": "Replaced by v2 (74) then v3 (117)", "action": "ARCHIVE"}
+{"file_id": "088-B-external-source-atlas-v2.jsonl", "instance_088B": "EXISTS (74 entries)", "verdict": "SUPERSEDED", "reason": "Replaced by v3 (117) which adds medium gaps", "action": "ARCHIVE"}
+{"file_id": "088-B-external-source-atlas-v3.jsonl", "instance_088B": "EXISTS (117 entries)", "verdict": "AUTHORITATIVE", "reason": "Final merged atlas: 74 HIGH + 43 MEDIUM, all Crossref-verified", "action": "KEEP_AS_PRIMARY"}
+{"file_id": "088-B-external-source-atlas-medium.jsonl", "instance_088B": "EXISTS (43 entries)", "verdict": "SUBSET_OF_V3", "reason": "Medium-only sources included in v3", "action": "ARCHIVE"}
+{"file_id": "088-B-patch-blueprint.jsonl", "instance_088B": "EXISTS (14 entries)", "verdict": "AUTHORITATIVE", "reason": "14 patches: 8 NEW_OBJECT_TYPE + 6 ENHANCE_KEEP", "action": "KEEP"}
+{"file_id": "088-B-patch-blueprint.md", "instance_088B": "EXISTS", "verdict": "AUTHORITATIVE", "reason": "Human-readable patch summary", "action": "KEEP"}
+{"file_id": "088-B-FINAL-REPORT.md", "instance_088B": "EXISTS", "verdict": "AUTHORITATIVE", "reason": "Final execution report", "action": "KEEP"}
+{"file_id": "088-B-PROGRESS.md", "instance_088B": "EXISTS", "verdict": "AUTHORITATIVE", "reason": "Progress log", "action": "KEEP"}
+{"file_id": "088-B-orchestration-089-103.jsonl", "instance_088B": "EXISTS", "verdict": "AUTHORITATIVE", "reason": "089-103 task orchestration", "action": "KEEP"}
+{"file_id": "089-103-products", "instance_088B": "EXISTS (15 files)", "verdict": "AUTHORITATIVE", "reason": "089 through 103 all generated", "action": "KEEP"}
+{"file_id": "anysearch_client.py", "instance_088B": "EXISTS", "path": "scripts/external-research/anysearch_client.py", "verdict": "AUTHORITATIVE", "reason": "Free-key anysearch API client, smoke-tested and replayable", "action": "KEEP"}

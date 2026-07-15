@@ -1,0 +1,66 @@
+{
+  "node_id": "N4",
+  "canonical_name": "Artifact",
+  "canonical_definition": "Compiled, versioned, hashable function artifact",
+  "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+  "inputs": "Compiler output",
+  "outputs": "versioned_artifact_with_hash",
+  "preconditions": "See node registry (Step 009)",
+  "invariants": [
+    "No FROZEN/FINAL/PROVEN status"
+  ],
+  "strongest_verified_sources": [
+    {
+      "source_id": "S120-035",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models"
+    },
+    {
+      "source_id": "S120-039",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy Without Increasing Inference Time"
+    },
+    {
+      "source_id": "S120-045",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Editing Models with Task Arithmetic"
+    }
+  ],
+  "partial_or_analogical_sources": [
+    {
+      "source_id": "S120-001",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions"
+    },
+    {
+      "source_id": "S120-009",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "HyperNetworks"
+    },
+    {
+      "source_id": "S120-046",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "TIES-Merging: Resolving Interference When Merging Models"
+    }
+  ],
+  "counterevidence": "Provenance and versioning must be added to artifacts.",
+  "limitations": "Provenance chain and cross-format interoperability not yet defined.",
+  "linked_gaps": [
+    "GAP-019"
+  ],
+  "candidate_interface": "JSON: name, version, sha256, representation_type, compiled_output, provenance_chain",
+  "candidate_status": "SUPPORTED_CANDIDATE",
+  "unresolved_questions": "Provenance chain and cross-format interoperability not yet defined.",
+  "prohibited_wording": [
+    "Do not claim FROZEN/FINAL/PROVEN",
+    "Do not claim papers verify N4",
+    "Do not claim external research solves N4"
+  ],
+  "timestamp": "2026-07-14T17:57:23Z"
+}

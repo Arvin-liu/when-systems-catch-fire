@@ -1,0 +1,36 @@
+{
+  "lead_search": {
+    "provider": "anysearch",
+    "endpoint": "https://api.anysearch.com/v1/search",
+    "auth_required": false,
+    "status": "ACTIVE",
+    "smoke_test_passed": true,
+    "smoke_test_date": "2026-07-13T20:50:00+08:00",
+    "replayable": true
+  },
+  "metadata_resolver": {
+    "provider": "crossref",
+    "endpoint": "https://api.crossref.org/works/{doi}",
+    "auth_required": false,
+    "polite_email_recommended": true,
+    "status": "ACTIVE",
+    "used_by_088": true,
+    "replayable": true
+  },
+  "content_retriever": {
+    "provider": null,
+    "status": "NOT_CONFIGURED",
+    "required_for": "ABSTRACT_REVIEWED, FULLTEXT_REVIEWED, CLAIM_SUPPORT_CONFIRMED"
+  },
+  "retraction_checker": {
+    "provider": null,
+    "status": "NOT_CONFIGURED",
+    "required_for": "RETRACTED_OR_CORRECTED detection",
+    "available_apis": ["Retraction Watch", "Crossref retraction filter"]
+  },
+  "citation_formatter": {
+    "provider": null,
+    "status": "NOT_CONFIGURED",
+    "required_for": "Standardized citation output"
+  }
+}

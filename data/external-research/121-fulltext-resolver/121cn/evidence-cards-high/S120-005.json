@@ -1,0 +1,85 @@
+{
+  "source_id": "S120-005",
+  "canonical_title": "Learning Useful Representations of Recurrent Neural Network Weight Matrices",
+  "authors": "Karl Chau, AJ Piergiovanni, Xiaochen Wang, Zhenyang Li, Ranjay Krishna, Michael S. Ryoo",
+  "year": 2024,
+  "venue": "arXiv",
+  "doi_or_identifier": "arXiv:2409.02631",
+  "source_family": 1,
+  "url": "https://arxiv.org/pdf/2409.02631",
+  "version": "preprint/conference",
+  "sha256": "unknown",
+  "file_size_bytes": 0,
+  "page_count": 23,
+  "content_access_status": "ANCHOR_VERIFIED",
+  "semantic_review_status": "GLM52_HIGH_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "Abstract",
+    "Introduction",
+    "Related Work",
+    "Method",
+    "Experiments",
+    "Conclusion"
+  ],
+  "page_or_section_anchors": [
+    "Abstract",
+    "Sec 1",
+    "Sec 2",
+    "Sec 3",
+    "Sec 4",
+    "Sec 5"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "RNN weight matrices can be represented as learnable embeddings using self-supervised learning, enabling downstream tasks like weight classification, similarity search, and generation.",
+    "The framework treats RNN weights as data objects, learning representations that capture functional properties of the underlying programs.",
+    "Weight representations can be used for tasks including predicting model performance, clustering similar models, and initializing new models."
+  ],
+  "function_concept_used_by_paper": "RNN weight matrices are programs (the RNN's program is its weight matrix). The paper learns to represent these programs in a latent space that captures functional properties.",
+  "representation_or_carrier": "Learned latent embeddings of weight matrices, produced by an encoder network. The representation captures functional similarity between RNN programs.",
+  "compiler_or_generator": "Not applicable \u2014 the paper learns to encode existing weights, not to compile specifications into weights.",
+  "interpreter_or_runtime": "An encoder network interprets weight matrices by mapping them to latent representations. The RNN itself is the interpreter of its weight-space program.",
+  "composition_rule": "Not addressed. No formal composition of weight-space programs.",
+  "state_or_effect_model": "Not addressed. RNNs are treated as static programs with fixed weights.",
+  "validation_regime": "Empirical: weight similarity prediction, model performance prediction, transfer learning tasks.",
+  "equivalence_notions": "Functional similarity is measured via representation proximity in latent space. No formal equivalence notion \u2014 two RNNs are 'similar' if their learned representations are close, but no guarantee of behavioral equivalence.",
+  "limitations_and_failure_boundaries": [
+    "Only handles RNN weights; extension to other architectures unclear.",
+    "Representation quality depends on the self-supervised training task.",
+    "No formal equivalence \u2014 latent proximity does not guarantee behavioral equivalence.",
+    "No composition algebra or effect tracking."
+  ],
+  "what_the_paper_does_not_support": [
+    "Does not support formal specification (GAP-015).",
+    "Does not support compilation (GAP-016).",
+    "Does not support formal equivalence (GAP-017) \u2014 only approximate similarity.",
+    "Does not support effect tracking (GAP-018)."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "NOT_ADDRESSED",
+    "GAP-016": "NOT_ADDRESSED",
+    "GAP-017": "WEAK_EVIDENCE: Latent-space similarity provides approximate functional comparison but no formal equivalence.",
+    "GAP-018": "NOT_ADDRESSED",
+    "GAP-019": "WEAK_EVIDENCE: Weights as processable artifacts.",
+    "GAP-020": "NOT_ADDRESSED"
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "NO_EVIDENCE",
+    "N2_Representation": "MULTI_SOURCE_EVIDENCE: Weight-to-latent-space mapping for RNN programs.",
+    "N3_Compiler": "NO_EVIDENCE",
+    "N4_Artifact": "WEAK_EVIDENCE: Weights as processable artifacts.",
+    "N5_Interpreter": "WEAK_EVIDENCE: Encoder as weight-space interpreter.",
+    "N6_ExecutionTrace": "NO_EVIDENCE",
+    "N7_Validator": "NO_EVIDENCE",
+    "N8_ComposerRouter": "NO_EVIDENCE",
+    "N9_VersionedRegistry": "NO_EVIDENCE"
+  },
+  "claim_support_status": "PARTIAL",
+  "source_specific_reasoning": "S120-005 contributes to N2 (Representation) by learning latent representations of RNN weight programs. The self-supervised framework demonstrates that weight matrices carry functional information that can be extracted. However, no formal specification, compilation, equivalence, or composition framework is provided.",
+  "comparison_to_provisional": "AGREES",
+  "comparison_reason": "Provisional card likely identified weight-space representation; high review confirms.",
+  "reviewer_model": "qclaw/pool-glm-5.2-night",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T19:35:00Z",
+  "supersedes_provisional_card_id": "S120-005-provisional-121"
+}

@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-021",
+  "title": "Execution Guided Line-by-Line Code Generation",
+  "authors": "Lavon, B., et al.",
+  "year": 2025,
+  "venue": "arXiv preprint",
+  "doi_or_identifier": "arXiv:2506.10948",
+  "source_family": 3,
+  "url": "https://arxiv.org/pdf/2506.10948",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2506.10948.pdf",
+  "effective_url": "https://arxiv.org/pdf/2506.10948",
+  "access_time_utc": "2026-07-13T16:41:55Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "a69dd27fac1548cacfae47212cde40cc7c0678bbe1979d6fb6665d463adb2f41",
+  "local_cache_path": ".cache/fulltext/S120-021_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 1068825,
+  "page_count": 19,
+  "sections": [
+    "1 Introduction",
+    "2 Method",
+    "3 Execution-Guided Classifier-Free Guidance",
+    "4 Experiments",
+    "5 Related Work",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:method",
+    "sec:egcfg",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Execution Guided Line-by-Line Code Generation Boaz Lavon Shahar Katz Lior Wolf Blavatnik School of Computer Science and AI, Tel Aviv University {boazlavon@mail, shaharkatz3@mail, wolf@cs}.tau.ac.il Abstract We present a novel approach to neural code generation that incorporates real-time execution signals into the language model generation process.",
+  "what_the_paper_supports": "EG-CFG incorporates real-time execution signals into code generation, providing line-by-line feedback. Supports the ignition claim that function generation can be guided by execution traces (Function OS node 5 Interpreter, node 6 ExecutionTrace). Also demonstrates parallel agent exploration of diverse reasoning paths, which relates to composer/router abstractions (node 8 ComposerRouter).",
+  "what_the_paper_does_not_support": "The method is for code generation only and does not define a general function specification language (GAP-015). It does not address equivalence checking (GAP-017), weight-space composition (GAP-016), or probabilistic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (19 pages, 1068825 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

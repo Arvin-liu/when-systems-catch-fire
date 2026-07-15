@@ -1,0 +1,62 @@
+{
+  "task": "IGNITION-20260709-121CX",
+  "cx_step": 2,
+  "action": "resume_reconciliation",
+  "completed_at_utc": "2026-07-14T04:03:25Z",
+  "status": "COMPLETE",
+  "step_31_through_35": {
+    "valid_cards_found": 0,
+    "ledger_backfills_written": 0,
+    "run_state_review_count_backfills_written": 0,
+    "semantic_cards_rewritten": 0,
+    "decision": "NO_RESULTS_TO_RECONCILE"
+  },
+  "canonical_resume": {
+    "last_completed_step": 30,
+    "next_step": 31,
+    "next_source_id": "S120-019"
+  },
+  "manifest_reconciliation": {
+    "historical_manifest_modified": false,
+    "historical_manifest_records": 74,
+    "historical_phase_d_records": 62,
+    "overlay_path": "data/external-research/121-fulltext-resolver/121cx/121cx-microstep-manifest-overlay.jsonl",
+    "overlay_records": 7,
+    "combined_records": 81,
+    "combined_phase_d_semantic_dispositions": 69,
+    "combined_step_range": [
+      7,
+      87
+    ],
+    "remaining_phase_d_steps_from_31": 57,
+    "remaining_reviewable_sources_from_31": 55,
+    "remaining_blocked_dispositions": 2
+  },
+  "overlay_source_ids": [
+    "S120-013",
+    "S120-023",
+    "S120-024",
+    "S120-032",
+    "S120-033",
+    "S120-056",
+    "S120-080"
+  ],
+  "reviewable_overlay_source_ids": [
+    "S120-013",
+    "S120-023",
+    "S120-024",
+    "S120-032",
+    "S120-056"
+  ],
+  "blocked_overlay_source_ids": [
+    "S120-033",
+    "S120-080"
+  ],
+  "historical_preservation": {
+    "121cn_run_state_modified": false,
+    "121cn_step_ledger_modified": false,
+    "121cn_manifest_modified": false,
+    "121cn_semantic_cards_modified": false
+  },
+  "next_action": "Begin atomic semantic review at Step 31 / S120-019."
+}

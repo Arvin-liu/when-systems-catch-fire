@@ -1,0 +1,117 @@
+name: function-os-ci
+
+# 121Q6C Step 005: Function OS dedicated CI.
+# Independent of foundation-validation.yml. Only exercises function-os-candidate/v0.2.
+# No secrets. No modification of any other workflow.
+
+on:
+  push:
+    branches:
+      - main
+      - 'records/ignition-121q6c-hy3-completion-merge-readiness-2026**'
+    paths:
+      - 'function-os-candidate/v0.2/**'
+      - '.github/workflows/function-os-ci.yml'
+  pull_request:
+    paths:
+      - 'function-os-candidate/v0.2/**'
+      - '.github/workflows/function-os-ci.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: function-os-ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  function-os-matrix:
+    name: Function OS v0.2 (${{ matrix.python-version }})
+    runs-on: ubuntu-22.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5.4.0
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install package (editable) + test deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ./function-os-candidate/v0.2
+          # pytest is NOT preinstalled on the runner and must be declared explicitly.
+          python -m pip install "pytest>=7.4,<9"
+
+      - name: Run unittest suite
+        working-directory: function-os-candidate/v0.2
+        run: python -m unittest discover -s tests -v
+
+      - name: Run pytest suite
+        working-directory: function-os-candidate/v0.2
+        run: python -m pytest -q
+
+      - name: Scan forbidden dynamic execution in runtime code
+        working-directory: function-os-candidate/v0.2
+        run: |
+          echo "Scanning function_os/ for eval( / exec( (forbidden at runtime)..."
+          if grep -rnE '\b(eval|exec)\s*\(' function_os/ ; then
+            echo "FORBIDDEN: eval/exec found in function_os runtime source"
+            exit 1
+          fi
+          echo "OK: no eval/exec in function_os runtime"
+
+      - name: Scan for tracked cache/coverage artifacts
+        run: |
+          echo "Scanning TRACKED files for __pycache__ / *.pyc / .pytest_cache / .coverage ..."
+          # Only consider git-tracked files (build/test caches are gitignored).
+          mapfile -t hits < <(git ls-files 'function-os-candidate/v0.2' | grep -E '__pycache__/|\.pyc$|\.pytest_cache/|\.coverage$|\.egg-info/' || true)
+          if [ "${#hits[@]}" -gt 0 ]; then
+            echo "FORBIDDEN: tracked cache/coverage artifacts present:"; printf '%s\n' "${hits[@]}"
+            exit 1
+          fi
+          echo "OK: no tracked cache/coverage artifacts"
+
+  schema-validate:
+    name: Control & audit schema validation
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5.4.0
+        with:
+          python-version: "3.12"
+
+      - name: Validate 121Q6C JSON / JSONL control files
+        run: |
+          python - << 'PY'
+          import json, glob, sys
+          ok = True
+          for f in glob.glob('data/external-research/121-fulltext-resolver/121q6c/*.json') + \
+                   glob.glob('data/external-research/121-fulltext-resolver/121q6c/*.jsonl'):
+              if f.endswith('.jsonl'):
+                  for i, line in enumerate(open(f), 1):
+                      line = line.strip()
+                      if not line:
+                          continue
+                      try:
+                          json.loads(line)
+                      except Exception as e:
+                          print(f"INVALID JSONL {f}:{i}: {e}"); ok = False
+              else:
+                  try:
+                      json.load(open(f))
+                  except Exception as e:
+                      print(f"INVALID JSON {f}: {e}"); ok = False
+          if not ok:
+              sys.exit(1)
+          print("All 121Q6C control/audit files parse cleanly")
+          PY

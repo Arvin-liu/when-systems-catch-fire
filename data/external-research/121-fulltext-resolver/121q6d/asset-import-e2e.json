@@ -1,0 +1,23 @@
+{
+  "step": "002",
+  "real_assets_examined": [
+    {
+      "asset_id": "IGN-ASSET-001",
+      "real_file_present": false,
+      "importer_status": "BLOCKED",
+      "reason": "source_path not checked into repo; cannot read real body"
+    },
+    {
+      "asset_id": "IGN-ASSET-002",
+      "real_file_present": false,
+      "importer_status": "BLOCKED",
+      "reason": "source_path not checked into repo; cannot read real body"
+    }
+  ],
+  "real_migration_completed": false,
+  "note": "Real migration requires the 120 asset md files to be checked in; they are currently ABSENT, so importer correctly BLOCKS. No fake migration claimed.",
+  "synthetic_fixture_used_for_logic_proof": true,
+  "synthetic_excluded_from_real_count": true,
+  "executor": "QClaw",
+  "model": "Hy3"
+}

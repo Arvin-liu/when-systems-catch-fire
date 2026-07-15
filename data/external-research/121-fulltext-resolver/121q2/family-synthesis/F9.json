@@ -1,0 +1,92 @@
+{
+  "family_id": "F9",
+  "family_name": "Probabilistic / Fuzzy Programs",
+  "description": "Probabilistic programming, fuzzy systems, uncertainty",
+  "canonical_included_source_ids": [
+    "S120-001",
+    "S120-058",
+    "S120-059",
+    "S120-060",
+    "S120-062",
+    "S120-064",
+    "S120-079"
+  ],
+  "total_sources": 7,
+  "verified_identity_count": 1,
+  "corrected_identity_count": 0,
+  "blocked_identity_count": 0,
+  "unknown_identity_count": 6,
+  "confirmed_semantic_count": 4,
+  "partial_semantic_count": 3,
+  "unresolved_semantic_count": 0,
+  "not_found_semantic_count": 0,
+  "strongest_supported_claims": [],
+  "unsupported_or_overclaimed_claims": [],
+  "within_family_disagreements": [],
+  "evidence_limitations": [
+    "Evidence limited to fulltext-reviewed sources; sources without fulltext review not included",
+    "Identity chain issues may affect some sources (see identity ledger)",
+    "Semantic verdicts are based on independent model review, not human expert validation"
+  ],
+  "candidate_function_os_implications": [],
+  "candidate_gap_implications": [],
+  "prohibited_wording": [
+    "This family validates Function OS",
+    "This family proves the ignition framework",
+    "These papers constitute mathematical proof",
+    "Function OS is verified by these sources"
+  ],
+  "confidence_basis": "Based on canonical semantic index (Step 006) with priority: 121Q2R > 121Q2 > 121Q1 > 121CX > evidence-card. Only fulltext-reviewed sources included.",
+  "synthesized_at": "2026-07-14T17:01:06Z",
+  "included_sources": [
+    {
+      "source_id": "S120-001",
+      "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+      "verdict": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "canonical_source": "121CX"
+    },
+    {
+      "source_id": "S120-058",
+      "title": "Probabilistic Programming with Stochastic Probabilities",
+      "verdict": "CONFIRMED",
+      "identity_status": "UNKNOWN",
+      "canonical_source": "121CX-extreme"
+    },
+    {
+      "source_id": "S120-059",
+      "title": "Semantics for probabilistic programming: higher-order functions, continuous distributions, and soft constraints",
+      "verdict": "CONFIRMED",
+      "identity_status": "UNKNOWN",
+      "canonical_source": "121CX-extreme"
+    },
+    {
+      "source_id": "S120-060",
+      "title": "Probabilistic programs as a unifying language of thought",
+      "verdict": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "canonical_source": "121CX-extreme"
+    },
+    {
+      "source_id": "S120-062",
+      "title": "On a Method of Solving of Possibilistic-Probabilistic Programming Problems",
+      "verdict": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "canonical_source": "121CX-extreme"
+    },
+    {
+      "source_id": "S120-064",
+      "title": "Pyro: Deep Universal Probabilistic Programming",
+      "verdict": "CONFIRMED",
+      "identity_status": "UNKNOWN",
+      "canonical_source": "121CX-extreme"
+    },
+    {
+      "source_id": "S120-079",
+      "title": "Deep Neuro-Symbolic Weight Learning in Neural Probabilistic Soft Logic",
+      "verdict": "CONFIRMED",
+      "identity_status": "UNKNOWN",
+      "canonical_source": "121CX-extreme"
+    }
+  ]
+}

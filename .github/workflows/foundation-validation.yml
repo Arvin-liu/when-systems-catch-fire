@@ -1,0 +1,62 @@
+name: foundation-validation
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/foundation-validation.yml'
+      - 'requirements-foundation.txt'
+      - 'formal/lean/**'
+      - 'tools/foundation/**'
+      - 'tests/foundation/**'
+      - 'data/foundation/**'
+      - 'data/foundation-architecture/**'
+      - 'data/math-foundation/**'
+      - 'data/pending_claims.json'
+      - 'views/**'
+      - 'schemas/foundation/**'
+      - 'reports/foundation-architecture/**'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/foundation-validation.yml'
+      - 'requirements-foundation.txt'
+      - 'formal/lean/**'
+      - 'tools/foundation/**'
+      - 'tests/foundation/**'
+      - 'data/foundation/**'
+      - 'data/foundation-architecture/**'
+      - 'data/math-foundation/**'
+      - 'data/pending_claims.json'
+      - 'views/**'
+      - 'schemas/foundation/**'
+      - 'reports/foundation-architecture/**'
+  workflow_dispatch:
+concurrency:
+  group: foundation-validation-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r requirements-foundation.txt
+      - uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          lake-package-directory: formal/lean
+          use-mathlib-cache: false
+          use-github-cache: false
+      - run: cd formal/lean && lake env lean Foundation.lean
+      - run: python3 tools/foundation/adjudicate_core.py --check
+      - run: python3 tools/foundation/migrate_legacy.py --check
+      - run: python3 tools/foundation/validate_foundation.py
+      - run: python3 tools/foundation/verify_core_claims.py --check
+      - run: python3 tools/foundation/verify_079.py --check
+      - run: python3 tools/foundation/validate_080_adjudications.py
+      - run: python3 -m unittest tests.foundation.test_foundation

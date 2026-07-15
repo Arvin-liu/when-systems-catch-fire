@@ -1,3 +1,16 @@
 
 # macOS
 .DS_Store
+.venv-foundation/
+.lake/
+.cache/fulltext/
+
+.cache/fulltest/
+scripts/external-research/__pycache__/
+__pycache__/__init__.cpython-311.pyc
+__pycache__/n1_*.cpython-311.pyc
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/

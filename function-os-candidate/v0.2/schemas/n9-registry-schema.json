@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "function-os/v0.2/schemas/n9-registry-schema.json",
+  "title": "N9 Registry Schema v0.2",
+  "type": "object",
+  "required": [
+    "function_id",
+    "revision",
+    "spec_hash",
+    "artifact_hash",
+    "representation_hash",
+    "trace_hash",
+    "compiler_version",
+    "status",
+    "supersedes",
+    "content_hash",
+    "created_at"
+  ],
+  "properties": {
+    "function_id": {
+      "type": "string",
+      "pattern": "^FN-\\d{8}-\\d{4}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "spec_hash": {
+      "type": "string"
+    },
+    "artifact_hash": {
+      "type": "string"
+    },
+    "representation_hash": {
+      "type": "string"
+    },
+    "trace_hash": {
+      "type": "string"
+    },
+    "compiler_version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "active",
+        "superseded"
+      ]
+    },
+    "supersedes": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "content_hash": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

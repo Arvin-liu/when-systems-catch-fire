@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "function-os/v0.2/schemas/n4-artifact-schema.json",
+  "title": "N4 Artifact Schema v0.2",
+  "type": "object",
+  "required": [
+    "artifact_id",
+    "spec_hash",
+    "representation_hash",
+    "compiled_id",
+    "content_hash",
+    "manifest",
+    "payload",
+    "created_at"
+  ],
+  "properties": {
+    "artifact_id": {
+      "type": "string",
+      "pattern": "^ART-FN-\\d{8}-\\d{4}-\\d+$"
+    },
+    "spec_hash": {
+      "type": "string"
+    },
+    "representation_hash": {
+      "type": "string"
+    },
+    "compiled_id": {
+      "type": "string"
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA-256 of payload"
+    },
+    "version": {
+      "type": "string"
+    },
+    "manifest": {
+      "type": "object",
+      "description": "Immutable artifact manifest"
+    },
+    "payload": {
+      "type": "object",
+      "description": "Compiled function payload from N3"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "source_id": "S120-084",
+  "canonical_title": "Universal Transformers",
+  "authors": [
+    "Mostafa Dehghani",
+    "Stephan Gouws",
+    "Oriol Vinyals",
+    "Jakob Uszkoreit",
+    "Łukasz Kaiser"
+  ],
+  "year": 2019,
+  "source_family": 1,
+  "source_family_name": "program-as-weights and weight-space computation",
+  "identifier": "ICLR 2019; arXiv:1807.03819v3",
+  "doi_or_identifier": "arXiv:1807.03819v3; OpenReview HyzdRiR9Y7",
+  "url": "https://arxiv.org/pdf/1807.03819",
+  "version": "exact registered arXiv v3, revised 2019-03-05; published ICLR 2019 conference paper",
+  "license": "Paper PDF and arXiv metadata do not specify a Creative Commons license; arXiv copy is under the arXiv non-exclusive distribution license; official Tensor2Tensor code is Apache-2.0",
+  "file_size_bytes": 2371799,
+  "page_count": 23,
+  "sha256": "d4b8c752b7ad28b6df67bab764ba6744c575ffe8e2f09879c750b05c7daf3e90",
+  "reviewed_at": "2026-07-14T10:52:38Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "claim_support_status": "CONFIRMED",
+  "retrieval_and_integrity": {
+    "registered_pdf": {
+      "url": "https://arxiv.org/pdf/1807.03819",
+      "sha256": "d4b8c752b7ad28b6df67bab764ba6744c575ffe8e2f09879c750b05c7daf3e90",
+      "file_size_bytes": 2371799,
+      "page_count": 23,
+      "registry_hash_size_page_match": true
+    },
+    "official_metadata": {
+      "arxiv_version": "v3",
+      "arxiv_first_submitted": "2018-07-10",
+      "arxiv_last_revised": "2019-03-05",
+      "arxiv_comment": "Published at ICLR2019",
+      "openreview_forum": "https://openreview.net/forum?id=HyzdRiR9Y7",
+      "publication_status": "Published as an ICLR 2019 conference paper"
+    },
+    "visual_review": "All 23 pages were rendered at 144 DPI and visually inspected. Model diagrams, equations, Tables 1-7, code listings, universality appendix, detailed seed table and attention/ponder visualizations were legible; no blank, clipped, substituted or malformed source page was found.",
+    "text_and_source_review": "The complete 10,316-word layout-preserving extraction and all 41 files in the arXiv v3 source package were reviewed, including hidden draft comments, experiment tables, the reduction argument, ACT pseudocode, detailed bAbI seed results and all attention figures.",
+    "arxiv_source": {
+      "url": "https://arxiv.org/src/1807.03819v3",
+      "sha256": "5a4c7777b3097beb24d3bd556631a1736ac6d8c78c88b72f11638d60d57b0d67",
+      "file_count": 41,
+      "contents": "TeX, bibliography, styles and figures; no checkpoint, raw training/evaluation log, dependency lock or executable result-generation receipt"
+    },
+    "official_code_repository": {
+      "url": "https://github.com/tensorflow/tensor2tensor",
+      "repository_state": "Archived and explicitly deprecated; README encourages migration to Trax",
+      "license": "Apache-2.0",
+      "audited_current_head": "bafdc1b67730430d38d6ab802cbd51f9d053ba2e",
+      "audited_current_commit_count": 4379,
+      "audited_current_tracked_file_count": 553,
+      "current_head_date": "2023-04-01",
+      "paper_added_commit": "21d5f79212380bfc74ccf4ba7869158b3788d9ad",
+      "paper_added_commit_date": "2018-07-14",
+      "last_repository_commit_before_arxiv_v3_timestamp": "767b2fa373dae5eb2fa7bb880b0dc85d1cfc6d13",
+      "last_pre_v3_commit_date": "2019-03-04T15:09:21-08:00",
+      "last_pre_v3_tracked_file_count": 530,
+      "last_pre_v3_ut_file_hashes": {
+        "universal_transformer.py": "73558102c7f3a63ae459a7bc9da01b09410a22300110585b0a4165b9f246342f",
+        "universal_transformer_util.py": "96805fceb770f580643c19b287fc73741ec80124783decb4e155d38b034bc36f",
+        "universal_transformer_test.py": "1f02a1ec7d6b054d6590ef15d397cb03df6afe347a8653ad249f2a6426c2bce4"
+      },
+      "implementation_findings": "The code implements shared recurrent steps, several transition variants and position-wise ACT with halting probability, remainder, update count, threshold, ponder loss and a forced maximum step count. Current UT Python files pass syntax compilation.",
+      "test_findings": "The paper-era and current universal_transformer_test.py each contain one small basic-model output-shape test. They do not test ACT halting correctness, input-length-dependent unbounded recurrence, the computational-universality construction, reported benchmark values or checkpoint reproduction.",
+      "provenance_boundary": "The paper links the repository but pins no commit. The nearest repository state before the v3 timestamp is only a time-based audit candidate, not proof of the exact experiment code. No paper checkpoints, commands, seeds, environment or raw result logs were identified."
+    },
+    "execution_boundary": "TensorFlow is absent from the bundled runtime and the linked framework is deprecated, so the legacy model tests and experiments were not executed. Syntax checks and repository/history inspection are code-structure evidence only, not experimental reproduction."
+  },
+  "sections_reviewed": [
+    "abstract and section 1, recurrence-in-depth motivation, length-generalization and conditional-computation claims",
+    "section 2.1, complete encoder/decoder equations, shared transition, position/time encodings and autoregressive execution",
+    "section 2.2 and appendix C, ACT halting probability, threshold, remainder, maximum steps, ponder state and TensorFlow listings",
+    "sections 3.1-3.6, bAbI, agreement, LAMBADA, length extrapolation, Learning to Execute and WMT experiments",
+    "section 4 and appendix B, fixed-step unrolling equivalence, Neural GPU reduction and computational-universality assumptions",
+    "section 5 and appendices A/D-F, model schema, task definitions, best-seed versus all-seed bAbI results and attention visualizations",
+    "complete arXiv v3 source and official Tensor2Tensor current/history, pre-v3 implementation blobs, tests, license and deprecation state"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 1-5, sections 1-2, equations 1-8 and Figures 1-2",
+      "checked_for": "shared recurrent transition, parallel position updates, tensor state, variable depth, decoder semantics and ACT design"
+    },
+    {
+      "anchors": "pp. 5-9, section 3, Tables 1-7 and Figure 3",
+      "checked_for": "best-seed selection, point estimates, length extrapolation, program evaluation, dynamic-halting tradeoffs and hardware"
+    },
+    {
+      "anchors": "pp. 9-10, sections 4-5",
+      "checked_for": "fixed-step tied-layer equivalence, sufficient-memory universality claim, Neural GPU reduction, weight sharing and code link"
+    },
+    {
+      "anchors": "pp. 13-17, appendices B-E and Listings 1-2",
+      "checked_for": "finite-precision/depth assumptions, maximum-step implementation, task constraints and best-seed versus average-over-seed evidence"
+    },
+    {
+      "anchors": "pp. 18-23, appendix F and Tensor2Tensor UT implementation/history",
+      "checked_for": "stepwise attention/ponder traces, released code semantics, bounded defaults, test coverage, code-paper binding and deprecation"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "A Universal Transformer repeatedly applies the same self-attention and transition parameters across depth, updating all sequence positions in parallel and thereby adding a recurrent inductive bias to the Transformer.",
+      "anchors": "sections 1-2, equations 1-8 and Figures 1-2"
+    },
+    {
+      "claim": "Adaptive Computation Time predicts a per-position halting probability, lets positions use different numbers of recurrent refinements and stops at a threshold or configured maximum.",
+      "anchors": "section 2.2 and appendix C"
+    },
+    {
+      "claim": "With sufficient memory and a number of sequential steps that can grow with input length, a UT architecture can simulate a Neural GPU and is therefore argued to be computationally universal.",
+      "anchors": "section 4 and appendix B"
+    },
+    {
+      "claim": "The evaluated UT variants improve over same-paper Transformer/LSTM baselines on several synthetic reasoning, language and translation tasks, with important task-specific exceptions and selection boundaries.",
+      "anchors": "section 3 and Tables 1-7"
+    },
+    {
+      "claim": "Training on length-40 copy/reverse/addition and evaluating at length 400 shows better extrapolation than same-paper LSTM/Transformer baselines but far from perfect sequence accuracy on most tasks.",
+      "anchors": "section 3.4 and Table 4"
+    }
+  ],
+  "function_concept_used_by_paper": "The paper defines a learnable recurrent transition over per-position vector states. Shared attention/transition weights parameterize one computation step; repeated application and global access to the previous layer provide an algorithmic neural computation carrier, while ACT supplies data-dependent control flow. Under explicit memory and depth-scaling assumptions, the architecture is argued capable of simulating a Turing machine. This supports a bounded neural program/executor analogy, not weight-vector arithmetic or a claim that every trained checkpoint encodes a correct program.",
+  "specification_language": "Tasks are specified by input/output sequence domains, datasets or generators, losses, model equations, transition choice, recurrence/halting hyperparameters and evaluation metrics. LTE inputs include tiny program strings whose outputs are predicted. None of these is a typed general FunctionSpec with declared pre/postconditions, effects, authority, resource budgets, failure behavior, version constraints or proof obligations.",
+  "representation_or_carrier": {
+    "static_carrier": "shared embeddings, self-attention matrices, transition-function parameters, output projection and halting head",
+    "dynamic_carrier": "per-position hidden-state matrix H^t, position/time encodings, halting probabilities, remainders and update counts",
+    "control_carrier": "fixed recurrence count or ACT threshold/max-step rule determining when each position stops refining",
+    "program_analogy": "A trained shared transition plus state update can realize an iterative neural algorithm; LTE additionally consumes program text as data.",
+    "boundary": "The paper defines no standalone symbolic program artifact, checkpoint-as-program schema, weight delta or operation over weight space."
+  },
+  "compiler_or_generator": {
+    "learning_process": "Gradient-based training fits shared transition, attention, output and optional halting parameters from task examples and target losses.",
+    "generated_artifact": "A TensorFlow checkpoint/configuration capable of recurrent sequence execution within configured depth, shape and vocabulary limits.",
+    "classification": "This is a bounded learned-program generator analogy, not a compiler from explicit semantics. The paper provides no correctness-preserving lowering, coverage guarantee, counterexample loop or certificate that training found the intended algorithm."
+  },
+  "interpreter_or_runtime": "Tensor2Tensor executes a recurrent self-attention graph. Each step reads the prior global position-state matrix, applies shared attention/transition operations, updates per-position state and optionally predicts halting; the autoregressive decoder repeats for output symbols. This is a concrete neural execution runtime and can learn tiny program evaluation, but it does not interpret an independently typed Function OS language or enforce effects/capabilities.",
+  "state_or_effect_model": "UT has explicit internal mutable state H^t, autoregressive decoder history, attention-visible position memory and ACT control state. These are neural execution states. The paper has no external effect signatures, authority, transaction boundaries, idempotence, compensation, exception contract, durable state policy or rollback semantics.",
+  "composition_rule": "Within each recurrent step, self-attention composes information from all prior position states with a shared position-wise transition; residual additions and encoder-decoder attention compose tensor operations. Repeated application ties the same weights across depth, and fixed T is exactly an unrolling into a tied-parameter multilayer Transformer. This is temporal/operator composition, not addition, interpolation, merging or routing among independently trained weight vectors/functions.",
+  "equivalence_notions": [
+    {
+      "notion": "architectural unrolling equivalence",
+      "support": "For a fixed number of steps, the paper states a UT is equivalent to a multi-layer Transformer whose self-attention and transition parameters are tied across layers.",
+      "boundary": "This is a construction-level identity for the same operations/parameters, not equivalence between independently trained checkpoints or arbitrary functions."
+    },
+    {
+      "notion": "computational universality",
+      "support": "The paper reduces a Neural GPU to a stripped UT by making self-attention-plus-residual the identity, using a convolutional transition and setting recurrent steps equal to input length.",
+      "boundary": "This is an architecture-capacity argument under sufficient memory, finite-precision comparison and non-constant depth. It does not prove that the trained experimental checkpoints implement a universal machine, that optimization finds one, or that bounded deployed code is unbounded."
+    },
+    {
+      "notion": "benchmark performance",
+      "support": "Accuracy, error, perplexity, BLEU and ponder-time statistics compare UT variants and baselines on finite tasks.",
+      "boundary": "Point-score improvement is not semantic equivalence or general algorithm correctness; seed selection and narrow task generators materially bound the evidence."
+    }
+  ],
+  "validation_regime": {
+    "formal": "The paper supplies equations, fixed-step unrolling identity and an informal simulation/reduction argument to Neural GPU. It does not present a machine-checked theorem, explicit encoding of arbitrary Turing machines, resource bound, optimization guarantee or proof that its finite experimental models satisfy universal behavior.",
+    "babi": "Ten initializations were run, but the main Table 1 uses a best seed for each task. Appendix E labels the table 'Best seed run for each task', so joint-task headline averages can splice different seeds rather than represent one joint model. All-seed averages are substantially worse: 10K joint 1.12 versus 0.29 and 1K joint 11.21 versus 7.78. The appendix labels dispersion as '+/-var' without clarifying whether values are variance or another statistic.",
+    "agreement": "UT and ACT point accuracies are compared across numbers of agreement attractors. No run count, confidence interval or significance test is reported despite 'significantly' language.",
+    "lambada": "Dynamic UT averages 8.2+/-2.1 steps on test examples and outperforms fixed 6/8/9-step models in the reported setting, but the paper gives no seed distribution or formal regularization test. Reading-comprehension targets occur in context 81 percent of the time and the remaining 19 percent are impossible under that setup.",
+    "algorithmic_length_extrapolation": "Models train on length 40 and test on length 400. UT improves over LSTM/Transformer but sequence accuracy is only 0.35 copy, 0.46 reverse and 0.02 addition; Neural GPU reports 1.0 with a special curriculum. This is bounded tenfold extrapolation, not universal algorithm execution.",
+    "learning_to_execute": "Memorization tasks use maximum length 55. Program evaluation uses maximum nesting 2 and length 5; UT sequence accuracy is 0.63 on 'program' and 1.0 on control/addition. These tiny generators do not validate general programming-language interpretation.",
+    "translation": "The fixed UT base reports 28.9 BLEU versus Transformer base 28.0 and Weighted Transformer 28.4 using 8 P100 GPUs and comparable parameter counts. No seeds, uncertainty, latency, memory or energy are reported. ACT marginally degraded MT and is not used for the headline result.",
+    "artifact": "Official code implements the architecture, but the paper pins no commit and releases no experiment checkpoint, exact command set, seed list, environment lock, raw predictions or result receipts. The only UT unit test checks one basic output shape.",
+    "reproduction": "Current code syntax was checked, but the deprecated TensorFlow runtime and experiments were not executed. Published numbers remain author-reported, not independently replicated by 121CX.",
+    "safety": "No robustness-under-shift beyond small synthetic length changes, adversarial, calibration, privacy, bias, security or external-action evaluation is reported."
+  },
+  "uncertainty_model": "The decoder emits softmax distributions and ACT emits learned halting probabilities with a threshold, remainder and ponder cost. These are predictive/control quantities, not a calibrated epistemic or aleatoric uncertainty interface. Dropout, initialization and task sampling are stochastic. Apart from ten-run bAbI tables with ambiguously labelled '+/-var', most results have no run counts, raw seed values, confidence intervals, hypothesis tests or selection-adjusted uncertainty; halting probability is not shown to equal correctness confidence.",
+  "lifecycle_and_provenance": "A usable UT artifact needs exact architecture, shared parameter checkpoint, recurrence/ACT settings, maximum steps, tokenizer/vocabulary, training data, code/framework version and evaluation receipts. The official repository provides Apache-2.0 source and history but no paper commit pin or checkpoints; its current head is years newer, archived and deprecated. There is no governed registry for model/data/config compatibility, approval, rollout monitoring, drift, deprecation migration or rollback. The finite configured max-step field must be provenance-visible because it changes the relationship to the paper's unbounded architecture-capacity claim.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Sequence domains, task generators, model equations and recurrence budgets specify bounded learning problems, but not typed callable/effect contracts."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Shared transition/attention parameters plus per-position recurrent state and halting control form an explicit neural computation carrier."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Training generates shared neural computation from examples, but no declarative semantics are lowered and no correctness certificate is produced."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "The implementation naturally materializes checkpoints/configurations, while paper-run checkpoints, immutable code pin, environment and receipts are absent."
+    },
+    "N5_Interpreter": {
+      "status": "PARTIAL",
+      "reason": "The recurrent graph is a concrete learned executor and handles tiny program strings, but no independently represented typed language or general interpreter contract exists."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "H^t, attention distributions, ponder times, remainders and update counts expose stepwise trace candidates, but no standardized replayable trace artifact is defined."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Synthetic extrapolation, language tasks, translation and attention/ponder analyses provide bounded checks, weakened by best-seed aggregation, narrow generators and missing uncertainty."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Self-attention routes across position states and recurrently composes a shared transition over depth; it does not compose or route independently versioned callable functions."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "A mutable later-deprecated repository without a paper commit/checkpoint receipt is not a versioned compatibility, rollout and rollback registry."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Task generators, tensor equations, recurrence budget and halting thresholds are important specification fragments, but omit callable/effect/lifecycle contracts."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "Shared neural parameters plus recurrent state directly carry iterative computation, but there is no weight-space algebra, delta composition or arbitrary program artifact."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Fixed-step unrolling gives one exact structural equivalence and benchmarks test finite behavior, but there is no general semantic equivalence checker or certificate."
+    },
+    "GAP-018": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Hidden state and halting control do not define external effects, capabilities, transactions, compensation or rollback."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Code, checkpoint/config and max-step identity are critical lineage fields, but the paper lacks immutable experiment binding and governed lifecycle registry."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Output and halting probabilities are explicit, but neither is calibrated as uncertainty and seed/selection uncertainty is mostly unreported."
+    }
+  },
+  "source_specific_reasoning": "CONFIRMED is strictly bounded to a learned neural computation carrier. The exact paper directly defines shared recurrent transition weights, global position-aligned state, data-dependent halting and an architecture-capacity reduction to a computationally universal model under sufficient-memory and input-dependent-depth assumptions. It also empirically evaluates learned algorithmic and tiny program-execution behavior. 121CX rejects the historical card's weight-space arithmetic, general FunctionSpec, automatic compiler, deterministic-uncertainty and arbitrary-program claims; universality is not attributed to every finite trained checkpoint or default bounded implementation.",
+  "confirmed_projection": "The Universal Transformer confirms a bounded N2 Representation and partial N3/N5/N6/N8 pattern: one shared neural transition can be recurrently applied to globally accessible state, produce inspectable stepwise state/attention/halting traces, and allocate computation conditionally. With an input-length-dependent step schedule and sufficient memory, the architecture can express general computation. This is evidence for learned recurrent function execution, not for weight-vector algebra or governed Function OS semantics.",
+  "projection_boundary": "These are 121CX projections from the exact registered 23-page arXiv v3/ICLR paper, every rendered page, complete source package and audited official Tensor2Tensor current/history/pre-v3 code. Legacy tests and experiments were not run. This model review is not a proof, machine-checked verification, independent replication, empirical validation of the reported numbers, proof that a released checkpoint is Turing-complete, or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not define a neural checkpoint as a symbolic program or make arbitrary weights first-class typed functions.",
+    "It does not add, subtract, interpolate, merge or route among weight vectors; tying the same weights across depth is not weight arithmetic.",
+    "It does not compile a declared FunctionSpec into a correct artifact or guarantee that gradient descent learns the intended algorithm.",
+    "It does not show that a finite default Tensor2Tensor configuration with bounded act_max_steps is an unbounded universal machine.",
+    "It does not show that every trained UT checkpoint is Turing-complete, correct on arbitrary lengths or safe on unseen programs.",
+    "It does not establish semantic equivalence between UT, Neural GPU, Neural Turing Machine or independently trained Transformer models.",
+    "It does not validate a general programming-language interpreter; LTE programs have maximum nesting 2 and length 5.",
+    "It does not provide calibrated uncertainty; halting probability is a compute-control signal, not proven correctness confidence.",
+    "It does not define external effects, authority, transaction or rollback semantics.",
+    "This review does not independently validate the paper's scores or computational-universality claim."
+  ],
+  "limitations_and_failure_boundaries": [
+    "The universality argument assumes sufficient memory and sequential steps that can grow with input length; actual deployments have finite tensors, context and configured maximum steps.",
+    "The paper gives an informal reduction/construction rather than a machine-checked theorem with explicit arbitrary-machine encoding and resource bounds.",
+    "Architecture capacity does not imply learnability, convergence, algorithm identification or correctness of a particular checkpoint.",
+    "The default official implementation sets act_max_steps to twice num_hidden_layers and forces termination, so it does not by default realize unbounded input-dependent depth.",
+    "A fixed-T UT is only the same as a tied-parameter unrolling; this does not make it equivalent to an ordinary independently parameterized Transformer.",
+    "bAbI headline results select the best seed separately for each task out of ten, and joint-task rows can therefore aggregate different model runs rather than one joint model.",
+    "All-seed bAbI averages are materially worse than best-per-task seed results, especially in the 1K regime, and dispersion is ambiguously labelled as variance.",
+    "Most other experiments provide single point estimates without seed counts, raw values, confidence intervals, significance tests or correction for model/hyperparameter selection.",
+    "Length-400 algorithmic sequence accuracy remains 0.35, 0.46 and 0.02 for copy, reverse and addition despite improvement over same-paper baselines.",
+    "The perfect Neural GPU comparison used special curriculum training, so it is not a controlled architecture-only comparison.",
+    "LTE program evaluation is limited to nesting 2 and length 5; its 0.63 sequence accuracy on the program task is far from general interpreter correctness.",
+    "LAMBADA reading-comprehension setup contains the answer in context 81 percent of the time and is impossible in the remaining 19 percent under that formulation.",
+    "ACT improves several small tasks but marginally degrades machine translation; the headline WMT result disables ACT.",
+    "WMT evaluation uses 8 P100 GPUs and reports no latency, throughput, memory, energy or run variance, so the parallel-efficiency narrative is not systems-validated.",
+    "Attention visualizations and ponder-time correlations are descriptive; sharper attention is not a proof of human-like reasoning or causal faithfulness.",
+    "The official repository is archived/deprecated, uses legacy TensorFlow APIs, and its current head postdates the paper by years.",
+    "The paper pins no repository commit and releases no checkpoints, environment lock, exact commands, seed manifest, raw predictions or result receipts.",
+    "The one UT unit test checks only output shape for a basic model, not ACT, universality, length generalization or paper metrics.",
+    "No adversarial, distributional, calibration, safety, privacy, bias, security or external-action evaluation is reported."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "METADATA_ONLY",
+    "verdict": "BOUNDED_SHARED-WEIGHT_RECURRENT_COMPUTATION_CONFIRMED; WEIGHT-SPACE_PROGRAM_ALGEBRA_REJECTED",
+    "corrections": [
+      "Replaced metadata-only treatment with all-23-page visual/full-text/source review and official repository/history audit.",
+      "Confirmed shared transition/attention parameters, global per-position recurrent state and data-dependent halting as a genuine neural computation carrier.",
+      "Bound computational universality to sufficient memory, finite-precision comparison and a number of recurrent steps that can grow with input length.",
+      "Separated architecture capacity from training success and from any claim that the finite experimental checkpoints are universal machines.",
+      "Rejected weight-space arithmetic: the paper ties one parameter set across depth but never combines checkpoint vectors.",
+      "Replaced generic loss/data FunctionSpec and gradient-descent compiler with a bounded example-driven learned-transition process lacking correctness guarantees.",
+      "Added fixed-step tied-layer structural equivalence while rejecting semantic equivalence among independently trained models.",
+      "Recorded the default finite act_max_steps implementation boundary and the absence of ACT/universality unit tests.",
+      "Exposed best-seed-per-task bAbI aggregation, poorer all-seed averages, ambiguous variance label and point-only evidence elsewhere.",
+      "Bound algorithmic extrapolation to train length 40/test length 400 and LTE to maximum nesting 2/length 5, including non-perfect sequence scores.",
+      "Separated the fixed non-ACT WMT gain from the paper's statement that ACT marginally degraded translation.",
+      "Recorded the unpinned, later-archived/deprecated Tensor2Tensor artifact and missing checkpoints/run receipts.",
+      "Did not call the reduction a machine-checked proof, public code reproduction, or this model review empirical validation."
+    ],
+    "prior_card_superseded": true
+  }
+}

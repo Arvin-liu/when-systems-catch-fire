@@ -1,0 +1,154 @@
+{
+  "source_id": "S120-039",
+  "cx_step": 107,
+  "step_number": 109,
+  "_acceptance_layer": "121q2/acceptance/S120-039.json — overlay",
+  "canonical_title": "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy Without Increasing Inference Time",
+  "authors": "Mitchell Wortsman, Gabriel Ilharco, Samir Yitzhak Gadre, Rebecca Roelofs, Raphael Gontijo-Lopes, Ari S. Morcos, Hongseok Namkoong, Ali Farhadi, Yair Carmon, Simon Kornblith, Ludwig Schmidt",
+  "year": 2022,
+  "venue": "ICML 2022 (39th International Conference on Machine Learning)",
+  "doi_or_identifier": "arXiv:2203.05482v3",
+  "prior_identity": {
+    "title": "Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time (CORRECT)",
+    "authors": "Wortsman, M., et al. (CORRECT)",
+    "year": 2022,
+    "venue": "arXiv preprint / ICML 2022 (CORRECT)",
+    "doi_or_identifier": "arXiv:2203.05482 (CORRECT)",
+    "sha256": "pending",
+    "file_size_bytes": 1616512
+  },
+  "corrected_identity": {
+    "title": "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy Without Increasing Inference Time",
+    "authors": "Wortsman et al. (UW, Columbia, Google Research, Meta AI, Tel Aviv University)",
+    "year": 2022,
+    "venue": "ICML 2022",
+    "doi_or_identifier": "arXiv:2203.05482v3",
+    "exact_fulltext_used": "arXiv PDF, SHA256: 226ac91243bdf4ebe79652991f59fa1c0c84d5d624a50b88210bf7e9316869e3",
+    "url": "https://arxiv.org/pdf/2203.05482"
+  },
+  "identity_status": "VERIFIED",
+  "identity_corrections": [
+    "All identity fields correct. No corrections needed."
+  ],
+  "url": "https://arxiv.org/pdf/2203.05482",
+  "access_url": "https://arxiv.org/pdf/2203.05482",
+  "access_time_utc": "2026-07-14T16:40:15Z",
+  "file_sha256": "226ac91243bdf4ebe79652991f59fa1c0c84d5d624a50b88210bf7e9316869e3",
+  "file_size_bytes": 1616512,
+  "page_count": 34,
+  "content_type": "application/pdf",
+  "abstract_snippet": "Instead of selecting the individual fine-tuned model which achieves the highest accuracy on validation, we average the weights of multiple models fine-tuned with different hyperparameter configurations, calling the result a 'model soup.' Averaging requires no additional training and adds no cost at inference time. ViT-G model soup achieves 90.94% on ImageNet, a new SotA. Model soups improve in-distribution and out-of-distribution performance.",
+  "what_the_paper_supports": "Model soups: averaging weights of multiple fine-tuned models from same pre-trained initialization. Key insight: fine-tuned models from same initialization lie in the same loss basin, making weight averaging viable. Two variants: (1) uniform soup (average all), (2) greedy soup (sequentially add models if they improve validation accuracy). Achieves SotA on ImageNet (90.94%) with 25% fewer FLOPs. No inference cost increase (unlike ensembling). Works for CLIP, ALIGN, ViT-G, and NLP tasks (BERT, T5).",
+  "what_the_paper_does_not_support": "No formal specification (GAP-015). No equivalence checking (GAP-017). No versioning of models (GAP-019). No formal verification (GAP-020). No execution trace. Weight averaging only works when models are in same loss basin — requires same pre-trained initialization. No composition mechanism (just averaging, not selective routing).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "paper_core_claims": [
+    "Averaging weights of multiple fine-tuned models (model soup) improves accuracy and robustness",
+    "No additional inference cost — averaged model has same architecture as individual model",
+    "Greedy soup (sequential addition based on validation accuracy) outperforms uniform averaging",
+    "Fine-tuned models from same pre-trained init lie in same loss basin — weight averaging is viable",
+    "ViT-G model soup achieves 90.94% on ImageNet (new SotA at time of publication)",
+    "Improves out-of-distribution performance and zero-shot transfer"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No specification language."
+    },
+    "GAP-016": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Weight averaging as a form of model compilation: multiple fine-tuned models → single averaged model. But very simple — just element-wise mean."
+    },
+    "GAP-017": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Weight averaging implies a form of equivalence: models in same basin are 'close enough' to average. But no formal equivalence checking."
+    },
+    "GAP-018": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No intermediate state tracking."
+    },
+    "GAP-019": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Multiple fine-tuned models are combined into a single model — a primitive form of version management. But no registry, no version control."
+    },
+    "GAP-020": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No formal verification. Empirical accuracy only."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "NO_EVIDENCE",
+      "reason": "No function specification."
+    },
+    "N2_Representation": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Weight space as representation: averaging weights in same loss basin. Greedy selection as representation pruning. Loss landscape flatness as predictor of averaging success."
+    },
+    "N3_Compiler": {
+      "status": "NO_EVIDENCE",
+      "reason": "Not a compiler. Weight averaging, not compilation."
+    },
+    "N4_Artifact": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Multiple fine-tuned models as artifacts that can be combined. Model soup itself is a new artifact. Greedy soup selects best subset — primitive artifact selection."
+    },
+    "N5_Interpreter": {
+      "status": "NO_EVIDENCE",
+      "reason": "Not an interpreter."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NO_EVIDENCE",
+      "reason": "No execution trace."
+    },
+    "N7_Validator": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Validation accuracy as selection criterion for greedy soup. But no formal validation."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Greedy soup is a primitive composer: sequentially select models to combine. But composition is just averaging — no routing, no conditional composition, no input-dependent selection."
+    },
+    "N9_VersionedRegistry": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Multiple fine-tuned models stored and selected from — a primitive model library. But no versioning, no metadata, no formal registry."
+    }
+  },
+  "limitations_and_failure_boundaries": [
+    "Weight averaging only works when models are in same loss basin — requires same pre-trained init",
+    "Different architectures cannot be averaged",
+    "Greedy soup depends on validation set — may overfit",
+    "No theoretical guarantee that averaging improves performance — empirical observation only",
+    "Uniform soup can degrade if models from different basins are included",
+    "Only tested on image classification and NLP classification — unclear for generation tasks",
+    "No formal analysis of when/why models lie in same basin"
+  ],
+  "strengths_noted": [
+    "N2 Representation: loss basin / weight space analysis is mathematically interesting",
+    "N4 Artifact: multiple models → single combined artifact with no inference cost",
+    "N8 ComposerRouter: greedy sequential selection is simple but effective composition",
+    "SotA on ImageNet with 25% fewer FLOPs — significant practical impact",
+    "Comprehensive evaluation: CLIP, ALIGN, ViT-G, WILDS, NLP tasks",
+    "Code released: https://github.com/mlfoundations/model-soups",
+    "Has become highly influential (weight averaging, model merging)"
+  ],
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "226ac91243bdf4ebe79652991f59fa1c0c84d5d624a50b88210bf7e9316869e3",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "Identity fully verified: arXiv:2203.05482, Wortsman et al., ICML 2022",
+      "N2 Representation: notable — weight space averaging in same loss basin",
+      "N8 ComposerRouter: greedy soup as primitive sequential composition",
+      "Relevant to Function OS mainly for N2 (representation) and N4 (artifact combination)",
+      "Not relevant to execution-related nodes (N5/N6/N7)"
+    ]
+  },
+  "reviewed_by_model": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "reviewed_at": "2026-07-14T16:40:15Z",
+  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714",
+  "cx_step_reconciled_from": 109,
+  "reconciliation_note": "CX step corrected from 109 to 107 per 121Q2R Step 001 canonical queue reconciliation."
+}

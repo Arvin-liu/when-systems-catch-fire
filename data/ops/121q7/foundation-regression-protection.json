@@ -1,0 +1,17 @@
+{
+  "task": "121Q7",
+  "generated_at": "2026-07-15T14:06:22+08:00",
+  "executor": "QClaw",
+  "model": "Hy3",
+  "regression_protection": {
+    "paths_filter": "foundation-validation.yml now triggers ONLY on real foundation dependencies; ordinary Agent pushes (function-os-candidate/**, reports/**, data/ops/**, agent-results/**, non-foundation overlays) do NOT trigger it",
+    "concurrency": "cancel-in-progress per PR/ref prevents overlapping duplicate runs",
+    "migrate_root_cause_fixed": "project-state.json canonical; --check EXIT 0 verified locally with requirements-foundation.txt installed",
+    "do_not_reintroduce": [
+      "never write foreign runtime state (083_* / next_task) into data/foundation/project-state.json",
+      "never let a push touch data/foundation/** without running migrate_legacy.py --check locally first",
+      "never track __pycache__"
+    ],
+    "residual_risk": "validate_080_adjudications.py still fails at baseline (run-state structural inconsistency, pre-existing). Only foundation-related pushes will hit it; documented, not hidden."
+  }
+}

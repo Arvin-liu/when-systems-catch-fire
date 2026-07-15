@@ -1,0 +1,298 @@
+{
+  "source_id": "S120-032",
+  "canonical_title": "Hybrid Routing for a Mixture of LoRA Experts",
+  "authors": [
+    "Yitong Huang",
+    "Ziqi Yang",
+    "Zihui Wang",
+    "Jianzhong Qi",
+    "Rongshan Yu",
+    "Xiaoliang Fan",
+    "Cheng Wang"
+  ],
+  "year": 2026,
+  "source_family": 5,
+  "source_family_name": "lora_adapters_and_routing",
+  "identifier": "AAAI-26 volume 40 issue 37, pages 31211-31219",
+  "doi_or_identifier": "10.1609/aaai.v40i37.40383",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/download/40383/44344",
+  "version": "AAAI-26 published version, published 2026-03-14",
+  "license": "Copyright 2026 Association for the Advancement of Artificial Intelligence; all rights reserved",
+  "file_size_bytes": 3561934,
+  "page_count": 9,
+  "sha256": "17f9fc4e3da29fee1e40f1e3f97878c25fe9cc370716c95c991f7c08015b6d8b",
+  "reviewed_at": "2026-07-14T11:29:44Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE_WITH_FROZEN_SOURCE_BINDING_CORRECTION",
+  "claim_support_status": "CONFIRMED",
+  "retrieval_and_integrity": {
+    "frozen_121b_binding": {
+      "registered_arxiv_identifier": "arXiv:2402.11285",
+      "registered_sha256": "a2f8c83e74010321e60ea39854bb1bf3631e3080d43849c168e9df3f696ee32b",
+      "registered_file_size_bytes": 2460620,
+      "registered_page_count": 34,
+      "hash_size_match_on_refetch": true,
+      "actual_pdf_identity": "Fair Resource Allocation in Virtualized O-RAN Platforms, Fatih Aslan et al., Proc. ACM Meas. Anal. Comput. Syst. 8(1), 2024",
+      "semantic_credit": "NONE: arXiv:2402.11285 is an unrelated O-RAN resource-allocation paper and cannot support HotMoE or LoRA routing claims",
+      "preservation_boundary": "The frozen 121B manifest and old atlas card were not rewritten. The erroneous arXiv binding is recorded and receives zero semantic credit."
+    },
+    "canonical_aaai_binding": {
+      "landing_page": "https://ojs.aaai.org/index.php/AAAI/article/view/40383",
+      "direct_pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/40383/44344",
+      "sha256": "17f9fc4e3da29fee1e40f1e3f97878c25fe9cc370716c95c991f7c08015b6d8b",
+      "file_size_bytes": 3561934,
+      "page_count": 9,
+      "complete_extraction": "6,547 words and 58,420 characters in the independent layout-preserving extraction",
+      "121cn_repair_hash_match": true,
+      "121cn_repair_year_correction": "The repair correctly found the canonical PDF but labeled the venue AAAI 2025; official landing page, PDF and DOI record identify AAAI-26 and publication year 2026.",
+      "authors_title_doi_match": true
+    },
+    "visual_review": "All 9 pages were rendered at 144 DPI and visually inspected. Architecture figures, routing equations, similarity-loss equations, two main result tables, three ablation tables, references and copyright/venue marks were legible; no blank, clipped, substituted or malformed page was found.",
+    "text_review": "The complete 6,547-word extraction was reviewed. The published PDF refers to Appendices A-E for GJS, preliminary analyses, baseline details, dataset details and extra ablations, but those appendices are not included in the 9-page canonical PDF or linked as a separate supplementary file on the landing page.",
+    "official_code_repository": {
+      "url": "https://github.com/Starlight039/HotMoE",
+      "current_head": "dd87658f40dc431eb5ecfd209b86ffdd77260dba",
+      "current_head_date": "2026-03-24T02:54:46Z",
+      "commit_count": 3,
+      "tracked_file_count": 1765,
+      "vendored_transformers_files": 1749,
+      "tags_or_releases": "NONE",
+      "declared_license": "NONE",
+      "publication_time_head": "ac68f43dc1362b8b085c93defe0dd22ac40bfa96",
+      "publication_time_blocker": "The head available at the 2026-03-14 publication imported hotmoe/config.py but did not contain that file. The current head added only config.py ten days after publication.",
+      "current_code_findings": "Current core files pass Python syntax compilation. The repository has no tests, CI, released checkpoint, full seven-task dataset, result logs, evaluation/MRD script or paper-run manifest. README contains only a short overview. The example data/path covers HellaSwag only; train.sh requires four GPUs but its placeholder --model line is not directly executable; requirements include nonportable local conda file URLs.",
+      "checkpoint_findings": "The saver uses torch.save but names the pickle-format file adapter_model.safetensors. The inference notebook separately calls torch.load and load_state_dict after HotmoeModel.from_pretrained constructs the architecture. No trained checkpoint is published.",
+      "data_and_evaluation_findings": "Released training code selects the first data_nums examples per task, performs an unshuffled 90/10 split and evaluates language-model loss through the trainer. It does not implement the paper's official accuracy, BLEU, ROUGE-L or MRD calculations, nor expose the three run seeds.",
+      "execution_boundary": "Repository history, relevant source, notebook, shell/config/data files and syntax were audited. Models and datasets were not downloaded and training/evaluation was not run; no code-reproduction or empirical-validation credit is assigned."
+    }
+  },
+  "sections_reviewed": [
+    "abstract and section 1, claimed routing limitations, layer-wise intuition and contributions",
+    "section 2, MoE and mixture-of-LoRA related work and distinction from task-label routing",
+    "section 3.1, multi-task instruction tuning formulation and sparse mixture-of-LoRA carrier",
+    "section 3.2-3.3, lower expert-expert attention and higher token-expert attention routing",
+    "section 3.4, GJS plus consistency/diversity similarity-guided auxiliary loss",
+    "sections 4.1-4.3, MRD definition, two task scenarios, seven benchmarks, baselines, settings and all overall results",
+    "sections 4.4-4.5, routing/loss ablations and transfer of similarity loss to two other routers",
+    "section 5, acknowledgments, all references and the missing-appendix boundary",
+    "complete official repository history and the relevant training, router, checkpoint, data and inference artifacts"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 31211-31212, abstract, section 1 and Figure 1",
+      "checked_for": "layer-varying expert behavior hypothesis, task-interference motivation, claimed 1.68% MRD and 3.1% trainable-parameter result"
+    },
+    {
+      "anchors": "pp. 31213-31214, sections 2-3.3, equations 1-14 and Figure 2",
+      "checked_for": "LoRA expert carrier, top-k weighted adapter output, frozen backbone, hybrid lower/higher routing and attention matrices"
+    },
+    {
+      "anchors": "pp. 31215-31216, sections 3.4-4.2, equations 15-20 and Tables 1-2",
+      "checked_for": "similarity-guided consistency/diversity loss, MRD definition, task scenarios, datasets, baselines and three-run point results"
+    },
+    {
+      "anchors": "p. 31217, sections 4.3-5 and Tables 3-5",
+      "checked_for": "per-task tradeoffs, routing and auxiliary-loss ablations, cross-router reuse and bounded conclusion"
+    },
+    {
+      "anchors": "pp. 31218-31219, references; official repository commits ac68f43 and dd87658",
+      "checked_for": "citation scope, publication-era code completeness, current implementation and reproducibility/provenance boundaries"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "HotMoE inserts a sparse mixture of rank-8 LoRA experts into feed-forward projections of a frozen Qwen2-1.5B backbone and activates the top two of five experts per token.",
+      "anchors": "sections 3.1 and 4.2, equations 1-3"
+    },
+    {
+      "claim": "Lower-half layers use attention among global expert embeddings to encourage shared expert relations, while upper-half layers use input-adaptive token-expert attention for task-specific selection.",
+      "anchors": "section 3.3, equations 4-14 and Figure 2"
+    },
+    {
+      "claim": "A similarity-guided auxiliary loss encourages similar hidden states to have similar routing distributions and dissimilar states to diverge, combined with negative GJS and language-model loss.",
+      "anchors": "section 3.4, equations 15-19"
+    },
+    {
+      "claim": "MRD averages each multi-task model's relative per-task change against separately tuned rank-8 LoRA baselines, exposing seesaw tradeoffs that a raw average can hide.",
+      "anchors": "section 4.1, equation 20"
+    },
+    {
+      "claim": "Averaged over three runs, HotMoE reports the best MRD in the selected synergy (+1.68%) and conflict (+0.25%) scenarios with 3.19% trainable parameters.",
+      "anchors": "Tables 1-2"
+    },
+    {
+      "claim": "Routing and loss ablations lower MRD in the selected scenarios, and adding the similarity term improves AVG/MRD for the tested standard router and MoLORA variants.",
+      "anchors": "sections 4.4-4.5, Tables 3-5"
+    }
+  ],
+  "function_concept_used_by_paper": "A function is a conditional low-rank residual transformation attached to a frozen base-model projection. Five learned LoRA experts form a bank, and a learned token-level router selects and weights the top two deltas. The overall runtime function is the frozen base model plus layer-specific mixtures of these residual experts. It is not an independently specified symbolic function, and individual expert semantics are emergent rather than contractually named.",
+  "specification_language": "Training samples contain an instruction, task-specific context and output target across a fixed collection of NLP datasets. The optimization specification is language-model loss plus routing regularizers; MRD compares multi-task performance against separate per-task LoRA baselines. There is no explicit contract for each expert, no type/effect schema, pre/postconditions, negative constraints, safety policy, resource SLA, ambiguity resolution or compatibility/version declaration.",
+  "representation_or_carrier": {
+    "base": "A frozen Qwen2-1.5B Transformer backbone.",
+    "expert": "Each expert is represented by two learned low-rank matrices whose residual output modifies a selected feed-forward projection.",
+    "router": "Lower layers carry global expert embeddings and expert-expert attention; higher layers add hidden-state-conditioned expert embeddings and token-expert attention.",
+    "artifact": "Trainable adapter/router state plus configuration attached to the exact base model and target-module layout.",
+    "boundary": "Experts are jointly trained numerical deltas. The paper does not give them stable semantic identifiers, standalone interfaces, independent tests or portability beyond the covered backbone/module schema."
+  },
+  "compiler_or_generator": {
+    "training": "Joint multi-task instruction tuning freezes the backbone and optimizes LoRA matrices, expert embeddings, routers and the similarity/GJS auxiliary objective.",
+    "selection": "The learned routing function produces a probability vector per hidden state, takes the top two experts and combines their residual outputs.",
+    "output": "A base-bound HotMoE checkpoint with approximately 3.19% trainable parameters in the reported setup.",
+    "classification": "This is a stochastic approximate training/generation process for a routed adapter artifact, not a semantics-preserving compiler from task descriptions to verified functions."
+  },
+  "interpreter_or_runtime": "At each targeted feed-forward layer, the fixed base projection runs and the layer-appropriate router computes attention-refined routing weights. Only the top-two LoRA expert residuals are weighted and added to the base output. Fixed weights, input and numerical environment yield a deterministic forward pass, but training, data order and generation can be stochastic. The implementation may cache lower-layer expert-expert attention during evaluation.",
+  "state_or_effect_model": "Runtime state consists of token hidden states, global/input-adaptive expert embeddings, routing probabilities, selected expert indices and Transformer activations. Training additionally accumulates batch routing/hidden-state statistics for auxiliary loss. No external effects, authority, filesystem/network action contract, transaction, exception, idempotence, compensation, rollback or safety sandbox is modeled.",
+  "composition_rule": "Composition is conditional residual addition: a frozen base linear map plus a weighted sum of top-k low-rank expert outputs. Routing differs by layer depth, with expert-expert attention below the midpoint and token-expert attention above it. This is neither static adapter arithmetic nor a demonstrated algebra for independently trained adapters; the experts are jointly trained and base/shape coupled.",
+  "equivalence_notions": [
+    {
+      "notion": "task performance relative to single-task adapters",
+      "support": "MRD averages normalized per-task score changes against separately trained rank-8 LoRA baselines.",
+      "boundary": "Positive MRD is a benchmark aggregate, not behavioral equivalence, dominance on every task or preservation of the base model."
+    },
+    {
+      "notion": "routing-semantic alignment",
+      "support": "Cosine similarity between hidden states is used as a proxy to make routing distributions similar or different.",
+      "boundary": "Hidden-state cosine similarity is not a ground-truth task ontology, expert-capability proof or calibrated routing correctness criterion."
+    },
+    {
+      "notion": "ablation contribution",
+      "support": "Replacing hybrid routing or removing loss terms lowers selected aggregate metrics in reported settings.",
+      "boundary": "Ablations are averaged point results without uncertainty and do not identify a unique causal mechanism across other backbones or task mixes."
+    }
+  ],
+  "validation_regime": {
+    "base_and_tasks": "Qwen2-1.5B across seven unique benchmarks: MRPC, RTE, HellaSwag, CommonGen, WMT19 English-to-Chinese, ARC-C and BoolQ.",
+    "scenarios": "Five-task synergy and five-task conflict mixtures with overlapping RTE, CommonGen and WMT19 tasks.",
+    "metrics": "Accuracy for five classification tasks, BLEU for WMT19, ROUGE-L for CommonGen, raw average and the paper-defined MRD.",
+    "main_results": "HotMoE reports AVG/MRD 55.38/+1.68% in synergy and 54.05/+0.25% in conflict, averaged over three runs. It is not best on every per-task metric; rank-40 LoRA has higher synergy AVG 56.13 and HydraLoRA has slightly higher conflict AVG 54.15.",
+    "ablations": "Standard-router replacements, lower/higher routing replacements, removal of GJS/similarity terms and transfer of the similarity loss to Wg/MoLORA are compared.",
+    "parameter_budget": "Five rank-8 experts, top-2 routing, midpoint split r1=0.5, expert/router dimensions 256 and auxiliary coefficients βc=1, βd=1.5, γ=0.01.",
+    "uncertainty": "The paper says all main-table results average three runs but gives no standard deviations, confidence intervals, significance tests, individual seeds or per-run values. Ablation-run repetition is not separately stated.",
+    "artifact": "The repository lacks the seven-task data manifest, official evaluation scripts, raw runs and checkpoints needed to reproduce Tables 1-5. The paper-referenced appendices with further setup are absent from the canonical PDF.",
+    "safety": "No harmful-output, bias, privacy, robustness, adversarial routing, expert-collapse under distribution shift or operational safety evaluation is reported."
+  },
+  "uncertainty_model": "Routing weights are categorical-like softmax scores truncated to top two, and training is stochastic; however, the scores are not calibrated probabilities of task suitability or correctness. Main results average three runs but omit dispersion and seeds. There is no predictive uncertainty, router-confidence calibration, entropy threshold, abstention/fallback policy, out-of-distribution detection, expert-collapse alarm or risk bound for a new task mixture.",
+  "lifecycle_and_provenance": "A governed routed-adapter artifact would bind the base-model hash/license, target modules, expert count/rank, layer split, router/loss settings, task datasets/splits, prompt formatting, seeds, dependencies/hardware, code commit, checkpoint format/hash and per-task/aggregate evaluation receipts. The paper gives part of this configuration, while the repository has only three commits, no license/tag/release/checkpoint/results/full data, an incomplete publication-time head and a postpublication repair. The state file is mislabeled as safetensors despite torch.save serialization. No promotion, monitoring, routing-drift, expert-retirement, migration, compatibility or rollback registry is defined.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Instructions, contexts, targets and task metrics form an empirical objective, but experts have no explicit contracts or declared capability interfaces."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Low-rank expert matrices plus global/adaptive expert embeddings and routers are explicit base-bound numerical function carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Joint tuning generates a routed checkpoint, but it is approximate stochastic optimization without semantics-preserving compilation or correctness guarantees."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "The implementation defines save/config artifacts, but no trained checkpoint is released and publication-time/current format and completeness problems prevent an accepted immutable artifact."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The frozen base plus layer-aware top-k adapter forward pass is a concrete runtime."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Routing weights and selected experts are observable in principle, but no standardized trace, stored routing log, causal attribution or replay receipt is released."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Per-task metrics, AVG, MRD and ablations provide an explicit empirical validator bounded to selected benchmarks; they are not semantic verification."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Layer-dependent expert-expert/token-expert attention and top-k weighted residual addition directly implement conditional routing/composition."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "No expert capability registry, compatible base/version matrix, immutable release or lifecycle governance is defined."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Instruction/target datasets and metrics provide empirical task specifications, while absence of expert contracts exposes the remaining specification gap."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "HotMoE directly supplies conditional top-k composition and layer-aware routing over low-rank residual experts, bounded to jointly trained same-base modules."
+    },
+    "GAP-017": {
+      "status": "CONFIRMED",
+      "reason": "Per-task metrics and MRD explicitly validate tradeoffs relative to single-task adapters, though they do not establish semantic equivalence or universal dominance."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Token/routing/training state is modeled, but no external effect, authority, failure or rollback semantics is present."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Base, adapters, routers, data and metrics require joint provenance, while the released repository lacks an immutable complete publication receipt."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Soft routing and three-run averaging expose uncertainty, but no dispersion, calibration, abstention, shift detector or fallback policy is supplied."
+    }
+  },
+  "source_specific_reasoning": "CONFIRMED is appropriate only for the bounded architectural claim: HotMoE jointly trains a same-base bank of low-rank experts and routes tokens through layer-dependent expert-expert or token-expert attention with a similarity-guided loss. 121CX assigns no credit to frozen arXiv:2402.11285 because its exact registered bytes are an unrelated O-RAN paper, and uses the exact AAAI-26 PDF repaired by 121CN while correcting the repair's 2025 venue year to 2026. The headline is narrowed to best MRD in two selected three-run scenarios: HotMoE does not win every task or even every AVG comparison. Static repository inspection confirms the method shape but cannot reproduce tables because the publication-time code was incomplete and the current repository lacks full data, evaluation, results and checkpoints.",
+  "confirmed_projection": "The paper confirms a useful Function OS routing pattern: keep a shared base runtime, represent bounded increments as low-rank expert artifacts, choose them from token state through a layer-aware router, compose only a sparse top-k residual, and validate aggregate benefit without hiding per-task regressions. It also shows why a router needs an explicit capability/provenance registry and uncertainty/fallback policy before routing scores can be treated as governed function selection.",
+  "projection_boundary": "This projection is based on the exact 9-page AAAI-26 PDF, every rendered page, complete extracted text, official landing/DOI metadata, exact frozen wrong-binding PDF/metadata and complete relevant repository/history inspection. Current core syntax was checked, but models, data and experiments were not run. This model review is not a proof, formal verification, causal proof of specialization, independent empirical validation, benchmark reproduction, calibrated router audit or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not support the frozen arXiv:2402.11285 binding, which is an unrelated O-RAN resource-allocation paper.",
+    "It does not describe adapter arithmetic or merging independently trained LoRA checkpoints; its five experts are jointly trained and conditionally mixed.",
+    "It does not give each expert an explicit semantic capability contract or guarantee that expert attention recovers true task structure.",
+    "It does not show HotMoE dominates every baseline on every task or every aggregate: rank-40 LoRA has higher synergy AVG and HydraLoRA has slightly higher conflict AVG.",
+    "It does not show that +1.68% or +0.25% MRD generalizes beyond the selected Qwen2-1.5B task mixtures.",
+    "It does not report run dispersion, statistical significance, routing calibration or predictive uncertainty.",
+    "It does not prove that hidden-state cosine similarity is a correct semantic or capability metric.",
+    "It does not establish base-behavior preservation, semantic equivalence, safety or robustness under task/distribution shift.",
+    "It does not define effects, permissions, sandboxing, transactions, rollback or an expert registry.",
+    "It does not release a complete executable publication-time code/data/checkpoint/evaluation/run bundle.",
+    "This review does not independently validate the reported benchmark results."
+  ],
+  "limitations_and_failure_boundaries": [
+    "The study uses one 1.5B backbone and two hand-constructed five-task mixtures drawn from seven benchmarks.",
+    "MRD depends on the chosen single-task LoRA baselines, metrics and normalization; it is not comparable without identical baseline receipts.",
+    "A positive aggregate MRD can coexist with individual task regressions, as shown by the tables.",
+    "Results are averages of three runs without standard deviations, confidence intervals, significance tests or published seeds/per-run values.",
+    "The paper gives no inference latency, memory, throughput or routing-overhead measurement despite the parameter-efficiency framing.",
+    "Top-2 of five and a 0.5 layer split are selected settings; general behavior for more experts, other ranks, routers, backbones or task counts is not established.",
+    "Hidden-state similarity can reflect nuisance factors and may cluster semantically distinct tasks or separate related ones.",
+    "Relaxing load balance can create underused or overloaded experts; the referenced Appendix E.3 analysis is absent from the canonical PDF.",
+    "No expert-collapse, adversarial routing, long-context, multilingual-beyond-one-translation-pair or out-of-distribution study is included.",
+    "Appendices A-E referenced for GJS, preliminary analysis, baseline/data details and extra ablations are not present in the reviewed PDF/landing page.",
+    "The code available at publication was missing hotmoe/config.py and therefore could not satisfy its own import path.",
+    "The current repository has no test suite, CI, tag/release, license, full seven-task data, evaluation scripts, raw results or trained checkpoint.",
+    "The training shell contains an unresolved model placeholder that breaks direct execution, and requirements contain machine-local conda URLs.",
+    "Released data building takes the first examples and performs an unshuffled 90/10 split, which does not document official benchmark-test reproduction.",
+    "The released trainer evaluates language-model loss, not the paper's accuracy/BLEU/ROUGE-L/MRD pipeline.",
+    "Checkpoint bytes are produced by torch.save while named .safetensors, increasing format/provenance ambiguity.",
+    "No model/data license and dependency-license aggregation is provided for the large vendored code tree.",
+    "The old 121B wrong source binding again shows that DOI/title/hash identity must be checked jointly before semantic credit."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "METADATA_ONLY_WITH_WRONG_FROZEN_ARXIV_BINDING",
+    "verdict": "FROZEN_ARXIV_BINDING_REJECTED; BOUNDED_LAYER_AWARE_LORA_EXPERT_ROUTING_CONFIRMED_WITH_METRIC_AND_ARTIFACT_CORRECTIONS",
+    "corrections": [
+      "Recorded that exact frozen arXiv:2402.11285 is Fair Resource Allocation in Virtualized O-RAN Platforms and assigned it zero HotMoE semantic credit.",
+      "Used the exact canonical AAAI PDF and corrected the 121CN venue year from AAAI 2025 to official AAAI-26/2026.",
+      "Replaced anonymous metadata with the seven authors on the published paper.",
+      "Specified the function carrier as jointly trained same-base low-rank residual experts rather than a generic standalone adapter delta.",
+      "Confirmed lower expert-expert and higher token-expert attention, top-2 sparse routing and similarity-guided loss as the core composition mechanism.",
+      "Rejected adapter arithmetic as the paper's composition rule; routing weights combine expert outputs during a forward pass.",
+      "Replaced deterministic uncertainty with stochastic training, soft/top-k routing and missing router/run calibration.",
+      "Narrowed equivalence to task metrics and MRD relative to separate single-task adapters, not behavior preservation or semantic equality.",
+      "Corrected the abstract's broad all-baseline language using Tables 1-2: HotMoE wins MRD but not every per-task score or every AVG.",
+      "Added the three-run-without-dispersion, absent appendices, one-backbone/two-mixture and unmeasured routing-cost boundaries.",
+      "Audited the official repository and recorded its incomplete publication-time head, postpublication fix, missing full artifacts/evaluation and checkpoint-format ambiguity.",
+      "Did not call paper publication proof, syntax inspection reproduction or this model review empirical validation."
+    ],
+    "prior_card_superseded": true
+  }
+}

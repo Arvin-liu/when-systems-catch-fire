@@ -1,0 +1,42 @@
+{
+  "source_id": "S120-059",
+  "title": "Semantics for probabilistic programming: higher-order functions, continuous distributions, and soft constraints",
+  "authors": "Staton, S., et al.",
+  "year": 2016,
+  "venue": "LICS 2016",
+  "doi_or_identifier": "10.1145/2933575.2933579",
+  "source_family": 9,
+  "url": "https://www.cs.ubc.ca/~fwood/papers/staton2016semanticslics.pdf",
+  "access_channel": "direct_pdf",
+  "access_url": "https://www.cs.ubc.ca/~fwood/papers/staton2016semanticslics.pdf",
+  "effective_url": "https://www.cs.ubc.ca/~fwood/papers/staton2016semanticslics.pdf",
+  "access_time_utc": "2026-07-13T16:44:12Z",
+  "version": "published/accepted manuscript",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "53944dc3679fef85e3c3674439bf7adf49d96ca8d92deae523402943e289239e",
+  "local_cache_path": ".cache/fulltext/S120-059_direct_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 373091,
+  "page_count": 10,
+  "sections": [
+    "1 Introduction",
+    "2 Metalanguage",
+    "3 Operational Semantics",
+    "4 Denotational Semantics",
+    "5 Soundness and Adequacy",
+    "6 Applications",
+    "7 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:metalanguage",
+    "sec:op",
+    "sec:denotational"
+  ],
+  "abstract_snippet": "--- Page 1 --- Semantics for probabilistic programming: higher-order functions, continuous distributions, and soft constraints Sam Staton Hongseok Yang Frank Wood University of Oxford {sam.staton,hongseok.yang}@cs.ox.ac.uk fwood@robots.ox.ac.uk Chris Heunen University of Edinburgh chris.heunen@ed.ac.uk Ohad Kammar University of Cambridge ohad.kammar@cl.cam.ac.",
+  "what_the_paper_supports": "Gives operational and denotational semantics for a higher-order probabilistic programming language with continuous distributions and soft constraints. Supports the ignition claim that probabilistic functions have a rigorous semantic foundation (GAP-020, Function OS node 1 FunctionSpec). It also validates compiler optimizations and inference algorithms, supporting node 7 Validator.",
+  "what_the_paper_does_not_support": "The semantics are for an idealized language, not a full implementation tied to ignition's function registry. It does not address weight-space composition (GAP-016), equivalence checking (GAP-017), or a general effect system beyond probability (GAP-018).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (10 pages, 373091 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

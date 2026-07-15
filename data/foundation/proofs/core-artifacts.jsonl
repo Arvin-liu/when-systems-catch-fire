@@ -1,0 +1,1 @@
+{"asset_kind":"machine_checked_proof","claim":"forall a b : Nat, a = 0 or b = 0 -> a * b = 0","entity_key":"proof:T2-zero-factor-nat","id":"T2","lean_artifact":"formal/lean/Foundation.lean","replay":["cd formal/lean && lake env lean Foundation.lean","python3 tools/foundation/verify_core_claims.py --check"],"status":"PROVED","z3_artifact":"formal/z3/T2-zero-factor.smt2"}

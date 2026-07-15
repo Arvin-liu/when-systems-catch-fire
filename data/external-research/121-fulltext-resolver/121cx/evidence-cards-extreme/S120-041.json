@@ -1,0 +1,296 @@
+{
+  "source_id": "S120-041",
+  "canonical_title": "Model Merging in the Era of Large Language Models: Methods, Applications, and Future Directions",
+  "title": "Model Merging in the Era of Large Language Models: Methods, Applications, and Future Directions",
+  "authors": [
+    "Mingyang Song",
+    "Mao Zheng"
+  ],
+  "year": 2026,
+  "version": "arXiv:2603.09938v2, 2026-03-30; preprint",
+  "doi_or_identifier": "arXiv:2603.09938v2",
+  "identifier": "arXiv:2603.09938v2",
+  "url": "https://arxiv.org/abs/2603.09938v2",
+  "source_family": 6,
+  "source_family_name": "model merging and task arithmetic",
+  "license": "arXiv non-exclusive distribution license; no separate license declaration was found in the reviewed PDF metadata",
+  "sha256": "10207fe1cf89dbb57155c3ae7d427add29466714657a7eb2ede73b533369aa09",
+  "file_size_bytes": 819719,
+  "page_count": 72,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_sha256_match": true,
+    "registered_file_size_match": true,
+    "registered_page_count_match": true,
+    "arxiv_api_identity": "http://arxiv.org/abs/2603.09938v2",
+    "published_at_utc": "2026-03-10T17:31:55Z",
+    "updated_at_utc": "2026-03-30T16:23:51Z",
+    "pdf_body_and_references": "50 pages of survey body followed by 22 pages of references",
+    "pdf_visually_checked_pages": [
+      1,
+      3,
+      4,
+      9,
+      16,
+      25,
+      26,
+      33,
+      41,
+      42,
+      43,
+      45,
+      46,
+      50
+    ],
+    "sources_cross_checked": [
+      "exact registered arXiv v2 PDF",
+      "arXiv API metadata",
+      "arXiv abstract record",
+      "web and GitHub search for a paper-specific repository"
+    ],
+    "code_artifact": {
+      "paper_specific_repository_identified": false,
+      "review_status": "NOT_APPLICABLE_TO_NARRATIVE_SURVEY",
+      "boundary": "The paper summarizes external methods and tools but contributes no implementation, benchmark run, dataset, or machine-readable taxonomy artifact of its own."
+    }
+  },
+  "sections_reviewed": [
+    "Abstract, introduction, scope, and FUSE contribution claims",
+    "Loss-landscape geometry, linear mode connectivity, and weight-space symmetries",
+    "Mergeability prerequisites and open theoretical questions",
+    "Weight averaging, Fisher/importance weighting, trajectory averaging, and geometric interpolation",
+    "Task-vector arithmetic, sign conflict, sparsification, and advanced manipulation",
+    "Mixture-of-experts routing, activation-informed merging, search, and cross-model alignment",
+    "Static unification versus structural-preservation trade-offs",
+    "Multi-task, multilingual, alignment, safety, federated, domain, reasoning, multimodal, and agentic scenarios",
+    "Evaluation methodology, retention, interference, compositional generalization, calibration, and benchmarks",
+    "Ecosystem, technical trends, open challenges, four failure modes, future directions, and conclusion",
+    "Complete reference section"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "§1, pp. 1-4, Figs. 1-2, Table 1",
+      "checked_for": "FUSE taxonomy, pipeline, declared scope, contribution claims, and foundation-model metadata"
+    },
+    {
+      "anchors": "§§2.1-2.5, pp. 3-9, eqs. 1-2, Table 2",
+      "checked_for": "loss basins, connectivity, symmetry, prerequisites, proposition boundary, and acknowledged theoretical gaps"
+    },
+    {
+      "anchors": "§§3.1-3.4, pp. 9-16, Tables 3-4",
+      "checked_for": "static, importance-weighted, trajectory, spherical, and manifold-aware merge families"
+    },
+    {
+      "anchors": "§§4.1-4.5, pp. 16-25, eqs. 3-7, Table 5",
+      "checked_for": "task-vector carrier, arithmetic, interference, TIES/DARE family, data/shared-initialization categories, and recent extensions"
+    },
+    {
+      "anchors": "§§5.1-5.5, pp. 25-35, eqs. 8-10, Tables 6-7",
+      "checked_for": "MoE runtime routing, activation-informed merge decisions, evolutionary search, alignment, and static-versus-structured trade-offs"
+    },
+    {
+      "anchors": "§§6.1-6.5, pp. 35-45, Table 8",
+      "checked_for": "application scenarios, safety boundaries, retention and interference metrics, compositional evaluation, calibration, OOD, efficiency, and benchmark gaps"
+    },
+    {
+      "anchors": "§§7.1-7.6 and §8, pp. 45-50, Fig. 4, eqs. 11-12",
+      "checked_for": "trends, open challenges, four failure modes, diagnostic workflow, automated/cross-architecture/continual/safety directions, and final claims"
+    },
+    {
+      "anchors": "entire manuscript and references, pp. 1-72",
+      "checked_for": "review protocol, search strategy, inclusion/exclusion, quality appraisal, uncertainty, artifact provenance, lifecycle, and reference support"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "The FUSE taxonomy organizes model merging into Foundations, Unification Strategies, Scenarios, and Ecosystem.",
+      "anchors": "§1, Fig. 2"
+    },
+    {
+      "claim": "The survey distinguishes static parameter unification from structural preservation: averaging and task-vector methods materialize one parameter artifact, whereas MoE-style methods retain experts and add input-conditioned routing.",
+      "anchors": "§§3-5, especially §§5.1 and 5.5"
+    },
+    {
+      "claim": "Shared initialization, architectural compatibility, training-procedure similarity, parameter/representation compatibility, and low interference are presented as mergeability prerequisites, while the authors acknowledge that a complete predictive theory is missing.",
+      "anchors": "§§2.4-2.5"
+    },
+    {
+      "claim": "The paper synthesizes four principal failure modes: task-level collapse, parameter/sign interference, method-dependent mergeability-prediction failure, and evaluation-masked failure.",
+      "anchors": "§7.4"
+    },
+    {
+      "claim": "The proposed diagnostic sequence checks representation compatibility first, parameter conflict and subspace overlap second, method-specific predictors third, and compositional generalization last.",
+      "anchors": "§7.4, p. 47"
+    },
+    {
+      "claim": "Evaluation should cover source-task retention, pairwise interference, cross-capability composition, calibration, OOD robustness, computational cost, and safety rather than only aggregate benchmark accuracy.",
+      "anchors": "§6.5, pp. 41-43"
+    },
+    {
+      "claim": "The manuscript repeatedly describes parts of its examination as systematic, but supplies no literature-search query, database list, date cutoff, inclusion/exclusion criteria, screening flow, duplicate handling, study count, evidence-quality appraisal, or synthesis protocol.",
+      "anchors": "entire manuscript; no review-method section or protocol is present"
+    }
+  ],
+  "function_concept_used_by_paper": "The survey treats a trained model, task delta, adapter, expert, layer or representation-alignment map as a composable function carrier. Static methods compile these carriers into one checkpoint; structured methods preserve multiple experts and route inputs at runtime; search-based methods treat the merge recipe itself as an optimized meta-function.",
+  "representation_or_carrier": {
+    "static_carriers": "aligned full checkpoints, task vectors, layer-wise deltas, masks, Fisher or activation statistics, and scalar or layer-wise coefficients",
+    "structured_carriers": "separate full-model or LoRA experts, routing keys or gates, and top-k selection state",
+    "alignment_carriers": "permutation maps, optimal-transport correspondences, feature matches, and representation surgery transforms",
+    "search_carriers": "candidate recipe encodings, fitness metrics, Pareto objectives, and validation subsets",
+    "evaluation_carriers": "per-task performance, retention ratios, pairwise interference matrices, calibration, OOD, efficiency, safety and compositional benchmarks",
+    "boundary": "The taxonomy groups heterogeneous carriers but does not define a common executable type system, schema, compatibility contract, or serialization format."
+  },
+  "specification_language": "FUSE and Table 5 provide a useful human-readable vocabulary: method category, data requirement, interference handling, shared-initialization requirement, scalability, year, application scenario, and ecosystem. Equations illustrate averaging, task vectors, MoE gates, top-k routing, compatibility prediction, and continual update. The survey does not turn this vocabulary into a machine-readable specification with exact artifact identity, tensor contract, tokenizer/architecture compatibility, coefficient domains, data provenance, effect semantics, failure policy, evaluation thresholds, version rules, or lifecycle transitions.",
+  "compiler_or_generator": {
+    "static": "uniform or importance-weighted averaging, task-vector addition/subtraction, sign resolution, sparsification, geometric interpolation, layer-wise or activation-guided selection",
+    "structured": "preserve or align expert structures and train or derive routing functions",
+    "search_based": "optimize model choice, layer choice, coefficients, masks, or recipes with validation fitness or multi-objective search",
+    "continual": "update an existing merged artifact with a new specialist and validation feedback",
+    "boundary": "These are literature-level method families, not one reference compiler, executable pipeline, or reproduced implementation."
+  },
+  "interpreter_or_runtime": "A statically unified checkpoint uses its normal model forward pass. Structurally preserved compositions use a gate g_i(x), often softmax or top-k, to select or weight full-model or adapter experts. The survey correctly exposes the memory-versus-interference trade-off, but does not specify runtime authorization, deterministic routing, mixed-version semantics, failure isolation, trace export, latency SLOs, abstention or rollback.",
+  "composition_rule": "The reviewed families span convex or spherical interpolation, task-vector arithmetic, sign-consensus and sparse delta fusion, Fisher/activation weighting, layer or feature matching, learned dense/top-k expert routing, and evolutionary recipe search. The common boundary is that successful composition depends on carrier compatibility and validation; none of these rules universally preserves behavior, safety or semantic equivalence.",
+  "state_or_effect_model": "Relevant state includes base and source checkpoint identities, architectures, tokenizers, training lineage, deltas, masks, coefficients, Fisher or activation data, validation samples, router parameters, evaluation traces and output checkpoints. The survey discusses performance, interference, safety, privacy, copyright and compute effects at a narrative level, but defines no shared state schema, effect algebra, access control, atomic promotion, health state, rollback, supersession or retirement protocol.",
+  "uncertainty_model": "The survey mentions Fisher information, calibration metrics, confidence intervals, significance tests, OOD robustness and predictive compatibility as relevant concepts. It does not quantify uncertainty in its own literature selection or claims, grade evidence quality, report inter-reviewer agreement, distinguish replicated from single-paper findings systematically, or specify calibrated uncertainty for merge decisions. Categorical table labels such as High/Medium scalability and checkmarks lack scoring rules or confidence.",
+  "validation_regime": {
+    "recommended_dimensions": "source-task retention, geometric-mean retention, pairwise interference, compositional generalization, calibration, OOD robustness, latency, memory, throughput, safety and multi-objective quality",
+    "named_resources": "MMLU, HellaSwag, WinoGrande, ARC, GSM8K, TruthfulQA, HumanEval, FusionBench, MergeBench, Open LLM Leaderboard and model hubs",
+    "failure_diagnostics": "representation divergence, sign disagreement, subspace overlap, gradient alignment, method-specific compatibility predictors and cross-capability tests",
+    "survey_evidence": "narrative synthesis of cited papers only",
+    "boundary": "The authors run no benchmark, reproduce no merge, release no evidence table, and provide no systematic-review protocol or quality/risk-of-bias appraisal."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "parameter alignment",
+      "support": "SHARED_INITIALIZATION_ARCHITECTURE_AND_SYMMETRY",
+      "boundary": "Aligned tensors permit arithmetic but do not prove functional or semantic equivalence."
+    },
+    {
+      "notion": "loss-basin compatibility",
+      "support": "LINEAR_OR_NONLINEAR_MODE_CONNECTIVITY",
+      "boundary": "Low loss along one path is task-, loss-, dataset- and tolerance-dependent and does not guarantee all-capability preservation."
+    },
+    {
+      "notion": "capability preservation",
+      "support": "TASK_RETENTION_AND_INTERFERENCE_METRICS",
+      "boundary": "Aggregate retention can mask individual, safety, calibration and compositional failures."
+    },
+    {
+      "notion": "representation compatibility",
+      "support": "ACTIVATION_DIVERGENCE_FEATURE_MATCHING_AND_SUBSPACE_OVERLAP",
+      "boundary": "The survey reports these as promising diagnostics, not a universal calibrated compatibility criterion."
+    },
+    {
+      "notion": "router suitability",
+      "support": "LEARNED_INPUT_EXPERT_AFFINITY",
+      "boundary": "Routing probabilities are allocation variables and can collapse or overfit; they are not correctness probabilities."
+    }
+  ],
+  "lifecycle_and_provenance": "The paper names MergeKit, FusionBench, MergeBench, Hugging Face model hubs and many source methods, so it recognizes an ecosystem around artifacts and evaluation. However, the Ecosystem dimension remains mostly tooling and future-direction prose. There is no normative model identity, source hash, license-compatibility record, tokenizer or architecture manifest, merge-recipe schema, evaluation receipt, lineage DAG, approval state, health monitoring, rollback, supersession or retirement model. The paper-specific FUSE taxonomy is not released as a versioned machine-readable artifact.",
+  "limitations_and_failure_boundaries": [
+    "This is an arXiv preprint and narrative survey, not a peer-reviewed systematic review or independent empirical study.",
+    "Despite repeated 'systematic' wording, no search strategy, databases, date cutoff, inclusion/exclusion, screening, quality appraisal, evidence grading or reproducible review protocol is reported.",
+    "The survey contributes no original merge experiment, benchmark reproduction, implementation, dataset or machine-readable taxonomy artifact.",
+    "Many claims aggregate heterogeneous studies without consistently distinguishing architecture, scale, task, data access, peer-review status or replication level.",
+    "Categorical Table 5 labels such as Data-Free, Interference Handling and Scalability compress substantial protocol differences and have no stated rubric or uncertainty.",
+    "The text sometimes turns contingent results into broad statements: shared initialization improves mergeability but does not ensure one loss basin, and overparameterized minima do not generally form a convex subspace supporting arbitrary linear combinations.",
+    "Proposition 1 uses approximate stationarity and one smooth loss; it is a loose interpolation bound rather than a capability-preservation guarantee for heterogeneous task losses.",
+    "Table 1 attributes 128K context to LLaMA-3 without distinguishing the original Llama 3 release from the later Llama 3.1 context expansion.",
+    "The FUSE categories overlap: MoE routing can preserve an ensemble rather than produce a single constituent-cost checkpoint, so it does not fit the introductory definition of merging without qualification.",
+    "Ecosystem coverage does not include model-version, provenance, license-compatibility, promotion, monitoring, rollback or retirement governance.",
+    "Named evaluation formulas and diagnostic workflows are synthesized recommendations, not validated by this paper across controlled merges.",
+    "No uncertainty is attached to literature completeness, evidence quality, taxonomy boundaries or future forecasts.",
+    "Safety, privacy, copyright and malicious-contributor risks are acknowledged, but no governed threat model or acceptance standard is specified.",
+    "The survey correctly reports that method-dependent mergeability and evaluation-masked failures prevent a single static metric or aggregate benchmark from certifying a merge."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove that model merging preserves source capabilities, safety, privacy, calibration or semantic equivalence.",
+    "It does not establish that any listed method is universally best, production-ready, or independently reproduced by the survey authors.",
+    "It does not provide a systematic-review completeness guarantee or quantitative meta-analysis.",
+    "It does not provide a governed VersionedRegistry, executable Function OS, or validation of the point architecture as a whole."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "FUSE and Table 5 provide a broad method vocabulary, but not a machine-readable semantic, compatibility, effect or lifecycle contract."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "The survey maps many compiler families, yet contributes and validates no executable generator of its own."
+    },
+    "GAP-017": {
+      "status": "CONFIRMED",
+      "reason": "Mode connectivity, permutation symmetry, representation divergence, subspace overlap and retention expose multiple non-equivalent compatibility notions and their boundaries."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "Static arithmetic, sparsification, expert routing, alignment and search form a clear composition-and-routing design space."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "The survey synthesizes validation dimensions and named benchmarks but supplies no original or systematically appraised empirical evidence."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Retention, interference, calibration, OOD and efficiency signals are identified, while evidence uncertainty, provenance, trace and lifecycle observability remain incomplete."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "The taxonomy is a useful human vocabulary but lacks executable contracts, compatibility rules and effect semantics."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Checkpoints, task vectors, masks, activations, experts, routers and alignment maps are clearly distinguished carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Compiler families are surveyed without a reference implementation or reproduced artifact."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Static checkpoints and structured expert bundles are recognized, but identity and manifest requirements are absent."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The survey explicitly separates ordinary merged-model execution from learned dense or top-k expert routing."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Coefficients, masks, router scores and metrics are potential traces, but no durable trace or lineage schema is defined."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "The paper provides a strong multi-dimensional validation checklist and explicitly warns against aggregate-only evaluation, though it does not run that validator."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "The survey maps static composition, learned routing, activation guidance, structural preservation and search trade-offs directly."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Tools and model hubs are named, but artifact identity, provenance, compatibility, health, rollback, supersession and retirement governance are absent."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_FULLTEXT_NARRATIVE_SURVEY_CARD",
+    "corrections": [
+      "No per-source provisional evidence card existed for S120-041.",
+      "The Anonymous placeholder was replaced with Mingyang Song and Mao Zheng, and exact arXiv v2 identity and dates were recorded.",
+      "The generic weight-arithmetic placeholder was expanded to FUSE's static, sparse, routed, activation-guided, aligned and search-based composition space.",
+      "The missing systematic-review protocol, absence of original empirical evidence, broad-theory overstatements, lifecycle gap and narrative-evidence boundary were recorded."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "PARTIAL",
+  "confirmed_projection": "The FUSE taxonomy and full survey provide direct secondary-source support for a broad Representation-Interpreter-Validator-ComposerRouter map: model-merging carriers, static and routed composition families, mergeability notions, failure modes, evaluation dimensions and tool categories are all explicit. Compiler implementation, primary empirical validation, evidence-grade uncertainty and VersionedRegistry lifecycle remain partial.",
+  "source_specific_reasoning": "This source is valuable as a design-space map, not as primary proof. Its strongest contribution is the explicit separation of foundations, unification mechanisms, scenarios and ecosystem, plus the four-failure-mode diagnostic sequence and multi-dimensional validation checklist. Overall support remains PARTIAL because the authors do not execute any method or benchmark and do not report a reproducible review protocol despite systematic-review language. Consequently, cited results must be accepted or rejected at their primary sources, and the survey cannot independently confirm effectiveness, safety, privacy, completeness or production lifecycle.",
+  "projection_boundary": "All GAP and Function OS impacts above are 121CX architectural projections from arXiv v2. This card treats cited empirical and theoretical findings as secondary-source summaries unless separately reviewed at their primary sources. It is not a meta-analysis, benchmark reproduction, proof, safety review, registry certification, or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T05:21:38Z"
+}

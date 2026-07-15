@@ -1,0 +1,61 @@
+{
+  "step": 0,
+  "action": "BASELINE_AUDIT_AND_CONTRADICTION_REVIEW",
+  "timestamp": "2026-07-14T17:35:30Z",
+  "pr_36": {
+    "number": 36,
+    "state": "OPEN",
+    "is_draft": true,
+    "mergeable": "MERGEABLE",
+    "head": "8b95f7457f0fbcc553676b9ddb722f7b4176fd09",
+    "base": "records/ignition-121q2v-verification-repair-20260715",
+    "commits": 9
+  },
+  "defects": [
+    {
+      "id": 1,
+      "description": "S120-012 semantic verdict: phase2-verdict-reconstruction.json says PARTIAL, but final report says UNRESOLVED",
+      "fix_step": 3
+    },
+    {
+      "id": 2,
+      "description": "S120-011 identity: UNKNOWN with empty fields, but 121Q1 acceptance has full title/authors/year/venue/doi/url/sha256. Should be CORRECTED.",
+      "fix_step": 1
+    },
+    {
+      "id": 3,
+      "description": "S120-012 identity: UNKNOWN with empty fields, but 121Q1 acceptance has full title/authors/year/venue/doi/url/sha256. Should be CORRECTED.",
+      "fix_step": 1
+    },
+    {
+      "id": 4,
+      "description": "S120-014 identity: VERIFIED, but old card had title missing/venue/year errors. 121Q1 has corrected_identity. Should be CORRECTED.",
+      "fix_step": 1
+    },
+    {
+      "id": 5,
+      "description": "S120-035 identity: UNKNOWN, but 121Q2 acceptance has VERIFIED with full identity. Should be VERIFIED.",
+      "fix_step": 1
+    },
+    {
+      "id": 6,
+      "description": "Family impact: changed=6, unchanged=4, total=10. Report says 7+4=11. Should be 6+4=10.",
+      "fix_step": 3
+    },
+    {
+      "id": 7,
+      "description": "run-state has duplicate keys: phase2_counts, phase2_total, identity_counts each appear twice.",
+      "fix_step": 3
+    },
+    {
+      "id": 8,
+      "description": "completion seal final_head=fdf38f4 (Step 007), not 8b95f74 (Step 008). Steps list only 000-007, missing 008.",
+      "fix_step": 5
+    },
+    {
+      "id": 9,
+      "description": "validators do not detect cross-file contradictions (S120-012 semantic, identity field completeness, family count sum).",
+      "fix_step": 4
+    }
+  ]
+}

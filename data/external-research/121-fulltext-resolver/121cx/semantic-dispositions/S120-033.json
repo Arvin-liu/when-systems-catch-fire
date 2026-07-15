@@ -1,0 +1,82 @@
+{
+  "task": "IGNITION-20260709-121CX",
+  "cx_step": 85,
+  "action": "codex56_extreme_semantic_disposition",
+  "source_id": "S120-033",
+  "recorded_title": "IC-LoRA: In-Context Low-Rank Adaptation",
+  "source_family": 5,
+  "source_family_name": "lora_adapters_and_routing",
+  "recorded_authors": "Anonymous",
+  "recorded_year": 2026,
+  "recorded_venue": "arXiv preprint",
+  "recorded_identifier": "arXiv:ic-lora-2026",
+  "recorded_url": "https://www.emergentmind.com/topics/in-context-lora-ic-lora",
+  "content_access_status": "NOT_LOCATED",
+  "semantic_review_status": "BLOCKED_INSUFFICIENT_TEXT",
+  "claim_support_status": "UNRESOLVED",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "reviewed_at": "2026-07-14T11:34:34Z",
+  "identity_audit": {
+    "exact_title_search": "No scholarly work with the exact recorded title was found in current web, arXiv-title or OpenAlex searches.",
+    "arxiv_identifier_check": "arXiv:ic-lora-2026 is not a valid arXiv identifier; the recorded direct PDF URL returns 404.",
+    "recorded_url_classification": "The Emergent Mind page is explicitly a topic page updated 2026-02-03. It says IC-LoRA designates a suite of methodologies and lists five distinct references rather than identifying one paper with the recorded title.",
+    "topic_page_reference_set": [
+      "LoRA-Gen: Specializing Large Language Model via Online LoRA Generation (2025)",
+      "In-Context Meta LoRA Generation (2025)",
+      "ICM-Fusion: In-Context Meta-Optimized LoRA Fusion for Multi-Task Adaptation (2025)",
+      "In-Context LoRA for Diffusion Transformers (2024)",
+      "In-Context Sync-LoRA for Portrait Video Editing (2025)"
+    ],
+    "classification": "MISRECORDED_TOPIC_PAGE_AS_PAPER; NO_UNIQUE_CANONICAL_WORK_IDENTITY"
+  },
+  "frozen_121b_artifact_audit": {
+    "registered_url": "https://arxiv.org/pdf/2501.17635",
+    "sha256": "01116ef246b6cc13e448021d36282ddb810cfd84724f03dc9fb84640800b2b5a",
+    "file_size_bytes": 1778217,
+    "page_count": 9,
+    "hash_size_match_on_refetch": true,
+    "actual_identity": "In-Context Meta LoRA Generation (ICM-LoRA), Yihua Shao et al., arXiv:2501.17635v3, accepted by IJCAI 2025",
+    "relationship_to_record": "This is one of five works cited by the Emergent Mind topic page, but its title, acronym, authors, year/identifier and bounded method do not match the atlas record as a unique paper.",
+    "semantic_credit_for_S120_033": "NONE"
+  },
+  "nearest_distinct_work": {
+    "title": "In-Context LoRA for Diffusion Transformers",
+    "identifier": "arXiv:2410.23775",
+    "authors": "Lianghua Huang et al.",
+    "year": 2024,
+    "difference": "This is a real method paper and another member of the topic page's reference set, but it is not the recorded title, 2026 preprint, or broad multi-method topic claim. It cannot be substituted without changing source identity."
+  },
+  "searches_and_checks": [
+    "Exact quoted-title web search and IC-LoRA variants",
+    "arXiv API exact title query, which returned zero results",
+    "OpenAlex search, which returned ICM-LoRA and unrelated works but no exact-title record",
+    "Emergent Mind topic-page structure, update date and five-reference list",
+    "Exact refetch/hash/PDF metadata and first-page identity for arXiv:2501.17635",
+    "Official arXiv metadata for 2501.17635 and distinct arXiv:2410.23775"
+  ],
+  "semantic_boundary": {
+    "paper_core_claims": "NOT_ADJUDICATED: no unique paper corresponding to S120-033 was identified.",
+    "function_concept": "NOT_ADJUDICATED",
+    "gap_impacts": {},
+    "function_os_node_impacts": {},
+    "reason": "The topic page synthesizes different methods with incompatible carriers, generators, routing/fusion rules, empirical regimes and limitations. Assigning its combined prose to one invented paper would fabricate source-specific evidence."
+  },
+  "what_is_not_claimed": [
+    "The Emergent Mind topic page is not treated as a peer-reviewed or arXiv paper.",
+    "The ICM-LoRA frozen PDF is not treated as the exact S120-033 source.",
+    "In-Context LoRA for Diffusion Transformers is not silently substituted for S120-033.",
+    "No title/abstract/topic-page prose is used to infer GAP or Function OS impacts.",
+    "No claim about low-rank adaptation, online generation, CVAE generation, routing, fusion or diffusion-panel tuning is credited to S120-033."
+  ],
+  "unblock_requirement": "Provide a unique canonical work identity for S120-033: exact title, authors, stable DOI/arXiv/venue identifier and legally accessible full text. If the intended source is one of the five topic-page references, assign that exact work as a corrected/new source rather than rewriting this frozen record.",
+  "historical_preservation": {
+    "frozen_120_atlas_modified": false,
+    "frozen_121b_manifests_modified": false,
+    "121cn_records_modified": false,
+    "substitute_semantic_card_created": false
+  },
+  "disposition": "BLOCKED_INSUFFICIENT_TEXT",
+  "step_status": "COMPLETE"
+}

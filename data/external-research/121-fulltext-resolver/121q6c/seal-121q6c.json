@@ -1,0 +1,40 @@
+{
+  "task": "121Q6C",
+  "status": "COMPLETED_STEPS_000_007",
+  "normative_121q6_status": "PARTIAL_RESUMABLE_AFTER_HARDENING",
+  "this_round_commits": 9,
+  "this_round_head": "a0db4fb4fbdcce1bba60066bce84ff44e3733df8",
+  "base_head": "afa9831f14e45ab7873a1ee467f1dafbaf68d31b",
+  "stacked_pr": 42,
+  "base_pr": 41,
+  "merged_any_pr": false,
+  "closed_any_pr": false,
+  "rebased_any_pr": false,
+  "function_os_v02_tests": 163,
+  "function_os_v02_eval_exec": "NONE",
+  "function_os_v02_tracked_cache": "NONE",
+  "inherited_foundation_ci_failure": {
+    "check": "tools/foundation/migrate_legacy.py --check",
+    "source_pr": 40,
+    "present_in": [
+      41,
+      42
+    ],
+    "is_121q6c_regression": false,
+    "fixed_this_round": false,
+    "note": "documented only; out of 121Q6C scope"
+  },
+  "thirty_five_assets_relabeled": false,
+  "importer_fabricates_semantics": false,
+  "sealed_at": "2026-07-15T13:01:16+08:00",
+  "executor": "QClaw",
+  "model": "Hy3",
+  "_correction": {
+    "corrected_by": "121Q6D Step 003",
+    "original_this_round_commits": 9,
+    "actual_this_round_commits": 10,
+    "original_this_round_head": "a0db4fb4fbdcce1bba60066bce84ff44e3733df8",
+    "actual_this_round_head": "33f453a0fd8aec355000ccf3253544858cf460c3",
+    "note": "values above corrected; see 121q6c-correction-overlay.json"
+  }
+}

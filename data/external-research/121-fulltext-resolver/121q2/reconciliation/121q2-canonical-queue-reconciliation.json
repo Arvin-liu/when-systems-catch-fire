@@ -1,0 +1,103 @@
+{
+  "step": 1,
+  "action": "CANONICAL_QUEUE_RECONCILIATION",
+  "timestamp": "2026-07-14T16:55:50Z",
+  "canonical_22_ordered_source_ids": [
+    "S120-001",
+    "S120-002",
+    "S120-003",
+    "S120-004",
+    "S120-005",
+    "S120-007",
+    "S120-008",
+    "S120-009",
+    "S120-010",
+    "S120-011",
+    "S120-012",
+    "S120-014",
+    "S120-015",
+    "S120-017",
+    "S120-018",
+    "S120-021",
+    "S120-030",
+    "S120-035",
+    "S120-039",
+    "S120-045",
+    "S120-047",
+    "S120-053"
+  ],
+  "canonical_cx_step_mapping": {
+    "S120-001": "CX 88 (121CX)",
+    "S120-002": "CX 89 (121CX)",
+    "S120-003": "CX 90 (121CX)",
+    "S120-004": "CX 91 (121CX)",
+    "S120-005": "CX 92 (121CX)",
+    "S120-007": "CX 93 (121CX)",
+    "S120-008": "CX 94 (121CX)",
+    "S120-009": "CX 95 (121CX)",
+    "S120-010": "CX 96-97 (121CX, with correction)",
+    "S120-011": "CX 98 (121Q1)",
+    "S120-012": "CX 99 (121Q1)",
+    "S120-014": "CX 100 (121Q1)",
+    "S120-015": "CX 101 (121Q1)",
+    "S120-017": "CX 102 (121Q2)",
+    "S120-018": "CX 103 (121Q2)",
+    "S120-021": "CX 104 (121Q2)",
+    "S120-030": "CX 105 (121Q2)",
+    "S120-035": "CX 106 (121Q2, reconciled from 107)",
+    "S120-039": "CX 107 (121Q2, reconciled from 109)",
+    "S120-045": "CX 108 (121Q2, reconciled from 110)",
+    "S120-047": "CX 109 (pending)",
+    "S120-053": "CX 110 (pending)"
+  },
+  "supplemental_overlay_sources": {
+    "S120-033": {
+      "canonical_phase2_member": false,
+      "reason": "Not in the 22 prior-review ordered source IDs. Emergent Mind topic page misrecorded as paper.",
+      "original_121q2_step": 6,
+      "original_cx_step_assigned": 106,
+      "corrected_cx_step": null,
+      "preserved_as": "supplemental/S120-033.json"
+    },
+    "S120-036": {
+      "canonical_phase2_member": false,
+      "reason": "Not in the 22 prior-review ordered source IDs. Task-Aware LoRA Adapter Composition (arXiv:2602.21222).",
+      "original_121q2_step": 8,
+      "original_cx_step_assigned": 108,
+      "corrected_cx_step": null,
+      "preserved_as": "supplemental/S120-036.json"
+    }
+  },
+  "cx_step_corrections": [
+    {
+      "source_id": "S120-035",
+      "old_cx_step": 107,
+      "new_cx_step": 106,
+      "reason": "Queue drift from S120-033 insertion"
+    },
+    {
+      "source_id": "S120-039",
+      "old_cx_step": 109,
+      "new_cx_step": 107,
+      "reason": "Queue drift from S120-033 and S120-036 insertions"
+    },
+    {
+      "source_id": "S120-045",
+      "old_cx_step": 110,
+      "new_cx_step": 108,
+      "reason": "Queue drift from S120-033 and S120-036 insertions"
+    }
+  ],
+  "canonical_completion_count": {
+    "121CX_completed": 9,
+    "121Q1_completed": 4,
+    "121Q2_completed": 7,
+    "total_completed": 20,
+    "remaining": 2,
+    "total": 22
+  },
+  "next_canonical_cx_step": 109,
+  "next_source_id": "S120-047",
+  "audit_history_preserved": true,
+  "note": "Old 121Q2 step ledger entries with incorrect CX steps are preserved as historical entries. Reconciliation entries are appended, not substituted."
+}

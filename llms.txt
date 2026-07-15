@@ -1,31 +1,63 @@
-Project identity:
-Ignition is a cross-domain structural inference and theory-generation framework.
-Current version: 2026-07-09 meta-protocol generation layer.
-Ψ₀ is the meta-judgment and convergence framework (C × M × I_iso × L_meta × G_δ × P_meta).
-12 meta-protocols are the expanded P_meta theory-generation layer (V1–V4 value, S1–S4 structure, E1–E4 evolution).
-The 12 meta-protocol normative reviews are external governance records grounded in the Life Community Value Charter. They do not modify canonical protocol status or replace factual validation.
-64 protocol combinations (V×S×E) are a theoretical generation space, not empirical exhaustion.
-Unified Function Table and Unified Case Table are reviewed asset stores (617 functions, 804 cases as of 2026-07-09).
-Book validation cases (22) are candidate materials unless assigned formal C IDs.
-The Life Community Value Charter is the project’s normative value boundary. It does not replace evidence, validation, semantic review, or governance approval.
-See: docs/governance/life-community-value-charter.md
+Current project state:
+At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mechanism discovery and modelling system for cross-domain material. This is a versioned current-state description, not a permanent project identity or fixed final form. It is not a unified mathematical theory, a physical theory, a universal prover, or a purely literary or philosophical knowledge base.
+Current-state authority: docs/project-current-state.md.
+Current version: cumulative licensed release candidate after 121Q9/121Q10 corrections, preserving the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture.
+
+Architecture:
+L0 source and evidence -> L1 controlled semantic claims -> L2 formal objects -> L3 logical arguments -> L4 mathematical models and proofs -> L5 validation and validity -> L6 interpretation, application and publication.
+L6 must cite L0-L5 and cannot create mathematical truth.
+Mathematics and logic constrain each other. Formula, logical validity, proof, evidence and workflow completion are different things.
+
+Core classifications:
+Ψ0 is a workflow orchestrator / algorithm protocol. Its product notation is a preserved legacy expression, not by itself a mathematical-function or proof claim.
+J+ and J- are internal deliberation channels, not truth or proof oracles.
+The 12 meta-protocols are normative, heuristic or governance protocols unless separately formalized.
+The 64 combinations are a design and generation space, not a proof space or empirical exhaustion.
+
+Authority:
+ARCHITECTURE.md is the architecture authority.
+FOUNDATION.md is the mathematical and logical foundation authority.
+data/foundation/ registries are the authority for object type, claim type, argument, source, evidence, proof, validation, status and migration.
+data/foundation/project-state.json and migration-summary.json are the reproducible count authority.
+统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as current count authority.
+
+Independent axes:
+workflow, semantic, formal, logic, proof, evidence, scope, provenance and migration statuses never auto-upgrade one another.
+CONVERGED or CLOSED is not truth.
+MACHINE_CHECKED_PROOF is not empirical truth.
+MULTI_CASE is not a theorem.
+MIGRATED means only that migration coverage exists.
 
 Key paths:
-- README.md : human + project entry
-- SUMMARY.md : reading navigation
-- docs/PROJECT-ARCHITECTURE.md : architecture
-- docs/USAGE.md : human usage
-- docs/AGENT-GUIDE.md : agent execution rules
-- docs/GET-BRAIN-WORKFLOW.md : Get-Brain (得到大脑) collaboration
-- docs/VERSIONING.md : versioning policy
-- docs/meta-protocols/ : 12 protocols + 64 matrix + 22 book candidates
-- data/meta-protocols/ : machine-readable JSON (validate with tools/validate_meta_protocols.py)
-- 统一函数总表/ and 统一案例总表/ : formal reviewed tables (DO NOT modify unless explicit task)
+- docs/project-current-state.md : versioned current-state description, not fixed positioning
+- README.md : human front door
+- SUMMARY.md : human reading navigation
+- ARCHITECTURE.md : current architecture authority
+- FOUNDATION.md : dual-foundation authority
+- docs/foundation/ : contracts and policies
+- data/foundation/ : authoritative registries
+- schemas/foundation/ : machine schemas
+- formal/ : scoped proof and benchmark artifacts
+- tools/foundation/ : migration, validation and benchmark tools
+- tests/foundation/ : foundation regression tests
+- views/ : generated legacy compatibility views
+- docs/PROJECT-ARCHITECTURE.md : stable compatibility summary
+- docs/GET-BRAIN-WORKFLOW.md : Get 笔记 collaboration
 
 Red lines for agents:
-- Do NOT modify Ψ₀ math definition or replace Ψ₀.
-- Do NOT modify 统一函数总表/ or 统一案例总表/ (INDEX or bodies).
-- Do NOT assign C IDs to the 22 book candidates, and do NOT count 12 meta-protocols as functions.
-- Never claim Ignition has externally proven a scientific or mathematical theorem.
-- Never claim 64 combinations exhaust all reality; distinguish real_case vs inferred_shape.
-- Always run tools/validate_meta_protocols.py and tools/validate_data.py before commit.
+- Preserve Ψ0 legacy source text; do not silently overwrite it or treat it as current proof/function authority.
+- Do not delete, renumber, manually overwrite or independently grow either legacy table.
+- Do not assign C IDs to the 22 book candidates.
+- Do not count the 12 meta-protocols as functions or the 64 combinations as proofs.
+- THEOREM, AXIOM, ISOMORPHISM, CAUSAL and PROVED must pass their declared gates.
+- A keyword hit, missing field or missing source is not a counterexample.
+- Do not call Get 笔记 to perform mathematical reasoning, logical adjudication or architecture decisions.
+- Do not claim content-proof completion from architecture migration completion.
+
+Validation before commit:
+- python3 tools/foundation/migrate_legacy.py --check
+- python3 tools/foundation/validate_foundation.py --strict
+- python3 tools/foundation/run_benchmarks.py --check
+- python3 -m unittest discover -s tests/foundation -p test_*.py
+- python3 tools/validate_meta_protocols.py
+- python3 tools/validate_data.py

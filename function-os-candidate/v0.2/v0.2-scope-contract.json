@@ -1,0 +1,38 @@
+{
+  "contract": "v0.2 Scope and Non-Goal Contract",
+  "version": "0.2.0",
+  "in_scope": {
+    "nodes": "N1-N9 symbolic function pipeline",
+    "representations": [
+      "symbolic_ast"
+    ],
+    "compilation_target": "n5_interpreter_v0.2",
+    "execution_model": "precondition→execute→postcondition check",
+    "registry_policy": "append-only, versioned, auditable",
+    "composition": "sequential only",
+    "domain": "symbolic deterministic functions",
+    "hash_chain": "N1→N2→N3→N4→N9, SHA-256 throughout",
+    "testing": "unittest, standard imports, no exec/eval/compile"
+  },
+  "explicit_non_goals": [
+    "Neural weight representation (GAP-016)",
+    "Cross-representation compilation (GAP-017)",
+    "Probabilistic execution (GAP-020)",
+    "Automatic function discovery (GAP-018)",
+    "Weight-space algebra operations (GAP-017 sub)",
+    "Hybrid symbolic-neural fusion",
+    "Distributed registry replication",
+    "Real-time streaming execution",
+    "Native binary compilation (only symbolic AST)",
+    "Multi-agent concurrent execution"
+  ],
+  "gaps_deferred": {
+    "GAP-016": "Weight-space — requires neural representation N2 extension",
+    "GAP-017": "Cross-representation — requires multi-IR N3",
+    "GAP-018": "Auto-discovery — N8 planning prerequisite",
+    "GAP-019": "Probabilistic — requires uncertainty in N5",
+    "GAP-020": "Probabilistic graph — requires N2 IR extension"
+  },
+  "maturity": "CANDIDATE — not frozen, not production, not canonical final",
+  "next_version_targets": "v0.3 scope TBD by GPT review"
+}

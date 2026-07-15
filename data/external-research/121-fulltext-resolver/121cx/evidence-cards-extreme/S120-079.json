@@ -1,0 +1,258 @@
+{
+  "source_id": "S120-079",
+  "canonical_title": "Deep Neuro-Symbolic Weight Learning in Neural Probabilistic Soft Logic",
+  "authors": [
+    "Connor Pryor",
+    "Charles Dickens",
+    "Lise Getoor"
+  ],
+  "year": 2023,
+  "source_family": 1,
+  "source_family_name": "program-as-weights and weight-space computation",
+  "identifier": "ICML 2023 Workshop on Knowledge and Logical Reasoning in the Era of Data-Driven Learning (KLR), poster 27249",
+  "doi_or_identifier": "LINQS pryor-klr23; ICML virtual poster 27249",
+  "url": "https://linqs.org/assets/resources/pryor-klr23.pdf",
+  "version": "Author-hosted 11-page KLR workshop paper created 2023-08-12; official ICML virtual poster and LINQS publication record",
+  "license": "Copyright 2023 by the authors; openly hosted author PDF with no explicit code/data license",
+  "file_size_bytes": 641780,
+  "page_count": 11,
+  "sha256": "64b1b5c1dc8c5957828d8696ad3f8dfb77d1b50292254688e1e81f72e8ebda17",
+  "reviewed_at": "2026-07-14T10:09:19Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "claim_support_status": "CONFIRMED",
+  "retrieval_and_integrity": {
+    "registered_pdf": {
+      "registered_title": "Deep Neuro-Symbolic Weight Learning in Neural Probabilistic Logic",
+      "canonical_pdf_title": "Deep Neuro-Symbolic Weight Learning in Neural Probabilistic Soft Logic",
+      "title_result": "FROZEN_TITLE_OMITS_SOFT",
+      "url": "https://linqs.org/assets/resources/pryor-klr23.pdf",
+      "sha256": "64b1b5c1dc8c5957828d8696ad3f8dfb77d1b50292254688e1e81f72e8ebda17",
+      "file_size_bytes": 641780,
+      "page_count": 11,
+      "registry_hash_size_page_match": true
+    },
+    "venue_binding": {
+      "official_icml_url": "https://icml.cc/virtual/2023/27249",
+      "official_icml_classification": "Poster in Workshop: Knowledge and Logical Reasoning in the Era of Data-driven Learning",
+      "linqs_publication_record": "Knowledge and Logical Reasoning in the Era of Data-Driven Learning (KLR), publisher ICML, 2023",
+      "pdf_footer": "Proceedings of the 40th International Conference on Machine Learning, PMLR 202, 2023",
+      "boundary": "Official event and author records classify this as a KLR workshop poster. The main-conference/PMLR footer is retained as document metadata, not used to promote the paper to an indexed ICML main-proceedings contribution."
+    },
+    "visual_review": "All 11 pages were rendered at 144 DPI and visually inspected. Definitions, equations 1-16, Figures 1-4, Tables 1-4, references and appendix were legible; no blank, clipped, substituted or malformed page was found.",
+    "text_review": "The complete 6,829-word extracted paper was reviewed, including the formal deep HL-MRF definition, deep-weight generalization, dataset generator, all experiment tables, limitations, hardware and hyperparameter appendix.",
+    "artifact_search": {
+      "paper_promise": "Footnote 1 says all code and data will be made publicly available upon acceptance.",
+      "dedicated_deep_weights_repository": "NOT_IDENTIFIED",
+      "search_scope": "Author/LINQS publication links, all public repositories returned for the LINQS GitHub organization, exact-title and Deep-Weights GitHub searches, and code-string searches for the synthetic RuleFeatures/RuleCommunity identifiers.",
+      "closest_public_repository": {
+        "url": "https://github.com/linqs/neupsl-ijcai23",
+        "audited_current_head": "44a508558381f9aebdcfd81956e33f83a0b8ca51",
+        "audited_commit_count": 72,
+        "first_commit": "ccf1d57e336be976549b66794c9f7e239f32bb4c at 2023-04-06",
+        "tracked_file_count": 68,
+        "release_tags": 0,
+        "license": "Apache-2.0",
+        "scope_boundary": "This repository explicitly reproduces the different IJCAI 2023 paper 'NeuPSL: Neural Probabilistic Soft Logic' and contains citation, MNIST-addition and visual-sudoku experiments. It contains no Deep Weights, RuleFeatures, RuleCommunity or KLR synthetic experiment material and cannot be treated as the promised artifact for S120-079."
+      }
+    },
+    "integrity_boundary": "121CX preserved the frozen registry and recorded the missing word in the title and the workshop/main-proceedings venue ambiguity only in this extreme card."
+  },
+  "sections_reviewed": [
+    "abstract and sections 1-2",
+    "section 3 Neural Probabilistic Soft Logic, Definition 3.1 and equations 1-11",
+    "section 4 NeuPSL Deep Weights, equations 12-16 and Figure 1",
+    "section 5 synthetic dataset, Figures 2-3 and generation protocol",
+    "section 6 experimental evaluation, Figure 4 and Tables 1-2",
+    "section 7 conclusion, limitations, acknowledgments and references",
+    "appendix hardware and complete hyperparameter Tables 3-4",
+    "LINQS publication metadata, official ICML workshop record and closest distinct public NeuPSL repository/history"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 1-3, sections 1-3, equations 1-11 and Definition 3.1",
+      "checked_for": "PSL atoms/rules, continuous semantics, hinge-loss potentials, conditional density, convex MAP inference, neural predicates and symbolic-weight learning"
+    },
+    {
+      "anchors": "pp. 3-4, section 4, equations 12-16 and Figure 1",
+      "checked_for": "instance-specific neural rule-weight generator, carrier, grounding partition, energy composition, gradient path and fixed-weight inference boundary"
+    },
+    {
+      "anchors": "pp. 5-6, section 5 and Figures 2-3",
+      "checked_for": "synthetic generator, two rule families, existing-community inductive setting, feature encodings and the odd-community/equal-class contradiction"
+    },
+    {
+      "anchors": "pp. 6-8, section 6, Figure 4 and Tables 1-2",
+      "checked_for": "baselines, split protocol, covariance sweep, mean/standard-deviation reporting, settings where Deep Weights loses and benchmark/model alignment"
+    },
+    {
+      "anchors": "pp. 8-11, section 7 and appendix Tables 3-4",
+      "checked_for": "stated limitations, code promise, hardware, tuning ranges/final values, missing selection protocol and artifact completeness"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "NeuPSL Deep Weights replaces a single shared symbolic rule weight with neural-network outputs that can specialize the weight of each grounded rule instance from its atom features.",
+      "anchors": "section 4, equations 12-16 and Figure 1"
+    },
+    {
+      "claim": "For fixed non-negative neural/symbolic weights, the resulting deep HL-MRF retains convex symbolic MAP inference while gradient-based learning updates neural and symbolic parameters.",
+      "anchors": "sections 3-4, equations 4-16"
+    },
+    {
+      "claim": "On the authors' synthetic existing-community graph task, Deep Weights improves over evaluated MLP, GraphSAGE and shared-weight PSL baselines in high-signal and most moderate-noise settings.",
+      "anchors": "section 6, Tables 1-2"
+    },
+    {
+      "claim": "Supervised-only training and synthetic-only evaluation limit conclusions about latent variables and real-world applicability.",
+      "anchors": "section 7"
+    }
+  ],
+  "function_concept_used_by_paper": "A NeuPSL function is a declarative soft-logic program grounded into hinge-loss potentials and linear constraints. Neural predicates map raw features to atom truth values, while Deep Weights networks map the features of all atoms in a grounded rule to a non-negative scalar importance weight. The resulting energy is a weighted sum of grounded potential functions and MAP inference returns the target assignment. These are neural-generated rule weights, not neural-network weights treated as complete programs or a general weight-space computation algebra.",
+  "specification_language": "PSL supplies first-order logical clauses, linear arithmetic rules, observed/unobserved atoms, categorical simplex constraints and continuous Łukasiewicz relaxations. It is a real declarative relational specification language for this bounded runtime, but the paper does not add general precondition/postcondition/effect/capability contracts.",
+  "representation_or_carrier": "The executable carrier combines a PSL rule template, grounded atoms, an ordered partition of hinge-loss potentials, non-negative shared symbolic weights, neural predicate parameters, instance-specific Deep Weights MLP parameters, linear constraints and the resulting deep HL-MRF energy/distribution.",
+  "compiler_or_generator": "Grounding substitutes constants for variables and lowers logical/arithmetic rules into convex hinge-loss potentials and constraints. Deep Weights MLPs generate scalar weights for each instantiated potential from rule-atom features, and supervised backpropagation learns both neural and symbolic parameters.",
+  "interpreter_or_runtime": "Neural inference evaluates deep predicates and Deep Weights networks. Symbolic inference then minimizes the deep HL-MRF energy over the constrained [0,1] target domain. The optimization is convex and globally solvable only conditional on fixed neural outputs/non-negative weights and the paper's linear/hinge-loss construction; end-to-end neural learning is not claimed convex.",
+  "state_or_effect_model": "Training mutates neural and symbolic parameters; inference reads observed atoms/features and produces target atom assignments through a constrained optimizer. The paper models no external I/O, capabilities, exceptions, authority, transactions, compensation or rollback, and it does not define effects for rule grounding or optimization failure.",
+  "composition_rule": "Grounded rule potentials compose additively inside an energy, multiplied by shared symbolic or instance-specific neural scalar weights, while unweighted rules impose hard linear constraints. This is potential/constraint composition, not addition, interpolation or merging of complete neural function parameter vectors.",
+  "equivalence_notions": "Categorical accuracy on five synthetic splits compares outputs of MLP, GNN, shared-weight PSL and Deep Weights models. No semantic equivalence relation is defined between programs, groundings, parameterizations or neural/symbolic representations; finite mean accuracy is not equivalence.",
+  "validation_regime": {
+    "formal": "Definition 3.1 gives the deep HL-MRF energy, conditional Gibbs density, feasible set and empirical-risk derivatives. Convexity/global-optimum language applies to fixed-weight symbolic MAP inference. No theorem establishes learning convergence, generalization, rule recovery, identifiability or semantic equivalence.",
+    "dataset": "Twenty-five disjoint fully connected communities, four labels, 10-15 nodes per community and two generator rules. RuleFeatures communities encode labels in features; RuleCommunity communities share one label and require existing-community propagation. Test nodes are new nodes in communities already represented by at least two training nodes, not unseen-community or new-rule transfer.",
+    "generator_contradiction": "The paper sets k=25 total communities and also says equal numbers are generated from the two mutually exclusive rule families. An odd total cannot be divided equally, and no released generator resolves the actual 12/13 allocation.",
+    "splits": "Five splits with 60/30/10 train/test/validation partitions are reported. Means and standard deviations are across the five splits; seed identities, split files and per-split predictions are not released.",
+    "hyperparameters": "Appendix Tables 3-4 list tuning ranges and final values, sometimes separately for every covariance setting. The search algorithm, validation objective, tie-breaking, number of trials and whether selection was nested away from test data are not described.",
+    "high_signal_results": "At the highest-correlation settings, Deep Weights reports 100.00+-0.00, 100.00+-0.00 and 93.35+-2.23 percent for OH+OH, G+OH and G+G, compared with MLP 99.09/88.10/89.04, GNN 98.43/94.56/81.75 and PSL 81.07/87.06/86.71 percent.",
+    "noise_sweep": "At G+OH covariance 100, Deep Weights falls to 62.44+-5.70 versus MLP 69.70+-3.22 and PSL 69.47+-5.06. At G+G covariance 50 PSL is 74.18+-4.91 versus Deep Weights 72.57+-6.58; at covariance 100 PSL is 69.39+-5.09 and GNN 54.14+-6.19 versus Deep Weights 51.66+-6.89. The method is not uniformly best.",
+    "benchmark_alignment": "The synthetic graph is generated by the same two feature/label-propagation structures that the PSL/Deep Weights rules encode. This is a controlled capability test, not evidence of discovering unknown real-world symbolic structure.",
+    "uncertainty_statistics": "Standard deviations over five splits are supplied, but no confidence intervals, paired tests, effect sizes, multiple-comparison correction or raw predictions are released. Overlapping standard deviations are discussed informally rather than tested.",
+    "hardware": "Only an Ubuntu 22.04.1 CPU machine with Intel Xeon E5-2630 v4 at 3.10 GHz is reported. No wall time, memory, scaling, energy or comparison-cost measurement is provided.",
+    "artifact": "The footnote promises public code/data upon acceptance, but no dedicated Deep Weights artifact was identified. The closest LINQS NeuPSL repository is for a different IJCAI paper and does not contain this dataset or method.",
+    "reproducibility": "Equations, generator prose and hyperparameter tables are substantial, but the unresolved 25/equal contradiction and missing code, data, seeds, split files, raw outputs, environment and result scripts prevent exact reproduction."
+  },
+  "uncertainty_model": "The model defines an explicit conditional Gibbs density over target atoms using a deep HL-MRF energy, with atom values in [0,1], then performs MAP inference. This is genuine probabilistic/soft semantics for a finite constrained model, though the evaluated outputs are point estimates. The paper provides no calibration, posterior uncertainty, predictive interval or epistemic treatment for neural-generated rule weights.",
+  "lifecycle_and_provenance": "The conceptual lifecycle is author-written PSL templates, grounding, neural predicate/deep-weight initialization, hyperparameter search, supervised learning, fixed-weight MAP inference and synthetic evaluation. The immutable paper PDF and official workshop metadata are identifiable, but no KLR code/data release, model checkpoint, configuration receipt, seed/split manifest, learned-rule-weight artifact, compatibility record, monitoring, deprecation, migration or rollback lifecycle is public.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "PSL clauses, arithmetic rules, atom domains and hard constraints provide a concrete bounded declarative specification for relational target functions."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Rules, grounded potentials, constraints, neural predicates and instance-specific neural rule weights form an explicit hybrid symbolic-neural carrier."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "Grounding lowers templates to hinge-loss potentials/constraints and Deep Weights networks generate executable per-grounding scalar parameters."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "A learned PSL program and neural checkpoints are concrete artifact forms, but the promised Deep Weights code, data, checkpoints and receipts were not identified."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "Neural evaluation followed by constrained convex MAP energy minimization is a fully specified bounded interpreter/runtime for the grounded model."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Potential values and optimizer states could be traced, but the paper defines no trace schema and releases no inference or learning traces."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Five-split synthetic categorical accuracy is a bounded behavioral validator, not semantic, calibration, safety or real-world validation."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Weighted energy terms and constraints compose grounded rules, but there is no router or semantic composition of independently packaged callable functions."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "No versioned learned-program registry, dependency graph, compatibility model or rollback lifecycle is defined or released."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "PSL is a genuine logical/arithmetic specification language with constraints, but it does not supply general function preconditions, postconditions and effect signatures."
+    },
+    "GAP-016": {
+      "status": "NOT_SUPPORTED",
+      "reason": "The learned deep weights are scalar importance weights on grounded potentials, not complete program parameters and not a weight-space algebra for combining functions."
+    },
+    "GAP-017": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Synthetic accuracy comparisons do not check equivalence across symbolic programs, neural networks or alternate carriers."
+    },
+    "GAP-018": {
+      "status": "NOT_SUPPORTED",
+      "reason": "The paper models constrained internal inference/training but contributes no language-level effect signatures, handlers, capabilities or rollback."
+    },
+    "GAP-019": {
+      "status": "NOT_SUPPORTED",
+      "reason": "No code/data release or versioned learned-function registry with provenance, compatibility and rollback is supplied."
+    },
+    "GAP-020": {
+      "status": "CONFIRMED",
+      "reason": "The deep HL-MRF defines an explicit finite conditional probability density and MAP semantics, providing bounded probabilistic function semantics even though calibration is not evaluated."
+    }
+  },
+  "source_specific_reasoning": "CONFIRMED is bounded to the paper's explicit hybrid FunctionSpec-Representation-Compiler-Interpreter architecture. The exact equations directly connect declarative PSL rules, grounded convex potentials, neural predicates, instance-specific learned rule weights and constrained MAP execution. Confirmation does not extend to the historical metadata card's weights-as-program or weight-arithmetic framing, to uniform empirical superiority, to real-world generalization, or to artifact reproducibility. The odd-community contradiction, high-noise losses, existing-community benchmark design, workshop venue and unfulfilled code/data footnote remain explicit boundaries.",
+  "confirmed_projection": "The exact workshop paper confirms a bounded neural-symbolic FunctionSpec-Representation-Compiler-Interpreter path: logical/arithmetic rules are grounded into convex potentials and constraints, neural networks generate atom values and per-grounding scalar rule weights, and constrained MAP inference executes the combined energy model. This is strong architecture evidence for learned parameterization inside a symbolic runtime, not evidence that neural weight space itself is a program algebra.",
+  "projection_boundary": "These are 121CX projections from the exact author-hosted 11-page paper, every rendered page, the official ICML KLR poster record, LINQS metadata and a bounded public-artifact search. The synthetic experiments were not rerun and no dedicated artifact was available to audit. This model review is not a mechanized proof, independent empirical validation, real-world validation, code-release certification or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not treat an entire neural parameter vector as a symbolic program or establish weight space as program space.",
+    "It does not define arithmetic for adding, subtracting, merging or composing independently learned neural functions.",
+    "It does not learn symbolic rule structures; the modeler supplies the two PSL rules and neural networks specialize their grounded scalar weights.",
+    "It does not prove end-to-end neural training is convex or globally optimal; convexity applies to fixed-weight symbolic MAP inference.",
+    "It does not prove learned deep weights recover true communities, causal rules or human-interpretable symbolic structure.",
+    "It does not establish semantic equivalence between Deep Weights, PSL, GNN or MLP representations.",
+    "It does not demonstrate uniform superiority across the covariance sweep.",
+    "It does not validate unsupervised latent variables, unseen communities, unseen rule structures or real-world data.",
+    "It does not provide external effect semantics, execution traces or a versioned artifact registry.",
+    "This review is not proof or independent empirical validation of the reported experiments."
+  ],
+  "limitations_and_failure_boundaries": [
+    "The frozen title omits the word 'Soft'; the exact paper and official records use Neural Probabilistic Soft Logic.",
+    "The frozen metadata card misattributes the first author as Pryor, H.; the paper names Connor Pryor, Charles Dickens and Lise Getoor.",
+    "The frozen metadata card calls the source an arXiv preprint and supplies a generic weights-as-program template; official records classify it as a KLR workshop poster.",
+    "The PDF contains ICML/PMLR main-proceedings boilerplate, while the official ICML event and author publication records identify a workshop poster; the latter controls venue classification.",
+    "The paper's footnote promises code/data after acceptance, but no dedicated Deep Weights repository, dataset or experiment release was identified.",
+    "The public neupsl-ijcai23 repository is for a different paper and cannot be used as evidence that this method or dataset was released.",
+    "Exactly 25 communities cannot be divided into equal counts of the two mutually exclusive generator rule types, contradicting the experiment prose.",
+    "No released generator resolves whether the actual split was 12/13, 13/12 or something else.",
+    "The inductive experiment adds test nodes to existing communities that each have at least two training nodes; it is not unseen-community generalization.",
+    "One-hot community features can directly identify existing community membership, and RuleFeatures data encode labels in features by construction.",
+    "The generator and evaluated PSL rules are intentionally aligned, so performance demonstrates use of supplied structure rather than discovery of unknown symbolic rules.",
+    "Only five splits are reported, without seed IDs, raw per-split predictions, confidence intervals or significance tests.",
+    "The hyperparameter selection algorithm, validation metric, tie-breaking and separation from test inspection are not described.",
+    "Deep Weights is not uniformly best: shared PSL is materially stronger at the noisiest G+G setting and also wins other high-noise comparisons.",
+    "Standard-deviation overlap is used rhetorically without a paired statistical test.",
+    "All evidence is synthetic; the authors explicitly defer real-world applications.",
+    "Training is supervised only and the authors explicitly identify unsupervised latent variables as unsupported.",
+    "The only hardware receipt is a CPU model/OS; no runtime, memory, scaling or resource comparison is reported.",
+    "MAP point predictions do not evaluate probability calibration or neural-rule-weight uncertainty.",
+    "Convex symbolic inference relies on non-negative weights, hinge-loss potentials and linear constraints and does not generalize automatically to arbitrary rules or neural learners.",
+    "No checkpoints, environment lock, split manifest, result logs or provenance-complete learned-program artifacts are public.",
+    "This audit verifies the document and public-artifact boundary; it does not reproduce the five-split measurements."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "METADATA_ONLY",
+    "verdict": "CONFIRMED_BOUNDED_NEURAL_SYMBOLIC_ARCHITECTURE_WITH_TITLE_VENUE_AND_PARADIGM_CORRECTIONS",
+    "corrections": [
+      "Corrected the exact title by restoring 'Soft' and corrected the authors from Pryor, H. et al. to Connor Pryor, Charles Dickens and Lise Getoor.",
+      "Corrected the venue from generic arXiv preprint to the official ICML 2023 KLR workshop poster, while recording the conflicting PDF footer.",
+      "Replaced the generic weights-as-program framing with the actual PSL-rule, grounded-potential, neural-predicate and scalar Deep Weights architecture.",
+      "Separated per-grounding scalar rule importance from weight-space program arithmetic or complete neural function composition.",
+      "Confirmed bounded declarative specification, grounding/compiler and convex fixed-weight MAP runtime from equations 1-16.",
+      "Bounded empirical claims to five synthetic existing-community splits and recorded all high-noise settings where Deep Weights is not best.",
+      "Detected the impossible k=25 plus equal two-class community-count statement.",
+      "Separated the distinct public IJCAI NeuPSL repository from the paper's unfulfilled Deep Weights code/data promise.",
+      "Recorded supervised-only, synthetic-only, calibration, statistical and lifecycle boundaries.",
+      "Did not call convex MAP inference proof of learning, synthetic accuracy real-world validation, or this model review validation of ignition."
+    ],
+    "prior_card_superseded": true
+  }
+}

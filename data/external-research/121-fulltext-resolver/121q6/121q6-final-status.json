@@ -1,0 +1,45 @@
+{
+  "task": "121Q6 Function OS v0.2.1 hardening + reproducibility",
+  "branch": "records/ignition-121q6-hy3-v021-hardening-reproducibility-20260715",
+  "base_pr": 40,
+  "stacked_pr": 41,
+  "executor": "QClaw",
+  "model_identity": {
+    "status": "VERIFIED",
+    "runtime_model": "Hy3 (qclaw/pool-hy3-preview)",
+    "thinking_mode": "adaptive / deep-thinking HIGH (depth 2 used throughout)",
+    "forbidden_practices": "no Auto, no model-switch, no fallback, no subagent — all honored",
+    "prior_status": "MIXED_OR_UNVERIFIED (121Q5 defect) -> now VERIFIED_HY3"
+  },
+  "defects_found_and_fixed": [
+    "N1 parser accepted spec_version '0.0.0' (SEMVER regex allowed all-zero) -> added explicit rejection",
+    "N6 trace_hash included non-deterministic trace_id (global exec counter) + timing_ms -> now content fingerprint only"
+  ],
+  "hygiene_fixed": [
+    "Removed __main__ smoke blocks with sys.path.insert from n2/n3/n4/n6 modules",
+    "Removed __main__ smoke block (no sys.path) from n9 (kept n1/n5/n7/n8 clean)",
+    "Deleted 3 tracked __pycache__/*.pyc; .gitignore covers __pycache__/*.py[cod]/.pytest_cache/.coverage",
+    "All tests use standard package import; zero sys.path injection in tests"
+  ],
+  "test_suite": {
+    "total_tests": 155,
+    "modules_covered": [
+      "n1",
+      "n2",
+      "n3",
+      "n4",
+      "n5",
+      "n6",
+      "n7",
+      "n8",
+      "n9"
+    ],
+    "integration": "full-chain N1->N9 + N8 real control-plane routing",
+    "reproducibility": "151-pass verified under unittest AND pytest from TWO CWDs (repo root + /tmp)"
+  },
+  "verdict": "PARTIAL_ACCEPTED_AS_HARDENED_CANDIDATE",
+  "notes": "v0.2.1-candidate is now reproducible, path-independent, and model-identity-verified. Canonical node realignment (121Q5) confirmed intact. Excludes weight-space/probabilistic semantics per protocol. Ready for GPT final acceptance.",
+  "generated_at": "2026-07-15T12:23:08+08:00",
+  "commit_count_honest": "20 step objects; 21 commits (Step 018 = 2 commits, no-amend rule)",
+  "final_head": "51b03ebf2d3e033df4fcbba05e6ff26909cc8293"
+}

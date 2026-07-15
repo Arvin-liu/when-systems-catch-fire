@@ -1,0 +1,23 @@
+{
+  "purpose": "121Q6C correction overlay (additive; no legacy-file rewrite)",
+  "created_by": "121Q6D Step 003",
+  "created_at": "2026-07-15T13:24:04+08:00",
+  "executor": "QClaw",
+  "model": "Hy3",
+  "pr42_truth": {
+    "commits": 10,
+    "head": "33f453a0fd8aec355000ccf3253544858cf460c3",
+    "state": "OPEN/DRAFT/UNMERGED/MERGEABLE"
+  },
+  "121q6c_errors_corrected": {
+    "report_and_seal_commits": "wrote 9; actual PR #42 = 10",
+    "report_and_seal_head": "wrote a0db4fb; actual HEAD = 33f453a",
+    "run_state_final_verdict": "was null; now set via overlay",
+    "run_state_merge_readiness": "was null; now set via overlay",
+    "run_state_last_updated": "was literal ${NOW}; now superseded",
+    "e2e_claim": "'real asset N1->N9 E2E' was inaccurate (used SAMPLE_MD + _todo); corrected to honest blocked/synthetic-excluded"
+  },
+  "local_vs_ci_evidence": "local unittest/pytest 163 PASS is a SEPARATE evidence chain from GitHub function-os-ci; CI must be green independently",
+  "normative_121q6_status": "PARTIAL - IMPLEMENTATION_PRESENT, CI_AND_SEAL_REPAIR_REQUIRED",
+  "this_round_status": "121Q6D in progress (CI fix + honest E2E + seal repair)"
+}

@@ -1,0 +1,11 @@
+{
+  "step": 16,
+  "source_id": "S120-051",
+  "title": "Liquid Types",
+  "previous_status": "FAILED_LEGAL_OA_NOT_FOUND (UCSD link 404)",
+  "new_status": "FAILED_LEGAL_OA_NOT_FOUND",
+  "method": "OpenAlex (found, DOI 10.1145/1375581.1375602), Unpaywall (is_oa=None), arXiv (no original paper, only follow-up works)",
+  "success": false,
+  "reason": "PLDI 2008 paper by Rondon et al. Original UCSD URL (goto.ucsd.edu/~rondon/pldi08.pdf) returns 404. No arXiv preprint, Unpaywall reports no OA version. ACM DL is paywalled.",
+  "action": "BLOCKED_INSUFFICIENT_TEXT"
+}

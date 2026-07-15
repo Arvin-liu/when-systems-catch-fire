@@ -1,0 +1,157 @@
+{
+  "source_id": "S120-045",
+  "cx_step": 108,
+  "step_number": 110,
+  "_acceptance_layer": "121q2/acceptance/S120-045.json — overlay",
+  "canonical_title": "Editing Models with Task Arithmetic",
+  "authors": "Gabriel Ilharco, Marco Tulio Ribeiro, Mitchell Wortsman, Suchin Gururangan, Ludwig Schmidt, Hannaneh Hajishirzi, Ali Farhadi (UW, Microsoft Research, AI2)",
+  "year": 2023,
+  "venue": "ICLR 2023",
+  "doi_or_identifier": "arXiv:2212.04089v3",
+  "prior_identity": {
+    "title": "Editing Models with Task Arithmetic (CORRECT)",
+    "authors": "Ilharco, G., et al. (CORRECT)",
+    "year": 2022,
+    "venue": "arXiv preprint / ICLR 2023 (CORRECT — paper states 'Published as a conference paper at ICLR 2023')",
+    "doi_or_identifier": "arXiv:2212.04089 (CORRECT)",
+    "sha256": "pending",
+    "file_size_bytes": 7763394
+  },
+  "corrected_identity": {
+    "title": "Editing Models with Task Arithmetic",
+    "authors": "Ilharco et al. (UW, Microsoft Research, Allen Institute for AI)",
+    "year": 2023,
+    "venue": "ICLR 2023",
+    "doi_or_identifier": "arXiv:2212.04089v3",
+    "exact_fulltext_used": "arXiv PDF, SHA256: 6d8bb9f18b58f6cafae018139746afc90023be5dc18586b665863db5028c4191",
+    "url": "https://arxiv.org/pdf/2212.04089"
+  },
+  "identity_status": "VERIFIED",
+  "identity_corrections": [
+    "Year: evidence-card says 2022 (arXiv v1 date) → paper published at ICLR 2023. Minor discrepancy, arXiv submission date 2022 is correct but venue year is 2023."
+  ],
+  "url": "https://arxiv.org/pdf/2212.04089",
+  "access_url": "https://arxiv.org/pdf/2212.04089",
+  "access_time_utc": "2026-07-14T16:42:51Z",
+  "file_sha256": "6d8bb9f18b58f6cafae018139746afc90023be5dc18586b665863db5028c4191",
+  "file_size_bytes": 7763394,
+  "page_count": 31,
+  "content_type": "application/pdf",
+  "abstract_snippet": "We propose task vectors: directions in weight space obtained by subtracting pre-trained weights from fine-tuned weights. Task vectors can be modified and combined through arithmetic: negation (forgetting), addition (multi-task), and analogies (A:B::C:D). Operations are element-wise on model weights, with no extra inference cost. Experiments on CLIP, T5, and image classification show task arithmetic is simple, efficient, and effective.",
+  "what_the_paper_supports": "Task vectors encode task-specific behavior as a direction in weight space (τ = θ_ft - θ_pre). Three arithmetic operations: (1) Negation (-τ) = forgetting/unlearning, (2) Addition (Στi) = multi-task model, (3) Analogy (τC + τB - τA) = transfer to task D. All operations are element-wise, no extra inference cost. Works across modalities (vision, language) and architectures (CLIP, T5). Key insight: task behavior is linearly encodable in weight space.",
+  "what_the_paper_does_not_support": "No formal specification (GAP-015). No equivalence checking (GAP-017). No versioning (GAP-019). No formal verification (GAP-020). No execution trace. Only works with same architecture and same pre-trained init. Scaling λ requires validation data. No theoretical guarantee of arithmetic properties.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "paper_core_claims": [
+    "Task vector τ = θ_ft - θ_pre encodes task behavior as a direction in weight space",
+    "Negation (-τ) decreases target task performance with minimal control task impact",
+    "Addition (Στi) creates multi-task models competitive with specialized fine-tuned models",
+    "Task analogies (τC + τB - τA) improve performance on task D without D's training data",
+    "All operations are element-wise — no extra inference cost",
+    "Works across CLIP, T5, and multiple image classification tasks"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No specification language."
+    },
+    "GAP-016": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Task vectors as compiled task knowledge: fine-tuning compiles dataset → task vector → model. But compilation is just weight subtraction."
+    },
+    "GAP-017": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Task arithmetic implies a form of algebraic equivalence: negation reverses, addition combines. But no formal equivalence checking."
+    },
+    "GAP-018": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No intermediate state tracking."
+    },
+    "GAP-019": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Task vectors as versionable, composable artifacts. Each task vector is a delta that can be stored, negated, added, combined. This is the most developed versioning/composition model in the batch — task vectors are explicitly treated as arithmetic objects that can be manipulated."
+    },
+    "GAP-020": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No formal verification."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "NO_EVIDENCE",
+      "reason": "No function specification."
+    },
+    "N2_Representation": {
+      "status": "STRONG_EVIDENCE",
+      "reason": "Task vector as weight-space representation of task behavior. Linear algebraic structure: negation, addition, analogy. This is the most mathematically structured representation of task knowledge in the batch — tasks are vectors in a vector space with arithmetic operations."
+    },
+    "N3_Compiler": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Fine-tuning as compilation: dataset → task vector. But this is just gradient descent, not a compiler in the traditional sense."
+    },
+    "N4_Artifact": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Task vectors as reusable, composable artifacts. Can be stored, shared, negated, added. Each task vector is a self-contained artifact encoding task behavior. Code released: https://github.com/mlfoundations/task_vectors"
+    },
+    "N5_Interpreter": {
+      "status": "NO_EVIDENCE",
+      "reason": "Not an interpreter."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NO_EVIDENCE",
+      "reason": "No execution trace."
+    },
+    "N7_Validator": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Validation accuracy for scaling λ. Control task accuracy to verify selectivity of negation. But no formal validation."
+    },
+    "N8_ComposerRouter": {
+      "status": "STRONG_EVIDENCE",
+      "reason": "Task arithmetic IS composition: (1) negation = subtractive composition, (2) addition = additive composition, (3) analogy = relational composition (A:B::C:D). This is the most algebraically structured composition model in the batch — tasks are elements of a vector space with well-defined operations."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Task vectors as versionable deltas. Each vector is a diff from pre-trained model. Can be stored, retrieved, combined. This is a primitive but mathematically grounded versioning system — task vectors are the 'commits' and the pre-trained model is the 'base'."
+    }
+  },
+  "limitations_and_failure_boundaries": [
+    "Only works with same architecture and same pre-trained initialization",
+    "Scaling λ requires validation data — not truly zero-shot",
+    "No theoretical guarantee that arithmetic operations preserve model quality",
+    "Negation may have unintended side effects on control tasks",
+    "Addition may cause interference between tasks (negative transfer)",
+    "Analogy requires meaningful A:B::C:D relationship — not all tasks have this",
+    "Only tested on classification and generation tasks — unclear for other modalities",
+    "New parameters introduced during fine-tuning (e.g., classification heads) cannot be averaged"
+  ],
+  "strengths_noted": [
+    "N2 Representation: STRONGEST in batch — task vectors as elements of a vector space with arithmetic",
+    "N8 ComposerRouter: STRONGEST algebraic composition model — negation, addition, analogy",
+    "N9 VersionedRegistry: task vectors as diffs/commits — mathematically grounded versioning",
+    "N4 Artifact: composable, shareable, storable task vectors",
+    "Simple, fast, effective — element-wise operations, no extra training",
+    "Works across modalities and architectures",
+    "Code: https://github.com/mlfoundations/task_vectors",
+    "Highly influential — spawned line of research on model merging/editing"
+  ],
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "6d8bb9f18b58f6cafae018139746afc90023be5dc18586b665863db5028c4191",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "Identity verified: arXiv:2212.04089, Ilharco et al., ICLR 2023",
+      "N2 Representation: STRONGEST — task vectors in weight space with arithmetic operations",
+      "N8 ComposerRouter: STRONGEST algebraic composition — negation, addition, analogy",
+      "N9 VersionedRegistry: task vectors as diffs from base model — primitive but grounded versioning",
+      "Most mathematically structured composition/versioning model in the batch",
+      "Year discrepancy: evidence-card says 2022 (arXiv date), venue is ICLR 2023"
+    ]
+  },
+  "reviewed_by_model": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "reviewed_at": "2026-07-14T16:42:51Z",
+  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714",
+  "cx_step_reconciled_from": 110,
+  "reconciliation_note": "CX step corrected from 110 to 108 per 121Q2R Step 001 canonical queue reconciliation."
+}

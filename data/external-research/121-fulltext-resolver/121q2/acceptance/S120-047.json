@@ -1,0 +1,167 @@
+{
+  "source_id": "S120-047",
+  "cx_step": 109,
+  "step_number": 109,
+  "_acceptance_layer": "121q2/acceptance/S120-047.json — overlay",
+  "canonical_title": "Generic Refinement Types",
+  "authors": "Nico Lehmann, Cole Kurashige, Nikhil Akiti, Niroop Krishnakumar, Ranjit Jhala (UC San Diego)",
+  "year": 2025,
+  "venue": "POPL 2025 (Proc. ACM Program. Lang., Vol. 9, No. POPL, Article 49)",
+  "doi_or_identifier": "https://doi.org/10.1145/3704885",
+  "prior_identity": {
+    "title": "Generic Refinement Types (CORRECT)",
+    "authors": "Jhala, R., et al. (CORRECT — but first author is Nico Lehmann, not Jhala)",
+    "year": 2025,
+    "venue": "POPL 2025 (CORRECT)",
+    "doi_or_identifier": "POPL-2025-generic-refinements (informal identifier — actual DOI is 10.1145/3704885)",
+    "sha256": "pending",
+    "file_size_bytes": 805973
+  },
+  "corrected_identity": {
+    "title": "Generic Refinement Types",
+    "authors": "Nico Lehmann, Cole Kurashige, Nikhil Akiti, Niroop Krishnakumar, Ranjit Jhala (UC San Diego)",
+    "year": 2025,
+    "venue": "POPL 2025",
+    "doi_or_identifier": "https://doi.org/10.1145/3704885",
+    "exact_fulltext_used": "Author PDF, SHA256: 6fe9ce17e4d179dd524a6286f22ffedfebfab93321c86d89f16e4c2db80117cd",
+    "url": "https://ranjitjhala.github.io/static/popl25-generic-refinements.pdf"
+  },
+  "identity_status": "VERIFIED",
+  "identity_corrections": [
+    "Authors: evidence-card says 'Jhala, R., et al.' — Jhala is last author; first author is Nico Lehmann. Corrected to full author list.",
+    "DOI: evidence-card has informal 'POPL-2025-generic-refinements' — actual DOI is 10.1145/3704885"
+  ],
+  "url": "https://ranjitjhala.github.io/static/popl25-generic-refinements.pdf",
+  "access_url": "https://ranjitjhala.github.io/static/popl25-generic-refinements.pdf",
+  "access_time_utc": "2026-07-14T16:56:59Z",
+  "file_sha256": "6fe9ce17e4d179dd524a6286f22ffedfebfab93321c86d89f16e4c2db80117cd",
+  "file_size_bytes": 805973,
+  "page_count": 29,
+  "content_type": "application/pdf",
+  "sections": [
+    "1 Introduction",
+    "2 Overview (Horn generics, Hindley generics, Associated generics)",
+    "3 Flux: Refinement Types for Rust",
+    "4 Formalization: λG Calculus",
+    "5 Translation to Polymorphic Contract Calculus FσH",
+    "6 Evaluation (vector bounds safety, Diesel ORM access-control)",
+    "7 Related Work",
+    "8 Conclusion",
+    "Appendix A-E (proofs, formalization details)"
+  ],
+  "abstract_snippet": "We present Generic Refinement Types: modular higher-order specifications that abstract invariants over function contracts while preserving automatic SMT-decidable verification. Two kinds of generic parameters: Horn generics (instantiated via Horn constraint solving, positivity required) and Hindley generics (instantiated via syntactic unification, no positivity restriction). Formalized in λG calculus with type-preserving translation to FσH. Implemented in Flux for Rust. Case studies: vector bounds safety verification, Diesel ORM access-control policy enforcement.",
+  "what_the_paper_supports": "Generic refinement types enable modular higher-order specifications with automatic SMT-decidable verification. Key mechanism: (1) Horn generics (constraint-solving instantiation, positivity required), (2) Hindley generics (syntactic unification, no positivity restriction), (3) Associated generics (for Rust traits, reduced to Hindley generics). Soundness proven via type-preserving translation to FσH. Implementation in Flux (Rust refinement type checker). Two case studies: vector bounds safety, database access-control policies.",
+  "what_the_paper_does_not_support": "No execution trace (GAP-018). No versioning of specifications (GAP-019). No formal verification of full program correctness — only refinement type checking. Limited to Rust/Flux ecosystem. SMT decidability depends on refinement fragment. No dynamic checking — all static. No composition of multiple refinement systems.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "paper_core_claims": [
+    "Generic refinement types reconcile modular higher-order specifications with automatic SMT-decidable verification",
+    "Hindley generics allow instantiation via syntactic unification without positivity restriction",
+    "Soundness proven via type-preserving translation λG → λG' → FσH",
+    "Associated generic refinements enable modular specification of Rust traits",
+    "Implementation in Flux verifies vector bounds safety and database access-control policies",
+    "First algorithmic system for type checking with both Horn and Hindley generics"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "STRONG_EVIDENCE",
+      "reason": "Generic refinement types ARE a specification language: they specify invariants over function contracts using refinement types. Horn and Hindley generics provide parameterized specifications. This is the most formal specification language in the batch."
+    },
+    "GAP-016": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Refinement types compile specifications to SMT constraints. Flux compiles Rust + refinements to verification conditions. But this is verification compilation, not program compilation."
+    },
+    "GAP-017": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Type-preserving translation λG → FσH provides formal equivalence between generic refinements and polymorphic contracts. Soundness proof establishes equivalence. But this is type-theoretic equivalence, not behavioral."
+    },
+    "GAP-018": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No execution state tracking. Refinement types are static."
+    },
+    "GAP-019": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No versioning of refinement types or specifications."
+    },
+    "GAP-020": {
+      "status": "STRONG_EVIDENCE",
+      "reason": "SMT-decidable verification IS formal verification. Soundness proven. Verification conditions checked by SMT solver. This is the strongest formal verification evidence in the batch."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "STRONG_EVIDENCE",
+      "reason": "Generic refinement types are a formal specification language: parameterized invariants over function contracts. Horn and Hindley generics provide abstraction. Associated generics for trait-level specifications. This is the most developed specification language in the batch."
+    },
+    "N2_Representation": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Refinement types as representation: base types indexed by logical values. Ghost parameters. λG calculus as formal representation. FσH translation as semantic representation."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Flux compiles Rust + refinement types → SMT verification conditions. Algorithmic type checking with elaboration. But this is verification compilation, not program compilation."
+    },
+    "N4_Artifact": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Refinement type specifications are artifacts, but no registry, versioning, or composition."
+    },
+    "N5_Interpreter": {
+      "status": "STRONG_EVIDENCE",
+      "reason": "Algorithmic type checking IS interpretation: λG terms are checked against refinement types, elaborated to λG' with explicit instantiations, then translated to FσH. The elaboration is a form of interpretation with ghost parameter synthesis."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NO_EVIDENCE",
+      "reason": "No execution trace. Static type checking only."
+    },
+    "N7_Validator": {
+      "status": "STRONG_EVIDENCE",
+      "reason": "SMT-decidable verification IS validation. Soundness proof. Verification conditions checked by SMT solver. Case studies demonstrate verification of bounds safety and access-control policies. This is the strongest formal validator in the batch."
+    },
+    "N8_ComposerRouter": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Associated generics compose trait specifications, but no dynamic routing or input-dependent composition."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NO_EVIDENCE",
+      "reason": "No versioning or registry."
+    }
+  },
+  "limitations_and_failure_boundaries": [
+    "SMT decidability depends on refinement fragment — complex refinements may exceed SMT solver capabilities",
+    "Limited to Rust/Flux ecosystem — no generalization to other languages shown",
+    "Hindley generics require value-dependent positions — not all specifications qualify",
+    "Horn generics still require positivity — expressiveness limited",
+    "No dynamic checking — all verification is static",
+    "Case studies limited to two applications — generalization unclear",
+    "No composition mechanism for multiple refinement systems",
+    "Soundness depends on FσH soundness — transitive dependency"
+  ],
+  "strengths_noted": [
+    "N1 FunctionSpec: STRONGEST in batch — formal specification language with parameterized invariants",
+    "N7 Validator: STRONGEST — SMT-decidable formal verification with soundness proof",
+    "N5 Interpreter: notable — algorithmic type checking with ghost parameter synthesis",
+    "N3 Compiler: partial — Flux as verification compiler (Rust + refinements → SMT VCs)",
+    "GAP-015 and GAP-020: strongest evidence — formal specification + formal verification",
+    "Published at POPL 2025 — top-tier formal methods venue",
+    "Two practical case studies demonstrating real-world applicability",
+    "Complete formalization with soundness proofs"
+  ],
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "6fe9ce17e4d179dd524a6286f22ffedfebfab93321c86d89f16e4c2db80117cd",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "Identity verified: Lehmann et al. (not just Jhala), POPL 2025, DOI 10.1145/3704885",
+      "N1 FunctionSpec: STRONGEST — generic refinement types as formal specification language",
+      "N7 Validator: STRONGEST — SMT-decidable formal verification with soundness proof",
+      "GAP-015: strongest evidence — parameterized refinement type specifications",
+      "GAP-020: strongest evidence — formal verification via SMT solving",
+      "Most formal paper in the entire batch — directly relevant to Function OS specification and verification"
+    ]
+  },
+  "reviewed_by_model": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "reviewed_at": "2026-07-14T16:56:59Z",
+  "review_batch": "ignition-121q2r-night-canonical-reconciliation-phase2-closeout-family-synthesis"
+}

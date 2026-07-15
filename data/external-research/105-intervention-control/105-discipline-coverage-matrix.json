@@ -1,0 +1,444 @@
+{
+  "Statistics": {
+    "source_count": 13,
+    "has_fulltext": true,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S01",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S03",
+        "evidence_tier": "METADATA_VERIFIED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S04",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S05",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S06",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "failure"
+      },
+      {
+        "source_id": "105-S07",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S09",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S10",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S11",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S15",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S16",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S17",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S20",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "failure"
+      }
+    ]
+  },
+  "Economics": {
+    "source_count": 7,
+    "has_fulltext": true,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S03",
+        "evidence_tier": "METADATA_VERIFIED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S04",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S05",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S06",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "failure"
+      },
+      {
+        "source_id": "105-S08",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S11",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S13",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "method"
+      }
+    ]
+  },
+  "Epidemiology": {
+    "source_count": 6,
+    "has_fulltext": true,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S12",
+        "evidence_tier": "METADATA_VERIFIED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S17",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S18",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S19",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S21",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "failure"
+      },
+      {
+        "source_id": "105-S22",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "standard"
+      }
+    ]
+  },
+  "Computer Science / ML": {
+    "source_count": 7,
+    "has_fulltext": true,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S01",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S02",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S03",
+        "evidence_tier": "METADATA_VERIFIED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S10",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S15",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S16",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S20",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "failure"
+      }
+    ]
+  },
+  "Political Science": {
+    "source_count": 4,
+    "has_fulltext": true,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S06",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "failure"
+      },
+      {
+        "source_id": "105-S08",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S11",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S13",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "method"
+      }
+    ]
+  },
+  "Sociology": {
+    "source_count": 1,
+    "has_fulltext": false,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S11",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "foundational"
+      }
+    ]
+  },
+  "Psychology": {
+    "source_count": 1,
+    "has_fulltext": false,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S09",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "foundational"
+      }
+    ]
+  },
+  "Medicine / Clinical": {
+    "source_count": 5,
+    "has_fulltext": true,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S01",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S02",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S19",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S21",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "failure"
+      },
+      {
+        "source_id": "105-S22",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "standard"
+      }
+    ]
+  },
+  "Public Health": {
+    "source_count": 6,
+    "has_fulltext": true,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S02",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S12",
+        "evidence_tier": "METADATA_VERIFIED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S17",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S18",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S19",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S22",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "standard"
+      }
+    ]
+  },
+  "Education": {
+    "source_count": 2,
+    "has_fulltext": false,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S07",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S09",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "foundational"
+      }
+    ]
+  },
+  "Engineering / Control": {
+    "source_count": 1,
+    "has_fulltext": false,
+    "has_abstract": false,
+    "sources": [
+      {
+        "source_id": "105-S14",
+        "evidence_tier": "METADATA_VERIFIED",
+        "source_type": "foundational"
+      }
+    ]
+  },
+  "Philosophy of Science": {
+    "source_count": 3,
+    "has_fulltext": true,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S03",
+        "evidence_tier": "METADATA_VERIFIED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S10",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S20",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "failure"
+      }
+    ]
+  },
+  "Environmental Science": {
+    "source_count": 0,
+    "has_fulltext": false,
+    "has_abstract": false,
+    "sources": []
+  },
+  "Social Policy": {
+    "source_count": 2,
+    "has_fulltext": false,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S05",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S08",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      }
+    ]
+  },
+  "Biostatistics": {
+    "source_count": 6,
+    "has_fulltext": true,
+    "has_abstract": true,
+    "sources": [
+      {
+        "source_id": "105-S01",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S02",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "review"
+      },
+      {
+        "source_id": "105-S04",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S07",
+        "evidence_tier": "ABSTRACT_REVIEWED",
+        "source_type": "method"
+      },
+      {
+        "source_id": "105-S12",
+        "evidence_tier": "METADATA_VERIFIED",
+        "source_type": "foundational"
+      },
+      {
+        "source_id": "105-S21",
+        "evidence_tier": "FULLTEXT_REVIEWED",
+        "source_type": "failure"
+      }
+    ]
+  },
+  "Finance": {
+    "source_count": 0,
+    "has_fulltext": false,
+    "has_abstract": false,
+    "sources": []
+  },
+  "Ecology": {
+    "source_count": 0,
+    "has_fulltext": false,
+    "has_abstract": false,
+    "sources": []
+  },
+  "Agricultural Science": {
+    "source_count": 0,
+    "has_fulltext": false,
+    "has_abstract": false,
+    "sources": []
+  }
+}

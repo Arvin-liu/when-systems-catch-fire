@@ -1,0 +1,25 @@
+{
+  "task": "121Q6D",
+  "content_head": "1356d04b6741a119dc26ffdf75b313f427f4d66e",
+  "base_head": "33f453a0fd8aec355000ccf3253544858cf460c3",
+  "base_pr": 42,
+  "this_pr": 43,
+  "merge_readiness": "READY_WITH_INHERITED_FOUNDATION_CI_EXCEPTION",
+  "function_os_ci": "ALL_SUCCESS (schema + py3.10/3.11/3.12, run 29391420810)",
+  "foundation_ci": "INHERITED_FOUNDATION_CI_FAILURE (migrate_legacy.py --check, PR #40; not modified this round)",
+  "local_tests": "unittest OK + pytest 164 PASS",
+  "real_asset_migration": "BLOCKED (120 md files absent); no fake migration",
+  "importable_counts": {
+    "IMPORTABLE_NOW": 7,
+    "NEEDS_MANUAL_SPEC": 19,
+    "OUT_OF_SCOPE": 9,
+    "BLOCKED_NON_SYMBOLIC": 0
+  },
+  "thirty_five_assets_relabeled": false,
+  "merged_any_pr": false,
+  "closed_any_pr": false,
+  "rebased_any_pr": false,
+  "sealed_at": "2026-07-15T13:26:55+08:00",
+  "executor": "QClaw",
+  "model": "Hy3"
+}

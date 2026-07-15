@@ -1,0 +1,229 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Function OS v0.1 — N9 VersionedRegistry Record Schema",
+  "version": "0.1",
+  "type": "object",
+  "required": [
+    "function_id",
+    "revision",
+    "spec_hash",
+    "artifact_hash",
+    "compiler_version",
+    "status",
+    "created_at",
+    "content_hash"
+  ],
+  "properties": {
+    "function_id": {
+      "type": "string",
+      "pattern": "^FN-\\d{8}-\\d{4}$",
+      "description": "Globally unique function identifier"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Monotonically increasing registry revision number"
+    },
+    "spec": {
+      "type": "object",
+      "description": "Complete FunctionSpec as per N1 schema (Step 008)",
+      "required": [
+        "function_id",
+        "spec_version",
+        "name"
+      ],
+      "properties": {
+        "function_id": {
+          "type": "string",
+          "pattern": "^FN-\\d{8}-\\d{4}$"
+        },
+        "spec_version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "inputs": {
+          "type": "object"
+        },
+        "outputs": {
+          "type": "object"
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "postconditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "invariants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "effects_declared": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "examples": {
+          "type": "array"
+        },
+        "source_asset_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "spec_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "SHA-256 of canonical spec JSON (immutable)"
+    },
+    "artifact": {
+      "type": "object",
+      "description": "Complete Artifact manifest as per N4 schema (Step 012)",
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "pattern": "^ART-FN-\\d{8}-\\d{4}-\\d+\\.\\d+\\.\\d+$"
+        },
+        "spec_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "compiler_version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "format": {
+          "type": "string"
+        },
+        "entrypoint": {
+          "type": "string"
+        },
+        "content_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "dependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "created_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+        }
+      }
+    },
+    "artifact_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "SHA-256 of canonical artifact manifest"
+    },
+    "compiler_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Compiler version used to produce this artifact"
+    },
+    "interpreter_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Interpreter version used for execution (optional)"
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "function_id": {
+            "type": "string",
+            "pattern": "^FN-\\d{8}-\\d{4}$"
+          },
+          "min_spec_version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$"
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "deprecated",
+        "superseded"
+      ],
+      "description": "Current status of this function revision"
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Full provenance chain",
+      "properties": {
+        "provenance_id": {
+          "type": "string"
+        },
+        "spec_created_at": {
+          "type": "string"
+        },
+        "compiled_at": {
+          "type": "string"
+        },
+        "compiler_version": {
+          "type": "string"
+        },
+        "registered_at": {
+          "type": "string"
+        },
+        "registrar": {
+          "type": "string"
+        }
+      }
+    },
+    "supersedes": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Previous revision number this record supersedes"
+    },
+    "superseded_by": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Next revision that supersedes this record (nullable)"
+    },
+    "created_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$",
+      "description": "ISO 8601 UTC timestamp of registration (immutable)"
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "Composite SHA-256 of (function_id + spec_hash + artifact_hash + revision)"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "Human-readable notes (mutable)"
+    }
+  },
+  "additionalProperties": false
+}

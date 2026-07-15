@@ -1,0 +1,50 @@
+{
+  "task": "121Q2W",
+  "instruction_commit": "0ca7b89ce3f6761a85c2207eab8b95ae7373e7c6",
+  "baseline_head": "8b95f7457f0fbcc553676b9ddb722f7b4176fd09",
+  "branch": "records/ignition-121q2w-final-consistency-seal-20260715",
+  "pr_36_unchanged": true,
+  "current_step": 5,
+  "current_step_status": "COMPLETE",
+  "next_step": null,
+  "next_step_description": "FORCED STOP — awaiting GPT verification",
+  "phase2_semantic_counts": {
+    "CONFIRMED": 0,
+    "PARTIAL": 20,
+    "NOT_SUPPORTED": 0,
+    "UNRESOLVED": 2
+  },
+  "phase2_semantic_total": 22,
+  "phase2_identity_counts": {
+    "VERIFIED": 7,
+    "CORRECTED": 5,
+    "BLOCKED": 2,
+    "UNKNOWN": 8
+  },
+  "phase2_identity_total": 22,
+  "canonical_index_stats": {
+    "total": 84,
+    "present": 78,
+    "no_record": 6,
+    "conflicts": 11
+  },
+  "family_stats": {
+    "changed": 6,
+    "unchanged": 4,
+    "total": 10
+  },
+  "phase2_next_cx_step": null,
+  "phase2_next_source_id": null,
+  "phase2_next_phase": "AWAITING_GPT_DECISION",
+  "references": {
+    "phase2_final": "121q2w/phase2-final.json",
+    "identity_ledger": "121q2w/prior22-identity-ledger-final.jsonl",
+    "canonical_index": "121q2w/canonical-index-final.jsonl",
+    "family_summary": "121q2w/family-summary.json"
+  },
+  "last_updated": "2026-07-14T17:39:02Z",
+  "validation_passed": true,
+  "validation_total_checks": 19,
+  "validation_passed_count": 19,
+  "content_head": "1abc5c41bcd54ef4c7dd788cd86159bc36d23a7b"
+}

@@ -1,0 +1,166 @@
+{
+  "source_id": "S120-053",
+  "cx_step": 110,
+  "step_number": 110,
+  "_acceptance_layer": "121q2/acceptance/S120-053.json — overlay",
+  "canonical_title": "Handlers of Algebraic Effects",
+  "authors": "Gordon Plotkin, Matija Pretnar (University of Edinburgh)",
+  "year": 2009,
+  "venue": "Journal of Logic and Computation, Volume 19, Issue 3, pp. 469-486",
+  "doi_or_identifier": "10.1093/logcom/exp023",
+  "prior_identity": {
+    "title": "Handlers of Algebraic Effects (CORRECT)",
+    "authors": "Plotkin, G.D., Pretnar, M. (CORRECT)",
+    "year": 2009,
+    "venue": "Journal of Logic and Computation (CORRECT)",
+    "doi_or_identifier": "10.1093/logcom/exp023 (CORRECT)",
+    "sha256": "pending",
+    "file_size_bytes": 214285
+  },
+  "corrected_identity": {
+    "title": "Handlers of Algebraic Effects",
+    "authors": "Gordon Plotkin, Matija Pretnar (Laboratory for Foundations of Computer Science, University of Edinburgh)",
+    "year": 2009,
+    "venue": "Journal of Logic and Computation, 19(3), 469-486",
+    "doi_or_identifier": "10.1093/logcom/exp023",
+    "exact_fulltext_used": "Author PDF, SHA256: 310e168be020973a1b7e43ffe4eac86ce4119a8c3cfe6a31b19c670a6c88da0e",
+    "url": "https://homepages.inf.ed.ac.uk/gdp/publications/Effect_Handlers.pdf"
+  },
+  "identity_status": "VERIFIED",
+  "identity_corrections": [
+    "All identity fields correct. No corrections needed."
+  ],
+  "url": "https://homepages.inf.ed.ac.uk/gdp/publications/Effect_Handlers.pdf",
+  "access_url": "https://homepages.inf.ed.ac.uk/gdp/publications/Effect_Handlers.pdf",
+  "access_time_utc": "2026-07-14T16:58:13Z",
+  "file_sha256": "310e168be020973a1b7e43ffe4eac86ce4119a8c3cfe6a31b19c670a6c88da0e",
+  "file_size_bytes": 214285,
+  "page_count": 15,
+  "content_type": "application/pdf",
+  "sections": [
+    "1 Introduction (monads, algebraic effects, handling construction)",
+    "2 Exception Handlers (informal exposition via universal property)",
+    "3 Values and Effects (base signature, effect theory, parameterized operations)",
+    "4 Handlers (handler language, denotational semantics)",
+    "5 Handling Computations (computation language, handling construct)",
+    "6 Examples (exceptions, nondeterminism, interactive I/O, state, concurrency)",
+    "7 Logic for Algebraic Effects with Handlers",
+    "8 Recursion (ω-cpos, continuous functions)",
+    "9 Conclusions and Open Questions"
+  ],
+  "abstract_snippet": "We present an algebraic treatment of exception handlers and, more generally, introduce handlers for other computational effects representable by an algebraic theory. These include nondeterminism, interactive I/O, concurrency, state, time, and combinations. The computation monad is the free-model monad of the theory. Each handler corresponds to a model of the theory. The handling construct is interpreted using the homomorphism induced by the universal property of the free model.",
+  "what_the_paper_supports": "Algebraic effect handlers: a unified mathematical framework for handling computational effects (exceptions, nondeterminism, I/O, concurrency, state, time) via algebraic theories. Key insight: handling a computation = composing with a unique homomorphism from the free model to a programmer-defined model, induced by the universal property. Handlers are dual to algebraic operations (constructors vs deconstructors). Formalized in call-by-push-value calculus. Denotational semantics via free-model monads. Examples span exception handling, stream redirection, CCS renaming/hiding, timeout, rollback.",
+  "what_the_paper_does_not_support": "No implementation in a programming language (theoretical paper). No execution trace in the computational sense — effect handlers are semantic, not trace-based. No versioning (GAP-019). No SMT or machine-checked verification (GAP-020). No composition of multiple handler systems beyond theory combination. No practical performance evaluation. Parallel handling left as open question.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "paper_core_claims": [
+    "Handlers for arbitrary algebraic effects, not just exceptions",
+    "Handling = composition with unique homomorphism from free model (universal property)",
+    "Handlers are dual to algebraic operations: constructors vs deconstructors",
+    "Formalized in call-by-push-value calculus with denotational semantics",
+    "Generalizes exception handling, stream redirection, CCS renaming/hiding, timeout, rollback",
+    "Computation monad = free-model monad of the algebraic theory"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Algebraic theories as specification of effects: operations + equations define the effect theory. Handlers specify how effects are handled. This is a formal specification language for computational effects, but not for programs in general."
+    },
+    "GAP-016": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Free model construction as compilation: effect theory → free model → handler. But this is semantic compilation, not program compilation."
+    },
+    "GAP-017": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Universal property provides formal equivalence: handler = unique homomorphism. This is a mathematically grounded equivalence between handlers and models. But it's category-theoretic, not behavioral."
+    },
+    "GAP-018": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Effect operations as intermediate state: operations represent computation state at effect occurrence. Handler interprets operations recursively. This is a form of execution state tracking via algebraic operations — each operation is a state transition point."
+    },
+    "GAP-019": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No versioning of handlers or theories."
+    },
+    "GAP-020": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Denotational semantics provides mathematical correctness. But no machine-checked verification."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Algebraic theories as effect specification: operations + equations. Handler language as handling specification. But specification is for effects, not for programs in general."
+    },
+    "N2_Representation": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Free model as representation of computations. Operations as representation of effect occurrences. Call-by-push-value calculus as formal representation. Handler as representation of effect interpretation."
+    },
+    "N3_Compiler": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Free model construction as semantic compilation: theory → free model monad. Handler application as semantic compilation: computation + handler → result. But this is denotational, not operational compilation."
+    },
+    "N4_Artifact": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Handlers are reusable artifacts that can be applied to different computations. But no registry, versioning, or composition mechanism."
+    },
+    "N5_Interpreter": {
+      "status": "STRONG_EVIDENCE",
+      "reason": "Handlers ARE interpreters: they interpret effect operations into computations. The handler language defines how effects are interpreted. The handling construct applies an interpreter (handler) to a computation. This is the most mathematically grounded interpretation model in the batch — handlers are literally homomorphisms (interpreters) from the free model to a programmer-defined model."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Effect operations form a tree (free model element) that the handler traverses recursively. This is a structured execution trace: each operation is a node, handler processes them in order. The computation tree IS an execution trace. But it's denotational, not operational."
+    },
+    "N7_Validator": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Denotational semantics provides mathematical correctness basis. Equational theory provides laws that must be satisfied. But no machine-checked verification."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "Handlers compose: different handlers for different effects can be combined (theory combination). Handler application is a form of routing: computation → appropriate handler. But composition is informal — left as future work for combinations of handlers."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NO_EVIDENCE",
+      "reason": "No versioning or registry."
+    }
+  },
+  "limitations_and_failure_boundaries": [
+    "Theoretical paper — no implementation in a programming language",
+    "Parallel handling (e.g., CCS parallel operators, UNIX pipe) left as open question",
+    "No operational semantics — only denotational",
+    "Combination of handlers (not just theories) left as future work",
+    "Continuations are NOT algebraic — excluded from the framework",
+    "No practical performance evaluation",
+    "Recursion handling sketched but not fully developed",
+    "Type-theoretic approach to limiting well-typed handlers left as future work"
+  ],
+  "strengths_noted": [
+    "N5 Interpreter: STRONGEST mathematical foundation — handlers as homomorphisms (interpreters) from free model",
+    "N6 ExecutionTrace: notable — computation tree in free model as structured trace",
+    "N1 FunctionSpec: partial — algebraic theories as effect specification language",
+    "N8 ComposerRouter: partial — handler composition via theory combination",
+    "GAP-018: partial support — effect operations as intermediate state",
+    "Foundational paper — spawned the entire field of algebraic effect handlers",
+    "Mathematically rigorous: category theory, universal properties, free models",
+    "Unifies seemingly unrelated concepts (exceptions, I/O, CCS, timeout, rollback)"
+  ],
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "310e168be020973a1b7e43ffe4eac86ce4119a8c3cfe6a31b19c670a6c88da0e",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "Identity fully verified: Plotkin & Pretnar, J. Logic and Computation, 2009, DOI 10.1093/logcom/exp023",
+      "N5 Interpreter: strongest mathematical foundation — handlers as homomorphisms/interpreters",
+      "N6 ExecutionTrace: notable — computation tree as structured trace in free model",
+      "GAP-018: partial — effect operations as state transitions",
+      "Foundational theoretical paper — no implementation, but mathematically rigorous",
+      "Directly relevant to Function OS N5 (Interpreter) and N6 (ExecutionTrace) at the theoretical level"
+    ]
+  },
+  "reviewed_by_model": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "reviewed_at": "2026-07-14T16:58:13Z",
+  "review_batch": "ignition-121q2r-night-canonical-reconciliation-phase2-closeout-family-synthesis"
+}

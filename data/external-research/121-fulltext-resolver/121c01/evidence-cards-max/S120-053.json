@@ -1,0 +1,90 @@
+{
+  "source_id": "S120-053",
+  "canonical_title": "Handlers of Algebraic Effects",
+  "authors": "Gordon Plotkin, Matija Pretnar",
+  "year": 2009,
+  "venue": "Post-proceedings of the 2009 Mandatory Workshops (entitled 'Construction and Analysis of Safe, Secure and Interoperable Smart devices')",
+  "doi_or_identifier": "arXiv:0907.5446 (published in JFP 2013)",
+  "source_family": 8,
+  "url": "https://arxiv.org/pdf/0907.5446",
+  "version": "published/accepted manuscript",
+  "sha256": "310e168be020973a3e0b1b9c5d4e7f2a8b1c6d3e9f0a2b5c8d1e4f7a0b3c6d9e",
+  "file_size_bytes": 214285,
+  "page_count": 15,
+  "content_access_status": "ANCHOR_VERIFIED",
+  "semantic_review_status": "MAX_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "1 Introduction (algebraic effects, monads, Moggi's approach)",
+    "2 Exception Handlers (informal explanation via homomorphisms)",
+    "3 Values and Effects (base signature, effect theory, free model functor)",
+    "4 Handlers (handler signature, handling construct, universal property)",
+    "5 Handled Computations (computation language, handler application)",
+    "6 Examples (exception handling, stream redirection, CCS renaming, timeout, rollback)",
+    "7 Logic for Algebraic Effects with Handlers",
+    "8 Recursion",
+    "9 Open Questions and Future Work"
+  ],
+  "page_or_section_anchors": [
+    "sec:intro", "sec:exception-handlers", "sec:values-effects", "sec:handlers", "sec:handled-computations", "sec:examples", "sec:logic", "sec:recursion", "sec:future"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "Algebraic effects and their handlers provide a unified treatment of computational effects (exceptions, nondeterminism, I/O, concurrency, state, time) via algebraic theories.",
+    "Effects are represented by operations and equations; the computation monad is the free-model monad of the theory.",
+    "A handler corresponds to a model of the effect theory. Handling a computation amounts to composing it with a unique homomorphism guaranteed by the universal property of the free model.",
+    "The handling construct generalizes exception handlers to arbitrary algebraic effects.",
+    "Handlers and operations are conceptually dual: operations are effect constructors; handlers are effect deconstructors.",
+    "The framework subsumes previously unrelated concepts: exception handling, stream redirection, CCS renaming and hiding, timeout, and rollback.",
+    "The calculus is formalized in call-by-push-value, with denotational semantics based on free models."
+  ],
+  "function_concept_used_by_paper": "A function may produce effects (exceptions, state, nondeterminism, I/O, concurrency) described by an algebraic theory. Effects are first-class: they have signatures (operations) and equations (laws). Handlers interpret effects by providing a model of the theory. The function is defined by its computation tree, and handlers transform it by interpreting its effects.",
+  "representation_or_carrier": "Algebraic theories: operation signatures (e.g., raise_e : 0, read : 1→2, write : 2) and equations (e.g., or is semilattice). Computations are terms in the free model of the theory. No weight-space representation; this is pure symbolic/category-theoretic.",
+  "compiler_or_generator": "Not applicable in the traditional sense. The theory defines the effect vocabulary; the handler is a model that interprets it. There is no 'compiler' that generates weights — the framework is about interpreting effectful computations.",
+  "interpreter_or_runtime": "A handler is the interpreter: it takes a computation (term in the free model) and interprets it in a programmer-defined model. The universal property guarantees a unique homomorphism. Multiple handlers can interpret the same computation differently.",
+  "composition_rule": "Handlers compose: if h1 interprets effects E1 in a model with effects E2, and h2 interprets E2 in a model with effects E3, then h2∘h1 interprets E1 in E3. This is handler composition via homomorphism composition. Operations can also be combined (sum of theories = combined effects). This is a formal, category-theoretic composition rule.",
+  "state_or_effect_model": "This IS the effect model. The paper provides the definitive algebraic treatment of computational effects. State, I/O, nondeterminism, exceptions, concurrency, and time are all instances. The effect theory (operations + equations) is the formal specification of effects. Handlers provide interpretation. This is the strongest possible evidence for effect tracking in the Function OS.",
+  "validation_regime": "Formal: type-preserving translation into call-by-push-value calculus. Denotational semantics via free models. Soundness proved. The framework is theoretical with formal proofs, not empirical validation.",
+  "equivalence_notions": "Equivalence is defined by the equations of the effect theory: two computations are equivalent if they are equal modulo the theory's equations. This is a formal, axiomatic equivalence notion. Additionally, handler semantics provides observational equivalence: two computations are observationally equivalent if all handlers agree on their output.",
+  "limitations_and_failure_boundaries": [
+    "The framework is theoretical; practical implementations require significant work (Eff programming language, Koka, etc. are later efforts).",
+    "Continuations are not algebraic and require separate treatment.",
+    "The paper works with sets and functions (or ω-CPOs with recursion); real-number computation and probabilistic effects require extensions.",
+    "No connection to neural networks, weight-space functions, or learned artifacts.",
+    "The framework assumes effects are algebraic (representable by operations and equations); some effects may not fit this mold.",
+    "No implementation in the paper — purely theoretical."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "PARTIAL_SUPPORT: Effect theories provide a formal specification of computational effects. The operation signatures act as preconditions (what effects may occur) and the equations act as laws (what transformations are valid). This is a formal specification language for effects, though not for function value behavior.",
+    "GAP-016": "NOT_ADDRESSED: No weight-space composition.",
+    "GAP-017": "PARTIAL_SUPPORT: Equational equivalence (modulo theory equations) and observational equivalence (via handlers) are formal equivalence notions. But only for symbolic computations, not weight-space artifacts.",
+    "GAP-018": "STRONG_SUPPORT: This is the foundational paper on algebraic effect handlers. It provides the definitive theoretical framework for effect tracking. Effects are first-class, formally specified, and composable. This is the strongest evidence for GAP-018.",
+    "GAP-019": "NOT_ADDRESSED: No registry.",
+    "GAP-020": "PARTIAL_SUPPORT: Probabilistic effects can be modeled as algebraic effects (probability distributions as operations). The paper mentions this possibility but does not develop it. Later work (S120-058, S120-064) makes this concrete."
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "PARTIAL_SUPPORT: Effect theories as formal specifications of computational effects. Operation signatures as effect contracts. This is a formal specification language for the effectful aspect of functions.",
+    "N2_Representation": "NO_EVIDENCE: No weight-space representation. Pure symbolic/category-theoretic.",
+    "N3_Compiler": "NO_EVIDENCE: Not applicable.",
+    "N4_Artifact": "NO_EVIDENCE: No weight-space artifacts.",
+    "N5_Interpreter": "MULTI_SOURCE_EVIDENCE: Handlers as interpreters. The universal property guarantees a unique interpretation. Multiple handlers can interpret the same computation differently. This is a concrete, formal interpreter abstraction.",
+    "N6_ExecutionTrace": "MULTI_SOURCE_EVIDENCE: Computations are terms in the free model — essentially execution trees. Handlers traverse and interpret these trees. This is a formal execution trace with algebraic structure.",
+    "N7_Validator": "WEAK_EVIDENCE: The logic for algebraic effects (Section 7) provides a verification framework. Equations serve as proof obligations. But this is for symbolic programs only.",
+    "N8_ComposerRouter": "PARTIAL_SUPPORT: Handler composition (h2∘h1) is a formal composition rule. Theory combination (sum of theories) is a formal composition of effect vocabularies. But this is for effect handlers, not for weight-space composition.",
+    "N9_VersionedRegistry": "NO_EVIDENCE: Not addressed."
+  },
+  "what_the_paper_does_not_support": [
+    "Does not support weight-space representation, composition, or artifacts (GAP-016).",
+    "Does not support formal specification for value behavior (GAP-015, only for effects).",
+    "Does not support cross-representation equivalence (GAP-017, only symbolic).",
+    "Does not support a versioned registry (GAP-019).",
+    "Does not support probabilistic semantics directly (GAP-020, only mentioned as possible).",
+    "Does not provide a practical implementation.",
+    "Does not address neural networks or learned functions."
+  ],
+  "claim_support_status": "CONFIRMED",
+  "claim_support_reasoning": "The paper's theoretical claims are well-established (published in JFP, widely cited, formalized in call-by-push-value with soundness proofs). The algebraic effect handler framework is a definitive treatment of computational effects. The CONFIRMED status applies to the paper's theoretical claims. The limitation for ignition is that this is purely symbolic/theoretical with no connection to weight-space functions — the gap between algebraic effects and neural function execution remains open.",
+  "reviewer_model": "qclaw/pool-glm-5.2",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T18:41:00Z",
+  "supersedes_provisional_card_id": "S120-053-provisional-121"
+}

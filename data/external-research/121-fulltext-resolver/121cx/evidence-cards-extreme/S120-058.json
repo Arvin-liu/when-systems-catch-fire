@@ -1,0 +1,168 @@
+{
+  "source_id": "S120-058",
+  "canonical_title": "Probabilistic Programming with Stochastic Probabilities",
+  "authors": ["Alexander K. Lew", "Matin Ghavamizadeh", "Martin C. Rinard", "Vikash K. Mansinghka"],
+  "year": 2023,
+  "version": "25-page PACMPL/PLDI 2023 paper plus 40-page 2024-01-07 author full version with Appendices A-E",
+  "doi_or_identifier": "10.1145/3591290",
+  "identifier": "DOI:10.1145/3591290; PACMPL 7 (PLDI), Article 176",
+  "url": "https://people.csail.mit.edu/rinard/paper/pldi2023.pdf",
+  "source_family": 9,
+  "source_family_name": "probabilistic programming and stochastic semantics",
+  "license": "paper is CC BY 4.0; reviewed 2023 code commit has no license file, while Apache-2.0 was added to the repository in 2025",
+  "sha256": "b055328bb969ab7992d6f629460ae4750fb29d5ecd42eb10cd35434a7f5f1605",
+  "file_size_bytes": 856262,
+  "page_count": 25,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "publication_identity": "Proceedings of the ACM on Programming Languages 7 (PLDI), Article 176, June 2023, 25 pages",
+    "pdf_visually_checked_pages": [9, 16, 18],
+    "full_version": {
+      "url": "https://alexlew.net/papers/stochastic-probabilities.pdf",
+      "sha256": "e2af7e2440cc75ff3ce49895e6fdfc9a4723a2bfd9235850772b33ac4709f5d2",
+      "file_size_bytes": 2309847,
+      "page_count": 40,
+      "created": "2024-01-07",
+      "reviewed_for": "trace measure construction, quasi-Borel background, stochastic-probability inference theorems, probabilistic absolute-continuity assertions and the full logical-relations proof"
+    },
+    "code_artifact": {
+      "repository": "https://github.com/probcomp/GenSP.jl",
+      "reviewed_commit": "2188b585538c2e9a2849bca704c2bdf39754684c",
+      "commit_date": "2023-06-19",
+      "selection_basis": "first repository snapshot around publication that uses the GenSP identity and contains all six named case-study families; the final main branch has no paper tag",
+      "release_status": "no tags or immutable paper release",
+      "package_version": "0.1.0",
+      "julia_version": "1.8.5 from Manifest.toml",
+      "tracked_files": 98,
+      "julia_lines": 3560,
+      "dependency_identity": "Project.toml plus Manifest.toml with exact package tree hashes",
+      "case_studies_present": ["3DP3", "Context-Correct", "RAVI-DPMM", "RSA", "RANSAC-Regress", "Goal-Infer"],
+      "test_boundary": "test/runtests.jl includes only util, target, marginal and choicemap_distribution tests; the inference test files contain no tests and are not included by default",
+      "result_boundary": "benchmark/experiment scripts and some input data are present, but serialized result files and plotted result receipts referenced by scripts are absent",
+      "implementation_caveats": [
+        "The default-importance all-zero-weight path returns a NoResult sentinel through a rejection-based probability estimator and still carries TODO comments questioning complete support.",
+        "The custom Metropolis-Hastings helper assesses the backward proposal with a different argument tuple than the forward proposal and has no corresponding test, creating an unresolved state-dependent-proposal correctness risk.",
+        "The 2022 submission-era commit is named GenProx and lacks several final named case-study files; the matching GenSP case-study snapshot was committed after the PDF creation date."
+      ],
+      "runtime_boundary": "Julia was unavailable on this machine, so package tests and experiments were not rerun; the artifact review is static."
+    }
+  },
+  "sections_reviewed": [
+    "motivation, PPL expressiveness restrictions and inverse-graphics example",
+    "positive unbiased density estimators, unbiased density samplers and stochastic probability interface",
+    "lambda-SP types, named traces, probabilistic/measure monads and programmable Monte Carlo inference",
+    "measure and density-estimator semantics over quasi-Borel spaces",
+    "type-directed density-estimator compiler and translations of sampling, observation, sequencing, inference, marginalization and normalization",
+    "logical relation, absolute-continuity condition and compiler soundness theorem",
+    "six case studies, microbenchmarks, convergence/acceptance and particle-weight results",
+    "full appendices on trace space, inference soundness, probabilistic support assertions and correctness proof",
+    "GenSP repository identity, dependency lock, source, tests, case-study scripts and missing result receipts"
+  ],
+  "page_or_section_anchors": [
+    {"anchors": "§§1-2, pp. 1-6", "checked_for": "expressiveness claims, traced programs, marginal, observe, normalize and approximate-posterior meaning"},
+    {"anchors": "§3, pp. 6-7, Definitions 3.1-3.2 and Proposition 3.1", "checked_for": "positive unbiased estimators, corresponding samplers and safe denominator use"},
+    {"anchors": "§4 and Figs. 3-4, pp. 7-12", "checked_for": "lambda-SP syntax, reference measures, quasi-Borel semantics, traces and inference meanings"},
+    {"anchors": "§5 and Figs. 5-7, pp. 12-17, Theorem 5.2", "checked_for": "source-to-source translation, SPI generation, logical relations and absolute-continuity precondition"},
+    {"anchors": "§6 and Table 1/Figs. 8-9, pp. 17-20", "checked_for": "six case studies, exact/hand-coded/GenSP timing, convergence and variance impacts"},
+    {"anchors": "Appendices A-B, p. 26", "checked_for": "recursive trace measure space and quasi-Borel prerequisites"},
+    {"anchors": "Appendix C, pp. 26-27, Theorem C.1 and Fig. 10", "checked_for": "importance, SMC and MH soundness under support/weight hypotheses"},
+    {"anchors": "Appendix D, pp. 27-28", "checked_for": "semantics and probabilistic detection limits of absolute-continuity assertions"},
+    {"anchors": "Appendix E, pp. 28-40", "checked_for": "logical-relation definitions, fundamental lemma and proof cases for inference, normalization and marginalization"},
+    {"anchors": "repository commit 2188b58", "checked_for": "paper-aligned package, manifests, six case studies, tests, result provenance and implementation edge cases"}
+  ],
+  "paper_core_claims": [
+    {"claim": "A stochastic probability interface consisting of a positive unbiased density estimator and its corresponding unbiased density sampler permits density estimates to appear safely in numerators and denominators of Monte Carlo ratios.", "anchors": "§3 and Proposition 3.1"},
+    {"claim": "Lambda-SP combines discrete/continuous sampling, conditioning, higher-order functions, stochastic control flow, programmable inference, first-class marginalization and approximate normalization.", "anchors": "§4 and Fig. 3"},
+    {"claim": "The type-directed translation compiles closed well-supported lambda-SP programs into unbiased density estimators and corresponding samplers.", "anchors": "§5, Theorem 5.2 and Appendix E"},
+    {"claim": "Importance sampling, selected SMC steps and pseudomarginal MH remain sound with SPI estimates when absolute-continuity and properly-weighted hypotheses hold.", "anchors": "Appendix C, Theorem C.1"},
+    {"claim": "Across six case-study families, generated estimators are commonly 1-5x slower than hand-coded estimators but can be orders of magnitude faster than exact density evaluation; stochastic noise causes bounded but nonzero convergence degradation in the reported experiments.", "anchors": "§6, Table 1 and Figs. 8-9"}
+  ],
+  "function_concept_used_by_paper": "A function may denote a deterministic map, a distribution, a normalized traced probabilistic program, an unnormalized measure program, or an inference algorithm. Its stochastic meaning is a measure paired with return-value semantics, while its compiled operational interface supplies randomized density estimates and, when normalized, samples carrying reciprocal-density information.",
+  "representation_or_carrier": "Carriers include ground measurable spaces with reference measures, quasi-Borel spaces for higher-order functions, finite heterogeneous named traces, probability/subprobability/measure monads, P/M/D program types, inference combinators, stochastic density kernels, weighted samples and Julia Gen ChoiceMaps/Distribution traces. The density semantics and measure semantics are distinct but related by a type-indexed logical relation.",
+  "specification_language": "Lambda-SP types distinguish distributions D, normalized traced programs P, unnormalized programs M, algorithms Alg/SMC/MCMC and deterministic higher-order functions. Named sample/observe, marginal and normalize constructs specify generative and inferential structure; the SPI specifies positivity, unbiasedness and corresponding sampling. Users must still supply primitive SPI implementations, custom proposals and support conditions; general nonprobabilistic pre/postconditions, resources, privacy and lifecycle are outside the language.",
+  "compiler_or_generator": "The d{·} translation maps each source type and term to randomized target-language code implementing the SPI. It composes independent estimates for sequencing, builds reverse/conditional inference machinery, compiles marginalization through importance sampling and compiles normalization through the chosen inference algorithm. Correctness is relative to primitives satisfying their SPI and all proposal/target absolute-continuity obligations; the compiler does not prove these obligations automatically.",
+  "interpreter_or_runtime": "GenSP extends Gen.jl with SPDistribution, random_weighted and estimate_logpdf, representing inference algorithms themselves as stochastic distributions over ChoiceMaps. The runtime uses weighted proposals, importance sampling, SMC, MCMC, marginal distributions and nested inference. Random traces and weights are operational artifacts; exact posterior inference is generally not performed, and normalization denotes the finite inference algorithm's approximate output distribution rather than the exact posterior.",
+  "composition_rule": "Probabilistic programs compose monadically over disjoint named traces; density estimates multiply when conditionally independent; marginal and normalize accept user-selected inference algorithms; SMC steps and MCMC kernels compose with constructed conditional/time-reversal counterparts. Composition preserves unbiasedness only under positivity, independence, absolute-continuity/support and algorithm-specific proper-weighting conditions. Approximation at nested marginal/normalize sites introduces cumulative runtime-variance tradeoffs.",
+  "state_or_effect_model": "Random sampling, observation/conditioning, trace allocation, failure/subprobability mass and approximate inference are explicit effects. Named traces expose stochastic control flow and choices. The model covers discrete and continuous probability with higher-order functions but assumes finite traces, unique names on composed traces and absolute continuity relative to selected reference measures; concurrency, distributed state, resource lifetime and external side effects are not formalized.",
+  "uncertainty_model": "The semantic uncertainty is measure-theoretic: probability measures, unnormalized measures, densities relative to reference measures, unbiased positive random estimators, sampler/reciprocal pairs, importance weights and convergence in the infinite-computation limit. Estimator variance affects finite MCMC acceptance and SMC weights but is not statically bounded. Empirically, ten 300-iteration MCMC runs give about ±3% acceptance-rate margins; several 'exact' convergence baselines are actually very-high-particle approximations, and the paper does not provide a general calibrated finite-time error certificate.",
+  "validation_regime": {
+    "formal": "measure and density-estimator semantics, SPI propositions, inference soundness theorem and a full logical-relations proof of translation soundness under absolute continuity",
+    "implementation": "open-source GenSP/Gen extension with locked Julia 1.8.5 dependency graph and all six named case-study families at a post-publication commit",
+    "benchmarks": "seven distribution-level query groups drawn from six case studies, exact/hand-coded/generated density comparisons, end-to-end MCMC/SMC plots and acceptance/weight-variance comparisons",
+    "reported_result": "Generated density estimators range from 1.2x to 11.9x the hand-coded query cost in Table 1, while exact evaluators are often unavailable or 17x to over 19,000,000x slower; end-to-end generated inference is reported about 1-2x slower than hand-coded. Noise lowers MCMC acceptance by roughly 10-25% and increases particle-weight variance to varying degrees.",
+    "boundary": "Theorems assume user-supplied primitive correctness and proposal support; probabilistic support assertions can miss a mismatch on any finite execution. Code/tests/results were not independently rerun, inference tests are empty, and result receipts are absent."
+  },
+  "equivalence_notions": [
+    {"notion": "measure semantics", "support": "PROGRAMS_ARE_EQUAL_AT_MEASURE_LEVEL_WHEN_THEY_DENOTE_THE_SAME_MEASURE_AND_RETURN_VALUE_MAP", "boundary": "The paper proves compiler correctness, not a decidable contextual/distributional equivalence procedure."},
+    {"notion": "unbiased density correctness", "support": "EXPECTED_RANDOM_ESTIMATE_EQUALS_THE_RADON_NIKODYM_DENSITY_ALMOST_EVERYWHERE", "boundary": "Expectation-level equality does not bound variance or finite-run error; positivity and reference-measure assumptions matter."},
+    {"notion": "density sampler correspondence", "support": "WEIGHTED_SAMPLE_LAW_HAS_DENSITY_W_WITH_RESPECT_TO_REFERENCE_TIMES_ESTIMATOR_KERNEL", "boundary": "Available only for probability measures and required for safe reciprocal use."},
+    {"notion": "translation soundness", "support": "MEASURE_AND_COMPILED_DENSITY_SEMANTICS_ARE_RELATED_AT_EACH_TYPE", "boundary": "Conditional on absolute continuity, normalized subcomputations, correct primitives and finite/discrete-structured traces."},
+    {"notion": "Monte Carlo soundness", "support": "PROPER_WEIGHTING_OR_TARGET_INVARIANCE_IS_PRESERVED_BY_FIGURE_10_ALGORITHMS", "boundary": "An asymptotic/measure statement, not a finite-iteration accuracy or mixing guarantee."},
+    {"notion": "empirical convergence", "support": "SELECTED_LOG_PROBABILITY_ACCEPTANCE_AND_WEIGHT_VARIANCE_CURVES", "boundary": "Case-specific, some baselines approximate, no general error bar or archived raw receipt."}
+  ],
+  "lifecycle_and_provenance": "The paper has a DOI, CC BY publication, stable 25-page PDF, expanded proof version and a public repository with history and a Julia Manifest. However, no tag binds paper to code. The submission-era code uses the GenProx name and lacks final case-study files; the first complete GenSP snapshot postdates the PDF. That snapshot has no license file, default inference tests or preserved result artifacts, while Apache-2.0 was added only in 2025. There is no signed paper-code-data-run manifest, seed/environment ledger for every figure, CI health, revalidation cadence, compatibility matrix, rollback, supersession or retirement policy.",
+  "limitations_and_failure_boundaries": [
+    "Translation soundness is conditional on absolute continuity/support alignment for every custom proposal and target; users must hand-verify this requirement.",
+    "The proposed dynamic support assertion fails only with positive probability when a mismatch exists and may therefore pass a finite run despite a real defect.",
+    "Primitive distributions must be manually supplied with valid SPI methods; the proof assumes these trusted implementations are correct.",
+    "Unbiasedness is an expectation-level property and does not ensure low variance, useful effective sample size, rapid mixing or finite-run calibration.",
+    "normalize denotes the output of a finite approximate inference algorithm, not the exact normalized posterior; nesting approximations changes the modeled distribution.",
+    "Trace composition requires disjoint names and finite traces; collisions fail/return empty trace in the formal helper rather than supporting arbitrary dynamic address reuse.",
+    "Absolute continuity relative to fixed reference measures excludes singular distributions and many deterministic transforms unless represented specially.",
+    "The benchmark claim 'mostly unaffected' still includes roughly 10-25% lower MCMC acceptance and substantial particle-weight variance increases in some tasks.",
+    "Several exact-density baselines are unavailable, time out, or are replaced by high-particle estimated densities, so speedup and convergence labels must be read case by case.",
+    "Table 1 measures generated estimators at 1.2-11.9x hand-coded cost; automation is not uniformly a small overhead at the query level.",
+    "The GenSP snapshot has no tag or license file, and the snapshot matching final names/case studies was committed after the PDF creation date.",
+    "Default tests omit inference code, inference test files are empty, experiment result files are absent, and the historical Julia environment was not rerun.",
+    "The all-zero-weight code path contains unresolved TODO reasoning and can enter unbounded rejection loops; the custom MH helper has an untested proposal-argument asymmetry.",
+    "The work does not connect probabilistic semantics to neural weight-space functions, ignition epsilon, distributed effects or registry governance."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove proposal support automatically, provide finite-sample error bounds for arbitrary programs or guarantee practical convergence.",
+    "It does not establish that all GenSP implementation paths satisfy lambda-SP or SPI semantics.",
+    "It does not provide a general program-equivalence checker, deterministic pre/postcondition system, complete execution certificate or governed registry.",
+    "It does not show that ignition's epsilon is a random variable, specify its distribution or validate any ignition stochastic claim."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {"status": "PARTIAL", "reason": "Types and SPI contracts specify probabilistic interfaces and support obligations but not arbitrary functional pre/postconditions."},
+    "GAP-016": {"status": "CONFIRMED", "reason": "The type-directed d{·} transformation is a concrete semantics-backed compiler from expressive probabilistic programs to stochastic density algorithms."},
+    "GAP-017": {"status": "PARTIAL", "reason": "Logical relations establish compiler correspondence and measure notions are precise, but no general equivalence decision procedure is supplied."},
+    "GAP-018": {"status": "CONFIRMED", "reason": "Sampling, observation, normalization, failure mass and inference are explicit typed stochastic effects with compositional runtime handling."},
+    "GAP-019": {"status": "CONFIRMED", "reason": "Full proofs, a locked implementation and six case-study families provide strong bounded validation despite unrerun and missing result receipts."},
+    "GAP-020": {"status": "CONFIRMED", "reason": "Measures, traces, stochastic density estimators, reciprocal samplers, programmable inference and variance effects form a rigorous stochastic-function semantics framework."}
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {"status": "CONFIRMED", "reason": "Lambda-SP types and SPI obligations specify probabilistic functions, measures and inference contracts."},
+    "N2_Representation": {"status": "CONFIRMED", "reason": "Measures, quasi-Borel functions, named traces, estimator kernels and weighted samples are explicit representations."},
+    "N3_Compiler": {"status": "CONFIRMED", "reason": "The d{·} translation compositionally generates randomized density/sampler implementations and is proven sound under stated assumptions."},
+    "N4_Artifact": {"status": "PARTIAL", "reason": "GenSP code and manifests exist, but paper binding, licensing at the reviewed commit, inference tests and result receipts are incomplete."},
+    "N5_Interpreter": {"status": "CONFIRMED", "reason": "GenSP/Gen and programmable Monte Carlo algorithms execute traced probabilistic and inference programs."},
+    "N6_ExecutionTrace": {"status": "CONFIRMED", "reason": "Finite named heterogeneous traces are first-class semantic and operational objects, though run-level trace archives are absent."},
+    "N7_Validator": {"status": "CONFIRMED", "reason": "SPI propositions, inference theorems, logical relations and empirical convergence checks provide strong bounded validation."},
+    "N8_ComposerRouter": {"status": "CONFIRMED", "reason": "Monadic programs, marginal/normalize choices, SMC/MCMC combinators and proposal routing compose probabilistic functions and inference."},
+    "N9_VersionedRegistry": {"status": "PARTIAL", "reason": "DOI, PDFs, Git history and Manifest identify versions without a paper tag, run lineage, health, compatibility or retirement governance."}
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "PARTIAL_FULLTEXT_REVIEWED",
+    "verdict": "ACCEPTED_WITH_SUPPORT_ASSUMPTION_IMPLEMENTATION_AND_PROVENANCE_CORRECTIONS_TO_CONFIRMED_BOUNDED_SUPPORT",
+    "corrections": [
+      "Reviewed the 40-page full version and distinguished Theorem 5.2 compiler soundness from Theorem C.1 inference soundness and their separate hypotheses.",
+      "Replaced generic 'stochastic probabilities' language with the exact positive unbiased estimator plus corresponding density-sampler contract.",
+      "Made absolute continuity a user-owned soundness precondition and recorded that probabilistic assertions may miss support defects on finite runs.",
+      "Separated exact posterior semantics from the finite approximate distribution produced by normalize.",
+      "Reviewed the first complete GenSP case-study snapshot, locked Julia environment, missing inference tests/results/license and implementation edge paths.",
+      "Bounded performance and convergence claims with hand-coded overhead, acceptance-rate loss, weight-variance changes and approximate baselines."
+    ],
+    "prior_card_superseded": true
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "The work gives direct formal and implemented support for probabilistic FunctionSpec, measure/trace Representation, a semantics-backed Compiler, probabilistic Interpreter, first-class ExecutionTrace, Validator and inference ComposerRouter. Artifact closure and VersionedRegistry lifecycle remain partial, and no result transfers automatically to ignition's epsilon or neural functions.",
+  "source_specific_reasoning": "CONFIRMED is justified for the bounded stochastic-function architecture. The paper defines the SPI precisely, gives higher-order measure semantics, translates programs compositionally, proves unbiased density/sampler correctness through logical relations and proves selected inference templates sound under explicit assumptions. It also implements the approach and evaluates six nontrivial families. Extreme review narrows the result because absolute continuity is not automatically proved, finite stochastic assertions can miss defects, unbiasedness does not control variance, normalize models an approximate algorithm, some baselines are approximate, and the repository lacks paper binding, inference tests and result receipts while retaining edge-case TODOs.",
+  "projection_boundary": "These are 121CX projections from the exact hash-matched 25-page publication, the 40-page proof version and static review of GenSP commit 2188b58. Formal claims are proof-backed within lambda-SP and its assumptions; GenSP experiments were not rerun. This model review is not proof that the Julia implementation is correct and is not empirical validation of ignition.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T06:19:10Z"
+}

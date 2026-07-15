@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "legacy_path",
+    "current_heuristic_type",
+    "classification_status",
+    "source_status",
+    "risk_level",
+    "dependency_level",
+    "strong_term_hits",
+    "recommended_batch",
+    "required_method",
+    "priority"
+  ],
+  "properties": {
+    "classification_status": {
+      "const": "PROVISIONAL"
+    }
+  },
+  "additionalProperties": true
+}

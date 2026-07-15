@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-039",
+  "title": "Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time",
+  "authors": "Wortsman, M., et al.",
+  "year": 2022,
+  "venue": "arXiv preprint / ICML 2022",
+  "doi_or_identifier": "arXiv:2203.05482",
+  "source_family": 6,
+  "url": "https://arxiv.org/pdf/2203.05482",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2203.05482.pdf",
+  "effective_url": "https://arxiv.org/pdf/2203.05482",
+  "access_time_utc": "2026-07-13T16:42:38Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "226ac91243bdf4ebe79652991f59fa1c0c84d5d624a50b88210bf7e9316869e3",
+  "local_cache_path": ".cache/fulltext/S120-039_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 1616512,
+  "page_count": 34,
+  "sections": [
+    "1 Introduction",
+    "2 Model Soups",
+    "3 Related Work",
+    "4 Experiments",
+    "5 Analysis",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:soups",
+    "sec:experiments",
+    "sec:analysis"
+  ],
+  "abstract_snippet": "--- Page 1 --- Model soups: averaging weights of multiple ﬁne-tuned models improves accuracy without increasing inference time Mitchell Wortsman 1 Gabriel Ilharco 1 Samir Yitzhak Gadre 2 Rebecca Roelofs 3 Raphael Gontijo-Lopes 3 Ari S.",
+  "what_the_paper_supports": "Model soups average the weights of multiple fine-tuned models to improve accuracy without inference-time cost. This is a concrete weight-space composition operation (Function OS node 8 ComposerRouter, GAP-016). Supports the ignition claim that multiple function instances can be combined via arithmetic in weight space, and that the resulting artifact is a single model (node 4 Artifact). It also relates to GAP-019 because it relies on a pool of versioned fine-tuned models.",
+  "what_the_paper_does_not_support": "The averaging is empirical and depends on models lying in the same low-error basin. It does not provide a formal equivalence criterion (GAP-017), a specification language (GAP-015), or an effect system (GAP-018). It does not address probabilistic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (34 pages, 1616512 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

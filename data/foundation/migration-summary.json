@@ -1,0 +1,43 @@
+{
+  "source_commit": "e55b1d366195fd1cc05babf2010774862157924b",
+  "method": "conservative_non_destructive_migration_projection_with_separate_adjudication_overrides",
+  "migration_coverage": "complete",
+  "semantic_adjudication": "incomplete",
+  "classification_basis": "TITLE_HEURISTIC for provisional migration placeholders; SOURCE_TEXT for adjudication overrides",
+  "counts": {
+    "formal_objects": 622,
+    "formal_cases": 806,
+    "candidate_cases": 22,
+    "pending_claims": 34,
+    "scope_entities": 678,
+    "verified_legacy_counterexamples": 0,
+    "benchmark_and_core_counterexamples": 4,
+    "object_types": {
+      "PREDICATE": 18,
+      "STATE_TRANSITION": 82,
+      "ALGORITHM": 1,
+      "METRIC": 77,
+      "RELATION": 229,
+      "MECHANISM_MODEL": 60,
+      "PROBABILISTIC_MODEL": 9,
+      "FORMAL_PROPOSITION": 43,
+      "OPTIMIZATION_PROBLEM": 1,
+      "ARGUMENT_SCHEMA": 25,
+      "NATURAL_LANGUAGE_CANDIDATE": 77
+    },
+    "classification_status": {
+      "ADJUDICATED": 621,
+      "PROVISIONAL": 1
+    }
+  },
+  "dedup_key": [
+    "asset_kind",
+    "normalized_namespace",
+    "normalized_id"
+  ],
+  "representation_key": [
+    "entity_key",
+    "path",
+    "git_blob_sha"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "snapshot_id": "121A-snapshot-20260714",
+  "created_utc": "2026-07-14T01:13:00Z",
+  "workspace_path": "/tmp/wscf-121",
+  "kimi_head": "83aa4d94c986274da9dc97e3d83fc970467ec5ba",
+  "kimi_branch": "records/ignition-121-fulltext-resolver-and-120-repair-20260714",
+  "frozen_baseline": "f423361aab5736aecbf3dcb87ff421a5cfb13a39",
+  "merge_base": "f423361aab5736aecbf3dcb87ff421a5cfb13a39",
+  "kimi_commits": [
+    {"sha": "5d33b72", "message": "feat(120): add openalex_client.py — free academic search, DOI verification, retraction check, abstract restoration"},
+    {"sha": "9361c1e", "message": "121: legal fulltext resolver, 30 evidence cards, GAP re-adjudication, validator"},
+    {"sha": "83aa4d9", "message": "121: add task artifact summary"}
+  ],
+  "tar_snapshot": "/tmp/wscf-121-kimi-snapshot.tar.gz",
+  "tar_size_bytes": 171127808,
+  "git_status": "clean (no uncommitted changes)",
+  "git_stash": "empty",
+  "total_files_changed_from_baseline": 60,
+  "total_insertions": 4014,
+  "total_deletions": 0,
+  "redline_files_modified": 0,
+  "psi0_modified": false,
+  "frozen_v1_085_modified": false,
+  "function_table_modified": false,
+  "case_table_modified": false
+}

@@ -1,0 +1,25 @@
+{
+  "task_id": "IGNITION-20260715-121Q8",
+  "step": "003",
+  "status": "FOUNDATION_FULL_CHAIN_SUCCESS",
+  "local_validation": {
+    "lean": "PASS: cd formal/lean && lake env lean Foundation.lean",
+    "adjudicate_core": "PASS ADJUDICATION_CHECK_OK",
+    "migrate_legacy": "PASS MIGRATION_CHECK_OK",
+    "validate_foundation": "PASS ALL_FOUNDATION_VALID",
+    "verify_core_claims": "PASS ALL_CORE_CLAIMS_REPLAYED",
+    "verify_079": "PASS ALL_079_TRUTH_AUDIT_CHECKS_VALID",
+    "validate_080": "PASS ALL_080_SOURCE_TEXT_ADJUDICATION_CHECKS_VALID",
+    "unit_tests": "PASS 7 tests",
+    "git_diff_check": "PASS"
+  },
+  "github_actions": {
+    "workflow": "foundation-validation",
+    "run_id": 29398628151,
+    "head_sha": "8fb6776e83575264a414df08763aa07efdfc7bde",
+    "conclusion": "success",
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/actions/runs/29398628151"
+  },
+  "foundation_failure_from_121q7": "resolved",
+  "frozen_assets_modified": false
+}

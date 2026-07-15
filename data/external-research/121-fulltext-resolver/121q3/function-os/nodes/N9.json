@@ -1,0 +1,73 @@
+{
+  "node_id": "N9",
+  "canonical_name": "VersionedRegistry",
+  "canonical_definition": "Central registry of all function artifacts with version history and provenance",
+  "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+  "inputs": "new_artifact + metadata",
+  "outputs": "registered_artifact_with_version",
+  "preconditions": "See node registry (Step 009)",
+  "invariants": [
+    "No FROZEN/FINAL/PROVEN status"
+  ],
+  "strongest_verified_sources": [
+    {
+      "source_id": "S120-035",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models"
+    },
+    {
+      "source_id": "S120-039",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy Without Increasing Inference Time"
+    },
+    {
+      "source_id": "S120-045",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Editing Models with Task Arithmetic"
+    }
+  ],
+  "partial_or_analogical_sources": [
+    {
+      "source_id": "S120-031",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Effective LoRA Adapter Routing using Task Representations"
+    },
+    {
+      "source_id": "S120-036",
+      "identity": "NOT_FOUND",
+      "semantic": "PARTIAL",
+      "title": "Task-Aware LoRA Adapter Composition via Similarity Retrieval in Vector Databases"
+    },
+    {
+      "source_id": "S120-065",
+      "identity": "NOT_FOUND",
+      "semantic": "PARTIAL",
+      "title": "MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation"
+    },
+    {
+      "source_id": "S120-070",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models"
+    }
+  ],
+  "counterevidence": "No unified provenance model across representation types.",
+  "limitations": "Interoperability and provenance standards needed.",
+  "linked_gaps": [
+    "GAP-018",
+    "GAP-019"
+  ],
+  "candidate_interface": "Registry: asset_id, name, version, hash, type, provenance, dependencies, status",
+  "candidate_status": "SUPPORTED_CANDIDATE",
+  "unresolved_questions": "Interoperability and provenance standards needed.",
+  "prohibited_wording": [
+    "Do not claim FROZEN/FINAL/PROVEN",
+    "Do not claim papers verify N9",
+    "Do not claim external research solves N9"
+  ],
+  "timestamp": "2026-07-14T17:57:23Z"
+}

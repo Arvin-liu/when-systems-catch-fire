@@ -1,0 +1,43 @@
+{
+  "step": "004",
+  "generated_at": "2026-07-15T13:25:14+08:00",
+  "executor": "QClaw",
+  "model": "Hy3",
+  "local_unittest_pass": true,
+  "local_pytest_pass": true,
+  "local_pytest_total": 164,
+  "importable_counts": {
+    "IMPORTABLE_NOW": 7,
+    "NEEDS_MANUAL_SPEC": 19,
+    "OUT_OF_SCOPE": 9,
+    "BLOCKED_NON_SYMBOLIC": 0
+  },
+  "sum_35": 35,
+  "counts_consistent": true,
+  "real_asset_read": [
+    {
+      "asset_id": "IGN-ASSET-001",
+      "real_file_present": false,
+      "importer_status": "BLOCKED"
+    },
+    {
+      "asset_id": "IGN-ASSET-002",
+      "real_file_present": false,
+      "importer_status": "BLOCKED"
+    }
+  ],
+  "real_migration_completed": false,
+  "note_real_migration": "120 asset md files absent -> BLOCKED; no fake migration",
+  "scan_eval_exec": [],
+  "scan_subprocess": [
+    "function-os-candidate/v0.2/function_os/n1_safe_expression_dsl.py:4"
+  ],
+  "scan_shell": [],
+  "scan_network": [],
+  "scan_absolute_path": [],
+  "tracked_cache_hits": [],
+  "json_parse_errors": [],
+  "credential_scan_hits": [],
+  "verdict": "ALL_LOCAL_CHECKS_PASS",
+  "ci_note": "local PASS is separate evidence from GitHub function-os-ci; CI must be green independently"
+}

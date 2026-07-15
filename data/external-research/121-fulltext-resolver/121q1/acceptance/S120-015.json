@@ -1,0 +1,32 @@
+{
+  "source_id": "S120-015",
+  "step_number": 101,
+  "cx_step": 101,
+  "review_status": "BLOCKED_INSUFFICIENT_TEXT",
+  "claim_support_status": "UNRESOLVED",
+  "content_access_status": "NOT_LOCATED",
+  "evidence_tier": "UNABLE_TO_ACCESS",
+  "supersedes": "S120-015-provisional-121",
+  "_acceptance_layer": "121q1/acceptance/S120-015.json — overlay, no historical card existed at baseline",
+  "canonical_title": "Hypernetworks for Specialized Instructions (UNVERIFIABLE)",
+  "authors": "Anonymous",
+  "year": 2025,
+  "venue": "arXiv (claimed, unverified)",
+  "doi_or_identifier": "arXiv:2506.xxxxx (TRUNCATED)",
+  "url": "unknown",
+  "sha256": "pending",
+  "file_size_bytes": 0,
+  "blocking_reason": "CANNOT_LOCATE_SOURCE — Title returns zero matches on arXiv API, OpenAlex, Semantic Scholar, and web search. Authors=Anonymous, arXiv ID truncated to '2506.xxxxx', url=unknown. No actionable bibliographic anchor for fulltext retrieval.",
+  "identity_verification_attempts": {
+    "arxiv_api_title": "ZERO RESULTS",
+    "arxiv_api_keyword": "ZERO RESULTS (hypernetwork + specialized instruction + LLM)",
+    "openalex_api": "ZERO RESULTS",
+    "web_search": "ZERO RELEVANT RESULTS"
+  },
+  "integrity_flag": "SYSTEMATIC_SOURCE_IDENTITY_INTEGRITY_RISK",
+  "integrity_note": "Batch pattern: S120-011 (wrong arXiv ID), S120-012 (wrong arXiv ID + fabricated authors), S120-014 (correctable metadata), S120-015 (completely unverifiable). 4/5 cards have metadata identity issues.",
+  "next_action": "MANUAL_INTERVENTION_REQUIRED — GPT/Codex must provide correct arXiv ID, DOI, title, or author list before independent fulltext verification can resume.",
+  "reviewed_by_model": "qclaw/pool-deepseek-v4-pro",
+  "reviewed_at": "2026-07-14T15:37:56Z",
+  "review_batch": "ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714"
+}

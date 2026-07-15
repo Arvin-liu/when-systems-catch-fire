@@ -1,0 +1,299 @@
+{
+  "source_id": "S120-067",
+  "canonical_title": "SkillSmith: Co-Evolving Skills and Tools for Self-Improving Agent Systems",
+  "authors": [
+    "Yangbo Wei",
+    "Zhen Huang",
+    "Shaoqiang Lu",
+    "Junhong Qian",
+    "Qifan Wang",
+    "Chen Wu",
+    "Lei He"
+  ],
+  "year": 2026,
+  "version": "arXiv:2606.01314v1 preprint, submitted 2026-05-31",
+  "doi_or_identifier": "arXiv:2606.01314v1",
+  "identifier": "cs.AI",
+  "url": "https://arxiv.org/abs/2606.01314v1",
+  "source_family": 10,
+  "source_family_name": "agent skills and reusable capability libraries",
+  "license": "CC BY 4.0",
+  "sha256": "c0da7d34903a1838675b094b66d18293791bc0ba11d908a865dbfd25aa8b2df3",
+  "file_size_bytes": 7098713,
+  "page_count": 25,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "registered_url": "https://arxiv.org/pdf/2606.01314",
+    "versioned_url": "https://arxiv.org/pdf/2606.01314v1",
+    "sha256": "c0da7d34903a1838675b094b66d18293791bc0ba11d908a865dbfd25aa8b2df3",
+    "file_size_bytes": 7098713,
+    "page_count": 25,
+    "registered_pdf_visual_check": "all 25 pages rendered and inspected; equations, six main figures, five tables, three algorithms, five lifecycle definitions, four case studies and cost appendices are present and legible",
+    "arxiv_metadata": "first and only public version submitted 2026-05-31 16:01:19 UTC; seven named authors; cs.AI",
+    "source_archive": {
+      "url": "https://arxiv.org/e-print/2606.01314v1",
+      "sha256": "d1d706a99a7d266be3f06eead1a2bc0568f93b2fd0c21c2fcdd9e246a9b95287",
+      "contents": "LaTeX, bibliography, style and six raster figures; no SkillSmith implementation, prompts, evolved asset states, benchmark inputs, model configuration or result logs"
+    },
+    "artifact_link_status": "the only GitHub links are to WildClawBench and the Pi project cited as inspiration; no SkillSmith repository or experiment archive is linked"
+  },
+  "sections_reviewed": [
+    "abstract, motivation, contributions and headline results",
+    "external-state, skill, tool, anti-pattern and execution definitions",
+    "budgeted bundle-proposal optimization formulation",
+    "unified reflection, Tool-Smith operations and atomic bundle rationale",
+    "synergy-aware merge and lineage selection",
+    "ecological observations, Lotka-Volterra update, retrieval and instance Pareto front",
+    "progressive unit/integration/regression validation, retirement and epitaphs",
+    "OfficeQA, SealQA and WildClawBench setup, main results and ablations",
+    "scaling, 100-round resilience and four case studies",
+    "conclusion, limitations and complete references",
+    "three algorithms and two claimed theoretical results",
+    "five tool lifecycle definitions, all dataset splits, initial libraries and scorers",
+    "anti-pattern schema/retrieval/veto/retirement and computational-cost analysis",
+    "complete arXiv LaTeX source and official metadata"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "abstract and section 1, pp. 1-3; Figure 1",
+      "checked_for": "skill-tool co-evolution, interaction matrix, anti-pattern memory, typed operations and headline performance claims"
+    },
+    {
+      "anchors": "section 2, pp. 3-4; equations 1-3",
+      "checked_for": "Sigma=(skills,tools,failures), versioned skill metadata, typed tool contract, trajectories, black-box score, validation objective and rollout budget"
+    },
+    {
+      "anchors": "section 3.1, pp. 4-5",
+      "checked_for": "reflection signals, vertical/horizontal attribution, five tool operations, anti-pattern veto, lineage merge and atomic validity claim"
+    },
+    {
+      "anchors": "section 3.2, pp. 6-7; equations 4-7",
+      "checked_for": "category residuals, individual/coactivation association, ecological dynamics, retrieval score and Pareto candidate selection"
+    },
+    {
+      "anchors": "section 3.3, p. 7; Algorithm 1",
+      "checked_for": "unit/integration/regression stages, state admission, utility update, failure recording and retirement"
+    },
+    {
+      "anchors": "sections 4.1-4.2, pp. 7-8; Tables 1-2; Figure 4",
+      "checked_for": "benchmark/model counts, final denominators, skill/tool/eco/anti ablations, regression/error claims and WCB evolution curves"
+    },
+    {
+      "anchors": "section 4.3, pp. 8-10; Figures 5-7",
+      "checked_for": "correlational scaling factors, injected perturbations, library growth, recovery and OfficeQA case study"
+    },
+    {
+      "anchors": "appendix A, pp. 13-17; equations 8-16; Algorithms 1-3",
+      "checked_for": "set-inclusion theorem, unsupported perfect evolved tool, unbounded mutation term and claimed polynomial search bound"
+    },
+    {
+      "anchors": "appendix B, p. 18; Definitions 1-5",
+      "checked_for": "WRAP/EDIT/COMPOSE/SPLIT/RETIRE semantics, signatures, dependency cascade, backwards compatibility and epitaphs"
+    },
+    {
+      "anchors": "appendix D, pp. 18-22; Tables 3-4",
+      "checked_for": "declared train/validation/test splits, WCB repeated same-task protocol, hyperparameters, scorers, initial skills and tool interfaces"
+    },
+    {
+      "anchors": "appendices E-F, pp. 22-25; equations 17-22 and Table 5",
+      "checked_for": "LLM-generated attribution, embedding retrieval/veto thresholds, anti-pattern counts and model-call cost accounting"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "An agent's mutable external capability state can be modeled as versionable skills, executable typed tools and structured anti-pattern memory, then evolved through validated atomic bundles.",
+      "anchors": "sections 2-3"
+    },
+    {
+      "claim": "Five constrained tool lifecycle operations and cascading skill updates allow tool-level defects to be repaired while avoiding invalid intermediate configurations.",
+      "anchors": "section 3.1; appendix B"
+    },
+    {
+      "claim": "Observational activation residuals and a Lotka-Volterra-inspired interaction update capture skill complementarity/conflict and improve retrieval, mutation, merge and retirement decisions.",
+      "anchors": "section 3.2; equations 4-7"
+    },
+    {
+      "claim": "Progressive unit, integration and regression checks plus anti-pattern veto reduce tool errors/regressions and sustain evolution without uncontrolled library bloat.",
+      "anchors": "section 3.3, sections 4.2-4.3 and appendix E"
+    },
+    {
+      "claim": "Author-reported evaluations across OfficeQA, SealQA, WildClawBench and Qwen3.5 scales show gains over fixed/skill-only baselines and lower total evolution cost in one setting.",
+      "anchors": "section 4 and appendix F"
+    }
+  ],
+  "function_concept_used_by_paper": "A skill is a versioned task-facing strategy tuple containing metadata, workflow, resources and utility; it orchestrates multiple typed executable tools. A tool is interface description, implementation and input/output signature. Skills and tools form a dependency graph and are jointly mutated by atomic bundles; failures become reusable anti-pattern functions of signature, attribution and remedy. This is a practical external-policy function ecosystem rather than a formal denotational function model.",
+  "representation_or_carrier": "The primary carrier is Sigma_t=(S_t,T_t,F_t): version-tagged skill records, typed executable tool records and embedded failure/epitaph records. Evolution adds a Pareto front of full system states with ancestry, per-instance scores, skill utilities and an observational interaction matrix. Trajectories carry actions/observations; proposal bundles carry typed skill/tool diffs; unit/integration/regression results gate state admission. The paper does not publish the concrete serialization, repository layout or any actual state snapshot.",
+  "specification_language": "Skills expose name, trigger, version, workflow/resources and utility; tools expose descriptions, executable bodies and I/O signatures; failure records expose signature, causal attribution and remedy/bundle ID. WRAP, EDIT, COMPOSE, SPLIT and RETIRE provide lifecycle verbs with dependency-cascade prose. Missing are a machine-readable schema, semantic version policy, executable skill pre/postconditions, general effect/permission declarations, dependency constraints, migration compatibility, signatures/approvals, secret/network scope and rollback records.",
+  "compiler_or_generator": "An LLM reflector diagnoses failures and proposes arbitrary combinations of skill edits plus Tool-Smith typed operations; implementations and unit tests are LLM-generated, then integrated and regression-checked. The five operation labels constrain intent but not the code emitted inside WRAP/EDIT/COMPOSE/SPLIT. No code-generation prompt, static checker, sandbox, proof of diff conformance, deterministic build, artifact hash or compiler-preservation result is supplied.",
+  "interpreter_or_runtime": "For a task, the agent retrieves skills by semantic relevance, dynamic utility, pair interaction and estimated cost, then follows workflows and invokes tools. Full candidate states are executed on minibatches and accepted into a Pareto population only after reported checks. Case studies involve document parsing, web search, Slack/Git/file tools and multimodal processing, but appear to be benchmark/simulated operations; runtime permissions, isolation, human approval and external transaction behavior are unspecified.",
+  "composition_rule": "Skills compose by co-activation and shared tools; bundle mutations update interdependent skills/tools together; COMPOSE chains/parallelizes tools; SPLIT rewrites dependents; lineage merge selects higher-utility skill versions and flags negative observed interactions. Atomicity is defined as one state transition U but no transactional implementation or rollback is shown. Observational beta values are not causal compatibility proofs, and tool composition type/effect correctness is not mechanically established.",
+  "state_or_effect_model": "Tool calls produce environmental effects and trajectories; bundles mutate skills, executable tools and dependencies; retirement creates durable epitaphs; external perturbations can corrupt tools. Unit/integration/regression checks provide an operational safety layer. However, the system lacks formal effects, capability/permission boundaries, isolation, idempotence, compensation, rollback, secret handling, network policy, code signing and human approval—material omissions for self-modifying Slack, Git, web and file tools.",
+  "uncertainty_model": "Skill utility and pair synergy are exponential-moving-average associations computed from nonrandom skill activation logs after subtracting a category mean. Zero is assigned when pair co-occurrence is below five; values are clipped and then used as if complementarity/conflict signals. Activation, task difficulty, model behavior and evolving policies confound these estimates, and no causal design, standard error, confidence interval, calibration or sensitivity analysis is given. SealQA uses three votes from one frozen LLM judge; other headline results lack repeated model-run uncertainty.",
+  "validation_regime": {
+    "formal": "one valid set-inclusion monotonicity observation plus two claimed theorems whose stronger conclusions do not follow from their assumptions; no mechanized proof",
+    "progressive_checks": "reported tool unit tests, end-to-end integration tests and Dval regression checks gate candidates; exact test cases, coverage, failure logs and rollback receipts are not released",
+    "officeqa_claimed_split": "24 train, 17 validation and 205 held-out test questions out of 246; appendix claims Table 1 uses only held-out test",
+    "officeqa_denominator_conflict": "Table 1 explicitly labels 246 questions and each percentage/count matches 246, e.g. 197/246=80.1 and 152/246=61.8, not the claimed 205-test denominator",
+    "sealqa_claimed_split": "11 train, eight validation and 92 test questions out of 111",
+    "sealqa_denominator_conflict": "Table 1 labels 111 questions and each value matches 111, e.g. 55/111=49.5 and 34/111=30.6, not the claimed 92-test denominator",
+    "wildclawbench": "38 tasks across four categories, ten trials per task per day over six day/night evolution rounds; no disjoint train/validation/test split is described, so evolution and reporting reuse the task pool",
+    "ablation": "on Qwen3.5-122B, full versus skill-only/free-tool/no-eco/no-anti variants report SealQA/WCB, regressions, final library size and tool errors; metric denominators and run dispersion are absent",
+    "resilience": "100-round combined-pool experiment injects 15 harder tasks at iteration 30 and replaces three tool bodies with no-ops at iteration 60; this constructed perturbation directly favors the only method allowed to repair tools",
+    "anti_pattern": "14 veto fires reportedly block 11 near-duplicate retired proposals; false vetoes, missed matches and independent causal labels are not reported",
+    "cost": "one OfficeQA 122B run reports 51.3 calls/iteration for 13 iterations versus 42.6 for 18, but call/token arithmetic is aggregate/author-reported and lacks repeated variance or monetary/hardware cost",
+    "reproducibility": "no SkillSmith code, reflection prompts, generated tools/tests, versioned states, split lists, Qwen checkpoints, decoding settings, task outputs, judge records or raw trajectories are public"
+  },
+  "equivalence_notions": [
+    {
+      "notion": "atomic valid-state transition",
+      "support": "A_BUNDLE_IS_INTENDED_TO_MOVE_FROM_ONE_SKILL_TOOL_DEPENDENCY_VALID_STATE_TO_ANOTHER_WITHOUT_EXPOSING_INTERMEDIATE_STATES",
+      "boundary": "Atomicity is mathematical notation; no transaction manager, staged deployment, failure rollback or external-effect compensation is implemented in the paper."
+    },
+    {
+      "notion": "lineage merge identity",
+      "support": "COMMON_ANCESTRY_AND_PER_SKILL_VERSION_COMPARISON_SELECT_UNCHANGED_OR_HIGHER_UTILITY_DESCENDANTS",
+      "boundary": "Utilities are confounded observational estimates; tools and failure memory are not fully specified in Algorithm 3's merge, and behavioral equivalence is untested."
+    },
+    {
+      "notion": "interaction compatibility",
+      "support": "CO_ACTIVATION_RESIDUALS_ABOVE_THE_BETTER_SINGLE_ACTIVATION_MEAN_ARE_LABELED_COMPLEMENTARY_AND_NEGATIVE_VALUES_CONFLICTING",
+      "boundary": "Nonrandom retrieval and evolving tasks/policies make beta associational, not a causal or semantic compatibility relation."
+    },
+    {
+      "notion": "regression preservation",
+      "support": "CANDIDATES_ARE_REPORTEDLY_TESTED_ON_DVAL_AND_PARENT_STRENGTH_FAMILIES_BEFORE_PARETO_ADMISSION",
+      "boundary": "The released paper provides no per-version regression suite/results, and headline denominators contradict the declared held-out split."
+    },
+    {
+      "notion": "anti-pattern functional similarity",
+      "support": "EMBEDDING_SIMILARITY_TO_FAILURE_SIGNATURES_RETRIEVES_DIAGNOSTICS_OR_VETOES_CLOSED_PATTERNS",
+      "boundary": "Embedding proximity cannot decide functional equivalence; thresholds have no precision/recall or safety analysis."
+    }
+  ],
+  "lifecycle_and_provenance": "SkillSmith is unusually explicit about skill versions, state lineages, bundle IDs, retirement patience, tool supersession and epitaphs, and therefore supplies strong lifecycle design evidence. It nevertheless omits concrete serialization, immutable content hashes, source author/model/prompt, timestamps, dependency/environment locks, test receipts, approvals, compatibility ranges, release channels, deployment status, rollback/restore mechanics and security review. Tool records do not include a version field in the formal tuple even though case studies call them v1/v2. The paper publishes no evolved state or registry, so claimed inspectability/transferability/version governance cannot be independently audited.",
+  "limitations_and_failure_boundaries": [
+    "The exact PDF is a first-version preprint and no SkillSmith system artifact is released.",
+    "Table 1 uses all 246 OfficeQA and all 111 SealQA questions, directly contradicting the appendix claim that final results use only 205/92 held-out test questions.",
+    "Because train and validation questions are included in the headline denominator, the reported values cannot be treated as exclusively held-out generalization results.",
+    "WildClawBench evolves and reports over the same 38-task pool without a described held-out set; repeated improvement can reflect task-specific adaptation.",
+    "No headline confidence intervals, repeated seeds or significance tests support words such as significantly or monotonically beyond displayed point estimates.",
+    "Exact Qwen3.5 checkpoint identifiers, serving stack, prompts, temperature, seeds, quantization and hardware are absent.",
+    "The ecological utility difference compares nonrandom activated versus nonactivated executions and remains confounded after subtracting category means.",
+    "Pairwise beta estimates require only five co-occurrences, have no uncertainty/shrinkage beyond zeroing sparse pairs and cannot establish complementarity or conflict causally.",
+    "Positive/negative interaction estimates feed retrieval and mutation, creating feedback loops that can reinforce early noise; clipping masks rather than resolves instability.",
+    "Cold-start pair interactions are zero and the authors explicitly acknowledge sparse-cooccurrence noise.",
+    "The radar-chart factor gains are separate high-tercile correlations across mutually correlated complexity variables, not factorized causal contributions.",
+    "The instance Pareto algorithm does not show how the stated capacity k=3 is enforced, and tie-heavy per-instance winners can expand/oscillate.",
+    "LLM-generated causal attributions in anti-pattern records are not independently verified; false attribution can veto useful repairs.",
+    "Fourteen vetoes and 11 blocks do not report false-positive/false-negative rates, downstream harm or the three nonblocked outcomes.",
+    "Typed lifecycle labels constrain the operation category, not the arbitrary LLM-generated code inside tool modifications.",
+    "Progressive validation has no published unit-test generation method, coverage, adversarial tests, flaky-test policy or raw regression record.",
+    "Atomic bundle application is not shown to be transactional; external Slack/Git/web/file effects may occur before validation and require compensation/rollback.",
+    "Self-modifying executable tools create supply-chain and privilege-escalation risk, but sandboxing, permissions, secrets, signing and human approval are absent.",
+    "COMPOSE retains original tools, SPLIT rewrites all dependents and RETIRE removes tools, yet compatibility/migration failure handling is not specified.",
+    "Theorem A.1 validly observes a larger feasible set cannot have a worse optimum, but strict superiority is not proved: Assumption A.2 does not guarantee an evolved T* exists or solves hard and remaining tasks perfectly.",
+    "The proof's step from a missing capability to a uniform epsilon error lower bound is asserted rather than derived, and maxima/existence/compactness conditions are not supplied.",
+    "Theorem A.2 does not prove polynomial boundedness: Delta-S-dependent remains an unbounded LLM code/prompt mutation space, k is not proved constant and five operation names do not bound emitted code.",
+    "The constructed no-op tool corruption at iteration 60 advantages the method uniquely permitted to edit tools and does not establish resilience to natural distribution/API drift.",
+    "Regression rate and tool-error rate definitions/denominators are too compressed to independently validate the reported 2.1 and 3.2 percent values.",
+    "Cost Table 5 reports one run and fractional average call totals without uncertainty; the conditional gamma>rho proposition is algebraic, not a general cost guarantee.",
+    "No raw code, states, split manifests, trial logs, judge votes, costs or artifacts permit reproduction of the numerical or lifecycle claims.",
+    "The framework does not provide probabilistic semantics, neural-weight composition or general cross-representation equivalence."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not establish clean held-out superiority on OfficeQA or SealQA because its published denominators include training and validation data.",
+    "It does not prove strict algorithmic superiority of joint evolution or polynomial search complexity.",
+    "It does not prove ecological beta values are causal skill synergy/conflict or that embedding similarity identifies functional anti-pattern equivalence.",
+    "It does not demonstrate safe transactional self-modification of real tools or a reproducible versioned registry.",
+    "It does not empirically validate ignition, weight-space composition or stochastic ignition semantics."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "Versioned skill metadata/workflow/resources/utility and typed tool descriptions/implementations/signatures give a concrete bounded dual FunctionSpec pattern."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "LLM-generated typed tool/skill bundle mutations implement a generator, but operation labels do not constrain code and no compiler correctness or weight composition appears."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Regression checks, lineage merge and observational pair compatibility offer local comparisons, not semantic/behavioral equivalence checking."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Tools, trajectories, atomic bundles and progressive checks make effects operationally visible, while permissions, external transactions, effect contracts and rollback are missing."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Versions, lineages, bundle IDs, Pareto states, retirement and epitaphs are strong registry primitives, but no actual immutable/provenance-complete registry artifact is published."
+    },
+    "GAP-020": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Ecological dynamics are a heuristic utility update, not probabilistic or stochastic semantics for skills or ignition."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Skill and tool tuples expose versioned workflows/resources and typed executable interfaces."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Sigma state, libraries, failure records, interactions, Pareto lineages, bundles and trajectories are explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Reflector and Tool-Smith generate coordinated diffs/code/tests without released prompts, static enforcement or preservation proof."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Versioned skills/tools are conceptual/executed artifacts, but none of the evaluated states or implementations is released."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "An agent retrieves skill workflows and invokes typed tools to execute multi-step tasks."
+    },
+    "N6_ExecutionTrace": {
+      "status": "CONFIRMED",
+      "reason": "Action-observation trajectories, activation logs, scores, failures and bundle histories drive evolution and validation."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Unit/integration/regression stages are explicit, but receipts are absent and headline held-out denominators are contradictory."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Semantic/utility/interaction/cost routing and lineage/tool composition are concrete, but beta is confounded and composition safety is unenforced."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Version, lineage, bundle, retirement and epitaph concepts are unusually strong, but hashes, provenance, approvals, rollback and public registry state are missing."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "NO_PRIOR_SEMANTIC_EVIDENCE_CARD",
+    "verdict": "NEW_CODEX56_EXTREME_CARD_WITH_PARTIAL_SUPPORT",
+    "corrections": [
+      "Verified the complete three-part external-state, tool lifecycle, ecological routing, validation, lineage and anti-pattern design.",
+      "Detected that every OfficeQA/SealQA headline percentage is computed over the full 246/111 datasets rather than the claimed 205/92 held-out test sets.",
+      "Separated observational coactivation associations from causal synergy/conflict.",
+      "Rejected the claimed strict-superiority proof because existence/perfect performance of an evolved tool is assumed, not established.",
+      "Rejected the claimed polynomial search proof because the dependent-skill/code mutation space remains unbounded.",
+      "Bounded atomicity to a proposed state transition rather than an implemented transaction/rollback guarantee.",
+      "Separated constructed WCB perturbations and same-pool evolution from held-out robustness.",
+      "Verified exact paper/source bytes and recorded the absence of SkillSmith code, states, prompts, splits and trial receipts."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "PARTIAL",
+  "partial_projection": "SkillSmith supplies strong architectural evidence for a governed external FunctionSpec-Representation-Interpreter-ExecutionTrace ecosystem: skills, typed tools and negative memory co-evolve through versioned lineages, atomic proposals, progressive checks, interaction-aware routing and retirement. Compiler, Validator, ComposerRouter and VersionedRegistry remain partial because code/effects are unenforced, interaction signals are confounded, theoretical claims fail audit, headline held-out denominators conflict and no implementation or state receipts are public.",
+  "source_specific_reasoning": "PARTIAL is mandatory. The full source contains valuable governance primitives, but its strongest empirical and theoretical supports do not survive independent audit: OfficeQA/SealQA counts use all data despite a held-out-only claim, WCB adapts on the reporting pool, pair effects are observational, strict superiority/polynomial bounds do not follow, and safe atomic self-modification is not implemented or released. The card therefore preserves the architecture without treating author plots, model review or flawed proofs as validation.",
+  "projection_boundary": "These are 121CX projections from the complete exact 25-page arXiv v1 PDF, all rendered pages, complete CC BY source archive and official arXiv metadata. This model review is not a mechanized theorem proof, independent audit of unreleased code/state, reproduction of OfficeQA/SealQA/WildClawBench, safety validation of self-modifying tools, or empirical validation of ignition.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T07:24:00Z"
+}

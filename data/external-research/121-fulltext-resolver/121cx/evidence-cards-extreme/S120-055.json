@@ -1,0 +1,153 @@
+{
+  "source_id": "S120-055",
+  "canonical_title": "Handlers in Action",
+  "authors": ["Ohad Kammar", "Sam Lindley", "Nicolas Oury"],
+  "year": 2013,
+  "version": "author PDF created 2013-07-19 corresponding to ICFP 2013; nearest prepublication repository commit also reviewed",
+  "doi_or_identifier": "10.1145/2500365.2500590",
+  "identifier": "DOI:10.1145/2500365.2500590",
+  "url": "https://denotational.co.uk/publications/kammar-lindley-oury-handlers-in-action.pdf",
+  "source_family": 8,
+  "source_family_name": "algebraic effects and handlers",
+  "license": "author-owned paper with publication rights licensed to ACM and personal/classroom-copy permission stated in the PDF; repository contains no license file",
+  "sha256": "ae77ba7066959571e55d4dce586bde3776fc553bf8240657bd188617544716c0",
+  "file_size_bytes": 464059,
+  "page_count": 14,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "publication_identity": "ICFP 2013, Boston, Massachusetts, September 25-27, pp. 145-158",
+    "pdf_visually_checked_pages": [8, 13, 14],
+    "code_artifact": {
+      "repository": "https://github.com/slindley/effect-handlers",
+      "reviewed_commit": "bf45a090978319fce4c95f034ec87c1e908c0bf5",
+      "commit_date": "2013-06-19",
+      "commit_subject": "update comments",
+      "selection_basis": "last commit before the 2013-07-19 PDF creation date",
+      "release_status": "no tags and no immutable paper release",
+      "tracked_files": 77,
+      "implementation_lines": 9207,
+      "languages": ["Haskell", "OCaml", "SML", "Racket"],
+      "paper_aligned_haskell_material": "Continuation, free, codensity and shallow handler implementations; open-handler Template Haskell/quasiquote machinery; state, choice, parsing, pipes, iteratees, HANSEI, AOP and other examples; four Criterion benchmark drivers.",
+      "packaging_boundary": "No cabal file, Stack file, Makefile, dependency lock, license file, release tag, build instructions or captured benchmark outputs are present at the reviewed commit.",
+      "runtime_boundary": "GHC, Cabal, Stack, OCaml, SML and Racket were unavailable on this machine, so the historical artifact could not be built or rerun.",
+      "paper_code_mismatches": [
+        "The paper states n = 20 for the n-Queens benchmark, while the only paper-era TestQueens.hs commit fixes size = 22.",
+        "The artifact contains a Haskell AOP functional-dependency error and AOPExtra typing/module errors that were fixed in 2014 after GHC 7.8 exposed them.",
+        "The README points to a March 2013 draft and does not bind the repository snapshot to the final tables."
+      ]
+    }
+  },
+  "sections_reviewed": [
+    "motivation and separation of effect signatures from interpretations",
+    "state, open handlers, choice/failure, word count, tail, pipes and shallow-handler examples",
+    "alternative handler views and lambda-eff syntax",
+    "type-and-effect system, small-step operational semantics, termination and type-soundness proof sketches",
+    "open-handler and shallow-handler extensions",
+    "free, codensity and continuation monad Haskell encodings",
+    "type-class forwarding, implementation limitations and delimited-continuation ports",
+    "dynamic versus static operations",
+    "all state, pipes, n-Queens and AOP performance results",
+    "paper-era multi-language repository at exact historical commit"
+  ],
+  "page_or_section_anchors": [
+    {"anchors": "§§1-2.3, pp. 1-5", "checked_for": "abstract operations, closed/open handlers, forwarding, handler composition and multi-shot choice"},
+    {"anchors": "§§2.4-2.7, pp. 5-7", "checked_for": "stream instrumentation, tail, deep/shallow pipes and relationships to exceptions, delimited continuations and free-monad folds"},
+    {"anchors": "§§3.1-3.2 and Figs. 1-4, pp. 7-9", "checked_for": "lambda-eff types, effect signatures, reduction, determinism, termination and type soundness"},
+    {"anchors": "§§3.3-3.4, p. 9", "checked_for": "open-handler forwarding, row-polymorphism direction and shallow semantics"},
+    {"anchors": "§§4-4.2 and Figs. 5-6, pp. 9-11", "checked_for": "free/continuation encodings, Handles functional dependency, forwarding and Haskell limitations"},
+    {"anchors": "§§4.3-4.4, pp. 11-12", "checked_for": "delimited-continuation implementations and static/dynamic operation tradeoffs"},
+    {"anchors": "§5 and Appendix A, pp. 11, 13-14", "checked_for": "hardware, compiler, Criterion sampling, all benchmark tables and scaling caveats"},
+    {"anchors": "repository commit bf45a09", "checked_for": "paper-era code coverage, benchmark constants, later fixes, packaging and reproducibility"}
+  ],
+  "paper_core_claims": [
+    {"claim": "Separating abstract operation signatures from handlers permits programs to be written independently of concrete effect interpretations and permits handlers to interpret subsets while forwarding the rest.", "anchors": "§§1-2.3"},
+    {"claim": "Deep handlers wrap the continuation with the same handler; shallow handlers expose an unhandled continuation and can better express some producer/consumer pipelines.", "anchors": "§§2.6 and 3.4"},
+    {"claim": "The lambda-eff calculus has deterministic small-step semantics, termination for well-typed terms, and type soundness for closed empty-effect computations.", "anchors": "§§3.1-3.2, Theorems 1-2"},
+    {"claim": "Effect handlers can be encoded in Haskell using free or continuation monads, type families/classes and quasiquotes, and can also be implemented with delimited continuations in OCaml, SML and Racket.", "anchors": "§4"},
+    {"claim": "The reported continuation-handler implementation is commonly about two-thirds of baseline performance, but results vary: it wins over unrevised flat pipes, loses to revised and nested pipes, and is nearly identical on the AOP case.", "anchors": "§5 and Appendix A"}
+  ],
+  "function_concept_used_by_paper": "A function is a computation whose type carries an effect signature. Its abstract operations specify callable interfaces, while handlers supply return and operation clauses that transform a computation with input effects into a result computation with output effects. Continuations expose the remaining computation to each clause.",
+  "representation_or_carrier": "The formal carriers are lambda-eff values, thunked computations, finite operation signatures, handlers, continuation-passing operation applications and call-by-push-value computation types. Implementations use Haskell Comp/operation GADTs/type classes/type families/quasiquoted syntax, free/codensity/continuation monads, or dynamic handler stacks plus delimited continuations in ML/Racket.",
+  "specification_language": "Operation declarations specify universal/existential type parameters, arguments and return types; computation types specify allowed effects; handler types specify handled and residual effects plus result type. This is a structured effect contract, not a general semantic pre/postcondition language. The Haskell encoding uses Handles constraints and functional dependencies rather than native effect rows, so parent-handler order can leak into types and handlers are not first-class.",
+  "compiler_or_generator": "Template Haskell parsers and quasiquoters generate operation wrappers, handler types, Handles instances, forwarding boilerplate and convenient wrappers. GHC compiles the continuation/free encodings and may optimize abstraction. The other language sketches use dynamic handler stacks and shift0/reset0. The work does not prove that generated Haskell is a semantics-preserving compilation of lambda-eff or provide a reproducible compiler package.",
+  "interpreter_or_runtime": "Closed and open handlers interpret return/operation nodes; open handlers forward unmatched operations. Deep handlers reinstall themselves around continuations, while shallow handlers leave continuations unhandled. The Haskell continuation encoding dispatches clauses through type classes; the ML/Racket sketch keeps handlers in a dynamic stack and captures delimited continuations. An operation that escapes all handlers raises an exception in the dynamic implementation.",
+  "composition_rule": "Handler composition is ordinary function composition over computations, with an ordered nesting that determines which clause handles an operation. Open handlers forward residual operations, return clauses transform final values, and operation clauses may discard or invoke continuations once or many times. Composition is modular but not generally commutative: order, deep versus shallow continuation wrapping, handler parameters and duplicate operations affect behavior and sometimes types.",
+  "state_or_effect_model": "The paper models state, logging, I/O, exceptions/failure, nondeterministic and random choice, parsing, streaming/pipes and AOP-style interception. Effects are free-theory operations with no equations; their meanings come from handlers. The calculus is terminating and excludes unrestricted recursion, whereas Haskell examples use recursion, IO, laziness and undefined, so formal guarantees do not transfer automatically to the full implementation.",
+  "uncertainty_model": "Formal results are categorical within the simply typed terminating lambda-eff calculus and are supported by proof sketches, not mechanization. Criterion samples each benchmark ten times, yet the paper presents single millisecond values without dispersion or confidence intervals. The AOP generator fixes seed 42 in the repository, but other run environment details and raw samples are absent. Performance depends strongly on encoding, rewrite rules, workload and nesting.",
+  "validation_regime": {
+    "formal": "syntax, typing and deterministic small-step semantics plus proof sketches for strong termination and type soundness of empty-effect closed computations",
+    "implementation": "multi-language repository with core libraries, many examples and Haskell benchmark drivers at an identifiable historical commit",
+    "benchmarks": "GHC 7.6.1 -O2 on Ubuntu 12.10, Intel i7-3770K 3.5 GHz with 32 GB RAM; Criterion 0.8 sampled each microbenchmark ten times",
+    "reported_result": "State continuation handlers 77 ms versus 51 ms pure/monad; flat pipes 1820 ms versus 3398 ms unrevised and 1304 ms revised pipes; n-Queens handlers 237 ms versus 160 ms hand code; AOP 6526 ms versus 6516 ms hand code; nested handler performance ranges roughly 0.61-0.72 of base pipes.",
+    "boundary": "The formal calculus is not the Haskell language; proofs are sketches; the code snapshot is untagged/unpackaged, contains later-fixed typing defects and does not reproduce the paper's n-Queens parameter. Results were not rerun."
+  },
+  "equivalence_notions": [
+    {"notion": "type preservation", "support": "REDUCTION_PRESERVES_LAMBDA_EFF_COMPUTATION_TYPE_AND_EFFECT_SIGNATURE", "boundary": "Proof is sketched for the core calculus, not mechanized or established for Template Haskell output."},
+    {"notion": "empty-effect safety", "support": "A_CLOSED_WELL_TYPED_EMPTY_EFFECT_COMPUTATION_REDUCES_TO_A_RETURNED_VALUE", "boundary": "Relies on the terminating calculus; Haskell recursion, IO and undefined lie outside it."},
+    {"notion": "open-to-closed handler translation", "support": "FINITE_IMPLICIT_FORWARDING_CLAUSES_CAN_BE_WRITTEN_EXPLICITLY", "boundary": "A conceptual translation; effect polymorphism and real Haskell type inference add constraints."},
+    {"notion": "deep versus shallow handler behavior", "support": "CONTINUATION_REINSTALLATION_DISTINGUISHES_DEEP_FROM_SHALLOW_OPERATION_RULES", "boundary": "They are not generally equivalent; pipes demonstrate materially different composition/performance."},
+    {"notion": "performance comparison", "support": "CRITERION_WALL_CLOCK_TIME_RELATIVE_TO_SELECTED_BASELINES", "boundary": "Single old platform, no uncertainty table, paper/code parameter mismatch and no preserved outputs."}
+  ],
+  "lifecycle_and_provenance": "The paper has a DOI and stable author PDF, and its cited repository retains enough history to select the last pre-PDF commit. However, there is no paper tag, release, license, dependency lock, build recipe, environment image, raw benchmark result, signed manifest or checksum joining the tables to code. The README points to a draft, the benchmark parameter differs from the final paper, and later commits repair typing defects. No compatibility, revalidation, health, rollback, supersession or retirement policy exists.",
+  "limitations_and_failure_boundaries": [
+    "The authors explicitly describe the work as a position paper aimed at popularizing handlers; the formal and empirical material is illustrative rather than a production certification.",
+    "The lambda-eff calculus is simply typed, free of equations and terminating; it does not model full lazy Haskell, unrestricted recursion, IO, undefined, concurrency or resource behavior.",
+    "Termination and type-soundness proofs are sketches and are not mechanized; no compiler-correctness theorem connects lambda-eff to the Haskell implementation.",
+    "Haskell handlers are not first-class, operation wrapper types are complex, parent-handler order can leak into types, and UndecidableInstances is required for forwarding.",
+    "Only Haskell has the encoded effect type system; the OCaml, SML and Racket implementations can support dynamic operations but do not statically prevent unhandled effects.",
+    "Dynamic-operation effect typing and efficient relevant-effect passing are left open; full row-polymorphic design is future work.",
+    "Delimited-continuation encodings may not preserve memory behavior and can introduce memory leaks.",
+    "Benchmarks are microbenchmarks on one 2013 machine/compiler; values have no reported variance or preserved raw receipts.",
+    "The continuation implementation is not always faster: revised and nested pipes outperform it, and the free/codensity/shallow encodings can be dramatically slower.",
+    "The paper uses n = 20 for n-Queens, but the sole paper-era benchmark source uses size = 22, so the table cannot be reproduced directly from the reviewed commit.",
+    "The reviewed repository lacks build/package metadata and license and contains Haskell typing defects repaired after publication.",
+    "Effect composition does not itself provide semantic pre/postconditions, calibrated probability, distributed-effect protocols or registry lifecycle governance."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove that the shipped Haskell/OCaml/SML/Racket libraries implement lambda-eff soundly or terminate.",
+    "It does not establish a universal performance advantage for handlers or reproduce results across modern toolchains and platforms.",
+    "It does not supply general program equivalence, automatic handler correctness, probabilistic calibration, full execution receipts or deployment governance.",
+    "It does not validate neural/weight functions, ignition axioms or the complete Function OS."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {"status": "PARTIAL", "reason": "Operation/effect/handler types give machine-checkable effect contracts but not general semantic pre/postconditions."},
+    "GAP-016": {"status": "PARTIAL", "reason": "Quasiquoters generate concrete effect infrastructure and GHC compiles it, but this is not a general function/weight compiler and compilation correctness is unproved."},
+    "GAP-017": {"status": "PARTIAL", "reason": "Operational semantics, preservation and open/closed translations define bounded equivalence obligations without a general checker."},
+    "GAP-018": {"status": "CONFIRMED", "reason": "The paper and implementations directly establish explicit effect signatures, handlers, forwarding and ordered effect composition."},
+    "GAP-019": {"status": "CONFIRMED", "reason": "Formal semantics, proof sketches, four-language code and five benchmark families provide substantial bounded validation despite reproduction defects."},
+    "GAP-020": {"status": "PARTIAL", "reason": "Typing and timings expose some state, while uncertainty, durable traces, artifact health and lifecycle receipts remain absent."}
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {"status": "CONFIRMED", "reason": "Operation signatures and effect-indexed computation types specify allowed effects and interfaces."},
+    "N2_Representation": {"status": "CONFIRMED", "reason": "Calculus terms, signatures, handlers, continuations and multiple implementation encodings are explicit carriers."},
+    "N3_Compiler": {"status": "CONFIRMED", "reason": "Template Haskell generates operation and handler infrastructure; GHC compiles free/continuation encodings."},
+    "N4_Artifact": {"status": "PARTIAL", "reason": "Multi-language sources exist, but no tagged/package-locked artifact or reproducible table binding exists and later fixes were required."},
+    "N5_Interpreter": {"status": "CONFIRMED", "reason": "Handler clauses, forwarding and continuation semantics define concrete interpretation of abstract operations."},
+    "N6_ExecutionTrace": {"status": "PARTIAL", "reason": "Operation/continuation trees are representable, but optimized continuation execution and benchmarks produce no durable trace receipt."},
+    "N7_Validator": {"status": "CONFIRMED", "reason": "Effect typing, termination/type-safety arguments and implementation comparisons validate a bounded handler design."},
+    "N8_ComposerRouter": {"status": "CONFIRMED", "reason": "Ordered open/closed handlers, forwarding, deep/shallow continuations and multi-shot clauses form a rich explicit composer/router."},
+    "N9_VersionedRegistry": {"status": "PARTIAL", "reason": "DOI and commit history identify versions, but release, license, run lineage, compatibility, health and retirement are missing."}
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "PARTIAL_PROVISIONAL_KIMI_K2_7",
+    "verdict": "ACCEPTED_WITH_FORMAL_IMPLEMENTATION_AND_REPRODUCIBILITY_CORRECTIONS_TO_CONFIRMED_BOUNDED_SUPPORT",
+    "corrections": [
+      "Confirmed that this is explicitly a position paper but reviewed the complete lambda-eff typing/reduction system and both theorem proof sketches.",
+      "Distinguished deep and shallow semantics, closed/open forwarding, static/dynamic operations and their non-equivalence rather than treating handlers as one uniform abstraction.",
+      "Reviewed the last pre-PDF repository commit across Haskell, OCaml, SML, Racket, examples and benchmarks.",
+      "Recorded the paper/repository n-Queens n=20 versus size=22 mismatch and later Haskell type fixes.",
+      "Bounded the performance claim with losing cases, single-platform sampling, absent variance and missing result receipts."
+    ],
+    "prior_card_superseded": true
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "Within its scope, the work directly supports effect-aware FunctionSpec and Representation, compilation to handler infrastructure, handler-based Interpreter, a bounded Validator, and an unusually explicit ComposerRouter. Artifact packaging, trace receipts, modern reproducibility and VersionedRegistry governance remain partial.",
+  "source_specific_reasoning": "CONFIRMED applies to the architectural handler pattern, not to production readiness or every implementation claim. The paper defines a typed operational calculus, states termination and empty-effect soundness with proof sketches, explains open/deep/shallow composition, supplies concrete Haskell encodings and preserves four language implementations. Extreme review narrows the result because the calculus excludes much of real Haskell, no compiler-correctness proof exists, paper-era code is untagged and unpackaged, later type fixes were needed, n-Queens parameters disagree, and benchmarks are historical microbenchmarks without uncertainty receipts.",
+  "projection_boundary": "These are 121CX projections from the exact hash-matched 14-page author PDF and static review of repository commit bf45a09. Formal statements are theorem-backed only within lambda-eff and are not a proof of the Haskell libraries. Benchmarks were not independently rerun, and model review is not empirical validation of ignition.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T06:12:10Z"
+}

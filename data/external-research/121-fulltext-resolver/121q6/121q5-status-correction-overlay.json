@@ -1,0 +1,19 @@
+{
+  "overlay_of": "121Q5 final status",
+  "created_by": "121Q6 Step 003",
+  "executor": "QClaw",
+  "model": "Hy3",
+  "timestamp": "2026-07-15T11:57:56+08:00",
+  "corrections": {
+    "actual_commits": {"was": 16, "correct": 17, "source": "gh pr view 40 commits=17"},
+    "final_head": {"was": "371ef65", "correct": "314b5fa7e5ff74c9e3f71bb01dc242c1465e6a9f", "source": "PR#40 headRefOid"},
+    "step_ledger": {"was": "claimed 25-step", "correct": "12 lines, steps 001-013 absent", "source": "121q5-step-ledger.jsonl line count"},
+    "pr_body": {"was": "IN_PROGRESS (Step 000 completed)", "correct": "COMPLETE (17 commits)", "source": "gh pr view 40"},
+    "model_identity": {"was": "qclaw/pool-deepseek-v4-pro", "correct": "MIXED_OR_UNVERIFIED", "reason": "user switched to Hy3 mid-Q5, no per-step runtime proof"},
+    "test_result_provenance": {"was": "46/46 PASS (local)", "correct": "46/46 executor-local; independent CI added in 121Q6 Step 022", "source": "this task"}
+  },
+  "normalized_q5_status": "PARTIAL_ACCEPTED_AS_IMPLEMENTATION_CANDIDATE",
+  "q5_rationale": "N1-N9 canonical nodes implemented and tested locally; but control-plane hygiene, ledger completeness, model attribution, and independent CI were deficient. Accepted as implementation candidate pending 121Q6 hardening.",
+  "history_rewrite_policy": "NO rewrite/split/amend of Q5 commits. This overlay is additive only.",
+  "v0_2_status_after_q6": "v0.2.1-candidate (hardened in 121Q6)"
+}

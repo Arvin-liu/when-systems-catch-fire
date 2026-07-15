@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-031",
+  "title": "Effective LoRA Adapter Routing using Task Representations",
+  "authors": "Anonymous",
+  "year": 2026,
+  "venue": "arXiv preprint",
+  "doi_or_identifier": "arXiv:2601.21795",
+  "source_family": 5,
+  "url": "https://arxiv.org/html/2601.21795",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2601.21795.pdf",
+  "effective_url": "https://arxiv.org/pdf/2601.21795",
+  "access_time_utc": "2026-07-13T16:42:18Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "684de82fbdd03fb0c3a5c59dc4c5e702e221f4364281210aa4b4be4167d1da46",
+  "local_cache_path": ".cache/fulltext/S120-031_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 2291125,
+  "page_count": 29,
+  "sections": [
+    "1 Introduction",
+    "2 Related Work",
+    "3 LORAUTER",
+    "4 Routing via Task Representations",
+    "5 Experiments",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:related",
+    "sec:lorauter",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Effective LoRA Adapter Routing using Task Representations Akash Dhasade 1 Anne-Marie Kermarrec 1 Igor Pavlovic 1 Diana Petrescu 1 Rafael Pires 1 Mathis Randl 1 Martijn de Vos1 Abstract Low-rank adaptation (LoRA) enables parameter- efficient specialization of large language mod- els (LLMs) through modular adapters, resulting in rapidly growing public adapter pools spanning diverse ta...",
+  "what_the_paper_supports": "LORAUTER selects and composes LoRA adapters using task representations rather than adapter characteristics. Supports the ignition claim that multiple function adapters can be dynamically routed and composed (Function OS node 8 ComposerRouter, node 9 VersionedRegistry). It scales to over 1500 adapters, supporting the need for a versioned registry of function components.",
+  "what_the_paper_does_not_support": "Routing is based on task embeddings and validation performance, not a formal contract (GAP-015). It does not define equivalence between adapters (GAP-017) or provide a general composition algebra (GAP-016). It does not address effects (GAP-018) or probabilistic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (29 pages, 2291125 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

@@ -1,0 +1,242 @@
+{
+  "source_id": "S120-062",
+  "canonical_title": "On a Method of Solving of Possibilistic-Probabilistic Programming Problems",
+  "authors": [
+    "Yulia Evgenyevna Egorova"
+  ],
+  "year": 2021,
+  "version": "published Russian-language journal article with English abstract and bibliographic back matter",
+  "doi_or_identifier": "10.26456/fssc77",
+  "identifier": "Fuzzy Systems and Soft Computing 16(1), pp. 21-33",
+  "url": "https://www.mathnet.ru/php/getFT.phtml?jrnid=fssc&paperid=77&what=fullt&option_lang=eng",
+  "source_family": 9,
+  "source_family_name": "probabilistic programming and stochastic semantics",
+  "license": "openly downloadable from Math-Net/Geodesic; neither the item page, PDF nor Crossref record states an explicit reuse license",
+  "sha256": "67691b433e4dfd20f2faccee0f1340d3442d5e85832183f18d6a1396c85a7b4a",
+  "file_size_bytes": 467937,
+  "page_count": 13,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": false,
+    "registry_correction": "the resolver registered a 28,971-byte .html landing-page object with SHA-256 8dbf042d1aa962c3a6b7f39cb81278fd1478874733f0cc2e92d7f48714ebae6e while labeling its content type application/pdf; it is not the article PDF",
+    "current_landing_page": "the current Geodesic HTML is 28,971 bytes with SHA-256 54f6938c01e4a5ab789053930bd4fef0abdbe82c1df7d2d7c5315c5fdac2551f and exposes the Math-Net full-text URL",
+    "actual_pdf_receipt": "the linked Math-Net PDF is 467,937 bytes, SHA-256 67691b433e4dfd20f2faccee0f1340d3442d5e85832183f18d6a1396c85a7b4a and contains printed pages 21-33",
+    "registered_pdf_visual_check": "all 13 PDF pages rendered and inspected; mathematical displays, theorem statements, Russian text, English abstract and references are present and legible",
+    "publication_identity": "Fuzzy Systems and Soft Computing, volume 16, issue 1, pages 21-33; received 2020-12-25, revised 2021-05-06 and published 2021-08-05",
+    "publication_metadata_source": "article PDF, Geodesic item metadata, Math-Net record and Crossref DOI record"
+  },
+  "sections_reviewed": [
+    "introduction and claimed practical motivation",
+    "possibility/probability spaces and fuzzy random variables",
+    "expected fuzzy value and shift-scale representation",
+    "LR-type fuzzy quantities, t-norms and mutual t-relatedness",
+    "possibilistic-probabilistic optimization model",
+    "equivalent stochastic programming analogue under the weakest t-norm",
+    "projected stochastic quasigradient primal-dual method",
+    "previous convergence theorem and its moment/normalization hypotheses",
+    "new second-moment lemmas and simplified convergence theorem",
+    "conclusion, computational-complexity gap and comparison gap",
+    "English abstract, author information and complete references"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "section 1, printed p. 21",
+      "checked_for": "scope, prior direct versus stochastic approaches, portfolio motivation and objective of replacing hard-to-check convergence assumptions"
+    },
+    {
+      "anchors": "section 2, printed pp. 22-23; Definitions 1-5",
+      "checked_for": "fuzzy random-variable carrier, expected possibility distribution, LR parameters, strongest/weakest t-norms and mutual t-relatedness"
+    },
+    {
+      "anchors": "section 3, printed pp. 23-24; equations 1-2",
+      "checked_for": "decision domain, possibility/necessity constraints, linear fuzzy-random coefficients, independence and weakest-t-norm assumptions"
+    },
+    {
+      "anchors": "section 4, printed pp. 24-25; equations 3-4",
+      "checked_for": "equivalent stochastic objective/constraints and formulas for LR centers and spreads"
+    },
+    {
+      "anchors": "section 5, printed pp. 25-27; Theorem 1 and equations 5-6",
+      "checked_for": "projected primal-dual update, stochastic quasigradient construction, Slater/convexity assumptions, conditional moment bound, normalization and step-size conditions"
+    },
+    {
+      "anchors": "section 6, printed pp. 27-29; Lemmas 1-2 and Theorems 2-3",
+      "checked_for": "finite-second-moment replacement, algebra of conditional moments, almost-sure accumulation-point conclusion and proof gaps"
+    },
+    {
+      "anchors": "conclusion, printed p. 29",
+      "checked_for": "bounded contribution, portfolio example as motivation rather than experiment, missing complexity estimate and missing method comparison"
+    },
+    {
+      "anchors": "printed pp. 30-33",
+      "checked_for": "references, DOI, full author identity, affiliation, English abstract and no artifact appendix"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "A linear possibilistic-probabilistic optimization problem with possibility or necessity constraints, LR fuzzy-random coefficients and weakest-t-norm dependence can be reduced to a stochastic programming analogue with center and spread terms.",
+      "anchors": "sections 3-4, equations 1-4"
+    },
+    {
+      "claim": "The equivalent convex stochastic program can be attacked by a projected primal-dual stochastic quasigradient method using sample-based estimates instead of exactly computing expected spread functions.",
+      "anchors": "section 5"
+    },
+    {
+      "claim": "For continuous convex objectives/constraints, a convex closed decision set, Slater feasibility, diminishing non-summable square-summable steps and the stated moment/normalization controls, an accumulation point belongs to the solution set almost surely.",
+      "anchors": "Theorem 1, reproduced from prior work"
+    },
+    {
+      "claim": "Assuming finite second moments for the random scale variables is presented as a more easily checked sufficient condition for finite conditional squared quasigradient norms and a simplified almost-sure convergence theorem.",
+      "anchors": "section 6, Theorems 2-3"
+    }
+  ],
+  "function_concept_used_by_paper": "The paper uses functions in the mathematical-optimization sense, not software functions or probabilistic-program terms. A decision vector x is evaluated by linear fuzzy-random objective and constraint functions f_i(x, omega, gamma); expected LR center/spread functions are transformed into a stochastic Lagrangian; sampled quasigradient functions drive a projected primal-dual iteration.",
+  "representation_or_carrier": "The carrier combines a probability space (Omega, B, P), a possibility space (Gamma, powerset(Gamma), pi), real decision vectors in a nonnegative subset X, and fuzzy random variables Y(omega,gamma). Coefficients have a shift-scale representation a(omega)+sigma(omega)Z(gamma), with Z an LR-type fuzzy quantity represented by left/right core and spread parameters. Possibilistic dependence is specified by a t-norm, specialized to the weakest t-norm T_W.",
+  "specification_language": "A constrained mathematical program specifies an extremized auxiliary/objective value, possibility or necessity thresholds tau_i{E[f_i] relation_i k_i} >= alpha_i, and x in X. Linear fuzzy-random functions, LR shape functions L/R, expectation, independence, weakest-t-norm relatedness and convexity/Slater/moment/step-size assumptions complete the model. This is not a programming language and has no types, modules, pre/postconditions, executable syntax, API, provenance schema or general function contract.",
+  "compiler_or_generator": "No compiler or generator is presented. The reduction from the hybrid possibilistic-probabilistic program to equations 3-4 is a hand-derived mathematical equivalence under a narrow linear LR/weakest-t-norm model. No automatic translator, symbolic checker or construction algorithm is implemented, and the paper does not measure the cost of forming or solving the analogue.",
+  "interpreter_or_runtime": "The runtime analogue is an iterative projected stochastic quasigradient primal-dual optimizer: sample omega^s, construct xi^s and zeta^s for the Lagrangian, update x by projected descent and u by projected ascent with step rho_s gamma_s. The paper supplies formulas and convergence conditions but no code, pseudocode with stopping rules, parameter-selection procedure, numerical example, benchmark or executable artifact.",
+  "composition_rule": "Expected values combine probabilistic randomness with LR fuzzy parameters, and t-norms aggregate possibilistic dependence. The Lagrangian composes one objective with multiplier-weighted constraints, while vector quasigradients sum the corresponding sample contributions. This is algebraic aggregation for one constrained optimization problem; the paper does not define compositional semantics for independently deployable stochastic functions or prove closure under general program/function composition.",
+  "state_or_effect_model": "Iteration state is the primal-dual pair (x^s,u^s) plus its filtration/history B_s. Fresh sampled scale realizations determine stochastic quasigradients, and projections keep updates in X and U. No mutable software heap, event trace, concurrency, nondeterministic control flow, external I/O, checkpoint/restart or distributed state is modeled.",
+  "uncertainty_model": "Aleatory uncertainty is represented by P over omega and possibilistic/fuzzy uncertainty by pi over gamma. A fuzzy random variable couples both; LR membership/possibility shapes and t-relatedness describe fuzziness and dependence, while expectation removes omega to produce a deterministic fuzzy expected value. The optimization constraints use possibility or necessity levels alpha. The method assumes known distributions/moments and does not estimate, calibrate or update them; it reports no finite-sample confidence bound, posterior, robustness analysis or sensitivity study.",
+  "validation_regime": {
+    "formal": "definitions, reduction formulas, a prior convergence theorem, two moment lemmas and a simplified convergence theorem with an almost-sure accumulation-point conclusion",
+    "implementation": "none; no source code, solver, proof assistant, test vectors or reproducible numerical artifact",
+    "empirical": "none; investment-portfolio optimization is cited as an application area but no dataset or experiment appears",
+    "proof_audit": "the finite-moment conclusion is plausible and can be bounded using indicator <= 1 and Cauchy-Schwarz, but displayed conditional-expectation equalities pull sample-dependent maximizer indicators outside expectations; the transition from pointwise finite moments to the uniform control normally used by the inherited convergence theorem is not fully spelled out, and U is described as closed/convex rather than explicitly bounded",
+    "boundary": "Theorem 3 is conditional on convexity, continuity, Slater feasibility, weakest-t-norm LR structure, finite second moments and Robbins-Monro step conditions; it establishes an almost-sure optimal accumulation point, not rate, full-sequence convergence or empirical performance"
+  },
+  "equivalence_notions": [
+    {
+      "notion": "hybrid-to-stochastic optimization equivalence",
+      "support": "UNDER_THE_LINEAR_LR_WEAKEST_T_NORM_ASSUMPTIONS_THE_POSSIBILITY_NECESSITY_PROGRAM_IS_REWRITTEN_AS_EQUATIONS_3_4",
+      "boundary": "The paper cites the derivation to earlier work and does not extend it to nonlinear, non-LR or other t-norm settings."
+    },
+    {
+      "notion": "unbiased or scaled quasigradient relation",
+      "support": "CONDITIONAL_EXPECTATIONS_OF_SAMPLE_VECTORS_ARE_REQUIRED_TO_TRACK_LAGRANGIAN_SUBGRADIENTS_UP_TO_SCALE_AND_BIAS",
+      "boundary": "The concrete construction is narrow, and no implementation test confirms the estimator identities."
+    },
+    {
+      "notion": "almost-sure solution convergence",
+      "support": "ONE_ACCUMULATION_POINT_OF_XS_BELONGS_TO_X_STAR_WITH_PROBABILITY_ONE_UNDER_THE_STATED_ASSUMPTIONS",
+      "boundary": "This is weaker than whole-sequence convergence, has no rate, and the proof bridge from finite moments to uniform convergence control is compressed."
+    },
+    {
+      "notion": "condition replacement",
+      "support": "FINITE_SECOND_MOMENTS_OF_SCALE_VARIABLES_REPLACE_HARDER_CONDITIONAL_QUASIGRADIENT_NORM_AND_NORMALIZATION_CHECKS_IN_THEOREM_3",
+      "boundary": "The displayed moment algebra treats sample-dependent indicators too casually and does not explicitly establish every uniform bound of Theorem 1."
+    }
+  ],
+  "lifecycle_and_provenance": "The article has a stable DOI, journal issue/pages, received/revised dates, full author identity and two independent landing records. The full PDF is openly retrievable and hash-bound here. The original resolver receipt is not a PDF: it is an HTML page whose current bytes have changed, so the content-type/page-count provenance is corrected rather than silently accepted. There is no explicit reuse license, versioned code, solver configuration, dependency lock, random seed, input dataset, test suite, proof artifact, CI, change log, compatibility statement, supersession map, rollback or retirement policy.",
+  "limitations_and_failure_boundaries": [
+    "Despite the English title's word programming, this is mathematical programming/optimization, not probabilistic programming-language semantics.",
+    "The optimization model is linear in x and assumes shift-scale LR fuzzy-random coefficients with mutually weakest-t-norm-related fuzzy components.",
+    "Convexity is noted for the necessity-measure parameterization; the method/theorem does not cover every possibility-measure relation or arbitrary nonconvex hybrid program.",
+    "Convergence requires continuous convex objective and constraints, a convex closed decision set, Slater feasibility, finite second moments, bounded normalization and diminishing steps with divergent sum and square-summable squares.",
+    "Theorem 3 guarantees only that one accumulation point is optimal almost surely, not uniqueness, full-sequence convergence, objective-gap convergence or a rate.",
+    "The displayed proof pulls maximizer indicators t_ij^s, which depend on the current random scale sample, outside conditional expectations; the needed finiteness can be recovered by inequalities but the printed equalities are not fully justified.",
+    "A cross-moment line factorizes conditional expectations of scale variables; this needs independence/fresh-sample conditions and is unnecessary if Cauchy-Schwarz is used, but the filtration assumptions are not developed carefully.",
+    "Pointwise finiteness of conditional moments is weaker than a uniform bound; the paper does not explicitly prove the uniform C_L bridge or require the dual projection set U to be bounded in Theorem 3.",
+    "No stopping criterion, finite-iteration error, sample complexity, computational complexity or numerical stability result is provided.",
+    "The conclusion explicitly leaves computational-complexity estimates and comparison with indirect solution methods to future work.",
+    "No numerical example, portfolio dataset, baseline comparison, sensitivity analysis or empirical convergence trace is reported.",
+    "The approach assumes the probability/possibility model, LR parameters, t-norm relationship and required moments are given; it does not learn or validate them from data.",
+    "There is no source code, solver artifact, reproducibility bundle or mechanized proof.",
+    "The journal/source is Russian-language with only an English abstract and references, limiting direct independent scrutiny for non-Russian readers.",
+    "The work does not address neural functions, general Function OS composition, ignition epsilon, frozen Psi_0 or governed artifact deployment."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not provide a probabilistic programming language, stochastic-function interpreter or compositional program semantics.",
+    "It does not prove convergence for arbitrary fuzzy/probabilistic objectives, nonlinear programs, alternative dependence structures or unconstrained nonconvex settings.",
+    "It does not establish a convergence rate, finite-sample error, computational cost or superiority to deterministic/indirect methods.",
+    "It does not empirically validate the method on a portfolio or other real task.",
+    "It does not supply executable or reproducible solver artifacts, lifecycle governance, neural-function mappings or empirical validation of ignition."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "The optimization equations and stochastic assumptions form a narrow mathematical specification, not a general governed FunctionSpec."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "A hybrid model is analytically reduced to a stochastic analogue, but no automatic compiler or generator implements the transformation."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "The paper states an equivalence between narrow optimization forms and an almost-sure solution notion without a general function-equivalence framework."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Probability, possibility, t-norm dependence and iterative primal-dual state are combined, but only inside one optimization algorithm."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Conditional convergence theorems provide formal validation, while compressed moment arguments, no mechanization, no rate and no experiment block stronger closure."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "The source directly formalizes hybrid fuzzy-probabilistic functions and stochastic optimization, but not general probabilistic-program function semantics or composition."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Objectives, constraints, uncertainty spaces and convergence assumptions are specified mathematically for a narrow class."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Fuzzy random variables, LR parameters, probability/possibility spaces, t-norm relations and primal-dual vectors are explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "The equivalent stochastic analogue is a manual derivation rather than an implemented transformation pipeline."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "A stable DOI and hash-bound PDF exist, but no code, proof or numerical artifact accompanies them."
+    },
+    "N5_Interpreter": {
+      "status": "PARTIAL",
+      "reason": "Projected stochastic quasigradient updates define an abstract solver, with no executable runtime or operational validation."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "The filtration and iterate history are formal state, but no logged trace, replay receipt or diagnostic format is provided."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Almost-sure convergence is argued under assumptions, but proof presentation gaps, no mechanization, no rates and no empirical check remain."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "A Lagrangian sums objective/constraint quasigradients and uncertainty is aggregated by t-norms, not by a general function composer/router."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "DOI, issue/pages and a corrected PDF hash support document provenance, while the original receipt was misclassified and no software lifecycle exists."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "NO_PRIOR_SEMANTIC_EVIDENCE_CARD",
+    "verdict": "NEW_CODEX56_EXTREME_CARD_WITH_PARTIAL_BOUNDED_SUPPORT",
+    "corrections": [
+      "Replaced Anonymous with the full author name Yulia Evgenyevna Egorova and resolved DOI 10.26456/fssc77.",
+      "Corrected the resolver's HTML-as-PDF misclassification and recorded a fresh exact receipt for the actual 13-page PDF.",
+      "Corrected the domain interpretation: programming means constrained mathematical optimization, not a probabilistic programming language.",
+      "Bounded the stochastic analogue to linear LR fuzzy-random coefficients with weakest-t-norm dependence and convexity/Slater assumptions.",
+      "Separated the almost-sure optimal accumulation-point theorem from stronger full-sequence, rate, complexity or empirical-performance claims.",
+      "Recorded sample-dependent-indicator and uniform-moment proof presentation gaps instead of treating the convergence statement as mechanically verified.",
+      "Removed provisional inference-compiler/sampling-engine implications because no code or executable artifact exists."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "PARTIAL",
+  "confirmed_projection": "The source confirms a bounded hybrid-uncertainty optimization pattern: fuzzy-random functions combine probability and possibility, a hand-derived stochastic analogue feeds projected primal-dual quasigradients, and conditional almost-sure convergence is argued. It offers useful Representation and narrow Validator evidence, while FunctionSpec generality, Compiler, executable Interpreter/Artifact, Trace, Composer and Registry closure remain partial.",
+  "source_specific_reasoning": "PARTIAL is required because the paper supplies genuine formal uncertainty carriers and a convergence-oriented stochastic optimizer, but it is not probabilistic programming-language work, covers a narrow linear LR/weakest-t-norm convex model, provides no implementation or empirical test, and leaves rate/complexity/comparison open. Its simplified proof also compresses important measurability and uniform-bound steps. The contribution supports a hybrid stochastic optimization subpattern without establishing a general probabilistic Function OS architecture.",
+  "projection_boundary": "These are 121CX projections from the complete freshly retrieved 13-page Math-Net PDF, all rendered pages, the Geodesic/Math-Net item metadata and the Crossref DOI record. The original registered hash is retained as evidence of an HTML receipt error, not treated as the article. This model review is not a mechanized proof, solver validation, empirical validation of ignition or evidence for modifying frozen Psi_0.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T06:49:22Z"
+}

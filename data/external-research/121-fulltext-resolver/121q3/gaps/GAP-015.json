@@ -1,0 +1,72 @@
+{
+  "gap_id": "GAP-015",
+  "canonical_title": "No function specification language with formal preconditions/postconditions",
+  "canonical_definition": "The ignition architecture lacks a formal specification language for declaring function preconditions and postconditions. External research (families 3, 7, 8) shows that refinement types, function contracts, and algebraic effects provide composable specification mechanisms. Currently ignition functions are specified in markdown with informal mathematical notation.",
+  "source_path": "120-gap-015-020-adjudications.jsonl + 121-gap-015-020-readjudications.jsonl",
+  "dependencies": [],
+  "affected_nodes": [
+    "N1",
+    "N7"
+  ],
+  "affected_assets": [
+    "IGN-ASSET-001",
+    "IGN-ASSET-002",
+    "IGN-ASSET-003",
+    "IGN-ASSET-004",
+    "IGN-ASSET-005"
+  ],
+  "direct_evidence": {
+    "sources": [
+      "S120-047",
+      "S120-053"
+    ],
+    "summary": "S120-047 (Generic Refinement Types, POPL 2025, VERIFIED) provides machine-checkable refinement types for pure functional programs. S120-050 provides SMT-based equational verification."
+  },
+  "structural_evidence": {
+    "sources": [],
+    "summary": "S120-017 (LaSynth) and S120-018 (SPoC) use execution/test feedback to validate synthesized programs — structural support for specification via I/O behavior."
+  },
+  "analogical_evidence": {
+    "sources": [],
+    "summary": "121CX entries provide indirect support for neural program specification."
+  },
+  "negative_evidence": {
+    "sources": [
+      "S120-016",
+      "S120-050",
+      "S120-051",
+      "S120-055",
+      "S120-071",
+      "S120-072"
+    ],
+    "summary": "No source provides formal precondition/postcondition language for neural-weight functions. Refinement types apply to symbolic code, not weight-space artifacts."
+  },
+  "strongest_verified_sources": [
+    "S120-047"
+  ],
+  "blocked_or_unknown_sources_excluded": [
+    "S120-016",
+    "S120-050",
+    "S120-051",
+    "S120-055",
+    "S120-071",
+    "S120-072"
+  ],
+  "supported_claims": [
+    "Formal specification languages (refinement types, contracts) exist and are machine-checkable for symbolic/functional programs",
+    "Specification via I/O examples and test feedback is viable for program synthesis"
+  ],
+  "unsupported_claims": [
+    "No formal specification language exists for neural-weight functions",
+    "Refinement types do not directly apply to weight-space artifacts",
+    "No unified spec language covers both symbolic and weight-space functions"
+  ],
+  "residual_gap": "GAP-015 is satisfied for symbolic/functional programs but remains unsatisfied for neural and weight-space functions. The Function OS must either restrict N1 to symbolic specifications or develop new refinement logic for weight-space.",
+  "adjudication_status": "PARTIALLY_RESOLVED",
+  "confidence_basis": "MEDIUM-LOW. One VERIFIED source (S120-047) with direct evidence for symbolic specs. Weight-space specification remains an open problem.",
+  "recommended_next_action": "Restrict N1 (FunctionSpec) to symbolic specification in Phase 1. Research weight-space specification languages as a follow-up.",
+  "prohibited_wording": "Do not claim that 'papers verify Function OS N1' or that 'GAP-015 is fully resolved'. The specification language exists only for symbolic code, not for neural weights.",
+  "previous_adjudication_120": "FIELD_ENHANCEMENT_ONLY",
+  "previous_readjudication_121": "RESEARCH_CANDIDATE_INSUFFICIENT_EVIDENCE",
+  "timestamp": "2026-07-14T17:53:50Z"
+}

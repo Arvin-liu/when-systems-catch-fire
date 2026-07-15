@@ -1,0 +1,291 @@
+{
+  "source_id": "S120-068",
+  "canonical_title": "SkillPyramid: A Hierarchical Skill Consolidation Framework for Self-Evolving Agents",
+  "authors": [
+    "Yuan Xiong",
+    "Ziqi Miao",
+    "Qian Chen",
+    "Lijun Li",
+    "Yequan Wang",
+    "Shizhu He",
+    "Jun Zhao",
+    "Kang Liu"
+  ],
+  "year": 2026,
+  "version": "arXiv:2606.03692v1 preprint, submitted 2026-06-02",
+  "doi_or_identifier": "arXiv:2606.03692v1",
+  "identifier": "cs.AI; cs.CL",
+  "url": "https://arxiv.org/abs/2606.03692v1",
+  "source_family": 10,
+  "source_family_name": "agent skills and reusable capability libraries",
+  "license": "CC BY 4.0",
+  "sha256": "d17509ddf0e92d8cde54575bb6b03f7424018a4e21c8260ac9cd1e581ecb79c4",
+  "file_size_bytes": 1868498,
+  "page_count": 16,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "registered_url": "https://arxiv.org/pdf/2606.03692",
+    "versioned_url": "https://arxiv.org/pdf/2606.03692v1",
+    "sha256": "d17509ddf0e92d8cde54575bb6b03f7424018a4e21c8260ac9cd1e581ecb79c4",
+    "file_size_bytes": 1868498,
+    "page_count": 16,
+    "registered_pdf_visual_check": "all 16 pages rendered and inspected; the method equations, two framework figures, four result tables, one learning-curve figure, limitations, benchmark details, compute budget and complete prompt templates are present and legible",
+    "arxiv_metadata": "first and only public version submitted 2026-06-02 14:14:27 UTC; eight named authors; primary cs.AI with cs.CL cross-list",
+    "source_archive": {
+      "url": "https://export.arxiv.org/e-print/2606.03692",
+      "sha256": "3d9f8f50d98e77ed5ec08cee9fad6f46d602834f9ad704d7720ef78a40669322",
+      "contents": "LaTeX, bibliography, ACL style, three method/evaluation prompt sources, three evaluation prompts, three result tables and three rendered figures; no implementation, initial or evolved skill library, pyramid graph, split index, web-skill corpus, selection code, task-order manifest or raw result log"
+    },
+    "artifact_link_status": "neither the PDF nor source archive links a SkillPyramid code, data or experiment repository; bibliography URLs are citations only"
+  },
+  "sections_reviewed": [
+    "abstract, introduction, contributions and Figure 1",
+    "problem formalization and complete pyramidal carrier",
+    "Relation Analyzer coarse grouping and fine-grained assignments",
+    "Relation Builder downward atomic extraction and upward abstract induction",
+    "Skill Creator framework construction and detail instantiation",
+    "incremental self-evolution update",
+    "ALFWorld, WebShop and ScienceWorld setup and all four backbones",
+    "main reward and interaction-step results",
+    "four component ablations and self-evolution learning curve",
+    "action-based atomic-heavy and abstract-heavy grouping",
+    "GAIA-Lite web-mined-skill evaluation",
+    "discussion, conclusion, limitations, ethics and references",
+    "benchmark splits, baseline implementations, model/compute budget",
+    "complete Relation Analyzer, Relation Builder, Skill Creator and environment prompts",
+    "complete arXiv LaTeX source and official metadata"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "abstract and section 1, pp. 1-2; Figure 1",
+      "checked_for": "hierarchical consolidation motivation, claimed compose-validate-incorporate lifecycle and 38.0/27.7 percent headline comparisons"
+    },
+    {
+      "anchors": "sections 2.1-2.2.1, pp. 2-3; equations 1-2; Figure 2",
+      "checked_for": "skill tuple, layer carrier, coarse/fine Relation Analyzer inputs and natural-language assignments"
+    },
+    {
+      "anchors": "section 2.2.2, pp. 3-4; equations 3-7",
+      "checked_for": "atomic extraction, explicit reuse references, subset/merge handling, abstract induction and layer placement"
+    },
+    {
+      "anchors": "sections 2.3-2.4, pp. 4-5; equations 8-9",
+      "checked_for": "two-stage skill creation, retrieval, composition, incremental graph update and missing validation gate"
+    },
+    {
+      "anchors": "section 3, pp. 5-6; Table 1",
+      "checked_for": "five methods, four backbones, 20 reward/step cells per method, seen/unseen scope and aggregate claims"
+    },
+    {
+      "anchors": "section 4, pp. 6-7; Table 2; Figure 3",
+      "checked_for": "atomic/abstract/self-evolution/scratch ablations, incoming-task curve and absent repeated-run uncertainty"
+    },
+    {
+      "anchors": "section 5, pp. 7-8; Tables 3-4",
+      "checked_for": "oracle-trajectory quartile grouping and 150K-to-2,271 web-skill GAIA-Lite claims"
+    },
+    {
+      "anchors": "limitations and ethics, p. 9",
+      "checked_for": "one-time full-library cost, weaker-backbone gap, text-only scope, single deterministic run, two relation axes and downstream access-control caveat"
+    },
+    {
+      "anchors": "appendices A.1-A.4, pp. 10-11",
+      "checked_for": "140/134 ALFWorld, 194/211 ScienceWorld, 200 WebShop tasks, baseline definitions, construction models, round limits and 0.92B-token main budget"
+    },
+    {
+      "anchors": "appendix A.5, pp. 11-16",
+      "checked_for": "complete analyzer, builder, creator and environment prompt contracts versus claimed validation, retrieval and lifecycle behavior"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "Existing natural-language skills can be reorganized into a hierarchy whose lower layers expose reusable atomic capabilities and upper layers expose abstract task schemas.",
+      "anchors": "sections 2.1-2.2; equations 1-7"
+    },
+    {
+      "claim": "A Relation Analyzer and Relation Builder can classify shared-part, subset, merge and abstract-parent relations, then rewrite source skills with explicit dependencies.",
+      "anchors": "section 2.2; appendix A.5"
+    },
+    {
+      "claim": "A two-stage Skill Creator uses abstract skills for task structure and atomic skills for executable detail, then incorporates each new skill through a local pyramid update.",
+      "anchors": "sections 2.3-2.4; equations 8-9"
+    },
+    {
+      "claim": "Author-reported single-run results across 17,580 benchmark episodes show higher average reward and fewer interaction steps than four baselines.",
+      "anchors": "section 3; Table 1; appendix A.4"
+    },
+    {
+      "claim": "Author-reported ablations and a GAIA-Lite subset suggest atomic, abstract and consolidation components contribute differently and that pyramidal organization can improve a filtered web-skill collection.",
+      "anchors": "sections 4-5; Tables 2-4; Figure 3"
+    }
+  ],
+  "function_concept_used_by_paper": "A skill is a structured natural-language program s=(name, description, content), where content supplies conditions, procedure and inputs/outputs; generated and rewritten SKILL.md bodies add purpose, triggers, expected context, workflow, verification, guardrails and output. Skills become nodes in a layered dependency graph and are interpreted as prompt-level procedures by an interactive LLM agent. This is an external procedural FunctionSpec architecture, not a formal denotational or executable type system.",
+  "representation_or_carrier": "The primary carrier is P={L0,...,LK} over a collection of SKILL.md-like records. Atomic nodes sit below source skills, abstract nodes sit above them, and dependency references record name, identifier, reuse condition and provided capability. Analyzer assignments carry skill groups, relation type, evidence and guidance; creator inputs carry task, level/role, graph context and relevance; interactive trajectories carry observations, actions and final reward. No concrete graph serialization or evaluated library snapshot is released.",
+  "specification_language": "The paper's final prompt schema is meaningfully richer than its three-field formal tuple: name/description plus Purpose, When to Use, Inputs/Expected Context, Workflow, Verification, Constraints/Guardrails and Output, with an exact textual reuse-reference form. Analyzer relation labels are SHARED_PART, SUBSET, MERGE and UPWARD_ABSTRACT_INDUCTION. These are natural-language contracts: input/output types, pre/postconditions, effects, permissions, failure taxonomy and dependency compatibility are not machine-enforced, and the claimed unique identifiers have no published generation or collision policy.",
+  "compiler_or_generator": "Qwen3.5-35B-A3B-backed agents screen groups, decide relation assignments, extract/merge/canonicalize atomic skills, induce abstract skills, rewrite dependencies and generate task skills in framework/detail stages; Qwen3-Embedding-4B supports retrieval/grouping. Prompts constrain output shape and forbid invented resources, but no implementation, parser, static checker, schema validator, deterministic build, relation-consistency pass, generated-skill test, compilation receipt or preservation result is published.",
+  "interpreter_or_runtime": "At evaluation time an LLM agent receives retrieved skill references inside ReAct-style ALFWorld, ScienceWorld or WebShop prompts and emits environment actions. Live feedback is said to override generated guidance. The paper reports simulated text-environment execution only; it does not specify skill-parser behavior, retrieval top-k/weights, context-budget truncation, concurrency, sandboxing, permissions, external transaction semantics or production deployment.",
+  "composition_rule": "Downward extraction rewrites source skills to delegate a shared operation to a lower-level node; subset rewrites only the broader skill; merge creates one canonical skill; upward induction creates an abstract parent that composes children. The creator prioritizes high-level nodes for framework and low-level nodes for detail. Natural-language LLM judgment decides coverage and near-equivalence; similarity thresholds, merge-conflict resolution, graph-cycle checks, level-conflict handling and behavioral composition tests are absent.",
+  "state_or_effect_model": "The formal trajectory contains task, observation/action sequence and final reward; skills describe environment actions and state checks; self-evolution mutates the library and pyramid. The paper does not define effect signatures, capabilities, secrets, network/file access, idempotence, rollback, compensation, approval or quarantine. Its ethics section recommends task-level access control and skill-level auditing for downstream systems, confirming these controls are outside the presented mechanism.",
+  "uncertainty_model": "All headline cells come from one temperature-zero run. No repeated seed/run, confidence interval, standard error, significance test, paired task delta, judge calibration or API nondeterminism analysis is reported. Temperature zero does not by itself make hosted API calls or an evolving multi-agent process reproducible. Relation confidence is optional free-form similarity/evidence, not calibrated uncertainty; web-skill filtering and graph decisions have no error bars, precision/recall or sensitivity analysis.",
+  "validation_regime": {
+    "formal": "equations define the intended hierarchy and updates but no theorem, formal semantics, mechanized proof or invariant proof is supplied",
+    "new_skill_admission": "the abstract/conclusion say new skills are validated before incorporation, but section 2.4 and equation 9 connect every newly created skill through Relation Analyzer/Builder with no reward threshold, test, reject/quarantine branch or validation receipt; creator prompts ask the skill text to contain verification guidance, which is not system-level admission validation",
+    "main_evaluation": "879 task instances per method-backbone pair: 274 ALFWorld, 200 WebShop and 405 ScienceWorld; five methods and four backbones yield 17,580 author-reported episodes",
+    "main_results": "Table 1 reports reward/success and average steps for four backbones; SkillPyramid averages 73.7 reward versus 65.8 for the same-initial-library flat baseline, but one run and no paired/statistical analysis limit inference",
+    "ablation": "DeepSeek-V3.2 ablations on ALFWorld and ScienceWorld remove atomic, abstract, self-evolution or pyramid-grounded generation; exact split aggregation, repeated runs and paired task outputs are not released",
+    "learning_curve": "Figure 3 compares full, static, append-only and from-scratch systems on incoming ALFWorld seen tasks, but task order, smoothing/windowing, per-task values and repeated-order variability are absent",
+    "atomic_abstract_grouping": "331 extreme tasks are selected using quartiles of oracle-trajectory action mass and dependency depth; task IDs, quartile values, split composition and grouping code are absent, so the asymmetric component interpretation cannot be independently checked",
+    "gaia_lite": "75 public-validation GAIA Level 1/2 tasks and 2,271 retained skills from 150K candidates are reported; sample IDs/seed, backbone, candidate source, quality filter, deduplication, exact-match scorer and result traces are not specified or released",
+    "cost": "construction uses about 8.4K calls/24.7M tokens, main evaluation about 315K calls/0.967B tokens and analysis about 24K calls/76.9M tokens; latency, money, provider versions and per-condition allocation are absent",
+    "reproducibility": "the exact paper/source and prompts are public, but implementation, environment locks, exact model endpoints/snapshots, embedding thresholds, initial/evolved libraries, graph states, splits, task orders, web corpus/filter, raw actions, rewards, step denominators and logs are not"
+  },
+  "equivalence_notions": [
+    {
+      "notion": "shared-part reuse",
+      "support": "AN_LLM_IDENTIFIES_A_CONCRETE_OPERATION_SHARED_BY_MULTIPLE_SKILLS_AND_REWRITES_EACH_TO_REFERENCE_ONE_ATOMIC_SKILL",
+      "boundary": "No behavioral equivalence, pre/postcondition compatibility or regression test confirms that the extracted operation preserves each source skill."
+    },
+    {
+      "notion": "subset coverage",
+      "support": "ONE_SKILL_MAY_BE_CLASSIFIED_AS_A_STRICT_REUSABLE_SUBSKILL_OF_A_BROADER_SKILL",
+      "boundary": "Coverage is free-form analyzer judgment; no semantic entailment, trace inclusion or counterexample test is defined."
+    },
+    {
+      "notion": "merge identity",
+      "support": "NEAR_EQUIVALENT_SKILLS_WITH_MATCHING_TRIGGERS_INPUTS_WORKFLOW_AND_OUTPUTS_ARE_INTENDED_TO_BECOME_ONE_CANONICAL_SKILL",
+      "boundary": "Similarity/near-equivalence thresholds, conflicting-guardrail resolution, lineage redirect and behavioral regression are unspecified."
+    },
+    {
+      "notion": "abstract pattern membership",
+      "support": "PEER_SKILLS_WITH_A_SHARED_HIGH_LEVEL_TASK_SCHEMA_ARE_GROUPED_UNDER_AN_ABSTRACT_PARENT",
+      "boundary": "The parent is generated prose, not a proved abstraction relation, and no completeness/soundness check connects the parent to all child traces."
+    },
+    {
+      "notion": "task coverage",
+      "support": "THE_CREATOR_DIRECTLY_REUSES_A_SKILL_IF_IT_JUDGES_THAT_SKILL_TO_FULLY_COVER_THE_NEW_TASK",
+      "boundary": "No executable coverage predicate or held-out validation distinguishes full from partial support."
+    }
+  ],
+  "lifecycle_and_provenance": "SkillPyramid adds stable-looking identifiers, explicit dependency references, canonical merges, incremental updates and a persistent hierarchy, so it offers useful registry structure. It does not specify skill versions, source task/trajectory, author/model/prompt, creation/update timestamps, immutable hashes, status, usage/success history, deprecation/tombstones, dependency compatibility, review/approval, rollback, release channel or graph migration. Atomic extraction rewrites existing skills and merge removes duplicates without a published lineage or restore record. No initial or evolved registry snapshot is released.",
+  "limitations_and_failure_boundaries": [
+    "The exact artifact is an arXiv v1 preprint; no SkillPyramid implementation, graph or evaluated skill library is public.",
+    "The paper says new skills are validated before incorporation, but its self-evolution equation and prompts contain no admission test, reject/quarantine branch or validation receipt.",
+    "A Verification section inside generated prose tells a future agent how to check task progress; it is not evidence that the generated skill itself was validated before registry mutation.",
+    "Skills and relation evidence remain unconstrained natural language, so shared-part, subset, merge and abstraction decisions are not type- or behavior-checked.",
+    "No acyclicity, layer-consistency or dependency-integrity algorithm is supplied for repeated upward/downward extraction, merging and incremental insertion.",
+    "Similarity thresholds, coarse-group formation, retrieval top-k, stage weights, full-coverage predicate and canonical-merge rules are absent.",
+    "The initial skill-library construction procedure and size are not reported, even though it materially determines both flat and pyramid conditions.",
+    "Same initial library does not isolate hierarchy alone: SkillPyramid additionally extracts/induces/generated skills and evolves them, whereas ReAct+Skills remains flat and static.",
+    "The 38.0 percent reward improvement and 27.7 percent step reduction are relative to vanilla ReAct, not the stronger same-library ReAct+Skills control.",
+    "Table 1 contains several cells where SkillPyramid is not best, including DeepSeek WebShop reward/steps and Gemini ALFWorld seen reward, so consistent superiority is only aggregate/broad, not per condition.",
+    "All results use one temperature-zero run; no variance, paired uncertainty or significance supports stability or deterministic reproducibility.",
+    "Hosted API model versions/endpoints and system nondeterminism are not pinned; temperature zero alone cannot reproduce outputs.",
+    "Average interaction-step denominators, failed-episode treatment and maximum-step rules are not stated.",
+    "Figure 3 lacks task order, raw curve values, smoothing details and repeated-order bands, so claims of stability/convergence are visual and author-reported.",
+    "The atomic-heavy/abstract-heavy grouping depends on oracle trajectories and evaluation-set quartiles; task membership and computation are unreleased.",
+    "The GAIA-Lite sample, 150K candidate provenance and 2,271-skill quality filter are unspecified, allowing unmeasured sampling/selection sensitivity.",
+    "The GAIA-Lite backbone and exact-match/scoring implementation are not stated in the reported section/table.",
+    "The paper reports about 1.07B input/output tokens across construction, main and analyses but no monetary/latency budget or scaling benchmark for larger libraries.",
+    "The initial full-library analysis is acknowledged as a scalability bottleneck; only three outer/five inner round caps are given, not complexity or convergence.",
+    "Only two reuse axes are modeled; temporal and causal dependencies are explicitly left open.",
+    "Weaker construction backbones, multimodal/embodied settings and natural distribution drift are not evaluated.",
+    "Web-mined skills create content/supply-chain risks; access control and auditing are recommendations, not implemented parts of the framework.",
+    "No versioning, provenance-complete registry, deprecation, rollback or recovery semantics accompany destructive rewrite/merge operations.",
+    "The framework does not provide probabilistic semantics, neural-weight composition, formal program equivalence or general cross-representation equivalence."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not establish a validated skill-admission lifecycle despite using the word validate in headline prose.",
+    "It does not establish deterministic reproducibility, statistical significance or per-condition superiority from a single temperature-zero run.",
+    "It does not establish semantic equivalence or safe behavior preservation for skill extraction, rewrite, merge or abstraction.",
+    "It does not demonstrate a production-safe, versioned, rollback-capable or permission-governed evolving registry.",
+    "It does not empirically validate ignition, weight-space composition or stochastic ignition semantics."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "The SKILL.md schema and exact reuse references provide a concrete bounded natural-language FunctionSpec pattern with triggers, context, workflow, checks, guardrails and outputs."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "Analyzer/Builder/Creator agents generate and rewrite specifications, but no machine-enforced compiler, code artifact or preservation guarantee is supplied."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Shared-part, subset, merge and abstract relations articulate useful equivalence candidates, but they are LLM judgments without semantic or behavioral checks."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Interactive trajectories, actions, feedback and textual verification expose effects operationally; typed effects, permissions, rollback and external transaction semantics are absent."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Layered nodes, identifiers, dependencies and incremental updates are registry primitives, but version/provenance/deprecation/rollback and a public registry artifact are missing."
+    },
+    "GAP-020": {
+      "status": "NOT_SUPPORTED",
+      "reason": "The framework reports deterministic point estimates and no probabilistic or stochastic semantics for skills or ignition."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "The final skill template names purpose, trigger, context, workflow, verification, guardrails, output and reuse dependencies."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "SKILL.md records, layered pyramid nodes, relation assignments, dependencies and trajectories are explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Three LLM agents perform extraction, induction, rewriting and generation under prompts, without implementation, parsing, static enforcement or preservation checks."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Generated SKILL.md bodies are intended artifacts, but no evaluated library, graph or concrete generated skill is released."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "ReAct-style agents consume retrieved skill references and execute bounded text-environment actions."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Observation/action/reward trajectories are formalized and used conceptually, but no raw trace or evolution log is public."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Task rewards, environment feedback and textual verification exist, but the claimed pre-incorporation validation gate is absent and all receipts are unreleased."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Layer-aware retrieval, shared/subset/merge relations and two-stage composition are concrete, while thresholds, coverage tests and graph safety are unspecified."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Identifiers, layers, dependencies, canonical nodes and incremental updates provide a graph registry skeleton without versions, provenance, tombstones, approvals, rollback or public state."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "NO_PRIOR_SEMANTIC_EVIDENCE_CARD",
+    "verdict": "NEW_CODEX56_EXTREME_CARD_WITH_PARTIAL_SUPPORT",
+    "corrections": [
+      "Verified the complete atomic/abstract pyramid, relation taxonomy, skill schema and three-agent construction/generation prompts.",
+      "Separated the claimed validation lifecycle from the actual equation-9 unconditional incorporation procedure.",
+      "Bounded temperature-zero point estimates to one author-reported run rather than deterministic reproduction or uncertainty-aware evidence.",
+      "Clarified that headline 38.0/27.7 percent improvements are against vanilla ReAct, not the same-initial-library flat-skill control.",
+      "Separated LLM relation labels from behavioral equivalence and safe rewrite/merge preservation.",
+      "Recorded the missing GAIA-Lite sample, 150K candidate provenance, 2,271-skill filter, backbone and result artifacts.",
+      "Verified exact PDF/source bytes and the absence of implementation, libraries, graph states, splits and raw logs."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "PARTIAL",
+  "partial_projection": "SkillPyramid supplies strong bounded evidence for a natural-language FunctionSpec-Representation-Interpreter architecture and useful partial evidence for LLM-driven compilation, routing, validation and registry structure. The projection remains partial because relation/equivalence decisions are unenforced, the stated validation-before-incorporation gate is absent, one-run results lack uncertainty, key benchmark/filter details and all runtime states are unreleased, and version/provenance/effect/rollback governance is missing.",
+  "source_specific_reasoning": "PARTIAL is mandatory. The exact paper and source reveal a detailed hierarchy, prompts, task splits and very large reported evaluation, but not an auditable implementation or validated lifecycle. In particular, equation 9 inserts a generated skill without the validation claimed in the abstract/conclusion; temperature zero is the entire uncertainty treatment; GAIA-Lite/web-skill selection is underspecified; and natural-language relation assignments do not establish equivalence or rewrite safety. The card preserves the architecture and author-reported results without treating model review or unreleased experiment claims as proof or independent empirical validation.",
+  "projection_boundary": "These are 121CX projections from the complete exact 16-page arXiv v1 PDF, all rendered pages, complete CC BY source archive and official arXiv metadata. This model review is not a mechanized proof, independent audit of unreleased implementation/skill states, reproduction of ALFWorld/WebShop/ScienceWorld/GAIA-Lite, security validation of self-evolving agents, or empirical validation of ignition.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T07:35:00Z"
+}

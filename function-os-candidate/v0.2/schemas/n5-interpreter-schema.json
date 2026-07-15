@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "function-os/v0.2/schemas/n5-interpreter-schema.json",
+  "title": "N5 Interpreter Schema v0.2",
+  "description": "Interpreter — executes N4 Artifact with given inputs, checks pre/postconditions",
+  "type": "object",
+  "required": [
+    "execution_id",
+    "artifact_id",
+    "status",
+    "result",
+    "trace_id",
+    "precondition_result",
+    "postcondition_result"
+  ],
+  "properties": {
+    "execution_id": {
+      "type": "string",
+      "pattern": "^EXE-FN-\\d{8}-\\d{4}-\\d+$"
+    },
+    "artifact_id": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "OK",
+        "PRECONDITION_FAILED",
+        "POSTCONDITION_FAILED",
+        "TYPE_ERROR",
+        "RUNTIME_ERROR"
+      ]
+    },
+    "inputs": {
+      "type": "object"
+    },
+    "outputs": {
+      "type": "object"
+    },
+    "result": {
+      "type": "object"
+    },
+    "trace_id": {
+      "type": "string"
+    },
+    "precondition_result": {
+      "type": "object"
+    },
+    "postcondition_result": {
+      "type": "object"
+    },
+    "time_ms": {
+      "type": "number"
+    }
+  }
+}

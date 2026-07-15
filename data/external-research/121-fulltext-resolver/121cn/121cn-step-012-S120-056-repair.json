@@ -1,0 +1,15 @@
+{
+  "step": 12,
+  "source_id": "S120-056",
+  "title": "Programming with algebraic effects and handlers",
+  "previous_status": "FAILED_LEGAL_OA_NOT_FOUND (ScienceDirect 403)",
+  "new_status": "EXTRACTED_FULL",
+  "method": "OpenAlex API \u2192 arXiv 1203.1539",
+  "doi": "10.1016/j.jlamp.2014.02.001",
+  "sha256": "65c43ce564c5dfd6b0bb06a1d60a46c126a1ce08e67725e76ba93bc528726a7c",
+  "pages": 25,
+  "words": 9447,
+  "success": true,
+  "authors": "Andrej Bauer, Matija Pretnar",
+  "venue": "Journal of Logical and Algebraic Methods in Programming (arXiv preprint)"
+}

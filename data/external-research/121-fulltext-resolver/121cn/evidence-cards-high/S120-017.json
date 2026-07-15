@@ -1,0 +1,83 @@
+{
+  "source_id": "S120-017",
+  "canonical_title": "Latent Execution for Neural Program Synthesis",
+  "authors": "Xinyun Chen, Pengcheng Yin, Dawn Song",
+  "year": 2022,
+  "venue": "ICLR 2022",
+  "doi_or_identifier": "arXiv:2112.00385",
+  "source_family": 3,
+  "url": "https://arxiv.org/pdf/2112.00385",
+  "version": "preprint",
+  "sha256": "pending",
+  "file_size_bytes": 0,
+  "page_count": 13,
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "GLM52_HIGH_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "Abstract",
+    "Introduction",
+    "Method",
+    "Experiments",
+    "Conclusion"
+  ],
+  "page_or_section_anchors": [
+    "Abstract",
+    "Sec 1",
+    "Sec 2",
+    "Sec 3",
+    "Sec 4"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "LaSynth learns latent representations that approximate program execution, enabling synthesis of partial programs even when semantics are not well-defined.",
+    "The method bridges the gap between program structure and execution by learning a latent execution space.",
+    "Experiments show improved program synthesis accuracy on Karel and SPoC benchmarks."
+  ],
+  "function_concept_used_by_paper": "Functions are programs with latent execution representations. The paper learns to approximate execution in a latent space, allowing partial/ill-defined programs to be 'executed' approximately.",
+  "representation_or_carrier": "Latent execution vectors that approximate the effect of executing a program. Programs are represented as token sequences, and their execution is approximated in latent space.",
+  "compiler_or_generator": "The neural program synthesizer compiles input-output examples into program candidates. Latent execution provides a differentiable approximation of program execution.",
+  "interpreter_or_runtime": "The latent execution module serves as an approximate interpreter: it maps program tokens and input state to output state in latent space, without actually running the program.",
+  "composition_rule": "Sequential program execution is approximated through latent space operations. Each statement updates the latent state.",
+  "state_or_effect_model": "Latent state model: the program state is represented as a latent vector that is updated after each program statement. This is a form of effect tracking in latent space.",
+  "validation_regime": "Empirical: program synthesis accuracy on Karel and SPoC benchmarks.",
+  "equivalence_notions": "Not addressed. No formal equivalence between latent and actual execution.",
+  "limitations_and_failure_boundaries": [
+    "Latent execution is approximate, not exact \u2014 programs may behave differently when actually executed.",
+    "Limited to simple imperative languages (Karel, SPoC).",
+    "No formal specification or verification of synthesized programs.",
+    "No equivalence checking between latent and actual execution."
+  ],
+  "what_the_paper_does_not_support": [
+    "Does not support formal specification (GAP-015).",
+    "Does not support exact equivalence (GAP-017) \u2014 only latent approximation.",
+    "Does not support formal effects (GAP-018) \u2014 only latent state.",
+    "Does not support formal verification (GAP-019)."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "WEAK_EVIDENCE: Program structure as implicit specification.",
+    "GAP-016": "PARTIAL_SUPPORT: Latent execution as approximate compilation/interpretation.",
+    "GAP-017": "WEAK_EVIDENCE: Latent execution provides approximate equivalence, but not formal.",
+    "GAP-018": "PARTIAL_SUPPORT: Latent state updates as approximate effect tracking.",
+    "GAP-019": "NOT_ADDRESSED",
+    "GAP-020": "WEAK_EVIDENCE: Latent execution is probabilistic."
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "WEAK_EVIDENCE: I/O examples as specification.",
+    "N2_Representation": "MULTI_SOURCE_EVIDENCE: Latent execution space as program representation.",
+    "N3_Compiler": "PARTIAL_SUPPORT: Neural synthesizer as compiler from I/O to programs.",
+    "N4_Artifact": "WEAK_EVIDENCE: Synthesized programs as artifacts.",
+    "N5_Interpreter": "MULTI_SOURCE_EVIDENCE: Latent execution module as approximate interpreter.",
+    "N6_ExecutionTrace": "MULTI_SOURCE_EVIDENCE: Latent state updates form execution trace.",
+    "N7_Validator": "WEAK_EVIDENCE: Latent execution as approximate validation.",
+    "N8_ComposerRouter": "WEAK_EVIDENCE: Sequential statement composition.",
+    "N9_VersionedRegistry": "NO_EVIDENCE"
+  },
+  "claim_support_status": "PARTIAL",
+  "source_specific_reasoning": "S120-017 provides novel evidence for N6 (ExecutionTrace) and N5 (Interpreter): the latent execution module approximates program execution in a differentiable latent space, enabling partial program synthesis. The latent state updates form a primitive execution trace. This is a unique contribution \u2014 most other papers do not model execution at all. However, the latent execution is approximate, not formal, and no exact equivalence or verification is provided.",
+  "comparison_to_provisional": "NARROWS",
+  "comparison_reason": "High review reveals latent execution contribution not likely captured in provisional card.",
+  "reviewer_model": "qclaw/pool-glm-5.2-night",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T19:40:00Z",
+  "supersedes_provisional_card_id": "S120-017-provisional-121"
+}

@@ -1,0 +1,65 @@
+{
+  "task_id": "IGNITION-20260709-120",
+  "created_at": "2026-07-13T23:34:00+08:00",
+  "executor": "QClaw",
+  "model": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "wscf_repo": {
+    "path": "/tmp/wscf-120",
+    "head_before": "a797b07eb22dd203545ea09fa7b58430f744a613",
+    "branch": "records/ignition-120-function-paradigm-atlas-20260713"
+  },
+  "ignition_1111_repo": {
+    "path": "/tmp/1111-ignition-120",
+    "head": "0fc7f437a67a9834b404ecdd2b0c68d6b2ab85f5"
+  },
+  "baseline_hashes": {
+    "085_frozen_v1": {
+      "file": "data/foundation/project-state-085.json",
+      "sha256": "7d79f30a5eacb7f12c7ca9594c711000e030f7e12a61a9e609dbe75dac532a03"
+    },
+    "psi0_definition": {
+      "file": "统一函数总表/0001-Ψ₀元函数完整数学定义.md",
+      "sha256": "b90235ae9beb3b98458e0075345f3d3c53eaefe72035609bdea17385a3c1fd56"
+    },
+    "unified_function_table_dir": {
+      "dir": "统一函数总表/",
+      "file_count": 87,
+      "note": "Directory integrity preserved - no modifications"
+    },
+    "unified_case_table_dir": {
+      "dir": "统一案例总表/",
+      "file_count": 87,
+      "note": "Directory integrity preserved - no modifications"
+    }
+  },
+  "tool_audit": {
+    "anysearch": {
+      "status": "available",
+      "api_key_env": "ANYSEARCH_API_KEY",
+      "api_key_loaded_from": "~/.zshrc",
+      "api_key_prefix": "as_sk_15",
+      "endpoint": "https://api.anysearch.com/v1/search"
+    },
+    "crossref": {
+      "status": "available",
+      "endpoint": "https://api.crossref.org/works/{DOI}"
+    },
+    "web_search": "available via web_search tool",
+    "104_evidence_tier_schema": "data/external-research/104-evidence-tier-schema.md",
+    "106_validator": "data/external-research/106-105-correction/106-validator.py"
+  },
+  "red_lines_acknowledged": [
+    "不修改 Ψ₀ 数学定义",
+    "不新增函数编号",
+    "不修改 085 frozen v1",
+    "不修改统一函数总表和统一案例总表",
+    "不把论文中的 function 自动投影为点火中的正式函数",
+    "不把标题/摘要/引用量/DOI 存在当作内容支持",
+    "不把权重相似/行为近似/性能接近称为严格函数等价",
+    "不把模型生成的总结称为论文原文结论",
+    "不合并/关闭/重定向任何现有 PR",
+    "不泄漏任何 API key、token 或本地凭据"
+  ],
+  "output_dir": "data/external-research/120-function-paradigm-atlas/"
+}

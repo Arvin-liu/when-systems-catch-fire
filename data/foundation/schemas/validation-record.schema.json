@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "entity_key",
+    "id",
+    "asset_kind"
+  ],
+  "properties": {
+    "entity_key": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "asset_kind": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true,
+  "title": "Validation Record"
+}

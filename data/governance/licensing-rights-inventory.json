@@ -1,0 +1,17 @@
+{
+  "status": "candidate_audit_not_legal_advice",
+  "effective_license_changed": false,
+  "root_license_replaced": false,
+  "current_root_license": "MIT",
+  "history_boundary": "Existing MIT grants for already-published material are not retroactively withdrawn; future versions require explicit approval and legal review.",
+  "classes": [
+    {"class": "original_software", "examples": ["tools", "workflows", "future executors", "Function OS implementations"], "candidate": "BUSL-1.1 then AGPL-3.0-or-later after four years"},
+    {"class": "original_docs_reports", "examples": ["docs", "reports", "README prose"], "candidate": "CC BY-NC-SA 4.0"},
+    {"class": "original_structured_data", "examples": ["data/foundation", "registries", "ledgers"], "candidate": "CC BY-NC-SA 4.0 or further database-rights review"},
+    {"class": "public_interfaces_schema", "examples": ["schemas", "llms.txt", "protocol/interface descriptions"], "candidate": "CC BY-SA 4.0 or Apache-2.0"},
+    {"class": "third_party_material", "candidate": "original rights retained"},
+    {"class": "unclear_rights", "candidate": "quarantine or current status pending audit"},
+    {"class": "project_name_marks", "candidate": "trademark/name-use control"}
+  ],
+  "pending": ["professional legal review", "contributor license mechanism", "third-party rights review", "release boundary decision"]
+}

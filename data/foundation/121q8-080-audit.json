@@ -1,0 +1,63 @@
+{
+  "task_id": "IGNITION-20260715-121Q8",
+  "step": "001",
+  "status": "AUDIT_ONLY_NO_REPAIR",
+  "validator": "tools/foundation/validate_080_adjudications.py -> tools/foundation/build_080_queue.py::validate",
+  "validator_contract": {
+    "queue_rows": 617,
+    "completed_queue_rows": 25,
+    "review_rows": 25,
+    "review_method": "FULL_SOURCE_TEXT_REVIEW",
+    "remaining_pending": 592,
+    "cumulative_verified_registry_reviews": 30,
+    "legacy_tables_unchanged_against": "5d28eb5c5654e9acc78ef206f2923b23db66f28f"
+  },
+  "observed": {
+    "review_rows": 617,
+    "queue_rows": 617,
+    "escalation_rows": 506,
+    "run_state_task_id": "IGNITION-20260709-083",
+    "run_state_status": "GLM_HIGH_REPAIR_COMPLETE_MAX_QUEUE_READY",
+    "queue_status_counts": {
+      "PROVISIONAL_GLM_SOURCE_REVIEW_PENDING_ACCEPTANCE": 617
+    },
+    "review_method_counts": {
+      "FULL_SOURCE_TEXT_REVIEW": 617
+    },
+    "reviewer_model_class_counts": {
+      "GLM-5.2": 617
+    },
+    "missing_run_state_fields": [
+      "completed_valid_reviews_this_task",
+      "remaining_pending",
+      "cumulative_verified_registry_reviews"
+    ],
+    "status_axis": {
+      "079_independently_verified": 5,
+      "080_first_batch_source_text_adjudication": 617,
+      "081_glm_source_review_records": 617,
+      "082_second_pass_glm_sampling_pass": 37,
+      "082_second_pass_glm_needs_correction": 27,
+      "082_template_not_source_specific": 128,
+      "082_unresolved_high_risk": 11,
+      "083_repaired_records": 155,
+      "083_glm_high_resolved": 150,
+      "083_no_escalation_needed": 3,
+      "083_max_required": 353,
+      "cross_model_or_max_acceptance": "NOT_COMPLETED",
+      "total_queue": 617
+    }
+  },
+  "finding": {
+    "root_cause": "080 canonical paths were later overwritten by the 083 GLM repair/max-queue state. The validator still represents the original 080 first-batch contract: 25 accepted source-text reviews, 592 pending items, and 2 highest-model escalation records.",
+    "not_a_valid_fix": [
+      "delete validator checks",
+      "lower expected review count semantics",
+      "continue-on-error",
+      "hard-code PASS",
+      "invent 25 fake records"
+    ],
+    "minimal_repair_direction": "Restore the 080 canonical artifacts from the deterministic 080 generator contract, preserving later 083 artifacts in their own 083 files. Keep 083 provisional records out of 080-source-text-adjudications.jsonl and 080-run-state.json."
+  },
+  "frozen_assets_modified": false
+}

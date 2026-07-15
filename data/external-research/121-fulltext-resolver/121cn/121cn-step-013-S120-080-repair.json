@@ -1,0 +1,13 @@
+{
+  "step": 13,
+  "source_id": "S120-080",
+  "title": "Dynamic Neural Turing Machine with Continuous and Discrete Addressing Schemes",
+  "previous_status": "FAILED_LEGAL_OA_NOT_FOUND (MIT Press 403)",
+  "new_status": "FAILED_LEGAL_OA_NOT_FOUND",
+  "method": "OpenAlex, Unpaywall, arXiv API \u2014 no OA version exists",
+  "success": false,
+  "doi": "10.1162/neco_a_01060",
+  "venue": "Neural Computation (MIT Press), paywalled",
+  "reason": "Published in Neural Computation (MIT Press). No arXiv preprint, no PMC, no institutional repository OA version. Unpaywall reports is_oa=None. Paper is behind paywall with no legal OA access.",
+  "action": "Mark as BLOCKED_INSUFFICIENT_TEXT. Cannot review without full text."
+}

@@ -1,0 +1,242 @@
+{
+  "source_id": "S120-028",
+  "canonical_title": "NeuralOperator: Learning in Infinite Dimensions",
+  "title": "NeuralOperator: Learning in Infinite Dimensions",
+  "authors": [
+    "NeuralOperator maintainers and contributors"
+  ],
+  "year": 2026,
+  "version": "registered GitHub HTML snapshot 2026-07-13 plus live main 86a8bc7812a31b42c4f7895693cf4ac11521c066 verified 2026-07-14; latest stable package 2.0.0",
+  "doi_or_identifier": "github:neuraloperator/neuraloperator@86a8bc7812a31b42c4f7895693cf4ac11521c066; PyPI neuraloperator 2.0.0",
+  "identifier": "github:neuraloperator/neuraloperator",
+  "url": "https://github.com/neuraloperator/neuraloperator",
+  "source_family": 4,
+  "source_family_name": "neural operators and function-space learning",
+  "license": "MIT",
+  "sha256": "83c384b726c8bf413bd5d988b334d1a351e40fb0b9ef7f71623a2a5beb5add5b",
+  "file_size_bytes": 318556,
+  "page_count": null,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_source": "GitHub repository HTML snapshot captured 2026-07-13",
+    "registered_sha256_match": true,
+    "registered_file_size_match": true,
+    "live_source_verified": true,
+    "live_main_commit": "86a8bc7812a31b42c4f7895693cf4ac11521c066",
+    "live_main_commit_time": "2026-07-07T09:45:28-07:00",
+    "stable_tag": "2.0.0",
+    "stable_tag_commit": "b307030d9b7ee530823d6a05bddb8238ba22a743",
+    "stable_release_date": "2025-10-22",
+    "sources_cross_checked": [
+      "GitHub repository and README",
+      "project documentation",
+      "PyPI package record",
+      "live source tree at exact main commit"
+    ]
+  },
+  "sections_reviewed": [
+    "README project scope, installation, quickstart, tensorized FNO, contributing, citation, and license",
+    "Documentation quickstart, model creation, checkpointing, Darcy sample data, Trainer, and tensorization",
+    "PyPI 2.0.0 metadata, release history, requirements, and project description",
+    "pyproject.toml build, dependency, Python, dynamic-version, and optional dependency metadata",
+    "neuralop.models public exports and registered model implementations",
+    "BaseModel registry, initializer capture, state_dict metadata, version checks, save/load/from-checkpoint paths",
+    "Trainer save-best/save-every/resume behavior and training-state manifest",
+    "datasets, transforms, layers, losses, distributed utilities, CI workflows, and tests"
+  ],
+  "page_or_section_anchors": [
+    {
+      "source": "registered GitHub HTML and live README",
+      "anchors": "NeuralOperator scope; Installation; Quickstart; Contributing; Citing; License",
+      "checked_for": "official implementation claim, FNO/TFNO APIs, ecosystem status, repository governance, and licensing"
+    },
+    {
+      "source": "documentation 2.0.0",
+      "anchors": "Quickstart lines for FNO, checkpoints, Darcy data, Trainer, and TFNO",
+      "checked_for": "end-to-end create-train-save-load artifact workflow"
+    },
+    {
+      "source": "PyPI",
+      "anchors": "2.0.0 metadata, release date, Python requirement, package description",
+      "checked_for": "stable distributable identity distinct from mutable main"
+    },
+    {
+      "source": "live source at 86a8bc7",
+      "anchors": "neuralop/models/base_model.py; neuralop/models/__init__.py; neuralop/training/training_state.py; neuralop/training/trainer.py; pyproject.toml",
+      "checked_for": "model registry, model/version metadata, checkpoint reconstruction, training-state manifest, dependencies, and package version"
+    },
+    {
+      "source": "live tests and workflows",
+      "anchors": "39 test modules and three workflows; pytest on Python 3.9; documentation and PyPI workflows",
+      "checked_for": "bounded implementation-level validation and release automation"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "This source is an implementation repository rather than a paper: it packages neural-operator models, layers, datasets, transforms, losses, training, distributed utilities, examples, tests, documentation, and releases as a PyTorch library.",
+      "anchors": "Repository tree, README, documentation, and pyproject at live main 86a8bc7"
+    },
+    {
+      "claim": "The stable public artifact is neuraloperator 2.0.0, while the reviewed live main is a later mutable commit with package version still reporting 2.0.0; stable tag and branch identity must not be conflated.",
+      "anchors": "PyPI 2.0.0; tag b307030; main 86a8bc7; neuralop.__version__"
+    },
+    {
+      "claim": "BaseModel maintains an in-process name registry, captures initialization arguments, embeds model metadata and a class version in state dictionaries, and warns on checkpoint-version mismatch.",
+      "anchors": "neuralop/models/base_model.py at 86a8bc7"
+    },
+    {
+      "claim": "Checkpoint and training-state facilities persist model weights and constructor metadata plus optional optimizer, scheduler, regularizer, epoch, and a manifest; Trainer supports periodic or best-metric saves and resume.",
+      "anchors": "BaseModel checkpoint methods; neuralop/training/training_state.py; neuralop/training/trainer.py"
+    },
+    {
+      "claim": "The implementation includes multiple operator architectures and 39 test modules with push/PR CI, but repository tests and README claims do not by themselves prove mathematical resolution invariance or production correctness for arbitrary data and grids.",
+      "anchors": "neuralop/models, neuralop/layers, neuralop/**/tests, .github/workflows/test.yml, README"
+    }
+  ],
+  "function_concept_used_by_paper": "In this implementation, a function is represented by PyTorch tensors plus spatial/grid metadata and preprocessing conventions. A neural operator is a torch.nn.Module configured by channels, modes or geometry parameters, trained on function-valued datasets, saved as weights plus constructor metadata, and evaluated through model-specific layers.",
+  "representation_or_carrier": {
+    "source_carrier": "Python package modules, configuration, datasets, documentation, tests, and release metadata",
+    "runtime_carrier": "PyTorch tensors, data processors, operator layers, model instances, optimizers, schedulers, and distributed wrappers",
+    "artifact_carrier": "state-dict file, serialized constructor metadata, training manifest, optional optimizer/scheduler/regularizer states, and epoch",
+    "identity_carrier": "package version, Git commit, release tag, registered model name, model class version, and checkpoint filename"
+  },
+  "specification_language": "The public specification surface is Python constructors and configuration: model_arch, in/out channels, Fourier modes, hidden channels, factorization/rank, data channels/processors, losses, optimizer/scheduler, training epochs, and checkpoint policy. Type hints and runtime signatures exist, but no formal tensor-shape/effect language, semantic pre/postcondition system, or compatibility schema is enforced across the whole library.",
+  "compiler_or_generator": {
+    "construction": "Model classes and the config-driven registry instantiate FNO, TFNO, GINO, FNOGNO, UQNO, RNO, OTNO, and related artifacts from constructor arguments.",
+    "training": "Trainer orchestrates batches, preprocessing, losses, optimization, evaluation, checkpointing, and optional distributed execution.",
+    "serialization": "BaseModel captures initialization arguments and state; training_state saves additional optimizer/scheduler/regularizer and epoch state.",
+    "boundary": "This is an executable library workflow, not a compiler from a formal function specification and not a guarantee that a configuration is semantically correct."
+  },
+  "interpreter_or_runtime": "The runtime is PyTorch plus model-specific numerical layers: spectral convolution, integral/graph transforms, attention kernels, resampling, embeddings, data transforms, and tensor operations. Device, dtype, dependency, grid, padding, and preprocessing choices remain part of the execution environment rather than a single abstract interpreter.",
+  "composition_rule": "Models compose PyTorch modules and layers; config dispatch selects a registered model class; Trainer composes data processing, forward pass, losses, optimizer, scheduler, evaluation, and checkpoints. These are concrete implementation compositions, but there is no runtime router that selects among independently versioned trained operator artifacts by capability or fallback policy.",
+  "state_or_effect_model": "The library explicitly manages mutable model parameters, optimizer/scheduler/regularizer state, epochs, files, devices, distributed ranks, W&B logging, datasets, and checkpoints. Effects are conventional Python/PyTorch behavior, not declared in a typed effect system; file safety, remote logging, credentials, atomicity, rollback, and reproducibility are caller responsibilities.",
+  "uncertainty_model": "The source includes UQNO, equation/data losses, evaluation loaders, and stochastic training utilities, but the README and common runtime do not define a unified calibrated uncertainty contract. Random seeds, model uncertainty, data uncertainty, confidence intervals, and error propagation are model- and experiment-specific.",
+  "validation_regime": {
+    "automated": "39 source-tree test modules and push/PR pytest workflow on Python 3.9, plus documentation build and release workflows",
+    "examples": "bundled Darcy, Burgers, nonlinear Poisson, Navier-Stokes, spherical and other datasets plus quickstart training",
+    "artifact_checks": "strict PyTorch state loading, stored constructor/model version metadata, and warning on class-version mismatch",
+    "boundary": "No test result was inferred merely from file presence; the source review did not execute the full dependency/GPU test matrix, and unit coverage does not establish universal numerical correctness."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "checkpoint reconstruction",
+      "support": "IMPLEMENTED_WITH_VERSION_WARNING",
+      "boundary": "Constructor metadata plus state dict can recreate a model class, but dependency, code, device, dtype, preprocessing, dataset, and environment identity are not fully locked."
+    },
+    {
+      "notion": "stable release versus main",
+      "support": "EXPLICITLY_DISTINCT",
+      "boundary": "PyPI/tag 2.0.0 and mutable main 86a8bc7 are different provenance points even though main still reports version 2.0.0."
+    },
+    {
+      "notion": "resolution invariance",
+      "support": "LIBRARY_CLAIM_AND_ARCHITECTURAL_INTENT",
+      "boundary": "The repository claim is not an implementation-wide proof that every model/configuration transfers accurately to every resolution or grid."
+    },
+    {
+      "notion": "general software semantic equivalence",
+      "support": "NOT_SUPPORTED",
+      "boundary": "Checkpoint loadability and tensor output do not establish semantic equivalence to a PDE operator or external specification."
+    }
+  ],
+  "lifecycle_and_provenance": "This source provides materially stronger lifecycle evidence than the papers: Git commits and tags, PyPI release identity, dynamic package version, MIT license, model-name registration, per-class version metadata, saved constructor arguments, state dictionaries, training-state manifests, epoch/optimizer/scheduler restoration, CI, issues, pull requests, and contributing rules. It still lacks cryptographic artifact signatures, data/environment hashes, mandatory schema migration, registry promotion stages, deployment telemetry, drift detection, supersession links, rollback policy, and retirement state.",
+  "limitations_and_failure_boundaries": [
+    "The registered source is dynamic GitHub HTML and was incorrectly labeled a published manuscript; reproducible review requires the separately recorded commit and release identities.",
+    "Live main and stable 2.0.0 are distinct while both report package version 2.0.0, so the package version alone is insufficient provenance.",
+    "Checkpoint metadata stores constructor objects through torch serialization and warns rather than blocks on class-version mismatch; it does not capture the full environment or data lineage.",
+    "Model registry names are process-local class mappings, not a durable multi-stage artifact registry.",
+    "Strict state-dict loading checks keys but cannot guarantee numerical or semantic compatibility across dependencies, devices, preprocessing, or changed model code.",
+    "README resolution-invariance claims remain architecture- and data-dependent in practice and must not be generalized to every provided model and configuration.",
+    "The repository contains broad tests, but the current review did not execute the full dependency and accelerator matrix; file presence is not a passing-test claim.",
+    "W&B and filesystem effects are configured operationally without a typed permission, secret, transaction, or rollback model."
+  ],
+  "what_the_paper_does_not_support": [
+    "It is not a peer-reviewed paper or mathematical proof; it is implementation and lifecycle evidence.",
+    "It does not prove that trained outputs solve PDEs correctly, generalize to arbitrary grids, or are equivalent across versions.",
+    "It does not provide a universal FunctionSpec, effect system, trace schema, capability router, or production registry.",
+    "It does not empirically validate the point architecture as a whole."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Python APIs, configs, tensor carriers, and artifact files are concrete, but formal function semantics and shape/effect contracts are incomplete."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "Construction/training, PyTorch execution, serialization, and checkpoint restoration are distinct implemented stages."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "State keys and model versions supply compatibility checks, not semantic equivalence or behavioral contracts."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Layer, config, Trainer, and state composition are implemented; cross-artifact runtime routing and fallback are absent."
+    },
+    "GAP-019": {
+      "status": "CONFIRMED",
+      "reason": "Tests, examples, loaders, losses, metrics, strict state loading, and CI provide concrete bounded implementation validation surfaces."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "UQ and stochastic training components exist and lifecycle metadata is material, but uncertainty is not unified or calibrated and governance remains incomplete."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Constructors and config define callable model inputs and hyperparameters without a formal semantic contract."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Tensor, grid, model, layer, config, dataset, checkpoint, and manifest carriers are concrete and separately implemented."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "Registry-based construction and Trainer-based fitting create executable parameter artifacts from config and data."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "Model instances, state dictionaries, constructor metadata, and packaged releases are explicit artifacts."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "PyTorch and the library's numerical layers provide a concrete runtime for the artifacts."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Training metrics, epochs, manifests, logs, and saved states expose traces, but no standardized immutable per-execution trace object exists."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Tests, losses, evaluation loaders, examples, version warnings, strict loads, and CI form concrete validation mechanisms."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "Config dispatch and module composition are implemented, but capability-based routing among deployed artifacts is not."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Git/PyPI versions, process-local model registry, class versions, checkpoint metadata, and manifests provide substantial primitives without promotion, drift, supersession, or retirement governance."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_IMPLEMENTATION_CARD",
+    "corrections": [
+      "No per-source provisional evidence card existed for S120-028.",
+      "The source registry incorrectly labels the GitHub HTML as a published or accepted manuscript; it is a mutable software repository snapshot.",
+      "The exact live main commit and the separate stable 2.0.0 tag/package were added so repository state is not represented by a floating URL alone."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "At exact reviewed revisions, NeuralOperator provides direct implementation evidence for a bounded Representation-Compiler-Artifact-Interpreter-Validator lifecycle: named model construction, PyTorch execution, training, testing, checkpoint metadata, state restoration, releases, and CI all exist as inspectable code and artifacts.",
+  "source_specific_reasoning": "Unlike the preceding mathematical papers, this source demonstrates that the operator-learning abstractions have a real software carrier and partial lifecycle. The strongest evidence is not the README's broad resolution claim but the inspected exact source: registered model construction, executable layer families, Trainer, tests, checkpoint metadata, version warnings, training manifests, Git tags, and PyPI releases. The same inspection exposes decisive boundaries: live main and stable release identity can diverge, checkpoint metadata is incomplete provenance, the registry is process-local, and no deployment drift or retirement policy exists. Therefore the implementation projection is CONFIRMED while formal semantics, universal correctness, trace immutability, routing, and full registry governance remain partial or unsupported.",
+  "projection_boundary": "All GAP and Function OS impacts above are 121CX architectural projections from the exact repository and package evidence. Source inspection is not mathematical proof, causal identification, empirical validation of the point architecture, a claim that the full test suite passed, or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T04:35:37Z"
+}

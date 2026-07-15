@@ -1,0 +1,46 @@
+{
+  "task": "IGNITION-20260709-121CN",
+  "step": 7,
+  "action": "partial_extraction_repair",
+  "source_id": "S120-013",
+  "title": "Conditional LoRA Parameter Generation",
+  "generated_at_utc": "2026-07-13T19:20:00Z",
+  "previous_status": {
+    "content_access_status": "EXTRACTED_PARTIAL (0 words, OpenReview 403)",
+    "resolution_status_old": "FAILED_LEGAL_OA_NOT_FOUND",
+    "previous_url": "https://openreview.net/pdf?id=AjunxrcKa2",
+    "previous_provider": "openreview_pdf",
+    "previous_error": "Forbidden (403)"
+  },
+  "repair_attempt": {
+    "method": "OpenAlex API search → arXiv version found",
+    "new_url": "https://arxiv.org/pdf/2408.01415",
+    "new_provider": "arxiv_pdf",
+    "doi": "10.48550/arxiv.2408.01415",
+    "download_success": true,
+    "file_magic": "PDF document, version 1.5",
+    "file_size_bytes": 3056080,
+    "sha256": "0e874caa102cb44eba2e2883baa5b6dd3e2cdb5ac2158f57b7f7c11b645c0e8f",
+    "extraction_tool": "pymupdf (fitz)",
+    "page_count": 18,
+    "word_count": 9064,
+    "char_count": 61008
+  },
+  "new_status": {
+    "content_access_status": "EXTRACTED_FULL",
+    "semantic_review_status": "NOT_REVIEWED",
+    "ready_for_review": true
+  },
+  "sections_identified": [
+    "Abstract",
+    "1 Introduction",
+    "2 Preliminary",
+    "3 Methodology",
+    "4 Experiment",
+    "5 Related Work",
+    "6 Conclusion",
+    "References",
+    "Appendix (Parameter Generation, PCA visualization)"
+  ],
+  "notes": "Paper is by Xiaolong Jin, Kai Wang, Dongwen Tang et al. from NUS. Uses diffusion model (COND P-DIFF) to generate LoRA parameters conditioned on task descriptions. Code: NUS-HPC-AI-Lab/COND-P-DIFF."
+}

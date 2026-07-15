@@ -1,0 +1,266 @@
+{
+  "step": 21,
+  "batch": "001-012",
+  "count": 12,
+  "mappings": [
+    {
+      "asset_id": "IGN-ASSET-001",
+      "canonical_name": "0000-MF-0001-正向自举通道.md",
+      "path": "统一函数总表/0000-MF-0001-正向自举通道.md",
+      "type": "meta_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-015"
+      ],
+      "mapped_nodes": [
+        "N1",
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Bootstrap function specification — defines convergence criteria",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "HIGH",
+      "implementation_risk": "LOW",
+      "notes": "Asset 1/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-002",
+      "canonical_name": "0000-MF-0002-反向自举通道.md",
+      "path": "统一函数总表/0000-MF-0002-反向自举通道.md",
+      "type": "meta_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-015"
+      ],
+      "mapped_nodes": [
+        "N1",
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Bootstrap function specification — defines convergence criteria",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "HIGH",
+      "implementation_risk": "LOW",
+      "notes": "Asset 2/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-003",
+      "canonical_name": "0000-MF-0003-正反互斥判定器.md",
+      "path": "统一函数总表/0000-MF-0003-正反互斥判定器.md",
+      "type": "meta_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-015",
+        "GAP-017"
+      ],
+      "mapped_nodes": [
+        "N1",
+        "N7"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Judgment function — defines decision criteria",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "HIGH",
+      "implementation_risk": "LOW",
+      "notes": "Asset 3/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-004",
+      "canonical_name": "0000-MF-0004-自举嵌套判定器.md",
+      "path": "统一函数总表/0000-MF-0004-自举嵌套判定器.md",
+      "type": "meta_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-015"
+      ],
+      "mapped_nodes": [
+        "N1",
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Bootstrap function specification — defines convergence criteria",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "HIGH",
+      "implementation_risk": "LOW",
+      "notes": "Asset 4/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-005",
+      "canonical_name": "0000-MF-0005-自举收敛判定器.md",
+      "path": "统一函数总表/0000-MF-0005-自举收敛判定器.md",
+      "type": "meta_function",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-015"
+      ],
+      "mapped_nodes": [
+        "N1",
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Bootstrap function specification — defines convergence criteria",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "HIGH",
+      "implementation_risk": "LOW",
+      "notes": "Asset 5/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-006",
+      "canonical_name": "0001-Ψ₀元函数完整数学定义.md",
+      "path": "统一函数总表/0001-Ψ₀元函数完整数学定义.md",
+      "type": "psi0_definition",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 6/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-007",
+      "canonical_name": "0001-Ψ₀元统一律完整定义.md",
+      "path": "统一函数总表/0001-Ψ₀元统一律完整定义.md",
+      "type": "psi0_definition",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 7/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-008",
+      "canonical_name": "0002-A1-I(t,L) 提议者意识.md",
+      "path": "统一函数总表/0002-A1-I(t,L) 提议者意识.md",
+      "type": "unknown",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 8/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-009",
+      "canonical_name": "0003-A2-提议者姿态的激进程度.md",
+      "path": "统一函数总表/0003-A2-提议者姿态的激进程度.md",
+      "type": "unknown",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 9/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-010",
+      "canonical_name": "0004-A3-R(t,L,C) 应约者退出权.md",
+      "path": "统一函数总表/0004-A3-R(t,L,C) 应约者退出权.md",
+      "type": "unknown",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 10/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-011",
+      "canonical_name": "0005-A4-R_perceived(t,L,C) 应约者感知退出权.md",
+      "path": "统一函数总表/0005-A4-R_perceived(t,L,C) 应约者感知退出权.md",
+      "type": "unknown",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 11/35. Markdown specification, not executable."
+    },
+    {
+      "asset_id": "IGN-ASSET-012",
+      "canonical_name": "0006-A5-应约者退出的成本.md",
+      "path": "统一函数总表/0006-A5-应约者退出的成本.md",
+      "type": "unknown",
+      "current_role": "Mathematical function specification in markdown",
+      "mapped_gaps": [
+        "GAP-019"
+      ],
+      "mapped_nodes": [
+        "N9"
+      ],
+      "evidence_basis": "Internal function specification, verified in 120-internal-function-asset-inventory.jsonl",
+      "capability_fit": "Derived function specification",
+      "missing_capabilities": "No executable representation, no interpreter, no test set",
+      "overlap_assets": [],
+      "recommended_action": "KEEP",
+      "priority": "LOW",
+      "implementation_risk": "LOW",
+      "notes": "Asset 12/35. Markdown specification, not executable."
+    }
+  ],
+  "timestamp": "2026-07-14T17:58:50Z"
+}

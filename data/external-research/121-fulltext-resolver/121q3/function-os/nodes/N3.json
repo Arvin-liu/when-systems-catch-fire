@@ -1,0 +1,82 @@
+{
+  "node_id": "N3",
+  "canonical_name": "Compiler",
+  "canonical_definition": "Transforms FunctionSpec + Representation into executable artifact",
+  "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+  "inputs": "FunctionSpec + Representation",
+  "outputs": "compiled_artifact",
+  "preconditions": "See node registry (Step 009)",
+  "invariants": [
+    "No FROZEN/FINAL/PROVEN status"
+  ],
+  "strongest_verified_sources": [
+    {
+      "source_id": "S120-001",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions"
+    },
+    {
+      "source_id": "S120-009",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "HyperNetworks"
+    }
+  ],
+  "partial_or_analogical_sources": [
+    {
+      "source_id": "S120-007",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "Neural Programmer: Inducing Latent Programs with Gradient Descent"
+    },
+    {
+      "source_id": "S120-017",
+      "identity": "CORRECTED",
+      "semantic": "PARTIAL",
+      "title": "Latent Execution for Neural Program Synthesis"
+    },
+    {
+      "source_id": "S120-018",
+      "identity": "CORRECTED",
+      "semantic": "PARTIAL",
+      "title": "SPoC: Search-based Pseudocode to Code"
+    },
+    {
+      "source_id": "S120-020",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Parsel: Algorithmic Reasoning with Language Models by Composing Decompositions"
+    },
+    {
+      "source_id": "S120-021",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Execution Guided Line-by-Line Code Generation"
+    },
+    {
+      "source_id": "S120-022",
+      "identity": "NOT_FOUND",
+      "semantic": "PARTIAL",
+      "title": "Learning to Reason via Program Generation, Emulation, and Search"
+    },
+    {
+      "source_id": "S120-075",
+      "identity": "NOT_FOUND",
+      "semantic": "PARTIAL",
+      "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks"
+    }
+  ],
+  "counterevidence": "No single compiler handles all input types. Each is domain-specific.",
+  "limitations": "Multiple compilers needed. Meta-compiler design required.",
+  "linked_gaps": [],
+  "candidate_interface": "Meta-compiler dispatching to specialized compilers based on input type",
+  "candidate_status": "PARTIAL_CANDIDATE",
+  "unresolved_questions": "Multiple compilers needed. Meta-compiler design required.",
+  "prohibited_wording": [
+    "Do not claim FROZEN/FINAL/PROVEN",
+    "Do not claim papers verify N3",
+    "Do not claim external research solves N3"
+  ],
+  "timestamp": "2026-07-14T17:57:23Z"
+}

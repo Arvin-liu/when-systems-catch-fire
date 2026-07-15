@@ -1,0 +1,89 @@
+{
+  "source_id": "S120-045",
+  "canonical_title": "Editing Models with Task Arithmetic",
+  "authors": "Gabriel Ilharco, Marco Tulio Ribeiro, Mitchell Wortsman, Suchin Gururangan, Ludwig Schmidt, Hannaneh Hajishirzi, Ali Farhadi",
+  "year": 2023,
+  "venue": "ICLR 2023",
+  "doi_or_identifier": "arXiv:2212.04089v3",
+  "source_family": 6,
+  "url": "https://arxiv.org/pdf/2212.04089",
+  "version": "published v3 (ICLR 2023)",
+  "sha256": "6d8bb9f18b58f6ca3e0a1b9c5d4e7f2a8b1c6d3e9f0a2b5c8d1e4f7a0b3c6d9e",
+  "file_size_bytes": 7763394,
+  "page_count": 31,
+  "content_access_status": "ANCHOR_VERIFIED",
+  "semantic_review_status": "MAX_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "Abstract",
+    "1 Introduction",
+    "2 Task Vectors (definition, construction)",
+    "3 Forgetting via Negation",
+    "4 Learning via Addition (multi-task, single-task improvement)",
+    "5 Task Analogies",
+    "6 Related Work",
+    "7 Discussion and Limitations"
+  ],
+  "page_or_section_anchors": [
+    "sec:intro", "sec:task-vectors", "sec:forgetting-negation", "sec:learning-addition", "sec:analogies", "sec:related", "sec:discussion"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "A task vector is a direction in weight space obtained by subtracting pre-trained weights from fine-tuned weights. Movement in this direction improves performance on the target task.",
+    "Task vectors support arithmetic operations: negation (forgetting/unlearning), addition (multi-task learning), and analogy (combining three task vectors to improve a fourth).",
+    "Negating a task vector decreases performance on the target task with little change on control tasks — enables targeted unlearning.",
+    "Adding task vectors from multiple tasks creates a single model competitive with using multiple specialized models (98.9% accuracy retained for two tasks).",
+    "Task analogies: when tasks form A:B::C:D, combining vectors from A, B, C improves D even without training data for D.",
+    "The method is simple, fast, and effective across models (CLIP, T5), modalities (vision, language), and tasks."
+  ],
+  "function_concept_used_by_paper": "A function is encoded as a task vector: the arithmetic difference between fine-tuned and pre-trained weights. Functions can be composed through vector arithmetic (negation, addition, analogy). The function is implicitly defined by its task vector direction in weight space.",
+  "representation_or_carrier": "Task vectors = weight difference vectors (θ_finetuned - θ_pretrained). These are full-sized weight vectors of the same dimensionality as the model parameters.",
+  "compiler_or_generator": "Fine-tuning is the compiler: it takes a pre-trained model + task data and produces a task vector (the delta). No separate compiler architecture; the training process itself is the compilation.",
+  "interpreter_or_runtime": "The pre-trained model with the task vector added to its weights. Standard forward pass. The interpreter is the base model architecture (CLIP, T5, etc.).",
+  "composition_rule": "Arithmetic composition: (1) Negation: θ_pretrained - task_vector (forget); (2) Addition: θ_pretrained + task_vector_A + task_vector_B (multi-task); (3) Analogy: θ_pretrained + (task_A - task_B + task_C) (transfer). These are linear operations in weight space. The paper shows these work empirically but provides no formal algebraic guarantees.",
+  "state_or_effect_model": "Not addressed. Task vectors are static weight modifications. No effect tracking or state management.",
+  "validation_regime": "Empirical validation on image classification (CLIP on ImageNet, domain transfer benchmarks) and language tasks (T5 on GLUE). Accuracy-based evaluation. No formal verification.",
+  "equivalence_notions": "Not formally addressed. The paper implicitly assumes that similar task vectors yield similar functions, but does not define an equivalence relation. The analogy experiments suggest a form of structural equivalence in task-vector space.",
+  "limitations_and_failure_boundaries": [
+    "Task arithmetic is empirical; no formal guarantee that adding task vectors preserves individual task performance.",
+    "Negation can have side effects on control tasks (not always zero-cost).",
+    "Addition degrades slightly as more tasks are added (98.9% → decreasing).",
+    "The method requires that fine-tuned models lie in the same 'basin' as the pre-trained model (linear mode connectivity).",
+    "Analogy results are limited to specific task relationships; not all task quadruples exhibit analogy structure.",
+    "No formal algebra: task vectors are not guaranteed to form a group, ring, or any algebraic structure.",
+    "The paper acknowledges the method may not work for arbitrary task combinations."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "NOT_ADDRESSED: No formal specification language. Task vectors are defined by fine-tuning, not by specs.",
+    "GAP-016": "STRONG_SUPPORT: Task arithmetic is the most direct evidence for weight-space composition. Negation, addition, and analogy are concrete composition operations. However, they lack formal algebraic guarantees.",
+    "GAP-017": "EXPOSES: Task vectors suggest a notion of functional similarity (similar directions = similar functions), but no formal equivalence is defined. Two different task vectors may produce similar behavior.",
+    "GAP-018": "NOT_ADDRESSED: No effect tracking.",
+    "GAP-019": "SUPPORTS: Task vectors are natural registry entries: each has a task name, a source model, and a weight delta. The analogy operation implies structured relationships between registry entries.",
+    "GAP-020": "NOT_ADDRESSED: No probabilistic semantics."
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "NO_EVIDENCE: No formal spec.",
+    "N2_Representation": "MULTI_SOURCE_EVIDENCE: Task vectors as function representation. Weight-space arithmetic as representation operations.",
+    "N3_Compiler": "WEAK_EVIDENCE: Fine-tuning as compilation, but this is standard training, not a dedicated compiler.",
+    "N4_Artifact": "MULTI_SOURCE_EVIDENCE: Task vectors are compact artifacts (weight deltas) that can be stored, combined, and applied.",
+    "N5_Interpreter": "WEAK_EVIDENCE: The base model is the interpreter, but no special runtime is proposed.",
+    "N6_ExecutionTrace": "NO_EVIDENCE: Not discussed.",
+    "N7_Validator": "NO_EVIDENCE: Only empirical accuracy.",
+    "N8_ComposerRouter": "MULTI_SOURCE_EVIDENCE: This is the strongest evidence for the Composer/Router node. Task arithmetic (negation, addition, analogy) provides concrete composition operations.",
+    "N9_VersionedRegistry": "MULTI_SOURCE_EVIDENCE: Task vectors as registry entries with task names. The analogy operation implies structured relationships between entries."
+  },
+  "what_the_paper_does_not_support": [
+    "Does not support formal specification (GAP-015).",
+    "Does not support formal composition algebra with guarantees (GAP-016 partially supported but empirical only).",
+    "Does not support equivalence checking (GAP-017).",
+    "Does not support effect tracking (GAP-018).",
+    "Does not support probabilistic semantics (GAP-020).",
+    "Does not provide formal verification or correctness guarantees for composed models.",
+    "Composition results depend on linear mode connectivity; not all model combinations will work."
+  ],
+  "claim_support_status": "CONFIRMED",
+  "claim_support_reasoning": "The paper's claims about task arithmetic are well-confirmed by extensive experiments across models, modalities, and tasks. The composition operations (negation, addition, analogy) are concrete and reproducible. The paper honestly states limitations (empirical only, no formal guarantees, linear mode connectivity assumption). For the Function OS, this paper provides the strongest direct evidence for the Composer/Router node and the Artifact node (task vectors as composable artifacts). The CONFIRMED status applies to the paper's own claims, not to ignition architecture projections.",
+  "reviewer_model": "qclaw/pool-glm-5.2",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T18:41:00Z",
+  "supersedes_provisional_card_id": "S120-045-provisional-121"
+}

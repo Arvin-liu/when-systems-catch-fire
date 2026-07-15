@@ -1,0 +1,137 @@
+{
+  "source_id": "S120-046",
+  "canonical_title": "TIES-Merging: Resolving Interference When Merging Models",
+  "authors": ["Prateek Yadav", "Derek Tam", "Leshem Choshen", "Colin Raffel", "Mohit Bansal"],
+  "year": 2023,
+  "version": "NeurIPS 2023; arXiv:2306.01708v2, 2023-10-27",
+  "doi_or_identifier": "OpenReview:xtaX3WyCj1; arXiv:2306.01708v2",
+  "identifier": "arXiv:2306.01708v2",
+  "url": "https://arxiv.org/abs/2306.01708v2",
+  "source_family": 6,
+  "source_family_name": "model merging and task arithmetic",
+  "license": "NeurIPS/OpenReview publication terms for the paper; linked repository BSD-3-Clause",
+  "sha256": "828742490193a58a3be52c339318f341e7eafced2ffa919d8e45e0ffeebaeb6f",
+  "file_size_bytes": 1179222,
+  "page_count": 23,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "arxiv_identity": "arXiv:2306.01708v2",
+    "pdf_visually_checked_pages": [1, 2, 4, 5, 6, 7, 9, 10, 17, 20],
+    "code_artifact": {
+      "repository": "https://github.com/prateeky2806/ties-merging",
+      "reviewed_commit": "44e7891fc84f3de7e4caa52664cd864ca3715e91",
+      "license": "BSD-3-Clause",
+      "tracked_lines": 8848,
+      "static_check": "all Python sources compiled",
+      "implementation_correspondence": "top-k magnitude trimming, mass-based sign election, nonzero sign-aligned disjoint mean, lambda scaling, T5/IA3 loading and evaluation are implemented",
+      "runtime_boundary": "full checkpoint downloads, GPU merges and paper benchmarks were not rerun",
+      "implementation_caveats": "model/data paths require manual edits; the environment is an old pinned CUDA/Python stack; CLI fragments use eval; zero-sign tie handling is implementation-specific; the oracle branch subtracts scalar 1 from the flattened multitask checkpoint rather than the full pretrained vector, so that optional path requires correction or contextual verification"
+    }
+  },
+  "sections_reviewed": [
+    "Abstract, introduction and related work",
+    "redundant-parameter and sign-conflict motivation",
+    "formal task-vector representation and complete TIES algorithm",
+    "NLP, vision, PEFT and full-fine-tuning experimental setup",
+    "in-domain, OOD, model-soup and scaling results",
+    "interference, sign-flip, component and oracle-sign ablations",
+    "complete limitations and supplementary results",
+    "official repository at exact commit"
+  ],
+  "page_or_section_anchors": [
+    {"anchors": "§§1-3, Figs. 1-4, pp. 1-5", "checked_for": "interference definitions, empirical conflict frequency and shared-base task-vector setting"},
+    {"anchors": "§4, Algorithm 1, p. 5", "checked_for": "trim, elect, disjoint mean, zero handling and lambda scaling semantics"},
+    {"anchors": "§§5-6, Tables 1-4, pp. 6-9", "checked_for": "baselines, validation/no-validation recipes, modalities, gains and generalization"},
+    {"anchors": "§7, Figs. 5-7, Tables 5-6, pp. 8-10", "checked_for": "task-count scaling, interference magnitude, sign perturbation and component/oracle ablations"},
+    {"anchors": "Appendices A-C, pp. 17-23", "checked_for": "limitations, few-shot sign estimation, hyperparameter sensitivity, detailed task tables and selected lambdas"},
+    {"anchors": "repository commit 44e7891", "checked_for": "paper-algorithm correspondence, environment, checkpoint handling, evaluation and edge cases"}
+  ],
+  "paper_core_claims": [
+    {"claim": "Low-magnitude task-vector entries can dilute influential updates and sign disagreement can cancel updates when models are merged.", "anchors": "Figs. 2-4 and §3"},
+    {"claim": "TIES trims each task vector to its top-k magnitude entries, elects each coordinate's sign by total signed movement, averages only nonzero entries aligned to that sign, scales the result and adds it to the common initialization.", "anchors": "Algorithm 1 and §4.2"},
+    {"claim": "Across T5, IA3 and ViT settings TIES usually improves over the strongest tested merging baseline, with both tuned and fixed k=20%, lambda=1 recipes.", "anchors": "Tables 1-4"},
+    {"claim": "The advantage over Task Arithmetic generally grows as more task models are merged, and component ablations identify scaling and disjoint mean as especially important.", "anchors": "Fig. 5 and Table 6"},
+    {"claim": "Oracle signs from a jointly trained multitask model nearly close the remaining gap, demonstrating that the elected sign is a heuristic approximation rather than a correctness certificate.", "anchors": "Table 5 and Appendix Table 7"}
+  ],
+  "function_concept_used_by_paper": "Each fine-tuned model is represented as a task-vector function carrier relative to a shared base. TIES compiles a set of carriers through sparsification, coordinate-wise conflict resolution and aggregation into one executable checkpoint.",
+  "representation_or_carrier": "The principal carrier is a flattened, parameter-name-aligned task vector tau_t = theta_t - theta_init, decomposed into coordinate signs and magnitudes. Trimmed vectors, the elected sign vector, the disjoint mean and the final merged delta are intermediate carriers. Shared initialization and architecture are mandatory; coordinate identity alone is not semantic equivalence.",
+  "specification_language": "Algorithm 1 supplies an unusually precise static recipe with theta_init, source models, top-k percentage, sign election, disjoint mean and lambda. Repository command strings encode reset, sign resolver, aggregator and lambda sweep. Missing are immutable checkpoint/data revisions, tokenizer and key-schema manifests, license/effect rules, acceptance thresholds, provenance receipts and lifecycle transitions.",
+  "compiler_or_generator": "The compiler flattens aligned task deltas, retains top-k magnitude coordinates per task, elects sign(gamma_p)=sign(sum_t trimmed_tau_t,p), selects nonzero entries of that sign, averages them coordinate-wise, applies lambda and reconstructs a state dictionary over the base. The exact official implementation materially matches this main path.",
+  "interpreter_or_runtime": "The merged artifact uses the base architecture's standard T5, IA3 or ViT forward pass and has no constituent-count inference overhead. TIES is not an input-dependent router; all source selection is compiled into static parameters. Runtime authorization, failure isolation, trace export, monitoring and rollback are outside scope.",
+  "composition_rule": "TIES is a coordinate-wise, sign-aware empirical composition rule. It preserves large aligned changes and discards conflicting directions rather than representing both alternatives. Its output approximates multitask behavior under shared-base alignment but is not guaranteed to implement the logical union or composition of source functions.",
+  "state_or_effect_model": "State includes base and task checkpoints, parameter ordering, k, lambda, sign-election rule, selected coordinates, merged delta, validation tasks and scores. Effects include task performance, OOD generalization, storage/compute and discarded source updates. Safety, privacy, licenses, calibration, atomic promotion, health, rollback, supersession and retirement are not modeled.",
+  "uncertainty_model": "The paper reports extensive task-level and aggregate comparisons and averages sign-flip curves over three runs, but main tables have no confidence intervals, formal significance tests or seed-level result artifact. Hyperparameters are chosen on validation sets or by preliminary PEFT experiments, and the fixed recipe does not quantify transfer uncertainty. Sign election emits a categorical direction without confidence or abstention even when positive and negative mass nearly tie.",
+  "validation_regime": {
+    "language": "IA3/T0-3B across 11 tasks; T5-base and T5-large across seven GLUE tasks with held-out OOD tasks",
+    "vision": "ViT-B/32 and ViT-L/14 across eight image-classification tasks",
+    "other_setting": "models trained from scratch for model-soup comparison",
+    "baselines": ["simple averaging", "Task Arithmetic", "Fisher Merging", "RegMean", "fine-tuned individual models", "joint multitask model"],
+    "ablations": ["trim", "elect", "disjoint mean", "scale", "task count", "sign flips", "oracle sign", "few-shot sign estimation", "k and lambda"],
+    "boundary": "Benchmarks are research tasks from shared-base model families; no independent replication, safety, calibration, privacy, latency or heterogeneous in-the-wild checkpoint evaluation is included."
+  },
+  "equivalence_notions": [
+    {"notion": "coordinate compatibility", "support": "COMMON_INITIALIZATION_ARCHITECTURE_AND_PARAMETER_NAMES", "boundary": "Aligned coordinates permit arithmetic but do not prove source-function compatibility."},
+    {"notion": "influential update", "support": "TOP_MAGNITUDE_TASK_DELTA", "boundary": "Magnitude is a heuristic; it is not a causal, Fisher or semantic importance guarantee."},
+    {"notion": "direction agreement", "support": "ELECTED_SIGN_BY_TOTAL_MOVEMENT", "boundary": "A binary sign discards minority directions and has no confidence for near ties."},
+    {"notion": "multitask preservation", "support": "AVERAGE_BENCHMARK_PERFORMANCE", "boundary": "TIES still lags joint multitask training in several settings and aggregate means can hide task regressions."}
+  ],
+  "lifecycle_and_provenance": "The paper and repository preserve method configuration, a pinned historical environment, some released IA3 checkpoints and task-level evaluation code. They do not pin every source checkpoint/data revision, record source/output hashes or licenses, generate a merge manifest, preserve evaluation receipts as a registry contract, or define approval, health, rollback, supersession and retirement. The optional oracle-sign code path has a suspicious scalar-one subtraction and should not be accepted as a trustworthy lineage transform without correction.",
+  "limitations_and_failure_boundaries": [
+    "The authors explicitly acknowledge limited theory, dependence on common initialization and architecture, a gap to joint multitask training and unresolved checkpoint selection.",
+    "Top-k magnitude is not proven to identify redundancy or functional importance; zeroed parameters can contain small but coordinated information.",
+    "Sign election resolves conflict by discarding non-elected directions, so it cannot preserve mutually exclusive or context-dependent source behaviors.",
+    "The method requires k and lambda; tuned results use validation data and the no-validation recipe was selected through preliminary PEFT experiments before being transferred.",
+    "The strongest oracle-sign result uses information from a jointly trained multitask model and therefore demonstrates an information gap rather than a deployable no-data solution.",
+    "Main results are benchmark averages without formal inferential uncertainty or safety/regression acceptance criteria.",
+    "The experimental regime is shared-base and mostly task-specific research checkpoints; later in-the-wild heterogeneous pools are outside this source's evidence boundary.",
+    "The official repository requires manual local paths and an old environment, releases no immutable study-wide result bundle, uses unsafe eval for command fragments, and has an apparently incorrect optional oracle-vector subtraction.",
+    "Nothing in the method guarantees preservation of calibration, safety, privacy, factuality, licenses or semantic equivalence."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not define a formal algebra or prove that TIES implements composition of source functions.",
+    "It does not show TIES is universally superior across unrelated bases, architectures or in-the-wild checkpoints.",
+    "It does not provide calibrated sign uncertainty, runtime routing, effect isolation or registry lifecycle governance.",
+    "It does not constitute proof or independent empirical validation of the Function OS architecture."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {"status": "PARTIAL", "reason": "Algorithm parameters and carriers are precise, but executable identity, effect and lifecycle contracts are incomplete."},
+    "GAP-016": {"status": "CONFIRMED", "reason": "TIES provides a concrete implemented sparsify-elect-aggregate compiler for aligned task vectors."},
+    "GAP-017": {"status": "CONFIRMED", "reason": "Magnitude, sign agreement, per-task performance and oracle signs reveal distinct validation notions and boundaries."},
+    "GAP-018": {"status": "CONFIRMED", "reason": "Coordinate-wise conflict-aware static composition is the direct contribution."},
+    "GAP-019": {"status": "CONFIRMED", "reason": "Multiple modalities, sizes, task counts, baselines and ablations form substantial bounded empirical validation."},
+    "GAP-020": {"status": "PARTIAL", "reason": "Interference and performance are observable, while calibrated uncertainty, durable traces and lifecycle state are absent."}
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {"status": "PARTIAL", "reason": "The merge recipe is exact but source compatibility, effects, identity and governance remain incomplete."},
+    "N2_Representation": {"status": "CONFIRMED", "reason": "Base-relative task vectors, signs, magnitudes and masks are explicit carriers."},
+    "N3_Compiler": {"status": "CONFIRMED", "reason": "The trim-elect-disjoint-merge compiler is defined and implemented."},
+    "N4_Artifact": {"status": "CONFIRMED", "reason": "The compiler materializes one ordinary multitask checkpoint."},
+    "N5_Interpreter": {"status": "CONFIRMED", "reason": "The merged artifact executes with the standard base-model runtime."},
+    "N6_ExecutionTrace": {"status": "PARTIAL", "reason": "Masks, signs, lambdas and scores could be traced, but no durable receipt schema is defined."},
+    "N7_Validator": {"status": "CONFIRMED", "reason": "Broad in-domain, OOD, no-validation and ablation comparisons directly validate the bounded method."},
+    "N8_ComposerRouter": {"status": "CONFIRMED", "reason": "TIES is a strong static Composer; it supplies no input-conditioned router."},
+    "N9_VersionedRegistry": {"status": "PARTIAL", "reason": "Repositories and some checkpoints exist without complete immutable lineage or lifecycle governance."}
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "PARTIAL",
+    "verdict": "ACCEPTED_WITH_MAJOR_SCOPE_AND_PROVENANCE_CORRECTIONS_TO_CONFIRMED_BOUNDED_SUPPORT",
+    "corrections": [
+      "The prior abbreviated card correctly identified interference, a single artifact and the lack of formal equivalence, but omitted the exact algorithm, validation breadth, uncertainty, lifecycle and code evidence.",
+      "GAP-018 was previously described as unaddressed even though TIES directly defines coordinate-level composition effects; it is now accepted as a bounded static composition contribution, not a general effect system.",
+      "Five authors, NeurIPS/OpenReview identity, exact arXiv v2 and exact code commit/license were recorded.",
+      "The shared-base, top-k importance, binary sign, validation-selection, oracle-information and later in-the-wild boundaries were added.",
+      "The official implementation's main TIES path was confirmed while manual paths, unsafe eval, zero-tie behavior and the optional oracle subtraction issue were recorded."
+    ],
+    "prior_card_superseded": true
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "TIES provides direct peer-reviewed, implementation-backed evidence for an aligned task-vector Representation, a conflict-aware Compiler, a compact executable Artifact, the ordinary Interpreter, a broad bounded Validator and a static Composer. FunctionSpec governance, uncertainty, trace receipts and VersionedRegistry lifecycle remain partial.",
+  "source_specific_reasoning": "CONFIRMED applies to the bounded method and architecture projection. The paper defines every central transform, compares against strong baselines across language and vision, examines no-validation use, scales task count, ablates all components and releases materially corresponding code. It does not prove semantic composition: trimming treats magnitude as importance, sign election suppresses minority directions, lambda remains selected, and joint multitask signs still perform better. The prior generic PARTIAL card therefore understated direct implementation and validation evidence while correctly warning against formal equivalence.",
+  "projection_boundary": "These are 121CX projections from the exact NeurIPS/arXiv v2 paper, its prior provisional card and static review of official commit 44e7891. They are empirical evidence in the studied shared-base regimes, not proof, universal superiority, safety validation, independent reproduction or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T05:42:38Z"
+}

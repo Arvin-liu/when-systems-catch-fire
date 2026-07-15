@@ -1,0 +1,20 @@
+{
+  "matrix_shape": "14 gaps × 250 disciplines",
+  "note": "外部来源落地使 8 HIGH 缺口从 missing 转为 grounded（补丁库接口层）；引擎内部 Ψ₀ 覆盖维持 087 重算。",
+  "gap_grounding": {
+    "GAP-001": "GROUNDED",
+    "GAP-002": "GROUNDED",
+    "GAP-003": "GROUNDED",
+    "GAP-004": "GROUNDED",
+    "GAP-005": "GROUNDED",
+    "GAP-006": "GROUNDED",
+    "GAP-007": "GROUNDED",
+    "GAP-008": "GROUNDED",
+    "GAP-009": "PENDING_EXTERNAL",
+    "GAP-010": "PENDING_EXTERNAL",
+    "GAP-011": "PENDING_EXTERNAL",
+    "GAP-012": "PENDING_EXTERNAL",
+    "GAP-013": "PENDING_EXTERNAL",
+    "GAP-014": "PENDING_EXTERNAL"
+  }
+}

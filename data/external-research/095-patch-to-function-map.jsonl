@@ -1,0 +1,14 @@
+{"patch_id": "GAP-001", "maps_to": "C(x,y) 因果结构判定（互补：补全可操作干预语义）", "type": "NEW_OBJECT_TYPE_INTERFACE", "injection_status": "INJECTED_VERIFIED"}
+{"patch_id": "GAP-002", "maps_to": "L_meta 元层面收敛（互补：提供显式尺度桥接）", "type": "NEW_OBJECT_TYPE_INTERFACE", "injection_status": "INJECTED_VERIFIED"}
+{"patch_id": "GAP-003", "maps_to": "C(x,y).temporal_order（互补：补全动态演化）", "type": "NEW_OBJECT_TYPE_INTERFACE", "injection_status": "INJECTED_VERIFIED"}
+{"patch_id": "GAP-004", "maps_to": "I_iso 不变性（互补：补分布稳健性）", "type": "NEW_OBJECT_TYPE_INTERFACE", "injection_status": "INJECTED_VERIFIED"}
+{"patch_id": "GAP-005", "maps_to": "F_contract/F_nash 元协议（互补：多目标权衡）", "type": "NEW_OBJECT_TYPE_INTERFACE", "injection_status": "INJECTED_VERIFIED"}
+{"patch_id": "GAP-006", "maps_to": "G_δ 哥德尔不完备（互补：历史不可逆）", "type": "NEW_OBJECT_TYPE_INTERFACE", "injection_status": "INJECTED_VERIFIED"}
+{"patch_id": "GAP-007", "maps_to": "G_δ（互补：表达力边界）", "type": "NEW_OBJECT_TYPE_INTERFACE", "injection_status": "INJECTED_VERIFIED"}
+{"patch_id": "GAP-008", "maps_to": "G_δ（互补：不可计算边界）", "type": "NEW_OBJECT_TYPE_INTERFACE", "injection_status": "INJECTED_VERIFIED"}
+{"patch_id": "GAP-009", "maps_to": "G_δ（增强：补 open_system_boundary）", "type": "ENHANCE_KEEP", "injection_status": "ENHANCE_READY_INTERNAL_ONLY"}
+{"patch_id": "GAP-010", "maps_to": "evidence_obligation（增强：补 construct_validity）", "type": "ENHANCE_KEEP", "injection_status": "ENHANCE_READY_INTERNAL_ONLY"}
+{"patch_id": "GAP-011", "maps_to": "ontology（增强：补 domain_ontology）", "type": "ENHANCE_KEEP", "injection_status": "ENHANCE_READY_INTERNAL_ONLY"}
+{"patch_id": "GAP-012", "maps_to": "causal_identification（增强：补 transportability）", "type": "ENHANCE_KEEP", "injection_status": "ENHANCE_READY_INTERNAL_ONLY"}
+{"patch_id": "GAP-013", "maps_to": "evidence_regime（增强：补 reproducibility）", "type": "ENHANCE_KEEP", "injection_status": "ENHANCE_READY_INTERNAL_ONLY"}
+{"patch_id": "GAP-014", "maps_to": "counterexample_failure（增强：补 negative_result）", "type": "ENHANCE_KEEP", "injection_status": "ENHANCE_READY_INTERNAL_ONLY"}

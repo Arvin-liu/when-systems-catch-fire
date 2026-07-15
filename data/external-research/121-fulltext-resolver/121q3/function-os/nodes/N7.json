@@ -1,0 +1,67 @@
+{
+  "node_id": "N7",
+  "canonical_name": "Validator",
+  "canonical_definition": "Validates function artifacts against specifications and evidence",
+  "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+  "inputs": "Artifact + FunctionSpec + evidence",
+  "outputs": "validation_result (pass/fail/warning)",
+  "preconditions": "See node registry (Step 009)",
+  "invariants": [
+    "No FROZEN/FINAL/PROVEN status"
+  ],
+  "strongest_verified_sources": [
+    {
+      "source_id": "S120-047",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Generic Refinement Types"
+    },
+    {
+      "source_id": "S120-021",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Execution Guided Line-by-Line Code Generation"
+    }
+  ],
+  "partial_or_analogical_sources": [
+    {
+      "source_id": "S120-018",
+      "identity": "CORRECTED",
+      "semantic": "PARTIAL",
+      "title": "SPoC: Search-based Pseudocode to Code"
+    },
+    {
+      "source_id": "S120-020",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Parsel: Algorithmic Reasoning with Language Models by Composing Decompositions"
+    },
+    {
+      "source_id": "S120-050",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Refinement Reflection: Complete Verification with SMT"
+    },
+    {
+      "source_id": "S120-070",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models"
+    }
+  ],
+  "counterevidence": "Validation primarily empirical. SMT/refinement only for symbolic code. No cross-rep equivalence.",
+  "limitations": "No unified validation covering code, weights, and specs.",
+  "linked_gaps": [
+    "GAP-015",
+    "GAP-017"
+  ],
+  "candidate_interface": "Multi-strategy validator: test_based, smt_based, refinement_based, behavioral",
+  "candidate_status": "PARTIAL_CANDIDATE",
+  "unresolved_questions": "No unified validation covering code, weights, and specs.",
+  "prohibited_wording": [
+    "Do not claim FROZEN/FINAL/PROVEN",
+    "Do not claim papers verify N7",
+    "Do not claim external research solves N7"
+  ],
+  "timestamp": "2026-07-14T17:57:23Z"
+}

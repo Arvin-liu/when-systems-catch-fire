@@ -1,0 +1,45 @@
+{
+  "task_id": "IGNITION-20260709-076",
+  "inspection_mode": "read_only",
+  "getnote_reasoning_calls": 0,
+  "local_note_roots": [
+    {
+      "path": "/Users/zhiyuan/我的笔记/getnote-notes",
+      "exists": true,
+      "file_count": 117986,
+      "role": "source_locator_recovery"
+    },
+    {
+      "path": "/Users/zhiyuan/我的笔记/得到大脑",
+      "exists": false,
+      "file_count": 0,
+      "role": "absent_optional_root"
+    },
+    {
+      "path": "/Users/zhiyuan/我的笔记/2026-07-09 1735",
+      "exists": true,
+      "file_count": 141,
+      "role": "historical_export"
+    },
+    {
+      "path": "/Users/zhiyuan/我的笔记/2026-07-09 1902",
+      "exists": true,
+      "file_count": 41,
+      "role": "historical_export"
+    }
+  ],
+  "codespace_rescue": [
+    {
+      "path": "/Users/zhiyuan/Agent 工作区/Codespace-Rescue/Unified-Case-Table/统一函数总表_Codespace救援.md",
+      "size_bytes": 1298353,
+      "sha256": "ec3f131d1e8eb9014ac4a85922ca010c1bfbe17bbb3fd334e4f69de9e002c9d1",
+      "authority": false
+    },
+    {
+      "path": "/Users/zhiyuan/Agent 工作区/Codespace-Rescue/Unified-Case-Table/统一案例总表_Codespace救援.md",
+      "size_bytes": 1142593,
+      "sha256": "b380574d20b0fd1c908b39f78641f4ecb78d64ddda0adca3e010bcc35c91fb7d",
+      "authority": false
+    }
+  ]
+}

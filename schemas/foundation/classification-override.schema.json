@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "stable_id",
+    "classification_status",
+    "classification_basis",
+    "formal_object_type",
+    "claim_type",
+    "semantic_justification",
+    "source_excerpt_refs",
+    "adjudication_date",
+    "adjudicator",
+    "review_required",
+    "legacy_label",
+    "adjudicated_label"
+  ],
+  "properties": {
+    "classification_status": {
+      "const": "ADJUDICATED"
+    },
+    "classification_basis": {
+      "type": "array",
+      "contains": {
+        "const": "SOURCE_TEXT"
+      }
+    },
+    "review_required": {
+      "const": false
+    }
+  },
+  "additionalProperties": true
+}

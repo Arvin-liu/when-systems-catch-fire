@@ -1,0 +1,282 @@
+{
+  "source_id": "S120-037",
+  "canonical_title": "SAMoRA: Semantic-Aware Mixture of LoRA Experts for Task-Adaptive Learning",
+  "title": "SAMoRA: Semantic-Aware Mixture of LoRA Experts for Task-Adaptive Learning",
+  "authors": [
+    "Boyan Shi",
+    "Wei Chen",
+    "Shuyuan Zhao",
+    "Junfeng Shen",
+    "Shengnan Guo",
+    "Shaojiang Wang",
+    "Huaiyu Wan"
+  ],
+  "year": 2026,
+  "version": "arXiv:2604.19048v1, 2026-04-21; author comment: ACL 2026 Findings",
+  "doi_or_identifier": "arXiv:2604.19048v1",
+  "identifier": "arXiv:2604.19048v1",
+  "url": "https://arxiv.org/abs/2604.19048v1",
+  "source_family": 5,
+  "source_family_name": "adapter routing and task-aware composition",
+  "license": "arXiv non-exclusive distribution license for the paper; the linked code repository has no root LICENSE or detected GitHub license",
+  "sha256": "099e8c4860542d88b07e0c2fface39a6226f54731a527cfc41966de6e26a64bc",
+  "file_size_bytes": 2861031,
+  "page_count": 16,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_sha256_match": true,
+    "registered_file_size_match": true,
+    "registered_page_count_match": true,
+    "arxiv_api_identity": "http://arxiv.org/abs/2604.19048v1",
+    "published_at_utc": "2026-04-21T03:55:02Z",
+    "updated_at_utc": "2026-04-21T03:55:02Z",
+    "pdf_visually_checked_pages": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      12,
+      14,
+      16
+    ],
+    "sources_cross_checked": [
+      "arXiv v1 PDF",
+      "arXiv API metadata",
+      "arXiv abstract record",
+      "linked GitHub repository at an exact commit"
+    ],
+    "code_repository": {
+      "url": "https://github.com/boyan-code/SAMoRA",
+      "reviewed_commit": "2c90a98932b93ae7c055bb2d193f9ec4067a1ecb",
+      "default_branch": "main",
+      "commit_time": "2026-01-06T18:09:47+08:00",
+      "review_scope": "SAMoRA layer, Llama and Qwen model integration, training/evaluation entrypoints, scripts, checkpoint helpers, and repository support files",
+      "verification": "All tracked Python files passed syntax compilation; no training or benchmark execution was attempted.",
+      "artifact_boundary": "The repository contains no README, root license, dependency lock, tests, checkpoint, dataset snapshot, SVD assets, result files, release, or tag."
+    }
+  },
+  "sections_reviewed": [
+    "Abstract, introduction, and related work",
+    "PEFT and mixture-of-LoRA preliminaries",
+    "Semantic-aware router and asymmetric expert representation",
+    "Task-adaptive scaling and SVD initialization",
+    "Orthogonality and semantic-match objectives",
+    "Complexity analysis",
+    "Commonsense and GLUE experimental setup and main results",
+    "Ablations, expert visualization, unseen MMLU activation view, and sensitivity analysis",
+    "Limitations and appendices with prompts, dataset sizes, and hyperparameters",
+    "Exact-revision implementation and operational scripts"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "§§3.2-4.1, pp. 3-4, Fig. 2, eqs. 2-4",
+      "checked_for": "shared A carrier, multiple B experts, latent h, expert keys, cosine-temperature router, and dense expert mixture"
+    },
+    {
+      "anchors": "§§4.2-4.3, pp. 4-6, eqs. 5-11",
+      "checked_for": "SVD scale initialization, task-ID embedding gate, orthogonality, expert-key matching, and loss direction"
+    },
+    {
+      "anchors": "§4.4 and Appendix A, pp. 6, 11-12, Table 3",
+      "checked_for": "parameter and routing complexity claims and assumptions"
+    },
+    {
+      "anchors": "§§5.1-5.2, pp. 6-7, Tables 1-2",
+      "checked_for": "two 8B backbones, nine commonsense tasks, seven GLUE tasks, trainable-parameter matching, main scores, and baseline provenance"
+    },
+    {
+      "anchors": "§§5.3-5.4 and Appendices C-D, pp. 8, 12-15, Figs. 3-6, Table 6",
+      "checked_for": "component ablations, PCA limitations, unseen-task activation-only evidence, and hyperparameter sensitivity"
+    },
+    {
+      "anchors": "Limitations and Appendix B, pp. 9, 11-12, 16, Tables 4-5, 7-8",
+      "checked_for": "scale boundary, dataset sizes, metrics, prompts, and training settings"
+    },
+    {
+      "anchors": "GitHub commit 2c90a989, src/adapter/samora.py and training/evaluation scripts",
+      "checked_for": "forward equations, known/unseen task gates, auxiliary losses, SVD path, exact task IDs, checkpoint flow, runnable surfaces, and missing reproducibility assets"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "SAMoRA factorizes a LoRA mixture into one shared down-projection A and multiple expert-specific up-projections B_i, and routes token representations h=AX to experts through softmax-normalized cosine similarity with learned keys.",
+      "anchors": "§4.1, eqs. 3-4; src/adapter/samora.py"
+    },
+    {
+      "claim": "A learned task-ID embedding produces a sigmoid scalar gate per task and layer, while a trainable diagonal vector scales low-rank dimensions; this is task-conditioned rather than task-agnostic input-conditioned scaling.",
+      "anchors": "§4.2, eqs. 5-7; src/adapter/samora.py"
+    },
+    {
+      "claim": "Orthogonality and expert-key matching losses are accumulated with the language or classification loss and are implemented in the linked code.",
+      "anchors": "§4.3, eqs. 8-11; src/adapter/samora.py; custom model loss integration"
+    },
+    {
+      "claim": "The paper reports average gains of 0.87 and 0.73 points over the next table averages on Llama-3.1-8B and Qwen3-8B commonsense settings, and 0.80 points on Qwen3-8B GLUE, under its reported parameter-matched setup.",
+      "anchors": "Tables 1-2"
+    },
+    {
+      "claim": "Component ablations, parameter-space PCA and task scaling plots provide bounded support for the router and scaling mechanism, but separated expert parameters do not by themselves prove semantic specialization.",
+      "anchors": "§5.3, Figs. 3-4, Table 2"
+    },
+    {
+      "claim": "The unseen MMLU analysis reports diverse activation patterns but no MMLU accuracy or task-performance comparison; it supports routing diversity, not unseen-task generalization quality.",
+      "anchors": "Appendix C.2, Fig. 5"
+    }
+  ],
+  "function_concept_used_by_paper": "The reusable function-like unit is an expert-specific low-rank B_i transformation sharing an A projection and a frozen base-model layer. Learned keys expose routing affinity, a task-ID gate controls update magnitude, and their dense weighted mixture becomes an input- and task-conditioned residual function.",
+  "representation_or_carrier": {
+    "input_carrier": "token hidden state X and low-rank semantic representation h=AX",
+    "expert_carrier": "one shared rank-r A matrix, N expert-specific B_i matrices, and learned rank-r expert keys",
+    "routing_carrier": "per-token cosine similarities, temperature, and dense softmax expert weights",
+    "task_carrier": "explicit integer task ID, learned 8-dimensional task embedding, and sigmoid scalar gate",
+    "scale_carrier": "trainable rank-r diagonal scale initialized from external SVD singular values when available",
+    "artifact_carrier": "saved LoRA-related state dictionary tied to a chosen base-model implementation"
+  },
+  "specification_language": "The paper and code specify base-model families, tasks, prompt templates, split sizes, metrics, rank, expert count, task-embedding size, temperature, target modules, loss weights, optimizer settings, and forward equations. This is strong experimental specification, but not a governed function contract: exact model revisions, dataset revisions, environment, output semantics, adapter compatibility, task-ID authority, side effects, privacy, failure behavior, and lifecycle rules remain incomplete. The provided scripts also diverge from Table 8 by selecting one training epoch rather than three.",
+  "compiler_or_generator": {
+    "training": "Joint multi-task optimization compiles labeled task examples and task IDs into A, B_i, expert keys, task embeddings, gate weights, and diagonal scales.",
+    "initialization": "Optional external SVD artifacts initialize only the diagonal scale vector; A and B initialization lines are commented out in the reviewed code.",
+    "checkpointing": "A helper saves and later loads LoRA-prefixed state dictionaries against a separately supplied base model.",
+    "boundary": "All provided SAMoRA training scripts request SVD initialization but provide no SVD path or generation procedure, so the default placeholder path causes initialization to be skipped unless the operator supplies out-of-repository assets."
+  },
+  "interpreter_or_runtime": "At each wrapped linear layer, the runtime computes the frozen linear path, projects tokens through A, compares normalized latent features with normalized keys, forms dense expert weights, applies the diagonal scale, evaluates every B_i, sums expert outputs, multiplies by a task gate, and adds the residual. Known tasks require explicit integer IDs. The code defines an unseen-task path using the mean learned gate, but the shipped evaluators only map named training tasks to IDs and provide no MMLU reproduction entrypoint.",
+  "composition_rule": "SAMoRA composes all compatible B_i expert outputs as Σ_i g_i B_i(SAX), then applies a scalar g_task and adds the result to WX. This is a differentiable, per-token dense mixture over jointly trained experts sharing A, not late composition of arbitrary independent adapters. Compatibility is architectural and learned jointly; semantic preservation, non-interference and algebraic closure are not guaranteed.",
+  "state_or_effect_model": "Training state includes task-labeled datasets, base-model revision, A/B/key/gate/scale parameters, optimizer state, loss weights, temperature, optional SVD files and checkpoints. Inference state includes explicit task IDs, token-level router weights and task gates. The repository supports state-dict loading and deterministic seeds, but defines no version manifest, trace export, task-ID authorization, mixed known/unseen batch semantics, migration, atomic update, compatibility check, rollback, health telemetry or retirement. If any sample in a batch has task ID -1, the reviewed layer sends the entire batch through the unseen-task gate path.",
+  "uncertainty_model": "Softmax cosine weights and sigmoid task gates are allocation variables, not calibrated probabilities. The paper reports point estimates and one fixed code seed without confidence intervals, repeated-run dispersion, significance tests, calibration, abstention or uncertainty propagation. Sensitivity plots vary selected hyperparameters in single reported conditions. Routing diversity and PCA separation are descriptive, not quantified uncertainty.",
+  "validation_regime": {
+    "commonsense": "nine tasks on Llama-3.1-8B and Qwen3-8B, compared with LoRA and five multi-adapter baselines using accuracy and matched trainable-parameter settings",
+    "nlu": "seven GLUE tasks on Qwen3-8B, with Matthews correlation for CoLA and accuracy otherwise",
+    "ablations": "router replacement, scaling removal, orthogonality removal, match-loss removal, and sensitivity to N, rank, task-embedding size, temperature and loss weights",
+    "unseen_view": "six randomly selected MMLU subjects visualized for expert activations only; no unseen-task scores",
+    "code_review": "exact main commit syntax-compiled and its method and execution paths were inspected; no dependencies or weights were supplied for a benchmark run",
+    "boundary": "No repeated-run statistics, latency measurements, memory measurements, failure tests, task-order tests, 70B study or multimodal study are reported."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "input-expert affinity",
+      "support": "LEARNED_LOW_RANK_COSINE_ROUTING",
+      "boundary": "A learned cosine match is an operational affinity, not proof that a key denotes an expert's semantic capability."
+    },
+    {
+      "notion": "expert specialization",
+      "support": "REGULARIZED_PARAMETER_SEPARATION_AND_ABLATION",
+      "boundary": "PCA separation of B parameters and average-score gains do not establish causal semantic roles or behavioral equivalence classes."
+    },
+    {
+      "notion": "task complexity",
+      "support": "LEARNED_TASK_ID_SCALAR",
+      "boundary": "The scalar is inferred from task identity, not measured complexity or input features; unseen tasks use an average learned gate in code."
+    },
+    {
+      "notion": "implementation correspondence",
+      "support": "CORE_FORWARD_AND_LOSS_MATCH_WITH_REPRODUCIBILITY_GAPS",
+      "boundary": "The forward equations and losses exist, but the SVD assets, MMLU path, experimental artifacts and exact three-epoch scripts do not."
+    }
+  ],
+  "lifecycle_and_provenance": "The reviewed repository provides exact source code, configuration flags, task maps, training and evaluation entrypoints, deterministic seed selection, LoRA-only checkpoint saving, and load helpers. Those are meaningful Compiler, Artifact and Interpreter primitives. It is not a VersionedRegistry: the repository has no release, tag, README, dependency lock, root license, model or dataset revision manifest, checkpoint hashes, SVD provenance, result logs, CI, tests, promotion gate, compatibility metadata, lineage record, monitoring, rollback, supersession or retirement mechanism.",
+  "limitations_and_failure_boundaries": [
+    "Task-adaptive scaling requires a known task ID; the paper's statement that it is based on input features is stronger than Eq. 6 and the implementation.",
+    "The MMLU evidence shows activation diversity only and does not measure unseen-task predictive performance.",
+    "PCA separation of expert matrices can reflect explicit orthogonality regularization and is not direct proof of semantic expertise.",
+    "The paper says SAMoRA is best across all GLUE tasks, but Table 2 contains individual tasks on which a baseline or ablation is higher.",
+    "Main improvements are sub-one-point averages and are reported without repeated-run variation or significance tests.",
+    "The theoretical complexity omits base-model computation, all-expert B execution constants, task lookup, checkpoint movement and systems overhead; no measured latency is reported.",
+    "Provided train scripts use one epoch while Table 8 reports three epochs.",
+    "Provided scripts request SVD initialization without supplying the required SVD path, files or generation procedure, so the checked code skips it by default.",
+    "The shipped evaluation scripts do not reproduce the paper's unseen MMLU activation analysis.",
+    "The unseen-task layer path applies to the whole batch when any lambda_index is -1, preventing mixed known/unseen semantics in one batch.",
+    "No dependency specification, tests, released weights, data snapshot, result artifacts or root repository license are present.",
+    "The experiments are limited to jointly trained text tasks at 8B scale; arbitrary independent or cross-model adapters are outside scope."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove semantic equivalence, expert correctness, non-interference, optimal routing, calibrated uncertainty or universal composition.",
+    "It does not establish predictive generalization on unseen MMLU tasks from activation plots alone.",
+    "It does not demonstrate composition of independently versioned adapters or a production registry lifecycle.",
+    "It does not provide independent empirical reproduction, a formal proof, or validation of the point architecture as a whole."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Architecture, task IDs, hyperparameters and prompts are explicit, while semantic, compatibility, effect and lifecycle contracts remain incomplete."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "Inspectable code implements the joint training path from labeled tasks to expert, router, scale and checkpoint artifacts."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Cosine affinity and regularized key-expert alignment are operational notions without behavioral equivalence guarantees."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "The paper and code directly implement per-token routing and dense composition of shared-carrier LoRA experts."
+    },
+    "GAP-019": {
+      "status": "CONFIRMED",
+      "reason": "Two backbones, sixteen tasks, matched baselines, component ablations and sensitivity analyses validate the bounded jointly trained mechanism."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Routing and scale signals are inspectable, but calibration, repeated-run uncertainty, durable traces and lifecycle governance are absent."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Task IDs, prompts and objectives specify behavior operationally without a formal semantic or effect contract."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Shared projections, expert matrices, keys, gates, scales and task IDs are explicit carriers."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "Joint optimization and auxiliary constraints compile task data into routed low-rank expert artifacts."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "The code creates and saves a concrete LoRA-prefixed state dictionary tied to the wrapped base model."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "Llama and Qwen integrations execute the frozen path plus routed and task-scaled low-rank residuals."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Router weights, gates and losses exist in memory, but no durable trace schema or lineage export is implemented."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Multi-backbone task tables, matched baselines, ablations and sensitivity studies validate a bounded experimental mechanism."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Learned low-rank semantic keys route every token and densely compose compatible expert residuals with task-specific scaling."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "Checkpoint and task-map primitives exist without version identity, provenance, compatibility, health, rollback or retirement governance."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_FULLTEXT_AND_EXACT_CODE_REVISION_CARD",
+    "corrections": [
+      "No per-source provisional evidence card existed for S120-037.",
+      "The exact arXiv v1 authors, 16-page file identity, non-exclusive paper license, and linked repository commit were recorded.",
+      "The code confirms the core router, task gate, regularization and runtime equations, while exposing SVD, epoch, unseen-task, mixed-batch and reproducibility boundaries not visible in the source registry."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "For jointly trained, same-backbone LoRA experts with explicit task IDs, SAMoRA supplies direct paper-and-code evidence for a bounded Representation-Compiler-Artifact-Interpreter-Validator-ComposerRouter chain: a shared low-rank carrier, learned expert keys, token-level mixture weights, task-specific scaling, auxiliary specialization objectives, exact runtime execution, and multi-task ablations. Unseen-task quality, uncertainty and governed registry lifecycle remain partial.",
+  "source_specific_reasoning": "Confirmation is limited to the mechanism that can be traced from equations into exact code: h=AX, cosine key routing, dense B_i composition, diagonal scaling, task-ID gating, auxiliary losses, checkpoint generation and evaluation. Main benchmark and ablation tables support that narrow projection. Stronger language is rejected: task scaling is ID-conditioned, MMLU evidence is activation-only, average gains lack repeated-run uncertainty, and the repository cannot reproduce the published SVD and three-epoch setup without missing assets. This justifies CONFIRMED N8 and implementation lifecycle primitives, not semantic correctness or production readiness.",
+  "projection_boundary": "All GAP and Function OS impacts above are 121CX architectural projections from arXiv v1 and GitHub commit 2c90a989. Code inspection and syntax compilation are not benchmark reproduction, proof, verification of unpublished artifacts, calibration, security review, or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T05:03:16Z"
+}

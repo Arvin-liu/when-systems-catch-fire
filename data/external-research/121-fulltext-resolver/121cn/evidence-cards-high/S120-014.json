@@ -1,0 +1,82 @@
+{
+  "source_id": "S120-014",
+  "canonical_title": "HyperSeg: Patch-wise Hypernetwork for Real-time Semantic Segmentation",
+  "authors": "Yuval Nirkin, Lior Wolf, Tal Hassner",
+  "year": 2021,
+  "venue": "BMVC 2021",
+  "doi_or_identifier": "arXiv:2012.11582",
+  "source_family": 2,
+  "url": "https://arxiv.org/pdf/2012.11582",
+  "version": "preprint",
+  "sha256": "pending",
+  "file_size_bytes": 0,
+  "page_count": 15,
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "GLM52_HIGH_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "Abstract",
+    "Introduction",
+    "Method",
+    "Experiments",
+    "Conclusion"
+  ],
+  "page_or_section_anchors": [
+    "Abstract",
+    "Sec 1",
+    "Sec 3",
+    "Sec 4"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "HyperSeg uses a patch-wise hypernetwork that generates segmentation head weights conditioned on the input image patch.",
+    "The hypernetwork enables dynamic, input-dependent weight generation for real-time semantic segmentation.",
+    "The architecture achieves competitive accuracy with real-time performance by generating weights at the patch level."
+  ],
+  "function_concept_used_by_paper": "Functions (segmentation models) are dynamically generated per input patch. The segmentation function is not fixed but is compiled on-the-fly based on the input.",
+  "representation_or_carrier": "Dynamically generated segmentation head weights, conditioned on image patch features.",
+  "compiler_or_generator": "The hypernetwork generates segmentation weights from encoder features. This is a concrete, input-conditioned compilation pipeline.",
+  "interpreter_or_runtime": "The generated segmentation head processes the patch features to produce segmentation maps.",
+  "composition_rule": "Patch-wise generation: different patches may receive different weight configurations. No formal composition algebra.",
+  "state_or_effect_model": "Input-dependent weight generation. No formal state tracking.",
+  "validation_regime": "Empirical: Cityscapes, Pascal Context, ADE20K semantic segmentation benchmarks.",
+  "equivalence_notions": "Not addressed.",
+  "limitations_and_failure_boundaries": [
+    "Patch-wise generation adds computational overhead.",
+    "No formal specification of what segmentation function is compiled.",
+    "No equivalence checking between generated models for different patches.",
+    "No effect tracking or state management."
+  ],
+  "what_the_paper_does_not_support": [
+    "GAP-015",
+    "GAP-017",
+    "GAP-018",
+    "GAP-020"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "NOT_ADDRESSED",
+    "GAP-016": "PARTIAL_SUPPORT: Input-conditioned weight generation.",
+    "GAP-017": "NOT_ADDRESSED",
+    "GAP-018": "WEAK_EVIDENCE: Input-dependent state.",
+    "GAP-019": "NOT_ADDRESSED",
+    "GAP-020": "NOT_ADDRESSED"
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "NO_EVIDENCE",
+    "N2_Representation": "MULTI_SOURCE_EVIDENCE: Dynamic weight representation.",
+    "N3_Compiler": "MULTI_SOURCE_EVIDENCE: Input-conditioned hypernetwork compiler.",
+    "N4_Artifact": "WEAK_EVIDENCE: Ephemeral per-patch artifacts.",
+    "N5_Interpreter": "MULTI_SOURCE_EVIDENCE: Segmentation head as interpreter.",
+    "N6_ExecutionTrace": "NO_EVIDENCE",
+    "N7_Validator": "NO_EVIDENCE",
+    "N8_ComposerRouter": "WEAK_EVIDENCE: Patch-level routing.",
+    "N9_VersionedRegistry": "NO_EVIDENCE"
+  },
+  "claim_support_status": "PARTIAL",
+  "source_specific_reasoning": "S120-014 demonstrates input-conditioned weight generation for real-time segmentation. Strong evidence for N3 (Compiler) and N5 (Interpreter) with clear per-patch compilation. However, ephemeral artifacts, no formal spec, no equivalence, no versioning.",
+  "comparison_to_provisional": "AGREES",
+  "comparison_reason": "Input-conditioned hypernetwork; confirms compiler pattern.",
+  "reviewer_model": "qclaw/pool-glm-5.2-night",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T19:40:00Z",
+  "supersedes_provisional_card_id": "S120-014-provisional-121"
+}

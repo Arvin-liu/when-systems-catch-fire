@@ -1,0 +1,27 @@
+{
+  "open_proof_obligations": 620,
+  "toolchain_status": {
+    "snapshot_id": "IGNITION-20260709-078",
+    "lean": {
+      "available": true,
+      "version": "Lean (version 4.19.0, arm64-apple-darwin23.6.0, commit 6caaee842e94, Release)",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    "sympy": {
+      "available": true,
+      "version": "1.14.0"
+    },
+    "z3": {
+      "available": true,
+      "version": "4.16.0"
+    },
+    "checks": {
+      "T2_Z3_PROOF": true,
+      "D220_Z3_COUNTERMODEL": true,
+      "T16_SYMPY_COUNTEREXAMPLE": true,
+      "T2_LEAN_PROOF": true,
+      "T23_PENDING": true
+    }
+  },
+  "note": "Only T2 is retained as a proved core theorem; other theorem-layer labels remain downgraded or pending."
+}

@@ -1,0 +1,22 @@
+{
+  "step": "006",
+  "task": "strict validation (truthful)",
+  "generated_at": "${NOW}",
+  "function_os_v02": {
+    "unittest_discover": "PASS",
+    "pytest_total": 163,
+    "eval_exec_in_runtime": "NONE",
+    "tracked_cache_artifacts": "NONE",
+    "note": "163 tests = 155 inherited (121Q6 hardening) + 6 importer (003) + 2 e2e (004)"
+  },
+  "ci_status": {
+    "function_os_ci": "added (Step 005); matrix py3.10/3.11/3.12; not yet run on GitHub",
+    "foundation_validation": "INHERITED_FOUNDATION_CI_FAILURE (tools/foundation/migrate_legacy.py --check) present in PR #40/#41; NOT a 121Q6/121Q6C regression; recorded, not fixed"
+  },
+  "control_files": {
+    "json_jsonl_valid": true,
+    "invalid": []
+  },
+  "inherited_ci_failure": "tools/foundation/migrate_legacy.py --check (pre-existing in PR #40, not introduced by 121Q6/121Q6C)",
+  "verdict": "STRICT_VALIDATION_PASSED_LOCALLY (Function OS v0.2); foundation CI failure inherited & documented, not claimed fixed"
+}

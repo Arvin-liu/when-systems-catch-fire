@@ -1,0 +1,266 @@
+{
+  "source_id": "S120-029",
+  "canonical_title": "Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators",
+  "title": "Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators",
+  "authors": [
+    "Lu Lu",
+    "Pengzhan Jin",
+    "Guofei Pang",
+    "Zhongqiang Zhang",
+    "George Em Karniadakis"
+  ],
+  "year": 2021,
+  "version": "Nature Machine Intelligence version of record, 2021-03-18, with official 37-page supplementary information; arXiv:1910.03193v3 cross-check",
+  "doi_or_identifier": "10.1038/s42256-021-00302-5; arXiv:1910.03193",
+  "identifier": "doi:10.1038/s42256-021-00302-5",
+  "url": "https://doi.org/10.1038/s42256-021-00302-5",
+  "source_family": 4,
+  "source_family_name": "neural operators and function-space learning",
+  "license": "Version of record: © The Author(s), under exclusive licence to Springer Nature Limited 2021; linked v1.0.0 code archive metadata reports CC-BY-4.0 while the GitHub repository displays CC-BY-NC-SA-4.0",
+  "sha256": "1aab1ef2236f2ba0888829aec87e786b4737289cb76b4dc138b26581a8381a14",
+  "file_size_bytes": 2178396,
+  "page_count": 15,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_source": "Nature article HTML preview captured 2026-07-13",
+    "registered_sha256": "2cf03b85bced0321d15d8da3ffd024ce4cf236d78bd3439d43982575efd367cc",
+    "registered_file_size_bytes": 322496,
+    "registered_source_limitation": "The registry labels the HTML as application/pdf and open access, but it is a paywalled preview and does not contain the full methods and results.",
+    "reviewed_version_of_record_sha256": "1aab1ef2236f2ba0888829aec87e786b4737289cb76b4dc138b26581a8381a14",
+    "reviewed_version_of_record_file_size_bytes": 2178396,
+    "reviewed_version_of_record_pages": 15,
+    "official_supplement_sha256": "aacc2dbcc363f179a6b6769a7fb5cca511676a983ea5260fafb3888b47a19679",
+    "official_supplement_file_size_bytes": 1664524,
+    "official_supplement_pages": 37,
+    "arxiv_v3_sha256": "4b0bea3d69cbcb044b4e6b754de87ad3dc6efe7e5f2606cb090bca0e00bbad4a",
+    "arxiv_v3_pages": 22,
+    "paper_code_archive": "Zenodo 10.5281/zenodo.4319385, v1.0.0, 2020-12-13",
+    "paper_code_tag_commit": "bb38685524f5f6deb2e72f2160a858aa1a349f07",
+    "live_code_head_verified_2026_07_14": "8d62345afd39e1df9c2c8c8d0e7c41882b06a9bf",
+    "sources_cross_checked": [
+      "Nature DOI landing page and version-of-record PDF",
+      "official Springer supplementary PDF",
+      "arXiv:1910.03193v3",
+      "paper-linked GitHub repository and v1.0.0 tag",
+      "Zenodo record 4319385"
+    ]
+  },
+  "sections_reviewed": [
+    "Abstract and operator-regression motivation",
+    "DeepONet theory, stacked and unstacked branch/trunk architectures, and Theorems 1-3",
+    "Data generation, Gaussian random fields, orthogonal-polynomial carriers, and sensor analysis",
+    "Explicit operators: antiderivative, Legendre transform, Caputo derivative, and fractional Laplacian",
+    "Implicit deterministic operators: nonlinear ODE, pendulum, diffusion-reaction, advection, and advection-diffusion",
+    "Stochastic ODE and elliptic-PDE operators",
+    "Conclusions, limitations, data/code availability, and reporting summary",
+    "Supplementary Sections S1-S18: proofs, Hölder-continuity assumptions, parameters, cost, baselines, data construction, and per-problem results"
+  ],
+  "page_or_section_anchors": [
+    {
+      "source": "version of record",
+      "anchors": "pp. 218-220, Fig. 1, Theorems 1-2",
+      "checked_for": "compact continuous-operator assumptions, fixed input sensors, branch/trunk factorization, approximation-versus-generalization boundary"
+    },
+    {
+      "source": "version of record",
+      "anchors": "pp. 221-223, Fig. 2, Theorem 3",
+      "checked_for": "input-space carriers, bias and architecture comparisons, distribution shift, Wasserstein relation, and sensor sufficiency"
+    },
+    {
+      "source": "version of record",
+      "anchors": "pp. 224-227, Figs. 3-6",
+      "checked_for": "deterministic and stochastic operator experiments, convergence observations, reported uncertainty, and numerical-solver ceiling"
+    },
+    {
+      "source": "version of record",
+      "anchors": "pp. 227-229, conclusions, data/code availability, author contributions",
+      "checked_for": "explicit limitations, provenance, implementation availability, and future-work boundary"
+    },
+    {
+      "source": "official supplement",
+      "anchors": "S1-S8, pp. 2-13",
+      "checked_for": "definitions, proofs, interpolation and sensor error, data generation, hyperparameters, and computational cost"
+    },
+    {
+      "source": "official supplement",
+      "anchors": "S9-S18, pp. 14-37",
+      "checked_for": "per-problem protocols, baseline comparisons, exclusions, training/test repetitions, fractional-data scale, and Hölder-continuity conditions"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "DeepONet represents a nonlinear operator through a branch network over finitely sampled input-function values and a trunk network over output coordinates, combined by an inner product plus optional bias.",
+      "anchors": "Fig. 1 and pp. 219-220"
+    },
+    {
+      "claim": "Under compact-domain, compact input-family, continuity, and universal-approximator assumptions, the generalized branch/trunk architecture can approximate continuous nonlinear operators uniformly.",
+      "anchors": "Theorems 1-2 and Supplement S1-S2"
+    },
+    {
+      "claim": "The theorem controls representation or approximation capacity, not optimization error, finite-sample generalization, network-size complexity, or learnability; these remain separate and often dominant.",
+      "anchors": "pp. 220-221 and conclusion p. 227"
+    },
+    {
+      "claim": "Across 16 curated explicit, implicit, deterministic, and stochastic examples generated primarily from known numerical solvers, the authors report lower generalization error than selected baselines and fast empirical error decay in several regimes.",
+      "anchors": "Figs. 2-6 and Supplement S7-S17"
+    },
+    {
+      "claim": "The paper's stochastic examples propagate random-process inputs or predict pathwise/statistical outputs, but they do not establish a unified calibrated uncertainty interface for unseen production distributions.",
+      "anchors": "pp. 225-227 and Supplement S3, S7"
+    },
+    {
+      "claim": "Because the training targets are produced by reference solvers, the trained surrogate cannot exceed those solvers' accuracy on that evidence; the paper claims inference speedup after expensive offline training, not autonomous correctness.",
+      "anchors": "conclusion p. 227 and Supplement Tables S4-S5"
+    }
+  ],
+  "function_concept_used_by_paper": "A function is an element of a compact family in C(K), operationalized by values at shared sensor points, orthogonal-polynomial coefficients, an image grid, or a truncated Karhunen-Loève representation. An operator maps an input function u to an output function G(u); the trained artifact evaluates G(u)(y) for a queried output coordinate y.",
+  "representation_or_carrier": {
+    "mathematical_carrier": "compact subsets of Banach spaces of continuous functions and continuous nonlinear operators",
+    "input_carrier": "shared sensor vector [u(x1),...,u(xm)], polynomial expansion coefficients, image/grid values, or KL modes",
+    "output_carrier": "coordinate y and scalar G(u)(y), repeated over arbitrary output locations to reconstruct an output function",
+    "artifact_carrier": "branch/trunk network parameters, architecture and hyperparameters, generated train/test triples, solver outputs, and saved model files in the linked implementation"
+  },
+  "specification_language": "The paper specifies operators through mathematical domains, equations, boundary or initial conditions, input-function distributions, sensor sets, output coordinates, and accuracy norms. These form a strong research-level FunctionSpec for each experiment, but there is no executable cross-domain schema for units, tensor shapes, permissions, side effects, lifecycle policy, or semantic compatibility.",
+  "compiler_or_generator": {
+    "data_generation": "Known ODE/PDE solvers, analytic solutions, Gaussian random fields, orthogonal-polynomial samples, and KL expansions generate supervised triples (u,y,G(u)(y)).",
+    "artifact_generation": "Optimization fits branch and trunk subnetworks so their latent-vector inner product approximates G(u)(y).",
+    "theoretical_generator": "Theorems 1-2 motivate representational form; Theorem 3 bounds sensor discretization for a restricted class of Lipschitz dynamical systems.",
+    "boundary": "No general algorithm derives data, architecture, sample size, or a certified artifact from an arbitrary operator specification. Hyperparameters are manually tuned and theorem assumptions must be established separately."
+  },
+  "interpreter_or_runtime": "At inference, the branch network embeds a fixed-sensor representation of u, the trunk network embeds y, and their dot product plus bias returns an approximation of G(u)(y). TensorFlow/DeepXDE, numerical precision, preprocessing, sensor alignment, and dependencies are part of the concrete runtime but not captured by the mathematical theorem.",
+  "composition_rule": "Within one artifact, branch and trunk embeddings compose by a finite inner product, and output coordinates can include physical, parameter, or stochastic dimensions. The work discusses specialized subnetworks and prospective multiphysics extensions, but it does not define typed composition among independently trained operators or runtime routing, fallback, and conflict resolution.",
+  "state_or_effect_model": "The mathematical operator is treated as a pure mapping, while the training workflow has mutable weights, random sampling and initialization, solver/file I/O, accelerator computation, and checkpoints. These operational effects are described procedurally, not governed by a typed effect, permission, transaction, or rollback model.",
+  "uncertainty_model": "Reported experimental uncertainty is mainly mean and one standard deviation over repeated runs, and stochastic examples use Gaussian-process/KL inputs and pathwise or mean/standard-deviation targets. The paper also relates one GRF distribution shift to a 2-Wasserstein distance. It does not provide calibrated predictive intervals, epistemic/aleatoric separation, coverage guarantees, or end-to-end uncertainty propagation for arbitrary deployments; one nonlinear-ODE analysis removes the worst 0.1% predictions.",
+  "validation_regime": {
+    "theoretical": "uniform approximation theorems on compact continuous-operator settings, a sensor-count result for restricted Lipschitz systems, and Hölder-continuity arguments for studied operators",
+    "empirical": "16 generated problems spanning explicit transforms, deterministic ODE/PDE solution operators, and stochastic ODE/PDE mappings",
+    "comparators": "FNN, ResNet, Seq2Seq and CNN baselines in selected non-identical or architecture-specific settings",
+    "metrics": "training, test and generalization MSE; relative L2 error; repeated-run standard deviation; selected two-sided t-tests; runtime tables",
+    "boundary": "The review confirms the reported experimental design and figures, not a re-execution. Baseline datasets are not always identical, hyperparameters are manual, several fast-rate observations lack theory, and generated-solver data do not validate unknown real-world operators."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "uniform approximation",
+      "support": "THEOREM_SCOPED",
+      "boundary": "Applies to compact function families and continuous operators with sufficiently expressive finite networks; it is not a finite-data training or computable-size guarantee."
+    },
+    {
+      "notion": "sensor representation fidelity",
+      "support": "BOUNDED_FOR_RESTRICTED_SYSTEMS",
+      "boundary": "Theorem 3 and interpolation analysis require regularity and Lipschitz conditions and do not certify arbitrary operators or moving sensors."
+    },
+    {
+      "notion": "surrogate correctness",
+      "support": "EMPIRICALLY_BOUNDED",
+      "boundary": "Agreement is against generated reference solvers and held-out samples from specified distributions, so it neither exceeds solver truth nor proves external semantic equivalence."
+    },
+    {
+      "notion": "architecture equivalence",
+      "support": "REPRESENTATIONAL_ONLY",
+      "boundary": "Stacked and unstacked constructions share universal approximation capacity, but they are not behaviorally identical after finite optimization."
+    }
+  ],
+  "lifecycle_and_provenance": "The source has a DOI version of record, received/accepted/published dates, official supplement, reporting summary, generated-data statement, public code link, Git history, v1.0.0 tag, Zenodo DOI, dependency instructions, licenses, and named author contributions. The reproducibility surface is stronger than a paper-only claim but incomplete: the article registry misclassifies its HTML preview, the final article is paywalled, code and archive license metadata conflict, the repository depends on obsolete DeepXDE 0.11.2/TensorFlow-era interfaces, and there is no environment lock, dataset hash manifest, artifact signature, promotion status, monitoring, drift rule, supersession, rollback, or retirement record.",
+  "limitations_and_failure_boundaries": [
+    "Universal approximation is existential and assumption-bound; it does not establish optimization success, finite-sample generalization, feasible network size, or computational learnability.",
+    "Input functions normally share a fixed sensor set; interpolation or basis projection can relax that constraint but introduces additional representation error.",
+    "The paper does not theoretically explain the reported small generalization errors or several exponential-to-polynomial empirical convergence regimes.",
+    "All principal training datasets come from known analytic or numerical operators, so the validation is surrogate reproduction rather than discovery of an unknown real operator.",
+    "Reference-solver error bounds the achievable truth of the learned surrogate, even where inference is much faster.",
+    "Baseline comparisons are not uniformly controlled: for example, Seq2Seq requires dense output grids and sometimes receives more data.",
+    "Manual hyperparameter selection, network-width sensitivity, distribution shift and optimizer effects limit generalization of the numerical findings.",
+    "The stochastic-PDE example improves error by clipping Gaussian variables to a bounded region, and a supplementary nonlinear-ODE result removes the worst 0.1% predictions; tail behavior therefore requires explicit treatment.",
+    "The linked implementation is historical and dependency-sensitive; current repository HEAD, archived v1.0.0 and the paper runtime must not be conflated.",
+    "The paper provides neither typed effects nor registry, deployment, trace-integrity, drift, rollback and retirement governance."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove that DeepONet learns every nonlinear operator from finite data or that the reported convergence rates hold generally.",
+    "It does not prove semantic equivalence between a trained network and a differential equation beyond the stated approximation and empirical regimes.",
+    "It does not provide automatic operator discovery, symbolic identification, causal identification, or a universal uncertainty contract.",
+    "It does not validate the point architecture as a whole or supply a production Function OS registry and router."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "CONFIRMED",
+      "reason": "Function families, operator domains, sensors or basis carriers, output coordinates, equations, distributions and norms form explicit bounded specifications and representations."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "Data generation, branch/trunk fitting, saved parameters and online inference are clearly distinct construction and execution stages."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Uniform approximation, interpolation and held-out error provide scoped equivalence notions, but no finite-training semantic equivalence contract exists."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Branch/trunk inner-product composition is explicit; composition and routing across independently versioned operators are absent."
+    },
+    "GAP-019": {
+      "status": "CONFIRMED",
+      "reason": "Theory, 16 explicit/implicit test problems, multiple metrics, repeated runs, selected baselines, code and supplement provide a substantial bounded validation regime."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Stochastic inputs, means/standard deviations, repeat variability and Wasserstein shift are modeled, but calibration and lifecycle governance remain incomplete."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Each experiment explicitly defines input function family, operator, output coordinates, conditions and accuracy measure."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Sensor values, polynomial coefficients, grids and KL modes are concrete alternative function carriers."
+    },
+    "N3_Compiler": {
+      "status": "CONFIRMED",
+      "reason": "A documented solver-data-training pipeline produces executable branch/trunk parameter artifacts from bounded specifications."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "The trained DeepONet with architecture, weights and hyperparameters is a distinct reusable surrogate artifact."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "Branch embedding, trunk embedding and inner-product evaluation define a concrete online runtime."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Training histories, repetitions, data triples and metrics exist, but no immutable standardized execution trace is defined."
+    },
+    "N7_Validator": {
+      "status": "CONFIRMED",
+      "reason": "Assumption-scoped proofs and broad held-out numerical studies provide complementary validation surfaces."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL",
+      "reason": "The architecture composes branch and trunk components but does not route among multiple deployed operator artifacts."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "DOI, article version, supplement, Git tag and Zenodo archive provide provenance primitives without governed promotion, monitoring, supersession or retirement."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "ABSENT",
+    "verdict": "NEW_FULLTEXT_CARD_WITH_REGISTRY_CORRECTION",
+    "corrections": [
+      "No per-source provisional evidence card existed for S120-029.",
+      "The canonical published title is 'Learning nonlinear operators via DeepONet based on the universal approximation theorem of operators', not the older arXiv title stored in the manifest.",
+      "The final version has five authors; the older arXiv v3 title page lists only Lu Lu, Pengzhan Jin and George Em Karniadakis.",
+      "The registered local source is HTML preview content, not a PDF or complete open-access manuscript; the review used the version of record plus the official supplement and recorded their separate hashes."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "CONFIRMED",
+  "confirmed_projection": "Within compact continuous-operator and explicitly sampled experimental regimes, DeepONet supplies direct evidence for a FunctionSpec-Representation-Compiler-Artifact-Interpreter-Validator chain: mathematical operator specifications become branch/trunk surrogate artifacts, are executed at queried coordinates, and are assessed by assumption-scoped theory plus held-out numerical studies.",
+  "source_specific_reasoning": "This source is unusually strong for the Function OS projection because the representation boundary is explicit rather than metaphorical: an input function is carried by sensors or another finite encoding, a branch network embeds it, a trunk network embeds the output coordinate, and an inner product produces an executable function value. The full paper and supplement also separate existential approximation, sensor discretization, optimization, generalization and reference-solver error. That separation is decisive. It confirms a bounded specification-to-artifact-to-runtime-to-validator lifecycle while preventing the universal-approximation theorem or curated experiments from being promoted into a claim of general learnability, semantic equivalence or production reliability. Provenance is material but partial: DOI, supplement, code tag and Zenodo exist, yet registry metadata, license consistency, environment capture and operational lifecycle controls remain unresolved.",
+  "projection_boundary": "All GAP and Function OS impacts above are 121CX architectural projections from the version of record, official supplement, arXiv cross-check and linked code provenance. Source review is not a new mathematical proof, causal identification, independent empirical replication, proof that the linked code still executes, or final truth freeze.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T04:41:54Z"
+}

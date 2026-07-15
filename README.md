@@ -1,35 +1,47 @@
 # When Systems Catch Fire / 点火
 
-> 这是点火项目的首页。它先回答三个问题：这是什么、为什么存在、从哪里开始读。
+> 这是点火项目的首页。它先回答三个问题：当前长成什么、当前边界是什么、从哪里开始读。
 
-点火是一个跨域结构性推论与理论生成框架。它把现象整理成函数、案例与元协议，让人和 AI 可以在同一套结构里比较、收敛、反证，并在证据不足时保留 `pending`。
+在当前提交下，点火是一套面向跨领域材料的、证据可追溯、对象类型明确、推理过程可检查、结论等级可审计的形式化机制发现与建模系统。这是版本化现状描述，不是永久本质或终局定位；后续证据、反例、执行能力、缺口修复和外部反馈都可能改变下一版现状。它不是现成的统一数学理论、物理理论、万能证明器，也不是纯文学或纯哲学知识库。
 
-If you prefer English first: this repo explores cross-domain structural inference and theory generation. It keeps the front door short and sends the detailed method to dedicated docs.
+If you prefer English first: at the current commit, this repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system. This is a versioned current-state description, not a permanent project identity.
 
-本项目采用 MIT License。详情见 [LICENSE](LICENSE)。
+本项目当前采用分层许可：核心可执行软件为 BUSL-1.1（source-available，2030-07-15 起转换为 AGPL-3.0-or-later），原创文档/报告/可版权化策展内容为 CC BY-NC-SA 4.0，价值宪章与一般治理原则为 CC BY-SA 4.0，公开接口与互操作 schema 为 Apache-2.0。详情见 [LICENSE](LICENSE) 与 [LICENSES/README.md](./LICENSES/README.md)。
+
+历史 MIT 版本、旧提交、旧副本和既有 fork 的 MIT 权利继续有效，不被追溯撤销。商业生产使用和项目支持入口见 [COMMERCIAL-LICENSING.md](./COMMERCIAL-LICENSING.md) 与 [SUSTAINABILITY.md](./SUSTAINABILITY.md)。
 
 ## 先从哪里进入
 
 - 想先看全貌，请读 [人类导航页](./SUMMARY.md)。
 - 想给 AI / Agent 一个机器可读入口，请读 [llms.txt](./llms.txt)。
-- 想知道当前架构与边界，请读 [项目架构](./docs/PROJECT-ARCHITECTURE.md) 和 [版本规范](./docs/VERSIONING.md)。
+- 想让 AI 从零背景接手，请读 [AI-START-HERE.md](./AI-START-HERE.md) 与 [AI-HANDOFF.md](./AI-HANDOFF.md)。
+- 想知道项目当前已经长成什么，请读 [项目现状](./docs/project-current-state.md)。
+- 想知道当前架构与边界，请读现行权威 [ARCHITECTURE.md](./ARCHITECTURE.md)、双地基 [FOUNDATION.md](./FOUNDATION.md) 和 [版本规范](./docs/VERSIONING.md)；[旧架构路径](./docs/PROJECT-ARCHITECTURE.md) 仅为稳定兼容入口。
 - 想知道怎么用，请读 [使用说明](./docs/USAGE.md)。
 - 想按 Agent 方式操作，请读 [Agent 指南](./docs/AGENT-GUIDE.md)。
 - 想理解 Get 笔记如何进入这套系统，请读 [得到大脑协作流程](./docs/GET-BRAIN-WORKFLOW.md)。
 
+## 致谢
+
+感谢提供推理、检索、编程、执行、校验和长程协作能力的 AI 系统；感谢提供问题、材料、验证、纠错、贡献与批评的人类参与者；感谢提供独立审查、红队反馈、规范约束和缺口暴露的外部治理。
+
+外部反馈不是“攻击/防御”叙事的一部分。经验证后，它进入“缺口发现 -> 结构修正 -> 再验证”的系统输入链。上述致谢不表示任何个人、AI 系统或机构对项目全部结论背书，也不声称 AI 具有法律人格或独立 ratification 权限。
+
 ## 这套仓库在做什么
 
-点火的核心是把一个问题放进可复核的结构里：对象是什么，因果在哪里，系统如何反馈，哪些部分可以比较，分析应该停在哪一层，最后再判断结论是 `true`、`false`、`contradiction` 还是 `pending`。
+点火采用七层正式架构：L0 来源与证据、L1 受控语义命题、L2 形式对象、L3 逻辑论证、L4 数学模型与证明、L5 验证与有效性、L6 解释应用与出版。数学与逻辑互相约束；workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 九个状态轴彼此独立，任何一轴不能自动推出另一轴。
 
-当前仓库里，已经审核的正式资产放在两张表里，候选材料和理论展开放在专门的文档里。README 不再重复这些细节，只负责把入口摆清楚。
+data/foundation/ 下的对象、命题、论证、来源、证据、映射、证明、验证和迁移注册表承担新架构的状态权威。统一函数总表和统一案例总表完整保留为 legacy source / compatibility view：零删除、零重编号、不得独立生长，也不得用案例或工作流收口替代数学证明、逻辑有效性或经验真实性。
 
 ## 生命共同体价值宪章
 
 > **长瞻一宇同叩月，此心相契共今宵。**
 
-> 点火项目以生命共同体作为总体规范性价值前提。这里的生命共同体不限于人类，也不限于地球；它包括现实存在或未来可能发现、具有生命性、主体性、感受能力、独立利益、自我维持能力或其他足以构成道德地位的存在者及其相互依存系统。
+> 点火项目以生命共同体作为最高层规范性边界，而不是外围宣言。这里的生命共同体不限于人类，也不限于地球；它包括现实存在或未来可能发现、具有生命性、主体性、感受能力、独立利益、自我维持能力或其他足以构成道德地位的存在者及其相互依存系统。
 >
-> 任何局部系统的延续、效率、创新、稳定或扩张，都不得以对更大生命共同体造成不可逆、不可补偿、非自愿的重大伤害为代价。项目优先维护长期共存、持续再生、多样性、主体尊严、代际责任、风险可逆性和未来选择空间。
+> 价值宪章决定什么值得做；Ψ₀ 与元协议决定怎样合理判断；Function OS 决定怎样运行；验证与现实反馈负责发现错误、修正函数和更新价值冲突。
+>
+> 任何局部系统的延续、效率、创新、稳定、商业化或扩张，都不得以对更大生命共同体造成不可逆、不可补偿、非自愿的重大伤害为代价。项目优先维护长期共存、持续再生、多样性、主体尊严、代际责任、风险可逆性、维护者可持续性和未来选择空间。
 
 > 本宪章是项目的规范性出发点，不是经验性证据，不替代数学证明、实验验证、案例核验、外部学科审查或治理批准。
 
@@ -59,7 +71,7 @@ If you prefer English first: this repo explores cross-domain structural inferenc
 
 ### 如果你是 Agent 或研究助手
 
-先看 [llms.txt](./llms.txt) 和 [docs/AGENT-GUIDE.md](./docs/AGENT-GUIDE.md)。这两个文件会告诉你该先读什么、哪些东西不能混、哪里需要写审计。
+先看 [AI-START-HERE.md](./AI-START-HERE.md)、[llms.txt](./llms.txt)、[AI-HANDOFF.md](./AI-HANDOFF.md) 和 [docs/AGENT-GUIDE.md](./docs/AGENT-GUIDE.md)。这些文件会告诉你该先读什么、哪些东西不能混、哪里需要写审计。
 
 ### 如果你关心证据和反例
 
@@ -67,14 +79,22 @@ If you prefer English first: this repo explores cross-domain structural inferenc
 
 ### 如果你关心正式资产
 
-先看 [统一函数索引表](./统一函数总表/INDEX.md) 和 [统一案例索引表](./统一案例总表/INDEX.md)。
+先看 [项目状态](./data/foundation/project-state.json)、[注册表清单](./data/foundation/registry-manifest.json) 和 [迁移摘要](./data/foundation/migration-summary.json)。[统一函数索引表](./统一函数总表/INDEX.md) 与 [统一案例索引表](./统一案例总表/INDEX.md) 是历史兼容入口，不是新状态权威。
 
 ## 关键参考
 
-- [项目定位](./docs/project_positioning.md)
-- [项目架构](./docs/PROJECT-ARCHITECTURE.md)
+- [现行架构权威](./ARCHITECTURE.md)
+- [数学与逻辑双地基](./FOUNDATION.md)
+- [Foundation 文档入口](./docs/foundation/README.md)
+- [AI 冷启动入口](./AI-START-HERE.md)
+- [AI 交接契约](./AI-HANDOFF.md)
+- [机器注册表状态](./data/foundation/project-state.json)
+- [项目现状](./docs/project-current-state.md)
+- [项目架构兼容入口](./docs/PROJECT-ARCHITECTURE.md)
 - [Get 笔记协作流程](./docs/GET-BRAIN-WORKFLOW.md)
 - [版本规范](./docs/VERSIONING.md)
+- [许可作用域](./LICENSES/README.md)
+- [商业许可](./COMMERCIAL-LICENSING.md) 与 [可持续性政策](./SUSTAINABILITY.md)
 - [断言等级说明](./docs/claim_levels.md)
 - [证据机制说明](./docs/evidence_regime_library.md)
 - [反证模板](./docs/falsifiability/README.md)
@@ -88,9 +108,8 @@ If you prefer English first: this repo explores cross-domain structural inferenc
 - [64 组合矩阵](./docs/meta-protocols/meta-protocol-64-combination-matrix.md)
 - [22 个书籍验证候选](./docs/meta-protocols/book-validation-22-cases-20260709.md)
 - [元协议迭代说明](./docs/meta-protocols/version-iteration-note-20260709.md)
-- [Φ 元统一律完整定义](./docs/phi_meta_law.md)
+- [Ψ₀ 历史表达（legacy source）](./docs/phi_meta_law.md)
 - [两张表的写入规范](./docs/two-tables-entry-writing-standard-20260709.md)
-- [生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
 
 ## 说明
 

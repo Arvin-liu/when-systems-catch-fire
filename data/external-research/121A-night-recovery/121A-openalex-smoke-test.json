@@ -1,0 +1,51 @@
+{
+  "smoke_test_id": "121A-openalex-smoke-20260714",
+  "created_utc": "2026-07-14T01:14:00Z",
+  "tool": "scripts/external-research/openalex_client.py",
+  "tests": [
+    {
+      "test": "keyword_search",
+      "command": "python3 openalex_client.py \"program as weights\" 3 --json",
+      "result": "PASS",
+      "returned_results": 3,
+      "sample_title": "CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, position-specific gap penalties and weight matrix choice",
+      "fields_present": ["openalex_id", "doi", "title", "year", "authors", "venue", "type", "abstract", "is_oa", "oa_status", "oa_url", "is_retracted", "concepts", "relevance_score"],
+      "abstract_restoration": "PASS — abstract text restored from inverted index"
+    },
+    {
+      "test": "doi_query",
+      "command": "python3 openalex_client.py --doi 10.48550/arxiv.2607.02512 --json",
+      "result": "PASS",
+      "returned_title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+      "returned_year": 2026,
+      "is_retracted": false,
+      "is_oa": true,
+      "oa_status": "green",
+      "oa_url": "https://doi.org/10.48550/arxiv.2607.02512",
+      "any_repository_has_fulltext": true,
+      "abstract_present": true,
+      "abstract_word_count_approx": 120,
+      "note": "oa_url is metadata clue only; NOT counted as FULLTEXT_REVIEWED"
+    },
+    {
+      "test": "batch_doi_verification",
+      "command": "python3 openalex_client.py --batch-doi '10.48550/arxiv.2607.02512,10.1093/nar/22.22.4673' --json",
+      "result": "PASS",
+      "doi_count_input": 2,
+      "doi_count_found": 2,
+      "doi_count_not_found": 0,
+      "results": [
+        {"doi": "10.48550/arxiv.2607.02512", "found": true, "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions", "is_retracted": false, "is_oa": true},
+        {"doi": "10.1093/nar/22.22.4673", "found": true, "title": "CLUSTAL W: improving the sensitivity...", "is_retracted": false, "is_oa": true}
+      ]
+    },
+    {
+      "test": "oa_url_output",
+      "result": "PASS",
+      "note": "oa_url field present in all results; documented as metadata clue only, not as fulltext download"
+    }
+  ],
+  "overall_status": "ALL_TESTS_PASS",
+  "credential_leak_in_output": false,
+  "oa_url_not_counted_as_fulltext_reviewed": true
+}

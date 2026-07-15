@@ -1,0 +1,12 @@
+{"forbidden_phrase": "weight similarity implies function equivalence", "reason": "Violates equivalence axis - weight similarity is at most DISTRIBUTIONAL_APPROXIMATION, never FORMAL_SEMANTIC_EQUIVALENCE"}
+{"forbidden_phrase": "behavioral approximation proves equivalence", "reason": "Finite behavioral match is level 3, not level 6"}
+{"forbidden_phrase": "performance close enough to be equivalent", "reason": "EMPIRICAL_PERFORMANCE_SIMILARITY is level 7, not equivalence"}
+{"forbidden_phrase": "this paper's function corresponds to ignition function X", "reason": "Violates red line: do not project external functions as ignition functions"}
+{"forbidden_phrase": "the paper concludes that", "reason": "Unless FULLTEXT_REVIEWED, cannot claim paper conclusions - only abstract claims"}
+{"forbidden_phrase": "DOI exists therefore peer-reviewed", "reason": "DOI existence ≠ peer review. Preprints also have DOIs."}
+{"forbidden_phrase": "citation count indicates quality", "reason": "Citation count is not evidence of correctness"}
+{"forbidden_phrase": "model-generated summary of the paper", "reason": "Must not present AI summaries as paper conclusions"}
+{"forbidden_phrase": "these functions are the same", "reason": "Must specify equivalence level - 'same' is ambiguous"}
+{"forbidden_phrase": "equivalent in practice", "reason": "No such equivalence level - must use defined axis"}
+{"forbidden_phrase": "functionally identical", "reason": "Must use FORMAL_SEMANTIC_EQUIVALENCE with proof, or specify lower level"}
+{"forbidden_phrase": "the paper shows that X equals Y", "reason": "Must cite specific section/page and verify at FULLTEXT_REVIEWED level"}

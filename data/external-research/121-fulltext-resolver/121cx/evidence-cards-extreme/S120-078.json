@@ -1,0 +1,266 @@
+{
+  "source_id": "S120-078",
+  "canonical_title": "A Comprehensive Survey of Mixture-of-Experts: Algorithms, Theory, and Applications",
+  "authors": [
+    "Siyuan Mu",
+    "Sen Lin"
+  ],
+  "year": 2025,
+  "source_family": 5,
+  "source_family_name": "LoRA, adapters and meta-learning",
+  "identifier": "arXiv:2503.07137v4",
+  "doi_or_identifier": "DOI 10.48550/arXiv.2503.07137",
+  "url": "https://arxiv.org/pdf/2503.07137v4",
+  "version": "arXiv v4, submitted 2025-03-10 and revised 2026-01-24",
+  "license": "arXiv non-exclusive distribution license",
+  "file_size_bytes": 578359,
+  "page_count": 29,
+  "sha256": "e473e8c790a2dd644673448031defffa21e260b2b8b1dc4e5efd10f1c96cf2d9",
+  "reviewed_at": "2026-07-14T09:59:37Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "claim_support_status": "PARTIAL",
+  "retrieval_and_integrity": {
+    "registered_pdf": {
+      "url": "https://arxiv.org/pdf/2503.07137",
+      "resolved_version": "arXiv v4",
+      "sha256": "e473e8c790a2dd644673448031defffa21e260b2b8b1dc4e5efd10f1c96cf2d9",
+      "file_size_bytes": 578359,
+      "page_count": 29,
+      "registry_match": true
+    },
+    "official_metadata": {
+      "url": "https://arxiv.org/abs/2503.07137",
+      "first_submission": "2025-03-10",
+      "latest_revision": "2026-01-24",
+      "version_count": 4,
+      "authors": [
+        "Siyuan Mu",
+        "Sen Lin"
+      ],
+      "comments": "29 pages, 3 figures"
+    },
+    "source_archive": {
+      "url": "https://export.arxiv.org/e-print/2503.07137v4",
+      "sha256": "a53346980ff9b40c7dce5aace48ebec7204d4eca04b86c8fc663ea32c4d0463d",
+      "file_size_bytes": 103880,
+      "files": [
+        "00README.json",
+        "main.tex",
+        "main.bbl",
+        "expert.pdf",
+        "standard_moe_layer.pdf"
+      ],
+      "bibliography_entries": 305,
+      "artifact_boundary": "The archive contains the manuscript source, compiled bibliography and two figure assets. It contains no authors' MoE implementation, dataset, experiment code, checkpoint, result table or review-search ledger."
+    },
+    "visual_review": "All 29 pages were rendered at 144 DPI and visually inspected. The complete two-column text, equations 1-12, three figures and references 1-305 were legible; no blank, clipped, substituted or malformed page was found.",
+    "text_review": "The complete 29,812-word Poppler extraction and the complete 180,828-byte TeX source were reviewed across sections I-VII and the full bibliography.",
+    "integrity_boundary": "The downloaded v4 PDF exactly reproduces the frozen registry hash, size and page count. The audit therefore used the canonical registered artifact without changing any frozen source table."
+  },
+  "sections_reviewed": [
+    "abstract and section I introduction",
+    "section II basic designs: gating functions, expert networks, routing, training strategies and system design",
+    "section III algorithms: continual learning, meta-learning, multi-task learning, reinforcement learning and federated learning",
+    "section IV theory",
+    "section V applications: computer vision and natural language processing",
+    "section VI future directions and section VII conclusion",
+    "all three figures, equations 1-12 and references 1-305",
+    "complete arXiv v4 TeX source, bibliography and figure assets"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 1-3, abstract, section I and Figure 1",
+      "checked_for": "survey scope, headline efficiency claims, stated novelty, taxonomy, source-family fit and whether the paper reports an original study"
+    },
+    {
+      "anchors": "pp. 3-8, section II.A-D, Figures 2-3 and equations 1-12",
+      "checked_for": "router definition, TopK/softmax ordering, probabilistic gates, expert-function carrier, weighted composition, token/modality/task routing, load losses, capacity and collapse"
+    },
+    {
+      "anchors": "pp. 8-9, section II.E",
+      "checked_for": "expert/data/model/tensor parallelism, pipeline scheduling, all-to-all communication, memory pressure, caching and runtime-effect boundaries"
+    },
+    {
+      "anchors": "pp. 9-15, section III.A-E",
+      "checked_for": "continual/meta/multi-task/RL/federated use cases, adapter and expert routing, output composition, task boundaries, privacy claims and the four-versus-five domain inconsistency"
+    },
+    {
+      "anchors": "pp. 15-16, section IV",
+      "checked_for": "approximation, MLE convergence, identifiability, parameter-estimation rates, deep-MoE theory limits and whether cited theorems are contributions of this survey"
+    },
+    {
+      "anchors": "pp. 16-21, section V",
+      "checked_for": "CV/NLP application breadth, comparability of reported metrics, secondary-evidence boundary and absence of independent replication"
+    },
+    {
+      "anchors": "pp. 21-22, sections VI-VII; pp. 22-29, references",
+      "checked_for": "open problems, review methodology, author artifact coverage, claims-to-citations boundary and bibliography completeness"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "Mixture-of-experts models use a learned gating function to select or weight specialized expert networks conditionally on an input.",
+      "anchors": "pp. 3-5, section II.A-B, equations 1-5 and Figures 2-3"
+    },
+    {
+      "claim": "Sparse conditional activation can expand total parameter capacity without activating every parameter for every input, but introduces load-balancing, communication and memory challenges.",
+      "anchors": "pp. 1-3 and 7-9, sections I and II.D-E"
+    },
+    {
+      "claim": "Routing may operate at token, modality, task or contextual levels and may select FFN, attention, convolutional, adapter, policy or other expert structures.",
+      "anchors": "pp. 4-7, sections II.B-C"
+    },
+    {
+      "claim": "MoE patterns have been applied across continual, meta, multi-task, reinforcement and federated learning, and across CV and NLP applications.",
+      "anchors": "pp. 9-21, sections III and V"
+    },
+    {
+      "claim": "Existing theory addresses selected approximation, convergence, identifiability and specialization settings, while modern deep-MoE routing and interpretability remain underdeveloped.",
+      "anchors": "pp. 15-16 and 21-22, sections IV and VI.D"
+    }
+  ],
+  "function_concept_used_by_paper": "The central function is an input-conditioned mixture MoE(x)=sum_{i in I_D} w_i M_i(x): a gating function computes scores or probabilities, selects a subset of expert functions, dispatches the input and combines expert outputs. Experts may be FFNs, attention heads, CNNs, adapters, policies or task/domain modules. This is a concrete router-composer architecture, not a low-rank parameter delta, a general function specification language or a weight-space arithmetic algebra.",
+  "specification_language": "The survey describes task objectives, data domains, learned gate scores, TopK rules, expert capacity, load losses and cited application protocols. These are architecture/training specifications, not a typed callable contract with machine-checkable preconditions, postconditions, effect signatures or authority constraints.",
+  "representation_or_carrier": "A routed function is carried jointly by expert-network parameters, gating parameters or embeddings, the selected expert-index set, normalized mixture weights and the base architecture in which the MoE layer is embedded. Some cited systems use adapters, masks, prompts, policies or local client models, but the paper does not reduce all experts to one carrier type.",
+  "compiler_or_generator": "Supervised, reinforcement, meta, continual or federated optimization learns the router and experts; some cited designs add, merge, mask, upcycle or hypernetwork-generate experts. This is model generation and adaptation, not compilation from a declarative FunctionSpec or semantics-preserving lowering.",
+  "interpreter_or_runtime": "At inference, a router scores an input, a dispatcher sends it to selected experts, expert runtimes evaluate their subnetworks and a combiner forms a weighted output. Distributed deployments add expert/data/model/tensor parallel execution, all-to-all communication, scheduling, caching and memory movement. The survey specifies this pattern but releases no runtime implementation of its own.",
+  "state_or_effect_model": "Training mutates router/expert parameters and load statistics; runtime produces dispatch, communication, memory, scheduling, capacity-overflow and possible token-drop effects. The surveyed applications also include recurrent, continual, RL and federated state. No unified effect type system, capability boundary, transaction model, compensation semantics or rollback protocol is defined.",
+  "composition_rule": "Composition is primarily input-conditioned output-space routing: hard TopK or soft gating selects experts and the combiner sums or averages their outputs with weights. Hierarchical/task/modality routers and cited expert-merging designs extend this pattern. This is not generally weight-space addition or merging of independently specified functions, and no associativity, commutativity, identity, compatibility or semantic-preservation law is established.",
+  "equivalence_notions": "The survey compares cited systems through task-specific accuracy, loss, return, latency, throughput, resource use and theoretical convergence/approximation results. It supplies no cross-carrier equivalence relation, behavioral test suite, distributional tolerance or proof that a routed mixture is equivalent to any dense, merged or symbolic function.",
+  "validation_regime": {
+    "source_type": "Narrative technical survey/preprint. It contributes a taxonomy and secondary synthesis, not a new MoE system, dataset, benchmark, experiment, theorem or replication.",
+    "review_methodology": "No database/search query, search date, inclusion/exclusion criteria, screening flow, duplicate handling, quality appraisal, risk-of-bias assessment or reproducible evidence table is reported. The word 'systematic' describes topical organization, not a documented systematic-review protocol.",
+    "coverage": "The v4 bibliography contains 305 entries and the roadmap spans basic design, five learning paradigms, theory, CV and NLP. Breadth does not by itself establish completeness, unbiased selection or equal evidentiary quality.",
+    "quantitative_synthesis": "Headline numbers such as Switch Transformer speedups, DeepSpeed compression, Mixtral active/total parameters and application metrics are inherited from heterogeneous cited studies. The survey performs no metric normalization, hardware/compute matching, meta-analysis, uncertainty aggregation or independent recalculation.",
+    "theory_boundary": "Section IV summarizes approximation, convergence, identifiability and specialization results from cited papers, mainly for simplified gates/experts. Those proofs are not proofs contributed or mechanically checked by this survey, and the survey explicitly says deep-MoE theory remains elusive.",
+    "system_boundary": "The paper identifies computation imbalance, all-to-all communication and memory as separate deployment bottlenecks and surveys parallelism, scheduling, caching and low-precision communication; it provides no unified benchmark or audited implementation.",
+    "artifact": "The authors release the exact manuscript source and bibliography only. A single DeepEP link is a cited third-party implementation; it is not authors' code or a reproduction package for the survey's claims.",
+    "editorial_consistency": "Sections I and III twice say 'four' learning paradigms/domains while listing five: continual learning, meta-learning, multi-task learning, reinforcement learning and federated learning. The taxonomy itself includes all five, so this is recorded as an unresolved editorial counting error rather than silently corrected.",
+    "reproducibility": "Document integrity and citation inventory are reproducible from arXiv v4, but the literature-selection process and cross-paper claims cannot be exactly replayed from released artifacts."
+  },
+  "uncertainty_model": "Softmax, Gaussian/exponential-family, Student-t, multinomial-probit and noisy routing provide probabilistic or stochastic control variables, and cited training uses random exploration/dropout. These quantities govern assignment or robustness; they are not necessarily calibrated epistemic uncertainty. The survey provides no common calibration definition, confidence protocol or uncertainty-aware admission rule across its 305 heterogeneous sources.",
+  "lifecycle_and_provenance": "The architectural lifecycle is expert initialization or upcycling, joint/specialized training, route selection, dispatch, expert execution, output combination, evaluation and possible expert addition/merging/caching. The paper supplies v1-v4 manuscript history and source hashes through arXiv, but no versioned expert registry, expert/checkpoint identifiers, dependency graph, compatibility contract, approval state, monitoring record, deprecation rule, rollback procedure or tombstone model.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Gate equations, capacity/load objectives and task/domain definitions specify bounded routing behavior, but there is no typed pre/post/effect contract for expert functions."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Experts, gate parameters, expert indices and mixture weights form a concrete distributed representation of an input-conditioned composite neural function."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Training, upcycling, expert generation and adaptation produce routed models, but no declarative lowering or semantic-preservation guarantee exists."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "Cited expert networks, adapters, masks and checkpoints are deployable artifact forms, while this survey releases no governed model artifact or common artifact schema."
+    },
+    "N5_Interpreter": {
+      "status": "PARTIAL",
+      "reason": "Router-dispatch-expert-combine is a concrete runtime pattern with distributed execution concerns, but the paper contributes no executable interpreter or formal operational semantics."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Routing decisions could be logged, yet the survey defines no trace schema and releases no per-token, per-expert or system execution traces."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "The survey catalogs performance, efficiency, theory and robustness criteria, but supplies no unified validator, reproduced measurement or cross-study acceptance threshold."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Input-conditioned gating, expert selection, dispatch and weighted output combination are the paper's central architecture and directly instantiate a bounded neural composer/router."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "ArXiv versions the manuscript, not expert-function artifacts; no provenance-complete registry, compatibility model or rollback lifecycle is defined."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Routing equations and training objectives are machine-readable fragments, but not a formal function specification language with preconditions, postconditions and effects."
+    },
+    "GAP-016": {
+      "status": "NOT_SUPPORTED",
+      "reason": "MoE output-space gating and expert selection are not a weight-space composition algebra; the survey defines no parameter-arithmetic laws for combining independent functions."
+    },
+    "GAP-017": {
+      "status": "NOT_SUPPORTED",
+      "reason": "Task metrics and cited approximation/convergence results do not provide a checker for equivalence across expert, dense, adapter, merged or symbolic representations."
+    },
+    "GAP-018": {
+      "status": "PARTIAL",
+      "reason": "Dispatch, all-to-all communication, capacity overflow, token drop, memory movement and learning-state mutation expose concrete effects without effect signatures or handlers."
+    },
+    "GAP-019": {
+      "status": "NOT_SUPPORTED",
+      "reason": "The paper surveys expert lifecycle fragments but supplies no machine-readable versioned function registry or provenance/compatibility/rollback protocol."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Probabilistic/noisy gating is explicit, but assignment probabilities are not a formal calibrated stochastic function semantics or uncertainty-governance framework."
+    }
+  },
+  "source_specific_reasoning": "PARTIAL is bounded to the survey's direct documentary support for MoE Representation and ComposerRouter and its useful catalog of compiler/runtime/validator fragments. The exact v4 equations and taxonomy clearly establish expert functions, learned gating, conditional dispatch and output combination. The verdict remains partial because this is secondary narrative evidence with no systematic search protocol, original implementation, experiment, unified validator, execution trace, equivalence checker, effect system or registry. It does not accept the metadata card's wrong authors, low-rank-delta carrier, adapter-forward runtime, stateless-inference claim or adapter-arithmetic composition rule.",
+  "confirmed_projection": "The exact arXiv v4 survey directly confirms a bounded neural ComposerRouter pattern: a learned gate maps an input to expert scores, dispatches the input to selected expert functions and combines their outputs, while distributed runtime choices expose computation, communication and memory tradeoffs. This supports Function OS representation/routing design only as secondary architecture evidence, not as a released Function OS implementation or validation of ignition.",
+  "projection_boundary": "These are 121CX projections from the exact 29-page arXiv v4 PDF, every rendered page, complete TeX source and all 305 bibliography entries. Cited empirical and theoretical results were not independently re-executed or re-proved. This model review is not a systematic-review certification, mechanized proof, implementation audit of 305 cited systems, independent empirical validation, or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not show that all experts are low-rank adapters or that MoE is primarily a low-rank weight-delta method.",
+    "It does not define weight-space addition, subtraction, merging or an algebra over independently learned functions.",
+    "It does not provide typed preconditions, postconditions, effect signatures or capability boundaries for experts.",
+    "It does not prove that routing decisions reflect semantic task identity, causal specialization or human-interpretable knowledge boundaries.",
+    "It does not establish equivalence between a sparse MoE and a dense, merged, symbolic or single-expert function.",
+    "It does not contribute a general compiler, interpreter, trace format, validator or versioned expert registry.",
+    "It does not independently reproduce or statistically synthesize the heterogeneous results of cited studies.",
+    "It does not prove the deep-MoE theoretical properties that it explicitly identifies as open.",
+    "It does not demonstrate that conditional activation always lowers end-to-end latency, memory, communication or total cost.",
+    "This review is not proof or independent empirical validation of the survey's cited claims."
+  ],
+  "limitations_and_failure_boundaries": [
+    "The paper is an arXiv preprint whose v4 states that it has been submitted to IEEE; no completed peer-review status is established by the source.",
+    "The survey reports no reproducible literature-search or study-selection protocol, so completeness and selection bias cannot be assessed.",
+    "There is no inclusion/exclusion criterion, screening flow, quality assessment, risk-of-bias analysis or evidence-grading framework.",
+    "The paper makes broad performance/efficiency statements using heterogeneous cited studies without common hardware, compute, data, metrics or uncertainty normalization.",
+    "The source archive contains manuscript materials only and no author implementation, datasets, checkpoints, logs or result-generation scripts.",
+    "A third-party DeepEP repository link is not a released implementation of this survey or a reproduction package for its claims.",
+    "The introduction and algorithm section call five listed learning paradigms 'four', an unresolved internal counting inconsistency.",
+    "The historical metadata card misattributes the authors as Cai et al.; the official arXiv record and manuscript name Siyuan Mu and Sen Lin.",
+    "The historical metadata card assigns a generic low-rank adapter template that does not match this paper's MoE subject or equations.",
+    "Hard TopK may exclude useful experts and is non-smooth; soft routing avoids discrete allocation but can increase computation and blur specialization.",
+    "Uneven routing can cause expert underuse, insufficient specialization, token dropping and model collapse; auxiliary losses and capacities add tuning tradeoffs.",
+    "Sparse activation reduces activated compute but total parameters still impose storage, communication, memory and scheduling costs.",
+    "Expert parallelism can create non-uniform workloads, synchronization delay and all-to-all communication bottlenecks.",
+    "Dynamic expert selection creates complex memory-access patterns and can exceed a single device's storage capacity.",
+    "Expert specialization and router decisions are not automatically interpretable; the paper lists interpretability/theory as open research.",
+    "Section IV's theory is dominated by simplified gates/experts and selected tasks; the survey states deep neural MoE understanding remains elusive.",
+    "Application summaries often repeat author-reported superiority language without independent replication or common statistical criteria.",
+    "Federated-learning discussion does not establish privacy, security or fairness merely from keeping data local; those properties require separate threat models and validation.",
+    "Routing probabilities and noisy gates are operational assignment mechanisms, not calibrated uncertainty estimates.",
+    "No source-level semantics, effect handling, cross-representation equivalence or learned-artifact lifecycle governance is supplied.",
+    "This audit verifies document integrity and performs semantic review; it does not audit all 305 cited papers or validate their measurements."
+  ],
+  "prior_provisional_comparison": {
+    "prior_card_status": "METADATA_ONLY",
+    "verdict": "PARTIAL_BOUNDED_SUPPORT_WITH_AUTHOR_AND_PARADIGM_CORRECTIONS",
+    "corrections": [
+      "Corrected the author list from the wrong Cai et al. attribution to Siyuan Mu and Sen Lin using the official arXiv record and exact manuscript.",
+      "Replaced the generic low-rank adapter template with the paper's actual expert-function, gate, dispatch and weighted-output architecture.",
+      "Corrected the carrier from a low-rank weight delta to experts plus gating parameters, selected expert indices and mixture weights.",
+      "Corrected the runtime from base-model-plus-adapter-forward-pass to router-dispatch-expert-combine with distributed system effects.",
+      "Rejected stateless inference as a universal claim because the survey spans continual, reinforcement, federated and system-state settings.",
+      "Rejected adapter arithmetic as the composition rule; MoE primarily composes outputs conditionally and does not define weight-space algebra.",
+      "Reviewed all 29 rendered pages, complete TeX source, equations 1-12, three figures and 305 bibliography entries.",
+      "Recorded the absent systematic-review protocol, original experiment/code and unified validation rather than treating survey breadth as independent empirical evidence.",
+      "Recorded the paper's four-versus-five learning-domain inconsistency and explicit deep-MoE theory boundary.",
+      "Did not call cited theorems proof by this survey, cited results independent validation, or this model review validation of ignition."
+    ],
+    "prior_card_superseded": true
+  }
+}

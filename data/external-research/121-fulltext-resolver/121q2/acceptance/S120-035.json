@@ -1,0 +1,162 @@
+{
+  "source_id": "S120-035",
+  "cx_step": 106,
+  "step_number": 107,
+  "_acceptance_layer": "121q2/acceptance/S120-035.json — overlay",
+  "canonical_title": "LoRA: Low-Rank Adaptation of Large Language Models",
+  "authors": "Edward Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen (Microsoft Corporation)",
+  "year": 2021,
+  "venue": "arXiv preprint (v2, Oct 2021); accepted to ICLR 2022",
+  "doi_or_identifier": "arXiv:2106.09685v2",
+  "prior_identity": {
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models (CORRECT)",
+    "authors": "Hu, E.J., et al. (CORRECT)",
+    "year": 2021,
+    "venue": "arXiv preprint / ICLR 2022 (CORRECT)",
+    "doi_or_identifier": "arXiv:2106.09685 (CORRECT)",
+    "sha256": "pending",
+    "file_size_bytes": 1609513
+  },
+  "corrected_identity": {
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "authors": "Edward Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+    "year": 2021,
+    "venue": "arXiv:2106.09685v2; ICLR 2022",
+    "exact_fulltext_used": "arXiv PDF, SHA256: e9a0d3128767db616085dc0f4e6e455e672e89af823e8ed1282793682787395a",
+    "url": "https://arxiv.org/pdf/2106.09685"
+  },
+  "identity_status": "VERIFIED",
+  "identity_corrections": [
+    "All identity fields correct. No corrections needed."
+  ],
+  "url": "https://arxiv.org/pdf/2106.09685",
+  "access_url": "https://arxiv.org/pdf/2106.09685",
+  "access_time_utc": "2026-07-14T16:37:14Z",
+  "file_sha256": "e9a0d3128767db616085dc0f4e6e455e672e89af823e8ed1282793682787395a",
+  "file_size_bytes": 1609513,
+  "page_count": 26,
+  "content_type": "application/pdf",
+  "sections": [
+    "1 Introduction",
+    "2 Problem Statement",
+    "3 Aren't Existing Solutions Good Enough? (adapters, prefix-tuning)",
+    "4 Our Method (low-rank decomposition W = W0 + BA)",
+    "5 Experiments (RoBERTa, DeBERTa, GPT-2, GPT-3)",
+    "6 Related Work",
+    "7 Conclusion",
+    "Appendix A-E"
+  ],
+  "abstract_snippet": "We propose Low-Rank Adaptation (LoRA), which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times. LoRA performs on-par or better than fine-tuning in model quality on RoBERTa, DeBERTa, GPT-2, and GPT-3, despite having fewer trainable parameters, a higher training throughput, and, unlike adapters, no additional inference latency.",
+  "what_the_paper_supports": "LoRA injects trainable low-rank decomposition matrices (A, B where rank r << d) into Transformer layers while freezing pre-trained weights. The weight update ΔW = BA has rank r, much smaller than full rank d. Key properties: (1) 10,000× fewer trainable parameters for GPT-3 175B, (2) 3× GPU memory reduction, (3) no inference latency (matrices can be merged with frozen weights at deployment), (4) on-par or better quality than full fine-tuning, (5) modules are swappable for different tasks. Empirically validated on RoBERTa, DeBERTa, GPT-2, GPT-3. Very low rank (r=1 or r=2) suffices even for d=12,288.",
+  "what_the_paper_does_not_support": "No formal specification language for adaptation tasks (GAP-015). No formal equivalence checking between adapted models (GAP-017). No versioning of LoRA modules beyond task-switching (GAP-019). No formal verification of adaptation quality (GAP-020 — empirical metrics only). LoRA is parameter-efficient adaptation, not program synthesis or execution. No execution trace. No registry beyond task-specific modules.",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "paper_core_claims": [
+    "LoRA freezes pre-trained weights and injects trainable rank decomposition W = W0 + BA where rank(BA) = r << d",
+    "10,000× fewer trainable parameters for GPT-3 175B (0.01% of original)",
+    "3× GPU memory reduction with adaptive optimizers",
+    "No additional inference latency — matrices can be merged with frozen weights at deployment",
+    "On-par or better quality than full fine-tuning on RoBERTa, DeBERTa, GPT-2, GPT-3",
+    "Very low rank (r=1 or r=2) suffices even when full rank d=12,288 — supports intrinsic dimension hypothesis"
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No specification language. LoRA adapts to downstream tasks via training data, not formal specs."
+    },
+    "GAP-016": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "LoRA compiles task-specific adaptations via low-rank decomposition. But this is parameter adaptation, not code/program compilation."
+    },
+    "GAP-017": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No equivalence checking between adapted models."
+    },
+    "GAP-018": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No intermediate state tracking. LoRA modifies weights, not execution state."
+    },
+    "GAP-019": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "LoRA modules are swappable (task A's BA can be replaced with task B's BA), which is a primitive form of versioning. But no formal registry or version control."
+    },
+    "GAP-020": {
+      "status": "NOT_ADDRESSED",
+      "reason": "No formal verification. Adaptation quality measured empirically."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "NO_EVIDENCE",
+      "reason": "No function specification language. Task defined by training data."
+    },
+    "N2_Representation": {
+      "status": "MULTI_SOURCE_EVIDENCE",
+      "reason": "Low-rank representation of weight updates: ΔW = BA where r << d. This is a notable representation insight — adaptation lives in low-dimensional subspace. Swappable modules as task-specific representations."
+    },
+    "N3_Compiler": {
+      "status": "NO_EVIDENCE",
+      "reason": "LoRA is not a compiler. It adapts model weights, not compiles specifications to programs."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "LoRA modules are reusable artifacts: train once, deploy many. Swappable for different tasks. But no persistent registry or metadata."
+    },
+    "N5_Interpreter": {
+      "status": "NO_EVIDENCE",
+      "reason": "LoRA is not an interpreter. It modifies model weights, not interprets programs."
+    },
+    "N6_ExecutionTrace": {
+      "status": "NO_EVIDENCE",
+      "reason": "No execution trace. LoRA operates on weight space, not execution state."
+    },
+    "N7_Validator": {
+      "status": "NO_EVIDENCE",
+      "reason": "No validation mechanism beyond training/validation loss. No formal checking of adaptation quality."
+    },
+    "N8_ComposerRouter": {
+      "status": "PARTIAL_SUPPORT",
+      "reason": "LoRA modules are composable: different modules for different tasks can be swapped at deployment. Multiple LoRA modules can potentially be combined. But no explicit routing or composition mechanism — just replacement."
+    },
+    "N9_VersionedRegistry": {
+      "status": "WEAK_EVIDENCE",
+      "reason": "Swappable modules are a primitive form of versioning (different BA for different tasks), but no formal registry, version control, or retrieval system."
+    }
+  },
+  "limitations_and_failure_boundaries": [
+    "LoRA is parameter-efficient adaptation, not program synthesis or execution",
+    "Only applies to Transformer architecture (though principle is general)",
+    "Rank r is manually selected — no automatic rank determination",
+    "Empirical observation that low rank suffices lacks formal theoretical explanation",
+    "No formal verification that adapted model is correct or safe",
+    "Module swapping is simple replacement — no composition or merging of multiple adaptations",
+    "GPT-3 175B experiments were limited by API access constraints"
+  ],
+  "strengths_noted": [
+    "N2 Representation: key insight — adaptation lives in low-dimensional subspace (intrinsic rank hypothesis)",
+    "N4 Artifact + N8 ComposerRouter: swappable task-specific modules — primitive but practical",
+    "No inference latency — matrices merge with frozen weights at deployment",
+    "10,000× parameter reduction with on-par quality is a landmark result",
+    "Comprehensive evaluation across 4 model families (RoBERTa, DeBERTa, GPT-2, GPT-3)",
+    "Code released: https://github.com/microsoft/LoRA",
+    "Has become one of the most influential methods in LLM adaptation"
+  ],
+  "independent_verification": {
+    "pdf_sha256_verified": true,
+    "pdf_sha256": "e9a0d3128767db616085dc0f4e6e455e672e89af823e8ed1282793682787395a",
+    "full_text_read": true,
+    "independent_conclusion": "PARTIAL",
+    "critical_findings": [
+      "Identity fully verified: arXiv:2106.09685, Hu et al., Microsoft",
+      "N2 Representation: notable — low-rank subspace hypothesis for adaptation",
+      "N8 ComposerRouter: swappable modules as primitive task routing",
+      "Mostly relevant to Function OS for N2 (representation) and N4/N8 (artifact/composer) — not for execution-related nodes"
+    ]
+  },
+  "reviewed_by_model": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "reviewed_at": "2026-07-14T16:37:14Z",
+  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714",
+  "cx_step_reconciled_from": 107,
+  "reconciliation_note": "CX step corrected from 107 to 106 per 121Q2R Step 001 canonical queue reconciliation."
+}

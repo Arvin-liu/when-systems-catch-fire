@@ -1,0 +1,243 @@
+{
+  "source_id": "S120-056",
+  "canonical_title": "Programming with Algebraic Effects and Handlers",
+  "authors": [
+    "Andrej Bauer",
+    "Matija Pretnar"
+  ],
+  "year": 2015,
+  "source_family": 8,
+  "source_family_name": "effect_systems_and_algebraic_handlers",
+  "identifier": "Journal of Logical and Algebraic Methods in Programming 84(1), 108-123; arXiv:1203.1539",
+  "doi_or_identifier": "10.1016/j.jlamp.2014.02.001",
+  "url": "https://arxiv.org/pdf/1203.1539",
+  "version": "arXiv v1 submitted 2012-03-07; journal version published January 2015",
+  "license": "arXiv non-exclusive distribution license for the reviewed preprint; historical Eff code is BSD-2-Clause",
+  "file_size_bytes": 242279,
+  "page_count": 25,
+  "sha256": "65c43ce564c5dfd6b0bb06a1d60a46c126a1ce08e67725e76ba93bc528726a7c",
+  "reviewed_at": "2026-07-14T11:42:36Z",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "content_access_status": "EXTRACTED_FULL",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE_WITH_METADATA_CORRECTION",
+  "claim_support_status": "CONFIRMED",
+  "retrieval_and_integrity": {
+    "canonical_binding": "The exact 121B/121CN arXiv PDF hash and size were independently re-fetched and matched. Official arXiv metadata identifies v1, both authors, the journal reference and DOI; Crossref independently identifies the January 2015 JLAMP article, volume 84 issue 1, pages 108-123.",
+    "metadata_correction": "The old atlas names only Matija Pretnar and binds DOI 10.1017/S0956796815000120 / Journal of Functional Programming, which belong to a different work. The reviewed paper is by Bauer and Pretnar and has DOI 10.1016/j.jlamp.2014.02.001 in JLAMP. Frozen old records were not rewritten and receive no bibliographic credit where they conflict.",
+    "extraction": "Independent layout-preserving extraction produced 9,805 words and 62,248 characters across all 25 pages. The modest word-count difference from the 121CN repair is extractor-dependent and does not affect the exact-byte match.",
+    "visual_review": "All 25 pages were rendered at 144 DPI and visually inspected in seven contact sheets. Syntax, typing rules, semantic domains/equations, program examples, discussion and references were legible; no blank, clipped, substituted or malformed page was found.",
+    "historical_implementation": {
+      "repository": "https://github.com/matijapretnar/eff",
+      "paper_example_merge_commit": "df3d7906601f4865ea8996faf94e3ce51417e6e5",
+      "paper_example_merge_date": "2012-03-08T10:40:38+01:00",
+      "paper_example_merge_message": "Merged the examples with the ones from the eff paper.",
+      "paper_snapshot_files": 127,
+      "paper_snapshot_source_files": 13,
+      "paper_snapshot_example_programs": 13,
+      "paper_snapshot_test_programs": 26,
+      "paper_snapshot_reference_outputs": 26,
+      "maintainer_marked_paper_like_tag": "v3.0",
+      "v3_tag_object": "51ad5b81a74ac3b4e29ad8985fcc6a0da8f3fc91",
+      "v3_commit": "5625ccf2f716b7e9649cbce57b2a27a3bc05a8ae",
+      "v3_commit_date": "2015-12-14T15:35:40+01:00",
+      "v3_tag_boundary": "The tag was added in 2018 and explicitly labels the last version resembling the paper; it is corroborating historical curation, not an immutable publication-time release.",
+      "code_findings": "The paper-era source implements parsing, desugaring, Hindley-Milner inference, big-step evaluation, operation-plus-continuation results, handler interception/forwarding and top-level stateful resources. The test script executes each Eff program and diffs output against checked-in references.",
+      "execution_boundary": "No OCaml, opam or dune executable is installed in the current review environment, so the historical implementation was not built or run. Source, history, manifests, examples, tests and reference outputs were audited; no reproduction or empirical-validation credit is assigned."
+    }
+  },
+  "sections_reviewed": [
+    "abstract, introduction and complete syntax of types, expressions, computations, instances, operations, handlers and resources",
+    "complete monomorphic type system and its explicit omission of computational-effect information",
+    "complete domain-theoretic denotational semantics for values, computations, handlers and top-level resources",
+    "prototype interpreter, Hindley-Milner inference, desugaring and sequencing-warning design",
+    "all examples: nondeterminism, exceptions, state, transactions, deferred computation, I/O, backtracking/BFS, selection functionals, probabilistic choice, cooperative threads and delimited control",
+    "discussion, future-work boundaries and all references",
+    "paper-era and maintainer-marked historical Eff repository source, examples, tests, reference outputs, history and license"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "pp. 1-4, introduction and sections 1-2.3",
+      "checked_for": "effect signatures, expression/computation separation, fresh instances, operation calls, delimited handler continuations and resource defaults"
+    },
+    {
+      "anchors": "pp. 5-10, sections 3-5",
+      "checked_for": "typing rules, denotational result carrier, handler/resource semantics, prototype inference/desugaring and missing effect system"
+    },
+    {
+      "anchors": "pp. 11-16, sections 6.1-6.6",
+      "checked_for": "multi-shot nondeterminism, exceptions, state scoping, transaction commit, resource runtime-error and I/O boundaries"
+    },
+    {
+      "anchors": "pp. 17-23, sections 6.7-7",
+      "checked_for": "backtracking/BFS, selection, probabilistic composition order, cooperative threads, delimited control, ill-typed self-application and future work"
+    },
+    {
+      "anchors": "pp. 24-25 and repository commits df3d790/5625ccf plus v3.0 tag",
+      "checked_for": "citation scope and implementation provenance, test mechanism and historical-release limitations"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "Eff exposes computational effects as typed operation signatures on first-class instances and lets handlers intercept a matching instance-operation while receiving its delimited continuation.",
+      "anchors": "sections 1-3"
+    },
+    {
+      "claim": "The denotational computation carrier is either a value or an operation with parameter and continuation; handler semantics rewrites matching operations and forwards unmatched ones.",
+      "anchors": "section 4"
+    },
+    {
+      "claim": "Top-level resources attach mutable default behavior to instances, enabling reference-like state and built-in real-world I/O when no enclosing handler consumes the operation.",
+      "anchors": "sections 2.3, 4.1 and 6.3-6.6"
+    },
+    {
+      "claim": "Handlers can discard, resume once or resume multiple times, supporting exceptions, nondeterminism, backtracking, search, probability and cooperative scheduling patterns.",
+      "anchors": "sections 6.1-6.11"
+    },
+    {
+      "claim": "Eff's prototype extends the paper core with Hindley-Milner inference and desugaring into an interpreter whose evaluation structure follows the denotational presentation.",
+      "anchors": "section 5 and historical repository source"
+    }
+  ],
+  "function_concept_used_by_paper": "The central callable unit is split between ordinary functions and effectful computations. A computation may return a value or emit an instance-qualified operation together with a delimited continuation; a handler is a first-class computation transformer from handled input values to output computations. This is a programming-language semantic model, not a registry of autonomous business functions.",
+  "specification_language": "Effect declarations specify finite operation names and parameter/result types; handler clauses specify behavior for selected instance-operation pairs plus value/finally cases. Ordinary function and handler types state value domains but do not record which effects a computation may perform. There are no pre/postconditions, authority policies, resource budgets, compatibility constraints or effect rows.",
+  "representation_or_carrier": {
+    "syntax": "Expressions, computations, effect signatures, fresh instances, operations, handlers and optional resources.",
+    "semantic_result": "A recursively defined result domain containing either a returned value or an operation request with parameter and continuation.",
+    "runtime": "Closures, first-class effect instances, handler values, operation nodes, multi-shot host-language continuations and resource state cells in the prototype interpreter.",
+    "boundary": "The model is for an experimental language and does not package a portable, signed or capability-governed Function OS artifact."
+  },
+  "compiler_or_generator": {
+    "front_end": "The prototype parses OCaml-like concrete syntax, infers polymorphic value types and desugars mixed expressions/computations into the core separation.",
+    "ordering": "When multiple computations are hoisted from an expression, simultaneous bindings leave ordering conceptually open; the prototype executes source order and may warn.",
+    "classification": "This is a parser/desugarer/type-inference front end feeding an interpreter, not a semantics-preserving optimizing compiler, verified code generator or automatic function synthesizer.",
+    "effect_boundary": "Because types omit effect information, the front end cannot statically certify purity, harmless reordering or all resource restrictions."
+  },
+  "interpreter_or_runtime": "Evaluation produces a value or an operation node. A handler recursively processes the result, applies a matching clause with a re-entering continuation, or forwards an unmatched operation outward. At top level, a resource operation reads and replaces instance state and resumes; an unhandled operation or a resource clause that itself emits an operation causes a runtime error. The historical OCaml interpreter realizes this architecture.",
+  "state_or_effect_model": "Effectful computation is explicit at the semantic level through instance-qualified operations and delimited continuations. Handlers may reinterpret or eliminate operations; resources provide mutable top-level state/default behavior and built-ins connect to I/O. State, exceptions, transactions, nondeterminism, probability and cooperative scheduling are expressible patterns. There is no static effect set on ordinary types, permission/authority model, distributed transaction semantics, idempotence, compensation protocol, concurrency isolation or safety sandbox.",
+  "composition_rule": "Handlers compose by lexical nesting over the recursive result carrier: the nearest matching instance-operation clause handles and may invoke the delimited continuation zero, one or multiple times, while unmatched operations propagate outward. Composition is order-sensitive and not commutative; the paper's backtracking and probability/state examples explicitly show that handler scope and expression sequencing can change or invalidate results.",
+  "equivalence_notions": [
+    {
+      "notion": "denotational meaning",
+      "support": "The paper assigns compositional domains and interpretation functions to core types, computations, handlers and resources.",
+      "boundary": "It states no soundness, adequacy, contextual-equivalence or mechanized theorem connecting the model to every prototype behavior."
+    },
+    {
+      "notion": "handler transformation",
+      "support": "Matching operations are replaced by clause computations and unmatched operations are re-emitted with transformed continuations.",
+      "boundary": "This does not make differently ordered/nested handler programs equivalent."
+    },
+    {
+      "notion": "example behavior",
+      "support": "The repository includes executable examples and output-diff regression fixtures.",
+      "boundary": "Example outputs are finite regression observations, not semantic equivalence, proof or broad empirical validation."
+    }
+  ],
+  "validation_regime": {
+    "paper": "Worked programs exercise canonical and unusual effect patterns, and the formal sections provide a compositional denotational account of the core language.",
+    "implementation": "The paper-era repository contains 26 test programs with 26 expected-output fixtures and a script that runs the interpreter then diffs actual against expected output.",
+    "static_checking": "The prototype implements Hindley-Milner value typing, but effect behavior is deliberately absent from standard types.",
+    "not_run": "The historical code could not be built in this environment because the required OCaml toolchain is absent.",
+    "missing": "No theorem/proof section, mechanized semantics, property-based suite, coverage report, benchmark, performance study, user study, portability matrix, security analysis or immutable release receipt is provided."
+  },
+  "uncertainty_model": "The language can represent nondeterministic and probabilistic choices through handlers, including enumerated distributions, but it does not model epistemic/predictive uncertainty about a function or handler. There is no confidence calibration, error bar, risk bound, abstention, fallback-selection policy or uncertainty attached to effect routing. Multi-shot continuation behavior is programmer-defined control, not calibrated uncertainty.",
+  "lifecycle_and_provenance": "A governed Eff/Function OS artifact would pin language/interpreter commit, compiler and OCaml versions, effect/handler interfaces, resource behavior, module hashes, declared ordering, test receipts and compatibility/security policy. The official repository supplies history and BSD-2-Clause code; commit df3d790 explicitly merged paper examples one day after arXiv submission, while a later v3.0 tag retrospectively marks a paper-like stable version. Neither is a publication-time signed release or lifecycle registry, and the current project describes itself as experimental rather than production-ready.",
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "PARTIAL",
+      "reason": "Operation signatures and handler clauses specify typed interfaces and behavior, but ordinary types omit performed effects and there are no contracts, permissions or nonfunctional constraints."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "The paper gives explicit syntax and semantic carriers for effectful computations, instances, handlers, operations, continuations and resources."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Parsing, type inference and desugaring are concrete front-end transformations, but execution remains interpretive and effect/order preservation is not formally certified."
+    },
+    "N4_Artifact": {
+      "status": "CONFIRMED",
+      "reason": "Historical source programs, interpreter code, examples and regression fixtures are concrete executable artifacts, bounded by missing immutable publication release and unavailable runtime execution here."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "The evaluator concretely realizes value/operation results, handler interception/forwarding and top-level resources."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Operation/continuation chains expose a conceptual execution structure, but no durable trace schema, log, causal receipt or deterministic replay protocol is defined."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Value typing and output-diff regressions validate bounded properties, while effects/order/resource safety remain incompletely checked and tests were not run in this review."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Lexically nested handlers route instance-qualified operations, transform matching requests and forward the rest; ordering is explicit and semantically consequential."
+    },
+    "N9_VersionedRegistry": {
+      "status": "NOT_SUPPORTED",
+      "reason": "The paper defines no versioned effect/function capability registry, promotion state, compatibility matrix, monitoring or retirement workflow."
+    }
+  },
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Typed operation signatures and handler clauses are useful specifications, but missing effect rows/contracts/authority constraints leave the broader gap open."
+    },
+    "GAP-016": {
+      "status": "CONFIRMED",
+      "reason": "Instance-qualified routing, lexical handler nesting, forwarding and multi-shot continuation use provide a concrete order-sensitive composition algebra."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Denotational semantics and regression fixtures give meaning and finite checks, but no mechanized correspondence, semantic-equivalence validator or adequacy theorem is supplied."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "Operations, handlers, resource state, I/O, exceptions and transactional/state examples directly model effects and their interpretation, within the stated runtime/static limits."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Source history and paper-linked commits support provenance, but no immutable artifact receipt, compatibility registry or lifecycle governance exists."
+    },
+    "GAP-020": {
+      "status": "PARTIAL",
+      "reason": "Nondeterministic/probabilistic control is expressible, but there is no calibrated epistemic uncertainty, confidence, risk, abstention or fallback framework."
+    }
+  },
+  "source_specific_reasoning": "CONFIRMED applies to the bounded semantic and architectural claim: Eff provides typed algebraic operation signatures, first-class instances and handlers, a value-or-operation-plus-continuation semantics, nested operation routing and a concrete interpreter with paper-linked artifacts. It does not confirm the old atlas bibliography, whose sole-author/JFP/Cambridge DOI record is wrong for this source. 'Seamless' combination is narrowed to expressibility and modular syntax: the paper itself demonstrates order- and scope-sensitive failures, warns about arbitrary sequencing and says an effect system is future work. The denotational development is formalization, not a claimed proof of prototype correctness.",
+  "confirmed_projection": "The paper confirms a strong Function OS pattern for N2/N5/N8 and GAP-016/GAP-018: represent an invocation as either a value or a typed operation request carrying its continuation; route by stable instance plus operation identity; let local handlers transform known requests and forward unknown ones; and make nesting/order part of the explicit composition contract. Its failures show why a production Function OS additionally needs static effect/authority specifications, ordering checks, durable traces, lifecycle provenance and runtime rollback/fallback boundaries.",
+  "projection_boundary": "This projection is based on the exact 25-page arXiv v1 bytes, all rendered pages, complete text, official arXiv/Crossref metadata and the relevant official repository history/source/examples/tests. The historical implementation was not built or executed because its toolchain is absent. This model review is not a proof, formal verification, code reproduction, independent empirical validation, security audit or validation of ignition.",
+  "what_the_paper_does_not_support": [
+    "It does not support the old atlas's sole-author, Journal of Functional Programming or DOI 10.1017/S0956796815000120 binding.",
+    "It does not provide an effect system that statically records performed effects or proves reordering harmless.",
+    "It does not show that handler composition is commutative, order-independent or automatically understandable; several examples show the opposite.",
+    "It does not provide general ACID transactions, distributed commit, compensation or external-system rollback; its transaction example temporarily handles one reference and commits only on a returned value.",
+    "It does not allow resource clauses to emit further operations; doing so is a runtime error in the presented model.",
+    "It does not type every expressible control example; the yin-yang self-application requires disabling the type checker.",
+    "It does not prove soundness, adequacy, contextual equivalence or implementation correspondence.",
+    "It does not benchmark performance, scalability or operational reliability.",
+    "It does not define permissions, authority, sandboxing, safety policy, durable tracing or a versioned capability registry.",
+    "The repository artifacts and expected outputs do not by themselves reproduce or independently validate every paper claim."
+  ],
+  "limitations_and_failure_boundaries": [
+    "The paper's formal core is monomorphic, while the prototype adds polymorphic inference and syntactic desugaring outside that core presentation.",
+    "Standard types do not contain computational-effect information; effect-system design is explicitly future work.",
+    "Simultaneous computation ordering is not semantically neutral, and the prototype warns rather than rejecting ambiguous sequencing.",
+    "Handler nesting and state scope can make backtracking/probability examples correct or wrong.",
+    "Unhandled operations and invalid resource results are runtime failures.",
+    "Resources cannot safely evaluate computations that trigger operations in the presented interpreter.",
+    "Multi-shot continuations can duplicate work and state interaction; no resource-cost or linearity discipline is given.",
+    "Continuations are acknowledged as non-algebraic even though handlers can encode useful delimited-control patterns.",
+    "The historical test suite checks expected outputs but supplies no coverage, property, concurrency, security or platform guarantees.",
+    "The implementation remains an experimental research language and the paper leaves program reasoning and effect analysis for future work."
+  ],
+  "prior_provisional_comparison": {
+    "old_status": "METADATA_ONLY",
+    "old_template": "Function with explicit effect tracking via handler algebra; algebraic effect signature; effect handler compiler/runtime; deterministic with nondeterminism effects; effect observation equivalence; effect log; language version.",
+    "accepted_after_full_review": "Typed effect signatures, first-class instances/handlers, order-sensitive nested composition, explicit operation-plus-continuation semantics and a prototype interpreter are directly supported.",
+    "corrected_after_full_review": "The paper is by Bauer and Pretnar in JLAMP with DOI 10.1016/j.jlamp.2014.02.001. Ordinary types do not explicitly track performed effects; the artifact is an interpreter rather than an effect-handler compiler; probabilistic/nondeterministic handlers do not make the system deterministic; no effect-observation equivalence theorem or effect-log trace is supplied; and repository history is not a governed language-version registry."
+  }
+}

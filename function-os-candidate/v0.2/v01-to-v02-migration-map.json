@@ -1,0 +1,179 @@
+{
+  "migration": "v0.1_to_v0.2",
+  "strategy": "KEEP_v0.1_AS_PROTOTYPE_NEW_DIRECTORY_v0.2",
+  "canonical_nodes": {
+    "N1": "FunctionSpec",
+    "N2": "Representation",
+    "N3": "Compiler",
+    "N4": "Artifact",
+    "N5": "Interpreter",
+    "N6": "ExecutionTrace",
+    "N7": "Validator",
+    "N8": "ComposerRouter",
+    "N9": "VersionedRegistry"
+  },
+  "modules": [
+    {
+      "v0.1_file": "n1_functionspec_parser.py",
+      "v0.1_wrong_node": "N1 (correct)",
+      "actual_duty": "FunctionSpec parsing and validation",
+      "v0.2_target": "N1",
+      "v0.2_file": "n1_functionspec_parser.py",
+      "strategy": "ADAPT_WITH_FIXES",
+      "fixes_needed": [
+        "remove exec() from tests",
+        "remove /tmp/ hardcode",
+        "use standard import"
+      ]
+    },
+    {
+      "v0.1_file": "n1_semantic_checker.py",
+      "v0.1_wrong_node": "N1 (correct)",
+      "actual_duty": "Semantic validation of FunctionSpec",
+      "v0.2_target": "N1",
+      "v0.2_file": "n1_semantic_checker.py",
+      "strategy": "ADAPT_WITH_FIXES",
+      "fixes_needed": [
+        "use standard import"
+      ]
+    },
+    {
+      "v0.1_file": "n1_safe_expression_dsl.py",
+      "v0.1_wrong_node": "N1 (correct)",
+      "actual_duty": "Safe expression evaluation with AST whitelist",
+      "v0.2_target": "N1",
+      "v0.2_file": "n1_safe_expression_dsl.py",
+      "strategy": "ADAPT_AS_IS",
+      "fixes_needed": []
+    },
+    {
+      "v0.1_file": "n2_symbolic_compiler.py",
+      "v0.1_wrong_node": "N2 (wrong — should be N3)",
+      "actual_duty": "Compiling FunctionSpec to executable output",
+      "v0.2_target": "N3",
+      "v0.2_file": "n3_symbolic_compiler.py",
+      "strategy": "RENAME_AND_REASSIGN",
+      "fixes_needed": [
+        "rename file to n3_*",
+        "update internal references to N3"
+      ]
+    },
+    {
+      "v0.1_file": "n3_expression_interpreter.py",
+      "v0.1_wrong_node": "N3 (wrong — should be N5)",
+      "actual_duty": "Interpreting compiled artifacts with precondition/postcondition checks",
+      "v0.2_target": "N5",
+      "v0.2_file": "n5_interpreter.py",
+      "strategy": "RENAME_AND_REASSIGN",
+      "fixes_needed": [
+        "rename file to n5_*",
+        "should accept N4 Artifact not raw compiled dict"
+      ]
+    },
+    {
+      "v0.1_file": "n4_artifact_packager.py",
+      "v0.1_wrong_node": "N4 (correct)",
+      "actual_duty": "Package/verify artifact with hash integrity",
+      "v0.2_target": "N4",
+      "v0.2_file": "n4_artifact_packager.py",
+      "strategy": "ADAPT_WITH_FIXES",
+      "fixes_needed": [
+        "update to accept N3 compiled payload"
+      ]
+    },
+    {
+      "v0.1_file": "n5_compile_feedback.py",
+      "v0.1_wrong_node": "N5 (wrong — should be N7 feedback path)",
+      "actual_duty": "Error feedback from compile failures",
+      "v0.2_target": "N7 (as feedback sub-module)",
+      "v0.2_file": "n7_feedback.py",
+      "strategy": "MERGED_INTO_N7",
+      "fixes_needed": [
+        "reassigned as N7 feedback path"
+      ]
+    },
+    {
+      "v0.1_file": "n6_validation_feedback.py",
+      "v0.1_wrong_node": "N6 (wrong — should be N7 feedback path)",
+      "actual_duty": "Trace analysis → validation feedback",
+      "v0.2_target": "N7 (as feedback sub-module)",
+      "v0.2_file": "n7_feedback.py",
+      "strategy": "MERGED_INTO_N7",
+      "fixes_needed": [
+        "reassigned as N7 feedback path"
+      ]
+    },
+    {
+      "v0.1_file": "n7_cross_node_composition.py",
+      "v0.1_wrong_node": "N7 (wrong — should be N8 prototype)",
+      "actual_duty": "Cross-node pipeline composition",
+      "v0.2_target": "N8",
+      "v0.2_file": "n8_composer_router.py",
+      "strategy": "RENAME_AND_REASSIGN",
+      "fixes_needed": [
+        "rename to n8_*",
+        "reimplement as ComposerRouter"
+      ]
+    },
+    {
+      "v0.1_file": "n8_trace_archiver.py",
+      "v0.1_wrong_node": "N8 (wrong — should be N6)",
+      "actual_duty": "JSON trace serialization",
+      "v0.2_target": "N6",
+      "v0.2_file": "n6_trace_archiver.py",
+      "strategy": "RENAME_AND_REASSIGN",
+      "fixes_needed": [
+        "rename to n6_*",
+        "add capture/query methods"
+      ]
+    },
+    {
+      "v0.1_file": "n9_registry_store.py",
+      "v0.1_wrong_node": "N9 (correct)",
+      "actual_duty": "Append-only registry store",
+      "v0.2_target": "N9",
+      "v0.2_file": "n9_registry_store.py",
+      "strategy": "ADAPT_WITH_FIXES",
+      "fixes_needed": [
+        "add representation_hash, trace_hash fields",
+        "add concurrent conflict detection"
+      ]
+    },
+    {
+      "v0.1_file": "n9_registry_updater.py",
+      "v0.1_wrong_node": "N9 (correct)",
+      "actual_duty": "Update/rollback/supersede operations",
+      "v0.2_target": "N9",
+      "v0.2_file": "n9_registry_updater.py",
+      "strategy": "ADAPT_WITH_FIXES",
+      "fixes_needed": [
+        "fix import paths"
+      ]
+    },
+    {
+      "v0.1_file": "n9_registry_validator.py",
+      "v0.1_wrong_node": "N9 (correct)",
+      "actual_duty": "Registry integrity validation",
+      "v0.2_target": "N9",
+      "v0.2_file": "n9_registry_validator.py",
+      "strategy": "ADAPT_AS_IS"
+    }
+  ],
+  "v0.2_new_modules": [
+    {
+      "node": "N2",
+      "file": "n2_representation.py",
+      "duty": "Representation encoder/decoder/validator — NEW, no v0.1 equivalent"
+    },
+    {
+      "node": "N6",
+      "file": "n6_trace_capture.py",
+      "duty": "Execution trace capture with event recording — NEW"
+    },
+    {
+      "node": "N7",
+      "file": "n7_validator.py",
+      "duty": "Artifact/spec/trace consistency validator — NEW"
+    }
+  ]
+}

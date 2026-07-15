@@ -1,0 +1,198 @@
+{
+  "step": 1,
+  "action": "PHASE2_VERDICT_RECONSTRUCTION",
+  "timestamp": "2026-07-14T17:17:30Z",
+  "semantic_axis": [
+    "CONFIRMED",
+    "PARTIAL",
+    "NOT_SUPPORTED",
+    "UNRESOLVED"
+  ],
+  "rule": "COMPLETE is flow status, NOT semantic. Not auto-converted to CONFIRMED.",
+  "sources": [
+    {
+      "source_id": "S120-001",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121CX",
+      "path": "121cx/121cx-prior-review-acceptance.jsonl",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-002",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121CX",
+      "path": "121cx/121cx-prior-review-acceptance.jsonl",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-003",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121CX",
+      "path": "121cx/121cx-prior-review-acceptance.jsonl",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-004",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121CX",
+      "path": "121cx/121cx-prior-review-acceptance.jsonl",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-005",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121CX",
+      "path": "121cx/121cx-prior-review-acceptance.jsonl",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-007",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121CX",
+      "path": "121cx/121cx-prior-review-acceptance.jsonl",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-008",
+      "semantic_verdict": "UNRESOLVED",
+      "raw_verdict": "UNRESOLVED",
+      "source": "121CX",
+      "path": "121cx/121cx-prior-review-acceptance.jsonl",
+      "notes": "content_access blocked → UNRESOLVED; S120-008: exact source blocked, content_access_status=NOT_LOCATED → UNRESOLVED"
+    },
+    {
+      "source_id": "S120-009",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121CX",
+      "path": "121cx/121cx-prior-review-acceptance.jsonl",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-010",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121CX",
+      "path": "121cx/121cx-prior-review-acceptance.jsonl",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-011",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q1",
+      "path": "121q1/acceptance/S120-011.json",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-012",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q1",
+      "path": "121q1/acceptance/S120-012.json",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-014",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q1",
+      "path": "121q1/acceptance/S120-014.json",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-015",
+      "semantic_verdict": "UNRESOLVED",
+      "raw_verdict": "UNRESOLVED",
+      "source": "121Q1",
+      "path": "121q1/acceptance/S120-015.json",
+      "notes": "S120-015: unverifiable identity → UNRESOLVED"
+    },
+    {
+      "source_id": "S120-017",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q2/121Q2R",
+      "path": "121q2/acceptance/S120-017.json",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-018",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q2/121Q2R",
+      "path": "121q2/acceptance/S120-018.json",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-021",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q2/121Q2R",
+      "path": "121q2/acceptance/S120-021.json",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-030",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q2/121Q2R",
+      "path": "121q2/acceptance/S120-030.json",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-035",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q2/121Q2R",
+      "path": "121q2/acceptance/S120-035.json",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-039",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q2/121Q2R",
+      "path": "121q2/acceptance/S120-039.json",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-045",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q2/121Q2R",
+      "path": "121q2/acceptance/S120-045.json",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-047",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q2/121Q2R",
+      "path": "121q2/acceptance/S120-047.json",
+      "notes": ""
+    },
+    {
+      "source_id": "S120-053",
+      "semantic_verdict": "PARTIAL",
+      "raw_verdict": "PARTIAL",
+      "source": "121Q2/121Q2R",
+      "path": "121q2/acceptance/S120-053.json",
+      "notes": ""
+    }
+  ],
+  "counts": {
+    "CONFIRMED": 0,
+    "PARTIAL": 20,
+    "NOT_SUPPORTED": 0,
+    "UNRESOLVED": 2
+  },
+  "total": 22,
+  "sum_check": true
+}

@@ -1,0 +1,18 @@
+{
+  "formal_objects": 622,
+  "formal_cases": 806,
+  "candidate_cases": 22,
+  "pending_claims": 34,
+  "scope_entities": 678,
+  "verified_legacy_counterexamples": 0,
+  "benchmark_counterexamples": 2,
+  "object_types": {
+    "PREDICATE": 6,
+    "STATE_TRANSITION": 1,
+    "ALGORITHM": 1,
+    "NATURAL_LANGUAGE_CANDIDATE": 548,
+    "METRIC": 35,
+    "RELATION": 27,
+    "ARGUMENT_SCHEMA": 4
+  }
+}

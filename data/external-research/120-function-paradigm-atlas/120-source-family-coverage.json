@@ -1,0 +1,81 @@
+{
+  "family_1": {
+    "name": "neural_weights_as_programs",
+    "count": 16,
+    "evidence_tiers": {
+      "ABSTRACT_REVIEWED": 4,
+      "METADATA_VERIFIED": 12
+    }
+  },
+  "family_2": {
+    "name": "hypernetworks_and_weight_generation",
+    "count": 7,
+    "evidence_tiers": {
+      "ABSTRACT_REVIEWED": 1,
+      "METADATA_VERIFIED": 6
+    }
+  },
+  "family_3": {
+    "name": "program_synthesis_and_nl_to_code",
+    "count": 10,
+    "evidence_tiers": {
+      "ABSTRACT_REVIEWED": 1,
+      "METADATA_VERIFIED": 9
+    }
+  },
+  "family_4": {
+    "name": "neural_operators_and_function_spaces",
+    "count": 7,
+    "evidence_tiers": {
+      "ABSTRACT_REVIEWED": 1,
+      "METADATA_VERIFIED": 6
+    }
+  },
+  "family_5": {
+    "name": "parameter_increments_and_adapters",
+    "count": 11,
+    "evidence_tiers": {
+      "METADATA_VERIFIED": 9,
+      "ABSTRACT_REVIEWED": 2
+    }
+  },
+  "family_6": {
+    "name": "model_merging_and_weight_composition",
+    "count": 9,
+    "evidence_tiers": {
+      "ABSTRACT_REVIEWED": 3,
+      "METADATA_VERIFIED": 6
+    }
+  },
+  "family_7": {
+    "name": "types_contracts_and_specifications",
+    "count": 6,
+    "evidence_tiers": {
+      "METADATA_VERIFIED": 6
+    }
+  },
+  "family_8": {
+    "name": "effects_side_effects_and_state",
+    "count": 5,
+    "evidence_tiers": {
+      "ABSTRACT_REVIEWED": 2,
+      "METADATA_VERIFIED": 3
+    }
+  },
+  "family_9": {
+    "name": "probabilistic_fuzzy_and_nondeterministic",
+    "count": 7,
+    "evidence_tiers": {
+      "ABSTRACT_REVIEWED": 1,
+      "METADATA_VERIFIED": 6
+    }
+  },
+  "family_10": {
+    "name": "tool_synthesis_and_self_evolving_agents",
+    "count": 6,
+    "evidence_tiers": {
+      "ABSTRACT_REVIEWED": 2,
+      "METADATA_VERIFIED": 4
+    }
+  }
+}

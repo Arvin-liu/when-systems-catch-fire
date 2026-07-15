@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-030",
+  "title": "Fourier Neural Operator for Parametric Partial Differential Equations",
+  "authors": "Li, Z., et al.",
+  "year": 2021,
+  "venue": "ICLR 2021",
+  "doi_or_identifier": "arXiv:2010.08895",
+  "source_family": 4,
+  "url": "https://arxiv.org/abs/2010.08895",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2010.08895.pdf",
+  "effective_url": "https://arxiv.org/pdf/2010.08895",
+  "access_time_utc": "2026-07-13T16:42:16Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "6cd2645d4a50d1a61a261529b33747c674d78851bdbe6993b0961f81a17dc6f2",
+  "local_cache_path": ".cache/fulltext/S120-030_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 2436198,
+  "page_count": 16,
+  "sections": [
+    "1 Introduction",
+    "2 Neural Operator",
+    "3 Fourier Neural Operator",
+    "4 Experiments",
+    "5 Related Work",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:operator",
+    "sec:fno",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Published as a conference paper at ICLR 2021 FOURIER NEURAL OPERATOR FOR PARAMETRIC PARTIAL DIFFERENTIAL EQUATIONS Zongyi Li zongyili@caltech.edu Nikola Kovachki nkovachki@caltech.edu Kamyar Azizzadenesheli kamyar@purdue.edu Burigede Liu bgl@caltech.edu Kaushik Bhattacharya bhatta@caltech.edu Andrew Stuart astuart@caltech.edu Anima Anandkumar anima@caltech.",
+  "what_the_paper_supports": "The Fourier Neural Operator parameterizes the integral kernel in Fourier space, learning a family of PDEs as a function-space map. Supports the ignition claim that a single learned operator can represent a whole family of functions (Function OS node 2 Representation). It demonstrates zero-shot super-resolution and orders-of-magnitude speedup over classical solvers, supporting the idea of reusable compiled function artifacts (node 4 Artifact).",
+  "what_the_paper_does_not_support": "The FNO is specialized to PDE solution operators. It does not provide a general function specification language (GAP-015), equivalence checker (GAP-017), or weight-space composition algebra (GAP-016). It does not address effects (GAP-018) or probabilistic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (16 pages, 2436198 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

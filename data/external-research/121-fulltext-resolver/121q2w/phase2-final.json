@@ -1,0 +1,190 @@
+{
+  "step": 2,
+  "action": "PHASE2_AND_CANONICAL_INDEX_REBUILD",
+  "timestamp": "2026-07-14T17:37:11Z",
+  "semantic_axis": [
+    "CONFIRMED",
+    "PARTIAL",
+    "NOT_SUPPORTED",
+    "UNRESOLVED"
+  ],
+  "identity_axis": [
+    "VERIFIED",
+    "CORRECTED",
+    "BLOCKED",
+    "UNKNOWN"
+  ],
+  "semantic_counts": {
+    "CONFIRMED": 0,
+    "PARTIAL": 20,
+    "NOT_SUPPORTED": 0,
+    "UNRESOLVED": 2
+  },
+  "semantic_total": 22,
+  "identity_counts": {
+    "VERIFIED": 7,
+    "CORRECTED": 5,
+    "BLOCKED": 2,
+    "UNKNOWN": 8
+  },
+  "identity_total": 22,
+  "sources": [
+    {
+      "source_id": "S120-001",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "canonical_title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-002",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "canonical_title": "Linear Transformers Are Secretly Fast Weight Programmers",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-003",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "canonical_title": "Neural Functional Transformers",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-004",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "canonical_title": "A Survey of Weight Space Learning: Understanding, Representation, and Generation",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-005",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "canonical_title": "Learning Useful Representations of Recurrent Neural Network Weight Matrices",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-007",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "canonical_title": "Neural Programmer: Inducing Latent Programs with Gradient Descent",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-008",
+      "semantic_verdict": "UNRESOLVED",
+      "identity_status": "BLOCKED",
+      "canonical_title": "Mixed Precision Weight Networks: Training Neural Networks with Varied Precision Weights",
+      "provenance_path": "121q2v/prior22-identity-ledger-corrected.jsonl"
+    },
+    {
+      "source_id": "S120-009",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "canonical_title": "HyperNetworks",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-010",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "UNKNOWN",
+      "canonical_title": "A Brief Review of Hypernetworks in Deep Learning",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-011",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "CORRECTED",
+      "canonical_title": "Personalized Federated Learning using Hypernetworks",
+      "provenance_path": "121q1/acceptance/S120-011.json"
+    },
+    {
+      "source_id": "S120-012",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "CORRECTED",
+      "canonical_title": "Contextual HyperNetworks for Novel Feature Adaptation",
+      "provenance_path": "121q1/acceptance/S120-012.json"
+    },
+    {
+      "source_id": "S120-014",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "CORRECTED",
+      "canonical_title": "HyperSeg: Patch-wise Hypernetwork for Real-time Semantic Segmentation",
+      "provenance_path": "121q1/acceptance/S120-014.json"
+    },
+    {
+      "source_id": "S120-015",
+      "semantic_verdict": "UNRESOLVED",
+      "identity_status": "BLOCKED",
+      "canonical_title": "Hypernetworks for Specialized Instructions (UNVERIFIABLE)",
+      "provenance_path": "121q2v/prior22-identity-ledger-corrected.jsonl"
+    },
+    {
+      "source_id": "S120-017",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "CORRECTED",
+      "canonical_title": "Latent Execution for Neural Program Synthesis",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-018",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "CORRECTED",
+      "canonical_title": "SPoC: Search-based Pseudocode to Code",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-021",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "canonical_title": "Execution Guided Line-by-Line Code Generation",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-030",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "canonical_title": "Fourier Neural Operator for Parametric Partial Differential Equations",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-035",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "canonical_title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "provenance_path": "121q2/acceptance/S120-035.json"
+    },
+    {
+      "source_id": "S120-039",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "canonical_title": "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy Without Increasing Inference Time",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-045",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "canonical_title": "Editing Models with Task Arithmetic",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-047",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "canonical_title": "Generic Refinement Types",
+      "provenance_path": ""
+    },
+    {
+      "source_id": "S120-053",
+      "semantic_verdict": "PARTIAL",
+      "identity_status": "VERIFIED",
+      "canonical_title": "Handlers of Algebraic Effects",
+      "provenance_path": ""
+    }
+  ],
+  "s120_012_verdict": "PARTIAL",
+  "s120_008_verdict": "UNRESOLVED",
+  "s120_015_verdict": "UNRESOLVED"
+}

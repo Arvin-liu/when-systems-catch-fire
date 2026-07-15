@@ -1,0 +1,10 @@
+{
+  "migrated_file": "scripts/external-research/openalex_client.py",
+  "source_commit": "5d33b72199973fe78db3e2f2183faed8f471eebc",
+  "source_commit_message": "feat(120): add openalex_client.py — free academic search, DOI verification, retraction check, abstract restoration",
+  "source_commit_author_date": "2026-07-14T00:12:02+08:00",
+  "source_file_sha256": "12d03820eb14b27a3263db4e22a4644371985740606dfe57257c73fe02ffc07c",
+  "note": "openalex_client.py was introduced in the ignition repository at commit 5d33b721 (after the 120 frozen baseline f423361a). It is preserved in the 121 branch as a reusable resolver component. The 120 frozen baseline f423361a does not contain this file; it is not used as a substitute source.",
+  "license": "same as repository",
+  "no_modifications_made": true
+}

@@ -1,0 +1,42 @@
+{
+  "source_id": "S120-033",
+  "cx_step": null,
+  "step_number": 106,
+  "_acceptance_layer": "121q2/acceptance/S120-033.json — overlay, carries forward 121CX Step 85 disposition",
+  "canonical_title": "IC-LoRA: In-Context Low-Rank Adaptation (NOT A REAL PAPER)",
+  "authors": "Anonymous (no unique canonical work identified)",
+  "year": null,
+  "venue": null,
+  "doi_or_identifier": "arXiv:ic-lora-2026 (INVALID — not a real arXiv ID)",
+  "identity_status": "BLOCKED_UNVERIFIABLE_IDENTITY",
+  "identity_corrections": [
+    "121CX Step 85 already established: S120-033 is a misrecorded Emergent Mind topic page, not a unique paper",
+    "arXiv ID 'ic-lora-2026' is invalid — returns 404",
+    "No paper with exact title exists in arXiv, OpenAlex, or web search",
+    "Emergent Mind page lists 5 distinct works; none matches the recorded identity",
+    "121cn Step 11 repair attempt also failed: CANNOT_LOCATE_NOT_A_TRADITIONAL_PAPER"
+  ],
+  "claim_support_status": "UNRESOLVED",
+  "evidence_tier": "PRIOR_DISPOSITION_CARRIED_FORWARD",
+  "content_access_status": "NOT_LOCATED",
+  "prior_disposition": {
+    "121cx_step": 85,
+    "disposition": "BLOCKED_INSUFFICIENT_TEXT",
+    "reviewer": "Codex App main session (5.6 Sol, 极高 reasoning)",
+    "reviewed_at": "2026-07-14T11:34:34Z",
+    "121cn_step": 11,
+    "121cn_status": "CANNOT_LOCATE_NOT_A_TRADITIONAL_PAPER",
+    "unblock_requirement": "Provide a unique canonical work identity: exact title, authors, stable DOI/arXiv/venue identifier and legally accessible full text"
+  },
+  "ignition_gap_impacts": {},
+  "function_os_node_impacts": {},
+  "reviewed_by_model": "qclaw/pool-glm-5.2-night",
+  "reasoning_level": "high",
+  "reviewed_at": "2026-07-14T16:35:52Z",
+  "review_batch": "ignition-121q2-night-acceptance-family-synthesis-20260714",
+  "note": "No independent fulltext review performed — prior 121CX disposition is comprehensive and carries forward. No new evidence to review.",
+  "canonical_phase2_member": false,
+  "supplemental_reason": "Not a canonical Phase 2 prior-review source. Inserted into 121Q2 Steps 006/008 by queue deviation. Preserved as supplemental overlay per 121Q2R Step 001.",
+  "original_121q2_step": 6,
+  "original_cx_step_assigned": 106
+}

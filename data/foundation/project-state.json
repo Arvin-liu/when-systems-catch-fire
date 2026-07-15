@@ -1,0 +1,84 @@
+{
+  "snapshot_id": "IGNITION-20260709-078",
+  "status": "CORE_KERNEL_ADJUDICATED_REMAINING_CONTENT_QUEUE",
+  "base_076_head": "fc3f2ae309ad3dd485716ab5675948a6a46cd75d",
+  "counts": {
+    "formal_objects": 622,
+    "formal_cases": 806,
+    "candidate_cases": 22,
+    "pending_claims": 34,
+    "scope_entities": 678,
+    "verified_legacy_counterexamples": 0,
+    "benchmark_and_core_counterexamples": 4,
+    "object_types": {
+      "PREDICATE": 18,
+      "STATE_TRANSITION": 82,
+      "ALGORITHM": 1,
+      "METRIC": 77,
+      "RELATION": 229,
+      "MECHANISM_MODEL": 60,
+      "PROBABILISTIC_MODEL": 9,
+      "FORMAL_PROPOSITION": 43,
+      "OPTIMIZATION_PROBLEM": 1,
+      "ARGUMENT_SCHEMA": 25,
+      "NATURAL_LANGUAGE_CANDIDATE": 77
+    },
+    "classification_status": {
+      "ADJUDICATED": 621,
+      "PROVISIONAL": 1
+    }
+  },
+  "migration_coverage": "complete",
+  "semantic_adjudication": "incomplete",
+  "classification_basis_076": "heuristic_title_and_id_rules",
+  "content_truth_status_076": "pending_item_level_review",
+  "semantic_adjudication_counts": {
+    "adjudicated": 621,
+    "provisional": 1,
+    "total": 622
+  },
+  "toolchain_status": {
+    "snapshot_id": "IGNITION-20260709-078",
+    "lean": {
+      "available": true,
+      "version": "Lean (version 4.19.0, arm64-apple-darwin23.6.0, commit 6caaee842e94, Release)",
+      "toolchain": "leanprover/lean4:v4.19.0"
+    },
+    "sympy": {
+      "available": true,
+      "version": "1.14.0"
+    },
+    "z3": {
+      "available": true,
+      "version": "4.16.0"
+    },
+    "checks": {
+      "T2_Z3_PROOF": true,
+      "D220_Z3_COUNTERMODEL": true,
+      "T16_SYMPY_COUNTEREXAMPLE": true,
+      "T2_LEAN_PROOF": true,
+      "T23_PENDING": true
+    }
+  },
+  "authority": {
+    "machine_readable": "data/foundation",
+    "human_entry": "FOUNDATION.md",
+    "legacy_views": "views",
+    "adjudications": "data/foundation/adjudications"
+  },
+  "invariants": {
+    "legacy_tables_immutable": true,
+    "old_statistics_historical_only": true,
+    "J_channels_are_evidence_not_truth_oracles": true,
+    "protocols_are_not_automatically_theorems": true,
+    "migration_cannot_overwrite_adjudicated": true,
+    "migration_coverage_is_not_semantic_adjudication": true
+  },
+  "validation_commands": [
+    "python3 tools/foundation/adjudicate_core.py --check",
+    "python3 tools/foundation/migrate_legacy.py --check",
+    "python3 tools/foundation/validate_foundation.py",
+    "python3 tools/foundation/verify_core_claims.py --check",
+    "python3 -m unittest tests.foundation.test_foundation"
+  ]
+}

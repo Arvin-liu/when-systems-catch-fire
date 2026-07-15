@@ -1,0 +1,90 @@
+{
+  "node_id": "N8",
+  "canonical_name": "ComposerRouter",
+  "canonical_definition": "Composes and routes between multiple functions based on task requirements",
+  "source_path": "120-function-os-candidate-overlay.json + 121-function-os-node-readjudication.jsonl",
+  "inputs": "task_description + available_functions",
+  "outputs": "execution_plan",
+  "preconditions": "See node registry (Step 009)",
+  "invariants": [
+    "No FROZEN/FINAL/PROVEN status"
+  ],
+  "strongest_verified_sources": [
+    {
+      "source_id": "S120-039",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Model Soups: Averaging Weights of Multiple Fine-Tuned Models Improves Accuracy Without Increasing Inference Time"
+    },
+    {
+      "source_id": "S120-045",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "Editing Models with Task Arithmetic"
+    },
+    {
+      "source_id": "S120-035",
+      "identity": "VERIFIED",
+      "semantic": "PARTIAL",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models"
+    }
+  ],
+  "partial_or_analogical_sources": [
+    {
+      "source_id": "S120-002",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "Linear Transformers Are Secretly Fast Weight Programmers"
+    },
+    {
+      "source_id": "S120-009",
+      "identity": "UNKNOWN",
+      "semantic": "PARTIAL",
+      "title": "HyperNetworks"
+    },
+    {
+      "source_id": "S120-020",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Parsel: Algorithmic Reasoning with Language Models by Composing Decompositions"
+    },
+    {
+      "source_id": "S120-031",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Effective LoRA Adapter Routing using Task Representations"
+    },
+    {
+      "source_id": "S120-036",
+      "identity": "NOT_FOUND",
+      "semantic": "PARTIAL",
+      "title": "Task-Aware LoRA Adapter Composition via Similarity Retrieval in Vector Databases"
+    },
+    {
+      "source_id": "S120-046",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "TIES-Merging: Resolving Interference When Merging Models"
+    },
+    {
+      "source_id": "S120-070",
+      "identity": "NOT_FOUND",
+      "semantic": "CONFIRMED",
+      "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models"
+    }
+  ],
+  "counterevidence": "Composition empirical/heuristic. No formal algebra.",
+  "limitations": "Formal algebra missing. Empirical composition is not strict function composition.",
+  "linked_gaps": [
+    "GAP-016"
+  ],
+  "candidate_interface": "Composition ops: merge (avg/weighted), arithmetic (add/subtract), route (attention), select (top-k)",
+  "candidate_status": "PARTIAL_CANDIDATE",
+  "unresolved_questions": "Formal algebra missing. Empirical composition is not strict function composition.",
+  "prohibited_wording": [
+    "Do not claim FROZEN/FINAL/PROVEN",
+    "Do not claim papers verify N8",
+    "Do not claim external research solves N8"
+  ],
+  "timestamp": "2026-07-14T17:57:23Z"
+}

@@ -1,0 +1,41 @@
+{
+  "source_id": "S120-045",
+  "title": "Editing Models with Task Arithmetic",
+  "authors": "Ilharco, G., et al.",
+  "year": 2022,
+  "venue": "arXiv preprint / ICLR 2023",
+  "doi_or_identifier": "arXiv:2212.04089",
+  "source_family": 6,
+  "url": "https://arxiv.org/abs/2212.04089",
+  "access_channel": "arxiv_pdf",
+  "access_url": "https://arxiv.org/pdf/2212.04089.pdf",
+  "effective_url": "https://arxiv.org/pdf/2212.04089",
+  "access_time_utc": "2026-07-13T16:43:35Z",
+  "version": "preprint",
+  "license": "open access (publisher or arXiv)",
+  "file_sha256": "6d8bb9f18b58f6cafae018139746afc90023be5dc18586b665863db5028c4191",
+  "local_cache_path": ".cache/fulltext/S120-045_arxiv_pdf.pdf",
+  "content_type": "application/pdf",
+  "file_size_bytes": 7763394,
+  "page_count": 31,
+  "sections": [
+    "1 Introduction",
+    "2 Task Vectors",
+    "3 Task Arithmetic",
+    "4 Experiments",
+    "5 Related Work",
+    "6 Conclusion"
+  ],
+  "anchors": [
+    "sec:intro",
+    "sec:vectors",
+    "sec:arithmetic",
+    "sec:experiments"
+  ],
+  "abstract_snippet": "--- Page 1 --- Published as a conference paper at ICLR 2023 EDITING MODELS WITH TASK ARITHMETIC Gabriel Ilharco∗1 Marco Tulio Ribeiro2 Mitchell Wortsman1 Suchin Gururangan1 Ludwig Schmidt1,3 Hannaneh Hajishirzi1,3 Ali Farhadi1 1University of Washington 2Microsoft Research 3Allen Institute for AI ABSTRACT Changing how pre-trained models behave—e.g.",
+  "what_the_paper_supports": "Task arithmetic defines task vectors as directions in weight space and shows that negation, addition, and analogy-based combinations of these vectors edit model behavior. Directly supports the ignition claim that functions can be composed and manipulated via arithmetic in weight space (GAP-016, Function OS node 8 ComposerRouter). It also demonstrates that the resulting model is a single edited artifact (node 4 Artifact).",
+  "what_the_paper_does_not_support": "Task arithmetic is a post-hoc empirical operation; it does not define a formal algebra with preconditions/postconditions (GAP-015). It does not address equivalence between edited and original models (GAP-017) or effects (GAP-018). It does not handle probabilistic semantics (GAP-020).",
+  "claim_support_status": "PARTIAL",
+  "evidence_tier": "FULLTEXT_REVIEWED",
+  "read_reasoning": "Full PDF obtained (31 pages, 7763394 bytes). Extracted text was read to identify the paper's core mechanism, section anchors, and limitations relative to ignition claims."
+}

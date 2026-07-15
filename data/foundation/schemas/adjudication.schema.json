@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "adjudication_id",
+    "stable_id",
+    "classification_status",
+    "classification_basis",
+    "classification_confidence",
+    "semantic_justification",
+    "source_excerpt_refs",
+    "adjudication_date",
+    "adjudicator",
+    "review_required",
+    "legacy_label",
+    "adjudicated_label",
+    "controlled_semantic_proposition",
+    "formal_object_type",
+    "claim_type",
+    "proof_obligations",
+    "evidence_status",
+    "final_disposition"
+  ],
+  "properties": {
+    "classification_status": {
+      "enum": [
+        "PROVISIONAL",
+        "ADJUDICATED",
+        "CONTESTED"
+      ]
+    },
+    "classification_basis": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "TITLE_HEURISTIC",
+          "SOURCE_TEXT",
+          "FORMAL_DEFINITION",
+          "PROOF_ARTIFACT",
+          "EXTERNAL_REFERENCE",
+          "HUMAN_REVIEW"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "classification_confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "final_disposition": {
+      "enum": [
+        "KEEP",
+        "RECLASSIFY",
+        "SPLIT",
+        "DOWNGRADE",
+        "FREEZE",
+        "EXTERNAL_REFERENCE"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

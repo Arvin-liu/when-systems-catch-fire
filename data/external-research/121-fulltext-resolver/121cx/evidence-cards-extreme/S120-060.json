@@ -1,0 +1,298 @@
+{
+  "source_id": "S120-060",
+  "canonical_title": "Probabilistic programs as a unifying language of thought",
+  "authors": [
+    "Noah D. Goodman",
+    "Tobias Gerstenberg",
+    "Joshua B. Tenenbaum"
+  ],
+  "year": 2024,
+  "version": "37-page author chapter manuscript created 2023-10-14 and published as Chapter 18 in 2024",
+  "doi_or_identifier": "ISBN:9780262049412",
+  "identifier": "Chapter 18 in Bayesian Models of Cognition: Reverse Engineering the Mind; hardcover ISBN 9780262049412; ebook ISBN 9780262381048",
+  "url": "https://cicl.stanford.edu/papers/goodman2024probabilistic.pdf",
+  "source_family": 9,
+  "source_family_name": "probabilistic programming and stochastic semantics",
+  "license": "the MIT Press open-access book is CC BY-NC-ND; the associated 2012 data archive contains no explicit license",
+  "sha256": "2aa342effd7d4789cb2885be9be8daeded4842d85ccdad9411752e8e23a4e5d0",
+  "file_size_bytes": 813689,
+  "page_count": 37,
+  "content_access_status": "EXTRACTED_FULL",
+  "retrieval_and_integrity": {
+    "registered_pdf_match": true,
+    "registered_pdf_visual_check": "all 37 pages rendered and inspected; figures, tables, code blocks and reference pages are legible",
+    "publication_identity": "Chapter 18 of Thomas L. Griffiths, Nick Chater and Joshua B. Tenenbaum, Bayesian Models of Cognition: Reverse Engineering the Mind, MIT Press, published 2024-11-12",
+    "publication_page": "https://mitpress.mit.edu/9780262049412/bayesian-models-of-cognition/",
+    "associated_empirical_paper": {
+      "title": "Ping Pong in Church: Productive use of concepts in human probabilistic inference",
+      "authors": [
+        "Tobias Gerstenberg",
+        "Noah D. Goodman"
+      ],
+      "venue": "Proceedings of the 34th Annual Conference of the Cognitive Science Society, 2012, pp. 1590-1595",
+      "url": "https://cicl.stanford.edu/papers/gerstenberg2012pingpong.pdf",
+      "sha256": "e200c4c5e55d25e45ab91daba8a2d0998aae81692b55475d1430082763e02a03",
+      "file_size_bytes": 252420,
+      "page_count": 6,
+      "reviewed_for": "participants, design, normalization, correlations, RMSE, mismatch and model assumptions behind the chapter's empirical claims"
+    },
+    "associated_data": {
+      "url": "https://cicl.stanford.edu/data/pingpong_data.zip",
+      "sha256": "b4f81b6a71bafb30375f2aa005120f38c1a71c6d1429bb63a5a29e1b63069341",
+      "file_size_bytes": 76965,
+      "contents": "four CSV exports plus XLS/XLSX copies and a readme",
+      "verified_rows": {
+        "experiment_1_main": 600,
+        "experiment_1_participants": 30,
+        "experiment_1_patterns": 20,
+        "experiment_2_main": 200,
+        "experiment_2_participants": 20,
+        "experiment_2_patterns": 10
+      },
+      "verified_demographics": "Experiment 1 age mean 31.33, SD 10.85 and completion mean 7.39 minutes, SD 3.32; Experiment 2 age mean 33.95, SD 9.80 and completion mean 9.39 minutes, SD 4.01",
+      "missing_for_reproduction": "model predictions, analysis scripts, Church runtime/version, random seeds, sampling diagnostics, stimulus source, exclusions, preregistration and license"
+    },
+    "associated_demo": {
+      "url": "https://cicl.stanford.edu/demos/BPP_demos.html",
+      "format": "Macromedia Flash 10 SWF",
+      "sha256": "bbc029dc6a085cc12e48463b3db99df6e5fe40a01fd5163f23c52e414c465fa1",
+      "file_size_bytes": 25839,
+      "runtime_boundary": "HTML embeds BPP_demos.swf through the retired Adobe Flash plugin; no source project or contemporary executable was supplied"
+    }
+  },
+  "sections_reviewed": [
+    "stochastic lambda calculus, call-by-value reduction and induced subprobability distributions",
+    "Church syntax, recursion, elementary random procedures, symbols and stochastic memoization",
+    "computable-distribution theorem, universality thesis and representational tradeoffs",
+    "conditional inference by rejection sampling and alternative PPL inference engines",
+    "informal and formal Probabilistic Language of Thought hypotheses",
+    "tug-of-war and ping-pong stochastic concept library and compositional queries",
+    "two behavioral experiments, reported correlations, mismatch and raw-data provenance",
+    "intuitive theories, physical simulation, execution traces and counterfactual intervention",
+    "nested inference for planning, inverse planning and theory of mind",
+    "concept acquisition as Bayesian program induction and evolving libraries",
+    "future algorithmic/neural bridges and conclusion",
+    "associated 2012 empirical paper, raw data archive and Flash demo"
+  ],
+  "page_or_section_anchors": [
+    {
+      "anchors": "section 18.1, pp. 2-5",
+      "checked_for": "stochastic lambda terms, evaluation order, induced distribution and non-halting mass"
+    },
+    {
+      "anchors": "section 18.2, pp. 5-7",
+      "checked_for": "Church extensions, random procedures, recursion, symbols, memoization and sampling semantics"
+    },
+    {
+      "anchors": "sections 18.3-18.4, pp. 7-10",
+      "checked_for": "universality theorem/thesis, rejection conditioning and practical-inference qualification"
+    },
+    {
+      "anchors": "section 18.5, pp. 10-12",
+      "checked_for": "PLoT motivation and formal identification of concepts with stochastic functions"
+    },
+    {
+      "anchors": "section 18.6, pp. 13-22, Tables 18.1-18.2 and Figures 18.1-18.3",
+      "checked_for": "concept lexicon, query composition, behavioral design and chapter-level fit claims"
+    },
+    {
+      "anchors": "Gerstenberg and Goodman 2012, pp. 1592-1595",
+      "checked_for": "N=30 and N=20 samples, trial counts, z-scoring, reverse coding, r/RMSE values and unsupported predicted contrast"
+    },
+    {
+      "anchors": "sections 18.7.1-18.7.2, pp. 22-28",
+      "checked_for": "physical simulation, counterfactual trace intervention, nested planning and inverse-planning queries"
+    },
+    {
+      "anchors": "section 18.8, pp. 28-30",
+      "checked_for": "program induction, meta-programs, library learning and computational difficulty"
+    },
+    {
+      "anchors": "sections 18.9-18.10, pp. 30-31",
+      "checked_for": "explicit algorithmic/neural non-claims, open engineering challenges and synthesis boundaries"
+    },
+    {
+      "anchors": "associated data ZIP and Flash demo",
+      "checked_for": "participant-level receipt coverage, reproducibility gaps, artifact format and current executability"
+    }
+  ],
+  "paper_core_claims": [
+    {
+      "claim": "Stochastic lambda calculus augments universal functional computation with random choice, and Church packages this foundation into a compositional probabilistic programming language with recursion, symbols, memoization and inference queries.",
+      "anchors": "sections 18.1-18.2"
+    },
+    {
+      "claim": "Every computable distribution is representable by a stochastic lambda expression, motivating the broader universality thesis that any reasonable computable probabilistic model can be represented in the calculus.",
+      "anchors": "section 18.3; general theorem is stated without proof and the thesis is explicitly broader than the theorem"
+    },
+    {
+      "claim": "Conditional inference can be expressed inside Church by recursive rejection sampling, while practical PPLs may substitute MCMC, SMC, enumeration, HMC, variational or programmable inference.",
+      "anchors": "section 18.4"
+    },
+    {
+      "claim": "The formal PLoT hypothesis identifies reusable concepts with stochastic functions in a universal PPL, combining probabilistic gradedness with symbolic compositionality and open-ended productivity.",
+      "anchors": "section 18.5"
+    },
+    {
+      "claim": "A compact Church tug-of-war/ping-pong concept library predicts condition-level human strength judgments in two 2012 experiments with reported aggregate correlations r=.98 and r=.97 and median participant correlations r=.92 and r=.86.",
+      "anchors": "section 18.6.2 and Gerstenberg-Goodman 2012"
+    },
+    {
+      "claim": "Probabilistic execution traces and nested queries provide reusable representations for mental simulation, counterfactual reasoning, planning, inverse planning and program-based concept learning.",
+      "anchors": "sections 18.7-18.8"
+    }
+  ],
+  "function_concept_used_by_paper": "A concept is a reusable stochastic function: its proximal meaning is its program definition, its compositional role comes from calls among functions and symbols, and its inferential meaning emerges from conditional queries over the joint generative program. Functions may generate properties, persistent memoized values, teams, outcomes, worlds, actions, goals, programs or higher-order hypothesis libraries.",
+  "representation_or_carrier": "The formal carrier is a call-by-value stochastic lambda term with variables, abstraction, application and uniform choice; a term induces a distribution or subprobability over terminal values. Church adds Scheme values, ERPs, recursion, symbols, higher-order functions and stochastic memo tables. Cognitive models are libraries of concept functions plus observations and queries; runtime carriers include sampled worlds, latent variables, program execution traces, MCMC samples and nested inferred programs.",
+  "specification_language": "Church specifies generative knowledge through composable stochastic function definitions and separates reusable concept libraries from query and condition expressions. Symbols permit open-ended entities, mem fixes random properties per argument, ERPs specify priors, and recursive/nested query encodes conditioning, planning and meta-inference. The language does not specify general pre/postconditions, resource bounds, convergence requirements, neural realizations, governance, privacy or lifecycle policy, and many examples rely on informal helper functions or simulator primitives.",
+  "compiler_or_generator": "No compiler is presented or validated. The chapter discusses program-generating meta-programs for concept induction and cites DreamCoder/LAPS library learning, Pyro/Gen and neural or programmable inference, but these are external systems. Stochastic lambda calculus-to-Church elaboration is explanatory syntax, not a certified compiler, and universal representability supplies no construction with practical complexity bounds.",
+  "interpreter_or_runtime": "Church/WebChurch executes generative programs and approximate conditional queries. The displayed tug-of-war code uses mh-query with 1,000 retained samples and an additional 100 parameter, but the chapter does not lock runtime version, kernel, warmup, seed or diagnostics. Rejection condition is definitionally simple but may take unbounded time; alternative engines change the algorithm without changing the modeled conditional. The archived behavioral demo is Flash-only, and no current executable Church artifact accompanies the chapter.",
+  "composition_rule": "Ordinary higher-order function composition composes stochastic generative structure; memoization shares sampled latent properties by argument; queries condition the composed joint model; nested queries treat an agent's inference as a component of another inference; meta-programs generate candidate concept programs; learned library abstractions become new primitives. Compositionality preserves expressiveness but not termination, normalization, tractable inference, identifiability or low variance.",
+  "state_or_effect_model": "Primitive random choice and ERP sampling are effects; recursion can diverge; stochastic mem supplies persistent per-key latent state; query conditions executions; MCMC or rejection explores traces; counterfactual reasoning conditions an actual trace, intervenes on function inputs and re-evaluates downstream choices. Mutation, concurrency, distributed effects, resource lifetime, external I/O and durable trace governance are not modeled.",
+  "uncertainty_model": "Probability distributions over computations and possible worlds represent uncertainty; priors over strength, laziness, actions, goals and programs are updated by conditioning. Non-halting paths create subprobability mass, low-probability evidence produces costly rejection, and approximate MCMC introduces Monte Carlo error. The chapter reports condition-level behavioral correlations and SEM bars but no posterior calibration, sampling diagnostics, effective sample size, uncertainty on r/RMSE, model comparison, cross-validation or general finite-time accuracy certificate.",
+  "validation_regime": {
+    "formal": "definitions of stochastic terms and induced distributions, a binomial construction, a stated general representation theorem without proof, and a broader explicitly thesis-level universality claim",
+    "implementation": "Church/WebChurch examples and a historical Flash demo; code is embedded in prose without a versioned runnable package",
+    "behavioral": "two 2012 MTurk experiments: N=30 with 20 tournament patterns and N=20 with 10 patterns plus commentator updates; participant-level ratings and demographics remain downloadable",
+    "reported_result": "After per-participant/model z-scoring and reverse coding of loss trials, Experiment 1 reports r=.98, RMSE=.19 and median participant r=.92; Experiment 2 reports r=.97, RMSE=.29 and median participant r=.86. One predicted strong-indirect versus confounded contrast was absent, t(29)=0.44, p>.05, with only 16/30 participants in the predicted direction.",
+    "boundary": "The chapter adds no new experiment, the small studies instructed participants about key model assumptions, raw data exclude model outputs and scripts, no competing-model or out-of-sample comparison is reported, and the authors explicitly deny a precise algorithmic or neural account."
+  },
+  "equivalence_notions": [
+    {
+      "notion": "induced-distribution equality",
+      "support": "STOCHASTIC_TERMS_REPRESENT_THE_SAME_MODEL_WHEN_REDUCTION_INDUCES_THE_SAME_DISTRIBUTION_OVER_FINAL_VALUES",
+      "boundary": "Some terms have missing mass from non-halting runs, and no equivalence decision method is given."
+    },
+    {
+      "notion": "computable-distribution universality",
+      "support": "EVERY_DISTRIBUTION_UNDER_THE_CHAPTERS_COMPUTABILITY_DEFINITION_HAS_A_STOCHASTIC_LAMBDA_REPRESENTATIVE",
+      "boundary": "The general theorem is not proved in the chapter; the broader statement for any reasonable computable model is called a thesis, not a theorem."
+    },
+    {
+      "notion": "conditional model equivalence",
+      "support": "REJECTION_MCMC_SMC_ENUMERATION_OR_OTHER_QUERY_ENGINES_MAY_TARGET_THE_SAME_CONDITIONAL_DISTRIBUTION",
+      "boundary": "No exactness or convergence proof is supplied for the concrete approximate engines, and zero/rare evidence can make rejection nonterminating or impractical."
+    },
+    {
+      "notion": "conceptual-role equivalence",
+      "support": "CONCEPT_MEANING_COMBINES_FUNCTION_DEFINITION_COMPOSITIONAL_CALL_GRAPH_AND_QUERY_INDUCED_INFERENCES",
+      "boundary": "This is a cognitive hypothesis, not an operational equivalence test or uniqueness result."
+    },
+    {
+      "notion": "behavioral correspondence",
+      "support": "ZSCORED_MODEL_CONDITION_MEANS_CORRELATE_WITH_HUMAN_STRENGTH_JUDGMENTS",
+      "boundary": "High in-sample correlations over small designed condition sets do not identify PLoT uniquely, and one qualitative contrast fails."
+    }
+  ],
+  "lifecycle_and_provenance": "The source is an open-access 2024 MIT Press book chapter with stable ISBNs and an author-hosted hash-matched manuscript. Its central experiment traces to a 2012 CogSci paper. A live lab page exposes the paper, a participant-level ZIP and a Flash demo; counts and demographics reconcile with the paper. However, the archive has no explicit license, model-output table, analysis code, runtime lock, seeds, sampling diagnostics or provenance manifest. The Flash 10 demo is obsolete and source-free; old WebChurch/probmods URLs are not immutable paper releases. There is no DOI for the chapter, signed bundle, CI, compatibility matrix, revalidation cadence, supersession map, rollback or retirement policy.",
+  "limitations_and_failure_boundaries": [
+    "This is a textbook synthesis and position chapter, not a new formal proof or a new behavioral experiment; many intuitive-physics, theory-of-mind and concept-learning results are summaries of external studies.",
+    "The general representation theorem is stated without proof, while the wider claim that every reasonable computable probabilistic model is representable is explicitly a thesis.",
+    "Not every stochastic lambda term induces a proper probability distribution because recursive reductions can fail to halt; universality therefore does not imply normalization or totality.",
+    "Recursive rejection conditioning can fail to terminate for impossible evidence and can have prohibitive or infinite expected cost for rare evidence; universal computability is not practical inference.",
+    "The existence of a representation gives no size, time, memory, variance, mixing or learnability bound and no constructive route to a useful model.",
+    "The PLoT identifies concepts with stochastic functions as a hypothesis. It does not establish that human concepts are uniquely or literally encoded as Church programs.",
+    "The authors explicitly say Church/PLoT captures knowledge and licensed inferences, not precise cognitive algorithms and still less neural implementation.",
+    "The two empirical studies are small, use N=30 and N=20 MTurk samples, and present participants with key assumptions such as fixed strength and 10% laziness, limiting independent discovery of those assumptions.",
+    "Reported correlations use model and participant z-scores plus reverse-coded mirror trials over a small designed set of condition means; no held-out prediction, competing model, parameter penalty or uncertainty interval for the fit is reported.",
+    "The model's strong-indirect versus confounded prediction is not supported, with only 16/30 participants in the predicted direction; increasing laziness is suggested after observing the mismatch.",
+    "Raw participant judgments are archived, but model predictions, analysis scripts, Church version, random seeds, MCMC diagnostics, exclusions, stimuli source, preregistration and an artifact license are absent, so r and RMSE were not independently reproduced.",
+    "The archived experiment demo depends on Macromedia Flash 10 and has no source; the chapter's WebChurch examples are historical web dependencies rather than durable releases.",
+    "Nested inference, counterfactual trace replay and program induction can be combinatorially extreme; the chapter calls scalable inference and concept acquisition open research problems.",
+    "Examples of intuitive physics, inverse planning and DreamCoder show representational reuse but do not validate a single integrated PLoT architecture across all domains.",
+    "The work does not link probabilistic concepts to neural weight-space equivalence, ignition epsilon, frozen Psi_0, governed registries or distributed execution."
+  ],
+  "what_the_paper_does_not_support": [
+    "It does not prove efficient, terminating or finite-error Bayesian inference for arbitrary probabilistic programs.",
+    "It does not provide a verified Church compiler/runtime, reproducible current experiment package or automatic stochastic-program equivalence checker.",
+    "It does not show that PLoT is the unique explanation of the reported judgments or that the brain implements Church, rejection sampling, MCMC or any named neural mechanism.",
+    "It does not empirically validate all human concepts, intuitive theories, nested social reasoning or concept acquisition in one architecture.",
+    "It does not establish neural function composition, artifact lifecycle governance, a distribution for ignition epsilon or empirical validation of ignition."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": {
+      "status": "PARTIAL",
+      "reason": "Church concept libraries, priors and queries specify stochastic functions and their evidence context, but not general contracts, resource limits or governance."
+    },
+    "GAP-016": {
+      "status": "PARTIAL",
+      "reason": "Program-generating meta-programs and library learning suggest generators, but no compiler or neural function transformation is implemented or validated here."
+    },
+    "GAP-017": {
+      "status": "PARTIAL",
+      "reason": "Induced distributions and conditional behavior define semantic comparisons without an equivalence decision procedure or implementation certificate."
+    },
+    "GAP-018": {
+      "status": "CONFIRMED",
+      "reason": "Random choice, memoization, recursion, conditioning, trace intervention and nested inference are explicit composable probabilistic effects."
+    },
+    "GAP-019": {
+      "status": "PARTIAL",
+      "reason": "Two behavioral datasets and strong bounded fits offer empirical evidence, but small in-sample studies and missing model/analysis receipts prevent full validation."
+    },
+    "GAP-020": {
+      "status": "CONFIRMED",
+      "reason": "The chapter directly develops stochastic functions, probabilistic program composition, conditioning, execution traces and higher-order inference as a unified function framework."
+    }
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": {
+      "status": "CONFIRMED",
+      "reason": "Concept definitions plus query/evidence expressions provide a concrete compositional stochastic-function specification."
+    },
+    "N2_Representation": {
+      "status": "CONFIRMED",
+      "reason": "Stochastic lambda terms, symbols, memoized latent functions, programs, worlds and traces are explicit representations."
+    },
+    "N3_Compiler": {
+      "status": "PARTIAL",
+      "reason": "Meta-program and library-learning ideas generate programs conceptually, but the source supplies no compiler or verified synthesis pipeline."
+    },
+    "N4_Artifact": {
+      "status": "PARTIAL",
+      "reason": "The chapter, raw behavioral data and Flash demo survive, while executable model code, analysis, versions, seeds and a modern release do not."
+    },
+    "N5_Interpreter": {
+      "status": "CONFIRMED",
+      "reason": "Church/WebChurch sampling and query interpreters execute generative, conditional and nested probabilistic programs, albeit without a bound current artifact."
+    },
+    "N6_ExecutionTrace": {
+      "status": "PARTIAL",
+      "reason": "Execution traces support conditioning and counterfactual intervention semantically, but no trace archive, replay receipt or governance format is provided."
+    },
+    "N7_Validator": {
+      "status": "PARTIAL",
+      "reason": "Universality arguments and behavioral fits validate bounded claims; theorem proof, competing models, held-out tests and reproducible fit code are absent."
+    },
+    "N8_ComposerRouter": {
+      "status": "CONFIRMED",
+      "reason": "Higher-order functions, memoized concept libraries, query, nested inference and meta-programs compose and route stochastic functions."
+    },
+    "N9_VersionedRegistry": {
+      "status": "PARTIAL",
+      "reason": "ISBN, publication page, lab page and archived data identify sources without immutable model versions, health, compatibility or retirement governance."
+    }
+  },
+  "prior_provisional_comparison": {
+    "prior_card_status": "NO_PRIOR_SEMANTIC_EVIDENCE_CARD",
+    "verdict": "NEW_CODEX56_EXTREME_CARD_WITH_PARTIAL_BOUNDED_SUPPORT",
+    "corrections": [
+      "Distinguished the proved computable-distribution statement from the explicitly thesis-level broader universality claim.",
+      "Bounded recursive rejection conditioning by zero/rare-evidence nontermination and separated universality from practical inference.",
+      "Separated PLoT's representational claim from algorithmic and neural implementation, as the authors explicitly require.",
+      "Traced the chapter's r=.98/.97 results to the 2012 N=30/N=20 experiments and recorded z-scoring, reverse coding and the failed predicted contrast.",
+      "Verified participant counts and demographics in the raw archive while recording missing model outputs, scripts, runtime, seeds and diagnostics.",
+      "Inspected the surviving Flash demo and bounded artifact/lifecycle support to a source-free obsolete SWF."
+    ],
+    "prior_card_superseded": false
+  },
+  "claim_support_status": "PARTIAL",
+  "confirmed_projection": "The source confirms a powerful bounded pattern in which stochastic FunctionSpecs, symbolic/probabilistic Representations, Church interpretation and higher-order ComposerRouter operations form a unified architecture, with direct relevance to GAP-018 and GAP-020. Validator, Artifact, Compiler, ExecutionTrace and VersionedRegistry closure remain partial, and the PLoT cognitive hypothesis remains underdetermined.",
+  "source_specific_reasoning": "PARTIAL is required because the chapter offers direct and unusually broad support for treating concepts as composable stochastic functions, but its universal expressiveness result does not imply normalization, tractability or learnability; its wider universality language is thesis-level; and Church is not claimed as a precise cognitive algorithm or neural implementation. The strongest empirical evidence is an associated small 2012 study with very high in-sample condition correlations, raw judgments but missing model and analysis receipts, and one failed predicted contrast. These facts support the architecture while blocking a stronger claim that PLoT is uniquely established or practically complete.",
+  "projection_boundary": "These are 121CX projections from the complete hash-matched 37-page chapter, its official publication metadata, all rendered pages, the full associated 2012 paper, the participant-level data archive and the surviving Flash demo. This model review is not proof of PLoT, Church runtime correctness, inference convergence, neural implementation or empirical validation of ignition.",
+  "reviewer_executor": "Codex App main session",
+  "reviewer_model": "5.6 Sol",
+  "reviewer_reasoning_level": "极高",
+  "semantic_review_status": "CODEX56_EXTREME_REVIEW_COMPLETE",
+  "reviewed_at": "2026-07-14T06:36:03Z"
+}

@@ -1,0 +1,83 @@
+{
+  "source_id": "S120-008",
+  "canonical_title": "Mixed Precision Weight Networks: Training Neural Networks with Varied Precision Weights",
+  "authors": "Sangmin Lee, Dongkeun Yoon, Byeongho Heo, Sangdoo Yun, Dongyoon Han",
+  "year": 2024,
+  "venue": "arXiv",
+  "doi_or_identifier": "arXiv:2407.18295",
+  "source_family": 1,
+  "url": "https://arxiv.org/pdf/2407.18295",
+  "version": "preprint/conference",
+  "sha256": "unknown",
+  "file_size_bytes": 0,
+  "page_count": 16,
+  "content_access_status": "ANCHOR_VERIFIED",
+  "semantic_review_status": "GLM52_HIGH_REVIEW_COMPLETE",
+  "sections_reviewed": [
+    "Abstract",
+    "Introduction",
+    "Method",
+    "Experiments",
+    "Conclusion"
+  ],
+  "page_or_section_anchors": [
+    "Abstract",
+    "Sec 1",
+    "Sec 3",
+    "Sec 4",
+    "Sec 5"
+  ],
+  "anchor_completeness_rate": 1.0,
+  "paper_core_claims": [
+    "MPWNs train neural networks with varied precision weights across layers, optimizing precision allocation during training.",
+    "Different layers benefit from different weight precisions; uniform quantization is suboptimal.",
+    "Mixed precision can reduce model size while maintaining or improving accuracy."
+  ],
+  "function_concept_used_by_paper": "Functions (neural networks) can be represented with mixed-precision weights. The precision of each weight group is a learnable property that affects the function's behavior and efficiency.",
+  "representation_or_carrier": "Mixed-precision weight matrices: different layers use different bit-widths for their weights. The representation includes both the weight values and their precision levels.",
+  "compiler_or_generator": "Training procedure that jointly optimizes weights and precision allocation. Not a compiler in the function-programming sense.",
+  "interpreter_or_runtime": "Standard neural network inference with mixed-precision weights.",
+  "composition_rule": "Not addressed.",
+  "state_or_effect_model": "Not addressed.",
+  "validation_regime": "Empirical: image classification (ImageNet) with various architectures.",
+  "equivalence_notions": "Not addressed.",
+  "limitations_and_failure_boundaries": [
+    "Short paper (1376 words extracted, likely workshop/short paper).",
+    "No formal specification, equivalence, or composition framework.",
+    "Limited to quantization precision; does not address function-level programming.",
+    "No effect tracking or state management."
+  ],
+  "what_the_paper_does_not_support": [
+    "Does not support formal specification (GAP-015).",
+    "Does not support compilation (GAP-016).",
+    "Does not support equivalence (GAP-017).",
+    "Does not support effects (GAP-018)."
+  ],
+  "ignition_gap_impacts": {
+    "GAP-015": "NOT_ADDRESSED",
+    "GAP-016": "NOT_ADDRESSED",
+    "GAP-017": "WEAK_EVIDENCE: Mixed precision as a representation variant, but no equivalence notion.",
+    "GAP-018": "NOT_ADDRESSED",
+    "GAP-019": "NOT_ADDRESSED",
+    "GAP-020": "NOT_ADDRESSED"
+  },
+  "function_os_node_impacts": {
+    "N1_FunctionSpec": "NO_EVIDENCE",
+    "N2_Representation": "WEAK_EVIDENCE: Mixed-precision as representation variant.",
+    "N3_Compiler": "NO_EVIDENCE",
+    "N4_Artifact": "NO_EVIDENCE",
+    "N5_Interpreter": "NO_EVIDENCE",
+    "N6_ExecutionTrace": "NO_EVIDENCE",
+    "N7_Validator": "NO_EVIDENCE",
+    "N8_ComposerRouter": "NO_EVIDENCE",
+    "N9_VersionedRegistry": "NO_EVIDENCE"
+  },
+  "claim_support_status": "PARTIAL",
+  "source_specific_reasoning": "S120-008 is a short paper on mixed-precision training. Its contribution to Function OS is minimal: mixed-precision weights as a representation variant provides weak evidence for N2. No formal specification, compilation, equivalence, composition, or validation framework.",
+  "comparison_to_provisional": "NOT_COMPARABLE",
+  "comparison_reason": "Short technical paper, unlikely to have a detailed provisional card.",
+  "reviewer_model": "qclaw/pool-glm-5.2-night",
+  "reviewer_reasoning_level": "high",
+  "reviewed_at": "2026-07-13T19:35:00Z",
+  "supersedes_provisional_card_id": "S120-008-provisional-121"
+}
