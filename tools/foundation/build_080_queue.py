@@ -875,7 +875,7 @@ def write_reports(queue_rows: list[dict[str, Any]], review_rows: list[dict[str, 
         if review_map[row["stable_id"]]["formalization_status"]
         not in {"FORMALLY_COMPLETE", "FULLY_FORMALIZED"}
     )
-    remaining = [row for row in queue_rows if row["status"] == "PENDING"]
+    remaining = [row for row in queue_rows if row["status"] != "COMPLETED_ACCEPTED"]
     next_pending = remaining[0]["stable_id"] if remaining else "NONE"
 
     report = f"""# 080 Full Semantic Adjudication Report
@@ -935,7 +935,7 @@ def write_reports(queue_rows: list[dict[str, Any]], review_rows: list[dict[str, 
 
 def write_run_state(queue_rows: list[dict[str, Any]], review_rows: list[dict[str, Any]], escalation_rows: list[dict[str, Any]]) -> None:
     reviewed = [row for row in queue_rows if row["status"] == "COMPLETED_ACCEPTED"]
-    remaining = [row for row in queue_rows if row["status"] == "PENDING"]
+    remaining = [row for row in queue_rows if row["status"] != "COMPLETED_ACCEPTED"]
     review_map = {row["stable_id"]: row for row in review_rows}
     type_counts = Counter(review_map[row["stable_id"]]["formal_object_type"] for row in reviewed)
     claim_counts = Counter(review_map[row["stable_id"]]["claim_type"] for row in reviewed)

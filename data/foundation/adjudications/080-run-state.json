@@ -1,55 +1,48 @@
 {
-  "task_id": "IGNITION-20260709-083",
-  "source_task": "IGNITION-20260709-081",
-  "status": "GLM_HIGH_REPAIR_COMPLETE_MAX_QUEUE_READY",
-  "updated_at": "2026-07-13T15:57:25.057863+08:00",
-  "reviewer_model_class": "GLM-5.2",
-  "reasoning_level": "high",
-  "branch": "records/ignition-083-glm-high-repair-and-max-queue-20260713",
-  "base_head": "f0862cc0a827a94e930b78a269c8fdc8a5c5c019",
-  "status_axis": {
-    "079_independently_verified": 5,
-    "080_first_batch_source_text_adjudication": 617,
-    "081_glm_source_review_records": 617,
-    "082_second_pass_glm_sampling_pass": 37,
-    "082_second_pass_glm_needs_correction": 27,
-    "082_template_not_source_specific": 128,
-    "082_unresolved_high_risk": 11,
-    "083_repaired_records": 155,
-    "083_glm_high_resolved": 150,
-    "083_no_escalation_needed": 3,
-    "083_max_required": 353,
-    "cross_model_or_max_acceptance": "NOT_COMPLETED",
-    "total_queue": 617
+  "task_id": "IGNITION-20260709-080",
+  "source_task": "IGNITION-20260709-079",
+  "status": "PARTIAL_RESUMABLE_SOURCE_TEXT_ADJUDICATION",
+  "updated_at": "2026-07-15T15:49:02+08:00",
+  "reviewer_model_class": "GPT-5.4-equivalent",
+  "branch": "records/ignition-080-full-semantic-adjudication-20260713",
+  "base_head": "5d28eb5c5654e9acc78ef206f2923b23db66f28f",
+  "fixed_queue_total": 617,
+  "completed_valid_reviews_this_task": 25,
+  "carried_verified_from_079": 5,
+  "cumulative_verified_registry_reviews": 30,
+  "remaining_pending": 592,
+  "next_pending_stable_id": "T13",
+  "next_pending_batch": 2,
+  "batch_size_limit": 25,
+  "completed_batches": 1,
+  "records_since_last_push": 25,
+  "push_interval": 100,
+  "quality_audit_interval": 100,
+  "quality_audit_completed_windows": 0,
+  "highest_model_escalations": 2,
+  "highest_model_escalation_ids": [
+    "T4",
+    "T10"
+  ],
+  "reviewed_type_counts": {
+    "FORMAL_PROPOSITION": 2,
+    "MECHANISM_MODEL": 3,
+    "NATURAL_LANGUAGE_CANDIDATE": 5,
+    "OPTIMIZATION_PROBLEM": 1,
+    "PREDICATE": 7,
+    "PROBABILISTIC_MODEL": 1,
+    "RELATION": 3,
+    "STATE_TRANSITION": 3
   },
-  "provisional_status": "ALL_617_RECORDS_ARE_PROVISIONAL_GLM_SOURCE_REVIEW_PENDING_ACCEPTANCE",
-  "not_yet_accepted": "617 records remain provisional; no cross-model or max-model acceptance has been performed",
-  "quality_audit_completed_windows": 6,
-  "correction_queue_count": 155,
-  "correction_queue_repaired": 155,
-  "escalation_routing": {
-    "MAX_REQUIRED": 353,
-    "GLM_HIGH_CAN_RESOLVE": 150,
-    "NO_ESCALATION_NEEDED": 3,
-    "total": 506
+  "reviewed_claim_type_counts": {
+    "ALGORITHMIC_CLAIM": 2,
+    "DEFINITION": 12,
+    "EXPLANATORY_HYPOTHESIS": 6,
+    "MATHEMATICAL_PROPOSITION": 3,
+    "STRUCTURAL_ANALOGY": 2
   },
-  "max_queue_ready": true,
-  "max_queue_count": 353,
-  "max_queue_recommended_batch_size": 25,
-  "max_queue_recommended_batch_count": 15,
+  "logic_risk_count": 19,
   "legacy_tables_modified": false,
   "getnote_reasoning_calls": 0,
-  "prs_merged": 0,
-  "forbidden_terms": [
-    "codex_independent_acceptance_coverage",
-    "CODEX_5_4_CAN_RESOLVE",
-    "GPT-5.4 已独立接受",
-    "617/617 已语义验证"
-  ],
-  "correct_terms": [
-    "second_pass_glm_acceptance_coverage",
-    "GLM_HIGH_CAN_RESOLVE",
-    "GLM_SECOND_PASS_PASS",
-    "GLM_HIGH_REPAIRED_PENDING_MAX_OR_CROSS_MODEL_ACCEPTANCE"
-  ]
+  "prs_merged": 0
 }
