@@ -1,2 +1,3 @@
 {"step":0,"description":"Baseline audit, branch, Draft PR, control files","status":"DONE","commit":"pending","executor":"QClaw","model":"Hy3"}
 {"step":1,"description":"121Q5 control-plane reconciliation overlay (17 commits, HEAD, ledger gaps, model MIXED_OR_UNVERIFIED)","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"57c5043a62d01927e1b87b048098614867b2f5e9"}
+{"step":2,"description":"Repo hygiene: removed 3 tracked .pyc, hardened .gitignore (root+v0.2)","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"bbacfcdf0b0d0d15da26841a1f2d6f6567cb9871"}
