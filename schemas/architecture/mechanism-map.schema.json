@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/mechanism-map.schema.json",
+  "title": "Mechanism Map",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "review_phase",
+    "phenomenon",
+    "question",
+    "variables_or_components",
+    "observed_changes",
+    "candidate_paths",
+    "directionality",
+    "boundary_conditions",
+    "mediators",
+    "moderators",
+    "alternative_mechanisms",
+    "counterfactuals",
+    "observable_predictions",
+    "distinguishing_tests",
+    "evidence_for",
+    "evidence_against",
+    "unknowns",
+    "value_conflicts",
+    "claim_ceiling",
+    "downgrade_conditions"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^MM-[A-Z0-9-]+$" },
+    "review_phase": { "enum": ["M0_PRE_ACTION_SKETCH", "M1_POST_ACTION_ADJUDICATION"] },
+    "phenomenon": { "type": "string", "minLength": 1 },
+    "question": { "type": "string", "minLength": 1 },
+    "variables_or_components": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "observed_changes": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "candidate_paths": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "status"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["candidate", "supported", "unsupported", "downgraded", "pending"] }
+        }
+      }
+    },
+    "directionality": { "type": "string", "minLength": 1 },
+    "boundary_conditions": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "mediators": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "moderators": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "alternative_mechanisms": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "counterfactuals": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "observable_predictions": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "distinguishing_tests": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "evidence_for": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "evidence_against": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "unknowns": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "value_conflicts": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "claim_ceiling": {
+      "enum": [
+        "artifact_created",
+        "schema_validated",
+        "workflow_passed",
+        "implementation_observed",
+        "mechanism_plausible",
+        "mechanism_discriminated",
+        "causal_identification_pending",
+        "insufficient_evidence"
+      ]
+    },
+    "downgrade_conditions": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 }
+  }
+}

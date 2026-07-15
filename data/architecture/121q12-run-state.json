@@ -4,7 +4,7 @@
   "branch": "architecture/121q12-effectual-mechanism-dual-loop-20260715",
   "base_main_head": "8189dde91d0adbb7957c8aa642bc76d14afe6534",
   "draft_pr": 47,
-  "status": "STEP_001_COMPLETE",
+  "status": "STEP_002_COMPLETE",
   "steps": [
     {
       "step": "000",
@@ -17,13 +17,13 @@
       "step": "001",
       "name": "effectual action plane",
       "status": "complete",
-      "commit": null,
-      "pushed": false
+      "commit": "39c9e971",
+      "pushed": true
     },
     {
       "step": "002",
       "name": "mechanism adjudication and non-sycophancy calibration plane",
-      "status": "pending",
+      "status": "complete",
       "commit": null,
       "pushed": false
     },
