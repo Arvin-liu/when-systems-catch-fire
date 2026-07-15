@@ -1,0 +1,83 @@
+{
+  "manifest": "Function OS v0.2 Candidate Reference Implementation",
+  "version": "0.2.0",
+  "status": "CANDIDATE",
+  "domain": "symbolic-only",
+  "canonical_nodes": {
+    "N1": {
+      "name": "FunctionSpec",
+      "file": "n1_functionspec_parser.py",
+      "tests": 7
+    },
+    "N2": {
+      "name": "Representation",
+      "file": "n2_representation.py",
+      "tests": 4
+    },
+    "N3": {
+      "name": "Compiler",
+      "file": "n3_compiler.py",
+      "tests": 4
+    },
+    "N4": {
+      "name": "Artifact",
+      "file": "n4_artifact_packager.py",
+      "tests": 4
+    },
+    "N5": {
+      "name": "Interpreter",
+      "file": "n5_interpreter.py",
+      "tests": 4
+    },
+    "N6": {
+      "name": "ExecutionTrace",
+      "file": "n6_execution_trace.py",
+      "tests": 4
+    },
+    "N7": {
+      "name": "Validator",
+      "file": "n7_validator.py",
+      "tests": 3
+    },
+    "N8": {
+      "name": "ComposerRouter",
+      "file": "n8_composer_router.py",
+      "tests": 2
+    },
+    "N9": {
+      "name": "VersionedRegistry",
+      "file": "n9_registry.py",
+      "tests": 8
+    }
+  },
+  "schemas": [
+    "n1-functionspec-schema.json",
+    "n2-representation-schema.json",
+    "n3-compiler-schema.json",
+    "n4-artifact-schema.json",
+    "n5-interpreter-schema.json",
+    "n6-trace-schema.json",
+    "n7-validator-schema.json",
+    "n8-router-schema.json",
+    "n9-registry-schema.json"
+  ],
+  "total_modules": 9,
+  "total_schemas": 9,
+  "total_tests": 46,
+  "test_result": "46/46 PASS",
+  "pipeline": "N1→N2→N3→N4→N5→N6→N7→N9 (N8 composition)",
+  "excluded": [
+    "neural_weight",
+    "bytecode",
+    "native_code",
+    "probabilistic_graph",
+    "auto_function_discovery"
+  ],
+  "security": "No exec()/eval()/compile() for module loading. Standard imports only.",
+  "parent_task": "IGNITION-20260715-121Q5",
+  "base_pr": "#40",
+  "stacked_on": [
+    "#39 (121Q4)"
+  ],
+  "generated": "2026-07-15T03:30:00+08:00"
+}
