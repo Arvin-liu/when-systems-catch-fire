@@ -105,6 +105,7 @@ class N2RepresentationValidator:
             issues.append({
                 "severity": "ERROR",
                 "check": "spec_hash_match",
+                "passed": False,
                 "detail": "representation.spec_hash != spec.spec_hash"
             })
 
@@ -116,6 +117,7 @@ class N2RepresentationValidator:
             issues.append({
                 "severity": "ERROR",
                 "check": "ir_input_completeness",
+                "passed": False,
                 "detail": f"missing={spec_inputs-ir_inputs}, extra={ir_inputs-spec_inputs}"
             })
 
@@ -125,6 +127,7 @@ class N2RepresentationValidator:
             issues.append({
                 "severity": "ERROR",
                 "check": "ir_output_completeness",
+                "passed": False,
                 "detail": f"missing={spec_outputs-ir_outputs}, extra={ir_outputs-spec_outputs}"
             })
 
@@ -134,6 +137,7 @@ class N2RepresentationValidator:
             issues.append({
                 "severity": "WARNING",
                 "check": "provenance_encoder",
+                "passed": False,
                 "detail": f"unexpected encoder: {prov.get('encoder')}"
             })
 
@@ -142,6 +146,7 @@ class N2RepresentationValidator:
             issues.append({
                 "severity": "ERROR",
                 "check": "representation_type",
+                "passed": False,
                 "detail": f"unsupported type: {representation.get('representation_type')}"
             })
 

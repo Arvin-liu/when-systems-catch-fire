@@ -8,6 +8,7 @@ from typing import Dict, Any
 from function_os.n1_safe_expression_dsl import SafeExpressionDSL
 
 class N5Interpreter:
+    _exec_counter = 0
     VERSION = "0.2.0"
     SUPPORTED_EFFECTS = {"pure", "stateful", "io"}
 
@@ -105,7 +106,8 @@ class N5Interpreter:
 
     def _make_result(self, artifact, inputs, status, outputs=None, errors=None,
                      precondition_result=None, postcondition_result=None, time_ms=0.0):
-        exec_id = f"EXE-{artifact['artifact_id'].replace('ART-','')}"
+        N5Interpreter._exec_counter += 1
+        exec_id = f"EXE-{artifact['artifact_id'].replace('ART-','')}-{N5Interpreter._exec_counter}"
         return {
             "execution_id": exec_id,
             "artifact_id": artifact['artifact_id'],

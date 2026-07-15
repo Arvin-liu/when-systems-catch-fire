@@ -24,6 +24,13 @@ class N8ComposerRouter:
             fn_id = req.get('function_id', '')
             candidate = available.get(fn_id)
 
+            # Fallback: look up by payload.function_id (for artifacts)
+            if candidate is None:
+                for v in available.values():
+                    if v.get('payload', {}).get('function_id') == fn_id:
+                        candidate = v
+                        break
+
             if candidate is None:
                 plan['errors'].append({
                     "step": i,
@@ -33,18 +40,6 @@ class N8ComposerRouter:
                 plan['steps'].append({
                     "step_index": i, "function_id": fn_id,
                     "status": "SKIPPED", "reason": "not in registry"
-                })
-                continue
-
-            if candidate.get('status') != 'OK':
-                plan['errors'].append({
-                    "step": i,
-                    "issue": "FUNCTION_NOT_READY",
-                    "function_id": fn_id, "status": candidate.get('status')
-                })
-                plan['steps'].append({
-                    "step_index": i, "function_id": fn_id,
-                    "status": "SKIPPED", "reason": f"status={candidate.get('status')}"
                 })
                 continue
 
