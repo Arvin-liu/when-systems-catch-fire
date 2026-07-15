@@ -5,3 +5,4 @@
 {"step":4,"description":"v0.2.1-candidate: pyproject.toml (py>=3.10, zero deps), version bump N1-N9","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"4d5fa92df330f38ac0b07104e7a98cc16c2c0b6f"}
 {"step":5,"description":"Path-independent imports: removed sys.path hacks, standard pkg import, verified from /tmp","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"9f6f4523bcf14293753acb90a763d6f7b0797a73"}
 {"step":6,"description":"E2E fix: named BuildResult (no positional unpacking), per-test isolation, regression test_14 N6 binds real FunctionSpec","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"29a7972d103acde5d83224b21bdeba2009bcb29c"}
+{"step":7,"description":"N1 robust tests (24): parser valid/invalid/0.0.0 fix, semantic checker undefined-symbol, SafeDSL 5 rejections; fixed 0.0.0 rejection bug","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"22241ab856e00a09bf90f775ac951ef841a1d0e7"}

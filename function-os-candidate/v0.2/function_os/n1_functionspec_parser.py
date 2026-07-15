@@ -41,6 +41,9 @@ class N1FunctionSpecParser:
         if not SEMVER_RE.match(spec.get('spec_version', '')):
             raise FunctionSpecParseError(
                 f"Invalid spec_version '{spec.get('spec_version')}' (expected MAJOR.MINOR.PATCH)")
+        if spec.get('spec_version') == '0.0.0':
+            raise FunctionSpecParseError(
+                "spec_version '0.0.0' is not allowed (must denote a real version)")
 
         if spec['domain'] != self.SUPPORTED_DOMAIN:
             raise FunctionSpecParseError(
