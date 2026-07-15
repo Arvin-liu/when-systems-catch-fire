@@ -2,9 +2,31 @@
   "schema": "ignition.reality.121q16.observation_plan.v1",
   "task": "IGNITION-20260715-121Q16",
   "window": {
-    "start": "2026-07-15",
-    "end": "2026-08-14",
-    "duration_days": 30
+    "start": null,
+    "end": null,
+    "duration_days": 30,
+    "timezone": "Asia/Shanghai",
+    "calculation_rule": "The formal 30-day observation window starts only after PR #50 is merged into the default branch, the three Issue Forms are available on the default branch, and README front-door links to docs/participate.md and SUPPORT.md are live."
+  },
+  "activation_conditions": {
+    "pr_50_merged_to_default_branch": false,
+    "issue_forms_available_on_default_branch": false,
+    "readme_front_door_links_live": false,
+    "candidate_pr_creation_is_not_start": true
+  },
+  "exposure_denominator": {
+    "interface_live_days": 0,
+    "front_door_link_present": true,
+    "issue_forms_available_on_default_branch": false,
+    "verified_exposure_events": [],
+    "known_referral_contexts": [],
+    "zero_signal_interpretation": "NO_OBSERVED_SIGNAL_UNDER_AVAILABLE_EXPOSURE",
+    "forbidden_zero_signal_interpretations": [
+      "NO_DEMAND",
+      "NO_INTEREST",
+      "PROJECT_HAS_NO_VALUE"
+    ],
+    "counting_rule": "Only traceable public presentation, explicit forwarding, direct provision of the entry point, or another verifiable exposure opportunity may be recorded as exposure. Stars, views, likes, AI reading, CI runs, and repository existence are not external interest, real use, independent review, or resource commitment."
   },
   "prefilled_results": false,
   "collection_channels": [

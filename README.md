@@ -18,6 +18,8 @@ If you prefer English first: at the current commit, this repository is an eviden
 - 想知道项目当前已经长成什么，请读 [项目现状](./docs/project-current-state.md)。
 - 想知道当前架构与边界，请读现行权威 [ARCHITECTURE.md](./ARCHITECTURE.md)、双地基 [FOUNDATION.md](./FOUNDATION.md) 和 [版本规范](./docs/VERSIONING.md)；[旧架构路径](./docs/PROJECT-ARCHITECTURE.md) 仅为稳定兼容入口。
 - 想知道怎么用，请读 [使用说明](./docs/USAGE.md)。
+- 想提交独立审查、非商业真实使用记录或参与说明，请读 [参与说明](./docs/participate.md)。
+- 想了解维护者可持续性、支持边界或商业许可询问入口，请读 [SUPPORT.md](./SUPPORT.md)。
 - 想按 Agent 方式操作，请读 [Agent 指南](./docs/AGENT-GUIDE.md)。
 - 想理解 Get 笔记如何进入这套系统，请读 [得到大脑协作流程](./docs/GET-BRAIN-WORKFLOW.md)。
 

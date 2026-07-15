@@ -18,6 +18,7 @@ ISSUE_FORMS = {
 }
 
 TEXT_FILES = [
+    ROOT / "README.md",
     ROOT / "SUPPORT.md",
     ROOT / "docs/participate.md",
     *ISSUE_FORMS.values(),
@@ -73,9 +74,14 @@ def validate_issue_forms() -> None:
 
 
 def validate_support_boundary() -> None:
+    readme = read(ROOT / "README.md").lower()
     support = read(ROOT / "SUPPORT.md").lower()
     participate = read(ROOT / "docs/participate.md").lower()
     combined = support + "\n" + participate
+    require("docs/participate.md" in readme, "README must link to participation guidance")
+    require("support.md" in readme, "README must link to SUPPORT.md")
+    require("独立审查" in readme or "independent review" in readme, "README entry must include independent review")
+    require("非商业" in readme or "non-commercial" in readme, "README entry must include non-commercial use")
     for phrase in (
         "maintainer is part of the life community",
         "ai/api quota",
@@ -108,9 +114,28 @@ def validate_forbidden_content() -> None:
 def validate_observation_plan() -> None:
     plan = load_json("data/reality/121q16-observation-plan.json")
     require(plan["schema"] == "ignition.reality.121q16.observation_plan.v1", "observation plan schema mismatch")
-    require(plan["window"]["start"] == "2026-07-15", "unexpected observation start")
-    require(plan["window"]["end"] == "2026-08-14", "unexpected observation end")
+    require(plan["window"]["duration_days"] == 30, "observation duration must remain 30 days")
+    require("PR #50 is merged" in plan["window"]["calculation_rule"], "window must start only after merge activation")
     require(plan["prefilled_results"] is False, "observation plan must not prefill results")
+    conditions = plan["activation_conditions"]
+    require(conditions["candidate_pr_creation_is_not_start"] is True, "candidate PR creation cannot start the window")
+    denom = plan["exposure_denominator"]
+    for key in (
+        "interface_live_days",
+        "front_door_link_present",
+        "issue_forms_available_on_default_branch",
+        "verified_exposure_events",
+        "known_referral_contexts",
+    ):
+        require(key in denom, f"exposure denominator missing {key}")
+    require(denom["front_door_link_present"] is True, "front-door link must be present before activation")
+    require(denom["zero_signal_interpretation"] == "NO_OBSERVED_SIGNAL_UNDER_AVAILABLE_EXPOSURE", "zero-signal interpretation must be exposure-bounded")
+    forbidden = set(denom["forbidden_zero_signal_interpretations"])
+    require({"NO_DEMAND", "NO_INTEREST"} <= forbidden, "zero-signal forbidden interpretations incomplete")
+    require(not denom["verified_exposure_events"], "candidate plan must not prefill exposure events")
+    exposure_rule = denom["counting_rule"].lower()
+    for phrase in ("stars", "views", "likes", "ai reading", "ci runs", "repository existence"):
+        require(phrase in exposure_rule, f"exposure rule must exclude {phrase}")
     metrics = {metric["id"]: metric for metric in plan["metrics"]}
     expected = {
         "valid_independent_reviews",
