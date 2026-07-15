@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/multiscale-causal-fabric.schema.json",
+  "title": "MultiscaleCausalFabric",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["fabric_id", "as_of_commit", "claim_ceiling", "events", "states", "relations", "propagation_channels", "cones_or_horizons", "branch_merge_structures", "feedback_dynamics", "entropy_and_irreversibility", "scale_transitions", "projections", "unmapped_residue", "integration_notes"],
+  "properties": {
+    "fabric_id": { "type": "string", "minLength": 1 },
+    "as_of_commit": { "type": "string", "minLength": 7 },
+    "claim_ceiling": { "type": "string", "minLength": 1 },
+    "events": { "type": "array", "items": { "$ref": "#/$defs/causal_event" }, "minItems": 1 },
+    "states": { "type": "array", "items": { "$ref": "#/$defs/causal_state" } },
+    "relations": { "type": "array", "items": { "$ref": "#/$defs/causal_relation" }, "minItems": 1 },
+    "propagation_channels": { "type": "array", "items": { "$ref": "#/$defs/propagation_channel" } },
+    "cones_or_horizons": { "type": "array", "items": { "$ref": "#/$defs/cone_or_horizon" } },
+    "branch_merge_structures": { "type": "array", "items": { "$ref": "#/$defs/branch_merge_structure" } },
+    "feedback_dynamics": { "type": "array", "items": { "$ref": "#/$defs/feedback_dynamics" } },
+    "entropy_and_irreversibility": { "type": "array", "items": { "$ref": "#/$defs/entropy_record" } },
+    "scale_transitions": { "type": "array", "items": { "$ref": "#/$defs/scale_transition" } },
+    "projections": { "type": "array", "items": { "$ref": "causal-projection.schema.json" } },
+    "unmapped_residue": { "type": "array", "items": { "$ref": "#/$defs/unmapped_residue" }, "minItems": 1 },
+    "integration_notes": { "type": "object" }
+  },
+  "$defs": {
+    "scale_domain": {
+      "enum": ["quantum", "atomic", "molecular", "cellular", "organism", "interpersonal", "organizational", "societal", "ecological", "planetary", "stellar", "galactic", "cosmological", "unmapped"]
+    },
+    "relation_class": {
+      "enum": ["physical_propagation", "experimentally_identified_causal", "intervention_supported", "mechanism_hypothesis", "structural_causal_model_edge", "dynamical_feedback", "enabling_condition", "constraint", "correlation_only", "analogy_only", "unknown_relation"]
+    },
+    "causal_event": {
+      "type": "object",
+      "required": ["event_id", "event_type", "temporal_support", "spatial_support", "scale_domain", "observer_frame", "provenance", "uncertainty", "claim_ceiling"],
+      "properties": {
+        "event_id": { "type": "string" },
+        "event_type": { "type": "string" },
+        "temporal_support": { "type": "object" },
+        "spatial_support": { "type": "object" },
+        "scale_domain": { "$ref": "#/$defs/scale_domain" },
+        "observer_frame": { "type": "string" },
+        "provenance": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "uncertainty": { "type": "string" },
+        "claim_ceiling": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "causal_state": {
+      "type": "object",
+      "required": ["state_id", "activation_event", "persistence_interval", "maintenance_conditions", "decay_or_termination_conditions", "state_variables", "scale_domain"],
+      "properties": {
+        "state_id": { "type": "string" },
+        "activation_event": { "type": "string" },
+        "persistence_interval": { "type": "string" },
+        "maintenance_conditions": { "type": "array", "items": { "type": "string" } },
+        "decay_or_termination_conditions": { "type": "array", "items": { "type": "string" } },
+        "state_variables": { "type": "object" },
+        "scale_domain": { "$ref": "#/$defs/scale_domain" }
+      },
+      "additionalProperties": true
+    },
+    "causal_relation": {
+      "type": "object",
+      "required": ["relation_id", "source", "target", "relation_class", "mechanism_status", "temporal_order", "delay", "propagation_speed_or_bound", "mediator_chain", "intervention_status", "counterfactual_status", "evidence_refs", "uncertainty", "claim_ceiling"],
+      "properties": {
+        "relation_id": { "type": "string" },
+        "source": { "type": "string" },
+        "target": { "type": "string" },
+        "relation_class": { "$ref": "#/$defs/relation_class" },
+        "mechanism_status": { "type": "string" },
+        "temporal_order": { "type": "string" },
+        "delay": { "type": "string" },
+        "propagation_speed_or_bound": { "type": "string" },
+        "mediator_chain": { "type": "array", "items": { "type": "string" } },
+        "intervention_status": { "type": "string" },
+        "counterfactual_status": { "type": "string" },
+        "evidence_refs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "uncertainty": { "type": "string" },
+        "claim_ceiling": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "propagation_channel": {
+      "type": "object",
+      "required": ["channel_id", "carrier_or_medium", "speed_bound", "attenuation", "amplification", "transformation", "capacity_or_resource_limit", "noise", "failure_conditions"],
+      "properties": {
+        "channel_id": { "type": "string" },
+        "carrier_or_medium": { "type": "string" },
+        "speed_bound": { "type": "string" },
+        "attenuation": { "type": "string" },
+        "amplification": { "type": "string" },
+        "transformation": { "type": "string" },
+        "capacity_or_resource_limit": { "type": "string" },
+        "noise": { "type": "string" },
+        "failure_conditions": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "cone_or_horizon": {
+      "type": "object",
+      "required": ["origin_event", "spacetime_scope", "reachability_semantics", "horizon_or_boundary", "coordinate_or_frame_assumptions", "source_of_bound"],
+      "properties": {
+        "origin_event": { "type": "string" },
+        "spacetime_scope": { "type": "string" },
+        "reachability_semantics": { "type": "string" },
+        "horizon_or_boundary": { "type": "string" },
+        "coordinate_or_frame_assumptions": { "type": "string" },
+        "source_of_bound": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "branch_merge_structure": {
+      "type": "object",
+      "required": ["branching", "convergence", "common_cause", "common_effect", "competing_path", "redundant_path", "bottleneck"],
+      "properties": {
+        "branching": { "type": "array", "items": { "type": "string" } },
+        "convergence": { "type": "array", "items": { "type": "string" } },
+        "common_cause": { "type": "array", "items": { "type": "string" } },
+        "common_effect": { "type": "array", "items": { "type": "string" } },
+        "competing_path": { "type": "array", "items": { "type": "string" } },
+        "redundant_path": { "type": "array", "items": { "type": "string" } },
+        "bottleneck": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "feedback_dynamics": {
+      "type": "object",
+      "required": ["loop_id", "state_level_or_event_level", "positive_or_negative", "delay", "gain", "stability_status", "open_loop_expansion"],
+      "properties": {
+        "loop_id": { "type": "string" },
+        "state_level_or_event_level": { "enum": ["state_level", "event_level"] },
+        "positive_or_negative": { "enum": ["positive", "negative", "mixed", "unknown"] },
+        "delay": { "type": "string" },
+        "gain": { "type": "string" },
+        "stability_status": { "type": "string" },
+        "open_loop_expansion": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+      }
+    },
+    "entropy_record": {
+      "type": "object",
+      "required": ["thermodynamic_scope", "open_or_closed_system_assumption", "entropy_measure", "entropy_production_or_export", "irreversibility_status", "relation_to_causal_order", "evidence_refs", "uncertainty"],
+      "properties": {
+        "thermodynamic_scope": { "type": "string" },
+        "open_or_closed_system_assumption": { "type": "string" },
+        "entropy_measure": { "type": "string" },
+        "entropy_production_or_export": { "type": "string" },
+        "irreversibility_status": { "type": "string" },
+        "relation_to_causal_order": { "type": "string" },
+        "evidence_refs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "uncertainty": { "type": "string" }
+      }
+    },
+    "scale_transition": {
+      "type": "object",
+      "required": ["from_scale", "to_scale", "bridge_mechanism", "evidence_refs", "claim_ceiling"],
+      "properties": {
+        "from_scale": { "$ref": "#/$defs/scale_domain" },
+        "to_scale": { "$ref": "#/$defs/scale_domain" },
+        "bridge_mechanism": { "type": "string" },
+        "evidence_refs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "claim_ceiling": { "type": "string" }
+      }
+    },
+    "unmapped_residue": {
+      "type": "object",
+      "required": ["residue_id", "residue_type", "description", "reason_not_mapped", "claim_ceiling"],
+      "properties": {
+        "residue_id": { "type": "string" },
+        "residue_type": { "enum": ["causal_status_unknown", "scale_transition_unresolved", "quantum_classical_boundary_unresolved", "missing_mediator", "conflicting_causal_models", "insufficient_counterfactual_evidence", "narrative_only"] },
+        "description": { "type": "string" },
+        "reason_not_mapped": { "type": "string" },
+        "claim_ceiling": { "type": "string" }
+      }
+    }
+  }
+}

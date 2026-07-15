@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/causal-relation.schema.json",
+  "title": "CausalRelation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["relation_id", "source", "target", "relation_class", "mechanism_status", "temporal_order", "delay", "propagation_speed_or_bound", "mediator_chain", "intervention_status", "counterfactual_status", "evidence_refs", "uncertainty", "claim_ceiling"],
+  "properties": {
+    "relation_id": { "type": "string", "minLength": 1 },
+    "source": { "type": "string", "minLength": 1 },
+    "target": { "type": "string", "minLength": 1 },
+    "relation_class": { "$ref": "multiscale-causal-fabric.schema.json#/$defs/relation_class" },
+    "mechanism_status": { "type": "string", "minLength": 1 },
+    "temporal_order": { "type": "string", "minLength": 1 },
+    "delay": { "type": "string", "minLength": 1 },
+    "propagation_speed_or_bound": { "type": "string", "minLength": 1 },
+    "mediator_chain": { "type": "array", "items": { "type": "string" } },
+    "intervention_status": { "type": "string", "minLength": 1 },
+    "counterfactual_status": { "type": "string", "minLength": 1 },
+    "evidence_refs": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "uncertainty": { "type": "string", "minLength": 1 },
+    "claim_ceiling": { "type": "string", "minLength": 1 }
+  }
+}
