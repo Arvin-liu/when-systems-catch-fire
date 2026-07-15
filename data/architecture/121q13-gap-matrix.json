@@ -1,0 +1,48 @@
+{
+  "schema": "ignition.architecture.121q13.gap_matrix.v1",
+  "baseline_ref": "PR #47 head 338cfff999e26dce623c6c55d810587db4a668ba",
+  "matrix": [
+    {
+      "gap_id": "GAP-ITERATION-DELTA",
+      "q12_has": "Effectual Action Plane chooses bounded next actions.",
+      "q12_lacks": "A check that repeated loops actually add evidence, tests, boundary narrowing, mechanism-map change, capability, action change, option space, or residue.",
+      "q13_adds": "IterationDelta and no-information-gain detection.",
+      "not_duplicate": true
+    },
+    {
+      "gap_id": "GAP-PROJECT-ATTRACTOR",
+      "q12_has": "Mechanism adjudication requires alternatives and claim ceilings.",
+      "q12_lacks": "A project-level detector for forcing all materials into Ψ0, isomorphism, new layers, CI truth, Charter language, or project catchwords.",
+      "q13_adds": "Attractor taxonomy and decisions to stop, branch, seek external evidence, or preserve residue.",
+      "not_duplicate": true
+    },
+    {
+      "gap_id": "GAP-SAMPLE-DISTRIBUTION",
+      "q12_has": "Calibration source separation and stance-blind review.",
+      "q12_lacks": "A sample envelope that treats AI/human outputs as context-conditioned samples rather than answers or independent facts.",
+      "q13_adds": "SampleEnvelope and HypothesisDistribution.",
+      "not_duplicate": true
+    },
+    {
+      "gap_id": "GAP-DECISION-COLLAPSE",
+      "q12_has": "Effectual action can select candidates under uncertainty.",
+      "q12_lacks": "A record preserving the pre-collapse distribution when deadlines force action before hypotheses converge.",
+      "q13_adds": "DecisionCollapseRecord and Action / Claim / Scale thresholds.",
+      "not_duplicate": true
+    },
+    {
+      "gap_id": "GAP-NARRATIVE-PROVENANCE",
+      "q12_has": "Positive claim binding and calibration categories.",
+      "q12_lacks": "A ledger proving later narrative did not overwrite real uncertainty, dissent, unresolved items, or rollback conditions.",
+      "q13_adds": "NarrativeProvenanceLedger.",
+      "not_duplicate": true
+    },
+    {
+      "gap_id": "GAP-CHUNK-INTEGRITY",
+      "q12_has": "Mechanism maps and non-sycophancy output constraints.",
+      "q12_lacks": "A gate distinguishing real cognitive compression from label-only, pseudo-chunk, mega-attractor, or non-generative compression.",
+      "q13_adds": "ChunkAudit with expandability, generativity, compression utility, and inquiry continuation.",
+      "not_duplicate": true
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "ignition.architecture.121q13.run_state.v1",
+  "task": "IGNITION-20260715-121Q13",
+  "branch": "architecture/121q13-attention-distribution-compression-20260715",
+  "base_pr": 47,
+  "base_head": "338cfff999e26dce623c6c55d810587db4a668ba",
+  "draft_pr": null,
+  "status": "STEP_000_COMPLETE",
+  "steps": [
+    {
+      "step": "000",
+      "name": "121Q12 baseline and overlap audit",
+      "status": "complete",
+      "commit": null,
+      "pushed": false
+    },
+    {
+      "step": "001",
+      "name": "attention and attractor control plane",
+      "status": "pending",
+      "commit": null,
+      "pushed": false
+    },
+    {
+      "step": "002",
+      "name": "distribution judgment and decision collapse control plane",
+      "status": "pending",
+      "commit": null,
+      "pushed": false
+    },
+    {
+      "step": "003",
+      "name": "compression integrity gate, integration, validation, and receipt",
+      "status": "pending",
+      "commit": null,
+      "pushed": false
+    }
+  ],
+  "allowed_final_statuses": [
+    "READY_AS_ATTENTION_DISTRIBUTION_CONTROL_CANDIDATE",
+    "PARTIAL_WITH_ATTRACTOR_OR_DISTRIBUTION_GAPS",
+    "BLOCKED_BY_Q12_BASELINE_OR_VALIDATION"
+  ]
+}
