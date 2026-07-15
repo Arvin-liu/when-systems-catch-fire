@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "function-os/v0.2/schemas/n3-compiler-schema.json",
+  "title": "N3 Compiler Schema v0.2",
+  "description": "Canonical compiler — transforms FunctionSpec (N1) + Representation (N2) → compiled payload for N4 packaging",
+  "type": "object",
+  "required": [
+    "compiled_id",
+    "spec_hash",
+    "representation_hash",
+    "compiler_version",
+    "target",
+    "errors",
+    "warnings",
+    "payload"
+  ],
+  "properties": {
+    "compiled_id": {
+      "type": "string",
+      "pattern": "^CMP-FN-\\d{8}-\\d{4}-\\d+$"
+    },
+    "spec_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "representation_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "compiler_version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "OK",
+        "ERROR",
+        "WARNING"
+      ]
+    },
+    "target": {
+      "enum": [
+        "n5_interpreter_v0.2"
+      ]
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "payload": {
+      "type": "object",
+      "description": "Resolved function for N5 execution"
+    }
+  }
+}
