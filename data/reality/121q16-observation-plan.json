@@ -1,0 +1,67 @@
+{
+  "schema": "ignition.reality.121q16.observation_plan.v1",
+  "task": "IGNITION-20260715-121Q16",
+  "window": {
+    "start": "2026-07-15",
+    "end": "2026-08-14",
+    "duration_days": 30
+  },
+  "prefilled_results": false,
+  "collection_channels": [
+    ".github/ISSUE_TEMPLATE/independent-review.yml",
+    ".github/ISSUE_TEMPLATE/noncommercial-use-report.yml",
+    ".github/ISSUE_TEMPLATE/sponsorship-or-commercial-license-inquiry.yml"
+  ],
+  "metrics": [
+    {
+      "id": "valid_independent_reviews",
+      "label": "Valid independent reviews",
+      "current_value": null,
+      "counting_rule": "Count issue-form submissions that name a concrete artifact, version or claim, provide evidence or method, and state a boundary or failure condition.",
+      "not_counted": "Agreement, praise, popularity, sponsorship interest, or repeated comments from the same reviewer without new evidence."
+    },
+    {
+      "id": "real_noncommercial_use_reports",
+      "label": "Real non-commercial use reports",
+      "current_value": null,
+      "counting_rule": "Count reports that identify a version or artifact and describe a real learning, education, public-benefit review, independent research, compatibility exploration, or criticism use.",
+      "not_counted": "Stars, views, likes, reposts, vague interest, commercial production deployment, or private data that cannot be evaluated."
+    },
+    {
+      "id": "sponsorship_or_commercial_inquiries",
+      "label": "Sponsorship or commercial licensing inquiries",
+      "current_value": null,
+      "counting_rule": "Count concrete resource-support, reciprocal-agreement, infrastructure sponsorship, or commercial licensing inquiries that identify a scope or resource question.",
+      "not_counted": "Friendly comments, oral encouragement, vague support, payment-link requests, or attempts to buy governance, merge, evidence, conclusion, or validator privileges."
+    },
+    {
+      "id": "explicit_resource_commitments",
+      "label": "Explicit resource commitments",
+      "current_value": null,
+      "counting_rule": "Count only written commitments that specify a resource class, scope, or next verification step without asking for factual, governance, or merge control in return.",
+      "not_counted": "Oral support, preference statements, vague intent, praise, or contingent offers that require suppression of criticism or governance control."
+    },
+    {
+      "id": "invalid_spam_or_conflict_signals",
+      "label": "Invalid, spam, or conflict signals",
+      "current_value": null,
+      "counting_rule": "Count submissions that are spam, duplicate without information gain, request private data, request payment credentials, collapse evidence categories, or seek governance-for-support exchange.",
+      "not_counted": "Good-faith critical reports that expose a real gap."
+    },
+    {
+      "id": "maintainer_burden",
+      "label": "Maintainer burden",
+      "current_value": null,
+      "counting_rule": "Record review load, triage time, emotional pressure, moderation burden, and follow-up cost created by the pilot.",
+      "not_counted": "Popularity metrics or speculative future support."
+    }
+  ],
+  "signal_boundaries": [
+    "The same org or individual posting multiple comments is not counted as multiple independent reviewers unless there is new evidence or a distinct method.",
+    "Oral support is not counted as a resource commitment.",
+    "Stars, views, likes, reposts, and friendly comments do not replace real use, independent review, or funding/legal commitment.",
+    "Sponsorship or commercial inquiry is not evidence that project claims are true.",
+    "Non-commercial use is not independent review unless it includes a reproducible review method and evidence boundary."
+  ],
+  "claim_ceiling": "This plan establishes an observation interface for future external signals. It does not claim that any external recognition, funding willingness, production adoption, or independent validation already exists."
+}
