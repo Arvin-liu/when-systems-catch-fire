@@ -1,0 +1,29 @@
+{
+  "schema": "ignition.atlas.matrix_graph_map_boundaries.v1",
+  "boundaries": [
+    {
+      "surface": "matrix",
+      "answers": ["which rows and columns relate", "coverage and pairwise relation state"],
+      "does_not_answer": ["observer position", "navigation priority", "evolution direction", "sourcing decision"],
+      "authority": "source relation or coverage view only"
+    },
+    {
+      "surface": "registry",
+      "answers": ["what object exists", "object type", "source identity", "status fields"],
+      "does_not_answer": ["where a component sits in a decision landscape", "whether to build or buy"],
+      "authority": "machine-readable source of record"
+    },
+    {
+      "surface": "graph",
+      "answers": ["what connects to what", "edge type when declared"],
+      "does_not_answer": ["visual distance as proof", "dependency as causality", "stage as natural law"],
+      "authority": "connection view"
+    },
+    {
+      "surface": "map",
+      "answers": ["from this observer and decision question, what is near, dependent, changing, costly, unmapped, or actionable"],
+      "does_not_answer": ["new canonical truth", "permanent total project identity", "mechanism causality by position"],
+      "authority": "versioned derived projection"
+    }
+  ]
+}

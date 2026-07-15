@@ -1,0 +1,49 @@
+{
+  "schema": "ignition.atlas.latent_map_inventory.v1",
+  "as_of_commit": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
+  "finding": "The repository already contains latent topology in matrices, registries, dependencies, mechanisms, and state axes, but lacks explicit observer position, coordinate semantics, evolution stages, resource decisions, and unmapped residue as first-class map fields.",
+  "latent_maps": [
+    {
+      "id": "LATENT-FOUNDATION-REGISTRY",
+      "source": "data/foundation/",
+      "contains": ["formal objects", "claims", "arguments", "evidence", "mappings", "proof obligations", "validation records"],
+      "missing_for_map": ["observer", "decision question", "coordinate semantics", "evolution stage", "sourcing decision"]
+    },
+    {
+      "id": "LATENT-SEVEN-LAYER-ARCHITECTURE",
+      "source": "ARCHITECTURE.md",
+      "contains": ["L0-L6 flow", "validation gates", "publication boundary", "feedback restrictions"],
+      "missing_for_map": ["value recipient distance", "node maturity", "resource and maintainer cost view"]
+    },
+    {
+      "id": "LATENT-FUNCTION-DEPENDENCY",
+      "source": "data/function_dependency.json and docs/function_dependency_map.md",
+      "contains": ["function dependencies", "dependency map"],
+      "missing_for_map": ["stage of evolution", "build/buy/automate/freeze decision"]
+    },
+    {
+      "id": "LATENT-EXTERNAL-SOURCE-ATLAS",
+      "source": "data/external-research/*source-atlas*.jsonl",
+      "contains": ["source families", "coverage", "gaps", "provider capabilities"],
+      "missing_for_map": ["current value recipient", "projection rules into operation decisions"]
+    },
+    {
+      "id": "LATENT-Q12-Q13-OVERLAYS",
+      "source": "data/architecture and docs/architecture",
+      "contains": ["effectual actions", "mechanism maps", "attention audits", "sample distributions", "chunk audits"],
+      "missing_for_map": ["landscape projection and MapDiff"]
+    },
+    {
+      "id": "LATENT-STATE-AXES",
+      "source": "ARCHITECTURE.md and data/foundation/project-state.json",
+      "contains": ["workflow", "semantic", "formal", "logic", "proof", "evidence", "scope", "provenance", "migration"],
+      "missing_for_map": ["spatial or navigational projection", "stage change history"]
+    },
+    {
+      "id": "LATENT-VALUE-CHARTER",
+      "source": "docs/governance/life-community-value-charter.md",
+      "contains": ["Charter Gate", "maintainer sustainability", "anti-capture", "affected subjects"],
+      "missing_for_map": ["value-flow map and sourcing constraints"]
+    }
+  ]
+}

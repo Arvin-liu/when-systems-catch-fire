@@ -1,0 +1,40 @@
+{
+  "schema": "ignition.atlas.121q14.baseline.v1",
+  "task": "IGNITION-20260715-121Q14",
+  "status": "BASELINE_AUDITED",
+  "created_at": "2026-07-15",
+  "branch": "architecture/121q14-ignition-atlas-dynamic-landscape-20260715",
+  "stacked_on": {
+    "pr": 48,
+    "head": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
+    "state": "OPEN_DRAFT_UNMERGED_MERGEABLE"
+  },
+  "q13_verification": {
+    "gpt_checked": true,
+    "q13_receipt_commit": "f28df40b0b7ced861d8483533a270ae99f030e1b",
+    "foundation_validation_run": 29410550418,
+    "foundation_validation_conclusion": "success",
+    "function_os_ci_run": 29410552324,
+    "function_os_ci_conclusion": "success"
+  },
+  "atlas_scope": {
+    "adds_truth_layer": false,
+    "creates_second_canonical_truth": false,
+    "replaces_matrices_or_registries": false,
+    "creates_permanent_total_map": false,
+    "projection_only": true
+  },
+  "guard": {
+    "map_position_is_proof": false,
+    "visual_proximity_is_isomorphism": false,
+    "evolution_stage_is_natural_law": false,
+    "dependency_is_causality": false,
+    "sourcing_decision_transfers_charter_duty": false
+  },
+  "frozen_boundaries": {
+    "psi0_definitions_modified": false,
+    "project_state_085_modified": false,
+    "legacy_tables_modified": false,
+    "historical_evidence_cards_modified": false
+  }
+}

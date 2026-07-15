@@ -1,0 +1,44 @@
+{
+  "schema": "ignition.atlas.121q14.run_state.v1",
+  "task": "IGNITION-20260715-121Q14",
+  "branch": "architecture/121q14-ignition-atlas-dynamic-landscape-20260715",
+  "base_pr": 48,
+  "base_head": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
+  "draft_pr": null,
+  "status": "STEP_000_COMPLETE",
+  "steps": [
+    {
+      "step": "000",
+      "name": "121Q13 baseline, latent maps, and matrix-map boundary audit",
+      "status": "complete",
+      "commit": null,
+      "pushed": false
+    },
+    {
+      "step": "001",
+      "name": "atlas schemas and deterministic projection",
+      "status": "pending",
+      "commit": null,
+      "pushed": false
+    },
+    {
+      "step": "002",
+      "name": "first real maps and sourcing decisions",
+      "status": "pending",
+      "commit": null,
+      "pushed": false
+    },
+    {
+      "step": "003",
+      "name": "map validator, MapDiff, integration, validation, and receipt",
+      "status": "pending",
+      "commit": null,
+      "pushed": false
+    }
+  ],
+  "allowed_final_statuses": [
+    "READY_AS_DYNAMIC_ATLAS_CANDIDATE",
+    "PARTIAL_WITH_MAP_PROJECTION_OR_PROVENANCE_GAPS",
+    "BLOCKED_BY_Q13_BASELINE_OR_VALIDATION"
+  ]
+}
