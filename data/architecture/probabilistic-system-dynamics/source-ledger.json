@@ -1,0 +1,69 @@
+{
+  "task": "121Q22",
+  "claim_ceiling": "External sources are boundary references and modeling inputs only; they are not upgraded into proved Ignition assets.",
+  "sources": [
+    {
+      "source_id": "pearl-2009-scm",
+      "exact_claim": "Causal inference needs assumptions and a language that distinguishes observational distributions from intervention and counterfactual queries.",
+      "assumptions": "Structural causal models and graph/structural assumptions are required for identifying causal effects from data.",
+      "usable_projection": "Separate P(Y|X) from P(Y|do(X)); require identifiability and claim ceilings.",
+      "forbidden_upgrade": "Do not treat conditional probability or model fit as causal proof.",
+      "evidence_grade": "primary survey",
+      "citation": "Judea Pearl, Causal Inference in Statistics: An Overview, Statistics Surveys 3 (2009), DOI 10.1214/09-SS057; https://projecteuclid.org/journals/statistics-surveys/volume-3/issue-none/Causal-inference-in-statistics-An-overview/10.1214/09-SS057.short"
+    },
+    {
+      "source_id": "didelez-2007-local-independence",
+      "exact_claim": "Marked point-process graphs can encode local independences where event intensities are independent of parts of the past.",
+      "assumptions": "Continuous-time marked point-process setting with intensity-based dynamic dependence.",
+      "usable_projection": "Represent EventIntensityOrHazard with risk set, time window, and conditioning history.",
+      "forbidden_upgrade": "Do not treat any dynamic graph edge as identified causality without additional assumptions.",
+      "evidence_grade": "primary arXiv/manuscript",
+      "citation": "Vanessa Didelez, Graphical models for marked point processes based on local independence, arXiv:0710.5874; https://arxiv.org/abs/0710.5874"
+    },
+    {
+      "source_id": "roysland-2011-counterfactual-local-independence",
+      "exact_claim": "Continuous-time counterfactual distributions can be characterized using stochastic analysis, martingale problems, local independence graphs, and likelihood-ratio reweighting under conditions.",
+      "assumptions": "Uniform integrability and model conditions are needed; graphical information does not remove assumptions.",
+      "usable_projection": "Represent InterventionDistribution separately from factual distribution and record identifiability conditions.",
+      "forbidden_upgrade": "Do not assume a counterfactual distribution exists or is identifiable without stated conditions.",
+      "evidence_grade": "primary arXiv/paper",
+      "citation": "Kjetil Røysland, Counterfactual analyses with graphical models based on local independence, arXiv:1106.0972; https://arxiv.org/abs/1106.0972"
+    },
+    {
+      "source_id": "bertalanffy-1950-open-systems",
+      "exact_claim": "Open systems exchange matter, energy, or information with their environment and cannot be treated as closed by default.",
+      "assumptions": "System boundary and environment are modeling choices and must be declared.",
+      "usable_projection": "Require SystemContext with boundary rule, environment, exchanges, and open/closed/hybrid status.",
+      "forbidden_upgrade": "Do not claim system boundaries are naturally unique or that every system is closed.",
+      "evidence_grade": "primary publication record",
+      "citation": "L. von Bertalanffy, The Theory of Open Systems in Physics and Biology, Science 111(2872):23-29, DOI 10.1126/science.111.2872.23; https://www.science.org/doi/10.1126/science.111.2872.23"
+    },
+    {
+      "source_id": "hoel-2013-causal-emergence",
+      "exact_claim": "Under a particular effective-information measure, macro causal models can supersede micro models for some systems.",
+      "assumptions": "Depends on chosen micro/macro map, state space, intervention distribution, and EI measure.",
+      "usable_projection": "Represent CoarseGrainingEmergenceRecord with map, information loss, comparator, and claim ceiling.",
+      "forbidden_upgrade": "Do not claim macro levels always beat micro levels or that correlation after coarse-graining proves emergence.",
+      "evidence_grade": "primary peer-reviewed article",
+      "citation": "Erik P. Hoel, Larissa Albantakis, Giulio Tononi, Quantifying causal emergence shows that macro can beat micro, PNAS, DOI 10.1073/pnas.1314922110; https://www.pnas.org/doi/10.1073/pnas.1314922110"
+    },
+    {
+      "source_id": "ito-sagawa-2013-information-thermodynamics",
+      "exact_claim": "Nonequilibrium thermodynamics on causal networks can include informational quantities in generalized second-law and fluctuation-theorem settings.",
+      "assumptions": "Stochastic thermodynamic systems and causal-network modeling assumptions are required.",
+      "usable_projection": "Separate information entropy/flow fields from thermodynamic entropy production and record assumptions.",
+      "forbidden_upgrade": "Do not equate Shannon information entropy with thermodynamic entropy without system-specific assumptions.",
+      "evidence_grade": "primary arXiv/PRL article",
+      "citation": "Sosuke Ito and Takahiro Sagawa, Information Thermodynamics on Causal Networks, arXiv:1306.2756 / Phys. Rev. Lett. 111, 180603; https://arxiv.org/abs/1306.2756"
+    },
+    {
+      "source_id": "kalman-1960-linear-filtering",
+      "exact_claim": "The filtering and prediction problem can be formulated using state-transition methods for linear dynamic systems.",
+      "assumptions": "Linear filtering and prediction framework; later common Kalman filtering uses linear-Gaussian assumptions in many forms.",
+      "usable_projection": "Represent StateSpace, ObservabilityControllabilityRecord, and estimator boundary conditions.",
+      "forbidden_upgrade": "Do not treat linear, Gaussian, or fully observable assumptions as universal system laws.",
+      "evidence_grade": "primary publication record",
+      "citation": "R. E. Kalman, A New Approach to Linear Filtering and Prediction Problems, Journal of Basic Engineering 82(1):35-45, DOI 10.1115/1.3662552; https://asmedigitalcollection.asme.org/fluidsengineering/article/82/1/35/397706/A-New-Approach-to-Linear-Filtering-and-Prediction"
+    }
+  ]
+}

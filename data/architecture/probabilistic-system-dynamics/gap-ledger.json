@@ -1,0 +1,52 @@
+{
+  "task": "121Q22",
+  "as_of_commit": "b870592fd4e68db95c41b6f887cd17c1ad25de8a",
+  "conclusion": "LOCAL_PROBABILITY_AND_SYSTEM_COMPONENTS_WITHOUT_UNIFIED_EXECUTABLE_PSD_SEMANTICS",
+  "continue_to_step_001": true,
+  "observed_assets": [
+    "MCF examples include uncertainty fields but only as qualitative text.",
+    "Function OS schemas mention probabilistic representations but do not define probability semantics.",
+    "Foundation classifies PROBABILISTIC_MODEL objects and downgrades uncalibrated probability claims.",
+    "Legacy math-foundation inventory contains exit probability, collision probability, entropy, phase transition, and system stability objects.",
+    "Q12-Q14 provide mechanism, distribution, attractor, compression, and map boundaries but not executable transition laws."
+  ],
+  "gaps": [
+    {
+      "gap_id": "psd-gap-001",
+      "type": "probability_semantics",
+      "description": "No object distinguishes aleatoric probability, epistemic uncertainty, measurement error, sampling variation, subjective prior, posterior, and unknown probability source.",
+      "severity": "blocking"
+    },
+    {
+      "gap_id": "psd-gap-002",
+      "type": "system_context",
+      "description": "No first-class system boundary, environment, input, output, exchange, nested-system, observer-frame, or purpose-of-model object.",
+      "severity": "blocking"
+    },
+    {
+      "gap_id": "psd-gap-003",
+      "type": "state_space_transition",
+      "description": "No executable state-space and transition-law structure for deterministic, stochastic, or hybrid dynamics.",
+      "severity": "blocking"
+    },
+    {
+      "gap_id": "psd-gap-004",
+      "type": "intervention_observation",
+      "description": "No schema-level separation of observational conditionals from intervention distributions.",
+      "severity": "blocking"
+    },
+    {
+      "gap_id": "psd-gap-005",
+      "type": "calibration_and_tail_risk",
+      "description": "No probability calibration record, rare-event tail record, or rule that high probability is not causal proof.",
+      "severity": "major"
+    },
+    {
+      "gap_id": "psd-gap-006",
+      "type": "assumption_defaults",
+      "description": "No guard against silently assuming Markov, stationarity, ergodicity, linearity, Gaussian noise, or closed-system boundaries.",
+      "severity": "major"
+    }
+  ],
+  "claim_ceiling": "This ledger establishes a representation and execution gap only; it does not validate any new probabilistic or system-dynamic causal claim."
+}
