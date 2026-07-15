@@ -33,10 +33,12 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install package (editable, no network pin abuse)
+      - name: Install package (editable) + test deps
         run: |
           python -m pip install --upgrade pip
           pip install -e ./function-os-candidate/v0.2
+          # pytest is NOT preinstalled on the runner and must be declared explicitly.
+          python -m pip install "pytest>=7.4,<9"
 
       - name: Run unittest suite
         working-directory: function-os-candidate/v0.2
@@ -44,7 +46,7 @@ jobs:
 
       - name: Run pytest suite
         working-directory: function-os-candidate/v0.2
-        run: pytest -q
+        run: python -m pytest -q
 
       - name: Scan forbidden dynamic execution in runtime code
         working-directory: function-os-candidate/v0.2
