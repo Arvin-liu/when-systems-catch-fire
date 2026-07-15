@@ -1,0 +1,29 @@
+{
+  "schema": "ignition.architecture.attention_audit.v1",
+  "id": "ATTN-AUDIT-121Q8",
+  "history_mode": "read_only",
+  "case_type": "over_absorption_risk",
+  "iteration_delta": {
+    "id": "IDELTA-121Q8",
+    "loop_ref": "121Q8 charter and licensing interpretation",
+    "previous_iteration_ref": "licensing as resource rule",
+    "current_iteration_ref": "licensing and value charter as one sustainability problem",
+    "new_evidence": ["ownership audit and license scope files"],
+    "new_discriminating_test": ["license validator and full-text license scope review"],
+    "changed_mechanism_map": ["commercial extraction path separated from value judgment and legal scope"],
+    "narrowed_boundary": ["repository implementation does not prove legal outcome or real sustainability"],
+    "changed_capability": ["layered license scope can be validated"],
+    "changed_action": ["prospective license activation rather than retroactive MIT revocation"],
+    "expanded_option_space": ["commercial license, written reciprocity, and sustainability policy paths"],
+    "unresolved_residue": ["future commercial behavior and legal sufficiency"],
+    "delta_status": "INFORMATION_GAIN",
+    "required_response": ["continue", "preserve_residue"]
+  },
+  "attractor_checks": [
+    {
+      "attractor_id": "ATTRACTOR-CHARTER-SUBSTITUTION",
+      "status": "risk_preserved",
+      "reason": "Charter language could absorb licensing mechanics unless legal scope and sustainability mechanism remain separate."
+    }
+  ]
+}

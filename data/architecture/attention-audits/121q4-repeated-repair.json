@@ -1,0 +1,29 @@
+{
+  "schema": "ignition.architecture.attention_audit.v1",
+  "id": "ATTN-AUDIT-121Q4",
+  "history_mode": "read_only",
+  "case_type": "repeated_repair",
+  "iteration_delta": {
+    "id": "IDELTA-121Q4",
+    "loop_ref": "121Q4 node drift review loop",
+    "previous_iteration_ref": "code runs",
+    "current_iteration_ref": "canonical N1-N9 alignment questioned",
+    "new_evidence": [],
+    "new_discriminating_test": ["separate implementation pass from canonical semantic alignment"],
+    "changed_mechanism_map": ["implementation success path separated from semantic alignment path"],
+    "narrowed_boundary": ["runnable code does not imply canonical alignment"],
+    "changed_capability": ["future validators can require both dimensions"],
+    "changed_action": ["downgrade completion wording when semantic evidence is missing"],
+    "expanded_option_space": ["semantic validator or source-text review can be added"],
+    "unresolved_residue": ["full original execution trace not re-adjudicated"],
+    "delta_status": "PARTIAL_DELTA",
+    "required_response": ["branch_question", "run_discriminating_test", "downgrade_claim_ceiling"]
+  },
+  "attractor_checks": [
+    {
+      "attractor_id": "ATTRACTOR-CI-TRUTH",
+      "status": "detected",
+      "reason": "Runnable implementation risked being compressed into overall completion."
+    }
+  ]
+}

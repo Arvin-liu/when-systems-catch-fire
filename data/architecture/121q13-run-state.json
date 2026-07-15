@@ -4,20 +4,20 @@
   "branch": "architecture/121q13-attention-distribution-compression-20260715",
   "base_pr": 47,
   "base_head": "338cfff999e26dce623c6c55d810587db4a668ba",
-  "draft_pr": null,
-  "status": "STEP_000_COMPLETE",
+  "draft_pr": 48,
+  "status": "STEP_001_COMPLETE",
   "steps": [
     {
       "step": "000",
       "name": "121Q12 baseline and overlap audit",
       "status": "complete",
-      "commit": null,
-      "pushed": false
+      "commit": "0ec46cd6",
+      "pushed": true
     },
     {
       "step": "001",
       "name": "attention and attractor control plane",
-      "status": "pending",
+      "status": "complete",
       "commit": null,
       "pushed": false
     },

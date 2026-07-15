@@ -1,0 +1,29 @@
+{
+  "schema": "ignition.architecture.attention_audit.v1",
+  "id": "ATTN-AUDIT-121Q7",
+  "history_mode": "read_only",
+  "case_type": "real_deepening",
+  "iteration_delta": {
+    "id": "IDELTA-121Q7",
+    "loop_ref": "121Q7 -> 121Q8 foundation repair sequence",
+    "previous_iteration_ref": "mail storm controlled but 080 remains",
+    "current_iteration_ref": "dedicated foundation repair in later task",
+    "new_evidence": ["080 validator failure was isolated and later targeted"],
+    "new_discriminating_test": ["validate_080_adjudications.py"],
+    "changed_mechanism_map": ["push-triggered notification path separated from foundation correctness path"],
+    "narrowed_boundary": ["mail storm control was not foundation closure"],
+    "changed_capability": ["future task could repair 080 rather than keep pushing noise"],
+    "changed_action": ["stop speculative push loop and create targeted repair"],
+    "expanded_option_space": ["foundation closeout became possible after isolating blocker"],
+    "unresolved_residue": ["direct mailbox telemetry absent"],
+    "delta_status": "INFORMATION_GAIN",
+    "required_response": ["continue", "run_discriminating_test"]
+  },
+  "attractor_checks": [
+    {
+      "attractor_id": "ATTRACTOR-CI-TRUTH",
+      "status": "avoided",
+      "reason": "Failure was preserved as blocker rather than narrated as success."
+    }
+  ]
+}

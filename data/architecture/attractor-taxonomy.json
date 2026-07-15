@@ -1,0 +1,54 @@
+{
+  "schema": "ignition.architecture.attractor_taxonomy.v1",
+  "taxonomy": [
+    {
+      "id": "ATTRACTOR-PSI0-RETURN",
+      "name": "all material returns to Psi0",
+      "risk": "Diverse material is prematurely rewritten as a Ψ0 instance.",
+      "response": "preserve residue or seek source-specific formalization"
+    },
+    {
+      "id": "ATTRACTOR-ISOMORPHISM",
+      "name": "all similarity becomes isomorphism",
+      "risk": "Loose resemblance is upgraded to strict structural equivalence.",
+      "response": "downgrade to analogy, mapping, or unresolved similarity"
+    },
+    {
+      "id": "ATTRACTOR-NEW-LAYER",
+      "name": "every gap becomes a new layer",
+      "risk": "Missing evidence is hidden by adding architecture.",
+      "response": "mark no-information-gain or external evidence needed"
+    },
+    {
+      "id": "ATTRACTOR-CI-TRUTH",
+      "name": "CI pass becomes theory success",
+      "risk": "Executable success is described as factual, mathematical, or normative truth.",
+      "response": "bind claim to workflow_passed only"
+    },
+    {
+      "id": "ATTRACTOR-CHARTER-SUBSTITUTION",
+      "name": "value language replaces mechanism analysis",
+      "risk": "A Charter term settles a mechanism dispute without variables and tests.",
+      "response": "separate value conflict from mechanism map"
+    },
+    {
+      "id": "ATTRACTOR-AI-ECHO",
+      "name": "same-source AI outputs become independent evidence",
+      "risk": "Multiple outputs from shared context are counted as independent facts.",
+      "response": "treat as sample distribution, not fact evidence"
+    },
+    {
+      "id": "ATTRACTOR-CLOSING-WORDS",
+      "name": "project vocabulary becomes a closing label",
+      "risk": "Words such as emergence, convergence, meta-protocol, structure, or mechanism stop inquiry.",
+      "response": "run ChunkAudit before canonical use"
+    }
+  ],
+  "allowed_non_absorption_results": [
+    "not_suitable_for_absorption",
+    "cannot_be_mapped",
+    "frame_external_residue",
+    "requires_external_discipline",
+    "no_current_information_gain"
+  ]
+}
