@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "function-os/v0.2/schemas/n2-representation-schema.json",
+  "title": "N2 Representation Schema v0.2",
+  "description": "Canonical representation contract — machine-readable encoding of function semantics. v0.2 supports symbolic_ast only.",
+  "type": "object",
+  "required": [
+    "representation_id",
+    "spec_hash",
+    "representation_type",
+    "canonical_ir",
+    "version",
+    "provenance"
+  ],
+  "properties": {
+    "representation_id": {
+      "type": "string",
+      "pattern": "^REP-FN-\\d{8}-\\d{4}-\\d+$",
+      "description": "Unique representation ID: REP-FN-YYYYMMDD-NNNN-REV"
+    },
+    "spec_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "SHA-256 of the source FunctionSpec (N1)"
+    },
+    "representation_type": {
+      "type": "string",
+      "enum": [
+        "symbolic_ast"
+      ],
+      "description": "Representation kind — v0.2: symbolic_ast only"
+    },
+    "canonical_ir": {
+      "type": "object",
+      "description": "Canonical intermediate representation (symbolic AST form)",
+      "required": [
+        "kind",
+        "entrypoint",
+        "expressions",
+        "input_map",
+        "output_map"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "symbolic_ast"
+          ]
+        },
+        "entrypoint": {
+          "type": "string",
+          "description": "Function entrypoint name"
+        },
+        "expressions": {
+          "type": "object",
+          "description": "output_var → expression mapping"
+        },
+        "input_map": {
+          "type": "object",
+          "description": "input variable → type"
+        },
+        "output_map": {
+          "type": "object",
+          "description": "output variable → type"
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "postconditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "effects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "encoder",
+        "encoder_version",
+        "created_at"
+      ],
+      "properties": {
+        "encoder": {
+          "type": "string",
+          "const": "N2RepresentationEncoder"
+        },
+        "encoder_version": {
+          "type": "string"
+        },
+        "spec_source": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  },
+  "representation_constraints": {
+    "v0.2": "symbolic_ast only",
+    "excluded": [
+      "neural_weights",
+      "bytecode",
+      "native_code",
+      "probabilistic_graph"
+    ],
+    "hash_consistency": "representation_id must be verifiable against canonical_ir content hash"
+  },
+  "validation_rules": {
+    "spec_hash_match": "representation.spec_hash MUST equal source FunctionSpec.spec_hash",
+    "ir_completeness": "canonical_ir MUST cover all inputs, outputs, pre/postconditions from spec",
+    "provenance_traceable": "encoder + version + timestamp MUST be present"
+  }
+}
