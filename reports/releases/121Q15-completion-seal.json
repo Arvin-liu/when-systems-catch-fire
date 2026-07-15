@@ -1,6 +1,6 @@
 {
   "schema": "ignition.release.121q15.completion_seal.v1",
-  "status": "PREFLIGHT_READY_FOR_MAIN_MERGE",
+  "status": "121Q15_COMPLETE_MAIN_UPDATED_AND_ATLAS_SEALED",
   "pre_merge": {
     "main_head_before_merge": "8189dde91d0adbb7957c8aa642bc76d14afe6534",
     "pr_47_head": "338cfff999e26dce623c6c55d810587db4a668ba",
@@ -11,7 +11,23 @@
     "main_ancestor_of_q49": true,
     "q12_q14_commits_relative_to_main_before_seal": 13
   },
-  "post_merge": null,
+  "post_merge": {
+    "pr_49_state": "MERGED",
+    "merge_commit": "9e1577156340c4c50a914e793abf8ce0d647b024",
+    "merged_at": "2026-07-15T12:26:48Z",
+    "main_foundation_validation_run": 29415271223,
+    "main_foundation_validation_conclusion": "success",
+    "main_function_os_ci_run": 29415275295,
+    "main_function_os_ci_conclusion": "success",
+    "q12_validator": "passed_on_main",
+    "q13_validator": "passed_on_main",
+    "q14_validator": "passed_on_main",
+    "atlas_deterministic_rebuild": "passed_on_main",
+    "q47_head_in_main": true,
+    "q48_head_in_main": true,
+    "q49_head_in_main": true,
+    "real_world_usefulness": "pending_future_use_review_and_external_feedback"
+  },
   "boundaries": {
     "new_architecture_or_terms_added_by_121q15": false,
     "psi0_modified": false,
@@ -27,5 +43,5 @@
     "dependency_as_causality": false,
     "sourcing_decision_transfers_charter_responsibility": false
   },
-  "claim_ceiling": "pre_merge_release_candidate"
+  "claim_ceiling": "main_merged_schema_validated_navigation_view"
 }
