@@ -2,15 +2,16 @@
   "task": "IGNITION-20260715-121Q5",
   "title": "Function OS v0.2 Canonical Node Realignment",
   "model": "qclaw/pool-deepseek-v4-pro",
-  "inference": "high/深度思考",
-  "pr_39_head": "9a06c3afd7e77c089d128ed4611898249bfe3644",
-  "base_branch": "records/ignition-121q4-v4pro-symbolic-function-os-reference-20260715",
-  "current_branch": "records/ignition-121q5-v4pro-canonical-function-os-v02-20260715",
-  "current_step": 0,
-  "next_step": 1,
-  "next_step_description": "Canonical Node Contract",
-  "target_steps": 25,
-  "actual_commits_from_baseline": 0,
+  "status": "COMPLETE",
+  "total_steps": 25,
+  "actual_commits": 16,
+  "last_completed_step": 24,
+  "next_step": null,
+  "next_phase": "AWAITING_GPT_REVIEW",
+  "test_results": "46/46 PASS (33 unit + 13 E2E)",
+  "final_head": "371ef65",
+  "pr_number": 40,
+  "branch": "records/ignition-121q5-v4pro-canonical-function-os-v02-20260715",
   "canonical_nodes": {
     "N1": "FunctionSpec",
     "N2": "Representation",
@@ -22,6 +23,7 @@
     "N8": "ComposerRouter",
     "N9": "VersionedRegistry"
   },
-  "v0.1_status": "PROTOTYPE_ONLY — KEPT AS-IS, not canonical",
-  "last_updated": "2026-07-15T03:00:00+08:00"
+  "v0.1_status": "PROTOTYPE_ONLY — kept as-is",
+  "v0.2_status": "CANDIDATE — 46/46 PASS, 9 nodes, symbolic-only",
+  "last_updated": "2026-07-15T11:27:22+08:00"
 }
