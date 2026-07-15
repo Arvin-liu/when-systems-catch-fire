@@ -1,0 +1,13 @@
+{
+  "task_id": "IGNITION-20260715-121Q9",
+  "status": "IN_PROGRESS",
+  "current_step": "000",
+  "branch": "release/121q9-license-activation-cumulative-candidate-20260715",
+  "base_branch": "main",
+  "main_base_sha": "771349da3e241cdff29eaf3cf880ae2ce158549f",
+  "start_head": "5a9a860dc7fc0c0d4536586f5ff27f5180838e52",
+  "macro_steps_expected": 5,
+  "root_license_activation": "pending_step_001",
+  "created_at_utc": "2026-07-15T09:20:00Z",
+  "updated_at_utc": "2026-07-15T09:20:00Z"
+}
