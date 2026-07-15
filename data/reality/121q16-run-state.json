@@ -3,20 +3,24 @@
   "task": "IGNITION-20260715-121Q16",
   "branch": "reality/121q16-sustainability-signal-pilot-20260715",
   "base_head": "94119ac126b3d06c3ef3f0b41d7c50e7092a755c",
-  "draft_pr": null,
-  "status": "STEP_000_COMPLETE",
+  "draft_pr": {
+    "number": 50,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/50",
+    "state": "open_draft"
+  },
+  "status": "STEP_001_DRAFTED",
   "steps": [
     {
       "step": "000",
       "name": "baseline, action collapse, and experiment boundary",
       "status": "complete",
-      "commit": null,
-      "pushed": false
+      "commit": "3f4ca506",
+      "pushed": true
     },
     {
       "step": "001",
       "name": "public support and participation interface",
-      "status": "pending",
+      "status": "drafted",
       "commit": null,
       "pushed": false
     },

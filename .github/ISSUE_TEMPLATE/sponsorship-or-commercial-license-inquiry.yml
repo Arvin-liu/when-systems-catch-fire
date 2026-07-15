@@ -1,0 +1,57 @@
+name: Sponsorship or commercial licensing inquiry
+description: Start a concrete sponsorship, infrastructure support, reciprocal agreement, or commercial licensing inquiry.
+title: "[Support or licensing]: "
+labels:
+  - support-or-licensing
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form only for a concrete resource commitment, sponsorship inquiry, reciprocal agreement, or commercial licensing question. Do not include payment credentials, private addresses, phone numbers, private income details, or confidential procurement information.
+  - type: dropdown
+    id: signal_type
+    attributes:
+      label: Signal type
+      description: This keeps resource/licensing signals separate from independent review and non-commercial use reports.
+      options:
+        - sponsorship_or_commercial_license_inquiry
+    validations:
+      required: true
+  - type: dropdown
+    id: inquiry_type
+    attributes:
+      label: Inquiry type
+      options:
+        - infrastructure or AI quota sponsorship
+        - independent review or red-team support
+        - documentation or release-work support
+        - commercial production license
+        - written reciprocal agreement
+        - other concrete resource commitment
+    validations:
+      required: true
+  - type: textarea
+    id: resource_commitment
+    attributes:
+      label: Concrete resource or licensing need
+      description: Describe the real resource commitment, commercial evaluation need, or licensing question. Do not include private payment details.
+    validations:
+      required: true
+  - type: textarea
+    id: intended_scope
+    attributes:
+      label: Intended scope
+      description: Name the expected use scope, affected artifacts, time frame, and whether this is non-production evaluation or commercial production use.
+    validations:
+      required: true
+  - type: checkboxes
+    id: anti_capture
+    attributes:
+      label: Anti-capture boundary
+      options:
+        - label: I understand support or licensing cannot buy factual conclusions, evidence grades, mechanism conclusions, or endorsements.
+          required: true
+        - label: I understand support or licensing cannot buy governance rights, merge rights, vetoes, roadmap control, suppression of criticism, or exemption from validators.
+          required: true
+        - label: I have not included private payment credentials, private income details, phone numbers, addresses, or confidential procurement information.
+          required: true

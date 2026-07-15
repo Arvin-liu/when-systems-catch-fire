@@ -1,0 +1,57 @@
+name: Independent review
+description: Submit an independent review, red-team note, reproducibility check, or gap report.
+title: "[Independent review]: "
+labels:
+  - independent-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for review evidence, reproducibility checks, red-team feedback, or gap reports. A negative finding is welcome when it is tied to an artifact, version, evidence path, or validator behavior.
+  - type: dropdown
+    id: signal_type
+    attributes:
+      label: Signal type
+      description: This keeps review signals separate from use reports and sponsorship/commercial inquiries.
+      options:
+        - independent_review
+    validations:
+      required: true
+  - type: input
+    id: artifact
+    attributes:
+      label: Artifact or claim reviewed
+      description: Name the file, report, PR, commit, claim, mechanism map, or validator being reviewed.
+      placeholder: "Example: reports/... at commit abc123"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and method
+      description: Describe what you checked, how you checked it, and which evidence supports the review.
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Strongest alternative explanation or failure condition
+      description: Name the strongest remaining alternative mechanism, contradiction, boundary condition, or test that would change the conclusion.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+      description: State the review result with its boundary. Do not present preference, agreement, or disagreement as independent evidence by itself.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Review boundary
+      options:
+        - label: I am not treating sponsorship, personal preference, popularity, or agreement with the maintainer as evidence.
+          required: true
+        - label: I understand this review does not grant governance rights, merge rights, or claim authority.
+          required: true
