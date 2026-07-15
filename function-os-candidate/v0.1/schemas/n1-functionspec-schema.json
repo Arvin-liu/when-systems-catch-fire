@@ -1,0 +1,239 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Function OS v0.1 — N1 FunctionSpec Schema (symbolic-only)",
+  "version": "0.1",
+  "type": "object",
+  "required": [
+    "function_id",
+    "spec_version",
+    "name",
+    "inputs",
+    "outputs",
+    "preconditions",
+    "postconditions",
+    "effects_declared"
+  ],
+  "properties": {
+    "function_id": {
+      "type": "string",
+      "pattern": "^FN-\\d{8}-\\d{4}$",
+      "description": "Globally unique function identifier"
+    },
+    "spec_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version per semver rules"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "description": "Human-readable function name"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 2000,
+      "description": "Human-readable description of what the function does"
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "symbolic",
+        "neural_weight",
+        "hybrid"
+      ],
+      "description": "Function domain — v0.1 supports 'symbolic' only"
+    },
+    "inputs": {
+      "type": "object",
+      "description": "Input variable bindings: {var_name: type}",
+      "additionalProperties": {
+        "type": "string",
+        "enum": [
+          "integer",
+          "float",
+          "boolean",
+          "string",
+          "list<integer>",
+          "list<float>",
+          "list<boolean>",
+          "list<string>",
+          "map<string,integer>",
+          "map<string,float>",
+          "map<string,boolean>",
+          "map<string,string>"
+        ]
+      },
+      "minProperties": 0
+    },
+    "outputs": {
+      "type": "object",
+      "description": "Output variable bindings: {var_name: type}",
+      "additionalProperties": {
+        "type": "string",
+        "enum": [
+          "integer",
+          "float",
+          "boolean",
+          "string",
+          "list<integer>",
+          "list<float>",
+          "list<boolean>",
+          "list<string>",
+          "map<string,integer>",
+          "map<string,float>",
+          "map<string,boolean>",
+          "map<string,string>"
+        ]
+      },
+      "minProperties": 1
+    },
+    "preconditions": {
+      "type": "array",
+      "description": "Conditions that must hold before execution (safe expression DSL)",
+      "items": {
+        "type": "object",
+        "required": [
+          "expression",
+          "message"
+        ],
+        "properties": {
+          "expression": {
+            "type": "string",
+            "description": "Safe expression in the DSL subset"
+          },
+          "message": {
+            "type": "string",
+            "description": "Human-readable message on failure"
+          }
+        }
+      }
+    },
+    "postconditions": {
+      "type": "array",
+      "description": "Conditions that must hold after execution",
+      "items": {
+        "type": "object",
+        "required": [
+          "expression",
+          "message"
+        ],
+        "properties": {
+          "expression": {
+            "type": "string",
+            "description": "Safe expression in the DSL subset"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "invariants": {
+      "type": "array",
+      "description": "Invariants that must hold throughout execution",
+      "items": {
+        "type": "object",
+        "required": [
+          "expression",
+          "message"
+        ],
+        "properties": {
+          "expression": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "effects_declared": {
+      "type": "array",
+      "description": "Declared side effects (empty for pure functions in v0.1)",
+      "items": {
+        "type": "string",
+        "enum": [
+          "pure",
+          "log",
+          "registry_write"
+        ]
+      }
+    },
+    "examples": {
+      "type": "array",
+      "description": "Input/output examples for documentation and testing",
+      "items": {
+        "type": "object",
+        "required": [
+          "inputs",
+          "expected_output"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "inputs": {
+            "type": "object"
+          },
+          "expected_output": {
+            "type": "object"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "source_asset_refs": {
+      "type": "array",
+      "description": "References to original ignition assets",
+      "items": {
+        "type": "object",
+        "properties": {
+          "asset_id": {
+            "type": "string"
+          },
+          "asset_path": {
+            "type": "string"
+          },
+          "relationship": {
+            "type": "string",
+            "enum": [
+              "derived_from",
+              "inspired_by",
+              "implements"
+            ]
+          }
+        }
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "description": "Other FunctionSpecs this function depends on",
+      "items": {
+        "type": "object",
+        "properties": {
+          "function_id": {
+            "type": "string",
+            "pattern": "^FN-\\d{8}-\\d{4}$"
+          },
+          "min_spec_version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$"
+          }
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+    },
+    "spec_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "SHA-256 of this spec's immutable fields (computed)"
+    }
+  },
+  "additionalProperties": false
+}
