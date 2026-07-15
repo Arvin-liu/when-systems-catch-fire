@@ -1,0 +1,1 @@
+{"step":1,"parent_head":"5396889f04f115bfa4e6996a2cbd961366110d12","expected_increment":1,"executor":"QClaw","model":"Hy3","rule":"push then verify remote count=prev+1; no PR number in first commit","timestamp":"2026-07-15T13:57:14+08:00"}

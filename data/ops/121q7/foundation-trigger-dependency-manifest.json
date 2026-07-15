@@ -1,0 +1,53 @@
+{
+  "task": "121Q7",
+  "generated_at": "2026-07-15T13:57:14+08:00",
+  "executor": "QClaw",
+  "model": "Hy3",
+  "purpose": "foundation-validation.yml trigger path filter dependency basis",
+  "paths": [
+    {
+      ".github/workflows/foundation-validation.yml": "workflow self; edits must re-run"
+    },
+    {
+      "requirements-foundation.txt": "pip deps for foundation scripts"
+    },
+    {
+      "formal/lean/**": "Lean Foundation.lean source + lake config"
+    },
+    {
+      "tools/foundation/**": "all foundation scripts incl migrate_legacy/adjudicate/validate/verify_*"
+    },
+    {
+      "tests/foundation/**": "unittest suite tests.foundation.test_foundation"
+    },
+    {
+      "data/foundation/**": "canonical registries generated/checked by migrate_legacy; include project-state.json + adjudications + proofs + validations + schemas"
+    },
+    {
+      "data/foundation-architecture/**": "architecture canonical outputs consumed by foundation scripts"
+    },
+    {
+      "data/math-foundation/**": "function-provenance-ledger.jsonl read by migrate_legacy"
+    },
+    {
+      "data/pending_claims.json": "pending claims read by migrate_legacy"
+    },
+    {
+      "views/**": "compatibility views emitted by migrate_legacy (legacy-functions/cases.jsonl, manifest.json)"
+    },
+    {
+      "schemas/foundation/**": "JSON schemas emitted/validated by migrate_legacy + validate_foundation"
+    },
+    {
+      "reports/foundation-architecture/**": "report texts emitted by migrate_legacy"
+    }
+  ],
+  "note": "paths chosen from actual migration inputs/outputs of migrate_legacy.py + validate_foundation.py; no foundation real dependency omitted",
+  "non_triggering_examples": [
+    "function-os-candidate/**",
+    "reports/ops/121Q7-foundation-ci-mail-storm-repair.md",
+    "data/ops/121q7/**",
+    "agent-results/** (1111)",
+    "普通 overlay/evidence markdown"
+  ]
+}

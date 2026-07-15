@@ -1,40 +1,8 @@
 name: foundation-validation
 on:
   pull_request:
-    paths:
-      - '.github/workflows/foundation-validation.yml'
-      - 'requirements-foundation.txt'
-      - 'formal/lean/**'
-      - 'tools/foundation/**'
-      - 'tests/foundation/**'
-      - 'data/foundation/**'
-      - 'data/foundation-architecture/**'
-      - 'data/math-foundation/**'
-      - 'data/pending_claims.json'
-      - 'views/**'
-      - 'schemas/foundation/**'
-      - 'reports/foundation-architecture/**'
   push:
     branches: [main]
-    paths:
-      - '.github/workflows/foundation-validation.yml'
-      - 'requirements-foundation.txt'
-      - 'formal/lean/**'
-      - 'tools/foundation/**'
-      - 'tests/foundation/**'
-      - 'data/foundation/**'
-      - 'data/foundation-architecture/**'
-      - 'data/math-foundation/**'
-      - 'data/pending_claims.json'
-      - 'views/**'
-      - 'schemas/foundation/**'
-      - 'reports/foundation-architecture/**'
-  workflow_dispatch:
-concurrency:
-  group: foundation-validation-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
-permissions:
-  contents: read
 jobs:
   validate:
     runs-on: ubuntu-latest

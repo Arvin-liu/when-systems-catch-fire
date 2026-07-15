@@ -1,0 +1,10 @@
+{
+  "task":"121Q7","executor":"QClaw","model":"Hy3",
+  "base_pr":43,"base_head":"5396889f04f115bfa4e6996a2cbd961366110d12",
+  "this_branch":"ops/121q7-foundation-ci-mail-storm-repair-20260715",
+  "this_pr":null,"current_step":1,"next_step":2,"total_steps":7,
+  "commits_from_base":0,
+  "root_cause":"data/foundation/project-state.json polluted by external runtime state (083_* / next_task fields) not produced by migrate_legacy.py deterministic generation; --check always OUT_OF_DATE",
+  "mail_storm_mechanism":"foundation-validation had no paths filter; every Agent push (100+) re-triggered same migrate_legacy failure -> 200+ qq mails",
+  "final_verdict":null,"merge_readiness":null,"last_updated":"2026-07-15T13:57:14+08:00"
+}
