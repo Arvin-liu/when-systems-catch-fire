@@ -1,0 +1,100 @@
+{
+  "version": "0.1",
+  "title": "Function OS Symbolic Function Candidate Reference Implementation — Scope & Non-Goal Contract",
+  "timestamp": "2026-07-15T02:08:10Z",
+  "status": "CANDIDATE — NOT FROZEN, NOT FINAL, NOT PROVEN",
+  "supports": {
+    "function_types": [
+      "Pure symbolic functions with explicit pre/postconditions",
+      "Deterministic computation over known input domains",
+      "Functions expressible in the safe expression DSL subset",
+      "Single-spec, single-artifact, single-interpreter functions"
+    ],
+    "representations": [
+      "JSON FunctionSpec with explicit fields per N1 schema",
+      "Safe expression language (no eval, no shell, no network, no filesystem)"
+    ],
+    "operations": [
+      "Spec parsing and validation",
+      "Deterministic compilation to intermediate representation",
+      "Interpretation with precondition enforcement",
+      "Execution trace recording",
+      "Postcondition verification",
+      "Registry create/read/list/history/rollback",
+      "Artifact packaging with hash provenance",
+      "Validation feedback to spec revision"
+    ],
+    "equivalence": [
+      "Identity comparison (same spec + same inputs = same output)",
+      "No cross-representation equivalence",
+      "No cross-model equivalence"
+    ]
+  },
+  "does_not_support": {
+    "explicitly_excluded": [
+      "Weight-space functions (LoRA, merged checkpoints, model soups, task vectors)",
+      "Neural network compilation or inference",
+      "Cross-representation equivalence proofs (GAP-017)",
+      "Weight-space composition algebra (GAP-016)",
+      "Probabilistic / stochastic function semantics (GAP-020)",
+      "Arbitrary side effects (I/O, network, shell, filesystem)",
+      "Concurrent registry write conflict resolution",
+      "Distributed / multi-agent function execution",
+      "Automatic FunctionSpec discovery from code or weights",
+      "Performance optimization beyond correctness",
+      "Production deployment or security hardening",
+      "Backward compatibility with 120 or earlier Function OS sketches"
+    ]
+  },
+  "failure_semantics": {
+    "spec_failure": "Strict parse failure with structured error — unknown fields, missing required fields, type mismatches",
+    "compilation_failure": "Returns UNSUPPORTED for non-symbolic functions, COMPILE_ERROR for malformed specs",
+    "precondition_failure": "Returns VIOLATION with which condition failed and actual vs expected values",
+    "postcondition_failure": "Returns VIOLATION with which condition failed — artifact is NOT registered",
+    "hash_mismatch": "Returns INTEGRITY_FAILURE — artifact is NOT loaded or executed",
+    "version_conflict": "Returns VERSION_CONFLICT — explicit human intervention required",
+    "dependency_missing": "Returns MISSING_DEPENDENCY with list of missing dependencies"
+  },
+  "version_semantics": {
+    "spec_version": "Semver-like (major.minor.revision) — breaking change increments major",
+    "artifact_version": "Semver-like, tied to spec_version + compiler version",
+    "registry_revision": "Monotonically increasing integer per function_id",
+    "content_hash": "SHA-256 of canonical JSON — used for integrity verification",
+    "immutable_fields": [
+      "function_id",
+      "created_at",
+      "content_hash"
+    ],
+    "mutable_fields": [
+      "superseded_by",
+      "status",
+      "notes",
+      "examples"
+    ],
+    "supersedes": "Pointer to previous registry revision — stored, never deleted"
+  },
+  "observability_boundary": {
+    "visible": [
+      "FunctionSpec before and after compilation",
+      "Artifact manifest and content hash",
+      "Registry state at any revision",
+      "Execution trace events (step-level)",
+      "Validation feedback packets"
+    ],
+    "internal_only": [
+      "Compiler intermediate representations",
+      "Interpreter internal state",
+      "Registry storage format (filesystem-json only for v0.1)",
+      "Expression parser internal AST"
+    ]
+  },
+  "implementation_constraints": {
+    "language": "Python 3.10+ (no extra dependencies beyond stdlib)",
+    "registry_storage": "Local filesystem JSON store only (no database, no network)",
+    "expression_subset": "Arithmetic, comparison, boolean logic, conditional (if-then-else) only",
+    "no_eval_or_exec": true,
+    "no_shell_or_network": true,
+    "source_of_truth": "FunctionSpec JSON file → Compiler → Artifact → Registry",
+    "immutable_history": "Registry append-only, no deletion of historical revisions"
+  }
+}
