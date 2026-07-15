@@ -1,6 +1,5 @@
 """Tests: N5 Interpreter → N6 Trace → N7 Validator → N8 Router → N9 Registry."""
-import sys, os, json, unittest
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+import unittest
 
 from function_os.n1_functionspec_parser import N1FunctionSpecParser
 from function_os.n2_representation import N2RepresentationEncoder

@@ -1,6 +1,5 @@
 """Tests: N1 FunctionSpec Parser → N2 Representation → N3 Compiler → N4 Artifact."""
-import sys, os, json, unittest
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+import unittest
 
 from function_os.n1_functionspec_parser import N1FunctionSpecParser, FunctionSpecParseError
 from function_os.n2_representation import N2RepresentationEncoder, N2RepresentationValidator

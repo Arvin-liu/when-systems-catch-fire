@@ -4,14 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "function-os"
-version = "0.2.1-candidate"
+version = "0.2.1rc0"
 description = "Symbolic Function OS — canonical N1-N9 reference implementation (candidate)"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Non-Commercial (NC)" }
 authors = [{ name = "Arvin-liu / 121 pipeline" }]
 keywords = ["symbolic", "function", "spec", "interpreter", "registry"]
-dependencies = []  # zero runtime third-party dependencies
+dependencies = []
 
 [project.optional-dependencies]
 test = ["pytest"]
