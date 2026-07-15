@@ -1,6 +1,6 @@
 {
   "task_id": "IGNITION-20260715-121Q9",
-  "status": "COMPLETE_PENDING_GPT_VERIFICATION",
+  "status": "EXTENDED_BY_121Q10_READY_FOR_FINAL_RELEASE_DECISION_PENDING_REMOTE_CI",
   "pr": 46,
   "main_base_sha": "771349da3e241cdff29eaf3cf880ae2ce158549f",
   "pr45_content_head": "5a9a860dc7fc0c0d4536586f5ff27f5180838e52",
@@ -16,5 +16,12 @@
   },
   "prs_merged": 0,
   "prs_closed": 0,
-  "stop_rule": "wait_for_gpt_verification"
+  "stop_rule": "wait_for_gpt_verification",
+  "121q10_extension": {
+    "current_state_correction": "docs/project-current-state.md",
+    "positioning_page": "deprecated compatibility only",
+    "license_texts_complete": true,
+    "local_preflight": "PASS",
+    "step002_head": "recorded_by_git_after_commit_and_1111_receipt"
+  }
 }

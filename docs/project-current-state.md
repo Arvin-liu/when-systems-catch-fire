@@ -6,6 +6,8 @@
 
 点火不是先被固定定义、再照着定义制造出来的项目。它从问题、阅读、碰撞、函数化、反例、执行、验证、外部反馈和持续修正中涌现。这里描述的是当前提交下已经长成的状态，不是永久本质、终局类型或不可改变的项目身份。
 
+In short: this is a versioned current-state description, not a fixed essence, and future gap discovery -> structural correction -> re-validation may change it.
+
 Current state must be inferred from actual repository artifacts: architecture files, foundation registries, tests, CI, open PRs, validation reports, unresolved queues, licensing state, and known gaps. It must not be backfilled from aspiration or branding.
 
 ## Current Shape

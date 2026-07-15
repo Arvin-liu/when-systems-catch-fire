@@ -54,3 +54,12 @@ Remote CI on Step 003 head passed:
 ## Stop Rule
 
 PR #46 remains OPEN / DRAFT / UNMERGED. PRs #33-#45 remain untouched by this task. No amend, rebase, squash, force-push, merge, close, or ready-for-review action was performed.
+
+## 121Q10 Finalization Addendum
+
+121Q10 corrected two final preflight issues before release decision:
+
+1. Fixed project semantics: replaced fixed “project positioning” with versioned emergent current-state language. `docs/project-current-state.md` is now the canonical current-state page; `docs/project_positioning.md` is retained only as a deprecated compatibility path.
+2. Completed active license texts: BUSL-1.1, Apache-2.0, CC BY-NC-SA 4.0, and CC BY-SA 4.0 active files now include complete license text, not only summaries or external links.
+
+Local 121Q10 preflight passed for Foundation, Function OS, license scope, JSON/JSONL syntax, links, current-state semantics, frozen assets, cache hygiene, simple secret-pattern scan, and diff whitespace.
