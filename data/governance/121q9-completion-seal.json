@@ -1,0 +1,20 @@
+{
+  "task_id": "IGNITION-20260715-121Q9",
+  "status": "COMPLETE_PENDING_GPT_VERIFICATION",
+  "pr": 46,
+  "main_base_sha": "771349da3e241cdff29eaf3cf880ae2ce158549f",
+  "pr45_content_head": "5a9a860dc7fc0c0d4536586f5ff27f5180838e52",
+  "step003_content_head": "0b0b821239cb93bacf70bbc54c0dc157e4d8d0cf",
+  "step004_commit_head": "recorded_by_git_after_commit_and_by_1111_receipt",
+  "license_activation": "active",
+  "historical_mit_preserved": true,
+  "remote_ci": {
+    "foundation_validation": "success",
+    "foundation_run": "https://github.com/Arvin-liu/when-systems-catch-fire/actions/runs/29402700362",
+    "function_os_ci": "success",
+    "function_os_run": "https://github.com/Arvin-liu/when-systems-catch-fire/actions/runs/29402700333"
+  },
+  "prs_merged": 0,
+  "prs_closed": 0,
+  "stop_rule": "wait_for_gpt_verification"
+}
