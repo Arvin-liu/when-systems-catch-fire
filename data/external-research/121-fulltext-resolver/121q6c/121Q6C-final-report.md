@@ -1,3 +1,11 @@
+<!-- ERRATUM (121Q6D Step 003): corrected by overlay, not history rewrite -->
+> 更正：原报告/seal 写 9 commits / HEAD a0db4fb，实际 PR #42 = **10 commits / HEAD 33f453a**。
+> run-state 原 final_verdict/merge_readiness=null、last_updated=`${NOW}` 已由 correction overlay 修正。
+> “真实资产 N1→N9 E2E”表述不准确：原测试用 SAMPLE_MD + _todo 冒充，非真实迁移。
+> 真实结论见 121Q6D：120 资产 md 文件未落盘 → importer BLOCKED，无假迁移。
+> 本地 163 PASS 与 GitHub function-os-ci 是**两条独立证据链**，CI 必须独立变绿。
+> Canonical 值以 121q6c-correction-overlay.json 为准。
+
 # 121Q6C 最终报告：完成 121Q6 Step 019–024 + 合并就绪
 
 - **执行者**：QClaw（Hy3，深度思考 high）
