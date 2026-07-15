@@ -1,0 +1,31 @@
+{
+  "schema": "ignition.release.121q15.completion_seal.v1",
+  "status": "PREFLIGHT_READY_FOR_MAIN_MERGE",
+  "pre_merge": {
+    "main_head_before_merge": "8189dde91d0adbb7957c8aa642bc76d14afe6534",
+    "pr_47_head": "338cfff999e26dce623c6c55d810587db4a668ba",
+    "pr_48_head": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
+    "pr_49_head_before_seal": "4ae4167b12af1567d0a06b2e5d4bc070d3272712",
+    "q47_ancestor_of_q48": true,
+    "q48_ancestor_of_q49": true,
+    "main_ancestor_of_q49": true,
+    "q12_q14_commits_relative_to_main_before_seal": 13
+  },
+  "post_merge": null,
+  "boundaries": {
+    "new_architecture_or_terms_added_by_121q15": false,
+    "psi0_modified": false,
+    "project_state_085_modified": false,
+    "legacy_tables_modified": false,
+    "historical_evidence_cards_modified": false,
+    "matrix_or_registry_replaced": false,
+    "second_canonical_truth_created": false,
+    "permanent_total_map_created": false,
+    "map_position_as_proof": false,
+    "visual_proximity_as_isomorphism": false,
+    "evolution_stage_as_natural_law": false,
+    "dependency_as_causality": false,
+    "sourcing_decision_transfers_charter_responsibility": false
+  },
+  "claim_ceiling": "pre_merge_release_candidate"
+}

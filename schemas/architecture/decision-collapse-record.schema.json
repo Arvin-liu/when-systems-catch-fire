@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/decision-collapse-record.schema.json",
+  "title": "Decision Collapse Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "distribution_ref",
+    "threshold_used",
+    "collapse_trigger",
+    "selected_action",
+    "pre_collapse_candidates",
+    "dissent",
+    "unresolved_items",
+    "rollback_conditions",
+    "truth_claim_made"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^DCR-[A-Z0-9-]+$" },
+    "distribution_ref": { "type": "string", "minLength": 1 },
+    "threshold_used": { "enum": ["ACTION", "CLAIM", "SCALE"] },
+    "collapse_trigger": { "type": "string", "minLength": 1 },
+    "selected_action": { "type": "string", "minLength": 1 },
+    "pre_collapse_candidates": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "dissent": { "type": "array", "items": { "type": "string" } },
+    "unresolved_items": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "rollback_conditions": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "truth_claim_made": { "type": "boolean", "const": false }
+  }
+}

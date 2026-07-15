@@ -108,3 +108,88 @@ flowchart TB
 - Ψ0 中的乘号表示流程组合或联合约束，不表示普通数值乘法。
 
 执行入口与门禁见 [FOUNDATION.md](FOUNDATION.md)。
+
+## 121Q12 双环操作 overlay
+
+121Q12 在七层架构之上增加跨层操作 overlay，不新增真值层，不改变 L0—L6 的关系。
+
+```mermaid
+flowchart TB
+  STATE[当前项目现状] --> EA[效果推理行动平面]
+  EA --> MSA[最小状态改变行动]
+  MSA --> M0[M0 行动前机制草图]
+  M0 --> CHARTER[Charter Gate]
+  CHARTER --> EXEC[Ψ0 / 元协议 / Function OS]
+  EXEC --> OBS[观察、测试与验证]
+  OBS --> M1[M1 行动后机制裁决]
+  M1 --> PUB[受 claim ceiling 约束的发布]
+  PUB --> FEEDBACK[现实与外部反馈]
+  FEEDBACK --> STATE2[更新后的项目现状]
+```
+
+边界：
+
+- 效果推理产生行动候选，不产生真值。
+- 机制判断产生受约束的解释，不自动产生因果证明。
+- Charter Gate 仍位于两平面之上，决定行动是否可做、可如何做。
+- Ψ0 仍是 workflow orchestrator / algorithm protocol；本 overlay 不改写 Ψ0。
+- Function OS 负责执行动作，不决定动作是否值得。
+- C(x,y) 仍是机制假说，不因机制图存在而升级为已识别因果。
+- L6 发布必须受 claim ceiling 约束，不能用解释性语言制造下层真实性。
+
+操作入口：
+
+- [docs/architecture/effectual-action-plane.md](docs/architecture/effectual-action-plane.md)
+- [docs/architecture/mechanism-adjudication-plane.md](docs/architecture/mechanism-adjudication-plane.md)
+- [docs/governance/non-sycophancy-output-protocol.md](docs/governance/non-sycophancy-output-protocol.md)
+
+## 121Q13 注意力、分布与压缩控制 overlay
+
+121Q13 继续作为跨层控制 overlay，不新增真值层，不升级理论地位。它约束三件事：
+
+- 循环是否还有信息增量；
+- 输出样本是否被误当作答案或事实证据；
+- 新术语是否是真压缩，还是标签、伪组块或巨型吸引子。
+
+```mermaid
+flowchart TB
+  EA[效果推理候选行动] --> AD[IterationDelta / 吸引子审计]
+  AD -->|有信息增量| DIST[SampleEnvelope / HypothesisDistribution]
+  AD -->|无信息增量| STOP[停止、分支、外部证据或保留残余]
+  DIST --> DCR[DecisionCollapseRecord]
+  DCR --> THRESH[Action / Claim / Scale 三门槛]
+  THRESH --> CHUNK[ChunkAudit 压缩完整性门禁]
+  CHUNK --> PUB[受 claim ceiling 与压缩边界约束的发布]
+```
+
+边界：
+
+- AI 采样只能进入 hypothesis / interpretation / review 通道，不能直接升级为外部事实、数学证明或经验因果。
+- 行动坍缩只说明选择了下一步，不说明假设分布已经收敛为真。
+- 新术语通过 ChunkAudit 也不表示理论升级；它只表示该术语目前可展开、可生成问题、可减负且不会终止追问。
+
+121Q13 入口：
+
+- [docs/architecture/attention-attractor-control-plane.md](docs/architecture/attention-attractor-control-plane.md)
+- [docs/architecture/distribution-collapse-control-plane.md](docs/architecture/distribution-collapse-control-plane.md)
+- [docs/architecture/compression-integrity-gate.md](docs/architecture/compression-integrity-gate.md)
+
+## 121Q14 点火地图集 overlay
+
+121Q14 增加版本化地图投影与导航 overlay，不新增真值层，不废弃矩阵或 registry，也不建立永久唯一总地图。
+
+地图只回答：从特定观察者、决策问题、价值接受者和 `as_of_commit` 出发，当前地形如何导航，哪些依赖、成本、演进阶段、资源决策和未映射残余需要显式记录。
+
+边界：
+
+- 地图坐标不是事实证明。
+- 视觉邻近不是同构。
+- 演进阶段不是自然定律。
+- 依赖关系不是机制因果。
+- 自建、采购、租赁或外包建议不能转移 Charter Gate 责任。
+
+121Q14 入口：
+
+- [docs/architecture/ignition-atlas.md](docs/architecture/ignition-atlas.md)
+- [data/atlas/generated/ignition-atlas-121q14.json](data/atlas/generated/ignition-atlas-121q14.json)
+- [reports/atlas/121Q14-dynamic-atlas.md](reports/atlas/121Q14-dynamic-atlas.md)

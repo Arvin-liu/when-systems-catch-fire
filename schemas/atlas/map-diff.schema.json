@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/atlas/map-diff.schema.json",
+  "title": "Map Diff",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "from_commit", "to_commit", "map_ref", "node_changes", "edge_changes", "boundary_changes", "unmapped_residue_changes", "claim_boundary"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "from_commit": { "type": "string", "minLength": 7 },
+    "to_commit": { "type": "string", "minLength": 7 },
+    "map_ref": { "type": "string", "minLength": 1 },
+    "node_changes": { "type": "array", "items": { "type": "string" } },
+    "edge_changes": { "type": "array", "items": { "type": "string" } },
+    "boundary_changes": { "type": "array", "items": { "type": "string" } },
+    "unmapped_residue_changes": { "type": "array", "items": { "type": "string" } },
+    "claim_boundary": { "type": "string", "minLength": 1 }
+  }
+}

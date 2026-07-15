@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/iteration-delta.schema.json",
+  "title": "Iteration Delta",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "loop_ref",
+    "previous_iteration_ref",
+    "current_iteration_ref",
+    "new_evidence",
+    "new_discriminating_test",
+    "changed_mechanism_map",
+    "narrowed_boundary",
+    "changed_capability",
+    "changed_action",
+    "expanded_option_space",
+    "unresolved_residue",
+    "delta_status",
+    "required_response"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^IDELTA-[A-Z0-9-]+$" },
+    "loop_ref": { "type": "string", "minLength": 1 },
+    "previous_iteration_ref": { "type": "string", "minLength": 1 },
+    "current_iteration_ref": { "type": "string", "minLength": 1 },
+    "new_evidence": { "type": "array", "items": { "type": "string" } },
+    "new_discriminating_test": { "type": "array", "items": { "type": "string" } },
+    "changed_mechanism_map": { "type": "array", "items": { "type": "string" } },
+    "narrowed_boundary": { "type": "array", "items": { "type": "string" } },
+    "changed_capability": { "type": "array", "items": { "type": "string" } },
+    "changed_action": { "type": "array", "items": { "type": "string" } },
+    "expanded_option_space": { "type": "array", "items": { "type": "string" } },
+    "unresolved_residue": { "type": "array", "items": { "type": "string" } },
+    "delta_status": {
+      "enum": [
+        "INFORMATION_GAIN",
+        "NO_INFORMATION_GAIN",
+        "ATTRACTOR_LOOP",
+        "RUMINATION_RISK",
+        "PARTIAL_DELTA"
+      ]
+    },
+    "required_response": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "continue",
+          "stop",
+          "branch_question",
+          "seek_external_evidence",
+          "run_discriminating_test",
+          "preserve_residue",
+          "downgrade_claim_ceiling"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

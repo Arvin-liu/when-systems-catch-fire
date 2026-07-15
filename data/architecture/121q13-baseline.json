@@ -1,0 +1,54 @@
+{
+  "schema": "ignition.architecture.121q13.baseline.v1",
+  "task": "IGNITION-20260715-121Q13",
+  "status": "BASELINE_AUDITED",
+  "created_at": "2026-07-15",
+  "branch": "architecture/121q13-attention-distribution-compression-20260715",
+  "stacked_on": {
+    "pr": 47,
+    "head": "338cfff999e26dce623c6c55d810587db4a668ba",
+    "state": "OPEN_DRAFT_UNMERGED_MERGEABLE"
+  },
+  "q12_verification": {
+    "gpt_checked": true,
+    "q12_receipt_commit": "ecece804f98017397791424b510cd46e39817692",
+    "foundation_validation_run": 29408860286,
+    "foundation_validation_conclusion": "success",
+    "function_os_ci_run": 29408862548,
+    "function_os_ci_conclusion": "success"
+  },
+  "q12_surfaces_read": [
+    "docs/architecture/effectual-action-plane.md",
+    "docs/architecture/mechanism-adjudication-plane.md",
+    "docs/governance/non-sycophancy-output-protocol.md",
+    "schemas/architecture/effectual-action.schema.json",
+    "schemas/architecture/mechanism-map.schema.json",
+    "schemas/architecture/calibration-record.schema.json",
+    "data/architecture/pilots/*.json"
+  ],
+  "q13_scope": {
+    "adds_truth_layer": false,
+    "modifies_l0_l6": false,
+    "modifies_psi0": false,
+    "modifies_function_os_authority": false,
+    "modifies_charter_gate_authority": false,
+    "control_planes": [
+      "attention and iteration control",
+      "sample distribution and decision collapse control",
+      "compression integrity gate"
+    ]
+  },
+  "guard": {
+    "ai_sampling_is_fact_evidence": false,
+    "action_choice_is_mechanism_truth": false,
+    "new_terms_are_theory_upgrade": false,
+    "same_model_repetition_is_independent_evidence": false,
+    "ci_green_is_theory_truth": false
+  },
+  "frozen_boundaries": {
+    "psi0_definitions_modified": false,
+    "project_state_085_modified": false,
+    "legacy_tables_modified": false,
+    "historical_evidence_cards_modified": false
+  }
+}

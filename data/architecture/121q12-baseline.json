@@ -1,0 +1,79 @@
+{
+  "schema": "ignition.architecture.121q12.baseline.v1",
+  "task": "IGNITION-20260715-121Q12",
+  "status": "BASELINE_AUDITED",
+  "created_at": "2026-07-15",
+  "branch": "architecture/121q12-effectual-mechanism-dual-loop-20260715",
+  "base": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "main_head": "8189dde91d0adbb7957c8aa642bc76d14afe6534",
+    "pr_46_merge_commit": "8189dde91d0adbb7957c8aa642bc76d14afe6534",
+    "current_state_tag": {
+      "name": "current-state-2026-07-15",
+      "tag_object": "6f4e6d32c1de455e000781e861fb264933246317",
+      "target": "8189dde91d0adbb7957c8aa642bc76d14afe6534"
+    },
+    "main_ci": [
+      {
+        "name": "foundation-validation",
+        "run_id": 29406883816,
+        "head_sha": "8189dde91d0adbb7957c8aa642bc76d14afe6534",
+        "conclusion": "success"
+      },
+      {
+        "name": "function-os-ci",
+        "run_id": 29406883759,
+        "head_sha": "8189dde91d0adbb7957c8aa642bc76d14afe6534",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "command_bus": {
+    "repository": "Arvin-liu/1111",
+    "command_commit": "9ddb001f446b717dc9ecdb7f3b0294e56c538b1a",
+    "q11_receipt_commit": "b9d088d98",
+    "q11_receipt_path": "agent-results/IGNITION-20260715-121Q11-result.md"
+  },
+  "architecture_audit": {
+    "seven_layers_preserved": true,
+    "truth_relationships_changed": false,
+    "charter_gate_position": "highest normative boundary above action selection, Function OS execution, validation, and publication",
+    "psi0_status": "workflow orchestrator / algorithm protocol; not changed by this overlay",
+    "function_os_status": "execution capability; does not decide whether an action is worth doing",
+    "validation_layer_status": "checks artifacts, proofs, workflows, and claims without creating lower-layer truth",
+    "reality_feedback_chain": "gap discovery -> structural correction -> re-validation"
+  },
+  "current_gaps": [
+    {
+      "id": "GAP-EFFECTUAL-NEXT-ACTION",
+      "description": "No explicit protocol for choosing a next action when goals, metrics, and paths are unstable.",
+      "planned_overlay": "Effectual Action Plane"
+    },
+    {
+      "id": "GAP-MECHANISM-MAP",
+      "description": "No standard mechanism-map object for explaining what changed, how, under which conditions, and with which alternatives.",
+      "planned_overlay": "Mechanism Adjudication Plane"
+    },
+    {
+      "id": "GAP-STANCE-BLIND-REVIEW",
+      "description": "Review inputs do not yet require separation of artifact, claim, evidence, mechanism map, and failure conditions from proponent enthusiasm or expected conclusion.",
+      "planned_overlay": "Stance-blind review package"
+    },
+    {
+      "id": "GAP-CALIBRATION-SOURCE-SEPARATION",
+      "description": "AI output, repository artifacts, CI, external sources, real-world responses, human judgment, and independent review are not yet recorded as non-fungible calibration sources.",
+      "planned_overlay": "Calibration mix record"
+    },
+    {
+      "id": "GAP-NON-SYCOPHANCY-GATE",
+      "description": "Positive evaluative words are not yet machine-checked for explicit object, criterion, version, test, and boundary binding.",
+      "planned_overlay": "Non-sycophancy output protocol and validator"
+    }
+  ],
+  "frozen_boundaries": {
+    "psi0_definitions_modified": false,
+    "project_state_085_modified": false,
+    "legacy_tables_modified": false,
+    "historical_evidence_cards_modified": false
+  }
+}

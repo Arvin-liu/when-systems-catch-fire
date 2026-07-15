@@ -1,0 +1,1149 @@
+{
+  "atlas_spec": {
+    "as_of_commit": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
+    "canonical_truth_source": "Repository registries, matrices, schemas, tests, and source artifacts remain authoritative.",
+    "id": "ignition-atlas-121q14",
+    "permanent_total_map": false,
+    "purpose": "Versioned derived maps for navigation and resource decisions.",
+    "version": "121Q14-draft"
+  },
+  "maps": [
+    {
+      "as_of_commit": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
+      "claim_ceiling": "derived_resource_navigation_view",
+      "data_sources": [
+        "SUSTAINABILITY.md",
+        "LICENSES/COMMERCIAL-TERMS.md",
+        ".github/workflows",
+        "tools/foundation",
+        "docs/governance/life-community-value-charter.md"
+      ],
+      "decision_question": "Which costs and responsibilities must be retained, automated, rented, standardized, or covered by sponsorship?",
+      "edges": [
+        {
+          "edge_type": "control_flow",
+          "from": "maintainer_judgment",
+          "id": "econ_judgment_license",
+          "not_causality": true,
+          "source_refs": [
+            "docs/governance/life-community-value-charter.md"
+          ],
+          "to": "commercial_license",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "value_flow",
+          "from": "sponsorship",
+          "id": "econ_sponsor_quota",
+          "not_causality": true,
+          "source_refs": [
+            "SUSTAINABILITY.md"
+          ],
+          "to": "ai_quota",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "value_flow",
+          "from": "sponsorship",
+          "id": "econ_sponsor_ci",
+          "not_causality": true,
+          "source_refs": [
+            "SUSTAINABILITY.md"
+          ],
+          "to": "ci_compute",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "information_flow",
+          "from": "ai_quota",
+          "id": "econ_ai_validators",
+          "not_causality": true,
+          "source_refs": [
+            "tools/foundation/validate_foundation.py"
+          ],
+          "to": "foundation_validators",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "evidence_flow",
+          "from": "ci_compute",
+          "id": "econ_ci_validators",
+          "not_causality": true,
+          "source_refs": [
+            ".github/workflows/foundation-validation.yml"
+          ],
+          "to": "foundation_validators",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "dependency",
+          "from": "storage_network",
+          "id": "econ_hosting_license",
+          "not_causality": true,
+          "source_refs": [
+            "README.md"
+          ],
+          "to": "commercial_license",
+          "uncertainty": "Derived from declared architecture relation."
+        }
+      ],
+      "generation_method": "Deterministic static projection from declared sustainability, license, validation, CI, and charter surfaces.",
+      "id": "map-maintainer-sustainability-economics",
+      "layout_semantics": {
+        "visual_boundary": "rightward movement is not moral progress or inevitable commodification",
+        "x_axis": "evolution stage from genesis to commodity utility",
+        "y_axis": "visibility to maintainer sustainability and project continuity"
+      },
+      "map_type": "WARDLEY_STYLE_EVOLUTION",
+      "nodes": [
+        {
+          "cost_bearers": [
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from docs/governance/life-community-value-charter.md for this map only.",
+            "not_natural_law": true,
+            "stage": "GENESIS"
+          },
+          "id": "maintainer_judgment",
+          "label": "Maintainer judgment and Charter responsibility",
+          "maintainer": "maintainer",
+          "maturity": "GENESIS",
+          "object_ref": "docs/governance/life-community-value-charter.md",
+          "source_refs": [
+            "docs/governance/life-community-value-charter.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "preserve",
+            "reason": "Normative judgment and refusal rights must stay accountable.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Cannot be outsourced without losing accountability.",
+          "value_visibility": "Closest to maintainer sustainability and affected subjects"
+        },
+        {
+          "cost_bearers": [
+            "maintainer",
+            "sponsors"
+          ],
+          "evolution_record": {
+            "basis": "Projected from SUSTAINABILITY.md for this map only.",
+            "not_natural_law": true,
+            "stage": "PRODUCT_RENTAL"
+          },
+          "id": "ai_quota",
+          "label": "AI quota and model access",
+          "maintainer": "maintainer",
+          "maturity": "PRODUCT_RENTAL",
+          "object_ref": "SUSTAINABILITY.md",
+          "source_refs": [
+            "SUSTAINABILITY.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "rent",
+            "reason": "Rent model access; do not make provider output a truth source.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Provider availability and cost can change.",
+          "value_visibility": "High for execution speed"
+        },
+        {
+          "cost_bearers": [
+            "maintainer",
+            "GitHub Actions"
+          ],
+          "evolution_record": {
+            "basis": "Projected from .github/workflows/foundation-validation.yml for this map only.",
+            "not_natural_law": true,
+            "stage": "COMMODITY_UTILITY"
+          },
+          "id": "ci_compute",
+          "label": "CI compute",
+          "maintainer": "maintainer",
+          "maturity": "COMMODITY_UTILITY",
+          "object_ref": ".github/workflows",
+          "source_refs": [
+            ".github/workflows/foundation-validation.yml"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "rent",
+            "reason": "Use commodity CI while retaining claim boundaries.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "CI pass is workflow evidence only.",
+          "value_visibility": "High for validation repeatability"
+        },
+        {
+          "cost_bearers": [
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from tools/foundation/validate_foundation.py for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "foundation_validators",
+          "label": "Foundation validators",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "tools/foundation",
+          "source_refs": [
+            "tools/foundation/validate_foundation.py"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "automate",
+            "reason": "Automate repeat checks to reduce maintenance load.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Validator scope is repository-specific.",
+          "value_visibility": "High for publication safety"
+        },
+        {
+          "cost_bearers": [
+            "commercial users",
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from LICENSES/COMMERCIAL-TERMS.md for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "commercial_license",
+          "label": "Commercial license and reciprocity path",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "LICENSES/COMMERCIAL-TERMS.md",
+          "source_refs": [
+            "LICENSES/COMMERCIAL-TERMS.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "standardize",
+            "reason": "Standardize terms while preserving case-by-case refusal and reciprocity review.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Real-world uptake unknown.",
+          "value_visibility": "High for commercial users and maintainer sustainability"
+        },
+        {
+          "cost_bearers": [
+            "sponsors",
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from SUSTAINABILITY.md for this map only.",
+            "not_natural_law": true,
+            "stage": "GENESIS"
+          },
+          "id": "sponsorship",
+          "label": "Sponsorship and sustainability funding",
+          "maintainer": "maintainer",
+          "maturity": "GENESIS",
+          "object_ref": "SUSTAINABILITY.md",
+          "source_refs": [
+            "SUSTAINABILITY.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "co_build",
+            "reason": "Seek support without governance capture.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Funding is not guaranteed and must not buy truth claims.",
+          "value_visibility": "High for maintainer life and project continuity"
+        },
+        {
+          "cost_bearers": [
+            "maintainer",
+            "platform"
+          ],
+          "evolution_record": {
+            "basis": "Projected from README.md for this map only.",
+            "not_natural_law": true,
+            "stage": "COMMODITY_UTILITY"
+          },
+          "id": "storage_network",
+          "label": "Storage, network, and repository hosting",
+          "maintainer": "maintainer",
+          "maturity": "COMMODITY_UTILITY",
+          "object_ref": "GitHub repository",
+          "source_refs": [
+            "README.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "rent",
+            "reason": "Use commodity hosting while keeping exportable repository state.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Platform terms and availability can change.",
+          "value_visibility": "Medium-high for access and collaboration"
+        }
+      ],
+      "observer_or_decision_owner": "maintainer deciding what to keep, rent, automate, standardize, or fund",
+      "projections": [
+        {
+          "deterministic": true,
+          "id": "projection-sustainability-static-v1",
+          "input_sources": [
+            "SUSTAINABILITY.md",
+            "LICENSES/COMMERCIAL-TERMS.md",
+            ".github/workflows",
+            "tools/foundation"
+          ],
+          "projection_rule": "Map declared cost-bearing surfaces and reusable infrastructure into Wardley-style evolution stages with sourcing decisions.",
+          "reviewer": "Codex main session",
+          "uncertainty": "Does not predict actual sponsor or commercial behavior."
+        }
+      ],
+      "unmapped_residue": [
+        {
+          "description": "Actual willingness of sponsors or commercial users to cover costs.",
+          "id": "residue-real-funding-response",
+          "next_condition": "Record signed sponsorship, commercial license, or refusal evidence.",
+          "reason": "Requires real-world response beyond repository artifacts."
+        }
+      ],
+      "update_triggers": [
+        "license scope change",
+        "sponsorship policy change",
+        "CI cost change",
+        "model access change",
+        "Charter Gate change"
+      ],
+      "value_recipient_or_affected_subject": "maintainer, noncommercial users, commercial users, and affected subjects"
+    },
+    {
+      "as_of_commit": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
+      "claim_ceiling": "derived_navigation_view",
+      "data_sources": [
+        "ARCHITECTURE.md",
+        "data/foundation/project-state.json",
+        "docs/architecture/*.md",
+        "function-os-candidate/v0.2"
+      ],
+      "decision_question": "Which architecture surfaces constrain evidence, execution, validation, and publication?",
+      "edges": [
+        {
+          "edge_type": "control_flow",
+          "from": "charter_gate",
+          "id": "e_charter_l0",
+          "not_causality": true,
+          "source_refs": [
+            "ARCHITECTURE.md"
+          ],
+          "to": "l0_sources",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "evidence_flow",
+          "from": "l0_sources",
+          "id": "e_l0_l1",
+          "not_causality": true,
+          "source_refs": [
+            "ARCHITECTURE.md"
+          ],
+          "to": "l1_claims",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "information_flow",
+          "from": "l1_claims",
+          "id": "e_l1_l2",
+          "not_causality": true,
+          "source_refs": [
+            "ARCHITECTURE.md"
+          ],
+          "to": "l2_objects",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "dependency",
+          "from": "l2_objects",
+          "id": "e_l2_l3",
+          "not_causality": true,
+          "source_refs": [
+            "ARCHITECTURE.md"
+          ],
+          "to": "l3_arguments",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "dependency",
+          "from": "l3_arguments",
+          "id": "e_l3_l4",
+          "not_causality": true,
+          "source_refs": [
+            "ARCHITECTURE.md"
+          ],
+          "to": "l4_proofs",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "evidence_flow",
+          "from": "l4_proofs",
+          "id": "e_l4_l5",
+          "not_causality": true,
+          "source_refs": [
+            "ARCHITECTURE.md"
+          ],
+          "to": "l5_validation",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "control_flow",
+          "from": "l5_validation",
+          "id": "e_l5_l6",
+          "not_causality": true,
+          "source_refs": [
+            "ARCHITECTURE.md"
+          ],
+          "to": "l6_publication",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "evidence_flow",
+          "from": "function_os",
+          "id": "e_function_validation",
+          "not_causality": true,
+          "source_refs": [
+            ".github/workflows/function-os-ci.yml"
+          ],
+          "to": "l5_validation",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "control_flow",
+          "from": "q12_dual_loop",
+          "id": "e_q12_execution",
+          "not_causality": true,
+          "source_refs": [
+            "ARCHITECTURE.md"
+          ],
+          "to": "function_os",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "control_flow",
+          "from": "q13_controls",
+          "id": "e_q13_q12",
+          "not_causality": true,
+          "source_refs": [
+            "ARCHITECTURE.md"
+          ],
+          "to": "q12_dual_loop",
+          "uncertainty": "Derived from declared architecture relation."
+        }
+      ],
+      "generation_method": "Deterministic projection from declared architecture sections and known overlay files.",
+      "id": "map-epistemic-architecture",
+      "layout_semantics": {
+        "visual_boundary": "visual adjacency does not imply isomorphism or causality",
+        "x_axis": "layer or overlay sequence from source to publication",
+        "y_axis": "normative/control/evidence dependency, not visual proof"
+      },
+      "map_type": "STRUCTURAL_LANDSCAPE",
+      "nodes": [
+        {
+          "cost_bearers": [
+            "maintainer",
+            "affected subjects"
+          ],
+          "evolution_record": {
+            "basis": "Projected from docs/governance/life-community-value-charter.md for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "charter_gate",
+          "label": "Charter Gate",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "docs/governance/life-community-value-charter.md",
+          "source_refs": [
+            "docs/governance/life-community-value-charter.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "preserve",
+            "reason": "Must remain project-specific and auditable.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Normative boundary, not factual proof.",
+          "value_visibility": "High for affected subjects and maintainer"
+        },
+        {
+          "cost_bearers": [
+            "maintainer",
+            "reviewers"
+          ],
+          "evolution_record": {
+            "basis": "Projected from ARCHITECTURE.md for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "l0_sources",
+          "label": "L0 Sources and Evidence",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "ARCHITECTURE.md#L0",
+          "source_refs": [
+            "ARCHITECTURE.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "preserve",
+            "reason": "Source separation is core to non-overclaiming.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Coverage remains incomplete for some content.",
+          "value_visibility": "High for evidence traceability"
+        },
+        {
+          "cost_bearers": [
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from data/foundation/claims/claims.jsonl for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "l1_claims",
+          "label": "L1 Controlled Claims",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "data/foundation/claims/claims.jsonl",
+          "source_refs": [
+            "data/foundation/claims/claims.jsonl"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "automate",
+            "reason": "Validation can be automated while judgment remains retained.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Claim status axes must not auto-upgrade.",
+          "value_visibility": "High for claim discipline"
+        },
+        {
+          "cost_bearers": [
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from data/foundation/formal-objects/objects.jsonl for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "l2_objects",
+          "label": "L2 Formal Objects",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "data/foundation/formal-objects/objects.jsonl",
+          "source_refs": [
+            "data/foundation/formal-objects/objects.jsonl"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "automate",
+            "reason": "Schema validation can reduce manual burden.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Object typing depends on source adjudication.",
+          "value_visibility": "Medium-high for formalization"
+        },
+        {
+          "cost_bearers": [
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from data/foundation/arguments/arguments.jsonl for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "l3_arguments",
+          "label": "L3 Logical Arguments",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "data/foundation/arguments/arguments.jsonl",
+          "source_refs": [
+            "data/foundation/arguments/arguments.jsonl"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "preserve",
+            "reason": "Argument separation should not be outsourced as truth judgment.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Argument quality remains source-dependent.",
+          "value_visibility": "Medium for inferential trace"
+        },
+        {
+          "cost_bearers": [
+            "maintainer",
+            "CI"
+          ],
+          "evolution_record": {
+            "basis": "Projected from formal/lean/Foundation.lean for this map only.",
+            "not_natural_law": true,
+            "stage": "PRODUCT_RENTAL"
+          },
+          "id": "l4_proofs",
+          "label": "L4 Proofs and Models",
+          "maintainer": "maintainer",
+          "maturity": "PRODUCT_RENTAL",
+          "object_ref": "formal/lean/Foundation.lean",
+          "source_refs": [
+            "formal/lean/Foundation.lean"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "rent",
+            "reason": "Use public proof tooling while retaining proof-scope claims.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Only scoped proofs are covered.",
+          "value_visibility": "Medium for machine-checkable fragments"
+        },
+        {
+          "cost_bearers": [
+            "maintainer",
+            "CI"
+          ],
+          "evolution_record": {
+            "basis": "Projected from tools/foundation/validate_foundation.py for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "l5_validation",
+          "label": "L5 Validation",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "tools/foundation/validate_foundation.py",
+          "source_refs": [
+            "tools/foundation/validate_foundation.py"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "automate",
+            "reason": "Automation reduces repeated validation cost.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "CI pass is workflow evidence only.",
+          "value_visibility": "High for safe publication"
+        },
+        {
+          "cost_bearers": [
+            "maintainer",
+            "readers"
+          ],
+          "evolution_record": {
+            "basis": "Projected from ARCHITECTURE.md for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "l6_publication",
+          "label": "L6 Publication",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "README.md / reports",
+          "source_refs": [
+            "ARCHITECTURE.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "preserve",
+            "reason": "Narrative claims need retained judgment.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Publication cannot create lower-layer truth.",
+          "value_visibility": "High for readers"
+        },
+        {
+          "cost_bearers": [
+            "maintainer",
+            "CI"
+          ],
+          "evolution_record": {
+            "basis": "Projected from function-os-candidate/v0.2 for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "function_os",
+          "label": "Function OS",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "function-os-candidate/v0.2",
+          "source_refs": [
+            "function-os-candidate/v0.2"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "automate",
+            "reason": "Tests and packaging can be automated.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Execution capability is not worthiness.",
+          "value_visibility": "Medium-high for execution"
+        },
+        {
+          "cost_bearers": [
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from docs/architecture/effectual-action-plane.md for this map only.",
+            "not_natural_law": true,
+            "stage": "GENESIS"
+          },
+          "id": "q12_dual_loop",
+          "label": "Q12 Dual Loop",
+          "maintainer": "maintainer",
+          "maturity": "GENESIS",
+          "object_ref": "docs/architecture/effectual-action-plane.md",
+          "source_refs": [
+            "docs/architecture/effectual-action-plane.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "preserve",
+            "reason": "Keep as reviewable overlay.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Real future effect is pending.",
+          "value_visibility": "Medium for action and interpretation discipline"
+        },
+        {
+          "cost_bearers": [
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from docs/architecture/attention-attractor-control-plane.md for this map only.",
+            "not_natural_law": true,
+            "stage": "GENESIS"
+          },
+          "id": "q13_controls",
+          "label": "Q13 Attention/Distribution/Compression Controls",
+          "maintainer": "maintainer",
+          "maturity": "GENESIS",
+          "object_ref": "docs/architecture/attention-attractor-control-plane.md",
+          "source_refs": [
+            "docs/architecture/attention-attractor-control-plane.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "preserve",
+            "reason": "Keep as Draft overlay until review.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Real future effect is pending.",
+          "value_visibility": "Medium for avoiding loops and pseudo-compression"
+        }
+      ],
+      "observer_or_decision_owner": "maintainer and reviewer deciding how claims can move toward publication",
+      "projections": [
+        {
+          "deterministic": true,
+          "id": "projection-architecture-static-v1",
+          "input_sources": [
+            "ARCHITECTURE.md",
+            "data/foundation/project-state.json",
+            "docs/architecture/*.md"
+          ],
+          "projection_rule": "Map declared layers and overlays into nodes; map stated arrows into typed edges; preserve source refs and uncertainty.",
+          "reviewer": "Codex main session",
+          "uncertainty": "Does not infer hidden dependencies beyond declared architecture."
+        }
+      ],
+      "unmapped_residue": [
+        {
+          "description": "Whether Q12/Q13 controls improve future reasoning behavior.",
+          "id": "residue-architecture-real-world-effect",
+          "next_condition": "Compare future PRs and reviews after controls are used.",
+          "reason": "Requires later use and external feedback."
+        }
+      ],
+      "update_triggers": [
+        "architecture file changes",
+        "new overlay",
+        "validator or CI boundary change",
+        "Charter Gate change"
+      ],
+      "value_recipient_or_affected_subject": "readers, maintainers, and subjects affected by claims"
+    },
+    {
+      "as_of_commit": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
+      "claim_ceiling": "derived_operations_navigation_view",
+      "data_sources": [
+        "agent-commands",
+        "AI-HANDOFF.md",
+        "tools",
+        ".github/workflows",
+        "GitHub PRs",
+        "agent-results"
+      ],
+      "decision_question": "Which delivery steps should remain human/accountable, which can be automated, and which are rented infrastructure?",
+      "edges": [
+        {
+          "edge_type": "information_flow",
+          "from": "user_request",
+          "id": "ops_user_command",
+          "not_causality": true,
+          "source_refs": [
+            "agent-commands"
+          ],
+          "to": "command_bus",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "control_flow",
+          "from": "command_bus",
+          "id": "ops_command_execution",
+          "not_causality": true,
+          "source_refs": [
+            "AI-HANDOFF.md"
+          ],
+          "to": "codex_execution",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "information_flow",
+          "from": "codex_execution",
+          "id": "ops_execution_artifacts",
+          "not_causality": true,
+          "source_refs": [
+            "git commits"
+          ],
+          "to": "repo_artifacts",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "evidence_flow",
+          "from": "repo_artifacts",
+          "id": "ops_artifacts_local",
+          "not_causality": true,
+          "source_refs": [
+            "tools"
+          ],
+          "to": "local_validation",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "evidence_flow",
+          "from": "repo_artifacts",
+          "id": "ops_artifacts_ci",
+          "not_causality": true,
+          "source_refs": [
+            ".github/workflows"
+          ],
+          "to": "remote_ci",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "control_flow",
+          "from": "repo_artifacts",
+          "id": "ops_artifacts_pr",
+          "not_causality": true,
+          "source_refs": [
+            "GitHub PR"
+          ],
+          "to": "draft_pr",
+          "uncertainty": "Derived from declared architecture relation."
+        },
+        {
+          "edge_type": "information_flow",
+          "from": "draft_pr",
+          "id": "ops_pr_receipt",
+          "not_causality": true,
+          "source_refs": [
+            "agent-results"
+          ],
+          "to": "receipt",
+          "uncertainty": "Derived from declared architecture relation."
+        }
+      ],
+      "generation_method": "Deterministic static projection from observed delivery workflow surfaces.",
+      "id": "map-agent-delivery-operations",
+      "layout_semantics": {
+        "visual_boundary": "workflow proximity is not evidence independence",
+        "x_axis": "evolution stage of delivery component",
+        "y_axis": "visibility to successful audited delivery"
+      },
+      "map_type": "WARDLEY_STYLE_EVOLUTION",
+      "nodes": [
+        {
+          "cost_bearers": [
+            "user",
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from agent-commands for this map only.",
+            "not_natural_law": true,
+            "stage": "GENESIS"
+          },
+          "id": "user_request",
+          "label": "User request",
+          "maintainer": "user and maintainer",
+          "maturity": "GENESIS",
+          "object_ref": "conversation / 1111 command",
+          "source_refs": [
+            "agent-commands"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "preserve",
+            "reason": "Intent interpretation remains human/accountable.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Conversation context can be incomplete.",
+          "value_visibility": "Highest for user intent"
+        },
+        {
+          "cost_bearers": [
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from agent-commands for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "command_bus",
+          "label": "1111 command bus",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "Arvin-liu/1111",
+          "source_refs": [
+            "agent-commands"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "preserve",
+            "reason": "Keep lightweight and auditable.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Command bus is metadata/control, not proof.",
+          "value_visibility": "High for cross-session continuity"
+        },
+        {
+          "cost_bearers": [
+            "maintainer",
+            "AI quota"
+          ],
+          "evolution_record": {
+            "basis": "Projected from AI-HANDOFF.md for this map only.",
+            "not_natural_law": true,
+            "stage": "PRODUCT_RENTAL"
+          },
+          "id": "codex_execution",
+          "label": "Codex execution session",
+          "maintainer": "maintainer",
+          "maturity": "PRODUCT_RENTAL",
+          "object_ref": "current branch work",
+          "source_refs": [
+            "AI-HANDOFF.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "rent",
+            "reason": "Rent execution capacity while retaining verification.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Model output is not independent evidence.",
+          "value_visibility": "High for implementation throughput"
+        },
+        {
+          "cost_bearers": [
+            "maintainer",
+            "reviewers"
+          ],
+          "evolution_record": {
+            "basis": "Projected from data/atlas/121q14-ledger.jsonl for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "repo_artifacts",
+          "label": "Repository artifacts",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "git commits",
+          "source_refs": [
+            "data/atlas/121q14-ledger.jsonl"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "preserve",
+            "reason": "Commit history remains audit surface.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Artifacts can still overclaim if unvalidated.",
+          "value_visibility": "High for reviewable work"
+        },
+        {
+          "cost_bearers": [
+            "maintainer",
+            "local compute"
+          ],
+          "evolution_record": {
+            "basis": "Projected from tools/validate_attention_distribution_compression.py for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "local_validation",
+          "label": "Local validation",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "tools and tests",
+          "source_refs": [
+            "tools/validate_attention_distribution_compression.py"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "automate",
+            "reason": "Automate checks while preserving failure reports.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Local pass can differ from CI.",
+          "value_visibility": "High before push"
+        },
+        {
+          "cost_bearers": [
+            "GitHub Actions",
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from .github/workflows for this map only.",
+            "not_natural_law": true,
+            "stage": "COMMODITY_UTILITY"
+          },
+          "id": "remote_ci",
+          "label": "Remote CI",
+          "maintainer": "maintainer",
+          "maturity": "COMMODITY_UTILITY",
+          "object_ref": "GitHub Actions",
+          "source_refs": [
+            ".github/workflows"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "rent",
+            "reason": "Use platform CI as workflow evidence.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Workflow pass is not truth.",
+          "value_visibility": "High for reproducibility"
+        },
+        {
+          "cost_bearers": [
+            "reviewers",
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from reports/atlas/121Q14-baseline-latent-map-audit.md for this map only.",
+            "not_natural_law": true,
+            "stage": "COMMODITY_UTILITY"
+          },
+          "id": "draft_pr",
+          "label": "Draft PR",
+          "maintainer": "maintainer",
+          "maturity": "COMMODITY_UTILITY",
+          "object_ref": "GitHub PR",
+          "source_refs": [
+            "reports/atlas/121Q14-baseline-latent-map-audit.md"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "standardize",
+            "reason": "Keep draft until GPT verification.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Mergeability is not acceptance.",
+          "value_visibility": "High for external review"
+        },
+        {
+          "cost_bearers": [
+            "maintainer"
+          ],
+          "evolution_record": {
+            "basis": "Projected from agent-results for this map only.",
+            "not_natural_law": true,
+            "stage": "CUSTOM_BUILT"
+          },
+          "id": "receipt",
+          "label": "1111 result receipt",
+          "maintainer": "maintainer",
+          "maturity": "CUSTOM_BUILT",
+          "object_ref": "agent-results",
+          "source_refs": [
+            "agent-results"
+          ],
+          "sourcing_decision": {
+            "affordable_loss": "Decision must remain reversible or bounded unless a later map raises the threshold.",
+            "charter_constraint": "Outsourcing or automation cannot transfer value judgment, privacy risk, or Charter Gate duty.",
+            "decision": "preserve",
+            "reason": "Write concise independent closeout.",
+            "responsibility_retained": true
+          },
+          "uncertainty": "Receipt records facts but does not certify legal or empirical truth.",
+          "value_visibility": "High for cross-thread trace"
+        }
+      ],
+      "observer_or_decision_owner": "maintainer coordinating AI execution, validation, PR review, and command-bus receipt",
+      "projections": [
+        {
+          "deterministic": true,
+          "id": "projection-agent-ops-static-v1",
+          "input_sources": [
+            "agent-commands",
+            "AI-HANDOFF.md",
+            "tools",
+            ".github/workflows"
+          ],
+          "projection_rule": "Map delivery workflow steps into nodes and information/control/evidence edges.",
+          "reviewer": "Codex main session",
+          "uncertainty": "Does not measure actual human cognitive load or future agent reliability."
+        }
+      ],
+      "unmapped_residue": [
+        {
+          "description": "Actual quality and independence of future human/GPT review.",
+          "id": "residue-human-review-quality",
+          "next_condition": "Compare review findings against PR contents and CI outcomes.",
+          "reason": "Requires later review behavior, not current repository topology."
+        }
+      ],
+      "update_triggers": [
+        "new command-bus protocol",
+        "new CI workflow",
+        "new validation gate",
+        "review process change"
+      ],
+      "value_recipient_or_affected_subject": "user, maintainer, reviewers, and future agents"
+    }
+  ]
+}

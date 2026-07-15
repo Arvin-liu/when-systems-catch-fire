@@ -1,0 +1,20 @@
+{
+  "schema": "ignition.architecture.affordable_loss_envelope.v1",
+  "current_state_ref": "current-state-2026-07-15@8189dde91d0adbb7957c8aa642bc76d14afe6534",
+  "principle": "An action may be selected for exploration only when its expected loss remains explicitly affordable and bounded by stop, pivot, scale, and rollback conditions.",
+  "loss_dimensions": {
+    "time": "bounded by one macro step or explicitly recorded extension",
+    "money": "no new paid dependency, subscription, or commercial commitment without separate approval",
+    "ai_quota": "bounded by targeted validation and evidence generation rather than unbounded exploration",
+    "reputation": "avoid public claims beyond claim ceiling; keep Draft PR status until verified",
+    "maintenance_load": "new objects must include validator coverage or a clear pending validation status",
+    "opportunity_cost": "prefer actions that clarify next state over broad explanatory expansions",
+    "sleep_or_attention": "do not require continuous human monitoring for routine CI waits"
+  },
+  "scale_requires": [
+    "Charter Gate pass",
+    "validator pass or explicit validation gap",
+    "mechanism claim ceiling recorded",
+    "rollback or downgrade path recorded"
+  ]
+}

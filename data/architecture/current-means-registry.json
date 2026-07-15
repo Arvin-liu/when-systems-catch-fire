@@ -1,0 +1,37 @@
+{
+  "schema": "ignition.architecture.current_means_registry.v1",
+  "current_state_ref": "current-state-2026-07-15@8189dde91d0adbb7957c8aa642bc76d14afe6534",
+  "who_we_are": [
+    "maintainer-controlled source-available repository with layered licensing",
+    "evidence-traceable mechanism modelling project",
+    "AI-assisted but validation-gated research and software workflow"
+  ],
+  "what_we_know": [
+    "L0-L6 architecture separates source, claim, formal object, argument, proof, validation, and publication",
+    "Charter Gate is the highest normative boundary",
+    "Function OS is an execution capability, not a worthiness judge",
+    "current gaps include next-action choice under uncertainty and post-result claim ceiling"
+  ],
+  "whom_we_can_reach": [
+    "maintainer",
+    "AI collaborator sessions",
+    "GitHub reviewers and external feedback providers",
+    "future commercial or nonprofit users through license and sustainability surfaces"
+  ],
+  "available_assets": [
+    "main branch at 8189dde91d0adbb7957c8aa642bc76d14afe6534",
+    "Foundation validation workflow",
+    "Function OS CI workflow",
+    "data/foundation registries",
+    "docs/project-current-state.md",
+    "value charter and Charter Gate",
+    "layered license files",
+    "1111 command bus"
+  ],
+  "resource_constraints": [
+    "maintainer time is finite",
+    "AI quota and CI minutes are costs",
+    "reviewer attention is scarce",
+    "future maintenance load must not be hidden"
+  ]
+}

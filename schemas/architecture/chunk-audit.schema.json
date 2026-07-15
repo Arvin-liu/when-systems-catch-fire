@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/chunk-audit.schema.json",
+  "title": "Chunk Audit",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "term",
+    "candidate_use",
+    "expandability",
+    "generativity",
+    "compression_utility",
+    "inquiry_continuation",
+    "failure_label",
+    "canonical_publication_status",
+    "claim_boundary"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^CHUNK-[A-Z0-9-]+$" },
+    "term": { "type": "string", "minLength": 1 },
+    "candidate_use": { "type": "string", "minLength": 1 },
+    "expandability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "sources", "variables", "paths", "conditions", "failure_boundaries"],
+      "properties": {
+        "status": { "enum": ["PASS", "PARTIAL", "FAIL"] },
+        "sources": { "type": "array", "items": { "type": "string" } },
+        "variables": { "type": "array", "items": { "type": "string" } },
+        "paths": { "type": "array", "items": { "type": "string" } },
+        "conditions": { "type": "array", "items": { "type": "string" } },
+        "failure_boundaries": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "generativity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "new_questions_or_tests"],
+      "properties": {
+        "status": { "enum": ["PASS", "PARTIAL", "FAIL"] },
+        "new_questions_or_tests": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "compression_utility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reduced_burden", "restorable_details"],
+      "properties": {
+        "status": { "enum": ["PASS", "PARTIAL", "FAIL"] },
+        "reduced_burden": { "type": "string", "minLength": 1 },
+        "restorable_details": { "type": "boolean" }
+      }
+    },
+    "inquiry_continuation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "next_questions"],
+      "properties": {
+        "status": { "enum": ["PASS", "PARTIAL", "FAIL"] },
+        "next_questions": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "failure_label": {
+      "enum": ["NONE", "LABEL_ONLY", "PSEUDO_CHUNK", "MEGA_ATTRACTOR", "NON_GENERATIVE_COMPRESSION"]
+    },
+    "canonical_publication_status": { "enum": ["ALLOW_WITH_BOUNDARY", "PENDING", "BLOCK"] },
+    "claim_boundary": { "type": "string", "minLength": 1 }
+  }
+}

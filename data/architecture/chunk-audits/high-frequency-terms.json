@@ -1,0 +1,150 @@
+{
+  "schema": "ignition.architecture.chunk_audit_set.v1",
+  "audits": [
+    {
+      "id": "CHUNK-EMERGENCE",
+      "term": "涌现 / emergence",
+      "candidate_use": "Describe current project state as arising from interactions among questions, artifacts, feedback, and corrections.",
+      "expandability": {
+        "status": "PASS",
+        "sources": ["docs/project-current-state.md", "121Q10 current-state correction"],
+        "variables": ["questions", "repository artifacts", "external feedback", "validation results", "known gaps"],
+        "paths": ["problem -> artifact -> validation -> feedback -> correction -> updated state"],
+        "conditions": ["must be tied to actual artifacts and validation state"],
+        "failure_boundaries": ["cannot replace evidence", "cannot define fixed identity"]
+      },
+      "generativity": {
+        "status": "PASS",
+        "new_questions_or_tests": ["Which new artifact changed the current state?", "Which feedback changed the next state rather than wording?"]
+      },
+      "compression_utility": {
+        "status": "PASS",
+        "reduced_burden": "Avoids pretending the project has a fixed essence while preserving artifact-based state updates.",
+        "restorable_details": true
+      },
+      "inquiry_continuation": {
+        "status": "PASS",
+        "next_questions": ["What exactly changed in this iteration?", "What remains outside the current frame?"]
+      },
+      "failure_label": "NONE",
+      "canonical_publication_status": "ALLOW_WITH_BOUNDARY",
+      "claim_boundary": "Current-state description only; not a metaphysical proof."
+    },
+    {
+      "id": "CHUNK-CONVERGENCE",
+      "term": "收敛 / convergence",
+      "candidate_use": "Describe narrowing of candidates, evidence, or workflow state.",
+      "expandability": {
+        "status": "PARTIAL",
+        "sources": ["validation reports", "candidate adjudication records"],
+        "variables": ["candidate set", "claim ceiling", "evidence boundary", "test result"],
+        "paths": ["candidate comparison -> discriminating evidence -> narrowed boundary"],
+        "conditions": ["must state what converged and under which metric"],
+        "failure_boundaries": ["workflow closure is not truth", "agreement is not evidence convergence"]
+      },
+      "generativity": {
+        "status": "PASS",
+        "new_questions_or_tests": ["Which alternatives were eliminated?", "Did claim ceiling change?"]
+      },
+      "compression_utility": {
+        "status": "PARTIAL",
+        "reduced_burden": "Useful only when the convergence dimension is named.",
+        "restorable_details": true
+      },
+      "inquiry_continuation": {
+        "status": "PASS",
+        "next_questions": ["What did not converge?", "Which residue remains?"]
+      },
+      "failure_label": "NONE",
+      "canonical_publication_status": "ALLOW_WITH_BOUNDARY",
+      "claim_boundary": "Must bind dimension, metric, evidence, and residual alternatives."
+    },
+    {
+      "id": "CHUNK-ISOMORPHISM",
+      "term": "同构 / isomorphism",
+      "candidate_use": "Describe strict structure-preserving correspondence.",
+      "expandability": {
+        "status": "PARTIAL",
+        "sources": ["formal mapping records when available"],
+        "variables": ["domain", "codomain", "mapping", "inverse", "operation preservation"],
+        "paths": ["define objects -> define mapping -> prove preservation and inverse"],
+        "conditions": ["formal criteria must be present"],
+        "failure_boundaries": ["similarity, analogy, or useful mapping is not enough"]
+      },
+      "generativity": {
+        "status": "PASS",
+        "new_questions_or_tests": ["Can an inverse be stated?", "Which operation is preserved?", "What counterexample breaks preservation?"]
+      },
+      "compression_utility": {
+        "status": "PARTIAL",
+        "reduced_burden": "Only useful when formal criteria are supplied.",
+        "restorable_details": true
+      },
+      "inquiry_continuation": {
+        "status": "PASS",
+        "next_questions": ["Should this be downgraded to analogy or mapping?"]
+      },
+      "failure_label": "NONE",
+      "canonical_publication_status": "PENDING",
+      "claim_boundary": "Do not use for loose resemblance."
+    },
+    {
+      "id": "CHUNK-META-PROTOCOL",
+      "term": "元协议 / meta-protocol",
+      "candidate_use": "Describe governance, heuristic, or process rules that organize lower-level work.",
+      "expandability": {
+        "status": "PASS",
+        "sources": ["meta-protocol records", "ARCHITECTURE.md"],
+        "variables": ["rule", "scope", "input", "output", "gate", "failure condition"],
+        "paths": ["rule receives state -> constrains action or interpretation -> records output"],
+        "conditions": ["must not be treated as mathematical axiom unless formalized"],
+        "failure_boundaries": ["cannot create proof or empirical evidence by naming a protocol"]
+      },
+      "generativity": {
+        "status": "PASS",
+        "new_questions_or_tests": ["What input state does this protocol accept?", "What output can be validated?"]
+      },
+      "compression_utility": {
+        "status": "PASS",
+        "reduced_burden": "Groups process rules while preserving scope and failure conditions.",
+        "restorable_details": true
+      },
+      "inquiry_continuation": {
+        "status": "PASS",
+        "next_questions": ["Which layer does the protocol constrain?", "Which validator checks it?"]
+      },
+      "failure_label": "NONE",
+      "canonical_publication_status": "ALLOW_WITH_BOUNDARY",
+      "claim_boundary": "Normative, heuristic, or governance protocol unless separately formalized."
+    },
+    {
+      "id": "CHUNK-MECHANISM",
+      "term": "机制 / mechanism",
+      "candidate_use": "Describe a path by which variables or components change a result under conditions.",
+      "expandability": {
+        "status": "PASS",
+        "sources": ["docs/architecture/mechanism-adjudication-plane.md"],
+        "variables": ["components", "directionality", "mediators", "moderators", "boundary conditions", "alternative mechanisms"],
+        "paths": ["change in component -> mediated path -> observed result"],
+        "conditions": ["requires alternatives and distinguishing tests for stronger claims"],
+        "failure_boundaries": ["plausible mechanism is not identified causality"]
+      },
+      "generativity": {
+        "status": "PASS",
+        "new_questions_or_tests": ["Which alternative mechanism explains the same observation?", "What test distinguishes paths?"]
+      },
+      "compression_utility": {
+        "status": "PASS",
+        "reduced_burden": "Replaces value-label debate with variables, paths, and tests.",
+        "restorable_details": true
+      },
+      "inquiry_continuation": {
+        "status": "PASS",
+        "next_questions": ["What would falsify this path?", "What boundary changes the outcome?"]
+      },
+      "failure_label": "NONE",
+      "canonical_publication_status": "ALLOW_WITH_BOUNDARY",
+      "claim_boundary": "Mechanism map does not by itself establish causality."
+    }
+  ]
+}

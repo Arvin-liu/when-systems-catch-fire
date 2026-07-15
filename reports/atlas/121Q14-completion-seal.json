@@ -1,0 +1,18 @@
+{
+  "schema": "ignition.atlas.121q14.completion_seal.v1",
+  "status": "READY_AS_DYNAMIC_ATLAS_CANDIDATE",
+  "draft_pr": 49,
+  "stacked_on_pr": 48,
+  "base_head": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
+  "macro_steps": 4,
+  "truth_layer_added": false,
+  "second_canonical_truth_created": false,
+  "matrices_or_registries_replaced": false,
+  "permanent_total_map_created": false,
+  "psi0_modified": false,
+  "project_state_085_modified": false,
+  "legacy_tables_modified": false,
+  "historical_evidence_cards_modified": false,
+  "validator": "tools/validate_ignition_atlas.py",
+  "final_claim_ceiling": "schema_validated_pending_gpt_review"
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/calibration-record.schema.json",
+  "title": "Calibration Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "claim",
+    "stance_blind_review",
+    "calibration_sources",
+    "positive_claim_bindings",
+    "strongest_residual_countermechanism",
+    "non_sycophancy_status"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^CAL-[A-Z0-9-]+$" },
+    "claim": { "type": "string", "minLength": 1 },
+    "stance_blind_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewer_input", "separated_context", "not_deception"],
+      "properties": {
+        "reviewer_input": {
+          "type": "array",
+          "items": { "enum": ["artifact", "claim", "evidence", "mechanism_map", "failure_conditions"] },
+          "minItems": 5,
+          "uniqueItems": true
+        },
+        "separated_context": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "not_deception": { "type": "boolean", "const": true }
+      }
+    },
+    "calibration_sources": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "external_source",
+        "repository_artifact",
+        "executable_test_or_CI",
+        "real_world_response",
+        "human_judgment",
+        "independent_model_or_review"
+      ],
+      "properties": {
+        "external_source": { "type": "array", "items": { "type": "string" } },
+        "repository_artifact": { "type": "array", "items": { "type": "string" } },
+        "executable_test_or_CI": { "type": "array", "items": { "type": "string" } },
+        "real_world_response": { "type": "array", "items": { "type": "string" } },
+        "human_judgment": { "type": "array", "items": { "type": "string" } },
+        "independent_model_or_review": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "positive_claim_bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["word", "object", "criterion", "version", "evidence", "boundary"],
+        "properties": {
+          "word": { "type": "string", "minLength": 1 },
+          "object": { "type": "string", "minLength": 1 },
+          "criterion": { "type": "string", "minLength": 1 },
+          "version": { "type": "string", "minLength": 1 },
+          "evidence": { "type": "string", "minLength": 1 },
+          "boundary": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "strongest_residual_countermechanism": { "type": "string", "minLength": 1 },
+    "non_sycophancy_status": { "enum": ["PASS", "CONSTRAINED_PASS", "FAIL", "PENDING"] }
+  }
+}

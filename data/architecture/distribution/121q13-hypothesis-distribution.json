@@ -1,0 +1,27 @@
+{
+  "schema": "ignition.architecture.hypothesis_distribution.v1",
+  "id": "HDIST-121Q13-CONTROL-SURFACES",
+  "question": "What should 121Q13 add on top of the 121Q12 operation overlay?",
+  "sample_refs": [
+    "SAMPLE-121Q13-AI-001",
+    "SAMPLE-121Q13-ARTIFACT-001"
+  ],
+  "candidates": [
+    {
+      "hypothesis": "Add attention, distribution, and compression controls as a non-truth overlay.",
+      "ranking": 1,
+      "support": ["1111 command scope", "gap matrix", "Q12 surfaces do not include these controls"],
+      "counterevidence": ["new terminology could become pseudo-chunking"],
+      "unresolved": ["future reviewers may find overlap or over-abstraction"]
+    },
+    {
+      "hypothesis": "Fold the controls into Q12 mechanism adjudication.",
+      "ranking": 2,
+      "support": ["mechanism adjudication already manages claim ceilings"],
+      "counterevidence": ["iteration delta and sample distribution are distinct from mechanism maps"],
+      "unresolved": ["could reduce file count but obscure control boundaries"]
+    }
+  ],
+  "sensitivity_summary": "The artifact sample and command both favor a separate overlay, but this is not fact evidence for the overlay's future effectiveness.",
+  "claim_boundary": "Supports action selection for a Draft PR, not a claim that the architecture improves real-world reasoning."
+}

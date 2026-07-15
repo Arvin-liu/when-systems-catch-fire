@@ -1,0 +1,26 @@
+{
+  "schema": "ignition.atlas.map_diff.v1",
+  "id": "mapdiff-q13-to-q14-atlas-overlay",
+  "from_commit": "5297fe6c4c3aa36519b2e0a4d751be43dee09441",
+  "to_commit": "70269290",
+  "map_ref": "ignition-atlas-121q14",
+  "node_changes": [
+    "Added map-maintainer-sustainability-economics nodes for maintainer judgment, AI quota, CI compute, validators, commercial license, sponsorship, and hosting.",
+    "Added map-epistemic-architecture nodes for Charter Gate, L0-L6, Function OS, Q12 dual loop, and Q13 controls.",
+    "Added map-agent-delivery-operations nodes for user request, 1111 command bus, Codex execution, artifacts, validation, CI, Draft PR, and receipt."
+  ],
+  "edge_changes": [
+    "Added typed dependency, information_flow, control_flow, evidence_flow, and value_flow edges.",
+    "Each edge records not_causality=true."
+  ],
+  "boundary_changes": [
+    "Added explicit map boundary: maps are derived navigation views, not canonical truth.",
+    "Added sourcing boundary: outsourcing or renting infrastructure does not transfer Charter Gate responsibility."
+  ],
+  "unmapped_residue_changes": [
+    "Recorded real funding response as unmapped residue.",
+    "Recorded Q12/Q13 real-world effect as unmapped residue.",
+    "Recorded future review quality as unmapped residue."
+  ],
+  "claim_boundary": "MapDiff records repository landscape changes only; it is not proof of fact, mechanism causality, or visual isomorphism."
+}
