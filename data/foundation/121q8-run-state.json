@@ -1,0 +1,22 @@
+{
+  "task_id": "IGNITION-20260715-121Q8",
+  "status": "IN_PROGRESS",
+  "current_step": "000",
+  "branch": "governance/121q8-charter-sustainability-licensing-20260715",
+  "stacked_base_pr": 44,
+  "stacked_base_branch": "ops/121q7-foundation-ci-mail-storm-repair-20260715",
+  "base_head": "da59d909ab74217ef97d2f06b25eed14a24d2850",
+  "base_pr_verified": {
+    "state": "OPEN",
+    "draft": true,
+    "mergeable": "MERGEABLE",
+    "commit_count": 5,
+    "head": "da59d909ab74217ef97d2f06b25eed14a24d2850"
+  },
+  "foundation_known_failure": "tools/foundation/validate_080_adjudications.py",
+  "licenses_effective_change": false,
+  "root_license_replaced": false,
+  "frozen_assets_policy": "Do not modify Psi0 frozen assets, 085 frozen v1, legacy two tables, or historical evidence cards.",
+  "created_at_utc": "2026-07-15T07:46:04Z",
+  "updated_at_utc": "2026-07-15T07:46:04Z"
+}
