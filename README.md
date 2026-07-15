@@ -1,124 +1,123 @@
 # When Systems Catch Fire / 点火
 
-> 这是点火项目的首页。它先回答三个问题：当前长成什么、当前边界是什么、从哪里开始读。
+点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型。它把项目现状、生命共同体价值宪章、Foundation 注册表、Function OS、操作控制 overlay、地图集与现实反馈环放在同一个可审计仓库里；这个说法描述当前提交下已经长成的状态，不是永久定位、最终身份或不可改变的项目本质。
 
-在当前提交下，点火是一套面向跨领域材料的、证据可追溯、对象类型明确、推理过程可检查、结论等级可审计的形式化机制发现与建模系统。这是版本化现状描述，不是永久本质或终局定位；后续证据、反例、执行能力、缺口修复和外部反馈都可能改变下一版现状。它不是现成的统一数学理论、物理理论、万能证明器，也不是纯文学或纯哲学知识库。
+**首要入口：** [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 
-If you prefer English first: at the current commit, this repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system. This is a versioned current-state description, not a permanent project identity.
+## 项目现状
 
-本项目当前采用分层许可：核心可执行软件为 BUSL-1.1（source-available，2030-07-15 起转换为 AGPL-3.0-or-later），原创文档/报告/可版权化策展内容为 CC BY-NC-SA 4.0，价值宪章与一般治理原则为 CC BY-SA 4.0，公开接口与互操作 schema 为 Apache-2.0。详情见 [LICENSE](LICENSE) 与 [LICENSES/README.md](./LICENSES/README.md)。
+当前版本的点火可以帮助读者把复杂材料拆成来源、命题、形式对象、论证、证明、验证、发布和现实反馈，而不是把故事、愿望、测试通过和事实证明混成一团。它同时包含认识架构、Foundation 注册表、Function OS、效果推理与机制判断、注意力与分布控制、地图集、价值宪章和现实循环。
 
-历史 MIT 版本、旧提交、旧副本和既有 fork 的 MIT 权利继续有效，不被追溯撤销。商业生产使用和项目支持入口见 [COMMERCIAL-LICENSING.md](./COMMERCIAL-LICENSING.md) 与 [SUSTAINABILITY.md](./SUSTAINABILITY.md)。
+它不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。当前状态会随证据、反例、执行能力、现实反馈和缺口修正继续变化。
 
-## 先从哪里进入
+[查看完整项目现状](./docs/project-current-state.md)
 
-- 想先看全貌，请读 [人类导航页](./SUMMARY.md)。
-- 想给 AI / Agent 一个机器可读入口，请读 [llms.txt](./llms.txt)。
-- 想让 AI 从零背景接手，请读 [AI-START-HERE.md](./AI-START-HERE.md) 与 [AI-HANDOFF.md](./AI-HANDOFF.md)。
-- 想知道项目当前已经长成什么，请读 [项目现状](./docs/project-current-state.md)。
-- 想知道当前架构与边界，请读现行权威 [ARCHITECTURE.md](./ARCHITECTURE.md)、双地基 [FOUNDATION.md](./FOUNDATION.md) 和 [版本规范](./docs/VERSIONING.md)；[旧架构路径](./docs/PROJECT-ARCHITECTURE.md) 仅为稳定兼容入口。
-- 想知道怎么用，请读 [使用说明](./docs/USAGE.md)。
-- 想提交独立审查、非商业真实使用记录或参与说明，请读 [参与说明](./docs/participate.md)。
-- 想了解维护者可持续性、支持边界或商业许可询问入口，请读 [SUPPORT.md](./SUPPORT.md)。
-- 想按 Agent 方式操作，请读 [Agent 指南](./docs/AGENT-GUIDE.md)。
-- 想理解 Get 笔记如何进入这套系统，请读 [得到大脑协作流程](./docs/GET-BRAIN-WORKFLOW.md)。
+## 生命共同体价值宪章
 
-## 致谢
+> 长瞻一宇同叩月，此心相契共今宵。
+
+价值宪章约束点火判断什么值得做：谁受益、谁承担风险、哪些主体沉默、什么情况下必须拒绝、暂停或回滚。它跨越 L0-L6、Ψ₀、元协议和 Function OS，但它是规范边界，不是经验事实、数学证明、治理批准或项目定位。
+
+[阅读全文：生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
+
+## 用你常用的 AI 读懂点火
+
+普通人无需先读完整仓库。你可以把下面提示词复制给自己常用的 AI，让它先帮你做第一轮阅读。
+
+可选入口：[ChatGPT](https://chatgpt.com/) / [Claude](https://claude.ai/) / [Gemini](https://gemini.google.com/) / [Microsoft Copilot](https://copilot.microsoft.com/) / [Perplexity](https://www.perplexity.ai/) / [Grok](https://grok.com/) / [DeepSeek](https://chat.deepseek.com/) / [Kimi](https://www.kimi.com/) / [豆包](https://www.doubao.com/) / [千问](https://www.qianwen.com/qianwen/)
+
+```text
+请阅读并分析点火项目：
+https://github.com/Arvin-liu/when-systems-catch-fire
+
+我是第一次接触这个项目。请不要只根据项目名称、README 的宣传性句子或作者愿景作结论，也不要把候选能力、测试通过或未来计划当成已经被现实证明的结果。
+
+请优先阅读 README.md、docs/project-current-state.md、docs/governance/life-community-value-charter.md、ARCHITECTURE.md、FOUNDATION.md、function-os-candidate/v0.2/README.md、docs/USAGE.md、AI-START-HERE.md 和 llms.txt，然后用普通人能理解的中文回答：
+
+1. 当前版本的点火是一个什么样的项目？它明确不是什么？请把“当前现状”与“永久定位”区分开。
+2. 它由哪些核心部分组成？项目现状、生命共同体价值宪章、Foundation、Ψ₀、Function OS、效果推理与机制判断、注意力与分布控制、地图集、现实反馈分别负责什么？
+3. 它对普通人的工作、学习、生活判断和长期项目有什么实际作用或方法启发？请给出至少 3 个具体场景，并区分哪些是仓库已实现能力，哪些只是可借鉴的方法。
+4. 一个第一次使用点火的人，应从哪里开始？请给出一个不超过 7 步的最小使用流程。
+5. Function OS 是什么？人类和 AI 应怎样使用它？它能产出什么？它当前的限制、风险、适用边界和不能证明的事情分别是什么？
+6. 项目当前有哪些结论仍只能标记为 candidate、pending、需要外部验证或等待现实反馈？
+7. 点火怎样处理证据、反例、错误、失败、外部反馈和结论降级？
+8. 点火的生命共同体价值宪章怎样约束“什么值得做”，而不冒充事实证据或数学证明？
+9. 请把重要判断链接到仓库中的具体文件；遇到文件冲突时，以当前 main 的正式资产、测试、CI 和明确状态字段为准，不要自动选择更宏大的说法。
+10. 最后请根据我的实际工作、学习或生活，向我提出最多 5 个真正必要的问题，然后给我一份个性化的首次使用建议。
+
+如果你无法访问这个 GitHub 仓库，请直接说明无法读取，不要编造项目内容。
+```
+
+[打开点火项目 GitHub 首页](https://github.com/Arvin-liu/when-systems-catch-fire)
+
+[查看完整 AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
+
+## Function OS
+
+[Function OS](./function-os-candidate/v0.2/README.md) 是点火里的 N1-N9 候选参考实现，用来把边界明确的函数规格转成 artifact、执行结果、trace、验证报告和 registry revision。人类先定义问题、输入、输出、前置条件、后置条件与副作用；AI 可以协助生成候选规格、准备输入、整理 trace 和审计记录，但不能把自己的输出当外部事实证据。
+
+它当前主要适合受限符号函数和规则函数。它能产出 FunctionSpec、中间表示、编译结果、artifact、执行状态、前置/后置条件检查、ExecutionTrace、N7 验证报告、顺序执行计划、registry revision 和 rollback 记录。它不是任意代码平台、现实真理机器或成熟生产 OS；Function OS 负责执行，不决定行动是否值得，也不能把 PASS 自动升级为科学证明。
+
+<details>
+<summary>展开：第一次阅读与 AI 入口</summary>
+
+- [人类导航页](./SUMMARY.md) — 给第一次阅读的人提供更完整的目录式导览。
+- [使用说明](./docs/USAGE.md) — 说明怎样按七层架构处理材料、提交候选和避免误用。
+- [AI 助手使用参考](./docs/ai-assistant-usage-reference.md) — 提供可直接复制给常用 AI 的完整阅读提示词。
+- [AI 冷启动入口](./AI-START-HERE.md) — 告诉零背景 AI 应按什么顺序读仓库、哪些边界不能混。
+- [AI 交接契约](./AI-HANDOFF.md) — 记录跨会话交接时必须重新核验的权威链和红线。
+- [机器入口](./llms.txt) — 给 LLM 和自动化工具读取的简明项目边界与关键路径。
+- [Get 笔记协作流程](./docs/GET-BRAIN-WORKFLOW.md) — 说明 Get 笔记材料如何进入点火协作与审查流程。
+- [版本规范](./docs/VERSIONING.md) — 说明版本、状态、兼容路径和发布边界怎样记录。
+
+</details>
+
+<details>
+<summary>展开：架构、Foundation 与正式资产</summary>
+
+- [现行架构](./ARCHITECTURE.md) — 说明 L0-L6、Foundation、Function OS 和操作 overlay 的当前关系。
+- [Foundation](./FOUNDATION.md) — 说明数学与逻辑双地基、注册表权威和不可越权的证明门禁。
+- [Foundation 文档入口](./docs/foundation/README.md) — 汇总数学、逻辑、状态系统、注册表契约和迁移说明。
+- [项目状态](./data/foundation/project-state.json) — 用机器可读方式记录当前 Foundation 计数和状态。
+- [Registry manifest](./data/foundation/registry-manifest.json) — 列出 Foundation 注册表文件及其作用。
+- [Migration summary](./data/foundation/migration-summary.json) — 记录 legacy 资产迁移覆盖与摘要。
+- [点火地图集](./docs/architecture/ignition-atlas.md) — 说明地图集只是版本化导航投影，不是新的真值来源。
+- [项目架构兼容入口](./docs/PROJECT-ARCHITECTURE.md) — 保留旧读者可进入的兼容路径，但不是当前权威。
+- [统一函数总表历史兼容入口](./统一函数总表/INDEX.md) — 保留旧函数表索引，用于历史追溯和兼容查看。
+- [统一案例总表历史兼容入口](./统一案例总表/INDEX.md) — 保留旧案例表索引，用于历史追溯和兼容查看。
+
+</details>
+
+<details>
+<summary>展开：证据、反例与治理</summary>
+
+- [断言等级](./docs/claim_levels.md) — 说明历史 claim level / assertion grade，避免和架构 L0-L6 混用。
+- [证据机制](./docs/evidence_regime_library.md) — 说明不同证据类型如何支持或限制结论。
+- [反证模板](./docs/falsifiability/README.md) — 提供记录反例、失败条件和可证伪路径的模板。
+- [失败案例库](./case_failures/README.md) — 汇总项目已记录的失败案例与修正入口。
+- [元协议概览](./docs/meta-protocols/README.md) — 说明 12 元协议与组合矩阵的入口和使用边界。
+- [12 元协议](./docs/meta-protocols/12-meta-protocols.md) — 展示当前元协议文本，但它们不是自动成立的数学公理。
+- [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) — 说明项目最高规范边界怎样约束行动价值。
+- [外部治理记录](./docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md) — 记录 12 元协议的规范性审核，不等于事实证明或治理批准。
+
+</details>
+
+<details>
+<summary>展开：参与、可持续性、许可与历史资产</summary>
+
+- [参与说明](./docs/participate.md) — 说明如何提交独立审查、非商业使用记录或支持/商业许可询问。
+- [SUPPORT](./SUPPORT.md) — 说明维护者可持续性、支持边界和反赞助俘获规则。
+- [商业许可](./COMMERCIAL-LICENSING.md) — 说明商业生产使用、互惠协议和当前许可边界。
+- [可持续性政策](./SUSTAINABILITY.md) — 说明 AI 额度、CI、设备、时间和基本生活支持为什么属于项目基础成本。
+- [许可作用域](./LICENSES/README.md) — 说明 BUSL、AGPL 转换、CC、Apache 与历史 MIT 权利的分层关系。
+- [根 LICENSE](./LICENSE) — 记录当前分发版本的根许可说明。
+- [贡献指南](./CONTRIBUTING.md) — 说明贡献前的许可门禁、案例/函数提交方式和行为边界。
+- [现实反馈参与入口](./docs/participate.md) — 说明外部反馈如何进入“缺口发现 -> 结构修正 -> 再验证”链条。
+
+</details>
+
+## 致谢与反馈
 
 感谢提供推理、检索、编程、执行、校验和长程协作能力的 AI 系统；感谢提供问题、材料、验证、纠错、贡献与批评的人类参与者；感谢提供独立审查、红队反馈、规范约束和缺口暴露的外部治理。
 
 外部反馈不是“攻击/防御”叙事的一部分。经验证后，它进入“缺口发现 -> 结构修正 -> 再验证”的系统输入链。上述致谢不表示任何个人、AI 系统或机构对项目全部结论背书，也不声称 AI 具有法律人格或独立 ratification 权限。
-
-## 这套仓库在做什么
-
-点火采用七层正式架构：L0 来源与证据、L1 受控语义命题、L2 形式对象、L3 逻辑论证、L4 数学模型与证明、L5 验证与有效性、L6 解释应用与出版。数学与逻辑互相约束；workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 九个状态轴彼此独立，任何一轴不能自动推出另一轴。
-
-data/foundation/ 下的对象、命题、论证、来源、证据、映射、证明、验证和迁移注册表承担新架构的状态权威。统一函数总表和统一案例总表完整保留为 legacy source / compatibility view：零删除、零重编号、不得独立生长，也不得用案例或工作流收口替代数学证明、逻辑有效性或经验真实性。
-
-## 生命共同体价值宪章
-
-> **长瞻一宇同叩月，此心相契共今宵。**
-
-> 点火项目以生命共同体作为最高层规范性边界，而不是外围宣言。这里的生命共同体不限于人类，也不限于地球；它包括现实存在或未来可能发现、具有生命性、主体性、感受能力、独立利益、自我维持能力或其他足以构成道德地位的存在者及其相互依存系统。
->
-> 价值宪章决定什么值得做；Ψ₀ 与元协议决定怎样合理判断；Function OS 决定怎样运行；验证与现实反馈负责发现错误、修正函数和更新价值冲突。
->
-> 任何局部系统的延续、效率、创新、稳定、商业化或扩张，都不得以对更大生命共同体造成不可逆、不可补偿、非自愿的重大伤害为代价。项目优先维护长期共存、持续再生、多样性、主体尊严、代际责任、风险可逆性、维护者可持续性和未来选择空间。
-
-> 本宪章是项目的规范性出发点，不是经验性证据，不替代数学证明、实验验证、案例核验、外部学科审查或治理批准。
-
-[阅读全文：生命共同体价值宪章](docs/governance/life-community-value-charter.md)
-
-<details>
-<summary>展开十项核心原则</summary>
-
-1. 生命共同体：价值边界不限于人类、地球或当前已知生命。
-2. 反局部掠夺：局部系统不得通过伤害更大共同体实现延续或扩张。
-3. 长期与再生：优先维护长期共存、再生能力和未来选择空间。
-4. 整体不无限压倒个体：共同体利益不能成为无限牺牲个体的理由。
-5. 非人类生命：其他生命与生态系统不应被默认视为纯工具。
-6. 代际责任：当前世代不得无限向未来转嫁代价。
-7. AI 审慎纳入：依据实际主体性、利益和可受损性判断其道德地位。
-8. 预防原则：面对可能不可逆的重大风险，应采取审慎行动。
-9. 纠错、退出与恢复：重大决策应尽量保持可逆、可复核、可退出。
-10. 停止条件：损害更大生命共同体的局部系统必须受限、转型或停止。
-
-</details>
-
-## 阅读路径
-
-### 如果你是第一次接触
-
-先看 [SUMMARY.md](./SUMMARY.md)，再看 [docs/USAGE.md](./docs/USAGE.md)。这两个页面能最快告诉你项目是什么，以及它适合怎么用。
-
-### 如果你是 Agent 或研究助手
-
-先看 [AI-START-HERE.md](./AI-START-HERE.md)、[llms.txt](./llms.txt)、[AI-HANDOFF.md](./AI-HANDOFF.md) 和 [docs/AGENT-GUIDE.md](./docs/AGENT-GUIDE.md)。这些文件会告诉你该先读什么、哪些东西不能混、哪里需要写审计。
-
-### 如果你关心证据和反例
-
-先看 [断言等级说明](./docs/claim_levels.md)、[反证模板](./docs/falsifiability/README.md) 和 [失败案例库](./case_failures/README.md)。
-
-### 如果你关心正式资产
-
-先看 [项目状态](./data/foundation/project-state.json)、[注册表清单](./data/foundation/registry-manifest.json) 和 [迁移摘要](./data/foundation/migration-summary.json)。[统一函数索引表](./统一函数总表/INDEX.md) 与 [统一案例索引表](./统一案例总表/INDEX.md) 是历史兼容入口，不是新状态权威。
-
-## 关键参考
-
-- [现行架构权威](./ARCHITECTURE.md)
-- [数学与逻辑双地基](./FOUNDATION.md)
-- [Foundation 文档入口](./docs/foundation/README.md)
-- [AI 冷启动入口](./AI-START-HERE.md)
-- [AI 交接契约](./AI-HANDOFF.md)
-- [机器注册表状态](./data/foundation/project-state.json)
-- [项目现状](./docs/project-current-state.md)
-- [项目架构兼容入口](./docs/PROJECT-ARCHITECTURE.md)
-- [Get 笔记协作流程](./docs/GET-BRAIN-WORKFLOW.md)
-- [版本规范](./docs/VERSIONING.md)
-- [许可作用域](./LICENSES/README.md)
-- [商业许可](./COMMERCIAL-LICENSING.md) 与 [可持续性政策](./SUSTAINABILITY.md)
-- [断言等级说明](./docs/claim_levels.md)
-- [证据机制说明](./docs/evidence_regime_library.md)
-- [反证模板](./docs/falsifiability/README.md)
-- [失败案例库](./case_failures/README.md)
-- [元协议概览](./docs/meta-protocols/README.md)
-- [12 个元协议](./docs/meta-protocols/12-meta-protocols.md)
-- [生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
-- [12 元协议规范性审核矩阵（外部治理记录）](./docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-- [跨协议红队结果（外部治理记录）](./docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
-- [事实 pending 总表（外部治理记录）](./docs/governance/meta-protocol-reviews/factual-pending-register.md)
-- [64 组合矩阵](./docs/meta-protocols/meta-protocol-64-combination-matrix.md)
-- [22 个书籍验证候选](./docs/meta-protocols/book-validation-22-cases-20260709.md)
-- [元协议迭代说明](./docs/meta-protocols/version-iteration-note-20260709.md)
-- [Ψ₀ 历史表达（legacy source）](./docs/phi_meta_law.md)
-- [两张表的写入规范](./docs/two-tables-entry-writing-standard-20260709.md)
-
-## 说明
-
-- 详细方法、函数定义、案例故事、反例工作流和历史路线图都保留在各自的专门页面里。
-- 这页尽量只做“前言 + 导航”，避免把读者一开始就带进过多防御性说明。
-
-## 元协议规范性审核（外部治理记录，非 canonical 改动）
-
-- 12 个元协议均依据《生命共同体价值宪章》完成条件接受（CONDITIONAL_ACCEPTANCE）的规范性审核，外部治理记录见 [docs/governance/meta-protocol-reviews/](./docs/governance/meta-protocol-reviews/)。
-- 该记录回答“协议应受到什么价值边界约束”，不等于数学形式化、经验验证、独立人类复核、治理批准或正式协议晋级；canonical 协议状态未修改，V2、V3 保留事实度量 pending。
