@@ -1,0 +1,316 @@
+{
+  "contract_type": "CANONICAL_NODE_CONTRACT",
+  "version": "0.2",
+  "source": "121Q3 function-os/node-registry.json (Step 009)",
+  "generated": "2026-07-15T03:10:00+08:00",
+  "nodes": {
+    "N1": {
+      "canonical_name": "FunctionSpec",
+      "canonical_definition": "Formal specification of a function including preconditions, postconditions, effect signature, and uncertainty model",
+      "inputs": "natural_language_description + mathematical_definition",
+      "outputs": "structured_function_specification",
+      "evidence_sources": [
+        "S120-047",
+        "S120-050",
+        "S120-001",
+        "S120-007",
+        "S120-017",
+        "S120-018",
+        "S120-020",
+        "S120-053"
+      ],
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "v0.2_interfaces": {
+        "format": "JSON FunctionSpec",
+        "fields": [
+          "function_id",
+          "spec_version",
+          "name",
+          "domain",
+          "inputs",
+          "outputs",
+          "preconditions",
+          "postconditions",
+          "effects_declared",
+          "created_at"
+        ],
+        "parser": "N1FunctionSpecParser",
+        "semantic_checker": "N1SemanticChecker",
+        "safe_expression": "N1SafeExpressionDSL"
+      }
+    },
+    "N2": {
+      "canonical_name": "Representation",
+      "canonical_definition": "Machine-readable encoding of a function (weights, code, mathematical formula, AST)",
+      "inputs": "FunctionSpec",
+      "outputs": "encoded_function_artifact",
+      "evidence_sources": [
+        "S120-001",
+        "S120-002",
+        "S120-004",
+        "S120-009",
+        "S120-027",
+        "S120-030",
+        "S120-035"
+      ],
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "v0.2_interfaces": {
+        "format": "SymbolicRepresentation",
+        "representations": [
+          "symbolic_ast"
+        ],
+        "fields": [
+          "representation_id",
+          "spec_hash",
+          "canonical_ir",
+          "version",
+          "provenance"
+        ],
+        "encoder": "N2RepresentationEncoder",
+        "validator": "N2RepresentationValidator"
+      }
+    },
+    "N3": {
+      "canonical_name": "Compiler",
+      "canonical_definition": "Transforms FunctionSpec + Representation into executable artifact",
+      "inputs": "FunctionSpec + Representation",
+      "outputs": "compiled_artifact",
+      "evidence_sources": [
+        "S120-001",
+        "S120-007",
+        "S120-009",
+        "S120-017",
+        "S120-018",
+        "S120-020",
+        "S120-021",
+        "S120-022",
+        "S120-075"
+      ],
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "v0.2_interfaces": {
+        "format": "CompiledPayload",
+        "input_sources": [
+          "N1 FunctionSpec",
+          "N2 Representation"
+        ],
+        "output": "compiled_output for N4 packaging",
+        "compiler": "N3SymbolicCompiler",
+        "error_categories": [
+          "DOMAIN_UNSUPPORTED",
+          "TYPE_MISMATCH",
+          "HASH_MISMATCH",
+          "UNDECLARED_SYMBOL"
+        ]
+      }
+    },
+    "N4": {
+      "canonical_name": "Artifact",
+      "canonical_definition": "Compiled, versioned, hashable function artifact",
+      "inputs": "Compiler output",
+      "outputs": "versioned_artifact_with_hash",
+      "evidence_sources": [
+        "S120-001",
+        "S120-009",
+        "S120-035",
+        "S120-039",
+        "S120-045",
+        "S120-046"
+      ],
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "v0.2_interfaces": {
+        "format": "Artifact",
+        "properties": [
+          "immutable",
+          "versioned",
+          "hashable"
+        ],
+        "fields": [
+          "artifact_id",
+          "spec_hash",
+          "representation_hash",
+          "compiler_version",
+          "content_hash",
+          "manifest",
+          "payload",
+          "created_at"
+        ],
+        "packager": "N4ArtifactPackager",
+        "verifier": "N4ArtifactVerifier"
+      }
+    },
+    "N5": {
+      "canonical_name": "Interpreter",
+      "canonical_definition": "Executes function artifact with given inputs",
+      "inputs": "Artifact + input_values",
+      "outputs": "execution_result",
+      "evidence_sources": [
+        "S120-001",
+        "S120-007",
+        "S120-017",
+        "S120-021",
+        "S120-027",
+        "S120-030",
+        "S120-053",
+        "S120-055",
+        "S120-064"
+      ],
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "v0.2_interfaces": {
+        "format": "ExecutionResult",
+        "input": "N4 Artifact + input values",
+        "flow": "precondition_check → execute → postcondition_check → result",
+        "interpreter": "N5Interpreter",
+        "error_types": [
+          "PRECONDITION_FAILED",
+          "TYPE_ERROR",
+          "POSTCONDITION_FAILED",
+          "UNKNOWN_INPUT"
+        ]
+      }
+    },
+    "N6": {
+      "canonical_name": "ExecutionTrace",
+      "canonical_definition": "Detailed log of function execution including inputs, outputs, intermediate states, and timing",
+      "inputs": "Interpreter execution",
+      "outputs": "structured_trace_log",
+      "evidence_sources": [
+        "S120-017",
+        "S120-018",
+        "S120-021",
+        "S120-022",
+        "S120-053",
+        "S120-055",
+        "S120-058",
+        "S120-070"
+      ],
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "v0.2_interfaces": {
+        "format": "ExecutionTrace",
+        "fields": [
+          "trace_id",
+          "artifact_id",
+          "spec_id",
+          "inputs",
+          "outputs",
+          "events",
+          "intermediate_states",
+          "timing",
+          "effects",
+          "errors",
+          "trace_hash"
+        ],
+        "capturer": "N6TraceCapture",
+        "archiver": "N6TraceArchiver",
+        "querier": "N6TraceQuerier"
+      }
+    },
+    "N7": {
+      "canonical_name": "Validator",
+      "canonical_definition": "Validates function artifacts against specifications and evidence",
+      "inputs": "Artifact + FunctionSpec + evidence",
+      "outputs": "validation_result (pass/fail/warning)",
+      "evidence_sources": [
+        "S120-018",
+        "S120-020",
+        "S120-021",
+        "S120-047",
+        "S120-050",
+        "S120-070"
+      ],
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "v0.2_interfaces": {
+        "format": "ValidationResult",
+        "inputs": [
+          "N1 FunctionSpec",
+          "N2 Representation",
+          "N4 Artifact",
+          "N6 ExecutionTrace",
+          "evidence"
+        ],
+        "outputs": [
+          "pass",
+          "fail",
+          "warning"
+        ],
+        "validator": "N7Validator",
+        "feedback": "N7Feedback (to N1 revision suggestion)"
+      }
+    },
+    "N8": {
+      "canonical_name": "ComposerRouter",
+      "canonical_definition": "Composes and routes between multiple functions based on task requirements",
+      "inputs": "task_description + available_functions",
+      "outputs": "execution_plan",
+      "evidence_sources": [
+        "S120-002",
+        "S120-009",
+        "S120-020",
+        "S120-031",
+        "S120-035",
+        "S120-036",
+        "S120-039",
+        "S120-045",
+        "S120-046",
+        "S120-070"
+      ],
+      "previous_readjudication_121": "PARTIALLY_SUPPORTED",
+      "v0.2_interfaces": {
+        "format": "ExecutionPlan | CompositeRepresentation",
+        "inputs": [
+          "task description",
+          "registry candidates (from N9)"
+        ],
+        "capabilities": [
+          "sequential_composition",
+          "conditional_routing",
+          "failure_propagation"
+        ],
+        "router": "N8ComposerRouter",
+        "excluded": [
+          "weight-space algebra",
+          "automatic function discovery"
+        ]
+      }
+    },
+    "N9": {
+      "canonical_name": "VersionedRegistry",
+      "canonical_definition": "Central registry of all function artifacts with version history and provenance",
+      "inputs": "new_artifact + metadata",
+      "outputs": "registered_artifact_with_version",
+      "evidence_sources": [
+        "S120-011",
+        "S120-031",
+        "S120-035",
+        "S120-036",
+        "S120-039",
+        "S120-065",
+        "S120-070"
+      ],
+      "previous_readjudication_121": "STRONGLY_SUPPORTED",
+      "v0.2_interfaces": {
+        "format": "VersionedRegistryRecord",
+        "properties": [
+          "append-only",
+          "versioned",
+          "auditable"
+        ],
+        "fields": [
+          "function_id",
+          "revision",
+          "spec_hash",
+          "artifact_hash",
+          "representation_hash",
+          "trace_hash",
+          "compiler_version",
+          "status",
+          "supersedes",
+          "content_hash",
+          "created_at"
+        ],
+        "store": "N9RegistryStore",
+        "updater": "N9RegistryUpdater (update/rollback/supersede)",
+        "validator": "N9RegistryValidator"
+      }
+    }
+  }
+}
