@@ -1,0 +1,67 @@
+{
+  "purpose": "121Q6 reconciliation overlay (additive; does NOT modify legacy 121Q6 control files)",
+  "created_by": "121Q6C Step 001",
+  "created_at": "${NOW}",
+  "executor": "QClaw",
+  "model": "Hy3",
+  "protocol_target": {
+    "original_command_steps": "Step 000-024 (25 steps)",
+    "required_commits": 25,
+    "required_consecutive": true,
+    "actual_completed_in_121q6": "Step 000-018 only (019 was repurposed as closure, not the original 019-024)"
+  },
+  "121q6_truth": {
+    "pr41_state": "OPEN/DRAFT/UNMERGED/MERGEABLE",
+    "pr41_commits_vs_pr40": 22,
+    "pr41_head_real": "afa9831f14e45ab7873a1ee467f1dafbaf68d31b",
+    "self_reported_commits": 21,
+    "self_report_is_wrong": true,
+    "ledger_lines": 20,
+    "ledger_unique_step_numbers": 19,
+    "ledger_missing_step": 17,
+    "ledger_duplicate_step": 18,
+    "commit_guard_missing_step": 17,
+    "commit_guard_duplicate_step": 18,
+    "run_state_target_steps": 25,
+    "run_state_current_step": 19,
+    "run_state_status": "IN_PROGRESS",
+    "run_state_commits_from_base": 21,
+    "run_state_literal_now_placeholder": true,
+    "final_status_final_head": "51b03eb...",
+    "final_status_head_mismatch": true,
+    "final_status_commits": 21,
+    "step018_actual_commits": 2,
+    "step018_note": "initial 9869e31 had artifact-mapping bug; reset --soft + fresh 78fd8ec retained (no-amend rule)"
+  },
+  "content_map": {
+    "implemented_and_kept": [
+      "N1 rejects spec_version 0.0.0",
+      "N6 deterministic trace_hash (excludes trace_id + timing_ms)",
+      "path-independent test suite (unittest+pytest, two CWDs)",
+      "cache cleanup (__pycache__ removed, .gitignore hardened)",
+      "155-test suite retained"
+    ],
+    "numbering_drift": [
+      "ledger missing Step 017",
+      "ledger Step 018 duplicated",
+      "commit guard same drift"
+    ],
+    "uncompleted_protocol_steps": [
+      "original Step 019 (35-asset bridge audit) -> NOT done",
+      "original Step 020 (minimal read-only importer) -> NOT done",
+      "original Step 021 (asset real E2E) -> NOT done",
+      "original Step 022 (Python 3.10/3.11/3.12 CI) -> NOT done",
+      "original Step 023 (strict validation) -> NOT done",
+      "original Step 024 (final report/seal/1111 receipt) -> NOT done"
+    ],
+    "inherited_ci_failure": {
+      "step": "tools/foundation/migrate_legacy.py --check",
+      "present_in": ["PR #40", "PR #41"],
+      "classification": "INHERITED_FOUNDATION_CI_FAILURE",
+      "is_121q6_regression": false,
+      "counts_against_function_os_ci": false
+    }
+  },
+  "normative_status": "PARTIAL_RESUMABLE_AFTER_HARDENING",
+  "note": "121Q6 implementation hardening accepted; original protocol steps 019-024 not completed. This overlay is additive truth-tracking only."
+}
