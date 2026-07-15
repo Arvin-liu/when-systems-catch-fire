@@ -1,7 +1,7 @@
-Project identity:
-Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mechanism discovery and modelling system for cross-domain material.
-It is not a unified mathematical theory, a physical theory, a universal prover, or a purely literary or philosophical knowledge base.
-Current version: 2026-07-12 mathematical and logical dual-foundation seven-layer architecture (IGNITION-20260709-076).
+Current project state:
+At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mechanism discovery and modelling system for cross-domain material. This is a versioned current-state description, not a permanent project identity or fixed final form. It is not a unified mathematical theory, a physical theory, a universal prover, or a purely literary or philosophical knowledge base.
+Current-state authority: docs/project-current-state.md.
+Current version: cumulative licensed release candidate after 121Q9/121Q10 corrections, preserving the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture.
 
 Architecture:
 L0 source and evidence -> L1 controlled semantic claims -> L2 formal objects -> L3 logical arguments -> L4 mathematical models and proofs -> L5 validation and validity -> L6 interpretation, application and publication.
@@ -29,6 +29,7 @@ MULTI_CASE is not a theorem.
 MIGRATED means only that migration coverage exists.
 
 Key paths:
+- docs/project-current-state.md : versioned current-state description, not fixed positioning
 - README.md : human front door
 - SUMMARY.md : human reading navigation
 - ARCHITECTURE.md : current architecture authority

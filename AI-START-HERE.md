@@ -5,6 +5,7 @@
 ## 读取顺序
 
 1. README.md：人类入口、价值边界与双前门。
+2. docs/project-current-state.md：版本化、可演化、非终局的当前状态。
 2. ARCHITECTURE.md：现行七层架构唯一权威。
 3. FOUNDATION.md：数学与逻辑双地基。
 4. llms.txt：机器可读边界。

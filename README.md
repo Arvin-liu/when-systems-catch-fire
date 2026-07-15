@@ -1,10 +1,10 @@
 # When Systems Catch Fire / 点火
 
-> 这是点火项目的首页。它先回答三个问题：这是什么、为什么存在、从哪里开始读。
+> 这是点火项目的首页。它先回答三个问题：当前长成什么、当前边界是什么、从哪里开始读。
 
-点火是一套面向跨领域材料的、证据可追溯、对象类型明确、推理过程可检查、结论等级可审计的形式化机制发现与建模系统。它不是现成的统一数学理论、物理理论、万能证明器，也不是纯文学或纯哲学知识库。
+在当前提交下，点火是一套面向跨领域材料的、证据可追溯、对象类型明确、推理过程可检查、结论等级可审计的形式化机制发现与建模系统。这是版本化现状描述，不是永久本质或终局定位；后续证据、反例、执行能力、缺口修复和外部反馈都可能改变下一版现状。它不是现成的统一数学理论、物理理论、万能证明器，也不是纯文学或纯哲学知识库。
 
-If you prefer English first: this repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system. It is not a unified mathematical theory, physical theory or universal prover.
+If you prefer English first: at the current commit, this repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system. This is a versioned current-state description, not a permanent project identity.
 
 本项目当前采用分层许可：核心可执行软件为 BUSL-1.1（source-available，2030-07-15 起转换为 AGPL-3.0-or-later），原创文档/报告/可版权化策展内容为 CC BY-NC-SA 4.0，价值宪章与一般治理原则为 CC BY-SA 4.0，公开接口与互操作 schema 为 Apache-2.0。详情见 [LICENSE](LICENSE) 与 [LICENSES/README.md](./LICENSES/README.md)。
 
@@ -15,6 +15,7 @@ If you prefer English first: this repository is an evidence-traceable, object-ty
 - 想先看全貌，请读 [人类导航页](./SUMMARY.md)。
 - 想给 AI / Agent 一个机器可读入口，请读 [llms.txt](./llms.txt)。
 - 想让 AI 从零背景接手，请读 [AI-START-HERE.md](./AI-START-HERE.md) 与 [AI-HANDOFF.md](./AI-HANDOFF.md)。
+- 想知道项目当前已经长成什么，请读 [项目现状](./docs/project-current-state.md)。
 - 想知道当前架构与边界，请读现行权威 [ARCHITECTURE.md](./ARCHITECTURE.md)、双地基 [FOUNDATION.md](./FOUNDATION.md) 和 [版本规范](./docs/VERSIONING.md)；[旧架构路径](./docs/PROJECT-ARCHITECTURE.md) 仅为稳定兼容入口。
 - 想知道怎么用，请读 [使用说明](./docs/USAGE.md)。
 - 想按 Agent 方式操作，请读 [Agent 指南](./docs/AGENT-GUIDE.md)。
@@ -88,7 +89,7 @@ data/foundation/ 下的对象、命题、论证、来源、证据、映射、证
 - [AI 冷启动入口](./AI-START-HERE.md)
 - [AI 交接契约](./AI-HANDOFF.md)
 - [机器注册表状态](./data/foundation/project-state.json)
-- [项目定位](./docs/project_positioning.md)
+- [项目现状](./docs/project-current-state.md)
 - [项目架构兼容入口](./docs/PROJECT-ARCHITECTURE.md)
 - [Get 笔记协作流程](./docs/GET-BRAIN-WORKFLOW.md)
 - [版本规范](./docs/VERSIONING.md)

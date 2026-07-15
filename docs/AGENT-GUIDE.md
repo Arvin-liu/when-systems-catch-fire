@@ -5,7 +5,8 @@
 ## 1. 执行前阅读顺序
 
 1. README.md
-2. ARCHITECTURE.md
+2. docs/project-current-state.md
+3. ARCHITECTURE.md
 3. FOUNDATION.md
 4. llms.txt 与本文
 5. 任务对应的 1111/agent-commands/IGNITION-*.md

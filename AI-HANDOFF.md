@@ -6,6 +6,8 @@
 
 ## 权威链
 
+- 当前状态：docs/project-current-state.md（版本化现状，不是固定定位）
+
 - 架构：ARCHITECTURE.md
 - 双地基：FOUNDATION.md
 - 类型与状态：data/foundation/

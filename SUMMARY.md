@@ -5,6 +5,7 @@
 ## 现行权威
 
 - [README.md](./README.md) — 人类总入口与双前门
+- [项目现状](./docs/project-current-state.md) — 版本化、可演化、非终局的当前状态描述
 - [ARCHITECTURE.md](./ARCHITECTURE.md) — 现行架构唯一权威
 - [FOUNDATION.md](./FOUNDATION.md) — 数学与逻辑双地基权威
 - [docs/foundation/README.md](./docs/foundation/README.md) — 架构契约导航
