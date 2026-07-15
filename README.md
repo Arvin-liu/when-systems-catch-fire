@@ -8,6 +8,8 @@ If you prefer English first: this repository is an evidence-traceable, object-ty
 
 本项目采用 MIT License。详情见 [LICENSE](LICENSE)。
 
+未来版本的分层许可、商业互惠和维护者可持续性方案仍处于候选阶段，尚未替换根 LICENSE。商业生产使用和项目支持入口见 [COMMERCIAL-LICENSING.md](./COMMERCIAL-LICENSING.md) 与 [SUSTAINABILITY.md](./SUSTAINABILITY.md)。
+
 ## 先从哪里进入
 
 - 想先看全貌，请读 [人类导航页](./SUMMARY.md)。
