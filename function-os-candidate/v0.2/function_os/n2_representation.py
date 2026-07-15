@@ -7,7 +7,7 @@ import hashlib, json
 from typing import Dict, Any
 
 class N2RepresentationEncoder:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     def encode(self, spec: dict) -> dict:
         """Encode FunctionSpec → symbolic representation."""

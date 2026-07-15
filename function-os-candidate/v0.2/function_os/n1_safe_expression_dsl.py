@@ -6,7 +6,7 @@ No eval/exec/compile of arbitrary code. No os/subprocess/attribute access.
 import ast, operator
 
 class SafeExpressionDSL:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     ALLOWED_NODES = {
         ast.Expression, ast.BinOp, ast.UnaryOp, ast.Compare,

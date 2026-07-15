@@ -7,7 +7,7 @@ from typing import Dict, Any, List, Optional
 from datetime import datetime
 
 class N9RegistryStore:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     def __init__(self):
         self._records = {}  # function_id → list of revisions
@@ -49,7 +49,7 @@ class N9RegistryStore:
 
 
 class N9RegistryUpdater:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     def __init__(self, store: N9RegistryStore):
         self._store = store
@@ -89,7 +89,7 @@ class N9RegistryUpdater:
 
 
 class N9RegistryValidator:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     def validate(self, store: N9RegistryStore) -> dict:
         """Validate registry integrity."""

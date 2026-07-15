@@ -6,7 +6,7 @@ import hashlib, json
 from typing import Dict, Any, Optional
 
 class N4ArtifactPackager:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     def package(self, compiled: dict, spec: dict, representation: dict) -> dict:
         """Package compiled payload into immutable artifact."""

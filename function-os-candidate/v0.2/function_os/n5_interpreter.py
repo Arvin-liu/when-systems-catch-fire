@@ -9,7 +9,7 @@ from function_os.n1_safe_expression_dsl import SafeExpressionDSL
 
 class N5Interpreter:
     _exec_counter = 0
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
     SUPPORTED_EFFECTS = {"pure", "stateful", "io"}
 
     def __init__(self):

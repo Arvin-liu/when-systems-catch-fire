@@ -2,3 +2,4 @@
 {"step":1,"description":"121Q5 control-plane reconciliation overlay (17 commits, HEAD, ledger gaps, model MIXED_OR_UNVERIFIED)","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"57c5043a62d01927e1b87b048098614867b2f5e9"}
 {"step":2,"description":"Repo hygiene: removed 3 tracked .pyc, hardened .gitignore (root+v0.2)","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"bbacfcdf0b0d0d15da26841a1f2d6f6567cb9871"}
 {"step":3,"description":"Q5 status correction overlay: commits=17, head=314b5fa, model MIXED_OR_UNVERIFIED, status PARTIAL_ACCEPTED_AS_IMPLEMENTATION_CANDIDATE","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"ac5b21e1cd686d3d0eee36e180cb941ac34c2f8e"}
+{"step":4,"description":"v0.2.1-candidate: pyproject.toml (py>=3.10, zero deps), version bump N1-N9","status":"DONE","executor":"QClaw","model":"Hy3","parent_head":"4d5fa92df330f38ac0b07104e7a98cc16c2c0b6f"}

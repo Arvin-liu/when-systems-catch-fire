@@ -7,7 +7,7 @@ import hashlib, json
 from typing import Dict, Any, Tuple
 
 class N3SymbolicCompiler:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     def compile(self, spec: dict, representation: dict) -> dict:
         """Compile FunctionSpec + Representation → compiled payload."""

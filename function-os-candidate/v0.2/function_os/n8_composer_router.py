@@ -7,7 +7,7 @@ import json
 from typing import Dict, Any, List
 
 class N8ComposerRouter:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     def plan(self, task: dict, candidates: list) -> dict:
         """Generate execution plan from task + candidate functions."""

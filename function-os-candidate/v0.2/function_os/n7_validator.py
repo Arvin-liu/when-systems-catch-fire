@@ -7,7 +7,7 @@ import hashlib, json
 from typing import Dict, Any, List
 
 class N7Validator:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     def validate(self, spec: dict, representation: dict, artifact: dict,
                  trace: dict = None, evidence: list = None) -> dict:

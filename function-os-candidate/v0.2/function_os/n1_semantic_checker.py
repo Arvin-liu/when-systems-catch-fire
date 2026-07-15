@@ -8,7 +8,7 @@ from function_os.n1_safe_expression_dsl import SafeExpressionDSL
 SEMVER_RE = re.compile(r'^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$')
 
 class N1SemanticChecker:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     def __init__(self):
         self.dsl = SafeExpressionDSL()

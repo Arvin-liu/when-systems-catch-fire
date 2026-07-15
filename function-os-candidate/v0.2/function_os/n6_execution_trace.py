@@ -6,7 +6,7 @@ import hashlib, json, time
 from typing import Dict, Any, List, Optional
 
 class N6TraceCapture:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     def capture(self, execution_result: dict, spec: dict) -> dict:
         """Capture execution result → structured trace."""

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "function-os"
+version = "0.2.1-candidate"
+description = "Symbolic Function OS — canonical N1-N9 reference implementation (candidate)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Non-Commercial (NC)" }
+authors = [{ name = "Arvin-liu / 121 pipeline" }]
+keywords = ["symbolic", "function", "spec", "interpreter", "registry"]
+dependencies = []  # zero runtime third-party dependencies
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["function_os*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

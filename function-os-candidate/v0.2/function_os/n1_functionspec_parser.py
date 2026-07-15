@@ -11,7 +11,7 @@ class FunctionSpecParseError(Exception):
     pass
 
 class N1FunctionSpecParser:
-    VERSION = "0.2.0"
+    VERSION = "0.2.1-candidate"
 
     SUPPORTED_DOMAIN = "symbolic"
 

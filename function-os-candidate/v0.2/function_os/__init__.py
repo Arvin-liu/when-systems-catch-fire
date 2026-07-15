@@ -6,6 +6,6 @@ Nodes: N1 FunctionSpec, N2 Representation, N3 Compiler, N4 Artifact,
 
 Canonical pipeline: N1→N2→N3→N4→N5→N6→N7→N9, with N8 for composition routing.
 """
-__version__ = "0.2.0"
+__version__ = "0.2.1-candidate"
 __status__ = "CANDIDATE"
 __domain__ = "symbolic-only"
