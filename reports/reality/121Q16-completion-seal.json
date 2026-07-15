@@ -1,0 +1,21 @@
+{
+  "schema": "ignition.reality.121q16.completion_seal.v1",
+  "task": "IGNITION-20260715-121Q16",
+  "status": "READY_AS_SUSTAINABILITY_SIGNAL_INTERFACE_CANDIDATE",
+  "base_head": "94119ac126b3d06c3ef3f0b41d7c50e7092a755c",
+  "branch": "reality/121q16-sustainability-signal-pilot-20260715",
+  "draft_pr": 50,
+  "external_signal_results_prefilled": false,
+  "payment_links_added": false,
+  "public_recruiting_issue_created": false,
+  "sponsors_contacted": false,
+  "claim_ceiling": "interface and observation plan established; no external signal result claimed",
+  "guardrails": {
+    "no_sponsorship_for_governance": true,
+    "no_emotional_coercion": true,
+    "no_private_income_or_contact_disclosure": true,
+    "no_ai_sampling_as_fact_evidence": true,
+    "no_new_truth_layer": true
+  },
+  "expected_commits": 3
+}

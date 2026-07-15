@@ -1,0 +1,39 @@
+{
+  "schema": "ignition.reality.121q16.baseline.v1",
+  "task": "IGNITION-20260715-121Q16",
+  "status": "BASELINE_VERIFIED",
+  "created_at": "2026-07-15",
+  "branch": "reality/121q16-sustainability-signal-pilot-20260715",
+  "base": {
+    "main_head": "94119ac126b3d06c3ef3f0b41d7c50e7092a755c",
+    "pr_49_merge_commit": "9e1577156340c4c50a914e793abf8ce0d647b024",
+    "current_state_tag": "current-state-2026-07-15-atlas",
+    "current_state_tag_target": "94119ac126b3d06c3ef3f0b41d7c50e7092a755c",
+    "foundation_validation_run": 29415435554,
+    "foundation_validation_conclusion": "success",
+    "function_os_ci_run": 29415439585,
+    "function_os_ci_conclusion": "success",
+    "q15_receipt_commit": "ed3ccb6d51efff5655599253accc7fbf03158b28"
+  },
+  "reality_loop": {
+    "name": "Reality Loop 001: maintainer sustainability external signal pilot",
+    "not_new_architecture": true,
+    "not_new_truth_layer": true,
+    "purpose": "Create a public, auditable, low-cost interface that can receive real external sustainability signals later.",
+    "claim_ceiling": "interface_candidate_only"
+  },
+  "guard": {
+    "no_fake_payment_link": true,
+    "no_private_income_or_contact_disclosure": true,
+    "no_public_recruiting_issue_created": true,
+    "no_sponsor_contact": true,
+    "no_external_recognition_claim": true,
+    "no_funding_intent_claim": true
+  },
+  "frozen_boundaries": {
+    "psi0_modified": false,
+    "project_state_085_modified": false,
+    "legacy_tables_modified": false,
+    "historical_evidence_cards_modified": false
+  }
+}

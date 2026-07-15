@@ -1,0 +1,65 @@
+name: Non-commercial use report
+description: Report learning, education, independent research, public-benefit review, or other non-commercial use.
+title: "[Non-commercial use]: "
+labels:
+  - non-commercial-use
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for real non-commercial use within the current license scope. Do not include private contact information, payment details, private student records, or confidential datasets.
+  - type: dropdown
+    id: signal_type
+    attributes:
+      label: Signal type
+      description: This keeps use reports separate from independent review and sponsorship/commercial inquiries.
+      options:
+        - noncommercial_use
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version, commit, PR, or document used
+      placeholder: "Example: main at commit abc123"
+    validations:
+      required: true
+  - type: dropdown
+    id: use_context
+    attributes:
+      label: Use context
+      options:
+        - personal learning
+        - education
+        - independent non-commercial research
+        - public-benefit review
+        - compatibility exploration
+        - criticism or red-team preparation
+        - other non-commercial use
+    validations:
+      required: true
+  - type: textarea
+    id: use_description
+    attributes:
+      label: What you tried
+      description: Describe the learning, teaching, research, review, or exploration activity.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What worked, failed, or remained unclear
+      description: Separate real use outcomes from opinions, popularity, or funding interest.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Use boundary
+      options:
+        - label: This report describes non-commercial use and is not a commercial production deployment.
+          required: true
+        - label: I understand this use report is not independent proof that the project's claims are true.
+          required: true
+        - label: I have not included private contact information, payment credentials, or confidential data.
+          required: true
