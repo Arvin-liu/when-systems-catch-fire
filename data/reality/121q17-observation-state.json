@@ -1,0 +1,86 @@
+{
+  "schema": "ignition.reality.121q17.observation_state.v1",
+  "task": "IGNITION-20260715-121Q17",
+  "status": "REALITY_LOOP_001_ACTIVE",
+  "activation": {
+    "pr": 50,
+    "merge_commit": "70d6e03a9ceef73261cb5424119040c43080e812",
+    "merged_at_utc": "2026-07-15T13:54:22Z",
+    "merged_at_local": "2026-07-15T21:54:22+08:00",
+    "timezone": "Asia/Shanghai",
+    "default_branch": "main",
+    "seal_commit": null
+  },
+  "window": {
+    "start": "2026-07-15",
+    "end": "2026-08-14",
+    "duration_days": 30,
+    "calculation_rule": "The observation window starts on the local calendar date when PR #50 is merged into main and the front-door links and Issue Forms become available on the default branch."
+  },
+  "default_branch_interface": {
+    "readme_front_door_links_live": true,
+    "support_page_live": true,
+    "participation_page_live": true,
+    "issue_forms_available_on_default_branch": true,
+    "issue_forms": [
+      ".github/ISSUE_TEMPLATE/independent-review.yml",
+      ".github/ISSUE_TEMPLATE/noncommercial-use-report.yml",
+      ".github/ISSUE_TEMPLATE/sponsorship-or-commercial-license-inquiry.yml"
+    ]
+  },
+  "exposure_denominator": {
+    "interface_live_days": 0,
+    "front_door_link_present": true,
+    "issue_forms_available_on_default_branch": true,
+    "verified_exposure_events": [
+      {
+        "id": "exposure-001-default-branch-activation",
+        "occurred_at_utc": "2026-07-15T13:54:22Z",
+        "context": "PR #50 merge made README front-door links, SUPPORT.md, docs/participate.md, and three Issue Forms available on the default branch.",
+        "verifiable_ref": "70d6e03a9ceef73261cb5424119040c43080e812",
+        "counts_as": "interface availability",
+        "does_not_count_as": [
+          "external interest",
+          "real use",
+          "independent review",
+          "resource commitment",
+          "funding willingness"
+        ]
+      }
+    ],
+    "known_referral_contexts": [
+      {
+        "id": "referral-001-readme-front-door",
+        "surface": "README.md",
+        "entry_points": [
+          "docs/participate.md",
+          "SUPPORT.md"
+        ],
+        "status": "live_on_default_branch"
+      }
+    ],
+    "zero_signal_interpretation": "NO_OBSERVED_SIGNAL_UNDER_AVAILABLE_EXPOSURE",
+    "forbidden_zero_signal_interpretations": [
+      "NO_DEMAND",
+      "NO_INTEREST",
+      "PROJECT_HAS_NO_VALUE"
+    ]
+  },
+  "signals": {
+    "valid_independent_reviews": 0,
+    "real_noncommercial_use_reports": 0,
+    "sponsorship_or_commercial_inquiries": 0,
+    "explicit_resource_commitments": 0,
+    "invalid_spam_or_conflict_signals": 0,
+    "maintainer_burden": null
+  },
+  "claim_ceiling": "interface_activated_no_external_signal_yet",
+  "non_claims": [
+    "No external recognition is claimed.",
+    "No funding willingness is claimed.",
+    "No production adoption is claimed.",
+    "No independent validation is claimed.",
+    "No commercial demand is claimed.",
+    "Default-branch availability is not evidence of demand."
+  ]
+}

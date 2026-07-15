@@ -1,0 +1,46 @@
+{
+  "schema": "ignition.reality.121q17.activation_seal.v1",
+  "task": "IGNITION-20260715-121Q17",
+  "status": "121Q17_REALITY_LOOP_001_ACTIVE",
+  "pr": 50,
+  "merge_commit": "70d6e03a9ceef73261cb5424119040c43080e812",
+  "merged_at_utc": "2026-07-15T13:54:22Z",
+  "merged_at_local": "2026-07-15T21:54:22+08:00",
+  "timezone": "Asia/Shanghai",
+  "main_head_before_seal": "70d6e03a9ceef73261cb5424119040c43080e812",
+  "seal_commit": null,
+  "observation_window": {
+    "start": "2026-07-15",
+    "end": "2026-08-14",
+    "duration_days": 30
+  },
+  "default_branch_checks": {
+    "readme_front_door_links_live": true,
+    "support_page_live": true,
+    "participation_page_live": true,
+    "issue_forms_available_on_default_branch": true
+  },
+  "initial_signals": {
+    "valid_independent_reviews": 0,
+    "real_noncommercial_use_reports": 0,
+    "sponsorship_or_commercial_inquiries": 0,
+    "explicit_resource_commitments": 0,
+    "invalid_spam_or_conflict_signals": 0,
+    "maintainer_burden": null
+  },
+  "exposure_state": {
+    "interface_live_days": 0,
+    "verified_exposure_events_count": 1,
+    "known_referral_contexts_count": 1,
+    "zero_signal_interpretation": "NO_OBSERVED_SIGNAL_UNDER_AVAILABLE_EXPOSURE"
+  },
+  "claim_ceiling": "interface_activated_no_external_signal_yet",
+  "guardrails": {
+    "payment_links_added": false,
+    "public_recruiting_issue_created": false,
+    "sponsors_contacted": false,
+    "fake_external_signal_created": false,
+    "private_income_or_contact_disclosed": false,
+    "support_buys_governance_or_truth": false
+  }
+}
