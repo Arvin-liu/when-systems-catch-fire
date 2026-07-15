@@ -10,6 +10,8 @@ In short: this is a versioned current-state description, not a fixed essence, an
 
 Current state must be inferred from actual repository artifacts: architecture files, foundation registries, tests, CI, open PRs, validation reports, unresolved queues, licensing state, and known gaps. It must not be backfilled from aspiration or branding.
 
+121Q12 adds a current operation overlay for two narrow gaps: choosing a next action when goals are unstable, and constraining interpretation after an action produces results. This is a current capability addition, not a fixed project positioning.
+
 ## Current Shape
 
 At this version, the repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system for cross-domain material. That sentence is a current-state description, not a fixed essence. It can change if future work changes the actual assets, evidence rules, execution layer, or governance boundaries.
@@ -35,6 +37,9 @@ The project currently can:
 - document external feedback as input to “gap discovery -> structural correction -> re-validation”;
 - distinguish normative boundaries from factual proof and implementation capability;
 - maintain a source-available/commercial-reciprocal licensing model while preserving old MIT rights for older versions.
+- select a bounded Minimum State-Changing Action when targets, metrics, or paths are unstable;
+- record M0 mechanism sketches and M1 mechanism adjudications with claim ceilings, alternative mechanisms, and downgrade conditions;
+- separate stance-blind review inputs and calibration sources so positive conclusions remain bound to criteria rather than proponent expectation.
 
 ## Current Limits
 
@@ -46,6 +51,7 @@ The project currently must not claim:
 - to have completed all content proofs merely because architecture migration or CI passes;
 - to have resolved every pending claim, source gap, third-party rights issue or governance question;
 - to have a fixed final identity that later evidence cannot change.
+- that effectual action or mechanism adjudication is a universal method, a new truth layer, or proof of causality.
 
 A current inability is also not a permanent impossibility. It only means the present artifacts do not support that claim at this commit.
 

@@ -53,6 +53,11 @@ Red lines for agents:
 - A keyword hit, missing field or missing source is not a counterexample.
 - Do not call Get 笔记 to perform mathematical reasoning, logical adjudication or architecture decisions.
 - Do not claim content-proof completion from architecture migration completion.
+- 121Q12 effectual action and mechanism adjudication are operation overlays, not new truth layers.
+- Effectual action proposes bounded next actions under affordable loss; it does not prove claims.
+- Mechanism adjudication constrains explanation and claim ceiling; it does not identify causality by itself.
+- Positive evaluative words must bind object, criterion, version, evidence and boundary.
+- Separate calibration sources: external source, repository artifact, executable test or CI, real-world response, human judgment, independent model or review.
 
 Validation before commit:
 - python3 tools/foundation/migrate_legacy.py --check

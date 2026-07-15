@@ -108,3 +108,37 @@ flowchart TB
 - Ψ0 中的乘号表示流程组合或联合约束，不表示普通数值乘法。
 
 执行入口与门禁见 [FOUNDATION.md](FOUNDATION.md)。
+
+## 121Q12 双环操作 overlay
+
+121Q12 在七层架构之上增加跨层操作 overlay，不新增真值层，不改变 L0—L6 的关系。
+
+```mermaid
+flowchart TB
+  STATE[当前项目现状] --> EA[效果推理行动平面]
+  EA --> MSA[最小状态改变行动]
+  MSA --> M0[M0 行动前机制草图]
+  M0 --> CHARTER[Charter Gate]
+  CHARTER --> EXEC[Ψ0 / 元协议 / Function OS]
+  EXEC --> OBS[观察、测试与验证]
+  OBS --> M1[M1 行动后机制裁决]
+  M1 --> PUB[受 claim ceiling 约束的发布]
+  PUB --> FEEDBACK[现实与外部反馈]
+  FEEDBACK --> STATE2[更新后的项目现状]
+```
+
+边界：
+
+- 效果推理产生行动候选，不产生真值。
+- 机制判断产生受约束的解释，不自动产生因果证明。
+- Charter Gate 仍位于两平面之上，决定行动是否可做、可如何做。
+- Ψ0 仍是 workflow orchestrator / algorithm protocol；本 overlay 不改写 Ψ0。
+- Function OS 负责执行动作，不决定动作是否值得。
+- C(x,y) 仍是机制假说，不因机制图存在而升级为已识别因果。
+- L6 发布必须受 claim ceiling 约束，不能用解释性语言制造下层真实性。
+
+操作入口：
+
+- [docs/architecture/effectual-action-plane.md](docs/architecture/effectual-action-plane.md)
+- [docs/architecture/mechanism-adjudication-plane.md](docs/architecture/mechanism-adjudication-plane.md)
+- [docs/governance/non-sycophancy-output-protocol.md](docs/governance/non-sycophancy-output-protocol.md)

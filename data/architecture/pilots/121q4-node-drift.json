@@ -1,0 +1,115 @@
+{
+  "schema": "ignition.architecture.121q12.pilot.v1",
+  "id": "PILOT-121Q4-NODE-DRIFT",
+  "history_mode": "read_only",
+  "source_task": "121Q4 node drift",
+  "effectual_action_record": {
+    "id": "EA-121Q4-NODE-DRIFT",
+    "mode": "EFFECTUAL",
+    "mode_reason": "The issue was not only whether code ran, but whether generated nodes aligned with canonical N1-N9 semantics.",
+    "current_state_ref": "121Q4 historical review surface",
+    "who_we_are": ["repository maintainers", "AI execution and review sessions"],
+    "what_we_know": ["implementation pass and semantic alignment are separate axes", "canonical nodes require explicit source and meaning boundaries"],
+    "whom_we_can_reach": ["repository artifacts", "validation scripts", "review history"],
+    "available_assets": ["code output", "canonical node list", "review findings"],
+    "reversible_action": "separate implementation validation from canonical semantic validation",
+    "affordable_loss": {
+      "time": "bounded review of historical task",
+      "money": "none",
+      "ai_quota": "bounded to pilot mapping",
+      "reputation": "avoid calling code success semantic success",
+      "maintenance_load": "no historical rewrite",
+      "opportunity_cost": "clarifies future validation design",
+      "sleep_or_attention": "no continuous monitoring"
+    },
+    "real_commitments": [
+      {
+        "actor": "121Q12 overlay",
+        "commitment": "keep implementation and semantic axes separate",
+        "resource": "schema and pilot record",
+        "verification": "this read-only pilot"
+      }
+    ],
+    "expected_state_change": ["future reviews stop collapsing code pass and semantic alignment", "claim ceiling becomes explicit"],
+    "information_gain": "which dimension failed or passed",
+    "capability_gain": "two-axis review language",
+    "real_commitment_gain": "pilot establishes reusable distinction",
+    "option_space_gain": "future validator can check both axes",
+    "surprise_observed": ["a runnable artifact can still drift from canonical semantics"],
+    "next_state_update": "semantic alignment requires its own evidence",
+    "conditions": {
+      "stop": "stop if only implementation evidence is available",
+      "pivot": "pivot to source-text semantic review",
+      "scale": "scale after semantic validator exists",
+      "rollback": "downgrade claim from complete to implementation observed"
+    },
+    "charter_gate": {
+      "affected_subjects": ["maintainer", "readers", "future users"],
+      "expected_benefit": "prevents misleading completion claims",
+      "cost_bearers": ["reviewers"],
+      "reversibility": "claim wording can be downgraded",
+      "harm_visibility": "semantic drift remains visible",
+      "maintainer_sustainability": "reduces repeated confusion",
+      "evidence_threshold_for_scaling": "canonical semantic evidence must be present",
+      "gate_status": "PASS"
+    }
+  },
+  "m0": {
+    "id": "MM-121Q4-M0",
+    "review_phase": "M0_PRE_ACTION_SKETCH",
+    "phenomenon": "A task can produce working code while drifting from canonical node semantics.",
+    "question": "Which mechanism distinguishes implementation pass from N1-N9 alignment?",
+    "variables_or_components": ["code execution", "canonical node definitions", "mapping logic", "semantic validator"],
+    "observed_changes": [],
+    "candidate_paths": [
+      {
+        "path": "implementation generation -> runnable output -> overbroad success label without semantic gate",
+        "status": "candidate"
+      }
+    ],
+    "directionality": "implementation evidence can raise workflow confidence but cannot raise semantic alignment alone",
+    "boundary_conditions": ["canonical N1-N9 source exists", "semantic mapping is required"],
+    "mediators": ["mapping rules", "validator scope"],
+    "moderators": ["strictness of semantic review"],
+    "alternative_mechanisms": ["canonical definitions were ambiguous", "reviewer applied a changed node standard"],
+    "counterfactuals": ["if a semantic gate existed, a runnable but drifting output would be downgraded"],
+    "observable_predictions": ["separate axes produce different statuses"],
+    "distinguishing_tests": ["compare generated nodes against canonical source text"],
+    "evidence_for": [],
+    "evidence_against": [],
+    "unknowns": ["full historical code context"],
+    "value_conflicts": ["speed of implementation vs semantic fidelity"],
+    "claim_ceiling": "mechanism_plausible",
+    "downgrade_conditions": ["canonical node source proves generated mapping was aligned"]
+  },
+  "observed_result": ["code-running and canonical-alignment dimensions are separated in this pilot"],
+  "m1": {
+    "id": "MM-121Q4-M1",
+    "review_phase": "M1_POST_ACTION_ADJUDICATION",
+    "phenomenon": "121Q4 is better described as dimension separation than binary success/failure.",
+    "question": "What claim can the pilot make without rewriting history?",
+    "variables_or_components": ["workflow pass", "implementation pass", "semantic alignment", "claim ceiling"],
+    "observed_changes": ["pilot separates dimensions", "no historical file is modified"],
+    "candidate_paths": [
+      {
+        "path": "dimension separation -> lower overclaim risk -> clearer future validators",
+        "status": "supported"
+      }
+    ],
+    "directionality": "separation lowers the risk of value-judgment bundling",
+    "boundary_conditions": ["applies to tasks where code execution and canonical semantics can diverge"],
+    "mediators": ["claim ceiling"],
+    "moderators": ["availability of canonical source"],
+    "alternative_mechanisms": ["the issue was purely documentation wording"],
+    "counterfactuals": ["without separation, a future report could again call runnable output complete"],
+    "observable_predictions": ["future reviews require semantic evidence for semantic claims"],
+    "distinguishing_tests": ["validator checks both implementation and semantic fields"],
+    "evidence_for": ["pilot record includes separate dimensions"],
+    "evidence_against": ["pilot is retrospective and does not rerun the original task"],
+    "unknowns": ["full original execution trace"],
+    "value_conflicts": ["clarity vs brevity"],
+    "claim_ceiling": "mechanism_plausible",
+    "downgrade_conditions": ["future evidence shows no semantic drift mechanism existed"]
+  },
+  "strongest_residual_counterevidence": "This is a retrospective pilot; it supports the distinction but does not re-adjudicate every original 121Q4 artifact."
+}

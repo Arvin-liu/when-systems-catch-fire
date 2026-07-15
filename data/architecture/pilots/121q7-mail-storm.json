@@ -1,0 +1,115 @@
+{
+  "schema": "ignition.architecture.121q12.pilot.v1",
+  "id": "PILOT-121Q7-MAIL-STORM",
+  "history_mode": "read_only",
+  "source_task": "121Q7 mail storm control",
+  "effectual_action_record": {
+    "id": "EA-121Q7-MAIL-STORM",
+    "mode": "EFFECTUAL",
+    "mode_reason": "The immediate goal was unstable because repeated pushes triggered known failing workflow notifications; the next useful action was to stop the email storm within affordable loss.",
+    "current_state_ref": "PR #44 / 121Q7 reported state",
+    "who_we_are": ["maintainer and AI execution session operating through GitHub PRs"],
+    "what_we_know": ["each push can trigger workflow email", "080 validation remained the known failing foundation blocker", "large speculative repair would increase notification cost"],
+    "whom_we_can_reach": ["GitHub workflow surface", "repository branch", "1111 status relay"],
+    "available_assets": ["workflow files", "PR branch", "validation logs", "commit discipline"],
+    "reversible_action": "minimize pushes, stop nonessential changes, record blocker and controlled state",
+    "affordable_loss": {
+      "time": "bounded to diagnostic and status commit work",
+      "money": "no paid dependency",
+      "ai_quota": "bounded to validation and reporting",
+      "reputation": "avoid overclaiming full foundation success",
+      "maintenance_load": "no new subsystem",
+      "opportunity_cost": "postpone broader repairs until 080 can be targeted",
+      "sleep_or_attention": "avoid repeated notification loops"
+    },
+    "real_commitments": [
+      {
+        "actor": "execution session",
+        "commitment": "stop pushing noisy speculative fixes",
+        "resource": "commit and validation discipline",
+        "verification": "controlled status label and no merge"
+      }
+    ],
+    "expected_state_change": ["mail storm reduced", "foundation blocker isolated", "next task can target 080"],
+    "information_gain": "identify workflow-trigger path and remaining foundation blocker",
+    "capability_gain": "controlled PR hygiene under failing CI",
+    "real_commitment_gain": "explicit stop condition recorded",
+    "option_space_gain": "future task can repair 080 without notification storm",
+    "surprise_observed": ["workflow notification cost became a first-class operational constraint"],
+    "next_state_update": "MAIL_STORM_CONTROLLED with FOUNDATION_080_REMAINS",
+    "conditions": {
+      "stop": "stop if each push only reproduces known fixed failure",
+      "pivot": "pivot to dedicated 080 repair task",
+      "scale": "scale only after validation changes reduce known failure",
+      "rollback": "leave PR unmerged and record blocker"
+    },
+    "charter_gate": {
+      "affected_subjects": ["maintainer", "reviewers", "AI execution session"],
+      "expected_benefit": "reduced attention cost and clearer blocker",
+      "cost_bearers": ["maintainer", "CI resources"],
+      "reversibility": "PR can remain draft and unmerged",
+      "harm_visibility": "email cost and failed foundation status are explicit",
+      "maintainer_sustainability": "protects attention and rest from repeated alerts",
+      "evidence_threshold_for_scaling": "080 validator must pass before claiming foundation closure",
+      "gate_status": "CONSTRAINED_PASS"
+    }
+  },
+  "m0": {
+    "id": "MM-121Q7-M0",
+    "review_phase": "M0_PRE_ACTION_SKETCH",
+    "phenomenon": "Repeated push activity causes repeated workflow failure notifications.",
+    "question": "Is the mail storm primarily caused by push-triggered workflows repeatedly reaching a known fixed failure?",
+    "variables_or_components": ["push frequency", "workflow trigger", "080 validator", "email notification", "PR draft state"],
+    "observed_changes": [],
+    "candidate_paths": [
+      {
+        "path": "push -> workflow trigger -> known 080 failure -> notification",
+        "status": "candidate"
+      }
+    ],
+    "directionality": "more pushes increase notifications while the known failure remains",
+    "boundary_conditions": ["GitHub notifications enabled", "workflow fails on the same blocker"],
+    "mediators": ["workflow configuration", "CI failure status"],
+    "moderators": ["push count", "notification settings"],
+    "alternative_mechanisms": ["unrelated GitHub notification configuration", "multiple independent failing workflows"],
+    "counterfactuals": ["if no new pushes occur, no new push-triggered failure emails should be produced"],
+    "observable_predictions": ["reducing pushes reduces new notifications", "080 remains the reported failure"],
+    "distinguishing_tests": ["compare workflow runs per push", "inspect failure logs"],
+    "evidence_for": [],
+    "evidence_against": [],
+    "unknowns": ["exact notification settings"],
+    "value_conflicts": ["speed of repair vs maintainer attention cost"],
+    "claim_ceiling": "mechanism_plausible",
+    "downgrade_conditions": ["notifications continue without workflow runs", "failures come from unrelated causes"]
+  },
+  "observed_result": ["workflow noise was treated as controlled", "080 remained the isolated foundation blocker"],
+  "m1": {
+    "id": "MM-121Q7-M1",
+    "review_phase": "M1_POST_ACTION_ADJUDICATION",
+    "phenomenon": "Mail storm was controlled while foundation closure remained pending.",
+    "question": "What claim is warranted after controlling pushes and isolating 080?",
+    "variables_or_components": ["push frequency", "workflow failure", "080 blocker", "status label"],
+    "observed_changes": ["status became MAIL_STORM_CONTROLLED", "080 remained open"],
+    "candidate_paths": [
+      {
+        "path": "bounded pushes -> fewer repeated workflow-triggered failures -> controlled notification state",
+        "status": "supported"
+      }
+    ],
+    "directionality": "operational control improves when speculative pushes stop",
+    "boundary_conditions": ["applies to this PR workflow context"],
+    "mediators": ["commit discipline"],
+    "moderators": ["GitHub notification rules"],
+    "alternative_mechanisms": ["notification preferences changed outside repo"],
+    "counterfactuals": ["continued speculative pushes would likely continue alerts"],
+    "observable_predictions": ["dedicated 080 repair should be needed before foundation closure"],
+    "distinguishing_tests": ["review subsequent 121Q8 foundation result"],
+    "evidence_for": ["reported 121Q7 status", "later 121Q8 targeted foundation repair"],
+    "evidence_against": ["no direct mailbox telemetry in repository"],
+    "unknowns": ["exact email count"],
+    "value_conflicts": ["repair urgency vs attention protection"],
+    "claim_ceiling": "mechanism_plausible",
+    "downgrade_conditions": ["mail storm source proves unrelated to workflow pushes"]
+  },
+  "strongest_residual_counterevidence": "The repository does not contain direct mailbox telemetry, so the path remains operationally plausible rather than fully discriminated."
+}

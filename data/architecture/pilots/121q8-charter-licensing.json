@@ -1,0 +1,115 @@
+{
+  "schema": "ignition.architecture.121q12.pilot.v1",
+  "id": "PILOT-121Q8-CHARTER-LICENSING",
+  "history_mode": "read_only",
+  "source_task": "121Q8 charter sustainability and licensing",
+  "effectual_action_record": {
+    "id": "EA-121Q8-CHARTER-LICENSING",
+    "mode": "EFFECTUAL",
+    "mode_reason": "The project needed a bounded action to protect maintainer sustainability and clarify commercial reciprocity without erasing historical MIT rights.",
+    "current_state_ref": "121Q8 / 121Q9 / 121Q10 license and charter sequence",
+    "who_we_are": ["maintainer-controlled project", "source-available repository", "life-community charter governed project"],
+    "what_we_know": ["maintainer sustainability is infrastructure cost", "old MIT grants cannot be revoked", "commercial extraction can shift costs to the maintainer"],
+    "whom_we_can_reach": ["users", "commercial users", "contributors", "external reviewers"],
+    "available_assets": ["value charter", "license files", "README", "SUSTAINABILITY", "commercial license terms"],
+    "reversible_action": "stage license candidate, audit ownership, then activate layered license prospectively",
+    "affordable_loss": {
+      "time": "bounded to staged governance and license commits",
+      "money": "no external legal service purchased in this task",
+      "ai_quota": "bounded to drafting and validation",
+      "reputation": "explicitly state non-OSI status and legal non-finality",
+      "maintenance_load": "license scope validator added",
+      "opportunity_cost": "delays unrestricted commercial adoption but protects project continuity",
+      "sleep_or_attention": "reduces future uncompensated support pressure"
+    },
+    "real_commitments": [
+      {
+        "actor": "maintainer",
+        "commitment": "activate prospective layered licensing while preserving old MIT rights",
+        "resource": "governance authority and review attention",
+        "verification": "merged main after PR #46"
+      }
+    ],
+    "expected_state_change": ["charter sustainability boundary becomes explicit", "commercial reciprocity is encoded", "historical rights remain visible"],
+    "information_gain": "license migration constraints become visible",
+    "capability_gain": "repository can express layered license scopes",
+    "real_commitment_gain": "maintainer adopts sustainability rule",
+    "option_space_gain": "commercial license and reciprocity paths become available",
+    "surprise_observed": ["license boundary and value charter were the same normative sustainability problem"],
+    "next_state_update": "prospective license activation with preserved MIT history",
+    "conditions": {
+      "stop": "stop if ownership audit contradicts activation basis",
+      "pivot": "pivot to candidate-only license docs if legal risk rises",
+      "scale": "scale only after license scopes and full texts validate",
+      "rollback": "future versions can adjust scope while old MIT grants remain unchanged"
+    },
+    "charter_gate": {
+      "affected_subjects": ["maintainer", "noncommercial users", "commercial users", "future contributors"],
+      "expected_benefit": "project sustainability and cost reciprocity",
+      "cost_bearers": ["commercial users", "maintainer during transition"],
+      "reversibility": "new terms apply prospectively; old MIT grants remain",
+      "harm_visibility": "commercial restrictions and non-OSI status are explicit",
+      "maintainer_sustainability": "central purpose of the action",
+      "evidence_threshold_for_scaling": "license texts and scope validator must pass",
+      "gate_status": "PASS"
+    }
+  },
+  "m0": {
+    "id": "MM-121Q8-M0",
+    "review_phase": "M0_PRE_ACTION_SKETCH",
+    "phenomenon": "Open commercial extraction can leave maintainer costs externalized.",
+    "question": "Can a prospective layered license protect sustainability while preserving historical MIT rights?",
+    "variables_or_components": ["charter gate", "maintainer cost", "commercial use", "old MIT rights", "new license scope"],
+    "observed_changes": [],
+    "candidate_paths": [
+      {
+        "path": "sustainability concern -> license scope separation -> commercial reciprocity -> reduced uncompensated extraction risk",
+        "status": "candidate"
+      }
+    ],
+    "directionality": "clear prospective licensing can redirect future commercial value capture toward reciprocity",
+    "boundary_conditions": ["ownership control sufficient", "old MIT versions remain unaffected", "license scope is clear"],
+    "mediators": ["BUSL parameters", "commercial license path", "SUSTAINABILITY policy"],
+    "moderators": ["commercial adoption", "fork behavior", "contributor terms"],
+    "alternative_mechanisms": ["sponsorship alone could sustain the project", "stricter license could reduce adoption too much"],
+    "counterfactuals": ["under unchanged MIT, commercial users could continue uncompensated production use of new versions"],
+    "observable_predictions": ["README and license files distinguish old and new rights", "validator catches scope conflicts"],
+    "distinguishing_tests": ["license scope audit", "ownership audit", "CI validation"],
+    "evidence_for": [],
+    "evidence_against": [],
+    "unknowns": ["formal legal sufficiency outside repository facts"],
+    "value_conflicts": ["openness vs maintainer sustainability"],
+    "claim_ceiling": "mechanism_plausible",
+    "downgrade_conditions": ["ownership or third-party material audit fails", "license text conflicts with declared scope"]
+  },
+  "observed_result": ["layered license was activated prospectively", "old MIT rights were preserved", "current-state language avoided fixed positioning"],
+  "m1": {
+    "id": "MM-121Q8-M1",
+    "review_phase": "M1_POST_ACTION_ADJUDICATION",
+    "phenomenon": "Charter sustainability and licensing became operational repository rules.",
+    "question": "What claim is warranted after the license and charter sequence merged?",
+    "variables_or_components": ["license files", "README", "charter", "sustainability policy", "old MIT boundary"],
+    "observed_changes": ["prospective layered license on main", "commercial reciprocity path documented", "old MIT rights preserved"],
+    "candidate_paths": [
+      {
+        "path": "charter sustainability -> prospective layered license -> explicit reciprocity boundary",
+        "status": "supported"
+      }
+    ],
+    "directionality": "repository rules now make cost reciprocity more explicit",
+    "boundary_conditions": ["not legal advice", "applies prospectively to new versions", "old MIT grants remain"],
+    "mediators": ["license scope files", "SUSTAINABILITY", "commercial terms"],
+    "moderators": ["actual commercial user behavior", "future legal review"],
+    "alternative_mechanisms": ["social norms or sponsorship could still be the primary sustainability driver"],
+    "counterfactuals": ["without scope activation, future versions would remain under single MIT terms"],
+    "observable_predictions": ["new users see layered license boundaries", "commercial use requires license or reciprocity"],
+    "distinguishing_tests": ["repository license audit", "external legal review if needed"],
+    "evidence_for": ["merged PR #46", "license scope validator", "main CI success"],
+    "evidence_against": ["no real commercial uptake data yet"],
+    "unknowns": ["future market response", "formal legal outcome"],
+    "value_conflicts": ["maximal OSI openness vs sustainability and anti-extraction"],
+    "claim_ceiling": "implementation_observed",
+    "downgrade_conditions": ["future audit finds scope ambiguity or rights conflict"]
+  },
+  "strongest_residual_counterevidence": "The repository can show prospective rule activation, but it cannot yet prove real-world sustainability effects or legal outcomes."
+}
