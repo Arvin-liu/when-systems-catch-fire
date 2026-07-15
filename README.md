@@ -20,7 +20,7 @@
 
 [阅读全文：生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
 
-## 用你常用的 AI 读懂点火
+## AI 助手使用说明
 
 普通人无需先读完整仓库。你可以把下面提示词复制给自己常用的 AI，让它先帮你做第一轮阅读。
 
@@ -52,11 +52,7 @@ https://github.com/Arvin-liu/when-systems-catch-fire
 
 [查看完整 AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 
-## Function OS
-
-[Function OS](./function-os-candidate/v0.2/README.md) 是点火里的 N1-N9 候选参考实现，用来把边界明确的函数规格转成 artifact、执行结果、trace、验证报告和 registry revision。人类先定义问题、输入、输出、前置条件、后置条件与副作用；AI 可以协助生成候选规格、准备输入、整理 trace 和审计记录，但不能把自己的输出当外部事实证据。
-
-它当前主要适合受限符号函数和规则函数。它能产出 FunctionSpec、中间表示、编译结果、artifact、执行状态、前置/后置条件检查、ExecutionTrace、N7 验证报告、顺序执行计划、registry revision 和 rollback 记录。它不是任意代码平台、现实真理机器或成熟生产 OS；Function OS 负责执行，不决定行动是否值得，也不能把 PASS 自动升级为科学证明。
+## 项目内容入口
 
 <details>
 <summary>展开：第一次阅读与 AI 入口</summary>
@@ -75,6 +71,7 @@ https://github.com/Arvin-liu/when-systems-catch-fire
 <details>
 <summary>展开：架构、Foundation 与正式资产</summary>
 
+- [Function OS](./function-os-candidate/v0.2/README.md) — 说明它是什么、人类与 AI 怎样使用、能产出什么，以及当前限制、风险和不能证明的事情。
 - [现行架构](./ARCHITECTURE.md) — 说明 L0-L6、Foundation、Function OS 和操作 overlay 的当前关系。
 - [Foundation](./FOUNDATION.md) — 说明数学与逻辑双地基、注册表权威和不可越权的证明门禁。
 - [Foundation 文档入口](./docs/foundation/README.md) — 汇总数学、逻辑、状态系统、注册表契约和迁移说明。
@@ -115,9 +112,3 @@ https://github.com/Arvin-liu/when-systems-catch-fire
 - [现实反馈参与入口](./docs/participate.md) — 说明外部反馈如何进入“缺口发现 -> 结构修正 -> 再验证”链条。
 
 </details>
-
-## 致谢与反馈
-
-感谢提供推理、检索、编程、执行、校验和长程协作能力的 AI 系统；感谢提供问题、材料、验证、纠错、贡献与批评的人类参与者；感谢提供独立审查、红队反馈、规范约束和缺口暴露的外部治理。
-
-外部反馈不是“攻击/防御”叙事的一部分。经验证后，它进入“缺口发现 -> 结构修正 -> 再验证”的系统输入链。上述致谢不表示任何个人、AI 系统或机构对项目全部结论背书，也不声称 AI 具有法律人格或独立 ratification 权限。
