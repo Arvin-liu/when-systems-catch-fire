@@ -1,0 +1,14 @@
+{
+  "task_id": "IGNITION-20260715-121Q9",
+  "step": "003",
+  "status": "PASS_LOCAL",
+  "foundation": "PASS",
+  "function_os": {"status": "PASS", "tests": 164, "warnings": 48},
+  "json_jsonl_syntax": "PASS",
+  "license_scope_validator": {"status": "PASS", "checks_total": 15, "checks_failed": 0},
+  "link_check": {"status": "PASS", "bad_links": 0},
+  "frozen_assets": "UNCHANGED",
+  "tracked_cache_files": 0,
+  "secret_pattern_hits": 0,
+  "pull_request": {"number": 46, "state": "OPEN", "draft": true, "mergeable": "MERGEABLE", "base": "main"}
+}
