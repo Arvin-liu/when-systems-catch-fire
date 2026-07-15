@@ -1,0 +1,34 @@
+{
+  "task": "121Q4",
+  "instruction_commit": "1360e32fe3523000d7639c948d54018d309fc6b3",
+  "baseline_head": "320fc37182b55f4b8e780188fc15aeff2e0ce16f",
+  "baseline_pr": {
+    "number": 38,
+    "state": "OPEN",
+    "is_draft": true,
+    "mergeable": "MERGEABLE"
+  },
+  "branch": "records/ignition-121q4-v4pro-symbolic-function-os-reference-20260715",
+  "model": {
+    "requested": "DeepSeek-V4-Pro",
+    "runtime": "qclaw/pool-deepseek-v4-pro",
+    "reasoning": "high / deep thinking",
+    "verified": true
+  },
+  "total_steps": 25,
+  "current_step": 0,
+  "current_step_status": "COMPLETE",
+  "next_step": 1,
+  "next_step_description": "121Q3 adversarial audit",
+  "scope": "Symbolic functions only — no weight-space, no cross-rep equivalence",
+  "frozen_boundaries": [
+    "Ψ₀ formal definition",
+    "085 frozen v1",
+    "Old two-tables",
+    "Historical evidence cards",
+    "121Q1-121Q3 overlays",
+    "35 original asset files"
+  ],
+  "deviation_lesson_121q3": "Enforce one-commit-per-step; any batch attempt triggers forced stop",
+  "last_updated": "2026-07-15T02:06:19Z"
+}
