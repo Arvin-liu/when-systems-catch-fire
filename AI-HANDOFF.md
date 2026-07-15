@@ -32,6 +32,13 @@
 - docs/governance/non-sycophancy-output-protocol.md
 
 正向结论必须说明对象、判据、版本、证据和边界；不能因维护者或提案者的期待而提高结论等级。
+121Q13 新增注意力、分布与压缩控制 overlay。若任务涉及循环推进、多个 AI/人类输出、行动截止期或新术语进入 canonical 文档，必须读取：
+
+- docs/architecture/attention-attractor-control-plane.md
+- docs/architecture/distribution-collapse-control-plane.md
+- docs/architecture/compression-integrity-gate.md
+
+不得把同一 AI 的多次输出当作独立事实证据；不得把行动选择写成机制真值；不得把新增术语写成理论升级。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

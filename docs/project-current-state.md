@@ -12,6 +12,8 @@ Current state must be inferred from actual repository artifacts: architecture fi
 
 121Q12 adds a current operation overlay for two narrow gaps: choosing a next action when goals are unstable, and constraining interpretation after an action produces results. This is a current capability addition, not a fixed project positioning.
 
+121Q13 adds a stacked current control overlay for attention, distribution, and compression. It records whether repeated loops add information, treats AI/human outputs as conditioned samples rather than answers, separates action collapse from truth collapse, and audits whether new terminology is real compression or only labeling. This remains a current capability addition, not a new theory layer.
+
 ## Current Shape
 
 At this version, the repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system for cross-domain material. That sentence is a current-state description, not a fixed essence. It can change if future work changes the actual assets, evidence rules, execution layer, or governance boundaries.
@@ -40,6 +42,10 @@ The project currently can:
 - select a bounded Minimum State-Changing Action when targets, metrics, or paths are unstable;
 - record M0 mechanism sketches and M1 mechanism adjudications with claim ceilings, alternative mechanisms, and downgrade conditions;
 - separate stance-blind review inputs and calibration sources so positive conclusions remain bound to criteria rather than proponent expectation.
+- detect no-information-gain loops, attractor loops, and rumination risk;
+- record SampleEnvelope, HypothesisDistribution, DecisionCollapseRecord, and NarrativeProvenanceLedger;
+- apply Action / Claim / Scale thresholds separately;
+- run ChunkAudit before treating a new concept or high-frequency term as canonical architecture language.
 
 ## Current Limits
 
@@ -52,6 +58,9 @@ The project currently must not claim:
 - to have resolved every pending claim, source gap, third-party rights issue or governance question;
 - to have a fixed final identity that later evidence cannot change.
 - that effectual action or mechanism adjudication is a universal method, a new truth layer, or proof of causality.
+- that repeated AI samples are independent fact evidence;
+- that choosing an action proves a mechanism true;
+- that a new term is a theory upgrade merely because it compresses language.
 
 A current inability is also not a permanent impossibility. It only means the present artifacts do not support that claim at this commit.
 

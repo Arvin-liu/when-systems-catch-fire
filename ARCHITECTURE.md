@@ -142,3 +142,34 @@ flowchart TB
 - [docs/architecture/effectual-action-plane.md](docs/architecture/effectual-action-plane.md)
 - [docs/architecture/mechanism-adjudication-plane.md](docs/architecture/mechanism-adjudication-plane.md)
 - [docs/governance/non-sycophancy-output-protocol.md](docs/governance/non-sycophancy-output-protocol.md)
+
+## 121Q13 注意力、分布与压缩控制 overlay
+
+121Q13 继续作为跨层控制 overlay，不新增真值层，不升级理论地位。它约束三件事：
+
+- 循环是否还有信息增量；
+- 输出样本是否被误当作答案或事实证据；
+- 新术语是否是真压缩，还是标签、伪组块或巨型吸引子。
+
+```mermaid
+flowchart TB
+  EA[效果推理候选行动] --> AD[IterationDelta / 吸引子审计]
+  AD -->|有信息增量| DIST[SampleEnvelope / HypothesisDistribution]
+  AD -->|无信息增量| STOP[停止、分支、外部证据或保留残余]
+  DIST --> DCR[DecisionCollapseRecord]
+  DCR --> THRESH[Action / Claim / Scale 三门槛]
+  THRESH --> CHUNK[ChunkAudit 压缩完整性门禁]
+  CHUNK --> PUB[受 claim ceiling 与压缩边界约束的发布]
+```
+
+边界：
+
+- AI 采样只能进入 hypothesis / interpretation / review 通道，不能直接升级为外部事实、数学证明或经验因果。
+- 行动坍缩只说明选择了下一步，不说明假设分布已经收敛为真。
+- 新术语通过 ChunkAudit 也不表示理论升级；它只表示该术语目前可展开、可生成问题、可减负且不会终止追问。
+
+121Q13 入口：
+
+- [docs/architecture/attention-attractor-control-plane.md](docs/architecture/attention-attractor-control-plane.md)
+- [docs/architecture/distribution-collapse-control-plane.md](docs/architecture/distribution-collapse-control-plane.md)
+- [docs/architecture/compression-integrity-gate.md](docs/architecture/compression-integrity-gate.md)

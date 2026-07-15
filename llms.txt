@@ -58,6 +58,11 @@ Red lines for agents:
 - Mechanism adjudication constrains explanation and claim ceiling; it does not identify causality by itself.
 - Positive evaluative words must bind object, criterion, version, evidence and boundary.
 - Separate calibration sources: external source, repository artifact, executable test or CI, real-world response, human judgment, independent model or review.
+- 121Q13 adds attention, distribution, and compression controls only as operation overlays.
+- Repeated loops require IterationDelta; no delta means stop, branch, seek external evidence, preserve residue, or downgrade.
+- AI and human outputs on open-ended questions are SampleEnvelope entries, not answers or fact evidence by default.
+- DecisionCollapse means action was selected; it does not mean HypothesisDistribution became true.
+- New concepts require ChunkAudit before canonical publication language.
 
 Validation before commit:
 - python3 tools/foundation/migrate_legacy.py --check

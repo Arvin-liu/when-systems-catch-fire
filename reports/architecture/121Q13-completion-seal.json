@@ -1,0 +1,19 @@
+{
+  "schema": "ignition.architecture.121q13.completion_seal.v1",
+  "status": "READY_AS_ATTENTION_DISTRIBUTION_CONTROL_CANDIDATE",
+  "draft_pr": 48,
+  "stacked_on_pr": 47,
+  "base_head": "338cfff999e26dce623c6c55d810587db4a668ba",
+  "macro_steps": 4,
+  "truth_layer_added": false,
+  "l0_l6_changed": false,
+  "psi0_modified": false,
+  "project_state_085_modified": false,
+  "legacy_tables_modified": false,
+  "historical_evidence_cards_modified": false,
+  "ai_sampling_as_fact_evidence": false,
+  "action_choice_as_mechanism_truth": false,
+  "new_terms_as_theory_upgrade": false,
+  "validator": "tools/validate_attention_distribution_compression.py",
+  "final_claim_ceiling": "schema_validated_pending_gpt_review"
+}
