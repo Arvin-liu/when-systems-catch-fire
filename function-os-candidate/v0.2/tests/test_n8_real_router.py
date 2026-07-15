@@ -47,7 +47,8 @@ class TestN8RealRouting(unittest.TestCase):
         spec_b, art_b = real_artifact(SUB)
         register(self.store, spec_a, art_a)
         register(self.store, spec_b, art_b)
-        self.artifacts = {a['function_id']: a for a in self.store.list()}
+        # real artifacts (with payload) keyed by function_id — used for routing+execute
+        self.artifacts = {'FN-20260715-0001': art_a, 'FN-20260715-0002': art_b}
 
     def test_registry_populated_two_functions(self):
         self.assertEqual(len(self.store.list()), 2)
