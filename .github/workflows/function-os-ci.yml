@@ -7,6 +7,7 @@ name: function-os-ci
 on:
   push:
     branches:
+      - main
       - 'records/ignition-121q6c-hy3-completion-merge-readiness-2026**'
     paths:
       - 'function-os-candidate/v0.2/**'
@@ -15,6 +16,14 @@ on:
     paths:
       - 'function-os-candidate/v0.2/**'
       - '.github/workflows/function-os-ci.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: function-os-ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
 
 jobs:
   function-os-matrix:
