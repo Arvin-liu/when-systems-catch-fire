@@ -1,0 +1,119 @@
+{
+  "version": "0.1",
+  "title": "Function OS v0.1 — Unified ID, Version & Hash Specification",
+  "timestamp": "2026-07-15T02:08:45Z",
+  "identifiers": {
+    "function_id": {
+      "format": "FN-{YYYYMMDD}-{N:04d}",
+      "example": "FN-20260715-0001",
+      "rules": [
+        "Unique per FunctionSpec",
+        "Immutable after creation",
+        "Globally unique within Function OS registry",
+        "Assigned at spec creation time, never reassigned"
+      ]
+    },
+    "artifact_id": {
+      "format": "ART-{function_id}-{spec_version}",
+      "example": "ART-FN-20260715-0001-1.0.0",
+      "rules": [
+        "Tied to function_id and spec_version",
+        "Immutable after creation",
+        "Hash-verified on load"
+      ]
+    },
+    "registry_revision": {
+      "format": "Integer: 1, 2, 3, ...",
+      "rules": [
+        "Monotonically increasing per function_id",
+        "Never reused or reset",
+        "Rollback creates new revision (not amend)"
+      ]
+    },
+    "provenance_id": {
+      "format": "PROV-{function_id}-{spec_version}-{compile_timestamp}",
+      "example": "PROV-FN-20260715-0001-1.0.0-1700000000",
+      "rules": [
+        "Ties spec to artifact to compiler version"
+      ]
+    }
+  },
+  "versioning": {
+    "spec_version": {
+      "format": "MAJOR.MINOR.PATCH (semver)",
+      "examples": [
+        "1.0.0",
+        "2.1.3"
+      ],
+      "rules": [
+        "MAJOR: breaking change to inputs, outputs, or specified behavior",
+        "MINOR: new feature, backward-compatible additions",
+        "PATCH: bug fix, clarification, no semantic change",
+        "Initial version for new specs: 1.0.0"
+      ]
+    },
+    "artifact_version": {
+      "format": "MAJOR.MINOR.PATCH (derived from spec_version)",
+      "rules": [
+        "MAJOR.MINOR always matches spec_version MAJOR.MINOR",
+        "PATCH incremented independently for compilation changes",
+        "Example: spec 1.0.0 → artifact 1.0.0, recompiled → 1.0.1"
+      ]
+    },
+    "compiler_version": {
+      "format": "MAJOR.MINOR.PATCH",
+      "rules": [
+        "Recorded in artifact manifest",
+        "Determines compilation path"
+      ]
+    }
+  },
+  "hashing": {
+    "algorithm": "SHA-256",
+    "encoding": "hex (lowercase)",
+    "content_hash": {
+      "definition": "SHA-256 of canonical JSON representation",
+      "canonicalization": "JSON with sorted keys, utf-8 encoding, no trailing newline",
+      "coverage": "All immutable fields of the entity",
+      "verification": "Recompute hash from stored fields and compare"
+    },
+    "hashed_entities": [
+      "FunctionSpec (all fields except mutable metadata)",
+      "Artifact manifest (all fields)",
+      "Artifact content (the compiled output itself)",
+      "Registry record (immutable fields: function_id, created_at, spec, artifact, content_hash)"
+    ],
+    "non_hashed": [
+      "Registry revision number (incremental, not content-derived)",
+      "Provenance links (pointers, not content)",
+      "Mutable metadata (status, notes, examples)"
+    ]
+  },
+  "immutability": {
+    "immutable_once_written": [
+      "function_id",
+      "artifact_id",
+      "content_hash",
+      "created_at",
+      "spec_version (never modified; new version = new FunctionSpec)"
+    ],
+    "mutable_with_audit_trail": [
+      "status (active, deprecated, superseded)",
+      "notes",
+      "examples",
+      "superseded_by"
+    ],
+    "never_deleted": [
+      "Registry revision records",
+      "Historical artifact manifests",
+      "Historical FunctionSpecs"
+    ]
+  },
+  "json_schema": {
+    "function_id_pattern": "^FN-\\d{8}-\\d{4}$",
+    "artifact_id_pattern": "^ART-FN-\\d{8}-\\d{4}-\\d+\\.\\d+\\.\\d+$",
+    "spec_version_pattern": "^\\d+\\.\\d+\\.\\d+$",
+    "content_hash_pattern": "^[a-f0-9]{64}$",
+    "timestamp_pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+  }
+}
