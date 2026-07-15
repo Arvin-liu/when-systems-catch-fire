@@ -63,6 +63,8 @@ Red lines for agents:
 - AI and human outputs on open-ended questions are SampleEnvelope entries, not answers or fact evidence by default.
 - DecisionCollapse means action was selected; it does not mean HypothesisDistribution became true.
 - New concepts require ChunkAudit before canonical publication language.
+- 121Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth source.
+- Map position, visual proximity, evolution stage, dependency, and sourcing decision are navigation judgments, not proof, isomorphism, natural law, causality, or transfer of Charter Gate responsibility.
 
 Validation before commit:
 - python3 tools/foundation/migrate_legacy.py --check

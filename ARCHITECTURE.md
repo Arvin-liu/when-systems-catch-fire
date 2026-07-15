@@ -173,3 +173,23 @@ flowchart TB
 - [docs/architecture/attention-attractor-control-plane.md](docs/architecture/attention-attractor-control-plane.md)
 - [docs/architecture/distribution-collapse-control-plane.md](docs/architecture/distribution-collapse-control-plane.md)
 - [docs/architecture/compression-integrity-gate.md](docs/architecture/compression-integrity-gate.md)
+
+## 121Q14 点火地图集 overlay
+
+121Q14 增加版本化地图投影与导航 overlay，不新增真值层，不废弃矩阵或 registry，也不建立永久唯一总地图。
+
+地图只回答：从特定观察者、决策问题、价值接受者和 `as_of_commit` 出发，当前地形如何导航，哪些依赖、成本、演进阶段、资源决策和未映射残余需要显式记录。
+
+边界：
+
+- 地图坐标不是事实证明。
+- 视觉邻近不是同构。
+- 演进阶段不是自然定律。
+- 依赖关系不是机制因果。
+- 自建、采购、租赁或外包建议不能转移 Charter Gate 责任。
+
+121Q14 入口：
+
+- [docs/architecture/ignition-atlas.md](docs/architecture/ignition-atlas.md)
+- [data/atlas/generated/ignition-atlas-121q14.json](data/atlas/generated/ignition-atlas-121q14.json)
+- [reports/atlas/121Q14-dynamic-atlas.md](reports/atlas/121Q14-dynamic-atlas.md)

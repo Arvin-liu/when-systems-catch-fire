@@ -39,6 +39,13 @@
 - docs/architecture/compression-integrity-gate.md
 
 不得把同一 AI 的多次输出当作独立事实证据；不得把行动选择写成机制真值；不得把新增术语写成理论升级。
+121Q14 新增点火地图集 overlay。涉及地图、资源决策、演进阶段、依赖地形或导航视图时，必须读取：
+
+- docs/architecture/ignition-atlas.md
+- data/atlas/generated/ignition-atlas-121q14.json
+- reports/atlas/121Q14-dynamic-atlas.md
+
+不得把地图坐标、视觉邻近、演进阶段或依赖关系写成事实证明、同构或机制因果。地图不能替代 registry、矩阵、schema、测试或来源工件。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

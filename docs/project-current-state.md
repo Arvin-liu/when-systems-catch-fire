@@ -14,6 +14,8 @@ Current state must be inferred from actual repository artifacts: architecture fi
 
 121Q13 adds a stacked current control overlay for attention, distribution, and compression. It records whether repeated loops add information, treats AI/human outputs as conditioned samples rather than answers, separates action collapse from truth collapse, and audits whether new terminology is real compression or only labeling. This remains a current capability addition, not a new theory layer.
 
+121Q14 adds a current atlas overlay. It projects existing registries, matrices, architecture surfaces, validation workflows, sustainability documents, and operation flows into versioned maps for declared observers and decision questions. These maps are navigation and resource-decision views, not a new source of truth or a fixed project identity.
+
 ## Current Shape
 
 At this version, the repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system for cross-domain material. That sentence is a current-state description, not a fixed essence. It can change if future work changes the actual assets, evidence rules, execution layer, or governance boundaries.
@@ -46,6 +48,9 @@ The project currently can:
 - record SampleEnvelope, HypothesisDistribution, DecisionCollapseRecord, and NarrativeProvenanceLedger;
 - apply Action / Claim / Scale thresholds separately;
 - run ChunkAudit before treating a new concept or high-frequency term as canonical architecture language.
+- generate versioned map projections with AtlasSpec, MapSpec, MapNode, MapEdge, MapProjection, MapDiff, EvolutionRecord, SourcingDecision, and UnmappedResidue;
+- distinguish matrix, registry, graph, and map authority;
+- show maintainer sustainability, epistemic architecture, and agent delivery landscapes without treating map position as proof.
 
 ## Current Limits
 
@@ -61,6 +66,8 @@ The project currently must not claim:
 - that repeated AI samples are independent fact evidence;
 - that choosing an action proves a mechanism true;
 - that a new term is a theory upgrade merely because it compresses language.
+- that any map is a permanent total map;
+- that visual proximity, dependency, or evolution stage proves fact, isomorphism, or causality.
 
 A current inability is also not a permanent impossibility. It only means the present artifacts do not support that claim at this commit.
 
