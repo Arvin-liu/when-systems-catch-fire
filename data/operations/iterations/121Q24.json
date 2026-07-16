@@ -1,0 +1,107 @@
+{
+  "method_version": "1.0.0",
+  "task_id": "121Q24",
+  "change_classification": [
+    "OPERATIONS_METHOD",
+    "RELEASE_OR_CURRENT_STATE_SYNC",
+    "INTERFACE_CHANGE"
+  ],
+  "verified_start": {
+    "main_head": "72318097d4d09277eeb55cc56d677e2fad1f9377",
+    "source": "origin/main after PR #55 merge",
+    "verified_at": "2026-07-16"
+  },
+  "branch_pr": {
+    "branch": "ops/121q24-ignition-iteration-method-current-state-sync-20260716",
+    "pr_number": null,
+    "base": "main",
+    "draft": true,
+    "merged": false
+  },
+  "gap": {
+    "summary": "The repository lacks one canonical cold-start iteration method and validator-enforced current-state/front-door synchronization contract.",
+    "evidence": [
+      "No canonical ITERATION.md existed before 121Q24.",
+      "No iteration manifest schema or validator existed before 121Q24.",
+      "Current-state and AI handoff surfaces were stale relative to the merged ARN capability."
+    ],
+    "smallest_material_action": "Add one canonical method, one manifest contract, supporting templates, and synchronized front-door/current-state references."
+  },
+  "claim_ceiling": "validated_operation_method_candidate_only",
+  "status": {
+    "candidate": true,
+    "ready_for_gpt_verification": false,
+    "accepted": false,
+    "merged": false,
+    "current": false
+  },
+  "impact_matrix": [
+    { "surface": "ITERATION.md", "decision": "CHANGE", "reason": "Canonical method entrypoint required." },
+    { "surface": "schemas/operations/iteration-manifest.schema.json", "decision": "CHANGE", "reason": "Machine-readable iteration contract required." },
+    { "surface": "tools/validate_iteration_sync.py", "decision": "CHANGE", "reason": "Future sync drift must be rejected." },
+    { "surface": "README.md", "decision": "CHANGE", "reason": "Front door must link the method without adding a wall of process text." },
+    { "surface": "docs/project-current-state.md", "decision": "CHANGE", "reason": "Current state must reflect merged ARN and candidate Q24 separately." },
+    { "surface": "AI-HANDOFF.md", "decision": "CHANGE", "reason": "Cold-start agents must read current state and method before acting." },
+    { "surface": "ARCHITECTURE.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q24 is an operations method and does not add an architecture or truth layer." },
+    { "surface": "FOUNDATION.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Foundation authority is unchanged." },
+    { "surface": "LICENSES", "decision": "NO_CHANGE_WITH_REASON", "reason": "No license terms or scopes change." }
+  ],
+  "changed_surfaces": [
+    "ITERATION.md",
+    "schemas/operations/iteration-manifest.schema.json",
+    "data/operations/iterations/121Q24.json",
+    "tools/validate_iteration_sync.py",
+    "tests/test_iteration_sync.py",
+    "templates/operations",
+    "README.md",
+    "docs/project-current-state.md",
+    "AI-HANDOFF.md",
+    "AI-START-HERE.md",
+    "llms.txt",
+    "SUMMARY.md",
+    "CHANGELOG.md",
+    "docs/VERSIONING.md",
+    ".github/workflows/foundation-validation.yml",
+    "reports/operations/121Q24-current-state-reconciliation.md"
+  ],
+  "explicitly_unaffected_surfaces": [
+    "Psi0 source text",
+    "085 architecture freeze assets",
+    "old function and case tables",
+    "historical evidence cards",
+    "formal charter",
+    "Function OS runtime",
+    "license terms",
+    "reality loop watchdog"
+  ],
+  "required_synchronization_decisions": [
+    "README links to ITERATION.md.",
+    "docs/project-current-state.md separates merged ARN current capability from Q24 candidate work.",
+    "AI-HANDOFF.md requires current-state and iteration-method reading before state-changing work.",
+    "llms.txt records method boundaries for machine readers.",
+    "CHANGELOG.md records ARN merge and Q24 candidate."
+  ],
+  "schema_tools_tests_workflows_reports_changed": [
+    "schemas/operations/iteration-manifest.schema.json",
+    "tools/validate_iteration_sync.py",
+    "tests/test_iteration_sync.py",
+    ".github/workflows/foundation-validation.yml",
+    "reports/operations/121Q24-current-state-reconciliation.md"
+  ],
+  "validation": {
+    "local": [
+      { "name": "iteration-sync", "status": "PENDING", "evidence": "Run after validator commit." }
+    ],
+    "remote": [
+      { "name": "foundation-validation", "status": "PENDING", "evidence": "Run after final Q24 push." },
+      { "name": "function-os-ci", "status": "PENDING", "evidence": "Run after final Q24 push or dispatch." }
+    ]
+  },
+  "rollback_strategy": "Revert the Q24 merge commit if merged, or close the Draft PR while preserving 121Q24 reports and receipts as rejected candidate history.",
+  "remaining_limitations": [
+    "The method constrains operation hygiene but cannot prove truth, value, causality or correctness.",
+    "The Q24 manifest is candidate work until its PR is accepted and merged.",
+    "Future method changes must self-iterate through the same contract."
+  ],
+  "receipt_location": "agent-results/IGNITION-20260716-121Q24-result.md"
+}
