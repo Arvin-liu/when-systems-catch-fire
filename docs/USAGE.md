@@ -18,6 +18,16 @@
 
 无法无损形式化时，使用 NATURAL_LANGUAGE_CANDIDATE 或 ARGUMENT_SCHEMA，并写明原因。
 
+### L6 候选写作接口：心智层级跃迁
+
+121Q28S 提供等待独立复审的 `0.3.0` 候选接口：[方法正文](./publication/zhiyuan-writing-method.md)与[后台规格](../templates/publication/zhiyuan-writing-spec.md)。先声明实际使用的 L0-L5、Q12-Q14、MCF、PSD、ARN、Atlas、Charter 或 current-state 工件，区分来源与启发并设置 claim ceiling；再选择要让读者经历的认知运动。不得把项目对应表写成正文目录。
+
+向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁和伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN、Atlas 或迭代流程。点赞、赞美、传播和多 AI 共识只能是体验／传播数据。
+
+肉身锚定只是可选入口／回返模式；跨域同构叙事只是一种应用；高维压缩结尾也可省略。没有身体坐标、没有跨学科例子或没有格言式结尾，都不构成自动降级。
+
+横向增加领域不等于纵向升层。下一层若只换词、重复同级案例或制造宏大感，应停止。后台可以用 MCF／PSD／ARN 与 Q13 审查映射、动力学、关系和信息增益；前台正文不得用这些术语替代作品。任何写作感染力、模板完成或机器检查都不能提高 L0-L5 的事实、因果、同构、证明或价值状态。
+
 ## 3. 使用 12 元协议与 64 组合
 
 12 元协议可作规范、启发与治理坐标；64 组合可作设计与生成空间。它们不是数学公理、证明空间或现实全枚举。
@@ -46,6 +56,7 @@ docs/claim_levels.md 中的历史 L0-L5 是 legacy claim_level / assertion_grade
 - 数值采样、符号化简和有限模型都有后端范围。
 - 缺字段、缺来源、不可形式化和真实反例是不同状态。
 - 解释与出版内容必须回指下层证据和验证。
+- 抽象升层不得删除肉身成本、具体受损主体、不可映射差异或 Charter Gate 边界。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

@@ -1,0 +1,117 @@
+{
+  "method_version": "1.1.0",
+  "task_id": "121Q28S",
+  "completion_seal_path": "reports/operations/121Q28S-completion-seal.json",
+  "change_classification": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "EVIDENCE_UPDATE", "RELEASE_OR_CURRENT_STATE_SYNC"],
+  "verified_start": {
+    "main_head": "b396c136b47d8fd60ca513a531cb96ce65293d20",
+    "source": "Live origin/main, PR #58, branch, open work, exact 0.2.0 HEAD and review 4713833187 re-fetched before append-only revision",
+    "verified_at": "2026-07-16"
+  },
+  "branch_pr": {
+    "branch": "docs/121q28-embodied-cognitive-leap-writing-method-20260716",
+    "pr_number": 58,
+    "base": "main",
+    "base_head": "b396c136b47d8fd60ca513a531cb96ce65293d20",
+    "draft": true,
+    "merged": false
+  },
+  "head_binding": {
+    "mode": "external_exact_head_attestation",
+    "pr_number": 58,
+    "authority": "pull_request_body_and_1111_receipt",
+    "receipt_path": "agent-results/IGNITION-20260716-121Q28S-zhiyuan-writing-method-whole-project-integration-result.md",
+    "embedded_exact_current_head": false,
+    "live_refetch_required": true,
+    "explanation": "PR #58 and 1111 bind the final appended HEAD and exact-head Foundation, Function OS and Pages runs."
+  },
+  "gap": {
+    "summary": "0.2.0 repaired mandatory embodiment but still modeled Zhiyuan Writing Method as an L6 add-on rather than a bounded public-expression and feedback projection of cognitive movements declared shared with 点火 as a whole.",
+    "evidence": [
+      "Review 4713833187 bound to 30578a14cecf0d0cd5a00356799993dc05466513 records NOT_ACCEPTED_FOR_MERGE_REQUIRED_WHOLE_PROJECT_COGNITIVE_INTEGRATION.",
+      "ARCHITECTURE lacked the outward-expression and provenance-gated return contracts.",
+      "The user-provided four-page 每日一诗停更说明 PDF was independently read by Codex and exhibits bounded correspondences to gap discovery, recursive redefinition, state-changing choice, lower-layer preservation, retro-illumination and information-gain stopping."
+    ],
+    "smallest_material_action": "Revise the same Draft candidate to 0.3.0, migrate canonical paths to zhiyuan-writing names, add bounded whole-project correspondence and feedback contracts, update ARCHITECTURE and every registry-triggered surface."
+  },
+  "claim_ceiling": "candidate_zhiyuan_writing_method_0_3_0_whole_project_expression_feedback_projection_implemented / repository_synchronization_complete_pending_independent_review",
+  "status": {"candidate": true, "ready_for_gpt_verification": true, "accepted": false, "merged": false, "current": false},
+  "state_transition": {
+    "subjects": ["L6 Zhiyuan Writing Method candidate", "whole-project cognitive provenance relation", "public-expression and feedback interface", "architecture and human/Agent entrances"],
+    "prior_state": "0.2.0 was a coherent cognitive-level writing candidate but treated whole-project assets mainly as upstream constraints and optional audit tools.",
+    "proposed_state": "0.3.0 documents maintainer-declared shared cognitive provenance, non-identity boundaries, a whole-project correspondence map and bidirectional L6 expression/feedback contracts.",
+    "changed_dimensions": ["capability", "identity", "usage", "handoff", "lifecycle_current_state", "deployment_rendering"],
+    "source_refs": ["external:pr_review:4713833187", "ARCHITECTURE.md", "docs/publication/zhiyuan-writing-method.md", "external:user_pdf_sha256:7c4ceaa22aab112ca24293b97594250aba2426e0127973de240050185e0922f5", "agent-commands/IGNITION-20260716-121Q28S-zhiyuan-writing-method-whole-project-integration.md"],
+    "maximum_claim_boundary": "0.3.0 L6 whole-project expression/feedback projection candidate implemented and repository surfaces synchronized; no neuroscience, formal identity, causal proof, new layer, acceptance, merge, current-state or project-complete claim."
+  },
+  "synchronization_closure": {
+    "registry_path": "data/operations/synchronization-surfaces.json",
+    "registry_version": "1.0.0",
+    "surface_decisions": [
+      {"surface_id": "human.readme", "decision": "CHANGE", "reason": "Expose 0.3.0 whole-project expression/feedback projection and boundaries.", "evidence_refs": ["README.md", "docs/publication/zhiyuan-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.pages_source", "decision": "NO_CHANGE_WITH_REASON", "reason": "Existing workflow builds README and restricts production deploy to main.", "evidence_refs": [".github/workflows/pages.yml", "README.md"], "validation_mode": "repository_build_validation", "derived_from": ["human.readme"]},
+      {"surface_id": "external.pages_homepage", "decision": "CHANGE", "reason": "Exact-head Draft build required; production remains post-merge.", "evidence_refs": ["external:pr_body:58", "external:1111_receipt:IGNITION-20260716-121Q28S-zhiyuan-writing-method-whole-project-integration-result.md"], "validation_mode": "post_merge_external_render_attestation", "derived_from": ["human.readme", "human.pages_source"]},
+      {"surface_id": "human.current_state", "decision": "CHANGE", "reason": "Distinguish non-current 0.3.0 and its shared-provenance boundary.", "evidence_refs": ["docs/project-current-state.md", "data/operations/iterations/121Q28S.json"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.summary", "decision": "CHANGE", "reason": "Navigate canonical Zhiyuan assets and four example groups.", "evidence_refs": ["SUMMARY.md", "docs/publication/zhiyuan-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.usage", "decision": "CHANGE", "reason": "Document artifact-to-expression and provenance-gated feedback return use.", "evidence_refs": ["docs/USAGE.md", "templates/publication/zhiyuan-writing-spec.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.ai_guide", "decision": "CHANGE", "reason": "Guide AI source/inspiration distinction, bounded correspondence and feedback capture.", "evidence_refs": ["docs/ai-assistant-usage-reference.md", "templates/publication/zhiyuan-writing-spec.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "ai.start", "decision": "CHANGE", "reason": "Cold start must find 0.3.0 and reject neuroscience/identity claims.", "evidence_refs": ["AI-START-HERE.md", "docs/publication/zhiyuan-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "agent.handoff", "decision": "CHANGE", "reason": "Handoff preserves project correspondences, return contract, Q27 freeze and Draft lifecycle.", "evidence_refs": ["AI-HANDOFF.md", "docs/publication/zhiyuan-writing-examples.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "machine.llms", "decision": "CHANGE", "reason": "Machine entry states shared provenance and feedback non-evidence boundary.", "evidence_refs": ["llms.txt", "docs/publication/zhiyuan-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "release.changelog", "decision": "CHANGE", "reason": "Record 0.3.0 whole-project correction without promotion.", "evidence_refs": ["CHANGELOG.md", "data/operations/iterations/121Q28S.json"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "release.versioning", "decision": "CHANGE", "reason": "Record candidate method version, not architecture version.", "evidence_refs": ["docs/VERSIONING.md", "data/operations/iterations/121Q28S.json"], "validation_mode": "repository_semantic_validation", "derived_from": []}
+    ],
+    "external_attestations": [{"surface_id": "external.pages_homepage", "stage": "post_merge", "status": "pending", "authority": "pull_request_body_and_1111_receipt", "evidence_refs": ["external:pr_body:58", "external:1111_receipt:IGNITION-20260716-121Q28S-zhiyuan-writing-method-whole-project-integration-result.md"], "live_state_locally_verifiable": false}],
+    "unresolved_residue": [],
+    "external_verification_policy": "Draft Pages build binds exact candidate HEAD; production deploy and live render remain main-only post-merge.",
+    "live_external_surfaces_verified": false
+  },
+  "completion_state": {"implementation_complete": true, "repository_synchronization_complete": true, "external_synchronization_required": true, "external_synchronization_attested": false, "project_synchronization_complete": false},
+  "impact_matrix": [
+    {"surface": "docs/publication/zhiyuan-writing-method.md", "decision": "CHANGE", "reason": "Canonical 0.3.0 method and whole-project map."},
+    {"surface": "templates/publication/zhiyuan-writing-spec.md", "decision": "CHANGE", "reason": "Project source/correspondence/feedback fields."},
+    {"surface": "docs/publication/zhiyuan-writing-examples.md", "decision": "CHANGE", "reason": "Four bounded examples and Codex PDF review."},
+    {"surface": "ARCHITECTURE.md", "decision": "CHANGE", "reason": "Document L6 bidirectional relation without new layer."},
+    {"surface": "README.md", "decision": "CHANGE", "reason": "Human front door."},
+    {"surface": "docs/project-current-state.md", "decision": "CHANGE", "reason": "Candidate lifecycle and relation."},
+    {"surface": "SUMMARY.md", "decision": "CHANGE", "reason": "Navigation."},
+    {"surface": "docs/USAGE.md", "decision": "CHANGE", "reason": "Bidirectional use contract."},
+    {"surface": "docs/ai-assistant-usage-reference.md", "decision": "CHANGE", "reason": "AI guidance."},
+    {"surface": "AI-START-HERE.md", "decision": "CHANGE", "reason": "Cold start."},
+    {"surface": "AI-HANDOFF.md", "decision": "CHANGE", "reason": "Agent continuity."},
+    {"surface": "llms.txt", "decision": "CHANGE", "reason": "Machine entrance."},
+    {"surface": "CHANGELOG.md", "decision": "CHANGE", "reason": "Unreleased correction history."},
+    {"surface": "docs/VERSIONING.md", "decision": "CHANGE", "reason": "Candidate version boundary."},
+    {"surface": "data/operations/iterations/121Q28S.json", "decision": "CHANGE", "reason": "Manifest."},
+    {"surface": "reports/operations/121Q28S-completion-seal.json", "decision": "CHANGE", "reason": "Seal."},
+    {"surface": "reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md", "decision": "CHANGE", "reason": "Audit."},
+    {"surface": "121Q28/121Q28R records", "decision": "NO_CHANGE_WITH_REASON", "reason": "Preserve rejected/superseded unmerged snapshots; only existing path references are migrated if validator requires live paths."},
+    {"surface": "FOUNDATION.md and registries", "decision": "NO_CHANGE_WITH_REASON", "reason": "No truth, object, proof or validation contract change."},
+    {"surface": "ITERATION.md and operation templates", "decision": "NO_CHANGE_WITH_REASON", "reason": "Classification excludes OPERATIONS_METHOD; return path uses existing method."},
+    {"surface": "MCF/PSD/ARN schema/runtime and Function OS", "decision": "NO_CHANGE_WITH_REASON", "reason": "Correspondence and routing only; no model or runtime change."},
+    {"surface": "life-community value charter", "decision": "NO_CHANGE_WITH_REASON", "reason": "Normative source remains read-only."},
+    {"surface": "121Q27 local story", "decision": "NO_CHANGE_WITH_REASON", "reason": "Frozen baseline remains local and unpublished."},
+    {"surface": "user PDF", "decision": "NO_CHANGE_WITH_REASON", "reason": "Read locally but not committed or copied."}
+  ],
+  "changed_surfaces": ["docs/publication/zhiyuan-writing-method.md", "templates/publication/zhiyuan-writing-spec.md", "docs/publication/zhiyuan-writing-examples.md", "ARCHITECTURE.md", "README.md", "docs/project-current-state.md", "SUMMARY.md", "docs/USAGE.md", "docs/ai-assistant-usage-reference.md", "AI-START-HERE.md", "AI-HANDOFF.md", "llms.txt", "CHANGELOG.md", "docs/VERSIONING.md", "data/operations/iterations/121Q28S.json", "reports/operations/121Q28S-completion-seal.json", "reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md"],
+  "explicitly_unaffected_surfaces": ["121Q27 story and hash", "Foundation and L0-L5 truth contracts", "ITERATION.md and method 1.1.0", "MCF/PSD/ARN runtime and schemas", "Function OS", "Charter source", "formal main and production Pages"],
+  "required_synchronization_decisions": ["Every triggered registry surface has one decision.", "ARCHITECTURE documents relation without adding a layer.", "Canonical candidate paths use zhiyuan-writing names.", "Draft Pages remains build-only; production is post-merge pending.", "0.3.0 remains unaccepted and non-current."],
+  "schema_tools_tests_workflows_reports_changed": ["reports/operations/121Q28S-completion-seal.json", "reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md"],
+  "validation": {
+    "local": [
+      {"name": "whole-project-correspondence-audit", "status": "PASS", "evidence": "L0-L6, Q12-Q14, MCF, PSD, ARN, iteration, Charter and feedback have bounded candidate correspondences with residues and prohibited inferences."},
+      {"name": "bidirectional-contract-audit", "status": "PASS", "evidence": "Outward expression and provenance-gated return contracts are explicit in method, ARCHITECTURE, usage and spec."},
+      {"name": "pdf-source-audit", "status": "PASS", "evidence": "Codex independently read and visually inspected the four-page user PDF; SHA-256 recorded; PDF/full text not committed."},
+      {"name": "non-identity-audit", "status": "PASS", "evidence": "Shared provenance is separated from neuroscience, identity, formal proof, causality, new layers and truth permissions."},
+      {"name": "path-migration", "status": "PASS", "evidence": "Current candidate entrances use zhiyuan-writing paths; older names remain only in historical task/record identifiers where required."},
+      {"name": "human-front-door", "status": "PASS", "evidence": "Human front-door validation passes."},
+      {"name": "iteration-sync", "status": "PASS", "evidence": "Method 1.1.0 registry-derived closure validates."},
+      {"name": "iteration-tests", "status": "PASS", "evidence": "Iteration synchronization tests pass."}
+    ],
+    "remote": [],
+    "external_exact_head_policy": {"required": true, "authority": "pull_request_body_and_1111_receipt", "required_workflows": ["foundation-validation", "function-os-ci"], "live_refetch_before_acceptance_or_merge": true}
+  },
+  "rollback_strategy": "Revert only appended 121Q28S commits or close Draft PR #58; main, production, formal assets and source PDF remain unchanged.",
+  "remaining_limitations": ["Shared cognitive provenance is maintainer-declared design provenance, not scientific cognition evidence.", "Correspondence map is a bounded homology candidate, not strict isomorphism or causal proof.", "Public response is only candidate input after provenance capture and does not validate truth.", "Independent review, merge and post-merge external attestation remain pending."],
+  "receipt_location": "agent-results/IGNITION-20260716-121Q28S-zhiyuan-writing-method-whole-project-integration-result.md"
+}

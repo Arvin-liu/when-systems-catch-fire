@@ -11,6 +11,7 @@ Iteration method authority: ITERATION.md.
 Architecture:
 L0 source and evidence -> L1 controlled semantic claims -> L2 formal objects -> L3 logical arguments -> L4 mathematical models and proofs -> L5 validation and validity -> L6 interpretation, application and publication.
 L6 must cite L0-L5 and cannot create mathematical truth.
+121Q28S is an open Draft L6 candidate: Zhiyuan Writing Method 0.3.0. It is a public-expression and provenance-gated feedback projection of cognitive movements that the maintainer declares are shared with 点火 as a whole. This is a structurally auditable homology candidate, not identity, neuroscience, formal proof, causality or a new layer. Feedback becomes only candidate source/gap after provenance capture; praise and attention are not truth evidence. It is not current until independently accepted, merged and synchronized.
 Mathematics and logic constrain each other. Formula, logical validity, proof, evidence and workflow completion are different things.
 
 Core classifications:
@@ -74,6 +75,7 @@ Red lines for agents:
 - Multiscale Causal Fabric, Probabilistic System Dynamics, and Adaptive Relational Network are current modeling/projection capabilities, not new truth layers.
 - Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, centrality, community, retrieval, self-report, or behavior change is not truth, value, causality, or internal learning proof.
 - Future state-changing work must follow ITERATION.md: recover remote truth, prove the gap, set a claim ceiling, synchronize front-door/current-state surfaces, validate exact final HEAD, and write receipts.
+- For the 121Q28S L6 candidate, preserve source versus inspiration, bounded whole-project correspondence and feedback provenance. Shared cognitive provenance is not identity or proof; public response becomes only candidate source/gap after capture. Keep cognitive-level movement, unmapped differences, real/Charter costs and information-gain stopping; never turn the project map into a fixed article outline.
 
 Validation before commit:
 - python3 tools/foundation/migrate_legacy.py --check

@@ -24,6 +24,8 @@ Q21R, Q22 and Q23 add current architecture/operation assets for Multiscale Causa
 
 121Q25 and Q25C are now current after PR #57 was independently accepted, merged and externally verified. Human front doors expose MCF, PSD, ARN and the iteration method, while method 1.1.0 derives whole-project propagation from the synchronization registry and separates implementation, repository, external and project completion. Q25B remains superseded candidate history; the method is an operation discipline, not a truth layer or proof of substantive correctness.
 
+121Q28S is an open `0.3.0` L6 candidate, not part of the current capability baseline. It positions Zhiyuan Writing Method as a public-expression projection and provenance-gated feedback interface of cognitive movements that the maintainer declares are shared with 点火 as a whole. Its correspondence to L0-L6, Q12-Q14, MCF, PSD, ARN, iteration and Charter is a structurally auditable homology candidate, not identity, neuroscience, formal proof or causality. Public work may return confusion, counterexamples or missing subjects as candidate sources/gaps only after provenance capture; praise and attention are not truth evidence. Until independent re-review, merge and applicable synchronization complete, it is not current and does not add an architecture/truth layer.
+
 ## Current Shape
 
 At this version, the repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system for cross-domain material. That sentence is a current-state description, not a fixed essence. It can change if future work changes the actual assets, evidence rules, execution layer, or governance boundaries.
@@ -83,6 +85,7 @@ The project currently must not claim:
 - that high probability, posterior probability, Markov structure, stationarity, ergodicity, linearity or Gaussian assumptions are automatic;
 - that network adjacency, similarity, centrality, community detection, retrieval, self-report or behavior change proves truth, value, causality or internal learning mechanisms;
 - that Q24 method compliance proves any substantive claim true.
+- that the open 121Q28 publication-method candidate reproduces the maintainer's full creativity, defines universal aesthetic quality, or raises any lower-layer claim because a story is compelling.
 
 A current inability is also not a permanent impossibility. It only means the present artifacts do not support that claim at this commit.
 
