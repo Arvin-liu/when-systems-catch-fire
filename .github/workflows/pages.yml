@@ -34,6 +34,14 @@ jobs:
           cp pages/_config.yml site/_config.yml
           cp pages/assets/readable.css site/assets/readable.css
           cp pages/_layouts/default.html site/_layouts/default.html
+          mkdir -p site/docs/publication/works
+          mkdir -p site/docs/publication/cases
+          mkdir -p site/reports/publication
+          cp docs/publication/zhiyuan-writing-showcase.md site/docs/publication/zhiyuan-writing-showcase.md
+          cp docs/publication/zhiyuan-writing-method.md site/docs/publication/zhiyuan-writing-method.md
+          cp docs/publication/works/when-an-army-believes-its-own-back.md site/docs/publication/works/when-an-army-believes-its-own-back.md
+          cp docs/publication/cases/jin-rise-case-source.md site/docs/publication/cases/jin-rise-case-source.md
+          cp reports/publication/jin-rise-point-fire-analysis.md site/reports/publication/jin-rise-point-fire-analysis.md
           {
             printf '%s\n' '---'
             printf '%s\n' 'title: When Systems Catch Fire / 点火'
