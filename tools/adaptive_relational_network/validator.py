@@ -69,10 +69,22 @@ def _ids(items: list[dict], key: str, namespace: str, nid: str, errors: list[str
     return ids
 
 
+def _is_blank(value: object) -> bool:
+    if value is None:
+        return True
+    if isinstance(value, str):
+        return value.strip() == ""
+    if isinstance(value, list):
+        return not value or all(_is_blank(item) for item in value)
+    if isinstance(value, dict):
+        return not value
+    return False
+
+
 def _require_non_empty(nid: str, owner: str, item: dict, fields: tuple[str, ...], errors: list[str]) -> None:
     for field in fields:
         value = item.get(field)
-        if value is None or value == "" or value == [] or value == {}:
+        if _is_blank(value):
             errors.append(f"{nid}: {owner} missing non-empty {field}")
 
 
@@ -85,6 +97,39 @@ def _check_refs(nid: str, owner: str, refs: list[str], allowed: set[str], errors
 def _external_ref_ids(item: dict) -> set[str]:
     refs = item.get("external_refs", [])
     return {ref.get("ref_id") for ref in refs if ref.get("ref_id")}
+
+
+def _check_no_cross_namespace_collisions(nid: str, namespaces: dict[str, set[str]], errors: list[str]) -> None:
+    owners: dict[str, list[str]] = {}
+    for namespace, values in namespaces.items():
+        for value in values:
+            if value:
+                owners.setdefault(value, []).append(namespace)
+    for value, places in sorted(owners.items()):
+        if len(places) > 1:
+            errors.append(f"{nid}: diff reference namespace collision {value} in {', '.join(places)}")
+
+
+def _validate_external_refs(nid: str, diff: dict, local_domain: set[str], errors: list[str]) -> set[str]:
+    seen: dict[str, str] = {}
+    ids: set[str] = set()
+    for ref in diff.get("external_refs", []):
+        ref_id = ref.get("ref_id")
+        ref_type = ref.get("ref_type")
+        owner = f"diff {diff.get('diff_id')} external_ref {ref_id}"
+        _require_non_empty(nid, owner, ref, ("ref_id", "ref_type", "claim_ceiling"), errors)
+        if not ref_id:
+            continue
+        if ref_id in local_domain:
+            errors.append(f"{nid}: diff {diff.get('diff_id')} external_ref {ref_id} collides with local diff reference")
+        if ref_id in seen:
+            if seen[ref_id] != ref_type:
+                errors.append(f"{nid}: conflicting external ref {ref_id} types {seen[ref_id]} and {ref_type}")
+            else:
+                errors.append(f"{nid}: duplicate external ref id {ref_id}")
+        seen[ref_id] = ref_type
+        ids.add(ref_id)
+    return ids
 
 
 def validate_network(network: dict) -> list[str]:
@@ -112,21 +157,22 @@ def validate_network(network: dict) -> list[str]:
     cascade_ids = _ids(network.get("cascade_or_spillover", []), "record_id", "cascade", nid, errors)
     _ = (hyper_ids, coupling_ids, activation_ids, response_ids, episode_ids, diff_ids, residue_ids, attractor_ids, cascade_ids)
     network_ids = {network.get("network_spec", {}).get("network_id", "")}
+    _check_no_cross_namespace_collisions(
+        nid,
+        {"network_id": network_ids, "state_id": state_ids, "projection_id": projection_ids},
+        errors,
+    )
     diff_ref_domain = network_ids | state_ids | projection_ids
     for node in network.get("nodes", []):
         _check_refs(nid, f"node {node.get('node_id')} layer", node.get("layers", []), layer_ids, errors)
-        for field in ("provenance", "uncertainty", "claim_ceiling"):
-            if not node.get(field):
-                errors.append(f"{nid}: node {node.get('node_id')} missing {field}")
+        _require_non_empty(nid, f"node {node.get('node_id')}", node, ("provenance", "uncertainty", "claim_ceiling"), errors)
     for rel in network.get("relations", []):
         rid = rel.get("relation_id")
         if rel.get("source") not in node_ids or rel.get("target") not in node_ids:
             errors.append(f"{nid}: {rid} dangling endpoint")
         if rel.get("layer") not in layer_ids:
             errors.append(f"{nid}: {rid} dangling layer")
-        for field in ("provenance", "uncertainty", "claim_ceiling", "temporal_bounds"):
-            if not rel.get(field):
-                errors.append(f"{nid}: {rid} missing {field}")
+        _require_non_empty(nid, f"relation {rid}", rel, ("provenance", "uncertainty", "claim_ceiling", "temporal_bounds"), errors)
         try:
             parse_interval(rel["temporal_bounds"])
         except (KeyError, TypeError, ValueError) as exc:
@@ -193,16 +239,13 @@ def validate_network(network: dict) -> list[str]:
         _require_non_empty(nid, f"projection {projection.get('projection_id')}", projection, ("projection_rules", "omitted_dimensions", "claim_ceiling"), errors)
     for diff in network.get("diffs", []):
         _require_non_empty(nid, f"diff {diff.get('diff_id')}", diff, ("from_ref", "to_ref", "claim_ceiling"), errors)
-        local_or_external = diff_ref_domain | _external_ref_ids(diff)
+        external_ids = _validate_external_refs(nid, diff, diff_ref_domain, errors)
+        local_or_external = diff_ref_domain | external_ids
         _check_refs(nid, f"diff {diff.get('diff_id')} from_ref", [diff.get("from_ref")], local_or_external, errors)
         _check_refs(nid, f"diff {diff.get('diff_id')} to_ref", [diff.get("to_ref")], local_or_external, errors)
-        for ref in diff.get("external_refs", []):
-            _require_non_empty(nid, f"diff {diff.get('diff_id')} external_ref {ref.get('ref_id')}", ref, ("ref_id", "ref_type", "claim_ceiling"), errors)
     for evidence in network.get("embedding_evidence", []):
         required = ("external_availability", "retrieval", "relational_linkage", "conflict_exposure", "judgment_change", "action_change", "transfer", "delayed_stability", "alternatives", "evidence", "claim_ceiling")
-        for field in required:
-            if not evidence.get(field):
-                errors.append(f"{nid}: embedding evidence missing {field}")
+        _require_non_empty(nid, f"embedding evidence {evidence.get('record_id')}", evidence, required, errors)
         blob = json.dumps(evidence, ensure_ascii=False).lower()
         if "retrieval proves integration" in blob or "self-report proves behavior" in blob:
             errors.append(f"{nid}: embedding evidence overclaim")

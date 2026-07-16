@@ -175,8 +175,8 @@ def test_empty_claim_ceiling_provenance_alternatives_and_residue_are_rejected():
     network["integration_responses"][0]["alternative_explanations"] = []
     network["unmapped_residue"][0]["description"] = ""
     errors = validate_network(network)
-    assert any("missing provenance" in error for error in errors), errors
-    assert any("missing claim_ceiling" in error for error in errors), errors
+    assert any("provenance" in error for error in errors), errors
+    assert any("claim_ceiling" in error for error in errors), errors
     assert any("alternative_explanations" in error for error in errors), errors
     assert any("missing non-empty description" in error for error in errors), errors
 
@@ -212,6 +212,7 @@ def test_every_id_bearing_collection_rejects_duplicates():
         "cascade_or_spillover": "record_id",
         "embedding_evidence": "record_id",
         "projections": "projection_id",
+        "diffs": "diff_id",
         "unmapped_residue": "residue_id",
     }
     for collection, field in id_fields.items():
@@ -249,6 +250,72 @@ def test_diff_refs_must_be_local_or_declared_external_refs():
         {"ref_id": "arbitrary-before", "ref_type": "git_commit", "claim_ceiling": "external ref only"},
         {"ref_id": "arbitrary-after", "ref_type": "git_commit", "claim_ceiling": "external ref only"},
     ]
+    assert validate_network(network) == []
+
+
+def test_diff_external_refs_reject_duplicates_conflicts_and_local_collisions():
+    network = valid_network()
+    local_id = network["network_spec"]["network_id"]
+    network["diffs"] = [{
+        "diff_id": "d1",
+        "from_ref": "ext",
+        "to_ref": "ext",
+        "external_refs": [
+            {"ref_id": "ext", "ref_type": "git_commit", "claim_ceiling": "external ref only"},
+            {"ref_id": "ext", "ref_type": "git_commit", "claim_ceiling": "external ref only"},
+        ],
+        "node_changes": [],
+        "relation_changes": [],
+        "layer_changes": [],
+        "boundary_changes": [],
+        "claim_ceiling": "diff only",
+    }]
+    assert_rejected(network, "duplicate external ref id ext")
+    network["diffs"][0]["external_refs"][1]["ref_type"] = "external_projection"
+    assert_rejected(network, "conflicting external ref ext")
+    network["diffs"][0]["external_refs"] = [{"ref_id": local_id, "ref_type": "git_commit", "claim_ceiling": "external ref only"}]
+    network["diffs"][0]["from_ref"] = local_id
+    network["diffs"][0]["to_ref"] = local_id
+    assert_rejected(network, f"external_ref {local_id} collides with local diff reference")
+
+
+def test_diff_local_reference_namespace_must_not_collide():
+    network = valid_network()
+    network["network_states"][0]["state_id"] = network["network_spec"]["network_id"]
+    assert_rejected(network, "diff reference namespace collision")
+
+
+def test_semantic_nonblank_rejects_whitespace_only_required_content():
+    network = valid_network()
+    network["attractor_or_oscillation"][0]["loop_pattern"] = ["  ", "\t"]
+    network["cascade_or_spillover"][0]["path"] = ["   "]
+    network["nodes"][0]["provenance"] = ["  "]
+    network["integration_responses"][0]["alternative_explanations"] = ["  "]
+    network["reconfiguration_episodes"][0]["residue"] = ["  "]
+    network["embedding_evidence"][0]["evidence"] = ["  "]
+    network["embedding_evidence"][0]["claim_ceiling"] = "   "
+    errors = validate_network(network)
+    assert any("loop_pattern" in error for error in errors), errors
+    assert any("path" in error for error in errors), errors
+    assert any("provenance" in error for error in errors), errors
+    assert any("alternative_explanations" in error for error in errors), errors
+    assert any("residue" in error for error in errors), errors
+    assert any("evidence" in error for error in errors), errors
+    assert any("claim_ceiling" in error for error in errors), errors
+
+
+def test_optional_empty_diff_change_arrays_remain_valid():
+    network = valid_network()
+    network["diffs"] = [{
+        "diff_id": "d1",
+        "from_ref": network["network_states"][0]["state_id"],
+        "to_ref": network["projections"][0]["projection_id"],
+        "node_changes": [],
+        "relation_changes": [],
+        "layer_changes": [],
+        "boundary_changes": [],
+        "claim_ceiling": "diff with no category changes is allowed",
+    }]
     assert validate_network(network) == []
 
 
