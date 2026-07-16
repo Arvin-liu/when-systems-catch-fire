@@ -60,7 +60,8 @@ def project_from_sources(commit: str, source_paths: list[str], purpose: str) -> 
             label = rel_path
             nodes.append(_node(node_id, label, "source_file", layer, rel_path, commit))
             relations.append(_relation(f"rel-repo-{idx}", "repo", node_id, "resource_reference", layer, rel_path, commit, idx, idx + 1))
-            relations.append(_relation(f"rel-chain-{idx}", node_id, "repo", "dependency", layer, rel_path, commit, idx + 0.25, idx + 0.5))
+            relations.append(_relation(f"rel-chain-{idx}", node_id, "repo", "dependency", layer, rel_path, commit, idx + 1.25, idx + 1.5))
+            relations.append(_relation(f"rel-backdated-{idx}", node_id, "repo", "dependency", layer, rel_path, commit, idx - 0.5, idx - 0.25))
         else:
             residue.append({"residue_id": f"missing-{idx}", "residue_type": "missing_bridge", "description": f"Source path not present in checked-out tree: {rel_path}", "claim_ceiling": "missing source residue"})
     hyper = []
