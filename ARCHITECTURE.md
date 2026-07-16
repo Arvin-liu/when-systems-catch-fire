@@ -33,24 +33,28 @@ L0 记录来源事实；L1 声明主体、条件、量词、范围与失败边�
 
 ## 点火与之元写作法的同源认知投影及 L6 双向反馈
 
-121Q28T 已将[之元写作法 0.3.0](docs/publication/zhiyuan-writing-method.md)收口为现有 L6 的当前公共表达与反馈能力，不增加 L7 或新真值层。其有边界关系表述仍是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`；此处 `candidate` 限定结构对应的认识地位，而非方法生命周期。
+121Q28T 已将之元写作法 0.3.0 收口为现有 L6 的当前公共表达与反馈能力。121Q31 的[0.4.0 Draft 候选](docs/publication/zhiyuan-writing-method.md)进一步把素材池分为外部输入源与点火增量输出源；它仍不增加 L7 或新真值层。其有边界关系表述仍是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`；此处结构对应 `candidate` 与方法 Draft 生命周期是不同维度。
 
 点火与之元写作法被维护者声明为同一认知运动在不同任务约束下形成的投影：点火把材料、残余、跨尺度联系、语义修订、行动后回照、历史保存和停止条件约束成可审计的来源、模型、验证和迭代；之元写作法让相近运动在公共语言中被读者经历，并把作品暴露的误解、遗漏主体、失败同构、伪压缩和现实反例送回项目。
 
 ```mermaid
 flowchart LR
-  SRC[L0-L5 / Charter / current state] --> ZW[L6 之元写作法 0.3.0]
+  EXT[外部输入源] --> POOL[双来源写作素材池]
+  INC[点火增量输出源] --> POOL
+  SRC[L0-L5 / Charter / current state] --> INC
+  POOL --> ZW[L6 之元写作法<br/>0.3 current / 0.4 Draft]
   ZW --> WORK[公共作品]
   WORK --> RESP[读者/现实反馈与作者修订]
   RESP --> PROV[来源与范围登记]
   PROV --> CAND[候选 L0 source / gap / reality feedback]
   CAND --> OPS[Q12/Q13/MCF/PSD/ARN/Atlas/iteration 按需处理]
   OPS --> SRC
+  OPS --> INC
 ```
 
 两条契约：
 
-- 向外表达：`L0-L5 / Charter / current state → L6 Zhiyuan Writing Method → public work`。必须保存来源、claim ceiling、不可映射残余和受损／沉默主体，不能用文学感染力制造下层真实性。
+- 向外表达：`external inputs + provenance-bound ignition increments / Charter / current state → L6 Zhiyuan Writing Method → public work`。点火增量可继续成为写作材料，但必须保存生成路径、版本、claim ceiling、原始来源与残余，不能重算为独立复证。
 - 返回点火：`public work / response / revision → provenance capture → candidate L0 source or gap → applicable project operation`。反馈先成为候选输入；点赞、赞美、传播、共鸣或多 AI 一致不是事实证据。
 
 同源不等于同一：本关系不是脑科学发现、形式同构证明、因果识别或固定项目本体。之元写作法不能替代 Foundation、证明、validator、Function OS、MCF、PSD、ARN 或迭代纪律；点火也不能从个人文风自动推出。操作位置仍在 L6，生成来源跨越项目整体，但证据权限不高于 L6。
@@ -62,6 +66,10 @@ flowchart LR
 `case provenance → point-fire analysis → accepted work → method version`
 
 该链只证明某个版本的来源、分析、方法与作品可被共同审计。作品被接受不证明来源命题为真、分析完成因果识别、方法普遍有效或 AI 复制了作者；受限原始材料只保留 provenance，不因成果展示而重新公开。
+
+### 完整可点击系统图
+
+121Q31 Draft 将[data/architecture/interactive-system-map.json](data/architecture/interactive-system-map.json)作为节点、分组、目标与关系的机器权威，经生成器产生单一 interactive SVG，并由 README 与 Pages 双表面投影。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达与反馈环，不增加架构层。节点与连线是导航和受约束信息流，不自动表示因果、严格同构或理论完整性。
 
 ## 目录权威
 

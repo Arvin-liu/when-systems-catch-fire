@@ -1,15 +1,47 @@
 # 之元写作法故事规格
 
-Method version: `0.3.0`
-Status: `CURRENT_BACKSTAGE_TEMPLATE`
+Method version: `0.4.0` candidate; current merged baseline remains `0.3.0`
+Status: `CANDIDATE_BACKSTAGE_TEMPLATE_PENDING_INDEPENDENT_REVIEW`
 
 本规格用于后台生成与审计，不是前台提纲。字段顺序不是段落顺序；允许折返、留空、合并、分叉和 `UNNAMED`，不得把它变成固定层数、五段式或隐蔽分幕。
 
 方法以之元命名以标记其心智与作品来源；模板只承载可迁移的心智层级跃迁内核，不能复制之元本人。
 
+## 双来源素材池
+
+这里的“素材来源”是写作生成角色，不把点火派生产物伪装成新的外部证据。按实际使用复制条目。
+
+### 外部输入源 `<n>`
+
+- `source_class`: `external_input`
+- 题名／对象／事件：
+- 作者、时间、渠道、版本与 canonical locator：
+- 版权、隐私与可公开范围：
+- 外部核验状态与 claim ceiling：
+- 它提供的事实、经验、语言或张力：
+
+### 点火增量输出源 `<n>`
+
+- `source_class`: `ignition_increment`
+- 增量类型：`claim / argument / formal_object / mechanism / map / gap / residue / Q12 / Q13 / Q14 / MCF / PSD / ARN / Atlas / point-fire analysis / provenance-gated return / other`
+- canonical 路径／ID、生成任务、版本或 commit：
+- 它回链的外部材料、操作或反馈：
+- 当前状态与 claim ceiling：
+- 未决 gap、residue、竞争解释和不可映射部分：
+- 它在写作中承担：`起始承载点 / 概念压力 / 跃迁接口 / 竞争解释 / 回照对象 / 其他`
+- 是否被误算为独立复证：`NO / 需要修正`
+
+### 入池审计
+
+- 所有材料是否已标记来源类别：
+- 点火增量是否能展开回实际来源与生成过程：
+- provenance-gated 返回项是否记录主体、时间、渠道、原文范围和解释限制：
+- 受限全文是否保持不公开：
+- 是否错误提高 L0—L5 claim 或暗增新层：
+
 ## 项目来源与表达目标
 
-- 本次使用的实际点火来源（L0-L5／Q12-Q14／MCF／PSD／ARN／Atlas／Charter／current state）：
+- 本次使用的实际外部输入与点火增量输出（L0-L5／Q12-Q14／MCF／PSD／ARN／Atlas／分析报告／反馈返回项／Charter／current state）：
 - 只作启发、不得当成证据的材料：
 - 各来源版本、路径、commit 与 claim ceiling：
 - 作品要让读者经历的认知运动，而不只是理解的结论：
@@ -32,7 +64,7 @@ Status: `CURRENT_BACKSTAGE_TEMPLATE`
 
 - 写作对象与显题：
 - 读者和使用场景：
-- 来源／下层事实：
+- 来源类别、版本／下层事实与点火派生结构：
 - 不可提高的事实、因果、同构与价值边界：
 - 冻结、禁改或禁止发布材料：
 

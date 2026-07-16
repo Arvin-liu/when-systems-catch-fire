@@ -20,9 +20,11 @@
 
 ### L6 当前公共表达与反馈接口：之元写作法
 
-之元写作法 `0.3.0` 是当前 L6 接口：[方法正文](./publication/zhiyuan-writing-method.md)与[后台规格](../templates/publication/zhiyuan-writing-spec.md)。先声明实际使用的 L0-L5、Q12-Q14、MCF、PSD、ARN、Atlas、Charter 或 current-state 工件，区分来源与启发并设置 claim ceiling；再选择要让读者经历的认知运动。不得把项目对应表写成正文目录。
+之元写作法 `0.3.0` 是当前 L6 接口；[`0.4.0` Draft 候选方法正文](./publication/zhiyuan-writing-method.md)与[后台规格](../templates/publication/zhiyuan-writing-spec.md)新增双来源素材池。先把材料标为 `external_input` 或 `ignition_increment`：外部输入保存作者、时间、渠道、版权与核验状态；点火增量保存 canonical 路径／ID、生成任务、版本、claim ceiling、gap／residue 及其原始来源回链。点火分析、Q12—Q14、MCF／PSD／ARN 投影和 provenance-gated 返回项都可继续写作，但不能被重算为独立外部证据。
 
 需要查看当前已接受应用时，进入[之元写作法成果索引](./publication/zhiyuan-writing-showcase.md)。每项成果必须同时回链正式作品、起始案例来源记录、点火分析和方法版本；原始材料受版权或隐私限制时，只公开来源记录，不复制全文。README 只展示 registry 中最近三项，完整索引才是人类成果入口。
+
+需要从整体结构定位入口时，打开[完整可点击系统图](./architecture/interactive-system-map.md)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。
 
 向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁和伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN、Atlas 或迭代流程。点赞、赞美、传播和多 AI 共识只能是体验／传播数据。
 

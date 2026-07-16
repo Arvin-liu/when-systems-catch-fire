@@ -21,7 +21,7 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 ## 之元写作法成果
 
-[之元写作法](./docs/publication/zhiyuan-writing-method.md)是点火同源认知结构在 L6 公共语言中的当前可调用投影，不是外接的文风插件或写作谋生课程。121Q30T 已将其成果展示与来源链收口为当前接口；当前成果表明：个人认知结构的一部分可以被提炼为可描述、可调用、可审计、可追溯来源的方法，并由他人或 AI 调用。调用不等于复制之元本人，也不证明方法普遍有效或文学质量可以自动验证。
+[之元写作法](./docs/publication/zhiyuan-writing-method.md)是点火同源认知结构在 L6 公共语言中的可调用投影，不是外接的文风插件或写作谋生课程。`0.3.0` 仍是当前合并能力；`0.4.0` Draft 候选把素材池明确扩展为“外部输入源 + 点火增量输出源”，使 claim、argument、mechanism、map、gap、residue、分析报告、模型投影和 provenance-gated 返回项也能继续成为写作材料。派生产物不是新的独立证据，调用也不等于复制之元本人或证明方法普遍有效。
 
 ### [《当一支军队开始相信自己的背影》](./docs/publication/works/when-an-army-believes-its-own-back.md)
 
@@ -38,6 +38,26 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 价值宪章约束点火判断什么值得做：谁受益、谁承担风险、哪些主体沉默、什么情况下必须拒绝、暂停或回滚。它跨越 L0-L6、Ψ₀、元协议和 Function OS，但它是规范边界，不是经验事实、数学证明、治理批准或项目定位。
 
 [阅读全文：生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
+
+## 完整可点击系统图
+
+这是一张由[机器 spec](./data/architecture/interactive-system-map.json)确定性生成的单一完整图，覆盖前门、L0—L6、基础核心、模型投影、Q12—Q14、迭代与同步、价值约束、之元写作法双来源素材池、成果链和现实反馈返回。节点与连线是可审计导航，不证明因果、严格同构或理论完整。
+
+[打开交互版完整图](https://arvin-liu.github.io/when-systems-catch-fire/system-map.html) / [查看维护与验证说明](./docs/architecture/interactive-system-map.md)
+
+<div class="pages-interactive-system-map">
+  <object data="./generated/ignition-system-map.svg" type="image/svg+xml" aria-label="点火完整可点击系统图">
+    <p>浏览器无法嵌入交互 SVG。请<a href="https://arvin-liu.github.io/when-systems-catch-fire/system-map.html">打开交互版完整图</a>。</p>
+  </object>
+</div>
+
+<p class="github-system-map-preview">
+  <a href="https://arvin-liu.github.io/when-systems-catch-fire/system-map.html">
+    <img src="./pages/generated/ignition-system-map.svg" alt="点火完整系统图预览；点击打开交互版">
+  </a>
+</p>
+
+GitHub README 对 SVG 内部热点的支持可能受限；上方完整预览点击后进入 Pages 交互版。Pages 首页中的图节点可直接跳转到各构件 canonical 页面。
 
 ## 使用指南
 
@@ -67,6 +87,7 @@ docs/project-current-state.md
 docs/governance/life-community-value-charter.md
 ITERATION.md
 ARCHITECTURE.md
+docs/architecture/interactive-system-map.md
 FOUNDATION.md
 function-os-candidate/v0.2/README.md
 docs/architecture/multiscale-causal-fabric.md
@@ -128,7 +149,8 @@ llms.txt
 - [AI 交接契约](./AI-HANDOFF.md) — 记录跨会话交接时必须重新核验的权威链和红线。
 - [机器入口](./llms.txt) — 给 LLM 和自动化工具读取的简明项目边界与关键路径。
 - [Get 笔记协作流程](./docs/GET-BRAIN-WORKFLOW.md) — 说明 Get 笔记材料如何进入点火协作与审查流程。
-- [之元写作法 0.3.0](./docs/publication/zhiyuan-writing-method.md) — 当前 L6 公共表达与 provenance-gated feedback 能力；说明有边界同源对应、向外表达与返回点火双向契约，以及心智层级跃迁内核。
+- [之元写作法](./docs/publication/zhiyuan-writing-method.md) — `0.3.0` 为当前 L6 能力；`0.4.0` Draft 候选新增“外部输入 + 点火增量输出”双来源素材池，不提高证据权限。
+- [完整可点击系统图](./docs/architecture/interactive-system-map.md) — spec 驱动的项目总地图、节点入口、双表面行为与生成验证说明。
 - [版本规范](./docs/VERSIONING.md) — 说明版本、状态、兼容路径和发布边界怎样记录。
 
 </details>

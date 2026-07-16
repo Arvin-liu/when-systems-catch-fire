@@ -28,6 +28,8 @@ Q21R, Q22 and Q23 add current architecture/operation assets for Multiscale Causa
 
 121Q30T closes the first repository-native showcase chain as a current presentation/provenance interface for that capability: human and machine indexes connect a bounded case-source record, Q26 point-fire analysis, the accepted Q29R publication text and method 0.3.0. It adds no truth layer; the source note containing third-party course material is not republished, and one accepted work does not establish universal method effectiveness.
 
+121Q31 is an open Draft candidate, not current capability. It proposes Zhiyuan Writing Method `0.4.0`, in which writing material is typed as either external input or provenance-bound ignition increment, and a spec-generated clickable system map placed between the Charter and usage guide. Ignition increments may be reused as L6 writing material but are not independent external evidence. The map is a navigation/deployment interface, not L7, a causal graph, strict isomorphism or proof of project completeness. Until exact-head review, merge and post-merge Pages closeout, `0.3.0` and the pre-121Q31 homepage remain current.
+
 ## Current Shape
 
 At this version, the repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system for cross-domain material. That sentence is a current-state description, not a fixed essence. It can change if future work changes the actual assets, evidence rules, execution layer, or governance boundaries.

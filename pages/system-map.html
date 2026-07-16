@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>点火完整可点击系统图</title>
+    <meta name="description" content="点火当前系统结构的仓库原生、可维护、可验证、可点击导航接口。">
+    <style>
+      :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      body { margin: 0; color: #0f172a; background: #f8fafc; }
+      header { max-width: 1180px; margin: 0 auto; padding: 20px 18px 12px; }
+      h1 { margin: 0 0 8px; font-size: clamp(1.5rem, 3vw, 2.25rem); }
+      p { line-height: 1.65; color: #475569; }
+      nav { display: flex; flex-wrap: wrap; gap: 14px; margin: 12px 0; }
+      a { color: #1d4ed8; }
+      .map-shell { width: min(100%, 1900px); margin: 0 auto; padding: 0 12px 28px; box-sizing: border-box; }
+      object { width: 100%; min-height: 76vh; border: 1px solid #cbd5e1; border-radius: 14px; background: white; }
+      .boundary { font-size: .92rem; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>点火完整可点击系统图</h1>
+      <p>点击任一构件打开其 canonical 仓库目标。图由机器可读 spec 确定性生成；它是当前导航投影，不是永久总图、因果证明、严格同构或新真值层。</p>
+      <nav aria-label="系统图相关入口">
+        <a href="./">返回阅读版首页</a>
+        <a href="./generated/ignition-system-map.svg">单独打开 SVG</a>
+        <a href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/data/architecture/interactive-system-map.json">查看机器 spec</a>
+        <a href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/architecture/interactive-system-map.md">查看维护说明</a>
+      </nav>
+      <p class="boundary">节点链接表示导航；连线表示受约束的信息流或操作关系。视觉邻近、连线存在与测试通过都不能自动升级事实、因果、价值或理论完整性。</p>
+    </header>
+    <main class="map-shell">
+      <object data="./generated/ignition-system-map.svg" type="image/svg+xml" aria-label="点火完整可点击系统图">
+        <p>浏览器无法嵌入 SVG。请<a href="./generated/ignition-system-map.svg">单独打开完整交互图</a>。</p>
+      </object>
+    </main>
+  </body>
+</html>

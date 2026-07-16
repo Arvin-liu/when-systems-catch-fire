@@ -14,9 +14,11 @@
 8. data/foundation/project-state.json 与 registry-manifest.json：机器状态。
 9. 当前任务命令与相关 source/schema。
 
-若任务涉及 L6 公共故事、文章或作品反馈，还应读取当前 `docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.3.0` 已通过 121Q28T 收口为当前能力；0.1.0 与 0.2.0 保留为可审计修订历史。
+若任务涉及 L6 公共故事、文章或作品反馈，还应读取 `docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.3.0` 仍是当前能力；`0.4.0` 是 121Q31 Draft 候选，新增外部输入与点火增量输出双来源素材池。不得把点火派生产物重算为独立外部证据。
 
 若任务涉及当前展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`，并沿每项记录回到作品、案例来源链、点火分析和方法版本。首页只投影最近三项，不是完整清单或真值权威。
+
+若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是 Draft 导航接口，不是 L7、事实证明或永久唯一总地图。
 
 ## 不得混淆
 
@@ -28,7 +30,7 @@
 - 12 元协议不是自动成立的数学公理；64 组合不是证明空间。
 - L6 解释和出版不能创造下层真实性。
 - 之元写作法的“层级跃迁”不是新架构层；横向换域、漂亮跳转、模板完成或读者共鸣都不能证明事实、因果、同构或文学质量。
-- 使用当前之元写作法时，先保存点火来源、claim ceiling 和不可映射残余；发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。
+- 使用 0.4.0 候选时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。
 - 效果推理只产生行动候选，不产生真值。
 - 机制判断只约束解释和 claim ceiling，不自动产生因果证明。
 - 注意力控制只判断循环是否有信息增量，不证明结论更深。

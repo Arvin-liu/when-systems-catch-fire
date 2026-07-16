@@ -60,9 +60,11 @@ PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系
 
 Q25C 已成为当前生命周期规则：Ready、Accepted、Merged、Current、Closed 分别读取 surface `blocks`，不能用全局 project-complete 布尔值阻断 pre-merge acceptance。每个外部表面必须有独立 attestation；Pages pending 可以进入 Accepted/Merged，但继续阻塞 Current/Closed。
 
-121Q28T 已将 L6 `之元写作法` `0.3.0` 收口为当前公共表达与 provenance-gated feedback 能力：操作位置仍在 L6，生成来源与点火整体具有维护者声明的共同认知 provenance，并具有向外表达与返回点火双向契约。交接时不得写成新层、脑科学、形式同构或真值许可。必须检查项目来源／启发区分、全项目对应残余、反馈 provenance、Q12/Q13/MCF/PSD/ARN 按需返回及点赞非证据边界。121Q27 原故事仍冻结。
+121Q28T 已将 L6 `之元写作法` `0.3.0` 收口为当前能力；121Q31 在 Draft 中提出 `0.4.0` 双来源素材池。交接时必须区分外部输入与点火增量输出，后者保存 canonical 路径／ID、生成任务、版本、claim ceiling、gap／residue 和原始来源回链；复用分析、模型投影或反馈返回项不构成独立复证。方法仍在 L6，不得写成新层、脑科学、形式同构或真值许可。
 
 121Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。
+
+121Q31 Draft 还增加 spec 驱动的完整可点击系统图。权威链为 `data/architecture/interactive-system-map.json → tools/generate_interactive_system_map.py → pages/generated/ignition-system-map.svg`；Pages 用可交互对象，GitHub README 用完整预览与明确入口。任何节点 target、生成漂移、Pages artifact、L0—L6 层数或本机路径失败都阻止 Ready。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

@@ -6,7 +6,13 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import xml.etree.ElementTree as ET
 from pathlib import Path
+
+try:
+    from tools.generate_interactive_system_map import load_spec, render_svg, validate_spec
+except ModuleNotFoundError:  # Direct script execution adds tools/, not repository root, to sys.path.
+    from generate_interactive_system_map import load_spec, render_svg, validate_spec
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,6 +22,9 @@ CURRENT_STATE = ROOT / "docs/project-current-state.md"
 PAGES_WORKFLOW = ROOT / ".github/workflows/pages.yml"
 SHOWCASE_REGISTRY = ROOT / "data/publication/zhiyuan-writing-showcase.json"
 SHOWCASE_INDEX = ROOT / "docs/publication/zhiyuan-writing-showcase.md"
+SYSTEM_MAP_SPEC = ROOT / "data/architecture/interactive-system-map.json"
+SYSTEM_MAP_SVG = ROOT / "pages/generated/ignition-system-map.svg"
+SYSTEM_MAP_PAGE = ROOT / "pages/system-map.html"
 
 CAPABILITIES = {
     "MCF": "docs/architecture/multiscale-causal-fabric.md",
@@ -43,7 +52,7 @@ def extract_text_prompt(text: str, source: str) -> str:
 
 def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> None:
     require(readme.count("## 项目现状") == 1, "README must expose exactly one project-current-state heading")
-    required_order = ["## 项目现状", "## 之元写作法成果", "## 生命共同体价值宪章", "## 使用指南"]
+    required_order = ["## 项目现状", "## 之元写作法成果", "## 生命共同体价值宪章", "## 完整可点击系统图", "## 使用指南"]
     positions = [readme.index(heading) for heading in required_order]
     require(positions == sorted(positions), "README top-level information architecture is out of order")
     require("<summary>展开：当前能力、限制与完整项目现状</summary>" in readme, "README omits folded current-state detail")
@@ -70,6 +79,54 @@ def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> N
     require("cat README.md" in pages, "Pages workflow is not derived from README.md")
     require("Build README reading site" in pages, "Pages workflow omits declared README build step")
     require("README.md" in pages, "Pages workflow does not watch README.md")
+
+
+def validate_system_map(root: Path, readme: str, pages: str) -> int:
+    for path in (SYSTEM_MAP_SPEC, SYSTEM_MAP_SVG, SYSTEM_MAP_PAGE):
+        require(path.is_file(), f"missing interactive system-map asset: {path}")
+    spec = load_spec(SYSTEM_MAP_SPEC)
+    validate_spec(spec, root)
+    require(SYSTEM_MAP_SVG.read_bytes() == render_svg(spec, root), "interactive system-map SVG is stale")
+
+    required_groups = {"front_doors", "layers", "core", "models", "operations", "governance", "writing", "feedback", "boundaries"}
+    require({group["id"] for group in spec["groups"]} == required_groups, "interactive system map has incomplete or unexpected groups")
+    required_nodes = {
+        "readme", "summary", "usage", "ai_guide", "current_state",
+        "l0", "l1", "l2", "l3", "l4", "l5", "l6",
+        "foundation", "function_os", "mcf", "psd", "arn",
+        "q12", "q13", "q14", "iteration", "sync", "charter", "licensing", "sustainability",
+        "external_input", "ignition_increment", "source_pool", "zhiyuan_method",
+        "case_source", "point_fire_analysis", "accepted_work", "showcase", "showcase_registry",
+        "public_response", "provenance_capture", "candidate_return", "feedback_routes",
+        "no_l7", "no_truth_upgrade", "no_totality_proof",
+    }
+    require({node["id"] for node in spec["nodes"]} == required_nodes, "interactive system map does not cover the declared complete node set")
+
+    svg_root = ET.fromstring(SYSTEM_MAP_SVG.read_bytes())
+    links = svg_root.findall(".//{http://www.w3.org/2000/svg}a")
+    require(len(links) == len(spec["nodes"]), "not every system-map node is a clickable SVG link")
+    linked_ids = {link.attrib.get("data-node-id") for link in links}
+    require(linked_ids == required_nodes, "SVG clickable node ids diverge from spec")
+    for link in links:
+        require(link.attrib.get("href", "").startswith("https://github.com/Arvin-liu/when-systems-catch-fire/"), f"node link is not canonical HTTPS: {link.attrib}")
+        require(link.attrib.get("data-target"), f"SVG node link lacks data-target: {link.attrib}")
+
+    charter = readme.index("## 生命共同体价值宪章")
+    system_map = readme.index("## 完整可点击系统图")
+    usage = readme.index("## 使用指南")
+    require(charter < system_map < usage, "README system map must follow Charter and precede usage")
+    require("<object data=\"./generated/ignition-system-map.svg\"" in readme, "Pages homepage does not directly embed the complete interactive SVG")
+    require("./pages/generated/ignition-system-map.svg" in readme, "GitHub README does not preserve the complete SVG preview")
+    require("打开交互版完整图" in readme, "GitHub README lacks an explicit interactive-map entrance")
+    require("cp pages/generated/ignition-system-map.svg site/generated/ignition-system-map.svg" in pages, "Pages workflow omits generated SVG publication")
+    require("cp pages/system-map.html site/system-map.html" in pages, "Pages workflow omits canonical interactive page")
+    require("generate_interactive_system_map.py --check" in pages, "Pages workflow does not reject stale generated SVG")
+
+    page = SYSTEM_MAP_PAGE.read_text(encoding="utf-8")
+    require("generated/ignition-system-map.svg" in page and "<object" in page, "canonical interactive page does not embed the SVG")
+    public_text = "\n".join([readme, pages, page, SYSTEM_MAP_SPEC.read_text(encoding="utf-8"), SYSTEM_MAP_SVG.read_text(encoding="utf-8")])
+    require("/Users/" not in public_text and "/tmp/" not in public_text and "file://" not in public_text, "interactive system-map surfaces leak a local path")
+    return len(spec["nodes"])
 
 
 def validate_showcase(root: Path, readme: str) -> None:
@@ -111,10 +168,12 @@ def validate_all(root: Path = ROOT) -> dict[str, object]:
     contents = [path.read_text(encoding="utf-8") for path in paths.values()]
     validate_texts(*contents)
     validate_showcase(root, contents[0])
+    system_map_nodes = validate_system_map(root, contents[0], contents[3])
     return {
         "status": "PASS",
         "scope": "repository_local_human_front_door_consistency_only",
         "capabilities": sorted(CAPABILITIES),
+        "interactive_system_map_nodes": system_map_nodes,
         "rendered_pages_live_verified": False,
     }
 
