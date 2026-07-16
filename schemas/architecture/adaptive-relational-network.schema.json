@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/adaptive-relational-network.schema.json",
+  "title": "AdaptiveRelationalNetwork",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["network_spec", "nodes", "relations", "hyper_relations", "layers", "interlayer_couplings", "temporal_activations", "network_states", "perturbations", "integration_responses", "reconfiguration_episodes", "embedding_evidence", "projections", "diffs", "unmapped_residue"],
+  "properties": {
+    "network_spec": { "$ref": "#/$defs/network_spec" },
+    "nodes": { "type": "array", "items": { "$ref": "#/$defs/network_node" }, "minItems": 1 },
+    "relations": { "type": "array", "items": { "$ref": "#/$defs/typed_relation" } },
+    "hyper_relations": { "type": "array", "items": { "$ref": "#/$defs/hyper_relation" } },
+    "layers": { "type": "array", "items": { "$ref": "#/$defs/network_layer" }, "minItems": 1 },
+    "interlayer_couplings": { "type": "array", "items": { "$ref": "#/$defs/interlayer_coupling" } },
+    "temporal_activations": { "type": "array", "items": { "$ref": "#/$defs/temporal_activation" } },
+    "network_states": { "type": "array", "items": { "$ref": "#/$defs/network_state" } },
+    "perturbations": { "type": "array", "items": { "$ref": "#/$defs/perturbation_input" } },
+    "integration_responses": { "type": "array", "items": { "$ref": "#/$defs/integration_response" } },
+    "reconfiguration_episodes": { "type": "array", "items": { "$ref": "#/$defs/reconfiguration_episode" } },
+    "attractor_or_oscillation": { "type": "array", "items": { "$ref": "#/$defs/attractor_or_oscillation" } },
+    "cascade_or_spillover": { "type": "array", "items": { "$ref": "#/$defs/cascade_or_spillover" } },
+    "embedding_evidence": { "type": "array", "items": { "$ref": "#/$defs/embedding_evidence" }, "minItems": 1 },
+    "projections": { "type": "array", "items": { "$ref": "#/$defs/network_projection" } },
+    "diffs": { "type": "array", "items": { "$ref": "#/$defs/network_diff" } },
+    "unmapped_residue": { "type": "array", "items": { "$ref": "#/$defs/unmapped_residue" }, "minItems": 1 }
+  },
+  "$defs": {
+    "relation_class": { "enum": ["semantic_similarity", "evidential_support", "evidential_conflict", "dependency", "enabling", "inhibition", "co_occurrence", "identity_binding", "value_priority", "action_affordance", "social_expectation", "resource_reference", "causal_delegated_to_mcf", "unknown"] },
+    "integration_response_type": { "enum": ["SURFACE_ASSIMILATION", "BOUNDARY_REJECTION", "LOCAL_RECONFIGURATION", "PARTIAL_INTEGRATION", "CONTEXT_GATED", "COMPARTMENTALIZED", "DEFERRED_UPDATE", "UNKNOWN_RESPONSE"] },
+    "network_spec": {
+      "type": "object",
+      "required": ["network_id", "as_of_commit", "purpose", "canonical_authority", "not_truth_layer", "claim_ceiling"],
+      "properties": {
+        "network_id": { "type": "string" },
+        "as_of_commit": { "type": "string" },
+        "purpose": { "type": "string" },
+        "canonical_authority": { "type": "string" },
+        "not_truth_layer": { "type": "boolean", "const": true },
+        "claim_ceiling": { "type": "string" }
+      }
+    },
+    "network_node": {
+      "type": "object",
+      "required": ["node_id", "label", "node_type", "layers", "provenance", "uncertainty", "claim_ceiling"],
+      "properties": {
+        "node_id": { "type": "string" },
+        "label": { "type": "string" },
+        "node_type": { "type": "string" },
+        "layers": { "type": "array", "items": { "type": "string" } },
+        "provenance": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "uncertainty": { "type": "string" },
+        "claim_ceiling": { "type": "string" }
+      }
+    },
+    "typed_relation": {
+      "type": "object",
+      "required": ["relation_id", "source", "target", "relation_class", "direction", "sign", "weight", "conditions", "layer", "temporal_bounds", "provenance", "uncertainty", "claim_ceiling"],
+      "properties": {
+        "relation_id": { "type": "string" },
+        "source": { "type": "string" },
+        "target": { "type": "string" },
+        "relation_class": { "$ref": "#/$defs/relation_class" },
+        "direction": { "enum": ["directed", "undirected", "bidirectional", "unknown"] },
+        "sign": { "enum": ["positive", "negative", "mixed", "neutral", "unknown"] },
+        "weight": { "type": "number" },
+        "conditions": { "type": "array", "items": { "type": "string" } },
+        "layer": { "type": "string" },
+        "temporal_bounds": { "type": "object", "required": ["start", "end"], "properties": { "start": { "type": "number" }, "end": { "type": "number" } } },
+        "provenance": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "uncertainty": { "type": "string" },
+        "claim_ceiling": { "type": "string" }
+      }
+    },
+    "hyper_relation": {
+      "type": "object",
+      "required": ["hyper_id", "members", "relation_class", "preserve_as_higher_order", "pairwise_projection_allowed", "residue_if_projected", "provenance", "claim_ceiling"],
+      "properties": {
+        "hyper_id": { "type": "string" },
+        "members": { "type": "array", "items": { "type": "string" }, "minItems": 3 },
+        "relation_class": { "$ref": "#/$defs/relation_class" },
+        "preserve_as_higher_order": { "type": "boolean", "const": true },
+        "pairwise_projection_allowed": { "type": "boolean" },
+        "residue_if_projected": { "type": "string" },
+        "provenance": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "claim_ceiling": { "type": "string" }
+      }
+    },
+    "network_layer": { "type": "object", "required": ["layer_id", "label", "boundary_rule", "model_choice"], "properties": { "layer_id": { "type": "string" }, "label": { "type": "string" }, "boundary_rule": { "type": "string" }, "model_choice": { "type": "boolean", "const": true } } },
+    "interlayer_coupling": { "type": "object", "required": ["coupling_id", "from_layer", "to_layer", "coupling_type", "provenance", "claim_ceiling"], "properties": { "coupling_id": { "type": "string" }, "from_layer": { "type": "string" }, "to_layer": { "type": "string" }, "coupling_type": { "type": "string" }, "provenance": { "type": "array", "items": { "type": "string" } }, "claim_ceiling": { "type": "string" } } },
+    "temporal_activation": { "type": "object", "required": ["activation_id", "target_ref", "start", "end", "activation_state", "not_integration_proof"], "properties": { "activation_id": { "type": "string" }, "target_ref": { "type": "string" }, "start": { "type": "number" }, "end": { "type": "number" }, "activation_state": { "enum": ["active", "inactive", "unknown"] }, "not_integration_proof": { "type": "boolean", "const": true } } },
+    "network_state": { "type": "object", "required": ["state_id", "active_nodes", "active_relations", "unknowns", "as_of_time"], "properties": { "state_id": { "type": "string" }, "active_nodes": { "type": "array", "items": { "type": "string" } }, "active_relations": { "type": "array", "items": { "type": "string" } }, "unknowns": { "type": "array", "items": { "type": "string" } }, "as_of_time": { "type": "number" } } },
+    "perturbation_input": { "type": "object", "required": ["perturbation_id", "input_type", "content_ref", "target_nodes", "provenance", "claim_ceiling"], "properties": { "perturbation_id": { "type": "string" }, "input_type": { "type": "string" }, "content_ref": { "type": "string" }, "target_nodes": { "type": "array", "items": { "type": "string" } }, "provenance": { "type": "array", "items": { "type": "string" } }, "claim_ceiling": { "type": "string" } } },
+    "integration_response": { "type": "object", "required": ["response_id", "perturbation_ref", "response_type", "evidence_ref", "alternative_explanations", "claim_ceiling"], "properties": { "response_id": { "type": "string" }, "perturbation_ref": { "type": "string" }, "response_type": { "$ref": "#/$defs/integration_response_type" }, "evidence_ref": { "type": "string" }, "alternative_explanations": { "type": "array", "items": { "type": "string" } }, "claim_ceiling": { "type": "string" } } },
+    "reconfiguration_episode": { "type": "object", "required": ["episode_id", "baseline_state", "post_state", "changed_nodes", "unchanged_nodes", "changed_relations", "unchanged_relations", "delay", "oscillation", "residue", "claim_ceiling"], "properties": { "episode_id": { "type": "string" }, "baseline_state": { "type": "string" }, "post_state": { "type": "string" }, "changed_nodes": { "type": "array", "items": { "type": "string" } }, "unchanged_nodes": { "type": "array", "items": { "type": "string" } }, "changed_relations": { "type": "array", "items": { "type": "string" } }, "unchanged_relations": { "type": "array", "items": { "type": "string" } }, "delay": { "type": "string" }, "oscillation": { "type": "string" }, "residue": { "type": "array", "items": { "type": "string" } }, "claim_ceiling": { "type": "string" } } },
+    "attractor_or_oscillation": { "type": "object", "required": ["record_id", "loop_pattern", "not_clinical_claim", "claim_ceiling"], "properties": { "record_id": { "type": "string" }, "loop_pattern": { "type": "array", "items": { "type": "string" } }, "not_clinical_claim": { "type": "boolean", "const": true }, "claim_ceiling": { "type": "string" } } },
+    "cascade_or_spillover": { "type": "object", "required": ["record_id", "path", "time_respecting", "not_causality", "claim_ceiling"], "properties": { "record_id": { "type": "string" }, "path": { "type": "array", "items": { "type": "string" } }, "time_respecting": { "type": "boolean" }, "not_causality": { "type": "boolean", "const": true }, "claim_ceiling": { "type": "string" } } },
+    "embedding_evidence": { "type": "object", "required": ["record_id", "external_availability", "retrieval", "relational_linkage", "conflict_exposure", "judgment_change", "action_change", "transfer", "delayed_stability", "alternatives", "evidence", "claim_ceiling"], "properties": { "record_id": { "type": "string" }, "external_availability": { "type": "string" }, "retrieval": { "type": "string" }, "relational_linkage": { "type": "string" }, "conflict_exposure": { "type": "string" }, "judgment_change": { "type": "string" }, "action_change": { "type": "string" }, "transfer": { "type": "string" }, "delayed_stability": { "type": "string" }, "alternatives": { "type": "array", "items": { "type": "string" } }, "evidence": { "type": "array", "items": { "type": "string" } }, "claim_ceiling": { "type": "string" } } },
+    "network_projection": { "type": "object", "required": ["projection_id", "source_network", "projection_rules", "omitted_dimensions", "not_canonical", "claim_ceiling"], "properties": { "projection_id": { "type": "string" }, "source_network": { "type": "string" }, "projection_rules": { "type": "array", "items": { "type": "string" } }, "omitted_dimensions": { "type": "array", "items": { "type": "string" } }, "not_canonical": { "type": "boolean", "const": true }, "claim_ceiling": { "type": "string" } } },
+    "network_diff": { "type": "object", "required": ["diff_id", "from_ref", "to_ref", "node_changes", "relation_changes", "layer_changes", "boundary_changes", "claim_ceiling"], "properties": { "diff_id": { "type": "string" }, "from_ref": { "type": "string" }, "to_ref": { "type": "string" }, "node_changes": { "type": "array", "items": { "type": "string" } }, "relation_changes": { "type": "array", "items": { "type": "string" } }, "layer_changes": { "type": "array", "items": { "type": "string" } }, "boundary_changes": { "type": "array", "items": { "type": "string" } }, "claim_ceiling": { "type": "string" } } },
+    "unmapped_residue": { "type": "object", "required": ["residue_id", "residue_type", "description", "claim_ceiling"], "properties": { "residue_id": { "type": "string" }, "residue_type": { "enum": ["relation_unknown", "temporal_unknown", "higher_order_loss", "missing_bridge", "unverified_integration", "boundary_ambiguous"] }, "description": { "type": "string" }, "claim_ceiling": { "type": "string" } } }
+  }
+}
