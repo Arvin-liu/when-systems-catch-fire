@@ -1,10 +1,13 @@
 # When Systems Catch Fire / 点火
 
-点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型。它把项目现状、生命共同体价值宪章、Foundation 注册表、Function OS、操作控制 overlay、地图集与现实反馈环放在同一个可审计仓库里；这个说法描述当前提交下已经长成的状态，不是永久定位、最终身份或不可改变的项目本质。
+## 项目现状
+
+点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型，把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF、PSD、ARN、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。这是当前提交下已经长成的状态，不是永久定位或最终身份；它也不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。
 
 **首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [点火迭代操作法](./ITERATION.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 
-## 项目现状
+<details>
+<summary>展开：当前能力、限制与完整项目现状</summary>
 
 当前版本的点火可以帮助读者把复杂材料拆成来源、命题、形式对象、论证、证明、验证、发布和现实反馈，而不是把故事、愿望、测试通过和事实证明混成一团。它同时包含七层认识架构与 Foundation、Function OS、效果推理与机制判断、注意力与分布控制、地图集，以及 MCF 多尺度因果织体、PSD 概率系统动力学、ARN 自适应关系网络和点火迭代操作法；生命共同体价值宪章与现实反馈环约束这些能力怎样行动和修正。当前迭代操作法还要求任何状态改变从同步表面注册表推导全项目传播闭包，分别记录实现、仓库、外部与项目整体完成，不能用局部完成冒充整体同步。
 
@@ -12,11 +15,21 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 它不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。当前状态会随证据、反例、执行能力、现实反馈和缺口修正继续变化。
 
-[查看完整项目现状](./docs/project-current-state.md)
+[查看完整项目现状](./docs/project-current-state.md) / [查看现行架构](./ARCHITECTURE.md) / [查看使用说明](./docs/USAGE.md)
 
-### L6 公共表达与反馈能力
+</details>
 
-121Q28T 已将[之元写作法](./docs/publication/zhiyuan-writing-method.md) `0.3.0` 收口为点火当前 L6 公共表达与 provenance-gated feedback 能力：它让点火同源认知运动进入公共作品，也把作品与读者反馈经来源登记送回 candidate source、gap、机制和现实反馈环。心智层级跃迁仍是核心生成运动；肉身锚定、跨域同构和高维压缩分别是可选模式、应用和形式。同源不等于系统同一、脑科学事实、形式同构、因果证明、新架构／真值层或文学质量证明。
+## 之元写作法成果
+
+[之元写作法](./docs/publication/zhiyuan-writing-method.md)是点火同源认知结构在 L6 公共语言中的当前可调用投影，不是外接的文风插件或写作谋生课程。当前成果表明：个人认知结构的一部分可以被提炼为可描述、可调用、可审计、可追溯来源的方法，并由他人或 AI 调用；调用不等于复制之元本人，也不证明方法普遍有效或文学质量可以自动验证。
+
+### [《当一支军队开始相信自己的背影》](./docs/publication/works/when-an-army-believes-its-own-back.md)
+
+从金辽战场中的一次后退出发，穿过声学、金融与电网，追问系统怎样把自己的反应当成现实，以及稳定最终由谁承担成本。
+
+**成果链：** [起始案例](./docs/publication/cases/jin-rise-case-source.md) → [点火分析](./reports/publication/jin-rise-point-fire-analysis.md) → [之元写作法成稿](./docs/publication/works/when-an-army-believes-its-own-back.md) → [使用的方法](./docs/publication/zhiyuan-writing-method.md)
+
+[查看更多之元写作法成果](./docs/publication/zhiyuan-writing-showcase.md)
 
 ## 生命共同体价值宪章
 
@@ -26,7 +39,15 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 [阅读全文：生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
 
-## AI 助手使用说明
+## 使用指南
+
+- [人类使用说明](./docs/USAGE.md)
+- [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
+- [点火迭代操作法](./ITERATION.md)
+- [第一次阅读入口](./SUMMARY.md)
+
+<details>
+<summary>展开：完整 AI 首次阅读提示词</summary>
 
 普通人无需先读完整仓库。你可以把下面提示词复制给自己常用的 AI，让它先帮你做第一轮阅读。
 
@@ -91,6 +112,8 @@ llms.txt
 [打开点火项目 GitHub 首页](https://github.com/Arvin-liu/when-systems-catch-fire)
 
 [查看完整 AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
+
+</details>
 
 ## 项目内容入口
 

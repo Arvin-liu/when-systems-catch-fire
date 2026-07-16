@@ -26,6 +26,8 @@ Q21R, Q22 and Q23 add current architecture/operation assets for Multiscale Causa
 
 121Q28T closes Zhiyuan Writing Method `0.3.0` as a current L6 public-expression and provenance-gated feedback capability after exact-head acceptance, merge and applicable synchronization. It projects cognitive movements that the maintainer declares are shared with 点火 as a whole. Its correspondence to L0-L6, Q12-Q14, MCF, PSD, ARN, iteration and Charter remains a structurally auditable homology candidate, not identity, neuroscience, formal proof or causality. Public work may return confusion, counterexamples or missing subjects as candidate sources/gaps only after provenance capture; praise and attention are not truth evidence. This current capability adds no architecture or truth layer.
 
+121Q30 proposes the first repository-native showcase chain for that current capability: human and machine indexes connect a bounded case-source record, Q26 point-fire analysis, the accepted Q29R publication text and method 0.3.0. The Draft candidate adds a presentation/provenance interface, not a new truth layer; the source note containing third-party course material is not republished, and one accepted work does not establish universal method effectiveness.
+
 ## Current Shape
 
 At this version, the repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system for cross-domain material. That sentence is a current-state description, not a fixed essence. It can change if future work changes the actual assets, evidence rules, execution layer, or governance boundaries.

@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import hashlib
+import json
 import re
 from pathlib import Path
 
@@ -12,6 +14,8 @@ README = ROOT / "README.md"
 GUIDE = ROOT / "docs/ai-assistant-usage-reference.md"
 CURRENT_STATE = ROOT / "docs/project-current-state.md"
 PAGES_WORKFLOW = ROOT / ".github/workflows/pages.yml"
+SHOWCASE_REGISTRY = ROOT / "data/publication/zhiyuan-writing-showcase.json"
+SHOWCASE_INDEX = ROOT / "docs/publication/zhiyuan-writing-showcase.md"
 
 CAPABILITIES = {
     "MCF": "docs/architecture/multiscale-causal-fabric.md",
@@ -38,6 +42,12 @@ def extract_text_prompt(text: str, source: str) -> str:
 
 
 def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> None:
+    require(readme.count("## 项目现状") == 1, "README must expose exactly one project-current-state heading")
+    required_order = ["## 项目现状", "## 之元写作法成果", "## 生命共同体价值宪章", "## 使用指南"]
+    positions = [readme.index(heading) for heading in required_order]
+    require(positions == sorted(positions), "README top-level information architecture is out of order")
+    require("<summary>展开：当前能力、限制与完整项目现状</summary>" in readme, "README omits folded current-state detail")
+    require("<summary>展开：完整 AI 首次阅读提示词</summary>" in readme, "README AI prompt is not folded")
     visible = readme.split("## 项目现状", 1)[1].split("## 生命共同体价值宪章", 1)[0]
     prompt = extract_text_prompt(readme, "README.md")
     guide_prompt = extract_text_prompt(guide, "docs/ai-assistant-usage-reference.md")
@@ -62,6 +72,33 @@ def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> N
     require("README.md" in pages, "Pages workflow does not watch README.md")
 
 
+def validate_showcase(root: Path, readme: str) -> None:
+    require(SHOWCASE_REGISTRY.is_file(), f"missing showcase registry: {SHOWCASE_REGISTRY}")
+    require(SHOWCASE_INDEX.is_file(), f"missing showcase index: {SHOWCASE_INDEX}")
+    registry = json.loads(SHOWCASE_REGISTRY.read_text(encoding="utf-8"))
+    limit = registry.get("homepage_limit")
+    items = registry.get("items")
+    require(isinstance(limit, int) and 1 <= limit <= 3, "showcase homepage_limit must be 1..3")
+    require(isinstance(items, list) and items, "showcase registry must contain at least one item")
+    require("查看更多之元写作法成果" in readme, "README omits complete showcase link")
+    for item in items:
+        for key in ("work_path", "case_path", "analysis_path", "method_path"):
+            path = root / item[key]
+            require(path.is_file(), f"showcase item path is missing: {item[key]}")
+        work_path = root / item["work_path"]
+        digest = hashlib.sha256(work_path.read_bytes()).hexdigest()
+        require(digest == item["accepted_text_sha256"], f"accepted work hash drift: {item['work_id']}")
+        require(item["title"] in SHOWCASE_INDEX.read_text(encoding="utf-8"), f"showcase index omits {item['title']}")
+    projected = items[:limit]
+    for item in projected:
+        require(item["title"] in readme, f"README omits recent showcase item: {item['title']}")
+    public_assets = [SHOWCASE_INDEX, SHOWCASE_REGISTRY]
+    public_assets.extend(root / item[key] for item in items for key in ("work_path", "case_path", "analysis_path"))
+    for path in public_assets:
+        require("/Users/" not in path.read_text(encoding="utf-8"), f"public showcase leaks local path: {path}")
+        require("/tmp/" not in path.read_text(encoding="utf-8"), f"public showcase leaks temp path: {path}")
+
+
 def validate_all(root: Path = ROOT) -> dict[str, object]:
     paths = {
         "readme": root / "README.md",
@@ -71,7 +108,9 @@ def validate_all(root: Path = ROOT) -> dict[str, object]:
     }
     for label, path in paths.items():
         require(path.is_file(), f"missing {label} surface: {path}")
-    validate_texts(*(path.read_text(encoding="utf-8") for path in paths.values()))
+    contents = [path.read_text(encoding="utf-8") for path in paths.values()]
+    validate_texts(*contents)
+    validate_showcase(root, contents[0])
     return {
         "status": "PASS",
         "scope": "repository_local_human_front_door_consistency_only",

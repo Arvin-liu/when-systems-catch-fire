@@ -55,6 +55,14 @@ flowchart LR
 
 同源不等于同一：本关系不是脑科学发现、形式同构证明、因果识别或固定项目本体。之元写作法不能替代 Foundation、证明、validator、Function OS、MCF、PSD、ARN 或迭代纪律；点火也不能从个人文风自动推出。操作位置仍在 L6，生成来源跨越项目整体，但证据权限不高于 L6。
 
+### L6 成果展示与来源链投影
+
+121Q30 Draft 候选把成果展示建模为 L6 内部的可追溯接口，不增加架构层：人类索引负责完整导航，机器 registry 负责排序和路径绑定，正式作品负责公共表达，案例页负责来源与版权边界，分析报告负责 claim ceiling 与竞争解释。README 只投影 registry 最近三项，不成为第二份成果权威。
+
+`case provenance → point-fire analysis → accepted work → method version`
+
+该链只证明某个版本的来源、分析、方法与作品可被共同审计。作品被接受不证明来源命题为真、分析完成因果识别、方法普遍有效或 AI 复制了作者；受限原始材料只保留 provenance，不因成果展示而重新公开。
+
 ## 目录权威
 
 ```mermaid
