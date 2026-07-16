@@ -19,6 +19,8 @@ Q25B 已因生命周期死锁降为 superseded non-ready 历史候选；Q25C 是
 
 121Q28 的 `0.1.0` 因肉身硬门槛被拒绝；121Q28R `0.2.0` 修复入口但未完成 whole-project integration；121Q28S `0.3.0` 完成同源认知、全项目对应与双向反馈候选。121Q28T 将 accepted exact HEAD 以 merge commit 合入并完成 Current/Closed 收口。`之元写作法 / Zhiyuan Writing Method` `0.3.0` 现为当前 L6 公共表达与 provenance-gated feedback 能力。这不改变七层架构、Foundation 或迭代操作法版本。
 
+121Q30 只新增成果展示与来源链 candidate，不升级之元写作法 `0.3.0`、七层架构或点火迭代操作法。作品状态、方法状态和历史 claim ceiling 分别记录；一项作品被接受不能自动提升方法版本或历史因果状态。
+
 架构完成不等于内容证明完成。当前架构允许后续逐对象补源、补定义、补证明、补实验、发现反例或降级，而不再推倒整体架构。
 
 ## 什么算版本升级

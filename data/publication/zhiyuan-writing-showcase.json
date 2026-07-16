@@ -1,0 +1,37 @@
+{
+  "registry_version": "1.0.0",
+  "registry_status": "CANDIDATE_READY_FOR_GPT_REVIEW",
+  "purpose": "Machine-readable registry for provenance-linked Zhiyuan Writing Method public-expression outcomes; not a literary-quality or truth registry.",
+  "homepage_limit": 3,
+  "sort": {
+    "field": "sort_at",
+    "direction": "descending"
+  },
+  "items": [
+    {
+      "work_id": "zhiyuan-work-jin-feedback-001",
+      "title": "当一支军队开始相信自己的背影",
+      "status": "121Q29R_PUBLICATION_TEXT_ACCEPTED",
+      "sort_at": "2026-07-16T00:00:00+08:00",
+      "work_path": "docs/publication/works/when-an-army-believes-its-own-back.md",
+      "case_path": "docs/publication/cases/jin-rise-case-source.md",
+      "analysis_path": "reports/publication/jin-rise-point-fire-analysis.md",
+      "method_path": "docs/publication/zhiyuan-writing-method.md",
+      "method_name": "之元写作法 / Zhiyuan Writing Method",
+      "method_version": "0.3.0",
+      "source_sha256": "63502b10083eeb674e07d69a824f92e9ff35c172ef833fbb810c70d16b06b75b",
+      "accepted_text_sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b",
+      "review_provenance": {
+        "task": "121Q29R",
+        "status": "121Q29R_PUBLICATION_TEXT_ACCEPTED",
+        "1111_review_copy_commit": "114679293f3a451c0b62f6e5524c9e8407b39a8f"
+      },
+      "claim_ceiling": "publication_text_accepted / historical_mechanism_plausible / causal_identification_pending / external_historical_verification_required",
+      "publication_boundaries": [
+        "Source text containing third-party course material is not republished.",
+        "Structural correspondence does not imply identical subjects, material, scale, or causality.",
+        "Acceptance does not prove universal method effectiveness or literary quality automation."
+      ]
+    }
+  ]
+}

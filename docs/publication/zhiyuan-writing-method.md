@@ -240,3 +240,5 @@ Operational location: L6 interpretation / application / publication. Generative 
 ## 使用入口
 
 后续 Agent 或人类可先填写[之元写作法后台规格](../../templates/publication/zhiyuan-writing-spec.md)，再对照[内部范例与反例](./zhiyuan-writing-examples.md)。规格只保存后台生成、全项目来源对应与反馈返回信息，不得原样变成文章目录。
+
+[查看可追溯的之元写作法成果](./zhiyuan-writing-showcase.md)。成果索引是方法应用与来源链入口，不是文学质量验证器。
