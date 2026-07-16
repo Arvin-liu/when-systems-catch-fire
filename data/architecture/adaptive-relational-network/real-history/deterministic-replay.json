@@ -1,12 +1,13 @@
 {
-  "after_commit": "8bb20cc4e3504eba46a94ff158f6dceebc3c015c",
-  "after_hash": "82981bdb3dc6bdb24e7ae34cfeacc773b25d6cf06bc031ce043cefe078aa8985",
+  "after_commit": "26fea4a00bdd43dbe772a138020c19a12f16d77b",
+  "after_hash": "d2de2410b48824fb68ff72634719eb12813514f8b0f3404c353abbc748177ae2",
   "after_source_count": 13,
   "before_commit": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
   "before_hash": "b108f598999de7b208e2419013ef7ab221d05b39bb1cb00f166fdfd584c17837",
   "before_source_count": 0,
-  "diff_hash": "d732ef2609b60af0b4af7e1c87d3fdc08a1af476cb2be178efd9223b0023a1d7",
-  "embedding_hash": "e7f0bb8541a011fed69cd1ab91e879ea1f7231c9a9da7c05ce7ceead73df167b",
+  "diff_hash": "45da9d322e98d7b582f3694f0d11714a7e3c0135219df09f059de818e90f85cb",
+  "embedding_hash": "80b47b94ee60bf074ebcc8f6912cb1075bd28b2261b34e313da5dddc64121313",
+  "hash_change_reason": "121Q23E added explicit typed external_refs to NetworkDiff and updated proof after_commit.",
   "invalid_static_path": {
     "claim_ceiling": "Static adjacency or temporal ordering cannot invent a topology-continuous time-respecting graph path.",
     "is_false_positive": true,

@@ -69,7 +69,7 @@ Stable interoperability objects are strict: undeclared fields are rejected. Futu
 ARN distinguishes three things:
 
 - `time_respecting_sequence`: every relation exists and its interval starts after the prior relation ends.
-- `path_continuous`: relation endpoints connect under direction rules.
+- `path_continuous`: relation endpoints connect under direction rules with stateful reachable-orientation propagation.
 - `time_respecting_graph_path`: both of the above are true.
 
 Direction behavior is explicit:
@@ -79,3 +79,9 @@ Direction behavior is explicit:
 - `unknown`: not accepted as a graph-path edge.
 
 This is a local ARN validation rule for avoiding projection errors. It is not a universal theorem about temporal networks.
+
+For multi-edge paths, ARN does not merely check whether each adjacent pair appears connectable. It carries the reachable arrival nodes forward. If an undirected or bidirectional edge must be traversed in one orientation to connect with the previous edge, only that traversal's arrival is available to the next edge.
+
+`TemporalActivation.target_ref` is limited to `node_id` and `relation_id`. Layers, states, perturbations, embedding evidence and network IDs are not activation targets under the current ARN contract.
+
+`NetworkDiff.from_ref` and `NetworkDiff.to_ref` must reference a local `network_id`, `state_id`, `projection_id` or a declared `external_refs.ref_id`. External commit references are allowed only when typed explicitly, such as `ref_type: git_commit`, and remain external version references rather than canonical ARN objects.

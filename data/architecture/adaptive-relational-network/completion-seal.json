@@ -1,6 +1,6 @@
 {
-  "task": "121Q23D",
-  "status": "121Q23D_READY_AS_VALIDATION_CLOSED_OPERATIONAL_ARN_CANDIDATE",
+  "task": "121Q23E",
+  "status": "121Q23E_READY_AS_ADVERSARIALLY_CLOSED_OPERATIONAL_ARN_CANDIDATE",
   "claim_ceiling": "Derived representation only; not ontology, truth, value, causality, clinical inference, psychological diagnosis or proof of internal learning.",
   "validator": "tools/validate_adaptive_relational_network.py",
   "schema_contracts": [
@@ -11,9 +11,19 @@
     "draft_2020_12_schema_validation": true,
     "strict_nested_objects": true,
     "duplicate_id_detection_without_set_hiding": true,
+    "complete_id_namespace_audit": true,
     "reference_integrity": true,
+    "activation_targets_limited_to_nodes_and_relations": true,
+    "diff_refs_require_local_or_typed_external_refs": true,
+    "stateful_path_orientation_propagation": true,
     "topology_aware_temporal_paths": true,
     "ordered_relation_sequence_separate_from_graph_path": true
+  },
+  "adversarial_cases": {
+    "global_pairwise_false_positive": "A -> B, B -- C, B -> D is rejected because the second edge must arrive at C, so the third edge cannot depart from B.",
+    "empty_path": false,
+    "single_valid_edge": true,
+    "unknown_direction_breaks_graph_path": true
   },
   "tool_files": [
     "tools/adaptive_relational_network/projector.py",
@@ -30,7 +40,7 @@
   ],
   "real_history": {
     "before_commit": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
-    "proof_after_commit": "8bb20cc4e3504eba46a94ff158f6dceebc3c015c",
+    "proof_after_commit": "26fea4a00bdd43dbe772a138020c19a12f16d77b",
     "before_source_count": 0,
     "after_source_count": 13,
     "valid_graph_path": [
@@ -45,17 +55,19 @@
       "rel-repo-1",
       "rel-backdated-1"
     ],
-    "diff_hash": "d732ef2609b60af0b4af7e1c87d3fdc08a1af476cb2be178efd9223b0023a1d7",
+    "diff_hash": "45da9d322e98d7b582f3694f0d11714a7e3c0135219df09f059de818e90f85cb",
     "before_hash": "b108f598999de7b208e2419013ef7ab221d05b39bb1cb00f166fdfd584c17837",
-    "after_hash": "82981bdb3dc6bdb24e7ae34cfeacc773b25d6cf06bc031ce043cefe078aa8985",
+    "after_hash": "d2de2410b48824fb68ff72634719eb12813514f8b0f3404c353abbc748177ae2",
     "pairwise_hash": "ad73fc5527efa17481dd9178b4fcdc593b7f4ec7d467e320b179ec00f6cb41ea",
-    "embedding_hash": "e7f0bb8541a011fed69cd1ab91e879ea1f7231c9a9da7c05ce7ceead73df167b"
+    "embedding_hash": "80b47b94ee60bf074ebcc8f6912cb1075bd28b2261b34e313da5dddc64121313",
+    "hash_change_reason": "121Q23E added explicit typed external_refs to NetworkDiff and updated proof after_commit."
   },
   "remaining_limitations": [
     "Projection is source-declared and does not infer unstated relations.",
     "Embedding summary is not a learning score.",
     "NetworkDiff is representation diff only.",
-    "Temporal path semantics are local ARN model rules, not universal temporal-network theorems."
+    "Temporal path semantics are local ARN model rules, not universal temporal-network theorems.",
+    "External references are typed version references and do not become canonical ARN objects."
   ],
   "frozen_assets_modified": false
 }

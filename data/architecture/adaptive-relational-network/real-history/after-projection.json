@@ -130,12 +130,12 @@
     }
   ],
   "network_spec": {
-    "as_of_commit": "8bb20cc4e3504eba46a94ff158f6dceebc3c015c",
+    "as_of_commit": "26fea4a00bdd43dbe772a138020c19a12f16d77b",
     "canonical_authority": "Source files and Foundation remain authoritative; this is a derived projection.",
     "claim_ceiling": "deterministic ARN projection only",
-    "network_id": "arn-projection-8bb20cc4",
+    "network_id": "arn-projection-26fea4a0",
     "not_truth_layer": true,
-    "purpose": "real-history after ARN validation contract closure"
+    "purpose": "real-history after ARN path-state and reference closure"
   },
   "network_states": [
     {
@@ -205,7 +205,7 @@
   ],
   "nodes": [
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "Repository state",
       "layers": [
         "source"
@@ -218,7 +218,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "data/architecture/adaptive-relational-network/completion-seal.json",
       "layers": [
         "architecture"
@@ -231,7 +231,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "docs/architecture/adaptive-relational-network.md",
       "layers": [
         "architecture"
@@ -244,7 +244,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "schemas/architecture/adaptive-relational-network-embedding-probe.schema.json",
       "layers": [
         "architecture"
@@ -257,7 +257,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "schemas/architecture/adaptive-relational-network.schema.json",
       "layers": [
         "architecture"
@@ -270,7 +270,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "tests/test_adaptive_relational_network.py",
       "layers": [
         "operations"
@@ -283,7 +283,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "tests/test_adaptive_relational_network_operational.py",
       "layers": [
         "operations"
@@ -296,7 +296,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "tests/test_adaptive_relational_network_validation_contract.py",
       "layers": [
         "operations"
@@ -309,7 +309,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "tools/adaptive_relational_network/diff.py",
       "layers": [
         "operations"
@@ -322,7 +322,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "tools/adaptive_relational_network/embedding.py",
       "layers": [
         "operations"
@@ -335,7 +335,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "tools/adaptive_relational_network/projector.py",
       "layers": [
         "operations"
@@ -348,7 +348,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "tools/adaptive_relational_network/renderer.py",
       "layers": [
         "operations"
@@ -361,7 +361,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "tools/adaptive_relational_network/temporal.py",
       "layers": [
         "operations"
@@ -374,7 +374,7 @@
       "uncertainty": "derived from declared repository source"
     },
     {
-      "claim_ceiling": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
       "label": "tools/adaptive_relational_network/validator.py",
       "layers": [
         "operations"
@@ -390,7 +390,7 @@
   "perturbations": [
     {
       "claim_ceiling": "projection perturbation only",
-      "content_ref": "8bb20cc4e3504eba46a94ff158f6dceebc3c015c",
+      "content_ref": "26fea4a00bdd43dbe772a138020c19a12f16d77b",
       "input_type": "repository_state",
       "perturbation_id": "projection-input",
       "provenance": [
@@ -428,7 +428,7 @@
         "declared source paths become source_file nodes",
         "repo points to each source"
       ],
-      "source_network": "arn-projection-8bb20cc4"
+      "source_network": "arn-projection-26fea4a0"
     }
   ],
   "reconfiguration_episodes": [
@@ -506,7 +506,7 @@
   ],
   "relations": [
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -528,7 +528,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -550,7 +550,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -572,7 +572,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -594,7 +594,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -616,7 +616,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -638,7 +638,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -660,7 +660,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -682,7 +682,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -704,7 +704,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -726,7 +726,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -748,7 +748,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -770,7 +770,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -792,7 +792,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -814,7 +814,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -836,7 +836,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -858,7 +858,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -880,7 +880,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -902,7 +902,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -924,7 +924,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -946,7 +946,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -968,7 +968,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -990,7 +990,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1012,7 +1012,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1034,7 +1034,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1056,7 +1056,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1078,7 +1078,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1100,7 +1100,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1122,7 +1122,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1144,7 +1144,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1166,7 +1166,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1188,7 +1188,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1210,7 +1210,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1232,7 +1232,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1254,7 +1254,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1276,7 +1276,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1298,7 +1298,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1320,7 +1320,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],
@@ -1342,7 +1342,7 @@
       "weight": 1.0
     },
     {
-      "claim_ceiling": "relation projected from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not causality or truth",
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
       "conditions": [
         "repository projection"
       ],

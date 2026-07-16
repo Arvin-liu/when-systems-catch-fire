@@ -65,7 +65,7 @@
     {
       "fields": {
         "claim_ceiling": {
-          "after": "projection from 8bb20cc4e3504eba46a94ff158f6dceebc3c015c; not canonical truth",
+          "after": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
           "before": "projection from 1f3815538cf56d0f35cc06c6b2396fadf33a34a2; not canonical truth"
         }
       },
@@ -75,7 +75,19 @@
   "changed_relations": [],
   "changed_temporal_activations": [],
   "claim_ceiling": "NetworkDiff is representation diff only, not proof that reality changed.",
-  "deterministic_hash": "d732ef2609b60af0b4af7e1c87d3fdc08a1af476cb2be178efd9223b0023a1d7",
+  "deterministic_hash": "45da9d322e98d7b582f3694f0d11714a7e3c0135219df09f059de818e90f85cb",
+  "external_refs": [
+    {
+      "claim_ceiling": "external git commit reference only",
+      "ref_id": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
+      "ref_type": "git_commit"
+    },
+    {
+      "claim_ceiling": "external git commit reference only",
+      "ref_id": "26fea4a00bdd43dbe772a138020c19a12f16d77b",
+      "ref_type": "git_commit"
+    }
+  ],
   "from_ref": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
   "projection_change": true,
   "removed_hyper_relations": [],
@@ -100,6 +112,6 @@
     ]
   },
   "source_change": true,
-  "to_ref": "8bb20cc4e3504eba46a94ff158f6dceebc3c015c",
+  "to_ref": "26fea4a00bdd43dbe772a138020c19a12f16d77b",
   "unresolved_change": []
 }
