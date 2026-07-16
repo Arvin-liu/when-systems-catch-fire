@@ -19,6 +19,9 @@ on:
       - 'data/operations/**'
       - 'tools/validate_iteration_sync.py'
       - 'tests/test_iteration_sync.py'
+      - 'tools/validate_human_front_door.py'
+      - 'tests/test_human_front_door.py'
+      - 'docs/ai-assistant-usage-reference.md'
       - 'ITERATION.md'
       - 'README.md'
       - 'docs/project-current-state.md'
@@ -47,6 +50,9 @@ on:
       - 'data/operations/**'
       - 'tools/validate_iteration_sync.py'
       - 'tests/test_iteration_sync.py'
+      - 'tools/validate_human_front_door.py'
+      - 'tests/test_human_front_door.py'
+      - 'docs/ai-assistant-usage-reference.md'
       - 'ITERATION.md'
       - 'README.md'
       - 'docs/project-current-state.md'
@@ -86,5 +92,7 @@ jobs:
       - run: python3 tools/foundation/verify_079.py --check
       - run: python3 tools/foundation/validate_080_adjudications.py
       - run: python3 tools/validate_iteration_sync.py
+      - run: python3 tools/validate_human_front_door.py
       - run: python3 -m unittest tests.foundation.test_foundation
       - run: python3 -m unittest tests.test_iteration_sync -v
+      - run: python3 -m unittest tests.test_human_front_door -v
