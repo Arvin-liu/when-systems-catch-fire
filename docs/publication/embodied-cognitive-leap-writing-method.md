@@ -143,7 +143,7 @@ English name: `Embodied Cognitive-Leap Writing Method`
 
 ## 反模式
 
-1. 先规定几幕，再把材料填入。
+1. 预设几幕，再把材料填入。
 2. 用明显过渡语解释每一次跳转。
 3. 把领域枚举误称为心智升层。
 4. 每个案例只重复同一机制。
