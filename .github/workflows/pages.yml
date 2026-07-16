@@ -54,6 +54,11 @@ jobs:
         with:
           source: site
           destination: _site
+      - name: Preserve repository-compatible analysis link
+        shell: bash
+        run: |
+          mkdir -p _site/reports/publication
+          cp reports/publication/jin-rise-point-fire-analysis.md _site/reports/publication/jin-rise-point-fire-analysis.md
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
