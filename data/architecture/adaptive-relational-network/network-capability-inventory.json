@@ -1,0 +1,23 @@
+{
+  "task": "121Q23",
+  "as_of_commit": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
+  "status": "PARTIAL_RELATIONAL_ASSETS_WITHOUT_ADAPTIVE_RELATIONAL_NETWORK",
+  "assets": [
+    {"asset_id":"foundation-registries","paths":["data/foundation/registry-manifest.json","data/foundation/formal-objects/objects.jsonl"],"coverage":["typed objects","claims","evidence mappings"],"gap":"authoritative status registry, not adaptive relation reconfiguration"},
+    {"asset_id":"function-dependency","paths":["data/function_dependency.json"],"coverage":["function dependency hints"],"gap":"dependency list lacks temporal activation, integration response, and higher-order relation protection"},
+    {"asset_id":"q12-q13-controls","paths":["docs/architecture/effectual-action-plane.md","docs/architecture/attention-attractor-control-plane.md"],"coverage":["action selection","attention attractors","distribution collapse"],"gap":"controls do not provide general multilayer relation graph"},
+    {"asset_id":"atlas","paths":["docs/architecture/ignition-atlas.md","data/atlas/generated/ignition-atlas-121q14.json"],"coverage":["maps","projections","not-causality boundaries"],"gap":"Atlas is navigational map, not adaptive reconfiguration substrate"},
+    {"asset_id":"mcf","paths":["docs/architecture/multiscale-causal-fabric.md"],"coverage":["causal events","states","relations","projections"],"gap":"causal specialization delegates non-causal relations elsewhere"},
+    {"asset_id":"psd","paths":["docs/architecture/probabilistic-system-dynamics.md"],"coverage":["system context","state space","transition law","probability semantics"],"gap":"system dynamics extension, not heterogeneous relation integration"},
+    {"asset_id":"value-and-governance","paths":["README.md","docs/governance/life-community-value-charter.md"],"coverage":["normative boundaries","risk bearers","value recipients"],"gap":"value priority relation is not machine-readable as adaptive network"},
+    {"asset_id":"agent-resource-relations","paths":["reports/reality","data/reality"],"coverage":["support signal","resource commitments","reality loop"],"gap":"resource and agent relations are not in one temporal multilayer network"}
+  ],
+  "distinctions": {
+    "matrix_vs_network_vs_map": "Matrices and registries store structured rows; networks model typed relations; maps are projections and navigation aids.",
+    "relation_vs_causality": "Relations include similarity, support, conflict, identity, value, resource and dependency; causality delegates to MCF.",
+    "static_vs_temporal": "Static adjacency cannot create time-respecting paths.",
+    "pairwise_vs_higher_order": "Group interactions require HyperRelation and cannot be silently reduced to pairs.",
+    "stored_vs_retrievable_vs_integrated": "External availability and retrieval are not judgment/action/transfer integration.",
+    "diffusion_vs_learning": "Exposure and diffusion are not proof of durable learning or behavior adoption."
+  }
+}
