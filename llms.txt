@@ -11,7 +11,7 @@ Iteration method authority: ITERATION.md.
 Architecture:
 L0 source and evidence -> L1 controlled semantic claims -> L2 formal objects -> L3 logical arguments -> L4 mathematical models and proofs -> L5 validation and validity -> L6 interpretation, application and publication.
 L6 must cite L0-L5 and cannot create mathematical truth.
-121Q28 is an open Draft candidate at L6: Embodied Cognitive-Leap Writing Method 0.1.0. It uses an embodied anchor, prospective writing (write the current level from within the next), uncontained remainder, un-signposted leap, double-belonging hinge, retro-illumination and an information-gain stop. It is not current until independently accepted, merged and synchronized; it is not a new architecture/truth layer, universal aesthetic law, or machine proof of literary quality.
+121Q28R is an open Draft revision at L6: Zhiyuan Writing Method 0.2.0. Review rejected 0.1.0's mandatory embodied anchor. The revision uses a starting carrier, prospective writing, uncontained remainder, cognitive gravity, recursive concept redefinition or other hidden continuity, retro-illumination, latent-theme growth and an information-gain stop. Embodied anchoring, cross-domain isomorphism and compressed endings are optional. It is not current until independently accepted, merged and synchronized; it is not a new architecture/truth layer, universal aesthetic law, or machine proof of literary quality.
 Mathematics and logic constrain each other. Formula, logical validity, proof, evidence and workflow completion are different things.
 
 Core classifications:
@@ -75,7 +75,7 @@ Red lines for agents:
 - Multiscale Causal Fabric, Probabilistic System Dynamics, and Adaptive Relational Network are current modeling/projection capabilities, not new truth layers.
 - Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, centrality, community, retrieval, self-report, or behavior change is not truth, value, causality, or internal learning proof.
 - Future state-changing work must follow ITERATION.md: recover remote truth, prove the gap, set a claim ceiling, synchronize front-door/current-state surfaces, validate exact final HEAD, and write receipts.
-- For the 121Q28 L6 candidate, distinguish horizontal domain switching from vertical cognitive-level change. A new level must alter an earlier level on return, preserve unmapped differences and embodied/Charter costs, and stop when it adds no information. Never turn the backstage spec into a fixed article outline or imitate a stock list of author images.
+- For the 121Q28R L6 candidate, distinguish horizontal domain switching from vertical cognitive-level change. A new level must alter an earlier level on return, allow a latent theme to grow rather than pre-lock it, preserve unmapped differences and real/Charter costs, and stop when it adds no information. Never require bodily coordinates, cross-domain examples, an explicit hinge at every level, compressed endings, a fixed outline, or stock author images.
 
 Validation before commit:
 - python3 tools/foundation/migrate_legacy.py --check

@@ -17,7 +17,7 @@ PR #57 / Q25C 已在独立验收、普通合并、生产 Pages 部署与实时�
 
 Q25B 已因生命周期死锁降为 superseded non-ready 历史候选；Q25C 是 PR #57 中被接受并进入当前状态的方法增量。Q25C 允许 post-merge-only Pages pending 时进行 pre-merge Accepted/Merged，同时仍要求逐表面 attestation 才能进入 Current/Closed。
 
-121Q28 的 `肉身锚定的心智层级跃迁写作法` 0.1.0 是 L6 出版接口候选，不是架构版本升级。它在 Draft PR 阶段只能报告 `candidate_publication_method_implemented / repository_synchronization_complete_pending_independent_review`；在独立接受、合并和适用同步完成前，不进入当前状态，也不改变七层架构、Foundation 或迭代操作法版本。
+121Q28 的 `0.1.0` L6 出版接口候选因把肉身锚定误设为必要条件而被正式拒绝，从未成为 current。121Q28R 在同一 Draft PR 上以追加提交修订为 `之元写作法 / Zhiyuan Writing Method` `0.2.0`，只能报告 `candidate_cognitive_level_leap_method_0_2_0_implemented / repository_synchronization_complete_pending_independent_review`。这不是架构版本升级；在独立接受、合并和适用同步完成前，不进入当前状态，也不改变七层架构、Foundation 或迭代操作法版本。
 
 架构完成不等于内容证明完成。当前架构允许后续逐对象补源、补定义、补证明、补实验、发现反例或降级，而不再推倒整体架构。
 
