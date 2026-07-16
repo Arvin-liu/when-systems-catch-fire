@@ -58,7 +58,7 @@ These tools do not discover hidden reality, mind-read integration, infer clinica
 The executable validation chain has two layers:
 
 - Draft 2020-12 JSON Schema validation for every complete ARN instance in `data/architecture/adaptive-relational-network/examples/`.
-- Semantic validation for duplicate IDs, reference integrity, non-empty provenance/uncertainty/alternatives/claim ceilings/residue, higher-order preservation, topology-aware temporal paths and overclaim boundaries.
+- Semantic validation for duplicate IDs, reference integrity, semantic nonblank provenance/uncertainty/alternatives/claim ceilings/residue, higher-order preservation, topology-aware temporal paths and overclaim boundaries.
 
 `embedding-probe.json` is not excluded as an unexplained special file. It has an independent strict object contract at `schemas/architecture/adaptive-relational-network-embedding-probe.schema.json`.
 
@@ -85,3 +85,7 @@ For multi-edge paths, ARN does not merely check whether each adjacent pair appea
 `TemporalActivation.target_ref` is limited to `node_id` and `relation_id`. Layers, states, perturbations, embedding evidence and network IDs are not activation targets under the current ARN contract.
 
 `NetworkDiff.from_ref` and `NetworkDiff.to_ref` must reference a local `network_id`, `state_id`, `projection_id` or a declared `external_refs.ref_id`. External commit references are allowed only when typed explicitly, such as `ref_type: git_commit`, and remain external version references rather than canonical ARN objects.
+
+Because diff references are represented as strings, the allowed local reference namespace must be unambiguous: `network_id`, `state_id` and `projection_id` values may not collide. `NetworkDiff.external_refs[].ref_id` values must be unique inside each diff and may not collide with local diff-reference IDs. Duplicate external IDs, including conflicting duplicate IDs with different `ref_type` values, are invalid.
+
+Semantic nonblank fields are checked after trimming whitespace. Lists such as provenance, alternatives, residue, evidence, attractor loop patterns and cascade paths cannot satisfy the contract with blank or whitespace-only strings. Optional empty diff change arrays remain allowed.

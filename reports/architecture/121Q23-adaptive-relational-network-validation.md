@@ -1,6 +1,6 @@
 # 121Q23 Adaptive Relational Network Validation
 
-Status: `121Q23E_READY_AS_ADVERSARIALLY_CLOSED_OPERATIONAL_ARN_CANDIDATE`
+Status: `121Q23F_READY_AS_REFERENCE_IDENTITY_CLOSED_OPERATIONAL_ARN_CANDIDATE`
 
 ARN is a derived representation for heterogeneous, non-causal, multilayer and temporally activated relations. It does not add a truth layer.
 
@@ -12,8 +12,11 @@ Validator and tool coverage:
 - duplicate ID detection without set-based hiding;
 - node, relation, layer, hyperrelation, coupling, activation, state, perturbation, integration-response, reconfiguration, cascade, embedding, projection, diff and residue reference integrity;
 - temporal activation target domain restricted to node IDs and relation IDs;
-- every ID-bearing ARN collection audited, including attractor and cascade `record_id` namespaces;
-- NetworkDiff `from_ref` and `to_ref` restricted to local network/state/projection IDs or declared typed external refs;
+- every ID-bearing ARN collection audited, including `diff_id`, attractor/cascade `record_id` namespaces and nested `NetworkDiff.external_refs[].ref_id`;
+- NetworkDiff `from_ref` and `to_ref` restricted to an unambiguous local network/state/projection namespace or declared typed external refs;
+- local diff-reference namespace collision detection across `network_id`, `state_id` and `projection_id`;
+- external ref duplicate, type-conflict and local-collision rejection;
+- semantic nonblank validation for required strings and lists after whitespace trimming;
 - interval validation with `start <= end`;
 - topology-aware temporal graph-path validation separated from merely ordered relation sequences;
 - stateful reachable-orientation propagation for multi-edge directed, undirected and bidirectional paths;
@@ -50,6 +53,16 @@ Real-history proof: `reports/architecture/121Q23C-operational-arn-real-history-v
 - attractor and cascade `record_id` namespaces are duplicate-checked and require non-empty semantic content;
 - diff reference integrity now requires local network/state/projection references or typed external refs;
 - deterministic diff hash after 121Q23E regeneration: `45da9d322e98d7b582f3694f0d11714a7e3c0135219df09f059de818e90f85cb`.
+
+121Q23F closure details:
+
+- complete top-level ID enumeration test now includes `diffs` / `diff_id`;
+- each `NetworkDiff.external_refs[].ref_id` namespace is duplicate-checked without set-based hiding;
+- external refs with the same ID and different `ref_type` are rejected as conflicts;
+- external ref IDs that collide with local network/state/projection refs are rejected;
+- local diff-reference namespace collisions are rejected before string refs are resolved;
+- whitespace-only strings no longer satisfy required provenance, alternatives, residue, evidence, claim ceiling, attractor loop or cascade path semantics;
+- optional empty NetworkDiff change arrays remain valid.
 
 Integration boundaries:
 
