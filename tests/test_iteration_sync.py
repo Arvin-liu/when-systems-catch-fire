@@ -327,11 +327,27 @@ class IterationSyncTests(unittest.TestCase):
         q25b_seal = load_json(infer_seal_path(q25b))
         return registry, q25_path, q25, q25_seal, q25b_path, q25b, q25b_seal
 
-    def q25c_document(self):
+    def q25c_document(self, *, current=False):
         registry = validate_registry(load_json(REGISTRY_PATH))
         path = ROOT / "data/operations/iterations/121Q25C.json"
         manifest = load_json(path)
         seal = load_json(infer_seal_path(manifest))
+        if not current:
+            manifest["branch_pr"].update({"draft": True, "merged": False})
+            manifest["branch_pr"].pop("merge_commit", None)
+            manifest["head_binding"]["receipt_path"] = "agent-results/IGNITION-20260716-121Q25C-result.md"
+            manifest["receipt_location"] = "agent-results/IGNITION-20260716-121Q25C-result.md"
+            manifest["claim_ceiling"] = "validated_lifecycle_gated_whole_project_synchronization_candidate_only"
+            manifest["status"].update({"accepted": False, "merged": False, "current": False})
+            manifest["completion_state"].update({"external_synchronization_attested": False, "project_synchronization_complete": False})
+            manifest["synchronization_closure"]["external_attestations"][0].update({"status": "pending", "evidence_refs": ["external:pr_body:57", "external:1111_receipt:IGNITION-20260716-121Q25C-result.md"]})
+            seal["status"] = "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY"
+            seal["phase_b"].pop("merge_commit", None)
+            seal["phase_b"]["head_binding"]["receipt_path"] = manifest["head_binding"]["receipt_path"]
+            seal["phase_b"]["claim_ceiling"] = manifest["claim_ceiling"]
+            seal["lifecycle"] = copy.deepcopy(manifest["status"])
+            seal["completion_state"] = copy.deepcopy(manifest["completion_state"])
+            seal["external_attestations"] = copy.deepcopy(manifest["synchronization_closure"]["external_attestations"])
         return registry, path, manifest, seal
 
     def set_lifecycle(self, manifest, seal, *, accepted=False, merged=False, current=False):
@@ -356,13 +372,13 @@ class IterationSyncTests(unittest.TestCase):
         validate_manifest_schema(manifest, path)
         validate_custom(manifest, path, seal, registry)
 
-    def test_actual_q25c_binds_own_seal_and_is_only_ready_method_candidate(self):
-        registry, path, manifest, seal = self.q25c_document()
+    def test_actual_q25c_binds_own_seal_and_is_current_method_increment(self):
+        registry, path, manifest, seal = self.q25c_document(current=True)
         validate_manifest_schema(manifest, path)
         validate_custom(manifest, path, seal, registry)
         q25b = load_json(ROOT / "data/operations/iterations/121Q25B.json")
         self.assertFalse(q25b["status"]["ready_for_gpt_verification"])
-        self.assertTrue(manifest["status"]["ready_for_gpt_verification"])
+        self.assertTrue(manifest["status"]["current"])
 
     def test_missing_q25_seal_is_rejected(self):
         registry, q25_path, q25, *_ = self.q25_documents()

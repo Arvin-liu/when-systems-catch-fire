@@ -79,7 +79,7 @@ llms.txt
 
 这个链接打开的就是项目首页。你可以复制上面的提示词，再把这个链接交给自己常用的 AI。
 
-当前状态与架构直达入口：[项目现状](./project-current-state.md) / [点火迭代操作法](../ITERATION.md) / [MCF](./architecture/multiscale-causal-fabric.md) / [PSD](./architecture/probabilistic-system-dynamics.md) / [ARN](./architecture/adaptive-relational-network.md)。本页是完整的人类 AI 使用指南；根 README 中的提示词是同一份受验证的前门投影，两者不得独立漂移。
+当前状态与架构直达入口：[项目现状](./project-current-state.md) / [点火迭代操作法](../ITERATION.md) / [MCF](./architecture/multiscale-causal-fabric.md) / [PSD](./architecture/probabilistic-system-dynamics.md) / [ARN](./architecture/adaptive-relational-network.md)。本页是完整的人类 AI 使用指南；根 README 中的提示词是同一份受验证的前门投影，两者不得独立漂移。当前迭代方法把状态改变视为全项目同步传播：实现完成、仓库同步、逐外部表面证明和项目整体完成必须分开报告，局部通过不能替代整体闭环。
 
 ## 使用边界
 

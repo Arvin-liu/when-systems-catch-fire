@@ -54,7 +54,7 @@ class HumanFrontDoorTests(unittest.TestCase):
 
     def test_stale_pr55_scope_is_rejected(self):
         stale = self.current_state.replace(
-            "describes the current repository baseline after PR #56",
+            "describes the current repository baseline after PR #57",
             "describes the repository after PR #55 was merged",
         )
         with self.assertRaisesRegex(AssertionError, "PR #55"):

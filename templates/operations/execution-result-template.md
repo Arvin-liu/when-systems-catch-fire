@@ -1,5 +1,7 @@
 # Ignition Execution Result Template
 
+Current method contract: `ITERATION.md` 1.1.0. Report every triggered external surface separately.
+
 Status: `<STATUS>`
 
 Repository:

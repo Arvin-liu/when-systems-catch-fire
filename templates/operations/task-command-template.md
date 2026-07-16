@@ -1,5 +1,7 @@
 # Ignition Task Command Template
 
+Current method contract: `ITERATION.md` 1.1.0, including registry-derived propagation and lifecycle-specific external blockers.
+
 Task ID: `<TASK_ID>`
 
 Starting truth:

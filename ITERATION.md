@@ -4,6 +4,8 @@ Method version: `1.1.0`
 
 Status: canonical operation method. This method governs how 点火 changes itself. It is not a truth layer, proof system, value charter, causal model or substitute for external evidence.
 
+Current lifecycle: method 1.1.0 entered `main` through the independently accepted PR #57 and Q25D whole-project synchronization closeout.
+
 ## 0. Read This Boundary First
 
 An iteration can produce a candidate artifact, a verified candidate, an accepted change, a merged change or a current repository capability. These are different states.

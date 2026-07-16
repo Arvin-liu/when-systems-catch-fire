@@ -1,5 +1,7 @@
 # Ignition Independent Review Template
 
+Current method contract: `ITERATION.md` 1.1.0. Evaluate blockers at their declared lifecycle gate.
+
 Review target:
 
 - Repository:

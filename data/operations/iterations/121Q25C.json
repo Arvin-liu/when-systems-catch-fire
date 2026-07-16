@@ -4,15 +4,15 @@
   "completion_seal_path": "reports/operations/121Q25C-completion-seal.json",
   "change_classification": ["REPAIR", "INTERFACE_CHANGE", "OPERATIONS_METHOD"],
   "verified_start": {"main_head": "7fc4b309720ea1b4e9c4b47477c2f423860d53df", "source": "PR #57 exact Q25B head 66b5765c21b3ac0098a92713f940b6cda4cce591", "verified_at": "2026-07-16"},
-  "branch_pr": {"branch": "docs/121q25-human-front-door-capability-sync-20260716", "pr_number": 57, "base": "main", "base_head": "7fc4b309720ea1b4e9c4b47477c2f423860d53df", "draft": true, "merged": false},
-  "head_binding": {"mode": "external_exact_head_attestation", "pr_number": 57, "authority": "pull_request_body_and_1111_receipt", "receipt_path": "agent-results/IGNITION-20260716-121Q25C-result.md", "embedded_exact_current_head": false, "live_refetch_required": true, "explanation": "Exact final HEAD, CI and Pages artifact evidence remain external. Repository files encode deterministic lifecycle gates and pending per-surface production obligations."},
+  "branch_pr": {"branch": "docs/121q25-human-front-door-capability-sync-20260716", "pr_number": 57, "base": "main", "base_head": "7fc4b309720ea1b4e9c4b47477c2f423860d53df", "draft": false, "merged": true, "merge_commit": "e51a8876c6f0fb28694e35436a65712786b0d08d"},
+  "head_binding": {"mode": "external_exact_head_attestation", "pr_number": 57, "authority": "pull_request_body_and_1111_receipt", "receipt_path": "agent-results/IGNITION-20260716-121Q25D-result.md", "embedded_exact_current_head": false, "live_refetch_required": true, "explanation": "Exact final main HEAD, CI and Pages evidence remain external. Repository files encode deterministic current lifecycle and the individually attested Pages obligation."},
   "gap": {
     "summary": "Q25B required all external synchronization before Accepted while Pages production attestation was permitted only after merge, creating an executable lifecycle deadlock.",
     "evidence": ["ITERATION.md required external obligations before acceptance and production Pages only after merge.", "tools/validate_iteration_sync.py required project_synchronization_complete for both accepted and current.", "external.pages_homepage registry blocks only current and closed, exposing the validator/prose inconsistency."],
     "smallest_material_action": "Evaluate registry blocks per lifecycle gate and represent each external surface with its own strict attestation record."
   },
-  "claim_ceiling": "validated_lifecycle_gated_whole_project_synchronization_candidate_only",
-  "status": {"candidate": true, "ready_for_gpt_verification": true, "accepted": false, "merged": false, "current": false},
+  "claim_ceiling": "current_lifecycle_gated_whole_project_synchronization_method_only",
+  "status": {"candidate": true, "ready_for_gpt_verification": true, "accepted": true, "merged": true, "current": true},
   "state_transition": {
     "subjects": ["iteration lifecycle gates", "external surface attestations", "Q25B candidate lifecycle"],
     "prior_state": "Accepted required all post-merge external synchronization and therefore could not precede merge.",
@@ -27,7 +27,7 @@
     "surface_decisions": [
       {"surface_id": "human.readme", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q25 human content remains accepted and Q25C changes operation lifecycle only.", "evidence_refs": ["README.md", "tools/validate_human_front_door.py"], "validation_mode": "repository_semantic_validation", "derived_from": []},
       {"surface_id": "human.pages_source", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q25B already made Draft Pages build-only and main-only for production deploy.", "evidence_refs": [".github/workflows/pages.yml", "reports/operations/121Q25B-whole-project-synchronization-contract.md"], "validation_mode": "repository_build_validation", "derived_from": ["human.readme"]},
-      {"surface_id": "external.pages_homepage", "decision": "NO_CHANGE_WITH_REASON", "reason": "The production homepage remains a pending post-merge obligation blocking Current and Closed only.", "evidence_refs": ["data/operations/synchronization-surfaces.json", "reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md"], "validation_mode": "post_merge_external_render_attestation", "derived_from": ["human.readme", "human.pages_source"]},
+      {"surface_id": "external.pages_homepage", "decision": "CHANGE", "reason": "Main production deployment and cache-bypassed live fetch satisfy the Current blocker through external attestation.", "evidence_refs": ["external:pr_body:57", "external:1111_receipt:IGNITION-20260716-121Q25D-result.md", "external:live_refetch:pages-homepage"], "validation_mode": "post_merge_external_render_attestation", "derived_from": ["human.readme", "human.pages_source"]},
       {"surface_id": "human.current_state", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q25 scope is truthful and Draft method work must not be promoted as current.", "evidence_refs": ["docs/project-current-state.md", "reports/operations/121Q25-front-door-audit.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
       {"surface_id": "human.summary", "decision": "NO_CHANGE_WITH_REASON", "reason": "No new merged capability exists.", "evidence_refs": ["SUMMARY.md", "data/operations/iterations/121Q25C.json"], "validation_mode": "repository_semantic_validation", "derived_from": []},
       {"surface_id": "human.usage", "decision": "NO_CHANGE_WITH_REASON", "reason": "End-user project usage is unchanged by lifecycle gate repair.", "evidence_refs": ["docs/USAGE.md", "ITERATION.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
@@ -43,13 +43,13 @@
       {"surface_id": "method.review_template", "decision": "CHANGE", "reason": "Independent review must evaluate only blockers applicable to each lifecycle gate.", "evidence_refs": ["templates/operations/independent-review-template.md"], "validation_mode": "repository_semantic_validation", "derived_from": ["method.iteration"]}
     ],
     "external_attestations": [
-      {"surface_id": "external.pages_homepage", "stage": "post_merge", "status": "pending", "authority": "pull_request_body_and_1111_receipt", "evidence_refs": ["external:pr_body:57", "external:1111_receipt:IGNITION-20260716-121Q25C-result.md"], "live_state_locally_verifiable": false}
+      {"surface_id": "external.pages_homepage", "stage": "post_merge", "status": "attested", "authority": "pull_request_body_and_1111_receipt", "evidence_refs": ["external:pr_body:57", "external:1111_receipt:IGNITION-20260716-121Q25D-result.md", "external:live_refetch:pages-homepage"], "live_state_locally_verifiable": false}
     ],
     "unresolved_residue": [],
     "external_verification_policy": "Draft exact-head Pages artifact is built and inspected without production deploy. After accepted merge, main deployment and live fetch individually attest external.pages_homepage before Current/Closed.",
     "live_external_surfaces_verified": false
   },
-  "completion_state": {"implementation_complete": true, "repository_synchronization_complete": true, "external_synchronization_required": true, "external_synchronization_attested": false, "project_synchronization_complete": false},
+  "completion_state": {"implementation_complete": true, "repository_synchronization_complete": true, "external_synchronization_required": true, "external_synchronization_attested": true, "project_synchronization_complete": true},
   "impact_matrix": [
     {"surface": "ITERATION.md", "decision": "CHANGE", "reason": "Repair lifecycle semantics."},
     {"surface": "schemas/operations/synchronization-surfaces.schema.json", "decision": "CHANGE", "reason": "Allow all lifecycle blocker names."},
@@ -88,6 +88,6 @@
   "schema_tools_tests_workflows_reports_changed": ["schemas/operations/synchronization-surfaces.schema.json", "schemas/operations/iteration-manifest.schema.json", "tools/validate_iteration_sync.py", "tests/test_iteration_sync.py", "reports/operations/121Q25C-completion-seal.json", "reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md"],
   "validation": {"local": [{"name": "lifecycle-gate", "status": "PASS", "evidence": "Gate-specific lifecycle tests pass."}, {"name": "external-attestations", "status": "PASS", "evidence": "Per-surface attestation schema and adversarial tests pass."}, {"name": "iteration-sync", "status": "PASS", "evidence": "Q24/Q25/Q25B/Q25C bind their own seals."}], "remote": [], "external_exact_head_policy": {"required": true, "authority": "pull_request_body_and_1111_receipt", "required_workflows": ["foundation-validation", "function-os-ci"], "live_refetch_before_acceptance_or_merge": true}},
   "rollback_strategy": "Revert the Q25C commit or close PR #57; retain Q25B deadlock evidence and Q25 public content history.",
-  "remaining_limitations": ["Q25C is an unaccepted Draft candidate.", "Production Pages remains pending until accepted merge.", "Project synchronization is intentionally incomplete until main deployment and live fetch."],
-  "receipt_location": "agent-results/IGNITION-20260716-121Q25C-result.md"
+  "remaining_limitations": ["Method 1.1.0 constrains repository operations and does not prove substantive truth, value, causality, completeness or correctness.", "Repository-local validation cannot prove live external state; the Pages observation remains externally attested."],
+  "receipt_location": "agent-results/IGNITION-20260716-121Q25D-result.md"
 }

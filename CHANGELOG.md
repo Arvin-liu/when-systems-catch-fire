@@ -2,8 +2,8 @@
 
 ## Unreleased
 
-- Q25B Draft candidate upgrades the iteration method to 1.1.0 with registry-derived whole-project propagation closure, task-generic manifest/seal binding, separated completion levels and build-only Draft Pages verification. This entry records candidate history, not a merged/current capability.
-- Q25C supersedes Q25B as the sole Ready method candidate by removing the pre-merge acceptance/post-merge Pages deadlock and replacing one global external-attestation flag with strict per-surface records. Q25B remains auditable history.
+- PR #57 / Q25 / Q25C were independently accepted, merged and closed as current through Q25D. Human front doors now expose the current capability stack, and method 1.1.0 enforces registry-derived whole-project propagation, lifecycle-specific blockers and per-surface external attestations.
+- Q25B remains superseded non-ready candidate history. Q25C, not Q25B, is the accepted lifecycle-gated method increment.
 
 ## 2026-07-16 · PR #56 iteration method merged and current-state closeout
 

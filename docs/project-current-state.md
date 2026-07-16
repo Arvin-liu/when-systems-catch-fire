@@ -1,6 +1,6 @@
 # 项目现状 / Current Project State
 
-> Scope: describes the current repository baseline after PR #56 and the 121Q24D lifecycle closeout entered `main` on 2026-07-16. This versioned page names the accepted lifecycle boundary without embedding the future commit that contains the page itself; exact live HEAD and CI remain external attestations and must be re-fetched. The description may become outdated after later evidence, failures, capabilities, or governance changes.
+> Scope: describes the current repository baseline after PR #57 and the 121Q25D whole-project synchronization closeout entered `main` on 2026-07-16. This versioned page names the accepted lifecycle boundary without embedding the future commit that contains the page itself; exact live HEAD and CI remain external attestations and must be re-fetched. The description may become outdated after later evidence, failures, capabilities, or governance changes.
 
 ## How This Page Should Be Read
 
@@ -20,7 +20,9 @@ Current state must be inferred from actual repository artifacts: architecture fi
 
 Q21R, Q22 and Q23 add current architecture/operation assets for Multiscale Causal Fabric, Probabilistic System Dynamics and Adaptive Relational Network after their accepted chain entered `main`. These are modeling and projection capabilities with validators and reports; they are not new truth layers and do not prove ontology, causality, value or internal learning mechanisms.
 
-121Q24 is now a current repository operation capability after PR #56 was independently accepted, merged and verified. It provides the canonical iteration method and synchronization validator for future state-changing work; using it does not prove truth, value, causality, completeness or correctness.
+121Q24D closed 121Q24 as a current repository operation capability after PR #56 was independently accepted, merged and verified. It provides the canonical iteration method and synchronization validator for future state-changing work; using it does not prove truth, value, causality, completeness or correctness.
+
+121Q25 and Q25C are now current after PR #57 was independently accepted, merged and externally verified. Human front doors expose MCF, PSD, ARN and the iteration method, while method 1.1.0 derives whole-project propagation from the synchronization registry and separates implementation, repository, external and project completion. Q25B remains superseded candidate history; the method is an operation discipline, not a truth layer or proof of substantive correctness.
 
 ## Current Shape
 

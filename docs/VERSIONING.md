@@ -13,9 +13,9 @@
 
 PR #56 / 121Q24 已在验收后合并：迭代操作法与同步验证契约是当前仓库操作能力。它约束状态改变任务怎样记录 gap、claim ceiling、同步矩阵、验证和回执，但不证明任何结论的真理、价值、因果、完整性或正确性。
 
-PR #57 中的方法 1.1.0 仍是 Draft 候选：它增加同步表面注册表、传播闭包，以及实现完成、仓库同步完成、外部同步与项目整体完成的分层。合并前不得把该候选写成当前方法；生产 Pages 同步必须在 eventual merge 后独立验证。
+PR #57 / Q25C 已在独立验收、普通合并、生产 Pages 部署与实时读取后成为当前方法 1.1.0：它增加同步表面注册表、传播闭包，以及实现完成、仓库同步完成、外部同步与项目整体完成的分层。
 
-Q25B 已因生命周期死锁降为 superseded non-ready 历史候选；Q25C 是 PR #57 中唯一最终 Ready 候选。Q25C 允许 post-merge-only Pages pending 时进行 pre-merge Accepted/Merged，同时仍要求逐表面 attestation 才能进入 Current/Closed。
+Q25B 已因生命周期死锁降为 superseded non-ready 历史候选；Q25C 是 PR #57 中被接受并进入当前状态的方法增量。Q25C 允许 post-merge-only Pages pending 时进行 pre-merge Accepted/Merged，同时仍要求逐表面 attestation 才能进入 Current/Closed。
 
 架构完成不等于内容证明完成。当前架构允许后续逐对象补源、补定义、补证明、补实验、发现反例或降级，而不再推倒整体架构。
 

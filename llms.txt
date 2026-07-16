@@ -1,11 +1,11 @@
 Current project state:
 At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mechanism discovery and modelling system for cross-domain material. This is a versioned current-state description, not a permanent project identity or fixed final form. It is not a unified mathematical theory, a physical theory, a universal prover, or a purely literary or philosophical knowledge base.
 Current-state authority: docs/project-current-state.md.
-Current version: post-PR #56 main after merge commit b1becae50470f744501b5302c52008f978000c48 and Q24D closeout, preserving the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture and current operation overlays through Adaptive Relational Network plus the current 121Q24 iteration operation method.
+Current version: post-PR #57 main after Q25D whole-project synchronization closeout, preserving the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture and current operation overlays through Adaptive Relational Network plus iteration method 1.1.0.
 
-Iteration method candidate 1.1.0 on PR #57 adds registry-derived whole-project synchronization closure. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves live Pages truth.
+Current iteration method 1.1.0 adds registry-derived whole-project synchronization closure. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves live Pages truth.
 
-Q25C corrects the candidate lifecycle gates: registry `blocks` is evaluated per surface and per gate. Post-merge Pages pending does not block Accepted/Merged, but individually attested main deployment and live fetch remain mandatory for Current/Closed.
+Q25C defines the current lifecycle gates: registry `blocks` is evaluated per surface and per gate. Post-merge Pages pending does not block Accepted/Merged, but individually attested main deployment and live fetch remain mandatory for Current/Closed. Q25B remains superseded candidate history.
 Iteration method authority: ITERATION.md.
 
 Architecture:

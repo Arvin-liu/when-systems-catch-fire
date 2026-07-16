@@ -13,14 +13,15 @@
     "pr_number": 57,
     "base": "main",
     "base_head": "7fc4b309720ea1b4e9c4b47477c2f423860d53df",
-    "draft": true,
-    "merged": false
+    "draft": false,
+    "merged": true,
+    "merge_commit": "e51a8876c6f0fb28694e35436a65712786b0d08d"
   },
   "head_binding": {
     "mode": "external_exact_head_attestation",
     "pr_number": 57,
     "authority": "pull_request_body_and_1111_receipt",
-    "receipt_path": "agent-results/IGNITION-20260716-121Q25-result.md",
+    "receipt_path": "agent-results/IGNITION-20260716-121Q25D-result.md",
     "embedded_exact_current_head": false,
     "live_refetch_required": true,
     "explanation": "The repository stores deterministic candidate consistency. Exact final PR HEAD, CI and rendered Pages deployment evidence are recorded after push in PR #57 and the independent 1111 receipt."
@@ -35,8 +36,8 @@
     ],
     "smallest_material_action": "Synchronize the existing human front doors and add one semantic guard without changing architecture, runtime or machine truth stores."
   },
-  "claim_ceiling": "validated_human_front_door_sync_candidate_only",
-  "status": {"candidate": true, "ready_for_gpt_verification": true, "accepted": false, "merged": false, "current": false},
+  "claim_ceiling": "current_human_front_door_synchronization_capability_only",
+  "status": {"candidate": true, "ready_for_gpt_verification": true, "accepted": true, "merged": true, "current": true},
   "impact_matrix": [
     {"surface": "README.md", "decision": "CHANGE", "reason": "Visible capability summary, architecture links and embedded AI prompt must reflect current main."},
     {"surface": "docs/ai-assistant-usage-reference.md", "decision": "CHANGE", "reason": "Expanded human AI guide must include the current reading chain, questions and boundaries."},
@@ -88,9 +89,8 @@
   },
   "rollback_strategy": "Close PR #57 without merge or revert its eventual merge; README-derived Pages will return to the main README on the next main deployment.",
   "remaining_limitations": [
-    "This Draft synchronizes descriptions only and does not promote MCF, PSD or ARN to proven theory.",
-    "Repository-local validation cannot prove the live Pages deployment; exact deployment and rendered observations are external attestations.",
-    "The candidate is not current until independent acceptance, merge and post-merge verification."
+    "This current synchronization does not promote MCF, PSD or ARN to proven theory.",
+    "Repository-local validation cannot prove the live Pages deployment; exact deployment and rendered observations remain external attestations."
   ],
-  "receipt_location": "agent-results/IGNITION-20260716-121Q25-result.md"
+  "receipt_location": "agent-results/IGNITION-20260716-121Q25D-result.md"
 }

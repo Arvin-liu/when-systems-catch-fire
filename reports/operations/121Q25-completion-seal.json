@@ -1,6 +1,6 @@
 {
   "task_id": "121Q25",
-  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "status": "CURRENT_HUMAN_FRONT_DOOR_SYNCHRONIZATION_CAPABILITY",
   "method_version": "1.0.0",
   "manifest_path": "data/operations/iterations/121Q25.json",
   "phase_b": {
@@ -11,13 +11,14 @@
     "head_binding": {
       "mode": "external_exact_head_attestation",
       "authority": "pull_request_body_and_1111_receipt",
-      "receipt_path": "agent-results/IGNITION-20260716-121Q25-result.md",
+      "receipt_path": "agent-results/IGNITION-20260716-121Q25D-result.md",
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
-    "claim_ceiling": "validated_human_front_door_sync_candidate_only"
+    "claim_ceiling": "current_human_front_door_synchronization_capability_only",
+    "merge_commit": "e51a8876c6f0fb28694e35436a65712786b0d08d"
   },
-  "lifecycle": {"candidate": true, "ready_for_gpt_verification": true, "accepted": false, "merged": false, "current": false},
+  "lifecycle": {"candidate": true, "ready_for_gpt_verification": true, "accepted": true, "merged": true, "current": true},
   "pages_binding": {
     "source": "README.md",
     "workflow": ".github/workflows/pages.yml",
@@ -27,6 +28,6 @@
     "adds_truth_layer": false,
     "promotes_candidate_representation_to_proven_theory": false,
     "modifies_frozen_assets": false,
-    "merges_or_marks_ready": false
+    "merges_or_marks_ready": true
   }
 }
