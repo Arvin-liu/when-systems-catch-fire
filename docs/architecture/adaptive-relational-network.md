@@ -38,3 +38,16 @@ Adaptive Relational Network (ARN) represents heterogeneous, non-causal, multilay
 ## Integration
 
 Foundation remains authoritative for object, evidence and claim status. Atlas may render ARN projections. MCF is the causally typed specialization. PSD supplies system and stochastic semantics. Function OS may execute ARN build/probe/diff steps without runtime change. Q12 may choose state-changing actions. Q13 controls attractors, rumination and pseudo-compression. Charter remains the highest normative boundary.
+
+## Operational Surface
+
+The current operational ARN toolchain is intentionally narrow and deterministic:
+
+- `projector.py` builds derived ARN projections only from explicitly declared repository source paths and commits.
+- `temporal.py` checks declared numeric activation intervals and detects static-aggregation false positives.
+- `renderer.py` renders JSON and Markdown projections by layer, time window and relation class.
+- `diff.py` compares nodes, relations, attributes, hyper-relations, temporal activations, integration responses, embedding-evidence axes, residue and deterministic hashes.
+- `embedding.py` summarizes availability, retrieval, linkage, conflict, judgment, action, transfer and delayed stability as separate axes.
+- `validator.py` validates examples and remains a compatibility entrypoint.
+
+These tools do not discover hidden reality, mind-read integration, infer clinical states, or create a second canonical truth store. They operate on declared repository sources and preserve residue for unknown or unsupported fields.

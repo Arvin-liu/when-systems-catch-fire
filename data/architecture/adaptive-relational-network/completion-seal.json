@@ -1,8 +1,33 @@
 {
   "task": "121Q23",
-  "status": "121Q23_READY_AS_ADAPTIVE_RELATIONAL_NETWORK_CANDIDATE",
+  "status": "121Q23C_READY_AS_OPERATIONAL_ADAPTIVE_RELATIONAL_NETWORK_CANDIDATE",
   "claim_ceiling": "Derived representation only; not ontology, truth, value, causality or psychological diagnosis.",
   "validator": "tools/validate_adaptive_relational_network.py",
-  "tests": "tests/test_adaptive_relational_network.py",
+  "tool_files": [
+    "tools/adaptive_relational_network/projector.py",
+    "tools/adaptive_relational_network/temporal.py",
+    "tools/adaptive_relational_network/renderer.py",
+    "tools/adaptive_relational_network/diff.py",
+    "tools/adaptive_relational_network/embedding.py",
+    "tools/adaptive_relational_network/validator.py"
+  ],
+  "tests": [
+    "tests/test_adaptive_relational_network.py",
+    "tests/test_adaptive_relational_network_operational.py"
+  ],
+  "real_history": {
+    "before_commit": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
+    "proof_after_commit": "0dd4ae922f118d5c7038d7c2905328f43cd54114",
+    "diff_hash": "8f90fd6404400be5d4f1f272305f68350345c79bce6ea49961da3c95257d6597",
+    "before_hash": "0aaaa02e9f1e340d1e41ea116f2815cf7e6b9190785ca035947113d6aead662f",
+    "after_hash": "293ca6da84d2f22756f490441d179767e9ece03d16855ffe8ec13d77ccd846b1",
+    "pairwise_hash": "be45fd610bcf81af9e4135992e7fe134a4ca24e7d6f3bd00de575ea64ddea230",
+    "embedding_hash": "ec72fea5419dd39d7510f7d5707211484267c5ab4556dd1edf89ef4679f309a9"
+  },
+  "remaining_limitations": [
+    "Projection is source-declared and does not infer unstated relations.",
+    "Embedding summary is not a learning score.",
+    "NetworkDiff is representation diff only."
+  ],
   "frozen_assets_modified": false
 }

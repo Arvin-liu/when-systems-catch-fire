@@ -4,7 +4,7 @@ Status: `121Q23_READY_AS_ADAPTIVE_RELATIONAL_NETWORK_CANDIDATE`
 
 ARN is a derived representation for heterogeneous, non-causal, multilayer and temporally activated relations. It does not add a truth layer.
 
-Validator coverage:
+Validator and tool coverage:
 
 - provenance, uncertainty, temporal bounds and claim ceiling;
 - relation-to-causality overclaim;
@@ -14,6 +14,13 @@ Validator coverage:
 - projection replacing canonical source;
 - retrieval or self-report mislabeled as integration/behavior proof;
 - missing alternatives and residue.
+- deterministic repository-source projection;
+- layer/time/relation rendering;
+- full NetworkDiff over real repository states;
+- higher-order pairwise projection with explicit information-loss residue;
+- independent embedding-evidence axis summary.
+
+Real-history proof: `reports/architecture/121Q23C-operational-arn-real-history-validation.md` and `data/architecture/adaptive-relational-network/real-history/`.
 
 Integration boundaries:
 
@@ -24,4 +31,3 @@ Integration boundaries:
 - PSD supplies system/state/probabilistic semantics;
 - Q12/Q13 guide action and anti-attractor controls;
 - Charter remains highest normative boundary.
-
