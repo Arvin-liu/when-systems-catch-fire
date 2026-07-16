@@ -1,0 +1,18 @@
+{
+  "probe_id": "embedding-probe-121q23",
+  "axes": [
+    "pre_post_judgment",
+    "prediction_counterexample",
+    "novel_context_transfer",
+    "observable_action_trace",
+    "delayed_retest",
+    "self_report_separate_from_behavioral_evidence"
+  ],
+  "boundaries": [
+    "no mind reading",
+    "no internal learning proof",
+    "self-report is not behavioral proof",
+    "behavior change is not one mechanism proof"
+  ],
+  "claim_ceiling": "probe design only"
+}
