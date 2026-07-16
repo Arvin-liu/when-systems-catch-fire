@@ -1,0 +1,8 @@
+{
+  "task": "121Q23",
+  "status": "121Q23_READY_AS_ADAPTIVE_RELATIONAL_NETWORK_CANDIDATE",
+  "claim_ceiling": "Derived representation only; not ontology, truth, value, causality or psychological diagnosis.",
+  "validator": "tools/validate_adaptive_relational_network.py",
+  "tests": "tests/test_adaptive_relational_network.py",
+  "frozen_assets_modified": false
+}
