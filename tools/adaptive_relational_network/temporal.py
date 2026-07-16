@@ -20,7 +20,13 @@ def _relation_connections(relation: dict) -> set[tuple[str, str]]:
     return set()
 
 
+def oriented_transitions(relation: dict) -> set[tuple[str, str]]:
+    return _relation_connections(relation)
+
+
 def time_respecting_sequence(network: dict, relation_path: list[str]) -> bool:
+    if not relation_path:
+        return False
     rels = {r["relation_id"]: r for r in network.get("relations", [])}
     previous_end: float | None = None
     for rid in relation_path:
@@ -37,20 +43,24 @@ def time_respecting_sequence(network: dict, relation_path: list[str]) -> bool:
 
 
 def path_continuous(network: dict, relation_path: list[str]) -> bool:
+    if not relation_path:
+        return False
     rels = {r["relation_id"]: r for r in network.get("relations", [])}
-    previous_arrivals: set[str] | None = None
+    reachable_arrivals: set[str] | None = None
     for rid in relation_path:
         relation = rels.get(rid)
         if relation is None:
             return False
-        connections = _relation_connections(relation)
-        if not connections:
+        transitions = oriented_transitions(relation)
+        if not transitions:
             return False
-        departures = {source for source, _target in connections}
-        arrivals = {target for _source, target in connections}
-        if previous_arrivals is not None and not (previous_arrivals & departures):
+        if reachable_arrivals is None:
+            compatible = transitions
+        else:
+            compatible = {(departure, arrival) for departure, arrival in transitions if departure in reachable_arrivals}
+        if not compatible:
             return False
-        previous_arrivals = arrivals
+        reachable_arrivals = {arrival for _departure, arrival in compatible}
     return True
 
 

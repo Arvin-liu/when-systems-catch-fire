@@ -1,7 +1,7 @@
 import copy
 from pathlib import Path
 
-from tools.adaptive_relational_network.temporal import time_respecting_graph_path, time_respecting_sequence
+from tools.adaptive_relational_network.temporal import path_continuous, time_respecting_graph_path, time_respecting_sequence
 from tools.adaptive_relational_network.validator import (
     load_network,
     validate_embedding_probe_contract,
@@ -20,6 +20,24 @@ def assert_rejected(network, text):
     errors = validate_network(network)
     assert errors
     assert any(text in error for error in errors), errors
+
+
+def make_relation(relation_id, source, target, direction="directed", start=1, end=2):
+    return {
+        "relation_id": relation_id,
+        "source": source,
+        "target": target,
+        "relation_class": "dependency",
+        "direction": direction,
+        "sign": "neutral",
+        "weight": 1.0,
+        "conditions": ["test"],
+        "layer": "knowledge",
+        "temporal_bounds": {"start": start, "end": end},
+        "provenance": ["test"],
+        "uncertainty": "test",
+        "claim_ceiling": "test relation only",
+    }
 
 
 def test_schema_rejects_missing_required_field():
@@ -105,6 +123,51 @@ def test_nonexistent_relation_and_unknown_direction_paths_are_rejected():
     assert not time_respecting_graph_path(network, ["r-info-judgment", "r-judgment-action"])
 
 
+def test_empty_path_false_and_single_edge_true():
+    network = valid_network()
+    assert not path_continuous(network, [])
+    assert not time_respecting_sequence(network, [])
+    assert not time_respecting_graph_path(network, [])
+    assert path_continuous(network, ["r-info-judgment"])
+    assert time_respecting_graph_path(network, ["r-info-judgment"])
+
+
+def test_stateful_orientation_rejects_global_pairwise_false_positive():
+    network = valid_network()
+    network["nodes"] = [
+        {**network["nodes"][0], "node_id": node_id, "layers": ["knowledge"]}
+        for node_id in ["A", "B", "C", "D"]
+    ]
+    network["relations"] = [
+        make_relation("e1", "A", "B", "directed", 1, 2),
+        make_relation("e2", "B", "C", "undirected", 3, 4),
+        make_relation("e3", "B", "D", "directed", 5, 6),
+    ]
+    assert not path_continuous(network, ["e1", "e2", "e3"])
+    assert not time_respecting_graph_path(network, ["e1", "e2", "e3"])
+
+
+def test_stateful_orientation_accepts_consistent_undirected_and_bidirectional_paths():
+    network = valid_network()
+    network["nodes"] = [
+        {**network["nodes"][0], "node_id": node_id, "layers": ["knowledge"]}
+        for node_id in ["A", "B", "C", "D"]
+    ]
+    network["relations"] = [
+        make_relation("e1", "A", "B", "directed", 1, 2),
+        make_relation("e2", "B", "C", "undirected", 3, 4),
+        make_relation("e3", "C", "D", "bidirectional", 5, 6),
+    ]
+    assert path_continuous(network, ["e1", "e2", "e3"])
+    assert time_respecting_graph_path(network, ["e1", "e2", "e3"])
+
+
+def test_unknown_direction_breaks_stateful_path():
+    network = valid_network()
+    network["relations"][1]["direction"] = "unknown"
+    assert not path_continuous(network, ["r-info-judgment", "r-judgment-action"])
+
+
 def test_empty_claim_ceiling_provenance_alternatives_and_residue_are_rejected():
     network = valid_network()
     network["nodes"][0]["provenance"] = []
@@ -116,6 +179,77 @@ def test_empty_claim_ceiling_provenance_alternatives_and_residue_are_rejected():
     assert any("missing claim_ceiling" in error for error in errors), errors
     assert any("alternative_explanations" in error for error in errors), errors
     assert any("missing non-empty description" in error for error in errors), errors
+
+
+def test_temporal_activation_rejects_non_node_relation_targets():
+    network = valid_network()
+    target_cases = [
+        network["layers"][0]["layer_id"],
+        network["network_states"][0]["state_id"],
+        network["perturbations"][0]["perturbation_id"],
+        network["embedding_evidence"][0]["record_id"],
+        network["network_spec"]["network_id"],
+    ]
+    for target in target_cases:
+        mutated = valid_network()
+        mutated["temporal_activations"][0]["target_ref"] = target
+        assert_rejected(mutated, f"dangling reference {target}")
+
+
+def test_every_id_bearing_collection_rejects_duplicates():
+    id_fields = {
+        "nodes": "node_id",
+        "relations": "relation_id",
+        "layers": "layer_id",
+        "hyper_relations": "hyper_id",
+        "interlayer_couplings": "coupling_id",
+        "temporal_activations": "activation_id",
+        "network_states": "state_id",
+        "perturbations": "perturbation_id",
+        "integration_responses": "response_id",
+        "reconfiguration_episodes": "episode_id",
+        "attractor_or_oscillation": "record_id",
+        "cascade_or_spillover": "record_id",
+        "embedding_evidence": "record_id",
+        "projections": "projection_id",
+        "unmapped_residue": "residue_id",
+    }
+    for collection, field in id_fields.items():
+        network = valid_network()
+        network[collection].append(copy.deepcopy(network[collection][0]))
+        errors = validate_network(network)
+        assert any("duplicate" in error and network[collection][0][field] in error for error in errors), (collection, errors)
+
+
+def test_attractor_and_cascade_need_semantic_content():
+    network = valid_network()
+    network["attractor_or_oscillation"][0]["loop_pattern"] = []
+    network["cascade_or_spillover"][0]["path"] = []
+    errors = validate_network(network)
+    assert any("loop_pattern" in error for error in errors), errors
+    assert any("path" in error for error in errors), errors
+
+
+def test_diff_refs_must_be_local_or_declared_external_refs():
+    network = valid_network()
+    network["diffs"] = [{
+        "diff_id": "d1",
+        "from_ref": "arbitrary-before",
+        "to_ref": "arbitrary-after",
+        "node_changes": [],
+        "relation_changes": [],
+        "layer_changes": [],
+        "boundary_changes": [],
+        "claim_ceiling": "diff only",
+    }]
+    errors = validate_network(network)
+    assert any("dangling reference arbitrary-before" in error for error in errors), errors
+    assert any("dangling reference arbitrary-after" in error for error in errors), errors
+    network["diffs"][0]["external_refs"] = [
+        {"ref_id": "arbitrary-before", "ref_type": "git_commit", "claim_ceiling": "external ref only"},
+        {"ref_id": "arbitrary-after", "ref_type": "git_commit", "claim_ceiling": "external ref only"},
+    ]
+    assert validate_network(network) == []
 
 
 def test_embedding_probe_has_independent_strict_contract():

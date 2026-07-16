@@ -32,6 +32,10 @@ def network_diff(before: dict, after: dict) -> dict:
     diff = {
         "from_ref": before["network_spec"]["as_of_commit"],
         "to_ref": after["network_spec"]["as_of_commit"],
+        "external_refs": [
+            {"ref_id": before["network_spec"]["as_of_commit"], "ref_type": "git_commit", "claim_ceiling": "external git commit reference only"},
+            {"ref_id": after["network_spec"]["as_of_commit"], "ref_type": "git_commit", "claim_ceiling": "external git commit reference only"}
+        ],
         "source_change": before["network_spec"]["as_of_commit"] != after["network_spec"]["as_of_commit"],
         "projection_change": before["network_spec"].get("purpose") != after["network_spec"].get("purpose"),
         "unresolved_change": [],
@@ -67,4 +71,3 @@ def pairwise_projection_with_residue(network: dict) -> dict:
                 edges.append({"source": source, "target": target, "derived_from": hyper["hyper_id"]})
         residue.append({"hyper_id": hyper["hyper_id"], "information_loss": hyper["residue_if_projected"]})
     return {"pairwise_edges": edges, "residue": residue, "claim_ceiling": "Pairwise projection is derived and lossy."}
-

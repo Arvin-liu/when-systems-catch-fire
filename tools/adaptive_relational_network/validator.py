@@ -82,6 +82,11 @@ def _check_refs(nid: str, owner: str, refs: list[str], allowed: set[str], errors
             errors.append(f"{nid}: {owner} dangling reference {ref}")
 
 
+def _external_ref_ids(item: dict) -> set[str]:
+    refs = item.get("external_refs", [])
+    return {ref.get("ref_id") for ref in refs if ref.get("ref_id")}
+
+
 def validate_network(network: dict) -> list[str]:
     errors: list[str] = []
     nid = network.get("network_spec", {}).get("network_id", "<missing>")
@@ -103,8 +108,11 @@ def validate_network(network: dict) -> list[str]:
     projection_ids = _ids(network.get("projections", []), "projection_id", "projection", nid, errors)
     diff_ids = _ids(network.get("diffs", []), "diff_id", "diff", nid, errors)
     residue_ids = _ids(network.get("unmapped_residue", []), "residue_id", "residue", nid, errors)
-    _ = (hyper_ids, coupling_ids, activation_ids, response_ids, episode_ids, projection_ids, diff_ids, residue_ids)
-    referable = node_ids | rel_ids | layer_ids | state_ids | perturbation_ids | evidence_ids | {network.get("network_spec", {}).get("network_id", "")}
+    attractor_ids = _ids(network.get("attractor_or_oscillation", []), "record_id", "attractor", nid, errors)
+    cascade_ids = _ids(network.get("cascade_or_spillover", []), "record_id", "cascade", nid, errors)
+    _ = (hyper_ids, coupling_ids, activation_ids, response_ids, episode_ids, diff_ids, residue_ids, attractor_ids, cascade_ids)
+    network_ids = {network.get("network_spec", {}).get("network_id", "")}
+    diff_ref_domain = network_ids | state_ids | projection_ids
     for node in network.get("nodes", []):
         _check_refs(nid, f"node {node.get('node_id')} layer", node.get("layers", []), layer_ids, errors)
         for field in ("provenance", "uncertainty", "claim_ceiling"):
@@ -139,7 +147,7 @@ def validate_network(network: dict) -> list[str]:
         _check_refs(nid, f"coupling {coupling.get('coupling_id')}", [coupling.get("from_layer"), coupling.get("to_layer")], layer_ids, errors)
         _require_non_empty(nid, f"coupling {coupling.get('coupling_id')}", coupling, ("provenance", "claim_ceiling"), errors)
     for activation in network.get("temporal_activations", []):
-        _check_refs(nid, f"activation {activation.get('activation_id')}", [activation.get("target_ref")], referable, errors)
+        _check_refs(nid, f"activation {activation.get('activation_id')}", [activation.get("target_ref")], node_ids | rel_ids, errors)
         try:
             parse_interval({"start": activation["start"], "end": activation["end"]})
         except (KeyError, TypeError, ValueError) as exc:
@@ -166,6 +174,8 @@ def validate_network(network: dict) -> list[str]:
         if set(episode.get("changed_relations", [])) & set(episode.get("unchanged_relations", [])):
             errors.append(f"{nid}: episode {episode.get('episode_id')} overlaps changed/unchanged relations")
         _require_non_empty(nid, f"episode {episode.get('episode_id')}", episode, ("residue", "claim_ceiling"), errors)
+    for attractor in network.get("attractor_or_oscillation", []):
+        _require_non_empty(nid, f"attractor {attractor.get('record_id')}", attractor, ("loop_pattern", "claim_ceiling"), errors)
     for cascade in network.get("cascade_or_spillover", []):
         path = cascade.get("path", [])
         if not all(rid in rel_ids for rid in path):
@@ -174,7 +184,7 @@ def validate_network(network: dict) -> list[str]:
             errors.append(f"{nid}: cascade claims graph path but fails topology-aware temporal semantics")
         if cascade.get("not_causality") is not True:
             errors.append(f"{nid}: cascade treated as causality")
-        _require_non_empty(nid, f"cascade {cascade.get('record_id')}", cascade, ("claim_ceiling",), errors)
+        _require_non_empty(nid, f"cascade {cascade.get('record_id')}", cascade, ("path", "claim_ceiling"), errors)
     for projection in network.get("projections", []):
         if projection.get("not_canonical") is not True:
             errors.append(f"{nid}: projection may replace canonical source")
@@ -183,6 +193,11 @@ def validate_network(network: dict) -> list[str]:
         _require_non_empty(nid, f"projection {projection.get('projection_id')}", projection, ("projection_rules", "omitted_dimensions", "claim_ceiling"), errors)
     for diff in network.get("diffs", []):
         _require_non_empty(nid, f"diff {diff.get('diff_id')}", diff, ("from_ref", "to_ref", "claim_ceiling"), errors)
+        local_or_external = diff_ref_domain | _external_ref_ids(diff)
+        _check_refs(nid, f"diff {diff.get('diff_id')} from_ref", [diff.get("from_ref")], local_or_external, errors)
+        _check_refs(nid, f"diff {diff.get('diff_id')} to_ref", [diff.get("to_ref")], local_or_external, errors)
+        for ref in diff.get("external_refs", []):
+            _require_non_empty(nid, f"diff {diff.get('diff_id')} external_ref {ref.get('ref_id')}", ref, ("ref_id", "ref_type", "claim_ceiling"), errors)
     for evidence in network.get("embedding_evidence", []):
         required = ("external_availability", "retrieval", "relational_linkage", "conflict_exposure", "judgment_change", "action_change", "transfer", "delayed_stability", "alternatives", "evidence", "claim_ceiling")
         for field in required:
