@@ -12,6 +12,7 @@ Adaptive Relational Network (ARN) represents heterogeneous, non-causal, multilay
 - Retrieval, repetition, activation and diffusion are not proof of integration.
 - Behavior change is not proof of a specific internal cognitive mechanism.
 - Static aggregation cannot create time-impossible paths.
+- A graph path must be topology-continuous under the declared edge direction and time-respecting under ARN's model rule; a merely ordered relation sequence is not a path.
 - Higher-order relations cannot be silently reduced to pairs.
 - Network boundaries, layers and resolution are model choices unless independently established.
 - Cognitive examples are non-clinical and non-diagnostic.
@@ -51,3 +52,30 @@ The current operational ARN toolchain is intentionally narrow and deterministic:
 - `validator.py` validates examples and remains a compatibility entrypoint.
 
 These tools do not discover hidden reality, mind-read integration, infer clinical states, or create a second canonical truth store. They operate on declared repository sources and preserve residue for unknown or unsupported fields.
+
+## Validation Contract
+
+The executable validation chain has two layers:
+
+- Draft 2020-12 JSON Schema validation for every complete ARN instance in `data/architecture/adaptive-relational-network/examples/`.
+- Semantic validation for duplicate IDs, reference integrity, non-empty provenance/uncertainty/alternatives/claim ceilings/residue, higher-order preservation, topology-aware temporal paths and overclaim boundaries.
+
+`embedding-probe.json` is not excluded as an unexplained special file. It has an independent strict object contract at `schemas/architecture/adaptive-relational-network-embedding-probe.schema.json`.
+
+Stable interoperability objects are strict: undeclared fields are rejected. Future extensions should use an explicit schema change or a controlled extension namespace rather than silent acceptance.
+
+## Temporal Model Rule
+
+ARN distinguishes three things:
+
+- `time_respecting_sequence`: every relation exists and its interval starts after the prior relation ends.
+- `path_continuous`: relation endpoints connect under direction rules.
+- `time_respecting_graph_path`: both of the above are true.
+
+Direction behavior is explicit:
+
+- `directed`: prior target must match the next relation's source.
+- `undirected` and `bidirectional`: either endpoint direction may connect.
+- `unknown`: not accepted as a graph-path edge.
+
+This is a local ARN validation rule for avoiding projection errors. It is not a universal theorem about temporal networks.

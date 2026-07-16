@@ -1,1 +1,41 @@
-{"claim_ceiling":"Pairwise projection is derived and lossy.","pairwise_edges":[{"derived_from":"hyper-repo-architecture-tooling","source":"repo","target":"src-data-architecture-adaptive-relational-network-completion-seal-json"},{"derived_from":"hyper-repo-architecture-tooling","source":"repo","target":"src-docs-architecture-adaptive-relational-network-md"},{"derived_from":"hyper-repo-architecture-tooling","source":"repo","target":"src-schemas-architecture-adaptive-relational-network-schema-json"},{"derived_from":"hyper-repo-architecture-tooling","source":"src-data-architecture-adaptive-relational-network-completion-seal-json","target":"src-docs-architecture-adaptive-relational-network-md"},{"derived_from":"hyper-repo-architecture-tooling","source":"src-data-architecture-adaptive-relational-network-completion-seal-json","target":"src-schemas-architecture-adaptive-relational-network-schema-json"},{"derived_from":"hyper-repo-architecture-tooling","source":"src-docs-architecture-adaptive-relational-network-md","target":"src-schemas-architecture-adaptive-relational-network-schema-json"}],"residue":[{"hyper_id":"hyper-repo-architecture-tooling","information_loss":"Pairwise view loses joint repository/source/tooling context."}]}
+{
+  "claim_ceiling": "Pairwise projection is derived and lossy.",
+  "pairwise_edges": [
+    {
+      "derived_from": "hyper-repo-architecture-tooling",
+      "source": "repo",
+      "target": "src-data-architecture-adaptive-relational-network-completion-seal-json"
+    },
+    {
+      "derived_from": "hyper-repo-architecture-tooling",
+      "source": "repo",
+      "target": "src-docs-architecture-adaptive-relational-network-md"
+    },
+    {
+      "derived_from": "hyper-repo-architecture-tooling",
+      "source": "repo",
+      "target": "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json"
+    },
+    {
+      "derived_from": "hyper-repo-architecture-tooling",
+      "source": "src-data-architecture-adaptive-relational-network-completion-seal-json",
+      "target": "src-docs-architecture-adaptive-relational-network-md"
+    },
+    {
+      "derived_from": "hyper-repo-architecture-tooling",
+      "source": "src-data-architecture-adaptive-relational-network-completion-seal-json",
+      "target": "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json"
+    },
+    {
+      "derived_from": "hyper-repo-architecture-tooling",
+      "source": "src-docs-architecture-adaptive-relational-network-md",
+      "target": "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json"
+    }
+  ],
+  "residue": [
+    {
+      "hyper_id": "hyper-repo-architecture-tooling",
+      "information_loss": "Pairwise view loses joint repository/source/tooling context."
+    }
+  ]
+}

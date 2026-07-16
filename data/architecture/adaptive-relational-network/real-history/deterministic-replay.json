@@ -1,1 +1,42 @@
-{"after_commit":"0dd4ae922f118d5c7038d7c2905328f43cd54114","after_hash":"293ca6da84d2f22756f490441d179767e9ece03d16855ffe8ec13d77ccd846b1","after_source_count":10,"before_commit":"1f3815538cf56d0f35cc06c6b2396fadf33a34a2","before_hash":"0aaaa02e9f1e340d1e41ea116f2815cf7e6b9190785ca035947113d6aead662f","before_source_count":0,"diff_hash":"8f90fd6404400be5d4f1f272305f68350345c79bce6ea49961da3c95257d6597","embedding_hash":"ec72fea5419dd39d7510f7d5707211484267c5ab4556dd1edf89ef4679f309a9","invalid_static_path":{"claim_ceiling":"Static adjacency cannot invent time-impossible paths.","is_false_positive":true,"path":["rel-repo-2","rel-repo-1"],"static_exists":true,"time_respecting":false},"pairwise_hash":"be45fd610bcf81af9e4135992e7fe134a4ca24e7d6f3bd00de575ea64ddea230","valid_path":["rel-repo-1","rel-repo-2"],"valid_path_time_respecting":true}
+{
+  "after_commit": "8bb20cc4e3504eba46a94ff158f6dceebc3c015c",
+  "after_hash": "82981bdb3dc6bdb24e7ae34cfeacc773b25d6cf06bc031ce043cefe078aa8985",
+  "after_source_count": 13,
+  "before_commit": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
+  "before_hash": "b108f598999de7b208e2419013ef7ab221d05b39bb1cb00f166fdfd584c17837",
+  "before_source_count": 0,
+  "diff_hash": "d732ef2609b60af0b4af7e1c87d3fdc08a1af476cb2be178efd9223b0023a1d7",
+  "embedding_hash": "e7f0bb8541a011fed69cd1ab91e879ea1f7231c9a9da7c05ce7ceead73df167b",
+  "invalid_static_path": {
+    "claim_ceiling": "Static adjacency or temporal ordering cannot invent a topology-continuous time-respecting graph path.",
+    "is_false_positive": true,
+    "path": [
+      "rel-repo-1",
+      "rel-repo-2"
+    ],
+    "static_exists": true,
+    "time_respecting": false,
+    "time_respecting_graph_path": false,
+    "time_respecting_sequence": true
+  },
+  "pairwise_hash": "ad73fc5527efa17481dd9178b4fcdc593b7f4ec7d467e320b179ec00f6cb41ea",
+  "temporally_invalid_connected_path": {
+    "claim_ceiling": "Topology continuity alone cannot satisfy ARN temporal ordering.",
+    "path": [
+      "rel-repo-1",
+      "rel-backdated-1"
+    ],
+    "time_respecting_graph_path": false,
+    "time_respecting_sequence": false
+  },
+  "valid_graph_path": [
+    "rel-repo-1",
+    "rel-chain-1"
+  ],
+  "valid_path": [
+    "rel-repo-1",
+    "rel-chain-1"
+  ],
+  "valid_path_time_respecting_graph_path": true,
+  "valid_path_time_respecting_sequence": true
+}

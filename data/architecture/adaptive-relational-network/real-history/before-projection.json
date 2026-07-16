@@ -1,1 +1,183 @@
-{"attractor_or_oscillation":[{"claim_ceiling":"workflow loop only","loop_pattern":["project","render","validate"],"not_clinical_claim":true,"record_id":"projection-loop-boundary"}],"cascade_or_spillover":[{"claim_ceiling":"time-respecting projection path, not causality","not_causality":true,"path":[],"record_id":"projection-path","time_respecting":true}],"diffs":[],"embedding_evidence":[{"action_change":"not measured","alternatives":["file existence","selection by source list"],"claim_ceiling":"availability/retrieval/linkage only","conflict_exposure":"not assessed by projection","delayed_stability":"not measured","evidence":[],"external_availability":"source files available in repository checkout","judgment_change":"not measured","record_id":"embedding-summary","relational_linkage":"resource_reference relations to repo node","retrieval":"read by deterministic projector","transfer":"not measured"}],"hyper_relations":[{"claim_ceiling":"higher-order projection only","hyper_id":"hyper-repo-architecture-tooling","members":["repo","repo","repo","repo"],"pairwise_projection_allowed":true,"preserve_as_higher_order":true,"provenance":["projection input"],"relation_class":"dependency","residue_if_projected":"Pairwise view loses joint repository/source/tooling context."}],"integration_responses":[{"alternative_explanations":["source file exists","projection rule selected it"],"claim_ceiling":"projection response, not learning proof","evidence_ref":"embedding-summary","perturbation_ref":"projection-input","response_id":"projection-response","response_type":"UNKNOWN_RESPONSE"}],"interlayer_couplings":[{"claim_ceiling":"layer coupling is a model choice","coupling_id":"couple-source-architecture","coupling_type":"declared projection","from_layer":"source","provenance":["projection input"],"to_layer":"architecture"}],"layers":[{"boundary_rule":"declared source files","label":"Source","layer_id":"source","model_choice":true},{"boundary_rule":"architecture docs and schemas","label":"Architecture","layer_id":"architecture","model_choice":true},{"boundary_rule":"validation and evidence status","label":"Evidence","layer_id":"evidence","model_choice":true},{"boundary_rule":"tools and tests","label":"Operations","layer_id":"operations","model_choice":true}],"network_spec":{"as_of_commit":"1f3815538cf56d0f35cc06c6b2396fadf33a34a2","canonical_authority":"Source files and Foundation remain authoritative; this is a derived projection.","claim_ceiling":"deterministic ARN projection only","network_id":"arn-projection-1f381553","not_truth_layer":true,"purpose":"real-history before ARN operational hardening"},"network_states":[{"active_nodes":["repo"],"active_relations":[],"as_of_time":1,"state_id":"state-projected","unknowns":["real-world integration"]}],"nodes":[{"claim_ceiling":"projection from 1f3815538cf56d0f35cc06c6b2396fadf33a34a2; not canonical truth","label":"Repository state","layers":["source"],"node_id":"repo","node_type":"repository","provenance":["git commit"],"uncertainty":"derived from declared repository source"}],"perturbations":[{"claim_ceiling":"projection perturbation only","content_ref":"1f3815538cf56d0f35cc06c6b2396fadf33a34a2","input_type":"repository_state","perturbation_id":"projection-input","provenance":["git commit"],"target_nodes":["repo"]}],"projections":[{"claim_ceiling":"projection only","not_canonical":true,"omitted_dimensions":["private cognition","real-world learning","unstated relations"],"projection_id":"projection-self","projection_rules":["declared source paths become source_file nodes","repo points to each source"],"source_network":"arn-projection-1f381553"}],"reconfiguration_episodes":[{"baseline_state":"source-list","changed_nodes":[],"changed_relations":[],"claim_ceiling":"projection episode only","delay":"repository order only","episode_id":"projection-episode","oscillation":"not assessed","post_state":"state-projected","residue":["projection cannot prove integration"],"unchanged_nodes":["repo"],"unchanged_relations":[]}],"relations":[],"temporal_activations":[],"unmapped_residue":[{"claim_ceiling":"residue","description":"Projection does not prove integration, truth, value or causality.","residue_id":"projection-residue","residue_type":"unverified_integration"}]}
+{
+  "attractor_or_oscillation": [
+    {
+      "claim_ceiling": "workflow loop only",
+      "loop_pattern": [
+        "project",
+        "render",
+        "validate"
+      ],
+      "not_clinical_claim": true,
+      "record_id": "projection-loop-boundary"
+    }
+  ],
+  "cascade_or_spillover": [],
+  "diffs": [],
+  "embedding_evidence": [
+    {
+      "action_change": "not measured",
+      "alternatives": [
+        "file existence",
+        "selection by source list"
+      ],
+      "claim_ceiling": "availability/retrieval/linkage only",
+      "conflict_exposure": "not assessed by projection",
+      "delayed_stability": "not measured",
+      "evidence": [],
+      "external_availability": "source files available in repository checkout",
+      "judgment_change": "not measured",
+      "record_id": "embedding-summary",
+      "relational_linkage": "resource_reference relations to repo node",
+      "retrieval": "read by deterministic projector",
+      "transfer": "not measured"
+    }
+  ],
+  "hyper_relations": [],
+  "integration_responses": [
+    {
+      "alternative_explanations": [
+        "source file exists",
+        "projection rule selected it"
+      ],
+      "claim_ceiling": "projection response, not learning proof",
+      "evidence_ref": "embedding-summary",
+      "perturbation_ref": "projection-input",
+      "response_id": "projection-response",
+      "response_type": "UNKNOWN_RESPONSE"
+    }
+  ],
+  "interlayer_couplings": [
+    {
+      "claim_ceiling": "layer coupling is a model choice",
+      "coupling_id": "couple-source-architecture",
+      "coupling_type": "declared projection",
+      "from_layer": "source",
+      "provenance": [
+        "projection input"
+      ],
+      "to_layer": "architecture"
+    }
+  ],
+  "layers": [
+    {
+      "boundary_rule": "declared source files",
+      "label": "Source",
+      "layer_id": "source",
+      "model_choice": true
+    },
+    {
+      "boundary_rule": "architecture docs and schemas",
+      "label": "Architecture",
+      "layer_id": "architecture",
+      "model_choice": true
+    },
+    {
+      "boundary_rule": "validation and evidence status",
+      "label": "Evidence",
+      "layer_id": "evidence",
+      "model_choice": true
+    },
+    {
+      "boundary_rule": "tools and tests",
+      "label": "Operations",
+      "layer_id": "operations",
+      "model_choice": true
+    }
+  ],
+  "network_spec": {
+    "as_of_commit": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
+    "canonical_authority": "Source files and Foundation remain authoritative; this is a derived projection.",
+    "claim_ceiling": "deterministic ARN projection only",
+    "network_id": "arn-projection-1f381553",
+    "not_truth_layer": true,
+    "purpose": "real-history before ARN operational validation closure"
+  },
+  "network_states": [
+    {
+      "active_nodes": [
+        "repo"
+      ],
+      "active_relations": [],
+      "as_of_time": 1,
+      "state_id": "state-projected",
+      "unknowns": [
+        "real-world integration"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "claim_ceiling": "projection from 1f3815538cf56d0f35cc06c6b2396fadf33a34a2; not canonical truth",
+      "label": "Repository state",
+      "layers": [
+        "source"
+      ],
+      "node_id": "repo",
+      "node_type": "repository",
+      "provenance": [
+        "git commit"
+      ],
+      "uncertainty": "derived from declared repository source"
+    }
+  ],
+  "perturbations": [
+    {
+      "claim_ceiling": "projection perturbation only",
+      "content_ref": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
+      "input_type": "repository_state",
+      "perturbation_id": "projection-input",
+      "provenance": [
+        "git commit"
+      ],
+      "target_nodes": [
+        "repo"
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "claim_ceiling": "projection only",
+      "not_canonical": true,
+      "omitted_dimensions": [
+        "private cognition",
+        "real-world learning",
+        "unstated relations"
+      ],
+      "projection_id": "projection-self",
+      "projection_rules": [
+        "declared source paths become source_file nodes",
+        "repo points to each source"
+      ],
+      "source_network": "arn-projection-1f381553"
+    }
+  ],
+  "reconfiguration_episodes": [
+    {
+      "baseline_state": "source-list",
+      "changed_nodes": [],
+      "changed_relations": [],
+      "claim_ceiling": "projection episode only",
+      "delay": "repository order only",
+      "episode_id": "projection-episode",
+      "oscillation": "not assessed",
+      "post_state": "state-projected",
+      "residue": [
+        "projection cannot prove integration"
+      ],
+      "unchanged_nodes": [
+        "repo"
+      ],
+      "unchanged_relations": []
+    }
+  ],
+  "relations": [],
+  "temporal_activations": [],
+  "unmapped_residue": [
+    {
+      "claim_ceiling": "residue",
+      "description": "Projection does not prove integration, truth, value or causality.",
+      "residue_id": "projection-residue",
+      "residue_type": "unverified_integration"
+    }
+  ]
+}

@@ -41,10 +41,17 @@ def test_temporal_valid_and_static_false_positive_paths():
     after = load("after-projection.json")
     replay = load("deterministic-replay.json")
     assert time_respecting(after, replay["valid_path"])
+    assert replay["valid_path"] == ["rel-repo-1", "rel-chain-1"]
+    assert replay["valid_path_time_respecting_graph_path"] is True
     false_positive = replay["invalid_static_path"]
     assert false_positive["static_exists"] is True
+    assert false_positive["time_respecting_sequence"] is True
+    assert false_positive["time_respecting_graph_path"] is False
     assert false_positive["time_respecting"] is False
     assert false_positive["is_false_positive"] is True
+    temporal_negative = replay["temporally_invalid_connected_path"]
+    assert temporal_negative["path"] == ["rel-repo-1", "rel-backdated-1"]
+    assert temporal_negative["time_respecting_graph_path"] is False
 
 
 def test_higher_order_pairwise_projection_records_residue():
