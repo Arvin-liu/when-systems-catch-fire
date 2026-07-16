@@ -60,22 +60,21 @@ def project_from_sources(commit: str, source_paths: list[str], purpose: str) -> 
             label = rel_path
             nodes.append(_node(node_id, label, "source_file", layer, rel_path, commit))
             relations.append(_relation(f"rel-repo-{idx}", "repo", node_id, "resource_reference", layer, rel_path, commit, idx, idx + 1))
+            relations.append(_relation(f"rel-chain-{idx}", node_id, "repo", "dependency", layer, rel_path, commit, idx + 0.25, idx + 0.5))
         else:
             residue.append({"residue_id": f"missing-{idx}", "residue_type": "missing_bridge", "description": f"Source path not present in checked-out tree: {rel_path}", "claim_ceiling": "missing source residue"})
+    hyper = []
     if len(nodes) >= 4:
-        members = [n["node_id"] for n in nodes[:4]]
-    else:
-        members = [n["node_id"] for n in nodes] + ["repo"] * (4 - len(nodes))
-    hyper = [{
-        "hyper_id": "hyper-repo-architecture-tooling",
-        "members": members[:4],
-        "relation_class": "dependency",
-        "preserve_as_higher_order": True,
-        "pairwise_projection_allowed": True,
-        "residue_if_projected": "Pairwise view loses joint repository/source/tooling context.",
-        "provenance": source_paths[:3] or ["projection input"],
-        "claim_ceiling": "higher-order projection only"
-    }]
+        hyper = [{
+            "hyper_id": "hyper-repo-architecture-tooling",
+            "members": [n["node_id"] for n in nodes[:4]],
+            "relation_class": "dependency",
+            "preserve_as_higher_order": True,
+            "pairwise_projection_allowed": True,
+            "residue_if_projected": "Pairwise view loses joint repository/source/tooling context.",
+            "provenance": source_paths[:3] or ["projection input"],
+            "claim_ceiling": "higher-order projection only"
+        }]
     return {
         "network_spec": {
             "network_id": f"arn-projection-{commit[:8]}",
@@ -139,13 +138,13 @@ def project_from_sources(commit: str, source_paths: list[str], purpose: str) -> 
             "not_clinical_claim": True,
             "claim_ceiling": "workflow loop only"
         }],
-        "cascade_or_spillover": [{
+        "cascade_or_spillover": ([{
             "record_id": "projection-path",
-            "path": [r["relation_id"] for r in relations[:2]],
+            "path": ["rel-repo-1", "rel-chain-1"],
             "time_respecting": True,
             "not_causality": True,
-            "claim_ceiling": "time-respecting projection path, not causality"
-        }],
+            "claim_ceiling": "topology-continuous time-respecting graph path under ARN model rules, not causality"
+        }] if relations else []),
         "embedding_evidence": [{
             "record_id": "embedding-summary",
             "external_availability": "source files available in repository checkout",
@@ -176,4 +175,3 @@ def project_from_sources(commit: str, source_paths: list[str], purpose: str) -> 
             "claim_ceiling": "residue"
         }]
     }
-

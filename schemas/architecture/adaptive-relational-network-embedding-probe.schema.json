@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/adaptive-relational-network-embedding-probe.schema.json",
+  "title": "AdaptiveRelationalNetworkEmbeddingProbe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "probe_id",
+    "axes",
+    "boundaries",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "probe_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "axes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "boundaries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "claim_ceiling": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

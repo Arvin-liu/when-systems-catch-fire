@@ -2,34 +2,80 @@ from __future__ import annotations
 
 
 def parse_interval(bounds: dict) -> tuple[float, float]:
-    return float(bounds["start"]), float(bounds["end"])
+    start, end = float(bounds["start"]), float(bounds["end"])
+    if start > end:
+        raise ValueError(f"reversed interval: {start} > {end}")
+    return start, end
 
 
-def time_respecting(network: dict, relation_path: list[str]) -> bool:
+def _relation_connections(relation: dict) -> set[tuple[str, str]]:
+    source, target = relation["source"], relation["target"]
+    direction = relation.get("direction", "directed")
+    if direction == "directed":
+        return {(source, target)}
+    if direction in {"undirected", "bidirectional"}:
+        return {(source, target), (target, source)}
+    if direction == "unknown":
+        return set()
+    return set()
+
+
+def time_respecting_sequence(network: dict, relation_path: list[str]) -> bool:
     rels = {r["relation_id"]: r for r in network.get("relations", [])}
     previous_end: float | None = None
     for rid in relation_path:
         if rid not in rels:
             return False
-        start, end = parse_interval(rels[rid]["temporal_bounds"])
+        try:
+            start, end = parse_interval(rels[rid]["temporal_bounds"])
+        except (KeyError, TypeError, ValueError):
+            return False
         if previous_end is not None and start < previous_end:
             return False
         previous_end = end
     return True
 
 
+def path_continuous(network: dict, relation_path: list[str]) -> bool:
+    rels = {r["relation_id"]: r for r in network.get("relations", [])}
+    previous_arrivals: set[str] | None = None
+    for rid in relation_path:
+        relation = rels.get(rid)
+        if relation is None:
+            return False
+        connections = _relation_connections(relation)
+        if not connections:
+            return False
+        departures = {source for source, _target in connections}
+        arrivals = {target for _source, target in connections}
+        if previous_arrivals is not None and not (previous_arrivals & departures):
+            return False
+        previous_arrivals = arrivals
+    return True
+
+
+def time_respecting_graph_path(network: dict, relation_path: list[str]) -> bool:
+    return path_continuous(network, relation_path) and time_respecting_sequence(network, relation_path)
+
+
+def time_respecting(network: dict, relation_path: list[str]) -> bool:
+    return time_respecting_graph_path(network, relation_path)
+
+
 def static_aggregation_false_positive(network: dict, relation_path: list[str]) -> dict:
     rel_ids = {r["relation_id"] for r in network.get("relations", [])}
     static_exists = all(rid in rel_ids for rid in relation_path)
-    temporal_valid = time_respecting(network, relation_path) if static_exists else False
+    graph_path_valid = time_respecting_graph_path(network, relation_path) if static_exists else False
+    sequence_valid = time_respecting_sequence(network, relation_path) if static_exists else False
     return {
         "path": relation_path,
         "static_exists": static_exists,
-        "time_respecting": temporal_valid,
-        "is_false_positive": static_exists and not temporal_valid,
-        "claim_ceiling": "Static adjacency cannot invent time-impossible paths."
+        "time_respecting_sequence": sequence_valid,
+        "time_respecting_graph_path": graph_path_valid,
+        "time_respecting": graph_path_valid,
+        "is_false_positive": static_exists and not graph_path_valid,
+        "claim_ceiling": "Static adjacency or temporal ordering cannot invent a topology-continuous time-respecting graph path."
     }
 
 def activation_windows(network: dict) -> list[dict]:
     return sorted(network.get("temporal_activations", []), key=lambda x: (x["start"], x["end"], x["activation_id"]))
-

@@ -342,6 +342,5 @@
       "description": "Durable integration is not established.",
       "claim_ceiling": "residue"
     }
-  ],
-  "claim_note": "Atomic lookup does not require network reconfiguration."
+  ]
 }
