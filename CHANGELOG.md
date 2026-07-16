@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- 121Q28 adds a Draft-only L6 publication-method candidate, `Embodied Cognitive-Leap Writing Method` 0.1.0, with a canonical candidate document, backstage story spec and annotated internal examples. It defines embodied anchors, prospective writing, remainder-driven un-signposted leaps, double-belonging hinges, retro-illumination and an information-gain stop while preserving L0-L5 and Charter boundaries. It is not current, merged, a new truth layer or an automated literary-quality claim.
 - PR #57 / Q25 / Q25C were independently accepted, merged and closed as current through Q25D. Human front doors now expose the current capability stack, and method 1.1.0 enforces registry-derived whole-project propagation, lifecycle-specific blockers and per-surface external attestations.
 - Q25B remains superseded non-ready candidate history. Q25C, not Q25B, is the accepted lifecycle-gated method increment.
 

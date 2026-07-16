@@ -14,6 +14,10 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 [查看完整项目现状](./docs/project-current-state.md)
 
+### L6 出版方法候选
+
+121Q28 在隔离 Draft PR 中提出[肉身锚定的心智层级跃迁写作法](./docs/publication/embodied-cognitive-leap-writing-method.md) `0.1.0`：从经验锚点出发，在下一层中写当前层，以不可容纳残余驱动突然跃迁，经双重归属铰链返回并改写旧层意义，在下一层不再产生信息增益时停止。它目前只是等待独立审查的 L6 候选能力，不是点火当前能力、新架构层、真值层、普遍审美规范或文学质量证明器。
+
 ## 生命共同体价值宪章
 
 > 长瞻一宇同叩月，此心相契共今宵。
@@ -101,6 +105,7 @@ llms.txt
 - [AI 交接契约](./AI-HANDOFF.md) — 记录跨会话交接时必须重新核验的权威链和红线。
 - [机器入口](./llms.txt) — 给 LLM 和自动化工具读取的简明项目边界与关键路径。
 - [Get 笔记协作流程](./docs/GET-BRAIN-WORKFLOW.md) — 说明 Get 笔记材料如何进入点火协作与审查流程。
+- [L6 出版方法候选](./docs/publication/embodied-cognitive-leap-writing-method.md) — 说明肉身锚定、前视写作、突然跃迁、双重归属铰链、回照增义和信息增益停止；未合并前不得写成当前能力。
 - [版本规范](./docs/VERSIONING.md) — 说明版本、状态、兼容路径和发布边界怎样记录。
 
 </details>

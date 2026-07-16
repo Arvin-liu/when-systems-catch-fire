@@ -42,6 +42,12 @@
 
 L6 只能引用 L0-L5，不能反向制造数学真实性、逻辑有效性或经验真实性。数学与逻辑双地基见 [FOUNDATION.md](./FOUNDATION.md)。
 
+### L6 出版候选
+
+- [肉身锚定的心智层级跃迁写作法](./docs/publication/embodied-cognitive-leap-writing-method.md) — 121Q28 Draft 候选；定义“在下一层中写当前层”、残余驱动、隐形铰链、回照与停止，不是固定文章结构或当前能力。
+- [内部范例与反例](./docs/publication/embodied-cognitive-leap-writing-examples.md) — 用《永昭·虚遐》解释层级跃迁，并把 121Q27 的顺序领域轮播保留为旧方法基线。
+- [后台故事规格](./templates/publication/embodied-cognitive-leap-story-spec.md) — 供 Agent／人类记录锚点、残余、铰链、回照和信息增益；不得原样变成正文提纲。
+
 ## 核心系统历史与兼容资料
 
 - [Ψ₀ 历史数学表达](./docs/phi_meta_law.md) — legacy source；不独立证明 Ψ₀ 是数学函数

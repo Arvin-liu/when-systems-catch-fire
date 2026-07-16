@@ -59,6 +59,8 @@ PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系
 当前方法 1.1.0 要求从 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。人类 README、实际 Pages 来源与渲染面、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称生产 Pages 或其他实时外部状态已验证。
 
 Q25C 已成为当前生命周期规则：Ready、Accepted、Merged、Current、Closed 分别读取 surface `blocks`，不能用全局 project-complete 布尔值阻断 pre-merge acceptance。每个外部表面必须有独立 attestation；Pages pending 可以进入 Accepted/Merged，但继续阻塞 Current/Closed。
+
+121Q28 在隔离 Draft PR 中实现 L6 `肉身锚定的心智层级跃迁写作法` 0.1.0 候选。交接时不得把它写成当前能力、新层或文学质量验证器。涉及该候选时必须读取 `docs/publication/embodied-cognitive-leap-writing-method.md`、内部范例和后台规格，并检查：经验锚点是否持续存在；下一层是否提前改写当前层；跃迁是否由残余和具体铰链驱动；新层是否回照旧层；无信息增益时是否停止；高层是否保留证据限制和受损主体。121Q27 原故事是冻结的旧方法基线，不得在 Q28 中重写、提交或发布。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

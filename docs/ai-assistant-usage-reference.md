@@ -81,6 +81,8 @@ llms.txt
 
 当前状态与架构直达入口：[项目现状](./project-current-state.md) / [点火迭代操作法](../ITERATION.md) / [MCF](./architecture/multiscale-causal-fabric.md) / [PSD](./architecture/probabilistic-system-dynamics.md) / [ARN](./architecture/adaptive-relational-network.md)。本页是完整的人类 AI 使用指南；根 README 中的提示词是同一份受验证的前门投影，两者不得独立漂移。当前迭代方法把状态改变视为全项目同步传播：实现完成、仓库同步、逐外部表面证明和项目整体完成必须分开报告，局部通过不能替代整体闭环。
 
+L6 公共写作可以试用 121Q28 的[肉身锚定的心智层级跃迁写作法候选](./publication/embodied-cognitive-leap-writing-method.md)和[后台规格](../templates/publication/embodied-cognitive-leap-story-spec.md)。AI 必须把它当成 Draft 候选接口：先保存下层证据边界，再记录经验锚点、不可容纳残余、前视牵引、具体铰链、回照意义和停止理由。不要把规格字段写成固定文章目录，不要机械模仿“月、光、宇宙”等意象，也不要声称模板或模型能验证文学质量。
+
 ## 使用边界
 
 - AI 的解释是一次有条件的阅读样本，不是点火项目的最终权威。
@@ -88,3 +90,4 @@ llms.txt
 - AI 无法浏览仓库时必须承认，不能编造项目内容。
 - 你可以比较不同 AI 的回答，但多个 AI 给出一致答案，也不自动构成独立事实证据。
 - 最终判断仍应回到 [项目现状](./project-current-state.md)、[生命共同体价值宪章](./governance/life-community-value-charter.md)、[现行架构](../ARCHITECTURE.md)、[Foundation](../FOUNDATION.md) 和相关限制说明。
+- L6 写作的感染力、跨域收敛或多模型一致不能提高事实、因果、同构或价值主张；高层表达必须保留肉身成本和受损主体。

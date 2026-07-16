@@ -24,6 +24,8 @@ Q21R, Q22 and Q23 add current architecture/operation assets for Multiscale Causa
 
 121Q25 and Q25C are now current after PR #57 was independently accepted, merged and externally verified. Human front doors expose MCF, PSD, ARN and the iteration method, while method 1.1.0 derives whole-project propagation from the synchronization registry and separates implementation, repository, external and project completion. Q25B remains superseded candidate history; the method is an operation discipline, not a truth layer or proof of substantive correctness.
 
+121Q28 is an open candidate addition at L6, not part of the current capability baseline. It proposes an Embodied Cognitive-Leap Writing Method for moving from bodily experience through prospective, un-signposted level transitions, double-belonging hinges, retro-illumination and an information-gain stop. Until independent review, merge and applicable synchronization complete, it must not be described as current, universally optimal, a new architecture/truth layer, or evidence that literary quality can be machine-validated.
+
 ## Current Shape
 
 At this version, the repository is an evidence-traceable, object-typed, inference-checkable and audit-graded mechanism discovery and modelling system for cross-domain material. That sentence is a current-state description, not a fixed essence. It can change if future work changes the actual assets, evidence rules, execution layer, or governance boundaries.
@@ -83,6 +85,7 @@ The project currently must not claim:
 - that high probability, posterior probability, Markov structure, stationarity, ergodicity, linearity or Gaussian assumptions are automatic;
 - that network adjacency, similarity, centrality, community detection, retrieval, self-report or behavior change proves truth, value, causality or internal learning mechanisms;
 - that Q24 method compliance proves any substantive claim true.
+- that the open 121Q28 publication-method candidate reproduces the maintainer's full creativity, defines universal aesthetic quality, or raises any lower-layer claim because a story is compelling.
 
 A current inability is also not a permanent impossibility. It only means the present artifacts do not support that claim at this commit.
 
