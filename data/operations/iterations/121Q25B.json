@@ -1,0 +1,128 @@
+{
+  "method_version": "1.1.0",
+  "task_id": "121Q25B",
+  "completion_seal_path": "reports/operations/121Q25B-completion-seal.json",
+  "change_classification": ["REPAIR", "INTERFACE_CHANGE", "OPERATIONS_METHOD"],
+  "verified_start": {
+    "main_head": "7fc4b309720ea1b4e9c4b47477c2f423860d53df",
+    "source": "PR #57 exact head 1af35ca6cfc169995ef5fa41fe5f2a322777b6eb after Q25 content acceptance",
+    "verified_at": "2026-07-16"
+  },
+  "branch_pr": {
+    "branch": "docs/121q25-human-front-door-capability-sync-20260716",
+    "pr_number": 57,
+    "base": "main",
+    "base_head": "7fc4b309720ea1b4e9c4b47477c2f423860d53df",
+    "draft": true,
+    "merged": false
+  },
+  "head_binding": {
+    "mode": "external_exact_head_attestation",
+    "pr_number": 57,
+    "authority": "pull_request_body_and_1111_receipt",
+    "receipt_path": "agent-results/IGNITION-20260716-121Q25B-result.md",
+    "embedded_exact_current_head": false,
+    "live_refetch_required": true,
+    "explanation": "Repository files validate deterministic implementation and synchronization closure. Exact final HEAD, CI and Pages artifact identifiers remain external PR/receipt attestations."
+  },
+  "gap": {
+    "summary": "Q25 content was synchronized, but the iteration validator bound every manifest to the Q24 seal and the method lacked a registry-derived whole-project propagation closure.",
+    "evidence": [
+      "tools/validate_iteration_sync.py fixed SEAL_PATH to reports/operations/121Q24-completion-seal.json.",
+      "Q25 manifest and seal mismatch could pass because seal checks ran only when task IDs happened to match.",
+      "ITERATION.md 1.0.0 relied on manual impact assessment and did not separate implementation, repository, external and project synchronization completion."
+    ],
+    "smallest_material_action": "Generalize manifest-seal binding, add one synchronization-surface registry and propagation closure, self-host it in Q25B, and keep Draft Pages verification build-only."
+  },
+  "claim_ceiling": "validated_whole_project_synchronization_propagation_candidate_only",
+  "status": {"candidate": true, "ready_for_gpt_verification": false, "accepted": false, "merged": false, "current": false},
+  "state_transition": {
+    "subjects": ["iteration operation method", "manifest-seal binding", "whole-project synchronization", "Draft Pages verification"],
+    "prior_state": "Method 1.0.0 used manual surface assessment and a Q24-fixed completion seal; implementation completion could mask stale project surfaces.",
+    "proposed_state": "Method 1.1.0 candidate uses registry-derived propagation closure, task-specific seals, separated completion levels and build-only Draft Pages evidence.",
+    "changed_dimensions": ["handoff", "lifecycle_current_state", "deployment_rendering", "operations_method"],
+    "source_refs": ["ITERATION.md", "tools/validate_iteration_sync.py", "data/operations/synchronization-surfaces.json", "agent-commands/IGNITION-20260716-121Q25B-whole-project-synchronization-propagation-contract.md"],
+    "maximum_claim_boundary": "Repository-local contract and exact-head build/CI candidate evidence only; no substantive truth, live production state or current-method claim."
+  },
+  "synchronization_closure": {
+    "registry_path": "data/operations/synchronization-surfaces.json",
+    "registry_version": "1.0.0",
+    "surface_decisions": [
+      {"surface_id": "human.readme", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q25 content acceptance already established the visible capability stack; Q25B changes operation mechanics, not the public capability description.", "evidence_refs": ["README.md", "tools/validate_human_front_door.py"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.pages_source", "decision": "CHANGE", "reason": "Draft branch runs must build artifacts without deploying production Pages.", "evidence_refs": [".github/workflows/pages.yml"], "validation_mode": "repository_build_validation", "derived_from": ["human.readme"]},
+      {"surface_id": "external.pages_homepage", "decision": "CHANGE", "reason": "Production rendering must be deployed from main and fetched after eventual merge; it remains an external post-merge obligation.", "evidence_refs": [".github/workflows/pages.yml", "reports/operations/121Q25B-whole-project-synchronization-contract.md"], "validation_mode": "post_merge_external_render_attestation", "derived_from": ["human.readme", "human.pages_source"]},
+      {"surface_id": "human.current_state", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q25 already repaired the post-PR #56/Q24D scope; an unaccepted method candidate must not be presented as current.", "evidence_refs": ["docs/project-current-state.md", "reports/operations/121Q25-front-door-audit.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.summary", "decision": "NO_CHANGE_WITH_REASON", "reason": "SUMMARY already describes current merged capabilities; Q25B remains Draft and adds no current capability.", "evidence_refs": ["SUMMARY.md", "data/operations/iterations/121Q25B.json"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.usage", "decision": "NO_CHANGE_WITH_REASON", "reason": "End-user domain usage is unchanged; the operation contract affects repository change execution and handoff.", "evidence_refs": ["docs/USAGE.md", "ITERATION.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.ai_guide", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q25 synchronized the human copyable AI guide; Q25B does not change the project capability reading prompt.", "evidence_refs": ["docs/ai-assistant-usage-reference.md", "tools/validate_human_front_door.py"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "ai.start", "decision": "CHANGE", "reason": "Zero-background AI must derive mandatory surfaces from the registry and distinguish implementation from synchronization completion.", "evidence_refs": ["AI-START-HERE.md", "ITERATION.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "agent.handoff", "decision": "CHANGE", "reason": "Agent handoff must carry propagation closure and external-surface boundaries across sessions.", "evidence_refs": ["AI-HANDOFF.md", "ITERATION.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "machine.llms", "decision": "CHANGE", "reason": "Machine readers need the 1.1.0 candidate completion distinctions and local/external boundary.", "evidence_refs": ["llms.txt", "ITERATION.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "release.changelog", "decision": "CHANGE", "reason": "Unreleased history records the Q25B method candidate without presenting it as current.", "evidence_refs": ["CHANGELOG.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "release.versioning", "decision": "CHANGE", "reason": "Versioning must distinguish current 1.0.0 operation capability from the Draft 1.1.0 candidate.", "evidence_refs": ["docs/VERSIONING.md", "ITERATION.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "method.iteration", "decision": "CHANGE", "reason": "Canonical method is self-iterated to 1.1.0 with propagation closure and completion levels.", "evidence_refs": ["ITERATION.md", "reports/operations/121Q25B-whole-project-synchronization-contract.md"], "validation_mode": "repository_schema_and_semantic_validation", "derived_from": []},
+      {"surface_id": "method.task_template", "decision": "CHANGE", "reason": "Future commands must declare transition dimensions and registry-derived closure.", "evidence_refs": ["templates/operations/task-command-template.md"], "validation_mode": "repository_semantic_validation", "derived_from": ["method.iteration"]},
+      {"surface_id": "method.result_template", "decision": "CHANGE", "reason": "Future receipts must report separated completion states and external residue.", "evidence_refs": ["templates/operations/execution-result-template.md"], "validation_mode": "repository_semantic_validation", "derived_from": ["method.iteration"]},
+      {"surface_id": "method.review_template", "decision": "CHANGE", "reason": "Independent review must reject locally complete but project-stale iterations.", "evidence_refs": ["templates/operations/independent-review-template.md"], "validation_mode": "repository_semantic_validation", "derived_from": ["method.iteration"]}
+    ],
+    "external_attestations": [
+      {"surface_id": "external.pages_homepage", "stage": "post_merge", "status": "pending", "authority": "pull_request_body_and_1111_receipt", "evidence_refs": ["external:pr_body:57", "external:1111_receipt:IGNITION-20260716-121Q25B-result.md"], "live_state_locally_verifiable": false}
+    ],
+    "unresolved_residue": [],
+    "external_verification_policy": "Exact-head Pages artifact is built and inspected pre-merge without production deployment. After eventual merge, main-sourced Pages deployment and live fetch must be attested in the PR body and independent 1111 receipt before current/closed.",
+    "live_external_surfaces_verified": false
+  },
+  "completion_state": {
+    "implementation_complete": true,
+    "repository_synchronization_complete": true,
+    "external_synchronization_required": true,
+    "external_synchronization_attested": false,
+    "project_synchronization_complete": false
+  },
+  "impact_matrix": [
+    {"surface": "ITERATION.md", "decision": "CHANGE", "reason": "Upgrade canonical method to 1.1.0."},
+    {"surface": "data/operations/synchronization-surfaces.json", "decision": "CHANGE", "reason": "Add canonical synchronization topology."},
+    {"surface": "schemas/operations/synchronization-surfaces.schema.json", "decision": "CHANGE", "reason": "Strictly validate the registry."},
+    {"surface": "schemas/operations/iteration-manifest.schema.json", "decision": "CHANGE", "reason": "Add conditional 1.1.0 transition, closure and completion contract."},
+    {"surface": "tools/validate_iteration_sync.py", "decision": "CHANGE", "reason": "Generalize seal binding and enforce registry closure."},
+    {"surface": "tests/test_iteration_sync.py", "decision": "CHANGE", "reason": "Add positive and adversarial method/closure coverage."},
+    {"surface": ".github/workflows/foundation-validation.yml", "decision": "CHANGE", "reason": "Run registry and generalized closure checks."},
+    {"surface": ".github/workflows/pages.yml", "decision": "CHANGE", "reason": "Draft runs build only; production deploy is main-only."},
+    {"surface": "AI-START-HERE.md", "decision": "CHANGE", "reason": "Cold-start AI learns registry closure and completion levels."},
+    {"surface": "AI-HANDOFF.md", "decision": "CHANGE", "reason": "Agent handoff carries propagation obligations."},
+    {"surface": "llms.txt", "decision": "CHANGE", "reason": "Machine entry records 1.1.0 candidate boundary."},
+    {"surface": "CHANGELOG.md", "decision": "CHANGE", "reason": "Record unreleased candidate history."},
+    {"surface": "docs/VERSIONING.md", "decision": "CHANGE", "reason": "Separate current method from Draft candidate."},
+    {"surface": "templates/operations/task-command-template.md", "decision": "CHANGE", "reason": "Require transition and closure inputs."},
+    {"surface": "templates/operations/execution-result-template.md", "decision": "CHANGE", "reason": "Require completion and residue outputs."},
+    {"surface": "templates/operations/independent-review-template.md", "decision": "CHANGE", "reason": "Require whole-project review."},
+    {"surface": "data/operations/iterations/121Q25.json", "decision": "CHANGE", "reason": "Declare its actual Q25 seal path while retaining method 1.0.0."},
+    {"surface": "data/operations/iterations/121Q25B.json", "decision": "CHANGE", "reason": "Self-host method 1.1.0."},
+    {"surface": "reports/operations/121Q25B-completion-seal.json", "decision": "CHANGE", "reason": "Bind Q25B lifecycle and completion state."},
+    {"surface": "reports/operations/121Q25B-whole-project-synchronization-contract.md", "decision": "CHANGE", "reason": "Record defect reproduction, design and closure."},
+    {"surface": "README.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q25 accepted content remains correct; method candidate is not a current public capability."},
+    {"surface": "docs/project-current-state.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q25 scope remains correct and must not promote Draft Q25B."},
+    {"surface": "docs/ai-assistant-usage-reference.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q25 already synchronized the capability-reading prompt."},
+    {"surface": "SUMMARY.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "No new merged/current capability."},
+    {"surface": "docs/USAGE.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "End-user domain usage is unchanged."},
+    {"surface": "ARCHITECTURE.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "No architecture or truth layer added."},
+    {"surface": "FOUNDATION.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Foundation authority unchanged."},
+    {"surface": "LICENSES", "decision": "NO_CHANGE_WITH_REASON", "reason": "License terms and scopes unchanged."}
+  ],
+  "changed_surfaces": ["ITERATION.md", "data/operations/synchronization-surfaces.json", "schemas/operations/synchronization-surfaces.schema.json", "schemas/operations/iteration-manifest.schema.json", "tools/validate_iteration_sync.py", "tests/test_iteration_sync.py", ".github/workflows/foundation-validation.yml", ".github/workflows/pages.yml", "AI-START-HERE.md", "AI-HANDOFF.md", "llms.txt", "CHANGELOG.md", "docs/VERSIONING.md", "templates/operations/task-command-template.md", "templates/operations/execution-result-template.md", "templates/operations/independent-review-template.md", "data/operations/iterations/121Q25.json", "data/operations/iterations/121Q25B.json", "reports/operations/121Q25B-completion-seal.json", "reports/operations/121Q25B-whole-project-synchronization-contract.md"],
+  "explicitly_unaffected_surfaces": ["Psi0 source text", "085 architecture freeze assets", "old function and case tables", "historical evidence cards", "formal charter", "Function OS runtime", "license terms", "reality loop watchdog"],
+  "required_synchronization_decisions": ["All registry-triggered surfaces have one evidence-backed decision.", "Draft Pages builds but does not deploy production.", "Production Pages remains a post-merge external obligation."],
+  "schema_tools_tests_workflows_reports_changed": ["schemas/operations/iteration-manifest.schema.json", "schemas/operations/synchronization-surfaces.schema.json", "tools/validate_iteration_sync.py", "tests/test_iteration_sync.py", ".github/workflows/foundation-validation.yml", ".github/workflows/pages.yml", "reports/operations/121Q25B-whole-project-synchronization-contract.md", "reports/operations/121Q25B-completion-seal.json"],
+  "validation": {
+    "local": [
+      {"name": "synchronization-registry", "status": "PASS", "evidence": "Registry schema and graph checks pass."},
+      {"name": "iteration-sync", "status": "PASS", "evidence": "All manifests bind task-specific seals and Q25B closure passes."},
+      {"name": "iteration-adversarial-tests", "status": "PASS", "evidence": "Positive and required negative lifecycle/closure cases pass."}
+    ],
+    "remote": [],
+    "external_exact_head_policy": {"required": true, "authority": "pull_request_body_and_1111_receipt", "required_workflows": ["foundation-validation", "function-os-ci"], "live_refetch_before_acceptance_or_merge": true}
+  },
+  "rollback_strategy": "Revert Q25B commits on PR #57 or close the Draft; preserve Q25 content commits and Q25B audit evidence. Main and production Pages remain unchanged until accepted merge.",
+  "remaining_limitations": ["Q25B is preserved as a superseded non-ready Draft candidate after independent review found a pre-merge acceptance/post-merge Pages deadlock.", "Q25C carries the corrected final Ready candidate on the same branch.", "Local closure validation cannot attest production Pages or live GitHub state."],
+  "receipt_location": "agent-results/IGNITION-20260716-121Q25B-result.md"
+}

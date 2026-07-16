@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Q25B Draft candidate upgrades the iteration method to 1.1.0 with registry-derived whole-project propagation closure, task-generic manifest/seal binding, separated completion levels and build-only Draft Pages verification. This entry records candidate history, not a merged/current capability.
+- Q25C supersedes Q25B as the sole Ready method candidate by removing the pre-merge acceptance/post-merge Pages deadlock and replacing one global external-attestation flag with strict per-surface records. Q25B remains auditable history.
+
 ## 2026-07-16 · PR #56 iteration method merged and current-state closeout
 
 - Accepted PR #56 exact head `c638afcb5cd25152a0f2a81c9b9b2c7e29cfdc94` after Foundation and Function OS exact-head CI succeeded, then merged it with merge commit `b1becae50470f744501b5302c52008f978000c48`.

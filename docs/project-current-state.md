@@ -1,6 +1,6 @@
 # 项目现状 / Current Project State
 
-> Scope: describes the repository after PR #55 was merged into `main` at commit `72318097d4d09277eeb55cc56d677e2fad1f9377` on 2026-07-16. This page is versioned and may become outdated after later evidence, failures, capabilities, or governance changes.
+> Scope: describes the current repository baseline after PR #56 and the 121Q24D lifecycle closeout entered `main` on 2026-07-16. This versioned page names the accepted lifecycle boundary without embedding the future commit that contains the page itself; exact live HEAD and CI remain external attestations and must be re-fetched. The description may become outdated after later evidence, failures, capabilities, or governance changes.
 
 ## How This Page Should Be Read
 

@@ -55,6 +55,10 @@ PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系
 不得把邻接、相似性、中心性、社群、检索、自述或行为变化升级为真理、价值、因果或内部学习机制证明。
 
 121Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正确性。
+
+方法 1.1.0 候选要求从 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。人类 README、实际 Pages 来源与渲染面、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称生产 Pages 或其他实时外部状态已验证。
+
+Q25C 修正候选的生命周期规则：Ready、Accepted、Merged、Current、Closed 分别读取 surface `blocks`，不能用全局 project-complete 布尔值阻断 pre-merge acceptance。每个外部表面必须有独立 attestation；Pages pending 可以进入 Accepted/Merged，但继续阻塞 Current/Closed。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

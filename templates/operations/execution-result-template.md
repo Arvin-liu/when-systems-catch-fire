@@ -17,6 +17,14 @@ State:
 - Merged:
 - Current:
 
+Completion levels:
+
+- Implementation complete:
+- Repository synchronization complete:
+- External synchronization required:
+- External synchronization attested:
+- Project synchronization complete:
+
 Commits:
 
 1. `<sha>` - `<message>`
@@ -33,6 +41,17 @@ Validation:
 - Remote workflow run IDs and conclusions (external attestation only):
 - Live PR/CI re-fetch completed:
 - Attestation authority: PR body and independent 1111 receipt
+
+Propagation closure:
+
+- State-transition subjects and dimensions:
+- Registry-derived required surfaces:
+- Decisions and evidence:
+- Derived build evidence:
+- External production obligations:
+- Per-surface external attestations and lifecycle blockers:
+- Unresolved synchronization residue:
+- Why this is or is not ready/current/closed:
 
 Claim ceiling:
 

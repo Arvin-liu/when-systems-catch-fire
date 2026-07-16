@@ -1,0 +1,32 @@
+{
+  "task_id": "121Q25",
+  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "method_version": "1.0.0",
+  "manifest_path": "data/operations/iterations/121Q25.json",
+  "phase_b": {
+    "draft_pr": 57,
+    "branch": "docs/121q25-human-front-door-capability-sync-20260716",
+    "base": "main",
+    "base_head": "7fc4b309720ea1b4e9c4b47477c2f423860d53df",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "agent-results/IGNITION-20260716-121Q25-result.md",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
+    "claim_ceiling": "validated_human_front_door_sync_candidate_only"
+  },
+  "lifecycle": {"candidate": true, "ready_for_gpt_verification": true, "accepted": false, "merged": false, "current": false},
+  "pages_binding": {
+    "source": "README.md",
+    "workflow": ".github/workflows/pages.yml",
+    "live_render_requires_external_attestation": true
+  },
+  "boundaries": {
+    "adds_truth_layer": false,
+    "promotes_candidate_representation_to_proven_theory": false,
+    "modifies_frozen_assets": false,
+    "merges_or_marks_ready": false
+  }
+}

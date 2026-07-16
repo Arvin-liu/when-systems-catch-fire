@@ -23,6 +23,7 @@
   ],
   "properties": {
     "method_version": { "$ref": "#/$defs/nonblankString" },
+    "completion_seal_path": { "$ref": "#/$defs/nonblankString" },
     "task_id": { "type": "string", "pattern": "^[A-Za-z0-9._-]+$" },
     "change_classification": {
       "type": "array",
@@ -141,8 +142,17 @@
     },
     "rollback_strategy": { "$ref": "#/$defs/nonblankString" },
     "remaining_limitations": { "$ref": "#/$defs/nonblankStringArray" },
-    "receipt_location": { "$ref": "#/$defs/nonblankString" }
+    "receipt_location": { "$ref": "#/$defs/nonblankString" },
+    "state_transition": {"$ref": "#/$defs/stateTransition"},
+    "synchronization_closure": {"$ref": "#/$defs/synchronizationClosure"},
+    "completion_state": {"$ref": "#/$defs/completionState"}
   },
+  "allOf": [
+    {
+      "if": {"properties": {"method_version": {"const": "1.1.0"}}, "required": ["method_version"]},
+      "then": {"required": ["completion_seal_path", "state_transition", "synchronization_closure", "completion_state"]}
+    }
+  ],
   "$defs": {
     "sha": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
     "positiveRunId": { "type": "integer", "minimum": 1 },
@@ -178,6 +188,90 @@
         "subject_head": { "$ref": "#/$defs/sha" },
         "run_id": { "$ref": "#/$defs/positiveRunId" },
         "conclusion": { "$ref": "#/$defs/nonblankString" }
+      }
+    },
+    "stateTransition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subjects", "prior_state", "proposed_state", "changed_dimensions", "source_refs", "maximum_claim_boundary"],
+      "properties": {
+        "subjects": {"$ref": "#/$defs/nonblankStringArray"},
+        "prior_state": {"$ref": "#/$defs/nonblankString"},
+        "proposed_state": {"$ref": "#/$defs/nonblankString"},
+        "changed_dimensions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"enum": ["capability", "identity", "usage", "handoff", "lifecycle_current_state", "governance", "deployment_rendering", "operations_method"]},
+          "uniqueItems": true
+        },
+        "source_refs": {"$ref": "#/$defs/nonblankStringArray"},
+        "maximum_claim_boundary": {"$ref": "#/$defs/nonblankString"}
+      }
+    },
+    "surfaceDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface_id", "decision", "reason", "evidence_refs", "validation_mode"],
+      "properties": {
+        "surface_id": {"$ref": "#/$defs/nonblankString"},
+        "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]},
+        "reason": {"$ref": "#/$defs/nonblankString"},
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceReference"},
+          "uniqueItems": true
+        },
+        "validation_mode": {"$ref": "#/$defs/nonblankString"},
+        "derived_from": {"type": "array", "items": {"$ref": "#/$defs/nonblankString"}, "uniqueItems": true}
+      }
+    },
+    "synchronizationClosure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["registry_path", "registry_version", "surface_decisions", "external_attestations", "unresolved_residue", "external_verification_policy", "live_external_surfaces_verified"],
+      "properties": {
+        "registry_path": {"const": "data/operations/synchronization-surfaces.json"},
+        "registry_version": {"$ref": "#/$defs/nonblankString"},
+        "surface_decisions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/surfaceDecision"}},
+        "external_attestations": {"type": "array", "items": {"$ref": "#/$defs/externalAttestation"}},
+        "unresolved_residue": {"type": "array", "items": {"$ref": "#/$defs/nonblankString"}, "uniqueItems": true},
+        "external_verification_policy": {"$ref": "#/$defs/nonblankString"},
+        "live_external_surfaces_verified": {"const": false}
+      }
+    },
+    "evidenceReference": {
+      "type": "string",
+      "pattern": "^([^:\\s][^\\s]*|repo:[^\\s]+|external:(pr_body|1111_receipt|live_refetch|github_actions):[^\\s]+)$"
+    },
+    "externalAttestation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface_id", "stage", "status", "authority", "evidence_refs", "live_state_locally_verifiable"],
+      "properties": {
+        "surface_id": {"$ref": "#/$defs/nonblankString"},
+        "stage": {"enum": ["pre_merge", "post_merge"]},
+        "status": {"enum": ["pending", "attested"]},
+        "authority": {"const": "pull_request_body_and_1111_receipt"},
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceReference"},
+          "uniqueItems": true
+        },
+        "live_state_locally_verifiable": {"const": false}
+      }
+    },
+    "completionState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["implementation_complete", "repository_synchronization_complete", "external_synchronization_required", "external_synchronization_attested", "project_synchronization_complete"],
+      "properties": {
+        "implementation_complete": {"type": "boolean"},
+        "repository_synchronization_complete": {"type": "boolean"},
+        "external_synchronization_required": {"type": "boolean"},
+        "external_synchronization_attested": {"type": "boolean"},
+        "project_synchronization_complete": {"type": "boolean"}
       }
     },
     "externalAttestationPolicy": {

@@ -1,0 +1,96 @@
+{
+  "method_version": "1.0.0",
+  "task_id": "121Q25",
+  "completion_seal_path": "reports/operations/121Q25-completion-seal.json",
+  "change_classification": ["REPAIR", "INTERFACE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC"],
+  "verified_start": {
+    "main_head": "7fc4b309720ea1b4e9c4b47477c2f423860d53df",
+    "source": "origin/main after 121Q24D closeout",
+    "verified_at": "2026-07-16"
+  },
+  "branch_pr": {
+    "branch": "docs/121q25-human-front-door-capability-sync-20260716",
+    "pr_number": 57,
+    "base": "main",
+    "base_head": "7fc4b309720ea1b4e9c4b47477c2f423860d53df",
+    "draft": true,
+    "merged": false
+  },
+  "head_binding": {
+    "mode": "external_exact_head_attestation",
+    "pr_number": 57,
+    "authority": "pull_request_body_and_1111_receipt",
+    "receipt_path": "agent-results/IGNITION-20260716-121Q25-result.md",
+    "embedded_exact_current_head": false,
+    "live_refetch_required": true,
+    "explanation": "The repository stores deterministic candidate consistency. Exact final PR HEAD, CI and rendered Pages deployment evidence are recorded after push in PR #57 and the independent 1111 receipt."
+  },
+  "gap": {
+    "summary": "The human README, rendered reading homepage and copyable AI guide lagged the MCF, PSD, ARN and Q24 capabilities already current on main, while the current-state scope still named PR #55.",
+    "evidence": [
+      "README visible current-state text omitted MCF, PSD, ARN and the iteration method capability.",
+      "The expanded AI guide omitted ITERATION.md and all three architecture files.",
+      "The deployed Pages homepage was generated from the stale README.",
+      "The current-state scope still named PR #55 despite PR #56 and Q24D closeout."
+    ],
+    "smallest_material_action": "Synchronize the existing human front doors and add one semantic guard without changing architecture, runtime or machine truth stores."
+  },
+  "claim_ceiling": "validated_human_front_door_sync_candidate_only",
+  "status": {"candidate": true, "ready_for_gpt_verification": true, "accepted": false, "merged": false, "current": false},
+  "impact_matrix": [
+    {"surface": "README.md", "decision": "CHANGE", "reason": "Visible capability summary, architecture links and embedded AI prompt must reflect current main."},
+    {"surface": "docs/ai-assistant-usage-reference.md", "decision": "CHANGE", "reason": "Expanded human AI guide must include the current reading chain, questions and boundaries."},
+    {"surface": "docs/project-current-state.md", "decision": "CHANGE", "reason": "Scope must name the post-PR #56 and Q24D lifecycle boundary."},
+    {"surface": "data/operations/iterations/121Q25.json", "decision": "CHANGE", "reason": "Canonical iteration manifest records the Q25 candidate."},
+    {"surface": "reports/operations/121Q25-front-door-audit.md", "decision": "CHANGE", "reason": "Records before/after front-door matrix and Pages source truth."},
+    {"surface": "reports/operations/121Q25-completion-seal.json", "decision": "CHANGE", "reason": "Binds the Draft candidate lifecycle to the iteration manifest."},
+    {"surface": "tools/validate_human_front_door.py", "decision": "CHANGE", "reason": "Semantic synchronization guard prevents repeated human-front-door drift."},
+    {"surface": "tests/test_human_front_door.py", "decision": "CHANGE", "reason": "Positive and adversarial tests cover missing capabilities, prompt drift, stale scope and Pages source."},
+    {"surface": ".github/workflows/foundation-validation.yml", "decision": "CHANGE", "reason": "Foundation CI runs the focused front-door validator and adversarial tests."},
+    {"surface": ".github/workflows/pages.yml", "decision": "NO_CHANGE_WITH_REASON", "reason": "Already derives the reading page from README with official Pages actions."},
+    {"surface": "AI-START-HERE.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Already names MCF, PSD, ARN and Q24 boundaries."},
+    {"surface": "llms.txt", "decision": "NO_CHANGE_WITH_REASON", "reason": "Already records all four current capabilities and non-proof boundaries."},
+    {"surface": "SUMMARY.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Already links all three architectures and current Q24 method."},
+    {"surface": "AI-HANDOFF.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Already contains the required current handoff chain."},
+    {"surface": "CHANGELOG.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q25 remains an unaccepted Draft candidate and does not change released history."},
+    {"surface": "docs/VERSIONING.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Already distinguishes baseline architecture from later current capabilities."},
+    {"surface": "ARCHITECTURE.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q25 changes presentation, not architecture."},
+    {"surface": "FOUNDATION.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Foundation authority and registries are unchanged."},
+    {"surface": "LICENSES", "decision": "NO_CHANGE_WITH_REASON", "reason": "No license term or scope changes."}
+  ],
+  "changed_surfaces": [
+    "README.md",
+    "docs/ai-assistant-usage-reference.md",
+    "docs/project-current-state.md",
+    "data/operations/iterations/121Q25.json",
+    "reports/operations/121Q25-front-door-audit.md",
+    "reports/operations/121Q25-completion-seal.json",
+    "tools/validate_human_front_door.py",
+    "tests/test_human_front_door.py",
+    ".github/workflows/foundation-validation.yml"
+  ],
+  "explicitly_unaffected_surfaces": ["Psi0 source text", "085 architecture freeze assets", "old function and case tables", "historical evidence cards", "formal charter", "Function OS runtime", "license terms", "reality loop watchdog"],
+  "required_synchronization_decisions": [
+    "README visible current state names MCF, PSD, ARN and ITERATION with claim boundaries.",
+    "README and the expanded AI guide use the same validated copyable prompt.",
+    "Pages remains a deterministic README-derived reading surface.",
+    "Project current-state scope names PR #56 and Q24D without a self-referential future SHA."
+  ],
+  "schema_tools_tests_workflows_reports_changed": ["tools/validate_human_front_door.py", "tests/test_human_front_door.py", ".github/workflows/foundation-validation.yml", "reports/operations/121Q25-front-door-audit.md", "reports/operations/121Q25-completion-seal.json"],
+  "validation": {
+    "local": [
+      {"name": "human-front-door", "status": "PASS", "evidence": "Semantic front-door validator passed."},
+      {"name": "human-front-door-tests", "status": "PASS", "evidence": "Positive and adversarial synchronization tests passed."},
+      {"name": "iteration-sync", "status": "PASS", "evidence": "Repository-local iteration manifest validation passed."}
+    ],
+    "remote": [],
+    "external_exact_head_policy": {"required": true, "authority": "pull_request_body_and_1111_receipt", "required_workflows": ["foundation-validation", "function-os-ci"], "live_refetch_before_acceptance_or_merge": true}
+  },
+  "rollback_strategy": "Close PR #57 without merge or revert its eventual merge; README-derived Pages will return to the main README on the next main deployment.",
+  "remaining_limitations": [
+    "This Draft synchronizes descriptions only and does not promote MCF, PSD or ARN to proven theory.",
+    "Repository-local validation cannot prove the live Pages deployment; exact deployment and rendered observations are external attestations.",
+    "The candidate is not current until independent acceptance, merge and post-merge verification."
+  ],
+  "receipt_location": "agent-results/IGNITION-20260716-121Q25-result.md"
+}
