@@ -88,4 +88,4 @@ For multi-edge paths, ARN does not merely check whether each adjacent pair appea
 
 Because diff references are represented as strings, the allowed local reference namespace must be unambiguous: `network_id`, `state_id` and `projection_id` values may not collide. `NetworkDiff.external_refs[].ref_id` values must be unique inside each diff and may not collide with local diff-reference IDs. Duplicate external IDs, including conflicting duplicate IDs with different `ref_type` values, are invalid.
 
-Semantic nonblank fields are checked after trimming whitespace. Lists such as provenance, alternatives, residue, evidence, attractor loop patterns and cascade paths cannot satisfy the contract with blank or whitespace-only strings. Optional empty diff change arrays remain allowed.
+Semantic nonblank fields are checked after trimming whitespace. Lists such as provenance, alternatives, residue, evidence, attractor loop patterns and cascade paths must be non-empty, and every member must be a nonblank string. A mixed list such as `["valid", "   "]` is invalid. Optional empty diff change arrays remain allowed.

@@ -1,6 +1,6 @@
 {
-  "task": "121Q23F",
-  "status": "121Q23F_READY_AS_REFERENCE_IDENTITY_CLOSED_OPERATIONAL_ARN_CANDIDATE",
+  "task": "121Q23G",
+  "status": "121Q23G_READY_FOR_GPT_FINAL_ACCEPTANCE_AS_OPERATIONAL_ARN_CANDIDATE",
   "claim_ceiling": "Derived representation only; not ontology, truth, value, causality, clinical inference, psychological diagnosis or proof of internal learning.",
   "validator": "tools/validate_adaptive_relational_network.py",
   "schema_contracts": [
@@ -16,6 +16,8 @@
     "diff_id_and_external_ref_id_audit": true,
     "unambiguous_diff_reference_namespace": true,
     "semantic_nonblank_required_content": true,
+    "itemwise_semantic_nonblank_string_lists": true,
+    "blank_identity_and_reference_rejection": true,
     "activation_targets_limited_to_nodes_and_relations": true,
     "diff_refs_require_local_or_typed_external_refs": true,
     "stateful_path_orientation_propagation": true,

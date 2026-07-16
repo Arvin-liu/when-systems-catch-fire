@@ -1,6 +1,6 @@
 # 121Q23 Adaptive Relational Network Validation
 
-Status: `121Q23F_READY_AS_REFERENCE_IDENTITY_CLOSED_OPERATIONAL_ARN_CANDIDATE`
+Status: `121Q23G_READY_FOR_GPT_FINAL_ACCEPTANCE_AS_OPERATIONAL_ARN_CANDIDATE`
 
 ARN is a derived representation for heterogeneous, non-causal, multilayer and temporally activated relations. It does not add a truth layer.
 
@@ -16,7 +16,7 @@ Validator and tool coverage:
 - NetworkDiff `from_ref` and `to_ref` restricted to an unambiguous local network/state/projection namespace or declared typed external refs;
 - local diff-reference namespace collision detection across `network_id`, `state_id` and `projection_id`;
 - external ref duplicate, type-conflict and local-collision rejection;
-- semantic nonblank validation for required strings and lists after whitespace trimming;
+- itemwise semantic nonblank validation for required strings and string-list members after whitespace trimming;
 - interval validation with `start <= end`;
 - topology-aware temporal graph-path validation separated from merely ordered relation sequences;
 - stateful reachable-orientation propagation for multi-edge directed, undirected and bidirectional paths;
@@ -63,6 +63,14 @@ Real-history proof: `reports/architecture/121Q23C-operational-arn-real-history-v
 - local diff-reference namespace collisions are rejected before string refs are resolved;
 - whitespace-only strings no longer satisfy required provenance, alternatives, residue, evidence, claim ceiling, attractor loop or cascade path semantics;
 - optional empty NetworkDiff change arrays remain valid.
+
+121Q23G closure details:
+
+- required scalar strings must be nonblank after trimming;
+- required semantic string lists must be non-empty and every member must be nonblank after trimming;
+- mixed lists such as `["valid", "   "]` are rejected for provenance, alternatives, residue, evidence, attractor loop patterns, projection rules, omitted dimensions and state unknowns;
+- blank or whitespace-only IDs and external reference IDs are rejected during identity/reference validation;
+- optional empty `NetworkDiff` change arrays remain valid.
 
 Integration boundaries:
 
