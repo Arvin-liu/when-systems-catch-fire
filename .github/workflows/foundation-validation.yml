@@ -87,4 +87,4 @@ jobs:
       - run: python3 tools/foundation/validate_080_adjudications.py
       - run: python3 tools/validate_iteration_sync.py
       - run: python3 -m unittest tests.foundation.test_foundation
-      - run: python3 -m pytest tests/test_iteration_sync.py -q
+      - run: python3 -m unittest tests.test_iteration_sync -v
