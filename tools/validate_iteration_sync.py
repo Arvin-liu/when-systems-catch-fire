@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Ignition iteration manifests and front-door synchronization."""
+"""Validate Ignition iteration manifests and artifact synchronization."""
 
 from __future__ import annotations
 
@@ -13,6 +13,7 @@ from jsonschema import Draft202012Validator
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = ROOT / "schemas/operations/iteration-manifest.schema.json"
 MANIFEST_DIR = ROOT / "data/operations/iterations"
+SEAL_PATH = ROOT / "reports/operations/121Q24-completion-seal.json"
 
 FRONT_DOOR_SURFACES = {
     "README.md",
@@ -23,6 +24,22 @@ FRONT_DOOR_SURFACES = {
     "SUMMARY.md",
     "CHANGELOG.md",
 }
+
+OPERATIONS_METHOD_REQUIRED_CHANGED = {
+    "ITERATION.md",
+    "schemas/operations/iteration-manifest.schema.json",
+    "data/operations/iterations/121Q24.json",
+    "tools/validate_iteration_sync.py",
+    "tests/test_iteration_sync.py",
+    ".github/workflows/foundation-validation.yml",
+    "reports/operations/121Q24-current-state-reconciliation.md",
+    "reports/operations/121Q24-completion-seal.json",
+    "templates/operations/task-command-template.md",
+    "templates/operations/execution-result-template.md",
+    "templates/operations/independent-review-template.md",
+}
+
+UNRESOLVED_STATUSES = {"PENDING", "TODO", "UNKNOWN", "", "TBD", "N/A"}
 
 
 def load_json(path: Path) -> object:
@@ -35,46 +52,83 @@ def require(condition: bool, message: str) -> None:
         raise AssertionError(message)
 
 
-def _has_decision(manifest: dict, surface: str) -> bool:
-    return any(item["surface"] == surface for item in manifest["impact_matrix"])
+def _unique(items: list[str], label: str, source: Path) -> None:
+    require(len(items) == len(set(items)), f"{source}: duplicate {label}: {items}")
 
 
-def validate_custom(manifest: dict, path: Path) -> None:
-    task = manifest["task_id"]
+def _decision_map(manifest: dict, source: Path) -> dict[str, dict]:
+    surfaces = [item["surface"] for item in manifest["impact_matrix"]]
+    _unique(surfaces, "impact_matrix.surface", source)
+    return {item["surface"]: item for item in manifest["impact_matrix"]}
+
+
+def _validation_names(items: list[dict], label: str, source: Path) -> None:
+    names = [item["name"] for item in items]
+    _unique(names, f"{label} validation name", source)
+    run_ids = [item.get("run_id") for item in items if item.get("run_id") is not None]
+    require(len(run_ids) == len(set(run_ids)), f"{source}: duplicate {label} workflow run id")
+
+
+def validate_custom(manifest: dict, source: Path, seal: dict | None = None) -> None:
     status = manifest["status"]
     classifications = set(manifest["change_classification"])
+    changed = set(manifest["changed_surfaces"])
+    decisions = _decision_map(manifest, source)
 
-    require(manifest["claim_ceiling"].strip(), f"{path}: claim ceiling is blank")
-    require(not status["current"] or status["merged"], f"{path}: current cannot be true unless merged is true")
-    require(not status["merged"] or status["accepted"], f"{path}: merged cannot be true unless accepted is true")
-    require(not status["accepted"] or status["ready_for_gpt_verification"], f"{path}: accepted cannot be true unless ready_for_gpt_verification is true")
-    require(status["candidate"] or status["ready_for_gpt_verification"] or status["accepted"] or status["merged"] or status["current"], f"{path}: all states are false")
-    require(not (status["current"] and manifest["branch_pr"]["draft"]), f"{path}: Draft PR cannot be current")
-    require(not (status["merged"] and manifest["branch_pr"]["draft"]), f"{path}: Draft PR cannot be merged")
-    require(not (manifest["branch_pr"]["merged"] and manifest["branch_pr"]["draft"]), f"{path}: branch_pr cannot be both merged and draft")
+    _unique(manifest["changed_surfaces"], "changed_surfaces", source)
+    _validation_names(manifest["validation"]["local"], "local", source)
+    _validation_names(manifest["validation"]["remote"], "remote", source)
 
-    decisions = {item["surface"]: item for item in manifest["impact_matrix"]}
-    for surface, item in decisions.items():
-        if item["decision"] == "NO_CHANGE_WITH_REASON":
-            require(item["reason"].strip(), f"{path}: {surface} has NO_CHANGE without reason")
+    require(not status["current"] or status["merged"], f"{source}: current cannot be true unless merged is true")
+    require(not status["merged"] or status["accepted"], f"{source}: merged cannot be true unless accepted is true")
+    require(not status["accepted"] or status["ready_for_gpt_verification"], f"{source}: accepted cannot be true unless ready_for_gpt_verification is true")
+    require(status["candidate"] or status["ready_for_gpt_verification"] or status["accepted"] or status["merged"] or status["current"], f"{source}: all states are false")
+    require(manifest["branch_pr"]["merged"] == status["merged"], f"{source}: branch_pr.merged and status.merged disagree")
+    require(not (manifest["branch_pr"]["draft"] and (status["accepted"] or status["merged"] or status["current"])), f"{source}: Draft cannot be accepted, merged, or current")
+    require(not (manifest["branch_pr"]["merged"] and manifest["branch_pr"]["draft"]), f"{source}: branch_pr cannot be both merged and draft")
+
+    if status["ready_for_gpt_verification"]:
+        require(manifest["branch_pr"]["pr_number"] is not None and manifest["branch_pr"]["pr_number"] > 0, f"{source}: ready candidate requires PR number")
+        require(manifest["candidate_head"], f"{source}: ready candidate requires candidate_head")
+        require(manifest["validation"]["local"], f"{source}: ready candidate requires local validation")
+        require(manifest["validation"]["remote"], f"{source}: ready candidate requires remote validation")
+        for item in manifest["validation"]["local"] + manifest["validation"]["remote"]:
+            require(item["status"].upper() not in UNRESOLVED_STATUSES, f"{source}: unresolved validation status for {item['name']}")
+            require(item["status"].upper() in {"PASS", "SUCCESS"}, f"{source}: validation status must be PASS/SUCCESS for {item['name']}")
+        for item in manifest["validation"]["remote"]:
+            require(item.get("run_id"), f"{source}: remote validation {item['name']} missing run_id")
+            require(item.get("head") == manifest["candidate_head"], f"{source}: remote validation {item['name']} head mismatch")
+            require(item.get("conclusion", "").lower() == "success", f"{source}: remote validation {item['name']} conclusion not success")
 
     if classifications & {"CAPABILITY_ADDITION", "INTERFACE_CHANGE", "GOVERNANCE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"}:
         for surface in FRONT_DOOR_SURFACES:
-            require(_has_decision(manifest, surface), f"{path}: missing front-door/current-state impact decision for {surface}")
+            require(surface in decisions, f"{source}: missing front-door/current-state impact decision for {surface}")
 
-    changed = set(manifest["changed_surfaces"])
+    for surface, item in decisions.items():
+        if item["decision"] == "CHANGE":
+            require(surface in changed, f"{source}: CHANGE decision not present in changed_surfaces: {surface}")
+        if item["decision"] == "NO_CHANGE_WITH_REASON":
+            require(item["reason"].strip(), f"{source}: {surface} has NO_CHANGE without reason")
+            require(surface not in changed, f"{source}: NO_CHANGE surface falsely declared changed: {surface}")
+
+    for path in changed:
+        require((ROOT / path).exists(), f"{source}: declared changed path does not exist: {path}")
+
     if "OPERATIONS_METHOD" in classifications:
-        require("ITERATION.md" in changed, f"{path}: operations method change must include ITERATION.md")
-        require("tools/validate_iteration_sync.py" in changed, f"{path}: operations method change must include validator")
+        missing = sorted(OPERATIONS_METHOD_REQUIRED_CHANGED - changed)
+        require(not missing, f"{source}: operations method missing changed paths: {missing}")
 
-    sync_decisions = manifest.get("required_synchronization_decisions", [])
-    require(sync_decisions, f"{path}: synchronization decisions missing")
-    for item in sync_decisions:
-        require("NO_CHANGE" not in item or "reason" in item.lower(), f"{path}: unexplained NO_CHANGE synchronization decision: {item}")
-
-    forbidden_current_claim = "Open Draft"
-    for limitation in manifest["remaining_limitations"]:
-        require(forbidden_current_claim not in limitation, f"{path}: ambiguous Draft/current limitation in {task}")
+    if seal is not None and manifest["task_id"] == seal.get("task_id"):
+        phase_b = seal["phase_b"]
+        lifecycle = seal["lifecycle"]
+        require(seal["method_version"] == manifest["method_version"], f"{source}: seal method_version mismatch")
+        require(phase_b["draft_pr"] == manifest["branch_pr"]["pr_number"], f"{source}: seal PR mismatch")
+        require(phase_b["branch"] == manifest["branch_pr"]["branch"], f"{source}: seal branch mismatch")
+        require(phase_b["base_head"] == manifest["branch_pr"]["base_head"], f"{source}: seal base_head mismatch")
+        require(phase_b["candidate_head"] == manifest["candidate_head"], f"{source}: seal candidate_head mismatch")
+        require(phase_b["claim_ceiling"] == manifest["claim_ceiling"], f"{source}: seal claim ceiling mismatch")
+        for key in ("candidate", "ready_for_gpt_verification", "accepted", "merged", "current"):
+            require(lifecycle[key] == manifest["status"][key], f"{source}: seal lifecycle mismatch for {key}")
 
 
 def validate_all() -> dict:
@@ -82,6 +136,7 @@ def validate_all() -> dict:
     validator = Draft202012Validator(schema)
     paths = sorted(MANIFEST_DIR.glob("*.json"))
     require(paths, "no iteration manifests found")
+    seal = load_json(SEAL_PATH) if SEAL_PATH.exists() else None
     checked = 0
     for path in paths:
         manifest = load_json(path)
@@ -90,7 +145,7 @@ def validate_all() -> dict:
             first = errors[0]
             loc = ".".join(str(part) for part in first.path) or "<root>"
             raise AssertionError(f"{path}: schema error at {loc}: {first.message}")
-        validate_custom(manifest, path)
+        validate_custom(manifest, path, seal)
         checked += 1
 
     for surface in FRONT_DOOR_SURFACES | {"ITERATION.md"}:

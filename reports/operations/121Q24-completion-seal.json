@@ -1,29 +1,59 @@
 {
   "task_id": "121Q24",
-  "status": "CANDIDATE_LOCAL_VALIDATION_COMPLETE_PENDING_REMOTE_CI",
+  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
   "method_version": "1.0.0",
+  "manifest_path": "data/operations/iterations/121Q24.json",
+  "manifest_hash": {
+    "included": false,
+    "reason": "Embedding a hash of the manifest inside the seal while cross-validating the seal from the manifest would create a circular artifact. Deterministic content consistency is enforced by tools/validate_iteration_sync.py; final pushed head is recorded in the PR body and 1111 receipt."
+  },
   "phase_a": {
     "merged_pr": 55,
     "accepted_head": "791fe4db663cf99ac643a13d4ccbaf5ec068cb41",
     "merge_commit": "72318097d4d09277eeb55cc56d677e2fad1f9377"
   },
   "phase_b": {
+    "draft_pr": 56,
     "branch": "ops/121q24-ignition-iteration-method-current-state-sync-20260716",
-    "draft_pr": null,
+    "base": "main",
+    "base_head": "72318097d4d09277eeb55cc56d677e2fad1f9377",
+    "candidate_head": "5e626091be531994af1fefec213adf7ca3353de0",
+    "candidate_head_note": "Exact pre-Q24B Draft candidate head whose stale artifacts were repaired. The final Q24B commit SHA is non-self-referentially recorded in PR body and 1111 receipt after push.",
     "claim_ceiling": "validated_operation_method_candidate_only"
+  },
+  "lifecycle": {
+    "candidate": true,
+    "ready_for_gpt_verification": true,
+    "accepted": false,
+    "merged": false,
+    "current": false
+  },
+  "remote_validation": [
+    {
+      "workflow": "foundation-validation",
+      "run_id": 29475601204,
+      "head": "5e626091be531994af1fefec213adf7ca3353de0",
+      "conclusion": "success"
+    },
+    {
+      "workflow": "function-os-ci",
+      "run_id": 29475606532,
+      "head": "5e626091be531994af1fefec213adf7ca3353de0",
+      "conclusion": "success"
+    }
+  ],
+  "local_validation": {
+    "iteration_sync": "PASS",
+    "iteration_tests": "PASS under stdlib unittest; local pytest compatibility also passed during Q24",
+    "architecture_overlay_tests": "50 passed during Q24",
+    "foundation": "60/60 during Q24",
+    "function_os": "164 passed, 48 warnings during Q24",
+    "license_scope": "20/20 during Q24"
   },
   "boundaries": {
     "adds_truth_layer": false,
     "proves_truth_value_causality_or_correctness": false,
     "q24_current_before_merge": false,
     "modifies_frozen_assets": false
-  },
-  "local_validation": {
-    "iteration_sync": "PASS",
-    "iteration_tests": "3 passed",
-    "architecture_overlay_tests": "50 passed",
-    "foundation": "60/60",
-    "function_os": "164 passed, 48 warnings",
-    "license_scope": "20/20"
   }
 }

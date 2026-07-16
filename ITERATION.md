@@ -173,6 +173,8 @@ Every handoff or receipt records:
 - forbidden actions that were not taken;
 - receipt location.
 
+Git commit SHA values are not self-embeddable: a file inside a commit cannot truthfully contain the SHA of that same commit, because changing the file changes the SHA. Machine manifests may record the exact pushed candidate head they validate against and must state any non-circular recording rule; the final pushed head after a repair commit must be recorded in the PR body and external receipt.
+
 ## 13. Method Self-Iteration
 
 This method may change only through itself.
