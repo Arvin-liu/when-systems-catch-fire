@@ -1,0 +1,52 @@
+{
+  "method_version": "1.1.0",
+  "task_id": "121Q28T",
+  "completion_seal_path": "reports/operations/121Q28T-completion-seal.json",
+  "change_classification": ["RELEASE_OR_CURRENT_STATE_SYNC", "INTERFACE_CHANGE"],
+  "verified_start": {"main_head": "b396c136b47d8fd60ca513a531cb96ce65293d20", "source": "Live origin/main and PR #58 exact accepted-head gates re-fetched before merge", "verified_at": "2026-07-16"},
+  "branch_pr": {"branch": "docs/121q28-embodied-cognitive-leap-writing-method-20260716", "pr_number": 58, "base": "main", "base_head": "b396c136b47d8fd60ca513a531cb96ce65293d20", "draft": false, "merged": true, "merge_commit": "83f15484385d256ea22e443cf2938717cfdd58a0"},
+  "head_binding": {"mode": "external_exact_head_attestation", "pr_number": 58, "authority": "pull_request_body_and_1111_receipt", "receipt_path": "agent-results/IGNITION-20260716-121Q28T-zhiyuan-writing-method-merge-current-closeout-result.md", "embedded_exact_current_head": false, "live_refetch_required": true, "explanation": "Tracked records bind accepted HEAD 19a013719a8e98319004c3b7ad9d0d4b29405351, review 4714216621 and the merge commit; exact final closeout HEAD, final-main workflows and live Pages observation are carried by GitHub and the 1111 receipt."},
+  "gap": {"summary": "Accepted 之元写作法 0.3.0 was still represented as an open candidate after review.", "evidence": ["Review 4714216621 accepted exact HEAD 19a013719a8e98319004c3b7ad9d0d4b29405351.", "PR #58 merged that HEAD through merge commit 83f15484385d256ea22e443cf2938717cfdd58a0."], "smallest_material_action": "Promote the merged method to Current across every triggered surface and attest final-main production Pages."},
+  "state_transition": {"subjects": ["Zhiyuan Writing Method 0.3.0", "L6 public-expression and feedback projection", "repository and production front doors"], "prior_state": "Accepted exact candidate pending merge and external closeout.", "proposed_state": "Current merged L6 capability with bounded whole-project correspondence and provenance-gated feedback.", "changed_dimensions": ["lifecycle_current_state", "identity", "usage", "handoff", "deployment_rendering"], "source_refs": ["external:pr_review:4714216621", "external:pr:58", "docs/publication/zhiyuan-writing-method.md", "reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md"], "maximum_claim_boundary": "Current L6 public-expression/feedback capability and synchronized interfaces only; no neuroscience, formal identity, causal proof, new architecture layer or truth permission."},
+  "claim_ceiling": "zhiyuan_writing_method_0_3_0_current / project_synchronization_complete",
+  "status": {"candidate": true, "ready_for_gpt_verification": true, "accepted": true, "merged": true, "current": true},
+  "synchronization_closure": {
+    "registry_path": "data/operations/synchronization-surfaces.json",
+    "registry_version": "1.0.0",
+    "surface_decisions": [
+      {"surface_id": "human.readme", "decision": "CHANGE", "reason": "Expose 0.3.0 as current.", "evidence_refs": ["README.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.pages_source", "decision": "NO_CHANGE_WITH_REASON", "reason": "Existing workflow builds the changed README and deploys production only from main.", "evidence_refs": ["README.md", ".github/workflows/pages.yml"], "validation_mode": "repository_build_validation", "derived_from": ["human.readme"]},
+      {"surface_id": "external.pages_homepage", "decision": "CHANGE", "reason": "Final-main deployment and cache-bypassed live fetch are required.", "evidence_refs": ["external:pr_body:58", "external:1111_receipt:IGNITION-20260716-121Q28T-zhiyuan-writing-method-merge-current-closeout-result.md", "external:live_refetch:pages-homepage"], "validation_mode": "post_merge_external_render_attestation", "derived_from": ["human.readme", "human.pages_source"]},
+      {"surface_id": "human.current_state", "decision": "CHANGE", "reason": "Advance lifecycle to Current.", "evidence_refs": ["docs/project-current-state.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.summary", "decision": "CHANGE", "reason": "Mark current navigation.", "evidence_refs": ["SUMMARY.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.usage", "decision": "CHANGE", "reason": "Present a current interface.", "evidence_refs": ["docs/USAGE.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.ai_guide", "decision": "CHANGE", "reason": "Present current bounded AI use.", "evidence_refs": ["docs/ai-assistant-usage-reference.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "ai.start", "decision": "CHANGE", "reason": "Advance cold-start lifecycle.", "evidence_refs": ["AI-START-HERE.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "agent.handoff", "decision": "CHANGE", "reason": "Advance handoff lifecycle.", "evidence_refs": ["AI-HANDOFF.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "machine.llms", "decision": "CHANGE", "reason": "Advance machine entrance.", "evidence_refs": ["llms.txt"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "release.changelog", "decision": "CHANGE", "reason": "Record acceptance, merge and Current closeout.", "evidence_refs": ["CHANGELOG.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "release.versioning", "decision": "CHANGE", "reason": "Record method 0.3.0 current state.", "evidence_refs": ["docs/VERSIONING.md"], "validation_mode": "repository_semantic_validation", "derived_from": []}
+    ],
+    "external_attestations": [{"surface_id": "external.pages_homepage", "stage": "post_merge", "status": "attested", "authority": "pull_request_body_and_1111_receipt", "evidence_refs": ["external:pr_body:58", "external:1111_receipt:IGNITION-20260716-121Q28T-zhiyuan-writing-method-merge-current-closeout-result.md", "external:live_refetch:pages-homepage"], "live_state_locally_verifiable": false}],
+    "unresolved_residue": [],
+    "external_verification_policy": "Production Pages must deploy from final main and the live homepage must be fetched without cache; exact evidence lives in GitHub and the 1111 receipt.",
+    "live_external_surfaces_verified": false
+  },
+  "completion_state": {"implementation_complete": true, "repository_synchronization_complete": true, "external_synchronization_required": true, "external_synchronization_attested": true, "project_synchronization_complete": true},
+  "impact_matrix": [
+    {"surface": "docs/publication/zhiyuan-writing-method.md", "decision": "CHANGE", "reason": "Advance lifecycle to Current without changing method semantics."},
+    {"surface": "ARCHITECTURE.md", "decision": "CHANGE", "reason": "Close Current propagation without adding a layer."},
+    {"surface": "data/operations/iterations/121Q28T.json", "decision": "CHANGE", "reason": "Preserve exact merge and closeout facts."},
+    {"surface": "121Q28/121Q28R/121Q28S records", "decision": "NO_CHANGE_WITH_REASON", "reason": "Preserve append-only correction and review history."},
+    {"surface": "Foundation, Function OS, MCF, PSD, ARN, Charter and truth contracts", "decision": "NO_CHANGE_WITH_REASON", "reason": "Lifecycle closeout adds no architecture or truth layer."},
+    {"surface": "121Q27 story", "decision": "NO_CHANGE_WITH_REASON", "reason": "Task explicitly freezes it."}
+  ],
+  "changed_surfaces": ["docs/publication/zhiyuan-writing-method.md", "templates/publication/zhiyuan-writing-spec.md", "docs/publication/zhiyuan-writing-examples.md", "ARCHITECTURE.md", "README.md", "docs/project-current-state.md", "SUMMARY.md", "docs/USAGE.md", "docs/ai-assistant-usage-reference.md", "AI-START-HERE.md", "AI-HANDOFF.md", "llms.txt", "CHANGELOG.md", "docs/VERSIONING.md", "data/operations/iterations/121Q28T.json", "reports/operations/121Q28T-completion-seal.json", "reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md"],
+  "explicitly_unaffected_surfaces": ["121Q28, 121Q28R and 121Q28S historical records", "121Q27 story and hash", "Foundation and L0-L5 truth contracts", "ITERATION.md and operation method 1.1.0", "MCF/PSD/ARN runtime and schemas", "Function OS", "Charter source"],
+  "required_synchronization_decisions": ["之元写作法 0.3.0 is Current.", "Same provenance does not mean identity.", "Feedback remains provenance-gated candidate input, not truth.", "Production Pages is individually attested."],
+  "schema_tools_tests_workflows_reports_changed": ["reports/operations/121Q28T-completion-seal.json", "reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md"],
+  "validation": {"local": [{"name": "human-front-door", "status": "PASS", "evidence": "Current lifecycle front doors are consistent."}, {"name": "iteration-sync", "status": "PASS", "evidence": "Method 1.1.0 registry-derived closure validates."}, {"name": "foundation-strict", "status": "PASS", "evidence": "Strict Foundation validation and tests pass."}], "remote": [], "external_exact_head_policy": {"required": true, "authority": "pull_request_body_and_1111_receipt", "required_workflows": ["foundation-validation", "function-os-ci"], "live_refetch_before_acceptance_or_merge": true}},
+  "rollback_strategy": "Revert only the Q28T Current closeout commit; preserve PR #58 merge and all append-only history.",
+  "remaining_limitations": ["Shared cognitive provenance is maintainer-declared design provenance, not scientific evidence.", "The whole-project correspondence remains a bounded homology candidate, not strict isomorphism.", "Reader feedback does not validate literary or substantive truth."],
+  "receipt_location": "agent-results/IGNITION-20260716-121Q28T-zhiyuan-writing-method-merge-current-closeout-result.md"
+}

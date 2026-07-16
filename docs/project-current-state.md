@@ -24,7 +24,7 @@ Q21R, Q22 and Q23 add current architecture/operation assets for Multiscale Causa
 
 121Q25 and Q25C are now current after PR #57 was independently accepted, merged and externally verified. Human front doors expose MCF, PSD, ARN and the iteration method, while method 1.1.0 derives whole-project propagation from the synchronization registry and separates implementation, repository, external and project completion. Q25B remains superseded candidate history; the method is an operation discipline, not a truth layer or proof of substantive correctness.
 
-121Q28S is an open `0.3.0` L6 candidate, not part of the current capability baseline. It positions Zhiyuan Writing Method as a public-expression projection and provenance-gated feedback interface of cognitive movements that the maintainer declares are shared with 点火 as a whole. Its correspondence to L0-L6, Q12-Q14, MCF, PSD, ARN, iteration and Charter is a structurally auditable homology candidate, not identity, neuroscience, formal proof or causality. Public work may return confusion, counterexamples or missing subjects as candidate sources/gaps only after provenance capture; praise and attention are not truth evidence. Until independent re-review, merge and applicable synchronization complete, it is not current and does not add an architecture/truth layer.
+121Q28T closes Zhiyuan Writing Method `0.3.0` as a current L6 public-expression and provenance-gated feedback capability after exact-head acceptance, merge and applicable synchronization. It projects cognitive movements that the maintainer declares are shared with 点火 as a whole. Its correspondence to L0-L6, Q12-Q14, MCF, PSD, ARN, iteration and Charter remains a structurally auditable homology candidate, not identity, neuroscience, formal proof or causality. Public work may return confusion, counterexamples or missing subjects as candidate sources/gaps only after provenance capture; praise and attention are not truth evidence. This current capability adds no architecture or truth layer.
 
 ## Current Shape
 
@@ -85,7 +85,7 @@ The project currently must not claim:
 - that high probability, posterior probability, Markov structure, stationarity, ergodicity, linearity or Gaussian assumptions are automatic;
 - that network adjacency, similarity, centrality, community detection, retrieval, self-report or behavior change proves truth, value, causality or internal learning mechanisms;
 - that Q24 method compliance proves any substantive claim true.
-- that the open 121Q28 publication-method candidate reproduces the maintainer's full creativity, defines universal aesthetic quality, or raises any lower-layer claim because a story is compelling.
+- that Zhiyuan Writing Method reproduces the maintainer's full creativity, defines universal aesthetic quality, or raises any lower-layer claim because a story is compelling.
 
 A current inability is also not a permanent impossibility. It only means the present artifacts do not support that claim at this commit.
 

@@ -4,9 +4,9 @@ English: **Zhiyuan Writing Method**
 
 Version: `0.3.0`
 
-Status: `DRAFT_CANDIDATE_PENDING_INDEPENDENT_REVIEW`
+Status: `CURRENT_MERGED_L6_CAPABILITY`
 
-Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. This candidate does not add an architecture or truth layer and cannot raise any L0-L5 claim.
+Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. This current capability does not add an architecture or truth layer and cannot raise any L0-L5 claim.
 
 ## 命名与内部定义
 
@@ -26,7 +26,7 @@ Operational location: L6 interpretation / application / publication. Generative 
 
 ## 与点火整体的同源认知关系
 
-准确状态是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`。
+当前有边界关系表述是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`。这里的 `candidate` 限定结构对应的认识地位，不表示方法仍处于未合并候选生命周期。
 
 点火与之元写作法都从维护者之元反复出现的认知运动中生长：从材料进入，暴露当前定义不能容纳的残余，跨尺度或跨领域建立有边界的候选联系，保留差异与历史，再用行动、反例和反馈回照旧定义。点火把这类运动约束成来源、命题、形式对象、机制、行动、验证、迭代和版本状态；之元写作法让这种运动在公共语言中被读者经历，并把作品暴露的新问题送回项目。
 
@@ -34,7 +34,7 @@ Operational location: L6 interpretation / application / publication. Generative 
 
 ### 操作位置与生成来源
 
-- 操作位置：之元写作法是 L6 公共表达候选能力，受 L0-L5、项目现状和价值宪章约束。
+- 操作位置：之元写作法是当前 L6 公共表达与 provenance-gated feedback 能力，受 L0-L5、项目现状和价值宪章约束。
 - 生成来源：它不是孤立长在 L6 上，而与点火整体共享维护者声明的认知来源。
 - 证据权限：仍不高于 L6；同源陈述是 design provenance 和可审计结构对应候选，不是脑科学、心理学或本体论事实。
 - 反馈作用：作品和读者反应可以暴露候选 source、gap 或现实反馈，但必须先登记 provenance，不能直接升级真值。
@@ -92,7 +92,7 @@ Operational location: L6 interpretation / application / publication. Generative 
 
 维护者之元的认知方式和作品提供方法原型。点火从具体作品、失败反例和维护者反馈中抽取可描述、可审计、可迁移的部分。其他人或 AI 可以使用这些纪律，但使用方法不等于复制作者本人；模板不能生成作者的经历、价值选择、审美判断、创造压力或真正的下一层。
 
-感染力、读者共鸣、模板完成或“像作者”不能提高事实、因果、同构或价值 claim。该候选不是普遍最优审美定律，也不是文学质量验证器。
+感染力、读者共鸣、模板完成或“像作者”不能提高事实、因果、同构或价值 claim。该方法不是普遍最优审美定律，也不是文学质量验证器。
 
 ## 起始承载点
 

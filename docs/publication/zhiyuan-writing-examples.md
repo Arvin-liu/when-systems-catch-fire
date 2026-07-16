@@ -1,7 +1,7 @@
 # 之元写作法：内部范例与反例
 
 Version: `0.3.0`
-Status: `INTERNAL_CANDIDATE_EXAMPLES`
+Status: `CURRENT_INTERNAL_EXAMPLES`
 
 本文只说明方法原型、反例、同源设计来源与边界，不把作品当作科学证据、普遍审美证明、严格同构或可复制的固定结构。维护者自述属于 design provenance，不是脑科学证据；项目术语不得粗暴解释掉作品自身。
 

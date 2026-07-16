@@ -1,7 +1,7 @@
 # 之元写作法故事规格
 
 Method version: `0.3.0`
-Status: `CANDIDATE_BACKSTAGE_TEMPLATE`
+Status: `CURRENT_BACKSTAGE_TEMPLATE`
 
 本规格用于后台生成与审计，不是前台提纲。字段顺序不是段落顺序；允许折返、留空、合并、分叉和 `UNNAMED`，不得把它变成固定层数、五段式或隐蔽分幕。
 

@@ -18,9 +18,9 @@
 
 无法无损形式化时，使用 NATURAL_LANGUAGE_CANDIDATE 或 ARGUMENT_SCHEMA，并写明原因。
 
-### L6 候选写作接口：心智层级跃迁
+### L6 当前公共表达与反馈接口：之元写作法
 
-121Q28S 提供等待独立复审的 `0.3.0` 候选接口：[方法正文](./publication/zhiyuan-writing-method.md)与[后台规格](../templates/publication/zhiyuan-writing-spec.md)。先声明实际使用的 L0-L5、Q12-Q14、MCF、PSD、ARN、Atlas、Charter 或 current-state 工件，区分来源与启发并设置 claim ceiling；再选择要让读者经历的认知运动。不得把项目对应表写成正文目录。
+之元写作法 `0.3.0` 是当前 L6 接口：[方法正文](./publication/zhiyuan-writing-method.md)与[后台规格](../templates/publication/zhiyuan-writing-spec.md)。先声明实际使用的 L0-L5、Q12-Q14、MCF、PSD、ARN、Atlas、Charter 或 current-state 工件，区分来源与启发并设置 claim ceiling；再选择要让读者经历的认知运动。不得把项目对应表写成正文目录。
 
 向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁和伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN、Atlas 或迭代流程。点赞、赞美、传播和多 AI 共识只能是体验／传播数据。
 

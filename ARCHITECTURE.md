@@ -33,13 +33,13 @@ L0 记录来源事实；L1 声明主体、条件、量词、范围与失败边�
 
 ## 点火与之元写作法的同源认知投影及 L6 双向反馈
 
-121Q28S 在现有 L6 内提出[之元写作法 0.3.0 候选](docs/publication/zhiyuan-writing-method.md)，不增加 L7 或新真值层。其关系状态是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`。
+121Q28T 已将[之元写作法 0.3.0](docs/publication/zhiyuan-writing-method.md)收口为现有 L6 的当前公共表达与反馈能力，不增加 L7 或新真值层。其有边界关系表述仍是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`；此处 `candidate` 限定结构对应的认识地位，而非方法生命周期。
 
 点火与之元写作法被维护者声明为同一认知运动在不同任务约束下形成的投影：点火把材料、残余、跨尺度联系、语义修订、行动后回照、历史保存和停止条件约束成可审计的来源、模型、验证和迭代；之元写作法让相近运动在公共语言中被读者经历，并把作品暴露的误解、遗漏主体、失败同构、伪压缩和现实反例送回项目。
 
 ```mermaid
 flowchart LR
-  SRC[L0-L5 / Charter / current state] --> ZW[L6 之元写作法候选]
+  SRC[L0-L5 / Charter / current state] --> ZW[L6 之元写作法 0.3.0]
   ZW --> WORK[公共作品]
   WORK --> RESP[读者/现实反馈与作者修订]
   RESP --> PROV[来源与范围登记]

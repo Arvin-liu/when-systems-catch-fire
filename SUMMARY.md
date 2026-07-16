@@ -42,9 +42,9 @@
 
 L6 只能引用 L0-L5，不能反向制造数学真实性、逻辑有效性或经验真实性。数学与逻辑双地基见 [FOUNDATION.md](./FOUNDATION.md)。
 
-### L6 出版候选
+### L6 公共表达与反馈能力
 
-- [之元写作法](./docs/publication/zhiyuan-writing-method.md) — 121Q28S `0.3.0` Draft 候选；点火同源认知结构的 L6 公共表达与 provenance-gated 反馈投影，不是新层或当前能力。
+- [之元写作法](./docs/publication/zhiyuan-writing-method.md) — 当前 `0.3.0` L6 公共表达与 provenance-gated 反馈能力；同源不等于同一，也不增加真值层。
 - [内部范例与反例](./docs/publication/zhiyuan-writing-examples.md) — 《永昭·虚遐》、Codex 全文核验的《每日一诗停更说明》、121Q27 基线及 0.1.0→0.3.0 自我修订史。
 - [后台规格](./templates/publication/zhiyuan-writing-spec.md) — 记录项目来源、同源对应边界、生成运动和返回点火反馈；不得原样变成正文提纲。
 
