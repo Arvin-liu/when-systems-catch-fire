@@ -83,7 +83,7 @@ llms.txt
 
 L6 公共写作可以使用当前[之元写作法 `0.3.0`](./publication/zhiyuan-writing-method.md)和[后台规格](../templates/publication/zhiyuan-writing-spec.md)。AI 先区分实际点火来源与启发，保存 claim ceiling、不可映射残余和主体，再生成公共表达。试读／发布反馈须记录主体、渠道、时间、原文范围和解释限制，才可作为候选 source／gap 返回适用项目流程。不得把同源写成认知科学事实，不得把项目对应表写成文章目录，也不得用共鸣验证文学或真值。
 
-已进入仓库的成果从[人类索引](./publication/zhiyuan-writing-showcase.md)与 `data/publication/zhiyuan-writing-showcase.json` 读取。AI 不得只抓取作品标题：必须同时核对案例来源链、点火分析、方法版本、review provenance 与 claim ceiling；registry 是展示与追踪接口，不是事实或文学质量注册表。
+当前成果从[人类索引](./publication/zhiyuan-writing-showcase.md)与 `data/publication/zhiyuan-writing-showcase.json` 读取。AI 不得只抓取作品标题：必须同时核对案例来源链、点火分析、方法版本、review provenance 与 claim ceiling；registry 是展示与追踪接口，不是事实或文学质量注册表。
 
 ## 使用边界
 

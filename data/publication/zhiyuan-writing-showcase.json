@@ -1,6 +1,6 @@
 {
   "registry_version": "1.0.0",
-  "registry_status": "CANDIDATE_READY_FOR_GPT_REVIEW",
+  "registry_status": "CURRENT_MERGED_L6_SHOWCASE_INTERFACE",
   "purpose": "Machine-readable registry for provenance-linked Zhiyuan Writing Method public-expression outcomes; not a literary-quality or truth registry.",
   "homepage_limit": 3,
   "sort": {

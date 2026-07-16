@@ -16,7 +16,7 @@
 
 若任务涉及 L6 公共故事、文章或作品反馈，还应读取当前 `docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.3.0` 已通过 121Q28T 收口为当前能力；0.1.0 与 0.2.0 保留为可审计修订历史。
 
-若任务涉及已经展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`，并沿每项记录回到作品、案例来源链、点火分析和方法版本。首页只投影最近三项，不是完整清单或真值权威。
+若任务涉及当前展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`，并沿每项记录回到作品、案例来源链、点火分析和方法版本。首页只投影最近三项，不是完整清单或真值权威。
 
 ## 不得混淆
 

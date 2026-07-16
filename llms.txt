@@ -12,7 +12,7 @@ Architecture:
 L0 source and evidence -> L1 controlled semantic claims -> L2 formal objects -> L3 logical arguments -> L4 mathematical models and proofs -> L5 validation and validity -> L6 interpretation, application and publication.
 L6 must cite L0-L5 and cannot create mathematical truth.
 Zhiyuan Writing Method 0.3.0 is a current L6 public-expression and provenance-gated feedback capability after 121Q28T closeout. It projects cognitive movements that the maintainer declares are shared with 点火 as a whole. The structural homology remains a bounded candidate claim, not identity, neuroscience, formal proof, causality or a new layer. Feedback becomes only candidate source/gap after provenance capture; praise and attention are not truth evidence.
-Zhiyuan Writing Method showcase candidates are indexed at docs/publication/zhiyuan-writing-showcase.md and data/publication/zhiyuan-writing-showcase.json. Each entry binds work, case provenance, point-fire analysis, method version, review status and claim ceiling. The registry is a presentation/provenance interface, not a truth or literary-quality registry; README displays at most the latest three.
+Current Zhiyuan Writing Method showcase outcomes are indexed at docs/publication/zhiyuan-writing-showcase.md and data/publication/zhiyuan-writing-showcase.json. Each entry binds work, case provenance, point-fire analysis, method version, review status and claim ceiling. The registry is a presentation/provenance interface, not a truth or literary-quality registry; README displays at most the latest three.
 Mathematics and logic constrain each other. Formula, logical validity, proof, evidence and workflow completion are different things.
 
 Core classifications:

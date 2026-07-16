@@ -45,7 +45,7 @@ L6 只能引用 L0-L5，不能反向制造数学真实性、逻辑有效性或�
 ### L6 公共表达与反馈能力
 
 - [之元写作法](./docs/publication/zhiyuan-writing-method.md) — 当前 `0.3.0` L6 公共表达与 provenance-gated 反馈能力；同源不等于同一，也不增加真值层。
-- [之元写作法成果](./docs/publication/zhiyuan-writing-showcase.md) — 人类成果总索引；每项回链作品、案例来源、点火分析与方法版本。
+- [之元写作法成果](./docs/publication/zhiyuan-writing-showcase.md) — 当前人类成果总索引；每项回链作品、案例来源、点火分析与方法版本。
 - [《当一支军队开始相信自己的背影》](./docs/publication/works/when-an-army-believes-its-own-back.md) — 第一项正式成果正文。
 - [内部范例与反例](./docs/publication/zhiyuan-writing-examples.md) — 《永昭·虚遐》、Codex 全文核验的《每日一诗停更说明》、121Q27 基线及 0.1.0→0.3.0 自我修订史。
 - [后台规格](./templates/publication/zhiyuan-writing-spec.md) — 记录项目来源、同源对应边界、生成运动和返回点火反馈；不得原样变成正文提纲。

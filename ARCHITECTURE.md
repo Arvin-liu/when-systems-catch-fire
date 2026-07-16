@@ -57,7 +57,7 @@ flowchart LR
 
 ### L6 成果展示与来源链投影
 
-121Q30 Draft 候选把成果展示建模为 L6 内部的可追溯接口，不增加架构层：人类索引负责完整导航，机器 registry 负责排序和路径绑定，正式作品负责公共表达，案例页负责来源与版权边界，分析报告负责 claim ceiling 与竞争解释。README 只投影 registry 最近三项，不成为第二份成果权威。
+121Q30T 已将成果展示收口为当前 L6 内部的可追溯接口，不增加架构层：人类索引负责完整导航，机器 registry 负责排序和路径绑定，正式作品负责公共表达，案例页负责来源与版权边界，分析报告负责 claim ceiling 与竞争解释。README 只投影 registry 最近三项，不成为第二份成果权威。
 
 `case provenance → point-fire analysis → accepted work → method version`
 

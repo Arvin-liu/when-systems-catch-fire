@@ -1,0 +1,50 @@
+{
+  "method_version": "1.1.0",
+  "task_id": "121Q30T",
+  "completion_seal_path": "reports/operations/121Q30T-completion-seal.json",
+  "change_classification": ["RELEASE_OR_CURRENT_STATE_SYNC", "INTERFACE_CHANGE"],
+  "verified_start": {"main_head": "75630550f024f0de58655b3bcc108a765e100d01", "source": "PR #59 exact accepted-head gates re-fetched before merge", "verified_at": "2026-07-17"},
+  "branch_pr": {"branch": "agent/121q30-homepage-zhiyuan-showcase", "pr_number": 59, "base": "main", "base_head": "75630550f024f0de58655b3bcc108a765e100d01", "draft": false, "merged": true, "merge_commit": "0dfebc661668555a2636f9f59267fd7905368dca"},
+  "head_binding": {"mode": "external_exact_head_attestation", "pr_number": 59, "authority": "pull_request_body_and_1111_receipt", "receipt_path": "agent-results/IGNITION-20260716-121Q30T-homepage-showcase-merge-current-closeout-result.md", "embedded_exact_current_head": false, "live_refetch_required": true, "explanation": "Tracked records bind accepted HEAD, review and merge; exact closeout HEAD, workflows and live Pages evidence remain external attestations."},
+  "gap": {"summary": "The accepted showcase remained represented as a Draft candidate after independent review.", "evidence": ["Review 4715686225 accepted exact HEAD fb550c50dc5ebc385dcebb3b9aa8c768458c6d8c.", "PR #59 merged it through merge commit 0dfebc661668555a2636f9f59267fd7905368dca."], "smallest_material_action": "Propagate Current lifecycle and attest final-main production Pages without changing content or method semantics."},
+  "state_transition": {"subjects": ["homepage information architecture", "Zhiyuan Writing Method showcase", "repository and production front doors"], "prior_state": "Accepted exact candidate pending merge and external closeout.", "proposed_state": "Current merged L6 presentation/provenance interface.", "changed_dimensions": ["lifecycle_current_state", "identity", "usage", "handoff", "deployment_rendering"], "source_refs": ["external:pr_review:4715686225", "external:pr:59", "reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md"], "maximum_claim_boundary": "Current presentation/provenance interface only; no method upgrade, literary proof, historical causal identification, architecture layer or truth permission."},
+  "claim_ceiling": "homepage_architecture_and_zhiyuan_showcase_current / project_synchronization_complete",
+  "status": {"candidate": true, "ready_for_gpt_verification": true, "accepted": true, "merged": true, "current": true},
+  "synchronization_closure": {
+    "registry_path": "data/operations/synchronization-surfaces.json",
+    "registry_version": "1.0.0",
+    "surface_decisions": [
+      {"surface_id": "human.readme", "decision": "CHANGE", "reason": "Expose the showcase as current while preserving homepage order.", "evidence_refs": ["README.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.pages_source", "decision": "NO_CHANGE_WITH_REASON", "reason": "Existing workflow builds README and deploys only main.", "evidence_refs": ["README.md", ".github/workflows/pages.yml"], "validation_mode": "repository_build_validation", "derived_from": ["human.readme"]},
+      {"surface_id": "external.pages_homepage", "decision": "CHANGE", "reason": "Final-main deployment and cache-bypassed live fetch required.", "evidence_refs": ["external:pr_body:59", "external:1111_receipt:IGNITION-20260716-121Q30T-homepage-showcase-merge-current-closeout-result.md", "external:live_refetch:pages-homepage"], "validation_mode": "post_merge_external_render_attestation", "derived_from": ["human.readme", "human.pages_source"]},
+      {"surface_id": "human.current_state", "decision": "CHANGE", "reason": "Advance lifecycle to Current.", "evidence_refs": ["docs/project-current-state.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.summary", "decision": "CHANGE", "reason": "Mark current navigation.", "evidence_refs": ["SUMMARY.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.usage", "decision": "CHANGE", "reason": "Present current showcase use.", "evidence_refs": ["docs/USAGE.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.ai_guide", "decision": "CHANGE", "reason": "Present current bounded AI use.", "evidence_refs": ["docs/ai-assistant-usage-reference.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "ai.start", "decision": "CHANGE", "reason": "Advance cold-start lifecycle.", "evidence_refs": ["AI-START-HERE.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "agent.handoff", "decision": "CHANGE", "reason": "Advance handoff lifecycle.", "evidence_refs": ["AI-HANDOFF.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "machine.llms", "decision": "CHANGE", "reason": "Advance machine entrance.", "evidence_refs": ["llms.txt"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "release.changelog", "decision": "CHANGE", "reason": "Record merge and Current closeout.", "evidence_refs": ["CHANGELOG.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "release.versioning", "decision": "CHANGE", "reason": "Record current showcase lifecycle without version upgrade.", "evidence_refs": ["docs/VERSIONING.md"], "validation_mode": "repository_semantic_validation", "derived_from": []}
+    ],
+    "external_attestations": [{"surface_id": "external.pages_homepage", "stage": "post_merge", "status": "attested", "authority": "pull_request_body_and_1111_receipt", "evidence_refs": ["external:pr_body:59", "external:1111_receipt:IGNITION-20260716-121Q30T-homepage-showcase-merge-current-closeout-result.md", "external:live_refetch:pages-homepage"], "live_state_locally_verifiable": false}],
+    "unresolved_residue": [],
+    "external_verification_policy": "Production Pages must deploy final main and live homepage must be fetched without cache; exact evidence lives in GitHub and the 1111 receipt.",
+    "live_external_surfaces_verified": false
+  },
+  "completion_state": {"implementation_complete": true, "repository_synchronization_complete": true, "external_synchronization_required": true, "external_synchronization_attested": true, "project_synchronization_complete": true},
+  "impact_matrix": [
+    {"surface": "README.md", "decision": "CHANGE", "reason": "Advance 121Q30 lifecycle to Current while preserving homepage order."},
+    {"surface": "data/publication/zhiyuan-writing-showcase.json", "decision": "CHANGE", "reason": "Advance registry lifecycle to Current."},
+    {"surface": "data/operations/iterations/121Q30.json and candidate reports", "decision": "NO_CHANGE_WITH_REASON", "reason": "Preserve append-only candidate history."},
+    {"surface": "Q29R work, restricted source, method 0.3.0 and architecture/truth layers", "decision": "NO_CHANGE_WITH_REASON", "reason": "Explicitly frozen or outside lifecycle scope."}
+  ],
+  "changed_surfaces": ["README.md", "ARCHITECTURE.md", "docs/project-current-state.md", "SUMMARY.md", "docs/USAGE.md", "docs/ai-assistant-usage-reference.md", "AI-START-HERE.md", "AI-HANDOFF.md", "llms.txt", "CHANGELOG.md", "docs/VERSIONING.md", "docs/publication/zhiyuan-writing-showcase.md", "data/publication/zhiyuan-writing-showcase.json", "data/operations/iterations/121Q30T.json", "reports/operations/121Q30T-completion-seal.json", "reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md"],
+  "explicitly_unaffected_surfaces": ["121Q30 candidate records", "Q29R accepted work bytes", "restricted Get note text", "Zhiyuan Writing Method 0.3.0", "Foundation and truth contracts", "Function OS", "MCF/PSD/ARN", "Charter", "iteration method 1.1.0"],
+  "required_synchronization_decisions": ["Showcase lifecycle is Current.", "Homepage order and fold behavior remain unchanged.", "README projects at most three registry items.", "Five showcase responsibilities remain distinct.", "Q29R text and restricted-source boundary remain frozen."],
+  "schema_tools_tests_workflows_reports_changed": ["data/operations/iterations/121Q30T.json", "reports/operations/121Q30T-completion-seal.json", "reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md"],
+  "validation": {"local": [{"name": "showcase-and-front-door", "status": "PASS", "evidence": "Homepage order, folds, registry, links, Q29R hash and path leakage validate."}, {"name": "iteration-sync", "status": "PASS", "evidence": "Registry-derived closure validates."}, {"name": "foundation-and-function-os", "status": "PASS", "evidence": "Required local suites pass."}], "remote": [], "external_exact_head_policy": {"required": true, "authority": "pull_request_body_and_1111_receipt", "required_workflows": ["foundation-validation", "function-os-ci"], "live_refetch_before_acceptance_or_merge": true}},
+  "rollback_strategy": "Revert only the 121Q30T Current closeout commit; preserve PR #59 merge and 121Q30 history.",
+  "remaining_limitations": ["One accepted work does not prove universal method effectiveness.", "Q26 causal identification and external historical verification remain pending.", "Presentation provenance does not confer truth."],
+  "receipt_location": "agent-results/IGNITION-20260716-121Q30T-homepage-showcase-merge-current-closeout-result.md"
+}
