@@ -3,6 +3,10 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from .diff import network_diff
+from .renderer import render_summary
+from .temporal import time_respecting
+
 
 ROOT = Path(__file__).resolve().parents[2]
 EXAMPLE_DIR = ROOT / "data" / "architecture" / "adaptive-relational-network" / "examples"
@@ -14,37 +18,6 @@ def load_network(path: Path) -> dict:
 
 def iter_network_paths() -> list[Path]:
     return sorted(p for p in EXAMPLE_DIR.glob("*.json") if p.name != "embedding-probe.json")
-
-
-def time_respecting(network: dict, relation_path: list[str]) -> bool:
-    rels = {r["relation_id"]: r for r in network.get("relations", [])}
-    end = None
-    for rid in relation_path:
-        rel = rels[rid]
-        start = rel["temporal_bounds"]["start"]
-        if end is not None and start < end:
-            return False
-        end = rel["temporal_bounds"]["end"]
-    return True
-
-
-def network_diff(before: dict, after: dict) -> dict:
-    bn = {n["node_id"] for n in before.get("nodes", [])}
-    an = {n["node_id"] for n in after.get("nodes", [])}
-    br = {r["relation_id"] for r in before.get("relations", [])}
-    ar = {r["relation_id"] for r in after.get("relations", [])}
-    return {
-        "added_nodes": sorted(an - bn),
-        "removed_nodes": sorted(bn - an),
-        "added_relations": sorted(ar - br),
-        "removed_relations": sorted(br - ar),
-        "claim_ceiling": "NetworkDiff is representation diff only, not proof that reality changed."
-    }
-
-
-def render_summary(network: dict) -> str:
-    spec = network["network_spec"]
-    return f"{spec['network_id']}: {len(network['nodes'])} nodes, {len(network['relations'])} relations, claim ceiling: {spec['claim_ceiling']}"
 
 
 def validate_network(network: dict) -> list[str]:
@@ -122,4 +95,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
