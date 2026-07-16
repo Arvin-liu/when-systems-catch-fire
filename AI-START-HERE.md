@@ -32,6 +32,8 @@
 - Multiscale Causal Fabric、Probabilistic System Dynamics 和 Adaptive Relational Network 是当前建模/投影能力，不是新真值层。
 - 关系网络的邻接、相似性、中心性、社群、检索和行为变化不能升级为真理、价值、因果或内部学习机制证明。
 - 迭代方法只能约束操作纪律，不能证明实质结论正确。
+- 迭代方法 1.1.0 把变更视为全项目状态转换。必须从 `data/operations/synchronization-surfaces.json` 推导人类 README、Pages、项目现状、人类 AI 指南、Agent/机器入口和版本记录的传播闭包，不能只凭 Agent 记忆挑文件。
+- `implementation_complete` 不等于 `project_synchronization_complete`。Draft Pages 只构建并检查产物；生产首页部署和实时读取是合并后的外部同步义务。
 - 正向评价词必须绑定对象、判据、版本、证据和边界。
 - AI 输出不能作为唯一校准源；仓库工件、外部来源、CI、现实反馈、人类判断与独立审查要分开记录。
 

@@ -1,6 +1,6 @@
 # 点火迭代操作法 / Ignition Iteration Method
 
-Method version: `1.0.0`
+Method version: `1.1.0`
 
 Status: canonical operation method. This method governs how 点火 changes itself. It is not a truth layer, proof system, value charter, causal model or substitute for external evidence.
 
@@ -90,6 +90,32 @@ For each iteration, decide whether these surfaces change:
 
 Use `CHANGE`, `NO_CHANGE_WITH_REASON` or `NOT_APPLICABLE`. A capability, identity, usage, current-state or handoff change must synchronize the front-door/current-state surfaces or record validator-enforced reasons.
 
+### 5.1 Whole-Project State Transition
+
+An iteration is a repository state transition, not merely a local file edit. A change to capability, identity, usage, handoff, lifecycle/current state, governance, deployment/rendering or this operation method must propagate to every affected declared surface. The project is not synchronized while any required human, AI, Agent, machine, current-state, version/history or deployment surface still projects the superseded state.
+
+Not every registered surface must change. Every applicable surface must receive exactly one explicit `CHANGE`, `NO_CHANGE_WITH_REASON` or `NOT_APPLICABLE` decision with evidence. The canonical coverage topology is `data/operations/synchronization-surfaces.json`, validated by `schemas/operations/synchronization-surfaces.schema.json`. That registry describes synchronization obligations only; it is not a second store of substantive project truth.
+
+### 5.2 Propagation Closure
+
+Every method 1.1.0 iteration declares state-transition subjects, prior/proposed states, changed dimensions, source references and a claim boundary. Required assessments are derived from the synchronization registry and follow its declared dependency/derivation relations until the closure has no missing decision.
+
+Human-visible entrances are first-class project surfaces. Capability, identity, current-state, usage, handoff or deployment changes must assess `README.md`, the GitHub Pages source/workflow and rendered homepage, `docs/project-current-state.md`, `SUMMARY.md`, `docs/USAGE.md`, `docs/ai-assistant-usage-reference.md`, `CHANGELOG.md`, `docs/VERSIONING.md`, `AI-START-HERE.md`, `AI-HANDOFF.md`, `llms.txt` and relevant operation templates whenever the registry triggers them.
+
+Derived and external surfaces remain distinct from repository sources. GitHub Pages is derived from `README.md` through `.github/workflows/pages.yml`, but its built artifact and production rendering require their own evidence. A local validator may require an external policy; it must always report that live external truth was not locally verified.
+
+### 5.3 Completion Levels
+
+- `implementation_complete`: the local artifact, schema, tool and test work exists and passes its relevant local checks.
+- `repository_synchronization_complete`: every registry-required repository surface has a validated decision and evidence, and repository-derived surfaces have been built where required.
+- `external_synchronization_required`: at least one applicable rendered/deployed surface requires external evidence.
+- `external_synchronization_attested`: the required exact external evidence has been recorded by its declared authority.
+- `project_synchronization_complete`: repository synchronization is complete and every required external synchronization has been attested.
+
+Implementation completion alone cannot make a task ready, accepted, merged, current or closed. An unaccepted ready candidate requires implementation and repository synchronization complete. External obligations must be attested in the mutable PR body and independent 1111 receipt before independent acceptance. `current` additionally requires merge lifecycle and post-merge live verification.
+
+If any applicable registered surface still describes the superseded state, or lacks a validated no-change decision, the iteration is not project-synchronization-complete and cannot be called current or closed.
+
 ## 6. Branch And Commit Discipline
 
 Use an isolated branch and Draft PR unless the task is an exact-head merge closeout.
@@ -134,6 +160,8 @@ Run the narrowest relevant ladder first, then expand:
 
 No failed lower rung can be repaired by a higher-rung narrative.
 
+For Draft Pages work, build and inspect the exact-head artifact without deploying the unmerged branch to the production homepage. Production Pages deployment and live fetch are post-merge external synchronization obligations.
+
 ## 10. State Machine
 
 - `Candidate`: implemented in a branch or Draft PR.
@@ -177,6 +205,8 @@ Git commit SHA values and their post-commit CI run IDs are not self-embeddable: 
 
 Exact-final-HEAD CI remains mandatory. After the final commit is pushed and both required workflows finish, the mutable PR body and independent 1111 receipt record the exact HEAD, run IDs and conclusions. Independent acceptance and merge must re-fetch that live GitHub state. A repository-local validator PASS means only `repository_local_consistency_only`; it never substitutes for remote-truth verification.
 
+Method 1.1.0 receipts also record state-transition subjects and dimensions, registry-derived required surfaces, every decision and evidence reference, implementation and repository synchronization status, external obligations and attestations, unresolved synchronization residue, and why the iteration is or is not ready/current/closed. Green CI alone never closes propagation.
+
 ## 13. Method Self-Iteration
 
 This method may change only through itself.
@@ -191,3 +221,5 @@ A method-change iteration must record:
 - changed templates, schemas, validators and front-door references.
 
 Do not silently rewrite prior method history. Keep old receipts and reports auditable.
+
+Method 1.0.0 manifests and seals remain historical valid inputs. Method 1.1.0 adds a declared `completion_seal_path`, structured state transition, registry-derived synchronization closure and completion state. Compatibility must not allow a historical task-specific path to validate a different task's seal.

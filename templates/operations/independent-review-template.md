@@ -21,6 +21,10 @@ Checks:
 - Candidate / accepted / merged / current states are not inflated.
 - Claim ceiling is explicit and respected.
 - Impact matrix covers README, current state, AI handoff, schemas, tools, tests, CI, reports and frozen surfaces.
+- Registry-derived propagation closure covers every applicable human, AI/Agent, machine, version/history and deployment surface.
+- Implementation completion is separated from repository, external and whole-project synchronization completion.
+- Every no-change decision includes evidence; green CI alone does not close propagation.
+- Draft Pages evidence comes from the exact-head build artifact, not an unmerged production deployment.
 - Repository-local validator PASS is limited to artifact consistency and does not claim live GitHub truth.
 - Exact HEAD and both required CI runs are recorded in the PR body and independent receipt.
 - PR state, exact HEAD and CI conclusions were freshly re-fetched from GitHub before this decision.

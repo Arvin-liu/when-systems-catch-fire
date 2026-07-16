@@ -1,7 +1,19 @@
 import copy
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 
-from tools.validate_iteration_sync import validate_all, validate_custom
+from tools.validate_iteration_sync import (
+    REGISTRY_PATH,
+    ROOT,
+    infer_seal_path,
+    load_json,
+    validate_all,
+    validate_custom,
+    validate_manifest_bindings,
+    validate_manifest_schema,
+    validate_registry,
+)
 
 
 FRONT_DOORS = [
@@ -304,6 +316,125 @@ class IterationSyncTests(unittest.TestCase):
         manifest["status"]["current"] = True
         with self.assertRaisesRegex(AssertionError, "current cannot be true|Draft cannot"):
             validate_custom(manifest, __file__, valid_seal())
+
+    def q25_documents(self):
+        registry = validate_registry(load_json(REGISTRY_PATH))
+        q25_path = ROOT / "data/operations/iterations/121Q25.json"
+        q25b_path = ROOT / "data/operations/iterations/121Q25B.json"
+        q25 = load_json(q25_path)
+        q25b = load_json(q25b_path)
+        q25_seal = load_json(infer_seal_path(q25))
+        q25b_seal = load_json(infer_seal_path(q25b))
+        return registry, q25_path, q25, q25_seal, q25b_path, q25b, q25b_seal
+
+    def test_actual_q25_method_100_binds_its_own_seal(self):
+        registry, path, manifest, seal, *_ = self.q25_documents()
+        validate_manifest_schema(manifest, path)
+        validate_custom(manifest, path, seal, registry)
+
+    def test_actual_q25b_method_110_self_hosted_closure(self):
+        registry, *_, path, manifest, seal = self.q25_documents()
+        validate_manifest_schema(manifest, path)
+        validate_custom(manifest, path, seal, registry)
+
+    def test_missing_q25_seal_is_rejected(self):
+        registry, q25_path, q25, *_ = self.q25_documents()
+        missing = ROOT / "reports/operations/missing-Q25-seal.json"
+        with patch("tools.validate_iteration_sync.infer_seal_path", return_value=missing):
+            with self.assertRaisesRegex(AssertionError, "missing completion seal"):
+                validate_manifest_bindings([(q25_path, q25)])
+
+    def test_q25_seal_claim_mismatch_is_rejected(self):
+        registry, path, manifest, seal, *_ = self.q25_documents()
+        seal["phase_b"]["claim_ceiling"] = "legacy-q24-cannot-satisfy-q25"
+        with self.assertRaisesRegex(AssertionError, "seal claim ceiling mismatch"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_q25_seal_lifecycle_mismatch_is_rejected(self):
+        registry, path, manifest, seal, *_ = self.q25_documents()
+        seal["lifecycle"]["ready_for_gpt_verification"] = False
+        with self.assertRaisesRegex(AssertionError, "seal lifecycle mismatch"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_duplicate_task_binding_is_rejected(self):
+        _, path, manifest, *_ = self.q25_documents()
+        with self.assertRaisesRegex(AssertionError, "duplicate task binding"):
+            validate_manifest_bindings([(path, manifest), (Path("duplicate.json"), copy.deepcopy(manifest))])
+
+    def test_duplicate_seal_binding_is_rejected(self):
+        _, q25_path, q25, _, q25b_path, q25b, _ = self.q25_documents()
+        q25b["completion_seal_path"] = q25["completion_seal_path"]
+        with self.assertRaisesRegex(AssertionError, "duplicate completion seal binding"):
+            validate_manifest_bindings([(q25_path, q25), (q25b_path, q25b)])
+
+    def assert_missing_surface_rejected(self, surface_id):
+        registry, *_, path, manifest, seal = self.q25_documents()
+        manifest["synchronization_closure"]["surface_decisions"] = [
+            item for item in manifest["synchronization_closure"]["surface_decisions"]
+            if item["surface_id"] != surface_id
+        ]
+        with self.assertRaisesRegex(AssertionError, "missing registry-derived surface decisions"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_capability_or_method_change_requires_human_front_doors(self):
+        for surface_id in ("human.readme", "human.current_state", "human.ai_guide"):
+            with self.subTest(surface_id=surface_id):
+                self.assert_missing_surface_rejected(surface_id)
+
+    def test_change_requires_ai_and_agent_machine_assessments(self):
+        for surface_id in ("ai.start", "agent.handoff", "machine.llms"):
+            with self.subTest(surface_id=surface_id):
+                self.assert_missing_surface_rejected(surface_id)
+
+    def test_pages_source_change_requires_rendered_pages_obligation(self):
+        self.assert_missing_surface_rejected("external.pages_homepage")
+
+    def test_no_change_without_evidence_is_rejected(self):
+        registry, *_, path, manifest, seal = self.q25_documents()
+        decision = next(item for item in manifest["synchronization_closure"]["surface_decisions"] if item["decision"] == "NO_CHANGE_WITH_REASON")
+        decision["evidence_refs"] = []
+        with self.assertRaisesRegex(AssertionError, "lacks evidence references"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_implementation_complete_but_repository_incomplete_cannot_be_ready(self):
+        registry, *_, path, manifest, seal = self.q25_documents()
+        manifest["synchronization_closure"]["unresolved_residue"] = ["stale human projection"]
+        manifest["completion_state"]["repository_synchronization_complete"] = False
+        with self.assertRaisesRegex(AssertionError, "repository synchronization incomplete candidate cannot be ready"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_external_unattested_cannot_be_accepted_or_current(self):
+        registry, *_, path, manifest, seal = self.q25_documents()
+        manifest["status"]["accepted"] = True
+        manifest["branch_pr"]["draft"] = False
+        seal["lifecycle"] = copy.deepcopy(manifest["status"])
+        with self.assertRaisesRegex(AssertionError, "accepted/current lifecycle requires project synchronization complete"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_local_validator_cannot_claim_live_rendered_verification(self):
+        registry, *_, path, manifest, seal = self.q25_documents()
+        manifest["synchronization_closure"]["live_external_surfaces_verified"] = True
+        with self.assertRaisesRegex(AssertionError, "local validator cannot claim live rendered verification"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_stale_projection_residue_blocks_ready(self):
+        registry, *_, path, manifest, seal = self.q25_documents()
+        manifest["synchronization_closure"]["unresolved_residue"] = ["superseded capability wording remains"]
+        manifest["completion_state"]["repository_synchronization_complete"] = False
+        with self.assertRaisesRegex(AssertionError, "repository synchronization incomplete"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_external_surface_cannot_be_repository_changed_path(self):
+        registry, *_, path, manifest, seal = self.q25_documents()
+        manifest["changed_surfaces"].append("https://arvin-liu.github.io/when-systems-catch-fire/")
+        with self.assertRaisesRegex(AssertionError, "external surface incorrectly listed"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_seal_task_mismatch_is_rejected(self):
+        registry, path, manifest, seal, *_ = self.q25_documents()
+        seal["task_id"] = "121Q24"
+        with self.assertRaisesRegex(AssertionError, "seal task mismatch"):
+            validate_custom(manifest, path, seal, registry)
 
 
 if __name__ == "__main__":

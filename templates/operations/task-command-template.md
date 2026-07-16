@@ -21,6 +21,14 @@ Claim ceiling:
 - This task can prove:
 - This task cannot prove:
 
+State transition:
+
+- Subjects:
+- Prior state:
+- Proposed state:
+- Changed dimensions:
+- Canonical evidence/source references:
+
 Synchronization matrix:
 
 - README:
@@ -29,6 +37,15 @@ Synchronization matrix:
 - Schema / tools / tests / CI:
 - Reports / changelog:
 - Frozen or historical assets:
+
+Registry-derived propagation closure:
+
+- Registry version/path:
+- Required surfaces:
+- `CHANGE` decisions and evidence:
+- `NO_CHANGE_WITH_REASON` decisions and evidence:
+- External/derived obligations:
+- Unresolved synchronization residue:
 
 Required result:
 
@@ -40,3 +57,7 @@ Required result:
 - External exact-head authority (PR body + independent receipt):
 - Live PR/CI re-fetch required before acceptance or merge:
 - Receipt path:
+- Implementation complete criterion:
+- Repository synchronization complete criterion:
+- External synchronization attestation criterion:
+- Why the task may or may not become ready/current/closed:

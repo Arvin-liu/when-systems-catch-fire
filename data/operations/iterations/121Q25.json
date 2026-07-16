@@ -1,6 +1,7 @@
 {
   "method_version": "1.0.0",
   "task_id": "121Q25",
+  "completion_seal_path": "reports/operations/121Q25-completion-seal.json",
   "change_classification": ["REPAIR", "INTERFACE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC"],
   "verified_start": {
     "main_head": "7fc4b309720ea1b4e9c4b47477c2f423860d53df",
