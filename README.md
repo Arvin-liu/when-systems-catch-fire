@@ -2,7 +2,7 @@
 
 点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型。它把项目现状、生命共同体价值宪章、Foundation 注册表、Function OS、操作控制 overlay、地图集与现实反馈环放在同一个可审计仓库里；这个说法描述当前提交下已经长成的状态，不是永久定位、最终身份或不可改变的项目本质。
 
-**首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
+**首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [点火迭代操作法](./ITERATION.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 
 ## 项目现状
 
@@ -38,6 +38,7 @@ https://github.com/Arvin-liu/when-systems-catch-fire
 README.md
 docs/project-current-state.md
 docs/governance/life-community-value-charter.md
+ITERATION.md
 ARCHITECTURE.md
 FOUNDATION.md
 function-os-candidate/v0.2/README.md
@@ -86,6 +87,7 @@ llms.txt
 - [人类导航页](./SUMMARY.md) — 给第一次阅读的人提供更完整的目录式导览。
 - [使用说明](./docs/USAGE.md) — 说明怎样按七层架构处理材料、提交候选和避免误用。
 - [AI 助手使用参考](./docs/ai-assistant-usage-reference.md) — 提供可直接复制给常用 AI 的完整阅读提示词。
+- [点火迭代操作法](./ITERATION.md) — 说明每一轮变更怎样从远端真相、缺口、claim ceiling、同步矩阵、验证和回执中闭环。
 - [AI 冷启动入口](./AI-START-HERE.md) — 告诉零背景 AI 应按什么顺序读仓库、哪些边界不能混。
 - [AI 交接契约](./AI-HANDOFF.md) — 记录跨会话交接时必须重新核验的权威链和红线。
 - [机器入口](./llms.txt) — 给 LLM 和自动化工具读取的简明项目边界与关键路径。
@@ -105,6 +107,7 @@ llms.txt
 - [Registry manifest](./data/foundation/registry-manifest.json) — 列出 Foundation 注册表文件及其作用。
 - [Migration summary](./data/foundation/migration-summary.json) — 记录 legacy 资产迁移覆盖与摘要。
 - [点火地图集](./docs/architecture/ignition-atlas.md) — 说明地图集只是版本化导航投影，不是新的真值来源。
+- [自适应关系网络](./docs/architecture/adaptive-relational-network.md) — 说明当前关系网络投影、扰动重构和嵌入证据摘要的操作边界。
 - [项目架构兼容入口](./docs/PROJECT-ARCHITECTURE.md) — 保留旧读者可进入的兼容路径，但不是当前权威。
 - [统一函数总表历史兼容入口](./统一函数总表/INDEX.md) — 保留旧函数表索引，用于历史追溯和兼容查看。
 - [统一案例总表历史兼容入口](./统一案例总表/INDEX.md) — 保留旧案例表索引，用于历史追溯和兼容查看。

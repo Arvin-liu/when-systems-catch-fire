@@ -16,12 +16,15 @@
 ## 当前版本必须同步的表面
 
 - README.md、SUMMARY.md、llms.txt
+- ITERATION.md、AI-HANDOFF.md、AI-START-HERE.md、docs/project-current-state.md
 - ARCHITECTURE.md、FOUNDATION.md、docs/foundation/
 - docs/PROJECT-ARCHITECTURE.md、USAGE.md、AGENT-GUIDE.md、VERSIONING.md
 - data/foundation/、schemas/foundation/
 - tools/foundation/、tests/foundation/、formal/、views/
 - .github/workflows/、reports/foundation-architecture/
 - CHANGELOG.md 与对应审计记录
+
+任何影响项目身份、能力、使用方式、当前状态或 Agent 交接的迭代，必须按 `ITERATION.md` 和 `tools/validate_iteration_sync.py` 同步这些表面；纯修复若不更新，必须记录可验证的 `NO_CHANGE_WITH_REASON`。
 
 ## 审计要求
 

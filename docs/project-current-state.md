@@ -1,6 +1,6 @@
 # 项目现状 / Current Project State
 
-> Scope: describes the repository at commit `47a637ebd7743726a76450669d75f7d0ff517bd7` plus the 121Q10 current-state correction. This page is versioned and may become outdated after later evidence, failures, capabilities, or governance changes.
+> Scope: describes the repository after PR #55 was merged into `main` at commit `72318097d4d09277eeb55cc56d677e2fad1f9377` on 2026-07-16. This page is versioned and may become outdated after later evidence, failures, capabilities, or governance changes.
 
 ## How This Page Should Be Read
 
@@ -17,6 +17,10 @@ Current state must be inferred from actual repository artifacts: architecture fi
 121Q14 adds a current atlas overlay. It projects existing registries, matrices, architecture surfaces, validation workflows, sustainability documents, and operation flows into versioned maps for declared observers and decision questions. These maps are navigation and resource-decision views, not a new source of truth or a fixed project identity.
 
 121Q15 records Q12-Q14 as a continuous cumulative release candidate chain pending main merge. This sentence describes the current release state of the chain; it does not turn the overlays into a fixed project identity or permanent total map.
+
+Q21R, Q22 and Q23 add current architecture/operation assets for Multiscale Causal Fabric, Probabilistic System Dynamics and Adaptive Relational Network after their accepted chain entered `main`. These are modeling and projection capabilities with validators and reports; they are not new truth layers and do not prove ontology, causality, value or internal learning mechanisms.
+
+121Q24 is open candidate work only until its separate Draft PR is accepted and merged. It proposes a canonical iteration method and synchronization validator; it is not current capability on `main` until merge verification.
 
 ## Current Shape
 
@@ -53,6 +57,9 @@ The project currently can:
 - generate versioned map projections with AtlasSpec, MapSpec, MapNode, MapEdge, MapProjection, MapDiff, EvolutionRecord, SourcingDecision, and UnmappedResidue;
 - distinguish matrix, registry, graph, and map authority;
 - show maintainer sustainability, epistemic architecture, and agent delivery landscapes without treating map position as proof.
+- build bounded Multiscale Causal Fabric projections that separate causal reachability, relation classes, light-cone/horizon metaphors, entropy/irreversibility records and unmapped residue;
+- represent probabilistic system dynamics with explicit system context, state space, transition law, stochastic semantics, interventions, trajectories, coupling, calibration and rare-event boundaries;
+- produce Adaptive Relational Network projections, temporal paths, high-order relation records, perturbation/reconfiguration timelines, embedding evidence summaries and NetworkDiff records without treating network metrics as truth, value or causality.
 
 ## Current Limits
 
@@ -70,6 +77,10 @@ The project currently must not claim:
 - that a new term is a theory upgrade merely because it compresses language.
 - that any map is a permanent total map;
 - that visual proximity, dependency, or evolution stage proves fact, isomorphism, or causality.
+- that causal-fabric reachability is actual causation;
+- that high probability, posterior probability, Markov structure, stationarity, ergodicity, linearity or Gaussian assumptions are automatic;
+- that network adjacency, similarity, centrality, community detection, retrieval, self-report or behavior change proves truth, value, causality or internal learning mechanisms;
+- that Q24 candidate method compliance proves any substantive claim true.
 
 A current inability is also not a permanent impossibility. It only means the present artifacts do not support that claim at this commit.
 
