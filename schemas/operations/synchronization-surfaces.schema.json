@@ -27,7 +27,7 @@
         "trigger_classifications": {"type": "array", "items": {"enum": ["REPAIR", "CAPABILITY_ADDITION", "INTERFACE_CHANGE", "EVIDENCE_UPDATE", "GOVERNANCE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "HISTORICAL_ONLY", "OPERATIONS_METHOD"]}, "uniqueItems": true},
         "allowed_decisions": {"type": "array", "minItems": 1, "items": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]}, "uniqueItems": true},
         "validation_mode": {"$ref": "#/$defs/nonblank"},
-        "blocks": {"type": "array", "items": {"enum": ["ready", "current", "closed"]}, "uniqueItems": true}
+        "blocks": {"type": "array", "items": {"enum": ["ready", "accepted", "merged", "current", "closed"]}, "uniqueItems": true}
       }
     }
   }

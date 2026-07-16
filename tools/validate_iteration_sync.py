@@ -215,6 +215,26 @@ def _validate_seal(manifest: dict, seal: dict, source: Path) -> None:
     if manifest["method_version"] == "1.1.0":
         require(seal.get("completion_state") == manifest["completion_state"], f"{source}: seal completion_state mismatch")
         require(seal.get("synchronization_registry", {}).get("path") == manifest["synchronization_closure"]["registry_path"], f"{source}: seal synchronization registry mismatch")
+        require(seal.get("external_attestations") == manifest["synchronization_closure"]["external_attestations"], f"{source}: seal external_attestations mismatch")
+
+
+def _validate_evidence_ref(ref: str, source: Path) -> None:
+    if ref.startswith("external:"):
+        require(re.match(r"^external:(pr_body|1111_receipt|live_refetch|github_actions):\S+$", ref) is not None, f"{source}: invalid external evidence reference: {ref}")
+        return
+    repository_ref = ref.removeprefix("repo:")
+    require("://" not in repository_ref, f"{source}: repository evidence must not be an undeclared external URI: {ref}")
+    require((ROOT / repository_ref).exists(), f"{source}: nonexistent repository evidence reference: {ref}")
+
+
+def _pending_external_blockers(gate: str, required_ids: set[str], registry: dict[str, dict], attestations: dict[str, dict]) -> list[str]:
+    return sorted(
+        surface_id
+        for surface_id in required_ids
+        if registry[surface_id]["surface_type"] == "external_rendered_deployed_surface"
+        and gate in registry[surface_id]["blocks"]
+        and attestations[surface_id]["status"] != "attested"
+    )
 
 
 def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict]) -> None:
@@ -233,34 +253,66 @@ def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict
 
     repository_complete = True
     external_required = False
+    external_ids: set[str] = set()
     for surface_id in required_ids:
         spec = registry[surface_id]
         decision = decision_map[surface_id]
         require(decision["decision"] in spec["allowed_decisions"], f"{source}: disallowed decision for {surface_id}")
         require(decision["reason"].strip(), f"{source}: blank synchronization reason for {surface_id}")
         require(decision["evidence_refs"] and all(ref.strip() for ref in decision["evidence_refs"]), f"{source}: {surface_id} decision lacks evidence references")
+        for ref in decision["evidence_refs"]:
+            _validate_evidence_ref(ref, source)
         require(decision["validation_mode"] == spec["validation_mode"], f"{source}: validation mode mismatch for {surface_id}")
         require(decision.get("derived_from", []) == spec["derived_from"], f"{source}: derived_from mismatch for {surface_id}")
         is_external = spec["surface_type"] == "external_rendered_deployed_surface"
         if is_external:
             external_required = True
+            external_ids.add(surface_id)
             require(spec["locator"] not in manifest["changed_surfaces"], f"{source}: external surface incorrectly listed as repository changed path")
         elif decision["decision"] == "CHANGE":
             require(spec["locator"] in manifest["changed_surfaces"], f"{source}: changed registry surface absent from changed_surfaces: {spec['locator']}")
             require((ROOT / spec["locator"]).exists(), f"{source}: changed registry path missing: {spec['locator']}")
 
+    attestation_items = closure["external_attestations"]
+    attestation_ids = [item["surface_id"] for item in attestation_items]
+    _unique(attestation_ids, "external attestation surface", source)
+    attestations = {item["surface_id"]: item for item in attestation_items}
+    require(set(attestations) == external_ids, f"{source}: external attestation coverage mismatch")
+    for surface_id, attestation in attestations.items():
+        spec = registry.get(surface_id)
+        require(spec is not None and spec["surface_type"] == "external_rendered_deployed_surface", f"{source}: unknown or non-external attestation surface: {surface_id}")
+        expected_stage = "post_merge" if spec["validation_mode"].startswith("post_merge_") else "pre_merge"
+        require(attestation["stage"] == expected_stage, f"{source}: external attestation stage mismatch for {surface_id}")
+        require(attestation["authority"] == "pull_request_body_and_1111_receipt", f"{source}: wrong external attestation authority for {surface_id}")
+        require(attestation["live_state_locally_verifiable"] is False, f"{source}: external live state cannot be locally verifiable for {surface_id}")
+        for ref in attestation["evidence_refs"]:
+            _validate_evidence_ref(ref, source)
+            require(ref.startswith("external:"), f"{source}: external attestation evidence must use declared external reference format: {ref}")
+        if attestation["status"] == "attested" and expected_stage == "post_merge":
+            require(manifest["status"]["merged"] and not manifest["branch_pr"]["draft"], f"{source}: Draft/unmerged candidate cannot claim post-merge production attestation")
+
+    all_external_attested = all(item["status"] == "attested" for item in attestations.values()) if external_ids else True
     require(closure["live_external_surfaces_verified"] is False, f"{source}: local validator cannot claim live rendered verification")
     require(completion["external_synchronization_required"] == external_required, f"{source}: external synchronization requirement mismatch")
+    require(completion["external_synchronization_attested"] == all_external_attested, f"{source}: global external synchronization flag disagrees with per-surface attestations")
     require(completion["repository_synchronization_complete"] == (repository_complete and not closure["unresolved_residue"]), f"{source}: repository synchronization completion inconsistent with residue")
     expected_project = completion["repository_synchronization_complete"] and (not external_required or completion["external_synchronization_attested"])
     require(completion["project_synchronization_complete"] == expected_project, f"{source}: project synchronization completion is inflated or inconsistent")
     if manifest["status"]["ready_for_gpt_verification"]:
         require(completion["implementation_complete"], f"{source}: implementation incomplete candidate cannot be ready")
         require(completion["repository_synchronization_complete"], f"{source}: repository synchronization incomplete candidate cannot be ready")
-    if manifest["status"]["accepted"] or manifest["status"]["current"]:
-        require(completion["project_synchronization_complete"], f"{source}: accepted/current lifecycle requires project synchronization complete")
+        require(not _pending_external_blockers("ready", required_ids, registry, attestations), f"{source}: pending external surface blocks ready")
+    if manifest["status"]["accepted"]:
+        blockers = _pending_external_blockers("accepted", required_ids, registry, attestations)
+        require(not blockers, f"{source}: pending external surfaces block accepted: {blockers}")
+    if manifest["status"]["merged"]:
+        blockers = _pending_external_blockers("merged", required_ids, registry, attestations)
+        require(not blockers, f"{source}: pending external surfaces block merged: {blockers}")
     if manifest["status"]["current"]:
         require(manifest["status"]["merged"], f"{source}: current requires merged lifecycle")
+        blockers = _pending_external_blockers("current", required_ids, registry, attestations)
+        require(not blockers, f"{source}: pending external surfaces block current: {blockers}")
+        require(completion["project_synchronization_complete"], f"{source}: current lifecycle requires project synchronization complete")
 
 
 def validate_custom(manifest: dict, source: Path, seal: dict, registry: dict[str, dict] | None = None) -> None:

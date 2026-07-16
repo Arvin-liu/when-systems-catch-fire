@@ -1,6 +1,6 @@
 # 121Q25B Whole-Project Synchronization Contract
 
-Status: method 1.1.0 Draft candidate on PR #57.
+Status: superseded non-ready method 1.1.0 Draft candidate on PR #57. Q25C preserves this history and repairs its lifecycle deadlock.
 
 ## Reproduced defect
 

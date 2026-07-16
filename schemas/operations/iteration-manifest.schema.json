@@ -216,7 +216,12 @@
         "surface_id": {"$ref": "#/$defs/nonblankString"},
         "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]},
         "reason": {"$ref": "#/$defs/nonblankString"},
-        "evidence_refs": {"$ref": "#/$defs/nonblankStringArray"},
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceReference"},
+          "uniqueItems": true
+        },
         "validation_mode": {"$ref": "#/$defs/nonblankString"},
         "derived_from": {"type": "array", "items": {"$ref": "#/$defs/nonblankString"}, "uniqueItems": true}
       }
@@ -224,14 +229,37 @@
     "synchronizationClosure": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["registry_path", "registry_version", "surface_decisions", "unresolved_residue", "external_verification_policy", "live_external_surfaces_verified"],
+      "required": ["registry_path", "registry_version", "surface_decisions", "external_attestations", "unresolved_residue", "external_verification_policy", "live_external_surfaces_verified"],
       "properties": {
         "registry_path": {"const": "data/operations/synchronization-surfaces.json"},
         "registry_version": {"$ref": "#/$defs/nonblankString"},
         "surface_decisions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/surfaceDecision"}},
+        "external_attestations": {"type": "array", "items": {"$ref": "#/$defs/externalAttestation"}},
         "unresolved_residue": {"type": "array", "items": {"$ref": "#/$defs/nonblankString"}, "uniqueItems": true},
         "external_verification_policy": {"$ref": "#/$defs/nonblankString"},
         "live_external_surfaces_verified": {"const": false}
+      }
+    },
+    "evidenceReference": {
+      "type": "string",
+      "pattern": "^([^:\\s][^\\s]*|repo:[^\\s]+|external:(pr_body|1111_receipt|live_refetch|github_actions):[^\\s]+)$"
+    },
+    "externalAttestation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface_id", "stage", "status", "authority", "evidence_refs", "live_state_locally_verifiable"],
+      "properties": {
+        "surface_id": {"$ref": "#/$defs/nonblankString"},
+        "stage": {"enum": ["pre_merge", "post_merge"]},
+        "status": {"enum": ["pending", "attested"]},
+        "authority": {"const": "pull_request_body_and_1111_receipt"},
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/evidenceReference"},
+          "uniqueItems": true
+        },
+        "live_state_locally_verifiable": {"const": false}
       }
     },
     "completionState": {

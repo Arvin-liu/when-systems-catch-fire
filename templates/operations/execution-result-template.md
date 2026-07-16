@@ -49,6 +49,7 @@ Propagation closure:
 - Decisions and evidence:
 - Derived build evidence:
 - External production obligations:
+- Per-surface external attestations and lifecycle blockers:
 - Unresolved synchronization residue:
 - Why this is or is not ready/current/closed:
 

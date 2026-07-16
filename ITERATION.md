@@ -112,9 +112,16 @@ Derived and external surfaces remain distinct from repository sources. GitHub Pa
 - `external_synchronization_attested`: the required exact external evidence has been recorded by its declared authority.
 - `project_synchronization_complete`: repository synchronization is complete and every required external synchronization has been attested.
 
-Implementation completion alone cannot make a task ready, accepted, merged, current or closed. An unaccepted ready candidate requires implementation and repository synchronization complete. External obligations must be attested in the mutable PR body and independent 1111 receipt before independent acceptance. `current` additionally requires merge lifecycle and post-merge live verification.
+Implementation completion alone cannot make a task ready, accepted, merged, current or closed. Lifecycle requirements are derived per triggered surface from its registry `blocks` field:
 
-If any applicable registered surface still describes the superseded state, or lacks a validated no-change decision, the iteration is not project-synchronization-complete and cannot be called current or closed.
+- `Ready for GPT verification` requires implementation complete, repository synchronization complete, exact candidate-head CI/build evidence, an inspectable derived artifact where required, Draft lifecycle, and no unresolved `ready` blocker.
+- `Accepted` requires independent acceptance of that exact Ready HEAD after fresh PR/HEAD/review/CI/build re-fetch, plus satisfaction of every triggered `accepted` blocker. A `post_merge_external_render_attestation` surface that blocks only `current`/`closed` does not block acceptance.
+- `Merged` requires the accepted exact HEAD to enter `main`, ancestry verification, and every triggered `merged` blocker. Merged is not automatically Current.
+- `Current` and `Closed` require merged lifecycle, truthful post-merge repository closeout, no unresolved residue, and individual attestation of every triggered external surface whose `blocks` includes the evaluated gate. For Pages this means a main-sourced deployment and live rendered-homepage fetch.
+
+Each triggered external surface has its own `external_attestations` entry with stage, status, authority and evidence-reference policy. One global boolean cannot substitute for missing or pending surface records. Repository-local validation always leaves live-state verification false. Exact deployment/run identifiers remain in the mutable PR body and independent 1111 receipt.
+
+`project_synchronization_complete` is the all-required-Current/Closed condition, not a blanket pre-merge acceptance gate. If any applicable registered surface still describes the superseded state, lacks a validated no-change decision, or has a pending attestation for the evaluated Current/Closed gate, the iteration cannot be called current or closed.
 
 ## 6. Branch And Commit Discipline
 

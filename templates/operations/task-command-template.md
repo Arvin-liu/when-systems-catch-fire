@@ -60,4 +60,6 @@ Required result:
 - Implementation complete criterion:
 - Repository synchronization complete criterion:
 - External synchronization attestation criterion:
+- Per-surface external attestation stage, status, authority and evidence policy:
+- Registry blockers at Ready / Accepted / Merged / Current / Closed:
 - Why the task may or may not become ready/current/closed:

@@ -35,7 +35,7 @@
     "smallest_material_action": "Generalize manifest-seal binding, add one synchronization-surface registry and propagation closure, self-host it in Q25B, and keep Draft Pages verification build-only."
   },
   "claim_ceiling": "validated_whole_project_synchronization_propagation_candidate_only",
-  "status": {"candidate": true, "ready_for_gpt_verification": true, "accepted": false, "merged": false, "current": false},
+  "status": {"candidate": true, "ready_for_gpt_verification": false, "accepted": false, "merged": false, "current": false},
   "state_transition": {
     "subjects": ["iteration operation method", "manifest-seal binding", "whole-project synchronization", "Draft Pages verification"],
     "prior_state": "Method 1.0.0 used manual surface assessment and a Q24-fixed completion seal; implementation completion could mask stale project surfaces.",
@@ -64,6 +64,9 @@
       {"surface_id": "method.task_template", "decision": "CHANGE", "reason": "Future commands must declare transition dimensions and registry-derived closure.", "evidence_refs": ["templates/operations/task-command-template.md"], "validation_mode": "repository_semantic_validation", "derived_from": ["method.iteration"]},
       {"surface_id": "method.result_template", "decision": "CHANGE", "reason": "Future receipts must report separated completion states and external residue.", "evidence_refs": ["templates/operations/execution-result-template.md"], "validation_mode": "repository_semantic_validation", "derived_from": ["method.iteration"]},
       {"surface_id": "method.review_template", "decision": "CHANGE", "reason": "Independent review must reject locally complete but project-stale iterations.", "evidence_refs": ["templates/operations/independent-review-template.md"], "validation_mode": "repository_semantic_validation", "derived_from": ["method.iteration"]}
+    ],
+    "external_attestations": [
+      {"surface_id": "external.pages_homepage", "stage": "post_merge", "status": "pending", "authority": "pull_request_body_and_1111_receipt", "evidence_refs": ["external:pr_body:57", "external:1111_receipt:IGNITION-20260716-121Q25B-result.md"], "live_state_locally_verifiable": false}
     ],
     "unresolved_residue": [],
     "external_verification_policy": "Exact-head Pages artifact is built and inspected pre-merge without production deployment. After eventual merge, main-sourced Pages deployment and live fetch must be attested in the PR body and independent 1111 receipt before current/closed.",
@@ -120,6 +123,6 @@
     "external_exact_head_policy": {"required": true, "authority": "pull_request_body_and_1111_receipt", "required_workflows": ["foundation-validation", "function-os-ci"], "live_refetch_before_acceptance_or_merge": true}
   },
   "rollback_strategy": "Revert Q25B commits on PR #57 or close the Draft; preserve Q25 content commits and Q25B audit evidence. Main and production Pages remain unchanged until accepted merge.",
-  "remaining_limitations": ["Method 1.1.0 remains an unaccepted Draft candidate.", "Local closure validation cannot attest production Pages or live GitHub state.", "Project synchronization remains incomplete until eventual merge, main Pages deployment and live fetch."],
+  "remaining_limitations": ["Q25B is preserved as a superseded non-ready Draft candidate after independent review found a pre-merge acceptance/post-merge Pages deadlock.", "Q25C carries the corrected final Ready candidate on the same branch.", "Local closure validation cannot attest production Pages or live GitHub state."],
   "receipt_location": "agent-results/IGNITION-20260716-121Q25B-result.md"
 }
