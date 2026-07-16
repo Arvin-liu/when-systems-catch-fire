@@ -28,7 +28,11 @@ Changed files:
 Validation:
 
 - Local:
-- Remote:
+- Repository-local contract scope:
+- Exact final HEAD (external attestation only):
+- Remote workflow run IDs and conclusions (external attestation only):
+- Live PR/CI re-fetch completed:
+- Attestation authority: PR body and independent 1111 receipt
 
 Claim ceiling:
 

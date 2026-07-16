@@ -69,11 +69,22 @@ def _validation_names(items: list[dict], label: str, source: Path) -> None:
     require(len(run_ids) == len(set(run_ids)), f"{source}: duplicate {label} workflow run id")
 
 
+def validate_manifest_schema(manifest: dict, source: Path) -> None:
+    schema = load_json(SCHEMA_PATH)
+    errors = sorted(Draft202012Validator(schema).iter_errors(manifest), key=lambda error: list(error.path))
+    if errors:
+        first = errors[0]
+        loc = ".".join(str(part) for part in first.path) or "<root>"
+        raise AssertionError(f"{source}: schema error at {loc}: {first.message}")
+
+
 def validate_custom(manifest: dict, source: Path, seal: dict | None = None) -> None:
     status = manifest["status"]
     classifications = set(manifest["change_classification"])
     changed = set(manifest["changed_surfaces"])
     decisions = _decision_map(manifest, source)
+    head_binding = manifest["head_binding"]
+    external_policy = manifest["validation"]["external_exact_head_policy"]
 
     _unique(manifest["changed_surfaces"], "changed_surfaces", source)
     _validation_names(manifest["validation"]["local"], "local", source)
@@ -89,15 +100,25 @@ def validate_custom(manifest: dict, source: Path, seal: dict | None = None) -> N
 
     if status["ready_for_gpt_verification"]:
         require(manifest["branch_pr"]["pr_number"] is not None and manifest["branch_pr"]["pr_number"] > 0, f"{source}: ready candidate requires PR number")
-        require(manifest["candidate_head"], f"{source}: ready candidate requires candidate_head")
+        require(manifest["branch_pr"]["draft"], f"{source}: ready candidate must remain Draft until independently accepted")
+        require(head_binding["mode"] == "external_exact_head_attestation", f"{source}: ready candidate requires external exact-head attestation mode")
+        require(head_binding["authority"] == "pull_request_body_and_1111_receipt", f"{source}: ready candidate requires externally resolvable attestation authority")
+        require(head_binding["pr_number"] == manifest["branch_pr"]["pr_number"], f"{source}: head-binding PR mismatch")
+        require(head_binding["receipt_path"] == manifest["receipt_location"], f"{source}: head-binding receipt mismatch")
+        require(head_binding["embedded_exact_current_head"] is False, f"{source}: repository artifact cannot claim embedded exact current self HEAD")
+        require(head_binding["live_refetch_required"] is True, f"{source}: exact-head attestation must require live re-fetch")
+        require(external_policy["required"] is True, f"{source}: ready candidate requires external exact-head attestation policy")
+        require(external_policy["authority"] == head_binding["authority"], f"{source}: attestation authority mismatch")
+        require(external_policy["live_refetch_before_acceptance_or_merge"] is True, f"{source}: acceptance/merge must require live PR/CI re-fetch")
+        require(set(external_policy["required_workflows"]) == {"foundation-validation", "function-os-ci"}, f"{source}: exact-head policy must require both remote workflows")
         require(manifest["validation"]["local"], f"{source}: ready candidate requires local validation")
-        require(manifest["validation"]["remote"], f"{source}: ready candidate requires remote validation")
         for item in manifest["validation"]["local"] + manifest["validation"]["remote"]:
             require(item["status"].upper() not in UNRESOLVED_STATUSES, f"{source}: unresolved validation status for {item['name']}")
             require(item["status"].upper() in {"PASS", "SUCCESS"}, f"{source}: validation status must be PASS/SUCCESS for {item['name']}")
         for item in manifest["validation"]["remote"]:
             require(item.get("run_id"), f"{source}: remote validation {item['name']} missing run_id")
-            require(item.get("head") == manifest["candidate_head"], f"{source}: remote validation {item['name']} head mismatch")
+            require(item.get("evidence_scope") == "historical_subject_head_only", f"{source}: stale CI evidence mislabeled as current-final evidence")
+            require(item.get("subject_head"), f"{source}: historical validation {item['name']} missing subject_head")
             require(item.get("conclusion", "").lower() == "success", f"{source}: remote validation {item['name']} conclusion not success")
 
     if classifications & {"CAPABILITY_ADDITION", "INTERFACE_CHANGE", "GOVERNANCE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"}:
@@ -125,33 +146,36 @@ def validate_custom(manifest: dict, source: Path, seal: dict | None = None) -> N
         require(phase_b["draft_pr"] == manifest["branch_pr"]["pr_number"], f"{source}: seal PR mismatch")
         require(phase_b["branch"] == manifest["branch_pr"]["branch"], f"{source}: seal branch mismatch")
         require(phase_b["base_head"] == manifest["branch_pr"]["base_head"], f"{source}: seal base_head mismatch")
-        require(phase_b["candidate_head"] == manifest["candidate_head"], f"{source}: seal candidate_head mismatch")
+        require(phase_b["head_binding"]["mode"] == head_binding["mode"], f"{source}: seal head-binding mode mismatch")
+        require(phase_b["head_binding"]["authority"] == head_binding["authority"], f"{source}: seal attestation authority mismatch")
+        require(phase_b["head_binding"]["receipt_path"] == head_binding["receipt_path"], f"{source}: seal attestation receipt mismatch")
+        require(phase_b["head_binding"]["embedded_exact_current_head"] == head_binding["embedded_exact_current_head"], f"{source}: seal embedded-head policy mismatch")
+        require(phase_b["head_binding"]["live_refetch_required"] == head_binding["live_refetch_required"], f"{source}: seal live-refetch policy mismatch")
         require(phase_b["claim_ceiling"] == manifest["claim_ceiling"], f"{source}: seal claim ceiling mismatch")
         for key in ("candidate", "ready_for_gpt_verification", "accepted", "merged", "current"):
             require(lifecycle[key] == manifest["status"][key], f"{source}: seal lifecycle mismatch for {key}")
 
 
 def validate_all() -> dict:
-    schema = load_json(SCHEMA_PATH)
-    validator = Draft202012Validator(schema)
     paths = sorted(MANIFEST_DIR.glob("*.json"))
     require(paths, "no iteration manifests found")
     seal = load_json(SEAL_PATH) if SEAL_PATH.exists() else None
     checked = 0
     for path in paths:
         manifest = load_json(path)
-        errors = sorted(validator.iter_errors(manifest), key=lambda error: list(error.path))
-        if errors:
-            first = errors[0]
-            loc = ".".join(str(part) for part in first.path) or "<root>"
-            raise AssertionError(f"{path}: schema error at {loc}: {first.message}")
+        validate_manifest_schema(manifest, path)
         validate_custom(manifest, path, seal)
         checked += 1
 
     for surface in FRONT_DOOR_SURFACES | {"ITERATION.md"}:
         require((ROOT / surface).exists(), f"required synchronized surface missing: {surface}")
 
-    return {"status": "PASS", "checked": checked}
+    return {
+        "status": "PASS",
+        "checked": checked,
+        "scope": "repository_local_consistency_only",
+        "live_github_truth_verified": False,
+    }
 
 
 def main() -> int:

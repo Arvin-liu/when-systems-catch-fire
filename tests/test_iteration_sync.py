@@ -44,8 +44,15 @@ def valid_manifest():
         "change_classification": ["OPERATIONS_METHOD", "RELEASE_OR_CURRENT_STATE_SYNC", "INTERFACE_CHANGE"],
         "verified_start": {"main_head": "7" * 40, "source": "test", "verified_at": "2026-07-16"},
         "branch_pr": {"branch": "test", "pr_number": 56, "base": "main", "base_head": "7" * 40, "draft": True, "merged": False},
-        "candidate_head": "5" * 40,
-        "candidate_head_note": "Exact pushed candidate head; later receipts may record a newer non-self-referential commit.",
+        "head_binding": {
+            "mode": "external_exact_head_attestation",
+            "pr_number": 56,
+            "authority": "pull_request_body_and_1111_receipt",
+            "receipt_path": "agent-results/IGNITION-20260716-121Q24C-result.md",
+            "embedded_exact_current_head": False,
+            "live_refetch_required": True,
+            "explanation": "Exact final head and CI are recorded externally after push.",
+        },
         "gap": {"summary": "gap", "evidence": ["evidence"], "smallest_material_action": "action"},
         "claim_ceiling": "candidate_only",
         "status": {"candidate": True, "ready_for_gpt_verification": True, "accepted": False, "merged": False, "current": False},
@@ -71,13 +78,19 @@ def valid_manifest():
         "validation": {
             "local": [{"name": "iteration-sync", "status": "PASS", "evidence": "local pass"}],
             "remote": [
-                {"name": "foundation-validation", "status": "SUCCESS", "evidence": "remote", "run_id": 1, "head": "5" * 40, "conclusion": "success"},
-                {"name": "function-os-ci", "status": "SUCCESS", "evidence": "remote", "run_id": 2, "head": "5" * 40, "conclusion": "success"},
+                {"name": "foundation-validation", "status": "SUCCESS", "evidence": "historical", "evidence_scope": "historical_subject_head_only", "subject_head": "5" * 40, "run_id": 1, "conclusion": "success"},
+                {"name": "function-os-ci", "status": "SUCCESS", "evidence": "historical", "evidence_scope": "historical_subject_head_only", "subject_head": "5" * 40, "run_id": 2, "conclusion": "success"},
             ],
+            "external_exact_head_policy": {
+                "required": True,
+                "authority": "pull_request_body_and_1111_receipt",
+                "required_workflows": ["foundation-validation", "function-os-ci"],
+                "live_refetch_before_acceptance_or_merge": True,
+            },
         },
         "rollback_strategy": "close PR",
         "remaining_limitations": ["candidate only"],
-        "receipt_location": "agent-results/IGNITION-20260716-121Q24-result.md",
+        "receipt_location": "agent-results/IGNITION-20260716-121Q24C-result.md",
     }
 
 
@@ -92,7 +105,13 @@ def valid_seal():
             "draft_pr": 56,
             "branch": m["branch_pr"]["branch"],
             "base_head": m["branch_pr"]["base_head"],
-            "candidate_head": m["candidate_head"],
+            "head_binding": {
+                "mode": m["head_binding"]["mode"],
+                "authority": m["head_binding"]["authority"],
+                "receipt_path": m["head_binding"]["receipt_path"],
+                "embedded_exact_current_head": False,
+                "live_refetch_required": True,
+            },
             "claim_ceiling": m["claim_ceiling"],
         },
         "lifecycle": m["status"],
@@ -117,11 +136,49 @@ class IterationSyncTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "unresolved validation"):
             validate_custom(manifest, __file__, valid_seal())
 
-    def test_remote_head_mismatch_is_rejected(self):
+    def test_stale_ci_mislabeled_as_current_final_is_rejected(self):
         manifest = valid_manifest()
-        manifest["validation"]["remote"][0]["head"] = "6" * 40
-        with self.assertRaisesRegex(AssertionError, "head mismatch"):
+        manifest["validation"]["remote"][0]["evidence_scope"] = "current_final"
+        with self.assertRaisesRegex(AssertionError, "mislabeled as current-final"):
             validate_custom(manifest, __file__, valid_seal())
+
+    def test_old_candidate_head_contract_is_rejected_by_schema(self):
+        manifest = valid_manifest()
+        manifest["candidate_head"] = "5" * 40
+        manifest["candidate_head_note"] = "claimed current final head"
+        with self.assertRaisesRegex(AssertionError, "schema error"):
+            from tools.validate_iteration_sync import validate_manifest_schema
+            validate_manifest_schema(manifest, __file__)
+
+    def test_embedded_current_head_claim_is_rejected(self):
+        manifest = valid_manifest()
+        manifest["head_binding"]["embedded_exact_current_head"] = True
+        with self.assertRaisesRegex(AssertionError, "cannot claim embedded exact current self HEAD"):
+            validate_custom(manifest, __file__, valid_seal())
+
+    def test_missing_external_attestation_authority_is_rejected(self):
+        manifest = valid_manifest()
+        manifest["head_binding"]["authority"] = ""
+        with self.assertRaisesRegex(AssertionError, "externally resolvable attestation authority"):
+            validate_custom(manifest, __file__, valid_seal())
+
+    def test_ready_candidate_requires_external_exact_head_policy(self):
+        manifest = valid_manifest()
+        manifest["validation"]["external_exact_head_policy"]["required"] = False
+        with self.assertRaisesRegex(AssertionError, "requires external exact-head attestation policy"):
+            validate_custom(manifest, __file__, valid_seal())
+
+    def test_seal_head_binding_mode_mismatch_is_rejected(self):
+        seal = valid_seal()
+        seal["phase_b"]["head_binding"]["mode"] = "embedded"
+        with self.assertRaisesRegex(AssertionError, "seal head-binding mode mismatch"):
+            validate_custom(valid_manifest(), __file__, seal)
+
+    def test_seal_attestation_authority_mismatch_is_rejected(self):
+        seal = valid_seal()
+        seal["phase_b"]["head_binding"]["authority"] = "other"
+        with self.assertRaisesRegex(AssertionError, "seal attestation authority mismatch"):
+            validate_custom(valid_manifest(), __file__, seal)
 
     def test_duplicate_impact_surface_is_rejected(self):
         manifest = valid_manifest()

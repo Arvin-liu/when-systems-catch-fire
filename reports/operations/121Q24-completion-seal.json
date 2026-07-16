@@ -5,7 +5,7 @@
   "manifest_path": "data/operations/iterations/121Q24.json",
   "manifest_hash": {
     "included": false,
-    "reason": "Embedding a hash of the manifest inside the seal while cross-validating the seal from the manifest would create a circular artifact. Deterministic content consistency is enforced by tools/validate_iteration_sync.py; final pushed head is recorded in the PR body and 1111 receipt."
+    "reason": "Repository-local deterministic consistency is enforced by tools/validate_iteration_sync.py. Exact final HEAD and post-commit CI are external attestations because embedding either would create a new commit and invalidate the claimed final identity."
   },
   "phase_a": {
     "merged_pr": 55,
@@ -17,8 +17,13 @@
     "branch": "ops/121q24-ignition-iteration-method-current-state-sync-20260716",
     "base": "main",
     "base_head": "72318097d4d09277eeb55cc56d677e2fad1f9377",
-    "candidate_head": "5e626091be531994af1fefec213adf7ca3353de0",
-    "candidate_head_note": "Exact pre-Q24B Draft candidate head whose stale artifacts were repaired. The final Q24B commit SHA is non-self-referentially recorded in PR body and 1111 receipt after push.",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "agent-results/IGNITION-20260716-121Q24C-result.md",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
     "claim_ceiling": "validated_operation_method_candidate_only"
   },
   "lifecycle": {
@@ -28,20 +33,14 @@
     "merged": false,
     "current": false
   },
-  "remote_validation": [
-    {
-      "workflow": "foundation-validation",
-      "run_id": 29475601204,
-      "head": "5e626091be531994af1fefec213adf7ca3353de0",
-      "conclusion": "success"
-    },
-    {
-      "workflow": "function-os-ci",
-      "run_id": 29475606532,
-      "head": "5e626091be531994af1fefec213adf7ca3353de0",
-      "conclusion": "success"
-    }
-  ],
+  "external_exact_head_attestation": {
+    "required": true,
+    "embedded_in_seal": false,
+    "authority": "pull_request_body_and_1111_receipt",
+    "required_workflows": ["foundation-validation", "function-os-ci"],
+    "live_refetch_before_acceptance_or_merge": true,
+    "claim_boundary": "This seal records repository-local candidate consistency only. It does not attest the live PR HEAD or current CI."
+  },
   "local_validation": {
     "iteration_sync": "PASS",
     "iteration_tests": "PASS under stdlib unittest; local pytest compatibility also passed during Q24",

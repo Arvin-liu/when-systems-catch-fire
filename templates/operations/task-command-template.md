@@ -37,4 +37,6 @@ Required result:
 - Commit discipline:
 - Local validation:
 - Remote CI:
+- External exact-head authority (PR body + independent receipt):
+- Live PR/CI re-fetch required before acceptance or merge:
 - Receipt path:

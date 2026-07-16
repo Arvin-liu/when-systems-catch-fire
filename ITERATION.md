@@ -130,7 +130,7 @@ Run the narrowest relevant ladder first, then expand:
 3. focused regression tests;
 4. integration tests;
 5. frozen-boundary, governance, license, secret, cache and whitespace checks;
-6. exact-final-HEAD remote CI.
+6. exact-final-HEAD remote CI, attested externally after the commit exists.
 
 No failed lower rung can be repaired by a higher-rung narrative.
 
@@ -173,7 +173,9 @@ Every handoff or receipt records:
 - forbidden actions that were not taken;
 - receipt location.
 
-Git commit SHA values are not self-embeddable: a file inside a commit cannot truthfully contain the SHA of that same commit, because changing the file changes the SHA. Machine manifests may record the exact pushed candidate head they validate against and must state any non-circular recording rule; the final pushed head after a repair commit must be recorded in the PR body and external receipt.
+Git commit SHA values and their post-commit CI run IDs are not self-embeddable: adding either to a tracked file creates a new commit, a new HEAD and new CI runs. The repository-local manifest and seal therefore encode only deterministic artifact consistency, lifecycle, impact decisions and an external-attestation policy.
+
+Exact-final-HEAD CI remains mandatory. After the final commit is pushed and both required workflows finish, the mutable PR body and independent 1111 receipt record the exact HEAD, run IDs and conclusions. Independent acceptance and merge must re-fetch that live GitHub state. A repository-local validator PASS means only `repository_local_consistency_only`; it never substitutes for remote-truth verification.
 
 ## 13. Method Self-Iteration
 

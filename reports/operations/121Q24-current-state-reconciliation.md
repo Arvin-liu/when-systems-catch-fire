@@ -56,6 +56,12 @@ This is an operations gap, not a new truth layer.
 
 Q24 can prove only that the repository contains a validated operation method and a validator-enforced synchronization contract for future iterations. It cannot prove that future conclusions are true, valuable, causal, complete or correctly merged merely because the method was followed.
 
+## Head And CI Evidence Contract
+
+Repository-local manifests and seals validate only deterministic content: identifiers, lifecycle, impact decisions, paths, validation policy and cross-artifact agreement. They intentionally do not claim to contain their own final commit SHA or the CI run IDs created after that commit.
+
+Exact-final-HEAD CI remains mandatory. The authoritative evidence is the live GitHub PR state plus the exact HEAD, workflow run IDs and conclusions recorded after push in the PR body and independent 1111 receipt. Independent acceptance and merge require a fresh remote re-fetch; local validator PASS cannot replace it.
+
 ## Q24 Candidate Boundary
 
 The Q24 branch and Draft PR remain candidate work until separately accepted and merged. The post-ARN current state may describe ARN as current because PR #55 is merged; it must describe Q24 as candidate/pending.

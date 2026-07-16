@@ -10,8 +10,7 @@
     "change_classification",
     "verified_start",
     "branch_pr",
-    "candidate_head",
-    "candidate_head_note",
+    "head_binding",
     "gap",
     "claim_ceiling",
     "status",
@@ -66,8 +65,28 @@
         "merged": { "type": "boolean" }
       }
     },
-    "candidate_head": { "$ref": "#/$defs/sha" },
-    "candidate_head_note": { "$ref": "#/$defs/nonblankString" },
+    "head_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "pr_number",
+        "authority",
+        "receipt_path",
+        "embedded_exact_current_head",
+        "live_refetch_required",
+        "explanation"
+      ],
+      "properties": {
+        "mode": { "const": "external_exact_head_attestation" },
+        "pr_number": { "type": "integer", "minimum": 1 },
+        "authority": { "const": "pull_request_body_and_1111_receipt" },
+        "receipt_path": { "$ref": "#/$defs/nonblankString" },
+        "embedded_exact_current_head": { "const": false },
+        "live_refetch_required": { "const": true },
+        "explanation": { "$ref": "#/$defs/nonblankString" }
+      }
+    },
     "gap": {
       "type": "object",
       "additionalProperties": false,
@@ -112,10 +131,11 @@
     "validation": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["local", "remote"],
+      "required": ["local", "remote", "external_exact_head_policy"],
       "properties": {
         "local": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/validationItem" } },
-        "remote": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/validationItem" } }
+        "remote": { "type": "array", "items": { "$ref": "#/$defs/historicalValidationItem" } },
+        "external_exact_head_policy": { "$ref": "#/$defs/externalAttestationPolicy" }
       }
     },
     "rollback_strategy": { "$ref": "#/$defs/nonblankString" },
@@ -143,6 +163,36 @@
         "head": { "$ref": "#/$defs/sha" },
         "run_id": { "$ref": "#/$defs/positiveRunId" },
         "conclusion": { "$ref": "#/$defs/nonblankString" }
+      }
+    },
+    "historicalValidationItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "status", "evidence", "evidence_scope", "subject_head", "run_id", "conclusion"],
+      "properties": {
+        "name": { "$ref": "#/$defs/nonblankString" },
+        "status": { "$ref": "#/$defs/nonblankString" },
+        "evidence": { "$ref": "#/$defs/nonblankString" },
+        "evidence_scope": { "const": "historical_subject_head_only" },
+        "subject_head": { "$ref": "#/$defs/sha" },
+        "run_id": { "$ref": "#/$defs/positiveRunId" },
+        "conclusion": { "$ref": "#/$defs/nonblankString" }
+      }
+    },
+    "externalAttestationPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "authority", "required_workflows", "live_refetch_before_acceptance_or_merge"],
+      "properties": {
+        "required": { "const": true },
+        "authority": { "const": "pull_request_body_and_1111_receipt" },
+        "required_workflows": {
+          "type": "array",
+          "items": { "enum": ["foundation-validation", "function-os-ci"] },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "live_refetch_before_acceptance_or_merge": { "const": true }
       }
     }
   }
