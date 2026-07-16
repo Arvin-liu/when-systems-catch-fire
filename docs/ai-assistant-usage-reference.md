@@ -31,9 +31,13 @@ https://github.com/Arvin-liu/when-systems-catch-fire
 README.md
 docs/project-current-state.md
 docs/governance/life-community-value-charter.md
+ITERATION.md
 ARCHITECTURE.md
 FOUNDATION.md
 function-os-candidate/v0.2/README.md
+docs/architecture/multiscale-causal-fabric.md
+docs/architecture/probabilistic-system-dynamics.md
+docs/architecture/adaptive-relational-network.md
 docs/USAGE.md
 AI-START-HERE.md
 llms.txt
@@ -44,7 +48,9 @@ llms.txt
    请把“当前现状”与“永久定位”区分开。
 2. 它由哪些核心部分组成？项目现状、生命共同体价值宪章、Foundation、
    Ψ₀、Function OS、效果推理与机制判断、注意力与分布控制、
-   地图集、现实反馈分别负责什么？
+   地图集、MCF、PSD、ARN、点火迭代操作法和现实反馈分别负责什么？
+   请解释 MCF、PSD 与 ARN 怎样分工、连接，以及 ARN 为什么把因果主张
+   委托给 MCF。
 3. 它对普通人的工作、学习、生活判断和长期项目有什么实际作用
    或方法启发？请给出至少 3 个具体场景，并区分哪些是仓库
    已实现能力，哪些只是可借鉴的方法。
@@ -54,6 +60,7 @@ llms.txt
    它当前的限制、风险、适用边界和不能证明的事情分别是什么？
 6. 项目当前有哪些结论仍只能标记为 candidate、pending、
    需要外部验证或等待现实反馈？
+   请明确区分“当前仓库能力”“候选派生表示”和“已证明的科学理论”。
 7. 点火怎样处理证据、反例、错误、失败、外部反馈和结论降级？
 8. 点火的生命共同体价值宪章怎样约束“什么值得做”，
    而不冒充事实证据或数学证明？
@@ -70,6 +77,8 @@ llms.txt
 [打开点火项目 GitHub 首页](https://github.com/Arvin-liu/when-systems-catch-fire)
 
 这个链接打开的就是项目首页。你可以复制上面的提示词，再把这个链接交给自己常用的 AI。
+
+当前状态与架构直达入口：[项目现状](./project-current-state.md) / [点火迭代操作法](../ITERATION.md) / [MCF](./architecture/multiscale-causal-fabric.md) / [PSD](./architecture/probabilistic-system-dynamics.md) / [ARN](./architecture/adaptive-relational-network.md)。本页是完整的人类 AI 使用指南；根 README 中的提示词是同一份受验证的前门投影，两者不得独立漂移。
 
 ## 使用边界
 

@@ -6,7 +6,9 @@
 
 ## 项目现状
 
-当前版本的点火可以帮助读者把复杂材料拆成来源、命题、形式对象、论证、证明、验证、发布和现实反馈，而不是把故事、愿望、测试通过和事实证明混成一团。它同时包含认识架构、Foundation 注册表、Function OS、效果推理与机制判断、注意力与分布控制、地图集、价值宪章和现实循环。
+当前版本的点火可以帮助读者把复杂材料拆成来源、命题、形式对象、论证、证明、验证、发布和现实反馈，而不是把故事、愿望、测试通过和事实证明混成一团。它同时包含七层认识架构与 Foundation、Function OS、效果推理与机制判断、注意力与分布控制、地图集，以及 MCF 多尺度因果织体、PSD 概率系统动力学、ARN 自适应关系网络和点火迭代操作法；生命共同体价值宪章与现实反馈环约束这些能力怎样行动和修正。
+
+MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与系统边界的部分补充明确的概率和动力学语义，ARN 则处理更广泛的异质、时序与自适应关系，并把因果主张交回 MCF 审查。它们是当前仓库可运行、可验证的候选派生表示能力，不是新的真值层，也不会仅凭图、概率、关系或测试通过自动证明真实因果或科学理论。
 
 它不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。当前状态会随证据、反例、执行能力、现实反馈和缺口修正继续变化。
 
@@ -42,6 +44,9 @@ ITERATION.md
 ARCHITECTURE.md
 FOUNDATION.md
 function-os-candidate/v0.2/README.md
+docs/architecture/multiscale-causal-fabric.md
+docs/architecture/probabilistic-system-dynamics.md
+docs/architecture/adaptive-relational-network.md
 docs/USAGE.md
 AI-START-HERE.md
 llms.txt
@@ -52,7 +57,9 @@ llms.txt
    请把“当前现状”与“永久定位”区分开。
 2. 它由哪些核心部分组成？项目现状、生命共同体价值宪章、Foundation、
    Ψ₀、Function OS、效果推理与机制判断、注意力与分布控制、
-   地图集、现实反馈分别负责什么？
+   地图集、MCF、PSD、ARN、点火迭代操作法和现实反馈分别负责什么？
+   请解释 MCF、PSD 与 ARN 怎样分工、连接，以及 ARN 为什么把因果主张
+   委托给 MCF。
 3. 它对普通人的工作、学习、生活判断和长期项目有什么实际作用
    或方法启发？请给出至少 3 个具体场景，并区分哪些是仓库
    已实现能力，哪些只是可借鉴的方法。
@@ -62,6 +69,7 @@ llms.txt
    它当前的限制、风险、适用边界和不能证明的事情分别是什么？
 6. 项目当前有哪些结论仍只能标记为 candidate、pending、
    需要外部验证或等待现实反馈？
+   请明确区分“当前仓库能力”“候选派生表示”和“已证明的科学理论”。
 7. 点火怎样处理证据、反例、错误、失败、外部反馈和结论降级？
 8. 点火的生命共同体价值宪章怎样约束“什么值得做”，
    而不冒充事实证据或数学证明？
@@ -107,6 +115,8 @@ llms.txt
 - [Registry manifest](./data/foundation/registry-manifest.json) — 列出 Foundation 注册表文件及其作用。
 - [Migration summary](./data/foundation/migration-summary.json) — 记录 legacy 资产迁移覆盖与摘要。
 - [点火地图集](./docs/architecture/ignition-atlas.md) — 说明地图集只是版本化导航投影，不是新的真值来源。
+- [多尺度因果织体 MCF](./docs/architecture/multiscale-causal-fabric.md) — 说明如何组织有因果类型的跨尺度投影，以及为什么可达性和图结构不等于真实因果。
+- [概率系统动力学 PSD](./docs/architecture/probabilistic-system-dynamics.md) — 为 MCF 补充明确的概率语义、状态演化和系统边界，不默认高概率就是强因果。
 - [自适应关系网络](./docs/architecture/adaptive-relational-network.md) — 说明当前关系网络投影、扰动重构和嵌入证据摘要的操作边界。
 - [项目架构兼容入口](./docs/PROJECT-ARCHITECTURE.md) — 保留旧读者可进入的兼容路径，但不是当前权威。
 - [统一函数总表历史兼容入口](./统一函数总表/INDEX.md) — 保留旧函数表索引，用于历史追溯和兼容查看。
