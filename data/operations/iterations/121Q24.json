@@ -42,6 +42,10 @@
     { "surface": "README.md", "decision": "CHANGE", "reason": "Front door must link the method without adding a wall of process text." },
     { "surface": "docs/project-current-state.md", "decision": "CHANGE", "reason": "Current state must reflect merged ARN and candidate Q24 separately." },
     { "surface": "AI-HANDOFF.md", "decision": "CHANGE", "reason": "Cold-start agents must read current state and method before acting." },
+    { "surface": "AI-START-HERE.md", "decision": "CHANGE", "reason": "Cold-start ordering must include the iteration method and current modeling boundaries." },
+    { "surface": "llms.txt", "decision": "CHANGE", "reason": "Machine readers must see iteration-method and current capability boundaries." },
+    { "surface": "SUMMARY.md", "decision": "CHANGE", "reason": "Human navigation must include the method and current overlays." },
+    { "surface": "CHANGELOG.md", "decision": "CHANGE", "reason": "Release history must record ARN merge and Q24 candidate state." },
     { "surface": "ARCHITECTURE.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q24 is an operations method and does not add an architecture or truth layer." },
     { "surface": "FOUNDATION.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Foundation authority is unchanged." },
     { "surface": "LICENSES", "decision": "NO_CHANGE_WITH_REASON", "reason": "No license terms or scopes change." }
