@@ -1,0 +1,1689 @@
+{
+  "attractor_or_oscillation": [
+    {
+      "claim_ceiling": "workflow loop only",
+      "loop_pattern": [
+        "project",
+        "render",
+        "validate"
+      ],
+      "not_clinical_claim": true,
+      "record_id": "projection-loop-boundary"
+    }
+  ],
+  "cascade_or_spillover": [
+    {
+      "claim_ceiling": "topology-continuous time-respecting graph path under ARN model rules, not causality",
+      "not_causality": true,
+      "path": [
+        "rel-repo-1",
+        "rel-chain-1"
+      ],
+      "record_id": "projection-path",
+      "time_respecting": true
+    }
+  ],
+  "diffs": [],
+  "embedding_evidence": [
+    {
+      "action_change": "not measured",
+      "alternatives": [
+        "file existence",
+        "selection by source list"
+      ],
+      "claim_ceiling": "availability/retrieval/linkage only",
+      "conflict_exposure": "not assessed by projection",
+      "delayed_stability": "not measured",
+      "evidence": [
+        "data/architecture/adaptive-relational-network/completion-seal.json",
+        "docs/architecture/adaptive-relational-network.md",
+        "schemas/architecture/adaptive-relational-network.schema.json",
+        "schemas/architecture/adaptive-relational-network-embedding-probe.schema.json",
+        "tests/test_adaptive_relational_network.py",
+        "tests/test_adaptive_relational_network_operational.py",
+        "tests/test_adaptive_relational_network_validation_contract.py",
+        "tools/adaptive_relational_network/diff.py",
+        "tools/adaptive_relational_network/embedding.py",
+        "tools/adaptive_relational_network/projector.py",
+        "tools/adaptive_relational_network/renderer.py",
+        "tools/adaptive_relational_network/temporal.py",
+        "tools/adaptive_relational_network/validator.py"
+      ],
+      "external_availability": "source files available in repository checkout",
+      "judgment_change": "not measured",
+      "record_id": "embedding-summary",
+      "relational_linkage": "resource_reference relations to repo node",
+      "retrieval": "read by deterministic projector",
+      "transfer": "not measured"
+    }
+  ],
+  "hyper_relations": [
+    {
+      "claim_ceiling": "higher-order projection only",
+      "hyper_id": "hyper-repo-architecture-tooling",
+      "members": [
+        "repo",
+        "src-data-architecture-adaptive-relational-network-completion-seal-json",
+        "src-docs-architecture-adaptive-relational-network-md",
+        "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json"
+      ],
+      "pairwise_projection_allowed": true,
+      "preserve_as_higher_order": true,
+      "provenance": [
+        "data/architecture/adaptive-relational-network/completion-seal.json",
+        "docs/architecture/adaptive-relational-network.md",
+        "schemas/architecture/adaptive-relational-network.schema.json"
+      ],
+      "relation_class": "dependency",
+      "residue_if_projected": "Pairwise view loses joint repository/source/tooling context."
+    }
+  ],
+  "integration_responses": [
+    {
+      "alternative_explanations": [
+        "source file exists",
+        "projection rule selected it"
+      ],
+      "claim_ceiling": "projection response, not learning proof",
+      "evidence_ref": "embedding-summary",
+      "perturbation_ref": "projection-input",
+      "response_id": "projection-response",
+      "response_type": "UNKNOWN_RESPONSE"
+    }
+  ],
+  "interlayer_couplings": [
+    {
+      "claim_ceiling": "layer coupling is a model choice",
+      "coupling_id": "couple-source-architecture",
+      "coupling_type": "declared projection",
+      "from_layer": "source",
+      "provenance": [
+        "data/architecture/adaptive-relational-network/completion-seal.json"
+      ],
+      "to_layer": "architecture"
+    }
+  ],
+  "layers": [
+    {
+      "boundary_rule": "declared source files",
+      "label": "Source",
+      "layer_id": "source",
+      "model_choice": true
+    },
+    {
+      "boundary_rule": "architecture docs and schemas",
+      "label": "Architecture",
+      "layer_id": "architecture",
+      "model_choice": true
+    },
+    {
+      "boundary_rule": "validation and evidence status",
+      "label": "Evidence",
+      "layer_id": "evidence",
+      "model_choice": true
+    },
+    {
+      "boundary_rule": "tools and tests",
+      "label": "Operations",
+      "layer_id": "operations",
+      "model_choice": true
+    }
+  ],
+  "network_spec": {
+    "as_of_commit": "26fea4a00bdd43dbe772a138020c19a12f16d77b",
+    "canonical_authority": "Source files and Foundation remain authoritative; this is a derived projection.",
+    "claim_ceiling": "deterministic ARN projection only",
+    "network_id": "arn-projection-26fea4a0",
+    "not_truth_layer": true,
+    "purpose": "real-history after ARN path-state and reference closure"
+  },
+  "network_states": [
+    {
+      "active_nodes": [
+        "repo",
+        "src-data-architecture-adaptive-relational-network-completion-seal-json",
+        "src-docs-architecture-adaptive-relational-network-md",
+        "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json",
+        "src-schemas-architecture-adaptive-relational-network-schema-json",
+        "src-tests-test_adaptive_relational_network-py",
+        "src-tests-test_adaptive_relational_network_operational-py",
+        "src-tests-test_adaptive_relational_network_validation_contract-py",
+        "src-tools-adaptive_relational_network-diff-py",
+        "src-tools-adaptive_relational_network-embedding-py",
+        "src-tools-adaptive_relational_network-projector-py",
+        "src-tools-adaptive_relational_network-renderer-py",
+        "src-tools-adaptive_relational_network-temporal-py",
+        "src-tools-adaptive_relational_network-validator-py"
+      ],
+      "active_relations": [
+        "rel-repo-1",
+        "rel-chain-1",
+        "rel-backdated-1",
+        "rel-repo-2",
+        "rel-chain-2",
+        "rel-backdated-2",
+        "rel-repo-3",
+        "rel-chain-3",
+        "rel-backdated-3",
+        "rel-repo-4",
+        "rel-chain-4",
+        "rel-backdated-4",
+        "rel-repo-5",
+        "rel-chain-5",
+        "rel-backdated-5",
+        "rel-repo-6",
+        "rel-chain-6",
+        "rel-backdated-6",
+        "rel-repo-7",
+        "rel-chain-7",
+        "rel-backdated-7",
+        "rel-repo-8",
+        "rel-chain-8",
+        "rel-backdated-8",
+        "rel-repo-9",
+        "rel-chain-9",
+        "rel-backdated-9",
+        "rel-repo-10",
+        "rel-chain-10",
+        "rel-backdated-10",
+        "rel-repo-11",
+        "rel-chain-11",
+        "rel-backdated-11",
+        "rel-repo-12",
+        "rel-chain-12",
+        "rel-backdated-12",
+        "rel-repo-13",
+        "rel-chain-13",
+        "rel-backdated-13"
+      ],
+      "as_of_time": 40,
+      "state_id": "state-projected",
+      "unknowns": [
+        "real-world integration"
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "Repository state",
+      "layers": [
+        "source"
+      ],
+      "node_id": "repo",
+      "node_type": "repository",
+      "provenance": [
+        "git commit"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "data/architecture/adaptive-relational-network/completion-seal.json",
+      "layers": [
+        "architecture"
+      ],
+      "node_id": "src-data-architecture-adaptive-relational-network-completion-seal-json",
+      "node_type": "source_file",
+      "provenance": [
+        "data/architecture/adaptive-relational-network/completion-seal.json"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "docs/architecture/adaptive-relational-network.md",
+      "layers": [
+        "architecture"
+      ],
+      "node_id": "src-docs-architecture-adaptive-relational-network-md",
+      "node_type": "source_file",
+      "provenance": [
+        "docs/architecture/adaptive-relational-network.md"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "schemas/architecture/adaptive-relational-network-embedding-probe.schema.json",
+      "layers": [
+        "architecture"
+      ],
+      "node_id": "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json",
+      "node_type": "source_file",
+      "provenance": [
+        "schemas/architecture/adaptive-relational-network-embedding-probe.schema.json"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "schemas/architecture/adaptive-relational-network.schema.json",
+      "layers": [
+        "architecture"
+      ],
+      "node_id": "src-schemas-architecture-adaptive-relational-network-schema-json",
+      "node_type": "source_file",
+      "provenance": [
+        "schemas/architecture/adaptive-relational-network.schema.json"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "tests/test_adaptive_relational_network.py",
+      "layers": [
+        "operations"
+      ],
+      "node_id": "src-tests-test_adaptive_relational_network-py",
+      "node_type": "source_file",
+      "provenance": [
+        "tests/test_adaptive_relational_network.py"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "tests/test_adaptive_relational_network_operational.py",
+      "layers": [
+        "operations"
+      ],
+      "node_id": "src-tests-test_adaptive_relational_network_operational-py",
+      "node_type": "source_file",
+      "provenance": [
+        "tests/test_adaptive_relational_network_operational.py"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "tests/test_adaptive_relational_network_validation_contract.py",
+      "layers": [
+        "operations"
+      ],
+      "node_id": "src-tests-test_adaptive_relational_network_validation_contract-py",
+      "node_type": "source_file",
+      "provenance": [
+        "tests/test_adaptive_relational_network_validation_contract.py"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "tools/adaptive_relational_network/diff.py",
+      "layers": [
+        "operations"
+      ],
+      "node_id": "src-tools-adaptive_relational_network-diff-py",
+      "node_type": "source_file",
+      "provenance": [
+        "tools/adaptive_relational_network/diff.py"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "tools/adaptive_relational_network/embedding.py",
+      "layers": [
+        "operations"
+      ],
+      "node_id": "src-tools-adaptive_relational_network-embedding-py",
+      "node_type": "source_file",
+      "provenance": [
+        "tools/adaptive_relational_network/embedding.py"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "tools/adaptive_relational_network/projector.py",
+      "layers": [
+        "operations"
+      ],
+      "node_id": "src-tools-adaptive_relational_network-projector-py",
+      "node_type": "source_file",
+      "provenance": [
+        "tools/adaptive_relational_network/projector.py"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "tools/adaptive_relational_network/renderer.py",
+      "layers": [
+        "operations"
+      ],
+      "node_id": "src-tools-adaptive_relational_network-renderer-py",
+      "node_type": "source_file",
+      "provenance": [
+        "tools/adaptive_relational_network/renderer.py"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "tools/adaptive_relational_network/temporal.py",
+      "layers": [
+        "operations"
+      ],
+      "node_id": "src-tools-adaptive_relational_network-temporal-py",
+      "node_type": "source_file",
+      "provenance": [
+        "tools/adaptive_relational_network/temporal.py"
+      ],
+      "uncertainty": "derived from declared repository source"
+    },
+    {
+      "claim_ceiling": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+      "label": "tools/adaptive_relational_network/validator.py",
+      "layers": [
+        "operations"
+      ],
+      "node_id": "src-tools-adaptive_relational_network-validator-py",
+      "node_type": "source_file",
+      "provenance": [
+        "tools/adaptive_relational_network/validator.py"
+      ],
+      "uncertainty": "derived from declared repository source"
+    }
+  ],
+  "perturbations": [
+    {
+      "claim_ceiling": "projection perturbation only",
+      "content_ref": "26fea4a00bdd43dbe772a138020c19a12f16d77b",
+      "input_type": "repository_state",
+      "perturbation_id": "projection-input",
+      "provenance": [
+        "git commit"
+      ],
+      "target_nodes": [
+        "repo",
+        "src-data-architecture-adaptive-relational-network-completion-seal-json",
+        "src-docs-architecture-adaptive-relational-network-md",
+        "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json",
+        "src-schemas-architecture-adaptive-relational-network-schema-json",
+        "src-tests-test_adaptive_relational_network-py",
+        "src-tests-test_adaptive_relational_network_operational-py",
+        "src-tests-test_adaptive_relational_network_validation_contract-py",
+        "src-tools-adaptive_relational_network-diff-py",
+        "src-tools-adaptive_relational_network-embedding-py",
+        "src-tools-adaptive_relational_network-projector-py",
+        "src-tools-adaptive_relational_network-renderer-py",
+        "src-tools-adaptive_relational_network-temporal-py",
+        "src-tools-adaptive_relational_network-validator-py"
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "claim_ceiling": "projection only",
+      "not_canonical": true,
+      "omitted_dimensions": [
+        "private cognition",
+        "real-world learning",
+        "unstated relations"
+      ],
+      "projection_id": "projection-self",
+      "projection_rules": [
+        "declared source paths become source_file nodes",
+        "repo points to each source"
+      ],
+      "source_network": "arn-projection-26fea4a0"
+    }
+  ],
+  "reconfiguration_episodes": [
+    {
+      "baseline_state": "source-list",
+      "changed_nodes": [
+        "src-data-architecture-adaptive-relational-network-completion-seal-json",
+        "src-docs-architecture-adaptive-relational-network-md",
+        "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json",
+        "src-schemas-architecture-adaptive-relational-network-schema-json",
+        "src-tests-test_adaptive_relational_network-py",
+        "src-tests-test_adaptive_relational_network_operational-py",
+        "src-tests-test_adaptive_relational_network_validation_contract-py",
+        "src-tools-adaptive_relational_network-diff-py",
+        "src-tools-adaptive_relational_network-embedding-py",
+        "src-tools-adaptive_relational_network-projector-py",
+        "src-tools-adaptive_relational_network-renderer-py",
+        "src-tools-adaptive_relational_network-temporal-py",
+        "src-tools-adaptive_relational_network-validator-py"
+      ],
+      "changed_relations": [
+        "rel-repo-1",
+        "rel-chain-1",
+        "rel-backdated-1",
+        "rel-repo-2",
+        "rel-chain-2",
+        "rel-backdated-2",
+        "rel-repo-3",
+        "rel-chain-3",
+        "rel-backdated-3",
+        "rel-repo-4",
+        "rel-chain-4",
+        "rel-backdated-4",
+        "rel-repo-5",
+        "rel-chain-5",
+        "rel-backdated-5",
+        "rel-repo-6",
+        "rel-chain-6",
+        "rel-backdated-6",
+        "rel-repo-7",
+        "rel-chain-7",
+        "rel-backdated-7",
+        "rel-repo-8",
+        "rel-chain-8",
+        "rel-backdated-8",
+        "rel-repo-9",
+        "rel-chain-9",
+        "rel-backdated-9",
+        "rel-repo-10",
+        "rel-chain-10",
+        "rel-backdated-10",
+        "rel-repo-11",
+        "rel-chain-11",
+        "rel-backdated-11",
+        "rel-repo-12",
+        "rel-chain-12",
+        "rel-backdated-12",
+        "rel-repo-13",
+        "rel-chain-13",
+        "rel-backdated-13"
+      ],
+      "claim_ceiling": "projection episode only",
+      "delay": "repository order only",
+      "episode_id": "projection-episode",
+      "oscillation": "not assessed",
+      "post_state": "state-projected",
+      "residue": [
+        "projection cannot prove integration"
+      ],
+      "unchanged_nodes": [
+        "repo"
+      ],
+      "unchanged_relations": []
+    }
+  ],
+  "relations": [
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "data/architecture/adaptive-relational-network/completion-seal.json"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-1",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-data-architecture-adaptive-relational-network-completion-seal-json",
+      "temporal_bounds": {
+        "end": 2,
+        "start": 1
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "data/architecture/adaptive-relational-network/completion-seal.json"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-1",
+      "sign": "neutral",
+      "source": "src-data-architecture-adaptive-relational-network-completion-seal-json",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 2.5,
+        "start": 2.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "data/architecture/adaptive-relational-network/completion-seal.json"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-1",
+      "sign": "neutral",
+      "source": "src-data-architecture-adaptive-relational-network-completion-seal-json",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 0.75,
+        "start": 0.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "docs/architecture/adaptive-relational-network.md"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-2",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-docs-architecture-adaptive-relational-network-md",
+      "temporal_bounds": {
+        "end": 3,
+        "start": 2
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "docs/architecture/adaptive-relational-network.md"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-2",
+      "sign": "neutral",
+      "source": "src-docs-architecture-adaptive-relational-network-md",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 3.5,
+        "start": 3.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "docs/architecture/adaptive-relational-network.md"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-2",
+      "sign": "neutral",
+      "source": "src-docs-architecture-adaptive-relational-network-md",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 1.75,
+        "start": 1.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "schemas/architecture/adaptive-relational-network-embedding-probe.schema.json"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-3",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json",
+      "temporal_bounds": {
+        "end": 4,
+        "start": 3
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "schemas/architecture/adaptive-relational-network-embedding-probe.schema.json"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-3",
+      "sign": "neutral",
+      "source": "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 4.5,
+        "start": 4.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "schemas/architecture/adaptive-relational-network-embedding-probe.schema.json"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-3",
+      "sign": "neutral",
+      "source": "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 2.75,
+        "start": 2.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "schemas/architecture/adaptive-relational-network.schema.json"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-4",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-schemas-architecture-adaptive-relational-network-schema-json",
+      "temporal_bounds": {
+        "end": 5,
+        "start": 4
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "schemas/architecture/adaptive-relational-network.schema.json"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-4",
+      "sign": "neutral",
+      "source": "src-schemas-architecture-adaptive-relational-network-schema-json",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 5.5,
+        "start": 5.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "architecture",
+      "provenance": [
+        "schemas/architecture/adaptive-relational-network.schema.json"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-4",
+      "sign": "neutral",
+      "source": "src-schemas-architecture-adaptive-relational-network-schema-json",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 3.75,
+        "start": 3.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tests/test_adaptive_relational_network.py"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-5",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-tests-test_adaptive_relational_network-py",
+      "temporal_bounds": {
+        "end": 6,
+        "start": 5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tests/test_adaptive_relational_network.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-5",
+      "sign": "neutral",
+      "source": "src-tests-test_adaptive_relational_network-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 6.5,
+        "start": 6.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tests/test_adaptive_relational_network.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-5",
+      "sign": "neutral",
+      "source": "src-tests-test_adaptive_relational_network-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 4.75,
+        "start": 4.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tests/test_adaptive_relational_network_operational.py"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-6",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-tests-test_adaptive_relational_network_operational-py",
+      "temporal_bounds": {
+        "end": 7,
+        "start": 6
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tests/test_adaptive_relational_network_operational.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-6",
+      "sign": "neutral",
+      "source": "src-tests-test_adaptive_relational_network_operational-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 7.5,
+        "start": 7.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tests/test_adaptive_relational_network_operational.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-6",
+      "sign": "neutral",
+      "source": "src-tests-test_adaptive_relational_network_operational-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 5.75,
+        "start": 5.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tests/test_adaptive_relational_network_validation_contract.py"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-7",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-tests-test_adaptive_relational_network_validation_contract-py",
+      "temporal_bounds": {
+        "end": 8,
+        "start": 7
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tests/test_adaptive_relational_network_validation_contract.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-7",
+      "sign": "neutral",
+      "source": "src-tests-test_adaptive_relational_network_validation_contract-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 8.5,
+        "start": 8.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tests/test_adaptive_relational_network_validation_contract.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-7",
+      "sign": "neutral",
+      "source": "src-tests-test_adaptive_relational_network_validation_contract-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 6.75,
+        "start": 6.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/diff.py"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-8",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-tools-adaptive_relational_network-diff-py",
+      "temporal_bounds": {
+        "end": 9,
+        "start": 8
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/diff.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-8",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-diff-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 9.5,
+        "start": 9.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/diff.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-8",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-diff-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 7.75,
+        "start": 7.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/embedding.py"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-9",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-tools-adaptive_relational_network-embedding-py",
+      "temporal_bounds": {
+        "end": 10,
+        "start": 9
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/embedding.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-9",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-embedding-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 10.5,
+        "start": 10.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/embedding.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-9",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-embedding-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 8.75,
+        "start": 8.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/projector.py"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-10",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-tools-adaptive_relational_network-projector-py",
+      "temporal_bounds": {
+        "end": 11,
+        "start": 10
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/projector.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-10",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-projector-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 11.5,
+        "start": 11.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/projector.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-10",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-projector-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 9.75,
+        "start": 9.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/renderer.py"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-11",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-tools-adaptive_relational_network-renderer-py",
+      "temporal_bounds": {
+        "end": 12,
+        "start": 11
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/renderer.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-11",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-renderer-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 12.5,
+        "start": 12.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/renderer.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-11",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-renderer-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 10.75,
+        "start": 10.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/temporal.py"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-12",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-tools-adaptive_relational_network-temporal-py",
+      "temporal_bounds": {
+        "end": 13,
+        "start": 12
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/temporal.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-12",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-temporal-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 13.5,
+        "start": 13.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/temporal.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-12",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-temporal-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 11.75,
+        "start": 11.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/validator.py"
+      ],
+      "relation_class": "resource_reference",
+      "relation_id": "rel-repo-13",
+      "sign": "neutral",
+      "source": "repo",
+      "target": "src-tools-adaptive_relational_network-validator-py",
+      "temporal_bounds": {
+        "end": 14,
+        "start": 13
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/validator.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-chain-13",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-validator-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 14.5,
+        "start": 14.25
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    },
+    {
+      "claim_ceiling": "relation projected from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not causality or truth",
+      "conditions": [
+        "repository projection"
+      ],
+      "direction": "directed",
+      "layer": "operations",
+      "provenance": [
+        "tools/adaptive_relational_network/validator.py"
+      ],
+      "relation_class": "dependency",
+      "relation_id": "rel-backdated-13",
+      "sign": "neutral",
+      "source": "src-tools-adaptive_relational_network-validator-py",
+      "target": "repo",
+      "temporal_bounds": {
+        "end": 12.75,
+        "start": 12.5
+      },
+      "uncertainty": "projection uncertainty",
+      "weight": 1.0
+    }
+  ],
+  "temporal_activations": [
+    {
+      "activation_id": "act-rel-repo-1",
+      "activation_state": "active",
+      "end": 2,
+      "not_integration_proof": true,
+      "start": 1,
+      "target_ref": "rel-repo-1"
+    },
+    {
+      "activation_id": "act-rel-chain-1",
+      "activation_state": "active",
+      "end": 2.5,
+      "not_integration_proof": true,
+      "start": 2.25,
+      "target_ref": "rel-chain-1"
+    },
+    {
+      "activation_id": "act-rel-backdated-1",
+      "activation_state": "active",
+      "end": 0.75,
+      "not_integration_proof": true,
+      "start": 0.5,
+      "target_ref": "rel-backdated-1"
+    },
+    {
+      "activation_id": "act-rel-repo-2",
+      "activation_state": "active",
+      "end": 3,
+      "not_integration_proof": true,
+      "start": 2,
+      "target_ref": "rel-repo-2"
+    },
+    {
+      "activation_id": "act-rel-chain-2",
+      "activation_state": "active",
+      "end": 3.5,
+      "not_integration_proof": true,
+      "start": 3.25,
+      "target_ref": "rel-chain-2"
+    },
+    {
+      "activation_id": "act-rel-backdated-2",
+      "activation_state": "active",
+      "end": 1.75,
+      "not_integration_proof": true,
+      "start": 1.5,
+      "target_ref": "rel-backdated-2"
+    },
+    {
+      "activation_id": "act-rel-repo-3",
+      "activation_state": "active",
+      "end": 4,
+      "not_integration_proof": true,
+      "start": 3,
+      "target_ref": "rel-repo-3"
+    },
+    {
+      "activation_id": "act-rel-chain-3",
+      "activation_state": "active",
+      "end": 4.5,
+      "not_integration_proof": true,
+      "start": 4.25,
+      "target_ref": "rel-chain-3"
+    },
+    {
+      "activation_id": "act-rel-backdated-3",
+      "activation_state": "active",
+      "end": 2.75,
+      "not_integration_proof": true,
+      "start": 2.5,
+      "target_ref": "rel-backdated-3"
+    },
+    {
+      "activation_id": "act-rel-repo-4",
+      "activation_state": "active",
+      "end": 5,
+      "not_integration_proof": true,
+      "start": 4,
+      "target_ref": "rel-repo-4"
+    },
+    {
+      "activation_id": "act-rel-chain-4",
+      "activation_state": "active",
+      "end": 5.5,
+      "not_integration_proof": true,
+      "start": 5.25,
+      "target_ref": "rel-chain-4"
+    },
+    {
+      "activation_id": "act-rel-backdated-4",
+      "activation_state": "active",
+      "end": 3.75,
+      "not_integration_proof": true,
+      "start": 3.5,
+      "target_ref": "rel-backdated-4"
+    },
+    {
+      "activation_id": "act-rel-repo-5",
+      "activation_state": "active",
+      "end": 6,
+      "not_integration_proof": true,
+      "start": 5,
+      "target_ref": "rel-repo-5"
+    },
+    {
+      "activation_id": "act-rel-chain-5",
+      "activation_state": "active",
+      "end": 6.5,
+      "not_integration_proof": true,
+      "start": 6.25,
+      "target_ref": "rel-chain-5"
+    },
+    {
+      "activation_id": "act-rel-backdated-5",
+      "activation_state": "active",
+      "end": 4.75,
+      "not_integration_proof": true,
+      "start": 4.5,
+      "target_ref": "rel-backdated-5"
+    },
+    {
+      "activation_id": "act-rel-repo-6",
+      "activation_state": "active",
+      "end": 7,
+      "not_integration_proof": true,
+      "start": 6,
+      "target_ref": "rel-repo-6"
+    },
+    {
+      "activation_id": "act-rel-chain-6",
+      "activation_state": "active",
+      "end": 7.5,
+      "not_integration_proof": true,
+      "start": 7.25,
+      "target_ref": "rel-chain-6"
+    },
+    {
+      "activation_id": "act-rel-backdated-6",
+      "activation_state": "active",
+      "end": 5.75,
+      "not_integration_proof": true,
+      "start": 5.5,
+      "target_ref": "rel-backdated-6"
+    },
+    {
+      "activation_id": "act-rel-repo-7",
+      "activation_state": "active",
+      "end": 8,
+      "not_integration_proof": true,
+      "start": 7,
+      "target_ref": "rel-repo-7"
+    },
+    {
+      "activation_id": "act-rel-chain-7",
+      "activation_state": "active",
+      "end": 8.5,
+      "not_integration_proof": true,
+      "start": 8.25,
+      "target_ref": "rel-chain-7"
+    },
+    {
+      "activation_id": "act-rel-backdated-7",
+      "activation_state": "active",
+      "end": 6.75,
+      "not_integration_proof": true,
+      "start": 6.5,
+      "target_ref": "rel-backdated-7"
+    },
+    {
+      "activation_id": "act-rel-repo-8",
+      "activation_state": "active",
+      "end": 9,
+      "not_integration_proof": true,
+      "start": 8,
+      "target_ref": "rel-repo-8"
+    },
+    {
+      "activation_id": "act-rel-chain-8",
+      "activation_state": "active",
+      "end": 9.5,
+      "not_integration_proof": true,
+      "start": 9.25,
+      "target_ref": "rel-chain-8"
+    },
+    {
+      "activation_id": "act-rel-backdated-8",
+      "activation_state": "active",
+      "end": 7.75,
+      "not_integration_proof": true,
+      "start": 7.5,
+      "target_ref": "rel-backdated-8"
+    },
+    {
+      "activation_id": "act-rel-repo-9",
+      "activation_state": "active",
+      "end": 10,
+      "not_integration_proof": true,
+      "start": 9,
+      "target_ref": "rel-repo-9"
+    },
+    {
+      "activation_id": "act-rel-chain-9",
+      "activation_state": "active",
+      "end": 10.5,
+      "not_integration_proof": true,
+      "start": 10.25,
+      "target_ref": "rel-chain-9"
+    },
+    {
+      "activation_id": "act-rel-backdated-9",
+      "activation_state": "active",
+      "end": 8.75,
+      "not_integration_proof": true,
+      "start": 8.5,
+      "target_ref": "rel-backdated-9"
+    },
+    {
+      "activation_id": "act-rel-repo-10",
+      "activation_state": "active",
+      "end": 11,
+      "not_integration_proof": true,
+      "start": 10,
+      "target_ref": "rel-repo-10"
+    },
+    {
+      "activation_id": "act-rel-chain-10",
+      "activation_state": "active",
+      "end": 11.5,
+      "not_integration_proof": true,
+      "start": 11.25,
+      "target_ref": "rel-chain-10"
+    },
+    {
+      "activation_id": "act-rel-backdated-10",
+      "activation_state": "active",
+      "end": 9.75,
+      "not_integration_proof": true,
+      "start": 9.5,
+      "target_ref": "rel-backdated-10"
+    },
+    {
+      "activation_id": "act-rel-repo-11",
+      "activation_state": "active",
+      "end": 12,
+      "not_integration_proof": true,
+      "start": 11,
+      "target_ref": "rel-repo-11"
+    },
+    {
+      "activation_id": "act-rel-chain-11",
+      "activation_state": "active",
+      "end": 12.5,
+      "not_integration_proof": true,
+      "start": 12.25,
+      "target_ref": "rel-chain-11"
+    },
+    {
+      "activation_id": "act-rel-backdated-11",
+      "activation_state": "active",
+      "end": 10.75,
+      "not_integration_proof": true,
+      "start": 10.5,
+      "target_ref": "rel-backdated-11"
+    },
+    {
+      "activation_id": "act-rel-repo-12",
+      "activation_state": "active",
+      "end": 13,
+      "not_integration_proof": true,
+      "start": 12,
+      "target_ref": "rel-repo-12"
+    },
+    {
+      "activation_id": "act-rel-chain-12",
+      "activation_state": "active",
+      "end": 13.5,
+      "not_integration_proof": true,
+      "start": 13.25,
+      "target_ref": "rel-chain-12"
+    },
+    {
+      "activation_id": "act-rel-backdated-12",
+      "activation_state": "active",
+      "end": 11.75,
+      "not_integration_proof": true,
+      "start": 11.5,
+      "target_ref": "rel-backdated-12"
+    },
+    {
+      "activation_id": "act-rel-repo-13",
+      "activation_state": "active",
+      "end": 14,
+      "not_integration_proof": true,
+      "start": 13,
+      "target_ref": "rel-repo-13"
+    },
+    {
+      "activation_id": "act-rel-chain-13",
+      "activation_state": "active",
+      "end": 14.5,
+      "not_integration_proof": true,
+      "start": 14.25,
+      "target_ref": "rel-chain-13"
+    },
+    {
+      "activation_id": "act-rel-backdated-13",
+      "activation_state": "active",
+      "end": 12.75,
+      "not_integration_proof": true,
+      "start": 12.5,
+      "target_ref": "rel-backdated-13"
+    }
+  ],
+  "unmapped_residue": [
+    {
+      "claim_ceiling": "residue",
+      "description": "Projection does not prove integration, truth, value or causality.",
+      "residue_id": "projection-residue",
+      "residue_type": "unverified_integration"
+    }
+  ]
+}

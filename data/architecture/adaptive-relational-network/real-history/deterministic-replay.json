@@ -1,0 +1,43 @@
+{
+  "after_commit": "26fea4a00bdd43dbe772a138020c19a12f16d77b",
+  "after_hash": "d2de2410b48824fb68ff72634719eb12813514f8b0f3404c353abbc748177ae2",
+  "after_source_count": 13,
+  "before_commit": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
+  "before_hash": "b108f598999de7b208e2419013ef7ab221d05b39bb1cb00f166fdfd584c17837",
+  "before_source_count": 0,
+  "diff_hash": "45da9d322e98d7b582f3694f0d11714a7e3c0135219df09f059de818e90f85cb",
+  "embedding_hash": "80b47b94ee60bf074ebcc8f6912cb1075bd28b2261b34e313da5dddc64121313",
+  "hash_change_reason": "121Q23E added explicit typed external_refs to NetworkDiff and updated proof after_commit.",
+  "invalid_static_path": {
+    "claim_ceiling": "Static adjacency or temporal ordering cannot invent a topology-continuous time-respecting graph path.",
+    "is_false_positive": true,
+    "path": [
+      "rel-repo-1",
+      "rel-repo-2"
+    ],
+    "static_exists": true,
+    "time_respecting": false,
+    "time_respecting_graph_path": false,
+    "time_respecting_sequence": true
+  },
+  "pairwise_hash": "ad73fc5527efa17481dd9178b4fcdc593b7f4ec7d467e320b179ec00f6cb41ea",
+  "temporally_invalid_connected_path": {
+    "claim_ceiling": "Topology continuity alone cannot satisfy ARN temporal ordering.",
+    "path": [
+      "rel-repo-1",
+      "rel-backdated-1"
+    ],
+    "time_respecting_graph_path": false,
+    "time_respecting_sequence": false
+  },
+  "valid_graph_path": [
+    "rel-repo-1",
+    "rel-chain-1"
+  ],
+  "valid_path": [
+    "rel-repo-1",
+    "rel-chain-1"
+  ],
+  "valid_path_time_respecting_graph_path": true,
+  "valid_path_time_respecting_sequence": true
+}

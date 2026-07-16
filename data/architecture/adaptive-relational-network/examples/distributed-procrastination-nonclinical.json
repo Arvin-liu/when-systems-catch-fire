@@ -1,0 +1,346 @@
+{
+  "network_spec": {
+    "network_id": "arn-example-distributed-procrastination-nonclinical",
+    "as_of_commit": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
+    "purpose": "distributed procrastination non-clinical illustration",
+    "canonical_authority": "Foundation and source files remain authoritative; ARN is projection only.",
+    "not_truth_layer": true,
+    "claim_ceiling": "illustrative ARN candidate"
+  },
+  "nodes": [
+    {
+      "node_id": "n-info",
+      "label": "new information",
+      "node_type": "information",
+      "layers": [
+        "knowledge"
+      ],
+      "provenance": [
+        "121Q23 example"
+      ],
+      "uncertainty": "medium",
+      "claim_ceiling": "example"
+    },
+    {
+      "node_id": "n-judgment",
+      "label": "judgment",
+      "node_type": "judgment",
+      "layers": [
+        "judgment"
+      ],
+      "provenance": [
+        "121Q23 example"
+      ],
+      "uncertainty": "medium",
+      "claim_ceiling": "example"
+    },
+    {
+      "node_id": "n-action",
+      "label": "action trace",
+      "node_type": "action",
+      "layers": [
+        "action"
+      ],
+      "provenance": [
+        "121Q23 example"
+      ],
+      "uncertainty": "medium",
+      "claim_ceiling": "example"
+    },
+    {
+      "node_id": "n-value",
+      "label": "value constraint",
+      "node_type": "value",
+      "layers": [
+        "value"
+      ],
+      "provenance": [
+        "121Q23 example"
+      ],
+      "uncertainty": "medium",
+      "claim_ceiling": "example"
+    }
+  ],
+  "relations": [
+    {
+      "relation_id": "r-info-judgment",
+      "source": "n-info",
+      "target": "n-judgment",
+      "relation_class": "evidential_support",
+      "direction": "directed",
+      "sign": "positive",
+      "weight": 0.4,
+      "conditions": [
+        "if conflict exposed"
+      ],
+      "layer": "knowledge",
+      "temporal_bounds": {
+        "start": 1,
+        "end": 3
+      },
+      "provenance": [
+        "121Q23 example"
+      ],
+      "uncertainty": "medium",
+      "claim_ceiling": "support relation, not truth"
+    },
+    {
+      "relation_id": "r-judgment-action",
+      "source": "n-judgment",
+      "target": "n-action",
+      "relation_class": "action_affordance",
+      "direction": "directed",
+      "sign": "mixed",
+      "weight": 0.3,
+      "conditions": [
+        "context available"
+      ],
+      "layer": "action",
+      "temporal_bounds": {
+        "start": 3,
+        "end": 5
+      },
+      "provenance": [
+        "121Q23 example"
+      ],
+      "uncertainty": "medium",
+      "claim_ceiling": "affordance, not mechanism proof"
+    }
+  ],
+  "hyper_relations": [
+    {
+      "hyper_id": "h-info-value-action",
+      "members": [
+        "n-info",
+        "n-value",
+        "n-action"
+      ],
+      "relation_class": "value_priority",
+      "preserve_as_higher_order": true,
+      "pairwise_projection_allowed": false,
+      "residue_if_projected": "loses joint value-action constraint",
+      "provenance": [
+        "121Q23 example"
+      ],
+      "claim_ceiling": "higher-order relation only"
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "knowledge",
+      "label": "Knowledge",
+      "boundary_rule": "information and source relations",
+      "model_choice": true
+    },
+    {
+      "layer_id": "judgment",
+      "label": "Judgment",
+      "boundary_rule": "claims and belief-like judgments",
+      "model_choice": true
+    },
+    {
+      "layer_id": "action",
+      "label": "Action",
+      "boundary_rule": "observable action traces",
+      "model_choice": true
+    },
+    {
+      "layer_id": "value",
+      "label": "Value",
+      "boundary_rule": "normative constraints",
+      "model_choice": true
+    }
+  ],
+  "interlayer_couplings": [
+    {
+      "coupling_id": "c-knowledge-judgment",
+      "from_layer": "knowledge",
+      "to_layer": "judgment",
+      "coupling_type": "support/conflict exposure",
+      "provenance": [
+        "121Q23 example"
+      ],
+      "claim_ceiling": "coupling hypothesis only"
+    }
+  ],
+  "temporal_activations": [
+    {
+      "activation_id": "ta-info",
+      "target_ref": "r-info-judgment",
+      "start": 1,
+      "end": 3,
+      "activation_state": "active",
+      "not_integration_proof": true
+    },
+    {
+      "activation_id": "ta-action",
+      "target_ref": "r-judgment-action",
+      "start": 4,
+      "end": 5,
+      "activation_state": "active",
+      "not_integration_proof": true
+    }
+  ],
+  "network_states": [
+    {
+      "state_id": "s0",
+      "active_nodes": [
+        "n-info"
+      ],
+      "active_relations": [],
+      "unknowns": [
+        "n-judgment"
+      ],
+      "as_of_time": 0
+    },
+    {
+      "state_id": "s1",
+      "active_nodes": [
+        "n-info",
+        "n-judgment"
+      ],
+      "active_relations": [
+        "r-info-judgment"
+      ],
+      "unknowns": [
+        "delayed stability"
+      ],
+      "as_of_time": 3
+    }
+  ],
+  "perturbations": [
+    {
+      "perturbation_id": "p1",
+      "input_type": "new_information",
+      "content_ref": "distributed procrastination non-clinical illustration",
+      "target_nodes": [
+        "n-info",
+        "n-judgment"
+      ],
+      "provenance": [
+        "121Q23 example"
+      ],
+      "claim_ceiling": "perturbation record"
+    }
+  ],
+  "integration_responses": [
+    {
+      "response_id": "ir1",
+      "perturbation_ref": "p1",
+      "response_type": "DEFERRED_UPDATE",
+      "evidence_ref": "embed1",
+      "alternative_explanations": [
+        "compliance",
+        "context pressure",
+        "temporary retrieval"
+      ],
+      "claim_ceiling": "response classification, not psychological proof"
+    }
+  ],
+  "reconfiguration_episodes": [
+    {
+      "episode_id": "ep1",
+      "baseline_state": "s0",
+      "post_state": "s1",
+      "changed_nodes": [
+        "n-judgment"
+      ],
+      "unchanged_nodes": [
+        "n-value"
+      ],
+      "changed_relations": [
+        "r-info-judgment"
+      ],
+      "unchanged_relations": [],
+      "delay": "short illustrative delay",
+      "oscillation": "not established",
+      "residue": [
+        "delayed stability unknown"
+      ],
+      "claim_ceiling": "local reconfiguration candidate"
+    }
+  ],
+  "attractor_or_oscillation": [
+    {
+      "record_id": "ao1",
+      "loop_pattern": [
+        "retrieve",
+        "delay",
+        "retrieve"
+      ],
+      "not_clinical_claim": true,
+      "claim_ceiling": "loop description only"
+    }
+  ],
+  "cascade_or_spillover": [
+    {
+      "record_id": "cs1",
+      "path": [
+        "r-info-judgment",
+        "r-judgment-action"
+      ],
+      "time_respecting": true,
+      "not_causality": true,
+      "claim_ceiling": "spillover path, not causality"
+    }
+  ],
+  "embedding_evidence": [
+    {
+      "record_id": "embed1",
+      "external_availability": "available in AI or docs",
+      "retrieval": "may retrieve on prompt",
+      "relational_linkage": "linked to judgment/action nodes",
+      "conflict_exposure": "explicit alternatives recorded",
+      "judgment_change": "limited evidence",
+      "action_change": "not sufficient alone",
+      "transfer": "requires novel context probe",
+      "delayed_stability": "pending retest",
+      "alternatives": [
+        "memorized phrase",
+        "social compliance"
+      ],
+      "evidence": [
+        "example record"
+      ],
+      "claim_ceiling": "embedding evidence axes only"
+    }
+  ],
+  "projections": [
+    {
+      "projection_id": "proj1",
+      "source_network": "arn-example-distributed-procrastination-nonclinical",
+      "projection_rules": [
+        "show layers and temporal order"
+      ],
+      "omitted_dimensions": [
+        "private mental state"
+      ],
+      "not_canonical": true,
+      "claim_ceiling": "projection only"
+    }
+  ],
+  "diffs": [
+    {
+      "diff_id": "diff1",
+      "from_ref": "s0",
+      "to_ref": "s1",
+      "node_changes": [
+        "n-judgment activated"
+      ],
+      "relation_changes": [
+        "r-info-judgment active"
+      ],
+      "layer_changes": [],
+      "boundary_changes": [],
+      "claim_ceiling": "representation diff only"
+    }
+  ],
+  "unmapped_residue": [
+    {
+      "residue_id": "res1",
+      "residue_type": "unverified_integration",
+      "description": "Durable integration is not established.",
+      "claim_ceiling": "residue"
+    }
+  ]
+}

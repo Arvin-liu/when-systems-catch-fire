@@ -1,0 +1,117 @@
+{
+  "added_hyper_relations": [
+    "hyper-repo-architecture-tooling"
+  ],
+  "added_nodes": [
+    "src-data-architecture-adaptive-relational-network-completion-seal-json",
+    "src-docs-architecture-adaptive-relational-network-md",
+    "src-schemas-architecture-adaptive-relational-network-embedding-probe-schema-json",
+    "src-schemas-architecture-adaptive-relational-network-schema-json",
+    "src-tests-test_adaptive_relational_network-py",
+    "src-tests-test_adaptive_relational_network_operational-py",
+    "src-tests-test_adaptive_relational_network_validation_contract-py",
+    "src-tools-adaptive_relational_network-diff-py",
+    "src-tools-adaptive_relational_network-embedding-py",
+    "src-tools-adaptive_relational_network-projector-py",
+    "src-tools-adaptive_relational_network-renderer-py",
+    "src-tools-adaptive_relational_network-temporal-py",
+    "src-tools-adaptive_relational_network-validator-py"
+  ],
+  "added_relations": [
+    "rel-backdated-1",
+    "rel-backdated-10",
+    "rel-backdated-11",
+    "rel-backdated-12",
+    "rel-backdated-13",
+    "rel-backdated-2",
+    "rel-backdated-3",
+    "rel-backdated-4",
+    "rel-backdated-5",
+    "rel-backdated-6",
+    "rel-backdated-7",
+    "rel-backdated-8",
+    "rel-backdated-9",
+    "rel-chain-1",
+    "rel-chain-10",
+    "rel-chain-11",
+    "rel-chain-12",
+    "rel-chain-13",
+    "rel-chain-2",
+    "rel-chain-3",
+    "rel-chain-4",
+    "rel-chain-5",
+    "rel-chain-6",
+    "rel-chain-7",
+    "rel-chain-8",
+    "rel-chain-9",
+    "rel-repo-1",
+    "rel-repo-10",
+    "rel-repo-11",
+    "rel-repo-12",
+    "rel-repo-13",
+    "rel-repo-2",
+    "rel-repo-3",
+    "rel-repo-4",
+    "rel-repo-5",
+    "rel-repo-6",
+    "rel-repo-7",
+    "rel-repo-8",
+    "rel-repo-9"
+  ],
+  "changed_embedding_evidence": [],
+  "changed_hyper_relations": [],
+  "changed_integration_responses": [],
+  "changed_node_attributes": [
+    {
+      "fields": {
+        "claim_ceiling": {
+          "after": "projection from 26fea4a00bdd43dbe772a138020c19a12f16d77b; not canonical truth",
+          "before": "projection from 1f3815538cf56d0f35cc06c6b2396fadf33a34a2; not canonical truth"
+        }
+      },
+      "id": "repo"
+    }
+  ],
+  "changed_relations": [],
+  "changed_temporal_activations": [],
+  "claim_ceiling": "NetworkDiff is representation diff only, not proof that reality changed.",
+  "deterministic_hash": "45da9d322e98d7b582f3694f0d11714a7e3c0135219df09f059de818e90f85cb",
+  "external_refs": [
+    {
+      "claim_ceiling": "external git commit reference only",
+      "ref_id": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
+      "ref_type": "git_commit"
+    },
+    {
+      "claim_ceiling": "external git commit reference only",
+      "ref_id": "26fea4a00bdd43dbe772a138020c19a12f16d77b",
+      "ref_type": "git_commit"
+    }
+  ],
+  "from_ref": "1f3815538cf56d0f35cc06c6b2396fadf33a34a2",
+  "projection_change": true,
+  "removed_hyper_relations": [],
+  "removed_nodes": [],
+  "removed_relations": [],
+  "residue_changes": {
+    "after": [
+      {
+        "claim_ceiling": "residue",
+        "description": "Projection does not prove integration, truth, value or causality.",
+        "residue_id": "projection-residue",
+        "residue_type": "unverified_integration"
+      }
+    ],
+    "before": [
+      {
+        "claim_ceiling": "residue",
+        "description": "Projection does not prove integration, truth, value or causality.",
+        "residue_id": "projection-residue",
+        "residue_type": "unverified_integration"
+      }
+    ]
+  },
+  "source_change": true,
+  "to_ref": "26fea4a00bdd43dbe772a138020c19a12f16d77b",
+  "unresolved_change": []
+}
