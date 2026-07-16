@@ -60,7 +60,8 @@ def _ids(items: list[dict], key: str, namespace: str, nid: str, errors: list[str
     ids: set[str] = set()
     for item in items:
         value = item.get(key)
-        if not value:
+        if _is_blank(value):
+            errors.append(f"{nid}: blank {namespace} id")
             continue
         if value in seen:
             errors.append(f"{nid}: duplicate {namespace} id {value}")
@@ -75,7 +76,7 @@ def _is_blank(value: object) -> bool:
     if isinstance(value, str):
         return value.strip() == ""
     if isinstance(value, list):
-        return not value or all(_is_blank(item) for item in value)
+        return not value or any(_is_blank(item) for item in value)
     if isinstance(value, dict):
         return not value
     return False

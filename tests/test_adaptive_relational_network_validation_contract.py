@@ -304,6 +304,66 @@ def test_semantic_nonblank_rejects_whitespace_only_required_content():
     assert any("claim_ceiling" in error for error in errors), errors
 
 
+def test_semantic_nonblank_rejects_mixed_valid_and_blank_list_members():
+    network = valid_network()
+    network["nodes"][0]["provenance"] = ["valid", "   "]
+    network["integration_responses"][0]["alternative_explanations"] = ["valid", "\t"]
+    network["reconfiguration_episodes"][0]["residue"] = ["valid", ""]
+    network["embedding_evidence"][0]["evidence"] = ["valid", "   "]
+    network["embedding_evidence"][0]["alternatives"] = ["valid", "   "]
+    network["attractor_or_oscillation"][0]["loop_pattern"] = ["valid", "   "]
+    network["projections"][0]["projection_rules"] = ["valid", "   "]
+    network["projections"][0]["omitted_dimensions"] = ["valid", "   "]
+    network["network_states"][0]["unknowns"] = ["valid", "   "]
+    errors = validate_network(network)
+    assert any("provenance" in error for error in errors), errors
+    assert any("alternative_explanations" in error for error in errors), errors
+    assert any("residue" in error for error in errors), errors
+    assert any("evidence" in error for error in errors), errors
+    assert any("alternatives" in error for error in errors), errors
+    assert any("loop_pattern" in error for error in errors), errors
+    assert any("projection_rules" in error for error in errors), errors
+    assert any("omitted_dimensions" in error for error in errors), errors
+    assert any("unknowns" in error for error in errors), errors
+
+
+def test_blank_identity_and_reference_strings_are_rejected():
+    network = valid_network()
+    network["nodes"][0]["node_id"] = "   "
+    assert_rejected(network, "blank node id")
+    network = valid_network()
+    network["diffs"] = [{
+        "diff_id": "d1",
+        "from_ref": "external-a",
+        "to_ref": "external-b",
+        "external_refs": [
+            {"ref_id": "   ", "ref_type": "git_commit", "claim_ceiling": "external ref only"},
+            {"ref_id": "external-b", "ref_type": "git_commit", "claim_ceiling": "external ref only"},
+        ],
+        "node_changes": [],
+        "relation_changes": [],
+        "layer_changes": [],
+        "boundary_changes": [],
+        "claim_ceiling": "diff only",
+    }]
+    errors = validate_network(network)
+    assert any("external_ref" in error and "ref_id" in error for error in errors), errors
+    assert any("dangling reference external-a" in error for error in errors), errors
+
+
+def test_fully_nonblank_required_lists_pass():
+    network = valid_network()
+    network["nodes"][0]["provenance"] = ["valid", "also valid"]
+    network["integration_responses"][0]["alternative_explanations"] = ["valid", "also valid"]
+    network["reconfiguration_episodes"][0]["residue"] = ["valid", "also valid"]
+    network["embedding_evidence"][0]["evidence"] = ["valid", "also valid"]
+    network["attractor_or_oscillation"][0]["loop_pattern"] = ["valid", "also valid"]
+    network["projections"][0]["projection_rules"] = ["valid", "also valid"]
+    network["projections"][0]["omitted_dimensions"] = ["valid", "also valid"]
+    network["network_states"][0]["unknowns"] = ["valid", "also valid"]
+    assert validate_network(network) == []
+
+
 def test_optional_empty_diff_change_arrays_remain_valid():
     network = valid_network()
     network["diffs"] = [{
