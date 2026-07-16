@@ -1,6 +1,6 @@
 {
   "task_id": "121Q24",
-  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "status": "MERGED_AND_CURRENT_REPOSITORY_OPERATION_CAPABILITY",
   "method_version": "1.0.0",
   "manifest_path": "data/operations/iterations/121Q24.json",
   "manifest_hash": {
@@ -14,24 +14,26 @@
   },
   "phase_b": {
     "draft_pr": 56,
+    "merged_pr": 56,
     "branch": "ops/121q24-ignition-iteration-method-current-state-sync-20260716",
     "base": "main",
     "base_head": "72318097d4d09277eeb55cc56d677e2fad1f9377",
+    "merge_commit": "b1becae50470f744501b5302c52008f978000c48",
     "head_binding": {
       "mode": "external_exact_head_attestation",
       "authority": "pull_request_body_and_1111_receipt",
-      "receipt_path": "agent-results/IGNITION-20260716-121Q24C-result.md",
+      "receipt_path": "agent-results/IGNITION-20260716-121Q24D-result.md",
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
-    "claim_ceiling": "validated_operation_method_candidate_only"
+    "claim_ceiling": "current_operation_method_capability_only"
   },
   "lifecycle": {
     "candidate": true,
     "ready_for_gpt_verification": true,
-    "accepted": false,
-    "merged": false,
-    "current": false
+    "accepted": true,
+    "merged": true,
+    "current": true
   },
   "external_exact_head_attestation": {
     "required": true,
@@ -39,7 +41,7 @@
     "authority": "pull_request_body_and_1111_receipt",
     "required_workflows": ["foundation-validation", "function-os-ci"],
     "live_refetch_before_acceptance_or_merge": true,
-    "claim_boundary": "This seal records repository-local candidate consistency only. It does not attest the live PR HEAD or current CI."
+    "claim_boundary": "This seal records repository-local merged/current lifecycle consistency and the observed PR #56 merge commit. It does not attest the final main closeout HEAD or post-closeout CI; those exact identifiers are external attestations in PR #56 and the 1111 receipt."
   },
   "local_validation": {
     "iteration_sync": "PASS",

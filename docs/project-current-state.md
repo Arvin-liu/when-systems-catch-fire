@@ -20,7 +20,7 @@ Current state must be inferred from actual repository artifacts: architecture fi
 
 Q21R, Q22 and Q23 add current architecture/operation assets for Multiscale Causal Fabric, Probabilistic System Dynamics and Adaptive Relational Network after their accepted chain entered `main`. These are modeling and projection capabilities with validators and reports; they are not new truth layers and do not prove ontology, causality, value or internal learning mechanisms.
 
-121Q24 is open candidate work only until its separate Draft PR is accepted and merged. It proposes a canonical iteration method and synchronization validator; it is not current capability on `main` until merge verification.
+121Q24 is now a current repository operation capability after PR #56 was independently accepted, merged and verified. It provides the canonical iteration method and synchronization validator for future state-changing work; using it does not prove truth, value, causality, completeness or correctness.
 
 ## Current Shape
 
@@ -80,7 +80,7 @@ The project currently must not claim:
 - that causal-fabric reachability is actual causation;
 - that high probability, posterior probability, Markov structure, stationarity, ergodicity, linearity or Gaussian assumptions are automatic;
 - that network adjacency, similarity, centrality, community detection, retrieval, self-report or behavior change proves truth, value, causality or internal learning mechanisms;
-- that Q24 candidate method compliance proves any substantive claim true.
+- that Q24 method compliance proves any substantive claim true.
 
 A current inability is also not a permanent impossibility. It only means the present artifacts do not support that claim at this commit.
 

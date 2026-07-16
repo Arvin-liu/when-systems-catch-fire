@@ -1,11 +1,16 @@
 # Changelog
 
+## 2026-07-16 · PR #56 iteration method merged and current-state closeout
+
+- Accepted PR #56 exact head `c638afcb5cd25152a0f2a81c9b9b2c7e29cfdc94` after Foundation and Function OS exact-head CI succeeded, then merged it with merge commit `b1becae50470f744501b5302c52008f978000c48`.
+- 121Q24 is now current only as a repository operation capability: it supplies `ITERATION.md`, a manifest/seal contract, validator and tests for future state-changing work.
+- The method does not prove truth, value, causality, completeness or correctness; final main closeout HEAD and post-closeout CI remain external attestations in PR #56 and the 1111 receipt.
+
 ## 2026-07-16 · PR #55 Adaptive Relational Network merged and 121Q24 candidate opened
 
 - Merged the accepted Adaptive Relational Network chain into `main` at merge commit `72318097d4d09277eeb55cc56d677e2fad1f9377`.
 - ARN is current only as a bounded projection/reconfiguration capability; network adjacency, similarity, centrality, community structure, retrieval, self-report and behavior change remain non-proof surfaces.
-- Opened 121Q24 candidate work to install one canonical iteration method and machine-checked current-state/front-door synchronization contract.
-- 121Q24 remains candidate until its Draft PR is separately accepted and merged.
+- Opened 121Q24 candidate work to install one canonical iteration method and machine-checked current-state/front-door synchronization contract; that candidate was later accepted and merged in PR #56.
 
 ## 2026-07-12 · IGNITION-20260709-076 数学与逻辑双地基七层架构
 

@@ -62,7 +62,8 @@
         "base": { "$ref": "#/$defs/nonblankString" },
         "base_head": { "$ref": "#/$defs/sha" },
         "draft": { "type": "boolean" },
-        "merged": { "type": "boolean" }
+        "merged": { "type": "boolean" },
+        "merge_commit": { "$ref": "#/$defs/sha" }
       }
     },
     "head_binding": {

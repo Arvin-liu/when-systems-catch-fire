@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -40,6 +41,7 @@ OPERATIONS_METHOD_REQUIRED_CHANGED = {
 }
 
 UNRESOLVED_STATUSES = {"PENDING", "TODO", "UNKNOWN", "", "TBD", "N/A"}
+SHA_RE = re.compile(r"^[0-9a-f]{40}$")
 
 
 def load_json(path: Path) -> object:
@@ -97,10 +99,18 @@ def validate_custom(manifest: dict, source: Path, seal: dict | None = None) -> N
     require(manifest["branch_pr"]["merged"] == status["merged"], f"{source}: branch_pr.merged and status.merged disagree")
     require(not (manifest["branch_pr"]["draft"] and (status["accepted"] or status["merged"] or status["current"])), f"{source}: Draft cannot be accepted, merged, or current")
     require(not (manifest["branch_pr"]["merged"] and manifest["branch_pr"]["draft"]), f"{source}: branch_pr cannot be both merged and draft")
+    if status["merged"] or status["current"]:
+        merge_commit = manifest["branch_pr"].get("merge_commit")
+        require(manifest["branch_pr"]["pr_number"] is not None and manifest["branch_pr"]["pr_number"] > 0, f"{source}: merged/current task requires PR number")
+        require(isinstance(merge_commit, str) and SHA_RE.match(merge_commit), f"{source}: merged/current task requires valid merge commit")
+        require("candidate_only" not in manifest["claim_ceiling"], f"{source}: merged/current task cannot keep candidate-only claim ceiling")
 
     if status["ready_for_gpt_verification"]:
         require(manifest["branch_pr"]["pr_number"] is not None and manifest["branch_pr"]["pr_number"] > 0, f"{source}: ready candidate requires PR number")
-        require(manifest["branch_pr"]["draft"], f"{source}: ready candidate must remain Draft until independently accepted")
+        if not (status["accepted"] or status["merged"] or status["current"]):
+            require(manifest["branch_pr"]["draft"], f"{source}: unaccepted ready candidate must remain Draft until independently accepted")
+        else:
+            require(not manifest["branch_pr"]["draft"], f"{source}: accepted, merged, or current ready record must not remain Draft")
         require(head_binding["mode"] == "external_exact_head_attestation", f"{source}: ready candidate requires external exact-head attestation mode")
         require(head_binding["authority"] == "pull_request_body_and_1111_receipt", f"{source}: ready candidate requires externally resolvable attestation authority")
         require(head_binding["pr_number"] == manifest["branch_pr"]["pr_number"], f"{source}: head-binding PR mismatch")
@@ -146,6 +156,9 @@ def validate_custom(manifest: dict, source: Path, seal: dict | None = None) -> N
         require(phase_b["draft_pr"] == manifest["branch_pr"]["pr_number"], f"{source}: seal PR mismatch")
         require(phase_b["branch"] == manifest["branch_pr"]["branch"], f"{source}: seal branch mismatch")
         require(phase_b["base_head"] == manifest["branch_pr"]["base_head"], f"{source}: seal base_head mismatch")
+        if status["merged"] or status["current"]:
+            require(phase_b.get("merge_commit") == manifest["branch_pr"].get("merge_commit"), f"{source}: seal merge commit mismatch")
+            require(seal.get("status") != "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY", f"{source}: seal remains candidate-only after merge")
         require(phase_b["head_binding"]["mode"] == head_binding["mode"], f"{source}: seal head-binding mode mismatch")
         require(phase_b["head_binding"]["authority"] == head_binding["authority"], f"{source}: seal attestation authority mismatch")
         require(phase_b["head_binding"]["receipt_path"] == head_binding["receipt_path"], f"{source}: seal attestation receipt mismatch")

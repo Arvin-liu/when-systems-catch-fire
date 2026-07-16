@@ -94,6 +94,24 @@ def valid_manifest():
     }
 
 
+def valid_current_manifest():
+    manifest = valid_manifest()
+    manifest["branch_pr"]["draft"] = False
+    manifest["branch_pr"]["merged"] = True
+    manifest["branch_pr"]["merge_commit"] = "b" * 40
+    manifest["head_binding"]["receipt_path"] = "agent-results/IGNITION-20260716-121Q24D-result.md"
+    manifest["claim_ceiling"] = "current_operation_method_capability_only"
+    manifest["status"] = {
+        "candidate": True,
+        "ready_for_gpt_verification": True,
+        "accepted": True,
+        "merged": True,
+        "current": True,
+    }
+    manifest["receipt_location"] = "agent-results/IGNITION-20260716-121Q24D-result.md"
+    return manifest
+
+
 def valid_seal():
     m = valid_manifest()
     return {
@@ -118,6 +136,18 @@ def valid_seal():
     }
 
 
+def valid_current_seal():
+    m = valid_current_manifest()
+    seal = valid_seal()
+    seal["status"] = "MERGED_AND_CURRENT_REPOSITORY_OPERATION_CAPABILITY"
+    seal["phase_b"]["merged_pr"] = m["branch_pr"]["pr_number"]
+    seal["phase_b"]["merge_commit"] = m["branch_pr"]["merge_commit"]
+    seal["phase_b"]["head_binding"]["receipt_path"] = m["head_binding"]["receipt_path"]
+    seal["phase_b"]["claim_ceiling"] = m["claim_ceiling"]
+    seal["lifecycle"] = m["status"]
+    return seal
+
+
 class IterationSyncTests(unittest.TestCase):
     def test_iteration_sync_manifest_validates(self):
         result = validate_all()
@@ -129,6 +159,9 @@ class IterationSyncTests(unittest.TestCase):
         manifest["branch_pr"]["pr_number"] = None
         with self.assertRaisesRegex(AssertionError, "requires PR number"):
             validate_custom(manifest, __file__, valid_seal())
+
+    def test_valid_cumulative_current_lifecycle(self):
+        validate_custom(valid_current_manifest(), __file__, valid_current_seal())
 
     def test_pending_validation_is_rejected(self):
         manifest = valid_manifest()
@@ -204,6 +237,67 @@ class IterationSyncTests(unittest.TestCase):
         seal["phase_b"]["draft_pr"] = 57
         with self.assertRaisesRegex(AssertionError, "seal PR mismatch"):
             validate_custom(valid_manifest(), __file__, seal)
+
+    def test_unaccepted_ready_non_draft_is_rejected(self):
+        manifest = valid_manifest()
+        manifest["branch_pr"]["draft"] = False
+        with self.assertRaisesRegex(AssertionError, "unaccepted ready candidate must remain Draft"):
+            validate_custom(manifest, __file__, valid_seal())
+
+    def test_accepted_merged_current_draft_is_rejected(self):
+        manifest = valid_current_manifest()
+        manifest["branch_pr"]["draft"] = True
+        with self.assertRaisesRegex(AssertionError, "Draft cannot be accepted|must not remain Draft"):
+            validate_custom(manifest, __file__, valid_current_seal())
+
+    def test_merged_without_accepted_is_rejected(self):
+        manifest = valid_current_manifest()
+        manifest["status"]["accepted"] = False
+        with self.assertRaisesRegex(AssertionError, "merged cannot be true unless accepted"):
+            validate_custom(manifest, __file__, valid_current_seal())
+
+    def test_current_without_merged_is_rejected(self):
+        manifest = valid_current_manifest()
+        manifest["status"]["merged"] = False
+        manifest["branch_pr"]["merged"] = False
+        with self.assertRaisesRegex(AssertionError, "current cannot be true unless merged"):
+            validate_custom(manifest, __file__, valid_current_seal())
+
+    def test_merged_requires_merge_commit(self):
+        manifest = valid_current_manifest()
+        del manifest["branch_pr"]["merge_commit"]
+        with self.assertRaisesRegex(AssertionError, "requires valid merge commit"):
+            validate_custom(manifest, __file__, valid_current_seal())
+
+    def test_malformed_merge_commit_is_rejected(self):
+        manifest = valid_current_manifest()
+        manifest["branch_pr"]["merge_commit"] = "not-a-sha"
+        with self.assertRaisesRegex(AssertionError, "requires valid merge commit"):
+            validate_custom(manifest, __file__, valid_current_seal())
+
+    def test_manifest_seal_merge_commit_disagreement_is_rejected(self):
+        seal = valid_current_seal()
+        seal["phase_b"]["merge_commit"] = "c" * 40
+        with self.assertRaisesRegex(AssertionError, "seal merge commit mismatch"):
+            validate_custom(valid_current_manifest(), __file__, seal)
+
+    def test_candidate_only_seal_after_merge_is_rejected(self):
+        seal = valid_current_seal()
+        seal["status"] = "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY"
+        with self.assertRaisesRegex(AssertionError, "seal remains candidate-only after merge"):
+            validate_custom(valid_current_manifest(), __file__, seal)
+
+    def test_candidate_only_claim_ceiling_after_merge_is_rejected(self):
+        manifest = valid_current_manifest()
+        manifest["claim_ceiling"] = "validated_operation_method_candidate_only"
+        with self.assertRaisesRegex(AssertionError, "candidate-only claim ceiling"):
+            validate_custom(manifest, __file__, valid_current_seal())
+
+    def test_false_current_final_ci_claim_after_merge_is_rejected(self):
+        manifest = valid_current_manifest()
+        manifest["validation"]["remote"][0]["evidence_scope"] = "current_final"
+        with self.assertRaisesRegex(AssertionError, "mislabeled as current-final"):
+            validate_custom(manifest, __file__, valid_current_seal())
 
     def test_draft_cannot_be_current(self):
         manifest = valid_manifest()
