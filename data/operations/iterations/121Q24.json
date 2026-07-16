@@ -1,0 +1,149 @@
+{
+  "method_version": "1.0.0",
+  "task_id": "121Q24",
+  "change_classification": [
+    "OPERATIONS_METHOD",
+    "RELEASE_OR_CURRENT_STATE_SYNC",
+    "INTERFACE_CHANGE"
+  ],
+  "verified_start": {
+    "main_head": "72318097d4d09277eeb55cc56d677e2fad1f9377",
+    "source": "origin/main after PR #55 merge",
+    "verified_at": "2026-07-16"
+  },
+  "branch_pr": {
+    "branch": "ops/121q24-ignition-iteration-method-current-state-sync-20260716",
+    "pr_number": 56,
+    "base": "main",
+    "base_head": "72318097d4d09277eeb55cc56d677e2fad1f9377",
+    "draft": true,
+    "merged": false
+  },
+  "head_binding": {
+    "mode": "external_exact_head_attestation",
+    "pr_number": 56,
+    "authority": "pull_request_body_and_1111_receipt",
+    "receipt_path": "agent-results/IGNITION-20260716-121Q24C-result.md",
+    "embedded_exact_current_head": false,
+    "live_refetch_required": true,
+    "explanation": "A commit cannot contain its own SHA or post-commit CI run IDs without creating a new commit. This manifest encodes the binding policy only; the exact final HEAD and its CI are recorded after push in PR #56 body and the independent 1111 receipt, then re-fetched live before acceptance or merge."
+  },
+  "gap": {
+    "summary": "The repository lacked one canonical cold-start iteration method and validator-enforced current-state/front-door synchronization contract, and Q24B found the first manifest/seal instance was stale relative to PR #56 and completed CI.",
+    "evidence": [
+      "No canonical ITERATION.md existed before 121Q24.",
+      "No iteration manifest schema or validator existed before 121Q24.",
+      "Current-state and AI handoff surfaces were stale relative to the merged ARN capability.",
+      "121Q24B reproduced that the original Q24 manifest had null PR number, pending validation and no seal consistency enforcement while the validator still passed."
+    ],
+    "smallest_material_action": "Finalize the manifest and seal to PR #56 Draft-ready state, strengthen schema and validator invariants, add adversarial tests, and clarify versioning/current-state separation."
+  },
+  "claim_ceiling": "validated_operation_method_candidate_only",
+  "status": {
+    "candidate": true,
+    "ready_for_gpt_verification": true,
+    "accepted": false,
+    "merged": false,
+    "current": false
+  },
+  "impact_matrix": [
+    { "surface": ".github/workflows/foundation-validation.yml", "decision": "CHANGE", "reason": "Iteration sync validator and stdlib tests are enforced in Foundation CI." },
+    { "surface": "AI-HANDOFF.md", "decision": "CHANGE", "reason": "Cold-start agents must read current state and method before acting." },
+    { "surface": "AI-START-HERE.md", "decision": "CHANGE", "reason": "Cold-start ordering must include iteration method and current modeling boundaries." },
+    { "surface": "CHANGELOG.md", "decision": "CHANGE", "reason": "Release history records ARN merge and Q24 candidate state." },
+    { "surface": "ITERATION.md", "decision": "CHANGE", "reason": "Canonical method entrypoint required." },
+    { "surface": "README.md", "decision": "CHANGE", "reason": "Front door links the method without adding a wall of process text." },
+    { "surface": "SUMMARY.md", "decision": "CHANGE", "reason": "Human navigation includes the method and current overlays." },
+    { "surface": "data/operations/121q24-gap-ledger.json", "decision": "CHANGE", "reason": "Records the verified Q24 operations gap." },
+    { "surface": "data/operations/iterations/121Q24.json", "decision": "CHANGE", "reason": "Machine manifest records PR #56 Draft-ready lifecycle and a non-self-referential external exact-head attestation policy." },
+    { "surface": "docs/VERSIONING.md", "decision": "CHANGE", "reason": "Clarifies architecture baseline versus current project state and open Q24 candidate work." },
+    { "surface": "docs/project-current-state.md", "decision": "CHANGE", "reason": "Current state reflects merged ARN and candidate Q24 separately." },
+    { "surface": "llms.txt", "decision": "CHANGE", "reason": "Machine readers see iteration-method and current capability boundaries." },
+    { "surface": "reports/operations/121Q24-completion-seal.json", "decision": "CHANGE", "reason": "Seal is bound to manifest lifecycle, PR, base and the same external exact-head attestation policy." },
+    { "surface": "reports/operations/121Q24-current-state-reconciliation.md", "decision": "CHANGE", "reason": "Records current-state reconciliation and synchronization matrix." },
+    { "surface": "schemas/operations/iteration-manifest.schema.json", "decision": "CHANGE", "reason": "Schema separates repository-local consistency from external exact-head and CI attestation." },
+    { "surface": "templates/operations/execution-result-template.md", "decision": "CHANGE", "reason": "Reusable receipt template added." },
+    { "surface": "templates/operations/independent-review-template.md", "decision": "CHANGE", "reason": "Reusable review template added." },
+    { "surface": "templates/operations/task-command-template.md", "decision": "CHANGE", "reason": "Reusable command template added." },
+    { "surface": "tests/test_iteration_sync.py", "decision": "CHANGE", "reason": "Positive and adversarial tests cover manifest/seal drift and status inflation." },
+    { "surface": "tools/validate_iteration_sync.py", "decision": "CHANGE", "reason": "Validator rejects self-head claims, mislabeled stale evidence, seal drift, path drift and status inflation while limiting PASS to repository-local consistency." },
+    { "surface": "ARCHITECTURE.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Q24 is an operations method and does not add an architecture or truth layer." },
+    { "surface": "FOUNDATION.md", "decision": "NO_CHANGE_WITH_REASON", "reason": "Foundation authority is unchanged." },
+    { "surface": "LICENSES", "decision": "NO_CHANGE_WITH_REASON", "reason": "No license terms or scopes change." }
+  ],
+  "changed_surfaces": [
+    ".github/workflows/foundation-validation.yml",
+    "AI-HANDOFF.md",
+    "AI-START-HERE.md",
+    "CHANGELOG.md",
+    "ITERATION.md",
+    "README.md",
+    "SUMMARY.md",
+    "data/operations/121q24-gap-ledger.json",
+    "data/operations/iterations/121Q24.json",
+    "docs/VERSIONING.md",
+    "docs/project-current-state.md",
+    "llms.txt",
+    "reports/operations/121Q24-completion-seal.json",
+    "reports/operations/121Q24-current-state-reconciliation.md",
+    "schemas/operations/iteration-manifest.schema.json",
+    "templates/operations/execution-result-template.md",
+    "templates/operations/independent-review-template.md",
+    "templates/operations/task-command-template.md",
+    "tests/test_iteration_sync.py",
+    "tools/validate_iteration_sync.py"
+  ],
+  "explicitly_unaffected_surfaces": [
+    "Psi0 source text",
+    "085 architecture freeze assets",
+    "old function and case tables",
+    "historical evidence cards",
+    "formal charter",
+    "Function OS runtime",
+    "license terms",
+    "reality loop watchdog"
+  ],
+  "required_synchronization_decisions": [
+    "README links to ITERATION.md.",
+    "docs/project-current-state.md separates merged ARN current capability from Q24 candidate work.",
+    "AI-HANDOFF.md requires current-state and iteration-method reading before state-changing work.",
+    "llms.txt records method boundaries for machine readers.",
+    "CHANGELOG.md records ARN merge and Q24 candidate.",
+    "docs/VERSIONING.md distinguishes architecture/Foundation baseline from later merged capabilities and open Q24 candidate work."
+  ],
+  "schema_tools_tests_workflows_reports_changed": [
+    "schemas/operations/iteration-manifest.schema.json",
+    "tools/validate_iteration_sync.py",
+    "tests/test_iteration_sync.py",
+    ".github/workflows/foundation-validation.yml",
+    "reports/operations/121Q24-current-state-reconciliation.md",
+    "reports/operations/121Q24-completion-seal.json"
+  ],
+  "validation": {
+    "local": [
+      { "name": "iteration-sync", "status": "PASS", "evidence": "tools/validate_iteration_sync.py passed on Q24/Q24B artifacts." },
+      { "name": "iteration-sync-unittest", "status": "PASS", "evidence": "tests.test_iteration_sync passed under stdlib unittest." },
+      { "name": "architecture-overlay-suite", "status": "PASS", "evidence": "ARN, MCF, PSD, Q12, Q13 and Q14 validators/tests passed during Q24." },
+      { "name": "foundation-chain", "status": "PASS", "evidence": "Foundation chain passed during Q24, including validate_foundation 60/60 and 085 13/13." },
+      { "name": "function-os", "status": "PASS", "evidence": "Function OS suite passed during Q24: 164 passed, 48 warnings." }
+    ],
+    "remote": [
+      { "name": "foundation-validation", "status": "SUCCESS", "evidence": "Historical subject evidence only: GitHub Actions run 29475601204 succeeded on the earlier Q24 subject head.", "evidence_scope": "historical_subject_head_only", "subject_head": "5e626091be531994af1fefec213adf7ca3353de0", "run_id": 29475601204, "conclusion": "success" },
+      { "name": "function-os-ci", "status": "SUCCESS", "evidence": "Historical subject evidence only: GitHub Actions run 29475606532 succeeded on the earlier Q24 subject head.", "evidence_scope": "historical_subject_head_only", "subject_head": "5e626091be531994af1fefec213adf7ca3353de0", "run_id": 29475606532, "conclusion": "success" }
+    ],
+    "external_exact_head_policy": {
+      "required": true,
+      "authority": "pull_request_body_and_1111_receipt",
+      "required_workflows": ["foundation-validation", "function-os-ci"],
+      "live_refetch_before_acceptance_or_merge": true
+    }
+  },
+  "rollback_strategy": "Revert the Q24 merge commit if eventually merged, or close the Draft PR while preserving 121Q24/121Q24B reports and receipts as rejected candidate history.",
+  "remaining_limitations": [
+    "The method constrains operation hygiene but cannot prove truth, value, causality or correctness.",
+    "The Q24 manifest is Draft candidate work until its PR is accepted and merged.",
+    "Repository-local PASS does not verify live GitHub state; exact final HEAD and both required CI runs must be recorded externally and re-fetched live before acceptance or merge.",
+    "Future method changes must self-iterate through the same contract."
+  ],
+  "receipt_location": "agent-results/IGNITION-20260716-121Q24C-result.md"
+}

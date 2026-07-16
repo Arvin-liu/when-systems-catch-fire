@@ -1,11 +1,12 @@
 # SUMMARY · 点火项目阅读导航
 
-> 当前版本：2026-07-12 数学与逻辑双地基七层架构版本（IGNITION-20260709-076）。
+> 当前版本：PR #55 合并后的 2026-07-16 main；数学与逻辑双地基七层架构继续有效，Q12-Q23 操作与建模 overlay 已进入当前仓库状态。
 
 ## 现行权威
 
 - [README.md](./README.md) — 人类总入口与双前门
 - [项目现状](./docs/project-current-state.md) — 版本化、可演化、非终局的当前状态描述
+- [点火迭代操作法](./ITERATION.md) — 状态改变任务的远端真相、缺口、claim ceiling、同步矩阵、验证和回执方法
 - [ARCHITECTURE.md](./ARCHITECTURE.md) — 现行架构唯一权威
 - [FOUNDATION.md](./FOUNDATION.md) — 数学与逻辑双地基权威
 - [docs/foundation/README.md](./docs/foundation/README.md) — 架构契约导航
@@ -16,6 +17,18 @@
 - [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) — 规范性价值前提
 - [许可作用域](./LICENSES/README.md) — 当前分层许可权威
 - [商业许可](./COMMERCIAL-LICENSING.md) 与 [可持续性政策](./SUSTAINABILITY.md)
+
+## 当前操作与建模 overlay
+
+- [效果推理行动平面](./docs/architecture/effectual-action-plane.md)
+- [机制判断平面](./docs/architecture/mechanism-adjudication-plane.md)
+- [注意力吸引子控制](./docs/architecture/attention-attractor-control-plane.md)
+- [分布坍缩控制](./docs/architecture/distribution-collapse-control-plane.md)
+- [压缩完整性门禁](./docs/architecture/compression-integrity-gate.md)
+- [点火地图集](./docs/architecture/ignition-atlas.md)
+- [Multiscale Causal Fabric](./docs/architecture/multiscale-causal-fabric.md)
+- [Probabilistic System Dynamics](./docs/architecture/probabilistic-system-dynamics.md)
+- [Adaptive Relational Network](./docs/architecture/adaptive-relational-network.md)
 
 ## 七层正式架构
 

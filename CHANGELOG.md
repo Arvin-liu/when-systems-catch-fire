@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-07-16 · PR #55 Adaptive Relational Network merged and 121Q24 candidate opened
+
+- Merged the accepted Adaptive Relational Network chain into `main` at merge commit `72318097d4d09277eeb55cc56d677e2fad1f9377`.
+- ARN is current only as a bounded projection/reconfiguration capability; network adjacency, similarity, centrality, community structure, retrieval, self-report and behavior change remain non-proof surfaces.
+- Opened 121Q24 candidate work to install one canonical iteration method and machine-checked current-state/front-door synchronization contract.
+- 121Q24 remains candidate until its Draft PR is separately accepted and merged.
+
 ## 2026-07-12 · IGNITION-20260709-076 数学与逻辑双地基七层架构
 
 - 建立 L0-L6 七层正式架构与数学、逻辑双地基。

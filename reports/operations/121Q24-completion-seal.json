@@ -1,0 +1,58 @@
+{
+  "task_id": "121Q24",
+  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "method_version": "1.0.0",
+  "manifest_path": "data/operations/iterations/121Q24.json",
+  "manifest_hash": {
+    "included": false,
+    "reason": "Repository-local deterministic consistency is enforced by tools/validate_iteration_sync.py. Exact final HEAD and post-commit CI are external attestations because embedding either would create a new commit and invalidate the claimed final identity."
+  },
+  "phase_a": {
+    "merged_pr": 55,
+    "accepted_head": "791fe4db663cf99ac643a13d4ccbaf5ec068cb41",
+    "merge_commit": "72318097d4d09277eeb55cc56d677e2fad1f9377"
+  },
+  "phase_b": {
+    "draft_pr": 56,
+    "branch": "ops/121q24-ignition-iteration-method-current-state-sync-20260716",
+    "base": "main",
+    "base_head": "72318097d4d09277eeb55cc56d677e2fad1f9377",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "agent-results/IGNITION-20260716-121Q24C-result.md",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
+    "claim_ceiling": "validated_operation_method_candidate_only"
+  },
+  "lifecycle": {
+    "candidate": true,
+    "ready_for_gpt_verification": true,
+    "accepted": false,
+    "merged": false,
+    "current": false
+  },
+  "external_exact_head_attestation": {
+    "required": true,
+    "embedded_in_seal": false,
+    "authority": "pull_request_body_and_1111_receipt",
+    "required_workflows": ["foundation-validation", "function-os-ci"],
+    "live_refetch_before_acceptance_or_merge": true,
+    "claim_boundary": "This seal records repository-local candidate consistency only. It does not attest the live PR HEAD or current CI."
+  },
+  "local_validation": {
+    "iteration_sync": "PASS",
+    "iteration_tests": "PASS under stdlib unittest; local pytest compatibility also passed during Q24",
+    "architecture_overlay_tests": "50 passed during Q24",
+    "foundation": "60/60 during Q24",
+    "function_os": "164 passed, 48 warnings during Q24",
+    "license_scope": "20/20 during Q24"
+  },
+  "boundaries": {
+    "adds_truth_layer": false,
+    "proves_truth_value_causality_or_correctness": false,
+    "q24_current_before_merge": false,
+    "modifies_frozen_assets": false
+  }
+}

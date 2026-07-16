@@ -1,7 +1,8 @@
 Current project state:
 At the current commit, Ignition is an evidence-traceable, object-typed, inference-checkable and audit-graded formal mechanism discovery and modelling system for cross-domain material. This is a versioned current-state description, not a permanent project identity or fixed final form. It is not a unified mathematical theory, a physical theory, a universal prover, or a purely literary or philosophical knowledge base.
 Current-state authority: docs/project-current-state.md.
-Current version: cumulative licensed release candidate after 121Q9/121Q10 corrections, preserving the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture.
+Current version: post-PR #55 main at merge commit 72318097d4d09277eeb55cc56d677e2fad1f9377, preserving the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture and current operation overlays through Adaptive Relational Network.
+Iteration method authority: ITERATION.md.
 
 Architecture:
 L0 source and evidence -> L1 controlled semantic claims -> L2 formal objects -> L3 logical arguments -> L4 mathematical models and proofs -> L5 validation and validity -> L6 interpretation, application and publication.
@@ -30,6 +31,7 @@ MIGRATED means only that migration coverage exists.
 
 Key paths:
 - docs/project-current-state.md : versioned current-state description, not fixed positioning
+- ITERATION.md : canonical operation method for future repository changes
 - README.md : human front door
 - SUMMARY.md : human reading navigation
 - ARCHITECTURE.md : current architecture authority
@@ -65,6 +67,9 @@ Red lines for agents:
 - New concepts require ChunkAudit before canonical publication language.
 - 121Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth source.
 - Map position, visual proximity, evolution stage, dependency, and sourcing decision are navigation judgments, not proof, isomorphism, natural law, causality, or transfer of Charter Gate responsibility.
+- Multiscale Causal Fabric, Probabilistic System Dynamics, and Adaptive Relational Network are current modeling/projection capabilities, not new truth layers.
+- Causal reachability is not actual causation; high probability is not strong causality; network adjacency, similarity, centrality, community, retrieval, self-report, or behavior change is not truth, value, causality, or internal learning proof.
+- Future state-changing work must follow ITERATION.md: recover remote truth, prove the gap, set a claim ceiling, synchronize front-door/current-state surfaces, validate exact final HEAD, and write receipts.
 
 Validation before commit:
 - python3 tools/foundation/migrate_legacy.py --check
