@@ -20,7 +20,9 @@
 
 ### L6 候选写作接口：心智层级跃迁
 
-121Q28R 提供一个等待独立复审的 `0.2.0` 候选接口：[方法正文](./publication/cognitive-level-leap-writing-method.md)与[后台故事规格](../templates/publication/cognitive-level-leap-story-spec.md)。它不是固定段落法。使用者先定位能被后层重释的起始承载点，并暂记可为 `UNNAMED` 的心智引力中心；在写当前层时识别下一层正在逼问什么。当前层有不可容纳残余时，可通过递归重定义、双重归属铰链或其他隐形连续性突然跃迁。新层必须回照旧层，并让潜题生长或反向显影；无新增益时停止。
+121Q28S 提供等待独立复审的 `0.3.0` 候选接口：[方法正文](./publication/zhiyuan-writing-method.md)与[后台规格](../templates/publication/zhiyuan-writing-spec.md)。先声明实际使用的 L0-L5、Q12-Q14、MCF、PSD、ARN、Atlas、Charter 或 current-state 工件，区分来源与启发并设置 claim ceiling；再选择要让读者经历的认知运动。不得把项目对应表写成正文目录。
+
+向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁和伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN、Atlas 或迭代流程。点赞、赞美、传播和多 AI 共识只能是体验／传播数据。
 
 肉身锚定只是可选入口／回返模式；跨域同构叙事只是一种应用；高维压缩结尾也可省略。没有身体坐标、没有跨学科例子或没有格言式结尾，都不构成自动降级。
 

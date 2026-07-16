@@ -60,7 +60,7 @@ PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系
 
 Q25C 已成为当前生命周期规则：Ready、Accepted、Merged、Current、Closed 分别读取 surface `blocks`，不能用全局 project-complete 布尔值阻断 pre-merge acceptance。每个外部表面必须有独立 attestation；Pages pending 可以进入 Accepted/Merged，但继续阻塞 Current/Closed。
 
-121Q28R 在原 Draft PR 上把被正式拒绝的 `0.1.0` 修订为 L6 `之元写作法` `0.2.0` 候选。交接时不得把它写成当前能力、新层或文学质量验证器。必须读取中性路径的方法、范例和后台规格，并检查：起始承载点能否被后层重释；下一层是否提前改写当前层；心智引力是否允许 `UNNAMED`、移动或分叉；跃迁是否由残余以及递归定义、铰链或其他隐形连续性驱动；新层是否回照旧层并使潜题显影；无信息增益时是否停止；高层是否保存证据限制和受损主体。肉身锚定、跨域同构、高维压缩结尾分别只是可选模式、应用和形式。121Q27 原故事仍冻结，不得在 Q28R 中重写、提交或发布。
+121Q28S 在原 Draft PR 上将 L6 `之元写作法` 修订为 `0.3.0` 候选：操作位置仍在 L6，生成来源与点火整体具有维护者声明的共同认知 provenance，并增加向外表达与返回点火双向契约。交接时不得写成 current、新层、脑科学、形式同构或真值许可。必须检查项目来源／启发区分、全项目对应残余、反馈 provenance、Q12/Q13/MCF/PSD/ARN 按需返回及点赞非证据边界。121Q27 原故事仍冻结。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

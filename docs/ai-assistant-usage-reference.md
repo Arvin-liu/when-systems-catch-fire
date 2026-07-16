@@ -81,7 +81,7 @@ llms.txt
 
 当前状态与架构直达入口：[项目现状](./project-current-state.md) / [点火迭代操作法](../ITERATION.md) / [MCF](./architecture/multiscale-causal-fabric.md) / [PSD](./architecture/probabilistic-system-dynamics.md) / [ARN](./architecture/adaptive-relational-network.md)。本页是完整的人类 AI 使用指南；根 README 中的提示词是同一份受验证的前门投影，两者不得独立漂移。当前迭代方法把状态改变视为全项目同步传播：实现完成、仓库同步、逐外部表面证明和项目整体完成必须分开报告，局部通过不能替代整体闭环。
 
-L6 公共写作可以试用 121Q28R 的[之元写作法 `0.2.0` 候选](./publication/cognitive-level-leap-writing-method.md)和[后台规格](../templates/publication/cognitive-level-leap-story-spec.md)。AI 必须先保存下层证据边界，再记录可被后层重释的起始承载点、可为 `UNNAMED` 的心智引力中心、不可容纳残余、前视牵引、递归重定义／铰链／其他连续性、回照与潜题显影、停止理由。肉身锚定可用但非必需；不要把规格字段写成固定文章目录，不要机械模仿作者意象，也不要声称模板或模型能验证文学质量。
+L6 公共写作可以试用 121Q28S 的[之元写作法 `0.3.0` 候选](./publication/zhiyuan-writing-method.md)和[后台规格](../templates/publication/zhiyuan-writing-spec.md)。AI 先区分实际点火来源与启发，保存 claim ceiling、不可映射残余和主体，再生成公共表达。试读／发布反馈须记录主体、渠道、时间、原文范围和解释限制，才可作为候选 source／gap 返回适用项目流程。不得把同源写成认知科学事实，不得把项目对应表写成文章目录，也不得用共鸣验证文学或真值。
 
 ## 使用边界
 

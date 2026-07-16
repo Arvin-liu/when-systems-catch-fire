@@ -49,7 +49,7 @@
     "changed_dimensions": ["capability", "usage", "handoff", "lifecycle_current_state", "deployment_rendering"],
     "source_refs": [
       "external:pr_review:4713441356",
-      "docs/publication/cognitive-level-leap-writing-examples.md",
+      "docs/publication/zhiyuan-writing-examples.md",
       "docs/governance/life-community-value-charter.md",
       "agent-commands/IGNITION-20260716-121Q28R-cognitive-level-leap-method-revision.md"
     ],
@@ -59,16 +59,16 @@
     "registry_path": "data/operations/synchronization-surfaces.json",
     "registry_version": "1.0.0",
     "surface_decisions": [
-      {"surface_id": "human.readme", "decision": "CHANGE", "reason": "Replace the rejected bodily qualification gate with the neutral 0.2.0 candidate and lifecycle boundary.", "evidence_refs": ["README.md", "docs/publication/cognitive-level-leap-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.readme", "decision": "CHANGE", "reason": "Replace the rejected bodily qualification gate with the neutral 0.2.0 candidate and lifecycle boundary.", "evidence_refs": ["README.md", "docs/publication/zhiyuan-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
       {"surface_id": "human.pages_source", "decision": "NO_CHANGE_WITH_REASON", "reason": "The existing workflow builds README and restricts production deployment to main.", "evidence_refs": [".github/workflows/pages.yml", "README.md"], "validation_mode": "repository_build_validation", "derived_from": ["human.readme"]},
       {"surface_id": "external.pages_homepage", "decision": "CHANGE", "reason": "Exact-head Draft build is required; production remains post-merge only.", "evidence_refs": ["external:pr_body:58", "external:1111_receipt:IGNITION-20260716-121Q28R-cognitive-level-leap-method-revision-result.md"], "validation_mode": "post_merge_external_render_attestation", "derived_from": ["human.readme", "human.pages_source"]},
       {"surface_id": "human.current_state", "decision": "CHANGE", "reason": "Record rejection of 0.1.0 and non-current 0.2.0 candidate.", "evidence_refs": ["docs/project-current-state.md", "data/operations/iterations/121Q28R.json"], "validation_mode": "repository_semantic_validation", "derived_from": []},
-      {"surface_id": "human.summary", "decision": "CHANGE", "reason": "Update neutral method, example and spec navigation.", "evidence_refs": ["SUMMARY.md", "docs/publication/cognitive-level-leap-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
-      {"surface_id": "human.usage", "decision": "CHANGE", "reason": "Expose starting carrier, cognitive gravity, recursive redefinition and optional modes.", "evidence_refs": ["docs/USAGE.md", "templates/publication/cognitive-level-leap-story-spec.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
-      {"surface_id": "human.ai_guide", "decision": "CHANGE", "reason": "Remove mandatory embodiment and fixed-interface assumptions from AI guidance.", "evidence_refs": ["docs/ai-assistant-usage-reference.md", "templates/publication/cognitive-level-leap-story-spec.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
-      {"surface_id": "ai.start", "decision": "CHANGE", "reason": "Cold start must find 0.2.0 and know 0.1.0 was rejected.", "evidence_refs": ["AI-START-HERE.md", "docs/publication/cognitive-level-leap-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
-      {"surface_id": "agent.handoff", "decision": "CHANGE", "reason": "Handoff must preserve optional modes, review state and Q27 freeze.", "evidence_refs": ["AI-HANDOFF.md", "docs/publication/cognitive-level-leap-writing-examples.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
-      {"surface_id": "machine.llms", "decision": "CHANGE", "reason": "Machine entry must state the neutral 0.2.0 contract.", "evidence_refs": ["llms.txt", "docs/publication/cognitive-level-leap-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.summary", "decision": "CHANGE", "reason": "Update neutral method, example and spec navigation.", "evidence_refs": ["SUMMARY.md", "docs/publication/zhiyuan-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.usage", "decision": "CHANGE", "reason": "Expose starting carrier, cognitive gravity, recursive redefinition and optional modes.", "evidence_refs": ["docs/USAGE.md", "templates/publication/zhiyuan-writing-spec.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "human.ai_guide", "decision": "CHANGE", "reason": "Remove mandatory embodiment and fixed-interface assumptions from AI guidance.", "evidence_refs": ["docs/ai-assistant-usage-reference.md", "templates/publication/zhiyuan-writing-spec.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "ai.start", "decision": "CHANGE", "reason": "Cold start must find 0.2.0 and know 0.1.0 was rejected.", "evidence_refs": ["AI-START-HERE.md", "docs/publication/zhiyuan-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "agent.handoff", "decision": "CHANGE", "reason": "Handoff must preserve optional modes, review state and Q27 freeze.", "evidence_refs": ["AI-HANDOFF.md", "docs/publication/zhiyuan-writing-examples.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
+      {"surface_id": "machine.llms", "decision": "CHANGE", "reason": "Machine entry must state the neutral 0.2.0 contract.", "evidence_refs": ["llms.txt", "docs/publication/zhiyuan-writing-method.md"], "validation_mode": "repository_semantic_validation", "derived_from": []},
       {"surface_id": "release.changelog", "decision": "CHANGE", "reason": "Record rejected 0.1.0 to 0.2.0 correction without promotion.", "evidence_refs": ["CHANGELOG.md", "data/operations/iterations/121Q28R.json"], "validation_mode": "repository_semantic_validation", "derived_from": []},
       {"surface_id": "release.versioning", "decision": "CHANGE", "reason": "Record candidate method version change without architecture version change.", "evidence_refs": ["docs/VERSIONING.md", "data/operations/iterations/121Q28R.json"], "validation_mode": "repository_semantic_validation", "derived_from": []}
     ],
@@ -87,9 +87,9 @@
     "project_synchronization_complete": false
   },
   "impact_matrix": [
-    {"surface": "docs/publication/cognitive-level-leap-writing-method.md", "decision": "CHANGE", "reason": "Neutral canonical 0.2.0 method."},
-    {"surface": "templates/publication/cognitive-level-leap-story-spec.md", "decision": "CHANGE", "reason": "Neutral non-fixed backstage interface."},
-    {"surface": "docs/publication/cognitive-level-leap-writing-examples.md", "decision": "CHANGE", "reason": "Add bounded counterexample and reclassify prior examples."},
+    {"surface": "docs/publication/zhiyuan-writing-method.md", "decision": "CHANGE", "reason": "Neutral canonical 0.2.0 method."},
+    {"surface": "templates/publication/zhiyuan-writing-spec.md", "decision": "CHANGE", "reason": "Neutral non-fixed backstage interface."},
+    {"surface": "docs/publication/zhiyuan-writing-examples.md", "decision": "CHANGE", "reason": "Add bounded counterexample and reclassify prior examples."},
     {"surface": "README.md", "decision": "CHANGE", "reason": "Human candidate entry."},
     {"surface": "docs/project-current-state.md", "decision": "CHANGE", "reason": "Rejected-old/non-current-new lifecycle truth."},
     {"surface": "SUMMARY.md", "decision": "CHANGE", "reason": "Navigation migration."},
@@ -111,9 +111,9 @@
     {"surface": "121Q27 local story", "decision": "NO_CHANGE_WITH_REASON", "reason": "Frozen baseline."}
   ],
   "changed_surfaces": [
-    "docs/publication/cognitive-level-leap-writing-method.md",
-    "templates/publication/cognitive-level-leap-story-spec.md",
-    "docs/publication/cognitive-level-leap-writing-examples.md",
+    "docs/publication/zhiyuan-writing-method.md",
+    "templates/publication/zhiyuan-writing-spec.md",
+    "docs/publication/zhiyuan-writing-examples.md",
     "README.md",
     "docs/project-current-state.md",
     "SUMMARY.md",

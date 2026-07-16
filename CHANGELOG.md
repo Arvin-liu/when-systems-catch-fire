@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- 121Q28R revises the rejected Draft-only `Zhiyuan Writing Method` from 0.1.0 to 0.2.0 on the same PR. Embodied anchoring is now optional; the neutral method adds a starting carrier, cognitive gravity center, recursive concept redefinition, latent-theme growth and retroactive development while preserving prospective writing, remainder-driven leaps, retro-illumination, lower-level boundaries and the information-gain stop. Cross-domain isomorphism and compressed endings are optional application/form. Neither version is current or merged.
+- 121Q28S revises Draft-only `Zhiyuan Writing Method` to 0.3.0 as 点火's shared-provenance L6 public-expression and provenance-gated feedback projection. It adds bounded whole-project correspondences, outward/return contracts, canonical `zhiyuan-writing-*` paths, ARCHITECTURE integration and a Codex full-PDF-reviewed example. Shared provenance is not identity, neuroscience, proof, causality or a new layer; 0.1.0/0.2.0 remain unmerged history.
 - PR #57 / Q25 / Q25C were independently accepted, merged and closed as current through Q25D. Human front doors now expose the current capability stack, and method 1.1.0 enforces registry-derived whole-project propagation, lifecycle-specific blockers and per-surface external attestations.
 - Q25B remains superseded non-ready candidate history. Q25C, not Q25B, is the accepted lifecycle-gated method increment.
 

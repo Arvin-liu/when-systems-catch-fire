@@ -31,6 +31,30 @@ flowchart LR
 
 L0 记录来源事实；L1 声明主体、条件、量词、范围与失败边界；L2 选择正确对象类型；L3 显式保存前提、规则与结论；L4 保存模型、证明义务、证明和反例工件；L5 分开评估形式、逻辑、数学、经验、范围和来源；L6 负责阐释与发布。
 
+## 点火与之元写作法的同源认知投影及 L6 双向反馈
+
+121Q28S 在现有 L6 内提出[之元写作法 0.3.0 候选](docs/publication/zhiyuan-writing-method.md)，不增加 L7 或新真值层。其关系状态是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`。
+
+点火与之元写作法被维护者声明为同一认知运动在不同任务约束下形成的投影：点火把材料、残余、跨尺度联系、语义修订、行动后回照、历史保存和停止条件约束成可审计的来源、模型、验证和迭代；之元写作法让相近运动在公共语言中被读者经历，并把作品暴露的误解、遗漏主体、失败同构、伪压缩和现实反例送回项目。
+
+```mermaid
+flowchart LR
+  SRC[L0-L5 / Charter / current state] --> ZW[L6 之元写作法候选]
+  ZW --> WORK[公共作品]
+  WORK --> RESP[读者/现实反馈与作者修订]
+  RESP --> PROV[来源与范围登记]
+  PROV --> CAND[候选 L0 source / gap / reality feedback]
+  CAND --> OPS[Q12/Q13/MCF/PSD/ARN/Atlas/iteration 按需处理]
+  OPS --> SRC
+```
+
+两条契约：
+
+- 向外表达：`L0-L5 / Charter / current state → L6 Zhiyuan Writing Method → public work`。必须保存来源、claim ceiling、不可映射残余和受损／沉默主体，不能用文学感染力制造下层真实性。
+- 返回点火：`public work / response / revision → provenance capture → candidate L0 source or gap → applicable project operation`。反馈先成为候选输入；点赞、赞美、传播、共鸣或多 AI 一致不是事实证据。
+
+同源不等于同一：本关系不是脑科学发现、形式同构证明、因果识别或固定项目本体。之元写作法不能替代 Foundation、证明、validator、Function OS、MCF、PSD、ARN 或迭代纪律；点火也不能从个人文风自动推出。操作位置仍在 L6，生成来源跨越项目整体，但证据权限不高于 L6。
+
 ## 目录权威
 
 ```mermaid

@@ -68,7 +68,7 @@
         "surface_id": "human.readme",
         "decision": "CHANGE",
         "reason": "The human front door must expose the new L6 candidate while clearly separating Draft candidate from current capability.",
-        "evidence_refs": ["README.md", "docs/publication/cognitive-level-leap-writing-method.md"],
+        "evidence_refs": ["README.md", "docs/publication/zhiyuan-writing-method.md"],
         "validation_mode": "repository_semantic_validation",
         "derived_from": []
       },
@@ -100,7 +100,7 @@
         "surface_id": "human.summary",
         "decision": "CHANGE",
         "reason": "Human navigation needs candidate method, example and template links without promoting them to current architecture.",
-        "evidence_refs": ["SUMMARY.md", "docs/publication/cognitive-level-leap-writing-method.md"],
+        "evidence_refs": ["SUMMARY.md", "docs/publication/zhiyuan-writing-method.md"],
         "validation_mode": "repository_semantic_validation",
         "derived_from": []
       },
@@ -108,7 +108,7 @@
         "surface_id": "human.usage",
         "decision": "CHANGE",
         "reason": "The L6 usage interface now needs an executable candidate path and explicit horizontal-versus-vertical and non-proof boundaries.",
-        "evidence_refs": ["docs/USAGE.md", "templates/publication/cognitive-level-leap-story-spec.md"],
+        "evidence_refs": ["docs/USAGE.md", "templates/publication/zhiyuan-writing-spec.md"],
         "validation_mode": "repository_semantic_validation",
         "derived_from": []
       },
@@ -116,7 +116,7 @@
         "surface_id": "human.ai_guide",
         "decision": "CHANGE",
         "reason": "Human AI users need the backstage interface and warnings against fixed outlines, stock imagery and literary-quality automation.",
-        "evidence_refs": ["docs/ai-assistant-usage-reference.md", "templates/publication/cognitive-level-leap-story-spec.md"],
+        "evidence_refs": ["docs/ai-assistant-usage-reference.md", "templates/publication/zhiyuan-writing-spec.md"],
         "validation_mode": "repository_semantic_validation",
         "derived_from": []
       },
@@ -124,7 +124,7 @@
         "surface_id": "ai.start",
         "decision": "CHANGE",
         "reason": "Cold-start AI must locate the candidate and preserve its Draft, L6-only and non-proof status.",
-        "evidence_refs": ["AI-START-HERE.md", "docs/publication/cognitive-level-leap-writing-method.md"],
+        "evidence_refs": ["AI-START-HERE.md", "docs/publication/zhiyuan-writing-method.md"],
         "validation_mode": "repository_semantic_validation",
         "derived_from": []
       },
@@ -132,7 +132,7 @@
         "surface_id": "agent.handoff",
         "decision": "CHANGE",
         "reason": "Agent handoff must preserve the method gates, Q27 freeze and no-current-capability boundary.",
-        "evidence_refs": ["AI-HANDOFF.md", "docs/publication/cognitive-level-leap-writing-examples.md"],
+        "evidence_refs": ["AI-HANDOFF.md", "docs/publication/zhiyuan-writing-examples.md"],
         "validation_mode": "repository_semantic_validation",
         "derived_from": []
       },
@@ -140,7 +140,7 @@
         "surface_id": "machine.llms",
         "decision": "CHANGE",
         "reason": "Machine readers need a compact path and explicit constraints for the new candidate interface.",
-        "evidence_refs": ["llms.txt", "docs/publication/cognitive-level-leap-writing-method.md"],
+        "evidence_refs": ["llms.txt", "docs/publication/zhiyuan-writing-method.md"],
         "validation_mode": "repository_semantic_validation",
         "derived_from": []
       },
@@ -183,9 +183,9 @@
     "project_synchronization_complete": false
   },
   "impact_matrix": [
-    {"surface": "docs/publication/cognitive-level-leap-writing-method.md", "decision": "CHANGE", "reason": "Canonical candidate path migrated by superseding 121Q28R; this 121Q28 record remains rejected history."},
-    {"surface": "templates/publication/cognitive-level-leap-story-spec.md", "decision": "CHANGE", "reason": "Backstage path migrated by superseding 121Q28R."},
-    {"surface": "docs/publication/cognitive-level-leap-writing-examples.md", "decision": "CHANGE", "reason": "Examples path migrated by superseding 121Q28R."},
+    {"surface": "docs/publication/zhiyuan-writing-method.md", "decision": "CHANGE", "reason": "Canonical candidate path migrated by superseding 121Q28R; this 121Q28 record remains rejected history."},
+    {"surface": "templates/publication/zhiyuan-writing-spec.md", "decision": "CHANGE", "reason": "Backstage path migrated by superseding 121Q28R."},
+    {"surface": "docs/publication/zhiyuan-writing-examples.md", "decision": "CHANGE", "reason": "Examples path migrated by superseding 121Q28R."},
     {"surface": "README.md", "decision": "CHANGE", "reason": "Human candidate entry."},
     {"surface": "docs/project-current-state.md", "decision": "CHANGE", "reason": "Open-candidate/non-current truth."},
     {"surface": "SUMMARY.md", "decision": "CHANGE", "reason": "Human navigation."},
@@ -218,9 +218,9 @@
     "llms.txt",
     "CHANGELOG.md",
     "docs/VERSIONING.md",
-    "docs/publication/cognitive-level-leap-writing-method.md",
-    "docs/publication/cognitive-level-leap-writing-examples.md",
-    "templates/publication/cognitive-level-leap-story-spec.md",
+    "docs/publication/zhiyuan-writing-method.md",
+    "docs/publication/zhiyuan-writing-examples.md",
+    "templates/publication/zhiyuan-writing-spec.md",
     "data/operations/iterations/121Q28.json",
     "reports/operations/121Q28-completion-seal.json",
     "reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md"

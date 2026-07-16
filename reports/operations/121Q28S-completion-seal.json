@@ -1,0 +1,22 @@
+{
+  "task_id": "121Q28S",
+  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "method_version": "1.1.0",
+  "manifest_path": "data/operations/iterations/121Q28S.json",
+  "phase_b": {
+    "draft_pr": 58,
+    "branch": "docs/121q28-embodied-cognitive-leap-writing-method-20260716",
+    "base": "main",
+    "base_head": "b396c136b47d8fd60ca513a531cb96ce65293d20",
+    "superseded_candidate_head": "30578a14cecf0d0cd5a00356799993dc05466513",
+    "review_id": 4713833187,
+    "candidate_method_version": "0.3.0",
+    "head_binding": {"mode": "external_exact_head_attestation", "authority": "pull_request_body_and_1111_receipt", "receipt_path": "agent-results/IGNITION-20260716-121Q28S-zhiyuan-writing-method-whole-project-integration-result.md", "embedded_exact_current_head": false, "live_refetch_required": true},
+    "claim_ceiling": "candidate_zhiyuan_writing_method_0_3_0_whole_project_expression_feedback_projection_implemented / repository_synchronization_complete_pending_independent_review"
+  },
+  "lifecycle": {"candidate": true, "ready_for_gpt_verification": true, "accepted": false, "merged": false, "current": false},
+  "completion_state": {"implementation_complete": true, "repository_synchronization_complete": true, "external_synchronization_required": true, "external_synchronization_attested": false, "project_synchronization_complete": false},
+  "synchronization_registry": {"path": "data/operations/synchronization-surfaces.json", "version": "1.0.0"},
+  "external_attestations": [{"surface_id": "external.pages_homepage", "stage": "post_merge", "status": "pending", "authority": "pull_request_body_and_1111_receipt", "evidence_refs": ["external:pr_body:58", "external:1111_receipt:IGNITION-20260716-121Q28S-zhiyuan-writing-method-whole-project-integration-result.md"], "live_state_locally_verifiable": false}],
+  "boundaries": {"adds_architecture_or_truth_layer": false, "modifies_foundation_or_iteration_method": false, "modifies_charter_source": false, "rewrites_or_publishes_121Q27": false, "commits_pdf_or_full_text": false, "claims_neuroscience_identity_or_formal_isomorphism": false, "treats_reader_response_as_truth": false, "merged_or_current": false}
+}

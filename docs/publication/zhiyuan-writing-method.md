@@ -2,17 +2,17 @@
 
 English: **Zhiyuan Writing Method**
 
-Version: `0.2.0`
+Version: `0.3.0`
 
 Status: `DRAFT_CANDIDATE_PENDING_INDEPENDENT_REVIEW`
 
-Layer: L6 interpretation / application / publication. This candidate does not add an architecture or truth layer and cannot raise any L0-L5 claim.
+Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. This candidate does not add an architecture or truth layer and cannot raise any L0-L5 claim.
 
 ## 命名与内部定义
 
 本方法以“之元”命名，因为它不是从通用写作教材拼接而来，而是从维护者之元的作品、心智运动、反馈和失败反例中蒸馏、提炼并总结出的个人写作方法。名称标记其真实来源和心智风格谱系。
 
-“之元写作法”是方法名称；“心智层级跃迁”是其当前 `0.2.0` 的内部生成内核。方法具体如何实现，由起始承载点、前视写作、不可容纳残余、心智引力中心、概念递归重定义、突然跃迁、隐形连续性、回照增义、潜题生长与反向显影、低层保存和信息增益停止共同定义。
+“之元写作法”是方法名称；“心智层级跃迁”是其当前 `0.3.0` 的核心生成运动之一。方法具体如何实现，由起始承载点、前视写作、不可容纳残余、心智引力中心、概念递归重定义、突然跃迁、隐形连续性、回照增义、潜题生长与反向显影、低层保存、信息增益停止，以及公共表达与反馈返回点火的双向契约共同定义。
 
 以个人名字命名不等于宣称只有这一种正确写法，也不等于任何人使用方法就复制了之元本人。其他人或 AI 可以学习可迁移部分，但作品仍取决于各自的经历、选择、价值与审美判断。
 
@@ -21,6 +21,66 @@ Layer: L6 interpretation / application / publication. This candidate does not ad
 `0.1.0` 把“肉身锚定”这一重要入口误写成方法资格门槛。维护者对《每日一诗停更说明》的结构说明构成反例：作品可以从诗句、时间安排、费用、决定和概念重定义出发，完成稳定的心智层级跃迁，而没有统摄全文、反复返回的身体坐标。正式审查 `4713441356` 因此拒绝旧候选。
 
 `0.2.0` 将上位方法修订并命名为“之元写作法”，以心智层级跃迁为内部生成内核。肉身锚定是可选生成／回返模式，跨域同构叙事是一种应用类型，高维压缩结尾是一种可选收束。旧候选从未被接受、合并或成为当前能力；其错误与纠正保留在 Git 历史、审查意见和 121Q28R 审计中。
+
+`0.3.0` 修复 0.2.0 仍把方法写成 L6 外接出版工具的问题：之元写作法与点火是维护者声明的同源认知运动在不同约束下形成的候选投影。之元写作法操作上仍位于 L6，却同时承担公共表达和反馈返回接口。review `4713833187`、旧 HEAD 和追加提交保留完整修订历史。
+
+## 与点火整体的同源认知关系
+
+准确状态是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`。
+
+点火与之元写作法都从维护者之元反复出现的认知运动中生长：从材料进入，暴露当前定义不能容纳的残余，跨尺度或跨领域建立有边界的候选联系，保留差异与历史，再用行动、反例和反馈回照旧定义。点火把这类运动约束成来源、命题、形式对象、机制、行动、验证、迭代和版本状态；之元写作法让这种运动在公共语言中被读者经历，并把作品暴露的新问题送回项目。
+
+同源不等于同一。这里没有科学识别维护者的大脑结构，没有证明两套系统形式同构，也没有声称点火只是个人风格的软件化。点火的 Foundation、证明、validator、Function OS、MCF、PSD、ARN 和迭代纪律不能被文学运动替代；作品感染力也不能反向证明点火机制真实。
+
+### 操作位置与生成来源
+
+- 操作位置：之元写作法是 L6 公共表达候选能力，受 L0-L5、项目现状和价值宪章约束。
+- 生成来源：它不是孤立长在 L6 上，而与点火整体共享维护者声明的认知来源。
+- 证据权限：仍不高于 L6；同源陈述是 design provenance 和可审计结构对应候选，不是脑科学、心理学或本体论事实。
+- 反馈作用：作品和读者反应可以暴露候选 source、gap 或现实反馈，但必须先登记 provenance，不能直接升级真值。
+
+## 全项目结构对应候选
+
+| 之元写作法运动 | 点火对应候选 | 保持的关系 | 不可映射残余／不能推出什么 |
+|---|---|---|---|
+| 起始承载点 | L0 来源、外部材料、现实问题 | 从可追溯材料开始 | 写作起点不是证据充分性 |
+| 不可容纳残余 | gap、pending、open obligation、unmapped residue | 旧定义留下未决压力 | 残余不证明下一假设 |
+| 下一层牵引当前层 | Q12 M0 机制草图、候选下一行动、跨尺度问题压力 | 下一步问题提前约束当前描述 | 不是预知终点或目的论 |
+| 概念递归重定义 | 版本化语义修订、current-state 更新、迁移兼容 | 新证据改写旧定义且保留历史 | 不得覆盖对象或偷换术语 |
+| 突然跃迁／隐形连续性 | I_iso 候选、MCF 尺度桥、ARN 异质关系、Atlas 投影 | 跨层连接须保存结构角色和残余 | 相似不等于同构、因果或真值 |
+| 横向换域／纵向升层 | 跨域碰撞、MCF/PSD 跨尺度与动力学建模 | 区分换例子与改变问题层级 | 领域或尺度数量不是认识升级 |
+| 回照增义 | Q12 M1 机制裁决、MapDiff、NetworkDiff、行动后解释 | 后状态重新解释先前材料 | 后见之明不能伪造前因 |
+| 心智引力／潜题 | 动态项目问题、Charter 方向、涌现的 current state | 方向在迭代中显形和修订 | 不是唯一中心或固定项目本质 |
+| 低层保存 | L0-L5 回链、历史保存、Charter Gate | 高层仍保存来源、差异和主体 | 抽象不能取消事实与伤害 |
+| 信息增益停止 | Q13 IterationDelta、吸引子控制、压缩完整性门 | 无新增认识时停止循环 | 停止不等于真理收敛 |
+| 高维压缩 | Q13 ChunkAudit、Atlas／状态摘要 | 压缩必须可展开回来源与残余 | 好记术语不等于理论或证明 |
+| 公开作品 | L6 解释、应用与出版 | 使受约束结构可被读者经历 | 感染力不提高 claim ceiling |
+| 读者／现实反馈 | 新来源、反例、误解、gap、现实反馈环 | 外部反应暴露缺口和失败 | 点赞、共鸣、传播、多 AI 共识不是事实证据 |
+
+这些对应是可审计的 homology candidate，不是逐项身份映射。之元写作法无需在每篇作品中展示所有点火组件，点火也不能从某篇作品自动推出全部正式资产。
+
+## 双向接口契约
+
+### 向外表达
+
+`L0-L5 / Charter / current project state → L6 Zhiyuan Writing Method → public work`
+
+1. 明确实际来源与只作启发的材料，保留 claim ceiling。
+2. 保存不可映射残余、物理／历史差异和受损或沉默主体。
+3. 用心智层级运动让结构被读者经历，而不是把报告术语换成文学辞藻。
+4. MCF、PSD、ARN、Q12-Q14 和 Atlas 只在实际相关时进入后台；不得要求每段对应一个组件。
+
+### 返回点火
+
+`public work / reader response / author revision → provenance capture → candidate L0 source or gap → Q12/Q13/MCF/PSD/ARN/iteration as applicable`
+
+1. 捕捉误解、现实反例、遗漏主体、失败跃迁、伪同构、无法展开的压缩和新问题。
+2. 记录作品版本、反馈主体、渠道、时间、原文范围和解释限制。
+3. 将合格反馈登记为候选 L0 source、gap 或现实反馈；未经登记的反应不能进入正式推理。
+4. 由 Q12/Q13 或适用的 MCF、PSD、ARN、Atlas、迭代流程判断下一行动；写作本身不裁决真值。
+5. 赞美、点击、传播、情绪共鸣和多模型一致只能是传播／体验数据，不能证明事实、因果、价值或方法有效。
+
+因此之元写作法可作为 epistemic sensor / gap-discovery interface，但不是证据 oracle。
 
 ## 方法本体
 
@@ -179,4 +239,4 @@ Layer: L6 interpretation / application / publication. This candidate does not ad
 
 ## 使用入口
 
-后续 Agent 或人类可先填写[心智层级跃迁故事规格](../../templates/publication/cognitive-level-leap-story-spec.md)，再对照[内部范例与反例](./cognitive-level-leap-writing-examples.md)。规格只保存后台生成和审计信息，不得原样变成文章目录。
+后续 Agent 或人类可先填写[之元写作法后台规格](../../templates/publication/zhiyuan-writing-spec.md)，再对照[内部范例与反例](./zhiyuan-writing-examples.md)。规格只保存后台生成、全项目来源对应与反馈返回信息，不得原样变成文章目录。
