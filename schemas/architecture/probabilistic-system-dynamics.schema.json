@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/probabilistic-system-dynamics.schema.json",
+  "title": "ProbabilisticSystemDynamics",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "psd_id",
+    "as_of_commit",
+    "claim_ceiling",
+    "system_context",
+    "state_space",
+    "transition_law",
+    "probability_semantics",
+    "intervention_distribution",
+    "trajectory_distribution",
+    "noise_process",
+    "system_coupling",
+    "stability_attractor",
+    "observability_controllability",
+    "coarse_graining_emergence",
+    "rare_event_tail",
+    "probability_calibration",
+    "unmapped_residue"
+  ],
+  "properties": {
+    "psd_id": { "type": "string", "minLength": 1 },
+    "as_of_commit": { "type": "string", "minLength": 7 },
+    "claim_ceiling": { "type": "string", "minLength": 1 },
+    "system_context": { "$ref": "#/$defs/system_context" },
+    "state_space": { "$ref": "#/$defs/state_space" },
+    "transition_law": { "$ref": "#/$defs/transition_law" },
+    "probability_semantics": { "type": "array", "items": { "$ref": "#/$defs/probability_semantics" }, "minItems": 1 },
+    "event_intensity_or_hazard": { "type": "array", "items": { "$ref": "#/$defs/event_intensity_or_hazard" } },
+    "trajectory_distribution": { "$ref": "#/$defs/trajectory_distribution" },
+    "intervention_distribution": { "$ref": "#/$defs/intervention_distribution" },
+    "noise_process": { "$ref": "#/$defs/noise_process" },
+    "system_coupling": { "$ref": "#/$defs/system_coupling" },
+    "stability_attractor": { "$ref": "#/$defs/stability_attractor" },
+    "observability_controllability": { "$ref": "#/$defs/observability_controllability" },
+    "coarse_graining_emergence": { "$ref": "#/$defs/coarse_graining_emergence" },
+    "rare_event_tail": { "$ref": "#/$defs/rare_event_tail" },
+    "probability_calibration": { "$ref": "#/$defs/probability_calibration" },
+    "negative_controls": { "type": "array", "items": { "type": "string" } },
+    "unmapped_residue": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+  },
+  "$defs": {
+    "probability_value": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "event_or_variable", "conditions", "time_scope", "system_boundary", "source", "estimation_method", "sample_or_model", "uncertainty", "claim_ceiling"],
+      "properties": {
+        "value": { "type": "number", "minimum": 0, "maximum": 1 },
+        "event_or_variable": { "type": "string" },
+        "conditions": { "type": "array", "items": { "type": "string" } },
+        "time_scope": { "type": "string" },
+        "system_boundary": { "type": "string" },
+        "source": { "type": "string" },
+        "estimation_method": { "type": "string" },
+        "sample_or_model": { "type": "string" },
+        "uncertainty": { "type": "string" },
+        "claim_ceiling": { "type": "string" }
+      }
+    },
+    "system_context": {
+      "type": "object",
+      "required": ["system_id", "boundary_rule", "environment", "open_closed_hybrid", "inputs", "outputs", "exchanges", "nested_systems", "observer_frame", "purpose_of_model"],
+      "properties": {
+        "system_id": { "type": "string" },
+        "boundary_rule": { "type": "string" },
+        "environment": { "type": "array", "items": { "type": "string" } },
+        "open_closed_hybrid": { "enum": ["open", "closed", "hybrid", "unknown"] },
+        "inputs": { "type": "array", "items": { "type": "string" } },
+        "outputs": { "type": "array", "items": { "type": "string" } },
+        "exchanges": { "type": "array", "items": { "type": "string" } },
+        "nested_systems": { "type": "array", "items": { "type": "string" } },
+        "observer_frame": { "type": "string" },
+        "purpose_of_model": { "type": "string" }
+      }
+    },
+    "state_space": {
+      "type": "object",
+      "required": ["observed_variables", "latent_variables", "variable_type", "constraints", "units", "scale", "coarse_graining"],
+      "properties": {
+        "observed_variables": { "type": "array", "items": { "type": "string" } },
+        "latent_variables": { "type": "array", "items": { "type": "string" } },
+        "variable_type": { "enum": ["discrete", "continuous", "hybrid"] },
+        "constraints": { "type": "array", "items": { "type": "string" } },
+        "units": { "type": "object" },
+        "scale": { "type": "string" },
+        "coarse_graining": { "type": "string" }
+      }
+    },
+    "transition_law": {
+      "type": "object",
+      "required": ["law_type", "update_equation", "transition_kernel", "generator", "time_semantics", "assumptions"],
+      "properties": {
+        "law_type": { "enum": ["deterministic", "stochastic", "hybrid"] },
+        "update_equation": { "type": "string" },
+        "transition_kernel": { "type": "array", "items": { "type": "array", "items": { "type": "number" } } },
+        "generator": { "type": "string" },
+        "time_semantics": { "type": "string" },
+        "assumptions": { "type": "object" }
+      }
+    },
+    "probability_semantics": {
+      "type": "object",
+      "required": ["semantic_type", "probability", "not_intervention_unless_declared"],
+      "properties": {
+        "semantic_type": { "enum": ["aleatoric", "epistemic", "measurement", "sampling", "subjective_prior", "posterior", "unknown"] },
+        "probability": { "$ref": "#/$defs/probability_value" },
+        "not_intervention_unless_declared": { "type": "boolean", "const": true }
+      }
+    },
+    "event_intensity_or_hazard": {
+      "type": "object",
+      "required": ["event", "risk_set", "time_window", "conditioning_set", "intensity_or_hazard", "claim_ceiling"],
+      "properties": {
+        "event": { "type": "string" },
+        "risk_set": { "type": "string" },
+        "time_window": { "type": "string" },
+        "conditioning_set": { "type": "array", "items": { "type": "string" } },
+        "intensity_or_hazard": { "type": "string" },
+        "claim_ceiling": { "type": "string" }
+      }
+    },
+    "trajectory_distribution": {
+      "type": "object",
+      "required": ["path_space", "path_probability_or_weight", "initial_distribution", "boundary_conditions"],
+      "properties": {
+        "path_space": { "type": "array", "items": { "type": "string" } },
+        "path_probability_or_weight": { "$ref": "#/$defs/probability_value" },
+        "initial_distribution": { "type": "array", "items": { "$ref": "#/$defs/probability_value" } },
+        "boundary_conditions": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "intervention_distribution": {
+      "type": "object",
+      "required": ["observational_distribution", "interventional_distribution", "policy_or_action", "target", "support", "identifiability"],
+      "properties": {
+        "observational_distribution": { "$ref": "#/$defs/probability_value" },
+        "interventional_distribution": { "$ref": "#/$defs/probability_value" },
+        "policy_or_action": { "type": "string" },
+        "target": { "type": "string" },
+        "support": { "type": "string" },
+        "identifiability": { "type": "string" }
+      }
+    },
+    "noise_process": {
+      "type": "object",
+      "required": ["source", "form", "independence_or_correlation", "stationarity_status"],
+      "properties": {
+        "source": { "enum": ["exogenous", "endogenous", "mixed", "unknown"] },
+        "form": { "enum": ["additive", "multiplicative", "hybrid", "unknown"] },
+        "independence_or_correlation": { "type": "string" },
+        "stationarity_status": { "type": "string" }
+      }
+    },
+    "system_coupling": {
+      "type": "object",
+      "required": ["subsystems", "channels", "shared_environment", "bidirectional", "delay"],
+      "properties": {
+        "subsystems": { "type": "array", "items": { "type": "string" } },
+        "channels": { "type": "array", "items": { "type": "string" } },
+        "shared_environment": { "type": "array", "items": { "type": "string" } },
+        "bidirectional": { "type": "boolean" },
+        "delay": { "type": "string" }
+      }
+    },
+    "stability_attractor": {
+      "type": "object",
+      "required": ["equilibrium", "attractor", "basin", "stability", "bifurcation_or_phase_transition"],
+      "properties": {
+        "equilibrium": { "type": "string" },
+        "attractor": { "type": "string" },
+        "basin": { "type": "string" },
+        "stability": { "type": "string" },
+        "bifurcation_or_phase_transition": { "type": "string" }
+      }
+    },
+    "observability_controllability": {
+      "type": "object",
+      "required": ["observed", "latent", "controls", "observability_status", "controllability_status"],
+      "properties": {
+        "observed": { "type": "array", "items": { "type": "string" } },
+        "latent": { "type": "array", "items": { "type": "string" } },
+        "controls": { "type": "array", "items": { "type": "string" } },
+        "observability_status": { "type": "string" },
+        "controllability_status": { "type": "string" }
+      }
+    },
+    "coarse_graining_emergence": {
+      "type": "object",
+      "required": ["micro_macro_map", "information_loss", "effective_information_comparator", "control_case", "claim_ceiling"],
+      "properties": {
+        "micro_macro_map": { "type": "string" },
+        "information_loss": { "type": "string" },
+        "effective_information_comparator": { "type": "string" },
+        "control_case": { "type": "string" },
+        "claim_ceiling": { "type": "string" }
+      }
+    },
+    "rare_event_tail": {
+      "type": "object",
+      "required": ["event_definition", "tail_model", "time_horizon", "risk_bearers", "uncertainty", "claim_ceiling"],
+      "properties": {
+        "event_definition": { "type": "string" },
+        "tail_model": { "type": "string" },
+        "time_horizon": { "type": "string" },
+        "risk_bearers": { "type": "array", "items": { "type": "string" } },
+        "uncertainty": { "type": "string" },
+        "claim_ceiling": { "type": "string" }
+      }
+    },
+    "probability_calibration": {
+      "type": "object",
+      "required": ["forecast", "outcome", "score", "sample_window", "calibration_boundary"],
+      "properties": {
+        "forecast": { "$ref": "#/$defs/probability_value" },
+        "outcome": { "type": "number", "minimum": 0, "maximum": 1 },
+        "score": { "type": "string" },
+        "sample_window": { "type": "string" },
+        "calibration_boundary": { "type": "string" }
+      }
+    }
+  }
+}

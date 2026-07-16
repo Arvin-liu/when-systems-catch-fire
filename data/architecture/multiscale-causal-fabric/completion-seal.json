@@ -1,0 +1,22 @@
+{
+  "task": "121Q21R",
+  "status": "READY_AS_MULTISCALE_CAUSAL_FABRIC_CANDIDATE",
+  "as_of_commit_before_step_003": "f4784350",
+  "claim_ceiling": "Derived architecture candidate only; not causal proof and not a new truth layer.",
+  "validator": "tools/validate_multiscale_causal_fabric.py",
+  "examples": [
+    "vehicle-ownership",
+    "ai-deployment",
+    "energy-supply-chain",
+    "stellar-nucleosynthesis",
+    "quantum-entanglement-negative"
+  ],
+  "boundaries": {
+    "light_cone": "reachability only, not actual mechanism",
+    "entropy": "thermodynamic arrow separated from causal order",
+    "quantum_entanglement": "no controllable superluminal signal; social use remains analogy_only",
+    "scale_transition": "requires bridge mechanism, evidence, or residue",
+    "atlas": "projection support only, not proof"
+  },
+  "frozen_assets_modified": false
+}

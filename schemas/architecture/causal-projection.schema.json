@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/causal-projection.schema.json",
+  "title": "CausalProjection",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["projection_id", "fabric_id", "as_of_commit", "observer_or_question", "projection_type", "projection_rules", "omitted_dimensions", "provenance", "uncertainty", "claim_ceiling", "unmapped_residue"],
+  "properties": {
+    "projection_id": { "type": "string", "minLength": 1 },
+    "fabric_id": { "type": "string", "minLength": 1 },
+    "as_of_commit": { "type": "string", "minLength": 7 },
+    "observer_or_question": { "type": "string", "minLength": 1 },
+    "projection_type": {
+      "enum": ["spacetime_reachability", "mechanism_path", "intervention_path", "resource_energy_flow", "entropy_dissipation", "responsibility_burden", "information_flow", "historical_lineage"]
+    },
+    "projection_rules": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "omitted_dimensions": { "type": "array", "items": { "type": "string" } },
+    "provenance": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "uncertainty": { "type": "string", "minLength": 1 },
+    "claim_ceiling": { "type": "string", "minLength": 1 },
+    "unmapped_residue": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+  }
+}

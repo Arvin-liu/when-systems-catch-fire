@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/schemas/architecture/causal-event.schema.json",
+  "title": "CausalEvent",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "event_type", "temporal_support", "spatial_support", "scale_domain", "observer_frame", "provenance", "uncertainty", "claim_ceiling"],
+  "properties": {
+    "event_id": { "type": "string", "minLength": 1 },
+    "event_type": { "type": "string", "minLength": 1 },
+    "temporal_support": { "type": "object" },
+    "spatial_support": { "type": "object" },
+    "scale_domain": { "$ref": "multiscale-causal-fabric.schema.json#/$defs/scale_domain" },
+    "observer_frame": { "type": "string", "minLength": 1 },
+    "provenance": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "uncertainty": { "type": "string", "minLength": 1 },
+    "claim_ceiling": { "type": "string", "minLength": 1 }
+  }
+}

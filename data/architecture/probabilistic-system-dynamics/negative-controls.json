@@ -1,0 +1,11 @@
+{
+  "negative_controls": [
+    {"id":"nc-conditional-do","bad_claim":"P(Y|X) equals P(Y|do(X))","validator_expectation":"fail observation/intervention conflation"},
+    {"id":"nc-high-probability-cause","bad_claim":"High probability proves strong causality","validator_expectation":"fail causal proof overclaim"},
+    {"id":"nc-posterior-physical","bad_claim":"A Bayesian posterior is physical randomness","validator_expectation":"fail posterior semantics conflation"},
+    {"id":"nc-boundary-silent-change","bad_claim":"System boundary changed without a diff","validator_expectation":"fail missing system-boundary diff"},
+    {"id":"nc-silent-markov","bad_claim":"Markov, stationary, ergodic, linear, or Gaussian assumed silently","validator_expectation":"fail missing assumption declaration"},
+    {"id":"nc-entropy-mix","bad_claim":"Shannon entropy equals thermodynamic entropy","validator_expectation":"fail entropy conflation"},
+    {"id":"nc-coarse-correlation","bad_claim":"Coarse-grained correlation proves causal emergence","validator_expectation":"fail emergence overclaim"}
+  ]
+}
