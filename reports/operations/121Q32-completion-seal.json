@@ -75,5 +75,15 @@
     "pages_payload_tar_digest": "sha256:2fbc9a1116c4682c17113b4d989012aea0c59b4da182c3164e2e7fea80e452ab",
     "distinction": "github_artifact_archive_digest is the SHA-256 of the GitHub artifact archive; pages_payload_tar_digest is the SHA-256 of the Pages payload tar. They differ because the Pages payload is a curated subset rendered for web deployment."
   },
-  "propagation_closure_hash": "6d21ad8e6b29e8da61f3539c430b88feac5f1d8be4d4c6d55c3d2ad0e6bf9a4b"
+  "propagation_closure_hash": "6d21ad8e6b29e8da61f3539c430b88feac5f1d8be4d4c6d55c3d2ad0e6bf9a4b",
+  "pages_artifacts": {
+    "github_artifact_archive_digest": "sha256:8169fc44ad972b0753abf086ae6acd1ac3018520bed94fad5ff64248fe27bf46",
+    "pages_payload_tar_digest": "sha256:272bb6cdcd4b7dbeadb9f322b3e74325f6e418f635537bb47d6aaab64386951a"
+  },
+  "ci_runs": {
+    "foundation": 29568271610,
+    "function_os": 29568400929,
+    "pages": 29568403792
+  },
+  "exact_head": "022f7151a3dba9c4f769a258774addd1d8aa2972"
 }
