@@ -81,11 +81,11 @@
     "pages_payload_tar_digest": "sha256:4d55a77ef7e5b1ae8f0ecc239c85662cbca28c89b03cbd70395361dada1f9c47"
   },
   "ci_runs": {
-    "foundation": 29568983823,
-    "function_os": 29570163014,
-    "pages": 29570169044
+    "foundation": 29570944698,
+    "function_os": 29571107112,
+    "pages": 29571109656
   },
-  "exact_head": "c0226c59a6aafe327e76ef37c3c8e63e7eab030a",
-  "seal_binding_head": "5aad60d66575fbfca66a58a9e606bd9523bf1385",
-  "head_metadata_note": "exact_head is the CI-verified HEAD (c0226c59) with successful foundation/function-os/pages runs. seal_binding_head is the commit where this seal metadata binding resides. They differ because updating the seal creates a new commit, making exact_head perpetually lag behind the physical HEAD."
+  "exact_head": "1df89493dcd0a0c0070c3d168dcc0805ab58fafb",
+  "seal_binding_head": "1df89493dcd0a0c0070c3d168dcc0805ab58fafb",
+  "head_metadata_note": "exact_head (1df89493) is the CI-verified HEAD with all successful runs. seal_binding_head is the same commit. Future metadata updates will create new HEADs, perpetuating the binding lag."
 }
