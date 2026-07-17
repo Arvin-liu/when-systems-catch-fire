@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1968" width="1800" height="1968" role="img" aria-labelledby="map-title map-description">
   <title id="map-title">点火完整可点击系统图</title>
-  <desc id="map-description">当前仓库结构、操作控制、公共表达与现实反馈的可维护导航接口；连线表示导航或受约束的信息流，不自动表示因果、同构或真值。</desc>
+  <desc id="map-description">由项目构件 registry 与类型化传播拓扑派生的候选导航投影；连线的权限由 relation domain 决定，不自动表示真实因果。</desc>
   <style>
       .map-bg{fill:#f8fafc}.map-title{font:700 30px system-ui,sans-serif;fill:#0f172a}
       .map-subtitle{font:400 15px system-ui,sans-serif;fill:#475569}
@@ -23,7 +23,7 @@
   </defs>
   <rect class="map-bg" x="0" y="0" width="1800" height="1968" />
   <text class="map-title" x="32" y="42">点火完整可点击系统图</text>
-  <text class="map-subtitle" x="32" y="72">当前仓库结构、操作控制、公共表达与现实反馈的可维护导航接口；连线表示导航或受约束的信息流，不自动表示因果、同构或真值。</text>
+  <text class="map-subtitle" x="32" y="72">由项目构件 registry 与类型化传播拓扑派生的候选导航投影；连线的权限由 relation domain 决定，不自动表示真实因果。</text>
   <text class="boundary-note" x="32" y="98">点击任一构件打开 canonical 目标；视觉邻近与连线不自动表示因果、严格同构或理论完备。</text>
   <rect class="cluster" x="32" y="122" width="560" height="454" rx="16" stroke="#2563eb" />
   <text class="cluster-title" x="54" y="154" fill="#2563eb">前门 / 导航</text>
@@ -39,7 +39,7 @@
   <text class="cluster-desc" x="54" y="794">多尺度、概率动力学与自适应关系的候选表示</text>
   <rect class="cluster" x="620" y="736" width="560" height="454" rx="16" stroke="#d97706" />
   <text class="cluster-title" x="642" y="768" fill="#d97706">控制 / 操作层</text>
-  <text class="cluster-desc" x="642" y="794">行动、注意力、地图、迭代与同步闭包</text>
+  <text class="cluster-desc" x="642" y="794">行动、注意力、地图、迭代与类型化传播闭包</text>
   <rect class="cluster" x="1208" y="736" width="560" height="322" rx="16" stroke="#be123c" />
   <text class="cluster-title" x="1230" y="768" fill="#be123c">规范与约束</text>
   <text class="cluster-desc" x="1230" y="794">价值、权利许可与维护者可持续性边界</text>
@@ -53,110 +53,110 @@
   <text class="cluster-title" x="1230" y="1250" fill="#475569">图的解释边界</text>
   <text class="cluster-desc" x="1230" y="1276">这是一张导航接口，不是完整性、因果或理论证明</text>
   <g aria-label="system relations">
-    <path class="edge" d="M 312.0 268.0 C 312.0 373.0, 312.0 373.0, 312.0 478.0" data-source="readme" data-target-node="current_state">
-      <title>readme → current_state: 展开当前状态</title>
+    <path class="edge" d="M 312.0 268.0 C 312.0 373.0, 312.0 373.0, 312.0 478.0" data-source="readme" data-target-node="current_state" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>readme → current_state: 展开当前状态 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 241.0 C 606.0 241.0, 606.0 241.0, 900.0 241.0" data-source="readme" data-target-node="l0">
-      <title>readme → l0: 进入架构</title>
+    <path class="edge" d="M 312.0 241.0 C 606.0 241.0, 606.0 241.0, 900.0 241.0" data-source="readme" data-target-node="l0" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>readme → l0: 进入架构 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 268.0 C 900.0 274.0, 900.0 274.0, 900.0 280.0" data-source="l0" data-target-node="l1">
-      <title>l0 → l1: 受控语义</title>
+    <path class="edge" d="M 900.0 268.0 C 900.0 274.0, 900.0 274.0, 900.0 280.0" data-source="l0" data-target-node="l1" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>l0 → l1: 受控语义 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 334.0 C 900.0 340.0, 900.0 340.0, 900.0 346.0" data-source="l1" data-target-node="l2">
-      <title>l1 → l2: 形式化</title>
+    <path class="edge" d="M 900.0 334.0 C 900.0 340.0, 900.0 340.0, 900.0 346.0" data-source="l1" data-target-node="l2" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>l1 → l2: 形式化 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 400.0 C 900.0 406.0, 900.0 406.0, 900.0 412.0" data-source="l2" data-target-node="l3">
-      <title>l2 → l3: 论证</title>
+    <path class="edge" d="M 900.0 400.0 C 900.0 406.0, 900.0 406.0, 900.0 412.0" data-source="l2" data-target-node="l3" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>l2 → l3: 论证 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 466.0 C 900.0 472.0, 900.0 472.0, 900.0 478.0" data-source="l3" data-target-node="l4">
-      <title>l3 → l4: 模型与证明</title>
+    <path class="edge" d="M 900.0 466.0 C 900.0 472.0, 900.0 472.0, 900.0 478.0" data-source="l3" data-target-node="l4" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>l3 → l4: 模型与证明 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 532.0 C 900.0 538.0, 900.0 538.0, 900.0 544.0" data-source="l4" data-target-node="l5">
-      <title>l4 → l5: 验证</title>
+    <path class="edge" d="M 900.0 532.0 C 900.0 538.0, 900.0 538.0, 900.0 544.0" data-source="l4" data-target-node="l5" data-relation-class="validates" data-relation-domain="repository_dependency">
+      <title>l4 → l5: 验证 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 598.0 C 900.0 604.0, 900.0 604.0, 900.0 610.0" data-source="l5" data-target-node="l6">
-      <title>l5 → l6: 受约束发布</title>
+    <path class="edge" d="M 900.0 598.0 C 900.0 604.0, 900.0 604.0, 900.0 610.0" data-source="l5" data-target-node="l6" data-relation-class="publishes" data-relation-domain="repository_dependency">
+      <title>l5 → l6: 受约束发布 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 241.0 C 1194.0 241.0, 1194.0 373.0, 900.0 373.0" data-source="foundation" data-target-node="l2">
-      <title>foundation → l2: 权威对象</title>
+    <path class="edge" d="M 1488.0 241.0 C 1194.0 241.0, 1194.0 373.0, 900.0 373.0" data-source="foundation" data-target-node="l2" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>foundation → l2: 权威对象 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 307.0 C 1194.0 307.0, 1194.0 855.0, 900.0 855.0" data-source="function_os" data-target-node="q12">
-      <title>function_os → q12: 执行动作</title>
+    <path class="edge" d="M 1488.0 307.0 C 1194.0 307.0, 1194.0 855.0, 900.0 855.0" data-source="function_os" data-target-node="q12" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
+      <title>function_os → q12: 执行动作 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 882.0 C 312.0 888.0, 312.0 888.0, 312.0 894.0" data-source="mcf" data-target-node="psd">
-      <title>mcf → psd: 概率动力学补充</title>
+    <path class="edge" d="M 312.0 882.0 C 312.0 888.0, 312.0 888.0, 312.0 894.0" data-source="mcf" data-target-node="psd" data-relation-class="enabling_condition" data-relation-domain="substantive_causal_candidate">
+      <title>mcf → psd: 概率动力学补充 [substantive_causal_candidate]</title>
     </path>
-    <path class="edge" d="M 312.0 1014.0 C 312.0 921.0, 312.0 921.0, 312.0 828.0" data-source="arn" data-target-node="mcf">
-      <title>arn → mcf: 因果审查委托</title>
+    <path class="edge" d="M 312.0 1014.0 C 312.0 921.0, 312.0 921.0, 312.0 828.0" data-source="arn" data-target-node="mcf" data-relation-class="mechanism_hypothesis" data-relation-domain="substantive_causal_candidate">
+      <title>arn → mcf: 因果审查委托 [substantive_causal_candidate]</title>
     </path>
-    <path class="edge" d="M 900.0 882.0 C 900.0 888.0, 900.0 888.0, 900.0 894.0" data-source="q12" data-target-node="q13">
-      <title>q12 → q13: 增量与吸引子控制</title>
+    <path class="edge" d="M 900.0 882.0 C 900.0 888.0, 900.0 888.0, 900.0 894.0" data-source="q12" data-target-node="q13" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>q12 → q13: 增量与吸引子控制 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 948.0 C 900.0 954.0, 900.0 954.0, 900.0 960.0" data-source="q13" data-target-node="q14">
-      <title>q13 → q14: 版本化导航</title>
+    <path class="edge" d="M 900.0 948.0 C 900.0 954.0, 900.0 954.0, 900.0 960.0" data-source="q13" data-target-node="q14" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>q13 → q14: 版本化导航 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1014.0 C 900.0 1020.0, 900.0 1020.0, 900.0 1026.0" data-source="q14" data-target-node="iteration">
-      <title>q14 → iteration: 行动与修订</title>
+    <path class="edge" d="M 900.0 1014.0 C 900.0 1020.0, 900.0 1020.0, 900.0 1026.0" data-source="q14" data-target-node="iteration" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>q14 → iteration: 行动与修订 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1080.0 C 900.0 1086.0, 900.0 1086.0, 900.0 1092.0" data-source="iteration" data-target-node="sync">
-      <title>iteration → sync: 传播闭包</title>
+    <path class="edge" d="M 900.0 1080.0 C 900.0 1086.0, 900.0 1086.0, 900.0 1092.0" data-source="iteration" data-target-node="sync" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+      <title>iteration → sync: 传播闭包 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 855.0 C 1194.0 855.0, 1194.0 855.0, 900.0 855.0" data-source="charter" data-target-node="q12">
-      <title>charter → q12: 价值门</title>
+    <path class="edge" d="M 1488.0 855.0 C 1194.0 855.0, 1194.0 855.0, 900.0 855.0" data-source="charter" data-target-node="q12" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+      <title>charter → q12: 价值门 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 921.0 C 1194.0 921.0, 1194.0 637.0, 900.0 637.0" data-source="licensing" data-target-node="l6">
-      <title>licensing → l6: 发布权利边界</title>
+    <path class="edge" d="M 1488.0 921.0 C 1194.0 921.0, 1194.0 637.0, 900.0 637.0" data-source="licensing" data-target-node="l6" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+      <title>licensing → l6: 发布权利边界 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 987.0 C 1194.0 987.0, 1194.0 1053.0, 900.0 1053.0" data-source="sustainability" data-target-node="iteration">
-      <title>sustainability → iteration: 可承受行动</title>
+    <path class="edge" d="M 1488.0 987.0 C 1194.0 987.0, 1194.0 1053.0, 900.0 1053.0" data-source="sustainability" data-target-node="iteration" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>sustainability → iteration: 可承受行动 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 1364.0 C 312.0 1403.0, 312.0 1403.0, 312.0 1442.0" data-source="external_input" data-target-node="source_pool">
-      <title>external_input → source_pool: 外部材料</title>
+    <path class="edge" d="M 312.0 1364.0 C 312.0 1403.0, 312.0 1403.0, 312.0 1442.0" data-source="external_input" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>external_input → source_pool: 外部材料 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 1430.0 C 312.0 1436.0, 312.0 1436.0, 312.0 1442.0" data-source="ignition_increment" data-target-node="source_pool">
-      <title>ignition_increment → source_pool: 点火增量</title>
+    <path class="edge" d="M 312.0 1430.0 C 312.0 1436.0, 312.0 1436.0, 312.0 1442.0" data-source="ignition_increment" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>ignition_increment → source_pool: 点火增量 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 1496.0 C 312.0 1502.0, 312.0 1502.0, 312.0 1508.0" data-source="source_pool" data-target-node="zhiyuan_method">
-      <title>source_pool → zhiyuan_method: 选材与边界</title>
+    <path class="edge" d="M 312.0 1496.0 C 312.0 1502.0, 312.0 1502.0, 312.0 1508.0" data-source="source_pool" data-target-node="zhiyuan_method" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
+      <title>source_pool → zhiyuan_method: 选材与边界 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 1628.0 C 312.0 1634.0, 312.0 1634.0, 312.0 1640.0" data-source="case_source" data-target-node="point_fire_analysis">
-      <title>case_source → point_fire_analysis: 点火处理</title>
+    <path class="edge" d="M 312.0 1628.0 C 312.0 1634.0, 312.0 1634.0, 312.0 1640.0" data-source="case_source" data-target-node="point_fire_analysis" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>case_source → point_fire_analysis: 点火处理 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 1694.0 C 312.0 1535.0, 312.0 1535.0, 312.0 1376.0" data-source="point_fire_analysis" data-target-node="ignition_increment">
-      <title>point_fire_analysis → ignition_increment: 增量输出</title>
+    <path class="edge" d="M 312.0 1694.0 C 312.0 1535.0, 312.0 1535.0, 312.0 1376.0" data-source="point_fire_analysis" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>point_fire_analysis → ignition_increment: 增量输出 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 1562.0 C 312.0 1634.0, 312.0 1634.0, 312.0 1706.0" data-source="zhiyuan_method" data-target-node="accepted_work">
-      <title>zhiyuan_method → accepted_work: 公共表达</title>
+    <path class="edge" d="M 312.0 1562.0 C 312.0 1634.0, 312.0 1634.0, 312.0 1706.0" data-source="zhiyuan_method" data-target-node="accepted_work" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>zhiyuan_method → accepted_work: 公共表达 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 1760.0 C 312.0 1766.0, 312.0 1766.0, 312.0 1772.0" data-source="accepted_work" data-target-node="showcase">
-      <title>accepted_work → showcase: 人类索引</title>
+    <path class="edge" d="M 312.0 1760.0 C 312.0 1766.0, 312.0 1766.0, 312.0 1772.0" data-source="accepted_work" data-target-node="showcase" data-relation-class="publishes" data-relation-domain="repository_dependency">
+      <title>accepted_work → showcase: 人类索引 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 1760.0 C 312.0 1799.0, 312.0 1799.0, 312.0 1838.0" data-source="accepted_work" data-target-node="showcase_registry">
-      <title>accepted_work → showcase_registry: 机器登记</title>
+    <path class="edge" d="M 312.0 1760.0 C 312.0 1799.0, 312.0 1799.0, 312.0 1838.0" data-source="accepted_work" data-target-node="showcase_registry" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>accepted_work → showcase_registry: 机器登记 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 1733.0 C 606.0 1733.0, 606.0 1337.0, 900.0 1337.0" data-source="accepted_work" data-target-node="public_response">
-      <title>accepted_work → public_response: 现实暴露</title>
+    <path class="edge" d="M 312.0 1733.0 C 606.0 1733.0, 606.0 1337.0, 900.0 1337.0" data-source="accepted_work" data-target-node="public_response" data-relation-class="publishes" data-relation-domain="repository_dependency">
+      <title>accepted_work → public_response: 现实暴露 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1364.0 C 900.0 1370.0, 900.0 1370.0, 900.0 1376.0" data-source="public_response" data-target-node="provenance_capture">
-      <title>public_response → provenance_capture: 登记</title>
+    <path class="edge" d="M 900.0 1364.0 C 900.0 1370.0, 900.0 1370.0, 900.0 1376.0" data-source="public_response" data-target-node="provenance_capture" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+      <title>public_response → provenance_capture: 登记 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 900.0 1430.0 C 900.0 1436.0, 900.0 1436.0, 900.0 1442.0" data-source="provenance_capture" data-target-node="candidate_return">
-      <title>provenance_capture → candidate_return: 范围审查</title>
+    <path class="edge" d="M 900.0 1430.0 C 900.0 1436.0, 900.0 1436.0, 900.0 1442.0" data-source="provenance_capture" data-target-node="candidate_return" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>provenance_capture → candidate_return: 范围审查 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1496.0 C 900.0 1502.0, 900.0 1502.0, 900.0 1508.0" data-source="candidate_return" data-target-node="feedback_routes">
-      <title>candidate_return → feedback_routes: 分派</title>
+    <path class="edge" d="M 900.0 1496.0 C 900.0 1502.0, 900.0 1502.0, 900.0 1508.0" data-source="candidate_return" data-target-node="feedback_routes" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>candidate_return → feedback_routes: 分派 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1535.0 C 606.0 1535.0, 606.0 1403.0, 312.0 1403.0" data-source="feedback_routes" data-target-node="ignition_increment">
-      <title>feedback_routes → ignition_increment: 新增量</title>
+    <path class="edge" d="M 900.0 1535.0 C 606.0 1535.0, 606.0 1403.0, 312.0 1403.0" data-source="feedback_routes" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
+      <title>feedback_routes → ignition_increment: 新增量 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1469.0 C 606.0 1469.0, 606.0 1469.0, 312.0 1469.0" data-source="candidate_return" data-target-node="source_pool">
-      <title>candidate_return → source_pool: 可继续写作</title>
+    <path class="edge" d="M 900.0 1469.0 C 606.0 1469.0, 606.0 1469.0, 312.0 1469.0" data-source="candidate_return" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
+      <title>candidate_return → source_pool: 可继续写作 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 1364.0 C 1488.0 1370.0, 1488.0 1370.0, 1488.0 1376.0" data-source="no_l7" data-target-node="no_truth_upgrade">
-      <title>no_l7 → no_truth_upgrade: 边界</title>
+    <path class="edge" d="M 1488.0 1364.0 C 1488.0 1370.0, 1488.0 1370.0, 1488.0 1376.0" data-source="no_l7" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>no_l7 → no_truth_upgrade: 边界 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 1430.0 C 1488.0 1436.0, 1488.0 1436.0, 1488.0 1442.0" data-source="no_truth_upgrade" data-target-node="no_totality_proof">
-      <title>no_truth_upgrade → no_totality_proof: 边界</title>
+    <path class="edge" d="M 1488.0 1430.0 C 1488.0 1436.0, 1488.0 1436.0, 1488.0 1442.0" data-source="no_truth_upgrade" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+      <title>no_truth_upgrade → no_totality_proof: 边界 [synchronization_obligation]</title>
     </path>
   </g>
   <g aria-label="clickable system components">
@@ -302,19 +302,20 @@
         <tspan x="658.0" dy="0">Q14 点火地图集</tspan>
       </text>
     </a>
-    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ITERATION.md" target="_top" data-node-id="iteration" data-group="operations" data-target="ITERATION.md" aria-label="点火迭代操作法 1.1.0：治理项目怎样改变自己，不替代证据或真值。">
-      <title>点火迭代操作法 1.1.0 — 治理项目怎样改变自己，不替代证据或真值。</title>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ITERATION.md" target="_top" data-node-id="iteration" data-group="operations" data-target="ITERATION.md" aria-label="点火迭代操作法 1.1 Current / 1.2 Draft：候选增加类型化传播闭包；仍只治理项目怎样改变自己。">
+      <title>点火迭代操作法 1.1 Current / 1.2 Draft — 候选增加类型化传播闭包；仍只治理项目怎样改变自己。</title>
       <rect class="node" x="642.0" y="1026.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="1059.0">
-        <tspan x="658.0" dy="0">点火迭代操作法 1.1.0</tspan>
+      <text class="node-label" x="658.0" y="1048.0">
+        <tspan x="658.0" dy="0">点火迭代操作法 1.1 Current /</tspan>
+        <tspan x="658.0" dy="18">1.2 Draft</tspan>
       </text>
     </a>
-    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/data/operations/synchronization-surfaces.json" target="_top" data-node-id="sync" data-group="operations" data-target="data/operations/synchronization-surfaces.json" aria-label="同步表面 / 四级完成状态：区分实现、仓库、外部与项目整体完成。">
-      <title>同步表面 / 四级完成状态 — 区分实现、仓库、外部与项目整体完成。</title>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/data/operations/synchronization-surfaces.json" target="_top" data-node-id="sync" data-group="operations" data-target="data/operations/synchronization-surfaces.json" aria-label="同步表面 / 类型化传播闭包：1.1 同步义务与 1.2 候选构件传播联合计算；四级完成状态不变。">
+      <title>同步表面 / 类型化传播闭包 — 1.1 同步义务与 1.2 候选构件传播联合计算；四级完成状态不变。</title>
       <rect class="node" x="642.0" y="1092.0" width="516.0" height="54.0" rx="10" />
       <text class="node-label" x="658.0" y="1114.0">
         <tspan x="658.0" dy="0">同步表面 /</tspan>
-        <tspan x="658.0" dy="18">四级完成状态</tspan>
+        <tspan x="658.0" dy="18">类型化传播闭包</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/governance/life-community-value-charter.md" target="_top" data-node-id="charter" data-group="governance" data-target="docs/governance/life-community-value-charter.md" aria-label="生命共同体价值宪章：约束谁受益、谁承担成本以及何时拒绝、暂停或回滚。">

@@ -16,6 +16,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SPEC = ROOT / "data/architecture/interactive-system-map.json"
 DEFAULT_OUTPUT = ROOT / "pages/generated/ignition-system-map.svg"
+COMPONENT_REGISTRY = ROOT / "data/operations/project-components.json"
+PROPAGATION_TOPOLOGY = ROOT / "data/operations/change-propagation-topology.json"
+LAYOUT_OVERLAY = ROOT / "data/architecture/interactive-system-map-layout.json"
 SVG_NS = "http://www.w3.org/2000/svg"
 
 ET.register_namespace("", SVG_NS)
@@ -28,6 +31,88 @@ def require(condition: bool, message: str) -> None:
 
 def load_spec(path: Path = DEFAULT_SPEC) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_json(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def build_projection(
+    components_doc: dict | None = None,
+    topology_doc: dict | None = None,
+    layout_doc: dict | None = None,
+) -> dict:
+    """Derive the map projection; no node identity or relation is authored here."""
+    components_doc = components_doc or load_json(COMPONENT_REGISTRY)
+    topology_doc = topology_doc or load_json(PROPAGATION_TOPOLOGY)
+    layout_doc = layout_doc or load_json(LAYOUT_OVERLAY)
+    components = {item["component_id"]: item for item in components_doc["components"]}
+    visible = {key for key, item in components.items() if item["map_projection"]["visible"]}
+    ordered_ids: list[str] = []
+    for group in layout_doc["groups"]:
+        group_id = group["id"]
+        for component_id in layout_doc["node_order"].get(group_id, []):
+            require(component_id in components, f"layout references unknown component: {component_id}")
+            require(component_id in visible, f"layout includes hidden component: {component_id}")
+            require(components[component_id]["map_projection"]["group"] == group_id, f"layout group disagrees with registry for {component_id}")
+            ordered_ids.append(component_id)
+    require(len(ordered_ids) == len(set(ordered_ids)), "layout repeats a component")
+    require(set(ordered_ids) == visible, f"layout visibility mismatch: missing={sorted(visible-set(ordered_ids))} extra={sorted(set(ordered_ids)-visible)}")
+    for component_id, component in components.items():
+        projection = component["map_projection"]
+        if not projection["visible"]:
+            require(projection.get("represented_by") in visible, f"hidden component {component_id} lacks a visible representative")
+            require(projection.get("no_change_reason", "").strip(), f"hidden component {component_id} lacks NO_CHANGE reason")
+
+    nodes = [
+        {
+            "id": component_id,
+            "label": components[component_id]["label"],
+            "group": components[component_id]["map_projection"]["group"],
+            "target": components[component_id]["canonical_target"],
+            "description": components[component_id]["description"],
+            "lifecycle_status": components[component_id]["lifecycle"]["status"],
+        }
+        for component_id in ordered_ids
+    ]
+    edges = [
+        {
+            "id": relation["relation_id"],
+            "source": relation["source"],
+            "target": relation["target"],
+            "label": relation["label"],
+            "relation_class": relation["relation_class"],
+            "relation_domain": relation["relation_domain"],
+        }
+        for relation in topology_doc["relations"]
+        if relation["map_visible"]
+    ]
+    require(all(edge["source"] in visible and edge["target"] in visible for edge in edges), "visible map relation references hidden component")
+    return {
+        "schema_version": "2.0.0",
+        "map_version": layout_doc["map_candidate_version"],
+        "current_baseline_map_version": layout_doc["current_map_version"],
+        "projection_status": "DRAFT_CANDIDATE_DERIVED_PROJECTION",
+        "title": layout_doc["title"],
+        "subtitle": layout_doc["subtitle"],
+        "repository_url": layout_doc["repository_url"],
+        "projection_authority": {
+            "component_registry": "data/operations/project-components.json",
+            "propagation_topology": "data/operations/change-propagation-topology.json",
+            "layout_overlay": "data/architecture/interactive-system-map-layout.json",
+            "component_registry_version": components_doc["registry_version"],
+            "topology_version": topology_doc["topology_version"],
+            "layout_version": layout_doc["layout_version"],
+        },
+        "layout": layout_doc["geometry"],
+        "groups": layout_doc["groups"],
+        "nodes": nodes,
+        "edges": edges,
+    }
+
+
+def serialized_projection(spec: dict) -> bytes:
+    return (json.dumps(spec, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
 
 
 def target_file(target: str) -> str:
@@ -44,7 +129,13 @@ def target_url(repository_url: str, target: str) -> str:
 
 
 def validate_spec(spec: dict, root: Path = ROOT) -> None:
-    require(spec.get("schema_version") == "1.0.0", "unsupported system-map schema_version")
+    require(spec.get("schema_version") in {"1.0.0", "2.0.0"}, "unsupported system-map schema_version")
+    if spec.get("schema_version") == "2.0.0":
+        require(spec.get("projection_status") == "DRAFT_CANDIDATE_DERIVED_PROJECTION", "derived map lacks candidate projection status")
+        authority = spec.get("projection_authority", {})
+        require(authority.get("component_registry") == "data/operations/project-components.json", "map projection has wrong component authority")
+        require(authority.get("propagation_topology") == "data/operations/change-propagation-topology.json", "map projection has wrong topology authority")
+        require(authority.get("layout_overlay") == "data/architecture/interactive-system-map-layout.json", "map projection has wrong layout authority")
     repository_url = spec.get("repository_url", "")
     require(repository_url.startswith("https://github.com/"), "repository_url must be a GitHub HTTPS URL")
     forbidden = ("/Users/", "/tmp/", "file://")
@@ -85,6 +176,8 @@ def validate_spec(spec: dict, root: Path = ROOT) -> None:
         require(edge.get("source") in node_id_set, f"edge has unknown source: {edge}")
         require(edge.get("target") in node_id_set, f"edge has unknown target: {edge}")
         require(isinstance(edge.get("label"), str) and edge["label"], f"edge lacks label: {edge}")
+        if spec.get("schema_version") == "2.0.0":
+            require(edge.get("relation_domain") in {"substantive_causal_candidate", "repository_dependency", "synchronization_obligation"}, f"edge lacks typed relation domain: {edge}")
 
 
 def wrap_label(label: str, width: int = 24) -> list[str]:
@@ -203,8 +296,13 @@ def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
             end_x, end_y = tx + tw / 2, ty + th / 2
             mid_x = (start_x + end_x) / 2
             d = f"M {start_x:.1f} {start_y:.1f} C {mid_x:.1f} {start_y:.1f}, {mid_x:.1f} {end_y:.1f}, {end_x:.1f} {end_y:.1f}"
-        path = svg_element("path", {"class": "edge", "d": d, "data-source": edge["source"], "data-target-node": edge["target"]})
-        path.append(svg_element("title", text=f"{edge['source']} → {edge['target']}: {edge['label']}"))
+        attributes = {"class": "edge", "d": d, "data-source": edge["source"], "data-target-node": edge["target"]}
+        if "relation_class" in edge:
+            attributes["data-relation-class"] = edge["relation_class"]
+            attributes["data-relation-domain"] = edge["relation_domain"]
+        path = svg_element("path", attributes)
+        domain = f" [{edge['relation_domain']}]" if "relation_domain" in edge else ""
+        path.append(svg_element("title", text=f"{edge['source']} → {edge['target']}: {edge['label']}{domain}"))
         edge_layer.append(path)
     root.append(edge_layer)
 
@@ -243,19 +341,24 @@ def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--spec", type=Path, default=DEFAULT_SPEC)
+    parser.add_argument("--spec", type=Path, default=DEFAULT_SPEC, help="materialized derived projection path")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    rendered = render_svg(load_spec(args.spec), ROOT)
+    derived = build_projection()
+    rendered = render_svg(derived, ROOT)
     if args.check:
+        require(args.spec.is_file(), f"materialized system-map projection missing: {args.spec}")
+        require(args.spec.read_bytes() == serialized_projection(derived), "materialized system-map projection is stale or hand-edited")
         require(args.output.is_file(), f"generated SVG missing: {args.output}")
         require(args.output.read_bytes() == rendered, "generated SVG is stale; run the generator")
-        print(f"SYSTEM_MAP_GENERATED_OK nodes={len(load_spec(args.spec)['nodes'])}")
+        print(f"SYSTEM_MAP_DERIVED_OK nodes={len(derived['nodes'])} edges={len(derived['edges'])}")
         return 0
+    args.spec.parent.mkdir(parents=True, exist_ok=True)
+    args.spec.write_bytes(serialized_projection(derived))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_bytes(rendered)
-    print(f"generated {args.output.relative_to(ROOT)}")
+    print(f"generated {args.spec.relative_to(ROOT)} and {args.output.relative_to(ROOT)}")
     return 0
 
 

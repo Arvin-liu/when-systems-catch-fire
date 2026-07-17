@@ -212,10 +212,12 @@ def _validate_seal(manifest: dict, seal: dict, source: Path) -> None:
     require(phase_b.get("claim_ceiling") == manifest["claim_ceiling"], f"{source}: seal claim ceiling mismatch")
     for key in ("candidate", "ready_for_gpt_verification", "accepted", "merged", "current"):
         require(lifecycle.get(key) == manifest["status"][key], f"{source}: seal lifecycle mismatch for {key}")
-    if manifest["method_version"] == "1.1.0":
+    if manifest["method_version"] in {"1.1.0", "1.2.0"}:
         require(seal.get("completion_state") == manifest["completion_state"], f"{source}: seal completion_state mismatch")
         require(seal.get("synchronization_registry", {}).get("path") == manifest["synchronization_closure"]["registry_path"], f"{source}: seal synchronization registry mismatch")
         require(seal.get("external_attestations") == manifest["synchronization_closure"]["external_attestations"], f"{source}: seal external_attestations mismatch")
+    if manifest["method_version"] == "1.2.0":
+        require(seal.get("propagation_closure", {}).get("closure_hash") == manifest["propagation_closure"]["closure_hash"], f"{source}: seal propagation closure hash mismatch")
 
 
 def _validate_evidence_ref(ref: str, source: Path) -> None:
@@ -315,6 +317,58 @@ def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict
         require(completion["project_synchronization_complete"], f"{source}: current lifecycle requires project synchronization complete")
 
 
+def _validate_v12_propagation(manifest: dict, source: Path) -> None:
+    from tools.operations.compute_change_propagation import compute, impact_report, serialized
+
+    binding = manifest["propagation_closure"]
+    path_fields = {
+        "request_path": binding["request_path"],
+        "closure_path": binding["closure_path"],
+        "impact_report_path": binding["impact_report_path"],
+        "system_map_delta_path": binding["system_map_delta_path"],
+        "residue_path": binding["residue_path"],
+    }
+    paths = {name: ROOT / relative for name, relative in path_fields.items()}
+    for name, path in paths.items():
+        require(path.is_file(), f"{source}: missing propagation product {name}: {path.relative_to(ROOT)}")
+
+    request = load_json(paths["request_path"])
+    persisted_closure = load_json(paths["closure_path"])
+    recomputed, delta = compute(request)
+    require(persisted_closure == recomputed, f"{source}: propagation closure is stale or hand-edited")
+    require(paths["impact_report_path"].read_text(encoding="utf-8") == impact_report(recomputed), f"{source}: propagation impact report is stale")
+    require(paths["system_map_delta_path"].read_bytes() == serialized(delta), f"{source}: system-map delta is stale")
+    expected_residue = {
+        "task_id": recomputed["task_id"],
+        "closure_hash": recomputed["closure_hash"],
+        "closure_complete": recomputed["closure_complete"],
+        "residue": recomputed["residue"],
+    }
+    require(paths["residue_path"].read_bytes() == serialized(expected_residue), f"{source}: propagation residue product is stale")
+    require(recomputed["task_id"] == manifest["task_id"], f"{source}: propagation task binding mismatch")
+    require(binding["closure_hash"] == recomputed["closure_hash"], f"{source}: propagation closure hash mismatch")
+    require(binding["base_identity"] == recomputed["base_identity"], f"{source}: propagation base identity mismatch")
+    require(binding["head_identity"] == recomputed["head_identity"], f"{source}: propagation head identity mismatch")
+    require(binding["seed_paths"] == recomputed["seed_paths"], f"{source}: propagation seed paths mismatch")
+    require(binding["seed_components"] == recomputed["seed_components"], f"{source}: propagation seed components mismatch")
+    require(binding["resolved_components"] == recomputed["resolved_components"], f"{source}: resolved component closure mismatch")
+    require(binding["typed_path_ids"] == [item["relation_id"] for item in recomputed["typed_paths"]], f"{source}: typed propagation paths mismatch")
+    require(binding["component_decisions"] == recomputed["actual_component_decisions"], f"{source}: component decisions mismatch")
+    require(binding["surface_decisions"] == recomputed["actual_surface_decisions"], f"{source}: surface propagation decisions mismatch")
+    require(binding["registry_derived_surfaces"] == recomputed["registry_derived_surfaces"], f"{source}: registry-derived surface closure mismatch")
+    require(binding["system_map_impact"]["decision"] == recomputed["system_map_impact"]["decision"], f"{source}: system-map impact decision mismatch")
+    require(binding["system_map_impact"]["reason"] == recomputed["system_map_impact"]["reason"], f"{source}: system-map impact reason mismatch")
+    require(binding["system_map_impact"]["delta_path"] == binding["system_map_delta_path"], f"{source}: system-map delta binding mismatch")
+    require(binding["unresolved_residue"] == recomputed["residue"], f"{source}: unresolved propagation residue mismatch")
+    require(binding["closure_complete"] == recomputed["closure_complete"], f"{source}: propagation completeness mismatch")
+    require(binding["closure_complete"] and not binding["unresolved_residue"], f"{source}: unresolved propagation residue blocks ready closure")
+
+    propagation_decisions = {item["item_id"]: item["decision"] for item in binding["surface_decisions"]}
+    sync_decisions = {item["surface_id"]: item["decision"] for item in manifest["synchronization_closure"]["surface_decisions"]}
+    require(set(propagation_decisions) == set(sync_decisions), f"{source}: propagation and synchronization surface coverage disagree")
+    require(propagation_decisions == sync_decisions, f"{source}: propagation and synchronization decisions disagree")
+
+
 def validate_custom(manifest: dict, source: Path, seal: dict, registry: dict[str, dict] | None = None) -> None:
     _validate_lifecycle(manifest, source)
     _validate_ready_evidence(manifest, source)
@@ -342,9 +396,11 @@ def validate_custom(manifest: dict, source: Path, seal: dict, registry: dict[str
     if manifest["method_version"] == "1.0.0" and manifest["task_id"] == "121Q24" and "OPERATIONS_METHOD" in classifications:
         missing = sorted(LEGACY_Q24_METHOD_PATHS - changed)
         require(not missing, f"{source}: legacy Q24 operations method missing changed paths: {missing}")
-    if manifest["method_version"] == "1.1.0":
-        require(registry is not None, f"{source}: method 1.1.0 requires synchronization registry")
+    if manifest["method_version"] in {"1.1.0", "1.2.0"}:
+        require(registry is not None, f"{source}: method {manifest['method_version']} requires synchronization registry")
         _validate_v11_closure(manifest, source, registry)
+    if manifest["method_version"] == "1.2.0":
+        _validate_v12_propagation(manifest, source)
     _validate_seal(manifest, seal, source)
 
 

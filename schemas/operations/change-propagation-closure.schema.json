@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/change-propagation-closure.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["closure_version", "task_id", "base_identity", "head_identity", "seed_paths", "seed_components", "resolved_components", "typed_paths", "registry_derived_surfaces", "required_component_decisions", "required_surface_decisions", "actual_component_decisions", "actual_surface_decisions", "system_map_impact", "residue", "fixpoint", "closure_complete", "closure_hash", "claim_boundary"],
+  "properties": {
+    "closure_version": {"const": "1.0.0"},
+    "task_id": {"type": "string"},
+    "base_identity": {"type": "string"},
+    "head_identity": {"type": "string"},
+    "seed_paths": {"type": "array", "items": {"type": "string"}},
+    "seed_components": {"type": "array", "items": {"type": "string"}},
+    "resolved_components": {"type": "array", "items": {"type": "string"}},
+    "typed_paths": {"type": "array", "items": {"type": "object"}},
+    "registry_derived_surfaces": {"type": "array", "items": {"type": "string"}},
+    "required_component_decisions": {"type": "array", "items": {"type": "string"}},
+    "required_surface_decisions": {"type": "array", "items": {"type": "string"}},
+    "actual_component_decisions": {"type": "array", "items": {"type": "object"}},
+    "actual_surface_decisions": {"type": "array", "items": {"type": "object"}},
+    "system_map_impact": {"type": "object", "required": ["decision", "reason", "added_nodes", "removed_nodes", "changed_nodes", "added_edges", "removed_edges", "changed_edges", "unmapped_residue"], "properties": {"decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]}, "reason": {"type": "string"}, "added_nodes": {"type": "array"}, "removed_nodes": {"type": "array"}, "changed_nodes": {"type": "array"}, "added_edges": {"type": "array"}, "removed_edges": {"type": "array"}, "changed_edges": {"type": "array"}, "unmapped_residue": {"type": "array"}}, "additionalProperties": false},
+    "residue": {"type": "array", "items": {"type": "object"}},
+    "fixpoint": {"type": "object", "required": ["iterations", "reached"], "properties": {"iterations": {"type": "integer", "minimum": 1}, "reached": {"type": "boolean"}}, "additionalProperties": false},
+    "closure_complete": {"type": "boolean"},
+    "closure_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "claim_boundary": {"type": "string", "minLength": 1}
+  }
+}
