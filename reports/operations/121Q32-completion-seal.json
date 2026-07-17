@@ -77,13 +77,13 @@
   },
   "propagation_closure_hash": "3d702489aa698747c75b24601530ec73f3c8ced770491e0466f687c02f073414",
   "pages_artifacts": {
-    "github_artifact_archive_digest": "sha256:8169fc44ad972b0753abf086ae6acd1ac3018520bed94fad5ff64248fe27bf46",
-    "pages_payload_tar_digest": "sha256:272bb6cdcd4b7dbeadb9f322b3e74325f6e418f635537bb47d6aaab64386951a"
+    "github_artifact_archive_digest": "sha256:ede5750838347ae9498b2cd58da6b41ba6c853cb274b594ac782dcb19a5bbfe8",
+    "pages_payload_tar_digest": "sha256:7460d87fa1421f2fa52a6633673a3a9e3a4a72b85f2fe21e6bb150eb53ea8ca7"
   },
   "ci_runs": {
-    "foundation": 29568271610,
-    "function_os": 29568400929,
-    "pages": 29568403792
+    "foundation": 29568789073,
+    "function_os": 29568887356,
+    "pages": 29568889823
   },
-  "exact_head": "022f7151a3dba9c4f769a258774addd1d8aa2972"
+  "exact_head": "aa8d76cfa6d241e22b6d6f86ef9844061952ad47"
 }
