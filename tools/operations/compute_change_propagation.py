@@ -132,17 +132,31 @@ def check_repo_boundary(raw_path: str, repo_root: Path = ROOT) -> None:
                 f"path escapes repository root via symlink: {raw_path}")
 
 
+def _git_rev_parse(repo_root: Path, ref: str) -> str:
+    """Resolve a git revision to a SHA. Fail-closed: raises on any error."""
+    try:
+        out = subprocess.run(["git", "-C", str(repo_root), "rev-parse", ref],
+                              check=True, capture_output=True, text=True)
+        return out.stdout.strip()
+    except subprocess.CalledProcessError as exc:
+        raise ValueError(f"cannot resolve git revision '{ref}': {exc.stderr.strip()}")
+
+
 def detect_tracked_symlink_escapes(repo_root: Path = ROOT, revision: str = "HEAD") -> list[str]:
-    """Return list of tracked symlink paths (mode 120000) whose target escapes root."""
-    escapes: list[str] = []
+    """Return list of tracked symlink paths (mode 120000) whose target escapes root.
+
+    Fail-closed: any failure to read the git tree or symlink target raises
+    ValueError (caller converts it to blocking residue), never silently [].
+    """
     try:
         out = subprocess.run(
             ["git", "-C", str(repo_root), "ls-tree", "-r", revision, "--format=%(objectmode) %(path)"],
             check=True, capture_output=True, text=True,
         ).stdout
-    except subprocess.CalledProcessError:
-        return escapes
+    except subprocess.CalledProcessError as exc:
+        raise ValueError(f"failed to read git tree for revision '{revision}': {exc.stderr.strip()}")
     root_resolved = repo_root.resolve()
+    escapes: list[str] = []
     for line in out.splitlines():
         if not line.startswith("120000"):
             continue
@@ -152,8 +166,8 @@ def detect_tracked_symlink_escapes(repo_root: Path = ROOT, revision: str = "HEAD
                 ["git", "-C", str(repo_root), "show", f"{revision}:{path}"],
                 check=True, capture_output=True, text=True,
             ).stdout.strip()
-        except subprocess.CalledProcessError:
-            continue
+        except subprocess.CalledProcessError as exc:
+            raise ValueError(f"failed to read symlink target for '{path}' at '{revision}': {exc.stderr.strip()}")
         # Resolve target relative to the symlink's directory
         sym_dir = (repo_root / path).parent
         resolved = (sym_dir / target).resolve()
@@ -422,7 +436,7 @@ def validate_overlap_declarations(components: dict[str, dict], allowed_overlaps:
     return residue
 
 
-def compute(request: dict, components_doc: dict | None = None, topology_doc: dict | None = None, surfaces_doc: dict | None = None, baseline_map: dict | None = None) -> tuple[dict, dict]:
+def compute(request: dict, components_doc: dict | None = None, topology_doc: dict | None = None, surfaces_doc: dict | None = None, baseline_map: dict | None = None, head_ref: str = "HEAD") -> tuple[dict, dict]:
     validate_json(request, REQUEST_SCHEMA, "propagation request")
     components_doc = components_doc or load_json(COMPONENTS)
     topology_doc = topology_doc or load_json(TOPOLOGY)
@@ -458,10 +472,30 @@ def compute(request: dict, components_doc: dict | None = None, topology_doc: dic
             continue
         normalized_paths.append(np)
 
-    # G4 extension: reject tracked symlinks that escape the repo root
-    for esc in detect_tracked_symlink_escapes(revision=request.get("head_identity") or "HEAD"):
-        residue.append({"type": "tracked_symlink_escape", "path": esc,
-                        "message": f"tracked symlink escapes repository root: {esc}"})
+    # G4 extension: reject tracked symlinks that escape the repo root.
+    # Scan BOTH the real checkout HEAD and the declared base_identity (fail-closed:
+    # any git failure becomes blocking residue, never a silent empty list).
+    real_head = _git_rev_parse(ROOT, head_ref)
+    symlink_revisions = [real_head]
+    base_identity = request.get("base_identity")
+    if base_identity:
+        try:
+            symlink_revisions.append(_git_rev_parse(ROOT, base_identity))
+        except ValueError as exc:
+            residue.append({"type": "tracked_symlink_scan_failed", "revision": base_identity,
+                            "message": str(exc)})
+    scanned = set()
+    for rev in symlink_revisions:
+        if rev in scanned:
+            continue
+        scanned.add(rev)
+        try:
+            for esc in detect_tracked_symlink_escapes(revision=rev):
+                residue.append({"type": "tracked_symlink_escape", "path": esc, "revision": rev,
+                                "message": f"tracked symlink escapes repository root: {esc} (revision {rev})"})
+        except ValueError as exc:
+            residue.append({"type": "tracked_symlink_scan_failed", "revision": rev,
+                            "message": str(exc)})
 
     # G3: Validate explicit seeds with provenance
     explicit_seeds = request.get("explicit_seed_components", [])
@@ -611,8 +645,10 @@ def main() -> int:
     parser.add_argument("--map-delta", type=Path, required=True)
     parser.add_argument("--residue", type=Path, required=True)
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--head-ref", type=str, default="HEAD",
+                        help="Git ref to treat as the real checkout HEAD for symlink scans (defaults to HEAD).")
     args = parser.parse_args()
-    closure, delta = compute(load_json(args.request))
+    closure, delta = compute(load_json(args.request), head_ref=args.head_ref)
     report = impact_report(closure).encode("utf-8")
     residue_doc = {"task_id": closure["task_id"], "closure_hash": closure["closure_hash"], "closure_complete": closure["closure_complete"], "residue": closure["residue"]}
     products = {args.output: serialized(closure), args.report: report, args.map_delta: serialized(delta), args.residue: serialized(residue_doc)}

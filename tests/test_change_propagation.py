@@ -1,11 +1,44 @@
 import copy
 import hashlib
 import json
+import subprocess
+import tempfile
 import unittest
 from pathlib import Path
 
 from tools.generate_interactive_system_map import build_projection, load_json
-from tools.operations.compute_change_propagation import COMPONENTS, ROOT, SURFACES, TOPOLOGY, compute
+from tools.operations.compute_change_propagation import (
+    COMPONENTS,
+    ROOT,
+    SURFACES,
+    TOPOLOGY,
+    compute,
+    detect_tracked_symlink_escapes,
+)
+
+
+def _git(repo: Path, *args: str) -> str:
+    return subprocess.run(["git", "-C", str(repo), *args], check=True,
+                          capture_output=True, text=True).stdout.strip()
+
+
+def _make_repo() -> Path:
+    """Create a throwaway git repo with a tracked symlink pointing OUTSIDE the repo."""
+    repo = Path(tempfile.mkdtemp(prefix="q32f3-sym-"))
+    outside = Path(tempfile.mkdtemp(prefix="q32f3-outside-"))
+    _git(repo, "init", "-q")
+    _git(repo, "config", "user.email", "test@test")
+    _git(repo, "config", "user.name", "test")
+    # Add a normal file so base commit exists
+    (repo / "README.md").write_text("x")
+    _git(repo, "add", "-A")
+    _git(repo, "commit", "-qm", "base")
+    # Tracked symlink escaping the repo root (mode 120000)
+    link = repo / "evil_symlink"
+    link.symlink_to(outside)
+    _git(repo, "add", "-A")
+    _git(repo, "commit", "-qm", "add escape symlink")
+    return repo
 
 
 BASE_REQUEST = load_json(__import__("pathlib").Path("data/operations/propagation/121Q32-request.json"))
@@ -341,6 +374,76 @@ class ChangePropagationTests(unittest.TestCase):
         from tools.operations.compute_change_propagation import detect_tracked_symlink_escapes
         escapes = detect_tracked_symlink_escapes(revision="HEAD")
         self.assertEqual(escapes, [])
+
+
+    def test_g4_tracked_symlink_escape_detected(self):
+        """A tracked mode-120000 symlink escaping the root must be detected (not fail-open)."""
+        repo = _make_repo()
+        try:
+            escapes = detect_tracked_symlink_escapes(repo_root=repo, revision="HEAD")
+            self.assertIn("evil_symlink", escapes)
+        finally:
+            import shutil
+            shutil.rmtree(repo, ignore_errors=True)
+            # also clean the outside dir if still present
+            for p in repo.parent.glob("q32f3-outside-*"):
+                shutil.rmtree(p, ignore_errors=True)
+
+    def test_g4_invalid_revision_fails_closed(self):
+        """An invalid git revision must raise (caller turns it into blocking residue)."""
+        repo = _make_repo()
+        try:
+            with self.assertRaises(ValueError):
+                detect_tracked_symlink_escapes(repo_root=repo, revision="not-a-real-revision")
+        finally:
+            import shutil
+            shutil.rmtree(repo, ignore_errors=True)
+            for p in repo.parent.glob("q32f3-outside-*"):
+                shutil.rmtree(p, ignore_errors=True)
+
+    def test_g4_tracked_internal_symlink_not_flagged(self):
+        """A tracked symlink pointing INSIDE the repo must not be flagged as escape."""
+        import shutil
+        repo = Path(tempfile.mkdtemp(prefix="q32f3-internal-"))
+        try:
+            _git(repo, "init", "-q")
+            _git(repo, "config", "user.email", "test@test")
+            _git(repo, "config", "user.name", "test")
+            (repo / "target.txt").write_text("inside")
+            (repo / "sub").mkdir()
+            # Genuine internal symlink using a RELATIVE target (no resolve())
+            (repo / "sub" / "link.txt").symlink_to("../target.txt")
+            _git(repo, "add", "-A")
+            _git(repo, "commit", "-qm", "internal symlink")
+            escapes = detect_tracked_symlink_escapes(repo_root=repo, revision="HEAD")
+            self.assertNotIn("sub/link.txt", escapes)
+        finally:
+            shutil.rmtree(repo, ignore_errors=True)
+
+    def test_g4_plain_text_file_not_flagged(self):
+        """A normal text file (not mode 120000) must not be misread as a symlink."""
+        import shutil
+        repo = Path(tempfile.mkdtemp(prefix="q32f3-plain-"))
+        try:
+            _git(repo, "init", "-q")
+            _git(repo, "config", "user.email", "test@test")
+            _git(repo, "config", "user.name", "test")
+            (repo / "notes.txt").write_text("hello")
+            _git(repo, "add", "-A")
+            _git(repo, "commit", "-qm", "plain file")
+            escapes = detect_tracked_symlink_escapes(repo_root=repo, revision="HEAD")
+            self.assertEqual(escapes, [])
+        finally:
+            shutil.rmtree(repo, ignore_errors=True)
+
+    def test_g4_base_head_symlink_scan_fail_closed(self):
+        """compute() must produce blocking residue when base_identity is an invalid ref."""
+        # Point base_identity at a non-existent revision → scan must fail closed
+        request = self.request(base_identity="deadbeef00000000000000000000000000000000")
+        closure, _ = compute(request, head_ref="HEAD")
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("tracked_symlink_scan_failed", "tracked_symlink_escape")
+                            for r in closure["residue"]))
 
 
 if __name__ == "__main__":
