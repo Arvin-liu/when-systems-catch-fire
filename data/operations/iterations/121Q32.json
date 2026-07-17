@@ -287,7 +287,7 @@
     "impact_report_path": "reports/operations/121Q32-change-propagation-impact.md",
     "system_map_delta_path": "data/operations/propagation/121Q32-system-map-delta.json",
     "residue_path": "data/operations/propagation/121Q32-residue.json",
-    "closure_hash": "3d702489aa698747c75b24601530ec73f3c8ced770491e0466f687c02f073414",
+    "closure_hash": "2af79b0960184bb99e087ff382369900de5cef56106e8abb0ccd028b66ce223c",
     "base_identity": "d1bedb074af8dad8202b4324f3f5bbbb6b308b51",
     "head_identity": "external_exact_head_attestation",
     "seed_paths": [
@@ -333,9 +333,13 @@
       "tests/fixtures/persisted-release.json",
       "tests/fixtures/persisted-release.md",
       "tests/test_change_propagation.py",
+      "tests/test_diff_coverage_gate.py",
+      "tests/test_generated_output_authority.py",
       "tests/test_human_front_door.py",
       "tests/test_iteration_sync.py",
       "tests/test_pages_deploy_gate.py",
+      "tests/test_seal_freshness.py",
+      "tests/test_tracked_symlink_gate.py",
       "tools/generate_interactive_system_map.py",
       "tools/operations/compute_change_propagation.py",
       "tools/operations/validate_generated_output_authority.py",
@@ -856,11 +860,72 @@
       "surface": "LICENSES",
       "decision": "NO_CHANGE_WITH_REASON",
       "reason": "No licensing scope changes."
+    },
+    {
+      "surface": ".gitignore",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "data/operations/generated-output-authority.json",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "schemas/operations/generated-output-authority.schema.json",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "tests/fixtures/persisted-release-result.json",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "tests/fixtures/persisted-release.json",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "tests/fixtures/persisted-release.md",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "tests/test_diff_coverage_gate.py",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "tests/test_generated_output_authority.py",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "tests/test_pages_deploy_gate.py",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "tests/test_seal_freshness.py",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "tests/test_tracked_symlink_gate.py",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "tools/operations/validate_generated_output_authority.py",
+      "decision": "CHANGE",
+      "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
     }
   ],
   "changed_surfaces": [
     ".github/workflows/foundation-validation.yml",
     ".github/workflows/pages.yml",
+    ".gitignore",
     "AI-HANDOFF.md",
     "AI-START-HERE.md",
     "ARCHITECTURE.md",
@@ -871,6 +936,7 @@
     "data/architecture/interactive-system-map-layout.json",
     "data/architecture/interactive-system-map.json",
     "data/operations/change-propagation-topology.json",
+    "data/operations/generated-output-authority.json",
     "data/operations/iterations/121Q32.json",
     "data/operations/project-components.json",
     "data/operations/propagation/121Q32-closure.json",
@@ -893,16 +959,26 @@
     "schemas/operations/change-propagation-closure.schema.json",
     "schemas/operations/change-propagation-request.schema.json",
     "schemas/operations/change-propagation-topology.schema.json",
+    "schemas/operations/generated-output-authority.schema.json",
     "schemas/operations/iteration-manifest.schema.json",
     "schemas/operations/project-components.schema.json",
     "templates/operations/execution-result-template.md",
     "templates/operations/independent-review-template.md",
     "templates/operations/task-command-template.md",
+    "tests/fixtures/persisted-release-result.json",
+    "tests/fixtures/persisted-release.json",
+    "tests/fixtures/persisted-release.md",
     "tests/test_change_propagation.py",
+    "tests/test_diff_coverage_gate.py",
+    "tests/test_generated_output_authority.py",
     "tests/test_human_front_door.py",
     "tests/test_iteration_sync.py",
+    "tests/test_pages_deploy_gate.py",
+    "tests/test_seal_freshness.py",
+    "tests/test_tracked_symlink_gate.py",
     "tools/generate_interactive_system_map.py",
     "tools/operations/compute_change_propagation.py",
+    "tools/operations/validate_generated_output_authority.py",
     "tools/validate_human_front_door.py",
     "tools/validate_iteration_sync.py"
   ],

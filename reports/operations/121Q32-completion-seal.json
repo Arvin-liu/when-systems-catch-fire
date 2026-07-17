@@ -70,25 +70,26 @@
     "restricted_source_published": false,
     "live_external_truth_locally_verified": false
   },
-  "dual_digest": {
-    "github_artifact_archive_digest": "sha256:f1dfaf2ac0d002d24916e39957f950d8378ed8c1198365754512b97acf8e6cc8",
-    "pages_payload_tar_digest": "sha256:2fbc9a1116c4682c17113b4d989012aea0c59b4da182c3164e2e7fea80e452ab",
-    "distinction": "github_artifact_archive_digest is the SHA-256 of the GitHub artifact archive; pages_payload_tar_digest is the SHA-256 of the Pages payload tar. They differ because the Pages payload is a curated subset rendered for web deployment."
-  },
   "propagation_closure_hash": "2af79b0960184bb99e087ff382369900de5cef56106e8abb0ccd028b66ce223c",
   "pages_artifacts": {
     "github_artifact_archive_digest": "sha256:a71ac433c4295d0195f6f7e5618db3ce03d29b472ecdbd669e39b1cce5e10131",
     "pages_payload_tar_digest": "sha256:4d55a77ef7e5b1ae8f0ecc239c85662cbca28c89b03cbd70395361dada1f9c47"
   },
-  "ci_runs": {
-    "foundation": 29571685813,
-    "function_os": 29571627521,
-    "pages": 29571645878
-  },
-  "exact_head": "76cb7f495502743921c5ffc021a0ce48cef74c7b",
-  "seal_binding_head": "76cb7f495502743921c5ffc021a0ce48cef74c7b",
-  "head_metadata_note": "Re-bound by F10 after security asset restoration. Seal binds to CI-verified parent HEAD (76cb7f49), not the seal commit itself.",
   "edges": 37,
-  "changed_paths_count": 54,
-  "relations": 50
+  "changed_paths_count": 58,
+  "relations": 50,
+  "historical_digest_evidence": {
+    "subject_head": "76cb7f495502743921c5ffc021a0ce48cef74c7b",
+    "subject_run_ids": {
+      "foundation": 29571685813,
+      "function_os": 29571627521,
+      "pages": 29571645878
+    },
+    "dual_digest": {
+      "github_artifact_archive_digest": "sha256:f1dfaf2ac0d002d24916e39957f950d8378ed8c1198365754512b97acf8e6cc8",
+      "pages_payload_tar_digest": "sha256:2fbc9a1116c4682c17113b4d989012aea0c59b4da182c3164e2e7fea80e452ab",
+      "distinction": "github_artifact_archive_digest is the SHA-256 of the GitHub artifact archive; pages_payload_tar_digest is the SHA-256 of the Pages payload tar. They differ because the Pages payload is a curated subset rendered for web deployment."
+    },
+    "note": "Historical CI evidence from pre-F10 parent HEAD. Not the live final PR HEAD."
+  }
 }
