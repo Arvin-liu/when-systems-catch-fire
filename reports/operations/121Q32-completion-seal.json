@@ -81,11 +81,11 @@
     "pages_payload_tar_digest": "sha256:4d55a77ef7e5b1ae8f0ecc239c85662cbca28c89b03cbd70395361dada1f9c47"
   },
   "ci_runs": {
-    "foundation": 29570944698,
-    "function_os": 29571107112,
-    "pages": 29571109656
+    "foundation": 29571685813,
+    "function_os": 29571627521,
+    "pages": 29571645878
   },
-  "exact_head": "1df89493dcd0a0c0070c3d168dcc0805ab58fafb",
-  "seal_binding_head": "1df89493dcd0a0c0070c3d168dcc0805ab58fafb",
-  "head_metadata_note": "exact_head (1df89493) is the CI-verified HEAD with all successful runs. seal_binding_head is the same commit. Future metadata updates will create new HEADs, perpetuating the binding lag."
+  "exact_head": "fb87067258fccde21f0196caf78b06baa98dd156",
+  "seal_binding_head": "fb87067258fccde21f0196caf78b06baa98dd156",
+  "head_metadata_note": "exact_head (fb870672) is the CI-verified HEAD with all three workflows green. seal_binding_head is the same commit. This is the final seal update — further metadata commits will intentionally not be re-bound to avoid infinite loops."
 }
