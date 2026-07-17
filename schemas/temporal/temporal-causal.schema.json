@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LAB-Q36 Temporal Causal Contract",
+  "description": "LAB / SPECULATIVE",
+  "type": "object",
+  "required": [
+    "registry_type",
+    "version",
+    "entries"
+  ],
+  "properties": {
+    "registry_type": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "array"
+    }
+  }
+}

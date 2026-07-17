@@ -1,0 +1,20 @@
+{
+  "registry_type": "intervention_candidate",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "int_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "implemented",
+      "title": "Triple-hash sync validator",
+      "object": "closure hash consistency",
+      "intervention_type": "code_validation",
+      "window": {
+        "start": "Q32F11",
+        "end": "all future iterations"
+      },
+      "counterfactual": "Without validator, manifest/seal/closure can drift silently",
+      "claim_ceiling": "implemented_intervention"
+    }
+  ]
+}

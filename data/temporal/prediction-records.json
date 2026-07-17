@@ -1,0 +1,23 @@
+{
+  "registry_type": "prediction_record",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "pred_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "active",
+      "title": "Manifest-seal drift recurrence",
+      "object": "propagation_closure_hash",
+      "mechanism": "Multiple writers update manifest and seal independently",
+      "time_range": "any future iteration after Q32",
+      "trigger_conditions": "Any iteration that modifies closure without syncing all three files",
+      "falsification_conditions": "Validator catches drift before commit",
+      "observation_period": "indefinite",
+      "expiry_status": "active",
+      "actual_result": null,
+      "error": null,
+      "model_revision": null,
+      "claim_ceiling": "risk_projection_only"
+    }
+  ]
+}
