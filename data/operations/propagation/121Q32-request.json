@@ -1,61 +1,269 @@
 {
-  "request_version":"1.0.0",
-  "task_id":"121Q32",
-  "base_identity":"d1bedb074af8dad8202b4324f3f5bbbb6b308b51",
-  "head_identity":"external_exact_head_attestation",
-  "changed_paths":[
-    ".github/workflows/foundation-validation.yml",".github/workflows/pages.yml","ITERATION.md","README.md","ARCHITECTURE.md","SUMMARY.md","AI-START-HERE.md","AI-HANDOFF.md","llms.txt","CHANGELOG.md",
-    "docs/project-current-state.md","docs/USAGE.md","docs/ai-assistant-usage-reference.md","docs/VERSIONING.md","docs/architecture/multiscale-causal-fabric.md","docs/architecture/interactive-system-map.md","docs/architecture/typed-change-propagation.md",
-    "data/operations/project-components.json","data/operations/change-propagation-topology.json","data/operations/propagation/121Q32-request.json","data/operations/iterations/121Q32.json",
-    "data/architecture/interactive-system-map-layout.json","data/architecture/interactive-system-map.json","pages/generated/ignition-system-map.svg",
-    "schemas/operations/project-components.schema.json","schemas/operations/change-propagation-topology.schema.json","schemas/operations/change-propagation-request.schema.json","schemas/operations/change-propagation-closure.schema.json","schemas/operations/iteration-manifest.schema.json","schemas/architecture/interactive-system-map-layout.schema.json",
-    "tools/operations/compute_change_propagation.py","tools/generate_interactive_system_map.py","tools/validate_iteration_sync.py","tools/validate_human_front_door.py",
-    "tests/test_change_propagation.py","tests/test_iteration_sync.py","tests/test_human_front_door.py",
-    "templates/operations/task-command-template.md","templates/operations/execution-result-template.md","templates/operations/independent-review-template.md",
-    "reports/operations/121Q32-completion-seal.json","reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md"
+  "request_version": "1.0.0",
+  "task_id": "121Q32",
+  "base_identity": "d1bedb074af8dad8202b4324f3f5bbbb6b308b51",
+  "head_identity": "external_exact_head_attestation",
+  "changed_paths": [
+    ".github/workflows/foundation-validation.yml",
+    ".github/workflows/pages.yml",
+    "ITERATION.md",
+    "README.md",
+    "ARCHITECTURE.md",
+    "SUMMARY.md",
+    "AI-START-HERE.md",
+    "AI-HANDOFF.md",
+    "llms.txt",
+    "CHANGELOG.md",
+    "docs/project-current-state.md",
+    "docs/USAGE.md",
+    "docs/ai-assistant-usage-reference.md",
+    "docs/VERSIONING.md",
+    "docs/architecture/multiscale-causal-fabric.md",
+    "docs/architecture/interactive-system-map.md",
+    "docs/architecture/typed-change-propagation.md",
+    "data/operations/project-components.json",
+    "data/operations/change-propagation-topology.json",
+    "data/operations/propagation/121Q32-request.json",
+    "data/operations/iterations/121Q32.json",
+    "data/architecture/interactive-system-map-layout.json",
+    "data/architecture/interactive-system-map.json",
+    "pages/generated/ignition-system-map.svg",
+    "schemas/operations/project-components.schema.json",
+    "schemas/operations/change-propagation-topology.schema.json",
+    "schemas/operations/change-propagation-request.schema.json",
+    "schemas/operations/change-propagation-closure.schema.json",
+    "schemas/operations/iteration-manifest.schema.json",
+    "schemas/architecture/interactive-system-map-layout.schema.json",
+    "tools/operations/compute_change_propagation.py",
+    "tools/generate_interactive_system_map.py",
+    "tools/validate_iteration_sync.py",
+    "tools/validate_human_front_door.py",
+    "tests/test_change_propagation.py",
+    "tests/test_iteration_sync.py",
+    "tests/test_human_front_door.py",
+    "templates/operations/task-command-template.md",
+    "templates/operations/execution-result-template.md",
+    "templates/operations/independent-review-template.md",
+    "reports/operations/121Q32-completion-seal.json",
+    "reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md"
   ],
-  "explicit_seed_components":["iteration","sync","project_component_registry","propagation_topology","propagation_calculator","iteration_manifest_contract","system_map_projection","system_map_layout"],
-  "state_transition_subjects":["Ignition Iteration Method 1.2.0 candidate","typed declared change-propagation closure","registry-derived interactive system map 0.2.0 candidate"],
-  "changed_dimensions":["capability","identity","usage","handoff","lifecycle_current_state","deployment_rendering","operations_method"],
-  "change_classifications":["OPERATIONS_METHOD","CAPABILITY_ADDITION","INTERFACE_CHANGE"],
-  "component_decisions":[
-    {"item_id":"ai_guide","decision":"CHANGE","reason":"AI and Agent entrances must explain the typed declared-relation boundary."},
-    {"item_id":"current_state","decision":"CHANGE","reason":"Current-state surfaces must distinguish 1.1 Current from 1.2 Draft."},
-    {"item_id":"historical_reports","decision":"CHANGE","reason":"A new append-only 121Q32 audit and seal are added without rewriting history."},
-    {"item_id":"iteration","decision":"CHANGE","reason":"The method proposes compatible version 1.2.0 fields and computation."},
-    {"item_id":"iteration_manifest_contract","decision":"CHANGE","reason":"The 1.2 manifest binds propagation seeds, paths, decisions, map impact, residue and hash."},
-    {"item_id":"mcf","decision":"CHANGE","reason":"MCF documentation gains a bounded repository propagation profile without upgrading causal claims."},
-    {"item_id":"no_l7","decision":"CHANGE","reason":"Architecture documentation records that the candidate is an operation overlay, not L7."},
-    {"item_id":"no_totality_proof","decision":"CHANGE","reason":"Current-state text preserves the non-completeness boundary for declared closure."},
-    {"item_id":"no_truth_upgrade","decision":"CHANGE","reason":"The generated map now exposes typed relation domains and their non-truth boundary."},
-    {"item_id":"pages_pipeline","decision":"CHANGE","reason":"Draft Pages artifact must carry the propagation documentation and derived map."},
-    {"item_id":"project_component_registry","decision":"CHANGE","reason":"Canonical component identities, targets and lifecycle sources are introduced."},
-    {"item_id":"propagation_calculator","decision":"CHANGE","reason":"A deterministic fixpoint calculator and validation products are introduced."},
-    {"item_id":"propagation_topology","decision":"CHANGE","reason":"Typed declared propagation relations are introduced with separated domains."},
-    {"item_id":"readme","decision":"CHANGE","reason":"The homepage explains the 1.2 and map 0.2 Draft candidates without marking them Current."},
-    {"item_id":"summary","decision":"CHANGE","reason":"Human navigation exposes the candidate documentation and machine assets."},
-    {"item_id":"sync","decision":"CHANGE","reason":"Synchronization obligations are jointly computed with component propagation while retaining authority separation."},
-    {"item_id":"system_map_layout","decision":"CHANGE","reason":"Pure display geometry and order are split from substantive component truth."},
-    {"item_id":"system_map_projection","decision":"CHANGE","reason":"The materialized spec becomes a deterministic registry/topology/layout projection."},
-    {"item_id":"usage","decision":"CHANGE","reason":"Human use guidance adds the propagation request and no-change decision workflow."}
+  "explicit_seed_components": [
+    "iteration",
+    "sync",
+    "project_component_registry",
+    "propagation_topology",
+    "propagation_calculator",
+    "iteration_manifest_contract",
+    "system_map_projection",
+    "system_map_layout"
   ],
-  "surface_decisions":[
-    {"item_id":"agent.handoff","decision":"CHANGE","reason":"Agent handoff must preserve registry authority, closure hash and residue."},
-    {"item_id":"ai.start","decision":"CHANGE","reason":"Cold-start AI guidance must read the component registry and topology."},
-    {"item_id":"external.pages_homepage","decision":"NO_CHANGE_WITH_REASON","reason":"A Draft candidate builds an exact-head artifact but does not deploy the production homepage before merge."},
-    {"item_id":"human.ai_guide","decision":"CHANGE","reason":"The AI guide receives the bounded typed-propagation workflow."},
-    {"item_id":"human.current_state","decision":"CHANGE","reason":"It records 1.1 Current and 1.2 Draft without lifecycle inflation."},
-    {"item_id":"human.pages_source","decision":"CHANGE","reason":"The Pages artifact publishes candidate propagation documentation and the derived map."},
-    {"item_id":"human.readme","decision":"CHANGE","reason":"The human front door exposes the candidate and its limitations."},
-    {"item_id":"human.summary","decision":"CHANGE","reason":"The navigation index exposes canonical propagation assets."},
-    {"item_id":"human.usage","decision":"CHANGE","reason":"Usage documents seeds, decisions, fixpoint and residue."},
-    {"item_id":"machine.llms","decision":"CHANGE","reason":"The machine entrance records authority separation and candidate versions."},
-    {"item_id":"method.iteration","decision":"CHANGE","reason":"ITERATION.md proposes compatible method 1.2.0."},
-    {"item_id":"method.result_template","decision":"CHANGE","reason":"Result receipts record propagation closure products and hash."},
-    {"item_id":"method.review_template","decision":"CHANGE","reason":"Independent review checks typed paths, map impact and residue."},
-    {"item_id":"method.task_template","decision":"CHANGE","reason":"Commands declare propagation seeds and decisions."},
-    {"item_id":"release.changelog","decision":"CHANGE","reason":"The candidate increment is recorded without marking Current."},
-    {"item_id":"release.versioning","decision":"CHANGE","reason":"1.2.0 and map 0.2.0 remain Draft candidates; 1.1.0 and 0.1.0 remain Current."}
+  "state_transition_subjects": [
+    "Ignition Iteration Method 1.2.0 candidate",
+    "typed declared change-propagation closure",
+    "registry-derived interactive system map 0.2.0 candidate"
   ],
-  "system_map_decision":{"item_id":"interactive_system_map","decision":"CHANGE","reason":"The authoritative source and typed relation metadata change while the compatible 9/41/35 topology remains."}
+  "changed_dimensions": [
+    "capability",
+    "identity",
+    "usage",
+    "handoff",
+    "lifecycle_current_state",
+    "deployment_rendering",
+    "operations_method"
+  ],
+  "change_classifications": [
+    "OPERATIONS_METHOD",
+    "CAPABILITY_ADDITION",
+    "INTERFACE_CHANGE"
+  ],
+  "component_decisions": [
+    {
+      "item_id": "ai_guide",
+      "decision": "CHANGE",
+      "reason": "AI and Agent entrances must explain the typed declared-relation boundary."
+    },
+    {
+      "item_id": "current_state",
+      "decision": "CHANGE",
+      "reason": "Current-state surfaces must distinguish 1.1 Current from 1.2 Draft."
+    },
+    {
+      "item_id": "historical_reports",
+      "decision": "CHANGE",
+      "reason": "A new append-only 121Q32 audit and seal are added without rewriting history."
+    },
+    {
+      "item_id": "iteration",
+      "decision": "CHANGE",
+      "reason": "The method proposes compatible version 1.2.0 fields and computation."
+    },
+    {
+      "item_id": "iteration_manifest_contract",
+      "decision": "CHANGE",
+      "reason": "The 1.2 manifest binds propagation seeds, paths, decisions, map impact, residue and hash."
+    },
+    {
+      "item_id": "mcf",
+      "decision": "CHANGE",
+      "reason": "MCF documentation gains a bounded repository propagation profile without upgrading causal claims."
+    },
+    {
+      "item_id": "no_l7",
+      "decision": "CHANGE",
+      "reason": "Architecture documentation records that the candidate is an operation overlay, not L7."
+    },
+    {
+      "item_id": "no_totality_proof",
+      "decision": "CHANGE",
+      "reason": "Current-state text preserves the non-completeness boundary for declared closure."
+    },
+    {
+      "item_id": "no_truth_upgrade",
+      "decision": "CHANGE",
+      "reason": "The generated map now exposes typed relation domains and their non-truth boundary."
+    },
+    {
+      "item_id": "pages_pipeline",
+      "decision": "CHANGE",
+      "reason": "Draft Pages artifact must carry the propagation documentation and derived map."
+    },
+    {
+      "item_id": "project_component_registry",
+      "decision": "CHANGE",
+      "reason": "Canonical component identities, targets and lifecycle sources are introduced."
+    },
+    {
+      "item_id": "propagation_calculator",
+      "decision": "CHANGE",
+      "reason": "A deterministic fixpoint calculator and validation products are introduced."
+    },
+    {
+      "item_id": "propagation_topology",
+      "decision": "CHANGE",
+      "reason": "Typed declared propagation relations are introduced with separated domains."
+    },
+    {
+      "item_id": "readme",
+      "decision": "CHANGE",
+      "reason": "The homepage explains the 1.2 and map 0.2 Draft candidates without marking them Current."
+    },
+    {
+      "item_id": "summary",
+      "decision": "CHANGE",
+      "reason": "Human navigation exposes the candidate documentation and machine assets."
+    },
+    {
+      "item_id": "sync",
+      "decision": "CHANGE",
+      "reason": "Synchronization obligations are jointly computed with component propagation while retaining authority separation."
+    },
+    {
+      "item_id": "system_map_layout",
+      "decision": "CHANGE",
+      "reason": "Pure display geometry and order are split from substantive component truth."
+    },
+    {
+      "item_id": "system_map_projection",
+      "decision": "CHANGE",
+      "reason": "The materialized spec becomes a deterministic registry/topology/layout projection."
+    },
+    {
+      "item_id": "usage",
+      "decision": "CHANGE",
+      "reason": "Human use guidance adds the propagation request and no-change decision workflow."
+    }
+  ],
+  "surface_decisions": [
+    {
+      "item_id": "agent.handoff",
+      "decision": "CHANGE",
+      "reason": "Agent handoff must preserve registry authority, closure hash and residue."
+    },
+    {
+      "item_id": "ai.start",
+      "decision": "CHANGE",
+      "reason": "Cold-start AI guidance must read the component registry and topology."
+    },
+    {
+      "item_id": "external.pages_homepage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "A Draft candidate builds an exact-head artifact but does not deploy the production homepage before merge."
+    },
+    {
+      "item_id": "human.ai_guide",
+      "decision": "CHANGE",
+      "reason": "The AI guide receives the bounded typed-propagation workflow."
+    },
+    {
+      "item_id": "human.current_state",
+      "decision": "CHANGE",
+      "reason": "It records 1.1 Current and 1.2 Draft without lifecycle inflation."
+    },
+    {
+      "item_id": "human.pages_source",
+      "decision": "CHANGE",
+      "reason": "The Pages artifact publishes candidate propagation documentation and the derived map."
+    },
+    {
+      "item_id": "human.readme",
+      "decision": "CHANGE",
+      "reason": "The human front door exposes the candidate and its limitations."
+    },
+    {
+      "item_id": "human.summary",
+      "decision": "CHANGE",
+      "reason": "The navigation index exposes canonical propagation assets."
+    },
+    {
+      "item_id": "human.usage",
+      "decision": "CHANGE",
+      "reason": "Usage documents seeds, decisions, fixpoint and residue."
+    },
+    {
+      "item_id": "machine.llms",
+      "decision": "CHANGE",
+      "reason": "The machine entrance records authority separation and candidate versions."
+    },
+    {
+      "item_id": "method.iteration",
+      "decision": "CHANGE",
+      "reason": "ITERATION.md proposes compatible method 1.2.0."
+    },
+    {
+      "item_id": "method.result_template",
+      "decision": "CHANGE",
+      "reason": "Result receipts record propagation closure products and hash."
+    },
+    {
+      "item_id": "method.review_template",
+      "decision": "CHANGE",
+      "reason": "Independent review checks typed paths, map impact and residue."
+    },
+    {
+      "item_id": "method.task_template",
+      "decision": "CHANGE",
+      "reason": "Commands declare propagation seeds and decisions."
+    },
+    {
+      "item_id": "release.changelog",
+      "decision": "CHANGE",
+      "reason": "The candidate increment is recorded without marking Current."
+    },
+    {
+      "item_id": "release.versioning",
+      "decision": "CHANGE",
+      "reason": "1.2.0 and map 0.2.0 remain Draft candidates; 1.1.0 and 0.1.0 remain Current."
+    }
+  ],
+  "system_map_decision": {
+    "item_id": "interactive_system_map",
+    "decision": "CHANGE",
+    "reason": "The authoritative source and typed relation metadata change while the compatible 9/41/35 topology remains."
+  },
+  "explicit_seed_evidence": {
+    "sync": {
+      "reason": "Synchronization surface definitions are structurally coupled to the propagation topology changes in this iteration, even though the surface JSON file itself was not modified.",
+      "authority": "data/operations/change-propagation-topology.json"
+    }
+  }
 }

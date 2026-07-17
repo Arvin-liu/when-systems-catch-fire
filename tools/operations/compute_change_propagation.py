@@ -20,6 +20,9 @@ except ModuleNotFoundError:
     from tools.generate_interactive_system_map import build_projection
 
 
+import re
+
+
 ROOT = Path(__file__).resolve().parents[2]
 COMPONENTS = ROOT / "data/operations/project-components.json"
 TOPOLOGY = ROOT / "data/operations/change-propagation-topology.json"
@@ -50,20 +53,148 @@ def canonical_hash(document: dict) -> str:
     return hashlib.sha256(payload).hexdigest()
 
 
+# ── G4: Path normalization and escape prevention ─────────────────────────────
+
+_FORBIDDEN_PATH_PATTERNS = [
+    re.compile(r"^/"),              # absolute POSIX
+    re.compile(r'^[A-Za-z]:[\\/]'),  # Windows drive
+    re.compile(r"^\\\\"),           # Windows UNC
+    re.compile(r"^file://"),         # file URI
+    re.compile(r"/Users/"),          # local path leak
+    re.compile(r"\\"),              # backslash anywhere
+]
+
+
+def normalize_repo_path(raw: str) -> str:
+    """Validate and normalize a repo-relative POSIX path.
+
+    Rejects absolute paths, Windows paths, file:// URIs, backslashes,
+    parent traversal (..), NUL/control chars, and ANY non-canonical
+    POSIX form (duplicate slashes, trailing slash, '.' segments, empty
+    segments). The returned string MUST equal the input byte-for-byte;
+    any normalization change is rejected rather than silently folded.
+    """
+    require(isinstance(raw, str) and raw, "path must be a non-empty string")
+    # Check forbidden patterns (lexical contract)
+    for pattern in _FORBIDDEN_PATH_PATTERNS:
+        require(not pattern.search(raw), f"forbidden path pattern in: {raw}")
+    # Reject NUL and control chars
+    require(not any(ord(c) < 0x20 for c in raw), f"control character in path: {raw}")
+    parts = raw.split("/")
+    # Leading slash => absolute path (already rejected by _FORBIDDEN_PATH_PATTERNS,
+    # but be explicit so a leading empty segment is never tolerated)
+    require(parts[0] != "", f"absolute path rejected: {raw}")
+    normalized_parts: list[str] = []
+    for part in parts:
+        # Empty segment: duplicate slashes (a//b) or trailing slash (a/b/)
+        require(part != "", f"empty path segment (duplicate or trailing slash) in: {raw}")
+        # '.' segment: ./a or a/./b — non-canonical
+        require(part != ".", f"non-canonical '.' segment in path: {raw}")
+        # '..' parent traversal
+        require(part != "..", f"parent traversal '..' in path: {raw}")
+        normalized_parts.append(part)
+    normalized = "/".join(normalized_parts)
+    # Strict canonical form: no transformation allowed
+    require(normalized == raw,
+            f"path is not in canonical POSIX form (normalized '{normalized}' != '{raw}'); "
+            f"duplicate slashes, trailing slash, '.' or empty segments are rejected")
+    return normalized
+
+
+# ── G1: Relation domain authority ─────────────────────────────────────────────
+
+SCC_DOMAIN = "substantive_causal_candidate"
+SCC_FORBIDDEN_MODES = {"automatic", "required_assessment", "blocks_on_residue"}
+
+
+def validate_relation_authority(relation: dict) -> None:
+    """Single authority validator: reject SCC domain with non-informational modes.
+
+    This is the runtime enforcement that complements the schema if/then constraint.
+    Even if schema validation is bypassed (e.g. in-memory mutation), this guard fires.
+    """
+    rid = relation["relation_id"]
+    domain = relation["relation_domain"]
+    if domain == SCC_DOMAIN:
+        mode = relation["propagation_mode"]
+        require(mode not in SCC_FORBIDDEN_MODES,
+                f"relation {rid}: substantive_causal_candidate cannot use propagation_mode='{mode}' "
+                f"(only 'informational_only' is allowed)")
+        require(not relation.get("required_evaluation", False),
+                f"relation {rid}: substantive_causal_candidate must have required_evaluation=false")
+        require(not relation.get("creates_sync_obligation", False),
+                f"relation {rid}: substantive_causal_candidate must have creates_sync_obligation=false")
+
+
 def matches_pattern(path: str, pattern: str) -> bool:
     return path.startswith(pattern) if pattern.endswith("/") else path == pattern
 
 
-def resolve_paths(paths: list[str], components: dict[str, dict]) -> tuple[set[str], list[dict]]:
+def resolve_paths(paths: list[str], components: dict[str, dict],
+                  allowed_overlaps: list[dict] | None = None) -> tuple[set[str], list[dict]]:
+    """Resolve changed paths to component IDs.
+
+    G2: Detects silent multi-matching. If a path matches multiple components
+    and no explicit overlap declaration covers it, produces blocking residue.
+    """
     resolved: set[str] = set()
     residue: list[dict] = []
-    for path in paths:
-        hits = sorted(component_id for component_id, component in components.items() if any(matches_pattern(path, pattern) for pattern in component["path_patterns"]))
-        if hits:
+    allowed_overlaps = allowed_overlaps or []
+    # Build overlap lookup: frozenset of component_ids -> overlap declaration
+    overlap_map: dict[frozenset[str], dict] = {}
+    for ov in allowed_overlaps:
+        key = frozenset(ov["component_ids"])
+        overlap_map[key] = ov
+    for raw_path in paths:
+        # G4: normalize path
+        try:
+            path = normalize_repo_path(raw_path)
+        except ValueError as exc:
+            residue.append({"type": "non_canonical_path", "path": raw_path, "message": str(exc)})
+            continue
+        hits = sorted(component_id for component_id, component in components.items()
+                      if any(matches_pattern(path, pattern) for pattern in component["path_patterns"]))
+        if not hits:
+            residue.append({"type": "unmapped_path", "path": path, "message": "Changed path has no canonical component mapping."})
+        elif len(hits) == 1:
             resolved.update(hits)
         else:
-            residue.append({"type": "unmapped_path", "path": path, "message": "Changed path has no canonical component mapping."})
+            # G2: multi-match — check if explicitly declared
+            hit_set = frozenset(hits)
+            if hit_set in overlap_map:
+                # Verify the declared set matches the actual hit set
+                ov = overlap_map[hit_set]
+                # Check path pattern matches the overlap declaration
+                declared_patterns = ov.get("path_patterns", [])
+                if declared_patterns and not any(matches_pattern(path, p) for p in declared_patterns):
+                    residue.append({"type": "ambiguous_path_mapping", "path": path, "hits": hits,
+                                    "message": f"Path matches components {hits} but overlap declaration patterns do not cover this path."})
+                else:
+                    resolved.update(hits)
+            else:
+                # Check if this multi-match is a subset of any declared overlap
+                covered = False
+                for declared_set, ov in overlap_map.items():
+                    if hit_set.issubset(declared_set):
+                        declared_patterns = ov.get("path_patterns", [])
+                        if not declared_patterns or any(matches_pattern(path, p) for p in declared_patterns):
+                            resolved.update(hits)
+                            covered = True
+                            break
+                if not covered:
+                    residue.append({"type": "ambiguous_path_mapping", "path": path, "hits": hits,
+                                    "message": f"Path matches multiple components {hits} with no declared overlap."})
     return resolved, residue
+
+
+def validate_overlap_declarations(allowed_overlaps: list[dict], components: dict[str, dict]) -> None:
+    """Validate that overlap declarations reference known components and have required fields."""
+    for ov in allowed_overlaps:
+        ids = ov.get("component_ids", [])
+        require(len(ids) >= 2, f"overlap declaration must list at least 2 components: {ids}")
+        for cid in ids:
+            require(cid in components, f"overlap declaration references unknown component: {cid}")
+        require("path_patterns" in ov, f"overlap declaration must include path_patterns: {ids}")
 
 
 def relation_is_triggered(relation: dict, dimensions: set[str], classifications: set[str]) -> bool:
@@ -83,6 +214,9 @@ def traverse_fixpoint(seed_components: set[str], topology: dict, dimensions: set
             if relation["source"] not in resolved or not relation_is_triggered(relation, dimensions, classifications):
                 continue
             if relation["propagation_mode"] == "informational_only":
+                continue
+            # G1: SCC domain must never propagate, even if validation is bypassed
+            if relation["relation_domain"] == SCC_DOMAIN:
                 continue
             traversed[relation["relation_id"]] = {
                 "relation_id": relation["relation_id"],
@@ -191,12 +325,64 @@ def compute(request: dict, components_doc: dict | None = None, topology_doc: dic
     require(len(components) == len(components_doc["components"]), "duplicate component id")
     for relation in topology_doc["relations"]:
         require(relation["source"] in components and relation["target"] in components, f"relation references unknown component: {relation['relation_id']}")
-        require(not (relation["relation_domain"] == "substantive_causal_candidate" and relation["propagation_mode"] == "automatic"), f"substantive causal candidate cannot auto-propagate: {relation['relation_id']}")
+        # G1: Full authority validation (replaces the old automatic-only check)
+        validate_relation_authority(relation)
 
-    path_seeds, residue = resolve_paths(request["changed_paths"], components)
+    # G2: Validate overlap declarations
+    allowed_overlaps = topology_doc.get("allowed_path_overlaps", [])
+    validate_overlap_declarations(allowed_overlaps, components)
+
+    path_seeds, residue = resolve_paths(request["changed_paths"], components, allowed_overlaps)
     explicit = set(request.get("explicit_seed_components", []))
     unknown_explicit = sorted(explicit - set(components))
     residue.extend({"type": "unknown_seed_component", "component_id": item, "message": "Explicit seed is not registered."} for item in unknown_explicit)
+
+    # G3: Explicit seed evidence checking
+    explicit_seed_evidence = request.get("explicit_seed_evidence", {})
+    for comp_id in sorted(explicit):
+        if comp_id not in components:
+            continue
+        # Check if this seed has path support from changed_paths
+        comp_patterns = components[comp_id]["path_patterns"]
+        def _safe_matches(p):
+            try:
+                np = normalize_repo_path(p)
+            except ValueError:
+                return False
+            return any(matches_pattern(np, pat) for pat in comp_patterns)
+        has_path_support = any(_safe_matches(p) for p in request["changed_paths"])
+        if not has_path_support:
+            # No path support — check for structured evidence
+            evidence = explicit_seed_evidence.get(comp_id)
+            if not evidence or not evidence.get("reason") or not evidence.get("authority"):
+                residue.append({
+                    "type": "unsubstantiated_explicit_seed",
+                    "component_id": comp_id,
+                    "message": f"Explicit seed '{comp_id}' has no changed_path mapping and no structured evidence (reason + authority)."
+                })
+            else:
+                # Evidence provided — verify source_path maps to the claimed component
+                source_path = evidence.get("source_path", "")
+                if source_path:
+                    try:
+                        normalized_source = normalize_repo_path(source_path)
+                        source_hits = sorted(
+                            cid for cid, comp in components.items()
+                            if any(matches_pattern(normalized_source, pat) for pat in comp["path_patterns"])
+                        )
+                        if source_hits and comp_id not in source_hits:
+                            residue.append({
+                                "type": "explicit_seed_mapping_conflict",
+                                "component_id": comp_id,
+                                "message": f"Explicit seed '{comp_id}' evidence source_path '{source_path}' maps to {source_hits}, not '{comp_id}'."
+                            })
+                    except ValueError:
+                        residue.append({
+                            "type": "explicit_seed_mapping_conflict",
+                            "component_id": comp_id,
+                            "message": f"Explicit seed '{comp_id}' evidence source_path is not canonical: '{source_path}'."
+                        })
+
     seed_components = path_seeds | (explicit & set(components))
     dimensions = set(request["changed_dimensions"])
     classifications = set(request["change_classifications"])

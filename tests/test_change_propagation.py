@@ -116,8 +116,171 @@ class ChangePropagationTests(unittest.TestCase):
         topology = copy.deepcopy(TOPOLOGY_DOC)
         relation = next(item for item in topology["relations"] if item["relation_domain"] == "substantive_causal_candidate")
         relation["propagation_mode"] = "automatic"
-        with self.assertRaisesRegex(ValueError, "cannot auto-propagate"):
+        with self.assertRaisesRegex(ValueError, r"(cannot auto-propagate|informational_only|substantive_causal_candidate)"):
             compute(self.request(), topology_doc=topology)
+
+
+    # ── G1 attack tests: SCC domain authority ────────────────────────────────
+
+    def test_g1_scc_required_assessment_blocked(self):
+        """SCC + required_assessment must be rejected at validation time."""
+        topology = copy.deepcopy(TOPOLOGY_DOC)
+        relation = next(item for item in topology["relations"] if item["relation_domain"] == "substantive_causal_candidate")
+        relation["propagation_mode"] = "required_assessment"
+        with self.assertRaisesRegex(ValueError, r"(substantive_causal_candidate|informational_only|False was expected)"):
+            compute(self.request(), topology_doc=topology)
+
+    def test_g1_scc_blocks_on_residue_blocked(self):
+        """SCC + blocks_on_residue must be rejected at validation time."""
+        topology = copy.deepcopy(TOPOLOGY_DOC)
+        relation = next(item for item in topology["relations"] if item["relation_domain"] == "substantive_causal_candidate")
+        relation["propagation_mode"] = "blocks_on_residue"
+        with self.assertRaisesRegex(ValueError, r"(substantive_causal_candidate|informational_only|False was expected)"):
+            compute(self.request(), topology_doc=topology)
+
+    def test_g1_scc_required_evaluation_true_blocked(self):
+        """SCC with required_evaluation=true must be rejected."""
+        topology = copy.deepcopy(TOPOLOGY_DOC)
+        relation = next(item for item in topology["relations"] if item["relation_domain"] == "substantive_causal_candidate")
+        relation["required_evaluation"] = True
+        with self.assertRaisesRegex(ValueError, r"(substantive_causal_candidate|informational_only|False was expected)"):
+            compute(self.request(), topology_doc=topology)
+
+    def test_g1_scc_creates_sync_obligation_true_blocked(self):
+        """SCC with creates_sync_obligation=true must be rejected."""
+        topology = copy.deepcopy(TOPOLOGY_DOC)
+        relation = next(item for item in topology["relations"] if item["relation_domain"] == "substantive_causal_candidate")
+        relation["creates_sync_obligation"] = True
+        with self.assertRaisesRegex(ValueError, r"(substantive_causal_candidate|informational_only|False was expected)"):
+            compute(self.request(), topology_doc=topology)
+
+    def test_g1_scc_never_enters_traversal(self):
+        """Even if schema validation is bypassed, SCC domain must not appear in typed_paths."""
+        closure, _ = compute(copy.deepcopy(BASE_REQUEST))
+        scc_in_paths = any(tp["relation_domain"] == "substantive_causal_candidate" for tp in closure["typed_paths"])
+        self.assertFalse(scc_in_paths, "SCC domain must never appear in typed_paths")
+
+    # ── G2 attack tests: path overlap detection ───────────────────────────────
+
+    def test_g2_undeclared_overlap_produces_blocking_residue(self):
+        """A path matching multiple components without declared overlap must produce blocking residue."""
+        components = copy.deepcopy(COMPONENT_DOC)
+        readme = next(c for c in components["components"] if c["component_id"] == "readme")
+        readme["path_patterns"].append("ITERATION.md")  # ITERATION.md already belongs to 'iteration'
+        closure, _ = compute(self.request(), components_doc=components)
+        self.assertFalse(closure["closure_complete"])
+        overlap_residue = [r for r in closure["residue"] if r["type"] == "ambiguous_path_mapping"]
+        self.assertTrue(any("ITERATION.md" in r.get("path", "") for r in overlap_residue))
+
+    def test_g2_declared_overlap_allows_resolution(self):
+        """Declared overlaps in allowed_path_overlaps should not produce blocking residue."""
+        closure, _ = compute(copy.deepcopy(BASE_REQUEST))
+        overlap_residue = [r for r in closure["residue"] if r["type"] == "ambiguous_path_mapping"]
+        self.assertEqual(overlap_residue, [], f"Unexpected ambiguous path mapping: {overlap_residue}")
+
+    # ── G3 attack tests: explicit seed provenance ─────────────────────────────
+
+    def test_g3_unsubstantiated_explicit_seed_produces_residue(self):
+        """An explicit seed with no path mapping and no evidence must produce blocking residue."""
+        request = self.request(explicit_seed_components=["propagation_calculator"])
+        # Remove ALL propagation_calculator paths from changed_paths
+        calc_patterns = [
+            "tools/operations/compute_change_propagation.py",
+            "schemas/operations/change-propagation-request.schema.json",
+            "schemas/operations/change-propagation-closure.schema.json",
+            "tests/test_change_propagation.py",
+            "data/operations/propagation/",
+            ".github/workflows/foundation-validation.yml",
+        ]
+        request["changed_paths"] = [p for p in request["changed_paths"]
+                                     if not any(p.startswith(pat) or p == pat for pat in calc_patterns)]
+        request["explicit_seed_evidence"] = {}
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        unsubstantiated = [r for r in closure["residue"] if r["type"] == "unsubstantiated_explicit_seed"]
+        self.assertTrue(any(r["component_id"] == "propagation_calculator" for r in unsubstantiated))
+
+    def test_g3_explicit_seed_with_evidence_no_residue(self):
+        """An explicit seed with proper evidence should not produce unsubstantiated residue."""
+        closure, _ = compute(copy.deepcopy(BASE_REQUEST))
+        unsubstantiated = [r for r in closure["residue"] if r["type"] == "unsubstantiated_explicit_seed"]
+        self.assertEqual(unsubstantiated, [], f"Unexpected unsubstantiated seeds: {unsubstantiated}")
+
+    def test_g3_explicit_seed_mapping_conflict_detected(self):
+        """An explicit seed whose evidence source_path maps to a different component must produce conflict residue."""
+        request = self.request(
+            explicit_seed_components=["propagation_calculator"],
+            explicit_seed_evidence={
+                "propagation_calculator": {
+                    "reason": "Calculator introduced",
+                    "authority": "tools/operations/compute_change_propagation.py",
+                    "source_path": "ITERATION.md"  # Wrong path — maps to 'iteration', not 'propagation_calculator'
+                }
+            }
+        )
+        calc_patterns = [
+            "tools/operations/compute_change_propagation.py",
+            "schemas/operations/change-propagation-request.schema.json",
+            "schemas/operations/change-propagation-closure.schema.json",
+            "tests/test_change_propagation.py",
+            "data/operations/propagation/",
+            ".github/workflows/foundation-validation.yml",
+        ]
+        request["changed_paths"] = [p for p in request["changed_paths"]
+                                     if not any(p.startswith(pat) or p == pat for pat in calc_patterns)]
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        conflicts = [r for r in closure["residue"] if r["type"] == "explicit_seed_mapping_conflict"]
+        self.assertTrue(any(r["component_id"] == "propagation_calculator" for r in conflicts))
+
+    # ── G4 attack tests: path normalization and escape prevention ───────────────
+
+    def test_g4_absolute_path_rejected(self):
+        """Absolute POSIX paths must be rejected (blocking residue)."""
+        request = self.request(changed_paths=["/Users/name/file.md"])
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo", "forbidden_path_pattern") for r in closure["residue"]))
+
+    def test_g4_windows_drive_rejected(self):
+        """Windows drive paths must be rejected (blocking residue)."""
+        request = self.request(changed_paths=["C:\\Users\\name\\file.md"])
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo", "forbidden_path_pattern") for r in closure["residue"]))
+
+    def test_g4_parent_traversal_rejected(self):
+        """Parent traversal '..' in path must be rejected (blocking residue)."""
+        request = self.request(changed_paths=["docs/../outside.md"])
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo", "forbidden_path_pattern") for r in closure["residue"]))
+
+    def test_g4_file_uri_rejected(self):
+        """file:// URIs must be rejected (blocking residue)."""
+        request = self.request(changed_paths=["file:///Users/name/file.md"])
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo", "forbidden_path_pattern") for r in closure["residue"]))
+
+    def test_g4_backslash_rejected(self):
+        """Backslashes anywhere in path must be rejected (blocking residue)."""
+        request = self.request(changed_paths=["docs\\file.md"])
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo", "forbidden_path_pattern") for r in closure["residue"]))
+
+    def test_g4_control_char_rejected(self):
+        """Control characters in path must be rejected (blocking residue)."""
+        request = self.request(changed_paths=["docs/file\x00.md"])
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo", "forbidden_path_pattern") for r in closure["residue"]))
+
+    def test_g4_suffix_injection_produces_unmapped(self):
+        """Suffix injection (e.g. 'ITERATION.md.bak') must produce unmapped_path residue, not silently match."""
+        request = self.request(changed_paths=["ITERATION.md.bak"])
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertIn("unmapped_path", {item["type"] for item in closure["residue"]})
 
 
 if __name__ == "__main__":
