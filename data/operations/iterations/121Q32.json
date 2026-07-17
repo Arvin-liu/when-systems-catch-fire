@@ -287,7 +287,7 @@
     "impact_report_path": "reports/operations/121Q32-change-propagation-impact.md",
     "system_map_delta_path": "data/operations/propagation/121Q32-system-map-delta.json",
     "residue_path": "data/operations/propagation/121Q32-residue.json",
-    "closure_hash": "e815c573b43646cb7c2915f2089aa92bdc4810802a2e534e6dd80ad46b6d7d13",
+    "closure_hash": "6d21ad8e6b29e8da61f3539c430b88feac5f1d8be4d4c6d55c3d2ad0e6bf9a4b",
     "base_identity": "d1bedb074af8dad8202b4324f3f5bbbb6b308b51",
     "head_identity": "external_exact_head_attestation",
     "seed_paths": [
@@ -337,6 +337,7 @@
       "tests/test_pages_deploy_gate.py",
       "tools/generate_interactive_system_map.py",
       "tools/operations/compute_change_propagation.py",
+      "tools/operations/validate_generated_output_authority.py",
       "tools/validate_human_front_door.py",
       "tools/validate_iteration_sync.py"
     ],

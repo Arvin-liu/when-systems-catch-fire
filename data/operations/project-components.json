@@ -917,7 +917,8 @@
         ".github/workflows/foundation-validation.yml",
         "tests/fixtures/",
         "data/operations/generated-output-authority.json",
-        "schemas/operations/generated-output-authority.schema.json"
+        "schemas/operations/generated-output-authority.schema.json",
+        "tools/operations/validate_generated_output_authority.py"
       ],
       "authority": "derived",
       "layer_or_overlay": "infrastructure",

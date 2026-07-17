@@ -49,7 +49,7 @@
     }
   ],
   "propagation_closure": {
-    "closure_hash": "e815c573b43646cb7c2915f2089aa92bdc4810802a2e534e6dd80ad46b6d7d13",
+    "closure_hash": "6d21ad8e6b29e8da61f3539c430b88feac5f1d8be4d4c6d55c3d2ad0e6bf9a4b",
     "closure_path": "data/operations/propagation/121Q32-closure.json",
     "complete": true,
     "unresolved_residue": []
@@ -74,5 +74,6 @@
     "github_artifact_archive_digest": "sha256:f1dfaf2ac0d002d24916e39957f950d8378ed8c1198365754512b97acf8e6cc8",
     "pages_payload_tar_digest": "sha256:2fbc9a1116c4682c17113b4d989012aea0c59b4da182c3164e2e7fea80e452ab",
     "distinction": "github_artifact_archive_digest is the SHA-256 of the GitHub artifact archive; pages_payload_tar_digest is the SHA-256 of the Pages payload tar. They differ because the Pages payload is a curated subset rendered for web deployment."
-  }
+  },
+  "propagation_closure_hash": "6d21ad8e6b29e8da61f3539c430b88feac5f1d8be4d4c6d55c3d2ad0e6bf9a4b"
 }

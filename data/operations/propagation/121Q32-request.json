@@ -50,6 +50,7 @@
     "tests/test_pages_deploy_gate.py",
     "tools/generate_interactive_system_map.py",
     "tools/operations/compute_change_propagation.py",
+    "tools/operations/validate_generated_output_authority.py",
     "tools/validate_human_front_door.py",
     "tools/validate_iteration_sync.py"
   ],
