@@ -11,7 +11,7 @@
     "head_binding": {
       "mode": "external_exact_head_attestation",
       "authority": "pull_request_body_and_1111_receipt",
-      "receipt_path": "agent-results/IGNITION-20260717-121Q32F6-generated-output-authority-and-exact-head-evidence-closeout-result.md",
+      "receipt_path": "agent-results/IGNITION-20260717-121Q32-result.md",
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
@@ -85,5 +85,7 @@
     "function_os": 29570163014,
     "pages": 29570169044
   },
-  "exact_head": "c0226c59a6aafe327e76ef37c3c8e63e7eab030a"
+  "exact_head": "c0226c59a6aafe327e76ef37c3c8e63e7eab030a",
+  "seal_binding_head": "5aad60d66575fbfca66a58a9e606bd9523bf1385",
+  "head_metadata_note": "exact_head is the CI-verified HEAD (c0226c59) with successful foundation/function-os/pages runs. seal_binding_head is the commit where this seal metadata binding resides. They differ because updating the seal creates a new commit, making exact_head perpetually lag behind the physical HEAD."
 }
