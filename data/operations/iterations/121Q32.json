@@ -287,10 +287,11 @@
     "impact_report_path": "reports/operations/121Q32-change-propagation-impact.md",
     "system_map_delta_path": "data/operations/propagation/121Q32-system-map-delta.json",
     "residue_path": "data/operations/propagation/121Q32-residue.json",
-    "closure_hash": "2b30b93f4f0947a352c6343f327f5da549b0ab936b3db3ac2fcc772982a6733d",
+    "closure_hash": "b4b885066b51bf700d89763b0ea414c14791d505a144a887ee22861310ac058a",
     "base_identity": "d1bedb074af8dad8202b4324f3f5bbbb6b308b51",
     "head_identity": "external_exact_head_attestation",
     "seed_paths": [
+      ".github/workflows/foundation-validation.yml",
       ".github/workflows/pages.yml",
       "AI-HANDOFF.md",
       "AI-START-HERE.md",
@@ -604,6 +605,11 @@
   },
   "impact_matrix": [
     {
+      "surface": ".github/workflows/foundation-validation.yml",
+      "decision": "CHANGE",
+      "reason": "Exact-HEAD Foundation now executes propagation product freshness, derived map and focused regression checks."
+    },
+    {
       "surface": ".github/workflows/pages.yml",
       "decision": "CHANGE",
       "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
@@ -845,6 +851,7 @@
     }
   ],
   "changed_surfaces": [
+    ".github/workflows/foundation-validation.yml",
     ".github/workflows/pages.yml",
     "AI-HANDOFF.md",
     "AI-START-HERE.md",

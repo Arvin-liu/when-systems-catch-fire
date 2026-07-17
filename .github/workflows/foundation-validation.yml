@@ -14,9 +14,14 @@ on:
       - 'views/**'
       - 'schemas/foundation/**'
       - 'schemas/operations/**'
+      - 'schemas/architecture/**'
       - 'reports/foundation-architecture/**'
       - 'reports/operations/**'
       - 'data/operations/**'
+      - 'data/architecture/**'
+      - 'tools/operations/**'
+      - 'tools/generate_interactive_system_map.py'
+      - 'tests/test_change_propagation.py'
       - 'tools/validate_iteration_sync.py'
       - 'tests/test_iteration_sync.py'
       - 'tools/validate_human_front_door.py'
@@ -45,9 +50,14 @@ on:
       - 'views/**'
       - 'schemas/foundation/**'
       - 'schemas/operations/**'
+      - 'schemas/architecture/**'
       - 'reports/foundation-architecture/**'
       - 'reports/operations/**'
       - 'data/operations/**'
+      - 'data/architecture/**'
+      - 'tools/operations/**'
+      - 'tools/generate_interactive_system_map.py'
+      - 'tests/test_change_propagation.py'
       - 'tools/validate_iteration_sync.py'
       - 'tests/test_iteration_sync.py'
       - 'tools/validate_human_front_door.py'
@@ -93,7 +103,19 @@ jobs:
       - run: python3 tools/foundation/validate_080_adjudications.py
       - name: Validate synchronization registry and iteration closures
         run: python3 tools/validate_iteration_sync.py
+      - name: Validate typed change-propagation products
+        run: |
+          python3 tools/operations/compute_change_propagation.py \
+            --request data/operations/propagation/121Q32-request.json \
+            --output data/operations/propagation/121Q32-closure.json \
+            --report reports/operations/121Q32-change-propagation-impact.md \
+            --map-delta data/operations/propagation/121Q32-system-map-delta.json \
+            --residue data/operations/propagation/121Q32-residue.json \
+            --check
+      - name: Validate registry-derived system map
+        run: python3 tools/generate_interactive_system_map.py --check
       - run: python3 tools/validate_human_front_door.py
       - run: python3 -m unittest tests.foundation.test_foundation
       - run: python3 -m unittest tests.test_iteration_sync -v
       - run: python3 -m unittest tests.test_human_front_door -v
+      - run: python3 -m unittest tests.test_change_propagation -v

@@ -39,7 +39,8 @@ The materialized map is now checked against the three upstream authorities. Hidd
 
 ## Closure result
 
-- Closure hash: `2b30b93f4f0947a352c6343f327f5da549b0ab936b3db3ac2fcc772982a6733d`
+- Closure hash: `b4b885066b51bf700d89763b0ea414c14791d505a144a887ee22861310ac058a`
+- Changed-path seeds: `42`
 - Fixpoint: reached in `2` iterations
 - Resolved components: `19`
 - Typed paths traversed: `14`
