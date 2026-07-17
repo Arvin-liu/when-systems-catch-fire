@@ -506,5 +506,85 @@ class ChangePropagationTests(unittest.TestCase):
             shutil.rmtree(outside, ignore_errors=True)
 
 
+    # ── F5: stale seal/audit and diff-coverage gap tests ─────────────────────
+
+    def test_f5_seal_edges_match_real_system_map(self):
+        """The seal's system_map.edges must equal the real system map edge count."""
+        import json as _json
+        seal = _json.loads((ROOT / "reports/operations/121Q32-completion-seal.json").read_text())
+        real_map = _json.loads((ROOT / "data/architecture/interactive-system-map.json").read_text())
+        real_edges = len(real_map["edges"])
+        self.assertEqual(seal["system_map"]["edges"], real_edges,
+                         f"seal edges {seal['system_map']['edges']} != real map edges {real_edges}")
+
+    def test_f5_seal_closure_hash_is_fresh(self):
+        """The seal's closure_hash must match the current closure.json."""
+        import json as _json
+        seal = _json.loads((ROOT / "reports/operations/121Q32-completion-seal.json").read_text())
+        closure = _json.loads((ROOT / "data/operations/propagation/121Q32-closure.json").read_text())
+        self.assertEqual(seal["propagation_closure"]["closure_hash"], closure["closure_hash"],
+                         "seal closure_hash is stale vs current closure.json")
+
+    def test_f5_audit_report_hash_matches_closure(self):
+        """The audit report's closure hash must match the real closure."""
+        import re as _re
+        closure = load_json(ROOT / "data/operations/propagation/121Q32-closure.json")
+        audit_text = (ROOT / "reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md").read_text()
+        # Find hash in audit (format: `hash`)
+        hashes = _re.findall(r"`([0-9a-f]{64})`", audit_text)
+        self.assertIn(closure["closure_hash"], hashes,
+                      f"audit report does not contain current closure hash {closure['closure_hash']}")
+
+    def test_f5_diff_fully_covered_by_seeds_and_generated_outputs(self):
+        """Every file in git diff base..HEAD must be in changed_paths or known generated outputs."""
+        import subprocess as _sp
+        request = load_json(ROOT / "data/operations/propagation/121Q32-request.json")
+        # Known deterministic generated outputs (not seeds, but produced by the computation)
+        generated_outputs = {
+            "data/operations/propagation/121Q32-closure.json",
+            "data/operations/propagation/121Q32-residue.json",
+            "data/operations/propagation/121Q32-system-map-delta.json",
+            "reports/operations/121Q32-change-propagation-impact.md",
+        }
+        seed_paths = set(request["changed_paths"])
+        covered = seed_paths | generated_outputs
+        # Get real diff
+        base = request["base_identity"]
+        result = _sp.run(
+            ["git", "-C", str(ROOT), "diff", "--name-only", f"{base}..HEAD"],
+            check=True, capture_output=True, text=True,
+        )
+        diff_files = set(result.stdout.strip().splitlines())
+        gaps = diff_files - covered
+        self.assertEqual(gaps, set(),
+                         f"diff files not covered by changed_paths or generated outputs: {sorted(gaps)}")
+
+    def test_f5_uncovered_diff_path_attack(self):
+        """If a diff file is neither in seed nor generated output, coverage test must fail."""
+        import subprocess as _sp
+        request = load_json(ROOT / "data/operations/propagation/121Q32-request.json")
+        generated_outputs = {
+            "data/operations/propagation/121Q32-closure.json",
+            "data/operations/propagation/121Q32-residue.json",
+            "data/operations/propagation/121Q32-system-map-delta.json",
+            "reports/operations/121Q32-change-propagation-impact.md",
+        }
+        seed_paths = set(request["changed_paths"])
+        covered = seed_paths | generated_outputs
+        # Simulate an attacker removing a path from changed_paths
+        fake_seeds = seed_paths - {"tests/test_pages_deploy_gate.py"}
+        fake_covered = fake_seeds | generated_outputs
+        base = request["base_identity"]
+        result = _sp.run(
+            ["git", "-C", str(ROOT), "diff", "--name-only", f"{base}..HEAD"],
+            check=True, capture_output=True, text=True,
+        )
+        diff_files = set(result.stdout.strip().splitlines())
+        gaps = diff_files - fake_covered
+        # The gap must be non-empty (the removed path should show up)
+        self.assertTrue(len(gaps) > 0, "removing a seed should create a coverage gap")
+        self.assertIn("tests/test_pages_deploy_gate.py", gaps)
+
+
 if __name__ == "__main__":
     unittest.main()

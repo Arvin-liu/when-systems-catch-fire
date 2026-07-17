@@ -181,7 +181,7 @@
   "base_identity": "d1bedb074af8dad8202b4324f3f5bbbb6b308b51",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "bed6822a7047c04b06e887446b3bf60f0d9408c8971548734c6ed3691ec20fdc",
+  "closure_hash": "279c32833db13f9e31c8c2157b9c94d00673106347b5581abcb5ad2eae629350",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -325,6 +325,7 @@
     "tests/test_change_propagation.py",
     "tests/test_human_front_door.py",
     "tests/test_iteration_sync.py",
+    "tests/test_pages_deploy_gate.py",
     "tools/generate_interactive_system_map.py",
     "tools/operations/compute_change_propagation.py",
     "tools/validate_human_front_door.py",

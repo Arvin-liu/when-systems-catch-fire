@@ -987,7 +987,8 @@
       "canonical_target": ".github/workflows/pages.yml",
       "path_patterns": [
         ".github/workflows/pages.yml",
-        "pages/"
+        "pages/",
+        "tests/test_pages_deploy_gate.py"
       ],
       "authority": "derived",
       "layer_or_overlay": "infrastructure",
