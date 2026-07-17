@@ -1,0 +1,673 @@
+{
+  "registry_type": "invariant_registry",
+  "version": "0.1.0",
+  "description": "Core invariants for Q33-Q39 shadow stack, second-pass deep audit",
+  "entries": [
+    {
+      "invariant_id": "INV-Q33-01",
+      "stage": "Q33",
+      "statement": "Unknown rights status must block publication",
+      "enforcement_layer": "validator",
+      "validator": "tools/rights/validate_rights_gate.py",
+      "check_function": "validate_entries",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q33-02",
+      "stage": "Q33",
+      "statement": "Attribution is not Permission \u2014 having attribution does not grant publication right",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q33-03",
+      "stage": "Q33",
+      "statement": "External original content must not be labeled as project-generated",
+      "enforcement_layer": "validator",
+      "validator": "tools/rights/validate_rights_gate.py",
+      "check_function": "validate_no_external_content",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q33-04",
+      "stage": "Q33",
+      "statement": "Same material cannot be both paid course and public domain",
+      "enforcement_layer": "validator",
+      "validator": "tools/rights/validate_rights_gate.py",
+      "check_function": "validate_entries",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q33-05",
+      "stage": "Q33",
+      "statement": "Derivation ledger must exist before publication decision",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q33-06",
+      "stage": "Q33",
+      "statement": "Jurisdiction rule must cover source jurisdiction before global safety claim",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q33-07",
+      "stage": "Q33",
+      "statement": "Historical exposure deletion must not imply zero risk",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q33-08",
+      "stage": "Q33",
+      "statement": "Publication allowed=true must have conditions",
+      "enforcement_layer": "validator",
+      "validator": "tools/rights/validate_rights_gate.py",
+      "check_function": "validate_publication_decisions",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q33-09",
+      "stage": "Q33",
+      "statement": "Claim ceiling must exist for every entry",
+      "enforcement_layer": "validator",
+      "validator": "tools/rights/validate_rights_gate.py",
+      "check_function": "validate_entries",
+      "first_pass_status": "ENFORCED_WARN"
+    },
+    {
+      "invariant_id": "INV-Q33-10",
+      "stage": "Q33",
+      "statement": "Derivation chain entries must have source_id and relation",
+      "enforcement_layer": "validator",
+      "validator": "tools/rights/validate_rights_gate.py",
+      "check_function": "validate_derivation_chain",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q34-01",
+      "stage": "Q34",
+      "statement": "DiscoveryArtifact cannot directly become Commitment without passing gates",
+      "enforcement_layer": "validator",
+      "validator": "tools/discovery/validate_dual_plane.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q34-02",
+      "stage": "Q34",
+      "statement": "RightsGate fail must block EpistemicGate promotion",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q34-03",
+      "stage": "Q34",
+      "statement": "Analogy candidate cannot gain action authority",
+      "enforcement_layer": "validator",
+      "validator": "tools/discovery/validate_dual_plane.py",
+      "check_function": "validate_all",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q34-04",
+      "stage": "Q34",
+      "statement": "High-level explanation cannot override low-level facts",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q34-05",
+      "stage": "Q34",
+      "statement": "New feedback cannot auto-upgrade epistemic grade",
+      "enforcement_layer": "validator",
+      "validator": "tools/discovery/validate_dual_plane.py",
+      "check_function": "validate_all",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q34-06",
+      "stage": "Q34",
+      "statement": "Demotion path must not be deletable",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q34-07",
+      "stage": "Q34",
+      "statement": "Residue must have promotion_blocked_reasons",
+      "enforcement_layer": "validator",
+      "validator": "tools/discovery/validate_dual_plane.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q34-08",
+      "stage": "Q34",
+      "statement": "Commitment requires tested_claim or higher epistemic level",
+      "enforcement_layer": "validator",
+      "validator": "tools/discovery/validate_dual_plane.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q34-09",
+      "stage": "Q34",
+      "statement": "Discovery registry entries must stay in exploration plane",
+      "enforcement_layer": "validator",
+      "validator": "tools/discovery/validate_dual_plane.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q34-10",
+      "stage": "Q34",
+      "statement": "All three gates must pass for committed status",
+      "enforcement_layer": "validator",
+      "validator": "tools/discovery/validate_dual_plane.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-01",
+      "stage": "Q35",
+      "statement": "Agent must not modify main branch",
+      "enforcement_layer": "validator+hook",
+      "validator": "tools/agent/validate_agent_duty.py",
+      "check_function": "validate_permissions",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-02",
+      "stage": "Q35",
+      "statement": "Agent must not self-review and self-accept",
+      "enforcement_layer": "validator",
+      "validator": "tools/agent/validate_agent_duty.py",
+      "check_function": "validate_contracts",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-03",
+      "stage": "Q35",
+      "statement": "Unknown governance questions must not be self-filled by Agent",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-04",
+      "stage": "Q35",
+      "statement": "PAUSED without checkpoint must not RESUME",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-05",
+      "stage": "Q35",
+      "statement": "BLOCKED state must not call write tools",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-06",
+      "stage": "Q35",
+      "statement": "Unauthorized tools must not be executed",
+      "enforcement_layer": "validator",
+      "validator": "tools/agent/validate_agent_duty.py",
+      "check_function": "validate_permissions",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-07",
+      "stage": "Q35",
+      "statement": "Context identity mismatch must halt task",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-08",
+      "stage": "Q35",
+      "statement": "Same task cannot be claimed by two agents simultaneously",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-09",
+      "stage": "Q35",
+      "statement": "State transitions must follow valid transition graph",
+      "enforcement_layer": "validator",
+      "validator": "tools/agent/validate_agent_duty.py",
+      "check_function": "validate_state_transitions",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-10",
+      "stage": "Q35",
+      "statement": "QUARANTINED and ABORTED are terminal states",
+      "enforcement_layer": "validator",
+      "validator": "tools/agent/validate_agent_duty.py",
+      "check_function": "validate_state_transitions",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-11",
+      "stage": "Q35",
+      "statement": "Duty contracts must have rule, blocked_actions, requires_human_decision",
+      "enforcement_layer": "validator",
+      "validator": "tools/agent/validate_agent_duty.py",
+      "check_function": "validate_contracts",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q35-12",
+      "stage": "Q35",
+      "statement": "Action traces must follow valid state transitions",
+      "enforcement_layer": "validator",
+      "validator": "tools/agent/validate_agent_duty.py",
+      "check_function": "validate_traces",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q36-01",
+      "stage": "Q36",
+      "statement": "Prediction without expiry must not be accepted",
+      "enforcement_layer": "validator",
+      "validator": "tools/temporal/validate_temporal_causality.py",
+      "check_function": "validate_predictions",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q36-02",
+      "stage": "Q36",
+      "statement": "Expired prediction must not serve as current basis",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q36-03",
+      "stage": "Q36",
+      "statement": "Observation must match prediction object",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q36-04",
+      "stage": "Q36",
+      "statement": "Counterfactual must not be written as observed fact",
+      "enforcement_layer": "validator",
+      "validator": "tools/temporal/validate_temporal_causality.py",
+      "check_function": "validate_interventions",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q36-05",
+      "stage": "Q36",
+      "statement": "Repository reachability must not be upgraded to causal claim",
+      "enforcement_layer": "validator",
+      "validator": "tools/temporal/validate_temporal_causality.py",
+      "check_function": "validate_no_reachability_as_causation",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q36-06",
+      "stage": "Q36",
+      "statement": "Closed intervention window must block execution",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q36-07",
+      "stage": "Q36",
+      "statement": "Model calibration must not auto-upgrade to truth",
+      "enforcement_layer": "validator",
+      "validator": "tools/temporal/validate_temporal_causality.py",
+      "check_function": "validate_predictions",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q36-08",
+      "stage": "Q36",
+      "statement": "Prediction without falsification_conditions must not enter commitment",
+      "enforcement_layer": "validator",
+      "validator": "tools/temporal/validate_temporal_causality.py",
+      "check_function": "validate_predictions",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q36-09",
+      "stage": "Q36",
+      "statement": "Prediction must have all 7 required fields",
+      "enforcement_layer": "validator",
+      "validator": "tools/temporal/validate_temporal_causality.py",
+      "check_function": "validate_predictions",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q36-10",
+      "stage": "Q36",
+      "statement": "Claim ceiling must not contain 'proof'",
+      "enforcement_layer": "validator",
+      "validator": "tools/temporal/validate_temporal_causality.py",
+      "check_function": "validate_predictions",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q37-01",
+      "stage": "Q37",
+      "statement": "Surface similarity must not be labeled structural mapping",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q37-02",
+      "stage": "Q37",
+      "statement": "Every analogy must register non-correspondence residue",
+      "enforcement_layer": "validator",
+      "validator": "tools/analogy/validate_analogy_audit.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q37-03",
+      "stage": "Q37",
+      "statement": "Source domain teleology must not enter target domain",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q37-04",
+      "stage": "Q37",
+      "statement": "Productive mismatch must not auto-become evidence",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q37-05",
+      "stage": "Q37",
+      "statement": "Analogy claim ceiling must not be elevated to causal conclusion",
+      "enforcement_layer": "validator",
+      "validator": "tools/analogy/validate_analogy_audit.py",
+      "check_function": "validate_all",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q37-06",
+      "stage": "Q37",
+      "statement": "Unidirectional mapping must not be disguised as bidirectional revision",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q37-07",
+      "stage": "Q37",
+      "statement": "External course original text must not enter Git",
+      "enforcement_layer": "validator",
+      "validator": "tools/rights/validate_rights_gate.py",
+      "check_function": "validate_no_external_content",
+      "first_pass_status": "ENFORCED_BY_Q33"
+    },
+    {
+      "invariant_id": "INV-Q37-08",
+      "stage": "Q37",
+      "statement": "Every analogy must have hidden premise transfer analysis",
+      "enforcement_layer": "validator",
+      "validator": "tools/analogy/validate_analogy_audit.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q37-09",
+      "stage": "Q37",
+      "statement": "Every analogy must have negative transfer analysis",
+      "enforcement_layer": "validator",
+      "validator": "tools/analogy/validate_analogy_audit.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q37-10",
+      "stage": "Q37",
+      "statement": "Claim ceiling must not be formal_equivalence",
+      "enforcement_layer": "validator",
+      "validator": "tools/analogy/validate_analogy_audit.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q38-01",
+      "stage": "Q38",
+      "statement": "Plain vector similarity must not be called isomorphism",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q38-02",
+      "stage": "Q38",
+      "statement": "Must return counterexamples, not only positive examples",
+      "enforcement_layer": "validator",
+      "validator": "tools/retrieval/validate_structural_retrieval.py",
+      "check_function": "validate_all",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q38-03",
+      "stage": "Q38",
+      "statement": "Two cases without common relation must not be 'generalized from two'",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q38-04",
+      "stage": "Q38",
+      "statement": "Partial mapping must not be labeled complete isomorphism",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q38-05",
+      "stage": "Q38",
+      "statement": "Signature argument order must matter",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q38-06",
+      "stage": "Q38",
+      "statement": "Same-named nodes must not create surface match",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q38-07",
+      "stage": "Q38",
+      "statement": "Retrieval result must not directly enter Commitment",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q38-08",
+      "stage": "Q38",
+      "statement": "Must not fabricate probability scores",
+      "enforcement_layer": "validator",
+      "validator": "tools/retrieval/validate_structural_retrieval.py",
+      "check_function": "validate_all",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q38-09",
+      "stage": "Q38",
+      "statement": "Cases must reference valid relation signatures",
+      "enforcement_layer": "validator",
+      "validator": "tools/retrieval/validate_structural_retrieval.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q38-10",
+      "stage": "Q38",
+      "statement": "Counterexamples must reference valid case pairs",
+      "enforcement_layer": "validator",
+      "validator": "tools/retrieval/validate_structural_retrieval.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-01",
+      "stage": "Q39",
+      "statement": "One accidental error must not auto-institutionalize",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-02",
+      "stage": "Q39",
+      "statement": "Same-class errors without recurrence signature must be flagged",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-03",
+      "stage": "Q39",
+      "statement": "Repair without regression test must not be marked closed",
+      "enforcement_layer": "validator",
+      "validator": "tools/failure/validate_failure_memory.py",
+      "check_function": "validate_all",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-04",
+      "stage": "Q39",
+      "statement": "Known failure must not be treated as novel",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-05",
+      "stage": "Q39",
+      "statement": "Repair with downstream break must have propagation record",
+      "enforcement_layer": "validator",
+      "validator": "tools/failure/validate_failure_memory.py",
+      "check_function": "validate_all",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-06",
+      "stage": "Q39",
+      "statement": "Failure record must include version at time of failure",
+      "enforcement_layer": "validator",
+      "validator": "tools/failure/validate_failure_memory.py",
+      "check_function": "validate_all",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-07",
+      "stage": "Q39",
+      "statement": "Agent must not delete failure history",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-08",
+      "stage": "Q39",
+      "statement": "Repeated failures must add gates, not just documentation",
+      "enforcement_layer": "none",
+      "validator": "NONE",
+      "check_function": "NONE",
+      "first_pass_status": "NOT_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-09",
+      "stage": "Q39",
+      "statement": "Governance rules must not stack without over-institutionalization risk check",
+      "enforcement_layer": "validator",
+      "validator": "tools/failure/validate_failure_memory.py",
+      "check_function": "validate_all",
+      "first_pass_status": "PARTIALLY_ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-10",
+      "stage": "Q39",
+      "statement": "Recurrence signatures must reference valid failure IDs",
+      "enforcement_layer": "validator",
+      "validator": "tools/failure/validate_failure_memory.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-11",
+      "stage": "Q39",
+      "statement": "Repair propagation must reference valid failure IDs",
+      "enforcement_layer": "validator",
+      "validator": "tools/failure/validate_failure_memory.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    },
+    {
+      "invariant_id": "INV-Q39-12",
+      "stage": "Q39",
+      "statement": "Overfitting risk must be assessed for every repair propagation",
+      "enforcement_layer": "validator",
+      "validator": "tools/failure/validate_failure_memory.py",
+      "check_function": "validate_all",
+      "first_pass_status": "ENFORCED"
+    }
+  ]
+}
