@@ -1050,21 +1050,12 @@
   "allowed_path_overlaps": [
     {
       "component_ids": [
+        "foundation",
         "l1",
-        "foundation"
-      ],
-      "reason": "Foundation spans L0-L6 layers; data/foundation/ contains both layer-specific and cross-layer files.",
-      "authority_source": "FOUNDATION.md",
-      "path_patterns": [
-        "data/foundation/"
-      ]
-    },
-    {
-      "component_ids": [
         "l2",
-        "foundation"
+        "l3"
       ],
-      "reason": "Foundation spans L0-L6 layers; data/foundation/ contains both layer-specific and cross-layer files.",
+      "reason": "Foundation spans L0-L6; data/foundation/ contains layer-specific and cross-layer files owned by foundation and l1/l2/l3.",
       "authority_source": "FOUNDATION.md",
       "path_patterns": [
         "data/foundation/"
@@ -1072,19 +1063,8 @@
     },
     {
       "component_ids": [
-        "l3",
-        "foundation"
-      ],
-      "reason": "Foundation spans L0-L6 layers; data/foundation/ contains both layer-specific and cross-layer files.",
-      "authority_source": "FOUNDATION.md",
-      "path_patterns": [
-        "data/foundation/"
-      ]
-    },
-    {
-      "component_ids": [
-        "l4",
-        "foundation"
+        "foundation",
+        "l4"
       ],
       "reason": "Foundation includes formal/lean/ for formal proofs; L4 owns formal/ for general math models.",
       "authority_source": "FOUNDATION.md",
@@ -1094,8 +1074,8 @@
     },
     {
       "component_ids": [
-        "l5",
-        "foundation"
+        "foundation",
+        "l5"
       ],
       "reason": "Foundation includes tests/foundation/ and tools/foundation/ for cross-layer validation; L5 owns them for evaluation methodology.",
       "authority_source": "FOUNDATION.md",
@@ -1106,113 +1086,48 @@
     },
     {
       "component_ids": [
-        "l6",
-        "external_input"
+        "case_source",
+        "external_input",
+        "l6"
       ],
-      "reason": "L6 owns docs/publication/ for general publication; external_input owns docs/publication/cases/ for case sources.",
-      "authority_source": "ARCHITECTURE.md#七层关系",
+      "reason": "external_input, case_source and L6 all own docs/publication/cases/ (L6 owns docs/publication/, external_input and case_source own case sources).",
+      "authority_source": "docs/publication/cases/jin-rise-case-source.md",
       "path_patterns": [
         "docs/publication/cases/"
       ]
     },
     {
       "component_ids": [
+        "ignition_increment",
         "l6",
-        "zhiyuan_method"
+        "point_fire_analysis"
       ],
-      "reason": "L6 owns docs/publication/ for general publication; zhiyuan_method owns specific method docs within it.",
-      "authority_source": "docs/publication/zhiyuan-writing-method.md",
-      "path_patterns": [
-        "docs/publication/zhiyuan-writing-method.md",
-        "docs/publication/zhiyuan-writing-examples.md"
-      ]
-    },
-    {
-      "component_ids": [
-        "l6",
-        "showcase"
-      ],
-      "reason": "L6 owns docs/publication/ for general publication; showcase owns the specific showcase doc.",
-      "authority_source": "docs/publication/zhiyuan-writing-showcase.md",
-      "path_patterns": [
-        "docs/publication/zhiyuan-writing-showcase.md"
-      ]
-    },
-    {
-      "component_ids": [
-        "l6",
-        "accepted_work"
-      ],
-      "reason": "L6 owns docs/publication/ for general publication; accepted_work owns specific work files.",
-      "authority_source": "data/publication/zhiyuan-writing-showcase.json",
-      "path_patterns": [
-        "docs/publication/works/"
-      ]
-    },
-    {
-      "component_ids": [
-        "external_input",
-        "case_source"
-      ],
-      "reason": "external_input owns docs/publication/cases/ for case sources; case_source owns the specific jin-rise case file.",
-      "authority_source": "docs/publication/cases/jin-rise-case-source.md",
-      "path_patterns": [
-        "docs/publication/cases/jin-rise-case-source.md"
-      ]
-    },
-    {
-      "component_ids": [
-        "l6",
-        "ignition_increment"
-      ],
-      "reason": "L6 owns reports/publication/ for general publication output; ignition_increment owns it for derived increments.",
-      "authority_source": "docs/publication/zhiyuan-writing-method.md",
+      "reason": "L6, ignition_increment and point_fire_analysis share reports/publication/ for derived increments and analysis.",
+      "authority_source": "reports/publication/jin-rise-point-fire-analysis.md",
       "path_patterns": [
         "reports/publication/"
       ]
     },
     {
       "component_ids": [
-        "ignition_increment",
-        "point_fire_analysis"
+        "historical_reports",
+        "iteration_manifest_contract"
       ],
-      "reason": "ignition_increment owns reports/publication/ for derived increments; point_fire_analysis owns a specific analysis file.",
-      "authority_source": "reports/publication/jin-rise-point-fire-analysis.md",
-      "path_patterns": [
-        "reports/publication/jin-rise-point-fire-analysis.md"
-      ]
-    },
-    {
-      "component_ids": [
-        "q14",
-        "sustainability"
-      ],
-      "reason": "q14 owns reports/atlas/ for atlas output; sustainability owns a specific map file within it.",
-      "authority_source": "reports/atlas/maps/map-maintainer-sustainability-economics.md",
-      "path_patterns": [
-        "reports/atlas/maps/map-maintainer-sustainability-economics.md"
-      ]
-    },
-    {
-      "component_ids": [
-        "iteration_manifest_contract",
-        "historical_reports"
-      ],
-      "reason": "iteration_manifest_contract tracks specific 121Q32 reports; historical_reports owns reports/operations/ for all historical ops.",
-      "authority_source": "reports/operations/",
+      "reason": "historical_reports and iteration_manifest_contract share reports/operations/ for historical ops and 121Q32 reports.",
+      "authority_source": "reports/operations/121Q32-completion-seal.json",
       "path_patterns": [
         "reports/operations/"
       ]
     },
     {
       "component_ids": [
-        "system_map_projection",
-        "pages_pipeline"
+        "pages_pipeline",
+        "system_map_projection"
       ],
-      "reason": "system_map_projection owns the generated SVG; pages_pipeline owns pages/ for the deployment chain.",
+      "reason": "pages_pipeline owns pages/ for the deployment chain; system_map_projection owns the generated SVG under pages/generated/.",
       "authority_source": ".github/workflows/pages.yml",
       "path_patterns": [
-        "pages/generated/"
+        "pages/generated/ignition-system-map.svg"
       ]
     }
   ]

@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 from tools.generate_interactive_system_map import build_projection, load_json
-from tools.operations.compute_change_propagation import COMPONENTS, SURFACES, TOPOLOGY, compute
+from tools.operations.compute_change_propagation import COMPONENTS, ROOT, SURFACES, TOPOLOGY, compute
 
 
 BASE_REQUEST = load_json(__import__("pathlib").Path("data/operations/propagation/121Q32-request.json"))
@@ -238,46 +238,53 @@ class ChangePropagationTests(unittest.TestCase):
     # ── G4 attack tests: path normalization and escape prevention ───────────────
 
     def test_g4_absolute_path_rejected(self):
-        """Absolute POSIX paths must be rejected."""
+        """Absolute POSIX paths must be rejected (blocking residue)."""
         request = self.request(changed_paths=["/Users/name/file.md"])
-        with self.assertRaisesRegex(ValueError, "forbidden path pattern"):
-            compute(request, baseline_map=CURRENT_PROJECTION)
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo") for r in closure["residue"]))
 
     def test_g4_windows_drive_rejected(self):
-        """Windows drive paths must be rejected."""
+        """Windows drive paths must be rejected (blocking residue)."""
         request = self.request(changed_paths=["C:\\Users\\name\\file.md"])
-        with self.assertRaisesRegex(ValueError, "forbidden path pattern"):
-            compute(request, baseline_map=CURRENT_PROJECTION)
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo") for r in closure["residue"]))
 
     def test_g4_windows_unc_rejected(self):
-        """Windows UNC paths must be rejected."""
+        """Windows UNC paths must be rejected (blocking residue)."""
         request = self.request(changed_paths=["\\\\server\\share\\file.md"])
-        with self.assertRaisesRegex(ValueError, "forbidden path pattern"):
-            compute(request, baseline_map=CURRENT_PROJECTION)
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo") for r in closure["residue"]))
 
     def test_g4_parent_traversal_rejected(self):
-        """Parent traversal '..' in path must be rejected."""
+        """Parent traversal '..' in path must be rejected (blocking residue)."""
         request = self.request(changed_paths=["docs/../outside.md"])
-        with self.assertRaisesRegex(ValueError, "parent traversal"):
-            compute(request, baseline_map=CURRENT_PROJECTION)
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo") for r in closure["residue"]))
 
     def test_g4_file_uri_rejected(self):
-        """file:// URIs must be rejected."""
+        """file:// URIs must be rejected (blocking residue)."""
         request = self.request(changed_paths=["file:///Users/name/file.md"])
-        with self.assertRaisesRegex(ValueError, "forbidden path pattern"):
-            compute(request, baseline_map=CURRENT_PROJECTION)
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo") for r in closure["residue"]))
 
     def test_g4_backslash_rejected(self):
-        """Backslashes anywhere in path must be rejected."""
+        """Backslashes anywhere in path must be rejected (blocking residue)."""
         request = self.request(changed_paths=["docs\\file.md"])
-        with self.assertRaisesRegex(ValueError, "forbidden path pattern"):
-            compute(request, baseline_map=CURRENT_PROJECTION)
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo") for r in closure["residue"]))
 
     def test_g4_control_char_rejected(self):
-        """Control characters in path must be rejected."""
+        """Control characters in path must be rejected (blocking residue)."""
         request = self.request(changed_paths=["docs/file\x00.md"])
-        with self.assertRaisesRegex(ValueError, "control character"):
-            compute(request, baseline_map=CURRENT_PROJECTION)
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] in ("non_canonical_path", "path_outside_repo") for r in closure["residue"]))
 
     def test_g4_suffix_injection_produces_unmapped(self):
         """Suffix injection (e.g. 'ITERATION.md.bak') must produce unmapped_path residue, not silently match."""
@@ -285,6 +292,55 @@ class ChangePropagationTests(unittest.TestCase):
         closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
         self.assertFalse(closure["closure_complete"])
         self.assertIn("unmapped_path", {item["type"] for item in closure["residue"]})
+
+
+    def test_g4_duplicate_slash_rejected(self):
+        """Non-canonical duplicate slashes must be rejected (not silently folded)."""
+        request = self.request(changed_paths=["docs//file.md"])
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] == "non_canonical_path" for r in closure["residue"]))
+
+    def test_g4_trailing_slash_rejected(self):
+        """Trailing slash (directory-as-path) must be rejected."""
+        request = self.request(changed_paths=["docs/publication/"])
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] == "non_canonical_path" for r in closure["residue"]))
+
+    def test_g4_dot_segment_rejected(self):
+        """'.' segments must be rejected (non-canonical)."""
+        request = self.request(changed_paths=["docs/./file.md"])
+        closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] == "non_canonical_path" for r in closure["residue"]))
+
+    def test_g4_symlink_escape_rejected(self):
+        """A symlink under the repo whose realpath escapes root must be rejected."""
+        import os
+        import tempfile
+        from pathlib import Path
+        # Create a temp dir OUTSIDE the repo, symlink INTO the repo pointing at it
+        outside = Path(tempfile.mkdtemp(prefix="q32f2-outside-"))
+        link = ROOT / "_q32f2_symlink_test"
+        try:
+            if link.exists() or link.is_symlink():
+                link.unlink()
+            os.symlink(outside, link)
+            request = self.request(changed_paths=["_q32f2_symlink_test/secret.md"])
+            closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
+            self.assertFalse(closure["closure_complete"])
+            self.assertTrue(any(r["type"] == "path_outside_repo" for r in closure["residue"]))
+        finally:
+            if link.is_symlink() or link.exists():
+                link.unlink()
+            outside.rmdir()
+
+    def test_g4_tracked_symlink_escape_empty(self):
+        """The current repo must have no tracked symlinks that escape the root."""
+        from tools.operations.compute_change_propagation import detect_tracked_symlink_escapes
+        escapes = detect_tracked_symlink_escapes(revision="HEAD")
+        self.assertEqual(escapes, [])
 
 
 if __name__ == "__main__":
