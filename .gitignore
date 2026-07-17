@@ -16,3 +16,4 @@ __pycache__/
 htmlcov/
 .tmp-dl/
 .tmp-pages/
+.tmp-dl-artifact/

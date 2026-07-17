@@ -69,5 +69,15 @@
     "q29r_modified": false,
     "restricted_source_published": false,
     "live_external_truth_locally_verified": false
+  },
+  "exact_head": "ad50d2bcdc63463b1a18c7180eca4eb454ecc66f",
+  "ci_runs": {
+    "foundation": 29576456143,
+    "function_os": 29576477534,
+    "pages": 29576482344
+  },
+  "pages_artifacts": {
+    "github_artifact_archive_digest": "a2fe4b157f72c043a11ab5a8a34013a68c525228f1cb1a17403d63ff4d861564",
+    "pages_payload_tar_digest": "a2fe4b157f72c043a11ab5a8a34013a68c525228f1cb1a17403d63ff4d861564"
   }
 }
