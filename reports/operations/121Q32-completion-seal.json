@@ -85,7 +85,7 @@
     "function_os": 29571627521,
     "pages": 29571645878
   },
-  "exact_head": "5194a94edd88c213e04cc20a7f75ff1c0689d722",
-  "seal_binding_head": "5194a94edd88c213e04cc20a7f75ff1c0689d722",
-  "head_metadata_note": "exact_head (fb870672) is the CI-verified HEAD with all three workflows green. seal_binding_head is the same commit. This is the final seal update — further metadata commits will intentionally not be re-bound to avoid infinite loops."
+  "exact_head": "dcc3f636cd8a0f674cf1fec9f963aaaa2df042a7",
+  "seal_binding_head": "dcc3f636cd8a0f674cf1fec9f963aaaa2df042a7",
+  "head_metadata_note": "Re-bound by Task#18 restoration. Seal updated after restoring working directory from 117d lineage."
 }
