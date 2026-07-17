@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "generated-output-authority.schema.json",
+  "title": "Generated Output Authority",
+  "description": "Schema for the canonical machine-readable authority declaring all generated outputs in PR diff coverage",
+  "type": "object",
+  "required": ["schema_version", "task_id", "description", "generated_outputs"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Schema version of this authority document"
+    },
+    "task_id": {
+      "type": "string",
+      "description": "Task identifier this authority belongs to"
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable description of this authority"
+    },
+    "generated_outputs": {
+      "type": "array",
+      "description": "All generated outputs covered by this PR diff",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "producer_id",
+          "producer_command",
+          "input_authorities",
+          "output_type",
+          "freshness_mode",
+          "coverage_class",
+          "justification"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "Repository-relative path of the generated output",
+            "pattern": "^[^/]"
+          },
+          "producer_id": {
+            "type": "string",
+            "description": "Unique identifier of the producer tool or function"
+          },
+          "producer_command": {
+            "type": "string",
+            "description": "Command to regenerate this output"
+          },
+          "input_authorities": {
+            "type": "array",
+            "items": {"type": "string"},
+            "minItems": 1,
+            "uniqueItems": true,
+            "description": "Canonical input files this output is deterministically derived from"
+          },
+          "output_type": {
+            "type": "string",
+            "enum": [
+              "materialized_projection",
+              "residue",
+              "seal_bound_derivative",
+              "report",
+              "deployment_artifact"
+            ],
+            "description": "Classification of the output type"
+          },
+          "freshness_mode": {
+            "type": "string",
+            "enum": ["byte_level_recompute", "timestamp_based", "semantic_diff"],
+            "description": "How freshness is verified"
+          },
+          "coverage_class": {
+            "type": "string",
+            "enum": ["generated_output"],
+            "description": "Diff coverage classification"
+          },
+          "justification": {
+            "type": "string",
+            "description": "Why this path is a genuine generated output"
+          }
+        }
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

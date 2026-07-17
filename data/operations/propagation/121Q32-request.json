@@ -6,46 +6,54 @@
   "changed_paths": [
     ".github/workflows/foundation-validation.yml",
     ".github/workflows/pages.yml",
+    ".gitignore",
+    "AI-HANDOFF.md",
+    "AI-START-HERE.md",
+    "ARCHITECTURE.md",
+    "CHANGELOG.md",
     "ITERATION.md",
     "README.md",
-    "ARCHITECTURE.md",
     "SUMMARY.md",
-    "AI-START-HERE.md",
-    "AI-HANDOFF.md",
-    "llms.txt",
-    "CHANGELOG.md",
-    "docs/project-current-state.md",
-    "docs/USAGE.md",
-    "docs/ai-assistant-usage-reference.md",
-    "docs/VERSIONING.md",
-    "docs/architecture/multiscale-causal-fabric.md",
-    "docs/architecture/interactive-system-map.md",
-    "docs/architecture/typed-change-propagation.md",
-    "data/operations/project-components.json",
-    "data/operations/change-propagation-topology.json",
-    "data/operations/propagation/121Q32-request.json",
-    "data/operations/iterations/121Q32.json",
     "data/architecture/interactive-system-map-layout.json",
     "data/architecture/interactive-system-map.json",
+    "data/operations/change-propagation-topology.json",
+    "data/operations/generated-output-authority.json",
+    "data/operations/iterations/121Q32.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q32-request.json",
+    "docs/USAGE.md",
+    "docs/VERSIONING.md",
+    "docs/ai-assistant-usage-reference.md",
+    "docs/architecture/interactive-system-map.md",
+    "docs/architecture/multiscale-causal-fabric.md",
+    "docs/architecture/typed-change-propagation.md",
+    "docs/project-current-state.md",
+    "llms.txt",
     "pages/generated/ignition-system-map.svg",
-    "schemas/operations/project-components.schema.json",
-    "schemas/operations/change-propagation-topology.schema.json",
-    "schemas/operations/change-propagation-request.schema.json",
-    "schemas/operations/change-propagation-closure.schema.json",
-    "schemas/operations/iteration-manifest.schema.json",
+    "reports/operations/121Q32-completion-seal.json",
+    "reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md",
     "schemas/architecture/interactive-system-map-layout.schema.json",
-    "tools/operations/compute_change_propagation.py",
-    "tools/generate_interactive_system_map.py",
-    "tools/validate_iteration_sync.py",
-    "tools/validate_human_front_door.py",
-    "tests/test_change_propagation.py",
-    "tests/test_iteration_sync.py",
-    "tests/test_human_front_door.py",
-    "templates/operations/task-command-template.md",
+    "schemas/operations/change-propagation-closure.schema.json",
+    "schemas/operations/change-propagation-request.schema.json",
+    "schemas/operations/change-propagation-topology.schema.json",
+    "schemas/operations/generated-output-authority.schema.json",
+    "schemas/operations/iteration-manifest.schema.json",
+    "schemas/operations/project-components.schema.json",
     "templates/operations/execution-result-template.md",
     "templates/operations/independent-review-template.md",
-    "reports/operations/121Q32-completion-seal.json",
-    "reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md"
+    "templates/operations/task-command-template.md",
+    "tests/fixtures/persisted-release-result.json",
+    "tests/fixtures/persisted-release.json",
+    "tests/fixtures/persisted-release.md",
+    "tests/test_change_propagation.py",
+    "tests/test_human_front_door.py",
+    "tests/test_iteration_sync.py",
+    "tests/test_pages_deploy_gate.py",
+    "tools/generate_interactive_system_map.py",
+    "tools/operations/compute_change_propagation.py",
+    "tools/operations/validate_generated_output_authority.py",
+    "tools/validate_human_front_door.py",
+    "tools/validate_iteration_sync.py"
   ],
   "explicit_seed_components": [
     "iteration",
@@ -258,12 +266,48 @@
   "system_map_decision": {
     "item_id": "interactive_system_map",
     "decision": "CHANGE",
-    "reason": "The authoritative source and typed relation metadata change while the compatible 9/41/35 topology remains."
+    "reason": "The authoritative source and typed relation metadata change while the compatible 9/41/37 topology remains (two new boundary edges added)."
   },
   "explicit_seed_evidence": {
+    "project_component_registry": {
+      "reason": "Canonical component identity registry newly introduced as Draft candidate",
+      "authority": "data/operations/project-components.json",
+      "source_path": "data/operations/project-components.json"
+    },
+    "propagation_topology": {
+      "reason": "Typed declared propagation relations newly introduced as Draft candidate",
+      "authority": "data/operations/change-propagation-topology.json",
+      "source_path": "data/operations/change-propagation-topology.json"
+    },
+    "propagation_calculator": {
+      "reason": "Deterministic fixpoint calculator newly introduced as Draft candidate",
+      "authority": "tools/operations/compute_change_propagation.py",
+      "source_path": "tools/operations/compute_change_propagation.py"
+    },
+    "iteration_manifest_contract": {
+      "reason": "Manifest contract binding seeds, paths, decisions, map impact, residue and hash",
+      "authority": "schemas/operations/iteration-manifest.schema.json",
+      "source_path": "schemas/operations/iteration-manifest.schema.json"
+    },
+    "system_map_projection": {
+      "reason": "Materialized system map becomes deterministic registry/topology/layout projection",
+      "authority": "data/architecture/interactive-system-map.json",
+      "source_path": "data/architecture/interactive-system-map.json"
+    },
+    "system_map_layout": {
+      "reason": "Pure display geometry and order split from substantive component truth",
+      "authority": "data/architecture/interactive-system-map-layout.json",
+      "source_path": "data/architecture/interactive-system-map-layout.json"
+    },
+    "iteration": {
+      "reason": "Method proposes compatible version 1.2.0 fields and computation",
+      "authority": "ITERATION.md",
+      "source_path": "ITERATION.md"
+    },
     "sync": {
-      "reason": "Synchronization surface definitions are structurally coupled to the propagation topology changes in this iteration, even though the surface JSON file itself was not modified.",
-      "authority": "data/operations/change-propagation-topology.json"
+      "reason": "Synchronization obligations jointly computed with component propagation",
+      "authority": "data/operations/synchronization-surfaces.json",
+      "source_path": "data/operations/synchronization-surfaces.json"
     }
   }
 }

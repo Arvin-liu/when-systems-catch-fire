@@ -49,7 +49,7 @@
     }
   ],
   "propagation_closure": {
-    "closure_hash": "b4b885066b51bf700d89763b0ea414c14791d505a144a887ee22861310ac058a",
+    "closure_hash": "3d702489aa698747c75b24601530ec73f3c8ced770491e0466f687c02f073414",
     "closure_path": "data/operations/propagation/121Q32-closure.json",
     "complete": true,
     "unresolved_residue": []
@@ -59,7 +59,7 @@
     "candidate_version": "0.2.0",
     "groups": 9,
     "nodes": 41,
-    "edges": 35,
+    "edges": 37,
     "l7_added": false
   },
   "boundaries": {
@@ -69,5 +69,23 @@
     "q29r_modified": false,
     "restricted_source_published": false,
     "live_external_truth_locally_verified": false
-  }
+  },
+  "dual_digest": {
+    "github_artifact_archive_digest": "sha256:f1dfaf2ac0d002d24916e39957f950d8378ed8c1198365754512b97acf8e6cc8",
+    "pages_payload_tar_digest": "sha256:2fbc9a1116c4682c17113b4d989012aea0c59b4da182c3164e2e7fea80e452ab",
+    "distinction": "github_artifact_archive_digest is the SHA-256 of the GitHub artifact archive; pages_payload_tar_digest is the SHA-256 of the Pages payload tar. They differ because the Pages payload is a curated subset rendered for web deployment."
+  },
+  "propagation_closure_hash": "3d702489aa698747c75b24601530ec73f3c8ced770491e0466f687c02f073414",
+  "pages_artifacts": {
+    "github_artifact_archive_digest": "sha256:a71ac433c4295d0195f6f7e5618db3ce03d29b472ecdbd669e39b1cce5e10131",
+    "pages_payload_tar_digest": "sha256:4d55a77ef7e5b1ae8f0ecc239c85662cbca28c89b03cbd70395361dada1f9c47"
+  },
+  "ci_runs": {
+    "foundation": 29571685813,
+    "function_os": 29571627521,
+    "pages": 29571645878
+  },
+  "exact_head": "fb87067258fccde21f0196caf78b06baa98dd156",
+  "seal_binding_head": "fb87067258fccde21f0196caf78b06baa98dd156",
+  "head_metadata_note": "exact_head (fb870672) is the CI-verified HEAD with all three workflows green. seal_binding_head is the same commit. This is the final seal update — further metadata commits will intentionally not be re-bound to avoid infinite loops."
 }

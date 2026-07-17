@@ -14,6 +14,12 @@ on:
       - .github/workflows/pages.yml
       - pages/**
   workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Git ref to build the Pages artifact from (candidate exact HEAD). Production deploy still only runs on main.'
+        required: false
+        default: ''
+        type: string
 
 permissions:
   contents: read
@@ -29,6 +35,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref || github.ref }}
+      - name: Record exact-head provenance
+        id: provenance
+        shell: bash
+        run: |
+          set -euo pipefail
+          BUILT_SHA=$(git rev-parse HEAD)
+          echo "built_sha=$BUILT_SHA" >> "$GITHUB_OUTPUT"
+          echo "Built Pages artifact from sha=$BUILT_SHA"
       - uses: actions/configure-pages@v5
       - name: Build README reading site
         shell: bash
@@ -85,7 +101,10 @@ jobs:
           path: _site
 
   deploy:
-    if: github.ref == 'refs/heads/main'
+    # PRODUCTION DEPLOY is permitted ONLY for a real `push` to `main`.
+    # workflow_dispatch (whether from main, a candidate branch, or with a
+    # candidate ref) must never deploy; it can only build a candidate artifact.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     environment:

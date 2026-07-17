@@ -26,6 +26,8 @@ on:
       - 'tests/test_iteration_sync.py'
       - 'tools/validate_human_front_door.py'
       - 'tests/test_human_front_door.py'
+      - 'tests/test_pages_deploy_gate.py'
+      - '.github/workflows/pages.yml'
       - 'docs/ai-assistant-usage-reference.md'
       - 'ITERATION.md'
       - 'README.md'
@@ -62,6 +64,8 @@ on:
       - 'tests/test_iteration_sync.py'
       - 'tools/validate_human_front_door.py'
       - 'tests/test_human_front_door.py'
+      - 'tests/test_pages_deploy_gate.py'
+      - '.github/workflows/pages.yml'
       - 'docs/ai-assistant-usage-reference.md'
       - 'ITERATION.md'
       - 'README.md'
@@ -119,3 +123,4 @@ jobs:
       - run: python3 -m unittest tests.test_iteration_sync -v
       - run: python3 -m unittest tests.test_human_front_door -v
       - run: python3 -m unittest tests.test_change_propagation -v
+      - run: python3 -m unittest tests.test_pages_deploy_gate -v
