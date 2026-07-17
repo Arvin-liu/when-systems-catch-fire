@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/rights/publication-gate.schema.json",
+  "title": "LAB-Q33 Publication Gate Decision",
+  "type": "object",
+  "required": [
+    "decision_id",
+    "source_id",
+    "gate_result",
+    "checked_registries",
+    "timestamp"
+  ],
+  "properties": {
+    "decision_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "gate_result": {
+      "type": "string",
+      "enum": [
+        "allowed",
+        "blocked",
+        "conditional",
+        "escalated"
+      ]
+    },
+    "checked_registries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risk_projection": {
+      "type": "string"
+    },
+    "content_excluded": {
+      "type": "boolean"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

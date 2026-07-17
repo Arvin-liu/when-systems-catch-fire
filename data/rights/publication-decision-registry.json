@@ -1,0 +1,20 @@
+{
+  "registry_type": "publication_decision",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "pub_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "assessed",
+      "title": "Repository content publication gate",
+      "source_type": "project_generated",
+      "publication_allowed": true,
+      "content_in_repo": true,
+      "risk_level": "low",
+      "conditions": [
+        "All content must be project-generated or public domain metadata"
+      ],
+      "claim_ceiling": "conservative_risk_projection"
+    }
+  ]
+}

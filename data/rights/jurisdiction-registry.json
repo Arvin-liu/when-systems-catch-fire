@@ -1,0 +1,24 @@
+{
+  "registry_type": "jurisdiction",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "jur_cn",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "assessed",
+      "title": "People's Republic of China",
+      "jurisdiction": "CN",
+      "notes": "Primary jurisdiction for project author. Conservative risk projection only.",
+      "claim_ceiling": "conservative_risk_projection"
+    },
+    {
+      "id": "jur_us",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "assessed",
+      "title": "United States",
+      "jurisdiction": "US",
+      "notes": "GitHub-hosted, US copyright law may apply to hosting.",
+      "claim_ceiling": "conservative_risk_projection"
+    }
+  ]
+}

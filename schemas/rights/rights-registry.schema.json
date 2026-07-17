@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/rights/rights-registry.schema.json",
+  "title": "LAB-Q33 Rights Registry",
+  "description": "LAB / SPECULATIVE / NON-AUTHORITATIVE / NOT CURRENT / NOT MERGE-AUTHORIZED",
+  "type": "object",
+  "required": [
+    "registry_type",
+    "version",
+    "entries"
+  ],
+  "properties": {
+    "registry_type": {
+      "type": "string",
+      "enum": [
+        "jurisdiction",
+        "legal_rule",
+        "source_rights",
+        "derivation_ledger",
+        "publication_decision",
+        "rights_risk_assessment",
+        "third_party_notice",
+        "historical_exposure",
+        "takedown_response",
+        "contributor_rights_attestation"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entry"
+      },
+      "minItems": 0
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "created_at",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending_review",
+            "assessed",
+            "risk_projected",
+            "blocked",
+            "allowed_with_conditions",
+            "escalated"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "source_type": {
+          "type": "string",
+          "enum": [
+            "academic_paper",
+            "book",
+            "course_material",
+            "blog_post",
+            "open_source_code",
+            "public_domain",
+            "proprietary",
+            "synthetic",
+            "project_generated",
+            "unknown"
+          ]
+        },
+        "jurisdiction": {
+          "type": "string"
+        },
+        "license_type": {
+          "type": "string"
+        },
+        "risk_level": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical",
+            "unknown"
+          ]
+        },
+        "publication_allowed": {
+          "type": "boolean"
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "derivation_chain": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source_id": {
+                "type": "string"
+              },
+              "relation": {
+                "type": "string"
+              },
+              "transform_description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "content_in_repo": {
+          "type": "boolean",
+          "description": "Must be false for external materials. Only metadata allowed."
+        },
+        "notes": {
+          "type": "string"
+        },
+        "claim_ceiling": {
+          "type": "string",
+          "enum": [
+            "conservative_risk_projection",
+            "metadata_only",
+            "no_legal_advice",
+            "no_license_grant"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}
