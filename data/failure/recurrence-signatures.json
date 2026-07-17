@@ -1,0 +1,19 @@
+{
+  "registry_type": "recurrence_signature",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "rec_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "monitored",
+      "title": "Consistency drift pattern",
+      "failure_ids": [
+        "fail_007",
+        "fail_008"
+      ],
+      "pattern": "Multiple files tracking the same value drift independently",
+      "detection_method": "triple_hash_sync_validator",
+      "claim_ceiling": "pattern_identification_only"
+    }
+  ]
+}

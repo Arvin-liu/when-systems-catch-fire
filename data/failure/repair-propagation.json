@@ -1,0 +1,20 @@
+{
+  "registry_type": "repair_propagation",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "rep_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "complete",
+      "title": "F11 manifest/seal consistency repair",
+      "failure_ids": [
+        "fail_007",
+        "fail_008",
+        "fail_006"
+      ],
+      "repair_approach": "code + schema + process",
+      "overfitting_risk": "low",
+      "claim_ceiling": "repair_record_only"
+    }
+  ]
+}
