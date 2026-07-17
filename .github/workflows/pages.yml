@@ -101,7 +101,10 @@ jobs:
           path: _site
 
   deploy:
-    if: github.ref == 'refs/heads/main'
+    # PRODUCTION DEPLOY is permitted ONLY for a real `push` to `main`.
+    # workflow_dispatch (whether from main, a candidate branch, or with a
+    # candidate ref) must never deploy; it can only build a candidate artifact.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     environment:

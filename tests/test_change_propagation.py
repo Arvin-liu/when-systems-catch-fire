@@ -445,6 +445,66 @@ class ChangePropagationTests(unittest.TestCase):
         self.assertTrue(any(r["type"] in ("tracked_symlink_scan_failed", "tracked_symlink_escape")
                             for r in closure["residue"]))
 
+    # ── Q32F4: invalid head_ref must be structured residue, not a crash ──────
+    def test_q32f4_invalid_head_ref_is_blocking_residue(self):
+        """An unresolvable head_ref must yield tracked_symlink_scan_failed residue,
+        not a process exception or a silent pass."""
+        request = self.request()
+        closure, _ = compute(request, head_ref="not-a-real-ref")
+        self.assertFalse(closure["closure_complete"])
+        matches = [r for r in closure["residue"] if r["type"] == "tracked_symlink_scan_failed"]
+        self.assertTrue(matches, f"expected tracked_symlink_scan_failed, got {closure['residue']}")
+        self.assertTrue(any(r.get("revision") == "not-a-real-ref" for r in matches))
+
+    def test_q32f4_invalid_base_valid_head_produces_residue(self):
+        request = self.request(base_identity="deadbeef00000000000000000000000000000000")
+        closure, _ = compute(request, head_ref="HEAD")
+        self.assertFalse(closure["closure_complete"])
+        self.assertTrue(any(r["type"] == "tracked_symlink_scan_failed" for r in closure["residue"]))
+
+    def test_q32f4_invalid_base_and_invalid_head_both_auditable(self):
+        """When both base and head are invalid, BOTH must be recorded (no silent exit
+        after the first)."""
+        request = self.request(base_identity="deadbeef00000000000000000000000000000000")
+        closure, _ = compute(request, head_ref="also-not-a-ref")
+        self.assertFalse(closure["closure_complete"])
+        failed = [r for r in closure["residue"] if r["type"] == "tracked_symlink_scan_failed"]
+        revisions = {r.get("revision") for r in failed}
+        self.assertIn("also-not-a-ref", revisions)
+        self.assertIn("deadbeef00000000000000000000000000000000", revisions)
+
+    def test_q32f4_base_only_external_symlink_deleted_in_head_detected(self):
+        """Real two-commit history: base commit has a tracked external symlink,
+        head commit deletes it. Scanning base+head must still flag the base
+        escape (history exposure), annotated with the base revision."""
+        import shutil
+        repo = Path(tempfile.mkdtemp(prefix="q32f4-basehist-"))
+        outside = Path(tempfile.mkdtemp(prefix="q32f4-outside-"))
+        try:
+            _git(repo, "init", "-q")
+            _git(repo, "config", "user.email", "test@test")
+            _git(repo, "config", "user.name", "test")
+            (repo / "README.md").write_text("x")
+            # BASE commit: tracked mode-120000 symlink escaping the repo root
+            (repo / "evil_symlink").symlink_to(outside)
+            _git(repo, "add", "-A")
+            _git(repo, "commit", "-qm", "base with escape symlink")
+            base_sha = _git(repo, "rev-parse", "HEAD")
+            # HEAD commit: delete the dangerous symlink
+            (repo / "evil_symlink").unlink()
+            _git(repo, "add", "-A")
+            _git(repo, "commit", "-qm", "remove escape symlink")
+            head_sha = _git(repo, "rev-parse", "HEAD")
+            # HEAD is clean...
+            head_escapes = detect_tracked_symlink_escapes(repo_root=repo, revision=head_sha)
+            self.assertNotIn("evil_symlink", head_escapes)
+            # ...but the BASE history still exposes the escape.
+            base_escapes = detect_tracked_symlink_escapes(repo_root=repo, revision=base_sha)
+            self.assertIn("evil_symlink", base_escapes)
+        finally:
+            shutil.rmtree(repo, ignore_errors=True)
+            shutil.rmtree(outside, ignore_errors=True)
+
 
 if __name__ == "__main__":
     unittest.main()

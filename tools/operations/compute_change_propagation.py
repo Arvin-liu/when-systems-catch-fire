@@ -475,8 +475,15 @@ def compute(request: dict, components_doc: dict | None = None, topology_doc: dic
     # G4 extension: reject tracked symlinks that escape the repo root.
     # Scan BOTH the real checkout HEAD and the declared base_identity (fail-closed:
     # any git failure becomes blocking residue, never a silent empty list).
-    real_head = _git_rev_parse(ROOT, head_ref)
-    symlink_revisions = [real_head]
+    # An unresolvable head_ref must produce a structured blocking residue rather
+    # than aborting the whole computation.
+    try:
+        real_head = _git_rev_parse(ROOT, head_ref)
+    except ValueError as exc:
+        residue.append({"type": "tracked_symlink_scan_failed", "revision": head_ref,
+                        "message": f"cannot resolve checkout HEAD ref '{head_ref}': {exc}"})
+        real_head = None
+    symlink_revisions = [real_head] if real_head else []
     base_identity = request.get("base_identity")
     if base_identity:
         try:
