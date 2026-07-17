@@ -476,7 +476,7 @@ def compute(request: dict, components_doc: dict | None = None, topology_doc: dic
         validate_relation_authority(relation)
 
     # G2 hardening: validate overlap declarations reference real components and resolve
-    allowed_overlaps = topology_doc.get("allowed_path_overlaps", [])
+    allowed_overlaps = components_doc.get("allowed_path_overlaps", [])
     residue.extend(validate_overlap_declarations(components, allowed_overlaps))
 
     # G4: Normalize and validate all changed paths (strict canonical form)
@@ -539,7 +539,7 @@ def compute(request: dict, components_doc: dict | None = None, topology_doc: dic
 
     # G2: Resolve paths with overlap detection
     path_seeds, path_residue = resolve_paths(normalized_paths, components,
-                                              allowed_overlaps=topology_doc.get("allowed_path_overlaps", []))
+                                              allowed_overlaps=components_doc.get("allowed_path_overlaps", []))
     path_seeds_set = set(path_seeds)
     residue.extend(path_residue)
 

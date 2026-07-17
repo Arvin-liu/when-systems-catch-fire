@@ -789,6 +789,11 @@ class ChangePropagationTests(unittest.TestCase):
             "tests/test_change_propagation.py",
             "data/operations/propagation/",
             ".github/workflows/foundation-validation.yml",
+            "tests/fixtures/",
+            "data/operations/generated-output-authority.json",
+            "schemas/operations/generated-output-authority.schema.json",
+            "tools/operations/validate_generated_output_authority.py",
+            ".gitignore",
         ]
         request["changed_paths"] = [p for p in request["changed_paths"]
                                      if not any(p.startswith(pat) or p == pat for pat in calc_patterns)]
@@ -822,6 +827,11 @@ class ChangePropagationTests(unittest.TestCase):
             "tests/test_change_propagation.py",
             "data/operations/propagation/",
             ".github/workflows/foundation-validation.yml",
+            "tests/fixtures/",
+            "data/operations/generated-output-authority.json",
+            "schemas/operations/generated-output-authority.schema.json",
+            "tools/operations/validate_generated_output_authority.py",
+            ".gitignore",
         ]
         request["changed_paths"] = [p for p in request["changed_paths"]
                                      if not any(p.startswith(pat) or p == pat for pat in calc_patterns)]
