@@ -85,7 +85,10 @@
     "function_os": 29571627521,
     "pages": 29571645878
   },
-  "exact_head": "dcc3f636cd8a0f674cf1fec9f963aaaa2df042a7",
-  "seal_binding_head": "dcc3f636cd8a0f674cf1fec9f963aaaa2df042a7",
-  "head_metadata_note": "Re-bound by Task#18 restoration. Seal updated after restoring working directory from 117d lineage."
+  "exact_head": "76cb7f495502743921c5ffc021a0ce48cef74c7b",
+  "seal_binding_head": "76cb7f495502743921c5ffc021a0ce48cef74c7b",
+  "head_metadata_note": "Re-bound by F10 after security asset restoration. Seal binds to CI-verified parent HEAD (76cb7f49), not the seal commit itself.",
+  "edges": 37,
+  "changed_paths_count": 54,
+  "relations": 50
 }
