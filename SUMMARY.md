@@ -44,7 +44,7 @@ L6 只能引用 L0-L5，不能反向制造数学真实性、逻辑有效性或�
 
 ### L6 公共表达与反馈能力
 
-- [之元写作法](./docs/publication/zhiyuan-writing-method.md) — 当前 `0.3.0` 与 `0.4.0` Draft 双来源素材池候选；同源与点火增量复用都不增加真值层。
+- [之元写作法](./docs/publication/zhiyuan-writing-method.md) — 当前 `0.4.0` 双来源素材池；`0.3.0` 为历史版本，同源与点火增量复用都不增加真值层。
 - [之元写作法成果](./docs/publication/zhiyuan-writing-showcase.md) — 当前人类成果总索引；每项回链作品、案例来源、点火分析与方法版本。
 - [《当一支军队开始相信自己的背影》](./docs/publication/works/when-an-army-believes-its-own-back.md) — 第一项正式成果正文。
 - [完整可点击系统图](./docs/architecture/interactive-system-map.md) — 单一 spec、生成 SVG、Pages 交互版与 GitHub README 预览的维护入口。

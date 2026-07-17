@@ -2,11 +2,11 @@
 
 English: **Zhiyuan Writing Method**
 
-Version: `0.4.0` candidate; current merged baseline remains `0.3.0` until independent acceptance and merge.
+Version: `0.4.0` current; `0.3.0` remains a historical merged version.
 
-Status: `CANDIDATE_0_4_0_PENDING_INDEPENDENT_REVIEW / CURRENT_BASE_0_3_0`
+Status: `CURRENT_MERGED_L6_CAPABILITY`
 
-Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. The 0.4.0 candidate extends the writing-material boundary without adding an architecture or truth layer and cannot raise any L0-L5 claim.
+Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.4.0 extends the writing-material boundary without adding an architecture or truth layer and cannot raise any L0-L5 claim.
 
 ## 命名与内部定义
 
@@ -24,7 +24,7 @@ Operational location: L6 interpretation / application / publication. Generative 
 
 `0.3.0` 修复 0.2.0 仍把方法写成 L6 外接出版工具的问题：之元写作法与点火是维护者声明的同源认知运动在不同约束下形成的候选投影。之元写作法操作上仍位于 L6，却同时承担公共表达和反馈返回接口。review `4713833187`、旧 HEAD 和追加提交保留完整修订历史。
 
-`0.4.0` 候选修复“写作素材默认等于外部原始材料”的窄化：写作素材池至少同时接收外部输入源和点火增量输出源。点火对材料生成的 claim、argument、mechanism、map、gap、residue、Q12—Q14 输出、MCF／PSD／ARN 投影、分析报告与 provenance-gated 返回项，可以在保存来源链、版本、对象类型、claim ceiling 和不可映射残余后继续成为写作材料。复用点火产物不把派生结构伪装成新的独立证据，也不使 0.3.0 在 Draft 阶段失去 Current 地位。
+`0.4.0` 修复“写作素材默认等于外部原始材料”的窄化：写作素材池至少同时接收外部输入源和点火增量输出源。点火对材料生成的 claim、argument、mechanism、map、gap、residue、Q12—Q14 输出、MCF／PSD／ARN 投影、分析报告与 provenance-gated 返回项，可以在保存来源链、版本、对象类型、claim ceiling 和不可映射残余后继续成为写作材料。复用点火产物不把派生结构伪装成新的独立证据；0.3.0 保留为历史已合并版本。
 
 ## 与点火整体的同源认知关系
 
@@ -98,7 +98,7 @@ Operational location: L6 interpretation / application / publication. Generative 
 
 ## 双来源写作素材池
 
-“写作素材来源”在这里描述生成与审计角色，不等于 L0 中“外部证据来源”的专门含义。0.4.0 候选至少区分两类可进入写作过程的材料：
+“写作素材来源”在这里描述生成与审计角色，不等于 L0 中“外部证据来源”的专门含义。0.4.0 至少区分两类可进入写作过程的材料：
 
 ### 1. 外部输入源
 

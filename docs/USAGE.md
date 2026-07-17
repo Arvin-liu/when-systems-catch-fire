@@ -20,7 +20,7 @@
 
 ### L6 当前公共表达与反馈接口：之元写作法
 
-之元写作法 `0.3.0` 是当前 L6 接口；[`0.4.0` Draft 候选方法正文](./publication/zhiyuan-writing-method.md)与[后台规格](../templates/publication/zhiyuan-writing-spec.md)新增双来源素材池。先把材料标为 `external_input` 或 `ignition_increment`：外部输入保存作者、时间、渠道、版权与核验状态；点火增量保存 canonical 路径／ID、生成任务、版本、claim ceiling、gap／residue 及其原始来源回链。点火分析、Q12—Q14、MCF／PSD／ARN 投影和 provenance-gated 返回项都可继续写作，但不能被重算为独立外部证据。
+之元写作法 [`0.4.0`](./publication/zhiyuan-writing-method.md) 是当前 L6 接口，[后台规格](../templates/publication/zhiyuan-writing-spec.md)使用双来源素材池；`0.3.0` 保留为历史已合并版本。先把材料标为 `external_input` 或 `ignition_increment`：外部输入保存作者、时间、渠道、版权与核验状态；点火增量保存 canonical 路径／ID、生成任务、版本、claim ceiling、gap／residue 及其原始来源回链。点火分析、Q12—Q14、MCF／PSD／ARN 投影和 provenance-gated 返回项都可继续写作，但不能被重算为独立外部证据。
 
 需要查看当前已接受应用时，进入[之元写作法成果索引](./publication/zhiyuan-writing-showcase.md)。每项成果必须同时回链正式作品、起始案例来源记录、点火分析和方法版本；原始材料受版权或隐私限制时，只公开来源记录，不复制全文。README 只展示 registry 中最近三项，完整索引才是人类成果入口。
 

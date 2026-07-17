@@ -33,7 +33,7 @@ L0 记录来源事实；L1 声明主体、条件、量词、范围与失败边�
 
 ## 点火与之元写作法的同源认知投影及 L6 双向反馈
 
-121Q28T 已将之元写作法 0.3.0 收口为现有 L6 的当前公共表达与反馈能力。121Q31 的[0.4.0 Draft 候选](docs/publication/zhiyuan-writing-method.md)进一步把素材池分为外部输入源与点火增量输出源；它仍不增加 L7 或新真值层。其有边界关系表述仍是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`；此处结构对应 `candidate` 与方法 Draft 生命周期是不同维度。
+121Q31T 已将[之元写作法 0.4.0](docs/publication/zhiyuan-writing-method.md)收口为现有 L6 的当前公共表达与反馈能力，素材池分为外部输入源与点火增量输出源；0.3.0 保留为历史已合并版本。它仍不增加 L7 或新真值层。其有边界关系表述仍是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`；此处 `candidate` 指结构对应的认识论地位，不是方法生命周期。
 
 点火与之元写作法被维护者声明为同一认知运动在不同任务约束下形成的投影：点火把材料、残余、跨尺度联系、语义修订、行动后回照、历史保存和停止条件约束成可审计的来源、模型、验证和迭代；之元写作法让相近运动在公共语言中被读者经历，并把作品暴露的误解、遗漏主体、失败同构、伪压缩和现实反例送回项目。
 
@@ -42,7 +42,7 @@ flowchart LR
   EXT[外部输入源] --> POOL[双来源写作素材池]
   INC[点火增量输出源] --> POOL
   SRC[L0-L5 / Charter / current state] --> INC
-  POOL --> ZW[L6 之元写作法<br/>0.3 current / 0.4 Draft]
+  POOL --> ZW[L6 之元写作法<br/>0.4 current / 0.3 historical]
   ZW --> WORK[公共作品]
   WORK --> RESP[读者/现实反馈与作者修订]
   RESP --> PROV[来源与范围登记]
@@ -69,7 +69,7 @@ flowchart LR
 
 ### 完整可点击系统图
 
-121Q31 Draft 将[data/architecture/interactive-system-map.json](data/architecture/interactive-system-map.json)作为节点、分组、目标与关系的机器权威，经生成器产生单一 interactive SVG，并由 README 与 Pages 双表面投影。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达与反馈环，不增加架构层。节点与连线是导航和受约束信息流，不自动表示因果、严格同构或理论完整性。
+121Q31T 将[data/architecture/interactive-system-map.json](data/architecture/interactive-system-map.json)收口为当前节点、分组、目标与关系的机器权威，经生成器产生单一 interactive SVG，并由 README 与 Pages 双表面投影。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达与反馈环，不增加架构层。节点与连线是导航和受约束信息流，不自动表示因果、严格同构或理论完整性。
 
 ## 目录权威
 

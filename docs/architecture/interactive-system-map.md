@@ -1,12 +1,12 @@
 # 点火完整可点击系统图
 
-Status: `121Q31_DRAFT_CANDIDATE_INTERFACE`
+Status: `121Q31T_CURRENT_NAVIGATION_INTERFACE`
 
 本页说明点火完整系统图的权威来源、生成方式、双表面行为和解释边界。它是当前仓库的导航接口，不是第二份项目真相表、永久唯一总地图、因果图、严格同构证明或理论完备性证明。
 
 ## 打开交互版
 
-- [Pages 完整交互版](https://arvin-liu.github.io/when-systems-catch-fire/system-map.html)（Draft 阶段由精确 HEAD Pages artifact 验证；合并后才进入生产地址）
+- [Pages 完整交互版](https://arvin-liu.github.io/when-systems-catch-fire/system-map.html)
 - [生成的 SVG](../../pages/generated/ignition-system-map.svg)
 - [机器可读 spec](../../data/architecture/interactive-system-map.json)
 

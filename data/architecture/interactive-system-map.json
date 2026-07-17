@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "map_version": "0.1.0-candidate",
+  "map_version": "0.1.0",
   "title": "点火完整可点击系统图",
   "subtitle": "当前仓库结构、操作控制、公共表达与现实反馈的可维护导航接口；连线表示导航或受约束的信息流，不自动表示因果、同构或真值。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
@@ -59,7 +59,7 @@
     {"id": "external_input", "label": "外部输入源", "group": "writing", "target": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池", "description": "笔记、新闻、文章、案例、记忆、现实事件等可追溯外部材料。"},
     {"id": "ignition_increment", "label": "点火增量输出源", "group": "writing", "target": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池", "description": "claim、argument、mechanism、map、gap、residue、模型投影、分析与反馈返回项。"},
     {"id": "source_pool", "label": "写作素材池", "group": "writing", "target": "templates/publication/zhiyuan-writing-spec.md#双来源素材池", "description": "同时接收外部输入与已登记的点火增量输出，保存来源类型和 claim ceiling。"},
-    {"id": "zhiyuan_method", "label": "之元写作法 0.4.0 候选", "group": "writing", "target": "docs/publication/zhiyuan-writing-method.md", "description": "以双来源素材池驱动 L6 心智层级跃迁与公共表达。"},
+    {"id": "zhiyuan_method", "label": "之元写作法 0.4.0 Current", "group": "writing", "target": "docs/publication/zhiyuan-writing-method.md", "description": "以双来源素材池驱动 L6 心智层级跃迁与公共表达。"},
     {"id": "case_source", "label": "Case source provenance", "group": "writing", "target": "docs/publication/cases/jin-rise-case-source.md", "description": "起始案例的公开来源链与版权边界。"},
     {"id": "point_fire_analysis", "label": "Point-fire analysis", "group": "writing", "target": "reports/publication/jin-rise-point-fire-analysis.md", "description": "点火对案例生成的可追溯增量结构，也可进入写作素材池。"},
     {"id": "accepted_work", "label": "Accepted work", "group": "writing", "target": "docs/publication/works/when-an-army-believes-its-own-back.md", "description": "经审查接受且保持来源与证据边界的公共作品。"},

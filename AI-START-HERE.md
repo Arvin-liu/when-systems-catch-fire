@@ -14,11 +14,11 @@
 8. data/foundation/project-state.json 与 registry-manifest.json：机器状态。
 9. 当前任务命令与相关 source/schema。
 
-若任务涉及 L6 公共故事、文章或作品反馈，还应读取 `docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.3.0` 仍是当前能力；`0.4.0` 是 121Q31 Draft 候选，新增外部输入与点火增量输出双来源素材池。不得把点火派生产物重算为独立外部证据。
+若任务涉及 L6 公共故事、文章或作品反馈，还应读取 `docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.4.0` 是当前能力，使用外部输入与点火增量输出双来源素材池；`0.3.0` 保留为历史版本。不得把点火派生产物重算为独立外部证据。
 
 若任务涉及当前展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`，并沿每项记录回到作品、案例来源链、点火分析和方法版本。首页只投影最近三项，不是完整清单或真值权威。
 
-若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是 Draft 导航接口，不是 L7、事实证明或永久唯一总地图。
+若任务需要全项目导航，读取 `docs/architecture/interactive-system-map.md`、`data/architecture/interactive-system-map.json` 与生成 SVG。图是当前导航接口，不是 L7、事实证明或永久唯一总地图。
 
 ## 不得混淆
 
@@ -30,7 +30,7 @@
 - 12 元协议不是自动成立的数学公理；64 组合不是证明空间。
 - L6 解释和出版不能创造下层真实性。
 - 之元写作法的“层级跃迁”不是新架构层；横向换域、漂亮跳转、模板完成或读者共鸣都不能证明事实、因果、同构或文学质量。
-- 使用 0.4.0 候选时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。
+- 使用 0.4.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。
 - 效果推理只产生行动候选，不产生真值。
 - 机制判断只约束解释和 claim ceiling，不自动产生因果证明。
 - 注意力控制只判断循环是否有信息增量，不证明结论更深。
@@ -41,7 +41,7 @@
 - 关系网络的邻接、相似性、中心性、社群、检索和行为变化不能升级为真理、价值、因果或内部学习机制证明。
 - 迭代方法只能约束操作纪律，不能证明实质结论正确。
 - 当前迭代方法 1.1.0 把变更视为全项目状态转换。必须从 `data/operations/synchronization-surfaces.json` 推导人类 README、Pages、项目现状、人类 AI 指南、Agent/机器入口和版本记录的传播闭包，不能只凭 Agent 记忆挑文件。
-- `implementation_complete` 不等于 `project_synchronization_complete`。Draft Pages 只构建并检查产物；生产首页部署和实时读取是合并后的外部同步义务。
+- `implementation_complete` 不等于 `project_synchronization_complete`。生产首页部署和实时读取必须分别验证，不能由仓库状态替代。
 - 生命周期门禁按 registry 中每个表面的 `blocks` 计算。只阻塞 `current/closed` 的 post-merge Pages 不阻塞 pre-merge Accepted；但未从 main 部署并实时读取前，绝不能声称 Current/Closed。
 - 正向评价词必须绑定对象、判据、版本、证据和边界。
 - AI 输出不能作为唯一校准源；仓库工件、外部来源、CI、现实反馈、人类判断与独立审查要分开记录。

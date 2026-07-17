@@ -21,7 +21,7 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 ## 之元写作法成果
 
-[之元写作法](./docs/publication/zhiyuan-writing-method.md)是点火同源认知结构在 L6 公共语言中的可调用投影，不是外接的文风插件或写作谋生课程。`0.3.0` 仍是当前合并能力；`0.4.0` Draft 候选把素材池明确扩展为“外部输入源 + 点火增量输出源”，使 claim、argument、mechanism、map、gap、residue、分析报告、模型投影和 provenance-gated 返回项也能继续成为写作材料。派生产物不是新的独立证据，调用也不等于复制之元本人或证明方法普遍有效。
+[之元写作法](./docs/publication/zhiyuan-writing-method.md)是点火同源认知结构在 L6 公共语言中的可调用投影，不是外接的文风插件或写作谋生课程。`0.4.0` 是当前能力，素材池明确分为“外部输入源 + 点火增量输出源”，使 claim、argument、mechanism、map、gap、residue、分析报告、模型投影和 provenance-gated 返回项也能继续成为写作材料；`0.3.0` 保留为历史已合并版本。派生产物不是新的独立证据，调用也不等于复制之元本人或证明方法普遍有效。
 
 ### [《当一支军队开始相信自己的背影》](./docs/publication/works/when-an-army-believes-its-own-back.md)
 
@@ -149,7 +149,7 @@ llms.txt
 - [AI 交接契约](./AI-HANDOFF.md) — 记录跨会话交接时必须重新核验的权威链和红线。
 - [机器入口](./llms.txt) — 给 LLM 和自动化工具读取的简明项目边界与关键路径。
 - [Get 笔记协作流程](./docs/GET-BRAIN-WORKFLOW.md) — 说明 Get 笔记材料如何进入点火协作与审查流程。
-- [之元写作法](./docs/publication/zhiyuan-writing-method.md) — `0.3.0` 为当前 L6 能力；`0.4.0` Draft 候选新增“外部输入 + 点火增量输出”双来源素材池，不提高证据权限。
+- [之元写作法](./docs/publication/zhiyuan-writing-method.md) — 当前 `0.4.0` 使用“外部输入 + 点火增量输出”双来源素材池；`0.3.0` 为历史已合并版本，增量复用不提高证据权限。
 - [完整可点击系统图](./docs/architecture/interactive-system-map.md) — spec 驱动的项目总地图、节点入口、双表面行为与生成验证说明。
 - [版本规范](./docs/VERSIONING.md) — 说明版本、状态、兼容路径和发布边界怎样记录。
 
