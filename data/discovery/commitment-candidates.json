@@ -1,0 +1,22 @@
+{
+  "plane_type": "commitment_candidate",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "cc_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "plane": "commitment",
+      "status": "committed",
+      "title": "Q32 typed change propagation closure",
+      "description": "Validated and CI-tested propagation closure system.",
+      "source_type": "project_generated",
+      "epistemic_level": "tested_claim",
+      "gates": {
+        "rights_gate": "pass",
+        "epistemic_gate": "pass",
+        "action_authority_gate": "pass"
+      },
+      "claim_ceiling": "validated_typed_declared_relation_propagation_and_derived_map_candidate_only"
+    }
+  ]
+}

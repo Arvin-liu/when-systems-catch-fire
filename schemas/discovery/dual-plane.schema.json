@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/discovery/dual-plane.schema.json",
+  "title": "LAB-Q34 Discovery-Commitment Dual Plane",
+  "description": "LAB / SPECULATIVE / NON-AUTHORITATIVE / NOT CURRENT / NOT MERGE-AUTHORIZED",
+  "type": "object",
+  "required": [
+    "plane_type",
+    "version",
+    "entries"
+  ],
+  "properties": {
+    "plane_type": {
+      "type": "string",
+      "enum": [
+        "discovery",
+        "commitment_candidate",
+        "promotion_decision",
+        "demotion_decision",
+        "residue_record"
+      ]
+    },
+    "version": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "created_at",
+        "plane",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "plane": {
+          "type": "string",
+          "enum": [
+            "exploration",
+            "commitment"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "discovered",
+            "hypothesized",
+            "candidates_proposed",
+            "gates_passed",
+            "committed",
+            "demoted",
+            "residue",
+            "blocked"
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "source_type": {
+          "type": "string"
+        },
+        "epistemic_level": {
+          "type": "string",
+          "enum": [
+            "analogy",
+            "inspiration",
+            "conjecture",
+            "model_sketch",
+            "validated_hypothesis",
+            "tested_claim",
+            "accepted_fact"
+          ]
+        },
+        "gates": {
+          "type": "object",
+          "properties": {
+            "rights_gate": {
+              "type": "string",
+              "enum": [
+                "pass",
+                "fail",
+                "pending"
+              ]
+            },
+            "epistemic_gate": {
+              "type": "string",
+              "enum": [
+                "pass",
+                "fail",
+                "pending"
+              ]
+            },
+            "action_authority_gate": {
+              "type": "string",
+              "enum": [
+                "pass",
+                "fail",
+                "pending"
+              ]
+            }
+          }
+        },
+        "claim_ceiling": {
+          "type": "string"
+        },
+        "promotion_blocked_reasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "demotion_from": {
+          "type": "string"
+        },
+        "demotion_reason": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

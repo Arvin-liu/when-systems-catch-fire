@@ -1,0 +1,38 @@
+{
+  "plane_type": "discovery",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "disc_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "plane": "exploration",
+      "status": "discovered",
+      "title": "Propagation closure as typed change model",
+      "description": "Observation that typed declarations with propagation modes form a closure system.",
+      "source_type": "project_generated",
+      "epistemic_level": "tested_claim",
+      "gates": {
+        "rights_gate": "pass",
+        "epistemic_gate": "pass",
+        "action_authority_gate": "pass"
+      },
+      "claim_ceiling": "validated_typed_declared_relation_propagation_only"
+    },
+    {
+      "id": "disc_002",
+      "created_at": "2026-07-17T00:00:00Z",
+      "plane": "exploration",
+      "status": "hypothesized",
+      "title": "Dual plane prevents premature commitment",
+      "description": "Hypothesis that separating exploration from commitment reduces error propagation.",
+      "source_type": "project_generated",
+      "epistemic_level": "conjecture",
+      "gates": {
+        "rights_gate": "pass",
+        "epistemic_gate": "pending",
+        "action_authority_gate": "pending"
+      },
+      "claim_ceiling": "conjecture_only"
+    }
+  ]
+}

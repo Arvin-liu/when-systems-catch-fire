@@ -1,0 +1,25 @@
+{
+  "plane_type": "residue_record",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "res_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "plane": "exploration",
+      "status": "residue",
+      "title": "Dual plane hypothesis needs empirical validation",
+      "description": "The claim that dual planes reduce error propagation is a conjecture requiring measurement.",
+      "source_type": "project_generated",
+      "epistemic_level": "conjecture",
+      "gates": {
+        "rights_gate": "pass",
+        "epistemic_gate": "fail",
+        "action_authority_gate": "pending"
+      },
+      "claim_ceiling": "conjecture_only",
+      "promotion_blocked_reasons": [
+        "epistemic_gate failed: no empirical evidence yet"
+      ]
+    }
+  ]
+}
