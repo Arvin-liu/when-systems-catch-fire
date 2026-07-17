@@ -1,0 +1,15 @@
+{
+  "registry_type": "non_correspondence_residue",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "ncr_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "recorded",
+      "analogy_id": "ana_001",
+      "residue_type": "structural_gap",
+      "description": "Complete lattice ordering has no direct analog in typed declaration propagation",
+      "claim_ceiling": "residue_only"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "registry_type": "analogy_candidate",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "ana_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "analyzed",
+      "title": "Propagation closure as fixed-point computation",
+      "source_domain": {
+        "name": "fixed_point_theory",
+        "key_properties": [
+          "monotone_operator",
+          "complete_lattice",
+          "least_fixpoint"
+        ]
+      },
+      "target_domain": {
+        "name": "change_propagation",
+        "key_properties": [
+          "typed_declarations",
+          "propagation_modes",
+          "iterative_closure"
+        ]
+      },
+      "structural_correspondence": [
+        {
+          "source": "monotone_operator",
+          "target": "propagation_modes",
+          "quality": "partial"
+        }
+      ],
+      "surface_similarity": "low",
+      "non_correspondence_residue": [
+        "complete_lattice has no direct analog in propagation"
+      ],
+      "hidden_premise_transfer": [
+        "assumes monotonicity which may not hold for all propagation modes"
+      ],
+      "negative_transfer": [
+        "lattice ordering does not map to declaration priority"
+      ],
+      "productive_mismatch": [
+        "fixed-point framing suggests termination proof obligations"
+      ],
+      "claim_ceiling": "structural_analogy_only",
+      "claim_ceiling_detail": "This analogy supports structural insight, not formal equivalence."
+    }
+  ]
+}
