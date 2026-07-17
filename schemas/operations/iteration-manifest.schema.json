@@ -240,7 +240,7 @@
         "registry_version": {"$ref": "#/$defs/nonblankString"},
         "surface_decisions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/surfaceDecision"}},
         "external_attestations": {"type": "array", "items": {"$ref": "#/$defs/externalAttestation"}},
-        "unresolved_residue": {"type": "array", "items": {"$ref": "#/$defs/nonblankString"}, "uniqueItems": true},
+        "unresolved_residue": {"type": "array", "items": {"type": "object"}, "uniqueItems": true},
         "external_verification_policy": {"$ref": "#/$defs/nonblankString"},
         "live_external_surfaces_verified": {"const": false}
       }

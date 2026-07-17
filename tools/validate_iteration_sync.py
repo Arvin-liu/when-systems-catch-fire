@@ -318,7 +318,10 @@ def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict
 
 
 def _validate_v12_propagation(manifest: dict, source: Path) -> None:
-    from tools.operations.compute_change_propagation import compute, impact_report, serialized
+    try:
+        from tools.operations.compute_change_propagation import compute, impact_report, serialized
+    except ModuleNotFoundError:
+        from operations.compute_change_propagation import compute, impact_report, serialized
 
     binding = manifest["propagation_closure"]
     path_fields = {

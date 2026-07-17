@@ -1,0 +1,73 @@
+{
+  "task_id": "121Q32",
+  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "method_version": "1.2.0",
+  "manifest_path": "data/operations/iterations/121Q32.json",
+  "phase_b": {
+    "draft_pr": 61,
+    "branch": "agent/121q32-typed-change-propagation",
+    "base": "main",
+    "base_head": "d1bedb074af8dad8202b4324f3f5bbbb6b308b51",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "agent-results/IGNITION-20260717-121Q32-result.md",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
+    "claim_ceiling": "validated_typed_declared_relation_propagation_and_derived_map_candidate_only"
+  },
+  "lifecycle": {
+    "candidate": true,
+    "ready_for_gpt_verification": true,
+    "accepted": false,
+    "merged": false,
+    "current": false
+  },
+  "completion_state": {
+    "implementation_complete": true,
+    "repository_synchronization_complete": true,
+    "external_synchronization_required": true,
+    "external_synchronization_attested": false,
+    "project_synchronization_complete": false
+  },
+  "synchronization_registry": {
+    "path": "data/operations/synchronization-surfaces.json",
+    "version": "1.0.0"
+  },
+  "external_attestations": [
+    {
+      "surface_id": "external.pages_homepage",
+      "stage": "post_merge",
+      "status": "pending",
+      "authority": "pull_request_body_and_1111_receipt",
+      "evidence_refs": [
+        "external:pr_body:61",
+        "external:1111_receipt:IGNITION-20260717-121Q32-result.md"
+      ],
+      "live_state_locally_verifiable": false
+    }
+  ],
+  "propagation_closure": {
+    "closure_hash": "2b30b93f4f0947a352c6343f327f5da549b0ab936b3db3ac2fcc772982a6733d",
+    "closure_path": "data/operations/propagation/121Q32-closure.json",
+    "complete": true,
+    "unresolved_residue": []
+  },
+  "system_map": {
+    "current_version": "0.1.0",
+    "candidate_version": "0.2.0",
+    "groups": 9,
+    "nodes": 41,
+    "edges": 35,
+    "l7_added": false
+  },
+  "boundaries": {
+    "declared_reachability_is_causal_proof": false,
+    "new_truth_layer": false,
+    "current_inflation": false,
+    "q29r_modified": false,
+    "restricted_source_published": false,
+    "live_external_truth_locally_verified": false
+  }
+}

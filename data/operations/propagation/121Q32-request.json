@@ -4,7 +4,7 @@
   "base_identity":"d1bedb074af8dad8202b4324f3f5bbbb6b308b51",
   "head_identity":"external_exact_head_attestation",
   "changed_paths":[
-    "ITERATION.md","README.md","ARCHITECTURE.md","SUMMARY.md","AI-START-HERE.md","AI-HANDOFF.md","llms.txt","CHANGELOG.md",
+    ".github/workflows/pages.yml","ITERATION.md","README.md","ARCHITECTURE.md","SUMMARY.md","AI-START-HERE.md","AI-HANDOFF.md","llms.txt","CHANGELOG.md",
     "docs/project-current-state.md","docs/USAGE.md","docs/ai-assistant-usage-reference.md","docs/VERSIONING.md","docs/architecture/multiscale-causal-fabric.md","docs/architecture/interactive-system-map.md","docs/architecture/typed-change-propagation.md",
     "data/operations/project-components.json","data/operations/change-propagation-topology.json","data/operations/propagation/121Q32-request.json","data/operations/iterations/121Q32.json",
     "data/architecture/interactive-system-map-layout.json","data/architecture/interactive-system-map.json","pages/generated/ignition-system-map.svg",
