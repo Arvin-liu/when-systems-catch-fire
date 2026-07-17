@@ -86,7 +86,7 @@ def validate_attestation_schema(doc: dict, source: str = "attestation") -> list[
         if not (isinstance(val, str) and len(val) == 64 and all(c in "0123456789abcdef" for c in val)):
             errors.append(f"{source}: {digest_field} must be valid SHA-256 hex")
 
-    # Dual digest must differ (they represent different objects)
+    # Dual digest must differ unconditionally (they represent different objects)
     ga = doc.get("github_artifact_archive_digest", "")
     pt = doc.get("pages_payload_tar_digest", "")
     if ga and pt:
@@ -94,9 +94,7 @@ def validate_attestation_schema(doc: dict, source: str = "attestation") -> list[
         ga_clean = ga.removeprefix("sha256:")
         pt_clean = pt.removeprefix("sha256:")
         if ga_clean == pt_clean:
-            # Only flag if bytes also match (truly same object)
-            if doc.get("github_artifact_archive_bytes") == doc.get("pages_payload_tar_bytes"):
-                errors.append(f"{source}: dual digests identical AND byte lengths identical — likely same object, not dual layer")
+            errors.append(f"{source}: dual digests must not be identical — ZIP and tar are separate objects")
 
     # Lifecycle consistency
     lc = doc.get("lifecycle", {})

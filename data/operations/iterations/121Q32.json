@@ -922,6 +922,16 @@
       "surface": "tools/operations/validate_generated_output_authority.py",
       "decision": "CHANGE",
       "reason": "121Q32 candidate implementation, projection, validation or synchronized documentation."
+    },
+    {
+      "surface": "tests/test_external_attestation.py",
+      "decision": "CHANGE",
+      "reason": "F12 attestation schema test suite"
+    },
+    {
+      "surface": "tools/validate_external_attestation.py",
+      "decision": "CHANGE",
+      "reason": "F12 external attestation receipt validator"
     }
   ],
   "changed_surfaces": [
@@ -982,7 +992,9 @@
     "tools/operations/compute_change_propagation.py",
     "tools/operations/validate_generated_output_authority.py",
     "tools/validate_human_front_door.py",
-    "tools/validate_iteration_sync.py"
+    "tools/validate_iteration_sync.py",
+    "tests/test_external_attestation.py",
+    "tools/validate_external_attestation.py"
   ],
   "explicitly_unaffected_surfaces": [
     "Q29R accepted publication bytes",
@@ -1024,7 +1036,7 @@
       {
         "name": "derived-system-map",
         "status": "PASS",
-        "evidence": "Projection and SVG checks preserve 9 groups, 41 nodes, 35 edges and L0-L6."
+        "evidence": "Projection and SVG checks preserve the registry-derived candidate topology and L0-L6 boundary."
       },
       {
         "name": "front-door-and-iteration-sync",

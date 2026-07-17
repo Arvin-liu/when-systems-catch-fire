@@ -103,6 +103,7 @@ class ExternalAttestationSchemaTests(unittest.TestCase):
         self.assertTrue(any("github_artifact_archive_digest" in e for e in errors))
 
     def test_a8_identical_digests_same_bytes(self):
+        """Identical digests with same bytes must fail unconditionally."""
         doc = _valid_attestation()
         doc["github_artifact_archive_digest"] = "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
         doc["pages_payload_tar_digest"] = "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
@@ -110,6 +111,17 @@ class ExternalAttestationSchemaTests(unittest.TestCase):
         doc["pages_payload_tar_bytes"] = 5000
         errors = validate_attestation_schema(doc)
         self.assertTrue(any("identical" in e.lower() for e in errors))
+
+    def test_a11_identical_digests_different_bytes(self):
+        """Identical digests with different byte lengths must still fail unconditionally."""
+        doc = _valid_attestation()
+        doc["github_artifact_archive_digest"] = "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        doc["pages_payload_tar_digest"] = "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        doc["github_artifact_archive_bytes"] = 97565
+        doc["pages_payload_tar_bytes"] = 440320  # different bytes, same digest
+        errors = validate_attestation_schema(doc)
+        self.assertTrue(any("identical" in e.lower() for e in errors),
+                        f"Identical digests must fail even with different byte lengths: {errors}")
 
     def test_a9_claim_ceiling_must_indicate_candidate(self):
         doc = _valid_attestation()

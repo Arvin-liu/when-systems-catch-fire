@@ -223,7 +223,8 @@ def _validate_seal(manifest: dict, seal: dict, source: Path) -> None:
 
 
 def _validate_seal_f12(seal: dict, source: Path) -> None:
-    """F12: reject live digests without subject, self-SHA, and contract violations."""
+    """F12/F12C: reject live digests without subject, self-SHA, contract violations,
+    stale diff counts, and stale map counts."""
     # 1. pages_artifacts must not exist as live digest without subject HEAD
     require("pages_artifacts" not in seal,
             f"{source}: seal must not contain pages_artifacts with unbound live digests")
@@ -248,33 +249,125 @@ def _validate_seal_f12(seal: dict, source: Path) -> None:
             require(dd["github_artifact_archive_digest"] != dd["pages_payload_tar_digest"],
                     f"{source}: historical dual digests must not be identical for different objects")
 
-    # 4. External attestation contract validation
+    # 4. External attestation contract validation (F12C single-authority model)
     contract = seal.get("external_artifact_attestation_contract")
     if contract:
-        required_fields = [
+        # F12C: must use identity_critical_fields (not old required_fields)
+        require("identity_critical_fields" in contract,
+                f"{source}: contract must use identity_critical_fields (not required_fields)")
+        require("required_fields" not in contract,
+                f"{source}: contract must not use deprecated required_fields key")
+        identity_fields = [
             "subject_head", "foundation_run", "function_os_run", "pages_run",
             "artifact_head_sha", "github_artifact_archive_digest", "pages_payload_tar_digest"
         ]
-        for rf in required_fields:
-            require(rf in contract.get("required_fields", []),
-                    f"{source}: external_artifact_attestation_contract missing required field: {rf}")
+        for rf in identity_fields:
+            require(rf in contract.get("identity_critical_fields", []),
+                    f"{source}: contract missing identity-critical field: {rf}")
         require(contract.get("embedded_live_digest") is False,
-                f"{source}: external_artifact_attestation_contract must not claim embedded_live_digest=true")
+                f"{source}: contract must not claim embedded_live_digest=true")
         require(contract.get("live_refetch_required") is True,
-                f"{source}: external_artifact_attestation_contract must require live_refetch")
+                f"{source}: contract must require live_refetch")
+        # F12C new contract fields
+        require(contract.get("validator_path") == "tools/validate_external_attestation.py",
+                f"{source}: contract must declare validator_path")
+        require(contract.get("schema_version") == "1.0.0",
+                f"{source}: contract must declare schema_version 1.0.0")
+        require(contract.get("full_required_fields_authority") == "validator",
+                f"{source}: contract must declare full_required_fields_authority as validator")
 
     # 5. For method 1.2.0 candidate seals: must not be accepted/merged/current
-    #    (older methods like 1.0.0 may have candidate=true alongside accepted=true after promotion)
     lifecycle = seal.get("lifecycle", {})
     if seal.get("method_version") == "1.2.0" and lifecycle.get("candidate") is True:
         if lifecycle.get("ready_for_gpt_verification") is True:
-            # Still in candidate verification phase — must not be promoted yet
             require(lifecycle.get("accepted") is not True,
                     f"{source}: 1.2.0 candidate seal must not be marked accepted")
             require(lifecycle.get("merged") is not True,
                     f"{source}: 1.2.0 candidate seal must not be marked merged")
             require(lifecycle.get("current") is not True,
                     f"{source}: 1.2.0 candidate seal must not be marked current")
+
+    # 6. F12C: Reject ambiguous stale changed_paths_count
+    require("changed_paths_count" not in seal,
+            f"{source}: seal must not contain ambiguous changed_paths_count; "
+            "use authored_seed_paths_count, generated_output_paths_count, "
+            "base_to_head_diff_paths_count, diff_coverage_complete")
+
+    # 7. F12C: Dynamic diff coverage validation from Git diff + request + authority
+    import subprocess as _sp
+    try:
+        _base_head = None
+        _manifest_path = ROOT / "data/operations/iterations/121Q32.json"
+        if _manifest_path.is_file():
+            _m = json.loads(_manifest_path.read_text(encoding="utf-8"))
+            _base_head = _m.get("branch_pr", {}).get("base_head")
+        if _base_head:
+            _diff_result = _sp.run(
+                ["git", "diff", "--name-only", f"{_base_head}...HEAD"],
+                capture_output=True, text=True, cwd=str(ROOT)
+            )
+            _actual_diff = set(p for p in _diff_result.stdout.strip().split("\n") if p)
+
+            _req_path = ROOT / "data/operations/propagation/121Q32-request.json"
+            _seeds = set()
+            if _req_path.is_file():
+                _req = json.loads(_req_path.read_text(encoding="utf-8"))
+                _seeds = set(_req.get("changed_paths", []))
+
+            _auth_path = ROOT / "data/operations/generated-output-authority.json"
+            _generated = set()
+            if _auth_path.is_file():
+                _auth = json.loads(_auth_path.read_text(encoding="utf-8"))
+                _generated = set(g["path"] for g in _auth.get("generated_outputs", []))
+
+            # Verify seal counts match actual data
+            if "base_to_head_diff_paths_count" in seal:
+                require(seal["base_to_head_diff_paths_count"] == len(_actual_diff),
+                        f"{source}: seal base_to_head_diff_paths_count {seal['base_to_head_diff_paths_count']} "
+                        f"!= actual diff {len(_actual_diff)}")
+            if "authored_seed_paths_count" in seal:
+                require(seal["authored_seed_paths_count"] == len(_seeds),
+                        f"{source}: seal authored_seed_paths_count {seal['authored_seed_paths_count']} "
+                        f"!= request seeds {len(_seeds)}")
+            if "generated_output_paths_count" in seal:
+                require(seal["generated_output_paths_count"] == len(_generated),
+                        f"{source}: seal generated_output_paths_count {seal['generated_output_paths_count']} "
+                        f"!= authority generated {len(_generated)}")
+
+            # Verify disjoint
+            _overlap = _seeds & _generated
+            require(not _overlap,
+                    f"{source}: seed and generated paths must be disjoint, overlap: {_overlap}")
+
+            # Verify union covers diff
+            _union = _seeds | _generated
+            require(_actual_diff == _union,
+                    f"{source}: diff coverage incomplete: "
+                    f"in_diff_not_covered={_actual_diff - _union}, "
+                    f"covered_not_in_diff={_union - _actual_diff}")
+
+            # diff_coverage_complete must be true only when all pass
+            if "diff_coverage_complete" in seal:
+                require(seal["diff_coverage_complete"] is True,
+                        f"{source}: diff_coverage_complete must be true when all checks pass")
+    except (OSError, json.JSONDecodeError):
+        pass  # Skip if git or files unavailable
+
+    # 8. F12C: Seal system_map cross-check against interactive-system-map.json
+    _map_path = ROOT / "data/architecture/interactive-system-map.json"
+    if _map_path.is_file() and "system_map" in seal:
+        _actual_map = json.loads(_map_path.read_text(encoding="utf-8"))
+        _seal_map = seal["system_map"]
+        _actual_groups = len(_actual_map.get("groups", []))
+        _actual_nodes = len(_actual_map.get("nodes", []))
+        _actual_edges = len(_actual_map.get("edges", []))
+
+        require(_seal_map.get("groups") == _actual_groups,
+                f"{source}: seal system_map groups {_seal_map.get('groups')} != actual {_actual_groups}")
+        require(_seal_map.get("nodes") == _actual_nodes,
+                f"{source}: seal system_map nodes {_seal_map.get('nodes')} != actual {_actual_nodes}")
+        require(_seal_map.get("edges") == _actual_edges,
+                f"{source}: seal system_map edges {_seal_map.get('edges')} != actual {_actual_edges}")
 
 def _validate_evidence_ref(ref: str, source: Path) -> None:
     if ref.startswith("external:"):

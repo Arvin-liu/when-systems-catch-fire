@@ -72,7 +72,6 @@
   },
   "propagation_closure_hash": "57b18c57dcefd521e9399be167f511017de785d8971af93177f25df8926ab7f1",
   "edges": 37,
-  "changed_paths_count": 58,
   "relations": 50,
   "historical_digest_evidence": {
     "subject_head": "76cb7f495502743921c5ffc021a0ce48cef74c7b",
@@ -90,7 +89,9 @@
   },
   "external_artifact_attestation_contract": {
     "authority": "pull_request_body_and_1111_receipt",
-    "required_fields": [
+    "live_refetch_required": true,
+    "embedded_live_digest": false,
+    "identity_critical_fields": [
       "subject_head",
       "foundation_run",
       "function_os_run",
@@ -99,7 +100,12 @@
       "github_artifact_archive_digest",
       "pages_payload_tar_digest"
     ],
-    "live_refetch_required": true,
-    "embedded_live_digest": false
-  }
+    "validator_path": "tools/validate_external_attestation.py",
+    "schema_version": "1.0.0",
+    "full_required_fields_authority": "validator"
+  },
+  "authored_seed_paths_count": 56,
+  "generated_output_paths_count": 8,
+  "base_to_head_diff_paths_count": 64,
+  "diff_coverage_complete": true
 }

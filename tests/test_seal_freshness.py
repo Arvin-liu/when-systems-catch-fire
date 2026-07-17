@@ -171,6 +171,114 @@ class SealFreshnessAttackTests(unittest.TestCase):
             )
 
 
+
+class F12CConsistencyAttackTests(unittest.TestCase):
+    """F12C attack tests: seal must reject stale counts, enforce single-authority contract."""
+
+    def test_f12c_attack_stale_changed_paths_count(self):
+        """Seal with ambiguous changed_paths_count must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["changed_paths_count"] = 58  # stale ambiguous value
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("changed_paths_count", str(ctx.exception))
+
+    def test_f12c_attack_wrong_diff_count(self):
+        """Seal with wrong base_to_head_diff_paths_count must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["base_to_head_diff_paths_count"] = 999  # wrong
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("base_to_head_diff_paths_count", str(ctx.exception))
+
+    def test_f12c_attack_wrong_seed_count(self):
+        """Seal with wrong authored_seed_paths_count must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["authored_seed_paths_count"] = 999  # wrong
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("authored_seed_paths_count", str(ctx.exception))
+
+    def test_f12c_attack_contract_deprecated_required_fields(self):
+        """Contract using deprecated required_fields key must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        contract = dict(seal["external_artifact_attestation_contract"])
+        # Move identity_critical_fields back to required_fields (deprecated)
+        contract["required_fields"] = contract.pop("identity_critical_fields")
+        seal["external_artifact_attestation_contract"] = contract
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("required_fields", str(ctx.exception))
+
+    def test_f12c_attack_contract_missing_validator_path(self):
+        """Contract missing validator_path must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        contract = dict(seal["external_artifact_attestation_contract"])
+        del contract["validator_path"]
+        seal["external_artifact_attestation_contract"] = contract
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("validator_path", str(ctx.exception))
+
+    def test_f12c_attack_contract_missing_schema_version(self):
+        """Contract missing schema_version must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        contract = dict(seal["external_artifact_attestation_contract"])
+        del contract["schema_version"]
+        seal["external_artifact_attestation_contract"] = contract
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("schema_version", str(ctx.exception))
+
+    def test_f12c_attack_seal_map_groups_drift(self):
+        """Seal system_map groups count not matching actual map must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["system_map"]["groups"] = 99  # wrong
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("groups", str(ctx.exception))
+
+    def test_f12c_attack_seal_map_nodes_drift(self):
+        """Seal system_map nodes count not matching actual map must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["system_map"]["nodes"] = 99  # wrong
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("nodes", str(ctx.exception))
+
+    def test_f12c_attack_seal_map_edges_drift(self):
+        """Seal system_map edges count not matching actual map must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["system_map"]["edges"] = 99  # wrong
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("edges", str(ctx.exception))
+
+    def test_f12c_valid_seal_passes(self):
+        """Current valid F12C seal must pass all checks."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        validate_custom(manifest, MANIFEST_PATH, seal, registry)
+
 if __name__ == "__main__":
     unittest.main()
 
@@ -242,19 +350,22 @@ class F12SealAttestationAttackTests(unittest.TestCase):
         self.assertIn("identical", str(ctx.exception).lower())
 
     def test_f12_attack_contract_missing_required_field(self):
-        """Contract missing a required field must fail."""
+        """Contract missing an identity-critical field must fail."""
         manifest = _manifest()
         seal = _seal()
         registry = _registry()
         seal["external_artifact_attestation_contract"] = {
             "authority": "pull_request_body_and_1111_receipt",
-            "required_fields": ["subject_head"],  # missing 6 others
+            "identity_critical_fields": ["subject_head"],  # missing 6 others
             "live_refetch_required": True,
             "embedded_live_digest": False,
+            "validator_path": "tools/validate_external_attestation.py",
+            "schema_version": "1.0.0",
+            "full_required_fields_authority": "validator",
         }
         with self.assertRaises(AssertionError) as ctx:
             validate_custom(manifest, MANIFEST_PATH, seal, registry)
-        self.assertIn("required field", str(ctx.exception))
+        self.assertIn("identity-critical field", str(ctx.exception))
 
     def test_f12_attack_contract_embedded_live_digest_true(self):
         """Contract claiming embedded_live_digest=true must fail."""
@@ -263,10 +374,13 @@ class F12SealAttestationAttackTests(unittest.TestCase):
         registry = _registry()
         seal["external_artifact_attestation_contract"] = {
             "authority": "pull_request_body_and_1111_receipt",
-            "required_fields": ["subject_head","foundation_run","function_os_run","pages_run",
+            "identity_critical_fields": ["subject_head","foundation_run","function_os_run","pages_run",
                                 "artifact_head_sha","github_artifact_archive_digest","pages_payload_tar_digest"],
             "live_refetch_required": True,
             "embedded_live_digest": True,
+            "validator_path": "tools/validate_external_attestation.py",
+            "schema_version": "1.0.0",
+            "full_required_fields_authority": "validator",
         }
         with self.assertRaises(AssertionError) as ctx:
             validate_custom(manifest, MANIFEST_PATH, seal, registry)
