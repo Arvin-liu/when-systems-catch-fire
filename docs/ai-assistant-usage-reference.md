@@ -33,6 +33,7 @@ docs/project-current-state.md
 docs/governance/life-community-value-charter.md
 ITERATION.md
 ARCHITECTURE.md
+docs/architecture/interactive-system-map.md
 FOUNDATION.md
 function-os-candidate/v0.2/README.md
 docs/architecture/multiscale-causal-fabric.md
@@ -81,7 +82,9 @@ llms.txt
 
 当前状态与架构直达入口：[项目现状](./project-current-state.md) / [点火迭代操作法](../ITERATION.md) / [MCF](./architecture/multiscale-causal-fabric.md) / [PSD](./architecture/probabilistic-system-dynamics.md) / [ARN](./architecture/adaptive-relational-network.md)。本页是完整的人类 AI 使用指南；根 README 中的提示词是同一份受验证的前门投影，两者不得独立漂移。当前迭代方法把状态改变视为全项目同步传播：实现完成、仓库同步、逐外部表面证明和项目整体完成必须分开报告，局部通过不能替代整体闭环。
 
-L6 公共写作可以使用当前[之元写作法 `0.3.0`](./publication/zhiyuan-writing-method.md)和[后台规格](../templates/publication/zhiyuan-writing-spec.md)。AI 先区分实际点火来源与启发，保存 claim ceiling、不可映射残余和主体，再生成公共表达。试读／发布反馈须记录主体、渠道、时间、原文范围和解释限制，才可作为候选 source／gap 返回适用项目流程。不得把同源写成认知科学事实，不得把项目对应表写成文章目录，也不得用共鸣验证文学或真值。
+L6 公共写作的当前合并基线是之元写作法 `0.3.0`；[`0.4.0` Draft 候选](./publication/zhiyuan-writing-method.md)和[后台规格](../templates/publication/zhiyuan-writing-spec.md)新增双来源素材池。AI 必须区分 `external_input` 与 `ignition_increment`：后者可包括 claim、argument、mechanism、map、gap、residue、Q12—Q14、MCF／PSD／ARN 投影、分析报告和 provenance-gated 返回项，但必须保存 canonical 路径、版本、生成任务、claim ceiling 与原始来源回链。点火派生产物不能被算作新的独立证据。试读／发布反馈仍须登记主体、渠道、时间、原文范围和解释限制，才可返回适用流程。
+
+若任务需要全项目导航，读取[完整可点击系统图说明](./architecture/interactive-system-map.md)及机器 spec。图中节点和连线是当前导航或受约束信息流，不是 L7、因果图、严格同构或理论完整性证明。
 
 当前成果从[人类索引](./publication/zhiyuan-writing-showcase.md)与 `data/publication/zhiyuan-writing-showcase.json` 读取。AI 不得只抓取作品标题：必须同时核对案例来源链、点火分析、方法版本、review provenance 与 claim ceiling；registry 是展示与追踪接口，不是事实或文学质量注册表。
 

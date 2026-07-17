@@ -2,11 +2,11 @@
 
 English: **Zhiyuan Writing Method**
 
-Version: `0.3.0`
+Version: `0.4.0` candidate; current merged baseline remains `0.3.0` until independent acceptance and merge.
 
-Status: `CURRENT_MERGED_L6_CAPABILITY`
+Status: `CANDIDATE_0_4_0_PENDING_INDEPENDENT_REVIEW / CURRENT_BASE_0_3_0`
 
-Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. This current capability does not add an architecture or truth layer and cannot raise any L0-L5 claim.
+Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. The 0.4.0 candidate extends the writing-material boundary without adding an architecture or truth layer and cannot raise any L0-L5 claim.
 
 ## 命名与内部定义
 
@@ -23,6 +23,8 @@ Operational location: L6 interpretation / application / publication. Generative 
 `0.2.0` 将上位方法修订并命名为“之元写作法”，以心智层级跃迁为内部生成内核。肉身锚定是可选生成／回返模式，跨域同构叙事是一种应用类型，高维压缩结尾是一种可选收束。旧候选从未被接受、合并或成为当前能力；其错误与纠正保留在 Git 历史、审查意见和 121Q28R 审计中。
 
 `0.3.0` 修复 0.2.0 仍把方法写成 L6 外接出版工具的问题：之元写作法与点火是维护者声明的同源认知运动在不同约束下形成的候选投影。之元写作法操作上仍位于 L6，却同时承担公共表达和反馈返回接口。review `4713833187`、旧 HEAD 和追加提交保留完整修订历史。
+
+`0.4.0` 候选修复“写作素材默认等于外部原始材料”的窄化：写作素材池至少同时接收外部输入源和点火增量输出源。点火对材料生成的 claim、argument、mechanism、map、gap、residue、Q12—Q14 输出、MCF／PSD／ARN 投影、分析报告与 provenance-gated 返回项，可以在保存来源链、版本、对象类型、claim ceiling 和不可映射残余后继续成为写作材料。复用点火产物不把派生结构伪装成新的独立证据，也不使 0.3.0 在 Draft 阶段失去 Current 地位。
 
 ## 与点火整体的同源认知关系
 
@@ -43,7 +45,7 @@ Operational location: L6 interpretation / application / publication. Generative 
 
 | 之元写作法运动 | 点火对应候选 | 保持的关系 | 不可映射残余／不能推出什么 |
 |---|---|---|---|
-| 起始承载点 | L0 来源、外部材料、现实问题 | 从可追溯材料开始 | 写作起点不是证据充分性 |
+| 起始承载点 | 外部输入源或点火增量输出源 | 从有类型、有版本、可回链的材料开始 | 写作起点不是证据充分性；派生产物不是独立复证 |
 | 不可容纳残余 | gap、pending、open obligation、unmapped residue | 旧定义留下未决压力 | 残余不证明下一假设 |
 | 下一层牵引当前层 | Q12 M0 机制草图、候选下一行动、跨尺度问题压力 | 下一步问题提前约束当前描述 | 不是预知终点或目的论 |
 | 概念递归重定义 | 版本化语义修订、current-state 更新、迁移兼容 | 新证据改写旧定义且保留历史 | 不得覆盖对象或偷换术语 |
@@ -63,9 +65,9 @@ Operational location: L6 interpretation / application / publication. Generative 
 
 ### 向外表达
 
-`L0-L5 / Charter / current project state → L6 Zhiyuan Writing Method → public work`
+`external inputs + provenance-bound ignition increments / Charter / current project state → L6 Zhiyuan Writing Method → public work`
 
-1. 明确实际来源与只作启发的材料，保留 claim ceiling。
+1. 标记素材属于外部输入还是点火增量输出；明确实际来源与只作启发的材料，保留版本、对象类型和 claim ceiling。
 2. 保存不可映射残余、物理／历史差异和受损或沉默主体。
 3. 用心智层级运动让结构被读者经历，而不是把报告术语换成文学辞藻。
 4. MCF、PSD、ARN、Q12-Q14 和 Atlas 只在实际相关时进入后台；不得要求每段对应一个组件。
@@ -93,6 +95,33 @@ Operational location: L6 interpretation / application / publication. Generative 
 维护者之元的认知方式和作品提供方法原型。点火从具体作品、失败反例和维护者反馈中抽取可描述、可审计、可迁移的部分。其他人或 AI 可以使用这些纪律，但使用方法不等于复制作者本人；模板不能生成作者的经历、价值选择、审美判断、创造压力或真正的下一层。
 
 感染力、读者共鸣、模板完成或“像作者”不能提高事实、因果、同构或价值 claim。该方法不是普遍最优审美定律，也不是文学质量验证器。
+
+## 双来源写作素材池
+
+“写作素材来源”在这里描述生成与审计角色，不等于 L0 中“外部证据来源”的专门含义。0.4.0 候选至少区分两类可进入写作过程的材料：
+
+### 1. 外部输入源
+
+一条笔记、一则新闻、一篇文章、一份案例、一段记忆、一次关系事件或其他现实材料。它们必须保存可用的作者、时间、渠道、版本、版权／隐私边界和事实核验状态；受限全文不得因为进入写作素材池而被重新公开。
+
+### 2. 点火增量输出源
+
+点火对材料运行后生成、修订或暴露的可追溯增量结构，包括但不限于：
+
+- claim、argument、formal object、mechanism candidate、map、gap、pending obligation 与 unmapped residue；
+- 点火分析报告和 Q12／Q13／Q14 输出；
+- MCF、PSD、ARN 与 Atlas 的有边界投影、差异或反例；
+- 现实反馈记录，以及完成 provenance capture 和范围审查后的 candidate source／gap／reality feedback return。
+
+这些产物可以成为文章的新起始承载点、概念压力、跨层接口、竞争解释、不可容纳残余或回照对象。它们不是只能藏在后台的“分析过程”：只要来源链和权限边界仍可展开，点火跑出来的增量本身就是可继续生成公共表达的材料。
+
+### 入池与复用规则
+
+1. 每项材料标记 `source_class = external_input | ignition_increment`，并保存 canonical 路径／ID、版本或 commit、生成任务、claim ceiling 与公开边界。
+2. 点火增量必须回链产生它的外部材料、操作或反馈；不得把同一证据经过分析后的派生产物算作第二份独立证据。
+3. 写作可以重组、递归定义和跨域投影这些增量，但不得抹掉 gap、residue、竞争解释、主体差异和未完成验证。
+4. provenance-gated 返回项只有完成主体、时间、渠道、原文范围和解释限制登记后才能进入；点赞、共鸣、传播或多 AI 一致本身仍只是体验／传播数据。
+5. 素材池扩大的是 L6 的生成范围，不提高 L0—L5 权限，不增加新层，也不证明点火或之元写作法完整、普遍有效。
 
 ## 起始承载点
 
@@ -191,7 +220,7 @@ Operational location: L6 interpretation / application / publication. Generative 
 
 以下动作可反复、折返、合并或跳过，不是前台顺序：
 
-1. 发现一个起始承载点，并守住来源与 claim 边界。
+1. 从外部输入或点火增量输出中发现一个起始承载点，并守住来源类型、版本与 claim 边界。
 2. 感知当前层不能容纳的残余和下一层的压力。
 3. 让下一层提前改变当前层至少一个细节。
 4. 暂记显题与可能仍为 `UNNAMED` 的心智引力中心。

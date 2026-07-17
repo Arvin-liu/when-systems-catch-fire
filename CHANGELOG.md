@@ -1,5 +1,7 @@
 # Changelog
 
+- 121Q31 proposes Zhiyuan Writing Method 0.4.0 with a typed external-input / ignition-increment writing material pool and adds a JSON-generated, tested, clickable whole-system SVG interface for README and Pages. The Draft candidate keeps 0.3.0 current, preserves source/claim boundaries, adds no L7 or truth layer, and does not claim project or theory completeness.
+
 ## Unreleased
 
 - 121Q30T merges accepted PR #59 at exact HEAD and closes the repository-native Zhiyuan Writing Method showcase as Current: one non-duplicative homepage current-state section, a latest-three outcome projection, human/machine indexes, accepted work, bounded case provenance and Q26 analysis. It preserves the accepted Q29R text byte-for-byte and does not republish the third-party source text or claim universal method effectiveness.

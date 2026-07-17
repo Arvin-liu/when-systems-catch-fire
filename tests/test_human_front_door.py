@@ -66,13 +66,25 @@ class HumanFrontDoorTests(unittest.TestCase):
 
     def test_readme_has_one_current_state_and_expected_top_order(self):
         self.assertEqual(self.readme.count("## 项目现状"), 1)
-        headings = ["## 项目现状", "## 之元写作法成果", "## 生命共同体价值宪章", "## 使用指南"]
+        headings = ["## 项目现状", "## 之元写作法成果", "## 生命共同体价值宪章", "## 完整可点击系统图", "## 使用指南"]
         positions = [self.readme.index(heading) for heading in headings]
         self.assertEqual(positions, sorted(positions))
 
     def test_ai_prompt_and_current_details_are_folded(self):
         self.assertIn("<summary>展开：当前能力、限制与完整项目现状</summary>", self.readme)
         self.assertIn("<summary>展开：完整 AI 首次阅读提示词</summary>", self.readme)
+
+    def test_complete_system_map_is_between_charter_and_usage(self):
+        charter = self.readme.index("## 生命共同体价值宪章")
+        system_map = self.readme.index("## 完整可点击系统图")
+        usage = self.readme.index("## 使用指南")
+        self.assertLess(charter, system_map)
+        self.assertLess(system_map, usage)
+        self.assertIn("<object data=\"./generated/ignition-system-map.svg\"", self.readme)
+
+    def test_system_map_has_all_clickable_nodes_and_no_l7_layer(self):
+        result = validate_all()
+        self.assertEqual(result["interactive_system_map_nodes"], 41)
 
 
 if __name__ == "__main__":

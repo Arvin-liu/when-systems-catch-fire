@@ -6,6 +6,8 @@ on:
     paths:
       - README.md
       - docs/ai-assistant-usage-reference.md
+      - data/architecture/interactive-system-map.json
+      - tools/generate_interactive_system_map.py
       - .github/workflows/pages.yml
       - pages/**
   workflow_dispatch:
@@ -34,6 +36,9 @@ jobs:
           cp pages/_config.yml site/_config.yml
           cp pages/assets/readable.css site/assets/readable.css
           cp pages/_layouts/default.html site/_layouts/default.html
+          mkdir -p site/generated
+          cp pages/generated/ignition-system-map.svg site/generated/ignition-system-map.svg
+          cp pages/system-map.html site/system-map.html
           mkdir -p site/docs/publication/works
           mkdir -p site/docs/publication/cases
           mkdir -p site/reports/publication
@@ -50,6 +55,8 @@ jobs:
             printf '\n'
             cat README.md
           } > site/index.md
+      - name: Verify generated interactive system map
+        run: python3 tools/generate_interactive_system_map.py --check
       - uses: actions/jekyll-build-pages@v1
         with:
           source: site
