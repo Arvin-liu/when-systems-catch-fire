@@ -218,7 +218,63 @@ def _validate_seal(manifest: dict, seal: dict, source: Path) -> None:
         require(seal.get("external_attestations") == manifest["synchronization_closure"]["external_attestations"], f"{source}: seal external_attestations mismatch")
     if manifest["method_version"] == "1.2.0":
         require(seal.get("propagation_closure", {}).get("closure_hash") == manifest["propagation_closure"]["closure_hash"], f"{source}: seal propagation closure hash mismatch")
+    _validate_seal_f12(seal, source)
 
+
+
+def _validate_seal_f12(seal: dict, source: Path) -> None:
+    """F12: reject live digests without subject, self-SHA, and contract violations."""
+    # 1. pages_artifacts must not exist as live digest without subject HEAD
+    require("pages_artifacts" not in seal,
+            f"{source}: seal must not contain pages_artifacts with unbound live digests")
+
+    # 2. Self-SHA embedding check — seal must not embed its own commit SHA
+    for field in ("embedded_exact_current_head", "live_head_sha", "current_head"):
+        require(field not in seal or seal[field] is False or seal[field] == "",
+                f"{source}: seal must not embed current commit SHA in {field}")
+
+    # 3. Historical digest must have subject_head and run IDs
+    hde = seal.get("historical_digest_evidence")
+    if hde:
+        require(hde.get("subject_head"), f"{source}: historical_digest_evidence missing subject_head")
+        require(hde.get("subject_run_ids"), f"{source}: historical_digest_evidence missing subject_run_ids")
+        run_ids = hde.get("subject_run_ids", {})
+        require(run_ids.get("pages"), f"{source}: historical_digest_evidence missing pages run")
+        require(run_ids.get("foundation"), f"{source}: historical_digest_evidence missing foundation run")
+        require(run_ids.get("function_os"), f"{source}: historical_digest_evidence missing function_os run")
+        # Dual digest distinction
+        dd = hde.get("dual_digest", {})
+        if dd.get("github_artifact_archive_digest") and dd.get("pages_payload_tar_digest"):
+            require(dd["github_artifact_archive_digest"] != dd["pages_payload_tar_digest"],
+                    f"{source}: historical dual digests must not be identical for different objects")
+
+    # 4. External attestation contract validation
+    contract = seal.get("external_artifact_attestation_contract")
+    if contract:
+        required_fields = [
+            "subject_head", "foundation_run", "function_os_run", "pages_run",
+            "artifact_head_sha", "github_artifact_archive_digest", "pages_payload_tar_digest"
+        ]
+        for rf in required_fields:
+            require(rf in contract.get("required_fields", []),
+                    f"{source}: external_artifact_attestation_contract missing required field: {rf}")
+        require(contract.get("embedded_live_digest") is False,
+                f"{source}: external_artifact_attestation_contract must not claim embedded_live_digest=true")
+        require(contract.get("live_refetch_required") is True,
+                f"{source}: external_artifact_attestation_contract must require live_refetch")
+
+    # 5. For method 1.2.0 candidate seals: must not be accepted/merged/current
+    #    (older methods like 1.0.0 may have candidate=true alongside accepted=true after promotion)
+    lifecycle = seal.get("lifecycle", {})
+    if seal.get("method_version") == "1.2.0" and lifecycle.get("candidate") is True:
+        if lifecycle.get("ready_for_gpt_verification") is True:
+            # Still in candidate verification phase — must not be promoted yet
+            require(lifecycle.get("accepted") is not True,
+                    f"{source}: 1.2.0 candidate seal must not be marked accepted")
+            require(lifecycle.get("merged") is not True,
+                    f"{source}: 1.2.0 candidate seal must not be marked merged")
+            require(lifecycle.get("current") is not True,
+                    f"{source}: 1.2.0 candidate seal must not be marked current")
 
 def _validate_evidence_ref(ref: str, source: Path) -> None:
     if ref.startswith("external:"):

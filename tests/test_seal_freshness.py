@@ -173,3 +173,127 @@ class SealFreshnessAttackTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class F12SealAttestationAttackTests(unittest.TestCase):
+    """F12 attack tests: seal must reject unbound digests, self-SHA, contract violations."""
+
+    def test_f12_attack_pages_artifacts_unbound_digest(self):
+        """Seal with pages_artifacts (no subject HEAD) must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["pages_artifacts"] = {
+            "github_artifact_archive_digest": "sha256:deadbeef" * 8,
+            "pages_payload_tar_digest": "sha256:cafebabe" * 8,
+        }
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("pages_artifacts", str(ctx.exception))
+
+    def test_f12_attack_self_sha_embedding(self):
+        """Seal must not embed its own commit SHA."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["embedded_exact_current_head"] = "abc123def456"
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("embed", str(ctx.exception).lower())
+
+    def test_f12_attack_historical_missing_subject_head(self):
+        """Historical digest without subject_head must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["historical_digest_evidence"] = {
+            "dual_digest": {"github_artifact_archive_digest": "sha256:aa", "pages_payload_tar_digest": "sha256:bb"}
+        }
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("subject_head", str(ctx.exception))
+
+    def test_f12_attack_historical_missing_pages_run(self):
+        """Historical digest without pages run must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["historical_digest_evidence"] = {
+            "subject_head": "76cb7f495502743921c5ffc021a0ce48cef74c7b",
+            "subject_run_ids": {"foundation": 123, "function_os": 456}
+        }
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("pages", str(ctx.exception).lower())
+
+    def test_f12_attack_identical_dual_digests(self):
+        """Historical dual digests that are identical must fail (different objects)."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        hde = seal.get("historical_digest_evidence", {})
+        hde["dual_digest"] = {
+            "github_artifact_archive_digest": "sha256:abcdef1234567890" * 4,
+            "pages_payload_tar_digest": "sha256:abcdef1234567890" * 4,
+        }
+        seal["historical_digest_evidence"] = hde
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("identical", str(ctx.exception).lower())
+
+    def test_f12_attack_contract_missing_required_field(self):
+        """Contract missing a required field must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["external_artifact_attestation_contract"] = {
+            "authority": "pull_request_body_and_1111_receipt",
+            "required_fields": ["subject_head"],  # missing 6 others
+            "live_refetch_required": True,
+            "embedded_live_digest": False,
+        }
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("required field", str(ctx.exception))
+
+    def test_f12_attack_contract_embedded_live_digest_true(self):
+        """Contract claiming embedded_live_digest=true must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["external_artifact_attestation_contract"] = {
+            "authority": "pull_request_body_and_1111_receipt",
+            "required_fields": ["subject_head","foundation_run","function_os_run","pages_run",
+                                "artifact_head_sha","github_artifact_archive_digest","pages_payload_tar_digest"],
+            "live_refetch_required": True,
+            "embedded_live_digest": True,
+        }
+        with self.assertRaises(AssertionError) as ctx:
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+        self.assertIn("embedded_live_digest", str(ctx.exception))
+
+    def test_f12_attack_candidate_seal_accepted(self):
+        """Candidate seal marked accepted must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["lifecycle"]["accepted"] = True
+        with self.assertRaises((AssertionError, Exception)):
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+
+    def test_f12_attack_candidate_seal_current(self):
+        """Candidate seal marked current must fail."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        seal["lifecycle"]["current"] = True
+        with self.assertRaises((AssertionError, Exception)):
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+
+    def test_f12_valid_seal_passes(self):
+        """Current valid F12 seal (no pages_artifacts, with contract) must pass."""
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        # Should not raise
+        validate_custom(manifest, MANIFEST_PATH, seal, registry)

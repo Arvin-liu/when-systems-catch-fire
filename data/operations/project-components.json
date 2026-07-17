@@ -436,7 +436,9 @@
         "templates/operations/",
         "tools/validate_iteration_sync.py",
         "tests/test_iteration_sync.py",
-        "tests/test_seal_freshness.py"
+        "tests/test_seal_freshness.py",
+        "tools/validate_external_attestation.py",
+        "tests/test_external_attestation.py"
       ],
       "authority": "canonical",
       "layer_or_overlay": "overlay",
