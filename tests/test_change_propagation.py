@@ -891,5 +891,72 @@ class ChangePropagationTests(unittest.TestCase):
         self.assertIn("unmapped_path", {item["type"] for item in closure["residue"]})
 
 
+    # ── F10: Historical regression gate tests ───────────────────────────────
+
+    def test_f10_both_lineage_endpoints_are_ancestors(self):
+        """Both known lineage endpoints (117d8508 and 56b83ae8) must be ancestors of current HEAD."""
+        repo_root = str(ROOT)
+        head = subprocess.run(["git", "-C", repo_root, "rev-parse", "HEAD"],
+                              check=True, capture_output=True, text=True).stdout.strip()
+        for sha, label in [
+            ("117d8508ea7d31585d06bb19fd890dadd62b9583", "F2-F9 hardened line"),
+            ("56b83ae872e00bfeff61f87c4cccc3fb4ff2b58d", "G1-G4 fix line"),
+        ]:
+            result = subprocess.run(
+                ["git", "-C", repo_root, "merge-base", "--is-ancestor", sha, head],
+                capture_output=True, text=True,
+            )
+            self.assertEqual(result.returncode, 0,
+                             f"{label} ({sha[:12]}) is NOT an ancestor of HEAD {head[:12]}")
+
+    def test_f10_diff_coverage_does_not_shrink_critical_assets(self):
+        """Critical security asset files must exist in the diff coverage from base main to HEAD."""
+        repo_root = str(ROOT)
+        head = subprocess.run(["git", "-C", repo_root, "rev-parse", "HEAD"],
+                              check=True, capture_output=True, text=True).stdout.strip()
+        diff_files = subprocess.run(
+            ["git", "-C", repo_root, "diff", "--name-only",
+             "d1bedb074af8dad8202b4324f3f5bbbb6b308b51..HEAD"],
+            check=True, capture_output=True, text=True,
+        ).stdout.strip().splitlines()
+        diff_set = set(diff_files)
+        critical_assets = [
+            "data/operations/generated-output-authority.json",
+            "tests/test_pages_deploy_gate.py",
+            "tools/operations/validate_generated_output_authority.py",
+        ]
+        for asset in critical_assets:
+            self.assertIn(asset, diff_set,
+                          f"Critical security asset '{asset}' missing from diff coverage")
+
+    def test_f10_generated_output_authority_key_files_must_exist(self):
+        """Generated-output authority key files must exist in the repository."""
+        key_files = [
+            ROOT / "data/operations/generated-output-authority.json",
+            ROOT / "schemas/operations/generated-output-authority.schema.json",
+            ROOT / "tools/operations/validate_generated_output_authority.py",
+        ]
+        for f in key_files:
+            self.assertTrue(f.is_file(), f"Key generated-output authority file missing: {f}")
+
+    def test_f10_seal_must_bind_current_head(self):
+        """Completion seal exact_head must match current HEAD, or be flagged for external verification."""
+        repo_root = str(ROOT)
+        head = subprocess.run(["git", "-C", repo_root, "rev-parse", "HEAD"],
+                              check=True, capture_output=True, text=True).stdout.strip()
+        seal_path = ROOT / "reports/operations/121Q32-completion-seal.json"
+        if not seal_path.is_file():
+            self.skipTest("Completion seal not yet generated; requires external verification")
+        seal = json.loads(seal_path.read_text(encoding="utf-8"))
+        seal_head = seal.get("exact_head", "")
+        # If seal has exact_head, it must match current HEAD
+        if seal_head:
+            self.assertEqual(seal_head, head,
+                             f"Seal exact_head '{seal_head[:12]}' != current HEAD '{head[:12]}'. "
+                             f"Seal must be rebound to current HEAD or flagged for external verification.")
+        else:
+            self.skipTest("Seal has no exact_head field; requires external verification")
+
+
 if __name__ == "__main__":
     unittest.main()
