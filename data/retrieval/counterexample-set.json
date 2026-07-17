@@ -1,0 +1,18 @@
+{
+  "registry_type": "counterexample_set",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "cx_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "recorded",
+      "case_pair": [
+        "case_001",
+        "case_002"
+      ],
+      "counterexample_type": "surface_similarity_without_structural_isomorphism",
+      "description": "Both cases involve drift, but case_001 is hash drift while case_002 is semantic field conflict",
+      "claim_ceiling": "counterexample_only"
+    }
+  ]
+}

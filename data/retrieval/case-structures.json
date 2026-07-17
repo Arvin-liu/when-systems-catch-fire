@@ -1,0 +1,31 @@
+{
+  "registry_type": "case_structure",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "case_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "indexed",
+      "title": "Manifest-seal hash drift (Q32F11)",
+      "surface_description": "Two JSON files track the same hash but diverge",
+      "relation_signature_ids": [
+        "rs_001"
+      ],
+      "domain": "software_consistency",
+      "claim_ceiling": "case_description_only"
+    },
+    {
+      "id": "case_002",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "indexed",
+      "title": "Dual digest conflict (Q32F10-F11)",
+      "surface_description": "Two digest fields claim different truths about same artifact",
+      "relation_signature_ids": [
+        "rs_001",
+        "rs_002"
+      ],
+      "domain": "data_integrity",
+      "claim_ceiling": "case_description_only"
+    }
+  ]
+}

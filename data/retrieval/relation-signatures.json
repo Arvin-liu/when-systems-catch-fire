@@ -1,0 +1,32 @@
+{
+  "registry_type": "relation_signature",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "rs_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "defined",
+      "title": "Validator catches drift before commit",
+      "relation_type": "preventive_detection",
+      "arguments": [
+        "validator",
+        "drift_condition",
+        "commit_barrier"
+      ],
+      "claim_ceiling": "structural_pattern_only"
+    },
+    {
+      "id": "rs_002",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "defined",
+      "title": "Gate blocks promotion without evidence",
+      "relation_type": "evidence_gate",
+      "arguments": [
+        "gate",
+        "evidence_requirement",
+        "promotion_barrier"
+      ],
+      "claim_ceiling": "structural_pattern_only"
+    }
+  ]
+}
