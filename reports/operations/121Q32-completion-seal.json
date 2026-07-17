@@ -49,7 +49,7 @@
     }
   ],
   "propagation_closure": {
-    "closure_hash": "279c32833db13f9e31c8c2157b9c94d00673106347b5581abcb5ad2eae629350",
+    "closure_hash": "e815c573b43646cb7c2915f2089aa92bdc4810802a2e534e6dd80ad46b6d7d13",
     "closure_path": "data/operations/propagation/121Q32-closure.json",
     "complete": true,
     "unresolved_residue": []

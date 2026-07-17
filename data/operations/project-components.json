@@ -914,7 +914,10 @@
         "schemas/operations/change-propagation-closure.schema.json",
         "tests/test_change_propagation.py",
         "data/operations/propagation/",
-        ".github/workflows/foundation-validation.yml"
+        ".github/workflows/foundation-validation.yml",
+        "tests/fixtures/",
+        "data/operations/generated-output-authority.json",
+        "schemas/operations/generated-output-authority.schema.json"
       ],
       "authority": "derived",
       "layer_or_overlay": "infrastructure",
