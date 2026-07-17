@@ -89,6 +89,8 @@ class HumanFrontDoorTests(unittest.TestCase):
     def test_pages_artifact_carries_typed_propagation_evidence(self):
         self.assertIn("typed-change-propagation.md", self.pages)
         self.assertIn("121Q32-change-propagation-impact.md", self.pages)
+        self.assertIn("site/data/operations/project-components.json", self.pages)
+        self.assertIn("site/data/operations/change-propagation-topology.json", self.pages)
 
 
 if __name__ == "__main__":

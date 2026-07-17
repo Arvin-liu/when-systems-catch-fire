@@ -124,6 +124,13 @@ def validate_system_map(root: Path, readme: str, pages: str) -> int:
     require("generate_interactive_system_map.py --check" in pages, "Pages workflow does not reject stale generated SVG")
     require("cp docs/architecture/typed-change-propagation.md site/docs/architecture/typed-change-propagation.md" in pages, "Pages artifact omits typed propagation documentation")
     require("cp reports/operations/121Q32-change-propagation-impact.md site/reports/operations/121Q32-change-propagation-impact.md" in pages, "Pages artifact omits propagation impact report")
+    for asset in (
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/architecture/interactive-system-map-layout.json",
+        "data/architecture/interactive-system-map.json",
+    ):
+        require(f"cp {asset} site/{asset}" in pages, f"Pages artifact omits linked map authority: {asset}")
     require(spec.get("schema_version") == "2.0.0", "system map is not the registry-derived candidate projection")
     require({edge["relation_domain"] for edge in spec["edges"]} <= {"substantive_causal_candidate", "repository_dependency", "synchronization_obligation"}, "system-map relation domains escape declared authority classes")
 

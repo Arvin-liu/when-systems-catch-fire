@@ -47,6 +47,8 @@ jobs:
           mkdir -p site/reports/publication
           mkdir -p site/reports/operations
           mkdir -p site/docs/architecture
+          mkdir -p site/data/operations
+          mkdir -p site/data/architecture
           cp docs/publication/zhiyuan-writing-showcase.md site/docs/publication/zhiyuan-writing-showcase.md
           cp docs/publication/zhiyuan-writing-method.md site/docs/publication/zhiyuan-writing-method.md
           cp docs/publication/works/when-an-army-believes-its-own-back.md site/docs/publication/works/when-an-army-believes-its-own-back.md
@@ -55,6 +57,10 @@ jobs:
           cp docs/architecture/interactive-system-map.md site/docs/architecture/interactive-system-map.md
           cp docs/architecture/typed-change-propagation.md site/docs/architecture/typed-change-propagation.md
           cp reports/operations/121Q32-change-propagation-impact.md site/reports/operations/121Q32-change-propagation-impact.md
+          cp data/operations/project-components.json site/data/operations/project-components.json
+          cp data/operations/change-propagation-topology.json site/data/operations/change-propagation-topology.json
+          cp data/architecture/interactive-system-map-layout.json site/data/architecture/interactive-system-map-layout.json
+          cp data/architecture/interactive-system-map.json site/data/architecture/interactive-system-map.json
           {
             printf '%s\n' '---'
             printf '%s\n' 'title: When Systems Catch Fire / 点火'
