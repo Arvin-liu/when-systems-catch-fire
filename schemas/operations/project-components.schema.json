@@ -7,11 +7,22 @@
   "properties": {
     "registry_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
     "purpose": {"$ref": "#/$defs/nonblank"},
-    "components": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/component"}}
+    "components": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/component"}},
+    "allowed_path_overlaps": {"type": "array", "items": {"$ref": "#/$defs/pathOverlap"}}
   },
   "$defs": {
     "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
     "stringArray": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+    "pathOverlap": {
+      "type": "object", "additionalProperties": false,
+      "required": ["component_ids", "reason", "authority_source", "path_patterns"],
+      "properties": {
+        "component_ids": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+        "reason": {"$ref": "#/$defs/nonblank"},
+        "authority_source": {"$ref": "#/$defs/nonblank"},
+        "path_patterns": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}
+      }
+    },
     "component": {
       "type": "object",
       "additionalProperties": false,
@@ -22,7 +33,7 @@
         "description": {"$ref": "#/$defs/nonblank"},
         "component_type": {"enum": ["front_door", "architecture_layer", "foundation_core", "model_projection", "operation_control", "governance_constraint", "publication_chain", "feedback_interface", "interpretation_boundary", "repository_infrastructure", "historical_asset"]},
         "canonical_target": {"$ref": "#/$defs/nonblank"},
-        "path_patterns": {"$ref": "#/$defs/stringArray"},
+        "path_patterns": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
         "authority": {"enum": ["canonical", "derived", "declarative", "historical"]},
         "layer_or_overlay": {"enum": ["L0", "L1", "L2", "L3", "L4", "L5", "L6", "foundation", "overlay", "governance", "publication", "infrastructure", "boundary"]},
         "lifecycle": {

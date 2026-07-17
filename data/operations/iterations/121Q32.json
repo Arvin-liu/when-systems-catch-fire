@@ -287,7 +287,7 @@
     "impact_report_path": "reports/operations/121Q32-change-propagation-impact.md",
     "system_map_delta_path": "data/operations/propagation/121Q32-system-map-delta.json",
     "residue_path": "data/operations/propagation/121Q32-residue.json",
-    "closure_hash": "b4b885066b51bf700d89763b0ea414c14791d505a144a887ee22861310ac058a",
+    "closure_hash": "bed6822a7047c04b06e887446b3bf60f0d9408c8971548734c6ed3691ec20fdc",
     "base_identity": "d1bedb074af8dad8202b4324f3f5bbbb6b308b51",
     "head_identity": "external_exact_head_attestation",
     "seed_paths": [
@@ -342,7 +342,6 @@
       "iteration_manifest_contract",
       "mcf",
       "no_l7",
-      "no_totality_proof",
       "pages_pipeline",
       "project_component_registry",
       "propagation_calculator",
@@ -379,6 +378,7 @@
       "calculator_projects_sync",
       "layout_generates_projection",
       "manifest_tracks_iteration",
+      "map_current_state_no_totality",
       "map_iteration_sync",
       "map_no_l7_truth",
       "map_no_truth_totality",
@@ -590,7 +590,7 @@
     ],
     "system_map_impact": {
       "decision": "CHANGE",
-      "reason": "The authoritative source and typed relation metadata change while the compatible 9/41/35 topology remains.",
+      "reason": "The authoritative source and typed relation metadata change while the compatible 9/41/37 topology remains (two new boundary edges added).",
       "delta_path": "data/operations/propagation/121Q32-system-map-delta.json"
     },
     "unresolved_residue": [],

@@ -31,7 +31,19 @@
         "declaration_source": {"$ref": "#/$defs/nonblank"},
         "claim_ceiling": {"$ref": "#/$defs/nonblank"},
         "residue": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}
-      }
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"relation_domain": {"const": "substantive_causal_candidate"}}, "required": ["relation_domain"]},
+          "then": {
+            "properties": {
+              "propagation_mode": {"const": "informational_only"},
+              "required_evaluation": {"const": false},
+              "creates_sync_obligation": {"const": false}
+            }
+          }
+        }
+      ]
     }
   }
 }

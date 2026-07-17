@@ -1,9 +1,9 @@
 # 121Q32 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `b4b885066b51bf700d89763b0ea414c14791d505a144a887ee22861310ac058a`
+- Closure hash: `bed6822a7047c04b06e887446b3bf60f0d9408c8971548734c6ed3691ec20fdc`
 - Fixpoint iterations: `2`
-- Seeds: `ai_guide, current_state, historical_reports, iteration, iteration_manifest_contract, mcf, no_l7, no_totality_proof, pages_pipeline, project_component_registry, propagation_calculator, propagation_topology, readme, summary, sync, system_map_layout, system_map_projection, usage`
+- Seeds: `ai_guide, current_state, historical_reports, iteration, iteration_manifest_contract, mcf, no_l7, pages_pipeline, project_component_registry, propagation_calculator, propagation_topology, readme, summary, sync, system_map_layout, system_map_projection, usage`
 - Resolved components: `19`
 - Registry-derived surfaces: `16`
 - System-map decision: `CHANGE`
@@ -13,6 +13,7 @@
 - `propagation_calculator --projects / repository_dependency--> sync` — declared relation closure only
 - `system_map_layout --generates / repository_dependency--> system_map_projection` — display derivation only
 - `iteration_manifest_contract --version_tracks / repository_dependency--> iteration` — audit binding only
+- `current_state --constraint / synchronization_obligation--> no_totality_proof` — interpretation boundary only
 - `iteration --synchronization_requires / synchronization_obligation--> sync` — governance synchronization obligation
 - `no_l7 --constraint / synchronization_obligation--> no_truth_upgrade` — architecture boundary
 - `no_truth_upgrade --constraint / synchronization_obligation--> no_totality_proof` — claim boundary

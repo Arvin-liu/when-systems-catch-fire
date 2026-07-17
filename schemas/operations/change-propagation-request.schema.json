@@ -11,6 +11,7 @@
     "head_identity": {"type": "string", "minLength": 1},
     "changed_paths": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
     "explicit_seed_components": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "explicit_seed_evidence": {"type": "object", "additionalProperties": {"type": "object", "additionalProperties": false, "required": ["reason", "authority"], "properties": {"reason": {"type": "string", "minLength": 1}, "authority": {"type": "string", "minLength": 1}, "source_path": {"type": "string"}}}},
     "state_transition_subjects": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
     "changed_dimensions": {"type": "array", "items": {"enum": ["capability", "identity", "usage", "handoff", "lifecycle_current_state", "governance", "deployment_rendering", "operations_method"]}, "uniqueItems": true},
     "change_classifications": {"type": "array", "minItems": 1, "items": {"enum": ["REPAIR", "CAPABILITY_ADDITION", "INTERFACE_CHANGE", "EVIDENCE_UPDATE", "GOVERNANCE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "HISTORICAL_ONLY", "OPERATIONS_METHOD"]}, "uniqueItems": true},
