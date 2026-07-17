@@ -11,7 +11,7 @@
     "head_binding": {
       "mode": "external_exact_head_attestation",
       "authority": "pull_request_body_and_1111_receipt",
-      "receipt_path": "agent-results/IGNITION-20260717-121Q32-result.md",
+      "receipt_path": "agent-results/IGNITION-20260717-121Q32F6-generated-output-authority-and-exact-head-evidence-closeout-result.md",
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
@@ -77,13 +77,13 @@
   },
   "propagation_closure_hash": "3d702489aa698747c75b24601530ec73f3c8ced770491e0466f687c02f073414",
   "pages_artifacts": {
-    "github_artifact_archive_digest": "sha256:ede5750838347ae9498b2cd58da6b41ba6c853cb274b594ac782dcb19a5bbfe8",
-    "pages_payload_tar_digest": "sha256:7460d87fa1421f2fa52a6633673a3a9e3a4a72b85f2fe21e6bb150eb53ea8ca7"
+    "github_artifact_archive_digest": "sha256:a71ac433c4295d0195f6f7e5618db3ce03d29b472ecdbd669e39b1cce5e10131",
+    "pages_payload_tar_digest": "sha256:4d55a77ef7e5b1ae8f0ecc239c85662cbca28c89b03cbd70395361dada1f9c47"
   },
   "ci_runs": {
-    "foundation": 29568789073,
-    "function_os": 29568887356,
-    "pages": 29568889823
+    "foundation": 29568983823,
+    "function_os": 29570163014,
+    "pages": 29570169044
   },
-  "exact_head": "aa8d76cfa6d241e22b6d6f86ef9844061952ad47"
+  "exact_head": "c0226c59a6aafe327e76ef37c3c8e63e7eab030a"
 }
