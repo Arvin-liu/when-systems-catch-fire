@@ -775,6 +775,54 @@
       "residue": []
     },
     {
+      "relation_id": "map_foundation_no_truth",
+      "source": "foundation",
+      "target": "no_truth_upgrade",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation",
+      "trigger_dimensions": [
+        "identity",
+        "capability"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": true,
+      "label": "真值边界",
+      "declaration_source": "FOUNDATION.md",
+      "claim_ceiling": "interpretation boundary only",
+      "residue": []
+    },
+    {
+      "relation_id": "map_current_state_no_totality",
+      "source": "current_state",
+      "target": "no_totality_proof",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation",
+      "trigger_dimensions": [
+        "identity",
+        "lifecycle_current_state"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": true,
+      "label": "完整性边界",
+      "declaration_source": "docs/project-current-state.md",
+      "claim_ceiling": "interpretation boundary only",
+      "residue": []
+    },
+    {
       "relation_id": "registry_generates_projection",
       "source": "project_component_registry",
       "target": "system_map_projection",
@@ -1024,6 +1072,40 @@
       "label": "历史证据",
       "declaration_source": "reports/operations/",
       "claim_ceiling": "historical documentation only",
+      "residue": []
+    },
+    {
+      "relation_id": "map_foundation_no_truth",
+      "source": "system_map",
+      "target": "foundation_data",
+      "relation_class": "constraint",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [],
+      "trigger_classifications": [],
+      "propagation_mode": "informational_only",
+      "required_evaluation": false,
+      "creates_sync_obligation": false,
+      "map_visible": false,
+      "label": "Map foundation has no independent truth claim",
+      "declaration_source": "117d boundary",
+      "claim_ceiling": "informational boundary only",
+      "residue": []
+    },
+    {
+      "relation_id": "map_current_state_no_totality",
+      "source": "system_map",
+      "target": "current_state",
+      "relation_class": "constraint",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [],
+      "trigger_classifications": [],
+      "propagation_mode": "informational_only",
+      "required_evaluation": false,
+      "creates_sync_obligation": false,
+      "map_visible": false,
+      "label": "Map cannot claim totality of current state",
+      "declaration_source": "117d boundary",
+      "claim_ceiling": "informational boundary only",
       "residue": []
     }
   ],

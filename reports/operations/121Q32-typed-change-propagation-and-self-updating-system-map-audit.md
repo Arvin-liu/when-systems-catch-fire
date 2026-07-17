@@ -39,15 +39,15 @@ The materialized map is now checked against the three upstream authorities. Hidd
 
 ## Closure result
 
-- Closure hash: `b4b885066b51bf700d89763b0ea414c14791d505a144a887ee22861310ac058a`
-- Changed-path seeds: `42`
+- Closure hash: `3d702489aa698747c75b24601530ec73f3c8ced770491e0466f687c02f073414`
+- Changed-path seeds: `48`
 - Fixpoint: reached in `2` iterations
 - Resolved components: `19`
-- Typed paths traversed: `14`
+- Typed paths traversed: `15`
 - Registry-derived synchronization surfaces: `16`
 - Unresolved residue: `0`
-- Map delta: 41 nodes and 35 edges gain derived lifecycle/relation-domain metadata; no node or edge is added or removed
-- Compatible visible topology: `9 groups / 41 nodes / 35 edges / L0-L6`
+- Map delta: 41 nodes and 37 edges gain derived lifecycle/relation-domain metadata; nodes added: 0, nodes removed: 0, edges added: 2 (boundary edges), edges removed: 0; total: 37
+- Compatible visible topology: `9 groups / 41 nodes / 37 edges / L0-L6`
 
 Zero residue means every declared mapping and triggered obligation received a decision. It does not prove registry completeness or absence of unknown dependencies.
 

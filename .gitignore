@@ -14,6 +14,5 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+.tmp-pages
 .tmp-dl/
-.tmp-pages/
-.tmp-dl-artifact/
