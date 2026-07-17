@@ -918,7 +918,8 @@
         "tests/fixtures/",
         "data/operations/generated-output-authority.json",
         "schemas/operations/generated-output-authority.schema.json",
-        "tools/operations/validate_generated_output_authority.py"
+        "tools/operations/validate_generated_output_authority.py",
+        ".gitignore"
       ],
       "authority": "derived",
       "layer_or_overlay": "infrastructure",

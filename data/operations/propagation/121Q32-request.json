@@ -6,6 +6,7 @@
   "changed_paths": [
     ".github/workflows/foundation-validation.yml",
     ".github/workflows/pages.yml",
+    ".gitignore",
     "AI-HANDOFF.md",
     "AI-START-HERE.md",
     "ARCHITECTURE.md",

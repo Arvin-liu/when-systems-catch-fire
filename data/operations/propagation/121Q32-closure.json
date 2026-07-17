@@ -181,7 +181,7 @@
   "base_identity": "d1bedb074af8dad8202b4324f3f5bbbb6b308b51",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "6d21ad8e6b29e8da61f3539c430b88feac5f1d8be4d4c6d55c3d2ad0e6bf9a4b",
+  "closure_hash": "3d702489aa698747c75b24601530ec73f3c8ced770491e0466f687c02f073414",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -289,6 +289,7 @@
   "seed_paths": [
     ".github/workflows/foundation-validation.yml",
     ".github/workflows/pages.yml",
+    ".gitignore",
     "AI-HANDOFF.md",
     "AI-START-HERE.md",
     "ARCHITECTURE.md",
