@@ -101,81 +101,6 @@ def normalize_repo_path(raw: str) -> str:
     return normalized
 
 
-# ── G4 extension: repository boundary / symlink escape prevention ─────────────
-
-def check_repo_boundary(raw_path: str, repo_root: Path = ROOT) -> None:
-    """Reject paths that escape the repository root via realpath/symlink.
-
-    Lexical contract (normalize_repo_path) already ran. This adds the
-    filesystem-level boundary check. A missing/deleted path still runs the
-    lexical contract; only when the path exists do we resolve realpath and
-    verify containment. Symlink ancestors are also checked.
-    """
-    candidate = repo_root / raw_path
-    root_resolved = repo_root.resolve()
-    # Check symlink ancestors (existing or not) up to repo root
-    chain = [candidate, *candidate.parents]
-    for node in chain:
-        if node == root_resolved:
-            break
-        try:
-            if node.is_symlink():
-                real = node.resolve()
-                require(real == root_resolved or root_resolved in real.parents,
-                        f"symlink ancestor escapes repository root: {raw_path}")
-        except OSError:
-            pass
-    # If the path itself exists (file or symlink), verify realpath containment
-    if candidate.exists() or candidate.is_symlink():
-        real = candidate.resolve()
-        require(real == root_resolved or root_resolved in real.parents,
-                f"path escapes repository root via symlink: {raw_path}")
-
-
-def _git_rev_parse(repo_root: Path, ref: str) -> str:
-    """Resolve a git revision to a SHA. Fail-closed: raises on any error."""
-    try:
-        out = subprocess.run(["git", "-C", str(repo_root), "rev-parse", ref],
-                              check=True, capture_output=True, text=True)
-        return out.stdout.strip()
-    except subprocess.CalledProcessError as exc:
-        raise ValueError(f"cannot resolve git revision '{ref}': {exc.stderr.strip()}")
-
-
-def detect_tracked_symlink_escapes(repo_root: Path = ROOT, revision: str = "HEAD") -> list[str]:
-    """Return list of tracked symlink paths (mode 120000) whose target escapes root.
-
-    Fail-closed: any failure to read the git tree or symlink target raises
-    ValueError (caller converts it to blocking residue), never silently [].
-    """
-    try:
-        out = subprocess.run(
-            ["git", "-C", str(repo_root), "ls-tree", "-r", revision, "--format=%(objectmode) %(path)"],
-            check=True, capture_output=True, text=True,
-        ).stdout
-    except subprocess.CalledProcessError as exc:
-        raise ValueError(f"failed to read git tree for revision '{revision}': {exc.stderr.strip()}")
-    root_resolved = repo_root.resolve()
-    escapes: list[str] = []
-    for line in out.splitlines():
-        if not line.startswith("120000"):
-            continue
-        path = line[len("120000 "):].strip()
-        try:
-            target = subprocess.run(
-                ["git", "-C", str(repo_root), "show", f"{revision}:{path}"],
-                check=True, capture_output=True, text=True,
-            ).stdout.strip()
-        except subprocess.CalledProcessError as exc:
-            raise ValueError(f"failed to read symlink target for '{path}' at '{revision}': {exc.stderr.strip()}")
-        # Resolve target relative to the symlink's directory
-        sym_dir = (repo_root / path).parent
-        resolved = (sym_dir / target).resolve()
-        if resolved != root_resolved and root_resolved not in resolved.parents:
-            escapes.append(path)
-    return escapes
-
-
 # ── G1: Relation domain authority ─────────────────────────────────────────────
 
 SCC_DOMAIN = "substantive_causal_candidate"
@@ -222,7 +147,11 @@ def resolve_paths(paths: list[str], components: dict[str, dict],
         overlap_map[key] = ov
     for raw_path in paths:
         # G4: normalize path
-        path = normalize_repo_path(raw_path)
+        try:
+            path = normalize_repo_path(raw_path)
+        except ValueError as exc:
+            residue.append({"type": "non_canonical_path", "path": raw_path, "message": str(exc)})
+            continue
         hits = sorted(component_id for component_id, component in components.items()
                       if any(matches_pattern(path, pattern) for pattern in component["path_patterns"]))
         if not hits:
@@ -254,8 +183,18 @@ def resolve_paths(paths: list[str], components: dict[str, dict],
                             break
                 if not covered:
                     residue.append({"type": "ambiguous_path_mapping", "path": path, "hits": hits,
-                                    "message": f"Path matches multiple components {hits} without explicit overlap declaration."})
+                                    "message": f"Path matches multiple components {hits} with no declared overlap."})
     return resolved, residue
+
+
+def validate_overlap_declarations(allowed_overlaps: list[dict], components: dict[str, dict]) -> None:
+    """Validate that overlap declarations reference known components and have required fields."""
+    for ov in allowed_overlaps:
+        ids = ov.get("component_ids", [])
+        require(len(ids) >= 2, f"overlap declaration must list at least 2 components: {ids}")
+        for cid in ids:
+            require(cid in components, f"overlap declaration references unknown component: {cid}")
+        require("path_patterns" in ov, f"overlap declaration must include path_patterns: {ids}")
 
 
 def relation_is_triggered(relation: dict, dimensions: set[str], classifications: set[str]) -> bool:
@@ -274,11 +213,10 @@ def traverse_fixpoint(seed_components: set[str], topology: dict, dimensions: set
         for relation in topology["relations"]:
             if relation["source"] not in resolved or not relation_is_triggered(relation, dimensions, classifications):
                 continue
-            # G1 traversal defense: SCC domain NEVER enters propagation closure,
-            # even if upstream validator is bypassed
-            if relation["relation_domain"] == SCC_DOMAIN:
-                continue
             if relation["propagation_mode"] == "informational_only":
+                continue
+            # G1: SCC domain must never propagate, even if validation is bypassed
+            if relation["relation_domain"] == SCC_DOMAIN:
                 continue
             traversed[relation["relation_id"]] = {
                 "relation_id": relation["relation_id"],
@@ -375,91 +313,7 @@ def decisions_by_id(items: list[dict]) -> dict[str, dict]:
     return result
 
 
-def validate_overlap_declarations(components: dict[str, dict], allowed_overlaps: list[dict]) -> list[dict]:
-    """Validate allowed_path_overlaps declarations (G2 hardening).
-
-    Each declaration must:
-      - reference only real component_ids (no fabricated ids)
-      - not duplicate or conflict with another declaration's component set
-      - declare an authority_source that is a repo-canonical locator
-      - list path_patterns that actually produce the declared hit set
-    Returns blocking residue items for any violation.
-    """
-    residue: list[dict] = []
-    seen_sets: dict[frozenset[str], str] = {}
-    for ov in allowed_overlaps:
-        cids = ov.get("component_ids", [])
-        # Field validation: must list at least 2 components and include path_patterns
-        if len(cids) < 2:
-            residue.append({
-                "type": "invalid_overlap_declaration",
-                "message": f"overlap declaration must list at least 2 components: {cids}",
-            })
-            continue
-        if "path_patterns" not in ov:
-            residue.append({
-                "type": "invalid_overlap_declaration",
-                "message": f"overlap declaration must include path_patterns: {cids}",
-            })
-            continue
-        # All referenced component ids must be real
-        unknown = [c for c in cids if c not in components]
-        if unknown:
-            residue.append({
-                "type": "invalid_overlap_declaration",
-                "message": f"allowed_path_overlaps references unknown component(s): {unknown}",
-            })
-            continue
-        # No duplicate / conflicting declarations for the same component set
-        key = frozenset(cids)
-        if key in seen_sets:
-            residue.append({
-                "type": "invalid_overlap_declaration",
-                "message": f"duplicate or conflicting overlap declaration for component set {sorted(key)}",
-            })
-        else:
-            seen_sets[key] = ov.get("authority_source", "")
-        # authority_source must be a repo-canonical locator (no absolute/escape)
-        auth = ov.get("authority_source", "")
-        try:
-            normalize_repo_path(auth)
-        except ValueError:
-            residue.append({
-                "type": "invalid_overlap_declaration",
-                "message": f"overlap authority_source is not a repo-canonical locator: {auth}",
-            })
-        # Declared path_patterns must actually produce the declared hit set.
-        # Declared path_patterns must actually produce the declared hit set.
-        # A component cid is in the hit set for scope S if any file under S
-        # (S being a directory prefix or an exact file) matches the component's
-        # path_patterns in resolve_paths. That is: the component's pattern is an
-        # ancestor of S (c_pattern is a prefix of S) or a descendant of S
-        # (S is a prefix of c_pattern) or exactly equal to S.
-        declared_patterns = ov.get("path_patterns", [])
-        if declared_patterns:
-            def component_in_scope(c_pattern: str, scope: str) -> bool:
-                if c_pattern == scope:
-                    return True
-                # ancestor: the component's pattern is a prefix of the scope
-                if scope.startswith(c_pattern):
-                    return True
-                # descendant: the scope is a directory prefix of the component pattern
-                if scope.endswith("/") and c_pattern.startswith(scope):
-                    return True
-                return False
-            hit = frozenset(
-                cid for cid, comp in components.items()
-                if any(component_in_scope(p, pat) for pat in declared_patterns for p in comp["path_patterns"])
-            )
-            if hit != key:
-                residue.append({
-                    "type": "invalid_overlap_declaration",
-                    "message": f"overlap declared hit set {sorted(key)} != actual {sorted(hit)} for patterns {declared_patterns}",
-                })
-    return residue
-
-
-def compute(request: dict, components_doc: dict | None = None, topology_doc: dict | None = None, surfaces_doc: dict | None = None, baseline_map: dict | None = None, head_ref: str = "HEAD") -> tuple[dict, dict]:
+def compute(request: dict, components_doc: dict | None = None, topology_doc: dict | None = None, surfaces_doc: dict | None = None, baseline_map: dict | None = None) -> tuple[dict, dict]:
     validate_json(request, REQUEST_SCHEMA, "propagation request")
     components_doc = components_doc or load_json(COMPONENTS)
     topology_doc = topology_doc or load_json(TOPOLOGY)
@@ -469,117 +323,65 @@ def compute(request: dict, components_doc: dict | None = None, topology_doc: dic
     validate_json(surfaces_doc, SURFACE_SCHEMA, "synchronization surface registry")
     components = {item["component_id"]: item for item in components_doc["components"]}
     require(len(components) == len(components_doc["components"]), "duplicate component id")
-    residue: list[dict] = []
-    # G1: Validate relation authority for every relation (runtime guard)
     for relation in topology_doc["relations"]:
         require(relation["source"] in components and relation["target"] in components, f"relation references unknown component: {relation['relation_id']}")
+        # G1: Full authority validation (replaces the old automatic-only check)
         validate_relation_authority(relation)
 
-    # G2 hardening: validate overlap declarations reference real components and resolve
-    allowed_overlaps = components_doc.get("allowed_path_overlaps", [])
-    residue.extend(validate_overlap_declarations(components, allowed_overlaps))
+    # G2: Validate overlap declarations
+    allowed_overlaps = topology_doc.get("allowed_path_overlaps", [])
+    validate_overlap_declarations(allowed_overlaps, components)
 
-    # G4: Normalize and validate all changed paths (strict canonical form)
-    normalized_paths = []
-    for p in request["changed_paths"]:
-        try:
-            np = normalize_repo_path(p)
-        except ValueError as exc:
-            residue.append({"type": "non_canonical_path", "path": p, "message": str(exc)})
-            continue
-        # G4 extension: repository boundary / symlink escape check
-        try:
-            check_repo_boundary(np)
-        except ValueError as exc:
-            residue.append({"type": "path_outside_repo", "path": np, "message": str(exc)})
-            continue
-        normalized_paths.append(np)
-
-    # G4 extension: reject tracked symlinks that escape the repo root.
-    # Scan BOTH the real checkout HEAD and the declared base_identity (fail-closed:
-    # any git failure becomes blocking residue, never a silent empty list).
-    # An unresolvable head_ref must produce a structured blocking residue rather
-    # than aborting the whole computation.
-    try:
-        real_head = _git_rev_parse(ROOT, head_ref)
-    except ValueError as exc:
-        residue.append({"type": "tracked_symlink_scan_failed", "revision": head_ref,
-                        "message": f"cannot resolve checkout HEAD ref '{head_ref}': {exc}"})
-        real_head = None
-    symlink_revisions = [real_head] if real_head else []
-    base_identity = request.get("base_identity")
-    if base_identity:
-        try:
-            symlink_revisions.append(_git_rev_parse(ROOT, base_identity))
-        except ValueError as exc:
-            residue.append({"type": "tracked_symlink_scan_failed", "revision": base_identity,
-                            "message": str(exc)})
-    scanned = set()
-    for rev in symlink_revisions:
-        if rev in scanned:
-            continue
-        scanned.add(rev)
-        try:
-            for esc in detect_tracked_symlink_escapes(revision=rev):
-                residue.append({"type": "tracked_symlink_escape", "path": esc, "revision": rev,
-                                "message": f"tracked symlink escapes repository root: {esc} (revision {rev})"})
-        except ValueError as exc:
-            residue.append({"type": "tracked_symlink_scan_failed", "revision": rev,
-                            "message": str(exc)})
-
-    # G3: Validate explicit seeds with provenance
-    explicit_seeds = request.get("explicit_seed_components", [])
-    explicit_seed_evidence = request.get("explicit_seed_evidence", {})
-    explicit = set(explicit_seeds)
+    path_seeds, residue = resolve_paths(request["changed_paths"], components, allowed_overlaps)
+    explicit = set(request.get("explicit_seed_components", []))
     unknown_explicit = sorted(explicit - set(components))
     residue.extend({"type": "unknown_seed_component", "component_id": item, "message": "Explicit seed is not registered."} for item in unknown_explicit)
 
-    # Check provenance for explicit seeds not covered by path resolution
-    path_seeds_set = set()  # will be filled after resolve_paths
-
-    # G2: Resolve paths with overlap detection
-    path_seeds, path_residue = resolve_paths(normalized_paths, components,
-                                              allowed_overlaps=components_doc.get("allowed_path_overlaps", []))
-    path_seeds_set = set(path_seeds)
-    residue.extend(path_residue)
-
-    # G3: Check explicit seeds that are NOT covered by path resolution
-    for seed_id in sorted(explicit & set(components)):
-        if seed_id not in path_seeds_set:
-            # This explicit seed has no path佐证 — must have structured evidence
-            evidence = explicit_seed_evidence.get(seed_id)
-            if not evidence:
-                residue.append({"type": "unsubstantiated_explicit_seed", "component_id": seed_id,
-                                "message": f"Explicit seed '{seed_id}' has no path mapping and no structured evidence."})
+    # G3: Explicit seed evidence checking
+    explicit_seed_evidence = request.get("explicit_seed_evidence", {})
+    for comp_id in sorted(explicit):
+        if comp_id not in components:
+            continue
+        # Check if this seed has path support from changed_paths
+        comp_patterns = components[comp_id]["path_patterns"]
+        def _safe_matches(p):
+            try:
+                np = normalize_repo_path(p)
+            except ValueError:
+                return False
+            return any(matches_pattern(np, pat) for pat in comp_patterns)
+        has_path_support = any(_safe_matches(p) for p in request["changed_paths"])
+        if not has_path_support:
+            # No path support — check for structured evidence
+            evidence = explicit_seed_evidence.get(comp_id)
+            if not evidence or not evidence.get("reason") or not evidence.get("authority"):
+                residue.append({
+                    "type": "unsubstantiated_explicit_seed",
+                    "component_id": comp_id,
+                    "message": f"Explicit seed '{comp_id}' has no changed_path mapping and no structured evidence (reason + authority)."
+                })
             else:
-                # Validate evidence structure
-                req_fields = ["reason", "authority"]
-                missing = [f for f in req_fields if not evidence.get(f)]
-                if missing:
-                    residue.append({"type": "unsubstantiated_explicit_seed", "component_id": seed_id,
-                                    "message": f"Explicit seed '{seed_id}' evidence missing fields: {missing}."})
-                else:
-                    # Check evidence mapping conflict: evidence path should map to the claimed component
-                    ev_path = evidence.get("source_path")
-                    if ev_path:
-                        try:
-                            ev_path = normalize_repo_path(ev_path)
-                        except ValueError as exc:
-                            residue.append({"type": "explicit_seed_evidence_invalid_path", "component_id": seed_id,
-                                            "message": str(exc)})
-                            continue
-                        try:
-                            check_repo_boundary(ev_path)
-                        except ValueError as exc:
-                            residue.append({"type": "explicit_seed_evidence_outside_repo", "component_id": seed_id,
-                                            "message": str(exc)})
-                            continue
-                        ev_hits = sorted(cid for cid, comp in components.items()
-                                         if any(matches_pattern(ev_path, p) for p in comp["path_patterns"]))
-                        if ev_hits and seed_id not in ev_hits:
-                            residue.append({"type": "explicit_seed_mapping_conflict", "component_id": seed_id,
-                                            "evidence_path": ev_path, "actual_hits": ev_hits,
-                                            "message": f"Explicit seed '{seed_id}' evidence path maps to {ev_hits}, not '{seed_id}'."})
+                # Evidence provided — verify source_path maps to the claimed component
+                source_path = evidence.get("source_path", "")
+                if source_path:
+                    try:
+                        normalized_source = normalize_repo_path(source_path)
+                        source_hits = sorted(
+                            cid for cid, comp in components.items()
+                            if any(matches_pattern(normalized_source, pat) for pat in comp["path_patterns"])
+                        )
+                        if source_hits and comp_id not in source_hits:
+                            residue.append({
+                                "type": "explicit_seed_mapping_conflict",
+                                "component_id": comp_id,
+                                "message": f"Explicit seed '{comp_id}' evidence source_path '{source_path}' maps to {source_hits}, not '{comp_id}'."
+                            })
+                    except ValueError:
+                        residue.append({
+                            "type": "explicit_seed_mapping_conflict",
+                            "component_id": comp_id,
+                            "message": f"Explicit seed '{comp_id}' evidence source_path is not canonical: '{source_path}'."
+                        })
 
     seed_components = path_seeds | (explicit & set(components))
     dimensions = set(request["changed_dimensions"])
@@ -675,10 +477,8 @@ def main() -> int:
     parser.add_argument("--map-delta", type=Path, required=True)
     parser.add_argument("--residue", type=Path, required=True)
     parser.add_argument("--check", action="store_true")
-    parser.add_argument("--head-ref", type=str, default="HEAD",
-                        help="Git ref to treat as the real checkout HEAD for symlink scans (defaults to HEAD).")
     args = parser.parse_args()
-    closure, delta = compute(load_json(args.request), head_ref=args.head_ref)
+    closure, delta = compute(load_json(args.request))
     report = impact_report(closure).encode("utf-8")
     residue_doc = {"task_id": closure["task_id"], "closure_hash": closure["closure_hash"], "closure_complete": closure["closure_complete"], "residue": closure["residue"]}
     products = {args.output: serialized(closure), args.report: report, args.map_delta: serialized(delta), args.residue: serialized(residue_doc)}

@@ -158,12 +158,6 @@
     <path class="edge" d="M 1488.0 1430.0 C 1488.0 1436.0, 1488.0 1436.0, 1488.0 1442.0" data-source="no_truth_upgrade" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>no_truth_upgrade → no_totality_proof: 边界 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 241.0 C 1488.0 241.0, 1488.0 1403.0, 1488.0 1403.0" data-source="foundation" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
-      <title>foundation → no_truth_upgrade: 真值边界 [synchronization_obligation]</title>
-    </path>
-    <path class="edge" d="M 312.0 505.0 C 900.0 505.0, 900.0 1469.0, 1488.0 1469.0" data-source="current_state" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
-      <title>current_state → no_totality_proof: 完整性边界 [synchronization_obligation]</title>
-    </path>
   </g>
   <g aria-label="clickable system components">
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/README.md" target="_top" data-node-id="readme" data-group="front_doors" data-target="README.md" aria-label="README 首页：项目现状、成果、价值约束、完整系统图与使用入口。">

@@ -707,22 +707,6 @@
       "label": "边界",
       "relation_class": "constraint",
       "relation_domain": "synchronization_obligation"
-    },
-    {
-      "id": "map_foundation_no_truth",
-      "source": "foundation",
-      "target": "no_truth_upgrade",
-      "label": "真值边界",
-      "relation_class": "constraint",
-      "relation_domain": "synchronization_obligation"
-    },
-    {
-      "id": "map_current_state_no_totality",
-      "source": "current_state",
-      "target": "no_totality_proof",
-      "label": "完整性边界",
-      "relation_class": "constraint",
-      "relation_domain": "synchronization_obligation"
     }
   ]
 }
