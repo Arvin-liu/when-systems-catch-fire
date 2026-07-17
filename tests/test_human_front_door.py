@@ -86,6 +86,10 @@ class HumanFrontDoorTests(unittest.TestCase):
         result = validate_all()
         self.assertEqual(result["interactive_system_map_nodes"], 41)
 
+    def test_pages_artifact_carries_typed_propagation_evidence(self):
+        self.assertIn("typed-change-propagation.md", self.pages)
+        self.assertIn("121Q32-change-propagation-impact.md", self.pages)
+
 
 if __name__ == "__main__":
     unittest.main()

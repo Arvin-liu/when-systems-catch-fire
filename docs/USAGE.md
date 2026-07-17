@@ -26,6 +26,12 @@
 
 需要从整体结构定位入口时，打开[完整可点击系统图](./architecture/interactive-system-map.md)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。
 
+### 1.2 Draft candidate：计算一次项目变更的传播闭包
+
+当前正式方法仍是 1.1.0。若任务明确试用 121Q32 candidate，先在 `data/operations/propagation/<task>-request.json` 登记 changed paths、显式 seed components、changed dimensions、classifications 和逐项决定，再运行 `tools/operations/compute_change_propagation.py` 生成 closure、impact report、map delta 与 residue。只有 closure 达到 fixpoint、每个 required component/surface 有决定、map 投影匹配且 residue 为空，才能进入候选 Ready。
+
+`NO_CHANGE_WITH_REASON` 允许纯历史修字不触发无关全仓更新；新增正式构件则必须进入系统图，或提供 validator 可检查的 hidden representation 与理由。这里计算的是声明关系下的仓库／治理传播，不是现实因果。
+
 向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁和伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN、Atlas 或迭代流程。点赞、赞美、传播和多 AI 共识只能是体验／传播数据。
 
 肉身锚定只是可选入口／回返模式；跨域同构叙事只是一种应用；高维压缩结尾也可省略。没有身体坐标、没有跨学科例子或没有格言式结尾，都不构成自动降级。

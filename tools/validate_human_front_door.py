@@ -10,9 +10,9 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 try:
-    from tools.generate_interactive_system_map import load_spec, render_svg, validate_spec
+    from tools.generate_interactive_system_map import build_projection, load_spec, render_svg, validate_spec
 except ModuleNotFoundError:  # Direct script execution adds tools/, not repository root, to sys.path.
-    from generate_interactive_system_map import load_spec, render_svg, validate_spec
+    from generate_interactive_system_map import build_projection, load_spec, render_svg, validate_spec
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -85,6 +85,7 @@ def validate_system_map(root: Path, readme: str, pages: str) -> int:
     for path in (SYSTEM_MAP_SPEC, SYSTEM_MAP_SVG, SYSTEM_MAP_PAGE):
         require(path.is_file(), f"missing interactive system-map asset: {path}")
     spec = load_spec(SYSTEM_MAP_SPEC)
+    require(spec == build_projection(), "interactive system-map materialized spec is stale or hand-maintained")
     validate_spec(spec, root)
     require(SYSTEM_MAP_SVG.read_bytes() == render_svg(spec, root), "interactive system-map SVG is stale")
 
@@ -121,6 +122,10 @@ def validate_system_map(root: Path, readme: str, pages: str) -> int:
     require("cp pages/generated/ignition-system-map.svg site/generated/ignition-system-map.svg" in pages, "Pages workflow omits generated SVG publication")
     require("cp pages/system-map.html site/system-map.html" in pages, "Pages workflow omits canonical interactive page")
     require("generate_interactive_system_map.py --check" in pages, "Pages workflow does not reject stale generated SVG")
+    require("cp docs/architecture/typed-change-propagation.md site/docs/architecture/typed-change-propagation.md" in pages, "Pages artifact omits typed propagation documentation")
+    require("cp reports/operations/121Q32-change-propagation-impact.md site/reports/operations/121Q32-change-propagation-impact.md" in pages, "Pages artifact omits propagation impact report")
+    require(spec.get("schema_version") == "2.0.0", "system map is not the registry-derived candidate projection")
+    require({edge["relation_domain"] for edge in spec["edges"]} <= {"substantive_causal_candidate", "repository_dependency", "synchronization_obligation"}, "system-map relation domains escape declared authority classes")
 
     page = SYSTEM_MAP_PAGE.read_text(encoding="utf-8")
     require("generated/ignition-system-map.svg" in page and "<object" in page, "canonical interactive page does not embed the SVG")

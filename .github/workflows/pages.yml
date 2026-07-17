@@ -7,6 +7,9 @@ on:
       - README.md
       - docs/ai-assistant-usage-reference.md
       - data/architecture/interactive-system-map.json
+      - data/architecture/interactive-system-map-layout.json
+      - data/operations/project-components.json
+      - data/operations/change-propagation-topology.json
       - tools/generate_interactive_system_map.py
       - .github/workflows/pages.yml
       - pages/**
@@ -42,11 +45,16 @@ jobs:
           mkdir -p site/docs/publication/works
           mkdir -p site/docs/publication/cases
           mkdir -p site/reports/publication
+          mkdir -p site/reports/operations
+          mkdir -p site/docs/architecture
           cp docs/publication/zhiyuan-writing-showcase.md site/docs/publication/zhiyuan-writing-showcase.md
           cp docs/publication/zhiyuan-writing-method.md site/docs/publication/zhiyuan-writing-method.md
           cp docs/publication/works/when-an-army-believes-its-own-back.md site/docs/publication/works/when-an-army-believes-its-own-back.md
           cp docs/publication/cases/jin-rise-case-source.md site/docs/publication/cases/jin-rise-case-source.md
           cp reports/publication/jin-rise-point-fire-analysis.md site/reports/publication/jin-rise-point-fire-analysis.md
+          cp docs/architecture/interactive-system-map.md site/docs/architecture/interactive-system-map.md
+          cp docs/architecture/typed-change-propagation.md site/docs/architecture/typed-change-propagation.md
+          cp reports/operations/121Q32-change-propagation-impact.md site/reports/operations/121Q32-change-propagation-impact.md
           {
             printf '%s\n' '---'
             printf '%s\n' 'title: When Systems Catch Fire / 点火'
