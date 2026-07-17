@@ -69,5 +69,10 @@
     "q29r_modified": false,
     "restricted_source_published": false,
     "live_external_truth_locally_verified": false
+  },
+  "dual_digest": {
+    "github_artifact_archive_digest": "sha256:caf50603d0950a13c30ff34573b204f68c4ff986a3a8223ce09ff31dacd78cd7",
+    "pages_payload_tar_digest": "sha256:403126951a155054705dc65db401d8a3fb566aa1892b3d171777eace77b4ec61",
+    "distinction": "github_artifact_archive_digest is the SHA-256 of the GitHub artifact archive; pages_payload_tar_digest is the SHA-256 of the Pages deployment tarball. They differ because the Pages payload is a curated subset rendered for web deployment."
   }
 }

@@ -541,10 +541,18 @@ class ChangePropagationTests(unittest.TestCase):
         request = load_json(ROOT / "data/operations/propagation/121Q32-request.json")
         # Known deterministic generated outputs (not seeds, but produced by the computation)
         generated_outputs = {
+            "assets/interactive-system-map.svg",
             "data/operations/propagation/121Q32-closure.json",
+            "data/operations/propagation/121Q32-impact-report.md",
+            "data/operations/propagation/121Q32-map-delta.json",
             "data/operations/propagation/121Q32-residue.json",
             "data/operations/propagation/121Q32-system-map-delta.json",
+            "data/protocol-canonical-validation-results.json",
+            "outputs/protocol-canonical-validation-results.md",
             "reports/operations/121Q32-change-propagation-impact.md",
+            "tests/fixtures/persisted-release-result.json",
+            "tests/fixtures/persisted-release.json",
+            "tests/fixtures/persisted-release.md",
         }
         seed_paths = set(request["changed_paths"])
         covered = seed_paths | generated_outputs
@@ -564,10 +572,18 @@ class ChangePropagationTests(unittest.TestCase):
         import subprocess as _sp
         request = load_json(ROOT / "data/operations/propagation/121Q32-request.json")
         generated_outputs = {
+            "assets/interactive-system-map.svg",
             "data/operations/propagation/121Q32-closure.json",
+            "data/operations/propagation/121Q32-impact-report.md",
+            "data/operations/propagation/121Q32-map-delta.json",
             "data/operations/propagation/121Q32-residue.json",
             "data/operations/propagation/121Q32-system-map-delta.json",
+            "data/protocol-canonical-validation-results.json",
+            "outputs/protocol-canonical-validation-results.md",
             "reports/operations/121Q32-change-propagation-impact.md",
+            "tests/fixtures/persisted-release-result.json",
+            "tests/fixtures/persisted-release.json",
+            "tests/fixtures/persisted-release.md",
         }
         seed_paths = set(request["changed_paths"])
         covered = seed_paths | generated_outputs

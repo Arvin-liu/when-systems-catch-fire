@@ -1,7 +1,7 @@
 # 121Q32 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `bed6822a7047c04b06e887446b3bf60f0d9408c8971548734c6ed3691ec20fdc`
+- Closure hash: `279c32833db13f9e31c8c2157b9c94d00673106347b5581abcb5ad2eae629350`
 - Fixpoint iterations: `2`
 - Seeds: `ai_guide, current_state, historical_reports, iteration, iteration_manifest_contract, mcf, no_l7, pages_pipeline, project_component_registry, propagation_calculator, propagation_topology, readme, summary, sync, system_map_layout, system_map_projection, usage`
 - Resolved components: `19`
