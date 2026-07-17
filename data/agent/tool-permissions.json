@@ -1,0 +1,30 @@
+{
+  "contract_type": "tool_permission",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "tp_git_push",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "restricted",
+      "title": "Git push to main",
+      "tool": "git",
+      "action": "push",
+      "target": "main",
+      "allowed": false,
+      "requires_human_decision": true,
+      "claim_ceiling": "enforced_constraint"
+    },
+    {
+      "id": "tp_lab_push",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "allowed",
+      "title": "Git push to lab branches",
+      "tool": "git",
+      "action": "push",
+      "target": "lab/*",
+      "allowed": true,
+      "requires_human_decision": false,
+      "claim_ceiling": "enforced_constraint"
+    }
+  ]
+}

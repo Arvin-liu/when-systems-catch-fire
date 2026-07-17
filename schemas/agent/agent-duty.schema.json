@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LAB-Q35 Agent Duty Contract",
+  "description": "LAB / SPECULATIVE / NON-AUTHORITATIVE",
+  "type": "object",
+  "required": [
+    "contract_type",
+    "version",
+    "entries"
+  ],
+  "properties": {
+    "contract_type": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "array"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "contract_type": "action_trace",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "trace_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "task_id": "121Q32",
+      "state_from": "RUNNING",
+      "state_to": "SUBMITTED",
+      "action": "submit_f11_result",
+      "blocked_by": [],
+      "escalated_to": null,
+      "claim_ceiling": "historical_trace"
+    }
+  ]
+}

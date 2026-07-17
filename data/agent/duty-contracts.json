@@ -1,0 +1,80 @@
+{
+  "contract_type": "agent_duty_contract",
+  "version": "0.1.0",
+  "entries": [
+    {
+      "id": "adc_001",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "active",
+      "title": "No self-review acceptance",
+      "rule": "An agent MUST NOT review its own work and mark it as accepted.",
+      "blocked_actions": [
+        "self_review_accept"
+      ],
+      "requires_human_decision": [
+        "accept",
+        "merge",
+        "deploy"
+      ],
+      "claim_ceiling": "enforced_constraint"
+    },
+    {
+      "id": "adc_002",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "active",
+      "title": "No main branch modification without authorization",
+      "rule": "Agent MUST NOT modify, push, or merge to main without explicit human authorization.",
+      "blocked_actions": [
+        "push_main",
+        "merge_pr",
+        "force_push"
+      ],
+      "requires_human_decision": [
+        "merge_to_main"
+      ],
+      "claim_ceiling": "enforced_constraint"
+    },
+    {
+      "id": "adc_003",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "active",
+      "title": "No lost-context continuation",
+      "rule": "If context is lost or compressed, agent MUST escalate before continuing.",
+      "blocked_actions": [
+        "continue_without_context"
+      ],
+      "requires_human_decision": [
+        "context_recovery_approval"
+      ],
+      "claim_ceiling": "enforced_constraint"
+    },
+    {
+      "id": "adc_004",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "active",
+      "title": "No rights-unknown external material",
+      "rule": "Agent MUST NOT include external materials with unknown rights status.",
+      "blocked_actions": [
+        "include_unknown_rights_content"
+      ],
+      "requires_human_decision": [
+        "rights_clearance"
+      ],
+      "claim_ceiling": "enforced_constraint"
+    },
+    {
+      "id": "adc_005",
+      "created_at": "2026-07-17T00:00:00Z",
+      "status": "active",
+      "title": "No self-fabricated rules",
+      "rule": "Agent MUST NOT invent operational rules for scenarios it has not encountered.",
+      "blocked_actions": [
+        "fabricate_rules"
+      ],
+      "requires_human_decision": [
+        "rule_authorization"
+      ],
+      "claim_ceiling": "enforced_constraint"
+    }
+  ]
+}

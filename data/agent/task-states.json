@@ -1,0 +1,68 @@
+{
+  "contract_type": "task_state",
+  "version": "0.1.0",
+  "valid_states": [
+    "CREATED",
+    "CONTEXT_LOADED",
+    "CLAIMED",
+    "RUNNING",
+    "PAUSED",
+    "ESCALATED",
+    "RESUMED",
+    "SUBMITTED",
+    "REVIEWED",
+    "CLOSED",
+    "BLOCKED",
+    "ABORTED",
+    "QUARANTINED"
+  ],
+  "valid_transitions": {
+    "CREATED": [
+      "CONTEXT_LOADED"
+    ],
+    "CONTEXT_LOADED": [
+      "CLAIMED",
+      "BLOCKED"
+    ],
+    "CLAIMED": [
+      "RUNNING",
+      "BLOCKED",
+      "ABORTED"
+    ],
+    "RUNNING": [
+      "PAUSED",
+      "ESCALATED",
+      "SUBMITTED",
+      "BLOCKED",
+      "ABORTED"
+    ],
+    "PAUSED": [
+      "RESUMED",
+      "ABORTED"
+    ],
+    "ESCALATED": [
+      "RESUMED",
+      "ABORTED"
+    ],
+    "RESUMED": [
+      "RUNNING",
+      "SUBMITTED",
+      "BLOCKED"
+    ],
+    "SUBMITTED": [
+      "REVIEWED",
+      "BLOCKED"
+    ],
+    "REVIEWED": [
+      "CLOSED"
+    ],
+    "CLOSED": [],
+    "BLOCKED": [
+      "RESUMED",
+      "ABORTED"
+    ],
+    "ABORTED": [],
+    "QUARANTINED": []
+  },
+  "entries": []
+}
