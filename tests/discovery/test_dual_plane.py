@@ -1,4 +1,4 @@
-"""LAB-Q34 Dual Plane Tests
+"""LAB-Q34 Dual Plane Tests — V2 Deep Audit (pseudo-tests repaired)
 LAB / SPECULATIVE / NON-AUTHORITATIVE / NOT CURRENT / NOT MERGE-AUTHORIZED
 """
 import json, sys, unittest
@@ -45,37 +45,95 @@ class DualPlaneNormalTests(unittest.TestCase):
                 "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b")
 
 class DualPlaneAttackTests(unittest.TestCase):
+    """Attack tests — REPAIRED in deep audit V2. All now call real validator."""
+
     def test_a1_conjecture_in_commitment_blocked(self):
-        """Low epistemic level must not reach commitment plane."""
-        entry = {"id": "x", "plane": "commitment", "status": "committed",
-                 "epistemic_level": "conjecture", "gates": {
-                     "rights_gate": "pass", "epistemic_gate": "pass", "action_authority_gate": "pass"}}
-        # Validator should catch this
-        from tools.discovery.validate_dual_plane import VALID_EPISTEMIC
-        self.assertIn("conjecture", VALID_EPISTEMIC)
-        # But commitment with conjecture should be invalid
-        low_levels = {"analogy", "inspiration", "conjecture", "model_sketch"}
-        self.assertIn("conjecture", low_levels)
+        """Low epistemic level must not reach commitment plane — real mutation."""
+        from tools.lab.mutation_runner import MutationTest, load_json, deep_copy
+        mt = MutationTest("Q34_atk")
+        doc = load_json("data/discovery/commitment-candidates.json")
+        d = deep_copy(doc)
+        for e in d["entries"]:
+            e["epistemic_level"] = "conjecture"
+            e["plane"] = "commitment"
+            e["status"] = "committed"
+            if "gates" not in e:
+                e["gates"] = {"rights_gate": "pass", "epistemic_gate": "pass", "action_authority_gate": "pass"}
+        try:
+            mt.mutate_file("data/discovery/commitment-candidates.json", d)
+            r = validate_all()
+            self.assertFalse(r.is_pass, f"Conjecture in commitment must fail: {r.report()}")
+        finally:
+            mt.restore()
 
     def test_a2_missing_gate_blocks_promotion(self):
-        """Any gate != pass must block commitment."""
-        gates = {"rights_gate": "pass", "epistemic_gate": "fail", "action_authority_gate": "pass"}
-        self.assertNotEqual(gates["epistemic_gate"], "pass")
+        """Any gate != pass must block commitment — real mutation."""
+        from tools.lab.mutation_runner import MutationTest, load_json, deep_copy
+        mt = MutationTest("Q34_atk")
+        doc = load_json("data/discovery/commitment-candidates.json")
+        d = deep_copy(doc)
+        for e in d["entries"]:
+            if e.get("status") == "committed":
+                if "gates" not in e:
+                    e["gates"] = {}
+                e["gates"]["epistemic_gate"] = "fail"
+        try:
+            mt.mutate_file("data/discovery/commitment-candidates.json", d)
+            r = validate_all()
+            self.assertFalse(r.is_pass, f"Failed gate must block commitment: {r.report()}")
+        finally:
+            mt.restore()
 
     def test_a3_exploration_item_cannot_be_committed(self):
-        """Discovery registry entries must stay in exploration plane."""
-        entry = {"plane": "exploration", "status": "committed"}
-        self.assertNotEqual(entry["plane"], "commitment")
+        """Discovery registry entries must stay in exploration plane — real mutation."""
+        from tools.lab.mutation_runner import MutationTest, load_json, deep_copy
+        mt = MutationTest("Q34_atk")
+        doc = load_json("data/discovery/discovery-registry.json")
+        d = deep_copy(doc)
+        for e in d["entries"]:
+            e["plane"] = "commitment"
+            e["status"] = "committed"
+        try:
+            mt.mutate_file("data/discovery/discovery-registry.json", d)
+            r = validate_all()
+            self.assertFalse(r.is_pass, f"Exploration->commitment must fail: {r.report()}")
+        finally:
+            mt.restore()
 
-    def test_a4_demotion_must_have_reason(self):
-        """Demoted entries must explain why."""
-        entry = {"status": "demoted", "demotion_reason": ""}
-        self.assertFalse(bool(entry.get("demotion_reason")))
+    def test_a4_residue_without_blocked_reasons(self):
+        """Residue without blocked reasons must fail — real mutation."""
+        from tools.lab.mutation_runner import MutationTest, load_json, deep_copy
+        mt = MutationTest("Q34_atk")
+        doc = load_json("data/discovery/residue-records.json")
+        d = deep_copy(doc)
+        for e in d["entries"]:
+            if e.get("status") == "residue":
+                e["promotion_blocked_reasons"] = []
+        try:
+            mt.mutate_file("data/discovery/residue-records.json", d)
+            r = validate_all()
+            self.assertFalse(r.is_pass, f"Residue without reasons must fail: {r.report()}")
+        finally:
+            mt.restore()
 
-    def test_a5_feedback_is_not_evidence(self):
-        """Feedback cannot upgrade epistemic level."""
-        valid_upgrades = {"tested_claim", "validated_hypothesis", "accepted_fact"}
-        self.assertNotIn("feedback_received", valid_upgrades)
+    def test_a5_analogy_epistemic_blocked(self):
+        """Analogy-level epistemic cannot enter commitment — real mutation."""
+        from tools.lab.mutation_runner import MutationTest, load_json, deep_copy
+        mt = MutationTest("Q34_atk")
+        doc = load_json("data/discovery/commitment-candidates.json")
+        d = deep_copy(doc)
+        for e in d["entries"]:
+            e["epistemic_level"] = "analogy"
+            e["plane"] = "commitment"
+            e["status"] = "committed"
+            if "gates" not in e:
+                e["gates"] = {"rights_gate": "pass", "epistemic_gate": "pass", "action_authority_gate": "pass"}
+        try:
+            mt.mutate_file("data/discovery/commitment-candidates.json", d)
+            r = validate_all()
+            self.assertFalse(r.is_pass, f"Analogy in commitment must fail: {r.report()}")
+        finally:
+            mt.restore()
 
     def test_a6_main_not_modified(self):
         import subprocess

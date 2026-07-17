@@ -1,0 +1,200 @@
+{
+  "registry_type": "system_map_delta",
+  "version": "0.1.0",
+  "description": "Q33-Q39 experimental system map nodes. EXPERIMENTAL only \u2014 not formal Current.",
+  "baseline": "1e6e734dfff2f18a2081a2b6fbaf37154caee625",
+  "formal_q32_nodes_unchanged": true,
+  "experimental_nodes": [
+    {
+      "node_id": "EXP-Q33-01",
+      "stage": "Q33",
+      "name": "rights_governance_gate",
+      "type": "governance_validator",
+      "status": "EXPERIMENTAL",
+      "description": "Publication gate validator checking rights registries",
+      "maturity": "PARTIALLY_OPERATIONAL",
+      "connects_to": [
+        "EXP-Q34-01"
+      ]
+    },
+    {
+      "node_id": "EXP-Q33-02",
+      "stage": "Q33",
+      "name": "jurisdiction_registry",
+      "type": "registry",
+      "status": "EXPERIMENTAL",
+      "description": "Jurisdiction coverage registry",
+      "maturity": "SCHEMA_EXISTS"
+    },
+    {
+      "node_id": "EXP-Q33-03",
+      "stage": "Q33",
+      "name": "derivation_ledger",
+      "type": "registry",
+      "status": "EXPERIMENTAL",
+      "description": "Derivation chain ledger",
+      "maturity": "SCHEMA_EXISTS"
+    },
+    {
+      "node_id": "EXP-Q34-01",
+      "stage": "Q34",
+      "name": "dual_plane_validator",
+      "type": "gate_validator",
+      "status": "EXPERIMENTAL",
+      "description": "Discovery-commitment dual plane with three gates",
+      "maturity": "PARTIALLY_OPERATIONAL",
+      "connects_to": [
+        "EXP-Q35-01"
+      ]
+    },
+    {
+      "node_id": "EXP-Q34-02",
+      "stage": "Q34",
+      "name": "epistemic_level_gate",
+      "type": "gate",
+      "status": "EXPERIMENTAL",
+      "description": "Blocks low epistemic levels from commitment",
+      "maturity": "ENFORCED"
+    },
+    {
+      "node_id": "EXP-Q35-01",
+      "stage": "Q35",
+      "name": "agent_duty_validator",
+      "type": "duty_validator",
+      "status": "EXPERIMENTAL",
+      "description": "State machine, permissions, contracts, traces validator",
+      "maturity": "PARTIALLY_OPERATIONAL",
+      "connects_to": [
+        "EXP-Q39-01"
+      ]
+    },
+    {
+      "node_id": "EXP-Q35-02",
+      "stage": "Q35",
+      "name": "state_machine_13states",
+      "type": "state_model",
+      "status": "EXPERIMENTAL",
+      "description": "13-state agent lifecycle with terminal states",
+      "maturity": "SCHEMA_EXISTS_NO_RUNTIME"
+    },
+    {
+      "node_id": "EXP-Q36-01",
+      "stage": "Q36",
+      "name": "temporal_causality_validator",
+      "type": "causality_validator",
+      "status": "EXPERIMENTAL",
+      "description": "Prediction, intervention, observation validator",
+      "maturity": "PARTIALLY_OPERATIONAL",
+      "connects_to": [
+        "EXP-Q34-01"
+      ]
+    },
+    {
+      "node_id": "EXP-Q36-02",
+      "stage": "Q36",
+      "name": "causal_shortcut_blocker",
+      "type": "semantic_check",
+      "status": "EXPERIMENTAL",
+      "description": "Blocks reachability/repetition/analogy as causal proof",
+      "maturity": "ENFORCED"
+    },
+    {
+      "node_id": "EXP-Q37-01",
+      "stage": "Q37",
+      "name": "analogy_audit_validator",
+      "type": "analogy_validator",
+      "status": "EXPERIMENTAL",
+      "description": "Analogy field presence and residue linkage validator",
+      "maturity": "SCHEMA_ONLY_NOT_OPERATIONAL",
+      "connects_to": [
+        "EXP-Q34-01"
+      ]
+    },
+    {
+      "node_id": "EXP-Q38-01",
+      "stage": "Q38",
+      "name": "structural_retrieval_validator",
+      "type": "retrieval_validator",
+      "status": "EXPERIMENTAL",
+      "description": "Relation signatures, cases, counterexamples reference integrity",
+      "maturity": "SCHEMA_ONLY_NOT_OPERATIONAL",
+      "connects_to": [
+        "EXP-Q36-01"
+      ]
+    },
+    {
+      "node_id": "EXP-Q39-01",
+      "stage": "Q39",
+      "name": "failure_memory_validator",
+      "type": "failure_validator",
+      "status": "EXPERIMENTAL",
+      "description": "Failure records, recurrence signatures, repair propagation",
+      "maturity": "DEMO_ONLY_NOT_GENERALIZED",
+      "connects_to": [
+        "EXP-Q33-01",
+        "EXP-Q34-01"
+      ]
+    },
+    {
+      "node_id": "EXP-Q39-02",
+      "stage": "Q39",
+      "name": "q32_failure_pilot_cases",
+      "type": "case_registry",
+      "status": "EXPERIMENTAL",
+      "description": "11 Q32 pilot failure records with fix history",
+      "maturity": "STATIC_REGISTRY"
+    }
+  ],
+  "exploration_relations": [
+    {
+      "from": "EXP-Q33-01",
+      "to": "EXP-Q34-01",
+      "type": "governance_dependency",
+      "note": "Q34 rights_gate depends on Q33 rights registries"
+    },
+    {
+      "from": "EXP-Q34-01",
+      "to": "EXP-Q35-01",
+      "type": "authority_dependency",
+      "note": "Q35 agent actions require Q34 authority gate"
+    },
+    {
+      "from": "EXP-Q35-01",
+      "to": "EXP-Q39-01",
+      "type": "failure_recording",
+      "note": "Q35 violations should generate Q39 failure records (NOT YET IMPLEMENTED)"
+    },
+    {
+      "from": "EXP-Q37-01",
+      "to": "EXP-Q34-01",
+      "type": "discovery_feeding",
+      "note": "Q37 analogy products enter Q34 discovery plane"
+    },
+    {
+      "from": "EXP-Q38-01",
+      "to": "EXP-Q36-01",
+      "type": "retrieval_to_prediction",
+      "note": "Q38 structural matches may inform Q36 predictions"
+    },
+    {
+      "from": "EXP-Q39-01",
+      "to": "EXP-Q33-01",
+      "type": "repair_triggering",
+      "note": "Q39 copyright failures should trigger Q33 PublicationGate (NOT YET IMPLEMENTED)"
+    },
+    {
+      "from": "EXP-Q39-01",
+      "to": "EXP-Q34-01",
+      "type": "repair_gating",
+      "note": "Q39 repair candidates must re-pass Q34 three gates (NOT YET IMPLEMENTED)"
+    }
+  ],
+  "l7_nodes": [],
+  "formal_capability_claims": [],
+  "disclaimers": [
+    "All nodes are EXPERIMENTAL and NOT part of formal Current system map",
+    "No L7 (reality-causal) nodes created",
+    "Cross-stage connections are documented but NOT implemented as runtime pipelines",
+    "No formal capability claims derived from these experimental nodes"
+  ]
+}
