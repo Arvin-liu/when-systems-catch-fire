@@ -52,21 +52,21 @@
     }
   ],
   "historical_digest_evidence": {
-    "artifact_id": 8431056975,
+    "artifact_id": 8431733912,
     "dual_digest": {
       "distinction": "The GitHub archive ZIP and inner Pages payload TAR are independently hashed different byte objects.",
-      "github_artifact_archive_digest": "sha256:cfa91d3d0adab3e6e370311432c6096f1332fadc3b9a585917cb75505ca8b239",
-      "pages_payload_tar_digest": "sha256:ddc4631ab8f6a9ad1515c0be31b2f371e6f134f74c66fcf7e8bfc6ddac956728"
+      "github_artifact_archive_digest": "sha256:10833f4969614f8ef1e13865d5a2beeba4a532ed0f85310743750ef0c6cef628",
+      "pages_payload_tar_digest": "sha256:6b0afd5e246757ca093515035cf7a95dc63b28917758da7edb34a1b1851aa679"
     },
     "note": "Exact-head predecessor evidence that authorized this ordinary binding commit; final exact-head evidence remains external in PR #62 and the 1111 receipt.",
-    "subject_head": "727c665b7e21585026a19352dd643bbfd34fba9f",
+    "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131",
     "subject_run_ids": {
-      "foundation": 29649563081,
-      "function_os": 29649563914,
-      "pages": 29649575195
+      "foundation": 29651950562,
+      "function_os": 29651986744,
+      "pages": 29651987967
     },
     "tar_bytes": 552960,
-    "zip_bytes": 111661
+    "zip_bytes": 113696
   },
   "lifecycle": {
     "accepted": false,
@@ -98,11 +98,12 @@
   "phase_e_evidence": {
     "artifact": "PASS_ON_PREDECESSOR_EXACT_HEAD",
     "artifact_evidence": {
-      "id": 8431056975,
+      "file_count": 32,
+      "id": 8431733912,
       "tar_bytes": 552960,
-      "tar_sha256": "ddc4631ab8f6a9ad1515c0be31b2f371e6f134f74c66fcf7e8bfc6ddac956728",
-      "zip_bytes": 111661,
-      "zip_sha256": "cfa91d3d0adab3e6e370311432c6096f1332fadc3b9a585917cb75505ca8b239"
+      "tar_sha256": "6b0afd5e246757ca093515035cf7a95dc63b28917758da7edb34a1b1851aa679",
+      "zip_bytes": 113696,
+      "zip_sha256": "10833f4969614f8ef1e13865d5a2beeba4a532ed0f85310743750ef0c6cef628"
     },
     "authority": "pull_request_body_and_1111_receipt",
     "local": "PASS",
@@ -121,11 +122,11 @@
     },
     "remote": "PASS_ON_PREDECESSOR_EXACT_HEAD",
     "runs": {
-      "foundation": 29649563081,
-      "function_os": 29649563914,
-      "pages": 29649575195
+      "foundation": 29651950562,
+      "function_os": 29651986744,
+      "pages": 29651987967
     },
-    "subject_head": "727c665b7e21585026a19352dd643bbfd34fba9f",
+    "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131",
     "three_p1_repair": {
       "apply_authority_preflight": {
         "status": "PASS",
