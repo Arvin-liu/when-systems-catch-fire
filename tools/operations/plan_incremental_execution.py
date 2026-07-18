@@ -17,6 +17,7 @@ def plan(request):
     except ValueError as e: residue.append({'type':'invalid_path','path':x,'message':str(e)})
   seeds,path_residue=resolve_paths(normalized,components,components_doc.get('allowed_path_overlaps',[])); residue+=path_residue
   full=sorted(set(normalized)&META)
+  if residue: full.append('unresolved_or_unknown_path')
   dims=set(request.get('changed_dimensions',['identity'])); classes=set(request.get('change_classifications',['EVIDENCE_UPDATE']))
   affected,typed,_,cycle=traverse_fixpoint(seeds,topology,dims,classes); residue+=cycle
   profile_by={p['component_id']:p for p in profiles['profiles']}
@@ -28,10 +29,16 @@ def plan(request):
     if full: decision='FULL_REBUILD_REQUIRED'; proof=None
     elif cid in affected: decision='REBUILD' if p.get('execution_kind')=='automatic' else 'REVALIDATE'; proof=None
     else:
-      decision='NO_CHANGE_WITH_PROOF'; proof={'component_id':cid,'basis':'not in Q32 typed declared closure','unchanged_authoritative_input_fingerprints':[{'path':x,'sha256':digest(ROOT/x)} for x in components[cid]['path_patterns'] if digest(ROOT/x)],'claim_ceiling':'non-impact proof is repository-scoped only'}
+      decision='NO_CHANGE_WITH_PROOF'; proof={'component_id':cid,'basis':'not in Q32 typed declared closure','unchanged_authoritative_input_fingerprints':[{'path':x,'sha256':digest(ROOT/x)} for x in components[cid]['path_patterns'] if digest(ROOT/x)],'unchanged_dependency_fingerprints':[],'traversed_declared_relations':[x['relation_id'] for x in typed],'excluded_declared_relations':[],'excluded_trigger_dimensions':sorted(dims),'proof_method':'Q32 typed closure exclusion plus registered fingerprint policy','plan_hash_binding':'computed after plan canonicalization','expiry_or_recheck_condition':'any profile, registry, topology, producer, validator, or input change','claim_ceiling':'non-impact proof is repository-scoped only'}
     decisions.append({'component_id':cid,'decision':decision,'non_impact_proof':proof})
-  result={'schema_version':'1.0.0','normalized_change_seeds':normalized,'q32_affected_component_closure':sorted(affected),'affected_synchronization_surfaces':derive_surfaces(surfaces,dims,classes),'component_decisions':decisions,'full_rebuild_reasons':sorted(set(full)),'unresolved_residue':residue,'execution_order':[x['component_id'] for x in decisions if x['decision']=='REBUILD'],'claim_ceiling':'declared repository dependency planning only; not truth or causal proof'}
+  result={'schema_version':'1.0.0','request_identity':request.get('task_id','adhoc'),'normalized_change_seeds':normalized,'q32_affected_component_closure':sorted(affected),'affected_synchronization_surfaces':derive_surfaces(surfaces,dims,classes),'component_decisions':decisions,'full_rebuild_reasons':sorted(set(full)),'unresolved_residue':residue,'execution_order':[x['component_id'] for x in decisions if x['decision']=='REBUILD'],'concurrency_constraints':['execute in deterministic listed order'], 'preconditions':['clean tree or isolated worktree for apply'], 'rollback_plan':'executor must restore registered outputs or emit recovery package','claim_ceiling':'declared repository dependency planning only; not truth or causal proof'}
+  for label in ('rebuild','revalidate','sync_metadata','no_change','full_rebuild'):
+    target={'rebuild':'REBUILD','revalidate':'REVALIDATE','sync_metadata':'SYNC_METADATA','no_change':'NO_CHANGE_WITH_PROOF','full_rebuild':'FULL_REBUILD_REQUIRED'}[label]; result[label+'_components']=[x['component_id'] for x in decisions if x['decision']==target]
   result['plan_hash']=hashlib.sha256(canon(result).encode()).hexdigest(); return result
 def main():
- p=argparse.ArgumentParser();p.add_argument('--request',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args();a.output.write_text(json.dumps(plan(load_json(a.request)),ensure_ascii=False,indent=2,sort_keys=True)+'\n')
+ p=argparse.ArgumentParser();p.add_argument('--request',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--summary',type=Path);p.add_argument('--check',action='store_true');a=p.parse_args(); payload=json.dumps(plan(load_json(a.request)),ensure_ascii=False,indent=2,sort_keys=True)+'\n';
+ if a.check:
+  if not a.output.is_file() or a.output.read_text()!=payload: raise SystemExit('stale plan')
+ else: a.output.write_text(payload)
+ if a.summary: a.summary.write_text('Incremental execution plan: '+json.loads(payload)['plan_hash']+'\n')
 if __name__=='__main__': main()
