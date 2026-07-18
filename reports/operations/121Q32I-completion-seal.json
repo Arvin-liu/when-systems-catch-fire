@@ -51,12 +51,29 @@
       "surface_id": "external.pages_homepage"
     }
   ],
+  "historical_digest_evidence": {
+    "artifact_id": 8431056975,
+    "dual_digest": {
+      "distinction": "The GitHub archive ZIP and inner Pages payload TAR are independently hashed different byte objects.",
+      "github_artifact_archive_digest": "sha256:cfa91d3d0adab3e6e370311432c6096f1332fadc3b9a585917cb75505ca8b239",
+      "pages_payload_tar_digest": "sha256:ddc4631ab8f6a9ad1515c0be31b2f371e6f134f74c66fcf7e8bfc6ddac956728"
+    },
+    "note": "Exact-head predecessor evidence that authorized this ordinary binding commit; final exact-head evidence remains external in PR #62 and the 1111 receipt.",
+    "subject_head": "727c665b7e21585026a19352dd643bbfd34fba9f",
+    "subject_run_ids": {
+      "foundation": 29649563081,
+      "function_os": 29649563914,
+      "pages": 29649575195
+    },
+    "tar_bytes": 552960,
+    "zip_bytes": 111661
+  },
   "lifecycle": {
     "accepted": false,
     "candidate": true,
     "current": false,
     "merged": false,
-    "ready_for_gpt_verification": false
+    "ready_for_gpt_verification": true
   },
   "manifest_path": "data/operations/iterations/121Q32I.json",
   "method_version": "1.3.0",
@@ -65,7 +82,7 @@
     "base_head": "4097e610eebfc65c739df4fe7d2900161c204a9d",
     "branch": "agent/121q32i-incremental-execution",
     "claim_ceiling": "validated repository dependency planning and selective materialization candidate only; no real-world causal identification",
-    "draft_pr": null,
+    "draft_pr": 62,
     "head_binding": {
       "authority": "pull_request_body_and_1111_receipt",
       "embedded_exact_current_head": false,
@@ -79,10 +96,24 @@
     "tests": 114
   },
   "phase_e_evidence": {
-    "artifact": "pending",
+    "artifact": "PASS_ON_PREDECESSOR_EXACT_HEAD",
+    "artifact_evidence": {
+      "id": 8431056975,
+      "tar_bytes": 552960,
+      "tar_sha256": "ddc4631ab8f6a9ad1515c0be31b2f371e6f134f74c66fcf7e8bfc6ddac956728",
+      "zip_bytes": 111661,
+      "zip_sha256": "cfa91d3d0adab3e6e370311432c6096f1332fadc3b9a585917cb75505ca8b239"
+    },
     "authority": "pull_request_body_and_1111_receipt",
     "local": "PASS",
-    "remote": "pending"
+    "production_deploy": "skipped",
+    "remote": "PASS_ON_PREDECESSOR_EXACT_HEAD",
+    "runs": {
+      "foundation": 29649563081,
+      "function_os": 29649563914,
+      "pages": 29649575195
+    },
+    "subject_head": "727c665b7e21585026a19352dd643bbfd34fba9f"
   },
   "propagation_closure": {
     "closure_hash": "a690d7e8bffecbab5540b7207f0bbb827630283ba3a2362f5cfb1add4560c642",
@@ -100,7 +131,7 @@
     "plan_hash": "e659a97032237ea75b7a73794971c06df2bd89627c42122441cad47ade0ee392",
     "validator": "PASS"
   },
-  "status": "PHASE_E_LOCAL_CANDIDATE_PENDING_REMOTE_EVIDENCE",
+  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
   "synchronization_registry": {
     "path": "data/operations/synchronization-surfaces.json",
     "version": "1.0.0"

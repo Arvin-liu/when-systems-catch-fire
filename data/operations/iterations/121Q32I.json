@@ -5,7 +5,7 @@
     "branch": "agent/121q32i-incremental-execution",
     "draft": true,
     "merged": false,
-    "pr_number": null
+    "pr_number": 62
   },
   "change_classification": [
     "CAPABILITY_ADDITION",
@@ -141,7 +141,7 @@
     "explanation": "Exact candidate HEAD and mutable CI/artifact evidence are externally attested after commit; the repository object never treats its own HEAD as validity evidence.",
     "live_refetch_required": true,
     "mode": "external_exact_head_attestation",
-    "pr_number": null,
+    "pr_number": 62,
     "receipt_path": "agent-results/IGNITION-20260718-121Q32I-CODEX-V12-phase-e-result.md"
   },
   "impact_matrix": [
@@ -1054,7 +1054,7 @@
     "candidate": true,
     "current": false,
     "merged": false,
-    "ready_for_gpt_verification": false
+    "ready_for_gpt_verification": true
   },
   "synchronization_closure": {
     "external_attestations": [
@@ -1271,7 +1271,35 @@
         "status": "PASS"
       }
     ],
-    "remote": []
+    "remote": [
+      {
+        "conclusion": "success",
+        "evidence": "external:github_actions:29649563081",
+        "evidence_scope": "historical_subject_head_only",
+        "name": "foundation-validation",
+        "run_id": 29649563081,
+        "status": "PASS",
+        "subject_head": "727c665b7e21585026a19352dd643bbfd34fba9f"
+      },
+      {
+        "conclusion": "success",
+        "evidence": "external:github_actions:29649563914",
+        "evidence_scope": "historical_subject_head_only",
+        "name": "function-os-ci",
+        "run_id": 29649563914,
+        "status": "PASS",
+        "subject_head": "727c665b7e21585026a19352dd643bbfd34fba9f"
+      },
+      {
+        "conclusion": "success_build_deploy_skipped",
+        "evidence": "external:github_actions:29649575195",
+        "evidence_scope": "historical_subject_head_only",
+        "name": "pages-build-candidate-only",
+        "run_id": 29649575195,
+        "status": "PASS_DEPLOY_SKIPPED",
+        "subject_head": "727c665b7e21585026a19352dd643bbfd34fba9f"
+      }
+    ]
   },
   "verified_start": {
     "main_head": "4097e610eebfc65c739df4fe7d2900161c204a9d",
