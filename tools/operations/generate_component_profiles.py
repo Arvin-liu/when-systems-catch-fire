@@ -23,28 +23,40 @@ def profile(component, policies, topology):
     authority = component["authority"]
     cid = component["component_id"]
     paths = component["path_patterns"]
-    kind = "generated" if authority == "derived" else "external" if authority == "external" else "virtual" if component["component_type"] in {"virtual", "interpretation_boundary"} else "authored"
+    policy = policies.get("component_policies", {}).get(cid, {})
+    capability = policy.get("execution_capability")
+    if capability is None:
+        if authority == "external": capability = "external_attestation"
+        elif component["component_type"] in {"virtual", "interpretation_boundary"}: capability = "validation_only"
+        else: capability = "manual"
+    if capability not in {"automatic", "validation_only", "manual", "external_attestation"}:
+        raise ValueError(f"invalid execution capability for {cid}: {capability}")
+    kind = {"automatic":"generated", "external_attestation":"external", "validation_only":"virtual", "manual":"authored"}[capability]
+    inputs = policy.get("authoritative_inputs", paths)
+    outputs = policy.get("generated_outputs", [])
+    validator = policy.get("validator_argv", policies["validator_argv"])
     common = {"component_id": cid, "authority": authority, "component_kind": kind,
-              "authoritative_inputs": paths, "generated_outputs": [component["canonical_target"]] if kind == "generated" else [],
-              "input_fingerprint_policy": {"kind": "sha256_sorted_file_set", "paths": paths},
-              "output_fingerprint_policy": {"kind": "sha256_single_target", "target": component["canonical_target"]},
-              "validator_argv": policies["validator_argv"], "validators": [policies["validator_argv"]],
+              "execution_capability": capability, "execution_cwd": ".",
+              "authoritative_inputs": inputs, "generated_outputs": outputs,
+              "input_fingerprint_policy": {"kind": "sha256_sorted_file_set", "paths": inputs},
+              "output_fingerprint_policy": {"kind": "sha256_declared_outputs", "target": outputs[0] if outputs else component["canonical_target"]},
+              "validator_argv": validator, "validators": [validator],
               "trigger_dimensions": sorted({d for r in topology["relations"] if cid in {r["source"],r["target"]} for d in r["trigger_dimensions"]}), "cache_policy": {"mode":"identity_bound","local_only":True},
-              "local_rebuild_allowed": kind == "generated", "global_gate": kind in {"external","virtual"},
+              "local_rebuild_allowed": capability == "automatic", "global_gate": capability in {"external_attestation","validation_only"},
               "full_rebuild_triggers": ["missing_profile","missing_validator","missing_fingerprint_policy","authority_change"],
               "rollback_policy": "restore_registered_outputs_or_emit_recovery_package",
               "rights_and_provenance_constraints": "repository authority and provenance boundary must remain explicit",
               "claim_ceiling": "repository execution evidence only; no truth or lifecycle upgrade"}
-    if authority == "derived":
-        argv = policies["generated_producers"].get(cid)
-        if not argv: raise ValueError(f"missing producer policy for generated component {cid}")
-        common.update(execution_kind="automatic", execution_capability="automatic", producer_argv=argv, producer=argv, freshness_validator_argv=policies["validator_argv"])
-    elif authority == "external":
-        common.update(execution_kind="attestation", execution_capability="external_attestation", attestation_required=True)
-    elif component["component_type"] in {"virtual", "interpretation_boundary"}:
-        common.update(execution_kind="validation_only", execution_capability="validation_only", aggregate_sources=paths)
+    if capability == "automatic":
+        argv = policy.get("producer_argv")
+        if not argv or not outputs: raise ValueError(f"automatic profile lacks explicit producer/outputs: {cid}")
+        common.update(execution_kind="automatic", producer_argv=argv, producer=argv, freshness_validator_argv=validator)
+    elif capability == "external_attestation":
+        common.update(execution_kind="attestation", attestation_required=True)
+    elif capability == "validation_only":
+        common.update(execution_kind="validation_only", aggregate_sources=inputs)
     else:
-        common.update(execution_kind="manual", execution_capability="manual", manual_authored=True)
+        common.update(execution_kind="manual", manual_authored=True)
     for key in ("validator_argv", "producer_argv", "freshness_validator_argv"):
         if key in common: safe_argv(common[key])
     return common

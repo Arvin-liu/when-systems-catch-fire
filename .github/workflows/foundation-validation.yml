@@ -131,3 +131,4 @@ jobs:
       - run: python3 -m unittest tests.test_change_propagation -v
       - run: python3 -m unittest tests.test_pages_deploy_gate -v
       - run: python3 -m unittest tests.test_phase_e_candidate -v
+      - run: python3 -m unittest tests.test_production_execution_authority -v

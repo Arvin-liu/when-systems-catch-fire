@@ -111,7 +111,7 @@ class PhaseD2EndToEndAcceptance(unittest.TestCase):
         self.assertEqual(document["q32_affected_component_closure"], ["pages_pipeline", "system_map_layout", "system_map_projection"])
         decisions = {item["component_id"]: item for item in document["component_decisions"]}
         self.assertEqual(decisions["system_map_projection"]["decision"], "REBUILD")
-        self.assertEqual(decisions["pages_pipeline"]["decision"], "REBUILD")
+        self.assertEqual(decisions["pages_pipeline"]["decision"], "REVALIDATE")
         self.assertEqual(decisions["foundation"]["decision"], "NO_CHANGE_WITH_PROOF")
         self.assertIn("external.pages_homepage", document["affected_synchronization_surfaces"])
 

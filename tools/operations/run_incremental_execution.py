@@ -5,7 +5,9 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import shutil
+import stat
 import subprocess
 import tempfile
 import time
@@ -71,17 +73,81 @@ def git_is_clean(root: Path) -> bool:
     return not result.stdout.strip()
 
 
-def tree_state(root: Path, ignored_roots: tuple[Path, ...] = ()) -> dict[str, str]:
-    state: dict[str, str] = {}
-    ignored = {p.resolve() for p in ignored_roots}
-    for path in sorted(root.rglob("*")):
-        if not path.is_file() or ".git" in path.parts:
-            continue
-        resolved = path.resolve()
-        if any(resolved == base or base in resolved.parents for base in ignored):
-            continue
-        state[path.relative_to(root).as_posix()] = digest_file(path) or ""
+def repository_snapshot(root: Path, ignored_roots: tuple[Path, ...] = ()) -> dict[str, dict]:
+    """Capture byte/type/mode state without following symlinks."""
+    ignored_rel = {p.absolute().relative_to(root.absolute()).as_posix() for p in ignored_roots}
+    state: dict[str, dict] = {}
+    for base, dirs, files in os.walk(root, topdown=True, followlinks=False):
+        base_path = Path(base)
+        rel_base = base_path.relative_to(root).as_posix()
+        dirs[:] = [d for d in dirs if d != ".git" and not any((rel_base + "/" + d).strip("/") == x or (rel_base + "/" + d).strip("/").startswith(x + "/") or x.startswith((rel_base + "/" + d).strip("/") + "/") for x in ignored_rel)]
+        for name in sorted(dirs + files):
+            path = base_path / name
+            raw = path.relative_to(root).as_posix()
+            if any(raw == x or raw.startswith(x + "/") or x.startswith(raw + "/") for x in ignored_rel):
+                continue
+            info = path.lstat()
+            mode = stat.S_IMODE(info.st_mode)
+            if stat.S_ISLNK(info.st_mode):
+                state[raw] = {"type": "symlink", "target": os.readlink(path), "mode": mode}
+            elif stat.S_ISDIR(info.st_mode):
+                state[raw] = {"type": "directory", "mode": mode}
+            elif stat.S_ISREG(info.st_mode):
+                state[raw] = {"type": "file", "bytes": path.read_bytes(), "mode": mode}
+            else:
+                state[raw] = {"type": "unsupported", "mode": mode}
     return state
+
+
+def snapshot_fingerprint(entry: dict | None) -> str | None:
+    if entry is None: return None
+    material = {k: (digest_bytes(v) if k == "bytes" else v) for k, v in entry.items()}
+    return digest_bytes(canonical(material).encode())
+
+
+def remove_path(path: Path) -> None:
+    if path.is_symlink() or path.is_file(): path.unlink()
+    elif path.is_dir(): shutil.rmtree(path)
+
+
+def restore_repository_snapshot(root: Path, before: dict[str, dict], ignored_roots: tuple[Path, ...] = ()) -> tuple[list[str], list[str]]:
+    current = repository_snapshot(root, ignored_roots)
+    restored: list[str] = []
+    unrecovered: list[str] = []
+    removable = (set(current) - set(before)) | {raw for raw in set(current) & set(before) if current[raw]["type"] != before[raw]["type"]}
+    for raw in sorted(removable, key=lambda x: (x.count("/"), x), reverse=True):
+        try: remove_path(root / raw); restored.append(raw)
+        except OSError: unrecovered.append(raw)
+    for raw, entry in sorted(before.items(), key=lambda item: (item[0].count("/"), item[0])):
+        if entry["type"] != "directory": continue
+        path = root / raw
+        try:
+            path.mkdir(parents=True, exist_ok=True)
+            os.chmod(path, 0o700)
+            restored.append(raw)
+        except OSError: unrecovered.append(raw)
+    for raw, entry in sorted(before.items(), key=lambda item: (item[0].count("/"), item[0])):
+        if entry["type"] == "directory": continue
+        path = root / raw
+        try:
+            if entry["type"] == "file":
+                path.parent.mkdir(parents=True, exist_ok=True); path.write_bytes(entry["bytes"])
+            elif entry["type"] == "symlink":
+                path.parent.mkdir(parents=True, exist_ok=True)
+                if path.is_symlink() and os.readlink(path) != entry["target"]: path.unlink()
+                if not path.is_symlink(): path.symlink_to(entry["target"])
+            else:
+                unrecovered.append(raw); continue
+            if entry["type"] == "file": os.chmod(path, entry["mode"])
+            restored.append(raw)
+        except OSError: unrecovered.append(raw)
+    for raw, entry in sorted(before.items(), key=lambda item: (item[0].count("/"), item[0]), reverse=True):
+        if entry["type"] == "directory":
+            try: os.chmod(root / raw, entry["mode"])
+            except OSError: unrecovered.append(raw)
+    after = repository_snapshot(root, ignored_roots)
+    mismatches = sorted(raw for raw in set(before) | set(after) if snapshot_fingerprint(before.get(raw)) != snapshot_fingerprint(after.get(raw)))
+    return sorted(set(restored)), sorted(set(unrecovered) | set(mismatches))
 
 
 def profile_identity(profiles_path: Path, profiles: dict, root: Path, plan: dict) -> dict:
@@ -140,7 +206,7 @@ def recovery_package(
     cache_dir: Path,
     plan: dict,
     records: list[dict],
-    snapshots: dict[str, bytes | None],
+    snapshots: dict[str, dict],
     restored: list[str],
     unrecovered: list[str],
 ) -> Path:
@@ -148,9 +214,10 @@ def recovery_package(
     backup_dir = package / "backups"
     backup_dir.mkdir()
     sha256: dict[str, str] = {}
-    for raw, content in snapshots.items():
-        if content is None:
+    for raw, entry in snapshots.items():
+        if entry.get("type") != "file":
             continue
+        content = entry["bytes"]
         destination = backup_dir / raw
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_bytes(content)
@@ -160,8 +227,8 @@ def recovery_package(
         "plan_hash": plan["plan_hash"],
         "component_identity": [r["component_id"] for r in records],
         "failed_action": next((r for r in records if r["end_status"] == "failed"), None),
-        "original_fingerprints": {k: digest_bytes(v) if v is not None else None for k, v in snapshots.items()},
-        "current_fingerprints": {k: digest_file(validate_relative_path(k, root)) for k in snapshots},
+        "original_fingerprints": {k: snapshot_fingerprint(v) for k, v in snapshots.items()},
+        "current_fingerprints": {k: snapshot_fingerprint(repository_snapshot(root, (cache_dir,)).get(k)) for k in snapshots},
         "sha256": sha256,
         "restored_files": restored,
         "unrecovered_files": unrecovered,
@@ -197,14 +264,23 @@ def execute_plan(
     if any(cid not in by_id for cid in order):
         raise DefensiveBoundaryError("E_EXECUTION_ORDER", "execution order references unknown profile")
     cache_dir = validate_repository_location(cache_dir or root / ".cache/q32i-executor", root, "cache directory")
+    if apply:
+        # The unified production validator is the single apply-authority gate.
+        # Importing here avoids the validator/executor identity helper cycle.
+        from tools.operations.validate_incremental_execution import validate_incremental_execution
+        preflight = validate_incremental_execution(plan, root=root, profiles_path=profiles_path)
+        if not preflight["ok"]:
+            first = preflight["errors"][0]
+            raise DefensiveBoundaryError(first["code"], first["reason"])
     if apply and not isolated_worktree and not git_is_clean(root):
         raise DefensiveBoundaryError("E_DIRTY_WORKTREE", "apply requires clean tree or explicit isolated worktree")
     if apply and cache_hit(cache_dir, plan, profiles_path, profiles, root):
         return {"ok": True, "cache_hit": True, "cache_decision": "HIT_FRESH", "records": [], "input_rejections": ignored_input_codes}
 
     records: list[dict] = []
-    snapshots: dict[str, bytes | None] = {}
+    snapshots: dict[str, dict] = {}
     allowed_outputs: set[str] = set()
+    whole_repo_before = repository_snapshot(root, (cache_dir,)) if apply else {}
     for cid in order:
         profile = by_id[cid]
         capability = profile.get("execution_capability", profile.get("execution_kind"))
@@ -228,7 +304,7 @@ def execute_plan(
         for raw in outputs:
             path = validate_relative_path(raw, root)
             allowed_outputs.add(raw)
-            snapshots.setdefault(raw, path.read_bytes() if path.is_file() else None)
+            if raw in whole_repo_before: snapshots.setdefault(raw, whole_repo_before[raw])
             record["before_output_fingerprints"][raw] = digest_file(path)
         for raw in profile.get("authoritative_inputs", []):
             path = validate_relative_path(raw, root)
@@ -250,12 +326,12 @@ def execute_plan(
             raise ValueError(f"unknown execution capability for {cid}")
         argv = validate_argv(profile.get("producer_argv"))
         validator = validate_argv(profile.get("validator_argv"))
-        before_tree = tree_state(root, (cache_dir,))
+        before_tree = repository_snapshot(root, (cache_dir,))
         record["start_status"] = "running"
         started = time.time_ns()
         completed = subprocess.run(argv, cwd=root, text=True, capture_output=True, shell=False)
-        after_tree = tree_state(root, (cache_dir,))
-        changed = {p for p in set(before_tree) | set(after_tree) if before_tree.get(p) != after_tree.get(p)}
+        after_tree = repository_snapshot(root, (cache_dir,))
+        changed = {p for p in set(before_tree) | set(after_tree) if snapshot_fingerprint(before_tree.get(p)) != snapshot_fingerprint(after_tree.get(p))}
         unregistered = sorted(changed - set(outputs))
         record.update(stdout=completed.stdout, stderr=completed.stderr, return_code=completed.returncode, duration_ns=time.time_ns() - started)
         if unregistered:
@@ -280,32 +356,18 @@ def execute_plan(
         restored: list[str] = []
         unrecovered: list[str] = []
         recovery_only = profile.get("rollback_policy") == "recovery_package_only"
-        for raw, content in snapshots.items():
-            path = validate_relative_path(raw, root)
-            if recovery_only:
-                unrecovered.append(raw)
-                continue
-            try:
-                if content is None:
-                    if path.exists():
-                        path.unlink()
-                else:
-                    path.parent.mkdir(parents=True, exist_ok=True)
-                    path.write_bytes(content)
-                restored.append(raw)
-            except OSError:
-                unrecovered.append(raw)
-        for raw in unregistered:
-            path = validate_relative_path(raw, root)
-            try:
-                if before_tree.get(raw) is None and path.exists():
-                    path.unlink()
-            except OSError:
-                unrecovered.append(raw)
+        if recovery_only:
+            unrecovered = sorted(changed)
+        else:
+            restored, unrecovered = restore_repository_snapshot(root, whole_repo_before, (cache_dir,))
+        final_state = repository_snapshot(root, (cache_dir,))
+        byte_exact = all(snapshot_fingerprint(whole_repo_before.get(raw)) == snapshot_fingerprint(final_state.get(raw)) for raw in set(whole_repo_before) | set(final_state))
+        if not byte_exact:
+            unrecovered = sorted(set(unrecovered) | {raw for raw in set(whole_repo_before) | set(final_state) if snapshot_fingerprint(whole_repo_before.get(raw)) != snapshot_fingerprint(final_state.get(raw))})
         record["rollback_status"] = "restored" if not unrecovered else "recovery-package-required"
         records.append(record)
         cache_dir.mkdir(parents=True, exist_ok=True)
-        package = recovery_package(root, cache_dir, plan, records, snapshots, restored, unrecovered)
+        package = recovery_package(root, cache_dir, plan, records, whole_repo_before, restored, unrecovered)
         return {"ok": False, "cache_hit": False, "cache_decision": "MISS", "records": records, "recovery_package": str(package), "input_rejections": ignored_input_codes}
 
     if not apply:

@@ -26,15 +26,17 @@ Unknown paths, unresolved residue, missing profiles or changes to registry, topo
 
 ## Executor, cache and recovery
 
-The executor is dry-run by default. Apply mode accepts only profile-registered argv arrays and always uses `shell=False`; caller-supplied commands are not authority. Repository-relative inputs, outputs, profile paths, cache paths, working directory, recovery targets and symlink resolutions must remain inside the authorized repository. Producers may write only registered outputs.
+Authority type and local execution capability are independent. Every production profile is explicitly `automatic`, `validation_only`, `manual`, or `external_attestation`. Only `system_map_projection` is currently automatic: its deterministic producer materializes both the JSON projection and SVG from registry, topology, and layout inputs. `pages_pipeline` and `propagation_calculator` are validation-only; workflow deployment and parameterized closure production cannot be impersonated by unrelated legacy builders.
+
+The executor is dry-run by default. Before apply performs any producer, validator, output, cache, or recovery write, the unified production validator completes a fail-closed authority preflight over schema/hash, decision cardinality, closure/order, execution capability, registry/topology/profile identity, argv/cwd/input/output identity, NonImpactProof, lifecycle, scope, path, symlink, and worktree boundaries. Apply accepts only profile-registered argv arrays and always uses `shell=False`; caller-supplied commands are not authority. Repository-relative inputs, outputs, profile paths, cache paths, working directory, recovery targets and symlink resolutions must remain inside the authorized repository. Producers may write only registered outputs.
 
 Cache is a performance layer, never a second truth source. Reuse requires an intact manifest and exact identity across profile schema/registry, component registry, topology, producer, validator, plan, authoritative inputs and generated outputs. Any mismatch becomes a miss or validator rejection.
 
-Execution stops at the first failure. Registered outputs are restored when possible; otherwise a local recovery package binds the plan, component order, failed action, snapshots, fingerprints, backup digests and restore steps. Recovery evidence does not authorize lifecycle promotion.
+Execution stops at the first failure. Apply snapshots the complete supported repository state before producer execution. Rollback removes newly created unregistered objects and restores modified/deleted pre-existing unregistered files, directories, symlinks, bytes, type, and mode. `restored` is emitted only after exact before/after comparison; any mismatch is `unrecovered` and requires a recovery package. Recovery evidence does not authorize lifecycle promotion.
 
 ## Unified validation and lifecycle boundary
 
-The unified validator independently checks profile coverage, path confinement, plan cardinality and hash, affected decisions, proof bindings, execution order and command identity, cache integrity/identity, rollback/recovery consistency and stable error codes. D2 supplies 14 production acceptance cases; D3 supplies 26 local defensive rejection cases; D4 aggregates deterministic Phase D evidence.
+The unified validator independently checks profile coverage, path confinement, plan cardinality and hash, affected decisions, proof bindings, execution order and command identity, cache integrity/identity, rollback/recovery consistency and stable error codes. The promoted production probes add one clean-worktree profile materialization test, seven complete-rollback tests, and nine preflight zero-side-effect rejection tests; manual, validation-only, and external profiles never start a producer.
 
 Candidate objects cannot claim Accepted, Merged or Current, cannot cite their own current HEAD as their validity premise, and cannot mix Q33-Q40, lab, shadow or unauthorized Phase E assets. Exact commit IDs may be recorded only as observed identifiers. Independent review remains a separate future action.
 

@@ -153,10 +153,8 @@ class PhaseD3DefensiveRejections(unittest.TestCase):
     def test_d3_g1_01_caller_command_is_ignored(self):
         forged = copy.deepcopy(self.plan)
         forged["producer_argv"] = [sys.executable, "-c", "raise SystemExit(99)"]
-        result = execute_plan(forged, apply=True, isolated_worktree=True, root=self.repo, profiles_path=self.profiles_path, cache_dir=self.cache_dir)
-        self.assertTrue(result["ok"])
-        self.assertEqual(result["input_rejections"], ["E_CALLER_COMMAND_IGNORED"])
-        self.assertEqual(result["records"][0]["argv"], self.profiles["profiles"][0]["producer_argv"])
+        self.assert_boundary_error("E_PLAN_HASH_MISMATCH", lambda: execute_plan(forged, apply=True, isolated_worktree=True, root=self.repo, profiles_path=self.profiles_path, cache_dir=self.cache_dir))
+        self.assertEqual((self.repo / "out.txt").read_text(), "before\n")
 
     def test_d3_g1_02_shell_string_is_rejected(self):
         self.profiles["profiles"][0]["producer_argv"] = "python -c invalid"

@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools.operations.run_incremental_execution import cache_hit, canonical, execute_plan
+from tools.operations.validate_incremental_execution import compute_plan_hash
 
 
 class PhaseCExecutorAcceptance(unittest.TestCase):
@@ -24,15 +25,20 @@ class PhaseCExecutorAcceptance(unittest.TestCase):
         (self.repo / "out1.txt").write_text("before-one\n")
         (self.repo / "out2.txt").write_text("before-two\n")
         (self.repo / ".gitignore").write_text(".cache/\n")
-        (self.repo / "data/operations/project-components.json").write_text('{"components":[]}\n')
+        (self.repo / "data/operations/project-components.json").write_text(json.dumps({"components":[
+            {"component_id":"auto1","path_patterns":["input.txt","out1.txt"]},
+            {"component_id":"auto2","path_patterns":["input.txt","out2.txt"]},
+            {"component_id":"manual","path_patterns":["input.txt"]},
+            {"component_id":"external","path_patterns":["input.txt"]},
+        ]})+'\n')
         (self.repo / "data/operations/change-propagation-topology.json").write_text('{"relations":[]}\n')
         self.profiles_path = self.repo / "data/operations/component-execution-profiles.json"
         self.cache = self.repo / ".cache/q32i"
         self.profiles = {"schema_version": "1.0.0", "profiles": [
             self.automatic("auto1", "out1.txt", "Path('out1.txt').write_text('after-one\\n')"),
             self.automatic("auto2", "out2.txt", "(Path('out2.txt').write_text('failed-write\\n'),1/0)"),
-            {"component_id":"manual","execution_capability":"manual","execution_kind":"manual","authoritative_inputs":["input.txt"],"generated_outputs":[],"validator_argv":[sys.executable,"-c","0"]},
-            {"component_id":"external","execution_capability":"external_attestation","execution_kind":"attestation","authoritative_inputs":[],"generated_outputs":[],"validator_argv":[sys.executable,"-c","0"]},
+            {"component_id":"manual","execution_capability":"manual","execution_kind":"manual","execution_cwd":".","authoritative_inputs":["input.txt"],"generated_outputs":[],"input_fingerprint_policy":{"kind":"sha256_sorted_file_set","paths":["input.txt"]},"output_fingerprint_policy":{"kind":"none","target":"input.txt"},"validator_argv":[sys.executable,"-c","0"]},
+            {"component_id":"external","execution_capability":"external_attestation","execution_kind":"attestation","execution_cwd":".","authoritative_inputs":["input.txt"],"generated_outputs":[],"input_fingerprint_policy":{"kind":"sha256_sorted_file_set","paths":["input.txt"]},"output_fingerprint_policy":{"kind":"none","target":"input.txt"},"validator_argv":[sys.executable,"-c","0"]},
         ]}
         self.save_profiles()
         subprocess.run(["git", "add", "."], cwd=self.repo, check=True)
@@ -41,10 +47,14 @@ class PhaseCExecutorAcceptance(unittest.TestCase):
     def tearDown(self): self.temp.cleanup()
 
     def automatic(self, cid, output, expression):
-        return {"component_id":cid,"execution_capability":"automatic","execution_kind":"automatic","authoritative_inputs":["input.txt"],"generated_outputs":[output],"producer_argv":[sys.executable,"-c",f"from pathlib import Path\n{expression}"],"validator_argv":[sys.executable,"-c","0"],"rollback_policy":"restore_registered_outputs_or_emit_recovery_package"}
+        return {"component_id":cid,"execution_capability":"automatic","execution_kind":"automatic","execution_cwd":".","authoritative_inputs":["input.txt"],"generated_outputs":[output],"input_fingerprint_policy":{"kind":"sha256_sorted_file_set","paths":["input.txt"]},"output_fingerprint_policy":{"kind":"sha256_declared_outputs","target":output},"producer_argv":[sys.executable,"-c",f"from pathlib import Path\n{expression}"],"validator_argv":[sys.executable,"-c","0"],"rollback_policy":"restore_registered_outputs_or_emit_recovery_package"}
 
     def save_profiles(self): self.profiles_path.write_text(json.dumps(self.profiles, sort_keys=True) + "\n")
-    def plan(self, order=None): return {"plan_hash":"a"*64,"execution_order":order or ["auto1"]}
+    def plan(self, order=None):
+        order = order or ["auto1"]
+        value={"schema_version":"1.0.0","request_identity":"phase-c-fixture","normalized_change_seeds":["input.txt"],"q32_affected_component_closure":["auto1","auto2","manual","external"],"affected_synchronization_surfaces":[],"component_decisions":[{"component_id":cid,"decision":"REBUILD" if cid in order else "REVALIDATE","non_impact_proof":None} for cid in ["auto1","auto2","manual","external"]],"full_rebuild_reasons":[],"unresolved_residue":[],"execution_order":order,"claim_ceiling":"fixture"}
+        value["plan_hash"]=compute_plan_hash(value)
+        return value
     def execute(self, plan=None, apply=False, isolated=False): return execute_plan(plan or self.plan(), apply=apply, isolated_worktree=isolated, root=self.repo, profiles_path=self.profiles_path, cache_dir=self.cache)
 
     def test_c01_default_dry_run_zero_write(self):
@@ -59,7 +69,8 @@ class PhaseCExecutorAcceptance(unittest.TestCase):
 
     def test_c03_only_registered_profile_argv_executes(self):
         plan=self.plan();plan["producer_argv"]=[sys.executable,"-c","raise SystemExit(99)"]
-        result=self.execute(plan,True,True);self.assertEqual(result["records"][0]["return_code"],0);self.assertEqual((self.repo/"out1.txt").read_text(),"after-one\n")
+        with self.assertRaisesRegex(ValueError,"PLAN_HASH_MISMATCH"): self.execute(plan,True,True)
+        self.assertEqual((self.repo/"out1.txt").read_text(),"before-one\n")
 
     def test_c04_shell_metacharacters_never_interpreted(self):
         for injected in ["0;bad", "0&&bad", "0|bad", "$(bad)", "`bad`"]:
@@ -119,14 +130,15 @@ class PhaseCExecutorAcceptance(unittest.TestCase):
         self.assertFalse(result["cache_hit"]);self.assertEqual((self.repo/"out1.txt").read_text(),"after-one\n")
 
     def test_c15_manual_authored_boundary(self):
-        result=self.execute(self.plan(["manual"]),True,True);self.assertEqual(result["records"][0]["end_status"],"manual-boundary");self.assertIsNone(result["records"][0]["return_code"])
+        with self.assertRaisesRegex(ValueError,"not locally automatic"): self.execute(self.plan(["manual"]),True,True)
 
     def test_c16_external_attestation_boundary(self):
         self.profiles["profiles"][3]["producer_argv"]=[sys.executable,"-c","from pathlib import Path\nPath('forged').write_text('x')"];self.save_profiles()
-        result=self.execute(self.plan(["external"]),True,True);self.assertEqual(result["records"][0]["end_status"],"attestation-required");self.assertFalse((self.repo/"forged").exists())
+        with self.assertRaises(ValueError): self.execute(self.plan(["external"]),True,True)
+        self.assertFalse((self.repo/"forged").exists())
 
     def test_c17_failure_stops_and_rolls_back(self):
-        original=(self.repo/"out1.txt").read_bytes();result=self.execute(self.plan(["auto1","auto2","manual"]),True,True)
+        original=(self.repo/"out1.txt").read_bytes();result=self.execute(self.plan(["auto1","auto2"]),True,True)
         self.assertFalse(result["ok"]);self.assertEqual(len(result["records"]),2);self.assertEqual((self.repo/"out1.txt").read_bytes(),original);self.assertEqual(result["records"][-1]["rollback_status"],"restored")
 
     def test_c18_failed_rollback_complete_recovery_package(self):

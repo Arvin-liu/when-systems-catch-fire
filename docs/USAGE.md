@@ -32,7 +32,7 @@
 
 ### 1.3 Draft candidate：增量执行与选择性物化
 
-Q32I 候选从真实 change request 运行 `plan_incremental_execution.py`，再由 `run_incremental_execution.py` 只执行 component profile 登记的结构化 argv，最后使用 `validate_incremental_execution.py` 独立检查 plan、proof、execution、cache 和 recovery。NonImpactProof 仅在声明仓库关系范围内有效；cache 只有在全部权威、命令、plan 与输入输出指纹一致时才可复用。任何 meta-authority 变更、未解析路径或身份失配都 fail closed；Q32I 对自身最终 change set 运行时正确输出 `FULL_REBUILD_REQUIRED`。
+Q32I 候选从真实 change request 运行 `plan_incremental_execution.py`，再由 `run_incremental_execution.py` 在统一 authority preflight 通过后，只执行显式标记 automatic 的 profile 结构化 argv。Validation-only、manual 和 external profiles 不启动 producer。失败时只有整仓字节、类型、symlink 和适用 mode 完全一致才报 `restored`，否则生成 recovery package。NonImpactProof 仅在声明仓库关系范围内有效；cache 不是权威。任何 meta-authority 变更、未解析路径或身份失配都 fail closed。
 
 `NO_CHANGE_WITH_REASON` 允许纯历史修字不触发无关全仓更新；新增正式构件则必须进入系统图，或提供 validator 可检查的 hidden representation 与理由。这里计算的是声明关系下的仓库／治理传播，不是现实因果。
 

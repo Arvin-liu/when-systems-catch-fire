@@ -255,7 +255,7 @@ Backward compatibility is explicit: historical 1.0.0 manifests remain valid, 1.1
 
 ## 15. Method 1.3.0 Draft candidate: Incremental Execution
 
-Q32I proposes a repository-only execution layer on top of Current 1.2.0. It converts a validated propagation plan into structured component decisions, complete NonImpactProof objects, profile-registered argv execution, identity-bound local cache decisions, unified validation, rollback and recovery materials. The authoritative contract is `docs/architecture/incremental-execution.md`.
+Q32I proposes a repository-only execution layer on top of Current 1.2.0. It converts a validated propagation plan into structured component decisions, complete NonImpactProof objects, profile-registered argv execution, identity-bound local cache decisions, unified validation, rollback and recovery materials. Authority classification is independent of local execution capability; apply is authorized only after the unified fail-closed preflight, and rollback success requires exact repository byte/type/symlink/mode restoration. The authoritative contract is `docs/architecture/incremental-execution.md`.
 
 Selective materialization is permitted only when registry, topology, profile, producer, validator, plan, authoritative-input and generated-output identities all match. Cache is a performance layer, never a second truth source. An affected component cannot claim no impact. Meta-authority changes, unresolved paths and missing fingerprint policy fail closed or require `FULL_REBUILD_REQUIRED`.
 

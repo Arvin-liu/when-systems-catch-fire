@@ -11,6 +11,7 @@ import re
 from dataclasses import dataclass
 from pathlib import Path, PurePosixPath
 from typing import Any
+from jsonschema import Draft202012Validator
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
@@ -181,6 +182,10 @@ def _validate_profiles(
                     f"output {raw!r} is not registered to component {cid!r}",
                 )
         kind = profile.get("execution_capability", profile.get("execution_kind"))
+        if profile.get("execution_cwd", ".") != ".":
+            c.add("E_PROFILE_CWD", f"profiles.profiles[{index}].execution_cwd", "execution cwd must be repository root")
+        if kind == "automatic" and (not profile.get("producer_argv") or not profile.get("generated_outputs")):
+            c.add("E_EXECUTION_BOUNDARY", f"profiles.profiles[{index}]", "automatic requires explicit producer and outputs")
         if kind in {"manual", "external_attestation", "attestation", "validation_only"} and profile.get("producer_argv"):
             c.add("E_EXECUTION_BOUNDARY", f"profiles.profiles[{index}].producer_argv", f"{kind} profile cannot have a producer")
     return by_component, by_profile
@@ -443,9 +448,48 @@ def validate_incremental_execution(
     profiles_path = profiles_path or root / "data/operations/component-execution-profiles.json"
     registry, profiles = _load_json(registry_path), _load_json(profiles_path)
     c = Collector()
+    for label, document, schema_name in (
+        ("plan", plan, "incremental-execution-plan.schema.json"),
+        ("profiles", profiles, "component-execution-profile.schema.json"),
+    ):
+        schema_path = root / "schemas/operations" / schema_name
+        if schema_path.is_file():
+            errors = sorted(Draft202012Validator(_load_json(schema_path)).iter_errors(document), key=lambda item: list(item.path))
+            if errors: c.add("E_SCHEMA", label, errors[0].message)
     by_component, by_profile = _validate_profiles(c, registry, profiles, root)
+    derived = profiles.get("derived_from")
+    policy_path = root / "data/operations/component-execution-profile-policies.json"
+    if isinstance(derived, dict) and policy_path.is_file():
+        expected = {
+            "registry_sha256": digest_file(registry_path),
+            "policy_sha256": digest_file(policy_path),
+            "topology_sha256": digest_file(topology_path),
+        }
+        if derived != expected:
+            c.add("E_PROFILE_IDENTITY", "profiles.derived_from", "registry, topology, or policy digest mismatch")
     authority = authority_fingerprint(registry_path, topology_path, profiles_path)
-    _, order = _validate_plan(c, plan, by_component, authority)
+    if isinstance(derived, dict) and plan.get("authority_fingerprint") != authority:
+        c.add("E_PLAN_AUTHORITY_IDENTITY", "plan.authority_fingerprint", "plan is not bound to exact registry, topology, and profiles")
+    if root == ROOT and isinstance(derived, dict):
+        try:
+            from tools.operations.generate_component_profiles import build as build_profiles
+            if profiles != build_profiles():
+                c.add("E_PROFILE_POLICY_MISMATCH", "profiles", "profiles do not exactly match the authoritative generator and policy")
+        except Exception as exc:
+            c.add("E_PROFILE_POLICY_MISMATCH", "profiles", f"cannot regenerate profiles: {exc}")
+    by_decision, order = _validate_plan(c, plan, by_component, authority)
+    affected = set(plan.get("q32_affected_component_closure", []))
+    for cid in order:
+        profile = by_profile.get(cid, {})
+        decision = by_decision.get(cid, {})
+        if cid not in affected:
+            c.add("E_CLOSURE_EXECUTION_MISMATCH", "plan.execution_order", f"{cid} is executable but outside affected closure")
+        if decision.get("decision") != "REBUILD":
+            c.add("E_DECISION_NOT_EXECUTABLE", "plan.execution_order", f"{cid} lacks REBUILD authorization")
+        if profile.get("execution_capability", profile.get("execution_kind")) != "automatic":
+            c.add("E_EXECUTION_CAPABILITY", "plan.execution_order", f"{cid} is not locally automatic")
+        if profile.get("execution_cwd", ".") != "." or not profile.get("producer_argv") or not profile.get("validator_argv"):
+            c.add("E_PROFILE_EXECUTION_IDENTITY", "plan.execution_order", f"{cid} lacks verified cwd/producer/validator identity")
     lifecycle_values = [plan.get(key) for key in ("lifecycle_status", "candidate_status", "publication_status")]
     if any(isinstance(value, str) and value.strip().lower() in {"accepted", "merged", "current"} for value in lifecycle_values):
         c.add("E_LIFECYCLE_ESCALATION", "plan.lifecycle", "candidate validation cannot claim Accepted, Merged, or Current")

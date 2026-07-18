@@ -65,6 +65,7 @@
     "tests/test_incremental_planner.py",
     "tests/test_phase_d_closeout.py",
     "tests/test_phase_e_candidate.py",
+    "tests/test_production_execution_authority.py",
     "tools/operations/generate_component_profiles.py",
     "tools/operations/plan_incremental_execution.py",
     "tools/operations/run_incremental_execution.py",
@@ -451,7 +452,25 @@
     "d1": "18/18 PASS",
     "d2": "14/14 PASS",
     "d3": "26/26 PASS",
-    "d4_report_digest": "a40276b5cacd249c4c8f266addb8f945ab56e805f02a243c0e16b045587ed723"
+    "d4_report_digest": "a40276b5cacd249c4c8f266addb8f945ab56e805f02a243c0e16b045587ed723",
+    "refreshed_local_execution_counts": {
+      "explained_skips": 1,
+      "foundation_unittest_pass": 7,
+      "function_os_pytest_pass": 164,
+      "function_os_unittest_pass": 164,
+      "repository_unittest_executions": 322,
+      "repository_unittest_external_verification_skip": 1,
+      "repository_unittest_pass": 321,
+      "standalone_canonical_pass": 40,
+      "total_executions": 697,
+      "total_pass": 696
+    },
+    "three_p1_regressions": {
+      "preflight_zero_side_effect_rejections": 9,
+      "production_automatic_profiles": 1,
+      "rollback_complete_restoration_tests": 7,
+      "status": "PASS"
+    }
   },
   "phase_e_assets": {
     "executor": "tools/operations/run_incremental_execution.py",
@@ -466,7 +485,7 @@
   "propagation_closure": {
     "base_identity": "4097e610eebfc65c739df4fe7d2900161c204a9d",
     "closure_complete": true,
-    "closure_hash": "a690d7e8bffecbab5540b7207f0bbb827630283ba3a2362f5cfb1add4560c642",
+    "closure_hash": "297c349109a6e06bb545399d3a3af3940ae8f04420a22f22a0232ee57e9a774e",
     "closure_path": "data/operations/propagation/121Q32I-closure.json",
     "component_decisions": [
       {
@@ -840,6 +859,7 @@
       "tests/test_incremental_planner.py",
       "tests/test_phase_d_closeout.py",
       "tests/test_phase_e_candidate.py",
+      "tests/test_production_execution_authority.py",
       "tools/operations/generate_component_profiles.py",
       "tools/operations/plan_incremental_execution.py",
       "tools/operations/run_incremental_execution.py",
@@ -1026,7 +1046,7 @@
   "self_hosting": {
     "decision": "FULL_REBUILD_REQUIRED",
     "demonstration_path": "reports/operations/121Q32I-incremental-execution-demonstration.json",
-    "plan_hash": "e659a97032237ea75b7a73794971c06df2bd89627c42122441cad47ade0ee392"
+    "plan_hash": "18510d9e748f3438516e7bb439e2d65432005216d28f18f26e0858911b4b23d9"
   },
   "state_transition": {
     "changed_dimensions": [
@@ -1268,6 +1288,11 @@
       {
         "evidence": "reports/operations/121Q32I-incremental-execution-demonstration.json",
         "name": "phase_e_self_hosting",
+        "status": "PASS"
+      },
+      {
+        "evidence": "tests/test_production_execution_authority.py",
+        "name": "three_p1_production_regressions",
         "status": "PASS"
       }
     ],

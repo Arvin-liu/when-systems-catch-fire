@@ -67,6 +67,7 @@
     "tests/test_incremental_planner.py",
     "tests/test_phase_d_closeout.py",
     "tests/test_phase_e_candidate.py",
+    "tests/test_production_execution_authority.py",
     "tools/operations/generate_component_profiles.py",
     "tools/operations/plan_incremental_execution.py",
     "tools/operations/run_incremental_execution.py",

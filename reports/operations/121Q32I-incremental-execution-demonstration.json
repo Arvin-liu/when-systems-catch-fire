@@ -1,10 +1,10 @@
 {
   "authority_digests": {
     "data/operations/change-propagation-topology.json": "ad42130e558a067cb3da23d07d655529682c0cef79b524ccdec9c7a3b2813512",
-    "data/operations/component-execution-profiles.json": "df9fe45d6e930a381ced6f377821bd5615900f63a0d31aab69ede45c944c6963",
-    "data/operations/project-components.json": "83bb68400ac5f6cc8a65e3c0eb659e3b37b7c7834d4a6e01949209e6feada619"
+    "data/operations/component-execution-profiles.json": "c2cd8afd8a77c47273ea5cae289f0b949e04e57418873870071857a30ac2fbb2",
+    "data/operations/project-components.json": "fa7a07e4b86e3ae1a2a16886e9ebad566863880a6f2b2be51a5dcab3d7b4179a"
   },
-  "authority_fingerprint": "1d320630a18ae3d98d08b2f9816f2e428ce3511436e0a555a8951e03a711ded7",
+  "authority_fingerprint": "14d9ed55f2dc994a1dd7ad13d99caa8d15ba4810d3f32c5ed3d32a59751eef48",
   "claim_ceiling": "Self-hosting proves deterministic planning over declared repository dependencies only; it is not real-world causal proof.",
   "planner_output": {
     "affected_synchronization_surfaces": [
@@ -25,6 +25,7 @@
       "release.changelog",
       "release.versioning"
     ],
+    "authority_fingerprint": "14d9ed55f2dc994a1dd7ad13d99caa8d15ba4810d3f32c5ed3d32a59751eef48",
     "claim_ceiling": "declared repository dependency planning only; not truth or causal proof",
     "component_decisions": [
       {
@@ -412,6 +413,7 @@
       "tests/test_incremental_planner.py",
       "tests/test_phase_d_closeout.py",
       "tests/test_phase_e_candidate.py",
+      "tests/test_production_execution_authority.py",
       "tools/operations/generate_component_profiles.py",
       "tools/operations/plan_incremental_execution.py",
       "tools/operations/run_incremental_execution.py",
@@ -422,7 +424,7 @@
       "tools/operations/validate_phase_e_candidate.py",
       "tools/validate_iteration_sync.py"
     ],
-    "plan_hash": "e659a97032237ea75b7a73794971c06df2bd89627c42122441cad47ade0ee392",
+    "plan_hash": "18510d9e748f3438516e7bb439e2d65432005216d28f18f26e0858911b4b23d9",
     "preconditions": [
       "clean tree or isolated worktree for apply"
     ],
@@ -448,7 +450,7 @@
     "rebuild_components": [],
     "request_identity": "121Q32I",
     "revalidate_components": [],
-    "rollback_plan": "executor must restore registered outputs or emit recovery package",
+    "rollback_plan": "executor must restore complete repository byte, type, symlink, and mode state or emit a recovery package",
     "schema_version": "1.0.0",
     "sync_metadata_components": [],
     "unresolved_residue": []
