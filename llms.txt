@@ -5,7 +5,7 @@ Current version: post-PR #57 main after Q25D whole-project synchronization close
 
 Current iteration method 1.1.0 adds registry-derived whole-project synchronization closure. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves live Pages truth.
 
-121Q32 proposes iteration method 1.2.0 and system map 0.2.0 as Draft candidates; 1.1.0 and map 0.1.0 remain Current. The candidate resolves change seeds through canonical components, typed declared repository/governance relations and the synchronization registry to a fixpoint, decisions, map delta and residue. Substantive causal candidates never auto-propagate. Git diffs, dependencies, reachability and map edges are not real-world causal identification.
+121Q32 iteration method 1.2.0 and system map 0.2.0 are Current after independent acceptance and merge closeout (Q32T); 1.1.0 and map 0.1.0 are retained as historical. The candidate resolves change seeds through canonical components, typed declared repository/governance relations and the synchronization registry to a fixpoint, decisions, map delta and residue. Substantive causal candidates never auto-propagate. Git diffs, dependencies, reachability and map edges are not real-world causal identification.
 
 Candidate authority assets: data/operations/project-components.json, data/operations/change-propagation-topology.json, data/architecture/interactive-system-map-layout.json, docs/architecture/typed-change-propagation.md. The materialized system-map JSON and SVG are derived outputs under the candidate.
 

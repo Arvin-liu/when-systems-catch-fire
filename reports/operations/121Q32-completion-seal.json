@@ -1,6 +1,6 @@
 {
   "task_id": "121Q32",
-  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "status": "CURRENT_CLOSEOUT_COMPLETE",
   "method_version": "1.2.0",
   "manifest_path": "data/operations/iterations/121Q32.json",
   "phase_b": {
@@ -15,21 +15,22 @@
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
-    "claim_ceiling": "validated_typed_declared_relation_propagation_and_derived_map_candidate_only"
+    "claim_ceiling": "validated_typed_declared_relation_propagation_and_derived_map_only",
+    "merge_commit": "c7efdb8f121305d12e29ca9e4f69cc74d85f5620"
   },
   "lifecycle": {
-    "candidate": true,
+    "candidate": false,
     "ready_for_gpt_verification": true,
-    "accepted": false,
-    "merged": false,
-    "current": false
+    "accepted": true,
+    "merged": true,
+    "current": true
   },
   "completion_state": {
     "implementation_complete": true,
     "repository_synchronization_complete": true,
     "external_synchronization_required": true,
-    "external_synchronization_attested": false,
-    "project_synchronization_complete": false
+    "external_synchronization_attested": true,
+    "project_synchronization_complete": true
   },
   "synchronization_registry": {
     "path": "data/operations/synchronization-surfaces.json",
@@ -39,11 +40,13 @@
     {
       "surface_id": "external.pages_homepage",
       "stage": "post_merge",
-      "status": "pending",
+      "status": "attested",
       "authority": "pull_request_body_and_1111_receipt",
       "evidence_refs": [
         "external:pr_body:61",
-        "external:1111_receipt:IGNITION-20260717-121Q32-result.md"
+        "external:1111_receipt:IGNITION-20260718-121Q32R4-final-independent-exact-head-review-after-f13-result.md",
+        "external:github_actions:29630860133",
+        "external:live_refetch:https://arvin-liu.github.io/when-systems-catch-fire/"
       ],
       "live_state_locally_verifiable": false
     }
@@ -55,8 +58,7 @@
     "unresolved_residue": []
   },
   "system_map": {
-    "current_version": "0.1.0",
-    "candidate_version": "0.2.0",
+    "current_version": "0.2.0",
     "groups": 9,
     "nodes": 41,
     "edges": 37,

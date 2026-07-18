@@ -41,7 +41,7 @@
 - 关系网络的邻接、相似性、中心性、社群、检索和行为变化不能升级为真理、价值、因果或内部学习机制证明。
 - 迭代方法只能约束操作纪律，不能证明实质结论正确。
 - 当前迭代方法 1.1.0 把变更视为全项目状态转换。必须从 `data/operations/synchronization-surfaces.json` 推导人类 README、Pages、项目现状、人类 AI 指南、Agent/机器入口和版本记录的传播闭包，不能只凭 Agent 记忆挑文件。
-- 121Q32 的 1.2.0 Draft candidate 还要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明；1.1.0 和图 0.1.0 在合并收口前仍是 Current。
+- 121Q32 的 1.2.0 还要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明；1.1.0 和图 0.1.0 保留为历史版本。
 - `implementation_complete` 不等于 `project_synchronization_complete`。生产首页部署和实时读取必须分别验证，不能由仓库状态替代。
 - 生命周期门禁按 registry 中每个表面的 `blocks` 计算。只阻塞 `current/closed` 的 post-merge Pages 不阻塞 pre-merge Accepted；但未从 main 部署并实时读取前，绝不能声称 Current/Closed。
 - 正向评价词必须绑定对象、判据、版本、证据和边界。

@@ -2,7 +2,9 @@
 
 Current method version: `1.1.0`
 
-Draft compatible candidate: `1.2.0` (typed declared change-propagation closure; not Current)
+Current: `1.2.0` (typed declared change-propagation closure; 121Q32T closeout complete)
+
+Historical: `1.1.0` (synchronization registry closure; superseded by 1.2.0)
 
 Status: canonical operation method. This method governs how 点火 changes itself. It is not a truth layer, proof system, value charter, causal model or substitute for external evidence.
 
@@ -235,9 +237,9 @@ Do not silently rewrite prior method history. Keep old receipts and reports audi
 
 Method 1.0.0 manifests and seals remain historical valid inputs. Method 1.1.0 adds a declared `completion_seal_path`, structured state transition, registry-derived synchronization closure and completion state. Compatibility must not allow a historical task-specific path to validate a different task's seal.
 
-## 14. Method 1.2.0 Draft Candidate: Typed Change Propagation
+## 14. Method 1.2.0 Current: Typed Change Propagation
 
-Method 1.2.0 is proposed by 121Q32; 1.1.0 remains Current until independent exact-HEAD acceptance, merge and Current closeout. The candidate adds an executable component-level closure before the existing synchronization and lifecycle gates.
+Method 1.2.0 was proposed by 121Q32 and became Current after independent exact-HEAD acceptance (R4), merge and closeout (Q32T). 1.1.0 is retained as historical. The candidate adds an executable component-level closure before the existing synchronization and lifecycle gates.
 
 Its authority chain is:
 

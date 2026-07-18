@@ -17,8 +17,9 @@
     "pr_number": 61,
     "base": "main",
     "base_head": "d1bedb074af8dad8202b4324f3f5bbbb6b308b51",
-    "draft": true,
-    "merged": false
+    "draft": false,
+    "merged": true,
+    "merge_commit": "c7efdb8f121305d12e29ca9e4f69cc74d85f5620"
   },
   "head_binding": {
     "mode": "external_exact_head_attestation",
@@ -38,13 +39,13 @@
     ],
     "smallest_material_action": "Add canonical project components, typed declared propagation, deterministic closure products and a registry-derived system-map projection while retaining 1.0/1.1 compatibility."
   },
-  "claim_ceiling": "validated_typed_declared_relation_propagation_and_derived_map_candidate_only",
+  "claim_ceiling": "validated_typed_declared_relation_propagation_and_derived_map_only",
   "status": {
-    "candidate": true,
+    "candidate": false,
     "ready_for_gpt_verification": true,
-    "accepted": false,
-    "merged": false,
-    "current": false
+    "accepted": true,
+    "merged": true,
+    "current": true
   },
   "state_transition": {
     "subjects": [
@@ -268,11 +269,13 @@
       {
         "surface_id": "external.pages_homepage",
         "stage": "post_merge",
-        "status": "pending",
+        "status": "attested",
         "authority": "pull_request_body_and_1111_receipt",
         "evidence_refs": [
           "external:pr_body:61",
-          "external:1111_receipt:IGNITION-20260717-121Q32-result.md"
+          "external:1111_receipt:IGNITION-20260718-121Q32R4-final-independent-exact-head-review-after-f13-result.md",
+          "external:github_actions:29630860133",
+          "external:live_refetch:https://arvin-liu.github.io/when-systems-catch-fire/"
         ],
         "live_state_locally_verifiable": false
       }
@@ -614,8 +617,8 @@
     "implementation_complete": true,
     "repository_synchronization_complete": true,
     "external_synchronization_required": true,
-    "external_synchronization_attested": false,
-    "project_synchronization_complete": false
+    "external_synchronization_attested": true,
+    "project_synchronization_complete": true
   },
   "impact_matrix": [
     {
