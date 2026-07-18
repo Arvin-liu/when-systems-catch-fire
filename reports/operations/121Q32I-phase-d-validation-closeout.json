@@ -1,0 +1,204 @@
+{
+  "artifact_inventory": [
+    "reports/operations/121Q32I-phase-d-validation-closeout.json",
+    "reports/operations/121Q32I-phase-d-validation-closeout.md",
+    "tests/test_phase_d_closeout.py",
+    "tools/operations/validate_phase_d_closeout.py"
+  ],
+  "auxiliary_gates": {
+    "canonical_plan_determinism": "PASS",
+    "dangerous_dynamic_execution_scan": "PASS",
+    "forbidden_asset_scan": "PASS",
+    "git_diff_check": "PASS",
+    "local_path_secret_private_key_scan": "PASS",
+    "production_change_propagation_check": "PASS",
+    "profile_generator_check": "PASS",
+    "profile_validator": "PASS",
+    "temporary_artifact_scan": "PASS"
+  },
+  "candidate_head": "4dd038bd3caf5483c8bf3833a0382ed5bb3e2b8a",
+  "candidate_head_role": "observed_identifier_only",
+  "claim_ceiling": "deterministic repository validation evidence for Phase D only; no truth, deployment, acceptance, merge, or Current claim",
+  "evidence_basis": {
+    "data/operations/change-propagation-topology.json": "f525cce4b124346d262adf28ec5f5a347486de9eba48f38b7da3fb0758c0ff98",
+    "data/operations/component-execution-profiles.json": "46a2d451f2a1b457642c32066f2356c885f0d4d88c60fcdf2398074594ceee75",
+    "data/operations/project-components.json": "dd381eddcc81bfa2f65f0755723c5051411f95f5dc1e830afe8a6fbd1baa15b4",
+    "data/operations/propagation/121Q32-closure.json": "60e0d6ce22bae6e2fb576a0010ba8591e7a6302a731ae71522eca2a765c9cc33",
+    "docs/publication/works/when-an-army-believes-its-own-back.md": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b",
+    "tests/PHASE-D-ACCEPTANCE-MATRIX.md": "7b30783e13b9fbfd8e4f07aba145c243cbc525660daeb54e99e23fc80232b0ff",
+    "tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md": "4bb9b3d4d8222275b4b6c4b5f26b68714ecbc06dd17550752d3bda446dca0c86",
+    "tests/test_incremental_execution_validator.py": "d365956dda5d56b7041fbd44ffc2fdc4775cc4444bdfac6511fd3d68fa895f9c"
+  },
+  "forbidden_content_scan": {
+    "categories": [
+      "dangerous_dynamic_execution",
+      "local_absolute_path",
+      "secret_or_private_key",
+      "temporary_cache_or_recovery",
+      "unauthorized_phase_or_experiment_asset"
+    ],
+    "result": "PASS",
+    "scope": "D4 changed files"
+  },
+  "historical_f5_boundary": {
+    "reason": "final change request, iteration manifest, completion seal, and synchronized project surfaces belong to Phase E",
+    "status": "DEFERRED_TO_PHASE_E_NOT_RUN"
+  },
+  "lifecycle": {
+    "accepted": false,
+    "current": false,
+    "merged": false,
+    "state": "candidate_only"
+  },
+  "markdown_digest": "b05fa0780edcf270ec0a721d7c4ae3ed9837e2a082e8d83e42bf611c1996365b",
+  "markdown_report": "reports/operations/121Q32I-phase-d-validation-closeout.md",
+  "network_and_third_party": {
+    "credential_operations": "NONE",
+    "network_access": "NONE",
+    "privilege_operations": "NONE",
+    "proof": "D3 socket guards completed without firing; D4 child commands are local Python and Git read-only validation commands",
+    "third_party_targets": "NONE"
+  },
+  "parent_head": "cb280f2bc546e5703aed99f5836f5a7c8bcc6da9",
+  "phase_e": {
+    "merge_performed": false,
+    "pr_created": false,
+    "state": "NOT_STARTED"
+  },
+  "preserved_commit_chain": [
+    {
+      "commit": "9bfba4bd03d1dff0b266940fe3964e770314d131",
+      "parent": "4097e610eebfc65c739df4fe7d2900161c204a9d",
+      "phase": "A"
+    },
+    {
+      "commit": "989990dad83c778147a8f9e7ca6f9d8ddc0acd27",
+      "parent": "9bfba4bd03d1dff0b266940fe3964e770314d131",
+      "phase": "B"
+    },
+    {
+      "commit": "671fc5d8884cff78238ab80eed87f36d6187ca29",
+      "parent": "989990dad83c778147a8f9e7ca6f9d8ddc0acd27",
+      "phase": "A1"
+    },
+    {
+      "commit": "c8e3e009671e0a21e00f66308e953127f41745d0",
+      "parent": "671fc5d8884cff78238ab80eed87f36d6187ca29",
+      "phase": "B1"
+    },
+    {
+      "commit": "3d8a90db164a4e41672e25adf1a7b824aba37e14",
+      "parent": "c8e3e009671e0a21e00f66308e953127f41745d0",
+      "phase": "C"
+    },
+    {
+      "commit": "aa9971d52287833beb728567f3c4c952d33778f2",
+      "parent": "3d8a90db164a4e41672e25adf1a7b824aba37e14",
+      "phase": "D1"
+    },
+    {
+      "commit": "cb280f2bc546e5703aed99f5836f5a7c8bcc6da9",
+      "parent": "aa9971d52287833beb728567f3c4c952d33778f2",
+      "phase": "D2"
+    },
+    {
+      "commit": "4dd038bd3caf5483c8bf3833a0382ed5bb3e2b8a",
+      "parent": "cb280f2bc546e5703aed99f5836f5a7c8bcc6da9",
+      "phase": "D3"
+    }
+  ],
+  "production_entrypoints": [
+    "tools/operations/generate_component_profiles.py",
+    "tools/operations/validate_component_profiles.py",
+    "tools/operations/plan_incremental_execution.py",
+    "tools/operations/run_incremental_execution.py",
+    "tools/operations/validate_incremental_execution.py",
+    "tools/operations/compute_change_propagation.py",
+    "tools/operations/validate_phase_d_closeout.py"
+  ],
+  "q29r": {
+    "path": "docs/publication/works/when-an-army-believes-its-own-back.md",
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b",
+    "status": "FROZEN"
+  },
+  "q32_closure": {
+    "closure_hash": "57b18c57dcefd521e9399be167f511017de785d8971af93177f25df8926ab7f1",
+    "production_check": "PASS"
+  },
+  "report_digest": "a40276b5cacd249c4c8f266addb8f945ab56e805f02a243c0e16b045587ed723",
+  "schema_version": "1.0.0",
+  "stable_error_code_families": [
+    "E_PROFILE_*",
+    "E_PLAN_*",
+    "E_PROOF_*",
+    "E_EXECUTION_*",
+    "E_CACHE_*",
+    "E_RECOVERY_*",
+    "E_UNSAFE_PATH",
+    "E_UNREGISTERED_WRITE",
+    "E_LIFECYCLE_ESCALATION",
+    "E_SELF_REFERENTIAL_AUTHORITY",
+    "E_SCOPE_CONTAMINATION",
+    "E_D4_*"
+  ],
+  "task_id": "121Q32I-D4",
+  "tests": {
+    "aggregate": {
+      "count": 114,
+      "passed": 114,
+      "result": "PASS"
+    },
+    "generated_output_authority": {
+      "count": 7,
+      "passed": 7,
+      "result": "PASS"
+    },
+    "phase_a_profile": {
+      "count": 3,
+      "passed": 3,
+      "result": "PASS"
+    },
+    "phase_b_planner": {
+      "count": 3,
+      "passed": 3,
+      "result": "PASS"
+    },
+    "phase_c_executor": {
+      "count": 18,
+      "passed": 18,
+      "result": "PASS"
+    },
+    "phase_d1_validator": {
+      "count": 18,
+      "passed": 18,
+      "result": "PASS"
+    },
+    "phase_d2_acceptance": {
+      "count": 14,
+      "passed": 14,
+      "result": "PASS"
+    },
+    "phase_d3_defensive": {
+      "count": 26,
+      "passed": 26,
+      "result": "PASS"
+    },
+    "phase_d4_closeout": {
+      "count": 20,
+      "passed": 20,
+      "result": "PASS"
+    },
+    "tracked_symlink_gate": {
+      "count": 5,
+      "passed": 5,
+      "result": "PASS"
+    }
+  },
+  "validity_basis": [
+    "recomputed test and matrix counts",
+    "recomputed Git parent links",
+    "recomputed authority and evidence file digests",
+    "recomputed Q32 closure and Q29R hashes",
+    "recomputed Markdown and JSON report digests"
+  ]
+}
