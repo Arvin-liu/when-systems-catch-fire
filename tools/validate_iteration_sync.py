@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -49,6 +50,61 @@ TRIGGERING_CLASSIFICATIONS = {
 }
 UNRESOLVED_STATUSES = {"PENDING", "TODO", "UNKNOWN", "", "TBD", "N/A"}
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
+# -- Seal structural validation (F13: self-head attestation bypass hardening) --
+
+# Known top-level fields across all seal versions.
+_SEAL_KNOWN_TOP_LEVEL: frozenset[str] = frozenset({
+    "task_id", "status", "method_version", "manifest_path",
+    "lifecycle", "phase_b",
+    "phase_a", "external_exact_head_attestation", "local_validation",
+    "manifest_hash", "boundaries",
+    "pages_binding",
+    "completion_state", "synchronization_registry", "external_attestations",
+    "propagation_closure", "propagation_closure_hash", "system_map",
+    "pages_artifacts", "edges", "changed_paths_count", "relations",
+    "historical_digest_evidence",
+    "authored_seed_paths_count", "base_to_head_diff_paths_count",
+    "generated_output_paths_count", "diff_coverage_complete",
+    "external_artifact_attestation_contract",
+})
+
+# Nested dicts where unknown keys are strictly rejected.
+_SEAL_STRICT_NESTED: dict[str, frozenset[str]] = {
+    "phase_b": frozenset({"base", "base_head", "branch", "claim_ceiling",
+                           "draft_pr", "merged_pr", "merge_commit",
+                           "head_binding", "accepted_head",
+                           "candidate_method_version", "method_name",
+                           "method_version", "review_id",
+                           "superseded_candidate_head"}),
+    "phase_b.head_binding": frozenset({"mode", "authority", "receipt_path",
+                                        "embedded_exact_current_head",
+                                        "live_refetch_required"}),
+    "lifecycle": frozenset({"candidate", "ready_for_gpt_verification",
+                              "accepted", "merged", "current"}),
+    "completion_state": frozenset({"implementation_complete",
+                                     "repository_synchronization_complete",
+                                     "external_synchronization_required",
+                                     "external_synchronization_attested",
+                                     "project_synchronization_complete"}),
+    "synchronization_registry": frozenset({"path", "version"}),
+    "propagation_closure": frozenset({"closure_hash", "closure_path",
+                                        "complete", "unresolved_residue"}),
+    "system_map": frozenset({"current_version", "candidate_version",
+                               "groups", "nodes", "edges", "l7_added"}),
+    "pages_artifacts": frozenset({"github_artifact_archive_digest",
+                                    "pages_payload_tar_digest"}),
+}
+
+# Nested dicts where keys are per-task/per-version.
+_SEAL_PERMISSIVE_NESTED: frozenset[str] = frozenset({
+    "phase_a", "external_exact_head_attestation", "manifest_hash",
+    "boundaries", "local_validation",
+    "historical_digest_evidence",
+    "historical_digest_evidence.subject_run_ids",
+    "historical_digest_evidence.dual_digest",
+    "external_artifact_attestation_contract",
+})
+
 
 
 def load_json(path: Path) -> object:
@@ -186,8 +242,122 @@ def _validate_ready_evidence(manifest: dict, source: Path) -> None:
         require(item.get("subject_head"), f"{source}: historical validation {item['name']} missing subject_head")
         require(item.get("conclusion", "").lower() == "success", f"{source}: remote validation {item['name']} conclusion not success")
 
+def _validate_seal_known_fields(seal: dict, source: Path) -> None:
+    """Reject unknown top-level and strictly-checked nested fields in the seal."""
+    for key in seal:
+        if key not in _SEAL_KNOWN_TOP_LEVEL:
+            raise AssertionError(
+                f"{source}: seal contains unknown top-level field: {key}"
+            )
+    for dot_path, allowed in _SEAL_STRICT_NESTED.items():
+        parts = dot_path.split(".")
+        obj = seal
+        for part in parts:
+            if not isinstance(obj, dict):
+                break
+            obj = obj.get(part)
+            if obj is None:
+                break
+        if isinstance(obj, dict):
+            for key in obj:
+                if key not in allowed:
+                    raise AssertionError(
+                        f"{source}: seal contains unknown field: {dot_path}.{key}"
+                    )
+    for dot_path in _SEAL_PERMISSIVE_NESTED:
+        parts = dot_path.split(".")
+        obj = seal
+        for part in parts:
+            if not isinstance(obj, dict):
+                break
+            obj = obj.get(part)
+        if obj is not None and not isinstance(obj, dict):
+            raise AssertionError(
+                f"{source}: seal field {dot_path} expected a dict, "
+                f"got {type(obj).__name__}"
+            )
+
+
+def _get_current_head() -> str:
+    """Run git rev-parse HEAD and return the SHA. Fail-closed on error."""
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            capture_output=True, text=True, cwd=ROOT,
+            timeout=30,
+        )
+    except FileNotFoundError:
+        raise AssertionError(
+            "git not found, cannot validate seal against current HEAD"
+        )
+    except subprocess.TimeoutExpired:
+        raise AssertionError(
+            "git rev-parse HEAD timed out, cannot validate seal"
+        )
+    if result.returncode != 0:
+        raise AssertionError(
+            f"cannot resolve current HEAD (git rev-parse exited "
+            f"{result.returncode}): {result.stderr.strip()}"
+        )
+    sha = result.stdout.strip()
+    if not SHA_RE.match(sha):
+        raise AssertionError(f"invalid HEAD SHA format: {sha}")
+    return sha
+
+
+def _check_ancestor(sha: str) -> bool:
+    """Check whether sha is an ancestor of HEAD."""
+    try:
+        result = subprocess.run(
+            ["git", "merge-base", "--is-ancestor", sha, "HEAD"],
+            capture_output=True, text=True, cwd=ROOT,
+            timeout=30,
+        )
+        return result.returncode == 0
+    except (subprocess.SubprocessError, FileNotFoundError):
+        return False
+
+
+def _validate_seal_no_self_head_embedding(seal: dict, source: Path) -> None:
+    """Reject seal if any string value embeds the current Git HEAD.
+    Allows historical ancestor SHAs in historical_digest_evidence.
+    Fail-closed if git HEAD cannot be resolved."""
+    current_head = _get_current_head()
+    _ANCESTOR_PREFIXES = ("historical_digest_evidence",)
+
+    def _is_ancestor_prefix(path: str) -> bool:
+        return any(
+            path == p or path.startswith(p + ".") or path.startswith(p + "[")
+            for p in _ANCESTOR_PREFIXES
+        )
+
+    def _scan(obj, path: str = "") -> None:
+        if isinstance(obj, str):
+            if current_head in obj:
+                raise AssertionError(
+                    f"{source}: seal embeds current Git HEAD at {path}: "
+                    f"self-head attestation bypass detected"
+                )
+            if _is_ancestor_prefix(path) and SHA_RE.match(obj):
+                if not _check_ancestor(obj):
+                    raise AssertionError(
+                        f"{source}: seal contains non-ancestor SHA at "
+                        f"{path}: historical claim does not resolve "
+                        f"to an ancestor of HEAD"
+                    )
+        elif isinstance(obj, dict):
+            for key, val in obj.items():
+                _scan(val, f"{path}.{key}" if path else key)
+        elif isinstance(obj, list):
+            for idx, val in enumerate(obj):
+                _scan(val, f"{path}[{idx}]")
+
+    _scan(seal, "")
+
 
 def _validate_seal(manifest: dict, seal: dict, source: Path) -> None:
+    _validate_seal_known_fields(seal, source)
+    _validate_seal_no_self_head_embedding(seal, source)
     require(seal.get("task_id") == manifest["task_id"], f"{source}: seal task mismatch")
     require(seal.get("method_version") == manifest["method_version"], f"{source}: seal method_version mismatch")
     phase_b = seal.get("phase_b", {})
@@ -229,12 +399,7 @@ def _validate_seal_f12(seal: dict, source: Path) -> None:
     require("pages_artifacts" not in seal,
             f"{source}: seal must not contain pages_artifacts with unbound live digests")
 
-    # 2. Self-SHA embedding check — seal must not embed its own commit SHA
-    for field in ("embedded_exact_current_head", "live_head_sha", "current_head"):
-        require(field not in seal or seal[field] is False or seal[field] == "",
-                f"{source}: seal must not embed current commit SHA in {field}")
-
-    # 3. Historical digest must have subject_head and run IDs
+    # 2. Historical digest must have subject_head and run IDs
     hde = seal.get("historical_digest_evidence")
     if hde:
         require(hde.get("subject_head"), f"{source}: historical_digest_evidence missing subject_head")

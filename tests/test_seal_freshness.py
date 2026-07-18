@@ -279,6 +279,69 @@ class F12CConsistencyAttackTests(unittest.TestCase):
         registry = _registry()
         validate_custom(manifest, MANIFEST_PATH, seal, registry)
 
+
+class F13SelfHeadAttestationBypassTests(unittest.TestCase):
+    """Mutation tests: seal must reject self-HEAD embedding (closes R3 #6)."""
+
+    @staticmethod
+    def _current_head() -> str:
+        import subprocess as _sp
+        r = _sp.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True, cwd=str(ROOT))
+        if r.returncode != 0:
+            raise RuntimeError(f"cannot resolve HEAD: {r.stderr}")
+        return r.stdout.strip()
+
+    def _tamper_and_validate(self, tamper_fn) -> None:
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        tamper_fn(seal)
+        with self.assertRaises(AssertionError):
+            validate_custom(manifest, MANIFEST_PATH, seal, registry)
+
+    def test_m6_top_level_self_sha_field(self) -> None:
+        head = self._current_head()
+        self._tamper_and_validate(lambda s: s.update({"self_sha": head}))
+
+    def test_m6_nested_self_sha_field(self) -> None:
+        head = self._current_head()
+        self._tamper_and_validate(
+            lambda s: s.setdefault("phase_b", {}).update({"self_sha": head})
+        )
+
+    def test_m6_array_evidence_self_sha(self) -> None:
+        head = self._current_head()
+        def tamper(seal):
+            atts = seal.get("external_attestations", [])
+            if atts:
+                atts[0].setdefault("evidence_refs", []).append(head)
+        self._tamper_and_validate(tamper)
+
+    def test_m6_historical_ancestor_allowed(self) -> None:
+        import subprocess as _sp
+        r = _sp.run(["git", "merge-base", "HEAD~1", "HEAD"], capture_output=True, text=True, cwd=str(ROOT))
+        if r.returncode != 0:
+            self.skipTest("cannot compute ancestor SHA")
+        ancestor = r.stdout.strip()
+        manifest = _manifest()
+        seal = _seal()
+        registry = _registry()
+        if "historical_digest_evidence" in seal:
+            seal["historical_digest_evidence"]["subject_head"] = ancestor
+        validate_custom(manifest, MANIFEST_PATH, seal, registry)
+
+    def test_m6_random_sha_rejected(self) -> None:
+        def tamper(seal):
+            if "historical_digest_evidence" in seal:
+                seal["historical_digest_evidence"]["subject_head"] = (
+                    "0000000000000000000000000000000000000000"
+                )
+        self._tamper_and_validate(tamper)
+
+    def test_m6_field_name_not_restricted_to_self_sha(self) -> None:
+        self._tamper_and_validate(lambda s: s.update({"evasion": "bypass"}))
+
+
 if __name__ == "__main__":
     unittest.main()
 
