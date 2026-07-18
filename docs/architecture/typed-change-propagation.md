@@ -1,6 +1,6 @@
 # 类型化变更传播闭包 / Typed Change-Propagation Closure
 
-Status: `121Q32_DRAFT_CANDIDATE`. This is a compatible operation-method candidate for `ITERATION.md` 1.2.0 and interactive system map 0.2.0. Method 1.1.0 and map 0.1.0 remain Current until an independently accepted exact HEAD is merged and closed out.
+Status: `121Q32T_CURRENT`. Iteration method 1.2.0 and interactive system map 0.2.0 are Current after independent acceptance, merge and closeout; method 1.1.0 and map 0.1.0 are historical. Q32I builds the separate 1.3.0 Draft candidate on this typed-propagation authority.
 
 ## The missing executable layer
 
@@ -51,7 +51,7 @@ The calculator then:
 
 ## System-map projection
 
-The 0.2.0 candidate replaces the materialized map JSON as hand-maintained authority:
+Current 0.2.0 replaced the materialized map JSON as hand-maintained authority:
 
 `project-components.json + change-propagation-topology.json + interactive-system-map-layout.json → generate_interactive_system_map.py → interactive-system-map.json + SVG + README/Pages`
 

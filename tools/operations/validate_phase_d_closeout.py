@@ -192,7 +192,15 @@ def validate_closeout(document: dict[str, Any], *, root: Path = ROOT, markdown_p
         add("E_D4_SELF_ATTESTATION", "evidence_basis", "current/candidate HEAD cannot establish report validity")
     for raw, expected in document.get("evidence_basis", {}).items() if isinstance(document.get("evidence_basis"), dict) else []:
         path = root / raw
-        if not path.is_file() or sha256_file(path) != expected:
+        live_matches = path.is_file() and sha256_file(path) == expected
+        historical_matches = False
+        if not live_matches:
+            frozen = subprocess.run(
+                ["git", "show", f"{document.get('candidate_head')}:{raw}"],
+                cwd=root, capture_output=True, shell=False,
+            )
+            historical_matches = frozen.returncode == 0 and sha256_bytes(frozen.stdout) == expected
+        if not (live_matches or historical_matches):
             add("E_D4_EVIDENCE_DIGEST", f"evidence_basis.{raw}", "evidence file digest mismatch")
 
     raw_document = json.dumps(document, ensure_ascii=False)

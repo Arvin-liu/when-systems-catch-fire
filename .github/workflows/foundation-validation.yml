@@ -116,6 +116,15 @@ jobs:
             --map-delta data/operations/propagation/121Q32-system-map-delta.json \
             --residue data/operations/propagation/121Q32-residue.json \
             --check
+          python3 tools/operations/compute_change_propagation.py \
+            --request data/operations/propagation/121Q32I-request.json \
+            --output data/operations/propagation/121Q32I-closure.json \
+            --report reports/operations/121Q32I-change-propagation-impact.md \
+            --map-delta data/operations/propagation/121Q32I-system-map-delta.json \
+            --residue data/operations/propagation/121Q32I-residue.json \
+            --check
+      - name: Validate Q32I Phase E candidate
+        run: python3 tools/operations/validate_phase_e_candidate.py --check
       - name: Validate registry-derived system map
         run: python3 tools/generate_interactive_system_map.py --check
       - run: python3 tools/validate_human_front_door.py
@@ -124,3 +133,4 @@ jobs:
       - run: python3 -m unittest tests.test_human_front_door -v
       - run: python3 -m unittest tests.test_change_propagation -v
       - run: python3 -m unittest tests.test_pages_deploy_gate -v
+      - run: python3 -m unittest tests.test_phase_e_candidate -v

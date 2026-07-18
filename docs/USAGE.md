@@ -26,9 +26,13 @@
 
 需要从整体结构定位入口时，打开[完整可点击系统图](./architecture/interactive-system-map.md)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。
 
-### 1.2 Draft candidate：计算一次项目变更的传播闭包
+### 1.2 Current：计算一次项目变更的传播闭包
 
-当前正式方法仍是 1.1.0。若任务明确试用 121Q32 candidate，先在 `data/operations/propagation/<task>-request.json` 登记 changed paths、显式 seed components、changed dimensions、classifications 和逐项决定，再运行 `tools/operations/compute_change_propagation.py` 生成 closure、impact report、map delta 与 residue。只有 closure 达到 fixpoint、每个 required component/surface 有决定、map 投影匹配且 residue 为空，才能进入候选 Ready。
+当前正式方法是 1.2.0。先在 `data/operations/propagation/<task>-request.json` 登记 changed paths、显式 seed components、changed dimensions、classifications 和逐项决定，再运行 `tools/operations/compute_change_propagation.py` 生成 closure、impact report、map delta 与 residue。只有 closure 达到 fixpoint、每个 required component/surface 有决定、map 投影匹配且 residue 为空，才能进入候选 Ready。
+
+### 1.3 Draft candidate：增量执行与选择性物化
+
+Q32I 候选从真实 change request 运行 `plan_incremental_execution.py`，再由 `run_incremental_execution.py` 只执行 component profile 登记的结构化 argv，最后使用 `validate_incremental_execution.py` 独立检查 plan、proof、execution、cache 和 recovery。NonImpactProof 仅在声明仓库关系范围内有效；cache 只有在全部权威、命令、plan 与输入输出指纹一致时才可复用。任何 meta-authority 变更、未解析路径或身份失配都 fail closed；Q32I 对自身最终 change set 运行时正确输出 `FULL_REBUILD_REQUIRED`。
 
 `NO_CHANGE_WITH_REASON` 允许纯历史修字不触发无关全仓更新；新增正式构件则必须进入系统图，或提供 validator 可检查的 hidden representation 与理由。这里计算的是声明关系下的仓库／治理传播，不是现实因果。
 

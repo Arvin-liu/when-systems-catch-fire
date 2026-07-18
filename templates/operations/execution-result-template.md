@@ -1,6 +1,6 @@
 # Ignition Execution Result Template
 
-Current method contract: `ITERATION.md` 1.1.0. If the 1.2.0 Draft candidate is selected, report its typed closure separately.
+Current method contract: `ITERATION.md` 1.2.0. For the 1.3.0 Draft candidate, report the plan hash, authority identity, cache disposition, rollback/recovery outcome and stable validator error code.
 
 Status: `<STATUS>`
 
@@ -55,7 +55,7 @@ Propagation closure:
 - Unresolved synchronization residue:
 - Why this is or is not ready/current/closed:
 
-Typed component closure (method 1.2 candidate only):
+Typed component closure (method 1.2 Current; required by the 1.3 Draft candidate):
 
 - Seed paths / seed components:
 - Resolved components and typed path IDs:

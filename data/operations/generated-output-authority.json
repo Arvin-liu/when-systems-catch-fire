@@ -1,12 +1,26 @@
 {
-  "schema_version": "1.0.0",
-  "task_id": "121Q32",
   "description": "Canonical machine-readable authority for all generated outputs in PR #61 diff coverage",
   "generated_outputs": [
     {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/operations/propagation/121Q32-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json",
+        "data/architecture/interactive-system-map-layout.json",
+        "data/architecture/interactive-system-map.json"
+      ],
+      "justification": "Deterministic closure computation from request + registries",
+      "output_type": "materialized_projection",
       "path": "data/operations/propagation/121Q32-closure.json",
-      "producer_id": "compute_change_propagation",
       "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
       "input_authorities": [
         "data/operations/propagation/121Q32-request.json",
         "data/operations/project-components.json",
@@ -15,66 +29,15 @@
         "data/architecture/interactive-system-map-layout.json",
         "data/architecture/interactive-system-map.json"
       ],
-      "output_type": "materialized_projection",
-      "freshness_mode": "byte_level_recompute",
-      "coverage_class": "generated_output",
-      "justification": "Deterministic closure computation from request + registries"
-    },
-    {
-      "path": "data/operations/propagation/121Q32-residue.json",
-      "producer_id": "compute_change_propagation",
-      "producer_command": "python tools/operations/compute_change_propagation.py",
-      "input_authorities": [
-        "data/operations/propagation/121Q32-request.json",
-        "data/operations/project-components.json",
-        "data/operations/change-propagation-topology.json",
-        "data/operations/synchronization-surfaces.json",
-        "data/architecture/interactive-system-map-layout.json",
-        "data/architecture/interactive-system-map.json"
-      ],
-      "output_type": "residue",
-      "freshness_mode": "byte_level_recompute",
-      "coverage_class": "generated_output",
-      "justification": "Deterministic residue from propagation computation"
-    },
-    {
-      "path": "data/operations/propagation/121Q32-system-map-delta.json",
-      "producer_id": "compute_change_propagation",
-      "producer_command": "python tools/operations/compute_change_propagation.py",
-      "input_authorities": [
-        "data/operations/propagation/121Q32-request.json",
-        "data/operations/project-components.json",
-        "data/operations/change-propagation-topology.json",
-        "data/operations/synchronization-surfaces.json",
-        "data/architecture/interactive-system-map-layout.json",
-        "data/architecture/interactive-system-map.json"
-      ],
-      "output_type": "seal_bound_derivative",
-      "freshness_mode": "byte_level_recompute",
-      "coverage_class": "generated_output",
-      "justification": "Deterministic map delta from propagation computation"
-    },
-    {
-      "path": "data/operations/propagation/121Q32-map-delta.json",
-      "producer_id": "compute_change_propagation",
-      "producer_command": "python tools/operations/compute_change_propagation.py",
-      "input_authorities": [
-        "data/operations/propagation/121Q32-request.json",
-        "data/operations/project-components.json",
-        "data/operations/change-propagation-topology.json",
-        "data/operations/synchronization-surfaces.json",
-        "data/architecture/interactive-system-map-layout.json",
-        "data/architecture/interactive-system-map.json"
-      ],
-      "output_type": "seal_bound_derivative",
-      "freshness_mode": "byte_level_recompute",
-      "coverage_class": "generated_output",
-      "justification": "Deterministic map delta (secondary output)"
-    },
-    {
+      "justification": "Deterministic impact report from propagation computation",
+      "output_type": "report",
       "path": "data/operations/propagation/121Q32-impact-report.md",
-      "producer_id": "compute_change_propagation",
       "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
       "input_authorities": [
         "data/operations/propagation/121Q32-request.json",
         "data/operations/project-components.json",
@@ -83,15 +46,15 @@
         "data/architecture/interactive-system-map-layout.json",
         "data/architecture/interactive-system-map.json"
       ],
-      "output_type": "report",
-      "freshness_mode": "byte_level_recompute",
-      "coverage_class": "generated_output",
-      "justification": "Deterministic impact report from propagation computation"
+      "justification": "Deterministic map delta (secondary output)",
+      "output_type": "seal_bound_derivative",
+      "path": "data/operations/propagation/121Q32-map-delta.json",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
     },
     {
-      "path": "reports/operations/121Q32-change-propagation-impact.md",
-      "producer_id": "compute_change_propagation",
-      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
       "input_authorities": [
         "data/operations/propagation/121Q32-request.json",
         "data/operations/project-components.json",
@@ -100,40 +63,137 @@
         "data/architecture/interactive-system-map-layout.json",
         "data/architecture/interactive-system-map.json"
       ],
-      "output_type": "report",
-      "freshness_mode": "byte_level_recompute",
-      "coverage_class": "generated_output",
-      "justification": "Deterministic impact report (reports/ copy for governance artifact)"
+      "justification": "Deterministic residue from propagation computation",
+      "output_type": "residue",
+      "path": "data/operations/propagation/121Q32-residue.json",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
     },
     {
-      "path": "data/protocol-canonical-validation-results.json",
-      "producer_id": "validate_protocol_canonical",
-      "producer_command": "python tools/validate_protocol_canonical.py",
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
       "input_authorities": [
-        "data/meta-protocols/meta-protocols.json",
-        "canonical/schemas/protocol-canonical.schema.json",
-        "canonical/data/gate-registry.json",
-        "canonical/mappings/legacy-to-canonical-field-map.json"
+        "data/operations/propagation/121Q32-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json",
+        "data/architecture/interactive-system-map-layout.json",
+        "data/architecture/interactive-system-map.json"
       ],
+      "justification": "Deterministic map delta from propagation computation",
+      "output_type": "seal_bound_derivative",
+      "path": "data/operations/propagation/121Q32-system-map-delta.json",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/operations/propagation/121Q32I-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json"
+      ],
+      "justification": "Deterministic Q32I output from the final request and canonical registries.",
       "output_type": "materialized_projection",
-      "freshness_mode": "byte_level_recompute",
-      "coverage_class": "generated_output",
-      "justification": "Deterministic validation results from canonical protocol data + schema + gate registry"
+      "path": "data/operations/propagation/121Q32I-closure.json",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
     },
     {
-      "path": "outputs/protocol-canonical-validation-results.md",
-      "producer_id": "validate_protocol_canonical",
-      "producer_command": "python tools/validate_protocol_canonical.py",
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/operations/propagation/121Q32I-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json"
+      ],
+      "justification": "Deterministic Q32I output from the final request and canonical registries.",
+      "output_type": "residue",
+      "path": "data/operations/propagation/121Q32I-residue.json",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/operations/propagation/121Q32I-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json"
+      ],
+      "justification": "Deterministic Q32I output from the final request and canonical registries.",
+      "output_type": "seal_bound_derivative",
+      "path": "data/operations/propagation/121Q32I-system-map-delta.json",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
       "input_authorities": [
         "data/meta-protocols/meta-protocols.json",
         "canonical/schemas/protocol-canonical.schema.json",
         "canonical/data/gate-registry.json",
         "canonical/mappings/legacy-to-canonical-field-map.json"
       ],
-      "output_type": "report",
-      "freshness_mode": "byte_level_recompute",
+      "justification": "Deterministic validation results from canonical protocol data + schema + gate registry",
+      "output_type": "materialized_projection",
+      "path": "data/protocol-canonical-validation-results.json",
+      "producer_command": "python tools/validate_protocol_canonical.py",
+      "producer_id": "validate_protocol_canonical"
+    },
+    {
       "coverage_class": "generated_output",
-      "justification": "Deterministic validation report from canonical protocol data + schema + gate registry"
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/meta-protocols/meta-protocols.json",
+        "canonical/schemas/protocol-canonical.schema.json",
+        "canonical/data/gate-registry.json",
+        "canonical/mappings/legacy-to-canonical-field-map.json"
+      ],
+      "justification": "Deterministic validation report from canonical protocol data + schema + gate registry",
+      "output_type": "report",
+      "path": "outputs/protocol-canonical-validation-results.md",
+      "producer_command": "python tools/validate_protocol_canonical.py",
+      "producer_id": "validate_protocol_canonical"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/operations/propagation/121Q32-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json",
+        "data/architecture/interactive-system-map-layout.json",
+        "data/architecture/interactive-system-map.json"
+      ],
+      "justification": "Deterministic impact report (reports/ copy for governance artifact)",
+      "output_type": "report",
+      "path": "reports/operations/121Q32-change-propagation-impact.md",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/operations/propagation/121Q32I-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json"
+      ],
+      "justification": "Deterministic Q32I output from the final request and canonical registries.",
+      "output_type": "report",
+      "path": "reports/operations/121Q32I-change-propagation-impact.md",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
     }
-  ]
+  ],
+  "schema_version": "1.0.0",
+  "task_id": "121Q32"
 }

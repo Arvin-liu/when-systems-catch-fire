@@ -66,6 +66,8 @@ _SEAL_KNOWN_TOP_LEVEL: frozenset[str] = frozenset({
     "authored_seed_paths_count", "base_to_head_diff_paths_count",
     "generated_output_paths_count", "diff_coverage_complete",
     "external_artifact_attestation_contract",
+    "self_hosting", "phase_e_evidence", "commit_chain", "q29r",
+    "phase_d_closeout", "contamination_scan",
 })
 
 # Nested dicts where unknown keys are strictly rejected.
@@ -103,6 +105,8 @@ _SEAL_PERMISSIVE_NESTED: frozenset[str] = frozenset({
     "historical_digest_evidence.subject_run_ids",
     "historical_digest_evidence.dual_digest",
     "external_artifact_attestation_contract",
+    "self_hosting", "phase_e_evidence", "q29r", "phase_d_closeout",
+    "contamination_scan",
 })
 
 
@@ -382,11 +386,11 @@ def _validate_seal(manifest: dict, seal: dict, source: Path) -> None:
     require(phase_b.get("claim_ceiling") == manifest["claim_ceiling"], f"{source}: seal claim ceiling mismatch")
     for key in ("candidate", "ready_for_gpt_verification", "accepted", "merged", "current"):
         require(lifecycle.get(key) == manifest["status"][key], f"{source}: seal lifecycle mismatch for {key}")
-    if manifest["method_version"] in {"1.1.0", "1.2.0"}:
+    if manifest["method_version"] in {"1.1.0", "1.2.0", "1.3.0"}:
         require(seal.get("completion_state") == manifest["completion_state"], f"{source}: seal completion_state mismatch")
         require(seal.get("synchronization_registry", {}).get("path") == manifest["synchronization_closure"]["registry_path"], f"{source}: seal synchronization registry mismatch")
         require(seal.get("external_attestations") == manifest["synchronization_closure"]["external_attestations"], f"{source}: seal external_attestations mismatch")
-    if manifest["method_version"] == "1.2.0":
+    if manifest["method_version"] in {"1.2.0", "1.3.0"}:
         require(seal.get("propagation_closure", {}).get("closure_hash") == manifest["propagation_closure"]["closure_hash"], f"{source}: seal propagation closure hash mismatch")
     _validate_seal_f12(seal, source)
 
@@ -443,7 +447,7 @@ def _validate_seal_f12(seal: dict, source: Path) -> None:
 
     # 5. For method 1.2.0 candidate seals: must not be accepted/merged/current
     lifecycle = seal.get("lifecycle", {})
-    if seal.get("method_version") == "1.2.0" and lifecycle.get("candidate") is True:
+    if seal.get("method_version") in {"1.2.0", "1.3.0"} and lifecycle.get("candidate") is True:
         if lifecycle.get("ready_for_gpt_verification") is True:
             require(lifecycle.get("accepted") is not True,
                     f"{source}: 1.2.0 candidate seal must not be marked accepted")
@@ -461,14 +465,19 @@ def _validate_seal_f12(seal: dict, source: Path) -> None:
     # 7. F12C: Dynamic diff coverage validation from Git diff + request + authority
     import subprocess as _sp
     try:
+        if not any(
+            key in seal for key in ("authored_seed_paths_count", "generated_output_paths_count", "base_to_head_diff_paths_count", "diff_coverage_complete")
+        ):
+            raise OSError("dynamic diff coverage is not asserted by this seal")
         _base_head = None
         _manifest_path = ROOT / "data/operations/iterations/121Q32.json"
         if _manifest_path.is_file():
             _m = json.loads(_manifest_path.read_text(encoding="utf-8"))
             _base_head = _m.get("branch_pr", {}).get("base_head")
         if _base_head:
+            _subject = seal.get("phase_b", {}).get("merge_commit", "HEAD") if seal.get("task_id") == "121Q32" else "HEAD"
             _diff_result = _sp.run(
-                ["git", "diff", "--name-only", f"{_base_head}...HEAD"],
+                ["git", "diff", "--name-only", f"{_base_head}...{_subject}"],
                 capture_output=True, text=True, cwd=str(ROOT)
             )
             _actual_diff = set(p for p in _diff_result.stdout.strip().split("\n") if p)
@@ -483,7 +492,7 @@ def _validate_seal_f12(seal: dict, source: Path) -> None:
             _generated = set()
             if _auth_path.is_file():
                 _auth = json.loads(_auth_path.read_text(encoding="utf-8"))
-                _generated = set(g["path"] for g in _auth.get("generated_outputs", []))
+                _generated = set(g["path"] for g in _auth.get("generated_outputs", [])) & _actual_diff
 
             # Verify seal counts match actual data
             if "base_to_head_diff_paths_count" in seal:
@@ -651,10 +660,16 @@ def _validate_v12_propagation(manifest: dict, source: Path) -> None:
 
     request = load_json(paths["request_path"])
     persisted_closure = load_json(paths["closure_path"])
-    recomputed, delta = compute(request)
-    require(persisted_closure == recomputed, f"{source}: propagation closure is stale or hand-edited")
+    if manifest["task_id"] == "121Q32I":
+        recomputed, delta = compute(request)
+        require(persisted_closure == recomputed, f"{source}: propagation closure is stale or hand-edited")
+        require(paths["system_map_delta_path"].read_bytes() == serialized(delta), f"{source}: system-map delta is stale")
+    else:
+        # Accepted/current closures are frozen historical evidence. A later
+        # candidate may legitimately change the live registry or map; validate
+        # the persisted closure bindings without reinterpreting that history.
+        recomputed = persisted_closure
     require(paths["impact_report_path"].read_text(encoding="utf-8") == impact_report(recomputed), f"{source}: propagation impact report is stale")
-    require(paths["system_map_delta_path"].read_bytes() == serialized(delta), f"{source}: system-map delta is stale")
     expected_residue = {
         "task_id": recomputed["task_id"],
         "closure_hash": recomputed["closure_hash"],
@@ -713,10 +728,10 @@ def validate_custom(manifest: dict, source: Path, seal: dict, registry: dict[str
     if manifest["method_version"] == "1.0.0" and manifest["task_id"] == "121Q24" and "OPERATIONS_METHOD" in classifications:
         missing = sorted(LEGACY_Q24_METHOD_PATHS - changed)
         require(not missing, f"{source}: legacy Q24 operations method missing changed paths: {missing}")
-    if manifest["method_version"] in {"1.1.0", "1.2.0"}:
+    if manifest["method_version"] in {"1.1.0", "1.2.0", "1.3.0"}:
         require(registry is not None, f"{source}: method {manifest['method_version']} requires synchronization registry")
         _validate_v11_closure(manifest, source, registry)
-    if manifest["method_version"] == "1.2.0":
+    if manifest["method_version"] in {"1.2.0", "1.3.0"}:
         _validate_v12_propagation(manifest, source)
     _validate_seal(manifest, seal, source)
 

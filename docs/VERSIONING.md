@@ -23,7 +23,7 @@ Q25B 已因生命周期死锁降为 superseded non-ready 历史候选；Q25C 是
 
 121Q31T 将之元写作法 `0.4.0` 与 spec 驱动的完整可点击系统图收口为 Current：素材来源分为外部输入与点火增量输出，后者可复用但不是独立外部证据。`0.3.0` 保留为历史已合并版本，Q29R 与第一条成果继续绑定真实生成版本 `0.3.0`。系统图版本独立为 `0.1.0` Current；它不改变七层架构、Foundation、迭代操作法 1.1.0 或历史成果的方法版本。
 
-121Q32 proposes compatible iteration method `1.2.0` and registry-derived system map `0.2.0` as Draft candidates. They add typed declared component propagation, closure/hash/residue binding and a registry/topology/layout projection chain. They are not Current, do not add L7 or a truth layer, and do not turn repository reachability into causal identification. Historical 1.0.0 and Current 1.1.0 manifests remain valid.
+121Q32T closed iteration method `1.2.0` and registry-derived system map `0.2.0` as Current after independent acceptance and merge; `1.1.0` and map `0.1.0` remain historical. Q32I proposes compatible method `1.3.0` and map projection `0.3.0` as Draft candidates. They add incremental planning, NonImpactProof, profile-authorized execution, complete cache identity, unified validation and rollback/recovery without adding L7, a truth layer or causal identification. Current 1.2.0 remains unchanged until a later independent review, merge and closeout.
 
 架构完成不等于内容证明完成。当前架构允许后续逐对象补源、补定义、补证明、补实验、发现反例或降级，而不再推倒整体架构。
 

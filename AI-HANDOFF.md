@@ -64,7 +64,7 @@ Q25C 已成为当前生命周期规则：Ready、Accepted、Merged、Current、C
 
 121Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。
 
-121Q31T 的完整可点击系统图 0.1.0 仍是当前导航接口。121Q32 的 0.2.0 Draft candidate 把权威链升级为 `project-components registry + change-propagation topology + layout overlay → generator → materialized spec + SVG`；同时提出迭代方法 1.2.0，以声明关系 fixpoint 联合同步闭包并把 hash、map diff 与 residue 绑定到 manifest。交接必须重算 closure 和 projection，不能只检查生成时间；也不得把 Git diff、依赖或图连线当作现实因果。
+121Q32T 已将 registry 派生系统图 0.2.0 与迭代法 1.2.0 收口为 Current。Q32I 的 1.3.0 / map 0.3.0 仍是 OPEN Draft candidate：它增加 planner、NonImpactProof、profile-authorized executor、完整 cache identity、unified validator 与 rollback/recovery。交接必须读取 `docs/architecture/incremental-execution.md`，重算 closure、plan 和派生 projection；不能把 cache、Git diff、依赖、图连线、CI 或 artifact 当作现实因果、自我验收或 Current 证明。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

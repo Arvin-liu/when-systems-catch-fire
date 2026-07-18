@@ -1,6 +1,6 @@
 # Ignition Independent Review Template
 
-Current method contract: `ITERATION.md` 1.1.0. Method 1.2.0 typed propagation remains Draft until independently accepted and merged.
+Current method contract: `ITERATION.md` 1.2.0. Method 1.3.0 incremental execution remains Draft until a separate reviewer recomputes the plan and authority identities and independently accepts it.
 
 Review target:
 
@@ -24,7 +24,7 @@ Checks:
 - Claim ceiling is explicit and respected.
 - Impact matrix covers README, current state, AI handoff, schemas, tools, tests, CI, reports and frozen surfaces.
 - Registry-derived propagation closure covers every applicable human, AI/Agent, machine, version/history and deployment surface.
-- For a 1.2 candidate, component seeds resolve through declared typed paths to a deterministic fixpoint, every required component has a decision, and the closure hash recomputes exactly.
+- For the 1.2 Current closure and any 1.3 candidate built on it, component seeds resolve through declared typed paths to a deterministic fixpoint, every required component has a decision, and the closure hash recomputes exactly.
 - Relation domains preserve authority separation; no Git diff, dependency, traversal or map edge is treated as substantive causal proof.
 - System-map impact matches a registry-derived projection and delta; hidden new components have a machine-verified representation/no-change reason.
 - Implementation completion is separated from repository, external and whole-project synchronization completion.
