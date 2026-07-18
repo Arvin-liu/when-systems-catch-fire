@@ -393,7 +393,14 @@ class IterationSyncTests(unittest.TestCase):
         validate_custom(manifest, path, seal, registry)
         self.assertEqual(manifest["method_version"], "1.2.0")
         self.assertTrue(manifest["propagation_closure"]["closure_complete"])
-        self.assertFalse(manifest["status"]["current"])
+        self.assertTrue(manifest["status"]["current"])
+        self.assertTrue(manifest["status"]["merged"])
+        self.assertTrue(manifest["status"]["accepted"])
+        self.assertFalse(manifest["status"]["candidate"])
+        closure = manifest["propagation_closure"]
+        self.assertTrue(closure["closure_hash"])
+        self.assertGreater(len(closure["typed_path_ids"]), 0)
+        self.assertEqual(closure["unresolved_residue"], [])
 
     def test_q32_missing_propagation_binding_is_schema_rejected(self):
         _, path, manifest, _ = self.q32_document()

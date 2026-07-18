@@ -450,21 +450,56 @@ class F12SealAttestationAttackTests(unittest.TestCase):
         self.assertIn("embedded_live_digest", str(ctx.exception))
 
     def test_f12_attack_candidate_seal_accepted(self):
-        """Candidate seal marked accepted must fail."""
-        manifest = _manifest()
-        seal = _seal()
+        """Candidate seal marked accepted must fail-closed.
+
+        The real seal is now Current; we deep-copy it, construct a
+        candidate前置状态 for the manifest (candidate=True,
+        accepted=False, merged=False, current=False), then inject
+        accepted=True in the seal lifecycle only.  The validator must
+        detect the seal-manifest lifecycle mismatch and fail-closed.
+        """
+        manifest = copy.deepcopy(_manifest())
+        seal = copy.deepcopy(_seal())
         registry = _registry()
-        seal["lifecycle"]["accepted"] = True
-        with self.assertRaises((AssertionError, Exception)):
+        manifest["status"] = {"candidate": True, "ready_for_gpt_verification": True,
+                           "accepted": False, "merged": False, "current": False}
+        manifest["branch_pr"]["draft"] = True
+        manifest["branch_pr"]["merged"] = False
+        manifest["claim_ceiling"] = "candidate_only"
+        manifest["completion_state"]["external_synchronization_attested"] = False
+        manifest["completion_state"]["project_synchronization_complete"] = False
+        manifest["synchronization_closure"]["external_attestations"][0]["status"] = "pending"
+        seal["phase_b"]["claim_ceiling"] = "candidate_only"
+        seal["phase_b"]["merge_commit"] = None
+        seal["status"] = "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY"
+        seal["lifecycle"] = {"candidate": True, "ready_for_gpt_verification": True,
+                           "accepted": True, "merged": False, "current": False}
+        with self.assertRaisesRegex(AssertionError, "seal lifecycle mismatch for accepted"):
             validate_custom(manifest, MANIFEST_PATH, seal, registry)
 
     def test_f12_attack_candidate_seal_current(self):
-        """Candidate seal marked current must fail."""
-        manifest = _manifest()
-        seal = _seal()
+        """Candidate seal marked current must fail-closed.
+
+        Same deep-copy and candidate前置状态 construction, but injects
+        current=True in the seal lifecycle only.
+        """
+        manifest = copy.deepcopy(_manifest())
+        seal = copy.deepcopy(_seal())
         registry = _registry()
-        seal["lifecycle"]["current"] = True
-        with self.assertRaises((AssertionError, Exception)):
+        manifest["status"] = {"candidate": True, "ready_for_gpt_verification": True,
+                           "accepted": False, "merged": False, "current": False}
+        manifest["branch_pr"]["draft"] = True
+        manifest["branch_pr"]["merged"] = False
+        manifest["claim_ceiling"] = "candidate_only"
+        manifest["completion_state"]["external_synchronization_attested"] = False
+        manifest["completion_state"]["project_synchronization_complete"] = False
+        manifest["synchronization_closure"]["external_attestations"][0]["status"] = "pending"
+        seal["phase_b"]["claim_ceiling"] = "candidate_only"
+        seal["phase_b"]["merge_commit"] = None
+        seal["status"] = "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY"
+        seal["lifecycle"] = {"candidate": True, "ready_for_gpt_verification": True,
+                           "accepted": False, "merged": False, "current": True}
+        with self.assertRaisesRegex(AssertionError, "seal lifecycle mismatch for current"):
             validate_custom(manifest, MANIFEST_PATH, seal, registry)
 
     def test_f12_valid_seal_passes(self):
