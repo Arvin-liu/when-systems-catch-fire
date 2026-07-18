@@ -104,3 +104,9 @@ Allowed residue includes unknown causal status, unresolved scale transition, unr
 MCF can say: "this representation organizes candidate causal structure under declared evidence, uncertainty, and residue."
 
 MCF cannot say: "this proves actual causality," "this proves the universe is a network," "this unifies physics and society," or "this exhausts the causal field."
+
+## Repository Change-Propagation Profile
+
+The 121Q32 Draft candidate reuses the bounded vocabulary `enabling_condition`, `constraint`, `mechanism_hypothesis`, dynamic feedback, `CausalFabricDiff` and unmapped residue to type project-change assessments. It does not run MCF over Git in order to infer scientific causality.
+
+Repository propagation keeps three authorities separate: substantive causal candidates, declared repository generation/dependency relations, and governance synchronization obligations. Only the latter two may drive automatic or required-assessment traversal. A substantive `mechanism_hypothesis` is informational only unless independent evidence changes its status. The executable contract is `docs/architecture/typed-change-propagation.md`.

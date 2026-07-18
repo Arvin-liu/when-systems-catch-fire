@@ -145,12 +145,17 @@
     "receipt_location": { "$ref": "#/$defs/nonblankString" },
     "state_transition": {"$ref": "#/$defs/stateTransition"},
     "synchronization_closure": {"$ref": "#/$defs/synchronizationClosure"},
+    "propagation_closure": {"$ref": "#/$defs/propagationClosureBinding"},
     "completion_state": {"$ref": "#/$defs/completionState"}
   },
   "allOf": [
     {
-      "if": {"properties": {"method_version": {"const": "1.1.0"}}, "required": ["method_version"]},
+      "if": {"properties": {"method_version": {"enum": ["1.1.0", "1.2.0"]}}, "required": ["method_version"]},
       "then": {"required": ["completion_seal_path", "state_transition", "synchronization_closure", "completion_state"]}
+    },
+    {
+      "if": {"properties": {"method_version": {"const": "1.2.0"}}, "required": ["method_version"]},
+      "then": {"required": ["propagation_closure"]}
     }
   ],
   "$defs": {
@@ -235,7 +240,7 @@
         "registry_version": {"$ref": "#/$defs/nonblankString"},
         "surface_decisions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/surfaceDecision"}},
         "external_attestations": {"type": "array", "items": {"$ref": "#/$defs/externalAttestation"}},
-        "unresolved_residue": {"type": "array", "items": {"$ref": "#/$defs/nonblankString"}, "uniqueItems": true},
+        "unresolved_residue": {"type": "array", "items": {"type": "object"}, "uniqueItems": true},
         "external_verification_policy": {"$ref": "#/$defs/nonblankString"},
         "live_external_surfaces_verified": {"const": false}
       }
@@ -272,6 +277,69 @@
         "external_synchronization_required": {"type": "boolean"},
         "external_synchronization_attested": {"type": "boolean"},
         "project_synchronization_complete": {"type": "boolean"}
+      }
+    },
+    "propagationDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["item_id", "decision", "reason"],
+      "properties": {
+        "item_id": {"$ref": "#/$defs/nonblankString"},
+        "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]},
+        "reason": {"$ref": "#/$defs/nonblankString"}
+      }
+    },
+    "propagationClosureBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "request_path",
+        "closure_path",
+        "impact_report_path",
+        "system_map_delta_path",
+        "residue_path",
+        "closure_hash",
+        "base_identity",
+        "head_identity",
+        "seed_paths",
+        "seed_components",
+        "resolved_components",
+        "typed_path_ids",
+        "component_decisions",
+        "surface_decisions",
+        "registry_derived_surfaces",
+        "system_map_impact",
+        "unresolved_residue",
+        "closure_complete"
+      ],
+      "properties": {
+        "request_path": {"$ref": "#/$defs/nonblankString"},
+        "closure_path": {"$ref": "#/$defs/nonblankString"},
+        "impact_report_path": {"$ref": "#/$defs/nonblankString"},
+        "system_map_delta_path": {"$ref": "#/$defs/nonblankString"},
+        "residue_path": {"$ref": "#/$defs/nonblankString"},
+        "closure_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "base_identity": {"$ref": "#/$defs/sha"},
+        "head_identity": {"$ref": "#/$defs/nonblankString"},
+        "seed_paths": {"$ref": "#/$defs/nonblankStringArray"},
+        "seed_components": {"$ref": "#/$defs/nonblankStringArray"},
+        "resolved_components": {"$ref": "#/$defs/nonblankStringArray"},
+        "typed_path_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblankString"}, "uniqueItems": true},
+        "component_decisions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/propagationDecision"}},
+        "surface_decisions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/propagationDecision"}},
+        "registry_derived_surfaces": {"$ref": "#/$defs/nonblankStringArray"},
+        "system_map_impact": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["decision", "reason", "delta_path"],
+          "properties": {
+            "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON"]},
+            "reason": {"$ref": "#/$defs/nonblankString"},
+            "delta_path": {"$ref": "#/$defs/nonblankString"}
+          }
+        },
+        "unresolved_residue": {"type": "array", "items": {"$ref": "#/$defs/nonblankString"}, "uniqueItems": true},
+        "closure_complete": {"type": "boolean"}
       }
     },
     "externalAttestationPolicy": {

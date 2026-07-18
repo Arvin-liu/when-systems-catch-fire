@@ -69,7 +69,9 @@ flowchart LR
 
 ### 完整可点击系统图
 
-121Q31T 将[data/architecture/interactive-system-map.json](data/architecture/interactive-system-map.json)收口为当前节点、分组、目标与关系的机器权威，经生成器产生单一 interactive SVG，并由 README 与 Pages 双表面投影。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达与反馈环，不增加架构层。节点与连线是导航和受约束信息流，不自动表示因果、严格同构或理论完整性。
+121Q31T 的系统图 0.1.0 仍是 Current。121Q32 提出 0.2.0 Draft candidate：节点身份、canonical target 与生命周期从 `data/operations/project-components.json` 派生；可见关系及其权限域从 `data/operations/change-propagation-topology.json` 派生；`data/architecture/interactive-system-map-layout.json` 只保留布局。生成器产生 materialized spec 与同一 interactive SVG，再由 README 与 Pages 双表面投影。
+
+该候选同时为迭代操作法 1.2.0 提供声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只有后两者按声明规则触发自动或必要评估。Git diff、依赖、可达路径与视觉位置不构成现实因果识别。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达与反馈环，不增加架构层；兼容基线仍为 9 组、41 节点和 35 边。
 
 ## 目录权威
 

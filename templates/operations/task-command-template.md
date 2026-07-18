@@ -1,6 +1,6 @@
 # Ignition Task Command Template
 
-Current method contract: `ITERATION.md` 1.1.0, including registry-derived propagation and lifecycle-specific external blockers.
+Current method contract: `ITERATION.md` 1.1.0. Method 1.2.0 typed propagation is Draft candidate only.
 
 Task ID: `<TASK_ID>`
 
@@ -48,6 +48,16 @@ Registry-derived propagation closure:
 - `NO_CHANGE_WITH_REASON` decisions and evidence:
 - External/derived obligations:
 - Unresolved synchronization residue:
+
+Method 1.2 typed component closure, when selected:
+
+- Changed paths and explicit component seeds:
+- Resolved canonical components:
+- Typed relation paths and domains:
+- Component decisions:
+- System-map impact decision and expected delta:
+- Request / closure / impact report / map delta / residue paths:
+- Closure hash and unresolved propagation residue:
 
 Required result:
 

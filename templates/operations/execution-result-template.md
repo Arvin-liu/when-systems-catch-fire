@@ -1,6 +1,6 @@
 # Ignition Execution Result Template
 
-Current method contract: `ITERATION.md` 1.1.0. Report every triggered external surface separately.
+Current method contract: `ITERATION.md` 1.1.0. If the 1.2.0 Draft candidate is selected, report its typed closure separately.
 
 Status: `<STATUS>`
 
@@ -54,6 +54,15 @@ Propagation closure:
 - Per-surface external attestations and lifecycle blockers:
 - Unresolved synchronization residue:
 - Why this is or is not ready/current/closed:
+
+Typed component closure (method 1.2 candidate only):
+
+- Seed paths / seed components:
+- Resolved components and typed path IDs:
+- Component / surface decisions:
+- System-map impact and delta:
+- Closure hash:
+- Unresolved propagation residue:
 
 Claim ceiling:
 

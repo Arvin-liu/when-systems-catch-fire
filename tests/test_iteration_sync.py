@@ -350,6 +350,13 @@ class IterationSyncTests(unittest.TestCase):
             seal["external_attestations"] = copy.deepcopy(manifest["synchronization_closure"]["external_attestations"])
         return registry, path, manifest, seal
 
+    def q32_document(self):
+        registry = validate_registry(load_json(REGISTRY_PATH))
+        path = ROOT / "data/operations/iterations/121Q32.json"
+        manifest = load_json(path)
+        seal = load_json(infer_seal_path(manifest))
+        return registry, path, manifest, seal
+
     def set_lifecycle(self, manifest, seal, *, accepted=False, merged=False, current=False):
         manifest["status"].update({"ready_for_gpt_verification": True, "accepted": accepted, "merged": merged, "current": current})
         manifest["branch_pr"]["draft"] = not accepted
@@ -379,6 +386,44 @@ class IterationSyncTests(unittest.TestCase):
         q25b = load_json(ROOT / "data/operations/iterations/121Q25B.json")
         self.assertFalse(q25b["status"]["ready_for_gpt_verification"])
         self.assertTrue(manifest["status"]["current"])
+
+    def test_actual_q32_method_120_recomputes_typed_closure(self):
+        registry, path, manifest, seal = self.q32_document()
+        validate_manifest_schema(manifest, path)
+        validate_custom(manifest, path, seal, registry)
+        self.assertEqual(manifest["method_version"], "1.2.0")
+        self.assertTrue(manifest["propagation_closure"]["closure_complete"])
+        self.assertFalse(manifest["status"]["current"])
+
+    def test_q32_missing_propagation_binding_is_schema_rejected(self):
+        _, path, manifest, _ = self.q32_document()
+        del manifest["propagation_closure"]
+        with self.assertRaisesRegex(AssertionError, "schema error"):
+            validate_manifest_schema(manifest, path)
+
+    def test_q32_closure_hash_drift_is_rejected(self):
+        registry, path, manifest, seal = self.q32_document()
+        manifest["propagation_closure"]["closure_hash"] = "0" * 64
+        with self.assertRaisesRegex(AssertionError, "closure hash mismatch"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_q32_typed_path_drift_is_rejected(self):
+        registry, path, manifest, seal = self.q32_document()
+        manifest["propagation_closure"]["typed_path_ids"] = []
+        with self.assertRaisesRegex(AssertionError, "typed propagation paths mismatch"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_q32_sync_and_component_surface_decisions_cannot_diverge(self):
+        registry, path, manifest, seal = self.q32_document()
+        manifest["synchronization_closure"]["surface_decisions"][0]["decision"] = "NO_CHANGE_WITH_REASON"
+        with self.assertRaisesRegex(AssertionError, "propagation and synchronization decisions disagree|changed registry surface"):
+            validate_custom(manifest, path, seal, registry)
+
+    def test_q32_seal_must_bind_propagation_hash(self):
+        registry, path, manifest, seal = self.q32_document()
+        seal["propagation_closure"]["closure_hash"] = "0" * 64
+        with self.assertRaisesRegex(AssertionError, "seal propagation closure hash mismatch"):
+            validate_custom(manifest, path, seal, registry)
 
     def test_missing_q25_seal_is_rejected(self):
         registry, q25_path, q25, *_ = self.q25_documents()

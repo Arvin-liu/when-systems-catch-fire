@@ -1,6 +1,8 @@
 # 点火迭代操作法 / Ignition Iteration Method
 
-Method version: `1.1.0`
+Current method version: `1.1.0`
+
+Draft compatible candidate: `1.2.0` (typed declared change-propagation closure; not Current)
 
 Status: canonical operation method. This method governs how 点火 changes itself. It is not a truth layer, proof system, value charter, causal model or substitute for external evidence.
 
@@ -232,3 +234,19 @@ A method-change iteration must record:
 Do not silently rewrite prior method history. Keep old receipts and reports auditable.
 
 Method 1.0.0 manifests and seals remain historical valid inputs. Method 1.1.0 adds a declared `completion_seal_path`, structured state transition, registry-derived synchronization closure and completion state. Compatibility must not allow a historical task-specific path to validate a different task's seal.
+
+## 14. Method 1.2.0 Draft Candidate: Typed Change Propagation
+
+Method 1.2.0 is proposed by 121Q32; 1.1.0 remains Current until independent exact-HEAD acceptance, merge and Current closeout. The candidate adds an executable component-level closure before the existing synchronization and lifecycle gates.
+
+Its authority chain is:
+
+`changed paths / explicit component seeds → project-components registry → typed propagation topology → synchronization registry → fixpoint → decisions → system-map projection and delta → manifest closure hash`
+
+The topology separates `substantive_causal_candidate`, `repository_dependency` and `synchronization_obligation`. Substantive causal candidates are informational only and never propagate repository change automatically. Repository reachability, Git diffs and visual edges remain declared operational relations, not causal identification.
+
+A 1.2.0 manifest binds the request and four generated products, seed paths and components, resolved components, typed relation IDs, component and surface decisions, registry-derived surfaces, system-map impact, residue and closure hash. The validator recomputes the closure and projection; stale or hand-edited products fail.
+
+`NO_CHANGE_WITH_REASON` remains valid when an assessed component has no capability, lifecycle, navigation, relation or display impact. A new visible component must enter the layout; a deliberately hidden operation component must declare its visible representation and machine-checkable reason. The complete contract and limits are in `docs/architecture/typed-change-propagation.md`.
+
+Backward compatibility is explicit: historical 1.0.0 manifests remain valid, 1.1.0 manifests retain synchronization closure semantics, and only 1.2.0 manifests require the new `propagation_closure` binding.
