@@ -14,6 +14,14 @@ from pathlib import Path, PurePosixPath
 DEFAULT_ROOT = Path(__file__).resolve().parents[2]
 
 
+class DefensiveBoundaryError(ValueError):
+    """Stable fail-closed rejection raised before any producer is started."""
+
+    def __init__(self, code: str, message: str) -> None:
+        super().__init__(f"{code}: {message}")
+        self.code = code
+
+
 def canonical(value: object) -> str:
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
@@ -28,25 +36,33 @@ def digest_file(path: Path) -> str | None:
 
 def validate_relative_path(raw: str, root: Path) -> Path:
     if not isinstance(raw, str) or not raw or raw.startswith("/") or "\\" in raw:
-        raise ValueError(f"unsafe repository path: {raw!r}")
+        raise DefensiveBoundaryError("E_UNSAFE_PATH", f"unsafe repository path: {raw!r}")
     if len(raw) > 2 and raw[1] == ":":
-        raise ValueError(f"Windows path rejected: {raw}")
+        raise DefensiveBoundaryError("E_UNSAFE_PATH", f"Windows path rejected: {raw}")
     parts = PurePosixPath(raw).parts
     if ".." in parts or "." in parts:
-        raise ValueError(f"non-canonical path rejected: {raw}")
+        raise DefensiveBoundaryError("E_UNSAFE_PATH", f"non-canonical path rejected: {raw}")
     resolved = (root / raw).resolve()
     root_resolved = root.resolve()
     if resolved != root_resolved and root_resolved not in resolved.parents:
-        raise ValueError(f"path escapes repository: {raw}")
+        raise DefensiveBoundaryError("E_UNSAFE_PATH", f"path escapes repository: {raw}")
+    return resolved
+
+
+def validate_repository_location(path: Path, root: Path, label: str) -> Path:
+    resolved = path.resolve()
+    root_resolved = root.resolve()
+    if resolved != root_resolved and root_resolved not in resolved.parents:
+        raise DefensiveBoundaryError("E_UNSAFE_PATH", f"{label} escapes repository: {path}")
     return resolved
 
 
 def validate_argv(argv: object) -> list[str]:
     if not isinstance(argv, list) or not argv or any(not isinstance(x, str) or not x for x in argv):
-        raise ValueError("producer/validator must be a non-empty argv array")
+        raise DefensiveBoundaryError("E_COMMAND_ARGV", "producer/validator must be a non-empty argv array")
     forbidden = (";", "&&", "|", "$(", "`")
     if any(any(token in arg for token in forbidden) for arg in argv):
-        raise ValueError("shell metacharacter or command injection rejected")
+        raise DefensiveBoundaryError("E_COMMAND_ARGV", "shell metacharacter or command injection rejected")
     return argv
 
 
@@ -167,19 +183,24 @@ def execute_plan(
     cache_dir: Path | None = None,
 ) -> dict:
     root = root.resolve()
-    profiles_path = profiles_path or root / "data/operations/component-execution-profiles.json"
+    ignored_input_codes = ["E_CALLER_COMMAND_IGNORED"] if any(
+        field in plan for field in ("producer_argv", "validator_argv", "command", "shell_command")
+    ) else []
+    profiles_path = validate_repository_location(
+        profiles_path or root / "data/operations/component-execution-profiles.json", root, "profiles path"
+    )
     profiles = json.loads(profiles_path.read_text(encoding="utf-8"))
     by_id = {p["component_id"]: p for p in profiles["profiles"]}
     if len(by_id) != len(profiles["profiles"]):
-        raise ValueError("duplicate execution profile")
+        raise DefensiveBoundaryError("E_PROFILE_DUPLICATE_COMPONENT", "duplicate execution profile")
     order = plan.get("execution_order", [])
     if any(cid not in by_id for cid in order):
-        raise ValueError("execution order references unknown profile")
-    cache_dir = (cache_dir or root / ".cache/q32i-executor").resolve()
+        raise DefensiveBoundaryError("E_EXECUTION_ORDER", "execution order references unknown profile")
+    cache_dir = validate_repository_location(cache_dir or root / ".cache/q32i-executor", root, "cache directory")
     if apply and not isolated_worktree and not git_is_clean(root):
-        raise ValueError("apply requires clean tree or explicit isolated worktree")
+        raise DefensiveBoundaryError("E_DIRTY_WORKTREE", "apply requires clean tree or explicit isolated worktree")
     if apply and cache_hit(cache_dir, plan, profiles_path, profiles, root):
-        return {"ok": True, "cache_hit": True, "cache_decision": "HIT_FRESH", "records": []}
+        return {"ok": True, "cache_hit": True, "cache_decision": "HIT_FRESH", "records": [], "input_rejections": ignored_input_codes}
 
     records: list[dict] = []
     snapshots: dict[str, bytes | None] = {}
@@ -239,6 +260,7 @@ def execute_plan(
         record.update(stdout=completed.stdout, stderr=completed.stderr, return_code=completed.returncode, duration_ns=time.time_ns() - started)
         if unregistered:
             record["stderr"] += f"\nunregistered outputs: {unregistered}"
+            record["error_code"] = "E_UNREGISTERED_WRITE"
             completed = subprocess.CompletedProcess(argv, 90, record["stdout"], record["stderr"])
             record["return_code"] = 90
         if completed.returncode == 0:
@@ -284,10 +306,10 @@ def execute_plan(
         records.append(record)
         cache_dir.mkdir(parents=True, exist_ok=True)
         package = recovery_package(root, cache_dir, plan, records, snapshots, restored, unrecovered)
-        return {"ok": False, "cache_hit": False, "cache_decision": "MISS", "records": records, "recovery_package": str(package)}
+        return {"ok": False, "cache_hit": False, "cache_decision": "MISS", "records": records, "recovery_package": str(package), "input_rejections": ignored_input_codes}
 
     if not apply:
-        return {"ok": True, "cache_hit": False, "cache_decision": "DRY_RUN_NO_CACHE", "records": records}
+        return {"ok": True, "cache_hit": False, "cache_decision": "DRY_RUN_NO_CACHE", "records": records, "input_rejections": ignored_input_codes}
     cache_dir.mkdir(parents=True, exist_ok=True)
     manifest = {
         "identity": profile_identity(profiles_path, profiles, root, plan),
@@ -296,7 +318,7 @@ def execute_plan(
     }
     manifest["integrity_digest"] = digest_bytes(canonical(manifest).encode())
     (cache_dir / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    return {"ok": True, "cache_hit": False, "cache_decision": "MISS_STORED", "records": records, "cache_manifest": str(cache_dir / "manifest.json")}
+    return {"ok": True, "cache_hit": False, "cache_decision": "MISS_STORED", "records": records, "cache_manifest": str(cache_dir / "manifest.json"), "input_rejections": ignored_input_codes}
 
 
 def main() -> int:
@@ -307,7 +329,12 @@ def main() -> int:
     parser.add_argument("--isolated-worktree", action="store_true")
     parser.add_argument("--cache-dir", type=Path)
     args = parser.parse_args()
-    result = execute_plan(json.loads(args.plan.read_text(encoding="utf-8")), apply=args.apply, isolated_worktree=args.isolated_worktree, cache_dir=args.cache_dir)
+    try:
+        result = execute_plan(json.loads(args.plan.read_text(encoding="utf-8")), apply=args.apply, isolated_worktree=args.isolated_worktree, cache_dir=args.cache_dir)
+    except DefensiveBoundaryError as exc:
+        result = {"ok": False, "error_code": exc.code, "error": str(exc), "records": []}
+        args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        return 2
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return 0 if result["ok"] else 2
 

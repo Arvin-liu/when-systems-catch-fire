@@ -7,6 +7,7 @@ import copy
 import hashlib
 import json
 import sys
+import re
 from dataclasses import dataclass
 from pathlib import Path, PurePosixPath
 from typing import Any
@@ -313,6 +314,10 @@ def _validate_execution(
             c.add("E_EXECUTION_RECORD_INCOMPLETE", f"execution.records[{index}]", f"missing fields: {missing}")
         cid = record.get("component_id")
         profile = by_profile.get(cid, {})
+        if record.get("argv") != profile.get("producer_argv"):
+            c.add("E_EXECUTION_COMMAND_IDENTITY", f"execution.records[{index}].argv", "recorded command must exactly match the registered producer argv")
+        if record.get("cwd") != ".":
+            c.add("E_EXECUTION_CWD", f"execution.records[{index}].cwd", "execution cwd must be the repository root")
         capability = profile.get("execution_capability", profile.get("execution_kind"))
         if capability == "manual" and record.get("end_status") not in {"manual-boundary", "dry-run"}:
             c.add("E_EXECUTION_BOUNDARY", f"execution.records[{index}].end_status", "manual component boundary was crossed")
@@ -357,6 +362,14 @@ def _validate_cache(
         c.add("E_CACHE_IDENTITY_INPUT", "cache.identity", f"cannot compute cache identity: {exc}")
     if cache.get("identity") != expected_identity:
         c.add("E_CACHE_IDENTITY", "cache.identity", "cache identity does not match profile, registry, topology, producer, validator, fingerprints, and plan")
+    by_profile = {p.get("component_id"): p for p in profiles.get("profiles", []) if isinstance(p, dict)}
+    for index, record in enumerate(cache.get("records", [])):
+        if not isinstance(record, dict):
+            c.add("E_CACHE_RECORD_TYPE", f"cache.records[{index}]", "cache record must be an object")
+            continue
+        expected_argv = by_profile.get(record.get("component_id"), {}).get("producer_argv")
+        if record.get("argv") != expected_argv:
+            c.add("E_CACHE_COMMAND_IDENTITY", f"cache.records[{index}].argv", "cached command must exactly match the registered producer argv")
     for raw in cache.get("output_fingerprints", {}):
         c.safe_path(raw, f"cache.output_fingerprints.{raw}", root)
 
@@ -433,6 +446,25 @@ def validate_incremental_execution(
     by_component, by_profile = _validate_profiles(c, registry, profiles, root)
     authority = authority_fingerprint(registry_path, topology_path, profiles_path)
     _, order = _validate_plan(c, plan, by_component, authority)
+    lifecycle_values = [plan.get(key) for key in ("lifecycle_status", "candidate_status", "publication_status")]
+    if any(isinstance(value, str) and value.strip().lower() in {"accepted", "merged", "current"} for value in lifecycle_values):
+        c.add("E_LIFECYCLE_ESCALATION", "plan.lifecycle", "candidate validation cannot claim Accepted, Merged, or Current")
+    candidate_basis = plan.get("candidate_basis")
+    if isinstance(candidate_basis, str) and re.search(r"(?:current|candidate)\s*head|head\s*(?:itself|self)", candidate_basis, re.IGNORECASE):
+        c.add("E_SELF_REFERENTIAL_AUTHORITY", "plan.candidate_basis", "candidate cannot use its current HEAD as its own authority")
+    scope_assets = plan.get("scope_assets", [])
+    if not isinstance(scope_assets, list):
+        c.add("E_SCOPE_CONTAMINATION", "plan.scope_assets", "scope assets must be an array")
+    else:
+        unauthorized = [
+            value for value in scope_assets
+            if isinstance(value, str) and (
+                re.search(r"(^|[/_.-])(lab|shadow)([/_.-]|$)", value, re.IGNORECASE)
+                or re.search(r"(^|[/_.-])(phase[-_ ]?d4|phase[-_ ]?e)([/_.-]|$)", value, re.IGNORECASE)
+            )
+        ]
+        if unauthorized:
+            c.add("E_SCOPE_CONTAMINATION", "plan.scope_assets", f"unauthorized D3 assets: {unauthorized}")
     if execution is not None:
         _validate_execution(c, execution, plan, order, by_profile, root)
     if cache is not None:
