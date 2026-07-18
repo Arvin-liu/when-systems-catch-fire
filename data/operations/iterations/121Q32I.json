@@ -1291,12 +1291,12 @@
         "subject_head": "727c665b7e21585026a19352dd643bbfd34fba9f"
       },
       {
-        "conclusion": "success_build_deploy_skipped",
+        "conclusion": "success",
         "evidence": "external:github_actions:29649575195",
         "evidence_scope": "historical_subject_head_only",
         "name": "pages-build-candidate-only",
         "run_id": 29649575195,
-        "status": "PASS_DEPLOY_SKIPPED",
+        "status": "PASS",
         "subject_head": "727c665b7e21585026a19352dd643bbfd34fba9f"
       }
     ]
