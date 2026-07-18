@@ -44,16 +44,22 @@ class UnifiedIncrementalValidatorAcceptance(unittest.TestCase):
                 {
                     "component_id": "alpha", "execution_kind": "automatic", "execution_capability": "automatic",
                     "authoritative_inputs": ["input.txt"], "generated_outputs": ["out.txt"],
+                    "input_fingerprint_policy": {"kind": "sha256_sorted_file_set", "paths": ["input.txt"]},
+                    "output_fingerprint_policy": {"kind": "sha256_single_target", "target": "out.txt"},
                     "producer_argv": [sys.executable, "-c", "0"], "validator_argv": [sys.executable, "-c", "0"],
                 },
                 {
                     "component_id": "beta", "execution_kind": "manual", "execution_capability": "manual",
                     "authoritative_inputs": ["input.txt"], "generated_outputs": [],
+                    "input_fingerprint_policy": {"kind": "sha256_sorted_file_set", "paths": ["input.txt"]},
+                    "output_fingerprint_policy": {"kind": "sha256_single_target", "target": "input.txt"},
                     "validator_argv": [sys.executable, "-c", "0"],
                 },
                 {
                     "component_id": "gamma", "execution_kind": "attestation", "execution_capability": "external_attestation",
                     "authoritative_inputs": ["input.txt"], "generated_outputs": [],
+                    "input_fingerprint_policy": {"kind": "sha256_sorted_file_set", "paths": ["input.txt"]},
+                    "output_fingerprint_policy": {"kind": "sha256_single_target", "target": "input.txt"},
                     "validator_argv": [sys.executable, "-c", "0"],
                 },
             ],

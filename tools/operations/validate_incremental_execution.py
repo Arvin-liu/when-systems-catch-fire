@@ -31,6 +31,8 @@ META_PATHS = {
     "data/operations/project-components.json",
     "data/operations/change-propagation-topology.json",
     "data/operations/component-execution-profiles.json",
+    "data/operations/component-execution-profile-policies.json",
+    "tools/operations/generate_component_profiles.py",
     "tools/operations/plan_incremental_execution.py",
     "tools/operations/run_incremental_execution.py",
     "tools/operations/validate_incremental_execution.py",
@@ -152,6 +154,20 @@ def _validate_profiles(
             c.safe_path(raw, f"registry.components[{index}].path_patterns[{pindex}]", root)
     for index, profile in enumerate(profile_list):
         cid = profile.get("component_id")
+        input_policy = profile.get("input_fingerprint_policy")
+        output_policy = profile.get("output_fingerprint_policy")
+        if not isinstance(input_policy, dict) or not input_policy.get("kind") or not isinstance(input_policy.get("paths"), list):
+            c.add(
+                "E_PROFILE_FINGERPRINT_POLICY",
+                f"profiles.profiles[{index}].input_fingerprint_policy",
+                "explicit input fingerprint policy with kind and paths is required",
+            )
+        if not isinstance(output_policy, dict) or not output_policy.get("kind") or not isinstance(output_policy.get("target"), str):
+            c.add(
+                "E_PROFILE_FINGERPRINT_POLICY",
+                f"profiles.profiles[{index}].output_fingerprint_policy",
+                "explicit output fingerprint policy with kind and target is required",
+            )
         for field in ("authoritative_inputs", "generated_outputs"):
             for pindex, raw in enumerate(profile.get(field, [])):
                 c.safe_path(raw, f"profiles.profiles[{index}].{field}[{pindex}]", root)
@@ -368,6 +384,16 @@ def _validate_recovery(
         c.add("E_RECOVERY_PLAN_BINDING", "recovery.plan_hash", "recovery package is bound to another plan")
     if not isinstance(recovery.get("failed_action"), dict):
         c.add("E_RECOVERY_FAILED_ACTION", "recovery.failed_action", "failed action record is required")
+    records = recovery.get("records", [])
+    record_ids = [record.get("component_id") for record in records if isinstance(record, dict)]
+    if recovery.get("component_identity") != record_ids:
+        c.add("E_RECOVERY_COMPONENT_IDENTITY", "recovery.component_identity", "component identity must exactly match recovery record order")
+    failed_action = recovery.get("failed_action")
+    if isinstance(failed_action, dict) and (
+        failed_action.get("end_status") != "failed"
+        or failed_action.get("component_id") not in record_ids
+    ):
+        c.add("E_RECOVERY_FAILED_ACTION", "recovery.failed_action", "failed action must identify a failed recovery record")
     if not recovery.get("restore_steps"):
         c.add("E_RECOVERY_INCOMPLETE", "recovery.restore_steps", "restore steps are required")
     for field in ("original_fingerprints", "current_fingerprints"):
