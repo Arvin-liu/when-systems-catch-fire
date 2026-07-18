@@ -73,6 +73,13 @@ def profile_identity(profiles_path: Path, profiles: dict, root: Path, plan: dict
     topology = root / "data/operations/change-propagation-topology.json"
     producer_identity = digest_bytes(canonical([p.get("producer_argv") for p in profiles["profiles"]]).encode())
     validator_identity = digest_bytes(canonical([p.get("validator_argv") for p in profiles["profiles"]]).encode())
+    component_ids = plan.get("execution_order", [])
+    by_id = {p["component_id"]: p for p in profiles["profiles"]}
+    input_fingerprints = {
+        raw: digest_file(validate_relative_path(raw, root))
+        for cid in component_ids
+        for raw in by_id[cid].get("authoritative_inputs", [])
+    }
     return {
         "profile_schema_version": profiles["schema_version"],
         "profile_registry_digest": digest_file(profiles_path),
@@ -80,6 +87,8 @@ def profile_identity(profiles_path: Path, profiles: dict, root: Path, plan: dict
         "propagation_topology_digest": digest_file(topology),
         "producer_identity": producer_identity,
         "validator_identity": validator_identity,
+        "input_fingerprints": input_fingerprints,
+        "output_fingerprints": output_fingerprints(profiles, root, component_ids),
         "plan_hash": plan["plan_hash"],
     }
 
