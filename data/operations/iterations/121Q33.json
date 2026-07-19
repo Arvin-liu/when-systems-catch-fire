@@ -22,15 +22,13 @@
     "merged": false
   },
   "head_binding": {
-    "accepted_candidate_head": null,
     "authority": "pull_request_body_and_1111_receipt",
     "embedded_exact_current_head": false,
     "explanation": "Q33 candidate iteration — exact HEAD and mutable CI/artifact evidence are externally attested after commit; repository object never treats its own HEAD as validity evidence.",
     "live_refetch_required": true,
     "mode": "external_exact_head_attestation",
     "pr_number": 63,
-    "receipt_path": "agent-results/IGNITION-20260719-121Q33-FORWARD-RESTORE-STABILIZATION-RESULT.md",
-    "review_receipt_commit": null
+    "receipt_path": "agent-results/IGNITION-20260719-121Q33-FORWARD-RESTORE-STABILIZATION-RESULT.md"
   },
   "gap": {
     "evidence": [
