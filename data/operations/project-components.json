@@ -85,13 +85,15 @@
     {
       "authority_source": "FOUNDATION.md",
       "component_ids": [
+        "charter",
         "copyright_governance_jurisdiction_registry",
         "copyright_governance_source_rights",
         "copyright_governance_material_classification",
         "copyright_governance_non_republication_principle",
         "copyright_governance_publication_gate_validator",
         "copyright_governance_history_remediation",
-        "copyright_governance_tests"
+        "copyright_governance_tests",
+        "licensing"
       ],
       "path_patterns": [
         "data/governance/",
@@ -100,7 +102,7 @@
         "tests/test_q33_governance_infrastructure.py",
         "docs/governance/"
       ],
-      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/."
+      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
     }
   ],
   "components": [
