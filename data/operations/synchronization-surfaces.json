@@ -530,37 +530,33 @@
     },
     {
       "surface_id": "copyright_governance",
-      "surface_type": "governance_policy",
+      "surface_type": "repository_derived_surface",
       "locator": "data/governance/",
       "roles": [
-        "policy_input",
+        "governance_policy",
         "governance_gate"
       ],
-      "authority": {
-        "type": "local_automated",
-        "description": "Q33 copyright governance data machine - representative multi-jurisdiction conservative risk projection",
-        "claim_ceiling": "representative multi-jurisdiction conservative risk projection, extensible and not exhaustive worldwide legal advice"
-      },
+      "authority": "derived",
       "derived_from": [
         "method.iteration",
         "agent.handoff"
       ],
       "trigger_dimensions": [
         "governance",
-        "identity",
-        "capability"
+        "identity"
       ],
       "trigger_classifications": [
-        "EVIDENCE_UPDATE"
+        "GOVERNANCE_CHANGE"
       ],
       "allowed_decisions": [
         "CHANGE",
         "NO_CHANGE_WITH_REASON"
       ],
-      "validation_mode": "automatic_schema",
+      "validation_mode": "repository_build_validation",
       "blocks": [
-        "pages_pipeline",
-        "human.current_state"
+        "ready",
+        "current",
+        "closed"
       ]
     }
   ]
