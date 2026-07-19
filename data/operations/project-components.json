@@ -1264,7 +1264,8 @@
         "visible": true
       },
       "path_patterns": [
-        "data/governance/jurisdiction-rule-registry.json"
+        "data/governance/jurisdiction-rule-registry.json",
+        "schemas/governance/jurisdiction-rule-entry.schema.json"
       ]
     },
     {
@@ -1284,7 +1285,8 @@
         "visible": true
       },
       "path_patterns": [
-        "data/governance/source-rights-registry.json"
+        "data/governance/source-rights-registry.json",
+        "schemas/governance/source-rights-entry.schema.json"
       ]
     },
     {
@@ -1324,7 +1326,8 @@
         "visible": true
       },
       "path_patterns": [
-        "data/governance/history-remediation-register.json"
+        "data/governance/history-remediation-register.json",
+        "schemas/governance/history-remediation-entry.schema.json"
       ]
     },
     {
@@ -1344,7 +1347,8 @@
         "visible": true
       },
       "path_patterns": [
-        "tools/governance/fail_closed_publication_gate.py"
+        "tools/governance/fail_closed_publication_gate.py",
+        "schemas/governance/publication-gate-decision.schema.json"
       ]
     },
     {
@@ -1364,7 +1368,8 @@
         "visible": true
       },
       "path_patterns": [
-        "docs/governance/external-input-non-republication-principle.md"
+        "docs/governance/external-input-non-republication-principle.md",
+        "schemas/governance/external-input-non-republication.schema.json"
       ]
     },
     {
@@ -1389,5 +1394,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.1.0"
+  "registry_version": "1.1.1"
 }

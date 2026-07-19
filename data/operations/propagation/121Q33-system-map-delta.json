@@ -1,5 +1,11 @@
 {
-  "added_edges": [],
+  "added_edges": [
+    "copyright_governance_jurisdiction_registry->charter",
+    "copyright_governance_material_classification->source_pool",
+    "copyright_governance_non_republication_principle->accepted_work",
+    "copyright_governance_publication_gate_validator->current_state",
+    "copyright_governance_source_rights->external_input"
+  ],
   "added_nodes": [
     "copyright_governance_history_remediation",
     "copyright_governance_jurisdiction_registry",

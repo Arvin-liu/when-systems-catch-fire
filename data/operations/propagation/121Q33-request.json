@@ -199,21 +199,101 @@
       "item_id": "system_map_projection",
       "decision": "CHANGE",
       "reason": "Q33 governance components reference this surface; must be revalidated with new governance edges"
+    },
+    {
+      "item_id": "accepted_work",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component accepted_work resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "charter",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component charter resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "current_state",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component current_state resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "external_input",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component external_input resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "foundation",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component foundation resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "l2",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component l2 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "l3",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component l3 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "l4",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component l4 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "l5",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component l5 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "l6",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component l6 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "no_truth_upgrade",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component no_truth_upgrade resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "q12",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component q12 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "q13",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component q13 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "q14",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component q14 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "showcase",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component showcase resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "showcase_registry",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component showcase_registry resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "source_pool",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component source_pool resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "item_id": "zhiyuan_method",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Component zhiyuan_method resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
     }
   ],
   "system_map_decision": {
     "decision": "CHANGE",
     "item_id": "interactive_system_map",
     "reason": "New governance components added to project-component registry and topology"
-  },
-  "summary": {
-    "total_jurisdictions_covered": 10,
-    "total_treaties": 3,
-    "total_platform_policies": 2,
-    "total_source_categories": 12,
-    "total_schema_files": 5,
-    "total_governance_tools": 1,
-    "total_governance_tests": 8,
-    "status": "candidate"
   }
 }
