@@ -1,0 +1,69 @@
+{
+  "task_id": "121Q33",
+  "seal_version": "1.0.0",
+  "generated_at": "2026-07-19T14:30:00+08:00",
+  "status": "candidate",
+  "iteration_manifest_path": "data/operations/iterations/121Q33.json",
+  "propagation_closure_path": "data/operations/propagation/121Q33-closure.json",
+  "execution_plan_path": "data/operations/propagation/121Q33-execution-plan.json",
+  "impact_report_path": "data/operations/propagation/121Q33-impact-report.md",
+  "system_map_delta_path": "data/operations/propagation/121Q33-system-map-delta.json",
+  "residue_path": "data/operations/propagation/121Q33-residue.json",
+  "head_binding": {
+    "candidate_head": "8dbba3fe6225626f582136a045f35800356ffdbe",
+    "base_head": "f54577a9084d0ac6e374341d96836c5d52bc3b8c",
+    "branch": "agent/121q33-global-copyright-risk-and-rights-governance"
+  },
+  "closure_verification": {
+    "closure_complete": true,
+    "closure_hash": "d0a7ee051574cabc919a9718fd86f85e3bedaf0e3c15109d3bac72ffd188d6e9",
+    "residue_count": 0,
+    "resolved_components": 27,
+    "seed_components": [
+      "copyright_governance_history_remediation",
+      "copyright_governance_jurisdiction_registry",
+      "copyright_governance_material_classification",
+      "copyright_governance_non_republication_principle",
+      "copyright_governance_publication_gate_validator",
+      "copyright_governance_source_rights",
+      "copyright_governance_tests"
+    ]
+  },
+  "plan_verification": {
+    "plan_hash": "4f149995be76c7e9937a76eea9ea92e255cafbb5b62bfd1395764a983ec74b61",
+    "affected_surfaces": 16,
+    "component_decisions": 59,
+    "unresolved_residue": 5
+  },
+  "governance_summary": {
+    "jurisdictions_count": 10,
+    "schema_count": 5,
+    "governance_data_files": [
+      "data/governance/jurisdiction-rule-registry.json",
+      "data/governance/source-rights-registry.json",
+      "data/governance/material-classification.json",
+      "data/governance/history-remediation-register.json",
+      "data/governance/licensing-rights-inventory.json",
+      "data/governance/meta-protocol-normative-reviews.json"
+    ],
+    "claim_ceiling": "representative multi-jurisdiction conservative risk projection, extensible and not exhaustive worldwide legal advice"
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "6256bbb514189349d36609868727c113704787232dea347b6e01dbf6d3f54137"
+  },
+  "verification_status": {
+    "foundation_lean": "pending",
+    "foundation_validators": "pending",
+    "sync_registry_closures": "pending",
+    "typed_change_propagation": "completed",
+    "system_map_generation": "completed",
+    "iteration_sync": "pending"
+  },
+  "remaining_limitations": [
+    "No external attestation completed",
+    "Governance decisions require human review per G33",
+    "Not yet merged to formal main",
+    "Local validation only — not production deployment"
+  ]
+}
