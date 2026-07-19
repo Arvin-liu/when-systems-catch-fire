@@ -153,6 +153,7 @@ def validate_system_map(root: Path, readme: str, pages: str) -> int:
     for asset in (
         "data/operations/project-components.json",
         "data/operations/change-propagation-topology.json",
+        "data/operations/component-execution-profiles.json",
         "data/architecture/interactive-system-map-layout.json",
         "data/architecture/interactive-system-map.json",
     ):

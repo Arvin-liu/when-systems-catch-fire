@@ -10,6 +10,7 @@ on:
       - data/architecture/interactive-system-map-layout.json
       - data/operations/project-components.json
       - data/operations/change-propagation-topology.json
+      - data/operations/component-execution-profiles.json
       - tools/generate_interactive_system_map.py
       - .github/workflows/pages.yml
       - pages/**
@@ -81,6 +82,7 @@ jobs:
           cp data/operations/iterations/121Q32I.json site/data/operations/iterations/121Q32I.json
           cp data/operations/project-components.json site/data/operations/project-components.json
           cp data/operations/change-propagation-topology.json site/data/operations/change-propagation-topology.json
+          cp data/operations/component-execution-profiles.json site/data/operations/component-execution-profiles.json
           cp data/architecture/interactive-system-map-layout.json site/data/architecture/interactive-system-map-layout.json
           cp data/architecture/interactive-system-map.json site/data/architecture/interactive-system-map.json
           {
