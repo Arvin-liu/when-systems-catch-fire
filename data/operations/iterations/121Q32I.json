@@ -499,7 +499,7 @@
   "propagation_closure": {
     "base_identity": "4097e610eebfc65c739df4fe7d2900161c204a9d",
     "closure_complete": true,
-    "closure_hash": "4868e534063f45e9c1c836f7461342bd307e107f422ecdcbbd90c42488af036b",
+    "closure_hash": "be079995b291e41dcb4c9b8ffdd1997e05f9eef5763da91c9584f4ef8169f705",
     "closure_path": "data/operations/propagation/121Q32I-closure.json",
     "component_decisions": [
       {
@@ -843,7 +843,6 @@
       "data/operations/generated-output-authority.json",
       "data/operations/iterations/121Q32I.json",
       "data/operations/project-components.json",
-      "data/operations/propagation/121Q32-request.json",
       "data/operations/propagation/121Q32I-request.json",
       "docs/USAGE.md",
       "docs/VERSIONING.md",
@@ -979,8 +978,8 @@
     "system_map_delta_path": "data/operations/propagation/121Q32I-system-map-delta.json",
     "system_map_impact": {
       "decision": "CHANGE",
-      "reason": "The canonical registry, topology, candidate version and materialized projection changed.",
-      "delta_path": "data/operations/propagation/121Q32I-system-map-delta.json"
+      "delta_path": "data/operations/propagation/121Q32I-system-map-delta.json",
+      "reason": "The canonical registry, topology, candidate version and materialized projection changed."
     },
     "typed_path_ids": [
       "calculator_projects_sync",
@@ -1072,7 +1071,7 @@
   "self_hosting": {
     "decision": "FULL_REBUILD_REQUIRED",
     "demonstration_path": "reports/operations/121Q32I-incremental-execution-demonstration.json",
-    "plan_hash": "1fc5f11795bc0e5614110bec8164b62b7871c34951d96cbedad0a12a385486a4"
+    "plan_hash": "3a09efdfd060393519e73a072cb867b41f9b2b81ff9c9c46e7e152a09dc1fe56"
   },
   "state_transition": {
     "changed_dimensions": [

@@ -1,20 +1,6 @@
 {
-  "added_edges": [
-    "copyright_governance_jurisdiction_registry->charter",
-    "copyright_governance_material_classification->source_pool",
-    "copyright_governance_non_republication_principle->accepted_work",
-    "copyright_governance_publication_gate_validator->current_state",
-    "copyright_governance_source_rights->external_input"
-  ],
-  "added_nodes": [
-    "copyright_governance_history_remediation",
-    "copyright_governance_jurisdiction_registry",
-    "copyright_governance_material_classification",
-    "copyright_governance_non_republication_principle",
-    "copyright_governance_publication_gate_validator",
-    "copyright_governance_source_rights",
-    "copyright_governance_tests"
-  ],
+  "added_edges": [],
+  "added_nodes": [],
   "base_map_version": "0.2.0-candidate",
   "candidate_map_version": "0.3.0",
   "changed_edges": [],

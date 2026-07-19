@@ -41,6 +41,7 @@
     "docs/project-current-state.md",
     "llms.txt",
     "pages/generated/ignition-system-map.svg",
+    "reports/operations/121Q32-completion-seal.json",
     "reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md",
     "schemas/architecture/interactive-system-map-layout.schema.json",
     "schemas/operations/change-propagation-closure.schema.json",

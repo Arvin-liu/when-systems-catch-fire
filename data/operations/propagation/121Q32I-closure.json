@@ -346,7 +346,7 @@
   "base_identity": "4097e610eebfc65c739df4fe7d2900161c204a9d",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "4868e534063f45e9c1c836f7461342bd307e107f422ecdcbbd90c42488af036b",
+  "closure_hash": "be079995b291e41dcb4c9b8ffdd1997e05f9eef5763da91c9584f4ef8169f705",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -469,7 +469,6 @@
     "data/operations/generated-output-authority.json",
     "data/operations/iterations/121Q32I.json",
     "data/operations/project-components.json",
-    "data/operations/propagation/121Q32-request.json",
     "data/operations/propagation/121Q32I-request.json",
     "docs/USAGE.md",
     "docs/VERSIONING.md",
@@ -521,22 +520,8 @@
     "tools/validate_iteration_sync.py"
   ],
   "system_map_impact": {
-    "added_edges": [
-      "copyright_governance_jurisdiction_registry->charter",
-      "copyright_governance_material_classification->source_pool",
-      "copyright_governance_non_republication_principle->accepted_work",
-      "copyright_governance_publication_gate_validator->current_state",
-      "copyright_governance_source_rights->external_input"
-    ],
-    "added_nodes": [
-      "copyright_governance_history_remediation",
-      "copyright_governance_jurisdiction_registry",
-      "copyright_governance_material_classification",
-      "copyright_governance_non_republication_principle",
-      "copyright_governance_publication_gate_validator",
-      "copyright_governance_source_rights",
-      "copyright_governance_tests"
-    ],
+    "added_edges": [],
+    "added_nodes": [],
     "changed_edges": [],
     "changed_nodes": [
       "iteration",

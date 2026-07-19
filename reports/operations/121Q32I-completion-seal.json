@@ -151,19 +151,19 @@
     }
   },
   "propagation_closure": {
-    "closure_hash": "4233f347d9ac41f4a65febefb324d4431e841c178cd813aa064af333045f6321",
+    "closure_hash": "be079995b291e41dcb4c9b8ffdd1997e05f9eef5763da91c9584f4ef8169f705",
     "closure_path": "data/operations/propagation/121Q32I-closure.json",
     "complete": true,
     "unresolved_residue": []
   },
-  "propagation_closure_hash": "4868e534063f45e9c1c836f7461342bd307e107f422ecdcbbd90c42488af036b",
+  "propagation_closure_hash": "be079995b291e41dcb4c9b8ffdd1997e05f9eef5763da91c9584f4ef8169f705",
   "q29r": {
     "modified": false,
     "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
   },
   "self_hosting": {
     "decision": "FULL_REBUILD_REQUIRED",
-    "plan_hash": "1fc5f11795bc0e5614110bec8164b62b7871c34951d96cbedad0a12a385486a4",
+    "plan_hash": "3a09efdfd060393519e73a072cb867b41f9b2b81ff9c9c46e7e152a09dc1fe56",
     "validator": "PASS"
   },
   "status": "CURRENT_CLOSED",
@@ -172,11 +172,12 @@
     "version": "1.0.0"
   },
   "system_map": {
+    "candidate_version": null,
     "current_version": "0.3.0",
-    "nodes": 48,
-    "edges": 42,
+    "edges": 37,
     "groups": 9,
-    "l7_added": false
+    "l7_added": false,
+    "nodes": 41
   },
   "task_id": "121Q32I"
 }

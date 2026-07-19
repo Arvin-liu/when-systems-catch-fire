@@ -59,9 +59,9 @@
   },
   "system_map": {
     "current_version": "0.2.0",
-    "nodes": 48,
-    "edges": 42,
     "groups": 9,
+    "nodes": 41,
+    "edges": 37,
     "l7_added": false
   },
   "boundaries": {
@@ -106,8 +106,8 @@
     "schema_version": "1.0.0",
     "full_required_fields_authority": "validator"
   },
-  "authored_seed_paths_count": 55,
-  "generated_output_paths_count": 9,
+  "authored_seed_paths_count": 56,
+  "generated_output_paths_count": 8,
   "base_to_head_diff_paths_count": 64,
   "diff_coverage_complete": true
 }
