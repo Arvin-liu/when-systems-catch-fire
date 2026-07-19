@@ -499,7 +499,7 @@
   "propagation_closure": {
     "base_identity": "4097e610eebfc65c739df4fe7d2900161c204a9d",
     "closure_complete": true,
-    "closure_hash": "1ec237bae9051b2725706c6a0bc02d71bb55d89876c476d970671e62c8cd9783",
+    "closure_hash": "4233f347d9ac41f4a65febefb324d4431e841c178cd813aa064af333045f6321",
     "closure_path": "data/operations/propagation/121Q32I-closure.json",
     "component_decisions": [
       {
@@ -1002,12 +1002,8 @@
       "topology_enables_calculator",
       "topology_generates_projection"
     ],
-    "unresolved_residue": [
-      {
-        "type": "invalid_overlap_declaration",
-        "message": "overlap declared hit set ['copyright_governance_history_remediation', 'copyright_governance_jurisdiction_registry', 'copyright_governance_material_classification', 'copyright_governance_non_republication_principle', 'copyright_governance_publication_gate_validator', 'copyright_governance_source_rights', 'copyright_governance_tests'] != actual ['charter', 'copyright_governance_history_remediation', 'copyright_governance_jurisdiction_registry', 'copyright_governance_material_classification', 'copyright_governance_non_republication_principle', 'copyright_governance_publication_gate_validator', 'copyright_governance_source_rights', 'copyright_governance_tests', 'licensing'] for patterns ['data/governance/', 'schemas/governance/', 'tools/governance/', 'tests/test_q33_governance_infrastructure.py', 'docs/governance/']"
-      }
-    ]
+    "residue": [],
+    "residue_count": 0
   },
   "q29r": {
     "modified": false,
