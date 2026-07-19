@@ -2,7 +2,7 @@
 
 ## 项目现状
 
-点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型，把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF、PSD、ARN、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。迭代操作法 `1.2.0` 与 registry 派生系统图 `0.2.0` 为 Current（121Q32T 合并收口）；`1.1.0` 与系统图 `0.1.0` 保留为历史版本。这是当前提交下已经长成的状态，不是永久定位或最终身份；它也不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。
+点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型，把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF、PSD、ARN、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。迭代操作法 `1.2.0` 与 registry 派生系统图 `0.2.0` 为 Current（121Q32T 合并收口）；Q32I 仅提出操作法 `1.3.0` 与系统图 `0.3.0` Draft candidate，尚未新的独立 exact-head 审查、合并或进入 Current。候选中权威类型与本地执行能力已分离，apply 先经统一预检，rollback（回滚）按完整仓库字节／类型／mode 状态验证。这是当前提交下已经长成的状态，不是永久定位或最终身份；它也不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。
 
 **首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [点火迭代操作法](./ITERATION.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 
@@ -12,6 +12,8 @@
 当前版本的点火可以帮助读者把复杂材料拆成来源、命题、形式对象、论证、证明、验证、发布和现实反馈，而不是把故事、愿望、测试通过和事实证明混成一团。它同时包含七层认识架构与 Foundation、Function OS、效果推理与机制判断、注意力与分布控制、地图集，以及 MCF 多尺度因果织体、PSD 概率系统动力学、ARN 自适应关系网络和点火迭代操作法；生命共同体价值宪章与现实反馈环约束这些能力怎样行动和修正。当前迭代操作法还要求任何状态改变从同步表面注册表推导全项目传播闭包，分别记录实现、仓库、外部与项目整体完成，不能用局部完成冒充整体同步。
 
 121Q32 已将这一义务推进为可计算的声明关系闭包：由构件 registry、类型化传播 topology 与同步 registry 联合推导影响决定，再派生系统图和 map diff。它不把 Git diff、依赖、遍历或图连线升级为现实因果证明；零 residue 也不等于项目关系已穷尽。
+
+Q32I 在这一 Current 闭包上提出可审计的增量执行与选择性物化：planner 产生逐构件决定和 NonImpactProof，executor 只运行 profile 登记的结构化命令，cache 只是完整身份一致时的性能层，validator 独立检查 plan、proof、execution、cache 和 recovery。受影响构件不能伪称无影响，关键权威变更仍强制 full rebuild。[查看候选合同](./docs/architecture/incremental-execution.md)。
 
 MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与系统边界的部分补充明确的概率和动力学语义，ARN 则处理更广泛的异质、时序与自适应关系，并把因果主张交回 MCF 审查。它们是当前仓库可运行、可验证的候选派生表示能力，不是新的真值层，也不会仅凭图、概率、关系或测试通过自动证明真实因果或科学理论。
 
@@ -43,7 +45,7 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 ## 完整可点击系统图
 
-这是一张单一完整图，覆盖前门、L0—L6、基础核心、模型投影、Q12—Q14、迭代与同步、价值约束、之元写作法双来源素材池、成果链和现实反馈返回。Current 0.1.0 的 spec 接口仍保留；121Q32 的 0.2.0 已由[构件 registry](./data/operations/project-components.json)、[传播 topology](./data/operations/change-propagation-topology.json)与[布局 overlay](./data/architecture/interactive-system-map-layout.json)确定性派生[机器投影](./data/architecture/interactive-system-map.json)。节点与连线是可审计导航，不证明因果、严格同构或理论完整。
+这是一张单一完整图，覆盖前门、L0—L6、基础核心、模型投影、Q12—Q14、迭代与同步、价值约束、之元写作法双来源素材池、成果链和现实反馈返回。Current 0.2.0 由[构件 registry](./data/operations/project-components.json)、[传播 topology](./data/operations/change-propagation-topology.json)与[布局 overlay](./data/architecture/interactive-system-map-layout.json)确定性派生；Q32I 的 0.3.0 Draft 仅同步增量执行候选状态，不增加 L7。节点与连线是可审计导航，不证明因果、严格同构或理论完整。
 
 [打开交互版完整图](https://arvin-liu.github.io/when-systems-catch-fire/system-map.html) / [查看维护与验证说明](./docs/architecture/interactive-system-map.md)
 

@@ -553,7 +553,7 @@ class ChangePropagationTests(unittest.TestCase):
         """Every file in git diff base..HEAD must be in changed_paths or verified generated outputs from authority."""
         import subprocess as _sp
         from jsonschema import Draft202012Validator
-        request = load_json(ROOT / "data/operations/propagation/121Q32-request.json")
+        request = load_json(ROOT / "data/operations/propagation/121Q32I-request.json")
         # Load and validate the canonical generated-output authority
         authority_path = ROOT / "data/operations/generated-output-authority.json"
         schema_path = ROOT / "schemas/operations/generated-output-authority.schema.json"

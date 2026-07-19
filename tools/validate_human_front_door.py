@@ -19,6 +19,9 @@ ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 GUIDE = ROOT / "docs/ai-assistant-usage-reference.md"
 CURRENT_STATE = ROOT / "docs/project-current-state.md"
+AI_START = ROOT / "AI-START-HERE.md"
+AI_HANDOFF = ROOT / "AI-HANDOFF.md"
+LLMS = ROOT / "llms.txt"
 PAGES_WORKFLOW = ROOT / ".github/workflows/pages.yml"
 SHOWCASE_REGISTRY = ROOT / "data/publication/zhiyuan-writing-showcase.json"
 SHOWCASE_INDEX = ROOT / "docs/publication/zhiyuan-writing-showcase.md"
@@ -37,6 +40,14 @@ BOUNDARY_PHRASES = (
     "不是新的真值层",
     "已证明的科学理论",
 )
+VERSION_FACTS = {
+    "current_method": "1.2.0",
+    "historical_method": "1.1.0",
+    "draft_method": "1.3.0",
+    "current_map": "0.2.0",
+    "draft_map": "0.3.0",
+}
+ROLLBACK_TYPO = "roll" + "bar"
 
 
 def require(condition: bool, message: str) -> None:
@@ -79,6 +90,21 @@ def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> N
     require("cat README.md" in pages, "Pages workflow is not derived from README.md")
     require("Build README reading site" in pages, "Pages workflow omits declared README build step")
     require("README.md" in pages, "Pages workflow does not watch README.md")
+
+
+def validate_version_front_doors(ai_start: str, ai_handoff: str, llms: str) -> None:
+    sources = {"AI-START-HERE.md": ai_start, "AI-HANDOFF.md": ai_handoff, "llms.txt": llms}
+    for source, text in sources.items():
+        for value in VERSION_FACTS.values():
+            require(value in text, f"{source}: missing version fact {value}")
+        require(re.search(r"(?:current|当前)[^\n]{0,80}1\.2\.0|1\.2\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{source}: method 1.2.0 is not explicitly Current")
+        require(re.search(r"(?:historical|历史)[^\n]{0,80}1\.1\.0|1\.1\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{source}: method 1.1.0 is not explicitly Historical")
+        require(re.search(r"1\.3\.0[^\n]{0,120}(?:Draft candidate|候选)", text, re.IGNORECASE), f"{source}: method 1.3.0 is not explicitly Draft")
+        require(re.search(r"1\.3\.0[^\n]{0,180}(?:not Current|非 Current|不得称为 Current)", text, re.IGNORECASE), f"{source}: method 1.3.0 lacks not-Current boundary")
+        require(re.search(r"(?:current|当前)[^\n]{0,80}0\.2\.0|0\.2\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{source}: map 0.2.0 is not explicitly Current")
+        require(re.search(r"0\.3\.0[^\n]{0,120}(?:Draft candidate|候选)", text, re.IGNORECASE), f"{source}: map 0.3.0 is not explicitly Draft")
+        require(not re.search(r"(?:current|当前)(?:迭代)?(?:方法|method)[^\n]{0,20}1\.1\.0", text, re.IGNORECASE), f"{source}: stale Current method 1.1.0")
+        require(ROLLBACK_TYPO not in text.lower(), f"{source}: misspelled rollback term")
 
 
 def validate_system_map(root: Path, readme: str, pages: str) -> int:
@@ -179,6 +205,7 @@ def validate_all(root: Path = ROOT) -> dict[str, object]:
         require(path.is_file(), f"missing {label} surface: {path}")
     contents = [path.read_text(encoding="utf-8") for path in paths.values()]
     validate_texts(*contents)
+    validate_version_front_doors(AI_START.read_text(encoding="utf-8"), AI_HANDOFF.read_text(encoding="utf-8"), LLMS.read_text(encoding="utf-8"))
     validate_showcase(root, contents[0])
     system_map_nodes = validate_system_map(root, contents[0], contents[3])
     return {

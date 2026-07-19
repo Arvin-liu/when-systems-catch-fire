@@ -1,6 +1,6 @@
 # 点火完整可点击系统图
 
-Status: `0.1.0 Current navigation interface`; `0.2.0 registry-derived projection` is a 121Q32 Draft candidate.
+Status: `0.2.0 Current registry-derived navigation interface`; `0.3.0` is the Q32I Draft candidate projection.
 
 本页说明点火完整系统图的权威来源、生成方式、双表面行为和解释边界。它是当前仓库的导航接口，不是第二份项目真相表、永久唯一总地图、因果图、严格同构证明或理论完备性证明。
 
@@ -12,7 +12,7 @@ Status: `0.1.0 Current navigation interface`; `0.2.0 registry-derived projection
 
 ## Current 与候选权威生成链
 
-Current 0.1.0 used a hand-maintained materialized spec. The 0.2.0 candidate changes the chain to:
+Current 0.2.0 established this authority chain; the 0.3.0 Draft candidate preserves it while projecting incremental-execution lifecycle metadata:
 
 `project component registry + typed propagation topology + layout overlay → deterministic generator → materialized spec + SVG → README / Pages`
 
@@ -25,7 +25,7 @@ python3 tools/generate_interactive_system_map.py
 python3 tools/generate_interactive_system_map.py --check
 ```
 
-验证要求 additionally include projection freshness against all three authorities and coverage of the current propagation closure's map impact. The 121Q32 compatibility baseline remains 9 groups, 41 nodes, 35 edges and L0–L6. New hidden operation components require a declared visible representation and reason rather than decorative nodes.
+验证要求 additionally include projection freshness against all three authorities and coverage of the current propagation closure's map impact. The Q32I projection remains 9 groups, 41 nodes, 37 visible edges and L0–L6. `incremental_execution` is deliberately hidden and represented by the existing iteration node with a machine-checkable reason, rather than adding a decorative architecture node.
 
 ## GitHub README 与 Pages
 

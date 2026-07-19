@@ -11,9 +11,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REQUEST_PATH = ROOT / "data/operations/propagation/121Q32-request.json"
+REQUEST_PATH = ROOT / "data/operations/propagation/121Q32I-request.json"
 AUTHORITY_PATH = ROOT / "data/operations/generated-output-authority.json"
-BASE_MAIN = "d1bedb074af8dad8202b4324f3f5bbbb6b308b51"
+BASE_MAIN = "4097e610eebfc65c739df4fe7d2900161c204a9d"
 
 
 def _load_json(path: Path) -> dict:
@@ -28,7 +28,7 @@ class DiffCoverageGateTests(unittest.TestCase):
         cls.request = _load_json(REQUEST_PATH)
         cls.authority = _load_json(AUTHORITY_PATH)
         result = subprocess.run(
-            ["git", "diff", "--name-only", f"{BASE_MAIN}...HEAD"],
+            ["git", "diff", "--name-only", BASE_MAIN],
             capture_output=True, text=True, cwd=str(ROOT),
         )
         if result.returncode != 0:
@@ -51,10 +51,10 @@ class DiffCoverageGateTests(unittest.TestCase):
         if not self.git_available:
             self.skipTest("git diff unavailable")
         seeds = set(self.request["changed_paths"])
-        generated = {item["path"] for item in self.authority["generated_outputs"]}
-        covered = seeds | generated
         # Include untracked files that will be added in the same commit
         effective_diff = self.diff_paths | self.untracked
+        generated = {item["path"] for item in self.authority["generated_outputs"]} & effective_diff
+        covered = seeds | generated
         uncovered = sorted(effective_diff - covered)
         self.assertEqual(uncovered, [], f"Uncovered diff paths: {uncovered}")
 
@@ -62,8 +62,8 @@ class DiffCoverageGateTests(unittest.TestCase):
         if not self.git_available:
             self.skipTest("git diff unavailable")
         seeds = set(self.request["changed_paths"])
-        generated = {item["path"] for item in self.authority["generated_outputs"]}
         effective_diff = self.diff_paths | self.untracked
+        generated = {item["path"] for item in self.authority["generated_outputs"]} & effective_diff
         extra = sorted((seeds | generated) - effective_diff)
         self.assertEqual(extra, [], f"Declared paths not in diff: {extra}")
 

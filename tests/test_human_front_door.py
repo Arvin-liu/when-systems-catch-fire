@@ -9,6 +9,10 @@ from tools.validate_human_front_door import (
     CURRENT_STATE,
     validate_all,
     validate_texts,
+    validate_version_front_doors,
+    AI_START,
+    AI_HANDOFF,
+    LLMS,
 )
 
 
@@ -19,6 +23,9 @@ class HumanFrontDoorTests(unittest.TestCase):
         cls.guide = GUIDE.read_text(encoding="utf-8")
         cls.current_state = CURRENT_STATE.read_text(encoding="utf-8")
         cls.pages = PAGES_WORKFLOW.read_text(encoding="utf-8")
+        cls.ai_start = AI_START.read_text(encoding="utf-8")
+        cls.ai_handoff = AI_HANDOFF.read_text(encoding="utf-8")
+        cls.llms = LLMS.read_text(encoding="utf-8")
 
     def validate(self, readme=None, guide=None, current_state=None, pages=None):
         validate_texts(
@@ -91,6 +98,22 @@ class HumanFrontDoorTests(unittest.TestCase):
         self.assertIn("121Q32-change-propagation-impact.md", self.pages)
         self.assertIn("site/data/operations/project-components.json", self.pages)
         self.assertIn("site/data/operations/change-propagation-topology.json", self.pages)
+
+    def test_three_ai_front_doors_share_version_truth(self):
+        validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms)
+
+    def test_stale_current_method_is_rejected_in_each_ai_front_door(self):
+        stale = "Current method 1.1.0; Current map 0.2.0; Draft candidate 1.3.0 and map 0.3.0 are not Current. Historical 1.1.0."
+        for index in range(3):
+            texts = [self.ai_start, self.ai_handoff, self.llms]
+            texts[index] = stale
+            with self.subTest(index=index), self.assertRaises(AssertionError):
+                validate_version_front_doors(*texts)
+
+    def test_rollback_typo_is_rejected(self):
+        typo = "roll" + "bar"
+        with self.assertRaisesRegex(AssertionError, "rollback"):
+            validate_version_front_doors(self.ai_start + "\n" + typo + "回", self.ai_handoff, self.llms)
 
 
 if __name__ == "__main__":

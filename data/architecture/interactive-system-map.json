@@ -1,18 +1,18 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.2.0-candidate",
-  "current_baseline_map_version": "0.1.0",
+  "map_version": "0.3.0-candidate",
+  "current_baseline_map_version": "0.2.0",
   "projection_status": "DRAFT_CANDIDATE_DERIVED_PROJECTION",
   "title": "点火完整可点击系统图",
-  "subtitle": "由项目构件 registry 与类型化传播拓扑派生的候选导航投影；连线的权限由 relation domain 决定，不自动表示真实因果。",
+  "subtitle": "当前 0.2.0 + 0.3.0 Draft 增量执行投影；点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
   "projection_authority": {
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.0.0",
-    "topology_version": "1.0.0",
-    "layout_version": "1.0.0"
+    "component_registry_version": "1.1.0",
+    "topology_version": "1.1.0",
+    "layout_version": "1.1.0"
   },
   "layout": {
     "columns": 3,
@@ -260,18 +260,18 @@
     },
     {
       "id": "iteration",
-      "label": "点火迭代操作法 1.1 Current / 1.2 Draft",
+      "label": "点火迭代操作法 1.2 Current / 1.3 Draft",
       "group": "operations",
       "target": "ITERATION.md",
-      "description": "候选增加类型化传播闭包；仍只治理项目怎样改变自己。",
+      "description": "1.2 类型化传播为 Current；1.3 候选增加自举增量规划、选择性物化、缓存身份与回滚恢复。",
       "lifecycle_status": "draft_candidate"
     },
     {
       "id": "sync",
-      "label": "同步表面 / 类型化传播闭包",
+      "label": "同步表面 / 类型传播 / 增量执行",
       "group": "operations",
       "target": "data/operations/synchronization-surfaces.json",
-      "description": "1.1 同步义务与 1.2 候选构件传播联合计算；四级完成状态不变。",
+      "description": "1.2 Current 传播闭包与 1.3 Draft 选择性物化联合工作；关键权威变更仍强制 full rebuild。",
       "lifecycle_status": "draft_candidate"
     },
     {
@@ -429,20 +429,92 @@
   ],
   "edges": [
     {
-      "id": "map_readme_current",
-      "source": "readme",
-      "target": "current_state",
-      "label": "展开当前状态",
-      "relation_class": "documents",
+      "id": "map_analysis_increment",
+      "source": "point_fire_analysis",
+      "target": "ignition_increment",
+      "label": "增量输出",
+      "relation_class": "generates",
       "relation_domain": "repository_dependency"
     },
     {
-      "id": "map_readme_l0",
-      "source": "readme",
-      "target": "l0",
-      "label": "进入架构",
+      "id": "map_arn_mcf",
+      "source": "arn",
+      "target": "mcf",
+      "label": "因果审查委托",
+      "relation_class": "mechanism_hypothesis",
+      "relation_domain": "substantive_causal_candidate"
+    },
+    {
+      "id": "map_case_analysis",
+      "source": "case_source",
+      "target": "point_fire_analysis",
+      "label": "点火处理",
+      "relation_class": "derives",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_charter_q12",
+      "source": "charter",
+      "target": "q12",
+      "label": "价值门",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_current_state_no_totality",
+      "source": "current_state",
+      "target": "no_totality_proof",
+      "label": "完整性边界",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_external_pool",
+      "source": "external_input",
+      "target": "source_pool",
+      "label": "外部材料",
+      "relation_class": "derives",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_foundation_l2",
+      "source": "foundation",
+      "target": "l2",
+      "label": "权威对象",
       "relation_class": "projects",
       "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_foundation_no_truth",
+      "source": "foundation",
+      "target": "no_truth_upgrade",
+      "label": "真值边界",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_function_q12",
+      "source": "function_os",
+      "target": "q12",
+      "label": "执行动作",
+      "relation_class": "enabling_condition",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_increment_pool",
+      "source": "ignition_increment",
+      "target": "source_pool",
+      "label": "点火增量",
+      "relation_class": "derives",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_iteration_sync",
+      "source": "iteration",
+      "target": "sync",
+      "label": "传播闭包",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation"
     },
     {
       "id": "map_l0_l1",
@@ -493,20 +565,12 @@
       "relation_domain": "repository_dependency"
     },
     {
-      "id": "map_foundation_l2",
-      "source": "foundation",
-      "target": "l2",
-      "label": "权威对象",
-      "relation_class": "projects",
-      "relation_domain": "repository_dependency"
-    },
-    {
-      "id": "map_function_q12",
-      "source": "function_os",
-      "target": "q12",
-      "label": "执行动作",
-      "relation_class": "enabling_condition",
-      "relation_domain": "repository_dependency"
+      "id": "map_licensing_l6",
+      "source": "licensing",
+      "target": "l6",
+      "label": "发布权利边界",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation"
     },
     {
       "id": "map_mcf_psd",
@@ -517,12 +581,44 @@
       "relation_domain": "substantive_causal_candidate"
     },
     {
-      "id": "map_arn_mcf",
-      "source": "arn",
-      "target": "mcf",
-      "label": "因果审查委托",
-      "relation_class": "mechanism_hypothesis",
-      "relation_domain": "substantive_causal_candidate"
+      "id": "map_method_work",
+      "source": "zhiyuan_method",
+      "target": "accepted_work",
+      "label": "公共表达",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_no_l7_truth",
+      "source": "no_l7",
+      "target": "no_truth_upgrade",
+      "label": "边界",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_no_truth_totality",
+      "source": "no_truth_upgrade",
+      "target": "no_totality_proof",
+      "label": "边界",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_pool_method",
+      "source": "source_pool",
+      "target": "zhiyuan_method",
+      "label": "选材与边界",
+      "relation_class": "enabling_condition",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_provenance_return",
+      "source": "provenance_capture",
+      "target": "candidate_return",
+      "label": "范围审查",
+      "relation_class": "derives",
+      "relation_domain": "repository_dependency"
     },
     {
       "id": "map_q12_q13",
@@ -549,107 +645,19 @@
       "relation_domain": "repository_dependency"
     },
     {
-      "id": "map_iteration_sync",
-      "source": "iteration",
-      "target": "sync",
-      "label": "传播闭包",
-      "relation_class": "synchronization_requires",
-      "relation_domain": "synchronization_obligation"
-    },
-    {
-      "id": "map_charter_q12",
-      "source": "charter",
-      "target": "q12",
-      "label": "价值门",
-      "relation_class": "governance_constrains",
-      "relation_domain": "synchronization_obligation"
-    },
-    {
-      "id": "map_licensing_l6",
-      "source": "licensing",
-      "target": "l6",
-      "label": "发布权利边界",
-      "relation_class": "governance_constrains",
-      "relation_domain": "synchronization_obligation"
-    },
-    {
-      "id": "map_sustain_iteration",
-      "source": "sustainability",
-      "target": "iteration",
-      "label": "可承受行动",
-      "relation_class": "constraint",
-      "relation_domain": "synchronization_obligation"
-    },
-    {
-      "id": "map_external_pool",
-      "source": "external_input",
-      "target": "source_pool",
-      "label": "外部材料",
-      "relation_class": "derives",
-      "relation_domain": "repository_dependency"
-    },
-    {
-      "id": "map_increment_pool",
-      "source": "ignition_increment",
-      "target": "source_pool",
-      "label": "点火增量",
-      "relation_class": "derives",
-      "relation_domain": "repository_dependency"
-    },
-    {
-      "id": "map_pool_method",
-      "source": "source_pool",
-      "target": "zhiyuan_method",
-      "label": "选材与边界",
-      "relation_class": "enabling_condition",
-      "relation_domain": "repository_dependency"
-    },
-    {
-      "id": "map_case_analysis",
-      "source": "case_source",
-      "target": "point_fire_analysis",
-      "label": "点火处理",
-      "relation_class": "derives",
-      "relation_domain": "repository_dependency"
-    },
-    {
-      "id": "map_analysis_increment",
-      "source": "point_fire_analysis",
-      "target": "ignition_increment",
-      "label": "增量输出",
-      "relation_class": "generates",
-      "relation_domain": "repository_dependency"
-    },
-    {
-      "id": "map_method_work",
-      "source": "zhiyuan_method",
-      "target": "accepted_work",
-      "label": "公共表达",
-      "relation_class": "generates",
-      "relation_domain": "repository_dependency"
-    },
-    {
-      "id": "map_work_showcase",
-      "source": "accepted_work",
-      "target": "showcase",
-      "label": "人类索引",
-      "relation_class": "publishes",
-      "relation_domain": "repository_dependency"
-    },
-    {
-      "id": "map_work_registry",
-      "source": "accepted_work",
-      "target": "showcase_registry",
-      "label": "机器登记",
+      "id": "map_readme_current",
+      "source": "readme",
+      "target": "current_state",
+      "label": "展开当前状态",
       "relation_class": "documents",
       "relation_domain": "repository_dependency"
     },
     {
-      "id": "map_work_response",
-      "source": "accepted_work",
-      "target": "public_response",
-      "label": "现实暴露",
-      "relation_class": "publishes",
+      "id": "map_readme_l0",
+      "source": "readme",
+      "target": "l0",
+      "label": "进入架构",
+      "relation_class": "projects",
       "relation_domain": "repository_dependency"
     },
     {
@@ -661,10 +669,10 @@
       "relation_domain": "synchronization_obligation"
     },
     {
-      "id": "map_provenance_return",
-      "source": "provenance_capture",
-      "target": "candidate_return",
-      "label": "范围审查",
+      "id": "map_return_pool",
+      "source": "candidate_return",
+      "target": "source_pool",
+      "label": "可继续写作",
       "relation_class": "derives",
       "relation_domain": "repository_dependency"
     },
@@ -685,44 +693,36 @@
       "relation_domain": "repository_dependency"
     },
     {
-      "id": "map_return_pool",
-      "source": "candidate_return",
-      "target": "source_pool",
-      "label": "可继续写作",
-      "relation_class": "derives",
+      "id": "map_sustain_iteration",
+      "source": "sustainability",
+      "target": "iteration",
+      "label": "可承受行动",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_work_registry",
+      "source": "accepted_work",
+      "target": "showcase_registry",
+      "label": "机器登记",
+      "relation_class": "documents",
       "relation_domain": "repository_dependency"
     },
     {
-      "id": "map_no_l7_truth",
-      "source": "no_l7",
-      "target": "no_truth_upgrade",
-      "label": "边界",
-      "relation_class": "constraint",
-      "relation_domain": "synchronization_obligation"
+      "id": "map_work_response",
+      "source": "accepted_work",
+      "target": "public_response",
+      "label": "现实暴露",
+      "relation_class": "publishes",
+      "relation_domain": "repository_dependency"
     },
     {
-      "id": "map_no_truth_totality",
-      "source": "no_truth_upgrade",
-      "target": "no_totality_proof",
-      "label": "边界",
-      "relation_class": "constraint",
-      "relation_domain": "synchronization_obligation"
-    },
-    {
-      "id": "map_foundation_no_truth",
-      "source": "foundation",
-      "target": "no_truth_upgrade",
-      "label": "真值边界",
-      "relation_class": "constraint",
-      "relation_domain": "synchronization_obligation"
-    },
-    {
-      "id": "map_current_state_no_totality",
-      "source": "current_state",
-      "target": "no_totality_proof",
-      "label": "完整性边界",
-      "relation_class": "constraint",
-      "relation_domain": "synchronization_obligation"
+      "id": "map_work_showcase",
+      "source": "accepted_work",
+      "target": "showcase",
+      "label": "人类索引",
+      "relation_class": "publishes",
+      "relation_domain": "repository_dependency"
     }
   ]
 }

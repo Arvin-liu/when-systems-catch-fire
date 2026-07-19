@@ -1,0 +1,1340 @@
+{
+  "branch_pr": {
+    "base": "main",
+    "base_head": "4097e610eebfc65c739df4fe7d2900161c204a9d",
+    "branch": "agent/121q32i-incremental-execution",
+    "draft": true,
+    "merged": false,
+    "pr_number": 62
+  },
+  "change_classification": [
+    "CAPABILITY_ADDITION",
+    "INTERFACE_CHANGE",
+    "OPERATIONS_METHOD",
+    "RELEASE_OR_CURRENT_STATE_SYNC"
+  ],
+  "changed_surfaces": [
+    ".github/workflows/foundation-validation.yml",
+    ".github/workflows/pages.yml",
+    "AGENTS.md",
+    "AI-HANDOFF.md",
+    "AI-START-HERE.md",
+    "CHANGELOG.md",
+    "ITERATION.md",
+    "README.md",
+    "SUMMARY.md",
+    "data/architecture/interactive-system-map-layout.json",
+    "data/architecture/interactive-system-map.json",
+    "data/operations/change-propagation-topology.json",
+    "data/operations/component-execution-profile-policies.json",
+    "data/operations/component-execution-profiles.json",
+    "data/operations/generated-output-authority.json",
+    "data/operations/iterations/121Q32I.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q32I-request.json",
+    "docs/USAGE.md",
+    "docs/VERSIONING.md",
+    "docs/ai-assistant-usage-reference.md",
+    "docs/architecture/incremental-execution.md",
+    "docs/architecture/interactive-system-map.md",
+    "docs/architecture/typed-change-propagation.md",
+    "docs/project-current-state.md",
+    "llms.txt",
+    "pages/generated/ignition-system-map.svg",
+    "reports/operations/121Q32I-completion-seal.json",
+    "reports/operations/121Q32I-incremental-execution-demonstration.json",
+    "reports/operations/121Q32I-phase-d-validation-closeout.json",
+    "reports/operations/121Q32I-phase-d-validation-closeout.md",
+    "schemas/operations/component-execution-profile.schema.json",
+    "schemas/operations/incremental-execution-plan.schema.json",
+    "schemas/operations/iteration-manifest.schema.json",
+    "schemas/operations/non-impact-proof.schema.json",
+    "templates/operations/execution-result-template.md",
+    "templates/operations/independent-review-template.md",
+    "templates/operations/task-command-template.md",
+    "tests/PHASE-C-ACCEPTANCE-MATRIX.md",
+    "tests/PHASE-D-ACCEPTANCE-MATRIX.md",
+    "tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md",
+    "tests/test_change_propagation.py",
+    "tests/test_component_profiles.py",
+    "tests/test_diff_coverage_gate.py",
+    "tests/test_generated_output_authority.py",
+    "tests/test_human_front_door.py",
+    "tests/test_incremental_execution.py",
+    "tests/test_incremental_execution_defensive_rejections.py",
+    "tests/test_incremental_execution_validator.py",
+    "tests/test_incremental_executor.py",
+    "tests/test_incremental_planner.py",
+    "tests/test_phase_d_closeout.py",
+    "tests/test_phase_e_candidate.py",
+    "tests/test_production_execution_authority.py",
+    "tools/operations/generate_component_profiles.py",
+    "tools/operations/plan_incremental_execution.py",
+    "tools/operations/run_incremental_execution.py",
+    "tools/operations/validate_component_profiles.py",
+    "tools/operations/validate_generated_output_authority.py",
+    "tools/operations/validate_incremental_execution.py",
+    "tools/operations/validate_phase_d_closeout.py",
+    "tools/operations/validate_phase_e_candidate.py",
+    "tools/validate_human_front_door.py",
+    "tools/validate_iteration_sync.py"
+  ],
+  "claim_ceiling": "validated repository dependency planning and selective materialization candidate only; no real-world causal identification",
+  "commit_chain": [
+    {
+      "commit": "9bfba4bd03d1dff0b266940fe3964e770314d131",
+      "phase": "A"
+    },
+    {
+      "commit": "989990dad83c778147a8f9e7ca6f9d8ddc0acd27",
+      "phase": "B"
+    },
+    {
+      "commit": "671fc5d8884cff78238ab80eed87f36d6187ca29",
+      "phase": "A1"
+    },
+    {
+      "commit": "c8e3e009671e0a21e00f66308e953127f41745d0",
+      "phase": "B1"
+    },
+    {
+      "commit": "3d8a90db164a4e41672e25adf1a7b824aba37e14",
+      "phase": "C"
+    },
+    {
+      "commit": "aa9971d52287833beb728567f3c4c952d33778f2",
+      "phase": "D1"
+    },
+    {
+      "commit": "cb280f2bc546e5703aed99f5836f5a7c8bcc6da9",
+      "phase": "D2"
+    },
+    {
+      "commit": "4dd038bd3caf5483c8bf3833a0382ed5bb3e2b8a",
+      "phase": "D3"
+    },
+    {
+      "commit": "84e659a566b686098639ab0af9e16ab4ec162f03",
+      "phase": "D4"
+    }
+  ],
+  "completion_seal_path": "reports/operations/121Q32I-completion-seal.json",
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "contamination_scan": {
+    "lab": false,
+    "q33_q40": false,
+    "shadow": false
+  },
+  "current_method_version": "1.2.0",
+  "gap": {
+    "evidence": [
+      "reports/operations/121Q32I-phase-d-validation-closeout.json"
+    ],
+    "smallest_material_action": "Materialize the already validated Q32I planner, executor, validator and profiles as a 1.3 Draft candidate.",
+    "summary": "Method 1.2 computes propagation but does not safely plan, execute, cache, validate and recover selective materialization."
+  },
+  "head_binding": {
+    "authority": "pull_request_body_and_1111_receipt",
+    "embedded_exact_current_head": false,
+    "explanation": "Exact candidate HEAD and mutable CI/artifact evidence are externally attested after commit; the repository object never treats its own HEAD as validity evidence.",
+    "live_refetch_required": true,
+    "mode": "external_exact_head_attestation",
+    "pr_number": 62,
+    "receipt_path": "agent-results/IGNITION-20260718-121Q32I-CODEX-V12-phase-e-result.md"
+  },
+  "impact_matrix": [
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": ".github/workflows/foundation-validation.yml"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": ".github/workflows/pages.yml"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "AI-HANDOFF.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "AI-START-HERE.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "CHANGELOG.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "ITERATION.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "README.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "SUMMARY.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "data/architecture/interactive-system-map-layout.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "data/architecture/interactive-system-map.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "data/operations/change-propagation-topology.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "data/operations/component-execution-profile-policies.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "data/operations/component-execution-profiles.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "data/operations/generated-output-authority.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "data/operations/iterations/121Q32I.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "data/operations/project-components.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "data/operations/propagation/121Q32I-request.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "docs/USAGE.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "docs/VERSIONING.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "docs/ai-assistant-usage-reference.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "docs/architecture/incremental-execution.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "docs/architecture/interactive-system-map.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "docs/architecture/typed-change-propagation.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "docs/project-current-state.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "llms.txt"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "pages/generated/ignition-system-map.svg"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "reports/operations/121Q32I-completion-seal.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "reports/operations/121Q32I-incremental-execution-demonstration.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "reports/operations/121Q32I-phase-d-validation-closeout.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "reports/operations/121Q32I-phase-d-validation-closeout.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "schemas/operations/component-execution-profile.schema.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "schemas/operations/incremental-execution-plan.schema.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "schemas/operations/iteration-manifest.schema.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "schemas/operations/non-impact-proof.schema.json"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "templates/operations/execution-result-template.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "templates/operations/independent-review-template.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "templates/operations/task-command-template.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/PHASE-C-ACCEPTANCE-MATRIX.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/PHASE-D-ACCEPTANCE-MATRIX.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/test_change_propagation.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/test_component_profiles.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/test_diff_coverage_gate.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/test_generated_output_authority.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/test_incremental_execution.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/test_incremental_execution_defensive_rejections.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/test_incremental_execution_validator.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/test_incremental_executor.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/test_incremental_planner.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/test_phase_d_closeout.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tests/test_phase_e_candidate.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tools/operations/generate_component_profiles.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tools/operations/plan_incremental_execution.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tools/operations/run_incremental_execution.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tools/operations/validate_component_profiles.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tools/operations/validate_generated_output_authority.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tools/operations/validate_incremental_execution.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tools/operations/validate_phase_d_closeout.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tools/operations/validate_phase_e_candidate.py"
+    },
+    {
+      "decision": "CHANGE",
+      "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+      "surface": "tools/validate_iteration_sync.py"
+    }
+  ],
+  "method_version": "1.3.0",
+  "phase_d_evidence": {
+    "d1": "18/18 PASS",
+    "d2": "14/14 PASS",
+    "d3": "26/26 PASS",
+    "d4_report_digest": "a40276b5cacd249c4c8f266addb8f945ab56e805f02a243c0e16b045587ed723",
+    "refreshed_local_execution_counts": {
+      "explained_skips": 1,
+      "foundation_unittest_pass": 7,
+      "function_os_pytest_pass": 164,
+      "function_os_unittest_pass": 164,
+      "repository_unittest_executions": 322,
+      "repository_unittest_external_verification_skip": 1,
+      "repository_unittest_pass": 321,
+      "standalone_canonical_pass": 40,
+      "total_executions": 697,
+      "total_pass": 696
+    },
+    "three_p1_regressions": {
+      "preflight_zero_side_effect_rejections": 9,
+      "production_automatic_profiles": 1,
+      "rollback_complete_restoration_tests": 7,
+      "status": "PASS"
+    }
+  },
+  "phase_e_assets": {
+    "executor": "tools/operations/run_incremental_execution.py",
+    "planner": "tools/operations/plan_incremental_execution.py",
+    "profiles": "data/operations/component-execution-profiles.json",
+    "schemas": [
+      "schemas/operations/incremental-execution-plan.schema.json",
+      "schemas/operations/non-impact-proof.schema.json"
+    ],
+    "validator": "tools/operations/validate_incremental_execution.py"
+  },
+  "propagation_closure": {
+    "base_identity": "4097e610eebfc65c739df4fe7d2900161c204a9d",
+    "closure_complete": true,
+    "closure_hash": "e392ebef31fc01842eaff1520c1c6739480d1c3d39a07729818968dfdb85f50f",
+    "closure_path": "data/operations/propagation/121Q32I-closure.json",
+    "component_decisions": [
+      {
+        "decision": "CHANGE",
+        "item_id": "accepted_work",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "ai_guide",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "arn",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "candidate_return",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "case_source",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "charter",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "current_state",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "external_input",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "feedback_routes",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "foundation",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "foundation_data",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "function_os",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "historical_reports",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "ignition_increment",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "incremental_execution",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "iteration",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "iteration_manifest_contract",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "l0",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "l1",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "l2",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "l3",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "l4",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "l5",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "l6",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "licensing",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "mcf",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "no_l7",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "no_totality_proof",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "no_truth_upgrade",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "pages_pipeline",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "point_fire_analysis",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "project_component_registry",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "propagation_calculator",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "propagation_topology",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "provenance_capture",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "psd",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "public_response",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "q12",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "q13",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "q14",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "readme",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "showcase",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "showcase_registry",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "source_pool",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "summary",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "sustainability",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "sync",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "system_map",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "system_map_layout",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "system_map_projection",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "usage",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "zhiyuan_method",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      }
+    ],
+    "head_identity": "external_exact_head_attestation",
+    "impact_report_path": "reports/operations/121Q32I-change-propagation-impact.md",
+    "registry_derived_surfaces": [
+      "agent.handoff",
+      "ai.start",
+      "external.pages_homepage",
+      "human.ai_guide",
+      "human.current_state",
+      "human.pages_source",
+      "human.readme",
+      "human.summary",
+      "human.usage",
+      "machine.llms",
+      "method.iteration",
+      "method.result_template",
+      "method.review_template",
+      "method.task_template",
+      "release.changelog",
+      "release.versioning"
+    ],
+    "request_path": "data/operations/propagation/121Q32I-request.json",
+    "residue_path": "data/operations/propagation/121Q32I-residue.json",
+    "resolved_components": [
+      "ai_guide",
+      "current_state",
+      "historical_reports",
+      "incremental_execution",
+      "iteration",
+      "iteration_manifest_contract",
+      "no_totality_proof",
+      "pages_pipeline",
+      "project_component_registry",
+      "propagation_calculator",
+      "propagation_topology",
+      "readme",
+      "summary",
+      "sync",
+      "system_map_layout",
+      "system_map_projection",
+      "usage"
+    ],
+    "seed_components": [
+      "ai_guide",
+      "current_state",
+      "historical_reports",
+      "incremental_execution",
+      "iteration",
+      "iteration_manifest_contract",
+      "pages_pipeline",
+      "project_component_registry",
+      "propagation_calculator",
+      "propagation_topology",
+      "readme",
+      "summary",
+      "system_map_layout",
+      "system_map_projection",
+      "usage"
+    ],
+    "seed_paths": [
+      ".github/workflows/foundation-validation.yml",
+      ".github/workflows/pages.yml",
+      "AGENTS.md",
+      "AI-HANDOFF.md",
+      "AI-START-HERE.md",
+      "CHANGELOG.md",
+      "ITERATION.md",
+      "README.md",
+      "SUMMARY.md",
+      "data/architecture/interactive-system-map-layout.json",
+      "data/architecture/interactive-system-map.json",
+      "data/operations/change-propagation-topology.json",
+      "data/operations/component-execution-profile-policies.json",
+      "data/operations/component-execution-profiles.json",
+      "data/operations/generated-output-authority.json",
+      "data/operations/iterations/121Q32I.json",
+      "data/operations/project-components.json",
+      "data/operations/propagation/121Q32I-request.json",
+      "docs/USAGE.md",
+      "docs/VERSIONING.md",
+      "docs/ai-assistant-usage-reference.md",
+      "docs/architecture/incremental-execution.md",
+      "docs/architecture/interactive-system-map.md",
+      "docs/architecture/typed-change-propagation.md",
+      "docs/project-current-state.md",
+      "llms.txt",
+      "pages/generated/ignition-system-map.svg",
+      "reports/operations/121Q32I-completion-seal.json",
+      "reports/operations/121Q32I-incremental-execution-demonstration.json",
+      "reports/operations/121Q32I-phase-d-validation-closeout.json",
+      "reports/operations/121Q32I-phase-d-validation-closeout.md",
+      "schemas/operations/component-execution-profile.schema.json",
+      "schemas/operations/incremental-execution-plan.schema.json",
+      "schemas/operations/iteration-manifest.schema.json",
+      "schemas/operations/non-impact-proof.schema.json",
+      "templates/operations/execution-result-template.md",
+      "templates/operations/independent-review-template.md",
+      "templates/operations/task-command-template.md",
+      "tests/PHASE-C-ACCEPTANCE-MATRIX.md",
+      "tests/PHASE-D-ACCEPTANCE-MATRIX.md",
+      "tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md",
+      "tests/test_change_propagation.py",
+      "tests/test_component_profiles.py",
+      "tests/test_diff_coverage_gate.py",
+      "tests/test_generated_output_authority.py",
+      "tests/test_human_front_door.py",
+      "tests/test_incremental_execution.py",
+      "tests/test_incremental_execution_defensive_rejections.py",
+      "tests/test_incremental_execution_validator.py",
+      "tests/test_incremental_executor.py",
+      "tests/test_incremental_planner.py",
+      "tests/test_phase_d_closeout.py",
+      "tests/test_phase_e_candidate.py",
+      "tests/test_production_execution_authority.py",
+      "tools/operations/generate_component_profiles.py",
+      "tools/operations/plan_incremental_execution.py",
+      "tools/operations/run_incremental_execution.py",
+      "tools/operations/validate_component_profiles.py",
+      "tools/operations/validate_generated_output_authority.py",
+      "tools/operations/validate_incremental_execution.py",
+      "tools/operations/validate_phase_d_closeout.py",
+      "tools/operations/validate_phase_e_candidate.py",
+      "tools/validate_human_front_door.py",
+      "tools/validate_iteration_sync.py"
+    ],
+    "surface_decisions": [
+      {
+        "decision": "CHANGE",
+        "item_id": "agent.handoff",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "ai.start",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "external.pages_homepage",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "human.ai_guide",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "human.current_state",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "human.pages_source",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "human.readme",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "human.summary",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "human.usage",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "machine.llms",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "method.iteration",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "method.result_template",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "method.review_template",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "method.task_template",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "release.changelog",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "release.versioning",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+      }
+    ],
+    "system_map_delta_path": "data/operations/propagation/121Q32I-system-map-delta.json",
+    "system_map_impact": {
+      "decision": "CHANGE",
+      "delta_path": "data/operations/propagation/121Q32I-system-map-delta.json",
+      "reason": "The canonical registry, topology, candidate version and materialized projection changed."
+    },
+    "typed_path_ids": [
+      "calculator_projects_sync",
+      "incremental_builds_pages",
+      "incremental_materializes_iteration",
+      "incremental_projects_map",
+      "incremental_requires_sync",
+      "layout_generates_projection",
+      "manifest_tracks_iteration",
+      "map_current_state_no_totality",
+      "map_iteration_sync",
+      "map_readme_current",
+      "pages_depends_readme",
+      "projection_publishes_pages",
+      "registry_enables_calculator",
+      "registry_generates_projection",
+      "sync_requires_readme",
+      "topology_enables_calculator",
+      "topology_generates_projection"
+    ],
+    "unresolved_residue": []
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  },
+  "receipt_location": "agent-results/IGNITION-20260718-121Q32I-CODEX-V12-phase-e-result.md",
+  "remaining_limitations": [
+    "Independent review is not executed in this phase.",
+    "Draft candidate is not Accepted, Merged or Current.",
+    "Declared dependency reachability is not real-world causal proof."
+  ],
+  "required_synchronization_decisions": [
+    "agent.handoff",
+    "ai.start",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "method.result_template",
+    "method.review_template",
+    "method.task_template",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "rollback_strategy": "Restore only registered outputs or emit repository-local recovery material; never cross the repository boundary.",
+  "schema_tools_tests_workflows_reports_changed": [
+    ".github/workflows/foundation-validation.yml",
+    ".github/workflows/pages.yml",
+    "reports/operations/121Q32I-completion-seal.json",
+    "reports/operations/121Q32I-incremental-execution-demonstration.json",
+    "reports/operations/121Q32I-phase-d-validation-closeout.json",
+    "reports/operations/121Q32I-phase-d-validation-closeout.md",
+    "schemas/operations/component-execution-profile.schema.json",
+    "schemas/operations/incremental-execution-plan.schema.json",
+    "schemas/operations/iteration-manifest.schema.json",
+    "schemas/operations/non-impact-proof.schema.json",
+    "tests/PHASE-C-ACCEPTANCE-MATRIX.md",
+    "tests/PHASE-D-ACCEPTANCE-MATRIX.md",
+    "tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md",
+    "tests/test_change_propagation.py",
+    "tests/test_component_profiles.py",
+    "tests/test_diff_coverage_gate.py",
+    "tests/test_generated_output_authority.py",
+    "tests/test_incremental_execution.py",
+    "tests/test_incremental_execution_defensive_rejections.py",
+    "tests/test_incremental_execution_validator.py",
+    "tests/test_incremental_executor.py",
+    "tests/test_incremental_planner.py",
+    "tests/test_phase_d_closeout.py",
+    "tests/test_phase_e_candidate.py",
+    "tools/operations/generate_component_profiles.py",
+    "tools/operations/plan_incremental_execution.py",
+    "tools/operations/run_incremental_execution.py",
+    "tools/operations/validate_component_profiles.py",
+    "tools/operations/validate_generated_output_authority.py",
+    "tools/operations/validate_incremental_execution.py",
+    "tools/operations/validate_phase_d_closeout.py",
+    "tools/operations/validate_phase_e_candidate.py",
+    "tools/validate_iteration_sync.py"
+  ],
+  "self_hosting": {
+    "decision": "FULL_REBUILD_REQUIRED",
+    "demonstration_path": "reports/operations/121Q32I-incremental-execution-demonstration.json",
+    "plan_hash": "786993dc4731ac62882ba3c9adf09ca6eace5537c086a236d008eff04e2e3df5"
+  },
+  "state_transition": {
+    "changed_dimensions": [
+      "capability",
+      "identity",
+      "usage",
+      "handoff",
+      "lifecycle_current_state",
+      "deployment_rendering",
+      "operations_method"
+    ],
+    "maximum_claim_boundary": "Repository dependency planning and materialization only.",
+    "prior_state": "Method 1.2.0 is Current.",
+    "proposed_state": "Method 1.3.0 is a Draft candidate for independent review.",
+    "source_refs": [
+      "docs/architecture/incremental-execution.md"
+    ],
+    "subjects": [
+      "Ignition Iteration Method 1.3.0 Draft candidate",
+      "incremental execution and selective materialization"
+    ]
+  },
+  "status": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": true
+  },
+  "synchronization_closure": {
+    "external_attestations": [
+      {
+        "authority": "pull_request_body_and_1111_receipt",
+        "evidence_refs": [
+          "external:pr_body:pending"
+        ],
+        "live_state_locally_verifiable": false,
+        "stage": "post_merge",
+        "status": "pending",
+        "surface_id": "external.pages_homepage"
+      }
+    ],
+    "external_verification_policy": "Live exact-head evidence is external and must be re-fetched before review, acceptance or merge.",
+    "live_external_surfaces_verified": false,
+    "registry_path": "data/operations/synchronization-surfaces.json",
+    "registry_version": "1.0.0",
+    "surface_decisions": [
+      {
+        "decision": "CHANGE",
+        "derived_from": [],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "agent.handoff",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "ai.start",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [
+          "human.readme",
+          "human.pages_source"
+        ],
+        "evidence_refs": [
+          "external:pr_body:pending"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "external.pages_homepage",
+        "validation_mode": "post_merge_external_render_attestation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "human.ai_guide",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "human.current_state",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [
+          "human.readme"
+        ],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "human.pages_source",
+        "validation_mode": "repository_build_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "human.readme",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "human.summary",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "human.usage",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "machine.llms",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "method.iteration",
+        "validation_mode": "repository_schema_and_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [
+          "method.iteration"
+        ],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "method.result_template",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [
+          "method.iteration"
+        ],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "method.review_template",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [
+          "method.iteration"
+        ],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "method.task_template",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "release.changelog",
+        "validation_mode": "repository_semantic_validation"
+      },
+      {
+        "decision": "CHANGE",
+        "derived_from": [],
+        "evidence_refs": [
+          "docs/architecture/incremental-execution.md"
+        ],
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "surface_id": "release.versioning",
+        "validation_mode": "repository_semantic_validation"
+      }
+    ],
+    "unresolved_residue": []
+  },
+  "task_id": "121Q32I",
+  "validation": {
+    "external_exact_head_policy": {
+      "authority": "pull_request_body_and_1111_receipt",
+      "live_refetch_before_acceptance_or_merge": true,
+      "required": true,
+      "required_workflows": [
+        "foundation-validation",
+        "function-os-ci"
+      ]
+    },
+    "local": [
+      {
+        "evidence": "reports/operations/121Q32I-phase-d-validation-closeout.json",
+        "name": "phase_d_closeout",
+        "status": "PASS"
+      },
+      {
+        "evidence": "reports/operations/121Q32I-incremental-execution-demonstration.json",
+        "name": "phase_e_self_hosting",
+        "status": "PASS"
+      },
+      {
+        "evidence": "tests/test_production_execution_authority.py",
+        "name": "three_p1_production_regressions",
+        "status": "PASS"
+      }
+    ],
+    "remote": [
+      {
+        "conclusion": "success",
+        "evidence": "external:github_actions:29651950562",
+        "evidence_scope": "historical_subject_head_only",
+        "name": "foundation-validation",
+        "run_id": 29651950562,
+        "status": "PASS",
+        "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131"
+      },
+      {
+        "conclusion": "success",
+        "evidence": "external:github_actions:29651986744",
+        "evidence_scope": "historical_subject_head_only",
+        "name": "function-os-ci",
+        "run_id": 29651986744,
+        "status": "PASS",
+        "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131"
+      },
+      {
+        "conclusion": "success",
+        "evidence": "external:github_actions:29651987967",
+        "evidence_scope": "historical_subject_head_only",
+        "name": "pages-build-candidate-only",
+        "run_id": 29651987967,
+        "status": "PASS",
+        "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131"
+      }
+    ]
+  },
+  "verified_start": {
+    "main_head": "4097e610eebfc65c739df4fe7d2900161c204a9d",
+    "source": "execution-time origin/main before Q32I Phase E",
+    "verified_at": "2026-07-18"
+  }
+}

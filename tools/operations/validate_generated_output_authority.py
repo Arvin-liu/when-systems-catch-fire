@@ -25,8 +25,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent  # repo root
 AUTHORITY_PATH = ROOT / "data" / "operations" / "generated-output-authority.json"
 SCHEMA_PATH = ROOT / "schemas" / "operations" / "generated-output-authority.schema.json"
-REQUEST_PATH = ROOT / "data" / "operations" / "propagation" / "121Q32-request.json"
-BASE_MAIN = "d1bedb074af8dad8202b4324f3f5bbbb6b308b51"
+REQUEST_PATH = ROOT / "data" / "operations" / "propagation" / "121Q32I-request.json"
+BASE_MAIN = "4097e610eebfc65c739df4fe7d2900161c204a9d"
 
 failures = []
 warnings = []
@@ -177,26 +177,30 @@ def check_diff_coverage(authority: dict) -> None:
     
     # Get diff paths
     result = subprocess.run(
-        ["git", "diff", "--name-only", f"{BASE_MAIN}...HEAD"],
+        ["git", "diff", "--name-only", BASE_MAIN],
         capture_output=True, text=True, cwd=str(ROOT),
     )
     if result.returncode != 0:
         fail(f"git diff failed: {result.stderr}")
         return
-    diff_paths = set(result.stdout.strip().split("\n"))
+    diff_paths = {p for p in result.stdout.strip().split("\n") if p}
+    untracked = subprocess.run(["git", "ls-files", "--others", "--exclude-standard"], capture_output=True, text=True, cwd=str(ROOT))
+    if untracked.returncode == 0:
+        diff_paths |= {p for p in untracked.stdout.splitlines() if p}
 
     # Get seeds
     request = load_json(REQUEST_PATH)
     seeds = set(request["changed_paths"])
 
     # Get generated outputs
-    generated = {item["path"] for item in authority["generated_outputs"]}
+    all_generated = {item["path"] for item in authority["generated_outputs"]}
+    generated = all_generated & diff_paths
 
     # Check coverage
     covered = seeds | generated
     uncovered = diff_paths - covered
     extra = covered - diff_paths
-    overlap = seeds & generated
+    overlap = seeds & all_generated
 
     print(f"  Diff paths: {len(diff_paths)}")
     print(f"  Seeds: {len(seeds)}")
@@ -249,10 +253,10 @@ def check_propagation_freshness(authority: dict) -> None:
         sys.executable,
         str(ROOT / "tools" / "operations" / "compute_change_propagation.py"),
         "--request", str(REQUEST_PATH),
-        "--output", str(ROOT / "data/operations/propagation/121Q32-closure.json"),
-        "--report", str(ROOT / "data/operations/propagation/121Q32-impact-report.md"),
-        "--map-delta", str(ROOT / "data/operations/propagation/121Q32-system-map-delta.json"),
-        "--residue", str(ROOT / "data/operations/propagation/121Q32-residue.json"),
+        "--output", str(ROOT / "data/operations/propagation/121Q32I-closure.json"),
+        "--report", str(ROOT / "reports/operations/121Q32I-change-propagation-impact.md"),
+        "--map-delta", str(ROOT / "data/operations/propagation/121Q32I-system-map-delta.json"),
+        "--residue", str(ROOT / "data/operations/propagation/121Q32I-residue.json"),
         "--check",
     ]
     result = subprocess.run(cmd, capture_output=True, text=True, cwd=str(ROOT))

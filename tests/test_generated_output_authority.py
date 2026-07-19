@@ -87,11 +87,11 @@ class GeneratedOutputAuthorityTests(unittest.TestCase):
     def test_propagation_freshness(self):
         result = subprocess.run(
             [sys.executable, str(ROOT / "tools/operations/compute_change_propagation.py"),
-             "--request", str(ROOT / "data/operations/propagation/121Q32-request.json"),
-             "--output", str(ROOT / "data/operations/propagation/121Q32-closure.json"),
-             "--report", str(ROOT / "reports/operations/121Q32-change-propagation-impact.md"),
-             "--map-delta", str(ROOT / "data/operations/propagation/121Q32-system-map-delta.json"),
-             "--residue", str(ROOT / "data/operations/propagation/121Q32-residue.json"),
+             "--request", str(ROOT / "data/operations/propagation/121Q32I-request.json"),
+             "--output", str(ROOT / "data/operations/propagation/121Q32I-closure.json"),
+             "--report", str(ROOT / "reports/operations/121Q32I-change-propagation-impact.md"),
+             "--map-delta", str(ROOT / "data/operations/propagation/121Q32I-system-map-delta.json"),
+             "--residue", str(ROOT / "data/operations/propagation/121Q32I-residue.json"),
              "--check"],
             capture_output=True, text=True, cwd=str(ROOT),
         )
@@ -100,7 +100,7 @@ class GeneratedOutputAuthorityTests(unittest.TestCase):
         self.assertEqual(output["status"], "PASS")
 
     def test_seed_generated_disjoint(self):
-        request = _load_json(ROOT / "data/operations/propagation/121Q32-request.json")
+        request = _load_json(ROOT / "data/operations/propagation/121Q32I-request.json")
         seeds = set(request["changed_paths"])
         generated = {item["path"] for item in self.authority["generated_outputs"]}
         self.assertFalse(seeds & generated, "Seeds and generated overlap")

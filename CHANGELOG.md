@@ -1,5 +1,7 @@
 # Changelog
 
+- Q32I proposes iteration method 1.3.0 and system-map projection 0.3.0 as OPEN Draft candidates. The repaired candidate separates authority from execution capability, limits automatic profiles to real deterministic producers, adds a unified zero-write apply preflight, and restores the complete supported repository byte/type/symlink/mode state on rollback. Production profile, rollback, and preflight probes are now regressions. Method 1.2.0 and map 0.2.0 remain Current; the candidate awaits a new independent exact-head review and is not accepted, merged or Current.
+
 - 121Q31T closes Zhiyuan Writing Method 0.4.0 and the JSON-generated, tested, clickable whole-system SVG interface as Current. The typed external-input / ignition-increment pool preserves source and claim boundaries; 0.3.0 remains historical, Q29R remains bound to 0.3.0, and neither interface adds L7, a truth layer, or a completeness claim.
 
 ## Unreleased

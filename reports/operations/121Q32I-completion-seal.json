@@ -1,0 +1,177 @@
+{
+  "boundaries": {
+    "accepted": false,
+    "cache_is_authority": false,
+    "current": false,
+    "declared_reachability_is_causal_proof": false,
+    "independent_review_executed": false,
+    "merged": false,
+    "phase_e_candidate_only": true,
+    "q33_or_q40_started": false,
+    "self_head_validity_basis": false
+  },
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "contamination_scan": {
+    "lab": false,
+    "q33_q40": false,
+    "shadow": false
+  },
+  "external_artifact_attestation_contract": {
+    "authority": "pull_request_body_and_1111_receipt",
+    "embedded_live_digest": false,
+    "full_required_fields_authority": "validator",
+    "identity_critical_fields": [
+      "subject_head",
+      "foundation_run",
+      "function_os_run",
+      "pages_run",
+      "artifact_head_sha",
+      "github_artifact_archive_digest",
+      "pages_payload_tar_digest"
+    ],
+    "live_refetch_required": true,
+    "schema_version": "1.0.0",
+    "validator_path": "tools/validate_external_attestation.py"
+  },
+  "external_attestations": [
+    {
+      "authority": "pull_request_body_and_1111_receipt",
+      "evidence_refs": [
+        "external:pr_body:pending"
+      ],
+      "live_state_locally_verifiable": false,
+      "stage": "post_merge",
+      "status": "pending",
+      "surface_id": "external.pages_homepage"
+    }
+  ],
+  "historical_digest_evidence": {
+    "artifact_id": 8431733912,
+    "dual_digest": {
+      "distinction": "The GitHub archive ZIP and inner Pages payload TAR are independently hashed different byte objects.",
+      "github_artifact_archive_digest": "sha256:10833f4969614f8ef1e13865d5a2beeba4a532ed0f85310743750ef0c6cef628",
+      "pages_payload_tar_digest": "sha256:6b0afd5e246757ca093515035cf7a95dc63b28917758da7edb34a1b1851aa679"
+    },
+    "note": "Exact-head predecessor evidence that authorized this ordinary binding commit; final exact-head evidence remains external in PR #62 and the 1111 receipt.",
+    "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131",
+    "subject_run_ids": {
+      "foundation": 29651950562,
+      "function_os": 29651986744,
+      "pages": 29651987967
+    },
+    "tar_bytes": 552960,
+    "zip_bytes": 113696
+  },
+  "lifecycle": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": true
+  },
+  "manifest_path": "data/operations/iterations/121Q32I.json",
+  "method_version": "1.3.0",
+  "phase_b": {
+    "base": "main",
+    "base_head": "4097e610eebfc65c739df4fe7d2900161c204a9d",
+    "branch": "agent/121q32i-incremental-execution",
+    "claim_ceiling": "validated repository dependency planning and selective materialization candidate only; no real-world causal identification",
+    "draft_pr": 62,
+    "head_binding": {
+      "authority": "pull_request_body_and_1111_receipt",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true,
+      "mode": "external_exact_head_attestation",
+      "receipt_path": "agent-results/IGNITION-20260718-121Q32I-CODEX-V12-phase-e-result.md"
+    }
+  },
+  "phase_d_closeout": {
+    "report_digest": "548a82322428ca38096d6e9a12c72faaa732636ccb72bc4b3b79daed353dd248",
+    "tests": 116
+  },
+  "phase_e_evidence": {
+    "artifact": "PASS_ON_PREDECESSOR_EXACT_HEAD",
+    "artifact_evidence": {
+      "file_count": 32,
+      "id": 8431733912,
+      "tar_bytes": 552960,
+      "tar_sha256": "6b0afd5e246757ca093515035cf7a95dc63b28917758da7edb34a1b1851aa679",
+      "zip_bytes": 113696,
+      "zip_sha256": "10833f4969614f8ef1e13865d5a2beeba4a532ed0f85310743750ef0c6cef628"
+    },
+    "authority": "pull_request_body_and_1111_receipt",
+    "local": "PASS",
+    "production_deploy": "skipped",
+    "refreshed_local_execution_counts": {
+      "explained_skips": 1,
+      "foundation_unittest_pass": 7,
+      "function_os_pytest_pass": 164,
+      "function_os_unittest_pass": 164,
+      "repository_unittest_executions": 322,
+      "repository_unittest_external_verification_skip": 1,
+      "repository_unittest_pass": 321,
+      "standalone_canonical_pass": 40,
+      "total_executions": 697,
+      "total_pass": 696
+    },
+    "remote": "PASS_ON_PREDECESSOR_EXACT_HEAD",
+    "runs": {
+      "foundation": 29651950562,
+      "function_os": 29651986744,
+      "pages": 29651987967
+    },
+    "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131",
+    "three_p1_repair": {
+      "apply_authority_preflight": {
+        "status": "PASS",
+        "zero_side_effect_rejection_tests": 9
+      },
+      "authority_execution_boundary": {
+        "automatic_profiles": 1,
+        "status": "PASS"
+      },
+      "complete_rollback": {
+        "status": "PASS",
+        "tests": 7
+      },
+      "independent_review_required": true,
+      "self_acceptance": false
+    }
+  },
+  "propagation_closure": {
+    "closure_hash": "e392ebef31fc01842eaff1520c1c6739480d1c3d39a07729818968dfdb85f50f",
+    "closure_path": "data/operations/propagation/121Q32I-closure.json",
+    "complete": true,
+    "unresolved_residue": []
+  },
+  "propagation_closure_hash": "e392ebef31fc01842eaff1520c1c6739480d1c3d39a07729818968dfdb85f50f",
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  },
+  "self_hosting": {
+    "decision": "FULL_REBUILD_REQUIRED",
+    "plan_hash": "786993dc4731ac62882ba3c9adf09ca6eace5537c086a236d008eff04e2e3df5",
+    "validator": "PASS"
+  },
+  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "synchronization_registry": {
+    "path": "data/operations/synchronization-surfaces.json",
+    "version": "1.0.0"
+  },
+  "system_map": {
+    "candidate_version": "0.3.0-candidate",
+    "current_version": "0.2.0",
+    "edges": 37,
+    "groups": 9,
+    "l7_added": false,
+    "nodes": 41
+  },
+  "task_id": "121Q32I"
+}

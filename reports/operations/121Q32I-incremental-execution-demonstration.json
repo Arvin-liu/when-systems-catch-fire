@@ -1,0 +1,469 @@
+{
+  "authority_digests": {
+    "data/operations/change-propagation-topology.json": "ad42130e558a067cb3da23d07d655529682c0cef79b524ccdec9c7a3b2813512",
+    "data/operations/component-execution-profiles.json": "29e95c2146a1afe2cf307f081c6fc2162a35aca02cfb2a39dfe8e61d43496dfa",
+    "data/operations/project-components.json": "5ae5b098e3b183cc89eb2bdc64e5a4ffa7481f41841038f8c97ab97484777997"
+  },
+  "authority_fingerprint": "271ee70bff4e262630c1a3f2182010defa54a2f94df8b47d6f90ce8a6b095a87",
+  "claim_ceiling": "Self-hosting proves deterministic planning over declared repository dependencies only; it is not real-world causal proof.",
+  "planner_output": {
+    "affected_synchronization_surfaces": [
+      "agent.handoff",
+      "ai.start",
+      "external.pages_homepage",
+      "human.ai_guide",
+      "human.current_state",
+      "human.pages_source",
+      "human.readme",
+      "human.summary",
+      "human.usage",
+      "machine.llms",
+      "method.iteration",
+      "method.result_template",
+      "method.review_template",
+      "method.task_template",
+      "release.changelog",
+      "release.versioning"
+    ],
+    "authority_fingerprint": "271ee70bff4e262630c1a3f2182010defa54a2f94df8b47d6f90ce8a6b095a87",
+    "claim_ceiling": "declared repository dependency planning only; not truth or causal proof",
+    "component_decisions": [
+      {
+        "component_id": "accepted_work",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "ai_guide",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "arn",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "candidate_return",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "case_source",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "charter",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "current_state",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "external_input",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "feedback_routes",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "foundation",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "foundation_data",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "function_os",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "historical_reports",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "ignition_increment",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "incremental_execution",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "iteration",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "iteration_manifest_contract",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "l0",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "l1",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "l2",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "l3",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "l4",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "l5",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "l6",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "licensing",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "mcf",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "no_l7",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "no_totality_proof",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "no_truth_upgrade",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "pages_pipeline",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "point_fire_analysis",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "project_component_registry",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "propagation_calculator",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "propagation_topology",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "provenance_capture",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "psd",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "public_response",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "q12",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "q13",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "q14",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "readme",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "showcase",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "showcase_registry",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "source_pool",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "summary",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "sustainability",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "sync",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "system_map",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "system_map_layout",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "system_map_projection",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "usage",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "zhiyuan_method",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      }
+    ],
+    "concurrency_constraints": [
+      "execute in deterministic listed order"
+    ],
+    "execution_order": [],
+    "full_rebuild_components": [
+      "accepted_work",
+      "ai_guide",
+      "arn",
+      "candidate_return",
+      "case_source",
+      "charter",
+      "current_state",
+      "external_input",
+      "feedback_routes",
+      "foundation",
+      "foundation_data",
+      "function_os",
+      "historical_reports",
+      "ignition_increment",
+      "incremental_execution",
+      "iteration",
+      "iteration_manifest_contract",
+      "l0",
+      "l1",
+      "l2",
+      "l3",
+      "l4",
+      "l5",
+      "l6",
+      "licensing",
+      "mcf",
+      "no_l7",
+      "no_totality_proof",
+      "no_truth_upgrade",
+      "pages_pipeline",
+      "point_fire_analysis",
+      "project_component_registry",
+      "propagation_calculator",
+      "propagation_topology",
+      "provenance_capture",
+      "psd",
+      "public_response",
+      "q12",
+      "q13",
+      "q14",
+      "readme",
+      "showcase",
+      "showcase_registry",
+      "source_pool",
+      "summary",
+      "sustainability",
+      "sync",
+      "system_map",
+      "system_map_layout",
+      "system_map_projection",
+      "usage",
+      "zhiyuan_method"
+    ],
+    "full_rebuild_reasons": [
+      "data/operations/change-propagation-topology.json",
+      "data/operations/component-execution-profile-policies.json",
+      "data/operations/component-execution-profiles.json",
+      "data/operations/project-components.json",
+      "schemas/operations/component-execution-profile.schema.json",
+      "schemas/operations/incremental-execution-plan.schema.json",
+      "schemas/operations/non-impact-proof.schema.json",
+      "tools/operations/generate_component_profiles.py",
+      "tools/operations/plan_incremental_execution.py",
+      "tools/operations/run_incremental_execution.py",
+      "tools/operations/validate_incremental_execution.py"
+    ],
+    "no_change_components": [],
+    "normalized_change_seeds": [
+      ".github/workflows/foundation-validation.yml",
+      ".github/workflows/pages.yml",
+      "AGENTS.md",
+      "AI-HANDOFF.md",
+      "AI-START-HERE.md",
+      "CHANGELOG.md",
+      "ITERATION.md",
+      "README.md",
+      "SUMMARY.md",
+      "data/architecture/interactive-system-map-layout.json",
+      "data/architecture/interactive-system-map.json",
+      "data/operations/change-propagation-topology.json",
+      "data/operations/component-execution-profile-policies.json",
+      "data/operations/component-execution-profiles.json",
+      "data/operations/generated-output-authority.json",
+      "data/operations/iterations/121Q32I.json",
+      "data/operations/project-components.json",
+      "data/operations/propagation/121Q32I-request.json",
+      "docs/USAGE.md",
+      "docs/VERSIONING.md",
+      "docs/ai-assistant-usage-reference.md",
+      "docs/architecture/incremental-execution.md",
+      "docs/architecture/interactive-system-map.md",
+      "docs/architecture/typed-change-propagation.md",
+      "docs/project-current-state.md",
+      "llms.txt",
+      "pages/generated/ignition-system-map.svg",
+      "reports/operations/121Q32I-completion-seal.json",
+      "reports/operations/121Q32I-incremental-execution-demonstration.json",
+      "reports/operations/121Q32I-phase-d-validation-closeout.json",
+      "reports/operations/121Q32I-phase-d-validation-closeout.md",
+      "schemas/operations/component-execution-profile.schema.json",
+      "schemas/operations/incremental-execution-plan.schema.json",
+      "schemas/operations/iteration-manifest.schema.json",
+      "schemas/operations/non-impact-proof.schema.json",
+      "templates/operations/execution-result-template.md",
+      "templates/operations/independent-review-template.md",
+      "templates/operations/task-command-template.md",
+      "tests/PHASE-C-ACCEPTANCE-MATRIX.md",
+      "tests/PHASE-D-ACCEPTANCE-MATRIX.md",
+      "tests/PHASE-D-DEFENSIVE-REJECTION-MATRIX.md",
+      "tests/test_change_propagation.py",
+      "tests/test_component_profiles.py",
+      "tests/test_diff_coverage_gate.py",
+      "tests/test_generated_output_authority.py",
+      "tests/test_human_front_door.py",
+      "tests/test_incremental_execution.py",
+      "tests/test_incremental_execution_defensive_rejections.py",
+      "tests/test_incremental_execution_validator.py",
+      "tests/test_incremental_executor.py",
+      "tests/test_incremental_planner.py",
+      "tests/test_phase_d_closeout.py",
+      "tests/test_phase_e_candidate.py",
+      "tests/test_production_execution_authority.py",
+      "tools/operations/generate_component_profiles.py",
+      "tools/operations/plan_incremental_execution.py",
+      "tools/operations/run_incremental_execution.py",
+      "tools/operations/validate_component_profiles.py",
+      "tools/operations/validate_generated_output_authority.py",
+      "tools/operations/validate_incremental_execution.py",
+      "tools/operations/validate_phase_d_closeout.py",
+      "tools/operations/validate_phase_e_candidate.py",
+      "tools/validate_human_front_door.py",
+      "tools/validate_iteration_sync.py"
+    ],
+    "plan_hash": "786993dc4731ac62882ba3c9adf09ca6eace5537c086a236d008eff04e2e3df5",
+    "preconditions": [
+      "clean tree or isolated worktree for apply"
+    ],
+    "q32_affected_component_closure": [
+      "ai_guide",
+      "current_state",
+      "historical_reports",
+      "incremental_execution",
+      "iteration",
+      "iteration_manifest_contract",
+      "no_totality_proof",
+      "pages_pipeline",
+      "project_component_registry",
+      "propagation_calculator",
+      "propagation_topology",
+      "readme",
+      "summary",
+      "sync",
+      "system_map_layout",
+      "system_map_projection",
+      "usage"
+    ],
+    "rebuild_components": [],
+    "request_identity": "121Q32I",
+    "revalidate_components": [],
+    "rollback_plan": "executor must restore complete repository byte, type, symlink, and mode state or emit a recovery package",
+    "schema_version": "1.0.0",
+    "sync_metadata_components": [],
+    "unresolved_residue": []
+  },
+  "request_identity": "121Q32I",
+  "request_path": "data/operations/propagation/121Q32I-request.json",
+  "schema_version": "1.0.0",
+  "task_id": "121Q32I",
+  "validator_result": {
+    "error_code": null,
+    "status": "PASS"
+  }
+}

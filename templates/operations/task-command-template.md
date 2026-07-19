@@ -1,6 +1,6 @@
 # Ignition Task Command Template
 
-Current method contract: `ITERATION.md` 1.1.0. Method 1.2.0 typed propagation is Draft candidate only.
+Current method contract: `ITERATION.md` 1.2.0. Method 1.3.0 incremental execution is a Draft candidate only; declare real changed paths and allow the production planner to force `FULL_REBUILD_REQUIRED`.
 
 Task ID: `<TASK_ID>`
 

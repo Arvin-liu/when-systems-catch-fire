@@ -56,7 +56,7 @@ PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系
 
 121Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正确性。
 
-当前方法 1.1.0 要求从 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。人类 README、实际 Pages 来源与渲染面、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称生产 Pages 或其他实时外部状态已验证。
+当前方法是 `1.2.0`，系统图是 `0.2.0`；方法 `1.1.0` 与系统图 `0.1.0` 仅为 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。人类 README、实际 Pages 来源与渲染面、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称生产 Pages 或其他实时外部状态已验证。
 
 Q25C 已成为当前生命周期规则：Ready、Accepted、Merged、Current、Closed 分别读取 surface `blocks`，不能用全局 project-complete 布尔值阻断 pre-merge acceptance。每个外部表面必须有独立 attestation；Pages pending 可以进入 Accepted/Merged，但继续阻塞 Current/Closed。
 
@@ -64,7 +64,7 @@ Q25C 已成为当前生命周期规则：Ready、Accepted、Merged、Current、C
 
 121Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。
 
-121Q31T 的完整可点击系统图 0.1.0 仍是当前导航接口。121Q32 的 0.2.0 Draft candidate 把权威链升级为 `project-components registry + change-propagation topology + layout overlay → generator → materialized spec + SVG`；同时提出迭代方法 1.2.0，以声明关系 fixpoint 联合同步闭包并把 hash、map diff 与 residue 绑定到 manifest。交接必须重算 closure 和 projection，不能只检查生成时间；也不得把 Git diff、依赖或图连线当作现实因果。
+121Q32T 已将 registry 派生系统图 `0.2.0` 与迭代法 `1.2.0` 收口为 Current。Q32I 的方法 `1.3.0` / map `0.3.0` 仍是 OPEN Draft candidate，尚未独立接受、未 merge、非 Current：候选明确分离 authority 类型、execution capability 与 validation capability，只允许真实、确定性且完整物化声明输出的 producer 为 automatic，只有完整且构件职责相符的命令才是 local validator。Apply 在子进程／写入前必须经统一权威预检；rollback 要按整仓字节、类型、symlink 和 mode 证明完整恢复。交接必须读取 `docs/architecture/incremental-execution.md`，重算 closure、plan 和派生 projection；不能把 cache、Git diff、依赖、图连线、CI 或 artifact 当作现实因果、自我验收或 Current 证明。下一步是新的 exact-head 独立审查，不是候选自验。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。
