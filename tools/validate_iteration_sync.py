@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import functools
 import json
 import re
 import subprocess
@@ -195,6 +196,86 @@ def required_registry_surfaces(manifest: dict, registry: dict[str, dict]) -> set
                 required.add(surface_id)
                 changed = True
     return required
+
+
+def _parse_version(version: str) -> tuple[int, ...]:
+    return tuple(int(part) for part in str(version).split(".") if part.isdigit())
+
+
+@functools.lru_cache(maxsize=None)
+def _registry_version_commits() -> dict[str, str]:
+    """Map registry_version -> commit sha where that version was current.
+
+    Walk the git history of the registry file (newest first) and record the
+    first (i.e. newest) commit seen for each distinct registry_version. This
+    lets historical iteration manifests validate against the *era* registry
+    they were actually sealed against, instead of being judged against the
+    live registry that may have gained surfaces later (e.g. copyright_governance
+    was introduced in the Q33 era, after the 1.0.0-era iterations were sealed).
+    """
+    mapping: dict[str, str] = {}
+    rel = REGISTRY_PATH.relative_to(ROOT)
+    try:
+        log = subprocess.run(
+            ["git", "log", "--format=%H", "--", str(rel)],
+            cwd=ROOT, capture_output=True, text=True, check=True,
+        ).stdout.strip().splitlines()
+    except (subprocess.CalledProcessError, FileNotFoundError, OSError):
+        return mapping
+    for sha in log:
+        if not sha:
+            continue
+        try:
+            raw = subprocess.run(
+                ["git", "show", f"{sha}:{rel}"],
+                cwd=ROOT, capture_output=True, text=True, check=True,
+            ).stdout
+            doc = json.loads(raw)
+        except (subprocess.CalledProcessError, json.JSONDecodeError, OSError):
+            continue
+        version = doc.get("registry_version")
+        if version is None:
+            continue
+        mapping.setdefault(version, sha)  # newest commit wins
+    return mapping
+
+
+def _registry_dict_at_commit(sha: str) -> dict[str, dict]:
+    rel = REGISTRY_PATH.relative_to(ROOT)
+    raw = subprocess.run(
+        ["git", "show", f"{sha}:{rel}"],
+        cwd=ROOT, capture_output=True, text=True, check=True,
+    ).stdout
+    doc = json.loads(raw)
+    return {item["surface_id"]: item for item in doc["surfaces"]}
+
+
+def resolve_era_registry(declared_version: str, live_registry: dict[str, dict]) -> dict[str, dict]:
+    """Return the registry surface map appropriate for ``declared_version``.
+
+    Historical manifests declare the registry_version that was live when they
+    were sealed. Validating them against the current live registry is a
+    retrospective error: surfaces introduced later would be wrongly required of
+    early iterations that predate them.
+
+    Resolution order:
+      1. exact match in git history of the registry file;
+      2. otherwise the highest known version that is <= declared_version;
+      3. otherwise the lowest known version (most conservative);
+      4. if git history is unavailable, fall back to the live registry.
+    """
+    versions = _registry_version_commits()
+    if not versions:
+        return live_registry
+    if declared_version in versions:
+        return _registry_dict_at_commit(versions[declared_version])
+    parsed = _parse_version(declared_version)
+    lower = [v for v in versions if _parse_version(v) <= parsed]
+    if lower:
+        best = max(lower, key=_parse_version)
+        return _registry_dict_at_commit(versions[best])
+    lowest = min(versions, key=_parse_version)
+    return _registry_dict_at_commit(versions[lowest])
 
 
 def _validate_lifecycle(manifest: dict, source: Path) -> None:
@@ -565,12 +646,43 @@ def _pending_external_blockers(gate: str, required_ids: set[str], registry: dict
 def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict]) -> None:
     closure = manifest["synchronization_closure"]
     completion = manifest["completion_state"]
-    require(closure["registry_version"] == load_json(REGISTRY_PATH)["registry_version"], f"{source}: registry version mismatch")
+    declared = closure["registry_version"]
+    live_version = load_json(REGISTRY_PATH)["registry_version"]
+    if declared == live_version:
+        # Current-era manifest: validate against the live (current) registry.
+        # This is not retrospective — the manifest declares the live version.
+        era_registry = registry
+    else:
+        # Historical-era manifest: validate against the committed registry
+        # snapshot for the declared era. This prevents later-added surfaces
+        # (e.g. copyright_governance, introduced in the Q33 era) from being
+        # retroactively required of early iterations that predate them.
+        versions = _registry_version_commits()
+        if versions:
+            require(
+                declared in versions,
+                f"{source}: declared registry_version {declared} has no committed era snapshot; cannot validate retrospectively",
+            )
+            era_registry = resolve_era_registry(declared, registry)
+        else:
+            # Git history unavailable (e.g. validated from an exported tarball):
+            # fall back to the original live-registry equality contract.
+            require(
+                declared == live_version,
+                f"{source}: registry version mismatch",
+            )
+            era_registry = registry
+    # The *required* surface set is resolved against the era snapshot so that
+    # surfaces introduced after this manifest was sealed (e.g. copyright_governance,
+    # added in the Q33 era) are not retroactively required of it. All other
+    # per-surface checks below use the caller-supplied `registry` (the live
+    # registry in production; a caller-mutated registry in unit tests), which is
+    # always a superset of the era snapshot for the surfaces the manifest declares.
     decisions = closure["surface_decisions"]
     ids = [item["surface_id"] for item in decisions]
     _unique(ids, "synchronization surface decision", source)
     decision_map = {item["surface_id"]: item for item in decisions}
-    required_ids = required_registry_surfaces(manifest, registry)
+    required_ids = required_registry_surfaces(manifest, era_registry)
     missing = sorted(required_ids - set(decision_map))
     require(not missing, f"{source}: missing registry-derived surface decisions: {missing}")
     unknown = sorted(set(decision_map) - set(registry))

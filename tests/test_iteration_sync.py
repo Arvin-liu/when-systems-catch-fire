@@ -8,6 +8,8 @@ from tools.validate_iteration_sync import (
     ROOT,
     infer_seal_path,
     load_json,
+    required_registry_surfaces,
+    resolve_era_registry,
     validate_all,
     validate_custom,
     validate_manifest_bindings,
@@ -619,6 +621,62 @@ class IterationSyncTests(unittest.TestCase):
         seal["task_id"] = "121Q24"
         with self.assertRaisesRegex(AssertionError, "seal task mismatch"):
             validate_custom(manifest, path, seal, registry)
+
+    def test_temporally_version_aware_validation_preserves_sealed_early_iterations_and_current_candidate(self):
+        """P4 Conclusion B regression.
+
+        A synchronization surface introduced after an early iteration was sealed
+        (``copyright_governance``, added in the Q33 era) must NOT be
+        retroactively required of that early iteration. Historical manifests are
+        validated against the committed registry snapshot of the era their
+        ``registry_version`` declares; the current candidate is validated against
+        the live registry and must still satisfy the current contract.
+
+        No manifest is special-cased: the validator resolves the era registry from
+        the git history of the registry file, never from a per-task exception list.
+        """
+        reg_doc = load_json(REGISTRY_PATH)
+        live_registry = validate_registry(reg_doc)
+        live_version = reg_doc["registry_version"]
+        self.assertIn("copyright_governance", live_registry,
+                      "precondition: later-added surface exists in the live registry")
+
+        # Representative sealed early iteration that predates copyright_governance.
+        early_path = ROOT / "data/operations/iterations/121Q25B.json"
+        early = load_json(early_path)
+        early_seal = load_json(infer_seal_path(early))
+        self.assertNotEqual(early["synchronization_closure"]["registry_version"], live_version,
+                            "precondition: early iteration declares an older registry_version")
+
+        # Demonstrate the retrospective defect: under the LIVE registry the early
+        # manifest would be required to cover the later-added surface.
+        required_under_live = required_registry_surfaces(early, live_registry)
+        self.assertIn("copyright_governance", required_under_live,
+                      "the bug: live registry would retroactively require copyright_governance")
+
+        # The era-aware resolver maps the declared version to a snapshot that
+        # predates the later-added surface.
+        era_registry = resolve_era_registry(early["synchronization_closure"]["registry_version"], live_registry)
+        self.assertNotIn("copyright_governance", era_registry,
+                         "era registry must not contain the later-added surface")
+
+        # Historical early iteration validates against the era registry (no
+        # retrospective failure) and also via the live validator, which internally
+        # selects the era registry for non-current declarations.
+        validate_manifest_schema(early, early_path)
+        validate_custom(early, early_path, early_seal, era_registry)
+        validate_custom(early, early_path, early_seal, live_registry)
+
+        # The current candidate (Q33) declares the live version and MUST still
+        # satisfy the current contract against the live registry.
+        q33_path = ROOT / "data/operations/iterations/121Q33.json"
+        q33 = load_json(q33_path)
+        q33_seal = load_json(infer_seal_path(q33))
+        self.assertEqual(q33["synchronization_closure"]["registry_version"], live_version)
+        self.assertIn("copyright_governance", required_registry_surfaces(q33, live_registry),
+                      "current candidate must still be governed by the current contract")
+        validate_manifest_schema(q33, q33_path)
+        validate_custom(q33, q33_path, q33_seal, live_registry)
 
 
 if __name__ == "__main__":
