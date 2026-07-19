@@ -19,8 +19,8 @@
     "branch": "agent/121q33-global-copyright-risk-and-rights-governance",
     "draft": true,
     "pr_number": 63,
-    "status": "open",
-    "merge_commit": null
+    "merge_commit": null,
+    "merged": false
   },
   "head_binding": {
     "accepted_candidate_head": null,
