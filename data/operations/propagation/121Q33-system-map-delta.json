@@ -1,0 +1,19 @@
+{
+  "added_edges": [],
+  "added_nodes": [
+    "copyright_governance_history_remediation",
+    "copyright_governance_jurisdiction_registry",
+    "copyright_governance_material_classification",
+    "copyright_governance_non_republication_principle",
+    "copyright_governance_publication_gate_validator",
+    "copyright_governance_source_rights",
+    "copyright_governance_tests"
+  ],
+  "base_map_version": "0.3.0",
+  "candidate_map_version": "0.3.0",
+  "changed_edges": [],
+  "changed_nodes": [],
+  "removed_edges": [],
+  "removed_nodes": [],
+  "unmapped_residue": []
+}

@@ -192,6 +192,150 @@
       "path": "reports/operations/121Q32I-change-propagation-impact.md",
       "producer_command": "python tools/operations/compute_change_propagation.py",
       "producer_id": "compute_change_propagation"
+    },
+    {
+      "path": "data/governance/history-remediation-register.json",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tools/generate_interactive_system_map.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "path": "data/governance/jurisdiction-rule-registry.json",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tools/generate_interactive_system_map.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "path": "data/governance/material-classification.json",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tools/generate_interactive_system_map.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "path": "data/governance/source-rights-registry.json",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tools/generate_interactive_system_map.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "path": "docs/governance/external-input-non-republication-principle.md",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tools/generate_interactive_system_map.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "path": "schemas/governance/external-input-non-republication.schema.json",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tools/generate_interactive_system_map.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "path": "schemas/governance/history-remediation-entry.schema.json",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tools/generate_interactive_system_map.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "path": "schemas/governance/jurisdiction-rule-entry.schema.json",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tools/generate_interactive_system_map.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "path": "schemas/governance/publication-gate-decision.schema.json",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tools/generate_interactive_system_map.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "path": "schemas/governance/source-rights-entry.schema.json",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tools/generate_interactive_system_map.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "path": "tests/test_q33_governance_infrastructure.py",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tests/test_q33_governance_infrastructure.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "path": "tools/governance/fail_closed_publication_gate.py",
+      "producer_id": "121Q33-governance-infrastructure",
+      "producer_command": "python3 tools/governance/fail_closed_publication_gate.py",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json"
+      ],
+      "output_type": "report",
+      "freshness_mode": "byte_level_recompute",
+      "coverage_class": "generated_output",
+      "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
     }
   ],
   "schema_version": "1.0.0",

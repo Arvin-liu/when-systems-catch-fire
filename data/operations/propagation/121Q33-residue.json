@@ -1,0 +1,32 @@
+{
+  "closure_complete": false,
+  "closure_hash": "6339f3427c13fcd3d03092e653d710cc722f93b26b7094e490fb102d407a055a",
+  "residue": [
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/governance/jurisdiction-rule-entry.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/governance/source-rights-entry.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/governance/publication-gate-decision.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/governance/external-input-non-republication.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/governance/history-remediation-entry.schema.json",
+      "type": "unmapped_path"
+    }
+  ],
+  "task_id": "121Q33"
+}

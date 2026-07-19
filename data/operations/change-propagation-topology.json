@@ -1207,6 +1207,70 @@
       "declaration_source": "docs/architecture/interactive-system-map.md",
       "claim_ceiling": "deterministic repository derivation",
       "residue": []
+    },
+    {
+      "relation_id": "copyright_gov_to_system_map",
+      "source": "copyright_governance_jurisdiction_registry",
+      "target": "system_map_projection",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": false,
+      "label": "Copyright governance surfaces project onto system map",
+      "declaration_source": "121Q33-request",
+      "claim_ceiling": "Repository-level governance surface; not global legality or real-world causality",
+      "residue": []
+    },
+    {
+      "relation_id": "copyright_gov_to_publication_chain",
+      "source": "copyright_governance_publication_gate_validator",
+      "target": "pages_pipeline",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": false,
+      "label": "Publication gate validates pages pipeline output",
+      "declaration_source": "121Q33-request",
+      "claim_ceiling": "Publication gate is a repository-level fail-closed check; does not prove external legality",
+      "residue": []
+    },
+    {
+      "relation_id": "copyright_gov_to_current_state",
+      "source": "copyright_governance_history_remediation",
+      "target": "current_state",
+      "relation_class": "documents",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "informational_only",
+      "required_evaluation": false,
+      "creates_sync_obligation": false,
+      "map_visible": false,
+      "label": "History remediation register documented in current state",
+      "declaration_source": "121Q33-request",
+      "claim_ceiling": "Remediation register records past boundary events; not a legal finding",
+      "residue": []
     }
   ],
   "allowed_path_overlaps": [

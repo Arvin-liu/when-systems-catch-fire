@@ -1,0 +1,450 @@
+{
+  "affected_synchronization_surfaces": [
+    "agent.handoff",
+    "ai.start",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "method.result_template",
+    "method.review_template",
+    "method.task_template",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "authority_fingerprint": "6e67d0464f604745b7c07b65cb44ee82a8fce3a0b9e852d741bc31fd456d44c8",
+  "claim_ceiling": "declared repository dependency planning only; not truth or causal proof",
+  "component_decisions": [
+    {
+      "component_id": "accepted_work",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "ai_guide",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "arn",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "candidate_return",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "case_source",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "charter",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "copyright_governance_history_remediation",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "copyright_governance_jurisdiction_registry",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "copyright_governance_material_classification",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "copyright_governance_non_republication_principle",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "copyright_governance_publication_gate_validator",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "copyright_governance_source_rights",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "copyright_governance_tests",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "current_state",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "external_input",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "feedback_routes",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "foundation",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "foundation_data",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "function_os",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "historical_reports",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "ignition_increment",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "incremental_execution",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "iteration",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "iteration_manifest_contract",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "l0",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "l1",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "l2",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "l3",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "l4",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "l5",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "l6",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "licensing",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "mcf",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "no_l7",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "no_totality_proof",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "no_truth_upgrade",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "pages_pipeline",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "point_fire_analysis",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "project_component_registry",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "propagation_calculator",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "propagation_topology",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "provenance_capture",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "psd",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "public_response",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "q12",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "q13",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "q14",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "readme",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "showcase",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "showcase_registry",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "source_pool",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "summary",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "sustainability",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "sync",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "system_map",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "system_map_layout",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "system_map_projection",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "usage",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    },
+    {
+      "component_id": "zhiyuan_method",
+      "decision": "FULL_REBUILD_REQUIRED",
+      "non_impact_proof": null
+    }
+  ],
+  "concurrency_constraints": [
+    "execute in deterministic listed order"
+  ],
+  "execution_order": [],
+  "full_rebuild_components": [
+    "accepted_work",
+    "ai_guide",
+    "arn",
+    "candidate_return",
+    "case_source",
+    "charter",
+    "copyright_governance_history_remediation",
+    "copyright_governance_jurisdiction_registry",
+    "copyright_governance_material_classification",
+    "copyright_governance_non_republication_principle",
+    "copyright_governance_publication_gate_validator",
+    "copyright_governance_source_rights",
+    "copyright_governance_tests",
+    "current_state",
+    "external_input",
+    "feedback_routes",
+    "foundation",
+    "foundation_data",
+    "function_os",
+    "historical_reports",
+    "ignition_increment",
+    "incremental_execution",
+    "iteration",
+    "iteration_manifest_contract",
+    "l0",
+    "l1",
+    "l2",
+    "l3",
+    "l4",
+    "l5",
+    "l6",
+    "licensing",
+    "mcf",
+    "no_l7",
+    "no_totality_proof",
+    "no_truth_upgrade",
+    "pages_pipeline",
+    "point_fire_analysis",
+    "project_component_registry",
+    "propagation_calculator",
+    "propagation_topology",
+    "provenance_capture",
+    "psd",
+    "public_response",
+    "q12",
+    "q13",
+    "q14",
+    "readme",
+    "showcase",
+    "showcase_registry",
+    "source_pool",
+    "summary",
+    "sustainability",
+    "sync",
+    "system_map",
+    "system_map_layout",
+    "system_map_projection",
+    "usage",
+    "zhiyuan_method"
+  ],
+  "full_rebuild_reasons": [
+    "unresolved_or_unknown_path"
+  ],
+  "no_change_components": [],
+  "normalized_change_seeds": [
+    "data/governance/jurisdiction-rule-registry.json",
+    "data/governance/source-rights-registry.json",
+    "data/governance/material-classification.json",
+    "data/governance/history-remediation-register.json",
+    "docs/governance/external-input-non-republication-principle.md",
+    "schemas/governance/jurisdiction-rule-entry.schema.json",
+    "schemas/governance/source-rights-entry.schema.json",
+    "schemas/governance/publication-gate-decision.schema.json",
+    "schemas/governance/external-input-non-republication.schema.json",
+    "schemas/governance/history-remediation-entry.schema.json",
+    "tools/governance/fail_closed_publication_gate.py",
+    "tests/test_q33_governance_infrastructure.py"
+  ],
+  "plan_hash": "4f149995be76c7e9937a76eea9ea92e255cafbb5b62bfd1395764a983ec74b61",
+  "preconditions": [
+    "clean tree or isolated worktree for apply"
+  ],
+  "q32_affected_component_closure": [
+    "copyright_governance_history_remediation",
+    "copyright_governance_jurisdiction_registry",
+    "copyright_governance_material_classification",
+    "copyright_governance_non_republication_principle",
+    "copyright_governance_publication_gate_validator",
+    "copyright_governance_source_rights",
+    "copyright_governance_tests",
+    "pages_pipeline",
+    "system_map_projection"
+  ],
+  "rebuild_components": [],
+  "request_identity": "121Q33",
+  "revalidate_components": [],
+  "rollback_plan": "executor must restore complete repository byte, type, symlink, and mode state or emit a recovery package",
+  "schema_version": "1.0.0",
+  "sync_metadata_components": [],
+  "unresolved_residue": [
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/governance/jurisdiction-rule-entry.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/governance/source-rights-entry.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/governance/publication-gate-decision.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/governance/external-input-non-republication.schema.json",
+      "type": "unmapped_path"
+    },
+    {
+      "message": "Changed path has no canonical component mapping.",
+      "path": "schemas/governance/history-remediation-entry.schema.json",
+      "type": "unmapped_path"
+    }
+  ]
+}

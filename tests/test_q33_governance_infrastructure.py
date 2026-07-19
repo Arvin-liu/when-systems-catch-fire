@@ -95,13 +95,15 @@ def test_material_classification():
     mc = load_json(os.path.join(GOV_DIR, "material-classification.json"))
 
     # Check all 7 classification levels exist (L0 through L6)
-    for lvl in range(7):
-        level_keys = [k for k in mc["classification_levels"] if k.startswith(f"L{lvl}_")]
-        assert len(level_keys) > 0, f"Missing classification level L{lvl}"
+    cs = mc.get("classification_system", {})
+    expected_keys = ["L0_metadata", "L1_fact", "L2_idea_method", "L3_short_quotation", "L4_substantial_text", "L5_image_photograph", "L6_audio_video"]
+    for ek in expected_keys:
+        assert ek in cs, f"Missing classification level {ek}"
 
     # Check material type registry
+    mtr = mc.get("material_type_registry", {})
     for mtype in ["external_input", "ignition_increment", "project_documentation", "registry_data"]:
-        assert mtype in mc["material_type_registry"], f"Missing material type: {mtype}"
+        assert mtype in mtr, f"Missing material type: {mtype}"
 
     return True
 
