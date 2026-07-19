@@ -396,6 +396,11 @@
       "path": "data/operations/synchronization-surfaces.json",
       "generator": "sync_surface_registry",
       "schema": "schemas/operations/synchronization-surfaces.schema.json"
+    },
+    {
+      "path": "reports/operations/121Q32-completion-seal.json",
+      "generator": "iteration_sealer",
+      "schema": "schemas/operations/completion-seal.schema.json"
     }
   ],
   "schema_version": "1.0.0",
