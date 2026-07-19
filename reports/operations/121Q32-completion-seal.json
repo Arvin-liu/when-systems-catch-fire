@@ -59,9 +59,9 @@
   },
   "system_map": {
     "current_version": "0.2.0",
+    "nodes": 48,
+    "edges": 42,
     "groups": 9,
-    "nodes": 41,
-    "edges": 37,
     "l7_added": false
   },
   "boundaries": {
