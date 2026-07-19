@@ -107,7 +107,7 @@
     "full_required_fields_authority": "validator"
   },
   "authored_seed_paths_count": 56,
-  "generated_output_paths_count": 8,
+  "generated_output_paths_count": 26,
   "base_to_head_diff_paths_count": 64,
   "diff_coverage_complete": true
 }
