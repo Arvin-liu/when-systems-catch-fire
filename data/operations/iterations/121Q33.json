@@ -381,13 +381,5 @@
     "Governance decisions require human review per G33",
     "Not yet merged to formal main"
   ],
-  "rollback_strategy": "Restore only registered outputs or emit repository-local recovery material; never cross the repository boundary for rollback",
-  "verification": {
-    "foundation_lean": "pending",
-    "foundation_validators": "pending",
-    "sync_registry_closures": "pending",
-    "typed_change_propagation": "completed",
-    "system_map_generation": "completed",
-    "iteration_sync": "pending"
-  }
+  "rollback_strategy": "Restore only registered outputs or emit repository-local recovery material; never cross the repository boundary for rollback"
 }
