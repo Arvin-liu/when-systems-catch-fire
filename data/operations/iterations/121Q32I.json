@@ -499,7 +499,7 @@
   "propagation_closure": {
     "base_identity": "4097e610eebfc65c739df4fe7d2900161c204a9d",
     "closure_complete": true,
-    "closure_hash": "4233f347d9ac41f4a65febefb324d4431e841c178cd813aa064af333045f6321",
+    "closure_hash": "4868e534063f45e9c1c836f7461342bd307e107f422ecdcbbd90c42488af036b",
     "closure_path": "data/operations/propagation/121Q32I-closure.json",
     "component_decisions": [
       {
@@ -1002,7 +1002,8 @@
       "topology_enables_calculator",
       "topology_generates_projection"
     ],
-    "unresolved_residue": []
+    "unresolved_residue": [],
+    "residue_count": 0
   },
   "q29r": {
     "modified": false,
