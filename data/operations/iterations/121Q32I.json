@@ -1002,8 +1002,7 @@
       "topology_enables_calculator",
       "topology_generates_projection"
     ],
-    "unresolved_residue": [],
-    "residue_count": 0
+    "unresolved_residue": []
   },
   "q29r": {
     "modified": false,
