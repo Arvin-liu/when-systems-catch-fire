@@ -1001,9 +1001,7 @@
       "sync_requires_readme",
       "topology_enables_calculator",
       "topology_generates_projection"
-    ],
-    "residue": [],
-    "residue_count": 0
+    ]
   },
   "q29r": {
     "modified": false,
