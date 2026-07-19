@@ -83,7 +83,46 @@
   ],
   "receipt_location": "agent-results/IGNITION-20260719-121Q33-FORWARD-RESTORE-STABILIZATION-RESULT.md",
   "commit_chain": [
-    "58bdf0606c628956091f3935b4d9c0b05cc5f93a"
+    {
+      "commit": "e3227aee",
+      "phase": "A"
+    },
+    {
+      "commit": "402f9f04",
+      "phase": "B"
+    },
+    {
+      "commit": "1f5b92d4",
+      "phase": "A1"
+    },
+    {
+      "commit": "c41c905d",
+      "phase": "B1"
+    },
+    {
+      "commit": "58bdf060",
+      "phase": "C"
+    },
+    {
+      "commit": "c1a0e921",
+      "phase": "D1"
+    },
+    {
+      "commit": "8dbba3fe",
+      "phase": "D2"
+    },
+    {
+      "commit": "59aa3259",
+      "phase": "D3"
+    },
+    {
+      "commit": "86b2ec84",
+      "phase": "D4"
+    },
+    {
+      "commit": "37ace32d",
+      "phase": "ACCEPTED_CANDIDATE"
+    }
   ],
   "completion_seal_path": "reports/operations/121Q33-completion-seal.json",
   "completion_state": {
