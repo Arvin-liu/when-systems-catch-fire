@@ -172,12 +172,11 @@
     "version": "1.0.0"
   },
   "system_map": {
-    "candidate_version": null,
     "current_version": "0.3.0",
-    "edges": 37,
+    "nodes": 48,
+    "edges": 42,
     "groups": 9,
-    "l7_added": false,
-    "nodes": 41
+    "l7_added": false
   },
   "task_id": "121Q32I"
 }
