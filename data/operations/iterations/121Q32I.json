@@ -1071,7 +1071,7 @@
   "self_hosting": {
     "decision": "FULL_REBUILD_REQUIRED",
     "demonstration_path": "reports/operations/121Q32I-incremental-execution-demonstration.json",
-    "plan_hash": "3a09efdfd060393519e73a072cb867b41f9b2b81ff9c9c46e7e152a09dc1fe56"
+    "plan_hash": "1fc5f11795bc0e5614110bec8164b62b7871c34951d96cbedad0a12a3854"
   },
   "state_transition": {
     "changed_dimensions": [
