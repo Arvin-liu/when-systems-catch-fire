@@ -437,7 +437,8 @@
         "OPERATIONS_METHOD"
       ],
       "allowed_decisions": [
-        "CHANGE"
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON"
       ],
       "validation_mode": "repository_schema_and_semantic_validation",
       "blocks": [
@@ -464,7 +465,8 @@
         "OPERATIONS_METHOD"
       ],
       "allowed_decisions": [
-        "CHANGE"
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON"
       ],
       "validation_mode": "repository_semantic_validation",
       "blocks": [
@@ -492,7 +494,8 @@
         "OPERATIONS_METHOD"
       ],
       "allowed_decisions": [
-        "CHANGE"
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON"
       ],
       "validation_mode": "repository_semantic_validation",
       "blocks": [
@@ -519,7 +522,8 @@
         "OPERATIONS_METHOD"
       ],
       "allowed_decisions": [
-        "CHANGE"
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON"
       ],
       "validation_mode": "repository_semantic_validation",
       "blocks": [

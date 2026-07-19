@@ -1,11 +1,11 @@
 # 121Q33 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `d0a7ee051574cabc919a9718fd86f85e3bedaf0e3c15109d3bac72ffd188d6e9`
+- Closure hash: `09d6583f1854f3d81d5fc30fc001482182f1c7f1bd480031bd7964e1b7299e50`
 - Fixpoint iterations: `3`
 - Seeds: `copyright_governance_history_remediation, copyright_governance_jurisdiction_registry, copyright_governance_material_classification, copyright_governance_non_republication_principle, copyright_governance_publication_gate_validator, copyright_governance_source_rights, copyright_governance_tests`
 - Resolved components: `27`
-- Registry-derived surfaces: `16`
+- Registry-derived surfaces: `17`
 - System-map decision: `CHANGE`
 
 ## Typed paths

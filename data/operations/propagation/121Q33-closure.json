@@ -138,16 +138,6 @@
   ],
   "actual_surface_decisions": [
     {
-      "decision": "CHANGE",
-      "item_id": "ITERATION",
-      "reason": "Record Q33 iteration as candidate"
-    },
-    {
-      "decision": "CHANGE",
-      "item_id": "README",
-      "reason": "Add governance capabilities to README"
-    },
-    {
       "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "agent.handoff",
       "reason": "Q33 governance changes do not affect this surface; no modification needed."
@@ -156,11 +146,6 @@
       "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "ai.start",
       "reason": "Q33 governance changes do not affect this surface; no modification needed."
-    },
-    {
-      "decision": "CHANGE",
-      "item_id": "ai_assistant_usage_reference",
-      "reason": "Add governance policy to AI usage reference"
     },
     {
       "decision": "NO_CHANGE_WITH_REASON",
@@ -198,16 +183,6 @@
       "reason": "Q33 governance changes do not affect this surface; no modification needed."
     },
     {
-      "decision": "CHANGE",
-      "item_id": "human_front_door",
-      "reason": "Update capability list with Q33 governance"
-    },
-    {
-      "decision": "CHANGE",
-      "item_id": "licensing",
-      "reason": "No license change but needs metadata update for governance docs"
-    },
-    {
       "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "machine.llms",
       "reason": "Q33 governance changes do not affect this surface; no modification needed."
@@ -233,11 +208,6 @@
       "reason": "Q33 governance changes do not affect this surface; no modification needed."
     },
     {
-      "decision": "CHANGE",
-      "item_id": "project_current_state",
-      "reason": "Q33 adds governance surface"
-    },
-    {
       "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "release.changelog",
       "reason": "Q33 governance changes do not affect this surface; no modification needed."
@@ -249,14 +219,14 @@
     },
     {
       "decision": "CHANGE",
-      "item_id": "system_map_projection",
-      "reason": "New governance components in map"
+      "item_id": "copyright_governance",
+      "reason": "Q33 introduces the copyright_governance synchronization surface (added to the registry in this iteration) together with its underlying governance components and policies; the surface is newly established by this iteration."
     }
   ],
   "base_identity": "f54577a9084d0ac6e374341d96836c5d52bc3b8c",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "d0a7ee051574cabc919a9718fd86f85e3bedaf0e3c15109d3bac72ffd188d6e9",
+  "closure_hash": "09d6583f1854f3d81d5fc30fc001482182f1c7f1bd480031bd7964e1b7299e50",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 3,
@@ -279,7 +249,8 @@
     "method.review_template",
     "method.task_template",
     "release.changelog",
-    "release.versioning"
+    "release.versioning",
+    "copyright_governance"
   ],
   "required_component_decisions": [
     "accepted_work",

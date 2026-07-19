@@ -63,7 +63,8 @@
     "schemas/governance/source-rights-entry.schema.json",
     "schemas/governance/publication-gate-decision.schema.json",
     "schemas/governance/external-input-non-republication.schema.json",
-    "schemas/governance/history-remediation-entry.schema.json"
+    "schemas/governance/history-remediation-entry.schema.json",
+    "data/governance/"
   ],
   "validation": {
     "external_exact_head_policy": {
@@ -147,7 +148,7 @@
   "completion_seal_path": "reports/operations/121Q33-completion-seal.json",
   "completion_state": {
     "external_synchronization_attested": false,
-    "external_synchronization_required": false,
+    "external_synchronization_required": true,
     "implementation_complete": false,
     "project_synchronization_complete": false,
     "repository_synchronization_complete": true
@@ -175,26 +176,6 @@
     "registry_version": "1.2.0",
     "surface_decisions": [
       {
-        "surface_id": "ITERATION",
-        "decision": "CHANGE",
-        "reason": "Record Q33 iteration as candidate",
-        "evidence_refs": [
-          "data/operations/propagation/121Q33-closure.json"
-        ],
-        "validation_mode": "repository_semantic_validation",
-        "derived_from": []
-      },
-      {
-        "surface_id": "README",
-        "decision": "CHANGE",
-        "reason": "Add governance capabilities to README",
-        "evidence_refs": [
-          "data/operations/propagation/121Q33-closure.json"
-        ],
-        "validation_mode": "repository_semantic_validation",
-        "derived_from": []
-      },
-      {
         "surface_id": "agent.handoff",
         "decision": "NO_CHANGE_WITH_REASON",
         "reason": "Q33 governance changes do not affect this surface; no modification needed.",
@@ -208,16 +189,6 @@
         "surface_id": "ai.start",
         "decision": "NO_CHANGE_WITH_REASON",
         "reason": "Q33 governance changes do not affect this surface; no modification needed.",
-        "evidence_refs": [
-          "data/operations/propagation/121Q33-closure.json"
-        ],
-        "validation_mode": "repository_semantic_validation",
-        "derived_from": []
-      },
-      {
-        "surface_id": "ai_assistant_usage_reference",
-        "decision": "CHANGE",
-        "reason": "Add governance policy to AI usage reference",
         "evidence_refs": [
           "data/operations/propagation/121Q33-closure.json"
         ],
@@ -300,26 +271,6 @@
         "derived_from": []
       },
       {
-        "surface_id": "human_front_door",
-        "decision": "CHANGE",
-        "reason": "Update capability list with Q33 governance",
-        "evidence_refs": [
-          "data/operations/propagation/121Q33-closure.json"
-        ],
-        "validation_mode": "repository_semantic_validation",
-        "derived_from": []
-      },
-      {
-        "surface_id": "licensing",
-        "decision": "CHANGE",
-        "reason": "No license change but needs metadata update for governance docs",
-        "evidence_refs": [
-          "data/operations/propagation/121Q33-closure.json"
-        ],
-        "validation_mode": "repository_semantic_validation",
-        "derived_from": []
-      },
-      {
         "surface_id": "machine.llms",
         "decision": "NO_CHANGE_WITH_REASON",
         "reason": "Q33 governance changes do not affect this surface; no modification needed.",
@@ -376,16 +327,6 @@
         ]
       },
       {
-        "surface_id": "project_current_state",
-        "decision": "CHANGE",
-        "reason": "Q33 adds governance surface",
-        "evidence_refs": [
-          "data/operations/propagation/121Q33-closure.json"
-        ],
-        "validation_mode": "repository_semantic_validation",
-        "derived_from": []
-      },
-      {
         "surface_id": "release.changelog",
         "decision": "NO_CHANGE_WITH_REASON",
         "reason": "Q33 governance changes do not affect this surface; no modification needed.",
@@ -406,17 +347,32 @@
         "derived_from": []
       },
       {
-        "surface_id": "system_map_projection",
+        "surface_id": "copyright_governance",
         "decision": "CHANGE",
-        "reason": "New governance components in map",
+        "reason": "Q33 introduces the copyright_governance synchronization surface (added to the registry in this iteration) together with its underlying governance components and policies; the surface is newly established by this iteration.",
         "evidence_refs": [
           "data/operations/propagation/121Q33-closure.json"
         ],
-        "validation_mode": "repository_semantic_validation",
-        "derived_from": []
+        "validation_mode": "repository_build_validation",
+        "derived_from": [
+          "method.iteration",
+          "agent.handoff"
+        ]
       }
     ],
-    "external_attestations": [],
+    "external_attestations": [
+      {
+        "surface_id": "external.pages_homepage",
+        "stage": "post_merge",
+        "status": "pending",
+        "authority": "pull_request_body_and_1111_receipt",
+        "evidence_refs": [
+          "external:pr_body:63",
+          "external:1111_receipt:V14-external-attestation-pending"
+        ],
+        "live_state_locally_verifiable": false
+      }
+    ],
     "unresolved_residue": [],
     "external_verification_policy": "not_applicable_governance_only",
     "live_external_surfaces_verified": false
@@ -427,7 +383,7 @@
     "impact_report_path": "data/operations/propagation/121Q33-impact-report.md",
     "system_map_delta_path": "data/operations/propagation/121Q33-system-map-delta.json",
     "residue_path": "data/operations/propagation/121Q33-residue.json",
-    "closure_hash": "d0a7ee051574cabc919a9718fd86f85e3bedaf0e3c15109d3bac72ffd188d6e9",
+    "closure_hash": "09d6583f1854f3d81d5fc30fc001482182f1c7f1bd480031bd7964e1b7299e50",
     "base_identity": "f54577a9084d0ac6e374341d96836c5d52bc3b8c",
     "head_identity": "f54577a9084d0ac6e374341d96836c5d52bc3b8c",
     "seed_paths": [
@@ -621,16 +577,6 @@
     ],
     "surface_decisions": [
       {
-        "decision": "CHANGE",
-        "item_id": "ITERATION",
-        "reason": "Record Q33 iteration as candidate"
-      },
-      {
-        "decision": "CHANGE",
-        "item_id": "README",
-        "reason": "Add governance capabilities to README"
-      },
-      {
         "decision": "NO_CHANGE_WITH_REASON",
         "item_id": "agent.handoff",
         "reason": "Q33 governance changes do not affect this surface; no modification needed."
@@ -639,11 +585,6 @@
         "decision": "NO_CHANGE_WITH_REASON",
         "item_id": "ai.start",
         "reason": "Q33 governance changes do not affect this surface; no modification needed."
-      },
-      {
-        "decision": "CHANGE",
-        "item_id": "ai_assistant_usage_reference",
-        "reason": "Add governance policy to AI usage reference"
       },
       {
         "decision": "NO_CHANGE_WITH_REASON",
@@ -681,16 +622,6 @@
         "reason": "Q33 governance changes do not affect this surface; no modification needed."
       },
       {
-        "decision": "CHANGE",
-        "item_id": "human_front_door",
-        "reason": "Update capability list with Q33 governance"
-      },
-      {
-        "decision": "CHANGE",
-        "item_id": "licensing",
-        "reason": "No license change but needs metadata update for governance docs"
-      },
-      {
         "decision": "NO_CHANGE_WITH_REASON",
         "item_id": "machine.llms",
         "reason": "Q33 governance changes do not affect this surface; no modification needed."
@@ -716,11 +647,6 @@
         "reason": "Q33 governance changes do not affect this surface; no modification needed."
       },
       {
-        "decision": "CHANGE",
-        "item_id": "project_current_state",
-        "reason": "Q33 adds governance surface"
-      },
-      {
         "decision": "NO_CHANGE_WITH_REASON",
         "item_id": "release.changelog",
         "reason": "Q33 governance changes do not affect this surface; no modification needed."
@@ -732,8 +658,8 @@
       },
       {
         "decision": "CHANGE",
-        "item_id": "system_map_projection",
-        "reason": "New governance components in map"
+        "item_id": "copyright_governance",
+        "reason": "Q33 introduces the copyright_governance synchronization surface (added to the registry in this iteration) together with its underlying governance components and policies; the surface is newly established by this iteration."
       }
     ],
     "registry_derived_surfaces": [
@@ -752,7 +678,8 @@
       "method.review_template",
       "method.task_template",
       "release.changelog",
-      "release.versioning"
+      "release.versioning",
+      "copyright_governance"
     ],
     "typed_path_ids": [
       "copyright_gov_to_publication_chain",
