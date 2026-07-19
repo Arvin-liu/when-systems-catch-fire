@@ -18,6 +18,7 @@
   "changed_paths": [
     ".github/workflows/foundation-validation.yml",
     ".github/workflows/pages.yml",
+    "AGENTS.md",
     "AI-HANDOFF.md",
     "AI-START-HERE.md",
     "CHANGELOG.md",
@@ -60,6 +61,7 @@
     "tests/test_component_profiles.py",
     "tests/test_diff_coverage_gate.py",
     "tests/test_generated_output_authority.py",
+    "tests/test_human_front_door.py",
     "tests/test_incremental_execution.py",
     "tests/test_incremental_execution_defensive_rejections.py",
     "tests/test_incremental_execution_validator.py",
@@ -76,6 +78,7 @@
     "tools/operations/validate_incremental_execution.py",
     "tools/operations/validate_phase_d_closeout.py",
     "tools/operations/validate_phase_e_candidate.py",
+    "tools/validate_human_front_door.py",
     "tools/validate_iteration_sync.py"
   ],
   "component_decisions": [

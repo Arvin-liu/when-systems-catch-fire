@@ -346,7 +346,7 @@
   "base_identity": "4097e610eebfc65c739df4fe7d2900161c204a9d",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "297c349109a6e06bb545399d3a3af3940ae8f04420a22f22a0232ee57e9a774e",
+  "closure_hash": "e392ebef31fc01842eaff1520c1c6739480d1c3d39a07729818968dfdb85f50f",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -448,6 +448,7 @@
   "seed_paths": [
     ".github/workflows/foundation-validation.yml",
     ".github/workflows/pages.yml",
+    "AGENTS.md",
     "AI-HANDOFF.md",
     "AI-START-HERE.md",
     "CHANGELOG.md",
@@ -490,6 +491,7 @@
     "tests/test_component_profiles.py",
     "tests/test_diff_coverage_gate.py",
     "tests/test_generated_output_authority.py",
+    "tests/test_human_front_door.py",
     "tests/test_incremental_execution.py",
     "tests/test_incremental_execution_defensive_rejections.py",
     "tests/test_incremental_execution_validator.py",
@@ -506,6 +508,7 @@
     "tools/operations/validate_incremental_execution.py",
     "tools/operations/validate_phase_d_closeout.py",
     "tools/operations/validate_phase_e_candidate.py",
+    "tools/validate_human_front_door.py",
     "tools/validate_iteration_sync.py"
   ],
   "system_map_impact": {

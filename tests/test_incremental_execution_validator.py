@@ -42,25 +42,25 @@ class UnifiedIncrementalValidatorAcceptance(unittest.TestCase):
             "schema_version": "1.0.0",
             "profiles": [
                 {
-                    "component_id": "alpha", "execution_kind": "automatic", "execution_capability": "automatic",
+                    "component_id": "alpha", "execution_kind": "automatic", "execution_capability": "automatic", "validation_capability": "local_automatic_validation",
                     "authoritative_inputs": ["input.txt"], "generated_outputs": ["out.txt"],
                     "input_fingerprint_policy": {"kind": "sha256_sorted_file_set", "paths": ["input.txt"]},
                     "output_fingerprint_policy": {"kind": "sha256_single_target", "target": "out.txt"},
                     "producer_argv": [sys.executable, "-c", "0"], "validator_argv": [sys.executable, "-c", "0"],
                 },
                 {
-                    "component_id": "beta", "execution_kind": "manual", "execution_capability": "manual",
+                    "component_id": "beta", "execution_kind": "manual", "execution_capability": "manual", "validation_capability": "manual_review",
                     "authoritative_inputs": ["input.txt"], "generated_outputs": [],
                     "input_fingerprint_policy": {"kind": "sha256_sorted_file_set", "paths": ["input.txt"]},
                     "output_fingerprint_policy": {"kind": "sha256_single_target", "target": "input.txt"},
-                    "validator_argv": [sys.executable, "-c", "0"],
+                    "validation_authority": {"authority": "human", "required_evidence": ["review"], "evidence_boundary": "fixture"},
                 },
                 {
-                    "component_id": "gamma", "execution_kind": "attestation", "execution_capability": "external_attestation",
+                    "component_id": "gamma", "execution_kind": "attestation", "execution_capability": "external_attestation", "validation_capability": "external_attestation",
                     "authoritative_inputs": ["input.txt"], "generated_outputs": [],
                     "input_fingerprint_policy": {"kind": "sha256_sorted_file_set", "paths": ["input.txt"]},
                     "output_fingerprint_policy": {"kind": "sha256_single_target", "target": "input.txt"},
-                    "validator_argv": [sys.executable, "-c", "0"],
+                    "validation_authority": {"authority": "external", "required_evidence": ["receipt"], "evidence_boundary": "fixture"},
                 },
             ],
         }

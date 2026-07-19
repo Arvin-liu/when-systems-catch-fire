@@ -182,6 +182,31 @@ def _validate_profiles(
                     f"output {raw!r} is not registered to component {cid!r}",
                 )
         kind = profile.get("execution_capability", profile.get("execution_kind"))
+        validation = profile.get("validation_capability")
+        expected_validation = {"automatic":"local_automatic_validation", "validation_only":"local_validation_only", "manual":"manual_review", "external_attestation":"external_attestation"}.get(kind)
+        if validation != expected_validation:
+            c.add("E_VALIDATION_CAPABILITY", f"profiles.profiles[{index}].validation_capability", f"{kind!r} requires {expected_validation!r}")
+        argv = profile.get("validator_argv")
+        if validation in {"local_automatic_validation", "local_validation_only"}:
+            if not isinstance(argv, list) or not argv:
+                c.add("E_VALIDATOR_CONTRACT", f"profiles.profiles[{index}].validator_argv", "local validation requires explicit argv")
+            elif argv[:2] == ["python3", "tools/validate_protocol_canonical.py"]:
+                c.add("E_VALIDATOR_CONTRACT", f"profiles.profiles[{index}].validator_argv", "placeholder canonical validator is forbidden")
+            elif argv[:3] == ["python3", "-m", "unittest"]:
+                if len(argv) < 4:
+                    c.add("E_VALIDATOR_CONTRACT", f"profiles.profiles[{index}].validator_argv", "unittest validator requires targets")
+            elif argv[0] == "python3" and len(argv) >= 2 and isinstance(argv[1], str) and argv[1].endswith(".py"):
+                script = root / argv[1]
+                if not script.is_file():
+                    c.add("E_VALIDATOR_CONTRACT", f"profiles.profiles[{index}].validator_argv", f"validator script is missing: {argv[1]}")
+            elif len(argv) >= 3 and argv[1] == "-c" and isinstance(argv[2], str) and argv[2].strip():
+                pass
+            else:
+                c.add("E_VALIDATOR_CONTRACT", f"profiles.profiles[{index}].validator_argv", "unsupported or incomplete local validator command")
+        elif argv is not None:
+            c.add("E_VALIDATOR_CONTRACT", f"profiles.profiles[{index}].validator_argv", "manual/external validation cannot invoke a local validator")
+        elif not isinstance(profile.get("validation_authority"), dict):
+            c.add("E_VALIDATOR_AUTHORITY", f"profiles.profiles[{index}].validation_authority", "manual/external validation requires explicit authority and evidence boundary")
         if profile.get("execution_cwd", ".") != ".":
             c.add("E_PROFILE_CWD", f"profiles.profiles[{index}].execution_cwd", "execution cwd must be repository root")
         if kind == "automatic" and (not profile.get("producer_argv") or not profile.get("generated_outputs")):

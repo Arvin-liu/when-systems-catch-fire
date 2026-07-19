@@ -50,7 +50,7 @@
     "merged": false,
     "state": "candidate_only"
   },
-  "markdown_digest": "b05fa0780edcf270ec0a721d7c4ae3ed9837e2a082e8d83e42bf611c1996365b",
+  "markdown_digest": "e8d6b175b0b47802966ff6f2925193451918e55cda6ba9f90e48a0e01e57a3c6",
   "markdown_report": "reports/operations/121Q32I-phase-d-validation-closeout.md",
   "network_and_third_party": {
     "credential_operations": "NONE",
@@ -125,7 +125,7 @@
     "closure_hash": "57b18c57dcefd521e9399be167f511017de785d8971af93177f25df8926ab7f1",
     "production_check": "PASS"
   },
-  "report_digest": "a40276b5cacd249c4c8f266addb8f945ab56e805f02a243c0e16b045587ed723",
+  "report_digest": "548a82322428ca38096d6e9a12c72faaa732636ccb72bc4b3b79daed353dd248",
   "schema_version": "1.0.0",
   "stable_error_code_families": [
     "E_PROFILE_*",
@@ -144,8 +144,8 @@
   "task_id": "121Q32I-D4",
   "tests": {
     "aggregate": {
-      "count": 114,
-      "passed": 114,
+      "count": 116,
+      "passed": 116,
       "result": "PASS"
     },
     "generated_output_authority": {
@@ -154,8 +154,8 @@
       "result": "PASS"
     },
     "phase_a_profile": {
-      "count": 3,
-      "passed": 3,
+      "count": 5,
+      "passed": 5,
       "result": "PASS"
     },
     "phase_b_planner": {

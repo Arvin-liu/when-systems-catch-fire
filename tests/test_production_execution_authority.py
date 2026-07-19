@@ -29,6 +29,27 @@ def copy_production_authority(destination: Path) -> None:
 
 
 class ProductionProfileProbe(unittest.TestCase):
+    def test_production_capability_contract_and_all_local_validators_run(self):
+        profiles = json.loads((ROOT / "data/operations/component-execution-profiles.json").read_text())["profiles"]
+        self.assertEqual(len(profiles), 52)
+        self.assertEqual({k: sum(p["execution_capability"] == k for p in profiles) for k in ("automatic", "validation_only", "manual", "external_attestation")}, {"automatic": 1, "validation_only": 7, "manual": 44, "external_attestation": 0})
+        self.assertEqual({k: sum(p["validation_capability"] == k for p in profiles) for k in ("local_automatic_validation", "local_validation_only", "manual_review", "external_attestation")}, {"local_automatic_validation": 1, "local_validation_only": 7, "manual_review": 44, "external_attestation": 0})
+        local = [p for p in profiles if "validator_argv" in p]
+        self.assertEqual(len(local), 8)
+        self.assertFalse(any(p.get("validator_argv") == ["python3", "tools/validate_protocol_canonical.py", "--check"] for p in profiles))
+        self.assertTrue(all("validator_argv" not in p for p in profiles if p["validation_capability"] in {"manual_review", "external_attestation"}))
+        with tempfile.TemporaryDirectory() as tmp:
+            checkout = Path(tmp) / "checkout"
+            subprocess.run(["git", "worktree", "add", "--detach", str(checkout), "HEAD"], cwd=ROOT, check=True, capture_output=True, text=True)
+            try:
+                shutil.copytree(ROOT, checkout, dirs_exist_ok=True, ignore=shutil.ignore_patterns(".git", ".cache", "__pycache__", "*.pyc"), symlinks=True)
+                for p in local:
+                    with self.subTest(component=p["component_id"]):
+                        completed = subprocess.run(p["validator_argv"], cwd=checkout, text=True, capture_output=True)
+                        self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
+            finally:
+                subprocess.run(["git", "worktree", "remove", "--force", str(checkout)], cwd=ROOT, check=True, capture_output=True, text=True)
+
     def test_production_profiles_materialize_only_declared_outputs(self):
         profiles = json.loads((ROOT / "data/operations/component-execution-profiles.json").read_text())
         automatic = [p for p in profiles["profiles"] if p["execution_capability"] == "automatic"]
@@ -73,7 +94,7 @@ class CompleteRollbackProbe(unittest.TestCase):
         os.chmod(self.repo / "ordinary.txt", 0o640)
         self.registry = {"components":[{"component_id":"alpha","path_patterns":["input.txt","out.txt"]}]}
         self.topology = {"relations":[]}
-        self.profile = {"schema_version":"1.0.0","profiles":[{"component_id":"alpha","execution_capability":"automatic","execution_kind":"automatic","execution_cwd":".","authoritative_inputs":["input.txt"],"generated_outputs":["out.txt"],"input_fingerprint_policy":{"kind":"sha256_sorted_file_set","paths":["input.txt"]},"output_fingerprint_policy":{"kind":"sha256_declared_outputs","target":"out.txt"},"producer_argv":[sys.executable,"-c","raise SystemExit(7)"],"validator_argv":[sys.executable,"-c","raise SystemExit(0)"],"rollback_policy":"restore_registered_outputs_or_emit_recovery_package"}]}
+        self.profile = {"schema_version":"1.0.0","profiles":[{"component_id":"alpha","execution_capability":"automatic","validation_capability":"local_automatic_validation","execution_kind":"automatic","execution_cwd":".","authoritative_inputs":["input.txt"],"generated_outputs":["out.txt"],"input_fingerprint_policy":{"kind":"sha256_sorted_file_set","paths":["input.txt"]},"output_fingerprint_policy":{"kind":"sha256_declared_outputs","target":"out.txt"},"producer_argv":[sys.executable,"-c","raise SystemExit(7)"],"validator_argv":[sys.executable,"-c","raise SystemExit(0)"],"rollback_policy":"restore_registered_outputs_or_emit_recovery_package"}]}
         for name, value in (("project-components.json",self.registry),("change-propagation-topology.json",self.topology),("component-execution-profiles.json",self.profile)):
             (self.repo / "data/operations" / name).write_text(json.dumps(value)+"\n")
         self.plan = {"schema_version":"1.0.0","request_identity":"rollback","normalized_change_seeds":["input.txt"],"q32_affected_component_closure":["alpha"],"affected_synchronization_surfaces":[],"component_decisions":[{"component_id":"alpha","decision":"REBUILD","non_impact_proof":None}],"full_rebuild_reasons":[],"unresolved_residue":[],"execution_order":["alpha"],"claim_ceiling":"fixture"}

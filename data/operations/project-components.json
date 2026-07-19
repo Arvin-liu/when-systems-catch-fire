@@ -33,6 +33,7 @@
         "docs/ai-assistant-usage-reference.md",
         "AI-START-HERE.md",
         "AI-HANDOFF.md",
+        "AGENTS.md",
         "llms.txt"
       ],
       "authority": "canonical",

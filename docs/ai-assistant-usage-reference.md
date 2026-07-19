@@ -1,5 +1,7 @@
 # AI 助手使用参考
 
+版本事实：当前迭代方法为 `1.2.0`，历史方法为 `1.1.0`，Q32I `1.3.0` 是未独立接受、未 merge、非 Current 的 Draft candidate；当前系统图为 `0.2.0`，Draft candidate map 为 `0.3.0`。Q32I 中 execution capability 与 validation capability 必须分离，manual/external 不得调用本地 validator。
+
 这页给第一次接触点火项目的人使用。你不必先读完整仓库，可以先把下面的提示词复制给自己常用的 AI 助手，让它帮你做第一轮阅读。
 
 可任选一款你日常使用的 AI 助手：

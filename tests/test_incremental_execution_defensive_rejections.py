@@ -78,6 +78,7 @@ class PhaseD3DefensiveRejections(unittest.TestCase):
             "component_id": "alpha",
             "execution_kind": "automatic",
             "execution_capability": "automatic",
+            "validation_capability": "local_automatic_validation",
             "authoritative_inputs": ["input.txt"],
             "generated_outputs": ["out.txt"],
             "input_fingerprint_policy": {"kind": "sha256_sorted_file_set", "paths": ["input.txt"]},

@@ -1,1 +1,43 @@
-{"policy_version":"2.0.0","purpose":"Authority classification is independent from local execution capability. Automatic is allowed only for explicit deterministic producers that materialize every declared output.","component_policies":{"pages_pipeline":{"execution_capability":"validation_only","authoritative_inputs":[".github/workflows/pages.yml","pages/","tests/test_pages_deploy_gate.py","tests/test_tracked_symlink_gate.py"],"generated_outputs":[],"validator_argv":["python3","-m","unittest","tests.test_pages_deploy_gate","tests.test_tracked_symlink_gate"]},"propagation_calculator":{"execution_capability":"validation_only","authoritative_inputs":["tools/operations/compute_change_propagation.py","schemas/operations/change-propagation-request.schema.json","schemas/operations/change-propagation-closure.schema.json","tests/test_change_propagation.py","tests/test_diff_coverage_gate.py","data/operations/propagation/"],"generated_outputs":[],"validator_argv":["python3","-m","unittest","tests.test_change_propagation","tests.test_diff_coverage_gate"]},"system_map_projection":{"execution_capability":"automatic","authoritative_inputs":["data/operations/project-components.json","data/operations/change-propagation-topology.json","data/architecture/interactive-system-map-layout.json"],"generated_outputs":["data/architecture/interactive-system-map.json","pages/generated/ignition-system-map.svg"],"producer_argv":["python3","tools/generate_interactive_system_map.py"],"validator_argv":["python3","tools/generate_interactive_system_map.py","--check"]}},"validator_argv":["python3","tools/validate_protocol_canonical.py","--check"]}
+{
+  "policy_version": "2.1.0",
+  "purpose": "Execution capability and validation capability are independent. Automatic execution is allowed only for explicit deterministic producers; local validation is allowed only for complete, component-appropriate commands. Manual and external validation never receive a local validator argv.",
+  "component_policies": {
+    "pages_pipeline": {
+      "execution_capability": "validation_only",
+      "validation_capability": "local_validation_only",
+      "authoritative_inputs": [".github/workflows/pages.yml", "pages/", "tests/test_pages_deploy_gate.py", "tests/test_tracked_symlink_gate.py"],
+      "generated_outputs": [],
+      "validator_argv": ["python3", "-m", "unittest", "tests.test_pages_deploy_gate", "tests.test_tracked_symlink_gate"]
+    },
+    "propagation_calculator": {
+      "execution_capability": "validation_only",
+      "validation_capability": "local_validation_only",
+      "authoritative_inputs": ["tools/operations/compute_change_propagation.py", "schemas/operations/change-propagation-request.schema.json", "schemas/operations/change-propagation-closure.schema.json", "tests/test_change_propagation.py", "tests/test_diff_coverage_gate.py", "data/operations/propagation/"],
+      "generated_outputs": [],
+      "validator_argv": ["python3", "-m", "unittest", "tests.test_change_propagation", "tests.test_diff_coverage_gate"]
+    },
+    "system_map_projection": {
+      "execution_capability": "automatic",
+      "validation_capability": "local_automatic_validation",
+      "authoritative_inputs": ["data/operations/project-components.json", "data/operations/change-propagation-topology.json", "data/architecture/interactive-system-map-layout.json"],
+      "generated_outputs": ["data/architecture/interactive-system-map.json", "pages/generated/ignition-system-map.svg"],
+      "producer_argv": ["python3", "tools/generate_interactive_system_map.py"],
+      "validator_argv": ["python3", "tools/generate_interactive_system_map.py", "--check"]
+    },
+    "foundation_data": {"execution_capability": "validation_only", "validation_capability": "local_validation_only", "validator_argv": ["python3", "tools/foundation/validate_foundation.py"]},
+    "no_l7": {"execution_capability": "validation_only", "validation_capability": "local_validation_only", "validator_argv": ["python3", "tools/validate_human_front_door.py"]},
+    "no_totality_proof": {"execution_capability": "validation_only", "validation_capability": "local_validation_only", "validator_argv": ["python3", "tools/validate_human_front_door.py"]},
+    "no_truth_upgrade": {"execution_capability": "validation_only", "validation_capability": "local_validation_only", "validator_argv": ["python3", "tools/validate_human_front_door.py"]},
+    "system_map": {"execution_capability": "validation_only", "validation_capability": "local_validation_only", "validator_argv": ["python3", "tools/generate_interactive_system_map.py", "--check"]}
+  },
+  "manual_validation_authority": {
+    "authority": "responsible_human_review",
+    "required_evidence": ["source inspection", "component-scoped review record", "claim-ceiling acknowledgement"],
+    "evidence_boundary": "No local subprocess is authoritative for authored or declarative manual judgment."
+  },
+  "external_validation_authority": {
+    "authority": "named_external_attestation",
+    "required_evidence": ["external receipt", "exact subject identity", "scope and claim ceiling"],
+    "evidence_boundary": "External attestation is recorded, never simulated by a local subprocess."
+  }
+}

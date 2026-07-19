@@ -92,8 +92,8 @@
     }
   },
   "phase_d_closeout": {
-    "report_digest": "a40276b5cacd249c4c8f266addb8f945ab56e805f02a243c0e16b045587ed723",
-    "tests": 114
+    "report_digest": "548a82322428ca38096d6e9a12c72faaa732636ccb72bc4b3b79daed353dd248",
+    "tests": 116
   },
   "phase_e_evidence": {
     "artifact": "PASS_ON_PREDECESSOR_EXACT_HEAD",
@@ -145,19 +145,19 @@
     }
   },
   "propagation_closure": {
-    "closure_hash": "297c349109a6e06bb545399d3a3af3940ae8f04420a22f22a0232ee57e9a774e",
+    "closure_hash": "e392ebef31fc01842eaff1520c1c6739480d1c3d39a07729818968dfdb85f50f",
     "closure_path": "data/operations/propagation/121Q32I-closure.json",
     "complete": true,
     "unresolved_residue": []
   },
-  "propagation_closure_hash": "297c349109a6e06bb545399d3a3af3940ae8f04420a22f22a0232ee57e9a774e",
+  "propagation_closure_hash": "e392ebef31fc01842eaff1520c1c6739480d1c3d39a07729818968dfdb85f50f",
   "q29r": {
     "modified": false,
     "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
   },
   "self_hosting": {
     "decision": "FULL_REBUILD_REQUIRED",
-    "plan_hash": "18510d9e748f3438516e7bb439e2d65432005216d28f18f26e0858911b4b23d9",
+    "plan_hash": "786993dc4731ac62882ba3c9adf09ca6eace5537c086a236d008eff04e2e3df5",
     "validator": "PASS"
   },
   "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",

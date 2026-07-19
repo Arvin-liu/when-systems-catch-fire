@@ -18,6 +18,8 @@ The production entrypoints are:
 - `tools/operations/validate_incremental_execution.py`;
 - `tools/operations/validate_phase_d_closeout.py` and `validate_phase_e_candidate.py`.
 
+Execution and validation are separate contracts. The 52 production profiles retain one automatic executor, seven validation-only components and 44 manual components. Local validator argv is permitted only for the automatic producer and the seven validation-only components, where the command is explicit, present, argument-complete and component-appropriate. Manual review records a human authority, required evidence and claim ceiling without spawning a validator; external attestation likewise records an external receipt boundary without simulating it locally. The generator and both profile validators reject missing commands, nonexistent scripts, placeholder canonical commands and execution/validation capability conflicts.
+
 ## Planner and NonImpactProof
 
 The planner resolves real changed paths through the component registry and typed topology. Every registered component receives exactly one decision. Affected automatic components rebuild; affected manual/external components revalidate or require attestation. A component may receive `NO_CHANGE_WITH_PROOF` only when it is outside the declared closure and its proof binds the component, plan hash, authority fingerprint, traversed/excluded relations, fingerprint policy, recheck condition and claim ceiling.
@@ -26,7 +28,7 @@ Unknown paths, unresolved residue, missing profiles or changes to registry, topo
 
 ## Executor, cache and recovery
 
-Authority type and local execution capability are independent. Every production profile is explicitly `automatic`, `validation_only`, `manual`, or `external_attestation`. Only `system_map_projection` is currently automatic: its deterministic producer materializes both the JSON projection and SVG from registry, topology, and layout inputs. `pages_pipeline` and `propagation_calculator` are validation-only; workflow deployment and parameterized closure production cannot be impersonated by unrelated legacy builders.
+Authority type, execution capability and validation capability are independent. Every production profile is explicitly `automatic`, `validation_only`, `manual`, or `external_attestation`. Only `system_map_projection` is currently automatic: its deterministic producer materializes both the JSON projection and SVG from registry, topology, and layout inputs. Seven components are validation-only and bind real local validators; the remaining 44 profiles are manual-review authorities with no local validator subprocess. Workflow deployment and parameterized closure production cannot be impersonated by unrelated legacy builders.
 
 The executor is dry-run by default. Before apply performs any producer, validator, output, cache, or recovery write, the unified production validator completes a fail-closed authority preflight over schema/hash, decision cardinality, closure/order, execution capability, registry/topology/profile identity, argv/cwd/input/output identity, NonImpactProof, lifecycle, scope, path, symlink, and worktree boundaries. Apply accepts only profile-registered argv arrays and always uses `shell=False`; caller-supplied commands are not authority. Repository-relative inputs, outputs, profile paths, cache paths, working directory, recovery targets and symlink resolutions must remain inside the authorized repository. Producers may write only registered outputs.
 

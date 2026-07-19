@@ -1,10 +1,10 @@
 {
   "authority_digests": {
     "data/operations/change-propagation-topology.json": "ad42130e558a067cb3da23d07d655529682c0cef79b524ccdec9c7a3b2813512",
-    "data/operations/component-execution-profiles.json": "c2cd8afd8a77c47273ea5cae289f0b949e04e57418873870071857a30ac2fbb2",
-    "data/operations/project-components.json": "fa7a07e4b86e3ae1a2a16886e9ebad566863880a6f2b2be51a5dcab3d7b4179a"
+    "data/operations/component-execution-profiles.json": "29e95c2146a1afe2cf307f081c6fc2162a35aca02cfb2a39dfe8e61d43496dfa",
+    "data/operations/project-components.json": "5ae5b098e3b183cc89eb2bdc64e5a4ffa7481f41841038f8c97ab97484777997"
   },
-  "authority_fingerprint": "14d9ed55f2dc994a1dd7ad13d99caa8d15ba4810d3f32c5ed3d32a59751eef48",
+  "authority_fingerprint": "271ee70bff4e262630c1a3f2182010defa54a2f94df8b47d6f90ce8a6b095a87",
   "claim_ceiling": "Self-hosting proves deterministic planning over declared repository dependencies only; it is not real-world causal proof.",
   "planner_output": {
     "affected_synchronization_surfaces": [
@@ -25,7 +25,7 @@
       "release.changelog",
       "release.versioning"
     ],
-    "authority_fingerprint": "14d9ed55f2dc994a1dd7ad13d99caa8d15ba4810d3f32c5ed3d32a59751eef48",
+    "authority_fingerprint": "271ee70bff4e262630c1a3f2182010defa54a2f94df8b47d6f90ce8a6b095a87",
     "claim_ceiling": "declared repository dependency planning only; not truth or causal proof",
     "component_decisions": [
       {
@@ -364,6 +364,7 @@
     "normalized_change_seeds": [
       ".github/workflows/foundation-validation.yml",
       ".github/workflows/pages.yml",
+      "AGENTS.md",
       "AI-HANDOFF.md",
       "AI-START-HERE.md",
       "CHANGELOG.md",
@@ -406,6 +407,7 @@
       "tests/test_component_profiles.py",
       "tests/test_diff_coverage_gate.py",
       "tests/test_generated_output_authority.py",
+      "tests/test_human_front_door.py",
       "tests/test_incremental_execution.py",
       "tests/test_incremental_execution_defensive_rejections.py",
       "tests/test_incremental_execution_validator.py",
@@ -422,9 +424,10 @@
       "tools/operations/validate_incremental_execution.py",
       "tools/operations/validate_phase_d_closeout.py",
       "tools/operations/validate_phase_e_candidate.py",
+      "tools/validate_human_front_door.py",
       "tools/validate_iteration_sync.py"
     ],
-    "plan_hash": "18510d9e748f3438516e7bb439e2d65432005216d28f18f26e0858911b4b23d9",
+    "plan_hash": "786993dc4731ac62882ba3c9adf09ca6eace5537c086a236d008eff04e2e3df5",
     "preconditions": [
       "clean tree or isolated worktree for apply"
     ],

@@ -19,7 +19,7 @@ This report aggregates the already completed D1 unified validator, D2 end-to-end
 
 ## Integrated evidence
 
-- Phase A profile tests: 3/3 PASS; generator `--check` and profile validator PASS.
+- Phase A profile tests: 5/5 PASS; generator `--check` and profile validator PASS.
 - Phase B planner and NonImpactProof: 3/3 PASS.
 - Phase C executor: 18/18 PASS.
 - D1 18/18 PASS: unified structural, identity, proof, execution, cache, rollback, recovery, path, and CLI validation.
@@ -28,7 +28,7 @@ This report aggregates the already completed D1 unified validator, D2 end-to-end
 - Generated-output authority: 7/7 PASS.
 - Tracked symlink gate: 5/5 PASS.
 - D4 closeout validator tests: 20/20 PASS.
-- Aggregate unittest result: 114/114 PASS.
+- Aggregate unittest result: 116/116 PASS.
 - Production change-propagation check: PASS; closure hash `57b18c57dcefd521e9399be167f511017de785d8971af93177f25df8926ab7f1`.
 - Q29R frozen SHA-256: `c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b`.
 

@@ -37,8 +37,8 @@ class PhaseCExecutorAcceptance(unittest.TestCase):
         self.profiles = {"schema_version": "1.0.0", "profiles": [
             self.automatic("auto1", "out1.txt", "Path('out1.txt').write_text('after-one\\n')"),
             self.automatic("auto2", "out2.txt", "(Path('out2.txt').write_text('failed-write\\n'),1/0)"),
-            {"component_id":"manual","execution_capability":"manual","execution_kind":"manual","execution_cwd":".","authoritative_inputs":["input.txt"],"generated_outputs":[],"input_fingerprint_policy":{"kind":"sha256_sorted_file_set","paths":["input.txt"]},"output_fingerprint_policy":{"kind":"none","target":"input.txt"},"validator_argv":[sys.executable,"-c","0"]},
-            {"component_id":"external","execution_capability":"external_attestation","execution_kind":"attestation","execution_cwd":".","authoritative_inputs":["input.txt"],"generated_outputs":[],"input_fingerprint_policy":{"kind":"sha256_sorted_file_set","paths":["input.txt"]},"output_fingerprint_policy":{"kind":"none","target":"input.txt"},"validator_argv":[sys.executable,"-c","0"]},
+            {"component_id":"manual","execution_capability":"manual","validation_capability":"manual_review","execution_kind":"manual","execution_cwd":".","authoritative_inputs":["input.txt"],"generated_outputs":[],"input_fingerprint_policy":{"kind":"sha256_sorted_file_set","paths":["input.txt"]},"output_fingerprint_policy":{"kind":"none","target":"input.txt"},"validation_authority":{"authority":"human","required_evidence":["review"],"evidence_boundary":"fixture"}},
+            {"component_id":"external","execution_capability":"external_attestation","validation_capability":"external_attestation","execution_kind":"attestation","execution_cwd":".","authoritative_inputs":["input.txt"],"generated_outputs":[],"input_fingerprint_policy":{"kind":"sha256_sorted_file_set","paths":["input.txt"]},"output_fingerprint_policy":{"kind":"none","target":"input.txt"},"validation_authority":{"authority":"external","required_evidence":["receipt"],"evidence_boundary":"fixture"}},
         ]}
         self.save_profiles()
         subprocess.run(["git", "add", "."], cwd=self.repo, check=True)
@@ -47,7 +47,7 @@ class PhaseCExecutorAcceptance(unittest.TestCase):
     def tearDown(self): self.temp.cleanup()
 
     def automatic(self, cid, output, expression):
-        return {"component_id":cid,"execution_capability":"automatic","execution_kind":"automatic","execution_cwd":".","authoritative_inputs":["input.txt"],"generated_outputs":[output],"input_fingerprint_policy":{"kind":"sha256_sorted_file_set","paths":["input.txt"]},"output_fingerprint_policy":{"kind":"sha256_declared_outputs","target":output},"producer_argv":[sys.executable,"-c",f"from pathlib import Path\n{expression}"],"validator_argv":[sys.executable,"-c","0"],"rollback_policy":"restore_registered_outputs_or_emit_recovery_package"}
+        return {"component_id":cid,"execution_capability":"automatic","validation_capability":"local_automatic_validation","execution_kind":"automatic","execution_cwd":".","authoritative_inputs":["input.txt"],"generated_outputs":[output],"input_fingerprint_policy":{"kind":"sha256_sorted_file_set","paths":["input.txt"]},"output_fingerprint_policy":{"kind":"sha256_declared_outputs","target":output},"producer_argv":[sys.executable,"-c",f"from pathlib import Path\n{expression}"],"validator_argv":[sys.executable,"-c","0"],"rollback_policy":"restore_registered_outputs_or_emit_recovery_package"}
 
     def save_profiles(self): self.profiles_path.write_text(json.dumps(self.profiles, sort_keys=True) + "\n")
     def plan(self, order=None):

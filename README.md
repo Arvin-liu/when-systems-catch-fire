@@ -2,7 +2,7 @@
 
 ## 项目现状
 
-点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型，把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF、PSD、ARN、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。迭代操作法 `1.2.0` 与 registry 派生系统图 `0.2.0` 为 Current（121Q32T 合并收口）；Q32I 仅提出操作法 `1.3.0` 与系统图 `0.3.0` Draft candidate，尚未新的独立 exact-head 审查、合并或进入 Current。候选中权威类型与本地执行能力已分离，apply 先经统一预检，rollbar回按完整仓库字节／类型／mode 状态验证。这是当前提交下已经长成的状态，不是永久定位或最终身份；它也不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。
+点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型，把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF、PSD、ARN、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。迭代操作法 `1.2.0` 与 registry 派生系统图 `0.2.0` 为 Current（121Q32T 合并收口）；Q32I 仅提出操作法 `1.3.0` 与系统图 `0.3.0` Draft candidate，尚未新的独立 exact-head 审查、合并或进入 Current。候选中权威类型与本地执行能力已分离，apply 先经统一预检，rollback（回滚）按完整仓库字节／类型／mode 状态验证。这是当前提交下已经长成的状态，不是永久定位或最终身份；它也不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。
 
 **首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [点火迭代操作法](./ITERATION.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 

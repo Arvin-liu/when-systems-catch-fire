@@ -29,7 +29,7 @@ class PhaseD4CloseoutValidation(unittest.TestCase):
     def test_d4_01_complete_report_passes(self):
         result = self.validate()
         self.assertTrue(result["ok"], result)
-        self.assertEqual(result["observed_test_count"], 114)
+        self.assertEqual(result["observed_test_count"], 116)
 
     def test_d4_02_required_field_is_enforced(self):
         forged = copy.deepcopy(self.document)
