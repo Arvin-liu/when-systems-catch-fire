@@ -283,6 +283,62 @@
       "lifecycle_status": "current"
     },
     {
+      "id": "copyright_governance_history_remediation",
+      "label": "版权治理-历史整改注册表",
+      "group": "governance",
+      "target": "data/governance/history-remediation-register.json",
+      "description": "History remediation register for past copyright/rights boundary violations.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "copyright_governance_jurisdiction_registry",
+      "label": "版权治理-法域规则注册表",
+      "group": "governance",
+      "target": "data/governance/jurisdiction-rule-registry.json",
+      "description": "Representative multi-jurisdiction copyright rule registry for Q33 risk projection. Covers WIPO treaties, US, EU, UK, CA, AU, JP, SG, IN.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "copyright_governance_material_classification",
+      "label": "版权治理-材料分类系统",
+      "group": "governance",
+      "target": "data/governance/material-classification.json",
+      "description": "Material classification system L0-L6 for publication gate decisions.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "copyright_governance_non_republication_principle",
+      "label": "版权治理-外部输入不重新发布原则",
+      "group": "governance",
+      "target": "docs/governance/external-input-non-republication-principle.md",
+      "description": "External Input Non-Republication Principle — prohibits republication of third-party copyrighted material.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "copyright_governance_publication_gate_validator",
+      "label": "版权治理-发布门禁验证器",
+      "group": "governance",
+      "target": "tools/governance/fail_closed_publication_gate.py",
+      "description": "Fail-closed publication gate validator enforcing source-rights, material classification, and non-republication principle.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "copyright_governance_source_rights",
+      "label": "版权治理-来源权利注册表",
+      "group": "governance",
+      "target": "data/governance/source-rights-registry.json",
+      "description": "Source rights registry categorizing materials by rights status and required governance actions.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "copyright_governance_tests",
+      "label": "版权治理-测试套件",
+      "group": "governance",
+      "target": "tests/test_q33_governance_infrastructure.py",
+      "description": "Production tests for Q33 governance infrastructure: registries, schemas, validator, mutation detection.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
       "id": "licensing",
       "label": "许可 / 权利边界",
       "group": "governance",
@@ -722,6 +778,46 @@
       "target": "showcase",
       "label": "人类索引",
       "relation_class": "publishes",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_gov_jurisdiction",
+      "source": "copyright_governance_jurisdiction_registry",
+      "target": "charter",
+      "label": "法域约束",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_gov_source_rights",
+      "source": "copyright_governance_source_rights",
+      "target": "external_input",
+      "label": "来源权利约束",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_gov_publication_gate",
+      "source": "copyright_governance_publication_gate_validator",
+      "target": "current_state",
+      "label": "出版门禁验证",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "map_gov_non_repub",
+      "source": "copyright_governance_non_republication_principle",
+      "target": "accepted_work",
+      "label": "不重新发布约束",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_gov_material_class",
+      "source": "copyright_governance_material_classification",
+      "target": "source_pool",
+      "label": "材料分类",
+      "relation_class": "validates",
       "relation_domain": "repository_dependency"
     }
   ]
