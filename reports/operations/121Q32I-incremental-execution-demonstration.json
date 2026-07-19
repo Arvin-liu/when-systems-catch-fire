@@ -1,11 +1,8 @@
 {
-  "authority_digests": {
-    "data/operations/change-propagation-topology.json": "ad42130e558a067cb3da23d07d655529682c0cef79b524ccdec9c7a3b2813512",
-    "data/operations/component-execution-profiles.json": "f42eee35f583daf9c6ef35d4493029ebd77d0534cd1aff3f77d339a90f7f471f",
-    "data/operations/project-components.json": "6dea062973b72b69d19a0571da88d04276901623606224fb3cd091d1c02fa5c7"
-  },
-  "authority_fingerprint": "3d9f865cd8c2be0770accd20ca76d18a7e17e508373e5c51a682b91eed926a6b",
-  "claim_ceiling": "Self-hosting proves deterministic planning over declared repository dependencies only; it is not real-world causal proof.",
+  "schema_version": "1.0.0",
+  "task_id": "121Q32I",
+  "request_identity": "121Q32I",
+  "request_path": "data/operations/propagation/121Q32I-request.json",
   "planner_output": {
     "affected_synchronization_surfaces": [
       "agent.handoff",
@@ -25,7 +22,7 @@
       "release.changelog",
       "release.versioning"
     ],
-    "authority_fingerprint": "3d9f865cd8c2be0770accd20ca76d18a7e17e508373e5c51a682b91eed926a6b",
+    "authority_fingerprint": "f8ea4745b87fdcd3b0d5b5f413592ea52683728dcd4a35ef1925eb70c329864b",
     "claim_ceiling": "declared repository dependency planning only; not truth or causal proof",
     "component_decisions": [
       {
@@ -55,6 +52,41 @@
       },
       {
         "component_id": "charter",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "copyright_governance_history_remediation",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "copyright_governance_jurisdiction_registry",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "copyright_governance_material_classification",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "copyright_governance_non_republication_principle",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "copyright_governance_publication_gate_validator",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "copyright_governance_source_rights",
+        "decision": "FULL_REBUILD_REQUIRED",
+        "non_impact_proof": null
+      },
+      {
+        "component_id": "copyright_governance_tests",
         "decision": "FULL_REBUILD_REQUIRED",
         "non_impact_proof": null
       },
@@ -300,6 +332,13 @@
       "candidate_return",
       "case_source",
       "charter",
+      "copyright_governance_history_remediation",
+      "copyright_governance_jurisdiction_registry",
+      "copyright_governance_material_classification",
+      "copyright_governance_non_republication_principle",
+      "copyright_governance_publication_gate_validator",
+      "copyright_governance_source_rights",
+      "copyright_governance_tests",
       "current_state",
       "external_input",
       "feedback_routes",
@@ -430,7 +469,7 @@
       "tools/validate_human_front_door.py",
       "tools/validate_iteration_sync.py"
     ],
-    "plan_hash": "3a09efdfd060393519e73a072cb867b41f9b2b81ff9c9c46e7e152a09dc1fe56",
+    "plan_hash": "1fc5f11795bc0e5614110bec8164b62b7871c34951d96cbedad0a12a385486a4",
     "preconditions": [
       "clean tree or isolated worktree for apply"
     ],
@@ -463,12 +502,15 @@
     "sync_metadata_components": [],
     "unresolved_residue": []
   },
-  "request_identity": "121Q32I",
-  "request_path": "data/operations/propagation/121Q32I-request.json",
-  "schema_version": "1.0.0",
-  "task_id": "121Q32I",
+  "authority_fingerprint": "f8ea4745b87fdcd3b0d5b5f413592ea52683728dcd4a35ef1925eb70c329864b",
   "validator_result": {
-    "error_code": null,
-    "status": "PASS"
+    "status": "PASS",
+    "error_code": null
+  },
+  "claim_ceiling": "Self-hosting proves deterministic planning over declared repository dependencies only; it is not real-world causal proof.",
+  "authority_digests": {
+    "data/operations/project-components.json": "sha256:d4a5944ec310240165c28e3631c62659a9c757d29ad686f577d6050276de9980",
+    "data/operations/change-propagation-topology.json": "sha256:035989e2b9f32579de5bfe15a0ef442c05945f47eb086b4ac64634cf1ba5e05a",
+    "data/operations/component-execution-profiles.json": "sha256:02ec82b4f90c121f63aafbb95eb1a0d14da53a916903daa375ebd4d5d6ac419d"
   }
 }
