@@ -336,6 +336,21 @@
       "freshness_mode": "byte_level_recompute",
       "coverage_class": "generated_output",
       "justification": "Q33 governance infrastructure: registries, schemas, tools, and tests"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/governance/jurisdiction-rule-registry.json",
+        "data/governance/source-rights-registry.json",
+        "data/governance/material-classification.json",
+        "data/governance/history-remediation-register.json"
+      ],
+      "justification": "Deterministic classification from governance registries",
+      "output_type": "gate_validator",
+      "path": "tools/governance/fail_closed_publication_gate.py",
+      "producer_command": "python tools/governance/fail_closed_publication_gate.py --action audit",
+      "producer_id": "fail_closed_publication_gate"
     }
   ],
   "schema_version": "1.0.0",

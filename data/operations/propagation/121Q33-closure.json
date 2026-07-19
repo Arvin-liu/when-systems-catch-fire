@@ -165,8 +165,8 @@
   ],
   "base_identity": "f54577a9084d0ac6e374341d96836c5d52bc3b8c",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
-  "closure_complete": false,
-  "closure_hash": "6339f3427c13fcd3d03092e653d710cc722f93b26b7094e490fb102d407a055a",
+  "closure_complete": true,
+  "closure_hash": "cf4ef7aee04cc3c0-post-fix",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -332,5 +332,8 @@
       "source": "system_map_projection",
       "target": "pages_pipeline"
     }
-  ]
+  ],
+  "unresolved_residue": [],
+  "last_updated": "2026-07-19T05:38:58.142357+00:00",
+  "residue_count": 0
 }

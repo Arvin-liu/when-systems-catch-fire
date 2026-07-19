@@ -10,7 +10,7 @@
       "id": "TREATY-BERNE-1886",
       "type": "multilateral_treaty",
       "title": "Berne Convention for the Protection of Literary and Artistic Works (Stockholm Act 1967)",
-      "authority_url": "https://www.wipo.int/en/web/treaties/ip/wct/index",
+      "authority_url": "https://www.wipo.int/treaties/en/ip/berne/",
       "wipo_lex_id": "UNTS-vol828-11850",
       "key_principles": [
         "Automatic protection without formalities (Art. 5(2))",
@@ -231,6 +231,36 @@
       },
       "currentness": "CURRENT",
       "verification_status": "VERIFIED"
+    },
+    "CN": {
+      "id": "JUR-CN",
+      "name": "People's Republic of China (Copyright Law)",
+      "statute": "Copyright Law of the People's Republic of China (2020 Amendment)",
+      "official_source": "https://www.npc.gov.cn/npc/c30834/202011/a5c0e20e4861493ba87eb56e3b0a11f7.shtml",
+      "exceptions": {
+        "Article_24": "Fair use exceptions: personal study, quotation, news reporting, teaching/research",
+        "Article_25": "Compulsory licensing for textbook compilation",
+        "Article_26": "Statutory license for sound recordings"
+      },
+      "framework": "closed_list_exceptions_with_fair_use_like_provisions",
+      "currentness": "CURRENT (2020 amendment effective June 1, 2021)",
+      "verification_status": "VERIFIED"
+    },
+    "TW": {
+      "id": "JUR-TW",
+      "name": "Taiwan (Republic of China Copyright Act)",
+      "statute": "Copyright Act of the Republic of China",
+      "official_source": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=D0090118",
+      "exceptions": {
+        "Article_44": "Fair use for legislative/judicial/administrative purposes",
+        "Article_49": "Quotation in news reporting",
+        "Article_51": "Reasonable reproduction for personal use",
+        "Article_52": "Citation with attribution",
+        "Article_55": "Non-profit use with attribution"
+      },
+      "framework": "fair_use_with_three_step_test",
+      "currentness": "CURRENT",
+      "verification_status": "VERIFIED"
     }
   },
   "platform_policy": {
@@ -268,10 +298,10 @@
   },
   "summary": {
     "total_treaties": 3,
-    "total_jurisdictions": 8,
+    "total_jurisdictions": 10,
     "total_platform_policies": 2,
     "verification_statuses": {
-      "VERIFIED": 13,
+      "VERIFIED": 15,
       "UNVERIFIED": 0,
       "COUNSEL_REQUIRED": 0,
       "BLOCKED_PENDING_EVIDENCE": 0

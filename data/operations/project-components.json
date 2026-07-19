@@ -81,6 +81,26 @@
         "pages/generated/ignition-system-map.svg"
       ],
       "reason": "pages_pipeline owns pages/ for the deployment chain; system_map_projection owns the generated SVG under pages/generated/."
+    },
+    {
+      "authority_source": "FOUNDATION.md",
+      "component_ids": [
+        "copyright_governance_jurisdiction_registry",
+        "copyright_governance_source_rights",
+        "copyright_governance_material_classification",
+        "copyright_governance_non_republication_principle",
+        "copyright_governance_publication_gate_validator",
+        "copyright_governance_history_remediation",
+        "copyright_governance_tests"
+      ],
+      "path_patterns": [
+        "data/governance/",
+        "schemas/governance/",
+        "tools/governance/",
+        "tests/test_q33_governance_infrastructure.py",
+        "docs/governance/"
+      ],
+      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/."
     }
   ],
   "components": [

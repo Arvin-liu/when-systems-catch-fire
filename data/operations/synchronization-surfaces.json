@@ -6,209 +6,527 @@
       "surface_id": "human.readme",
       "surface_type": "repository_source",
       "locator": "README.md",
-      "roles": ["human_front_door"],
+      "roles": [
+        "human_front_door"
+      ],
       "authority": "canonical",
       "derived_from": [],
-      "trigger_dimensions": ["capability", "identity", "usage", "lifecycle_current_state", "governance", "deployment_rendering", "operations_method"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "GOVERNANCE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "lifecycle_current_state",
+        "governance",
+        "deployment_rendering",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "human.pages_source",
       "surface_type": "repository_derived_surface",
       "locator": ".github/workflows/pages.yml",
-      "roles": ["deployment", "human_front_door"],
+      "roles": [
+        "deployment",
+        "human_front_door"
+      ],
       "authority": "derived",
-      "derived_from": ["human.readme"],
-      "trigger_dimensions": ["capability", "identity", "usage", "lifecycle_current_state", "deployment_rendering", "operations_method"],
-      "trigger_classifications": ["INTERFACE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "derived_from": [
+        "human.readme"
+      ],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "lifecycle_current_state",
+        "deployment_rendering",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "repository_build_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "external.pages_homepage",
       "surface_type": "external_rendered_deployed_surface",
       "locator": "https://arvin-liu.github.io/when-systems-catch-fire/",
-      "roles": ["deployment", "human_front_door"],
+      "roles": [
+        "deployment",
+        "human_front_door"
+      ],
       "authority": "external",
-      "derived_from": ["human.readme", "human.pages_source"],
-      "trigger_dimensions": ["capability", "identity", "usage", "lifecycle_current_state", "deployment_rendering", "operations_method"],
-      "trigger_classifications": ["INTERFACE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "derived_from": [
+        "human.readme",
+        "human.pages_source"
+      ],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "lifecycle_current_state",
+        "deployment_rendering",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "post_merge_external_render_attestation",
-      "blocks": ["current", "closed"]
+      "blocks": [
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "human.current_state",
       "surface_type": "repository_source",
       "locator": "docs/project-current-state.md",
-      "roles": ["human_guide", "machine_state"],
+      "roles": [
+        "human_guide",
+        "machine_state"
+      ],
       "authority": "canonical",
       "derived_from": [],
-      "trigger_dimensions": ["capability", "identity", "usage", "lifecycle_current_state", "governance", "operations_method"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "GOVERNANCE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "lifecycle_current_state",
+        "governance",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "human.summary",
       "surface_type": "repository_source",
       "locator": "SUMMARY.md",
-      "roles": ["human_guide"],
+      "roles": [
+        "human_guide"
+      ],
       "authority": "canonical",
       "derived_from": [],
-      "trigger_dimensions": ["capability", "identity", "usage", "lifecycle_current_state", "operations_method"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "lifecycle_current_state",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "human.usage",
       "surface_type": "repository_source",
       "locator": "docs/USAGE.md",
-      "roles": ["human_guide"],
+      "roles": [
+        "human_guide"
+      ],
       "authority": "canonical",
       "derived_from": [],
-      "trigger_dimensions": ["capability", "identity", "usage", "operations_method"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "human.ai_guide",
       "surface_type": "repository_source",
       "locator": "docs/ai-assistant-usage-reference.md",
-      "roles": ["human_guide", "ai_cold_start"],
+      "roles": [
+        "human_guide",
+        "ai_cold_start"
+      ],
       "authority": "canonical",
       "derived_from": [],
-      "trigger_dimensions": ["capability", "identity", "usage", "handoff", "operations_method"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "handoff",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "ai.start",
       "surface_type": "repository_source",
       "locator": "AI-START-HERE.md",
-      "roles": ["ai_cold_start"],
+      "roles": [
+        "ai_cold_start"
+      ],
       "authority": "canonical",
       "derived_from": [],
-      "trigger_dimensions": ["capability", "identity", "usage", "handoff", "lifecycle_current_state", "operations_method"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "handoff",
+        "lifecycle_current_state",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "agent.handoff",
       "surface_type": "repository_source",
       "locator": "AI-HANDOFF.md",
-      "roles": ["agent_handoff"],
+      "roles": [
+        "agent_handoff"
+      ],
       "authority": "canonical",
       "derived_from": [],
-      "trigger_dimensions": ["capability", "identity", "usage", "handoff", "lifecycle_current_state", "operations_method"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "handoff",
+        "lifecycle_current_state",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "machine.llms",
       "surface_type": "repository_source",
       "locator": "llms.txt",
-      "roles": ["machine_state", "ai_cold_start"],
+      "roles": [
+        "machine_state",
+        "ai_cold_start"
+      ],
       "authority": "canonical",
       "derived_from": [],
-      "trigger_dimensions": ["capability", "identity", "usage", "handoff", "lifecycle_current_state", "operations_method"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "usage",
+        "handoff",
+        "lifecycle_current_state",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "release.changelog",
       "surface_type": "repository_source",
       "locator": "CHANGELOG.md",
-      "roles": ["release_history"],
+      "roles": [
+        "release_history"
+      ],
       "authority": "canonical",
       "derived_from": [],
-      "trigger_dimensions": ["capability", "identity", "lifecycle_current_state", "operations_method"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "lifecycle_current_state",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "release.versioning",
       "surface_type": "repository_source",
       "locator": "docs/VERSIONING.md",
-      "roles": ["release_history"],
+      "roles": [
+        "release_history"
+      ],
       "authority": "canonical",
       "derived_from": [],
-      "trigger_dimensions": ["capability", "identity", "lifecycle_current_state", "operations_method"],
-      "trigger_classifications": ["CAPABILITY_ADDITION", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"],
+      "trigger_dimensions": [
+        "capability",
+        "identity",
+        "lifecycle_current_state",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON",
+        "NOT_APPLICABLE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "method.iteration",
       "surface_type": "repository_source",
       "locator": "ITERATION.md",
-      "roles": ["machine_state", "agent_handoff"],
+      "roles": [
+        "machine_state",
+        "agent_handoff"
+      ],
       "authority": "canonical",
       "derived_from": [],
-      "trigger_dimensions": ["operations_method"],
-      "trigger_classifications": ["OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE"],
+      "trigger_dimensions": [
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE"
+      ],
       "validation_mode": "repository_schema_and_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "method.task_template",
       "surface_type": "repository_source",
       "locator": "templates/operations/task-command-template.md",
-      "roles": ["agent_handoff"],
+      "roles": [
+        "agent_handoff"
+      ],
       "authority": "canonical",
-      "derived_from": ["method.iteration"],
-      "trigger_dimensions": ["operations_method"],
-      "trigger_classifications": ["OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE"],
+      "derived_from": [
+        "method.iteration"
+      ],
+      "trigger_dimensions": [
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "method.result_template",
       "surface_type": "repository_source",
       "locator": "templates/operations/execution-result-template.md",
-      "roles": ["agent_handoff", "machine_state"],
+      "roles": [
+        "agent_handoff",
+        "machine_state"
+      ],
       "authority": "canonical",
-      "derived_from": ["method.iteration"],
-      "trigger_dimensions": ["operations_method"],
-      "trigger_classifications": ["OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE"],
+      "derived_from": [
+        "method.iteration"
+      ],
+      "trigger_dimensions": [
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     },
     {
       "surface_id": "method.review_template",
       "surface_type": "repository_source",
       "locator": "templates/operations/independent-review-template.md",
-      "roles": ["agent_handoff"],
+      "roles": [
+        "agent_handoff"
+      ],
       "authority": "canonical",
-      "derived_from": ["method.iteration"],
-      "trigger_dimensions": ["operations_method"],
-      "trigger_classifications": ["OPERATIONS_METHOD"],
-      "allowed_decisions": ["CHANGE"],
+      "derived_from": [
+        "method.iteration"
+      ],
+      "trigger_dimensions": [
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE"
+      ],
       "validation_mode": "repository_semantic_validation",
-      "blocks": ["ready", "current", "closed"]
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
     }
   ]
 }

@@ -205,5 +205,15 @@
     "decision": "CHANGE",
     "item_id": "interactive_system_map",
     "reason": "New governance components added to project-component registry and topology"
+  },
+  "summary": {
+    "total_jurisdictions_covered": 10,
+    "total_treaties": 3,
+    "total_platform_policies": 2,
+    "total_source_categories": 12,
+    "total_schema_files": 5,
+    "total_governance_tools": 1,
+    "total_governance_tests": 8,
+    "status": "candidate"
   }
 }
