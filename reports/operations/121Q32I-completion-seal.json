@@ -163,7 +163,7 @@
   },
   "self_hosting": {
     "decision": "FULL_REBUILD_REQUIRED",
-    "plan_hash": "1fc5f11795bc0e5614110bec8164b62b7871c34951d96cbedad0a12a3854",
+    "plan_hash": "1fc5f11795bc0e5614110bec8164b62b7871c34951d96cbedad0a12a385486a4",
     "validator": "PASS"
   },
   "status": "CURRENT_CLOSED",
