@@ -21,7 +21,8 @@
       "member_count": 181,
       "currentness": "CURRENT",
       "verification_status": "VERIFIED",
-      "notes": "Universal baseline; all surveyed jurisdictions are signatories."
+      "notes": "Universal baseline; all surveyed jurisdictions are signatories.",
+      "official_source": "https://www.wipo.int/treaties/en/ip/berne/docs/textindex-en.htm"
     },
     "WCT_1996": {
       "id": "TREATY-WCT-1996",
@@ -299,7 +300,7 @@
   "summary": {
     "total_treaties": 3,
     "total_jurisdictions": 10,
-    "total_platform_policies": 2,
+    "total_platform_policies": 3,
     "verification_statuses": {
       "VERIFIED": 15,
       "UNVERIFIED": 0,

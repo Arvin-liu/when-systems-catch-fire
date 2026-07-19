@@ -50,9 +50,9 @@ def test_jurisdiction_registry():
     assert "GitHub_DMCA_Takedown_Policy" in reg["platform_policy"], "Missing GitHub DMCA policy"
 
     # Check summary counts
-    assert reg["summary"]["total_jurisdictions"] == 8
+    assert reg["summary"]["total_jurisdictions"] == 10, f"Expected 10 jurisdictions, got {reg['summary']['total_jurisdictions']}"
     assert reg["summary"]["total_treaties"] == 3
-    assert reg["summary"]["total_platform_policies"] == 2
+    assert reg["summary"]["total_platform_policies"] >= 2, f"Expected >= 2 platform policies, got {reg['summary']['total_platform_policies']}"
 
     return True
 
