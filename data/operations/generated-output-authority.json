@@ -351,6 +351,51 @@
       "path": "tools/governance/fail_closed_publication_gate.py",
       "producer_command": "python tools/governance/fail_closed_publication_gate.py --action audit",
       "producer_id": "fail_closed_publication_gate"
+    },
+    {
+      "path": "data/governance/publication-gate-decisions.jsonl",
+      "generator": "publication_gate_validator",
+      "schema": "schemas/governance/publication-gate.schema.json"
+    },
+    {
+      "path": "data/operations/propagation/121Q32I-report.json",
+      "generator": "compute_change_propagation",
+      "schema": "schemas/operations/change-propagation-impact.schema.json"
+    },
+    {
+      "path": "data/operations/propagation/121Q33-closure.json",
+      "generator": "compute_change_propagation",
+      "schema": "schemas/operations/propagation-closure.schema.json"
+    },
+    {
+      "path": "data/operations/propagation/121Q33-execution-plan.json",
+      "generator": "plan_incremental_execution",
+      "schema": "schemas/operations/incremental-execution-plan.schema.json"
+    },
+    {
+      "path": "data/operations/propagation/121Q33-impact-report.md",
+      "generator": "compute_change_propagation",
+      "schema": "schemas/operations/change-propagation-impact.schema.json"
+    },
+    {
+      "path": "data/operations/propagation/121Q33-request.json",
+      "generator": "compute_change_propagation",
+      "schema": "schemas/operations/change-propagation-request.schema.json"
+    },
+    {
+      "path": "data/operations/propagation/121Q33-residue.json",
+      "generator": "compute_change_propagation",
+      "schema": "schemas/operations/propagation-residue.schema.json"
+    },
+    {
+      "path": "data/operations/propagation/121Q33-system-map-delta.json",
+      "generator": "generate_interactive_system_map",
+      "schema": "schemas/operations/system-map-delta.schema.json"
+    },
+    {
+      "path": "data/operations/synchronization-surfaces.json",
+      "generator": "sync_surface_registry",
+      "schema": "schemas/operations/synchronization-surfaces.schema.json"
     }
   ],
   "schema_version": "1.0.0",
