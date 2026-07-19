@@ -1,100 +1,117 @@
 {
-  "layout_version": "1.1.0",
-  "map_candidate_version": "0.3.0-candidate",
-  "current_map_version": "0.2.0",
-  "title": "点火完整可点击系统图",
-  "subtitle": "当前 0.2.0 + 0.3.0 Draft 增量执行投影；点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。",
-  "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
+  "current_map_version": "0.3.0",
   "geometry": {
     "columns": 3,
-    "group_width": 560,
-    "outer_padding": 32,
     "group_gap": 28,
     "group_header_height": 92,
+    "group_width": 560,
+    "node_gap": 12,
     "node_height": 54,
-    "node_gap": 12
+    "outer_padding": 32
   },
   "groups": [
     {
+      "color": "#2563eb",
+      "column": 0,
+      "description": "人类、AI 与机器进入项目的当前入口",
       "id": "front_doors",
       "label": "前门 / 导航",
-      "description": "人类、AI 与机器进入项目的当前入口",
-      "column": 0,
-      "row": 0,
-      "color": "#2563eb"
+      "row": 0
     },
     {
+      "color": "#7c3aed",
+      "column": 1,
+      "description": "来源到解释出版的认识权限链；不存在 L7",
       "id": "layers",
       "label": "L0—L6 七层主架构",
-      "description": "来源到解释出版的认识权限链；不存在 L7",
-      "column": 1,
-      "row": 0,
-      "color": "#7c3aed"
+      "row": 0
     },
     {
+      "color": "#0f766e",
+      "column": 2,
+      "description": "权威数据、形式门禁与可执行函数接口",
       "id": "core",
       "label": "基础核心",
-      "description": "权威数据、形式门禁与可执行函数接口",
-      "column": 2,
-      "row": 0,
-      "color": "#0f766e"
+      "row": 0
     },
     {
+      "color": "#0891b2",
+      "column": 0,
+      "description": "多尺度、概率动力学与自适应关系的候选表示",
       "id": "models",
       "label": "模型与投影",
-      "description": "多尺度、概率动力学与自适应关系的候选表示",
-      "column": 0,
-      "row": 1,
-      "color": "#0891b2"
+      "row": 1
     },
     {
+      "color": "#d97706",
+      "column": 1,
+      "description": "行动、注意力、地图、迭代与类型化传播闭包",
       "id": "operations",
       "label": "控制 / 操作层",
-      "description": "行动、注意力、地图、迭代与类型化传播闭包",
-      "column": 1,
-      "row": 1,
-      "color": "#d97706"
+      "row": 1
     },
     {
+      "color": "#be123c",
+      "column": 2,
+      "description": "价值、权利许可与维护者可持续性边界",
       "id": "governance",
       "label": "规范与约束",
-      "description": "价值、权利许可与维护者可持续性边界",
-      "column": 2,
-      "row": 1,
-      "color": "#be123c"
+      "row": 1
     },
     {
+      "color": "#9333ea",
+      "column": 0,
+      "description": "双来源素材池、公共表达与可追溯成果",
       "id": "writing",
       "label": "之元写作法与成果链",
-      "description": "双来源素材池、公共表达与可追溯成果",
-      "column": 0,
-      "row": 2,
-      "color": "#9333ea"
+      "row": 2
     },
     {
+      "color": "#15803d",
+      "column": 1,
+      "description": "作品响应经来源登记后返回适用点火流程",
       "id": "feedback",
       "label": "现实反馈环",
-      "description": "作品响应经来源登记后返回适用点火流程",
-      "column": 1,
-      "row": 2,
-      "color": "#15803d"
+      "row": 2
     },
     {
+      "color": "#475569",
+      "column": 2,
+      "description": "这是一张导航接口，不是完整性、因果或理论证明",
       "id": "boundaries",
       "label": "图的解释边界",
-      "description": "这是一张导航接口，不是完整性、因果或理论证明",
-      "column": 2,
-      "row": 2,
-      "color": "#475569"
+      "row": 2
     }
   ],
+  "historical_map_version": "0.2.0",
+  "layout_version": "1.1.0",
   "node_order": {
+    "boundaries": [
+      "no_l7",
+      "no_truth_upgrade",
+      "no_totality_proof"
+    ],
+    "core": [
+      "foundation",
+      "function_os"
+    ],
+    "feedback": [
+      "public_response",
+      "provenance_capture",
+      "candidate_return",
+      "feedback_routes"
+    ],
     "front_doors": [
       "readme",
       "summary",
       "usage",
       "ai_guide",
       "current_state"
+    ],
+    "governance": [
+      "charter",
+      "licensing",
+      "sustainability"
     ],
     "layers": [
       "l0",
@@ -104,10 +121,6 @@
       "l4",
       "l5",
       "l6"
-    ],
-    "core": [
-      "foundation",
-      "function_os"
     ],
     "models": [
       "mcf",
@@ -121,11 +134,6 @@
       "iteration",
       "sync"
     ],
-    "governance": [
-      "charter",
-      "licensing",
-      "sustainability"
-    ],
     "writing": [
       "external_input",
       "ignition_increment",
@@ -136,17 +144,9 @@
       "accepted_work",
       "showcase",
       "showcase_registry"
-    ],
-    "feedback": [
-      "public_response",
-      "provenance_capture",
-      "candidate_return",
-      "feedback_routes"
-    ],
-    "boundaries": [
-      "no_l7",
-      "no_truth_upgrade",
-      "no_totality_proof"
     ]
-  }
+  },
+  "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
+  "subtitle": "当前 0.3.0 增量执行投影；0.2.0 为 Historical。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。",
+  "title": "点火完整可点击系统图"
 }

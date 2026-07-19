@@ -1,14 +1,16 @@
 # 点火迭代操作法 / Ignition Iteration Method
 
-Current: `1.2.0` (typed declared change-propagation closure; 121Q32T closeout complete)
+Current: `1.3.0` (incremental execution and selective materialization; Q32I closeout complete)
 
-Historical: `1.1.0` (synchronization registry closure; superseded by 1.2.0)
+Historical: `1.2.0` (typed declared change-propagation closure; superseded by 1.3.0)
 
-Draft candidate: `1.3.0` (Q32I incremental execution and selective materialization; not accepted, merged or Current)
+Earlier Historical: `1.1.0` (synchronization registry closure; superseded by 1.2.0)
+
+Q32I lifecycle: Accepted, Merged by PR #62, Current and Closed. Q33 launch packet ready externally; Q33 and Q34—Q40 not started.
 
 Status: canonical operation method. This method governs how 点火 changes itself. It is not a truth layer, proof system, value charter, causal model or substitute for external evidence.
 
-Current lifecycle: method 1.2.0 entered `main` through Q32 independent acceptance, merge and Q32T closeout. Method 1.3.0 remains an OPEN Draft candidate until a separate independent review and later lifecycle action.
+Current lifecycle: method 1.3.0 entered `main` through Q32I third independent exact-head acceptance, PR #62 ordinary merge, final-main validation, production Pages deploy and live closeout. Method 1.2.0 remains Historical.
 
 ## 0. Read This Boundary First
 
@@ -253,12 +255,12 @@ A 1.2.0 manifest binds the request and four generated products, seed paths and c
 
 Backward compatibility is explicit: historical 1.0.0 manifests remain valid, 1.1.0 manifests retain synchronization closure semantics, and only 1.2.0 manifests require the new `propagation_closure` binding.
 
-## 15. Method 1.3.0 Draft candidate: Incremental Execution
+## 15. Method 1.3.0 Current: Incremental Execution
 
-Q32I proposes a repository-only execution layer on top of Current 1.2.0. It converts a validated propagation plan into structured component decisions, complete NonImpactProof objects, profile-registered argv execution, identity-bound local cache decisions, unified validation, rollback and recovery materials. Authority classification is independent of local execution capability; apply is authorized only after the unified fail-closed preflight, and rollback success requires exact repository byte/type/symlink/mode restoration. The authoritative contract is `docs/architecture/incremental-execution.md`.
+Q32I added a repository-only execution layer on top of Historical 1.2.0. It converts a validated propagation plan into structured component decisions, complete NonImpactProof objects, profile-registered argv execution, identity-bound local cache decisions, unified validation, rollback and recovery materials. Authority classification is independent of local execution capability; apply is authorized only after the unified fail-closed preflight, and rollback success requires exact repository byte/type/symlink/mode restoration. The authoritative contract is `docs/architecture/incremental-execution.md`.
 
 Selective materialization is permitted only when registry, topology, profile, producer, validator, plan, authoritative-input and generated-output identities all match. Cache is a performance layer, never a second truth source. An affected component cannot claim no impact. Meta-authority changes, unresolved paths and missing fingerprint policy fail closed or require `FULL_REBUILD_REQUIRED`.
 
-Q32I self-hosting changes the registry, topology, profiles, planner, executor, validator and synchronization surfaces, so its own final change request correctly produces `FULL_REBUILD_REQUIRED`. This result is a safety decision, not an implementation failure. Method 1.2.0 remains Current; 1.3.0 remains candidate=true, accepted=false, merged=false and current=false.
+Q32I self-hosting changes the registry, topology, profiles, planner, executor, validator and synchronization surfaces, so its own final change request correctly produces `FULL_REBUILD_REQUIRED`. This result is a safety decision, not an implementation failure. Method 1.3.0 is candidate=false, accepted=true, merged=true and current=true; Q32I is Closed. Method 1.2.0 is Historical.
 
-The Phase D deterministic report, Phase E manifest, candidate seal and exact-head CI/artifact evidence are auditable review inputs. They cannot self-accept the candidate, use its current HEAD as their own validity premise, identify real-world causality, or authorize merge/Current.
+The Phase D deterministic report, Phase E manifest, completion seal and exact-head CI/artifact evidence are auditable inputs. They did not self-accept Q32I or use the closeout HEAD as their own validity premise; independent review, merge, final-main CI, production deployment and live verification remained external lifecycle evidence. They do not identify real-world causality.

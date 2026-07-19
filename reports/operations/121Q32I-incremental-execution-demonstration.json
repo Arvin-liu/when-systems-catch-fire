@@ -1,10 +1,10 @@
 {
   "authority_digests": {
     "data/operations/change-propagation-topology.json": "ad42130e558a067cb3da23d07d655529682c0cef79b524ccdec9c7a3b2813512",
-    "data/operations/component-execution-profiles.json": "29e95c2146a1afe2cf307f081c6fc2162a35aca02cfb2a39dfe8e61d43496dfa",
-    "data/operations/project-components.json": "5ae5b098e3b183cc89eb2bdc64e5a4ffa7481f41841038f8c97ab97484777997"
+    "data/operations/component-execution-profiles.json": "f42eee35f583daf9c6ef35d4493029ebd77d0534cd1aff3f77d339a90f7f471f",
+    "data/operations/project-components.json": "6dea062973b72b69d19a0571da88d04276901623606224fb3cd091d1c02fa5c7"
   },
-  "authority_fingerprint": "271ee70bff4e262630c1a3f2182010defa54a2f94df8b47d6f90ce8a6b095a87",
+  "authority_fingerprint": "3d9f865cd8c2be0770accd20ca76d18a7e17e508373e5c51a682b91eed926a6b",
   "claim_ceiling": "Self-hosting proves deterministic planning over declared repository dependencies only; it is not real-world causal proof.",
   "planner_output": {
     "affected_synchronization_surfaces": [
@@ -25,7 +25,7 @@
       "release.changelog",
       "release.versioning"
     ],
-    "authority_fingerprint": "271ee70bff4e262630c1a3f2182010defa54a2f94df8b47d6f90ce8a6b095a87",
+    "authority_fingerprint": "3d9f865cd8c2be0770accd20ca76d18a7e17e508373e5c51a682b91eed926a6b",
     "claim_ceiling": "declared repository dependency planning only; not truth or causal proof",
     "component_decisions": [
       {
@@ -367,6 +367,7 @@
       "AGENTS.md",
       "AI-HANDOFF.md",
       "AI-START-HERE.md",
+      "ARCHITECTURE.md",
       "CHANGELOG.md",
       "ITERATION.md",
       "README.md",
@@ -393,6 +394,7 @@
       "reports/operations/121Q32I-incremental-execution-demonstration.json",
       "reports/operations/121Q32I-phase-d-validation-closeout.json",
       "reports/operations/121Q32I-phase-d-validation-closeout.md",
+      "schemas/architecture/interactive-system-map-layout.schema.json",
       "schemas/operations/component-execution-profile.schema.json",
       "schemas/operations/incremental-execution-plan.schema.json",
       "schemas/operations/iteration-manifest.schema.json",
@@ -416,6 +418,7 @@
       "tests/test_phase_d_closeout.py",
       "tests/test_phase_e_candidate.py",
       "tests/test_production_execution_authority.py",
+      "tools/generate_interactive_system_map.py",
       "tools/operations/generate_component_profiles.py",
       "tools/operations/plan_incremental_execution.py",
       "tools/operations/run_incremental_execution.py",
@@ -427,7 +430,7 @@
       "tools/validate_human_front_door.py",
       "tools/validate_iteration_sync.py"
     ],
-    "plan_hash": "786993dc4731ac62882ba3c9adf09ca6eace5537c086a236d008eff04e2e3df5",
+    "plan_hash": "3a09efdfd060393519e73a072cb867b41f9b2b81ff9c9c46e7e152a09dc1fe56",
     "preconditions": [
       "clean tree or isolated worktree for apply"
     ],
@@ -438,7 +441,9 @@
       "incremental_execution",
       "iteration",
       "iteration_manifest_contract",
+      "no_l7",
       "no_totality_proof",
+      "no_truth_upgrade",
       "pages_pipeline",
       "project_component_registry",
       "propagation_calculator",

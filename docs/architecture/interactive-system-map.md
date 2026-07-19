@@ -1,6 +1,6 @@
 # 点火完整可点击系统图
 
-Status: `0.2.0 Current registry-derived navigation interface`; `0.3.0` is the Q32I Draft candidate projection.
+Status: `0.3.0 Current registry-derived navigation interface`; `0.2.0` is Historical.
 
 本页说明点火完整系统图的权威来源、生成方式、双表面行为和解释边界。它是当前仓库的导航接口，不是第二份项目真相表、永久唯一总地图、因果图、严格同构证明或理论完备性证明。
 
@@ -10,9 +10,9 @@ Status: `0.2.0 Current registry-derived navigation interface`; `0.3.0` is the Q3
 - [生成的 SVG](../../pages/generated/ignition-system-map.svg)
 - [机器可读 spec](../../data/architecture/interactive-system-map.json)
 
-## Current 与候选权威生成链
+## Current 与 Historical 权威生成链
 
-Current 0.2.0 established this authority chain; the 0.3.0 Draft candidate preserves it while projecting incremental-execution lifecycle metadata:
+Current 0.3.0 preserves the authority chain established by Historical 0.2.0 and projects incremental-execution lifecycle metadata:
 
 `project component registry + typed propagation topology + layout overlay → deterministic generator → materialized spec + SVG → README / Pages`
 
@@ -25,7 +25,7 @@ python3 tools/generate_interactive_system_map.py
 python3 tools/generate_interactive_system_map.py --check
 ```
 
-验证要求 additionally include projection freshness against all three authorities and coverage of the current propagation closure's map impact. The Q32I projection remains 9 groups, 41 nodes, 37 visible edges and L0–L6. `incremental_execution` is deliberately hidden and represented by the existing iteration node with a machine-checkable reason, rather than adding a decorative architecture node.
+验证要求 additionally include projection freshness against all three authorities and coverage of the current propagation closure's map impact. The Q32I Current projection remains 9 groups, 41 nodes, 37 visible edges and L0–L6. `incremental_execution` is deliberately hidden and represented by the existing iteration node with a machine-checkable reason, rather than adding a decorative architecture node.
 
 ## GitHub README 与 Pages
 

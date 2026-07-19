@@ -48,8 +48,8 @@ L6 只能引用 L0-L5，不能反向制造数学真实性、逻辑有效性或�
 - [之元写作法成果](./docs/publication/zhiyuan-writing-showcase.md) — 当前人类成果总索引；每项回链作品、案例来源、点火分析与方法版本。
 - [《当一支军队开始相信自己的背影》](./docs/publication/works/when-an-army-believes-its-own-back.md) — 第一项正式成果正文。
 - [完整可点击系统图](./docs/architecture/interactive-system-map.md) — 单一 spec、生成 SVG、Pages 交互版与 GitHub README 预览的维护入口。
-- [类型化变更传播闭包](./docs/architecture/typed-change-propagation.md) — Current 1.2.0：构件解析、三类关系、同步联合闭包、fixpoint、系统图投影与 residue。
-- [增量执行与选择性物化](./docs/architecture/incremental-execution.md) — 1.3.0 Draft candidate：execution/validation capability 分离、真实 component validator、manual/external 零本地 validator、apply authority preflight、NonImpactProof、cache identity 与完整仓库 rollback/recovery。
+- [类型化变更传播闭包](./docs/architecture/typed-change-propagation.md) — Historical 1.2.0：构件解析、三类关系、同步联合闭包、fixpoint、系统图投影与 residue。
+- [增量执行与选择性物化](./docs/architecture/incremental-execution.md) — Current 1.3.0：execution/validation capability 分离、真实 component validator、manual/external 零本地 validator、apply authority preflight、NonImpactProof、cache identity 与完整仓库 rollback/recovery。
 - [项目构件 registry](./data/operations/project-components.json) / [传播 topology](./data/operations/change-propagation-topology.json) — 机器权威；不构成现实因果或项目完备性证明。
 - [内部范例与反例](./docs/publication/zhiyuan-writing-examples.md) — 《永昭·虚遐》、Codex 全文核验的《每日一诗停更说明》、121Q27 基线及 0.1.0→0.4.0 自我修订史。
 - [后台规格](./templates/publication/zhiyuan-writing-spec.md) — 记录项目来源、同源对应边界、生成运动和返回点火反馈；不得原样变成正文提纲。

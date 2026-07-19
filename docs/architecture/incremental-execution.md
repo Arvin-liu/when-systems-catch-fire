@@ -1,6 +1,6 @@
 # Incremental Execution and Selective Materialization
 
-Status: `121Q32I / method 1.3.0 Draft candidate`. Method 1.2.0 and system map 0.2.0 remain Current. Q32I is not independently reviewed, accepted, merged or Current.
+Status: `121Q32I / method 1.3.0 Current and Closed`. Method 1.2.0 and system map 0.2.0 are Historical; method 1.1.0 and map 0.1.0 are earlier Historical. Q32I passed third independent exact-head review, PR #62 ordinary merge, final-main validation, production Pages deploy and live verification.
 
 ## Purpose and authority
 
@@ -40,10 +40,10 @@ Execution stops at the first failure. Apply snapshots the complete supported rep
 
 The unified validator independently checks profile coverage, path confinement, plan cardinality and hash, affected decisions, proof bindings, execution order and command identity, cache integrity/identity, rollback/recovery consistency and stable error codes. The promoted production probes add one clean-worktree profile materialization test, seven complete-rollback tests, and nine preflight zero-side-effect rejection tests; manual, validation-only, and external profiles never start a producer.
 
-Candidate objects cannot claim Accepted, Merged or Current, cannot cite their own current HEAD as their validity premise, and cannot mix Q33-Q40, lab, shadow or unauthorized Phase E assets. Exact commit IDs may be recorded only as observed identifiers. Independent review remains a separate future action.
+Repository objects cannot self-claim Accepted, Merged or Current or cite their own current HEAD as their validity premise. Q32I did not mix Q33-Q40, lab, shadow or unauthorized Phase E assets; its independent review and merge evidence remain external. Q33 and Q34-Q40 are not started.
 
 ## Compatibility and claim ceiling
 
-Method 1.2.0 remains Current and fully valid without invoking the 1.3 candidate executor. Critical gates may always force full rebuild. Manual and external-attestation components remain non-automatic. No cache hit, test pass, CI run, artifact, graph edge or successful materialization upgrades factual, causal, proof, governance or lifecycle status.
+Method 1.2.0 remains Historical and auditable; method 1.3.0 is Current. Critical gates may always force full rebuild. Manual and external-attestation components remain non-automatic. No cache hit, test pass, CI run, artifact, graph edge or successful materialization upgrades factual, causal, proof, governance or lifecycle status.
 
-Claim ceiling: deterministic repository planning, execution and recovery evidence under declared authorities only; no causal identification, completeness, acceptance, merge or Current claim.
+Claim ceiling: deterministic repository planning, execution and recovery evidence under declared authorities only; no causal identification, truth, value or completeness claim. Lifecycle status comes only from separate review, merge, final-main and production evidence.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Machine validation for the Q32I Phase E self-hosting candidate."""
+"""Machine validation for Q32I Phase E self-hosting and lifecycle closeout."""
 from __future__ import annotations
 
 import argparse
@@ -45,12 +45,23 @@ def validate(root: Path = ROOT) -> dict:
     require(demo.get("authority_fingerprint") == expected_authority, "E_PHASE_E_AUTHORITY", "authority fingerprint mismatch")
     require(demo.get("validator_result") == {"status": "PASS", "error_code": None}, "E_PHASE_E_VALIDATOR", "demonstration validator result is not PASS")
     require(manifest.get("method_version") == "1.3.0" and seal.get("method_version") == "1.3.0", "E_PHASE_E_VERSION", "method version must be 1.3.0")
-    lifecycle = {"candidate": True, "ready_for_gpt_verification": manifest["status"]["ready_for_gpt_verification"], "accepted": False, "merged": False, "current": False}
-    require(manifest.get("status") == lifecycle and seal.get("lifecycle") == lifecycle, "E_PHASE_E_LIFECYCLE", "candidate lifecycle is inflated or inconsistent")
+    lifecycle = manifest.get("status")
+    require(lifecycle == seal.get("lifecycle"), "E_PHASE_E_LIFECYCLE", "manifest and seal lifecycle diverge")
+    candidate_lifecycle = {"candidate": True, "ready_for_gpt_verification": True, "accepted": False, "merged": False, "current": False}
+    current_lifecycle = {"candidate": False, "ready_for_gpt_verification": True, "accepted": True, "merged": True, "current": True}
+    require(lifecycle in (candidate_lifecycle, current_lifecycle), "E_PHASE_E_LIFECYCLE", "lifecycle is inflated or inconsistent")
+    if lifecycle == current_lifecycle:
+        branch_pr = manifest.get("branch_pr", {})
+        require(branch_pr.get("pr_number") == 62 and branch_pr.get("draft") is False and branch_pr.get("merged") is True, "E_PHASE_E_MERGE", "Current lifecycle lacks merged PR #62 evidence")
+        require(branch_pr.get("merge_commit") == "0a13c246172c0338bf8dda5dc08db5a574a8b23f", "E_PHASE_E_MERGE", "Current lifecycle has wrong merge commit")
+        chain = {(item.get("phase"), item.get("commit")) for item in manifest.get("commit_chain", [])}
+        require(("ACCEPTED_CANDIDATE", "0da9ab7a90bc133190d1684a6da4c8f0750021f2") in chain, "E_PHASE_E_REVIEW", "accepted exact candidate is absent")
+        require(("MERGE", "0a13c246172c0338bf8dda5dc08db5a574a8b23f") in chain, "E_PHASE_E_MERGE", "merge evidence is absent")
+        require(manifest.get("head_binding", {}).get("review_receipt_commit") == "e4178f4310822d085ce8201b95236bc2ebc48d69", "E_PHASE_E_REVIEW", "independent review receipt is absent")
     require(manifest.get("self_hosting", {}).get("plan_hash") == actual_plan["plan_hash"] == seal.get("self_hosting", {}).get("plan_hash"), "E_PHASE_E_PLAN_HASH", "plan hash binding mismatch")
     require(manifest.get("q29r", {}).get("sha256") == Q29R_SHA256 == seal.get("q29r", {}).get("sha256") == sha(root / Q29R.relative_to(ROOT)), "E_PHASE_E_Q29R", "Q29R frozen hash mismatch")
     require(seal.get("phase_b", {}).get("head_binding", {}).get("embedded_exact_current_head") is False, "E_PHASE_E_SELF_HEAD", "seal must not embed its own current HEAD")
-    require(seal.get("boundaries", {}).get("phase_e_candidate_only") is True and seal.get("boundaries", {}).get("q33_or_q40_started") is False, "E_PHASE_E_SCOPE", "Phase E scope boundary mismatch")
+    require(seal.get("boundaries", {}).get("phase_e_candidate_only") is (lifecycle == candidate_lifecycle) and seal.get("boundaries", {}).get("q33_or_q40_started") is False, "E_PHASE_E_SCOPE", "Phase E scope boundary mismatch")
     diff = set(subprocess.check_output(["git", "diff", "--name-only", f"{request['base_identity']}...HEAD"], cwd=root, text=True).splitlines())
     if subprocess.check_output(["git", "status", "--porcelain"], cwd=root, text=True).strip():
         diff |= set(subprocess.check_output(["git", "diff", "--name-only", request["base_identity"]], cwd=root, text=True).splitlines())

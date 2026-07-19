@@ -2,7 +2,7 @@
   "added_edges": [],
   "added_nodes": [],
   "base_map_version": "0.2.0-candidate",
-  "candidate_map_version": "0.3.0-candidate",
+  "candidate_map_version": "0.3.0",
   "changed_edges": [],
   "changed_nodes": [
     "iteration",

@@ -1,304 +1,260 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/ignition/operations/iteration-manifest.schema.json",
-  "title": "Ignition Iteration Manifest",
-  "type": "object",
-  "additionalProperties": false,
-  "required": [
-    "method_version",
-    "task_id",
-    "change_classification",
-    "verified_start",
-    "branch_pr",
-    "head_binding",
-    "gap",
-    "claim_ceiling",
-    "status",
-    "impact_matrix",
-    "changed_surfaces",
-    "validation",
-    "rollback_strategy",
-    "remaining_limitations",
-    "receipt_location"
-  ],
-  "properties": {
-    "method_version": { "$ref": "#/$defs/nonblankString" },
-    "completion_seal_path": { "$ref": "#/$defs/nonblankString" },
-    "task_id": { "type": "string", "pattern": "^[A-Za-z0-9._-]+$" },
-    "change_classification": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "string",
-        "enum": [
-          "REPAIR",
-          "CAPABILITY_ADDITION",
-          "INTERFACE_CHANGE",
-          "EVIDENCE_UPDATE",
-          "GOVERNANCE_CHANGE",
-          "RELEASE_OR_CURRENT_STATE_SYNC",
-          "HISTORICAL_ONLY",
-          "OPERATIONS_METHOD"
-        ]
-      },
-      "uniqueItems": true
-    },
-    "verified_start": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["main_head", "source", "verified_at"],
-      "properties": {
-        "main_head": { "$ref": "#/$defs/sha" },
-        "source": { "$ref": "#/$defs/nonblankString" },
-        "verified_at": { "$ref": "#/$defs/nonblankString" }
-      }
-    },
-    "branch_pr": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["branch", "pr_number", "base", "base_head", "draft", "merged"],
-      "properties": {
-        "branch": { "$ref": "#/$defs/nonblankString" },
-        "pr_number": { "type": ["integer", "null"], "minimum": 1 },
-        "base": { "$ref": "#/$defs/nonblankString" },
-        "base_head": { "$ref": "#/$defs/sha" },
-        "draft": { "type": "boolean" },
-        "merged": { "type": "boolean" },
-        "merge_commit": { "$ref": "#/$defs/sha" }
-      }
-    },
-    "head_binding": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "mode",
-        "pr_number",
-        "authority",
-        "receipt_path",
-        "embedded_exact_current_head",
-        "live_refetch_required",
-        "explanation"
-      ],
-      "properties": {
-        "mode": { "const": "external_exact_head_attestation" },
-        "pr_number": { "type": ["integer", "null"], "minimum": 1 },
-        "authority": { "const": "pull_request_body_and_1111_receipt" },
-        "receipt_path": { "$ref": "#/$defs/nonblankString" },
-        "embedded_exact_current_head": { "const": false },
-        "live_refetch_required": { "const": true },
-        "explanation": { "$ref": "#/$defs/nonblankString" }
-      }
-    },
-    "gap": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["summary", "evidence", "smallest_material_action"],
-      "properties": {
-        "summary": { "$ref": "#/$defs/nonblankString" },
-        "evidence": { "$ref": "#/$defs/nonblankStringArray" },
-        "smallest_material_action": { "$ref": "#/$defs/nonblankString" }
-      }
-    },
-    "claim_ceiling": { "$ref": "#/$defs/nonblankString" },
-    "status": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["candidate", "ready_for_gpt_verification", "accepted", "merged", "current"],
-      "properties": {
-        "candidate": { "type": "boolean" },
-        "ready_for_gpt_verification": { "type": "boolean" },
-        "accepted": { "type": "boolean" },
-        "merged": { "type": "boolean" },
-        "current": { "type": "boolean" }
-      }
-    },
-    "impact_matrix": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["surface", "decision", "reason"],
-        "properties": {
-          "surface": { "$ref": "#/$defs/nonblankString" },
-          "decision": { "enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"] },
-          "reason": { "$ref": "#/$defs/nonblankString" }
-        }
-      }
-    },
-    "changed_surfaces": { "$ref": "#/$defs/nonblankStringArray" },
-    "explicitly_unaffected_surfaces": { "$ref": "#/$defs/nonblankStringArray" },
-    "required_synchronization_decisions": { "$ref": "#/$defs/nonblankStringArray" },
-    "schema_tools_tests_workflows_reports_changed": { "$ref": "#/$defs/nonblankStringArray" },
-    "validation": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["local", "remote", "external_exact_head_policy"],
-      "properties": {
-        "local": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/validationItem" } },
-        "remote": { "type": "array", "items": { "$ref": "#/$defs/historicalValidationItem" } },
-        "external_exact_head_policy": { "$ref": "#/$defs/externalAttestationPolicy" }
-      }
-    },
-    "rollback_strategy": { "$ref": "#/$defs/nonblankString" },
-    "remaining_limitations": { "$ref": "#/$defs/nonblankStringArray" },
-    "receipt_location": { "$ref": "#/$defs/nonblankString" },
-    "state_transition": {"$ref": "#/$defs/stateTransition"},
-    "synchronization_closure": {"$ref": "#/$defs/synchronizationClosure"},
-    "propagation_closure": {"$ref": "#/$defs/propagationClosureBinding"},
-    "completion_state": {"$ref": "#/$defs/completionState"}
-    ,"current_method_version": {"const": "1.2.0"}
-    ,"commit_chain": {"type": "array", "minItems": 9, "items": {"type": "object"}}
-    ,"phase_e_assets": {"type": "object"}
-    ,"phase_d_evidence": {"type": "object"}
-    ,"self_hosting": {"type": "object"}
-    ,"q29r": {"type": "object"}
-    ,"contamination_scan": {"type": "object"}
-  },
-  "allOf": [
-    {
-      "if": {"properties": {"method_version": {"enum": ["1.1.0", "1.2.0", "1.3.0"]}}, "required": ["method_version"]},
-      "then": {"required": ["completion_seal_path", "state_transition", "synchronization_closure", "completion_state"]}
-    },
-    {
-      "if": {"properties": {"method_version": {"enum": ["1.2.0", "1.3.0"]}}, "required": ["method_version"]},
-      "then": {"required": ["propagation_closure"]}
-    }
-  ],
   "$defs": {
-    "sha": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
-    "positiveRunId": { "type": "integer", "minimum": 1 },
-    "nonblankString": { "type": "string", "minLength": 1, "pattern": "\\S" },
-    "nonblankStringArray": {
-      "type": "array",
-      "minItems": 1,
-      "items": { "$ref": "#/$defs/nonblankString" },
-      "uniqueItems": true
-    },
-    "validationItem": {
-      "type": "object",
+    "completionState": {
       "additionalProperties": false,
-      "required": ["name", "status", "evidence"],
       "properties": {
-        "name": { "$ref": "#/$defs/nonblankString" },
-        "status": { "$ref": "#/$defs/nonblankString" },
-        "evidence": { "$ref": "#/$defs/nonblankString" },
-        "head": { "$ref": "#/$defs/sha" },
-        "run_id": { "$ref": "#/$defs/positiveRunId" },
-        "conclusion": { "$ref": "#/$defs/nonblankString" }
-      }
-    },
-    "historicalValidationItem": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["name", "status", "evidence", "evidence_scope", "subject_head", "run_id", "conclusion"],
-      "properties": {
-        "name": { "$ref": "#/$defs/nonblankString" },
-        "status": { "$ref": "#/$defs/nonblankString" },
-        "evidence": { "$ref": "#/$defs/nonblankString" },
-        "evidence_scope": { "const": "historical_subject_head_only" },
-        "subject_head": { "$ref": "#/$defs/sha" },
-        "run_id": { "$ref": "#/$defs/positiveRunId" },
-        "conclusion": { "$ref": "#/$defs/nonblankString" }
-      }
-    },
-    "stateTransition": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["subjects", "prior_state", "proposed_state", "changed_dimensions", "source_refs", "maximum_claim_boundary"],
-      "properties": {
-        "subjects": {"$ref": "#/$defs/nonblankStringArray"},
-        "prior_state": {"$ref": "#/$defs/nonblankString"},
-        "proposed_state": {"$ref": "#/$defs/nonblankString"},
-        "changed_dimensions": {
-          "type": "array",
-          "minItems": 1,
-          "items": {"enum": ["capability", "identity", "usage", "handoff", "lifecycle_current_state", "governance", "deployment_rendering", "operations_method"]},
-          "uniqueItems": true
+        "external_synchronization_attested": {
+          "type": "boolean"
         },
-        "source_refs": {"$ref": "#/$defs/nonblankStringArray"},
-        "maximum_claim_boundary": {"$ref": "#/$defs/nonblankString"}
-      }
-    },
-    "surfaceDecision": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["surface_id", "decision", "reason", "evidence_refs", "validation_mode"],
-      "properties": {
-        "surface_id": {"$ref": "#/$defs/nonblankString"},
-        "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]},
-        "reason": {"$ref": "#/$defs/nonblankString"},
-        "evidence_refs": {
-          "type": "array",
-          "minItems": 1,
-          "items": {"$ref": "#/$defs/evidenceReference"},
-          "uniqueItems": true
+        "external_synchronization_required": {
+          "type": "boolean"
         },
-        "validation_mode": {"$ref": "#/$defs/nonblankString"},
-        "derived_from": {"type": "array", "items": {"$ref": "#/$defs/nonblankString"}, "uniqueItems": true}
-      }
-    },
-    "synchronizationClosure": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["registry_path", "registry_version", "surface_decisions", "external_attestations", "unresolved_residue", "external_verification_policy", "live_external_surfaces_verified"],
-      "properties": {
-        "registry_path": {"const": "data/operations/synchronization-surfaces.json"},
-        "registry_version": {"$ref": "#/$defs/nonblankString"},
-        "surface_decisions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/surfaceDecision"}},
-        "external_attestations": {"type": "array", "items": {"$ref": "#/$defs/externalAttestation"}},
-        "unresolved_residue": {"type": "array", "items": {"type": "object"}, "uniqueItems": true},
-        "external_verification_policy": {"$ref": "#/$defs/nonblankString"},
-        "live_external_surfaces_verified": {"const": false}
-      }
+        "implementation_complete": {
+          "type": "boolean"
+        },
+        "project_synchronization_complete": {
+          "type": "boolean"
+        },
+        "repository_synchronization_complete": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "implementation_complete",
+        "repository_synchronization_complete",
+        "external_synchronization_required",
+        "external_synchronization_attested",
+        "project_synchronization_complete"
+      ],
+      "type": "object"
     },
     "evidenceReference": {
-      "type": "string",
-      "pattern": "^([^:\\s][^\\s]*|repo:[^\\s]+|external:(pr_body|1111_receipt|live_refetch|github_actions):[^\\s]+)$"
+      "pattern": "^([^:\\s][^\\s]*|repo:[^\\s]+|external:(pr_body|1111_receipt|live_refetch|github_actions):[^\\s]+)$",
+      "type": "string"
     },
     "externalAttestation": {
-      "type": "object",
       "additionalProperties": false,
-      "required": ["surface_id", "stage", "status", "authority", "evidence_refs", "live_state_locally_verifiable"],
       "properties": {
-        "surface_id": {"$ref": "#/$defs/nonblankString"},
-        "stage": {"enum": ["pre_merge", "post_merge"]},
-        "status": {"enum": ["pending", "attested"]},
-        "authority": {"const": "pull_request_body_and_1111_receipt"},
+        "authority": {
+          "const": "pull_request_body_and_1111_receipt"
+        },
         "evidence_refs": {
-          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidenceReference"
+          },
           "minItems": 1,
-          "items": {"$ref": "#/$defs/evidenceReference"},
+          "type": "array",
           "uniqueItems": true
         },
-        "live_state_locally_verifiable": {"const": false}
-      }
+        "live_state_locally_verifiable": {
+          "const": false
+        },
+        "stage": {
+          "enum": [
+            "pre_merge",
+            "post_merge"
+          ]
+        },
+        "status": {
+          "enum": [
+            "pending",
+            "attested"
+          ]
+        },
+        "surface_id": {
+          "$ref": "#/$defs/nonblankString"
+        }
+      },
+      "required": [
+        "surface_id",
+        "stage",
+        "status",
+        "authority",
+        "evidence_refs",
+        "live_state_locally_verifiable"
+      ],
+      "type": "object"
     },
-    "completionState": {
-      "type": "object",
+    "externalAttestationPolicy": {
       "additionalProperties": false,
-      "required": ["implementation_complete", "repository_synchronization_complete", "external_synchronization_required", "external_synchronization_attested", "project_synchronization_complete"],
       "properties": {
-        "implementation_complete": {"type": "boolean"},
-        "repository_synchronization_complete": {"type": "boolean"},
-        "external_synchronization_required": {"type": "boolean"},
-        "external_synchronization_attested": {"type": "boolean"},
-        "project_synchronization_complete": {"type": "boolean"}
-      }
+        "authority": {
+          "const": "pull_request_body_and_1111_receipt"
+        },
+        "live_refetch_before_acceptance_or_merge": {
+          "const": true
+        },
+        "required": {
+          "const": true
+        },
+        "required_workflows": {
+          "items": {
+            "enum": [
+              "foundation-validation",
+              "function-os-ci"
+            ]
+          },
+          "minItems": 2,
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "required",
+        "authority",
+        "required_workflows",
+        "live_refetch_before_acceptance_or_merge"
+      ],
+      "type": "object"
     },
-    "propagationDecision": {
-      "type": "object",
+    "historicalValidationItem": {
       "additionalProperties": false,
-      "required": ["item_id", "decision", "reason"],
       "properties": {
-        "item_id": {"$ref": "#/$defs/nonblankString"},
-        "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]},
-        "reason": {"$ref": "#/$defs/nonblankString"}
-      }
+        "conclusion": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "evidence": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "evidence_scope": {
+          "const": "historical_subject_head_only"
+        },
+        "name": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "run_id": {
+          "$ref": "#/$defs/positiveRunId"
+        },
+        "status": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "subject_head": {
+          "$ref": "#/$defs/sha"
+        }
+      },
+      "required": [
+        "name",
+        "status",
+        "evidence",
+        "evidence_scope",
+        "subject_head",
+        "run_id",
+        "conclusion"
+      ],
+      "type": "object"
+    },
+    "nonblankString": {
+      "minLength": 1,
+      "pattern": "\\S",
+      "type": "string"
+    },
+    "nonblankStringArray": {
+      "items": {
+        "$ref": "#/$defs/nonblankString"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "positiveRunId": {
+      "minimum": 1,
+      "type": "integer"
     },
     "propagationClosureBinding": {
-      "type": "object",
       "additionalProperties": false,
+      "properties": {
+        "base_identity": {
+          "$ref": "#/$defs/sha"
+        },
+        "closure_complete": {
+          "type": "boolean"
+        },
+        "closure_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "closure_path": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "component_decisions": {
+          "items": {
+            "$ref": "#/$defs/propagationDecision"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "head_identity": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "impact_report_path": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "registry_derived_surfaces": {
+          "$ref": "#/$defs/nonblankStringArray"
+        },
+        "request_path": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "residue_path": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "resolved_components": {
+          "$ref": "#/$defs/nonblankStringArray"
+        },
+        "seed_components": {
+          "$ref": "#/$defs/nonblankStringArray"
+        },
+        "seed_paths": {
+          "$ref": "#/$defs/nonblankStringArray"
+        },
+        "surface_decisions": {
+          "items": {
+            "$ref": "#/$defs/propagationDecision"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "system_map_delta_path": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "system_map_impact": {
+          "additionalProperties": false,
+          "properties": {
+            "decision": {
+              "enum": [
+                "CHANGE",
+                "NO_CHANGE_WITH_REASON"
+              ]
+            },
+            "delta_path": {
+              "$ref": "#/$defs/nonblankString"
+            },
+            "reason": {
+              "$ref": "#/$defs/nonblankString"
+            }
+          },
+          "required": [
+            "decision",
+            "reason",
+            "delta_path"
+          ],
+          "type": "object"
+        },
+        "typed_path_ids": {
+          "items": {
+            "$ref": "#/$defs/nonblankString"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "unresolved_residue": {
+          "items": {
+            "$ref": "#/$defs/nonblankString"
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
       "required": [
         "request_path",
         "closure_path",
@@ -319,51 +275,568 @@
         "unresolved_residue",
         "closure_complete"
       ],
-      "properties": {
-        "request_path": {"$ref": "#/$defs/nonblankString"},
-        "closure_path": {"$ref": "#/$defs/nonblankString"},
-        "impact_report_path": {"$ref": "#/$defs/nonblankString"},
-        "system_map_delta_path": {"$ref": "#/$defs/nonblankString"},
-        "residue_path": {"$ref": "#/$defs/nonblankString"},
-        "closure_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-        "base_identity": {"$ref": "#/$defs/sha"},
-        "head_identity": {"$ref": "#/$defs/nonblankString"},
-        "seed_paths": {"$ref": "#/$defs/nonblankStringArray"},
-        "seed_components": {"$ref": "#/$defs/nonblankStringArray"},
-        "resolved_components": {"$ref": "#/$defs/nonblankStringArray"},
-        "typed_path_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblankString"}, "uniqueItems": true},
-        "component_decisions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/propagationDecision"}},
-        "surface_decisions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/propagationDecision"}},
-        "registry_derived_surfaces": {"$ref": "#/$defs/nonblankStringArray"},
-        "system_map_impact": {
-          "type": "object",
-          "additionalProperties": false,
-          "required": ["decision", "reason", "delta_path"],
-          "properties": {
-            "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON"]},
-            "reason": {"$ref": "#/$defs/nonblankString"},
-            "delta_path": {"$ref": "#/$defs/nonblankString"}
-          }
-        },
-        "unresolved_residue": {"type": "array", "items": {"$ref": "#/$defs/nonblankString"}, "uniqueItems": true},
-        "closure_complete": {"type": "boolean"}
-      }
+      "type": "object"
     },
-    "externalAttestationPolicy": {
-      "type": "object",
+    "propagationDecision": {
       "additionalProperties": false,
-      "required": ["required", "authority", "required_workflows", "live_refetch_before_acceptance_or_merge"],
       "properties": {
-        "required": { "const": true },
-        "authority": { "const": "pull_request_body_and_1111_receipt" },
-        "required_workflows": {
+        "decision": {
+          "enum": [
+            "CHANGE",
+            "NO_CHANGE_WITH_REASON",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "item_id": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "reason": {
+          "$ref": "#/$defs/nonblankString"
+        }
+      },
+      "required": [
+        "item_id",
+        "decision",
+        "reason"
+      ],
+      "type": "object"
+    },
+    "sha": {
+      "pattern": "^[0-9a-f]{40}$",
+      "type": "string"
+    },
+    "stateTransition": {
+      "additionalProperties": false,
+      "properties": {
+        "changed_dimensions": {
+          "items": {
+            "enum": [
+              "capability",
+              "identity",
+              "usage",
+              "handoff",
+              "lifecycle_current_state",
+              "governance",
+              "deployment_rendering",
+              "operations_method"
+            ]
+          },
+          "minItems": 1,
           "type": "array",
-          "items": { "enum": ["foundation-validation", "function-os-ci"] },
-          "minItems": 2,
           "uniqueItems": true
         },
-        "live_refetch_before_acceptance_or_merge": { "const": true }
+        "maximum_claim_boundary": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "prior_state": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "proposed_state": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "source_refs": {
+          "$ref": "#/$defs/nonblankStringArray"
+        },
+        "subjects": {
+          "$ref": "#/$defs/nonblankStringArray"
+        }
+      },
+      "required": [
+        "subjects",
+        "prior_state",
+        "proposed_state",
+        "changed_dimensions",
+        "source_refs",
+        "maximum_claim_boundary"
+      ],
+      "type": "object"
+    },
+    "surfaceDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "decision": {
+          "enum": [
+            "CHANGE",
+            "NO_CHANGE_WITH_REASON",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "derived_from": {
+          "items": {
+            "$ref": "#/$defs/nonblankString"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "items": {
+            "$ref": "#/$defs/evidenceReference"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "reason": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "surface_id": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "validation_mode": {
+          "$ref": "#/$defs/nonblankString"
+        }
+      },
+      "required": [
+        "surface_id",
+        "decision",
+        "reason",
+        "evidence_refs",
+        "validation_mode"
+      ],
+      "type": "object"
+    },
+    "synchronizationClosure": {
+      "additionalProperties": false,
+      "properties": {
+        "external_attestations": {
+          "items": {
+            "$ref": "#/$defs/externalAttestation"
+          },
+          "type": "array"
+        },
+        "external_verification_policy": {
+          "$ref": "#/$defs/nonblankString"
+        },
+      "live_external_surfaces_verified": {
+        "type": "boolean"
+        },
+        "registry_path": {
+          "const": "data/operations/synchronization-surfaces.json"
+        },
+        "registry_version": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "surface_decisions": {
+          "items": {
+            "$ref": "#/$defs/surfaceDecision"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "unresolved_residue": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "registry_path",
+        "registry_version",
+        "surface_decisions",
+        "external_attestations",
+        "unresolved_residue",
+        "external_verification_policy",
+        "live_external_surfaces_verified"
+      ],
+      "type": "object"
+    },
+    "validationItem": {
+      "additionalProperties": false,
+      "properties": {
+        "conclusion": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "evidence": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "head": {
+          "$ref": "#/$defs/sha"
+        },
+        "name": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "run_id": {
+          "$ref": "#/$defs/positiveRunId"
+        },
+        "status": {
+          "$ref": "#/$defs/nonblankString"
+        }
+      },
+      "required": [
+        "name",
+        "status",
+        "evidence"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://example.invalid/ignition/operations/iteration-manifest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "method_version": {
+            "enum": [
+              "1.1.0",
+              "1.2.0",
+              "1.3.0"
+            ]
+          }
+        },
+        "required": [
+          "method_version"
+        ]
+      },
+      "then": {
+        "required": [
+          "completion_seal_path",
+          "state_transition",
+          "synchronization_closure",
+          "completion_state"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "method_version": {
+            "enum": [
+              "1.2.0",
+              "1.3.0"
+            ]
+          }
+        },
+        "required": [
+          "method_version"
+        ]
+      },
+      "then": {
+        "required": [
+          "propagation_closure"
+        ]
       }
     }
-  }
+  ],
+  "properties": {
+    "branch_pr": {
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "base_head": {
+          "$ref": "#/$defs/sha"
+        },
+        "branch": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "draft": {
+          "type": "boolean"
+        },
+        "merge_commit": {
+          "$ref": "#/$defs/sha"
+        },
+        "merged": {
+          "type": "boolean"
+        },
+        "pr_number": {
+          "minimum": 1,
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "branch",
+        "pr_number",
+        "base",
+        "base_head",
+        "draft",
+        "merged"
+      ],
+      "type": "object"
+    },
+    "change_classification": {
+      "items": {
+        "enum": [
+          "REPAIR",
+          "CAPABILITY_ADDITION",
+          "INTERFACE_CHANGE",
+          "EVIDENCE_UPDATE",
+          "GOVERNANCE_CHANGE",
+          "RELEASE_OR_CURRENT_STATE_SYNC",
+          "HISTORICAL_ONLY",
+          "OPERATIONS_METHOD"
+        ],
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "changed_surfaces": {
+      "$ref": "#/$defs/nonblankStringArray"
+    },
+    "claim_ceiling": {
+      "$ref": "#/$defs/nonblankString"
+    },
+    "commit_chain": {
+      "items": {
+        "type": "object"
+      },
+      "minItems": 9,
+      "type": "array"
+    },
+    "completion_seal_path": {
+      "$ref": "#/$defs/nonblankString"
+    },
+    "completion_state": {
+      "$ref": "#/$defs/completionState"
+    },
+    "contamination_scan": {
+      "type": "object"
+    },
+    "current_method_version": {
+      "const": "1.3.0"
+    },
+    "explicitly_unaffected_surfaces": {
+      "$ref": "#/$defs/nonblankStringArray"
+    },
+    "gap": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "$ref": "#/$defs/nonblankStringArray"
+        },
+        "smallest_material_action": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "summary": {
+          "$ref": "#/$defs/nonblankString"
+        }
+      },
+      "required": [
+        "summary",
+        "evidence",
+        "smallest_material_action"
+      ],
+      "type": "object"
+    },
+    "head_binding": {
+      "additionalProperties": false,
+      "properties": {
+        "authority": {
+          "const": "pull_request_body_and_1111_receipt"
+        },
+        "embedded_exact_current_head": {
+          "const": false
+        },
+        "explanation": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "live_refetch_required": {
+          "const": true
+        },
+        "mode": {
+          "const": "external_exact_head_attestation"
+        },
+        "pr_number": {
+          "minimum": 1,
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "receipt_path": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "accepted_candidate_head": {
+          "$ref": "#/$defs/sha"
+        },
+        "review_receipt_commit": {
+          "$ref": "#/$defs/sha"
+        }
+      },
+      "required": [
+        "mode",
+        "pr_number",
+        "authority",
+        "receipt_path",
+        "embedded_exact_current_head",
+        "live_refetch_required",
+        "explanation"
+      ],
+      "type": "object"
+    },
+    "impact_matrix": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "decision": {
+            "enum": [
+              "CHANGE",
+              "NO_CHANGE_WITH_REASON",
+              "NOT_APPLICABLE"
+            ]
+          },
+          "reason": {
+            "$ref": "#/$defs/nonblankString"
+          },
+          "surface": {
+            "$ref": "#/$defs/nonblankString"
+          }
+        },
+        "required": [
+          "surface",
+          "decision",
+          "reason"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "method_version": {
+      "$ref": "#/$defs/nonblankString"
+    },
+    "phase_d_evidence": {
+      "type": "object"
+    },
+    "phase_e_assets": {
+      "type": "object"
+    },
+    "propagation_closure": {
+      "$ref": "#/$defs/propagationClosureBinding"
+    },
+    "q29r": {
+      "type": "object"
+    },
+    "receipt_location": {
+      "$ref": "#/$defs/nonblankString"
+    },
+    "remaining_limitations": {
+      "$ref": "#/$defs/nonblankStringArray"
+    },
+    "required_synchronization_decisions": {
+      "$ref": "#/$defs/nonblankStringArray"
+    },
+    "rollback_strategy": {
+      "$ref": "#/$defs/nonblankString"
+    },
+    "schema_tools_tests_workflows_reports_changed": {
+      "$ref": "#/$defs/nonblankStringArray"
+    },
+    "self_hosting": {
+      "type": "object"
+    },
+    "state_transition": {
+      "$ref": "#/$defs/stateTransition"
+    },
+    "status": {
+      "additionalProperties": false,
+      "properties": {
+        "accepted": {
+          "type": "boolean"
+        },
+        "candidate": {
+          "type": "boolean"
+        },
+        "current": {
+          "type": "boolean"
+        },
+        "merged": {
+          "type": "boolean"
+        },
+        "ready_for_gpt_verification": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "candidate",
+        "ready_for_gpt_verification",
+        "accepted",
+        "merged",
+        "current"
+      ],
+      "type": "object"
+    },
+    "synchronization_closure": {
+      "$ref": "#/$defs/synchronizationClosure"
+    },
+    "task_id": {
+      "pattern": "^[A-Za-z0-9._-]+$",
+      "type": "string"
+    },
+    "validation": {
+      "additionalProperties": false,
+      "properties": {
+        "external_exact_head_policy": {
+          "$ref": "#/$defs/externalAttestationPolicy"
+        },
+        "local": {
+          "items": {
+            "$ref": "#/$defs/validationItem"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "remote": {
+          "items": {
+            "$ref": "#/$defs/historicalValidationItem"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "local",
+        "remote",
+        "external_exact_head_policy"
+      ],
+      "type": "object"
+    },
+    "verified_start": {
+      "additionalProperties": false,
+      "properties": {
+        "main_head": {
+          "$ref": "#/$defs/sha"
+        },
+        "source": {
+          "$ref": "#/$defs/nonblankString"
+        },
+        "verified_at": {
+          "$ref": "#/$defs/nonblankString"
+        }
+      },
+      "required": [
+        "main_head",
+        "source",
+        "verified_at"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "method_version",
+    "task_id",
+    "change_classification",
+    "verified_start",
+    "branch_pr",
+    "head_binding",
+    "gap",
+    "claim_ceiling",
+    "status",
+    "impact_matrix",
+    "changed_surfaces",
+    "validation",
+    "rollback_strategy",
+    "remaining_limitations",
+    "receipt_location"
+  ],
+  "title": "Ignition Iteration Manifest",
+  "type": "object"
 }

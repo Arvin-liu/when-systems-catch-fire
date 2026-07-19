@@ -1,6 +1,6 @@
 # Ignition Execution Result Template
 
-Current method contract: `ITERATION.md` 1.2.0. For the 1.3.0 Draft candidate, report the plan hash, authority identity, cache disposition, rollback/recovery outcome and stable validator error code.
+Current method contract: `ITERATION.md` 1.3.0; 1.2.0 is Historical. For the Current 1.3.0 contract, report the plan hash, authority identity, cache disposition, rollback/recovery outcome and stable validator error code.
 
 Status: `<STATUS>`
 

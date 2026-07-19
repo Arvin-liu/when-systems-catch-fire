@@ -3,11 +3,11 @@
   "$id": "https://example.invalid/ignition/architecture/interactive-system-map-layout.schema.json",
   "type": "object",
   "additionalProperties": false,
-  "required": ["layout_version", "map_candidate_version", "current_map_version", "title", "subtitle", "repository_url", "geometry", "groups", "node_order"],
+  "required": ["layout_version", "current_map_version", "historical_map_version", "title", "subtitle", "repository_url", "geometry", "groups", "node_order"],
   "properties": {
     "layout_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
-    "map_candidate_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+-candidate$"},
     "current_map_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+    "historical_map_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
     "title": {"type": "string", "minLength": 1},
     "subtitle": {"type": "string", "minLength": 1},
     "repository_url": {"type": "string", "pattern": "^https://github.com/"},

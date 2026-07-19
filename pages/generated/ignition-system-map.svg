@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1968" width="1800" height="1968" role="img" aria-labelledby="map-title map-description">
   <title id="map-title">点火完整可点击系统图</title>
-  <desc id="map-description">当前 0.2.0 + 0.3.0 Draft 增量执行投影；点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。</desc>
+  <desc id="map-description">当前 0.3.0 增量执行投影；0.2.0 为 Historical。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。</desc>
   <style>
       .map-bg{fill:#f8fafc}.map-title{font:700 30px system-ui,sans-serif;fill:#0f172a}
       .map-subtitle{font:400 15px system-ui,sans-serif;fill:#475569}
@@ -23,7 +23,7 @@
   </defs>
   <rect class="map-bg" x="0" y="0" width="1800" height="1968" />
   <text class="map-title" x="32" y="42">点火完整可点击系统图</text>
-  <text class="map-subtitle" x="32" y="72">当前 0.2.0 + 0.3.0 Draft 增量执行投影；点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。</text>
+  <text class="map-subtitle" x="32" y="72">当前 0.3.0 增量执行投影；0.2.0 为 Historical。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。</text>
   <text class="boundary-note" x="32" y="98">点击任一构件打开 canonical 目标；视觉邻近与连线不自动表示因果、严格同构或理论完备。</text>
   <rect class="cluster" x="32" y="122" width="560" height="454" rx="16" stroke="#2563eb" />
   <text class="cluster-title" x="54" y="154" fill="#2563eb">前门 / 导航</text>

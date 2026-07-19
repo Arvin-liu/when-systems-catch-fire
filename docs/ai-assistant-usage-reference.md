@@ -1,6 +1,6 @@
 # AI 助手使用参考
 
-版本事实：当前迭代方法为 `1.2.0`，历史方法为 `1.1.0`，Q32I `1.3.0` 是未独立接受、未 merge、非 Current 的 Draft candidate；当前系统图为 `0.2.0`，Draft candidate map 为 `0.3.0`。Q32I 中 execution capability 与 validation capability 必须分离，manual/external 不得调用本地 validator。
+版本事实：当前迭代方法为 `1.3.0`，当前系统图为 `0.3.0`；`1.2.0`／`0.2.0` 为 Historical，`1.1.0`／`0.1.0` 为更早 Historical。Q32I 已独立接受、由 PR #62 普通合并并 Closed/Current。Q32I 中 execution capability 与 validation capability 必须分离，manual/external 不得调用本地 validator。
 
 这页给第一次接触点火项目的人使用。你不必先读完整仓库，可以先把下面的提示词复制给自己常用的 AI 助手，让它帮你做第一轮阅读。
 
@@ -86,7 +86,7 @@ llms.txt
 
 121Q32T 已将迭代方法 1.2.0 与系统图 0.2.0 收口为 Current。AI 必须从构件 registry、传播 topology 和同步 registry 重算 fixpoint，核对逐构件／逐表面决定、map delta、residue 和 closure hash。三个 relation domain 的权限不得混合：现实／理论 causal candidate 不自动驱动仓库变更，Git diff、文件依赖、遍历或可视连线也不能被写成因果证明。
 
-Q32I 的 1.3.0 增量执行是 Draft candidate。试用时先读取 `docs/architecture/incremental-execution.md`，区分 authority 类型与 automatic / validation-only / manual / external 执行能力，只使用 profile 登记的结构化命令。Apply 必须在任何子进程或写入前通过统一权威预检；rollback 只有在字节、类型、symlink 和适用 mode 全部恢复时才可称 `restored`。同时核对 NonImpactProof、plan hash、authority fingerprint 与 cache 完整身份。Cache 不是第二真相源；受影响构件不能声称无影响；关键权威变更必须 full rebuild。候选、CI 和 artifact 均不能自我升级为 Accepted、Merged 或 Current。
+Q32I 的 1.3.0 增量执行是 Current。试用时先读取 `docs/architecture/incremental-execution.md`，区分 authority 类型与 automatic / validation-only / manual / external 执行能力，只使用 profile 登记的结构化命令。Apply 必须在任何子进程或写入前通过统一权威预检；rollback 只有在字节、类型、symlink 和适用 mode 全部恢复时才可称 `restored`。同时核对 NonImpactProof、plan hash、authority fingerprint 与 cache 完整身份。Cache 不是第二真相源；受影响构件不能声称无影响；关键权威变更必须 full rebuild。CI 和 artifact 均不能自我建立 Accepted、Merged 或 Current；Q33 与 Q34—Q40 尚未启动。
 
 L6 公共写作的当前接口是之元写作法 [`0.4.0`](./publication/zhiyuan-writing-method.md)及其[后台规格](../templates/publication/zhiyuan-writing-spec.md)所定义的双来源素材池；`0.3.0` 保留为历史版本。AI 必须区分 `external_input` 与 `ignition_increment`：后者可包括 claim、argument、mechanism、map、gap、residue、Q12—Q14、MCF／PSD／ARN 投影、分析报告和 provenance-gated 返回项，但必须保存 canonical 路径、版本、生成任务、claim ceiling 与原始来源回链。点火派生产物不能被算作新的独立证据。试读／发布反馈仍须登记主体、渠道、时间、原文范围和解释限制，才可返回适用流程。
 

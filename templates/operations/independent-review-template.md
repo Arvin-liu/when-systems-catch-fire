@@ -1,6 +1,6 @@
 # Ignition Independent Review Template
 
-Current method contract: `ITERATION.md` 1.2.0. Method 1.3.0 incremental execution remains Draft until a separate reviewer recomputes the plan and authority identities and independently accepts it.
+Current method contract: `ITERATION.md` 1.3.0; 1.2.0 is Historical. Current method 1.3.0 retains separate review, plan recomputation and authority-identity requirements for future changes.
 
 Review target:
 

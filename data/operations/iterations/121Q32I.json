@@ -3,8 +3,9 @@
     "base": "main",
     "base_head": "4097e610eebfc65c739df4fe7d2900161c204a9d",
     "branch": "agent/121q32i-incremental-execution",
-    "draft": true,
-    "merged": false,
+    "draft": false,
+    "merge_commit": "0a13c246172c0338bf8dda5dc08db5a574a8b23f",
+    "merged": true,
     "pr_number": 62
   },
   "change_classification": [
@@ -79,7 +80,7 @@
     "tools/validate_human_front_door.py",
     "tools/validate_iteration_sync.py"
   ],
-  "claim_ceiling": "validated repository dependency planning and selective materialization candidate only; no real-world causal identification",
+  "claim_ceiling": "Validated repository-declared dependency planning, execution, validation and selective materialization only; no real-world causal identification, truth, value or completeness.",
   "commit_chain": [
     {
       "commit": "9bfba4bd03d1dff0b266940fe3964e770314d131",
@@ -116,14 +117,22 @@
     {
       "commit": "84e659a566b686098639ab0af9e16ab4ec162f03",
       "phase": "D4"
+    },
+    {
+      "commit": "0da9ab7a90bc133190d1684a6da4c8f0750021f2",
+      "phase": "ACCEPTED_CANDIDATE"
+    },
+    {
+      "commit": "0a13c246172c0338bf8dda5dc08db5a574a8b23f",
+      "phase": "MERGE"
     }
   ],
   "completion_seal_path": "reports/operations/121Q32I-completion-seal.json",
   "completion_state": {
-    "external_synchronization_attested": false,
+    "external_synchronization_attested": true,
     "external_synchronization_required": true,
     "implementation_complete": true,
-    "project_synchronization_complete": false,
+    "project_synchronization_complete": true,
     "repository_synchronization_complete": true
   },
   "contamination_scan": {
@@ -131,7 +140,7 @@
     "q33_q40": false,
     "shadow": false
   },
-  "current_method_version": "1.2.0",
+  "current_method_version": "1.3.0",
   "gap": {
     "evidence": [
       "reports/operations/121Q32I-phase-d-validation-closeout.json"
@@ -140,13 +149,15 @@
     "summary": "Method 1.2 computes propagation but does not safely plan, execute, cache, validate and recover selective materialization."
   },
   "head_binding": {
+    "accepted_candidate_head": "0da9ab7a90bc133190d1684a6da4c8f0750021f2",
     "authority": "pull_request_body_and_1111_receipt",
     "embedded_exact_current_head": false,
     "explanation": "Exact candidate HEAD and mutable CI/artifact evidence are externally attested after commit; the repository object never treats its own HEAD as validity evidence.",
     "live_refetch_required": true,
     "mode": "external_exact_head_attestation",
     "pr_number": 62,
-    "receipt_path": "agent-results/IGNITION-20260718-121Q32I-CODEX-V12-phase-e-result.md"
+    "receipt_path": "agent-results/IGNITION-20260719-121Q32I-CODEX-V18-merge-current-closeout-result.md",
+    "review_receipt_commit": "e4178f4310822d085ce8201b95236bc2ebc48d69"
   },
   "impact_matrix": [
     {
@@ -488,268 +499,268 @@
   "propagation_closure": {
     "base_identity": "4097e610eebfc65c739df4fe7d2900161c204a9d",
     "closure_complete": true,
-    "closure_hash": "e392ebef31fc01842eaff1520c1c6739480d1c3d39a07729818968dfdb85f50f",
+    "closure_hash": "be079995b291e41dcb4c9b8ffdd1997e05f9eef5763da91c9584f4ef8169f705",
     "closure_path": "data/operations/propagation/121Q32I-closure.json",
     "component_decisions": [
       {
         "decision": "CHANGE",
         "item_id": "accepted_work",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "ai_guide",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "arn",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "candidate_return",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "case_source",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "charter",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "current_state",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "external_input",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "feedback_routes",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "foundation",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "foundation_data",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "function_os",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "historical_reports",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "ignition_increment",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "incremental_execution",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "iteration",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "iteration_manifest_contract",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "l0",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "l1",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "l2",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "l3",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "l4",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "l5",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "l6",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "licensing",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "mcf",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "no_l7",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "no_totality_proof",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "no_truth_upgrade",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "pages_pipeline",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "point_fire_analysis",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "project_component_registry",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "propagation_calculator",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "propagation_topology",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "provenance_capture",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "psd",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "public_response",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "q12",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "q13",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "q14",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "readme",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "showcase",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "showcase_registry",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "source_pool",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "summary",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "sustainability",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "sync",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "system_map",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "system_map_layout",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "system_map_projection",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "usage",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "zhiyuan_method",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       }
     ],
     "head_identity": "external_exact_head_attestation",
@@ -781,7 +792,9 @@
       "incremental_execution",
       "iteration",
       "iteration_manifest_contract",
+      "no_l7",
       "no_totality_proof",
+      "no_truth_upgrade",
       "pages_pipeline",
       "project_component_registry",
       "propagation_calculator",
@@ -800,6 +813,7 @@
       "incremental_execution",
       "iteration",
       "iteration_manifest_contract",
+      "no_l7",
       "pages_pipeline",
       "project_component_registry",
       "propagation_calculator",
@@ -816,6 +830,7 @@
       "AGENTS.md",
       "AI-HANDOFF.md",
       "AI-START-HERE.md",
+      "ARCHITECTURE.md",
       "CHANGELOG.md",
       "ITERATION.md",
       "README.md",
@@ -842,6 +857,7 @@
       "reports/operations/121Q32I-incremental-execution-demonstration.json",
       "reports/operations/121Q32I-phase-d-validation-closeout.json",
       "reports/operations/121Q32I-phase-d-validation-closeout.md",
+      "schemas/architecture/interactive-system-map-layout.schema.json",
       "schemas/operations/component-execution-profile.schema.json",
       "schemas/operations/incremental-execution-plan.schema.json",
       "schemas/operations/iteration-manifest.schema.json",
@@ -865,6 +881,7 @@
       "tests/test_phase_d_closeout.py",
       "tests/test_phase_e_candidate.py",
       "tests/test_production_execution_authority.py",
+      "tools/generate_interactive_system_map.py",
       "tools/operations/generate_component_profiles.py",
       "tools/operations/plan_incremental_execution.py",
       "tools/operations/run_incremental_execution.py",
@@ -880,82 +897,82 @@
       {
         "decision": "CHANGE",
         "item_id": "agent.handoff",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "ai.start",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "external.pages_homepage",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "human.ai_guide",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "human.current_state",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "human.pages_source",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "human.readme",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "human.summary",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "human.usage",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "machine.llms",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "method.iteration",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "method.result_template",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "method.review_template",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "method.task_template",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "release.changelog",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       },
       {
         "decision": "CHANGE",
         "item_id": "release.versioning",
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces."
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces."
       }
     ],
     "system_map_delta_path": "data/operations/propagation/121Q32I-system-map-delta.json",
@@ -974,6 +991,8 @@
       "manifest_tracks_iteration",
       "map_current_state_no_totality",
       "map_iteration_sync",
+      "map_no_l7_truth",
+      "map_no_truth_totality",
       "map_readme_current",
       "pages_depends_readme",
       "projection_publishes_pages",
@@ -989,7 +1008,7 @@
     "modified": false,
     "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
   },
-  "receipt_location": "agent-results/IGNITION-20260718-121Q32I-CODEX-V12-phase-e-result.md",
+  "receipt_location": "agent-results/IGNITION-20260719-121Q32I-CODEX-V18-merge-current-closeout-result.md",
   "remaining_limitations": [
     "Independent review is not executed in this phase.",
     "Draft candidate is not Accepted, Merged or Current.",
@@ -1052,7 +1071,7 @@
   "self_hosting": {
     "decision": "FULL_REBUILD_REQUIRED",
     "demonstration_path": "reports/operations/121Q32I-incremental-execution-demonstration.json",
-    "plan_hash": "786993dc4731ac62882ba3c9adf09ca6eace5537c086a236d008eff04e2e3df5"
+    "plan_hash": "3a09efdfd060393519e73a072cb867b41f9b2b81ff9c9c46e7e152a09dc1fe56"
   },
   "state_transition": {
     "changed_dimensions": [
@@ -1064,22 +1083,24 @@
       "deployment_rendering",
       "operations_method"
     ],
-    "maximum_claim_boundary": "Repository dependency planning and materialization only.",
-    "prior_state": "Method 1.2.0 is Current.",
-    "proposed_state": "Method 1.3.0 is a Draft candidate for independent review.",
+    "maximum_claim_boundary": "Repository-declared dependency planning, execution, validation and selective materialization only; no real-world causality, truth, value or completeness.",
+    "prior_state": "Method 1.3.0 and map 0.3.0 were accepted exact-head candidates merged by PR #62 but not yet Current.",
+    "proposed_state": "Method 1.3.0 and map 0.3.0 are Current; Q32I is Closed; Q33 and Q34-Q40 are not started.",
     "source_refs": [
-      "docs/architecture/incremental-execution.md"
+      "docs/architecture/incremental-execution.md",
+      "external:pr_body:62",
+      "external:1111_receipt:V18-final-main-attestation"
     ],
     "subjects": [
-      "Ignition Iteration Method 1.3.0 Draft candidate",
+      "Ignition Iteration Method 1.3.0 Current",
       "incremental execution and selective materialization"
     ]
   },
   "status": {
-    "accepted": false,
-    "candidate": true,
-    "current": false,
-    "merged": false,
+    "accepted": true,
+    "candidate": false,
+    "current": true,
+    "merged": true,
     "ready_for_gpt_verification": true
   },
   "synchronization_closure": {
@@ -1087,15 +1108,16 @@
       {
         "authority": "pull_request_body_and_1111_receipt",
         "evidence_refs": [
-          "external:pr_body:pending"
+          "external:pr_body:62",
+          "external:1111_receipt:V18-final-main-attestation"
         ],
         "live_state_locally_verifiable": false,
         "stage": "post_merge",
-        "status": "pending",
+        "status": "attested",
         "surface_id": "external.pages_homepage"
       }
     ],
-    "external_verification_policy": "Live exact-head evidence is external and must be re-fetched before review, acceptance or merge.",
+    "external_verification_policy": "Final exact-head CI, production Pages deploy and live fetch are externally attested in PR #62 and the 1111 V18 receipt; repository data does not self-attest its own HEAD.",
     "live_external_surfaces_verified": false,
     "registry_path": "data/operations/synchronization-surfaces.json",
     "registry_version": "1.0.0",
@@ -1106,7 +1128,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "agent.handoff",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1116,7 +1138,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "ai.start",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1127,9 +1149,10 @@
           "human.pages_source"
         ],
         "evidence_refs": [
-          "external:pr_body:pending"
+          "external:pr_body:62",
+          "external:1111_receipt:V18-final-main-attestation"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "external.pages_homepage",
         "validation_mode": "post_merge_external_render_attestation"
       },
@@ -1139,7 +1162,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "human.ai_guide",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1149,7 +1172,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "human.current_state",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1161,7 +1184,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "human.pages_source",
         "validation_mode": "repository_build_validation"
       },
@@ -1171,7 +1194,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "human.readme",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1181,7 +1204,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "human.summary",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1191,7 +1214,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "human.usage",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1201,7 +1224,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "machine.llms",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1211,7 +1234,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "method.iteration",
         "validation_mode": "repository_schema_and_semantic_validation"
       },
@@ -1223,7 +1246,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "method.result_template",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1235,7 +1258,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "method.review_template",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1247,7 +1270,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "method.task_template",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1257,7 +1280,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "release.changelog",
         "validation_mode": "repository_semantic_validation"
       },
@@ -1267,7 +1290,7 @@
         "evidence_refs": [
           "docs/architecture/incremental-execution.md"
         ],
-        "reason": "Q32I materializes and synchronizes the 1.3.0 Draft candidate across its declared repository authority and project surfaces.",
+        "reason": "Q32I materializes and synchronizes the 1.3.0 Current closeout across its declared repository authority and project surfaces.",
         "surface_id": "release.versioning",
         "validation_mode": "repository_semantic_validation"
       }
@@ -1305,30 +1328,30 @@
     "remote": [
       {
         "conclusion": "success",
-        "evidence": "external:github_actions:29651950562",
+        "evidence": "external:github_actions:29669231182",
         "evidence_scope": "historical_subject_head_only",
         "name": "foundation-validation",
-        "run_id": 29651950562,
+        "run_id": 29669231182,
         "status": "PASS",
-        "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131"
+        "subject_head": "0da9ab7a90bc133190d1684a6da4c8f0750021f2"
       },
       {
         "conclusion": "success",
-        "evidence": "external:github_actions:29651986744",
+        "evidence": "external:github_actions:29669231809",
         "evidence_scope": "historical_subject_head_only",
         "name": "function-os-ci",
-        "run_id": 29651986744,
+        "run_id": 29669231809,
         "status": "PASS",
-        "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131"
+        "subject_head": "0da9ab7a90bc133190d1684a6da4c8f0750021f2"
       },
       {
         "conclusion": "success",
-        "evidence": "external:github_actions:29651987967",
+        "evidence": "external:github_actions:29669232424",
         "evidence_scope": "historical_subject_head_only",
-        "name": "pages-build-candidate-only",
-        "run_id": 29651987967,
+        "name": "pages-build",
+        "run_id": 29669232424,
         "status": "PASS",
-        "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131"
+        "subject_head": "0da9ab7a90bc133190d1684a6da4c8f0750021f2"
       }
     ]
   },

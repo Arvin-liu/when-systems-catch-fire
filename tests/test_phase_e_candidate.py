@@ -8,7 +8,7 @@ from tools.operations.validate_phase_e_candidate import ROOT, validate
 
 
 class PhaseECandidateTests(unittest.TestCase):
-    def test_real_candidate_passes(self):
+    def test_real_lifecycle_passes(self):
         result = validate()
         self.assertEqual(result["decision"], "FULL_REBUILD_REQUIRED")
 
@@ -21,7 +21,7 @@ class PhaseECandidateTests(unittest.TestCase):
                 target.write_bytes((ROOT / rel).read_bytes())
             manifest_path = fixture / "data/operations/iterations/121Q32I.json"
             manifest = json.loads(manifest_path.read_text())
-            manifest["status"]["current"] = True
+            manifest["status"]["accepted"] = False
             manifest_path.write_text(json.dumps(manifest))
             with self.assertRaisesRegex(ValueError, "E_PHASE_E_LIFECYCLE"):
                 validate(fixture)

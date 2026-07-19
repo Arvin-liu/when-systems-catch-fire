@@ -41,11 +41,12 @@ BOUNDARY_PHRASES = (
     "已证明的科学理论",
 )
 VERSION_FACTS = {
-    "current_method": "1.2.0",
-    "historical_method": "1.1.0",
-    "draft_method": "1.3.0",
-    "current_map": "0.2.0",
-    "draft_map": "0.3.0",
+    "current_method": "1.3.0",
+    "historical_method": "1.2.0",
+    "earlier_historical_method": "1.1.0",
+    "current_map": "0.3.0",
+    "historical_map": "0.2.0",
+    "earlier_historical_map": "0.1.0",
 }
 ROLLBACK_TYPO = "roll" + "bar"
 
@@ -97,13 +98,12 @@ def validate_version_front_doors(ai_start: str, ai_handoff: str, llms: str) -> N
     for source, text in sources.items():
         for value in VERSION_FACTS.values():
             require(value in text, f"{source}: missing version fact {value}")
-        require(re.search(r"(?:current|当前)[^\n]{0,80}1\.2\.0|1\.2\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{source}: method 1.2.0 is not explicitly Current")
+        require(re.search(r"(?:current|当前)[^\n]{0,80}1\.3\.0|1\.3\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{source}: method 1.3.0 is not explicitly Current")
+        require(re.search(r"(?:historical|历史)[^\n]{0,80}1\.2\.0|1\.2\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{source}: method 1.2.0 is not explicitly Historical")
         require(re.search(r"(?:historical|历史)[^\n]{0,80}1\.1\.0|1\.1\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{source}: method 1.1.0 is not explicitly Historical")
-        require(re.search(r"1\.3\.0[^\n]{0,120}(?:Draft candidate|候选)", text, re.IGNORECASE), f"{source}: method 1.3.0 is not explicitly Draft")
-        require(re.search(r"1\.3\.0[^\n]{0,180}(?:not Current|非 Current|不得称为 Current)", text, re.IGNORECASE), f"{source}: method 1.3.0 lacks not-Current boundary")
-        require(re.search(r"(?:current|当前)[^\n]{0,80}0\.2\.0|0\.2\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{source}: map 0.2.0 is not explicitly Current")
-        require(re.search(r"0\.3\.0[^\n]{0,120}(?:Draft candidate|候选)", text, re.IGNORECASE), f"{source}: map 0.3.0 is not explicitly Draft")
-        require(not re.search(r"(?:current|当前)(?:迭代)?(?:方法|method)[^\n]{0,20}1\.1\.0", text, re.IGNORECASE), f"{source}: stale Current method 1.1.0")
+        require(re.search(r"(?:current|当前)[^\n]{0,80}0\.3\.0|0\.3\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{source}: map 0.3.0 is not explicitly Current")
+        require(re.search(r"(?:historical|历史)[^\n]{0,80}0\.2\.0|0\.2\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{source}: map 0.2.0 is not explicitly Historical")
+        require(not re.search(r"(?:current|当前)(?:迭代)?(?:方法|method)[^\n]{0,20}(?:1\.1\.0|1\.2\.0)", text, re.IGNORECASE), f"{source}: stale Current method")
         require(ROLLBACK_TYPO not in text.lower(), f"{source}: misspelled rollback term")
 
 

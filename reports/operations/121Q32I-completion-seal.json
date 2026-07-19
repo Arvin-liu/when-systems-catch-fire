@@ -1,20 +1,20 @@
 {
   "boundaries": {
-    "accepted": false,
+    "accepted": true,
     "cache_is_authority": false,
-    "current": false,
+    "current": true,
     "declared_reachability_is_causal_proof": false,
-    "independent_review_executed": false,
-    "merged": false,
-    "phase_e_candidate_only": true,
+    "independent_review_executed": true,
+    "merged": true,
+    "phase_e_candidate_only": false,
     "q33_or_q40_started": false,
     "self_head_validity_basis": false
   },
   "completion_state": {
-    "external_synchronization_attested": false,
+    "external_synchronization_attested": true,
     "external_synchronization_required": true,
     "implementation_complete": true,
-    "project_synchronization_complete": false,
+    "project_synchronization_complete": true,
     "repository_synchronization_complete": true
   },
   "contamination_scan": {
@@ -43,90 +43,96 @@
     {
       "authority": "pull_request_body_and_1111_receipt",
       "evidence_refs": [
-        "external:pr_body:pending"
+        "external:pr_body:62",
+        "external:1111_receipt:V18-final-main-attestation"
       ],
       "live_state_locally_verifiable": false,
       "stage": "post_merge",
-      "status": "pending",
+      "status": "attested",
       "surface_id": "external.pages_homepage"
     }
   ],
   "historical_digest_evidence": {
-    "artifact_id": 8431733912,
+    "artifact_id": 8436761433,
     "dual_digest": {
       "distinction": "The GitHub archive ZIP and inner Pages payload TAR are independently hashed different byte objects.",
-      "github_artifact_archive_digest": "sha256:10833f4969614f8ef1e13865d5a2beeba4a532ed0f85310743750ef0c6cef628",
-      "pages_payload_tar_digest": "sha256:6b0afd5e246757ca093515035cf7a95dc63b28917758da7edb34a1b1851aa679"
+      "github_artifact_archive_digest": "sha256:95e232b10cfdb97d03f23ceb6070b311622a7ad57d5a2e1f798c48d412672549",
+      "pages_payload_tar_digest": "sha256:790498a9d9d393fb7d5baff04eb0f99ad770e730d29b245dd859b2f59a8741e5"
     },
-    "note": "Exact-head predecessor evidence that authorized this ordinary binding commit; final exact-head evidence remains external in PR #62 and the 1111 receipt.",
-    "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131",
+    "note": "Accepted exact-head evidence; final main exact-head CI, artifact and live deployment remain externally attested and are not a self-HEAD premise.",
+    "subject_head": "0da9ab7a90bc133190d1684a6da4c8f0750021f2",
     "subject_run_ids": {
-      "foundation": 29651950562,
-      "function_os": 29651986744,
-      "pages": 29651987967
+      "foundation": 29669231182,
+      "function_os": 29669231809,
+      "pages": 29669232424
     },
     "tar_bytes": 552960,
-    "zip_bytes": 113696
+    "zip_bytes": 115037
   },
   "lifecycle": {
-    "accepted": false,
-    "candidate": true,
-    "current": false,
-    "merged": false,
+    "accepted": true,
+    "candidate": false,
+    "current": true,
+    "merged": true,
     "ready_for_gpt_verification": true
   },
   "manifest_path": "data/operations/iterations/121Q32I.json",
   "method_version": "1.3.0",
   "phase_b": {
+    "accepted_head": "0da9ab7a90bc133190d1684a6da4c8f0750021f2",
     "base": "main",
     "base_head": "4097e610eebfc65c739df4fe7d2900161c204a9d",
     "branch": "agent/121q32i-incremental-execution",
-    "claim_ceiling": "validated repository dependency planning and selective materialization candidate only; no real-world causal identification",
+    "claim_ceiling": "Validated repository-declared dependency planning, execution, validation and selective materialization only; no real-world causal identification, truth, value or completeness.",
     "draft_pr": 62,
     "head_binding": {
       "authority": "pull_request_body_and_1111_receipt",
       "embedded_exact_current_head": false,
       "live_refetch_required": true,
       "mode": "external_exact_head_attestation",
-      "receipt_path": "agent-results/IGNITION-20260718-121Q32I-CODEX-V12-phase-e-result.md"
-    }
+      "receipt_path": "agent-results/IGNITION-20260719-121Q32I-CODEX-V18-merge-current-closeout-result.md"
+    },
+    "merge_commit": "0a13c246172c0338bf8dda5dc08db5a574a8b23f",
+    "merged_pr": 62,
+    "review_id": "e4178f4310822d085ce8201b95236bc2ebc48d69"
   },
   "phase_d_closeout": {
     "report_digest": "548a82322428ca38096d6e9a12c72faaa732636ccb72bc4b3b79daed353dd248",
     "tests": 116
   },
   "phase_e_evidence": {
-    "artifact": "PASS_ON_PREDECESSOR_EXACT_HEAD",
+    "artifact": "PASS_ON_ACCEPTED_EXACT_HEAD",
     "artifact_evidence": {
       "file_count": 32,
-      "id": 8431733912,
+      "id": 8436761433,
       "tar_bytes": 552960,
-      "tar_sha256": "6b0afd5e246757ca093515035cf7a95dc63b28917758da7edb34a1b1851aa679",
-      "zip_bytes": 113696,
-      "zip_sha256": "10833f4969614f8ef1e13865d5a2beeba4a532ed0f85310743750ef0c6cef628"
+      "tar_sha256": "790498a9d9d393fb7d5baff04eb0f99ad770e730d29b245dd859b2f59a8741e5",
+      "zip_bytes": 115037,
+      "zip_sha256": "95e232b10cfdb97d03f23ceb6070b311622a7ad57d5a2e1f798c48d412672549"
     },
     "authority": "pull_request_body_and_1111_receipt",
     "local": "PASS",
-    "production_deploy": "skipped",
+    "production_deploy": "skipped_on_candidate; final main evidence external",
     "refreshed_local_execution_counts": {
       "explained_skips": 1,
       "foundation_unittest_pass": 7,
       "function_os_pytest_pass": 164,
       "function_os_unittest_pass": 164,
-      "repository_unittest_executions": 322,
+      "repository_unittest_executions": 328,
       "repository_unittest_external_verification_skip": 1,
-      "repository_unittest_pass": 321,
+      "repository_unittest_pass": 327,
       "standalone_canonical_pass": 40,
-      "total_executions": 697,
-      "total_pass": 696
+      "total_executions": 703,
+      "total_pass": 702,
+      "xfail": 0
     },
-    "remote": "PASS_ON_PREDECESSOR_EXACT_HEAD",
+    "remote": "PASS_ON_ACCEPTED_EXACT_HEAD",
     "runs": {
-      "foundation": 29651950562,
-      "function_os": 29651986744,
-      "pages": 29651987967
+      "foundation": 29669231182,
+      "function_os": 29669231809,
+      "pages": 29669232424
     },
-    "subject_head": "2c292fa49ca29d2d339df7cff8ca900d313f5131",
+    "subject_head": "0da9ab7a90bc133190d1684a6da4c8f0750021f2",
     "three_p1_repair": {
       "apply_authority_preflight": {
         "status": "PASS",
@@ -145,29 +151,29 @@
     }
   },
   "propagation_closure": {
-    "closure_hash": "e392ebef31fc01842eaff1520c1c6739480d1c3d39a07729818968dfdb85f50f",
+    "closure_hash": "be079995b291e41dcb4c9b8ffdd1997e05f9eef5763da91c9584f4ef8169f705",
     "closure_path": "data/operations/propagation/121Q32I-closure.json",
     "complete": true,
     "unresolved_residue": []
   },
-  "propagation_closure_hash": "e392ebef31fc01842eaff1520c1c6739480d1c3d39a07729818968dfdb85f50f",
+  "propagation_closure_hash": "be079995b291e41dcb4c9b8ffdd1997e05f9eef5763da91c9584f4ef8169f705",
   "q29r": {
     "modified": false,
     "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
   },
   "self_hosting": {
     "decision": "FULL_REBUILD_REQUIRED",
-    "plan_hash": "786993dc4731ac62882ba3c9adf09ca6eace5537c086a236d008eff04e2e3df5",
+    "plan_hash": "3a09efdfd060393519e73a072cb867b41f9b2b81ff9c9c46e7e152a09dc1fe56",
     "validator": "PASS"
   },
-  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "status": "CURRENT_CLOSED",
   "synchronization_registry": {
     "path": "data/operations/synchronization-surfaces.json",
     "version": "1.0.0"
   },
   "system_map": {
-    "candidate_version": "0.3.0-candidate",
-    "current_version": "0.2.0",
+    "candidate_version": null,
+    "current_version": "0.3.0",
     "edges": 37,
     "groups": 9,
     "l7_added": false,

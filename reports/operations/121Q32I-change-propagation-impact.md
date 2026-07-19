@@ -1,10 +1,10 @@
 # 121Q32I typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `e392ebef31fc01842eaff1520c1c6739480d1c3d39a07729818968dfdb85f50f`
+- Closure hash: `be079995b291e41dcb4c9b8ffdd1997e05f9eef5763da91c9584f4ef8169f705`
 - Fixpoint iterations: `2`
-- Seeds: `ai_guide, current_state, historical_reports, incremental_execution, iteration, iteration_manifest_contract, pages_pipeline, project_component_registry, propagation_calculator, propagation_topology, readme, summary, system_map_layout, system_map_projection, usage`
-- Resolved components: `17`
+- Seeds: `ai_guide, current_state, historical_reports, incremental_execution, iteration, iteration_manifest_contract, no_l7, pages_pipeline, project_component_registry, propagation_calculator, propagation_topology, readme, summary, system_map_layout, system_map_projection, usage`
+- Resolved components: `19`
 - Registry-derived surfaces: `16`
 - System-map decision: `CHANGE`
 
@@ -19,6 +19,8 @@
 - `iteration_manifest_contract --version_tracks / repository_dependency--> iteration` — audit binding only
 - `current_state --constraint / synchronization_obligation--> no_totality_proof` — interpretation boundary only
 - `iteration --synchronization_requires / synchronization_obligation--> sync` — governance synchronization obligation
+- `no_l7 --constraint / synchronization_obligation--> no_truth_upgrade` — architecture boundary
+- `no_truth_upgrade --constraint / synchronization_obligation--> no_totality_proof` — claim boundary
 - `readme --documents / repository_dependency--> current_state` — declared navigation dependency only
 - `readme --deployment_depends_on / repository_dependency--> pages_pipeline` — deployment dependency only
 - `system_map_projection --deployment_depends_on / repository_dependency--> pages_pipeline` — deployment dependency only

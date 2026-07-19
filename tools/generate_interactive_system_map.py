@@ -90,9 +90,9 @@ def build_projection(
     require(all(edge["source"] in visible and edge["target"] in visible for edge in edges), "visible map relation references hidden component")
     return {
         "schema_version": "2.0.0",
-        "map_version": layout_doc["map_candidate_version"],
-        "current_baseline_map_version": layout_doc["current_map_version"],
-        "projection_status": "DRAFT_CANDIDATE_DERIVED_PROJECTION",
+        "map_version": layout_doc["current_map_version"],
+        "historical_map_version": layout_doc["historical_map_version"],
+        "projection_status": "CURRENT_DERIVED_PROJECTION",
         "title": layout_doc["title"],
         "subtitle": layout_doc["subtitle"],
         "repository_url": layout_doc["repository_url"],
@@ -131,7 +131,7 @@ def target_url(repository_url: str, target: str) -> str:
 def validate_spec(spec: dict, root: Path = ROOT) -> None:
     require(spec.get("schema_version") in {"1.0.0", "2.0.0"}, "unsupported system-map schema_version")
     if spec.get("schema_version") == "2.0.0":
-        require(spec.get("projection_status") == "DRAFT_CANDIDATE_DERIVED_PROJECTION", "derived map lacks candidate projection status")
+        require(spec.get("projection_status") == "CURRENT_DERIVED_PROJECTION", "derived map lacks Current projection status")
         authority = spec.get("projection_authority", {})
         require(authority.get("component_registry") == "data/operations/project-components.json", "map projection has wrong component authority")
         require(authority.get("propagation_topology") == "data/operations/change-propagation-topology.json", "map projection has wrong topology authority")
