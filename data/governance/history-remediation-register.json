@@ -1,0 +1,64 @@
+{
+  "register_version": "1.0.0",
+  "register_date_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）",
+  "purpose": "History remediation register for Q33 — records remediation actions taken on historical materials that violated copyright or rights boundaries.",
+  "entries": [
+    {
+      "entry_id": "REM-001",
+      "action_taken": "redacted",
+      "material_affected": "docs/publication/zhiyuan-writing-showcase.md",
+      "original_violation": "Showcase entries referenced third-party course content without full rights verification. Original text excerpts were retained as potentially non-compliant.",
+      "remediation_status": "COMPLETED",
+      "verification_method": "Cross-checked each showcase entry against source-rights-registry; removed any excerpt exceeding fair quotation limits",
+      "timestamp_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）",
+      "timestamp_ISO": "2026-07-19T00:00:00Z"
+    },
+    {
+      "entry_id": "REM-002",
+      "action_taken": "citation_only",
+      "material_affected": "data/publication/zhiyuan-writing-showcase.json",
+      "original_violation": "JSON showcase index contained raw excerpts from third-party sources",
+      "remediation_status": "COMPLETED",
+      "verification_method": "Replaced all excerpt fields with source citation metadata only",
+      "timestamp_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）",
+      "timestamp_ISO": "2026-07-19T00:00:00Z"
+    },
+    {
+      "entry_id": "REM-003",
+      "action_taken": "gate_decision_updated",
+      "material_affected": "outputs/collisions/ directory",
+      "original_violation": "Collision output files may contain unverified third-party material",
+      "remediation_status": "IN_PROGRESS",
+      "verification_method": "Each file in outputs/collisions/ classified against source-rights-registry and gate-decided",
+      "timestamp_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）",
+      "timestamp_ISO": "2026-07-19T00:00:00Z"
+    },
+    {
+      "entry_id": "REM-004",
+      "action_taken": "classification_downgraded",
+      "material_affected": "data/external-research/121-fulltext-resolver/",
+      "original_violation": "Evidence cards from 121cx may reference paywalled or restricted sources without proper classification",
+      "remediation_status": "IN_PROGRESS",
+      "verification_method": "Each evidence card reviewed for source category and classification level",
+      "timestamp_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）",
+      "timestamp_ISO": "2026-07-19T00:00:00Z"
+    },
+    {
+      "entry_id": "REM-005",
+      "action_taken": "provenance_preserved_only",
+      "material_affected": "reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md",
+      "original_violation": "Audit report references third-party Get Note case materials",
+      "remediation_status": "COMPLETED",
+      "verification_method": "Verified Get Note case is source citation only; no original text reproduced",
+      "timestamp_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）",
+      "timestamp_ISO": "2026-07-19T00:00:00Z"
+    }
+  ],
+  "summary": {
+    "total_entries": 5,
+    "completed": 3,
+    "in_progress": 2,
+    "pending": 0,
+    "not_applicable": 0
+  }
+}

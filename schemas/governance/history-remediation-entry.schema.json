@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "History Remediation Register Entry",
+  "description": "Schema for recording remediation actions taken on historical materials that violated copyright or rights boundaries.",
+  "type": "object",
+  "required": ["entry_id", "action_taken", "material_affected", "original_violation", "remediation_status", "timestamp_HE", "timestamp_ISO"],
+  "properties": {
+    "entry_id": {
+      "type": "string",
+      "description": "Unique identifier for the remediation entry"
+    },
+    "action_taken": {
+      "type": "string",
+      "enum": ["removed", "redacted", "citation_only", "provenance_preserved_only", "gate_decision_updated", "permission_sought", "classification_downgraded"],
+      "description": "Action taken to remediate the violation"
+    },
+    "material_affected": {
+      "type": "string",
+      "description": "Path or identifier of the material affected"
+    },
+    "original_violation": {
+      "type": "string",
+      "description": "Description of what the original violation was"
+    },
+    "remediation_status": {
+      "type": "string",
+      "enum": ["COMPLETED", "IN_PROGRESS", "PENDING", "NOT_APPLICABLE"]
+    },
+    "verification_method": {
+      "type": "string",
+      "description": "How the remediation was verified"
+    },
+    "timestamp_HE": {
+      "type": "string"
+    },
+    "timestamp_ISO": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Publication Gate Decision",
+  "description": "Schema for recording a publication gate decision for a specific material.",
+  "type": "object",
+  "required": ["material_id", "source_category", "rights_status", "gate_decision", "classification_level", "provenance_recorded", "timestamp_HE", "timestamp_ISO"],
+  "properties": {
+    "material_id": {
+      "type": "string",
+      "description": "Unique identifier for the material being evaluated"
+    },
+    "source_category": {
+      "type": "string",
+      "description": "Source category from source-rights-registry"
+    },
+    "rights_status": {
+      "type": "string",
+      "description": "Current rights status assessment"
+    },
+    "access_method": {
+      "type": "string",
+      "description": "How the material was accessed (public URL, paywall, private account, etc.)"
+    },
+    "gate_decision": {
+      "type": "string",
+      "enum": ["PASS", "PASS_WITH_COMPLIANCE", "CONDITIONAL_PASS", "BLOCK", "BLOCK_PENDING_PERMISSION", "BLOCK_PENDING_COUNSEL"],
+      "description": "Final publication gate decision"
+    },
+    "classification_level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 6,
+      "description": "Material classification level L0-L6"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "CRITICAL"]
+    },
+    "provenance_recorded": {
+      "type": "boolean"
+    },
+    "permission_obtained": {
+      "type": "boolean",
+      "description": "Whether explicit permission was obtained (for BLOCK decisions that were later resolved)"
+    },
+    "counsel_review_completed": {
+      "type": "boolean",
+      "description": "Whether legal counsel review was completed"
+    },
+    "quotation_limit": {
+      "type": "string",
+      "description": "Maximum allowed quotation length if CONDITIONAL_PASS (e.g., 'up_to_500_words', 'excerpt_only')"
+    },
+    "prohibition_reason": {
+      "type": "string",
+      "description": "Reason for BLOCK decisions"
+    },
+    "timestamp_HE": {
+      "type": "string",
+      "description": "Human Era timestamp"
+    },
+    "timestamp_ISO": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "reviewer": {
+      "type": "string",
+      "description": "Who made the gate decision (agent name, human reviewer, etc.)"
+    }
+  }
+}

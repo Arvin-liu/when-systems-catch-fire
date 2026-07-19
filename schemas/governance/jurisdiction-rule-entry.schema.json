@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Jurisdiction Rule Registry Entry",
+  "description": "Schema for registering a single jurisdiction's copyright rules with official source verification.",
+  "type": "object",
+  "required": ["jurisdiction_id", "name", "statute_reference", "official_source_url", "exception_framework", "currentness", "verification_status"],
+  "properties": {
+    "jurisdiction_id": {
+      "type": "string",
+      "pattern": "^JUR-[A-Z]{2}$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Full jurisdiction name"
+    },
+    "statute_reference": {
+      "type": "string",
+      "description": "Official statute or code reference"
+    },
+    "official_source_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to official legislative database or authoritative source"
+    },
+    "treaty_memberships": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["BERNE", "WCT", "TRIPS"]
+      }
+    },
+    "exception_framework": {
+      "type": "string",
+      "enum": ["open_ended_fair_use", "fair_dealing_purpose_specific", "hybrid", "general_fair_use", "eu_directive_exceptions", "unknown_or_unmapped"],
+      "description": "Type of copyright exception framework"
+    },
+    "key_articles_sections": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Key articles or sections governing exceptions"
+    },
+    "contract_override_notable": {
+      "type": "string",
+      "description": "Notable provisions where contracts cannot override statutory exceptions"
+    },
+    "currentness": {
+      "type": "string",
+      "enum": ["CURRENT", "AMENDED_RECENTLY", "TRANSPOSITION_PENDING", "UNKNOWN"]
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": ["VERIFIED", "UNVERIFIED", "COUNSEL_REQUIRED", "PERMISSION_REQUIRED", "INSUFFICIENT_INFORMATION", "BLOCKED_PENDING_EVIDENCE"],
+      "description": "Verification status of the rule entry"
+    },
+    "verified_at_HE": {
+      "type": "string",
+      "description": "Human Era date of verification"
+    },
+    "verified_at_ISO": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 date of verification"
+    }
+  }
+}
