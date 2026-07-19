@@ -980,30 +980,7 @@
     "system_map_impact": {
       "decision": "CHANGE",
       "reason": "The canonical registry, topology, candidate version and materialized projection changed.",
-      "added_nodes": [
-        "copyright_governance_history_remediation",
-        "copyright_governance_jurisdiction_registry",
-        "copyright_governance_material_classification",
-        "copyright_governance_non_republication_principle",
-        "copyright_governance_publication_gate_validator",
-        "copyright_governance_source_rights",
-        "copyright_governance_tests"
-      ],
-      "removed_nodes": [],
-      "changed_nodes": [
-        "iteration",
-        "sync"
-      ],
-      "added_edges": [
-        "copyright_governance_jurisdiction_registry->charter",
-        "copyright_governance_material_classification->source_pool",
-        "copyright_governance_non_republication_principle->accepted_work",
-        "copyright_governance_publication_gate_validator->current_state",
-        "copyright_governance_source_rights->external_input"
-      ],
-      "removed_edges": [],
-      "changed_edges": [],
-      "unmapped_residue": []
+      "delta_path": "data/operations/propagation/121Q32I-system-map-delta.json"
     },
     "typed_path_ids": [
       "calculator_projects_sync",
