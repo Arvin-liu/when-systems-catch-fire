@@ -550,32 +550,51 @@ def _validate_seal_f12(seal: dict, source: Path) -> None:
             key in seal for key in ("authored_seed_paths_count", "generated_output_paths_count", "base_to_head_diff_paths_count", "diff_coverage_complete")
         ):
             raise OSError("dynamic diff coverage is not asserted by this seal")
-        _base_head = None
-        _manifest_path = ROOT / "data/operations/iterations/121Q32.json"
-        if _manifest_path.is_file():
-            _m = json.loads(_manifest_path.read_text(encoding="utf-8"))
-            _base_head = _m.get("branch_pr", {}).get("base_head")
+        _phase_b = seal.get("phase_b", {})
+        _base_head = _phase_b.get("base_head")
+        _task_id = seal.get("task_id")
         if _base_head:
-            _subject = seal.get("phase_b", {}).get("merge_commit", "HEAD") if seal.get("task_id") == "121Q32" else "HEAD"
+            # Era-aware subject: a merged/closed iteration's diff is measured
+            # against its own merge commit, not the floating HEAD.
+            _subject = _phase_b.get("merge_commit") or "HEAD"
             _diff_result = _sp.run(
                 ["git", "diff", "--name-only", f"{_base_head}...{_subject}"],
                 capture_output=True, text=True, cwd=str(ROOT)
             )
             _actual_diff = set(p for p in _diff_result.stdout.strip().split("\n") if p)
 
-            _req_path = ROOT / "data/operations/propagation/121Q32-request.json"
+            _req_path = ROOT / f"data/operations/propagation/{_task_id}-request.json"
             _seeds = set()
             if _req_path.is_file():
                 _req = json.loads(_req_path.read_text(encoding="utf-8"))
                 _seeds = set(_req.get("changed_paths", []))
 
-            _auth_path = ROOT / "data/operations/generated-output-authority.json"
+            # Era-aware authority: compare the seal against the generated-output
+            # authority snapshot at the sealing commit (phase_b.merge_commit), not
+            # the live authority. The live authority may have grown with later
+            # iterations (e.g. a later iteration recording its own seal as a
+            # generated output), which must not retroactively invalidate a
+            # historically correct seal count. See V15 Q32 adjudication (B).
             _generated = set()
-            if _auth_path.is_file():
-                _auth = json.loads(_auth_path.read_text(encoding="utf-8"))
-                _generated = set(g["path"] for g in _auth.get("generated_outputs", [])) & _actual_diff
+            _authority_doc = None
+            _era_ref = _phase_b.get("merge_commit")
+            if _era_ref:
+                try:
+                    _era_text = _sp.run(
+                        ["git", "show", f"{_era_ref}:data/operations/generated-output-authority.json"],
+                        capture_output=True, text=True, cwd=str(ROOT)
+                    ).stdout
+                    _authority_doc = json.loads(_era_text)
+                except (json.JSONDecodeError, ValueError):
+                    _authority_doc = None
+            if _authority_doc is None:
+                _auth_path = ROOT / "data/operations/generated-output-authority.json"
+                if _auth_path.is_file():
+                    _authority_doc = json.loads(_auth_path.read_text(encoding="utf-8"))
+            if _authority_doc is not None:
+                _generated = set(g["path"] for g in _authority_doc.get("generated_outputs", [])) & _actual_diff
 
-            # Verify seal counts match actual data
+            # Verify seal counts match actual data (era-aware)
             if "base_to_head_diff_paths_count" in seal:
                 require(seal["base_to_head_diff_paths_count"] == len(_actual_diff),
                         f"{source}: seal base_to_head_diff_paths_count {seal['base_to_head_diff_paths_count']} "
@@ -609,20 +628,41 @@ def _validate_seal_f12(seal: dict, source: Path) -> None:
         pass  # Skip if git or files unavailable
 
     # 8. F12C: Seal system_map cross-check against interactive-system-map.json
-    _map_path = ROOT / "data/architecture/interactive-system-map.json"
-    if _map_path.is_file() and "system_map" in seal:
-        _actual_map = json.loads(_map_path.read_text(encoding="utf-8"))
-        _seal_map = seal["system_map"]
-        _actual_groups = len(_actual_map.get("groups", []))
-        _actual_nodes = len(_actual_map.get("nodes", []))
-        _actual_edges = len(_actual_map.get("edges", []))
+    # Era-aware: a merged/closed iteration's seal records the topology counts at
+    # its own sealing era, so it must be compared against the interactive-system
+    # map snapshot at phase_b.merge_commit, NOT the live (current) map. The live
+    # map grows with later iterations and must not retroactively invalidate a
+    # historically correct seal. For the open current candidate (no merge_commit)
+    # the live map is the correct subject. See V15 Q32/Q32I adjudication (B).
+    if "system_map" in seal:
+        _phase_b = seal.get("phase_b", {})
+        _era_ref = _phase_b.get("merge_commit")
+        _actual_map = None
+        if _era_ref:
+            try:
+                _era_text = _sp.run(
+                    ["git", "show", f"{_era_ref}:data/architecture/interactive-system-map.json"],
+                    capture_output=True, text=True, cwd=str(ROOT)
+                ).stdout
+                _actual_map = json.loads(_era_text)
+            except (json.JSONDecodeError, ValueError):
+                _actual_map = None
+        if _actual_map is None:
+            _map_path = ROOT / "data/architecture/interactive-system-map.json"
+            if _map_path.is_file():
+                _actual_map = json.loads(_map_path.read_text(encoding="utf-8"))
+        if _actual_map is not None:
+            _seal_map = seal["system_map"]
+            _actual_groups = len(_actual_map.get("groups", []))
+            _actual_nodes = len(_actual_map.get("nodes", []))
+            _actual_edges = len(_actual_map.get("edges", []))
 
-        require(_seal_map.get("groups") == _actual_groups,
-                f"{source}: seal system_map groups {_seal_map.get('groups')} != actual {_actual_groups}")
-        require(_seal_map.get("nodes") == _actual_nodes,
-                f"{source}: seal system_map nodes {_seal_map.get('nodes')} != actual {_actual_nodes}")
-        require(_seal_map.get("edges") == _actual_edges,
-                f"{source}: seal system_map edges {_seal_map.get('edges')} != actual {_actual_edges}")
+            require(_seal_map.get("groups") == _actual_groups,
+                    f"{source}: seal system_map groups {_seal_map.get('groups')} != actual {_actual_groups}")
+            require(_seal_map.get("nodes") == _actual_nodes,
+                    f"{source}: seal system_map nodes {_seal_map.get('nodes')} != actual {_actual_nodes}")
+            require(_seal_map.get("edges") == _actual_edges,
+                    f"{source}: seal system_map edges {_seal_map.get('edges')} != actual {_actual_edges}")
 
 def _validate_evidence_ref(ref: str, source: Path) -> None:
     if ref.startswith("external:"):

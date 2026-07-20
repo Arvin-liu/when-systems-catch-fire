@@ -6,6 +6,7 @@ from unittest.mock import patch
 from tools.validate_iteration_sync import (
     REGISTRY_PATH,
     ROOT,
+    _validate_seal_f12,
     infer_seal_path,
     load_json,
     required_registry_surfaces,
@@ -677,6 +678,115 @@ class IterationSyncTests(unittest.TestCase):
                       "current candidate must still be governed by the current contract")
         validate_manifest_schema(q33, q33_path)
         validate_custom(q33, q33_path, q33_seal, live_registry)
+
+    def test_seal_diff_coverage_is_era_aware_not_live_polluted(self):
+        """V15 Q32 adjudication B: a historical seal's generated_output_paths_count
+        must be validated against the generated-output authority snapshot at the
+        sealing commit (phase_b.merge_commit), not the live authority. The live
+        authority may have grown with later iterations (e.g. a later iteration
+        recording its own seal as a generated output), which must not
+        retroactively invalidate a historically correct seal count.
+
+        No task_id is hard-coded: a synthetic iteration demonstrates the principle.
+        """
+        import json as _json
+        import subprocess as _sp
+        from pathlib import Path as _Path
+
+        diff = {
+            "data/operations/propagation/121Q99-closure.json",
+            "data/operations/propagation/121Q99-residue.json",
+        }
+        era_authority = {"generated_outputs": [
+            {"path": "data/operations/propagation/121Q99-closure.json"},
+            {"path": "data/operations/propagation/121Q99-residue.json"},
+        ]}
+        seal = {
+            "task_id": "121Q99",
+            "method_version": "1.2.0",
+            "generated_output_paths_count": 2,
+            "diff_coverage_complete": True,
+            "phase_b": {"base_head": "1" * 40, "merge_commit": "2" * 40},
+        }
+        source = _Path("reports/operations/121Q99-completion-seal.json")
+
+        def _fake_run(cmd, **kw):
+            if cmd[:2] == ["git", "diff"]:
+                return _sp.CompletedProcess(cmd, 0, "\n".join(diff), "")
+            if cmd[:2] == ["git", "show"]:
+                return _sp.CompletedProcess(cmd, 0, _json.dumps(era_authority), "")
+            return _sp.CompletedProcess(cmd, 0, "", "")
+
+        # Point ROOT at a nonexistent path so no live fixture files are read; the
+        # era authority is supplied entirely through mocked `git show`.
+        with patch("subprocess.run", side_effect=_fake_run), \
+             patch("tools.validate_iteration_sync.ROOT", new=_Path("/nonexistent-v15-root")):
+            _validate_seal_f12(seal, source)
+
+        # Negative control: era-awareness must still catch a REAL mismatch when
+        # the era authority itself disagrees with the sealed count (it must not
+        # become a blanket pass). Here the era authority has only 1 of 2 paths.
+        bad_era = {"generated_outputs": [
+            {"path": "data/operations/propagation/121Q99-closure.json"},
+        ]}
+
+        def _fake_run_bad(cmd, **kw):
+            if cmd[:2] == ["git", "diff"]:
+                return _sp.CompletedProcess(cmd, 0, "\n".join(diff), "")
+            if cmd[:2] == ["git", "show"]:
+                return _sp.CompletedProcess(cmd, 0, _json.dumps(bad_era), "")
+            return _sp.CompletedProcess(cmd, 0, "", "")
+
+        with patch("subprocess.run", side_effect=_fake_run_bad), \
+             patch("tools.validate_iteration_sync.ROOT", new=_Path("/nonexistent-v15-root")):
+            with self.assertRaises(AssertionError):
+                _validate_seal_f12(dict(seal, generated_output_paths_count=2), source)
+
+    def test_seal_system_map_is_era_aware_not_live_polluted(self):
+        """V15 Q32/Q32I adjudication B: a merged/closed iteration's seal records
+        the topology counts (groups/nodes/edges) at its own sealing era, so the
+        validator must compare against the interactive-system-map snapshot at
+        phase_b.merge_commit, not the live (later-grown) map. Demonstrated with a
+        synthetic iteration; no task_id or seal count is hard-coded.
+        """
+        import json as _json
+        import subprocess as _sp
+        from pathlib import Path as _Path
+
+        era_map = {"groups": [1] * 9, "nodes": [1] * 41, "edges": [1] * 37}
+        # No diff-coverage keys, so step 7 (dynamic diff coverage) is skipped and
+        # only the system_map cross-check (step 8) is exercised.
+        seal = {
+            "task_id": "121Q98",
+            "system_map": {"groups": 9, "nodes": 41, "edges": 37},
+            "phase_b": {"merge_commit": "2" * 40},
+        }
+        source = _Path("reports/operations/121Q98-completion-seal.json")
+
+        def _fake_run(cmd, **kw):
+            if cmd[:2] == ["git", "show"]:
+                return _sp.CompletedProcess(cmd, 0, _json.dumps(era_map), "")
+            return _sp.CompletedProcess(cmd, 0, "", "")
+
+        # ROOT points at a nonexistent path so the live interactive-system-map
+        # file is never read; the era map is supplied only through `git show`.
+        with patch("subprocess.run", side_effect=_fake_run), \
+             patch("tools.validate_iteration_sync.ROOT", new=_Path("/nonexistent-v15-root")):
+            _validate_seal_f12(seal, source)
+
+        # Negative control: if the era map itself disagrees, the check must still
+        # raise (it must not degrade into a blanket pass for closed iterations).
+        bad_era = {"groups": [1] * 9, "nodes": [1] * 40, "edges": [1] * 37}
+
+        def _fake_run_bad(cmd, **kw):
+            if cmd[:2] == ["git", "show"]:
+                return _sp.CompletedProcess(cmd, 0, _json.dumps(bad_era), "")
+            return _sp.CompletedProcess(cmd, 0, "", "")
+
+        with patch("subprocess.run", side_effect=_fake_run_bad), \
+             patch("tools.validate_iteration_sync.ROOT", new=_Path("/nonexistent-v15-root")):
+            with self.assertRaises(AssertionError):
+                _validate_seal_f12(dict(seal), source)
 
 
 if __name__ == "__main__":
