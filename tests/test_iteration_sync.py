@@ -546,21 +546,35 @@ class IterationSyncTests(unittest.TestCase):
 
     def test_two_external_surfaces_require_both_attested_for_current(self):
         registry, path, manifest, seal = self.q25c_document()
+        # Era-aware: build a registry identical to Q25C's sealing-era (1.0.0)
+        # snapshot plus the injected second external surface, then declare the
+        # live version so the validator resolves required surfaces against THIS
+        # era-consistent registry (declared == live_version short-circuits to the
+        # caller-supplied registry). This exercises the generic contract rule
+        # (two external surfaces, one pending -> current blocked) without
+        # retroactively requiring post-era surfaces (e.g. copyright_governance,
+        # introduced after Q25C was sealed) and without mutating the sealed
+        # asset or fabricating attestation. A historical 1.0.0-era manifest
+        # otherwise validates against the git-committed 1.0.0 snapshot, which
+        # cannot see a surface injected only into the live in-memory registry.
+        era_registry = resolve_era_registry("1.0.0", registry)
         second = copy.deepcopy(registry["external.pages_homepage"])
         second["surface_id"] = "external.second"
         second["locator"] = "https://example.invalid/second"
-        registry[second["surface_id"]] = second
+        era_registry[second["surface_id"]] = second
+        manifest["synchronization_closure"]["registry_version"] = load_json(REGISTRY_PATH)["registry_version"]
         decision = copy.deepcopy(next(item for item in manifest["synchronization_closure"]["surface_decisions"] if item["surface_id"] == "external.pages_homepage"))
         decision["surface_id"] = "external.second"
         manifest["synchronization_closure"]["surface_decisions"].append(decision)
         attestation = copy.deepcopy(manifest["synchronization_closure"]["external_attestations"][0])
         attestation["surface_id"] = "external.second"
+        attestation["status"] = "pending"
         manifest["synchronization_closure"]["external_attestations"].append(attestation)
         self.set_lifecycle(manifest, seal, accepted=True, merged=True, current=True)
         manifest["synchronization_closure"]["external_attestations"][0]["status"] = "attested"
         seal["external_attestations"] = copy.deepcopy(manifest["synchronization_closure"]["external_attestations"])
         with self.assertRaisesRegex(AssertionError, "pending external surfaces block current"):
-            validate_custom(manifest, path, seal, registry)
+            validate_custom(manifest, path, seal, era_registry)
 
     def test_duplicate_unknown_and_wrong_authority_attestations_are_rejected(self):
         for mutation, pattern in (
