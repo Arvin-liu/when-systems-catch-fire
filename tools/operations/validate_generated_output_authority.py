@@ -35,7 +35,22 @@ AUTHORITY_PATH = ROOT / "data" / "operations" / "generated-output-authority.json
 SCHEMA_PATH = ROOT / "schemas" / "operations" / "generated-output-authority.schema.json"
 GENERATOR_REGISTRY_PATH = ROOT / "data" / "operations" / "generator-registry.json"
 REQUEST_PATH = ROOT / "data" / "operations" / "propagation" / "121Q32I-request.json"
+# Kept ONLY as a last-resort fallback. The actual base/era are derived per-request from
+# the iteration manifest via tools/operations/era_resolver.py (no hardcoded task/SHA in
+# the production contract path).
 BASE_MAIN = "4097e610eebfc65c739df4fe7d2900161c204a9d"
+
+try:
+    from era_resolver import resolve_era_for_request
+except ImportError:  # allow running from repo root or tools/operations
+    import importlib.util
+
+    _spec = importlib.util.spec_from_file_location(
+        "era_resolver", ROOT / "tools" / "operations" / "era_resolver.py"
+    )
+    _mod = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    resolve_era_for_request = _mod.resolve_era_for_request
 
 failures = []
 warnings = []
@@ -277,9 +292,13 @@ def check_diff_coverage(authority: dict, request: dict, base: str, era_ref: str 
         fail(f"git diff failed: {result.stderr}")
         return
     diff_paths = {p for p in result.stdout.strip().split("\n") if p}
-    untracked = subprocess.run(["git", "ls-files", "--others", "--exclude-standard"], capture_output=True, text=True, cwd=str(ROOT))
-    if untracked.returncode == 0:
-        diff_paths |= {p for p in untracked.stdout.splitlines() if p}
+    # Untracked files are only relevant for a LIVE era (base..HEAD). For a frozen (sealed)
+    # era, untracked files post-date the era boundary and must not be folded into the
+    # historical diff window.
+    if era_ref is None:
+        untracked = subprocess.run(["git", "ls-files", "--others", "--exclude-standard"], capture_output=True, text=True, cwd=str(ROOT))
+        if untracked.returncode == 0:
+            diff_paths |= {p for p in untracked.stdout.splitlines() if p}
 
     seeds = set(request.get("changed_paths", []))
     all_generated = {item["path"] for item in authority["generated_outputs"]}
@@ -356,12 +375,19 @@ def main() -> int:
     gen_reg = load_json(gen_reg_path) if gen_reg_path.exists() else {"generators": {}}
 
     base = args.base
+    era_ref = args.era_ref
+    # Derive base/era from the request's iteration manifest (generic era resolver) when
+    # not explicitly overridden on the CLI. A sealed iteration is bounded to its merge
+    # commit; a live candidate validates against base..HEAD. No hardcoded task/SHA.
+    if base is None or era_ref is None:
+        era = resolve_era_for_request(ROOT, request)
+        if era:
+            if base is None:
+                base = era["base"]
+            if era_ref is None:
+                era_ref = era["era_ref"]
     if base is None:
         base = request.get("base_identity") or BASE_MAIN
-    era_ref = args.era_ref
-    if era_ref is None:
-        hid = request.get("head_identity", "")
-        era_ref = hid if isinstance(hid, str) and len(hid) == 40 and all(c in "0123456789abcdef" for c in hid) else None
     print(f"Base:      {base}")
     print(f"Era ref:   {era_ref or 'HEAD (live)'}")
 

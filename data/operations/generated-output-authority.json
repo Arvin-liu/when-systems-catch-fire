@@ -226,8 +226,69 @@
       "authority_schema_version": "1.0.0",
       "content_digest_sha256": "70ebe8f2010c4a1cdc951baeced89aa6ccbc94d8a7c3ef6face850208cb08901",
       "justification": "Synchronization surfaces materialized by registered generator sync_surface_registry"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json"
+      ],
+      "justification": "Deterministic Q33 closure materialized by compute_change_propagation",
+      "output_type": "materialized_projection",
+      "path": "data/operations/propagation/121Q33-closure.json",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json"
+      ],
+      "justification": "Deterministic Q33 residue materialized by compute_change_propagation",
+      "output_type": "residue",
+      "path": "data/operations/propagation/121Q33-residue.json",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json"
+      ],
+      "justification": "Deterministic Q33 system-map delta materialized by compute_change_propagation",
+      "output_type": "seal_bound_derivative",
+      "path": "data/operations/propagation/121Q33-system-map-delta.json",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
+    },
+    {
+      "coverage_class": "generated_output",
+      "freshness_mode": "byte_level_recompute",
+      "input_authorities": [
+        "data/operations/propagation/121Q33-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json"
+      ],
+      "justification": "Deterministic Q33 change-propagation impact report materialized by compute_change_propagation",
+      "output_type": "report",
+      "path": "data/operations/propagation/121Q33-impact-report.md",
+      "producer_command": "python tools/operations/compute_change_propagation.py",
+      "producer_id": "compute_change_propagation"
     }
   ],
   "schema_version": "1.0.0",
-  "task_id": "121Q32"
+  "task_id": "121Q32+121Q33",
+  "description": "Canonical machine-readable authority for all generated outputs in PR #61 / Q32 / Q32I / Q33 diff coverage. Q33 live-candidate outputs are derived from its iteration manifest via the generic era resolver."
 }
