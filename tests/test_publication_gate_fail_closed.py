@@ -5,7 +5,7 @@ P3 (F4) negative / mutation tests for the fail-closed publication gate.
 These prove the gate can no longer be tricked into recording a fail-open decision:
   - private note reported as level 0 + PASS is rejected (no self-reported lower risk)
   - unknown source category fails closed (not recorded)
-  - missing provenance / reason / rule / version is rejected
+  - missing verified provenance reference / reason / rule / version is rejected
   - extra unknown field is rejected by the schema (additionalProperties:false)
   - forged classification level is rejected
   - registry<->gate enum drift is rejected
@@ -32,12 +32,16 @@ def _good_decision(**overrides):
         "source_category": "third_party_course_material",
         "gate_decision": "BLOCK",
         "classification_level": 4,
-        "provenance_recorded": True,
         "reason": "course material: author owns copyright",
         "rule_ref": "source-rights-registry:third_party_course_material",
         "schema_version": SCHEMA_VERSION,
     }
     d.update(overrides)
+    # Verified provenance reference (source_rights_entry_id + content_digest_sha256).
+    # All categories used by these tests have a null registry digest, so the digest match
+    # is not enforced and provenance_verified resolves to False (honest downgrade).
+    d.setdefault("source_rights_entry_id", d["source_category"])
+    d.setdefault("content_digest_sha256", "0" * 64)
     return d
 
 
@@ -74,13 +78,20 @@ class PublicationGateFailClosedTests(unittest.TestCase):
                         f"error should mention fail-closed: {r}")
 
     def test_missing_provenance_reason_rule_version_rejected(self):
-        """Missing provenance/reason/rule/version submission fields are rejected."""
-        # provenance_recorded missing
+        """Missing verified provenance reference / reason / rule / version are rejected."""
+        # verified provenance reference (source_rights_entry_id) missing
         d = _good_decision()
-        del d["provenance_recorded"]
+        del d["source_rights_entry_id"]
         r = self.gate.record_gate_decision(d)
         self.assertFalse(r["success"])
-        self.assertTrue(any("provenance_recorded" in e for e in r["errors"]))
+        self.assertTrue(any("source_rights_entry_id" in e for e in r["errors"]))
+
+        # content_digest_sha256 missing
+        d = _good_decision()
+        del d["content_digest_sha256"]
+        r = self.gate.record_gate_decision(d)
+        self.assertFalse(r["success"])
+        self.assertTrue(any("content_digest_sha256" in e for e in r["errors"]))
 
         # reason missing
         d = _good_decision()
@@ -103,11 +114,12 @@ class PublicationGateFailClosedTests(unittest.TestCase):
         self.assertFalse(r["success"])
         self.assertTrue(any("schema_version" in e for e in r["errors"]))
 
-    def test_provenance_false_rejected(self):
-        d = _good_decision(provenance_recorded=False)
+    def test_self_asserted_provenance_verified_rejected(self):
+        """A caller may not self-assert provenance_verified:True for a non-pinned source."""
+        d = _good_decision(provenance_verified=True)
         r = self.gate.record_gate_decision(d)
         self.assertFalse(r["success"])
-        self.assertTrue(any("provenance_recorded" in e for e in r["errors"]))
+        self.assertTrue(any("provenance_verified" in e for e in r["errors"]))
 
     def test_extra_unknown_field_rejected_by_schema(self):
         """A sneaked-in unknown field must be rejected by additionalProperties:false."""

@@ -153,7 +153,8 @@ def test_publication_gate_workflow():
         "source_category": "third_party_course_material",
         "gate_decision": "BLOCK",
         "classification_level": 4,
-        "provenance_recorded": True,
+        "source_rights_entry_id": "third_party_course_material",
+        "content_digest_sha256": "0" * 64,
         "reason": "Third-party course material: author owns copyright; republication prohibited.",
         "rule_ref": "source-rights-registry:third_party_course_material",
         "schema_version": "governance-gate-v1"
@@ -174,7 +175,8 @@ def test_publication_gate_workflow():
             "source_category": cat,
             "gate_decision": gate_d,
             "classification_level": lvl,
-            "provenance_recorded": True,
+            "source_rights_entry_id": cat,
+            "content_digest_sha256": "0" * 64,
             "reason": f"Recorded decision for {mid}",
             "rule_ref": f"source-rights-registry:{cat}",
             "schema_version": "governance-gate-v1"
@@ -188,7 +190,8 @@ def test_publication_gate_workflow():
         "source_category": "nonexistent_category",
         "gate_decision": "BLOCK",
         "classification_level": 6,
-        "provenance_recorded": True,
+        "source_rights_entry_id": "nonexistent_category",
+        "content_digest_sha256": "0" * 64,
         "reason": "should be rejected",
         "rule_ref": "n/a",
         "schema_version": "governance-gate-v1"
@@ -254,8 +257,7 @@ def test_mutation_detection():
         "material_id": "MUTATION-TEST",
         "source_category": "third_party_private_note",
         "gate_decision": "PASS",  # Should be BLOCK for level 6
-        "classification_level": 6,
-        "provenance_recorded": True
+        "classification_level": 6
     }
     result = gate.check_gate(bad_decision)
     assert result["valid"] is False, "Mutation test failed: tampered gate decision should be invalid"

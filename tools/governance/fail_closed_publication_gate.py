@@ -218,15 +218,18 @@ class FailClosedPublicationGate:
 
     # Fields a caller MUST supply when submitting a gate decision. The tool itself
     # derives rights_status/risk_level and stamps timestamps, so those are NOT required
-    # in the submission (they are finalized, not trusted from the caller). Provenance,
-    # reason, rule reference, and schema version are required so every recorded decision
-    # is auditable and tied to a contract version. provenance_recorded must be true.
+    # in the submission (they are finalized, not trusted from the caller). A *verified
+    # provenance reference* (source_rights_entry_id + content_digest_sha256), a free-text
+    # reason, a rule reference, and a schema version are required so every recorded
+    # decision is auditable and tied to a contract version. The caller cannot self-assert
+    # provenance: provenance_verified is set by the tool from a digest match, not trusted.
     SUBMISSION_REQUIRED = [
         "material_id",
         "source_category",
         "gate_decision",
         "classification_level",
-        "provenance_recorded",
+        "source_rights_entry_id",
+        "content_digest_sha256",
         "reason",
         "rule_ref",
         "schema_version",
@@ -237,9 +240,10 @@ class FailClosedPublicationGate:
     def _validate_submission(self, decision):
         """Validate the *submitted* decision before the tool derives/finalizes anything.
 
-        Rejects missing provenance/reason/rule/version, ill-typed or out-of-range
-        classification_level, and an invalid or non-provenance gate decision. This is the
-        fail-closed front door: a caller cannot record a decision without an auditable trail.
+        Rejects missing verified-provenance reference / reason / rule / version, ill-typed
+        or out-of-range classification_level, a malformed digest, and an invalid or
+        non-provenance gate decision. This is the fail-closed front door: a caller cannot
+        record a decision without an auditable, verified provenance trail.
         """
         errs = []
         if not isinstance(decision, dict):
@@ -247,8 +251,10 @@ class FailClosedPublicationGate:
         for f in self.SUBMISSION_REQUIRED:
             if f not in decision or decision[f] in (None, ""):
                 errs.append(f"Missing required submission field: {f}")
-        if "provenance_recorded" in decision and decision.get("provenance_recorded") is not True:
-            errs.append("provenance_recorded must be true to record a gate decision")
+        digest = decision.get("content_digest_sha256")
+        if digest is not None and not (isinstance(digest, str) and len(digest) == 64
+                                       and all(c in "0123456789abcdef" for c in digest)):
+            errs.append("content_digest_sha256 must be a 64-char lowercase hex SHA-256")
         lvl = decision.get("classification_level")
         if lvl is not None and not (isinstance(lvl, int) and 0 <= lvl <= 6):
             errs.append(f"classification_level must be integer 0-6, got {lvl!r}")
@@ -261,8 +267,8 @@ class FailClosedPublicationGate:
         """Record a gate decision, fail-closed.
 
         Pipeline:
-          0. Submission-completeness check (provenance/reason/rule/version present;
-             provenance_recorded must be true) — rejects missing audit trail.
+          0. Submission-completeness check (verified provenance reference + reason/rule/version
+             present) — rejects missing audit trail.
           1. Re-derive expected level/risk/gate from the canonical source-rights registry by
              source_category; unknown/unmappable category fails closed (not recorded).
           2. Cross-check submitted classification_level/gate_decision/rights_status against the
@@ -281,6 +287,43 @@ class FailClosedPublicationGate:
         derived = self._derive_expected(decision.get("source_category"))
         if derived is None:
             return {"success": False, "errors": ["Unknown or unmappable source_category; fail-closed (not recorded)"]}
+
+        # 1b. Verify the provenance reference (fail-closed: a verified registry pointer,
+        # not a free-text self-assertion). The caller supplies source_rights_entry_id +
+        # content_digest_sha256; the tool confirms the entry exists, matches source_category,
+        # and (for VERIFIED sources with a pinned digest) that the digest matches. The tool
+        # alone decides provenance_verified — a caller may not self-assert it.
+        entry_id = decision.get("source_rights_entry_id")
+        entry = self.source_rights_registry.get("categories", {}).get(entry_id)
+        if entry is None:
+            return {"success": False, "errors": [
+                f"source_rights_entry_id '{entry_id}' not found in source-rights-registry; "
+                f"provenance reference must point to a real entry"
+            ]}
+        if entry_id != decision.get("source_category"):
+            return {"success": False, "errors": [
+                f"source_rights_entry_id '{entry_id}' must equal source_category "
+                f"'{decision.get('source_category')}' (provenance category mismatch)"
+            ]}
+        entry_digest = (entry.get("provenance") or {}).get("content_digest_sha256")
+        submitted_digest = decision.get("content_digest_sha256")
+        provenance_verified = False
+        if entry_digest is not None:
+            # Registry has pinned a real digest for this (VERIFIED) source: enforce match.
+            if submitted_digest != entry_digest:
+                return {"success": False, "errors": [
+                    f"content_digest_sha256 does not match the pinned digest for source-rights "
+                    f"entry '{entry_id}' (source text tampered or unverified)"
+                ]}
+            provenance_verified = True
+        else:
+            # Source text is not independently pinned (OFFICIAL_TEXT_NOT_VERIFIED /
+            # LEGAL_REVIEW_REQUIRED). Provenance cannot be verified; a caller may not claim it.
+            if decision.get("provenance_verified") is True:
+                return {"success": False, "errors": [
+                    f"cannot claim provenance_verified for source-rights entry '{entry_id}': "
+                    f"its content_digest_sha256 is not pinned (verification_status not VERIFIED)"
+                ]}
 
         # 2. Cross-check submitted values against the derivation (no self-reported lower risk)
         errs = []
@@ -303,6 +346,11 @@ class FailClosedPublicationGate:
         final = dict(decision)
         final["rights_status"] = derived["rights_status"]
         final["risk_level"] = derived["risk_level"]
+        # Verified provenance reference (set by the tool, not trusted from the caller)
+        final["source_rights_entry_id"] = entry_id
+        final["content_digest_sha256"] = submitted_digest
+        final["provenance_verified"] = provenance_verified
+        final.pop("provenance_recorded", None)  # retire the legacy boolean self-assertion
         final["timestamp_HE"] = "12026年7月19日（人类纪元；对应公元2026年7月19日）"
         final["timestamp_ISO"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -380,6 +428,12 @@ def main():
                         help="Gate decision")
     p_gate.add_argument("--classification-level", type=int, required=True, help="Classification level 0-6")
     p_gate.add_argument("--source-category", required=True, help="Source category")
+    p_gate.add_argument("--source-rights-entry-id", default=None,
+                        help="Source-rights-registry category key this material's rights derive from (defaults to --source-category)")
+    p_gate.add_argument("--content-digest", required=True,
+                        help="SHA-256 of the actual material/source text (verified against the registry entry's pinned digest for VERIFIED sources)")
+    p_gate.add_argument("--provenance-record-id", default=None,
+                        help="Optional external provenance record id (e.g., non-republication principle record)")
     p_gate.add_argument("--reviewer", default="agent", help="Who made the decision")
     p_gate.add_argument("--reason", required=True, help="Human-readable rationale for the decision")
     p_gate.add_argument("--rule-ref", required=True, help="Governing rule/registry reference justifying the decision")
@@ -407,11 +461,14 @@ def main():
             "gate_decision": args.gate_decision,
             "classification_level": args.classification_level,
             "reviewer": args.reviewer,
-            "provenance_recorded": True,
+            "source_rights_entry_id": args.source_rights_entry_id or args.source_category,
+            "content_digest_sha256": args.content_digest,
             "reason": args.reason,
             "rule_ref": args.rule_ref,
-            "schema_version": args.schema_version
+            "schema_version": args.schema_version,
         }
+        if args.provenance_record_id:
+            decision["provenance_record_id"] = args.provenance_record_id
         result = gate.record_gate_decision(decision)
         print(json.dumps(result, indent=2, ensure_ascii=False))
 

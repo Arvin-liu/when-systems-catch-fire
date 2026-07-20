@@ -57,6 +57,7 @@
     "tests/test_phase_e_candidate.py",
     "tests/test_production_execution_authority.py",
     "tests/test_publication_gate_fail_closed.py",
+    "tests/test_publication_provenance_attack.py",
     "tests/test_q33_governance_infrastructure.py",
     "tests/test_source_rights_gate_enum_consistency.py",
     "tools/governance/fail_closed_publication_gate.py",
