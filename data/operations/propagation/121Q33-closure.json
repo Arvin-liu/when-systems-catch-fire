@@ -1,0 +1,613 @@
+{
+  "actual_component_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "accepted_work",
+      "reason": "Component accepted_work resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "charter",
+      "reason": "Component charter resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance_history_remediation",
+      "reason": "Q33 new governance component: 版权治理-历史整改注册表"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance_jurisdiction_registry",
+      "reason": "Q33 new governance component: 版权治理-法域规则注册表"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance_material_classification",
+      "reason": "Q33 new governance component: 版权治理-材料分类系统"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance_non_republication_principle",
+      "reason": "Q33 new governance component: 版权治理-外部输入不重新发布原则"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance_publication_gate_validator",
+      "reason": "Q33 new governance component: 版权治理-发布门禁验证器"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance_source_rights",
+      "reason": "Q33 new governance component: 版权治理-来源权利注册表"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance_tests",
+      "reason": "Q33 new governance component: 版权治理-测试套件"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "current_state",
+      "reason": "Component current_state resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external_input",
+      "reason": "Component external_input resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation",
+      "reason": "Component foundation resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l2",
+      "reason": "Component l2 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l3",
+      "reason": "Component l3 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l4",
+      "reason": "Component l4 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l5",
+      "reason": "Component l5 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l6",
+      "reason": "Component l6 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_truth_upgrade",
+      "reason": "Component no_truth_upgrade resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "pages_pipeline",
+      "reason": "Q33 governance components reference this surface; must be revalidated with new governance edges"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q12",
+      "reason": "Component q12 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q13",
+      "reason": "Component q13 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q14",
+      "reason": "Component q14 resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase",
+      "reason": "Component showcase resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase_registry",
+      "reason": "Component showcase_registry resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "source_pool",
+      "reason": "Component source_pool resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "system_map_projection",
+      "reason": "Q33 governance components reference this surface; must be revalidated with new governance edges"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "zhiyuan_method",
+      "reason": "Component zhiyuan_method resolved by Q33 propagation topology but not directly modified by Q33 governance changes."
+    }
+  ],
+  "actual_surface_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent.handoff",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai.start",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external.pages_homepage",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.ai_guide",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.current_state",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.pages_source",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.readme",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.summary",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.usage",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "machine.llms",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.iteration",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.result_template",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.review_template",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.task_template",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.changelog",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.versioning",
+      "reason": "Q33 governance changes do not affect this surface; no modification needed."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance",
+      "reason": "Q33 introduces the copyright_governance synchronization surface (added to the registry in this iteration) together with its underlying governance components and policies; the surface is newly established by this iteration."
+    }
+  ],
+  "base_identity": "f54577a9084d0ac6e374341d96836c5d52bc3b8c",
+  "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
+  "closure_complete": true,
+  "closure_hash": "09d6583f1854f3d81d5fc30fc001482182f1c7f1bd480031bd7964e1b7299e50",
+  "closure_version": "1.0.0",
+  "fixpoint": {
+    "iterations": 3,
+    "reached": true
+  },
+  "head_identity": "f54577a9084d0ac6e374341d96836c5d52bc3b8c",
+  "registry_derived_surfaces": [
+    "agent.handoff",
+    "ai.start",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "method.result_template",
+    "method.review_template",
+    "method.task_template",
+    "release.changelog",
+    "release.versioning",
+    "copyright_governance"
+  ],
+  "required_component_decisions": [
+    "accepted_work",
+    "charter",
+    "copyright_governance_history_remediation",
+    "copyright_governance_jurisdiction_registry",
+    "copyright_governance_material_classification",
+    "copyright_governance_non_republication_principle",
+    "copyright_governance_publication_gate_validator",
+    "copyright_governance_source_rights",
+    "copyright_governance_tests",
+    "current_state",
+    "external_input",
+    "foundation",
+    "l2",
+    "l3",
+    "l4",
+    "l5",
+    "l6",
+    "no_truth_upgrade",
+    "pages_pipeline",
+    "q12",
+    "q13",
+    "q14",
+    "showcase",
+    "showcase_registry",
+    "source_pool",
+    "system_map_projection",
+    "zhiyuan_method"
+  ],
+  "required_surface_decisions": [
+    "agent.handoff",
+    "ai.start",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "method.result_template",
+    "method.review_template",
+    "method.task_template",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "residue": [],
+  "resolved_components": [
+    "accepted_work",
+    "charter",
+    "copyright_governance_history_remediation",
+    "copyright_governance_jurisdiction_registry",
+    "copyright_governance_material_classification",
+    "copyright_governance_non_republication_principle",
+    "copyright_governance_publication_gate_validator",
+    "copyright_governance_source_rights",
+    "copyright_governance_tests",
+    "current_state",
+    "external_input",
+    "foundation",
+    "l2",
+    "l3",
+    "l4",
+    "l5",
+    "l6",
+    "no_truth_upgrade",
+    "pages_pipeline",
+    "q12",
+    "q13",
+    "q14",
+    "showcase",
+    "showcase_registry",
+    "source_pool",
+    "system_map_projection",
+    "zhiyuan_method"
+  ],
+  "seed_components": [
+    "copyright_governance_history_remediation",
+    "copyright_governance_jurisdiction_registry",
+    "copyright_governance_material_classification",
+    "copyright_governance_non_republication_principle",
+    "copyright_governance_publication_gate_validator",
+    "copyright_governance_source_rights",
+    "copyright_governance_tests"
+  ],
+  "seed_paths": [
+    "data/governance/history-remediation-register.json",
+    "data/governance/jurisdiction-rule-registry.json",
+    "data/governance/material-classification.json",
+    "data/governance/source-rights-registry.json",
+    "docs/governance/external-input-non-republication-principle.md",
+    "schemas/governance/external-input-non-republication.schema.json",
+    "schemas/governance/history-remediation-entry.schema.json",
+    "schemas/governance/jurisdiction-rule-entry.schema.json",
+    "schemas/governance/publication-gate-decision.schema.json",
+    "schemas/governance/source-rights-entry.schema.json",
+    "tests/test_q33_governance_infrastructure.py",
+    "tools/governance/fail_closed_publication_gate.py"
+  ],
+  "system_map_impact": {
+    "added_edges": [
+      "copyright_governance_jurisdiction_registry->charter",
+      "copyright_governance_material_classification->source_pool",
+      "copyright_governance_non_republication_principle->accepted_work",
+      "copyright_governance_publication_gate_validator->current_state",
+      "copyright_governance_source_rights->external_input"
+    ],
+    "added_nodes": [
+      "copyright_governance_history_remediation",
+      "copyright_governance_jurisdiction_registry",
+      "copyright_governance_material_classification",
+      "copyright_governance_non_republication_principle",
+      "copyright_governance_publication_gate_validator",
+      "copyright_governance_source_rights",
+      "copyright_governance_tests"
+    ],
+    "changed_edges": [],
+    "changed_nodes": [],
+    "decision": "CHANGE",
+    "reason": "New governance components added to project-component registry and topology",
+    "removed_edges": [],
+    "removed_nodes": [],
+    "unmapped_residue": []
+  },
+  "task_id": "121Q33",
+  "typed_paths": [
+    {
+      "claim_ceiling": "Publication gate is a repository-level fail-closed check; does not prove external legality",
+      "creates_sync_obligation": true,
+      "propagation_mode": "required_assessment",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "copyright_gov_to_publication_chain",
+      "source": "copyright_governance_publication_gate_validator",
+      "target": "pages_pipeline"
+    },
+    {
+      "claim_ceiling": "Repository-level governance surface; not global legality or real-world causality",
+      "creates_sync_obligation": true,
+      "propagation_mode": "required_assessment",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency",
+      "relation_id": "copyright_gov_to_system_map",
+      "source": "copyright_governance_jurisdiction_registry",
+      "target": "system_map_projection"
+    },
+    {
+      "claim_ceiling": "normative constraint only",
+      "creates_sync_obligation": true,
+      "propagation_mode": "required_assessment",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation",
+      "relation_id": "map_charter_q12",
+      "source": "charter",
+      "target": "q12"
+    },
+    {
+      "claim_ceiling": "writing input relation only",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "derives",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_external_pool",
+      "source": "external_input",
+      "target": "source_pool"
+    },
+    {
+      "claim_ceiling": "registry authority projection",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_foundation_l2",
+      "source": "foundation",
+      "target": "l2"
+    },
+    {
+      "claim_ceiling": "interpretation boundary only",
+      "creates_sync_obligation": true,
+      "propagation_mode": "required_assessment",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation",
+      "relation_id": "map_foundation_no_truth",
+      "source": "foundation",
+      "target": "no_truth_upgrade"
+    },
+    {
+      "claim_ceiling": "normative constraint only",
+      "creates_sync_obligation": true,
+      "propagation_mode": "required_assessment",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation",
+      "relation_id": "map_gov_jurisdiction",
+      "source": "copyright_governance_jurisdiction_registry",
+      "target": "charter"
+    },
+    {
+      "claim_ceiling": "classification only",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_gov_material_class",
+      "source": "copyright_governance_material_classification",
+      "target": "source_pool"
+    },
+    {
+      "claim_ceiling": "interpretation boundary only",
+      "creates_sync_obligation": true,
+      "propagation_mode": "required_assessment",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation",
+      "relation_id": "map_gov_non_repub",
+      "source": "copyright_governance_non_republication_principle",
+      "target": "accepted_work"
+    },
+    {
+      "claim_ceiling": "validation gate only",
+      "creates_sync_obligation": true,
+      "propagation_mode": "automatic",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_gov_publication_gate",
+      "source": "copyright_governance_publication_gate_validator",
+      "target": "current_state"
+    },
+    {
+      "claim_ceiling": "normative constraint only",
+      "creates_sync_obligation": true,
+      "propagation_mode": "required_assessment",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation",
+      "relation_id": "map_gov_source_rights",
+      "source": "copyright_governance_source_rights",
+      "target": "external_input"
+    },
+    {
+      "claim_ceiling": "test validation only",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_gov_tests",
+      "source": "copyright_governance_tests",
+      "target": "foundation"
+    },
+    {
+      "claim_ceiling": "declared workflow dependency",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "derives",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_l2_l3",
+      "source": "l2",
+      "target": "l3"
+    },
+    {
+      "claim_ceiling": "declared workflow dependency",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "derives",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_l3_l4",
+      "source": "l3",
+      "target": "l4"
+    },
+    {
+      "claim_ceiling": "validation dependency only",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_l4_l5",
+      "source": "l4",
+      "target": "l5"
+    },
+    {
+      "claim_ceiling": "publication permission dependency; no truth upgrade",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "publishes",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_l5_l6",
+      "source": "l5",
+      "target": "l6"
+    },
+    {
+      "claim_ceiling": "historical generation provenance; no retroactive rewrite",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_method_work",
+      "source": "zhiyuan_method",
+      "target": "accepted_work"
+    },
+    {
+      "claim_ceiling": "writing generation dependency",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "enabling_condition",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_pool_method",
+      "source": "source_pool",
+      "target": "zhiyuan_method"
+    },
+    {
+      "claim_ceiling": "declared operation dependency",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "derives",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_q12_q13",
+      "source": "q12",
+      "target": "q13"
+    },
+    {
+      "claim_ceiling": "declared navigation projection",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_q13_q14",
+      "source": "q13",
+      "target": "q14"
+    },
+    {
+      "claim_ceiling": "provenance registration only",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "documents",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_work_registry",
+      "source": "accepted_work",
+      "target": "showcase_registry"
+    },
+    {
+      "claim_ceiling": "presentation relation only",
+      "creates_sync_obligation": false,
+      "propagation_mode": "required_assessment",
+      "relation_class": "publishes",
+      "relation_domain": "repository_dependency",
+      "relation_id": "map_work_showcase",
+      "source": "accepted_work",
+      "target": "showcase"
+    },
+    {
+      "claim_ceiling": "deployment dependency only",
+      "creates_sync_obligation": true,
+      "propagation_mode": "automatic",
+      "relation_class": "deployment_depends_on",
+      "relation_domain": "repository_dependency",
+      "relation_id": "projection_publishes_pages",
+      "source": "system_map_projection",
+      "target": "pages_pipeline"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{"material_id": "T1", "source_category": "public_domain", "gate_decision": "PASS", "classification_level": 0, "provenance_recorded": true, "timestamp_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）", "timestamp_ISO": "2026-07-19T05:39:24Z"}
+{"material_id": "T3", "source_category": "third_party_private_note", "gate_decision": "BLOCK", "classification_level": 6, "provenance_recorded": true, "timestamp_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）", "timestamp_ISO": "2026-07-19T05:39:24Z"}
+{"material_id": "T4", "source_category": "nonexistent_category", "gate_decision": "BLOCK", "classification_level": 6, "provenance_recorded": true, "timestamp_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）", "timestamp_ISO": "2026-07-19T05:39:24Z"}
+{"material_id": "TEST-COURSE-001", "source_category": "third_party_course_material", "gate_decision": "BLOCK", "classification_level": 4, "provenance_recorded": true, "timestamp_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）", "timestamp_ISO": "2026-07-19T05:39:24Z"}

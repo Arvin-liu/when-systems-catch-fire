@@ -1207,6 +1207,219 @@
       "declaration_source": "docs/architecture/interactive-system-map.md",
       "claim_ceiling": "deterministic repository derivation",
       "residue": []
+    },
+    {
+      "relation_id": "copyright_gov_to_system_map",
+      "source": "copyright_governance_jurisdiction_registry",
+      "target": "system_map_projection",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": false,
+      "label": "Copyright governance surfaces project onto system map",
+      "declaration_source": "121Q33-request",
+      "claim_ceiling": "Repository-level governance surface; not global legality or real-world causality",
+      "residue": []
+    },
+    {
+      "relation_id": "copyright_gov_to_publication_chain",
+      "source": "copyright_governance_publication_gate_validator",
+      "target": "pages_pipeline",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": false,
+      "label": "Publication gate validates pages pipeline output",
+      "declaration_source": "121Q33-request",
+      "claim_ceiling": "Publication gate is a repository-level fail-closed check; does not prove external legality",
+      "residue": []
+    },
+    {
+      "relation_id": "copyright_gov_to_current_state",
+      "source": "copyright_governance_history_remediation",
+      "target": "current_state",
+      "relation_class": "documents",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "informational_only",
+      "required_evaluation": false,
+      "creates_sync_obligation": false,
+      "map_visible": false,
+      "label": "History remediation register documented in current state",
+      "declaration_source": "121Q33-request",
+      "claim_ceiling": "Remediation register records past boundary events; not a legal finding",
+      "residue": []
+    },
+    {
+      "relation_id": "map_gov_jurisdiction",
+      "source": "copyright_governance_jurisdiction_registry",
+      "target": "charter",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": true,
+      "label": "法域约束",
+      "declaration_source": "data/governance/jurisdiction-rule-registry.json",
+      "claim_ceiling": "normative constraint only",
+      "residue": []
+    },
+    {
+      "relation_id": "map_gov_source_rights",
+      "source": "copyright_governance_source_rights",
+      "target": "external_input",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation",
+      "trigger_dimensions": [
+        "governance",
+        "usage"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE",
+        "INTERFACE_CHANGE"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": true,
+      "label": "来源权利约束",
+      "declaration_source": "data/governance/source-rights-registry.json",
+      "claim_ceiling": "normative constraint only",
+      "residue": []
+    },
+    {
+      "relation_id": "map_gov_publication_gate",
+      "source": "copyright_governance_publication_gate_validator",
+      "target": "current_state",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "automatic",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": true,
+      "label": "出版门禁验证",
+      "declaration_source": "tools/governance/fail_closed_publication_gate.py",
+      "claim_ceiling": "validation gate only",
+      "residue": []
+    },
+    {
+      "relation_id": "map_gov_non_repub",
+      "source": "copyright_governance_non_republication_principle",
+      "target": "accepted_work",
+      "relation_class": "constraint",
+      "relation_domain": "synchronization_obligation",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": true,
+      "label": "不重新发布约束",
+      "declaration_source": "docs/governance/external-input-non-republication-principle.md",
+      "claim_ceiling": "interpretation boundary only",
+      "residue": []
+    },
+    {
+      "relation_id": "map_gov_history_remed",
+      "source": "copyright_governance_history_remediation",
+      "target": "historical_reports",
+      "relation_class": "documents",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "informational_only",
+      "required_evaluation": false,
+      "creates_sync_obligation": false,
+      "map_visible": false,
+      "label": "历史整改记录",
+      "declaration_source": "data/governance/history-remediation-register.json",
+      "claim_ceiling": "historical documentation only",
+      "residue": []
+    },
+    {
+      "relation_id": "map_gov_material_class",
+      "source": "copyright_governance_material_classification",
+      "target": "source_pool",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "automatic",
+      "required_evaluation": true,
+      "creates_sync_obligation": false,
+      "map_visible": true,
+      "label": "材料分类",
+      "declaration_source": "data/governance/material-classification.json",
+      "claim_ceiling": "classification only",
+      "residue": []
+    },
+    {
+      "relation_id": "map_gov_tests",
+      "source": "copyright_governance_tests",
+      "target": "foundation",
+      "relation_class": "validates",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "automatic",
+      "required_evaluation": true,
+      "creates_sync_obligation": false,
+      "map_visible": false,
+      "label": "治理测试",
+      "declaration_source": "tests/test_q33_governance_infrastructure.py",
+      "claim_ceiling": "test validation only",
+      "residue": []
     }
   ],
   "allowed_path_overlaps": [

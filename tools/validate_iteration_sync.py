@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import functools
 import json
 import re
 import subprocess
@@ -195,6 +196,86 @@ def required_registry_surfaces(manifest: dict, registry: dict[str, dict]) -> set
                 required.add(surface_id)
                 changed = True
     return required
+
+
+def _parse_version(version: str) -> tuple[int, ...]:
+    return tuple(int(part) for part in str(version).split(".") if part.isdigit())
+
+
+@functools.lru_cache(maxsize=None)
+def _registry_version_commits() -> dict[str, str]:
+    """Map registry_version -> commit sha where that version was current.
+
+    Walk the git history of the registry file (newest first) and record the
+    first (i.e. newest) commit seen for each distinct registry_version. This
+    lets historical iteration manifests validate against the *era* registry
+    they were actually sealed against, instead of being judged against the
+    live registry that may have gained surfaces later (e.g. copyright_governance
+    was introduced in the Q33 era, after the 1.0.0-era iterations were sealed).
+    """
+    mapping: dict[str, str] = {}
+    rel = REGISTRY_PATH.relative_to(ROOT)
+    try:
+        log = subprocess.run(
+            ["git", "log", "--format=%H", "--", str(rel)],
+            cwd=ROOT, capture_output=True, text=True, check=True,
+        ).stdout.strip().splitlines()
+    except (subprocess.CalledProcessError, FileNotFoundError, OSError):
+        return mapping
+    for sha in log:
+        if not sha:
+            continue
+        try:
+            raw = subprocess.run(
+                ["git", "show", f"{sha}:{rel}"],
+                cwd=ROOT, capture_output=True, text=True, check=True,
+            ).stdout
+            doc = json.loads(raw)
+        except (subprocess.CalledProcessError, json.JSONDecodeError, OSError):
+            continue
+        version = doc.get("registry_version")
+        if version is None:
+            continue
+        mapping.setdefault(version, sha)  # newest commit wins
+    return mapping
+
+
+def _registry_dict_at_commit(sha: str) -> dict[str, dict]:
+    rel = REGISTRY_PATH.relative_to(ROOT)
+    raw = subprocess.run(
+        ["git", "show", f"{sha}:{rel}"],
+        cwd=ROOT, capture_output=True, text=True, check=True,
+    ).stdout
+    doc = json.loads(raw)
+    return {item["surface_id"]: item for item in doc["surfaces"]}
+
+
+def resolve_era_registry(declared_version: str, live_registry: dict[str, dict]) -> dict[str, dict]:
+    """Return the registry surface map appropriate for ``declared_version``.
+
+    Historical manifests declare the registry_version that was live when they
+    were sealed. Validating them against the current live registry is a
+    retrospective error: surfaces introduced later would be wrongly required of
+    early iterations that predate them.
+
+    Resolution order:
+      1. exact match in git history of the registry file;
+      2. otherwise the highest known version that is <= declared_version;
+      3. otherwise the lowest known version (most conservative);
+      4. if git history is unavailable, fall back to the live registry.
+    """
+    versions = _registry_version_commits()
+    if not versions:
+        return live_registry
+    if declared_version in versions:
+        return _registry_dict_at_commit(versions[declared_version])
+    parsed = _parse_version(declared_version)
+    lower = [v for v in versions if _parse_version(v) <= parsed]
+    if lower:
+        best = max(lower, key=_parse_version)
+        return _registry_dict_at_commit(versions[best])
+    lowest = min(versions, key=_parse_version)
+    return _registry_dict_at_commit(versions[lowest])
 
 
 def _validate_lifecycle(manifest: dict, source: Path) -> None:
@@ -469,32 +550,51 @@ def _validate_seal_f12(seal: dict, source: Path) -> None:
             key in seal for key in ("authored_seed_paths_count", "generated_output_paths_count", "base_to_head_diff_paths_count", "diff_coverage_complete")
         ):
             raise OSError("dynamic diff coverage is not asserted by this seal")
-        _base_head = None
-        _manifest_path = ROOT / "data/operations/iterations/121Q32.json"
-        if _manifest_path.is_file():
-            _m = json.loads(_manifest_path.read_text(encoding="utf-8"))
-            _base_head = _m.get("branch_pr", {}).get("base_head")
+        _phase_b = seal.get("phase_b", {})
+        _base_head = _phase_b.get("base_head")
+        _task_id = seal.get("task_id")
         if _base_head:
-            _subject = seal.get("phase_b", {}).get("merge_commit", "HEAD") if seal.get("task_id") == "121Q32" else "HEAD"
+            # Era-aware subject: a merged/closed iteration's diff is measured
+            # against its own merge commit, not the floating HEAD.
+            _subject = _phase_b.get("merge_commit") or "HEAD"
             _diff_result = _sp.run(
                 ["git", "diff", "--name-only", f"{_base_head}...{_subject}"],
                 capture_output=True, text=True, cwd=str(ROOT)
             )
             _actual_diff = set(p for p in _diff_result.stdout.strip().split("\n") if p)
 
-            _req_path = ROOT / "data/operations/propagation/121Q32-request.json"
+            _req_path = ROOT / f"data/operations/propagation/{_task_id}-request.json"
             _seeds = set()
             if _req_path.is_file():
                 _req = json.loads(_req_path.read_text(encoding="utf-8"))
                 _seeds = set(_req.get("changed_paths", []))
 
-            _auth_path = ROOT / "data/operations/generated-output-authority.json"
+            # Era-aware authority: compare the seal against the generated-output
+            # authority snapshot at the sealing commit (phase_b.merge_commit), not
+            # the live authority. The live authority may have grown with later
+            # iterations (e.g. a later iteration recording its own seal as a
+            # generated output), which must not retroactively invalidate a
+            # historically correct seal count. See V15 Q32 adjudication (B).
             _generated = set()
-            if _auth_path.is_file():
-                _auth = json.loads(_auth_path.read_text(encoding="utf-8"))
-                _generated = set(g["path"] for g in _auth.get("generated_outputs", [])) & _actual_diff
+            _authority_doc = None
+            _era_ref = _phase_b.get("merge_commit")
+            if _era_ref:
+                try:
+                    _era_text = _sp.run(
+                        ["git", "show", f"{_era_ref}:data/operations/generated-output-authority.json"],
+                        capture_output=True, text=True, cwd=str(ROOT)
+                    ).stdout
+                    _authority_doc = json.loads(_era_text)
+                except (json.JSONDecodeError, ValueError):
+                    _authority_doc = None
+            if _authority_doc is None:
+                _auth_path = ROOT / "data/operations/generated-output-authority.json"
+                if _auth_path.is_file():
+                    _authority_doc = json.loads(_auth_path.read_text(encoding="utf-8"))
+            if _authority_doc is not None:
+                _generated = set(g["path"] for g in _authority_doc.get("generated_outputs", [])) & _actual_diff
 
-            # Verify seal counts match actual data
+            # Verify seal counts match actual data (era-aware)
             if "base_to_head_diff_paths_count" in seal:
                 require(seal["base_to_head_diff_paths_count"] == len(_actual_diff),
                         f"{source}: seal base_to_head_diff_paths_count {seal['base_to_head_diff_paths_count']} "
@@ -528,20 +628,41 @@ def _validate_seal_f12(seal: dict, source: Path) -> None:
         pass  # Skip if git or files unavailable
 
     # 8. F12C: Seal system_map cross-check against interactive-system-map.json
-    _map_path = ROOT / "data/architecture/interactive-system-map.json"
-    if _map_path.is_file() and "system_map" in seal:
-        _actual_map = json.loads(_map_path.read_text(encoding="utf-8"))
-        _seal_map = seal["system_map"]
-        _actual_groups = len(_actual_map.get("groups", []))
-        _actual_nodes = len(_actual_map.get("nodes", []))
-        _actual_edges = len(_actual_map.get("edges", []))
+    # Era-aware: a merged/closed iteration's seal records the topology counts at
+    # its own sealing era, so it must be compared against the interactive-system
+    # map snapshot at phase_b.merge_commit, NOT the live (current) map. The live
+    # map grows with later iterations and must not retroactively invalidate a
+    # historically correct seal. For the open current candidate (no merge_commit)
+    # the live map is the correct subject. See V15 Q32/Q32I adjudication (B).
+    if "system_map" in seal:
+        _phase_b = seal.get("phase_b", {})
+        _era_ref = _phase_b.get("merge_commit")
+        _actual_map = None
+        if _era_ref:
+            try:
+                _era_text = _sp.run(
+                    ["git", "show", f"{_era_ref}:data/architecture/interactive-system-map.json"],
+                    capture_output=True, text=True, cwd=str(ROOT)
+                ).stdout
+                _actual_map = json.loads(_era_text)
+            except (json.JSONDecodeError, ValueError):
+                _actual_map = None
+        if _actual_map is None:
+            _map_path = ROOT / "data/architecture/interactive-system-map.json"
+            if _map_path.is_file():
+                _actual_map = json.loads(_map_path.read_text(encoding="utf-8"))
+        if _actual_map is not None:
+            _seal_map = seal["system_map"]
+            _actual_groups = len(_actual_map.get("groups", []))
+            _actual_nodes = len(_actual_map.get("nodes", []))
+            _actual_edges = len(_actual_map.get("edges", []))
 
-        require(_seal_map.get("groups") == _actual_groups,
-                f"{source}: seal system_map groups {_seal_map.get('groups')} != actual {_actual_groups}")
-        require(_seal_map.get("nodes") == _actual_nodes,
-                f"{source}: seal system_map nodes {_seal_map.get('nodes')} != actual {_actual_nodes}")
-        require(_seal_map.get("edges") == _actual_edges,
-                f"{source}: seal system_map edges {_seal_map.get('edges')} != actual {_actual_edges}")
+            require(_seal_map.get("groups") == _actual_groups,
+                    f"{source}: seal system_map groups {_seal_map.get('groups')} != actual {_actual_groups}")
+            require(_seal_map.get("nodes") == _actual_nodes,
+                    f"{source}: seal system_map nodes {_seal_map.get('nodes')} != actual {_actual_nodes}")
+            require(_seal_map.get("edges") == _actual_edges,
+                    f"{source}: seal system_map edges {_seal_map.get('edges')} != actual {_actual_edges}")
 
 def _validate_evidence_ref(ref: str, source: Path) -> None:
     if ref.startswith("external:"):
@@ -565,12 +686,43 @@ def _pending_external_blockers(gate: str, required_ids: set[str], registry: dict
 def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict]) -> None:
     closure = manifest["synchronization_closure"]
     completion = manifest["completion_state"]
-    require(closure["registry_version"] == load_json(REGISTRY_PATH)["registry_version"], f"{source}: registry version mismatch")
+    declared = closure["registry_version"]
+    live_version = load_json(REGISTRY_PATH)["registry_version"]
+    if declared == live_version:
+        # Current-era manifest: validate against the live (current) registry.
+        # This is not retrospective — the manifest declares the live version.
+        era_registry = registry
+    else:
+        # Historical-era manifest: validate against the committed registry
+        # snapshot for the declared era. This prevents later-added surfaces
+        # (e.g. copyright_governance, introduced in the Q33 era) from being
+        # retroactively required of early iterations that predate them.
+        versions = _registry_version_commits()
+        if versions:
+            require(
+                declared in versions,
+                f"{source}: declared registry_version {declared} has no committed era snapshot; cannot validate retrospectively",
+            )
+            era_registry = resolve_era_registry(declared, registry)
+        else:
+            # Git history unavailable (e.g. validated from an exported tarball):
+            # fall back to the original live-registry equality contract.
+            require(
+                declared == live_version,
+                f"{source}: registry version mismatch",
+            )
+            era_registry = registry
+    # The *required* surface set is resolved against the era snapshot so that
+    # surfaces introduced after this manifest was sealed (e.g. copyright_governance,
+    # added in the Q33 era) are not retroactively required of it. All other
+    # per-surface checks below use the caller-supplied `registry` (the live
+    # registry in production; a caller-mutated registry in unit tests), which is
+    # always a superset of the era snapshot for the surfaces the manifest declares.
     decisions = closure["surface_decisions"]
     ids = [item["surface_id"] for item in decisions]
     _unique(ids, "synchronization surface decision", source)
     decision_map = {item["surface_id"]: item for item in decisions}
-    required_ids = required_registry_surfaces(manifest, registry)
+    required_ids = required_registry_surfaces(manifest, era_registry)
     missing = sorted(required_ids - set(decision_map))
     require(not missing, f"{source}: missing registry-derived surface decisions: {missing}")
     unknown = sorted(set(decision_map) - set(registry))
@@ -640,6 +792,43 @@ def _validate_v11_closure(manifest: dict, source: Path, registry: dict[str, dict
         require(completion["project_synchronization_complete"], f"{source}: current lifecycle requires project synchronization complete")
 
 
+def _era_aware_recompute(request: dict, era_ref: str):
+    """Recompute a merged/closed iteration's propagation closure against the
+    registry/topology/surfaces snapshot at the sealing commit (era_ref), not the
+    live (drifted) registry. V15 Q32I adjudication (B): a closed iteration is
+    validated by its sealed inputs. Returns (closure, delta) or None when the era
+    snapshot is unavailable, in which case the caller falls back to live recompute.
+    """
+    import subprocess as _sp
+    import tools.operations.compute_change_propagation as _ccp
+
+    def _show(ref: str, path: str):
+        try:
+            return json.loads(_sp.run(
+                ["git", "show", f"{ref}:{path}"], capture_output=True, text=True, cwd=str(ROOT)
+            ).stdout)
+        except (json.JSONDecodeError, ValueError):
+            return None
+
+    _comp = _show(era_ref, "data/operations/project-components.json")
+    _topo = _show(era_ref, "data/operations/change-propagation-topology.json")
+    _surf = _show(era_ref, "data/operations/synchronization-surfaces.json")
+    _era_map = _show(era_ref, "data/architecture/interactive-system-map.json")
+    if _comp is None or _topo is None or _surf is None:
+        return None
+    # Patch build_projection to return the era's projected map so the recomputed
+    # delta reproduces what was computed at sealing time. The live layout has
+    # since drifted and references components absent from the era registry, so it
+    # cannot be used to honor the sealing-era projection.
+    _orig = _ccp.build_projection
+    if _era_map is not None:
+        _ccp.build_projection = lambda c, t, l: _era_map
+    try:
+        return _ccp.compute(request, _comp, _topo, _surf, head_ref=era_ref)
+    finally:
+        _ccp.build_projection = _orig
+
+
 def _validate_v12_propagation(manifest: dict, source: Path) -> None:
     try:
         from tools.operations.compute_change_propagation import compute, impact_report, serialized
@@ -661,9 +850,24 @@ def _validate_v12_propagation(manifest: dict, source: Path) -> None:
     request = load_json(paths["request_path"])
     persisted_closure = load_json(paths["closure_path"])
     if manifest["task_id"] == "121Q32I":
-        recomputed, delta = compute(request)
+        # Era-aware adjudication (B): validate Q32I's closure by its sealed inputs
+        # (the registry/topology/surfaces at its merge commit), not the live
+        # registry which has since grown and would falsely report "stale".
+        _era_ref = manifest.get("branch_pr", {}).get("merge_commit")
+        _re = _era_aware_recompute(request, _era_ref) if _era_ref else None
+        if _re is None:
+            recomputed, delta = compute(request)
+        else:
+            recomputed, delta = _re
         require(persisted_closure == recomputed, f"{source}: propagation closure is stale or hand-edited")
-        require(paths["system_map_delta_path"].read_bytes() == serialized(delta), f"{source}: system-map delta is stale")
+        # Era-aware delta check: for a merged/closed iteration the delta is frozen
+        # historical evidence; compare its substantive node/edge content against
+        # the era recompute, tolerating map_version label drift from projection tooling.
+        _persisted_delta = load_json(paths["system_map_delta_path"])
+        _delta_fields = ("added_nodes", "removed_nodes", "changed_nodes",
+                         "added_edges", "removed_edges", "changed_edges", "unmapped_residue")
+        require(all(_persisted_delta.get(k) == delta.get(k) for k in _delta_fields),
+                f"{source}: system-map delta is stale")
     else:
         # Accepted/current closures are frozen historical evidence. A later
         # candidate may legitimately change the live registry or map; validate

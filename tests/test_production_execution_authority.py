@@ -4,6 +4,7 @@ from __future__ import annotations
 import copy
 import json
 import os
+from collections import Counter
 import shutil
 import stat
 import subprocess
@@ -30,14 +31,78 @@ def copy_production_authority(destination: Path) -> None:
 
 class ProductionProfileProbe(unittest.TestCase):
     def test_production_capability_contract_and_all_local_validators_run(self):
-        profiles = json.loads((ROOT / "data/operations/component-execution-profiles.json").read_text())["profiles"]
-        self.assertEqual(len(profiles), 52)
-        self.assertEqual({k: sum(p["execution_capability"] == k for p in profiles) for k in ("automatic", "validation_only", "manual", "external_attestation")}, {"automatic": 1, "validation_only": 7, "manual": 44, "external_attestation": 0})
-        self.assertEqual({k: sum(p["validation_capability"] == k for p in profiles) for k in ("local_automatic_validation", "local_validation_only", "manual_review", "external_attestation")}, {"local_automatic_validation": 1, "local_validation_only": 7, "manual_review": 44, "external_attestation": 0})
+        """Production-capability contract, derived from the authoritative registries (V17 P4).
+
+        Three universes must stay distinct and consistent:
+          1. registry universe        — data/operations/project-components.json (declares every
+                                         component AND its schema-declared lifecycle.status)
+          2. profile-validation universe — data/operations/component-execution-profiles.json
+                                         (one execution profile per registered component)
+          3. production-execution authority — derived from each profile's execution_capability /
+                                         validation_capability (which components may be auto/validated
+                                         produced vs. which require responsible-human manual review)
+        The contract is NOT a hardcoded snapshot count (52/59); it is derived from the registry
+        and the declared lifecycle states, so it stays valid as components are added.
+        """
+        profiles_doc = json.loads((ROOT / "data/operations/component-execution-profiles.json").read_text())
+        profiles = profiles_doc["profiles"]
+        registry_doc = json.loads((ROOT / "data/operations/project-components.json").read_text())
+
+        def iter_components(node):
+            for comp in node.get("components", []):
+                yield comp
+            for grp in node.get("groups", []):
+                yield from iter_components(grp)
+
+        registered = list(iter_components(registry_doc))
+        registered_ids = {c["component_id"] for c in registered}
+        profile_ids = {p["component_id"] for p in profiles}
+        # Universe alignment: the profile-validation universe is in 1:1 correspondence with the
+        # registry universe. This is the authority-derived replacement for the old hardcoded
+        # `len(profiles) == 52` (now 59 components; the count is not the contract — the bijection is).
+        self.assertEqual(profile_ids, registered_ids,
+                         "execution profiles must be in 1:1 correspondence with registered components")
+
+        exec_counts = Counter(p["execution_capability"] for p in profiles)
+        val_counts = Counter(p["validation_capability"] for p in profiles)
+        total = len(profiles)
+
+        # Architectural invariants (structural, not a snapshot count):
+        # exactly one automatic component — the system map projection — and nothing is executed
+        # via external attestation in this architecture.
+        self.assertEqual(exec_counts["automatic"], 1)
+        self.assertEqual(exec_counts["external_attestation"], 0)
+        self.assertEqual(val_counts["external_attestation"], 0)
+        # validation_only / automatic components are exactly those carrying a local validator_argv.
         local = [p for p in profiles if "validator_argv" in p]
-        self.assertEqual(len(local), 8)
+        self.assertEqual(len(local), exec_counts["automatic"] + exec_counts["validation_only"])
+        self.assertEqual(exec_counts["validation_only"], val_counts["local_validation_only"])
+        self.assertEqual(exec_counts["automatic"], val_counts["local_automatic_validation"])
+        self.assertEqual(exec_counts["manual"], val_counts["manual_review"])
+        self.assertEqual(exec_counts["manual"], total - len(local))
+
+        # Lifecycle contract: a draft_candidate component is NOT production-capable. It must remain
+        # manual / manual_review and carry no automatic validator_argv until it is promoted. This
+        # keeps the draft universe out of the production-execution authority count (the old test
+        # conflated everything into a single hardcoded number).
+        draft_ids = {
+            c["component_id"] for c in registered
+            if isinstance(c.get("lifecycle"), dict) and c["lifecycle"].get("status") == "draft_candidate"
+        }
+        for p in profiles:
+            if p["component_id"] in draft_ids:
+                self.assertEqual(p["execution_capability"], "manual",
+                                 f"draft_candidate component {p['component_id']} must be manual, not production-capable")
+                self.assertEqual(p["validation_capability"], "manual_review",
+                                 f"draft_candidate component {p['component_id']} must be manual_review")
+                self.assertNotIn("validator_argv", p,
+                                 f"draft_candidate component {p['component_id']} must not carry an automatic validator_argv")
+
+        # No profile may declare the forbidden validator argv.
         self.assertFalse(any(p.get("validator_argv") == ["python3", "tools/validate_protocol_canonical.py", "--check"] for p in profiles))
+        # manual_review / external_attestation profiles must not carry an automatic validator_argv.
         self.assertTrue(all("validator_argv" not in p for p in profiles if p["validation_capability"] in {"manual_review", "external_attestation"}))
+
         with tempfile.TemporaryDirectory() as tmp:
             checkout = Path(tmp) / "checkout"
             subprocess.run(["git", "worktree", "add", "--detach", str(checkout), "HEAD"], cwd=ROOT, check=True, capture_output=True, text=True)

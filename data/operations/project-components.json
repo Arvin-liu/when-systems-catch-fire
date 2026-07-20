@@ -81,6 +81,28 @@
         "pages/generated/ignition-system-map.svg"
       ],
       "reason": "pages_pipeline owns pages/ for the deployment chain; system_map_projection owns the generated SVG under pages/generated/."
+    },
+    {
+      "authority_source": "FOUNDATION.md",
+      "component_ids": [
+        "charter",
+        "copyright_governance_jurisdiction_registry",
+        "copyright_governance_source_rights",
+        "copyright_governance_material_classification",
+        "copyright_governance_non_republication_principle",
+        "copyright_governance_publication_gate_validator",
+        "copyright_governance_history_remediation",
+        "copyright_governance_tests",
+        "licensing"
+      ],
+      "path_patterns": [
+        "data/governance/",
+        "schemas/governance/",
+        "tools/governance/",
+        "tests/test_q33_governance_infrastructure.py",
+        "docs/governance/"
+      ],
+      "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
     }
   ],
   "components": [
@@ -1224,8 +1246,153 @@
         "docs/publication/zhiyuan-writing-method.md",
         "docs/publication/zhiyuan-writing-examples.md"
       ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/governance/jurisdiction-rule-registry.json",
+      "component_id": "copyright_governance_jurisdiction_registry",
+      "component_type": "governance_constraint",
+      "description": "Representative multi-jurisdiction copyright rule registry for Q33 risk projection. Covers WIPO treaties, US, EU, UK, CA, AU, JP, SG, IN.",
+      "label": "版权治理-法域规则注册表",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q33 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/governance/jurisdiction-rule-registry.json",
+        "schemas/governance/jurisdiction-rule-entry.schema.json"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/governance/source-rights-registry.json",
+      "component_id": "copyright_governance_source_rights",
+      "component_type": "governance_constraint",
+      "description": "Source rights registry categorizing materials by rights status and required governance actions.",
+      "label": "版权治理-来源权利注册表",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q33 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/governance/source-rights-registry.json",
+        "schemas/governance/source-rights-entry.schema.json"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/governance/material-classification.json",
+      "component_id": "copyright_governance_material_classification",
+      "component_type": "governance_constraint",
+      "description": "Material classification system L0-L6 for publication gate decisions.",
+      "label": "版权治理-材料分类系统",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q33 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/governance/material-classification.json"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/governance/history-remediation-register.json",
+      "component_id": "copyright_governance_history_remediation",
+      "component_type": "governance_constraint",
+      "description": "History remediation register for past copyright/rights boundary violations.",
+      "label": "版权治理-历史整改注册表",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q33 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/governance/history-remediation-register.json",
+        "schemas/governance/history-remediation-entry.schema.json"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/governance/fail_closed_publication_gate.py",
+      "component_id": "copyright_governance_publication_gate_validator",
+      "component_type": "governance_constraint",
+      "description": "Fail-closed publication gate validator enforcing source-rights, material classification, and non-republication principle.",
+      "label": "版权治理-发布门禁验证器",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q33 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/governance/fail_closed_publication_gate.py",
+        "schemas/governance/publication-gate-decision.schema.json"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/governance/external-input-non-republication-principle.md",
+      "component_id": "copyright_governance_non_republication_principle",
+      "component_type": "governance_constraint",
+      "description": "External Input Non-Republication Principle — prohibits republication of third-party copyrighted material.",
+      "label": "版权治理-外部输入不重新发布原则",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q33 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "docs/governance/external-input-non-republication-principle.md",
+        "schemas/governance/external-input-non-republication.schema.json"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tests/test_q33_governance_infrastructure.py",
+      "component_id": "copyright_governance_tests",
+      "component_type": "governance_constraint",
+      "description": "Production tests for Q33 governance infrastructure: registries, schemas, validator, mutation detection.",
+      "label": "版权治理-测试套件",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q33 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tests/test_q33_governance_infrastructure.py"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.1.0"
+  "registry_version": "1.1.1"
 }

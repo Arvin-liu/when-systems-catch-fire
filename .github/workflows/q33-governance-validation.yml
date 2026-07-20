@@ -1,0 +1,65 @@
+name: q33-governance-validation
+# V21 (P1 / N7): dedicated Q33 Governance CI. Runs the Q33 governance test modules and
+# the generalized generated-output authority validator on every push to the agent branch
+# and on PR #63. A failure here blocks the workflow (fail-closed assurance at the CI layer).
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/q33-governance-validation.yml'
+      - 'requirements-q33.txt'
+      - 'data/governance/**'
+      - 'schemas/governance/**'
+      - 'tools/governance/**'
+      - 'data/operations/propagation/121Q33-request.json'
+      - 'tests/test_q33_governance_infrastructure.py'
+      - 'tests/test_publication_gate_fail_closed.py'
+      - 'tests/test_publication_provenance_attack.py'
+      - 'tests/test_source_rights_gate_enum_consistency.py'
+      - 'tests/test_generated_output_authority_generic.py'
+      - 'tests/test_generated_output_authority_negative.py'
+      - 'tests/test_registered_generator_attack.py'
+      - 'tests/test_jurisdiction_sovereignty_neutral.py'
+      - 'tests/test_diff_coverage_gate.py'
+      - 'tests/test_era_resolver_generalization.py'
+      - 'tests/test_human_front_door.py'
+      - 'tests/test_pr_front_door_audit.py'
+      - 'tests/test_q33_fail_closed_fixtures.py'
+  push:
+    branches:
+      - 'agent/121q33-global-copyright-risk-and-rights-governance'
+  workflow_dispatch:
+concurrency:
+  group: q33-governance-validation-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r requirements-q33.txt
+      - name: Run Q33 governance test modules (fail-closed fixtures included)
+        run: |
+          python3 -m pytest \
+            tests/test_q33_governance_infrastructure.py \
+            tests/test_publication_gate_fail_closed.py \
+            tests/test_publication_provenance_attack.py \
+            tests/test_source_rights_gate_enum_consistency.py \
+            tests/test_generated_output_authority_generic.py \
+            tests/test_generated_output_authority_negative.py \
+            tests/test_registered_generator_attack.py \
+            tests/test_jurisdiction_sovereignty_neutral.py \
+            tests/test_diff_coverage_gate.py \
+            tests/test_era_resolver_generalization.py \
+            tests/test_human_front_door.py \
+            tests/test_pr_front_door_audit.py \
+            tests/test_q33_fail_closed_fixtures.py \
+            -v
+      - name: Run generalized generated-output authority validator (diff coverage)
+        run: python3 tools/operations/validate_generated_output_authority.py --request data/operations/propagation/121Q33-request.json

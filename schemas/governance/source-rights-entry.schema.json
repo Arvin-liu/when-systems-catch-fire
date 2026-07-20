@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Source Rights Registry Entry",
+  "description": "Schema for registering a source category with its rights status and governance action.",
+  "type": "object",
+  "required": ["source_category_id", "label", "rights_status", "governance_action"],
+  "properties": {
+    "source_category_id": {
+      "type": "string",
+      "pattern": "^SRC-[A-Z]+"
+    },
+    "label": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "rights_status": {
+      "type": "string",
+      "enum": ["NO_RESTRICTION", "CONDITIONAL_FREE_USE", "NON_COMMERCIAL_ONLY", "COPYLEFT_NETWORK_USE", "PERMISSIVE_WITH_PATENT_GRANT", "RESTRICTED_PRE_CHANGE_DATE", "AUTHOR_OWNS_COPYRIGHT", "PUBLISHER_OR_AUTHOR_OWNS_COPYRIGHT", "ACCESS_RESTRICTED", "VARY_BY_JURISDICTION", "PLATFORM_OWNS_COPYRIGHT", "UNCERTAIN", "UNCERTAIN_U_S jurisprudence_pending", "COVERED_BY_PROJECT_LAYERED_LICENSE"]
+    },
+    "governance_action": {
+      "type": "string",
+      "enum": ["PROCEED_WITH_PROVENANCE_RECORDING", "COMPLY_WITH_ATtribution_REQUIREMENT", "VERIFY_NON_COMMERCIAL_USE_OR_SEEK_PERMISSION", "COMPLY_WITH_COPYRIGHT_OBLIGATIONS", "COMPLY_WITH_NOTICE_REQUIREMENTS", "VERIFY_LICENSE_SCOPE_AND_CHANGE_DATE", "PERMISSION_REQUIRED_FOR_REPRODUCTION", "INSUFFICIENT_INFORMATION_FOR_GOVERNANCE_DECISION", "VERIFY_JURISDICTIONAL_STATUS", "SOURCE_CITATION_ONLY", "COMPLY_WITH_PROJECT_LICENSE_TERMS", "COUNSEL_REQUIRED_FOR_COMMERCIAL_USE"]
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "CRITICAL"]
+    },
+    "prohibited_actions": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "permitted_actions": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "examples": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": ["VERIFIED", "OFFICIAL_TEXT_NOT_VERIFIED", "LEGAL_REVIEW_REQUIRED", "UNVERIFIED", "COUNSEL_REQUIRED", "PERMISSION_REQUIRED", "INSUFFICIENT_INFORMATION", "BLOCKED_PENDING_EVIDENCE"],
+      "description": "Verification status of the official-source rule. OFFICIAL_TEXT_NOT_VERIFIED / LEGAL_REVIEW_REQUIRED must be used when full text or a stable version cannot be obtained (no unverified VERIFIED)."
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Auditable official-source provenance for the rule (P5).",
+      "properties": {
+        "retrieved_date": {"type": ["string", "null"]},
+        "canonical_url": {"type": ["string", "null"]},
+        "source_authority": {"type": ["string", "null"]},
+        "version_id": {"type": ["string", "null"]},
+        "content_digest_sha256": {"type": ["string", "null"]},
+        "verification_status": {"type": "string"}
+      }
+    }
+  }
+}

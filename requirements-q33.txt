@@ -1,0 +1,6 @@
+# Q33 Governance CI dependencies (mirrors foundation CI jsonschema need; adds pytest
+# for the Q33 governance test modules). The fail-closed publication gate imports
+# jsonschema; without it the gate falls back to a manual check, so CI installs it
+# explicitly to exercise the strict Draft7 path.
+jsonschema
+pytest

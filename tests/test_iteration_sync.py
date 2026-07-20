@@ -6,8 +6,11 @@ from unittest.mock import patch
 from tools.validate_iteration_sync import (
     REGISTRY_PATH,
     ROOT,
+    _validate_seal_f12,
     infer_seal_path,
     load_json,
+    required_registry_surfaces,
+    resolve_era_registry,
     validate_all,
     validate_custom,
     validate_manifest_bindings,
@@ -543,21 +546,35 @@ class IterationSyncTests(unittest.TestCase):
 
     def test_two_external_surfaces_require_both_attested_for_current(self):
         registry, path, manifest, seal = self.q25c_document()
+        # Era-aware: build a registry identical to Q25C's sealing-era (1.0.0)
+        # snapshot plus the injected second external surface, then declare the
+        # live version so the validator resolves required surfaces against THIS
+        # era-consistent registry (declared == live_version short-circuits to the
+        # caller-supplied registry). This exercises the generic contract rule
+        # (two external surfaces, one pending -> current blocked) without
+        # retroactively requiring post-era surfaces (e.g. copyright_governance,
+        # introduced after Q25C was sealed) and without mutating the sealed
+        # asset or fabricating attestation. A historical 1.0.0-era manifest
+        # otherwise validates against the git-committed 1.0.0 snapshot, which
+        # cannot see a surface injected only into the live in-memory registry.
+        era_registry = resolve_era_registry("1.0.0", registry)
         second = copy.deepcopy(registry["external.pages_homepage"])
         second["surface_id"] = "external.second"
         second["locator"] = "https://example.invalid/second"
-        registry[second["surface_id"]] = second
+        era_registry[second["surface_id"]] = second
+        manifest["synchronization_closure"]["registry_version"] = load_json(REGISTRY_PATH)["registry_version"]
         decision = copy.deepcopy(next(item for item in manifest["synchronization_closure"]["surface_decisions"] if item["surface_id"] == "external.pages_homepage"))
         decision["surface_id"] = "external.second"
         manifest["synchronization_closure"]["surface_decisions"].append(decision)
         attestation = copy.deepcopy(manifest["synchronization_closure"]["external_attestations"][0])
         attestation["surface_id"] = "external.second"
+        attestation["status"] = "pending"
         manifest["synchronization_closure"]["external_attestations"].append(attestation)
         self.set_lifecycle(manifest, seal, accepted=True, merged=True, current=True)
         manifest["synchronization_closure"]["external_attestations"][0]["status"] = "attested"
         seal["external_attestations"] = copy.deepcopy(manifest["synchronization_closure"]["external_attestations"])
         with self.assertRaisesRegex(AssertionError, "pending external surfaces block current"):
-            validate_custom(manifest, path, seal, registry)
+            validate_custom(manifest, path, seal, era_registry)
 
     def test_duplicate_unknown_and_wrong_authority_attestations_are_rejected(self):
         for mutation, pattern in (
@@ -619,6 +636,193 @@ class IterationSyncTests(unittest.TestCase):
         seal["task_id"] = "121Q24"
         with self.assertRaisesRegex(AssertionError, "seal task mismatch"):
             validate_custom(manifest, path, seal, registry)
+
+    def test_temporally_version_aware_validation_preserves_sealed_early_iterations_and_current_candidate(self):
+        """P4 Conclusion B regression.
+
+        A synchronization surface introduced after an early iteration was sealed
+        (``copyright_governance``, added in the Q33 era) must NOT be
+        retroactively required of that early iteration. Historical manifests are
+        validated against the committed registry snapshot of the era their
+        ``registry_version`` declares; the current candidate is validated against
+        the live registry and must still satisfy the current contract.
+
+        No manifest is special-cased: the validator resolves the era registry from
+        the git history of the registry file, never from a per-task exception list.
+        """
+        reg_doc = load_json(REGISTRY_PATH)
+        live_registry = validate_registry(reg_doc)
+        live_version = reg_doc["registry_version"]
+        self.assertIn("copyright_governance", live_registry,
+                      "precondition: later-added surface exists in the live registry")
+
+        # Representative sealed early iteration that predates copyright_governance.
+        early_path = ROOT / "data/operations/iterations/121Q25B.json"
+        early = load_json(early_path)
+        early_seal = load_json(infer_seal_path(early))
+        self.assertNotEqual(early["synchronization_closure"]["registry_version"], live_version,
+                            "precondition: early iteration declares an older registry_version")
+
+        # Demonstrate the retrospective defect: under the LIVE registry the early
+        # manifest would be required to cover the later-added surface.
+        required_under_live = required_registry_surfaces(early, live_registry)
+        self.assertIn("copyright_governance", required_under_live,
+                      "the bug: live registry would retroactively require copyright_governance")
+
+        # The era-aware resolver maps the declared version to a snapshot that
+        # predates the later-added surface.
+        era_registry = resolve_era_registry(early["synchronization_closure"]["registry_version"], live_registry)
+        self.assertNotIn("copyright_governance", era_registry,
+                         "era registry must not contain the later-added surface")
+
+        # Historical early iteration validates against the era registry (no
+        # retrospective failure) and also via the live validator, which internally
+        # selects the era registry for non-current declarations.
+        validate_manifest_schema(early, early_path)
+        validate_custom(early, early_path, early_seal, era_registry)
+        validate_custom(early, early_path, early_seal, live_registry)
+
+        # The current candidate (Q33) declares the live version and MUST still
+        # satisfy the current contract against the live registry.
+        q33_path = ROOT / "data/operations/iterations/121Q33.json"
+        q33 = load_json(q33_path)
+        q33_seal = load_json(infer_seal_path(q33))
+        self.assertEqual(q33["synchronization_closure"]["registry_version"], live_version)
+        self.assertIn("copyright_governance", required_registry_surfaces(q33, live_registry),
+                      "current candidate must still be governed by the current contract")
+        validate_manifest_schema(q33, q33_path)
+        validate_custom(q33, q33_path, q33_seal, live_registry)
+
+    def test_seal_diff_coverage_is_era_aware_not_live_polluted(self):
+        """V15 Q32 adjudication B: a historical seal's generated_output_paths_count
+        must be validated against the generated-output authority snapshot at the
+        sealing commit (phase_b.merge_commit), not the live authority. The live
+        authority may have grown with later iterations (e.g. a later iteration
+        recording its own seal as a generated output), which must not
+        retroactively invalidate a historically correct seal count.
+
+        No task_id is hard-coded: a synthetic iteration demonstrates the principle.
+        """
+        import json as _json
+        import subprocess as _sp
+        from pathlib import Path as _Path
+
+        diff = {
+            "data/operations/propagation/121Q99-closure.json",
+            "data/operations/propagation/121Q99-residue.json",
+        }
+        era_authority = {"generated_outputs": [
+            {"path": "data/operations/propagation/121Q99-closure.json"},
+            {"path": "data/operations/propagation/121Q99-residue.json"},
+        ]}
+        seal = {
+            "task_id": "121Q99",
+            "method_version": "1.2.0",
+            "generated_output_paths_count": 2,
+            "diff_coverage_complete": True,
+            "phase_b": {"base_head": "1" * 40, "merge_commit": "2" * 40},
+        }
+        source = _Path("reports/operations/121Q99-completion-seal.json")
+
+        def _fake_run(cmd, **kw):
+            if cmd[:2] == ["git", "diff"]:
+                return _sp.CompletedProcess(cmd, 0, "\n".join(diff), "")
+            if cmd[:2] == ["git", "show"]:
+                return _sp.CompletedProcess(cmd, 0, _json.dumps(era_authority), "")
+            return _sp.CompletedProcess(cmd, 0, "", "")
+
+        # Point ROOT at a nonexistent path so no live fixture files are read; the
+        # era authority is supplied entirely through mocked `git show`.
+        with patch("subprocess.run", side_effect=_fake_run), \
+             patch("tools.validate_iteration_sync.ROOT", new=_Path("/nonexistent-v15-root")):
+            _validate_seal_f12(seal, source)
+
+        # Negative control: era-awareness must still catch a REAL mismatch when
+        # the era authority itself disagrees with the sealed count (it must not
+        # become a blanket pass). Here the era authority has only 1 of 2 paths.
+        bad_era = {"generated_outputs": [
+            {"path": "data/operations/propagation/121Q99-closure.json"},
+        ]}
+
+        def _fake_run_bad(cmd, **kw):
+            if cmd[:2] == ["git", "diff"]:
+                return _sp.CompletedProcess(cmd, 0, "\n".join(diff), "")
+            if cmd[:2] == ["git", "show"]:
+                return _sp.CompletedProcess(cmd, 0, _json.dumps(bad_era), "")
+            return _sp.CompletedProcess(cmd, 0, "", "")
+
+        with patch("subprocess.run", side_effect=_fake_run_bad), \
+             patch("tools.validate_iteration_sync.ROOT", new=_Path("/nonexistent-v15-root")):
+            with self.assertRaises(AssertionError):
+                _validate_seal_f12(dict(seal, generated_output_paths_count=2), source)
+
+    def test_seal_system_map_is_era_aware_not_live_polluted(self):
+        """V15 Q32/Q32I adjudication B: a merged/closed iteration's seal records
+        the topology counts (groups/nodes/edges) at its own sealing era, so the
+        validator must compare against the interactive-system-map snapshot at
+        phase_b.merge_commit, not the live (later-grown) map. Demonstrated with a
+        synthetic iteration; no task_id or seal count is hard-coded.
+        """
+        import json as _json
+        import subprocess as _sp
+        from pathlib import Path as _Path
+
+        era_map = {"groups": [1] * 9, "nodes": [1] * 41, "edges": [1] * 37}
+        # No diff-coverage keys, so step 7 (dynamic diff coverage) is skipped and
+        # only the system_map cross-check (step 8) is exercised.
+        seal = {
+            "task_id": "121Q98",
+            "system_map": {"groups": 9, "nodes": 41, "edges": 37},
+            "phase_b": {"merge_commit": "2" * 40},
+        }
+        source = _Path("reports/operations/121Q98-completion-seal.json")
+
+        def _fake_run(cmd, **kw):
+            if cmd[:2] == ["git", "show"]:
+                return _sp.CompletedProcess(cmd, 0, _json.dumps(era_map), "")
+            return _sp.CompletedProcess(cmd, 0, "", "")
+
+        # ROOT points at a nonexistent path so the live interactive-system-map
+        # file is never read; the era map is supplied only through `git show`.
+        with patch("subprocess.run", side_effect=_fake_run), \
+             patch("tools.validate_iteration_sync.ROOT", new=_Path("/nonexistent-v15-root")):
+            _validate_seal_f12(seal, source)
+
+        # Negative control: if the era map itself disagrees, the check must still
+        # raise (it must not degrade into a blanket pass for closed iterations).
+        bad_era = {"groups": [1] * 9, "nodes": [1] * 40, "edges": [1] * 37}
+
+        def _fake_run_bad(cmd, **kw):
+            if cmd[:2] == ["git", "show"]:
+                return _sp.CompletedProcess(cmd, 0, _json.dumps(bad_era), "")
+            return _sp.CompletedProcess(cmd, 0, "", "")
+
+        with patch("subprocess.run", side_effect=_fake_run_bad), \
+             patch("tools.validate_iteration_sync.ROOT", new=_Path("/nonexistent-v15-root")):
+            with self.assertRaises(AssertionError):
+                _validate_seal_f12(dict(seal), source)
+
+    def test_era_aware_recompute_q32i_matches_persisted_not_live(self):
+        """V15 Q32I adjudication B: _era_aware_recompute must validate Q32I's
+        closure by its sealed-era inputs. The era recompute equals the persisted
+        (sealed) closure; the live recompute differs (the registry grew since
+        Q32I's era). This proves the validator accepts the era closure and does
+        not require the live (drifted) one.
+        """
+        import json as _json
+        import tools.validate_iteration_sync as V
+        from tools.operations.compute_change_propagation import compute
+        merge = "0a13c246172c0338bf8dda5dc08db5a574a8b23f"
+        request = _json.loads((V.ROOT / "data/operations/propagation/121Q32I-request.json").read_text(encoding="utf-8"))
+        persisted = _json.loads((V.ROOT / "data/operations/propagation/121Q32I-closure.json").read_text(encoding="utf-8"))
+        out = V._era_aware_recompute(request, merge)
+        self.assertIsNotNone(out)
+        era_closure, _ = out
+        self.assertEqual(era_closure, persisted)
+        # Live recompute diverges (registry drift) — confirms era-awareness is
+        # what makes the persisted closure validate, not a blanket acceptance.
+        live_closure, _ = compute(request)
+        self.assertNotEqual(live_closure, persisted)
 
 
 if __name__ == "__main__":

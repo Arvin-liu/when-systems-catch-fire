@@ -1,0 +1,508 @@
+{
+  "registry_version": "1.0.0",
+  "registry_date_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）",
+  "registry_date_ISO": "2026-07-19T00:00:00Z",
+  "purpose": "Canonical registry of applicable copyright legal-regime scopes for Q33 rights governance and external-input rights review. It models the territorial scope of application of each legal regime (legal_regime_scope / territorial_law_scope). This registry makes NO assertion of sovereignty or political status (sovereignty_position: NOT_ASSERTED for every entry). Rules are sourced from official legislative databases, WIPO Lex, EUR-Lex, and official platform policy pages.",
+  "rule_authority_principle": "Only official, original, current-source rules are authoritative. Blogs, search summaries, old lab content, and model memory are NOT rule authority.",
+  "fallback_principle": "When rule currentness cannot be confirmed, official source is inaccessible, jurisdiction conflicts exist, or facts are insufficient: register as UNVERIFIED, COUNSEL_REQUIRED, PERMISSION_REQUIRED, INSUFFICIENT_INFORMATION, or BLOCKED_PENDING_EVIDENCE.",
+  "treaty_layer": {
+    "Berne_Convention_1886": {
+      "id": "TREATY-BERNE-1886",
+      "type": "multilateral_treaty",
+      "title": "Berne Convention for the Protection of Literary and Artistic Works (Stockholm Act 1967)",
+      "authority_url": "https://www.wipo.int/treaties/en/ip/berne/",
+      "wipo_lex_id": "UNTS-vol828-11850",
+      "key_principles": [
+        "Automatic protection without formalities (Art. 5(2))",
+        "National treatment across member states",
+        "Minimum term: life of author + 50 years (Art. 7)",
+        "Moral rights recognized (Art. 6bis)"
+      ],
+      "member_count": 181,
+      "currentness": "CURRENT",
+      "verification_status": "VERIFIED",
+      "notes": "Universal baseline; all surveyed jurisdictions are signatories.",
+      "official_source": "https://www.wipo.int/treaties/en/ip/berne/",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.wipo.int/treaties/en/ip/berne/",
+        "source_authority": "WIPO",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "WCT_1996": {
+      "id": "TREATY-WCT-1996",
+      "type": "multilateral_treaty",
+      "title": "WIPO Copyright Treaty (1996) — digital environment special agreement under Berne",
+      "authority_url": "https://www.wipo.int/en/web/treaties/ip/wct/index",
+      "key_principles": [
+        "Computer programs protected as literary works (Art. 4)",
+        "Compilations of data protected (Art. 5)",
+        "Rights of reproduction, distribution, rental, communication to the public (Art. 6-8)",
+        "Technological protection measures obligation (Art. 11)",
+        "Rights management information obligation (Art. 12)"
+      ],
+      "currentness": "CURRENT",
+      "verification_status": "VERIFIED",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.wipo.int/en/web/treaties/ip/wct/index",
+        "source_authority": "WIPO",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "TRIPS_Copyright": {
+      "id": "TREATY-TRIPS-1994",
+      "type": "multilateral_treaty",
+      "title": "Agreement on Trade-Related Aspects of Intellectual Property Rights — Part II: Copyright and Related Rights",
+      "authority_url": "https://www.wipo.int/wipolex/en/treaties/textdetails/18587",
+      "wto_url": "https://www.wto.org/english/tratop_e/trips_e/ta_docs_e/1_tripsagreement_e.pdf",
+      "key_principles": [
+        "Berne Articles 1-21 apply via TRIPS Art. 9(1)",
+        "Protection extends to expressions not ideas/procedures/methods (Art. 9(2))",
+        "Three-step test codified: limited exceptions, no conflict with normal exploitation, no unreasonable prejudice to legitimate interests"
+      ],
+      "currentness": "CURRENT (amended 23 Jan 2017)",
+      "verification_status": "VERIFIED",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.wipo.int/wipolex/en/treaties/textdetails/18587",
+        "source_authority": "WTO / WIPO",
+        "version_id": "CURRENT (amended 23 Jan 2017)",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    }
+  },
+  "jurisdictions": {
+    "US": {
+      "id": "JUR-US",
+      "name": "United States",
+      "statute": "17 U.S.C. (Copyright Law of the United States)",
+      "official_source": "https://www.copyright.gov/title17/title17.pdf",
+      "copyright_office": "U.S. Copyright Office / Library of Congress",
+      "currentness": "CURRENT (2024 Main Ed. updated 1/6/2025)",
+      "exclusive_rights": {
+        "article": "17 USC 106",
+        "rights": [
+          "reproduce",
+          "distribute",
+          "perform",
+          "display",
+          "create_derivative_works"
+        ],
+        "source_url": "https://www.copyright.gov/title17/title17.pdf"
+      },
+      "fair_use": {
+        "article": "17 USC 107",
+        "nature": "open_ended_factor_test",
+        "factors": [
+          "purpose_and_character",
+          "nature_of_work",
+          "amount_substantiality",
+          "market_effect"
+        ],
+        "source_url": "https://uscode.house.gov/view.xhtml?edition=prelim&f=treesort&jumpTo=true&num=0&req=(title:17+section:107+edition:prelim)",
+        "currentness": "CURRENT"
+      },
+      "contract_override": "FAIR_USE_SUBJECT_TO_CONTRACT_AND_ANTICIRCUMVENTION_LIMITS (contractual/access terms and DMCA 17 U.S.C. §1201 anticircumvention may constrain reliance on fair use; jurisdictional analysis required)",
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Law of the United States (17 U.S.C.), as enacted and enforceable under U.S. federal law",
+      "territorial_law_scope": "United States (federal territory and applicable state extensions)",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.copyright.gov/title17/title17.pdf",
+        "source_authority": "U.S. Copyright Office / Library of Congress",
+        "version_id": "CURRENT (2024 Main Ed. updated 1/6/2025)",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      },
+      "contract_override_provenance": {
+        "source_authority": "U.S. Copyright Office; 17 U.S.C. §107 (fair use) and §1201 (anticircumvention)",
+        "canonical_url": "https://www.copyright.gov/fair-use/",
+        "retrieved_date": "2026-07-20",
+        "verification_status": "LEGAL_REVIEW_REQUIRED",
+        "note": "US fair use is a user right shaped by statute and case law; it is not an absolute, non-waivable right in every context (license/access contracts and §1201 can limit practical reliance on fair use)."
+      }
+    },
+    "EU": {
+      "id": "JUR-EU",
+      "name": "European Union (DSM Directive 2019/790)",
+      "directive": "Directive (EU) 2019/790 of the European Parliament and of the Council of 17 April 2019",
+      "official_source": "https://eur-lex.europa.eu/eli/dir/2019/790/oj/eng",
+      "wipo_lex": "https://www.wipo.int/wipolex/en/legislation/details/18927",
+      "articles": {
+        "Article_3": {
+          "topic": "TDM for scientific research purposes",
+          "scope": "mandatory_exception_for_research_terrestrial_bodies",
+          "contract_override": "Any contractual provision contrary to Article 3 shall be unenforceable"
+        },
+        "Article_4": {
+          "topic": "TDM for any purpose",
+          "scope": "optional_exception_members_may_adopt",
+          "contract_override": "Right holders may reserve reproduction rights explicitly"
+        },
+        "Article_5": {
+          "topic": "Exceptions for acts by cultural heritage institutions and educational establishments",
+          "contract_override": "Any contractual provision contrary to Article 5 shall be unenforceable"
+        },
+        "Article_6": {
+          "topic": "Exceptions for text and data mining by research organisations and cultural heritage institutions",
+          "contract_override": "Members may implement optional exceptions"
+        }
+      },
+      "implementation_note": "Directive must be transposed into national law by each Member State; exceptions vary by jurisdiction within EU",
+      "currentness": "CURRENT (transposition deadline 7 June 2021)",
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Directive (EU) 2019/790 (DSM Directive) and its member-state transpositions",
+      "territorial_law_scope": "European Union member states (as transposed into national law)",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://eur-lex.europa.eu/eli/dir/2019/790/oj/eng",
+        "source_authority": "Publications Office of the European Union (EUR-Lex)",
+        "version_id": "CURRENT (transposition deadline 7 June 2021)",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "UK": {
+      "id": "JUR-UK",
+      "name": "United Kingdom",
+      "statute": "Copyright, Designs and Patents Act 1988 (CDPA 1988)",
+      "official_source": "https://www.legislation.gov.uk/ukpga/1988/48/part/I/chapter/III/enacted",
+      "exceptions": {
+        "Section_29": "Research and private study (non-commercial)",
+        "Section_30": "Criticism, review, and quotation (fair dealing); news reporting",
+        "Section_31": "Illustration for instruction (non-profit)",
+        "Section_32": "Anthologies for educational use",
+        "Section_33": "Extraction of short excerpts from newspapers"
+      },
+      "framework": "fair_dealing_purpose_specific",
+      "currentness": "CURRENT",
+      "post_brexit": "CDPA 1988 remains UK law; DSM Directive no longer applies directly but UK maintains similar exceptions",
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright, Designs and Patents Act 1988 (CDPA 1988)",
+      "territorial_law_scope": "United Kingdom",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.legislation.gov.uk/ukpga/1988/48/part/I/chapter/III/enacted",
+        "source_authority": "UK National Archives (legislation.gov.uk)",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "CA": {
+      "id": "JUR-CA",
+      "name": "Canada",
+      "statute": "Copyright Act, R.S.C. 1985, c. C-42",
+      "official_source": "https://laws-lois.justice.gc.ca/eng/acts/C-42/fulltext.html",
+      "pdf_source": "https://www.laws-lois.justice.gc.ca/PDF/C-42.pdf",
+      "last_amended": "November 7, 2024 (current to May 26, 2026)",
+      "exceptions": {
+        "Section_29": "Research, private study, education, criticism, review, quotation",
+        "Section_29.1": "News parody and satire",
+        "Section_29.2": "Educational institution use",
+        "Section_29.21": "Non-commercial user-generated content (mashup/sarcastic parody)"
+      },
+      "framework": "fair_dealing_with_user_rights_framework_(CCH_Canada_2004)",
+      "user_rights_principle": "Fair dealing is a user right, not merely an exception; broad interpretation required",
+      "currentness": "CURRENT",
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Act, R.S.C. 1985, c. C-42",
+      "territorial_law_scope": "Canada",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://laws-lois.justice.gc.ca/eng/acts/C-42/fulltext.html",
+        "source_authority": "Justice Laws Website, Government of Canada",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "AU": {
+      "id": "JUR-AU",
+      "name": "Australia",
+      "statute": "Copyright Act 1968 (Cth)",
+      "official_source": "https://www.austlii.edu.au/au/legis/cth/consol_act/ca1968133/",
+      "exceptions": {
+        "Section_40": "Research or study",
+        "Section_41": "Criticism or review",
+        "Section_42": "Reporting news",
+        "Section_43": "Legal advice",
+        "Section_43A": "Performance by artistic skill",
+        "Section_44": "Conversion of work (software backup)",
+        "Section_45": "Copying of articles in periodicals"
+      },
+      "framework": "fair_dealing_purpose_specific",
+      "special_provision": "Section 40 includes 'reasonable portion' quantitative guidance",
+      "currentness": "CURRENT",
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Act 1968 (Cth)",
+      "territorial_law_scope": "Australia",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.austlii.edu.au/au/legis/cth/consol_act/ca1968133/",
+        "source_authority": "Australasian Legal Information Institute (AustLII)",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "JP": {
+      "id": "JUR-JP",
+      "name": "Japan",
+      "statute": "Copyright Act (Act No. 48 of 1970)",
+      "official_source": "https://www.japaneselawtranslation.go.jp/en/laws/view/3379",
+      "latest_amendment": "Act No. 30 of 2018 (effective 2018-06-01)",
+      "wipo_lex": "https://www.wipo.int/wipolex/en/legislation/details/22612",
+      "fair_use": {
+        "article": "Article 30-4",
+        "scope": "general_fair_use_clause_added_2018",
+        "conditions": [
+          "not unreasonably prejudice author's interests",
+          "within bounds commensurate with purpose"
+        ]
+      },
+      "exceptions": [
+        "Article 30-1: Private use",
+        "Article 31: Reproduction in newspapers/conferences",
+        "Article 32: Quotation",
+        "Article 35: Reference materials",
+        "Article 36: Performance/recitation at school activities",
+        "Article 38: Free performance (non-paying, no remuneration)",
+        "Article 39: Reproduction for visually impaired"
+      ],
+      "currentness": "CURRENT",
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Act (Act No. 48 of 1970)",
+      "territorial_law_scope": "Japan",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.japaneselawtranslation.go.jp/en/laws/view/3379",
+        "source_authority": "Japanese Law Translation Database System",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "SG": {
+      "id": "JUR-SG",
+      "name": "Singapore",
+      "statute": "Copyright Act 2021 (Act No. 22 of 2021)",
+      "official_source": "https://sso.agc.gov.sg/Act/CA2021",
+      "status": "Current version as at 15 Apr 2026",
+      "exceptions": {
+        "fair_dealing": "research, private study, criticism, review, reporting current events",
+        "note": "Replaced Copyright Act 2021; fair dealing framework retained with updates"
+      },
+      "currentness": "CURRENT",
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Act 2021 (Act No. 22 of 2021)",
+      "territorial_law_scope": "Singapore",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://sso.agc.gov.sg/Act/CA2021",
+        "source_authority": "Singapore Statutes Online (Attorney-General's Chambers)",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "IN": {
+      "id": "JUR-IN",
+      "name": "India",
+      "statute": "The Copyright Act, 1957 (Act No. 14 of 1957)",
+      "official_source": "https://copyright.gov.in/Copyright_Act_1957/chapter_xi.html",
+      "exceptions_page": "https://www.copyright.gov.in/Exceptions.aspx",
+      "wipo_lex": "https://www.wipo.int/wipolex/en/legislation/details/22949",
+      "fair_dealing": {
+        "section": "Section 52",
+        "purposes": [
+          "private use including research",
+          "criticism or review",
+          "reporting current events",
+          "education",
+          "parody/satire"
+        ],
+        "latest_amendment": "Amended up to Act No. 18 of 2023"
+      },
+      "currentness": "CURRENT",
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "The Copyright Act, 1957 (Act No. 14 of 1957)",
+      "territorial_law_scope": "India",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://copyright.gov.in/Copyright_Act_1957/chapter_xi.html",
+        "source_authority": "Copyright Office, Government of India",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "CN": {
+      "id": "JUR-CN",
+      "name": "People's Republic of China (Copyright Law)",
+      "statute": "Copyright Law of the People's Republic of China (2020 Amendment)",
+      "official_source": "https://www.npc.gov.cn/npc/c30834/202011/a5c0e20e4861493ba87eb56e3b0a11f7.shtml",
+      "exceptions": {
+        "Article_24": "Fair use exceptions: personal study, quotation, news reporting, teaching/research",
+        "Article_25": "Compulsory licensing for textbook compilation",
+        "Article_26": "Statutory license for sound recordings"
+      },
+      "framework": "closed_list_exceptions_with_fair_use_like_provisions",
+      "currentness": "CURRENT (2020 amendment effective June 1, 2021)",
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Law of the People's Republic of China (2020 Amendment)",
+      "territorial_law_scope": "Mainland China (territory of the People's Republic of China)",
+      "sovereignty_note": "Entry registers the Copyright Law of the People's Republic of China as applied within mainland China. It asserts no position on the sovereignty or political status of any other territory.",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.npc.gov.cn/npc/c30834/202011/a5c0e20e4861493ba87eb56e3b0a11f7.shtml",
+        "source_authority": "National People's Congress of the PRC",
+        "version_id": "CURRENT (2020 amendment effective June 1, 2021)",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "TW": {
+      "id": "JUR-TW",
+      "name": "Taiwan area — Copyright Act of the Republic of China (legal regime in scope; sovereignty NOT asserted)",
+      "statute": "Copyright Act of the Republic of China",
+      "official_source": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=D0090118",
+      "exceptions": {
+        "Article_44": "Fair use for legislative/judicial/administrative purposes",
+        "Article_49": "Quotation in news reporting",
+        "Article_51": "Reasonable reproduction for personal use",
+        "Article_52": "Citation with attribution",
+        "Article_55": "Non-profit use with attribution"
+      },
+      "framework": "fair_use_with_three_step_test",
+      "currentness": "CURRENT",
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Act of the Republic of China, as applied within the Taiwan area",
+      "territorial_law_scope": "Taiwan area",
+      "sovereignty_note": "Entry registers the copyright legal regime applicable within the Taiwan area for technical rule modeling only. It asserts no position on sovereignty or political status. The applicable rules differ from the PRC Copyright Law and are preserved as a distinct legal-regime scope.",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=D0090118",
+        "source_authority": "Ministry of Justice, Taiwan (MoJ Law Bank)",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    }
+  },
+  "platform_policy": {
+    "GitHub_DMCA_Takedown_Policy": {
+      "id": "PLATFORM-GITHUB-DMCA-POLICY",
+      "title": "GitHub DMCA Takedown Policy",
+      "url": "https://docs.github.com/en/site-policy/content-removal-policies/dmca-takedown-policy",
+      "key_rules": [
+        "DMCA requires a valid takedown notice with specific elements: identification of copyrighted work, identification of infringing material, contact info, good faith belief statement, accuracy under penalty of perjury, signature",
+        "Counter-notification rights: alleged infringer may submit counter-notification with consent to jurisdiction",
+        "Restoration after 10-14 business days if no lawsuit filed",
+        "Repository may be disabled after multiple violations"
+      ],
+      "currentness": "CURRENT",
+      "verification_status": "VERIFIED",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://docs.github.com/en/site-policy/content-removal-policies/dmca-takedown-policy",
+        "source_authority": "GitHub",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "GitHub_DMCA_Guide": {
+      "id": "PLATFORM-GITHUB-DMCA-GUIDE",
+      "title": "Guide to Submitting a DMCA Takedown Notice",
+      "url": "https://docs.github.com/en/site-policy/content-removal-policies/guide-to-submitting-a-dmca-takedown-notice",
+      "key_rules": [
+        "GitHub processes notices under 17 U.S.C. § 512(c)",
+        "Notice must include all elements specified in 17 U.S.C. § 512(c)(3)",
+        "Counter-notices processed under 17 U.S.C. § 512(g)"
+      ],
+      "currentness": "CURRENT",
+      "verification_status": "VERIFIED",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://docs.github.com/en/site-policy/content-removal-policies/guide-to-submitting-a-dmca-takedown-notice",
+        "source_authority": "GitHub",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    },
+    "GitHub_dmca_repository": {
+      "id": "PLATFORM-GITHUB-DMCA-REPO",
+      "title": "github/dmca — Repository with text of DMCA takedown notices as received",
+      "url": "https://github.com/github/dmca",
+      "note": "GitHub publishes received takedown notices publicly; does not endorse assertions in notices",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://github.com/github/dmca",
+        "source_authority": "GitHub",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
+    }
+  },
+  "summary": {
+    "total_treaties": 3,
+    "total_jurisdictions": 10,
+    "total_platform_policies": 3,
+    "verification_statuses": {
+      "VERIFIED": 15,
+      "UNVERIFIED": 0,
+      "COUNSEL_REQUIRED": 0,
+      "BLOCKED_PENDING_EVIDENCE": 0
+    },
+    "exception_frameworks": {
+      "open_ended": [
+        "US (fair use factor test)"
+      ],
+      "fair_dealing_purpose_specific": [
+        "UK",
+        "Australia",
+        "Singapore"
+      ],
+      "hybrid": [
+        "Canada (fair dealing + user rights)",
+        "India (fair dealing s.52 list)"
+      ],
+      "general_fair_use": [
+        "Japan (Art. 30-4 general clause)"
+      ],
+      "eu_directive_exceptions": [
+        "EU (DSM Directive Arts. 3, 4, 5, 6)"
+      ]
+    },
+    "contract_override_notable": {
+      "EU_Art3_unenforceable": "Contractual provisions contrary to Article 3 TDM exception are unenforceable",
+      "EU_Art5_unenforceable": "Contractual provisions contrary to Article 5 exceptions are unenforceable",
+      "US_fair_use_non_waivable": "Fair use is a user right shaped by 17 U.S.C. §107 and case law; it is not an absolute, contract-proof right in all contexts (contractual/access terms and DMCA §1201 may constrain reliance). LEGAL_REVIEW_REQUIRED.",
+      "US_fair_use_non_waivable_status": "LEGAL_REVIEW_REQUIRED"
+    },
+    "modeling_note": "total_jurisdictions counts distinct applicable legal-regime scopes modeled for technical rights-governance; it is NOT a count of sovereign states. Every entry carries sovereignty_position: NOT_ASSERTED."
+  },
+  "modeling_concept": "legal_regime_scope_of_application",
+  "sovereignty_position": "NOT_ASSERTED",
+  "sovereignty_statement": "This registry models the applicable copyright legal regimes and their territorial scopes of application for technical rights-governance only. It does NOT assert, recognize, or deny the sovereignty, independence, or political status of any territory or government. Every entry carries sovereignty_position: NOT_ASSERTED."
+}

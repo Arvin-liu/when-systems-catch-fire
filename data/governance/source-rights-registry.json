@@ -1,0 +1,294 @@
+{
+  "registry_version": "1.0.0",
+  "registry_date_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）",
+  "registry_date_ISO": "2026-07-19T00:00:00Z",
+  "purpose": "Registry of known source categories, their typical rights status, and required governance actions for each. Used by Q33 publication gate and External Input Non-Republication Principle.",
+  "categories": {
+    "public_domain": {
+      "id": "SRC-PD",
+      "label": "Public Domain",
+      "description": "Works whose copyright has expired, been dedicated, or never existed",
+      "rights_status": "NO_RESTRICTION",
+      "governance_action": "PROCEED_WITH_PROVENANCE_RECORDING",
+      "examples": [
+        "US government works (17 USC 105)",
+        "Pre-1929 US works",
+        "Explicitly dedicated works (CC0)"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": null,
+        "source_authority": "Mixed (expired / dedicated / never existed)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "OFFICIAL_TEXT_NOT_VERIFIED"
+      }
+    },
+    "open_license_cc_by": {
+      "id": "SRC-CCBY",
+      "label": "Creative Commons Attribution (CC BY)",
+      "description": "Permissive license requiring attribution only",
+      "rights_status": "CONDITIONAL_FREE_USE",
+      "governance_action": "COMPLY_WITH_ATtribution_REQUIREMENT",
+      "examples": [
+        "CC BY 4.0",
+        "CC BY-SA 4.0"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "source_authority": "Creative Commons",
+        "version_id": "4.0",
+        "content_digest_sha256": "6d55b998ed5c54f43426d059a8c549ed58a3321e5463e6a6af1c6b56ab78c333",
+        "verification_status": "VERIFIED"
+      }
+    },
+    "open_license_cc_by_nc_sa": {
+      "id": "SRC-CCBYNCSA",
+      "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+      "description": "Non-commercial, share-alike license",
+      "rights_status": "NON_COMMERCIAL_ONLY",
+      "governance_action": "VERIFY_NON_COMMERCIAL_USE_OR_SEEK_PERMISSION",
+      "examples": [
+        "CC BY-NC-SA 4.0 (used by this project for documents)"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+        "source_authority": "Creative Commons",
+        "version_id": "4.0",
+        "content_digest_sha256": "b0eb998818431962b58eab36c2d8c475ab0300945be2af833492b5bc45895c27",
+        "verification_status": "VERIFIED"
+      }
+    },
+    "open_license_agpl": {
+      "id": "SRC-AGPL",
+      "label": "GNU AGPL-3.0-or-later",
+      "description": "Strong copyleft license for network use",
+      "rights_status": "COPYLEFT_NETWORK_USE",
+      "governance_action": "COMPLY_WITH_COPYRIGHT_OBLIGATIONS",
+      "examples": [
+        "AGPL-3.0 (project software post-change-date)"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.gnu.org/licenses/agpl-3.0.txt",
+        "source_authority": "Free Software Foundation",
+        "version_id": "3.0",
+        "content_digest_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+        "verification_status": "VERIFIED"
+      }
+    },
+    "open_license_apache": {
+      "id": "SRC-APACHE",
+      "label": "Apache License 2.0",
+      "description": "Permissive license with patent grant",
+      "rights_status": "PERMISSIVE_WITH_PATENT_GRANT",
+      "governance_action": "COMPLY_WITH_NOTICE_REQUIREMENTS",
+      "examples": [
+        "Apache 2.0 (used by this project for public interfaces/schema)"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "source_authority": "Apache Software Foundation",
+        "version_id": "2.0",
+        "content_digest_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "verification_status": "VERIFIED"
+      }
+    },
+    "open_license_busl": {
+      "id": "SRC-BUSL",
+      "label": "Business Source License 1.1",
+      "description": "Source-available license converting to AGPL after change date",
+      "rights_status": "RESTRICTED_PRE_CHANGE_DATE",
+      "governance_action": "VERIFY_LICENSE_SCOPE_AND_CHANGE_DATE",
+      "examples": [
+        "BUSL-1.1 (project core software pre-change-date)"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://mariadb.com/bsl11/",
+        "source_authority": "MariaDB (Business Source License)",
+        "version_id": "1.1",
+        "content_digest_sha256": "485cce320857e6394e867142716774bf362801201cdc6744a6bbbf9c641c4d06",
+        "verification_status": "VERIFIED"
+      }
+    },
+    "third_party_course_material": {
+      "id": "SRC-COURSE",
+      "label": "Third-party course material / paid content",
+      "description": "Materials from paid courses, textbooks, or proprietary educational platforms",
+      "rights_status": "AUTHOR_OWNS_COPYRIGHT",
+      "governance_action": "PERMISSION_REQUIRED_FOR_REPRODUCTION",
+      "risk_level": "HIGH",
+      "prohibited_actions": [
+        "Republish full or substantial portions",
+        "Use for commercial purposes without explicit license",
+        "Claim fair use without jurisdiction-specific analysis"
+      ],
+      "permitted_actions": [
+        "Source citation with provenance",
+        "Brief quotation under fair dealing/fair use if applicable",
+        "Analysis and commentary (transformative use)"
+      ],
+      "examples": [
+        "得到大脑 (Dedao) course notes",
+        "付费课程材料",
+        "付费教材章节"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": null,
+        "source_authority": "Rights holder / publisher (case-specific)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "OFFICIAL_TEXT_NOT_VERIFIED"
+      }
+    },
+    "third_party_paywall_article": {
+      "id": "SRC-PAYWALL",
+      "label": "Third-party paywall-protected article",
+      "description": "Articles behind paywalls owned by publishers or authors",
+      "rights_status": "PUBLISHER_OR_AUTHOR_OWNS_COPYRIGHT",
+      "governance_action": "PERMISSION_REQUIRED_FOR_REPRODUCTION",
+      "risk_level": "HIGH",
+      "prohibited_actions": [
+        "Republish full text",
+        "Scrape and redistribute",
+        "Claim fair use without analysis"
+      ],
+      "permitted_actions": [
+        "Source citation with provenance",
+        "Brief quotation for criticism/review",
+        "Analysis and commentary"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": null,
+        "source_authority": "Publisher / author (case-specific)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "OFFICIAL_TEXT_NOT_VERIFIED"
+      }
+    },
+    "third_party_private_note": {
+      "id": "SRC-PRIVATE",
+      "label": "Third-party private notes / restricted materials",
+      "description": "Materials obtained through private channels, access-gated systems, or personal accounts",
+      "rights_status": "ACCESS_RESTRICTED",
+      "governance_action": "INSUFFICIENT_INFORMATION_FOR_GOVERNANCE_DECISION",
+      "risk_level": "CRITICAL",
+      "prohibited_actions": [
+        "Any republication without explicit written permission from rights holder AND access provider",
+        "Disclosing access credentials",
+        "Using materials obtained through unauthorized access"
+      ],
+      "notes": "Even if a work is public domain, accessing it through a paywalled/private system creates additional contractual obligations.",
+      "permitted_actions": [
+        "source_citation_only",
+        "internal_reference_for_provenance"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": null,
+        "source_authority": "Rights holder / access provider (case-specific)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "OFFICIAL_TEXT_NOT_VERIFIED"
+      }
+    },
+    "government_publication": {
+      "id": "SRC-GOV",
+      "label": "Government publication / official text",
+      "description": "Official legislative texts, court decisions, government reports",
+      "rights_status": "VARY_BY_JURISDICTION",
+      "governance_action": "VERIFY_JURISDICTIONAL_STATUS",
+      "examples": [
+        "EUR-Lex EU directives",
+        "legislation.gov.uk statutes",
+        "US Code",
+        "Canadian federal statutes",
+        "Singapore Statutes Online"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.govinfo.gov/",
+        "source_authority": "Official government publisher (jurisdiction-specific)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "LEGAL_REVIEW_REQUIRED"
+      }
+    },
+    "platform_policy_document": {
+      "id": "SRC-PLATFORM",
+      "label": "Platform policy document",
+      "description": "Terms of service, DMCA policies, community guidelines published by platforms",
+      "rights_status": "PLATFORM_OWNS_COPYRIGHT",
+      "governance_action": "SOURCE_CITATION_ONLY",
+      "examples": [
+        "GitHub DMCA Takedown Policy",
+        "GitHub Terms of Service"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://docs.github.com/en/site-policy/content-removal-policies/dmca-takedown-policy",
+        "source_authority": "Platform operator (e.g., GitHub)",
+        "version_id": null,
+        "content_digest_sha256": "a3b01a5c0c92148d546f32f73582831547e3485f63fac5606b0b838136ca35ca",
+        "verification_status": "VERIFIED"
+      }
+    },
+    "ai_generated_content": {
+      "id": "SRC-AI",
+      "label": "AI-generated content",
+      "description": "Content generated by AI systems",
+      "rights_status": "UNCERTAIN_U_S jurisprudence_pending",
+      "governance_action": "COUNSEL_REQUIRED_FOR_COMMERCIAL_USE",
+      "risk_level": "MEDIUM",
+      "notes": "US Copyright Office has ruled that purely AI-generated works lack human authorship and are not copyrightable. However, human-authored elements mixed with AI output may be protectable. This area is evolving.",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.copyright.gov/ai/",
+        "source_authority": "U.S. Copyright Office",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "LEGAL_REVIEW_REQUIRED"
+      }
+    },
+    "project_original_content": {
+      "id": "SRC-PROJECT",
+      "label": "Project original content",
+      "description": "Content originally created for this repository",
+      "rights_status": "COVERED_BY_PROJECT_LAYERED_LICENSE",
+      "governance_action": "COMPLY_WITH_PROJECT_LICENSE_TERMS",
+      "examples": [
+        "README.md",
+        "ARCHITECTURE.md",
+        "ITERATION.md",
+        "FOUNDATION.md",
+        "Governance documents",
+        "Original analysis reports"
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
+        "source_authority": "Project (this repository)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "OFFICIAL_TEXT_NOT_VERIFIED",
+        "notes": "Own project content; no external canonical official text is pinned. Authorship is inherent, not an external-source digest match."
+      }
+    }
+  },
+  "governance_matrix": {
+    "publication_gate_decision_tree": {
+      "step_1": "Identify source category (above)",
+      "step_2": "Check rights_status",
+      "step_3": "Apply required governance_action",
+      "step_4": "If PERMISSION_REQUIRED → BLOCK publication until permission obtained",
+      "step_5": "If COUNSEL_REQUIRED → FLAG for legal review before publication",
+      "step_6": "If PROCEED_* → Publish with required provenance recording"
+    }
+  }
+}

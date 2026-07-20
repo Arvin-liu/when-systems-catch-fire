@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Publication Gate Decision",
+  "description": "Schema for recording a publication gate decision for a specific material. Fail-closed: the recorded decision is derived from the canonical source-rights registry by source_category; the submission must supply a verified provenance reference (source_rights_entry_id + content_digest_sha256), a free-text reason, a rule_ref, and a schema_version, and the tool finalizes rights_status + timestamps + provenance_verified. additionalProperties:false rejects any unknown field. Provenance is a verified reference to the registry entry — never a free-text self-assertion.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["material_id", "source_category", "rights_status", "gate_decision", "classification_level", "source_rights_entry_id", "content_digest_sha256", "reason", "rule_ref", "schema_version", "timestamp_HE", "timestamp_ISO"],
+  "properties": {
+    "material_id": {
+      "type": "string",
+      "description": "Unique identifier for the material being evaluated"
+    },
+    "source_category": {
+      "type": "string",
+      "description": "Source category from source-rights-registry",
+      "enum": [
+        "public_domain",
+        "open_license_cc_by",
+        "open_license_cc_by_nc_sa",
+        "open_license_agpl",
+        "open_license_apache",
+        "open_license_busl",
+        "third_party_course_material",
+        "third_party_paywall_article",
+        "third_party_private_note",
+        "government_publication",
+        "platform_policy_document",
+        "ai_generated_content",
+        "project_original_content"
+      ]
+    },
+    "rights_status": {
+      "type": "string",
+      "description": "Rights status assessment, derived by the gate from source_category (not self-reported)"
+    },
+    "access_method": {
+      "type": "string",
+      "description": "How the material was accessed (public URL, paywall, private account, etc.)"
+    },
+    "gate_decision": {
+      "type": "string",
+      "enum": ["PASS", "PASS_WITH_COMPLIANCE", "CONDITIONAL_PASS", "BLOCK", "BLOCK_PENDING_PERMISSION", "BLOCK_PENDING_COUNSEL"],
+      "description": "Final publication gate decision"
+    },
+    "classification_level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 6,
+      "description": "Material classification level L0-L6 (derived from source_category, cross-checked against submission)"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "CRITICAL"]
+    },
+    "source_rights_entry_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Registry category key this material's rights derive from. Must equal source_category and exist in source-rights-registry. This is the verified provenance reference (fail-closed: a registry pointer, never a free-text claim)."
+    },
+    "content_digest_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$",
+      "description": "SHA-256 of the actual material/source text. Must match the registry entry's pinned content_digest_sha256 when the source is VERIFIED (tamper / consistency check)."
+    },
+    "provenance_record_id": {
+      "type": "string",
+      "description": "Optional external provenance record id (e.g., an External Input Non-Republication Principle record) tying this decision to a broader provenance trail."
+    },
+    "provenance_verified": {
+      "type": "boolean",
+      "description": "Set by the gate (not the caller): true only when the submitted content_digest_sha256 matched a VERIFIED registry entry's pinned digest. A caller cannot self-assert verified provenance."
+    },
+    "permission_obtained": {
+      "type": "boolean",
+      "description": "Whether explicit permission was obtained (for BLOCK decisions that were later resolved)"
+    },
+    "counsel_review_completed": {
+      "type": "boolean",
+      "description": "Whether legal counsel review was completed"
+    },
+    "quotation_limit": {
+      "type": "string",
+      "description": "Maximum allowed quotation length if CONDITIONAL_PASS (e.g., 'up_to_500_words', 'excerpt_only')"
+    },
+    "prohibition_reason": {
+      "type": "string",
+      "description": "Reason for BLOCK decisions"
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable rationale for the gate decision (required for auditability)"
+    },
+    "rule_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Reference to the governing rule/registry entry that justifies the decision (required)"
+    },
+    "schema_version": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Version of the gate/registry contract this decision was recorded under (required)"
+    },
+    "timestamp_HE": {
+      "type": "string",
+      "description": "Human Era timestamp"
+    },
+    "timestamp_ISO": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "reviewer": {
+      "type": "string",
+      "description": "Who made the gate decision (agent name, human reviewer, etc.)"
+    }
+  }
+}

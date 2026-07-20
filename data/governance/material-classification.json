@@ -1,0 +1,73 @@
+{
+  "version": "1.0.0",
+  "created_by": "Q33 agent task",
+  "classification_system": {
+    "L0_metadata": {
+      "level": 0,
+      "label": "元数据",
+      "description": "Titles, authors, dates, identifiers, abstracts, keywords",
+      "publication_gate": "ALLOW_METADATA_OR_FACT_ONLY",
+      "risk_level": "minimal"
+    },
+    "L1_fact": {
+      "level": 1,
+      "label": "事实",
+      "description": "Dates, events, measurements, data points",
+      "publication_gate": "ALLOW_METADATA_OR_FACT_ONLY",
+      "risk_level": "minimal"
+    },
+    "L2_idea_method": {
+      "level": 2,
+      "label": "思想/方法",
+      "description": "Concepts, theories, methods, algorithms (not expressed text)",
+      "publication_gate": "ALLOW_PROJECT_ORIGINAL",
+      "risk_level": "low"
+    },
+    "L3_short_quotation": {
+      "level": 3,
+      "label": "短引用",
+      "description": "Brief excerpts under fair use/dealing thresholds with provenance",
+      "publication_gate": "ALLOW_MINIMAL_QUOTATION_WITH_PROVENANCE",
+      "risk_level": "medium"
+    },
+    "L4_substantial_text": {
+      "level": 4,
+      "label": "实质性文本",
+      "description": "Long passages, chapters, articles",
+      "publication_gate": "BLOCK_RESTRICTED_SOURCE",
+      "risk_level": "high"
+    },
+    "L5_image_photograph": {
+      "level": 5,
+      "label": "图像/摄影",
+      "description": "Photos, diagrams, illustrations, artwork",
+      "publication_gate": "BLOCK_UNKNOWN_RIGHTS",
+      "risk_level": "high"
+    },
+    "L6_audio_video": {
+      "level": 6,
+      "label": "音视频",
+      "description": "Recordings, videos, audio files",
+      "publication_gate": "BLOCK_UNKNOWN_RIGHTS",
+      "risk_level": "high"
+    }
+  },
+  "material_type_registry": {
+    "external_input": {
+      "description": "Content from external sources",
+      "governance_required": true
+    },
+    "ignition_increment": {
+      "description": "Ignition framework increments",
+      "governance_required": false
+    },
+    "project_documentation": {
+      "description": "Project documentation and guides",
+      "governance_required": false
+    },
+    "registry_data": {
+      "description": "Registry and metadata files",
+      "governance_required": true
+    }
+  }
+}

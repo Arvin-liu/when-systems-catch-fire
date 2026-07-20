@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "External Input Non-Republication Principle Record",
+  "description": "Schema for recording compliance with the External Input Non-Republication Principle.",
+  "type": "object",
+  "required": ["input_id", "original_source", "access_channel", "rights_holder", "original_license", "provenance_chain", "non_republication_certified", "timestamp_HE", "timestamp_ISO"],
+  "properties": {
+    "input_id": {
+      "type": "string",
+      "description": "Unique identifier for the external input"
+    },
+    "original_source": {
+      "type": "string",
+      "description": "Original source URL or reference"
+    },
+    "access_channel": {
+      "type": "string",
+      "description": "Channel through which access was obtained (public, paywall, private account, institutional login, etc.)"
+    },
+    "rights_holder": {
+      "type": "string",
+      "description": "Identified rights holder"
+    },
+    "original_license": {
+      "type": "string",
+      "description": "License under which the original work is distributed"
+    },
+    "provenance_chain": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "Chain of custody from original source to current possession"
+    },
+    "non_republication_certified": {
+      "type": "boolean",
+      "description": "Certification that the original text will not be republished"
+    },
+    "allowed_use": {
+      "type": "string",
+      "enum": ["source_citation_only", "brief_quotation", "analysis_and_commentary", "provenance_record_only", "internal_reference"],
+      "description": "What use is permitted for this input"
+    },
+    "quotation_limit": {
+      "type": "string",
+      "description": "Maximum quotation length if brief_quotation is allowed"
+    },
+    "risk_assessment": {
+      "type": "string",
+      "enum": ["SAFE", "REVIEW_NEEDED", "BLOCKED", "COUNSEL_REQUIRED"]
+    },
+    "timestamp_HE": {
+      "type": "string"
+    },
+    "timestamp_ISO": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
