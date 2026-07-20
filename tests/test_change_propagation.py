@@ -601,22 +601,26 @@ class ChangePropagationTests(unittest.TestCase):
         # Verify each generated output has verifiable provenance. The authority models
         # TWO provenance kinds, mirrored by the schema's anyOf:
         #   - producer-command entries (explicit producer_id + producer_command + inputs)
-        #   - generator-only entries (produced by a declared generator, no producer_command)
+        #   - registered-generator entries (declared generator_id + canonical_tool +
+        #     lifecycle_status + content_digest_sha256 + inputs). The bare "generator"
+        #     key (the pre-F3 generator-only bypass) is no longer a valid shape.
         # Both are genuine generated outputs; the test must not require producer fields on
-        # generator-only entries (that would be a spurious failure), nor accept empty fields.
+        # registered-generator entries (that would be a spurious failure), nor accept empty fields.
         for item in authority["generated_outputs"]:
             if "producer_id" in item:
                 self.assertTrue(item["producer_id"].strip(), f"empty producer_id for {item['path']}")
                 self.assertTrue(item["producer_command"].strip(), f"empty producer_command for {item['path']}")
                 self.assertTrue(len(item.get("input_authorities", [])) > 0, f"no input_authorities for {item['path']}")
-            elif "generator" in item:
-                self.assertTrue(item["generator"].strip(), f"empty generator for {item['path']}")
-                self.assertTrue(
-                    (item.get("schema") or "").strip() or (item.get("justification") or "").strip(),
-                    f"generator-only entry for {item['path']} must declare schema or justification",
-                )
+            elif "generator_id" in item:
+                # Registered-generator model (F3 closure): a generator entry must carry a
+                # verifiable, sealed provenance chain, not just a bare generator name.
+                self.assertTrue(item["generator_id"].strip(), f"empty generator_id for {item['path']}")
+                self.assertTrue(item.get("canonical_tool", "").strip(), f"empty canonical_tool for {item['path']}")
+                self.assertTrue(len(item.get("input_authorities", [])) > 0, f"no input_authorities for {item['path']}")
+                self.assertTrue(item.get("lifecycle_status", "").strip(), f"empty lifecycle_status for {item['path']}")
+                self.assertTrue(item.get("content_digest_sha256", "").strip(), f"empty content_digest_sha256 for {item['path']}")
             else:
-                self.fail(f"entry for {item['path']} is neither producer-command nor generator-only")
+                self.fail(f"entry for {item['path']} is neither producer-command nor registered-generator")
         seed_paths = set(request["changed_paths"])
         # Verify disjointness: no path is both seed and generated output
         overlap = seed_paths & generated_outputs
