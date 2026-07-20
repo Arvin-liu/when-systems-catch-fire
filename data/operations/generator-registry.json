@@ -1,0 +1,38 @@
+{
+  "registry_version": "1.0.0",
+  "registry_date_ISO": "2026-07-20T00:00:00Z",
+  "description": "Canonical registry of allowed generators for the generated-output authority. A generated output may only claim a registered_generator authority when its generator_id, canonical_tool, allowed output path, and input authorities all match an entry here. Free-string generators are rejected by the schema and by the validator.",
+  "principle": "Authority is derived from a registered, versioned generator contract — never from an unverified free-text label.",
+  "generators": {
+    "compute_change_propagation": {
+      "generator_id": "compute_change_propagation",
+      "canonical_tool": "tools/operations/compute_change_propagation.py",
+      "allowed_output_paths": [
+        "data/operations/propagation/121Q32I-report.json"
+      ],
+      "required_input_authorities": [
+        "data/operations/propagation/121Q32I-request.json",
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json",
+        "data/operations/synchronization-surfaces.json"
+      ],
+      "freshness_mode": "byte_level_recompute",
+      "lifecycle_status": "active",
+      "authority_schema_version": "1.0.0"
+    },
+    "sync_surface_registry": {
+      "generator_id": "sync_surface_registry",
+      "canonical_tool": "tools/operations/compute_synchronization_surfaces.py",
+      "allowed_output_paths": [
+        "data/operations/synchronization-surfaces.json"
+      ],
+      "required_input_authorities": [
+        "data/operations/project-components.json",
+        "data/operations/change-propagation-topology.json"
+      ],
+      "freshness_mode": "byte_level_recompute",
+      "lifecycle_status": "active",
+      "authority_schema_version": "1.0.0"
+    }
+  }
+}

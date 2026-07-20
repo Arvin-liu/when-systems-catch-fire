@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "generator-registry.schema.json",
+  "title": "Generator Registry",
+  "description": "Canonical registry of allowed generators for the generated-output authority. A generated output may only claim a registered_generator authority when its generator_id, canonical_tool, allowed output path, and input authorities all match an entry here.",
+  "type": "object",
+  "required": ["registry_version", "generators"],
+  "additionalProperties": false,
+  "properties": {
+    "registry_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+    "registry_date_ISO": {"type": "string"},
+    "description": {"type": "string"},
+    "principle": {"type": "string"},
+    "generators": {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[A-Za-z0-9_]+$": {
+          "type": "object",
+          "required": ["generator_id", "canonical_tool", "allowed_output_paths", "required_input_authorities", "freshness_mode", "lifecycle_status", "authority_schema_version"],
+          "additionalProperties": false,
+          "properties": {
+            "generator_id": {"type": "string", "minLength": 1},
+            "canonical_tool": {"type": "string", "minLength": 1},
+            "allowed_output_paths": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+            "required_input_authorities": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+            "freshness_mode": {"type": "string", "enum": ["byte_level_recompute", "timestamp_based", "semantic_diff"]},
+            "lifecycle_status": {"type": "string", "enum": ["active"]},
+            "authority_schema_version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"}
+          }
+        }
+      }
+    }
+  }
+}

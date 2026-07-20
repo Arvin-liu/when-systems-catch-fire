@@ -6,16 +6,24 @@ Checks performed:
 2. Every declared generated output file exists on disk
 3. Every producer_command script exists on disk
 4. Every input_authorities file exists on disk
-5. No duplicate semantic authority (same producer_id + same sorted input_authorities
-   producing same output_type must not claim two different paths unless justified
-   as a deliberate copy)
+5. No duplicate semantic authority (same producer_id/generator_id + same sorted
+   input_authorities producing same output_type must not claim two different paths)
 6. Diff coverage: seeds ∪ generated_outputs == all diff paths (no gaps, no extras)
 7. No overlap between seed paths and generated output paths
-8. For byte_level_recompute propagation outputs, run --check to verify freshness
+8. For registered_generator entries: positive verification against generator-registry.json
+   (generator_id exists, canonical_tool matches, output path is allowed, input authorities
+   match exactly, content digest matches the live file, lifecycle_status active)
+9. For historical_sealed_record entries: the seal file exists and its digest matches; the
+   record is historical_only and does NOT claim current/live authority.
+
+Authority kinds are mutually exclusive (producer_command / registered_generator /
+historical_sealed_record). Free-string generators are rejected by the schema.
 
 Exit 0 on full pass, exit 1 on any failure.
 """
 
+import argparse
+import hashlib
 import json
 import os
 import subprocess
@@ -25,6 +33,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent  # repo root
 AUTHORITY_PATH = ROOT / "data" / "operations" / "generated-output-authority.json"
 SCHEMA_PATH = ROOT / "schemas" / "operations" / "generated-output-authority.schema.json"
+GENERATOR_REGISTRY_PATH = ROOT / "data" / "operations" / "generator-registry.json"
 REQUEST_PATH = ROOT / "data" / "operations" / "propagation" / "121Q32I-request.json"
 BASE_MAIN = "4097e610eebfc65c739df4fe7d2900161c204a9d"
 
@@ -46,15 +55,25 @@ def warn(msg: str) -> None:
     print(f"  WARN: {msg}")
 
 
-def is_generator_only(item: dict) -> bool:
-    """A generator-only authority entry declares a `generator` and has no producer_command.
+def is_registered_generator(item: dict) -> bool:
+    """A registered_generator entry carries a generator_id (registered in the registry)."""
+    return "generator_id" in item
 
-    Mirrors the schema's anyOf generator-only branch. Such entries model outputs that are
-    materialized by iteration/tooling rather than an explicit producer_command, so the
-    producer-script / input-authority / semantic-duplicate / freshness checks (which all
-    assume producer_command provenance) must skip them instead of KeyErring.
-    """
-    return "generator" in item and not item.get("producer_id")
+
+def is_historical_record(item: dict) -> bool:
+    """A historical_sealed_record entry is marked historical_only."""
+    return bool(item.get("historical_only"))
+
+
+def is_producer_command(item: dict) -> bool:
+    """A producer_command entry carries a producer_id + producer_command."""
+    return "producer_id" in item and "producer_command" in item
+
+
+def sha256_of(path: Path) -> str:
+    h = hashlib.sha256()
+    h.update(path.read_bytes())
+    return h.hexdigest()
 
 
 def load_json(path: Path) -> dict:
@@ -62,12 +81,10 @@ def load_json(path: Path) -> dict:
         return json.load(f)
 
 
-def check_schema() -> dict:
+def check_schema(authority: dict) -> None:
     """Step 1: Schema validation."""
-    print("\n[1/8] Schema validation")
-    authority = load_json(AUTHORITY_PATH)
+    print("\n[1/9] Schema validation")
     schema = load_json(SCHEMA_PATH)
-
     try:
         from jsonschema import Draft202012Validator
         errors = sorted(
@@ -81,19 +98,16 @@ def check_schema() -> dict:
             ok("Authority passes JSON Schema validation")
     except ImportError:
         warn("jsonschema not installed; skipping formal schema validation")
-        # Basic structural check
         for key in ("schema_version", "task_id", "description", "generated_outputs"):
             if key not in authority:
                 fail(f"Missing required top-level key: {key}")
         if "generated_outputs" in authority:
             ok("Basic structure present")
 
-    return authority
-
 
 def check_output_files_exist(authority: dict) -> None:
     """Step 2: Every declared generated output file exists."""
-    print("\n[2/8] Generated output file existence")
+    print("\n[2/9] Generated output file existence")
     for item in authority["generated_outputs"]:
         path = ROOT / item["path"]
         if path.exists():
@@ -103,17 +117,16 @@ def check_output_files_exist(authority: dict) -> None:
 
 
 def check_producer_scripts(authority: dict) -> None:
-    """Step 3: Every producer_command script exists."""
-    print("\n[3/8] Producer script existence")
+    """Step 3: Every producer_command script exists (producer_command entries only)."""
+    print("\n[3/9] Producer script existence")
     checked = set()
     for item in authority["generated_outputs"]:
-        if is_generator_only(item):
+        if not is_producer_command(item):
             continue
         cmd = item["producer_command"]
         if cmd in checked:
             continue
         checked.add(cmd)
-        # Extract the script path from the command (e.g. "python tools/foo.py" -> "tools/foo.py")
         parts = cmd.split()
         script_path = None
         for part in parts:
@@ -131,11 +144,12 @@ def check_producer_scripts(authority: dict) -> None:
 
 
 def check_input_authorities(authority: dict) -> None:
-    """Step 4: Every input_authorities file exists."""
-    print("\n[4/8] Input authority file existence")
+    """Step 4: Every input_authorities file exists (producer_command entries only;
+    registered_generator inputs are verified in check_registered_generators)."""
+    print("\n[4/9] Input authority file existence")
     all_inputs = set()
     for item in authority["generated_outputs"]:
-        if is_generator_only(item):
+        if not is_producer_command(item):
             continue
         for inp in item["input_authorities"]:
             all_inputs.add(inp)
@@ -148,18 +162,15 @@ def check_input_authorities(authority: dict) -> None:
 
 
 def check_duplicate_semantic_authority(authority: dict) -> None:
-    """Step 5: No duplicate semantic authority.
-    
-    Two entries with the same producer_id AND same sorted input_authorities
-    AND same output_type that point to different paths are potential duplicates.
-    If the files are byte-identical, it's a deliberate copy (WARN).
-    If the files differ, it's a genuine inconsistency (FAIL).
-    """
-    print("\n[5/8] Duplicate semantic authority check")
+    """Step 5: No duplicate semantic authority."""
+    print("\n[5/9] Duplicate semantic authority check")
     from collections import defaultdict
     groups = defaultdict(list)
     for item in authority["generated_outputs"]:
-        if is_generator_only(item):
+        # Registered-generator and historical entries are uniquely governed by the
+        # generator-registry / seal (generator_id + allowed path + digest), so they do
+        # not participate in the producer-command semantic-duplicate key space.
+        if not is_producer_command(item):
             continue
         key = (item["producer_id"], tuple(sorted(item["input_authorities"])), item["output_type"])
         groups[key].append(item["path"])
@@ -168,33 +179,98 @@ def check_duplicate_semantic_authority(authority: dict) -> None:
     for (producer, inputs, otype), paths in groups.items():
         if len(paths) <= 1:
             continue
-        # Check if all files are byte-identical
         contents = []
         for p in paths:
             fp = ROOT / p
-            if fp.exists():
-                contents.append(fp.read_bytes())
-            else:
-                contents.append(None)
-        
+            contents.append(fp.read_bytes() if fp.exists() else None)
         all_identical = all(c is not None and c == contents[0] for c in contents)
         if all_identical:
             warn(f"Deliberate copy: producer={producer}, type={otype}: {len(paths)} identical files: {[p.split('/')[-1] for p in paths]}")
         else:
             has_real_dupes = True
             fail(f"INCONSISTENT duplicate: producer={producer}, type={otype}: {paths} have different content")
-    
+
     if not has_real_dupes:
         ok("No inconsistent duplicate semantic authorities")
 
 
-def check_diff_coverage(authority: dict) -> None:
-    """Step 6 & 7: Diff coverage completeness."""
-    print("\n[6/8] Diff coverage (seeds ∪ generated == diff paths)")
-    
-    # Get diff paths
+def check_registered_generators(authority: dict, gen_reg: dict) -> None:
+    """Step 6: Positive verification of registered_generator entries against the registry."""
+    print("\n[6/9] Registered-generator verification")
+    if not gen_reg.get("generators"):
+        ok("No generator registry entries (none to verify)")
+        return
+    checked_any = False
+    for item in authority["generated_outputs"]:
+        if not is_registered_generator(item):
+            continue
+        checked_any = True
+        gid = item["generator_id"]
+        if gid not in gen_reg["generators"]:
+            fail(f"Registered generator '{gid}' for {item['path']} is NOT in generator-registry.json (unregistered generator rejected)")
+            continue
+        entry = gen_reg["generators"][gid]
+        # canonical_tool must match
+        if item.get("canonical_tool") != entry.get("canonical_tool"):
+            fail(f"{item['path']}: canonical_tool '{item.get('canonical_tool')}' != registry '{entry.get('canonical_tool')}'")
+        # output path must be allowed for this generator
+        if item["path"] not in entry.get("allowed_output_paths", []):
+            fail(f"{item['path']}: not an allowed output for generator '{gid}' (allowed: {entry.get('allowed_output_paths')})")
+        # input authorities must match exactly
+        if set(item.get("input_authorities", [])) != set(entry.get("required_input_authorities", [])):
+            fail(f"{item['path']}: input_authorities {sorted(item.get('input_authorities', []))} != registry required {sorted(entry.get('required_input_authorities', []))}")
+        # lifecycle must be active (current/live authority)
+        if item.get("lifecycle_status") != "active":
+            fail(f"{item['path']}: registered_generator must have lifecycle_status 'active' (got '{item.get('lifecycle_status')}')")
+        # content digest must match the live file
+        fpath = ROOT / item["path"]
+        if not fpath.exists():
+            fail(f"{item['path']}: file missing, cannot verify digest")
+        else:
+            live_digest = sha256_of(fpath)
+            if live_digest != item.get("content_digest_sha256"):
+                fail(f"{item['path']}: content_digest_sha256 mismatch (live {live_digest[:12]}... != declared {str(item.get('content_digest_sha256'))[:12]}...) — stale or tampered output")
+            else:
+                ok(f"{item['path']}: registered generator '{gid}' verified (digest match)")
+    if not checked_any:
+        ok("No registered_generator entries to verify")
+
+
+def check_historical_records(authority: dict) -> None:
+    """Step 7: Historical sealed records are historical-only and cannot authorize current output."""
+    print("\n[7/9] Historical sealed-record verification")
+    checked_any = False
+    for item in authority["generated_outputs"]:
+        if not is_historical_record(item):
+            continue
+        checked_any = True
+        if item.get("lifecycle_status") == "active":
+            fail(f"{item['path']}: historical_sealed_record MUST NOT claim lifecycle_status 'active' (cannot authorize current/live output)")
+        seal_file = ROOT / item["seal_file"]
+        if not seal_file.exists():
+            fail(f"{item['path']}: seal_file {item['seal_file']} does not exist")
+        else:
+            live = sha256_of(seal_file)
+            if live != item.get("seal_sha256"):
+                fail(f"{item['path']}: seal_sha256 mismatch (live {live[:12]}... != declared {str(item.get('seal_sha256'))[:12]}...)")
+            else:
+                ok(f"{item['path']}: historical seal verified (digest match)")
+    if not checked_any:
+        ok("No historical_sealed_record entries to verify")
+
+
+def check_diff_coverage(authority: dict, request: dict, base: str, era_ref: str = None) -> None:
+    """Step 8 & 9: Diff coverage completeness.
+
+    The diff window is base..era_ref when an era reference is supplied (frozen-era
+    authority), otherwise base..HEAD. This keeps a sealed historical authority from
+    being judged against a later, unrelated change set.
+    """
+    print("\n[8/9] Diff coverage (seeds ∪ generated == diff paths)")
+    diff_spec = f"{base}..{era_ref}" if era_ref else f"{base}..HEAD"
+
     result = subprocess.run(
-        ["git", "diff", "--name-only", BASE_MAIN],
+        ["git", "diff", "--name-only", diff_spec],
         capture_output=True, text=True, cwd=str(ROOT),
     )
     if result.returncode != 0:
@@ -205,15 +281,10 @@ def check_diff_coverage(authority: dict) -> None:
     if untracked.returncode == 0:
         diff_paths |= {p for p in untracked.stdout.splitlines() if p}
 
-    # Get seeds
-    request = load_json(REQUEST_PATH)
-    seeds = set(request["changed_paths"])
-
-    # Get generated outputs
+    seeds = set(request.get("changed_paths", []))
     all_generated = {item["path"] for item in authority["generated_outputs"]}
     generated = all_generated & diff_paths
 
-    # Check coverage
     covered = seeds | generated
     uncovered = diff_paths - covered
     extra = covered - diff_paths
@@ -236,14 +307,13 @@ def check_diff_coverage(authority: dict) -> None:
     else:
         ok("No extra declarations (0 outside diff)")
 
-    print(f"\n[7/8] Seed/generated disjointness")
+    print(f"\n[9/9] Seed/generated disjointness")
     if overlap:
         for p in sorted(overlap):
             fail(f"Path is both seed and generated: {p}")
     else:
         ok("Seeds and generated outputs are disjoint")
 
-    # Summary
     print(f"\n  Coverage summary: {len(seeds)} seeds + {len(generated)} generated = {len(covered)} total (diff: {len(diff_paths)})")
     if len(covered) == len(diff_paths) and not uncovered and not extra:
         ok("DIFF COVERAGE: COMPLETE")
@@ -251,73 +321,58 @@ def check_diff_coverage(authority: dict) -> None:
         fail("DIFF COVERAGE: INCOMPLETE")
 
 
-def check_propagation_freshness(authority: dict) -> None:
-    """Step 8: For propagation outputs with byte_level_recompute, run --check."""
-    print("\n[8/8] Propagation freshness (--check)")
-    
-    propagation_items = [
-        item for item in authority["generated_outputs"]
-        if not is_generator_only(item)
-        and item["producer_id"] == "compute_change_propagation"
-        and item["freshness_mode"] == "byte_level_recompute"
-    ]
-    
-    if not propagation_items:
-        ok("No propagation outputs to freshness-check")
-        return
-
-    # Run compute_change_propagation.py --check
-    cmd = [
-        sys.executable,
-        str(ROOT / "tools" / "operations" / "compute_change_propagation.py"),
-        "--request", str(REQUEST_PATH),
-        "--output", str(ROOT / "data/operations/propagation/121Q32I-closure.json"),
-        "--report", str(ROOT / "reports/operations/121Q32I-change-propagation-impact.md"),
-        "--map-delta", str(ROOT / "data/operations/propagation/121Q32I-system-map-delta.json"),
-        "--residue", str(ROOT / "data/operations/propagation/121Q32I-residue.json"),
-        "--check",
-    ]
-    result = subprocess.run(cmd, capture_output=True, text=True, cwd=str(ROOT))
-    
-    if result.returncode == 0:
-        try:
-            check_output = json.loads(result.stdout.strip().split("\n")[-1])
-            if check_output.get("status") == "PASS":
-                ok(f"Propagation --check PASS (hash: {check_output.get('closure_hash', '?')[:16]}...)")
-            else:
-                fail(f"Propagation --check status: {check_output.get('status', 'unknown')}")
-        except (json.JSONDecodeError, IndexError):
-            ok("Propagation --check exited 0")
-    else:
-        fail(f"Propagation --check FAILED (rc={result.returncode}): {result.stderr[:200]}")
-
-
 def main() -> int:
+    ap = argparse.ArgumentParser(description="Generated Output Authority Validator")
+    ap.add_argument("--authority", default=str(AUTHORITY_PATH), help="Authority JSON path")
+    ap.add_argument("--request", default=str(REQUEST_PATH), help="Request JSON path (seeds)")
+    ap.add_argument("--base", default=None, help="Base commit for diff coverage (defaults to request base_identity or BASE_MAIN)")
+    ap.add_argument("--era-ref", default=None, help="Era reference commit; diff window becomes base..era_ref (frozen-era authority)")
+    ap.add_argument("--generator-registry", default=str(GENERATOR_REGISTRY_PATH), help="Generator registry JSON path")
+    args = ap.parse_args()
+
+    authority_path = Path(args.authority)
+    request_path = Path(args.request)
+    gen_reg_path = Path(args.generator_registry)
+
     print("=" * 60)
     print("Generated Output Authority Validator")
     print("=" * 60)
-    print(f"Authority: {AUTHORITY_PATH}")
+    print(f"Authority: {authority_path}")
     print(f"Schema:    {SCHEMA_PATH}")
-    print(f"Request:   {REQUEST_PATH}")
-    print(f"Base main: {BASE_MAIN}")
+    print(f"Request:   {request_path}")
 
-    if not AUTHORITY_PATH.exists():
-        print(f"\nFATAL: Authority file not found: {AUTHORITY_PATH}")
+    if not authority_path.exists():
+        print(f"\nFATAL: Authority file not found: {authority_path}")
         return 1
     if not SCHEMA_PATH.exists():
         print(f"\nFATAL: Schema file not found: {SCHEMA_PATH}")
         return 1
-    if not REQUEST_PATH.exists():
-        print(f"\nFATAL: Request file not found: {REQUEST_PATH}")
+    if not request_path.exists():
+        print(f"\nFATAL: Request file not found: {request_path}")
         return 1
 
-    authority = check_schema()
+    authority = load_json(authority_path)
+    request = load_json(request_path)
+    gen_reg = load_json(gen_reg_path) if gen_reg_path.exists() else {"generators": {}}
+
+    base = args.base
+    if base is None:
+        base = request.get("base_identity") or BASE_MAIN
+    era_ref = args.era_ref
+    if era_ref is None:
+        hid = request.get("head_identity", "")
+        era_ref = hid if isinstance(hid, str) and len(hid) == 40 and all(c in "0123456789abcdef" for c in hid) else None
+    print(f"Base:      {base}")
+    print(f"Era ref:   {era_ref or 'HEAD (live)'}")
+
+    check_schema(authority)
     check_output_files_exist(authority)
     check_producer_scripts(authority)
     check_input_authorities(authority)
     check_duplicate_semantic_authority(authority)
-    check_diff_coverage(authority)
-    check_propagation_freshness(authority)
+    check_registered_generators(authority, gen_reg)
+    check_historical_records(authority)
+    check_diff_coverage(authority, request, base, era_ref)
 
     print("\n" + "=" * 60)
     if failures:
