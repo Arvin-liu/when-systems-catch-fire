@@ -147,32 +147,60 @@ def test_publication_gate_workflow():
     assert result["gate_decision"] == "BLOCK", f"Expected BLOCK for unknown category, got {result['gate_decision']}"
     assert result["fail_closed_default"] is True
 
-    # Test gate recording
+    # Test gate recording (fail-closed contract: provenance/reason/rule/version required)
     decision = {
         "material_id": "TEST-COURSE-001",
         "source_category": "third_party_course_material",
         "gate_decision": "BLOCK",
         "classification_level": 4,
-        "provenance_recorded": True
+        "provenance_recorded": True,
+        "reason": "Third-party course material: author owns copyright; republication prohibited.",
+        "rule_ref": "source-rights-registry:third_party_course_material",
+        "schema_version": "governance-gate-v1"
     }
     result = gate.record_gate_decision(decision)
     assert result["success"] is True
     assert result["gate_decision"] == "BLOCK"
 
     # Test audit report (counts persisted gate decisions, not in-memory classifications)
-    # Record additional decisions to ensure audit has enough data
+    # Record additional decisions to ensure audit has enough data. Unknown category must
+    # fail closed (not persisted) — verifying the gate no longer blindly records.
     for mid, cat, lvl, gate_d in [
         ("T1", "public_domain", 0, "PASS"),
         ("T3", "third_party_private_note", 6, "BLOCK"),
-        ("T4", "nonexistent_category", 6, "BLOCK"),
     ]:
-        d = {"material_id": mid, "source_category": cat, "gate_decision": gate_d, "classification_level": lvl, "provenance_recorded": True}
-        gate.record_gate_decision(d)
-    
+        d = {
+            "material_id": mid,
+            "source_category": cat,
+            "gate_decision": gate_d,
+            "classification_level": lvl,
+            "provenance_recorded": True,
+            "reason": f"Recorded decision for {mid}",
+            "rule_ref": f"source-rights-registry:{cat}",
+            "schema_version": "governance-gate-v1"
+        }
+        r = gate.record_gate_decision(d)
+        assert r["success"] is True, f"Expected {mid} recorded, got {r}"
+
+    # Unknown category must be rejected (fail-closed), not persisted.
+    bad = {
+        "material_id": "T4",
+        "source_category": "nonexistent_category",
+        "gate_decision": "BLOCK",
+        "classification_level": 6,
+        "provenance_recorded": True,
+        "reason": "should be rejected",
+        "rule_ref": "n/a",
+        "schema_version": "governance-gate-v1"
+    }
+    r_bad = gate.record_gate_decision(bad)
+    assert r_bad["success"] is False, "Unknown category must fail closed (not recorded)"
+    assert "fail-closed" in " ".join(r_bad.get("errors", [])).lower() or r_bad.get("errors")
+
     audit = gate.audit_report()
     print(f"Audit: total={audit['total_materials_classified']} blocked={audit['gate_summary']['blocked']}")
-    assert audit["total_materials_classified"] >= 4, f"Expected >= 4 persisted decisions, got {audit['total_materials_classified']}"
-    assert audit["gate_summary"]["blocked"] >= 3, f"Expected >= 3 blocked, got {audit['gate_summary']['blocked']}"
+    assert audit["total_materials_classified"] >= 3, f"Expected >= 3 persisted decisions, got {audit['total_materials_classified']}"
+    assert audit["gate_summary"]["blocked"] >= 2, f"Expected >= 2 blocked, got {audit['gate_summary']['blocked']}"
 
     return True
 

@@ -1,9 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Publication Gate Decision",
-  "description": "Schema for recording a publication gate decision for a specific material.",
+  "description": "Schema for recording a publication gate decision for a specific material. Fail-closed: the recorded decision is derived from the canonical source-rights registry by source_category; the submission must supply provenance/reason/rule/version and the tool finalizes rights_status + timestamps. additionalProperties:false rejects any unknown field.",
   "type": "object",
-  "required": ["material_id", "source_category", "rights_status", "gate_decision", "classification_level", "provenance_recorded", "timestamp_HE", "timestamp_ISO"],
+  "additionalProperties": false,
+  "required": ["material_id", "source_category", "rights_status", "gate_decision", "classification_level", "provenance_recorded", "reason", "rule_ref", "schema_version", "timestamp_HE", "timestamp_ISO"],
   "properties": {
     "material_id": {
       "type": "string",
@@ -15,7 +16,7 @@
     },
     "rights_status": {
       "type": "string",
-      "description": "Current rights status assessment"
+      "description": "Rights status assessment, derived by the gate from source_category (not self-reported)"
     },
     "access_method": {
       "type": "string",
@@ -30,14 +31,15 @@
       "type": "integer",
       "minimum": 0,
       "maximum": 6,
-      "description": "Material classification level L0-L6"
+      "description": "Material classification level L0-L6 (derived from source_category, cross-checked against submission)"
     },
     "risk_level": {
       "type": "string",
       "enum": ["NONE", "LOW", "MEDIUM", "HIGH", "CRITICAL"]
     },
     "provenance_recorded": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "Whether provenance was recorded for this material (must be true to record)"
     },
     "permission_obtained": {
       "type": "boolean",
@@ -54,6 +56,21 @@
     "prohibition_reason": {
       "type": "string",
       "description": "Reason for BLOCK decisions"
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable rationale for the gate decision (required for auditability)"
+    },
+    "rule_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Reference to the governing rule/registry entry that justifies the decision (required)"
+    },
+    "schema_version": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Version of the gate/registry contract this decision was recorded under (required)"
     },
     "timestamp_HE": {
       "type": "string",

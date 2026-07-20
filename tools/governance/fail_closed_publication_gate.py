@@ -88,6 +88,36 @@ class FailClosedPublicationGate:
                         entry = json.loads(line)
                         self.gate_decisions[entry["material_id"]] = entry
 
+    # Canonical classification maps: single source of truth shared by classify + record.
+    # Any rights_status not present here is unmappable -> fail-closed (handled in _derive_expected).
+    LEVEL_MAP = {
+        "NO_RESTRICTION": 0,
+        "COVERED_BY_PROJECT_LAYERED_LICENSE": 1,
+        "CONDITIONAL_FREE_USE": 2,
+        "COPYLEFT_NETWORK_USE": 2,
+        "PERMISSIVE_WITH_PATENT_GRANT": 2,
+        "NON_COMMERCIAL_ONLY": 3,
+        "RESTRICTED_PRE_CHANGE_DATE": 3,
+        "AUTHOR_OWNS_COPYRIGHT": 4,
+        "PUBLISHER_OR_AUTHOR_OWNS_COPYRIGHT": 4,
+        "ACCESS_RESTRICTED": 6,
+        "VARY_BY_JURISDICTION": 5,
+        "PLATFORM_OWNS_COPYRIGHT": 2,
+        "UNCERTAIN": 5,
+        # Explicitly mapped (was silently falling back to level 4 before): AI-generated
+        # content has an unsettled US jurisprudence status -> counsel required -> level 5.
+        "UNCERTAIN_U_S jurisprudence_pending": 5,
+    }
+    GATE_MAP = {
+        0: "PASS",
+        1: "PASS",
+        2: "PASS_WITH_COMPLIANCE",
+        3: "CONDITIONAL_PASS",
+        4: "BLOCK",
+        5: "BLOCK_PENDING_COUNSEL",
+        6: "BLOCK",
+    }
+
     def classify_material(self, material_id, source_category, access_method="unknown"):
         """Classify a material and return its classification level."""
         categories = self.source_rights_registry["categories"]
@@ -104,36 +134,8 @@ class FailClosedPublicationGate:
         cat = categories[source_category]
         risk = cat.get("risk_level", "MEDIUM")
 
-        # Map rights_status to classification level
-        level_map = {
-            "NO_RESTRICTION": 0,
-            "COVERED_BY_PROJECT_LAYERED_LICENSE": 1,
-            "CONDITIONAL_FREE_USE": 2,
-            "COPYLEFT_NETWORK_USE": 2,
-            "PERMISSIVE_WITH_PATENT_GRANT": 2,
-            "NON_COMMERCIAL_ONLY": 3,
-            "RESTRICTED_PRE_CHANGE_DATE": 3,
-            "AUTHOR_OWNS_COPYRIGHT": 4,
-            "PUBLISHER_OR_AUTHOR_OWNS_COPYRIGHT": 4,
-            "ACCESS_RESTRICTED": 6,
-            "VARY_BY_JURISDICTION": 5,
-            "PLATFORM_OWNS_COPYRIGHT": 2,
-            "UNCERTAIN": 5
-        }
-
-        level = level_map.get(cat["rights_status"], 4)
-
-        gate_map = {
-            0: "PASS",
-            1: "PASS",
-            2: "PASS_WITH_COMPLIANCE",
-            3: "CONDITIONAL_PASS",
-            4: "BLOCK",
-            5: "BLOCK",
-            6: "BLOCK"
-        }
-
-        gate = gate_map.get(level, "BLOCK")
+        level = self.LEVEL_MAP.get(cat["rights_status"], 4)
+        gate = self.GATE_MAP.get(level, "BLOCK")
 
         return {
             "material_id": material_id,
@@ -148,13 +150,54 @@ class FailClosedPublicationGate:
             "fail_closed_default": False
         }
 
-    def check_gate(self, decision):
-        """Check if a gate decision is valid against the classification levels.
-        
-        This performs gate-level consistency validation only (does not require 
-        all schema fields). Use validate_schema() separately for full schema compliance.
+    def _derive_expected(self, source_category):
+        """Re-derive the expected classification from the canonical source-rights registry.
+
+        Returns None when the category is unknown or its rights_status is unmappable, so the
+        caller can fail-closed. This is the authoritative path used by record_gate_decision so
+        a caller cannot self-report a lower classification_level to obtain a PASS.
         """
-        # Lightweight gate-level consistency check (no full schema required)
+        categories = self.source_rights_registry.get("categories", {})
+        if source_category not in categories:
+            return None
+        rights_status = categories[source_category].get("rights_status")
+        level = self.LEVEL_MAP.get(rights_status)
+        if level is None:
+            return None
+        gate = self.GATE_MAP.get(level, "BLOCK")
+        risk = categories[source_category].get("risk_level", "MEDIUM")
+        return {
+            "rights_status": rights_status,
+            "classification_level": level,
+            "gate_decision": gate,
+            "risk_level": risk,
+        }
+
+    def _validate_decision_schema(self, decision):
+        """Full canonical JSON Schema validation of a gate decision.
+
+        Rejects missing required fields, ill-typed/enum-violating values, and unknown fields
+        (schema uses additionalProperties:false). Falls back to a manual check if jsonschema is
+        unavailable, including an additionalProperties:false emulation.
+        """
+        schema = load_json(os.path.join(SCHEMAS_DIR, "publication-gate-decision.schema.json"))
+        try:
+            from jsonschema import Draft7Validator
+            errors = sorted(
+                Draft7Validator(schema).iter_errors(decision),
+                key=lambda e: list(e.path),
+            )
+            return [f"Schema({'/'.join(str(p) for p in e.path)}): {e.message}" for e in errors]
+        except ImportError:
+            errs = validate_schema(decision, schema)
+            props = schema.get("properties", {})
+            for key in decision:
+                if key not in props:
+                    errs.append(f"Unknown field not in schema: {key}")
+            return errs
+
+    def check_gate(self, decision):
+        """Lightweight gate-level consistency check (kept for API compatibility)."""
         expected_gate = {
             0: ["PASS"],
             1: ["PASS"],
@@ -162,37 +205,119 @@ class FailClosedPublicationGate:
             3: ["CONDITIONAL_PASS"],
             4: ["BLOCK", "BLOCK_PENDING_PERMISSION"],
             5: ["BLOCK", "BLOCK_PENDING_COUNSEL"],
-            6: ["BLOCK"]
+            6: ["BLOCK"],
         }
-
         level = decision.get("classification_level")
         gate_val = decision.get("gate_decision")
-
         errors = []
-        
         if level is not None and gate_val is not None:
             allowed = expected_gate.get(level, ["BLOCK"])
             if gate_val not in allowed:
                 errors.append(f"Gate decision '{gate_val}' not allowed for classification level {level}. Allowed: {allowed}")
-
         return {"valid": len(errors) == 0, "errors": errors}
 
+    # Fields a caller MUST supply when submitting a gate decision. The tool itself
+    # derives rights_status/risk_level and stamps timestamps, so those are NOT required
+    # in the submission (they are finalized, not trusted from the caller). Provenance,
+    # reason, rule reference, and schema version are required so every recorded decision
+    # is auditable and tied to a contract version. provenance_recorded must be true.
+    SUBMISSION_REQUIRED = [
+        "material_id",
+        "source_category",
+        "gate_decision",
+        "classification_level",
+        "provenance_recorded",
+        "reason",
+        "rule_ref",
+        "schema_version",
+    ]
+    GATE_ENUM = ["PASS", "PASS_WITH_COMPLIANCE", "CONDITIONAL_PASS",
+                 "BLOCK", "BLOCK_PENDING_PERMISSION", "BLOCK_PENDING_COUNSEL"]
+
+    def _validate_submission(self, decision):
+        """Validate the *submitted* decision before the tool derives/finalizes anything.
+
+        Rejects missing provenance/reason/rule/version, ill-typed or out-of-range
+        classification_level, and an invalid or non-provenance gate decision. This is the
+        fail-closed front door: a caller cannot record a decision without an auditable trail.
+        """
+        errs = []
+        if not isinstance(decision, dict):
+            return ["Decision must be a JSON object"]
+        for f in self.SUBMISSION_REQUIRED:
+            if f not in decision or decision[f] in (None, ""):
+                errs.append(f"Missing required submission field: {f}")
+        if "provenance_recorded" in decision and decision.get("provenance_recorded") is not True:
+            errs.append("provenance_recorded must be true to record a gate decision")
+        lvl = decision.get("classification_level")
+        if lvl is not None and not (isinstance(lvl, int) and 0 <= lvl <= 6):
+            errs.append(f"classification_level must be integer 0-6, got {lvl!r}")
+        gd = decision.get("gate_decision")
+        if gd is not None and gd not in self.GATE_ENUM:
+            errs.append(f"gate_decision {gd!r} not in allowed values: {self.GATE_ENUM}")
+        return errs
+
     def record_gate_decision(self, decision):
-        """Record a gate decision and persist it."""
-        check = self.check_gate(decision)
-        if not check["valid"]:
-            return {"success": False, "errors": check["errors"]}
+        """Record a gate decision, fail-closed.
 
-        decision["timestamp_HE"] = "12026年7月19日（人类纪元；对应公元2026年7月19日）"
-        decision["timestamp_ISO"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-        self.gate_decisions[decision["material_id"]] = decision
+        Pipeline:
+          0. Submission-completeness check (provenance/reason/rule/version present;
+             provenance_recorded must be true) — rejects missing audit trail.
+          1. Re-derive expected level/risk/gate from the canonical source-rights registry by
+             source_category; unknown/unmappable category fails closed (not recorded).
+          2. Cross-check submitted classification_level/gate_decision/rights_status against the
+             derivation — a caller cannot self-report a lower risk to obtain a PASS.
+          3. Finalize: canonical values win; the tool sets rights_status/risk_level/timestamps.
+          4. Validate the finalized record against the canonical schema (additionalProperties:false
+             rejects any unknown/sneaked-in field).
+          Only when all stages pass is the decision persisted.
+        """
+        # 0. Submission front door
+        sub_errors = self._validate_submission(decision)
+        if sub_errors:
+            return {"success": False, "errors": sub_errors}
 
-        # Persist to JSONL
+        # 1. Re-derive expected level/risk/action from canonical source-rights registry
+        derived = self._derive_expected(decision.get("source_category"))
+        if derived is None:
+            return {"success": False, "errors": ["Unknown or unmappable source_category; fail-closed (not recorded)"]}
+
+        # 2. Cross-check submitted values against the derivation (no self-reported lower risk)
+        errs = []
+        if decision.get("classification_level") != derived["classification_level"]:
+            errs.append(
+                f"classification_level {decision.get('classification_level')} != derived "
+                f"{derived['classification_level']} for {decision.get('source_category')}"
+            )
+        if decision.get("gate_decision") != derived["gate_decision"]:
+            errs.append(
+                f"gate_decision {decision.get('gate_decision')} != derived "
+                f"{derived['gate_decision']} for {decision.get('source_category')}"
+            )
+        if decision.get("rights_status") is not None and decision.get("rights_status") != derived["rights_status"]:
+            errs.append(f"rights_status {decision.get('rights_status')} != derived {derived['rights_status']}")
+        if errs:
+            return {"success": False, "errors": errs}
+
+        # 3. Finalize (canonical values win) and persist
+        final = dict(decision)
+        final["rights_status"] = derived["rights_status"]
+        final["risk_level"] = derived["risk_level"]
+        final["timestamp_HE"] = "12026年7月19日（人类纪元；对应公元2026年7月19日）"
+        final["timestamp_ISO"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+        # 4. Validate the finalized record against the canonical schema
+        schema_errors = self._validate_decision_schema(final)
+        if schema_errors:
+            return {"success": False, "errors": schema_errors}
+
+        self.gate_decisions[final["material_id"]] = final
+
         decisions_path = os.path.join(GOV_DIR, "publication-gate-decisions.jsonl")
         with open(decisions_path, 'a', encoding='utf-8') as f:
-            f.write(json.dumps(decision, ensure_ascii=False) + '\n')
+            f.write(json.dumps(final, ensure_ascii=False) + '\n')
 
-        return {"success": True, "material_id": decision["material_id"], "gate_decision": decision.get("gate_decision", "UNKNOWN")}
+        return {"success": True, "material_id": final["material_id"], "gate_decision": final.get("gate_decision", "UNKNOWN")}
 
     def certify_non_republication(self, record):
         """Certify compliance with the External Input Non-Republication Principle."""
@@ -256,6 +381,9 @@ def main():
     p_gate.add_argument("--classification-level", type=int, required=True, help="Classification level 0-6")
     p_gate.add_argument("--source-category", required=True, help="Source category")
     p_gate.add_argument("--reviewer", default="agent", help="Who made the decision")
+    p_gate.add_argument("--reason", required=True, help="Human-readable rationale for the decision")
+    p_gate.add_argument("--rule-ref", required=True, help="Governing rule/registry reference justifying the decision")
+    p_gate.add_argument("--schema-version", required=True, help="Gate/registry contract version this decision is recorded under")
 
     # check
     p_check = subparsers.add_parser("check", help="Validate a gate decision")
@@ -279,7 +407,10 @@ def main():
             "gate_decision": args.gate_decision,
             "classification_level": args.classification_level,
             "reviewer": args.reviewer,
-            "provenance_recorded": True
+            "provenance_recorded": True,
+            "reason": args.reason,
+            "rule_ref": args.rule_ref,
+            "schema_version": args.schema_version
         }
         result = gate.record_gate_decision(decision)
         print(json.dumps(result, indent=2, ensure_ascii=False))
