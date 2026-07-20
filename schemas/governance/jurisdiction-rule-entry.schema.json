@@ -60,6 +60,23 @@
       "type": "string",
       "format": "date-time",
       "description": "ISO 8601 date of verification"
+    },
+    "legal_regime_scope": {
+      "type": "string",
+      "description": "The applicable copyright legal regime modeled by this entry (e.g. the statute and its enforceable scope). Technical rule-modeling field, NOT a sovereignty claim."
+    },
+    "territorial_law_scope": {
+      "type": "string",
+      "description": "Territory within which the modeled legal regime applies/enforces."
+    },
+    "sovereignty_position": {
+      "type": "string",
+      "enum": ["NOT_ASSERTED"],
+      "description": "This registry models applicable legal regimes only. It asserts no position on sovereignty or political status. The only permitted value is NOT_ASSERTED."
+    },
+    "sovereignty_note": {
+      "type": "string",
+      "description": "Optional clarification that this entry models a legal regime in scope and asserts no sovereignty or political position."
     }
   }
 }

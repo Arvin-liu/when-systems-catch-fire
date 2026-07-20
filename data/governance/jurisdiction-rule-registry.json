@@ -2,7 +2,7 @@
   "registry_version": "1.0.0",
   "registry_date_HE": "12026年7月19日（人类纪元；对应公元2026年7月19日）",
   "registry_date_ISO": "2026-07-19T00:00:00Z",
-  "purpose": "Canonical jurisdiction-level copyright rule registry for Q33 global copyright risk projection and external input rights governance. All rules sourced exclusively from official legislative databases, WIPO Lex, EUR-Lex, and GitHub official policy pages.",
+  "purpose": "Canonical registry of applicable copyright legal-regime scopes for Q33 rights governance and external-input rights review. It models the territorial scope of application of each legal regime (legal_regime_scope / territorial_law_scope). This registry makes NO assertion of sovereignty or political status (sovereignty_position: NOT_ASSERTED for every entry). Rules are sourced from official legislative databases, WIPO Lex, EUR-Lex, and official platform policy pages.",
   "rule_authority_principle": "Only official, original, current-source rules are authoritative. Blogs, search summaries, old lab content, and model memory are NOT rule authority.",
   "fallback_principle": "When rule currentness cannot be confirmed, official source is inaccessible, jurisdiction conflicts exist, or facts are insufficient: register as UNVERIFIED, COUNSEL_REQUIRED, PERMISSION_REQUIRED, INSUFFICIENT_INFORMATION, or BLOCKED_PENDING_EVIDENCE.",
   "treaty_layer": {
@@ -86,7 +86,10 @@
         "currentness": "CURRENT"
       },
       "contract_override": "FAIR_USE_NOT_WAIVABLE_BY_CONTRACT (case law; fair use is a user right, not waivable)",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Law of the United States (17 U.S.C.), as enacted and enforceable under U.S. federal law",
+      "territorial_law_scope": "United States (federal territory and applicable state extensions)"
     },
     "EU": {
       "id": "JUR-EU",
@@ -116,7 +119,10 @@
       },
       "implementation_note": "Directive must be transposed into national law by each Member State; exceptions vary by jurisdiction within EU",
       "currentness": "CURRENT (transposition deadline 7 June 2021)",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Directive (EU) 2019/790 (DSM Directive) and its member-state transpositions",
+      "territorial_law_scope": "European Union member states (as transposed into national law)"
     },
     "UK": {
       "id": "JUR-UK",
@@ -133,7 +139,10 @@
       "framework": "fair_dealing_purpose_specific",
       "currentness": "CURRENT",
       "post_brexit": "CDPA 1988 remains UK law; DSM Directive no longer applies directly but UK maintains similar exceptions",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright, Designs and Patents Act 1988 (CDPA 1988)",
+      "territorial_law_scope": "United Kingdom"
     },
     "CA": {
       "id": "JUR-CA",
@@ -151,7 +160,10 @@
       "framework": "fair_dealing_with_user_rights_framework_(CCH_Canada_2004)",
       "user_rights_principle": "Fair dealing is a user right, not merely an exception; broad interpretation required",
       "currentness": "CURRENT",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Act, R.S.C. 1985, c. C-42",
+      "territorial_law_scope": "Canada"
     },
     "AU": {
       "id": "JUR-AU",
@@ -170,7 +182,10 @@
       "framework": "fair_dealing_purpose_specific",
       "special_provision": "Section 40 includes 'reasonable portion' quantitative guidance",
       "currentness": "CURRENT",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Act 1968 (Cth)",
+      "territorial_law_scope": "Australia"
     },
     "JP": {
       "id": "JUR-JP",
@@ -197,7 +212,10 @@
         "Article 39: Reproduction for visually impaired"
       ],
       "currentness": "CURRENT",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Act (Act No. 48 of 1970)",
+      "territorial_law_scope": "Japan"
     },
     "SG": {
       "id": "JUR-SG",
@@ -210,7 +228,10 @@
         "note": "Replaced Copyright Act 2021; fair dealing framework retained with updates"
       },
       "currentness": "CURRENT",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Act 2021 (Act No. 22 of 2021)",
+      "territorial_law_scope": "Singapore"
     },
     "IN": {
       "id": "JUR-IN",
@@ -231,7 +252,10 @@
         "latest_amendment": "Amended up to Act No. 18 of 2023"
       },
       "currentness": "CURRENT",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "The Copyright Act, 1957 (Act No. 14 of 1957)",
+      "territorial_law_scope": "India"
     },
     "CN": {
       "id": "JUR-CN",
@@ -245,11 +269,15 @@
       },
       "framework": "closed_list_exceptions_with_fair_use_like_provisions",
       "currentness": "CURRENT (2020 amendment effective June 1, 2021)",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Law of the People's Republic of China (2020 Amendment)",
+      "territorial_law_scope": "Mainland China (territory of the People's Republic of China)",
+      "sovereignty_note": "Entry registers the Copyright Law of the People's Republic of China as applied within mainland China. It asserts no position on the sovereignty or political status of any other territory."
     },
     "TW": {
       "id": "JUR-TW",
-      "name": "Taiwan (Republic of China Copyright Act)",
+      "name": "Taiwan area — Copyright Act of the Republic of China (legal regime in scope; sovereignty NOT asserted)",
       "statute": "Copyright Act of the Republic of China",
       "official_source": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=D0090118",
       "exceptions": {
@@ -261,7 +289,11 @@
       },
       "framework": "fair_use_with_three_step_test",
       "currentness": "CURRENT",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "sovereignty_position": "NOT_ASSERTED",
+      "legal_regime_scope": "Copyright Act of the Republic of China, as applied within the Taiwan area",
+      "territorial_law_scope": "Taiwan area",
+      "sovereignty_note": "Entry registers the copyright legal regime applicable within the Taiwan area for technical rule modeling only. It asserts no position on sovereignty or political status. The applicable rules differ from the PRC Copyright Law and are preserved as a distinct legal-regime scope."
     }
   },
   "platform_policy": {
@@ -331,6 +363,10 @@
       "EU_Art3_unenforceable": "Contractual provisions contrary to Article 3 TDM exception are unenforceable",
       "EU_Art5_unenforceable": "Contractual provisions contrary to Article 5 exceptions are unenforceable",
       "US_fair_use_non_waivable": "Fair use is a user right, not waivable by contract (case law)"
-    }
-  }
+    },
+    "modeling_note": "total_jurisdictions counts distinct applicable legal-regime scopes modeled for technical rights-governance; it is NOT a count of sovereign states. Every entry carries sovereignty_position: NOT_ASSERTED."
+  },
+  "modeling_concept": "legal_regime_scope_of_application",
+  "sovereignty_position": "NOT_ASSERTED",
+  "sovereignty_statement": "This registry models the applicable copyright legal regimes and their territorial scopes of application for technical rights-governance only. It does NOT assert, recognize, or deny the sovereignty, independence, or political status of any territory or government. Every entry carries sovereignty_position: NOT_ASSERTED."
 }

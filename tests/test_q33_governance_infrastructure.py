@@ -44,6 +44,14 @@ def test_jurisdiction_registry():
     # Check all jurisdictions are VERIFIED
     for jid, jdata in reg["jurisdictions"].items():
         assert jdata["verification_status"] == "VERIFIED", f"{jid} not VERIFIED: {jdata['verification_status']}"
+        # P1 (F1 re-adjudication): every entry models a legal regime, not sovereignty
+        assert jdata.get("sovereignty_position") == "NOT_ASSERTED", \
+            f"{jid} must carry sovereignty_position: NOT_ASSERTED"
+
+    # P1: registry-level sovereignty neutrality
+    assert reg.get("sovereignty_position") == "NOT_ASSERTED", "Registry must declare sovereignty_position: NOT_ASSERTED"
+    assert reg.get("modeling_concept") == "legal_regime_scope_of_application", \
+        "Registry must model legal_regime_scope_of_application"
 
     # Check platform policies
     assert "platform_policy" in reg, "Missing platform_policy"
