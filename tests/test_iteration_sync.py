@@ -788,6 +788,28 @@ class IterationSyncTests(unittest.TestCase):
             with self.assertRaises(AssertionError):
                 _validate_seal_f12(dict(seal), source)
 
+    def test_era_aware_recompute_q32i_matches_persisted_not_live(self):
+        """V15 Q32I adjudication B: _era_aware_recompute must validate Q32I's
+        closure by its sealed-era inputs. The era recompute equals the persisted
+        (sealed) closure; the live recompute differs (the registry grew since
+        Q32I's era). This proves the validator accepts the era closure and does
+        not require the live (drifted) one.
+        """
+        import json as _json
+        import tools.validate_iteration_sync as V
+        from tools.operations.compute_change_propagation import compute
+        merge = "0a13c246172c0338bf8dda5dc08db5a574a8b23f"
+        request = _json.loads((V.ROOT / "data/operations/propagation/121Q32I-request.json").read_text(encoding="utf-8"))
+        persisted = _json.loads((V.ROOT / "data/operations/propagation/121Q32I-closure.json").read_text(encoding="utf-8"))
+        out = V._era_aware_recompute(request, merge)
+        self.assertIsNotNone(out)
+        era_closure, _ = out
+        self.assertEqual(era_closure, persisted)
+        # Live recompute diverges (registry drift) — confirms era-awareness is
+        # what makes the persisted closure validate, not a blanket acceptance.
+        live_closure, _ = compute(request)
+        self.assertNotEqual(live_closure, persisted)
+
 
 if __name__ == "__main__":
     unittest.main()

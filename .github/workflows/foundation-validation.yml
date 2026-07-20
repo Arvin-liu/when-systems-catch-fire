@@ -114,6 +114,9 @@ jobs:
           # Q32 is accepted historical evidence and is verified by the D4
           # closeout validator; do not reinterpret its map delta against the
           # later Q32I candidate registry.
+          # Q32I is validated era-aware (V15 Q32I-B): recompute its closure and
+          # delta against the registry/topology/surfaces snapshot at its merge
+          # commit, not the live (since-drifted) registry.
           python3 tools/operations/validate_phase_d_closeout.py --check
           python3 tools/operations/compute_change_propagation.py \
             --request data/operations/propagation/121Q32I-request.json \
@@ -121,6 +124,7 @@ jobs:
             --report reports/operations/121Q32I-change-propagation-impact.md \
             --map-delta data/operations/propagation/121Q32I-system-map-delta.json \
             --residue data/operations/propagation/121Q32I-residue.json \
+            --era-ref 0a13c246172c0338bf8dda5dc08db5a574a8b23f \
             --check
       - name: Validate Q32I Phase E candidate
         run: python3 tools/operations/validate_phase_e_candidate.py --check
