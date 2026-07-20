@@ -19,6 +19,8 @@
   ],
   "changed_paths": [
     ".github/workflows/foundation-validation.yml",
+    ".github/workflows/q33-governance-validation.yml",
+    "requirements-q33.txt",
     "data/architecture/interactive-system-map-layout.json",
     "data/architecture/interactive-system-map.json",
     "data/governance/history-remediation-register.json",
@@ -59,6 +61,7 @@
     "tests/test_pr_front_door_audit.py",
     "tests/test_publication_gate_fail_closed.py",
     "tests/test_publication_provenance_attack.py",
+    "tests/test_q33_fail_closed_fixtures.py",
     "tests/test_q33_governance_infrastructure.py",
     "tests/test_source_rights_gate_enum_consistency.py",
     "tools/governance/audit_pr_front_door.py",
