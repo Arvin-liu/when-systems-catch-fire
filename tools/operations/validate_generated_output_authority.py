@@ -46,6 +46,17 @@ def warn(msg: str) -> None:
     print(f"  WARN: {msg}")
 
 
+def is_generator_only(item: dict) -> bool:
+    """A generator-only authority entry declares a `generator` and has no producer_command.
+
+    Mirrors the schema's anyOf generator-only branch. Such entries model outputs that are
+    materialized by iteration/tooling rather than an explicit producer_command, so the
+    producer-script / input-authority / semantic-duplicate / freshness checks (which all
+    assume producer_command provenance) must skip them instead of KeyErring.
+    """
+    return "generator" in item and not item.get("producer_id")
+
+
 def load_json(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -96,6 +107,8 @@ def check_producer_scripts(authority: dict) -> None:
     print("\n[3/8] Producer script existence")
     checked = set()
     for item in authority["generated_outputs"]:
+        if is_generator_only(item):
+            continue
         cmd = item["producer_command"]
         if cmd in checked:
             continue
@@ -122,6 +135,8 @@ def check_input_authorities(authority: dict) -> None:
     print("\n[4/8] Input authority file existence")
     all_inputs = set()
     for item in authority["generated_outputs"]:
+        if is_generator_only(item):
+            continue
         for inp in item["input_authorities"]:
             all_inputs.add(inp)
     for inp in sorted(all_inputs):
@@ -144,6 +159,8 @@ def check_duplicate_semantic_authority(authority: dict) -> None:
     from collections import defaultdict
     groups = defaultdict(list)
     for item in authority["generated_outputs"]:
+        if is_generator_only(item):
+            continue
         key = (item["producer_id"], tuple(sorted(item["input_authorities"])), item["output_type"])
         groups[key].append(item["path"])
 
@@ -240,7 +257,8 @@ def check_propagation_freshness(authority: dict) -> None:
     
     propagation_items = [
         item for item in authority["generated_outputs"]
-        if item["producer_id"] == "compute_change_propagation"
+        if not is_generator_only(item)
+        and item["producer_id"] == "compute_change_propagation"
         and item["freshness_mode"] == "byte_level_recompute"
     ]
     

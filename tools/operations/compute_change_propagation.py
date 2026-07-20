@@ -459,8 +459,21 @@ def validate_overlap_declarations(components: dict[str, dict], allowed_overlaps:
     return residue
 
 
-def compute(request: dict, components_doc: dict | None = None, topology_doc: dict | None = None, surfaces_doc: dict | None = None, baseline_map: dict | None = None, head_ref: str = "HEAD") -> tuple[dict, dict]:
+def compute(request: dict, components_doc: dict | None = None, topology_doc: dict | None = None, surfaces_doc: dict | None = None, baseline_map: dict | None = None, head_ref: str = "HEAD", era_ref: str | None = None) -> tuple[dict, dict]:
     validate_json(request, REQUEST_SCHEMA, "propagation request")
+    residue: list[dict] = []
+    # Era-aware surface validation (V15 Q32I-B): a historical request/iteration was
+    # authored against a registry that did not yet contain post-era surfaces (e.g. the
+    # Q33-era `copyright_governance` surface). Validating derive_surfaces against the
+    # LIVE registry therefore spuriously requires a decision the historical request
+    # never carried. Resolve only the surface registry to the era snapshot so the
+    # historical closure is judged by its own era's surface set. The component
+    # registry, topology and layout are intentionally kept live: their historical
+    # schemas have drifted and are not byte-compatible with the current projection
+    # tooling, and they are not the source of the spurious failure. Runs BEFORE the
+    # live-load fallback so the era surface snapshot wins when none was supplied.
+    if era_ref is not None and surfaces_doc is None:
+        surfaces_doc = git_json(era_ref, "data/operations/synchronization-surfaces.json")
     components_doc = components_doc or load_json(COMPONENTS)
     topology_doc = topology_doc or load_json(TOPOLOGY)
     surfaces_doc = surfaces_doc or load_json(SURFACES)
@@ -469,7 +482,7 @@ def compute(request: dict, components_doc: dict | None = None, topology_doc: dic
     validate_json(surfaces_doc, SURFACE_SCHEMA, "synchronization surface registry")
     components = {item["component_id"]: item for item in components_doc["components"]}
     require(len(components) == len(components_doc["components"]), "duplicate component id")
-    residue: list[dict] = []
+
     # G1: Validate relation authority for every relation (runtime guard)
     for relation in topology_doc["relations"]:
         require(relation["source"] in components and relation["target"] in components, f"relation references unknown component: {relation['relation_id']}")

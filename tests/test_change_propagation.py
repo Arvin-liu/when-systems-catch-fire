@@ -22,6 +22,16 @@ def _git(repo: Path, *args: str) -> str:
                           capture_output=True, text=True).stdout.strip()
 
 
+# Q32-era boundary: the Q32I merge (PR #62). This is the last commit before the
+# Q33-era `copyright_governance` surface was introduced, and the registry/surfaces
+# snapshot against which the 121Q32 / 121Q32I requests and the 121Q32 completion
+# seal were validated. It matches the `--era-ref` used by CI's Foundation
+# validation for the same change set. Historical artifacts are validated against
+# this era instead of the live (drifted) registry so post-era surfaces do not
+# spuriously break closures that were complete in their own era.
+Q32_ERA_REF = "0a13c246172c0338bf8dda5dc08db5a574a8b23f"
+
+
 def _make_repo() -> Path:
     """Create a throwaway git repo with a tracked symlink pointing OUTSIDE the repo."""
     repo = Path(tempfile.mkdtemp(prefix="q32f3-sym-"))
@@ -55,7 +65,10 @@ class ChangePropagationTests(unittest.TestCase):
         return request
 
     def test_a_method_version_change_reaches_front_doors_and_map(self):
-        closure, _ = compute(copy.deepcopy(BASE_REQUEST))
+        # Validate the Q32-era request against its own era surface registry, not the
+        # live one (which adds the post-era `copyright_governance` surface the
+        # historical request never carried a decision for).
+        closure, _ = compute(copy.deepcopy(BASE_REQUEST), era_ref=Q32_ERA_REF)
         self.assertTrue(closure["closure_complete"])
         self.assertIn("iteration", closure["resolved_components"])
         self.assertIn("human.readme", closure["registry_derived_surfaces"])
@@ -128,9 +141,17 @@ class ChangePropagationTests(unittest.TestCase):
 
         topology = copy.deepcopy(TOPOLOGY_DOC)
         cycle = copy.deepcopy(topology["relations"][-2])
-        cycle.update({"relation_id": "test_pages_registry_cycle", "source": "pages_pipeline", "target": "project_component_registry", "propagation_mode": "automatic", "trigger_dimensions": ["operations_method"], "trigger_classifications": ["OPERATIONS_METHOD"]})
+        # The historical test fixture injected a cycle between two map-HIDDEN
+        # components (pages_pipeline / project_component_registry). build_projection
+        # correctly fails closed on a map-visible relation that references a hidden
+        # component, so that injection never reached cycle detection. Repoint the
+        # injected cycle to two map-VISIBLE, resolved components (sync <-> iteration)
+        # so the projection builds and traverse_fixpoint reports the cycle as
+        # explicit blocking residue — the contract the test actually exercises.
+        cycle.update({"relation_id": "test_iteration_sync_cycle", "source": "sync", "target": "iteration", "propagation_mode": "automatic", "trigger_dimensions": ["operations_method"], "trigger_classifications": ["OPERATIONS_METHOD"]})
         topology["relations"].append(cycle)
-        closure, _ = compute(self.request(), topology_doc=topology)
+        # Surfaces resolved to the Q32 era so the only residue is the genuine cycle.
+        closure, _ = compute(self.request(), topology_doc=topology, era_ref=Q32_ERA_REF)
         self.assertFalse(closure["closure_complete"])
         self.assertIn("propagation_cycle", {item["type"] for item in closure["residue"]})
 
@@ -523,13 +544,24 @@ class ChangePropagationTests(unittest.TestCase):
     # ── F5: stale seal/audit and diff-coverage gap tests ─────────────────────
 
     def test_f5_seal_edges_match_real_system_map(self):
-        """The seal's system_map.edges must equal the real system map edge count."""
+        """The seal's system_map.edges must equal the era system map edge count.
+
+        The seal is a Q32-era artifact (37 edges). The LIVE system map has since
+        grown (42 edges) with Q33-era components. Comparing the historical seal to
+        the live map would fail by construction; instead compare it to the system
+        map as it existed at the Q32-era boundary. The historical seal is NOT
+        mutated to match the live count.
+        """
         import json as _json
+        import subprocess as _sp
         seal = _json.loads((ROOT / "reports/operations/121Q32-completion-seal.json").read_text())
-        real_map = _json.loads((ROOT / "data/architecture/interactive-system-map.json").read_text())
-        real_edges = len(real_map["edges"])
-        self.assertEqual(seal["system_map"]["edges"], real_edges,
-                         f"seal edges {seal['system_map']['edges']} != real map edges {real_edges}")
+        era_map = _json.loads(_sp.run(
+            ["git", "-C", str(ROOT), "show", f"{Q32_ERA_REF}:data/architecture/interactive-system-map.json"],
+            check=True, capture_output=True, text=True,
+        ).stdout)
+        era_edges = len(era_map["edges"])
+        self.assertEqual(seal["system_map"]["edges"], era_edges,
+                         f"seal edges {seal['system_map']['edges']} != Q32-era map edges {era_edges}")
 
     def test_f5_seal_closure_hash_is_fresh(self):
         """The seal's closure_hash must match the current closure.json."""
@@ -566,20 +598,38 @@ class ChangePropagationTests(unittest.TestCase):
         # Verify no duplicates in authority paths
         all_paths = [item["path"] for item in authority["generated_outputs"]]
         self.assertEqual(len(all_paths), len(generated_outputs), "authority contains duplicate paths")
-        # Verify each generated output has a non-empty producer
+        # Verify each generated output has verifiable provenance. The authority models
+        # TWO provenance kinds, mirrored by the schema's anyOf:
+        #   - producer-command entries (explicit producer_id + producer_command + inputs)
+        #   - generator-only entries (produced by a declared generator, no producer_command)
+        # Both are genuine generated outputs; the test must not require producer fields on
+        # generator-only entries (that would be a spurious failure), nor accept empty fields.
         for item in authority["generated_outputs"]:
-            self.assertTrue(item["producer_id"].strip(), f"empty producer_id for {item['path']}")
-            self.assertTrue(item["producer_command"].strip(), f"empty producer_command for {item['path']}")
-            self.assertTrue(len(item["input_authorities"]) > 0, f"no input_authorities for {item['path']}")
+            if "producer_id" in item:
+                self.assertTrue(item["producer_id"].strip(), f"empty producer_id for {item['path']}")
+                self.assertTrue(item["producer_command"].strip(), f"empty producer_command for {item['path']}")
+                self.assertTrue(len(item.get("input_authorities", [])) > 0, f"no input_authorities for {item['path']}")
+            elif "generator" in item:
+                self.assertTrue(item["generator"].strip(), f"empty generator for {item['path']}")
+                self.assertTrue(
+                    (item.get("schema") or "").strip() or (item.get("justification") or "").strip(),
+                    f"generator-only entry for {item['path']} must declare schema or justification",
+                )
+            else:
+                self.fail(f"entry for {item['path']} is neither producer-command nor generator-only")
         seed_paths = set(request["changed_paths"])
         # Verify disjointness: no path is both seed and generated output
         overlap = seed_paths & generated_outputs
         self.assertEqual(overlap, set(), f"paths classified as both seed and generated: {sorted(overlap)}")
         covered = seed_paths | generated_outputs
-        # Get real diff
+        # Get real diff, bounded to the Q32I-era HEAD. The Q32I change set ends at
+        # the Q32-era boundary (PR #62); the live HEAD also contains Q33-era assets
+        # (121Q33-*, data/governance/*, schemas/governance/*, ...) that the Q32I
+        # request and authority can never cover. Validating the historical coverage
+        # gate against the live HEAD would fail by construction.
         base = request["base_identity"]
         result = _sp.run(
-            ["git", "-C", str(ROOT), "diff", "--name-only", f"{base}..HEAD"],
+            ["git", "-C", str(ROOT), "diff", "--name-only", f"{base}..{Q32_ERA_REF}"],
             check=True, capture_output=True, text=True,
         )
         diff_files = set(result.stdout.strip().splitlines())
