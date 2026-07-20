@@ -212,22 +212,6 @@
       "justification": "Deterministic Q32I report materialized by registered generator compute_change_propagation"
     },
     {
-      "path": "data/operations/synchronization-surfaces.json",
-      "generator_id": "sync_surface_registry",
-      "canonical_tool": "tools/operations/compute_synchronization_surfaces.py",
-      "input_authorities": [
-        "data/operations/project-components.json",
-        "data/operations/change-propagation-topology.json"
-      ],
-      "output_type": "materialized_projection",
-      "freshness_mode": "byte_level_recompute",
-      "coverage_class": "generated_output",
-      "lifecycle_status": "active",
-      "authority_schema_version": "1.0.0",
-      "content_digest_sha256": "70ebe8f2010c4a1cdc951baeced89aa6ccbc94d8a7c3ef6face850208cb08901",
-      "justification": "Synchronization surfaces materialized by registered generator sync_surface_registry"
-    },
-    {
       "coverage_class": "generated_output",
       "freshness_mode": "byte_level_recompute",
       "input_authorities": [

@@ -212,9 +212,116 @@ def check_duplicate_semantic_authority(authority: dict) -> None:
         ok("No inconsistent duplicate semantic authorities")
 
 
+def _check_generator_registry_schema(gen_reg: dict) -> None:
+    """Validate the generator registry against its schema. Enforces that every generator
+    pins canonical_tool_digest_sha256 (tamper detection) and contains no unknown keys."""
+    schema_path = ROOT / "schemas" / "operations" / "generator-registry.schema.json"
+    if not schema_path.exists():
+        warn(f"Generator registry schema not found at {schema_path}; skipping registry schema validation")
+        return
+    try:
+        from jsonschema import Draft202012Validator
+        schema = load_json(schema_path)
+        errors = sorted(
+            Draft202012Validator(schema).iter_errors(gen_reg),
+            key=lambda e: list(e.path),
+        )
+        if errors:
+            for err in errors:
+                fail(f"Generator registry schema error: {'/'.join(str(p) for p in err.path)}: {err.message}")
+        else:
+            ok("Generator registry passes JSON Schema validation (canonical_tool_digest_sha256 pinning enforced)")
+    except ImportError:
+        warn("jsonschema not installed; skipping generator registry schema validation")
+
+
+def _authority_kind(item: dict) -> str | None:
+    """Classify a generated-output authority entry by its authority kind."""
+    if is_historical_record(item):
+        return "historical_sealed_record"
+    if is_registered_generator(item):
+        return "registered_generator"
+    if is_producer_command(item):
+        return "producer_command"
+    return None
+
+
+def _check_authority_contract_integrity(authority: dict) -> None:
+    """Authority-contract integrity:
+      (a) a single output path must NOT be authorized by two different authority kinds
+          (producer_command AND registered_generator) — default-deny (ambiguous authority);
+      (b) the input→output authority graph must be acyclic — no self-authorization
+          (a generator's output listed as its own input) and no indirect cycle.
+    """
+    print("  [6b] Authority-contract integrity (dual-kind + cycle)")
+    outputs = authority.get("generated_outputs", [])
+    # (a) dual-kind authorization for the same path
+    path_kinds: dict[str, set[str]] = {}
+    for item in outputs:
+        kind = _authority_kind(item)
+        if kind is None:
+            continue
+        path_kinds.setdefault(item["path"], set()).add(kind)
+    dual = False
+    for path, kinds in sorted(path_kinds.items()):
+        if "producer_command" in kinds and "registered_generator" in kinds:
+            dual = True
+            fail(f"DUAL-AUTH: {path} is authorized by BOTH producer_command and registered_generator (default-deny; ambiguous authority)")
+    if not dual:
+        ok("No path double-authorized by producer_command + registered_generator")
+
+    # (b) cycle detection on the input→output authority graph
+    graph: dict[str, set[str]] = {}
+    self_auth = False
+    for item in outputs:
+        out = item["path"]
+        for inp in item.get("input_authorities", []):
+            graph.setdefault(inp, set()).add(out)
+        if out in item.get("input_authorities", []):
+            self_auth = True
+            fail(f"SELF-AUTH: {out} lists itself as an input_authority (generator authorizes its own output)")
+    if not self_auth:
+        ok("No self-authorization (output == own input) detected")
+
+    # DFS over graph to detect directed cycles (input -> output -> ... -> input)
+    WHITE, GRAY, BLACK = 0, 1, 2
+    color = {node: WHITE for node in graph}
+    cycle_found = {"flag": False}
+
+    def visit(node: str, stack: list[str]) -> None:
+        color[node] = GRAY
+        stack.append(node)
+        for nxt in sorted(graph.get(node, ())):
+            if color.get(nxt, WHITE) == GRAY:
+                idx = stack.index(nxt)
+                cyc = stack[idx:] + [nxt]
+                if not cycle_found["flag"]:
+                    fail(f"AUTHORITY-CYCLE: input/output authority graph has a cycle: {' -> '.join(cyc)}")
+                cycle_found["flag"] = True
+            elif color.get(nxt, WHITE) == WHITE:
+                visit(nxt, stack)
+        stack.pop()
+        color[node] = BLACK
+
+    for start in sorted(graph):
+        if color[start] == WHITE:
+            visit(start, [])
+    if not cycle_found["flag"]:
+        ok("No cycle in input/output authority graph")
+
+
 def check_registered_generators(authority: dict, gen_reg: dict) -> None:
-    """Step 6: Positive verification of registered_generator entries against the registry."""
-    print("\n[6/9] Registered-generator verification")
+    """Step 6: Positive verification of registered_generator entries against the registry.
+
+    Hardening added in V21/P4B:
+      - the generator registry itself must pass its JSON Schema (enforces
+        canonical_tool_digest_sha256 pinning, no dangling tools);
+      - the canonical tool's CURRENT bytes digest must match the pinned digest
+        (a tampered/missing tool fails closed);
+      - dual-kind authorization and input/output authority cycles are rejected.
+    """
+    print("\n[6/9] Registered-generator verification & authority-contract integrity")
+    _check_generator_registry_schema(gen_reg)
     if not gen_reg.get("generators"):
         ok("No generator registry entries (none to verify)")
         return
@@ -231,6 +338,20 @@ def check_registered_generators(authority: dict, gen_reg: dict) -> None:
         # canonical_tool must match
         if item.get("canonical_tool") != entry.get("canonical_tool"):
             fail(f"{item['path']}: canonical_tool '{item.get('canonical_tool')}' != registry '{entry.get('canonical_tool')}'")
+        # canonical tool must exist on disk (a registered generator must reference a real tool)
+        tool_path = ROOT / entry["canonical_tool"]
+        if not tool_path.exists():
+            fail(f"{item['path']}: canonical_tool '{entry['canonical_tool']}' does NOT exist on disk (registry references a missing tool)")
+        else:
+            # canonical tool digest must be pinned AND match current bytes (tamper detection)
+            live_tool_digest = sha256_of(tool_path)
+            pinned = entry.get("canonical_tool_digest_sha256")
+            if not pinned:
+                fail(f"{item['path']}: registry must pin canonical_tool_digest_sha256 for '{entry['canonical_tool']}'")
+            elif live_tool_digest != pinned:
+                fail(f"{item['path']}: canonical_tool digest mismatch (live {live_tool_digest[:12]}... != pinned {str(pinned)[:12]}...) — tool tampered since registration")
+            else:
+                ok(f"{item['path']}: canonical_tool '{entry['canonical_tool']}' digest verified (tamper-checked)")
         # output path must be allowed for this generator
         if item["path"] not in entry.get("allowed_output_paths", []):
             fail(f"{item['path']}: not an allowed output for generator '{gid}' (allowed: {entry.get('allowed_output_paths')})")
@@ -252,6 +373,9 @@ def check_registered_generators(authority: dict, gen_reg: dict) -> None:
                 ok(f"{item['path']}: registered generator '{gid}' verified (digest match)")
     if not checked_any:
         ok("No registered_generator entries to verify")
+
+    # Authority-contract integrity: dual-kind authorization + cycle detection
+    _check_authority_contract_integrity(authority)
 
 
 def check_historical_records(authority: dict) -> None:

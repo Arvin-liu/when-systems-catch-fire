@@ -17,11 +17,12 @@
       "patternProperties": {
         "^[A-Za-z0-9_]+$": {
           "type": "object",
-          "required": ["generator_id", "canonical_tool", "allowed_output_paths", "required_input_authorities", "freshness_mode", "lifecycle_status", "authority_schema_version"],
+          "required": ["generator_id", "canonical_tool", "canonical_tool_digest_sha256", "allowed_output_paths", "required_input_authorities", "freshness_mode", "lifecycle_status", "authority_schema_version"],
           "additionalProperties": false,
           "properties": {
             "generator_id": {"type": "string", "minLength": 1},
             "canonical_tool": {"type": "string", "minLength": 1},
+            "canonical_tool_digest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$", "description": "SHA-256 of the canonical_tool's current bytes. The validator re-derives this and fails closed if the tool was tampered with since registration."},
             "allowed_output_paths": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
             "required_input_authorities": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
             "freshness_mode": {"type": "string", "enum": ["byte_level_recompute", "timestamp_based", "semantic_diff"]},

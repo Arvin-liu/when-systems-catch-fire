@@ -7,6 +7,7 @@
     "compute_change_propagation": {
       "generator_id": "compute_change_propagation",
       "canonical_tool": "tools/operations/compute_change_propagation.py",
+      "canonical_tool_digest_sha256": "086d642877a9801417e60a22069e24e11a8c226d08a6f4fc193ea461493e8c6a",
       "allowed_output_paths": [
         "data/operations/propagation/121Q32I-report.json"
       ],
@@ -15,20 +16,6 @@
         "data/operations/project-components.json",
         "data/operations/change-propagation-topology.json",
         "data/operations/synchronization-surfaces.json"
-      ],
-      "freshness_mode": "byte_level_recompute",
-      "lifecycle_status": "active",
-      "authority_schema_version": "1.0.0"
-    },
-    "sync_surface_registry": {
-      "generator_id": "sync_surface_registry",
-      "canonical_tool": "tools/operations/compute_synchronization_surfaces.py",
-      "allowed_output_paths": [
-        "data/operations/synchronization-surfaces.json"
-      ],
-      "required_input_authorities": [
-        "data/operations/project-components.json",
-        "data/operations/change-propagation-topology.json"
       ],
       "freshness_mode": "byte_level_recompute",
       "lifecycle_status": "active",

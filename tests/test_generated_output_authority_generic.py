@@ -59,6 +59,7 @@ def build_synth_iteration(tag: str, tamper: bool):
             "generators": {
                 "synth_gen": {
                     "canonical_tool": "tools/operations/synth_tool.py",
+                    "canonical_tool_digest_sha256": _sha256(tmp / "tools" / "operations" / "synth_tool.py"),
                     "allowed_output_paths": [f"data/synth/{tag}-out2.json"],
                     "required_input_authorities": ["data/operations/project-components.json"],
                 }
