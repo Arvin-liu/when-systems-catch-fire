@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.0",
+    "component_registry_version": "1.1.1",
     "topology_version": "1.1.0",
     "layout_version": "1.1.0"
   },
