@@ -12,15 +12,32 @@ These prove the gate can no longer be tricked into recording a fail-open decisio
   - ai_generated_content maps to level 5 / BLOCK_PENDING_COUNSEL
 """
 
+import json
 import os
 import sys
 import unittest
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TOOLS_DIR = os.path.join(REPO_ROOT, "tools", "governance")
+SRC_REG_PATH = os.path.join(REPO_ROOT, "data", "governance", "source-rights-registry.json")
 sys.path.insert(0, TOOLS_DIR)
 
 from fail_closed_publication_gate import FailClosedPublicationGate  # noqa: E402
+
+
+def _pinned_digest_for(category):
+    """Return the registry-pinned content_digest_sha256 for a VERIFIED source category,
+    else None. Lets _good_decision supply a digest that passes the gate's provenance
+    verification so each test exercises its intended assertion (not a digest-mismatch pre-emption)."""
+    try:
+        with open(SRC_REG_PATH, "r", encoding="utf-8") as f:
+            reg = json.load(f)
+        prov = reg.get("categories", {}).get(category, {}).get("provenance", {})
+        if prov.get("verification_status") == "VERIFIED":
+            return prov.get("content_digest_sha256")
+    except Exception:
+        pass
+    return None
 
 
 SCHEMA_VERSION = "governance-gate-v1"
@@ -38,10 +55,10 @@ def _good_decision(**overrides):
     }
     d.update(overrides)
     # Verified provenance reference (source_rights_entry_id + content_digest_sha256).
-    # All categories used by these tests have a null registry digest, so the digest match
-    # is not enforced and provenance_verified resolves to False (honest downgrade).
+    # For VERIFIED sources with a pinned registry digest, supply the real digest so the
+    # gate's provenance verification passes and the test exercises its intended assertion.
     d.setdefault("source_rights_entry_id", d["source_category"])
-    d.setdefault("content_digest_sha256", "0" * 64)
+    d.setdefault("content_digest_sha256", _pinned_digest_for(d["source_category"]) or "0" * 64)
     return d
 
 

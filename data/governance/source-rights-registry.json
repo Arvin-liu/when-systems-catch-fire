@@ -38,8 +38,8 @@
         "retrieved_date": "2026-07-20",
         "canonical_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
         "source_authority": "Creative Commons",
-        "version_id": null,
-        "content_digest_sha256": null,
+        "version_id": "4.0",
+        "content_digest_sha256": "6d55b998ed5c54f43426d059a8c549ed58a3321e5463e6a6af1c6b56ab78c333",
         "verification_status": "VERIFIED"
       }
     },
@@ -56,8 +56,8 @@
         "retrieved_date": "2026-07-20",
         "canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
         "source_authority": "Creative Commons",
-        "version_id": null,
-        "content_digest_sha256": null,
+        "version_id": "4.0",
+        "content_digest_sha256": "b0eb998818431962b58eab36c2d8c475ab0300945be2af833492b5bc45895c27",
         "verification_status": "VERIFIED"
       }
     },
@@ -74,8 +74,8 @@
         "retrieved_date": "2026-07-20",
         "canonical_url": "https://www.gnu.org/licenses/agpl-3.0.txt",
         "source_authority": "Free Software Foundation",
-        "version_id": null,
-        "content_digest_sha256": null,
+        "version_id": "3.0",
+        "content_digest_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
         "verification_status": "VERIFIED"
       }
     },
@@ -92,8 +92,8 @@
         "retrieved_date": "2026-07-20",
         "canonical_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
         "source_authority": "Apache Software Foundation",
-        "version_id": null,
-        "content_digest_sha256": null,
+        "version_id": "2.0",
+        "content_digest_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
         "verification_status": "VERIFIED"
       }
     },
@@ -110,8 +110,8 @@
         "retrieved_date": "2026-07-20",
         "canonical_url": "https://mariadb.com/bsl11/",
         "source_authority": "MariaDB (Business Source License)",
-        "version_id": null,
-        "content_digest_sha256": null,
+        "version_id": "1.1",
+        "content_digest_sha256": "485cce320857e6394e867142716774bf362801201cdc6744a6bbbf9c641c4d06",
         "verification_status": "VERIFIED"
       }
     },
@@ -235,7 +235,7 @@
         "canonical_url": "https://docs.github.com/en/site-policy/content-removal-policies/dmca-takedown-policy",
         "source_authority": "Platform operator (e.g., GitHub)",
         "version_id": null,
-        "content_digest_sha256": null,
+        "content_digest_sha256": "a3b01a5c0c92148d546f32f73582831547e3485f63fac5606b0b838136ca35ca",
         "verification_status": "VERIFIED"
       }
     },
@@ -276,7 +276,8 @@
         "source_authority": "Project (this repository)",
         "version_id": null,
         "content_digest_sha256": null,
-        "verification_status": "VERIFIED"
+        "verification_status": "OFFICIAL_TEXT_NOT_VERIFIED",
+        "notes": "Own project content; no external canonical official text is pinned. Authorship is inherent, not an external-source digest match."
       }
     }
   },

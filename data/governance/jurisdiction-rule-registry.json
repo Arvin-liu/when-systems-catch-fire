@@ -22,10 +22,10 @@
       "currentness": "CURRENT",
       "verification_status": "VERIFIED",
       "notes": "Universal baseline; all surveyed jurisdictions are signatories.",
-      "official_source": "https://www.wipo.int/treaties/en/ip/berne/docs/textindex-en.htm",
+      "official_source": "https://www.wipo.int/treaties/en/ip/berne/",
       "provenance": {
         "retrieved_date": "2026-07-20",
-        "canonical_url": "https://www.wipo.int/treaties/en/ip/berne/docs/textindex-en.htm",
+        "canonical_url": "https://www.wipo.int/treaties/en/ip/berne/",
         "source_authority": "WIPO",
         "version_id": "CURRENT",
         "content_digest_sha256": null,

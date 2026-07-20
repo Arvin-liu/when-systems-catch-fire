@@ -106,6 +106,57 @@ class SourceRightsGateConsistencyTests(unittest.TestCase):
                 self.assertIn(fld, p, f"category {cat} provenance missing {fld}")
             self.assertIn(p["verification_status"], VALID_VERIFICATION)
 
+    # ---- P3 (F8): VERIFIED official sources must pin a real content digest ------
+    def test_verified_source_rights_must_have_pinned_digest(self):
+        """F8 closure: a category claimed VERIFIED must carry a non-null, well-formed
+        pinned content_digest_sha256 (no false VERIFIED claim without an authenticatable text)."""
+        for cat, c in SRC_REG["categories"].items():
+            if c["provenance"]["verification_status"] == "VERIFIED":
+                digest = c["provenance"].get("content_digest_sha256")
+                self.assertIsNotNone(
+                    digest,
+                    f"category {cat} is VERIFIED but has no pinned content_digest_sha256 (F8 violation)",
+                )
+                self.assertRegex(
+                    digest,
+                    r"^[0-9a-f]{64}$",
+                    f"category {cat} pinned digest is not a 64-char hex SHA-256: {digest!r}",
+                )
+
+    def test_verified_source_gate_enforces_real_pinned_digest(self):
+        """Integration: a VERIFIED category's pinned real digest is enforced end-to-end
+        by the fail-closed gate (correct digest accepted+verified; tampered digest rejected)."""
+        gate = PublicationGate()
+        cat = "open_license_cc_by"
+        pinned = SRC_REG["categories"][cat]["provenance"]["content_digest_sha256"]
+        ok = gate.record_gate_decision({
+            "material_id": "F8-VERIFIED-OK",
+            "source_category": cat,
+            "gate_decision": "PASS_WITH_COMPLIANCE",
+            "classification_level": 2,
+            "source_rights_entry_id": cat,
+            "content_digest_sha256": pinned,
+            "reason": "CC BY 4.0 official text digest matches pinned registry digest",
+            "rule_ref": "source-rights-registry:open_license_cc_by",
+            "schema_version": "governance-gate-v1",
+        })
+        self.assertTrue(ok["success"], f"VERIFIED decision with correct digest must be recorded: {ok}")
+
+        bad = gate.record_gate_decision({
+            "material_id": "F8-VERIFIED-BAD",
+            "source_category": cat,
+            "gate_decision": "PASS_WITH_COMPLIANCE",
+            "classification_level": 2,
+            "source_rights_entry_id": cat,
+            "content_digest_sha256": "0" * 64,
+            "reason": "tampered digest",
+            "rule_ref": "source-rights-registry:open_license_cc_by",
+            "schema_version": "governance-gate-v1",
+        })
+        self.assertFalse(bad["success"], "VERIFIED decision with tampered digest must be rejected")
+        self.assertTrue(any("digest" in e.lower() for e in bad.get("errors", [])),
+                        f"error should cite digest mismatch: {bad}")
+
     def test_every_jurisdiction_treaty_platform_has_provenance(self):
         for grp in ("treaty_layer", "jurisdictions", "platform_policy"):
             for key, e in JUR_REG[grp].items():
