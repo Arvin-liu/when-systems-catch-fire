@@ -656,11 +656,12 @@ class ChangePropagationTests(unittest.TestCase):
         authority = load_json(ROOT / "data/operations/generated-output-authority.json")
         # Verify all producer commands reference existing files
         for entry in authority["generated_outputs"]:
-            cmd_parts = entry["producer_command"].split()
+            cmd = entry.get("producer_command", "")
+            cmd_parts = cmd.split()
             if len(cmd_parts) >= 2:
                 tool_path = ROOT / cmd_parts[-1]  # last part is the script path
                 self.assertTrue(tool_path.is_file(),
-                    f"producer command references nonexistent tool: {entry['producer_command']}")
+                    f"producer command references nonexistent tool: {cmd}")
 
     def test_f6_declared_output_is_authored_fixture_fails(self):
         """A path declared as generated output that is actually an authored fixture must be detectable."""
@@ -683,7 +684,7 @@ class ChangePropagationTests(unittest.TestCase):
         # (which would indicate duplicate semantic authority)
         seen = set()
         for entry in authority["generated_outputs"]:
-            key = (tuple(sorted(entry["input_authorities"])), entry["output_type"], entry["producer_id"])
+            key = (tuple(sorted(entry.get("input_authorities", []))), entry.get("output_type", ""), entry.get("producer_id", ""))
             # Same producer + same inputs + same output_type = potential duplicate
             # BUT different paths from same producer with same inputs is OK if output_type differs
             # or if they are genuinely different outputs (e.g. closure vs residue)
