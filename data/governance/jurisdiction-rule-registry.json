@@ -22,7 +22,15 @@
       "currentness": "CURRENT",
       "verification_status": "VERIFIED",
       "notes": "Universal baseline; all surveyed jurisdictions are signatories.",
-      "official_source": "https://www.wipo.int/treaties/en/ip/berne/docs/textindex-en.htm"
+      "official_source": "https://www.wipo.int/treaties/en/ip/berne/docs/textindex-en.htm",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.wipo.int/treaties/en/ip/berne/docs/textindex-en.htm",
+        "source_authority": "WIPO",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "WCT_1996": {
       "id": "TREATY-WCT-1996",
@@ -37,7 +45,15 @@
         "Rights management information obligation (Art. 12)"
       ],
       "currentness": "CURRENT",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.wipo.int/en/web/treaties/ip/wct/index",
+        "source_authority": "WIPO",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "TRIPS_Copyright": {
       "id": "TREATY-TRIPS-1994",
@@ -51,7 +67,15 @@
         "Three-step test codified: limited exceptions, no conflict with normal exploitation, no unreasonable prejudice to legitimate interests"
       ],
       "currentness": "CURRENT (amended 23 Jan 2017)",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.wipo.int/wipolex/en/treaties/textdetails/18587",
+        "source_authority": "WTO / WIPO",
+        "version_id": "CURRENT (amended 23 Jan 2017)",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     }
   },
   "jurisdictions": {
@@ -85,11 +109,26 @@
         "source_url": "https://uscode.house.gov/view.xhtml?edition=prelim&f=treesort&jumpTo=true&num=0&req=(title:17+section:107+edition:prelim)",
         "currentness": "CURRENT"
       },
-      "contract_override": "FAIR_USE_NOT_WAIVABLE_BY_CONTRACT (case law; fair use is a user right, not waivable)",
+      "contract_override": "FAIR_USE_SUBJECT_TO_CONTRACT_AND_ANTICIRCUMVENTION_LIMITS (contractual/access terms and DMCA 17 U.S.C. §1201 anticircumvention may constrain reliance on fair use; jurisdictional analysis required)",
       "verification_status": "VERIFIED",
       "sovereignty_position": "NOT_ASSERTED",
       "legal_regime_scope": "Copyright Law of the United States (17 U.S.C.), as enacted and enforceable under U.S. federal law",
-      "territorial_law_scope": "United States (federal territory and applicable state extensions)"
+      "territorial_law_scope": "United States (federal territory and applicable state extensions)",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.copyright.gov/title17/title17.pdf",
+        "source_authority": "U.S. Copyright Office / Library of Congress",
+        "version_id": "CURRENT (2024 Main Ed. updated 1/6/2025)",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      },
+      "contract_override_provenance": {
+        "source_authority": "U.S. Copyright Office; 17 U.S.C. §107 (fair use) and §1201 (anticircumvention)",
+        "canonical_url": "https://www.copyright.gov/fair-use/",
+        "retrieved_date": "2026-07-20",
+        "verification_status": "LEGAL_REVIEW_REQUIRED",
+        "note": "US fair use is a user right shaped by statute and case law; it is not an absolute, non-waivable right in every context (license/access contracts and §1201 can limit practical reliance on fair use)."
+      }
     },
     "EU": {
       "id": "JUR-EU",
@@ -122,7 +161,15 @@
       "verification_status": "VERIFIED",
       "sovereignty_position": "NOT_ASSERTED",
       "legal_regime_scope": "Directive (EU) 2019/790 (DSM Directive) and its member-state transpositions",
-      "territorial_law_scope": "European Union member states (as transposed into national law)"
+      "territorial_law_scope": "European Union member states (as transposed into national law)",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://eur-lex.europa.eu/eli/dir/2019/790/oj/eng",
+        "source_authority": "Publications Office of the European Union (EUR-Lex)",
+        "version_id": "CURRENT (transposition deadline 7 June 2021)",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "UK": {
       "id": "JUR-UK",
@@ -142,7 +189,15 @@
       "verification_status": "VERIFIED",
       "sovereignty_position": "NOT_ASSERTED",
       "legal_regime_scope": "Copyright, Designs and Patents Act 1988 (CDPA 1988)",
-      "territorial_law_scope": "United Kingdom"
+      "territorial_law_scope": "United Kingdom",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.legislation.gov.uk/ukpga/1988/48/part/I/chapter/III/enacted",
+        "source_authority": "UK National Archives (legislation.gov.uk)",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "CA": {
       "id": "JUR-CA",
@@ -163,7 +218,15 @@
       "verification_status": "VERIFIED",
       "sovereignty_position": "NOT_ASSERTED",
       "legal_regime_scope": "Copyright Act, R.S.C. 1985, c. C-42",
-      "territorial_law_scope": "Canada"
+      "territorial_law_scope": "Canada",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://laws-lois.justice.gc.ca/eng/acts/C-42/fulltext.html",
+        "source_authority": "Justice Laws Website, Government of Canada",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "AU": {
       "id": "JUR-AU",
@@ -185,7 +248,15 @@
       "verification_status": "VERIFIED",
       "sovereignty_position": "NOT_ASSERTED",
       "legal_regime_scope": "Copyright Act 1968 (Cth)",
-      "territorial_law_scope": "Australia"
+      "territorial_law_scope": "Australia",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.austlii.edu.au/au/legis/cth/consol_act/ca1968133/",
+        "source_authority": "Australasian Legal Information Institute (AustLII)",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "JP": {
       "id": "JUR-JP",
@@ -215,7 +286,15 @@
       "verification_status": "VERIFIED",
       "sovereignty_position": "NOT_ASSERTED",
       "legal_regime_scope": "Copyright Act (Act No. 48 of 1970)",
-      "territorial_law_scope": "Japan"
+      "territorial_law_scope": "Japan",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.japaneselawtranslation.go.jp/en/laws/view/3379",
+        "source_authority": "Japanese Law Translation Database System",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "SG": {
       "id": "JUR-SG",
@@ -231,7 +310,15 @@
       "verification_status": "VERIFIED",
       "sovereignty_position": "NOT_ASSERTED",
       "legal_regime_scope": "Copyright Act 2021 (Act No. 22 of 2021)",
-      "territorial_law_scope": "Singapore"
+      "territorial_law_scope": "Singapore",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://sso.agc.gov.sg/Act/CA2021",
+        "source_authority": "Singapore Statutes Online (Attorney-General's Chambers)",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "IN": {
       "id": "JUR-IN",
@@ -255,7 +342,15 @@
       "verification_status": "VERIFIED",
       "sovereignty_position": "NOT_ASSERTED",
       "legal_regime_scope": "The Copyright Act, 1957 (Act No. 14 of 1957)",
-      "territorial_law_scope": "India"
+      "territorial_law_scope": "India",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://copyright.gov.in/Copyright_Act_1957/chapter_xi.html",
+        "source_authority": "Copyright Office, Government of India",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "CN": {
       "id": "JUR-CN",
@@ -273,7 +368,15 @@
       "sovereignty_position": "NOT_ASSERTED",
       "legal_regime_scope": "Copyright Law of the People's Republic of China (2020 Amendment)",
       "territorial_law_scope": "Mainland China (territory of the People's Republic of China)",
-      "sovereignty_note": "Entry registers the Copyright Law of the People's Republic of China as applied within mainland China. It asserts no position on the sovereignty or political status of any other territory."
+      "sovereignty_note": "Entry registers the Copyright Law of the People's Republic of China as applied within mainland China. It asserts no position on the sovereignty or political status of any other territory.",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.npc.gov.cn/npc/c30834/202011/a5c0e20e4861493ba87eb56e3b0a11f7.shtml",
+        "source_authority": "National People's Congress of the PRC",
+        "version_id": "CURRENT (2020 amendment effective June 1, 2021)",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "TW": {
       "id": "JUR-TW",
@@ -293,7 +396,15 @@
       "sovereignty_position": "NOT_ASSERTED",
       "legal_regime_scope": "Copyright Act of the Republic of China, as applied within the Taiwan area",
       "territorial_law_scope": "Taiwan area",
-      "sovereignty_note": "Entry registers the copyright legal regime applicable within the Taiwan area for technical rule modeling only. It asserts no position on sovereignty or political status. The applicable rules differ from the PRC Copyright Law and are preserved as a distinct legal-regime scope."
+      "sovereignty_note": "Entry registers the copyright legal regime applicable within the Taiwan area for technical rule modeling only. It asserts no position on sovereignty or political status. The applicable rules differ from the PRC Copyright Law and are preserved as a distinct legal-regime scope.",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://law.moj.gov.tw/ENG/LawClass/LawAll.aspx?pcode=D0090118",
+        "source_authority": "Ministry of Justice, Taiwan (MoJ Law Bank)",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     }
   },
   "platform_policy": {
@@ -308,7 +419,15 @@
         "Repository may be disabled after multiple violations"
       ],
       "currentness": "CURRENT",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://docs.github.com/en/site-policy/content-removal-policies/dmca-takedown-policy",
+        "source_authority": "GitHub",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "GitHub_DMCA_Guide": {
       "id": "PLATFORM-GITHUB-DMCA-GUIDE",
@@ -320,13 +439,29 @@
         "Counter-notices processed under 17 U.S.C. § 512(g)"
       ],
       "currentness": "CURRENT",
-      "verification_status": "VERIFIED"
+      "verification_status": "VERIFIED",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://docs.github.com/en/site-policy/content-removal-policies/guide-to-submitting-a-dmca-takedown-notice",
+        "source_authority": "GitHub",
+        "version_id": "CURRENT",
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "GitHub_dmca_repository": {
       "id": "PLATFORM-GITHUB-DMCA-REPO",
       "title": "github/dmca — Repository with text of DMCA takedown notices as received",
       "url": "https://github.com/github/dmca",
-      "note": "GitHub publishes received takedown notices publicly; does not endorse assertions in notices"
+      "note": "GitHub publishes received takedown notices publicly; does not endorse assertions in notices",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://github.com/github/dmca",
+        "source_authority": "GitHub",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     }
   },
   "summary": {
@@ -362,7 +497,8 @@
     "contract_override_notable": {
       "EU_Art3_unenforceable": "Contractual provisions contrary to Article 3 TDM exception are unenforceable",
       "EU_Art5_unenforceable": "Contractual provisions contrary to Article 5 exceptions are unenforceable",
-      "US_fair_use_non_waivable": "Fair use is a user right, not waivable by contract (case law)"
+      "US_fair_use_non_waivable": "Fair use is a user right shaped by 17 U.S.C. §107 and case law; it is not an absolute, contract-proof right in all contexts (contractual/access terms and DMCA §1201 may constrain reliance). LEGAL_REVIEW_REQUIRED.",
+      "US_fair_use_non_waivable_status": "LEGAL_REVIEW_REQUIRED"
     },
     "modeling_note": "total_jurisdictions counts distinct applicable legal-regime scopes modeled for technical rights-governance; it is NOT a count of sovereign states. Every entry carries sovereignty_position: NOT_ASSERTED."
   },

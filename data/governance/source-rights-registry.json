@@ -14,7 +14,15 @@
         "US government works (17 USC 105)",
         "Pre-1929 US works",
         "Explicitly dedicated works (CC0)"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": null,
+        "source_authority": "Mixed (expired / dedicated / never existed)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "OFFICIAL_TEXT_NOT_VERIFIED"
+      }
     },
     "open_license_cc_by": {
       "id": "SRC-CCBY",
@@ -25,7 +33,15 @@
       "examples": [
         "CC BY 4.0",
         "CC BY-SA 4.0"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+        "source_authority": "Creative Commons",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "open_license_cc_by_nc_sa": {
       "id": "SRC-CCBYNCSA",
@@ -35,7 +51,15 @@
       "governance_action": "VERIFY_NON_COMMERCIAL_USE_OR_SEEK_PERMISSION",
       "examples": [
         "CC BY-NC-SA 4.0 (used by this project for documents)"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
+        "source_authority": "Creative Commons",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "open_license_agpl": {
       "id": "SRC-AGPL",
@@ -45,7 +69,15 @@
       "governance_action": "COMPLY_WITH_COPYRIGHT_OBLIGATIONS",
       "examples": [
         "AGPL-3.0 (project software post-change-date)"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.gnu.org/licenses/agpl-3.0.txt",
+        "source_authority": "Free Software Foundation",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "open_license_apache": {
       "id": "SRC-APACHE",
@@ -55,7 +87,15 @@
       "governance_action": "COMPLY_WITH_NOTICE_REQUIREMENTS",
       "examples": [
         "Apache 2.0 (used by this project for public interfaces/schema)"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+        "source_authority": "Apache Software Foundation",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "open_license_busl": {
       "id": "SRC-BUSL",
@@ -65,7 +105,15 @@
       "governance_action": "VERIFY_LICENSE_SCOPE_AND_CHANGE_DATE",
       "examples": [
         "BUSL-1.1 (project core software pre-change-date)"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://mariadb.com/bsl11/",
+        "source_authority": "MariaDB (Business Source License)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "third_party_course_material": {
       "id": "SRC-COURSE",
@@ -88,7 +136,15 @@
         "得到大脑 (Dedao) course notes",
         "付费课程材料",
         "付费教材章节"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": null,
+        "source_authority": "Rights holder / publisher (case-specific)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "OFFICIAL_TEXT_NOT_VERIFIED"
+      }
     },
     "third_party_paywall_article": {
       "id": "SRC-PAYWALL",
@@ -106,7 +162,15 @@
         "Source citation with provenance",
         "Brief quotation for criticism/review",
         "Analysis and commentary"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": null,
+        "source_authority": "Publisher / author (case-specific)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "OFFICIAL_TEXT_NOT_VERIFIED"
+      }
     },
     "third_party_private_note": {
       "id": "SRC-PRIVATE",
@@ -124,7 +188,15 @@
       "permitted_actions": [
         "source_citation_only",
         "internal_reference_for_provenance"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": null,
+        "source_authority": "Rights holder / access provider (case-specific)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "OFFICIAL_TEXT_NOT_VERIFIED"
+      }
     },
     "government_publication": {
       "id": "SRC-GOV",
@@ -138,7 +210,15 @@
         "US Code",
         "Canadian federal statutes",
         "Singapore Statutes Online"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.govinfo.gov/",
+        "source_authority": "Official government publisher (jurisdiction-specific)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "LEGAL_REVIEW_REQUIRED"
+      }
     },
     "platform_policy_document": {
       "id": "SRC-PLATFORM",
@@ -149,7 +229,15 @@
       "examples": [
         "GitHub DMCA Takedown Policy",
         "GitHub Terms of Service"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://docs.github.com/en/site-policy/content-removal-policies/dmca-takedown-policy",
+        "source_authority": "Platform operator (e.g., GitHub)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     },
     "ai_generated_content": {
       "id": "SRC-AI",
@@ -158,7 +246,15 @@
       "rights_status": "UNCERTAIN_U_S jurisprudence_pending",
       "governance_action": "COUNSEL_REQUIRED_FOR_COMMERCIAL_USE",
       "risk_level": "MEDIUM",
-      "notes": "US Copyright Office has ruled that purely AI-generated works lack human authorship and are not copyrightable. However, human-authored elements mixed with AI output may be protectable. This area is evolving."
+      "notes": "US Copyright Office has ruled that purely AI-generated works lack human authorship and are not copyrightable. However, human-authored elements mixed with AI output may be protectable. This area is evolving.",
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://www.copyright.gov/ai/",
+        "source_authority": "U.S. Copyright Office",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "LEGAL_REVIEW_REQUIRED"
+      }
     },
     "project_original_content": {
       "id": "SRC-PROJECT",
@@ -173,7 +269,15 @@
         "FOUNDATION.md",
         "Governance documents",
         "Original analysis reports"
-      ]
+      ],
+      "provenance": {
+        "retrieved_date": "2026-07-20",
+        "canonical_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
+        "source_authority": "Project (this repository)",
+        "version_id": null,
+        "content_digest_sha256": null,
+        "verification_status": "VERIFIED"
+      }
     }
   },
   "governance_matrix": {

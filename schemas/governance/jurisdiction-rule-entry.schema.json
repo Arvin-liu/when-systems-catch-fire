@@ -77,6 +77,34 @@
     "sovereignty_note": {
       "type": "string",
       "description": "Optional clarification that this entry models a legal regime in scope and asserts no sovereignty or political position."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": ["VERIFIED", "OFFICIAL_TEXT_NOT_VERIFIED", "LEGAL_REVIEW_REQUIRED", "UNVERIFIED", "COUNSEL_REQUIRED", "PERMISSION_REQUIRED", "INSUFFICIENT_INFORMATION", "BLOCKED_PENDING_EVIDENCE"],
+      "description": "Verification status of the official-source rule. OFFICIAL_TEXT_NOT_VERIFIED / LEGAL_REVIEW_REQUIRED must be used when full text or a stable version cannot be obtained."
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Auditable official-source provenance for the rule (P5).",
+      "properties": {
+        "retrieved_date": {"type": ["string", "null"]},
+        "canonical_url": {"type": ["string", "null"]},
+        "source_authority": {"type": ["string", "null"]},
+        "version_id": {"type": ["string", "null"]},
+        "content_digest_sha256": {"type": ["string", "null"]},
+        "verification_status": {"type": "string"}
+      }
+    },
+    "contract_override_provenance": {
+      "type": "object",
+      "description": "Provenance for a downgraded (bounded) contract-override claim, e.g. the US fair-use claim no longer asserted as absolute/non-waivable.",
+      "properties": {
+        "source_authority": {"type": "string"},
+        "canonical_url": {"type": "string"},
+        "retrieved_date": {"type": "string"},
+        "verification_status": {"type": "string"},
+        "note": {"type": "string"}
+      }
     }
   }
 }
