@@ -48,6 +48,7 @@
     "tests/test_diff_coverage_gate.py",
     "tests/test_era_resolver_generalization.py",
     "tests/test_generated_output_authority_negative.py",
+    "tests/test_generated_output_authority_generic.py",
     "tests/test_human_front_door.py",
     "tests/test_iteration_sync.py",
     "tests/test_jurisdiction_sovereignty_neutral.py",

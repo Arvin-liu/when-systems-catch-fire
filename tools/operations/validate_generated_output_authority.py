@@ -34,14 +34,16 @@ ROOT = Path(__file__).resolve().parent.parent.parent  # repo root
 AUTHORITY_PATH = ROOT / "data" / "operations" / "generated-output-authority.json"
 SCHEMA_PATH = ROOT / "schemas" / "operations" / "generated-output-authority.schema.json"
 GENERATOR_REGISTRY_PATH = ROOT / "data" / "operations" / "generator-registry.json"
+# NOTE: There is intentionally NO silent default request. The validator must be told
+# which iteration to validate via --request or --iteration-id; it never assumes Q32I.
 REQUEST_PATH = ROOT / "data" / "operations" / "propagation" / "121Q32I-request.json"
-# Kept ONLY as a last-resort fallback. The actual base/era are derived per-request from
-# the iteration manifest via tools/operations/era_resolver.py (no hardcoded task/SHA in
-# the production contract path).
+# Retained only as a documented example path; NOT used as a default (see P5 / N9 fix).
+# The actual base/era are derived per-request from the iteration manifest via
+# tools/operations/era_resolver.py (no hardcoded task/SHA in the production contract path).
 BASE_MAIN = "4097e610eebfc65c739df4fe7d2900161c204a9d"
 
 try:
-    from era_resolver import resolve_era_for_request
+    from era_resolver import resolve_era, resolve_era_for_request
 except ImportError:  # allow running from repo root or tools/operations
     import importlib.util
 
@@ -50,6 +52,7 @@ except ImportError:  # allow running from repo root or tools/operations
     )
     _mod = importlib.util.module_from_spec(_spec)
     _spec.loader.exec_module(_mod)
+    resolve_era = _mod.resolve_era
     resolve_era_for_request = _mod.resolve_era_for_request
 
 failures = []
@@ -341,24 +344,36 @@ def check_diff_coverage(authority: dict, request: dict, base: str, era_ref: str 
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Generated Output Authority Validator")
+    ap = argparse.ArgumentParser(description="Generated Output Authority Validator (iteration-agnostic)")
     ap.add_argument("--authority", default=str(AUTHORITY_PATH), help="Authority JSON path")
-    ap.add_argument("--request", default=str(REQUEST_PATH), help="Request JSON path (seeds)")
+    ap.add_argument("--request", default=None, help="Request JSON path (seeds). Required for diff-coverage; if omitted, only registry structure is validated.")
+    ap.add_argument("--iteration-id", default=None, help="Iteration task id (e.g. 121Q33); derives request path + era from its manifest. Generic alternative to --request.")
     ap.add_argument("--base", default=None, help="Base commit for diff coverage (defaults to request base_identity or BASE_MAIN)")
     ap.add_argument("--era-ref", default=None, help="Era reference commit; diff window becomes base..era_ref (frozen-era authority)")
     ap.add_argument("--generator-registry", default=str(GENERATOR_REGISTRY_PATH), help="Generator registry JSON path")
     args = ap.parse_args()
 
     authority_path = Path(args.authority)
-    request_path = Path(args.request)
     gen_reg_path = Path(args.generator_registry)
+
+    # Resolve the request path generically. No silent Q32I default (N9 fix): the caller
+    # must supply --request or --iteration-id; otherwise only registry structure is checked.
+    request_path = None
+    if args.iteration_id:
+        era = resolve_era(ROOT, args.iteration_id)
+        if era is None:
+            print(f"\nFATAL: No iteration manifest resolvable for --iteration-id {args.iteration_id!r}")
+            return 1
+        request_path = ROOT / "data" / "operations" / "propagation" / f"{args.iteration_id}-request.json"
+    elif args.request:
+        request_path = Path(args.request)
 
     print("=" * 60)
     print("Generated Output Authority Validator")
     print("=" * 60)
     print(f"Authority: {authority_path}")
     print(f"Schema:    {SCHEMA_PATH}")
-    print(f"Request:   {request_path}")
+    print(f"Request:   {request_path or '(none — structure-only mode)'}")
 
     if not authority_path.exists():
         print(f"\nFATAL: Authority file not found: {authority_path}")
@@ -366,20 +381,27 @@ def main() -> int:
     if not SCHEMA_PATH.exists():
         print(f"\nFATAL: Schema file not found: {SCHEMA_PATH}")
         return 1
-    if not request_path.exists():
-        print(f"\nFATAL: Request file not found: {request_path}")
-        return 1
 
     authority = load_json(authority_path)
-    request = load_json(request_path)
     gen_reg = load_json(gen_reg_path) if gen_reg_path.exists() else {"generators": {}}
+
+    if request_path is None:
+        print("\nNOTE: No --request / --iteration-id supplied; diff-coverage (seeds ∪ generated) is SKIPPED.")
+        print("      Validating global authority registry structure only (schema, files, generators, history).")
+        print("      Pass --request <path> or --iteration-id <task> for full coverage validation.")
+        request = None
+    else:
+        if not request_path.exists():
+            print(f"\nFATAL: Request file not found: {request_path}")
+            return 1
+        request = load_json(request_path)
 
     base = args.base
     era_ref = args.era_ref
     # Derive base/era from the request's iteration manifest (generic era resolver) when
     # not explicitly overridden on the CLI. A sealed iteration is bounded to its merge
     # commit; a live candidate validates against base..HEAD. No hardcoded task/SHA.
-    if base is None or era_ref is None:
+    if request is not None and (base is None or era_ref is None):
         era = resolve_era_for_request(ROOT, request)
         if era:
             if base is None:
@@ -387,7 +409,7 @@ def main() -> int:
             if era_ref is None:
                 era_ref = era["era_ref"]
     if base is None:
-        base = request.get("base_identity") or BASE_MAIN
+        base = (request.get("base_identity") if request else None) or BASE_MAIN
     print(f"Base:      {base}")
     print(f"Era ref:   {era_ref or 'HEAD (live)'}")
 
@@ -398,7 +420,11 @@ def main() -> int:
     check_duplicate_semantic_authority(authority)
     check_registered_generators(authority, gen_reg)
     check_historical_records(authority)
-    check_diff_coverage(authority, request, base, era_ref)
+    if request is not None:
+        check_diff_coverage(authority, request, base, era_ref)
+    else:
+        print("\n[8/9] Diff coverage SKIPPED (no request provided)")
+        print("[9/9] Seed/generated disjointness SKIPPED (no request provided)")
 
     print("\n" + "=" * 60)
     if failures:
