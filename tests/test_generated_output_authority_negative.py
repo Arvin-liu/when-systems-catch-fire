@@ -55,16 +55,20 @@ class GeneratedOutputAuthorityNegativeTests(unittest.TestCase):
         """The real Q32 authority (with registered_generator entries) must pass schema validation."""
         import jsonschema
         from jsonschema import Draft202012Validator
-        auth = json.load(open(os.path.join(REPO_ROOT, "data", "operations", "generated-output-authority.json"), encoding="utf-8"))
-        schema = json.load(open(os.path.join(REPO_ROOT, "schemas", "operations", "generated-output-authority.schema.json"), encoding="utf-8"))
+        with open(os.path.join(REPO_ROOT, "data", "operations", "generated-output-authority.json"), encoding="utf-8") as _f:
+            auth = json.load(_f)
+        with open(os.path.join(REPO_ROOT, "schemas", "operations", "generated-output-authority.schema.json"), encoding="utf-8") as _f:
+            schema = json.load(_f)
         errs = list(Draft202012Validator(schema).iter_errors(auth))
         self.assertEqual(errs, [], f"Q32 authority schema errors: {[e.message for e in errs]}")
 
     def test_generator_registry_is_schema_valid(self):
         import jsonschema
         from jsonschema import Draft202012Validator
-        reg = json.load(open(GEN_REG, encoding="utf-8"))
-        schema = json.load(open(os.path.join(REPO_ROOT, "schemas", "operations", "generator-registry.schema.json"), encoding="utf-8"))
+        with open(GEN_REG, encoding="utf-8") as _f:
+            reg = json.load(_f)
+        with open(os.path.join(REPO_ROOT, "schemas", "operations", "generator-registry.schema.json"), encoding="utf-8") as _f:
+            schema = json.load(_f)
         errs = list(Draft202012Validator(schema).iter_errors(reg))
         self.assertEqual(errs, [], f"Generator registry schema errors: {[e.message for e in errs]}")
 

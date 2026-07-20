@@ -12,7 +12,22 @@
     },
     "source_category": {
       "type": "string",
-      "description": "Source category from source-rights-registry"
+      "description": "Source category from source-rights-registry",
+      "enum": [
+        "public_domain",
+        "open_license_cc_by",
+        "open_license_cc_by_nc_sa",
+        "open_license_agpl",
+        "open_license_apache",
+        "open_license_busl",
+        "third_party_course_material",
+        "third_party_paywall_article",
+        "third_party_private_note",
+        "government_publication",
+        "platform_policy_document",
+        "ai_generated_content",
+        "project_original_content"
+      ]
     },
     "rights_status": {
       "type": "string",

@@ -66,6 +66,15 @@ class SourceRightsGateConsistencyTests(unittest.TestCase):
                 f"category {cat} governance_action {c['governance_action']!r} not in schema enum",
             )
 
+    def test_gate_source_category_enum_matches_registry(self):
+        enum = set(GATE_SCHEMA["properties"]["source_category"]["enum"])
+        cats = set(SRC_REG["categories"].keys())
+        self.assertEqual(
+            enum, cats,
+            f"gate source_category schema enum drifted from source-rights registry: "
+            f"only_in_enum={sorted(enum - cats)} only_in_registry={sorted(cats - enum)}",
+        )
+
     # ---- concrete two-way for the contested AI-generated category (F10) -------
     def test_ai_generated_two_way_consistency(self):
         ai = SRC_REG["categories"]["ai_generated_content"]

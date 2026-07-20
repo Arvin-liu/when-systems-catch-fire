@@ -47,11 +47,6 @@
       "type": "string",
       "enum": ["CURRENT", "AMENDED_RECENTLY", "TRANSPOSITION_PENDING", "UNKNOWN"]
     },
-    "verification_status": {
-      "type": "string",
-      "enum": ["VERIFIED", "UNVERIFIED", "COUNSEL_REQUIRED", "PERMISSION_REQUIRED", "INSUFFICIENT_INFORMATION", "BLOCKED_PENDING_EVIDENCE"],
-      "description": "Verification status of the rule entry"
-    },
     "verified_at_HE": {
       "type": "string",
       "description": "Human Era date of verification"
@@ -106,5 +101,11 @@
         "note": {"type": "string"}
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": { "required": ["legal_regime_scope"] },
+      "then": { "required": ["sovereignty_position"] }
+    }
+  ]
 }
