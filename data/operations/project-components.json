@@ -1257,7 +1257,7 @@
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
-        "status": "draft_candidate"
+        "status": "current"
       },
       "map_projection": {
         "group": "governance",
@@ -1278,7 +1278,7 @@
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
-        "status": "draft_candidate"
+        "status": "current"
       },
       "map_projection": {
         "group": "governance",
@@ -1299,7 +1299,7 @@
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
-        "status": "draft_candidate"
+        "status": "current"
       },
       "map_projection": {
         "group": "governance",
@@ -1319,7 +1319,7 @@
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
-        "status": "draft_candidate"
+        "status": "current"
       },
       "map_projection": {
         "group": "governance",
@@ -1340,7 +1340,7 @@
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
-        "status": "draft_candidate"
+        "status": "current"
       },
       "map_projection": {
         "group": "governance",
@@ -1361,7 +1361,7 @@
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
-        "status": "draft_candidate"
+        "status": "current"
       },
       "map_projection": {
         "group": "governance",
@@ -1382,7 +1382,7 @@
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
-        "status": "draft_candidate"
+        "status": "current"
       },
       "map_projection": {
         "group": "governance",
