@@ -1470,6 +1470,92 @@
         "data/discovery/fixtures/10-q33-global-compliance-breach.json",
         "data/discovery/fixtures/11-external-world-no-attestation.json"
       ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "schemas/agent/responsibility-contract.schema.json",
+      "component_id": "agent_responsibility_contract",
+      "component_type": "governance_constraint",
+      "description": "Q35 typed responsibility-authority-action-trace contract: actor/role, authority grant, action intent/decision/execution, append-only hash-linked trajectory, responsibility attribution.",
+      "label": "\u8d23\u4efb\u2014\u6743\u9650\u2014\u884c\u52a8\u8f68\u8ff9 \u5408\u540c",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q35 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "schemas/agent/responsibility-contract.schema.json",
+        "docs/agent/responsibility-authority-action-trace.md",
+        "docs/agent/responsibility-authority-action-trace-architecture.md",
+        "docs/agent/q36-intervention-interface.md",
+        "docs/agent/q35-legacy-lab-salvage-matrix.json"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/agent/validate_responsibility_gate.py",
+      "component_id": "agent_responsibility_gate_validator",
+      "component_type": "governance_constraint",
+      "description": "Q35 fail-closed responsibility gate/CLI: blocks self-grant, model-name-as-authority, expired/revoked grant, scope breach, broken delegation, separation-of-duty, stale head, ceiling breach, uncommitted action, chain tamper, silent rewrite, Q33 bypass, forced many-hands.",
+      "label": "\u8d23\u4efb\u2014\u6743\u9650 \u95e8\u7981",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q35 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/agent/validate_responsibility_gate.py",
+        "tools/agent/trajectory.py",
+        "tools/agent/__init__.py",
+        "tests/agent/__init__.py",
+        "tests/agent/test_responsibility_gate.py",
+        "data/agent/q34-claims-registry.json",
+        "data/agent/q33-publication-rejects.json"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/agent/pilot-q34-pr-controlled-op.json",
+      "component_id": "agent_responsibility_pilot_q34",
+      "component_type": "governance_constraint",
+      "description": "Q35 pilot: controlled repository operation on Q34 Draft PR with separated roles (initiator/authorizer/executor/verifier); proves role separation without claiming Q34 candidate is Main-accepted.",
+      "label": "\u8d23\u4efb\u2014\u6743\u9650 Q34 \u8bd5\u70b9",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q35 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/agent/pilot-q34-pr-controlled-op.json",
+        "data/agent/fixtures/01-legal-low-risk.json",
+        "data/agent/fixtures/02-self-grant.json",
+        "data/agent/fixtures/03-model-name-as-authority.json",
+        "data/agent/fixtures/04-expired-grant.json",
+        "data/agent/fixtures/05-revoked-grant.json",
+        "data/agent/fixtures/06-scope-breach.json",
+        "data/agent/fixtures/07-broken-delegation.json",
+        "data/agent/fixtures/08-self-all-roles-high-risk.json",
+        "data/agent/fixtures/09-stale-exact-head.json",
+        "data/agent/fixtures/10-claim-ceiling-breach.json",
+        "data/agent/fixtures/11-uncommitted-hypothesis-action.json",
+        "data/agent/fixtures/12-trajectory-tamper.json",
+        "data/agent/fixtures/13-trajectory-chain-break.json",
+        "data/agent/fixtures/14-silent-rollback-rewrite.json",
+        "data/agent/fixtures/15-many-hands-forced-owner.json",
+        "data/agent/fixtures/16-q33-gate-bypass.json"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",

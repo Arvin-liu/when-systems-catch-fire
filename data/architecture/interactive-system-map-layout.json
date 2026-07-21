@@ -121,7 +121,10 @@
       "sustainability",
       "discovery_commitment_claim_contract",
       "discovery_commitment_gate_validator",
-      "discovery_commitment_pilot_q33"
+      "discovery_commitment_pilot_q33",
+      "agent_responsibility_contract",
+      "agent_responsibility_gate_validator",
+      "agent_responsibility_pilot_q34"
     ],
     "layers": [
       "l0",
