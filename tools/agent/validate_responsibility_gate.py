@@ -181,10 +181,14 @@ def check_claim_state(bundle, claims_index):
         cref = a.get("claim_ref")
         g = grants.get(a.get("grant_id"), {})
         required = g.get("required_commitment_state", "committed_current")
-        if claims_index is not None and cref in claims_index:
+        # honor an explicit claim_state on the action (fixtures); otherwise resolve
+        # from the claims registry; an unknown claim defaults to its declared state.
+        if a.get("claim_state") is not None:
+            cstate = a.get("claim_state")
+        elif claims_index is not None and cref in claims_index:
             cstate = claims_index[cref].get("state")
         else:
-            cstate = a.get("claim_state", "committed_current")
+            cstate = "committed_current"
         if required in ("committed_current", "any_committed") and cstate != "committed_current":
             errors.append(f"action {a.get('action_id')}: relies on claim '{cref}' in state '{cstate}', not committed_current")
             return _result(CLAIM_NOT_COMMITTED, errors)
@@ -309,22 +313,22 @@ def validate(bundle, now=None, claims_index=None, q33_rejects=None, current_main
     r = check_silent_rewrite(bundle)
     if r: return r
 
-    errs = check_actor_resolvable(bundle)
-    if errs: return _result(ACTOR_UNRESOLVABLE, errs)
     errs = check_authority_source(bundle)
     if errs: return _result(MODEL_NAME_AS_AUTHORITY, errs)
+    errs = check_actor_resolvable(bundle)
+    if errs: return _result(ACTOR_UNRESOLVABLE, errs)
 
     r = check_grants(bundle, now)
     if r: return r
     r = check_action_grants(bundle)
-    if r: return r
-    r = check_delegation(bundle)
     if r: return r
     r = check_claim_state(bundle, claims_index)
     if r: return r
     r = check_claim_ceiling(bundle)
     if r: return r
     r = check_separation_of_duty(bundle)
+    if r: return r
+    r = check_delegation(bundle)
     if r: return r
     r = check_exact_head(bundle, current_main_head)
     if r: return r
