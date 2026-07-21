@@ -145,7 +145,10 @@
       "symbolic_power_perspective_pilot",
       "decision_integrity_contract",
       "decision_integrity_gate_validator",
-      "decision_integrity_pilot"
+      "decision_integrity_pilot",
+      "epistemic_state_control_plane_contract",
+      "epistemic_state_control_plane_gate_validator",
+      "epistemic_state_control_plane_pilot"
     ],
     "layers": [
       "l0",

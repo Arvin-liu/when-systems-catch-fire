@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.5",
+    "component_registry_version": "1.1.6",
     "topology_version": "1.1.0",
     "layout_version": "1.1.0"
   },
@@ -568,6 +568,30 @@
       "group": "governance",
       "target": "data/decision/pilot-decision-integrity-i1.json",
       "description": "DECISION-INTEGRITY-I1 self-authored bounded repository pilot covering BAD_PROCESS_GOOD_OUTCOME and GOOD_PROCESS_BAD_OUTCOME; 24 fixtures drive the real CLI; no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "epistemic_state_control_plane_contract",
+      "label": "Scientific Metacognition & Epistemic-State Control Plane 合同",
+      "group": "governance",
+      "target": "schemas/metacognition/epistemic_state_control_plane-contract.schema.json",
+      "description": "SCIENTIFIC-METACOGNITION-I1 typed evidence-bound contract. Epistemic states and unknowns can be ranked and transitioned through authorized evidence acquisition with deterministic replay, bounded cost/risk/time and explicit replanning.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "epistemic_state_control_plane_gate_validator",
+      "label": "Scientific Metacognition & Epistemic-State Control Plane 门禁",
+      "group": "governance",
+      "target": "tools/metacognition/validate_epistemic_state_control_plane_gate.py",
+      "description": "SCIENTIFIC-METACOGNITION-I1 fail-closed real CLI enforcing evidence binding, exact parent, 12 task rules, candidate ceiling and no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "epistemic_state_control_plane_pilot",
+      "label": "Scientific Metacognition & Epistemic-State Control Plane 受控试点",
+      "group": "governance",
+      "target": "data/metacognition/pilot-scientific-metacognition-i1.json",
+      "description": "SCIENTIFIC-METACOGNITION-I1 self-authored bounded repository pilot covering REAL_TRAIN_UNKNOWN_LEDGER and NON_IDENTIFIABLE_UNKNOWN; 24 fixtures drive the real CLI; no external action.",
       "lifecycle_status": "draft_candidate"
     },
     {

@@ -1,0 +1,15 @@
+{
+  "added_edges": [],
+  "added_nodes": [
+    "epistemic_state_control_plane_contract",
+    "epistemic_state_control_plane_gate_validator",
+    "epistemic_state_control_plane_pilot"
+  ],
+  "base_map_version": "0.3.0",
+  "candidate_map_version": "0.3.0",
+  "changed_edges": [],
+  "changed_nodes": [],
+  "removed_edges": [],
+  "removed_nodes": [],
+  "unmapped_residue": []
+}
