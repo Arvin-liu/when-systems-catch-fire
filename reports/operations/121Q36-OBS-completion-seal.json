@@ -1,0 +1,59 @@
+{
+  "task_id": "121Q36-OBS",
+  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "method_version": "1.2.0",
+  "lifecycle": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": false
+  },
+  "phase_b": {
+    "draft_pr": null,
+    "branch": "agent/121q36-obs-i1-observation-prediction-calibration",
+    "base": "agent/121q35-i1-responsibility-authority-action-trace",
+    "base_head": "ea1408e6525ceac8ea0c9c5377aca269579d6ff4",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "agent-results/IGNITION-20260721-121Q36-OBS-I1-observation-prediction-calibration-execution-receipt.json",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
+    "claim_ceiling": "candidate_only: repository-native, evidence-bound, deterministically verifiable observation-prediction calibration boundary that freezes prediction object, target, window, scope, input evidence, model/rule version and uncertainty before outcome reveal; binds independent outcomes after reveal; computes residual, calibration and in-scope predictive performance; preserves failure and unrealized paths; and blocks post-hoc rewriting, data leakage, target drift, selective reporting, correlation-as-causation and finite-sample-to-universal upgrades. Does not assert the project can predict everything in the real world; no L7, no truth layer, no automatic causal adjudicator, no intervention authority. Calibration is repository-attested only."
+  },
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "synchronization_registry": {
+    "path": "data/operations/synchronization-surfaces.json",
+    "version": "1.2.0"
+  },
+  "external_attestations": [
+    {
+      "surface_id": "external.pages_homepage",
+      "stage": "post_merge",
+      "status": "pending",
+      "authority": "pull_request_body_and_1111_receipt",
+      "evidence_refs": [
+        "external:pr_body:pending"
+      ],
+      "live_state_locally_verifiable": false
+    }
+  ],
+  "propagation_closure": {
+    "closure_hash": "953cfe8f450fcd69992580658b4c44c2ec913f709a06dcfcaa858f139dc095a6",
+    "closure_path": "data/operations/propagation/121Q36-OBS-closure.json",
+    "complete": true,
+    "unresolved_residue": []
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  }
+}

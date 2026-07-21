@@ -1,0 +1,296 @@
+{
+  "actual_component_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "historical_reports",
+      "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "incremental_execution",
+      "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration",
+      "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration_manifest_contract",
+      "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "observation_prediction_contract",
+      "reason": "Q36-OBS new governance component: typed observation-prediction calibration contract"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "observation_prediction_gate_validator",
+      "reason": "Q36-OBS new governance component: fail-closed calibration gate validator (exit codes 0-17)"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "observation_prediction_pilot_q34",
+      "reason": "Q36-OBS new governance component: Q34 closure-drift prediction pilot + retrospective replay"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "pages_pipeline",
+      "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "project_component_registry",
+      "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_calculator",
+      "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "readme",
+      "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sync",
+      "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_layout",
+      "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_projection",
+      "reason": "Q36-OBS observation-prediction calibration does not alter this component's semantics."
+    }
+  ],
+  "actual_surface_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent.handoff",
+      "reason": "Q36-OBS candidate does not change handoff"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai.start",
+      "reason": "Q36-OBS candidate does not change AI start"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance",
+      "reason": "Q36-OBS adds observation-prediction calibration governance components to the governance surface"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external.pages_homepage",
+      "reason": "Q36-OBS is a Draft candidate; no production pages change claimed"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.ai_guide",
+      "reason": "Q36-OBS candidate does not change AI guide"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.current_state",
+      "reason": "Q36-OBS candidate does not edit docs/project-current-state.md (recorded at Q34; Q36-OBS build is governance-only and does not touch the current-state file)"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.pages_source",
+      "reason": "Q36-OBS does not alter pages source"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.readme",
+      "reason": "Q36-OBS candidate does not change README"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.summary",
+      "reason": "Q36-OBS candidate does not edit SUMMARY.md"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.usage",
+      "reason": "Q36-OBS candidate does not change usage surface"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "machine.llms",
+      "reason": "Q36-OBS candidate does not change llms.txt"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.iteration",
+      "reason": "Q36-OBS uses existing iteration method"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.result_template",
+      "reason": "Q36-OBS uses existing result template"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.review_template",
+      "reason": "Q36-OBS uses existing review template"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.task_template",
+      "reason": "Q36-OBS uses existing task template"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.changelog",
+      "reason": "Q36-OBS candidate does not edit CHANGELOG.md (governance-only build, no release note change in this branch)"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.versioning",
+      "reason": "Q36-OBS candidate does not change versioning"
+    }
+  ],
+  "base_identity": "ea1408e6525ceac8ea0c9c5377aca269579d6ff4",
+  "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
+  "closure_complete": true,
+  "closure_hash": "953cfe8f450fcd69992580658b4c44c2ec913f709a06dcfcaa858f139dc095a6",
+  "closure_version": "1.0.0",
+  "fixpoint": {
+    "iterations": 2,
+    "reached": true
+  },
+  "head_identity": "external_exact_head_attestation",
+  "registry_derived_surfaces": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "required_component_decisions": [
+    "historical_reports",
+    "iteration_manifest_contract",
+    "observation_prediction_contract",
+    "observation_prediction_gate_validator",
+    "observation_prediction_pilot_q34",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_projection"
+  ],
+  "required_surface_decisions": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "residue": [],
+  "resolved_components": [
+    "historical_reports",
+    "iteration_manifest_contract",
+    "observation_prediction_contract",
+    "observation_prediction_gate_validator",
+    "observation_prediction_pilot_q34",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_projection"
+  ],
+  "seed_components": [
+    "historical_reports",
+    "iteration_manifest_contract",
+    "observation_prediction_contract",
+    "observation_prediction_gate_validator",
+    "observation_prediction_pilot_q34",
+    "project_component_registry",
+    "propagation_calculator"
+  ],
+  "seed_paths": [
+    "data/observation/fixtures/01-frozen-then-independent-outcome.json",
+    "data/observation/fixtures/02-backwritten-prediction.json",
+    "data/observation/fixtures/03-future-input-snapshot.json",
+    "data/observation/fixtures/04-target-definition-mismatch.json",
+    "data/observation/fixtures/05-window-drift.json",
+    "data/observation/fixtures/06-unit-scope-mismatch.json",
+    "data/observation/fixtures/07-stale-exact-head.json",
+    "data/observation/fixtures/08-silent-prediction-rewrite.json",
+    "data/observation/fixtures/09-selective-outcome-deletion.json",
+    "data/observation/fixtures/10-exclusion-without-reason.json",
+    "data/observation/fixtures/11-self-generated-outcome.json",
+    "data/observation/fixtures/12-interval-inverted.json",
+    "data/observation/fixtures/13-finite-sample-to-universal.json",
+    "data/observation/fixtures/14-correlation-as-causation.json",
+    "data/observation/fixtures/15-uncommitted-q34-claim.json",
+    "data/observation/fixtures/16-missing-q35-authority.json",
+    "data/observation/fixtures/17-q33-rights-bypass.json",
+    "data/observation/fixtures/18-negative-result-preserved.json",
+    "data/observation/fixtures/19-abstain-defer-preserved.json",
+    "data/observation/fixtures/20-retrospective-replay-pilot.json",
+    "data/observation/pilot-q34-closure-drift-prediction.json",
+    "data/operations/iterations/121Q36-OBS.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q36-OBS-request.json",
+    "docs/observation/q36-legacy-lab-salvage-matrix.json",
+    "docs/observation/q36-obs-architecture-decision.md",
+    "docs/observation/q36-obs-interfaces.md",
+    "docs/observation/q36-obs-typed-contract.md",
+    "reports/operations/121Q36-OBS-completion-seal.json",
+    "schemas/observation/observation-prediction-contract.schema.json",
+    "tests/observation/test_observation_prediction_core.py",
+    "tests/observation/test_observation_prediction_gate.py",
+    "tools/observation/validate_observation_prediction_gate.py"
+  ],
+  "system_map_impact": {
+    "added_edges": [],
+    "added_nodes": [
+      "observation_prediction_contract",
+      "observation_prediction_gate_validator",
+      "observation_prediction_pilot_q34"
+    ],
+    "changed_edges": [],
+    "changed_nodes": [],
+    "decision": "CHANGE",
+    "reason": "New observation-prediction calibration governance components added to project-component registry and topology",
+    "removed_edges": [],
+    "removed_nodes": [],
+    "unmapped_residue": []
+  },
+  "task_id": "121Q36-OBS",
+  "typed_paths": [
+    {
+      "claim_ceiling": "deterministic repository derivation",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "registry_generates_projection",
+      "source": "project_component_registry",
+      "target": "system_map_projection"
+    }
+  ]
+}

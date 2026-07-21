@@ -13,73 +13,73 @@
     {
       "color": "#2563eb",
       "column": 0,
-      "description": "\u4eba\u7c7b\u3001AI \u4e0e\u673a\u5668\u8fdb\u5165\u9879\u76ee\u7684\u5f53\u524d\u5165\u53e3",
+      "description": "人类、AI 与机器进入项目的当前入口",
       "id": "front_doors",
-      "label": "\u524d\u95e8 / \u5bfc\u822a",
+      "label": "前门 / 导航",
       "row": 0
     },
     {
       "color": "#7c3aed",
       "column": 1,
-      "description": "\u6765\u6e90\u5230\u89e3\u91ca\u51fa\u7248\u7684\u8ba4\u8bc6\u6743\u9650\u94fe\uff1b\u4e0d\u5b58\u5728 L7",
+      "description": "来源到解释出版的认识权限链；不存在 L7",
       "id": "layers",
-      "label": "L0\u2014L6 \u4e03\u5c42\u4e3b\u67b6\u6784",
+      "label": "L0—L6 七层主架构",
       "row": 0
     },
     {
       "color": "#0f766e",
       "column": 2,
-      "description": "\u6743\u5a01\u6570\u636e\u3001\u5f62\u5f0f\u95e8\u7981\u4e0e\u53ef\u6267\u884c\u51fd\u6570\u63a5\u53e3",
+      "description": "权威数据、形式门禁与可执行函数接口",
       "id": "core",
-      "label": "\u57fa\u7840\u6838\u5fc3",
+      "label": "基础核心",
       "row": 0
     },
     {
       "color": "#0891b2",
       "column": 0,
-      "description": "\u591a\u5c3a\u5ea6\u3001\u6982\u7387\u52a8\u529b\u5b66\u4e0e\u81ea\u9002\u5e94\u5173\u7cfb\u7684\u5019\u9009\u8868\u793a",
+      "description": "多尺度、概率动力学与自适应关系的候选表示",
       "id": "models",
-      "label": "\u6a21\u578b\u4e0e\u6295\u5f71",
+      "label": "模型与投影",
       "row": 1
     },
     {
       "color": "#d97706",
       "column": 1,
-      "description": "\u884c\u52a8\u3001\u6ce8\u610f\u529b\u3001\u5730\u56fe\u3001\u8fed\u4ee3\u4e0e\u7c7b\u578b\u5316\u4f20\u64ad\u95ed\u5305",
+      "description": "行动、注意力、地图、迭代与类型化传播闭包",
       "id": "operations",
-      "label": "\u63a7\u5236 / \u64cd\u4f5c\u5c42",
+      "label": "控制 / 操作层",
       "row": 1
     },
     {
       "color": "#be123c",
       "column": 2,
-      "description": "\u4ef7\u503c\u3001\u6743\u5229\u8bb8\u53ef\u4e0e\u7ef4\u62a4\u8005\u53ef\u6301\u7eed\u6027\u8fb9\u754c",
+      "description": "价值、权利许可与维护者可持续性边界",
       "id": "governance",
-      "label": "\u89c4\u8303\u4e0e\u7ea6\u675f",
+      "label": "规范与约束",
       "row": 1
     },
     {
       "color": "#9333ea",
       "column": 0,
-      "description": "\u53cc\u6765\u6e90\u7d20\u6750\u6c60\u3001\u516c\u5171\u8868\u8fbe\u4e0e\u53ef\u8ffd\u6eaf\u6210\u679c",
+      "description": "双来源素材池、公共表达与可追溯成果",
       "id": "writing",
-      "label": "\u4e4b\u5143\u5199\u4f5c\u6cd5\u4e0e\u6210\u679c\u94fe",
+      "label": "之元写作法与成果链",
       "row": 2
     },
     {
       "color": "#15803d",
       "column": 1,
-      "description": "\u4f5c\u54c1\u54cd\u5e94\u7ecf\u6765\u6e90\u767b\u8bb0\u540e\u8fd4\u56de\u9002\u7528\u70b9\u706b\u6d41\u7a0b",
+      "description": "作品响应经来源登记后返回适用点火流程",
       "id": "feedback",
-      "label": "\u73b0\u5b9e\u53cd\u9988\u73af",
+      "label": "现实反馈环",
       "row": 2
     },
     {
       "color": "#475569",
       "column": 2,
-      "description": "\u8fd9\u662f\u4e00\u5f20\u5bfc\u822a\u63a5\u53e3\uff0c\u4e0d\u662f\u5b8c\u6574\u6027\u3001\u56e0\u679c\u6216\u7406\u8bba\u8bc1\u660e",
+      "description": "这是一张导航接口，不是完整性、因果或理论证明",
       "id": "boundaries",
-      "label": "\u56fe\u7684\u89e3\u91ca\u8fb9\u754c",
+      "label": "图的解释边界",
       "row": 2
     }
   ],
@@ -124,7 +124,10 @@
       "discovery_commitment_pilot_q33",
       "agent_responsibility_contract",
       "agent_responsibility_gate_validator",
-      "agent_responsibility_pilot_q34"
+      "agent_responsibility_pilot_q34",
+      "observation_prediction_contract",
+      "observation_prediction_gate_validator",
+      "observation_prediction_pilot_q34"
     ],
     "layers": [
       "l0",
@@ -160,6 +163,6 @@
     ]
   },
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
-  "subtitle": "\u5f53\u524d 0.3.0 \u589e\u91cf\u6267\u884c\u6295\u5f71\uff1b0.2.0 \u4e3a Historical\u3002\u70b9\u51fb\u6784\u4ef6\u6253\u5f00 canonical \u76ee\u6807\u3002\u8def\u5f84\u3001\u90bb\u8fd1\u4e0e\u58f0\u660e\u4f9d\u8d56\u4e0d\u81ea\u52a8\u8868\u793a\u73b0\u5b9e\u56e0\u679c\u3002",
-  "title": "\u70b9\u706b\u5b8c\u6574\u53ef\u70b9\u51fb\u7cfb\u7edf\u56fe"
+  "subtitle": "当前 0.3.0 增量执行投影；0.2.0 为 Historical。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。",
+  "title": "点火完整可点击系统图"
 }
