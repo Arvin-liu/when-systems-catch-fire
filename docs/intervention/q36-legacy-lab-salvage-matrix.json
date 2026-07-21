@@ -1,0 +1,28 @@
+{
+  "task_id": "121Q36-INT-I1",
+  "salvage_rule": "legacy LAB branches preserved as annotated tags; never wholesale merged or cherry-picked; only content consistent with the Q36-INT boundary is selectively reimplemented.",
+  "preserved": [
+    {
+      "legacy_branch": "lab/121q36-temporal-causality-night",
+      "tip": "0529baaa354a99eae91621f2a70c9b5b53454208",
+      "annotated_tag": "archive/lab-121q36-temporal-causality-night",
+      "preserved_by": "121Q36-OBS-I1",
+      "reason": "Diverges from Q34/Q35/Q36-OBS gates (its diff vs the Q35 head deletes those gates); cannot be merged. Temporal-causality assertions that imply causal adjudication are out of Q36-INT scope.",
+      "reimplemented_in_q36_int": false
+    },
+    {
+      "legacy_branch": "lab/121q39-failure-memory-night",
+      "tip": "95d637fcd5a33791e1cf69deec49d36389b9aeb0",
+      "annotated_tag": "archive/lab-121q39-failure-memory-night",
+      "preserved_by": "121Q36-INT-I1",
+      "reason": "Matches lab/*failure* legacy-salvage pattern. Q36-INT defines only the Q39 failure-memory INTERFACE (failure_mode_record fields); it does not reimplement Q39 failure memory.",
+      "reimplemented_in_q36_int": false
+    }
+  ],
+  "rejected_assets": [
+    "any legacy asset that re-implements Q34 commitment / Q35 responsibility / Q36-OBS calibration",
+    "any legacy asset that performs real-world external actions or asserts a universal causal mechanism",
+    "any legacy asset that implies a unified truth layer / L7 / automatic controller"
+  ],
+  "disposition": "PRESERVED_AND_SELECTIVELY_REIMPLEMENTED_WITHIN_Q36_INT_BOUNDARY"
+}
