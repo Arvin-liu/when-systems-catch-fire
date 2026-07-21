@@ -1,0 +1,30 @@
+{
+  "claim_id": "q33.seven_governance_components.current_in_main",
+  "claim_text": "The seven Q33 copyright risk and rights governance components are Current in repository Main.",
+  "claim_type": "governance_state",
+  "scope": "repository_main_only",
+  "state": "committed_current",
+  "discovered_by": {"actor": "q34-builder", "actor_kind": "agent"},
+  "evidence": [
+    {"ref_id": "ev_manifest", "kind": "deterministic_test", "reference": "data/operations/iterations/121Q33.json", "independence": "independent", "produced_by": "validate_iteration_sync", "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990"},
+    {"ref_id": "ev_seal", "kind": "generated_output", "reference": "reports/operations/121Q33-completion-seal.json", "independence": "independent", "produced_by": "validate_iteration_sync", "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990"},
+    {"ref_id": "ev_merge", "kind": "ci_run", "reference": "github:Arvin-liu/when-systems-catch-fire:merge:81edff4039619b8343a82cb1b84785c8a9f6a990", "independence": "independent", "produced_by": "github_merge", "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990"},
+    {"ref_id": "ev_components", "kind": "deterministic_test", "reference": "data/operations/project-components.json", "independence": "independent", "produced_by": "validate_iteration_sync", "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990"}
+  ],
+  "verifier": {"actor": "q34-independent-reviewer", "actor_kind": "agent"},
+  "claim_ceiling": "repository governance state only: the 7 components are Current in Main per manifest/seal/merge evidence; this does not assert real-world legal compliance or exhaustive global copyright coverage.",
+  "search_process": {
+    "summary": "Read project-components.json, 121Q33 manifest and seal at Main 81edff40; confirmed 7 copyright_governance_* components have lifecycle.status=current and component_type=governance_constraint.",
+    "considered_paths": ["project-components.json", "121Q33.json", "121Q33-completion-seal.json", "merge commit 81edff40"],
+    "rejected_paths": ["no real-world legal-compliance claim", "no exhaustive-jurisdiction claim"]
+  },
+  "relations": {"supersedes": [], "retracts": [], "derived_from": []},
+  "exact_head_binding": {"repo": "Arvin-liu/when-systems-catch-fire", "head": "81edff4039619b8343a82cb1b84785c8a9f6a990"},
+  "history": [
+    {"from_state": "discovered", "to_state": "discovered", "actor": "q34-builder", "decision": "DISCOVER", "rationale": "observed 7 copyright components marked current in Main", "at": "2026-07-21T05:40:00Z"},
+    {"from_state": "discovered", "to_state": "evidence_bound_candidate", "actor": "q34-builder", "decision": "BIND_EVIDENCE", "rationale": "bound manifest/seal/merge/components evidence at 81edff40", "at": "2026-07-21T05:40:01Z"},
+    {"from_state": "evidence_bound_candidate", "to_state": "validated_within_scope", "actor": "q34-independent-reviewer", "decision": "VALIDATE", "rationale": "deterministic validators confirm manifest/seal CURRENT_CLOSED and components current", "at": "2026-07-21T05:40:02Z"},
+    {"from_state": "validated_within_scope", "to_state": "commitment_candidate", "actor": "q34-independent-reviewer", "decision": "REQUIRE_INDEPENDENT_REVIEW", "rationale": "scope limited to repository governance state", "at": "2026-07-21T05:40:03Z"},
+    {"from_state": "commitment_candidate", "to_state": "committed_current", "actor": "q34-independent-reviewer", "decision": "COMMIT", "rationale": "independent deterministic evidence; ceiling repository-scoped; not self-certified", "at": "2026-07-21T05:40:04Z"}
+  ]
+}

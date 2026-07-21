@@ -111,7 +111,7 @@
       "canonical_target": "docs/publication/works/when-an-army-believes-its-own-back.md",
       "component_id": "accepted_work",
       "component_type": "publication_chain",
-      "description": "经审查接受且保持来源与证据边界的公共作品。",
+      "description": "\u7ecf\u5ba1\u67e5\u63a5\u53d7\u4e14\u4fdd\u6301\u6765\u6e90\u4e0e\u8bc1\u636e\u8fb9\u754c\u7684\u516c\u5171\u4f5c\u54c1\u3002",
       "label": "Accepted work",
       "layer_or_overlay": "L6",
       "lifecycle": {
@@ -132,8 +132,8 @@
       "canonical_target": "docs/ai-assistant-usage-reference.md",
       "component_id": "ai_guide",
       "component_type": "front_door",
-      "description": "AI 首次阅读、边界与回链要求。",
-      "label": "AI 助手使用参考",
+      "description": "AI \u9996\u6b21\u9605\u8bfb\u3001\u8fb9\u754c\u4e0e\u56de\u94fe\u8981\u6c42\u3002",
+      "label": "AI \u52a9\u624b\u4f7f\u7528\u53c2\u8003",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "docs/ai-assistant-usage-reference.md",
@@ -156,8 +156,8 @@
       "canonical_target": "docs/architecture/adaptive-relational-network.md",
       "component_id": "arn",
       "component_type": "model_projection",
-      "description": "处理异质、时序与自适应关系，并把因果主张交回 MCF。",
-      "label": "ARN 自适应关系网络",
+      "description": "\u5904\u7406\u5f02\u8d28\u3001\u65f6\u5e8f\u4e0e\u81ea\u9002\u5e94\u5173\u7cfb\uff0c\u5e76\u628a\u56e0\u679c\u4e3b\u5f20\u4ea4\u56de MCF\u3002",
+      "label": "ARN \u81ea\u9002\u5e94\u5173\u7cfb\u7f51\u7edc",
       "layer_or_overlay": "overlay",
       "lifecycle": {
         "source": "docs/architecture/adaptive-relational-network.md",
@@ -175,14 +175,14 @@
     },
     {
       "authority": "declarative",
-      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#\u8fd4\u56de\u70b9\u706b",
       "component_id": "candidate_return",
       "component_type": "feedback_interface",
-      "description": "合格反馈只成为候选来源、缺口或现实反馈，不直接升级真值。",
+      "description": "\u5408\u683c\u53cd\u9988\u53ea\u6210\u4e3a\u5019\u9009\u6765\u6e90\u3001\u7f3a\u53e3\u6216\u73b0\u5b9e\u53cd\u9988\uff0c\u4e0d\u76f4\u63a5\u5347\u7ea7\u771f\u503c\u3002",
       "label": "Candidate source / gap / reality feedback",
       "layer_or_overlay": "publication",
       "lifecycle": {
-        "source": "docs/publication/zhiyuan-writing-method.md#返回点火",
+        "source": "docs/publication/zhiyuan-writing-method.md#\u8fd4\u56de\u70b9\u706b",
         "status": "current"
       },
       "map_projection": {
@@ -198,7 +198,7 @@
       "canonical_target": "docs/publication/cases/jin-rise-case-source.md",
       "component_id": "case_source",
       "component_type": "publication_chain",
-      "description": "起始案例的公开来源链与版权边界。",
+      "description": "\u8d77\u59cb\u6848\u4f8b\u7684\u516c\u5f00\u6765\u6e90\u94fe\u4e0e\u7248\u6743\u8fb9\u754c\u3002",
       "label": "Case source provenance",
       "layer_or_overlay": "publication",
       "lifecycle": {
@@ -218,8 +218,8 @@
       "canonical_target": "docs/governance/life-community-value-charter.md",
       "component_id": "charter",
       "component_type": "governance_constraint",
-      "description": "约束谁受益、谁承担成本以及何时拒绝、暂停或回滚。",
-      "label": "生命共同体价值宪章",
+      "description": "\u7ea6\u675f\u8c01\u53d7\u76ca\u3001\u8c01\u627f\u62c5\u6210\u672c\u4ee5\u53ca\u4f55\u65f6\u62d2\u7edd\u3001\u6682\u505c\u6216\u56de\u6eda\u3002",
+      "label": "\u751f\u547d\u5171\u540c\u4f53\u4ef7\u503c\u5baa\u7ae0",
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "docs/governance/life-community-value-charter.md",
@@ -238,8 +238,8 @@
       "canonical_target": "docs/project-current-state.md",
       "component_id": "current_state",
       "component_type": "front_door",
-      "description": "当前版本化能力、限制与非永久身份。",
-      "label": "完整项目现状",
+      "description": "\u5f53\u524d\u7248\u672c\u5316\u80fd\u529b\u3001\u9650\u5236\u4e0e\u975e\u6c38\u4e45\u8eab\u4efd\u3002",
+      "label": "\u5b8c\u6574\u9879\u76ee\u73b0\u72b6",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "docs/project-current-state.md",
@@ -257,14 +257,14 @@
     },
     {
       "authority": "declarative",
-      "canonical_target": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#\u53cc\u6765\u6e90\u5199\u4f5c\u7d20\u6750\u6c60",
       "component_id": "external_input",
       "component_type": "publication_chain",
-      "description": "笔记、新闻、文章、案例、记忆、现实事件等可追溯外部材料。",
-      "label": "外部输入源",
+      "description": "\u7b14\u8bb0\u3001\u65b0\u95fb\u3001\u6587\u7ae0\u3001\u6848\u4f8b\u3001\u8bb0\u5fc6\u3001\u73b0\u5b9e\u4e8b\u4ef6\u7b49\u53ef\u8ffd\u6eaf\u5916\u90e8\u6750\u6599\u3002",
+      "label": "\u5916\u90e8\u8f93\u5165\u6e90",
       "layer_or_overlay": "publication",
       "lifecycle": {
-        "source": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池",
+        "source": "docs/publication/zhiyuan-writing-method.md#\u53cc\u6765\u6e90\u5199\u4f5c\u7d20\u6750\u6c60",
         "status": "current",
         "version": "0.4.0"
       },
@@ -278,14 +278,14 @@
     },
     {
       "authority": "declarative",
-      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#\u8fd4\u56de\u70b9\u706b",
       "component_id": "feedback_routes",
       "component_type": "feedback_interface",
-      "description": "由适用组件决定下一行动并生成新的可追溯增量。",
-      "label": "返回 Q12 / Q13 / MCF / PSD / ARN / iteration",
+      "description": "\u7531\u9002\u7528\u7ec4\u4ef6\u51b3\u5b9a\u4e0b\u4e00\u884c\u52a8\u5e76\u751f\u6210\u65b0\u7684\u53ef\u8ffd\u6eaf\u589e\u91cf\u3002",
+      "label": "\u8fd4\u56de Q12 / Q13 / MCF / PSD / ARN / iteration",
       "layer_or_overlay": "overlay",
       "lifecycle": {
-        "source": "docs/publication/zhiyuan-writing-method.md#返回点火",
+        "source": "docs/publication/zhiyuan-writing-method.md#\u8fd4\u56de\u70b9\u706b",
         "status": "current"
       },
       "map_projection": {
@@ -301,7 +301,7 @@
       "canonical_target": "FOUNDATION.md",
       "component_id": "foundation",
       "component_type": "foundation_core",
-      "description": "权威注册表、迁移、证明义务、验证与兼容视图。",
+      "description": "\u6743\u5a01\u6ce8\u518c\u8868\u3001\u8fc1\u79fb\u3001\u8bc1\u660e\u4e49\u52a1\u3001\u9a8c\u8bc1\u4e0e\u517c\u5bb9\u89c6\u56fe\u3002",
       "label": "Foundation",
       "layer_or_overlay": "foundation",
       "lifecycle": {
@@ -325,8 +325,8 @@
       "canonical_target": "FOUNDATION.md",
       "component_id": "foundation_data",
       "component_type": "interpretation_boundary",
-      "description": "信息性基础数据边界，标记系统图不对基础数据主张独立真理。",
-      "label": "基础数据边界",
+      "description": "\u4fe1\u606f\u6027\u57fa\u7840\u6570\u636e\u8fb9\u754c\uff0c\u6807\u8bb0\u7cfb\u7edf\u56fe\u4e0d\u5bf9\u57fa\u7840\u6570\u636e\u4e3b\u5f20\u72ec\u7acb\u771f\u7406\u3002",
+      "label": "\u57fa\u7840\u6570\u636e\u8fb9\u754c",
       "layer_or_overlay": "boundary",
       "lifecycle": {
         "source": "FOUNDATION.md",
@@ -344,7 +344,7 @@
       "canonical_target": "function-os-candidate/v0.2/README.md",
       "component_id": "function_os",
       "component_type": "foundation_core",
-      "description": "执行受约束的函数动作，不决定真值或价值。",
+      "description": "\u6267\u884c\u53d7\u7ea6\u675f\u7684\u51fd\u6570\u52a8\u4f5c\uff0c\u4e0d\u51b3\u5b9a\u771f\u503c\u6216\u4ef7\u503c\u3002",
       "label": "Function OS",
       "layer_or_overlay": "overlay",
       "lifecycle": {
@@ -364,15 +364,15 @@
       "canonical_target": "reports/operations/",
       "component_id": "historical_reports",
       "component_type": "historical_asset",
-      "description": "保存已完成迭代证据；局部勘误不自动改变当前能力或系统图。",
-      "label": "历史报告与审计",
+      "description": "\u4fdd\u5b58\u5df2\u5b8c\u6210\u8fed\u4ee3\u8bc1\u636e\uff1b\u5c40\u90e8\u52d8\u8bef\u4e0d\u81ea\u52a8\u6539\u53d8\u5f53\u524d\u80fd\u529b\u6216\u7cfb\u7edf\u56fe\u3002",
+      "label": "\u5386\u53f2\u62a5\u544a\u4e0e\u5ba1\u8ba1",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "reports/operations/",
         "status": "historical"
       },
       "map_projection": {
-        "no_change_reason": "历史报告局部勘误不改变当前能力、身份、导航、生命周期或图结构。",
+        "no_change_reason": "\u5386\u53f2\u62a5\u544a\u5c40\u90e8\u52d8\u8bef\u4e0d\u6539\u53d8\u5f53\u524d\u80fd\u529b\u3001\u8eab\u4efd\u3001\u5bfc\u822a\u3001\u751f\u547d\u5468\u671f\u6216\u56fe\u7ed3\u6784\u3002",
         "represented_by": "current_state",
         "visible": false
       },
@@ -382,14 +382,14 @@
     },
     {
       "authority": "declarative",
-      "canonical_target": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#\u53cc\u6765\u6e90\u5199\u4f5c\u7d20\u6750\u6c60",
       "component_id": "ignition_increment",
       "component_type": "publication_chain",
-      "description": "claim、argument、mechanism、map、gap、residue、模型投影、分析与反馈返回项。",
-      "label": "点火增量输出源",
+      "description": "claim\u3001argument\u3001mechanism\u3001map\u3001gap\u3001residue\u3001\u6a21\u578b\u6295\u5f71\u3001\u5206\u6790\u4e0e\u53cd\u9988\u8fd4\u56de\u9879\u3002",
+      "label": "\u70b9\u706b\u589e\u91cf\u8f93\u51fa\u6e90",
       "layer_or_overlay": "publication",
       "lifecycle": {
-        "source": "docs/publication/zhiyuan-writing-method.md#双来源写作素材池",
+        "source": "docs/publication/zhiyuan-writing-method.md#\u53cc\u6765\u6e90\u5199\u4f5c\u7d20\u6750\u6c60",
         "status": "current",
         "version": "0.4.0"
       },
@@ -406,8 +406,8 @@
       "canonical_target": "docs/architecture/incremental-execution.md",
       "component_id": "incremental_execution",
       "component_type": "repository_infrastructure",
-      "description": "从真实变更计划、NonImpactProof、结构化执行 profile、完整 cache identity、validator、rollback 与 recovery 构成仓库级候选能力；不识别现实因果。",
-      "label": "增量执行与选择性物化 1.3 Draft",
+      "description": "\u4ece\u771f\u5b9e\u53d8\u66f4\u8ba1\u5212\u3001NonImpactProof\u3001\u7ed3\u6784\u5316\u6267\u884c profile\u3001\u5b8c\u6574 cache identity\u3001validator\u3001rollback \u4e0e recovery \u6784\u6210\u4ed3\u5e93\u7ea7\u5019\u9009\u80fd\u529b\uff1b\u4e0d\u8bc6\u522b\u73b0\u5b9e\u56e0\u679c\u3002",
+      "label": "\u589e\u91cf\u6267\u884c\u4e0e\u9009\u62e9\u6027\u7269\u5316 1.3 Draft",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "docs/architecture/incremental-execution.md",
@@ -415,7 +415,7 @@
         "version": "1.3.0"
       },
       "map_projection": {
-        "no_change_reason": "增量执行是 iteration 节点的 1.3 候选物化能力；新增独立可见节点会重复同一操作职责。",
+        "no_change_reason": "\u589e\u91cf\u6267\u884c\u662f iteration \u8282\u70b9\u7684 1.3 \u5019\u9009\u7269\u5316\u80fd\u529b\uff1b\u65b0\u589e\u72ec\u7acb\u53ef\u89c1\u8282\u70b9\u4f1a\u91cd\u590d\u540c\u4e00\u64cd\u4f5c\u804c\u8d23\u3002",
         "represented_by": "iteration",
         "visible": false
       },
@@ -452,8 +452,8 @@
       "canonical_target": "ITERATION.md",
       "component_id": "iteration",
       "component_type": "operation_control",
-      "description": "1.2 类型化传播为 Current；1.3 候选增加自举增量规划、选择性物化、缓存身份与回滚恢复。",
-      "label": "点火迭代操作法 1.2 Current / 1.3 Draft",
+      "description": "1.2 \u7c7b\u578b\u5316\u4f20\u64ad\u4e3a Current\uff1b1.3 \u5019\u9009\u589e\u52a0\u81ea\u4e3e\u589e\u91cf\u89c4\u5212\u3001\u9009\u62e9\u6027\u7269\u5316\u3001\u7f13\u5b58\u8eab\u4efd\u4e0e\u56de\u6eda\u6062\u590d\u3002",
+      "label": "\u70b9\u706b\u8fed\u4ee3\u64cd\u4f5c\u6cd5 1.2 Current / 1.3 Draft",
       "layer_or_overlay": "overlay",
       "lifecycle": {
         "source": "docs/architecture/incremental-execution.md",
@@ -479,7 +479,7 @@
       "canonical_target": "schemas/operations/iteration-manifest.schema.json",
       "component_id": "iteration_manifest_contract",
       "component_type": "repository_infrastructure",
-      "description": "把种子、路径、决定、map impact、residue 和 closure hash 绑定进每轮 manifest。",
+      "description": "\u628a\u79cd\u5b50\u3001\u8def\u5f84\u3001\u51b3\u5b9a\u3001map impact\u3001residue \u548c closure hash \u7ed1\u5b9a\u8fdb\u6bcf\u8f6e manifest\u3002",
       "label": "Iteration manifest contract 1.2 Draft",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
@@ -488,7 +488,7 @@
         "version": "1.2.0-candidate"
       },
       "map_projection": {
-        "no_change_reason": "manifest contract 是迭代节点的审计接口，不是新架构构件。",
+        "no_change_reason": "manifest contract \u662f\u8fed\u4ee3\u8282\u70b9\u7684\u5ba1\u8ba1\u63a5\u53e3\uff0c\u4e0d\u662f\u65b0\u67b6\u6784\u6784\u4ef6\u3002",
         "represented_by": "iteration",
         "visible": false
       },
@@ -500,14 +500,14 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "canonical_target": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
       "component_id": "l0",
       "component_type": "architecture_layer",
-      "description": "保存来源事实、版本、范围与证据边界。",
-      "label": "L0 来源与证据",
+      "description": "\u4fdd\u5b58\u6765\u6e90\u4e8b\u5b9e\u3001\u7248\u672c\u3001\u8303\u56f4\u4e0e\u8bc1\u636e\u8fb9\u754c\u3002",
+      "label": "L0 \u6765\u6e90\u4e0e\u8bc1\u636e",
       "layer_or_overlay": "L0",
       "lifecycle": {
-        "source": "ARCHITECTURE.md#七层关系",
+        "source": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
         "status": "current"
       },
       "map_projection": {
@@ -521,14 +521,14 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "canonical_target": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
       "component_id": "l1",
       "component_type": "architecture_layer",
-      "description": "声明主体、条件、量词、范围与失败边界。",
-      "label": "L1 受控语义命题",
+      "description": "\u58f0\u660e\u4e3b\u4f53\u3001\u6761\u4ef6\u3001\u91cf\u8bcd\u3001\u8303\u56f4\u4e0e\u5931\u8d25\u8fb9\u754c\u3002",
+      "label": "L1 \u53d7\u63a7\u8bed\u4e49\u547d\u9898",
       "layer_or_overlay": "L1",
       "lifecycle": {
-        "source": "ARCHITECTURE.md#七层关系",
+        "source": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
         "status": "current"
       },
       "map_projection": {
@@ -541,14 +541,14 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "canonical_target": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
       "component_id": "l2",
       "component_type": "architecture_layer",
-      "description": "选择可审计的对象类型与规范表示。",
-      "label": "L2 形式对象",
+      "description": "\u9009\u62e9\u53ef\u5ba1\u8ba1\u7684\u5bf9\u8c61\u7c7b\u578b\u4e0e\u89c4\u8303\u8868\u793a\u3002",
+      "label": "L2 \u5f62\u5f0f\u5bf9\u8c61",
       "layer_or_overlay": "L2",
       "lifecycle": {
-        "source": "ARCHITECTURE.md#七层关系",
+        "source": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
         "status": "current"
       },
       "map_projection": {
@@ -561,14 +561,14 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "canonical_target": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
       "component_id": "l3",
       "component_type": "architecture_layer",
-      "description": "保存前提、规则、结论、反例与未决义务。",
-      "label": "L3 逻辑论证",
+      "description": "\u4fdd\u5b58\u524d\u63d0\u3001\u89c4\u5219\u3001\u7ed3\u8bba\u3001\u53cd\u4f8b\u4e0e\u672a\u51b3\u4e49\u52a1\u3002",
+      "label": "L3 \u903b\u8f91\u8bba\u8bc1",
       "layer_or_overlay": "L3",
       "lifecycle": {
-        "source": "ARCHITECTURE.md#七层关系",
+        "source": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
         "status": "current"
       },
       "map_projection": {
@@ -581,14 +581,14 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "canonical_target": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
       "component_id": "l4",
       "component_type": "architecture_layer",
-      "description": "保存模型、证明义务、证明和反例工件。",
-      "label": "L4 数学模型与证明",
+      "description": "\u4fdd\u5b58\u6a21\u578b\u3001\u8bc1\u660e\u4e49\u52a1\u3001\u8bc1\u660e\u548c\u53cd\u4f8b\u5de5\u4ef6\u3002",
+      "label": "L4 \u6570\u5b66\u6a21\u578b\u4e0e\u8bc1\u660e",
       "layer_or_overlay": "L4",
       "lifecycle": {
-        "source": "ARCHITECTURE.md#七层关系",
+        "source": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
         "status": "current"
       },
       "map_projection": {
@@ -602,14 +602,14 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "canonical_target": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
       "component_id": "l5",
       "component_type": "architecture_layer",
-      "description": "分开评估形式、逻辑、数学、经验、范围与来源。",
-      "label": "L5 验证与有效性",
+      "description": "\u5206\u5f00\u8bc4\u4f30\u5f62\u5f0f\u3001\u903b\u8f91\u3001\u6570\u5b66\u3001\u7ecf\u9a8c\u3001\u8303\u56f4\u4e0e\u6765\u6e90\u3002",
+      "label": "L5 \u9a8c\u8bc1\u4e0e\u6709\u6548\u6027",
       "layer_or_overlay": "L5",
       "lifecycle": {
-        "source": "ARCHITECTURE.md#七层关系",
+        "source": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
         "status": "current"
       },
       "map_projection": {
@@ -623,14 +623,14 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "canonical_target": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
       "component_id": "l6",
       "component_type": "architecture_layer",
-      "description": "在不提高下层 claim 的前提下阐释、应用与发布。",
-      "label": "L6 解释、应用与出版",
+      "description": "\u5728\u4e0d\u63d0\u9ad8\u4e0b\u5c42 claim \u7684\u524d\u63d0\u4e0b\u9610\u91ca\u3001\u5e94\u7528\u4e0e\u53d1\u5e03\u3002",
+      "label": "L6 \u89e3\u91ca\u3001\u5e94\u7528\u4e0e\u51fa\u7248",
       "layer_or_overlay": "L6",
       "lifecycle": {
-        "source": "ARCHITECTURE.md#七层关系",
+        "source": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
         "status": "current"
       },
       "map_projection": {
@@ -647,8 +647,8 @@
       "canonical_target": "docs/governance/licensing-rights-inventory.md",
       "component_id": "licensing",
       "component_type": "governance_constraint",
-      "description": "区分自有、第三方、可公开与受限材料。",
-      "label": "许可 / 权利边界",
+      "description": "\u533a\u5206\u81ea\u6709\u3001\u7b2c\u4e09\u65b9\u3001\u53ef\u516c\u5f00\u4e0e\u53d7\u9650\u6750\u6599\u3002",
+      "label": "\u8bb8\u53ef / \u6743\u5229\u8fb9\u754c",
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "docs/governance/licensing-rights-inventory.md",
@@ -669,8 +669,8 @@
       "canonical_target": "docs/architecture/multiscale-causal-fabric.md",
       "component_id": "mcf",
       "component_type": "model_projection",
-      "description": "组织带因果类型、边界和残余的跨尺度候选投影。",
-      "label": "MCF 多尺度因果织体",
+      "description": "\u7ec4\u7ec7\u5e26\u56e0\u679c\u7c7b\u578b\u3001\u8fb9\u754c\u548c\u6b8b\u4f59\u7684\u8de8\u5c3a\u5ea6\u5019\u9009\u6295\u5f71\u3002",
+      "label": "MCF \u591a\u5c3a\u5ea6\u56e0\u679c\u7ec7\u4f53",
       "layer_or_overlay": "overlay",
       "lifecycle": {
         "source": "docs/architecture/multiscale-causal-fabric.md",
@@ -688,14 +688,14 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": "ARCHITECTURE.md#七层关系",
+      "canonical_target": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
       "component_id": "no_l7",
       "component_type": "interpretation_boundary",
-      "description": "系统图和写作素材池都在现有 L0—L6 与 overlay 内工作。",
-      "label": "不增加 L7",
+      "description": "\u7cfb\u7edf\u56fe\u548c\u5199\u4f5c\u7d20\u6750\u6c60\u90fd\u5728\u73b0\u6709 L0\u2014L6 \u4e0e overlay \u5185\u5de5\u4f5c\u3002",
+      "label": "\u4e0d\u589e\u52a0 L7",
       "layer_or_overlay": "boundary",
       "lifecycle": {
-        "source": "ARCHITECTURE.md#七层关系",
+        "source": "ARCHITECTURE.md#\u4e03\u5c42\u5173\u7cfb",
         "status": "boundary"
       },
       "map_projection": {
@@ -711,8 +711,8 @@
       "canonical_target": "docs/project-current-state.md",
       "component_id": "no_totality_proof",
       "component_type": "interpretation_boundary",
-      "description": "完整图是当前导航投影，不是永久总图或理论完备性证明。",
-      "label": "不证明理论完整",
+      "description": "\u5b8c\u6574\u56fe\u662f\u5f53\u524d\u5bfc\u822a\u6295\u5f71\uff0c\u4e0d\u662f\u6c38\u4e45\u603b\u56fe\u6216\u7406\u8bba\u5b8c\u5907\u6027\u8bc1\u660e\u3002",
+      "label": "\u4e0d\u8bc1\u660e\u7406\u8bba\u5b8c\u6574",
       "layer_or_overlay": "boundary",
       "lifecycle": {
         "source": "docs/project-current-state.md",
@@ -729,8 +729,8 @@
       "canonical_target": "FOUNDATION.md",
       "component_id": "no_truth_upgrade",
       "component_type": "interpretation_boundary",
-      "description": "节点、连线、生成结果、测试与点击量都不能制造事实或因果。",
-      "label": "不自动升级真值",
+      "description": "\u8282\u70b9\u3001\u8fde\u7ebf\u3001\u751f\u6210\u7ed3\u679c\u3001\u6d4b\u8bd5\u4e0e\u70b9\u51fb\u91cf\u90fd\u4e0d\u80fd\u5236\u9020\u4e8b\u5b9e\u6216\u56e0\u679c\u3002",
+      "label": "\u4e0d\u81ea\u52a8\u5347\u7ea7\u771f\u503c",
       "layer_or_overlay": "boundary",
       "lifecycle": {
         "source": "FOUNDATION.md",
@@ -747,15 +747,15 @@
       "canonical_target": ".github/workflows/pages.yml",
       "component_id": "pages_pipeline",
       "component_type": "repository_infrastructure",
-      "description": "由人工维护的 workflow 和 Pages 部署边界；本地仅验证，不伪装为自动构件物化。",
-      "label": "Pages 双表面发布链",
+      "description": "\u7531\u4eba\u5de5\u7ef4\u62a4\u7684 workflow \u548c Pages \u90e8\u7f72\u8fb9\u754c\uff1b\u672c\u5730\u4ec5\u9a8c\u8bc1\uff0c\u4e0d\u4f2a\u88c5\u4e3a\u81ea\u52a8\u6784\u4ef6\u7269\u5316\u3002",
+      "label": "Pages \u53cc\u8868\u9762\u53d1\u5e03\u94fe",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": ".github/workflows/pages.yml",
         "status": "current"
       },
       "map_projection": {
-        "no_change_reason": "README 节点和完整图入口已经承担双表面导航；发布 workflow 不增加读者概念节点。",
+        "no_change_reason": "README \u8282\u70b9\u548c\u5b8c\u6574\u56fe\u5165\u53e3\u5df2\u7ecf\u627f\u62c5\u53cc\u8868\u9762\u5bfc\u822a\uff1b\u53d1\u5e03 workflow \u4e0d\u589e\u52a0\u8bfb\u8005\u6982\u5ff5\u8282\u70b9\u3002",
         "represented_by": "readme",
         "visible": false
       },
@@ -771,7 +771,7 @@
       "canonical_target": "reports/publication/jin-rise-point-fire-analysis.md",
       "component_id": "point_fire_analysis",
       "component_type": "publication_chain",
-      "description": "点火对案例生成的可追溯增量结构，也可进入写作素材池。",
+      "description": "\u70b9\u706b\u5bf9\u6848\u4f8b\u751f\u6210\u7684\u53ef\u8ffd\u6eaf\u589e\u91cf\u7ed3\u6784\uff0c\u4e5f\u53ef\u8fdb\u5165\u5199\u4f5c\u7d20\u6750\u6c60\u3002",
       "label": "Point-fire analysis",
       "layer_or_overlay": "publication",
       "lifecycle": {
@@ -791,8 +791,8 @@
       "canonical_target": "data/operations/project-components.json",
       "component_id": "project_component_registry",
       "component_type": "repository_infrastructure",
-      "description": "当前 1.0 保存构件身份与图投影；1.1 候选登记增量执行构件。",
-      "label": "项目构件 registry 1.0 Current / 1.1 Draft",
+      "description": "\u5f53\u524d 1.0 \u4fdd\u5b58\u6784\u4ef6\u8eab\u4efd\u4e0e\u56fe\u6295\u5f71\uff1b1.1 \u5019\u9009\u767b\u8bb0\u589e\u91cf\u6267\u884c\u6784\u4ef6\u3002",
+      "label": "\u9879\u76ee\u6784\u4ef6 registry 1.0 Current / 1.1 Draft",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "data/operations/project-components.json",
@@ -800,7 +800,7 @@
         "version": "1.1.0"
       },
       "map_projection": {
-        "no_change_reason": "现有 sync 节点已经承载项目 registry 与同步闭包入口；新增节点会重复同一操作职责。",
+        "no_change_reason": "\u73b0\u6709 sync \u8282\u70b9\u5df2\u7ecf\u627f\u8f7d\u9879\u76ee registry \u4e0e\u540c\u6b65\u95ed\u5305\u5165\u53e3\uff1b\u65b0\u589e\u8282\u70b9\u4f1a\u91cd\u590d\u540c\u4e00\u64cd\u4f5c\u804c\u8d23\u3002",
         "represented_by": "sync",
         "visible": false
       },
@@ -814,8 +814,8 @@
       "canonical_target": "tools/operations/compute_change_propagation.py",
       "component_id": "propagation_calculator",
       "component_type": "repository_infrastructure",
-      "description": "人工维护的计算器实现；本地 profile 只验证其合同，具体 closure 产物必须由带显式 request/output 的调用生成。",
-      "label": "变更传播闭包计算器 0.1 Current",
+      "description": "\u4eba\u5de5\u7ef4\u62a4\u7684\u8ba1\u7b97\u5668\u5b9e\u73b0\uff1b\u672c\u5730 profile \u53ea\u9a8c\u8bc1\u5176\u5408\u540c\uff0c\u5177\u4f53 closure \u4ea7\u7269\u5fc5\u987b\u7531\u5e26\u663e\u5f0f request/output \u7684\u8c03\u7528\u751f\u6210\u3002",
+      "label": "\u53d8\u66f4\u4f20\u64ad\u95ed\u5305\u8ba1\u7b97\u5668 0.1 Current",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "tools/operations/compute_change_propagation.py",
@@ -823,7 +823,7 @@
         "version": "0.1.0"
       },
       "map_projection": {
-        "no_change_reason": "计算器实现迭代节点的新候选能力，不构成新的操作层或独立用户入口。",
+        "no_change_reason": "\u8ba1\u7b97\u5668\u5b9e\u73b0\u8fed\u4ee3\u8282\u70b9\u7684\u65b0\u5019\u9009\u80fd\u529b\uff0c\u4e0d\u6784\u6210\u65b0\u7684\u64cd\u4f5c\u5c42\u6216\u72ec\u7acb\u7528\u6237\u5165\u53e3\u3002",
         "represented_by": "iteration",
         "visible": false
       },
@@ -847,8 +847,8 @@
       "canonical_target": "data/operations/change-propagation-topology.json",
       "component_id": "propagation_topology",
       "component_type": "repository_infrastructure",
-      "description": "保持现实因果候选、仓库依赖与治理同步权限分离，新增增量执行的仓库派生关系。",
-      "label": "类型化传播拓扑 1.0 Current / 1.1 Draft",
+      "description": "\u4fdd\u6301\u73b0\u5b9e\u56e0\u679c\u5019\u9009\u3001\u4ed3\u5e93\u4f9d\u8d56\u4e0e\u6cbb\u7406\u540c\u6b65\u6743\u9650\u5206\u79bb\uff0c\u65b0\u589e\u589e\u91cf\u6267\u884c\u7684\u4ed3\u5e93\u6d3e\u751f\u5173\u7cfb\u3002",
+      "label": "\u7c7b\u578b\u5316\u4f20\u64ad\u62d3\u6251 1.0 Current / 1.1 Draft",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "data/operations/change-propagation-topology.json",
@@ -856,7 +856,7 @@
         "version": "1.1.0"
       },
       "map_projection": {
-        "no_change_reason": "现有 sync 节点已明确改名为类型化传播闭包；拓扑是其机器资产而非新的架构构件。",
+        "no_change_reason": "\u73b0\u6709 sync \u8282\u70b9\u5df2\u660e\u786e\u6539\u540d\u4e3a\u7c7b\u578b\u5316\u4f20\u64ad\u95ed\u5305\uff1b\u62d3\u6251\u662f\u5176\u673a\u5668\u8d44\u4ea7\u800c\u975e\u65b0\u7684\u67b6\u6784\u6784\u4ef6\u3002",
         "represented_by": "sync",
         "visible": false
       },
@@ -868,14 +868,14 @@
     },
     {
       "authority": "declarative",
-      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#\u8fd4\u56de\u70b9\u706b",
       "component_id": "provenance_capture",
       "component_type": "feedback_interface",
-      "description": "登记主体、渠道、时间、原文范围、版本和解释限制。",
+      "description": "\u767b\u8bb0\u4e3b\u4f53\u3001\u6e20\u9053\u3001\u65f6\u95f4\u3001\u539f\u6587\u8303\u56f4\u3001\u7248\u672c\u548c\u89e3\u91ca\u9650\u5236\u3002",
       "label": "Provenance capture",
       "layer_or_overlay": "publication",
       "lifecycle": {
-        "source": "docs/publication/zhiyuan-writing-method.md#返回点火",
+        "source": "docs/publication/zhiyuan-writing-method.md#\u8fd4\u56de\u70b9\u706b",
         "status": "current"
       },
       "map_projection": {
@@ -891,8 +891,8 @@
       "canonical_target": "docs/architecture/probabilistic-system-dynamics.md",
       "component_id": "psd",
       "component_type": "model_projection",
-      "description": "补充随机演化、状态、边界与干预语义。",
-      "label": "PSD 概率系统动力学",
+      "description": "\u8865\u5145\u968f\u673a\u6f14\u5316\u3001\u72b6\u6001\u3001\u8fb9\u754c\u4e0e\u5e72\u9884\u8bed\u4e49\u3002",
+      "label": "PSD \u6982\u7387\u7cfb\u7edf\u52a8\u529b\u5b66",
       "layer_or_overlay": "overlay",
       "lifecycle": {
         "source": "docs/architecture/probabilistic-system-dynamics.md",
@@ -910,14 +910,14 @@
     },
     {
       "authority": "declarative",
-      "canonical_target": "docs/publication/zhiyuan-writing-method.md#返回点火",
+      "canonical_target": "docs/publication/zhiyuan-writing-method.md#\u8fd4\u56de\u70b9\u706b",
       "component_id": "public_response",
       "component_type": "feedback_interface",
-      "description": "作品、读者响应、作者修订与现实反例。",
+      "description": "\u4f5c\u54c1\u3001\u8bfb\u8005\u54cd\u5e94\u3001\u4f5c\u8005\u4fee\u8ba2\u4e0e\u73b0\u5b9e\u53cd\u4f8b\u3002",
       "label": "Public work / response",
       "layer_or_overlay": "publication",
       "lifecycle": {
-        "source": "docs/publication/zhiyuan-writing-method.md#返回点火",
+        "source": "docs/publication/zhiyuan-writing-method.md#\u8fd4\u56de\u70b9\u706b",
         "status": "current"
       },
       "map_projection": {
@@ -933,8 +933,8 @@
       "canonical_target": "docs/architecture/effectual-action-plane.md",
       "component_id": "q12",
       "component_type": "operation_control",
-      "description": "从最小状态改变到行动后机制裁决。",
-      "label": "Q12 行动 / 机制双环",
+      "description": "\u4ece\u6700\u5c0f\u72b6\u6001\u6539\u53d8\u5230\u884c\u52a8\u540e\u673a\u5236\u88c1\u51b3\u3002",
+      "label": "Q12 \u884c\u52a8 / \u673a\u5236\u53cc\u73af",
       "layer_or_overlay": "overlay",
       "lifecycle": {
         "source": "docs/architecture/effectual-action-plane.md",
@@ -954,8 +954,8 @@
       "canonical_target": "docs/architecture/attention-attractor-control-plane.md",
       "component_id": "q13",
       "component_type": "operation_control",
-      "description": "控制吸引子、采样分布、决策坍缩与压缩完整性。",
-      "label": "Q13 注意力 / 分布 / 压缩",
+      "description": "\u63a7\u5236\u5438\u5f15\u5b50\u3001\u91c7\u6837\u5206\u5e03\u3001\u51b3\u7b56\u574d\u7f29\u4e0e\u538b\u7f29\u5b8c\u6574\u6027\u3002",
+      "label": "Q13 \u6ce8\u610f\u529b / \u5206\u5e03 / \u538b\u7f29",
       "layer_or_overlay": "overlay",
       "lifecycle": {
         "source": "docs/architecture/attention-attractor-control-plane.md",
@@ -976,8 +976,8 @@
       "canonical_target": "docs/architecture/ignition-atlas.md",
       "component_id": "q14",
       "component_type": "operation_control",
-      "description": "提供版本化、多视角、可回溯的导航投影。",
-      "label": "Q14 点火地图集",
+      "description": "\u63d0\u4f9b\u7248\u672c\u5316\u3001\u591a\u89c6\u89d2\u3001\u53ef\u56de\u6eaf\u7684\u5bfc\u822a\u6295\u5f71\u3002",
+      "label": "Q14 \u70b9\u706b\u5730\u56fe\u96c6",
       "layer_or_overlay": "overlay",
       "lifecycle": {
         "source": "docs/architecture/ignition-atlas.md",
@@ -997,8 +997,8 @@
       "canonical_target": "README.md",
       "component_id": "readme",
       "component_type": "front_door",
-      "description": "项目现状、成果、价值约束、完整系统图与使用入口。",
-      "label": "README 首页",
+      "description": "\u9879\u76ee\u73b0\u72b6\u3001\u6210\u679c\u3001\u4ef7\u503c\u7ea6\u675f\u3001\u5b8c\u6574\u7cfb\u7edf\u56fe\u4e0e\u4f7f\u7528\u5165\u53e3\u3002",
+      "label": "README \u9996\u9875",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "README.md",
@@ -1017,8 +1017,8 @@
       "canonical_target": "docs/publication/zhiyuan-writing-showcase.md",
       "component_id": "showcase",
       "component_type": "publication_chain",
-      "description": "人类可读的完整成果导航。",
-      "label": "成果索引",
+      "description": "\u4eba\u7c7b\u53ef\u8bfb\u7684\u5b8c\u6574\u6210\u679c\u5bfc\u822a\u3002",
+      "label": "\u6210\u679c\u7d22\u5f15",
       "layer_or_overlay": "publication",
       "lifecycle": {
         "source": "docs/publication/zhiyuan-writing-showcase.md",
@@ -1037,8 +1037,8 @@
       "canonical_target": "data/publication/zhiyuan-writing-showcase.json",
       "component_id": "showcase_registry",
       "component_type": "publication_chain",
-      "description": "机器可读的排序、路径、哈希、review 与 claim ceiling。",
-      "label": "成果 registry",
+      "description": "\u673a\u5668\u53ef\u8bfb\u7684\u6392\u5e8f\u3001\u8def\u5f84\u3001\u54c8\u5e0c\u3001review \u4e0e claim ceiling\u3002",
+      "label": "\u6210\u679c registry",
       "layer_or_overlay": "publication",
       "lifecycle": {
         "source": "data/publication/zhiyuan-writing-showcase.json",
@@ -1054,11 +1054,11 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": "templates/publication/zhiyuan-writing-spec.md#双来源素材池",
+      "canonical_target": "templates/publication/zhiyuan-writing-spec.md#\u53cc\u6765\u6e90\u7d20\u6750\u6c60",
       "component_id": "source_pool",
       "component_type": "publication_chain",
-      "description": "同时接收外部输入与已登记的点火增量输出，保存来源类型和 claim ceiling。",
-      "label": "写作素材池",
+      "description": "\u540c\u65f6\u63a5\u6536\u5916\u90e8\u8f93\u5165\u4e0e\u5df2\u767b\u8bb0\u7684\u70b9\u706b\u589e\u91cf\u8f93\u51fa\uff0c\u4fdd\u5b58\u6765\u6e90\u7c7b\u578b\u548c claim ceiling\u3002",
+      "label": "\u5199\u4f5c\u7d20\u6750\u6c60",
       "layer_or_overlay": "publication",
       "lifecycle": {
         "source": "templates/publication/zhiyuan-writing-spec.md",
@@ -1078,8 +1078,8 @@
       "canonical_target": "SUMMARY.md",
       "component_id": "summary",
       "component_type": "front_door",
-      "description": "按主题进入正式资产。",
-      "label": "SUMMARY 导航",
+      "description": "\u6309\u4e3b\u9898\u8fdb\u5165\u6b63\u5f0f\u8d44\u4ea7\u3002",
+      "label": "SUMMARY \u5bfc\u822a",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "SUMMARY.md",
@@ -1098,8 +1098,8 @@
       "canonical_target": "reports/atlas/maps/map-maintainer-sustainability-economics.md",
       "component_id": "sustainability",
       "component_type": "governance_constraint",
-      "description": "将时间、注意力、资金、维护负荷与锁定风险纳入行动。",
-      "label": "维护者可持续性边界",
+      "description": "\u5c06\u65f6\u95f4\u3001\u6ce8\u610f\u529b\u3001\u8d44\u91d1\u3001\u7ef4\u62a4\u8d1f\u8377\u4e0e\u9501\u5b9a\u98ce\u9669\u7eb3\u5165\u884c\u52a8\u3002",
+      "label": "\u7ef4\u62a4\u8005\u53ef\u6301\u7eed\u6027\u8fb9\u754c",
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "reports/atlas/maps/map-maintainer-sustainability-economics.md",
@@ -1118,8 +1118,8 @@
       "canonical_target": "data/operations/synchronization-surfaces.json",
       "component_id": "sync",
       "component_type": "operation_control",
-      "description": "1.2 Current 传播闭包与 1.3 Draft 选择性物化联合工作；关键权威变更仍强制 full rebuild。",
-      "label": "同步表面 / 类型传播 / 增量执行",
+      "description": "1.2 Current \u4f20\u64ad\u95ed\u5305\u4e0e 1.3 Draft \u9009\u62e9\u6027\u7269\u5316\u8054\u5408\u5de5\u4f5c\uff1b\u5173\u952e\u6743\u5a01\u53d8\u66f4\u4ecd\u5f3a\u5236 full rebuild\u3002",
+      "label": "\u540c\u6b65\u8868\u9762 / \u7c7b\u578b\u4f20\u64ad / \u589e\u91cf\u6267\u884c",
       "layer_or_overlay": "overlay",
       "lifecycle": {
         "source": "docs/architecture/incremental-execution.md",
@@ -1140,8 +1140,8 @@
       "canonical_target": "data/architecture/interactive-system-map.json",
       "component_id": "system_map",
       "component_type": "interpretation_boundary",
-      "description": "信息性系统图边界，不对基础数据主张独立真理或当前状态完整性。",
-      "label": "系统图边界",
+      "description": "\u4fe1\u606f\u6027\u7cfb\u7edf\u56fe\u8fb9\u754c\uff0c\u4e0d\u5bf9\u57fa\u7840\u6570\u636e\u4e3b\u5f20\u72ec\u7acb\u771f\u7406\u6216\u5f53\u524d\u72b6\u6001\u5b8c\u6574\u6027\u3002",
+      "label": "\u7cfb\u7edf\u56fe\u8fb9\u754c",
       "layer_or_overlay": "boundary",
       "lifecycle": {
         "source": "data/architecture/interactive-system-map.json",
@@ -1159,8 +1159,8 @@
       "canonical_target": "data/architecture/interactive-system-map-layout.json",
       "component_id": "system_map_layout",
       "component_type": "repository_infrastructure",
-      "description": "只保存分组、颜色、顺序与几何；1.1 候选只同步 0.3 投影标识，不创建新真值。",
-      "label": "系统图布局 overlay 1.0 Current / 1.1 Draft",
+      "description": "\u53ea\u4fdd\u5b58\u5206\u7ec4\u3001\u989c\u8272\u3001\u987a\u5e8f\u4e0e\u51e0\u4f55\uff1b1.1 \u5019\u9009\u53ea\u540c\u6b65 0.3 \u6295\u5f71\u6807\u8bc6\uff0c\u4e0d\u521b\u5efa\u65b0\u771f\u503c\u3002",
+      "label": "\u7cfb\u7edf\u56fe\u5e03\u5c40 overlay 1.0 Current / 1.1 Draft",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "data/architecture/interactive-system-map-layout.json",
@@ -1168,7 +1168,7 @@
         "version": "1.1.0"
       },
       "map_projection": {
-        "no_change_reason": "布局是图的表现 overlay，不是实质项目构件。",
+        "no_change_reason": "\u5e03\u5c40\u662f\u56fe\u7684\u8868\u73b0 overlay\uff0c\u4e0d\u662f\u5b9e\u8d28\u9879\u76ee\u6784\u4ef6\u3002",
         "represented_by": "sync",
         "visible": false
       },
@@ -1182,8 +1182,8 @@
       "canonical_target": "data/architecture/interactive-system-map.json",
       "component_id": "system_map_projection",
       "component_type": "repository_infrastructure",
-      "description": "由 component registry、topology 和 layout overlay 确定性生成；0.3 候选投影增量执行边界。",
-      "label": "系统图 0.2 Current / 0.3 Draft 派生投影",
+      "description": "\u7531 component registry\u3001topology \u548c layout overlay \u786e\u5b9a\u6027\u751f\u6210\uff1b0.3 \u5019\u9009\u6295\u5f71\u589e\u91cf\u6267\u884c\u8fb9\u754c\u3002",
+      "label": "\u7cfb\u7edf\u56fe 0.2 Current / 0.3 Draft \u6d3e\u751f\u6295\u5f71",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "tools/generate_interactive_system_map.py",
@@ -1191,7 +1191,7 @@
         "version": "0.3.0"
       },
       "map_projection": {
-        "no_change_reason": "完整 SVG 自身是全图投影，不应再作为图中的自指节点。",
+        "no_change_reason": "\u5b8c\u6574 SVG \u81ea\u8eab\u662f\u5168\u56fe\u6295\u5f71\uff0c\u4e0d\u5e94\u518d\u4f5c\u4e3a\u56fe\u4e2d\u7684\u81ea\u6307\u8282\u70b9\u3002",
         "represented_by": "sync",
         "visible": false
       },
@@ -1210,8 +1210,8 @@
       "canonical_target": "docs/USAGE.md",
       "component_id": "usage",
       "component_type": "front_door",
-      "description": "从材料到受约束输出的最小使用流程。",
-      "label": "人类使用说明",
+      "description": "\u4ece\u6750\u6599\u5230\u53d7\u7ea6\u675f\u8f93\u51fa\u7684\u6700\u5c0f\u4f7f\u7528\u6d41\u7a0b\u3002",
+      "label": "\u4eba\u7c7b\u4f7f\u7528\u8bf4\u660e",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "docs/USAGE.md",
@@ -1230,8 +1230,8 @@
       "canonical_target": "docs/publication/zhiyuan-writing-method.md",
       "component_id": "zhiyuan_method",
       "component_type": "publication_chain",
-      "description": "以双来源素材池驱动 L6 心智层级跃迁与公共表达。",
-      "label": "之元写作法 0.4.0 Current",
+      "description": "\u4ee5\u53cc\u6765\u6e90\u7d20\u6750\u6c60\u9a71\u52a8 L6 \u5fc3\u667a\u5c42\u7ea7\u8dc3\u8fc1\u4e0e\u516c\u5171\u8868\u8fbe\u3002",
+      "label": "\u4e4b\u5143\u5199\u4f5c\u6cd5 0.4.0 Current",
       "layer_or_overlay": "L6",
       "lifecycle": {
         "source": "docs/publication/zhiyuan-writing-method.md",
@@ -1253,7 +1253,7 @@
       "component_id": "copyright_governance_jurisdiction_registry",
       "component_type": "governance_constraint",
       "description": "Representative multi-jurisdiction copyright rule registry for Q33 risk projection. Covers WIPO treaties, US, EU, UK, CA, AU, JP, SG, IN.",
-      "label": "版权治理-法域规则注册表",
+      "label": "\u7248\u6743\u6cbb\u7406-\u6cd5\u57df\u89c4\u5219\u6ce8\u518c\u8868",
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
@@ -1274,7 +1274,7 @@
       "component_id": "copyright_governance_source_rights",
       "component_type": "governance_constraint",
       "description": "Source rights registry categorizing materials by rights status and required governance actions.",
-      "label": "版权治理-来源权利注册表",
+      "label": "\u7248\u6743\u6cbb\u7406-\u6765\u6e90\u6743\u5229\u6ce8\u518c\u8868",
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
@@ -1295,7 +1295,7 @@
       "component_id": "copyright_governance_material_classification",
       "component_type": "governance_constraint",
       "description": "Material classification system L0-L6 for publication gate decisions.",
-      "label": "版权治理-材料分类系统",
+      "label": "\u7248\u6743\u6cbb\u7406-\u6750\u6599\u5206\u7c7b\u7cfb\u7edf",
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
@@ -1315,7 +1315,7 @@
       "component_id": "copyright_governance_history_remediation",
       "component_type": "governance_constraint",
       "description": "History remediation register for past copyright/rights boundary violations.",
-      "label": "版权治理-历史整改注册表",
+      "label": "\u7248\u6743\u6cbb\u7406-\u5386\u53f2\u6574\u6539\u6ce8\u518c\u8868",
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
@@ -1336,7 +1336,7 @@
       "component_id": "copyright_governance_publication_gate_validator",
       "component_type": "governance_constraint",
       "description": "Fail-closed publication gate validator enforcing source-rights, material classification, and non-republication principle.",
-      "label": "版权治理-发布门禁验证器",
+      "label": "\u7248\u6743\u6cbb\u7406-\u53d1\u5e03\u95e8\u7981\u9a8c\u8bc1\u5668",
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
@@ -1356,8 +1356,8 @@
       "canonical_target": "docs/governance/external-input-non-republication-principle.md",
       "component_id": "copyright_governance_non_republication_principle",
       "component_type": "governance_constraint",
-      "description": "External Input Non-Republication Principle — prohibits republication of third-party copyrighted material.",
-      "label": "版权治理-外部输入不重新发布原则",
+      "description": "External Input Non-Republication Principle \u2014 prohibits republication of third-party copyrighted material.",
+      "label": "\u7248\u6743\u6cbb\u7406-\u5916\u90e8\u8f93\u5165\u4e0d\u91cd\u65b0\u53d1\u5e03\u539f\u5219",
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
@@ -1378,7 +1378,7 @@
       "component_id": "copyright_governance_tests",
       "component_type": "governance_constraint",
       "description": "Production tests for Q33 governance infrastructure: registries, schemas, validator, mutation detection.",
-      "label": "版权治理-测试套件",
+      "label": "\u7248\u6743\u6cbb\u7406-\u6d4b\u8bd5\u5957\u4ef6",
       "layer_or_overlay": "governance",
       "lifecycle": {
         "source": "Q33 agent task",
@@ -1390,6 +1390,85 @@
       },
       "path_patterns": [
         "tests/test_q33_governance_infrastructure.py"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "schemas/discovery/commitment-claim.schema.json",
+      "component_id": "discovery_commitment_claim_contract",
+      "component_type": "repository_infrastructure",
+      "description": "Q34 typed claim/proposition contract separating discovery of a candidate claim from commitment as a current conclusion.",
+      "label": "\u53d1\u73b0\u2014\u627f\u8bfa\u8fb9\u754c claim \u5408\u540c",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q34 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "schemas/discovery/commitment-claim.schema.json",
+        "docs/discovery/discovery-commitment-boundary.md",
+        "docs/discovery/discovery-commitment-boundary-architecture.md",
+        "docs/discovery/q34-legacy-lab-salvage-matrix.json"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/discovery/validate_commitment_gate.py",
+      "component_id": "discovery_commitment_gate_validator",
+      "component_type": "repository_infrastructure",
+      "description": "Q34 fail-closed deterministic commitment gate/CLI: blocks premature, circular, ceiling-breach, analogy-as-mechanism, stale-head, selective, unattested, self-approved commitments.",
+      "label": "\u53d1\u73b0\u2014\u627f\u8bfa \u627f\u8bfa\u95e8\u7981",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q34 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/discovery/validate_commitment_gate.py",
+        "tools/discovery/validate_commitment_registry.py",
+        "tools/discovery/__init__.py",
+        "tests/discovery/__init__.py",
+        "tests/discovery/test_commitment_gate.py",
+        "data/discovery/evidence-resolvable-registry.json"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/discovery/claims/q33-seven-governance-components-current.json",
+      "component_id": "discovery_commitment_pilot_q33",
+      "component_type": "governance_constraint",
+      "description": "Q34 pilot claim proving the boundary: 7 Q33 components Current in Main (allowed) vs global-copyright-compliance (blocked by ceiling).",
+      "label": "\u53d1\u73b0\u2014\u627f\u8bfa Q33 \u8bd5\u70b9",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q34 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/discovery/claims/q33-seven-governance-components-current.json",
+        "data/discovery/fixtures/01-allow-commit-positive.json",
+        "data/discovery/fixtures/02-premature-no-evidence.json",
+        "data/discovery/fixtures/03-circular-self-proof.json",
+        "data/discovery/fixtures/04-claim-ceiling-breach.json",
+        "data/discovery/fixtures/05-analogy-as-mechanism.json",
+        "data/discovery/fixtures/06-stale-exact-head.json",
+        "data/discovery/fixtures/07-selective-reporting.json",
+        "data/discovery/fixtures/08-retraction-new-positive.json",
+        "data/discovery/fixtures/09-uncommitted-path-deferred.json",
+        "data/discovery/fixtures/10-q33-global-compliance-breach.json",
+        "data/discovery/fixtures/11-external-world-no-attestation.json"
       ]
     }
   ],
