@@ -1,0 +1,264 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "D2-I1",
+  "capability_id": "multi_history_world_projection",
+  "parent_binding": {
+    "task_id": "F15-D1-I1",
+    "exact_head": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/latent/pilot-f15-d1-i1.json",
+      "exact_head": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301",
+      "artifact_digest": "sha256:379960556f1b0d8c6fa4c830c052a31e09ff0c803d1ddd878895d2623fd3df3d",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "data/anomaly/pilot-q41-i1.json",
+      "exact_head": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301",
+      "artifact_digest": "sha256:5fa6720008c17e96dec64420866a918fcd577937617c6331cbebee0ec20aa797",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "FOUNDATION.md",
+      "exact_head": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301",
+      "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
+      "rights_status": "REPOSITORY_INTERNAL"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "TWO_WORLD_EQUIVALENCE_SET",
+      "world_candidates": {
+        "status": "RECORDED",
+        "value": "bounded world_candidates for TWO_WORLD_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "divergence_point": {
+        "status": "RECORDED",
+        "value": "bounded divergence_point for TWO_WORLD_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "shared_evidence": {
+        "status": "RECORDED",
+        "value": "bounded shared_evidence for TWO_WORLD_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "branch_specific_assumptions": {
+        "status": "RECORDED",
+        "value": "bounded branch_specific_assumptions for TWO_WORLD_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "indistinguishable_set": {
+        "status": "RECORDED",
+        "value": "bounded indistinguishable_set for TWO_WORLD_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "falsifiers": {
+        "status": "RECORDED",
+        "value": "bounded falsifiers for TWO_WORLD_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "justified_weights": {
+        "status": "RECORDED",
+        "value": "bounded justified_weights for TWO_WORLD_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "unresolved_paths": {
+        "status": "RECORDED",
+        "value": "bounded unresolved_paths for TWO_WORLD_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "narrative_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded narrative_ceiling for TWO_WORLD_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for TWO_WORLD_EQUIVALENCE_SET",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "WEIGHTED_WORLD_WITH_JUSTIFICATION",
+      "world_candidates": {
+        "status": "RECORDED",
+        "value": "bounded world_candidates for WEIGHTED_WORLD_WITH_JUSTIFICATION",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "divergence_point": {
+        "status": "RECORDED",
+        "value": "bounded divergence_point for WEIGHTED_WORLD_WITH_JUSTIFICATION",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "shared_evidence": {
+        "status": "RECORDED",
+        "value": "bounded shared_evidence for WEIGHTED_WORLD_WITH_JUSTIFICATION",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "branch_specific_assumptions": {
+        "status": "RECORDED",
+        "value": "bounded branch_specific_assumptions for WEIGHTED_WORLD_WITH_JUSTIFICATION",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "indistinguishable_set": {
+        "status": "RECORDED",
+        "value": "bounded indistinguishable_set for WEIGHTED_WORLD_WITH_JUSTIFICATION",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "falsifiers": {
+        "status": "RECORDED",
+        "value": "bounded falsifiers for WEIGHTED_WORLD_WITH_JUSTIFICATION",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "justified_weights": {
+        "status": "RECORDED",
+        "value": "bounded justified_weights for WEIGHTED_WORLD_WITH_JUSTIFICATION",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "unresolved_paths": {
+        "status": "RECORDED",
+        "value": "bounded unresolved_paths for WEIGHTED_WORLD_WITH_JUSTIFICATION",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "narrative_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded narrative_ceiling for WEIGHTED_WORLD_WITH_JUSTIFICATION",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for WEIGHTED_WORLD_WITH_JUSTIFICATION",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "every_world_evidence_bound": true,
+    "no_forced_unique_story": true,
+    "indistinguishable_not_ranked_fact": true,
+    "weights_need_justification": true,
+    "possibility_not_probability": true,
+    "falsifier_required": true,
+    "unresolved_paths_preserved": true,
+    "narrative_ceiling_preserved": true
+  },
+  "rule_assertions": [
+    {
+      "rule_id": "every_world_evidence_bound",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "no_forced_unique_story",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "indistinguishable_not_ranked_fact",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "weights_need_justification",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "possibility_not_probability",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "falsifier_required",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "unresolved_paths_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "narrative_ceiling_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    }
+  ],
+  "conclusion": {
+    "statement": "Multiple evidence-constrained history/world candidates can preserve shared evidence, branch assumptions, indistinguishable sets and falsifiers without forcing a unique story or unjustified probability.",
+    "claim_ceiling": "candidate_only_repository_governance",
+    "history_preserved": true,
+    "external_action_performed": true
+  }
+}
