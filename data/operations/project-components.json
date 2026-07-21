@@ -93,7 +93,8 @@
         "copyright_governance_publication_gate_validator",
         "copyright_governance_history_remediation",
         "copyright_governance_tests",
-        "licensing"
+        "licensing",
+        "symbolic_power_perspective_gate_validator"
       ],
       "path_patterns": [
         "data/governance/",
@@ -1961,8 +1962,73 @@
         "data/failure/pilot-q39-failure-lineage.json",
         "data/failure/fixtures/"
       ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "schemas/symbolic/symbolic_power_perspective-contract.schema.json",
+      "component_id": "symbolic_power_perspective_contract",
+      "component_type": "governance_constraint",
+      "description": "SYMBOLIC-SPHERE-I1 typed evidence-bound contract. The same object can be represented as separate material fact, actor position, meaning projection and institutionalized power surfaces, with evidence-constrained counter-readings and visible benefit/cost distribution.",
+      "label": "Symbolic Object, Power & Multi-Perspective Governance 合同",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "SYMBOLIC-SPHERE-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "schemas/symbolic/symbolic_power_perspective-contract.schema.json",
+        "docs/symbolic/"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/symbolic/validate_symbolic_power_perspective_gate.py",
+      "component_id": "symbolic_power_perspective_gate_validator",
+      "component_type": "governance_constraint",
+      "description": "SYMBOLIC-SPHERE-I1 fail-closed real CLI enforcing evidence binding, exact parent, 12 task rules, candidate ceiling and no external action.",
+      "label": "Symbolic Object, Power & Multi-Perspective Governance 门禁",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "SYMBOLIC-SPHERE-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/symbolic/",
+        "tests/symbolic/",
+        "tools/governance/structured_capability_gate.py",
+        "tools/governance/build_structured_capability_fixtures.py"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/symbolic/pilot-symbolic-sphere-i1.json",
+      "component_id": "symbolic_power_perspective_pilot",
+      "component_type": "governance_constraint",
+      "description": "SYMBOLIC-SPHERE-I1 self-authored bounded repository pilot covering COMMUNITY_FOOTBALL_FIELD and SCHOOL_DATA_POLICY; 24 fixtures drive the real CLI; no external action.",
+      "label": "Symbolic Object, Power & Multi-Perspective Governance 受控试点",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "SYMBOLIC-SPHERE-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/symbolic/pilot-symbolic-sphere-i1.json",
+        "data/symbolic/fixtures/"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.1.3"
+  "registry_version": "1.1.4"
 }
