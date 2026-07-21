@@ -1,0 +1,389 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "121Q39-I1",
+  "lineage_id": "q39.pilot.q36-q38",
+  "declared_event_count": 6,
+  "source_bindings": [
+    {
+      "source_id": "src.q36",
+      "task_id": "121Q36-INT-I1",
+      "artifact": "data/intervention/pilot-controlled-intervention.json",
+      "exact_head": "02a87221b86cf39217f8c6b3c63e0737a0e2de98",
+      "artifact_digest": "sha256:3c32b2bbbe859d7b5aa87e19a1aaab43f7db47d2f66e0343b0a7ab5d5a0a3fb0"
+    },
+    {
+      "source_id": "src.q37",
+      "task_id": "121Q37-I1",
+      "artifact": "data/analogy/pilot-real-repo-analogy-audit.json",
+      "exact_head": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
+      "artifact_digest": "sha256:9d1a76aa54a7f0c2c108657f7cfa964c2e1dad9887153a95b1bfd46b3e9edc27"
+    },
+    {
+      "source_id": "src.q38",
+      "task_id": "121Q38-I1",
+      "artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "exact_head": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+      "artifact_digest": "sha256:22ef7f43ecfe9e07e076ae03731021684e5a52bb105d7c29a454f3993bdcc448"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "fail.q36.rollback",
+      "sequence": 1,
+      "event_type": "ROLLBACK",
+      "failure_class": "EXECUTION",
+      "source_binding_id": "src.q36",
+      "originating_task": "121Q36-INT-I1",
+      "originating_artifact": "data/intervention/pilot-controlled-intervention.json",
+      "originating_exact_head": "02a87221b86cf39217f8c6b3c63e0737a0e2de98",
+      "observed_symptom": "controlled rollback retained residual",
+      "causal_status": "NOT_ESTABLISHED",
+      "causal_claim": "cause not established; preserve competing explanations",
+      "negative_evidence": [
+        "intervention residual"
+      ],
+      "affected_claims_actions": [
+        "q37.restricted_seed"
+      ],
+      "retry_preconditions": [
+        "new independent evidence or changed authorized scope"
+      ],
+      "prohibited_retry": [
+        "repeat unchanged action and discard the failure"
+      ],
+      "repair_proposal": "propagate failure into the next bounded plan",
+      "repair_event_id": null,
+      "propagation_target_ids": [
+        "target.intervention"
+      ],
+      "recurrence_signature_id": "rec.execution",
+      "supersedes_event_id": null,
+      "closure_status": "OPEN",
+      "unresolved_residue": [
+        "real-world cause remains unidentified"
+      ],
+      "claim_ceiling_impact": "HOLD",
+      "environment_origin": false,
+      "overwrites_event": false,
+      "previous_event_digest": "GENESIS",
+      "event_digest": "sha256:c9864ee2bcc7f0e472b1e83c55143b84813f780cda5aa42a37ce77be91fe63f0"
+    },
+    {
+      "event_id": "fail.q37.mismatch",
+      "sequence": 2,
+      "event_type": "FAILURE",
+      "failure_class": "MECHANISM",
+      "source_binding_id": "src.q37",
+      "originating_task": "121Q37-I1",
+      "originating_artifact": "data/analogy/pilot-real-repo-analogy-audit.json",
+      "originating_exact_head": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
+      "observed_symptom": "analogy mismatch blocks mechanism upgrade",
+      "causal_status": "NOT_ESTABLISHED",
+      "causal_claim": "established mechanism",
+      "negative_evidence": [
+        "counteranalogy retained"
+      ],
+      "affected_claims_actions": [
+        "q37.restricted_seed"
+      ],
+      "retry_preconditions": [
+        "new independent evidence or changed authorized scope"
+      ],
+      "prohibited_retry": [
+        "repeat unchanged action and discard the failure"
+      ],
+      "repair_proposal": "propagate failure into the next bounded plan",
+      "repair_event_id": null,
+      "propagation_target_ids": [
+        "target.analogy"
+      ],
+      "recurrence_signature_id": "rec.mechanism",
+      "supersedes_event_id": null,
+      "closure_status": "OPEN",
+      "unresolved_residue": [
+        "real-world cause remains unidentified"
+      ],
+      "claim_ceiling_impact": "HOLD",
+      "environment_origin": false,
+      "overwrites_event": false,
+      "previous_event_digest": "sha256:c9864ee2bcc7f0e472b1e83c55143b84813f780cda5aa42a37ce77be91fe63f0",
+      "event_digest": "sha256:a0cc808dd184d8fb9335a4284f3449675e02edf346032c831eb6ca7ed76b9512"
+    },
+    {
+      "event_id": "fail.q38.counterexample",
+      "sequence": 3,
+      "event_type": "FAILURE",
+      "failure_class": "SCOPE",
+      "source_binding_id": "src.q38",
+      "originating_task": "121Q38-I1",
+      "originating_artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "originating_exact_head": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+      "observed_symptom": "counterexample limits transportability",
+      "causal_status": "NOT_ESTABLISHED",
+      "causal_claim": "cause not established; preserve competing explanations",
+      "negative_evidence": [
+        "ev.counter.q36"
+      ],
+      "affected_claims_actions": [
+        "q37.restricted_seed"
+      ],
+      "retry_preconditions": [
+        "new independent evidence or changed authorized scope"
+      ],
+      "prohibited_retry": [
+        "repeat unchanged action and discard the failure"
+      ],
+      "repair_proposal": "propagate failure into the next bounded plan",
+      "repair_event_id": "repair.q39.plan",
+      "propagation_target_ids": [
+        "target.search"
+      ],
+      "recurrence_signature_id": "rec.scope",
+      "supersedes_event_id": null,
+      "closure_status": "OPEN",
+      "unresolved_residue": [
+        "real-world cause remains unidentified"
+      ],
+      "claim_ceiling_impact": "HOLD",
+      "environment_origin": false,
+      "overwrites_event": false,
+      "previous_event_digest": "sha256:a0cc808dd184d8fb9335a4284f3449675e02edf346032c831eb6ca7ed76b9512",
+      "event_digest": "sha256:49712cb0242706491e1601ff96150912dab40118f7c0fe1d499c10a953499ce9"
+    },
+    {
+      "event_id": "fail.q38.negative",
+      "sequence": 4,
+      "event_type": "RETRACTION",
+      "failure_class": "MODEL",
+      "source_binding_id": "src.q38",
+      "originating_task": "121Q38-I1",
+      "originating_artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "originating_exact_head": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+      "observed_symptom": "negative result retracts broad candidate",
+      "causal_status": "NOT_ESTABLISHED",
+      "causal_claim": "cause not established; preserve competing explanations",
+      "negative_evidence": [
+        "ev.negative.external-validity"
+      ],
+      "affected_claims_actions": [
+        "q37.restricted_seed"
+      ],
+      "retry_preconditions": [
+        "new independent evidence or changed authorized scope"
+      ],
+      "prohibited_retry": [
+        "repeat unchanged action and discard the failure"
+      ],
+      "repair_proposal": "propagate failure into the next bounded plan",
+      "repair_event_id": null,
+      "propagation_target_ids": [
+        "target.ceiling"
+      ],
+      "recurrence_signature_id": "rec.model",
+      "supersedes_event_id": null,
+      "closure_status": "OPEN",
+      "unresolved_residue": [
+        "real-world cause remains unidentified"
+      ],
+      "claim_ceiling_impact": "HOLD",
+      "environment_origin": false,
+      "overwrites_event": false,
+      "previous_event_digest": "sha256:49712cb0242706491e1601ff96150912dab40118f7c0fe1d499c10a953499ce9",
+      "event_digest": "sha256:60cd05295bcdeeb38ff5e736e76e5636b4a0406bbb071c88d8e1a86eaf1b37b8"
+    },
+    {
+      "event_id": "fail.q38.environment",
+      "sequence": 5,
+      "event_type": "FAILURE",
+      "failure_class": "ENVIRONMENT",
+      "source_binding_id": "src.q38",
+      "originating_task": "121Q38-I1",
+      "originating_artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "originating_exact_head": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+      "observed_symptom": "external retrieval deliberately unperformed",
+      "causal_status": "NOT_ESTABLISHED",
+      "causal_claim": "cause not established; preserve competing explanations",
+      "negative_evidence": [
+        "ev.failed.external-search"
+      ],
+      "affected_claims_actions": [
+        "q37.restricted_seed"
+      ],
+      "retry_preconditions": [
+        "new independent evidence or changed authorized scope"
+      ],
+      "prohibited_retry": [
+        "repeat unchanged action and discard the failure"
+      ],
+      "repair_proposal": "propagate failure into the next bounded plan",
+      "repair_event_id": null,
+      "propagation_target_ids": [
+        "target.defer"
+      ],
+      "recurrence_signature_id": "rec.environment",
+      "supersedes_event_id": null,
+      "closure_status": "OPEN",
+      "unresolved_residue": [
+        "real-world cause remains unidentified"
+      ],
+      "claim_ceiling_impact": "HOLD",
+      "environment_origin": true,
+      "overwrites_event": false,
+      "previous_event_digest": "sha256:60cd05295bcdeeb38ff5e736e76e5636b4a0406bbb071c88d8e1a86eaf1b37b8",
+      "event_digest": "sha256:5b1a409e0c520488f6d71c36146891c07773e249cf5ed466f1dadf9e3454b038"
+    },
+    {
+      "event_id": "repair.q39.plan",
+      "sequence": 6,
+      "event_type": "REPAIR",
+      "failure_class": "SCOPE",
+      "source_binding_id": "src.q38",
+      "originating_task": "121Q38-I1",
+      "originating_artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "originating_exact_head": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+      "observed_symptom": "repair appends bounded downstream plan effects",
+      "causal_status": "NOT_ESTABLISHED",
+      "causal_claim": "cause not established; preserve competing explanations",
+      "negative_evidence": [
+        "all prior failures retained"
+      ],
+      "affected_claims_actions": [
+        "q37.restricted_seed"
+      ],
+      "retry_preconditions": [
+        "new independent evidence or changed authorized scope"
+      ],
+      "prohibited_retry": [
+        "repeat unchanged action and discard the failure"
+      ],
+      "repair_proposal": "propagate failure into the next bounded plan",
+      "repair_event_id": null,
+      "propagation_target_ids": [
+        "target.search"
+      ],
+      "recurrence_signature_id": "rec.scope",
+      "supersedes_event_id": "fail.q38.counterexample",
+      "closure_status": "REPAIRED_WITH_RESIDUE",
+      "unresolved_residue": [
+        "real-world cause remains unidentified"
+      ],
+      "claim_ceiling_impact": "HOLD",
+      "environment_origin": false,
+      "overwrites_event": false,
+      "previous_event_digest": "sha256:5b1a409e0c520488f6d71c36146891c07773e249cf5ed466f1dadf9e3454b038",
+      "event_digest": "sha256:24325bff53ccaea3ea986204e212b7ac03e7b5f312592fa0b6ab181baa7036b9"
+    }
+  ],
+  "recurrence_signatures": [
+    {
+      "signature_id": "rec.execution",
+      "signature_digest": "sha256:1debf9a3e67a7cf4806b8a685e5aea5f360ec0db41357ac0b4fe8eb7f99f6a5b",
+      "event_ids": [
+        "fail.q36.rollback"
+      ],
+      "repeat_policy": "BLOCK_UNCHANGED_RETRY"
+    },
+    {
+      "signature_id": "rec.mechanism",
+      "signature_digest": "sha256:acb96cbb1ad4dd5d1419879cca91d85645f93699eaed799915b71059c1ff6e98",
+      "event_ids": [
+        "fail.q37.mismatch"
+      ],
+      "repeat_policy": "BLOCK_UNCHANGED_RETRY"
+    },
+    {
+      "signature_id": "rec.scope",
+      "signature_digest": "sha256:10b263bda049a70b7fe213d595f5d084fe68c7624aa2b08fd572f230fec69232",
+      "event_ids": [
+        "fail.q38.counterexample",
+        "repair.q39.plan"
+      ],
+      "repeat_policy": "BLOCK_UNCHANGED_RETRY"
+    },
+    {
+      "signature_id": "rec.model",
+      "signature_digest": "sha256:ac0ed930f8c3fdb8cfb07856d74958f4240369272583c1eb964e6650cbc69a55",
+      "event_ids": [
+        "fail.q38.negative"
+      ],
+      "repeat_policy": "BLOCK_UNCHANGED_RETRY"
+    },
+    {
+      "signature_id": "rec.environment",
+      "signature_digest": "sha256:68734e2a555d4cefc4a25caeb58e0db2eb6a5615c3a0990ff24c74711eb5fe1b",
+      "event_ids": [
+        "fail.q38.environment"
+      ],
+      "repeat_policy": "BLOCK_UNCHANGED_RETRY"
+    }
+  ],
+  "propagation_targets": [
+    {
+      "target_id": "target.intervention",
+      "event_ids": [
+        "fail.q36.rollback"
+      ],
+      "target_artifact": "data/intervention/pilot-controlled-intervention.json",
+      "plan_effect": "INTERVENE",
+      "authorized": true,
+      "applied": true,
+      "verification_digest": "sha256:1352199ee8d5a7b102b576b3e01b027a7464bfe64ba8b0229b7046a58e0693b5"
+    },
+    {
+      "target_id": "target.analogy",
+      "event_ids": [
+        "fail.q37.mismatch"
+      ],
+      "target_artifact": "data/analogy/pilot-real-repo-analogy-audit.json",
+      "plan_effect": "ANALOGY_AUDIT",
+      "authorized": true,
+      "applied": true,
+      "verification_digest": "sha256:7c6cd2d640478c61819a53e4e0c59bce35a795119d6e4464774ea72afd64f6c1"
+    },
+    {
+      "target_id": "target.search",
+      "event_ids": [
+        "fail.q38.counterexample",
+        "repair.q39.plan"
+      ],
+      "target_artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "plan_effect": "SEARCH",
+      "authorized": true,
+      "applied": true,
+      "verification_digest": "sha256:d8bfb7bcc6631b406871878815caff07bee4ddca721418b32ce123587a7514b7"
+    },
+    {
+      "target_id": "target.ceiling",
+      "event_ids": [
+        "fail.q38.negative"
+      ],
+      "target_artifact": "docs/failure/q39-interfaces.md",
+      "plan_effect": "CLAIM_CEILING_CHANGE",
+      "authorized": true,
+      "applied": true,
+      "verification_digest": "sha256:40271077248a59dfb684d8572974a49694e7f6ffa0b6d193925edc481a1b8462"
+    },
+    {
+      "target_id": "target.defer",
+      "event_ids": [
+        "fail.q38.environment"
+      ],
+      "target_artifact": "docs/failure/q39-interfaces.md",
+      "plan_effect": "DEFER",
+      "authorized": true,
+      "applied": true,
+      "verification_digest": "sha256:df199eb4a5fa89bac6bc0d567f917e5ff2be0d301c266bebc6885c3455c2a8d5"
+    }
+  ],
+  "unresolved_residue": [
+    "no external population validity",
+    "environment retrieval remains unperformed"
+  ],
+  "active_action_claim_refs": [],
+  "conclusion": {
+    "statement": "Failures remain append-only and deterministically change bounded later plans without establishing their causes.",
+    "negative_history_preserved": true,
+    "failures_change_future_plans": true,
+    "claim_ceiling": "candidate_only_repository_failure_lineage"
+  }
+}
