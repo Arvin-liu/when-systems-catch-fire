@@ -427,6 +427,30 @@
       "lifecycle_status": "draft_candidate"
     },
     {
+      "id": "intervention_failure_contract",
+      "label": "干预—失效动力学 合同",
+      "group": "governance",
+      "target": "schemas/intervention/intervention-failure-dynamics-contract.schema.json",
+      "description": "Q36-INT typed intervention-failure dynamics contract: intervention request (Q34-committed claim + Q35 authority + Q36-OBS read-only observation/residual), safety envelope, controlled execution record, outcome/effect evaluation with baseline/comparator, failure mode record, and stop/rollback history; fail-closed against uncommitted claims, missing authority, residual-as-cause, external action, envelope exceed, stop-condition violation, failure rewrite, expected-effect rewrite, causal/universal overclaim, incomplete rollback, many-hands forgery, unvalidated observation, separation-of-duty violation, missing baseline.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "intervention_failure_gate_validator",
+      "label": "干预—失效动力学 门禁",
+      "group": "governance",
+      "target": "tools/intervention/validate_intervention_failure_gate.py",
+      "description": "Q36-INT fail-closed intervention-failure dynamics gate/CLI: blocks Q14 uncommitted claims, Q35 authority gaps, Q33 rights bypass, missing safety envelope/stop/rollback, real-world external action, envelope exceed, stop-condition violation, failure rewrite, expected-effect rewrite, causal/universal overclaim, incomplete rollback, many-hands forgery, unvalidated observation, separation-of-duty violation, missing baseline. Deterministic exit codes 0-20.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "intervention_failure_pilot",
+      "label": "干预—失效动力学 受控试点",
+      "group": "governance",
+      "target": "data/intervention/pilot-controlled-intervention.json",
+      "description": "Q36-INT controlled pilot: deterministic repo-local replay of an intervention bundle with Q34 claim + Q35 grant + Q36-OBS observation, asserting the fail-closed gate passes (exit 0) and stop/rollback are append-only and verified; plus 23 attack/positive fixtures. No Main mutation, no external real-world system access or control.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
       "id": "external_input",
       "label": "外部输入源",
       "group": "writing",

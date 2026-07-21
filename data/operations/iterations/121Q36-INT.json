@@ -1,0 +1,998 @@
+{
+  "task_id": "121Q36-INT",
+  "method_version": "1.2.0",
+  "current_method_version": "1.3.0",
+  "change_classification": [
+    "GOVERNANCE_CHANGE",
+    "CAPABILITY_ADDITION",
+    "INTERFACE_CHANGE"
+  ],
+  "verified_start": {
+    "main_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+    "source": "execution-time origin/main before Q36-INT (post Q36-OBS closeout); Q36-INT builds on Q36-OBS candidate branch",
+    "verified_at": "2026-07-21"
+  },
+  "branch_pr": {
+    "base": "agent/121q36-obs-i1-observation-prediction-calibration",
+    "base_head": "a8eab57bf2a2465c48d5d624e22681a1ad1bc20c",
+    "branch": "agent/121q36-int-i1-intervention-failure-dynamics",
+    "draft": true,
+    "pr_number": null,
+    "merged": false
+  },
+  "head_binding": {
+    "authority": "pull_request_body_and_1111_receipt",
+    "embedded_exact_current_head": false,
+    "explanation": "Q36-INT-I1 Draft candidate: repository object never treats its own HEAD as validity evidence; exact-head and CI/artifact evidence are externally attested via PR body and 1111 receipt. This record does not assert acceptance, merge or Current status.",
+    "live_refetch_required": true,
+    "mode": "external_exact_head_attestation",
+    "pr_number": null,
+    "receipt_path": "agent-results/IGNITION-20260721-121Q36-INT-I1-intervention-failure-dynamics-execution-receipt.json"
+  },
+  "gap": {
+    "evidence": [
+      "Q36-INT propagation closure complete, residue=0",
+      "intervention-failure gate attack fixtures pass (23 fixtures + 22 core tests)"
+    ],
+    "smallest_material_action": "Materialize Q36-INT intervention-failure dynamics contract, fail-closed gate, attack fixtures and controlled pilot",
+    "summary": "Q36-INT intervention-failure dynamics closed loop is implemented as a Draft candidate on the Q36-OBS candidate branch; the gate freezes intervention target, mechanism hypothesis, safety envelope, expected effect, stop conditions and rollback plan before controlled repo-local execution, records state change/failure/stop/rollback as append-only events, and blocks unauthorized intervention, residual-as-cause, post-hoc success rewriting, safety-envelope exceed, silent failure deletion, and repository-local results escalated to universal real-world causal proof. Candidate only; not reviewed, not merged, not Current."
+  },
+  "claim_ceiling": "candidate_only: repository-native, evidence-bound, deterministically verifiable intervention-failure dynamics closed loop that freezes target/mechanism/safety-envelope/expected-effect/stop-conditions/rollback-plan before controlled execution, records state change/failure/stop/rollback as append-only events, and blocks unauthorized intervention, residual-as-cause, post-hoc success rewriting, safety-envelope exceed, silent failure deletion, and repository-local results escalated to universal real-world causal proof. Consumes Q34 committed claim + Q35 authority + Q36-OBS validated observation as read-only inputs; no L7, no truth layer, no real-world external action, no intervention authority over external systems.",
+  "status": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": false
+  },
+  "impact_matrix": [
+    {
+      "surface": "schemas/intervention/intervention-failure-dynamics-contract.schema.json",
+      "decision": "CHANGE",
+      "reason": "Q36-INT adds the typed intervention-failure dynamics contract."
+    },
+    {
+      "surface": "tools/intervention/validate_intervention_failure_gate.py",
+      "decision": "CHANGE",
+      "reason": "Q36-INT adds the fail-closed deterministic intervention-failure gate/CLI (exit codes 0-20)."
+    },
+    {
+      "surface": "tests/intervention/",
+      "decision": "CHANGE",
+      "reason": "Q36-INT adds 22 core tests + 23 attack-fixture tests driving the real validator CLI."
+    },
+    {
+      "surface": "data/intervention/",
+      "decision": "CHANGE",
+      "reason": "Q36-INT adds controlled pilot bundle and 23 attack fixtures."
+    },
+    {
+      "surface": "docs/intervention/",
+      "decision": "CHANGE",
+      "reason": "Q36-INT adds architecture decision, typed contract doc, interface doc and legacy salvage matrix."
+    },
+    {
+      "surface": "data/operations/project-components.json",
+      "decision": "CHANGE",
+      "reason": "Q36-INT registers 3 new governance components."
+    },
+    {
+      "surface": "data/architecture/interactive-system-map-layout.json",
+      "decision": "CHANGE",
+      "reason": "Q36-INT adds 3 governance nodes to the system map layout."
+    },
+    {
+      "surface": "data/architecture/interactive-system-map.json",
+      "decision": "CHANGE",
+      "reason": "System map projection regenerated (60 nodes)."
+    },
+    {
+      "surface": "pages/generated/ignition-system-map.svg",
+      "decision": "CHANGE",
+      "reason": "System map SVG regenerated with Q36-INT nodes."
+    },
+    {
+      "surface": "data/operations/propagation/121Q36-INT-request.json",
+      "decision": "CHANGE",
+      "reason": "Q36-INT propagation request."
+    },
+    {
+      "surface": "data/operations/propagation/121Q36-INT-closure.json",
+      "decision": "CHANGE",
+      "reason": "Q36-INT propagation closure (residue=0)."
+    },
+    {
+      "surface": "data/operations/propagation/121Q36-INT-residue.json",
+      "decision": "CHANGE",
+      "reason": "Q36-INT propagation residue (empty)."
+    },
+    {
+      "surface": "data/operations/propagation/121Q36-INT-system-map-delta.json",
+      "decision": "CHANGE",
+      "reason": "Q36-INT system-map delta."
+    },
+    {
+      "surface": "data/operations/propagation/121Q36-INT-impact-report.md",
+      "decision": "CHANGE",
+      "reason": "Q36-INT impact report."
+    },
+    {
+      "surface": "data/operations/iterations/121Q36-INT.json",
+      "decision": "CHANGE",
+      "reason": "Q36-INT iteration manifest."
+    },
+    {
+      "surface": "reports/operations/121Q36-INT-completion-seal.json",
+      "decision": "CHANGE",
+      "reason": "Q36-INT completion seal."
+    }
+  ],
+  "changed_surfaces": [
+    "schemas/intervention/intervention-failure-dynamics-contract.schema.json",
+    "tools/intervention/validate_intervention_failure_gate.py",
+    "tests/intervention/",
+    "data/intervention/",
+    "docs/intervention/",
+    "data/operations/project-components.json",
+    "data/architecture/interactive-system-map-layout.json",
+    "data/architecture/interactive-system-map.json",
+    "pages/generated/ignition-system-map.svg",
+    "data/operations/propagation/121Q36-INT-request.json",
+    "data/operations/propagation/121Q36-INT-closure.json",
+    "data/operations/propagation/121Q36-INT-residue.json",
+    "data/operations/propagation/121Q36-INT-system-map-delta.json",
+    "data/operations/propagation/121Q36-INT-impact-report.md",
+    "data/operations/iterations/121Q36-INT.json",
+    "reports/operations/121Q36-INT-completion-seal.json",
+    "data/governance/"
+  ],
+  "validation": {
+    "external_exact_head_policy": {
+      "required": true,
+      "authority": "pull_request_body_and_1111_receipt",
+      "required_workflows": [
+        "foundation-validation",
+        "function-os-ci"
+      ],
+      "live_refetch_before_acceptance_or_merge": true
+    },
+    "local": [
+      {
+        "name": "intervention_failure_gate_fixtures",
+        "status": "PASS",
+        "evidence": "tests/intervention (23 attack fixtures + 22 core tests)"
+      },
+      {
+        "name": "q36_obs_regression",
+        "status": "PASS",
+        "evidence": "32/32 green"
+      },
+      {
+        "name": "q35_regression",
+        "status": "PASS",
+        "evidence": "19/19 green"
+      },
+      {
+        "name": "q34_regression",
+        "status": "PASS",
+        "evidence": "15/15 green"
+      },
+      {
+        "name": "q33_regression",
+        "status": "PASS",
+        "evidence": "31/31 green"
+      },
+      {
+        "name": "change_propagation",
+        "status": "PASS",
+        "evidence": "data/operations/propagation/121Q36-INT-closure.json (closure_complete=true, residue=0)"
+      },
+      {
+        "name": "system_map_generation",
+        "status": "PASS",
+        "evidence": "data/operations/propagation/121Q36-INT-system-map-delta.json (nodes=60)"
+      },
+      {
+        "name": "human_front_door",
+        "status": "PASS",
+        "evidence": "tools/validate_human_front_door.py + tests/test_human_front_door.py (60 nodes)"
+      },
+      {
+        "name": "baseline_debt_reproduced",
+        "status": "PASS",
+        "evidence": "8 pre-existing reds at Q36-OBS head: era_resolver x2, generated-output-authority x3, production_execution_authority x3 (identical; not repaired)"
+      }
+    ],
+    "remote": []
+  },
+  "rollback_strategy": "Draft branch only; delete branch agent/121q36-int-i1-intervention-failure-dynamics and tag archive/lab-121q39-failure-memory-night remains for legacy reference; no Main rewrite, no force-push.",
+  "remaining_limitations": [
+    "Q37 (analogy audit) not built in this iteration",
+    "F15/D1/D2 not materialized; residual/failure records are interface surfaces only",
+    "single deterministic pilot outcome; sample_size=1 with explicit scope limitation",
+    "8 pre-existing baseline reds unrelated to Q36-INT remain as registered debt"
+  ],
+  "receipt_location": "agent-results/IGNITION-20260721-121Q36-INT-I1-intervention-failure-dynamics-execution-receipt.json",
+  "completion_seal_path": "reports/operations/121Q36-INT-completion-seal.json",
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "state_transition": {
+    "changed_dimensions": [
+      "governance",
+      "capability"
+    ],
+    "maximum_claim_boundary": "repository-native intervention-failure dynamics closed loop under declared claim ceiling; no real-world universal intervention capability, no causal adjudication, no L7/truth layer, no external intervention authority",
+    "prior_state": "post-Q36-OBS candidate (Q36-OBS observation-prediction-calibration Draft candidate; Q35 Draft candidate; Q34 Draft candidate; Q33 Current/Closed)",
+    "proposed_state": "intervention_failure_dynamics_candidate",
+    "source_refs": [
+      "data/operations/propagation/121Q36-INT-request.json",
+      "data/operations/propagation/121Q36-INT-closure.json"
+    ],
+    "subjects": [
+      "121Q36-INT"
+    ]
+  },
+  "synchronization_closure": {
+    "registry_path": "data/operations/synchronization-surfaces.json",
+    "registry_version": "1.2.0",
+    "surface_decisions": [
+      {
+        "surface_id": "human.readme",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.pages_source",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_build_validation",
+        "derived_from": [
+          "human.readme"
+        ]
+      },
+      {
+        "surface_id": "external.pages_homepage",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "post_merge_external_render_attestation",
+        "derived_from": [
+          "human.readme",
+          "human.pages_source"
+        ]
+      },
+      {
+        "surface_id": "human.current_state",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.summary",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.usage",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.ai_guide",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "ai.start",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "agent.handoff",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "machine.llms",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "release.changelog",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "release.versioning",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "method.iteration",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_schema_and_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "method.task_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "method.result_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "method.review_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "copyright_governance",
+        "decision": "CHANGE",
+        "reason": "Q36-INT adds intervention-failure dynamics governance components to the governance surface",
+        "evidence_refs": [
+          "data/operations/propagation/121Q36-INT-closure.json"
+        ],
+        "validation_mode": "repository_build_validation",
+        "derived_from": [
+          "method.iteration",
+          "agent.handoff"
+        ]
+      }
+    ],
+    "external_attestations": [
+      {
+        "surface_id": "external.pages_homepage",
+        "stage": "post_merge",
+        "status": "pending",
+        "authority": "pull_request_body_and_1111_receipt",
+        "evidence_refs": [
+          "external:pr_body:external.pages_homepage"
+        ],
+        "live_state_locally_verifiable": false
+      }
+    ],
+    "unresolved_residue": [],
+    "external_verification_policy": "not_applicable_governance_only",
+    "live_external_surfaces_verified": false
+  },
+  "propagation_closure": {
+    "request_path": "data/operations/propagation/121Q36-INT-request.json",
+    "closure_path": "data/operations/propagation/121Q36-INT-closure.json",
+    "impact_report_path": "data/operations/propagation/121Q36-INT-impact-report.md",
+    "system_map_delta_path": "data/operations/propagation/121Q36-INT-system-map-delta.json",
+    "residue_path": "data/operations/propagation/121Q36-INT-residue.json",
+    "closure_hash": "5e19971dc6d71f890be9b1c4c2b8ebb3a70904e6cdff0c1dab838ca11b28b722",
+    "base_identity": "a8eab57bf2a2465c48d5d624e22681a1ad1bc20c",
+    "head_identity": "external_exact_head_attestation",
+    "seed_paths": [
+      "data/intervention/fixtures/01-legal-controlled-dry-run.json",
+      "data/intervention/fixtures/02-uncommitted-q34-claim.json",
+      "data/intervention/fixtures/03-expired-q35-grant.json",
+      "data/intervention/fixtures/04-residual-as-causation.json",
+      "data/intervention/fixtures/05-obs-not-validated.json",
+      "data/intervention/fixtures/06-target-scope-mismatch.json",
+      "data/intervention/fixtures/07-missing-safety-envelope.json",
+      "data/intervention/fixtures/08-missing-stop-conditions.json",
+      "data/intervention/fixtures/09-missing-rollback-plan.json",
+      "data/intervention/fixtures/10-envelope-exceeded.json",
+      "data/intervention/fixtures/11-continue-after-stop.json",
+      "data/intervention/fixtures/12-self-all-roles-high-risk.json",
+      "data/intervention/fixtures/13-external-action-real-world.json",
+      "data/intervention/fixtures/14-expected-effect-rewrite.json",
+      "data/intervention/fixtures/15-failure-deleted-only-success.json",
+      "data/intervention/fixtures/16-rollback-silent-overwrite.json",
+      "data/intervention/fixtures/17-rollback-partial-claimed-full.json",
+      "data/intervention/fixtures/18-universal-capability-overclaim.json",
+      "data/intervention/fixtures/19-q33-rights-bypass.json",
+      "data/intervention/fixtures/20-single-owner-forged.json",
+      "data/intervention/fixtures/21-negative-result-preserved.json",
+      "data/intervention/fixtures/22-legal-abort-abandon.json",
+      "data/intervention/fixtures/23-controlled-pilot-replay.json",
+      "data/intervention/pilot-controlled-intervention.json",
+      "data/operations/component-execution-profiles.json",
+      "data/operations/iterations/121Q36-INT.json",
+      "data/operations/project-components.json",
+      "data/operations/propagation/121Q36-INT-request.json",
+      "docs/intervention/q36-int-architecture-decision.md",
+      "docs/intervention/q36-int-interfaces.md",
+      "docs/intervention/q36-int-typed-contract.md",
+      "docs/intervention/q36-legacy-lab-salvage-matrix.json",
+      "reports/operations/121Q36-INT-completion-seal.json",
+      "schemas/intervention/intervention-failure-dynamics-contract.schema.json",
+      "tests/intervention/test_intervention_failure_core.py",
+      "tests/intervention/test_intervention_failure_gate.py",
+      "tools/intervention/validate_intervention_failure_gate.py"
+    ],
+    "seed_components": [
+      "historical_reports",
+      "incremental_execution",
+      "intervention_failure_contract",
+      "intervention_failure_gate_validator",
+      "intervention_failure_pilot",
+      "iteration_manifest_contract",
+      "project_component_registry",
+      "propagation_calculator"
+    ],
+    "resolved_components": [
+      "historical_reports",
+      "incremental_execution",
+      "intervention_failure_contract",
+      "intervention_failure_gate_validator",
+      "intervention_failure_pilot",
+      "iteration",
+      "iteration_manifest_contract",
+      "pages_pipeline",
+      "project_component_registry",
+      "propagation_calculator",
+      "readme",
+      "sync",
+      "system_map_projection"
+    ],
+    "typed_path_ids": [
+      "incremental_builds_pages",
+      "incremental_materializes_iteration",
+      "incremental_projects_map",
+      "incremental_requires_sync",
+      "registry_generates_projection",
+      "sync_requires_readme"
+    ],
+    "component_decisions": [
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "accepted_work",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent_responsibility_contract",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent_responsibility_gate_validator",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent_responsibility_pilot_q34",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "ai_guide",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "arn",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "candidate_return",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "case_source",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "charter",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_history_remediation",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_jurisdiction_registry",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_material_classification",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_non_republication_principle",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_publication_gate_validator",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_source_rights",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "copyright_governance_tests",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "current_state",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "discovery_commitment_claim_contract",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "discovery_commitment_gate_validator",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "discovery_commitment_pilot_q33",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "external_input",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "feedback_routes",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "foundation",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "foundation_data",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "function_os",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "historical_reports",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "ignition_increment",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "incremental_execution",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "intervention_failure_contract",
+        "reason": "Q36-INT new governance component: 干预—失效动力学 合同"
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "intervention_failure_gate_validator",
+        "reason": "Q36-INT new governance component: 干预—失效动力学 门禁"
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "intervention_failure_pilot",
+        "reason": "Q36-INT new governance component: 干预—失效动力学 受控试点"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "iteration",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "iteration_manifest_contract",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l0",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l1",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l2",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l3",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l4",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l5",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "l6",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "licensing",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "mcf",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "no_l7",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "no_totality_proof",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "no_truth_upgrade",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "observation_prediction_contract",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "observation_prediction_gate_validator",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "observation_prediction_pilot_q34",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "pages_pipeline",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "point_fire_analysis",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "project_component_registry",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "propagation_calculator",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "propagation_topology",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "provenance_capture",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "psd",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "public_response",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "q12",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "q13",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "q14",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "readme",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "showcase",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "showcase_registry",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "source_pool",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "summary",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "sustainability",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "sync",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "system_map",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "system_map_layout",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "system_map_projection",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "usage",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "zhiyuan_method",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this component's semantics."
+      }
+    ],
+    "surface_decisions": [
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent.handoff",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "ai.start",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "copyright_governance",
+        "reason": "Q36-INT adds intervention-failure dynamics governance components to the governance surface"
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "external.pages_homepage",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.ai_guide",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.current_state",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.pages_source",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.readme",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.summary",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.usage",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "machine.llms",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.iteration",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.result_template",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.review_template",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.task_template",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "release.changelog",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "release.versioning",
+        "reason": "Q36-INT intervention-failure dynamics does not alter this synchronization surface."
+      }
+    ],
+    "registry_derived_surfaces": [
+      "agent.handoff",
+      "ai.start",
+      "copyright_governance",
+      "external.pages_homepage",
+      "human.ai_guide",
+      "human.current_state",
+      "human.pages_source",
+      "human.readme",
+      "human.summary",
+      "human.usage",
+      "machine.llms",
+      "method.iteration",
+      "release.changelog",
+      "release.versioning"
+    ],
+    "system_map_impact": {
+      "decision": "CHANGE",
+      "reason": "New intervention-failure dynamics governance components added to project-component registry and topology",
+      "delta_path": "data/operations/propagation/121Q36-INT-system-map-delta.json"
+    },
+    "unresolved_residue": [],
+    "closure_complete": true
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  }
+}
