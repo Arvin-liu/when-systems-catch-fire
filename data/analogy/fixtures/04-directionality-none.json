@@ -1,0 +1,138 @@
+{
+  "analogy_candidates": [
+    {
+      "analogy_id": "a04",
+      "source_domain": "wave",
+      "target_domain": "particle",
+      "source_def": "wave motion",
+      "target_def": "particle motion",
+      "proposer": "agent:kimi",
+      "q35_authority_ref": "g-q35-001",
+      "originating_q34_claim_ref": "c-q34-ana-001",
+      "purpose": "explanation",
+      "candidate_type": "STRUCTURAL_ANALOGY",
+      "evidence_refs": [
+        "ext:paper-x"
+      ],
+      "provenance": "repo-internal replay",
+      "claim_ceiling": "local structural similarity; not proven shared mechanism",
+      "lifecycle": {
+        "status": "audited",
+        "history": [
+          "proposed",
+          "audited"
+        ]
+      },
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "mappings": [
+    {
+      "mapping_id": "m04",
+      "analogy_id": "a04",
+      "source_entities": [
+        "wave"
+      ],
+      "target_entities": [
+        "particle"
+      ],
+      "correspondence_pairs": [
+        {
+          "source": "wave",
+          "target": "particle",
+          "quality": "partial"
+        }
+      ],
+      "relation_preservation": "partial analogy",
+      "directionality": "none",
+      "cardinality": "1:1",
+      "cardinality_rationale": "single construct map",
+      "invariants": [
+        "propagation"
+      ],
+      "known_mismatches": [
+        "detection differs"
+      ],
+      "omitted_variables": [
+        "medium"
+      ],
+      "hidden_premises": [
+        "quantum vs classical"
+      ],
+      "scale_time_context_differences": [
+        "scale differs"
+      ],
+      "representation_level": "mathematical",
+      "mapping_digest": "sha256:ae9d4803bfa0cf5178cbddb5d843d579927a7885cff6af507d34cc3abedb964e"
+    }
+  ],
+  "mechanism_evidence": [
+    {
+      "evidence_id": "me04",
+      "analogy_id": "a04",
+      "source_domain_ref": "wave",
+      "target_domain_ref": "particle",
+      "evidence_kind": "SHARED_MATHEMATICAL_FORM",
+      "status": "CANDIDATE",
+      "prohibited_promotions": [
+        "universal law",
+        "real-world causal transport"
+      ],
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "transportability_assessments": [],
+  "audit_decisions": [
+    {
+      "decision_id": "d04",
+      "analogy_id": "a04",
+      "classification": "STRUCTURAL_ANALOGY",
+      "mapping_consistency": "CONSISTENT",
+      "mechanism_evidence_sufficiency": "NONE",
+      "transportability_status": "NOT_ASSESSED",
+      "counteranalogy_status": "ABSENT",
+      "q38_search_permission": "NOT_ALLOWED",
+      "allowed_use": "explanation only",
+      "forbidden_inference": "mechanism identity; universal law",
+      "downgraded_claim_ceiling": "local structural similarity; not a proven shared mechanism",
+      "unresolved_issues": [],
+      "reviewer_verifier": "builder(Q37)",
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "q34_claims": [
+    {
+      "claim_id": "c-q34-ana-001",
+      "status": "committed_current",
+      "claim_ceiling": "documented entropy analogy; repository-internal only",
+      "allows_analogy_purpose": true,
+      "source_ref": "src:q34"
+    }
+  ],
+  "q35_grants": [
+    {
+      "grant_id": "g-q35-001",
+      "status": "active",
+      "grant_expires_at": "2099-01-01T00:00:00+00:00",
+      "scope": "explanation",
+      "grantee": "agent:kimi",
+      "granted_by": "user:zhiyuan",
+      "action_refs": [
+        "propose",
+        "audit"
+      ]
+    }
+  ],
+  "q33_rights": [
+    {
+      "material_id": "ext:paper-x",
+      "rights_status": "clear",
+      "note": "open access"
+    },
+    {
+      "material_id": "ext:independent-study",
+      "rights_status": "clear",
+      "note": "open access"
+    }
+  ]
+}

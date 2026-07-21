@@ -130,7 +130,10 @@
       "observation_prediction_pilot_q34",
       "intervention_failure_contract",
       "intervention_failure_gate_validator",
-      "intervention_failure_pilot"
+      "intervention_failure_pilot",
+      "analogy_audit_contract",
+      "analogy_audit_gate_validator",
+      "analogy_audit_pilot"
     ],
     "layers": [
       "l0",

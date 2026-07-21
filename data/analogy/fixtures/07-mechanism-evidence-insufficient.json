@@ -1,0 +1,138 @@
+{
+  "analogy_candidates": [
+    {
+      "analogy_id": "a07",
+      "source_domain": "brain",
+      "target_domain": "computer",
+      "source_def": "neuron",
+      "target_def": "transistor",
+      "proposer": "agent:kimi",
+      "q35_authority_ref": "g-q35-001",
+      "originating_q34_claim_ref": "c-q34-ana-001",
+      "purpose": "explanation",
+      "candidate_type": "MECHANISM_CANDIDATE",
+      "evidence_refs": [
+        "ext:paper-x"
+      ],
+      "provenance": "repo-internal replay",
+      "claim_ceiling": "claims a shared computational mechanism",
+      "lifecycle": {
+        "status": "audited",
+        "history": [
+          "proposed",
+          "audited"
+        ]
+      },
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "mappings": [
+    {
+      "mapping_id": "m07",
+      "analogy_id": "a07",
+      "source_entities": [
+        "neuron"
+      ],
+      "target_entities": [
+        "transistor"
+      ],
+      "correspondence_pairs": [
+        {
+          "source": "neuron",
+          "target": "transistor",
+          "quality": "approximate"
+        }
+      ],
+      "relation_preservation": "approximate computational analogy",
+      "directionality": "forward",
+      "cardinality": "1:1",
+      "cardinality_rationale": "single construct map",
+      "invariants": [
+        "signal thresholding"
+      ],
+      "known_mismatches": [
+        "plasticity absent"
+      ],
+      "omitted_variables": [
+        "material"
+      ],
+      "hidden_premises": [
+        "biological vs silicon"
+      ],
+      "scale_time_context_differences": [
+        "scale differs"
+      ],
+      "representation_level": "mathematical",
+      "mapping_digest": "sha256:b49ed22ffce0c51d822569dfd3b37bd72ca8cde751005dc6aa2f1f84ba0ec581"
+    }
+  ],
+  "mechanism_evidence": [
+    {
+      "evidence_id": "me07",
+      "analogy_id": "a07",
+      "source_domain_ref": "brain",
+      "target_domain_ref": "computer",
+      "evidence_kind": "SHARED_VOCABULARY_ONLY",
+      "status": "INSUFFICIENT",
+      "prohibited_promotions": [
+        "universal law",
+        "real-world causal transport"
+      ],
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "transportability_assessments": [],
+  "audit_decisions": [
+    {
+      "decision_id": "d07",
+      "analogy_id": "a07",
+      "classification": "MECHANISM_CANDIDATE",
+      "mapping_consistency": "CONSISTENT",
+      "mechanism_evidence_sufficiency": "INSUFFICIENT",
+      "transportability_status": "NOT_ASSESSED",
+      "counteranalogy_status": "ABSENT",
+      "q38_search_permission": "NOT_ALLOWED",
+      "allowed_use": "explanation only",
+      "forbidden_inference": "mechanism identity; universal law",
+      "downgraded_claim_ceiling": "local structural similarity; not a proven shared mechanism",
+      "unresolved_issues": [],
+      "reviewer_verifier": "builder(Q37)",
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "q34_claims": [
+    {
+      "claim_id": "c-q34-ana-001",
+      "status": "committed_current",
+      "claim_ceiling": "documented entropy analogy; repository-internal only",
+      "allows_analogy_purpose": true,
+      "source_ref": "src:q34"
+    }
+  ],
+  "q35_grants": [
+    {
+      "grant_id": "g-q35-001",
+      "status": "active",
+      "grant_expires_at": "2099-01-01T00:00:00+00:00",
+      "scope": "explanation",
+      "grantee": "agent:kimi",
+      "granted_by": "user:zhiyuan",
+      "action_refs": [
+        "propose",
+        "audit"
+      ]
+    }
+  ],
+  "q33_rights": [
+    {
+      "material_id": "ext:paper-x",
+      "rights_status": "clear",
+      "note": "open access"
+    },
+    {
+      "material_id": "ext:independent-study",
+      "rights_status": "clear",
+      "note": "open access"
+    }
+  ]
+}

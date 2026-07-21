@@ -1,0 +1,301 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/analogy/analogy-audit-contract.schema.json",
+  "title": "Q37-I1 Analogy Audit & Transportability Contract",
+  "description": "Repository-native, evidence-bound, deterministically validatable typed contract for analogy auditing and transportability gating. Every cross-domain mapping must declare source/target domain, mapped objects, relation preservation, invariants, mismatches, boundary conditions, scale/time/context differences, mechanism evidence, counteranalogy and negative-evidence search, scope of applicability and a claim ceiling. The system distinguishes SURFACE_SIMILARITY, METAPHOR_ONLY, STRUCTURAL_ANALOGY, MECHANISM_CANDIDATE and TRANSPORTABILITY_CANDIDATE, and blocks metaphor, local isomorphism, selective correspondence, unaudited structural maps or Q36 residual from being written as mechanism identity, causal proof or cross-domain universal law. Does NOT prove any two domains share a mechanism, does NOT prove real-world causal transportability, does NOT perform Q38 case retrieval, does NOT add L7 / truth layer, does NOT materialize F15/D1/D2.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "analogy_candidates",
+    "mappings",
+    "mechanism_evidence",
+    "transportability_assessments",
+    "audit_decisions"
+  ],
+  "properties": {
+    "analogy_candidates": {"type": "array", "items": {"$ref": "#/$defs/analogy_candidate"}},
+    "mappings": {"type": "array", "items": {"$ref": "#/$defs/mapping"}},
+    "mechanism_evidence": {"type": "array", "items": {"$ref": "#/$defs/mechanism_evidence"}},
+    "transportability_assessments": {"type": "array", "items": {"$ref": "#/$defs/transportability_assessment"}},
+    "audit_decisions": {"type": "array", "items": {"$ref": "#/$defs/audit_decision"}},
+    "q34_claims": {
+      "type": "array",
+      "description": "Read-only Q34 claims referenced by analogy candidates (copied, never re-adjudicated by Q37). The validator checks each candidate's originating_q34_claim_ref resolves and that the claim permits the analogy purpose/ceiling.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "status", "claim_ceiling", "source_ref"],
+        "properties": {
+          "claim_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+          "status": {"type": "string", "enum": ["committed_current", "superseded", "retracted", "draft"]},
+          "claim_ceiling": {"type": "string", "minLength": 1, "description": "Must not assert universal real-world mechanism or proven cross-domain causal law."},
+          "allows_analogy_purpose": {"type": "boolean", "description": "Whether this claim permits being used as an analogy seed (search_seed) at all."},
+          "source_ref": {"type": "string", "minLength": 1, "description": "Q33-gated source reference; must not be Q33-rejected."}
+        }
+      }
+    },
+    "q35_grants": {
+      "type": "array",
+      "description": "Read-only Q35 authority grants referenced by analogy candidates/decisions (copied, never re-adjudicated by Q37).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["grant_id", "status", "grant_expires_at", "scope", "grantee", "granted_by", "action_refs"],
+        "properties": {
+          "grant_id": {"type": "string", "minLength": 1},
+          "status": {"type": "string", "enum": ["active", "revoked", "expired"]},
+          "grant_expires_at": {"type": "string", "format": "date-time"},
+          "scope": {"type": "string", "minLength": 1},
+          "grantee": {"type": "string", "minLength": 1},
+          "granted_by": {"type": "string", "minLength": 1},
+          "action_refs": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+        }
+      }
+    },
+    "q36_obs_snapshots": {
+      "type": "array",
+      "description": "Read-only validated Q36-OBS observations/residuals referenced by analogy candidates (copied, never modified by Q37).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["observation_id", "target_scope", "sampling_window", "quality_status", "exact_head", "do_not_infer_cause"],
+        "properties": {
+          "observation_id": {"type": "string", "minLength": 1},
+          "target_scope": {"type": "string", "minLength": 1},
+          "sampling_window": {
+            "type": "object", "additionalProperties": false,
+            "required": ["start", "end"],
+            "properties": {"start": {"type": "string", "format": "date-time"}, "end": {"type": "string", "format": "date-time"}}
+          },
+          "quality_status": {"type": "string", "enum": ["accepted", "accepted_with_exclusions", "quarantined", "rejected"]},
+          "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+          "do_not_infer_cause": {"type": "boolean", "const": true, "description": "A Q36-OBS residual may trigger an analogy candidate or counteranalogy search, but must never be upgraded to a shared-cause proof by Q37."}
+        }
+      }
+    },
+    "q36_int_snapshots": {
+      "type": "array",
+      "description": "Read-only Q36-INT mechanism hypotheses / intervention outcomes referenced by mechanism evidence (copied, never upgraded to universal mechanism by Q37).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["request_id", "mechanism_hypothesis_status", "do_not_upgrade_to_universal"],
+        "properties": {
+          "request_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+          "mechanism_hypothesis_status": {"type": "string", "enum": ["hypothesis", "bounded_mechanism_evidence"]},
+          "do_not_upgrade_to_universal": {"type": "boolean", "const": true, "description": "A repo-local intervention outcome must not be promoted to a real-world universal mechanism by Q37."}
+        }
+      }
+    },
+    "q33_rights": {
+      "type": "array",
+      "description": "Read-only Q33 source-rights records for any external material used as evidence (copied, never bypassed by Q37).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["material_id", "rights_status"],
+        "properties": {
+          "material_id": {"type": "string", "minLength": 1},
+          "rights_status": {"type": "string", "enum": ["clear", "pending", "rejected"]},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "q38_case_retrieval_started": {
+      "type": "boolean",
+      "description": "MUST remain false in Q37. Q37 must not start Q38 case retrieval; setting true fails closed (Q38_START_FORBIDDEN).",
+      "default": false
+    }
+  },
+  "$defs": {
+    "analogy_candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "analogy_id", "source_domain", "target_domain", "source_def", "target_def",
+        "proposer", "q35_authority_ref", "originating_q34_claim_ref", "purpose",
+        "candidate_type", "evidence_refs", "provenance", "claim_ceiling",
+        "lifecycle", "exact_head"
+      ],
+      "properties": {
+        "analogy_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "source_domain": {"type": "string", "minLength": 1, "description": "Must be resolvable and not silently swapped for a different domain."},
+        "target_domain": {"type": "string", "minLength": 1, "description": "Must be resolvable and not silently swapped for a different domain."},
+        "source_def": {"type": "string", "minLength": 1, "description": "Definition of the source construct being mapped."},
+        "target_def": {"type": "string", "minLength": 1, "description": "Definition of the target construct being mapped."},
+        "proposer": {"type": "string", "minLength": 1},
+        "q35_authority_ref": {"type": "string", "minLength": 1, "description": "Q35 authority that authorized proposing/auditing this candidate."},
+        "originating_q34_claim_ref": {"type": "string", "minLength": 1, "description": "Q34 claim this analogy relies on; must be committed_current and permit the analogy purpose."},
+        "purpose": {"type": "string", "enum": [
+          "explanation", "hypothesis_generation", "prediction_transfer",
+          "intervention_design", "search_seed"
+        ], "description": "search_seed only means 'may enter Q38 as a restricted retrieval seed'; it does not assert the analogy is true or the mechanism holds."},
+        "candidate_type": {"type": "string", "enum": [
+          "SURFACE_SIMILARITY", "METAPHOR_ONLY", "STRUCTURAL_ANALOGY",
+          "MECHANISM_CANDIDATE", "TRANSPORTABILITY_CANDIDATE",
+          "COUNTERANALOGY", "INSUFFICIENTLY_SPECIFIED"
+        ], "description": "MECHANISM_EQUIVALENCE_PROVEN and UNIVERSAL_LAW_PROVEN are deliberately NOT permitted as repository auto-outputs (validator fails closed)."},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "provenance": {"type": "string", "minLength": 1, "description": "Where this candidate came from; repo-internal replay must be labeled as such, not fabricated as external mechanism fact."},
+        "claim_ceiling": {"type": "string", "minLength": 1, "description": "Must not assert universal real-world mechanism or proven cross-domain causal law. A local structural similarity may not be widened into a universal causal regularity."},
+        "lifecycle": {
+          "type": "object", "additionalProperties": false,
+          "required": ["status", "history"],
+          "properties": {
+            "status": {"type": "string", "enum": ["proposed", "under_audit", "audited", "rejected", "deprecated"]},
+            "history": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$", "description": "Binds the candidate to the exact repository head it was authored against."}
+      }
+    },
+    "mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mapping_id", "analogy_id", "source_entities", "target_entities",
+        "correspondence_pairs", "relation_preservation", "directionality",
+        "cardinality", "cardinality_rationale", "invariants",
+        "known_mismatches", "omitted_variables", "hidden_premises",
+        "scale_time_context_differences", "representation_level", "mapping_digest"
+      ],
+      "properties": {
+        "mapping_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "analogy_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "source_entities": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "target_entities": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "correspondence_pairs": {
+          "type": "array", "minItems": 1,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["source", "target", "quality"],
+            "properties": {
+              "source": {"type": "string", "minLength": 1},
+              "target": {"type": "string", "minLength": 1},
+              "quality": {"type": "string", "enum": ["exact", "partial", "approximate", "analogous_only"]},
+              "note": {"type": "string"}
+            }
+          }
+        },
+        "relation_preservation": {"type": "string", "minLength": 1, "description": "What relations are claimed preserved; must not exceed what the actual map supports."},
+        "directionality": {"type": "string", "enum": ["forward", "backward", "bidirectional", "none"]},
+        "cardinality": {"type": "string", "enum": ["1:1", "1:n", "n:1", "n:m"]},
+        "cardinality_rationale": {"type": "string", "minLength": 1, "description": "Legal justification for the declared cardinality; 1:n / n:1 / n:m must be explicitly declared, otherwise the validator fails closed."},
+        "invariants": {"type": "array", "items": {"type": "string"}},
+        "known_mismatches": {
+          "type": "array", "items": {"type": "string"},
+          "description": "Non-correspondences / known mismatches. Must not be left blank to hide disagreement: a mapping with no declared mismatch AND no declared omitted variables AND no scale/time/context difference is 'suspiciously clean' and fails the negative-evidence semantic check (unless explicitly justified as INSUFFICIENTLY_SPECIFIED)."
+        },
+        "omitted_variables": {
+          "type": "array", "items": {"type": "string"},
+          "description": "Variables present in one domain but absent in the other; i.e. what the map leaves out."
+        },
+        "hidden_premises": {
+          "type": "array", "items": {"type": "string"},
+          "description": "Assumptions imported from the source domain that are not stated in the target mapping (salvaged from lab hidden_premise_transfer concept)."
+        },
+        "scale_time_context_differences": {
+          "type": "array", "items": {"type": "string"},
+          "description": "Scale, temporal dynamics, lag and context differences between the domains; an undeclared scale mismatch or temporal/regime difference fails closed."
+        },
+        "representation_level": {"type": "string", "minLength": 1, "description": "e.g. mathematical, causal-graph, narrative, implementation."},
+        "mapping_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$", "description": "Digest of the declared mapping content for tamper-evidence."}
+      }
+    },
+    "mechanism_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_id", "analogy_id", "source_domain_ref", "target_domain_ref",
+        "evidence_kind", "status", "prohibited_promotions", "exact_head"
+      ],
+      "properties": {
+        "evidence_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "analogy_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "source_domain_ref": {"type": "string", "minLength": 1},
+        "target_domain_ref": {"type": "string", "minLength": 1},
+        "evidence_kind": {"type": "string", "enum": [
+          "SHARED_VOCABULARY_ONLY", "SHARED_MATHEMATICAL_FORM",
+          "SHARED_CAUSAL_GRAPH_CANDIDATE", "SHARED_PROCESS_EVIDENCE",
+          "INTERVENTION_RESPONSE_EVIDENCE", "INDEPENDENT_MECHANISM_EVIDENCE",
+          "UNRESOLVED", "CONTRADICTED"
+        ], "description": "Shared vocabulary, shared form, correlation or similar shape must NOT be treated as independent mechanism evidence (validator fails closed)."},
+        "status": {"type": "string", "enum": ["CANDIDATE", "BOUNDED_MECHANISM_EVIDENCE", "INSUFFICIENT", "CONTRADICTED"]},
+        "mechanism_evidence_ref": {"type": "string", "description": "Required when status is BOUNDED_MECHANISM_EVIDENCE; must not circularly reference the analogy itself as its own evidence."},
+        "independent_evidence_ref": {"type": "string", "description": "Reference to independent mechanism evidence outside the analogy under audit."},
+        "prohibited_promotions": {
+          "type": "array", "items": {"type": "string"},
+          "description": "Explicit list of claims this evidence must NOT be used to support (e.g. universal law, real-world causal transport)."
+        },
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    },
+    "transportability_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "assessment_id", "analogy_id", "source_population", "target_population",
+        "transport_target", "required_invariances", "covariate_shift",
+        "concept_measurement_shift", "mechanism_moderator_shift",
+        "scale_time_regime_shift", "support_overlap", "boundary_conditions",
+        "excluded_scopes", "uncertainty", "falsification_conditions", "status", "exact_head"
+      ],
+      "properties": {
+        "assessment_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "analogy_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "source_population": {"type": "string", "minLength": 1},
+        "target_population": {"type": "string", "minLength": 1},
+        "transport_target": {"type": "string", "minLength": 1, "description": "What is claimed transportable, and to what."},
+        "required_invariances": {"type": "array", "items": {"type": "string"}, "minItems": 1, "description": "Invariances that must hold for transport; empty fails the transportability semantic check."},
+        "covariate_shift": {"type": "string", "minLength": 1, "description": "Declared covariate shift; an unhandled shift fails closed."},
+        "concept_measurement_shift": {"type": "string", "minLength": 1, "description": "Declared concept/measurement drift; an unhandled drift fails closed."},
+        "mechanism_moderator_shift": {"type": "string", "minLength": 1, "description": "Declared mechanism/moderator shift; an unhandled shift fails closed."},
+        "scale_time_regime_shift": {"type": "string", "minLength": 1, "description": "Declared scale/time/regime shift; an unhandled shift fails closed."},
+        "support_overlap": {"type": "string", "minLength": 1, "description": "Overlap between source and target supports; empty/unsupported fails the transportability semantic check."},
+        "boundary_conditions": {"type": "array", "items": {"type": "string"}, "minItems": 1, "description": "Explicit boundary conditions; empty fails the transportability semantic check."},
+        "excluded_scopes": {"type": "array", "items": {"type": "string"}},
+        "uncertainty": {"type": "string", "minLength": 1, "description": "Mandatory uncertainty statement."},
+        "falsification_conditions": {"type": "array", "items": {"type": "string"}, "minItems": 1, "description": "Conditions under which transportability is falsified; empty fails the transportability semantic check."},
+        "status": {"type": "string", "enum": [
+          "NOT_ASSESSED", "NOT_TRANSPORTABLE", "TRANSPORTABLE_WITHIN_DECLARED_SCOPE",
+          "PARTIAL_TRANSPORTABILITY", "INSUFFICIENT_EVIDENCE", "CONTRADICTED"
+        ]},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    },
+    "audit_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision_id", "analogy_id", "classification", "mapping_consistency",
+        "mechanism_evidence_sufficiency", "transportability_status",
+        "counteranalogy_status", "q38_search_permission", "allowed_use",
+        "forbidden_inference", "downgraded_claim_ceiling", "unresolved_issues",
+        "reviewer_verifier", "exact_head"
+      ],
+      "properties": {
+        "decision_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "analogy_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "classification": {"type": "string", "enum": [
+          "SURFACE_SIMILARITY", "METAPHOR_ONLY", "STRUCTURAL_ANALOGY",
+          "MECHANISM_CANDIDATE", "TRANSPORTABILITY_CANDIDATE",
+          "COUNTERANALOGY", "INSUFFICIENTLY_SPECIFIED"
+        ]},
+        "mapping_consistency": {"type": "string", "enum": ["CONSISTENT", "INCONSISTENT", "UNDERSPECIFIED"]},
+        "mechanism_evidence_sufficiency": {"type": "string", "enum": ["SUFFICIENT", "INSUFFICIENT", "NONE"]},
+        "transportability_status": {"type": "string", "enum": [
+          "NOT_ASSESSED", "NOT_TRANSPORTABLE", "TRANSPORTABLE_WITHIN_DECLARED_SCOPE",
+          "PARTIAL_TRANSPORTABILITY", "INSUFFICIENT_EVIDENCE", "CONTRADICTED"
+        ]},
+        "counteranalogy_status": {"type": "string", "enum": ["PRESENT_PRESERVED", "ABSENT", "SUPPRESSED_DETECTED"], "description": "SUPPRESSED_DETECTED (counteranalogy/negative evidence removed) fails the counteranalogy semantic check."},
+        "q38_search_permission": {"type": "string", "enum": ["ALLOWED_AS_RESTRICTED_SEED", "NOT_ALLOWED"], "description": "ALLOWED_AS_RESTRICTED_SEED only means the analogy may enter Q38 as a restricted retrieval seed; it does NOT assert the analogy is true or the mechanism holds."},
+        "allowed_use": {"type": "string", "minLength": 1},
+        "forbidden_inference": {"type": "string", "minLength": 1, "description": "What must NOT be inferred (e.g. mechanism identity, universal law, real-world causal transport)."},
+        "downgraded_claim_ceiling": {"type": "string", "minLength": 1, "description": "Claim ceiling after audit; may be lower than the candidate's original ceiling."},
+        "unresolved_issues": {"type": "array", "items": {"type": "string"}},
+        "reviewer_verifier": {"type": "string", "minLength": 1, "description": "Agent/role that produced the audit decision (Hy3 reviewer in a fresh read-only context performs the independent review post-campaign; the builder records the decision object only)."},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    }
+  }
+}

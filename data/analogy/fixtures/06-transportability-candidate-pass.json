@@ -1,0 +1,167 @@
+{
+  "analogy_candidates": [
+    {
+      "analogy_id": "a06",
+      "source_domain": "epidemic",
+      "target_domain": "rumor",
+      "source_def": "disease spread",
+      "target_def": "information spread",
+      "proposer": "agent:kimi",
+      "q35_authority_ref": "g-q35-001",
+      "originating_q34_claim_ref": "c-q34-ana-001",
+      "purpose": "explanation",
+      "candidate_type": "TRANSPORTABILITY_CANDIDATE",
+      "evidence_refs": [
+        "ext:paper-x"
+      ],
+      "provenance": "repo-internal replay",
+      "claim_ceiling": "limited: same SIR-style dynamics may hold within declared scope",
+      "lifecycle": {
+        "status": "audited",
+        "history": [
+          "proposed",
+          "audited"
+        ]
+      },
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "mappings": [
+    {
+      "mapping_id": "m06",
+      "analogy_id": "a06",
+      "source_entities": [
+        "infected"
+      ],
+      "target_entities": [
+        "adopters"
+      ],
+      "correspondence_pairs": [
+        {
+          "source": "infected",
+          "target": "adopters",
+          "quality": "partial"
+        }
+      ],
+      "relation_preservation": "partial compartment analogy",
+      "directionality": "forward",
+      "cardinality": "1:1",
+      "cardinality_rationale": "single construct map",
+      "invariants": [
+        "compartmental flow"
+      ],
+      "known_mismatches": [
+        "immunity differs"
+      ],
+      "omitted_variables": [
+        "contact network"
+      ],
+      "hidden_premises": [
+        "biological vs social"
+      ],
+      "scale_time_context_differences": [
+        "timescale differs"
+      ],
+      "representation_level": "mathematical",
+      "mapping_digest": "sha256:3404b458b762dfc3a470b4b9b535564b3fd3717b6832284c6066a2ede53fff38"
+    }
+  ],
+  "mechanism_evidence": [
+    {
+      "evidence_id": "me06",
+      "analogy_id": "a06",
+      "source_domain_ref": "epidemic",
+      "target_domain_ref": "rumor",
+      "evidence_kind": "SHARED_CAUSAL_GRAPH_CANDIDATE",
+      "status": "CANDIDATE",
+      "prohibited_promotions": [
+        "universal law",
+        "real-world causal transport"
+      ],
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "transportability_assessments": [
+    {
+      "assessment_id": "t06",
+      "analogy_id": "a06",
+      "source_population": "human epidemic",
+      "target_population": "online rumor",
+      "transport_target": "SIR transmission rate",
+      "required_invariances": [
+        "network mixing assumption"
+      ],
+      "covariate_shift": "age structure differs",
+      "concept_measurement_shift": "infection vs share event",
+      "mechanism_moderator_shift": "media amplification",
+      "scale_time_regime_shift": "days vs hours",
+      "support_overlap": "partial overlap in network topology",
+      "boundary_conditions": [
+        "no forced sharing",
+        "no mass media"
+      ],
+      "excluded_scopes": [
+        "political coercion"
+      ],
+      "uncertainty": "moderate; rate estimates vary",
+      "falsification_conditions": [
+        "empirical rate ratio <0.5"
+      ],
+      "status": "TRANSPORTABLE_WITHIN_DECLARED_SCOPE",
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "audit_decisions": [
+    {
+      "decision_id": "d06",
+      "analogy_id": "a06",
+      "classification": "TRANSPORTABILITY_CANDIDATE",
+      "mapping_consistency": "CONSISTENT",
+      "mechanism_evidence_sufficiency": "SUFFICIENT",
+      "transportability_status": "TRANSPORTABLE_WITHIN_DECLARED_SCOPE",
+      "counteranalogy_status": "ABSENT",
+      "q38_search_permission": "ALLOWED_AS_RESTRICTED_SEED",
+      "allowed_use": "restricted Q38 retrieval seed only",
+      "forbidden_inference": "universal transport; real-world causal proof",
+      "downgraded_claim_ceiling": "transportable only within declared scope and boundary conditions",
+      "unresolved_issues": [],
+      "reviewer_verifier": "builder(Q37)",
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "q34_claims": [
+    {
+      "claim_id": "c-q34-ana-001",
+      "status": "committed_current",
+      "claim_ceiling": "documented entropy analogy; repository-internal only",
+      "allows_analogy_purpose": true,
+      "source_ref": "src:q34"
+    }
+  ],
+  "q35_grants": [
+    {
+      "grant_id": "g-q35-001",
+      "status": "active",
+      "grant_expires_at": "2099-01-01T00:00:00+00:00",
+      "scope": "explanation",
+      "grantee": "agent:kimi",
+      "granted_by": "user:zhiyuan",
+      "action_refs": [
+        "propose",
+        "audit"
+      ]
+    }
+  ],
+  "q33_rights": [
+    {
+      "material_id": "ext:paper-x",
+      "rights_status": "clear",
+      "note": "open access"
+    },
+    {
+      "material_id": "ext:independent-study",
+      "rights_status": "clear",
+      "note": "open access"
+    }
+  ]
+}

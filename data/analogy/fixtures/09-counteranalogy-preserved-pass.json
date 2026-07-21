@@ -1,0 +1,136 @@
+{
+  "analogy_candidates": [
+    {
+      "analogy_id": "a09",
+      "source_domain": "gravity",
+      "target_domain": "love",
+      "source_def": "attraction",
+      "target_def": "attraction",
+      "proposer": "agent:kimi",
+      "q35_authority_ref": "g-q35-001",
+      "originating_q34_claim_ref": "c-q34-ana-001",
+      "purpose": "explanation",
+      "candidate_type": "COUNTERANALOGY",
+      "evidence_refs": [
+        "ext:paper-x"
+      ],
+      "provenance": "repo-internal counteranalogy",
+      "claim_ceiling": "counteranalogy: attraction in love is metaphor only, not gravitational",
+      "lifecycle": {
+        "status": "rejected",
+        "history": [
+          "proposed",
+          "audited"
+        ]
+      },
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "mappings": [
+    {
+      "mapping_id": "m09",
+      "analogy_id": "a09",
+      "source_entities": [
+        "force"
+      ],
+      "target_entities": [
+        "affection"
+      ],
+      "correspondence_pairs": [
+        {
+          "source": "force",
+          "target": "affection",
+          "quality": "analogous_only"
+        }
+      ],
+      "relation_preservation": "metaphor only",
+      "directionality": "forward",
+      "cardinality": "1:1",
+      "cardinality_rationale": "single construct map",
+      "invariants": [],
+      "known_mismatches": [
+        "no inverse-square in love"
+      ],
+      "omitted_variables": [
+        "medium"
+      ],
+      "hidden_premises": [
+        "physical vs social"
+      ],
+      "scale_time_context_differences": [
+        "scale differs"
+      ],
+      "representation_level": "mathematical",
+      "mapping_digest": "sha256:9e454d09e1dbcabca298b6af3b10d5021996152eee27ba48c95f5fe412d1447c"
+    }
+  ],
+  "mechanism_evidence": [
+    {
+      "evidence_id": "me09",
+      "analogy_id": "a09",
+      "source_domain_ref": "gravity",
+      "target_domain_ref": "love",
+      "evidence_kind": "SHARED_VOCABULARY_ONLY",
+      "status": "CONTRADICTED",
+      "prohibited_promotions": [
+        "universal law",
+        "real-world causal transport"
+      ],
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "transportability_assessments": [],
+  "audit_decisions": [
+    {
+      "decision_id": "d09",
+      "analogy_id": "a09",
+      "classification": "COUNTERANALOGY",
+      "mapping_consistency": "CONSISTENT",
+      "mechanism_evidence_sufficiency": "NONE",
+      "transportability_status": "NOT_ASSESSED",
+      "counteranalogy_status": "PRESENT_PRESERVED",
+      "q38_search_permission": "NOT_ALLOWED",
+      "allowed_use": "metaphor illustration only",
+      "forbidden_inference": "any causal or mechanism inference",
+      "downgraded_claim_ceiling": "metaphor only; no mechanism; no transport",
+      "unresolved_issues": [],
+      "reviewer_verifier": "builder(Q37)",
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "q34_claims": [
+    {
+      "claim_id": "c-q34-ana-001",
+      "status": "committed_current",
+      "claim_ceiling": "documented entropy analogy; repository-internal only",
+      "allows_analogy_purpose": true,
+      "source_ref": "src:q34"
+    }
+  ],
+  "q35_grants": [
+    {
+      "grant_id": "g-q35-001",
+      "status": "active",
+      "grant_expires_at": "2099-01-01T00:00:00+00:00",
+      "scope": "explanation",
+      "grantee": "agent:kimi",
+      "granted_by": "user:zhiyuan",
+      "action_refs": [
+        "propose",
+        "audit"
+      ]
+    }
+  ],
+  "q33_rights": [
+    {
+      "material_id": "ext:paper-x",
+      "rights_status": "clear",
+      "note": "open access"
+    },
+    {
+      "material_id": "ext:independent-study",
+      "rights_status": "clear",
+      "note": "open access"
+    }
+  ]
+}

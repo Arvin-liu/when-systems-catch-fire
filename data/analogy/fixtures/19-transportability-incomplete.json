@@ -1,0 +1,163 @@
+{
+  "analogy_candidates": [
+    {
+      "analogy_id": "a",
+      "source_domain": "thermodynamics",
+      "target_domain": "information-theory",
+      "source_def": "entropy as disorder measure",
+      "target_def": "entropy as surprise measure",
+      "proposer": "agent:kimi",
+      "q35_authority_ref": "g-q35-001",
+      "originating_q34_claim_ref": "c-q34-ana-001",
+      "purpose": "explanation",
+      "candidate_type": "STRUCTURAL_ANALOGY",
+      "evidence_refs": [
+        "ext:paper-x"
+      ],
+      "provenance": "repo-internal replay",
+      "claim_ceiling": "local structural similarity between entropy formulations; not a proven shared mechanism",
+      "lifecycle": {
+        "status": "audited",
+        "history": [
+          "proposed",
+          "audited"
+        ]
+      },
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "mappings": [
+    {
+      "mapping_id": "m",
+      "analogy_id": "a",
+      "source_entities": [
+        "heat"
+      ],
+      "target_entities": [
+        "information"
+      ],
+      "correspondence_pairs": [
+        {
+          "source": "heat",
+          "target": "information",
+          "quality": "partial",
+          "note": "analogous ordering"
+        }
+      ],
+      "relation_preservation": "partial monotonic ordering preserved",
+      "directionality": "forward",
+      "cardinality": "1:1",
+      "cardinality_rationale": "single construct-to-construct map",
+      "invariants": [
+        "monotonic increase"
+      ],
+      "known_mismatches": [
+        "heat is conserved, information is not"
+      ],
+      "omitted_variables": [
+        "carrier medium"
+      ],
+      "hidden_premises": [
+        "equilibrium assumed"
+      ],
+      "scale_time_context_differences": [
+        "macroscopic vs discrete"
+      ],
+      "representation_level": "mathematical",
+      "mapping_digest": "sha256:2a471882e44a9cd7379354aae4c5b869302cab6fcbe7fd8402f5e900741d3b95"
+    }
+  ],
+  "mechanism_evidence": [
+    {
+      "evidence_id": "me",
+      "analogy_id": "a",
+      "source_domain_ref": "thermodynamics",
+      "target_domain_ref": "information-theory",
+      "evidence_kind": "SHARED_MATHEMATICAL_FORM",
+      "status": "CANDIDATE",
+      "prohibited_promotions": [
+        "universal law",
+        "real-world causal transport"
+      ],
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "transportability_assessments": [
+    {
+      "assessment_id": "t",
+      "analogy_id": "a",
+      "source_population": "human epidemic",
+      "target_population": "online rumor",
+      "transport_target": "SIR transmission rate",
+      "required_invariances": [],
+      "covariate_shift": "age structure differs",
+      "concept_measurement_shift": "infection vs share event",
+      "mechanism_moderator_shift": "media amplification",
+      "scale_time_regime_shift": "days vs hours",
+      "support_overlap": "partial overlap in network topology",
+      "boundary_conditions": [
+        "no forced sharing"
+      ],
+      "excluded_scopes": [
+        "political coercion"
+      ],
+      "uncertainty": "moderate; rate estimates vary",
+      "falsification_conditions": [
+        "empirical rate ratio <0.5"
+      ],
+      "status": "NOT_TRANSPORTABLE",
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "audit_decisions": [
+    {
+      "decision_id": "d",
+      "analogy_id": "a",
+      "classification": "STRUCTURAL_ANALOGY",
+      "mapping_consistency": "CONSISTENT",
+      "mechanism_evidence_sufficiency": "SUFFICIENT",
+      "transportability_status": "NOT_ASSESSED",
+      "counteranalogy_status": "ABSENT",
+      "q38_search_permission": "NOT_ALLOWED",
+      "allowed_use": "explanation only",
+      "forbidden_inference": "mechanism identity; universal law",
+      "downgraded_claim_ceiling": "local structural similarity; not a proven shared mechanism",
+      "unresolved_issues": [],
+      "reviewer_verifier": "builder(Q37)",
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "q34_claims": [
+    {
+      "claim_id": "c-q34-ana-001",
+      "status": "committed_current",
+      "claim_ceiling": "documented entropy analogy; repository-internal only",
+      "allows_analogy_purpose": true,
+      "source_ref": "src:q34"
+    }
+  ],
+  "q35_grants": [
+    {
+      "grant_id": "g-q35-001",
+      "status": "active",
+      "grant_expires_at": "2099-01-01T00:00:00+00:00",
+      "scope": "explanation",
+      "grantee": "agent:kimi",
+      "granted_by": "user:zhiyuan",
+      "action_refs": [
+        "propose",
+        "audit"
+      ]
+    }
+  ],
+  "q33_rights": [
+    {
+      "material_id": "ext:paper-x",
+      "rights_status": "clear",
+      "note": "open access"
+    }
+  ],
+  "q36_obs_snapshots": [],
+  "q36_int_snapshots": [],
+  "q38_case_retrieval_started": false
+}
