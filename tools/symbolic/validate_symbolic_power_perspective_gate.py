@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+import json, sys
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[2]; sys.path.insert(0,str(ROOT))
+from tools.governance.structured_capability_gate import run
+CONFIG=json.loads("{\"task_id\": \"SYMBOLIC-SPHERE-I1\", \"capability\": \"symbolic_power_perspective\", \"parent_id\": \"121Q39-I1\", \"parent_head\": \"824ff7f713303b18bca94b05de3f4b6530ffff51\", \"fields\": [\"symbolic_object\", \"material_fact_base\", \"actor_positions\", \"power_forms\", \"meaning_projections\", \"intended_use\", \"actual_use\", \"front_face\", \"suppressed_faces\", \"benefit_cost_distribution\", \"counter_readings\", \"institutionalization_mechanism\", \"symbolic_capture\", \"counter_appropriation\", \"transformation_history\", \"evidence_constraints\", \"claim_ceiling\"], \"rules\": [\"material_truth_separate\", \"ownership_not_truth\", \"popularity_not_truth\", \"institution_not_fact\", \"all_actors_present\", \"costs_visible\", \"intent_effect_separate\", \"interpretive_power_not_legitimacy\", \"no_causal_totalization\", \"history_append_only\", \"evidence_constrained\", \"claim_ceiling_preserved\"], \"schema\": \"schemas/symbolic/symbolic_power_perspective-contract.schema.json\", \"forbidden_claims\": [\"ownership is not truth\", \"popularity is not truth\", \"perspective does not excuse material error\", \"symbolic analysis is not complete causal proof\", \"universal truth\", \"causal proof established\", \"ecosystem deployed\"]}")
+if __name__=="__main__": sys.exit(run(CONFIG))
