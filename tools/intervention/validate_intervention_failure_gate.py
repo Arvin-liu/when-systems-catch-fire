@@ -355,21 +355,23 @@ def check_stop_condition_violated(bundle):
 
 
 def check_failure_rewrite(bundle):
-    """Failures must be preserved: a failure record must not be deleted, and a plan that failed
-    must not be silently relabelled succeeded_within_scope without a rollback record."""
+    """Failures must be preserved: a failure record must not be deleted, and a plan whose
+    execution events show failure must not be silently relabelled succeeded_within_scope
+    without a failure record / rollback record."""
     errs = []
-    failed_plans = set()
-    for f in bundle.get("failure_records", []):
-        failed_plans.add(f.get("plan_id"))
+    failure_rec_plans = {f.get("plan_id") for f in bundle.get("failure_records", [])}
+    rollback_plans = {r.get("plan_id") for r in bundle.get("stop_rollback_records", [])}
     plans = _index(bundle.get("plans", []), "plan_id")
-    for pid in failed_plans:
-        p = plans.get(pid)
-        if p and p.get("state") in ("succeeded_within_scope",):
-            # succeeded without a rollback record referencing it = silent success rewrite
-            has_rollback = any(r.get("plan_id") == pid for r in bundle.get("stop_rollback_records", []))
-            if not has_rollback:
+    for pid, p in plans.items():
+        events_failed = any(ev.get("state") in ("failed", "degraded")
+                            for ev in p.get("execution_events", []))
+        if p.get("state") == "succeeded_within_scope":
+            if events_failed and pid not in failure_rec_plans:
+                errs.append(f"plan {pid}: execution shows failure but plan state is "
+                            f"'succeeded_within_scope' with no failure record (failure deleted/rewritten to success)")
+            if pid in failure_rec_plans and pid not in rollback_plans:
                 errs.append(f"plan {pid}: failure record exists but plan state is "
-                            f"'{p.get('state')}' with no rollback record (failure rewritten to success)")
+                            f"'succeeded_within_scope' with no rollback record (failure rewritten to success)")
     return errs
 
 
@@ -436,6 +438,10 @@ def check_rollback_integrity(bundle):
         if rb.get("verification_result") == "partial" and \
            rb.get("irreversible_residue", "").strip() == "":
             errs.append(f"rollback {rb.get('record_id')}: partial verification but no irreversible_residue declared")
+        # claimed full recovery (verified) but surfaces explicitly not restored => silent overwrite claim
+        if rb.get("verification_result") == "verified" and rb.get("not_restored_surfaces"):
+            errs.append(f"rollback {rb.get('record_id')}: verification_result 'verified' but not_restored_surfaces "
+                        f"declared (partial recovery claimed full)")
         if not rb.get("restored_surfaces") and not rb.get("not_restored_surfaces"):
             errs.append(f"rollback {rb.get('record_id')}: must declare restored and/or not-restored surfaces")
     return errs

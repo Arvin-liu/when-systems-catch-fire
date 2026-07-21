@@ -126,18 +126,18 @@
         "allowed_side_effects": {"type": "array", "items": {"type": "string"}},
         "forbidden_surfaces": {"type": "array", "items": {"type": "string"}},
         "prerequisites": {"type": "array", "items": {"type": "string"}},
-        "stop_conditions": {"type": "array", "items": {"type": "string"}, "minItems": 1},
-        "abort_conditions": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "stop_conditions": {"type": "array", "items": {"type": "string"}, "description": "Must be non-empty; an envelope with no stop conditions fails the safety-envelope semantic check."},
+        "abort_conditions": {"type": "array", "items": {"type": "string"}, "description": "Must be non-empty; an envelope with no abort conditions fails the safety-envelope semantic check."},
         "observation_cadence": {"type": "string", "minLength": 1},
         "authority_escalation_threshold": {"type": "string", "minLength": 1},
-        "rollback_readiness": {"type": "boolean", "const": true, "description": "A usable rollback plan must be present before execution."},
+        "rollback_readiness": {"type": "boolean", "description": "Must be true: a usable rollback plan must be present before execution (validator fails closed)."},
         "expiry": {"type": "string", "format": "date-time", "description": "Grant/envelope expiry; execution after expiry fails closed."},
         "rollback_plan": {
           "type": "object", "additionalProperties": false,
           "required": ["plan_id", "steps", "verification_method"],
           "properties": {
             "plan_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
-            "steps": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+            "steps": {"type": "array", "items": {"type": "string"}, "description": "Must be non-empty; an incomplete rollback plan fails the safety-envelope semantic check."},
             "verification_method": {"type": "string", "minLength": 1}
           }
         }

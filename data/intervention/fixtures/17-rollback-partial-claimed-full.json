@@ -1,0 +1,167 @@
+{
+  "intervention_requests": [
+    {
+      "intervention_id": "int-fx-001",
+      "initiator": "zhiyuan",
+      "q34_claim_ref": "q33.seven_governance_components.current_in_main",
+      "q35_actor_ref": "actor-zhiyuan",
+      "q35_grant_ref": "grant-fx-001",
+      "q35_action_ref": "action-fx-001",
+      "q35_trajectory_event_digest": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+      "q36_obs_ref": "obs-fx-001",
+      "target_resource": "data/observation",
+      "normalized_intervention_type": "dry_run_replay",
+      "intended_change": "controlled deterministic replay",
+      "mechanism_hypothesis": "Hypothesis: the same tool reproduces the output.",
+      "mechanism_hypothesis_status": "hypothesis",
+      "applicability_scope": "repo:data/observation controlled fixture regeneration only",
+      "uncertainty": "deterministic",
+      "expected_effect": "output matches recorded digest",
+      "evaluation_window": {
+        "start": "2026-07-21T10:00:00+00:00",
+        "end": "2026-07-21T11:00:00+00:00"
+      },
+      "claim_ceiling": "candidate_only: single controlled repo-local replay; no real-world causal claim",
+      "exact_head": "a8eab57bf2a2465c48d5d624e22681a1ad1bc20c",
+      "artifact_digest": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+      "proposed_at": "2026-07-21T10:00:00+00:00",
+      "authorized_at": "2026-07-21T10:05:00+00:00",
+      "external_action": false,
+      "source_ref": "data/observation/fixtures/20-retrospective-replay-pilot.json"
+    }
+  ],
+  "safety_envelopes": [
+    {
+      "envelope_id": "env-fx-001",
+      "request_id": "int-fx-001",
+      "allowed_target_scope": "repo:data/observation controlled fixture regeneration only",
+      "max_change_magnitude": 1.0,
+      "allowed_side_effects": [
+        "none"
+      ],
+      "forbidden_surfaces": [
+        "main",
+        "external_network"
+      ],
+      "prerequisites": [
+        "snapshot present"
+      ],
+      "stop_conditions": [
+        "digest mismatch"
+      ],
+      "abort_conditions": [
+        "external call"
+      ],
+      "observation_cadence": "per-execution",
+      "authority_escalation_threshold": "residual to Q39",
+      "rollback_readiness": true,
+      "expiry": "2026-07-22T00:00:00+00:00",
+      "rollback_plan": {
+        "plan_id": "rb-fx-001",
+        "steps": [
+          "restore"
+        ],
+        "verification_method": "sha256 compare"
+      }
+    }
+  ],
+  "q35_grants": [
+    {
+      "grant_id": "grant-fx-001",
+      "status": "active",
+      "grant_expires_at": "2026-07-22T00:00:00+00:00",
+      "scope": "repo:data/observation controlled fixture regeneration only",
+      "grantee": "actor-zhiyuan",
+      "granted_by": "actor-reviewer",
+      "action_refs": [
+        "action-fx-001"
+      ]
+    }
+  ],
+  "q36_obs_snapshots": [
+    {
+      "observation_id": "obs-fx-001",
+      "target_scope": "repo:data/observation controlled fixture regeneration only",
+      "sampling_window": {
+        "start": "2026-07-21T09:00:00+00:00",
+        "end": "2026-07-21T10:00:00+00:00"
+      },
+      "quality_status": "accepted",
+      "exact_head": "a8eab57bf2a2465c48d5d624e22681a1ad1bc20c",
+      "do_not_infer_cause": true
+    }
+  ],
+  "plans": [
+    {
+      "plan_id": "plan-fx-001",
+      "request_id": "int-fx-001",
+      "envelope_id": "env-fx-001",
+      "state": "rolled_back",
+      "high_risk": false,
+      "execution_events": [
+        {
+          "event_id": "ev-fx-001",
+          "state": "succeeded_within_scope",
+          "pre_state_digest": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+          "command": "python tools/observation/validate_observation_prediction_gate.py",
+          "executor": "actor-zhiyuan",
+          "start_time": "2026-07-21T10:10:00+00:00",
+          "end_time": "2026-07-21T10:30:00+00:00",
+          "affected_surfaces": [
+            "data/observation/fixtures/20-retrospective-replay-pilot.json"
+          ],
+          "actual_change_magnitude": 0.0,
+          "output_artifact_digests": [
+            "sha256:4444444444444444444444444444444444444444444444444444444444444444"
+          ],
+          "side_effects": [],
+          "stop_condition_status": "not_triggered",
+          "trajectory_event_digest": "sha256:5555555555555555555555555555555555555555555555555555555555555555",
+          "no_silent_mutation": true
+        }
+      ]
+    }
+  ],
+  "outcome_evaluations": [
+    {
+      "evaluation_id": "eval-fx-001",
+      "plan_id": "plan-fx-001",
+      "execution_event_id": "ev-fx-001",
+      "q36_obs_observation_ref": "obs-fx-001",
+      "expected_effect": "output matches recorded digest",
+      "observed_effect": "output matches recorded digest",
+      "evaluation_method": "sha256 compare",
+      "baseline_comparator": "pre-state digest 3333...",
+      "uncertainty": "0",
+      "residual_change": "none",
+      "unintended_effects": [],
+      "scope_validity": "valid for single controlled replay",
+      "evaluator_ref": "actor-zhiyuan",
+      "causal_interpretation_status": "NOT_IDENTIFIED",
+      "do_not_overclaim_causality": true,
+      "exact_head": "a8eab57bf2a2465c48d5d624e22681a1ad1bc20c"
+    }
+  ],
+  "failure_records": [],
+  "stop_rollback_records": [
+    {
+      "record_id": "rb-fx-partial",
+      "plan_id": "plan-fx-001",
+      "triggering_stop_condition": "digest mismatch",
+      "stop_authority": "actor-reviewer",
+      "rollback_plan_ref": "rb-fx-001",
+      "rollback_action": "restore from pre-state",
+      "pre_digest": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+      "post_digest": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+      "restored_surfaces": [],
+      "not_restored_surfaces": [
+        "data/observation/fixtures/20-retrospective-replay-pilot.json"
+      ],
+      "irreversible_residue": "partial file",
+      "verification_result": "verified",
+      "follow_up_restrictions": "none",
+      "history_preservation": true,
+      "exact_head": "a8eab57bf2a2465c48d5d624e22681a1ad1bc20c"
+    }
+  ]
+}
