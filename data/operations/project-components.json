@@ -2027,8 +2027,71 @@
         "data/symbolic/pilot-symbolic-sphere-i1.json",
         "data/symbolic/fixtures/"
       ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "schemas/decision/decision_integrity-contract.schema.json",
+      "component_id": "decision_integrity_contract",
+      "component_type": "governance_constraint",
+      "description": "DECISION-INTEGRITY-I1 typed evidence-bound contract. Principles, assumptions, decision order, risks and stop conditions can be frozen ex ante so process quality and outcome quality remain separately auditable after results appear.",
+      "label": "Principle Lock, Process Quality & Outcome-Bias Governance 合同",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "DECISION-INTEGRITY-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "schemas/decision/decision_integrity-contract.schema.json",
+        "docs/decision/"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/decision/validate_decision_integrity_gate.py",
+      "component_id": "decision_integrity_gate_validator",
+      "component_type": "governance_constraint",
+      "description": "DECISION-INTEGRITY-I1 fail-closed real CLI enforcing evidence binding, exact parent, 12 task rules, candidate ceiling and no external action.",
+      "label": "Principle Lock, Process Quality & Outcome-Bias Governance 门禁",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "DECISION-INTEGRITY-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/decision/",
+        "tests/decision/"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/decision/pilot-decision-integrity-i1.json",
+      "component_id": "decision_integrity_pilot",
+      "component_type": "governance_constraint",
+      "description": "DECISION-INTEGRITY-I1 self-authored bounded repository pilot covering BAD_PROCESS_GOOD_OUTCOME and GOOD_PROCESS_BAD_OUTCOME; 24 fixtures drive the real CLI; no external action.",
+      "label": "Principle Lock, Process Quality & Outcome-Bias Governance 受控试点",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "DECISION-INTEGRITY-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/decision/pilot-decision-integrity-i1.json",
+        "data/decision/fixtures/"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.1.4"
+  "registry_version": "1.1.5"
 }
