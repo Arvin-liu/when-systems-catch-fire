@@ -161,7 +161,7 @@
   "base_identity": "ea1408e6525ceac8ea0c9c5377aca269579d6ff4",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "953cfe8f450fcd69992580658b4c44c2ec913f709a06dcfcaa858f139dc095a6",
+  "closure_hash": "e2af20ba4de25cf28514e98193f0370f0ccee097b9708c68b1f2bb12eaa15f1c",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -186,12 +186,17 @@
   ],
   "required_component_decisions": [
     "historical_reports",
+    "incremental_execution",
+    "iteration",
     "iteration_manifest_contract",
     "observation_prediction_contract",
     "observation_prediction_gate_validator",
     "observation_prediction_pilot_q34",
+    "pages_pipeline",
     "project_component_registry",
     "propagation_calculator",
+    "readme",
+    "sync",
     "system_map_projection"
   ],
   "required_surface_decisions": [
@@ -213,16 +218,22 @@
   "residue": [],
   "resolved_components": [
     "historical_reports",
+    "incremental_execution",
+    "iteration",
     "iteration_manifest_contract",
     "observation_prediction_contract",
     "observation_prediction_gate_validator",
     "observation_prediction_pilot_q34",
+    "pages_pipeline",
     "project_component_registry",
     "propagation_calculator",
+    "readme",
+    "sync",
     "system_map_projection"
   ],
   "seed_components": [
     "historical_reports",
+    "incremental_execution",
     "iteration_manifest_contract",
     "observation_prediction_contract",
     "observation_prediction_gate_validator",
@@ -252,6 +263,7 @@
     "data/observation/fixtures/19-abstain-defer-preserved.json",
     "data/observation/fixtures/20-retrospective-replay-pilot.json",
     "data/observation/pilot-q34-closure-drift-prediction.json",
+    "data/operations/component-execution-profiles.json",
     "data/operations/iterations/121Q36-OBS.json",
     "data/operations/project-components.json",
     "data/operations/propagation/121Q36-OBS-request.json",
@@ -283,6 +295,46 @@
   "task_id": "121Q36-OBS",
   "typed_paths": [
     {
+      "claim_ceiling": "declared repository materialization relation only; no real-world causal identification",
+      "creates_sync_obligation": true,
+      "propagation_mode": "automatic",
+      "relation_class": "publishes",
+      "relation_domain": "repository_dependency",
+      "relation_id": "incremental_builds_pages",
+      "source": "incremental_execution",
+      "target": "pages_pipeline"
+    },
+    {
+      "claim_ceiling": "declared repository materialization relation only; no real-world causal identification",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "incremental_materializes_iteration",
+      "source": "incremental_execution",
+      "target": "iteration"
+    },
+    {
+      "claim_ceiling": "declared repository materialization relation only; no real-world causal identification",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency",
+      "relation_id": "incremental_projects_map",
+      "source": "incremental_execution",
+      "target": "system_map_projection"
+    },
+    {
+      "claim_ceiling": "declared repository materialization relation only; no real-world causal identification",
+      "creates_sync_obligation": true,
+      "propagation_mode": "required_assessment",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation",
+      "relation_id": "incremental_requires_sync",
+      "source": "incremental_execution",
+      "target": "sync"
+    },
+    {
       "claim_ceiling": "deterministic repository derivation",
       "creates_sync_obligation": false,
       "propagation_mode": "automatic",
@@ -291,6 +343,16 @@
       "relation_id": "registry_generates_projection",
       "source": "project_component_registry",
       "target": "system_map_projection"
+    },
+    {
+      "claim_ceiling": "governance obligation only",
+      "creates_sync_obligation": true,
+      "propagation_mode": "required_assessment",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation",
+      "relation_id": "sync_requires_readme",
+      "source": "sync",
+      "target": "readme"
     }
   ]
 }

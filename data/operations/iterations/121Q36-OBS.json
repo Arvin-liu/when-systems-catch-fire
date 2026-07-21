@@ -438,7 +438,7 @@
     "impact_report_path": "data/operations/propagation/121Q36-OBS-impact-report.md",
     "system_map_delta_path": "data/operations/propagation/121Q36-OBS-system-map-delta.json",
     "residue_path": "data/operations/propagation/121Q36-OBS-residue.json",
-    "closure_hash": "953cfe8f450fcd69992580658b4c44c2ec913f709a06dcfcaa858f139dc095a6",
+    "closure_hash": "e2af20ba4de25cf28514e98193f0370f0ccee097b9708c68b1f2bb12eaa15f1c",
     "base_identity": "ea1408e6525ceac8ea0c9c5377aca269579d6ff4",
     "head_identity": "external_exact_head_attestation",
     "seed_paths": [
@@ -463,6 +463,7 @@
       "data/observation/fixtures/19-abstain-defer-preserved.json",
       "data/observation/fixtures/20-retrospective-replay-pilot.json",
       "data/observation/pilot-q34-closure-drift-prediction.json",
+      "data/operations/component-execution-profiles.json",
       "data/operations/iterations/121Q36-OBS.json",
       "data/operations/project-components.json",
       "data/operations/propagation/121Q36-OBS-request.json",
@@ -478,6 +479,7 @@
     ],
     "seed_components": [
       "historical_reports",
+      "incremental_execution",
       "iteration_manifest_contract",
       "observation_prediction_contract",
       "observation_prediction_gate_validator",
@@ -487,16 +489,26 @@
     ],
     "resolved_components": [
       "historical_reports",
+      "incremental_execution",
+      "iteration",
       "iteration_manifest_contract",
       "observation_prediction_contract",
       "observation_prediction_gate_validator",
       "observation_prediction_pilot_q34",
+      "pages_pipeline",
       "project_component_registry",
       "propagation_calculator",
+      "readme",
+      "sync",
       "system_map_projection"
     ],
     "typed_path_ids": [
-      "registry_generates_projection"
+      "incremental_builds_pages",
+      "incremental_materializes_iteration",
+      "incremental_projects_map",
+      "incremental_requires_sync",
+      "registry_generates_projection",
+      "sync_requires_readme"
     ],
     "component_decisions": [
       {

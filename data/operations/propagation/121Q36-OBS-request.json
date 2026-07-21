@@ -14,7 +14,6 @@
     "usage"
   ],
   "changed_paths": [
-    "data/observation/pilot-q34-closure-drift-prediction.json",
     "data/observation/fixtures/01-frozen-then-independent-outcome.json",
     "data/observation/fixtures/02-backwritten-prediction.json",
     "data/observation/fixtures/03-future-input-snapshot.json",
@@ -35,6 +34,8 @@
     "data/observation/fixtures/18-negative-result-preserved.json",
     "data/observation/fixtures/19-abstain-defer-preserved.json",
     "data/observation/fixtures/20-retrospective-replay-pilot.json",
+    "data/observation/pilot-q34-closure-drift-prediction.json",
+    "data/operations/component-execution-profiles.json",
     "data/operations/iterations/121Q36-OBS.json",
     "data/operations/project-components.json",
     "data/operations/propagation/121Q36-OBS-request.json",
