@@ -17,33 +17,36 @@
     "base": "main",
     "base_head": "f54577a9084d0ac6e374341d96836c5d52bc3b8c",
     "branch": "agent/121q33-global-copyright-risk-and-rights-governance",
-    "draft": true,
+    "draft": false,
     "pr_number": 63,
-    "merged": false
+    "merged": true,
+    "merge_commit": "cf321f92014268af40cf9aa9231fe8a4f814b031"
   },
   "head_binding": {
     "authority": "pull_request_body_and_1111_receipt",
     "embedded_exact_current_head": false,
-    "explanation": "Q33 candidate iteration — exact HEAD and mutable CI/artifact evidence are externally attested after commit; repository object never treats its own HEAD as validity evidence.",
+    "explanation": "Q33 lifecycle closeout (I2): exact HEAD 9290c83f and mutable CI/artifact evidence are externally attested via F12 receipt in 1111 (commit 3fbf40c9); repository object never treats its own HEAD as validity evidence. This record does not independently assert main-branch production Current status.",
     "live_refetch_required": true,
     "mode": "external_exact_head_attestation",
     "pr_number": 63,
-    "receipt_path": "agent-results/IGNITION-20260719-121Q33-FORWARD-RESTORE-STABILIZATION-RESULT.md"
+    "receipt_path": "agent-results/IGNITION-20260721-121Q33-I2-lifecycle-closeout-external-attestation.json",
+    "accepted_candidate_head": "9290c83fd642f4fca8cd2f32e5fdb5d61a46372a",
+    "review_receipt_commit": "3fbf40c96f639d4308b14f1b46f601d03f8ac0d9"
   },
   "gap": {
     "evidence": [
       "Q33 propagation closure complete, residue=0"
     ],
     "smallest_material_action": "Materialize Q33 copyright governance data, schemas, and publication gate",
-    "summary": "Q33 adds copyright risk governance infrastructure; not yet merged to formal main"
+    "summary": "Q33 copyright risk governance infrastructure is merged to formal main; lifecycle closeout candidate recorded with external attestation in 1111 (F12, commit 3fbf40c9)"
   },
-  "claim_ceiling": "Validated repository-declared dependency planning, execution, validation and selective materialization of copyright risk governance structures; representative multi-jurisdiction conservative risk projection, extensible and not exhaustive worldwide legal advice",
+  "claim_ceiling": "Validated repository-declared dependency planning, execution, validation and selective materialization of copyright risk governance structures; representative multi-jurisdiction conservative risk projection, extensible and not exhaustive worldwide legal advice. Q33 lifecycle closeout record (I2): accepted, merged, and repository-current; external attestation completed in 1111 (F12 receipt, commit 3fbf40c9). This record does not independently assert main-branch production Current status and remains subject to Q33_I2_CLOSEOUT_CANDIDATE_READY_FOR_CONCLUSION_REVIEW.",
   "status": {
-    "accepted": false,
-    "candidate": true,
-    "current": false,
-    "merged": false,
-    "ready_for_gpt_verification": false
+    "accepted": true,
+    "candidate": false,
+    "current": true,
+    "merged": true,
+    "ready_for_gpt_verification": true
   },
   "impact_matrix": [
     {
@@ -93,16 +96,43 @@
         "evidence": "data/operations/propagation/121Q33-system-map-delta.json"
       }
     ],
-    "remote": []
+    "remote": [
+      {
+        "name": "foundation-validation",
+        "status": "SUCCESS",
+        "evidence": "external:github_actions:29747981109",
+        "evidence_scope": "historical_subject_head_only",
+        "subject_head": "9290c83fd642f4fca8cd2f32e5fdb5d61a46372a",
+        "run_id": 29747981109,
+        "conclusion": "success"
+      },
+      {
+        "name": "function-os-ci",
+        "status": "SUCCESS",
+        "evidence": "external:github_actions:29764788683",
+        "evidence_scope": "historical_subject_head_only",
+        "subject_head": "9290c83fd642f4fca8cd2f32e5fdb5d61a46372a",
+        "run_id": 29764788683,
+        "conclusion": "success"
+      },
+      {
+        "name": "pages",
+        "status": "SUCCESS",
+        "evidence": "external:github_actions:29795760562",
+        "evidence_scope": "historical_subject_head_only",
+        "subject_head": "9290c83fd642f4fca8cd2f32e5fdb5d61a46372a",
+        "run_id": 29795760562,
+        "conclusion": "success"
+      }
+    ]
   },
   "rollback_strategy": "Restore only registered outputs or emit repository-local recovery material; never cross the repository boundary for rollback",
   "remaining_limitations": [
-    "No external attestation completed",
+    "Q33 lifecycle closeout (I2) is a candidate submitted for conclusion review; this record does not independently assert main-branch production Current status",
     "Governance decisions require human review per G33",
-    "Not yet merged to formal main",
-    "Local validation only — not production deployment"
+    "External attestation completed in 1111 (F12 receipt, commit 3fbf40c9); closeout remains subject to Q33_I2_CLOSEOUT_CANDIDATE_READY_FOR_CONCLUSION_REVIEW"
   ],
-  "receipt_location": "agent-results/IGNITION-20260719-121Q33-FORWARD-RESTORE-STABILIZATION-RESULT.md",
+  "receipt_location": "agent-results/IGNITION-20260721-121Q33-I2-lifecycle-closeout-external-attestation.json",
   "commit_chain": [
     {
       "commit": "e3227aee",
@@ -147,10 +177,10 @@
   ],
   "completion_seal_path": "reports/operations/121Q33-completion-seal.json",
   "completion_state": {
-    "external_synchronization_attested": false,
+    "external_synchronization_attested": true,
     "external_synchronization_required": true,
-    "implementation_complete": false,
-    "project_synchronization_complete": false,
+    "implementation_complete": true,
+    "project_synchronization_complete": true,
     "repository_synchronization_complete": true
   },
   "state_transition": {
@@ -360,19 +390,22 @@
         ]
       }
     ],
-    "external_attestations": [
-      {
-        "surface_id": "external.pages_homepage",
-        "stage": "post_merge",
-        "status": "pending",
-        "authority": "pull_request_body_and_1111_receipt",
-        "evidence_refs": [
-          "external:pr_body:63",
-          "external:1111_receipt:V14-external-attestation-pending"
-        ],
-        "live_state_locally_verifiable": false
-      }
-    ],
+  "external_attestations": [
+    {
+      "surface_id": "external.pages_homepage",
+      "stage": "post_merge",
+      "status": "attested",
+      "authority": "pull_request_body_and_1111_receipt",
+      "evidence_refs": [
+        "external:pr_body:63",
+        "external:1111_receipt:agent-results/IGNITION-20260721-121Q33-I2-lifecycle-closeout-external-attestation.json@3fbf40c96f639d4308b14f1b46f601d03f8ac0d9",
+        "external:github_actions:29747981109",
+        "external:github_actions:29764788683",
+        "external:github_actions:29795760562"
+      ],
+      "live_state_locally_verifiable": false
+    }
+  ],
     "unresolved_residue": [],
     "external_verification_policy": "not_applicable_governance_only",
     "live_external_surfaces_verified": false
