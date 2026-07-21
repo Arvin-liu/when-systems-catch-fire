@@ -1,0 +1,299 @@
+{
+  "actual_component_decisions": [
+    {
+      "decision": "CHANGE",
+      "item_id": "discovery_commitment_claim_contract",
+      "reason": "Q34 new governance component: typed claim/proposition contract"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "discovery_commitment_gate_validator",
+      "reason": "Q34 new governance component: fail-closed commitment gate validator"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "discovery_commitment_pilot_q33",
+      "reason": "Q34 new governance component: Q33 current-state pilot claim"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "historical_reports",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration_manifest_contract",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "pages_pipeline",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "project_component_registry",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_calculator",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_layout",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_projection",
+      "reason": "Q34 discovery-commitment boundary does not alter this infrastructure component's semantics."
+    }
+  ],
+  "actual_surface_decisions": [
+    {
+      "decision": "CHANGE",
+      "item_id": "README",
+      "reason": "Add discovery-commitment boundary capability to README"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent.handoff",
+      "reason": "Q34 candidate does not change handoff"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai.start",
+      "reason": "Q34 candidate does not change AI start"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance",
+      "reason": "Q34 adds discovery-commitment governance components to the governance surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external.pages_homepage",
+      "reason": "Q34 is a Draft candidate; no production pages change claimed"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.ai_guide",
+      "reason": "Q34 candidate does not change AI guide"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.current_state",
+      "reason": "covered by project_current_state"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.pages_source",
+      "reason": "Q34 governance does not alter pages source"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.readme",
+      "reason": "covered by README front-door surface"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "human.summary",
+      "reason": "Record Q34 capability in SUMMARY"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.usage",
+      "reason": "Q34 candidate does not change usage surface"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "human_front_door",
+      "reason": "Q34 adds discovery-commitment governance capability to front-door capability list"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "machine.llms",
+      "reason": "Q34 candidate does not change llms.txt"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.iteration",
+      "reason": "Q34 uses existing iteration method"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.result_template",
+      "reason": "Q34 uses existing result template"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.review_template",
+      "reason": "Q34 uses existing review template"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.task_template",
+      "reason": "Q34 uses existing task template"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "project_current_state",
+      "reason": "Record Q34 as started candidate (Q33 Current/Closed, Q35-Q40 not started)"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "release.changelog",
+      "reason": "Record Q34 discovery-commitment boundary candidate"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.versioning",
+      "reason": "Q34 candidate does not change versioning"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "system_map_projection",
+      "reason": "New discovery governance components in map"
+    }
+  ],
+  "base_identity": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+  "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
+  "closure_complete": true,
+  "closure_hash": "552fe7bbc0770893686439b13aea74ab1b25a878084f88b3f411bec4b831096e",
+  "closure_version": "1.0.0",
+  "fixpoint": {
+    "iterations": 1,
+    "reached": true
+  },
+  "head_identity": "external_exact_head_attestation",
+  "registry_derived_surfaces": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "required_component_decisions": [
+    "discovery_commitment_claim_contract",
+    "discovery_commitment_gate_validator",
+    "discovery_commitment_pilot_q33",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "pages_pipeline",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_layout",
+    "system_map_projection"
+  ],
+  "required_surface_decisions": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "residue": [],
+  "resolved_components": [
+    "discovery_commitment_claim_contract",
+    "discovery_commitment_gate_validator",
+    "discovery_commitment_pilot_q33",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "pages_pipeline",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_layout",
+    "system_map_projection"
+  ],
+  "seed_components": [
+    "discovery_commitment_claim_contract",
+    "discovery_commitment_gate_validator",
+    "discovery_commitment_pilot_q33",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "pages_pipeline",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_layout",
+    "system_map_projection"
+  ],
+  "seed_paths": [
+    "data/architecture/interactive-system-map-layout.json",
+    "data/architecture/interactive-system-map.json",
+    "data/discovery/claims/q33-seven-governance-components-current.json",
+    "data/discovery/evidence-resolvable-registry.json",
+    "data/discovery/fixtures/01-allow-commit-positive.json",
+    "data/discovery/fixtures/02-premature-no-evidence.json",
+    "data/discovery/fixtures/03-circular-self-proof.json",
+    "data/discovery/fixtures/04-claim-ceiling-breach.json",
+    "data/discovery/fixtures/05-analogy-as-mechanism.json",
+    "data/discovery/fixtures/06-stale-exact-head.json",
+    "data/discovery/fixtures/07-selective-reporting.json",
+    "data/discovery/fixtures/08-retraction-new-positive.json",
+    "data/discovery/fixtures/09-uncommitted-path-deferred.json",
+    "data/discovery/fixtures/10-q33-global-compliance-breach.json",
+    "data/discovery/fixtures/11-external-world-no-attestation.json",
+    "data/operations/iterations/121Q34.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q34-request.json",
+    "docs/discovery/discovery-commitment-boundary-architecture.md",
+    "docs/discovery/discovery-commitment-boundary.md",
+    "docs/discovery/q34-legacy-lab-salvage-matrix.json",
+    "pages/generated/ignition-system-map.svg",
+    "reports/operations/121Q34-completion-seal.json",
+    "schemas/discovery/commitment-claim.schema.json",
+    "tests/discovery/__init__.py",
+    "tests/discovery/test_commitment_gate.py",
+    "tools/discovery/__init__.py",
+    "tools/discovery/validate_commitment_gate.py",
+    "tools/discovery/validate_commitment_registry.py"
+  ],
+  "system_map_impact": {
+    "added_edges": [],
+    "added_nodes": [
+      "discovery_commitment_claim_contract",
+      "discovery_commitment_gate_validator",
+      "discovery_commitment_pilot_q33"
+    ],
+    "changed_edges": [],
+    "changed_nodes": [],
+    "decision": "CHANGE",
+    "reason": "New discovery governance components added to project-component registry and topology",
+    "removed_edges": [],
+    "removed_nodes": [],
+    "unmapped_residue": []
+  },
+  "task_id": "121Q34",
+  "typed_paths": [
+    {
+      "claim_ceiling": "deterministic repository derivation",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "registry_generates_projection",
+      "source": "project_component_registry",
+      "target": "system_map_projection"
+    }
+  ]
+}

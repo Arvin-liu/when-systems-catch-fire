@@ -1409,7 +1409,10 @@
         "visible": true
       },
       "path_patterns": [
-        "schemas/discovery/commitment-claim.schema.json"
+        "schemas/discovery/commitment-claim.schema.json",
+        "docs/discovery/discovery-commitment-boundary.md",
+        "docs/discovery/discovery-commitment-boundary-architecture.md",
+        "docs/discovery/q34-legacy-lab-salvage-matrix.json"
       ]
     },
     {
@@ -1431,7 +1434,10 @@
       "path_patterns": [
         "tools/discovery/validate_commitment_gate.py",
         "tools/discovery/validate_commitment_registry.py",
-        "tests/discovery/test_commitment_gate.py"
+        "tools/discovery/__init__.py",
+        "tests/discovery/__init__.py",
+        "tests/discovery/test_commitment_gate.py",
+        "data/discovery/evidence-resolvable-registry.json"
       ]
     },
     {
@@ -1452,7 +1458,17 @@
       },
       "path_patterns": [
         "data/discovery/claims/q33-seven-governance-components-current.json",
-        "data/discovery/fixtures/10-q33-global-compliance-breach.json"
+        "data/discovery/fixtures/01-allow-commit-positive.json",
+        "data/discovery/fixtures/02-premature-no-evidence.json",
+        "data/discovery/fixtures/03-circular-self-proof.json",
+        "data/discovery/fixtures/04-claim-ceiling-breach.json",
+        "data/discovery/fixtures/05-analogy-as-mechanism.json",
+        "data/discovery/fixtures/06-stale-exact-head.json",
+        "data/discovery/fixtures/07-selective-reporting.json",
+        "data/discovery/fixtures/08-retraction-new-positive.json",
+        "data/discovery/fixtures/09-uncommitted-path-deferred.json",
+        "data/discovery/fixtures/10-q33-global-compliance-breach.json",
+        "data/discovery/fixtures/11-external-world-no-attestation.json"
       ]
     }
   ],
