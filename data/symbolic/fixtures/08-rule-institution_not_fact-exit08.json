@@ -1,0 +1,398 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "SYMBOLIC-SPHERE-I1",
+  "capability_id": "symbolic_power_perspective",
+  "parent_binding": {
+    "task_id": "121Q39-I1",
+    "exact_head": "824ff7f713303b18bca94b05de3f4b6530ffff51"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/failure/pilot-q39-failure-lineage.json",
+      "exact_head": "824ff7f713303b18bca94b05de3f4b6530ffff51",
+      "artifact_digest": "sha256:4ddfa843101ee355c58585a96ce811df6a0f0aadf2c55a279b59ac74c57d5f90",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "exact_head": "824ff7f713303b18bca94b05de3f4b6530ffff51",
+      "artifact_digest": "sha256:22ef7f43ecfe9e07e076ae03731021684e5a52bb105d7c29a454f3993bdcc448",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "FOUNDATION.md",
+      "exact_head": "824ff7f713303b18bca94b05de3f4b6530ffff51",
+      "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
+      "rights_status": "REPOSITORY_INTERNAL"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "COMMUNITY_FOOTBALL_FIELD",
+      "symbolic_object": {
+        "status": "RECORDED",
+        "value": "bounded symbolic_object for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "material_fact_base": {
+        "status": "RECORDED",
+        "value": "bounded material_fact_base for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "actor_positions": {
+        "status": "RECORDED",
+        "value": "bounded actor_positions for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "power_forms": {
+        "status": "RECORDED",
+        "value": "bounded power_forms for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "meaning_projections": {
+        "status": "RECORDED",
+        "value": "bounded meaning_projections for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "intended_use": {
+        "status": "RECORDED",
+        "value": "bounded intended_use for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "actual_use": {
+        "status": "RECORDED",
+        "value": "bounded actual_use for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "front_face": {
+        "status": "RECORDED",
+        "value": "bounded front_face for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "suppressed_faces": {
+        "status": "RECORDED",
+        "value": "bounded suppressed_faces for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "benefit_cost_distribution": {
+        "status": "RECORDED",
+        "value": "bounded benefit_cost_distribution for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "counter_readings": {
+        "status": "RECORDED",
+        "value": "bounded counter_readings for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "institutionalization_mechanism": {
+        "status": "RECORDED",
+        "value": "bounded institutionalization_mechanism for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "symbolic_capture": {
+        "status": "RECORDED",
+        "value": "bounded symbolic_capture for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "counter_appropriation": {
+        "status": "RECORDED",
+        "value": "bounded counter_appropriation for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "transformation_history": {
+        "status": "RECORDED",
+        "value": "bounded transformation_history for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "evidence_constraints": {
+        "status": "RECORDED",
+        "value": "bounded evidence_constraints for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for COMMUNITY_FOOTBALL_FIELD",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "SCHOOL_DATA_POLICY",
+      "symbolic_object": {
+        "status": "RECORDED",
+        "value": "bounded symbolic_object for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "material_fact_base": {
+        "status": "RECORDED",
+        "value": "bounded material_fact_base for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "actor_positions": {
+        "status": "RECORDED",
+        "value": "bounded actor_positions for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "power_forms": {
+        "status": "RECORDED",
+        "value": "bounded power_forms for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "meaning_projections": {
+        "status": "RECORDED",
+        "value": "bounded meaning_projections for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "intended_use": {
+        "status": "RECORDED",
+        "value": "bounded intended_use for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "actual_use": {
+        "status": "RECORDED",
+        "value": "bounded actual_use for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "front_face": {
+        "status": "RECORDED",
+        "value": "bounded front_face for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "suppressed_faces": {
+        "status": "RECORDED",
+        "value": "bounded suppressed_faces for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "benefit_cost_distribution": {
+        "status": "RECORDED",
+        "value": "bounded benefit_cost_distribution for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "counter_readings": {
+        "status": "RECORDED",
+        "value": "bounded counter_readings for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "institutionalization_mechanism": {
+        "status": "RECORDED",
+        "value": "bounded institutionalization_mechanism for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "symbolic_capture": {
+        "status": "RECORDED",
+        "value": "bounded symbolic_capture for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "counter_appropriation": {
+        "status": "RECORDED",
+        "value": "bounded counter_appropriation for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "transformation_history": {
+        "status": "RECORDED",
+        "value": "bounded transformation_history for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "evidence_constraints": {
+        "status": "RECORDED",
+        "value": "bounded evidence_constraints for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for SCHOOL_DATA_POLICY",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "material_truth_separate": true,
+    "ownership_not_truth": true,
+    "popularity_not_truth": true,
+    "institution_not_fact": false,
+    "all_actors_present": true,
+    "costs_visible": true,
+    "intent_effect_separate": true,
+    "interpretive_power_not_legitimacy": true,
+    "no_causal_totalization": true,
+    "history_append_only": true,
+    "evidence_constrained": true,
+    "claim_ceiling_preserved": true
+  },
+  "rule_assertions": [
+    {
+      "rule_id": "material_truth_separate",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "ownership_not_truth",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "popularity_not_truth",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "institution_not_fact",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "all_actors_present",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "costs_visible",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "intent_effect_separate",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "interpretive_power_not_legitimacy",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "no_causal_totalization",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "history_append_only",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "evidence_constrained",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "claim_ceiling_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    }
+  ],
+  "conclusion": {
+    "statement": "The same object can be represented as separate material fact, actor position, meaning projection and institutionalized power surfaces, with evidence-constrained counter-readings and visible benefit/cost distribution.",
+    "claim_ceiling": "candidate_only_repository_governance",
+    "history_preserved": true,
+    "external_action_performed": false
+  }
+}
