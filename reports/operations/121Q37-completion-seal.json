@@ -10,7 +10,7 @@
     "ready_for_gpt_verification": false
   },
   "phase_b": {
-    "draft_pr": null,
+    "draft_pr": 69,
     "branch": "agent/121q37-i1-analogy-audit-transportability",
     "base": "agent/121q36-int-i1-intervention-failure-dynamics",
     "base_head": "02a87221b86cf39217f8c6b3c63e0737a0e2de98",

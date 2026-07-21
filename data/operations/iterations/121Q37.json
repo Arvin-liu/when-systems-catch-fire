@@ -17,17 +17,17 @@
     "base_head": "02a87221b86cf39217f8c6b3c63e0737a0e2de98",
     "branch": "agent/121q37-i1-analogy-audit-transportability",
     "draft": true,
-    "pr_number": null,
+    "pr_number": 69,
     "merged": false
   },
   "head_binding": {
     "authority": "pull_request_body_and_1111_receipt",
     "embedded_exact_current_head": false,
     "explanation": "Q37-I1 Draft candidate: repository object never treats its own HEAD as validity evidence; exact-head and CI/artifact evidence are externally attested via PR body and 1111 receipt. This record does not assert acceptance, merge or Current status.",
-    "live_refetch_required": true,
-    "mode": "external_exact_head_attestation",
-    "pr_number": null,
-    "receipt_path": "agent-results/IGNITION-20260721-121Q37-I1-analogy-audit-transportability-execution-receipt.json"
+      "live_refetch_required": true,
+      "mode": "external_exact_head_attestation",
+      "pr_number": 69,
+      "receipt_path": "agent-results/IGNITION-20260721-121Q37-I1-analogy-audit-transportability-execution-receipt.json"
   },
   "gap": {
     "evidence": [
