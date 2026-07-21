@@ -57,6 +57,7 @@
     "reports/operations/121Q38-completion-seal.json",
     "schemas/retrieval/evidence-retrieval-contract.schema.json",
     "tests/retrieval/test_evidence_retrieval_gate.py",
+    "tests/test_human_front_door.py",
     "tools/validate_human_front_door.py",
     "tools/retrieval/build_q38_fixtures.py",
     "tools/retrieval/validate_evidence_retrieval_gate.py"

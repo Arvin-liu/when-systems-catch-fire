@@ -98,7 +98,7 @@ class HumanFrontDoorTests(unittest.TestCase):
         # + 3 Q36-INT intervention_failure governance nodes
         # + 3 Q37 analogy_audit governance nodes; the materialized
         # map must cover the full current node set.
-        self.assertEqual(result["interactive_system_map_nodes"], 63)
+        self.assertEqual(result["interactive_system_map_nodes"], 66)
 
     def test_pages_artifact_carries_typed_propagation_evidence(self):
         self.assertIn("typed-change-propagation.md", self.pages)

@@ -476,7 +476,7 @@
   "base_identity": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "bcd142ee34f3470c71a93b8f53a2a293d260f5ecbbf421d051aba505bbd518fd",
+  "closure_hash": "a3b8acf886cb8af822e3cea01e4be61de4053ca6a7f392df38e26f97ba7860d9",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -608,6 +608,7 @@
     "reports/operations/121Q38-completion-seal.json",
     "schemas/retrieval/evidence-retrieval-contract.schema.json",
     "tests/retrieval/test_evidence_retrieval_gate.py",
+    "tests/test_human_front_door.py",
     "tools/retrieval/build_q38_fixtures.py",
     "tools/retrieval/validate_evidence_retrieval_gate.py",
     "tools/validate_human_front_door.py"
