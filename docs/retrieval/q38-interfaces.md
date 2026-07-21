@@ -19,3 +19,7 @@ Every `COUNTEREXAMPLE`, `NEGATIVE_RESULT`, and `FAILED_RETRIEVAL` item yields a 
 `Q37 restricted seed -> freeze Q38 plan and stop rule -> collect metadata-bound evidence -> apply inclusion/exclusion -> preserve negative and failed retrievals -> assess saturation and gaps -> emit bounded conclusion and Q39 exports`.
 
 No Q38 object may modify Q37 history, execute a real-world action, publish unknown-rights content, or promote structural/case similarity to a mechanism claim.
+
+## Repository replay pilot
+
+`data/retrieval/pilot-q38-repository-evidence-retrieval.json` starts from the frozen Q37 restricted seed and records one traceable repository support item, counterexample, boundary case, negative result and deliberately unperformed external retrieval. The last item is a preserved failed-retrieval record, not fabricated network evidence. The pilot stops with an explicit external-validity gap and exports all negative/failed items to Q39.
