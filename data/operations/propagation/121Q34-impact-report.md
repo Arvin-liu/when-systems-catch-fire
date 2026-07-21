@@ -1,7 +1,7 @@
 # 121Q34 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `552fe7bbc0770893686439b13aea74ab1b25a878084f88b3f411bec4b831096e`
+- Closure hash: `e0ed9b3481499cfdd68ff96d626450532b5182289bb8fe19b8345848c7126b36`
 - Fixpoint iterations: `1`
 - Seeds: `discovery_commitment_claim_contract, discovery_commitment_gate_validator, discovery_commitment_pilot_q33, historical_reports, iteration_manifest_contract, pages_pipeline, project_component_registry, propagation_calculator, system_map_layout, system_map_projection`
 - Resolved components: `10`

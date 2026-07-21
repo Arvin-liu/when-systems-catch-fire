@@ -51,44 +51,14 @@
   ],
   "surface_decisions": [
     {
-      "item_id": "human_front_door",
-      "decision": "CHANGE",
-      "reason": "Q34 adds discovery-commitment governance capability to front-door capability list"
-    },
-    {
-      "item_id": "README",
-      "decision": "CHANGE",
-      "reason": "Add discovery-commitment boundary capability to README"
-    },
-    {
-      "item_id": "project_current_state",
-      "decision": "CHANGE",
-      "reason": "Record Q34 as started candidate (Q33 Current/Closed, Q35-Q40 not started)"
-    },
-    {
-      "item_id": "release.changelog",
-      "decision": "CHANGE",
-      "reason": "Record Q34 discovery-commitment boundary candidate"
-    },
-    {
-      "item_id": "system_map_projection",
-      "decision": "CHANGE",
-      "reason": "New discovery governance components in map"
-    },
-    {
-      "item_id": "human.summary",
-      "decision": "CHANGE",
-      "reason": "Record Q34 capability in SUMMARY"
-    },
-    {
       "item_id": "human.readme",
       "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "covered by README front-door surface"
+      "reason": "README capability note covers Q34; no separate readme change"
     },
     {
       "item_id": "human.pages_source",
       "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "Q34 governance does not alter pages source"
+      "reason": "Q34 does not alter pages source"
     },
     {
       "item_id": "external.pages_homepage",
@@ -97,8 +67,13 @@
     },
     {
       "item_id": "human.current_state",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "covered by project_current_state"
+      "decision": "CHANGE",
+      "reason": "Record Q34 as started candidate (Q33 Current/Closed; Q35-Q40 not started)"
+    },
+    {
+      "item_id": "human.summary",
+      "decision": "CHANGE",
+      "reason": "Record Q34 discovery-commitment capability"
     },
     {
       "item_id": "human.usage",
@@ -124,6 +99,11 @@
       "item_id": "machine.llms",
       "decision": "NO_CHANGE_WITH_REASON",
       "reason": "Q34 candidate does not change llms.txt"
+    },
+    {
+      "item_id": "release.changelog",
+      "decision": "CHANGE",
+      "reason": "Record Q34 discovery-commitment boundary candidate"
     },
     {
       "item_id": "release.versioning",
@@ -153,7 +133,7 @@
     {
       "item_id": "copyright_governance",
       "decision": "CHANGE",
-      "reason": "Q34 adds discovery-commitment governance components to the governance surface."
+      "reason": "Q34 adds discovery-commitment governance components to the governance surface"
     }
   ],
   "component_decisions": [

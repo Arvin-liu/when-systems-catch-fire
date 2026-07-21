@@ -53,11 +53,6 @@
   ],
   "actual_surface_decisions": [
     {
-      "decision": "CHANGE",
-      "item_id": "README",
-      "reason": "Add discovery-commitment boundary capability to README"
-    },
-    {
       "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "agent.handoff",
       "reason": "Q34 candidate does not change handoff"
@@ -70,7 +65,7 @@
     {
       "decision": "CHANGE",
       "item_id": "copyright_governance",
-      "reason": "Q34 adds discovery-commitment governance components to the governance surface."
+      "reason": "Q34 adds discovery-commitment governance components to the governance surface"
     },
     {
       "decision": "NO_CHANGE_WITH_REASON",
@@ -83,34 +78,29 @@
       "reason": "Q34 candidate does not change AI guide"
     },
     {
-      "decision": "NO_CHANGE_WITH_REASON",
+      "decision": "CHANGE",
       "item_id": "human.current_state",
-      "reason": "covered by project_current_state"
+      "reason": "Record Q34 as started candidate (Q33 Current/Closed; Q35-Q40 not started)"
     },
     {
       "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "human.pages_source",
-      "reason": "Q34 governance does not alter pages source"
+      "reason": "Q34 does not alter pages source"
     },
     {
       "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "human.readme",
-      "reason": "covered by README front-door surface"
+      "reason": "README capability note covers Q34; no separate readme change"
     },
     {
       "decision": "CHANGE",
       "item_id": "human.summary",
-      "reason": "Record Q34 capability in SUMMARY"
+      "reason": "Record Q34 discovery-commitment capability"
     },
     {
       "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "human.usage",
       "reason": "Q34 candidate does not change usage surface"
-    },
-    {
-      "decision": "CHANGE",
-      "item_id": "human_front_door",
-      "reason": "Q34 adds discovery-commitment governance capability to front-door capability list"
     },
     {
       "decision": "NO_CHANGE_WITH_REASON",
@@ -139,11 +129,6 @@
     },
     {
       "decision": "CHANGE",
-      "item_id": "project_current_state",
-      "reason": "Record Q34 as started candidate (Q33 Current/Closed, Q35-Q40 not started)"
-    },
-    {
-      "decision": "CHANGE",
       "item_id": "release.changelog",
       "reason": "Record Q34 discovery-commitment boundary candidate"
     },
@@ -151,17 +136,12 @@
       "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "release.versioning",
       "reason": "Q34 candidate does not change versioning"
-    },
-    {
-      "decision": "CHANGE",
-      "item_id": "system_map_projection",
-      "reason": "New discovery governance components in map"
     }
   ],
   "base_identity": "81edff4039619b8343a82cb1b84785c8a9f6a990",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "552fe7bbc0770893686439b13aea74ab1b25a878084f88b3f411bec4b831096e",
+  "closure_hash": "e0ed9b3481499cfdd68ff96d626450532b5182289bb8fe19b8345848c7126b36",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 1,
