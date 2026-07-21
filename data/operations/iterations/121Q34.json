@@ -140,7 +140,6 @@
     "Commitment gate decides repository-committability under declared claim ceiling only; it does not prove real-world truth, legality or completeness."
   ],
   "receipt_location": "agent-results/IGNITION-20260721-121Q34-I1-discovery-commitment-boundary-execution-receipt.json",
-  "commit_chain": [],
   "completion_seal_path": "reports/operations/121Q34-completion-seal.json",
   "completion_state": {
     "external_synchronization_attested": false,
@@ -367,7 +366,8 @@
       }
     ],
     "live_external_surfaces_verified": false,
-    "unresolved_residue": []
+    "unresolved_residue": [],
+    "external_verification_policy": "not_applicable_governance_only"
   },
   "propagation_closure": {
     "request_path": "data/operations/propagation/121Q34-request.json",
