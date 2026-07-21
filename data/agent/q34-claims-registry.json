@@ -1,0 +1,16 @@
+{
+  "claims": [
+    {
+      "claim_id": "q33.seven_governance_components.current_in_main",
+      "state": "committed_current"
+    },
+    {
+      "claim_id": "q33.global_copyright_compliance_proven",
+      "state": "rejected"
+    },
+    {
+      "claim_id": "q34.hypothesis.example",
+      "state": "hypothesis"
+    }
+  ]
+}

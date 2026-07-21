@@ -379,6 +379,30 @@
       "lifecycle_status": "draft_candidate"
     },
     {
+      "id": "agent_responsibility_contract",
+      "label": "责任—权限—行动轨迹 合同",
+      "group": "governance",
+      "target": "schemas/agent/responsibility-contract.schema.json",
+      "description": "Q35 typed responsibility-authority-action-trace contract: actor/role, authority grant, action intent/decision/execution, append-only hash-linked trajectory, responsibility attribution.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "agent_responsibility_gate_validator",
+      "label": "责任—权限 门禁",
+      "group": "governance",
+      "target": "tools/agent/validate_responsibility_gate.py",
+      "description": "Q35 fail-closed responsibility gate/CLI: blocks self-grant, model-name-as-authority, expired/revoked grant, scope breach, broken delegation, separation-of-duty, stale head, ceiling breach, uncommitted action, chain tamper, silent rewrite, Q33 bypass, forced many-hands.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "agent_responsibility_pilot_q34",
+      "label": "责任—权限 Q34 试点",
+      "group": "governance",
+      "target": "data/agent/pilot-q34-pr-controlled-op.json",
+      "description": "Q35 pilot: controlled repository operation on Q34 Draft PR with separated roles (initiator/authorizer/executor/verifier); proves role separation without claiming Q34 candidate is Main-accepted.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
       "id": "external_input",
       "label": "外部输入源",
       "group": "writing",
