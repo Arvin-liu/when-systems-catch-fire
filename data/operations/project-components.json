@@ -2153,8 +2153,71 @@
         "data/metacognition/pilot-scientific-metacognition-i1.json",
         "data/metacognition/fixtures/"
       ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "schemas/anomaly/world_feedback_anomaly-contract.schema.json",
+      "component_id": "world_feedback_anomaly_contract",
+      "component_type": "governance_constraint",
+      "description": "Q41-I1 typed evidence-bound contract. Recurring evidence-bound expected/observed divergence can trigger a bounded continue/repair/downgrade/rebuild/search decision without automatically inventing a hidden system.",
+      "label": "World-Feedback Anomaly Trigger & Governance 合同",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q41-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "schemas/anomaly/world_feedback_anomaly-contract.schema.json",
+        "docs/anomaly/"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/anomaly/validate_world_feedback_anomaly_gate.py",
+      "component_id": "world_feedback_anomaly_gate_validator",
+      "component_type": "governance_constraint",
+      "description": "Q41-I1 fail-closed real CLI enforcing evidence binding, exact parent, 10 task rules, candidate ceiling and no external action.",
+      "label": "World-Feedback Anomaly Trigger & Governance 门禁",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q41-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/anomaly/",
+        "tests/anomaly/"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/anomaly/pilot-q41-i1.json",
+      "component_id": "world_feedback_anomaly_pilot",
+      "component_type": "governance_constraint",
+      "description": "Q41-I1 self-authored bounded repository pilot covering RECURRING_REPOSITORY_DIVERGENCE and SINGLE_DEVIATION_NEGATIVE_CONTROL; 24 fixtures drive the real CLI; no external action.",
+      "label": "World-Feedback Anomaly Trigger & Governance 受控试点",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q41-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/anomaly/pilot-q41-i1.json",
+        "data/anomaly/fixtures/"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.1.6"
+  "registry_version": "1.1.7"
 }
