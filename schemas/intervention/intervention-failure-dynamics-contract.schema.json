@@ -1,0 +1,294 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/intervention/intervention-failure-dynamics-contract.schema.json",
+  "title": "Q36-INT Intervention-Failure Dynamics Contract",
+  "description": "Repository-native typed contract for governed, repo-local, fail-closed intervention requests, safety envelopes, controlled execution trajectories, outcome/effect evaluation, failure-mode records and stop/rollback/recovery records. Does NOT execute real-world external actions, does NOT adjudicate universal causal mechanisms, does NOT invent a new authority model (Q35 remains the authority), and does NOT form an L7 / truth layer.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "intervention_requests",
+    "safety_envelopes",
+    "plans",
+    "outcome_evaluations",
+    "failure_records",
+    "stop_rollback_records"
+  ],
+  "properties": {
+    "intervention_requests": {"type": "array", "items": {"$ref": "#/$defs/intervention_request"}},
+    "safety_envelopes": {"type": "array", "items": {"$ref": "#/$defs/safety_envelope"}},
+    "plans": {"type": "array", "items": {"$ref": "#/$defs/intervention_plan"}},
+    "outcome_evaluations": {"type": "array", "items": {"$ref": "#/$defs/outcome_evaluation"}},
+    "failure_records": {"type": "array", "items": {"$ref": "#/$defs/failure_mode_record"}},
+    "stop_rollback_records": {"type": "array", "items": {"$ref": "#/$defs/stop_rollback_record"}},
+    "q36_obs_snapshots": {
+      "type": "array",
+      "description": "Read-only validated Q36-OBS observations referenced by intervention requests (copied, never modified by Q36-INT).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["observation_id", "target_scope", "sampling_window", "quality_status", "exact_head", "do_not_infer_cause"],
+        "properties": {
+          "observation_id": {"type": "string", "minLength": 1},
+          "target_scope": {"type": "string", "minLength": 1},
+          "sampling_window": {
+            "type": "object", "additionalProperties": false,
+            "required": ["start", "end"],
+            "properties": {"start": {"type": "string", "format": "date-time"}, "end": {"type": "string", "format": "date-time"}}
+          },
+          "quality_status": {"type": "string", "enum": ["accepted", "accepted_with_exclusions", "quarantined", "rejected"]},
+          "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+          "do_not_infer_cause": {"type": "boolean", "const": true}
+        }
+      }
+    },
+    "q35_grants": {
+      "type": "array",
+      "description": "Read-only Q35 authority grants referenced by intervention requests (copied, never re-adjudicated by Q36-INT).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["grant_id", "status", "grant_expires_at", "scope", "grantee", "granted_by", "action_refs"],
+        "properties": {
+          "grant_id": {"type": "string", "minLength": 1},
+          "status": {"type": "string", "enum": ["active", "revoked", "expired"]},
+          "grant_expires_at": {"type": "string", "format": "date-time"},
+          "scope": {"type": "string", "minLength": 1},
+          "grantee": {"type": "string", "minLength": 1},
+          "granted_by": {"type": "string", "minLength": 1},
+          "action_refs": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "intervention_request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "intervention_id", "initiator", "q34_claim_ref",
+        "q35_actor_ref", "q35_grant_ref", "q35_action_ref", "q35_trajectory_event_digest",
+        "q36_obs_ref", "target_resource", "normalized_intervention_type",
+        "intended_change", "mechanism_hypothesis", "mechanism_hypothesis_status",
+        "applicability_scope", "uncertainty", "expected_effect",
+        "evaluation_window", "claim_ceiling", "exact_head",
+        "proposed_at", "authorized_at", "external_action", "source_ref"
+      ],
+      "properties": {
+        "intervention_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "initiator": {"type": "string", "minLength": 1},
+        "q34_claim_ref": {"type": "string", "minLength": 1, "description": "Q34 claim this intervention relies on; must be committed_current."},
+        "q35_actor_ref": {"type": "string", "minLength": 1},
+        "q35_grant_ref": {"type": "string", "minLength": 1},
+        "q35_action_ref": {"type": "string", "minLength": 1},
+        "q35_trajectory_event_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "q36_obs_ref": {"type": "string", "minLength": 1, "description": "Q36-OBS validated observation/residual ref (read-only signal)."},
+        "q36_residual_ref": {"type": "string"},
+        "target_resource": {"type": "string", "minLength": 1},
+        "normalized_intervention_type": {"type": "string", "enum": [
+          "derive_output_regeneration", "dry_run_replay", "config_change",
+          "fixture_regeneration", "controlled_experiment", "abort", "rollback", "other"
+        ]},
+        "intended_change": {"type": "string", "minLength": 1},
+        "mechanism_hypothesis": {"type": "string", "minLength": 1, "description": "Must be marked as hypothesis unless lawful causal evidence exists."},
+        "mechanism_hypothesis_status": {"type": "string", "enum": ["hypothesis", "bounded_mechanism_evidence"], "description": "hypothesis unless bounded_mechanism_evidence with evidence ref."},
+        "mechanism_evidence_ref": {"type": "string", "description": "Required when status is bounded_mechanism_evidence."},
+        "applicability_scope": {"type": "string", "minLength": 1},
+        "uncertainty": {"type": "string", "minLength": 1},
+        "expected_effect": {"type": "string", "minLength": 1, "description": "Frozen before execution; must not change after outcome."},
+        "evaluation_window": {
+          "type": "object", "additionalProperties": false,
+          "required": ["start", "end"],
+          "properties": {"start": {"type": "string", "format": "date-time"}, "end": {"type": "string", "format": "date-time"}}
+        },
+        "claim_ceiling": {"type": "string", "minLength": 1, "description": "Must not assert universal real-world intervention capability or proven causal mechanism."},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "artifact_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "proposed_at": {"type": "string", "format": "date-time"},
+        "authorized_at": {"type": "string", "format": "date-time"},
+        "external_action": {"type": "boolean", "description": "Must be false: Q36-INT interventions are repository-local; real-world external actions are forbidden (validator fails closed)."},
+        "source_ref": {"type": "string", "minLength": 1, "description": "Q33-gated source reference; must not be Q33-rejected."}
+      }
+    },
+    "safety_envelope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "envelope_id", "request_id", "allowed_target_scope", "max_change_magnitude",
+        "allowed_side_effects", "forbidden_surfaces", "prerequisites",
+        "stop_conditions", "abort_conditions", "observation_cadence",
+        "authority_escalation_threshold", "rollback_readiness", "expiry", "rollback_plan"
+      ],
+      "properties": {
+        "envelope_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "request_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "allowed_target_scope": {"type": "string", "minLength": 1},
+        "max_change_magnitude": {"type": "number", "minimum": 0},
+        "allowed_side_effects": {"type": "array", "items": {"type": "string"}},
+        "forbidden_surfaces": {"type": "array", "items": {"type": "string"}},
+        "prerequisites": {"type": "array", "items": {"type": "string"}},
+        "stop_conditions": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "abort_conditions": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "observation_cadence": {"type": "string", "minLength": 1},
+        "authority_escalation_threshold": {"type": "string", "minLength": 1},
+        "rollback_readiness": {"type": "boolean", "const": true, "description": "A usable rollback plan must be present before execution."},
+        "expiry": {"type": "string", "format": "date-time", "description": "Grant/envelope expiry; execution after expiry fails closed."},
+        "rollback_plan": {
+          "type": "object", "additionalProperties": false,
+          "required": ["plan_id", "steps", "verification_method"],
+          "properties": {
+            "plan_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+            "steps": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+            "verification_method": {"type": "string", "minLength": 1}
+          }
+        }
+      }
+    },
+    "intervention_plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["plan_id", "request_id", "envelope_id", "state", "high_risk", "execution_events"],
+      "properties": {
+        "plan_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "request_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "envelope_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "state": {"type": "string", "enum": [
+          "proposed", "authorized", "dry_run", "executing", "observed",
+          "succeeded_within_scope", "failed", "degraded", "stopped",
+          "rolled_back", "abandoned", "unresolved"
+        ]},
+        "high_risk": {"type": "boolean"},
+        "separation_of_duty": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "proposer": {"type": "string"},
+            "authorizer": {"type": "string"},
+            "executor": {"type": "string"},
+            "verifier": {"type": "string"}
+          }
+        },
+        "execution_events": {"type": "array", "items": {"$ref": "#/$defs/execution_event"}, "minItems": 1}
+      }
+    },
+    "execution_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_id", "state", "pre_state_digest", "command", "executor",
+        "start_time", "end_time", "affected_surfaces", "actual_change_magnitude",
+        "output_artifact_digests", "stop_condition_status", "trajectory_event_digest", "no_silent_mutation"
+      ],
+      "properties": {
+        "event_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "state": {"type": "string", "enum": [
+          "proposed", "authorized", "dry_run", "executing", "observed",
+          "succeeded_within_scope", "failed", "degraded", "stopped",
+          "rolled_back", "abandoned", "unresolved"
+        ]},
+        "pre_state_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "command": {"type": "string", "minLength": 1, "description": "Normalized operation; repository-local only."},
+        "executor": {"type": "string", "minLength": 1},
+        "start_time": {"type": "string", "format": "date-time"},
+        "end_time": {"type": "string", "format": "date-time"},
+        "affected_surfaces": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "actual_change_magnitude": {"type": "number", "minimum": 0},
+        "output_artifact_digests": {"type": "array", "items": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}},
+        "side_effects": {"type": "array", "items": {"type": "string"}},
+        "stop_condition_status": {"type": "string", "enum": ["not_triggered", "triggered", "aborted"]},
+        "trajectory_event_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "no_silent_mutation": {"type": "boolean", "const": true, "description": "Execution records are append-only; corrections add new events, never mutate old ones in place."}
+      }
+    },
+    "outcome_evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evaluation_id", "plan_id", "execution_event_id", "q36_obs_observation_ref",
+        "expected_effect", "observed_effect", "evaluation_method",
+        "baseline_comparator", "uncertainty", "scope_validity",
+        "evaluator_ref", "causal_interpretation_status", "do_not_overclaim_causality", "exact_head"
+      ],
+      "properties": {
+        "evaluation_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "plan_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "execution_event_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "q36_obs_observation_ref": {"type": "string", "minLength": 1},
+        "expected_effect": {"type": "string", "minLength": 1, "description": "Must match the request's frozen expected_effect; post-hoc change fails closed."},
+        "observed_effect": {"type": "string", "minLength": 1},
+        "evaluation_method": {"type": "string", "minLength": 1},
+        "baseline_comparator": {"type": "string", "description": "Mandatory baseline/comparator; an effect with no baseline cannot be interpreted. Empty string fails the baseline-present semantic check."},
+        "uncertainty": {"type": "string", "description": "Mandatory uncertainty statement; empty string fails the baseline-present semantic check."},
+        "residual_change": {"type": "string"},
+        "unintended_effects": {"type": "array", "items": {"type": "string"}},
+        "scope_validity": {"type": "string", "minLength": 1},
+        "evaluator_ref": {"type": "string", "minLength": 1},
+        "causal_interpretation_status": {"type": "string", "enum": ["NOT_IDENTIFIED", "BOUNDED_MECHANISM_EVIDENCE", "ALTERNATIVE_EXPLANATIONS_REMAIN"]},
+        "do_not_overclaim_causality": {"type": "boolean", "const": true, "description": "Hard marker: residual/correlation must never be upgraded to a unique causal mechanism."},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    },
+    "failure_mode_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "failure_id", "plan_id", "failure_type", "trigger", "detected_at",
+        "affected_surfaces", "severity", "reversibility", "residual_impact",
+        "responsibility_state", "known_cause", "unknown_cause", "competing_explanations",
+        "escalation_target", "claim_ceiling", "exact_head"
+      ],
+      "properties": {
+        "failure_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "plan_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "action_refs": {"type": "array", "items": {"type": "string"}},
+        "failure_type": {"type": "string", "enum": [
+          "execution_error", "envelope_exceeded", "stop_condition_breach",
+          "side_effect_unexpected", "rollback_incomplete", "abort_failed",
+          "scope_drift", "authority_violation", "data_quality_anomaly", "unresolved_anomaly"
+        ]},
+        "trigger": {"type": "string", "minLength": 1},
+        "detected_at": {"type": "string", "format": "date-time"},
+        "affected_surfaces": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "severity": {"type": "string", "enum": ["low", "medium", "high", "critical"]},
+        "reversibility": {"type": "string", "enum": ["reversible", "partially_reversible", "irreversible"]},
+        "residual_impact": {"type": "string", "minLength": 1},
+        "responsibility_state": {"type": "string", "enum": [
+          "ATTRIBUTED_WITHIN_REPOSITORY_SCOPE", "SHARED_RESPONSIBILITY",
+          "UNRESOLVED_MANY_HANDS", "INSUFFICIENT_EVIDENCE", "OUTSIDE_PROJECT_AUTHORITY"
+        ]},
+        "known_cause": {"type": "string"},
+        "unknown_cause": {"type": "boolean"},
+        "competing_explanations": {"type": "array", "items": {"type": "string"}},
+        "escalation_target": {"type": "string", "minLength": 1, "description": "e.g. 'q39_failure_memory', 'q43_graded_intervention', 'none'."},
+        "q39_interface_ref": {"type": "string"},
+        "claim_ceiling": {"type": "string", "minLength": 1},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    },
+    "stop_rollback_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id", "plan_id", "triggering_stop_condition", "stop_authority",
+        "rollback_plan_ref", "rollback_action", "pre_digest", "post_digest",
+        "restored_surfaces", "not_restored_surfaces", "irreversible_residue",
+        "verification_result", "history_preservation", "exact_head"
+      ],
+      "properties": {
+        "record_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "plan_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "triggering_stop_condition": {"type": "string", "minLength": 1},
+        "stop_authority": {"type": "string", "minLength": 1},
+        "rollback_plan_ref": {"type": "string", "minLength": 1},
+        "rollback_action": {"type": "string", "minLength": 1, "description": "Append-only trajectory event describing the rollback; never silently overwrites the original trajectory."},
+        "pre_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "post_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "restored_surfaces": {"type": "array", "items": {"type": "string"}},
+        "not_restored_surfaces": {"type": "array", "items": {"type": "string"}},
+        "irreversible_residue": {"type": "string", "minLength": 1},
+        "verification_result": {"type": "string", "enum": ["verified", "partial", "failed"]},
+        "follow_up_restrictions": {"type": "string"},
+        "history_preservation": {"type": "boolean", "description": "Must be true: original failure/execution records are preserved; rollback adds new events rather than deleting old ones (validator fails closed)."},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    }
+  }
+}
