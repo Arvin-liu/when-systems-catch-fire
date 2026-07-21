@@ -1,0 +1,62 @@
+[
+  {
+    "id": "PUB-ROLE-INTERFACE",
+    "title": "名字、接口与主体",
+    "subtitle": "当角色稳定到足以覆盖主体时，名字如何被叫回来",
+    "status": "active",
+    "priority": "P0",
+    "forms": ["essay", "series", "front_end_card"],
+    "entry": "outputs/publication/open-publication-layer-20260712/first-longform-draft.md",
+    "evidence_level": "L4",
+    "content_license": "CC-BY-NC-SA-4.0",
+    "notes": "已完成 57 期终稿与回读确认"
+  },
+  {
+    "id": "PUB-HUAXIA-ZIZHU",
+    "title": "华夏自铸",
+    "subtitle": "主体性、代际、制度、决策权回收",
+    "status": "candidate",
+    "priority": "P0",
+    "forms": ["book", "chapter_set", "series", "front_end_card"],
+    "entry": "outputs/publication/open-publication-layer-20260712/chapter-structure.md",
+    "evidence_level": "L3",
+    "content_license": "CC-BY-NC-SA-4.0",
+    "notes": "仅为众多方向之一，不是唯一中心"
+  },
+  {
+    "id": "PUB-ZHU-HUAXIA",
+    "title": "铸华夏",
+    "subtitle": "历史-现实双线的文明叙事",
+    "status": "candidate",
+    "priority": "P1",
+    "forms": ["book", "series", "chapter_set", "front_end_card"],
+    "entry": "outputs/publication/open-publication-layer-20260712/publication-candidate-map.md",
+    "evidence_level": "L3",
+    "content_license": "CC-BY-NC-SA-4.0",
+    "notes": "与华夏自铸并列，不设中心化优先"
+  },
+  {
+    "id": "PUB-GOVERNANCE",
+    "title": "制度与组织边界",
+    "subtitle": "路径控制、决策权与协作边界",
+    "status": "active",
+    "priority": "P1",
+    "forms": ["essay", "series", "front_end_card"],
+    "entry": "outputs/publication/open-publication-layer-20260712/publication-candidate-map.md",
+    "evidence_level": "L3",
+    "content_license": "CC-BY-NC-SA-4.0",
+    "notes": "可支撑多个案例方向"
+  },
+  {
+    "id": "PUB-EVIDENCE",
+    "title": "证据制度与边界审计",
+    "subtitle": "pending、反例、来源治理",
+    "status": "active",
+    "priority": "P1",
+    "forms": ["essay", "front_end_card"],
+    "entry": "outputs/publication/open-publication-layer-20260712/evidence-matrix.md",
+    "evidence_level": "L4",
+    "content_license": "CC-BY-NC-SA-4.0",
+    "notes": "作为所有方向的边界层"
+  }
+]

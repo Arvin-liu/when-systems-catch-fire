@@ -1,6 +1,6 @@
 ---
 story_id: STORY-20260712-disobedience-subjectivity
-title: 第57期故事样稿｜当一个名字变成接口
+title: 第57期故事｜当一个名字变成接口
 focus_functions:
   - D600
   - D601
@@ -8,12 +8,12 @@ focus_functions:
 core_case_ids:
   - C-0810
   - C-0811
-primary_status: draft_story_sample
+primary_status: ready_for_publish
 authoring_rule: evidence-layer-separated
 reader_target: general_reader
 ---
 
-# 第57期故事样稿｜当一个名字变成接口
+# 第57期故事｜当一个名字变成接口
 
 几乎所有人都叫她糕妈。
 
