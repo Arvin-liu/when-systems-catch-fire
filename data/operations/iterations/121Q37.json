@@ -1047,19 +1047,9 @@
       "release.versioning"
     ],
     "system_map_impact": {
-      "added_edges": [],
-      "added_nodes": [
-        "analogy_audit_contract",
-        "analogy_audit_gate_validator",
-        "analogy_audit_pilot"
-      ],
-      "changed_edges": [],
-      "changed_nodes": [],
       "decision": "CHANGE",
       "reason": "New analogy-audit governance components added to project-component registry and topology",
-      "removed_edges": [],
-      "removed_nodes": [],
-      "unmapped_residue": []
+      "delta_path": "data/operations/propagation/121Q37-system-map-delta.json"
     },
     "unresolved_residue": [],
     "closure_complete": true
