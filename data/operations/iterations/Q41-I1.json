@@ -367,7 +367,17 @@
       {
         "name": "baseline_debt",
         "status": "INHERITED",
-        "evidence": "exact parent comparison required at P4"
+        "evidence": "Exact-parent parity confirmed: 121Q33 era resolver 2 failures and generated-output authority 3 failures/errors are unchanged; production execution authority 18/18 PASS."
+      },
+      {
+        "name": "predecessor_regression",
+        "status": "PASS",
+        "evidence": "SCIENTIFIC-METACOGNITION-I1 capability suite 4/4 PASS"
+      },
+      {
+        "name": "human_front_door",
+        "status": "PASS",
+        "evidence": "15/15 PASS with 81-node generated map"
       }
     ],
     "remote": []
