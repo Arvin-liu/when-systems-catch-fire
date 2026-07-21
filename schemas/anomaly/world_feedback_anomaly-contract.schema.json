@@ -1,0 +1,314 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Q41-I1 World-Feedback Anomaly Trigger & Governance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "task_id",
+    "capability_id",
+    "parent_binding",
+    "evidence_registry",
+    "records",
+    "facts",
+    "rule_assertions",
+    "conclusion"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.0.0"
+    },
+    "task_id": {
+      "const": "Q41-I1"
+    },
+    "capability_id": {
+      "const": "world_feedback_anomaly"
+    },
+    "parent_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_id",
+        "exact_head"
+      ],
+      "properties": {
+        "task_id": {
+          "const": "SCIENTIFIC-METACOGNITION-I1"
+        },
+        "exact_head": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        }
+      }
+    },
+    "evidence_registry": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "records": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "record_id",
+          "record_type",
+          "world_feedback_anomaly",
+          "recurrence_window",
+          "residual_failure_aggregation",
+          "expected_observed_divergence",
+          "model_repair_budget",
+          "governance_decision",
+          "escalation_authority",
+          "stop_rollback",
+          "q39_update",
+          "metacognition_update",
+          "claim_ceiling"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record_type": {
+            "enum": [
+              "RECURRING_REPOSITORY_DIVERGENCE",
+              "SINGLE_DEVIATION_NEGATIVE_CONTROL"
+            ]
+          },
+          "world_feedback_anomaly": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "recurrence_window": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "residual_failure_aggregation": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "expected_observed_divergence": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "model_repair_budget": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "governance_decision": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "escalation_authority": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "stop_rollback": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "q39_update": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "metacognition_update": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "claim_ceiling": {
+            "$ref": "#/$defs/boundedField"
+          }
+        }
+      }
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "anomaly_not_hidden_system",
+        "recurrence_required",
+        "threshold_declared",
+        "single_deviation_no_rebuild",
+        "repair_budget_bounded",
+        "authority_required",
+        "stop_rollback_present",
+        "failure_sampling_balanced",
+        "q39_updated",
+        "metacognition_updated"
+      ],
+      "properties": {
+        "anomaly_not_hidden_system": {
+          "type": "boolean"
+        },
+        "recurrence_required": {
+          "type": "boolean"
+        },
+        "threshold_declared": {
+          "type": "boolean"
+        },
+        "single_deviation_no_rebuild": {
+          "type": "boolean"
+        },
+        "repair_budget_bounded": {
+          "type": "boolean"
+        },
+        "authority_required": {
+          "type": "boolean"
+        },
+        "stop_rollback_present": {
+          "type": "boolean"
+        },
+        "failure_sampling_balanced": {
+          "type": "boolean"
+        },
+        "q39_updated": {
+          "type": "boolean"
+        },
+        "metacognition_updated": {
+          "type": "boolean"
+        }
+      }
+    },
+    "rule_assertions": {
+      "type": "array",
+      "minItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "rule_id",
+          "status",
+          "evidence_refs",
+          "effect"
+        ],
+        "properties": {
+          "rule_id": {
+            "enum": [
+              "anomaly_not_hidden_system",
+              "recurrence_required",
+              "threshold_declared",
+              "single_deviation_no_rebuild",
+              "repair_budget_bounded",
+              "authority_required",
+              "stop_rollback_present",
+              "failure_sampling_balanced",
+              "q39_updated",
+              "metacognition_updated"
+            ]
+          },
+          "status": {
+            "enum": [
+              "PASS",
+              "FAIL"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "effect": {
+            "enum": [
+              "ALLOW_WITHIN_CEILING",
+              "BLOCK",
+              "DOWNGRADE"
+            ]
+          }
+        }
+      }
+    },
+    "conclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "statement",
+        "claim_ceiling",
+        "history_preserved",
+        "external_action_performed"
+      ],
+      "properties": {
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim_ceiling": {
+          "type": "string",
+          "minLength": 1
+        },
+        "history_preserved": {
+          "type": "boolean"
+        },
+        "external_action_performed": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "boundedField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "value",
+        "evidence_refs"
+      ],
+      "properties": {
+        "status": {
+          "const": "RECORDED"
+        },
+        "value": {
+          "type": [
+            "string",
+            "boolean",
+            "number",
+            "array",
+            "object",
+            "null"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_id",
+        "artifact",
+        "exact_head",
+        "artifact_digest",
+        "rights_status"
+      ],
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artifact": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exact_head": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "artifact_digest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "rights_status": {
+          "enum": [
+            "REPOSITORY_INTERNAL",
+            "PUBLIC_METADATA_ONLY"
+          ]
+        }
+      }
+    }
+  }
+}
