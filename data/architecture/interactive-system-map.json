@@ -288,7 +288,7 @@
       "group": "governance",
       "target": "data/governance/history-remediation-register.json",
       "description": "History remediation register for past copyright/rights boundary violations.",
-      "lifecycle_status": "draft_candidate"
+      "lifecycle_status": "current"
     },
     {
       "id": "copyright_governance_jurisdiction_registry",
@@ -296,7 +296,7 @@
       "group": "governance",
       "target": "data/governance/jurisdiction-rule-registry.json",
       "description": "Representative multi-jurisdiction copyright rule registry for Q33 risk projection. Covers WIPO treaties, US, EU, UK, CA, AU, JP, SG, IN.",
-      "lifecycle_status": "draft_candidate"
+      "lifecycle_status": "current"
     },
     {
       "id": "copyright_governance_material_classification",
@@ -304,7 +304,7 @@
       "group": "governance",
       "target": "data/governance/material-classification.json",
       "description": "Material classification system L0-L6 for publication gate decisions.",
-      "lifecycle_status": "draft_candidate"
+      "lifecycle_status": "current"
     },
     {
       "id": "copyright_governance_non_republication_principle",
@@ -312,7 +312,7 @@
       "group": "governance",
       "target": "docs/governance/external-input-non-republication-principle.md",
       "description": "External Input Non-Republication Principle — prohibits republication of third-party copyrighted material.",
-      "lifecycle_status": "draft_candidate"
+      "lifecycle_status": "current"
     },
     {
       "id": "copyright_governance_publication_gate_validator",
@@ -320,7 +320,7 @@
       "group": "governance",
       "target": "tools/governance/fail_closed_publication_gate.py",
       "description": "Fail-closed publication gate validator enforcing source-rights, material classification, and non-republication principle.",
-      "lifecycle_status": "draft_candidate"
+      "lifecycle_status": "current"
     },
     {
       "id": "copyright_governance_source_rights",
@@ -328,7 +328,7 @@
       "group": "governance",
       "target": "data/governance/source-rights-registry.json",
       "description": "Source rights registry categorizing materials by rights status and required governance actions.",
-      "lifecycle_status": "draft_candidate"
+      "lifecycle_status": "current"
     },
     {
       "id": "copyright_governance_tests",
@@ -336,7 +336,7 @@
       "group": "governance",
       "target": "tests/test_q33_governance_infrastructure.py",
       "description": "Production tests for Q33 governance infrastructure: registries, schemas, validator, mutation detection.",
-      "lifecycle_status": "draft_candidate"
+      "lifecycle_status": "current"
     },
     {
       "id": "licensing",
