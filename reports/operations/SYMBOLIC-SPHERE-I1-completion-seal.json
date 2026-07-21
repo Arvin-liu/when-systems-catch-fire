@@ -55,10 +55,5 @@
   "q29r": {
     "modified": false,
     "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
-  },
-  "system_map": {
-    "groups": 9,
-    "nodes": 72,
-    "edges": 42
   }
 }
