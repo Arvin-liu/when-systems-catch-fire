@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.4",
+    "component_registry_version": "1.1.5",
     "topology_version": "1.1.0",
     "layout_version": "1.1.0"
   },
@@ -544,6 +544,30 @@
       "group": "governance",
       "target": "data/symbolic/pilot-symbolic-sphere-i1.json",
       "description": "SYMBOLIC-SPHERE-I1 self-authored bounded repository pilot covering COMMUNITY_FOOTBALL_FIELD and SCHOOL_DATA_POLICY; 24 fixtures drive the real CLI; no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "decision_integrity_contract",
+      "label": "Principle Lock, Process Quality & Outcome-Bias Governance 合同",
+      "group": "governance",
+      "target": "schemas/decision/decision_integrity-contract.schema.json",
+      "description": "DECISION-INTEGRITY-I1 typed evidence-bound contract. Principles, assumptions, decision order, risks and stop conditions can be frozen ex ante so process quality and outcome quality remain separately auditable after results appear.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "decision_integrity_gate_validator",
+      "label": "Principle Lock, Process Quality & Outcome-Bias Governance 门禁",
+      "group": "governance",
+      "target": "tools/decision/validate_decision_integrity_gate.py",
+      "description": "DECISION-INTEGRITY-I1 fail-closed real CLI enforcing evidence binding, exact parent, 12 task rules, candidate ceiling and no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "decision_integrity_pilot",
+      "label": "Principle Lock, Process Quality & Outcome-Bias Governance 受控试点",
+      "group": "governance",
+      "target": "data/decision/pilot-decision-integrity-i1.json",
+      "description": "DECISION-INTEGRITY-I1 self-authored bounded repository pilot covering BAD_PROCESS_GOOD_OUTCOME and GOOD_PROCESS_BAD_OUTCOME; 24 fixtures drive the real CLI; no external action.",
       "lifecycle_status": "draft_candidate"
     },
     {
