@@ -1,0 +1,669 @@
+{
+  "task_id": "Q42-I1",
+  "request_version": "1.0.0",
+  "base_identity": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
+  "head_identity": "external_exact_head_attestation",
+  "change_classifications": [
+    "CAPABILITY_ADDITION",
+    "GOVERNANCE_CHANGE",
+    "INTERFACE_CHANGE"
+  ],
+  "changed_dimensions": [
+    "capability",
+    "governance",
+    "usage"
+  ],
+  "changed_paths": [
+    "data/architecture/interactive-system-map-layout.json",
+    "data/architecture/interactive-system-map.json",
+    "data/counterfactual/fixtures/01-valid-exit00.json",
+    "data/counterfactual/fixtures/02-schema-exit02.json",
+    "data/counterfactual/fixtures/03-parent-exit03.json",
+    "data/counterfactual/fixtures/04-evidence-exit04.json",
+    "data/counterfactual/fixtures/05-rule-types_separated-exit05.json",
+    "data/counterfactual/fixtures/06-rule-identifiability_gate_required-exit06.json",
+    "data/counterfactual/fixtures/07-rule-unobservable_not_promoted-exit07.json",
+    "data/counterfactual/fixtures/08-rule-evidence_required-exit08.json",
+    "data/counterfactual/fixtures/09-rule-intervention_difference_explicit-exit09.json",
+    "data/counterfactual/fixtures/10-rule-speculation_labeled-exit10.json",
+    "data/counterfactual/fixtures/11-rule-no_if_then_causal_upgrade-exit11.json",
+    "data/counterfactual/fixtures/12-rule-claim_ceiling_preserved-exit12.json",
+    "data/counterfactual/fixtures/13-rule-types_separated-exit05.json",
+    "data/counterfactual/fixtures/14-rule-identifiability_gate_required-exit06.json",
+    "data/counterfactual/fixtures/15-rule-unobservable_not_promoted-exit07.json",
+    "data/counterfactual/fixtures/16-rule-evidence_required-exit08.json",
+    "data/counterfactual/fixtures/17-rule-intervention_difference_explicit-exit09.json",
+    "data/counterfactual/fixtures/18-rule-speculation_labeled-exit10.json",
+    "data/counterfactual/fixtures/19-rule-no_if_then_causal_upgrade-exit11.json",
+    "data/counterfactual/fixtures/20-rule-claim_ceiling_preserved-exit12.json",
+    "data/counterfactual/fixtures/21-rule-types_separated-exit05.json",
+    "data/counterfactual/fixtures/22-rule-identifiability_gate_required-exit06.json",
+    "data/counterfactual/fixtures/23-ceiling-exit20.json",
+    "data/counterfactual/fixtures/24-external-action-exit21.json",
+    "data/counterfactual/pilot-q42-i1.json",
+    "data/operations/component-execution-profiles.json",
+    "data/operations/iterations/Q42-I1.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/Q42-I1-closure.json",
+    "data/operations/propagation/Q42-I1-impact-report.md",
+    "data/operations/propagation/Q42-I1-request.json",
+    "data/operations/propagation/Q42-I1-residue.json",
+    "data/operations/propagation/Q42-I1-system-map-delta.json",
+    "docs/counterfactual/q42-i1-architecture-decision.md",
+    "docs/counterfactual/q42-i1-boundary-matrix.json",
+    "docs/counterfactual/q42-i1-interfaces.md",
+    "docs/project-current-state.md",
+    "pages/generated/ignition-system-map.svg",
+    "reports/operations/Q42-I1-completion-seal.json",
+    "schemas/counterfactual/counterfactual_unrealized_path-contract.schema.json",
+    "tests/counterfactual/test_counterfactual_unrealized_path_gate.py",
+    "tests/test_human_front_door.py",
+    "tools/counterfactual/build_q42-i1_fixtures.py",
+    "tools/counterfactual/validate_counterfactual_unrealized_path_gate.py",
+    "tools/validate_human_front_door.py"
+  ],
+  "state_transition_subjects": [
+    "Counterfactual & Unrealized-Path Ledger",
+    "counterfactual_unrealized_path",
+    "evidence-bound rule gate"
+  ],
+  "surface_decisions": [
+    {
+      "item_id": "human.readme",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "human.pages_source",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "external.pages_homepage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "human.current_state",
+      "decision": "CHANGE",
+      "reason": "Q42-I1 adds candidate governance and synchronized current-state documentation."
+    },
+    {
+      "item_id": "human.summary",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "human.usage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "human.ai_guide",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "ai.start",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "agent.handoff",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "machine.llms",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "release.changelog",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "release.versioning",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "method.iteration",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "method.task_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "method.result_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "method.review_template",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this synchronization surface."
+    },
+    {
+      "item_id": "copyright_governance",
+      "decision": "CHANGE",
+      "reason": "Q42-I1 adds candidate governance and synchronized current-state documentation."
+    }
+  ],
+  "component_decisions": [
+    {
+      "item_id": "accepted_work",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "ai_guide",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "arn",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "candidate_return",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "case_source",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "charter",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "current_state",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "external_input",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "feedback_routes",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "foundation",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "foundation_data",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "function_os",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "historical_reports",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "ignition_increment",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "incremental_execution",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "iteration",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "iteration_manifest_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "l0",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "l1",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "l2",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "l3",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "l4",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "l5",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "l6",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "licensing",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "mcf",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "no_l7",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "no_totality_proof",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "no_truth_upgrade",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "pages_pipeline",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "point_fire_analysis",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "project_component_registry",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "propagation_calculator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "propagation_topology",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "provenance_capture",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "psd",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "public_response",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "q12",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "q13",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "q14",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "readme",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "showcase",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "showcase_registry",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "source_pool",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "summary",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "sustainability",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "sync",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "system_map",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "system_map_layout",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "system_map_projection",
+      "decision": "CHANGE",
+      "reason": "Q42-I1 new or synchronized component: system_map_projection"
+    },
+    {
+      "item_id": "usage",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "zhiyuan_method",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_jurisdiction_registry",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_source_rights",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_material_classification",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_history_remediation",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_publication_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_non_republication_principle",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "copyright_governance_tests",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "discovery_commitment_claim_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "discovery_commitment_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "discovery_commitment_pilot_q33",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "agent_responsibility_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "agent_responsibility_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "agent_responsibility_pilot_q34",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "observation_prediction_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "observation_prediction_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "observation_prediction_pilot_q34",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "intervention_failure_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "intervention_failure_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "intervention_failure_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "analogy_audit_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "analogy_audit_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "analogy_audit_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "evidence_retrieval_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "evidence_retrieval_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "evidence_retrieval_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "failure_lineage_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "failure_lineage_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "failure_lineage_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "symbolic_power_perspective_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "symbolic_power_perspective_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "symbolic_power_perspective_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "decision_integrity_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "decision_integrity_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "decision_integrity_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "epistemic_state_control_plane_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "epistemic_state_control_plane_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "epistemic_state_control_plane_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "world_feedback_anomaly_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "world_feedback_anomaly_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "world_feedback_anomaly_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "latent_system_identifiability_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "latent_system_identifiability_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "latent_system_identifiability_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "multi_history_world_projection_contract",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "multi_history_world_projection_gate_validator",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "multi_history_world_projection_pilot",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Q42-I1 does not alter this component semantics."
+    },
+    {
+      "item_id": "counterfactual_unrealized_path_contract",
+      "decision": "CHANGE",
+      "reason": "Q42-I1 new or synchronized component: counterfactual_unrealized_path_contract"
+    },
+    {
+      "item_id": "counterfactual_unrealized_path_gate_validator",
+      "decision": "CHANGE",
+      "reason": "Q42-I1 new or synchronized component: counterfactual_unrealized_path_gate_validator"
+    },
+    {
+      "item_id": "counterfactual_unrealized_path_pilot",
+      "decision": "CHANGE",
+      "reason": "Q42-I1 new or synchronized component: counterfactual_unrealized_path_pilot"
+    }
+  ],
+  "system_map_decision": {
+    "decision": "CHANGE",
+    "item_id": "interactive_system_map",
+    "reason": "Three Q42-I1 components are added to registry and layout."
+  }
+}
