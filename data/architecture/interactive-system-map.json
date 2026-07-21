@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.11",
+    "component_registry_version": "1.1.12",
     "topology_version": "1.1.0",
     "layout_version": "1.1.0"
   },
@@ -712,6 +712,30 @@
       "group": "governance",
       "target": "data/escalation/pilot-q43-i1.json",
       "description": "Q43-I1 self-authored bounded repository pilot covering REPOSITORY_LOCAL_REVERSIBLE and HIGH_RISK_REQUEST_ONLY; 24 fixtures drive the real CLI; no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "coaching_commitment_subcapability_contract",
+      "label": "Coaching / Commitment Subcapability 合同",
+      "group": "governance",
+      "target": "schemas/coaching/coaching_commitment_subcapability-contract.schema.json",
+      "description": "Q44-I1 typed evidence-bound contract. A coaching subcapability can support user-declared informed commitments while preserving autonomy, consent, multiple narratives, process/outcome separation and revise/pause/stop rights.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "coaching_commitment_subcapability_gate_validator",
+      "label": "Coaching / Commitment Subcapability 门禁",
+      "group": "governance",
+      "target": "tools/coaching/validate_coaching_commitment_subcapability_gate.py",
+      "description": "Q44-I1 fail-closed real CLI enforcing evidence binding, exact parent, 9 task rules, candidate ceiling and no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "coaching_commitment_subcapability_pilot",
+      "label": "Coaching / Commitment Subcapability 受控试点",
+      "group": "governance",
+      "target": "data/coaching/pilot-q44-i1.json",
+      "description": "Q44-I1 self-authored bounded repository pilot covering USER_LED_COMMITMENT and PAUSE_OR_REVISE_PATH; 24 fixtures drive the real CLI; no external action.",
       "lifecycle_status": "draft_candidate"
     },
     {

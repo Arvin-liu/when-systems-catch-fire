@@ -1,0 +1,300 @@
+{
+  "contract_version": "1.0.0",
+  "capability_id": "coaching_commitment_subcapability",
+  "parent_binding": {
+    "task_id": "Q43-I1",
+    "exact_head": "3756cd6453135a333771243ffa6eb3d4f86344a0"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/escalation/pilot-q43-i1.json",
+      "exact_head": "3756cd6453135a333771243ffa6eb3d4f86344a0",
+      "artifact_digest": "sha256:0862e7d9cf513170789bd657ab8156564af8967ef52bc78f509ca402c58de399",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "data/metacognition/pilot-scientific-metacognition-i1.json",
+      "exact_head": "3756cd6453135a333771243ffa6eb3d4f86344a0",
+      "artifact_digest": "sha256:9d6439c6a9e6ce1083b54171484d4dae3ee8f3781bd7733978e85005a19fca97",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "FOUNDATION.md",
+      "exact_head": "3756cd6453135a333771243ffa6eb3d4f86344a0",
+      "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
+      "rights_status": "REPOSITORY_INTERNAL"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "USER_LED_COMMITMENT",
+      "user_declared_goal": {
+        "status": "RECORDED",
+        "value": "bounded user_declared_goal for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "informed_commitment": {
+        "status": "RECORDED",
+        "value": "bounded informed_commitment for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "plan_checkpoints": {
+        "status": "RECORDED",
+        "value": "bounded plan_checkpoints for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "deviations": {
+        "status": "RECORDED",
+        "value": "bounded deviations for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "support_options": {
+        "status": "RECORDED",
+        "value": "bounded support_options for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "revise_pause_stop": {
+        "status": "RECORDED",
+        "value": "bounded revise_pause_stop for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "non_manipulation_constraint": {
+        "status": "RECORDED",
+        "value": "bounded non_manipulation_constraint for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "multi_perspective_narrative": {
+        "status": "RECORDED",
+        "value": "bounded multi_perspective_narrative for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "autonomy_consent": {
+        "status": "RECORDED",
+        "value": "bounded autonomy_consent for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "outcome_process_separation": {
+        "status": "RECORDED",
+        "value": "bounded outcome_process_separation for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "escalation": {
+        "status": "RECORDED",
+        "value": "bounded escalation for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for USER_LED_COMMITMENT",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "PAUSE_OR_REVISE_PATH",
+      "user_declared_goal": {
+        "status": "RECORDED",
+        "value": "bounded user_declared_goal for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "informed_commitment": {
+        "status": "RECORDED",
+        "value": "bounded informed_commitment for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "plan_checkpoints": {
+        "status": "RECORDED",
+        "value": "bounded plan_checkpoints for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "deviations": {
+        "status": "RECORDED",
+        "value": "bounded deviations for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "support_options": {
+        "status": "RECORDED",
+        "value": "bounded support_options for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "revise_pause_stop": {
+        "status": "RECORDED",
+        "value": "bounded revise_pause_stop for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "non_manipulation_constraint": {
+        "status": "RECORDED",
+        "value": "bounded non_manipulation_constraint for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "multi_perspective_narrative": {
+        "status": "RECORDED",
+        "value": "bounded multi_perspective_narrative for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "autonomy_consent": {
+        "status": "RECORDED",
+        "value": "bounded autonomy_consent for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "outcome_process_separation": {
+        "status": "RECORDED",
+        "value": "bounded outcome_process_separation for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "escalation": {
+        "status": "RECORDED",
+        "value": "bounded escalation for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for PAUSE_OR_REVISE_PATH",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "goal_user_declared": true,
+    "commitment_informed": true,
+    "consent_reversible": true,
+    "no_goal_substitution": true,
+    "no_shame_pressure": true,
+    "multiple_narratives_preserved": true,
+    "process_outcome_separate": true,
+    "support_not_control": true,
+    "escalation_boundary_enforced": true
+  },
+  "rule_assertions": [
+    {
+      "rule_id": "goal_user_declared",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "commitment_informed",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "consent_reversible",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "no_goal_substitution",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "no_shame_pressure",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "multiple_narratives_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "process_outcome_separate",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "support_not_control",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "escalation_boundary_enforced",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    }
+  ],
+  "conclusion": {
+    "statement": "A coaching subcapability can support user-declared informed commitments while preserving autonomy, consent, multiple narratives, process/outcome separation and revise/pause/stop rights.",
+    "claim_ceiling": "candidate_only_repository_governance",
+    "history_preserved": true,
+    "external_action_performed": false
+  }
+}
