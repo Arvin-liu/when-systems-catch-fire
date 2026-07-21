@@ -367,7 +367,17 @@
       {
         "name": "baseline_debt",
         "status": "INHERITED",
-        "evidence": "exact parent comparison required at P4"
+        "evidence": "exact Q38 parent/current parity: era resolver x2 and generated-output authority x3"
+      },
+      {
+        "name": "production_execution_authority",
+        "status": "PASS",
+        "evidence": "18 tests; exact Q38 parent also PASS"
+      },
+      {
+        "name": "human_front_door",
+        "status": "PASS",
+        "evidence": "15 tests; complete Q39 projection has 69 nodes"
       }
     ],
     "remote": []
