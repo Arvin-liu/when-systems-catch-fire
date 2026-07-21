@@ -17,7 +17,7 @@
     "base_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
     "branch": "agent/121q34-i1-discovery-commitment-boundary",
     "draft": true,
-    "pr_number": 0,
+    "pr_number": 65,
     "merged": false
   },
   "head_binding": {
@@ -26,7 +26,7 @@
     "explanation": "Q34-I1 Draft candidate: repository object never treats its own HEAD as validity evidence; exact-head and CI/artifact evidence are externally attested via PR body and 1111 receipt. This record does not assert acceptance, merge or Current status.",
     "live_refetch_required": true,
     "mode": "external_exact_head_attestation",
-    "pr_number": 0,
+    "pr_number": 65,
     "receipt_path": "agent-results/IGNITION-20260721-121Q34-I1-discovery-commitment-boundary-execution-receipt.json"
   },
   "gap": {
@@ -361,7 +361,7 @@
         "status": "pending",
         "authority": "pull_request_body_and_1111_receipt",
         "evidence_refs": [
-          "external:pr_body:0"
+          "external:pr_body:65"
         ],
         "live_state_locally_verifiable": false
       }
