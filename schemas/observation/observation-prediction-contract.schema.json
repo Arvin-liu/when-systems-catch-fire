@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/observation/observation-prediction-contract.schema.json",
+  "title": "Q36-OBS Observation-Prediction Calibration Contract",
+  "description": "Repository-native typed contract for freeze-before-reveal prediction commitments, independent outcome binding, deterministic evaluation/calibration and residual/anomaly preservation. Does NOT execute interventions (Q36-INT), does NOT adjudicate causal mechanisms, and does NOT assert universal real-world predictive capability.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["observations", "predictions", "outcome_bindings", "evaluations", "residuals"],
+  "properties": {
+    "observations": {"type": "array", "items": {"$ref": "#/$defs/observation_spec"}},
+    "predictions": {"type": "array", "items": {"$ref": "#/$defs/prediction_commitment"}},
+    "outcome_bindings": {"type": "array", "items": {"$ref": "#/$defs/outcome_binding"}},
+    "evaluations": {"type": "array", "items": {"$ref": "#/$defs/evaluation_calibration"}},
+    "residuals": {"type": "array", "items": {"$ref": "#/$defs/residual_anomaly"}}
+  },
+  "$defs": {
+    "observation_spec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "observation_id", "construct", "unit", "scale", "target_scope",
+        "measurement_method", "source_ref", "sampling_window",
+        "missingness_policy", "uncertainty", "provenance_refs",
+        "observed_at", "available_at", "exact_head", "quality_status"
+      ],
+      "properties": {
+        "observation_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "construct": {"type": "string", "minLength": 1, "description": "Variable / construct being measured."},
+        "unit": {"type": "string", "minLength": 1},
+        "scale": {"type": "string", "enum": ["nominal", "ordinal", "interval", "ratio", "probability", "count", "boolean"]},
+        "target_scope": {"type": "string", "minLength": 1, "description": "Target population / system / scope."},
+        "measurement_method": {"type": "string", "minLength": 1},
+        "source_ref": {"type": "string", "minLength": 1, "description": "Q33-gated source reference; must not be a Q33-rejected path."},
+        "sampling_window": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["start", "end"],
+          "properties": {
+            "start": {"type": "string", "format": "date-time"},
+            "end": {"type": "string", "format": "date-time"}
+          }
+        },
+        "missingness_policy": {"type": "string", "minLength": 1},
+        "noise_notes": {"type": "string"},
+        "uncertainty": {"type": "string", "minLength": 1},
+        "provenance_refs": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "observed_at": {"type": "string", "format": "date-time", "description": "When the observed event occurred."},
+        "available_at": {"type": "string", "format": "date-time", "description": "When the data became available to the predictor. MUST be >= observed_at; predictions must cut off inputs before this time."},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "artifact_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "quality_status": {"type": "string", "enum": ["accepted", "accepted_with_exclusions", "quarantined", "rejected"]},
+        "exclusions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "prediction_commitment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prediction_id", "normalized_target", "forecast_horizon", "evaluation_window",
+        "prediction_type", "prediction_value", "model_rule_version",
+        "input_snapshot_digest", "input_cutoff_time", "evidence_refs",
+        "uncertainty", "applicability_scope", "claim_ceiling",
+        "q34_claim_ref", "q35_actor_ref", "q35_grant_ref", "q35_trajectory_event_digest",
+        "exact_head", "issued_at", "supersession_policy", "status"
+      ],
+      "properties": {
+        "prediction_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "normalized_target": {"type": "string", "minLength": 1, "description": "Normalized target variable definition; must match outcome construct."},
+        "forecast_horizon": {"type": "string", "minLength": 1},
+        "evaluation_window": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["start", "end"],
+          "properties": {
+            "start": {"type": "string", "format": "date-time"},
+            "end": {"type": "string", "format": "date-time"}
+          }
+        },
+        "prediction_type": {"type": "string", "enum": ["point", "interval", "distribution", "class"]},
+        "prediction_value": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["kind"],
+          "properties": {
+            "kind": {"type": "string", "enum": ["point", "interval", "distribution", "class"]},
+            "point": {"type": "number"},
+            "interval_lower": {"type": "number"},
+            "interval_upper": {"type": "number"},
+            "interval_confidence": {"type": "number", "minimum": 0, "maximum": 1},
+            "class_label": {"type": "string"},
+            "class_probability": {"type": "number", "minimum": 0, "maximum": 1},
+            "distribution_summary": {"type": "string"}
+          },
+          "description": "Interval predictions must carry lower/upper and confidence in [0,1]. Class predictions must carry probability in [0,1]."
+        },
+        "model_rule_version": {"type": "string", "minLength": 1, "description": "Resolvable model/rule/version reference, not a bare model name as authority."},
+        "input_snapshot_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "input_cutoff_time": {"type": "string", "format": "date-time", "description": "No input data available after this time may be used. Must be <= outcome available_at."},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "uncertainty": {"type": "string", "minLength": 1},
+        "applicability_scope": {"type": "string", "minLength": 1},
+        "claim_ceiling": {"type": "string", "minLength": 1, "description": "Must not assert universal predictive capability or causal proof."},
+        "q34_claim_ref": {"type": "string", "minLength": 1, "description": "Q34 claim this prediction relies on; must be committed_current for Current prediction claims."},
+        "q35_actor_ref": {"type": "string", "minLength": 1},
+        "q35_grant_ref": {"type": "string", "minLength": 1},
+        "q35_trajectory_event_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "artifact_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "issued_at": {"type": "string", "format": "date-time", "description": "Immutable issuance time. Must be strictly before outcome available_at."},
+        "supersession_policy": {"type": "string", "minLength": 1, "description": "Corrections only via new supersession records; original preserved."},
+        "status": {"type": "string", "enum": ["frozen", "resolved", "superseded", "abstained", "deferred"]},
+        "superseded_by": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"}
+      }
+    },
+    "outcome_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "binding_id", "prediction_id", "outcome_observation_id",
+        "outcome_available_at", "matching_rule", "inclusion_status",
+        "evaluator_ref", "independent_evidence_status", "exact_head"
+      ],
+      "properties": {
+        "binding_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "prediction_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "outcome_observation_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "outcome_available_at": {"type": "string", "format": "date-time"},
+        "matching_rule": {"type": "string", "minLength": 1, "description": "Deterministic rule matching prediction target/window/scope to outcome."},
+        "inclusion_status": {"type": "string", "enum": ["included", "excluded_with_reason", "abstained", "deferred", "missing"]},
+        "exclusion_reason": {"type": "string", "description": "Mandatory when inclusion_status is excluded_with_reason."},
+        "evaluator_ref": {"type": "string", "minLength": 1, "description": "Q35 actor or deterministic verifier that performed binding."},
+        "independent_evidence_status": {"type": "string", "enum": ["independent", "self_generated_forbidden", "partially_independent"]},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "artifact_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    },
+    "evaluation_calibration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evaluation_id", "binding_id", "metrics", "sample_size",
+        "scope_summary", "baseline_comparison", "computed_by", "computation_method", "exact_head"
+      ],
+      "properties": {
+        "evaluation_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "binding_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "metrics": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "absolute_error": {"type": "number"},
+            "squared_error": {"type": "number"},
+            "interval_coverage": {"type": "number", "minimum": 0, "maximum": 1},
+            "interval_width": {"type": "number", "minimum": 0},
+            "brier_score": {"type": "number", "minimum": 0, "maximum": 1},
+            "log_score": {"type": "number"},
+            "residual_sign": {"type": "string", "enum": ["over", "under", "exact"]},
+            "residual_magnitude": {"type": "number", "minimum": 0},
+            "accuracy": {"type": "number", "minimum": 0, "maximum": 1}
+          }
+        },
+        "calibration_bins": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["bin_lower", "bin_upper", "mean_predicted", "observed_frequency", "count"],
+            "properties": {
+              "bin_lower": {"type": "number", "minimum": 0, "maximum": 1},
+              "bin_upper": {"type": "number", "minimum": 0, "maximum": 1},
+              "mean_predicted": {"type": "number", "minimum": 0, "maximum": 1},
+              "observed_frequency": {"type": "number", "minimum": 0, "maximum": 1},
+              "count": {"type": "integer", "minimum": 0}
+            }
+          }
+        },
+        "sample_size": {"type": "integer", "minimum": 1},
+        "scope_summary": {"type": "string", "minLength": 1, "description": "Applicability scope this evaluation covers; must not claim beyond it."},
+        "baseline_comparison": {"type": "string", "minLength": 1},
+        "missing_or_abstained_outcomes": {"type": "integer", "minimum": 0},
+        "computed_by": {"type": "string", "minLength": 1},
+        "computation_method": {"type": "string", "minLength": 1, "description": "Deterministic computation method/version."},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "artifact_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    },
+    "residual_anomaly": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "residual_id", "prediction_id", "residual_type", "magnitude",
+        "direction", "expected_status", "escalation_target",
+        "claim_ceiling", "do_not_infer_cause", "exact_head"
+      ],
+      "properties": {
+        "residual_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "prediction_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "binding_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "residual_type": {"type": "string", "enum": ["numeric_residual", "missed_class", "interval_miss", "missing_outcome", "deferred_outcome", "abstained_prediction", "data_quality_anomaly", "unresolved_anomaly"]},
+        "magnitude": {"type": "number", "minimum": 0},
+        "direction": {"type": "string", "enum": ["over", "under", "exact", "not_applicable"]},
+        "expected_status": {"type": "string", "enum": ["expected", "unexpected"]},
+        "known_data_quality_explanation": {"type": "string"},
+        "unresolved_anomaly": {"type": "boolean"},
+        "escalation_target": {"type": "string", "minLength": 1, "description": "e.g. 'q36_int', 'q39_failure_memory', 'none'."},
+        "claim_ceiling": {"type": "string", "minLength": 1},
+        "do_not_infer_cause": {"type": "boolean", "const": true, "description": "Hard marker: residuals must never be read as causal identification."},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "artifact_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

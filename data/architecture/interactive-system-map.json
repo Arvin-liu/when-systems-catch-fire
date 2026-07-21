@@ -403,6 +403,30 @@
       "lifecycle_status": "draft_candidate"
     },
     {
+      "id": "observation_prediction_contract",
+      "label": "观察—预测校核 合同",
+      "group": "governance",
+      "target": "schemas/observation/observation-prediction-contract.schema.json",
+      "description": "Q36-OBS typed observation-prediction calibration contract: observation spec (event time vs available time), freeze-before-reveal prediction commitment, independent outcome binding, deterministic evaluation/calibration, residual/anomaly preservation with do-not-infer-cause marker.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "observation_prediction_gate_validator",
+      "label": "观察—预测校核 门禁",
+      "group": "governance",
+      "target": "tools/observation/validate_observation_prediction_gate.py",
+      "description": "Q36-OBS fail-closed observation-prediction calibration gate/CLI: blocks temporal leaks, target/window/scope mismatch, stale heads, silent prediction rewrites, selective outcome deletion, self-generated outcomes, illegal probabilities, uncommitted-Q34-claim predictions, missing Q35 authority, Q33 rights bypass, universal-capability and causal overclaims, unbound calibration, dropped failures.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "observation_prediction_pilot_q34",
+      "label": "观察—预测校核 Q34 试点",
+      "group": "governance",
+      "target": "data/observation/pilot-q34-closure-drift-prediction.json",
+      "description": "Q36-OBS pilot: freeze-before-reveal interval prediction about Q34 propagation-closure drift, bound to an independent deterministic outcome observation with calibration record; plus an honestly-marked retrospective replay fixture (RETROSPECTIVE_REPLAY_NOT_LIVE_FORECAST).",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
       "id": "external_input",
       "label": "外部输入源",
       "group": "writing",
