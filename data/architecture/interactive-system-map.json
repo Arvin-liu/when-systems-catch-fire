@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.10",
+    "component_registry_version": "1.1.11",
     "topology_version": "1.1.0",
     "layout_version": "1.1.0"
   },
@@ -688,6 +688,30 @@
       "group": "governance",
       "target": "data/counterfactual/pilot-q42-i1.json",
       "description": "Q42-I1 self-authored bounded repository pilot covering IDENTIFIABLE_COUNTERFACTUAL and SPECULATIVE_UNREALIZED_PATH; 24 fixtures drive the real CLI; no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "graded_intervention_escalation_contract",
+      "label": "Graded Intervention & Professional Escalation 合同",
+      "group": "governance",
+      "target": "schemas/escalation/graded_intervention_escalation-contract.schema.json",
+      "description": "Q43-I1 typed evidence-bound contract. Actions can be classified by risk, reversibility, evidence, authority and expertise so only repository-local reversible actions are automatic and high-risk external actions become request-only escalations.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "graded_intervention_escalation_gate_validator",
+      "label": "Graded Intervention & Professional Escalation 门禁",
+      "group": "governance",
+      "target": "tools/escalation/validate_graded_intervention_escalation_gate.py",
+      "description": "Q43-I1 fail-closed real CLI enforcing evidence binding, exact parent, 10 task rules, candidate ceiling and no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "graded_intervention_escalation_pilot",
+      "label": "Graded Intervention & Professional Escalation 受控试点",
+      "group": "governance",
+      "target": "data/escalation/pilot-q43-i1.json",
+      "description": "Q43-I1 self-authored bounded repository pilot covering REPOSITORY_LOCAL_REVERSIBLE and HIGH_RISK_REQUEST_ONLY; 24 fixtures drive the real CLI; no external action.",
       "lifecycle_status": "draft_candidate"
     },
     {

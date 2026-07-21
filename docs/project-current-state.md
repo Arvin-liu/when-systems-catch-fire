@@ -153,3 +153,7 @@ Multiple evidence-constrained history/world candidates can preserve shared evide
 ### Q42-I1 Counterfactual & Unrealized-Path Ledger (stacked Draft candidate)
 
 Counterfactuals, alternative decompositions, unrealized paths and speculative narratives can be kept distinct, and only identifiable portions receive bounded counterfactual status. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: if-then story is not causal fact; unobservable portion remains unobservable; alternative decomposition is not counterfactual proof; no external intervention.
+
+### Q43-I1 Graded Intervention & Professional Escalation (stacked Draft candidate)
+
+Actions can be classified by risk, reversibility, evidence, authority and expertise so only repository-local reversible actions are automatic and high-risk external actions become request-only escalations. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: no legal action; no medical action; no financial action; no safety-critical external action.
