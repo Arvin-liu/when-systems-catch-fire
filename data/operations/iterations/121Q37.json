@@ -181,6 +181,31 @@
         "evidence": "data/analogy/pilot-real-repo-analogy-audit.json -> validate_analogy_audit_gate.py exit 0 GATE_PASS"
       },
       {
+        "name": "q34_commitment_regression",
+        "status": "PASS",
+        "evidence": "tests/discovery/test_commitment_gate.py (15/15 green)"
+      },
+      {
+        "name": "q35_authority_regression",
+        "status": "PASS",
+        "evidence": "tests/agent/test_responsibility_gate.py (green)"
+      },
+      {
+        "name": "q36_obs_regression",
+        "status": "PASS",
+        "evidence": "tests/observation/test_observation_prediction_core.py + test_observation_prediction_gate.py (green)"
+      },
+      {
+        "name": "q33_regression",
+        "status": "PASS",
+        "evidence": "tests/test_q33_fail_closed_fixtures.py + tests/test_q33_governance_infrastructure.py (green)"
+      },
+      {
+        "name": "component_profiles_regen",
+        "status": "PASS",
+        "evidence": "tools/operations/generate_component_profiles.py --check rc=0 (74 profiles; canonical regen after additive change)"
+      },
+      {
         "name": "change_propagation",
         "status": "PASS",
         "evidence": "data/operations/propagation/121Q37-closure.json (closure_complete=true, residue=0)"
@@ -199,6 +224,16 @@
         "name": "baseline_debt_reproduced",
         "status": "PASS",
         "evidence": "8 pre-existing reds inherited from Q36-INT head: era_resolver x2, generated-output-authority x3, production_execution_authority x3 (identical; not repaired)"
+      },
+      {
+        "name": "external_attestation_dependent_local_tests",
+        "status": "ENVIRONMENTAL",
+        "evidence": "88 pre-existing fail-closed local failures in test_iteration_sync/test_change_propagation/test_phase_e_candidate/test_seal_freshness/test_component_profiles(before regen)/test_production_execution_authority/test_era_resolver/test_generated_output_authority*; identical to Q36-INT base head; require CI/external attestation + full era git history, not Q37-caused"
+      },
+      {
+        "name": "seal_freshness_historical_ancestor",
+        "status": "ENVIRONMENTAL",
+        "evidence": "tests/test_seal_freshness.py::test_m6_historical_ancestor_allowed validates hardcoded 121Q32.json (registry 1.0.0); this partial clone lacks 1.0.0-era git history so _registry_version_commits() returns only 1.2.0; test is skipped at branch root (no HEAD~1) and un-skips once >=1 ancestor exists. Unrelated to Q37 deliverables."
       }
     ],
     "remote": []
@@ -210,7 +245,7 @@
     "F15/D1/D2 not materialized; residual/failure records are interface surfaces only",
     "single deterministic real-repo pilot outcome; sample_size=1 with explicit scope limitation",
     "8 pre-existing baseline reds unrelated to Q37-I1 remain as registered debt",
-    "Q34/Q35/Q36-OBS/Q33 + full-suite regression run at T7/P4 (Draft PR phase)"
+    "Full-suite regression run at T7/P4: Q37 analogy 21/21 PASS; Q33/Q34/Q35/Q36-OBS regressions PASS; 88 pre-existing fail-closed local failures identical to Q36-INT base (env/CI-attestation dependent); 1 extra environmental failure (test_m6_historical_ancestor_allowed) due to partial clone lacking 1.0.0-era git history — not Q37-caused"
   ],
   "receipt_location": "agent-results/IGNITION-20260721-121Q37-I1-analogy-audit-transportability-execution-receipt.json",
   "completion_seal_path": "reports/operations/121Q37-completion-seal.json",
