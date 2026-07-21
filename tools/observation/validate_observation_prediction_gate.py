@@ -360,26 +360,25 @@ def check_target_drift_versioning(bundle):
 def _assertive_hits(text, tokens):
     """Return tokens that appear in an ASSERTIVE (non-negated) context.
 
-    A token occurring inside a negation ('not a universal predictive capability',
-    'no causal proof', 'does not establish causation') is a scope-limiting
-    disclaimer, not an overclaim. We check the 60 characters preceding each hit
-    for negation markers.
+    Negation is scoped to the same clause: we split the text on sentence/clause
+    boundaries ('.', ';', newline) and only treat a token as disclaimed when a
+    negation marker appears in the SAME clause before the token. This prevents a
+    disclaimer in one clause ('not a universal predictive capability') from
+    masking an overclaim in the next clause ('the high fit establishes causation').
     """
     hits = []
     lower = text.lower()
     negations = ("not ", "no ", "never ", "without ", "does not ", "did not ",
                  "cannot ", "must not ", "nor ", "neither ", "n't ")
-    for tok in tokens:
-        start = 0
-        while True:
-            idx = lower.find(tok, start)
+    clauses = re.split(r"[.;\n]", lower)
+    for clause in clauses:
+        for tok in tokens:
+            idx = clause.find(tok)
             if idx == -1:
-                break
-            prefix = lower[max(0, idx - 60):idx]
+                continue
+            prefix = clause[:idx]
             if not any(n in prefix for n in negations):
                 hits.append(tok)
-                break
-            start = idx + 1
     return hits
 
 
