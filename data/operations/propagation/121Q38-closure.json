@@ -371,9 +371,9 @@
       "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
     },
     {
-      "decision": "NO_CHANGE_WITH_REASON",
+      "decision": "CHANGE",
       "item_id": "system_map_projection",
-      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      "reason": "Q38-I1 adds three declared map nodes and synchronizes the complete front-door node set."
     },
     {
       "decision": "NO_CHANGE_WITH_REASON",
@@ -476,7 +476,7 @@
   "base_identity": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "6cc530f3725d5141ff7bfce7f494fa8b00e302ac9755a901ea18d837bc32da54",
+  "closure_hash": "bcd142ee34f3470c71a93b8f53a2a293d260f5ecbbf421d051aba505bbd518fd",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -609,7 +609,8 @@
     "schemas/retrieval/evidence-retrieval-contract.schema.json",
     "tests/retrieval/test_evidence_retrieval_gate.py",
     "tools/retrieval/build_q38_fixtures.py",
-    "tools/retrieval/validate_evidence_retrieval_gate.py"
+    "tools/retrieval/validate_evidence_retrieval_gate.py",
+    "tools/validate_human_front_door.py"
   ],
   "system_map_impact": {
     "added_edges": [],

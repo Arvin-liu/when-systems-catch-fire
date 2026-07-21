@@ -1,7 +1,7 @@
 # 121Q38 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `6cc530f3725d5141ff7bfce7f494fa8b00e302ac9755a901ea18d837bc32da54`
+- Closure hash: `bcd142ee34f3470c71a93b8f53a2a293d260f5ecbbf421d051aba505bbd518fd`
 - Fixpoint iterations: `2`
 - Seeds: `current_state, evidence_retrieval_contract, evidence_retrieval_gate_validator, evidence_retrieval_pilot, historical_reports, incremental_execution, iteration_manifest_contract, pages_pipeline, project_component_registry, propagation_calculator, system_map_layout, system_map_projection`
 - Resolved components: `15`

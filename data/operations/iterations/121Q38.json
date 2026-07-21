@@ -103,6 +103,11 @@
       "reason": "Q38-I1 typed retrieval governance or synchronized artifact."
     },
     {
+      "surface": "tools/validate_human_front_door.py",
+      "decision": "CHANGE",
+      "reason": "Synchronize the front-door complete-node assertion with the three Q38 map nodes."
+    },
+    {
       "surface": "data/operations/propagation/121Q38-request.json",
       "decision": "CHANGE",
       "reason": "Q38-I1 typed retrieval governance or synchronized artifact."
@@ -150,6 +155,7 @@
     "data/architecture/interactive-system-map-layout.json",
     "data/architecture/interactive-system-map.json",
     "pages/generated/ignition-system-map.svg",
+    "tools/validate_human_front_door.py",
     "data/operations/propagation/121Q38-request.json",
     "data/operations/propagation/121Q38-closure.json",
     "data/operations/propagation/121Q38-residue.json",
@@ -203,7 +209,12 @@
       {
         "name": "baseline_debt",
         "status": "INHERITED",
-        "evidence": "era x2, generated authority x3, production authority x3"
+        "evidence": "exact Q37 parent comparison: era resolver x2 and generated-output authority x3 are unchanged"
+      },
+      {
+        "name": "production_execution_authority_regression",
+        "status": "PASS",
+        "evidence": "18 tests; Q38-added front-door node-set regression corrected before freeze"
       }
     ],
     "remote": []
@@ -452,7 +463,7 @@
     "impact_report_path": "data/operations/propagation/121Q38-impact-report.md",
     "system_map_delta_path": "data/operations/propagation/121Q38-system-map-delta.json",
     "residue_path": "data/operations/propagation/121Q38-residue.json",
-    "closure_hash": "6cc530f3725d5141ff7bfce7f494fa8b00e302ac9755a901ea18d837bc32da54",
+      "closure_hash": "bcd142ee34f3470c71a93b8f53a2a293d260f5ecbbf421d051aba505bbd518fd",
     "base_identity": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
     "head_identity": "external_exact_head_attestation",
     "seed_paths": [
@@ -500,7 +511,8 @@
       "schemas/retrieval/evidence-retrieval-contract.schema.json",
       "tests/retrieval/test_evidence_retrieval_gate.py",
       "tools/retrieval/build_q38_fixtures.py",
-      "tools/retrieval/validate_evidence_retrieval_gate.py"
+      "tools/retrieval/validate_evidence_retrieval_gate.py",
+      "tools/validate_human_front_door.py"
     ],
     "seed_components": [
       "current_state",
@@ -913,9 +925,9 @@
         "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
       },
       {
-        "decision": "NO_CHANGE_WITH_REASON",
+        "decision": "CHANGE",
         "item_id": "system_map_projection",
-        "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+        "reason": "Q38-I1 adds three declared map nodes and synchronizes the complete front-door node set."
       },
       {
         "decision": "NO_CHANGE_WITH_REASON",

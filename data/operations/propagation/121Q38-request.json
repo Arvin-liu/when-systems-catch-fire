@@ -57,6 +57,7 @@
     "reports/operations/121Q38-completion-seal.json",
     "schemas/retrieval/evidence-retrieval-contract.schema.json",
     "tests/retrieval/test_evidence_retrieval_gate.py",
+    "tools/validate_human_front_door.py",
     "tools/retrieval/build_q38_fixtures.py",
     "tools/retrieval/validate_evidence_retrieval_gate.py"
   ],
@@ -400,8 +401,8 @@
     },
     {
       "item_id": "system_map_projection",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+      "decision": "CHANGE",
+      "reason": "Q38-I1 adds three declared map nodes and synchronizes the complete front-door node set."
     },
     {
       "item_id": "usage",
