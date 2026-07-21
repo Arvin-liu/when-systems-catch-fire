@@ -145,3 +145,7 @@ Recurring evidence-bound expected/observed divergence can trigger a bounded cont
 ### F15-D1-I1 Latent-System Discovery & Identifiability Gate (stacked Draft candidate)
 
 Latent-system candidates and equivalent decompositions can remain candidate objects until distinguishing evidence passes an explicit identifiability gate. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: residual is not a latent entity; shared pattern is not a common cause; non-identifiable decomposition remains unresolved; no Q45+ numbering.
+
+### D2-I1 Evidence-Constrained Multi-History / Multi-World Projection (stacked Draft candidate)
+
+Multiple evidence-constrained history/world candidates can preserve shared evidence, branch assumptions, indistinguishable sets and falsifiers without forcing a unique story or unjustified probability. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: generated possibility is not real probability; indistinguishable paths are not ranked facts; no evidence-free story; no forced unique narrative.
