@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.2",
+    "component_registry_version": "1.1.3",
     "topology_version": "1.1.0",
     "layout_version": "1.1.0"
   },
@@ -496,6 +496,30 @@
       "group": "governance",
       "target": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
       "description": "Q38-I1 bounded real-repository replay: one traceable support item, counterexample, boundary case, negative result and deliberately unperformed external retrieval, all bound to the frozen Q37 seed; 24 fixtures drive the real CLI. Negative and failed records export to Q39; external validity remains an explicit gap. No external fact, mechanism proof or real-world action is claimed.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "failure_lineage_contract",
+      "label": "失败记忆与修复传播 合同",
+      "group": "governance",
+      "target": "schemas/failure/failure-lineage-contract.schema.json",
+      "description": "Q39-I1 typed append-only failure lineage across Q36 residual/rollback, Q37 mismatch/retraction and Q38 counterexample/negative/failed retrieval exports; binds origin task, artifact, exact head, digest, causal status, retry boundary, propagation and ceiling impact without proving cause.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "failure_lineage_gate_validator",
+      "label": "失败记忆与修复传播 门禁",
+      "group": "governance",
+      "target": "tools/failure/validate_failure_lineage_gate.py",
+      "description": "Q39-I1 deterministic fail-closed gate: rejects broken hash chains, silent overwrite/deletion, cause overclaim, unchanged retry, missing repair propagation, no downstream plan effect, retracted claims driving actions, environment-as-theory relabeling, lost negative results, broken source binding, invalid recurrence/closure and ceiling inflation.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "failure_lineage_pilot",
+      "label": "失败记忆与修复传播 受控试点",
+      "group": "governance",
+      "target": "data/failure/pilot-q39-failure-lineage.json",
+      "description": "Q39-I1 bounded repository pilot replays Q36 rollback, Q37 analogy mismatch and Q38 counterexample/negative/failed retrieval into an append-only chain with applied downstream plan effects; 24 fixtures drive the real CLI. No real-world retry or external action.",
       "lifecycle_status": "draft_candidate"
     },
     {

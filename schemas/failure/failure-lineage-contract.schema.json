@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.example/schemas/failure/failure-lineage-contract.schema.json",
+  "title": "121Q39-I1 append-only failure lineage",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "task_id", "lineage_id", "declared_event_count", "source_bindings", "events", "recurrence_signatures", "propagation_targets", "unresolved_residue", "active_action_claim_refs", "conclusion"],
+  "properties": {
+    "contract_version": {"const": "1.0.0"},
+    "task_id": {"const": "121Q39-I1"},
+    "lineage_id": {"type": "string", "minLength": 1},
+    "declared_event_count": {"type": "integer", "minimum": 1},
+    "source_bindings": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/source_binding"}},
+    "events": {"type": "array", "minItems": 4, "items": {"$ref": "#/$defs/event"}},
+    "recurrence_signatures": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/recurrence"}},
+    "propagation_targets": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/propagation"}},
+    "unresolved_residue": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "active_action_claim_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "conclusion": {
+      "type": "object", "additionalProperties": false,
+      "required": ["statement", "negative_history_preserved", "failures_change_future_plans", "claim_ceiling"],
+      "properties": {
+        "statement": {"type": "string", "minLength": 1},
+        "negative_history_preserved": {"type": "boolean"},
+        "failures_change_future_plans": {"type": "boolean"},
+        "claim_ceiling": {"type": "string", "minLength": 1}
+      }
+    }
+  },
+  "$defs": {
+    "source_binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["source_id", "task_id", "artifact", "exact_head", "artifact_digest"],
+      "properties": {
+        "source_id": {"type": "string", "minLength": 1},
+        "task_id": {"type": "string", "minLength": 1},
+        "artifact": {"type": "string", "minLength": 1},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "artifact_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    },
+    "event": {
+      "type": "object", "additionalProperties": false,
+      "required": ["event_id", "sequence", "event_type", "failure_class", "source_binding_id", "originating_task", "originating_artifact", "originating_exact_head", "observed_symptom", "causal_status", "causal_claim", "negative_evidence", "affected_claims_actions", "retry_preconditions", "prohibited_retry", "repair_proposal", "repair_event_id", "propagation_target_ids", "recurrence_signature_id", "supersedes_event_id", "closure_status", "unresolved_residue", "claim_ceiling_impact", "environment_origin", "overwrites_event", "previous_event_digest", "event_digest"],
+      "properties": {
+        "event_id": {"type": "string", "minLength": 1},
+        "sequence": {"type": "integer", "minimum": 1},
+        "event_type": {"enum": ["FAILURE", "REPAIR", "RETRACTION", "ROLLBACK", "CLOSURE"]},
+        "failure_class": {"enum": ["DATA", "MODEL", "MECHANISM", "SCOPE", "AUTHORITY", "EXECUTION", "RIGHTS", "NON_IDENTIFIABLE", "ENVIRONMENT"]},
+        "source_binding_id": {"type": "string", "minLength": 1},
+        "originating_task": {"type": "string", "minLength": 1},
+        "originating_artifact": {"type": "string", "minLength": 1},
+        "originating_exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "observed_symptom": {"type": "string", "minLength": 1},
+        "causal_status": {"enum": ["UNKNOWN", "CANDIDATE", "NOT_ESTABLISHED"]},
+        "causal_claim": {"type": "string"},
+        "negative_evidence": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "affected_claims_actions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "retry_preconditions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "prohibited_retry": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "repair_proposal": {"type": ["string", "null"]},
+        "repair_event_id": {"type": ["string", "null"]},
+        "propagation_target_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "recurrence_signature_id": {"type": "string", "minLength": 1},
+        "supersedes_event_id": {"type": ["string", "null"]},
+        "closure_status": {"enum": ["OPEN", "REPAIRED_WITH_RESIDUE", "CLOSED", "SUPERSEDED"]},
+        "unresolved_residue": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "claim_ceiling_impact": {"enum": ["HOLD", "DOWNGRADE", "RETRACT"]},
+        "environment_origin": {"type": "boolean"},
+        "overwrites_event": {"type": "boolean"},
+        "previous_event_digest": {"type": "string"},
+        "event_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    },
+    "recurrence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["signature_id", "signature_digest", "event_ids", "repeat_policy"],
+      "properties": {
+        "signature_id": {"type": "string", "minLength": 1},
+        "signature_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "event_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "repeat_policy": {"enum": ["BLOCK_UNCHANGED_RETRY", "ALLOW_AFTER_PRECONDITION", "ESCALATE"]}
+      }
+    },
+    "propagation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["target_id", "event_ids", "target_artifact", "plan_effect", "authorized", "applied", "verification_digest"],
+      "properties": {
+        "target_id": {"type": "string", "minLength": 1},
+        "event_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "target_artifact": {"type": "string", "minLength": 1},
+        "plan_effect": {"enum": ["SEARCH", "PREDICT", "ANALOGY_AUDIT", "INTERVENE", "ESCALATE", "DEFER", "CLAIM_CEILING_CHANGE"]},
+        "authorized": {"type": "boolean"},
+        "applied": {"type": "boolean"},
+        "verification_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    }
+  }
+}
