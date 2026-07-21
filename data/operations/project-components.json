@@ -2531,8 +2531,71 @@
         "data/coaching/pilot-q44-i1.json",
         "data/coaching/fixtures/"
       ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "schemas/context_protocol/open_scientific_context_protocol-contract.schema.json",
+      "component_id": "open_scientific_context_protocol_contract",
+      "component_type": "governance_constraint",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 typed evidence-bound contract. A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions.",
+      "label": "Open Scientific Context Protocol 合同",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "schemas/context_protocol/open_scientific_context_protocol-contract.schema.json",
+        "docs/context_protocol/"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/context_protocol/validate_open_scientific_context_protocol_gate.py",
+      "component_id": "open_scientific_context_protocol_gate_validator",
+      "component_type": "governance_constraint",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 fail-closed real CLI enforcing evidence binding, exact parent, 11 task rules, candidate ceiling and no external action.",
+      "label": "Open Scientific Context Protocol 门禁",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/context_protocol/",
+        "tests/context_protocol/"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/context_protocol/pilot-scientific-context-protocol-i1.json",
+      "component_id": "open_scientific_context_protocol_pilot",
+      "component_type": "governance_constraint",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 self-authored bounded repository pilot covering LOCAL_MOCK_REQUEST and LOCAL_MOCK_RESPONSE; 24 fixtures drive the real CLI; no external action.",
+      "label": "Open Scientific Context Protocol 受控试点",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/context_protocol/pilot-scientific-context-protocol-i1.json",
+        "data/context_protocol/fixtures/"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.1.12"
+  "registry_version": "1.1.13"
 }

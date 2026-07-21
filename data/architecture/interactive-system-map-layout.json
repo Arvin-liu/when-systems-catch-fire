@@ -166,7 +166,10 @@
       "graded_intervention_escalation_pilot",
       "coaching_commitment_subcapability_contract",
       "coaching_commitment_subcapability_gate_validator",
-      "coaching_commitment_subcapability_pilot"
+      "coaching_commitment_subcapability_pilot",
+      "open_scientific_context_protocol_contract",
+      "open_scientific_context_protocol_gate_validator",
+      "open_scientific_context_protocol_pilot"
     ],
     "layers": [
       "l0",
