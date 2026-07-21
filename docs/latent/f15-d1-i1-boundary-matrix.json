@@ -1,0 +1,38 @@
+{
+  "task_id": "F15-D1-I1",
+  "parent_id": "Q41-I1",
+  "fields": [
+    "latent_system_candidate",
+    "cross_system_ancestor_graph",
+    "missing_system_search_plan",
+    "identifiability_gate",
+    "observational_signature",
+    "equivalent_decompositions",
+    "distinguishing_evidence_request",
+    "candidate_status",
+    "contradictions",
+    "unsupported_elements",
+    "claim_ceiling"
+  ],
+  "rules": [
+    "residual_not_entity",
+    "pattern_not_common_cause",
+    "equivalent_decompositions_preserved",
+    "distinguishing_evidence_required",
+    "non_identifiable_stays_unresolved",
+    "contradictions_preserved",
+    "unsupported_not_promoted",
+    "claim_ceiling_preserved"
+  ],
+  "record_types": [
+    "IDENTIFIABLE_CANDIDATE",
+    "NON_IDENTIFIABLE_EQUIVALENCE_SET"
+  ],
+  "nonclaims": [
+    "residual is not a latent entity",
+    "shared pattern is not a common cause",
+    "non-identifiable decomposition remains unresolved",
+    "no Q45+ numbering"
+  ],
+  "next_task": "D2-I1"
+}
