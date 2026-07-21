@@ -100,6 +100,11 @@
           "note": {"type": "string"}
         }
       }
+    },
+    "q38_case_retrieval_started": {
+      "type": "boolean",
+      "description": "MUST remain false in Q37. Q37 must not start Q38 case retrieval; setting true fails closed (Q38_START_FORBIDDEN).",
+      "default": false
     }
   },
   "$defs": {

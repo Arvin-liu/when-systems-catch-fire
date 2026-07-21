@@ -1,0 +1,139 @@
+{
+  "analogy_candidates": [
+    {
+      "analogy_id": "a10",
+      "source_domain": "spring",
+      "target_domain": "circuit",
+      "source_def": "elastic restoring",
+      "target_def": "capacitive restoring",
+      "proposer": "agent:kimi",
+      "q35_authority_ref": "g-q35-001",
+      "originating_q34_claim_ref": "c-q34-ana-001",
+      "purpose": "explanation",
+      "candidate_type": "MECHANISM_CANDIDATE",
+      "evidence_refs": [
+        "ext:paper-x"
+      ],
+      "provenance": "repo-internal replay",
+      "claim_ceiling": "candidate claims shared restoring-force mechanism; downgraded by audit",
+      "lifecycle": {
+        "status": "audited",
+        "history": [
+          "proposed",
+          "audited"
+        ]
+      },
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "mappings": [
+    {
+      "mapping_id": "m10",
+      "analogy_id": "a10",
+      "source_entities": [
+        "spring"
+      ],
+      "target_entities": [
+        "capacitor"
+      ],
+      "correspondence_pairs": [
+        {
+          "source": "spring",
+          "target": "capacitor",
+          "quality": "partial"
+        }
+      ],
+      "relation_preservation": "partial restoring-force analogy",
+      "directionality": "forward",
+      "cardinality": "1:1",
+      "cardinality_rationale": "single construct map",
+      "invariants": [
+        "linear restoring"
+      ],
+      "known_mismatches": [
+        "dissipation differs"
+      ],
+      "omitted_variables": [
+        "material"
+      ],
+      "hidden_premises": [
+        "mechanical vs electrical"
+      ],
+      "scale_time_context_differences": [
+        "scale differs"
+      ],
+      "representation_level": "mathematical",
+      "mapping_digest": "sha256:b691f27115877984614116a8af88da7b61e25162016c1ebd42d072ced5a79266"
+    }
+  ],
+  "mechanism_evidence": [
+    {
+      "evidence_id": "me10",
+      "analogy_id": "a10",
+      "source_domain_ref": "spring",
+      "target_domain_ref": "circuit",
+      "evidence_kind": "INDEPENDENT_MECHANISM_EVIDENCE",
+      "status": "BOUNDED_MECHANISM_EVIDENCE",
+      "prohibited_promotions": [
+        "universal law",
+        "real-world causal transport"
+      ],
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693",
+      "mechanism_evidence_ref": "ext:independent-study"
+    }
+  ],
+  "transportability_assessments": [],
+  "audit_decisions": [
+    {
+      "decision_id": "d10",
+      "analogy_id": "a10",
+      "classification": "STRUCTURAL_ANALOGY",
+      "mapping_consistency": "CONSISTENT",
+      "mechanism_evidence_sufficiency": "SUFFICIENT",
+      "transportability_status": "NOT_ASSESSED",
+      "counteranalogy_status": "ABSENT",
+      "q38_search_permission": "NOT_ALLOWED",
+      "allowed_use": "structural explanation only",
+      "forbidden_inference": "universal mechanism; real-world causal transport",
+      "downgraded_claim_ceiling": "structural analogy retained; mechanism claim downgraded, not proven",
+      "unresolved_issues": [],
+      "reviewer_verifier": "builder(Q37)",
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "q34_claims": [
+    {
+      "claim_id": "c-q34-ana-001",
+      "status": "committed_current",
+      "claim_ceiling": "documented entropy analogy; repository-internal only",
+      "allows_analogy_purpose": true,
+      "source_ref": "src:q34"
+    }
+  ],
+  "q35_grants": [
+    {
+      "grant_id": "g-q35-001",
+      "status": "active",
+      "grant_expires_at": "2099-01-01T00:00:00+00:00",
+      "scope": "explanation",
+      "grantee": "agent:kimi",
+      "granted_by": "user:zhiyuan",
+      "action_refs": [
+        "propose",
+        "audit"
+      ]
+    }
+  ],
+  "q33_rights": [
+    {
+      "material_id": "ext:paper-x",
+      "rights_status": "clear",
+      "note": "open access"
+    },
+    {
+      "material_id": "ext:independent-study",
+      "rights_status": "clear",
+      "note": "open access"
+    }
+  ]
+}

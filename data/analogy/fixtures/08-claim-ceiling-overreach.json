@@ -1,0 +1,138 @@
+{
+  "analogy_candidates": [
+    {
+      "analogy_id": "a08",
+      "source_domain": "pendulum",
+      "target_domain": "market",
+      "source_def": "oscillation",
+      "target_def": "price cycle",
+      "proposer": "agent:kimi",
+      "q35_authority_ref": "g-q35-001",
+      "originating_q34_claim_ref": "c-q34-ana-001",
+      "purpose": "explanation",
+      "candidate_type": "STRUCTURAL_ANALOGY",
+      "evidence_refs": [
+        "ext:paper-x"
+      ],
+      "provenance": "repo-internal replay",
+      "claim_ceiling": "establishes a universal causal regularity across domains",
+      "lifecycle": {
+        "status": "audited",
+        "history": [
+          "proposed",
+          "audited"
+        ]
+      },
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "mappings": [
+    {
+      "mapping_id": "m08",
+      "analogy_id": "a08",
+      "source_entities": [
+        "pendulum"
+      ],
+      "target_entities": [
+        "market"
+      ],
+      "correspondence_pairs": [
+        {
+          "source": "pendulum",
+          "target": "market",
+          "quality": "approximate"
+        }
+      ],
+      "relation_preservation": "approximate oscillatory analogy",
+      "directionality": "forward",
+      "cardinality": "1:1",
+      "cardinality_rationale": "single construct map",
+      "invariants": [
+        "periodic return"
+      ],
+      "known_mismatches": [
+        "agent rationality"
+      ],
+      "omitted_variables": [
+        "feedback"
+      ],
+      "hidden_premises": [
+        "physical vs social"
+      ],
+      "scale_time_context_differences": [
+        "scale differs"
+      ],
+      "representation_level": "mathematical",
+      "mapping_digest": "sha256:68c7cb8e9f0f4e2b4c83c5c7fcd1fc4df86aa0fbefa5d5d0c16e25495bcbd900"
+    }
+  ],
+  "mechanism_evidence": [
+    {
+      "evidence_id": "me08",
+      "analogy_id": "a08",
+      "source_domain_ref": "pendulum",
+      "target_domain_ref": "market",
+      "evidence_kind": "SHARED_MATHEMATICAL_FORM",
+      "status": "CANDIDATE",
+      "prohibited_promotions": [
+        "universal law",
+        "real-world causal transport"
+      ],
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "transportability_assessments": [],
+  "audit_decisions": [
+    {
+      "decision_id": "d08",
+      "analogy_id": "a08",
+      "classification": "STRUCTURAL_ANALOGY",
+      "mapping_consistency": "CONSISTENT",
+      "mechanism_evidence_sufficiency": "NONE",
+      "transportability_status": "NOT_ASSESSED",
+      "counteranalogy_status": "ABSENT",
+      "q38_search_permission": "NOT_ALLOWED",
+      "allowed_use": "explanation only",
+      "forbidden_inference": "mechanism identity; universal law",
+      "downgraded_claim_ceiling": "local structural similarity; not a proven shared mechanism",
+      "unresolved_issues": [],
+      "reviewer_verifier": "builder(Q37)",
+      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+    }
+  ],
+  "q34_claims": [
+    {
+      "claim_id": "c-q34-ana-001",
+      "status": "committed_current",
+      "claim_ceiling": "documented entropy analogy; repository-internal only",
+      "allows_analogy_purpose": true,
+      "source_ref": "src:q34"
+    }
+  ],
+  "q35_grants": [
+    {
+      "grant_id": "g-q35-001",
+      "status": "active",
+      "grant_expires_at": "2099-01-01T00:00:00+00:00",
+      "scope": "explanation",
+      "grantee": "agent:kimi",
+      "granted_by": "user:zhiyuan",
+      "action_refs": [
+        "propose",
+        "audit"
+      ]
+    }
+  ],
+  "q33_rights": [
+    {
+      "material_id": "ext:paper-x",
+      "rights_status": "clear",
+      "note": "open access"
+    },
+    {
+      "material_id": "ext:independent-study",
+      "rights_status": "clear",
+      "note": "open access"
+    }
+  ]
+}
