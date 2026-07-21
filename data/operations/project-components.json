@@ -1735,6 +1735,100 @@
         "data/intervention/fixtures/22-legal-abort-abandon.json",
         "data/intervention/fixtures/23-controlled-pilot-replay.json"
       ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "schemas/analogy/analogy-audit-contract.schema.json",
+      "component_id": "analogy_audit_contract",
+      "component_type": "governance_constraint",
+      "description": "Q37-I1 typed analogy-audit & transportability contract: analogy candidates (SURFACE_SIMILARITY / METAPHOR_ONLY / STRUCTURAL_ANALOGY / MECHANISM_CANDIDATE / TRANSPORTABILITY_CANDIDATE / COUNTERANALOGY), explicit mappings (entities, correspondence, cardinality, directionality, invariants, mismatches, omitted variables, hidden premises, scale/time/context differences, digest), mechanism evidence (distinct from shared form), transportability assessments (overlap, invariances, shifts, boundary, falsifier, uncertainty), and audit decisions with claim ceiling; fail-closed against metaphor/local-isomorphism/selective-correspondence/unaudited-structural-map/Q36-residual upgraded to mechanism identity, undeclared shift, residual-as-cause, mechanism upgrade, transportability without overlap/invariance/boundary/falsifier, suppressed counteranalogy, Q14 uncommitted claim, Q35 authority gap, Q33 rights bypass, Q38 premature start, claim-ceiling overreach. Does NOT prove shared mechanism, real-world transportability or universal law; does NOT add L7/truth layer; does NOT materialize F15/D1/D2.",
+      "label": "类比审计与可运输性 合同",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q37-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "schemas/analogy/analogy-audit-contract.schema.json",
+        "docs/analogy/q37-i1-architecture-decision.md",
+        "docs/analogy/q37-legacy-lab-salvage-matrix.json",
+        "docs/analogy/q37-interfaces.md"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/analogy/validate_analogy_audit_gate.py",
+      "component_id": "analogy_audit_gate_validator",
+      "component_type": "governance_constraint",
+      "description": "Q37-I1 fail-closed analogy-audit & transportability gate/CLI: blocks metaphor/local-isomorphism/selective-correspondence/unaudited-structural-map/Q36-residual upgraded to mechanism identity or universal law, undeclared scale/time/context or transportability shift, mechanism evidence insufficient/circular, residual-as-cause, transportability missing overlap/invariance/boundary/falsifier, suppressed counteranalogy/negative evidence, Q14 uncommitted claim, Q35 authority gap/expiry/scope-mismatch, Q33 rights bypass, Q38 premature start, claim-ceiling overreach, semantic inconsistency. Deterministic exit codes 0-21.",
+      "label": "类比审计与可运输性 门禁",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q37-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/analogy/validate_analogy_audit_gate.py",
+        "tests/analogy/test_analogy_audit_gate.py"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/analogy/pilot-real-repo-analogy-audit.json",
+      "component_id": "analogy_audit_pilot",
+      "component_type": "governance_constraint",
+      "description": "Q37-I1 real-repo pilot: deterministic repo-local replay of an analogy bundle against the real Q34 committed claim (fix.analogy_as_mechanism from data/discovery/fixtures/05-analogy-as-mechanism.json), asserting the fail-closed gate passes (exit 0) and that Q38 case retrieval remains gated (q38_search_permission NOT_ALLOWED / ALLOWED_AS_RESTRICTED_SEED only). Plus 30 attack/positive fixtures. No Main mutation, no Q38 case retrieval, no external real-world system access or control.",
+      "label": "类比审计与可运输性 受控试点",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q37-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/analogy/pilot-real-repo-analogy-audit.json",
+        "data/analogy/fixtures/01-structural-analogy-pass.json",
+        "data/analogy/fixtures/02-surface-similarity-mechanism-upgrade.json",
+        "data/analogy/fixtures/03-cardinality-mismatch.json",
+        "data/analogy/fixtures/04-directionality-none.json",
+        "data/analogy/fixtures/05-negative-evidence-suppressed.json",
+        "data/analogy/fixtures/06-transportability-candidate-pass.json",
+        "data/analogy/fixtures/07-mechanism-evidence-insufficient.json",
+        "data/analogy/fixtures/08-claim-ceiling-overreach.json",
+        "data/analogy/fixtures/09-counteranalogy-preserved-pass.json",
+        "data/analogy/fixtures/10-mechanism-downgrade-pass.json",
+        "data/analogy/fixtures/11-correspondence-dangling-ref.json",
+        "data/analogy/fixtures/12-stale-exact-head.json",
+        "data/analogy/fixtures/13-q36int-upgraded-to-universal.json",
+        "data/analogy/fixtures/14-scale-shift-undeclared.json",
+        "data/analogy/fixtures/15-transport-concept-shift-undeclared.json",
+        "data/analogy/fixtures/16-transport-regime-shift-undeclared.json",
+        "data/analogy/fixtures/17-mechanism-evidence-circular.json",
+        "data/analogy/fixtures/18-residual-as-common-cause.json",
+        "data/analogy/fixtures/19-transportability-incomplete.json",
+        "data/analogy/fixtures/20-transport-covariate-shift-undeclared.json",
+        "data/analogy/fixtures/21-q34-claim-not-committed.json",
+        "data/analogy/fixtures/22-q35-scope-mismatch.json",
+        "data/analogy/fixtures/23-q33-rights-bypass.json",
+        "data/analogy/fixtures/24-real-repo-pilot-q34-analogy-as-mechanism.json",
+        "data/analogy/fixtures/25-domain-construct-swap.json",
+        "data/analogy/fixtures/26-relation-preservation-overclaim.json",
+        "data/analogy/fixtures/27-counteranalogy-suppressed.json",
+        "data/analogy/fixtures/28-q38-start-forbidden.json",
+        "data/analogy/fixtures/29-negative-audit-deleted.json",
+        "data/analogy/fixtures/30-semantic-consistency-mismatch.json"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
