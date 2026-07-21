@@ -1,0 +1,420 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "121Q38-I1",
+  "audited_search_seed": {
+    "seed_id": "q37.seed.analogy-audit",
+    "q37_candidate_ref": "analogy.q34-commitment-boundary",
+    "q37_decision_ref": "decision.q37-restricted-seed",
+    "q37_exact_head": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
+    "q37_lifecycle": "audited",
+    "q38_search_permission": "ALLOWED_AS_RESTRICTED_SEED",
+    "q37_claim_ceiling": "candidate_only: bounded structural analogy and repository audit; no mechanism or universal causal proof",
+    "purpose": "search_seed",
+    "seed_digest": "sha256:b7ecfbe101500a0576297ed75da28036c561eadedb106ed08e3be4cf86715c5d"
+  },
+  "search_plan": {
+    "plan_id": "q38.plan.repository-pilot",
+    "question": "What repository cases support, challenge or bound the Q37 restricted analogy seed?",
+    "scope": "Q34-Q37 frozen repository artifacts only",
+    "query_plan": [
+      {
+        "query_id": "q.support",
+        "target_kind": "SUPPORT",
+        "query": "find Q37 restricted-seed contract support",
+        "source_priority": "REPOSITORY_PRIMARY"
+      },
+      {
+        "query_id": "q.support",
+        "target_kind": "SUPPORT",
+        "query": "find Q37 restricted-seed contract support",
+        "source_priority": "REPOSITORY_PRIMARY"
+      },
+      {
+        "query_id": "q.support",
+        "target_kind": "SUPPORT",
+        "query": "find Q37 restricted-seed contract support",
+        "source_priority": "REPOSITORY_PRIMARY"
+      },
+      {
+        "query_id": "q.support",
+        "target_kind": "SUPPORT",
+        "query": "find Q37 restricted-seed contract support",
+        "source_priority": "REPOSITORY_PRIMARY"
+      },
+      {
+        "query_id": "q.support",
+        "target_kind": "SUPPORT",
+        "query": "find Q37 restricted-seed contract support",
+        "source_priority": "REPOSITORY_PRIMARY"
+      }
+    ],
+    "inclusion_criteria": [
+      "traceable and relevant to the frozen seed"
+    ],
+    "exclusion_criteria": [
+      "untraceable, duplicate-only, rights-incompatible or outside scope"
+    ],
+    "required_evidence_kinds": [
+      "SUPPORT",
+      "COUNTEREXAMPLE",
+      "BOUNDARY_CASE",
+      "NEGATIVE_RESULT",
+      "FAILED_RETRIEVAL"
+    ],
+    "duplicate_source_family_policy": "COUNT_FAMILY_ONCE_PRESERVE_ALL_RECORDS",
+    "selection_policy": "NO_QUANTITY_VOTE_PRESERVE_NEGATIVE_AND_FAILED",
+    "stop_condition": "Stop after all five evidence kinds are recorded from traceable repository families, every negative or failed item is exported to Q39, duplicate families are collapsed, and remaining external-validity gaps are explicit.",
+    "stop_condition_digest": "sha256:0e207f9ce5a223a63b4a2ef7c3bac692df11fc6c63f8efd612e16348cbcaa79a",
+    "issued_by": "codex-full-build-single-writer",
+    "q35_authority_ref": "q35.repository-builder",
+    "issued_at": "2026-07-21T17:31:00Z",
+    "exact_head": "c97959d56a41126fbdc1e69ce8fdbc38a43956c0"
+  },
+  "evidence_items": [
+    {
+      "evidence_id": "ev.support.q37",
+      "kind": "SUPPORT",
+      "source_id": "source.ev.support.q37",
+      "source_family": "repo:q37-contract",
+      "source_locator": "docs/analogy/q37-i1-architecture-decision.md",
+      "provenance": "bounded repository replay at the Q37 frozen checkpoint; no external factual promotion",
+      "source_digest": "sha256:de102792af86746286d0260d3b5256a8a41131d10259b3c8e6f710ca0fe99fe0",
+      "accessed_at": "2026-07-21T17:31:00Z",
+      "rights_status": "CLEAR",
+      "publication_mode": "METADATA_AND_SUMMARY",
+      "evidence_grade": "A_PRIMARY",
+      "freshness": {
+        "time_sensitive": false,
+        "as_of": "2026-07-21T17:31:00Z",
+        "status": "NOT_APPLICABLE",
+        "valid_until": null
+      },
+      "representativeness": {
+        "domain": "repository_governance",
+        "population": "Q34-Q37 frozen candidate artifacts",
+        "status": "BOUNDARY_ONLY",
+        "limits": [
+          "repository replay only",
+          "not representative of external domains"
+        ]
+      },
+      "selection_status": "INCLUDED",
+      "selection_criterion_ref": "include.traceable-relevant",
+      "selection_reason": "traceable item directly exercises the bounded seed and preserves its relation to the claim ceiling",
+      "summary": "Q37 explicitly emits a restricted search seed and forbids mechanism promotion.",
+      "supports_claim_refs": [
+        "q37.restricted_seed"
+      ],
+      "challenges_claim_refs": [],
+      "duplicate_of": null,
+      "q39_export_required": false,
+      "exact_head": "c97959d56a41126fbdc1e69ce8fdbc38a43956c0"
+    },
+    {
+      "evidence_id": "ev.counter.q34",
+      "kind": "COUNTEREXAMPLE",
+      "source_id": "source.ev.counter.q34",
+      "source_family": "repo:q34-analogy-attack",
+      "source_locator": "data/discovery/fixtures/05-analogy-as-mechanism.json",
+      "provenance": "bounded repository replay at the Q37 frozen checkpoint; no external factual promotion",
+      "source_digest": "sha256:31ab80904c921f6454b660bd24045ae77e662b0585e96e4d2e31a88820bb384e",
+      "accessed_at": "2026-07-21T17:31:00Z",
+      "rights_status": "CLEAR",
+      "publication_mode": "METADATA_AND_SUMMARY",
+      "evidence_grade": "A_PRIMARY",
+      "freshness": {
+        "time_sensitive": false,
+        "as_of": "2026-07-21T17:31:00Z",
+        "status": "NOT_APPLICABLE",
+        "valid_until": null
+      },
+      "representativeness": {
+        "domain": "repository_governance",
+        "population": "Q34-Q37 frozen candidate artifacts",
+        "status": "BOUNDARY_ONLY",
+        "limits": [
+          "repository replay only",
+          "not representative of external domains"
+        ]
+      },
+      "selection_status": "INCLUDED",
+      "selection_criterion_ref": "include.traceable-relevant",
+      "selection_reason": "traceable item directly exercises the bounded seed and preserves its relation to the claim ceiling",
+      "summary": "A structurally tempting analogy fails when treated as a mechanism.",
+      "supports_claim_refs": [],
+      "challenges_claim_refs": [
+        "q37.restricted_seed"
+      ],
+      "duplicate_of": null,
+      "q39_export_required": true,
+      "exact_head": "c97959d56a41126fbdc1e69ce8fdbc38a43956c0"
+    },
+    {
+      "evidence_id": "ev.boundary.q37",
+      "kind": "BOUNDARY_CASE",
+      "source_id": "source.ev.boundary.q37",
+      "source_family": "repo:q37-counteranalogy",
+      "source_locator": "data/analogy/fixtures/09-counteranalogy-preserved-pass.json",
+      "provenance": "bounded repository replay at the Q37 frozen checkpoint; no external factual promotion",
+      "source_digest": "sha256:e345fde779b45cd074408821833943f7857df1cd3332a5b8940a6dc3e033b17f",
+      "accessed_at": "2026-07-21T17:31:00Z",
+      "rights_status": "CLEAR",
+      "publication_mode": "METADATA_AND_SUMMARY",
+      "evidence_grade": "A_PRIMARY",
+      "freshness": {
+        "time_sensitive": false,
+        "as_of": "2026-07-21T17:31:00Z",
+        "status": "NOT_APPLICABLE",
+        "valid_until": null
+      },
+      "representativeness": {
+        "domain": "repository_governance",
+        "population": "Q34-Q37 frozen candidate artifacts",
+        "status": "BOUNDARY_ONLY",
+        "limits": [
+          "repository replay only",
+          "not representative of external domains"
+        ]
+      },
+      "selection_status": "INCLUDED",
+      "selection_criterion_ref": "include.traceable-relevant",
+      "selection_reason": "traceable item directly exercises the bounded seed and preserves its relation to the claim ceiling",
+      "summary": "A preserved counteranalogy is admissible only as a bounded audit result.",
+      "supports_claim_refs": [],
+      "challenges_claim_refs": [],
+      "duplicate_of": null,
+      "q39_export_required": false,
+      "exact_head": "c97959d56a41126fbdc1e69ce8fdbc38a43956c0"
+    },
+    {
+      "evidence_id": "ev.negative.q37",
+      "kind": "NEGATIVE_RESULT",
+      "source_id": "source.ev.negative.q37",
+      "source_family": "repo:q37-mechanism-insufficient",
+      "source_locator": "data/analogy/fixtures/07-mechanism-evidence-insufficient.json",
+      "provenance": "bounded repository replay at the Q37 frozen checkpoint; no external factual promotion",
+      "source_digest": "sha256:6f8bcedb6f8dc8a896b57f5701bd8eb8664d8f71c661cfab83e881a74bf112b2",
+      "accessed_at": "2026-07-21T17:31:00Z",
+      "rights_status": "CLEAR",
+      "publication_mode": "METADATA_AND_SUMMARY",
+      "evidence_grade": "A_PRIMARY",
+      "freshness": {
+        "time_sensitive": false,
+        "as_of": "2026-07-21T17:31:00Z",
+        "status": "NOT_APPLICABLE",
+        "valid_until": null
+      },
+      "representativeness": {
+        "domain": "repository_governance",
+        "population": "Q34-Q37 frozen candidate artifacts",
+        "status": "BOUNDARY_ONLY",
+        "limits": [
+          "repository replay only",
+          "not representative of external domains"
+        ]
+      },
+      "selection_status": "INCLUDED",
+      "selection_criterion_ref": "include.traceable-relevant",
+      "selection_reason": "traceable item directly exercises the bounded seed and preserves its relation to the claim ceiling",
+      "summary": "Independent mechanism evidence is insufficient despite structural mapping.",
+      "supports_claim_refs": [],
+      "challenges_claim_refs": [
+        "q37.restricted_seed"
+      ],
+      "duplicate_of": null,
+      "q39_export_required": true,
+      "exact_head": "c97959d56a41126fbdc1e69ce8fdbc38a43956c0"
+    },
+    {
+      "evidence_id": "ev.failed.external",
+      "kind": "FAILED_RETRIEVAL",
+      "source_id": "source.ev.failed.external",
+      "source_family": "attempt:external-unneeded",
+      "source_locator": "retrieval-attempt://external-search-not-required-for-repository-pilot",
+      "provenance": "bounded repository replay at the Q37 frozen checkpoint; no external factual promotion",
+      "source_digest": "sha256:97cab93ebee8ce9492a594909111d2bae58c26d43aeaec92c2f050626455a23b",
+      "accessed_at": "2026-07-21T17:31:00Z",
+      "rights_status": "CLEAR",
+      "publication_mode": "METADATA_AND_SUMMARY",
+      "evidence_grade": "FAILED",
+      "freshness": {
+        "time_sensitive": false,
+        "as_of": "2026-07-21T17:31:00Z",
+        "status": "NOT_APPLICABLE",
+        "valid_until": null
+      },
+      "representativeness": {
+        "domain": "repository_governance",
+        "population": "Q34-Q37 frozen candidate artifacts",
+        "status": "BOUNDARY_ONLY",
+        "limits": [
+          "repository replay only",
+          "not representative of external domains"
+        ]
+      },
+      "selection_status": "FAILED",
+      "selection_criterion_ref": "include.traceable-relevant",
+      "selection_reason": "traceable item directly exercises the bounded seed and preserves its relation to the claim ceiling",
+      "summary": "No external retrieval was performed because the bounded repository pilot already covers the contract and no external fact is claimed.",
+      "supports_claim_refs": [],
+      "challenges_claim_refs": [
+        "q37.restricted_seed"
+      ],
+      "duplicate_of": null,
+      "q39_export_required": true,
+      "exact_head": "c97959d56a41126fbdc1e69ce8fdbc38a43956c0"
+    }
+  ],
+  "selection_log": [
+    {
+      "log_id": "log.1",
+      "evidence_id": "ev.support.q37",
+      "action": "INCLUDE",
+      "criterion_ref": "include.traceable-relevant",
+      "reason": "traceable item directly exercises the bounded seed and preserves its relation to the claim ceiling",
+      "recorded_at": "2026-07-21T17:31:00Z",
+      "append_only": true
+    },
+    {
+      "log_id": "log.2",
+      "evidence_id": "ev.counter.q34",
+      "action": "INCLUDE",
+      "criterion_ref": "include.traceable-relevant",
+      "reason": "traceable item directly exercises the bounded seed and preserves its relation to the claim ceiling",
+      "recorded_at": "2026-07-21T17:31:00Z",
+      "append_only": true
+    },
+    {
+      "log_id": "log.3",
+      "evidence_id": "ev.boundary.q37",
+      "action": "INCLUDE",
+      "criterion_ref": "include.traceable-relevant",
+      "reason": "traceable item directly exercises the bounded seed and preserves its relation to the claim ceiling",
+      "recorded_at": "2026-07-21T17:31:00Z",
+      "append_only": true
+    },
+    {
+      "log_id": "log.4",
+      "evidence_id": "ev.negative.q37",
+      "action": "INCLUDE",
+      "criterion_ref": "include.traceable-relevant",
+      "reason": "traceable item directly exercises the bounded seed and preserves its relation to the claim ceiling",
+      "recorded_at": "2026-07-21T17:31:00Z",
+      "append_only": true
+    },
+    {
+      "log_id": "log.5",
+      "evidence_id": "ev.failed.external",
+      "action": "RECORD_FAILED_RETRIEVAL",
+      "criterion_ref": "include.traceable-relevant",
+      "reason": "traceable item directly exercises the bounded seed and preserves its relation to the claim ceiling",
+      "recorded_at": "2026-07-21T17:31:00Z",
+      "append_only": true
+    }
+  ],
+  "stop_assessment": {
+    "original_stop_condition": "Stop after all five evidence kinds are recorded from traceable repository families, every negative or failed item is exported to Q39, duplicate families are collapsed, and remaining external-validity gaps are explicit.",
+    "original_stop_condition_digest": "sha256:0e207f9ce5a223a63b4a2ef7c3bac692df11fc6c63f8efd612e16348cbcaa79a",
+    "status": "BOUND_REACHED_WITH_GAPS",
+    "category_coverage": [
+      "SUPPORT",
+      "COUNTEREXAMPLE",
+      "BOUNDARY_CASE",
+      "NEGATIVE_RESULT",
+      "FAILED_RETRIEVAL"
+    ],
+    "independent_source_family_count": 4,
+    "stopped_at": "2026-07-21T17:31:00Z",
+    "post_hoc_rewrite": false,
+    "saturation_rationale": "All contract categories are represented; the I1 repository pilot stops while preserving the explicit external-validity gap."
+  },
+  "unresolved_evidence_gaps": [
+    {
+      "gap_id": "gap.external-validity",
+      "description": "No external population evidence was required or collected for this repository-only pilot.",
+      "impact": "No real-world generalization is permitted.",
+      "next_search": "Use official or primary sources only if a later scoped claim requires them.",
+      "claim_ceiling_effect": "HOLD"
+    }
+  ],
+  "q39_failure_exports": [
+    {
+      "export_id": "q39.export.1",
+      "evidence_id": "ev.counter.q34",
+      "failure_class": "MECHANISM",
+      "originating_task": "121Q38-I1",
+      "originating_artifact": "data/discovery/fixtures/05-analogy-as-mechanism.json",
+      "originating_exact_head": "c97959d56a41126fbdc1e69ce8fdbc38a43956c0",
+      "observed_symptom": "A structurally tempting analogy fails when treated as a mechanism.",
+      "negative_evidence_refs": [
+        "ev.counter.q34"
+      ],
+      "affected_claims": [
+        "q37.restricted_seed"
+      ],
+      "retry_preconditions": [
+        "new independent evidence or changed retrieval scope"
+      ],
+      "prohibited_retry": [
+        "repeat unchanged search and discard the negative result"
+      ],
+      "claim_ceiling_impact": "HOLD"
+    },
+    {
+      "export_id": "q39.export.2",
+      "evidence_id": "ev.negative.q37",
+      "failure_class": "MECHANISM",
+      "originating_task": "121Q38-I1",
+      "originating_artifact": "data/analogy/fixtures/07-mechanism-evidence-insufficient.json",
+      "originating_exact_head": "c97959d56a41126fbdc1e69ce8fdbc38a43956c0",
+      "observed_symptom": "Independent mechanism evidence is insufficient despite structural mapping.",
+      "negative_evidence_refs": [
+        "ev.negative.q37"
+      ],
+      "affected_claims": [
+        "q37.restricted_seed"
+      ],
+      "retry_preconditions": [
+        "new independent evidence or changed retrieval scope"
+      ],
+      "prohibited_retry": [
+        "repeat unchanged search and discard the negative result"
+      ],
+      "claim_ceiling_impact": "HOLD"
+    },
+    {
+      "export_id": "q39.export.3",
+      "evidence_id": "ev.failed.external",
+      "failure_class": "RETRIEVAL",
+      "originating_task": "121Q38-I1",
+      "originating_artifact": "retrieval-attempt://external-search-not-required-for-repository-pilot",
+      "originating_exact_head": "c97959d56a41126fbdc1e69ce8fdbc38a43956c0",
+      "observed_symptom": "No external retrieval was performed because the bounded repository pilot already covers the contract and no external fact is claimed.",
+      "negative_evidence_refs": [
+        "ev.failed.external"
+      ],
+      "affected_claims": [
+        "q37.restricted_seed"
+      ],
+      "retry_preconditions": [
+        "new independent evidence or changed retrieval scope"
+      ],
+      "prohibited_retry": [
+        "repeat unchanged search and discard the negative result"
+      ],
+      "claim_ceiling_impact": "HOLD"
+    }
+  ],
+  "conclusion": {
+    "verdict": "BOUND_REACHED_WITH_GAPS",
+    "statement": "The bounded repository retrieval preserves support, counterexample, boundary, negative and failed-retrieval records without voting by count or establishing a mechanism.",
+    "claim_ceiling": "candidate_only: deterministic repository retrieval governance; no mechanism or causal proof",
+    "q37_ceiling_preserved": true,
+    "quantity_vote_used": false,
+    "mechanism_proven": false,
+    "negative_results_preserved": true,
+    "unresolved_gap_refs": [
+      "gap.external-validity"
+    ]
+  }
+}

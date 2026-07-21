@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/retrieval/evidence-retrieval-contract.schema.json",
+  "title": "121Q38-I1 Audited Evidence Retrieval Contract",
+  "description": "A bounded repository-local retrieval bundle seeded only by a Q37 audited restricted seed. It preserves support, counterexample, boundary, negative and failed-retrieval evidence with rights, provenance, freshness, representativeness, selection history, stop integrity and a non-inflating claim ceiling. It does not establish mechanism identity, causal proof or universal truth.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "task_id", "audited_search_seed", "search_plan", "evidence_items", "selection_log", "stop_assessment", "unresolved_evidence_gaps", "q39_failure_exports", "conclusion"],
+  "properties": {
+    "contract_version": {"const": "1.0.0"},
+    "task_id": {"const": "121Q38-I1"},
+    "audited_search_seed": {"$ref": "#/$defs/seed"},
+    "search_plan": {"$ref": "#/$defs/plan"},
+    "evidence_items": {"type": "array", "minItems": 5, "items": {"$ref": "#/$defs/evidence"}},
+    "selection_log": {"type": "array", "minItems": 5, "items": {"$ref": "#/$defs/selection"}},
+    "stop_assessment": {"$ref": "#/$defs/stop"},
+    "unresolved_evidence_gaps": {"type": "array", "items": {"$ref": "#/$defs/gap"}},
+    "q39_failure_exports": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/failure_export"}},
+    "conclusion": {"$ref": "#/$defs/conclusion"}
+  },
+  "$defs": {
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "nonempty": {"type": "string", "minLength": 1},
+    "seed": {
+      "type": "object", "additionalProperties": false,
+      "required": ["seed_id", "q37_candidate_ref", "q37_decision_ref", "q37_exact_head", "q37_lifecycle", "q38_search_permission", "q37_claim_ceiling", "purpose", "seed_digest"],
+      "properties": {
+        "seed_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "q37_candidate_ref": {"$ref": "#/$defs/nonempty"},
+        "q37_decision_ref": {"$ref": "#/$defs/nonempty"},
+        "q37_exact_head": {"$ref": "#/$defs/sha"},
+        "q37_lifecycle": {"const": "audited"},
+        "q38_search_permission": {"const": "ALLOWED_AS_RESTRICTED_SEED"},
+        "q37_claim_ceiling": {"$ref": "#/$defs/nonempty"},
+        "purpose": {"const": "search_seed"},
+        "seed_digest": {"$ref": "#/$defs/digest"}
+      }
+    },
+    "plan": {
+      "type": "object", "additionalProperties": false,
+      "required": ["plan_id", "question", "scope", "query_plan", "inclusion_criteria", "exclusion_criteria", "required_evidence_kinds", "duplicate_source_family_policy", "selection_policy", "stop_condition", "stop_condition_digest", "issued_by", "q35_authority_ref", "issued_at", "exact_head"],
+      "properties": {
+        "plan_id": {"$ref": "#/$defs/nonempty"},
+        "question": {"$ref": "#/$defs/nonempty"},
+        "scope": {"$ref": "#/$defs/nonempty"},
+        "query_plan": {"type": "array", "minItems": 5, "items": {"type": "object", "additionalProperties": false, "required": ["query_id", "target_kind", "query", "source_priority"], "properties": {"query_id": {"$ref": "#/$defs/nonempty"}, "target_kind": {"$ref": "#/$defs/kind"}, "query": {"$ref": "#/$defs/nonempty"}, "source_priority": {"enum": ["REPOSITORY_PRIMARY", "OFFICIAL_PRIMARY", "AUTHORITATIVE_SECONDARY", "CITATION_ONLY"]}}}},
+        "inclusion_criteria": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonempty"}},
+        "exclusion_criteria": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonempty"}},
+        "required_evidence_kinds": {"type": "array", "minItems": 5, "uniqueItems": true, "items": {"$ref": "#/$defs/kind"}},
+        "duplicate_source_family_policy": {"const": "COUNT_FAMILY_ONCE_PRESERVE_ALL_RECORDS"},
+        "selection_policy": {"const": "NO_QUANTITY_VOTE_PRESERVE_NEGATIVE_AND_FAILED"},
+        "stop_condition": {"$ref": "#/$defs/nonempty"},
+        "stop_condition_digest": {"$ref": "#/$defs/digest"},
+        "issued_by": {"$ref": "#/$defs/nonempty"},
+        "q35_authority_ref": {"$ref": "#/$defs/nonempty"},
+        "issued_at": {"type": "string", "format": "date-time"},
+        "exact_head": {"$ref": "#/$defs/sha"}
+      }
+    },
+    "kind": {"enum": ["SUPPORT", "COUNTEREXAMPLE", "BOUNDARY_CASE", "NEGATIVE_RESULT", "FAILED_RETRIEVAL"]},
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evidence_id", "kind", "source_id", "source_family", "source_locator", "provenance", "source_digest", "accessed_at", "rights_status", "publication_mode", "evidence_grade", "freshness", "representativeness", "selection_status", "selection_criterion_ref", "selection_reason", "summary", "supports_claim_refs", "challenges_claim_refs", "duplicate_of", "q39_export_required", "exact_head"],
+      "properties": {
+        "evidence_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "kind": {"$ref": "#/$defs/kind"},
+        "source_id": {"$ref": "#/$defs/nonempty"},
+        "source_family": {"$ref": "#/$defs/nonempty"},
+        "source_locator": {"$ref": "#/$defs/nonempty"},
+        "provenance": {"$ref": "#/$defs/nonempty"},
+        "source_digest": {"$ref": "#/$defs/digest"},
+        "accessed_at": {"type": "string", "format": "date-time"},
+        "rights_status": {"enum": ["CLEAR", "CITATION_ONLY", "UNKNOWN", "PENDING", "REJECTED"]},
+        "publication_mode": {"enum": ["METADATA_AND_SUMMARY", "CITATION_ONLY", "NOT_PUBLISHABLE"]},
+        "evidence_grade": {"enum": ["A_PRIMARY", "B_AUTHORITATIVE", "C_CONTEXTUAL", "D_CANDIDATE", "FAILED"]},
+        "freshness": {"type": "object", "additionalProperties": false, "required": ["time_sensitive", "as_of", "status", "valid_until"], "properties": {"time_sensitive": {"type": "boolean"}, "as_of": {"type": "string", "format": "date-time"}, "status": {"enum": ["CURRENT_FOR_SCOPE", "HISTORICAL_ONLY", "STALE", "NOT_APPLICABLE"]}, "valid_until": {"type": ["string", "null"], "format": "date-time"}}},
+        "representativeness": {"type": "object", "additionalProperties": false, "required": ["domain", "population", "status", "limits"], "properties": {"domain": {"$ref": "#/$defs/nonempty"}, "population": {"$ref": "#/$defs/nonempty"}, "status": {"enum": ["REPRESENTATIVE_WITHIN_SCOPE", "BOUNDARY_ONLY", "NOT_REPRESENTATIVE", "UNKNOWN", "NOT_APPLICABLE"]}, "limits": {"type": "array", "items": {"type": "string"}}}},
+        "selection_status": {"enum": ["INCLUDED", "EXCLUDED", "FAILED"]},
+        "selection_criterion_ref": {"$ref": "#/$defs/nonempty"},
+        "selection_reason": {"$ref": "#/$defs/nonempty"},
+        "summary": {"$ref": "#/$defs/nonempty"},
+        "supports_claim_refs": {"type": "array", "items": {"type": "string"}},
+        "challenges_claim_refs": {"type": "array", "items": {"type": "string"}},
+        "duplicate_of": {"type": ["string", "null"]},
+        "q39_export_required": {"type": "boolean"},
+        "exact_head": {"$ref": "#/$defs/sha"}
+      }
+    },
+    "selection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["log_id", "evidence_id", "action", "criterion_ref", "reason", "recorded_at", "append_only"],
+      "properties": {"log_id": {"$ref": "#/$defs/nonempty"}, "evidence_id": {"$ref": "#/$defs/nonempty"}, "action": {"enum": ["INCLUDE", "EXCLUDE", "RECORD_FAILED_RETRIEVAL"]}, "criterion_ref": {"$ref": "#/$defs/nonempty"}, "reason": {"$ref": "#/$defs/nonempty"}, "recorded_at": {"type": "string", "format": "date-time"}, "append_only": {"const": true}}
+    },
+    "stop": {
+      "type": "object", "additionalProperties": false,
+      "required": ["original_stop_condition", "original_stop_condition_digest", "status", "category_coverage", "independent_source_family_count", "stopped_at", "post_hoc_rewrite", "saturation_rationale"],
+      "properties": {"original_stop_condition": {"$ref": "#/$defs/nonempty"}, "original_stop_condition_digest": {"$ref": "#/$defs/digest"}, "status": {"enum": ["SATURATED_WITHIN_BOUND", "BOUND_REACHED_WITH_GAPS", "NOT_STOPPED"]}, "category_coverage": {"type": "array", "minItems": 5, "uniqueItems": true, "items": {"$ref": "#/$defs/kind"}}, "independent_source_family_count": {"type": "integer", "minimum": 1}, "stopped_at": {"type": ["string", "null"], "format": "date-time"}, "post_hoc_rewrite": {"const": false}, "saturation_rationale": {"$ref": "#/$defs/nonempty"}}
+    },
+    "gap": {
+      "type": "object", "additionalProperties": false,
+      "required": ["gap_id", "description", "impact", "next_search", "claim_ceiling_effect"],
+      "properties": {"gap_id": {"$ref": "#/$defs/nonempty"}, "description": {"$ref": "#/$defs/nonempty"}, "impact": {"$ref": "#/$defs/nonempty"}, "next_search": {"$ref": "#/$defs/nonempty"}, "claim_ceiling_effect": {"enum": ["HOLD", "DOWNGRADE", "ABSTAIN"]}}
+    },
+    "failure_export": {
+      "type": "object", "additionalProperties": false,
+      "required": ["export_id", "evidence_id", "failure_class", "originating_task", "originating_artifact", "originating_exact_head", "observed_symptom", "negative_evidence_refs", "affected_claims", "retry_preconditions", "prohibited_retry", "claim_ceiling_impact"],
+      "properties": {"export_id": {"$ref": "#/$defs/nonempty"}, "evidence_id": {"$ref": "#/$defs/nonempty"}, "failure_class": {"enum": ["SCOPE", "MECHANISM", "RIGHTS", "RETRIEVAL", "REPRESENTATIVENESS", "TEMPORAL", "UNKNOWN"]}, "originating_task": {"const": "121Q38-I1"}, "originating_artifact": {"$ref": "#/$defs/nonempty"}, "originating_exact_head": {"$ref": "#/$defs/sha"}, "observed_symptom": {"$ref": "#/$defs/nonempty"}, "negative_evidence_refs": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "affected_claims": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "retry_preconditions": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "prohibited_retry": {"type": "array", "minItems": 1, "items": {"type": "string"}}, "claim_ceiling_impact": {"enum": ["HOLD", "DOWNGRADE", "ABSTAIN"]}}
+    },
+    "conclusion": {
+      "type": "object", "additionalProperties": false,
+      "required": ["verdict", "statement", "claim_ceiling", "q37_ceiling_preserved", "quantity_vote_used", "mechanism_proven", "negative_results_preserved", "unresolved_gap_refs"],
+      "properties": {"verdict": {"enum": ["BOUNDED_RETRIEVAL_COMPLETE", "BOUND_REACHED_WITH_GAPS", "INSUFFICIENT_EVIDENCE"]}, "statement": {"$ref": "#/$defs/nonempty"}, "claim_ceiling": {"$ref": "#/$defs/nonempty"}, "q37_ceiling_preserved": {"const": true}, "quantity_vote_used": {"const": false}, "mechanism_proven": {"const": false}, "negative_results_preserved": {"const": true}, "unresolved_gap_refs": {"type": "array", "items": {"type": "string"}}}
+    }
+  }
+}
