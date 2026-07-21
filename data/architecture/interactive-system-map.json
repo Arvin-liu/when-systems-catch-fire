@@ -355,6 +355,30 @@
       "lifecycle_status": "current"
     },
     {
+      "id": "discovery_commitment_claim_contract",
+      "label": "发现—承诺边界 claim 合同",
+      "group": "governance",
+      "target": "schemas/discovery/commitment-claim.schema.json",
+      "description": "Q34 typed claim/proposition contract separating discovery of a candidate claim from commitment as a current conclusion.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "discovery_commitment_gate_validator",
+      "label": "发现—承诺 承诺门禁",
+      "group": "governance",
+      "target": "tools/discovery/validate_commitment_gate.py",
+      "description": "Q34 fail-closed deterministic commitment gate/CLI: blocks premature, circular, ceiling-breach, analogy-as-mechanism, stale-head, selective, unattested, self-approved commitments.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "discovery_commitment_pilot_q33",
+      "label": "发现—承诺 Q33 试点",
+      "group": "governance",
+      "target": "data/discovery/claims/q33-seven-governance-components-current.json",
+      "description": "Q34 pilot claim proving the boundary: 7 Q33 components Current in Main (allowed) vs global-copyright-compliance (blocked by ceiling).",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
       "id": "external_input",
       "label": "外部输入源",
       "group": "writing",
