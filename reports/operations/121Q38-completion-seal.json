@@ -1,0 +1,59 @@
+{
+  "task_id": "121Q38",
+  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "method_version": "1.3.0",
+  "lifecycle": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": false
+  },
+  "phase_b": {
+    "draft_pr": 70,
+    "branch": "agent/121q38-i1-case-counterexample-boundary-evidence",
+    "base": "agent/121q37-i1-analogy-audit-transportability",
+    "base_head": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "agent-results/IGNITION-20260722-121Q38-I1-evidence-retrieval-execution-receipt.json",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
+    "claim_ceiling": "candidate_only: repository-native, evidence-bound, deterministically verifiable Q37-seeded retrieval governance that freezes balanced queries, inclusion/exclusion, source-family deduplication and stop conditions; preserves support, counterexample, boundary, negative and failed-retrieval records with rights, provenance, digest, freshness, representativeness, selection history, unresolved gaps and Q39 exports; no case-count voting, mechanism proof, universal generalization, real-world causal identification, external action, L7 or truth layer."
+  },
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "synchronization_registry": {
+    "path": "data/operations/synchronization-surfaces.json",
+    "version": "1.2.0"
+  },
+  "external_attestations": [
+    {
+      "surface_id": "external.pages_homepage",
+      "stage": "post_merge",
+      "status": "pending",
+      "authority": "pull_request_body_and_1111_receipt",
+      "evidence_refs": [
+        "external:pr_body:external.pages_homepage"
+      ],
+      "live_state_locally_verifiable": false
+    }
+  ],
+  "propagation_closure": {
+    "closure_hash": "6cc530f3725d5141ff7bfce7f494fa8b00e302ac9755a901ea18d837bc32da54",
+    "closure_path": "data/operations/propagation/121Q38-closure.json",
+    "complete": true,
+    "unresolved_residue": []
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  }
+}

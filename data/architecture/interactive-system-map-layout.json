@@ -133,7 +133,10 @@
       "intervention_failure_pilot",
       "analogy_audit_contract",
       "analogy_audit_gate_validator",
-      "analogy_audit_pilot"
+      "analogy_audit_pilot",
+      "evidence_retrieval_contract",
+      "evidence_retrieval_gate_validator",
+      "evidence_retrieval_pilot"
     ],
     "layers": [
       "l0",
