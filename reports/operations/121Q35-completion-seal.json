@@ -10,7 +10,7 @@
     "ready_for_gpt_verification": false
   },
   "phase_b": {
-    "draft_pr": null,
+    "draft_pr": 66,
     "branch": "agent/121q35-i1-responsibility-authority-action-trace",
     "base": "agent/121q34-i1-discovery-commitment-boundary",
     "base_head": "06749dd118df7ade715b53f360e8177b09cdab49",
@@ -41,7 +41,7 @@
       "status": "pending",
       "authority": "pull_request_body_and_1111_receipt",
       "evidence_refs": [
-        "external:pr_body:pending"
+        "external:pr_body:66"
       ],
       "live_state_locally_verifiable": false
     }

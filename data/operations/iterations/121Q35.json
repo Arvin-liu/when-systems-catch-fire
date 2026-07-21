@@ -17,7 +17,7 @@
     "base_head": "06749dd118df7ade715b53f360e8177b09cdab49",
     "branch": "agent/121q35-i1-responsibility-authority-action-trace",
     "draft": true,
-    "pr_number": null,
+    "pr_number": 66,
     "merged": false
   },
   "head_binding": {
@@ -26,7 +26,7 @@
     "explanation": "Q35-I1R Draft candidate: repository object never treats its own HEAD as validity evidence; exact-head and CI/artifact evidence are externally attested via PR body and 1111 receipt. This record does not assert acceptance, merge or Current status.",
     "live_refetch_required": true,
     "mode": "external_exact_head_attestation",
-    "pr_number": null,
+    "pr_number": 66,
     "receipt_path": "agent-results/IGNITION-20260721-121Q35-I1R-responsibility-authority-action-trace-execution-receipt.json"
   },
   "gap": {
@@ -357,7 +357,7 @@
         "status": "pending",
         "authority": "pull_request_body_and_1111_receipt",
         "evidence_refs": [
-          "external:pr_body:pending"
+          "external:pr_body:66"
         ],
         "live_state_locally_verifiable": false
       }
