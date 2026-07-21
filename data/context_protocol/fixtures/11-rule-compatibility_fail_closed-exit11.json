@@ -1,0 +1,473 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "SCIENTIFIC-CONTEXT-PROTOCOL-I1",
+  "capability_id": "open_scientific_context_protocol",
+  "parent_binding": {
+    "task_id": "Q44-I1",
+    "exact_head": "e603e4503b424cea7c85639ec83f96b7e1bc7efb"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/coaching/pilot-q44-i1.json",
+      "exact_head": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
+      "artifact_digest": "sha256:5c55c5271b2c93908b3a894db673b56e745eeb44a0ad347c5b09513771dd8190",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "data/escalation/pilot-q43-i1.json",
+      "exact_head": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
+      "artifact_digest": "sha256:0862e7d9cf513170789bd657ab8156564af8967ef52bc78f509ca402c58de399",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "FOUNDATION.md",
+      "exact_head": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
+      "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
+      "rights_status": "REPOSITORY_INTERNAL"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "LOCAL_MOCK_REQUEST",
+      "protocol_version": {
+        "status": "RECORDED",
+        "value": "bounded protocol_version for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "source_rights_context": {
+        "status": "RECORDED",
+        "value": "bounded source_rights_context for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "model_tool_executor_identity": {
+        "status": "RECORDED",
+        "value": "bounded model_tool_executor_identity for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "authority_capability": {
+        "status": "RECORDED",
+        "value": "bounded authority_capability for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "observation_prediction": {
+        "status": "RECORDED",
+        "value": "bounded observation_prediction for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "analogy_search_case": {
+        "status": "RECORDED",
+        "value": "bounded analogy_search_case for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "intervention_failure": {
+        "status": "RECORDED",
+        "value": "bounded intervention_failure for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "symbolic_perspectives": {
+        "status": "RECORDED",
+        "value": "bounded symbolic_perspectives for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "decision_integrity": {
+        "status": "RECORDED",
+        "value": "bounded decision_integrity for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "epistemic_state": {
+        "status": "RECORDED",
+        "value": "bounded epistemic_state for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "latent_multi_history_counterfactual": {
+        "status": "RECORDED",
+        "value": "bounded latent_multi_history_counterfactual for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "experiment_hardware_request_result": {
+        "status": "RECORDED",
+        "value": "bounded experiment_hardware_request_result for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "exact_head_provenance_digest": {
+        "status": "RECORDED",
+        "value": "bounded exact_head_provenance_digest for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "stop_rollback": {
+        "status": "RECORDED",
+        "value": "bounded stop_rollback for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "sensitive_data_network_local_first": {
+        "status": "RECORDED",
+        "value": "bounded sensitive_data_network_local_first for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "capability_negotiation": {
+        "status": "RECORDED",
+        "value": "bounded capability_negotiation for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "request_response_envelope": {
+        "status": "RECORDED",
+        "value": "bounded request_response_envelope for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "identity_authorization": {
+        "status": "RECORDED",
+        "value": "bounded identity_authorization for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "artifact_binding": {
+        "status": "RECORDED",
+        "value": "bounded artifact_binding for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "failure_retry_semantics": {
+        "status": "RECORDED",
+        "value": "bounded failure_retry_semantics for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "compatibility_policy": {
+        "status": "RECORDED",
+        "value": "bounded compatibility_policy for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "local_mock_adapter": {
+        "status": "RECORDED",
+        "value": "bounded local_mock_adapter for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for LOCAL_MOCK_REQUEST",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "LOCAL_MOCK_RESPONSE",
+      "protocol_version": {
+        "status": "RECORDED",
+        "value": "bounded protocol_version for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "source_rights_context": {
+        "status": "RECORDED",
+        "value": "bounded source_rights_context for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "model_tool_executor_identity": {
+        "status": "RECORDED",
+        "value": "bounded model_tool_executor_identity for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "authority_capability": {
+        "status": "RECORDED",
+        "value": "bounded authority_capability for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "observation_prediction": {
+        "status": "RECORDED",
+        "value": "bounded observation_prediction for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "analogy_search_case": {
+        "status": "RECORDED",
+        "value": "bounded analogy_search_case for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "intervention_failure": {
+        "status": "RECORDED",
+        "value": "bounded intervention_failure for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "symbolic_perspectives": {
+        "status": "RECORDED",
+        "value": "bounded symbolic_perspectives for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "decision_integrity": {
+        "status": "RECORDED",
+        "value": "bounded decision_integrity for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "epistemic_state": {
+        "status": "RECORDED",
+        "value": "bounded epistemic_state for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "latent_multi_history_counterfactual": {
+        "status": "RECORDED",
+        "value": "bounded latent_multi_history_counterfactual for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "experiment_hardware_request_result": {
+        "status": "RECORDED",
+        "value": "bounded experiment_hardware_request_result for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "exact_head_provenance_digest": {
+        "status": "RECORDED",
+        "value": "bounded exact_head_provenance_digest for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "stop_rollback": {
+        "status": "RECORDED",
+        "value": "bounded stop_rollback for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "sensitive_data_network_local_first": {
+        "status": "RECORDED",
+        "value": "bounded sensitive_data_network_local_first for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "capability_negotiation": {
+        "status": "RECORDED",
+        "value": "bounded capability_negotiation for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "request_response_envelope": {
+        "status": "RECORDED",
+        "value": "bounded request_response_envelope for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "identity_authorization": {
+        "status": "RECORDED",
+        "value": "bounded identity_authorization for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "artifact_binding": {
+        "status": "RECORDED",
+        "value": "bounded artifact_binding for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "failure_retry_semantics": {
+        "status": "RECORDED",
+        "value": "bounded failure_retry_semantics for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "compatibility_policy": {
+        "status": "RECORDED",
+        "value": "bounded compatibility_policy for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "local_mock_adapter": {
+        "status": "RECORDED",
+        "value": "bounded local_mock_adapter for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for LOCAL_MOCK_RESPONSE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "version_negotiated": true,
+    "identity_authorized": true,
+    "capability_not_authority": true,
+    "artifact_exact_head_bound": true,
+    "rights_preserved": true,
+    "failure_retry_typed": true,
+    "compatibility_fail_closed": false,
+    "sensitive_local_first": true,
+    "hardware_request_only": true,
+    "no_ecosystem_overclaim": true,
+    "stop_rollback_present": true
+  },
+  "rule_assertions": [
+    {
+      "rule_id": "version_negotiated",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "identity_authorized",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "capability_not_authority",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "artifact_exact_head_bound",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "rights_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "failure_retry_typed",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "compatibility_fail_closed",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "sensitive_local_first",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "hardware_request_only",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "no_ecosystem_overclaim",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "stop_rollback_present",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    }
+  ],
+  "conclusion": {
+    "statement": "A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions.",
+    "claim_ceiling": "candidate_only_repository_governance",
+    "history_preserved": true,
+    "external_action_performed": false
+  }
+}

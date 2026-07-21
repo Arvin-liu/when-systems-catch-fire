@@ -1,0 +1,15 @@
+{
+  "added_edges": [],
+  "added_nodes": [
+    "open_scientific_context_protocol_contract",
+    "open_scientific_context_protocol_gate_validator",
+    "open_scientific_context_protocol_pilot"
+  ],
+  "base_map_version": "0.3.0",
+  "candidate_map_version": "0.3.0",
+  "changed_edges": [],
+  "changed_nodes": [],
+  "removed_edges": [],
+  "removed_nodes": [],
+  "unmapped_residue": []
+}
