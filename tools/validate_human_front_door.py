@@ -150,6 +150,7 @@ def validate_system_map(root: Path, readme: str, pages: str) -> int:
         "counterfactual_unrealized_path_contract", "counterfactual_unrealized_path_gate_validator", "counterfactual_unrealized_path_pilot",
         "graded_intervention_escalation_contract", "graded_intervention_escalation_gate_validator", "graded_intervention_escalation_pilot",
         "coaching_commitment_subcapability_contract", "coaching_commitment_subcapability_gate_validator", "coaching_commitment_subcapability_pilot",
+        "open_scientific_context_protocol_contract", "open_scientific_context_protocol_gate_validator", "open_scientific_context_protocol_pilot",
     }
     require({node["id"] for node in spec["nodes"]} == required_nodes, "interactive system map does not cover the declared complete node set")
 

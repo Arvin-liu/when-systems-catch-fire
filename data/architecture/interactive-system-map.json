@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.12",
+    "component_registry_version": "1.1.13",
     "topology_version": "1.1.0",
     "layout_version": "1.1.0"
   },
@@ -736,6 +736,30 @@
       "group": "governance",
       "target": "data/coaching/pilot-q44-i1.json",
       "description": "Q44-I1 self-authored bounded repository pilot covering USER_LED_COMMITMENT and PAUSE_OR_REVISE_PATH; 24 fixtures drive the real CLI; no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "open_scientific_context_protocol_contract",
+      "label": "Open Scientific Context Protocol 合同",
+      "group": "governance",
+      "target": "schemas/context_protocol/open_scientific_context_protocol-contract.schema.json",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 typed evidence-bound contract. A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "open_scientific_context_protocol_gate_validator",
+      "label": "Open Scientific Context Protocol 门禁",
+      "group": "governance",
+      "target": "tools/context_protocol/validate_open_scientific_context_protocol_gate.py",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 fail-closed real CLI enforcing evidence binding, exact parent, 11 task rules, candidate ceiling and no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "open_scientific_context_protocol_pilot",
+      "label": "Open Scientific Context Protocol 受控试点",
+      "group": "governance",
+      "target": "data/context_protocol/pilot-scientific-context-protocol-i1.json",
+      "description": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 self-authored bounded repository pilot covering LOCAL_MOCK_REQUEST and LOCAL_MOCK_RESPONSE; 24 fixtures drive the real CLI; no external action.",
       "lifecycle_status": "draft_candidate"
     },
     {

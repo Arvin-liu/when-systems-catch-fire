@@ -161,3 +161,7 @@ Actions can be classified by risk, reversibility, evidence, authority and expert
 ### Q44-I1 Coaching / Commitment Subcapability (stacked Draft candidate)
 
 A coaching subcapability can support user-declared informed commitments while preserving autonomy, consent, multiple narratives, process/outcome separation and revise/pause/stop rights. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: no manipulative persuasion; no hidden goal substitution; no shame-driven compliance; outcome does not prove intervention legitimacy.
+
+### SCIENTIFIC-CONTEXT-PROTOCOL-I1 Open Scientific Context Protocol (stacked Draft candidate)
+
+A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: no deployed ecosystem; no hardware execution; no platform model copying; no sensitive-data/network boundary bypass.
