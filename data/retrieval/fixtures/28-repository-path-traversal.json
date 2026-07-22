@@ -82,11 +82,11 @@
       "kind": "SUPPORT",
       "source_id": "source.ev.support.q37",
       "source_family": "repo:q37-contract",
-      "source_locator": "data/analogy/fixtures/06-transportability-candidate-pass.json",
+      "source_locator": "../outside.json",
       "provenance": "bounded repository replay at the Q37 frozen checkpoint; no external factual promotion",
       "retrieval_status": "RETRIEVED_REPOSITORY_BYTES",
       "source_binding": {
-        "path": "data/analogy/fixtures/06-transportability-candidate-pass.json",
+        "path": "../outside.json",
         "exact_commit": "7a01b1958c3f6b6eff559be85ec5e47eecff313c",
         "git_blob": "4aac880bc3d5a8c7464137e4a60bde25c17a8079",
         "sha256": "sha256:b335a6d7af72ab44520ceccb3b8674d0d1925f828828601f8373a924b183c29e"
@@ -97,9 +97,9 @@
       "publication_mode": "METADATA_AND_SUMMARY",
       "evidence_grade": "A_PRIMARY",
       "freshness": {
-        "time_sensitive": true,
+        "time_sensitive": false,
         "as_of": "2026-07-21T17:31:00Z",
-        "status": "STALE",
+        "status": "NOT_APPLICABLE",
         "valid_until": null
       },
       "representativeness": {
