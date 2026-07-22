@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.7",
+    "component_registry_version": "1.1.8",
     "topology_version": "1.1.0",
     "layout_version": "1.1.0"
   },
@@ -616,6 +616,30 @@
       "group": "governance",
       "target": "data/anomaly/pilot-q41-i1.json",
       "description": "Q41-I1 self-authored bounded repository pilot covering RECURRING_REPOSITORY_DIVERGENCE and SINGLE_DEVIATION_NEGATIVE_CONTROL; 24 fixtures drive the real CLI; no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "latent_system_identifiability_contract",
+      "label": "Latent-System Discovery & Identifiability Gate 合同",
+      "group": "governance",
+      "target": "schemas/latent/latent_system_identifiability-contract.schema.json",
+      "description": "F15-D1-I1 typed evidence-bound contract. Latent-system candidates and equivalent decompositions can remain candidate objects until distinguishing evidence passes an explicit identifiability gate.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "latent_system_identifiability_gate_validator",
+      "label": "Latent-System Discovery & Identifiability Gate 门禁",
+      "group": "governance",
+      "target": "tools/latent/validate_latent_system_identifiability_gate.py",
+      "description": "F15-D1-I1 fail-closed real CLI enforcing evidence binding, exact parent, 8 task rules, candidate ceiling and no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "latent_system_identifiability_pilot",
+      "label": "Latent-System Discovery & Identifiability Gate 受控试点",
+      "group": "governance",
+      "target": "data/latent/pilot-f15-d1-i1.json",
+      "description": "F15-D1-I1 self-authored bounded repository pilot covering IDENTIFIABLE_CANDIDATE and NON_IDENTIFIABLE_EQUIVALENCE_SET; 24 fixtures drive the real CLI; no external action.",
       "lifecycle_status": "draft_candidate"
     },
     {

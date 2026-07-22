@@ -141,3 +141,7 @@ Epistemic states and unknowns can be ranked and transitioned through authorized 
 ### Q41-I1 World-Feedback Anomaly Trigger & Governance (stacked Draft candidate)
 
 Recurring evidence-bound expected/observed divergence can trigger a bounded continue/repair/downgrade/rebuild/search decision without automatically inventing a hidden system. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: single residual is not a hidden system; anomaly is not causal proof; no threshold-free escalation; no selective failure sampling.
+
+### F15-D1-I1 Latent-System Discovery & Identifiability Gate (stacked Draft candidate)
+
+Latent-system candidates and equivalent decompositions can remain candidate objects until distinguishing evidence passes an explicit identifiability gate. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: residual is not a latent entity; shared pattern is not a common cause; non-identifiable decomposition remains unresolved; no Q45+ numbering.
