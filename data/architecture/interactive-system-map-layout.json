@@ -148,7 +148,10 @@
       "decision_integrity_pilot",
       "epistemic_state_control_plane_contract",
       "epistemic_state_control_plane_gate_validator",
-      "epistemic_state_control_plane_pilot"
+      "epistemic_state_control_plane_pilot",
+      "world_feedback_anomaly_contract",
+      "world_feedback_anomaly_gate_validator",
+      "world_feedback_anomaly_pilot"
     ],
     "layers": [
       "l0",

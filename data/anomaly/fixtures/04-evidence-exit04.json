@@ -1,0 +1,296 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "Q41-I1",
+  "capability_id": "world_feedback_anomaly",
+  "parent_binding": {
+    "task_id": "SCIENTIFIC-METACOGNITION-I1",
+    "exact_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/metacognition/pilot-scientific-metacognition-i1.json",
+      "exact_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
+      "artifact_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "data/failure/pilot-q39-failure-lineage.json",
+      "exact_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
+      "artifact_digest": "sha256:ca11da2279caac2b99e783b1cdebeb3ca362536986b0f1c8ee78ba2c9f2bd805",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "FOUNDATION.md",
+      "exact_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
+      "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
+      "rights_status": "REPOSITORY_INTERNAL"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "RECURRING_REPOSITORY_DIVERGENCE",
+      "world_feedback_anomaly": {
+        "status": "RECORDED",
+        "value": "bounded world_feedback_anomaly for RECURRING_REPOSITORY_DIVERGENCE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "recurrence_window": {
+        "status": "RECORDED",
+        "value": "bounded recurrence_window for RECURRING_REPOSITORY_DIVERGENCE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "residual_failure_aggregation": {
+        "status": "RECORDED",
+        "value": "bounded residual_failure_aggregation for RECURRING_REPOSITORY_DIVERGENCE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "expected_observed_divergence": {
+        "status": "RECORDED",
+        "value": "bounded expected_observed_divergence for RECURRING_REPOSITORY_DIVERGENCE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "model_repair_budget": {
+        "status": "RECORDED",
+        "value": "bounded model_repair_budget for RECURRING_REPOSITORY_DIVERGENCE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "governance_decision": {
+        "status": "RECORDED",
+        "value": "bounded governance_decision for RECURRING_REPOSITORY_DIVERGENCE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "escalation_authority": {
+        "status": "RECORDED",
+        "value": "bounded escalation_authority for RECURRING_REPOSITORY_DIVERGENCE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "stop_rollback": {
+        "status": "RECORDED",
+        "value": "bounded stop_rollback for RECURRING_REPOSITORY_DIVERGENCE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "q39_update": {
+        "status": "RECORDED",
+        "value": "bounded q39_update for RECURRING_REPOSITORY_DIVERGENCE",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "metacognition_update": {
+        "status": "RECORDED",
+        "value": "bounded metacognition_update for RECURRING_REPOSITORY_DIVERGENCE",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for RECURRING_REPOSITORY_DIVERGENCE",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "SINGLE_DEVIATION_NEGATIVE_CONTROL",
+      "world_feedback_anomaly": {
+        "status": "RECORDED",
+        "value": "bounded world_feedback_anomaly for SINGLE_DEVIATION_NEGATIVE_CONTROL",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "recurrence_window": {
+        "status": "RECORDED",
+        "value": "bounded recurrence_window for SINGLE_DEVIATION_NEGATIVE_CONTROL",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "residual_failure_aggregation": {
+        "status": "RECORDED",
+        "value": "bounded residual_failure_aggregation for SINGLE_DEVIATION_NEGATIVE_CONTROL",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "expected_observed_divergence": {
+        "status": "RECORDED",
+        "value": "bounded expected_observed_divergence for SINGLE_DEVIATION_NEGATIVE_CONTROL",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "model_repair_budget": {
+        "status": "RECORDED",
+        "value": "bounded model_repair_budget for SINGLE_DEVIATION_NEGATIVE_CONTROL",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "governance_decision": {
+        "status": "RECORDED",
+        "value": "bounded governance_decision for SINGLE_DEVIATION_NEGATIVE_CONTROL",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "escalation_authority": {
+        "status": "RECORDED",
+        "value": "bounded escalation_authority for SINGLE_DEVIATION_NEGATIVE_CONTROL",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "stop_rollback": {
+        "status": "RECORDED",
+        "value": "bounded stop_rollback for SINGLE_DEVIATION_NEGATIVE_CONTROL",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "q39_update": {
+        "status": "RECORDED",
+        "value": "bounded q39_update for SINGLE_DEVIATION_NEGATIVE_CONTROL",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "metacognition_update": {
+        "status": "RECORDED",
+        "value": "bounded metacognition_update for SINGLE_DEVIATION_NEGATIVE_CONTROL",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for SINGLE_DEVIATION_NEGATIVE_CONTROL",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "anomaly_not_hidden_system": true,
+    "recurrence_required": true,
+    "threshold_declared": true,
+    "single_deviation_no_rebuild": true,
+    "repair_budget_bounded": true,
+    "authority_required": true,
+    "stop_rollback_present": true,
+    "failure_sampling_balanced": true,
+    "q39_updated": true,
+    "metacognition_updated": true
+  },
+  "rule_assertions": [
+    {
+      "rule_id": "anomaly_not_hidden_system",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "recurrence_required",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "threshold_declared",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "single_deviation_no_rebuild",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "repair_budget_bounded",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "authority_required",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "stop_rollback_present",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "failure_sampling_balanced",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "q39_updated",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "metacognition_updated",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    }
+  ],
+  "conclusion": {
+    "statement": "Recurring evidence-bound expected/observed divergence can trigger a bounded continue/repair/downgrade/rebuild/search decision without automatically inventing a hidden system.",
+    "claim_ceiling": "candidate_only_repository_governance",
+    "history_preserved": true,
+    "external_action_performed": false
+  }
+}

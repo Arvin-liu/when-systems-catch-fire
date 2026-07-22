@@ -1,0 +1,59 @@
+{
+  "task_id": "Q41-I1",
+  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "method_version": "1.3.0",
+  "lifecycle": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": false
+  },
+  "phase_b": {
+    "draft_pr": 92,
+    "branch": "repair/q41-r1-anomaly-evidence-binding",
+    "base": "repair/scientific-metacognition-r1-epistemic-state-binding",
+    "base_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "agent-results/remaining-repair-train/Q41-I1-receipt.json",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
+    "claim_ceiling": "candidate_only_repository_governance: Recurring evidence-bound expected/observed divergence can trigger a bounded continue/repair/downgrade/rebuild/search decision without automatically inventing a hidden system. No external action, L7, truth-layer or universal-causal upgrade."
+  },
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "synchronization_registry": {
+    "path": "data/operations/synchronization-surfaces.json",
+    "version": "1.2.0"
+  },
+  "external_attestations": [
+    {
+      "surface_id": "external.pages_homepage",
+      "stage": "post_merge",
+      "status": "pending",
+      "authority": "pull_request_body_and_1111_receipt",
+      "evidence_refs": [
+        "external:pr_body:external.pages_homepage"
+      ],
+      "live_state_locally_verifiable": false
+    }
+  ],
+  "propagation_closure": {
+    "closure_hash": "8fd273b455c9d72358845cd8317b5e7affcfb0e70e878b66d1b2b91c1ef66685",
+    "closure_path": "data/operations/propagation/Q41-I1-closure.json",
+    "complete": true,
+    "unresolved_residue": []
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  }
+}
