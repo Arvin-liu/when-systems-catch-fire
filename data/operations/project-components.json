@@ -1495,6 +1495,7 @@
         "schemas/agent/responsibility-contract.schema.json",
         "docs/agent/responsibility-authority-action-trace.md",
         "docs/agent/responsibility-authority-action-trace-architecture.md",
+        "docs/agent/121Q35-repair-r1-architecture.md",
         "docs/agent/q36-intervention-interface.md",
         "docs/agent/q35-legacy-lab-salvage-matrix.json"
       ]
@@ -1522,6 +1523,9 @@
         "tests/agent/__init__.py",
         "tests/agent/test_responsibility_gate.py",
         "data/agent/q34-claims-registry.json",
+        "data/agent/canonical-actor-registry.json",
+        "data/agent/canonical-grant-registry.json",
+        "data/agent/grants/q35-repair-pilot-grants.json",
         "data/agent/q33-publication-rejects.json"
       ]
     },
@@ -1558,7 +1562,12 @@
         "data/agent/fixtures/13-trajectory-chain-break.json",
         "data/agent/fixtures/14-silent-rollback-rewrite.json",
         "data/agent/fixtures/15-many-hands-forced-owner.json",
-        "data/agent/fixtures/16-q33-gate-bypass.json"
+        "data/agent/fixtures/16-q33-gate-bypass.json",
+        "data/agent/fixtures/17-missing-claim-nonexistent-grantor-bypass.json",
+        "data/agent/fixtures/18-known-claim-nonexistent-grantor.json",
+        "data/agent/fixtures/19-zero-claim-digest.json",
+        "data/agent/fixtures/20-zero-grant-digest.json",
+        "data/agent/fixtures/21-embedded-noncanonical-grant.json"
       ]
     }
   ],

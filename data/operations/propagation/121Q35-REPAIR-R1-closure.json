@@ -1,0 +1,282 @@
+{
+  "actual_component_decisions": [
+    {
+      "decision": "CHANGE",
+      "item_id": "agent_responsibility_contract",
+      "reason": "Q35 repair-r1 closes B03 canonical claim/authority resolution paths."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "agent_responsibility_gate_validator",
+      "reason": "Q35 repair-r1 closes B03 canonical claim/authority resolution paths."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "agent_responsibility_pilot_q34",
+      "reason": "Q35 repair-r1 closes B03 canonical claim/authority resolution paths."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "historical_reports",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "incremental_execution",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration_manifest_contract",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "pages_pipeline",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "project_component_registry",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_calculator",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "readme",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sync",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_layout",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_projection",
+      "reason": "Q35 responsibility/authority/action-trace boundary does not alter this infrastructure component's semantics."
+    }
+  ],
+  "actual_surface_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent.handoff",
+      "reason": "Q35 candidate does not change handoff"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai.start",
+      "reason": "Q35 candidate does not change AI start"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance",
+      "reason": "Q35 adds responsibility/authority/action-trace governance components to the governance surface"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external.pages_homepage",
+      "reason": "Q35 is a Draft candidate; no production pages change claimed"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.ai_guide",
+      "reason": "Q35 candidate does not change AI guide"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.current_state",
+      "reason": "Q35 candidate does not edit docs/project-current-state.md (recorded at Q34; Q35 build is governance-only and does not touch the current-state file)"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.pages_source",
+      "reason": "Q35 does not alter pages source"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.readme",
+      "reason": "Q35 candidate does not change README"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.summary",
+      "reason": "Q35 candidate does not edit SUMMARY.md"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.usage",
+      "reason": "Q35 candidate does not change usage surface"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "machine.llms",
+      "reason": "Q35 candidate does not change llms.txt"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.iteration",
+      "reason": "Q35 uses existing iteration method"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.result_template",
+      "reason": "Q35 uses existing result template"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.review_template",
+      "reason": "Q35 uses existing review template"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.task_template",
+      "reason": "Q35 uses existing task template"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.changelog",
+      "reason": "Q35 candidate does not edit CHANGELOG.md (governance-only build, no release note change in this branch)"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.versioning",
+      "reason": "Q35 candidate does not change versioning"
+    }
+  ],
+  "base_identity": "61c696f7cf74fed5525ec7da6cf8a7c4b544e5a8",
+  "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
+  "closure_complete": true,
+  "closure_hash": "eef697698608ab986d9e08f7319ad1fc0193e2b24b7e354ca80a8b081f9930fd",
+  "closure_version": "1.0.0",
+  "fixpoint": {
+    "iterations": 2,
+    "reached": true
+  },
+  "head_identity": "external_exact_head_attestation",
+  "registry_derived_surfaces": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "required_component_decisions": [
+    "agent_responsibility_contract",
+    "agent_responsibility_gate_validator",
+    "agent_responsibility_pilot_q34",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_projection"
+  ],
+  "required_surface_decisions": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "residue": [],
+  "resolved_components": [
+    "agent_responsibility_contract",
+    "agent_responsibility_gate_validator",
+    "agent_responsibility_pilot_q34",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_projection"
+  ],
+  "seed_components": [
+    "agent_responsibility_contract",
+    "agent_responsibility_gate_validator",
+    "agent_responsibility_pilot_q34",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "project_component_registry",
+    "propagation_calculator"
+  ],
+  "seed_paths": [
+    "data/agent/canonical-actor-registry.json",
+    "data/agent/canonical-grant-registry.json",
+    "data/agent/fixtures/01-legal-low-risk.json",
+    "data/agent/fixtures/17-missing-claim-nonexistent-grantor-bypass.json",
+    "data/agent/fixtures/18-known-claim-nonexistent-grantor.json",
+    "data/agent/fixtures/19-zero-claim-digest.json",
+    "data/agent/fixtures/20-zero-grant-digest.json",
+    "data/agent/fixtures/21-embedded-noncanonical-grant.json",
+    "data/agent/grants/q35-repair-pilot-grants.json",
+    "data/agent/pilot-q34-pr-controlled-op.json",
+    "data/agent/q34-claims-registry.json",
+    "data/operations/iterations/121Q35-REPAIR-R1.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q35-REPAIR-R1-request.json",
+    "docs/agent/121Q35-repair-r1-architecture.md",
+    "reports/operations/121Q35-REPAIR-R1-completion-seal.json",
+    "schemas/agent/responsibility-contract.schema.json",
+    "tests/agent/test_responsibility_gate.py",
+    "tools/agent/validate_responsibility_gate.py"
+  ],
+  "system_map_impact": {
+    "added_edges": [],
+    "added_nodes": [
+      "agent_responsibility_contract",
+      "agent_responsibility_gate_validator",
+      "agent_responsibility_pilot_q34"
+    ],
+    "changed_edges": [],
+    "changed_nodes": [],
+    "decision": "CHANGE",
+    "reason": "New agent responsibility/authority/action-trace governance components added to project-component registry and topology",
+    "removed_edges": [],
+    "removed_nodes": [],
+    "unmapped_residue": []
+  },
+  "task_id": "121Q35-REPAIR-R1",
+  "typed_paths": [
+    {
+      "claim_ceiling": "deterministic repository derivation",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "registry_generates_projection",
+      "source": "project_component_registry",
+      "target": "system_map_projection"
+    }
+  ]
+}
