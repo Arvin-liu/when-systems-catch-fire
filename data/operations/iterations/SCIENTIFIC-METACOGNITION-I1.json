@@ -13,21 +13,21 @@
     "verified_at": "2026-07-22"
   },
   "branch_pr": {
-    "base": "agent/decision-integrity-i1-principle-lock-process-outcome-governance",
-    "base_head": "b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e",
-    "branch": "agent/scientific-metacognition-i1-epistemic-state-control-plane",
+    "base": "repair/decision-integrity-r1-principle-process-binding",
+    "base_head": "25bd2ca3e14a2693e3c9fac49a2547e1aa7ca9a8",
+    "branch": "repair/scientific-metacognition-r1-epistemic-state-binding",
     "draft": true,
-    "pr_number": 74,
+    "pr_number": 91,
     "merged": false
   },
   "head_binding": {
     "mode": "external_exact_head_attestation",
-    "pr_number": 74,
+    "pr_number": 91,
     "authority": "pull_request_body_and_1111_receipt",
-    "receipt_path": "agent-results/IGNITION-20260722-SCIENTIFIC-METACOGNITION-I1-scientific-metacognition-i1-execution-receipt.json",
+    "receipt_path": "agent-results/remaining-repair-train/SCIENTIFIC-METACOGNITION-I1-receipt.json",
     "embedded_exact_current_head": false,
     "live_refetch_required": true,
-    "explanation": "PR #74 and 1111 bind final exact head and CI; repository object does not self-attest."
+    "explanation": "PR #91 (repair-r1, supersedes original candidate PR #74) and 1111 bind final exact head and CI; repository object does not self-attest."
   },
   "gap": {
     "summary": "Scientific Metacognition & Epistemic-State Control Plane lacked a typed evidence-bound fail-closed repository capability.",
@@ -73,107 +73,77 @@
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/04-evidence-exit04.json",
+      "surface": "data/metacognition/fixtures/04-evidence-digest-exit04.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/05-rule-self_rating_not_evidence-exit05.json",
+      "surface": "data/metacognition/fixtures/10-rule-self_rating_not_evidence-exit5.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/06-rule-unknown_needs_evidence_transition-exit06.json",
+      "surface": "data/metacognition/fixtures/11-rule-unknown_needs_evidence_transition-exit6.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/07-rule-non_identifiable_not_solved-exit07.json",
+      "surface": "data/metacognition/fixtures/12-rule-non_identifiable_not_solved-exit7.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/08-rule-dominant_view_not_fact-exit08.json",
+      "surface": "data/metacognition/fixtures/13-rule-dominant_view_not_fact-exit8.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/09-rule-good_outcome_not_bad_process_erasure-exit09.json",
+      "surface": "data/metacognition/fixtures/14-rule-good_outcome_not_bad_process_erasure-exit9.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/10-rule-failure_changes_plan-exit10.json",
+      "surface": "data/metacognition/fixtures/15-rule-failure_changes_plan-exit10.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/11-rule-retracted_not_active-exit11.json",
+      "surface": "data/metacognition/fixtures/16-rule-retracted_not_active-exit11.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/12-rule-plan_authorized_and_stopped-exit12.json",
+      "surface": "data/metacognition/fixtures/17-rule-plan_authorized_and_stopped-exit12.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/13-rule-exploration_bounded-exit13.json",
+      "surface": "data/metacognition/fixtures/18-rule-exploration_bounded-exit13.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/14-rule-cost_risk_present-exit14.json",
+      "surface": "data/metacognition/fixtures/19-rule-cost_risk_present-exit14.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/15-rule-ceiling_noninflation-exit15.json",
+      "surface": "data/metacognition/fixtures/20-rule-ceiling_noninflation-exit15.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/16-rule-no_circular_evidence-exit16.json",
+      "surface": "data/metacognition/fixtures/21-rule-no_circular_evidence-exit16.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/17-rule-self_rating_not_evidence-exit05.json",
+      "surface": "data/metacognition/fixtures/22-claim-ceiling-exit20.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
     {
-      "surface": "data/metacognition/fixtures/18-rule-unknown_needs_evidence_transition-exit06.json",
-      "decision": "CHANGE",
-      "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
-    },
-    {
-      "surface": "data/metacognition/fixtures/19-rule-non_identifiable_not_solved-exit07.json",
-      "decision": "CHANGE",
-      "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
-    },
-    {
-      "surface": "data/metacognition/fixtures/20-rule-dominant_view_not_fact-exit08.json",
-      "decision": "CHANGE",
-      "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
-    },
-    {
-      "surface": "data/metacognition/fixtures/21-rule-good_outcome_not_bad_process_erasure-exit09.json",
-      "decision": "CHANGE",
-      "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
-    },
-    {
-      "surface": "data/metacognition/fixtures/22-rule-failure_changes_plan-exit10.json",
-      "decision": "CHANGE",
-      "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
-    },
-    {
-      "surface": "data/metacognition/fixtures/23-ceiling-exit20.json",
-      "decision": "CHANGE",
-      "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
-    },
-    {
-      "surface": "data/metacognition/fixtures/24-external-action-exit21.json",
+      "surface": "data/metacognition/fixtures/23-external-action-exit21.json",
       "decision": "CHANGE",
       "reason": "SCIENTIFIC-METACOGNITION-I1 capability or synchronized artifact."
     },
@@ -289,27 +259,21 @@
     "data/metacognition/fixtures/01-valid-exit00.json",
     "data/metacognition/fixtures/02-schema-exit02.json",
     "data/metacognition/fixtures/03-parent-exit03.json",
-    "data/metacognition/fixtures/04-evidence-exit04.json",
-    "data/metacognition/fixtures/05-rule-self_rating_not_evidence-exit05.json",
-    "data/metacognition/fixtures/06-rule-unknown_needs_evidence_transition-exit06.json",
-    "data/metacognition/fixtures/07-rule-non_identifiable_not_solved-exit07.json",
-    "data/metacognition/fixtures/08-rule-dominant_view_not_fact-exit08.json",
-    "data/metacognition/fixtures/09-rule-good_outcome_not_bad_process_erasure-exit09.json",
-    "data/metacognition/fixtures/10-rule-failure_changes_plan-exit10.json",
-    "data/metacognition/fixtures/11-rule-retracted_not_active-exit11.json",
-    "data/metacognition/fixtures/12-rule-plan_authorized_and_stopped-exit12.json",
-    "data/metacognition/fixtures/13-rule-exploration_bounded-exit13.json",
-    "data/metacognition/fixtures/14-rule-cost_risk_present-exit14.json",
-    "data/metacognition/fixtures/15-rule-ceiling_noninflation-exit15.json",
-    "data/metacognition/fixtures/16-rule-no_circular_evidence-exit16.json",
-    "data/metacognition/fixtures/17-rule-self_rating_not_evidence-exit05.json",
-    "data/metacognition/fixtures/18-rule-unknown_needs_evidence_transition-exit06.json",
-    "data/metacognition/fixtures/19-rule-non_identifiable_not_solved-exit07.json",
-    "data/metacognition/fixtures/20-rule-dominant_view_not_fact-exit08.json",
-    "data/metacognition/fixtures/21-rule-good_outcome_not_bad_process_erasure-exit09.json",
-    "data/metacognition/fixtures/22-rule-failure_changes_plan-exit10.json",
-    "data/metacognition/fixtures/23-ceiling-exit20.json",
-    "data/metacognition/fixtures/24-external-action-exit21.json",
+    "data/metacognition/fixtures/04-evidence-digest-exit04.json",
+    "data/metacognition/fixtures/10-rule-self_rating_not_evidence-exit5.json",
+    "data/metacognition/fixtures/11-rule-unknown_needs_evidence_transition-exit6.json",
+    "data/metacognition/fixtures/12-rule-non_identifiable_not_solved-exit7.json",
+    "data/metacognition/fixtures/13-rule-dominant_view_not_fact-exit8.json",
+    "data/metacognition/fixtures/14-rule-good_outcome_not_bad_process_erasure-exit9.json",
+    "data/metacognition/fixtures/15-rule-failure_changes_plan-exit10.json",
+    "data/metacognition/fixtures/16-rule-retracted_not_active-exit11.json",
+    "data/metacognition/fixtures/17-rule-plan_authorized_and_stopped-exit12.json",
+    "data/metacognition/fixtures/18-rule-exploration_bounded-exit13.json",
+    "data/metacognition/fixtures/19-rule-cost_risk_present-exit14.json",
+    "data/metacognition/fixtures/20-rule-ceiling_noninflation-exit15.json",
+    "data/metacognition/fixtures/21-rule-no_circular_evidence-exit16.json",
+    "data/metacognition/fixtures/22-claim-ceiling-exit20.json",
+    "data/metacognition/fixtures/23-external-action-exit21.json",
     "data/metacognition/pilot-scientific-metacognition-i1.json",
     "data/operations/component-execution-profiles.json",
     "data/operations/iterations/SCIENTIFIC-METACOGNITION-I1.json",
@@ -389,7 +353,7 @@
     "Inherited baseline debts remain",
     "Draft candidate unreviewed/unready/unmerged/not Current"
   ],
-  "receipt_location": "agent-results/IGNITION-20260722-SCIENTIFIC-METACOGNITION-I1-scientific-metacognition-i1-execution-receipt.json",
+  "receipt_location": "agent-results/remaining-repair-train/SCIENTIFIC-METACOGNITION-I1-receipt.json",
   "completion_seal_path": "reports/operations/SCIENTIFIC-METACOGNITION-I1-completion-seal.json",
   "completion_state": {
     "external_synchronization_attested": false,
@@ -626,7 +590,7 @@
     "impact_report_path": "data/operations/propagation/SCIENTIFIC-METACOGNITION-I1-impact-report.md",
     "system_map_delta_path": "data/operations/propagation/SCIENTIFIC-METACOGNITION-I1-system-map-delta.json",
     "residue_path": "data/operations/propagation/SCIENTIFIC-METACOGNITION-I1-residue.json",
-    "closure_hash": "6c0ce665a996530f4c3843b5f0c369b4dfa30e6a35a16be4ded5c5e795d1bd8f",
+    "closure_hash": "07d586457d6098f43e6bb62e68bfd842367859249dda192a66a69814ab8444c3",
     "base_identity": "b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e",
     "head_identity": "external_exact_head_attestation",
     "seed_paths": [

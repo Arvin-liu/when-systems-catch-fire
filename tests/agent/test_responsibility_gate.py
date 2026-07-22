@@ -86,6 +86,21 @@ class ResponsibilityGateFixtureTests(unittest.TestCase):
     def test_16_q33_gate_bypass(self):
         self.assert_exit("16-q33-gate-bypass.json", 15)
 
+    def test_17_combined_missing_claim_and_nonexistent_grantor(self):
+        self.assert_exit("17-missing-claim-nonexistent-grantor-bypass.json", 18)
+
+    def test_18_unknown_grantor_has_distinct_exit(self):
+        self.assert_exit("18-known-claim-nonexistent-grantor.json", 19)
+
+    def test_19_zero_claim_digest(self):
+        self.assert_exit("19-zero-claim-digest.json", 20)
+
+    def test_20_zero_grant_digest(self):
+        self.assert_exit("20-zero-grant-digest.json", 21)
+
+    def test_21_embedded_grant_is_not_canonical_authority(self):
+        self.assert_exit("21-embedded-noncanonical-grant.json", 23)
+
 
 class ResponsibilityGateContractTests(unittest.TestCase):
     def test_gate_emits_machine_readable_report(self):
@@ -106,6 +121,11 @@ class ResponsibilityGateContractTests(unittest.TestCase):
     def test_legal_bundle_decision_authorize(self):
         code, report = run_gate(FIXTURES / "01-legal-low-risk.json")
         self.assertEqual(code, 0)
+        self.assertEqual(report.get("decision"), "AUTHORIZE")
+
+    def test_real_q34_controlled_operation_pilot(self):
+        code, report = run_gate(ROOT / "data" / "agent" / "pilot-q34-pr-controlled-op.json")
+        self.assertEqual(code, 0, report.get("errors"))
         self.assertEqual(report.get("decision"), "AUTHORIZE")
 
 

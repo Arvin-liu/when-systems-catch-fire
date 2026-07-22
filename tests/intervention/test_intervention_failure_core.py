@@ -5,6 +5,7 @@ No constant assertions, no string-presence-only checks: every test runs
 tools/intervention/validate_intervention_failure_gate.py via subprocess and asserts the
 machine-readable exit code. Mirrors tests/observation/test_observation_prediction_core.py.
 """
+import copy
 import json
 import subprocess
 import sys
@@ -14,10 +15,17 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 VALIDATOR = ROOT / "tools" / "intervention" / "validate_intervention_failure_gate.py"
 CLAIMS = ROOT / "data" / "agent" / "q34-claims-registry.json"
 NOW = "2026-07-21T12:00:00+00:00"
-CURRENT_HEAD = "a8eab57bf2a2465c48d5d624e22681a1ad1bc20c"
+CURRENT_HEAD = "9087e494c782b405b5bbdb0d1ae4bd1707792d95"
+PILOT = ROOT / "data" / "intervention" / "pilot-controlled-intervention.json"
 
 
 def _base_bundle():
+    # The repair pilot is the canonical byte-bound positive template. Core tests
+    # mutate exactly one semantic dimension instead of rebuilding placeholder
+    # authority and digest fields in test code.
+    return json.loads(PILOT.read_text(encoding="utf-8"))
+
+    # Historical pre-repair construction retained below as dead reference text.
     return {
         "intervention_requests": [{
             "intervention_id": "int-core-001",
@@ -230,25 +238,23 @@ def test_stop_condition_violated_fails():
     b = _base_bundle()
     evs = b["plans"][0]["execution_events"]
     evs[0]["stop_condition_status"] = "triggered"
-    evs.append({
-        "event_id": "ev-core-002", "state": "executing",
-        "pre_state_digest": "sha256:" + "3" * 64,
-        "command": "another run", "executor": "actor-zhiyuan",
+    later = copy.deepcopy(evs[0])
+    later.update({
+        "event_id": "ev-core-002", "state": "executing", "command": "another repository-local dry run",
         "start_time": "2026-07-21T10:35:00+00:00", "end_time": "2026-07-21T10:40:00+00:00",
-        "affected_surfaces": ["data/observation/fixtures/20-retrospective-replay-pilot.json"],
-        "actual_change_magnitude": 0.0, "output_artifact_digests": ["sha256:" + "4" * 64],
-        "side_effects": [], "stop_condition_status": "not_triggered",
-        "trajectory_event_digest": "sha256:" + "5" * 64, "no_silent_mutation": True,
+        "stop_condition_status": "not_triggered",
     })
+    evs.append(later)
     r = _run(b)
     assert r.returncode == 12, r.stdout
 
 
 def test_failure_rewrite_forbidden():
     b = _base_bundle()
+    plan_id = b["plans"][0]["plan_id"]
     # failure record exists but plan is silently marked success with no rollback
     b["failure_records"] = [{
-        "failure_id": "fail-core-001", "plan_id": "plan-core-001",
+        "failure_id": "fail-core-001", "plan_id": plan_id,
         "failure_type": "side_effect_unexpected", "trigger": "unexpected output",
         "detected_at": "2026-07-21T10:31:00+00:00",
         "affected_surfaces": ["data/observation/fixtures/20-retrospective-replay-pilot.json"],
@@ -256,6 +262,7 @@ def test_failure_rewrite_forbidden():
         "responsibility_state": "ATTRIBUTED_WITHIN_REPOSITORY_SCOPE",
         "known_cause": "input typo", "unknown_cause": False, "competing_explanations": [],
         "escalation_target": "none", "claim_ceiling": "candidate_only", "exact_head": CURRENT_HEAD,
+        "evidence_binding": copy.deepcopy(b["canonical_bindings"]["q36_obs_source"]),
     }]
     r = _run(b)
     assert r.returncode == 13, r.stdout
@@ -278,14 +285,18 @@ def test_causal_overclaim_fails():
 
 def test_rollback_incomplete_fails():
     b = _base_bundle()
+    plan_id = b["plans"][0]["plan_id"]
+    pre = b["plans"][0]["execution_events"][0]["pre_state_digest"]
+    post = b["plans"][0]["execution_events"][0]["trajectory_event_digest"]
     b["stop_rollback_records"] = [{
-        "record_id": "rb-core-fail", "plan_id": "plan-core-001",
+        "record_id": "rb-core-fail", "plan_id": plan_id,
         "triggering_stop_condition": "digest mismatch", "stop_authority": "actor-reviewer",
-        "rollback_plan_ref": "rb-core-001", "rollback_action": "restore from pre-state",
-        "pre_digest": "sha256:" + "3" * 64, "post_digest": "sha256:" + "3" * 64,
+        "rollback_plan_ref": b["safety_envelopes"][0]["rollback_plan"]["plan_id"], "rollback_action": "restore from pre-state",
+        "pre_digest": pre, "post_digest": post,
         "restored_surfaces": [], "not_restored_surfaces": [],
         "irreversible_residue": "none", "verification_result": "failed",
         "follow_up_restrictions": "none", "history_preservation": True, "exact_head": CURRENT_HEAD,
+        "evidence_binding": copy.deepcopy(b["canonical_bindings"]["q36_obs_source"]),
     }]
     r = _run(b)
     assert r.returncode == 16, r.stdout
@@ -294,8 +305,9 @@ def test_rollback_incomplete_fails():
 def test_single_owner_forged_fails():
     b = _base_bundle()
     b["plans"][0]["state"] = "failed"
+    plan_id = b["plans"][0]["plan_id"]
     b["failure_records"] = [{
-        "failure_id": "fail-core-002", "plan_id": "plan-core-001",
+        "failure_id": "fail-core-002", "plan_id": plan_id,
         "failure_type": "data_quality_anomaly", "trigger": "ambiguous cause",
         "detected_at": "2026-07-21T10:31:00+00:00",
         "affected_surfaces": ["data/observation/fixtures/20-retrospective-replay-pilot.json"],
@@ -304,6 +316,7 @@ def test_single_owner_forged_fails():
         "known_cause": "", "unknown_cause": True, "competing_explanations": ["A", "B"],
         "escalation_target": "q39_failure_memory", "claim_ceiling": "sole owner is actor-zhiyuan",
         "exact_head": CURRENT_HEAD,
+        "evidence_binding": copy.deepcopy(b["canonical_bindings"]["q36_obs_source"]),
     }]
     r = _run(b)
     assert r.returncode == 17, r.stdout

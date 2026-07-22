@@ -1,0 +1,514 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "SCIENTIFIC-METACOGNITION-I1",
+  "capability_id": "epistemic_state_control_plane",
+  "parent_binding": {
+    "task_id": "DECISION-INTEGRITY-I1",
+    "exact_head": "b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/failure/pilot-q39-failure-lineage.json",
+      "exact_head": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "artifact_digest": "sha256:ca11da2279caac2b99e783b1cdebeb3ca362536986b0f1c8ee78ba2c9f2bd805",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "repository_relative_path": "data/failure/pilot-q39-failure-lineage.json",
+      "commit_sha": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "blob_sha": "7cd19ee0dd6c0da1c47da895e9021b2e09e12ca4",
+      "sha256": "sha256:ca11da2279caac2b99e783b1cdebeb3ca362536986b0f1c8ee78ba2c9f2bd805",
+      "record_type": "FAILURE_LINEAGE",
+      "declared_role": "predecessor_failure_evidence"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "data/decision/pilot-decision-integrity-i1.json",
+      "exact_head": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "artifact_digest": "sha256:a5f07e227568ccf48d93df15edef6f24677ae7ac7e9ebce6567e07766c81b281",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "repository_relative_path": "data/decision/pilot-decision-integrity-i1.json",
+      "commit_sha": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "blob_sha": "31a7c97276698454663b4b9efc893174bdb67127",
+      "sha256": "sha256:a5f07e227568ccf48d93df15edef6f24677ae7ac7e9ebce6567e07766c81b281",
+      "record_type": "DECISION_PILOT",
+      "declared_role": "predecessor_decision_evidence"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "exact_head": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "artifact_digest": "sha256:ea1cbf363efb5afa534340b09ab706386aea10c7e81a9658a08f306a86bd4778",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "repository_relative_path": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "commit_sha": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "blob_sha": "2a0e7841a8093c2c1df208c7e2c358ac67738bfc",
+      "sha256": "sha256:ea1cbf363efb5afa534340b09ab706386aea10c7e81a9658a08f306a86bd4778",
+      "record_type": "RETRIEVAL_PILOT",
+      "declared_role": "predecessor_retrieval_evidence"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "REAL_TRAIN_UNKNOWN_LEDGER",
+      "epistemic_state_ledger": {
+        "status": "RECORDED",
+        "value": "bounded epistemic_state_ledger for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "committed_knowledge": {
+        "status": "RECORDED",
+        "value": "bounded committed_knowledge for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "candidate_hypotheses": {
+        "status": "RECORDED",
+        "value": "bounded candidate_hypotheses for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "conflicts": {
+        "status": "RECORDED",
+        "value": "bounded conflicts for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "retracted_states": {
+        "status": "RECORDED",
+        "value": "bounded retracted_states for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "insufficient_evidence": {
+        "status": "RECORDED",
+        "value": "bounded insufficient_evidence for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "not_searched": {
+        "status": "RECORDED",
+        "value": "bounded not_searched for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "temporarily_unobservable": {
+        "status": "RECORDED",
+        "value": "bounded temporarily_unobservable for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "structurally_unobservable": {
+        "status": "RECORDED",
+        "value": "bounded structurally_unobservable for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "non_identifiable": {
+        "status": "RECORDED",
+        "value": "bounded non_identifiable for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "known_unknowns": {
+        "status": "RECORDED",
+        "value": "bounded known_unknowns for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "unknown_acquisition_paths": {
+        "status": "RECORDED",
+        "value": "bounded unknown_acquisition_paths for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "visibility_bias": {
+        "status": "RECORDED",
+        "value": "bounded visibility_bias for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "decision_integrity_risk": {
+        "status": "RECORDED",
+        "value": "bounded decision_integrity_risk for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "unresolved_failures": {
+        "status": "RECORDED",
+        "value": "bounded unresolved_failures for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "cost_risk_time_priority": {
+        "status": "RECORDED",
+        "value": "bounded cost_risk_time_priority for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "stop_condition": {
+        "status": "RECORDED",
+        "value": "bounded stop_condition for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "evidence_requirement": {
+        "status": "RECORDED",
+        "value": "bounded evidence_requirement for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "next_action_type": {
+        "status": "RECORDED",
+        "value": "bounded next_action_type for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "voi_like_ranking": {
+        "status": "RECORDED",
+        "value": "bounded voi_like_ranking for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "authorized_acquisition_plan": {
+        "status": "RECORDED",
+        "value": "bounded authorized_acquisition_plan for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "feedback_transition": {
+        "status": "RECORDED",
+        "value": "bounded feedback_transition for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "replanning": {
+        "status": "RECORDED",
+        "value": "bounded replanning for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for REAL_TRAIN_UNKNOWN_LEDGER",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "NON_IDENTIFIABLE_UNKNOWN",
+      "epistemic_state_ledger": {
+        "status": "RECORDED",
+        "value": "bounded epistemic_state_ledger for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "committed_knowledge": {
+        "status": "RECORDED",
+        "value": "bounded committed_knowledge for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "candidate_hypotheses": {
+        "status": "RECORDED",
+        "value": "bounded candidate_hypotheses for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "conflicts": {
+        "status": "RECORDED",
+        "value": "bounded conflicts for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "retracted_states": {
+        "status": "RECORDED",
+        "value": "bounded retracted_states for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "insufficient_evidence": {
+        "status": "RECORDED",
+        "value": "bounded insufficient_evidence for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "not_searched": {
+        "status": "RECORDED",
+        "value": "bounded not_searched for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "temporarily_unobservable": {
+        "status": "RECORDED",
+        "value": "bounded temporarily_unobservable for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "structurally_unobservable": {
+        "status": "RECORDED",
+        "value": "bounded structurally_unobservable for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "non_identifiable": {
+        "status": "RECORDED",
+        "value": "bounded non_identifiable for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "known_unknowns": {
+        "status": "RECORDED",
+        "value": "bounded known_unknowns for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "unknown_acquisition_paths": {
+        "status": "RECORDED",
+        "value": "bounded unknown_acquisition_paths for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "visibility_bias": {
+        "status": "RECORDED",
+        "value": "bounded visibility_bias for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "decision_integrity_risk": {
+        "status": "RECORDED",
+        "value": "bounded decision_integrity_risk for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "unresolved_failures": {
+        "status": "RECORDED",
+        "value": "bounded unresolved_failures for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "cost_risk_time_priority": {
+        "status": "RECORDED",
+        "value": "bounded cost_risk_time_priority for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "stop_condition": {
+        "status": "RECORDED",
+        "value": "bounded stop_condition for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "evidence_requirement": {
+        "status": "RECORDED",
+        "value": "bounded evidence_requirement for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "next_action_type": {
+        "status": "RECORDED",
+        "value": "bounded next_action_type for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "voi_like_ranking": {
+        "status": "RECORDED",
+        "value": "bounded voi_like_ranking for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "authorized_acquisition_plan": {
+        "status": "RECORDED",
+        "value": "bounded authorized_acquisition_plan for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "feedback_transition": {
+        "status": "RECORDED",
+        "value": "bounded feedback_transition for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "replanning": {
+        "status": "RECORDED",
+        "value": "bounded replanning for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for NON_IDENTIFIABLE_UNKNOWN",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "self_rating_not_evidence": true,
+    "unknown_needs_evidence_transition": true,
+    "non_identifiable_not_solved": true,
+    "dominant_view_not_fact": true,
+    "good_outcome_not_bad_process_erasure": true,
+    "failure_changes_plan": true,
+    "retracted_not_active": true,
+    "plan_authorized_and_stopped": true,
+    "exploration_bounded": true,
+    "cost_risk_present": true,
+    "ceiling_noninflation": false,
+    "no_circular_evidence": true
+  },
+  "rule_assertions": [
+    {
+      "rule_id": "self_rating_not_evidence",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "unknown_needs_evidence_transition",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "non_identifiable_not_solved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "dominant_view_not_fact",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "good_outcome_not_bad_process_erasure",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "failure_changes_plan",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "retracted_not_active",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "plan_authorized_and_stopped",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "exploration_bounded",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "cost_risk_present",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "ceiling_noninflation",
+      "status": "FAIL",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "no_circular_evidence",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    }
+  ],
+  "conclusion": {
+    "statement": "Epistemic states and unknowns can be ranked and transitioned through authorized evidence acquisition with deterministic replay, bounded cost/risk/time and explicit replanning.",
+    "claim_ceiling": "candidate_only_repository_governance",
+    "history_preserved": true,
+    "external_action_performed": false
+  }
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Shared fail-closed engine for evidence-bound structured capability bundles."""
-import argparse, hashlib, json, re, sys
+import argparse, hashlib, json, re, subprocess, sys
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
@@ -31,6 +31,25 @@ def run(config):
             path=ROOT/e.get("artifact","")
             if not path.is_file() or not HEAD_RE.match(str(e.get("exact_head",""))): errors.append(f"{eid}: artifact/head invalid")
             elif e.get("artifact_digest")!=digest(path.read_text(errors="replace")): errors.append(f"{eid}: digest mismatch")
+            # R1: opt-in Git-object reference integrity (fail-closed). Enforced only when the
+            # evidence record declares a real commit_sha + repository_relative_path. Pins evidence
+            # to immutable Git bytes (blob_sha / sha256) rather than the mutable working tree.
+            # Bundles that omit these fields are unaffected (backward compatible).
+            commit=e.get("commit_sha"); rel=e.get("repository_relative_path")
+            if commit and rel:
+                if not HEAD_RE.match(str(commit)): errors.append(f"{eid}: commit_sha invalid")
+                else:
+                    try:
+                        r=subprocess.run(["git","-C",str(ROOT),"rev-parse",f"{commit}:{rel}"],capture_output=True,text=True)
+                        if r.returncode!=0: errors.append(f"{eid}: git object unresolvable ({commit}:{rel})")
+                        else:
+                            real_blob=r.stdout.strip()
+                            if e.get("blob_sha") and e["blob_sha"]!=real_blob: errors.append(f"{eid}: blob_sha mismatch vs git object {commit}:{rel}")
+                            raw=subprocess.run(["git","-C",str(ROOT),"show",f"{commit}:{rel}"],capture_output=True).stdout
+                            real_sha="sha256:"+hashlib.sha256(raw).hexdigest()
+                            if e.get("sha256") and e["sha256"]!=real_sha: errors.append(f"{eid}: sha256 mismatch vs git object bytes")
+                    except Exception as exc:
+                        errors.append(f"{eid}: git object check failed ({exc})")
         for rec in b["records"]:
             for field in config["fields"]:
                 for ref in rec[field].get("evidence_refs",[]):

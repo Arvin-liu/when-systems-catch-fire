@@ -28,15 +28,26 @@
     }
   },
   "$defs": {
+    "git_binding": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "exact_commit", "git_blob", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "exact_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "git_blob": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "sha256": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    },
     "source_binding": {
       "type": "object", "additionalProperties": false,
-      "required": ["source_id", "task_id", "artifact", "exact_head", "artifact_digest"],
+      "required": ["source_id", "task_id", "artifact", "exact_head", "artifact_digest", "binding"],
       "properties": {
         "source_id": {"type": "string", "minLength": 1},
         "task_id": {"type": "string", "minLength": 1},
         "artifact": {"type": "string", "minLength": 1},
         "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
-        "artifact_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+        "artifact_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "binding": {"$ref": "#/$defs/git_binding"}
       }
     },
     "event": {
@@ -84,7 +95,7 @@
     },
     "propagation": {
       "type": "object", "additionalProperties": false,
-      "required": ["target_id", "event_ids", "target_artifact", "plan_effect", "authorized", "applied", "verification_digest"],
+      "required": ["target_id", "event_ids", "target_artifact", "plan_effect", "authorized", "applied", "verification_digest", "authorization_status", "authorization_binding", "authority_actor_id", "authority_grant_id", "authority_action_id", "application_status", "target_binding", "effect_id", "effect_binding"],
       "properties": {
         "target_id": {"type": "string", "minLength": 1},
         "event_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
@@ -92,7 +103,16 @@
         "plan_effect": {"enum": ["SEARCH", "PREDICT", "ANALOGY_AUDIT", "INTERVENE", "ESCALATE", "DEFER", "CLAIM_CEILING_CHANGE"]},
         "authorized": {"type": "boolean"},
         "applied": {"type": "boolean"},
-        "verification_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+        "verification_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "authorization_status": {"const": "VERIFIED_REPOSITORY_GRANT"},
+        "authorization_binding": {"$ref": "#/$defs/git_binding"},
+        "authority_actor_id": {"type": "string", "minLength": 1},
+        "authority_grant_id": {"type": "string", "minLength": 1},
+        "authority_action_id": {"type": "string", "minLength": 1},
+        "application_status": {"enum": ["REQUEST_ONLY", "APPLIED_REPOSITORY_RECORD"]},
+        "target_binding": {"$ref": "#/$defs/git_binding"},
+        "effect_id": {"type": "string", "minLength": 1},
+        "effect_binding": {"$ref": "#/$defs/git_binding"}
       }
     }
   }

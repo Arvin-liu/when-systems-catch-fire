@@ -1,16 +1,19 @@
 {
+  "schema_version": "q35-canonical-q34-claim-registry-v1",
   "claims": [
     {
       "claim_id": "q33.seven_governance_components.current_in_main",
-      "state": "committed_current"
+      "state": "committed_current",
+      "claim_digest": "sha256:8414a6231fdc811a15885a8f9b7df4dc16626fad7916388f3396ba3fd992bf42",
+      "subject_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+      "binding": {
+        "path": "data/discovery/claims/q33-seven-governance-components-current.json",
+        "exact_commit": "61c696f7cf74fed5525ec7da6cf8a7c4b544e5a8",
+        "git_blob": "729e3258795b2d6194b14e79144611a65c68be60",
+        "sha256": "sha256:cef7ad43a197015dc7bee0f4a23494e012db5cd157586af847a892fd36e6fb8b"
+      }
     },
-    {
-      "claim_id": "q33.global_copyright_compliance_proven",
-      "state": "rejected"
-    },
-    {
-      "claim_id": "q34.hypothesis.example",
-      "state": "hypothesis"
-    }
+    {"claim_id": "q33.global_copyright_compliance_proven", "state": "rejected"},
+    {"claim_id": "q34.hypothesis.example", "state": "hypothesis"}
   ]
 }
