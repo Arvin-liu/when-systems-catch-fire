@@ -157,3 +157,7 @@ Counterfactuals, alternative decompositions, unrealized paths and speculative na
 ### Q43-I1 Graded Intervention & Professional Escalation (stacked Draft candidate)
 
 Actions can be classified by risk, reversibility, evidence, authority and expertise so only repository-local reversible actions are automatic and high-risk external actions become request-only escalations. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: no legal action; no medical action; no financial action; no safety-critical external action.
+
+### Q44-I1 Coaching / Commitment Subcapability (stacked Draft candidate)
+
+A coaching subcapability can support user-declared informed commitments while preserving autonomy, consent, multiple narratives, process/outcome separation and revise/pause/stop rights. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: no manipulative persuasion; no hidden goal substitution; no shame-driven compliance; outcome does not prove intervention legitimacy.

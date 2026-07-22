@@ -1,0 +1,40 @@
+{
+  "task_id": "Q44-I1",
+  "parent_id": "Q43-I1",
+  "fields": [
+    "user_declared_goal",
+    "informed_commitment",
+    "plan_checkpoints",
+    "deviations",
+    "support_options",
+    "revise_pause_stop",
+    "non_manipulation_constraint",
+    "multi_perspective_narrative",
+    "autonomy_consent",
+    "outcome_process_separation",
+    "escalation",
+    "claim_ceiling"
+  ],
+  "rules": [
+    "goal_user_declared",
+    "commitment_informed",
+    "consent_reversible",
+    "no_goal_substitution",
+    "no_shame_pressure",
+    "multiple_narratives_preserved",
+    "process_outcome_separate",
+    "support_not_control",
+    "escalation_boundary_enforced"
+  ],
+  "record_types": [
+    "USER_LED_COMMITMENT",
+    "PAUSE_OR_REVISE_PATH"
+  ],
+  "nonclaims": [
+    "no manipulative persuasion",
+    "no hidden goal substitution",
+    "no shame-driven compliance",
+    "outcome does not prove intervention legitimacy"
+  ],
+  "next_task": "SCIENTIFIC-CONTEXT-PROTOCOL-I1"
+}
