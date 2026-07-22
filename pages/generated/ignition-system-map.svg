@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 3288" width="1800" height="3288" role="img" aria-labelledby="map-title map-description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 3486" width="1800" height="3486" role="img" aria-labelledby="map-title map-description">
   <title id="map-title">点火完整可点击系统图</title>
   <desc id="map-description">当前 0.3.0 增量执行投影；0.2.0 为 Historical。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。</desc>
   <style>
@@ -21,7 +21,7 @@
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity=".10" />
     </filter>
   </defs>
-  <rect class="map-bg" x="0" y="0" width="1800" height="3288" />
+  <rect class="map-bg" x="0" y="0" width="1800" height="3486" />
   <text class="map-title" x="32" y="42">点火完整可点击系统图</text>
   <text class="map-subtitle" x="32" y="72">当前 0.3.0 增量执行投影；0.2.0 为 Historical。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。</text>
   <text class="boundary-note" x="32" y="98">点击任一构件打开 canonical 目标；视觉邻近与连线不自动表示因果、严格同构或理论完备。</text>
@@ -40,47 +40,47 @@
   <rect class="cluster" x="620" y="736" width="560" height="454" rx="16" stroke="#d97706" />
   <text class="cluster-title" x="642" y="768" fill="#d97706">控制 / 操作层</text>
   <text class="cluster-desc" x="642" y="794">行动、注意力、地图、迭代与类型化传播闭包</text>
-  <rect class="cluster" x="1208" y="736" width="560" height="1774" rx="16" stroke="#be123c" />
+  <rect class="cluster" x="1208" y="736" width="560" height="1972" rx="16" stroke="#be123c" />
   <text class="cluster-title" x="1230" y="768" fill="#be123c">规范与约束</text>
   <text class="cluster-desc" x="1230" y="794">价值、权利许可与维护者可持续性边界</text>
-  <rect class="cluster" x="32" y="2538" width="560" height="718" rx="16" stroke="#9333ea" />
-  <text class="cluster-title" x="54" y="2570" fill="#9333ea">之元写作法与成果链</text>
-  <text class="cluster-desc" x="54" y="2596">双来源素材池、公共表达与可追溯成果</text>
-  <rect class="cluster" x="620" y="2538" width="560" height="388" rx="16" stroke="#15803d" />
-  <text class="cluster-title" x="642" y="2570" fill="#15803d">现实反馈环</text>
-  <text class="cluster-desc" x="642" y="2596">作品响应经来源登记后返回适用点火流程</text>
-  <rect class="cluster" x="1208" y="2538" width="560" height="322" rx="16" stroke="#475569" />
-  <text class="cluster-title" x="1230" y="2570" fill="#475569">图的解释边界</text>
-  <text class="cluster-desc" x="1230" y="2596">这是一张导航接口，不是完整性、因果或理论证明</text>
+  <rect class="cluster" x="32" y="2736" width="560" height="718" rx="16" stroke="#9333ea" />
+  <text class="cluster-title" x="54" y="2768" fill="#9333ea">之元写作法与成果链</text>
+  <text class="cluster-desc" x="54" y="2794">双来源素材池、公共表达与可追溯成果</text>
+  <rect class="cluster" x="620" y="2736" width="560" height="388" rx="16" stroke="#15803d" />
+  <text class="cluster-title" x="642" y="2768" fill="#15803d">现实反馈环</text>
+  <text class="cluster-desc" x="642" y="2794">作品响应经来源登记后返回适用点火流程</text>
+  <rect class="cluster" x="1208" y="2736" width="560" height="322" rx="16" stroke="#475569" />
+  <text class="cluster-title" x="1230" y="2768" fill="#475569">图的解释边界</text>
+  <text class="cluster-desc" x="1230" y="2794">这是一张导航接口，不是完整性、因果或理论证明</text>
   <g aria-label="system relations">
-    <path class="edge" d="M 312.0 3014.0 C 312.0 2855.0, 312.0 2855.0, 312.0 2696.0" data-source="point_fire_analysis" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 312.0 3212.0 C 312.0 3053.0, 312.0 3053.0, 312.0 2894.0" data-source="point_fire_analysis" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
       <title>point_fire_analysis → ignition_increment: 增量输出 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 312.0 1014.0 C 312.0 921.0, 312.0 921.0, 312.0 828.0" data-source="arn" data-target-node="mcf" data-relation-class="mechanism_hypothesis" data-relation-domain="substantive_causal_candidate">
       <title>arn → mcf: 因果审查委托 [substantive_causal_candidate]</title>
     </path>
-    <path class="edge" d="M 312.0 2948.0 C 312.0 2954.0, 312.0 2954.0, 312.0 2960.0" data-source="case_source" data-target-node="point_fire_analysis" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 312.0 3146.0 C 312.0 3152.0, 312.0 3152.0, 312.0 3158.0" data-source="case_source" data-target-node="point_fire_analysis" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>case_source → point_fire_analysis: 点火处理 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 1488.0 855.0 C 1194.0 855.0, 1194.0 855.0, 900.0 855.0" data-source="charter" data-target-node="q12" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
       <title>charter → q12: 价值门 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 505.0 C 900.0 505.0, 900.0 2789.0, 1488.0 2789.0" data-source="current_state" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 312.0 505.0 C 900.0 505.0, 900.0 2987.0, 1488.0 2987.0" data-source="current_state" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>current_state → no_totality_proof: 完整性边界 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 2684.0 C 312.0 2723.0, 312.0 2723.0, 312.0 2762.0" data-source="external_input" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 312.0 2882.0 C 312.0 2921.0, 312.0 2921.0, 312.0 2960.0" data-source="external_input" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>external_input → source_pool: 外部材料 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 1488.0 241.0 C 1194.0 241.0, 1194.0 373.0, 900.0 373.0" data-source="foundation" data-target-node="l2" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>foundation → l2: 权威对象 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 241.0 C 1488.0 241.0, 1488.0 2723.0, 1488.0 2723.0" data-source="foundation" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 241.0 C 1488.0 241.0, 1488.0 2921.0, 1488.0 2921.0" data-source="foundation" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>foundation → no_truth_upgrade: 真值边界 [synchronization_obligation]</title>
     </path>
     <path class="edge" d="M 1488.0 307.0 C 1194.0 307.0, 1194.0 855.0, 900.0 855.0" data-source="function_os" data-target-node="q12" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
       <title>function_os → q12: 执行动作 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 2750.0 C 312.0 2756.0, 312.0 2756.0, 312.0 2762.0" data-source="ignition_increment" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 312.0 2948.0 C 312.0 2954.0, 312.0 2954.0, 312.0 2960.0" data-source="ignition_increment" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>ignition_increment → source_pool: 点火增量 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 900.0 1080.0 C 900.0 1086.0, 900.0 1086.0, 900.0 1092.0" data-source="iteration" data-target-node="sync" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
@@ -110,19 +110,19 @@
     <path class="edge" d="M 312.0 882.0 C 312.0 888.0, 312.0 888.0, 312.0 894.0" data-source="mcf" data-target-node="psd" data-relation-class="enabling_condition" data-relation-domain="substantive_causal_candidate">
       <title>mcf → psd: 概率动力学补充 [substantive_causal_candidate]</title>
     </path>
-    <path class="edge" d="M 312.0 2882.0 C 312.0 2954.0, 312.0 2954.0, 312.0 3026.0" data-source="zhiyuan_method" data-target-node="accepted_work" data-relation-class="generates" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 312.0 3080.0 C 312.0 3152.0, 312.0 3152.0, 312.0 3224.0" data-source="zhiyuan_method" data-target-node="accepted_work" data-relation-class="generates" data-relation-domain="repository_dependency">
       <title>zhiyuan_method → accepted_work: 公共表达 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 2684.0 C 1488.0 2690.0, 1488.0 2690.0, 1488.0 2696.0" data-source="no_l7" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 2882.0 C 1488.0 2888.0, 1488.0 2888.0, 1488.0 2894.0" data-source="no_l7" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>no_l7 → no_truth_upgrade: 边界 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 2750.0 C 1488.0 2756.0, 1488.0 2756.0, 1488.0 2762.0" data-source="no_truth_upgrade" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 2948.0 C 1488.0 2954.0, 1488.0 2954.0, 1488.0 2960.0" data-source="no_truth_upgrade" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>no_truth_upgrade → no_totality_proof: 边界 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 2816.0 C 312.0 2822.0, 312.0 2822.0, 312.0 2828.0" data-source="source_pool" data-target-node="zhiyuan_method" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 312.0 3014.0 C 312.0 3020.0, 312.0 3020.0, 312.0 3026.0" data-source="source_pool" data-target-node="zhiyuan_method" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
       <title>source_pool → zhiyuan_method: 选材与边界 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2750.0 C 900.0 2756.0, 900.0 2756.0, 900.0 2762.0" data-source="provenance_capture" data-target-node="candidate_return" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2948.0 C 900.0 2954.0, 900.0 2954.0, 900.0 2960.0" data-source="provenance_capture" data-target-node="candidate_return" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>provenance_capture → candidate_return: 范围审查 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 900.0 882.0 C 900.0 888.0, 900.0 888.0, 900.0 894.0" data-source="q12" data-target-node="q13" data-relation-class="derives" data-relation-domain="repository_dependency">
@@ -140,43 +140,43 @@
     <path class="edge" d="M 312.0 241.0 C 606.0 241.0, 606.0 241.0, 900.0 241.0" data-source="readme" data-target-node="l0" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>readme → l0: 进入架构 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2684.0 C 900.0 2690.0, 900.0 2690.0, 900.0 2696.0" data-source="public_response" data-target-node="provenance_capture" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 900.0 2882.0 C 900.0 2888.0, 900.0 2888.0, 900.0 2894.0" data-source="public_response" data-target-node="provenance_capture" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
       <title>public_response → provenance_capture: 登记 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 900.0 2789.0 C 606.0 2789.0, 606.0 2789.0, 312.0 2789.0" data-source="candidate_return" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2987.0 C 606.0 2987.0, 606.0 2987.0, 312.0 2987.0" data-source="candidate_return" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>candidate_return → source_pool: 可继续写作 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2816.0 C 900.0 2822.0, 900.0 2822.0, 900.0 2828.0" data-source="candidate_return" data-target-node="feedback_routes" data-relation-class="projects" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 3014.0 C 900.0 3020.0, 900.0 3020.0, 900.0 3026.0" data-source="candidate_return" data-target-node="feedback_routes" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>candidate_return → feedback_routes: 分派 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2855.0 C 606.0 2855.0, 606.0 2723.0, 312.0 2723.0" data-source="feedback_routes" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 3053.0 C 606.0 3053.0, 606.0 2921.0, 312.0 2921.0" data-source="feedback_routes" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
       <title>feedback_routes → ignition_increment: 新增量 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 1488.0 1449.0 C 1194.0 1449.0, 1194.0 1053.0, 900.0 1053.0" data-source="sustainability" data-target-node="iteration" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>sustainability → iteration: 可承受行动 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 3080.0 C 312.0 3119.0, 312.0 3119.0, 312.0 3158.0" data-source="accepted_work" data-target-node="showcase_registry" data-relation-class="documents" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 312.0 3278.0 C 312.0 3317.0, 312.0 3317.0, 312.0 3356.0" data-source="accepted_work" data-target-node="showcase_registry" data-relation-class="documents" data-relation-domain="repository_dependency">
       <title>accepted_work → showcase_registry: 机器登记 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 3053.0 C 606.0 3053.0, 606.0 2657.0, 900.0 2657.0" data-source="accepted_work" data-target-node="public_response" data-relation-class="publishes" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 312.0 3251.0 C 606.0 3251.0, 606.0 2855.0, 900.0 2855.0" data-source="accepted_work" data-target-node="public_response" data-relation-class="publishes" data-relation-domain="repository_dependency">
       <title>accepted_work → public_response: 现实暴露 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 3080.0 C 312.0 3086.0, 312.0 3086.0, 312.0 3092.0" data-source="accepted_work" data-target-node="showcase" data-relation-class="publishes" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 312.0 3278.0 C 312.0 3284.0, 312.0 3284.0, 312.0 3290.0" data-source="accepted_work" data-target-node="showcase" data-relation-class="publishes" data-relation-domain="repository_dependency">
       <title>accepted_work → showcase: 人类索引 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 1488.0 1014.0 C 1488.0 921.0, 1488.0 921.0, 1488.0 828.0" data-source="copyright_governance_jurisdiction_registry" data-target-node="charter" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
       <title>copyright_governance_jurisdiction_registry → charter: 法域约束 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 1251.0 C 900.0 1251.0, 900.0 2657.0, 312.0 2657.0" data-source="copyright_governance_source_rights" data-target-node="external_input" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 1251.0 C 900.0 1251.0, 900.0 2855.0, 312.0 2855.0" data-source="copyright_governance_source_rights" data-target-node="external_input" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
       <title>copyright_governance_source_rights → external_input: 来源权利约束 [synchronization_obligation]</title>
     </path>
     <path class="edge" d="M 1488.0 1185.0 C 900.0 1185.0, 900.0 505.0, 312.0 505.0" data-source="copyright_governance_publication_gate_validator" data-target-node="current_state" data-relation-class="validates" data-relation-domain="repository_dependency">
       <title>copyright_governance_publication_gate_validator → current_state: 出版门禁验证 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 1119.0 C 900.0 1119.0, 900.0 3053.0, 312.0 3053.0" data-source="copyright_governance_non_republication_principle" data-target-node="accepted_work" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 1119.0 C 900.0 1119.0, 900.0 3251.0, 312.0 3251.0" data-source="copyright_governance_non_republication_principle" data-target-node="accepted_work" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>copyright_governance_non_republication_principle → accepted_work: 不重新发布约束 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 1053.0 C 900.0 1053.0, 900.0 2789.0, 312.0 2789.0" data-source="copyright_governance_material_classification" data-target-node="source_pool" data-relation-class="validates" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 1488.0 1053.0 C 900.0 1053.0, 900.0 2987.0, 312.0 2987.0" data-source="copyright_governance_material_classification" data-target-node="source_pool" data-relation-class="validates" data-relation-domain="repository_dependency">
       <title>copyright_governance_material_classification → source_pool: 材料分类 [repository_dependency]</title>
     </path>
   </g>
@@ -515,118 +515,139 @@
         <tspan x="1246.0" dy="0">类比审计与可运输性 受控试点</tspan>
       </text>
     </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/schemas/retrieval/evidence-retrieval-contract.schema.json" target="_top" data-node-id="evidence_retrieval_contract" data-group="governance" data-target="schemas/retrieval/evidence-retrieval-contract.schema.json" aria-label="案例、反例与边界证据检索 合同：Q38-I1 typed evidence-retrieval contract: accepts only a Q37 audited restricted seed; freezes question, scope, balanced query plan, inclusion/exclusion policy and stop condition; preserves support, counterexample, boundary, negative and failed-retrieval items with source-family identity, rights, provenance, digest, access time, grade, freshness, representativeness, selection history, unresolved gaps, claim ceiling and Q39 exports. Case count cannot establish mechanism or causal proof.">
+      <title>案例、反例与边界证据检索 合同 — Q38-I1 typed evidence-retrieval contract: accepts only a Q37 audited restricted seed; freezes question, scope, balanced query plan, inclusion/exclusion policy and stop condition; preserves support, counterexample, boundary, negative and failed-retrieval items with source-family identity, rights, provenance, digest, access time, grade, freshness, representativeness, selection history, unresolved gaps, claim ceiling and Q39 exports. Case count cannot establish mechanism or causal proof.</title>
+      <rect class="node" x="1230.0" y="2478.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2511.0">
+        <tspan x="1246.0" dy="0">案例、反例与边界证据检索 合同</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/tools/retrieval/validate_evidence_retrieval_gate.py" target="_top" data-node-id="evidence_retrieval_gate_validator" data-group="governance" data-target="tools/retrieval/validate_evidence_retrieval_gate.py" aria-label="案例、反例与边界证据检索 门禁：Q38-I1 fail-closed evidence-retrieval gate with stable exits 0 and 2-21. It blocks unaudited Q37 seeds, support-only search, negative deletion, duplicate-family counting, rights bypass, stale evidence, missing representativeness, quantity voting, similarity-to-mechanism promotion, stop-condition rewrite, selective exclusion, ceiling inflation, invalid provenance/digest, incomplete selection logs, missing Q39 exports, counterevidence override, temporal invalidity, unbounded search and dangling references.">
+      <title>案例、反例与边界证据检索 门禁 — Q38-I1 fail-closed evidence-retrieval gate with stable exits 0 and 2-21. It blocks unaudited Q37 seeds, support-only search, negative deletion, duplicate-family counting, rights bypass, stale evidence, missing representativeness, quantity voting, similarity-to-mechanism promotion, stop-condition rewrite, selective exclusion, ceiling inflation, invalid provenance/digest, incomplete selection logs, missing Q39 exports, counterevidence override, temporal invalidity, unbounded search and dangling references.</title>
+      <rect class="node" x="1230.0" y="2544.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2577.0">
+        <tspan x="1246.0" dy="0">案例、反例与边界证据检索 门禁</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/data/retrieval/pilot-q38-repository-evidence-retrieval.json" target="_top" data-node-id="evidence_retrieval_pilot" data-group="governance" data-target="data/retrieval/pilot-q38-repository-evidence-retrieval.json" aria-label="案例、反例与边界证据检索 受控试点：Q38-I1 bounded real-repository replay: one traceable support item, counterexample, boundary case, negative result and deliberately unperformed external retrieval, all bound to the frozen Q37 seed; 24 fixtures drive the real CLI. Negative and failed records export to Q39; external validity remains an explicit gap. No external fact, mechanism proof or real-world action is claimed.">
+      <title>案例、反例与边界证据检索 受控试点 — Q38-I1 bounded real-repository replay: one traceable support item, counterexample, boundary case, negative result and deliberately unperformed external retrieval, all bound to the frozen Q37 seed; 24 fixtures drive the real CLI. Negative and failed records export to Q39; external validity remains an explicit gap. No external fact, mechanism proof or real-world action is claimed.</title>
+      <rect class="node" x="1230.0" y="2610.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2643.0">
+        <tspan x="1246.0" dy="0">案例、反例与边界证据检索 受控试点</tspan>
+      </text>
+    </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/zhiyuan-writing-method.md#%E5%8F%8C%E6%9D%A5%E6%BA%90%E5%86%99%E4%BD%9C%E7%B4%A0%E6%9D%90%E6%B1%A0" target="_top" data-node-id="external_input" data-group="writing" data-target="docs/publication/zhiyuan-writing-method.md#双来源写作素材池" aria-label="外部输入源：笔记、新闻、文章、案例、记忆、现实事件等可追溯外部材料。">
       <title>外部输入源 — 笔记、新闻、文章、案例、记忆、现实事件等可追溯外部材料。</title>
-      <rect class="node" x="54.0" y="2630.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="70.0" y="2663.0">
+      <rect class="node" x="54.0" y="2828.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="2861.0">
         <tspan x="70.0" dy="0">外部输入源</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/zhiyuan-writing-method.md#%E5%8F%8C%E6%9D%A5%E6%BA%90%E5%86%99%E4%BD%9C%E7%B4%A0%E6%9D%90%E6%B1%A0" target="_top" data-node-id="ignition_increment" data-group="writing" data-target="docs/publication/zhiyuan-writing-method.md#双来源写作素材池" aria-label="点火增量输出源：claim、argument、mechanism、map、gap、residue、模型投影、分析与反馈返回项。">
       <title>点火增量输出源 — claim、argument、mechanism、map、gap、residue、模型投影、分析与反馈返回项。</title>
-      <rect class="node" x="54.0" y="2696.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="70.0" y="2729.0">
+      <rect class="node" x="54.0" y="2894.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="2927.0">
         <tspan x="70.0" dy="0">点火增量输出源</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/templates/publication/zhiyuan-writing-spec.md#%E5%8F%8C%E6%9D%A5%E6%BA%90%E7%B4%A0%E6%9D%90%E6%B1%A0" target="_top" data-node-id="source_pool" data-group="writing" data-target="templates/publication/zhiyuan-writing-spec.md#双来源素材池" aria-label="写作素材池：同时接收外部输入与已登记的点火增量输出，保存来源类型和 claim ceiling。">
       <title>写作素材池 — 同时接收外部输入与已登记的点火增量输出，保存来源类型和 claim ceiling。</title>
-      <rect class="node" x="54.0" y="2762.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="70.0" y="2795.0">
+      <rect class="node" x="54.0" y="2960.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="2993.0">
         <tspan x="70.0" dy="0">写作素材池</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/zhiyuan-writing-method.md" target="_top" data-node-id="zhiyuan_method" data-group="writing" data-target="docs/publication/zhiyuan-writing-method.md" aria-label="之元写作法 0.4.0 Current：以双来源素材池驱动 L6 心智层级跃迁与公共表达。">
       <title>之元写作法 0.4.0 Current — 以双来源素材池驱动 L6 心智层级跃迁与公共表达。</title>
-      <rect class="node" x="54.0" y="2828.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="70.0" y="2861.0">
+      <rect class="node" x="54.0" y="3026.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="3059.0">
         <tspan x="70.0" dy="0">之元写作法 0.4.0 Current</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/cases/jin-rise-case-source.md" target="_top" data-node-id="case_source" data-group="writing" data-target="docs/publication/cases/jin-rise-case-source.md" aria-label="Case source provenance：起始案例的公开来源链与版权边界。">
       <title>Case source provenance — 起始案例的公开来源链与版权边界。</title>
-      <rect class="node" x="54.0" y="2894.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="70.0" y="2927.0">
+      <rect class="node" x="54.0" y="3092.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="3125.0">
         <tspan x="70.0" dy="0">Case source provenance</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/reports/publication/jin-rise-point-fire-analysis.md" target="_top" data-node-id="point_fire_analysis" data-group="writing" data-target="reports/publication/jin-rise-point-fire-analysis.md" aria-label="Point-fire analysis：点火对案例生成的可追溯增量结构，也可进入写作素材池。">
       <title>Point-fire analysis — 点火对案例生成的可追溯增量结构，也可进入写作素材池。</title>
-      <rect class="node" x="54.0" y="2960.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="70.0" y="2993.0">
+      <rect class="node" x="54.0" y="3158.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="3191.0">
         <tspan x="70.0" dy="0">Point-fire analysis</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/works/when-an-army-believes-its-own-back.md" target="_top" data-node-id="accepted_work" data-group="writing" data-target="docs/publication/works/when-an-army-believes-its-own-back.md" aria-label="Accepted work：经审查接受且保持来源与证据边界的公共作品。">
       <title>Accepted work — 经审查接受且保持来源与证据边界的公共作品。</title>
-      <rect class="node" x="54.0" y="3026.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="70.0" y="3059.0">
+      <rect class="node" x="54.0" y="3224.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="3257.0">
         <tspan x="70.0" dy="0">Accepted work</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/zhiyuan-writing-showcase.md" target="_top" data-node-id="showcase" data-group="writing" data-target="docs/publication/zhiyuan-writing-showcase.md" aria-label="成果索引：人类可读的完整成果导航。">
       <title>成果索引 — 人类可读的完整成果导航。</title>
-      <rect class="node" x="54.0" y="3092.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="70.0" y="3125.0">
+      <rect class="node" x="54.0" y="3290.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="3323.0">
         <tspan x="70.0" dy="0">成果索引</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/data/publication/zhiyuan-writing-showcase.json" target="_top" data-node-id="showcase_registry" data-group="writing" data-target="data/publication/zhiyuan-writing-showcase.json" aria-label="成果 registry：机器可读的排序、路径、哈希、review 与 claim ceiling。">
       <title>成果 registry — 机器可读的排序、路径、哈希、review 与 claim ceiling。</title>
-      <rect class="node" x="54.0" y="3158.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="70.0" y="3191.0">
+      <rect class="node" x="54.0" y="3356.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="3389.0">
         <tspan x="70.0" dy="0">成果 registry</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="public_response" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="Public work / response：作品、读者响应、作者修订与现实反例。">
       <title>Public work / response — 作品、读者响应、作者修订与现实反例。</title>
-      <rect class="node" x="642.0" y="2630.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2652.0">
+      <rect class="node" x="642.0" y="2828.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2850.0">
         <tspan x="658.0" dy="0">Public work /</tspan>
         <tspan x="658.0" dy="18">response</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="provenance_capture" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="Provenance capture：登记主体、渠道、时间、原文范围、版本和解释限制。">
       <title>Provenance capture — 登记主体、渠道、时间、原文范围、版本和解释限制。</title>
-      <rect class="node" x="642.0" y="2696.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2729.0">
+      <rect class="node" x="642.0" y="2894.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2927.0">
         <tspan x="658.0" dy="0">Provenance capture</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="candidate_return" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="Candidate source / gap / reality feedback：合格反馈只成为候选来源、缺口或现实反馈，不直接升级真值。">
       <title>Candidate source / gap / reality feedback — 合格反馈只成为候选来源、缺口或现实反馈，不直接升级真值。</title>
-      <rect class="node" x="642.0" y="2762.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2784.0">
+      <rect class="node" x="642.0" y="2960.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2982.0">
         <tspan x="658.0" dy="0">Candidate source /</tspan>
         <tspan x="658.0" dy="18">gap / reality feedback</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="feedback_routes" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="返回 Q12 / Q13 / MCF / PSD / ARN / iteration：由适用组件决定下一行动并生成新的可追溯增量。">
       <title>返回 Q12 / Q13 / MCF / PSD / ARN / iteration — 由适用组件决定下一行动并生成新的可追溯增量。</title>
-      <rect class="node" x="642.0" y="2828.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2850.0">
+      <rect class="node" x="642.0" y="3026.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="3048.0">
         <tspan x="658.0" dy="0">返回 Q12 /</tspan>
         <tspan x="658.0" dy="18">Q13 / MCF / PSD / ARN / iteration</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="no_l7" data-group="boundaries" data-target="ARCHITECTURE.md#七层关系" aria-label="不增加 L7：系统图和写作素材池都在现有 L0—L6 与 overlay 内工作。">
       <title>不增加 L7 — 系统图和写作素材池都在现有 L0—L6 与 overlay 内工作。</title>
-      <rect class="node" x="1230.0" y="2630.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="1246.0" y="2663.0">
+      <rect class="node" x="1230.0" y="2828.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2861.0">
         <tspan x="1246.0" dy="0">不增加 L7</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/FOUNDATION.md" target="_top" data-node-id="no_truth_upgrade" data-group="boundaries" data-target="FOUNDATION.md" aria-label="不自动升级真值：节点、连线、生成结果、测试与点击量都不能制造事实或因果。">
       <title>不自动升级真值 — 节点、连线、生成结果、测试与点击量都不能制造事实或因果。</title>
-      <rect class="node" x="1230.0" y="2696.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="1246.0" y="2729.0">
+      <rect class="node" x="1230.0" y="2894.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2927.0">
         <tspan x="1246.0" dy="0">不自动升级真值</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/project-current-state.md" target="_top" data-node-id="no_totality_proof" data-group="boundaries" data-target="docs/project-current-state.md" aria-label="不证明理论完整：完整图是当前导航投影，不是永久总图或理论完备性证明。">
       <title>不证明理论完整 — 完整图是当前导航投影，不是永久总图或理论完备性证明。</title>
-      <rect class="node" x="1230.0" y="2762.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="1246.0" y="2795.0">
+      <rect class="node" x="1230.0" y="2960.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2993.0">
         <tspan x="1246.0" dy="0">不证明理论完整</tspan>
       </text>
     </a>

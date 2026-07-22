@@ -1,0 +1,694 @@
+{
+  "actual_component_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "accepted_work",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_contract",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_gate_validator",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_pilot_q34",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai_guide",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_contract",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_gate_validator",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_pilot",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "arn",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "candidate_return",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "case_source",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "charter",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_history_remediation",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_jurisdiction_registry",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_material_classification",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_non_republication_principle",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_publication_gate_validator",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_source_rights",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_tests",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "current_state",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_claim_contract",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_gate_validator",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_pilot_q33",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "evidence_retrieval_contract",
+      "reason": "Q38-I1 new governance component: evidence_retrieval_contract"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "evidence_retrieval_gate_validator",
+      "reason": "Q38-I1 new governance component: evidence_retrieval_gate_validator"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "evidence_retrieval_pilot",
+      "reason": "Q38-I1 new governance component: evidence_retrieval_pilot"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external_input",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "feedback_routes",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation_data",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "function_os",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "historical_reports",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ignition_increment",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "incremental_execution",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_contract",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_gate_validator",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_pilot",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration_manifest_contract",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l0",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l1",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l2",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l3",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l4",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l5",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l6",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "licensing",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "mcf",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_l7",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_totality_proof",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_truth_upgrade",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_contract",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_gate_validator",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_pilot_q34",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "pages_pipeline",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "point_fire_analysis",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "project_component_registry",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_calculator",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_topology",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "provenance_capture",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "psd",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "public_response",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q12",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q13",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q14",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "readme",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase_registry",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "source_pool",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "summary",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sustainability",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sync",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_layout",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "system_map_projection",
+      "reason": "Q38-I1 adds three declared map nodes and synchronizes the complete front-door node set."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "usage",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "zhiyuan_method",
+      "reason": "Q38-I1 evidence-retrieval governance does not alter this component's semantics."
+    }
+  ],
+  "actual_surface_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent.handoff",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai.start",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance",
+      "reason": "Q38-I1 adds evidence-retrieval governance and candidate-state documentation."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external.pages_homepage",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.ai_guide",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "human.current_state",
+      "reason": "Q38-I1 adds evidence-retrieval governance and candidate-state documentation."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.pages_source",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.readme",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.summary",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.usage",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "machine.llms",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.iteration",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.result_template",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.review_template",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.task_template",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.changelog",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.versioning",
+      "reason": "Q38-I1 does not alter this synchronization surface."
+    }
+  ],
+  "base_identity": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
+  "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
+  "closure_complete": true,
+  "closure_hash": "a3b8acf886cb8af822e3cea01e4be61de4053ca6a7f392df38e26f97ba7860d9",
+  "closure_version": "1.0.0",
+  "fixpoint": {
+    "iterations": 2,
+    "reached": true
+  },
+  "head_identity": "external_exact_head_attestation",
+  "registry_derived_surfaces": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "required_component_decisions": [
+    "current_state",
+    "evidence_retrieval_contract",
+    "evidence_retrieval_gate_validator",
+    "evidence_retrieval_pilot",
+    "historical_reports",
+    "incremental_execution",
+    "iteration",
+    "iteration_manifest_contract",
+    "pages_pipeline",
+    "project_component_registry",
+    "propagation_calculator",
+    "readme",
+    "sync",
+    "system_map_layout",
+    "system_map_projection"
+  ],
+  "required_surface_decisions": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "residue": [],
+  "resolved_components": [
+    "current_state",
+    "evidence_retrieval_contract",
+    "evidence_retrieval_gate_validator",
+    "evidence_retrieval_pilot",
+    "historical_reports",
+    "incremental_execution",
+    "iteration",
+    "iteration_manifest_contract",
+    "pages_pipeline",
+    "project_component_registry",
+    "propagation_calculator",
+    "readme",
+    "sync",
+    "system_map_layout",
+    "system_map_projection"
+  ],
+  "seed_components": [
+    "current_state",
+    "evidence_retrieval_contract",
+    "evidence_retrieval_gate_validator",
+    "evidence_retrieval_pilot",
+    "historical_reports",
+    "incremental_execution",
+    "iteration_manifest_contract",
+    "pages_pipeline",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_layout",
+    "system_map_projection"
+  ],
+  "seed_paths": [
+    "data/architecture/interactive-system-map-layout.json",
+    "data/architecture/interactive-system-map.json",
+    "data/operations/component-execution-profiles.json",
+    "data/operations/iterations/121Q38.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q38-closure.json",
+    "data/operations/propagation/121Q38-impact-report.md",
+    "data/operations/propagation/121Q38-request.json",
+    "data/operations/propagation/121Q38-residue.json",
+    "data/operations/propagation/121Q38-system-map-delta.json",
+    "data/retrieval/fixtures/01-valid-bounded-repository-pilot.json",
+    "data/retrieval/fixtures/02-schema-missing-plan.json",
+    "data/retrieval/fixtures/03-unaudited-q37-seed.json",
+    "data/retrieval/fixtures/04-support-only-query-plan.json",
+    "data/retrieval/fixtures/05-negative-result-deleted.json",
+    "data/retrieval/fixtures/06-duplicate-family-counted.json",
+    "data/retrieval/fixtures/07-unknown-rights-published.json",
+    "data/retrieval/fixtures/08-stale-time-sensitive-evidence.json",
+    "data/retrieval/fixtures/09-representativeness-missing.json",
+    "data/retrieval/fixtures/10-quantity-vote.json",
+    "data/retrieval/fixtures/11-mechanism-upgrade.json",
+    "data/retrieval/fixtures/12-stop-condition-rewritten.json",
+    "data/retrieval/fixtures/13-selective-negative-exclusion.json",
+    "data/retrieval/fixtures/14-claim-ceiling-overreach.json",
+    "data/retrieval/fixtures/15-bad-provenance-digest.json",
+    "data/retrieval/fixtures/16-selection-log-missing.json",
+    "data/retrieval/fixtures/17-q39-export-missing.json",
+    "data/retrieval/fixtures/18-counterevidence-overridden.json",
+    "data/retrieval/fixtures/19-future-as-of-time.json",
+    "data/retrieval/fixtures/20-unbounded-not-stopped.json",
+    "data/retrieval/fixtures/21-dangling-selection-evidence-ref.json",
+    "data/retrieval/fixtures/22-citation-only-body-publication.json",
+    "data/retrieval/fixtures/23-q37-wrong-permission.json",
+    "data/retrieval/fixtures/24-case-count-proves-truth.json",
+    "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+    "docs/project-current-state.md",
+    "docs/retrieval/q38-i1-architecture-decision.md",
+    "docs/retrieval/q38-interfaces.md",
+    "docs/retrieval/q38-legacy-lab-salvage-matrix.json",
+    "pages/generated/ignition-system-map.svg",
+    "reports/operations/121Q38-completion-seal.json",
+    "schemas/retrieval/evidence-retrieval-contract.schema.json",
+    "tests/retrieval/test_evidence_retrieval_gate.py",
+    "tests/test_human_front_door.py",
+    "tools/retrieval/build_q38_fixtures.py",
+    "tools/retrieval/validate_evidence_retrieval_gate.py",
+    "tools/validate_human_front_door.py"
+  ],
+  "system_map_impact": {
+    "added_edges": [],
+    "added_nodes": [
+      "evidence_retrieval_contract",
+      "evidence_retrieval_gate_validator",
+      "evidence_retrieval_pilot"
+    ],
+    "changed_edges": [],
+    "changed_nodes": [],
+    "decision": "CHANGE",
+    "reason": "Three Q38 evidence-retrieval governance components are added to registry and layout.",
+    "removed_edges": [],
+    "removed_nodes": [],
+    "unmapped_residue": []
+  },
+  "task_id": "121Q38",
+  "typed_paths": [
+    {
+      "claim_ceiling": "declared repository materialization relation only; no real-world causal identification",
+      "creates_sync_obligation": true,
+      "propagation_mode": "automatic",
+      "relation_class": "publishes",
+      "relation_domain": "repository_dependency",
+      "relation_id": "incremental_builds_pages",
+      "source": "incremental_execution",
+      "target": "pages_pipeline"
+    },
+    {
+      "claim_ceiling": "declared repository materialization relation only; no real-world causal identification",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "incremental_materializes_iteration",
+      "source": "incremental_execution",
+      "target": "iteration"
+    },
+    {
+      "claim_ceiling": "declared repository materialization relation only; no real-world causal identification",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency",
+      "relation_id": "incremental_projects_map",
+      "source": "incremental_execution",
+      "target": "system_map_projection"
+    },
+    {
+      "claim_ceiling": "declared repository materialization relation only; no real-world causal identification",
+      "creates_sync_obligation": true,
+      "propagation_mode": "required_assessment",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation",
+      "relation_id": "incremental_requires_sync",
+      "source": "incremental_execution",
+      "target": "sync"
+    },
+    {
+      "claim_ceiling": "deterministic repository derivation",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "registry_generates_projection",
+      "source": "project_component_registry",
+      "target": "system_map_projection"
+    },
+    {
+      "claim_ceiling": "governance obligation only",
+      "creates_sync_obligation": true,
+      "propagation_mode": "required_assessment",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation",
+      "relation_id": "sync_requires_readme",
+      "source": "sync",
+      "target": "readme"
+    }
+  ]
+}

@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.1",
+    "component_registry_version": "1.1.2",
     "topology_version": "1.1.0",
     "layout_version": "1.1.0"
   },
@@ -472,6 +472,30 @@
       "group": "governance",
       "target": "data/analogy/pilot-real-repo-analogy-audit.json",
       "description": "Q37-I1 real-repo pilot: deterministic repo-local replay of an analogy bundle against the real Q34 committed claim (fix.analogy_as_mechanism from data/discovery/fixtures/05-analogy-as-mechanism.json), asserting the fail-closed gate passes (exit 0) and that Q38 case retrieval remains gated (q38_search_permission NOT_ALLOWED / ALLOWED_AS_RESTRICTED_SEED only). Plus 30 attack/positive fixtures. No Main mutation, no Q38 case retrieval, no external real-world system access or control.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "evidence_retrieval_contract",
+      "label": "案例、反例与边界证据检索 合同",
+      "group": "governance",
+      "target": "schemas/retrieval/evidence-retrieval-contract.schema.json",
+      "description": "Q38-I1 typed evidence-retrieval contract: accepts only a Q37 audited restricted seed; freezes question, scope, balanced query plan, inclusion/exclusion policy and stop condition; preserves support, counterexample, boundary, negative and failed-retrieval items with source-family identity, rights, provenance, digest, access time, grade, freshness, representativeness, selection history, unresolved gaps, claim ceiling and Q39 exports. Case count cannot establish mechanism or causal proof.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "evidence_retrieval_gate_validator",
+      "label": "案例、反例与边界证据检索 门禁",
+      "group": "governance",
+      "target": "tools/retrieval/validate_evidence_retrieval_gate.py",
+      "description": "Q38-I1 fail-closed evidence-retrieval gate with stable exits 0 and 2-21. It blocks unaudited Q37 seeds, support-only search, negative deletion, duplicate-family counting, rights bypass, stale evidence, missing representativeness, quantity voting, similarity-to-mechanism promotion, stop-condition rewrite, selective exclusion, ceiling inflation, invalid provenance/digest, incomplete selection logs, missing Q39 exports, counterevidence override, temporal invalidity, unbounded search and dangling references.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "evidence_retrieval_pilot",
+      "label": "案例、反例与边界证据检索 受控试点",
+      "group": "governance",
+      "target": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "description": "Q38-I1 bounded real-repository replay: one traceable support item, counterexample, boundary case, negative result and deliberately unperformed external retrieval, all bound to the frozen Q37 seed; 24 fixtures drive the real CLI. Negative and failed records export to Q39; external validity remains an explicit gap. No external fact, mechanism proof or real-world action is claimed.",
       "lifecycle_status": "draft_candidate"
     },
     {
