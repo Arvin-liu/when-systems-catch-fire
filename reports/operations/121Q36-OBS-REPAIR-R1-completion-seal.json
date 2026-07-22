@@ -1,0 +1,60 @@
+{
+  "task_id": "121Q36-OBS-REPAIR-R1",
+  "status": "LOCAL_REPAIR_CANDIDATE_AWAITING_PUBLICATION_AND_INDEPENDENT_RE_REVIEW",
+  "method_version": "1.3.0",
+  "lifecycle": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": false
+  },
+  "phase_b": {
+    "draft_pr": null,
+    "branch": "repair/121q36-obs-r1-evidence-resolution",
+    "base": "repair/121q35-r1-authority-resolution",
+    "base_head": "167f254e637259d57b7ce09623de982dda527f54",
+    "merge_commit": "e732ebe7e0faf8355f3885d9c98f3f7c70aadaf3",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "agent-results/full-repair-train/121q36-obs-repair-r1-receipt.json",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
+    "claim_ceiling": "candidate_only: Q36-OBS repair-r1 binds Q34/Q35 predecessors, prediction inputs, freeze/reveal records, rule versions and observation sources to repository-contained paths, exact Git commit/blob objects and actual bytes. Local builder evidence only; no independent review, remote check, external action, Accepted, Ready, Merged, Current or real-world authority claim."
+  },
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "synchronization_registry": {
+    "path": "data/operations/synchronization-surfaces.json",
+    "version": "1.2.0"
+  },
+  "external_attestations": [
+    {
+      "surface_id": "external.pages_homepage",
+      "stage": "post_merge",
+      "status": "pending",
+      "authority": "pull_request_body_and_1111_receipt",
+      "evidence_refs": [
+        "external:live_refetch:NOT_CHECKED_LOCAL_ONLY"
+      ],
+      "live_state_locally_verifiable": false
+    }
+  ],
+  "propagation_closure": {
+    "closure_hash": "51e01a6d8cd9f1fea310d44498fac380223e9402391ad0b5262d0c3ff2692b5a",
+    "closure_path": "data/operations/propagation/121Q36-OBS-REPAIR-R1-closure.json",
+    "complete": true,
+    "unresolved_residue": []
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  }
+}

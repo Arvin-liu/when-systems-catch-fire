@@ -5,8 +5,10 @@ fail-closed exit code. The gate must never PASS by free text; it must return a
 stable, machine-readable exit code.
 """
 import json
+import copy
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -15,6 +17,7 @@ GATE = ROOT / "tools" / "discovery" / "validate_commitment_gate.py"
 REGISTRY = ROOT / "data" / "discovery" / "evidence-resolvable-registry.json"
 FIXTURES = ROOT / "data" / "discovery" / "fixtures"
 CLAIMS = ROOT / "data" / "discovery" / "claims"
+PILOT = CLAIMS / "q33-seven-governance-components-current.json"
 MAIN_HEAD = "81edff4039619b8343a82cb1b84785c8a9f6a990"
 
 
@@ -31,6 +34,20 @@ def run_gate(claim_path):
     return result.returncode, report
 
 
+def run_mutated_pilot(mutator):
+    claim = json.loads(PILOT.read_text())
+    mutator(claim)
+    with tempfile.NamedTemporaryFile(
+        "w", suffix=".json", delete=False, dir=str(FIXTURES)
+    ) as handle:
+        json.dump(claim, handle)
+        path = Path(handle.name)
+    try:
+        return run_gate(path)
+    finally:
+        path.unlink()
+
+
 class CommitmentGateFixtureTests(unittest.TestCase):
     def assert_exit(self, path, expected_code):
         code, report = run_gate(path)
@@ -39,7 +56,7 @@ class CommitmentGateFixtureTests(unittest.TestCase):
             f"{path.name}: expected exit {expected_code}, got {code}; errors={report.get('errors')}")
 
     def test_01_allow_commit_positive(self):
-        self.assert_exit(FIXTURES / "01-allow-commit-positive.json", 0)
+        self.assert_exit(PILOT, 0)
 
     def test_02_premature_no_evidence(self):
         self.assert_exit(FIXTURES / "02-premature-no-evidence.json", 5)
@@ -72,7 +89,7 @@ class CommitmentGateFixtureTests(unittest.TestCase):
         self.assert_exit(FIXTURES / "11-external-world-no-attestation.json", 12)
 
     def test_q33_seven_components_pilot_committable(self):
-        code, report = run_gate(CLAIMS / "q33-seven-governance-components-current.json")
+        code, report = run_gate(PILOT)
         self.assertEqual(code, 0, f"pilot claim must pass; errors={report.get('errors')}")
         self.assertEqual(report.get("decision"), "COMMIT")
 
@@ -94,18 +111,63 @@ class CommitmentGateContractTests(unittest.TestCase):
             bad.unlink()
 
     def test_committed_state_requires_independent_reviewer(self):
-        # verifier == discovered_by actor must be rejected (self-approval)
-        import copy, tempfile
-        claim = json.loads((FIXTURES / "01-allow-commit-positive.json").read_text())
-        claim["verifier"] = dict(claim["discovered_by"])
-        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, dir=str(FIXTURES)) as tf:
-            json.dump(claim, tf)
-            tmp = Path(tf.name)
-        try:
-            code, _ = run_gate(tmp)
-            self.assertEqual(code, 13)
-        finally:
-            tmp.unlink()
+        code, _ = run_mutated_pilot(
+            lambda claim: claim.update({"verifier": copy.deepcopy(claim["discovered_by"])})
+        )
+        self.assertEqual(code, 13)
+
+
+class CommitmentGateRepairAttackTests(unittest.TestCase):
+    def test_original_unrelated_fictional_zero_digest_bypass_is_rejected(self):
+        code, report = run_gate(
+            FIXTURES / "12-independent-review-bypass-reproduction.json"
+        )
+        self.assertEqual(code, 21, report)
+
+    def test_unrelated_claim_body_breaks_canonical_digest(self):
+        code, report = run_mutated_pilot(
+            lambda claim: claim.update({"claim_text": "unrelated substituted claim"})
+        )
+        self.assertEqual(code, 15, report)
+
+    def test_fictional_verifier_cannot_self_declare_independence(self):
+        def mutate(claim):
+            claim["verifier"]["actor"] = "fictional-reviewer"
+            claim["review_decision"]["reviewer_id"] = "fictional-reviewer"
+            for evidence in claim["evidence"]:
+                evidence["independence"] = "independent"
+
+        code, report = run_mutated_pilot(mutate)
+        self.assertEqual(code, 17, report)
+
+    def test_zero_actual_byte_digest_is_rejected(self):
+        code, report = run_mutated_pilot(
+            lambda claim: claim["evidence"][0].update(
+                {"sha256": "sha256:" + "0" * 64}
+            )
+        )
+        self.assertEqual(code, 21, report)
+
+    def test_wrong_evidence_scope_is_rejected(self):
+        code, report = run_mutated_pilot(
+            lambda claim: claim["evidence"][0].update({"scope": "unrelated_scope"})
+        )
+        self.assertEqual(code, 16, report)
+
+    def test_fabricated_exact_commit_is_rejected(self):
+        code, report = run_mutated_pilot(
+            lambda claim: claim["evidence"][0].update(
+                {"exact_commit": "deadbeef" * 5}
+            )
+        )
+        self.assertEqual(code, 16, report)
+
+    def test_claim_cannot_be_its_own_independent_evidence(self):
+        def mutate(claim):
+            claim["evidence"][0]["path"] = PILOT.relative_to(ROOT).as_posix()
+
+        code, report = run_mutated_pilot(mutate)
+        self.assertEqual(code, 20, report)
 
 
 if __name__ == "__main__":
