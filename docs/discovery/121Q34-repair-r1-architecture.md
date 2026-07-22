@@ -38,3 +38,11 @@ python3 tools/discovery/validate_commitment_gate.py \
 6. Reject null, empty, placeholder, all-zero, mismatched, unrelated-scope, wrong-head, or fictional identity inputs with stable nonzero exit codes.
 
 The validator proves repository-scoped contract satisfaction only. It does not perform independent review or establish real-world truth, acceptance, merge, or Current state.
+
+## R4 local freeze evidence
+
+The clean repair candidate passed the real commitment-gate CLI and 22 Q34 tests, including unrelated-claim, fictional-verifier, zero-digest, wrong-scope/head, self-reference, and combined original-bypass attacks. The positive Q33 pilot passed with its canonical claim digest, exact Git object bindings, actual-byte digests, canonical reviewer identity, and external review-decision binding.
+
+The foundation replay and operations regression passed: 60/60 foundation validation checks, 5/5 core-claim replays, 176 operations/foundation tests with one declared skip, deterministic propagation `--check`, iteration synchronization, human front door, and system-map generation. Production-execution-authority remained 18/18 PASS.
+
+Exact-parent debt parity was preserved. Both original Q34 frozen head and this repair candidate produced the same two `era_resolver` failures (92 passed), and the same generated-output-authority result under `unittest`: 4 passed, 1 stale-Q32I failure, and 2 legacy-field errors. This repair neither hides nor expands that inherited debt. Remote CI, exact repair head, annotated tag, and the 1111 receipt remain external R4 attestations.
