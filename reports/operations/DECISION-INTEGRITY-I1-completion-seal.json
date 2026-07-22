@@ -10,14 +10,14 @@
     "ready_for_gpt_verification": false
   },
   "phase_b": {
-    "draft_pr": 73,
+    "draft_pr": 89,
     "branch": "repair/decision-integrity-r1-principle-process-binding",
     "base": "repair/symbolic-sphere-r1-reference-integrity",
     "base_head": "213dced90f1e9b1f1992a148ee10fc0844917490",
     "head_binding": {
       "mode": "external_exact_head_attestation",
       "authority": "pull_request_body_and_1111_receipt",
-      "receipt_path": "agent-results/IGNITION-20260722-DECISION-INTEGRITY-I1-decision-integrity-i1-execution-receipt.json",
+      "receipt_path": "agent-results/remaining-repair-train/DECISION-INTEGRITY-I1-receipt.json",
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
