@@ -1,0 +1,406 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SCIENTIFIC-METACOGNITION-I1 Scientific Metacognition & Epistemic-State Control Plane",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "task_id",
+    "capability_id",
+    "parent_binding",
+    "evidence_registry",
+    "records",
+    "facts",
+    "rule_assertions",
+    "conclusion"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.0.0"
+    },
+    "task_id": {
+      "const": "SCIENTIFIC-METACOGNITION-I1"
+    },
+    "capability_id": {
+      "const": "epistemic_state_control_plane"
+    },
+    "parent_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_id",
+        "exact_head"
+      ],
+      "properties": {
+        "task_id": {
+          "const": "DECISION-INTEGRITY-I1"
+        },
+        "exact_head": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        }
+      }
+    },
+    "evidence_registry": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "records": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "record_id",
+          "record_type",
+          "epistemic_state_ledger",
+          "committed_knowledge",
+          "candidate_hypotheses",
+          "conflicts",
+          "retracted_states",
+          "insufficient_evidence",
+          "not_searched",
+          "temporarily_unobservable",
+          "structurally_unobservable",
+          "non_identifiable",
+          "known_unknowns",
+          "unknown_acquisition_paths",
+          "visibility_bias",
+          "decision_integrity_risk",
+          "unresolved_failures",
+          "cost_risk_time_priority",
+          "stop_condition",
+          "evidence_requirement",
+          "next_action_type",
+          "voi_like_ranking",
+          "authorized_acquisition_plan",
+          "feedback_transition",
+          "replanning",
+          "claim_ceiling"
+        ],
+        "properties": {
+          "record_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record_type": {
+            "enum": [
+              "REAL_TRAIN_UNKNOWN_LEDGER",
+              "NON_IDENTIFIABLE_UNKNOWN"
+            ]
+          },
+          "epistemic_state_ledger": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "committed_knowledge": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "candidate_hypotheses": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "conflicts": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "retracted_states": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "insufficient_evidence": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "not_searched": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "temporarily_unobservable": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "structurally_unobservable": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "non_identifiable": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "known_unknowns": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "unknown_acquisition_paths": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "visibility_bias": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "decision_integrity_risk": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "unresolved_failures": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "cost_risk_time_priority": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "stop_condition": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "evidence_requirement": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "next_action_type": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "voi_like_ranking": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "authorized_acquisition_plan": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "feedback_transition": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "replanning": {
+            "$ref": "#/$defs/boundedField"
+          },
+          "claim_ceiling": {
+            "$ref": "#/$defs/boundedField"
+          }
+        }
+      }
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "self_rating_not_evidence",
+        "unknown_needs_evidence_transition",
+        "non_identifiable_not_solved",
+        "dominant_view_not_fact",
+        "good_outcome_not_bad_process_erasure",
+        "failure_changes_plan",
+        "retracted_not_active",
+        "plan_authorized_and_stopped",
+        "exploration_bounded",
+        "cost_risk_present",
+        "ceiling_noninflation",
+        "no_circular_evidence"
+      ],
+      "properties": {
+        "self_rating_not_evidence": {
+          "type": "boolean"
+        },
+        "unknown_needs_evidence_transition": {
+          "type": "boolean"
+        },
+        "non_identifiable_not_solved": {
+          "type": "boolean"
+        },
+        "dominant_view_not_fact": {
+          "type": "boolean"
+        },
+        "good_outcome_not_bad_process_erasure": {
+          "type": "boolean"
+        },
+        "failure_changes_plan": {
+          "type": "boolean"
+        },
+        "retracted_not_active": {
+          "type": "boolean"
+        },
+        "plan_authorized_and_stopped": {
+          "type": "boolean"
+        },
+        "exploration_bounded": {
+          "type": "boolean"
+        },
+        "cost_risk_present": {
+          "type": "boolean"
+        },
+        "ceiling_noninflation": {
+          "type": "boolean"
+        },
+        "no_circular_evidence": {
+          "type": "boolean"
+        }
+      }
+    },
+    "rule_assertions": {
+      "type": "array",
+      "minItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "rule_id",
+          "status",
+          "evidence_refs",
+          "effect"
+        ],
+        "properties": {
+          "rule_id": {
+            "enum": [
+              "self_rating_not_evidence",
+              "unknown_needs_evidence_transition",
+              "non_identifiable_not_solved",
+              "dominant_view_not_fact",
+              "good_outcome_not_bad_process_erasure",
+              "failure_changes_plan",
+              "retracted_not_active",
+              "plan_authorized_and_stopped",
+              "exploration_bounded",
+              "cost_risk_present",
+              "ceiling_noninflation",
+              "no_circular_evidence"
+            ]
+          },
+          "status": {
+            "enum": [
+              "PASS",
+              "FAIL"
+            ]
+          },
+          "evidence_refs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "effect": {
+            "enum": [
+              "ALLOW_WITHIN_CEILING",
+              "BLOCK",
+              "DOWNGRADE"
+            ]
+          }
+        }
+      }
+    },
+    "conclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "statement",
+        "claim_ceiling",
+        "history_preserved",
+        "external_action_performed"
+      ],
+      "properties": {
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "claim_ceiling": {
+          "type": "string",
+          "minLength": 1
+        },
+        "history_preserved": {
+          "type": "boolean"
+        },
+        "external_action_performed": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "boundedField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "value",
+        "evidence_refs"
+      ],
+      "properties": {
+        "status": {
+          "const": "RECORDED"
+        },
+        "value": {
+          "type": [
+            "string",
+            "boolean",
+            "number",
+            "array",
+            "object",
+            "null"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_id",
+        "artifact",
+        "exact_head",
+        "artifact_digest",
+        "rights_status"
+      ],
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artifact": {
+          "type": "string",
+          "minLength": 1
+        },
+        "exact_head": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "artifact_digest": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "rights_status": {
+          "enum": [
+            "REPOSITORY_INTERNAL",
+            "PUBLIC_METADATA_ONLY"
+          ]
+        },
+        "repository_relative_path": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Repository-relative path of the artifact as pinned to commit_sha. Read-only Git object reference; never the mutable working tree."
+        },
+        "commit_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$",
+          "description": "Exact 40-hex commit SHA at which the artifact bytes are pinned. Fail-closed: must resolve to a real Git object."
+        },
+        "blob_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$",
+          "description": "git rev-parse {commit_sha}:{repository_relative_path}. Fail-closed: must equal the real blob SHA."
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "description": "sha256 of raw bytes of git show {commit_sha}:{repository_relative_path} (no strip/normalize). Fail-closed: must equal the real object hash."
+        },
+        "record_type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Typed classification of the evidence record (e.g. PREDECESSOR_PILOT, RETRIEVED_BYTE, FAILURE_LINEAGE)."
+        },
+        "declared_role": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Declared role of this evidence within the capability bundle."
+        }
+      }
+    }
+  }
+}
