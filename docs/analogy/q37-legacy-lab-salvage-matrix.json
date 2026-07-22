@@ -1,0 +1,109 @@
+{
+  "matrix_type": "legacy_lab_salvage",
+  "task_id": "121Q37-I1",
+  "archived_branch": "lab/121q37-analogy-audit-night",
+  "archived_head": "178c3b1226deb887b8bf620fac80c15fd97d5fc4",
+  "archive_tag": "archive/lab-121q37-analogy-audit-night",
+  "assessed_against_exact_head": "02a87221b86cf39217f8c6b3c63e0737a0e2de98",
+  "assessed_at": "2026-07-21T21:30:00+08:00",
+  "policy": "annotated tag preserved; no wholesale merge/cherry-pick; salvage only concepts still conforming to Q34-Q36 contracts; reject stale/over-scoped/evidence-less/structure-as-mechanism/Q38-Q39 assets",
+  "summary": {
+    "assets_total": 7,
+    "salvaged_concepts": 6,
+    "rejected_implementations": 3,
+    "deferred_to_q38_q39": 1
+  },
+  "entries": [
+    {
+      "asset": "data/analogy/analogy-candidates.json",
+      "lab_path": "data/analogy/analogy-candidates.json",
+      "assessment": "Candidate data is well-formed and already carries structural_correspondence, surface_similarity, non_correspondence_residue, hidden_premise_transfer, negative_transfer, productive_mismatch and claim_ceiling. The example ana_001 (fixed_point_theory -> change_propagation) is a clean STRUCTURAL_ANALOGY seed usable as a Q37 fixture.",
+      "disposition": "SALVAGE_CONCEPTS",
+      "rationale": "Concept shape aligns with Q37 spec; data is repo-internal and honest. The file FORMAT (untyped registry) is rejected, not the idea.",
+      "canonical_target": "data/analogy/analogy-audit-contract.example.json (canonical 5-part shape); ana_001 reused as a fixture seed."
+    },
+    {
+      "asset": "data/analogy/non-correspondence-residue.json",
+      "lab_path": "data/analogy/non-correspondence-residue.json",
+      "assessment": "Residue linkage table; each residue entry references an analogy_id. Concept is exactly the Q37 'known mismatches must not be hidden' rule.",
+      "disposition": "SALVAGE_CONCEPT",
+      "rationale": "Directly maps to mapping.known_mismatches + audit 'suspiciously clean' semantic check.",
+      "canonical_target": "mapping.known_mismatches / mapping.omitted_variables"
+    },
+    {
+      "asset": "schemas/analogy/analogy-audit.schema.json",
+      "lab_path": "schemas/analogy/analogy-audit.schema.json",
+      "lab_size_bytes": 396,
+      "assessment": "Untyped placeholder: {registry_type, version, entries} with no enums, no mechanism-evidence/transportability/audit-decision parts, no Q34-Q36 bindings, no exact_head/provenance. Too thin for the canonical contract.",
+      "disposition": "REJECT",
+      "rationale": "Does not express the required five-part typed contract; would under-type the audit and allow structure to masquerade as mechanism.",
+      "canonical_target": "schemas/analogy/analogy-audit-contract.schema.json (new canonical)"
+    },
+    {
+      "asset": "tools/analogy/validate_analogy_audit.py",
+      "lab_path": "tools/analogy/validate_analogy_audit.py",
+      "lab_size_bytes": 2623,
+      "assessment": "Toy validator: single pass/fail (exit 0/1), checks presence of domains/residue/hidden-premise/claim-ceiling only. No per-family fail-closed exit codes, no mapping cardinality/directionality, no scale/time/context shift checks, no mechanism-evidence distinction, no transportability assessment, no Q34/Q35/Q33 gates, no exact_head/digest binding.",
+      "disposition": "REJECT",
+      "rationale": "Not fail-closed in the sense required by the build campaign; cannot enforce the hard boundaries. Replaced by canonical fail-closed gate mirroring Q36-INT.",
+      "canonical_target": "tools/analogy/validate_analogy_audit_gate.py (new canonical)"
+    },
+    {
+      "asset": "tests/analogy/test_analogy_audit.py",
+      "lab_path": "tests/analogy/test_analogy_audit.py",
+      "lab_size_bytes": 1975,
+      "assessment": "Tests are data-coupled (read the lab candidate file directly) and hard-code a stale origin/main SHA d1bedb07 in test_a4_main_not_modified, which would fail against the current Main. No fixture-driven CLI, no attack matrix.",
+      "disposition": "REJECT",
+      "rationale": "Stale main ref and data coupling violate the canonical test discipline; fail-closed attack matrix must be fixture-driven against the real CLI.",
+      "canonical_target": "tests/analogy/test_analogy_audit_gate.py (fixture-driven, 24-case matrix)"
+    },
+    {
+      "asset": "concept: hidden_premise_transfer",
+      "lab_path": "data/analogy/analogy-candidates.json#hidden_premise_transfer",
+      "assessment": "Premises imported from the source domain but unstated in the target mapping — a classic analogy failure mode.",
+      "disposition": "SALVAGE_CONCEPT",
+      "rationale": "Directly supports the 'structure must not be upgraded to mechanism' boundary.",
+      "canonical_target": "mapping.hidden_premises"
+    },
+    {
+      "asset": "concept: negative_transfer",
+      "lab_path": "data/analogy/analogy-candidates.json#negative_transfer",
+      "assessment": "Where the mapping breaks or backfires in the target domain; the lab requires every analogy to have it.",
+      "disposition": "SALVAGE_CONCEPT",
+      "rationale": "Maps to counteranalogy / negative-evidence preservation (audit_decision.counteranalogy_status).",
+      "canonical_target": "candidate_type=COUNTERANALOGY / audit_decision.counteranalogy_status"
+    },
+    {
+      "asset": "concept: productive_mismatch",
+      "lab_path": "data/analogy/analogy-candidates.json#productive_mismatch",
+      "assessment": "Mismatches that generate new obligations (e.g. termination-proof obligations from fixed-point framing).",
+      "disposition": "SALVAGE_CONCEPT",
+      "rationale": "Surfaces as transportability boundary conditions / scope limits.",
+      "canonical_target": "transportability_assessment.boundary_conditions"
+    },
+    {
+      "asset": "concept: claim_ceiling typing",
+      "lab_path": "data/analogy/analogy-candidates.json#claim_ceiling",
+      "assessment": "Lab already forbids 'formal_equivalence' without proof.",
+      "disposition": "SALVAGE_CONCEPT",
+      "rationale": "Q37 hardens this: MECHANISM_EQUIVALENCE_PROVEN / UNIVERSAL_LAW_PROVEN are absent from the enum entirely; validator fails closed on any universal-law claim ceiling.",
+      "canonical_target": "analogy_candidate.claim_ceiling + audit_decision.downgraded_claim_ceiling"
+    },
+    {
+      "asset": "concept: structural_correspondence + surface vs structural",
+      "lab_path": "data/analogy/analogy-candidates.json#structural_correspondence",
+      "assessment": "Explicit source->target correspondence pairs with quality; surface_similarity field distinguishes cosmetic from structural match.",
+      "disposition": "SALVAGE_CONCEPT",
+      "rationale": "Core of the mapping part and the candidate_type distinction.",
+      "canonical_target": "mapping.correspondence_pairs / candidate_type SURFACE_SIMILARITY|STRUCTURAL_ANALOGY"
+    },
+    {
+      "asset": "case_failures/examples (cross_domain_synergy_risk.md, technology_economic_growth_failure.md, apple_gravity_failure.md)",
+      "lab_path": "case_failures/examples/*.md",
+      "assessment": "External-style cross-domain failure cases. Valuable, but they are case retrieval / failure-memory territory.",
+      "disposition": "DEFER_Q38_Q39",
+      "rationale": "Q37 must not perform large-scale external case retrieval; these belong to Q38 (case search) and Q39 (failure memory). Q37 only defines the audited_search_seed interface and the negative/counteranalogy -> Q39 interface.",
+      "canonical_target": "referenced only via Q37->Q38 audited_search_seed and Q37->Q39 failure-memory interface (not materialized in Q37)"
+    }
+  ]
+}

@@ -451,6 +451,30 @@
       "lifecycle_status": "draft_candidate"
     },
     {
+      "id": "analogy_audit_contract",
+      "label": "类比审计与可运输性 合同",
+      "group": "governance",
+      "target": "schemas/analogy/analogy-audit-contract.schema.json",
+      "description": "Q37-I1 typed analogy-audit & transportability contract: analogy candidates (SURFACE_SIMILARITY / METAPHOR_ONLY / STRUCTURAL_ANALOGY / MECHANISM_CANDIDATE / TRANSPORTABILITY_CANDIDATE / COUNTERANALOGY), explicit mappings (entities, correspondence, cardinality, directionality, invariants, mismatches, omitted variables, hidden premises, scale/time/context differences, digest), mechanism evidence (distinct from shared form), transportability assessments (overlap, invariances, shifts, boundary, falsifier, uncertainty), and audit decisions with claim ceiling; fail-closed against metaphor/local-isomorphism/selective-correspondence/unaudited-structural-map/Q36-residual upgraded to mechanism identity, undeclared shift, residual-as-cause, mechanism upgrade, transportability without overlap/invariance/boundary/falsifier, suppressed counteranalogy, Q14 uncommitted claim, Q35 authority gap, Q33 rights bypass, Q38 premature start, claim-ceiling overreach. Does NOT prove shared mechanism, real-world transportability or universal law; does NOT add L7/truth layer; does NOT materialize F15/D1/D2.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "analogy_audit_gate_validator",
+      "label": "类比审计与可运输性 门禁",
+      "group": "governance",
+      "target": "tools/analogy/validate_analogy_audit_gate.py",
+      "description": "Q37-I1 fail-closed analogy-audit & transportability gate/CLI: blocks metaphor/local-isomorphism/selective-correspondence/unaudited-structural-map/Q36-residual upgraded to mechanism identity or universal law, undeclared scale/time/context or transportability shift, mechanism evidence insufficient/circular, residual-as-cause, transportability missing overlap/invariance/boundary/falsifier, suppressed counteranalogy/negative evidence, Q14 uncommitted claim, Q35 authority gap/expiry/scope-mismatch, Q33 rights bypass, Q38 premature start, claim-ceiling overreach, semantic inconsistency. Deterministic exit codes 0-21.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "analogy_audit_pilot",
+      "label": "类比审计与可运输性 受控试点",
+      "group": "governance",
+      "target": "data/analogy/pilot-real-repo-analogy-audit.json",
+      "description": "Q37-I1 real-repo pilot: deterministic repo-local replay of an analogy bundle against the real Q34 committed claim (fix.analogy_as_mechanism from data/discovery/fixtures/05-analogy-as-mechanism.json), asserting the fail-closed gate passes (exit 0) and that Q38 case retrieval remains gated (q38_search_permission NOT_ALLOWED / ALLOWED_AS_RESTRICTED_SEED only). Plus 30 attack/positive fixtures. No Main mutation, no Q38 case retrieval, no external real-world system access or control.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
       "id": "external_input",
       "label": "外部输入源",
       "group": "writing",

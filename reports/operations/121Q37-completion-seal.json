@@ -1,0 +1,59 @@
+{
+  "task_id": "121Q37",
+  "status": "READY_FOR_GPT_VERIFICATION_CANDIDATE_ONLY",
+  "method_version": "1.3.0",
+  "lifecycle": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": false
+  },
+  "phase_b": {
+    "draft_pr": 69,
+    "branch": "agent/121q37-i1-analogy-audit-transportability",
+    "base": "agent/121q36-int-i1-intervention-failure-dynamics",
+    "base_head": "02a87221b86cf39217f8c6b3c63e0737a0e2de98",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "agent-results/IGNITION-20260721-121Q37-I1-analogy-audit-transportability-execution-receipt.json",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
+    "claim_ceiling": "candidate_only: repository-native, evidence-bound, deterministically verifiable analogy-audit & transportability gate that audits analogy candidates against Q34 committed claims, Q35 authority, Q36-OBS residual observations and Q36-INT mechanism evidence as read-only inputs; freezes candidate type, correspondence references, cardinality/direction, relation-preservation, negative-evidence, mechanism-evidence sufficiency, scale/regime/covariate shifts, residual-as-cause, claim-ceiling overreach, counteranalogy suppression, Q38 case-retrieval gate and Q33 rights gate before any transportability assertion, and blocks mechanism-upgrade, universal-law, residual-as-cause, negative-evidence suppression, correspondence-invalid, cardinality/direction mismatch, relation-preservation overclaim, counteranalogy suppression, Q38-start and Q33-rights-bypass. Consumes Q34 committed claim + Q35 authority + Q36-OBS/Q36-INT read-only snapshots; does NOT prove shared mechanism equivalence, universal law, or real-world transportability; no L7, no truth layer."
+  },
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "synchronization_registry": {
+    "path": "data/operations/synchronization-surfaces.json",
+    "version": "1.2.0"
+  },
+  "external_attestations": [
+    {
+      "surface_id": "external.pages_homepage",
+      "stage": "post_merge",
+      "status": "pending",
+      "authority": "pull_request_body_and_1111_receipt",
+      "evidence_refs": [
+        "external:pr_body:external.pages_homepage"
+      ],
+      "live_state_locally_verifiable": false
+    }
+  ],
+  "propagation_closure": {
+    "closure_hash": "cb6e1b8554f81d1e61f47ba787990abc676a3f4d9037ac051d25ebd09d8a5ecf",
+    "closure_path": "data/operations/propagation/121Q37-closure.json",
+    "complete": true,
+    "unresolved_residue": []
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  }
+}

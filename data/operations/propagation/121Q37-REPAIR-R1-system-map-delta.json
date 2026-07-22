@@ -1,0 +1,17 @@
+{
+  "added_edges": [],
+  "added_nodes": [
+    "analogy_audit_contract",
+    "analogy_audit_gate_validator",
+    "analogy_audit_pilot"
+  ],
+  "base_map_version": "0.3.0",
+  "candidate_map_version": "0.3.0",
+  "changed_edges": [],
+  "changed_nodes": [
+    "intervention_failure_gate_validator"
+  ],
+  "removed_edges": [],
+  "removed_nodes": [],
+  "unmapped_residue": []
+}
