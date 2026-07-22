@@ -1,7 +1,7 @@
 # Q44-I1 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `5acd9e311b0de158ab677ca82040497c78df6474d8abcb148468eb2bd71ec350`
+- Closure hash: `071864ac62dd2daeeb88ad3ae8f958bf883a560d50f25a9771e7ca1d0de84ef8`
 - Fixpoint iterations: `2`
 - Seeds: `coaching_commitment_subcapability_contract, coaching_commitment_subcapability_gate_validator, coaching_commitment_subcapability_pilot, current_state, historical_reports, incremental_execution, iteration_manifest_contract, pages_pipeline, project_component_registry, propagation_calculator, system_map_layout, system_map_projection`
 - Resolved components: `15`

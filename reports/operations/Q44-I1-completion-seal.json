@@ -10,14 +10,14 @@
     "ready_for_gpt_verification": false
   },
   "phase_b": {
-    "draft_pr": 80,
-    "branch": "agent/q44-i1-coaching-commitment-subcapability",
-    "base": "agent/q43-i1-graded-intervention-professional-escalation",
-    "base_head": "3756cd6453135a333771243ffa6eb3d4f86344a0",
+    "draft_pr": 97,
+    "branch": "repair/q44-r1-coaching-consent-binding",
+    "base": "repair/q43-r1-escalation-authority-binding",
+    "base_head": "5efbce81e96d90d5ebd246891e4762928365d6b8",
     "head_binding": {
       "mode": "external_exact_head_attestation",
       "authority": "pull_request_body_and_1111_receipt",
-      "receipt_path": "agent-results/IGNITION-20260722-Q44-I1-q44-i1-execution-receipt.json",
+      "receipt_path": "agent-results/remaining-repair-train/Q44-I1-receipt.json",
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
@@ -47,7 +47,7 @@
     }
   ],
   "propagation_closure": {
-    "closure_hash": "5acd9e311b0de158ab677ca82040497c78df6474d8abcb148468eb2bd71ec350",
+    "closure_hash": "071864ac62dd2daeeb88ad3ae8f958bf883a560d50f25a9771e7ca1d0de84ef8",
     "closure_path": "data/operations/propagation/Q44-I1-closure.json",
     "complete": true,
     "unresolved_residue": []
