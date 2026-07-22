@@ -16,4 +16,22 @@ class CapabilityGateTests(unittest.TestCase):
   b=json.loads(PILOT.read_text());
   for rec in b["records"]:
    for field in ["protocol_version", "source_rights_context", "model_tool_executor_identity", "authority_capability", "observation_prediction", "analogy_search_case", "intervention_failure", "symbolic_perspectives", "decision_integrity", "epistemic_state", "latent_multi_history_counterfactual", "experiment_hardware_request_result", "exact_head_provenance_digest", "stop_rollback", "sensitive_data_network_local_first", "capability_negotiation", "request_response_envelope", "identity_authorization", "artifact_binding", "failure_retry_semantics", "compatibility_policy", "local_mock_adapter", "claim_ceiling"]: self.assertTrue(rec[field]["evidence_refs"])
+ def test_git_object_binding_is_enforced(self):
+  import tempfile,os
+  b=json.loads(PILOT.read_text())
+  r=run(PILOT); self.assertEqual(r.returncode,0,r.stdout)
+  fn=tempfile.mktemp(suffix=".json")
+  t=json.loads(PILOT.read_text()); t["evidence_registry"][0]["blob_sha"]="0"*40
+  json.dump(t,open(fn,"w")); r=run(fn); self.assertEqual(r.returncode,4,r.stdout)
+  t=json.loads(PILOT.read_text()); t["evidence_registry"][1]["sha256"]="sha256:"+"0"*64
+  json.dump(t,open(fn,"w")); r=run(fn); self.assertEqual(r.returncode,4,r.stdout)
+  t=json.loads(PILOT.read_text()); t["evidence_registry"][2]["commit_sha"]="0"*40
+  json.dump(t,open(fn,"w")); r=run(fn); self.assertEqual(r.returncode,4,r.stdout)
+  os.remove(fn)
+ def test_q44_predecessor_regression(self):
+  import tempfile,os
+  t=json.loads(PILOT.read_text())
+  t["parent_binding"]["exact_head"]="e603e4503b424cea7c85639ec83f96b7e1bc7efb"
+  fn=tempfile.mktemp(suffix=".json"); json.dump(t,open(fn,"w")); r=run(fn); self.assertEqual(r.returncode,3,r.stdout)
+  os.remove(fn)
 if __name__=="__main__": unittest.main()

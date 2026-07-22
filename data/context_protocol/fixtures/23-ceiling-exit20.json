@@ -4,27 +4,27 @@
   "capability_id": "open_scientific_context_protocol",
   "parent_binding": {
     "task_id": "Q44-I1",
-    "exact_head": "e603e4503b424cea7c85639ec83f96b7e1bc7efb"
+    "exact_head": "4d15ccaf2e574248c0e224c05716c3af46203a39"
   },
   "evidence_registry": [
     {
       "evidence_id": "evidence.1",
       "artifact": "data/coaching/pilot-q44-i1.json",
-      "exact_head": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
-      "artifact_digest": "sha256:5c55c5271b2c93908b3a894db673b56e745eeb44a0ad347c5b09513771dd8190",
+      "exact_head": "4d15ccaf2e574248c0e224c05716c3af46203a39",
+      "artifact_digest": "sha256:197586b318d7634ab6bda533e48e6a03130c4aea5a8fe2db1eb41a5b1fdcd4a0",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {
       "evidence_id": "evidence.2",
       "artifact": "data/escalation/pilot-q43-i1.json",
-      "exact_head": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
-      "artifact_digest": "sha256:0862e7d9cf513170789bd657ab8156564af8967ef52bc78f509ca402c58de399",
+      "exact_head": "4d15ccaf2e574248c0e224c05716c3af46203a39",
+      "artifact_digest": "sha256:c2641c1adecd6e86cfe55593288afce8321867468ba1a3ad6c937fb8454adf76",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {
       "evidence_id": "evidence.3",
       "artifact": "FOUNDATION.md",
-      "exact_head": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
+      "exact_head": "4d15ccaf2e574248c0e224c05716c3af46203a39",
       "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
       "rights_status": "REPOSITORY_INTERNAL"
     }
