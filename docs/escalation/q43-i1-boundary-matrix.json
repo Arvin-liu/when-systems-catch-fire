@@ -1,0 +1,42 @@
+{
+  "task_id": "Q43-I1",
+  "parent_id": "Q42-I1",
+  "fields": [
+    "action_risk_class",
+    "reversibility",
+    "evidence_grade",
+    "authority",
+    "expertise_requirement",
+    "automatic_repository_local_action",
+    "user_confirmation_required",
+    "expert_escalation",
+    "institutional_approval",
+    "prohibited_action",
+    "request_only_external_action",
+    "stop_rollback_result_return",
+    "claim_ceiling"
+  ],
+  "rules": [
+    "risk_class_required",
+    "reversibility_required",
+    "evidence_grade_required",
+    "authority_required",
+    "expertise_boundary_enforced",
+    "automatic_only_repository_local",
+    "confirmation_for_external",
+    "high_risk_request_only",
+    "prohibited_never_executed",
+    "stop_rollback_return_present"
+  ],
+  "record_types": [
+    "REPOSITORY_LOCAL_REVERSIBLE",
+    "HIGH_RISK_REQUEST_ONLY"
+  ],
+  "nonclaims": [
+    "no legal action",
+    "no medical action",
+    "no financial action",
+    "no safety-critical external action"
+  ],
+  "next_task": "Q44-I1"
+}
