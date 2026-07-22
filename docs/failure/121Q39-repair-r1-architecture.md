@@ -6,7 +6,7 @@ This repair addresses `B08` without changing original PR #71, branch, frozen hea
 
 ## Original blocker reproduction
 
-Fixture `25-nonexistent-target-zero-digest-boolean-bypass.json` preserves the independent review attack. A nonexistent propagation target with an all-zero verification digest passes when caller-controlled `authorized=true` and `applied=true` are supplied. The original real CLI returns `0`.
+Fixture `25-nonexistent-target-zero-digest-boolean-bypass.json` preserves the independent review attack. After refreshing the inherited source digests for the merged predecessor worktree, a nonexistent propagation target with an all-zero verification digest passes when caller-controlled `authorized=true` and `applied=true` are supplied. The unmodified Q39 real CLI returns `0`; no target bytes or effect are resolved.
 
 ## Minimal repair contract
 

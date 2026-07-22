@@ -9,21 +9,21 @@
       "task_id": "121Q36-INT-I1",
       "artifact": "data/intervention/pilot-controlled-intervention.json",
       "exact_head": "02a87221b86cf39217f8c6b3c63e0737a0e2de98",
-      "artifact_digest": "sha256:3c32b2bbbe859d7b5aa87e19a1aaab43f7db47d2f66e0343b0a7ab5d5a0a3fb0"
+      "artifact_digest": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d"
     },
     {
       "source_id": "src.q37",
       "task_id": "121Q37-I1",
       "artifact": "data/analogy/pilot-real-repo-analogy-audit.json",
       "exact_head": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
-      "artifact_digest": "sha256:9d1a76aa54a7f0c2c108657f7cfa964c2e1dad9887153a95b1bfd46b3e9edc27"
+      "artifact_digest": "sha256:0d20ad95947d5e91b39bc3af7cdd0af0d6b6ada6cf768e78c54901ac3abd038a"
     },
     {
       "source_id": "src.q38",
       "task_id": "121Q38-I1",
       "artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
       "exact_head": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
-      "artifact_digest": "sha256:22ef7f43ecfe9e07e076ae03731021684e5a52bb105d7c29a454f3993bdcc448"
+      "artifact_digest": "sha256:ea1cbf363efb5afa534340b09ab706386aea10c7e81a9658a08f306a86bd4778"
     }
   ],
   "events": [
