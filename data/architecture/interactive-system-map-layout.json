@@ -154,7 +154,10 @@
       "world_feedback_anomaly_pilot",
       "latent_system_identifiability_contract",
       "latent_system_identifiability_gate_validator",
-      "latent_system_identifiability_pilot"
+      "latent_system_identifiability_pilot",
+      "multi_history_world_projection_contract",
+      "multi_history_world_projection_gate_validator",
+      "multi_history_world_projection_pilot"
     ],
     "layers": [
       "l0",

@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.8",
+    "component_registry_version": "1.1.9",
     "topology_version": "1.1.0",
     "layout_version": "1.1.0"
   },
@@ -640,6 +640,30 @@
       "group": "governance",
       "target": "data/latent/pilot-f15-d1-i1.json",
       "description": "F15-D1-I1 self-authored bounded repository pilot covering IDENTIFIABLE_CANDIDATE and NON_IDENTIFIABLE_EQUIVALENCE_SET; 24 fixtures drive the real CLI; no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "multi_history_world_projection_contract",
+      "label": "Evidence-Constrained Multi-History / Multi-World Projection 合同",
+      "group": "governance",
+      "target": "schemas/multihistory/multi_history_world_projection-contract.schema.json",
+      "description": "D2-I1 typed evidence-bound contract. Multiple evidence-constrained history/world candidates can preserve shared evidence, branch assumptions, indistinguishable sets and falsifiers without forcing a unique story or unjustified probability.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "multi_history_world_projection_gate_validator",
+      "label": "Evidence-Constrained Multi-History / Multi-World Projection 门禁",
+      "group": "governance",
+      "target": "tools/multihistory/validate_multi_history_world_projection_gate.py",
+      "description": "D2-I1 fail-closed real CLI enforcing evidence binding, exact parent, 8 task rules, candidate ceiling and no external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "multi_history_world_projection_pilot",
+      "label": "Evidence-Constrained Multi-History / Multi-World Projection 受控试点",
+      "group": "governance",
+      "target": "data/multihistory/pilot-d2-i1.json",
+      "description": "D2-I1 self-authored bounded repository pilot covering TWO_WORLD_EQUIVALENCE_SET and WEIGHTED_WORLD_WITH_JUSTIFICATION; 24 fixtures drive the real CLI; no external action.",
       "lifecycle_status": "draft_candidate"
     },
     {
