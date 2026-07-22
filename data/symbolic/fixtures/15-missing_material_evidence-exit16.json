@@ -349,11 +349,11 @@
         }
       ],
       "material_evidence_constraint": {
-        "status": "SATISFIED",
-        "material_evidence_refs": [
-          "ref.community.material_evidence"
+        "status": "UNSATISFIED",
+        "material_evidence_refs": [],
+        "unmet_requirements": [
+          "material observation absent"
         ],
-        "unmet_requirements": [],
         "downgrade_claim_ceiling": "INSUFFICIENT_MATERIAL_EVIDENCE"
       }
     },
@@ -514,9 +514,9 @@
     }
   ],
   "conclusion": {
-    "analysis_status": "BOUNDED_INTERPRETATION",
+    "analysis_status": "DOWNGRADED",
     "statement": "Repository-bound material objects, explicit actor positions, corresponding meaning projections, allowed power modalities, distinct faces, visible benefit/cost distribution, and independently evidenced counter-readings support a bounded symbolic interpretation only.",
-    "claim_ceiling": "BOUNDED_SYMBOLIC_INTERPRETATION",
+    "claim_ceiling": "INSUFFICIENT_MATERIAL_EVIDENCE",
     "truth_status": "NOT_ESTABLISHED",
     "causal_status": "NOT_ESTABLISHED",
     "external_action_performed": false

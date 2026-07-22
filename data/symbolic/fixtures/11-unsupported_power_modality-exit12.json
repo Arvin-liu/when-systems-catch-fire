@@ -270,7 +270,7 @@
       ],
       "power_modalities": [
         {
-          "modality": "ACCESS_CONTROL",
+          "modality": "UNBOUNDED_TRUTH_AUTHORITY",
           "actor_position_id": "community.position.council",
           "statement": "The council controls the booking window.",
           "evidence_refs": [

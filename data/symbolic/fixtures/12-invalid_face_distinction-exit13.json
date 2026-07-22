@@ -306,10 +306,11 @@
         ]
       },
       "suppressed_face": {
-        "face_id": "community.face.suppressed",
-        "statement": "The same schedule can hide unequal noise and access costs.",
+        "face_id": "community.face.front",
+        "statement": "A shared field visibly supports community play.",
         "actor_position_ids": [
-          "community.position.neighbours"
+          "community.position.council",
+          "community.position.players"
         ],
         "evidence_refs": [
           "ref.community.face_evidence"

@@ -13,7 +13,7 @@
       "commit_sha": "2d5afb3f1dbbc61d5d35d0c733da13af977a6ffb",
       "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
       "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
-      "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
+      "record_type": "FREE_TEXT_ASSERTION",
       "declared_role": "MATERIAL_OBJECT",
       "object_id": "community_field.material_object"
     },

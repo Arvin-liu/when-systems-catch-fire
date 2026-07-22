@@ -344,7 +344,7 @@
           "target_projection_id": "community.meaning.players",
           "statement": "Belonging for frequent users can coexist with exclusion and shifted costs.",
           "evidence_refs": [
-            "ref.community.counter_reading_evidence"
+            "ref.community.meaning_evidence"
           ]
         }
       ],

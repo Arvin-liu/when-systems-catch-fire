@@ -327,7 +327,7 @@
         ],
         "cost_bearers": [
           {
-            "actor_position_id": "community.position.neighbours",
+            "actor_position_id": "community.position.absent",
             "effect": "Bears bounded noise and reduced quiet-time access.",
             "evidence_refs": [
               "ref.community.distribution_evidence"

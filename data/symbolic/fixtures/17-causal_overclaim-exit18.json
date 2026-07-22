@@ -515,10 +515,10 @@
   ],
   "conclusion": {
     "analysis_status": "BOUNDED_INTERPRETATION",
-    "statement": "Repository-bound material objects, explicit actor positions, corresponding meaning projections, allowed power modalities, distinct faces, visible benefit/cost distribution, and independently evidenced counter-readings support a bounded symbolic interpretation only.",
+    "statement": "Symbolic analysis establishes complete causal proof.",
     "claim_ceiling": "BOUNDED_SYMBOLIC_INTERPRETATION",
     "truth_status": "NOT_ESTABLISHED",
-    "causal_status": "NOT_ESTABLISHED",
+    "causal_status": "ESTABLISHED",
     "external_action_performed": false
   }
 }

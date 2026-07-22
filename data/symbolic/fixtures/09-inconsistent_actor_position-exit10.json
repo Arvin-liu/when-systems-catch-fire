@@ -216,7 +216,7 @@
       "actor_positions": [
         {
           "position_id": "community.position.council",
-          "actor_ref": "ref.community.actor.council",
+          "actor_ref": "ref.community.material_object",
           "stance": "Official stewardship and scheduling",
           "evidence_refs": [
             "ref.community.meaning_evidence"

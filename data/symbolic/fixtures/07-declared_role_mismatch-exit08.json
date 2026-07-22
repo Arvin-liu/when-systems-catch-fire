@@ -14,7 +14,7 @@
       "blob_sha": "afea4d40d0ebb8289b1d0002eb74739d95337bd5",
       "sha256": "sha256:40a9f583f1439f6fecedb6041c516ee4d7c19aac080ee654e32687e0291bcb54",
       "record_type": "SYMBOLIC_EVIDENCE_OBJECT",
-      "declared_role": "MATERIAL_OBJECT",
+      "declared_role": "ACTOR",
       "object_id": "community_field.material_object"
     },
     {

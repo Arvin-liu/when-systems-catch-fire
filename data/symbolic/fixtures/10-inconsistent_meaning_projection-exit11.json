@@ -242,7 +242,7 @@
       "meaning_projections": [
         {
           "projection_id": "community.meaning.council",
-          "actor_position_id": "community.position.council",
+          "actor_position_id": "community.position.absent",
           "symbolic_object_ref": "ref.community.material_object",
           "statement": "The field represents managed community provision.",
           "evidence_refs": [

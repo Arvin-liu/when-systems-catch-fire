@@ -519,6 +519,6 @@
     "claim_ceiling": "BOUNDED_SYMBOLIC_INTERPRETATION",
     "truth_status": "NOT_ESTABLISHED",
     "causal_status": "NOT_ESTABLISHED",
-    "external_action_performed": false
+    "external_action_performed": true
   }
 }

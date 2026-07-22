@@ -515,9 +515,9 @@
   ],
   "conclusion": {
     "analysis_status": "BOUNDED_INTERPRETATION",
-    "statement": "Repository-bound material objects, explicit actor positions, corresponding meaning projections, allowed power modalities, distinct faces, visible benefit/cost distribution, and independently evidenced counter-readings support a bounded symbolic interpretation only.",
+    "statement": "Naming authority proves truth.",
     "claim_ceiling": "BOUNDED_SYMBOLIC_INTERPRETATION",
-    "truth_status": "NOT_ESTABLISHED",
+    "truth_status": "ESTABLISHED_BY_NAMING_AUTHORITY",
     "causal_status": "NOT_ESTABLISHED",
     "external_action_performed": false
   }

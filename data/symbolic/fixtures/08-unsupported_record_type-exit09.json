@@ -211,7 +211,7 @@
   "records": [
     {
       "record_id": "analysis.community_field",
-      "record_type": "COMMUNITY_FOOTBALL_FIELD",
+      "record_type": "UNSUPPORTED_SYMBOLIC_RECORD",
       "symbolic_object_ref": "ref.community.material_object",
       "actor_positions": [
         {

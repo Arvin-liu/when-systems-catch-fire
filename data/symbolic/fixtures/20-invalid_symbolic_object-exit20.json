@@ -212,7 +212,7 @@
     {
       "record_id": "analysis.community_field",
       "record_type": "COMMUNITY_FOOTBALL_FIELD",
-      "symbolic_object_ref": "ref.community.material_object",
+      "symbolic_object_ref": "ref.community.actor.council",
       "actor_positions": [
         {
           "position_id": "community.position.council",
