@@ -1,0 +1,13 @@
+{
+  "seal_id": "F15-D1-REPAIR-R2-SEAL",
+  "task_id": "F15-D1-R2",
+  "branch": "repair-r2/f15-d1-r2-identifiability-semantics",
+  "annotated_tag": "archive/f15-d1-repair-r2-frozen-head",
+  "closure_complete": true,
+  "residue": 0,
+  "validation": "BUILDER_VALIDATION_PASS",
+  "independent_accepted": false,
+  "sealed_at": "2026-07-23T02:13:52+0800",
+  "sealed_by": "WorkBuddy night-shift main session (\u4e91\u5929\u660e)",
+  "statement": "RB09-DIRECT-PREDECESSOR-BINDING closed: F15-D1 now binds its direct predecessor to the real repair-r2 head e92e7d3eadbb67da288077052f635e3c052bd3a1. The fail-closed shared engine (4 engine blockers) is inherited unchanged via the stacked merge; pilot evidence upgraded to the fail-closed schema."
+}
