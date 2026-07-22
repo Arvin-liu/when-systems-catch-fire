@@ -21,3 +21,11 @@ At the unmodified Q36-OBS semantic implementation, the real CLI returns `GATE_PA
 5. Reject missing predecessors, nonexistent sources, digest/head mismatch, copied snapshots, placeholders and zero digests with stable nonzero exits.
 
 The validator checks repository records only. It does not execute an intervention, establish causal mechanisms, or prove universal predictive capability.
+
+## R4 local freeze evidence
+
+The real CLI passed all 28 Q36-OBS gate fixtures plus 12 core semantic tests. The original missing-predecessor/nonexistent-source/zero-digest bypass now exits `18`; missing source, digest mismatch and wrong exact head exit `19`; a rewritten freeze exits `20`; target/window drift exits `4`; and rule-version mismatch exits `23`. Both byte-bound positive pilots return `0`.
+
+Direct predecessor regression passed Q35 25/25 and Q34 22/22. The repository-local foundation/front-door, propagation/pages, phase-E/production-authority and iteration-sync groups passed 22/22, 62/63 with one declared skip, 26/26 and 65/65 respectively. Deterministic propagation recomputation, iteration/seal synchronization, derived system-map and human-front-door checks passed with `residue=0`.
+
+This checkpoint is local-only. Branch push, tag push, Draft PR creation/edit, CI query and 1111 push are `NOT_CHECKED_LOCAL_ONLY`; no independent review or external action has occurred.
