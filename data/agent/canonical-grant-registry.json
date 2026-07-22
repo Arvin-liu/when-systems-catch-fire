@@ -1,0 +1,23 @@
+{
+  "schema_version": "q35-canonical-grant-registry-v1",
+  "grants": [
+    {
+      "grant_id": "grant-low-1",
+      "binding": {
+        "path": "data/agent/fixtures/01-legal-low-risk.json",
+        "exact_commit": "ea1408e6525ceac8ea0c9c5377aca269579d6ff4",
+        "git_blob": "7bd3d726e2636f5bd6677eac48b91c1962d3567d",
+        "sha256": "sha256:daaa7180e4e95c0f25045419ac033750586fa98acbfe7d1270ebaccf6c96a824"
+      }
+    },
+    {
+      "grant_id": "grant-q34-pilot",
+      "binding": {
+        "path": "data/agent/pilot-q34-pr-controlled-op.json",
+        "exact_commit": "ea1408e6525ceac8ea0c9c5377aca269579d6ff4",
+        "git_blob": "28527632c277941efa2695379d9427703975d9b8",
+        "sha256": "sha256:4b5b108cf802abced76c2f8948286d2e49025c563c28a00059860c5484f6be34"
+      }
+    }
+  ]
+}
