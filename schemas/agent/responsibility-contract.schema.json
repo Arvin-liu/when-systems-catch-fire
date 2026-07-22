@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/agent/responsibility-contract.schema.json",
+  "title": "Q35 Responsibility-Authority-Action-Trace Contract",
+  "description": "Repository-native typed contract for actor/role, authority grant, action intent/decision/execution, append-only hash-linked trajectory and responsibility attribution. Repository governance only; does not adjudicate real-world legal/moral responsibility.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["actors", "grants", "actions", "trajectory"],
+  "properties": {
+    "actors": {"type": "array", "items": {"$ref": "#/$defs/actor"}},
+    "grants": {"type": "array", "items": {"$ref": "#/$defs/grant"}},
+    "actions": {"type": "array", "items": {"$ref": "#/$defs/action"}},
+    "trajectory": {"type": "array", "items": {"$ref": "#/$defs/trajectory_event"}}
+  },
+  "$defs": {
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actor_id", "actor_type", "declared_role", "authority_source", "applicable_scope", "status"],
+      "properties": {
+        "actor_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "actor_type": {"type": "string", "enum": ["human", "model", "agent", "tool", "organization", "deterministic_verifier"]},
+        "declared_role": {"type": "string", "enum": ["initiator", "authorizer", "executor", "verifier", "governance_owner", "reviewer"]},
+        "authority_source": {"type": "string", "description": "Resolvable authority source (NOT a bare model name). e.g. 'human:zhiyuan', 'org:maintainer-board', 'deterministic:validator-x'."},
+        "applicable_scope": {"type": "string"},
+        "effective_at": {"type": "string"},
+        "expires_at": {"type": "string"},
+        "conflicts_of_duty": {"type": "array", "items": {"type": "string"}},
+        "revocations": {"type": "array", "items": {"type": "string"}},
+        "status": {"type": "string", "enum": ["active", "suspended", "revoked", "expired"]}
+      }
+    },
+    "grant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["grant_id", "grantor", "grantee", "allowed_action_types", "resource_scope", "required_commitment_state", "required_review_level", "risk_tier", "claim_ceiling", "delegation", "separation_of_duty", "status"],
+      "properties": {
+        "grant_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "grantor": {"type": "string"},
+        "grantee": {"type": "string"},
+        "allowed_action_types": {"type": "array", "items": {"type": "string"}},
+        "resource_scope": {"type": "string"},
+        "required_commitment_state": {"type": "string", "enum": ["committed_current", "deferred", "rejected", "any_committed"], "description": "Q34 claim state the action may rely on."},
+        "required_review_level": {"type": "string", "enum": ["none", "peer", "independent", "human", "collegial"]},
+        "risk_tier": {"type": "string", "enum": ["low", "medium", "high", "critical"]},
+        "preconditions": {"type": "array", "items": {"type": "string"}},
+        "valid_from": {"type": "string", "description": "Inclusive canonical validity boundary; required by the repair validator for an authorizing grant."},
+        "expires_at": {"type": "string"},
+        "revoked": {"type": "boolean"},
+        "claim_ceiling": {"type": "string"},
+        "evidence_refs": {"type": "array", "items": {"type": "string"}},
+        "delegation": {"type": "string", "enum": ["forbidden", "allowed_with_record", "allowed_one_level"]},
+        "delegation_chain": {"type": "array", "items": {"type": "string"}, "description": "Canonical principal chain; an empty list means no delegation."},
+        "separation_of_duty": {"type": "object", "additionalProperties": false, "properties": {
+          "initiator_not_authorizer": {"type": "boolean"},
+          "authorizer_not_executor": {"type": "boolean"},
+          "executor_not_verifier": {"type": "boolean"}
+        }},
+        "status": {"type": "string", "enum": ["active", "revoked", "expired", "suspended"]}
+      }
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action_id", "action_type", "phase", "initiator", "target", "grant_id", "claim_ref", "claim_ceiling"],
+      "properties": {
+        "action_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
+        "action_type": {"type": "string"},
+        "phase": {"type": "string", "enum": ["intent", "authorization_decision", "execution", "observed_outcome", "verification", "rollback", "unresolved_responsibility"]},
+        "initiator": {"type": "string"},
+        "authorizer": {"type": "string"},
+        "executor": {"type": "string"},
+        "verifier": {"type": "string"},
+        "target": {"type": "string"},
+        "grant_id": {"type": "string"},
+        "claim_ref": {"type": "string", "description": "Q34 claim_id this action relies on (must be committed_current unless grant allows deferred/rejected)."},
+        "claim_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "claim_exact_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "grant_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "grant_exact_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "command": {"type": "string", "description": "exact command or normalized operation"},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "input_digest": {"type": "string"},
+        "output_digest": {"type": "string"},
+        "conclusion": {"type": "string"},
+        "side_effects": {"type": "array", "items": {"type": "string"}},
+        "rollback_ref": {"type": "string"},
+        "claim_ceiling": {"type": "string"},
+        "at": {"type": "string"}
+      }
+    },
+    "trajectory_event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["seq", "event_id", "action_id", "phase", "actor", "event_digest", "prev_digest", "at"],
+      "properties": {
+        "seq": {"type": "integer", "minimum": 0},
+        "event_id": {"type": "string"},
+        "action_id": {"type": "string"},
+        "phase": {"type": "string"},
+        "actor": {"type": "string"},
+        "payload": {"type": "object"},
+        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "artifact_digest": {"type": "string"},
+        "event_digest": {"type": "string", "description": "sha256 of canonical payload+prev_digest"},
+        "prev_digest": {"type": "string", "description": "digest of previous event; 'GENESIS' for first"},
+        "at": {"type": "string"}
+      }
+    }
+  }
+}

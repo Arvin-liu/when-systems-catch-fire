@@ -1,0 +1,107 @@
+{
+  "actors": [
+    {
+      "actor_id": "zhiyuan",
+      "actor_type": "human",
+      "declared_role": "authorizer",
+      "authority_source": "human:zhiyuan",
+      "applicable_scope": "repository",
+      "status": "active"
+    },
+    {
+      "actor_id": "agent-a",
+      "actor_type": "agent",
+      "declared_role": "initiator",
+      "authority_source": "org:maintainer-board",
+      "applicable_scope": "repository",
+      "status": "active"
+    },
+    {
+      "actor_id": "agent-b",
+      "actor_type": "agent",
+      "declared_role": "executor",
+      "authority_source": "org:maintainer-board",
+      "applicable_scope": "repository",
+      "status": "active"
+    },
+    {
+      "actor_id": "reviewer-c",
+      "actor_type": "agent",
+      "declared_role": "verifier",
+      "authority_source": "org:maintainer-board",
+      "applicable_scope": "repository",
+      "status": "active"
+    }
+  ],
+  "grants": [
+    {
+      "grant_id": "grant-low-1",
+      "grantor": "zhiyuan",
+      "grantee": "agent-b",
+      "allowed_action_types": [
+        "edit_file",
+        "run_validator"
+      ],
+      "resource_scope": "repository",
+      "required_commitment_state": "committed_current",
+      "required_review_level": "peer",
+      "risk_tier": "low",
+      "claim_ceiling": "repository scope only; does not assert real-world legal responsibility",
+      "delegation": "forbidden",
+      "separation_of_duty": {
+        "initiator_not_authorizer": true,
+        "authorizer_not_executor": true,
+        "executor_not_verifier": true
+      },
+      "status": "active"
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "act-1",
+      "action_type": "edit_file",
+      "phase": "execution",
+      "initiator": "agent-a",
+      "authorizer": "zhiyuan",
+      "executor": "agent-b",
+      "verifier": "reviewer-c",
+      "target": "docs/x.md",
+      "grant_id": "grant-low-1",
+      "claim_ref": "q33.seven_governance_components.current_in_main",
+      "claim_ceiling": "repository scope only; does not assert real-world legal responsibility",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "conclusion": "edited",
+      "at": "2026-07-21T00:00:00Z"
+    }
+  ],
+  "trajectory": [
+    {
+      "seq": 0,
+      "event_id": "ev-0000",
+      "action_id": "act-1",
+      "phase": "intent",
+      "actor": "agent-a",
+      "payload": {
+        "note": "propose edit"
+      },
+      "prev_digest": "GENESIS",
+      "at": "2026-07-21T00:00:00Z",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "event_digest": "sha256:51a7fe2c3ccb2b3e65f67a029e7af82cb4f7956fa068e4e869650d299129fb92"
+    },
+    {
+      "seq": 1,
+      "event_id": "ev-0001",
+      "action_id": "act-1",
+      "phase": "execution",
+      "actor": "agent-b",
+      "payload": {
+        "note": "exec"
+      },
+      "prev_digest": "sha256:deadbeef",
+      "at": "2026-07-21T00:00:01Z",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "event_digest": "sha256:78cac0d5384429a5b2bcefbf696f8d2811b605dc25d5b916d506f601fd822969"
+    }
+  ]
+}
