@@ -7,7 +7,7 @@
 - Merge propagation commit: `05976a00a8e86b9dd8fe4d638e791b372ad0af62`
 - Exact local repair head: resolve annotated tag `archive/symbolic-sphere-repair-r1-frozen-head`
 - Symbolic positive/negative tests: `PASS` (6 unittest methods; 20 named CLI fixtures)
-- Q34-Q39 predecessor regression: `PASS` (98 local unittest cases)
+- Q34-Q39 predecessor regression: `PASS` (177 local tests: 98 unittest-discovered + 79 module-level functions)
 - Iteration sync: `PASS`
 - Propagation recomputation: `PASS`
 - System map / front-door checks: `PASS` (CLI checks and 15 unittest cases)

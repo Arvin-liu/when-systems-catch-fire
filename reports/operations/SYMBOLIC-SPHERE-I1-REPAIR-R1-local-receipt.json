@@ -13,7 +13,7 @@
   "annotated_tag": "archive/symbolic-sphere-repair-r1-frozen-head",
   "tests": {
     "symbolic_positive_negative": "PASS: 6 unittest methods and 20 named CLI fixtures",
-    "q34_q39_regression": "PASS: 98 local unittest cases",
+    "q34_q39_regression": "PASS: 177 local tests (98 unittest-discovered plus 79 module-level functions)",
     "iteration_sync": "PASS",
     "propagation_recomputation": "PASS",
     "system_map_front_door": "PASS: system-map/front-door CLI and 15 unittest cases"

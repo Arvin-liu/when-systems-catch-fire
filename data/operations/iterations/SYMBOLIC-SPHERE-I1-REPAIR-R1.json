@@ -489,7 +489,7 @@
       {
         "name": "q34_q39_predecessor_regression",
         "status": "PASS",
-        "evidence": "98 local unittest cases across Q34, Q35, Q36-OBS, Q36-INT, Q37, Q38 and Q39"
+        "evidence": "177 local tests across Q34-Q39: 98 unittest-discovered cases plus 79 existing module-level test functions executed in source order"
       },
       {
         "name": "iteration_and_propagation",
