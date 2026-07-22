@@ -19,3 +19,11 @@ The unmodified real CLI accepts `data/intervention/fixtures/24-placeholder-diges
 3. Reject null, empty, zero, repeated-character and placeholder digests before semantic evaluation.
 4. Bind pre-state, output, failure and rollback evidence to actual repository bytes; embedded grants or self-reported authority never confer permission.
 5. Preserve request-only high-risk behavior and enforce stop/rollback state from parseable records, without executing any intervention.
+
+## R4 local freeze evidence
+
+The Q36-INT real-CLI suite passed 52/52 core, legacy and repair attack cases. The original placeholder/self-declared-authority fixture now exits `21`; actual-byte digest mismatch, wrong exact Git head, repository path traversal and an embedded fictional grant exit `22`. The canonical content-bound pilot exits `0`.
+
+Direct predecessor regression passed Q36-OBS/Q35/Q34 as 87/87. Iteration/seal validation and deterministic propagation recomputation passed with `residue=0` and closure hash `6401d16f9444f0a02673b5b4319ccbf098bc4bd0cb159c524985b9547ab872ce`.
+
+This checkpoint is local-only. Branch push, tag push, Draft PR creation/edit, CI query and 1111 push are `NOT_CHECKED_LOCAL_ONLY`; no independent review or external action has occurred.
