@@ -1,0 +1,37 @@
+{
+  "task_id": "D2-I1",
+  "parent_id": "F15-D1-I1",
+  "fields": [
+    "world_candidates",
+    "divergence_point",
+    "shared_evidence",
+    "branch_specific_assumptions",
+    "indistinguishable_set",
+    "falsifiers",
+    "justified_weights",
+    "unresolved_paths",
+    "narrative_ceiling",
+    "claim_ceiling"
+  ],
+  "rules": [
+    "every_world_evidence_bound",
+    "no_forced_unique_story",
+    "indistinguishable_not_ranked_fact",
+    "weights_need_justification",
+    "possibility_not_probability",
+    "falsifier_required",
+    "unresolved_paths_preserved",
+    "narrative_ceiling_preserved"
+  ],
+  "record_types": [
+    "TWO_WORLD_EQUIVALENCE_SET",
+    "WEIGHTED_WORLD_WITH_JUSTIFICATION"
+  ],
+  "nonclaims": [
+    "generated possibility is not real probability",
+    "indistinguishable paths are not ranked facts",
+    "no evidence-free story",
+    "no forced unique narrative"
+  ],
+  "next_task": "Q42-I1"
+}

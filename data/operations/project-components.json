@@ -2315,8 +2315,71 @@
         "data/latent/pilot-f15-d1-i1.json",
         "data/latent/fixtures/"
       ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "schemas/multihistory/multi_history_world_projection-contract.schema.json",
+      "component_id": "multi_history_world_projection_contract",
+      "component_type": "governance_constraint",
+      "description": "D2-I1 typed evidence-bound contract. Multiple evidence-constrained history/world candidates can preserve shared evidence, branch assumptions, indistinguishable sets and falsifiers without forcing a unique story or unjustified probability.",
+      "label": "Evidence-Constrained Multi-History / Multi-World Projection 合同",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "D2-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "schemas/multihistory/multi_history_world_projection-contract.schema.json",
+        "docs/multihistory/"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/multihistory/validate_multi_history_world_projection_gate.py",
+      "component_id": "multi_history_world_projection_gate_validator",
+      "component_type": "governance_constraint",
+      "description": "D2-I1 fail-closed real CLI enforcing evidence binding, exact parent, 8 task rules, candidate ceiling and no external action.",
+      "label": "Evidence-Constrained Multi-History / Multi-World Projection 门禁",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "D2-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/multihistory/",
+        "tests/multihistory/"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/multihistory/pilot-d2-i1.json",
+      "component_id": "multi_history_world_projection_pilot",
+      "component_type": "governance_constraint",
+      "description": "D2-I1 self-authored bounded repository pilot covering TWO_WORLD_EQUIVALENCE_SET and WEIGHTED_WORLD_WITH_JUSTIFICATION; 24 fixtures drive the real CLI; no external action.",
+      "label": "Evidence-Constrained Multi-History / Multi-World Projection 受控试点",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "D2-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/multihistory/pilot-d2-i1.json",
+        "data/multihistory/fixtures/"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.1.8"
+  "registry_version": "1.1.9"
 }
