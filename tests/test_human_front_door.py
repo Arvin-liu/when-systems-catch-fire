@@ -91,11 +91,12 @@ class HumanFrontDoorTests(unittest.TestCase):
 
     def test_system_map_has_all_clickable_nodes_and_no_l7_layer(self):
         result = validate_all()
-        # 54 = 41 original declared nodes + 7 Q33 governance nodes
+        # 57 = 41 original declared nodes + 7 Q33 governance nodes
         # + 3 Q34 discovery_commitment governance nodes
-        # + 3 Q35 agent_responsibility governance nodes; the materialized
+        # + 3 Q35 agent_responsibility governance nodes
+        # + 3 Q36-OBS observation_prediction governance nodes; the materialized
         # map must cover the full current node set.
-        self.assertEqual(result["interactive_system_map_nodes"], 54)
+        self.assertEqual(result["interactive_system_map_nodes"], 57)
 
     def test_pages_artifact_carries_typed_propagation_evidence(self):
         self.assertIn("typed-change-propagation.md", self.pages)
