@@ -10,14 +10,14 @@
     "ready_for_gpt_verification": false
   },
   "phase_b": {
-    "draft_pr": 81,
-    "branch": "agent/scientific-context-protocol-i1-open-research-context",
-    "base": "agent/q44-i1-coaching-commitment-subcapability",
-    "base_head": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
+    "draft_pr": 98,
+    "branch": "repair/scientific-context-protocol-r1-context-capability-binding",
+    "base": "repair/q44-r1-coaching-consent-binding",
+    "base_head": "4d15ccaf2e574248c0e224c05716c3af46203a39",
     "head_binding": {
       "mode": "external_exact_head_attestation",
       "authority": "pull_request_body_and_1111_receipt",
-      "receipt_path": "agent-results/IGNITION-20260722-SCIENTIFIC-CONTEXT-PROTOCOL-I1-scientific-context-protocol-i1-execution-receipt.json",
+      "receipt_path": "agent-results/remaining-repair-train/SCIENTIFIC-CONTEXT-PROTOCOL-I1-receipt.json",
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
@@ -47,7 +47,7 @@
     }
   ],
   "propagation_closure": {
-    "closure_hash": "ae465eff1fbce438159a91180b545e4b534ffb0d42b710ae9843238742befaed",
+    "closure_hash": "85a4bd113fd15422d2f1759f1dabe40a42420242d8d3c67481c86f574b76815e",
     "closure_path": "data/operations/propagation/SCIENTIFIC-CONTEXT-PROTOCOL-I1-closure.json",
     "complete": true,
     "unresolved_residue": []

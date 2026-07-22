@@ -13,18 +13,18 @@
     "verified_at": "2026-07-22"
   },
   "branch_pr": {
-    "base": "agent/q44-i1-coaching-commitment-subcapability",
-    "base_head": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
-    "branch": "agent/scientific-context-protocol-i1-open-research-context",
+    "base": "repair/q44-r1-coaching-consent-binding",
+    "base_head": "4d15ccaf2e574248c0e224c05716c3af46203a39",
+    "branch": "repair/scientific-context-protocol-r1-context-capability-binding",
     "draft": true,
-    "pr_number": 81,
+    "pr_number": 98,
     "merged": false
   },
   "head_binding": {
     "mode": "external_exact_head_attestation",
-    "pr_number": 81,
+    "pr_number": 98,
     "authority": "pull_request_body_and_1111_receipt",
-    "receipt_path": "agent-results/IGNITION-20260722-SCIENTIFIC-CONTEXT-PROTOCOL-I1-scientific-context-protocol-i1-execution-receipt.json",
+    "receipt_path": "agent-results/remaining-repair-train/SCIENTIFIC-CONTEXT-PROTOCOL-I1-receipt.json",
     "embedded_exact_current_head": false,
     "live_refetch_required": true,
     "explanation": "PR #81 and 1111 bind final exact head and CI; repository object does not self-attest."
@@ -626,8 +626,8 @@
     "impact_report_path": "data/operations/propagation/SCIENTIFIC-CONTEXT-PROTOCOL-I1-impact-report.md",
     "system_map_delta_path": "data/operations/propagation/SCIENTIFIC-CONTEXT-PROTOCOL-I1-system-map-delta.json",
     "residue_path": "data/operations/propagation/SCIENTIFIC-CONTEXT-PROTOCOL-I1-residue.json",
-    "closure_hash": "ae465eff1fbce438159a91180b545e4b534ffb0d42b710ae9843238742befaed",
-    "base_identity": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
+    "closure_hash": "85a4bd113fd15422d2f1759f1dabe40a42420242d8d3c67481c86f574b76815e",
+    "base_identity": "4d15ccaf2e574248c0e224c05716c3af46203a39",
     "head_identity": "external_exact_head_attestation",
     "seed_paths": [
       "data/architecture/interactive-system-map-layout.json",

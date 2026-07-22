@@ -638,10 +638,10 @@
       "reason": "SCIENTIFIC-CONTEXT-PROTOCOL-I1 does not alter this synchronization surface."
     }
   ],
-  "base_identity": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
+  "base_identity": "4d15ccaf2e574248c0e224c05716c3af46203a39",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "ae465eff1fbce438159a91180b545e4b534ffb0d42b710ae9843238742befaed",
+  "closure_hash": "85a4bd113fd15422d2f1759f1dabe40a42420242d8d3c67481c86f574b76815e",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -786,7 +786,17 @@
       "open_scientific_context_protocol_pilot"
     ],
     "changed_edges": [],
-    "changed_nodes": [],
+    "changed_nodes": [
+      "analogy_audit_gate_validator",
+      "evidence_retrieval_gate_validator",
+      "evidence_retrieval_pilot",
+      "failure_lineage_gate_validator",
+      "failure_lineage_pilot",
+      "intervention_failure_gate_validator",
+      "symbolic_power_perspective_contract",
+      "symbolic_power_perspective_gate_validator",
+      "symbolic_power_perspective_pilot"
+    ],
     "decision": "CHANGE",
     "reason": "Three SCIENTIFIC-CONTEXT-PROTOCOL-I1 components are added to registry and layout.",
     "removed_edges": [],

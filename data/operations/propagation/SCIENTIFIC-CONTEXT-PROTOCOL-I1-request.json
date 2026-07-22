@@ -1,7 +1,7 @@
 {
   "task_id": "SCIENTIFIC-CONTEXT-PROTOCOL-I1",
   "request_version": "1.0.0",
-  "base_identity": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
+  "base_identity": "4d15ccaf2e574248c0e224c05716c3af46203a39",
   "head_identity": "external_exact_head_attestation",
   "change_classifications": [
     "CAPABILITY_ADDITION",

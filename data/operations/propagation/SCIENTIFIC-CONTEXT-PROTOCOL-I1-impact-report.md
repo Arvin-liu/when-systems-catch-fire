@@ -1,7 +1,7 @@
 # SCIENTIFIC-CONTEXT-PROTOCOL-I1 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `ae465eff1fbce438159a91180b545e4b534ffb0d42b710ae9843238742befaed`
+- Closure hash: `85a4bd113fd15422d2f1759f1dabe40a42420242d8d3c67481c86f574b76815e`
 - Fixpoint iterations: `2`
 - Seeds: `current_state, historical_reports, incremental_execution, iteration_manifest_contract, open_scientific_context_protocol_contract, open_scientific_context_protocol_gate_validator, open_scientific_context_protocol_pilot, pages_pipeline, project_component_registry, propagation_calculator, system_map_layout, system_map_projection`
 - Resolved components: `15`
