@@ -1,7 +1,7 @@
 {
   "intervention_requests": [
     {
-      "intervention_id": "int-fx-001",
+      "intervention_id": "int-pilot-q36-controlled-replay",
       "initiator": "q35-builder",
       "q34_claim_ref": "q33.seven_governance_components.current_in_main",
       "q35_actor_ref": "q35-executor",
@@ -9,19 +9,20 @@
       "q35_action_ref": "act-q34-pilot",
       "q35_trajectory_event_digest": "sha256:bff647b567d7d8da8460018af0d74409e90457b0a8697cee97282b44f12ebb93",
       "q36_obs_ref": "obs-q34-closure-drift-001",
+      "q36_residual_ref": "res-pilot-001",
       "target_resource": "repository_main_iteration_q34",
       "normalized_intervention_type": "dry_run_replay",
-      "intended_change": "controlled deterministic replay",
-      "mechanism_hypothesis": "Hypothesis: the same tool reproduces the output.",
+      "intended_change": "Regenerate a controlled fixture output deterministically from a frozen input snapshot; repository-local only, no external system touched.",
+      "mechanism_hypothesis": "Hypothesis: replaying the frozen input through the same deterministic tool reproduces the recorded output within stated uncertainty.",
       "mechanism_hypothesis_status": "hypothesis",
       "applicability_scope": "repository_main_iteration_q34",
-      "uncertainty": "deterministic",
-      "expected_effect": "output matches recorded digest",
+      "uncertainty": "Deterministic tool; residual uncertainty from input snapshot exactness only.",
+      "expected_effect": "Regenerated output matches the recorded artifact digest within byte-exact equality.",
       "evaluation_window": {
         "start": "2026-07-20T12:00:00Z",
         "end": "2026-07-21T00:00:00Z"
       },
-      "claim_ceiling": "candidate_only: single controlled repo-local replay; no real-world causal claim",
+      "claim_ceiling": "candidate_only: a single controlled, repository-local, deterministic replay of one fixture; does not assert the project can intervene in real-world systems or prove a causal mechanism.",
       "exact_head": "9087e494c782b405b5bbdb0d1ae4bd1707792d95",
       "artifact_digest": "sha256:2ad68c554bb42d7308b44e8c6e1f08468406b11b8a9b392ba87ac83ee17e2b17",
       "proposed_at": "2026-07-21T10:00:00+00:00",
@@ -32,8 +33,8 @@
   ],
   "safety_envelopes": [
     {
-      "envelope_id": "env-fx-001",
-      "request_id": "int-fx-001",
+      "envelope_id": "env-pilot-001",
+      "request_id": "int-pilot-q36-controlled-replay",
       "allowed_target_scope": "repo:data/observation controlled fixture regeneration only",
       "max_change_magnitude": 1.0,
       "allowed_side_effects": [
@@ -41,27 +42,33 @@
       ],
       "forbidden_surfaces": [
         "main",
-        "external_network"
+        "origin/main",
+        "external_network",
+        "production_deploy"
       ],
       "prerequisites": [
-        "snapshot present"
+        "frozen input snapshot present",
+        "tool available"
       ],
       "stop_conditions": [
-        "digest mismatch"
+        "output digest mismatch beyond tolerance",
+        "tool error"
       ],
       "abort_conditions": [
-        "external call"
+        "any write outside repo:data/observation",
+        "external call attempted"
       ],
-      "observation_cadence": "per-execution",
-      "authority_escalation_threshold": "residual to Q39",
+      "observation_cadence": "per-execution artifact digest compare",
+      "authority_escalation_threshold": "any residual flagged for Q39 failure memory",
       "rollback_readiness": true,
       "expiry": "2026-07-22T00:00:00+00:00",
       "rollback_plan": {
-        "plan_id": "rb-fx-001",
+        "plan_id": "rb-plan-pilot-001",
         "steps": [
-          "restore"
+          "restore fixture from pre-state digest",
+          "verify artifact digest equals pre-state"
         ],
-        "verification_method": "sha256 compare",
+        "verification_method": "sha256 compare of restored file vs pre_state_digest",
         "verification_binding": {
           "path": "data/observation/pilot-q34-closure-drift-prediction.json",
           "exact_commit": "9087e494c782b405b5bbdb0d1ae4bd1707792d95",
@@ -78,7 +85,7 @@
       "grant_expires_at": "2027-07-21T00:00:00Z",
       "scope": "repository",
       "grantee": "q35-executor",
-      "granted_by": "zhiyuan",
+      "granted_by": "self-declared-fictional-authority",
       "action_refs": [
         "act-q34-pilot"
       ]
@@ -99,60 +106,20 @@
   ],
   "plans": [
     {
-      "plan_id": "plan-fx-001",
-      "request_id": "int-fx-001",
-      "envelope_id": "env-fx-001",
+      "plan_id": "plan-pilot-001",
+      "request_id": "int-pilot-q36-controlled-replay",
+      "envelope_id": "env-pilot-001",
       "state": "succeeded_within_scope",
       "high_risk": false,
       "execution_events": [
         {
-          "event_id": "ev-fx-001",
+          "event_id": "ev-pilot-001",
           "state": "succeeded_within_scope",
           "pre_state_digest": "sha256:2ad68c554bb42d7308b44e8c6e1f08468406b11b8a9b392ba87ac83ee17e2b17",
-          "command": "python tools/observation/validate_observation_prediction_gate.py",
+          "command": "python tools/observation/validate_observation_prediction_gate.py --bundle fixture.json",
           "executor": "actor-zhiyuan",
           "start_time": "2026-07-21T10:10:00+00:00",
           "end_time": "2026-07-21T10:30:00+00:00",
-          "affected_surfaces": [
-            "data/observation/pilot-q34-closure-drift-prediction.json"
-          ],
-          "actual_change_magnitude": 0.0,
-          "output_artifact_digests": [
-            "sha256:472adaf64a47e693c3aa8ebc265fc554650831bf485e1ac309310adf2f838436"
-          ],
-          "side_effects": [],
-          "stop_condition_status": "triggered",
-          "trajectory_event_digest": "sha256:472adaf64a47e693c3aa8ebc265fc554650831bf485e1ac309310adf2f838436",
-          "no_silent_mutation": true,
-          "pre_state_binding": {
-            "path": "data/observation/pilot-q34-closure-drift-prediction.json",
-            "exact_commit": "9087e494c782b405b5bbdb0d1ae4bd1707792d95",
-            "git_blob": "c1d170108f00ab0b4daf009969d4aa49193cd315",
-            "sha256": "sha256:2ad68c554bb42d7308b44e8c6e1f08468406b11b8a9b392ba87ac83ee17e2b17"
-          },
-          "output_artifact_bindings": [
-            {
-              "path": "data/observation/evidence/q36-obs-repair-pilot-evidence.json",
-              "exact_commit": "9087e494c782b405b5bbdb0d1ae4bd1707792d95",
-              "git_blob": "d4d7ab594a8db04e79ef697eeaada7b841a19683",
-              "sha256": "sha256:472adaf64a47e693c3aa8ebc265fc554650831bf485e1ac309310adf2f838436"
-            }
-          ],
-          "trajectory_binding": {
-            "path": "data/observation/evidence/q36-obs-repair-pilot-evidence.json",
-            "exact_commit": "9087e494c782b405b5bbdb0d1ae4bd1707792d95",
-            "git_blob": "d4d7ab594a8db04e79ef697eeaada7b841a19683",
-            "sha256": "sha256:472adaf64a47e693c3aa8ebc265fc554650831bf485e1ac309310adf2f838436"
-          }
-        },
-        {
-          "event_id": "ev-fx-002",
-          "state": "executing",
-          "pre_state_digest": "sha256:2ad68c554bb42d7308b44e8c6e1f08468406b11b8a9b392ba87ac83ee17e2b17",
-          "command": "another run",
-          "executor": "actor-zhiyuan",
-          "start_time": "2026-07-21T10:35:00+00:00",
-          "end_time": "2026-07-21T10:40:00+00:00",
           "affected_surfaces": [
             "data/observation/pilot-q34-closure-drift-prediction.json"
           ],
@@ -190,18 +157,18 @@
   ],
   "outcome_evaluations": [
     {
-      "evaluation_id": "eval-fx-001",
-      "plan_id": "plan-fx-001",
-      "execution_event_id": "ev-fx-001",
+      "evaluation_id": "eval-pilot-001",
+      "plan_id": "plan-pilot-001",
+      "execution_event_id": "ev-pilot-001",
       "q36_obs_observation_ref": "obs-q34-closure-drift-001",
-      "expected_effect": "output matches recorded digest",
-      "observed_effect": "output matches recorded digest",
+      "expected_effect": "Regenerated output matches the recorded artifact digest within byte-exact equality.",
+      "observed_effect": "Regenerated output matches the recorded artifact digest byte-exactly.",
       "evaluation_method": "repository-local SHA-256 compare against byte-bound Q36-OBS source",
-      "baseline_comparator": "pre-state digest 3333...",
-      "uncertainty": "0",
+      "baseline_comparator": "pre-state artifact digest 33333333... recorded before execution",
+      "uncertainty": "0 (deterministic tool over frozen input)",
       "residual_change": "none",
       "unintended_effects": [],
-      "scope_validity": "valid for single controlled replay",
+      "scope_validity": "valid only for the single controlled fixture replay within repo:data/observation",
       "evaluator_ref": "actor-zhiyuan",
       "causal_interpretation_status": "NOT_IDENTIFIED",
       "do_not_overclaim_causality": true,
