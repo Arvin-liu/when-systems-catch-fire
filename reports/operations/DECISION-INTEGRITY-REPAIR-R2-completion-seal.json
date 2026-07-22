@@ -1,0 +1,13 @@
+{
+  "seal_id": "DECISION-INTEGRITY-REPAIR-R2-SEAL",
+  "task_id": "DECISION-INTEGRITY-R2",
+  "branch": "repair-r2/decision-integrity-r2-parent-and-semantics",
+  "annotated_tag": "archive/decision-integrity-repair-r2-frozen-head",
+  "closure_complete": true,
+  "residue": 0,
+  "validation": "BUILDER_VALIDATION_PASS",
+  "independent_accepted": false,
+  "sealed_at": "2026-07-23T01:30:00+08:00",
+  "sealed_by": "WorkBuddy night-shift main session (云天明)",
+  "statement": "RB09-DIRECT-PREDECESSOR-BINDING closed: DECISION-INTEGRITY now binds its direct predecessor to the real SYMBOLIC-SPHERE repair-r2 head 68ea9bf4. The fail-closed shared engine (4 engine blockers) is inherited unchanged via the stacked merge."
+}
