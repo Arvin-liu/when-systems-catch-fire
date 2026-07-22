@@ -344,7 +344,7 @@
       "target_artifact": "data/intervention/pilot-controlled-intervention.json",
       "plan_effect": "INTERVENE",
       "authorized": true,
-      "applied": false,
+      "applied": true,
       "verification_digest": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d",
       "authorization_status": "VERIFIED_REPOSITORY_GRANT",
       "authorization_binding": {
@@ -522,6 +522,6 @@
     "statement": "Failures remain append-only and deterministically change bounded later plans without establishing their causes.",
     "negative_history_preserved": true,
     "failures_change_future_plans": true,
-    "claim_ceiling": "universal truth and mechanism proven"
+    "claim_ceiling": "candidate_only_repository_failure_lineage"
   }
 }

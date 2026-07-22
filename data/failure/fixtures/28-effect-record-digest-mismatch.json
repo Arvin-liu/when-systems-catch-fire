@@ -403,7 +403,7 @@
         "path": "data/failure/q39-repair-effect-records.json",
         "exact_commit": "cdfb20ae8219432275dc5cc356c5516a1190414c",
         "git_blob": "19620178f7fa4e6e9b23f6d8c6f0a26194ed87ed",
-        "sha256": "sha256:328837251c24037c3792980dc20341838a1e3183e7ff2d249af3e79f688ec0cb"
+        "sha256": "sha256:1111111111111111111111111111111111111111111111111111111111111111"
       }
     },
     {
@@ -522,6 +522,6 @@
     "statement": "Failures remain append-only and deterministically change bounded later plans without establishing their causes.",
     "negative_history_preserved": true,
     "failures_change_future_plans": true,
-    "claim_ceiling": "universal truth and mechanism proven"
+    "claim_ceiling": "candidate_only_repository_failure_lineage"
   }
 }

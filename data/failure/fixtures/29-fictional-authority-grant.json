@@ -389,7 +389,7 @@
         "sha256": "sha256:5f6d084255ba89f87f10339a33c5a960a2ecfdf4a3d04d55a7cc0d88796a21e6"
       },
       "authority_actor_id": "q35-builder",
-      "authority_grant_id": "grant-q34-pilot",
+      "authority_grant_id": "grant-fictional",
       "authority_action_id": "act-q34-pilot",
       "application_status": "APPLIED_REPOSITORY_RECORD",
       "target_binding": {
@@ -522,6 +522,6 @@
     "statement": "Failures remain append-only and deterministically change bounded later plans without establishing their causes.",
     "negative_history_preserved": true,
     "failures_change_future_plans": true,
-    "claim_ceiling": "universal truth and mechanism proven"
+    "claim_ceiling": "candidate_only_repository_failure_lineage"
   }
 }

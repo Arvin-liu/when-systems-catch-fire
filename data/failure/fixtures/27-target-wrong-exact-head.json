@@ -394,7 +394,7 @@
       "application_status": "APPLIED_REPOSITORY_RECORD",
       "target_binding": {
         "path": "data/analogy/pilot-real-repo-analogy-audit.json",
-        "exact_commit": "7a01b1958c3f6b6eff559be85ec5e47eecff313c",
+        "exact_commit": "ffffffffffffffffffffffffffffffffffffffff",
         "git_blob": "a26c517d479e096bdccdae18494b9d72eb4455fa",
         "sha256": "sha256:0d20ad95947d5e91b39bc3af7cdd0af0d6b6ada6cf768e78c54901ac3abd038a"
       },
@@ -522,6 +522,6 @@
     "statement": "Failures remain append-only and deterministically change bounded later plans without establishing their causes.",
     "negative_history_preserved": true,
     "failures_change_future_plans": true,
-    "claim_ceiling": "universal truth and mechanism proven"
+    "claim_ceiling": "candidate_only_repository_failure_lineage"
   }
 }
