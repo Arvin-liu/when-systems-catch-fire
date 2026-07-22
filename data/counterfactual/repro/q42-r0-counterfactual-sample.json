@@ -1,0 +1,40 @@
+{
+  "sample_version": "r0-repro",
+  "capability": "counterfactual_unrealized_path",
+  "purpose": "Minimal Q42-semantic sample used by R0 reproduction to show the original gate accepts evidence bound only to the mutable working tree (no immutable Git-object pin).",
+  "distinctions": {
+    "counterfactual": {
+      "definition": "A bounded 'what-if X had happened instead' statement about an IDENTIFIABLE portion of the observed system.",
+      "status": "IDENTIFIABLE_COUNTERFACTUAL",
+      "claim": "bounded; only the identifiable portion receives counterfactual status"
+    },
+    "alternative_decomposition": {
+      "definition": "A different way to break down the SAME observed system. It is a reframing, not a claim about what would have happened.",
+      "status": "DESCRIPTIVE_REFraming",
+      "is_counterfactual_proof": false
+    },
+    "unrealized_path": {
+      "definition": "A decision or trajectory that was NOT taken. It remains speculative: it was never realized and cannot be observed.",
+      "status": "SPECULATIVE_UNREALIZED_PATH"
+    },
+    "speculative_narrative": {
+      "definition": "An if-then story used for reasoning. It is explicitly labeled speculation and is NOT a causal fact.",
+      "status": "LABELED_SPECULATION",
+      "is_causal_fact": false
+    }
+  },
+  "intervention_difference": {
+    "note": "Counterfactuals here assume NO external intervention was performed; if an external action had occurred it would be a different capability boundary.",
+    "external_intervention_performed": false
+  },
+  "identifiability": {
+    "observable_portion": "the parts of the system whose state is recorded and reproducible",
+    "unobservable_portion": "the parts that were never measured; they remain unobservable and are NOT promoted to fact"
+  },
+  "non_claims": [
+    "if-then story is not causal fact",
+    "unobservable portion remains unobservable",
+    "alternative decomposition is not counterfactual proof",
+    "no external intervention"
+  ]
+}

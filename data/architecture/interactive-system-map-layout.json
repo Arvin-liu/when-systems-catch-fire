@@ -157,7 +157,10 @@
       "latent_system_identifiability_pilot",
       "multi_history_world_projection_contract",
       "multi_history_world_projection_gate_validator",
-      "multi_history_world_projection_pilot"
+      "multi_history_world_projection_pilot",
+      "counterfactual_unrealized_path_contract",
+      "counterfactual_unrealized_path_gate_validator",
+      "counterfactual_unrealized_path_pilot"
     ],
     "layers": [
       "l0",
