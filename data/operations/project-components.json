@@ -1882,6 +1882,7 @@
       },
       "path_patterns": [
         "schemas/retrieval/evidence-retrieval-contract.schema.json",
+        "docs/retrieval/121Q38-repair-r1-architecture.md",
         "docs/retrieval/q38-i1-architecture-decision.md",
         "docs/retrieval/q38-interfaces.md",
         "docs/retrieval/q38-legacy-lab-salvage-matrix.json"
@@ -1892,7 +1893,7 @@
       "canonical_target": "tools/retrieval/validate_evidence_retrieval_gate.py",
       "component_id": "evidence_retrieval_gate_validator",
       "component_type": "governance_constraint",
-      "description": "Q38-I1 fail-closed evidence-retrieval gate with stable exits 0 and 2-21. It blocks unaudited Q37 seeds, support-only search, negative deletion, duplicate-family counting, rights bypass, stale evidence, missing representativeness, quantity voting, similarity-to-mechanism promotion, stop-condition rewrite, selective exclusion, ceiling inflation, invalid provenance/digest, incomplete selection logs, missing Q39 exports, counterevidence override, temporal invalidity, unbounded search and dangling references.",
+      "description": "Q38-I1 fail-closed evidence-retrieval gate with stable exits 0 and 2-21. It blocks unaudited Q37 seeds, support-only search, negative deletion, duplicate-family counting, rights bypass, stale evidence, missing representativeness, quantity voting, similarity-to-mechanism promotion, stop-condition rewrite, selective exclusion, ceiling inflation, invalid provenance/digest, incomplete selection logs, missing Q39 exports, counterevidence override, temporal invalidity, unbounded search, dangling references, nonexistent repository sources, wrong Git objects, path escape, null/placeholder bindings and digests not computed from actual retrieved bytes.",
       "label": "案例、反例与边界证据检索 门禁",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -1914,7 +1915,7 @@
       "canonical_target": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
       "component_id": "evidence_retrieval_pilot",
       "component_type": "governance_constraint",
-      "description": "Q38-I1 bounded real-repository replay: one traceable support item, counterexample, boundary case, negative result and deliberately unperformed external retrieval, all bound to the frozen Q37 seed; 24 fixtures drive the real CLI. Negative and failed records export to Q39; external validity remains an explicit gap. No external fact, mechanism proof or real-world action is claimed.",
+      "description": "Q38-I1 bounded real-repository replay: one traceable support item, counterexample, boundary case, negative result and deliberately unperformed external retrieval, all bound to the Q37 repair seed and actual repository bytes; 30 fixtures drive the real CLI. Negative and failed records export to Q39; external validity remains an explicit gap. No external fact, mechanism proof or real-world action is claimed.",
       "label": "案例、反例与边界证据检索 受控试点",
       "layer_or_overlay": "governance",
       "lifecycle": {
