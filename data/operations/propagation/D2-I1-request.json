@@ -1,8 +1,5 @@
 {
-  "task_id": "D2-I1",
-  "request_version": "1.0.0",
-  "base_identity": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301",
-  "head_identity": "external_exact_head_attestation",
+  "base_identity": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09",
   "change_classifications": [
     "CAPABILITY_ADDITION",
     "GOVERNANCE_CHANGE",
@@ -62,6 +59,500 @@
     "tools/multihistory/validate_multi_history_world_projection_gate.py",
     "tools/validate_human_front_door.py"
   ],
+  "component_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "accepted_work",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai_guide",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "arn",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "candidate_return",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "case_source",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "charter",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "current_state",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external_input",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "feedback_routes",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation_data",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "function_os",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "historical_reports",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ignition_increment",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "incremental_execution",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration_manifest_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l0",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l1",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l2",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l3",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l4",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l5",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l6",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "licensing",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "mcf",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_l7",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_totality_proof",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_truth_upgrade",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "pages_pipeline",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "point_fire_analysis",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "project_component_registry",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_calculator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_topology",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "provenance_capture",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "psd",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "public_response",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q12",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q13",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q14",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "readme",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase_registry",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "source_pool",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "summary",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sustainability",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sync",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_layout",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "system_map_projection",
+      "reason": "D2-I1 new or synchronized component: system_map_projection"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "usage",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "zhiyuan_method",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_jurisdiction_registry",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_source_rights",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_material_classification",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_history_remediation",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_publication_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_non_republication_principle",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_tests",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_claim_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_pilot_q33",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_pilot_q34",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_pilot_q34",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_pilot",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "analogy_audit_pilot",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "evidence_retrieval_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "evidence_retrieval_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "evidence_retrieval_pilot",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "failure_lineage_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "failure_lineage_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "failure_lineage_pilot",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "symbolic_power_perspective_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "symbolic_power_perspective_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "symbolic_power_perspective_pilot",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "decision_integrity_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "decision_integrity_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "decision_integrity_pilot",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "epistemic_state_control_plane_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "epistemic_state_control_plane_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "epistemic_state_control_plane_pilot",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "world_feedback_anomaly_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "world_feedback_anomaly_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "world_feedback_anomaly_pilot",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "latent_system_identifiability_contract",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "latent_system_identifiability_gate_validator",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "latent_system_identifiability_pilot",
+      "reason": "D2-I1 does not alter this component semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "multi_history_world_projection_contract",
+      "reason": "D2-I1 new or synchronized component: multi_history_world_projection_contract"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "multi_history_world_projection_gate_validator",
+      "reason": "D2-I1 new or synchronized component: multi_history_world_projection_gate_validator"
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "multi_history_world_projection_pilot",
+      "reason": "D2-I1 new or synchronized component: multi_history_world_projection_pilot"
+    }
+  ],
+  "head_identity": "external_exact_head_attestation",
+  "request_version": "1.0.0",
   "state_transition_subjects": [
     "Evidence-Constrained Multi-History / Multi-World Projection",
     "multi_history_world_projection",
@@ -69,586 +560,95 @@
   ],
   "surface_decisions": [
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "human.readme",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "human.pages_source",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "external.pages_homepage",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "CHANGE",
       "item_id": "human.current_state",
-      "decision": "CHANGE",
       "reason": "D2-I1 adds candidate governance and synchronized current-state documentation."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "human.summary",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "human.usage",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "human.ai_guide",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "ai.start",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "agent.handoff",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "machine.llms",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "release.changelog",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "release.versioning",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "method.iteration",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "method.task_template",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "method.result_template",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "NO_CHANGE_WITH_REASON",
       "item_id": "method.review_template",
-      "decision": "NO_CHANGE_WITH_REASON",
       "reason": "D2-I1 does not alter this synchronization surface."
     },
     {
+      "decision": "CHANGE",
       "item_id": "copyright_governance",
-      "decision": "CHANGE",
       "reason": "D2-I1 adds candidate governance and synchronized current-state documentation."
-    }
-  ],
-  "component_decisions": [
-    {
-      "item_id": "accepted_work",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "ai_guide",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "arn",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "candidate_return",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "case_source",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "charter",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "current_state",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "external_input",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "feedback_routes",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "foundation",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "foundation_data",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "function_os",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "historical_reports",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "ignition_increment",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "incremental_execution",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "iteration",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "iteration_manifest_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "l0",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "l1",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "l2",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "l3",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "l4",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "l5",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "l6",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "licensing",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "mcf",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "no_l7",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "no_totality_proof",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "no_truth_upgrade",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "pages_pipeline",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "point_fire_analysis",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "project_component_registry",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "propagation_calculator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "propagation_topology",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "provenance_capture",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "psd",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "public_response",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "q12",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "q13",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "q14",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "readme",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "showcase",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "showcase_registry",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "source_pool",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "summary",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "sustainability",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "sync",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "system_map",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "system_map_layout",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "system_map_projection",
-      "decision": "CHANGE",
-      "reason": "D2-I1 new or synchronized component: system_map_projection"
-    },
-    {
-      "item_id": "usage",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "zhiyuan_method",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "copyright_governance_jurisdiction_registry",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "copyright_governance_source_rights",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "copyright_governance_material_classification",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "copyright_governance_history_remediation",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "copyright_governance_publication_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "copyright_governance_non_republication_principle",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "copyright_governance_tests",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "discovery_commitment_claim_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "discovery_commitment_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "discovery_commitment_pilot_q33",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "agent_responsibility_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "agent_responsibility_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "agent_responsibility_pilot_q34",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "observation_prediction_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "observation_prediction_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "observation_prediction_pilot_q34",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "intervention_failure_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "intervention_failure_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "intervention_failure_pilot",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "analogy_audit_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "analogy_audit_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "analogy_audit_pilot",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "evidence_retrieval_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "evidence_retrieval_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "evidence_retrieval_pilot",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "failure_lineage_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "failure_lineage_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "failure_lineage_pilot",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "symbolic_power_perspective_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "symbolic_power_perspective_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "symbolic_power_perspective_pilot",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "decision_integrity_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "decision_integrity_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "decision_integrity_pilot",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "epistemic_state_control_plane_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "epistemic_state_control_plane_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "epistemic_state_control_plane_pilot",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "world_feedback_anomaly_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "world_feedback_anomaly_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "world_feedback_anomaly_pilot",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "latent_system_identifiability_contract",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "latent_system_identifiability_gate_validator",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "latent_system_identifiability_pilot",
-      "decision": "NO_CHANGE_WITH_REASON",
-      "reason": "D2-I1 does not alter this component semantics."
-    },
-    {
-      "item_id": "multi_history_world_projection_contract",
-      "decision": "CHANGE",
-      "reason": "D2-I1 new or synchronized component: multi_history_world_projection_contract"
-    },
-    {
-      "item_id": "multi_history_world_projection_gate_validator",
-      "decision": "CHANGE",
-      "reason": "D2-I1 new or synchronized component: multi_history_world_projection_gate_validator"
-    },
-    {
-      "item_id": "multi_history_world_projection_pilot",
-      "decision": "CHANGE",
-      "reason": "D2-I1 new or synchronized component: multi_history_world_projection_pilot"
     }
   ],
   "system_map_decision": {
     "decision": "CHANGE",
     "item_id": "interactive_system_map",
     "reason": "Three D2-I1 components are added to registry and layout."
-  }
+  },
+  "task_id": "D2-I1"
 }

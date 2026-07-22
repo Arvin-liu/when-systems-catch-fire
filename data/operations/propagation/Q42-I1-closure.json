@@ -593,10 +593,10 @@
       "reason": "Q42-I1 does not alter this synchronization surface."
     }
   ],
-  "base_identity": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
+  "base_identity": "1904628103d8c23133107d501a22e3f17d08221d",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "30f19a8b93471dd152b5c56135980b4a8284ab1294f1b344dbae5faa987bcca7",
+  "closure_hash": "4658910053ba3bee41ea413491a1d4daeeebc126d9738d8a0a46298d8c8ed0f3",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,

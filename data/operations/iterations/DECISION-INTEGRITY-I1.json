@@ -13,21 +13,21 @@
     "verified_at": "2026-07-22"
   },
   "branch_pr": {
-    "base": "agent/symbolic-sphere-i1-symbol-power-perspective-governance",
+    "base": "repair/symbolic-sphere-r1-reference-integrity",
     "base_head": "213dced90f1e9b1f1992a148ee10fc0844917490",
-    "branch": "agent/decision-integrity-i1-principle-lock-process-outcome-governance",
+    "branch": "repair/decision-integrity-r1-principle-process-binding",
     "draft": true,
-    "pr_number": 73,
+    "pr_number": 89,
     "merged": false
   },
   "head_binding": {
     "mode": "external_exact_head_attestation",
-    "pr_number": 73,
+    "pr_number": 89,
     "authority": "pull_request_body_and_1111_receipt",
-    "receipt_path": "agent-results/IGNITION-20260722-DECISION-INTEGRITY-I1-decision-integrity-i1-execution-receipt.json",
+    "receipt_path": "agent-results/remaining-repair-train/DECISION-INTEGRITY-I1-receipt.json",
     "embedded_exact_current_head": false,
     "live_refetch_required": true,
-    "explanation": "PR #73 and 1111 bind final exact head and CI; repository object does not self-attest."
+    "explanation": "PR #89 and 1111 bind final exact head and CI; repository object does not self-attest."
   },
   "gap": {
     "summary": "Principle Lock, Process Quality & Outcome-Bias Governance lacked a typed evidence-bound fail-closed repository capability.",

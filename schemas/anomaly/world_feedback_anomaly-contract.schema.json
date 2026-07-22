@@ -277,7 +277,7 @@
     },
     "evidence": {
       "type": "object",
-      "additionalProperties": false,
+      "additionalProperties": true,
       "required": [
         "evidence_id",
         "artifact",

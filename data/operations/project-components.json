@@ -93,8 +93,7 @@
         "copyright_governance_publication_gate_validator",
         "copyright_governance_history_remediation",
         "copyright_governance_tests",
-        "licensing",
-        "symbolic_power_perspective_gate_validator"
+        "licensing"
       ],
       "path_patterns": [
         "data/governance/",
@@ -1413,6 +1412,7 @@
         "schemas/discovery/commitment-claim.schema.json",
         "docs/discovery/discovery-commitment-boundary.md",
         "docs/discovery/discovery-commitment-boundary-architecture.md",
+        "docs/discovery/121Q34-repair-r1-architecture.md",
         "docs/discovery/q34-legacy-lab-salvage-matrix.json"
       ]
     },
@@ -1438,7 +1438,8 @@
         "tools/discovery/__init__.py",
         "tests/discovery/__init__.py",
         "tests/discovery/test_commitment_gate.py",
-        "data/discovery/evidence-resolvable-registry.json"
+        "data/discovery/evidence-resolvable-registry.json",
+        "data/discovery/actor-authority-registry.json"
       ]
     },
     {
@@ -1469,7 +1470,9 @@
         "data/discovery/fixtures/08-retraction-new-positive.json",
         "data/discovery/fixtures/09-uncommitted-path-deferred.json",
         "data/discovery/fixtures/10-q33-global-compliance-breach.json",
-        "data/discovery/fixtures/11-external-world-no-attestation.json"
+        "data/discovery/fixtures/11-external-world-no-attestation.json",
+        "data/discovery/fixtures/12-independent-review-bypass-reproduction.json",
+        "data/discovery/review-decisions/q33-current-main-independent-decision.json"
       ]
     },
     {
@@ -1492,6 +1495,7 @@
         "schemas/agent/responsibility-contract.schema.json",
         "docs/agent/responsibility-authority-action-trace.md",
         "docs/agent/responsibility-authority-action-trace-architecture.md",
+        "docs/agent/121Q35-repair-r1-architecture.md",
         "docs/agent/q36-intervention-interface.md",
         "docs/agent/q35-legacy-lab-salvage-matrix.json"
       ]
@@ -1519,6 +1523,9 @@
         "tests/agent/__init__.py",
         "tests/agent/test_responsibility_gate.py",
         "data/agent/q34-claims-registry.json",
+        "data/agent/canonical-actor-registry.json",
+        "data/agent/canonical-grant-registry.json",
+        "data/agent/grants/q35-repair-pilot-grants.json",
         "data/agent/q33-publication-rejects.json"
       ]
     },
@@ -1555,7 +1562,12 @@
         "data/agent/fixtures/13-trajectory-chain-break.json",
         "data/agent/fixtures/14-silent-rollback-rewrite.json",
         "data/agent/fixtures/15-many-hands-forced-owner.json",
-        "data/agent/fixtures/16-q33-gate-bypass.json"
+        "data/agent/fixtures/16-q33-gate-bypass.json",
+        "data/agent/fixtures/17-missing-claim-nonexistent-grantor-bypass.json",
+        "data/agent/fixtures/18-known-claim-nonexistent-grantor.json",
+        "data/agent/fixtures/19-zero-claim-digest.json",
+        "data/agent/fixtures/20-zero-grant-digest.json",
+        "data/agent/fixtures/21-embedded-noncanonical-grant.json"
       ]
     },
     {
@@ -1576,6 +1588,7 @@
       },
       "path_patterns": [
         "schemas/observation/observation-prediction-contract.schema.json",
+        "docs/observation/121Q36-OBS-repair-r1-architecture.md",
         "docs/observation/q36-obs-architecture-decision.md",
         "docs/observation/q36-obs-typed-contract.md",
         "docs/observation/q36-obs-interfaces.md",
@@ -1602,6 +1615,7 @@
         "tools/observation/validate_observation_prediction_gate.py",
         "tests/observation/test_observation_prediction_core.py",
         "tests/observation/test_observation_prediction_gate.py",
+        "data/observation/evidence/q36-obs-repair-pilot-evidence.json",
         "data/agent/q34-claims-registry.json",
         "data/agent/q33-publication-rejects.json"
       ]
@@ -1643,7 +1657,14 @@
         "data/observation/fixtures/17-q33-rights-bypass.json",
         "data/observation/fixtures/18-negative-result-preserved.json",
         "data/observation/fixtures/19-abstain-defer-preserved.json",
-        "data/observation/fixtures/20-retrospective-replay-pilot.json"
+        "data/observation/fixtures/20-retrospective-replay-pilot.json",
+        "data/observation/fixtures/21-missing-predecessor-nonexistent-source-zero-digest.json",
+        "data/observation/fixtures/22-missing-source.json",
+        "data/observation/fixtures/23-source-digest-mismatch.json",
+        "data/observation/fixtures/24-source-wrong-exact-head.json",
+        "data/observation/fixtures/25-freeze-reveal-ordering.json",
+        "data/observation/fixtures/26-target-window-drift.json",
+        "data/observation/fixtures/27-rule-version-mismatch.json"
       ]
     },
     {
@@ -1664,6 +1685,7 @@
       },
       "path_patterns": [
         "schemas/intervention/intervention-failure-dynamics-contract.schema.json",
+        "docs/intervention/121Q36-INT-repair-r1-architecture.md",
         "docs/intervention/q36-int-architecture-decision.md",
         "docs/intervention/q36-int-typed-contract.md",
         "docs/intervention/q36-int-interfaces.md",
@@ -1675,7 +1697,7 @@
       "canonical_target": "tools/intervention/validate_intervention_failure_gate.py",
       "component_id": "intervention_failure_gate_validator",
       "component_type": "governance_constraint",
-      "description": "Q36-INT fail-closed intervention-failure dynamics gate/CLI: blocks Q14 uncommitted claims, Q35 authority gaps, Q33 rights bypass, missing safety envelope/stop/rollback, real-world external action, envelope exceed, stop-condition violation, failure rewrite, expected-effect rewrite, causal/universal overclaim, incomplete rollback, many-hands forgery, unvalidated observation, separation-of-duty violation, missing baseline. Deterministic exit codes 0-20.",
+      "description": "Q36-INT fail-closed intervention-failure dynamics gate/CLI: blocks Q34 uncommitted claims, Q35 authority gaps, Q33 rights bypass, missing safety envelope/stop/rollback, real-world external action, envelope exceed, stop-condition violation, failure rewrite, expected-effect rewrite, causal/universal overclaim, incomplete rollback, many-hands forgery, unvalidated observation, separation-of-duty violation, missing baseline, placeholder digests and unbound Git bytes. Deterministic exit codes 0-23.",
       "label": "干预—失效动力学 门禁",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -1735,6 +1757,11 @@
         "data/intervention/fixtures/21-negative-result-preserved.json",
         "data/intervention/fixtures/22-legal-abort-abandon.json",
         "data/intervention/fixtures/23-controlled-pilot-replay.json"
+        ,"data/intervention/fixtures/24-placeholder-digests-self-declared-authority.json"
+        ,"data/intervention/fixtures/25-q36-source-digest-mismatch.json"
+        ,"data/intervention/fixtures/26-q35-source-wrong-exact-head.json"
+        ,"data/intervention/fixtures/27-source-path-traversal.json"
+        ,"data/intervention/fixtures/28-embedded-unresolvable-grant.json"
       ]
     },
     {
@@ -1753,9 +1780,10 @@
         "group": "governance",
         "visible": true
       },
-      "path_patterns": [
-        "schemas/analogy/analogy-audit-contract.schema.json",
-        "docs/analogy/q37-i1-architecture-decision.md",
+    "path_patterns": [
+      "schemas/analogy/analogy-audit-contract.schema.json",
+      "docs/analogy/121Q37-repair-r1-architecture.md",
+      "docs/analogy/q37-i1-architecture-decision.md",
         "docs/analogy/q37-legacy-lab-salvage-matrix.json",
         "docs/analogy/q37-interfaces.md"
       ]
@@ -1765,7 +1793,7 @@
       "canonical_target": "tools/analogy/validate_analogy_audit_gate.py",
       "component_id": "analogy_audit_gate_validator",
       "component_type": "governance_constraint",
-      "description": "Q37-I1 fail-closed analogy-audit & transportability gate/CLI: blocks metaphor/local-isomorphism/selective-correspondence/unaudited-structural-map/Q36-residual upgraded to mechanism identity or universal law, undeclared scale/time/context or transportability shift, mechanism evidence insufficient/circular, residual-as-cause, transportability missing overlap/invariance/boundary/falsifier, suppressed counteranalogy/negative evidence, Q14 uncommitted claim, Q35 authority gap/expiry/scope-mismatch, Q33 rights bypass, Q38 premature start, claim-ceiling overreach, semantic inconsistency. Deterministic exit codes 0-21.",
+    "description": "Q37-I1 fail-closed analogy-audit & transportability gate/CLI: blocks metaphor/local-isomorphism/selective-correspondence/unaudited-structural-map/Q36-residual upgraded to mechanism identity or universal law, undeclared scale/time/context or transportability shift, mechanism evidence insufficient/circular, residual-as-cause, transportability missing overlap/invariance/boundary/falsifier, suppressed counteranalogy/negative evidence, Q34 candidate self-promotion, Q35 fictional authority, Q33 rights bypass, Q38 premature start, claim-ceiling overreach, semantic inconsistency, unbound source bytes, semantic digest mismatch and wrong actual checkout head. Deterministic exit codes 0-24.",
       "label": "类比审计与可运输性 门禁",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -1827,8 +1855,13 @@
         "data/analogy/fixtures/26-relation-preservation-overclaim.json",
         "data/analogy/fixtures/27-counteranalogy-suppressed.json",
         "data/analogy/fixtures/28-q38-start-forbidden.json",
-        "data/analogy/fixtures/29-negative-audit-deleted.json",
-        "data/analogy/fixtures/30-semantic-consistency-mismatch.json"
+      "data/analogy/fixtures/29-negative-audit-deleted.json",
+      "data/analogy/fixtures/30-semantic-consistency-mismatch.json",
+      "data/analogy/fixtures/31-intermediate-head-candidate-fictional-source-bypass.json",
+      "data/analogy/fixtures/32-fictional-source-binding.json",
+      "data/analogy/fixtures/33-mapping-content-digest-mismatch.json",
+      "data/analogy/fixtures/34-fictional-authority-grant.json",
+      "data/analogy/fixtures/35-self-promoted-candidate-claim.json"
       ]
     },
     {
@@ -1849,6 +1882,7 @@
       },
       "path_patterns": [
         "schemas/retrieval/evidence-retrieval-contract.schema.json",
+        "docs/retrieval/121Q38-repair-r1-architecture.md",
         "docs/retrieval/q38-i1-architecture-decision.md",
         "docs/retrieval/q38-interfaces.md",
         "docs/retrieval/q38-legacy-lab-salvage-matrix.json"
@@ -1859,7 +1893,7 @@
       "canonical_target": "tools/retrieval/validate_evidence_retrieval_gate.py",
       "component_id": "evidence_retrieval_gate_validator",
       "component_type": "governance_constraint",
-      "description": "Q38-I1 fail-closed evidence-retrieval gate with stable exits 0 and 2-21. It blocks unaudited Q37 seeds, support-only search, negative deletion, duplicate-family counting, rights bypass, stale evidence, missing representativeness, quantity voting, similarity-to-mechanism promotion, stop-condition rewrite, selective exclusion, ceiling inflation, invalid provenance/digest, incomplete selection logs, missing Q39 exports, counterevidence override, temporal invalidity, unbounded search and dangling references.",
+      "description": "Q38-I1 fail-closed evidence-retrieval gate with stable exits 0 and 2-21. It blocks unaudited Q37 seeds, support-only search, negative deletion, duplicate-family counting, rights bypass, stale evidence, missing representativeness, quantity voting, similarity-to-mechanism promotion, stop-condition rewrite, selective exclusion, ceiling inflation, invalid provenance/digest, incomplete selection logs, missing Q39 exports, counterevidence override, temporal invalidity, unbounded search, dangling references, nonexistent repository sources, wrong Git objects, path escape, null/placeholder bindings and digests not computed from actual retrieved bytes.",
       "label": "案例、反例与边界证据检索 门禁",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -1881,7 +1915,7 @@
       "canonical_target": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
       "component_id": "evidence_retrieval_pilot",
       "component_type": "governance_constraint",
-      "description": "Q38-I1 bounded real-repository replay: one traceable support item, counterexample, boundary case, negative result and deliberately unperformed external retrieval, all bound to the frozen Q37 seed; 24 fixtures drive the real CLI. Negative and failed records export to Q39; external validity remains an explicit gap. No external fact, mechanism proof or real-world action is claimed.",
+      "description": "Q38-I1 bounded real-repository replay: one traceable support item, counterexample, boundary case, negative result and deliberately unperformed external retrieval, all bound to the Q37 repair seed and actual repository bytes; 30 fixtures drive the real CLI. Negative and failed records export to Q39; external validity remains an explicit gap. No external fact, mechanism proof or real-world action is claimed.",
       "label": "案例、反例与边界证据检索 受控试点",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -1915,6 +1949,7 @@
       },
       "path_patterns": [
         "schemas/failure/failure-lineage-contract.schema.json",
+        "docs/failure/121Q39-repair-r1-architecture.md",
         "docs/failure/q39-i1-architecture-decision.md",
         "docs/failure/q39-interfaces.md",
         "docs/failure/q39-legacy-lab-salvage-matrix.json"
@@ -1925,7 +1960,7 @@
       "canonical_target": "tools/failure/validate_failure_lineage_gate.py",
       "component_id": "failure_lineage_gate_validator",
       "component_type": "governance_constraint",
-      "description": "Q39-I1 deterministic fail-closed gate: rejects broken hash chains, silent overwrite/deletion, cause overclaim, unchanged retry, missing repair propagation, no downstream plan effect, retracted claims driving actions, environment-as-theory relabeling, lost negative results, broken source binding, invalid recurrence/closure and ceiling inflation.",
+      "description": "Q39-I1 deterministic fail-closed gate: rejects broken hash chains, silent overwrite/deletion, cause overclaim, unchanged retry, missing repair propagation, no downstream plan effect, retracted claims driving actions, environment-as-theory relabeling, lost negative results, broken source binding, invalid recurrence/closure, ceiling inflation, nonexistent propagation targets, wrong Git objects or actual-byte digests, fictional authority, unbound effects and boolean-only application claims. High-risk intervention effects remain request-only.",
       "label": "失败记忆与修复传播 门禁",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -1947,7 +1982,7 @@
       "canonical_target": "data/failure/pilot-q39-failure-lineage.json",
       "component_id": "failure_lineage_pilot",
       "component_type": "governance_constraint",
-      "description": "Q39-I1 bounded repository pilot replays Q36 rollback, Q37 analogy mismatch and Q38 counterexample/negative/failed retrieval into an append-only chain with applied downstream plan effects; 24 fixtures drive the real CLI. No real-world retry or external action.",
+      "description": "Q39-I1 bounded repository pilot replays Q36 rollback, Q37 analogy mismatch and Q38 counterexample/negative/failed retrieval into an append-only chain with structured Git-bound downstream plan-effect records; 30 fixtures drive the real CLI. High-risk intervention remains request-only. No real-world retry or external action.",
       "label": "失败记忆与修复传播 受控试点",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -1960,6 +1995,7 @@
       },
       "path_patterns": [
         "data/failure/pilot-q39-failure-lineage.json",
+        "data/failure/q39-repair-effect-records.json",
         "data/failure/fixtures/"
       ]
     },
@@ -1968,7 +2004,7 @@
       "canonical_target": "schemas/symbolic/symbolic_power_perspective-contract.schema.json",
       "component_id": "symbolic_power_perspective_contract",
       "component_type": "governance_constraint",
-      "description": "SYMBOLIC-SPHERE-I1 typed evidence-bound contract. The same object can be represented as separate material fact, actor position, meaning projection and institutionalized power surfaces, with evidence-constrained counter-readings and visible benefit/cost distribution.",
+      "description": "SYMBOLIC-SPHERE-I1 repair-r1 contract with explicit repository reference records binding path, commit, blob, actual-byte SHA-256, record type, declared role and selected typed evidence object. Structured actor, meaning, power, face, distribution, counter-reading and material-evidence semantics replace caller-supplied pass booleans.",
       "label": "Symbolic Object, Power & Multi-Perspective Governance 合同",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -1981,6 +2017,7 @@
       },
       "path_patterns": [
         "schemas/symbolic/symbolic_power_perspective-contract.schema.json",
+        "docs/symbolic/symbolic-sphere-i1-architecture-decision.md",
         "docs/symbolic/"
       ]
     },
@@ -1989,7 +2026,7 @@
       "canonical_target": "tools/symbolic/validate_symbolic_power_perspective_gate.py",
       "component_id": "symbolic_power_perspective_gate_validator",
       "component_type": "governance_constraint",
-      "description": "SYMBOLIC-SPHERE-I1 fail-closed real CLI enforcing evidence binding, exact parent, 12 task rules, candidate ceiling and no external action.",
+      "description": "SYMBOLIC-SPHERE-I1 repair-r1 fail-closed CLI resolves local Git commits and tree entries, recomputes blob and SHA-256 integrity, checks actual object roles, and independently validates material objects, actors, meaning projections, allowed power modalities, distinct faces, benefit/cost distribution, counter-reading evidence, material downgrade, truth ceiling and causal ceiling with stable exits 0 and 2-20.",
       "label": "Symbolic Object, Power & Multi-Perspective Governance 门禁",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -2002,9 +2039,7 @@
       },
       "path_patterns": [
         "tools/symbolic/",
-        "tests/symbolic/",
-        "tools/governance/structured_capability_gate.py",
-        "tools/governance/build_structured_capability_fixtures.py"
+        "tests/symbolic/"
       ]
     },
     {
@@ -2012,7 +2047,7 @@
       "canonical_target": "data/symbolic/pilot-symbolic-sphere-i1.json",
       "component_id": "symbolic_power_perspective_pilot",
       "component_type": "governance_constraint",
-      "description": "SYMBOLIC-SPHERE-I1 self-authored bounded repository pilot covering COMMUNITY_FOOTBALL_FIELD and SCHOOL_DATA_POLICY; 24 fixtures drive the real CLI; no external action.",
+      "description": "SYMBOLIC-SPHERE-I1 repository-local synthetic pilot covering COMMUNITY_FOOTBALL_FIELD and SCHOOL_DATA_POLICY. Twenty repair fixtures use ordinary data-integrity names and exercise real Git reference resolution plus task semantics; original manifest fixture paths remain compatibility artifacts. No external action or truth/causal upgrade.",
       "label": "Symbolic Object, Power & Multi-Perspective Governance 受控试点",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -2025,6 +2060,7 @@
       },
       "path_patterns": [
         "data/symbolic/pilot-symbolic-sphere-i1.json",
+        "data/symbolic/symbolic-evidence-object-registry.json",
         "data/symbolic/fixtures/"
       ]
     },

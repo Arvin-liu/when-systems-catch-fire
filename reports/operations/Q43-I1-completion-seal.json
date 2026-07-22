@@ -10,14 +10,14 @@
     "ready_for_gpt_verification": false
   },
   "phase_b": {
-    "draft_pr": 79,
-    "branch": "agent/q43-i1-graded-intervention-professional-escalation",
-    "base": "agent/q42-i1-counterfactual-unrealized-path-ledger",
-    "base_head": "98998bb1e3db67230954c1436d8effbcb87027af",
+    "draft_pr": 96,
+    "branch": "repair/q43-r1-escalation-authority-binding",
+    "base": "repair/q42-r1-counterfactual-ledger-binding",
+    "base_head": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
     "head_binding": {
       "mode": "external_exact_head_attestation",
       "authority": "pull_request_body_and_1111_receipt",
-      "receipt_path": "agent-results/IGNITION-20260722-Q43-I1-q43-i1-execution-receipt.json",
+      "receipt_path": "agent-results/remaining-repair-train/Q43-I1-receipt.json",
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
@@ -47,7 +47,7 @@
     }
   ],
   "propagation_closure": {
-    "closure_hash": "138aa14d1c15ae488b2565c50821cf1e24a8df042ffb12df579fd1a65789acde",
+    "closure_hash": "28fa03aea06fd294a7018d49ac07c864e2f53306362b0376de6550e4d6be24b3",
     "closure_path": "data/operations/propagation/Q43-I1-closure.json",
     "complete": true,
     "unresolved_residue": []

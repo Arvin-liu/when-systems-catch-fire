@@ -21,7 +21,8 @@ def matrix():
         1: 0, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8,
         9: 9, 10: 10, 11: 11, 12: 12, 13: 13, 14: 14, 15: 15,
         16: 16, 17: 17, 18: 18, 19: 19, 20: 20, 21: 21,
-        22: 7, 23: 2, 24: 10
+        22: 7, 23: 2, 24: 10, 25: 15, 26: 15, 27: 15,
+        28: 15, 29: 15, 30: 15
     }
     rows = []
     for path in sorted(FIXTURES.glob("*.json")):
@@ -50,6 +51,23 @@ class EvidenceRetrievalGateTests(unittest.TestCase):
         expected = {i["evidence_id"] for i in data["evidence_items"] if i["kind"] in {"COUNTEREXAMPLE", "NEGATIVE_RESULT", "FAILED_RETRIEVAL"}}
         actual = {e["evidence_id"] for e in data["q39_failure_exports"]}
         self.assertEqual(expected, actual)
+
+    def test_successful_evidence_binds_actual_repository_bytes(self):
+        data = json.loads(PILOT.read_text())
+        retrieved = [i for i in data["evidence_items"] if i["kind"] != "FAILED_RETRIEVAL"]
+        self.assertTrue(retrieved)
+        for item in retrieved:
+            self.assertEqual(item["retrieval_status"], "RETRIEVED_REPOSITORY_BYTES")
+            self.assertEqual(item["source_locator"], item["source_binding"]["path"])
+            self.assertEqual(item["source_digest"], item["source_binding"]["sha256"])
+            self.assertEqual(item["exact_head"], item["source_binding"]["exact_commit"])
+
+    def test_unperformed_retrieval_does_not_invent_content_evidence(self):
+        data = json.loads(PILOT.read_text())
+        failed = next(i for i in data["evidence_items"] if i["kind"] == "FAILED_RETRIEVAL")
+        self.assertEqual(failed["retrieval_status"], "FAILED_UNPERFORMED")
+        self.assertIsNone(failed["source_binding"])
+        self.assertIsNone(failed["source_digest"])
 
 
 if __name__ == "__main__":

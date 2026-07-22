@@ -623,10 +623,10 @@
       "reason": "Q44-I1 does not alter this synchronization surface."
     }
   ],
-  "base_identity": "3756cd6453135a333771243ffa6eb3d4f86344a0",
+  "base_identity": "5efbce81e96d90d5ebd246891e4762928365d6b8",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "5acd9e311b0de158ab677ca82040497c78df6474d8abcb148468eb2bd71ec350",
+  "closure_hash": "071864ac62dd2daeeb88ad3ae8f958bf883a560d50f25a9771e7ca1d0de84ef8",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -771,7 +771,17 @@
       "coaching_commitment_subcapability_pilot"
     ],
     "changed_edges": [],
-    "changed_nodes": [],
+    "changed_nodes": [
+      "analogy_audit_gate_validator",
+      "evidence_retrieval_gate_validator",
+      "evidence_retrieval_pilot",
+      "failure_lineage_gate_validator",
+      "failure_lineage_pilot",
+      "intervention_failure_gate_validator",
+      "symbolic_power_perspective_contract",
+      "symbolic_power_perspective_gate_validator",
+      "symbolic_power_perspective_pilot"
+    ],
     "decision": "CHANGE",
     "reason": "Three Q44-I1 components are added to registry and layout.",
     "removed_edges": [],

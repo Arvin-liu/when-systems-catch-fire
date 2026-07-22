@@ -1,7 +1,7 @@
 # Q43-I1 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `138aa14d1c15ae488b2565c50821cf1e24a8df042ffb12df579fd1a65789acde`
+- Closure hash: `28fa03aea06fd294a7018d49ac07c864e2f53306362b0376de6550e4d6be24b3`
 - Fixpoint iterations: `2`
 - Seeds: `current_state, graded_intervention_escalation_contract, graded_intervention_escalation_gate_validator, graded_intervention_escalation_pilot, historical_reports, incremental_execution, iteration_manifest_contract, pages_pipeline, project_component_registry, propagation_calculator, system_map_layout, system_map_projection`
 - Resolved components: `15`
