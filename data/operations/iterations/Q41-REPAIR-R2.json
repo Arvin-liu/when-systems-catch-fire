@@ -1,0 +1,29 @@
+{
+  "task_id": "Q41-R2",
+  "task_slug": "q41",
+  "capability": "q41",
+  "repair_round": "r2",
+  "branch": "repair-r2/q41-r2-anomaly-semantics",
+  "tag": "archive/q41-repair-r2-frozen-head",
+  "parent_task": "repair-r2/scientific-metacognition-r2-parent-and-semantics",
+  "parent_head": "25f937ea8d53b4b14f31fc9c8779995f3c516bac",
+  "base_head": "da9c4e2a6b8c0f757aa676814fda7c86d4ac2558",
+  "root_blockers_closed": [
+    "RB09-DIRECT-PREDECESSOR-BINDING"
+  ],
+  "inherited_root_blockers": [
+    "RB09-ENGINE-PATH-CONTAINMENT",
+    "RB09-MANDATORY-GIT-OBJECT-BINDING",
+    "RB09-EXACT-HEAD-NONRESOLUTION",
+    "RB09-CALLER-ASSERTED-SEMANTICS"
+  ],
+  "closure_complete": true,
+  "residue": 0,
+  "iteration_sync": "PASS",
+  "validation": "BUILDER_VALIDATION_PASS",
+  "tests": {
+    "contract": "tests/anomaly/test_q41_repair_r2.py",
+    "result": "BUILDER_VALIDATION_PASS"
+  },
+  "notes": "Inherits fail-closed shared engine via --no-ff merge of repair-r2/scientific-metacognition-r2-parent-and-semantics. Binds direct predecessor to the real repair-r2 head 25f937ea8d53b4b14f31fc9c8779995f3c516bac, and upgrades pilot evidence to the fail-closed schema (record_type/declared_role), closing RB09-DIRECT-PREDECESSOR-BINDING."
+}

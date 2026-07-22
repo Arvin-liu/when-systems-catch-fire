@@ -4,7 +4,7 @@
   "capability_id": "multi_history_world_projection",
   "parent_binding": {
     "task_id": "F15-D1-I1",
-    "exact_head": "95405ae791dc0359c2ab6597bfd7c50224c2c59c"
+    "exact_head": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09"
   },
   "evidence_registry": [
     {
@@ -16,9 +16,7 @@
       "commit_sha": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09",
       "repository_relative_path": "data/latent/pilot-f15-d1-i1.json",
       "blob_sha": "fb60cc2b57489e8333f7dd60b87b37dedb4a801d",
-      "sha256": "sha256:ea201b3f07d64afc1fa812dde8121910eb961be8f1338771a80293bacb5995e5",
-      "record_type": "evidence_file",
-      "declared_role": "pilot_f15_d1_i1"
+      "sha256": "sha256:ea201b3f07d64afc1fa812dde8121910eb961be8f1338771a80293bacb5995e5"
     },
     {
       "evidence_id": "evidence.2",
@@ -29,9 +27,7 @@
       "commit_sha": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09",
       "repository_relative_path": "data/anomaly/pilot-q41-i1.json",
       "blob_sha": "d33a874054916918f12236026f1aa453c99c0da4",
-      "sha256": "sha256:e8cb6af4451a19a0f61d90b10e94c978cde4e030bde39466c9894bb1bf492bc7",
-      "record_type": "evidence_file",
-      "declared_role": "pilot_q41_i1"
+      "sha256": "sha256:e8cb6af4451a19a0f61d90b10e94c978cde4e030bde39466c9894bb1bf492bc7"
     },
     {
       "evidence_id": "evidence.3",
@@ -42,9 +38,7 @@
       "commit_sha": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09",
       "repository_relative_path": "FOUNDATION.md",
       "blob_sha": "c084b5300c1f6a4eeac3fd08cd764c1d12f0ec2f",
-      "sha256": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
-      "record_type": "evidence_file",
-      "declared_role": "foundation"
+      "sha256": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa"
     }
   ],
   "records": [
