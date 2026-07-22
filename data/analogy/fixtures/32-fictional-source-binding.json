@@ -1,11 +1,11 @@
 {
   "analogy_candidates": [
     {
-      "analogy_id": "a08",
-      "source_domain": "pendulum",
-      "target_domain": "market",
-      "source_def": "oscillation",
-      "target_def": "price cycle",
+      "analogy_id": "a01",
+      "source_domain": "thermodynamics",
+      "target_domain": "information-theory",
+      "source_def": "entropy as disorder measure",
+      "target_def": "entropy as surprise measure",
       "proposer": "q35-builder",
       "q35_authority_ref": "grant-q34-pilot",
       "originating_q34_claim_ref": "q33.seven_governance_components.current_in_main",
@@ -16,7 +16,7 @@
         "data/intervention/pilot-controlled-intervention.json"
       ],
       "provenance": "repo-internal replay",
-      "claim_ceiling": "establishes a universal causal regularity across domains",
+      "claim_ceiling": "local structural similarity between entropy formulations; not a proven shared mechanism",
       "lifecycle": {
         "status": "audited",
         "history": [
@@ -43,50 +43,51 @@
   ],
   "mappings": [
     {
-      "mapping_id": "m08",
-      "analogy_id": "a08",
+      "mapping_id": "m01",
+      "analogy_id": "a01",
       "source_entities": [
-        "pendulum"
+        "heat"
       ],
       "target_entities": [
-        "market"
+        "information"
       ],
       "correspondence_pairs": [
         {
-          "source": "pendulum",
-          "target": "market",
-          "quality": "approximate"
+          "source": "heat",
+          "target": "information",
+          "quality": "partial",
+          "note": "analogous ordering"
         }
       ],
-      "relation_preservation": "approximate oscillatory analogy",
+      "relation_preservation": "partial monotonic ordering preserved",
       "directionality": "forward",
       "cardinality": "1:1",
-      "cardinality_rationale": "single construct map",
+      "cardinality_rationale": "single construct-to-construct map",
       "invariants": [
-        "periodic return"
+        "monotonic increase"
       ],
       "known_mismatches": [
-        "agent rationality"
+        "heat is conserved, information is not"
       ],
       "omitted_variables": [
-        "feedback"
+        "carrier medium"
       ],
       "hidden_premises": [
-        "physical vs social"
+        "equilibrium assumed"
       ],
       "scale_time_context_differences": [
-        "scale differs"
+        "macroscopic vs discrete"
       ],
       "representation_level": "mathematical",
-      "mapping_digest": "sha256:1822f7fdf77889e42ce8b803914c2cdc40bfd15a0c2610106e57f14297a4eef9"
+      "mapping_digest": "sha256:9f30934b293ad785d0a0649c5dc6d7576a612faa5008776ce441d11acd5e882f"
     }
   ],
   "mechanism_evidence": [
     {
-      "evidence_id": "me08",
-      "analogy_id": "a08",
-      "source_domain_ref": "pendulum",
-      "target_domain_ref": "market",
+      "evidence_id": "me01",
+      "analogy_id": "a01",
+      "source_domain_ref": "thermodynamics",
+      "target_domain_ref": "information-theory",
       "evidence_kind": "SHARED_MATHEMATICAL_FORM",
       "status": "CANDIDATE",
       "prohibited_promotions": [
@@ -99,8 +100,8 @@
   "transportability_assessments": [],
   "audit_decisions": [
     {
-      "decision_id": "d08",
-      "analogy_id": "a08",
+      "decision_id": "d01",
+      "analogy_id": "a01",
       "classification": "STRUCTURAL_ANALOGY",
       "mapping_consistency": "CONSISTENT",
       "mechanism_evidence_sufficiency": "NONE",
@@ -181,7 +182,7 @@
       "sha256": "sha256:2ad68c554bb42d7308b44e8c6e1f08468406b11b8a9b392ba87ac83ee17e2b17"
     },
     "q36_int_source": {
-      "path": "data/intervention/pilot-controlled-intervention.json",
+      "path": "data/nonexistent.json",
       "exact_commit": "e4ca5350a3c68e61031e3205eaca9f2665799a08",
       "git_blob": "222e4530d82f6334167f5fa5961a27aa5ac76480",
       "sha256": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d"
