@@ -1,0 +1,41 @@
+{
+  "schema_version": "q35-canonical-grant-artifact-v1",
+  "grants": [
+    {
+      "grant_id": "grant-low-1",
+      "grantor": "zhiyuan",
+      "grantee": "agent-b",
+      "allowed_action_types": ["edit_file", "run_validator"],
+      "resource_scope": "repository",
+      "required_commitment_state": "committed_current",
+      "required_review_level": "peer",
+      "risk_tier": "low",
+      "claim_ceiling": "repository scope only; does not assert real-world legal responsibility",
+      "delegation": "forbidden",
+      "delegation_chain": [],
+      "separation_of_duty": {"initiator_not_authorizer": true, "authorizer_not_executor": true, "executor_not_verifier": true},
+      "valid_from": "2026-07-21T00:00:00Z",
+      "expires_at": "2027-07-21T00:00:00Z",
+      "revoked": false,
+      "status": "active"
+    },
+    {
+      "grant_id": "grant-q34-pilot",
+      "grantor": "zhiyuan",
+      "grantee": "q35-executor",
+      "allowed_action_types": ["run_validator", "edit_file"],
+      "resource_scope": "repository",
+      "required_commitment_state": "committed_current",
+      "required_review_level": "peer",
+      "risk_tier": "low",
+      "claim_ceiling": "repository scope only; Q34 candidate is a Draft, not Main-accepted; does not assert real-world legal responsibility",
+      "delegation": "forbidden",
+      "delegation_chain": [],
+      "separation_of_duty": {"initiator_not_authorizer": true, "authorizer_not_executor": true, "executor_not_verifier": true},
+      "valid_from": "2026-07-21T00:00:00Z",
+      "expires_at": "2027-07-21T00:00:00Z",
+      "revoked": false,
+      "status": "active"
+    }
+  ]
+}

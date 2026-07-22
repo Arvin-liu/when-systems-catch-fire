@@ -39,6 +39,7 @@ Usage:
       [--current-head <sha>] [--now <iso>] [--report <out.json>]
 """
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -46,6 +47,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT))
+from tools.observation.validate_observation_prediction_gate import _verify_git_binding
+
 SCHEMA_PATH = ROOT / "schemas" / "intervention" / "intervention-failure-dynamics-contract.schema.json"
 
 GATE_PASS = 0
@@ -68,6 +72,9 @@ SINGLE_OWNER_FORGED = 17
 OBS_NOT_VALIDATED = 18
 SEPARATION_OF_DUTY_VIOLATION = 19
 BASELINE_MISSING = 20
+PLACEHOLDER_DIGEST = 21
+CONTENT_BINDING_INVALID = 22
+CANONICAL_AUTHORITY_INVALID = 23
 
 EXIT_NAMES = {v: k for k, v in {
     "GATE_PASS": 0, "SCHEMA_ERROR": 2, "TEMPORAL_LEAK": 3, "TARGET_MISMATCH": 4,
@@ -76,10 +83,12 @@ EXIT_NAMES = {v: k for k, v in {
     "ENVELOPE_EXCEEDED": 11, "STOP_CONDITION_VIOLATED": 12, "FAILURE_REWRITE_FORBIDDEN": 13,
     "EXPECTED_EFFECT_REWRITE": 14, "CAUSAL_OVERCLAIM": 15, "ROLLBACK_INCOMPLETE": 16,
     "SINGLE_OWNER_FORGED": 17, "OBS_NOT_VALIDATED": 18, "SEPARATION_OF_DUTY_VIOLATION": 19,
-    "BASELINE_MISSING": 20}.items()}
+    "BASELINE_MISSING": 20, "PLACEHOLDER_DIGEST": 21,
+    "CONTENT_BINDING_INVALID": 22, "CANONICAL_AUTHORITY_INVALID": 23}.items()}
 
 SHA256_RE = re.compile(r"^sha256:[0-9a-f]{64}$")
 HEAD_RE = re.compile(r"^[0-9a-f]{40}$")
+PLACEHOLDER_WORDS = {"", "null", "none", "todo", "tbd", "unknown", "placeholder", "pending", "n/a", "na"}
 
 # phrases that upgrade residual/correlation/fit into a unique causal mechanism
 CAUSAL_OVERCLAIM_TOKENS = [
@@ -113,6 +122,195 @@ def _result(code, errors, decision=None):
 
 def _index(lst, key):
     return {item.get(key): item for item in lst if isinstance(item, dict) and item.get(key)}
+
+
+def _is_placeholder_digest(value):
+    if value is None:
+        return True
+    if not isinstance(value, str):
+        return False
+    normalized = value.strip().lower()
+    if normalized in PLACEHOLDER_WORDS:
+        return True
+    if SHA256_RE.fullmatch(normalized):
+        payload = normalized[7:]
+        return len(set(payload)) == 1
+    return False
+
+
+def _json_from_binding(binding):
+    content, error = _verify_git_binding(binding)
+    if error:
+        return None, error
+    try:
+        return json.loads(content), None
+    except (TypeError, json.JSONDecodeError):
+        return None, "bound Git bytes are not valid JSON"
+
+
+def check_placeholder_digests(bundle):
+    """Reject obvious synthetic digests before any caller-supplied semantic assertion."""
+    errs = []
+
+    def visit(value, path="bundle"):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                child_path = f"{path}.{key}"
+                if ("digest" in key or key == "sha256") and _is_placeholder_digest(child):
+                    errs.append(f"{child_path}: null/empty/repeated-character/placeholder digest")
+                visit(child, child_path)
+        elif isinstance(value, list):
+            for index, child in enumerate(value):
+                visit(child, f"{path}[{index}]")
+
+    visit(bundle)
+    return errs
+
+
+def check_canonical_content_bindings(bundle, claims_registry):
+    """Resolve predecessor authority and evidence from exact Git objects and actual bytes."""
+    errs = []
+    bindings = bundle.get("canonical_bindings") or {}
+    expected_paths = {
+        "q35_actor_registry": "data/agent/canonical-actor-registry.json",
+        "q35_grant_registry": "data/agent/canonical-grant-registry.json",
+        "q35_action_source": "data/agent/pilot-q34-pr-controlled-op.json",
+        "q36_obs_source": "data/observation/pilot-q34-closure-drift-prediction.json",
+    }
+    documents = {}
+    for name, expected_path in expected_paths.items():
+        binding = bindings.get(name)
+        if not isinstance(binding, dict) or binding.get("path") != expected_path:
+            errs.append(f"canonical binding {name}: exact canonical path required")
+            continue
+        document, error = _json_from_binding(binding)
+        if error:
+            errs.append(f"canonical binding {name}: {error}")
+        else:
+            documents[name] = document
+    if errs:
+        return errs
+
+    actors = _index(documents["q35_actor_registry"].get("actors", []), "actor_id")
+    grant_registry = _index(documents["q35_grant_registry"].get("grants", []), "grant_id")
+    q35_source = documents["q35_action_source"]
+    q35_actions = _index(q35_source.get("actions", []), "action_id")
+    q35_source_grants = _index(q35_source.get("grants", []), "grant_id")
+    q35_trajectory = _index(q35_source.get("trajectory", []), "event_digest")
+    q36_observations = _index(documents["q36_obs_source"].get("observations", []), "observation_id")
+    embedded_grants = _index(bundle.get("q35_grants", []), "grant_id")
+    embedded_obs = _index(bundle.get("q36_obs_snapshots", []), "observation_id")
+    claims = _index((claims_registry or {}).get("claims", []), "claim_id")
+
+    for request in bundle.get("intervention_requests", []):
+        rid = request.get("intervention_id")
+        claim = claims.get(request.get("q34_claim_ref"))
+        if not claim:
+            errs.append(f"request {rid}: Q34 claim is absent from the canonical registry")
+        elif claim.get("state") != "committed_current":
+            errs.append(f"request {rid}: Q34 claim is not committed_current")
+        else:
+            claim_bytes, claim_error = _json_from_binding(claim.get("binding"))
+            if claim_error or not isinstance(claim_bytes, dict) or claim_bytes.get("claim_id") != request.get("q34_claim_ref") or claim_bytes.get("state") != "committed_current" or claim_bytes.get("claim_digest") != claim.get("claim_digest"):
+                errs.append(f"request {rid}: Q34 claim bytes do not establish the canonical committed claim")
+
+        actor_id = request.get("q35_actor_ref")
+        actor = actors.get(actor_id)
+        if not actor or actor.get("status") != "active":
+            errs.append(f"request {rid}: Q35 actor {actor_id!r} is not an active canonical actor")
+
+        grant_id = request.get("q35_grant_ref")
+        registry_entry = grant_registry.get(grant_id)
+        grant_artifact = None
+        if not registry_entry:
+            errs.append(f"request {rid}: Q35 grant {grant_id!r} is absent from canonical registry")
+        else:
+            grant_document, grant_error = _json_from_binding(registry_entry.get("binding"))
+            if grant_error:
+                errs.append(f"request {rid}: canonical Q35 grant bytes invalid: {grant_error}")
+            else:
+                grant_artifact = _index(grant_document.get("grants", []), "grant_id").get(grant_id)
+                if not grant_artifact:
+                    errs.append(f"request {rid}: canonical grant artifact lacks {grant_id!r}")
+
+        action_id = request.get("q35_action_ref")
+        action = q35_actions.get(action_id)
+        if not action or action.get("grant_id") != grant_id or action.get("executor") != actor_id:
+            errs.append(f"request {rid}: Q35 action is not canonically bound to actor/grant")
+        if request.get("q35_trajectory_event_digest") not in q35_trajectory:
+            errs.append(f"request {rid}: Q35 trajectory digest is absent from canonical action trace")
+
+        snapshot = embedded_grants.get(grant_id)
+        if grant_artifact:
+            expected_snapshot = {
+                "grant_id": grant_id,
+                "status": "revoked" if grant_artifact.get("revoked") else grant_artifact.get("status"),
+                "grant_expires_at": grant_artifact.get("expires_at"),
+                "scope": grant_artifact.get("resource_scope"),
+                "grantee": grant_artifact.get("grantee"),
+                "granted_by": grant_artifact.get("grantor"),
+                "action_refs": [action_id],
+            }
+            if snapshot != expected_snapshot or q35_source_grants.get(grant_id) != grant_artifact:
+                errs.append(f"request {rid}: embedded Q35 grant is not an exact derived canonical snapshot")
+
+        observation_id = request.get("q36_obs_ref")
+        observation = q36_observations.get(observation_id)
+        snapshot = embedded_obs.get(observation_id)
+        if not observation:
+            errs.append(f"request {rid}: Q36-OBS observation is absent from bound predecessor bytes")
+        elif not snapshot:
+            errs.append(f"request {rid}: Q36-OBS derived snapshot is missing")
+        else:
+            expected_snapshot = {
+                "observation_id": observation_id,
+                "target_scope": observation.get("target_scope"),
+                "sampling_window": observation.get("sampling_window"),
+                "quality_status": observation.get("quality_status"),
+                "exact_head": observation.get("exact_head"),
+                "do_not_infer_cause": True,
+            }
+            if snapshot != expected_snapshot:
+                errs.append(f"request {rid}: embedded Q36-OBS snapshot is not derived from canonical bytes")
+        if request.get("artifact_digest") != bindings["q36_obs_source"].get("sha256"):
+            errs.append(f"request {rid}: artifact_digest does not match Q36-OBS source bytes")
+        if request.get("source_ref") != bindings["q36_obs_source"].get("path"):
+            errs.append(f"request {rid}: source_ref is not the byte-bound Q36-OBS source")
+
+    for plan in bundle.get("plans", []):
+        for event in plan.get("execution_events", []):
+            eid = event.get("event_id")
+            pre_bytes, pre_error = _verify_git_binding(event.get("pre_state_binding"))
+            if pre_error or event.get("pre_state_digest") != (event.get("pre_state_binding") or {}).get("sha256"):
+                errs.append(f"event {eid}: pre-state bytes are not bound: {pre_error or 'digest mismatch'}")
+            output_bindings = event.get("output_artifact_bindings") or []
+            actual_output_digests = []
+            for binding in output_bindings:
+                _, error = _verify_git_binding(binding)
+                if error:
+                    errs.append(f"event {eid}: output bytes are not bound: {error}")
+                else:
+                    actual_output_digests.append(binding.get("sha256"))
+            if actual_output_digests != event.get("output_artifact_digests"):
+                errs.append(f"event {eid}: output digest list does not match actual bound bytes")
+            _, trajectory_error = _verify_git_binding(event.get("trajectory_binding"))
+            if trajectory_error or event.get("trajectory_event_digest") != (event.get("trajectory_binding") or {}).get("sha256"):
+                errs.append(f"event {eid}: trajectory evidence is not byte-bound: {trajectory_error or 'digest mismatch'}")
+
+    for envelope in bundle.get("safety_envelopes", []):
+        rollback = envelope.get("rollback_plan") or {}
+        _, error = _verify_git_binding(rollback.get("verification_binding"))
+        if error:
+            errs.append(f"envelope {envelope.get('envelope_id')}: rollback verification bytes invalid: {error}")
+    for failure in bundle.get("failure_records", []):
+        _, error = _verify_git_binding(failure.get("evidence_binding"))
+        if error:
+            errs.append(f"failure {failure.get('failure_id')}: evidence bytes invalid: {error}")
+    for rollback in bundle.get("stop_rollback_records", []):
+        _, error = _verify_git_binding(rollback.get("evidence_binding"))
+        if error:
+            errs.append(f"rollback {rollback.get('record_id')}: evidence bytes invalid: {error}")
+    return errs
 
 
 def validate_schema(bundle):
@@ -224,7 +422,9 @@ def check_q34_commitment(bundle, claims_registry):
         if not ref:
             errs.append(f"request {r.get('intervention_id')}: missing q34_claim_ref")
             continue
-        if ref in states and states[ref] != "committed_current":
+        if ref not in states:
+            errs.append(f"request {r.get('intervention_id')}: unknown q34 claim '{ref}'")
+        elif states[ref] != "committed_current":
             errs.append(f"request {r.get('intervention_id')}: q34 claim '{ref}' state "
                         f"'{states[ref]}' is not committed_current")
     return errs
@@ -522,6 +722,7 @@ def main():
     q33_rejects = json.loads(Path(args.q33_rejects).read_text(encoding="utf-8")) if args.q33_rejects else None
 
     checks = [
+        (PLACEHOLDER_DIGEST, lambda: check_placeholder_digests(bundle)),
         (SCHEMA_ERROR, lambda: validate_schema(bundle)),
         (TEMPORAL_LEAK, lambda: check_temporal_integrity(bundle, args.now)),
         (TARGET_MISMATCH, lambda: check_target_matching(bundle)),
@@ -541,6 +742,7 @@ def main():
         (OBS_NOT_VALIDATED, lambda: check_obs_validated(bundle)),
         (SEPARATION_OF_DUTY_VIOLATION, lambda: check_separation_of_duty(bundle)),
         (BASELINE_MISSING, lambda: check_baseline_present(bundle)),
+        (CONTENT_BINDING_INVALID, lambda: check_canonical_content_bindings(bundle, claims_registry)),
     ]
 
     for code, fn in checks:

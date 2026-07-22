@@ -1,53 +1,36 @@
-# SYMBOLIC-SPHERE-I1 Architecture Decision — Symbolic Object, Power & Multi-Perspective Governance
+# SYMBOLIC-SPHERE-I1 Architecture Decision — repair-r1
 
-Status: stacked Draft candidate. Direct parent is `121Q39-I1` at the frozen exact head declared in the task receipt.
+Status: local repair candidate. Direct repair predecessor is `121Q39-REPAIR-R1` at frozen head `99ab601a48dd45972b238e468bc8e3002d648c98`. Remote state is `NOT_CHECKED_LOCAL_ONLY`.
 
 ## Decision
 
-The same object can be represented as separate material fact, actor position, meaning projection and institutionalized power surfaces, with evidence-constrained counter-readings and visible benefit/cost distribution.
+SYMBOLIC-SPHERE no longer accepts caller-supplied booleans as evidence that its semantic rules passed. Its validator resolves every evidence object from existing local Git history, verifies the exact commit tree entry, blob identity and SHA-256 over actual bytes, then recomputes task-specific symbolic semantics.
 
-The contract uses typed evidence bindings and bounded fields. Each material assertion names repository evidence, its digest and the parent exact head. Required rule assertions are deterministic inputs to a fail-closed production CLI; missing, duplicated, unsupported or false assertions block the bundle.
+Each repository reference record contains at least:
 
-## Core objects
+- `repository_relative_path`
+- `commit_sha`
+- `blob_sha`
+- `sha256`
+- `record_type`
+- `declared_role`
 
-- `symbolic_object`
-- `material_fact_base`
-- `actor_positions`
-- `power_forms`
-- `meaning_projections`
-- `intended_use`
-- `actual_use`
-- `front_face`
-- `suppressed_faces`
-- `benefit_cost_distribution`
-- `counter_readings`
-- `institutionalization_mechanism`
-- `symbolic_capture`
-- `counter_appropriation`
-- `transformation_history`
-- `evidence_constraints`
-- `claim_ceiling`
+The repair pilot also names an `object_id`. The referenced JSON bytes contain the actual object and `object_type`; `declared_role` must equal that actual type.
 
-## Fail-closed rules
+## Recomputed semantic gates
 
-- `material_truth_separate`
-- `ownership_not_truth`
-- `popularity_not_truth`
-- `institution_not_fact`
-- `all_actors_present`
-- `costs_visible`
-- `intent_effect_separate`
-- `interpretive_power_not_legitimacy`
-- `no_causal_totalization`
-- `history_append_only`
-- `evidence_constrained`
-- `claim_ceiling_preserved`
+- `symbolic_object_ref` resolves to a `MATERIAL_OBJECT` in the same record scope.
+- Every `actor_position` resolves an explicit `ACTOR`.
+- Every `meaning_projection` binds an existing actor position and the record's symbolic object.
+- Power modalities are restricted to `ACCESS_CONTROL`, `RESOURCE_ALLOCATION`, `INSTITUTIONAL_AUTHORITY`, `NAMING_AUTHORITY`, `OWNERSHIP`, and `POPULARITY`.
+- `front_face` and `suppressed_face` keep different identities, statements and actor-position sets.
+- `benefit_cost_distribution` retains beneficiaries, cost bearers and typed distribution evidence.
+- Every counter-reading targets a meaning projection and binds its own `COUNTER_READING_EVIDENCE` rather than reusing the target assertion as free-text support.
+- An unsatisfied material-evidence constraint returns a stable nonzero result. The bundle must also downgrade its conclusion to `INSUFFICIENT_MATERIAL_EVIDENCE`; downgrade does not turn the validator result into a pass.
+- Conclusion status independently blocks truth upgrades from ownership, popularity or naming authority and blocks complete causal-proof upgrades from symbolic analysis.
 
-## Explicit non-claims
+## Stable failure boundary
 
-- ownership is not truth
-- popularity is not truth
-- perspective does not excuse material error
-- symbolic analysis is not complete causal proof
+The CLI returns stable nonzero results for missing required records, invalid parent binding, unresolved or escaping repository paths, unresolvable commits, missing targets, blob mismatch, SHA-256 mismatch, unsupported reference or symbolic record types, declared-role mismatch, actor/meaning/power inconsistency, face impersonation, incomplete distribution, unbound counter-readings, missing material evidence, truth upgrade, causal overclaim and external action.
 
-The pilot is repository-local and self-authored. It performs no real-world external action, does not modify Main, and cannot establish L7, a new truth layer or universal causal truth.
+The pilot remains repository-local synthetic material. Passing establishes only that the declared repository references and bounded symbolic-analysis structure are internally consistent. It does not establish external facts, truth, legitimacy, popularity, ownership, naming authority or causality.

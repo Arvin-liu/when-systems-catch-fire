@@ -1,19 +1,40 @@
 #!/usr/bin/env python3
 """Build deterministic Q39 pilot and attack fixtures."""
-import copy, hashlib, json
+import copy, hashlib, json, subprocess
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/"data/failure/fixtures"
 PILOT=ROOT/"data/failure/pilot-q39-failure-lineage.json"
-HEADS={"q36":"02a87221b86cf39217f8c6b3c63e0737a0e2de98","q37":"927cae48f3c65d3c23543dac4b9262704fabb6f1","q38":"312a3282381bd0cb6dcc5fa629cbd058eacd9a56"}
+HEADS={"q36":"e4ca5350a3c68e61031e3205eaca9f2665799a08","q37":"7a01b1958c3f6b6eff559be85ec5e47eecff313c","q38":"d5cf0f0846206d3c47463f66697d2d8bf7d4aca3","q39":"824ff7f713303b18bca94b05de3f4b6530ffff51"}
+AUTH_COMMIT="167f254e637259d57b7ce09623de982dda527f54"
+AUTH_PATH="data/agent/pilot-q34-pr-controlled-op.json"
+EFFECT_COMMIT="cdfb20ae8219432275dc5cc356c5516a1190414c"
+EFFECT_PATH="data/failure/q39-repair-effect-records.json"
 
 def digest(value):
     raw=value.encode() if isinstance(value,str) else json.dumps(value,sort_keys=True,separators=(",",":"),ensure_ascii=False).encode()
     return "sha256:"+hashlib.sha256(raw).hexdigest()
 
+def git_binding(path,head):
+    raw=subprocess.check_output(["git","show",f"{head}:{path}"],cwd=ROOT)
+    blob=subprocess.check_output(["git","rev-parse",f"{head}:{path}"],cwd=ROOT,text=True).strip()
+    return {"path":path,"exact_commit":head,"git_blob":blob,"sha256":"sha256:"+hashlib.sha256(raw).hexdigest()}
+
 def source(sid,task,path,head):
-    return {"source_id":sid,"task_id":task,"artifact":path,"exact_head":head,"artifact_digest":digest((ROOT/path).read_text())}
+    binding=git_binding(path,head)
+    return {"source_id":sid,"task_id":task,"artifact":path,"exact_head":head,"artifact_digest":binding["sha256"],"binding":binding}
+
+def target(tid,event_ids,path,effect,application_status,head):
+    target_binding=git_binding(path,head)
+    return {"target_id":tid,"event_ids":event_ids,"target_artifact":path,"plan_effect":effect,
+            "authorized":True,"applied":application_status=="APPLIED_REPOSITORY_RECORD",
+            "verification_digest":target_binding["sha256"],
+            "authorization_status":"VERIFIED_REPOSITORY_GRANT",
+            "authorization_binding":git_binding(AUTH_PATH,AUTH_COMMIT),
+            "authority_actor_id":"q35-builder","authority_grant_id":"grant-q34-pilot","authority_action_id":"act-q34-pilot",
+            "application_status":application_status,"target_binding":target_binding,
+            "effect_id":"effect."+tid,"effect_binding":git_binding(EFFECT_PATH,EFFECT_COMMIT)}
 
 def rechain(b):
     prev="GENESIS"
@@ -40,11 +61,11 @@ def base():
         ids=[e["event_id"] for e in events if e["recurrence_signature_id"]==rid]
         recs.append({"signature_id":rid,"signature_digest":digest("|".join(ids)),"event_ids":ids,"repeat_policy":"BLOCK_UNCHANGED_RETRY"})
     targets=[
-      {"target_id":"target.intervention","event_ids":["fail.q36.rollback"],"target_artifact":"data/intervention/pilot-controlled-intervention.json","plan_effect":"INTERVENE","authorized":True,"applied":True,"verification_digest":digest("target.intervention")},
-      {"target_id":"target.analogy","event_ids":["fail.q37.mismatch"],"target_artifact":"data/analogy/pilot-real-repo-analogy-audit.json","plan_effect":"ANALOGY_AUDIT","authorized":True,"applied":True,"verification_digest":digest("target.analogy")},
-      {"target_id":"target.search","event_ids":["fail.q38.counterexample","repair.q39.plan"],"target_artifact":"data/retrieval/pilot-q38-repository-evidence-retrieval.json","plan_effect":"SEARCH","authorized":True,"applied":True,"verification_digest":digest("target.search")},
-      {"target_id":"target.ceiling","event_ids":["fail.q38.negative"],"target_artifact":"docs/failure/q39-interfaces.md","plan_effect":"CLAIM_CEILING_CHANGE","authorized":True,"applied":True,"verification_digest":digest("target.ceiling")},
-      {"target_id":"target.defer","event_ids":["fail.q38.environment"],"target_artifact":"docs/failure/q39-interfaces.md","plan_effect":"DEFER","authorized":True,"applied":True,"verification_digest":digest("target.defer")}
+      target("target.intervention",["fail.q36.rollback"],q36,"INTERVENE","REQUEST_ONLY",HEADS["q36"]),
+      target("target.analogy",["fail.q37.mismatch"],q37,"ANALOGY_AUDIT","APPLIED_REPOSITORY_RECORD",HEADS["q37"]),
+      target("target.search",["fail.q38.counterexample","repair.q39.plan"],q38,"SEARCH","APPLIED_REPOSITORY_RECORD",HEADS["q38"]),
+      target("target.ceiling",["fail.q38.negative"],"docs/failure/q39-interfaces.md","CLAIM_CEILING_CHANGE","APPLIED_REPOSITORY_RECORD",HEADS["q39"]),
+      target("target.defer",["fail.q38.environment"],"docs/failure/q39-interfaces.md","DEFER","APPLIED_REPOSITORY_RECORD",HEADS["q39"])
     ]
     b={"contract_version":"1.0.0","task_id":"121Q39-I1","lineage_id":"q39.pilot.q36-q38","declared_event_count":len(events),"source_bindings":[source("src.q36","121Q36-INT-I1",q36,HEADS["q36"]),source("src.q37","121Q37-I1",q37,HEADS["q37"]),source("src.q38","121Q38-I1",q38,HEADS["q38"])],"events":events,"recurrence_signatures":recs,"propagation_targets":targets,"unresolved_residue":["no external population validity","environment retrieval remains unperformed"],"active_action_claim_refs":[],"conclusion":{"statement":"Failures remain append-only and deterministically change bounded later plans without establishing their causes.","negative_history_preserved":True,"failures_change_future_plans":True,"claim_ceiling":"candidate_only_repository_failure_lineage"}}
     return rechain(b)
@@ -67,11 +88,23 @@ def mutate(b,n):
     elif n==13: b["events"][5]["supersedes_event_id"]="missing.event"
     elif n==24: b["events"][2]["closure_status"]="CLOSED"
     elif n==14: b["conclusion"]["claim_ceiling"]="universal truth and mechanism proven"
+    elif n==25:
+        t=b["propagation_targets"][0]; t["target_artifact"]="data/failure/nonexistent/claimed-applied-target.json"; t["target_binding"]={"path":t["target_artifact"],"exact_commit":"f"*40,"git_blob":"f"*40,"sha256":"sha256:"+"0"*64}; t["verification_digest"]="sha256:"+"0"*64; t["application_status"]="APPLIED_REPOSITORY_RECORD"; t["applied"]=True
+    elif n==26:
+        t=b["propagation_targets"][1]; t["target_binding"]["sha256"]="sha256:"+"1"*64; t["verification_digest"]="sha256:"+"1"*64
+    elif n==27:
+        t=b["propagation_targets"][1]; t["target_binding"]["exact_commit"]="f"*40
+    elif n==28:
+        b["propagation_targets"][1]["effect_binding"]["sha256"]="sha256:"+"1"*64
+    elif n==29:
+        b["propagation_targets"][1]["authority_grant_id"]="grant-fictional"
+    elif n==30:
+        b["propagation_targets"][0]["applied"]=True
     return rechain(b)
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True); b=base(); PILOT.parent.mkdir(parents=True,exist_ok=True); PILOT.write_text(json.dumps(b,indent=2,ensure_ascii=False)+"\n")
-    names={1:"valid-pilot",2:"schema-missing-sources",3:"hash-chain-broken",4:"history-overwritten",5:"causal-overclaim",6:"unconditional-retry",7:"repair-unapplied",8:"failure-no-plan-effect",9:"retracted-drives-action",10:"environment-as-model",11:"negative-deleted",12:"exact-head-mismatch",13:"supersession-missing",14:"ceiling-overreach",15:"success-overwrites-failure",16:"unknown-cause-proven",17:"repeat-unchanged-action",18:"propagation-target-missing",19:"failure-archived-only",20:"retracted-action-reused",21:"environment-theory-failure",22:"negative-rewritten-missing",23:"source-binding-missing",24:"closed-with-residue"}
+    names={1:"valid-pilot",2:"schema-missing-sources",3:"hash-chain-broken",4:"history-overwritten",5:"causal-overclaim",6:"unconditional-retry",7:"repair-unapplied",8:"failure-no-plan-effect",9:"retracted-drives-action",10:"environment-as-model",11:"negative-deleted",12:"exact-head-mismatch",13:"supersession-missing",14:"ceiling-overreach",15:"success-overwrites-failure",16:"unknown-cause-proven",17:"repeat-unchanged-action",18:"propagation-target-missing",19:"failure-archived-only",20:"retracted-action-reused",21:"environment-theory-failure",22:"negative-rewritten-missing",23:"source-binding-missing",24:"closed-with-residue",25:"nonexistent-target-zero-digest-boolean-bypass",26:"target-actual-byte-digest-mismatch",27:"target-wrong-exact-head",28:"effect-record-digest-mismatch",29:"fictional-authority-grant",30:"request-only-boolean-applied"}
     for n,name in names.items():
         value=copy.deepcopy(b) if n==1 else mutate(copy.deepcopy(b),n)
         (OUT/f"{n:02d}-{name}.json").write_text(json.dumps(value,indent=2,ensure_ascii=False)+"\n")

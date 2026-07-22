@@ -13,21 +13,21 @@
     "verified_at": "2026-07-22"
   },
   "branch_pr": {
-    "base": "agent/scientific-metacognition-i1-epistemic-state-control-plane",
-    "base_head": "2b18e1f2d11511dc758734338e7c715566d01394",
-    "branch": "agent/q41-i1-world-feedback-anomaly-governance",
+    "base": "repair/scientific-metacognition-r1-epistemic-state-binding",
+    "base_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
+    "branch": "repair/q41-r1-anomaly-evidence-binding",
     "draft": true,
-    "pr_number": 75,
+    "pr_number": 92,
     "merged": false
   },
   "head_binding": {
     "mode": "external_exact_head_attestation",
-    "pr_number": 75,
+    "pr_number": 92,
     "authority": "pull_request_body_and_1111_receipt",
-    "receipt_path": "agent-results/IGNITION-20260722-Q41-I1-q41-i1-execution-receipt.json",
+    "receipt_path": "agent-results/remaining-repair-train/Q41-I1-receipt.json",
     "embedded_exact_current_head": false,
     "live_refetch_required": true,
-    "explanation": "PR #75 and 1111 bind final exact head and CI; repository object does not self-attest."
+    "explanation": "PR #92 (repair-r1, supersedes original candidate PR #75) and 1111 bind final exact head and CI; repository object does not self-attest."
   },
   "gap": {
     "summary": "World-Feedback Anomaly Trigger & Governance lacked a typed evidence-bound fail-closed repository capability.",
@@ -389,7 +389,7 @@
     "Inherited baseline debts remain",
     "Draft candidate unreviewed/unready/unmerged/not Current"
   ],
-  "receipt_location": "agent-results/IGNITION-20260722-Q41-I1-q41-i1-execution-receipt.json",
+  "receipt_location": "agent-results/remaining-repair-train/Q41-I1-receipt.json",
   "completion_seal_path": "reports/operations/Q41-I1-completion-seal.json",
   "completion_state": {
     "external_synchronization_attested": false,
@@ -626,8 +626,8 @@
     "impact_report_path": "data/operations/propagation/Q41-I1-impact-report.md",
     "system_map_delta_path": "data/operations/propagation/Q41-I1-system-map-delta.json",
     "residue_path": "data/operations/propagation/Q41-I1-residue.json",
-    "closure_hash": "0a547a5e434d72dfeccee54838e9bfebf01e9898c7a6a89e762053fff4983d44",
-    "base_identity": "2b18e1f2d11511dc758734338e7c715566d01394",
+    "closure_hash": "8fd273b455c9d72358845cd8317b5e7affcfb0e70e878b66d1b2b91c1ef66685",
+    "base_identity": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
     "head_identity": "external_exact_head_attestation",
     "seed_paths": [
       "data/anomaly/fixtures/01-valid-exit00.json",
