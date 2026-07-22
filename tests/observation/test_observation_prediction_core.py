@@ -37,7 +37,8 @@ def _load_pilot():
 
 
 def _write_tmp(bundle, name):
-    path = ROOT / "data" / "observation" / "fixtures" / name
+    path = ROOT / ".cache" / "fulltest" / "q36-obs" / name
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(bundle, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return path
 
@@ -67,9 +68,14 @@ class FreezeBeforeRevealTests(unittest.TestCase):
 
     def test_input_cutoff_before_outcome_passes(self):
         b = _load_pilot()
-        b["predictions"][0]["input_cutoff_time"] = "2026-07-21T05:59:59Z"  # before available 06:00
-        path = _write_tmp(b, "tmp-core-cutoff-legal.json")
-        code, report = run_gate(path)
+        # The positive pilot already has a cutoff before outcome availability and
+        # its freeze record byte-binds that exact value. Mutating the cutoff while
+        # reusing the old freeze record must not be treated as a legal positive.
+        self.assertLess(
+            b["predictions"][0]["input_cutoff_time"],
+            b["observations"][0]["available_at"],
+        )
+        code, report = run_gate(PILOT)
         self.assertEqual(code, 0, f"legal cutoff must PASS; errors={report.get('errors')}")
 
 

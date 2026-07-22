@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "SYMBOLIC-SPHERE-I1 Symbolic Object, Power & Multi-Perspective Governance",
+  "title": "SYMBOLIC-SPHERE-I1 repair-r1 repository-bound symbolic analysis",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -8,340 +8,254 @@
     "task_id",
     "capability_id",
     "parent_binding",
-    "evidence_registry",
+    "reference_records",
     "records",
-    "facts",
-    "rule_assertions",
     "conclusion"
   ],
   "properties": {
-    "contract_version": {
-      "const": "1.0.0"
-    },
-    "task_id": {
-      "const": "SYMBOLIC-SPHERE-I1"
-    },
-    "capability_id": {
-      "const": "symbolic_power_perspective"
-    },
+    "contract_version": {"const": "1.1.0"},
+    "task_id": {"const": "SYMBOLIC-SPHERE-I1"},
+    "capability_id": {"const": "symbolic_power_perspective"},
     "parent_binding": {
       "type": "object",
       "additionalProperties": false,
-      "required": [
-        "task_id",
-        "exact_head"
-      ],
+      "required": ["task_id", "exact_head"],
       "properties": {
-        "task_id": {
-          "const": "121Q39-I1"
-        },
-        "exact_head": {
-          "type": "string",
-          "pattern": "^[0-9a-f]{40}$"
-        }
+        "task_id": {"type": "string"},
+        "exact_head": {"type": "string"}
       }
     },
-    "evidence_registry": {
+    "reference_records": {
       "type": "array",
-      "minItems": 3,
-      "items": {
-        "$ref": "#/$defs/evidence"
-      }
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/referenceRecord"}
     },
     "records": {
       "type": "array",
-      "minItems": 2,
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "record_id",
-          "record_type",
-          "symbolic_object",
-          "material_fact_base",
-          "actor_positions",
-          "power_forms",
-          "meaning_projections",
-          "intended_use",
-          "actual_use",
-          "front_face",
-          "suppressed_faces",
-          "benefit_cost_distribution",
-          "counter_readings",
-          "institutionalization_mechanism",
-          "symbolic_capture",
-          "counter_appropriation",
-          "transformation_history",
-          "evidence_constraints",
-          "claim_ceiling"
-        ],
-        "properties": {
-          "record_id": {
-            "type": "string",
-            "minLength": 1
-          },
-          "record_type": {
-            "enum": [
-              "COMMUNITY_FOOTBALL_FIELD",
-              "SCHOOL_DATA_POLICY"
-            ]
-          },
-          "symbolic_object": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "material_fact_base": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "actor_positions": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "power_forms": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "meaning_projections": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "intended_use": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "actual_use": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "front_face": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "suppressed_faces": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "benefit_cost_distribution": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "counter_readings": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "institutionalization_mechanism": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "symbolic_capture": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "counter_appropriation": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "transformation_history": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "evidence_constraints": {
-            "$ref": "#/$defs/boundedField"
-          },
-          "claim_ceiling": {
-            "$ref": "#/$defs/boundedField"
-          }
-        }
-      }
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/analysisRecord"}
     },
-    "facts": {
+    "conclusion": {"$ref": "#/$defs/conclusion"}
+  },
+  "$defs": {
+    "refList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "referenceRecord": {
       "type": "object",
       "additionalProperties": false,
       "required": [
-        "material_truth_separate",
-        "ownership_not_truth",
-        "popularity_not_truth",
-        "institution_not_fact",
-        "all_actors_present",
-        "costs_visible",
-        "intent_effect_separate",
-        "interpretive_power_not_legitimacy",
-        "no_causal_totalization",
-        "history_append_only",
-        "evidence_constrained",
-        "claim_ceiling_preserved"
+        "reference_id",
+        "repository_relative_path",
+        "commit_sha",
+        "blob_sha",
+        "sha256",
+        "record_type",
+        "declared_role",
+        "object_id"
       ],
       "properties": {
-        "material_truth_separate": {
-          "type": "boolean"
-        },
-        "ownership_not_truth": {
-          "type": "boolean"
-        },
-        "popularity_not_truth": {
-          "type": "boolean"
-        },
-        "institution_not_fact": {
-          "type": "boolean"
-        },
-        "all_actors_present": {
-          "type": "boolean"
-        },
-        "costs_visible": {
-          "type": "boolean"
-        },
-        "intent_effect_separate": {
-          "type": "boolean"
-        },
-        "interpretive_power_not_legitimacy": {
-          "type": "boolean"
-        },
-        "no_causal_totalization": {
-          "type": "boolean"
-        },
-        "history_append_only": {
-          "type": "boolean"
-        },
-        "evidence_constrained": {
-          "type": "boolean"
-        },
-        "claim_ceiling_preserved": {
-          "type": "boolean"
-        }
+        "reference_id": {"type": "string"},
+        "repository_relative_path": {"type": "string"},
+        "commit_sha": {"type": "string"},
+        "blob_sha": {"type": "string"},
+        "sha256": {"type": "string"},
+        "record_type": {"type": "string"},
+        "declared_role": {"type": "string"},
+        "object_id": {"type": "string"}
       }
     },
-    "rule_assertions": {
-      "type": "array",
-      "minItems": 12,
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": [
-          "rule_id",
-          "status",
-          "evidence_refs",
-          "effect"
-        ],
-        "properties": {
-          "rule_id": {
-            "enum": [
-              "material_truth_separate",
-              "ownership_not_truth",
-              "popularity_not_truth",
-              "institution_not_fact",
-              "all_actors_present",
-              "costs_visible",
-              "intent_effect_separate",
-              "interpretive_power_not_legitimacy",
-              "no_causal_totalization",
-              "history_append_only",
-              "evidence_constrained",
-              "claim_ceiling_preserved"
-            ]
-          },
-          "status": {
-            "enum": [
-              "PASS",
-              "FAIL"
-            ]
-          },
-          "evidence_refs": {
-            "type": "array",
-            "minItems": 1,
-            "items": {
-              "type": "string"
-            }
-          },
-          "effect": {
-            "enum": [
-              "ALLOW_WITHIN_CEILING",
-              "BLOCK",
-              "DOWNGRADE"
-            ]
-          }
-        }
+    "analysisRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "record_type",
+        "symbolic_object_ref",
+        "actor_positions",
+        "meaning_projections",
+        "power_modalities",
+        "front_face",
+        "suppressed_face",
+        "benefit_cost_distribution",
+        "counter_readings",
+        "material_evidence_constraint"
+      ],
+      "properties": {
+        "record_id": {"type": "string", "minLength": 1},
+        "record_type": {"type": "string", "minLength": 1},
+        "symbolic_object_ref": {"type": "string", "minLength": 1},
+        "actor_positions": {
+          "type": "array",
+          "minItems": 2,
+          "items": {"$ref": "#/$defs/actorPosition"}
+        },
+        "meaning_projections": {
+          "type": "array",
+          "minItems": 2,
+          "items": {"$ref": "#/$defs/meaningProjection"}
+        },
+        "power_modalities": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/powerModality"}
+        },
+        "front_face": {"$ref": "#/$defs/face"},
+        "suppressed_face": {"$ref": "#/$defs/face"},
+        "benefit_cost_distribution": {"$ref": "#/$defs/distribution"},
+        "counter_readings": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/counterReading"}
+        },
+        "material_evidence_constraint": {"$ref": "#/$defs/materialConstraint"}
+      }
+    },
+    "actorPosition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["position_id", "actor_ref", "stance", "evidence_refs"],
+      "properties": {
+        "position_id": {"type": "string", "minLength": 1},
+        "actor_ref": {"type": "string", "minLength": 1},
+        "stance": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "meaningProjection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "projection_id",
+        "actor_position_id",
+        "symbolic_object_ref",
+        "statement",
+        "evidence_refs"
+      ],
+      "properties": {
+        "projection_id": {"type": "string", "minLength": 1},
+        "actor_position_id": {"type": "string", "minLength": 1},
+        "symbolic_object_ref": {"type": "string", "minLength": 1},
+        "statement": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "powerModality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["modality", "actor_position_id", "statement", "evidence_refs"],
+      "properties": {
+        "modality": {"type": "string", "minLength": 1},
+        "actor_position_id": {"type": "string", "minLength": 1},
+        "statement": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "face": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["face_id", "statement", "actor_position_ids", "evidence_refs"],
+      "properties": {
+        "face_id": {"type": "string", "minLength": 1},
+        "statement": {"type": "string", "minLength": 1},
+        "actor_position_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "distributionParty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actor_position_id", "effect", "evidence_refs"],
+      "properties": {
+        "actor_position_id": {"type": "string", "minLength": 1},
+        "effect": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["beneficiaries", "cost_bearers", "evidence_refs"],
+      "properties": {
+        "beneficiaries": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/distributionParty"}
+        },
+        "cost_bearers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/distributionParty"}
+        },
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "counterReading": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "counter_reading_id",
+        "target_projection_id",
+        "statement",
+        "evidence_refs"
+      ],
+      "properties": {
+        "counter_reading_id": {"type": "string", "minLength": 1},
+        "target_projection_id": {"type": "string", "minLength": 1},
+        "statement": {"type": "string", "minLength": 1},
+        "evidence_refs": {"$ref": "#/$defs/refList"}
+      }
+    },
+    "materialConstraint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "material_evidence_refs",
+        "unmet_requirements",
+        "downgrade_claim_ceiling"
+      ],
+      "properties": {
+        "status": {"type": "string", "minLength": 1},
+        "material_evidence_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "unmet_requirements": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "downgrade_claim_ceiling": {"type": "string", "minLength": 1}
       }
     },
     "conclusion": {
       "type": "object",
       "additionalProperties": false,
       "required": [
+        "analysis_status",
         "statement",
         "claim_ceiling",
-        "history_preserved",
+        "truth_status",
+        "causal_status",
         "external_action_performed"
       ],
       "properties": {
-        "statement": {
-          "type": "string",
-          "minLength": 1
-        },
-        "claim_ceiling": {
-          "type": "string",
-          "minLength": 1
-        },
-        "history_preserved": {
-          "type": "boolean"
-        },
-        "external_action_performed": {
-          "type": "boolean"
-        }
-      }
-    }
-  },
-  "$defs": {
-    "boundedField": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "status",
-        "value",
-        "evidence_refs"
-      ],
-      "properties": {
-        "status": {
-          "const": "RECORDED"
-        },
-        "value": {
-          "type": [
-            "string",
-            "boolean",
-            "number",
-            "array",
-            "object",
-            "null"
-          ]
-        },
-        "evidence_refs": {
-          "type": "array",
-          "minItems": 1,
-          "items": {
-            "type": "string",
-            "minLength": 1
-          },
-          "uniqueItems": true
-        }
-      }
-    },
-    "evidence": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "evidence_id",
-        "artifact",
-        "exact_head",
-        "artifact_digest",
-        "rights_status"
-      ],
-      "properties": {
-        "evidence_id": {
-          "type": "string",
-          "minLength": 1
-        },
-        "artifact": {
-          "type": "string",
-          "minLength": 1
-        },
-        "exact_head": {
-          "type": "string",
-          "pattern": "^[0-9a-f]{40}$"
-        },
-        "artifact_digest": {
-          "type": "string",
-          "pattern": "^sha256:[0-9a-f]{64}$"
-        },
-        "rights_status": {
-          "enum": [
-            "REPOSITORY_INTERNAL",
-            "PUBLIC_METADATA_ONLY"
-          ]
-        }
+        "analysis_status": {"type": "string", "minLength": 1},
+        "statement": {"type": "string", "minLength": 1},
+        "claim_ceiling": {"type": "string", "minLength": 1},
+        "truth_status": {"type": "string", "minLength": 1},
+        "causal_status": {"type": "string", "minLength": 1},
+        "external_action_performed": {"type": "boolean"}
       }
     }
   }
