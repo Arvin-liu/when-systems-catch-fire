@@ -10,14 +10,14 @@
     "ready_for_gpt_verification": false
   },
   "phase_b": {
-    "draft_pr": 74,
-    "branch": "agent/scientific-metacognition-i1-epistemic-state-control-plane",
-    "base": "agent/decision-integrity-i1-principle-lock-process-outcome-governance",
-    "base_head": "b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e",
+    "draft_pr": 91,
+    "branch": "repair/scientific-metacognition-r1-epistemic-state-binding",
+    "base": "repair/decision-integrity-r1-principle-process-binding",
+    "base_head": "25bd2ca3e14a2693e3c9fac49a2547e1aa7ca9a8",
     "head_binding": {
       "mode": "external_exact_head_attestation",
       "authority": "pull_request_body_and_1111_receipt",
-      "receipt_path": "agent-results/IGNITION-20260722-SCIENTIFIC-METACOGNITION-I1-scientific-metacognition-i1-execution-receipt.json",
+      "receipt_path": "agent-results/remaining-repair-train/SCIENTIFIC-METACOGNITION-I1-receipt.json",
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
@@ -47,7 +47,7 @@
     }
   ],
   "propagation_closure": {
-    "closure_hash": "6c0ce665a996530f4c3843b5f0c369b4dfa30e6a35a16be4ded5c5e795d1bd8f",
+    "closure_hash": "07d586457d6098f43e6bb62e68bfd842367859249dda192a66a69814ab8444c3",
     "closure_path": "data/operations/propagation/SCIENTIFIC-METACOGNITION-I1-closure.json",
     "complete": true,
     "unresolved_residue": []
