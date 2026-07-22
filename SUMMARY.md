@@ -51,6 +51,7 @@ L6 只能引用 L0-L5，不能反向制造数学真实性、逻辑有效性或�
 - [类型化变更传播闭包](./docs/architecture/typed-change-propagation.md) — Historical 1.2.0：构件解析、三类关系、同步联合闭包、fixpoint、系统图投影与 residue。
 - [增量执行与选择性物化](./docs/architecture/incremental-execution.md) — Current 1.3.0：execution/validation capability 分离、真实 component validator、manual/external 零本地 validator、apply authority preflight、NonImpactProof、cache identity 与完整仓库 rollback/recovery。
 - [项目构件 registry](./data/operations/project-components.json) / [传播 topology](./data/operations/change-propagation-topology.json) — 机器权威；不构成现实因果或项目完备性证明。
+- [发现—承诺边界](./docs/discovery/discovery-commitment-boundary.md) — Q34 Draft 候选：typed claim 合同、发现/承诺状态机、fail-closed 承诺门禁；区分"发现候选主张"与"承诺为项目结论"，阻止无证据/自证/越界/类比冒充机制的承诺；保留未承诺路径与撤回历史；非 L7/真理层。
 - [内部范例与反例](./docs/publication/zhiyuan-writing-examples.md) — 《永昭·虚遐》、Codex 全文核验的《每日一诗停更说明》、121Q27 基线及 0.1.0→0.4.0 自我修订史。
 - [后台规格](./templates/publication/zhiyuan-writing-spec.md) — 记录项目来源、同源对应边界、生成运动和返回点火反馈；不得原样变成正文提纲。
 
