@@ -26,10 +26,10 @@ def main():
     errors = []
     if recomputed != declared:
         errors.append(f"closure_hash mismatch: declared {declared} recomputed {recomputed}")
-    if not closure.get("complete"):
-        errors.append("closure not complete")
-    if closure.get("unresolved_residue"):
-        errors.append(f"unresolved_residue not empty: {closure.get('unresolved_residue')}")
+    if not closure.get("closure_complete"):
+        errors.append("closure_complete is not true")
+    if closure.get("residue"):
+        errors.append(f"residue not empty: {closure.get('residue')}")
     residue = json.loads(RESIDUE.read_text())
     if residue.get("residue"):
         errors.append(f"residue not empty: {residue.get('residue')}")
