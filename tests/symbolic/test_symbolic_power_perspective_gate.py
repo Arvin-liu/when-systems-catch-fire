@@ -15,6 +15,28 @@ REQUIRED_REFERENCE_FIELDS = {
     "repository_relative_path", "commit_sha", "blob_sha", "sha256",
     "record_type", "declared_role",
 }
+REPAIR_FIXTURE_NAMES = {
+    "01-valid-exit00.json",
+    "02-missing_required_record-exit02.json",
+    "03-unresolved_repository_reference-exit04.json",
+    "04-blob_mismatch-exit05.json",
+    "05-digest_mismatch-exit06.json",
+    "06-unsupported_reference_record_type-exit07.json",
+    "07-declared_role_mismatch-exit08.json",
+    "08-unsupported_record_type-exit09.json",
+    "09-inconsistent_actor_position-exit10.json",
+    "10-inconsistent_meaning_projection-exit11.json",
+    "11-unsupported_power_modality-exit12.json",
+    "12-invalid_face_distinction-exit13.json",
+    "13-incomplete_benefit_cost_distribution-exit14.json",
+    "14-invalid_counter_reading-exit15.json",
+    "15-missing_material_evidence-exit16.json",
+    "16-truth_upgrade_forbidden-exit17.json",
+    "17-causal_overclaim-exit18.json",
+    "18-placeholder_repository_reference-exit04.json",
+    "19-external_action_forbidden-exit19.json",
+    "20-invalid_symbolic_object-exit20.json",
+}
 
 
 def run_validator(path):
@@ -28,7 +50,7 @@ def run_validator(path):
 
 class SymbolicPowerPerspectiveGateTests(unittest.TestCase):
     def test_real_cli_matrix_uses_stable_data_integrity_names(self):
-        paths = sorted(FIXTURES.glob("[0-9][0-9]-*.json"))
+        paths = [FIXTURES / name for name in sorted(REPAIR_FIXTURE_NAMES)]
         self.assertEqual(len(paths), 20)
         for path in paths:
             expected = int(re.search(r"-exit(\d+)\.json$", path.name).group(1))

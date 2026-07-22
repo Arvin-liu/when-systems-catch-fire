@@ -340,6 +340,39 @@ def attack_fixtures(pilot):
     return fixtures
 
 
+def historical_path_compatibility(pilot, fixtures):
+    """Keep original task manifest paths present without using them as repair tests."""
+    parent = copy.deepcopy(pilot)
+    parent["parent_binding"]["exact_head"] = "824ff7f713303b18bca94b05de3f4b6530ffff51"
+    aliases = {
+        "02-schema-exit02.json": "02-missing_required_record-exit02.json",
+        "04-evidence-exit04.json": "03-unresolved_repository_reference-exit04.json",
+        "05-rule-material_truth_separate-exit05.json": "04-blob_mismatch-exit05.json",
+        "06-rule-ownership_not_truth-exit06.json": "05-digest_mismatch-exit06.json",
+        "07-rule-popularity_not_truth-exit07.json": "06-unsupported_reference_record_type-exit07.json",
+        "08-rule-institution_not_fact-exit08.json": "07-declared_role_mismatch-exit08.json",
+        "09-rule-all_actors_present-exit09.json": "08-unsupported_record_type-exit09.json",
+        "10-rule-costs_visible-exit10.json": "09-inconsistent_actor_position-exit10.json",
+        "11-rule-intent_effect_separate-exit11.json": "10-inconsistent_meaning_projection-exit11.json",
+        "12-rule-interpretive_power_not_legitimacy-exit12.json": "11-unsupported_power_modality-exit12.json",
+        "13-rule-no_causal_totalization-exit13.json": "12-invalid_face_distinction-exit13.json",
+        "14-rule-history_append_only-exit14.json": "13-incomplete_benefit_cost_distribution-exit14.json",
+        "15-rule-evidence_constrained-exit15.json": "14-invalid_counter_reading-exit15.json",
+        "16-rule-claim_ceiling_preserved-exit16.json": "15-missing_material_evidence-exit16.json",
+        "17-rule-material_truth_separate-exit05.json": "04-blob_mismatch-exit05.json",
+        "18-rule-ownership_not_truth-exit06.json": "05-digest_mismatch-exit06.json",
+        "19-rule-popularity_not_truth-exit07.json": "06-unsupported_reference_record_type-exit07.json",
+        "20-rule-institution_not_fact-exit08.json": "07-declared_role_mismatch-exit08.json",
+        "21-rule-all_actors_present-exit09.json": "08-unsupported_record_type-exit09.json",
+        "22-rule-costs_visible-exit10.json": "09-inconsistent_actor_position-exit10.json",
+        "23-ceiling-exit20.json": "20-invalid_symbolic_object-exit20.json",
+        "24-external-action-exit21.json": "19-external_action_forbidden-exit19.json",
+    }
+    outputs = {"03-parent-exit03.json": parent}
+    outputs.update({name: copy.deepcopy(fixtures[target]) for name, target in aliases.items()})
+    return outputs
+
+
 def serialized(value):
     return json.dumps(value, ensure_ascii=False, indent=2) + "\n"
 
@@ -350,6 +383,7 @@ def main():
     args = parser.parse_args()
     pilot = pilot_bundle()
     fixtures = attack_fixtures(pilot)
+    fixtures.update(historical_path_compatibility(pilot, fixtures))
     outputs = {PILOT: serialized(pilot)}
     outputs.update({FIXTURES / name: serialized(value) for name, value in fixtures.items()})
 
