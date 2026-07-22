@@ -7,6 +7,7 @@
   "additionalProperties": false,
   "required": [
     "intervention_requests",
+    "canonical_bindings",
     "safety_envelopes",
     "plans",
     "outcome_evaluations",
@@ -14,6 +15,17 @@
     "stop_rollback_records"
   ],
   "properties": {
+    "canonical_bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["q35_actor_registry", "q35_grant_registry", "q35_action_source", "q36_obs_source"],
+      "properties": {
+        "q35_actor_registry": {"$ref": "#/$defs/git_binding"},
+        "q35_grant_registry": {"$ref": "#/$defs/git_binding"},
+        "q35_action_source": {"$ref": "#/$defs/git_binding"},
+        "q36_obs_source": {"$ref": "#/$defs/git_binding"}
+      }
+    },
     "intervention_requests": {"type": "array", "items": {"$ref": "#/$defs/intervention_request"}},
     "safety_envelopes": {"type": "array", "items": {"$ref": "#/$defs/safety_envelope"}},
     "plans": {"type": "array", "items": {"$ref": "#/$defs/intervention_plan"}},
@@ -61,6 +73,17 @@
     }
   },
   "$defs": {
+    "git_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "exact_commit", "git_blob", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "exact_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "git_blob": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "sha256": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    },
     "intervention_request": {
       "type": "object",
       "additionalProperties": false,
@@ -71,7 +94,7 @@
         "intended_change", "mechanism_hypothesis", "mechanism_hypothesis_status",
         "applicability_scope", "uncertainty", "expected_effect",
         "evaluation_window", "claim_ceiling", "exact_head",
-        "proposed_at", "authorized_at", "external_action", "source_ref"
+        "artifact_digest", "proposed_at", "authorized_at", "external_action", "source_ref"
       ],
       "properties": {
         "intervention_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
@@ -134,11 +157,12 @@
         "expiry": {"type": "string", "format": "date-time", "description": "Grant/envelope expiry; execution after expiry fails closed."},
         "rollback_plan": {
           "type": "object", "additionalProperties": false,
-          "required": ["plan_id", "steps", "verification_method"],
+          "required": ["plan_id", "steps", "verification_method", "verification_binding"],
           "properties": {
             "plan_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
             "steps": {"type": "array", "items": {"type": "string"}, "description": "Must be non-empty; an incomplete rollback plan fails the safety-envelope semantic check."},
-            "verification_method": {"type": "string", "minLength": 1}
+            "verification_method": {"type": "string", "minLength": 1},
+            "verification_binding": {"$ref": "#/$defs/git_binding"}
           }
         }
       }
@@ -175,7 +199,8 @@
       "required": [
         "event_id", "state", "pre_state_digest", "command", "executor",
         "start_time", "end_time", "affected_surfaces", "actual_change_magnitude",
-        "output_artifact_digests", "stop_condition_status", "trajectory_event_digest", "no_silent_mutation"
+        "output_artifact_digests", "pre_state_binding", "output_artifact_bindings",
+        "stop_condition_status", "trajectory_event_digest", "trajectory_binding", "no_silent_mutation"
       ],
       "properties": {
         "event_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
@@ -192,9 +217,12 @@
         "affected_surfaces": {"type": "array", "items": {"type": "string"}, "minItems": 1},
         "actual_change_magnitude": {"type": "number", "minimum": 0},
         "output_artifact_digests": {"type": "array", "items": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}},
+        "pre_state_binding": {"$ref": "#/$defs/git_binding"},
+        "output_artifact_bindings": {"type": "array", "items": {"$ref": "#/$defs/git_binding"}, "minItems": 1},
         "side_effects": {"type": "array", "items": {"type": "string"}},
         "stop_condition_status": {"type": "string", "enum": ["not_triggered", "triggered", "aborted"]},
         "trajectory_event_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "trajectory_binding": {"$ref": "#/$defs/git_binding"},
         "no_silent_mutation": {"type": "boolean", "const": true, "description": "Execution records are append-only; corrections add new events, never mutate old ones in place."}
       }
     },
@@ -233,7 +261,7 @@
         "failure_id", "plan_id", "failure_type", "trigger", "detected_at",
         "affected_surfaces", "severity", "reversibility", "residual_impact",
         "responsibility_state", "known_cause", "unknown_cause", "competing_explanations",
-        "escalation_target", "claim_ceiling", "exact_head"
+        "escalation_target", "claim_ceiling", "exact_head", "evidence_binding"
       ],
       "properties": {
         "failure_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
@@ -261,6 +289,7 @@
         "q39_interface_ref": {"type": "string"},
         "claim_ceiling": {"type": "string", "minLength": 1},
         "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+        ,"evidence_binding": {"$ref": "#/$defs/git_binding"}
       }
     },
     "stop_rollback_record": {
@@ -270,7 +299,7 @@
         "record_id", "plan_id", "triggering_stop_condition", "stop_authority",
         "rollback_plan_ref", "rollback_action", "pre_digest", "post_digest",
         "restored_surfaces", "not_restored_surfaces", "irreversible_residue",
-        "verification_result", "history_preservation", "exact_head"
+        "verification_result", "history_preservation", "exact_head", "evidence_binding"
       ],
       "properties": {
         "record_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$"},
@@ -288,6 +317,7 @@
         "follow_up_restrictions": {"type": "string"},
         "history_preservation": {"type": "boolean", "description": "Must be true: original failure/execution records are preserved; rollback adds new events rather than deleting old ones (validator fails closed)."},
         "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+        ,"evidence_binding": {"$ref": "#/$defs/git_binding"}
       }
     }
   }
