@@ -10,23 +10,41 @@
     {
       "evidence_id": "evidence.1",
       "artifact": "data/failure/pilot-q39-failure-lineage.json",
-      "exact_head": "b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e",
-      "artifact_digest": "sha256:4ddfa843101ee355c58585a96ce811df6a0f0aadf2c55a279b59ac74c57d5f90",
-      "rights_status": "REPOSITORY_INTERNAL"
+      "exact_head": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "artifact_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "repository_relative_path": "data/failure/pilot-q39-failure-lineage.json",
+      "commit_sha": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "blob_sha": "7cd19ee0dd6c0da1c47da895e9021b2e09e12ca4",
+      "sha256": "sha256:ca11da2279caac2b99e783b1cdebeb3ca362536986b0f1c8ee78ba2c9f2bd805",
+      "record_type": "FAILURE_LINEAGE",
+      "declared_role": "predecessor_failure_evidence"
     },
     {
       "evidence_id": "evidence.2",
       "artifact": "data/decision/pilot-decision-integrity-i1.json",
-      "exact_head": "b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e",
-      "artifact_digest": "sha256:8da86360c818e0011ef99b9244f9fa53d9c050947bb1b488e9dcb989b334940f",
-      "rights_status": "REPOSITORY_INTERNAL"
+      "exact_head": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "artifact_digest": "sha256:a5f07e227568ccf48d93df15edef6f24677ae7ac7e9ebce6567e07766c81b281",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "repository_relative_path": "data/decision/pilot-decision-integrity-i1.json",
+      "commit_sha": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "blob_sha": "31a7c97276698454663b4b9efc893174bdb67127",
+      "sha256": "sha256:a5f07e227568ccf48d93df15edef6f24677ae7ac7e9ebce6567e07766c81b281",
+      "record_type": "DECISION_PILOT",
+      "declared_role": "predecessor_decision_evidence"
     },
     {
       "evidence_id": "evidence.3",
       "artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
-      "exact_head": "b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e",
-      "artifact_digest": "sha256:22ef7f43ecfe9e07e076ae03731021684e5a52bb105d7c29a454f3993bdcc448",
-      "rights_status": "REPOSITORY_INTERNAL"
+      "exact_head": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "artifact_digest": "sha256:ea1cbf363efb5afa534340b09ab706386aea10c7e81a9658a08f306a86bd4778",
+      "rights_status": "REPOSITORY_INTERNAL",
+      "repository_relative_path": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "commit_sha": "27649857e3a651b2ea1e0323f0955fc8e6e3482e",
+      "blob_sha": "2a0e7841a8093c2c1df208c7e2c358ac67738bfc",
+      "sha256": "sha256:ea1cbf363efb5afa534340b09ab706386aea10c7e81a9658a08f306a86bd4778",
+      "record_type": "RETRIEVAL_PILOT",
+      "declared_role": "predecessor_retrieval_evidence"
     }
   ],
   "records": [
@@ -383,7 +401,7 @@
     "good_outcome_not_bad_process_erasure": true,
     "failure_changes_plan": true,
     "retracted_not_active": true,
-    "plan_authorized_and_stopped": false,
+    "plan_authorized_and_stopped": true,
     "exploration_bounded": true,
     "cost_risk_present": true,
     "ceiling_noninflation": true,
