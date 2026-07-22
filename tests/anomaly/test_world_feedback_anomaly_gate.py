@@ -16,4 +16,17 @@ class CapabilityGateTests(unittest.TestCase):
   b=json.loads(PILOT.read_text());
   for rec in b["records"]:
    for field in ["world_feedback_anomaly", "recurrence_window", "residual_failure_aggregation", "expected_observed_divergence", "model_repair_budget", "governance_decision", "escalation_authority", "stop_rollback", "q39_update", "metacognition_update", "claim_ceiling"]: self.assertTrue(rec[field]["evidence_refs"])
+ def test_git_object_binding_is_enforced(self):
+  # correctly-bound pilot carries immutable Git-object references and passes
+  r=run(PILOT); self.assertEqual(r.returncode,0,r.stdout)
+  b=json.loads(PILOT.read_text()); b["evidence_registry"][0]["sha256"]="sha256:"+"0"*64
+  tmp=PILOT.with_suffix(".tmp-gitobj.json"); tmp.write_text(json.dumps(b))
+  try:
+   rt=run(tmp); self.assertEqual(rt.returncode,4,rt.stdout)
+  finally: tmp.unlink()
+ def test_scientific_metacognition_predecessor_regression(self):
+  sm_pilot=ROOT/"data/metacognition/pilot-scientific-metacognition-i1.json"
+  sm_validator=ROOT/"tools/metacognition/validate_epistemic_state_control_plane_gate.py"
+  r=subprocess.run([sys.executable,str(sm_validator),"--bundle",str(sm_pilot)],capture_output=True,text=True)
+  self.assertEqual(r.returncode,0,r.stdout)
 if __name__=="__main__": unittest.main()

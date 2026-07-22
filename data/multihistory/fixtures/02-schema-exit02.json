@@ -3,27 +3,27 @@
   "capability_id": "multi_history_world_projection",
   "parent_binding": {
     "task_id": "F15-D1-I1",
-    "exact_head": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301"
+    "exact_head": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09"
   },
   "evidence_registry": [
     {
       "evidence_id": "evidence.1",
       "artifact": "data/latent/pilot-f15-d1-i1.json",
-      "exact_head": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301",
-      "artifact_digest": "sha256:379960556f1b0d8c6fa4c830c052a31e09ff0c803d1ddd878895d2623fd3df3d",
+      "exact_head": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09",
+      "artifact_digest": "sha256:ea201b3f07d64afc1fa812dde8121910eb961be8f1338771a80293bacb5995e5",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {
       "evidence_id": "evidence.2",
       "artifact": "data/anomaly/pilot-q41-i1.json",
-      "exact_head": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301",
-      "artifact_digest": "sha256:5fa6720008c17e96dec64420866a918fcd577937617c6331cbebee0ec20aa797",
+      "exact_head": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09",
+      "artifact_digest": "sha256:e8cb6af4451a19a0f61d90b10e94c978cde4e030bde39466c9894bb1bf492bc7",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {
       "evidence_id": "evidence.3",
       "artifact": "FOUNDATION.md",
-      "exact_head": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301",
+      "exact_head": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09",
       "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
       "rights_status": "REPOSITORY_INTERNAL"
     }

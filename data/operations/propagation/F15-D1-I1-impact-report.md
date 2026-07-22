@@ -1,7 +1,7 @@
 # F15-D1-I1 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `68df8016bc8dcfb42ea410ef6cfc10e0d22f0d294ea1e410de8301cb7582fc53`
+- Closure hash: `84d658f88fb4f66b87a96ca46e67a27b4f13caea93e9c68f44a34fe8fdbd00e2`
 - Fixpoint iterations: `2`
 - Seeds: `current_state, historical_reports, incremental_execution, iteration_manifest_contract, latent_system_identifiability_contract, latent_system_identifiability_gate_validator, latent_system_identifiability_pilot, pages_pipeline, project_component_registry, propagation_calculator, system_map_layout, system_map_projection`
 - Resolved components: `15`

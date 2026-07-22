@@ -1,0 +1,127 @@
+{
+  "registry_version": "1.0.0",
+  "task_id": "SYMBOLIC-SPHERE-I1-REPAIR-R1",
+  "boundary": "Repository-local synthetic pilot material. These objects support bounded symbolic analysis only and do not establish external facts, truth, legitimacy, popularity, ownership, naming authority, or causality.",
+  "objects": [
+    {
+      "object_id": "community_field.material_object",
+      "object_type": "MATERIAL_OBJECT",
+      "record_scope": "COMMUNITY_FOOTBALL_FIELD",
+      "description": "A repository-local representation of a shared football field, its access boundary, schedule, and named uses."
+    },
+    {
+      "object_id": "community_field.actor.council",
+      "object_type": "ACTOR",
+      "record_scope": "COMMUNITY_FOOTBALL_FIELD",
+      "description": "The council actor that controls booking and official naming in the pilot."
+    },
+    {
+      "object_id": "community_field.actor.players",
+      "object_type": "ACTOR",
+      "record_scope": "COMMUNITY_FOOTBALL_FIELD",
+      "description": "The player-group actor that uses the field in the pilot."
+    },
+    {
+      "object_id": "community_field.actor.neighbours",
+      "object_type": "ACTOR",
+      "record_scope": "COMMUNITY_FOOTBALL_FIELD",
+      "description": "The neighbouring-resident actor that bears noise and access costs in the pilot."
+    },
+    {
+      "object_id": "community_field.material_evidence",
+      "object_type": "MATERIAL_EVIDENCE",
+      "record_scope": "COMMUNITY_FOOTBALL_FIELD",
+      "description": "Repository-local pilot observations of booking windows, fence access, scheduled use, and reported noise; not external verification."
+    },
+    {
+      "object_id": "community_field.meaning_evidence",
+      "object_type": "MEANING_EVIDENCE",
+      "record_scope": "COMMUNITY_FOOTBALL_FIELD",
+      "description": "Bounded actor-attributed interpretations of stewardship, belonging, and exclusion."
+    },
+    {
+      "object_id": "community_field.power_evidence",
+      "object_type": "POWER_EVIDENCE",
+      "record_scope": "COMMUNITY_FOOTBALL_FIELD",
+      "description": "Repository-local record of access control and naming authority in the pilot."
+    },
+    {
+      "object_id": "community_field.face_evidence",
+      "object_type": "FACE_EVIDENCE",
+      "record_scope": "COMMUNITY_FOOTBALL_FIELD",
+      "description": "Distinct front-face community narrative and suppressed-face cost narrative attributed to different actor positions."
+    },
+    {
+      "object_id": "community_field.distribution_evidence",
+      "object_type": "DISTRIBUTION_EVIDENCE",
+      "record_scope": "COMMUNITY_FOOTBALL_FIELD",
+      "description": "Repository-local allocation record naming beneficiaries, cost bearers, and the bounded effects attributed to each."
+    },
+    {
+      "object_id": "community_field.counter_reading_evidence",
+      "object_type": "COUNTER_READING_EVIDENCE",
+      "record_scope": "COMMUNITY_FOOTBALL_FIELD",
+      "description": "Evidence for a counter-reading that the official belonging narrative obscures unequal access and cost."
+    },
+    {
+      "object_id": "school_policy.material_object",
+      "object_type": "MATERIAL_OBJECT",
+      "record_scope": "SCHOOL_DATA_POLICY",
+      "description": "A repository-local representation of a school data policy, collection fields, access roles, and retention rules."
+    },
+    {
+      "object_id": "school_policy.actor.school",
+      "object_type": "ACTOR",
+      "record_scope": "SCHOOL_DATA_POLICY",
+      "description": "The school-administration actor that adopts and names the policy in the pilot."
+    },
+    {
+      "object_id": "school_policy.actor.students",
+      "object_type": "ACTOR",
+      "record_scope": "SCHOOL_DATA_POLICY",
+      "description": "The student actor whose data is collected and classified in the pilot."
+    },
+    {
+      "object_id": "school_policy.actor.families",
+      "object_type": "ACTOR",
+      "record_scope": "SCHOOL_DATA_POLICY",
+      "description": "The family actor that receives notices and bears review and correction costs in the pilot."
+    },
+    {
+      "object_id": "school_policy.material_evidence",
+      "object_type": "MATERIAL_EVIDENCE",
+      "record_scope": "SCHOOL_DATA_POLICY",
+      "description": "Repository-local pilot observations of declared collection fields, role access, retention, and correction procedure; not external verification."
+    },
+    {
+      "object_id": "school_policy.meaning_evidence",
+      "object_type": "MEANING_EVIDENCE",
+      "record_scope": "SCHOOL_DATA_POLICY",
+      "description": "Bounded actor-attributed interpretations of safety, classification, oversight, and loss of agency."
+    },
+    {
+      "object_id": "school_policy.power_evidence",
+      "object_type": "POWER_EVIDENCE",
+      "record_scope": "SCHOOL_DATA_POLICY",
+      "description": "Repository-local record of institutional authority, naming authority, and information control in the pilot."
+    },
+    {
+      "object_id": "school_policy.face_evidence",
+      "object_type": "FACE_EVIDENCE",
+      "record_scope": "SCHOOL_DATA_POLICY",
+      "description": "Distinct front-face safety narrative and suppressed-face classification-cost narrative attributed to different actor positions."
+    },
+    {
+      "object_id": "school_policy.distribution_evidence",
+      "object_type": "DISTRIBUTION_EVIDENCE",
+      "record_scope": "SCHOOL_DATA_POLICY",
+      "description": "Repository-local allocation record naming institutional beneficiaries, affected students and families, and their bounded costs."
+    },
+    {
+      "object_id": "school_policy.counter_reading_evidence",
+      "object_type": "COUNTER_READING_EVIDENCE",
+      "record_scope": "SCHOOL_DATA_POLICY",
+      "description": "Evidence for a counter-reading that a safety label does not itself establish proportionality, accuracy, or truth."
+    }
+  ]
+}

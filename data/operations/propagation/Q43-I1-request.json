@@ -1,7 +1,7 @@
 {
   "task_id": "Q43-I1",
   "request_version": "1.0.0",
-  "base_identity": "98998bb1e3db67230954c1436d8effbcb87027af",
+  "base_identity": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
   "head_identity": "external_exact_head_attestation",
   "change_classifications": [
     "CAPABILITY_ADDITION",

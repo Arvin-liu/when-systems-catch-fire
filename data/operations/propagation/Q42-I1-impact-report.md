@@ -1,7 +1,7 @@
 # Q42-I1 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `30f19a8b93471dd152b5c56135980b4a8284ab1294f1b344dbae5faa987bcca7`
+- Closure hash: `4658910053ba3bee41ea413491a1d4daeeebc126d9738d8a0a46298d8c8ed0f3`
 - Fixpoint iterations: `2`
 - Seeds: `counterfactual_unrealized_path_contract, counterfactual_unrealized_path_gate_validator, counterfactual_unrealized_path_pilot, current_state, historical_reports, incremental_execution, iteration_manifest_contract, pages_pipeline, project_component_registry, propagation_calculator, system_map_layout, system_map_projection`
 - Resolved components: `15`

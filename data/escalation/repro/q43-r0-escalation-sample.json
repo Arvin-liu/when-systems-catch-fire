@@ -1,0 +1,46 @@
+{
+  "sample_version": "r0-repro",
+  "capability": "graded_intervention_escalation",
+  "purpose": "Minimal Q43-semantic sample used by R0 reproduction to show the original gate accepts evidence bound only to the mutable working tree (no immutable Git-object pin).",
+  "distinctions": {
+    "action_risk_class": {
+      "definition": "The graded classification of an action's potential harm if it goes wrong (e.g. REPOSITORY_LOCAL_REVERSIBLE vs HIGH_RISK_EXTERNAL).",
+      "status": "CLASSIFIED",
+      "claim": "each action receives exactly one bounded risk class"
+    },
+    "reversibility": {
+      "definition": "Whether an action can be undone without external side effects. Reversible actions may be automatic repository-local; irreversible ones require confirmation/escalation.",
+      "status": "GRADED",
+      "is_reversible_action": "repository_local_reversible"
+    },
+    "authority": {
+      "definition": "The bounded authority level under which an action may be taken (repository candidate, expert, institutional). Authority is never self-upgraded.",
+      "status": "BOUNDED_AUTHORITY",
+      "self_upgrade": false
+    },
+    "escalation": {
+      "definition": "The path an action takes when it exceeds the candidate's bounded authority: request-only to a human expert or institution.",
+      "status": "REQUEST_ONLY_ESCALATION",
+      "is_automatic_external": false
+    }
+  },
+  "escalation_contrast": {
+    "note": "A high-risk EXTERNAL action is never performed by the repository candidate; it is converted into a request-only escalation to a human with the required authority.",
+    "external_action_performed": false,
+    "high_risk_becomes": "request_only"
+  },
+  "authority_boundary": {
+    "candidate_authority": "REPOSITORY_CANDIDATE_ONLY",
+    "expert_authority": "REQUESTED_NOT_ASSUMED",
+    "institutional_authority": "REQUESTED_NOT_ASSUMED"
+  },
+  "non_claims": [
+    "no legal action is performed by this candidate",
+    "no medical action is performed by this candidate",
+    "no financial action is performed by this candidate",
+    "no safety-critical external action is performed by this candidate",
+    "this candidate does not establish a universal truth",
+    "this candidate does not establish a causal proof",
+    "this candidate is not deployed to an ecosystem"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "registry_id": "q34-canonical-actor-authority",
+  "actors": [
+    {
+      "actor_id": "q34-builder",
+      "actor_kind": "agent",
+      "status": "active",
+      "roles": [
+        "builder",
+        "discoverer"
+      ],
+      "authority_scopes": [],
+      "conflicts_with": []
+    },
+    {
+      "actor_id": "q34-claim-author",
+      "actor_kind": "agent",
+      "status": "active",
+      "roles": [
+        "claim_author"
+      ],
+      "authority_scopes": [],
+      "conflicts_with": []
+    },
+    {
+      "actor_id": "q33-i3-independent-reviewer",
+      "actor_kind": "independent_review_process",
+      "status": "active",
+      "roles": [
+        "independent_reviewer"
+      ],
+      "authority_scopes": [
+        "repository_main_only"
+      ],
+      "conflicts_with": [],
+      "authority_source": {
+        "repository": "Arvin-liu/1111",
+        "path": "agent-results/IGNITION-20260721-121Q33-I3-final-conclusion-review.json",
+        "exact_commit": "e64ed781a1aab9832a50e34760f8a4d8f10a13cb",
+        "git_blob": "80257fd2a563ce9a859396c2f923ca9fefc932b5",
+        "sha256": "sha256:d39c51899c208ed0e1e607ec9aaf1a12f776d0b9be304bcb19d526fc99401426"
+      }
+    },
+    {
+      "actor_id": "q33-closeout-process",
+      "actor_kind": "deterministic_process",
+      "status": "active",
+      "roles": [
+        "repository_artifact_producer"
+      ],
+      "authority_scopes": [
+        "repository_main_only"
+      ],
+      "conflicts_with": []
+    }
+  ]
+}

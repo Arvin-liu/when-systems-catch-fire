@@ -6,6 +6,7 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
+    "canonical_bindings",
     "analogy_candidates",
     "mappings",
     "mechanism_evidence",
@@ -13,6 +14,22 @@
     "audit_decisions"
   ],
   "properties": {
+    "canonical_bindings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "q34_claim_source", "q35_actor_registry", "q35_grant_registry",
+        "q35_action_source", "q36_obs_source", "q36_int_source"
+      ],
+      "properties": {
+        "q34_claim_source": {"$ref": "#/$defs/git_binding"},
+        "q35_actor_registry": {"$ref": "#/$defs/git_binding"},
+        "q35_grant_registry": {"$ref": "#/$defs/git_binding"},
+        "q35_action_source": {"$ref": "#/$defs/git_binding"},
+        "q36_obs_source": {"$ref": "#/$defs/git_binding"},
+        "q36_int_source": {"$ref": "#/$defs/git_binding"}
+      }
+    },
     "analogy_candidates": {"type": "array", "items": {"$ref": "#/$defs/analogy_candidate"}},
     "mappings": {"type": "array", "items": {"$ref": "#/$defs/mapping"}},
     "mechanism_evidence": {"type": "array", "items": {"$ref": "#/$defs/mechanism_evidence"}},
@@ -108,13 +125,24 @@
     }
   },
   "$defs": {
+    "git_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "exact_commit", "git_blob", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "exact_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "git_blob": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "sha256": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+      }
+    },
     "analogy_candidate": {
       "type": "object",
       "additionalProperties": false,
       "required": [
         "analogy_id", "source_domain", "target_domain", "source_def", "target_def",
         "proposer", "q35_authority_ref", "originating_q34_claim_ref", "purpose",
-        "candidate_type", "evidence_refs", "provenance", "claim_ceiling",
+        "candidate_type", "evidence_refs", "evidence_bindings", "provenance", "claim_ceiling",
         "lifecycle", "exact_head"
       ],
       "properties": {
@@ -136,6 +164,7 @@
           "COUNTERANALOGY", "INSUFFICIENTLY_SPECIFIED"
         ], "description": "MECHANISM_EQUIVALENCE_PROVEN and UNIVERSAL_LAW_PROVEN are deliberately NOT permitted as repository auto-outputs (validator fails closed)."},
         "evidence_refs": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "evidence_bindings": {"type": "array", "items": {"$ref": "#/$defs/git_binding"}, "minItems": 2},
         "provenance": {"type": "string", "minLength": 1, "description": "Where this candidate came from; repo-internal replay must be labeled as such, not fabricated as external mechanism fact."},
         "claim_ceiling": {"type": "string", "minLength": 1, "description": "Must not assert universal real-world mechanism or proven cross-domain causal law. A local structural similarity may not be widened into a universal causal regularity."},
         "lifecycle": {
@@ -146,7 +175,7 @@
             "history": {"type": "array", "items": {"type": "string"}}
           }
         },
-        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$", "description": "Binds the candidate to the exact repository head it was authored against."}
+        "exact_head": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{40}$"}, {"const": "CLI_CURRENT_HEAD"}], "description": "Either a literal frozen head or the explicit marker requiring equality with --current-head and the checked-out Git HEAD."}
       }
     },
     "mapping": {
@@ -227,7 +256,7 @@
           "type": "array", "items": {"type": "string"},
           "description": "Explicit list of claims this evidence must NOT be used to support (e.g. universal law, real-world causal transport)."
         },
-        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+        "exact_head": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{40}$"}, {"const": "CLI_CURRENT_HEAD"}]}
       }
     },
     "transportability_assessment": {
@@ -260,7 +289,7 @@
           "NOT_ASSESSED", "NOT_TRANSPORTABLE", "TRANSPORTABLE_WITHIN_DECLARED_SCOPE",
           "PARTIAL_TRANSPORTABILITY", "INSUFFICIENT_EVIDENCE", "CONTRADICTED"
         ]},
-        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+        "exact_head": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{40}$"}, {"const": "CLI_CURRENT_HEAD"}]}
       }
     },
     "audit_decision": {
@@ -294,7 +323,7 @@
         "downgraded_claim_ceiling": {"type": "string", "minLength": 1, "description": "Claim ceiling after audit; may be lower than the candidate's original ceiling."},
         "unresolved_issues": {"type": "array", "items": {"type": "string"}},
         "reviewer_verifier": {"type": "string", "minLength": 1, "description": "Agent/role that produced the audit decision (Hy3 reviewer in a fresh read-only context performs the independent review post-campaign; the builder records the decision object only)."},
-        "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+        "exact_head": {"oneOf": [{"type": "string", "pattern": "^[0-9a-f]{40}$"}, {"const": "CLI_CURRENT_HEAD"}]}
       }
     }
   }
