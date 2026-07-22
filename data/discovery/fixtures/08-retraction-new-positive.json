@@ -3,7 +3,7 @@
   "claim_text": "New evidence supersedes an old claim.",
   "claim_type": "repository_fact",
   "scope": "repository_main_only",
-  "state": "committed_current",
+  "state": "retracted",
   "discovered_by": {
     "actor": "q34-builder",
     "actor_kind": "agent"
@@ -75,6 +75,14 @@
       "decision": "COMMIT",
       "rationale": "supersede old",
       "at": "2026-07-21T00:00:03Z"
+    },
+    {
+      "from_state": "committed_current",
+      "to_state": "retracted",
+      "actor": "q34-builder",
+      "decision": "RETRACT_OR_SUPERSEDE",
+      "rationale": "positive append-only retraction path does not independently commit a new current claim",
+      "at": "2026-07-21T00:00:04Z"
     }
   ]
 }

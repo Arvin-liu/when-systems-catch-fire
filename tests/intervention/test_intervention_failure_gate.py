@@ -17,7 +17,7 @@ VALIDATOR = ROOT / "tools" / "intervention" / "validate_intervention_failure_gat
 CLAIMS = ROOT / "data" / "agent" / "q34-claims-registry.json"
 REJECTS = ROOT / "data" / "agent" / "q33-publication-rejects.json"
 FX_DIR = ROOT / "data" / "intervention" / "fixtures"
-CURRENT_HEAD = "a8eab57bf2a2465c48d5d624e22681a1ad1bc20c"
+CURRENT_HEAD = "9087e494c782b405b5bbdb0d1ae4bd1707792d95"
 NOW = "2026-07-21T12:00:00+00:00"
 
 # fixture number -> expected validator exit code (per instruction §六)
@@ -34,7 +34,8 @@ EXIT_NAMES = {
     11: "ENVELOPE_EXCEEDED", 12: "STOP_CONDITION_VIOLATED", 13: "FAILURE_REWRITE_FORBIDDEN",
     14: "EXPECTED_EFFECT_REWRITE", 15: "CAUSAL_OVERCLAIM", 16: "ROLLBACK_INCOMPLETE",
     17: "SINGLE_OWNER_FORGED", 18: "OBS_NOT_VALIDATED", 19: "SEPARATION_OF_DUTY_VIOLATION",
-    20: "BASELINE_MISSING",
+    20: "BASELINE_MISSING", 21: "PLACEHOLDER_DIGEST", 22: "CONTENT_BINDING_INVALID",
+    23: "CANONICAL_AUTHORITY_INVALID",
 }
 
 
@@ -183,3 +184,28 @@ def test_fixture_matrix_exhaustive():
             f"fixture {n:02d} {path.name}: expected exit {exp} ({EXIT_NAMES.get(exp)}), "
             f"got {r.returncode} ({EXIT_NAMES.get(r.returncode)})\n{r.stdout}"
         )
+
+
+def test_fixture_24_original_placeholder_authority_bypass_fails():
+    r = _run(FX_DIR / "24-placeholder-digests-self-declared-authority.json")
+    assert r.returncode == 21, r.stdout
+
+
+def test_fixture_25_actual_byte_digest_mismatch_fails():
+    r = _run(FX_DIR / "25-q36-source-digest-mismatch.json")
+    assert r.returncode == 22, r.stdout
+
+
+def test_fixture_26_wrong_exact_git_head_fails():
+    r = _run(FX_DIR / "26-q35-source-wrong-exact-head.json")
+    assert r.returncode == 22, r.stdout
+
+
+def test_fixture_27_repository_path_traversal_fails():
+    r = _run(FX_DIR / "27-source-path-traversal.json")
+    assert r.returncode == 22, r.stdout
+
+
+def test_fixture_28_embedded_unresolvable_grant_fails():
+    r = _run(FX_DIR / "28-embedded-unresolvable-grant.json")
+    assert r.returncode == 22, r.stdout

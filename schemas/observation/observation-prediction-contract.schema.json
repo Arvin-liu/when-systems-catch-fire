@@ -14,6 +14,18 @@
     "residuals": {"type": "array", "items": {"$ref": "#/$defs/residual_anomaly"}}
   },
   "$defs": {
+    "git_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "exact_commit", "git_blob", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "exact_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "git_blob": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "sha256": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "declared_rule_version": {"type": "string", "minLength": 1}
+      }
+    },
     "observation_spec": {
       "type": "object",
       "additionalProperties": false,
@@ -31,6 +43,7 @@
         "target_scope": {"type": "string", "minLength": 1, "description": "Target population / system / scope."},
         "measurement_method": {"type": "string", "minLength": 1},
         "source_ref": {"type": "string", "minLength": 1, "description": "Q33-gated source reference; must not be a Q33-rejected path."},
+        "source_binding": {"$ref": "#/$defs/git_binding"},
         "sampling_window": {
           "type": "object",
           "additionalProperties": false,
@@ -101,9 +114,16 @@
         "applicability_scope": {"type": "string", "minLength": 1},
         "claim_ceiling": {"type": "string", "minLength": 1, "description": "Must not assert universal predictive capability or causal proof."},
         "q34_claim_ref": {"type": "string", "minLength": 1, "description": "Q34 claim this prediction relies on; must be committed_current for Current prediction claims."},
+        "q34_claim_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "q34_claim_exact_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
         "q35_actor_ref": {"type": "string", "minLength": 1},
         "q35_grant_ref": {"type": "string", "minLength": 1},
         "q35_trajectory_event_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "q35_source_binding": {"$ref": "#/$defs/git_binding"},
+        "input_source_binding": {"$ref": "#/$defs/git_binding"},
+        "freeze_binding": {"$ref": "#/$defs/git_binding"},
+        "freeze_record_id": {"type": "string", "minLength": 1},
+        "rule_binding": {"$ref": "#/$defs/git_binding"},
         "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
         "artifact_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
         "issued_at": {"type": "string", "format": "date-time", "description": "Immutable issuance time. Must be strictly before outcome available_at."},
@@ -130,6 +150,9 @@
         "exclusion_reason": {"type": "string", "description": "Mandatory when inclusion_status is excluded_with_reason."},
         "evaluator_ref": {"type": "string", "minLength": 1, "description": "Q35 actor or deterministic verifier that performed binding."},
         "independent_evidence_status": {"type": "string", "enum": ["independent", "self_generated_forbidden", "partially_independent"]},
+        "source_binding": {"$ref": "#/$defs/git_binding"},
+        "reveal_binding": {"$ref": "#/$defs/git_binding"},
+        "reveal_record_id": {"type": "string", "minLength": 1},
         "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
         "artifact_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
       }
