@@ -1,0 +1,55 @@
+{
+  "task_id": "SCIENTIFIC-METACOGNITION-I1",
+  "parent_id": "DECISION-INTEGRITY-I1",
+  "fields": [
+    "epistemic_state_ledger",
+    "committed_knowledge",
+    "candidate_hypotheses",
+    "conflicts",
+    "retracted_states",
+    "insufficient_evidence",
+    "not_searched",
+    "temporarily_unobservable",
+    "structurally_unobservable",
+    "non_identifiable",
+    "known_unknowns",
+    "unknown_acquisition_paths",
+    "visibility_bias",
+    "decision_integrity_risk",
+    "unresolved_failures",
+    "cost_risk_time_priority",
+    "stop_condition",
+    "evidence_requirement",
+    "next_action_type",
+    "voi_like_ranking",
+    "authorized_acquisition_plan",
+    "feedback_transition",
+    "replanning",
+    "claim_ceiling"
+  ],
+  "rules": [
+    "self_rating_not_evidence",
+    "unknown_needs_evidence_transition",
+    "non_identifiable_not_solved",
+    "dominant_view_not_fact",
+    "good_outcome_not_bad_process_erasure",
+    "failure_changes_plan",
+    "retracted_not_active",
+    "plan_authorized_and_stopped",
+    "exploration_bounded",
+    "cost_risk_present",
+    "ceiling_noninflation",
+    "no_circular_evidence"
+  ],
+  "record_types": [
+    "REAL_TRAIN_UNKNOWN_LEDGER",
+    "NON_IDENTIFIABLE_UNKNOWN"
+  ],
+  "nonclaims": [
+    "model self-rating is not evidence",
+    "non-identifiable is not solved",
+    "dominant discourse is not fact",
+    "planning is not external execution"
+  ],
+  "next_task": "Q41-I1"
+}
