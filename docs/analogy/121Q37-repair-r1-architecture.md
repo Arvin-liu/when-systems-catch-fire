@@ -15,3 +15,9 @@ At the original frozen head, the real CLI runs the checked-in pilot against `927
 3. Replace fictive external evidence with repository-contained Q36-OBS/Q36-INT artifacts at exact commits, Git blobs and actual-byte digests.
 4. Recompute mapping digest from its semantic content and preserve the analogy as structural only; no mechanism or transportability promotion.
 5. Keep Q38 retrieval `NOT_ALLOWED` and execute no external lookup or real-world action.
+
+## Local validation evidence
+
+The real CLI was executed at the checked-out repair head. The positive pilot returned `0`; stale embedded head returned `17`; a fictional source path, fictional authority grant, and self-promoted candidate claim returned `22`; semantic mapping digest mismatch returned `23`; and an existing but non-current Git commit supplied through `--current-head` returned `24`.
+
+The Q37 suite passed `27/27`. The complete Q34, Q35, Q36-OBS, Q36-INT and Q37 predecessor/capability group passed `166/166`. All validation was repository-local. Remote PR and CI state is `NOT_CHECKED_LOCAL_ONLY`.
