@@ -14,3 +14,9 @@ Fixture `25-nonexistent-target-zero-digest-boolean-bypass.json` preserves the in
 2. Resolve authorization from canonical Q35 grant/action bytes rather than caller booleans.
 3. Resolve the declared plan effect from a separately bound structured effect record and require booleans to agree with that record.
 4. Keep repository intervention effects request-only; no external action or target mutation is performed.
+
+## Local validation evidence
+
+The real CLI returns `0` for the positive pilot. Nonexistent target plus zero digest, actual target-byte mismatch, fabricated target exact head, mismatched effect-record bytes, fictional authority grant, and a caller boolean claiming that a request-only intervention was applied each return `15`.
+
+Q39 capability tests pass `5/5`, with the matrix exercising 30 real CLI fixtures. The Q34–Q39 grouped capability and predecessor regression passes `177/177`. Propagation authority and effect are resolved from structured Git-bound objects; the high-risk intervention plan remains `REQUEST_ONLY`. Remote state is `NOT_CHECKED_LOCAL_ONLY`.
