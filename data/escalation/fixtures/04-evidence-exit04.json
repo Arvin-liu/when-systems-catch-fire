@@ -4,27 +4,27 @@
   "capability_id": "graded_intervention_escalation",
   "parent_binding": {
     "task_id": "Q42-I1",
-    "exact_head": "98998bb1e3db67230954c1436d8effbcb87027af"
+    "exact_head": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98"
   },
   "evidence_registry": [
     {
       "evidence_id": "evidence.1",
       "artifact": "data/counterfactual/pilot-q42-i1.json",
-      "exact_head": "98998bb1e3db67230954c1436d8effbcb87027af",
+      "exact_head": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
       "artifact_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {
       "evidence_id": "evidence.2",
       "artifact": "data/intervention/pilot-controlled-intervention.json",
-      "exact_head": "98998bb1e3db67230954c1436d8effbcb87027af",
-      "artifact_digest": "sha256:3c32b2bbbe859d7b5aa87e19a1aaab43f7db47d2f66e0343b0a7ab5d5a0a3fb0",
+      "exact_head": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
+      "artifact_digest": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {
       "evidence_id": "evidence.3",
       "artifact": "FOUNDATION.md",
-      "exact_head": "98998bb1e3db67230954c1436d8effbcb87027af",
+      "exact_head": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
       "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
       "rights_status": "REPOSITORY_INTERNAL"
     }
