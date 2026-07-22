@@ -4,7 +4,7 @@
   "capability_id": "epistemic_state_control_plane",
   "parent_binding": {
     "task_id": "DECISION-INTEGRITY-I1",
-    "exact_head": "b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e"
+    "exact_head": "1a51d1b3fd1bab4eb1c80a7429e0b629bcae69a9"
   },
   "evidence_registry": [
     {
