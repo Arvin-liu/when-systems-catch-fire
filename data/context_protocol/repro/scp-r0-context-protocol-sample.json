@@ -1,0 +1,38 @@
+{
+  "sample_id": "scp-r0-context-protocol-sample",
+  "purpose": "Reproduce the SCP semantics that the open_scientific_context_protocol subcapability must enforce: capability negotiation, identity authorization, authority-capability (capability-not-authority), artifact exact_head binding, rights preservation, typed failure/retry, compatibility fail-closed, sensitive-local-first, hardware-request-only, no-ecosystem-overclaim, and stop/rollback presence. No hardware execution and no external action are ever performed.",
+  "capability": "open_scientific_context_protocol",
+  "expected_rules": [
+    "version_negotiated",
+    "identity_authorized",
+    "capability_not_authority",
+    "artifact_exact_head_bound",
+    "rights_preserved",
+    "failure_retry_typed",
+    "compatibility_fail_closed",
+    "sensitive_local_first",
+    "hardware_request_only",
+    "no_ecosystem_overclaim",
+    "stop_rollback_present"
+  ],
+  "local_mock_request": {
+    "protocol_version": {"status": "RECORDED", "value": "1.0.0"},
+    "model_tool_executor_identity": {"status": "RECORDED", "value": "local-mock-adapter#v1 (authorized for repository_local protocol exchange only)"},
+    "authority_capability": {"status": "RECORDED", "value": "capability-scoped: can negotiate and exchange context; holds NO authority to execute, deploy, or copy a platform"},
+    "capability_negotiation": {"status": "RECORDED", "value": "request/response envelope negotiates supported fields and the exact_head each artifact is bound to"},
+    "identity_authorization": {"status": "RECORDED", "value": "executor identity authorized only for repository_local, reversible, mock protocol exchange"},
+    "artifact_binding": {"status": "RECORDED", "value": "every exchanged artifact carries exact_head provenance so the receiver can verify against an immutable Git object"},
+    "failure_retry_semantics": {"status": "RECORDED", "value": "failures are typed (schema/identity/artifact/binding/rights/retry) and retries are bounded and explicit"},
+    "compatibility_policy": {"status": "RECORDED", "value": "on incompatible version or unverifiable artifact, the exchange fails closed (no silent downgrade)"},
+    "sensitive_data_network_local_first": {"status": "RECORDED", "value": "sensitive data stays repository_local / network_local_first; no boundary bypass"},
+    "experiment_hardware_request_result": {"status": "RECORDED", "value": "hardware access is request-only; the protocol records a request and a result placeholder, never executes hardware"},
+    "stop_rollback_present": {"status": "RECORDED", "value": "a stop/rollback path is present so any exchange can be halted and reverted"},
+    "claim_ceiling": {"status": "RECORDED", "value": "candidate_only_repository_governance: no deployed ecosystem, no hardware execution, no platform model copying"}
+  },
+  "negative_constraints": {
+    "no_hardware_execution": "the protocol never performs hardware actions; it only negotiates and records a request/result envelope",
+    "no_external_action": "no network-egress, no remote mutation, no real-world side effect is performed by the subcapability",
+    "no_authority_conflation": "capability to exchange context is never conflated with authority to act in the world",
+    "no_ecosystem_overclaim": "it does not claim a deployed ecosystem or an installed platform model"
+  }
+}
