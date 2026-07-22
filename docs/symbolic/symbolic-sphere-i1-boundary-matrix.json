@@ -1,48 +1,49 @@
 {
-  "task_id": "SYMBOLIC-SPHERE-I1",
-  "parent_id": "121Q39-I1",
-  "fields": [
-    "symbolic_object",
-    "material_fact_base",
-    "actor_positions",
-    "power_forms",
-    "meaning_projections",
-    "intended_use",
-    "actual_use",
-    "front_face",
-    "suppressed_faces",
-    "benefit_cost_distribution",
-    "counter_readings",
-    "institutionalization_mechanism",
-    "symbolic_capture",
-    "counter_appropriation",
-    "transformation_history",
-    "evidence_constraints",
-    "claim_ceiling"
+  "task_id": "SYMBOLIC-SPHERE-I1-REPAIR-R1",
+  "parent_id": "121Q39-REPAIR-R1",
+  "reference_record_required_fields": [
+    "repository_relative_path",
+    "commit_sha",
+    "blob_sha",
+    "sha256",
+    "record_type",
+    "declared_role"
   ],
-  "rules": [
-    "material_truth_separate",
-    "ownership_not_truth",
-    "popularity_not_truth",
-    "institution_not_fact",
-    "all_actors_present",
-    "costs_visible",
-    "intent_effect_separate",
-    "interpretive_power_not_legitimacy",
-    "no_causal_totalization",
-    "history_append_only",
-    "evidence_constrained",
-    "claim_ceiling_preserved"
+  "semantic_checks": [
+    "symbolic_object_resolves_to_material_object",
+    "actor_position_resolves_explicit_actor",
+    "meaning_projection_matches_actor_position_and_symbolic_object",
+    "power_modality_is_allowed",
+    "front_face_and_suppressed_face_are_distinct",
+    "benefit_cost_distribution_retains_beneficiaries_cost_bearers_and_evidence",
+    "counter_reading_binds_own_evidence",
+    "missing_material_evidence_forces_nonzero_and_conclusion_downgrade",
+    "ownership_popularity_and_naming_authority_do_not_establish_truth",
+    "symbolic_analysis_does_not_establish_complete_causality"
   ],
   "record_types": [
     "COMMUNITY_FOOTBALL_FIELD",
     "SCHOOL_DATA_POLICY"
   ],
+  "allowed_power_modalities": [
+    "ACCESS_CONTROL",
+    "RESOURCE_ALLOCATION",
+    "INSTITUTIONAL_AUTHORITY",
+    "NAMING_AUTHORITY",
+    "OWNERSHIP",
+    "POPULARITY"
+  ],
+  "claim_ceiling": "BOUNDED_SYMBOLIC_INTERPRETATION",
   "nonclaims": [
     "ownership is not truth",
     "popularity is not truth",
+    "naming authority is not truth",
     "perspective does not excuse material error",
     "symbolic analysis is not complete causal proof"
   ],
-  "next_task": "DECISION-INTEGRITY-I1"
+  "next_task": {
+    "task_id": "DECISION-INTEGRITY-I1",
+    "status": "NOT_STARTED"
+  },
+  "remote_state": "NOT_CHECKED_LOCAL_ONLY"
 }
