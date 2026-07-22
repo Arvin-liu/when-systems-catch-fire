@@ -89,6 +89,25 @@
       },
       "description": "Review/verification authority. For commitment this must be independent of discovered_by."
     },
+    "claim_roles": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_author", "builder"],
+      "properties": {
+        "claim_author": {"type": "string", "minLength": 1},
+        "builder": {"type": "string", "minLength": 1}
+      },
+      "description": "Canonical actor ids used to prove reviewer independence from author and builder."
+    },
+    "claim_digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "description": "SHA-256 over the immutable canonical claim body defined by the Q34 repair contract."
+    },
+    "review_decision": {
+      "$ref": "#/$defs/review_decision",
+      "description": "Binding to a byte-verified independent review decision artifact."
+    },
     "claim_ceiling": {
       "type": "string",
       "minLength": 1,
@@ -148,6 +167,35 @@
         "produced_by": {"type": "string", "description": "Actor that produced the evidence; used for self-certification detection."},
         "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$", "description": "Head the evidence binds to; must equal claim exact_head_binding.head when present."},
         "artifact_digest": {"type": "string", "description": "Optional sha256:... digest for byte-exact binding."}
+        ,"repository": {"type": "string", "minLength": 1}
+        ,"path": {"type": "string", "minLength": 1}
+        ,"exact_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+        ,"git_blob": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+        ,"sha256": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+        ,"supports_claim_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+        ,"scope": {"type": "string", "minLength": 1}
+      }
+    },
+    "review_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "evidence_ref_id",
+        "reviewer_id",
+        "decision",
+        "reviewed_claim_digest",
+        "scope",
+        "claim_ceiling",
+        "subject_head"
+      ],
+      "properties": {
+        "evidence_ref_id": {"type": "string", "minLength": 1},
+        "reviewer_id": {"type": "string", "minLength": 1},
+        "decision": {"type": "string", "minLength": 1},
+        "reviewed_claim_digest": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+        "scope": {"type": "string", "minLength": 1},
+        "claim_ceiling": {"type": "string", "minLength": 1},
+        "subject_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
       }
     },
     "history_event": {
@@ -166,5 +214,18 @@
         "at": {"type": "string"}
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "state": {"enum": ["commitment_candidate", "committed_current"]}
+        },
+        "required": ["state"]
+      },
+      "then": {
+        "required": ["claim_roles", "claim_digest", "review_decision"]
+      }
+    }
+  ]
 }

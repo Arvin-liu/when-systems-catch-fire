@@ -6,13 +6,14 @@
       "target_domain": "information-theory",
       "source_def": "entropy as disorder measure",
       "target_def": "entropy as surprise measure",
-      "proposer": "agent:kimi",
-      "q35_authority_ref": "g-q35-001",
-      "originating_q34_claim_ref": "c-q34-ana-001",
+      "proposer": "q35-builder",
+      "q35_authority_ref": "grant-q34-pilot",
+      "originating_q34_claim_ref": "q33.seven_governance_components.current_in_main",
       "purpose": "explanation",
       "candidate_type": "STRUCTURAL_ANALOGY",
       "evidence_refs": [
-        "ext:paper-x"
+        "data/observation/pilot-q34-closure-drift-prediction.json",
+        "data/intervention/pilot-controlled-intervention.json"
       ],
       "provenance": "repo-internal replay",
       "claim_ceiling": "local structural similarity between entropy formulations; not a proven shared mechanism",
@@ -23,7 +24,21 @@
           "audited"
         ]
       },
-      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+      "exact_head": "CLI_CURRENT_HEAD",
+      "evidence_bindings": [
+        {
+          "path": "data/observation/pilot-q34-closure-drift-prediction.json",
+          "exact_commit": "9087e494c782b405b5bbdb0d1ae4bd1707792d95",
+          "git_blob": "c1d170108f00ab0b4daf009969d4aa49193cd315",
+          "sha256": "sha256:2ad68c554bb42d7308b44e8c6e1f08468406b11b8a9b392ba87ac83ee17e2b17"
+        },
+        {
+          "path": "data/intervention/pilot-controlled-intervention.json",
+          "exact_commit": "e4ca5350a3c68e61031e3205eaca9f2665799a08",
+          "git_blob": "222e4530d82f6334167f5fa5961a27aa5ac76480",
+          "sha256": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d"
+        }
+      ]
     }
   ],
   "mappings": [
@@ -64,7 +79,7 @@
         "macroscopic vs discrete"
       ],
       "representation_level": "mathematical",
-      "mapping_digest": "sha256:2a471882e44a9cd7379354aae4c5b869302cab6fcbe7fd8402f5e900741d3b95"
+      "mapping_digest": "sha256:56c0377896aad40449ea25ec915b447c0b512a379adf28862276067af2434c5c"
     }
   ],
   "mechanism_evidence": [
@@ -79,7 +94,7 @@
         "universal law",
         "real-world causal transport"
       ],
-      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+      "exact_head": "CLI_CURRENT_HEAD"
     }
   ],
   "transportability_assessments": [
@@ -109,7 +124,7 @@
         "empirical rate ratio <0.5"
       ],
       "status": "NOT_TRANSPORTABLE",
-      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+      "exact_head": "CLI_CURRENT_HEAD"
     }
   ],
   "audit_decisions": [
@@ -127,29 +142,28 @@
       "downgraded_claim_ceiling": "local structural similarity; not a proven shared mechanism",
       "unresolved_issues": [],
       "reviewer_verifier": "builder(Q37)",
-      "exact_head": "e302459e721149cc5a42a4ae506b473a1cd92693"
+      "exact_head": "CLI_CURRENT_HEAD"
     }
   ],
   "q34_claims": [
     {
-      "claim_id": "c-q34-ana-001",
+      "claim_id": "q33.seven_governance_components.current_in_main",
       "status": "committed_current",
-      "claim_ceiling": "documented entropy analogy; repository-internal only",
+      "claim_ceiling": "repository governance state only: the 7 components are Current in Main per manifest/seal/merge evidence; this does not assert real-world legal compliance or exhaustive global copyright coverage.",
       "allows_analogy_purpose": true,
-      "source_ref": "src:q34"
+      "source_ref": "data/discovery/claims/q33-seven-governance-components-current.json"
     }
   ],
   "q35_grants": [
     {
-      "grant_id": "g-q35-001",
+      "grant_id": "grant-q34-pilot",
       "status": "active",
-      "grant_expires_at": "2099-01-01T00:00:00+00:00",
-      "scope": "explanation",
-      "grantee": "agent:kimi",
-      "granted_by": "user:zhiyuan",
+      "grant_expires_at": "2027-07-21T00:00:00Z",
+      "scope": "repository explanation",
+      "grantee": "q35-executor",
+      "granted_by": "zhiyuan",
       "action_refs": [
-        "propose",
-        "audit"
+        "act-q34-pilot"
       ]
     }
   ],
@@ -160,7 +174,63 @@
       "note": "open access"
     }
   ],
-  "q36_obs_snapshots": [],
-  "q36_int_snapshots": [],
-  "q38_case_retrieval_started": false
+  "q36_obs_snapshots": [
+    {
+      "observation_id": "obs-q34-closure-drift-001",
+      "target_scope": "repository_main_iteration_q34",
+      "sampling_window": {
+        "start": "2026-07-20T00:00:00Z",
+        "end": "2026-07-21T00:00:00Z"
+      },
+      "quality_status": "accepted",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "do_not_infer_cause": true
+    }
+  ],
+  "q36_int_snapshots": [
+    {
+      "request_id": "int-pilot-q36-controlled-replay",
+      "mechanism_hypothesis_status": "hypothesis",
+      "do_not_upgrade_to_universal": true
+    }
+  ],
+  "q38_case_retrieval_started": false,
+  "canonical_bindings": {
+    "q34_claim_source": {
+      "path": "data/discovery/claims/q33-seven-governance-components-current.json",
+      "exact_commit": "61c696f7cf74fed5525ec7da6cf8a7c4b544e5a8",
+      "git_blob": "729e3258795b2d6194b14e79144611a65c68be60",
+      "sha256": "sha256:cef7ad43a197015dc7bee0f4a23494e012db5cd157586af847a892fd36e6fb8b"
+    },
+    "q35_actor_registry": {
+      "path": "data/agent/canonical-actor-registry.json",
+      "exact_commit": "167f254e637259d57b7ce09623de982dda527f54",
+      "git_blob": "857bf0c26f6601373273c25f4bc834447fe8ec63",
+      "sha256": "sha256:0f55d3e2e025c5e5d94dbe8b8b98c8c21cc80be197ae91b95143c9cc84219870"
+    },
+    "q35_grant_registry": {
+      "path": "data/agent/canonical-grant-registry.json",
+      "exact_commit": "167f254e637259d57b7ce09623de982dda527f54",
+      "git_blob": "6f764bbbce9601f78f6dace380e73ec97ee8a2cd",
+      "sha256": "sha256:1a20f482a0104b65fba979c3c9efa4f98e063b5c664d7d005ae01579adfb0867"
+    },
+    "q35_action_source": {
+      "path": "data/agent/pilot-q34-pr-controlled-op.json",
+      "exact_commit": "167f254e637259d57b7ce09623de982dda527f54",
+      "git_blob": "734f711db4dd9a7f788315067f1d3e6bbac236e0",
+      "sha256": "sha256:5f6d084255ba89f87f10339a33c5a960a2ecfdf4a3d04d55a7cc0d88796a21e6"
+    },
+    "q36_obs_source": {
+      "path": "data/observation/pilot-q34-closure-drift-prediction.json",
+      "exact_commit": "9087e494c782b405b5bbdb0d1ae4bd1707792d95",
+      "git_blob": "c1d170108f00ab0b4daf009969d4aa49193cd315",
+      "sha256": "sha256:2ad68c554bb42d7308b44e8c6e1f08468406b11b8a9b392ba87ac83ee17e2b17"
+    },
+    "q36_int_source": {
+      "path": "data/intervention/pilot-controlled-intervention.json",
+      "exact_commit": "e4ca5350a3c68e61031e3205eaca9f2665799a08",
+      "git_blob": "222e4530d82f6334167f5fa5961a27aa5ac76480",
+      "sha256": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d"
+    }
+  }
 }

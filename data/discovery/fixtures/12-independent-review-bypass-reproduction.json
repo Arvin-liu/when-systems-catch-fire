@@ -1,0 +1,79 @@
+{
+  "claim_id": "repair.b02.unrelated_claim_bypass",
+  "claim_text": "An unrelated repository statement may be committed without byte-bound support.",
+  "claim_type": "repository_fact",
+  "scope": "repository_main_only",
+  "state": "committed_current",
+  "discovered_by": {
+    "actor": "q34-builder",
+    "actor_kind": "agent"
+  },
+  "evidence": [
+    {
+      "ref_id": "self_declared_independence",
+      "kind": "independent_review",
+      "reference": "data/operations/project-components.json",
+      "independence": "independent",
+      "produced_by": "fictional-reviewer",
+      "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+      "artifact_digest": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "verifier": {
+    "actor": "fictional-reviewer",
+    "actor_kind": "agent"
+  },
+  "claim_ceiling": "repository in-repo fact only; does not assert real-world truth.",
+  "search_process": {
+    "summary": "The payload declares that a check occurred without binding the checked bytes.",
+    "considered_paths": [
+      "data/operations/project-components.json"
+    ],
+    "rejected_paths": [
+      "none"
+    ]
+  },
+  "relations": {
+    "supersedes": [],
+    "retracts": [],
+    "derived_from": []
+  },
+  "exact_head_binding": {
+    "repo": "Arvin-liu/when-systems-catch-fire",
+    "head": "81edff4039619b8343a82cb1b84785c8a9f6a990"
+  },
+  "history": [
+    {
+      "from_state": "discovered",
+      "to_state": "discovered",
+      "actor": "q34-builder",
+      "decision": "DISCOVER",
+      "rationale": "unrelated claim introduced for blocker reproduction",
+      "at": "2026-07-22T04:00:00Z"
+    },
+    {
+      "from_state": "discovered",
+      "to_state": "evidence_bound_candidate",
+      "actor": "q34-builder",
+      "decision": "BIND_EVIDENCE",
+      "rationale": "payload self-declares a zero digest and fictional reviewer as independent",
+      "at": "2026-07-22T04:00:01Z"
+    },
+    {
+      "from_state": "evidence_bound_candidate",
+      "to_state": "commitment_candidate",
+      "actor": "fictional-reviewer",
+      "decision": "REQUIRE_INDEPENDENT_REVIEW",
+      "rationale": "self-declared review",
+      "at": "2026-07-22T04:00:02Z"
+    },
+    {
+      "from_state": "commitment_candidate",
+      "to_state": "committed_current",
+      "actor": "fictional-reviewer",
+      "decision": "COMMIT",
+      "rationale": "bypass reproduction",
+      "at": "2026-07-22T04:00:03Z"
+    }
+  ]
+}
