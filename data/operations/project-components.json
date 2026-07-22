@@ -1780,9 +1780,10 @@
         "group": "governance",
         "visible": true
       },
-      "path_patterns": [
-        "schemas/analogy/analogy-audit-contract.schema.json",
-        "docs/analogy/q37-i1-architecture-decision.md",
+    "path_patterns": [
+      "schemas/analogy/analogy-audit-contract.schema.json",
+      "docs/analogy/121Q37-repair-r1-architecture.md",
+      "docs/analogy/q37-i1-architecture-decision.md",
         "docs/analogy/q37-legacy-lab-salvage-matrix.json",
         "docs/analogy/q37-interfaces.md"
       ]
@@ -1792,7 +1793,7 @@
       "canonical_target": "tools/analogy/validate_analogy_audit_gate.py",
       "component_id": "analogy_audit_gate_validator",
       "component_type": "governance_constraint",
-      "description": "Q37-I1 fail-closed analogy-audit & transportability gate/CLI: blocks metaphor/local-isomorphism/selective-correspondence/unaudited-structural-map/Q36-residual upgraded to mechanism identity or universal law, undeclared scale/time/context or transportability shift, mechanism evidence insufficient/circular, residual-as-cause, transportability missing overlap/invariance/boundary/falsifier, suppressed counteranalogy/negative evidence, Q14 uncommitted claim, Q35 authority gap/expiry/scope-mismatch, Q33 rights bypass, Q38 premature start, claim-ceiling overreach, semantic inconsistency. Deterministic exit codes 0-21.",
+    "description": "Q37-I1 fail-closed analogy-audit & transportability gate/CLI: blocks metaphor/local-isomorphism/selective-correspondence/unaudited-structural-map/Q36-residual upgraded to mechanism identity or universal law, undeclared scale/time/context or transportability shift, mechanism evidence insufficient/circular, residual-as-cause, transportability missing overlap/invariance/boundary/falsifier, suppressed counteranalogy/negative evidence, Q34 candidate self-promotion, Q35 fictional authority, Q33 rights bypass, Q38 premature start, claim-ceiling overreach, semantic inconsistency, unbound source bytes, semantic digest mismatch and wrong actual checkout head. Deterministic exit codes 0-24.",
       "label": "类比审计与可运输性 门禁",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -1854,8 +1855,13 @@
         "data/analogy/fixtures/26-relation-preservation-overclaim.json",
         "data/analogy/fixtures/27-counteranalogy-suppressed.json",
         "data/analogy/fixtures/28-q38-start-forbidden.json",
-        "data/analogy/fixtures/29-negative-audit-deleted.json",
-        "data/analogy/fixtures/30-semantic-consistency-mismatch.json"
+      "data/analogy/fixtures/29-negative-audit-deleted.json",
+      "data/analogy/fixtures/30-semantic-consistency-mismatch.json",
+      "data/analogy/fixtures/31-intermediate-head-candidate-fictional-source-bypass.json",
+      "data/analogy/fixtures/32-fictional-source-binding.json",
+      "data/analogy/fixtures/33-mapping-content-digest-mismatch.json",
+      "data/analogy/fixtures/34-fictional-authority-grant.json",
+      "data/analogy/fixtures/35-self-promoted-candidate-claim.json"
       ]
     }
   ],
