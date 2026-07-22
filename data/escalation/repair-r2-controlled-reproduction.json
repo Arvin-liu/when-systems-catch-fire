@@ -4,7 +4,7 @@
   "capability_id": "graded_intervention_escalation",
   "parent_binding": {
     "task_id": "Q42-I1",
-    "exact_head": "3283ef6e76788b30a467467083f0d5ad7086b5a0"
+    "exact_head": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98"
   },
   "evidence_registry": [
     {
@@ -16,9 +16,7 @@
       "commit_sha": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
       "repository_relative_path": "data/counterfactual/pilot-q42-i1.json",
       "blob_sha": "0f7ed384778f5237a36836578b437ef72f274e2d",
-      "sha256": "sha256:d265486dec7ca48886460cdc6d0542c9d29025e3c44b35530e0b0c5ef997fdf0",
-      "record_type": "evidence_file",
-      "declared_role": "pilot_q42_i1"
+      "sha256": "sha256:d265486dec7ca48886460cdc6d0542c9d29025e3c44b35530e0b0c5ef997fdf0"
     },
     {
       "evidence_id": "evidence.2",
@@ -29,9 +27,7 @@
       "commit_sha": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
       "repository_relative_path": "data/intervention/pilot-controlled-intervention.json",
       "blob_sha": "222e4530d82f6334167f5fa5961a27aa5ac76480",
-      "sha256": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d",
-      "record_type": "evidence_file",
-      "declared_role": "pilot_controlled_intervention"
+      "sha256": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d"
     },
     {
       "evidence_id": "evidence.3",
@@ -42,9 +38,7 @@
       "commit_sha": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
       "repository_relative_path": "FOUNDATION.md",
       "blob_sha": "c084b5300c1f6a4eeac3fd08cd764c1d12f0ec2f",
-      "sha256": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
-      "record_type": "evidence_file",
-      "declared_role": "foundation"
+      "sha256": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa"
     }
   ],
   "records": [

@@ -1,0 +1,36 @@
+{
+  "task_id": "SYMBOLIC-SPHERE-R2",
+  "task_slug": "symbolic-sphere-r2",
+  "capability": "structured_capability_gate",
+  "repair_round": "r2",
+  "branch": "repair-r2/symbolic-sphere-r2-shared-engine-hardening",
+  "tag": "archive/symbolic-sphere-repair-r2-frozen-head",
+  "parent_task": "121Q39-REPAIR-R1",
+  "parent_id": "121Q39-REPAIR-R1",
+  "parent_branch": "repair/121q39-r1-repair-effect-recomputation",
+  "parent_head": "99ab601a48dd45972b238e468bc8e3002d648c98",
+  "base_head": "4ec769768d31c1fd0d7a6c066d235b4064606652",
+  "exact_head": "94e0e14a7649e4432528c0e9ae4e51172d1ad0ac",
+  "root_blockers_closed": [
+    "RB09-ENGINE-PATH-CONTAINMENT",
+    "RB09-MANDATORY-GIT-OBJECT-BINDING",
+    "RB09-EXACT-HEAD-NONRESOLUTION",
+    "RB09-CALLER-ASSERTED-SEMANTICS"
+  ],
+  "closure_complete": true,
+  "residue": 0,
+  "iteration_sync": "PASS",
+  "validation": "BUILDER_VALIDATION_PASS",
+  "tests": {
+    "shared_engine": "tests/test_structured_capability_gate.py",
+    "result": "10 passed"
+  },
+  "propagation": {
+    "consumers_inherit_fix": [
+      "DECISION-INTEGRITY", "SCIENTIFIC-METACOGNITION", "Q41", "F15-D1", "D2",
+      "Q42", "Q43", "Q44", "SCIENTIFIC-CONTEXT-PROTOCOL"
+    ],
+    "mechanism": "--no-ff merge of this branch into each successor repair-r2 branch"
+  },
+  "notes": "Single shared-engine fix; no per-consumer duplication. SYMBOLIC-SPHERE's own wrapper is self-contained and receives equivalent treatment at its checkpoint."
+}
