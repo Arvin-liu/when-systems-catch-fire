@@ -1412,6 +1412,7 @@
         "schemas/discovery/commitment-claim.schema.json",
         "docs/discovery/discovery-commitment-boundary.md",
         "docs/discovery/discovery-commitment-boundary-architecture.md",
+        "docs/discovery/121Q34-repair-r1-architecture.md",
         "docs/discovery/q34-legacy-lab-salvage-matrix.json"
       ]
     },
@@ -1437,7 +1438,8 @@
         "tools/discovery/__init__.py",
         "tests/discovery/__init__.py",
         "tests/discovery/test_commitment_gate.py",
-        "data/discovery/evidence-resolvable-registry.json"
+        "data/discovery/evidence-resolvable-registry.json",
+        "data/discovery/actor-authority-registry.json"
       ]
     },
     {
@@ -1468,7 +1470,9 @@
         "data/discovery/fixtures/08-retraction-new-positive.json",
         "data/discovery/fixtures/09-uncommitted-path-deferred.json",
         "data/discovery/fixtures/10-q33-global-compliance-breach.json",
-        "data/discovery/fixtures/11-external-world-no-attestation.json"
+        "data/discovery/fixtures/11-external-world-no-attestation.json",
+        "data/discovery/fixtures/12-independent-review-bypass-reproduction.json",
+        "data/discovery/review-decisions/q33-current-main-independent-decision.json"
       ]
     }
   ],
