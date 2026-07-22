@@ -30,3 +30,11 @@ python3 tools/agent/validate_responsibility_gate.py \
 5. Preserve Q33 publication and Q34 commitment boundaries and perform no external action.
 
 The validator establishes only repository-scoped authorization-record consistency. It does not create real-world authority, execute an action, or establish independent acceptance.
+
+## R4 local freeze evidence
+
+The repair candidate passed 25/25 Q35 tests and the 22/22 Q34 direct-predecessor regression. Real CLI attacks return distinct stable exits: combined missing claim/nonexistent grantor `18`, unknown grantor `19`, zero or mismatched claim binding `20`, zero or mismatched grant binding `21`, and embedded noncanonical grant `23`; the canonical positive pilot returns `0`.
+
+The combined capability/foundation/operations run passed 223 tests with one declared skip, including production-execution-authority 18/18. Deterministic propagation, iteration/seal synchronization, front-door/system-map checks passed with residue=0.
+
+Exact-parent debt parity is unchanged from Q34 repair-r1: the same two `era_resolver` failures (9 passed) and the same generated-output-authority `unittest` result (4 pass, 1 inherited stale-Q32I failure, 2 inherited legacy-field errors). No new red was introduced. Exact repair head, remote CI, annotated tag, and the 1111 receipt remain external R4 attestations.
