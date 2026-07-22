@@ -9,7 +9,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+from tools.observation.validate_observation_prediction_gate import _verify_git_binding
 SCHEMA = ROOT / "schemas/retrieval/evidence-retrieval-contract.schema.json"
+Q37_REPAIR_HEAD = "7a01b1958c3f6b6eff559be85ec5e47eecff313c"
+Q37_SEED_PATH = "data/analogy/fixtures/06-transportability-candidate-pass.json"
 NAMES = {
     0: "GATE_PASS", 2: "SCHEMA_ERROR", 3: "Q37_SEED_UNAUDITED",
     4: "SUPPORT_ONLY_SEARCH", 5: "NEGATIVE_RESULT_DELETED",
@@ -52,8 +56,29 @@ def check_seed(b):
     errors = []
     if s.get("q37_lifecycle") != "audited" or s.get("q38_search_permission") != "ALLOWED_AS_RESTRICTED_SEED" or s.get("purpose") != "search_seed":
         errors.append("seed is not an audited Q37 restricted search seed")
-    if s.get("q37_exact_head") != "927cae48f3c65d3c23543dac4b9262704fabb6f1":
-        errors.append("seed does not bind the frozen Q37 exact head")
+    binding = b.get("q37_seed_binding")
+    content, binding_error = _verify_git_binding(binding)
+    if binding_error:
+        errors.append(f"Q37 seed binding invalid: {binding_error}")
+        return errors
+    if binding.get("path") != Q37_SEED_PATH or binding.get("exact_commit") != Q37_REPAIR_HEAD:
+        errors.append("seed does not bind the canonical Q37 repair restricted-seed artifact")
+        return errors
+    if s.get("q37_exact_head") != binding.get("exact_commit") or s.get("seed_digest") != binding.get("sha256"):
+        errors.append("seed head/digest does not match canonical Q37 bytes")
+    try:
+        source = json.loads(content)
+    except (TypeError, json.JSONDecodeError):
+        errors.append("canonical Q37 seed bytes are not JSON")
+        return errors
+    candidates = {item.get("analogy_id"): item for item in source.get("analogy_candidates", [])}
+    decisions = {item.get("decision_id"): item for item in source.get("audit_decisions", [])}
+    candidate = candidates.get(s.get("q37_candidate_ref"))
+    decision = decisions.get(s.get("q37_decision_ref"))
+    if not candidate or candidate.get("lifecycle", {}).get("status") != "audited":
+        errors.append("seed candidate does not resolve to canonical audited Q37 bytes")
+    if not decision or decision.get("analogy_id") != s.get("q37_candidate_ref") or decision.get("q38_search_permission") != "ALLOWED_AS_RESTRICTED_SEED":
+        errors.append("seed decision does not resolve to canonical restricted-search permission")
     return errors
 
 
@@ -180,12 +205,30 @@ def check_provenance(b):
     if not DIGEST_RE.match(str(b["audited_search_seed"].get("seed_digest", ""))):
         errors.append("seed digest malformed")
     for item in b["evidence_items"]:
-        if not item.get("source_locator") or not item.get("provenance") or not DIGEST_RE.match(str(item.get("source_digest", ""))):
-            errors.append(f"{item.get('evidence_id')}: provenance/digest invalid")
-        elif item.get("source_digest") != expected_digest(item.get("source_locator", "") + item.get("summary", "")):
-            errors.append(f"{item.get('evidence_id')}: source digest does not bind locator and summary")
-        if not HEAD_RE.match(str(item.get("exact_head", ""))):
-            errors.append(f"{item.get('evidence_id')}: exact head malformed")
+        eid = item.get("evidence_id")
+        if not item.get("source_locator") or not item.get("provenance"):
+            errors.append(f"{eid}: provenance/locator invalid")
+            continue
+        if item.get("kind") == "FAILED_RETRIEVAL" or item.get("retrieval_status") == "FAILED_UNPERFORMED":
+            if item.get("kind") != "FAILED_RETRIEVAL" or item.get("retrieval_status") != "FAILED_UNPERFORMED" or item.get("selection_status") != "FAILED":
+                errors.append(f"{eid}: failed/unperformed retrieval state is inconsistent")
+            if item.get("source_binding") is not None or item.get("source_digest") is not None:
+                errors.append(f"{eid}: failed/unperformed retrieval must not invent retrieved-byte evidence")
+            if item.get("exact_head") != Q37_REPAIR_HEAD:
+                errors.append(f"{eid}: failed retrieval context must bind the Q37 repair head")
+            continue
+        if item.get("retrieval_status") != "RETRIEVED_REPOSITORY_BYTES":
+            errors.append(f"{eid}: successful evidence lacks retrieved-byte status")
+            continue
+        binding = item.get("source_binding")
+        content, binding_error = _verify_git_binding(binding)
+        if binding_error:
+            errors.append(f"{eid}: retrieved-byte binding invalid: {binding_error}")
+            continue
+        if item.get("source_locator") != binding.get("path"):
+            errors.append(f"{eid}: locator does not equal the bound repository path")
+        if item.get("source_digest") != binding.get("sha256") or item.get("exact_head") != binding.get("exact_commit"):
+            errors.append(f"{eid}: digest/head does not bind the actual retrieved bytes")
     return errors
 
 

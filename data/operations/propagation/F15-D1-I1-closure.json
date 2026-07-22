@@ -563,10 +563,10 @@
       "reason": "F15-D1-I1 does not alter this synchronization surface."
     }
   ],
-  "base_identity": "d09bd6fe964d8879e1b5027aa28cb2e010363c05",
+  "base_identity": "da9c4e2a6b8c0f757aa676814fda7c86d4ac2558",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "68df8016bc8dcfb42ea410ef6cfc10e0d22f0d294ea1e410de8301cb7582fc53",
+  "closure_hash": "84d658f88fb4f66b87a96ca46e67a27b4f13caea93e9c68f44a34fe8fdbd00e2",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,

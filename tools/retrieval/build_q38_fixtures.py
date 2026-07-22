@@ -3,13 +3,15 @@
 import copy
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "data/retrieval"
 FX = OUT / "fixtures"
-HEAD = "c97959d56a41126fbdc1e69ce8fdbc38a43956c0"
-Q37 = "927cae48f3c65d3c23543dac4b9262704fabb6f1"
+Q37 = "7a01b1958c3f6b6eff559be85ec5e47eecff313c"
+HEAD = Q37
+Q37_SEED_PATH = "data/analogy/fixtures/06-transportability-candidate-pass.json"
 AT = "2026-07-21T17:31:00Z"
 
 
@@ -17,13 +19,27 @@ def digest(text):
     return "sha256:" + hashlib.sha256(text.encode()).hexdigest()
 
 
+def git_binding(path, commit=Q37):
+    raw = subprocess.check_output(["git", "show", f"{commit}:{path}"], cwd=ROOT)
+    blob = subprocess.check_output(["git", "rev-parse", f"{commit}:{path}"], cwd=ROOT, text=True).strip()
+    return {"path": path, "exact_commit": commit, "git_blob": blob,
+            "sha256": "sha256:" + hashlib.sha256(raw).hexdigest()}
+
+
+SEED_BINDING = git_binding(Q37_SEED_PATH)
+
+
 def evidence(eid, kind, family, locator, summary, status="INCLUDED"):
     negative = kind in {"COUNTEREXAMPLE", "NEGATIVE_RESULT", "FAILED_RETRIEVAL"}
+    retrieved = kind != "FAILED_RETRIEVAL"
+    source_binding = git_binding(locator) if retrieved else None
     return {
         "evidence_id": eid, "kind": kind, "source_id": "source." + eid,
         "source_family": family, "source_locator": locator,
         "provenance": "bounded repository replay at the Q37 frozen checkpoint; no external factual promotion",
-        "source_digest": digest(locator + summary), "accessed_at": AT,
+        "retrieval_status": "RETRIEVED_REPOSITORY_BYTES" if retrieved else "FAILED_UNPERFORMED",
+        "source_binding": source_binding,
+        "source_digest": source_binding["sha256"] if retrieved else None, "accessed_at": AT,
         "rights_status": "CLEAR", "publication_mode": "METADATA_AND_SUMMARY",
         "evidence_grade": "FAILED" if kind == "FAILED_RETRIEVAL" else "A_PRIMARY",
         "freshness": {"time_sensitive": False, "as_of": AT, "status": "NOT_APPLICABLE", "valid_until": None},
@@ -39,7 +55,7 @@ def evidence(eid, kind, family, locator, summary, status="INCLUDED"):
 def base():
     stop = "Stop after all five evidence kinds are recorded from traceable repository families, every negative or failed item is exported to Q39, duplicate families are collapsed, and remaining external-validity gaps are explicit."
     items = [
-        evidence("ev.support.q37", "SUPPORT", "repo:q37-contract", "docs/analogy/q37-i1-architecture-decision.md", "Q37 explicitly emits a restricted search seed and forbids mechanism promotion."),
+        evidence("ev.support.q37", "SUPPORT", "repo:q37-contract", Q37_SEED_PATH, "Q37 explicitly emits a restricted search seed and forbids mechanism promotion."),
         evidence("ev.counter.q34", "COUNTEREXAMPLE", "repo:q34-analogy-attack", "data/discovery/fixtures/05-analogy-as-mechanism.json", "A structurally tempting analogy fails when treated as a mechanism."),
         evidence("ev.boundary.q37", "BOUNDARY_CASE", "repo:q37-counteranalogy", "data/analogy/fixtures/09-counteranalogy-preserved-pass.json", "A preserved counteranalogy is admissible only as a bounded audit result."),
         evidence("ev.negative.q37", "NEGATIVE_RESULT", "repo:q37-mechanism-insufficient", "data/analogy/fixtures/07-mechanism-evidence-insufficient.json", "Independent mechanism evidence is insufficient despite structural mapping."),
@@ -61,7 +77,8 @@ def base():
         exports.append({"export_id": f"q39.export.{idx}", "evidence_id": item["evidence_id"], "failure_class": "MECHANISM" if item["kind"] != "FAILED_RETRIEVAL" else "RETRIEVAL", "originating_task": "121Q38-I1", "originating_artifact": item["source_locator"], "originating_exact_head": HEAD, "observed_symptom": item["summary"], "negative_evidence_refs": [item["evidence_id"]], "affected_claims": ["q37.restricted_seed"], "retry_preconditions": ["new independent evidence or changed retrieval scope"], "prohibited_retry": ["repeat unchanged search and discard the negative result"], "claim_ceiling_impact": "HOLD"})
     return {
         "contract_version": "1.0.0", "task_id": "121Q38-I1",
-        "audited_search_seed": {"seed_id": "q37.seed.analogy-audit", "q37_candidate_ref": "analogy.q34-commitment-boundary", "q37_decision_ref": "decision.q37-restricted-seed", "q37_exact_head": Q37, "q37_lifecycle": "audited", "q38_search_permission": "ALLOWED_AS_RESTRICTED_SEED", "q37_claim_ceiling": "candidate_only: bounded structural analogy and repository audit; no mechanism or universal causal proof", "purpose": "search_seed", "seed_digest": digest(Q37 + "decision.q37-restricted-seed")},
+        "q37_seed_binding": copy.deepcopy(SEED_BINDING),
+        "audited_search_seed": {"seed_id": "q37.seed.analogy-audit", "q37_candidate_ref": "a06", "q37_decision_ref": "d06", "q37_exact_head": Q37, "q37_lifecycle": "audited", "q38_search_permission": "ALLOWED_AS_RESTRICTED_SEED", "q37_claim_ceiling": "candidate_only: bounded structural analogy and repository audit; no mechanism or universal causal proof", "purpose": "search_seed", "seed_digest": SEED_BINDING["sha256"]},
         "search_plan": {"plan_id": "q38.plan.repository-pilot", "question": "What repository cases support, challenge or bound the Q37 restricted analogy seed?", "scope": "Q34-Q37 frozen repository artifacts only", "query_plan": queries, "inclusion_criteria": ["traceable and relevant to the frozen seed"], "exclusion_criteria": ["untraceable, duplicate-only, rights-incompatible or outside scope"], "required_evidence_kinds": ["SUPPORT", "COUNTEREXAMPLE", "BOUNDARY_CASE", "NEGATIVE_RESULT", "FAILED_RETRIEVAL"], "duplicate_source_family_policy": "COUNT_FAMILY_ONCE_PRESERVE_ALL_RECORDS", "selection_policy": "NO_QUANTITY_VOTE_PRESERVE_NEGATIVE_AND_FAILED", "stop_condition": stop, "stop_condition_digest": digest(stop), "issued_by": "codex-full-build-single-writer", "q35_authority_ref": "q35.repository-builder", "issued_at": AT, "exact_head": HEAD},
         "evidence_items": items, "selection_log": logs,
         "stop_assessment": {"original_stop_condition": stop, "original_stop_condition_digest": digest(stop), "status": "BOUND_REACHED_WITH_GAPS", "category_coverage": ["SUPPORT", "COUNTEREXAMPLE", "BOUNDARY_CASE", "NEGATIVE_RESULT", "FAILED_RETRIEVAL"], "independent_source_family_count": 4, "stopped_at": AT, "post_hoc_rewrite": False, "saturation_rationale": "All contract categories are represented; the I1 repository pilot stops while preserving the explicit external-validity gap."},
@@ -107,6 +124,33 @@ def build():
     ]
     for n, name, expected, fn in muts:
         cases.append((n, name, expected, mutation(expected, fn)))
+    nonexistent = mutation(15, lambda b: None)
+    attack = nonexistent["evidence_items"][0]
+    attack["source_locator"] = "data/retrieval/nonexistent/fabricated-source.json"
+    attack["exact_head"] = "f" * 40
+    attack["source_binding"] = {"path": attack["source_locator"], "exact_commit": "f" * 40,
+                                "git_blob": "f" * 40, "sha256": "sha256:" + "f" * 64}
+    attack["source_digest"] = attack["source_binding"]["sha256"]
+    cases.append((25, "nonexistent-source-fabricated-head-bypass", 15, nonexistent))
+    mismatch = mutation(15, lambda b: None)
+    mismatch["evidence_items"][0]["source_binding"]["sha256"] = "sha256:" + "1" * 64
+    mismatch["evidence_items"][0]["source_digest"] = "sha256:" + "1" * 64
+    cases.append((26, "actual-byte-digest-mismatch", 15, mismatch))
+    wrong_head = mutation(15, lambda b: None)
+    wrong_head["evidence_items"][0]["source_binding"]["exact_commit"] = "f" * 40
+    wrong_head["evidence_items"][0]["exact_head"] = "f" * 40
+    cases.append((27, "wrong-exact-git-head", 15, wrong_head))
+    traversal = mutation(15, lambda b: None)
+    traversal["evidence_items"][0]["source_binding"]["path"] = "../outside.json"
+    traversal["evidence_items"][0]["source_locator"] = "../outside.json"
+    cases.append((28, "repository-path-traversal", 15, traversal))
+    missing_binding = mutation(15, lambda b: None)
+    missing_binding["evidence_items"][0]["source_binding"] = None
+    cases.append((29, "retrieved-item-null-binding", 15, missing_binding))
+    zero_digest = mutation(15, lambda b: None)
+    zero_digest["evidence_items"][0]["source_binding"]["sha256"] = "sha256:" + "0" * 64
+    zero_digest["evidence_items"][0]["source_digest"] = "sha256:" + "0" * 64
+    cases.append((30, "zero-placeholder-byte-digest", 15, zero_digest))
     for n, name, expected, obj in cases:
         path = FX / f"{n:02d}-{name}.json"
         path.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n")

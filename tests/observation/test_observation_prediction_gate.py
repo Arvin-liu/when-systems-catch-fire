@@ -15,6 +15,7 @@ GATE = ROOT / "tools" / "observation" / "validate_observation_prediction_gate.py
 CLAIMS = ROOT / "data" / "agent" / "q34-claims-registry.json"
 Q33_REJECTS = ROOT / "data" / "agent" / "q33-publication-rejects.json"
 FIXTURES = ROOT / "data" / "observation" / "fixtures"
+PILOT = ROOT / "data" / "observation" / "pilot-q34-closure-drift-prediction.json"
 MAIN_HEAD = "06749dd118df7ade715b53f360e8177b09cdab49"
 
 
@@ -127,6 +128,39 @@ class ObservationPredictionGateFixtureTests(unittest.TestCase):
         bundle = json.loads((FIXTURES / "20-retrospective-replay-pilot.json").read_text(encoding="utf-8"))
         self.assertIn("RETROSPECTIVE_REPLAY_NOT_LIVE_FORECAST",
                       bundle["predictions"][0]["claim_ceiling"])
+
+    # 21. original repair blocker: missing predecessors plus fabricated source -> fail closed
+    def test_21_missing_predecessor_nonexistent_source_zero_digest(self):
+        self.assert_exit("21-missing-predecessor-nonexistent-source-zero-digest.json", 18)
+
+    # 22. source path does not resolve at the declared commit -> fail closed
+    def test_22_missing_source(self):
+        self.assert_exit("22-missing-source.json", 19)
+
+    # 23. caller-supplied digest does not match actual bytes -> fail closed
+    def test_23_source_digest_mismatch(self):
+        self.assert_exit("23-source-digest-mismatch.json", 19)
+
+    # 24. declared exact head is not an existing commit object -> fail closed
+    def test_24_source_wrong_exact_head(self):
+        self.assert_exit("24-source-wrong-exact-head.json", 19)
+
+    # 25. reveal precedes the committed freeze -> fail closed
+    def test_25_freeze_reveal_ordering(self):
+        self.assert_exit("25-freeze-reveal-ordering.json", 3)
+
+    # 26. target/window identity drifts between prediction and outcome -> fail closed
+    def test_26_target_window_drift(self):
+        self.assert_exit("26-target-window-drift.json", 4)
+
+    # 27. declared rule version differs from the byte-bound rule -> fail closed
+    def test_27_rule_version_mismatch(self):
+        self.assert_exit("27-rule-version-mismatch.json", 23)
+
+    # Byte-bound positive pilot remains executable through the real CLI.
+    def test_repair_positive_pilot(self):
+        code, report = run_gate(PILOT)
+        self.assertEqual(code, 0, f"repair pilot must PASS; errors={report.get('errors')}")
 
 
 if __name__ == "__main__":

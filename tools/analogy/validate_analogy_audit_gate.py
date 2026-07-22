@@ -56,13 +56,17 @@ Usage:
       [--current-head <sha>] [--now <iso>] [--report <out.json>]
 """
 import argparse
+import hashlib
 import json
 import re
+import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(ROOT))
+from tools.observation.validate_observation_prediction_gate import _verify_git_binding
 SCHEMA_PATH = ROOT / "schemas" / "analogy" / "analogy-audit-contract.schema.json"
 
 GATE_PASS = 0
@@ -86,6 +90,9 @@ CLAIM_CEILING_OVERREACH = 18
 Q38_START_FORBIDDEN = 19
 NEGATIVE_AUDIT_DELETED = 20
 SEMANTIC_CONSISTENCY_MISMATCH = 21
+CONTENT_BINDING_INVALID = 22
+MAPPING_DIGEST_INVALID = 23
+CURRENT_HEAD_INVALID = 24
 
 EXIT_NAMES = {
     0: "GATE_PASS", 2: "SCHEMA_ERROR", 3: "DOMAIN_UNRESOLVABLE",
@@ -97,6 +104,7 @@ EXIT_NAMES = {
     14: "Q14_CLAIM_NOT_COMMITTED", 15: "Q35_AUTHORITY_INVALID",
     16: "Q33_RIGHTS_BYPASS", 17: "UNRESOLVABLE_REF", 18: "CLAIM_CEILING_OVERREACH",
     19: "Q38_START_FORBIDDEN", 20: "NEGATIVE_AUDIT_DELETED", 21: "SEMANTIC_CONSISTENCY_MISMATCH",
+    22: "CONTENT_BINDING_INVALID", 23: "MAPPING_DIGEST_INVALID", 24: "CURRENT_HEAD_INVALID",
 }
 
 SHA256_RE = re.compile(r"^sha256:[0-9a-f]{64}$")
@@ -157,6 +165,133 @@ def _emit(out, report_path):
     print(text)
     if report_path:
         Path(report_path).write_text(text + "\n", encoding="utf-8")
+
+
+def _json_from_binding(binding):
+    content, error = _verify_git_binding(binding)
+    if error:
+        return None, error
+    try:
+        return json.loads(content), None
+    except (TypeError, json.JSONDecodeError):
+        return None, "bound Git bytes are not valid JSON"
+
+
+def check_runtime_current_head(bundle, current_head):
+    errs = []
+    if not current_head or not HEAD_RE.fullmatch(str(current_head)):
+        return ["--current-head must supply an exact 40-hex commit"]
+    kind = subprocess.run(["git", "cat-file", "-t", current_head], cwd=ROOT, capture_output=True, text=True)
+    if kind.returncode or kind.stdout.strip() != "commit":
+        return [f"--current-head {current_head} is not an existing commit object"]
+    actual = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True)
+    if actual.returncode or actual.stdout.strip() != current_head:
+        errs.append(f"--current-head {current_head} does not equal checked-out HEAD {actual.stdout.strip()}")
+    return errs
+
+
+def _mapping_digest(mapping):
+    payload = {key: value for key, value in mapping.items() if key != "mapping_digest"}
+    encoded = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return "sha256:" + hashlib.sha256(encoded).hexdigest()
+
+
+def check_mapping_digests(bundle):
+    return [
+        f"mapping {mapping.get('mapping_id')}: mapping_digest does not match canonical semantic content"
+        for mapping in bundle.get("mappings", [])
+        if mapping.get("mapping_digest") != _mapping_digest(mapping)
+    ]
+
+
+def check_canonical_content_bindings(bundle):
+    errs = []
+    bindings = bundle.get("canonical_bindings") or {}
+    expected_paths = {
+        "q34_claim_source": "data/discovery/claims/q33-seven-governance-components-current.json",
+        "q35_actor_registry": "data/agent/canonical-actor-registry.json",
+        "q35_grant_registry": "data/agent/canonical-grant-registry.json",
+        "q35_action_source": "data/agent/pilot-q34-pr-controlled-op.json",
+        "q36_obs_source": "data/observation/pilot-q34-closure-drift-prediction.json",
+        "q36_int_source": "data/intervention/pilot-controlled-intervention.json",
+    }
+    documents = {}
+    for name, expected_path in expected_paths.items():
+        binding = bindings.get(name)
+        if not isinstance(binding, dict) or binding.get("path") != expected_path:
+            errs.append(f"canonical binding {name}: exact repository path required")
+            continue
+        document, error = _json_from_binding(binding)
+        if error:
+            errs.append(f"canonical binding {name}: {error}")
+        else:
+            documents[name] = document
+    if errs:
+        return errs
+
+    claim_source = documents["q34_claim_source"]
+    actors = _index(documents["q35_actor_registry"].get("actors", []), "actor_id")
+    grant_registry = _index(documents["q35_grant_registry"].get("grants", []), "grant_id")
+    q35_source = documents["q35_action_source"]
+    q35_actions = _index(q35_source.get("actions", []), "action_id")
+    q35_grants = _index(q35_source.get("grants", []), "grant_id")
+    embedded_claims = _index(bundle.get("q34_claims", []), "claim_id")
+    embedded_grants = _index(bundle.get("q35_grants", []), "grant_id")
+
+    for candidate in bundle.get("analogy_candidates", []):
+        cid = candidate.get("analogy_id")
+        claim_id = candidate.get("originating_q34_claim_ref")
+        expected_claim = {
+            "claim_id": claim_source.get("claim_id"),
+            "status": claim_source.get("state"),
+            "claim_ceiling": claim_source.get("claim_ceiling"),
+            "allows_analogy_purpose": True,
+            "source_ref": bindings["q34_claim_source"]["path"],
+        }
+        if claim_id != claim_source.get("claim_id") or claim_source.get("state") != "committed_current" or embedded_claims.get(claim_id) != expected_claim:
+            errs.append(f"candidate {cid}: Q34 seed is not the canonical committed claim bytes")
+
+        proposer = candidate.get("proposer")
+        if not actors.get(proposer) or actors[proposer].get("status") != "active":
+            errs.append(f"candidate {cid}: proposer is not a canonical active Q35 actor")
+        grant_id = candidate.get("q35_authority_ref")
+        entry = grant_registry.get(grant_id)
+        grant_artifact = None
+        if entry:
+            grant_doc, error = _json_from_binding(entry.get("binding"))
+            if not error:
+                grant_artifact = _index(grant_doc.get("grants", []), "grant_id").get(grant_id)
+        action = q35_actions.get("act-q34-pilot")
+        expected_grant = None
+        if grant_artifact:
+            expected_grant = {
+                "grant_id": grant_id,
+                "status": "revoked" if grant_artifact.get("revoked") else grant_artifact.get("status"),
+                "grant_expires_at": grant_artifact.get("expires_at"),
+                "scope": "repository explanation",
+                "grantee": grant_artifact.get("grantee"),
+                "granted_by": grant_artifact.get("grantor"),
+                "action_refs": ["act-q34-pilot"],
+            }
+        if not entry or not grant_artifact or embedded_grants.get(grant_id) != expected_grant or q35_grants.get(grant_id) != grant_artifact or not action or action.get("grant_id") != grant_id:
+            errs.append(f"candidate {cid}: Q35 grant/action is fictional, copied or not canonically byte-bound")
+
+        expected_refs = {bindings["q36_obs_source"]["path"], bindings["q36_int_source"]["path"]}
+        supplied_refs = set(candidate.get("evidence_refs", []))
+        evidence_bindings = candidate.get("evidence_bindings") or []
+        bound_refs = set()
+        for binding in evidence_bindings:
+            _, error = _verify_git_binding(binding)
+            if error:
+                errs.append(f"candidate {cid}: evidence binding invalid: {error}")
+            else:
+                bound_refs.add(binding.get("path"))
+        if not expected_refs.issubset(supplied_refs) or not expected_refs.issubset(bound_refs):
+            errs.append(f"candidate {cid}: Q36-OBS/Q36-INT evidence is not bound to actual repository bytes")
+        for ref in supplied_refs:
+            if ref.startswith("ext:") or ref.startswith("external:"):
+                errs.append(f"candidate {cid}: fictive/unretrieved external evidence ref {ref!r} is forbidden")
+    return errs
 
 
 def validate_schema(bundle):
@@ -229,9 +364,11 @@ def check_unresolvable_ref(bundle, current_head):
                 errs.append(f"{field} {item.get(key)}: dangling analogy_id '{aid}' (no such candidate)")
     # exact_head + digest well-formed and (if given) matching the frozen head
     for c in bundle.get("analogy_candidates", []):
-        if not HEAD_RE.match(str(c.get("exact_head", ""))):
+        if c.get("exact_head") == "CLI_CURRENT_HEAD":
+            pass
+        elif not HEAD_RE.match(str(c.get("exact_head", ""))):
             errs.append(f"candidate {c.get('analogy_id')}: malformed exact_head")
-        if current_head and c.get("exact_head") and c.get("exact_head") != current_head:
+        if current_head and c.get("exact_head") and c.get("exact_head") not in (current_head, "CLI_CURRENT_HEAD"):
             errs.append(f"candidate {c.get('analogy_id')}: exact_head {c.get('exact_head')} "
                         f"!= required {current_head}")
     for m in bundle.get("mappings", []):
@@ -241,13 +378,13 @@ def check_unresolvable_ref(bundle, current_head):
         if not SHA256_RE.match(str(m.get("mapping_digest", ""))):
             errs.append(f"mapping {m.get('mapping_id')}: malformed mapping_digest")
     for o in bundle.get("mechanism_evidence", []):
-        if not HEAD_RE.match(str(o.get("exact_head", ""))):
+        if o.get("exact_head") != "CLI_CURRENT_HEAD" and not HEAD_RE.match(str(o.get("exact_head", ""))):
             errs.append(f"mechanism_evidence {o.get('evidence_id')}: malformed exact_head")
     for t in bundle.get("transportability_assessments", []):
-        if not HEAD_RE.match(str(t.get("exact_head", ""))):
+        if t.get("exact_head") != "CLI_CURRENT_HEAD" and not HEAD_RE.match(str(t.get("exact_head", ""))):
             errs.append(f"transportability {t.get('assessment_id')}: malformed exact_head")
     for d in bundle.get("audit_decisions", []):
-        if not HEAD_RE.match(str(d.get("exact_head", ""))):
+        if d.get("exact_head") != "CLI_CURRENT_HEAD" and not HEAD_RE.match(str(d.get("exact_head", ""))):
             errs.append(f"audit_decision {d.get('decision_id')}: malformed exact_head")
     return errs
 
@@ -618,6 +755,7 @@ def main():
 
     checks = [
         (SCHEMA_ERROR, lambda: validate_schema(bundle)),
+        (CURRENT_HEAD_INVALID, lambda: check_runtime_current_head(bundle, args.current_head)),
         (UNRESOLVABLE_REF, lambda: check_unresolvable_ref(bundle, args.current_head)),
         (DOMAIN_UNRESOLVABLE, lambda: check_domain_resolvable(bundle)),
         (CORRESPONDENCE_REF_INVALID, lambda: check_correspondence_refs(bundle)),
@@ -637,6 +775,8 @@ def main():
         (CLAIM_CEILING_OVERREACH, lambda: check_claim_ceiling_overreach(bundle)),
         (Q38_START_FORBIDDEN, lambda: check_q38_start_forbidden(bundle)),
         (NEGATIVE_AUDIT_DELETED, lambda: check_negative_audit_deleted(bundle)),
+        (MAPPING_DIGEST_INVALID, lambda: check_mapping_digests(bundle)),
+        (CONTENT_BINDING_INVALID, lambda: check_canonical_content_bindings(bundle)),
     ]
 
     for code, fn in checks:

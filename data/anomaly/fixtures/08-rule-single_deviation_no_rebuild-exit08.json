@@ -4,27 +4,27 @@
   "capability_id": "world_feedback_anomaly",
   "parent_binding": {
     "task_id": "SCIENTIFIC-METACOGNITION-I1",
-    "exact_head": "2b18e1f2d11511dc758734338e7c715566d01394"
+    "exact_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3"
   },
   "evidence_registry": [
     {
       "evidence_id": "evidence.1",
       "artifact": "data/metacognition/pilot-scientific-metacognition-i1.json",
-      "exact_head": "2b18e1f2d11511dc758734338e7c715566d01394",
-      "artifact_digest": "sha256:9d6439c6a9e6ce1083b54171484d4dae3ee8f3781bd7733978e85005a19fca97",
+      "exact_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
+      "artifact_digest": "sha256:a6ec0da30eaa114e052670878c2dd2f006cfa53e9edb223ccacd7f97ba99cda4",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {
       "evidence_id": "evidence.2",
       "artifact": "data/failure/pilot-q39-failure-lineage.json",
-      "exact_head": "2b18e1f2d11511dc758734338e7c715566d01394",
-      "artifact_digest": "sha256:4ddfa843101ee355c58585a96ce811df6a0f0aadf2c55a279b59ac74c57d5f90",
+      "exact_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
+      "artifact_digest": "sha256:ca11da2279caac2b99e783b1cdebeb3ca362536986b0f1c8ee78ba2c9f2bd805",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {
       "evidence_id": "evidence.3",
       "artifact": "FOUNDATION.md",
-      "exact_head": "2b18e1f2d11511dc758734338e7c715566d01394",
+      "exact_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
       "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
       "rights_status": "REPOSITORY_INTERNAL"
     }

@@ -10,21 +10,21 @@
     {
       "evidence_id": "evidence.1",
       "artifact": "data/multihistory/pilot-d2-i1.json",
-      "exact_head": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
-      "artifact_digest": "sha256:8f4b076d55ef0d657310d7b87a08b651e092c3420e384db94168d753b13644d5",
+      "exact_head": "1904628103d8c23133107d501a22e3f17d08221d",
+      "artifact_digest": "sha256:2acfb4c795ebc3e728c7ac543635564099ffaa39710850f3e980fa21b7582fe4",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {
       "evidence_id": "evidence.2",
       "artifact": "data/latent/pilot-f15-d1-i1.json",
-      "exact_head": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
-      "artifact_digest": "sha256:379960556f1b0d8c6fa4c830c052a31e09ff0c803d1ddd878895d2623fd3df3d",
+      "exact_head": "1904628103d8c23133107d501a22e3f17d08221d",
+      "artifact_digest": "sha256:ea201b3f07d64afc1fa812dde8121910eb961be8f1338771a80293bacb5995e5",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {
       "evidence_id": "evidence.3",
       "artifact": "FOUNDATION.md",
-      "exact_head": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
+      "exact_head": "1904628103d8c23133107d501a22e3f17d08221d",
       "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
       "rights_status": "REPOSITORY_INTERNAL"
     }

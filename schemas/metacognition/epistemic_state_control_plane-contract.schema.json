@@ -369,6 +369,36 @@
             "REPOSITORY_INTERNAL",
             "PUBLIC_METADATA_ONLY"
           ]
+        },
+        "repository_relative_path": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Repository-relative path of the artifact as pinned to commit_sha. Read-only Git object reference; never the mutable working tree."
+        },
+        "commit_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$",
+          "description": "Exact 40-hex commit SHA at which the artifact bytes are pinned. Fail-closed: must resolve to a real Git object."
+        },
+        "blob_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$",
+          "description": "git rev-parse {commit_sha}:{repository_relative_path}. Fail-closed: must equal the real blob SHA."
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "description": "sha256 of raw bytes of git show {commit_sha}:{repository_relative_path} (no strip/normalize). Fail-closed: must equal the real object hash."
+        },
+        "record_type": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Typed classification of the evidence record (e.g. PREDECESSOR_PILOT, RETRIEVED_BYTE, FAILURE_LINEAGE)."
+        },
+        "declared_role": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Declared role of this evidence within the capability bundle."
         }
       }
     }

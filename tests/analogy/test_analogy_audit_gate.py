@@ -21,7 +21,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
 VALIDATOR = ROOT / "tools" / "analogy" / "validate_analogy_audit_gate.py"
 FX_DIR = ROOT / "data" / "analogy" / "fixtures"
-CURRENT_HEAD = "e302459e721149cc5a42a4ae506b473a1cd92693"
+CURRENT_HEAD = subprocess.check_output(
+    ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
+).strip()
 
 # fixture number -> expected validator exit code
 EXPECTED = {
@@ -55,6 +57,10 @@ EXPECTED = {
     28: 19, # Q38 case retrieval started before audit passes             -> Q38_START_FORBIDDEN
     29: 20, # counteranalogy candidate with no preserved audit decision  -> NEGATIVE_AUDIT_DELETED
     30: 21, # audit classification inconsistent (not allowed downgrade)  -> SEMANTIC_CONSISTENCY_MISMATCH
+    32: 22, # fictional canonical source path                              -> CONTENT_BINDING_INVALID
+    33: 23, # declared mapping digest does not bind canonical JSON         -> MAPPING_DIGEST_INVALID
+    34: 22, # caller-invented authority grant                              -> CONTENT_BINDING_INVALID
+    35: 22, # caller self-promotes candidate claim                         -> CONTENT_BINDING_INVALID
 }
 
 EXIT_NAMES = {
@@ -67,6 +73,7 @@ EXIT_NAMES = {
     14: "Q14_CLAIM_NOT_COMMITTED", 15: "Q35_AUTHORITY_INVALID",
     16: "Q33_RIGHTS_BYPASS", 17: "UNRESOLVABLE_REF", 18: "CLAIM_CEILING_OVERREACH",
     19: "Q38_START_FORBIDDEN", 20: "NEGATIVE_AUDIT_DELETED", 21: "SEMANTIC_CONSISTENCY_MISMATCH",
+    22: "CONTENT_BINDING_INVALID", 23: "MAPPING_DIGEST_INVALID", 24: "CURRENT_HEAD_INVALID",
 }
 
 
@@ -161,3 +168,29 @@ def test_negative_audit_deleted_fails():
 
 def test_semantic_consistency_mismatch_fails():
     assert _run(_fixtures()[29][1]).returncode == 21
+
+
+def test_positive_pilot_is_bound_to_current_checkout():
+    assert _run(ROOT / "data" / "analogy" / "pilot-real-repo-analogy-audit.json").returncode == 0
+
+
+def test_wrong_cli_head_is_rejected_even_when_object_exists():
+    cmd = [sys.executable, str(VALIDATOR), "--bundle", str(_fixtures()[0][1]),
+           "--current-head", "e4ca5350a3c68e61031e3205eaca9f2665799a08"]
+    assert subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True).returncode == 24
+
+
+def test_fictional_source_binding_fails():
+    assert _run(next(FX_DIR.glob("32-*.json"))).returncode == 22
+
+
+def test_mapping_digest_mismatch_fails():
+    assert _run(next(FX_DIR.glob("33-*.json"))).returncode == 23
+
+
+def test_fictional_grant_fails():
+    assert _run(next(FX_DIR.glob("34-*.json"))).returncode == 22
+
+
+def test_self_promoted_candidate_claim_fails():
+    assert _run(next(FX_DIR.glob("35-*.json"))).returncode == 22
