@@ -1,0 +1,29 @@
+{
+  "task_id": "Q43-R2",
+  "task_slug": "q43",
+  "capability": "q43",
+  "repair_round": "r2",
+  "branch": "repair-r2/q43-r2-escalation-semantics",
+  "tag": "archive/q43-repair-r2-frozen-head",
+  "parent_task": "repair-r2/q42-r2-counterfactual-semantics",
+  "parent_head": "3283ef6e76788b30a467467083f0d5ad7086b5a0",
+  "base_head": "5efbce81e96d90d5ebd246891e4762928365d6b8",
+  "root_blockers_closed": [
+    "RB09-DIRECT-PREDECESSOR-BINDING"
+  ],
+  "inherited_root_blockers": [
+    "RB09-ENGINE-PATH-CONTAINMENT",
+    "RB09-MANDATORY-GIT-OBJECT-BINDING",
+    "RB09-EXACT-HEAD-NONRESOLUTION",
+    "RB09-CALLER-ASSERTED-SEMANTICS"
+  ],
+  "closure_complete": true,
+  "residue": 0,
+  "iteration_sync": "PASS",
+  "validation": "BUILDER_VALIDATION_PASS",
+  "tests": {
+    "contract": "tests/escalation/test_q43_repair_r2.py",
+    "result": "BUILDER_VALIDATION_PASS"
+  },
+  "notes": "Inherits fail-closed shared engine via --no-ff merge of repair-r2/q42-r2-counterfactual-semantics. Binds direct predecessor to the real repair-r2 head 3283ef6e76788b30a467467083f0d5ad7086b5a0, and upgrades pilot evidence to the fail-closed schema (record_type/declared_role), closing RB09-DIRECT-PREDECESSOR-BINDING."
+}
