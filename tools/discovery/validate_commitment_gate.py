@@ -531,6 +531,14 @@ def check_evidence_byte_bindings(claim, claim_path, actor_index):
         content, blob, error = _read_git_blob(ev.get("exact_commit"), path)
         if error:
             return INVALID_EVIDENCE_BINDING, [f"evidence {ref_id}: {error}"]
+        try:
+            bound_json = json.loads(content)
+        except (TypeError, json.JSONDecodeError):
+            bound_json = None
+        if isinstance(bound_json, dict) and bound_json.get("claim_id") == claim.get("claim_id"):
+            return SELF_REFERENCE, [
+                f"evidence {ref_id} resolves to the same claim id and is circular"
+            ]
         if ev.get("git_blob") != blob:
             return INVALID_EVIDENCE_BINDING, [
                 f"evidence {ref_id} git_blob {ev.get('git_blob')} != actual {blob}"
