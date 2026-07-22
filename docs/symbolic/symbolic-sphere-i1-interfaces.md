@@ -1,17 +1,17 @@
-# SYMBOLIC-SPHERE-I1 Interfaces
+# SYMBOLIC-SPHERE-I1 Interfaces — repair-r1
 
 ## Input boundary
 
-The capability reads its declared parent and earlier frozen repository artifacts as evidence only. Every source binds a repository path, SHA-256 digest and the direct-parent exact head; source availability does not imply authority to act.
+Input is a `1.1.0` symbolic bundle with an exact Q39 repair-r1 parent binding, explicit repository reference records, two task record types and a bounded conclusion. A repository reference is admissible only when its path is canonical repository-relative syntax, its commit exists locally, the path is a non-symlink blob in that commit, its declared blob and SHA-256 match actual Git bytes, and its declared role matches the selected object's actual type.
 
-## Contract path
+## Semantic boundary
 
-`evidence_registry -> bounded records -> task-specific facts -> evidence-backed rule assertions -> candidate conclusion -> downstream interface`
+`reference_records -> material symbolic object -> explicit actor positions -> corresponding meaning projections -> allowed power modalities -> distinct front/suppressed faces -> benefit/cost distribution -> independently evidenced counter-readings -> material-evidence constraint -> bounded conclusion`
 
-Records cover `COMMUNITY_FOOTBALL_FIELD` and `SCHOOL_DATA_POLICY`. All task-specific fields are required and each field carries evidence references. The validator rejects missing coverage, false rules, unsupported references, parent-head drift, digest drift, ceiling inflation and external-action claims.
+The validator derives these relations from structured records. There are no `facts` or `rule_assertions` booleans that a caller can set to bypass validation.
 
 ## Output boundary
 
-New conclusion: The same object can be represented as separate material fact, actor position, meaning projection and institutionalized power surfaces, with evidence-constrained counter-readings and visible benefit/cost distribution.
+`GATE_PASS` means repository-local reference integrity and the bounded symbolic semantics passed. It is not truth, legitimacy, external fact verification or causal proof. If material evidence is missing, the validator returns `MISSING_MATERIAL_EVIDENCE` even when the bundle correctly downgrades its conclusion.
 
-Next interface: `DECISION-INTEGRITY-I1`. The output is a candidate repository artifact, not acceptance, Current status or permission for external action.
+`DECISION-INTEGRITY-I1` is not started or modified by this repair.

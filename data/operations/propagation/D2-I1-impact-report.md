@@ -1,7 +1,7 @@
 # D2-I1 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `e54843f2dd8b5dd3fe962edb26889c5d0b237f743a58a726c88d028c96b57e69`
+- Closure hash: `060fd2a6642edd03152808a42b9f05f23114577ae7d924fbea43389681d631d1`
 - Fixpoint iterations: `2`
 - Seeds: `current_state, historical_reports, incremental_execution, iteration_manifest_contract, multi_history_world_projection_contract, multi_history_world_projection_gate_validator, multi_history_world_projection_pilot, pages_pipeline, project_component_registry, propagation_calculator, system_map_layout, system_map_projection`
 - Resolved components: `15`

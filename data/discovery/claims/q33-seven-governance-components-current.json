@@ -5,13 +5,83 @@
   "scope": "repository_main_only",
   "state": "committed_current",
   "discovered_by": {"actor": "q34-builder", "actor_kind": "agent"},
+  "claim_roles": {
+    "claim_author": "q34-claim-author",
+    "builder": "q34-builder"
+  },
+  "claim_digest": "sha256:8414a6231fdc811a15885a8f9b7df4dc16626fad7916388f3396ba3fd992bf42",
   "evidence": [
-    {"ref_id": "ev_manifest", "kind": "deterministic_test", "reference": "data/operations/iterations/121Q33.json", "independence": "independent", "produced_by": "validate_iteration_sync", "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990"},
-    {"ref_id": "ev_seal", "kind": "generated_output", "reference": "reports/operations/121Q33-completion-seal.json", "independence": "independent", "produced_by": "validate_iteration_sync", "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990"},
-    {"ref_id": "ev_merge", "kind": "ci_run", "reference": "github:Arvin-liu/when-systems-catch-fire:merge:81edff4039619b8343a82cb1b84785c8a9f6a990", "independence": "independent", "produced_by": "github_merge", "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990"},
-    {"ref_id": "ev_components", "kind": "deterministic_test", "reference": "data/operations/project-components.json", "independence": "independent", "produced_by": "validate_iteration_sync", "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990"}
+    {
+      "ref_id": "ev_manifest",
+      "kind": "deterministic_test",
+      "reference": "data/operations/iterations/121Q33.json",
+      "independence": "same_author",
+      "produced_by": "q33-closeout-process",
+      "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "path": "data/operations/iterations/121Q33.json",
+      "exact_commit": "f71921dff5b677f49d57ec9a0d89a69ffb1c79f8",
+      "git_blob": "1cb840bc7e2a333d7b59adb566fe0a577e077c85",
+      "sha256": "sha256:80c01d50d9379278bf688898c04f6298ed7bd89423a578bb917dd9fb0096b741",
+      "supports_claim_digest": "sha256:8414a6231fdc811a15885a8f9b7df4dc16626fad7916388f3396ba3fd992bf42",
+      "scope": "repository_main_only"
+    },
+    {
+      "ref_id": "ev_seal",
+      "kind": "generated_output",
+      "reference": "reports/operations/121Q33-completion-seal.json",
+      "independence": "same_author",
+      "produced_by": "q33-closeout-process",
+      "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "path": "reports/operations/121Q33-completion-seal.json",
+      "exact_commit": "f71921dff5b677f49d57ec9a0d89a69ffb1c79f8",
+      "git_blob": "4be2d0eddc1fe4940f9b8e27c1995845ae589477",
+      "sha256": "sha256:fc07800159e44394265961983fb67bd279ae47fe553d1ed30473c41d6073a6e9",
+      "supports_claim_digest": "sha256:8414a6231fdc811a15885a8f9b7df4dc16626fad7916388f3396ba3fd992bf42",
+      "scope": "repository_main_only"
+    },
+    {
+      "ref_id": "ev_components",
+      "kind": "deterministic_test",
+      "reference": "data/operations/project-components.json",
+      "independence": "same_author",
+      "produced_by": "q33-closeout-process",
+      "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "path": "data/operations/project-components.json",
+      "exact_commit": "f71921dff5b677f49d57ec9a0d89a69ffb1c79f8",
+      "git_blob": "6d40705ddc14566b198e73ae4c50d7862343e30a",
+      "sha256": "sha256:44ac699cd897f99c6e0f257b4d0dca306b30b385b640d19bc8176a63f1fae694",
+      "supports_claim_digest": "sha256:8414a6231fdc811a15885a8f9b7df4dc16626fad7916388f3396ba3fd992bf42",
+      "scope": "repository_main_only"
+    },
+    {
+      "ref_id": "ev_independent_review",
+      "kind": "independent_review",
+      "reference": "data/discovery/review-decisions/q33-current-main-independent-decision.json",
+      "independence": "independent",
+      "produced_by": "q33-i3-independent-reviewer",
+      "exact_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "path": "data/discovery/review-decisions/q33-current-main-independent-decision.json",
+      "exact_commit": "f71921dff5b677f49d57ec9a0d89a69ffb1c79f8",
+      "git_blob": "f0a8541cac4741d95b1bc4351878e80c7955baf2",
+      "sha256": "sha256:ddde8e47f28a84a87d91b317ed4633af7181b344656dcc56a38b5167019b91f2",
+      "supports_claim_digest": "sha256:8414a6231fdc811a15885a8f9b7df4dc16626fad7916388f3396ba3fd992bf42",
+      "scope": "repository_main_only"
+    }
   ],
-  "verifier": {"actor": "q34-independent-reviewer", "actor_kind": "agent"},
+  "verifier": {"actor": "q33-i3-independent-reviewer", "actor_kind": "process"},
+  "review_decision": {
+    "evidence_ref_id": "ev_independent_review",
+    "reviewer_id": "q33-i3-independent-reviewer",
+    "decision": "PASS_WITH_NONBLOCKING_FINDINGS_MERGE_AUTHORIZED",
+    "reviewed_claim_digest": "sha256:8414a6231fdc811a15885a8f9b7df4dc16626fad7916388f3396ba3fd992bf42",
+    "scope": "repository_main_only",
+    "claim_ceiling": "repository governance state only: the 7 components are Current in Main per manifest/seal/merge evidence; this does not assert real-world legal compliance or exhaustive global copyright coverage.",
+    "subject_head": "81edff4039619b8343a82cb1b84785c8a9f6a990"
+  },
   "claim_ceiling": "repository governance state only: the 7 components are Current in Main per manifest/seal/merge evidence; this does not assert real-world legal compliance or exhaustive global copyright coverage.",
   "search_process": {
     "summary": "Read project-components.json, 121Q33 manifest and seal at Main 81edff40; confirmed 7 copyright_governance_* components have lifecycle.status=current and component_type=governance_constraint.",
@@ -23,8 +93,8 @@
   "history": [
     {"from_state": "discovered", "to_state": "discovered", "actor": "q34-builder", "decision": "DISCOVER", "rationale": "observed 7 copyright components marked current in Main", "at": "2026-07-21T05:40:00Z"},
     {"from_state": "discovered", "to_state": "evidence_bound_candidate", "actor": "q34-builder", "decision": "BIND_EVIDENCE", "rationale": "bound manifest/seal/merge/components evidence at 81edff40", "at": "2026-07-21T05:40:01Z"},
-    {"from_state": "evidence_bound_candidate", "to_state": "validated_within_scope", "actor": "q34-independent-reviewer", "decision": "VALIDATE", "rationale": "deterministic validators confirm manifest/seal CURRENT_CLOSED and components current", "at": "2026-07-21T05:40:02Z"},
-    {"from_state": "validated_within_scope", "to_state": "commitment_candidate", "actor": "q34-independent-reviewer", "decision": "REQUIRE_INDEPENDENT_REVIEW", "rationale": "scope limited to repository governance state", "at": "2026-07-21T05:40:03Z"},
-    {"from_state": "commitment_candidate", "to_state": "committed_current", "actor": "q34-independent-reviewer", "decision": "COMMIT", "rationale": "independent deterministic evidence; ceiling repository-scoped; not self-certified", "at": "2026-07-21T05:40:04Z"}
+    {"from_state": "evidence_bound_candidate", "to_state": "validated_within_scope", "actor": "q33-i3-independent-reviewer", "decision": "VALIDATE", "rationale": "deterministic validators confirm manifest/seal CURRENT_CLOSED and components current", "at": "2026-07-21T05:40:02Z"},
+    {"from_state": "validated_within_scope", "to_state": "commitment_candidate", "actor": "q33-i3-independent-reviewer", "decision": "REQUIRE_INDEPENDENT_REVIEW", "rationale": "scope limited to repository governance state", "at": "2026-07-21T05:40:03Z"},
+    {"from_state": "commitment_candidate", "to_state": "committed_current", "actor": "q33-i3-independent-reviewer", "decision": "COMMIT", "rationale": "external review and final Main closeout objects are byte-bound; ceiling remains repository-scoped", "at": "2026-07-21T05:40:04Z"}
   ]
 }

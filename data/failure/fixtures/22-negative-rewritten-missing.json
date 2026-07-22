@@ -8,22 +8,40 @@
       "source_id": "src.q36",
       "task_id": "121Q36-INT-I1",
       "artifact": "data/intervention/pilot-controlled-intervention.json",
-      "exact_head": "02a87221b86cf39217f8c6b3c63e0737a0e2de98",
-      "artifact_digest": "sha256:3c32b2bbbe859d7b5aa87e19a1aaab43f7db47d2f66e0343b0a7ab5d5a0a3fb0"
+      "exact_head": "e4ca5350a3c68e61031e3205eaca9f2665799a08",
+      "artifact_digest": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d",
+      "binding": {
+        "path": "data/intervention/pilot-controlled-intervention.json",
+        "exact_commit": "e4ca5350a3c68e61031e3205eaca9f2665799a08",
+        "git_blob": "222e4530d82f6334167f5fa5961a27aa5ac76480",
+        "sha256": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d"
+      }
     },
     {
       "source_id": "src.q37",
       "task_id": "121Q37-I1",
       "artifact": "data/analogy/pilot-real-repo-analogy-audit.json",
-      "exact_head": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
-      "artifact_digest": "sha256:9d1a76aa54a7f0c2c108657f7cfa964c2e1dad9887153a95b1bfd46b3e9edc27"
+      "exact_head": "7a01b1958c3f6b6eff559be85ec5e47eecff313c",
+      "artifact_digest": "sha256:0d20ad95947d5e91b39bc3af7cdd0af0d6b6ada6cf768e78c54901ac3abd038a",
+      "binding": {
+        "path": "data/analogy/pilot-real-repo-analogy-audit.json",
+        "exact_commit": "7a01b1958c3f6b6eff559be85ec5e47eecff313c",
+        "git_blob": "a26c517d479e096bdccdae18494b9d72eb4455fa",
+        "sha256": "sha256:0d20ad95947d5e91b39bc3af7cdd0af0d6b6ada6cf768e78c54901ac3abd038a"
+      }
     },
     {
       "source_id": "src.q38",
       "task_id": "121Q38-I1",
       "artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
-      "exact_head": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
-      "artifact_digest": "sha256:22ef7f43ecfe9e07e076ae03731021684e5a52bb105d7c29a454f3993bdcc448"
+      "exact_head": "d5cf0f0846206d3c47463f66697d2d8bf7d4aca3",
+      "artifact_digest": "sha256:ea1cbf363efb5afa534340b09ab706386aea10c7e81a9658a08f306a86bd4778",
+      "binding": {
+        "path": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+        "exact_commit": "d5cf0f0846206d3c47463f66697d2d8bf7d4aca3",
+        "git_blob": "2a0e7841a8093c2c1df208c7e2c358ac67738bfc",
+        "sha256": "sha256:ea1cbf363efb5afa534340b09ab706386aea10c7e81a9658a08f306a86bd4778"
+      }
     }
   ],
   "events": [
@@ -35,7 +53,7 @@
       "source_binding_id": "src.q36",
       "originating_task": "121Q36-INT-I1",
       "originating_artifact": "data/intervention/pilot-controlled-intervention.json",
-      "originating_exact_head": "02a87221b86cf39217f8c6b3c63e0737a0e2de98",
+      "originating_exact_head": "e4ca5350a3c68e61031e3205eaca9f2665799a08",
       "observed_symptom": "controlled rollback retained residual",
       "causal_status": "NOT_ESTABLISHED",
       "causal_claim": "cause not established; preserve competing explanations",
@@ -66,7 +84,7 @@
       "environment_origin": false,
       "overwrites_event": false,
       "previous_event_digest": "GENESIS",
-      "event_digest": "sha256:c9864ee2bcc7f0e472b1e83c55143b84813f780cda5aa42a37ce77be91fe63f0"
+      "event_digest": "sha256:d25b5dddcff6bf32677e981c86e9a5b3bf3cd5c430cbb8b7480f55ce8a87b783"
     },
     {
       "event_id": "fail.q37.mismatch",
@@ -76,7 +94,7 @@
       "source_binding_id": "src.q37",
       "originating_task": "121Q37-I1",
       "originating_artifact": "data/analogy/pilot-real-repo-analogy-audit.json",
-      "originating_exact_head": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
+      "originating_exact_head": "7a01b1958c3f6b6eff559be85ec5e47eecff313c",
       "observed_symptom": "analogy mismatch blocks mechanism upgrade",
       "causal_status": "NOT_ESTABLISHED",
       "causal_claim": "cause not established; preserve competing explanations",
@@ -104,8 +122,8 @@
       "claim_ceiling_impact": "HOLD",
       "environment_origin": false,
       "overwrites_event": false,
-      "previous_event_digest": "sha256:c9864ee2bcc7f0e472b1e83c55143b84813f780cda5aa42a37ce77be91fe63f0",
-      "event_digest": "sha256:615f192c1358ab737b50d25955426f3aba86a124e7ff8ac32a9cef4e440dece9"
+      "previous_event_digest": "sha256:d25b5dddcff6bf32677e981c86e9a5b3bf3cd5c430cbb8b7480f55ce8a87b783",
+      "event_digest": "sha256:ec3c81a461b0f14462b1be0e55f7f1cfbdaa4f1cc7319fa734f4814da9185d4c"
     },
     {
       "event_id": "fail.q38.counterexample",
@@ -115,7 +133,7 @@
       "source_binding_id": "src.q38",
       "originating_task": "121Q38-I1",
       "originating_artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
-      "originating_exact_head": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+      "originating_exact_head": "d5cf0f0846206d3c47463f66697d2d8bf7d4aca3",
       "observed_symptom": "counterexample limits transportability",
       "causal_status": "NOT_ESTABLISHED",
       "causal_claim": "cause not established; preserve competing explanations",
@@ -145,8 +163,8 @@
       "claim_ceiling_impact": "HOLD",
       "environment_origin": false,
       "overwrites_event": false,
-      "previous_event_digest": "sha256:615f192c1358ab737b50d25955426f3aba86a124e7ff8ac32a9cef4e440dece9",
-      "event_digest": "sha256:7a2a8b7b8250e1760a966655dc1825e143f644d9d6e3ea42cc478774e45886bf"
+      "previous_event_digest": "sha256:ec3c81a461b0f14462b1be0e55f7f1cfbdaa4f1cc7319fa734f4814da9185d4c",
+      "event_digest": "sha256:b94c1739624c97211511364117ea894c8147c7e5f7d7d801520e07dcaba63501"
     },
     {
       "event_id": "fail.q38.negative",
@@ -156,7 +174,7 @@
       "source_binding_id": "src.q38",
       "originating_task": "121Q38-I1",
       "originating_artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
-      "originating_exact_head": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+      "originating_exact_head": "d5cf0f0846206d3c47463f66697d2d8bf7d4aca3",
       "observed_symptom": "negative result retracts broad candidate",
       "causal_status": "NOT_ESTABLISHED",
       "causal_claim": "cause not established; preserve competing explanations",
@@ -186,8 +204,8 @@
       "claim_ceiling_impact": "HOLD",
       "environment_origin": false,
       "overwrites_event": false,
-      "previous_event_digest": "sha256:7a2a8b7b8250e1760a966655dc1825e143f644d9d6e3ea42cc478774e45886bf",
-      "event_digest": "sha256:b3755da57f3333453afe0d098320dd152a500d0476ddc8400c1d446987be5e92"
+      "previous_event_digest": "sha256:b94c1739624c97211511364117ea894c8147c7e5f7d7d801520e07dcaba63501",
+      "event_digest": "sha256:53235dd3becbfef108e1250e4b764e37f01795976b2f24d25ecb0ef40576c52d"
     },
     {
       "event_id": "fail.q38.environment",
@@ -197,7 +215,7 @@
       "source_binding_id": "src.q38",
       "originating_task": "121Q38-I1",
       "originating_artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
-      "originating_exact_head": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+      "originating_exact_head": "d5cf0f0846206d3c47463f66697d2d8bf7d4aca3",
       "observed_symptom": "external retrieval deliberately unperformed",
       "causal_status": "NOT_ESTABLISHED",
       "causal_claim": "cause not established; preserve competing explanations",
@@ -227,8 +245,8 @@
       "claim_ceiling_impact": "HOLD",
       "environment_origin": true,
       "overwrites_event": false,
-      "previous_event_digest": "sha256:b3755da57f3333453afe0d098320dd152a500d0476ddc8400c1d446987be5e92",
-      "event_digest": "sha256:b7ae577c57524bfdf0781a4f786544da2aebe68e6e30daead7beabe7415731ea"
+      "previous_event_digest": "sha256:53235dd3becbfef108e1250e4b764e37f01795976b2f24d25ecb0ef40576c52d",
+      "event_digest": "sha256:eca49e81ad3d1ddb8c0e7e3153b5851f8aa039f70a05b8029700a021e208d655"
     },
     {
       "event_id": "repair.q39.plan",
@@ -238,7 +256,7 @@
       "source_binding_id": "src.q38",
       "originating_task": "121Q38-I1",
       "originating_artifact": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
-      "originating_exact_head": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+      "originating_exact_head": "d5cf0f0846206d3c47463f66697d2d8bf7d4aca3",
       "observed_symptom": "repair appends bounded downstream plan effects",
       "causal_status": "NOT_ESTABLISHED",
       "causal_claim": "cause not established; preserve competing explanations",
@@ -268,8 +286,8 @@
       "claim_ceiling_impact": "HOLD",
       "environment_origin": false,
       "overwrites_event": false,
-      "previous_event_digest": "sha256:b7ae577c57524bfdf0781a4f786544da2aebe68e6e30daead7beabe7415731ea",
-      "event_digest": "sha256:ce2c45d89b12bf5726d43821b0ae9c793b9cc48da34113a065d57dd68b7c0a98"
+      "previous_event_digest": "sha256:eca49e81ad3d1ddb8c0e7e3153b5851f8aa039f70a05b8029700a021e208d655",
+      "event_digest": "sha256:d2e72c46e641b4791f367aabc4d71b9d306604453ca931f76191f44cf3aa7889"
     }
   ],
   "recurrence_signatures": [
@@ -324,8 +342,32 @@
       "target_artifact": "data/intervention/pilot-controlled-intervention.json",
       "plan_effect": "INTERVENE",
       "authorized": true,
-      "applied": true,
-      "verification_digest": "sha256:1352199ee8d5a7b102b576b3e01b027a7464bfe64ba8b0229b7046a58e0693b5"
+      "applied": false,
+      "verification_digest": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d",
+      "authorization_status": "VERIFIED_REPOSITORY_GRANT",
+      "authorization_binding": {
+        "path": "data/agent/pilot-q34-pr-controlled-op.json",
+        "exact_commit": "167f254e637259d57b7ce09623de982dda527f54",
+        "git_blob": "734f711db4dd9a7f788315067f1d3e6bbac236e0",
+        "sha256": "sha256:5f6d084255ba89f87f10339a33c5a960a2ecfdf4a3d04d55a7cc0d88796a21e6"
+      },
+      "authority_actor_id": "q35-builder",
+      "authority_grant_id": "grant-q34-pilot",
+      "authority_action_id": "act-q34-pilot",
+      "application_status": "REQUEST_ONLY",
+      "target_binding": {
+        "path": "data/intervention/pilot-controlled-intervention.json",
+        "exact_commit": "e4ca5350a3c68e61031e3205eaca9f2665799a08",
+        "git_blob": "222e4530d82f6334167f5fa5961a27aa5ac76480",
+        "sha256": "sha256:12de83b566ca379fcf857e475e8c6f8e8c3ece39039fb219f85205a5223e504d"
+      },
+      "effect_id": "effect.target.intervention",
+      "effect_binding": {
+        "path": "data/failure/q39-repair-effect-records.json",
+        "exact_commit": "cdfb20ae8219432275dc5cc356c5516a1190414c",
+        "git_blob": "19620178f7fa4e6e9b23f6d8c6f0a26194ed87ed",
+        "sha256": "sha256:328837251c24037c3792980dc20341838a1e3183e7ff2d249af3e79f688ec0cb"
+      }
     },
     {
       "target_id": "target.analogy",
@@ -336,7 +378,31 @@
       "plan_effect": "ANALOGY_AUDIT",
       "authorized": true,
       "applied": true,
-      "verification_digest": "sha256:7c6cd2d640478c61819a53e4e0c59bce35a795119d6e4464774ea72afd64f6c1"
+      "verification_digest": "sha256:0d20ad95947d5e91b39bc3af7cdd0af0d6b6ada6cf768e78c54901ac3abd038a",
+      "authorization_status": "VERIFIED_REPOSITORY_GRANT",
+      "authorization_binding": {
+        "path": "data/agent/pilot-q34-pr-controlled-op.json",
+        "exact_commit": "167f254e637259d57b7ce09623de982dda527f54",
+        "git_blob": "734f711db4dd9a7f788315067f1d3e6bbac236e0",
+        "sha256": "sha256:5f6d084255ba89f87f10339a33c5a960a2ecfdf4a3d04d55a7cc0d88796a21e6"
+      },
+      "authority_actor_id": "q35-builder",
+      "authority_grant_id": "grant-q34-pilot",
+      "authority_action_id": "act-q34-pilot",
+      "application_status": "APPLIED_REPOSITORY_RECORD",
+      "target_binding": {
+        "path": "data/analogy/pilot-real-repo-analogy-audit.json",
+        "exact_commit": "7a01b1958c3f6b6eff559be85ec5e47eecff313c",
+        "git_blob": "a26c517d479e096bdccdae18494b9d72eb4455fa",
+        "sha256": "sha256:0d20ad95947d5e91b39bc3af7cdd0af0d6b6ada6cf768e78c54901ac3abd038a"
+      },
+      "effect_id": "effect.target.analogy",
+      "effect_binding": {
+        "path": "data/failure/q39-repair-effect-records.json",
+        "exact_commit": "cdfb20ae8219432275dc5cc356c5516a1190414c",
+        "git_blob": "19620178f7fa4e6e9b23f6d8c6f0a26194ed87ed",
+        "sha256": "sha256:328837251c24037c3792980dc20341838a1e3183e7ff2d249af3e79f688ec0cb"
+      }
     },
     {
       "target_id": "target.search",
@@ -348,7 +414,31 @@
       "plan_effect": "SEARCH",
       "authorized": true,
       "applied": true,
-      "verification_digest": "sha256:d8bfb7bcc6631b406871878815caff07bee4ddca721418b32ce123587a7514b7"
+      "verification_digest": "sha256:ea1cbf363efb5afa534340b09ab706386aea10c7e81a9658a08f306a86bd4778",
+      "authorization_status": "VERIFIED_REPOSITORY_GRANT",
+      "authorization_binding": {
+        "path": "data/agent/pilot-q34-pr-controlled-op.json",
+        "exact_commit": "167f254e637259d57b7ce09623de982dda527f54",
+        "git_blob": "734f711db4dd9a7f788315067f1d3e6bbac236e0",
+        "sha256": "sha256:5f6d084255ba89f87f10339a33c5a960a2ecfdf4a3d04d55a7cc0d88796a21e6"
+      },
+      "authority_actor_id": "q35-builder",
+      "authority_grant_id": "grant-q34-pilot",
+      "authority_action_id": "act-q34-pilot",
+      "application_status": "APPLIED_REPOSITORY_RECORD",
+      "target_binding": {
+        "path": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+        "exact_commit": "d5cf0f0846206d3c47463f66697d2d8bf7d4aca3",
+        "git_blob": "2a0e7841a8093c2c1df208c7e2c358ac67738bfc",
+        "sha256": "sha256:ea1cbf363efb5afa534340b09ab706386aea10c7e81a9658a08f306a86bd4778"
+      },
+      "effect_id": "effect.target.search",
+      "effect_binding": {
+        "path": "data/failure/q39-repair-effect-records.json",
+        "exact_commit": "cdfb20ae8219432275dc5cc356c5516a1190414c",
+        "git_blob": "19620178f7fa4e6e9b23f6d8c6f0a26194ed87ed",
+        "sha256": "sha256:328837251c24037c3792980dc20341838a1e3183e7ff2d249af3e79f688ec0cb"
+      }
     },
     {
       "target_id": "target.ceiling",
@@ -359,7 +449,31 @@
       "plan_effect": "CLAIM_CEILING_CHANGE",
       "authorized": true,
       "applied": true,
-      "verification_digest": "sha256:40271077248a59dfb684d8572974a49694e7f6ffa0b6d193925edc481a1b8462"
+      "verification_digest": "sha256:6fb979b4d2f209d8ecc16cab98cbd5b825d31a2475e13aadc5a46597b8e9ace1",
+      "authorization_status": "VERIFIED_REPOSITORY_GRANT",
+      "authorization_binding": {
+        "path": "data/agent/pilot-q34-pr-controlled-op.json",
+        "exact_commit": "167f254e637259d57b7ce09623de982dda527f54",
+        "git_blob": "734f711db4dd9a7f788315067f1d3e6bbac236e0",
+        "sha256": "sha256:5f6d084255ba89f87f10339a33c5a960a2ecfdf4a3d04d55a7cc0d88796a21e6"
+      },
+      "authority_actor_id": "q35-builder",
+      "authority_grant_id": "grant-q34-pilot",
+      "authority_action_id": "act-q34-pilot",
+      "application_status": "APPLIED_REPOSITORY_RECORD",
+      "target_binding": {
+        "path": "docs/failure/q39-interfaces.md",
+        "exact_commit": "824ff7f713303b18bca94b05de3f4b6530ffff51",
+        "git_blob": "c08378997df2ddfee8cb560d37881fb2d639577d",
+        "sha256": "sha256:6fb979b4d2f209d8ecc16cab98cbd5b825d31a2475e13aadc5a46597b8e9ace1"
+      },
+      "effect_id": "effect.target.ceiling",
+      "effect_binding": {
+        "path": "data/failure/q39-repair-effect-records.json",
+        "exact_commit": "cdfb20ae8219432275dc5cc356c5516a1190414c",
+        "git_blob": "19620178f7fa4e6e9b23f6d8c6f0a26194ed87ed",
+        "sha256": "sha256:328837251c24037c3792980dc20341838a1e3183e7ff2d249af3e79f688ec0cb"
+      }
     },
     {
       "target_id": "target.defer",
@@ -370,7 +484,31 @@
       "plan_effect": "DEFER",
       "authorized": true,
       "applied": true,
-      "verification_digest": "sha256:df199eb4a5fa89bac6bc0d567f917e5ff2be0d301c266bebc6885c3455c2a8d5"
+      "verification_digest": "sha256:6fb979b4d2f209d8ecc16cab98cbd5b825d31a2475e13aadc5a46597b8e9ace1",
+      "authorization_status": "VERIFIED_REPOSITORY_GRANT",
+      "authorization_binding": {
+        "path": "data/agent/pilot-q34-pr-controlled-op.json",
+        "exact_commit": "167f254e637259d57b7ce09623de982dda527f54",
+        "git_blob": "734f711db4dd9a7f788315067f1d3e6bbac236e0",
+        "sha256": "sha256:5f6d084255ba89f87f10339a33c5a960a2ecfdf4a3d04d55a7cc0d88796a21e6"
+      },
+      "authority_actor_id": "q35-builder",
+      "authority_grant_id": "grant-q34-pilot",
+      "authority_action_id": "act-q34-pilot",
+      "application_status": "APPLIED_REPOSITORY_RECORD",
+      "target_binding": {
+        "path": "docs/failure/q39-interfaces.md",
+        "exact_commit": "824ff7f713303b18bca94b05de3f4b6530ffff51",
+        "git_blob": "c08378997df2ddfee8cb560d37881fb2d639577d",
+        "sha256": "sha256:6fb979b4d2f209d8ecc16cab98cbd5b825d31a2475e13aadc5a46597b8e9ace1"
+      },
+      "effect_id": "effect.target.defer",
+      "effect_binding": {
+        "path": "data/failure/q39-repair-effect-records.json",
+        "exact_commit": "cdfb20ae8219432275dc5cc356c5516a1190414c",
+        "git_blob": "19620178f7fa4e6e9b23f6d8c6f0a26194ed87ed",
+        "sha256": "sha256:328837251c24037c3792980dc20341838a1e3183e7ff2d249af3e79f688ec0cb"
+      }
     }
   ],
   "unresolved_residue": [

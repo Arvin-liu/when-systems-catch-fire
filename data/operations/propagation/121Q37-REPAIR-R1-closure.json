@@ -1,0 +1,609 @@
+{
+  "actual_component_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "accepted_work",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_contract",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_gate_validator",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent_responsibility_pilot_q34",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai_guide",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "analogy_audit_contract",
+      "reason": "121Q37-REPAIR-R1 closes B06: bind final checkout head, canonical Q34/Q35 claims, Q36 evidence bytes and mapping semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "analogy_audit_gate_validator",
+      "reason": "121Q37-REPAIR-R1 closes B06: bind final checkout head, canonical Q34/Q35 claims, Q36 evidence bytes and mapping semantics."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "analogy_audit_pilot",
+      "reason": "121Q37-REPAIR-R1 closes B06: bind final checkout head, canonical Q34/Q35 claims, Q36 evidence bytes and mapping semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "arn",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "candidate_return",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "case_source",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "charter",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_history_remediation",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_jurisdiction_registry",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_material_classification",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_non_republication_principle",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_publication_gate_validator",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_source_rights",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "copyright_governance_tests",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "current_state",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_claim_contract",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_gate_validator",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "discovery_commitment_pilot_q33",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external_input",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "feedback_routes",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "foundation_data",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "function_os",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "historical_reports",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ignition_increment",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "incremental_execution",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_contract",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_gate_validator",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "intervention_failure_pilot",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "iteration_manifest_contract",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l0",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l1",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l2",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l3",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l4",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l5",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "l6",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "licensing",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "mcf",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_l7",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_totality_proof",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "no_truth_upgrade",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_contract",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_gate_validator",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "observation_prediction_pilot_q34",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "pages_pipeline",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "point_fire_analysis",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "project_component_registry",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_calculator",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "propagation_topology",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "provenance_capture",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "psd",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "public_response",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q12",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q13",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "q14",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "readme",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "showcase_registry",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "source_pool",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "summary",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sustainability",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "sync",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_layout",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "system_map_projection",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "usage",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "zhiyuan_method",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this component's semantics."
+    }
+  ],
+  "actual_surface_decisions": [
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "agent.handoff",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "ai.start",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "CHANGE",
+      "item_id": "copyright_governance",
+      "reason": "Q37-I1 adds analogy-audit governance components to the governance surface"
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "external.pages_homepage",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.ai_guide",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.current_state",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.pages_source",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.readme",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.summary",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "human.usage",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "machine.llms",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.iteration",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.result_template",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.review_template",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "method.task_template",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.changelog",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    },
+    {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "item_id": "release.versioning",
+      "reason": "Q37-I1 analogy-audit & transportability gate does not alter this synchronization surface."
+    }
+  ],
+  "base_identity": "e4ca5350a3c68e61031e3205eaca9f2665799a08",
+  "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
+  "closure_complete": true,
+  "closure_hash": "88296bab4992074a13ea71e8adf3c5ad9ff4901b0b60353332fc1737573b8329",
+  "closure_version": "1.0.0",
+  "fixpoint": {
+    "iterations": 2,
+    "reached": true
+  },
+  "head_identity": "external_exact_head_attestation",
+  "registry_derived_surfaces": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "required_component_decisions": [
+    "analogy_audit_contract",
+    "analogy_audit_gate_validator",
+    "analogy_audit_pilot",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_projection"
+  ],
+  "required_surface_decisions": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "residue": [],
+  "resolved_components": [
+    "analogy_audit_contract",
+    "analogy_audit_gate_validator",
+    "analogy_audit_pilot",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "project_component_registry",
+    "propagation_calculator",
+    "system_map_projection"
+  ],
+  "seed_components": [
+    "analogy_audit_contract",
+    "analogy_audit_gate_validator",
+    "analogy_audit_pilot",
+    "historical_reports",
+    "iteration_manifest_contract",
+    "project_component_registry",
+    "propagation_calculator"
+  ],
+  "seed_paths": [
+    "data/analogy/fixtures/01-structural-analogy-pass.json",
+    "data/analogy/fixtures/02-surface-similarity-mechanism-upgrade.json",
+    "data/analogy/fixtures/03-cardinality-mismatch.json",
+    "data/analogy/fixtures/04-directionality-none.json",
+    "data/analogy/fixtures/05-negative-evidence-suppressed.json",
+    "data/analogy/fixtures/06-transportability-candidate-pass.json",
+    "data/analogy/fixtures/07-mechanism-evidence-insufficient.json",
+    "data/analogy/fixtures/08-claim-ceiling-overreach.json",
+    "data/analogy/fixtures/09-counteranalogy-preserved-pass.json",
+    "data/analogy/fixtures/10-mechanism-downgrade-pass.json",
+    "data/analogy/fixtures/11-correspondence-dangling-ref.json",
+    "data/analogy/fixtures/12-stale-exact-head.json",
+    "data/analogy/fixtures/13-q36int-upgraded-to-universal.json",
+    "data/analogy/fixtures/14-scale-shift-undeclared.json",
+    "data/analogy/fixtures/15-transport-concept-shift-undeclared.json",
+    "data/analogy/fixtures/16-transport-regime-shift-undeclared.json",
+    "data/analogy/fixtures/17-mechanism-evidence-circular.json",
+    "data/analogy/fixtures/18-residual-as-common-cause.json",
+    "data/analogy/fixtures/19-transportability-incomplete.json",
+    "data/analogy/fixtures/20-transport-covariate-shift-undeclared.json",
+    "data/analogy/fixtures/21-q34-claim-not-committed.json",
+    "data/analogy/fixtures/22-q35-scope-mismatch.json",
+    "data/analogy/fixtures/23-q33-rights-bypass.json",
+    "data/analogy/fixtures/24-real-repo-pilot-q34-analogy-as-mechanism.json",
+    "data/analogy/fixtures/25-domain-construct-swap.json",
+    "data/analogy/fixtures/26-relation-preservation-overclaim.json",
+    "data/analogy/fixtures/27-counteranalogy-suppressed.json",
+    "data/analogy/fixtures/28-q38-start-forbidden.json",
+    "data/analogy/fixtures/29-negative-audit-deleted.json",
+    "data/analogy/fixtures/30-semantic-consistency-mismatch.json",
+    "data/analogy/fixtures/31-intermediate-head-candidate-fictional-source-bypass.json",
+    "data/analogy/fixtures/32-fictional-source-binding.json",
+    "data/analogy/fixtures/33-mapping-content-digest-mismatch.json",
+    "data/analogy/fixtures/34-fictional-authority-grant.json",
+    "data/analogy/fixtures/35-self-promoted-candidate-claim.json",
+    "data/analogy/pilot-real-repo-analogy-audit.json",
+    "data/operations/iterations/121Q37-REPAIR-R1.json",
+    "data/operations/project-components.json",
+    "data/operations/propagation/121Q37-REPAIR-R1-request.json",
+    "docs/analogy/121Q37-repair-r1-architecture.md",
+    "reports/operations/121Q37-REPAIR-R1-completion-seal.json",
+    "schemas/analogy/analogy-audit-contract.schema.json",
+    "tests/analogy/test_analogy_audit_gate.py",
+    "tools/analogy/validate_analogy_audit_gate.py"
+  ],
+  "system_map_impact": {
+    "added_edges": [],
+    "added_nodes": [
+      "analogy_audit_contract",
+      "analogy_audit_gate_validator",
+      "analogy_audit_pilot"
+    ],
+    "changed_edges": [],
+    "changed_nodes": [
+      "intervention_failure_gate_validator"
+    ],
+    "decision": "CHANGE",
+    "reason": "New analogy-audit governance components added to project-component registry and topology",
+    "removed_edges": [],
+    "removed_nodes": [],
+    "unmapped_residue": []
+  },
+  "task_id": "121Q37-REPAIR-R1",
+  "typed_paths": [
+    {
+      "claim_ceiling": "deterministic repository derivation",
+      "creates_sync_obligation": false,
+      "propagation_mode": "automatic",
+      "relation_class": "generates",
+      "relation_domain": "repository_dependency",
+      "relation_id": "registry_generates_projection",
+      "source": "project_component_registry",
+      "target": "system_map_projection"
+    }
+  ]
+}

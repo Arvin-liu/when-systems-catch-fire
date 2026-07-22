@@ -1,7 +1,7 @@
 # SCIENTIFIC-METACOGNITION-I1 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `6c0ce665a996530f4c3843b5f0c369b4dfa30e6a35a16be4ded5c5e795d1bd8f`
+- Closure hash: `07d586457d6098f43e6bb62e68bfd842367859249dda192a66a69814ab8444c3`
 - Fixpoint iterations: `2`
 - Seeds: `current_state, epistemic_state_control_plane_contract, epistemic_state_control_plane_gate_validator, epistemic_state_control_plane_pilot, historical_reports, incremental_execution, iteration_manifest_contract, pages_pipeline, project_component_registry, propagation_calculator, system_map_layout, system_map_projection`
 - Resolved components: `15`

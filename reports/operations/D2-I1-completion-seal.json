@@ -10,14 +10,14 @@
     "ready_for_gpt_verification": false
   },
   "phase_b": {
-    "draft_pr": 77,
-    "branch": "agent/d2-i1-multi-history-world-projection",
-    "base": "agent/f15-d1-i1-latent-system-identifiability",
-    "base_head": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301",
+    "draft_pr": 94,
+    "branch": "repair/d2-r1-multi-history-world-projection",
+    "base": "repair/f15-d1-r1-latent-system-identifiability",
+    "base_head": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09",
     "head_binding": {
       "mode": "external_exact_head_attestation",
       "authority": "pull_request_body_and_1111_receipt",
-      "receipt_path": "agent-results/IGNITION-20260722-D2-I1-d2-i1-execution-receipt.json",
+      "receipt_path": "agent-results/remaining-repair-train/D2-I1-receipt.json",
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
@@ -47,7 +47,7 @@
     }
   ],
   "propagation_closure": {
-    "closure_hash": "e54843f2dd8b5dd3fe962edb26889c5d0b237f743a58a726c88d028c96b57e69",
+    "closure_hash": "060fd2a6642edd03152808a42b9f05f23114577ae7d924fbea43389681d631d1",
     "closure_path": "data/operations/propagation/D2-I1-closure.json",
     "complete": true,
     "unresolved_residue": []

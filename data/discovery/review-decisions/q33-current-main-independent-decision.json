@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "decision_id": "q33.i3-i4.current-main.scoped-decision",
+  "reviewer_id": "q33-i3-independent-reviewer",
+  "decision": "PASS_WITH_NONBLOCKING_FINDINGS_MERGE_AUTHORIZED",
+  "reviewed_claim_digest": "sha256:8414a6231fdc811a15885a8f9b7df4dc16626fad7916388f3396ba3fd992bf42",
+  "scope": "repository_main_only",
+  "claim_ceiling": "repository governance state only: the 7 components are Current in Main per manifest/seal/merge evidence; this does not assert real-world legal compliance or exhaustive global copyright coverage.",
+  "subject_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+  "external_sources": [
+    {
+      "purpose": "independent_read_only_conclusion_review",
+      "repository": "Arvin-liu/1111",
+      "path": "agent-results/IGNITION-20260721-121Q33-I3-final-conclusion-review.json",
+      "exact_commit": "e64ed781a1aab9832a50e34760f8a4d8f10a13cb",
+      "git_blob": "80257fd2a563ce9a859396c2f923ca9fefc932b5",
+      "sha256": "sha256:d39c51899c208ed0e1e607ec9aaf1a12f776d0b9be304bcb19d526fc99401426"
+    },
+    {
+      "purpose": "ordinary_merge_and_final_main_verification",
+      "repository": "Arvin-liu/1111",
+      "path": "agent-results/IGNITION-20260721-121Q33-I4-final-main-merge-and-verification.json",
+      "exact_commit": "e705158a3e1b41ce4aed58ccf6669393c91607d6",
+      "git_blob": "a0ac1ea145e52d41c8b954fca3cdc48fee9a1288",
+      "sha256": "sha256:5f062d774313ac41c6cba8005db1f8818b73f22ef19f53a97f4318e6a50f8f11"
+    }
+  ],
+  "boundary": "This normalized binding preserves external review and closeout object identities. It authorizes only the named repository-state claim and is not a new independent review."
+}

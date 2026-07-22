@@ -11,14 +11,14 @@
       "evidence_id": "evidence.1",
       "artifact": "data/failure/pilot-q39-failure-lineage.json",
       "exact_head": "213dced90f1e9b1f1992a148ee10fc0844917490",
-      "artifact_digest": "sha256:4ddfa843101ee355c58585a96ce811df6a0f0aadf2c55a279b59ac74c57d5f90",
+      "artifact_digest": "sha256:ca11da2279caac2b99e783b1cdebeb3ca362536986b0f1c8ee78ba2c9f2bd805",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {
       "evidence_id": "evidence.2",
       "artifact": "data/symbolic/pilot-symbolic-sphere-i1.json",
       "exact_head": "213dced90f1e9b1f1992a148ee10fc0844917490",
-      "artifact_digest": "sha256:4045e647f32301890d501be0c5e84aaf583a414b7b9e4bf04e4096c96cf5269f",
+      "artifact_digest": "sha256:9b30b04109215787bc38ca332dc4c9b112be6edb3d0ecbedf75d82d021405d29",
       "rights_status": "REPOSITORY_INTERNAL"
     },
     {

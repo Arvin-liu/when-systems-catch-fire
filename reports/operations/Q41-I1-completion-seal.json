@@ -10,14 +10,14 @@
     "ready_for_gpt_verification": false
   },
   "phase_b": {
-    "draft_pr": 75,
-    "branch": "agent/q41-i1-world-feedback-anomaly-governance",
-    "base": "agent/scientific-metacognition-i1-epistemic-state-control-plane",
-    "base_head": "2b18e1f2d11511dc758734338e7c715566d01394",
+    "draft_pr": 92,
+    "branch": "repair/q41-r1-anomaly-evidence-binding",
+    "base": "repair/scientific-metacognition-r1-epistemic-state-binding",
+    "base_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
     "head_binding": {
       "mode": "external_exact_head_attestation",
       "authority": "pull_request_body_and_1111_receipt",
-      "receipt_path": "agent-results/IGNITION-20260722-Q41-I1-q41-i1-execution-receipt.json",
+      "receipt_path": "agent-results/remaining-repair-train/Q41-I1-receipt.json",
       "embedded_exact_current_head": false,
       "live_refetch_required": true
     },
@@ -47,7 +47,7 @@
     }
   ],
   "propagation_closure": {
-    "closure_hash": "0a547a5e434d72dfeccee54838e9bfebf01e9898c7a6a89e762053fff4983d44",
+    "closure_hash": "8fd273b455c9d72358845cd8317b5e7affcfb0e70e878b66d1b2b91c1ef66685",
     "closure_path": "data/operations/propagation/Q41-I1-closure.json",
     "complete": true,
     "unresolved_residue": []
