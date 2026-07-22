@@ -1,0 +1,40 @@
+{
+  "task_id": "Q41-I1",
+  "parent_id": "SCIENTIFIC-METACOGNITION-I1",
+  "fields": [
+    "world_feedback_anomaly",
+    "recurrence_window",
+    "residual_failure_aggregation",
+    "expected_observed_divergence",
+    "model_repair_budget",
+    "governance_decision",
+    "escalation_authority",
+    "stop_rollback",
+    "q39_update",
+    "metacognition_update",
+    "claim_ceiling"
+  ],
+  "rules": [
+    "anomaly_not_hidden_system",
+    "recurrence_required",
+    "threshold_declared",
+    "single_deviation_no_rebuild",
+    "repair_budget_bounded",
+    "authority_required",
+    "stop_rollback_present",
+    "failure_sampling_balanced",
+    "q39_updated",
+    "metacognition_updated"
+  ],
+  "record_types": [
+    "RECURRING_REPOSITORY_DIVERGENCE",
+    "SINGLE_DEVIATION_NEGATIVE_CONTROL"
+  ],
+  "nonclaims": [
+    "single residual is not a hidden system",
+    "anomaly is not causal proof",
+    "no threshold-free escalation",
+    "no selective failure sampling"
+  ],
+  "next_task": "F15-D1-I1"
+}
