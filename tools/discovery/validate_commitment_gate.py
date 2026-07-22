@@ -30,10 +30,12 @@ Usage:
       [--report <out.json>]
 """
 import argparse
+import hashlib
 import json
 import re
+import subprocess
 import sys
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 SCHEMA_PATH = ROOT / "schemas" / "discovery" / "commitment-claim.schema.json"
@@ -53,6 +55,13 @@ HISTORY_VIOLATION = 11
 EXTERNAL_ATTESTATION_MISSING = 12
 MISSING_INDEPENDENT_REVIEW = 13
 INVALID_TRANSITION = 14
+CLAIM_DIGEST_MISMATCH = 15
+INVALID_EVIDENCE_BINDING = 16
+UNRESOLVED_ACTOR = 17
+INVALID_REVIEW_DECISION = 18
+INDEPENDENCE_VIOLATION = 19
+SELF_REFERENCE = 20
+PLACEHOLDER_VALUE = 21
 
 EXIT_NAMES = {
     GATE_PASS: "GATE_PASS",
@@ -69,7 +78,25 @@ EXIT_NAMES = {
     EXTERNAL_ATTESTATION_MISSING: "EXTERNAL_ATTESTATION_MISSING",
     MISSING_INDEPENDENT_REVIEW: "MISSING_INDEPENDENT_REVIEW",
     INVALID_TRANSITION: "INVALID_TRANSITION",
+    CLAIM_DIGEST_MISMATCH: "CLAIM_DIGEST_MISMATCH",
+    INVALID_EVIDENCE_BINDING: "INVALID_EVIDENCE_BINDING",
+    UNRESOLVED_ACTOR: "UNRESOLVED_ACTOR",
+    INVALID_REVIEW_DECISION: "INVALID_REVIEW_DECISION",
+    INDEPENDENCE_VIOLATION: "INDEPENDENCE_VIOLATION",
+    SELF_REFERENCE: "SELF_REFERENCE",
+    PLACEHOLDER_VALUE: "PLACEHOLDER_VALUE",
 }
+
+SHA256_RE = re.compile(r"^sha256:[0-9a-f]{64}$")
+HEX40_RE = re.compile(r"^[0-9a-f]{40}$")
+PLACEHOLDER_TOKENS = {
+    "", "null", "none", "todo", "tbd", "unknown", "unknown_as_pass",
+    "placeholder", "n/a", "na", "pending",
+}
+CANONICAL_CLAIM_FIELDS = (
+    "claim_id", "claim_text", "claim_type", "scope", "claim_ceiling",
+    "exact_head_binding", "relations", "claim_roles",
+)
 
 # States that may appear on a Current/Accepted surface
 CURRENT_STATES = {"committed_current"}
@@ -107,6 +134,100 @@ def _load_json(path: Path):
         return json.loads(path.read_text()), None
     except Exception as e:  # noqa: BLE001
         return None, f"{path}: cannot read/parse: {e}"
+
+
+def _canonical_json(value):
+    return json.dumps(
+        value, sort_keys=True, separators=(",", ":"), ensure_ascii=False
+    ).encode("utf-8")
+
+
+def canonical_claim_digest(claim):
+    """Digest only immutable claim semantics, never review/lifecycle assertions."""
+    body = {field: claim.get(field) for field in CANONICAL_CLAIM_FIELDS}
+    return "sha256:" + hashlib.sha256(_canonical_json(body)).hexdigest()
+
+
+def _placeholder(value):
+    if value is None:
+        return True
+    if not isinstance(value, str):
+        return False
+    normalized = value.strip().lower()
+    if normalized in PLACEHOLDER_TOKENS:
+        return True
+    if SHA256_RE.fullmatch(normalized) and set(normalized.removeprefix("sha256:")) == {"0"}:
+        return True
+    return bool(normalized) and len(set(normalized)) == 1 and len(normalized) >= 32
+
+
+def _repo_relative_path(raw):
+    if _placeholder(raw) or not isinstance(raw, str) or "\\" in raw:
+        return None
+    candidate = PurePosixPath(raw)
+    if candidate.is_absolute() or raw.startswith("/"):
+        return None
+    if any(part in ("", ".", "..") for part in candidate.parts):
+        return None
+    normalized = candidate.as_posix()
+    if normalized != raw or normalized.startswith("../"):
+        return None
+    return normalized
+
+
+def _git_bytes(*args):
+    return subprocess.run(
+        ["git", *args], cwd=ROOT, capture_output=True, check=False
+    )
+
+
+def _read_git_blob(commit, repo_path):
+    """Return (bytes, blob, error) from an exact commit without the worktree."""
+    if not HEX40_RE.fullmatch(str(commit or "")):
+        return None, None, "exact_commit is not a 40-hex Git object id"
+    kind = _git_bytes("cat-file", "-t", commit)
+    if kind.returncode != 0 or kind.stdout.strip() != b"commit":
+        return None, None, f"exact_commit {commit} is not a resolvable commit"
+    path = _repo_relative_path(repo_path)
+    if path is None:
+        return None, None, f"path is not canonical repo-relative: {repo_path!r}"
+    entry = _git_bytes("ls-tree", "-z", commit, "--", path)
+    if entry.returncode != 0 or not entry.stdout:
+        return None, None, f"path {path} does not exist at exact commit {commit}"
+    records = [row for row in entry.stdout.split(b"\0") if row]
+    exact = []
+    for row in records:
+        try:
+            metadata, encoded_path = row.split(b"\t", 1)
+            mode, obj_type, blob = metadata.decode("ascii").split()
+            decoded_path = encoded_path.decode("utf-8")
+        except (ValueError, UnicodeDecodeError):
+            continue
+        if decoded_path == path:
+            exact.append((mode, obj_type, blob))
+    if len(exact) != 1:
+        return None, None, f"path {path} did not resolve to one exact tree entry"
+    mode, obj_type, blob = exact[0]
+    if mode == "120000" or obj_type != "blob":
+        return None, None, f"path {path} is a symlink or non-blob object"
+    content = _git_bytes("cat-file", "blob", blob)
+    if content.returncode != 0:
+        return None, None, f"blob {blob} cannot be read"
+    return content.stdout, blob, None
+
+
+def _actor_index(registry):
+    if not isinstance(registry, dict) or not isinstance(registry.get("actors"), list):
+        return None
+    index = {}
+    for actor in registry["actors"]:
+        if not isinstance(actor, dict) or _placeholder(actor.get("actor_id")):
+            return None
+        actor_id = actor["actor_id"]
+        if actor_id in index:
+            return None
+        index[actor_id] = actor
+    return index
 
 
 def _result(exit_code, errors, claim_id=None, decision=None):
@@ -299,6 +420,202 @@ def check_independent_review(claim, require_review):
     return errors
 
 
+def check_claim_digest_binding(claim):
+    declared = claim.get("claim_digest")
+    if _placeholder(declared):
+        return PLACEHOLDER_VALUE, ["claim_digest is missing, zero, or placeholder"]
+    if not SHA256_RE.fullmatch(str(declared)):
+        return CLAIM_DIGEST_MISMATCH, ["claim_digest must be sha256:<64 lowercase hex>"]
+    expected = canonical_claim_digest(claim)
+    if declared != expected:
+        return CLAIM_DIGEST_MISMATCH, [
+            f"claim_digest {declared} != canonical immutable claim body {expected}"
+        ]
+    return GATE_PASS, []
+
+
+def check_actor_resolution_and_independence(claim, actor_index):
+    if actor_index is None:
+        return UNRESOLVED_ACTOR, ["canonical actor registry is missing or malformed"]
+    roles = claim.get("claim_roles")
+    if not isinstance(roles, dict):
+        return UNRESOLVED_ACTOR, ["claim_roles must resolve claim_author and builder"]
+    actor_ids = {
+        "discoverer": claim.get("discovered_by", {}).get("actor"),
+        "claim_author": roles.get("claim_author"),
+        "builder": roles.get("builder"),
+        "reviewer": claim.get("verifier", {}).get("actor"),
+    }
+    errors = []
+    for role, actor_id in actor_ids.items():
+        if _placeholder(actor_id) or actor_id not in actor_index:
+            errors.append(f"{role} actor does not resolve in canonical registry: {actor_id!r}")
+            continue
+        if actor_index[actor_id].get("status") != "active":
+            errors.append(f"{role} actor is not active: {actor_id}")
+    if errors:
+        return UNRESOLVED_ACTOR, errors
+    reviewer_id = actor_ids["reviewer"]
+    reviewer = actor_index[reviewer_id]
+    if "independent_reviewer" not in reviewer.get("roles", []):
+        return UNRESOLVED_ACTOR, [
+            f"reviewer {reviewer_id} lacks canonical independent_reviewer role"
+        ]
+    if claim.get("scope") not in reviewer.get("authority_scopes", []):
+        return UNRESOLVED_ACTOR, [
+            f"reviewer {reviewer_id} lacks authority for scope {claim.get('scope')}"
+        ]
+    nonreview_roles = {
+        actor_ids["discoverer"], actor_ids["claim_author"], actor_ids["builder"]
+    }
+    if reviewer_id in nonreview_roles:
+        return INDEPENDENCE_VIOLATION, [
+            "reviewer equals discoverer, claim author, or builder"
+        ]
+    if reviewer.get("conflicts_with") and nonreview_roles.intersection(
+        reviewer.get("conflicts_with", [])
+    ):
+        return INDEPENDENCE_VIOLATION, [
+            "canonical reviewer registry records a role conflict"
+        ]
+    return GATE_PASS, []
+
+
+def check_evidence_byte_bindings(claim, claim_path, actor_index):
+    claim_digest = claim.get("claim_digest")
+    claim_repo = claim.get("exact_head_binding", {}).get("repo")
+    try:
+        claim_relative = claim_path.resolve().relative_to(ROOT.resolve()).as_posix()
+    except ValueError:
+        claim_relative = None
+    for ev in claim.get("evidence", []):
+        ref_id = ev.get("ref_id", "<missing>")
+        required = (
+            "repository", "path", "exact_commit", "git_blob", "sha256",
+            "supports_claim_digest", "scope",
+        )
+        for field in required:
+            if _placeholder(ev.get(field)):
+                return PLACEHOLDER_VALUE, [
+                    f"evidence {ref_id} field {field} is missing, zero, or placeholder"
+                ]
+        path = _repo_relative_path(ev.get("path"))
+        if path is None:
+            return INVALID_EVIDENCE_BINDING, [
+                f"evidence {ref_id} path is not canonical repo-relative"
+            ]
+        lowered = path.lower()
+        if path == claim_relative or "receipt" in PurePosixPath(path).name.lower() \
+                or lowered.endswith("validate_commitment_gate.py") \
+                or "gate-output" in lowered:
+            return SELF_REFERENCE, [
+                f"evidence {ref_id} uses claim/receipt/validator output as independent evidence: {path}"
+            ]
+        if ev.get("repository") != claim_repo:
+            return INVALID_EVIDENCE_BINDING, [
+                f"evidence {ref_id} repository does not match claim repository"
+            ]
+        if ev.get("supports_claim_digest") != claim_digest:
+            return CLAIM_DIGEST_MISMATCH, [
+                f"evidence {ref_id} supports a different claim digest"
+            ]
+        if ev.get("scope") != claim.get("scope"):
+            return INVALID_EVIDENCE_BINDING, [
+                f"evidence {ref_id} scope does not match claim scope"
+            ]
+        producer = ev.get("produced_by")
+        if _placeholder(producer) or actor_index is None or producer not in actor_index:
+            return UNRESOLVED_ACTOR, [
+                f"evidence {ref_id} producer does not resolve: {producer!r}"
+            ]
+        content, blob, error = _read_git_blob(ev.get("exact_commit"), path)
+        if error:
+            return INVALID_EVIDENCE_BINDING, [f"evidence {ref_id}: {error}"]
+        try:
+            bound_json = json.loads(content)
+        except (TypeError, json.JSONDecodeError):
+            bound_json = None
+        if isinstance(bound_json, dict) and bound_json.get("claim_id") == claim.get("claim_id"):
+            return SELF_REFERENCE, [
+                f"evidence {ref_id} resolves to the same claim id and is circular"
+            ]
+        if ev.get("git_blob") != blob:
+            return INVALID_EVIDENCE_BINDING, [
+                f"evidence {ref_id} git_blob {ev.get('git_blob')} != actual {blob}"
+            ]
+        actual_digest = "sha256:" + hashlib.sha256(content).hexdigest()
+        if ev.get("sha256") != actual_digest:
+            return INVALID_EVIDENCE_BINDING, [
+                f"evidence {ref_id} sha256 {ev.get('sha256')} != actual {actual_digest}"
+            ]
+    return GATE_PASS, []
+
+
+def check_review_decision_binding(claim):
+    binding = claim.get("review_decision")
+    if not isinstance(binding, dict):
+        return INVALID_REVIEW_DECISION, ["COMMIT requires a review_decision binding"]
+    for field in (
+        "evidence_ref_id", "reviewer_id", "decision", "reviewed_claim_digest",
+        "scope", "claim_ceiling", "subject_head",
+    ):
+        if _placeholder(binding.get(field)):
+            return PLACEHOLDER_VALUE, [
+                f"review_decision.{field} is missing or placeholder"
+            ]
+    matching = [
+        ev for ev in claim.get("evidence", [])
+        if ev.get("ref_id") == binding.get("evidence_ref_id")
+    ]
+    if len(matching) != 1 or matching[0].get("kind") != "independent_review":
+        return INVALID_REVIEW_DECISION, [
+            "review_decision must identify exactly one independent_review evidence item"
+        ]
+    ev = matching[0]
+    content, _, error = _read_git_blob(ev.get("exact_commit"), ev.get("path"))
+    if error:
+        return INVALID_REVIEW_DECISION, [error]
+    try:
+        decision_artifact = json.loads(content)
+    except (TypeError, json.JSONDecodeError) as exc:
+        return INVALID_REVIEW_DECISION, [f"review decision bytes are not JSON: {exc}"]
+    expected = {
+        "reviewer_id": claim.get("verifier", {}).get("actor"),
+        "decision": binding.get("decision"),
+        "reviewed_claim_digest": claim.get("claim_digest"),
+        "scope": claim.get("scope"),
+        "claim_ceiling": claim.get("claim_ceiling"),
+        "subject_head": claim.get("exact_head_binding", {}).get("head"),
+    }
+    for field, value in expected.items():
+        if binding.get(field) != value:
+            return INVALID_REVIEW_DECISION, [
+                f"review_decision.{field} does not bind the claim/verifier"
+            ]
+        if decision_artifact.get(field) != value:
+            return INVALID_REVIEW_DECISION, [
+                f"review decision artifact field {field} does not match bound value"
+            ]
+    if binding.get("decision") not in {
+        "PASS_WITH_NONBLOCKING_FINDINGS_MERGE_AUTHORIZED",
+        "ACCEPT_WITHIN_SCOPE",
+        "COMMIT_WITHIN_SCOPE",
+    }:
+        return INVALID_REVIEW_DECISION, ["review decision is not an allowed scoped acceptance"]
+    sources = decision_artifact.get("external_sources")
+    if not isinstance(sources, list) or len(sources) < 2:
+        return INVALID_REVIEW_DECISION, [
+            "review decision lacks external review and main-closeout source bindings"
+        ]
+    for source in sources:
+        for field in ("repository", "path", "exact_commit", "git_blob", "sha256"):
+            if _placeholder(source.get(field)):
+                return PLACEHOLDER_VALUE, [
+                    f"review decision external source {field} is placeholder"
+                ]
+    return GATE_PASS, []
+
+
 def check_history_and_current(claim, current_surface_claim_ids=None):
     errors = []
     state = claim.get("state")
@@ -314,7 +631,7 @@ def check_history_and_current(claim, current_surface_claim_ids=None):
 
 def validate_claim(claim, claim_path, registry_index=None, current_main_head=None,
                    require_external=False, require_review=False,
-                   current_surface_claim_ids=None):
+                   current_surface_claim_ids=None, actor_index=None):
     errors = validate_schema(claim, claim_path)
     if errors:
         return _result(SCHEMA_ERROR, errors, claim.get("claim_id"))
@@ -360,6 +677,20 @@ def validate_claim(claim, claim_path, registry_index=None, current_main_head=Non
         errs = check_external_attestation(claim, require_external)
         if errs:
             return _result(EXTERNAL_ATTESTATION_MISSING, errs, claim.get("claim_id"))
+        code, errs = check_claim_digest_binding(claim)
+        if errs:
+            return _result(code, errs, claim.get("claim_id"))
+        code, errs = check_actor_resolution_and_independence(claim, actor_index)
+        if errs:
+            return _result(code, errs, claim.get("claim_id"))
+        code, errs = check_evidence_byte_bindings(
+            claim, claim_path, actor_index
+        )
+        if errs:
+            return _result(code, errs, claim.get("claim_id"))
+        code, errs = check_review_decision_binding(claim)
+        if errs:
+            return _result(code, errs, claim.get("claim_id"))
 
     return _result(GATE_PASS, [], claim.get("claim_id"),
                    decision=("COMMIT" if committing else "DEFER"))
@@ -371,6 +702,11 @@ def main(argv=None):
     ap.add_argument("--registry", help="path to resolvable-evidence registry JSON (list of reference strings)")
     ap.add_argument("--current-main-head", help="current main head SHA for staleness check")
     ap.add_argument("--current-surface", help="path to JSON list of claim_ids on the Current/Accepted surface")
+    ap.add_argument(
+        "--actor-registry",
+        default=str(ROOT / "data" / "discovery" / "actor-authority-registry.json"),
+        help="canonical actor/reviewer authority registry",
+    )
     ap.add_argument("--require-external-attestation", action="store_true")
     ap.add_argument("--require-independent-review", action="store_true")
     ap.add_argument("--report", help="write machine-readable JSON report to this path")
@@ -396,6 +732,19 @@ def main(argv=None):
         if not cerr:
             current_surface = set(cs if isinstance(cs, list) else cs.get("claim_ids", []))
 
+    actor_registry, aerr = _load_json(Path(args.actor_registry))
+    if aerr:
+        out = _result(SCHEMA_ERROR, [aerr], claim.get("claim_id"))
+        return _emit(out, args)
+    actor_index = _actor_index(actor_registry)
+    if actor_index is None:
+        out = _result(
+            SCHEMA_ERROR,
+            ["canonical actor registry is malformed or contains duplicate ids"],
+            claim.get("claim_id"),
+        )
+        return _emit(out, args)
+
     out = validate_claim(
         claim, claim_path,
         registry_index=registry_index,
@@ -403,6 +752,7 @@ def main(argv=None):
         require_external=args.require_external_attestation,
         require_review=args.require_independent_review,
         current_surface_claim_ids=current_surface,
+        actor_index=actor_index,
     )
     return _emit(out, args)
 

@@ -31,8 +31,10 @@ Usage:
 import argparse
 import hashlib
 import json
+import re
+import subprocess
 import sys
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 
@@ -53,6 +55,12 @@ TRAJECTORY_INTEGRITY_FAIL = 14
 Q33_GATE_BYPASS = 15
 SILENT_HISTORY_REWRITE = 16
 UNRESOLVED_RESPONSIBILITY_FORCED = 17
+UNKNOWN_CLAIM = 18
+UNKNOWN_GRANTOR = 19
+CLAIM_BINDING_MISMATCH = 20
+GRANT_BINDING_MISMATCH = 21
+PLACEHOLDER_AUTHORITY = 22
+NONCANONICAL_GRANT = 23
 
 EXIT_NAMES = {v: k for k, v in {
     "GATE_PASS": 0, "SCHEMA_ERROR": 2, "ACTOR_UNRESOLVABLE": 3, "GRANT_UNRESOLVABLE": 4,
@@ -60,13 +68,86 @@ EXIT_NAMES = {v: k for k, v in {
     "MODEL_NAME_AS_AUTHORITY": 8, "BROKEN_DELEGATION": 9, "CLAIM_NOT_COMMITTED": 10,
     "CLAIM_CEILING_BREACH": 11, "SEPARATION_OF_DUTY_VIOLATION": 12, "STALE_EXACT_HEAD": 13,
     "TRAJECTORY_INTEGRITY_FAIL": 14, "Q33_GATE_BYPASS": 15, "SILENT_HISTORY_REWRITE": 16,
-    "UNRESOLVED_RESPONSIBILITY_FORCED": 17}.items()}
+    "UNRESOLVED_RESPONSIBILITY_FORCED": 17, "UNKNOWN_CLAIM": 18,
+    "UNKNOWN_GRANTOR": 19, "CLAIM_BINDING_MISMATCH": 20,
+    "GRANT_BINDING_MISMATCH": 21, "PLACEHOLDER_AUTHORITY": 22,
+    "NONCANONICAL_GRANT": 23}.items()}
 
 # Bare model-name patterns that are NOT a resolvable authority source
 MODEL_NAME_PATTERNS = ("gpt", "claude", "kimi", "hy3", "deepseek", "qwen", "glm", "llama", "grok", "gemini")
 REAL_WORLD_TOKENS = ["global", "worldwide", "all jurisdictions", "proven compliant",
                      "legal compliance proven", "real-world truth", "guaranteed legal",
                      "exhaustive", "universal law"]
+SHA256_RE = re.compile(r"^sha256:[0-9a-f]{64}$")
+HEX40_RE = re.compile(r"^[0-9a-f]{40}$")
+PLACEHOLDERS = {"", "null", "none", "todo", "tbd", "unknown", "unknown_as_pass",
+                "placeholder", "pending", "n/a", "na"}
+
+
+def _placeholder(value):
+    if value is None:
+        return True
+    if not isinstance(value, str):
+        return False
+    normalized = value.strip().lower()
+    if normalized in PLACEHOLDERS:
+        return True
+    return bool(SHA256_RE.fullmatch(normalized)) and set(normalized[7:]) == {"0"}
+
+
+def _repo_relative_path(raw):
+    if _placeholder(raw) or not isinstance(raw, str) or "\\" in raw:
+        return None
+    path = PurePosixPath(raw)
+    if path.is_absolute() or any(part in ("", ".", "..") for part in path.parts):
+        return None
+    return path.as_posix() if path.as_posix() == raw else None
+
+
+def _git(*args):
+    return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, check=False)
+
+
+def _read_git_blob(binding):
+    commit = binding.get("exact_commit") if isinstance(binding, dict) else None
+    path = _repo_relative_path(binding.get("path") if isinstance(binding, dict) else None)
+    if not HEX40_RE.fullmatch(str(commit or "")) or path is None:
+        return None, None, "invalid exact commit or noncanonical repository path"
+    kind = _git("cat-file", "-t", commit)
+    if kind.returncode or kind.stdout.strip() != b"commit":
+        return None, None, f"exact commit {commit!r} is not a commit"
+    entry = _git("ls-tree", "-z", commit, "--", path)
+    rows = [row for row in entry.stdout.split(b"\0") if row]
+    exact = []
+    for row in rows:
+        try:
+            meta, encoded_path = row.split(b"\t", 1)
+            mode, obj_type, blob = meta.decode("ascii").split()
+            if encoded_path.decode("utf-8") == path:
+                exact.append((mode, obj_type, blob))
+        except (ValueError, UnicodeDecodeError):
+            continue
+    if len(exact) != 1 or exact[0][0] == "120000" or exact[0][1] != "blob":
+        return None, None, f"path {path!r} is missing, ambiguous, symlinked, or not a blob"
+    content = _git("cat-file", "blob", exact[0][2])
+    if content.returncode:
+        return None, None, f"blob {exact[0][2]} cannot be read"
+    return content.stdout, exact[0][2], None
+
+
+def _verify_binding(binding):
+    if not isinstance(binding, dict):
+        return None, "missing canonical Git binding"
+    for field in ("path", "exact_commit", "git_blob", "sha256"):
+        if _placeholder(binding.get(field)):
+            return None, f"binding {field} is null/empty/placeholder"
+    content, blob, error = _read_git_blob(binding)
+    if error:
+        return None, error
+    actual_digest = "sha256:" + hashlib.sha256(content).hexdigest()
+    if blob != binding.get("git_blob") or actual_digest != binding.get("sha256"):
+        return None, "declared blob/digest does not match actual Git bytes"
+    return content, None
 
 
 def _canonical(obj):
@@ -303,7 +384,90 @@ def check_unresolved_forced(bundle):
     return None
 
 
-def validate(bundle, now=None, claims_index=None, q33_rejects=None, current_main_head=None):
+def check_canonical_claims(bundle, claims_index):
+    if claims_index is None:
+        return _result(UNKNOWN_CLAIM, ["canonical Q34 claim registry is unavailable"])
+    for action in bundle["actions"]:
+        claim_id = action.get("claim_ref")
+        claim = claims_index.get(claim_id)
+        if claim is None:
+            return _result(UNKNOWN_CLAIM, [f"action {action.get('action_id')}: claim {claim_id!r} is absent from the canonical Q34 registry"])
+        content, error = _verify_binding(claim.get("binding"))
+        if error:
+            return _result(CLAIM_BINDING_MISMATCH, [f"claim {claim_id}: {error}"])
+        try:
+            artifact = json.loads(content)
+        except Exception as exc:  # noqa: BLE001
+            return _result(CLAIM_BINDING_MISMATCH, [f"claim {claim_id}: bound bytes are not JSON: {exc}"])
+        expected_digest = claim.get("claim_digest")
+        expected_head = claim.get("subject_head")
+        if artifact.get("claim_id") != claim_id or artifact.get("state") != claim.get("state"):
+            return _result(CLAIM_BINDING_MISMATCH, [f"claim {claim_id}: bound artifact identity/state mismatch"])
+        if artifact.get("claim_digest") != expected_digest or artifact.get("exact_head_binding", {}).get("head") != expected_head:
+            return _result(CLAIM_BINDING_MISMATCH, [f"claim {claim_id}: bound digest/head mismatch"])
+        if action.get("claim_digest") != expected_digest or action.get("claim_exact_commit") != claim.get("binding", {}).get("exact_commit"):
+            return _result(CLAIM_BINDING_MISMATCH, [f"action {action.get('action_id')}: claim digest/exact commit is absent or mismatched"])
+    return None
+
+
+def _find_grant(artifact, grant_id):
+    if isinstance(artifact, dict) and artifact.get("grant_id") == grant_id:
+        return artifact
+    grants = artifact.get("grants", []) if isinstance(artifact, dict) else []
+    return next((item for item in grants if isinstance(item, dict) and item.get("grant_id") == grant_id), None)
+
+
+def check_canonical_authority(bundle, actor_index, grant_index, now):
+    if actor_index is None or grant_index is None:
+        return _result(PLACEHOLDER_AUTHORITY, ["canonical actor/grant registry is unavailable"])
+    embedded_grants = _index(bundle["grants"], "grant_id")
+    for action in bundle["actions"]:
+        grant_id = action.get("grant_id")
+        embedded = embedded_grants.get(grant_id)
+        if embedded is None:
+            return _result(NONCANONICAL_GRANT, [f"action {action.get('action_id')}: embedded grant is missing"])
+        grantor = embedded.get("grantor")
+        if _placeholder(grantor) or grantor not in actor_index:
+            return _result(UNKNOWN_GRANTOR, [f"grant {grant_id}: grantor/principal {grantor!r} is not canonical"])
+        grantee = embedded.get("grantee")
+        if _placeholder(grantee) or grantee not in actor_index:
+            return _result(PLACEHOLDER_AUTHORITY, [f"grant {grant_id}: grantee {grantee!r} is not canonical"])
+        canonical = grant_index.get(grant_id)
+        if canonical is None:
+            return _result(NONCANONICAL_GRANT, [f"grant {grant_id!r} is absent from the canonical grant registry"])
+        content, error = _verify_binding(canonical.get("binding"))
+        if error:
+            return _result(GRANT_BINDING_MISMATCH, [f"grant {grant_id}: {error}"])
+        try:
+            artifact = json.loads(content)
+        except Exception as exc:  # noqa: BLE001
+            return _result(GRANT_BINDING_MISMATCH, [f"grant {grant_id}: bound bytes are not JSON: {exc}"])
+        bound = _find_grant(artifact, grant_id)
+        if bound is None:
+            return _result(GRANT_BINDING_MISMATCH, [f"grant {grant_id}: bound artifact does not contain this grant"])
+        critical = ("grantor", "grantee", "allowed_action_types", "resource_scope",
+                    "delegation", "status", "claim_ceiling")
+        if any(embedded.get(field) != bound.get(field) for field in critical):
+            return _result(GRANT_BINDING_MISMATCH, [f"grant {grant_id}: embedded grant differs from byte-bound canonical grant"])
+        for field in ("valid_from", "expires_at", "revoked", "delegation_chain"):
+            if field not in bound:
+                return _result(GRANT_BINDING_MISMATCH, [f"grant {grant_id}: canonical artifact lacks {field}"])
+        if bound.get("revoked") is not False or bound.get("status") != "active":
+            return _result(GRANT_EXPIRED_OR_REVOKED, [f"grant {grant_id}: canonical artifact is not active"])
+        if now and (now < bound["valid_from"] or now >= bound["expires_at"]):
+            return _result(GRANT_EXPIRED_OR_REVOKED, [f"grant {grant_id}: outside canonical validity interval"])
+        if bound.get("delegation") == "forbidden" and bound.get("delegation_chain") not in ([], [grantor, grantee]):
+            return _result(BROKEN_DELEGATION, [f"grant {grant_id}: forbidden delegation chain is nonempty"])
+        if bound.get("resource_scope") == "repository" and _repo_relative_path(action.get("target")) is None:
+            return _result(SCOPE_BREACH, [f"action {action.get('action_id')}: target is not canonical repo-relative"])
+        binding = canonical.get("binding", {})
+        if action.get("grant_digest") != binding.get("sha256") or action.get("grant_exact_commit") != binding.get("exact_commit"):
+            return _result(GRANT_BINDING_MISMATCH, [f"action {action.get('action_id')}: grant digest/exact commit is absent or mismatched"])
+    return None
+
+
+def validate(bundle, now=None, claims_index=None, actor_index=None, grant_index=None,
+             q33_rejects=None, current_main_head=None):
     errors = validate_schema(bundle)
     if errors:
         return _result(SCHEMA_ERROR, errors)
@@ -337,6 +501,11 @@ def validate(bundle, now=None, claims_index=None, q33_rejects=None, current_main
     r = check_unresolved_forced(bundle)
     if r: return r
 
+    r = check_canonical_claims(bundle, claims_index)
+    if r: return r
+    r = check_canonical_authority(bundle, actor_index, grant_index, now)
+    if r: return r
+
     return _result(GATE_PASS, [], decision="AUTHORIZE")
 
 
@@ -351,6 +520,10 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description="Q35 responsibility-authority-action-trace gate (fail-closed)")
     ap.add_argument("--bundle", required=True, help="path to responsibility bundle JSON")
     ap.add_argument("--claims", help="path to Q34 claims JSON (list with claim_id/state)")
+    ap.add_argument("--actors", default=str(ROOT / "data/agent/canonical-actor-registry.json"),
+                    help="canonical actor/principal registry")
+    ap.add_argument("--grant-registry", default=str(ROOT / "data/agent/canonical-grant-registry.json"),
+                    help="canonical byte-bound grant registry")
     ap.add_argument("--q33-rejects", help="path to JSON list of Q33-rejected targets")
     ap.add_argument("--current-main-head", help="current main head SHA")
     ap.add_argument("--now", help="ISO timestamp for expiry evaluation")
@@ -363,10 +536,19 @@ def main(argv=None):
         return _emit(out, args)
 
     claims_index = None
-    if args.claims:
-        cl, cerr = _load(Path(args.claims))
-        if not cerr:
-            claims_index = _index(cl if isinstance(cl, list) else cl.get("claims", []), "claim_id")
+    cl, cerr = _load(Path(args.claims)) if args.claims else (None, "canonical claims path missing")
+    if not cerr:
+        claims_index = _index(cl if isinstance(cl, list) else cl.get("claims", []), "claim_id")
+
+    actor_index = None
+    actors, aerr = _load(Path(args.actors))
+    if not aerr:
+        actor_index = _index(actors.get("actors", []) if isinstance(actors, dict) else [], "actor_id")
+
+    grant_index = None
+    grants, gerr = _load(Path(args.grant_registry))
+    if not gerr:
+        grant_index = _index(grants.get("grants", []) if isinstance(grants, dict) else [], "grant_id")
 
     q33_rejects = None
     if args.q33_rejects:
@@ -375,6 +557,7 @@ def main(argv=None):
             q33_rejects = qr if isinstance(qr, list) else qr.get("rejected", [])
 
     out = validate(bundle, now=args.now, claims_index=claims_index,
+                   actor_index=actor_index, grant_index=grant_index,
                    q33_rejects=q33_rejects, current_main_head=args.current_main_head)
     return _emit(out, args)
 
