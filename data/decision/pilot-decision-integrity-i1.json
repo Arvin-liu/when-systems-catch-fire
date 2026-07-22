@@ -4,7 +4,7 @@
   "capability_id": "decision_integrity",
   "parent_binding": {
     "task_id": "SYMBOLIC-SPHERE-I1",
-    "exact_head": "213dced90f1e9b1f1992a148ee10fc0844917490"
+    "exact_head": "68ea9bf4d9987a9ec6c4d3a14ec6f9899618ee04"
   },
   "evidence_registry": [
     {
