@@ -357,6 +357,30 @@
             "REPOSITORY_INTERNAL",
             "PUBLIC_METADATA_ONLY"
           ]
+        },
+        "repository_relative_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commit_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "blob_sha": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "record_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "declared_role": {
+          "type": "string",
+          "minLength": 1
         }
       }
     }
