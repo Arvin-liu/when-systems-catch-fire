@@ -4,7 +4,7 @@
   "capability_id": "coaching_commitment_subcapability",
   "parent_binding": {
     "task_id": "Q43-I1",
-    "exact_head": "5efbce81e96d90d5ebd246891e4762928365d6b8"
+    "exact_head": "e5181c83efba68f847b55e13c7b5a1ee1fd6888e"
   },
   "evidence_registry": [
     {
