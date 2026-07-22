@@ -1,0 +1,454 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "DECISION-INTEGRITY-I1",
+  "capability_id": "decision_integrity",
+  "parent_binding": {
+    "task_id": "SYMBOLIC-SPHERE-I1",
+    "exact_head": "213dced90f1e9b1f1992a148ee10fc0844917490"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/failure/pilot-q39-failure-lineage.json",
+      "exact_head": "213dced90f1e9b1f1992a148ee10fc0844917490",
+      "artifact_digest": "sha256:ca11da2279caac2b99e783b1cdebeb3ca362536986b0f1c8ee78ba2c9f2bd805",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "data/symbolic/pilot-symbolic-sphere-i1.json",
+      "exact_head": "213dced90f1e9b1f1992a148ee10fc0844917490",
+      "artifact_digest": "sha256:9b30b04109215787bc38ca332dc4c9b112be6edb3d0ecbedf75d82d021405d29",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "FOUNDATION.md",
+      "exact_head": "213dced90f1e9b1f1992a148ee10fc0844917490",
+      "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
+      "rights_status": "REPOSITORY_INTERNAL"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "BAD_PROCESS_GOOD_OUTCOME",
+      "principle_registry": {
+        "status": "RECORDED",
+        "value": "bounded principle_registry for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "principle_version": {
+        "status": "RECORDED",
+        "value": "bounded principle_version for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "revision_authority": {
+        "status": "RECORDED",
+        "value": "bounded revision_authority for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "ex_ante_decision_record": {
+        "status": "RECORDED",
+        "value": "bounded ex_ante_decision_record for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "known_unknown_assumptions": {
+        "status": "RECORDED",
+        "value": "bounded known_unknown_assumptions for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "decision_hierarchy": {
+        "status": "RECORDED",
+        "value": "bounded decision_hierarchy for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "competence_boundary": {
+        "status": "RECORDED",
+        "value": "bounded competence_boundary for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "risk_reversibility_stop": {
+        "status": "RECORDED",
+        "value": "bounded risk_reversibility_stop for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "process_quality": {
+        "status": "RECORDED",
+        "value": "bounded process_quality for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "outcome_quality": {
+        "status": "RECORDED",
+        "value": "bounded outcome_quality for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "process_outcome_quadrant": {
+        "status": "RECORDED",
+        "value": "bounded process_outcome_quadrant for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "result_bias_audit": {
+        "status": "RECORDED",
+        "value": "bounded result_bias_audit for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "post_hoc_narrative_diff": {
+        "status": "RECORDED",
+        "value": "bounded post_hoc_narrative_diff for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "principle_capture": {
+        "status": "RECORDED",
+        "value": "bounded principle_capture for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "legitimate_revision": {
+        "status": "RECORDED",
+        "value": "bounded legitimate_revision for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "usefulness_necessity_gate": {
+        "status": "RECORDED",
+        "value": "bounded usefulness_necessity_gate for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "bargain_fomo_signal": {
+        "status": "RECORDED",
+        "value": "bounded bargain_fomo_signal for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "information_intake": {
+        "status": "RECORDED",
+        "value": "bounded information_intake for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "integration_evidence": {
+        "status": "RECORDED",
+        "value": "bounded integration_evidence for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "learning_update": {
+        "status": "RECORDED",
+        "value": "bounded learning_update for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for BAD_PROCESS_GOOD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "GOOD_PROCESS_BAD_OUTCOME",
+      "principle_registry": {
+        "status": "RECORDED",
+        "value": "bounded principle_registry for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "principle_version": {
+        "status": "RECORDED",
+        "value": "bounded principle_version for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "revision_authority": {
+        "status": "RECORDED",
+        "value": "bounded revision_authority for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "ex_ante_decision_record": {
+        "status": "RECORDED",
+        "value": "bounded ex_ante_decision_record for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "known_unknown_assumptions": {
+        "status": "RECORDED",
+        "value": "bounded known_unknown_assumptions for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "decision_hierarchy": {
+        "status": "RECORDED",
+        "value": "bounded decision_hierarchy for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "competence_boundary": {
+        "status": "RECORDED",
+        "value": "bounded competence_boundary for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "risk_reversibility_stop": {
+        "status": "RECORDED",
+        "value": "bounded risk_reversibility_stop for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "process_quality": {
+        "status": "RECORDED",
+        "value": "bounded process_quality for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "outcome_quality": {
+        "status": "RECORDED",
+        "value": "bounded outcome_quality for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "process_outcome_quadrant": {
+        "status": "RECORDED",
+        "value": "bounded process_outcome_quadrant for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "result_bias_audit": {
+        "status": "RECORDED",
+        "value": "bounded result_bias_audit for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "post_hoc_narrative_diff": {
+        "status": "RECORDED",
+        "value": "bounded post_hoc_narrative_diff for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "principle_capture": {
+        "status": "RECORDED",
+        "value": "bounded principle_capture for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "legitimate_revision": {
+        "status": "RECORDED",
+        "value": "bounded legitimate_revision for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "usefulness_necessity_gate": {
+        "status": "RECORDED",
+        "value": "bounded usefulness_necessity_gate for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "bargain_fomo_signal": {
+        "status": "RECORDED",
+        "value": "bounded bargain_fomo_signal for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "information_intake": {
+        "status": "RECORDED",
+        "value": "bounded information_intake for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      },
+      "integration_evidence": {
+        "status": "RECORDED",
+        "value": "bounded integration_evidence for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.1"
+        ]
+      },
+      "learning_update": {
+        "status": "RECORDED",
+        "value": "bounded learning_update for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.2"
+        ]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "bounded claim_ceiling for GOOD_PROCESS_BAD_OUTCOME",
+        "evidence_refs": [
+          "evidence.3"
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "success_not_process_proof": true,
+    "failure_not_process_disproof": true,
+    "ex_ante_record_immutable": true,
+    "principle_relabel_blocked": true,
+    "competence_required": false,
+    "utility_before_bargain": true,
+    "fomo_not_need": true,
+    "intake_not_integration": true,
+    "integration_requires_output": true,
+    "revision_versioned_authorized": true,
+    "original_record_preserved": true,
+    "claim_ceiling_preserved": true
+  },
+  "rule_assertions": [
+    {
+      "rule_id": "success_not_process_proof",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "failure_not_process_disproof",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "ex_ante_record_immutable",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "principle_relabel_blocked",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "competence_required",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "utility_before_bargain",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "fomo_not_need",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "intake_not_integration",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "integration_requires_output",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "revision_versioned_authorized",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.1"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "original_record_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.2"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    },
+    {
+      "rule_id": "claim_ceiling_preserved",
+      "status": "PASS",
+      "evidence_refs": [
+        "evidence.3"
+      ],
+      "effect": "ALLOW_WITHIN_CEILING"
+    }
+  ],
+  "conclusion": {
+    "statement": "Principles, assumptions, decision order, risks and stop conditions can be frozen ex ante so process quality and outcome quality remain separately auditable after results appear.",
+    "claim_ceiling": "candidate_only_repository_governance",
+    "history_preserved": true,
+    "external_action_performed": false
+  }
+}
