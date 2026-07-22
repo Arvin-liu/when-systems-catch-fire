@@ -127,7 +127,10 @@
       "agent_responsibility_pilot_q34",
       "observation_prediction_contract",
       "observation_prediction_gate_validator",
-      "observation_prediction_pilot_q34"
+      "observation_prediction_pilot_q34",
+      "intervention_failure_contract",
+      "intervention_failure_gate_validator",
+      "intervention_failure_pilot"
     ],
     "layers": [
       "l0",
