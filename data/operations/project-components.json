@@ -2378,8 +2378,71 @@
         "data/multihistory/pilot-d2-i1.json",
         "data/multihistory/fixtures/"
       ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "schemas/counterfactual/counterfactual_unrealized_path-contract.schema.json",
+      "component_id": "counterfactual_unrealized_path_contract",
+      "component_type": "governance_constraint",
+      "description": "Q42-I1 typed evidence-bound contract. Counterfactuals, alternative decompositions, unrealized paths and speculative narratives can be kept distinct, and only identifiable portions receive bounded counterfactual status.",
+      "label": "Counterfactual & Unrealized-Path Ledger 合同",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q42-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "schemas/counterfactual/counterfactual_unrealized_path-contract.schema.json",
+        "docs/counterfactual/"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/counterfactual/validate_counterfactual_unrealized_path_gate.py",
+      "component_id": "counterfactual_unrealized_path_gate_validator",
+      "component_type": "governance_constraint",
+      "description": "Q42-I1 fail-closed real CLI enforcing evidence binding, exact parent, 8 task rules, candidate ceiling and no external action.",
+      "label": "Counterfactual & Unrealized-Path Ledger 门禁",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q42-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/counterfactual/",
+        "tests/counterfactual/"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/counterfactual/pilot-q42-i1.json",
+      "component_id": "counterfactual_unrealized_path_pilot",
+      "component_type": "governance_constraint",
+      "description": "Q42-I1 self-authored bounded repository pilot covering IDENTIFIABLE_COUNTERFACTUAL and SPECULATIVE_UNREALIZED_PATH; 24 fixtures drive the real CLI; no external action.",
+      "label": "Counterfactual & Unrealized-Path Ledger 受控试点",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "Q42-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/counterfactual/pilot-q42-i1.json",
+        "data/counterfactual/fixtures/"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.1.9"
+  "registry_version": "1.1.10"
 }
