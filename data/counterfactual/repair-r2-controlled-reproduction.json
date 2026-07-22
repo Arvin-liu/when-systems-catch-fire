@@ -4,7 +4,7 @@
   "capability_id": "counterfactual_unrealized_path",
   "parent_binding": {
     "task_id": "D2-I1",
-    "exact_head": "ea447ed7f6331f8ed5e58526f4c2341d3a41d6a6"
+    "exact_head": "1904628103d8c23133107d501a22e3f17d08221d"
   },
   "evidence_registry": [
     {
@@ -16,9 +16,7 @@
       "commit_sha": "1904628103d8c23133107d501a22e3f17d08221d",
       "repository_relative_path": "data/multihistory/pilot-d2-i1.json",
       "blob_sha": "58700ec5e0b091b4312b2cba3d3384d3805c908e",
-      "sha256": "sha256:2acfb4c795ebc3e728c7ac543635564099ffaa39710850f3e980fa21b7582fe4",
-      "record_type": "evidence_file",
-      "declared_role": "pilot_d2_i1"
+      "sha256": "sha256:2acfb4c795ebc3e728c7ac543635564099ffaa39710850f3e980fa21b7582fe4"
     },
     {
       "evidence_id": "evidence.2",
@@ -29,9 +27,7 @@
       "commit_sha": "1904628103d8c23133107d501a22e3f17d08221d",
       "repository_relative_path": "data/latent/pilot-f15-d1-i1.json",
       "blob_sha": "fb60cc2b57489e8333f7dd60b87b37dedb4a801d",
-      "sha256": "sha256:ea201b3f07d64afc1fa812dde8121910eb961be8f1338771a80293bacb5995e5",
-      "record_type": "evidence_file",
-      "declared_role": "pilot_f15_d1_i1"
+      "sha256": "sha256:ea201b3f07d64afc1fa812dde8121910eb961be8f1338771a80293bacb5995e5"
     },
     {
       "evidence_id": "evidence.3",
@@ -42,9 +38,7 @@
       "commit_sha": "1904628103d8c23133107d501a22e3f17d08221d",
       "repository_relative_path": "FOUNDATION.md",
       "blob_sha": "c084b5300c1f6a4eeac3fd08cd764c1d12f0ec2f",
-      "sha256": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
-      "record_type": "evidence_file",
-      "declared_role": "foundation"
+      "sha256": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa"
     }
   ],
   "records": [
