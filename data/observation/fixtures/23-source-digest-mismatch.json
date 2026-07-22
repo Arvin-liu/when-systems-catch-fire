@@ -27,7 +27,7 @@
         "path": "data/operations/propagation/121Q34-REPAIR-R1-closure.json",
         "exact_commit": "61c696f7cf74fed5525ec7da6cf8a7c4b544e5a8",
         "git_blob": "37b3fd3b3ab56661bbff3f067ac813b77069321c",
-        "sha256": "sha256:b1a3d134529171e7d181db05b7137fe9b3a0ab427bd49113c2f872ec5648f3b7"
+        "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
       }
     }
   ],
@@ -128,9 +128,10 @@
       "evaluation_id": "eval-q34-closure-drift-001",
       "binding_id": "bind-q34-closure-drift-001",
       "metrics": {
-        "accuracy": 0,
-        "residual_sign": "over",
-        "residual_magnitude": 2
+        "interval_coverage": 1.0,
+        "interval_width": 2,
+        "residual_sign": "exact",
+        "residual_magnitude": 0
       },
       "sample_size": 1,
       "scope_summary": "repository_main_iteration_q34 only; single deterministic outcome; no generalization beyond this scope",
@@ -142,21 +143,5 @@
       "artifact_digest": "sha256:84cbc575f4e7f053250f3bf809bdce913dd959650129994b88ed44fd23842bb9"
     }
   ],
-  "residuals": [
-    {
-      "residual_id": "res-q34-closure-drift-001",
-      "prediction_id": "pred-q34-closure-drift-001",
-      "binding_id": "bind-q34-closure-drift-001",
-      "residual_type": "numeric_residual",
-      "magnitude": 2,
-      "direction": "over",
-      "expected_status": "unexpected",
-      "unresolved_anomaly": true,
-      "escalation_target": "q39_failure_memory",
-      "claim_ceiling": "repository scope only; residual preserved, no causal inference",
-      "do_not_infer_cause": true,
-      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
-      "artifact_digest": "sha256:84cbc575f4e7f053250f3bf809bdce913dd959650129994b88ed44fd23842bb9"
-    }
-  ]
+  "residuals": []
 }
