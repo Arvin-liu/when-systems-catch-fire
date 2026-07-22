@@ -1588,6 +1588,7 @@
       },
       "path_patterns": [
         "schemas/observation/observation-prediction-contract.schema.json",
+        "docs/observation/121Q36-OBS-repair-r1-architecture.md",
         "docs/observation/q36-obs-architecture-decision.md",
         "docs/observation/q36-obs-typed-contract.md",
         "docs/observation/q36-obs-interfaces.md",
@@ -1614,6 +1615,7 @@
         "tools/observation/validate_observation_prediction_gate.py",
         "tests/observation/test_observation_prediction_core.py",
         "tests/observation/test_observation_prediction_gate.py",
+        "data/observation/evidence/q36-obs-repair-pilot-evidence.json",
         "data/agent/q34-claims-registry.json",
         "data/agent/q33-publication-rejects.json"
       ]
@@ -1655,7 +1657,14 @@
         "data/observation/fixtures/17-q33-rights-bypass.json",
         "data/observation/fixtures/18-negative-result-preserved.json",
         "data/observation/fixtures/19-abstain-defer-preserved.json",
-        "data/observation/fixtures/20-retrospective-replay-pilot.json"
+        "data/observation/fixtures/20-retrospective-replay-pilot.json",
+        "data/observation/fixtures/21-missing-predecessor-nonexistent-source-zero-digest.json",
+        "data/observation/fixtures/22-missing-source.json",
+        "data/observation/fixtures/23-source-digest-mismatch.json",
+        "data/observation/fixtures/24-source-wrong-exact-head.json",
+        "data/observation/fixtures/25-freeze-reveal-ordering.json",
+        "data/observation/fixtures/26-target-window-drift.json",
+        "data/observation/fixtures/27-rule-version-mismatch.json"
       ]
     }
   ],
