@@ -4,7 +4,7 @@
   "capability_id": "world_feedback_anomaly",
   "parent_binding": {
     "task_id": "SCIENTIFIC-METACOGNITION-I1",
-    "exact_head": "25f937ea8d53b4b14f31fc9c8779995f3c516bac"
+    "exact_head": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3"
   },
   "evidence_registry": [
     {
@@ -16,9 +16,7 @@
       "commit_sha": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
       "repository_relative_path": "data/metacognition/pilot-scientific-metacognition-i1.json",
       "blob_sha": "8f04b972ad6be64ad8a71660b54c2e2669565c56",
-      "sha256": "sha256:a6ec0da30eaa114e052670878c2dd2f006cfa53e9edb223ccacd7f97ba99cda4",
-      "record_type": "evidence_file",
-      "declared_role": "pilot_scientific_metacognition_i1"
+      "sha256": "sha256:a6ec0da30eaa114e052670878c2dd2f006cfa53e9edb223ccacd7f97ba99cda4"
     },
     {
       "evidence_id": "evidence.2",
@@ -29,9 +27,7 @@
       "commit_sha": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
       "repository_relative_path": "data/failure/pilot-q39-failure-lineage.json",
       "blob_sha": "7cd19ee0dd6c0da1c47da895e9021b2e09e12ca4",
-      "sha256": "sha256:ca11da2279caac2b99e783b1cdebeb3ca362536986b0f1c8ee78ba2c9f2bd805",
-      "record_type": "evidence_file",
-      "declared_role": "pilot_q39_failure_lineage"
+      "sha256": "sha256:ca11da2279caac2b99e783b1cdebeb3ca362536986b0f1c8ee78ba2c9f2bd805"
     },
     {
       "evidence_id": "evidence.3",
@@ -42,9 +38,7 @@
       "commit_sha": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
       "repository_relative_path": "FOUNDATION.md",
       "blob_sha": "c084b5300c1f6a4eeac3fd08cd764c1d12f0ec2f",
-      "sha256": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
-      "record_type": "evidence_file",
-      "declared_role": "foundation"
+      "sha256": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa"
     }
   ],
   "records": [

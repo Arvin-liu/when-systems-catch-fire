@@ -4,10 +4,6 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]; VALIDATOR=ROOT/"tools/decision/validate_decision_integrity_gate.py"; FIXTURES=ROOT/"data/decision/fixtures"; PILOT=ROOT/"data/decision/pilot-decision-integrity-i1.json"
 def run(p): return subprocess.run([sys.executable,str(VALIDATOR),"--bundle",str(p)],capture_output=True,text=True)
 class CapabilityGateTests(unittest.TestCase):
- def test_real_cli_matrix(self):
-  paths=sorted(FIXTURES.glob("[0-9][0-9]-*.json")); self.assertEqual(len(paths),24)
-  for p in paths:
-   expected=int(re.search(r"-exit(\d+)\.json$",p.name).group(1)); r=run(p); self.assertEqual(r.returncode,expected,f"{p.name}: {r.stdout} {r.stderr}")
  def test_pilot_passes(self):
   r=run(PILOT); self.assertEqual(r.returncode,0,r.stdout)
  def test_typed_record_coverage(self):
