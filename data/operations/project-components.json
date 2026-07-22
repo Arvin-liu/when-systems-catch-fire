@@ -93,8 +93,7 @@
         "copyright_governance_publication_gate_validator",
         "copyright_governance_history_remediation",
         "copyright_governance_tests",
-        "licensing",
-        "symbolic_power_perspective_gate_validator"
+        "licensing"
       ],
       "path_patterns": [
         "data/governance/",
@@ -2005,7 +2004,7 @@
       "canonical_target": "schemas/symbolic/symbolic_power_perspective-contract.schema.json",
       "component_id": "symbolic_power_perspective_contract",
       "component_type": "governance_constraint",
-      "description": "SYMBOLIC-SPHERE-I1 typed evidence-bound contract. The same object can be represented as separate material fact, actor position, meaning projection and institutionalized power surfaces, with evidence-constrained counter-readings and visible benefit/cost distribution.",
+      "description": "SYMBOLIC-SPHERE-I1 repair-r1 contract with explicit repository reference records binding path, commit, blob, actual-byte SHA-256, record type, declared role and selected typed evidence object. Structured actor, meaning, power, face, distribution, counter-reading and material-evidence semantics replace caller-supplied pass booleans.",
       "label": "Symbolic Object, Power & Multi-Perspective Governance 合同",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -2018,6 +2017,7 @@
       },
       "path_patterns": [
         "schemas/symbolic/symbolic_power_perspective-contract.schema.json",
+        "docs/symbolic/symbolic-sphere-i1-architecture-decision.md",
         "docs/symbolic/"
       ]
     },
@@ -2026,7 +2026,7 @@
       "canonical_target": "tools/symbolic/validate_symbolic_power_perspective_gate.py",
       "component_id": "symbolic_power_perspective_gate_validator",
       "component_type": "governance_constraint",
-      "description": "SYMBOLIC-SPHERE-I1 fail-closed real CLI enforcing evidence binding, exact parent, 12 task rules, candidate ceiling and no external action.",
+      "description": "SYMBOLIC-SPHERE-I1 repair-r1 fail-closed CLI resolves local Git commits and tree entries, recomputes blob and SHA-256 integrity, checks actual object roles, and independently validates material objects, actors, meaning projections, allowed power modalities, distinct faces, benefit/cost distribution, counter-reading evidence, material downgrade, truth ceiling and causal ceiling with stable exits 0 and 2-20.",
       "label": "Symbolic Object, Power & Multi-Perspective Governance 门禁",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -2039,9 +2039,7 @@
       },
       "path_patterns": [
         "tools/symbolic/",
-        "tests/symbolic/",
-        "tools/governance/structured_capability_gate.py",
-        "tools/governance/build_structured_capability_fixtures.py"
+        "tests/symbolic/"
       ]
     },
     {
@@ -2049,7 +2047,7 @@
       "canonical_target": "data/symbolic/pilot-symbolic-sphere-i1.json",
       "component_id": "symbolic_power_perspective_pilot",
       "component_type": "governance_constraint",
-      "description": "SYMBOLIC-SPHERE-I1 self-authored bounded repository pilot covering COMMUNITY_FOOTBALL_FIELD and SCHOOL_DATA_POLICY; 24 fixtures drive the real CLI; no external action.",
+      "description": "SYMBOLIC-SPHERE-I1 repository-local synthetic pilot covering COMMUNITY_FOOTBALL_FIELD and SCHOOL_DATA_POLICY. Twenty repair fixtures use ordinary data-integrity names and exercise real Git reference resolution plus task semantics; original manifest fixture paths remain compatibility artifacts. No external action or truth/causal upgrade.",
       "label": "Symbolic Object, Power & Multi-Perspective Governance 受控试点",
       "layer_or_overlay": "governance",
       "lifecycle": {
@@ -2062,6 +2060,7 @@
       },
       "path_patterns": [
         "data/symbolic/pilot-symbolic-sphere-i1.json",
+        "data/symbolic/symbolic-evidence-object-registry.json",
         "data/symbolic/fixtures/"
       ]
     }
