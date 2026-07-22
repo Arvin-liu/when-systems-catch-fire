@@ -13,18 +13,18 @@
     "verified_at": "2026-07-22"
   },
   "branch_pr": {
-    "base": "agent/d2-i1-multi-history-world-projection",
-    "base_head": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
-    "branch": "agent/q42-i1-counterfactual-unrealized-path-ledger",
+    "base": "repair/d2-r1-multi-history-world-projection",
+    "base_head": "1904628103d8c23133107d501a22e3f17d08221d",
+    "branch": "repair/q42-r1-counterfactual-ledger-binding",
     "draft": true,
-    "pr_number": 78,
+    "pr_number": 95,
     "merged": false
   },
   "head_binding": {
     "mode": "external_exact_head_attestation",
-    "pr_number": 78,
+    "pr_number": 95,
     "authority": "pull_request_body_and_1111_receipt",
-    "receipt_path": "agent-results/IGNITION-20260722-Q42-I1-q42-i1-execution-receipt.json",
+    "receipt_path": "agent-results/remaining-repair-train/Q42-I1-receipt.json",
     "embedded_exact_current_head": false,
     "live_refetch_required": true,
     "explanation": "PR #78 and 1111 bind final exact head and CI; repository object does not self-attest."
@@ -389,7 +389,7 @@
     "Inherited baseline debts remain",
     "Draft candidate unreviewed/unready/unmerged/not Current"
   ],
-  "receipt_location": "agent-results/IGNITION-20260722-Q42-I1-q42-i1-execution-receipt.json",
+  "receipt_location": "agent-results/remaining-repair-train/Q42-I1-receipt.json",
   "completion_seal_path": "reports/operations/Q42-I1-completion-seal.json",
   "completion_state": {
     "external_synchronization_attested": false,
@@ -626,8 +626,8 @@
     "impact_report_path": "data/operations/propagation/Q42-I1-impact-report.md",
     "system_map_delta_path": "data/operations/propagation/Q42-I1-system-map-delta.json",
     "residue_path": "data/operations/propagation/Q42-I1-residue.json",
-    "closure_hash": "30f19a8b93471dd152b5c56135980b4a8284ab1294f1b344dbae5faa987bcca7",
-    "base_identity": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
+    "closure_hash": "4658910053ba3bee41ea413491a1d4daeeebc126d9738d8a0a46298d8c8ed0f3",
+    "base_identity": "1904628103d8c23133107d501a22e3f17d08221d",
     "head_identity": "external_exact_head_attestation",
     "seed_paths": [
       "data/architecture/interactive-system-map-layout.json",
