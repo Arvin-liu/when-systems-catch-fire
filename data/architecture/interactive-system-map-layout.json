@@ -136,7 +136,10 @@
       "analogy_audit_pilot",
       "evidence_retrieval_contract",
       "evidence_retrieval_gate_validator",
-      "evidence_retrieval_pilot"
+      "evidence_retrieval_pilot",
+      "failure_lineage_contract",
+      "failure_lineage_gate_validator",
+      "failure_lineage_pilot"
     ],
     "layers": [
       "l0",

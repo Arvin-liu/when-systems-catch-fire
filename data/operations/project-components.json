@@ -1930,8 +1930,76 @@
         "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
         "data/retrieval/fixtures/"
       ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "schemas/failure/failure-lineage-contract.schema.json",
+      "component_id": "failure_lineage_contract",
+      "component_type": "governance_constraint",
+      "description": "Q39-I1 typed append-only failure lineage across Q36 residual/rollback, Q37 mismatch/retraction and Q38 counterexample/negative/failed retrieval exports; binds origin task, artifact, exact head, digest, causal status, retry boundary, propagation and ceiling impact without proving cause.",
+      "label": "失败记忆与修复传播 合同",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "121Q39-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "schemas/failure/failure-lineage-contract.schema.json",
+        "docs/failure/121Q39-repair-r1-architecture.md",
+        "docs/failure/q39-i1-architecture-decision.md",
+        "docs/failure/q39-interfaces.md",
+        "docs/failure/q39-legacy-lab-salvage-matrix.json"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "tools/failure/validate_failure_lineage_gate.py",
+      "component_id": "failure_lineage_gate_validator",
+      "component_type": "governance_constraint",
+      "description": "Q39-I1 deterministic fail-closed gate: rejects broken hash chains, silent overwrite/deletion, cause overclaim, unchanged retry, missing repair propagation, no downstream plan effect, retracted claims driving actions, environment-as-theory relabeling, lost negative results, broken source binding, invalid recurrence/closure, ceiling inflation, nonexistent propagation targets, wrong Git objects or actual-byte digests, fictional authority, unbound effects and boolean-only application claims. High-risk intervention effects remain request-only.",
+      "label": "失败记忆与修复传播 门禁",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "121Q39-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "tools/failure/validate_failure_lineage_gate.py",
+        "tools/failure/build_q39_fixtures.py",
+        "tests/failure/test_failure_lineage_gate.py"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/failure/pilot-q39-failure-lineage.json",
+      "component_id": "failure_lineage_pilot",
+      "component_type": "governance_constraint",
+      "description": "Q39-I1 bounded repository pilot replays Q36 rollback, Q37 analogy mismatch and Q38 counterexample/negative/failed retrieval into an append-only chain with structured Git-bound downstream plan-effect records; 30 fixtures drive the real CLI. High-risk intervention remains request-only. No real-world retry or external action.",
+      "label": "失败记忆与修复传播 受控试点",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "121Q39-I1 agent task",
+        "status": "draft_candidate"
+      },
+      "map_projection": {
+        "group": "governance",
+        "visible": true
+      },
+      "path_patterns": [
+        "data/failure/pilot-q39-failure-lineage.json",
+        "data/failure/q39-repair-effect-records.json",
+        "data/failure/fixtures/"
+      ]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.1.2"
+  "registry_version": "1.1.3"
 }

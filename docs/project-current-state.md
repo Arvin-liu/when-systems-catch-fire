@@ -121,3 +121,7 @@ When future work changes what the repository can do, what it cannot do, what it 
 - errors remain correctable;
 - history is not overwritten;
 - value boundaries remain auditable.
+
+### Q39-I1 append-only failure lineage (stacked Draft candidate)
+
+PR #71 stacks directly on the Q38 frozen exact head and adds a repository-only append-only lineage for Q36 residual/rollback, Q37 mismatch/retraction and Q38 counterexample/negative/failed retrieval exports. Hash-chain validity, causal-status restraint, prohibited retry, repair propagation, recurrence and ceiling effects are deterministic; no real-world cause, retry, external action, L7 or truth-layer upgrade is claimed. It remains unreviewed, unready, unmerged and not Current.

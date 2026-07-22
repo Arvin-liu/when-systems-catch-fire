@@ -1,0 +1,14 @@
+{
+  "legacy_branch": "lab/121q39-failure-memory-night",
+  "legacy_tip": "95d637fcd5a33791e1cf69deec49d36389b9aeb0",
+  "annotated_tag": "archive/lab-121q39-failure-memory-night",
+  "merge_performed": false,
+  "items": [
+    {"path":"schemas/failure/failure-memory.schema.json","disposition":"SELECTIVELY_REIMPLEMENT","reason":"retain typed lineage concept; rebuild for Q36-Q38 exact-head inputs"},
+    {"path":"tools/failure/validate_failure_memory.py","disposition":"SELECTIVELY_REIMPLEMENT","reason":"retain fail-closed intent; replace with deterministic hash-chain and propagation checks"},
+    {"path":"data/failure/failure-records.json","disposition":"HISTORICAL_ONLY","reason":"legacy records cannot become current evidence without replay"},
+    {"path":"data/failure/recurrence-signatures.json","disposition":"SELECTIVELY_REIMPLEMENT","reason":"recurrence signatures are required but must bind current artifacts"},
+    {"path":"data/failure/repair-propagation.json","disposition":"SELECTIVELY_REIMPLEMENT","reason":"repair propagation is required but must preserve append-only events"},
+    {"path":"tests/failure/test_failure_memory.py","disposition":"REPLACE","reason":"new tests must drive the current production CLI over attack fixtures"}
+  ]
+}
