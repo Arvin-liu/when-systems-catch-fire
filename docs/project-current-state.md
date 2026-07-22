@@ -125,3 +125,7 @@ When future work changes what the repository can do, what it cannot do, what it 
 ### Q39-I1 append-only failure lineage (stacked Draft candidate)
 
 PR #71 stacks directly on the Q38 frozen exact head and adds a repository-only append-only lineage for Q36 residual/rollback, Q37 mismatch/retraction and Q38 counterexample/negative/failed retrieval exports. Hash-chain validity, causal-status restraint, prohibited retry, repair propagation, recurrence and ceiling effects are deterministic; no real-world cause, retry, external action, L7 or truth-layer upgrade is claimed. It remains unreviewed, unready, unmerged and not Current.
+
+### SYMBOLIC-SPHERE-I1 Symbolic Object, Power & Multi-Perspective Governance (stacked Draft candidate)
+
+The same object can be represented as separate material fact, actor position, meaning projection and institutionalized power surfaces, with evidence-constrained counter-readings and visible benefit/cost distribution. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: ownership is not truth; popularity is not truth; perspective does not excuse material error; symbolic analysis is not complete causal proof.
