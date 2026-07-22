@@ -14,3 +14,9 @@ Fixture `25-nonexistent-source-fabricated-head-bypass.json` preserves the indepe
 2. Failed/unperformed retrieval remains explicit, carries no invented content binding, and cannot count as retrieved evidence.
 3. Null, empty, zero or placeholder digests and nonexistent/wrong objects fail closed.
 4. The Q37 seed is bound to canonical Q37 repair bytes; no network retrieval or external action is added.
+
+## Local validation evidence
+
+The real CLI returns `0` for the positive pilot. Nonexistent repository source, actual-byte digest mismatch, fabricated exact Git head, path traversal, null binding on a claimed retrieval, and zero placeholder digest each return `15`. The explicit failed/unperformed retrieval keeps both byte binding and digest null and is never counted as retrieved content.
+
+Q38 capability tests pass `6/6`, with the matrix exercising all 30 real CLI fixtures. The Q34–Q38 grouped capability and predecessor regression passes `172/172`. Remote branch, PR, tag and CI state is `NOT_CHECKED_LOCAL_ONLY`.
