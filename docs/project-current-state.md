@@ -137,3 +137,7 @@ Principles, assumptions, decision order, risks and stop conditions can be frozen
 ### SCIENTIFIC-METACOGNITION-I1 Scientific Metacognition & Epistemic-State Control Plane (stacked Draft candidate)
 
 Epistemic states and unknowns can be ranked and transitioned through authorized evidence acquisition with deterministic replay, bounded cost/risk/time and explicit replanning. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: model self-rating is not evidence; non-identifiable is not solved; dominant discourse is not fact; planning is not external execution.
+
+### Q41-I1 World-Feedback Anomaly Trigger & Governance (stacked Draft candidate)
+
+Recurring evidence-bound expected/observed divergence can trigger a bounded continue/repair/downgrade/rebuild/search decision without automatically inventing a hidden system. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: single residual is not a hidden system; anomaly is not causal proof; no threshold-free escalation; no selective failure sampling.
