@@ -1,0 +1,5 @@
+=== R0 RB09-CALLER-ASSERTED-SEMANTICS reproduction (authentic r2 engine) :: counterfactual_unrealized_path ===
+r2_engine_commit=3283ef6e76788b30a467467083f0d5ad7086b5a0
+gate=tools/counterfactual/validate_counterfactual_unrealized_path_gate.py exit=0
+stdout={"boundary": "repository candidate only; no external action or truth-layer upgrade", "errors": [], "exit_code": 0, "exit_name": "GATE_PASS", "gate": "counterfactual_unrealized_path"}
+DEFECT REPRODUCED: r2 engine returned GATE_PASS (exit 0) for a schema-valid but SEMANTICALLY-FALSE bundle (record values contradict the rules; the engine only verified evidence registration/reference and trusted the caller-asserted PASS). RB09-CALLER-ASSERTED-SEMANTICS not closed in r2.
