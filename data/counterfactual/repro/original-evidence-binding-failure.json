@@ -1,0 +1,168 @@
+{
+  "contract_version": "1.0.0",
+  "task_id": "Q42-I1",
+  "capability_id": "counterfactual_unrealized_path",
+  "parent_binding": {
+    "task_id": "D2-I1",
+    "exact_head": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb"
+  },
+  "evidence_registry": [
+    {
+      "evidence_id": "evidence.1",
+      "artifact": "data/counterfactual/repro/q42-r0-counterfactual-sample.json",
+      "exact_head": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
+      "artifact_digest": "sha256:a978d78cc1e74b42791cf6ec11905a865e86b028e40c2874c9b3da52a39cde93",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.2",
+      "artifact": "docs/counterfactual/q42-i1-architecture-decision.md",
+      "exact_head": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
+      "artifact_digest": "sha256:6f038b4abcfab83080c4f91de8e310f1aeb0003faf2089cebf820e07305892ed",
+      "rights_status": "REPOSITORY_INTERNAL"
+    },
+    {
+      "evidence_id": "evidence.3",
+      "artifact": "FOUNDATION.md",
+      "exact_head": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
+      "artifact_digest": "sha256:5fd6618adcdb8aad0643cea3e94bde049c634b85d26131e521b02f54df07b1aa",
+      "rights_status": "REPOSITORY_INTERNAL"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "record.1",
+      "record_type": "IDENTIFIABLE_COUNTERFACTUAL",
+      "counterfactuals": {
+        "status": "RECORDED",
+        "value": "bounded counterfactual for the identifiable portion only",
+        "evidence_refs": ["evidence.1"]
+      },
+      "alternative_decompositions": {
+        "status": "RECORDED",
+        "value": "bounded reframing of the observed system; a different decomposition is not a proof of what would have happened",
+        "evidence_refs": ["evidence.2"]
+      },
+      "unrealized_paths": {
+        "status": "RECORDED",
+        "value": "bounded speculative path that was not taken",
+        "evidence_refs": ["evidence.3"]
+      },
+      "speculative_narratives": {
+        "status": "RECORDED",
+        "value": "bounded if-then story explicitly labeled as speculation",
+        "evidence_refs": ["evidence.1"]
+      },
+      "intervention_differences": {
+        "status": "RECORDED",
+        "value": "external intervention was not performed; the counterfactual assumes no external action",
+        "evidence_refs": ["evidence.2"]
+      },
+      "identifiability_status": {
+        "status": "RECORDED",
+        "value": "only the identifiable portion receives bounded counterfactual status",
+        "evidence_refs": ["evidence.3"]
+      },
+      "observable_portion": {
+        "status": "RECORDED",
+        "value": "recorded portion of system state",
+        "evidence_refs": ["evidence.1"]
+      },
+      "unobservable_portion": {
+        "status": "RECORDED",
+        "value": "unobservable part is kept as not-promoted and remains unobservable",
+        "evidence_refs": ["evidence.2"]
+      },
+      "evidence": {
+        "status": "RECORDED",
+        "value": "evidence referenced by id",
+        "evidence_refs": ["evidence.3"]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "candidate-only repository governance",
+        "evidence_refs": ["evidence.1"]
+      }
+    },
+    {
+      "record_id": "record.2",
+      "record_type": "SPECULATIVE_UNREALIZED_PATH",
+      "counterfactuals": {
+        "status": "RECORDED",
+        "value": "bounded counterfactual for the identifiable portion only",
+        "evidence_refs": ["evidence.1"]
+      },
+      "alternative_decompositions": {
+        "status": "RECORDED",
+        "value": "bounded reframing; decomposing differently does not establish a causal fact",
+        "evidence_refs": ["evidence.2"]
+      },
+      "unrealized_paths": {
+        "status": "RECORDED",
+        "value": "bounded speculative path that was not taken",
+        "evidence_refs": ["evidence.3"]
+      },
+      "speculative_narratives": {
+        "status": "RECORDED",
+        "value": "bounded if-then story explicitly labeled as speculation",
+        "evidence_refs": ["evidence.1"]
+      },
+      "intervention_differences": {
+        "status": "RECORDED",
+        "value": "external intervention was not performed",
+        "evidence_refs": ["evidence.2"]
+      },
+      "identifiability_status": {
+        "status": "RECORDED",
+        "value": "only the identifiable portion receives bounded counterfactual status",
+        "evidence_refs": ["evidence.3"]
+      },
+      "observable_portion": {
+        "status": "RECORDED",
+        "value": "recorded portion of system state",
+        "evidence_refs": ["evidence.1"]
+      },
+      "unobservable_portion": {
+        "status": "RECORDED",
+        "value": "unobservable part is kept as not-promoted and remains unobservable",
+        "evidence_refs": ["evidence.2"]
+      },
+      "evidence": {
+        "status": "RECORDED",
+        "value": "evidence referenced by id",
+        "evidence_refs": ["evidence.3"]
+      },
+      "claim_ceiling": {
+        "status": "RECORDED",
+        "value": "candidate-only repository governance",
+        "evidence_refs": ["evidence.1"]
+      }
+    }
+  ],
+  "facts": {
+    "types_separated": true,
+    "identifiability_gate_required": true,
+    "unobservable_not_promoted": true,
+    "evidence_required": true,
+    "intervention_difference_explicit": true,
+    "speculation_labeled": true,
+    "no_if_then_causal_upgrade": true,
+    "claim_ceiling_preserved": true
+  },
+  "rule_assertions": [
+    { "rule_id": "types_separated", "status": "PASS", "evidence_refs": ["evidence.1"], "effect": "ALLOW_WITHIN_CEILING" },
+    { "rule_id": "identifiability_gate_required", "status": "PASS", "evidence_refs": ["evidence.2"], "effect": "ALLOW_WITHIN_CEILING" },
+    { "rule_id": "unobservable_not_promoted", "status": "PASS", "evidence_refs": ["evidence.3"], "effect": "ALLOW_WITHIN_CEILING" },
+    { "rule_id": "evidence_required", "status": "PASS", "evidence_refs": ["evidence.1"], "effect": "ALLOW_WITHIN_CEILING" },
+    { "rule_id": "intervention_difference_explicit", "status": "PASS", "evidence_refs": ["evidence.2"], "effect": "ALLOW_WITHIN_CEILING" },
+    { "rule_id": "speculation_labeled", "status": "PASS", "evidence_refs": ["evidence.3"], "effect": "ALLOW_WITHIN_CEILING" },
+    { "rule_id": "no_if_then_causal_upgrade", "status": "PASS", "evidence_refs": ["evidence.1"], "effect": "ALLOW_WITHIN_CEILING" },
+    { "rule_id": "claim_ceiling_preserved", "status": "PASS", "evidence_refs": ["evidence.2"], "effect": "ALLOW_WITHIN_CEILING" }
+  ],
+  "conclusion": {
+    "statement": "Counterfactuals, alternative decompositions, unrealized paths and speculative narratives are kept distinct; only the identifiable portion receives bounded counterfactual status.",
+    "claim_ceiling": "candidate_only_repository_governance",
+    "history_preserved": true,
+    "external_action_performed": false
+  }
+}
