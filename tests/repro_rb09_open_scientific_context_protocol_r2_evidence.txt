@@ -1,0 +1,5 @@
+=== R0 RB09-CALLER-ASSERTED-SEMANTICS reproduction (authentic r2 engine) :: open_scientific_context_protocol ===
+r2_engine_commit=20e598d75d8c40ed3e8af6aa1de14320c1cd0d3a
+gate=tools/context_protocol/validate_open_scientific_context_protocol_gate.py exit=0
+stdout={"boundary": "repository candidate only; no external action or truth-layer upgrade", "errors": [], "exit_code": 0, "exit_name": "GATE_PASS", "gate": "open_scientific_context_protocol"}
+DEFECT REPRODUCED: r2 engine returned GATE_PASS (exit 0) for a schema-valid but SEMANTICALLY-FALSE bundle (record values contradict the rules; the engine only verified evidence registration/reference and trusted the caller-asserted PASS). RB09-CALLER-ASSERTED-SEMANTICS not closed in r2.
