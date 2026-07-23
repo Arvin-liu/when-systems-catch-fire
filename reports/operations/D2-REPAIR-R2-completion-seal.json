@@ -1,0 +1,13 @@
+{
+  "seal_id": "D2-REPAIR-R2-SEAL",
+  "task_id": "D2-R2",
+  "branch": "repair-r2/d2-r2-multihistory-semantics",
+  "annotated_tag": "archive/d2-repair-r2-frozen-head",
+  "closure_complete": true,
+  "residue": 0,
+  "validation": "BUILDER_VALIDATION_PASS",
+  "independent_accepted": false,
+  "sealed_at": "2026-07-23T02:14:06+0800",
+  "sealed_by": "WorkBuddy night-shift main session (\u4e91\u5929\u660e)",
+  "statement": "RB09-DIRECT-PREDECESSOR-BINDING closed: D2 now binds its direct predecessor to the real repair-r2 head 95405ae791dc0359c2ab6597bfd7c50224c2c59c. The fail-closed shared engine (4 engine blockers) is inherited unchanged via the stacked merge; pilot evidence upgraded to the fail-closed schema."
+}
