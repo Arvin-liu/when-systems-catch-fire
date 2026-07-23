@@ -133,3 +133,7 @@ The same object can be represented as separate material fact, actor position, me
 ### DECISION-INTEGRITY-I1 Principle Lock, Process Quality & Outcome-Bias Governance (stacked Draft candidate)
 
 Principles, assumptions, decision order, risks and stop conditions can be frozen ex ante so process quality and outcome quality remain separately auditable after results appear. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: success does not prove process quality; failure does not disprove a good process; no investment advice; information intake is not integration.
+
+### SCIENTIFIC-METACOGNITION-I1 Scientific Metacognition & Epistemic-State Control Plane (stacked Draft candidate)
+
+Epistemic states and unknowns can be ranked and transitioned through authorized evidence acquisition with deterministic replay, bounded cost/risk/time and explicit replanning. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: model self-rating is not evidence; non-identifiable is not solved; dominant discourse is not fact; planning is not external execution.
