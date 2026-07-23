@@ -1,0 +1,61 @@
+{
+  "sample_version": "r0-repro",
+  "capability": "coaching_commitment_subcapability",
+  "purpose": "Minimal Q44-semantic sample used by R0 reproduction to show the original gate accepts evidence bound only to the mutable working tree (no immutable Git-object pin).",
+  "distinctions": {
+    "user_declared_goal": {
+      "definition": "The goal is declared by the user, not inferred, substituted or silently upgraded by the candidate.",
+      "status": "USER_DECLARED",
+      "goal_substitution": false
+    },
+    "informed_commitment": {
+      "definition": "Any commitment is made with informed understanding of scope, costs, risks and alternatives.",
+      "status": "INFORMED",
+      "coerced": false
+    },
+    "autonomy_consent": {
+      "definition": "Consent is reversible and belongs to the user; autonomy is preserved at every step.",
+      "status": "REVERSIBLE_CONSENT",
+      "is_irrevocable": false
+    },
+    "revise_pause_stop": {
+      "definition": "The user retains the right to revise, pause or stop at any checkpoint without penalty.",
+      "status": "ALWAYS_AVAILABLE",
+      "penalty_for_stopping": false
+    },
+    "non_manipulation_constraint": {
+      "definition": "No manipulative persuasion, no shame-driven compliance, no hidden goal substitution.",
+      "status": "ENFORCED",
+      "manipulation_present": false
+    },
+    "multi_perspective_narrative": {
+      "definition": "Multiple narratives and perspectives are preserved rather than collapsed into one.",
+      "status": "PRESERVED",
+      "single_narrative_forced": false
+    },
+    "outcome_process_separation": {
+      "definition": "Outcome is separated from process: a successful outcome does not retroactively legitimate the process, nor does a poor outcome automatically condemn a sound process.",
+      "status": "SEPARATED",
+      "outcome_proves_process": false
+    },
+    "escalation_boundary": {
+      "definition": "When a request exceeds the candidate's bounded authority, it becomes a request-only escalation to a human with the required authority.",
+      "status": "REQUEST_ONLY_ESCALATION",
+      "is_automatic_external": false
+    }
+  },
+  "consent_contrast": {
+    "note": "A result (good or bad) does not justify or legitimate an intervention; consent, goal ownership and autonomy are preserved independently of outcomes.",
+    "outcome_justifies_intervention": false,
+    "high_risk_becomes": "request_only"
+  },
+  "non_claims": [
+    "no manipulative persuasion is performed by this candidate",
+    "no hidden goal substitution is performed by this candidate",
+    "no shame-driven compliance is elicited by this candidate",
+    "outcome does not prove intervention legitimacy",
+    "this candidate does not establish a universal truth",
+    "this candidate does not establish a causal proof",
+    "this candidate is not deployed to an ecosystem"
+  ]
+}
