@@ -94,34 +94,86 @@ def build_bundle(config, matrix, rule_fields, pool_paths=None, head=None):
     """Build a valid positive bundle from real Git objects for ``config``."""
     pool_paths = pool_paths or POOL_PATHS
     head = head or head_sha()
-    # One evidence object per distinct declared_role in the matrix.
-    roles = sorted({r for spec in matrix.values() for r in spec["roles"]})
-    role_ev = {}
-    for i, role in enumerate(roles):
-        path = pool_paths[i % len(pool_paths)]
-        blob, sha = blob_and_sha(head, path)
-        role_ev[role] = {"path": path, "blob": blob, "sha": sha, "text": git_text(head, path)}
-    eid_by_role = {}
+    # Only use pool files that actually exist at the target commit (earlier r3
+    # checkpoints do not yet carry later capability gate files in their tree).
+    pool_paths = [
+        p for p in pool_paths
+        if git("cat-file", "-e", f"{head}:{p}").returncode == 0
+    ]
+    if not pool_paths:
+        raise RuntimeError(f"no usable pool paths exist at head {head}")
+    # One evidence object per distinct (declared_role, record_type) pair used by
+    # the matrix, so every rule's evidence matches its OWN role/type constraint
+    # exactly. A single role can be required with DIFFERENT types by different
+    # rules, so per-role evidence would fail the evaluator's type gate.
+    rt_map = {}      # (role, type) -> eid
+    ev_text = {}     # eid -> authoritative text
     evidence_registry = []
-    for role in roles:
-        eid = "evidence.role." + role
-        eid_by_role[role] = eid
-        ev = role_ev[role]
+    rt_index = 0
+
+    def _make_evidence(role, rtype):
+        nonlocal rt_index
+        key = (role, rtype)
+        if key in rt_map:
+            return rt_map[key]
+        eid = f"evidence.rt.{rt_index}"
+        rt_index += 1
+        path = pool_paths[rt_index % len(pool_paths)]
+        blob, sha = blob_and_sha(head, path)
         evidence_registry.append({
             "evidence_id": eid,
-            "artifact": ev["path"],
+            "artifact": path,
             "exact_head": head,
-            "artifact_digest": ev["sha"],
+            "artifact_digest": sha,
             "rights_status": "REPOSITORY_INTERNAL",
-            "repository_relative_path": ev["path"],
+            "repository_relative_path": path,
             "commit_sha": head,
-            "blob_sha": ev["blob"],
-            "sha256": ev["sha"],
-            "record_type": _role_type(matrix, role),
+            "blob_sha": blob,
+            "sha256": sha,
+            "record_type": rtype,
             "declared_role": role,
         })
+        ev_text[eid] = git_text(head, path)
+        rt_map[key] = eid
+        return eid
+
+    record_fields = schema_record_fields(config["schema"])
+    rec_rt = schema_record_type_enum(config["schema"])
+    effect = schema_effect_enum(config["schema"])
+    rec = {"record_id": "record.1", "record_type": rec_rt}
+    rule_eid = {}
+    for rid in config["rules"]:
+        role = matrix[rid]["roles"][0]
+        rtype = matrix[rid]["types"][0]
+        eid = _make_evidence(role, rtype)
+        rule_eid[rid] = eid
+        fld = rule_fields.get(rid)
+        if fld is None or fld not in record_fields:
+            fld = record_fields[config["rules"].index(rid) % len(record_fields)]
+        rec[fld] = {
+            "status": "RECORDED",
+            "value": ev_text[eid],
+            "evidence_refs": [eid],
+        }
+    # Any remaining record fields (not bound to a rule) get a default evidence.
+    default_eid = next(iter(rt_map.values()))
+    for fld in record_fields:
+        if fld not in rec:
+            rec[fld] = {
+                "status": "RECORDED",
+                "value": ev_text[default_eid],
+                "evidence_refs": [default_eid],
+            }
+    # Schemas require records.minItems >= 2. Emit two identical records so the
+    # bundle is schema-valid; the evaluator indexes record values regardless.
+    rec2 = json.loads(json.dumps(rec))
+    rec2["record_id"] = "record.2"
+    records = [rec, rec2]
+
     # A distinct single blob for the laundering test (its own real file).
-    launder_path = pool_paths[(len(roles) + 1) % len(pool_paths)]
+    launder_role = matrix[config["rules"][0]]["roles"][0]
+    launder_type = matrix[config["rules"][0]]["types"][0]
+    launder_path = pool_paths[(len(evidence_registry) + 1) % len(pool_paths)]
     lblob, lsha = blob_and_sha(head, launder_path)
     evidence_registry.append({
         "evidence_id": "evidence.launder",
@@ -133,45 +185,17 @@ def build_bundle(config, matrix, rule_fields, pool_paths=None, head=None):
         "commit_sha": head,
         "blob_sha": lblob,
         "sha256": lsha,
-        "record_type": _role_type(matrix, roles[0]),
-        "declared_role": roles[0],
+        "record_type": launder_type,
+        "declared_role": launder_role,
     })
-
-    record_fields = schema_record_fields(config["schema"])
-    rec_rt = schema_record_type_enum(config["schema"])
-    effect = schema_effect_enum(config["schema"])
-    rec = {"record_id": "record.1", "record_type": rec_rt}
-    # Bind each rule's field to its role evidence.
-    for rid in config["rules"]:
-        fld = rule_fields.get(rid)
-        if fld is None or fld not in record_fields:
-            fld = record_fields[config["rules"].index(rid) % len(record_fields)]
-        role = matrix[rid]["roles"][0]
-        ev = role_ev[role]
-        rec[fld] = {
-            "status": "RECORDED",
-            "value": ev["text"],
-            "evidence_refs": [eid_by_role[role]],
-        }
-    # Any remaining record fields (not bound to a rule) get a default evidence.
-    default_role = roles[0]
-    dev = role_ev[default_role]
-    for fld in record_fields:
-        if fld not in rec:
-            rec[fld] = {
-                "status": "RECORDED",
-                "value": dev["text"],
-                "evidence_refs": [eid_by_role[default_role]],
-            }
-    records = [rec]
+    ev_text["evidence.launder"] = git_text(head, launder_path)
 
     rule_assertions = []
     for rid in config["rules"]:
-        role = matrix[rid]["roles"][0]
         rule_assertions.append({
             "rule_id": rid,
             "status": "PASS",
-            "evidence_refs": [eid_by_role[role]],
+            "evidence_refs": [rule_eid[rid]],
             "effect": effect,
         })
     facts = {rid: True for rid in config["rules"]}
