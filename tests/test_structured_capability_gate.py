@@ -2,35 +2,25 @@
 """Independent fail-closed test for the shared structured-capability engine.
 
 Directly exercises tools/governance/structured_capability_gate.py as a real CLI
-with --bundle / --config-json, covering the four repair-r2 root blockers:
-  RB09-ENGINE-PATH-CONTAINMENT
-  RB09-MANDATORY-GIT-OBJECT-BINDING
-  RB09-EXACT-HEAD-NONRESOLUTION
-  RB09-CALLER-ASSERTED-SEMANTICS
+(with an in-process evaluator) covering the four repair-r2 root blockers AND the
+repair-r3 semantic-evaluator layer (RB09-CALLER-ASSERTED-SEMANTICS).
 
 A valid bundle is built from a REAL Git object in this repository so the engine
 has authoritative bytes to recompute; every negative case must exit non-zero.
 """
 import hashlib
 import json
-import os
 import re
-import subprocess
 import sys
 import tempfile
 import unittest
 from pathlib import Path
 
-def _repo_root():
-    d = Path(__file__).resolve().parent
-    out = subprocess.run(
-        ["git", "-C", str(d), "rev-parse", "--show-toplevel"],
-        capture_output=True, text=True,
-    ).stdout.strip()
-    return Path(out)
+from tools.governance.semantic_evaluator import semantic_evaluate
 
-
-REPO_ROOT = _repo_root()
+REPO_ROOT = Path(
+    __file__
+).resolve().parent.parent
 ENGINE = REPO_ROOT / "tools" / "governance" / "structured_capability_gate.py"
 HEAD_RE = re.compile(r"^[0-9a-f]{40}$")
 
@@ -40,9 +30,12 @@ REAL_PATH = "tools/governance/structured_capability_gate.py"
 
 
 def _git(args):
-    return subprocess.run(
-        ["git", "-C", str(REPO_ROOT)] + args, capture_output=True, text=True
-    )
+    return subprocess_run(["git", "-C", str(REPO_ROOT)] + args)
+
+
+def subprocess_run(args):
+    import subprocess
+    return subprocess.run(args, capture_output=True, text=True)
 
 
 def _blob_sha(commit, path):
@@ -54,14 +47,36 @@ def _sha256_of_blob(commit, path):
     return "sha256:" + hashlib.sha256(out.encode()).hexdigest()
 
 
-def run_engine(bundle_path, config):
-    cfg_path = bundle_path.with_suffix(".config.json")
-    cfg_path.write_text(json.dumps(config))
-    r = subprocess.run(
-        [sys.executable, str(ENGINE), "--bundle", str(bundle_path), "--config-json", str(cfg_path)],
-        capture_output=True, text=True,
-    )
-    return r.returncode, r.stdout.strip(), r.stderr.strip()
+# Shared-engine test config: 2 rules, 2 fields, one real evidence object.
+_SHARED_MATRIX = {
+    "rule_alpha": {"roles": ["authoritative_engine"], "types": ["ENGINE_SOURCE"]},
+    "rule_beta": {"roles": ["authoritative_engine"], "types": ["ENGINE_SOURCE"]},
+}
+_SHARED_FIELDS = {"rule_alpha": "field_a", "rule_beta": "field_b"}
+
+
+def _shared_evaluator(bundle, config, evidence):
+    return semantic_evaluate(bundle, config, evidence, _SHARED_MATRIX, _SHARED_FIELDS)
+
+
+def _engine_module():
+    import importlib
+    return importlib.import_module("tools.governance.structured_capability_gate")
+
+
+def run_engine(bundle_path, config, inject_evaluator=True):
+    """Run the shared engine in-process (so a callable evaluator can be supplied)."""
+    m = _engine_module()
+    cfg = dict(config)
+    if inject_evaluator:
+        cfg["evaluator"] = _shared_evaluator
+        cfg["evidence_matrix"] = _SHARED_MATRIX
+    old = sys.argv
+    sys.argv = ["structured_capability_gate.py", "--bundle", str(bundle_path)]
+    try:
+        return m.run(cfg)
+    finally:
+        sys.argv = old
 
 
 def minimal_schema():
@@ -103,6 +118,7 @@ class EngineFailClosedTests(unittest.TestCase):
         cls.schema_path = schema_path
         cls.blob = _blob_sha(REAL_COMMIT, REAL_PATH)
         cls.sha = _sha256_of_blob(REAL_COMMIT, REAL_PATH)
+        cls.content = _git(["show", f"{REAL_COMMIT}:{REAL_PATH}"]).stdout
         assert HEAD_RE.match(cls.blob), "blob_sha not 40-hex"
         assert cls.sha.startswith("sha256:"), "sha256 malformed"
 
@@ -133,13 +149,14 @@ class EngineFailClosedTests(unittest.TestCase):
                 }
             ],
             "records": [
-                {"record_id": "record.1", "field_a": {"evidence_refs": ["evidence.1"]},
-                 "field_b": {"evidence_refs": ["evidence.1"]}}
+                {"record_id": "record.1",
+                 "field_a": {"status": "RECORDED", "value": self.content, "evidence_refs": ["evidence.1"]},
+                 "field_b": {"status": "RECORDED", "value": self.content, "evidence_refs": ["evidence.1"]}}
             ],
             "facts": {"rule_alpha": True, "rule_beta": True},
             "rule_assertions": [
-                {"rule_id": "rule_alpha", "status": "PASS", "evidence_refs": ["evidence.1"]},
-                {"rule_id": "rule_beta", "status": "PASS", "evidence_refs": ["evidence.1"]},
+                {"rule_id": "rule_alpha", "status": "PASS", "evidence_refs": ["evidence.1"], "effect": "ALLOW_WITHIN_CEILING"},
+                {"rule_id": "rule_beta", "status": "PASS", "evidence_refs": ["evidence.1"], "effect": "ALLOW_WITHIN_CEILING"},
             ],
             "conclusion": {
                 "statement": "engine hardened against path and git-object bypass",
@@ -154,68 +171,89 @@ class EngineFailClosedTests(unittest.TestCase):
         p.write_text(json.dumps(bundle))
         return p
 
+    # ---- positive ----
     def test_valid_bundle_passes(self):
-        rc, out, err = run_engine(self._write(self._valid_bundle()), self._config())
-        self.assertEqual(rc, 0, f"valid bundle should pass: {out} {err}")
+        rc = run_engine(self._write(self._valid_bundle()), self._config())
+        self.assertEqual(rc, 0, "valid bundle should pass (exit 0)")
 
+    # ---- evidence-path / git-object blockers (repair-r2 controls) ----
     def test_absolute_path_rejected(self):
         b = self._valid_bundle()
         b["evidence_registry"][0]["repository_relative_path"] = "/etc/hosts"
-        rc, out, _ = run_engine(self._write(b), self._config())
-        self.assertNotEqual(rc, 0, "absolute path must be rejected")
+        self.assertNotEqual(run_engine(self._write(b), self._config()), 0, "absolute path must be rejected")
 
     def test_dotdot_traversal_rejected(self):
         b = self._valid_bundle()
         b["evidence_registry"][0]["repository_relative_path"] = "../etc/passwd"
-        rc, out, _ = run_engine(self._write(b), self._config())
-        self.assertNotEqual(rc, 0, "'..' traversal must be rejected")
+        self.assertNotEqual(run_engine(self._write(b), self._config()), 0, "'..' traversal must be rejected")
 
     def test_backslash_rejected(self):
         b = self._valid_bundle()
         b["evidence_registry"][0]["repository_relative_path"] = "tools\\governance\\x.py"
-        rc, out, _ = run_engine(self._write(b), self._config())
-        self.assertNotEqual(rc, 0, "backslash path must be rejected")
+        self.assertNotEqual(run_engine(self._write(b), self._config()), 0, "backslash path must be rejected")
 
     def test_fabricated_exact_head_rejected(self):
         b = self._valid_bundle()
         b["evidence_registry"][0]["exact_head"] = "0" * 40
-        rc, out, _ = run_engine(self._write(b), self._config())
-        self.assertNotEqual(rc, 0, "non-resolving fabricated exact_head must be rejected")
+        self.assertNotEqual(run_engine(self._write(b), self._config()), 0, "non-resolving fabricated exact_head must be rejected")
 
     def test_missing_git_object_field_rejected(self):
         b = self._valid_bundle()
         del b["evidence_registry"][0]["commit_sha"]
-        rc, out, _ = run_engine(self._write(b), self._config())
-        self.assertNotEqual(rc, 0, "missing commit_sha must be rejected")
+        self.assertNotEqual(run_engine(self._write(b), self._config()), 0, "missing commit_sha must be rejected")
 
     def test_tampered_sha256_rejected(self):
         b = self._valid_bundle()
         b["evidence_registry"][0]["sha256"] = "sha256:" + "0" * 64
-        rc, out, _ = run_engine(self._write(b), self._config())
-        self.assertNotEqual(rc, 0, "tampered sha256 must be rejected")
+        self.assertNotEqual(run_engine(self._write(b), self._config()), 0, "tampered sha256 must be rejected")
 
     def test_tampered_blob_sha_rejected(self):
         b = self._valid_bundle()
         b["evidence_registry"][0]["blob_sha"] = "0" * 40
-        rc, out, _ = run_engine(self._write(b), self._config())
-        self.assertNotEqual(rc, 0, "tampered blob_sha must be rejected")
-
-    def test_caller_asserted_facts_ignored(self):
-        # facts=True and status=PASS, but the evidence points at a non-resolving
-        # commit, so the engine must recompute and REJECT (not trust the flags).
-        b = self._valid_bundle()
-        b["evidence_registry"][0]["commit_sha"] = "0" * 40
-        b["evidence_registry"][0]["exact_head"] = "0" * 40
-        b["evidence_registry"][0]["blob_sha"] = self.blob
-        b["evidence_registry"][0]["sha256"] = self.sha
-        rc, out, _ = run_engine(self._write(b), self._config())
-        self.assertNotEqual(rc, 0, "caller-asserted facts/status must not bypass evidence")
+        self.assertNotEqual(run_engine(self._write(b), self._config()), 0, "tampered blob_sha must be rejected")
 
     def test_parent_binding_mismatch_rejected(self):
         b = self._valid_bundle()
         b["parent_binding"]["exact_head"] = "0" * 40
-        rc, out, _ = run_engine(self._write(b), self._config())
-        self.assertNotEqual(rc, 0, "parent head mismatch must be rejected")
+        self.assertNotEqual(run_engine(self._write(b), self._config()), 0, "parent head mismatch must be rejected")
+
+    # ---- repair-r3 semantic-evaluator layer (RB09-CALLER-ASSERTED-SEMANTICS) ----
+    def test_missing_evaluator_rejected(self):
+        # Evidence is valid, but no evaluator supplied -> req-7 fail-closed.
+        rc = run_engine(self._write(self._valid_bundle()), self._config(), inject_evaluator=False)
+        self.assertEqual(rc, 1, f"missing evaluator must exit 1, got {rc}")
+
+    def test_semantically_false_but_git_valid_fails(self):
+        # All Git refs valid, evidence real, evidence_refs registered, caller
+        # facts=true/status=PASS present -- but a record value contradicts the rule.
+        b = self._valid_bundle()
+        b["records"][0]["field_a"]["value"] = "CONTRADICTS_RULE_ALPHA_NOT_IN_EVIDENCE"
+        rc = run_engine(self._write(b), self._config())
+        self.assertNotEqual(rc, 0, "caller-asserted facts must not bypass recomputation")
+        self.assertEqual(rc, 30, f"first rule (index 0) should fail with 30, got {rc}")
+
+    def test_unrelated_valid_evidence_laundering_fails(self):
+        # One unrelated-but-valid blob referenced by every rule.
+        b = self._valid_bundle()
+        for rec in b["records"]:
+            rec["field_a"]["evidence_refs"] = ["evidence.1"]
+            rec["field_b"]["evidence_refs"] = ["evidence.1"]
+        for a in b["rule_assertions"]:
+            a["evidence_refs"] = ["evidence.1"]
+        # content still contradicts (field_b value differs from evidence.1 bytes)
+        b["records"][0]["field_b"]["value"] = "UNRELATED_LAUNDERED_VALUE"
+        rc = run_engine(self._write(b), self._config())
+        self.assertNotEqual(rc, 0, "single-blob laundering must be rejected")
+
+    def test_claim_ceiling_overreach(self):
+        b = self._valid_bundle()
+        b["conclusion"]["claim_ceiling"] = "universal truth established"
+        self.assertEqual(run_engine(self._write(b), self._config()), 20, "claim-ceiling overreach must exit 20")
+
+    def test_external_action_forbidden(self):
+        b = self._valid_bundle()
+        b["conclusion"]["external_action_performed"] = True
+        self.assertEqual(run_engine(self._write(b), self._config()), 21, "external action must exit 21")
 
 
 if __name__ == "__main__":
