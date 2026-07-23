@@ -1,0 +1,145 @@
+{
+  "actors": [
+    {
+      "actor_id": "zhiyuan",
+      "actor_type": "human",
+      "declared_role": "authorizer",
+      "authority_source": "human:zhiyuan",
+      "applicable_scope": "repository",
+      "status": "active"
+    },
+    {
+      "actor_id": "q35-builder",
+      "actor_type": "agent",
+      "declared_role": "initiator",
+      "authority_source": "org:maintainer-board",
+      "applicable_scope": "repository",
+      "status": "active"
+    },
+    {
+      "actor_id": "q35-executor",
+      "actor_type": "agent",
+      "declared_role": "executor",
+      "authority_source": "org:maintainer-board",
+      "applicable_scope": "repository",
+      "status": "active"
+    },
+    {
+      "actor_id": "q35-verifier",
+      "actor_type": "deterministic_verifier",
+      "declared_role": "verifier",
+      "authority_source": "deterministic:validate_responsibility_gate",
+      "applicable_scope": "repository",
+      "status": "active"
+    }
+  ],
+  "grants": [
+    {
+      "grant_id": "grant-q34-pilot",
+      "grantor": "zhiyuan",
+      "grantee": "q35-executor",
+      "allowed_action_types": [
+        "run_validator",
+        "edit_file"
+      ],
+      "resource_scope": "repository",
+      "required_commitment_state": "committed_current",
+      "required_review_level": "peer",
+      "risk_tier": "low",
+      "claim_ceiling": "repository scope only; Q34 candidate is a Draft, not Main-accepted; does not assert real-world legal responsibility",
+      "delegation": "forbidden",
+      "delegation_chain": [],
+      "separation_of_duty": {
+        "initiator_not_authorizer": true,
+        "authorizer_not_executor": true,
+        "executor_not_verifier": true
+      },
+      "valid_from": "2026-07-21T00:00:00Z",
+      "expires_at": "2027-07-21T00:00:00Z",
+      "revoked": false,
+      "status": "active"
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "act-q34-pilot",
+      "action_type": "run_validator",
+      "phase": "verification",
+      "initiator": "q35-builder",
+      "authorizer": "zhiyuan",
+      "executor": "q35-executor",
+      "verifier": "q35-verifier",
+      "target": "tools/agent/validate_responsibility_gate.py",
+      "grant_id": "grant-q34-pilot",
+      "claim_ref": "q33.seven_governance_components.current_in_main",
+      "claim_digest": "sha256:8414a6231fdc811a15885a8f9b7df4dc16626fad7916388f3396ba3fd992bf42",
+      "claim_exact_commit": "61c696f7cf74fed5525ec7da6cf8a7c4b544e5a8",
+      "grant_digest": "sha256:1610cc30cb498fd52ca04b895b0af2f9586ad394b9b7123b4201e7d3802ab5af",
+      "grant_exact_commit": "333515d8dd692e6d0dea415a8b24f8b5af3a9114",
+      "command": "python3 tools/agent/validate_responsibility_gate.py --bundle data/agent/pilot-q34-pr-controlled-op.json",
+      "claim_ceiling": "repository scope only; Q34 candidate is a Draft, not Main-accepted",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "conclusion": "validator PASS on legal bundle",
+      "at": "2026-07-21T00:00:00Z"
+    }
+  ],
+  "trajectory": [
+    {
+      "seq": 0,
+      "event_id": "ev-0000",
+      "action_id": "act-q34-pilot",
+      "phase": "intent",
+      "actor": "q35-builder",
+      "payload": {
+        "note": "propose controlled validator run on Q34 draft surface"
+      },
+      "prev_digest": "GENESIS",
+      "at": "2026-07-21T00:00:00Z",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "event_digest": "sha256:b99b99e98236fc6e32cb8ce8962dfc8cfd5d94ba7e7a95cff6be112892feb53e"
+    },
+    {
+      "seq": 1,
+      "event_id": "ev-0001",
+      "action_id": "act-q34-pilot",
+      "phase": "authorization_decision",
+      "actor": "zhiyuan",
+      "payload": {
+        "decision": "AUTHORIZE",
+        "grant": "grant-q34-pilot"
+      },
+      "prev_digest": "sha256:b99b99e98236fc6e32cb8ce8962dfc8cfd5d94ba7e7a95cff6be112892feb53e",
+      "at": "2026-07-21T00:00:01Z",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "event_digest": "sha256:f5a83d0eb39ed0857611659dd0c845a6a6f8148b638895f7b346212e21780967"
+    },
+    {
+      "seq": 2,
+      "event_id": "ev-0002",
+      "action_id": "act-q34-pilot",
+      "phase": "execution",
+      "actor": "q35-executor",
+      "payload": {
+        "cmd": "validate_responsibility_gate"
+      },
+      "prev_digest": "sha256:f5a83d0eb39ed0857611659dd0c845a6a6f8148b638895f7b346212e21780967",
+      "at": "2026-07-21T00:00:02Z",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "event_digest": "sha256:157e05e0753850416ea9c2bfd9ea79762c3badab6442c3b6f5cffcc8ae2cfa0e"
+    },
+    {
+      "seq": 3,
+      "event_id": "ev-0003",
+      "action_id": "act-q34-pilot",
+      "phase": "verification",
+      "actor": "q35-verifier",
+      "payload": {
+        "result": "PASS"
+      },
+      "prev_digest": "sha256:157e05e0753850416ea9c2bfd9ea79762c3badab6442c3b6f5cffcc8ae2cfa0e",
+      "at": "2026-07-21T00:00:03Z",
+      "exact_head": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "event_digest": "sha256:bff647b567d7d8da8460018af0d74409e90457b0a8697cee97282b44f12ebb93"
+    }
+  ]
+}

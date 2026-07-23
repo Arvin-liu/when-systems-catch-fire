@@ -191,6 +191,7 @@ llms.txt
 - [12 元协议](./docs/meta-protocols/12-meta-protocols.md) — 展示当前元协议文本，但它们不是自动成立的数学公理。
 - [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) — 说明项目最高规范边界怎样约束行动价值。
 - [外部治理记录](./docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md) — 记录 12 元协议的规范性审核，不等于事实证明或治理批准。
+- [发现—承诺边界](./docs/discovery/discovery-commitment-boundary.md) — Q34 Draft 候选：区分"发现候选主张"与"承诺为项目当前结论"；fail-closed 承诺门禁阻止无证据/自证/越界/类比冒充机制的承诺，保留未承诺路径与撤回历史；非 L7/真理层。
 
 </details>
 

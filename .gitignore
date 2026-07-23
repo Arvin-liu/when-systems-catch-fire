@@ -17,3 +17,4 @@ htmlcov/
 .tmp-pages
 .tmp-dl/
 .tmp-dl-artifact/
+tests/intervention/.int_test_tmp/

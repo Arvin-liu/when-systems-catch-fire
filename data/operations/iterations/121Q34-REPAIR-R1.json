@@ -1,0 +1,645 @@
+{
+  "task_id": "121Q34-REPAIR-R1",
+  "method_version": "1.3.0",
+  "current_method_version": "1.3.0",
+  "change_classification": [
+    "REPAIR",
+    "GOVERNANCE_CHANGE",
+    "INTERFACE_CHANGE"
+  ],
+  "verified_start": {
+    "main_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+    "source": "live origin/main plus original Q34 frozen head before repair-r1",
+    "verified_at": "2026-07-22"
+  },
+  "branch_pr": {
+    "base": "main",
+    "base_head": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+    "branch": "repair/121q34-r1-commitment-evidence-binding",
+    "draft": true,
+    "pr_number": 82,
+    "merged": false
+  },
+  "head_binding": {
+    "authority": "pull_request_body_and_1111_receipt",
+    "embedded_exact_current_head": false,
+    "explanation": "Repair candidate head and CI remain external attestations; repository objects do not self-establish independent review or lifecycle promotion.",
+    "live_refetch_required": true,
+    "mode": "external_exact_head_attestation",
+    "pr_number": 82,
+    "receipt_path": "agent-results/full-repair-train/121q34-repair-r1-receipt.json"
+  },
+  "gap": {
+    "evidence": [
+      "independent review B02 bypass reproduced as GATE_PASS at original frozen head",
+      "repair CLI attacks reject unrelated claim, fictional verifier, zero digest, wrong scope/head and self-reference"
+    ],
+    "smallest_material_action": "Bind Q34 commitments to canonical claim bytes, Git objects, actual bytes and externally sourced reviewer authority.",
+    "summary": "Q34 repair-r1 closes builder-observed B02 paths while remaining a Draft candidate awaiting independent re-review."
+  },
+  "claim_ceiling": "candidate_only: Q34 repair-r1 deterministically binds immutable claim bytes, repository-contained Git objects, actual-byte digests, canonical actor authority, and a scoped external review decision. Builder evidence only; not independent review, Accepted, Ready, Merged, Current, real-world truth, legal compliance or completeness.",
+  "status": {
+    "accepted": false,
+    "candidate": true,
+    "current": false,
+    "merged": false,
+    "ready_for_gpt_verification": false
+  },
+  "impact_matrix": [
+    {
+      "surface": "schemas/discovery/commitment-claim.schema.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "tools/discovery/validate_commitment_gate.py",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "tests/discovery/test_commitment_gate.py",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/discovery/claims/q33-seven-governance-components-current.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/discovery/evidence-resolvable-registry.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/discovery/actor-authority-registry.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/discovery/review-decisions/q33-current-main-independent-decision.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/discovery/fixtures/08-retraction-new-positive.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/discovery/fixtures/12-independent-review-bypass-reproduction.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "docs/discovery/121Q34-repair-r1-architecture.md",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/operations/project-components.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/operations/iterations/121Q34-REPAIR-R1.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "reports/operations/121Q34-REPAIR-R1-completion-seal.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/operations/propagation/121Q34-REPAIR-R1-request.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/operations/propagation/121Q34-REPAIR-R1-closure.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/operations/propagation/121Q34-REPAIR-R1-impact-report.md",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/operations/propagation/121Q34-REPAIR-R1-system-map-delta.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/operations/propagation/121Q34-REPAIR-R1-residue.json",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    },
+    {
+      "surface": "data/governance/",
+      "decision": "CHANGE",
+      "reason": "Q34 repair-r1 source, deterministic propagation output, manifest/seal, or governance projection."
+    }
+  ],
+  "changed_surfaces": [
+    "schemas/discovery/commitment-claim.schema.json",
+    "tools/discovery/validate_commitment_gate.py",
+    "tests/discovery/test_commitment_gate.py",
+    "data/discovery/claims/q33-seven-governance-components-current.json",
+    "data/discovery/evidence-resolvable-registry.json",
+    "data/discovery/actor-authority-registry.json",
+    "data/discovery/review-decisions/q33-current-main-independent-decision.json",
+    "data/discovery/fixtures/08-retraction-new-positive.json",
+    "data/discovery/fixtures/12-independent-review-bypass-reproduction.json",
+    "docs/discovery/121Q34-repair-r1-architecture.md",
+    "data/operations/project-components.json",
+    "data/operations/iterations/121Q34-REPAIR-R1.json",
+    "reports/operations/121Q34-REPAIR-R1-completion-seal.json",
+    "data/operations/propagation/121Q34-REPAIR-R1-request.json",
+    "data/operations/propagation/121Q34-REPAIR-R1-closure.json",
+    "data/operations/propagation/121Q34-REPAIR-R1-impact-report.md",
+    "data/operations/propagation/121Q34-REPAIR-R1-system-map-delta.json",
+    "data/operations/propagation/121Q34-REPAIR-R1-residue.json",
+    "data/governance/"
+  ],
+  "validation": {
+    "external_exact_head_policy": {
+      "required": true,
+      "authority": "pull_request_body_and_1111_receipt",
+      "required_workflows": [
+        "foundation-validation",
+        "function-os-ci"
+      ],
+      "live_refetch_before_acceptance_or_merge": true
+    },
+    "local": [
+      {
+        "name": "q34_repair_cli_attacks",
+        "status": "PASS",
+        "evidence": "tests/discovery/test_commitment_gate.py"
+      },
+      {
+        "name": "q34_positive_pilot",
+        "status": "PASS",
+        "evidence": "data/discovery/claims/q33-seven-governance-components-current.json"
+      },
+      {
+        "name": "repair_propagation",
+        "status": "PASS",
+        "evidence": "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+      }
+    ],
+    "remote": []
+  },
+  "rollback_strategy": "Delete only the new repair branch/PR through an ordinary future lifecycle action or revert repair commits; never rewrite original frozen head, Main, tags, or public history.",
+  "remaining_limitations": [
+    "Builder implemented and tested the repair but did not independently review it.",
+    "Repair PR remains Draft/unmerged/not Current and original PR #65 remains unchanged.",
+    "Exact repair head, remote workflow runs, annotated repair tag and 1111 receipt are external R4 attestations."
+  ],
+  "receipt_location": "agent-results/full-repair-train/121q34-repair-r1-receipt.json",
+  "completion_seal_path": "reports/operations/121Q34-REPAIR-R1-completion-seal.json",
+  "completion_state": {
+    "external_synchronization_attested": false,
+    "external_synchronization_required": true,
+    "implementation_complete": true,
+    "project_synchronization_complete": false,
+    "repository_synchronization_complete": true
+  },
+  "state_transition": {
+    "changed_dimensions": [
+      "capability",
+      "governance"
+    ],
+    "maximum_claim_boundary": "candidate_only: Q34 repair-r1 deterministically binds immutable claim bytes, repository-contained Git objects, actual-byte digests, canonical actor authority, and a scoped external review decision. Builder evidence only; not independent review, Accepted, Ready, Merged, Current, real-world truth, legal compliance or completeness.",
+    "prior_state": "original Q34 frozen candidate 06749dd118df7ade715b53f360e8177b09cdab49 with B02 self-certification bypass",
+    "proposed_state": "q34_repair_r1_candidate_awaiting_independent_re_review",
+    "source_refs": [
+      "data/operations/propagation/121Q34-REPAIR-R1-request.json",
+      "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+    ],
+    "subjects": [
+      "121Q34-REPAIR-R1"
+    ]
+  },
+  "synchronization_closure": {
+    "registry_path": "data/operations/synchronization-surfaces.json",
+    "registry_version": "1.2.0",
+    "surface_decisions": [
+      {
+        "surface_id": "agent.handoff",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "No Current handoff statement changes before independent re-review.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "ai.start",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "No Current cold-start statement changes before independent re-review.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "copyright_governance",
+        "decision": "CHANGE",
+        "reason": "Q34 commitment governance now verifies canonical claim bytes, Git objects, actual bytes and reviewer authority.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_build_validation",
+        "derived_from": [
+          "method.iteration",
+          "agent.handoff"
+        ]
+      },
+      {
+        "surface_id": "external.pages_homepage",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Draft repair has no production Pages claim.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "post_merge_external_render_attestation",
+        "derived_from": [
+          "human.readme",
+          "human.pages_source"
+        ]
+      },
+      {
+        "surface_id": "human.ai_guide",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "No Current AI guide change is justified by a Draft repair.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.current_state",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Q34 remains a non-Current Draft candidate pending independent re-review.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.pages_source",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Repair does not change Pages source or deploy production.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_build_validation",
+        "derived_from": [
+          "human.readme"
+        ]
+      },
+      {
+        "surface_id": "human.readme",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Repair remains a Draft candidate and does not change the human front-door capability claim.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.summary",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Existing Q34 navigation remains accurate; repair internals do not add a new current capability.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "human.usage",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "No current usage contract changes before independent re-review.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "machine.llms",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "No Current machine front-door change is justified.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "method.iteration",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Repair follows but does not alter iteration method 1.3.0.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_schema_and_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "method.result_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "No operation template change.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "method.review_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Independent re-review remains external and no template changes.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "method.task_template",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "No operation template change.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": [
+          "method.iteration"
+        ]
+      },
+      {
+        "surface_id": "release.changelog",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Draft repair history is carried by commits, PR and repair manifest rather than Current release notes.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      },
+      {
+        "surface_id": "release.versioning",
+        "decision": "NO_CHANGE_WITH_REASON",
+        "reason": "Repair does not change project versioning.",
+        "evidence_refs": [
+          "data/operations/propagation/121Q34-REPAIR-R1-closure.json"
+        ],
+        "validation_mode": "repository_semantic_validation",
+        "derived_from": []
+      }
+    ],
+    "unresolved_residue": [],
+    "external_attestations": [
+      {
+        "surface_id": "external.pages_homepage",
+        "stage": "post_merge",
+        "status": "pending",
+        "authority": "pull_request_body_and_1111_receipt",
+        "evidence_refs": [
+          "external:pr_body:82"
+        ],
+        "live_state_locally_verifiable": false
+      }
+    ],
+    "live_external_surfaces_verified": false,
+    "external_verification_policy": "not_applicable_governance_only"
+  },
+  "propagation_closure": {
+    "request_path": "data/operations/propagation/121Q34-REPAIR-R1-request.json",
+    "closure_path": "data/operations/propagation/121Q34-REPAIR-R1-closure.json",
+    "impact_report_path": "data/operations/propagation/121Q34-REPAIR-R1-impact-report.md",
+    "system_map_delta_path": "data/operations/propagation/121Q34-REPAIR-R1-system-map-delta.json",
+    "residue_path": "data/operations/propagation/121Q34-REPAIR-R1-residue.json",
+    "closure_hash": "780dccce268ee5cf8a11eee4086d4830703c58f3bb306be30e235fc7ef157a32",
+    "base_identity": "06749dd118df7ade715b53f360e8177b09cdab49",
+    "head_identity": "external_exact_head_attestation",
+    "seed_paths": [
+      "data/discovery/actor-authority-registry.json",
+      "data/discovery/claims/q33-seven-governance-components-current.json",
+      "data/discovery/evidence-resolvable-registry.json",
+      "data/discovery/fixtures/08-retraction-new-positive.json",
+      "data/discovery/fixtures/12-independent-review-bypass-reproduction.json",
+      "data/discovery/review-decisions/q33-current-main-independent-decision.json",
+      "data/operations/iterations/121Q34-REPAIR-R1.json",
+      "data/operations/project-components.json",
+      "data/operations/propagation/121Q34-REPAIR-R1-request.json",
+      "docs/discovery/121Q34-repair-r1-architecture.md",
+      "reports/operations/121Q34-REPAIR-R1-completion-seal.json",
+      "schemas/discovery/commitment-claim.schema.json",
+      "tests/discovery/test_commitment_gate.py",
+      "tools/discovery/validate_commitment_gate.py"
+    ],
+    "seed_components": [
+      "discovery_commitment_claim_contract",
+      "discovery_commitment_gate_validator",
+      "discovery_commitment_pilot_q33",
+      "historical_reports",
+      "iteration_manifest_contract",
+      "project_component_registry",
+      "propagation_calculator"
+    ],
+    "resolved_components": [
+      "discovery_commitment_claim_contract",
+      "discovery_commitment_gate_validator",
+      "discovery_commitment_pilot_q33",
+      "historical_reports",
+      "iteration_manifest_contract",
+      "project_component_registry",
+      "propagation_calculator",
+      "system_map_projection"
+    ],
+    "typed_path_ids": [
+      "registry_generates_projection"
+    ],
+    "component_decisions": [
+      {
+        "decision": "CHANGE",
+        "item_id": "discovery_commitment_claim_contract",
+        "reason": "Contract adds immutable claim digest, actor roles and byte-bound review decision."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "discovery_commitment_gate_validator",
+        "reason": "Validator resolves commit/tree/blob/bytes and canonical actor authority."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "discovery_commitment_pilot_q33",
+        "reason": "Pilot and attacks bind real Git objects and external review identities."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "historical_reports",
+        "reason": "Repair seal records the candidate without changing historical report semantics."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "iteration_manifest_contract",
+        "reason": "Repair adds an instance but does not alter the manifest contract."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "pages_pipeline",
+        "reason": "No Pages behavior change."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "project_component_registry",
+        "reason": "Only existing Q34 component path coverage expands; registry semantics stay unchanged."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "propagation_calculator",
+        "reason": "Repair closure is a generated instance; calculator semantics stay unchanged."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "system_map_layout",
+        "reason": "No new visible component or layout change."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "system_map_projection",
+        "reason": "Existing Q34 nodes remain the complete visible projection."
+      }
+    ],
+    "surface_decisions": [
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "agent.handoff",
+        "reason": "No Current handoff statement changes before independent re-review."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "ai.start",
+        "reason": "No Current cold-start statement changes before independent re-review."
+      },
+      {
+        "decision": "CHANGE",
+        "item_id": "copyright_governance",
+        "reason": "Q34 commitment governance now verifies canonical claim bytes, Git objects, actual bytes and reviewer authority."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "external.pages_homepage",
+        "reason": "Draft repair has no production Pages claim."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.ai_guide",
+        "reason": "No Current AI guide change is justified by a Draft repair."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.current_state",
+        "reason": "Q34 remains a non-Current Draft candidate pending independent re-review."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.pages_source",
+        "reason": "Repair does not change Pages source or deploy production."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.readme",
+        "reason": "Repair remains a Draft candidate and does not change the human front-door capability claim."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.summary",
+        "reason": "Existing Q34 navigation remains accurate; repair internals do not add a new current capability."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "human.usage",
+        "reason": "No current usage contract changes before independent re-review."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "machine.llms",
+        "reason": "No Current machine front-door change is justified."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.iteration",
+        "reason": "Repair follows but does not alter iteration method 1.3.0."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.result_template",
+        "reason": "No operation template change."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.review_template",
+        "reason": "Independent re-review remains external and no template changes."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "method.task_template",
+        "reason": "No operation template change."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "release.changelog",
+        "reason": "Draft repair history is carried by commits, PR and repair manifest rather than Current release notes."
+      },
+      {
+        "decision": "NO_CHANGE_WITH_REASON",
+        "item_id": "release.versioning",
+        "reason": "Repair does not change project versioning."
+      }
+    ],
+    "registry_derived_surfaces": [
+      "agent.handoff",
+      "ai.start",
+      "copyright_governance",
+      "external.pages_homepage",
+      "human.ai_guide",
+      "human.current_state",
+      "human.pages_source",
+      "human.readme",
+      "human.summary",
+      "human.usage",
+      "machine.llms",
+      "method.iteration",
+      "release.changelog",
+      "release.versioning"
+    ],
+    "system_map_impact": {
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Repair changes enforcement inside existing Q34 nodes and adds no visible component.",
+      "delta_path": "data/operations/propagation/121Q34-REPAIR-R1-system-map-delta.json"
+    },
+    "unresolved_residue": [],
+    "closure_complete": true
+  },
+  "q29r": {
+    "modified": false,
+    "sha256": "c135acd35a2232f0a6b3f933db482932a9fe5d5add51f870af97901faac90d4b"
+  }
+}

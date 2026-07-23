@@ -1,0 +1,16 @@
+{
+  "task_id": "121Q38-I1",
+  "legacy_branch": "lab/121q38-structural-retrieval-night",
+  "legacy_tip": "b9dae182da28614f04b0d3c5c124f5ec3b621e9f",
+  "preserve_tag": "archive/lab-121q38-structural-retrieval-night",
+  "wholesale_merge": false,
+  "items": [
+    {"path":"data/retrieval/relation-signatures.json","disposition":"SELECTIVELY_REIMPLEMENT","reason":"relation identity helps source-family and structural query metadata, but cannot establish mechanism"},
+    {"path":"data/retrieval/case-structures.json","disposition":"SELECTIVELY_REIMPLEMENT","reason":"case metadata becomes typed evidence items with provenance, rights, grade and ceiling"},
+    {"path":"data/retrieval/counterexample-set.json","disposition":"SELECTIVELY_REIMPLEMENT","reason":"negative evidence is mandatory and exported to Q39"},
+    {"path":"schemas/retrieval/structural-retrieval.schema.json","disposition":"REJECT","reason":"permissive entries array omits seed authorization, provenance, rights, selection, stop and ceiling constraints"},
+    {"path":"tools/retrieval/validate_structural_retrieval.py","disposition":"REJECT","reason":"global-data validation is not a fail-closed bundle CLI and does not cover required attack paths"},
+    {"path":"tests/retrieval/test_structural_retrieval.py","disposition":"REJECT","reason":"includes hard-coded Main assertion and does not drive a real CLI over attack fixtures"},
+    {"path":"legacy Q34-Q37 assets included in the LAB ancestry","disposition":"REFERENCE_ONLY","reason":"superseded by frozen Q34-Q37 production contracts"}
+  ]
+}

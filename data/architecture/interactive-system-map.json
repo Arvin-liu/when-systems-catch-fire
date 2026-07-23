@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.1",
+    "component_registry_version": "1.1.4",
     "topology_version": "1.1.0",
     "layout_version": "1.1.0"
   },
@@ -353,6 +353,198 @@
       "target": "reports/atlas/maps/map-maintainer-sustainability-economics.md",
       "description": "将时间、注意力、资金、维护负荷与锁定风险纳入行动。",
       "lifecycle_status": "current"
+    },
+    {
+      "id": "discovery_commitment_claim_contract",
+      "label": "发现—承诺边界 claim 合同",
+      "group": "governance",
+      "target": "schemas/discovery/commitment-claim.schema.json",
+      "description": "Q34 typed claim/proposition contract separating discovery of a candidate claim from commitment as a current conclusion.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "discovery_commitment_gate_validator",
+      "label": "发现—承诺 承诺门禁",
+      "group": "governance",
+      "target": "tools/discovery/validate_commitment_gate.py",
+      "description": "Q34 fail-closed deterministic commitment gate/CLI: blocks premature, circular, ceiling-breach, analogy-as-mechanism, stale-head, selective, unattested, self-approved commitments.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "discovery_commitment_pilot_q33",
+      "label": "发现—承诺 Q33 试点",
+      "group": "governance",
+      "target": "data/discovery/claims/q33-seven-governance-components-current.json",
+      "description": "Q34 pilot claim proving the boundary: 7 Q33 components Current in Main (allowed) vs global-copyright-compliance (blocked by ceiling).",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "agent_responsibility_contract",
+      "label": "责任—权限—行动轨迹 合同",
+      "group": "governance",
+      "target": "schemas/agent/responsibility-contract.schema.json",
+      "description": "Q35 typed responsibility-authority-action-trace contract: actor/role, authority grant, action intent/decision/execution, append-only hash-linked trajectory, responsibility attribution.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "agent_responsibility_gate_validator",
+      "label": "责任—权限 门禁",
+      "group": "governance",
+      "target": "tools/agent/validate_responsibility_gate.py",
+      "description": "Q35 fail-closed responsibility gate/CLI: blocks self-grant, model-name-as-authority, expired/revoked grant, scope breach, broken delegation, separation-of-duty, stale head, ceiling breach, uncommitted action, chain tamper, silent rewrite, Q33 bypass, forced many-hands.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "agent_responsibility_pilot_q34",
+      "label": "责任—权限 Q34 试点",
+      "group": "governance",
+      "target": "data/agent/pilot-q34-pr-controlled-op.json",
+      "description": "Q35 pilot: controlled repository operation on Q34 Draft PR with separated roles (initiator/authorizer/executor/verifier); proves role separation without claiming Q34 candidate is Main-accepted.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "observation_prediction_contract",
+      "label": "观察—预测校核 合同",
+      "group": "governance",
+      "target": "schemas/observation/observation-prediction-contract.schema.json",
+      "description": "Q36-OBS typed observation-prediction calibration contract: observation spec (event time vs available time), freeze-before-reveal prediction commitment, independent outcome binding, deterministic evaluation/calibration, residual/anomaly preservation with do-not-infer-cause marker.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "observation_prediction_gate_validator",
+      "label": "观察—预测校核 门禁",
+      "group": "governance",
+      "target": "tools/observation/validate_observation_prediction_gate.py",
+      "description": "Q36-OBS fail-closed observation-prediction calibration gate/CLI: blocks temporal leaks, target/window/scope mismatch, stale heads, silent prediction rewrites, selective outcome deletion, self-generated outcomes, illegal probabilities, uncommitted-Q34-claim predictions, missing Q35 authority, Q33 rights bypass, universal-capability and causal overclaims, unbound calibration, dropped failures.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "observation_prediction_pilot_q34",
+      "label": "观察—预测校核 Q34 试点",
+      "group": "governance",
+      "target": "data/observation/pilot-q34-closure-drift-prediction.json",
+      "description": "Q36-OBS pilot: freeze-before-reveal interval prediction about Q34 propagation-closure drift, bound to an independent deterministic outcome observation with calibration record; plus an honestly-marked retrospective replay fixture (RETROSPECTIVE_REPLAY_NOT_LIVE_FORECAST).",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "intervention_failure_contract",
+      "label": "干预—失效动力学 合同",
+      "group": "governance",
+      "target": "schemas/intervention/intervention-failure-dynamics-contract.schema.json",
+      "description": "Q36-INT typed intervention-failure dynamics contract: intervention request (Q34-committed claim + Q35 authority + Q36-OBS read-only observation/residual), safety envelope, controlled execution record, outcome/effect evaluation with baseline/comparator, failure mode record, and stop/rollback history; fail-closed against uncommitted claims, missing authority, residual-as-cause, external action, envelope exceed, stop-condition violation, failure rewrite, expected-effect rewrite, causal/universal overclaim, incomplete rollback, many-hands forgery, unvalidated observation, separation-of-duty violation, missing baseline.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "intervention_failure_gate_validator",
+      "label": "干预—失效动力学 门禁",
+      "group": "governance",
+      "target": "tools/intervention/validate_intervention_failure_gate.py",
+      "description": "Q36-INT fail-closed intervention-failure dynamics gate/CLI: blocks Q34 uncommitted claims, Q35 authority gaps, Q33 rights bypass, missing safety envelope/stop/rollback, real-world external action, envelope exceed, stop-condition violation, failure rewrite, expected-effect rewrite, causal/universal overclaim, incomplete rollback, many-hands forgery, unvalidated observation, separation-of-duty violation, missing baseline, placeholder digests and unbound Git bytes. Deterministic exit codes 0-23.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "intervention_failure_pilot",
+      "label": "干预—失效动力学 受控试点",
+      "group": "governance",
+      "target": "data/intervention/pilot-controlled-intervention.json",
+      "description": "Q36-INT controlled pilot: deterministic repo-local replay of an intervention bundle with Q34 claim + Q35 grant + Q36-OBS observation, asserting the fail-closed gate passes (exit 0) and stop/rollback are append-only and verified; plus 23 attack/positive fixtures. No Main mutation, no external real-world system access or control.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "analogy_audit_contract",
+      "label": "类比审计与可运输性 合同",
+      "group": "governance",
+      "target": "schemas/analogy/analogy-audit-contract.schema.json",
+      "description": "Q37-I1 typed analogy-audit & transportability contract: analogy candidates (SURFACE_SIMILARITY / METAPHOR_ONLY / STRUCTURAL_ANALOGY / MECHANISM_CANDIDATE / TRANSPORTABILITY_CANDIDATE / COUNTERANALOGY), explicit mappings (entities, correspondence, cardinality, directionality, invariants, mismatches, omitted variables, hidden premises, scale/time/context differences, digest), mechanism evidence (distinct from shared form), transportability assessments (overlap, invariances, shifts, boundary, falsifier, uncertainty), and audit decisions with claim ceiling; fail-closed against metaphor/local-isomorphism/selective-correspondence/unaudited-structural-map/Q36-residual upgraded to mechanism identity, undeclared shift, residual-as-cause, mechanism upgrade, transportability without overlap/invariance/boundary/falsifier, suppressed counteranalogy, Q14 uncommitted claim, Q35 authority gap, Q33 rights bypass, Q38 premature start, claim-ceiling overreach. Does NOT prove shared mechanism, real-world transportability or universal law; does NOT add L7/truth layer; does NOT materialize F15/D1/D2.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "analogy_audit_gate_validator",
+      "label": "类比审计与可运输性 门禁",
+      "group": "governance",
+      "target": "tools/analogy/validate_analogy_audit_gate.py",
+      "description": "Q37-I1 fail-closed analogy-audit & transportability gate/CLI: blocks metaphor/local-isomorphism/selective-correspondence/unaudited-structural-map/Q36-residual upgraded to mechanism identity or universal law, undeclared scale/time/context or transportability shift, mechanism evidence insufficient/circular, residual-as-cause, transportability missing overlap/invariance/boundary/falsifier, suppressed counteranalogy/negative evidence, Q34 candidate self-promotion, Q35 fictional authority, Q33 rights bypass, Q38 premature start, claim-ceiling overreach, semantic inconsistency, unbound source bytes, semantic digest mismatch and wrong actual checkout head. Deterministic exit codes 0-24.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "analogy_audit_pilot",
+      "label": "类比审计与可运输性 受控试点",
+      "group": "governance",
+      "target": "data/analogy/pilot-real-repo-analogy-audit.json",
+      "description": "Q37-I1 real-repo pilot: deterministic repo-local replay of an analogy bundle against the real Q34 committed claim (fix.analogy_as_mechanism from data/discovery/fixtures/05-analogy-as-mechanism.json), asserting the fail-closed gate passes (exit 0) and that Q38 case retrieval remains gated (q38_search_permission NOT_ALLOWED / ALLOWED_AS_RESTRICTED_SEED only). Plus 30 attack/positive fixtures. No Main mutation, no Q38 case retrieval, no external real-world system access or control.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "evidence_retrieval_contract",
+      "label": "案例、反例与边界证据检索 合同",
+      "group": "governance",
+      "target": "schemas/retrieval/evidence-retrieval-contract.schema.json",
+      "description": "Q38-I1 typed evidence-retrieval contract: accepts only a Q37 audited restricted seed; freezes question, scope, balanced query plan, inclusion/exclusion policy and stop condition; preserves support, counterexample, boundary, negative and failed-retrieval items with source-family identity, rights, provenance, digest, access time, grade, freshness, representativeness, selection history, unresolved gaps, claim ceiling and Q39 exports. Case count cannot establish mechanism or causal proof.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "evidence_retrieval_gate_validator",
+      "label": "案例、反例与边界证据检索 门禁",
+      "group": "governance",
+      "target": "tools/retrieval/validate_evidence_retrieval_gate.py",
+      "description": "Q38-I1 fail-closed evidence-retrieval gate with stable exits 0 and 2-21. It blocks unaudited Q37 seeds, support-only search, negative deletion, duplicate-family counting, rights bypass, stale evidence, missing representativeness, quantity voting, similarity-to-mechanism promotion, stop-condition rewrite, selective exclusion, ceiling inflation, invalid provenance/digest, incomplete selection logs, missing Q39 exports, counterevidence override, temporal invalidity, unbounded search, dangling references, nonexistent repository sources, wrong Git objects, path escape, null/placeholder bindings and digests not computed from actual retrieved bytes.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "evidence_retrieval_pilot",
+      "label": "案例、反例与边界证据检索 受控试点",
+      "group": "governance",
+      "target": "data/retrieval/pilot-q38-repository-evidence-retrieval.json",
+      "description": "Q38-I1 bounded real-repository replay: one traceable support item, counterexample, boundary case, negative result and deliberately unperformed external retrieval, all bound to the Q37 repair seed and actual repository bytes; 30 fixtures drive the real CLI. Negative and failed records export to Q39; external validity remains an explicit gap. No external fact, mechanism proof or real-world action is claimed.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "failure_lineage_contract",
+      "label": "失败记忆与修复传播 合同",
+      "group": "governance",
+      "target": "schemas/failure/failure-lineage-contract.schema.json",
+      "description": "Q39-I1 typed append-only failure lineage across Q36 residual/rollback, Q37 mismatch/retraction and Q38 counterexample/negative/failed retrieval exports; binds origin task, artifact, exact head, digest, causal status, retry boundary, propagation and ceiling impact without proving cause.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "failure_lineage_gate_validator",
+      "label": "失败记忆与修复传播 门禁",
+      "group": "governance",
+      "target": "tools/failure/validate_failure_lineage_gate.py",
+      "description": "Q39-I1 deterministic fail-closed gate: rejects broken hash chains, silent overwrite/deletion, cause overclaim, unchanged retry, missing repair propagation, no downstream plan effect, retracted claims driving actions, environment-as-theory relabeling, lost negative results, broken source binding, invalid recurrence/closure, ceiling inflation, nonexistent propagation targets, wrong Git objects or actual-byte digests, fictional authority, unbound effects and boolean-only application claims. High-risk intervention effects remain request-only.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "failure_lineage_pilot",
+      "label": "失败记忆与修复传播 受控试点",
+      "group": "governance",
+      "target": "data/failure/pilot-q39-failure-lineage.json",
+      "description": "Q39-I1 bounded repository pilot replays Q36 rollback, Q37 analogy mismatch and Q38 counterexample/negative/failed retrieval into an append-only chain with structured Git-bound downstream plan-effect records; 30 fixtures drive the real CLI. High-risk intervention remains request-only. No real-world retry or external action.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "symbolic_power_perspective_contract",
+      "label": "Symbolic Object, Power & Multi-Perspective Governance 合同",
+      "group": "governance",
+      "target": "schemas/symbolic/symbolic_power_perspective-contract.schema.json",
+      "description": "SYMBOLIC-SPHERE-I1 repair-r1 contract with explicit repository reference records binding path, commit, blob, actual-byte SHA-256, record type, declared role and selected typed evidence object. Structured actor, meaning, power, face, distribution, counter-reading and material-evidence semantics replace caller-supplied pass booleans.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "symbolic_power_perspective_gate_validator",
+      "label": "Symbolic Object, Power & Multi-Perspective Governance 门禁",
+      "group": "governance",
+      "target": "tools/symbolic/validate_symbolic_power_perspective_gate.py",
+      "description": "SYMBOLIC-SPHERE-I1 repair-r1 fail-closed CLI resolves local Git commits and tree entries, recomputes blob and SHA-256 integrity, checks actual object roles, and independently validates material objects, actors, meaning projections, allowed power modalities, distinct faces, benefit/cost distribution, counter-reading evidence, material downgrade, truth ceiling and causal ceiling with stable exits 0 and 2-20.",
+      "lifecycle_status": "draft_candidate"
+    },
+    {
+      "id": "symbolic_power_perspective_pilot",
+      "label": "Symbolic Object, Power & Multi-Perspective Governance 受控试点",
+      "group": "governance",
+      "target": "data/symbolic/pilot-symbolic-sphere-i1.json",
+      "description": "SYMBOLIC-SPHERE-I1 repository-local synthetic pilot covering COMMUNITY_FOOTBALL_FIELD and SCHOOL_DATA_POLICY. Twenty repair fixtures use ordinary data-integrity names and exercise real Git reference resolution plus task semantics; original manifest fixture paths remain compatibility artifacts. No external action or truth/causal upgrade.",
+      "lifecycle_status": "draft_candidate"
     },
     {
       "id": "external_input",

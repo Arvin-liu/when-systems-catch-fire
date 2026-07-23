@@ -1,0 +1,9 @@
+{
+  "references": [
+    "data/operations/iterations/121Q33.json",
+    "reports/operations/121Q33-completion-seal.json",
+    "data/operations/project-components.json",
+    "data/discovery/review-decisions/q33-current-main-independent-decision.json",
+    "github:Arvin-liu/when-systems-catch-fire:merge:81edff4039619b8343a82cb1b84785c8a9f6a990"
+  ]
+}

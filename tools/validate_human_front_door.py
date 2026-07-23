@@ -130,6 +130,18 @@ def validate_system_map(root: Path, readme: str, pages: str) -> int:
         "copyright_governance_material_classification", "copyright_governance_history_remediation",
         "copyright_governance_publication_gate_validator", "copyright_governance_non_republication_principle",
         "copyright_governance_tests",
+        "discovery_commitment_claim_contract", "discovery_commitment_gate_validator",
+        "discovery_commitment_pilot_q33",
+        "agent_responsibility_contract", "agent_responsibility_gate_validator",
+        "agent_responsibility_pilot_q34",
+        "observation_prediction_contract", "observation_prediction_gate_validator",
+        "observation_prediction_pilot_q34",
+        "intervention_failure_contract", "intervention_failure_gate_validator",
+        "intervention_failure_pilot",
+        "analogy_audit_contract", "analogy_audit_gate_validator", "analogy_audit_pilot",
+        "evidence_retrieval_contract", "evidence_retrieval_gate_validator", "evidence_retrieval_pilot",
+        "failure_lineage_contract", "failure_lineage_gate_validator", "failure_lineage_pilot",
+        "symbolic_power_perspective_contract", "symbolic_power_perspective_gate_validator", "symbolic_power_perspective_pilot",
     }
     require({node["id"] for node in spec["nodes"]} == required_nodes, "interactive system map does not cover the declared complete node set")
 
