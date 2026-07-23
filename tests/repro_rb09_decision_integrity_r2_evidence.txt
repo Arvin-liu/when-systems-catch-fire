@@ -1,0 +1,4 @@
+=== R0 RB09-CALLER-ASSERTED-SEMANTICS reproduction :: decision_integrity ===
+gate=tools/decision/validate_decision_integrity_gate.py exit=0
+stdout={"boundary": "repository candidate only; no external action or truth-layer upgrade", "errors": [], "exit_code": 0, "exit_name": "GATE_PASS", "gate": "decision_integrity"}
+DEFECT REPRODUCED: r2 engine returned GATE_PASS (exit 0) for a schema-valid but SEMANTICALLY-FALSE bundle (record values contradict the rules; engine ignored them). RB09-CALLER-ASSERTED-SEMANTICS not closed.
