@@ -129,3 +129,7 @@ PR #71 stacks directly on the Q38 frozen exact head and adds a repository-only a
 ### SYMBOLIC-SPHERE-I1 Symbolic Object, Power & Multi-Perspective Governance (stacked Draft candidate)
 
 The same object can be represented as separate material fact, actor position, meaning projection and institutionalized power surfaces, with evidence-constrained counter-readings and visible benefit/cost distribution. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: ownership is not truth; popularity is not truth; perspective does not excuse material error; symbolic analysis is not complete causal proof.
+
+### DECISION-INTEGRITY-I1 Principle Lock, Process Quality & Outcome-Bias Governance (stacked Draft candidate)
+
+Principles, assumptions, decision order, risks and stop conditions can be frozen ex ante so process quality and outcome quality remain separately auditable after results appear. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: success does not prove process quality; failure does not disprove a good process; no investment advice; information intake is not integration.
