@@ -100,7 +100,10 @@ def run_object(eng: arr_runtime.ARRRuntime, obj: dict, *,
         att = attribute(primary_class="EXTRACTION_FAILURE",
                         secondary_factors=[f"{type(exc).__name__}: {exc}"],
                         note="adapter failed to resolve typed reference")
-        return _receipt(obj, eng, None, att, input_immutable=None, deterministic_identity="")
+        receipt = _receipt(obj, eng, None, att, input_immutable=None, deterministic_identity="")
+        receipt["growth_gate"] = growth_gate_for_single_object(att)
+        receipt["replay_stable"] = False
+        return receipt
 
     src, obs = _build_source_observation(obj)
     before_src = copy.deepcopy(src)
@@ -112,7 +115,10 @@ def run_object(eng: arr_runtime.ARRRuntime, obj: dict, *,
                         secondary_factors=[f"{type(exc).__name__}: {exc}"],
                         note="ARR runtime raised on pilot input")
         input_immutable = (src == before_src and obs == before_obs)
-        return _receipt(obj, eng, None, att, input_immutable=input_immutable, deterministic_identity="")
+        receipt = _receipt(obj, eng, None, att, input_immutable=input_immutable, deterministic_identity="")
+        receipt["growth_gate"] = growth_gate_for_single_object(att)
+        receipt["replay_stable"] = False
+        return receipt
 
     input_immutable = (src == before_src and obs == before_obs)
 

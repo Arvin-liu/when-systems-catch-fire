@@ -150,6 +150,14 @@ class ARRRuntime:
                 "registry-driven binding set is empty; overstep protection "
                 "disabled -> refuse to run (ADR-R2-01 fail-closed)"
             )
+        # Fail-closed on malformed bindings: every binding must carry a known
+        # effect type (a dead/unknown effect must never be a silent no-op).
+        for b in bindings:
+            eff = (b.get("effect") or {}).get("type")
+            if eff not in ("reject",):
+                raise ContractValidationError(
+                    f"binding {b.get('binding_id')} has unknown/missing effect type "
+                    f"{eff!r} (ADR-R2-01 fail-closed)")
 
     # -- helpers ---------------------------------------------------------
     @staticmethod
