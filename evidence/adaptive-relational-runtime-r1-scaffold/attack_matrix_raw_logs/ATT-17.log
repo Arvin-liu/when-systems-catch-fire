@@ -1,0 +1,9 @@
+id: ATT-17
+command: runtime._project(relation_type='similar_to', uncertainty='...proves that...')
+kind: project
+category: reject:overclaim_upgrade_attempt(B4)
+expected: {"reject_code": "overclaim_upgrade_attempt", "target": "REJECT"}
+observed_result: {"rule_id": "R11", "target": "REJECT", "reject_code": "overclaim_upgrade_attempt"}
+decisive_artifact: reject receipt: overclaim_upgrade_attempt (B4 forbidden words)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

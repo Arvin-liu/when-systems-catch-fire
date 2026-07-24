@@ -1,0 +1,9 @@
+id: ATT-31
+command: runtime._project(relation_type='references', claim_ceiling='SECONDARY')
+kind: project
+category: accept:R12-adjacency(ceiling SECONDARY)
+expected: {"reject_code": null, "target": "ARN"}
+observed_result: {"rule_id": "R12", "target": "ARN", "reject_code": null}
+decisive_artifact: route receipt: ARN (adjacency admitted, not upgraded)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

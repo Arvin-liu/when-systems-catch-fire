@@ -1,0 +1,9 @@
+id: ATT-24
+command: runtime._project(relation_type='probabilistic', x_psd complete, x_causal_status='established', no handoff)
+kind: project
+category: reject:psd_causal_escape_attempt
+expected: {"reject_code": "psd_causal_escape_attempt", "target": "REJECT"}
+observed_result: {"rule_id": "R3", "target": "REJECT", "reject_code": "psd_causal_escape_attempt"}
+decisive_artifact: reject receipt: psd_causal_escape_attempt (no MCF handoff)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

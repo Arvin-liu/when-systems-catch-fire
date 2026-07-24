@@ -1,0 +1,9 @@
+id: ATT-23
+command: runtime._project(relation_type='after', interval reversed w/ times)
+kind: project
+category: reject:time_impossible_path(G_TEMPORAL)
+expected: {"reject_code": "time_impossible_path", "target": "REJECT"}
+observed_result: {"rule_id": "R6", "target": "REJECT", "reject_code": "time_impossible_path"}
+decisive_artifact: reject receipt: time_impossible_path (G_TEMPORAL mixed timescale)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

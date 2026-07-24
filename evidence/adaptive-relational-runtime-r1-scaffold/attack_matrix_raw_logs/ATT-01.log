@@ -1,0 +1,9 @@
+id: ATT-01
+command: runtime._project({'record_kind':'Source', ...})
+kind: project
+category: reject:not_a_relation_record
+expected: {"reject_code": "not_a_relation_record", "target": "REJECT"}
+observed_result: {"rule_id": "PRE", "target": "REJECT", "reject_code": "not_a_relation_record"}
+decisive_artifact: reject receipt: not_a_relation_record (projection-routes code)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

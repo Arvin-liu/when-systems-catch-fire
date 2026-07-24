@@ -1,0 +1,9 @@
+id: ATT-30
+command: runtime._project(relation_type='similar_to', claim_ceiling='SECONDARY')
+kind: project
+category: accept:R11-similarity(ceiling SECONDARY)
+expected: {"reject_code": null, "target": "ARN"}
+observed_result: {"rule_id": "R11", "target": "ARN", "reject_code": null}
+decisive_artifact: route receipt: ARN (similarity admitted, not upgraded)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

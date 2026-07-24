@@ -1,0 +1,9 @@
+id: ATT-28
+command: runtime._project(relation_type='supports')
+kind: project
+category: accept:R7-support(B2)
+expected: {"reject_code": null, "target": "ARN"}
+observed_result: {"rule_id": "R7", "target": "ARN", "reject_code": null}
+decisive_artifact: route receipt: ARN (B2: support does not establish independence)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

@@ -1,0 +1,9 @@
+id: ATT-27
+command: runtime._project(relation_type='causal_handoff', causal_handoff_ref='mcf_x')
+kind: project
+category: accept:R1-causal-handoff(B5)
+expected: {"reject_code": null, "target": "MCF_REVIEW"}
+observed_result: {"rule_id": "R1", "target": "MCF_REVIEW", "reject_code": null}
+decisive_artifact: route receipt: MCF_REVIEW (B5: causal delegated to MCF only via router)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

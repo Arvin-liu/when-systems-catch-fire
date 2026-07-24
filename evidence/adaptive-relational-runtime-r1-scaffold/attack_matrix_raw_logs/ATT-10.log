@@ -1,0 +1,9 @@
+id: ATT-10
+command: runtime._project(relation_type='do_calculus', obs==int distribution)
+kind: project
+category: reject:observation_intervention_conflated
+expected: {"reject_code": "observation_intervention_conflated", "target": "REJECT"}
+observed_result: {"rule_id": "R13", "target": "REJECT", "reject_code": "observation_intervention_conflated"}
+decisive_artifact: reject receipt: observation_intervention_conflated
+decisive_artifact_validity: VALID
+actual_exit_code: 0

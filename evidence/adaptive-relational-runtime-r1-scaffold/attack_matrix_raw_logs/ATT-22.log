@@ -1,0 +1,9 @@
+id: ATT-22
+command: runtime._project(relation_type='before', x_temporal_impossible=true)
+kind: project
+category: reject:time_impossible_path(G_TEMPORAL)
+expected: {"reject_code": "time_impossible_path", "target": "REJECT"}
+observed_result: {"rule_id": "R6", "target": "REJECT", "reject_code": "time_impossible_path"}
+decisive_artifact: reject receipt: time_impossible_path (G_TEMPORAL impossible flag)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

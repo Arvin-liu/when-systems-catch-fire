@@ -1,0 +1,82 @@
+{
+  "source": {
+    "record_kind": "Source",
+    "schema_version": "arr-r1.0",
+    "scope": {
+      "domain": "demo",
+      "context_ref": null
+    },
+    "provenance": [
+      "fixture"
+    ],
+    "explicitness": "EXPLICIT",
+    "claim_ceiling": "SECONDARY",
+    "uncertainty": "none stated",
+    "alternatives": [],
+    "lifecycle": {
+      "state": "OBSERVED",
+      "entered_at_scope": null,
+      "transition_ref": null
+    },
+    "time": {
+      "publication_time": null,
+      "publication_time_status": "ABSENT",
+      "ingestion_time": "2026-07-24T00:00:00Z",
+      "ingestion_time_status": "OK"
+    },
+    "extensions": {},
+    "source_type": "git_commit",
+    "content_hash": "0ef0c537686504f915cdb5bbb1add99f1e2e3373f10ccfb8e9739f83e22c86e7",
+    "locator": {
+      "ref_type": "git_commit",
+      "ref_value": "cccccccccccccccccccccccccccccccccccccccc"
+    },
+    "tier": "PRIMARY",
+    "rights_boundary": {
+      "classification": "public",
+      "republication": "allowed"
+    },
+    "record_id": "src_32160b7c2ce4aaa0c509fe1d5e43e84b"
+  },
+  "observation": {
+    "record_kind": "Observation",
+    "schema_version": "arr-r1.0",
+    "scope": {
+      "domain": "demo",
+      "context_ref": null
+    },
+    "provenance": [
+      "fixture"
+    ],
+    "explicitness": "EXPLICIT",
+    "claim_ceiling": "SECONDARY",
+    "uncertainty": "none stated",
+    "alternatives": [],
+    "lifecycle": {
+      "state": "OBSERVED",
+      "entered_at_scope": null,
+      "transition_ref": null
+    },
+    "time": {
+      "observation_time": "2026-07-24T00:00:00Z",
+      "observation_time_status": "OK",
+      "ingestion_time": "2026-07-24T00:00:00Z",
+      "ingestion_time_status": "OK"
+    },
+    "extensions": {},
+    "source_ref": "src_32160b7c2ce4aaa0c509fe1d5e43e84b",
+    "observer": "fixture-collector",
+    "raw_excerpt": {
+      "kind": "inline",
+      "value": "refactor: extract helper\n"
+    },
+    "collection_metadata": {
+      "method": "git_show",
+      "tool_ref": "fixture",
+      "parameters": {
+        "rev": "cccccccccccccccccccccccccccccccccccccccc"
+      }
+    },
+    "record_id": "obs_6cd4debab7617197d6ce9cd9c786df6d"
+  }
+}

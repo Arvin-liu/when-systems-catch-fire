@@ -1,0 +1,9 @@
+id: ATT-14
+command: runtime._project(relation_type='embedding_distance', claim_ceiling='PRIMARY_VERIFIED')
+kind: project
+category: reject:overclaim_upgrade_attempt(B3)
+expected: {"reject_code": "overclaim_upgrade_attempt", "target": "REJECT"}
+observed_result: {"rule_id": "R11", "target": "REJECT", "reject_code": "overclaim_upgrade_attempt"}
+decisive_artifact: reject receipt: overclaim_upgrade_attempt (B3 embedding)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

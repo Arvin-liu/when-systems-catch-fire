@@ -1,0 +1,9 @@
+id: ATT-29
+command: runtime._project(relation_type='hyper_relation')
+kind: project
+category: accept:R5-higher-order
+expected: {"reject_code": null, "target": "ARN"}
+observed_result: {"rule_id": "R5", "target": "ARN", "reject_code": null}
+decisive_artifact: route receipt: ARN (G_HIGHER_ORDER preserved)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

@@ -1,0 +1,53 @@
+{
+  "scaffold": "adaptive-relational-runtime-r1-scaffold",
+  "frozen_head": "a0d6c46cd55ef2dde49d13f958b230f71f619e73",
+  "production_base": "6723cdfaf52873516c564c324066361b257cdf52",
+  "commits": 6,
+  "commits_note": "6 commits above production base (original 5 + authorized repair commit 6). The 6-commit rule applies only to the scaffold branch; the evidence branch adds documentation/logs only.",
+  "schemas": 14,
+  "registries": 10,
+  "object_primitives": 10,
+  "fixtures": {
+    "total": 12,
+    "text": 3,
+    "git": 3,
+    "structured": 2,
+    "runtime_receipt": 2,
+    "event_sequence": 2
+  },
+  "attack_matrix": {
+    "total": 40,
+    "reject_codes": 8,
+    "boundaries": "B1-B6",
+    "engine_guards": 3,
+    "projection_rules": 13,
+    "all_executed": true,
+    "exit_codes_match_actual": true
+  },
+  "lifecycle": {
+    "states": 10,
+    "edges": 26,
+    "reject_reason_codes": 11
+  },
+  "failure_classes": 8,
+  "growth_gates": {
+    "count": 6,
+    "labels": "G1-G6+G5g"
+  },
+  "sub_agents": {
+    "count": 12,
+    "labels": "A-L"
+  },
+  "publish_identity": {
+    "publisher": "Agent L (Release Engineer)",
+    "self_final_sha_claimed": false,
+    "live_refetch_required": true,
+    "git_email": "49422864+Arvin-liu@users.noreply.github.com",
+    "git_name": "Arvin Liu"
+  },
+  "audit": {
+    "K_first_audit": "BLOCKED on unmapped_path residue = 24",
+    "K_reaudit_after_commit_6": "ACCEPT_AS_IS (unmapped_path=[], ambiguous_path_mapping=[], closure_complete=true, residue=0)",
+    "verdict": "ADAPTIVE_RELATIONAL_RUNTIME_R1_SCAFFOLD_DRAFT_AWAITING_EXTERNAL_REVIEW"
+  }
+}

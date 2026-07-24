@@ -1,0 +1,9 @@
+id: ATT-04
+command: runtime._project(relation_type='probabilistic')  # no x_psd
+kind: project
+category: reject:psd_boundary_incomplete
+expected: {"reject_code": "psd_boundary_incomplete", "target": "REJECT"}
+observed_result: {"rule_id": "R3", "target": "REJECT", "reject_code": "psd_boundary_incomplete"}
+decisive_artifact: reject receipt: psd_boundary_incomplete (G_PSD_BOUNDARY)
+decisive_artifact_validity: VALID
+actual_exit_code: 0

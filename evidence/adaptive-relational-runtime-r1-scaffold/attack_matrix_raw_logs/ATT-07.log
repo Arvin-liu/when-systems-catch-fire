@@ -1,0 +1,9 @@
+id: ATT-07
+command: runtime._project(relation_type='foo', x_probability_value=0.9)
+kind: project
+category: reject:decorative_probability
+expected: {"reject_code": "decorative_probability", "target": "REJECT"}
+observed_result: {"rule_id": "R13", "target": "REJECT", "reject_code": "decorative_probability"}
+decisive_artifact: reject receipt: decorative_probability (bare numeric probability)
+decisive_artifact_validity: VALID
+actual_exit_code: 0
