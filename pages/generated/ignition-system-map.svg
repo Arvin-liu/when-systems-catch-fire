@@ -34,7 +34,7 @@
   <rect class="cluster" x="1208" y="122" width="560" height="256" rx="16" stroke="#0f766e" />
   <text class="cluster-title" x="1230" y="154" fill="#0f766e">基础核心</text>
   <text class="cluster-desc" x="1230" y="180">权威数据、形式门禁与可执行函数接口</text>
-  <rect class="cluster" x="32" y="736" width="560" height="322" rx="16" stroke="#0891b2" />
+  <rect class="cluster" x="32" y="736" width="560" height="388" rx="16" stroke="#0891b2" />
   <text class="cluster-title" x="54" y="768" fill="#0891b2">模型与投影</text>
   <text class="cluster-desc" x="54" y="794">多尺度、概率动力学与自适应关系的候选表示</text>
   <rect class="cluster" x="620" y="736" width="560" height="454" rx="16" stroke="#d97706" />
@@ -179,6 +179,15 @@
     <path class="edge" d="M 1488.0 1053.0 C 900.0 1053.0, 900.0 5165.0, 312.0 5165.0" data-source="copyright_governance_material_classification" data-target-node="source_pool" data-relation-class="validates" data-relation-domain="repository_dependency">
       <title>copyright_governance_material_classification → source_pool: 材料分类 [repository_dependency]</title>
     </path>
+    <path class="edge" d="M 312.0 1080.0 C 312.0 1020.0, 312.0 1020.0, 312.0 960.0" data-source="arr" data-target-node="arn" data-relation-class="documents" data-relation-domain="repository_dependency">
+      <title>arr → arn: 关系网络参照 [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 312.0 1080.0 C 312.0 954.0, 312.0 954.0, 312.0 828.0" data-source="arr" data-target-node="mcf" data-relation-class="mechanism_hypothesis" data-relation-domain="substantive_causal_candidate">
+      <title>arr → mcf: 因果审查委托 [substantive_causal_candidate]</title>
+    </path>
+    <path class="edge" d="M 312.0 1080.0 C 312.0 987.0, 312.0 987.0, 312.0 894.0" data-source="arr" data-target-node="psd" data-relation-class="mechanism_hypothesis" data-relation-domain="substantive_causal_candidate">
+      <title>arr → psd: 随机/状态语义参照 [substantive_causal_candidate]</title>
+    </path>
   </g>
   <g aria-label="clickable system components">
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/README.md" target="_top" data-node-id="readme" data-group="front_doors" data-target="README.md" aria-label="README 首页：项目现状、成果、价值约束、完整系统图与使用入口。">
@@ -298,6 +307,14 @@
       <rect class="node" x="54.0" y="960.0" width="516.0" height="54.0" rx="10" />
       <text class="node-label" x="70.0" y="993.0">
         <tspan x="70.0" dy="0">ARN 自适应关系网络</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/architecture/adaptive-relational-runtime.md" target="_top" data-node-id="arr" data-group="models" data-target="docs/architecture/adaptive-relational-runtime.md" aria-label="ARR 自适应关系运行时 (R1 Scaffold)：候选派生表示：把异质来源、关系、生命周期与机制封装为 registry-driven 运行时适配层；不新增真值层，不执行，不决定因果。">
+      <title>ARR 自适应关系运行时 (R1 Scaffold) — 候选派生表示：把异质来源、关系、生命周期与机制封装为 registry-driven 运行时适配层；不新增真值层，不执行，不决定因果。</title>
+      <rect class="node" x="54.0" y="1026.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="70.0" y="1048.0">
+        <tspan x="70.0" dy="0">ARR 自适应关系运行时 (R1</tspan>
+        <tspan x="70.0" dy="18">Scaffold)</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/docs/architecture/effectual-action-plane.md" target="_top" data-node-id="q12" data-group="operations" data-target="docs/architecture/effectual-action-plane.md" aria-label="Q12 行动 / 机制双环：从最小状态改变到行动后机制裁决。">

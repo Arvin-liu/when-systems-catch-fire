@@ -10,9 +10,9 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "1.1.13",
-    "topology_version": "1.1.0",
-    "layout_version": "1.1.0"
+    "component_registry_version": "1.1.14",
+    "topology_version": "1.1.1",
+    "layout_version": "1.1.1"
   },
   "layout": {
     "columns": 3,
@@ -232,6 +232,14 @@
       "group": "models",
       "target": "docs/architecture/adaptive-relational-network.md",
       "description": "处理异质、时序与自适应关系，并把因果主张交回 MCF。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "arr",
+      "label": "ARR 自适应关系运行时 (R1 Scaffold)",
+      "group": "models",
+      "target": "docs/architecture/adaptive-relational-runtime.md",
+      "description": "候选派生表示：把异质来源、关系、生命周期与机制封装为 registry-driven 运行时适配层；不新增真值层，不执行，不决定因果。",
       "lifecycle_status": "current"
     },
     {
@@ -1227,6 +1235,30 @@
       "label": "材料分类",
       "relation_class": "validates",
       "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "arr_documents_arn",
+      "source": "arr",
+      "target": "arn",
+      "label": "关系网络参照",
+      "relation_class": "documents",
+      "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "arr_mechanism_mcf",
+      "source": "arr",
+      "target": "mcf",
+      "label": "因果审查委托",
+      "relation_class": "mechanism_hypothesis",
+      "relation_domain": "substantive_causal_candidate"
+    },
+    {
+      "id": "arr_mechanism_psd",
+      "source": "arr",
+      "target": "psd",
+      "label": "随机/状态语义参照",
+      "relation_class": "mechanism_hypothesis",
+      "relation_domain": "substantive_causal_candidate"
     }
   ]
 }

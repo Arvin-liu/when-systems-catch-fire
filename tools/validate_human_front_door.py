@@ -120,7 +120,7 @@ def validate_system_map(root: Path, readme: str, pages: str) -> int:
     required_nodes = {
         "readme", "summary", "usage", "ai_guide", "current_state",
         "l0", "l1", "l2", "l3", "l4", "l5", "l6",
-        "foundation", "function_os", "mcf", "psd", "arn",
+        "foundation", "function_os", "mcf", "psd", "arn", "arr",
         "q12", "q13", "q14", "iteration", "sync", "charter", "licensing", "sustainability",
         "external_input", "ignition_increment", "source_pool", "zhiyuan_method",
         "case_source", "point_fire_analysis", "accepted_work", "showcase", "showcase_registry",
