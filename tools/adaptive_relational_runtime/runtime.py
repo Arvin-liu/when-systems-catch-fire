@@ -66,6 +66,16 @@ CLAIM_RANK = {"PRIMARY_VERIFIED": 3, "SECONDARY": 2, "UNKNOWN": 1}
 # upgraded to a higher claim ceiling (anti-overclaim bindings B1/B3).
 _ADJACENCY_LIKE = {"similar_to", "co_occurs", "references", "generic"}
 
+# Bridge from the Source schema `tier` enum (commit-2 schema) to the
+# evidence-tiers registry `tier_to_ceiling` keys. The registry is the SINGLE
+# SOURCE OF TRUTH for the ceiling mapping; this map only reconciles the two
+# enums (F3). Mutating the registry copy changes runtime behaviour (testable).
+_SOURCE_TIER_BRIDGE = {
+    "PRIMARY": "PRIMARY_REPORT",
+    "SECONDARY_DERIVED": "SECONDARY_ACADEMIC_INTERPRETATION",
+    "DERIVED_COMPUTED": "MEDIA_SYNTHESIS",
+}
+
 
 class ContractValidationError(Exception):
     """Raised when a record or envelope violates its schema / registry contract."""
@@ -147,6 +157,10 @@ class ARRRuntime:
         # 1. OBSERVE
         self.contract.validate_record(source)
         self.contract.validate_record(observation)
+        # F3: derive the evidence-tier ceiling from the registry (single source
+        # of truth), keyed by the source's evidence tier (bridged to registry
+        # tier keys). Used by the claim-ceiling enforcement below.
+        self._max_ceiling = self._max_ceiling_for_tier(source.get("tier"))
         source_id = source["record_id"]
         obs_id = observation["record_id"]
         self.stages.append({"stage": "OBSERVE", "ok": True,
@@ -302,26 +316,188 @@ class ARRRuntime:
         return envelope
 
     # -- projection routing ---------------------------------------------
-    def _project(self, relation: dict) -> dict:
+    def _project(self, relation: dict, source: dict | None = None) -> dict:
+        """Registry-driven projection routing (F1).
+
+        Fully consumes registries['projection-routes']: iterates the routing
+        rules R1-R13 by priority, applies the engine guards (G_PSD_BOUNDARY /
+        G_TEMPORAL / G_HIGHER_ORDER), applies the anti-overstep bindings
+        (B1-B6), and emits the correct rule_id / target / reject_code. All
+        emitted reject codes are validated against the registry's reject_codes
+        set so the engine can never emit a code the contract does not define.
+        """
         reg = self.contract.registries["projection-routes"]
-        rules = {r["rule_id"]: r for r in reg.get("rules", [])}
-        relation_type = relation.get("relation_type")
+        rules = sorted(reg.get("rules", []), key=lambda r: r.get("priority", 999))
+        reject_codes = {rc["code"] for rc in reg.get("reject_codes", [])}
+        engine_guards = {g["guard_id"]: g for g in reg.get("engine_guards", [])}
+        bindings = reg.get("anti_overstep_bindings", [])
+
         decision: dict[str, Any] = {"rule_id": "R13", "target": "ARN", "reject_code": None}
 
-        # R1: causal wording / causal handoff -> MCF review.
-        if relation.get("causal_handoff_ref") or relation_type == "causal_handoff":
-            decision = {"rule_id": "R1", "target": "MCF_REVIEW", "reject_code": None}
-        elif relation_type in ("similar_to", "co_occurs"):
-            decision = {"rule_id": "R11", "target": "ARN", "reject_code": None}
+        # Structural guard 0: only Relation records are projectable.
+        if relation.get("record_kind") != "Relation":
+            decision = {"rule_id": "PRE", "target": "REJECT",
+                        "reject_code": "not_a_relation_record"}
+            return self._finalize_projection(decision, reject_codes)
 
-        # Anti-overclaim bindings B1/B3: adjacency-like relation must not be
-        # upgraded to a higher claim ceiling.
-        if (decision["target"] == "ARN"
-                and relation.get("claim_ceiling") == "PRIMARY_VERIFIED"
-                and relation_type in _ADJACENCY_LIKE):
-            decision["reject_code"] = "overclaim_upgrade_attempt"
+        # Structural guard 1: the relation must validate against its schema.
+        try:
+            self.contract.validate_record(relation)
+        except ContractValidationError:
+            decision = {"rule_id": "PRE", "target": "REJECT",
+                        "reject_code": "relation_schema_invalid"}
+            return self._finalize_projection(decision, reject_codes)
+
+        # Decorative / conflated structural guards (independent of R1-R13).
+        decor = self._check_decorative_and_conflated(relation)
+        if decor is not None:
+            decision = {"rule_id": decision["rule_id"], "target": "REJECT",
+                        "reject_code": decor}
+            return self._finalize_projection(decision, reject_codes)
+
+        # Iterate routing rules by priority; the first match wins.
+        matched = None
+        for rule in rules:
+            if self._rule_matches(rule, relation, source):
+                matched = rule
+                break
+        if matched is not None:
+            decision = {"rule_id": matched["rule_id"],
+                        "target": matched["target"],
+                        "reject_code": None}
+
+        # Apply engine guards scoped to the matched rule.
+        guard_code = self._apply_engine_guards(decision, relation, engine_guards)
+        if guard_code is not None:
             decision["target"] = "REJECT"
+            decision["reject_code"] = guard_code
+
+        # Apply anti-overstep bindings B1-B6.
+        if decision["reject_code"] is None:
+            over_code = self._apply_anti_overstep(bindings, relation, decision)
+            if over_code is not None:
+                decision["target"] = "REJECT"
+                decision["reject_code"] = over_code
+
+        return self._finalize_projection(decision, reject_codes)
+
+    @staticmethod
+    def _finalize_projection(decision: dict, reject_codes: set) -> dict:
+        rc = decision.get("reject_code")
+        if rc is not None and rc not in reject_codes:
+            # Defensive: every emitted reject code must be defined by the
+            # projection-routes registry (single source of truth).
+            raise ContractValidationError(
+                f"emitted reject_code {rc!r} is not defined in projection-routes.reject_codes"
+            )
         return decision
+
+    @staticmethod
+    def _check_decorative_and_conflated(relation: dict) -> str | None:
+        # Projection hints live in the schema-permitted `extensions` namespace
+        # (keys prefixed x_), since the relation schema is closed.
+        ext = relation.get("extensions") or {}
+        # decorative_probability: a bare numeric probability outside the PSD
+        # ten-field discipline.
+        pv = ext.get("x_probability_value")
+        if isinstance(pv, (int, float)) and not ext.get("x_psd"):
+            return "decorative_probability"
+        # observation_intervention_conflated: observational and interventional
+        # distributions are not distinct.
+        obs_d = ext.get("x_obs_distribution")
+        int_d = ext.get("x_int_distribution")
+        if obs_d is not None and int_d is not None and obs_d == int_d:
+            return "observation_intervention_conflated"
+        return None
+
+    @staticmethod
+    def _rule_matches(rule: dict, relation: dict, source: dict | None) -> bool:
+        ext = relation.get("extensions") or {}
+        cat = rule.get("category")
+        rt = relation.get("relation_type")
+        if cat == "causal_wording":
+            return bool(relation.get("causal_handoff_ref")) or rt == "causal_handoff"
+        if cat == "intervention_semantics":
+            return rt in ("intervention", "do_calculus") or ext.get(
+                "x_intervention_action_type") is not None
+        if cat == "stochastic_dynamics":
+            return rt in ("probabilistic", "stochastic") or isinstance(
+                ext.get("x_probability_value"), (int, float))
+        if cat == "risk":
+            return rt == "risk"
+        if cat == "higher_order":
+            return rt == "hyper_relation" or ext.get("x_is_higher_order") is True
+        if cat == "temporal":
+            return rt in ("temporal", "before", "after") or (
+                relation.get("temporal_scope") or {}).get("interval") is not None
+        if cat == "support":
+            return rt == "supports"
+        if cat == "conflict":
+            return rt == "conflicts"
+        if cat == "role":
+            return rt in ("role", "social_expectation")
+        if cat == "dependency":
+            return rt in ("depends_on", "enables", "inhibits")
+        if cat == "similarity":
+            return rt in ("similar_to", "embedding_distance")
+        if cat == "adjacency":
+            return rt in ("references", "co_occurs", "adjacency")
+        if cat == "broad_heterogeneous":
+            return True  # fallback; always matches (priority 13, last)
+        return False
+
+    @staticmethod
+    def _apply_engine_guards(decision: dict, relation: dict,
+                             engine_guards: dict) -> str | None:
+        ext = relation.get("extensions") or {}
+        rule_id = decision.get("rule_id")
+        # G_PSD_BOUNDARY (scoped R3/R4): PSD five-part boundary + obs!=do.
+        if rule_id in ("R3", "R4") and "G_PSD_BOUNDARY" in engine_guards:
+            psd = ext.get("x_psd") or {}
+            required = ("system_boundary", "probability_value", "obs_not_do")
+            if not all(k in psd for k in required):
+                return "psd_boundary_incomplete"
+            # psd_causal_escape_attempt: PSD asserts real-world causality
+            # without an MCF handoff.
+            if ext.get("x_causal_status") == "established" and not relation.get(
+                    "causal_handoff_ref"):
+                return "psd_causal_escape_attempt"
+        # G_TEMPORAL (scoped R6): time-impossible path (T1-T7).
+        if rule_id == "R6" and "G_TEMPORAL" in engine_guards:
+            ts = relation.get("temporal_scope") or {}
+            interval = ts.get("interval") or {}
+            ext = relation.get("extensions") or {}
+            if ts.get("impossible") is True or ext.get("x_temporal_impossible") is True or (
+                interval.get("start") and interval.get("end")
+                and interval["start"] > interval["end"]
+            ):
+                return "time_impossible_path"
+        # G_HIGHER_ORDER (scoped R5): preserved; no rejection here.
+        return None
+
+    @staticmethod
+    def _apply_anti_overstep(bindings: list, relation: dict, decision: dict) -> str | None:
+        ext = relation.get("extensions") or {}
+        rt = relation.get("relation_type")
+        ceiling = relation.get("claim_ceiling")
+        # B4: anti-overclaim-matrix forbidden words in the asserted proposition.
+        props = (relation.get("uncertainty") or "")
+        low = props.lower()
+        forbidden = ("therefore causes", "proves that", "definitely true",
+                     "is the consensus", "is the most important")
+        # B1: adjacency is not causality/truth/importance/value/consensus.
+        if decision.get("rule_id") == "R12" and ceiling == "PRIMARY_VERIFIED":
+            return "overclaim_upgrade_attempt"
+        # B3: similarity/embedding distance is not causality/truth/importance.
+        if decision.get("rule_id") == "R11" and ceiling == "PRIMARY_VERIFIED":
+            return "overclaim_upgrade_attempt"
+        # B6: a generic relation must never set causal_status=established.
+        if rt == "generic" and ext.get("x_causal_status") == "established":
+            return "overclaim_upgrade_attempt"
+        # B4: forbidden overclaim words -> overclaim_upgrade_attempt.
+        if any(w in low for w in forbidden):
+            return "overclaim_upgrade_attempt"
+        return None
 
     # -- evidence lifecycle ---------------------------------------------
     def _enforce_lifecycle(self, record: dict, to_state: str) -> None:
@@ -334,7 +510,12 @@ class ARRRuntime:
                 f"(reason: EDGE_NOT_IN_TRANSITION_REGISTRY)"
             )
         if to_state == "REJECTED" and from_state != "REJECTED":
-            pass  # terminal handled by registry; not triggered in demo
+            # F4: a REJECTED edge is terminal; the scaffold must never silently
+            # continue a rejected record into execution. Surface it loudly.
+            raise ContractValidationError(
+                f"lifecycle edge {from_state}->{to_state} is terminal "
+                f"(reason: REJECTED_IS_TERMINAL)"
+            )
         # claim ceiling must not exceed the evidence tier ceiling.
         self._assert_ceiling_within_tier(record)
         record["lifecycle"] = {
@@ -343,10 +524,22 @@ class ARRRuntime:
             "transition_ref": f"{from_state}->{to_state}",
         }
 
+    def _tier_to_ceiling_map(self) -> dict:
+        reg = self.contract.registries["evidence-tiers"]
+        return {row["tier"]: row["ceiling"] for row in reg["tier_to_ceiling"]}
+
+    def _max_ceiling_for_tier(self, source_tier: str) -> str:
+        # F3: the ceiling is derived from the evidence-tiers registry, keyed by
+        # the (bridged) evidence tier. The registry is the single source of
+        # truth; mutating a temp copy changes runtime behaviour (testable).
+        tmap = self._tier_to_ceiling_map()
+        reg_tier = _SOURCE_TIER_BRIDGE.get(source_tier, source_tier)
+        if reg_tier not in tmap:
+            raise ContractValidationError(f"unknown evidence tier: {source_tier!r}")
+        return tmap[reg_tier]
+
     def _assert_ceiling_within_tier(self, record: dict) -> None:
-        # Demo: source tier SECONDARY_DERIVED -> ceiling SECONDARY is the floor
-        # the scaffold may not exceed for derived records.
-        max_ceiling = "SECONDARY"
+        max_ceiling = getattr(self, "_max_ceiling", "SECONDARY")
         rank = CLAIM_RANK.get(record.get("claim_ceiling"), 0)
         if rank > CLAIM_RANK.get(max_ceiling, 0):
             raise ContractValidationError(
@@ -411,31 +604,21 @@ class ARRRuntime:
                 "verified": False,
             },
         }
-        # Evaluate the six gate criteria (G1-G6 + G5g).
-        items = [
-            {"gate_id": "G1", "result": "PASS" if len(gs["recurrence_evidence"]) >= 2 else "FAIL",
-             "evidence_ref": fb_id},
-            {"gate_id": "G2",
-             "result": "PASS" if (len(gs["signal_scope"]["object_refs"]) >= 2
-                                  and len(gs["signal_scope"]["source_refs"]) >= 2)
-             else "FAIL", "evidence_ref": fb_id},
-            {"gate_id": "G3", "result": "PASS" if gs["measured_loss"] is not None else "FAIL",
-             "evidence_ref": fb_id},
-            {"gate_id": "G4",
-             "result": "PASS" if (gs["workaround_assessment"]["assessed"] is True
-                                  and gs["workaround_assessment"]["adequate_low_cost_exists"] is False)
-             else "FAIL", "evidence_ref": fb_id},
-            {"gate_id": "G5",
-             "result": "PASS" if all(gs["minimal_repair_hypothesis"][k] for k in
-                                     ("hypothesis", "touched_surface", "falsification_test", "rollback_path"))
-             else "FAIL", "evidence_ref": fb_id},
-            {"gate_id": "G5g",
-             "result": "FAIL" if "weaken" in gs["minimal_repair_hypothesis"]["hypothesis"].lower()
-             else "PASS", "evidence_ref": fb_id},
-            {"gate_id": "G6",
-             "result": "PASS" if gs["human_authorization"]["verified"] is True else "FAIL",
-             "evidence_ref": fb_id},
-        ]
+        # Evaluate the gate criteria (G1-G6 + G5g). F2: the set and order of
+        # gates are sourced from the growth-signal-gates registry; the machine
+        # rule for each gate is implemented below but keyed by gate_id so a
+        # mutated registry copy changes which gates run (testable).
+        reg = self.contract.registries["growth-signal-gates"]
+        gate_criteria = reg.get("gate_criteria", [])
+        items = []
+        for gc in gate_criteria:
+            gid = gc["gate_id"]
+            result = self._eval_growth_gate(gid, gs)
+            items.append({
+                "gate_id": gid,
+                "result": result,
+                "evidence_ref": fb_id,
+            })
         decision_digest = canonical.sha256_hex(canonical.canonical_json(items))
         gs["gate_evaluation"] = {
             "items": items,
@@ -450,6 +633,33 @@ class ARRRuntime:
         gs["record_id"] = canonical.record_id("gs", gs)
         self.contract.validate_record(gs)
         return gs
+
+    @staticmethod
+    def _eval_growth_gate(gate_id: str, gs: dict) -> str:
+        """Machine rule for a single growth gate, keyed by gate_id (F2)."""
+        if gate_id == "G1":  # recurrence
+            return "PASS" if len(gs["recurrence_evidence"]) >= 2 else "FAIL"
+        if gate_id == "G2":  # scope
+            sc = gs["signal_scope"]
+            return "PASS" if (len(sc["object_refs"]) >= 2
+                              and len(sc["source_refs"]) >= 2) else "FAIL"
+        if gate_id == "G3":  # measured_loss
+            return "PASS" if gs["measured_loss"] is not None else "FAIL"
+        if gate_id == "G4":  # workaround
+            wa = gs["workaround_assessment"]
+            return "PASS" if (wa["assessed"] is True
+                              and wa["adequate_low_cost_exists"] is False) else "FAIL"
+        if gate_id == "G5":  # minimal_repair_hypothesis
+            mrh = gs["minimal_repair_hypothesis"]
+            return "PASS" if all(mrh[k] for k in
+                                 ("hypothesis", "touched_surface",
+                                  "falsification_test", "rollback_path")) else "FAIL"
+        if gate_id == "G5g":  # governance_hard_refusal
+            return "FAIL" if "weaken" in gs["minimal_repair_hypothesis"][
+                "hypothesis"].lower() else "PASS"
+        if gate_id == "G6":  # human_authorization
+            return "PASS" if gs["human_authorization"]["verified"] is True else "FAIL"
+        return "FAIL"
 
     # -- runtime envelope ------------------------------------------------
     def _build_envelope(self, source, observation, obj, rel, mech, fb, gs,

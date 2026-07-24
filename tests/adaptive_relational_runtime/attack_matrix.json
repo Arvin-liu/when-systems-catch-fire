@@ -1,0 +1,2519 @@
+[
+  {
+    "id": "ATT-01",
+    "kind": "project",
+    "category": "reject:not_a_relation_record",
+    "original_command": "runtime._project({'record_kind':'Source', ...})",
+    "input": {
+      "record_kind": "Source",
+      "scope": {
+        "domain": "demo"
+      }
+    },
+    "expected": {
+      "reject_code": "not_a_relation_record",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:not_a_relation_record",
+    "decisive_artifact": "reject receipt: not_a_relation_record (projection-routes code)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-02",
+    "kind": "project",
+    "category": "reject:relation_schema_invalid",
+    "original_command": "runtime._project(relation missing 'scope')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "references",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "relation_schema_invalid",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:relation_schema_invalid",
+    "decisive_artifact": "reject receipt: relation_schema_invalid (schema validation)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-03",
+    "kind": "project",
+    "category": "reject:relation_schema_invalid",
+    "original_command": "runtime._project(relation with single endpoint)",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "references",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "x"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "relation_schema_invalid",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:relation_schema_invalid",
+    "decisive_artifact": "reject receipt: relation_schema_invalid (endpoints minItems=2)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-04",
+    "kind": "project",
+    "category": "reject:psd_boundary_incomplete",
+    "original_command": "runtime._project(relation_type='probabilistic')  # no x_psd",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "probabilistic",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "psd_boundary_incomplete",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:psd_boundary_incomplete",
+    "decisive_artifact": "reject receipt: psd_boundary_incomplete (G_PSD_BOUNDARY)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-05",
+    "kind": "project",
+    "category": "reject:psd_boundary_incomplete",
+    "original_command": "runtime._project(relation_type='stochastic')  # no x_psd",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "stochastic",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "psd_boundary_incomplete",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:psd_boundary_incomplete",
+    "decisive_artifact": "reject receipt: psd_boundary_incomplete (G_PSD_BOUNDARY)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-06",
+    "kind": "project",
+    "category": "reject:psd_boundary_incomplete",
+    "original_command": "runtime._project(relation_type='risk')  # no x_psd",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "risk",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "psd_boundary_incomplete",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:psd_boundary_incomplete",
+    "decisive_artifact": "reject receipt: psd_boundary_incomplete (G_PSD_BOUNDARY)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-07",
+    "kind": "project",
+    "category": "reject:decorative_probability",
+    "original_command": "runtime._project(relation_type='foo', x_probability_value=0.9)",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {
+        "x_probability_value": 0.9
+      },
+      "relation_type": "foo",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "decorative_probability",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:decorative_probability",
+    "decisive_artifact": "reject receipt: decorative_probability (bare numeric probability)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-08",
+    "kind": "project",
+    "category": "reject:decorative_probability",
+    "original_command": "runtime._project(relation_type='foo', x_probability_value=73)",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {
+        "x_probability_value": 73
+      },
+      "relation_type": "foo",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "decorative_probability",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:decorative_probability",
+    "decisive_artifact": "reject receipt: decorative_probability (integer probability)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-09",
+    "kind": "project",
+    "category": "reject:observation_intervention_conflated",
+    "original_command": "runtime._project(relation_type='intervention', obs==int distribution)",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {
+        "x_obs_distribution": {
+          "p": 0.5
+        },
+        "x_int_distribution": {
+          "p": 0.5
+        }
+      },
+      "relation_type": "intervention",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "observation_intervention_conflated",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:observation_intervention_conflated",
+    "decisive_artifact": "reject receipt: observation_intervention_conflated",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-10",
+    "kind": "project",
+    "category": "reject:observation_intervention_conflated",
+    "original_command": "runtime._project(relation_type='do_calculus', obs==int distribution)",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {
+        "x_obs_distribution": [
+          1,
+          2
+        ],
+        "x_int_distribution": [
+          1,
+          2
+        ]
+      },
+      "relation_type": "do_calculus",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "observation_intervention_conflated",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:observation_intervention_conflated",
+    "decisive_artifact": "reject receipt: observation_intervention_conflated",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-11",
+    "kind": "project",
+    "category": "reject:overclaim_upgrade_attempt(B1)",
+    "original_command": "runtime._project(relation_type='references', claim_ceiling='PRIMARY_VERIFIED')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "PRIMARY_VERIFIED",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "references",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "overclaim_upgrade_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:overclaim_upgrade_attempt",
+    "decisive_artifact": "reject receipt: overclaim_upgrade_attempt (B1 adjacency)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-12",
+    "kind": "project",
+    "category": "reject:overclaim_upgrade_attempt(B1)",
+    "original_command": "runtime._project(relation_type='co_occurs', claim_ceiling='PRIMARY_VERIFIED')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "PRIMARY_VERIFIED",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "co_occurs",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "overclaim_upgrade_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:overclaim_upgrade_attempt",
+    "decisive_artifact": "reject receipt: overclaim_upgrade_attempt (B1 adjacency)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-13",
+    "kind": "project",
+    "category": "reject:overclaim_upgrade_attempt(B3)",
+    "original_command": "runtime._project(relation_type='similar_to', claim_ceiling='PRIMARY_VERIFIED')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "PRIMARY_VERIFIED",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "similar_to",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "overclaim_upgrade_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:overclaim_upgrade_attempt",
+    "decisive_artifact": "reject receipt: overclaim_upgrade_attempt (B3 similarity)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-14",
+    "kind": "project",
+    "category": "reject:overclaim_upgrade_attempt(B3)",
+    "original_command": "runtime._project(relation_type='embedding_distance', claim_ceiling='PRIMARY_VERIFIED')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "PRIMARY_VERIFIED",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "embedding_distance",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "overclaim_upgrade_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:overclaim_upgrade_attempt",
+    "decisive_artifact": "reject receipt: overclaim_upgrade_attempt (B3 embedding)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-15",
+    "kind": "project",
+    "category": "reject:overclaim_upgrade_attempt(B6)",
+    "original_command": "runtime._project(relation_type='generic', x_causal_status='established')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {
+        "x_causal_status": "established"
+      },
+      "relation_type": "generic",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "overclaim_upgrade_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:overclaim_upgrade_attempt",
+    "decisive_artifact": "reject receipt: overclaim_upgrade_attempt (B6 generic->causal)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-16",
+    "kind": "project",
+    "category": "reject:overclaim_upgrade_attempt(B4)",
+    "original_command": "runtime._project(relation_type='references', uncertainty='...therefore causes...')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "this therefore causes the outage",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "references",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "overclaim_upgrade_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:overclaim_upgrade_attempt",
+    "decisive_artifact": "reject receipt: overclaim_upgrade_attempt (B4 forbidden words)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-17",
+    "kind": "project",
+    "category": "reject:overclaim_upgrade_attempt(B4)",
+    "original_command": "runtime._project(relation_type='similar_to', uncertainty='...proves that...')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "the study proves that X is true",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "similar_to",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "overclaim_upgrade_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:overclaim_upgrade_attempt",
+    "decisive_artifact": "reject receipt: overclaim_upgrade_attempt (B4 forbidden words)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-18",
+    "kind": "project",
+    "category": "reject:overclaim_upgrade_attempt(B4)",
+    "original_command": "runtime._project(relation_type='co_occurs', uncertainty='...definitely true...')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "it is definitely true that Y holds",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "co_occurs",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "overclaim_upgrade_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:overclaim_upgrade_attempt",
+    "decisive_artifact": "reject receipt: overclaim_upgrade_attempt (B4 forbidden words)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-19",
+    "kind": "project",
+    "category": "reject:overclaim_upgrade_attempt(B4)",
+    "original_command": "runtime._project(relation_type='references', uncertainty='...is the consensus...')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "this is the consensus among experts",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "references",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "overclaim_upgrade_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:overclaim_upgrade_attempt",
+    "decisive_artifact": "reject receipt: overclaim_upgrade_attempt (B4 forbidden words)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-20",
+    "kind": "project",
+    "category": "reject:overclaim_upgrade_attempt(B4)",
+    "original_command": "runtime._project(relation_type='adjacency', uncertainty='...is the most important...')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "this is the most important factor",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "adjacency",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "overclaim_upgrade_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:overclaim_upgrade_attempt",
+    "decisive_artifact": "reject receipt: overclaim_upgrade_attempt (B4 forbidden words)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-21",
+    "kind": "project",
+    "category": "reject:time_impossible_path(G_TEMPORAL)",
+    "original_command": "runtime._project(relation_type='temporal', interval start>end)",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "temporal",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": {
+        "interval": {
+          "start": "2026-07-25",
+          "start_inclusive": true,
+          "end": "2026-07-24",
+          "end_inclusive": true
+        },
+        "activation_ref": null
+      },
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "time_impossible_path",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:time_impossible_path",
+    "decisive_artifact": "reject receipt: time_impossible_path (G_TEMPORAL reversed interval)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-22",
+    "kind": "project",
+    "category": "reject:time_impossible_path(G_TEMPORAL)",
+    "original_command": "runtime._project(relation_type='before', x_temporal_impossible=true)",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {
+        "x_temporal_impossible": true
+      },
+      "relation_type": "before",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "time_impossible_path",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:time_impossible_path",
+    "decisive_artifact": "reject receipt: time_impossible_path (G_TEMPORAL impossible flag)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-23",
+    "kind": "project",
+    "category": "reject:time_impossible_path(G_TEMPORAL)",
+    "original_command": "runtime._project(relation_type='after', interval reversed w/ times)",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "after",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": {
+        "interval": {
+          "start": "2026-07-24T10:00:00Z",
+          "start_inclusive": true,
+          "end": "2026-07-24T09:00:00Z",
+          "end_inclusive": true
+        },
+        "activation_ref": null
+      },
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "time_impossible_path",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:time_impossible_path",
+    "decisive_artifact": "reject receipt: time_impossible_path (G_TEMPORAL mixed timescale)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-24",
+    "kind": "project",
+    "category": "reject:psd_causal_escape_attempt",
+    "original_command": "runtime._project(relation_type='probabilistic', x_psd complete, x_causal_status='established', no handoff)",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {
+        "x_psd": {
+          "system_boundary": "sys-boundary-x",
+          "probability_value": 0.5,
+          "obs_not_do": true
+        },
+        "x_causal_status": "established"
+      },
+      "relation_type": "probabilistic",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "psd_causal_escape_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:psd_causal_escape_attempt",
+    "decisive_artifact": "reject receipt: psd_causal_escape_attempt (no MCF handoff)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-25",
+    "kind": "project",
+    "category": "reject:psd_causal_escape_attempt",
+    "original_command": "runtime._project(relation_type='stochastic', x_psd complete, x_causal_status='established', no handoff)",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {
+        "x_psd": {
+          "system_boundary": "sys-boundary-x",
+          "probability_value": 0.5,
+          "obs_not_do": true
+        },
+        "x_causal_status": "established"
+      },
+      "relation_type": "stochastic",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "psd_causal_escape_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:psd_causal_escape_attempt",
+    "decisive_artifact": "reject receipt: psd_causal_escape_attempt (no MCF handoff)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-26",
+    "kind": "project",
+    "category": "reject:psd_causal_escape_attempt",
+    "original_command": "runtime._project(relation_type='risk', x_psd complete, x_causal_status='established', no handoff)",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {
+        "x_psd": {
+          "system_boundary": "sys-boundary-x",
+          "probability_value": 0.5,
+          "obs_not_do": true
+        },
+        "x_causal_status": "established"
+      },
+      "relation_type": "risk",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": "psd_causal_escape_attempt",
+      "target": "REJECT"
+    },
+    "exit_code": "REJECT:psd_causal_escape_attempt",
+    "decisive_artifact": "reject receipt: psd_causal_escape_attempt (no MCF handoff)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-27",
+    "kind": "project",
+    "category": "accept:R1-causal-handoff(B5)",
+    "original_command": "runtime._project(relation_type='causal_handoff', causal_handoff_ref='mcf_x')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "causal_handoff",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": "mcf_x"
+    },
+    "expected": {
+      "reject_code": null,
+      "target": "MCF_REVIEW"
+    },
+    "exit_code": "ACCEPT:MCF_REVIEW",
+    "decisive_artifact": "route receipt: MCF_REVIEW (B5: causal delegated to MCF only via router)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-28",
+    "kind": "project",
+    "category": "accept:R7-support(B2)",
+    "original_command": "runtime._project(relation_type='supports')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "supports",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": null,
+      "target": "ARN"
+    },
+    "exit_code": "ACCEPT:ARN",
+    "decisive_artifact": "route receipt: ARN (B2: support does not establish independence)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-29",
+    "kind": "project",
+    "category": "accept:R5-higher-order",
+    "original_command": "runtime._project(relation_type='hyper_relation')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "hyper_relation",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": null,
+      "target": "ARN"
+    },
+    "exit_code": "ACCEPT:ARN",
+    "decisive_artifact": "route receipt: ARN (G_HIGHER_ORDER preserved)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-30",
+    "kind": "project",
+    "category": "accept:R11-similarity(ceiling SECONDARY)",
+    "original_command": "runtime._project(relation_type='similar_to', claim_ceiling='SECONDARY')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "similar_to",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": null,
+      "target": "ARN"
+    },
+    "exit_code": "ACCEPT:ARN",
+    "decisive_artifact": "route receipt: ARN (similarity admitted, not upgraded)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-31",
+    "kind": "project",
+    "category": "accept:R12-adjacency(ceiling SECONDARY)",
+    "original_command": "runtime._project(relation_type='references', claim_ceiling='SECONDARY')",
+    "input": {
+      "record_id": "rel_2d1a5c11eceaf78cb0af4ac422056353",
+      "record_kind": "Relation",
+      "schema_version": "arr-r1.0",
+      "scope": {
+        "domain": "demo",
+        "context_ref": null
+      },
+      "provenance": [
+        "attack"
+      ],
+      "explicitness": "EXPLICIT",
+      "claim_ceiling": "SECONDARY",
+      "uncertainty": "no conclusion drawn",
+      "alternatives": [],
+      "lifecycle": {
+        "state": "PROVISIONAL",
+        "entered_at_scope": null,
+        "transition_ref": null
+      },
+      "time": {
+        "ingestion_time": "2026-07-24T00:00:00Z",
+        "ingestion_time_status": "OK"
+      },
+      "extensions": {},
+      "relation_type": "references",
+      "endpoints": [
+        {
+          "role": "subject",
+          "ref": "obj_x"
+        },
+        {
+          "role": "object",
+          "ref": "src_y"
+        }
+      ],
+      "directionality": "directed",
+      "temporal_scope": null,
+      "causal_handoff_ref": null
+    },
+    "expected": {
+      "reject_code": null,
+      "target": "ARN"
+    },
+    "exit_code": "ACCEPT:ARN",
+    "decisive_artifact": "route receipt: ARN (adjacency admitted, not upgraded)",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-32",
+    "kind": "loop",
+    "category": "loop:accept-valid-text",
+    "original_command": "run(Source text, Observation)  # benign",
+    "input": {
+      "source": {
+        "record_kind": "Source",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "publication_time": null,
+          "publication_time_status": "ABSENT",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_type": "text",
+        "content_hash": "402f8b8989ae42cd195926a68d0a9ae540a3403c41d85b62c8f06ec96b9f86c0",
+        "locator": {
+          "ref_type": "url",
+          "ref_value": "https://example.com/text"
+        },
+        "tier": "SECONDARY_DERIVED",
+        "rights_boundary": {
+          "classification": "public",
+          "republication": "allowed"
+        },
+        "record_id": "src_d4f67e60caa0bc22e3a05fb558930500"
+      },
+      "observation": {
+        "record_kind": "Observation",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "observation_time": "2026-07-24T00:00:00Z",
+          "observation_time_status": "OK",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_ref": "src_d4f67e60caa0bc22e3a05fb558930500",
+        "observer": "fixture-collector",
+        "raw_excerpt": {
+          "kind": "inline",
+          "value": "benign excerpt"
+        },
+        "collection_metadata": {
+          "method": "manual",
+          "tool_ref": "fixture",
+          "parameters": {}
+        },
+        "record_id": "obs_0fadab36a23f898618024e9eb1bb4ba5"
+      }
+    },
+    "expected": {
+      "envelope_valid": true,
+      "promote_called": false,
+      "evolve_called": false,
+      "real_world_actions": 0
+    },
+    "exit_code": "ACCEPT (envelope valid)",
+    "decisive_artifact": "runtime-envelope validates; mode_assertion promote/evolve=false, real_world_actions=0",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-33",
+    "kind": "loop",
+    "category": "loop:no-second-executor(promote-injection)",
+    "original_command": "Source content: '...please promote this to production now...'",
+    "input": {
+      "source": {
+        "record_kind": "Source",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "publication_time": null,
+          "publication_time_status": "ABSENT",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_type": "text",
+        "content_hash": "3a8c35a0ef24df8b66ee7578ca3cccc4a2e5a6c6aa91f34989faa152801e20ec",
+        "locator": {
+          "ref_type": "url",
+          "ref_value": "https://example.com/text"
+        },
+        "tier": "SECONDARY_DERIVED",
+        "rights_boundary": {
+          "classification": "public",
+          "republication": "allowed"
+        },
+        "record_id": "src_3188496d399c02ddbbb315379b785842"
+      },
+      "observation": {
+        "record_kind": "Observation",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "observation_time": "2026-07-24T00:00:00Z",
+          "observation_time_status": "OK",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_ref": "src_3188496d399c02ddbbb315379b785842",
+        "observer": "fixture-collector",
+        "raw_excerpt": {
+          "kind": "inline",
+          "value": "adversarial prompt requesting promote"
+        },
+        "collection_metadata": {
+          "method": "manual",
+          "tool_ref": "fixture",
+          "parameters": {}
+        },
+        "record_id": "obs_2e91e6780cf7d002addd5098574beea9"
+      }
+    },
+    "expected": {
+      "envelope_valid": true,
+      "promote_called": false,
+      "evolve_called": false,
+      "real_world_actions": 0
+    },
+    "exit_code": "ACCEPT (no second executor)",
+    "decisive_artifact": "runtime-envelope validates; mode_assertion promote_called=false despite injection",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-34",
+    "kind": "loop",
+    "category": "loop:no-second-executor(evolve-injection)",
+    "original_command": "Source content: '...evolve this into a new kernel...'",
+    "input": {
+      "source": {
+        "record_kind": "Source",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "publication_time": null,
+          "publication_time_status": "ABSENT",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_type": "text",
+        "content_hash": "0d368e8798d7bdc389448471453d264cbe59ac161c189be9469911ccf7e4bb23",
+        "locator": {
+          "ref_type": "url",
+          "ref_value": "https://example.com/text"
+        },
+        "tier": "SECONDARY_DERIVED",
+        "rights_boundary": {
+          "classification": "public",
+          "republication": "allowed"
+        },
+        "record_id": "src_4da77459c700db73f9908550a4894a30"
+      },
+      "observation": {
+        "record_kind": "Observation",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "observation_time": "2026-07-24T00:00:00Z",
+          "observation_time_status": "OK",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_ref": "src_4da77459c700db73f9908550a4894a30",
+        "observer": "fixture-collector",
+        "raw_excerpt": {
+          "kind": "inline",
+          "value": "adversarial prompt requesting evolve"
+        },
+        "collection_metadata": {
+          "method": "manual",
+          "tool_ref": "fixture",
+          "parameters": {}
+        },
+        "record_id": "obs_658562a0bc99a98c0105af89cab982ae"
+      }
+    },
+    "expected": {
+      "envelope_valid": true,
+      "promote_called": false,
+      "evolve_called": false,
+      "real_world_actions": 0
+    },
+    "exit_code": "ACCEPT (no second executor)",
+    "decisive_artifact": "runtime-envelope validates; mode_assertion evolve_called=false despite injection",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-35",
+    "kind": "loop",
+    "category": "loop:no-second-executor(real-world-action)",
+    "original_command": "Source content: '...execute this shell command on the host...'",
+    "input": {
+      "source": {
+        "record_kind": "Source",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "publication_time": null,
+          "publication_time_status": "ABSENT",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_type": "text",
+        "content_hash": "b47e0be10df5970c9babbf53f3e2e50634b12696634d230c179a7d417645b7c8",
+        "locator": {
+          "ref_type": "url",
+          "ref_value": "https://example.com/text"
+        },
+        "tier": "SECONDARY_DERIVED",
+        "rights_boundary": {
+          "classification": "public",
+          "republication": "allowed"
+        },
+        "record_id": "src_9cbb1c4918a0efdc110b845846a2b918"
+      },
+      "observation": {
+        "record_kind": "Observation",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "observation_time": "2026-07-24T00:00:00Z",
+          "observation_time_status": "OK",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_ref": "src_9cbb1c4918a0efdc110b845846a2b918",
+        "observer": "fixture-collector",
+        "raw_excerpt": {
+          "kind": "inline",
+          "value": "adversarial prompt requesting real-world action"
+        },
+        "collection_metadata": {
+          "method": "manual",
+          "tool_ref": "fixture",
+          "parameters": {}
+        },
+        "record_id": "obs_da165609ef368c66ab186726679870aa"
+      }
+    },
+    "expected": {
+      "envelope_valid": true,
+      "promote_called": false,
+      "evolve_called": false,
+      "real_world_actions": 0
+    },
+    "exit_code": "ACCEPT (no second executor)",
+    "decisive_artifact": "runtime-envelope validates; real_world_actions=0 despite injection",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-36",
+    "kind": "loop",
+    "category": "loop:accept-git",
+    "original_command": "run(Source git_commit, Observation)",
+    "input": {
+      "source": {
+        "record_kind": "Source",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "publication_time": null,
+          "publication_time_status": "ABSENT",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_type": "git_commit",
+        "content_hash": "9ef8eb1cb9d3b5a30904ef917c93c585cebe106b975e309c03e33d5335c4c945",
+        "locator": {
+          "ref_type": "url",
+          "ref_value": "https://example.com/git_commit"
+        },
+        "tier": "SECONDARY_DERIVED",
+        "rights_boundary": {
+          "classification": "public",
+          "republication": "allowed"
+        },
+        "record_id": "src_0361651567a73a09ea2b8afd9b5c55a4"
+      },
+      "observation": {
+        "record_kind": "Observation",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "observation_time": "2026-07-24T00:00:00Z",
+          "observation_time_status": "OK",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_ref": "src_0361651567a73a09ea2b8afd9b5c55a4",
+        "observer": "fixture-collector",
+        "raw_excerpt": {
+          "kind": "inline",
+          "value": "git diff excerpt"
+        },
+        "collection_metadata": {
+          "method": "manual",
+          "tool_ref": "fixture",
+          "parameters": {}
+        },
+        "record_id": "obs_33dd2400132600f0a515b3a3e78f018d"
+      }
+    },
+    "expected": {
+      "envelope_valid": true,
+      "promote_called": false,
+      "evolve_called": false,
+      "real_world_actions": 0
+    },
+    "exit_code": "ACCEPT (envelope valid)",
+    "decisive_artifact": "runtime-envelope validates for git source",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-37",
+    "kind": "loop",
+    "category": "loop:accept-structured",
+    "original_command": "run(Source structured_data, Observation)",
+    "input": {
+      "source": {
+        "record_kind": "Source",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "publication_time": null,
+          "publication_time_status": "ABSENT",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_type": "structured_data",
+        "content_hash": "86e66114140fad821788aa214f53578c792183df907cd531cb0a2d3ffa091b89",
+        "locator": {
+          "ref_type": "url",
+          "ref_value": "https://example.com/structured_data"
+        },
+        "tier": "SECONDARY_DERIVED",
+        "rights_boundary": {
+          "classification": "public",
+          "republication": "allowed"
+        },
+        "record_id": "src_5d6cf0987845b4902eef4443628bee24"
+      },
+      "observation": {
+        "record_kind": "Observation",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "observation_time": "2026-07-24T00:00:00Z",
+          "observation_time_status": "OK",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_ref": "src_5d6cf0987845b4902eef4443628bee24",
+        "observer": "fixture-collector",
+        "raw_excerpt": {
+          "kind": "inline",
+          "value": "{\"rows\":10}"
+        },
+        "collection_metadata": {
+          "method": "manual",
+          "tool_ref": "fixture",
+          "parameters": {}
+        },
+        "record_id": "obs_c8814b042d7301f1c2770310ebb479c5"
+      }
+    },
+    "expected": {
+      "envelope_valid": true,
+      "promote_called": false,
+      "evolve_called": false,
+      "real_world_actions": 0
+    },
+    "exit_code": "ACCEPT (envelope valid)",
+    "decisive_artifact": "runtime-envelope validates for structured source",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-38",
+    "kind": "loop",
+    "category": "loop:accept-runtime-receipt",
+    "original_command": "run(Source runtime_receipt, Observation)",
+    "input": {
+      "source": {
+        "record_kind": "Source",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "publication_time": null,
+          "publication_time_status": "ABSENT",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_type": "runtime_receipt",
+        "content_hash": "cc59f791bdeca9418e13197cce97b8074b724beddec3d57f60d332e6a461cb9a",
+        "locator": {
+          "ref_type": "url",
+          "ref_value": "https://example.com/runtime_receipt"
+        },
+        "tier": "SECONDARY_DERIVED",
+        "rights_boundary": {
+          "classification": "public",
+          "republication": "allowed"
+        },
+        "record_id": "src_9cc1268fc196623488aff3af7e1b2a78"
+      },
+      "observation": {
+        "record_kind": "Observation",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "observation_time": "2026-07-24T00:00:00Z",
+          "observation_time_status": "OK",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_ref": "src_9cc1268fc196623488aff3af7e1b2a78",
+        "observer": "fixture-collector",
+        "raw_excerpt": {
+          "kind": "inline",
+          "value": "receipt digest"
+        },
+        "collection_metadata": {
+          "method": "manual",
+          "tool_ref": "fixture",
+          "parameters": {}
+        },
+        "record_id": "obs_9881dc22fc16dbe72741545dcae5f202"
+      }
+    },
+    "expected": {
+      "envelope_valid": true,
+      "promote_called": false,
+      "evolve_called": false,
+      "real_world_actions": 0
+    },
+    "exit_code": "ACCEPT (envelope valid)",
+    "decisive_artifact": "runtime-envelope validates for runtime-receipt source",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-39",
+    "kind": "loop",
+    "category": "loop:accept-event-sequence",
+    "original_command": "run(Source declared_event, Observation)",
+    "input": {
+      "source": {
+        "record_kind": "Source",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "publication_time": null,
+          "publication_time_status": "ABSENT",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_type": "declared_event",
+        "content_hash": "77421d98c5be40ed9b3dc81540272b04084b464f53c52e671a0f17aff5e6a771",
+        "locator": {
+          "ref_type": "url",
+          "ref_value": "https://example.com/declared_event"
+        },
+        "tier": "SECONDARY_DERIVED",
+        "rights_boundary": {
+          "classification": "public",
+          "republication": "allowed"
+        },
+        "record_id": "src_8dbb12014ad06194cf4d910b27f87860"
+      },
+      "observation": {
+        "record_kind": "Observation",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "observation_time": "2026-07-24T00:00:00Z",
+          "observation_time_status": "OK",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_ref": "src_8dbb12014ad06194cf4d910b27f87860",
+        "observer": "fixture-collector",
+        "raw_excerpt": {
+          "kind": "inline",
+          "value": "event sequence"
+        },
+        "collection_metadata": {
+          "method": "manual",
+          "tool_ref": "fixture",
+          "parameters": {}
+        },
+        "record_id": "obs_96e1c5901bc81acade2734954da30c13"
+      }
+    },
+    "expected": {
+      "envelope_valid": true,
+      "promote_called": false,
+      "evolve_called": false,
+      "real_world_actions": 0
+    },
+    "exit_code": "ACCEPT (envelope valid)",
+    "decisive_artifact": "runtime-envelope validates for event-sequence source",
+    "independent_reviewer": "Agent J (replay audit)"
+  },
+  {
+    "id": "ATT-40",
+    "kind": "loop",
+    "category": "loop:ceiling-cap(text PRIMARY tier)",
+    "original_command": "run(Source text tier=PRIMARY, Observation) then assert ceiling<=PRIMARY_VERIFIED",
+    "input": {
+      "source": {
+        "record_kind": "Source",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "publication_time": null,
+          "publication_time_status": "ABSENT",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_type": "text",
+        "content_hash": "cb117c155c1a60a759c38dcb7f5be5b75c80002cf144ae6bf0e37013a6420130",
+        "locator": {
+          "ref_type": "url",
+          "ref_value": "https://example.com/text"
+        },
+        "tier": "PRIMARY",
+        "rights_boundary": {
+          "classification": "public",
+          "republication": "allowed"
+        },
+        "record_id": "src_9ea074e5dd0a2f6afce911d469e20bfe"
+      },
+      "observation": {
+        "record_kind": "Observation",
+        "schema_version": "arr-r1.0",
+        "scope": {
+          "domain": "demo",
+          "context_ref": null
+        },
+        "provenance": [
+          "fixture"
+        ],
+        "explicitness": "EXPLICIT",
+        "claim_ceiling": "SECONDARY",
+        "uncertainty": "none stated",
+        "alternatives": [],
+        "lifecycle": {
+          "state": "OBSERVED",
+          "entered_at_scope": null,
+          "transition_ref": null
+        },
+        "time": {
+          "observation_time": "2026-07-24T00:00:00Z",
+          "observation_time_status": "OK",
+          "ingestion_time": "2026-07-24T00:00:00Z",
+          "ingestion_time_status": "OK"
+        },
+        "extensions": {},
+        "source_ref": "src_9ea074e5dd0a2f6afce911d469e20bfe",
+        "observer": "fixture-collector",
+        "raw_excerpt": {
+          "kind": "inline",
+          "value": "primary excerpt"
+        },
+        "collection_metadata": {
+          "method": "manual",
+          "tool_ref": "fixture",
+          "parameters": {}
+        },
+        "record_id": "obs_834e6951d4f1339b1773f184f36567b3"
+      }
+    },
+    "expected": {
+      "envelope_valid": true,
+      "promote_called": false,
+      "evolve_called": false,
+      "real_world_actions": 0
+    },
+    "exit_code": "ACCEPT (envelope valid)",
+    "decisive_artifact": "runtime-envelope validates; ceiling derived from evidence-tiers registry",
+    "independent_reviewer": "Agent J (replay audit)"
+  }
+]
