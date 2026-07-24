@@ -62,7 +62,8 @@ def test_attack_matrix_item(case: dict):
 
 
 def test_matrix_has_40_items():
-    assert len(_cases()) == 40
+    # 40 original items + ATT-20b (B5 unauthorized_causal_delegation) added in R2.
+    assert len(_cases()) == 41
 
 
 def test_matrix_covers_all_8_reject_codes():

@@ -20,6 +20,7 @@ executor and performs NO real-world action, network call, or external write.
 """
 from __future__ import annotations
 
+import copy
 import json
 from pathlib import Path
 from typing import Any
@@ -137,6 +138,18 @@ class ARRRuntime:
         self.contract = contract or ARRContract()
         self.code_version = code_version
         self.stages: list[dict] = []
+        # ADR-R2-01 fail-closed: B1-B6 bindings are the SOLE behavioral source for
+        # overstep protection. If the registry declares an empty/missing binding
+        # set, overstep protection is effectively disabled, so we refuse to run
+        # rather than silently downgrade to hardcoded behavior. Removal of B1-B6
+        # therefore fails closed, not silently.
+        bindings = self.contract.registries.get("projection-routes", {}).get(
+            "anti_overstep_bindings")
+        if not bindings:
+            raise ContractValidationError(
+                "registry-driven binding set is empty; overstep protection "
+                "disabled -> refuse to run (ADR-R2-01 fail-closed)"
+            )
 
     # -- helpers ---------------------------------------------------------
     @staticmethod
@@ -153,6 +166,13 @@ class ARRRuntime:
     def run(self, source: dict, observation: dict) -> dict:
         self.stages = []
         t = self._stamp()
+
+        # ADR-R2-02: caller-owned inputs are immutable. Deep-copy both inputs at
+        # the boundary so that every validation, id computation, and lifecycle
+        # write below operates on copies. The caller's source/observation dicts
+        # are byte/structure-identical before and after run().
+        source = copy.deepcopy(source)
+        observation = copy.deepcopy(observation)
 
         # 1. OBSERVE
         self.contract.validate_record(source)
@@ -372,7 +392,9 @@ class ARRRuntime:
             decision["target"] = "REJECT"
             decision["reject_code"] = guard_code
 
-        # Apply anti-overstep bindings B1-B6.
+        # Apply anti-overstep bindings B1-B6 — behaviorally registry-driven.
+        # The interpreter consumes self.contract.registries['projection-routes']
+        # ['anti_overstep_bindings']; no hardcoded dual truth survives.
         if decision["reject_code"] is None:
             over_code = self._apply_anti_overstep(bindings, relation, decision)
             if over_code is not None:
@@ -475,28 +497,84 @@ class ARRRuntime:
         # G_HIGHER_ORDER (scoped R5): preserved; no rejection here.
         return None
 
+    # -- registry-driven anti-overstep interpreter (ADR-R2-01) -----------
     @staticmethod
-    def _apply_anti_overstep(bindings: list, relation: dict, decision: dict) -> str | None:
-        ext = relation.get("extensions") or {}
-        rt = relation.get("relation_type")
-        ceiling = relation.get("claim_ceiling")
-        # B4: anti-overclaim-matrix forbidden words in the asserted proposition.
-        props = (relation.get("uncertainty") or "")
-        low = props.lower()
-        forbidden = ("therefore causes", "proves that", "definitely true",
-                     "is the consensus", "is the most important")
-        # B1: adjacency is not causality/truth/importance/value/consensus.
-        if decision.get("rule_id") == "R12" and ceiling == "PRIMARY_VERIFIED":
-            return "overclaim_upgrade_attempt"
-        # B3: similarity/embedding distance is not causality/truth/importance.
-        if decision.get("rule_id") == "R11" and ceiling == "PRIMARY_VERIFIED":
-            return "overclaim_upgrade_attempt"
-        # B6: a generic relation must never set causal_status=established.
-        if rt == "generic" and ext.get("x_causal_status") == "established":
-            return "overclaim_upgrade_attempt"
-        # B4: forbidden overclaim words -> overclaim_upgrade_attempt.
-        if any(w in low for w in forbidden):
-            return "overclaim_upgrade_attempt"
+    def _get_path(obj: dict, dotted: str):
+        """Read a dotted path with a None sentinel (e.g. 'relation.extensions.x').
+
+        A path component that does not exist yields a MISSING sentinel so that an
+        explicit {'op':'equals','value':None} binding fires only when the field is
+        truly absent (never-confused with a wrong value).
+        """
+        MISSING = object()
+        cur: Any = obj
+        for part in dotted.split("."):
+            if isinstance(cur, dict) and part in cur:
+                cur = cur[part]
+            else:
+                return MISSING
+        return cur
+
+    @classmethod
+    def _eval_condition(cls, cond: dict, relation: dict, decision: dict) -> bool:
+        """Evaluate a closed binding condition against the live call.
+
+        condition forms:
+          {"all": [c, ...]}  -> every sub-condition true
+          {"any": [c, ...]}  -> at least one sub-condition true
+          leaf: {"field": "<dotted>", "op": "<op>", "value": <v>}
+        ops: equals, not_equals, in, contains_any
+        Fields are resolved from `relation` or `decision` (dotted prefix).
+        """
+        if "all" in cond:
+            return all(cls._eval_condition(c, relation, decision) for c in cond["all"])
+        if "any" in cond:
+            return any(cls._eval_condition(c, relation, decision) for c in cond["any"])
+        field = cond["field"]
+        op = cond["op"]
+        target = relation if field.startswith("relation.") else decision
+        actual = cls._get_path(target, field.split(".", 1)[1])
+        MISSING = object()
+        if actual is MISSING:
+            actual = None  # field absent -> treat as None for equals/contains checks
+        val = cond.get("value")
+        if op == "equals":
+            return actual == val
+        if op == "not_equals":
+            return actual != val
+        if op == "in":
+            return actual in (val or [])
+        if op == "contains_any":
+            if not isinstance(actual, str):
+                return False
+            low = actual.lower()
+            return any(w.lower() in low for w in (val or []))
+        raise ContractValidationError(f"unknown binding condition op: {op!r}")
+
+    def _apply_anti_overstep(self, bindings: list, relation: dict, decision: dict) -> str | None:
+        """Interpreter: apply each registry binding; first matching effect wins.
+
+        This is the SOLE behavioral source for overstep protection (ADR-R2-01).
+        Mutating a binding's condition/effect changes behavior; removing a binding
+        removes that specific protection (and an empty set fails closed at
+        construction). No hardcoded branch for B1-B6 survives.
+        """
+        for b in bindings:
+            try:
+                if not self._eval_condition(b["condition"], relation, decision):
+                    continue
+            except (KeyError, ContractValidationError):
+                # malformed binding -> surface loudly rather than silently skip
+                raise ContractValidationError(
+                    f"binding {b.get('binding_id')} condition malformed")
+            effect = b.get("effect") or {}
+            if effect.get("type") == "reject":
+                return effect.get("reject_code")
+            # Future effect types (e.g. downgrade_ceiling) extend here; an unknown
+            # effect type is a contract error, never a silent no-op.
+            raise ContractValidationError(
+                f"binding {b.get('binding_id')} has unknown effect type "
+                f"{effect.get('type')!r}")
         return None
 
     # -- evidence lifecycle ---------------------------------------------
