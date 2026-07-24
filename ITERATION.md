@@ -264,3 +264,48 @@ Selective materialization is permitted only when registry, topology, profile, pr
 Q32I self-hosting changes the registry, topology, profiles, planner, executor, validator and synchronization surfaces, so its own final change request correctly produces `FULL_REBUILD_REQUIRED`. This result is a safety decision, not an implementation failure. Method 1.3.0 is candidate=false, accepted=true, merged=true and current=true; Q32I is Closed. Method 1.2.0 is Historical.
 
 The Phase D deterministic report, Phase E manifest, completion seal and exact-head CI/artifact evidence are auditable inputs. They did not self-accept Q32I or use the closeout HEAD as their own validity premise; independent review, merge, final-main CI, production deployment and live verification remained external lifecycle evidence. They do not identify real-world causality.
+
+---
+
+## Appendix A — Draft Production Runtime (RUN/PROMOTE/EVOLVE) — NOT Current, NOT merged
+
+> Delimited appendix. This section does NOT change `Current: 1.3.0` above and is
+> not part of the accepted iteration method. It documents a **draft build** on
+> branch `production/ignition-run-promote-evolve-r1`, produced by the production
+> builder agent. It is unreviewed, unaccepted, unmerged and not Current project
+> capability. It does not change the seven-layer epistemic architecture, the
+> formal scientific-context-protocol, or any frozen protocol asset.
+
+### A.1 Scope and guardrails
+
+- Production layer: `tools/ignition_runtime/`, schemas `schemas/ignition_runtime/`,
+  tests `tests/ignition_runtime/` (45 scenarios, all passing), docs
+  `docs/ignition-runtime/`, reports `reports/ignition-rpe/`.
+- Hard mode boundaries: RUN (default) never imports or calls PROMOTE/EVOLVE;
+  PROMOTE after `--authorize promote:<token>`; EVOLVE after
+  `--authorize evolve:<token>` plus an approved signal id. No data auto-invokes
+  PROMOTE/EVOLVE.
+- Core invariant: every authoritative state change (including an ordinary RUN)
+  commits a NEW immutable generation; committed generations are never mutated
+  in place; a crash leaves old-or-new-only.
+- Strict pointer: an empty store bootstraps once; an established store with a
+  damaged `CURRENT` fails closed.
+- Epistemic: source binding, bounded claim ceilings, non-empty UNKNOWN,
+  deterministic `semantic_id`, tombstone/reactivation lifecycle, no auto-promotion.
+
+### A.2 Why this is a draft, not Current
+
+The runtime is a candidate production execution surface for the repair-r3
+scientific-context-protocol material set. It has passed its own 45-scenario
+adversarial suite but has not been independently reviewed, accepted, merged, or
+verified against final-main CI. Per the iteration method, an open Draft PR is
+never current project capability; a merged change becomes current only after
+exact-head merge verification and required post-merge checks. This appendix is a
+lead for that future work, not an authority.
+
+### A.3 Evidence pointers (repository-local, not self-validating)
+
+- `docs/ignition-runtime/OPERATION.md`, `docs/ignition-runtime/ARCHITECTURE.md`
+- `reports/ignition-rpe/ATTACK_MATRIX.md`, `reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md`
+- `tests/ignition_runtime/test_scenarios.py` (45 scenarios)
+- `.github/workflows/ignition-production-validation.yml`

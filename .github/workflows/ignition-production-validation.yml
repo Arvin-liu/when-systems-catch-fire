@@ -1,0 +1,59 @@
+name: Ignition Production Validation (RUN/PROMOTE/EVOLVE)
+
+on:
+  push:
+    branches:
+      - production/ignition-run-promote-evolve-r1
+    paths:
+      - 'tools/ignition_runtime/**'
+      - 'schemas/ignition_runtime/**'
+      - 'tests/ignition_runtime/**'
+  pull_request:
+    branches:
+      - production/ignition-run-promote-evolve-r1
+    paths:
+      - 'tools/ignition_runtime/**'
+      - 'schemas/ignition_runtime/**'
+      - 'tests/ignition_runtime/**'
+
+jobs:
+  production-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install jsonschema pytest
+
+      - name: Schema validity (self-check)
+        run: |
+          python3 - <<'PY'
+          import json, glob, sys
+          from jsonschema import Draft202012Validator
+          ok = True
+          for path in glob.glob("schemas/ignition_runtime/*.json"):
+              with open(path, encoding="utf-8") as fh:
+                  spec = json.load(fh)
+              try:
+                  Draft202012Validator.check_schema(spec)
+              except Exception as exc:  # noqa: BLE001
+                  ok = False
+                  print(f"SCHEMA INVALID: {path}: {exc}")
+          sys.exit(0 if ok else 1)
+          PY
+
+      - name: Run production scenario suite (45 scenarios)
+        run: python3 -m pytest tests/ignition_runtime -q
+
+      - name: Foundation front-door validators (must stay green)
+        run: |
+          python3 tools/validate_human_front_door.py
+          python3 -m unittest tests.test_human_front_door

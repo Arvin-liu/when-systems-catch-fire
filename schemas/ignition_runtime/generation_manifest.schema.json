@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ignition-runtime/generation_manifest.schema.json",
+  "title": "Ignition Runtime Generation Manifest (closed manifest)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "store_identity_ref",
+    "parent_generation",
+    "op_type",
+    "operation_id",
+    "generation_id",
+    "required_files",
+    "digests",
+    "receipt_ref",
+    "committed",
+    "immutable",
+    "provider_identity",
+    "timestamps"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "pattern": "^ignition_runtime/1\\.0\\.0$" },
+    "store_identity_ref": { "type": "string", "pattern": "^store_identity\\.json$" },
+    "parent_generation": { "type": ["string", "null"], "pattern": "^gen_[0-9a-f]+$|^null$" },
+    "op_type": { "type": "string", "enum": ["bootstrap", "run", "promote_request", "promote_approval", "evolve"] },
+    "operation_id": { "type": "string", "pattern": "^op_[0-9a-f]+$" },
+    "generation_id": { "type": "string", "pattern": "^gen_[0-9a-f]+$" },
+    "required_files": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z_]+\\.json$" },
+      "minItems": 1
+    },
+    "digests": {
+      "type": "object",
+      "patternProperties": { "^[a-z_]+\\.json$": { "type": "string", "pattern": "^[0-9a-f]{64}$" } },
+      "additionalProperties": false
+    },
+    "receipt_ref": { "type": "string", "pattern": "^receipt\\.json$" },
+    "committed": { "const": true },
+    "immutable": { "const": true },
+    "provider_identity": { "type": "string", "minLength": 1 },
+    "timestamps": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "observed_at": { "type": ["string", "null"] },
+        "published_at": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

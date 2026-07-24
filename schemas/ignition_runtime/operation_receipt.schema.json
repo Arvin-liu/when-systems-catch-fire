@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ignition-runtime/operation_receipt.schema.json",
+  "title": "Ignition Runtime Operation Receipt (finalized before serialization)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "receipt_id",
+    "op_type",
+    "operation_id",
+    "before_gen",
+    "after_gen",
+    "material_set",
+    "provider_identity",
+    "counts",
+    "result_digests",
+    "op_outcome",
+    "timestamps",
+    "self_final_sha_claimed",
+    "live_refetch_required"
+  ],
+  "properties": {
+    "receipt_id": { "type": "string", "pattern": "^rcpt_[0-9a-f]+$" },
+    "op_type": { "type": "string", "enum": ["bootstrap", "run", "promote_request", "promote_approval", "evolve"] },
+    "operation_id": { "type": "string", "pattern": "^op_[0-9a-f]+$" },
+    "before_gen": { "type": ["string", "null"], "pattern": "^gen_[0-9a-f]+$|^null$" },
+    "after_gen": { "type": ["string", "null"], "pattern": "^gen_[0-9a-f]+$|^null$" },
+    "material_set": { "type": "array", "items": { "type": "string" } },
+    "provider_identity": { "type": "string", "minLength": 1 },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidates", "unknowns", "signals", "formal_promotions", "auto_evolve"],
+      "properties": {
+        "candidates": { "type": "integer", "minimum": 0 },
+        "unknowns": { "type": "integer", "minimum": 0 },
+        "signals": { "type": "integer", "minimum": 0 },
+        "formal_promotions": { "type": "integer", "minimum": 0 },
+        "auto_evolve": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "result_digests": { "type": "array", "items": { "type": "string", "pattern": "^[0-9a-f]{64}$" } },
+    "op_outcome": { "type": "string", "enum": ["COMMITTED", "NO_OP", "REJECTED", "CRASHED"] },
+    "timestamps": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start": { "type": ["string", "null"] },
+        "end": { "type": ["string", "null"] }
+      }
+    },
+    "self_final_sha_claimed": { "const": false },
+    "live_refetch_required": { "const": true }
+  }
+}

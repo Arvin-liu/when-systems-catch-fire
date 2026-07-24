@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ignition-runtime/promotion_package.schema.json",
+  "title": "Ignition Runtime Promotion Package (reviewable, never auto-applies formal knowledge)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["package_id", "candidate_refs", "justification", "constraint_no_formal_promotion"],
+  "properties": {
+    "package_id": { "type": "string" },
+    "candidate_refs": { "type": "array", "items": { "type": "string" } },
+    "justification": { "type": "string" },
+    "constraint_no_formal_promotion": { "const": true },
+    "promotes_to_formal": { "const": false }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ignition-runtime/authorization.schema.json",
+  "title": "Ignition Runtime Authorization (explicit user authorization only)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["mode", "token"],
+  "properties": {
+    "mode": { "type": "string", "enum": ["promote", "evolve"] },
+    "token": { "type": "string", "minLength": 1 },
+    "approved_signal_id": { "type": ["string", "null"] }
+  }
+}

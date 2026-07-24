@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ignition-runtime/promotion_request.schema.json",
+  "title": "Ignition Runtime Promotion Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["request_id", "request_type", "candidate_refs", "authorized_by", "source_run_gen", "status"],
+  "properties": {
+    "request_id": { "type": "string", "pattern": "^promo_[0-9a-f]+$" },
+    "request_type": { "type": "string", "enum": ["promote_request", "promote_approval"] },
+    "candidate_refs": { "type": "array", "items": { "type": "string" } },
+    "package": { "type": "object" },
+    "authorized_by": { "type": "string", "minLength": 1 },
+    "source_run_gen": { "type": ["string", "null"] },
+    "links_request_gen": { "type": ["string", "null"] },
+    "status": { "type": "string", "enum": ["OPEN", "APPROVED", "REJECTED"] }
+  }
+}
