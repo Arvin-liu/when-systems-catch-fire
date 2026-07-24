@@ -1,0 +1,82 @@
+{
+  "source": {
+    "record_kind": "Source",
+    "schema_version": "arr-r1.0",
+    "scope": {
+      "domain": "demo",
+      "context_ref": null
+    },
+    "provenance": [
+      "fixture"
+    ],
+    "explicitness": "EXPLICIT",
+    "claim_ceiling": "SECONDARY",
+    "uncertainty": "none stated",
+    "alternatives": [],
+    "lifecycle": {
+      "state": "OBSERVED",
+      "entered_at_scope": null,
+      "transition_ref": null
+    },
+    "time": {
+      "publication_time": null,
+      "publication_time_status": "ABSENT",
+      "ingestion_time": "2026-07-24T00:00:00Z",
+      "ingestion_time_status": "OK"
+    },
+    "extensions": {},
+    "source_type": "runtime_receipt",
+    "content_hash": "40d2d775bd93d13f91217e85996170b99d39161773d310e05895719fd1b1d68e",
+    "locator": {
+      "ref_type": "external_ref",
+      "ref_value": "receipt://op_eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    "tier": "PRIMARY",
+    "rights_boundary": {
+      "classification": "public",
+      "republication": "allowed"
+    },
+    "record_id": "src_68c2c98204a34bc094b9c3e3b57eefbd"
+  },
+  "observation": {
+    "record_kind": "Observation",
+    "schema_version": "arr-r1.0",
+    "scope": {
+      "domain": "demo",
+      "context_ref": null
+    },
+    "provenance": [
+      "fixture"
+    ],
+    "explicitness": "EXPLICIT",
+    "claim_ceiling": "SECONDARY",
+    "uncertainty": "none stated",
+    "alternatives": [],
+    "lifecycle": {
+      "state": "OBSERVED",
+      "entered_at_scope": null,
+      "transition_ref": null
+    },
+    "time": {
+      "observation_time": "2026-07-24T00:00:00Z",
+      "observation_time_status": "OK",
+      "ingestion_time": "2026-07-24T00:00:00Z",
+      "ingestion_time_status": "OK"
+    },
+    "extensions": {},
+    "source_ref": "src_68c2c98204a34bc094b9c3e3b57eefbd",
+    "observer": "fixture-collector",
+    "raw_excerpt": {
+      "kind": "inline",
+      "value": "admitted run receipt digest e..."
+    },
+    "collection_metadata": {
+      "method": "receipt_replay",
+      "tool_ref": "fixture",
+      "parameters": {
+        "receipt_id": "op_eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      }
+    },
+    "record_id": "obs_ca26d2bbe562d52aaa215c16d4d6a524"
+  }
+}

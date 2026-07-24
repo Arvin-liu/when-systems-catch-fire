@@ -1,0 +1,72 @@
+{
+  "registry_version": "1.0.0",
+  "purpose": "Controlled vocabulary of assertion_type values for Assertion records.",
+  "assertion_types": [
+    {
+      "type": "attribution",
+      "description": "Attribute a claim to a speaker/source.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "classification",
+      "description": "Classify an object into a category.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "support",
+      "description": "Support relation claim.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "contradiction",
+      "description": "Contradict a proposition/evidence.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "prediction",
+      "description": "Predict a future/conditional state.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "description",
+      "description": "Describe an object/state/event.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "reconstruction",
+      "description": "Interpreter reconstruction of implicit argument structure (marked as inference).",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "hypothesis",
+      "description": "Proposed explanatory hypothesis.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "factual_claim",
+      "description": "Direct factual claim about an object.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "explanatory",
+      "description": "Explain a mechanism/relation.",
+      "status": "active",
+      "since_version": "1.0.0"
+    },
+    {
+      "type": "unknown",
+      "description": "Assertion kind could not be determined.",
+      "status": "active",
+      "since_version": "1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "method_version": "1.0.0",
+  "task_id": "ARR-R1-SCAFFOLD",
+  "change_classification": [
+    "CAPABILITY_ADDITION"
+  ],
+  "verified_start": {
+    "main_head": "6723cdfaf52873516c564c324066361b257cdf52",
+    "source": "arr scaffold branch based on production/ignition-run-promote-evolve-r1 frozen head 6723cdfa",
+    "verified_at": "2026-07-24"
+  },
+  "branch_pr": {
+    "branch": "architecture/adaptive-relational-runtime-r1-scaffold",
+    "pr_number": null,
+    "base": "main",
+    "base_head": "6723cdfaf52873516c564c324066361b257cdf52",
+    "draft": true,
+    "merged": false
+  },
+  "head_binding": {
+    "mode": "external_exact_head_attestation",
+    "pr_number": null,
+    "authority": "pull_request_body_and_1111_receipt",
+    "receipt_path": "agent-results/adaptive-relational-runtime-r1-scaffold-receipt.md",
+    "embedded_exact_current_head": false,
+    "live_refetch_required": true,
+    "explanation": "ARR R1 scaffold commit 5 records repository-local map/registry/CI synchronization only. The exact final main closeout HEAD and post-commit CI are external attestations re-fetched live before any acceptance; this artifact does not self-assert a final SHA."
+  },
+  "gap": {
+    "summary": "The repository lacked a registry-driven adaptive relational runtime scaffold (one-kernel six-plane) with a declared non-executor adapter role and anti-second-executor static gate.",
+    "evidence": [
+      "14 schemas, 10 registries, 10 object primitives under schemas/architecture/adaptive-relational-runtime/",
+      "tools/adaptive_relational_runtime/ adapter package with static_gate.py (zero violations)",
+      "78 pytest cases and a 40-item attack matrix with B1-B6 overclaim guards"
+    ],
+    "smallest_material_action": "Synchronize maps, registries, topology and CI so the ARR R1 scaffold surfaces are accepted by the repo-native governance validators without changing runtime behavior."
+  },
+  "claim_ceiling": "candidate_repository_scaffold_capability_only: ARR R1 scaffold registers derived-representation surfaces, maps and CI synchronization; it does not add a truth layer, L7, execution engine, external action or causal upgrade.",
+  "status": {
+    "candidate": true,
+    "ready_for_gpt_verification": false,
+    "accepted": false,
+    "merged": false,
+    "current": false
+  },
+  "impact_matrix": [
+    {
+      "surface": "README.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "ARR R1 scaffold is map/registry/CI synchronization; README front-door structure is unchanged."
+    },
+    {
+      "surface": "docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "Current-state doc records ARR R1 scaffold existence as a current capability addition."
+    },
+    {
+      "surface": "AI-HANDOFF.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No handoff-policy change in this synchronization commit."
+    },
+    {
+      "surface": "AI-START-HERE.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No cold-start ordering change in this synchronization commit."
+    },
+    {
+      "surface": "llms.txt",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No machine-boundary change in this synchronization commit."
+    },
+    {
+      "surface": "SUMMARY.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No navigation change in this synchronization commit."
+    },
+    {
+      "surface": "CHANGELOG.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Release history not appended in this scaffold-sync commit."
+    },
+    {
+      "surface": "data/operations/project-components.json",
+      "decision": "CHANGE",
+      "reason": "ARR components registered; registry_version 1.1.13 -> 1.1.14."
+    },
+    {
+      "surface": "data/operations/change-propagation-topology.json",
+      "decision": "CHANGE",
+      "reason": "ARR relations added; topology_version 1.1.0 -> 1.1.1."
+    },
+    {
+      "surface": "data/architecture/interactive-system-map-layout.json",
+      "decision": "CHANGE",
+      "reason": "arr added to models node_order; layout_version 1.1.0 -> 1.1.1."
+    },
+    {
+      "surface": "data/architecture/interactive-system-map.json",
+      "decision": "CHANGE",
+      "reason": "Materialized map regenerated with arr node."
+    },
+    {
+      "surface": "pages/generated/ignition-system-map.svg",
+      "decision": "CHANGE",
+      "reason": "SVG regenerated with arr node."
+    },
+    {
+      "surface": "data/operations/component-execution-profiles.json",
+      "decision": "CHANGE",
+      "reason": "Profiles regenerated with arr / arr_runtime (manual, non-executor)."
+    },
+    {
+      "surface": "tools/validate_human_front_door.py",
+      "decision": "CHANGE",
+      "reason": "arr added to hardcoded required_nodes set (gate logic unchanged)."
+    },
+    {
+      "surface": "tools/adaptive_relational_runtime/static_gate.py",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Static gate unchanged in commit 5; it continues to report zero violations."
+    },
+    {
+      "surface": ".github/workflows/foundation-validation.yml",
+      "decision": "CHANGE",
+      "reason": "ARR paths added to triggers; anti-second-executor static scan step added."
+    },
+    {
+      "surface": "docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md",
+      "decision": "CHANGE",
+      "reason": "Commit-5 evidence and known-limitations document added."
+    }
+  ],
+  "changed_surfaces": [
+    "docs/project-current-state.md",
+    "data/operations/project-components.json",
+    "data/operations/change-propagation-topology.json",
+    "data/architecture/interactive-system-map-layout.json",
+    "data/architecture/interactive-system-map.json",
+    "pages/generated/ignition-system-map.svg",
+    "data/operations/component-execution-profiles.json",
+    "tools/validate_human_front_door.py",
+    ".github/workflows/foundation-validation.yml",
+    "docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md"
+  ],
+  "validation": {
+    "local": [
+      {
+        "name": "arr_r1_scaffold_sync",
+        "status": "PASS",
+        "evidence": "repo-native validators (front-door, iteration_sync, system-map --check) pass after map/registry/CI sync"
+      }
+    ],
+    "remote": [],
+    "external_exact_head_policy": {
+      "required": true,
+      "authority": "pull_request_body_and_1111_receipt",
+      "required_workflows": [
+        "foundation-validation",
+        "function-os-ci"
+      ],
+      "live_refetch_before_acceptance_or_merge": true
+    }
+  },
+  "rollback_strategy": "ARR R1 scaffold surfaces are additive registry/map/CI synchronization; rollback is a revert of commit 5, after which the arr/arr_runtime components and their map node are removed and the remaining runtime/test artifacts remain inert (adapter-only, no second executor).",
+  "remaining_limitations": [
+    "commit-2 polish items a-d are documented known limitations, not applied (exactly-5-commit rule)",
+    "commit-4 NB-1 (_apply_anti_overstep bindings param unused) and NB-2 (eng.run mutates caller input in place) are documented known limitations, runtime.py unchanged",
+    "arr is a candidate derived representation; it does not establish real-world truth, causality or an execution engine"
+  ],
+  "receipt_location": "agent-results/adaptive-relational-runtime-r1-scaffold-receipt.md"
+}

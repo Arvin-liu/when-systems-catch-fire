@@ -21,6 +21,8 @@ on:
       - 'data/architecture/**'
       - 'tools/operations/**'
       - 'tools/generate_interactive_system_map.py'
+      - 'tools/adaptive_relational_runtime/**'
+      - 'tests/adaptive_relational_runtime/**'
       - 'tests/test_change_propagation.py'
       - 'tools/validate_iteration_sync.py'
       - 'tests/test_iteration_sync.py'
@@ -60,6 +62,8 @@ on:
       - 'data/architecture/**'
       - 'tools/operations/**'
       - 'tools/generate_interactive_system_map.py'
+      - 'tools/adaptive_relational_runtime/**'
+      - 'tests/adaptive_relational_runtime/**'
       - 'tests/test_change_propagation.py'
       - 'tools/validate_iteration_sync.py'
       - 'tests/test_iteration_sync.py'
@@ -131,6 +135,12 @@ jobs:
       - name: Validate registry-derived system map
         run: python3 tools/generate_interactive_system_map.py --check
       - run: python3 tools/validate_human_front_door.py
+      - name: Scan ARR adapter for second-executor violations
+        run: python3 tools/adaptive_relational_runtime/static_gate.py
+      - name: Run ARR adapter pytest suite (repository evidence only)
+        run: |
+          python3 -m pip install pytest
+          python3 -m pytest tests/adaptive_relational_runtime/ -q
       - run: python3 -m unittest tests.foundation.test_foundation
       - run: python3 -m unittest tests.test_iteration_sync -v
       - run: python3 -m unittest tests.test_human_front_door -v
