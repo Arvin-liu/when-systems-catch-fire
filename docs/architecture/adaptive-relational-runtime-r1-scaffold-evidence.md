@@ -66,7 +66,7 @@ are DOCUMENTED as KNOWN LIMITATIONS in this commit-5 evidence; `runtime.py` is N
 - **5** commits in the ARR R1 Scaffold sequence.
 - **14** schemas under `schemas/architecture/adaptive-relational-runtime/`.
 - **10** registries under `data/architecture/adaptive-relational-runtime/registries/`.
-- **9** object primitives (action, assertion, event, feedback, mechanism, object,
+- **10** object primitives (action, assertion, event, feedback, mechanism, object,
   observation, relation, source, state, plus runtime-envelope / execution-receipt-adapter
   satellites counted within the schema set).
 - **12** fixtures (3 text / 3 Git / 2 structured / 2 runtime-receipt / 2 event-sequence).

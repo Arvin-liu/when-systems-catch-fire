@@ -29,7 +29,7 @@
   "gap": {
     "summary": "The repository lacked a registry-driven adaptive relational runtime scaffold (one-kernel six-plane) with a declared non-executor adapter role and anti-second-executor static gate.",
     "evidence": [
-      "14 schemas, 10 registries, 9 object primitives under schemas/architecture/adaptive-relational-runtime/",
+      "14 schemas, 10 registries, 10 object primitives under schemas/architecture/adaptive-relational-runtime/",
       "tools/adaptive_relational_runtime/ adapter package with static_gate.py (zero violations)",
       "78 pytest cases and a 40-item attack matrix with B1-B6 overclaim guards"
     ],

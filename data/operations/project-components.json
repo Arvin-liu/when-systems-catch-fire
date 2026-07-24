@@ -2642,6 +2642,8 @@
         "docs/architecture/adaptive-relational-runtime-adrs.md",
         "docs/architecture/adaptive-relational-runtime-interop.md",
         "docs/architecture/adaptive-relational-runtime-r1-scaffold-evidence.md",
+        "docs/architecture/object-relation-mechanism-model.md",
+        "docs/architecture/self-growth-control-plane.md",
         "schemas/architecture/adaptive-relational-runtime/",
         "data/architecture/adaptive-relational-runtime/"
       ],
@@ -2663,7 +2665,8 @@
       "component_type": "operation_control",
       "canonical_target": "tools/adaptive_relational_runtime/runtime.py",
       "path_patterns": [
-        "tools/adaptive_relational_runtime/"
+        "tools/adaptive_relational_runtime/",
+        "tests/adaptive_relational_runtime/"
       ],
       "authority": "declarative",
       "layer_or_overlay": "overlay",
@@ -2679,5 +2682,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.1.14"
+  "registry_version": "1.1.15"
 }
