@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ignition-runtime/engineering_signal.schema.json",
+  "title": "Ignition Runtime Engineering Signal Ledger Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["signal_id", "semantic_id", "description", "source_sha256", "created_gen", "approved", "status"],
+  "properties": {
+    "signal_id": { "type": "string" },
+    "semantic_id": { "type": "string", "pattern": "^sid_[0-9a-f]+$" },
+    "description": { "type": "string", "minLength": 1 },
+    "source_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "created_gen": { "type": "string" },
+    "approved": { "type": "boolean" },
+    "status": {
+      "type": "string",
+      "enum": ["OPEN", "APPROVED", "CONSUMED", "ARCHIVED"]
+    }
+  }
+}
