@@ -208,3 +208,27 @@ llms.txt
 - [现实反馈参与入口](./docs/participate.md) — 说明外部反馈如何进入“缺口发现 -> 结构修正 -> 再验证”链条。
 
 </details>
+
+## 点火生产运行时（草稿，未合并）/ Ignition Production Runtime (Draft, unmerged)
+
+A draft production execution layer (`tools/ignition_runtime`) adds an
+immutable-generation RUN/PROMOTE/EVOLVE surface for the repair-r3
+scientific-context-protocol material set. It is **unreviewed, unaccepted,
+unmerged and not Current**; it does not change the iteration method `1.3.0`, the
+seven-layer epistemic architecture, or any frozen formal protocol.
+
+- Hard mode boundaries: RUN (default) never imports or calls PROMOTE/EVOLVE;
+  PROMOTE after explicit authorization; EVOLVE after authorization plus an
+  approved signal. No data auto-invokes PROMOTE/EVOLVE.
+- Core invariant: every authoritative change commits a NEW immutable generation;
+  committed generations are never mutated in place; a crash leaves old-or-new-only.
+- Strict pointer (fail closed), closed-manifest triple-equality, bounded claim
+  ceilings, non-empty UNKNOWN, deterministic `semantic_id`, source-change
+  tombstone/reactivation, no auto-promotion.
+- Operation: [docs/ignition-runtime/OPERATION.md](./docs/ignition-runtime/OPERATION.md);
+  Architecture: [docs/ignition-runtime/ARCHITECTURE.md](./docs/ignition-runtime/ARCHITECTURE.md);
+  Attack matrix: [reports/ignition-rpe/ATTACK_MATRIX.md](./reports/ignition-rpe/ATTACK_MATRIX.md);
+  Five-material receipt: [reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md](./reports/ignition-rpe/FIVE_MATERIAL_RECEIPT.md).
+
+This is a candidate build, not current project capability. See the delimited
+Appendix A in [点火迭代操作法](./ITERATION.md).

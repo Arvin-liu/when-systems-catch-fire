@@ -165,3 +165,15 @@ A coaching subcapability can support user-declared informed commitments while pr
 ### SCIENTIFIC-CONTEXT-PROTOCOL-I1 Open Scientific Context Protocol (stacked Draft candidate)
 
 A minimal versioned local protocol can negotiate capabilities and exchange identity-, authority-, artifact-, failure-, retry- and boundary-bound scientific context without copying a platform or executing hardware actions. This remains evidence-bound, repository-local, unreviewed, unready, unmerged and not Current. Explicit non-claims: no deployed ecosystem; no hardware execution; no platform model copying; no sensitive-data/network boundary bypass.
+
+### IGNITION-RUNTIME-R1 Production RUN/PROMOTE/EVOLVE (stacked Draft candidate)
+
+A draft production execution layer (`tools/ignition_runtime`) commits every
+authoritative state change as a new immutable generation for the repair-r3
+scientific-context-protocol material set. It remains evidence-bound,
+repository-local, unreviewed, unready, unmerged and not Current. Explicit
+non-claims: it does not change the iteration method `1.3.0`, the seven-layer
+epistemic architecture, or any frozen formal protocol; it does not auto-promote
+candidates to formal knowledge and does not auto-trigger engineering evolution;
+an ordinary RUN never imports or calls PROMOTE/EVOLVE. Verified only by its own
+45-scenario adversarial suite; pending independent review, merge and final-main CI.
