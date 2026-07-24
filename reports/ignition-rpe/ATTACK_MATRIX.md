@@ -3,7 +3,27 @@
 Draft production layer (`production/ignition-run-promote-evolve-r1`). Each row
 maps a scenario test (`tests/ignition_runtime/test_scenarios.py`) to an attack
 and the defensive invariant that closes it. All 45 scenarios pass (51 pytest
-cases including parametrization).
+cases including parametrization), plus 4 one-time-fix regression cases
+(`tests/ignition_runtime/test_fix_regressions.py`).
+
+## Build provenance (one-time fix, agent F)
+
+- Previous HEAD: `c9253154b36af1ded3f973bd13b44a99f23984b9`
+- New HEAD: the tip of `production/ignition-run-promote-evolve-r1` (this fix
+  commit). Exact 40-char sha is verifiable via `git rev-parse HEAD` and is
+  recorded in `/tmp/agent-work/F_fix_report.md`.
+- Fixes applied in this commit:
+  - **G2b / G3 / G8** — load-path dir-name ↔ content-id binding now fails closed
+    (recompute content-derived `gen_id` on every load; assert
+    `directory_name == computed_gen_id` and `manifest["generation_id"] ==
+    computed_gen_id`, else `GenerationIntegrityError`). SCOPE: local trust model
+    only; does NOT resist an attacker with full local store write permission.
+  - **H B1** — provider-identity incoherence now fails closed for ALL schemes
+    (incl. `fixture://`), removing the `upload://`-only gate.
+  - **H W2** — beyond-ceiling guard normalizes claim text (unicode NFKC,
+    lowercase, strip whitespace/punctuation) before substring matching. HEURISTIC
+    guard, not a semantic classifier; leetspeak/synonym over-claims from
+    SECONDARY sources still downgrade to UNKNOWN.
 
 ## A. Pointer / store integrity (fail closed)
 
@@ -89,3 +109,12 @@ cases including parametrization).
 | S42 | `test_s42_runtime_imports_and_runs` | all modules import; run works |
 | S43 | `test_s43_diff_scope` | draft diff only touches production-layer paths |
 | S44 | `test_s44_remote_evidence_readable` | (skipped when control inputs absent) FileSystemProvider reads 5 materials; original upload SHA present in index |
+
+## I. One-time fix regressions (`tests/ignition_runtime/test_fix_regressions.py`)
+
+| ID | Scenario | Attack | Defense |
+|----|----------|--------|---------|
+| F1 | `test_fix_load_binding_renamed_dir_fails_closed` | rename committed gen dir away from its content id (G8) | `GenerationIntegrityError` on load (`directory_name != computed_gen_id`) |
+| F2 | `test_fix_load_binding_rewritten_manifest_fails_closed` | consistent forger (data + manifest digests) no longer matching content id (G2b) | `GenerationIntegrityError` (`manifest.generation_id != computed_gen_id`) |
+| F3 | `test_fix_provider_identity_incoherence_fixture_fails_closed` | `fixture://` material with `upload://` provider identity (H B1) | `EpistemicError` — incoherence fails closed for all schemes |
+| F4 | `test_fix_beyond_ceiling_normalization` | spacing/punctuation-obfuscated beyond-ceiling claim (H W2) | normalized substring match catches `root cure` / `state of the art`; leetspeak remains a documented HEURISTIC miss |

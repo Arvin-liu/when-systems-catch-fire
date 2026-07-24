@@ -10,6 +10,7 @@
     "parent_generation",
     "op_type",
     "operation_id",
+    "generation_id",
     "required_files",
     "digests",
     "receipt_ref",
@@ -24,6 +25,7 @@
     "parent_generation": { "type": ["string", "null"], "pattern": "^gen_[0-9a-f]+$|^null$" },
     "op_type": { "type": "string", "enum": ["bootstrap", "run", "promote_request", "promote_approval", "evolve"] },
     "operation_id": { "type": "string", "pattern": "^op_[0-9a-f]+$" },
+    "generation_id": { "type": "string", "pattern": "^gen_[0-9a-f]+$" },
     "required_files": {
       "type": "array",
       "items": { "type": "string", "pattern": "^[a-z_]+\\.json$" },

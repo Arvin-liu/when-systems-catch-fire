@@ -60,6 +60,17 @@ recomputes each digest, verifies the manifest self-digest, enforces
 `live_refetch_required=true`), and resolves the parent link against
 `generations_root` (also correct while staging under `.staging/<gen_id>`).
 
+Generation content-addressing and directory binding guarantee crash consistency,
+complete-set validation, and fail-closed behavior against accidental corruption
+and non-coordinated tampering; they do NOT claim resistance against an attacker
+holding full local store write permission. Cross-trust-boundary authenticity is
+borne by external Git commit, remote refetch, and evidence anchors.
+
+Provider identity/tier are self-asserted; content integrity (source bytes SHA +
+result digest) is bound, but provenance authenticity requires out-of-band trust
+(external refetch/evidence anchors) — the runtime does NOT claim to authenticate
+providers.
+
 ## 4. Atomic publish (old-or-new-only)
 
 `transaction.publish_generation` is the single writer:

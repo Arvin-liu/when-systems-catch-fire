@@ -62,3 +62,40 @@ Every committed generation carries a `receipt.json` with
 never embedded as a final head in any committed file (`test_s45`). Recovery is
 strict: a corrupt current generation yields the last closed-manifest-valid
 generation, never a silent empty ledger.
+
+## Build provenance (one-time fix, agent F)
+
+- Previous HEAD: `c9253154b36af1ded3f973bd13b44a99f23984b9`
+- New HEAD: the tip of `production/ignition-run-promote-evolve-r1` (this fix
+  commit). Exact 40-char sha is verifiable via `git rev-parse HEAD` and is
+  recorded in `/tmp/agent-work/F_fix_report.md`.
+
+### Fixes applied in this commit
+
+- **G2b / G3 / G8 (load-path binding).** A generation directory name and its
+  manifest `generation_id` must both equal the content-derived `gen_id`
+  recomputed on every load with the same function used at publish
+  (`parent + op + materials + results + ledgers digests`); a mismatch raises
+  `GenerationIntegrityError`. This guarantees crash consistency, complete-set
+  validation, and fail-closed behavior against accidental corruption and
+  non-coordinated tampering. It does **NOT** claim resistance against an attacker
+  holding full local store write permission; cross-trust-boundary authenticity is
+  borne by external Git commit, remote refetch, and evidence anchors.
+- **H B1 (provider-identity).** Provider-identity incoherence now fails closed for
+  **all** schemes (including `fixture://`), not only `upload://`. Provider
+  identity/tier remain self-asserted; the runtime does NOT claim to authenticate
+  providers — provenance authenticity requires out-of-band trust (external
+  refetch / evidence anchors).
+- **H W2 (beyond-ceiling).** The beyond-ceiling guard normalizes claim text
+  (unicode NFKC, lowercase, strip whitespace/punctuation separators) before
+  substring matching. It is a HEURISTIC guard, not a semantic classifier; leetspeak
+  / synonym over-claims from SECONDARY sources still downgrade to UNKNOWN via the
+  tier check.
+
+### Foundation status (unchanged from #118 base)
+
+The inherited `validate_iteration_sync.py` exit-1 / `tests.test_iteration_sync`
+36-failure debt (frozen `data/operations/iterations/121Q25B.json` &
+`121Q25C.json`) REMAINS and is unchanged from base `833c3e5f…`. This fix
+introduces **NO new** foundation failure; foundation validation is **NOT claimed
+green**.

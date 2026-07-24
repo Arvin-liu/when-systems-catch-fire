@@ -72,6 +72,17 @@ set is fixed by `op_type`. The manifest also carries its own `sha256`
 `immutable=true`, and a receipt that asserts `self_final_sha_claimed=false` and
 `live_refetch_required=true`.
 
+Generation content-addressing and directory binding guarantee crash consistency,
+complete-set validation, and fail-closed behavior against accidental corruption
+and non-coordinated tampering; they do NOT claim resistance against an attacker
+holding full local store write permission. Cross-trust-boundary authenticity is
+borne by external Git commit, remote refetch, and evidence anchors.
+
+Provider identity/tier are self-asserted; content integrity (source bytes SHA +
+result digest) is bound, but provenance authenticity requires out-of-band trust
+(external refetch/evidence anchors) — the runtime does NOT claim to authenticate
+providers.
+
 ## 4. Commands
 
 ```bash

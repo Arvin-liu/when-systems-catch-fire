@@ -41,9 +41,25 @@ def semantic_id_of(source_sha256: str, claim_text: str) -> str:
     return "sid_" + sha256_text(source_sha256 + "|" + normalized)[:32]
 
 
+def _normalize_claim(text: str) -> str:
+    """HEURISTIC normalization for the beyond-ceiling guard (NOT a semantic
+    classifier). Unicode NFKC, lowercase, then drop all non-alphanumeric
+    characters (whitespace + punctuation separators). This neutralizes trivial
+    spacing/punctuation obfuscations (e.g. ``new best`` -> ``newbest``) but does
+    NOT defeat character-set substitution (leetspeak, synonyms). Over-claims from
+    SECONDARY sources are still downgraded to UNKNOWN by the caller's tier check.
+    """
+    import unicodedata
+
+    if not text:
+        return ""
+    text = unicodedata.normalize("NFKC", text)
+    return "".join(c.lower() for c in text if c.isalnum())
+
+
 def is_beyond_ceiling(claim_text: str) -> bool:
-    low = claim_text.lower()
-    return any(hint in low for hint in _BEYOND_CEILING_HINTS)
+    norm = _normalize_claim(claim_text)
+    return any(_normalize_claim(hint) in norm for hint in _BEYOND_CEILING_HINTS)
 
 
 def source_bind(material_id: str, source_bytes: bytes, *, tier: str, provider_id: str,
@@ -179,11 +195,13 @@ def validate_epistemic_contract(materials: dict, candidates: list, unknowns: lis
     if None in provider_ids or not provider_ids:
         raise EpistemicError("material missing provider_id (binding tamper)")
     if op_type == "run" and provider_identity:
-        # provider_identity must be among the material providers (no silent swap)
+        # provider_identity must be among the material providers (no silent swap).
+        # Incoherence fails closed for ALL schemes (upload://, fixture://, and any
+        # other): if the identity is neither present in provider_ids nor prefix-
+        # coherent with any material provider, reject. Provider identity/tier are
+        # self-asserted; this check enforces internal coherence only, not provenance
+        # authenticity (which requires out-of-band trust / evidence anchors).
         if provider_identity not in provider_ids and not any(
             provider_identity.startswith(pid.split("://")[0]) for pid in provider_ids
         ):
-            # allow fixture:// vs upload:// prefix coherence; strict equality only for UPLOAD
-            if all(pid.startswith("upload") for pid in provider_ids):
-                if provider_identity not in provider_ids:
-                    raise EpistemicError("provider identity mismatch (binding tamper)")
+            raise EpistemicError("provider identity mismatch (binding tamper)")

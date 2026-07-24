@@ -24,6 +24,18 @@ class ManifestError(IgnitionError):
     """Raised when a closed-manifest check fails (closure / digests / parent)."""
 
 
+class GenerationIntegrityError(ManifestError):
+    """Raised when a generation directory name or manifest ``generation_id`` does
+    not match the content-derived generation id recomputed on load.
+
+    This is a fail-closed *content-addressing / crash-consistency* check. It does
+    NOT resist an attacker holding full local store write permission (who can
+    rewrite data, manifest, and directory name consistently). Cross-trust-boundary
+    authenticity is borne by external Git commit, remote refetch, and evidence
+    anchors.
+    """
+
+
 class EpistemicError(IgnitionError):
     """Raised when the epistemic contract is violated (fail closed)."""
 

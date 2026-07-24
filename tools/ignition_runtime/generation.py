@@ -13,7 +13,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from .errors import ManifestError
+from .errors import GenerationIntegrityError, ManifestError
 from .hashutil import sha256_text
 from .schemas_loader import validate_schema
 
@@ -181,6 +181,7 @@ class Generation:
             "parent_generation": self.parent_generation,
             "op_type": self.op_type,
             "operation_id": self.operation_id,
+            "generation_id": self.gen_id,
             "required_files": sorted(CANON[self.op_type]),
             "digests": {k: digests[k] for k in sorted(CANON[self.op_type]) if k != "manifest.json"},
             "receipt_ref": "receipt.json",
@@ -205,6 +206,64 @@ class Generation:
 
 
 # --- load + closed-manifest validation ---------------------------------
+def _recompute_gen_id(gen_dir: Path, manifest: dict, op_type: str) -> str:
+    """Recompute the content-derived generation id using the SAME function
+    (``Generation.compute_gen_id``) used at publish time, from the ledgers on
+    disk. This is the load-path content-addressing root of trust."""
+
+    def _load(name: str):
+        p = gen_dir / name
+        if p.is_file():
+            return json.loads(p.read_text(encoding="utf-8"))
+        return None
+
+    store_identity = _load("store_identity.json") or {}
+    materials = _load("materials.json") or {}
+    results = _load("results.json") or []
+    candidates = _load("candidates.json") or []
+    unknowns = _load("unknowns.json") or []
+    signals = _load("signals.json") or []
+    promotion = _load("promotion.json")  # None when absent (run / evolve)
+    gen = Generation(
+        op_type=op_type,
+        operation_id=manifest.get("operation_id", ""),
+        parent_generation=manifest.get("parent_generation"),
+        store_identity=store_identity,
+        materials=materials,
+        results=results,
+        candidates=candidates,
+        unknowns=unknowns,
+        signals=signals,
+        promotion=promotion,
+        provider_identity=manifest.get("provider_identity", "fixture://deterministic"),
+    )
+    return gen.compute_gen_id()
+
+
+def _assert_generation_binding(gen_dir: Path, manifest: dict, op_type: str) -> None:
+    """Fail-closed dir-name <-> content-id binding (closes G2b/G3/G8).
+
+    Recompute the content-derived generation id with the SAME function used at
+    publish time (parent + op + materials + results + ledgers digests) and assert
+    BOTH ``directory_name == computed_gen_id`` AND
+    ``manifest["generation_id"] == computed_gen_id``. Any mismatch raises
+    ``GenerationIntegrityError``.
+
+    SCOPE: local trust model only. This is a content-addressing / crash-consistency
+    check; it does NOT resist an attacker with full local store write permission
+    (who can rewrite data, manifest, and directory name consistently). Cross-trust-
+    boundary authenticity is borne by external Git commit, remote refetch, and
+    evidence anchors.
+    """
+    computed = _recompute_gen_id(gen_dir, manifest, op_type)
+    claimed = manifest.get("generation_id")
+    if gen_dir.name != computed or claimed != computed:
+        raise GenerationIntegrityError(
+            f"{gen_dir}: generation binding violated "
+            f"(dir={gen_dir.name!r} manifest.generation_id={claimed!r} computed={computed!r})"
+        )
+
+
 def _list_authoritative(gen_dir: Path) -> set[str]:
     return {p.name for p in gen_dir.glob("*.json")}
 
@@ -286,6 +345,9 @@ def validate_closed_manifest(gen_dir: Path, op_type: str | None = None,
         raise ManifestError(f"{gen_dir}: receipt must claim self_final_sha_claimed=False")
     if receipt.get("live_refetch_required") is not True:
         raise ManifestError(f"{gen_dir}: receipt must require live refetch")
+    # 8. load-path content-addressing binding (closes G2b/G3/G8). Runs after the
+    #    closed-manifest proof so it only executes on an otherwise-valid generation.
+    _assert_generation_binding(gen_dir, manifest, ot)
     return manifest
 
 
