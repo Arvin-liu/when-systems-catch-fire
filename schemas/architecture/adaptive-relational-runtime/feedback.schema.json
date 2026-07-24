@@ -1,0 +1,309 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:adaptive-relational-runtime:schema:feedback",
+  "title": "ARR Feedback record",
+  "description": "Plane 6 structured single-failure feedback: classification + criterion evidence + affected references. No decorative confidence numbers.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "record_kind",
+    "schema_version",
+    "scope",
+    "provenance",
+    "explicitness",
+    "claim_ceiling",
+    "uncertainty",
+    "alternatives",
+    "lifecycle",
+    "time",
+    "extensions",
+    "failure_event_ref",
+    "failure_class",
+    "classification_evidence",
+    "classification_status",
+    "environment",
+    "disposition_hint",
+    "causal_status"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^[a-z]{2,4}_[0-9a-f]{32}$"
+    },
+    "record_kind": {
+      "const": "Feedback"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^arr-r[0-9]+\\.[0-9]+$"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "domain"
+      ],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
+    },
+    "explicitness": {
+      "type": "string",
+      "enum": [
+        "EXPLICIT",
+        "STRONGLY_IMPLIED",
+        "PLAUSIBLE_ASSUMPTION",
+        "INTERPRETER_RECONSTRUCTION",
+        "UNKNOWN"
+      ]
+    },
+    "claim_ceiling": {
+      "type": "string",
+      "enum": [
+        "PRIMARY_VERIFIED",
+        "SECONDARY",
+        "UNKNOWN"
+      ]
+    },
+    "uncertainty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state"
+      ],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "OBSERVED",
+            "PROVISIONAL",
+            "CANDIDATE",
+            "SUPPORTED",
+            "CONTESTED",
+            "SUPERSEDED",
+            "ARCHIVED",
+            "REACTIVATED",
+            "REJECTED",
+            "UNKNOWN"
+          ]
+        },
+        "entered_at_scope": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "transition_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "time": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "event_at",
+        "event_at_status",
+        "observed_at",
+        "observed_at_status",
+        "ingestion_time",
+        "ingestion_time_status"
+      ],
+      "properties": {
+        "event_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "event_at_status": {
+          "type": "string",
+          "enum": [
+            "OK",
+            "ABSENT",
+            "MALFORMED"
+          ]
+        },
+        "observed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "observed_at_status": {
+          "type": "string",
+          "enum": [
+            "OK",
+            "ABSENT",
+            "MALFORMED"
+          ]
+        },
+        "ingestion_time": {
+          "type": "string"
+        },
+        "ingestion_time_status": {
+          "type": "string",
+          "enum": [
+            "OK",
+            "ABSENT",
+            "MALFORMED"
+          ]
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "propertyNames": {
+        "pattern": "^x_[a-z0-9_]+$"
+      },
+      "patternProperties": {
+        "^x_[a-z0-9_]+$": {}
+      }
+    },
+    "failure_event_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "failure_class": {
+      "type": "string",
+      "enum": [
+        "INPUT_SOURCE",
+        "EXTRACTION_MODEL",
+        "REPRESENTATION",
+        "MECHANISM",
+        "INFRASTRUCTURE_RUNTIME",
+        "ARCHITECTURE",
+        "GOVERNANCE_REFUSAL",
+        "UNKNOWN"
+      ]
+    },
+    "classification_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "criterion_id",
+          "result",
+          "evidence_ref"
+        ],
+        "properties": {
+          "criterion_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "HIT",
+              "EXCLUDED",
+              "NOT_EVALUABLE"
+            ]
+          },
+          "evidence_ref": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "classification_status": {
+      "type": "string",
+      "enum": [
+        "CLASSIFIED",
+        "PROVISIONAL",
+        "UNKNOWN_FALLBACK"
+      ]
+    },
+    "affected_object_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "runtime_version",
+        "contract_version",
+        "provider_identity"
+      ],
+      "properties": {
+        "runtime_version": {
+          "type": "string"
+        },
+        "contract_version": {
+          "type": "string"
+        },
+        "provider_identity": {
+          "type": "string"
+        }
+      }
+    },
+    "disposition_hint": {
+      "type": "string",
+      "enum": [
+        "REPAIR_SOURCE",
+        "REPAIR_EXTRACTOR",
+        "EXTEND_REPRESENTATION",
+        "REPAIR_MECHANISM_CONTRACT",
+        "REPAIR_INFRA",
+        "ARCHITECTURE_REVIEW",
+        "GOVERNANCE_REVIEW",
+        "NEED_MORE_EVIDENCE"
+      ]
+    },
+    "causal_status": {
+      "type": "string",
+      "enum": [
+        "UNKNOWN",
+        "CANDIDATE",
+        "NOT_ESTABLISHED"
+      ]
+    }
+  },
+  "$comment": "SPDX-License-Identifier: Apache-2.0"
+}

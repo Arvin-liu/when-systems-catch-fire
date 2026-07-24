@@ -1,0 +1,313 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:adaptive-relational-runtime:schema:mechanism",
+  "title": "ARR Mechanism record",
+  "description": "Plane 4 mechanism contract (seven required elements); declares executable intent, never embeds code or PROMOTE/EVOLVE paths.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "record_kind",
+    "schema_version",
+    "scope",
+    "provenance",
+    "explicitness",
+    "claim_ceiling",
+    "uncertainty",
+    "alternatives",
+    "lifecycle",
+    "time",
+    "extensions",
+    "mechanism_type",
+    "input_contract",
+    "output_contract",
+    "executable_surface",
+    "preconditions",
+    "side_effects",
+    "rollback",
+    "adapter_capability_ref"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^[a-z]{2,4}_[0-9a-f]{32}$"
+    },
+    "record_kind": {
+      "const": "Mechanism"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^arr-r[0-9]+\\.[0-9]+$"
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "domain"
+      ],
+      "properties": {
+        "domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "context_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
+    },
+    "explicitness": {
+      "type": "string",
+      "enum": [
+        "EXPLICIT",
+        "STRONGLY_IMPLIED",
+        "PLAUSIBLE_ASSUMPTION",
+        "INTERPRETER_RECONSTRUCTION",
+        "UNKNOWN"
+      ]
+    },
+    "claim_ceiling": {
+      "type": "string",
+      "enum": [
+        "PRIMARY_VERIFIED",
+        "SECONDARY",
+        "UNKNOWN"
+      ]
+    },
+    "uncertainty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "state"
+      ],
+      "properties": {
+        "state": {
+          "type": "string",
+          "enum": [
+            "OBSERVED",
+            "PROVISIONAL",
+            "CANDIDATE",
+            "SUPPORTED",
+            "CONTESTED",
+            "SUPERSEDED",
+            "ARCHIVED",
+            "REACTIVATED",
+            "REJECTED",
+            "UNKNOWN"
+          ]
+        },
+        "entered_at_scope": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "transition_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "time": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ingestion_time",
+        "ingestion_time_status"
+      ],
+      "properties": {
+        "ingestion_time": {
+          "type": "string"
+        },
+        "ingestion_time_status": {
+          "type": "string",
+          "enum": [
+            "OK",
+            "ABSENT",
+            "MALFORMED"
+          ]
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "propertyNames": {
+        "pattern": "^x_[a-z0-9_]+$"
+      },
+      "patternProperties": {
+        "^x_[a-z0-9_]+$": {}
+      }
+    },
+    "mechanism_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "params",
+        "requires"
+      ],
+      "properties": {
+        "params": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "requires": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "schema_ref": {
+          "type": "string"
+        }
+      }
+    },
+    "output_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "result_type",
+        "emits",
+        "receipt_required"
+      ],
+      "properties": {
+        "result_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "emits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "receipt_required": {
+          "const": true
+        }
+      }
+    },
+    "executable_surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "target"
+      ],
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "function_os_capability",
+            "deterministic_stub"
+          ]
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "preconditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "expression",
+          "message"
+        ],
+        "properties": {
+          "expression": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "side_effects": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "declared",
+        "real_world"
+      ],
+      "properties": {
+        "declared": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "none",
+              "read_local_store",
+              "emit_receipt",
+              "write_bounded_output"
+            ]
+          }
+        },
+        "real_world": {
+          "const": false
+        }
+      }
+    },
+    "rollback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "strategy"
+      ],
+      "properties": {
+        "strategy": {
+          "type": "string",
+          "enum": [
+            "not_applicable_pure",
+            "compensating_noop",
+            "receipt_only"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "adapter_capability_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "$comment": "SPDX-License-Identifier: Apache-2.0"
+}

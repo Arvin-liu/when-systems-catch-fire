@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:adaptive-relational-runtime:schema:runtime-envelope",
+  "title": "ARR Runtime Envelope (bundle manifest)",
+  "description": "Closed bundle manifest for one ARR skeleton run. Input/output manifests are closed; mode_assertion and self-referential fields are const-pinned.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "envelope_id",
+    "schema_version",
+    "code_version",
+    "input_manifest",
+    "output_manifest",
+    "receipt_chain",
+    "mode_assertion",
+    "closed",
+    "self_final_sha_claimed",
+    "live_refetch_required"
+  ],
+  "properties": {
+    "envelope_id": {
+      "type": "string",
+      "pattern": "^env_[0-9a-f]{32}$"
+    },
+    "schema_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "code_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_manifest": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role",
+          "ref",
+          "digest"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "mechanism_record",
+              "source_ref",
+              "receipt_ref",
+              "registry_snapshot"
+            ]
+          },
+          "ref": {
+            "type": "string"
+          },
+          "digest": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "output_manifest": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "digest"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "digest": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "receipt_chain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "receipt_id",
+          "after_gen",
+          "verified"
+        ],
+        "properties": {
+          "receipt_id": {
+            "type": "string"
+          },
+          "after_gen": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "verified": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "mode_assertion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "invoked_modes",
+        "promote_called",
+        "evolve_called",
+        "real_world_actions"
+      ],
+      "properties": {
+        "invoked_modes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "promote_called": {
+          "const": false
+        },
+        "evolve_called": {
+          "const": false
+        },
+        "real_world_actions": {
+          "const": 0
+        }
+      }
+    },
+    "closed": {
+      "const": true
+    },
+    "self_final_sha_claimed": {
+      "const": false
+    },
+    "live_refetch_required": {
+      "const": true
+    }
+  },
+  "$comment": "SPDX-License-Identifier: Apache-2.0"
+}
