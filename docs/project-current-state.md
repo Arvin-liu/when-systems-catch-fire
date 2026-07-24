@@ -190,3 +190,22 @@ ignition_runtime predecessor modules it reuses; commit 5 synchronizes maps, regi
 topology and CI without changing runtime behavior. The exact final main closeout HEAD and
 post-commit CI are external attestations re-fetched live; this artifact does not
 self-assert a final SHA.
+
+### ARR-R2 Adaptive Relational Runtime Real-Object Pilot (stacked Draft candidate)
+
+A controlled real-object pilot that closes the two R1 runtime gaps and proves the R1
+scaffold processes a small, genuinely heterogeneous set of **48 real objects** without
+state pollution, hidden second-executor creation, false causal promotion, false
+consensus, unauthorized PROMOTE/EVOLVE or privacy leakage. It makes `anti_overstep_bindings`
+B1–B6 the sole behavioral source (fail-closed registry interpreter; removing them raises
+`ContractValidationError`), guarantees caller-owned `source`/`observation` immutability via
+deep-copy at `run()` entry (proven by ≥3× deterministic replay and order-independent
+deterministic ids), and attributes every partial/failed run to exactly one primary failure
+class. It remains evidence-bound, repository-local, unreviewed, unready, unmerged and not
+Current. Explicit non-claims: it is not a WAIC summary and not the full 836-note corpus run;
+it adds no L7, Foundation/Ψ₀/ARN/MCF/PSD/Function OS change, no second executor, no
+real-world action, no auto-PROMOTE/EVOLVE; detailed private inputs and per-object results
+live in 1111 evidence only. R2 is stacked on PR #120 (`architecture/adaptive-relational-runtime-r1-scaffold`);
+it does not modify Main, PR #109–#120, or any predecessor. The exact final closeout HEAD and
+post-commit CI are external attestations re-fetched live; this artifact does not self-assert
+a final SHA.

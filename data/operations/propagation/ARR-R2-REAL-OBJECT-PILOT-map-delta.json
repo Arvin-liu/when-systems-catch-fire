@@ -1,0 +1,11 @@
+{
+  "task_id": "ARR-R2-REAL-OBJECT-PILOT",
+  "base_identity": "a0d6c46cd55ef2dde49d13f958b230f71f619e73",
+  "system_map_decision": {
+    "item_id": "interactive_system_map",
+    "decision": "NO_CHANGE_WITH_REASON",
+    "reason": "R2 adds no new capability/identity/lifecycle/target/relation; the existing ARR/ARN map nodes are unchanged and the R2 docs/adapters are represented by the existing arr/arr_runtime nodes."
+  },
+  "changed_nodes": [],
+  "decision": "NO_CHANGE_WITH_REASON"
+}
