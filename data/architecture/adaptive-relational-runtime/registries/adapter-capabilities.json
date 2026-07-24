@@ -53,6 +53,96 @@
       "claim_ceiling_max": "SECONDARY",
       "status": "active",
       "registry_version": "1.0.0"
+    },
+    {
+      "capability_id": "r2_text_ref",
+      "kind": "deterministic_stub",
+      "source_ref": "adaptive_relational_runtime/adapters",
+      "registered_revision": 0,
+      "interface_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "effects_declared": [
+        "pure"
+      ],
+      "claim_ceiling_max": "SECONDARY",
+      "real_world": false,
+      "read_only": true,
+      "description": "read_only text/transcript reference adapter",
+      "registry_version": "1.0.0"
+    },
+    {
+      "capability_id": "r2_git_pr_ci",
+      "kind": "deterministic_stub",
+      "source_ref": "adaptive_relational_runtime/adapters",
+      "registered_revision": 0,
+      "interface_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "effects_declared": [
+        "pure"
+      ],
+      "claim_ceiling_max": "SECONDARY",
+      "real_world": false,
+      "read_only": true,
+      "description": "read-only git/pr/ci chain adapter (exact ref identity)",
+      "registry_version": "1.0.0"
+    },
+    {
+      "capability_id": "r2_structured_data",
+      "kind": "deterministic_stub",
+      "source_ref": "adaptive_relational_runtime/adapters",
+      "registered_revision": 0,
+      "interface_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "effects_declared": [
+        "pure"
+      ],
+      "claim_ceiling_max": "SECONDARY",
+      "real_world": false,
+      "read_only": true,
+      "description": "read-only structured-data reference adapter",
+      "registry_version": "1.0.0"
+    },
+    {
+      "capability_id": "r2_production_receipt",
+      "kind": "deterministic_stub",
+      "source_ref": "adaptive_relational_runtime/adapters",
+      "registered_revision": 0,
+      "interface_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "effects_declared": [
+        "pure"
+      ],
+      "claim_ceiling_max": "SECONDARY",
+      "real_world": false,
+      "read_only": true,
+      "description": "read-only production-receipt adapter (no promote/evolve)",
+      "registry_version": "1.0.0"
+    },
+    {
+      "capability_id": "r2_temporal_sequence",
+      "kind": "deterministic_stub",
+      "source_ref": "adaptive_relational_runtime/adapters",
+      "registered_revision": 0,
+      "interface_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "effects_declared": [
+        "pure"
+      ],
+      "claim_ceiling_max": "SECONDARY",
+      "real_world": false,
+      "read_only": true,
+      "description": "read-only temporal-sequence adapter (separated time axes)",
+      "registry_version": "1.0.0"
+    },
+    {
+      "capability_id": "r2_mechanism_state",
+      "kind": "deterministic_stub",
+      "source_ref": "adaptive_relational_runtime/adapters",
+      "registered_revision": 0,
+      "interface_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "effects_declared": [
+        "pure"
+      ],
+      "claim_ceiling_max": "SECONDARY",
+      "real_world": false,
+      "read_only": true,
+      "description": "read-only mechanism/system-state adapter (declared-capability check)",
+      "registry_version": "1.0.0"
     }
   ],
   "production_receipt_adapter": {

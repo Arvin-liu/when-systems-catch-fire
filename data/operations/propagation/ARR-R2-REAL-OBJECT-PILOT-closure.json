@@ -1,0 +1,48 @@
+{
+  "task_id": "ARR-R2-REAL-OBJECT-PILOT",
+  "base_identity": "a0d6c46cd55ef2dde49d13f958b230f71f619e73",
+  "head_identity": "external_exact_head_attestation",
+  "request_version": "1.0.0",
+  "closure_complete": true,
+  "closure_hash": "1c162625dbf65170e17bc6ebe3f4929a0426f4ad593916479d001decfccb74ca",
+  "resolved_components": [
+    "arr",
+    "arr_runtime"
+  ],
+  "registry_derived_surfaces": [
+    "agent.handoff",
+    "ai.start",
+    "copyright_governance",
+    "external.pages_homepage",
+    "human.ai_guide",
+    "human.current_state",
+    "human.pages_source",
+    "human.readme",
+    "human.summary",
+    "human.usage",
+    "machine.llms",
+    "method.iteration",
+    "method.result_template",
+    "method.review_template",
+    "method.task_template",
+    "release.changelog",
+    "release.versioning"
+  ],
+  "system_map_impact": {
+    "decision": "NO_CHANGE_WITH_REASON",
+    "reason": "R2 adds no new capability/identity/lifecycle/target/relation; the existing ARR/ARN map nodes are unchanged and the R2 docs/adapters are represented by the existing arr/arr_runtime nodes.",
+    "added_nodes": [],
+    "removed_nodes": [],
+    "changed_nodes": [],
+    "added_edges": [],
+    "removed_edges": [],
+    "changed_edges": [],
+    "unmapped_residue": []
+  },
+  "typed_paths_count": 0,
+  "residue_summary": {
+    "total": 0,
+    "types": []
+  },
+  "generated_at": "2026-07-24T17:57:28.026425+00:00"
+}

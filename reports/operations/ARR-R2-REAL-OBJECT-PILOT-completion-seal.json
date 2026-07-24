@@ -1,0 +1,44 @@
+{
+  "task_id": "ARR-R2-REAL-OBJECT-PILOT",
+  "status": "CANDIDATE_REPOSITORY_LOCAL_SYNC_ONLY",
+  "method_version": "1.0.0",
+  "manifest_path": "data/operations/iterations/ARR-R2-REAL-OBJECT-PILOT.json",
+  "phase_b": {
+    "draft_pr": 121,
+    "merged_pr": null,
+    "branch": "runtime/adaptive-relational-runtime-r2-real-object-pilot",
+    "base": "architecture/adaptive-relational-runtime-r1-scaffold",
+    "base_head": "a0d6c46cd55ef2dde49d13f958b230f71f619e73",
+    "head_binding": {
+      "mode": "external_exact_head_attestation",
+      "authority": "pull_request_body_and_1111_receipt",
+      "receipt_path": "evidence/adaptive-relational-runtime-r2-real-object-pilot/REMOTE_IDENTITY_RECEIPT.json",
+      "embedded_exact_current_head": false,
+      "live_refetch_required": true
+    },
+    "claim_ceiling": "candidate_repository_pilot_capability_only: ARR R2 pilot closes the R1 registry-behavior and caller-input-mutation gaps and runs 48 real objects under a strict privacy boundary. It does not add a truth layer, L7, execution engine, external action, auto-PROMOTE/EVOLVE or causal upgrade, and is not the full 836-note corpus run."
+  },
+  "lifecycle": {
+    "candidate": true,
+    "ready_for_gpt_verification": false,
+    "accepted": false,
+    "merged": false,
+    "current": false
+  },
+  "external_exact_head_attestation": {
+    "required": true,
+    "embedded_in_seal": false,
+    "authority": "pull_request_body_and_1111_receipt",
+    "required_workflows": [
+      "foundation-validation",
+      "function-os-ci"
+    ],
+    "live_refetch_before_acceptance_or_merge": true,
+    "claim_boundary": "This seal records repository-local ARR R2 pilot synchronization consistency only. Final closeout HEAD and post-closeout CI are external attestations re-fetched live; not self-asserted."
+  },
+  "boundaries": {
+    "adds_truth_layer": false,
+    "proves_truth_value_causality_or_correctness": false,
+    "modifies_frozen_assets": false
+  }
+}
