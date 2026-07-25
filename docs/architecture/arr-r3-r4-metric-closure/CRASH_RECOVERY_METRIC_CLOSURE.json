@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "control_commit": "afb3089a54798bd5d4dcdb10c796a36f219ef724",
+    "corpus_objects": 836,
+    "formal_predecessor": "27af5f99e13d8217961cbc803520c648ce791c68",
+    "frozen_corpus_ref": "50393395ce9e6a1592787d991e630e364c5b6a09",
+    "generated_by": "tools/generate_metric_closure.py",
+    "schema_version": "r3r4/metric-correction/v1",
+    "task_id": "ARR-R3-R4-METRIC-SEMANTICS-OBSERVABILITY-CLOSURE-R1-RELAY-20260725",
+    "validation_failures": [],
+    "validation_ok": true
+  },
+  "metrics": {
+    "crash_recovery_demo_success_rate": {
+      "applicability": "APPLICABLE",
+      "authority_source": "CRASH_RECOVERY_REPORT; CORPUS_RUN_LEDGER",
+      "correction_status": "corrected",
+      "denominator": {
+        "label": "total_crash_resume_scenarios",
+        "source": "CRASH_RECOVERY_REPORT",
+        "value": 3
+      },
+      "directionality": "higher_is_better",
+      "display_name": "Crash recovery demonstration success rate",
+      "evidence_refs": [
+        "AGGREGATE_METRICS.crash_recovery_success_rate",
+        "CORPUS_RUN_LEDGER.crash_recovery_success_rate",
+        "CRASH_RECOVERY_REPORT.all_resume_complete"
+      ],
+      "historical_source": "AGGREGATE_METRICS",
+      "historical_value": 0.0,
+      "metric_id": "crash_recovery_demo_success_rate",
+      "note": "Historical aggregate 0.0 used in-run crash events (=0) as denominator and understated demo success; preserved as history, invalid for demonstration-success interpretation.",
+      "numerator": {
+        "label": "successful_crash_resume_scenarios",
+        "source": "CRASH_RECOVERY_REPORT",
+        "value": 3
+      },
+      "population": "isolated crash/resume demonstration scenarios",
+      "precedence_rule": "Demonstration evidence overrides the defective aggregate because the run ledger is authoritative for demo outcomes.",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "rate",
+      "supersedes_for_interpretation": true,
+      "underlying_defect_present": true,
+      "underlying_defect_repaired_in_current_layer": true,
+      "unit": "rate",
+      "value": 1.0
+    },
+    "crash_recovery_in_run_rate": {
+      "applicability": "NOT_APPLICABLE",
+      "authority_source": "CORPUS_RUN_LEDGER",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "in_run_crash_events_observed",
+        "source": "CORPUS_RUN_LEDGER",
+        "value": 0
+      },
+      "directionality": "descriptive_only",
+      "display_name": "In-run crash recovery rate (live run)",
+      "evidence_refs": [
+        "CORPUS_RUN_LEDGER.crash_recovery_success_rate"
+      ],
+      "historical_source": "",
+      "historical_value": null,
+      "metric_id": "crash_recovery_in_run_rate",
+      "note": "No in-run crash events were observed; the rate is not applicable, not 0.0.",
+      "numerator": {
+        "label": "in_run_crash_resume_success",
+        "source": "CORPUS_RUN_LEDGER",
+        "value": 0
+      },
+      "population": "live corpus run crash events",
+      "precedence_rule": "Denominator 0 => not applicable; never a misleading 0.0.",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "rate",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "rate",
+      "value": "NOT_APPLICABLE"
+    },
+    "in_run_crash_events_observed": {
+      "applicability": "APPLICABLE",
+      "authority_source": "CORPUS_RUN_LEDGER",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "n/a",
+        "source": "constant",
+        "value": 1
+      },
+      "directionality": "lower_is_better",
+      "display_name": "In-run crash events observed",
+      "evidence_refs": [
+        "CORPUS_RUN_LEDGER"
+      ],
+      "historical_source": "",
+      "historical_value": null,
+      "metric_id": "in_run_crash_events_observed",
+      "note": "Zero in-run crash events were observed during the scale run.",
+      "numerator": {
+        "label": "in_run_crash_events",
+        "source": "CORPUS_RUN_LEDGER",
+        "value": 0
+      },
+      "population": "live corpus scale run",
+      "precedence_rule": "Direct count; no rate derived from it.",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "count",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "count",
+      "value": 0
+    }
+  },
+  "schema": "r3r4/crash-recovery-closure/v1"
+}

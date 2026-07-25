@@ -1,0 +1,43 @@
+name: r3-r4-metric-observability-closure
+# Versioned correction-layer closure for R3/R4 metric semantics & observability
+# (relay task ARR-R3-R4-METRIC-SEMANTICS-OBSERVABILITY-CLOSURE-R1-RELAY-20260725).
+# Runs the correction-layer test module (>=96 checks) on PRs touching the new
+# module and on pushes to the closure child branch. Fail-closed: any violation
+# blocks the workflow. Also regenerates and verifies the public artifacts are
+# deterministic and up to date.
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/r3-r4-metric-observability-closure.yml'
+      - 'arr_metric_correction/**'
+      - 'tests/adaptive_relational_runtime/test_metric_correction.py'
+      - 'tools/generate_metric_closure.py'
+      - 'docs/architecture/arr-r3-r4-metric-closure/**'
+      - 'requirements-r4.txt'
+  push:
+    branches:
+      - 'repair/adaptive-relational-runtime-r3-r4-metric-semantics-observability-closure-r1'
+  workflow_dispatch:
+concurrency:
+  group: r3-r4-metric-observability-closure-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r requirements-r4.txt
+      - name: Run correction-layer tests (fail-closed)
+        run: python3 -m pytest tests/adaptive_relational_runtime/test_metric_correction.py -q
+      - name: Regenerate and verify deterministic public artifacts
+        run: |
+          python3 tools/generate_metric_closure.py
+          git diff --exit-code docs/architecture/arr-r3-r4-metric-closure/ || \
+            (echo "Public artifacts are not deterministic / out of date"; exit 1)
