@@ -1,0 +1,41 @@
+{
+  "publication_identity": "49422864+Arvin-liu@users.noreply.github.com",
+  "formal_repo": "Arvin-liu/when-systems-catch-fire",
+  "repair_branch": "repair/adaptive-relational-runtime-r2-positive-routing-r1",
+  "repair_branch_note": "Final repair head is the commit that introduces this evidence artifact (commit 4 of the repair). After push, the branch tip equals that commit; the closing live remote refetch confirms it.",
+  "draft_pr": {
+    "number": 122,
+    "head_ref": "repair/adaptive-relational-runtime-r2-positive-routing-r1",
+    "base_ref": "runtime/adaptive-relational-runtime-r2-real-object-pilot",
+    "state": "DRAFT",
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/122"
+  },
+  "annotated_frozen_repair_tag": "archive/adaptive-relational-runtime-r2-positive-routing-repair-r1-frozen-head (to be created on the final repair head after commit 4 + push)",
+  "predecessor": {
+    "pr": 121,
+    "head": "bfe90c65a80619e6c6c81586a2befb15796b93bb",
+    "base": "architecture/adaptive-relational-runtime-r1-scaffold",
+    "frozen_tag": "archive/adaptive-relational-runtime-r2-real-object-pilot-frozen-head -> bfe90c65a80619e6c6c81586a2befb15796b93bb",
+    "manifest_digest": "d132c82554469e1136ba31220dc2afbcdcc5c0df0afc25822e5e70738e58e956"
+  },
+  "manifest_digest": "d132c82554469e1136ba31220dc2afbcdcc5c0df0afc25822e5e70738e58e956",
+  "remote_refetch_snapshot_at_receipt": {
+    "repair_branch_head": "4363d5abe5cdd5cb2e31d2c6e94ba47cff86785c",
+    "base_branch_runtime_head": "bfe90c65a80619e6c6c81586a2befb15796b93bb",
+    "pr_121_head": "bfe90c65a80619e6c6c81586a2befb15796b93bb",
+    "pr_109_head": "01c8414797ab458b703a63a595f9af691a91fe9e",
+    "main_HEAD": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+    "predecessor_frozen_tag": "75ae400e7557e658e955624f893ebffbeb83547d"
+  },
+  "nonimpact": {
+    "predecessor_pr_changes": 0,
+    "main_changes": 0,
+    "force_pushes": 0,
+    "history_rewrites": 0,
+    "formal_merges": 0,
+    "formal_assets_promoted": 0,
+    "auto_evolve_started": 0
+  },
+  "remote_refetch_performed": true,
+  "note": "This receipt records the live remote identity at evidence-publication time (before the final commit 4 + tag push). The closing final live remote refetch, performed after publication, is reported in FINAL_EXTERNAL_REVIEW_REQUEST.md and the final agent message."
+}

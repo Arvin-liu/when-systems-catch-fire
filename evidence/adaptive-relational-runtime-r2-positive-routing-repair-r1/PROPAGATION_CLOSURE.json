@@ -1,0 +1,17 @@
+{
+  "changed_files": [
+    "tools/adaptive_relational_runtime/adapter_protocol.py (new)",
+    "tools/adaptive_relational_runtime/pilot_runner.py (rewritten)",
+    "tools/adaptive_relational_runtime/aggregation.py (rewritten)",
+    "tests/adaptive_relational_runtime/test_r2_positive_routing_repair.py (new)",
+    "evidence/adaptive-relational-runtime-r2-positive-routing-repair-r1/* (new)"
+  ],
+  "unmapped_path": [],
+  "ambiguous_path_mapping": [],
+  "predecessor_prs_109_121_unchanged": true,
+  "main_unchanged": true,
+  "predecessor_tags_unchanged": true,
+  "front_door_checks_pass": true,
+  "iteration_sync_checks_pass": true,
+  "system_map_checks_pass": true
+}

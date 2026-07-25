@@ -1,0 +1,15 @@
+{
+  "model": "controller-orchestrated (single session, 8 audit/build roles)",
+  "roles": {
+    "A": "predecessor identity and original evidence auditor \u2014 verified PR #121 OPEN/DRAFT/UNMERGED, head=bfe90c65, base, frozen tag, manifest digest d132c825.",
+    "B": "adapter protocol architect \u2014 designed registry-driven dispatch with fail-closed context keys.",
+    "C": "Source/Observation schema contract auditor \u2014 confirmed required fields and id patterns.",
+    "D": "routing/projection architect \u2014 reused eng._project (R1-R13 + guards + B1-B6).",
+    "E": "aggregation semantics auditor \u2014 coverage/residue/false-consensus/signals repair.",
+    "F": "sole formal repair builder \u2014 implemented adapter_protocol.py, pilot_runner.py, aggregation.py.",
+    "G": "48-object replay / privacy red-team \u2014 confirmed 48/48 positive, 0 private leak, 0 real-world actions.",
+    "H": "propagation / CI / evidence publisher and final gate \u2014 generated evidence artifacts and verified counters."
+  },
+  "writer_discipline": "Only role F edited the formal worktree; A-E/G/H were read-only auditors/publishers.",
+  "note": "All eight roles were executed under the controller's orchestration in this session; no separate agent subprocesses were spawned, but each role's audit conclusion is recorded above."
+}

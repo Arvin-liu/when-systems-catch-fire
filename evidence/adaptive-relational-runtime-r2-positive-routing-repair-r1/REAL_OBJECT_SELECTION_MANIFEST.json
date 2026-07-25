@@ -1,0 +1,1145 @@
+{
+  "manifest_version": "arr-r2.0",
+  "pilot_id": "arr-r2-pilot-20260725",
+  "locked_at": "2026-07-25T00:00:00Z",
+  "selection_policy": "synthetic test manifest",
+  "object_count": 48,
+  "objects": [
+    {
+      "object_id": "OBJ-01",
+      "object_class": "text_transcript_source",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/1"
+      },
+      "content_ref_digest": "deadbeef01",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-01",
+        "digest": "deadbeef01",
+        "visibility": "private_1111",
+        "short_paraphrase": "paraphrase 1"
+      }
+    },
+    {
+      "object_id": "OBJ-02",
+      "object_class": "git_pr_ci_chain",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/2"
+      },
+      "content_ref_digest": "deadbeef02",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-02",
+        "digest": "deadbeef02",
+        "repo": "Arvin-liu/when-systems-catch-fire",
+        "ref": "abc0000000000000000000000000000000000000002",
+        "ref_kind": "commit"
+      }
+    },
+    {
+      "object_id": "OBJ-03",
+      "object_class": "structured_data_object",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/3"
+      },
+      "content_ref_digest": "deadbeef03",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-03",
+        "digest": "deadbeef03",
+        "data_kind": "registry"
+      }
+    },
+    {
+      "object_id": "OBJ-04",
+      "object_class": "production_runtime_receipt",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/4"
+      },
+      "content_ref_digest": "deadbeef04",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-04",
+        "digest": "deadbeef04",
+        "op_kind": "run"
+      }
+    },
+    {
+      "object_id": "OBJ-05",
+      "object_class": "temporal_event_sequence",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/5"
+      },
+      "content_ref_digest": "deadbeef05",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-05",
+        "digest": "deadbeef05",
+        "event_time": "2026-07-25T00:00:00Z",
+        "observation_time": "2026-07-25T01:00:00Z"
+      }
+    },
+    {
+      "object_id": "OBJ-06",
+      "object_class": "mechanism_system_state",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/6"
+      },
+      "content_ref_digest": "deadbeef06",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-06",
+        "digest": "deadbeef06",
+        "capability": "stub_text_extract"
+      }
+    },
+    {
+      "object_id": "OBJ-07",
+      "object_class": "text_transcript_source",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/7"
+      },
+      "content_ref_digest": "deadbeef07",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-07",
+        "digest": "deadbeef07",
+        "visibility": "private_1111",
+        "short_paraphrase": "paraphrase 7"
+      }
+    },
+    {
+      "object_id": "OBJ-08",
+      "object_class": "git_pr_ci_chain",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/8"
+      },
+      "content_ref_digest": "deadbeef08",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-08",
+        "digest": "deadbeef08",
+        "repo": "Arvin-liu/when-systems-catch-fire",
+        "ref": "abc0000000000000000000000000000000000000008",
+        "ref_kind": "commit"
+      }
+    },
+    {
+      "object_id": "OBJ-09",
+      "object_class": "structured_data_object",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/9"
+      },
+      "content_ref_digest": "deadbeef09",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-09",
+        "digest": "deadbeef09",
+        "data_kind": "registry"
+      }
+    },
+    {
+      "object_id": "OBJ-10",
+      "object_class": "production_runtime_receipt",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/10"
+      },
+      "content_ref_digest": "deadbeef10",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-10",
+        "digest": "deadbeef10",
+        "op_kind": "run"
+      }
+    },
+    {
+      "object_id": "OBJ-11",
+      "object_class": "temporal_event_sequence",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/11"
+      },
+      "content_ref_digest": "deadbeef11",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-11",
+        "digest": "deadbeef11",
+        "event_time": "2026-07-25T00:00:00Z",
+        "observation_time": "2026-07-25T01:00:00Z"
+      }
+    },
+    {
+      "object_id": "OBJ-12",
+      "object_class": "mechanism_system_state",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/12"
+      },
+      "content_ref_digest": "deadbeef12",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-12",
+        "digest": "deadbeef12",
+        "capability": "stub_text_extract"
+      }
+    },
+    {
+      "object_id": "OBJ-13",
+      "object_class": "text_transcript_source",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/13"
+      },
+      "content_ref_digest": "deadbeef13",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-13",
+        "digest": "deadbeef13",
+        "visibility": "private_1111",
+        "short_paraphrase": "paraphrase 13"
+      }
+    },
+    {
+      "object_id": "OBJ-14",
+      "object_class": "git_pr_ci_chain",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/14"
+      },
+      "content_ref_digest": "deadbeef14",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-14",
+        "digest": "deadbeef14",
+        "repo": "Arvin-liu/when-systems-catch-fire",
+        "ref": "abc0000000000000000000000000000000000000014",
+        "ref_kind": "commit"
+      }
+    },
+    {
+      "object_id": "OBJ-15",
+      "object_class": "structured_data_object",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/15"
+      },
+      "content_ref_digest": "deadbeef15",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-15",
+        "digest": "deadbeef15",
+        "data_kind": "registry"
+      }
+    },
+    {
+      "object_id": "OBJ-16",
+      "object_class": "production_runtime_receipt",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/16"
+      },
+      "content_ref_digest": "deadbeef16",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-16",
+        "digest": "deadbeef16",
+        "op_kind": "run"
+      }
+    },
+    {
+      "object_id": "OBJ-17",
+      "object_class": "temporal_event_sequence",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/17"
+      },
+      "content_ref_digest": "deadbeef17",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-17",
+        "digest": "deadbeef17",
+        "event_time": "2026-07-25T00:00:00Z",
+        "observation_time": "2026-07-25T01:00:00Z"
+      }
+    },
+    {
+      "object_id": "OBJ-18",
+      "object_class": "mechanism_system_state",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/18"
+      },
+      "content_ref_digest": "deadbeef18",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-18",
+        "digest": "deadbeef18",
+        "capability": "stub_text_extract"
+      }
+    },
+    {
+      "object_id": "OBJ-19",
+      "object_class": "text_transcript_source",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/19"
+      },
+      "content_ref_digest": "deadbeef19",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-19",
+        "digest": "deadbeef19",
+        "visibility": "private_1111",
+        "short_paraphrase": "paraphrase 19"
+      }
+    },
+    {
+      "object_id": "OBJ-20",
+      "object_class": "git_pr_ci_chain",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/20"
+      },
+      "content_ref_digest": "deadbeef20",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-20",
+        "digest": "deadbeef20",
+        "repo": "Arvin-liu/when-systems-catch-fire",
+        "ref": "abc0000000000000000000000000000000000000020",
+        "ref_kind": "commit"
+      }
+    },
+    {
+      "object_id": "OBJ-21",
+      "object_class": "structured_data_object",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/21"
+      },
+      "content_ref_digest": "deadbeef21",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-21",
+        "digest": "deadbeef21",
+        "data_kind": "registry"
+      }
+    },
+    {
+      "object_id": "OBJ-22",
+      "object_class": "production_runtime_receipt",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/22"
+      },
+      "content_ref_digest": "deadbeef22",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-22",
+        "digest": "deadbeef22",
+        "op_kind": "run"
+      }
+    },
+    {
+      "object_id": "OBJ-23",
+      "object_class": "temporal_event_sequence",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/23"
+      },
+      "content_ref_digest": "deadbeef23",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-23",
+        "digest": "deadbeef23",
+        "event_time": "2026-07-25T00:00:00Z",
+        "observation_time": "2026-07-25T01:00:00Z"
+      }
+    },
+    {
+      "object_id": "OBJ-24",
+      "object_class": "mechanism_system_state",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/24"
+      },
+      "content_ref_digest": "deadbeef24",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-24",
+        "digest": "deadbeef24",
+        "capability": "stub_text_extract"
+      }
+    },
+    {
+      "object_id": "OBJ-25",
+      "object_class": "text_transcript_source",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/25"
+      },
+      "content_ref_digest": "deadbeef25",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-25",
+        "digest": "deadbeef25",
+        "visibility": "private_1111",
+        "short_paraphrase": "paraphrase 25"
+      }
+    },
+    {
+      "object_id": "OBJ-26",
+      "object_class": "git_pr_ci_chain",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/26"
+      },
+      "content_ref_digest": "deadbeef26",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-26",
+        "digest": "deadbeef26",
+        "repo": "Arvin-liu/when-systems-catch-fire",
+        "ref": "abc0000000000000000000000000000000000000026",
+        "ref_kind": "commit"
+      }
+    },
+    {
+      "object_id": "OBJ-27",
+      "object_class": "structured_data_object",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/27"
+      },
+      "content_ref_digest": "deadbeef27",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-27",
+        "digest": "deadbeef27",
+        "data_kind": "registry"
+      }
+    },
+    {
+      "object_id": "OBJ-28",
+      "object_class": "production_runtime_receipt",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/28"
+      },
+      "content_ref_digest": "deadbeef28",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-28",
+        "digest": "deadbeef28",
+        "op_kind": "run"
+      }
+    },
+    {
+      "object_id": "OBJ-29",
+      "object_class": "temporal_event_sequence",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/29"
+      },
+      "content_ref_digest": "deadbeef29",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-29",
+        "digest": "deadbeef29",
+        "event_time": "2026-07-25T00:00:00Z",
+        "observation_time": "2026-07-25T01:00:00Z"
+      }
+    },
+    {
+      "object_id": "OBJ-30",
+      "object_class": "mechanism_system_state",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/30"
+      },
+      "content_ref_digest": "deadbeef30",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-30",
+        "digest": "deadbeef30",
+        "capability": "stub_text_extract"
+      }
+    },
+    {
+      "object_id": "OBJ-31",
+      "object_class": "text_transcript_source",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/31"
+      },
+      "content_ref_digest": "deadbeef31",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-31",
+        "digest": "deadbeef31",
+        "visibility": "private_1111",
+        "short_paraphrase": "paraphrase 31"
+      }
+    },
+    {
+      "object_id": "OBJ-32",
+      "object_class": "git_pr_ci_chain",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/32"
+      },
+      "content_ref_digest": "deadbeef32",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-32",
+        "digest": "deadbeef32",
+        "repo": "Arvin-liu/when-systems-catch-fire",
+        "ref": "abc0000000000000000000000000000000000000032",
+        "ref_kind": "commit"
+      }
+    },
+    {
+      "object_id": "OBJ-33",
+      "object_class": "structured_data_object",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/33"
+      },
+      "content_ref_digest": "deadbeef33",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-33",
+        "digest": "deadbeef33",
+        "data_kind": "registry"
+      }
+    },
+    {
+      "object_id": "OBJ-34",
+      "object_class": "production_runtime_receipt",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/34"
+      },
+      "content_ref_digest": "deadbeef34",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-34",
+        "digest": "deadbeef34",
+        "op_kind": "run"
+      }
+    },
+    {
+      "object_id": "OBJ-35",
+      "object_class": "temporal_event_sequence",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/35"
+      },
+      "content_ref_digest": "deadbeef35",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-35",
+        "digest": "deadbeef35",
+        "event_time": "2026-07-25T00:00:00Z",
+        "observation_time": "2026-07-25T01:00:00Z"
+      }
+    },
+    {
+      "object_id": "OBJ-36",
+      "object_class": "mechanism_system_state",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/36"
+      },
+      "content_ref_digest": "deadbeef36",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-36",
+        "digest": "deadbeef36",
+        "capability": "stub_text_extract"
+      }
+    },
+    {
+      "object_id": "OBJ-37",
+      "object_class": "text_transcript_source",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/37"
+      },
+      "content_ref_digest": "deadbeef37",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-37",
+        "digest": "deadbeef37",
+        "visibility": "private_1111",
+        "short_paraphrase": "paraphrase 37"
+      }
+    },
+    {
+      "object_id": "OBJ-38",
+      "object_class": "git_pr_ci_chain",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/38"
+      },
+      "content_ref_digest": "deadbeef38",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-38",
+        "digest": "deadbeef38",
+        "repo": "Arvin-liu/when-systems-catch-fire",
+        "ref": "abc0000000000000000000000000000000000000038",
+        "ref_kind": "commit"
+      }
+    },
+    {
+      "object_id": "OBJ-39",
+      "object_class": "structured_data_object",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/39"
+      },
+      "content_ref_digest": "deadbeef39",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-39",
+        "digest": "deadbeef39",
+        "data_kind": "registry"
+      }
+    },
+    {
+      "object_id": "OBJ-40",
+      "object_class": "production_runtime_receipt",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/40"
+      },
+      "content_ref_digest": "deadbeef40",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-40",
+        "digest": "deadbeef40",
+        "op_kind": "run"
+      }
+    },
+    {
+      "object_id": "OBJ-41",
+      "object_class": "temporal_event_sequence",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/41"
+      },
+      "content_ref_digest": "deadbeef41",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-41",
+        "digest": "deadbeef41",
+        "event_time": "2026-07-25T00:00:00Z",
+        "observation_time": "2026-07-25T01:00:00Z"
+      }
+    },
+    {
+      "object_id": "OBJ-42",
+      "object_class": "mechanism_system_state",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/42"
+      },
+      "content_ref_digest": "deadbeef42",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-42",
+        "digest": "deadbeef42",
+        "capability": "stub_text_extract"
+      }
+    },
+    {
+      "object_id": "OBJ-43",
+      "object_class": "text_transcript_source",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/43"
+      },
+      "content_ref_digest": "deadbeef43",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-43",
+        "digest": "deadbeef43",
+        "visibility": "private_1111",
+        "short_paraphrase": "paraphrase 43"
+      }
+    },
+    {
+      "object_id": "OBJ-44",
+      "object_class": "git_pr_ci_chain",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/44"
+      },
+      "content_ref_digest": "deadbeef44",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-44",
+        "digest": "deadbeef44",
+        "repo": "Arvin-liu/when-systems-catch-fire",
+        "ref": "abc0000000000000000000000000000000000000044",
+        "ref_kind": "commit"
+      }
+    },
+    {
+      "object_id": "OBJ-45",
+      "object_class": "structured_data_object",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/45"
+      },
+      "content_ref_digest": "deadbeef45",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-45",
+        "digest": "deadbeef45",
+        "data_kind": "registry"
+      }
+    },
+    {
+      "object_id": "OBJ-46",
+      "object_class": "production_runtime_receipt",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/46"
+      },
+      "content_ref_digest": "deadbeef46",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-46",
+        "digest": "deadbeef46",
+        "op_kind": "run"
+      }
+    },
+    {
+      "object_id": "OBJ-47",
+      "object_class": "temporal_event_sequence",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/47"
+      },
+      "content_ref_digest": "deadbeef47",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-47",
+        "digest": "deadbeef47",
+        "event_time": "2026-07-25T00:00:00Z",
+        "observation_time": "2026-07-25T01:00:00Z"
+      }
+    },
+    {
+      "object_id": "OBJ-48",
+      "object_class": "mechanism_system_state",
+      "location": {
+        "visibility": "private_1111",
+        "ref": "ref/48"
+      },
+      "content_ref_digest": "deadbeef48",
+      "rights_tier": "owner_private",
+      "source_tier": "SECONDARY_ACADEMIC_INTERPRETATION",
+      "permitted_formal_representation": "digest + typed ref",
+      "excluded_content": [
+        "full text",
+        "transcript"
+      ],
+      "expected_routing_target": "ARN",
+      "claim_ceiling": "SECONDARY",
+      "adapter_ref": {
+        "object_id": "OBJ-48",
+        "digest": "deadbeef48",
+        "capability": "stub_text_extract"
+      }
+    }
+  ]
+}

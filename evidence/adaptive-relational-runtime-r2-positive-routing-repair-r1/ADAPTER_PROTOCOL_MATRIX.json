@@ -1,0 +1,84 @@
+{
+  "single_source_of_truth": "tools/adaptive_relational_runtime/adapter_protocol.ADAPTER_DISPATCH",
+  "entries": [
+    {
+      "object_class": "text_transcript_source",
+      "adapter": "adapt_text_ref",
+      "context_keys": [
+        "aggregate_counts",
+        "digest",
+        "object_id",
+        "short_paraphrase",
+        "visibility"
+      ],
+      "passes_declared_capabilities": false,
+      "fail_closed_on_unknown_class": true,
+      "fail_closed_on_undeclared_context_key": true
+    },
+    {
+      "object_class": "git_pr_ci_chain",
+      "adapter": "adapt_git_pr_ci",
+      "context_keys": [
+        "digest",
+        "object_id",
+        "ref",
+        "ref_kind",
+        "repo"
+      ],
+      "passes_declared_capabilities": false,
+      "fail_closed_on_unknown_class": true,
+      "fail_closed_on_undeclared_context_key": true
+    },
+    {
+      "object_class": "structured_data_object",
+      "adapter": "adapt_structured_data",
+      "context_keys": [
+        "aggregate_counts",
+        "data_kind",
+        "digest",
+        "object_id"
+      ],
+      "passes_declared_capabilities": false,
+      "fail_closed_on_unknown_class": true,
+      "fail_closed_on_undeclared_context_key": true
+    },
+    {
+      "object_class": "production_runtime_receipt",
+      "adapter": "adapt_production_receipt",
+      "context_keys": [
+        "digest",
+        "object_id",
+        "op_kind"
+      ],
+      "passes_declared_capabilities": false,
+      "fail_closed_on_unknown_class": true,
+      "fail_closed_on_undeclared_context_key": true
+    },
+    {
+      "object_class": "temporal_event_sequence",
+      "adapter": "adapt_temporal_sequence",
+      "context_keys": [
+        "digest",
+        "event_time",
+        "ingestion_time",
+        "object_id",
+        "observation_time"
+      ],
+      "passes_declared_capabilities": false,
+      "fail_closed_on_unknown_class": true,
+      "fail_closed_on_undeclared_context_key": true
+    },
+    {
+      "object_class": "mechanism_system_state",
+      "adapter": "adapt_mechanism_state",
+      "context_keys": [
+        "capability",
+        "digest",
+        "object_id"
+      ],
+      "passes_declared_capabilities": true,
+      "fail_closed_on_unknown_class": true,
+      "fail_closed_on_undeclared_context_key": true
+    }
+  ]
+}
