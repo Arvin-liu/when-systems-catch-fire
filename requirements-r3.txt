@@ -1,6 +1,14 @@
-# R3 WAIC corpus-scale runtime CI dependencies. The R3 corpus runtime package
-# (tools/adaptive_relational_runtime/corpus/) uses only the Python standard
-# library; only pytest is needed to run the public acceptance matrix. The ARR
-# static gate (anti-second-executor) is exercised directly via python3 and needs
-# no extra dependency.
+# R3 WAIC corpus-scale runtime CI dependencies.
+#
+# The R3 corpus runtime package (tools/adaptive_relational_runtime/corpus/) itself
+# uses only the Python standard library, so only pytest is needed to exercise its
+# public acceptance matrix. However, importing the package triggers the ARR package
+# __init__ chain (tools/adaptive_relational_runtime -> runtime -> ignition_runtime),
+# and ignition_runtime.schemas_loader imports `jsonschema`. The R3 CI therefore also
+# needs jsonschema installed so the test modules can be collected (this was the
+# ModuleNotFoundError that blocked r3-corpus-scale-validation on the R3 branch).
+#
+# The ARR static gate (anti-second-executor) is exercised directly via python3 and
+# needs no extra dependency beyond the above.
 pytest
+jsonschema
