@@ -13,6 +13,11 @@ import json
 import os
 from typing import Any, Dict, List
 
+# Terminal verdicts. Kept as parameters (not hardcoded in the projector) so the
+# historical R4 result and the stacked repair result carry distinct verdicts.
+DEFAULT_TERMINAL_VERDICT = "ARR_R4_WAIC_SELF_REFLECTION_DRAFT_AWAITING_EXTERNAL_REVIEW"
+REPAIR_TERMINAL_VERDICT = "ARR_R4_METRIC_DISCLOSURE_AND_RELAY_RECEIPT_REPAIR_DRAFT_AWAITING_EXTERNAL_REVIEW"
+
 from .analyzers import (
     analyze_evidence_ceiling,
     analyze_false_consensus,
@@ -21,6 +26,7 @@ from .analyzers import (
     analyze_temporal,
 )
 from .arch_gate import ArchitectureCandidateGate
+from .capability_classifier import classify_capability_coverage
 from .taxonomy import ARCH_GATE_CONDITIONS
 from .four_axis import FourAxisDeriver
 from .ingest import SealedEvidenceIngestor
@@ -49,35 +55,23 @@ def _summarize_axis(records, axis_name: str) -> Dict[str, int]:
     return counts
 
 
-def _build_capability_reinterpretation(reports: Dict[str, Any]) -> Dict[str, Any]:
+def _build_capability_reinterpretation(reports: Dict[str, Any], four_axis_summary: Dict[str, Any]) -> Dict[str, Any]:
+    """Closed-set capability-dimension classification (repair task §3.1).
+
+    Replaces the original substring-list classifier. Every one of the exact 27
+    capability item IDs receives exactly one primary dimension; the closed-set
+    invariants are enforced and reported. Governance safety and evidence-quality
+    outcomes are reported as orthogonal fields, never conflated with the
+    mutually-exclusive primary governance status enum.
+    """
     cap = reports.get("CAPABILITY_COVERAGE_MATRIX", {})
-    items = cap.get("items", [])
-    # Classify each capability item into operational / semantic / evidence / governance.
-    operational = [i for i in items if any(k in i.get("id", "").lower() for k in
-                 ["inventory", "type", "mutation", "duplicate", "frontmatter", "shard",
-                  "crash", "replay", "rerun", "receipt", "disappear", "leak", "path",
-                  "map", "ci", "propagat"])]
-    governance = [i for i in items if any(k in i.get("id", "").lower() for k in
-                 ["promote", "evolve", "real_world", "consent", "rights", "ready"])]
-    semantic = [i for i in items if "semantic" in i.get("id", "").lower()
-                or "understanding" in i.get("id", "").lower()]
-    return {
-        "schema": "r4/capability_coverage_reinterpretation/v1",
-        "all_pass_true_meaning": (
-            "all_pass aggregates OPERATIONAL/Safety/Governance properties only; it does NOT assert "
-            "semantic understanding or evidence coverage."
-        ),
-        "operational_coverage": {"measured": True, "items": len(operational),
-                                  "pass": sum(1 for i in operational if i.get("pass")),
-                                  "fail": sum(1 for i in operational if not i.get("pass"))},
-        "semantic_coverage": {"measured": False, "items": len(semantic), "pass": 0, "fail": 0,
-                              "note": "R3 performed no semantic-understanding stage; coverage absent"},
-        "evidence_coverage": {"measured": True, "independently_supported": 0,
-                              "note": "0 of 836 objects reach INDEPENDENTLY_SUPPORTED"},
-        "governance_coverage": {"measured": True, "boundary_held": 836, "prohibited_actions": 0,
-                                "governance_items": len(governance)},
-        "dimension_dimension_disclosure_defect": True,
-    }
+    independently_supported = int(four_axis_summary.get("evidence", {}).get("INDEPENDENTLY_SUPPORTED", 0))
+    total_objects = int(sum(four_axis_summary.get("pipeline", {}).values()))
+    return classify_capability_coverage(
+        cap,
+        independently_supported_count=independently_supported,
+        total_objects=total_objects,
+    )
 
 
 def _build_independent_source_review(reports: Dict[str, Any]) -> Dict[str, Any]:
@@ -161,7 +155,8 @@ def _build_no_evolve_justifications(limitations: List[Dict[str, Any]]) -> Dict[s
     }
 
 
-def run(evidence_dir: str, out_dir: str, task_id: str, control_commit: str) -> Dict[str, Any]:
+def run(evidence_dir: str, out_dir: str, task_id: str, control_commit: str,
+        terminal_verdict: str = DEFAULT_TERMINAL_VERDICT) -> Dict[str, Any]:
     os.makedirs(out_dir, exist_ok=True)
     ing = SealedEvidenceIngestor(evidence_dir).ingest()
     audit = ing.validate_closed_set()
@@ -190,7 +185,7 @@ def run(evidence_dir: str, out_dir: str, task_id: str, control_commit: str) -> D
     ceiling = analyze_evidence_ceiling(ing.reports, four_axis_summary)
     limitations = analyze_limitation_attribution(ing.reports, four_axis_summary)
 
-    cap_reinterp = _build_capability_reinterpretation(ing.reports)
+    cap_reinterp = _build_capability_reinterpretation(ing.reports, four_axis_summary)
     indep_review = _build_independent_source_review(ing.reports)
     no_evolve = _build_no_evolve_justifications(limitations["limitations"])
 
@@ -236,6 +231,7 @@ def run(evidence_dir: str, out_dir: str, task_id: str, control_commit: str) -> D
     analysis = {
         "task_id": task_id,
         "control_commit": control_commit,
+        "terminal_verdict": terminal_verdict,
         "manifest": manifest,
         "four_axis_summary": four_axis_summary,
         "contradictions": contradictions,
@@ -297,7 +293,8 @@ def run(evidence_dir: str, out_dir: str, task_id: str, control_commit: str) -> D
         "q33_governance_validation": "PENDING_PUBLISH",
         "note": "Filled by the publisher/remote-refetch stage after the R4 branch is pushed and CI runs.",
     })
-    _write_text(out_dir, "FINAL_EXTERNAL_REVIEW_REQUEST.md", _final_review_md(task_id, control_commit, counters, contradictions))
+    _write_text(out_dir, "FINAL_EXTERNAL_REVIEW_REQUEST.md",
+                _final_review_md(task_id, control_commit, counters, contradictions, terminal_verdict))
 
     analysis["public_summary"] = project_public_summary(analysis)
     return analysis
@@ -365,22 +362,43 @@ def _rights_privacy_md(fas: Dict[str, Any]) -> str:
 
 
 def _final_review_md(task_id: str, control_commit: str, counters: Dict[str, int],
-                     contradictions: List[Dict[str, Any]]) -> str:
+                     contradictions: List[Dict[str, Any]], terminal_verdict: str) -> str:
     disp = ", ".join(f"{c['contradiction_id']}={c['disposition']}" for c in contradictions)
-    return f"""# R4 Final External Review Request
+    is_repair = "REPAIR" in terminal_verdict
+    title = ("# R4 Metric Disclosure and Relay Receipt Repair — Final External Review Request"
+             if is_repair else "# R4 Final External Review Request")
+    context = (
+        "This is the narrow R4 metric-disclosure and relay-receipt repair over the frozen R4 "
+        "(PR #127, DRAFT, UNMERGED). It closes the 27-item capability set into exactly one primary "
+        "dimension each, separates the mutually-exclusive governance status enum from the orthogonal "
+        "safety-boundary invariant, adds an explicit contradiction lifecycle (attributed vs repaired), "
+        "removes the malformed `dimension_dimension_disclosure_defect` field, and backfills the "
+        "predecessor relay receipt to the canonical 14-file contract. PR #127, the frozen R4 head and "
+        "the R3 corpus are left untouched."
+        if is_repair else
+        "R4 consumed the sealed R3 evidence (836 receipts + 836 envelopes + 12 ledgers) without "
+        "rerunning or modifying the frozen corpus. It derived four-axis statuses for all 836 objects, "
+        "recomputed the six mandatory metric contradictions, reinterpreted capability coverage, and "
+        "attributed every observed weakness to a primary limitation class with exclusion records."
+    )
+    return f"""{title}
 
 task_id: `{task_id}`
 control_commit: `{control_commit}`
-terminal_verdict: `ARR_R4_WAIC_SELF_REFLECTION_DRAFT_AWAITING_EXTERNAL_REVIEW`
+terminal_verdict: `{terminal_verdict}`
 
-## What R4 did
-R4 consumed the sealed R3 evidence (836 receipts + 836 envelopes + 12 ledgers) without
-rerunning or modifying the frozen corpus. It derived four-axis statuses for all 836 objects,
-recomputed the six mandatory metric contradictions, reinterpreted capability coverage, and
-attributed every observed weakness to a primary limitation class with exclusion records.
+## What this run did
+{context}
 
-## Mandatory metric contradictions (all resolved)
+## Mandatory metric contradictions (all six received dispositions; classification complete)
 {disp}
+
+NOTE: disposition/classification completion is NOT the same as underlying-defect
+repair. M3/M4 are diagnosed R3 aggregation defects that remain unrepaired in this
+task (route to a separately authorized R3 metric repair). M5 is a historical R3
+reporting defect whose disclosure is corrected here, while the underlying R3
+reporting defect remains. M1/M2/M6 are definition misreads with no proven code
+defect.
 
 ## Key findings
 - Pipeline success (836/836 PIPELINE_COMPLETE) does NOT imply semantic sufficiency;
@@ -403,9 +421,8 @@ HISTORY_REWRITES={counters['HISTORY_REWRITES']}, R5_STARTED={counters['R5_STARTE
 EXTERNAL_ACCEPTANCE_CLAIMED={counters['EXTERNAL_ACCEPTANCE_CLAIMED']}.
 
 ## Request
-Please externally review R4 and, if accepted, authorize a future R5 iteration (semantic stage,
-source-provenance, metric hardening) as described in R5_AUTHORIZATION_CANDIDATES.md. R4 does
-not self-declare EXTERNALLY_ACCEPTED_FOR_NEXT_ITERATION and did not start R5.
+Please externally review and, if accepted, authorize the next step. This run does not self-declare
+EXTERNALLY_ACCEPTED_FOR_NEXT_ITERATION and did not start R5.
 """
 
 

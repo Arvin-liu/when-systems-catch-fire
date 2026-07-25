@@ -309,9 +309,9 @@ def test_limitation_attribution_has_exclusion():
 
 def test_capability_reinterpretation_semantic_zero():
     from arr_r4_self_reflection.runner import _build_capability_reinterpretation
-    res = _build_capability_reinterpretation(r3_like_reports())
-    assert res["semantic_coverage"]["measured"] is False
-    assert res["semantic_coverage"]["items"] == 0
+    res = _build_capability_reinterpretation(r3_like_reports(), {})
+    assert res["dimensions"]["SEMANTIC"]["measured"] is False
+    assert res["dimensions"]["SEMANTIC"]["item_count"] == 0
 
 
 # ---- closed-set + determinism (scaling to 836) --------------------------
