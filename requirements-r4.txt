@@ -1,0 +1,5 @@
+# R4 self-reflection runtime requirements.
+# The R4 audit engine (arr_r4_self_reflection) uses ONLY the Python standard
+# library (json, hashlib, os, dataclasses, typing) — no third-party runtime deps.
+# pytest is required only to run the acceptance/attack test suite.
+pytest>=7.0

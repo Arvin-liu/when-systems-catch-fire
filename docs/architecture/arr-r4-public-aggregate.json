@@ -1,0 +1,128 @@
+{
+  "architecture_candidates_total": 0,
+  "capability_reinterpretation": {
+    "all_pass_true_meaning": "all_pass aggregates OPERATIONAL/Safety/Governance properties only; it does NOT assert semantic understanding or evidence coverage.",
+    "dimension_dimension_disclosure_defect": true,
+    "evidence_coverage": {
+      "independently_supported": 0,
+      "measured": true,
+      "note": "0 of 836 objects reach INDEPENDENTLY_SUPPORTED"
+    },
+    "governance_coverage": {
+      "boundary_held": 836,
+      "governance_items": 3,
+      "measured": true,
+      "prohibited_actions": 0
+    },
+    "operational_coverage": {
+      "fail": 0,
+      "items": 17,
+      "measured": true,
+      "pass": 17
+    },
+    "schema": "r4/capability_coverage_reinterpretation/v1",
+    "semantic_coverage": {
+      "fail": 0,
+      "items": 0,
+      "measured": false,
+      "note": "R3 performed no semantic-understanding stage; coverage absent",
+      "pass": 0
+    }
+  },
+  "control_commit": "e8530a7d87f13ef09cea58d34f6f548a695d7955",
+  "counters": {
+    "ARCHITECTURE_CANDIDATES_TOTAL": 0,
+    "EVOLVE_CALLS": 0,
+    "EXTERNAL_ACCEPTANCE_CLAIMED": 0,
+    "EXTRA_INPUT_IDENTITIES": 0,
+    "FORCE_PUSHES": 0,
+    "FORMAL_MERGES": 0,
+    "FORMAL_READY_PRS": 0,
+    "FOUR_AXIS_RECORDS": 836,
+    "HISTORY_REWRITES": 0,
+    "LIFE_INTEGRITY_IMPLEMENTATION_STARTED": 0,
+    "MAIN_CHANGES": 0,
+    "METRIC_CONTRADICTIONS_TOTAL": 6,
+    "METRIC_CONTRADICTIONS_UNRESOLVED": 0,
+    "MISSING_INPUT_IDENTITIES": 0,
+    "PRIVATE_CONTENT_PUBLICATION_EVENTS": 0,
+    "PROMOTE_CALLS": 0,
+    "R3_ENVELOPES_INPUT": 836,
+    "R3_RECEIPTS_INPUT": 836,
+    "R5_STARTED": 0,
+    "REAL_WORLD_ACTIONS": 0,
+    "WAIC_CORPUS_RERUNS": 0
+  },
+  "four_axis_distribution": {
+    "evidence": {
+      "AUTHOR_OR_SPEAKER_REPORT": 276,
+      "EVIDENCE_UNKNOWN": 0,
+      "INDEPENDENTLY_SUPPORTED": 0,
+      "SOURCE_DEPENDENT": 545,
+      "TRANSCRIPT_OR_INTERPRETER_INFERENCE": 15
+    },
+    "governance": {
+      "ACTION_PROHIBITED": 0,
+      "BOUNDARY_HELD": 27,
+      "CONSENT_OR_RIGHTS_LIMITED": 809,
+      "GOVERNANCE_REVIEW_REQUIRED": 0,
+      "GOVERNANCE_UNKNOWN": 0
+    },
+    "pipeline": {
+      "PIPELINE_COMPLETE": 836,
+      "PIPELINE_FAILED": 0,
+      "PIPELINE_PARTIAL": 0,
+      "PIPELINE_QUARANTINED": 0
+    },
+    "semantic": {
+      "SEMANTIC_NOT_ATTEMPTED": 0,
+      "SEMANTIC_REPRESENTATION_LIMITED": 836,
+      "SEMANTIC_REPRESENTATION_SUFFICIENT": 0,
+      "SEMANTIC_UNKNOWN": 0
+    }
+  },
+  "metric_contradictions": [
+    {
+      "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
+      "id": "M1_SUCCESS_VS_SEMANTIC",
+      "unresolved": false
+    },
+    {
+      "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
+      "id": "M2_UNKNOWN_RETENTION",
+      "unresolved": false
+    },
+    {
+      "disposition": "AGGREGATION_DEFECT",
+      "id": "M3_CRASH_RECOVERY_RATE",
+      "unresolved": false
+    },
+    {
+      "disposition": "AGGREGATION_DEFECT",
+      "id": "M4_INCREMENTAL_SELECTIVITY",
+      "unresolved": false
+    },
+    {
+      "disposition": "REPORTING_DEFECT",
+      "id": "M5_CAPABILITY_ALL_PASS",
+      "unresolved": false
+    },
+    {
+      "disposition": "DEFINITION_CORRECT_VALUE_MISREAD",
+      "id": "M6_CORPUS_SIZE_VS_SOURCES",
+      "unresolved": false
+    }
+  ],
+  "metric_contradictions_total": 6,
+  "metric_contradictions_unresolved": 0,
+  "no_evolve_total": 5,
+  "privacy_boundary": "no private note titles, raw text, transcript, URL lists, or reconstructive features are present in this public projection",
+  "schema": "r4/public_aggregate/v1",
+  "sealed_input": {
+    "closed_set_ok": true,
+    "envelopes": 836,
+    "receipts": 836
+  },
+  "task_id": "ARR-R4-WAIC-SELF-REFLECTION-R1-RELAY-20260725",
+  "terminal_verdict": "ARR_R4_WAIC_SELF_REFLECTION_DRAFT_AWAITING_EXTERNAL_REVIEW"
+}
