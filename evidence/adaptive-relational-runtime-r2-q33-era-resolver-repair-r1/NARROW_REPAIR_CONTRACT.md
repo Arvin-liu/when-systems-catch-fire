@@ -32,9 +32,14 @@
 - Exactly **one** child branch:
   `repair/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1`
   from predecessor head `81e6054b`.
-- Exactly **one** ordinary commit (noreply identity
-  `49422864+Arvin-liu@users.noreply.github.com`): the narrow test re-classification +
-  regression guarantee + evidence. No amend / rebase / force / history rewrite.
+- Exactly **two** ordinary commits (noreply identity
+  `49422864+Arvin-liu@users.noreply.github.com`), neither an amend / rebase / force /
+  history rewrite:
+  - **Commit 1:** the narrow test re-classification + regression guarantee + root-cause
+    evidence (CI_FAILURE_REPRODUCTION.md, ERA_RESOLVER_FINDING.md, NARROW_REPAIR_CONTRACT.md,
+    full remote log).
+  - **Commit 2:** fix-verification evidence (FIX_VERIFICATION.md) recording both gates
+    success; corrects this contract's commit count.
 - Exactly **one** Draft PR, base
   `repair/adaptive-relational-runtime-r2-human-front-door-sync-r1`.
 - Do not modify PR #109–#124.
