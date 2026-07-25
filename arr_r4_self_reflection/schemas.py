@@ -51,6 +51,7 @@ class MetricContradiction:
     disposition: str
     evidence_refs: List[str]
     reconciled: str
+    lifecycle: Dict[str, Any] = dataclasses.field(default_factory=dict)
 
     def to_dict(self) -> Dict[str, Any]:
         return dataclasses.asdict(self)

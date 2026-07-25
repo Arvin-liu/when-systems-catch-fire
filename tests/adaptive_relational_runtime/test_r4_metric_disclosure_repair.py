@@ -10,6 +10,7 @@ Run with pytest from the repository root. No private corpus content is embedded.
 import hashlib
 import json
 import os
+import re
 import shutil
 import sys
 import tempfile
@@ -18,6 +19,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fi
 sys.path.insert(0, REPO_ROOT)
 
 from arr_r4_self_reflection import run  # noqa: E402
+from arr_r4_self_reflection.runner import REPAIR_TERMINAL_VERDICT  # noqa: E402
 from arr_r4_self_reflection.capability_classifier import (  # noqa: E402
     CAPABILITY_CLOSED_SET_SIZE,
     CAPABILITY_DIMENSION_REGISTRY,
@@ -51,7 +53,8 @@ def _build_evidence_with_real_matrix(root, n=50, seed=1):
 def _run_on(root, n=50):
     out = tempfile.mkdtemp()
     try:
-        return run(root, out, "REPAIR_TASK", "REPAIR_CONTROL")
+        return run(root, out, "REPAIR_TASK", "REPAIR_CONTROL",
+                   terminal_verdict=REPAIR_TERMINAL_VERDICT)
     finally:
         shutil.rmtree(out, ignore_errors=True)
 
@@ -506,5 +509,12 @@ def test_no_private_content_leak_in_public_summary():
     finally:
         shutil.rmtree(root, ignore_errors=True)
     blob = json.dumps(a["public_summary"])
-    assert "RECEIPT" not in blob  # placeholder: public summary carries no private reconstruction
+    # The public projection must never carry note titles, raw text, transcript
+    # content, URL lists or reconstructive features.
+    assert "privacy_boundary" in a["public_summary"]
     assert a["public_summary"]["privacy_boundary"].lower().startswith("no private")
+    # Synthetic object keys (private-ish identifiers: syn_<8 digits> / g_<8 digits>)
+    # must not leak into the projection. We match the exact key pattern, not the
+    # bare prefix, so legitimate field names like "underlying_defect_present"
+    # (which contains "g_") are not falsely flagged.
+    assert not re.search(r"(syn|g)_\d{8}", blob)

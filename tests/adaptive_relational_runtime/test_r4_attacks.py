@@ -183,12 +183,10 @@ def test_crash_incremental_reconcile_with_demos():
 
 def test_capability_distinguishes_dimensions():
     from arr_r4_self_reflection.runner import _build_capability_reinterpretation
-    res = _build_capability_reinterpretation(r3_like_reports())
-    assert "operational_coverage" in res
-    assert "semantic_coverage" in res
-    assert "evidence_coverage" in res
-    assert "governance_coverage" in res
-    assert res["semantic_coverage"]["measured"] is False
+    res = _build_capability_reinterpretation(r3_like_reports(), {})
+    for dim in ("OPERATIONAL", "SEMANTIC", "EVIDENCE", "GOVERNANCE"):
+        assert dim in res["dimensions"]
+    assert res["dimensions"]["SEMANTIC"]["measured"] is False
 
 
 # --- architecture-candidate gate rejects single-case / lower-level -----
