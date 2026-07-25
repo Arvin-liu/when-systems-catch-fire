@@ -94,5 +94,44 @@ def envelope_field_set_complete() -> bool:
 
 
 # --- Envelope validation (implemented in Commit 4) -------------------------
-def validate_envelope(env: PracticeSafetyEnvelope) -> None:  # pragma: no cover
-    raise NotImplementedError("safety_envelope.validate_envelope implemented in Commit 4")
+def validate_envelope(env: PracticeSafetyEnvelope) -> None:
+    """Fail-closed practice/intervention safety-envelope validation.
+
+    Every required field must be present and non-UNKNOWN; informed consent must
+    be required; stop conditions, rollback/exit path and professional referral
+    boundary must be declared; and the envelope must NOT recommend stopping
+    prescribed treatment or substituting an unverified practice for professional
+    care.
+    """
+    for field_name in REQUIRED_ENVELOPE_FIELDS:
+        value = getattr(env, field_name)
+        if isinstance(value, str):
+            if value == "UNKNOWN" or value == "":
+                raise EnvelopeIncompleteError(
+                    f"missing required safety field: {field_name}"
+                )
+        elif isinstance(value, bool):
+            if field_name == "informed_consent_required" and value is False:
+                raise EnvelopeIncompleteError(
+                    "informed_consent_required must be True for any intervention protocol"
+                )
+        elif isinstance(value, list):
+            if field_name == "unknowns" and len(value) == 0:
+                raise EnvelopeIncompleteError(
+                    "unknowns must enumerate at least one UNKNOWN"
+                )
+
+    if not env.informed_consent_required:
+        raise EnvelopeIncompleteError("informed_consent_required must be True")
+    if env.stop_conditions == "UNKNOWN":
+        raise EnvelopeIncompleteError("stop_conditions required")
+    if env.professional_referral_boundary == "UNKNOWN":
+        raise EnvelopeIncompleteError("professional_referral_boundary required")
+    if env.rollback_exit_path == "UNKNOWN":
+        raise EnvelopeIncompleteError("rollback_exit_path required")
+
+    if contains_stop_treatment_language(env.raw_text):
+        raise StopTreatmentRecommendationError(
+            "envelope must not recommend stopping prescribed treatment or "
+            "substituting an unverified practice for professional care"
+        )

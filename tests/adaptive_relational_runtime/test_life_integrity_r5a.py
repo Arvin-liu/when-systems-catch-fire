@@ -564,3 +564,185 @@ def test_validate_all_runs_and_is_deterministic():
     assert ok, failures
     ok2, failures2 = validators.validate_all()
     assert failures == failures2
+
+
+# ===========================================================================
+# M. Synthetic fixtures + additional attack/acceptance coverage
+# ===========================================================================
+from life_integrity_r5a import fixtures as FX  # noqa: E402
+
+
+def test_fixture_embodied_agent_has_all_seven_views():
+    agent = FX.sample_embodied_agent()
+    assert len(agent._views) == 7
+    assert agent.missing_views() == []
+
+
+def test_fixture_embodied_agent_single_subject():
+    agent = FX.sample_embodied_agent("subj-A")
+    for vid, proj in agent._views.items():
+        assert proj.subject_identity == "subj-A"
+
+
+def test_fixture_translated_claim_valid_and_not_mechanism():
+    claim = FX.sample_translated_claim()
+    assert R.is_valid_claim_class(claim.claim_class)
+    assert claim.claim_class == "HISTORICAL_SOURCE"
+    assert claim.mechanism_status == "NOT_ASSERTED"
+
+
+def test_fixture_concept_mapping_progressed():
+    m = FX.sample_concept_mapping()
+    assert m.current_state == "PHENOMENOLOGICAL_CANDIDATE"
+    assert len(m.transitions) == 1
+
+
+def test_fixture_safety_envelope_passes_validation():
+    env = FX.sample_safety_envelope()
+    SE.validate_envelope(env)  # must not raise
+
+
+def test_fixture_local_optimization_passes_validation():
+    prop = FX.sample_local_optimization_proposal()
+    LI.LifeIntegrityGate().validate_proposal(prop)  # must not raise
+
+
+def test_valid_whole_person_disclosure_passes():
+    agent = FX.sample_embodied_agent()
+    agent.require_whole_person_disclosure(
+        claimed_views=list(R.EMBODIED_VIEW_IDS),
+        missing_disclosed=True,
+        contradictions_surfaced=True,
+    )
+
+
+def test_embodied_agent_contradictions_surfaced_not_merged():
+    agent = FX.sample_embodied_agent()
+    agent.record_contradiction(EV.Contradiction("PhysiologicalView", "MeaningView", "a"))
+    agent.record_contradiction(EV.Contradiction("BehavioralView", "RelationalView", "b"))
+    surfaced = agent.surface_contradictions()
+    assert len(surfaced) == 2
+
+
+def test_concept_mapping_transition_records_metadata():
+    m = CM.ConceptMapping(concept_id="c", source_state="SYMBOLIC_DESCRIPTION")
+    CM.apply_transition(m, "PHENOMENOLOGICAL_CANDIDATE", "phenomenology_report", "D", "r")
+    rec = m.transitions[0]
+    for key in (
+        "from", "to", "required_evidence_class", "provided_evidence_class",
+        "reviewer_role", "reversibility", "contradiction_handling", "reason", "receipt",
+    ):
+        assert key in rec
+
+
+@pytest.mark.parametrize("state", R.CONCEPT_MAPPING_STATE_IDS)
+def test_each_concept_state_has_at_least_one_allowed_transition(state):
+    assert len(R.CONCEPT_MAPPING_TRANSITIONS.get(state, {})) >= 1
+
+
+def test_type_tag_set_is_distinct():
+    assert len(set(R.NORMATIVE_EMPIRICAL_TYPE_TAGS)) == 10
+
+
+def test_claim_class_set_is_distinct():
+    assert len(set(R.TRADITION_CLAIM_CLASS_IDS)) == 8
+
+
+def test_concept_state_set_is_distinct():
+    assert len(set(R.CONCEPT_MAPPING_STATE_IDS)) == 8
+
+
+def test_embodied_view_set_is_distinct():
+    assert len(set(R.EMBODIED_VIEW_IDS)) == 7
+
+
+def test_manifest_not_authorized_list_present():
+    assert len(manifest.CANDIDATE_MANIFEST["not_authorized"]) >= 15
+
+
+def test_manifest_artifacts_reference_required_docs():
+    arts = manifest.CANDIDATE_MANIFEST["artifacts"]
+    assert any("life-integrity-charter-candidate-r1.md" in a for a in arts)
+    assert any("tradition-translation-pipeline-r1.md" in a for a in arts)
+    assert len(arts) >= 14
+
+
+def test_non_impact_proof_has_schema():
+    proof = NI.build_non_impact_proof()
+    assert proof["schema"].startswith("r5a/non-impact-proof")
+
+
+def test_validate_all_has_no_failures():
+    ok, failures = validators.validate_all()
+    assert ok, failures
+
+
+@pytest.mark.parametrize(
+    "phrase",
+    ["stop taking your pills", "replace your prescribed treatment", "quit your medication"],
+)
+def test_safety_envelope_detects_stop_phrase_variant(phrase):
+    assert SE.contains_stop_treatment_language(phrase)
+
+
+def test_local_optimization_valid_proposal_fully_documented():
+    prop = FX.sample_local_optimization_proposal()
+    for field_name in LI.LOCAL_OPTIMIZATION_FIELDS:
+        value = getattr(prop, field_name)
+        assert value is not None and value != "UNKNOWN" and value != ""
+
+
+def test_translated_claim_forbids_upgrade_via_interpretation_layer():
+    with pytest.raises(TT.ForbiddenClaimUpgradeError):
+        TT.translate_claim(
+            source_provenance="synthetic", claim_class="METAPHYSICAL_CLAIM",
+            interpretation_layer="SCIENTIFIC_FACT",
+        )
+
+
+def test_concept_mapping_unknown_reachable_from_mechanism():
+    m = CM.ConceptMapping(concept_id="c", source_state="MECHANISM_HYPOTHESIS")
+    CM.apply_transition(m, "UNKNOWN", "insufficient_evidence", "F", "r")
+    assert m.current_state == "UNKNOWN"
+
+
+def test_concept_mapping_contradicted_reachable_from_partially_supported():
+    m = CM.ConceptMapping(concept_id="c", source_state="PARTIALLY_SUPPORTED")
+    CM.apply_transition(m, "CONTRADICTED", "contradiction_evidence", "F", "r")
+    assert m.current_state == "CONTRADICTED"
+
+
+def test_gate_activated_remains_false():
+    gate = LI.LifeIntegrityGate()
+    assert gate.activated is False
+
+
+def test_annex_principle_contains_user_authorized_text():
+    assert "性命一体" in AX.USER_AUTHORIZED_PRINCIPLE
+    assert "身心互成" in AX.USER_AUTHORIZED_PRINCIPLE
+
+
+def test_registries_control_identity_present():
+    assert R.CONTROL_COMMIT == "d653c07ed6b108c98e16d111c014f87d7c7987f2"
+    assert R.FORMAL_PREDECESSOR == "f236543dadcaf79ba9dba750fa21bd8b5c65a33a"
+    assert R.TASK_ID == "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+
+
+def test_translated_claim_unknown_class_fails_at_construction():
+    with pytest.raises(TT.UnknownClaimClassError):
+        TT.TranslatedClaim(
+            source_provenance="x", source_language="zh", translation_status="literal",
+            attribution_status="author", claim_class="UNKNOWN_CLASS",
+        )
+
+
+def test_embodied_agent_get_view_missing_raises():
+    agent = FX.sample_embodied_agent()
+    with pytest.raises(EV.MissingViewError):
+        agent.get_view("NonexistentView")
+
+
+def test_concept_mapping_unknown_state_rejected_at_construction():
+    with pytest.raises(CM.UnknownConceptStateError):
+        CM.ConceptMapping(concept_id="c", source_state="BOGUS_STATE")
+
