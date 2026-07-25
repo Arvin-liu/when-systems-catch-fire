@@ -32,6 +32,17 @@ from .inventory import (
 from .shard import build_shard_plan, shard_plan_digest, is_key_in_namespace
 from .checkpoint import Checkpoint, atomic_write, crash_safe_step
 from .runner import CorpusRunConfig, RunResult, run_corpus, CrashInjection
+from .semantic import (
+    classify_claim,
+    extract_event_time,
+    build_temporal,
+    build_envelope,
+    default_semantic_processor,
+)
+from .private_ref import build_private_ref, export_receipt_ref
+from .analysis import compute_analysis
+from .aggregate import compute_aggregate_metrics
+from .driver import run_full
 
 __all__ = [
     "schemas",
@@ -55,4 +66,14 @@ __all__ = [
     "RunResult",
     "run_corpus",
     "CrashInjection",
+    "classify_claim",
+    "extract_event_time",
+    "build_temporal",
+    "build_envelope",
+    "default_semantic_processor",
+    "build_private_ref",
+    "export_receipt_ref",
+    "compute_analysis",
+    "compute_aggregate_metrics",
+    "run_full",
 ]
