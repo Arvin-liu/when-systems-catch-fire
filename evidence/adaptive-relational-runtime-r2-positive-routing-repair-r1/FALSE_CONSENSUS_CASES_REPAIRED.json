@@ -1,0 +1,9 @@
+{
+  "pilot_id": "arr-r2-pilot-20260725",
+  "run_id": "r2run_4b285ff4f21a4a50cde1faa2d4d37eaf",
+  "manifest_supplied": true,
+  "manifest_digest": "d132c82554469e1136ba31220dc2afbcdcc5c0df0afc25822e5e70738e58e956",
+  "same_source_derivative_clusters": [],
+  "false_consensus_count": 0,
+  "note": "same-source derivatives flagged so they are not elevated to independent consensus"
+}

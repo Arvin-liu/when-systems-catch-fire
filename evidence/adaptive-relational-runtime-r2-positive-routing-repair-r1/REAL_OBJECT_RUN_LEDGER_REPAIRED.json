@@ -1,0 +1,1744 @@
+{
+  "pilot_id": "arr-r2-pilot-20260725",
+  "run_id": "r2run_4b285ff4f21a4a50cde1faa2d4d37eaf",
+  "manifest_digest": "d132c82554469e1136ba31220dc2afbcdcc5c0df0afc25822e5e70738e58e956",
+  "object_count": 48,
+  "real_world_actions": 0,
+  "privacy_boundary_ok": true,
+  "all_inputs_immutable": true,
+  "receipts": [
+    {
+      "receipt_id": "r2rcpt_57644b18d419d2b1a48961c52dbd4d4c",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-01",
+      "object_class": "text_transcript_source",
+      "deterministic_identity": "7fdbcf6f1697c1cf3c929df90421a87202979f7fe4e84e37bd592552757d40e1",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_5dccbc459af39b4389805a36b5e60ba5",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-02",
+      "object_class": "git_pr_ci_chain",
+      "deterministic_identity": "b5b6fd7c54641f59a3f350376fda7cbb3ac50498a25317607bc1425555575cf1",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_a079eb591dbc77eeff806525294fa1bf",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-03",
+      "object_class": "structured_data_object",
+      "deterministic_identity": "90e5d7929439ebae672945a4fa2451106b608ae71d0a559b7897d6e772062b0f",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_27fecf4a9a3e4c71b43534177b83db61",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-04",
+      "object_class": "production_runtime_receipt",
+      "deterministic_identity": "044816b33599ef9e99f72efa06adb0720c3a8c3e4c061f1e5fd178e2ac83f44c",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_b841fdaedf4722b69d49c905a0624998",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-05",
+      "object_class": "temporal_event_sequence",
+      "deterministic_identity": "ee844739f63549e9a44303bf07c2c72d7c62ef015966b89e9f451e9b78976d58",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_7922d529485088d5da30be3f014fe0bd",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-06",
+      "object_class": "mechanism_system_state",
+      "deterministic_identity": "19dd68222089089616052b5bcfecec846304ae952353ceea82e44a8680011879",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_74f8a659aa3cf7f7fd8a16abbd9555ed",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-07",
+      "object_class": "text_transcript_source",
+      "deterministic_identity": "814ad0858e19f3dad19f0c0e39d052c9a7e4965eb24a41a0b7643ca42a705900",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_0fe75c9afef1a89fc366426c3036ec6f",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-08",
+      "object_class": "git_pr_ci_chain",
+      "deterministic_identity": "775a18403b1bc3c69a579d1764957b9a0796d41fcf8877c9a7e2e56fe608a067",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_160de875e0d518b9d516cb5d75682106",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-09",
+      "object_class": "structured_data_object",
+      "deterministic_identity": "cb2bc0b5afcead38be7bbe1aee57732f9e24f8814000485d461ab5e1dca50fd4",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_8f75b1cbd32d1292fed31854beb58128",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-10",
+      "object_class": "production_runtime_receipt",
+      "deterministic_identity": "7c817a9b42aa3bc2062fd55ab39d84fa9aaead41a0c4ff128eb2cfaf38c3748a",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_38f0686027001e6ad77cfa4e1efa4382",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-11",
+      "object_class": "temporal_event_sequence",
+      "deterministic_identity": "b2c9326bd253e0845d571205f571b386c4604dd3182559ea2af2391e10cafde1",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_f1cbcf192c477e7fb0aed735b0ec0755",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-12",
+      "object_class": "mechanism_system_state",
+      "deterministic_identity": "bd9614d89c4584ab4925805bfa7d682430fafe9f594ae39cb4ca25e4da3b6152",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_49d7a72607a66af23508a89511abd7a9",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-13",
+      "object_class": "text_transcript_source",
+      "deterministic_identity": "d6c472df5b8ffd8ce5f6b325e815c45681c75f2fb4895e9998eaf6cea65f454c",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_7a65e789ef6c5feff7bc09a18a78ed63",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-14",
+      "object_class": "git_pr_ci_chain",
+      "deterministic_identity": "b33aaceaa0f487efe50a6b8555d638ff0ffa697ead4e8b3a869fc17074438460",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_f0c5f9f49b6fe2a03817e9ae3ad34995",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-15",
+      "object_class": "structured_data_object",
+      "deterministic_identity": "3a1f78ad7120cdc3f3f30d0468269af63b779634112e037dfeb4b71bce5f5702",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_0b0404300d0862ba37389983645ffac7",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-16",
+      "object_class": "production_runtime_receipt",
+      "deterministic_identity": "c1da656135b16af82cf7171586fb52a7afd784eff683143f4ce081704d86771b",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_8027fcc0d2b9c54ecdba936759bcc046",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-17",
+      "object_class": "temporal_event_sequence",
+      "deterministic_identity": "28f624787b635d43fe71ccb15568879d9f66efb04783f9a450dc2ba1bf998921",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_10492db6d31fdbc05afb240333f87117",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-18",
+      "object_class": "mechanism_system_state",
+      "deterministic_identity": "75b3065dc922c931e95e0aa35c8f675fca86c0725eeb5333176e39eb904fc9b1",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_6cfe93d95dbd6ad11c2f5cb807ac7e28",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-19",
+      "object_class": "text_transcript_source",
+      "deterministic_identity": "a1dc634f61ac544dc7ccca8d70336b9ec7e71fa364d3ba0b6e0f09782c6f36cb",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_b7dd5307d9d7c7f761ce829f27fdd4a7",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-20",
+      "object_class": "git_pr_ci_chain",
+      "deterministic_identity": "2acb9da270c1eaa1b5b5c82508111646a7e2654e821e908923399674daad0a4b",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_dedffe4bec543b62e7ba256864061253",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-21",
+      "object_class": "structured_data_object",
+      "deterministic_identity": "be9e7333e010f1d57b9c2ef395a1ec233ecaada3b3d23e467d1135320fdb1764",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_37268aaf930bbfa9d411e0266a70ab89",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-22",
+      "object_class": "production_runtime_receipt",
+      "deterministic_identity": "0e2e4f3da3f1960f2f8687c83eefff4f551374fb41f2c5724f639eba67f3f3c4",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_dc58240231a1592cce8a9029dee85826",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-23",
+      "object_class": "temporal_event_sequence",
+      "deterministic_identity": "1900dce912a26aebe24761994afb5f80b107336e6fa570c2997c12c3919d3195",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_0a8285690efd00f2c43152a5160ab759",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-24",
+      "object_class": "mechanism_system_state",
+      "deterministic_identity": "4dbee252dcb7a00f811b9a6edeece327e527fff64aa67c7eae9b3955d7a7fb97",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_6880bd6cb9bac3d8f2f5c495ae0cec6d",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-25",
+      "object_class": "text_transcript_source",
+      "deterministic_identity": "9ff5c58d287c39a7fee19f615094c4ae9368b793d9f8cb299963851e5580cae3",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_cd42f7388bd39fdf2cda4300134d2db1",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-26",
+      "object_class": "git_pr_ci_chain",
+      "deterministic_identity": "359ce3bc23f862cd6db069f87f6bbcb47b0b35cb6aaa756d9676c20fa2175918",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_581e93ab000a3f804a904b517cd8d06c",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-27",
+      "object_class": "structured_data_object",
+      "deterministic_identity": "1220508fff0ec9a6250d136e65fbfbd4674b97a9ebd9f222938953e7f0905e05",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_d4a39d0bcec35546476b050cb744ea98",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-28",
+      "object_class": "production_runtime_receipt",
+      "deterministic_identity": "30691d47834f04b7d88076132ea42aeedaffece11efe9b6e90dfe0bd6e5b795f",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_936aa1e9a496faae852869bc1dff54fb",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-29",
+      "object_class": "temporal_event_sequence",
+      "deterministic_identity": "7917db43971564a6e875cfadaa4f237e824cc23bae3b9a6fbe7b50330f911721",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_7346a276e04c710aaab0a711b14a39af",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-30",
+      "object_class": "mechanism_system_state",
+      "deterministic_identity": "f950e149519bf9e5a91128da631a135d86727f522407685863e6b6ea4f3eca7f",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_075fe377eedbb3b2ab0a9816d17c628c",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-31",
+      "object_class": "text_transcript_source",
+      "deterministic_identity": "a59799c394ee388d0308dd03a1510fdac40cd463e7bde09491538aeb67cb23fe",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_e38b35cf318b4d4e9c68fd50b0b06ba0",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-32",
+      "object_class": "git_pr_ci_chain",
+      "deterministic_identity": "6ffd7b23d338f183cc7283d1876dd23129f1ae5a977e9bdc5d0fa421eff74c1f",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_11bd79327d67487f1e1b97c290ee2bc3",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-33",
+      "object_class": "structured_data_object",
+      "deterministic_identity": "319475f7a77b3124812da4386949576e4870393b9a8ad2eb2bac56637ec5179f",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_da8cdbd2014fcdf900e930a87452349a",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-34",
+      "object_class": "production_runtime_receipt",
+      "deterministic_identity": "715b1de69b2b3407b9824619daa810a04f3ae6e1d28a15b242a6b604e11ad8f2",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_de050043302c002448b6407c4f4e4474",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-35",
+      "object_class": "temporal_event_sequence",
+      "deterministic_identity": "ee90f49583a7b50d4787ee3d2d27d709dbcba6b07b1ae075ae1d354a725fbc80",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_c8af3276d11503db49271cd359394ef8",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-36",
+      "object_class": "mechanism_system_state",
+      "deterministic_identity": "406a770d8d788437c648ee905e43a6ef7fc551813d2c4d12360e557accbadf48",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_ca69a970a2b16f449b032ff5241c99ec",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-37",
+      "object_class": "text_transcript_source",
+      "deterministic_identity": "fede5e62635e4f77ebab7b8a8072d4df5ad70b32b3ab22459670155ec2cba80c",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_a943f62cff4590bad2e93b91d81d7ca9",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-38",
+      "object_class": "git_pr_ci_chain",
+      "deterministic_identity": "490b16b1e1c3659e734598628e8ffa87b598e662a078a043c0738f91bf19b692",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_84b1aec0820823dc65c7e0b76cb81944",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-39",
+      "object_class": "structured_data_object",
+      "deterministic_identity": "93d970fadcc8c519f5653d206540af618d93be70b424dfd1ef318da1b344556b",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_ccd4568e2e7015c16796b774c73c7c72",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-40",
+      "object_class": "production_runtime_receipt",
+      "deterministic_identity": "81bf4ab9f021ee333ce2fba34a74862944eb27237c980e6280ce874444472ee0",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_9a39a30da325f38e1344d21882c096e3",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-41",
+      "object_class": "temporal_event_sequence",
+      "deterministic_identity": "8766f3f0428beb481e08357e6d365b06de8a3066838b2ef6368307fd2798ba6d",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_bb607dffb2734c4452cd9a6f1207edcb",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-42",
+      "object_class": "mechanism_system_state",
+      "deterministic_identity": "b66510e46db8b57569dc950193e76bf7ad2eb324f028afc716d14ed8f5636478",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_8fd7580e5cc3af1ea3f7b90f116ac8a4",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-43",
+      "object_class": "text_transcript_source",
+      "deterministic_identity": "2855f7c5330d947193968176bb427ae4ff5452bafef88988de5a798ca7e48dfe",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_254bbff89f200d038245c07dd8eab070",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-44",
+      "object_class": "git_pr_ci_chain",
+      "deterministic_identity": "f35104dbf577689f48b5c81a3e61a5d4b4fa39758d5c70daf1e4528a7c43ad1c",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_6976cfd37422cf7e2d0bb8cc0b6e34e6",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-45",
+      "object_class": "structured_data_object",
+      "deterministic_identity": "38c4bedd3cfdfb72eb6a6fb36dabc90a215019c042b34ade0e441cc3d374d196",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_92a9b427de6ed39e74c9a48af9bd9a4e",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-46",
+      "object_class": "production_runtime_receipt",
+      "deterministic_identity": "2903247ed5e99ca42498bd897b347c9890e1f4c641a5aeb4fe9ef9b7982a498c",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_64708f7380dce253ecefa624fcd3e955",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-47",
+      "object_class": "temporal_event_sequence",
+      "deterministic_identity": "8f47f1cbd8e16d83931091fbcc9c573204f7a9fbde803fa15285908e6ab44bf7",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    },
+    {
+      "receipt_id": "r2rcpt_d26055a34954657b4e3fcd7d23f28752",
+      "pilot_id": "arr-r2-pilot-20260725",
+      "object_id": "OBJ-48",
+      "object_class": "mechanism_system_state",
+      "deterministic_identity": "2c83335eb420586dbe5947964f02ca082e7a5cfa21b0ba87fab3540c5bdf53d2",
+      "adapter_success": true,
+      "runtime_success": true,
+      "projection_executed": true,
+      "expected_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "actual_route": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "expectation_matched": true,
+      "outcome_status": "SUCCESS",
+      "route_or_rejection": {
+        "target": "ARN",
+        "reject_code": null
+      },
+      "failure_attribution": {
+        "primary_class": "UNKNOWN",
+        "secondary_factors": [],
+        "note": "no defect observed on pilot path"
+      },
+      "input_immutable": true,
+      "replay_count": 3,
+      "real_world_actions": 0,
+      "privacy_boundary_ok": true,
+      "evolution_candidate": false,
+      "growth_gate": "SIGNAL_ONLY",
+      "replay_stable": true
+    }
+  ],
+  "summary": {
+    "extraction_failures": 0,
+    "runtime_failures": 0,
+    "positive_successes": 48
+  }
+}
