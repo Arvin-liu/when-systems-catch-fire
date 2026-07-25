@@ -1,0 +1,65 @@
+{
+  "schema": "r3-corpus-scale/public-aggregate@1",
+  "purpose": "Non-reconstructive public aggregate for the R3 WAIC corpus-scale measurement run (IGNITION R3, §12/§16(6)). Contains only counts, rates and gate guarantees. No full note, bulk title, audio transcript, PII, or reconstructive content.",
+  "boundary": "public",
+  "measurement_only": true,
+  "promote_calls": 0,
+  "evolve_calls": 0,
+  "real_world_actions": 0,
+  "public_private_content_leaks": 0,
+  "silent_disappearances": 0,
+  "public_tests": {
+    "module_count": 6,
+    "function_count": 42,
+    "per_note_check_count": 203,
+    "acceptance_matrix_min_checks": 120,
+    "all_passing": true,
+    "modules": [
+      "tests/test_r3_corpus_inventory.py",
+      "tests/test_r3_corpus_semantic.py",
+      "tests/test_r3_corpus_crash.py",
+      "tests/test_r3_corpus_boundary.py",
+      "tests/test_r3_corpus_analysis.py",
+      "tests/test_r3_corpus_acceptance.py"
+    ]
+  },
+  "synthetic_fixture": {
+    "note_count": 29,
+    "index_count": 1,
+    "type_distribution": {
+      "link": 10,
+      "plain_text": 13,
+      "local_audio": 3,
+      "recorder_audio": 3
+    }
+  },
+  "determinism": {
+    "run_id_depends_on_wall_clock": false,
+    "replay_idempotent": true,
+    "shard_plan_reorder_invariant": true
+  },
+  "crash_safety": {
+    "interrupt_scenarios": ["clean_full_run", "crash_at_10pct", "crash_at_50pct", "crash_at_final_shard", "idempotent_replay", "changed_note_selective_rerun"],
+    "resume_verified": true
+  },
+  "static_gate": {
+    "violations": 0,
+    "second_executor_paths": 0
+  },
+  "scale_run": {
+    "frozen_corpus_ref": "50393395ce9e6a1592787d991e630e364c5b6a09",
+    "spec_note_count_constant": 836,
+    "note": "Per-note receipts, manifest, inventory, ledgers and analyses for the frozen 836-note scale run reside only in the private 1111 evidence branch. The public repo exposes the count 836 as the IGNITION spec constant only."
+  },
+  "forbidden_operations": {
+    "r4_launched": false,
+    "promote": false,
+    "evolve": false,
+    "ready_pr": false,
+    "merge_to_main": false,
+    "main_changed": false,
+    "force_push": false,
+    "history_rewrite": false,
+    "external_acceptance_claimed": false
+  }
+}

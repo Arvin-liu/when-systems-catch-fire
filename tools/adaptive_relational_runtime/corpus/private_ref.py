@@ -32,6 +32,6 @@ def export_receipt_ref(receipt_dict: dict) -> dict:
         "byte_sha256": receipt_dict.get("byte_sha256"),
         "path_digest": receipt_dict.get("path_digest"),
         "real_world_action": receipt_dict.get("real_world_action"),
-        "promote": receipt_dict.get("promote"),
-        "evolve": receipt_dict.get("evolve"),
+        "promote_called": receipt_dict.get("promote_called"),
+        "evolve_called": receipt_dict.get("evolve_called"),
     }

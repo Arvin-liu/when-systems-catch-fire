@@ -109,3 +109,27 @@ title, PII, or anything sufficient to reconstruct private content.
 
 `ARR_R3_WAIC_CORPUS_SCALE_RUN_DRAFT_AWAITING_EXTERNAL_REVIEW`. No R4, PROMOTE,
 EVOLVE, Ready, merge, Main change, or force push.
+
+## 10. Non-private aggregate (public, IGNITION §12 / §16(6))
+
+The public repo carries only non-reconstructive aggregates. The authoritative
+artifact is `data/r3-corpus-scale/public-aggregate.json`; it records public-facing
+counts and guarantees and never contains full notes, bulk titles, audio
+transcripts, or anything sufficient to reconstruct private content. The 836-note
+scale-run per-note receipts, manifests, ledgers and analyses live only in the
+private 1111 evidence branch.
+
+Public guarantees (verified by the 42-test acceptance matrix and the ARR static
+gate):
+
+- `public_private_content_leaks = 0`
+- `promote_calls = 0`, `evolve_calls = 0`, `real_world_actions = 0`
+- `silent_disappearances = 0` (synthetic fixture: 29 notes + 1 index)
+- deterministic `run_id` (no wall-clock dependence); completed-run replay is
+  idempotent (exact-once, no duplicate receipts)
+- crash-safe resume across ≥10% / ~50% / final-shard interrupts
+- changed-note selective rerun touches only the changed object (isolated copy)
+
+The frozen-scale count `836` is the IGNITION spec constant and is published only
+as a count; no private note, digest set, or title list is exposed in the public
+repo.

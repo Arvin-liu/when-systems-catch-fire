@@ -44,7 +44,7 @@ def test_per_note_invariants_exceed_120_checks(r3_out):
         assert d["claim_class"] != "INDEPENDENTLY_VERIFIED"
         check_count += 1
         # no real-world / promote / evolve
-        assert d["real_world_action"] is False and d["promote"] is False and d["evolve"] is False
+        assert d["real_world_action"] is False and d["promote_called"] is False and d["evolve_called"] is False
         check_count += 1
         # typed private ref present, no body
         assert d["private_ref"]["kind"] == "corpus_note"

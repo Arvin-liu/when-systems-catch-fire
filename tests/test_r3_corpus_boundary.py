@@ -23,7 +23,7 @@ RECEIPT_KEYS = {
     "receipt_id", "run_id", "object_key", "note_type", "path_digest",
     "byte_sha256", "normalized_text_digest", "outcome", "claim_class",
     "temporal", "source_ref_present", "rights_boundary", "private_ref",
-    "real_world_action", "promote", "evolve", "generated_at", "envelope_id", "envelope",
+    "real_world_action", "promote_called", "evolve_called", "generated_at", "envelope_id", "envelope",
 }
 PRIVATE_REF_KEYS = {"kind", "note_id", "note_type", "byte_sha256", "path_digest", "normalized_text_digest"}
 
@@ -83,6 +83,6 @@ def test_aggregate_metrics_are_counts_only(r3_out):
 def test_no_forbidden_action_in_any_receipt(r3_out):
     for f in (r3_out / "receipts").glob("*.json"):
         d = json.loads(f.read_text(encoding="utf-8"))
-        assert d["promote"] is False
-        assert d["evolve"] is False
+        assert d["promote_called"] is False
+        assert d["evolve_called"] is False
         assert d["real_world_action"] is False

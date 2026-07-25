@@ -177,8 +177,8 @@ class CorpusReceipt(JsonModel):
     rights_boundary: str
     private_ref: dict             # {kind, note_id, byte_sha256, path_digest}
     real_world_action: bool       # always False
-    promote: bool                 # always False
-    evolve: bool                  # always False
+    promote_called: bool          # const-assertion of non-use (IGNITION §13)
+    evolve_called: bool           # const-assertion of non-use (IGNITION §13)
     generated_at: str             # fixed render stamp, never wall clock
 
 

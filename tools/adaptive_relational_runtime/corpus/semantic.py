@@ -143,8 +143,8 @@ def default_semantic_processor(corpus_root: str | Path):
             rights_boundary=rec.rights_boundary,
             private_ref=build_private_ref(rec),
             real_world_action=False,
-            promote=False,
-            evolve=False,
+            promote_called=False,
+            evolve_called=False,
             generated_at=schemas.RENDER_STAMP,
         )
         payload = receipt.to_dict()

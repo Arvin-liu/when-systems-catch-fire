@@ -1,0 +1,45 @@
+name: r3-corpus-scale-validation
+# R3 WAIC corpus-scale measurement run (IGNITION R3). Runs the R3 corpus runtime
+# test modules and the ARR static gate on every push to the R3 runtime branch and
+# on PRs touching R3 files. Fail-closed: any violation blocks the workflow.
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/r3-corpus-scale-validation.yml'
+      - 'requirements-r3.txt'
+      - 'tools/adaptive_relational_runtime/corpus/**'
+      - 'tests/r3_synthetic_corpus.py'
+      - 'tests/test_r3_corpus_*.py'
+      - 'docs/R3-CORPUS-RUNTIME.md'
+  push:
+    branches:
+      - 'runtime/adaptive-relational-runtime-r3-waic-corpus-scale-r1'
+  workflow_dispatch:
+concurrency:
+  group: r3-corpus-scale-validation-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r requirements-r3.txt
+      - name: Run ARR static gate (anti-second-executor, fail-closed)
+        run: python3 tools/adaptive_relational_runtime/static_gate.py
+      - name: Run R3 corpus runtime test modules (120+ acceptance matrix)
+        run: |
+          python3 -m pytest \
+            tests/test_r3_corpus_inventory.py \
+            tests/test_r3_corpus_semantic.py \
+            tests/test_r3_corpus_crash.py \
+            tests/test_r3_corpus_boundary.py \
+            tests/test_r3_corpus_analysis.py \
+            tests/test_r3_corpus_acceptance.py \
+            -v

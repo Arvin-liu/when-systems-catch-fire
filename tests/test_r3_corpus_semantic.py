@@ -91,8 +91,8 @@ def test_receipts_carry_no_promote_evolve_real_world(r3_out):
     for f in (r3_out / "receipts").glob("*.json"):
         d = json.loads(f.read_text(encoding="utf-8"))
         assert d["real_world_action"] is False
-        assert d["promote"] is False
-        assert d["evolve"] is False
+        assert d["promote_called"] is False
+        assert d["evolve_called"] is False
         assert d["private_ref"]["kind"] == "corpus_note"
 
 

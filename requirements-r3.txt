@@ -1,0 +1,6 @@
+# R3 WAIC corpus-scale runtime CI dependencies. The R3 corpus runtime package
+# (tools/adaptive_relational_runtime/corpus/) uses only the Python standard
+# library; only pytest is needed to run the public acceptance matrix. The ARR
+# static gate (anti-second-executor) is exercised directly via python3 and needs
+# no extra dependency.
+pytest
