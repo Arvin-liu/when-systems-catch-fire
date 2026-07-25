@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "control_commit": "afb3089a54798bd5d4dcdb10c796a36f219ef724",
+    "corpus_objects": 836,
+    "formal_predecessor": "27af5f99e13d8217961cbc803520c648ce791c68",
+    "frozen_corpus_ref": "50393395ce9e6a1592787d991e630e364c5b6a09",
+    "generated_by": "tools/generate_metric_closure.py",
+    "schema_version": "r3r4/metric-correction/v1",
+    "task_id": "ARR-R3-R4-METRIC-SEMANTICS-OBSERVABILITY-CLOSURE-R1-RELAY-20260725",
+    "validation_failures": [],
+    "validation_ok": true
+  },
+  "metrics": {
+    "incremental_avoidance_fraction": {
+      "applicability": "APPLICABLE",
+      "authority_source": "INCREMENTAL_RERUN_REPORT; CORPUS_RUN_LEDGER",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "corpus_objects",
+        "source": "frozen corpus",
+        "value": 836
+      },
+      "directionality": "higher_is_better",
+      "display_name": "Incremental avoidance fraction (objects not reprocessed)",
+      "evidence_refs": [
+        "INCREMENTAL_RERUN_REPORT",
+        "CORPUS_RUN_LEDGER"
+      ],
+      "historical_source": "",
+      "historical_value": null,
+      "metric_id": "incremental_avoidance_fraction",
+      "note": "Exact rational 835/836.",
+      "numerator": {
+        "label": "unchanged_objects_avoided",
+        "source": "CORPUS_RUN_LEDGER",
+        "value": 835
+      },
+      "population": "changed-note isolated rerun scope",
+      "precedence_rule": "Objects skipped by selective rerun.",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "fraction",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "fraction",
+      "value": 0.9988038277511961
+    },
+    "incremental_changed_objects": {
+      "applicability": "APPLICABLE",
+      "authority_source": "INCREMENTAL_RERUN_REPORT",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "n/a",
+        "source": "constant",
+        "value": 1
+      },
+      "directionality": "descriptive_only",
+      "display_name": "Changed objects detected",
+      "evidence_refs": [
+        "INCREMENTAL_RERUN_REPORT"
+      ],
+      "historical_source": "",
+      "historical_value": null,
+      "metric_id": "incremental_changed_objects",
+      "note": "",
+      "numerator": {
+        "label": "incremental_changed_objects",
+        "source": "INCREMENTAL_RERUN_REPORT",
+        "value": 1
+      },
+      "population": "frozen corpus",
+      "precedence_rule": "",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "count",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "count",
+      "value": 1
+    },
+    "incremental_corpus_objects": {
+      "applicability": "APPLICABLE",
+      "authority_source": "frozen corpus",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "n/a",
+        "source": "constant",
+        "value": 1
+      },
+      "directionality": "descriptive_only",
+      "display_name": "Corpus objects",
+      "evidence_refs": [
+        "frozen corpus"
+      ],
+      "historical_source": "",
+      "historical_value": null,
+      "metric_id": "incremental_corpus_objects",
+      "note": "",
+      "numerator": {
+        "label": "incremental_corpus_objects",
+        "source": "frozen corpus",
+        "value": 836
+      },
+      "population": "frozen corpus",
+      "precedence_rule": "",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "count",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "count",
+      "value": 836
+    },
+    "incremental_reprocess_fraction": {
+      "applicability": "APPLICABLE",
+      "authority_source": "INCREMENTAL_RERUN_REPORT; CORPUS_RUN_LEDGER",
+      "correction_status": "corrected",
+      "denominator": {
+        "label": "corpus_objects",
+        "source": "frozen corpus",
+        "value": 836
+      },
+      "directionality": "descriptive_only",
+      "display_name": "Incremental reprocess fraction (changed-note rerun)",
+      "evidence_refs": [
+        "AGGREGATE_METRICS.incremental_selectivity",
+        "CORPUS_RUN_LEDGER.incremental_selectivity",
+        "INCREMENTAL_RERUN_REPORT.reprocessed_on_change"
+      ],
+      "historical_source": "AGGREGATE_METRICS",
+      "historical_value": 0.0,
+      "metric_id": "incremental_reprocess_fraction",
+      "note": "Exact rational 1/836; a low reprocess fraction is good selectivity, not a failure.",
+      "numerator": {
+        "label": "reprocessed_objects",
+        "source": "INCREMENTAL_RERUN_REPORT",
+        "value": 1
+      },
+      "population": "changed-note isolated rerun scope",
+      "precedence_rule": "Exact changed-note rerun evidence overrides the defective aggregate selectivity because the run ledger is authoritative.",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "fraction",
+      "supersedes_for_interpretation": true,
+      "underlying_defect_present": true,
+      "underlying_defect_repaired_in_current_layer": true,
+      "unit": "fraction",
+      "value": 0.0011961722488038277
+    },
+    "incremental_reprocessed_objects": {
+      "applicability": "APPLICABLE",
+      "authority_source": "INCREMENTAL_RERUN_REPORT",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "n/a",
+        "source": "constant",
+        "value": 1
+      },
+      "directionality": "descriptive_only",
+      "display_name": "Objects reprocessed on change",
+      "evidence_refs": [
+        "INCREMENTAL_RERUN_REPORT"
+      ],
+      "historical_source": "",
+      "historical_value": null,
+      "metric_id": "incremental_reprocessed_objects",
+      "note": "",
+      "numerator": {
+        "label": "incremental_reprocessed_objects",
+        "source": "INCREMENTAL_RERUN_REPORT",
+        "value": 1
+      },
+      "population": "frozen corpus",
+      "precedence_rule": "",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "count",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "count",
+      "value": 1
+    },
+    "incremental_selective_rerun_pass": {
+      "applicability": "APPLICABLE",
+      "authority_source": "INCREMENTAL_RERUN_REPORT",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "n/a",
+        "source": "constant",
+        "value": 1
+      },
+      "directionality": "higher_is_better",
+      "display_name": "Incremental selective rerun pass",
+      "evidence_refs": [
+        "INCREMENTAL_RERUN_REPORT.selective",
+        "INCREMENTAL_RERUN_REPORT.reprocessed_on_change"
+      ],
+      "historical_source": "",
+      "historical_value": null,
+      "metric_id": "incremental_selective_rerun_pass",
+      "note": "",
+      "numerator": {
+        "label": "selective_rerun_passed",
+        "source": "INCREMENTAL_RERUN_REPORT",
+        "value": 1
+      },
+      "population": "changed-note isolated rerun",
+      "precedence_rule": "",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "boolean",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "boolean",
+      "value": true
+    },
+    "incremental_unchanged_objects_avoided": {
+      "applicability": "APPLICABLE",
+      "authority_source": "CORPUS_RUN_LEDGER",
+      "correction_status": "clarified",
+      "denominator": {
+        "label": "n/a",
+        "source": "constant",
+        "value": 1
+      },
+      "directionality": "higher_is_better",
+      "display_name": "Unchanged objects avoided by selective rerun",
+      "evidence_refs": [
+        "CORPUS_RUN_LEDGER"
+      ],
+      "historical_source": "",
+      "historical_value": null,
+      "metric_id": "incremental_unchanged_objects_avoided",
+      "note": "",
+      "numerator": {
+        "label": "incremental_unchanged_objects_avoided",
+        "source": "CORPUS_RUN_LEDGER",
+        "value": 835
+      },
+      "population": "frozen corpus",
+      "precedence_rule": "",
+      "schema_version": "r3r4/metric-correction/v1",
+      "semantic_kind": "count",
+      "supersedes_for_interpretation": false,
+      "underlying_defect_present": false,
+      "underlying_defect_repaired_in_current_layer": false,
+      "unit": "count",
+      "value": 835
+    }
+  },
+  "schema": "r3r4/incremental-rerun-closure/v1"
+}
