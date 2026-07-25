@@ -293,7 +293,8 @@ def run(evidence_dir: str, out_dir: str, task_id: str, control_commit: str,
         "q33_governance_validation": "PENDING_PUBLISH",
         "note": "Filled by the publisher/remote-refetch stage after the R4 branch is pushed and CI runs.",
     })
-    _write_text(out_dir, "FINAL_EXTERNAL_REVIEW_REQUEST.md", _final_review_md(task_id, control_commit, counters, contradictions))
+    _write_text(out_dir, "FINAL_EXTERNAL_REVIEW_REQUEST.md",
+                _final_review_md(task_id, control_commit, counters, contradictions, terminal_verdict))
 
     analysis["public_summary"] = project_public_summary(analysis)
     return analysis
@@ -361,19 +362,33 @@ def _rights_privacy_md(fas: Dict[str, Any]) -> str:
 
 
 def _final_review_md(task_id: str, control_commit: str, counters: Dict[str, int],
-                     contradictions: List[Dict[str, Any]]) -> str:
+                     contradictions: List[Dict[str, Any]], terminal_verdict: str) -> str:
     disp = ", ".join(f"{c['contradiction_id']}={c['disposition']}" for c in contradictions)
-    return f"""# R4 Final External Review Request
+    is_repair = "REPAIR" in terminal_verdict
+    title = ("# R4 Metric Disclosure and Relay Receipt Repair — Final External Review Request"
+             if is_repair else "# R4 Final External Review Request")
+    context = (
+        "This is the narrow R4 metric-disclosure and relay-receipt repair over the frozen R4 "
+        "(PR #127, DRAFT, UNMERGED). It closes the 27-item capability set into exactly one primary "
+        "dimension each, separates the mutually-exclusive governance status enum from the orthogonal "
+        "safety-boundary invariant, adds an explicit contradiction lifecycle (attributed vs repaired), "
+        "removes the malformed `dimension_dimension_disclosure_defect` field, and backfills the "
+        "predecessor relay receipt to the canonical 14-file contract. PR #127, the frozen R4 head and "
+        "the R3 corpus are left untouched."
+        if is_repair else
+        "R4 consumed the sealed R3 evidence (836 receipts + 836 envelopes + 12 ledgers) without "
+        "rerunning or modifying the frozen corpus. It derived four-axis statuses for all 836 objects, "
+        "recomputed the six mandatory metric contradictions, reinterpreted capability coverage, and "
+        "attributed every observed weakness to a primary limitation class with exclusion records."
+    )
+    return f"""{title}
 
 task_id: `{task_id}`
 control_commit: `{control_commit}`
-terminal_verdict: `ARR_R4_WAIC_SELF_REFLECTION_DRAFT_AWAITING_EXTERNAL_REVIEW`
+terminal_verdict: `{terminal_verdict}`
 
-## What R4 did
-R4 consumed the sealed R3 evidence (836 receipts + 836 envelopes + 12 ledgers) without
-rerunning or modifying the frozen corpus. It derived four-axis statuses for all 836 objects,
-recomputed the six mandatory metric contradictions, reinterpreted capability coverage, and
-attributed every observed weakness to a primary limitation class with exclusion records.
+## What this run did
+{context}
 
 ## Mandatory metric contradictions (all six received dispositions; classification complete)
 {disp}
@@ -406,9 +421,8 @@ HISTORY_REWRITES={counters['HISTORY_REWRITES']}, R5_STARTED={counters['R5_STARTE
 EXTERNAL_ACCEPTANCE_CLAIMED={counters['EXTERNAL_ACCEPTANCE_CLAIMED']}.
 
 ## Request
-Please externally review R4 and, if accepted, authorize a future R5 iteration (semantic stage,
-source-provenance, metric hardening) as described in R5_AUTHORIZATION_CANDIDATES.md. R4 does
-not self-declare EXTERNALLY_ACCEPTED_FOR_NEXT_ITERATION and did not start R5.
+Please externally review and, if accepted, authorize the next step. This run does not self-declare
+EXTERNALLY_ACCEPTED_FOR_NEXT_ITERATION and did not start R5.
 """
 
 
