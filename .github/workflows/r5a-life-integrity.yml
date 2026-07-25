@@ -1,0 +1,42 @@
+name: r5a-life-integrity
+# Life Integrity Charter Candidate R1 (relay task
+# IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725).
+# Runs the R5-A contract test module (>=120 checks) on PRs touching the new
+# module and on pushes to the candidate child branch. Fail-closed: any violation
+# blocks the workflow. Also regenerates and verifies the public artifacts are
+# deterministic and up to date.
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/r5a-life-integrity.yml'
+      - 'life_integrity_r5a/**'
+      - 'tests/adaptive_relational_runtime/test_life_integrity_r5a.py'
+      - 'tools/generate_life_integrity_r5a.py'
+      - 'docs/architecture/ignition-r5a-life-integrity-r1/**'
+  push:
+    branches:
+      - 'architecture/ignition-r5a-life-integrity-charter-candidate-r1'
+  workflow_dispatch:
+concurrency:
+  group: r5a-life-integrity-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r requirements-r4.txt
+      - name: Run R5-A contract tests (fail-closed)
+        run: python3 -m pytest tests/adaptive_relational_runtime/test_life_integrity_r5a.py -q
+      - name: Regenerate and verify deterministic public artifacts
+        run: |
+          python3 tools/generate_life_integrity_r5a.py
+          git diff --exit-code docs/architecture/ignition-r5a-life-integrity-r1/ || \
+            (echo "Public artifacts are not deterministic / out of date"; exit 1)

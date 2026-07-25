@@ -1,0 +1,42 @@
+{
+  "closed_set": [
+    "PhysiologicalView",
+    "PhenomenologicalView",
+    "CognitiveAffectiveView",
+    "BehavioralView",
+    "RelationalView",
+    "EnvironmentalView",
+    "MeaningView"
+  ],
+  "closed_set_complete": true,
+  "contradictions": "preserved and surfaced; never silently merged",
+  "cross_view_relations": "typed; must not assert causality",
+  "fail_closed_rules": [
+    "every view id must be in the closed set of seven",
+    "every view must share the agent subject_identity",
+    "missing views remain UNKNOWN and are not inferred",
+    "a single view may never claim the whole person",
+    "cross-view relations must not assert causality",
+    "contradictory views are surfaced, not merged"
+  ],
+  "meta": {
+    "activation_status": "CANDIDATE_ONLY",
+    "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
+    "domain_pack_federation_started": false,
+    "external_acceptance_claimed": false,
+    "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "frozen_head": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "generated_by": "tools/generate_life_integrity_r5a.py",
+    "human_intervention_enabled": false,
+    "medical_claims_authorized": false,
+    "modern_wuzhen_pack_started": false,
+    "schema_version": "r5a/v1",
+    "supreme_charter": "LifeCommunityValueCharter",
+    "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+  },
+  "missing_views_disposition": "UNKNOWN / NOT_OBSERVED; must not be inferred from other views",
+  "same_subject_identity_required": true,
+  "schema": "r5a/embodied-view-registry/v1",
+  "view_count": 7,
+  "whole_person_claim": "forbidden; single view/score/diagnosis/behavior/self-report may never assert WHOLE_PERSON_COMPLETE"
+}

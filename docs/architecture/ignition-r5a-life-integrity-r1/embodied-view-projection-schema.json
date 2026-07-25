@@ -1,0 +1,140 @@
+{
+  "fail_closed_rules": [
+    "view_id must be in the seven-view closed set",
+    "subject_identity must be a non-empty string and shared across all views",
+    "asserts_causality must be false for every cross-view relation",
+    "a single view may never assert WHOLE_PERSON_COMPLETE"
+  ],
+  "meta": {
+    "activation_status": "CANDIDATE_ONLY",
+    "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
+    "domain_pack_federation_started": false,
+    "external_acceptance_claimed": false,
+    "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "frozen_head": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "generated_by": "tools/generate_life_integrity_r5a.py",
+    "human_intervention_enabled": false,
+    "medical_claims_authorized": false,
+    "modern_wuzhen_pack_started": false,
+    "schema_version": "r5a/v1",
+    "supreme_charter": "LifeCommunityValueCharter",
+    "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+  },
+  "properties": {
+    "confidence": {
+      "type": "number"
+    },
+    "observations": {
+      "type": "array"
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "subject_identity": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "time_scope": {
+      "type": "string"
+    },
+    "unknown": {
+      "type": "boolean"
+    },
+    "view_id": {
+      "enum": [
+        "PhysiologicalView",
+        "PhenomenologicalView",
+        "CognitiveAffectiveView",
+        "BehavioralView",
+        "RelationalView",
+        "EnvironmentalView",
+        "MeaningView"
+      ]
+    }
+  },
+  "related": {
+    "Contradiction": {
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "view_a": {
+          "enum": [
+            "PhysiologicalView",
+            "PhenomenologicalView",
+            "CognitiveAffectiveView",
+            "BehavioralView",
+            "RelationalView",
+            "EnvironmentalView",
+            "MeaningView"
+          ]
+        },
+        "view_b": {
+          "enum": [
+            "PhysiologicalView",
+            "PhenomenologicalView",
+            "CognitiveAffectiveView",
+            "BehavioralView",
+            "RelationalView",
+            "EnvironmentalView",
+            "MeaningView"
+          ]
+        }
+      },
+      "required": [
+        "view_a",
+        "view_b"
+      ],
+      "type": "object"
+    },
+    "CrossViewRelation": {
+      "properties": {
+        "asserts_causality": {
+          "const": false,
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "relation_type": {
+          "type": "string"
+        },
+        "source_view": {
+          "enum": [
+            "PhysiologicalView",
+            "PhenomenologicalView",
+            "CognitiveAffectiveView",
+            "BehavioralView",
+            "RelationalView",
+            "EnvironmentalView",
+            "MeaningView"
+          ]
+        },
+        "target_view": {
+          "enum": [
+            "PhysiologicalView",
+            "PhenomenologicalView",
+            "CognitiveAffectiveView",
+            "BehavioralView",
+            "RelationalView",
+            "EnvironmentalView",
+            "MeaningView"
+          ]
+        }
+      },
+      "required": [
+        "relation_type",
+        "source_view",
+        "target_view"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "view_id",
+    "subject_identity"
+  ],
+  "schema": "r5a/embodied-view-projection/v1",
+  "title": "EmbodiedViewProjection",
+  "type": "object"
+}

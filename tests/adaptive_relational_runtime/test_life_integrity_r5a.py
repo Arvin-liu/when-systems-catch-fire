@@ -29,6 +29,8 @@ from life_integrity_r5a import safety_envelope as SE
 from life_integrity_r5a import tradition_translation as TT
 from life_integrity_r5a import validators
 
+import tools.generate_life_integrity_r5a as GEN  # noqa: E402
+
 
 # ===========================================================================
 # A. Charter hierarchy, supremacy, no L7 / parallel executor / second executor
@@ -745,4 +747,64 @@ def test_embodied_agent_get_view_missing_raises():
 def test_concept_mapping_unknown_state_rejected_at_construction():
     with pytest.raises(CM.UnknownConceptStateError):
         CM.ConceptMapping(concept_id="c", source_state="BOGUS_STATE")
+
+
+# ===========================================================================
+# N. Deterministic public-artifact generator (Commit 5 self-check)
+# ===========================================================================
+def test_generator_produces_nine_artifacts(tmp_path):
+    out = tmp_path / "artifacts"
+    GEN.generate(str(out))
+    names = sorted(p.name for p in out.glob("*.json"))
+    expected = sorted(n for n, _ in GEN._ARTIFACTS)
+    assert names == expected
+    assert len(names) == 9
+
+
+def test_generator_output_is_deterministic(tmp_path):
+    d1 = tmp_path / "run1"
+    d2 = tmp_path / "run2"
+    GEN.generate(str(d1))
+    GEN.generate(str(d2))
+    for n, _ in GEN._ARTIFACTS:
+        p1 = d1 / n
+        p2 = d2 / n
+        assert p1.read_bytes() == p2.read_bytes(), f"non-deterministic artifact: {n}"
+
+
+def test_generator_artifacts_valid_json_and_closed_sets(tmp_path):
+    import json
+
+    out = tmp_path / "artifacts"
+    GEN.generate(str(out))
+
+    mani = json.loads((out / "candidate-charter-manifest.json").read_text(encoding="utf-8"))
+    meta = mani["meta"]
+    assert meta["activation_status"] == "CANDIDATE_ONLY"
+    assert meta["human_intervention_enabled"] is False
+    assert meta["medical_claims_authorized"] is False
+    assert meta["external_acceptance_claimed"] is False
+    assert meta["supreme_charter"] == "LifeCommunityValueCharter"
+    assert mani["annex_beneath_supreme_charter"] is True
+
+    emb = json.loads((out / "embodied-view-registry.json").read_text(encoding="utf-8"))
+    assert emb["view_count"] == 7
+    assert len(emb["closed_set"]) == 7
+
+    trd = json.loads((out / "tradition-claim-class-registry.json").read_text(encoding="utf-8"))
+    assert trd["claim_class_count"] == 8
+    assert len(trd["forbidden_upgrades"]) == 5
+
+    cmap = json.loads((out / "concept-mapping-lifecycle-registry.json").read_text(encoding="utf-8"))
+    assert cmap["state_count"] == 8
+    assert cmap["direct_jump_to_partially_supported_forbidden"] is True
+
+    se = json.loads((out / "practice-safety-envelope-schema.json").read_text(encoding="utf-8"))
+    assert se["field_set_complete"] is True
+    assert len(se["field_set"]) == 15
+
+    li = json.loads((out / "life-integrity-assessment-schema.json").read_text(encoding="utf-8"))
+    assert li["field_set_complete"] is True
+    assert len(li["field_set"]) == 11
+
 

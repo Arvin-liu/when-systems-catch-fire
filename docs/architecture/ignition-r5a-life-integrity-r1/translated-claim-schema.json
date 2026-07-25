@@ -1,0 +1,117 @@
+{
+  "fail_closed_rules": [
+    "claim_class must be in the eight-class closed set",
+    "the five forbidden silent upgrades are rejected at build time",
+    "mechanism_status/interpretation_layer may not realize a forbidden upgrade target"
+  ],
+  "forbidden_upgrades": [
+    {
+      "from": "HISTORICAL_LONGEVITY",
+      "to": "EFFECTIVENESS"
+    },
+    {
+      "from": "LATER_INTERPRETATION",
+      "to": "AUTHOR_INTENT"
+    },
+    {
+      "from": "METAPHYSICAL_CLAIM",
+      "to": "SCIENTIFIC_FACT"
+    },
+    {
+      "from": "PHENOMENOLOGICAL_REPORT",
+      "to": "EMPIRICALLY_SUPPORTED_MECHANISM"
+    },
+    {
+      "from": "PRACTICE_PROTOCOL",
+      "to": "CLINICAL_EFFICACY"
+    }
+  ],
+  "meta": {
+    "activation_status": "CANDIDATE_ONLY",
+    "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
+    "domain_pack_federation_started": false,
+    "external_acceptance_claimed": false,
+    "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "frozen_head": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "generated_by": "tools/generate_life_integrity_r5a.py",
+    "human_intervention_enabled": false,
+    "medical_claims_authorized": false,
+    "modern_wuzhen_pack_started": false,
+    "schema_version": "r5a/v1",
+    "supreme_charter": "LifeCommunityValueCharter",
+    "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+  },
+  "properties": {
+    "applicability_scope": {
+      "type": "string"
+    },
+    "attribution_status": {
+      "type": "string"
+    },
+    "claim_class": {
+      "enum": [
+        "HISTORICAL_SOURCE",
+        "NORMATIVE_CLAIM",
+        "METAPHYSICAL_CLAIM",
+        "PHENOMENOLOGICAL_REPORT",
+        "PRACTICE_PROTOCOL",
+        "MECHANISM_HYPOTHESIS",
+        "RITUAL_SOCIAL_TECHNOLOGY",
+        "OUTCOME_OR_HARM_REPORT"
+      ]
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "evidence_grade": {
+      "type": "string"
+    },
+    "interpretation_layer": {
+      "type": "string"
+    },
+    "literal_reference": {
+      "type": "string"
+    },
+    "mechanism_status": {
+      "type": "string"
+    },
+    "prohibited_upgrades": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "revision_history": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "rights_boundary": {
+      "type": "string"
+    },
+    "source_language": {
+      "type": "string"
+    },
+    "source_provenance": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "translation_status": {
+      "type": "string"
+    },
+    "unknowns": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "source_provenance",
+    "claim_class"
+  ],
+  "schema": "r5a/translated-claim/v1",
+  "title": "TranslatedClaim",
+  "type": "object"
+}

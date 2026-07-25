@@ -1,0 +1,132 @@
+{
+  "fail_closed_rules": [
+    "target state must be in the eight-state closed set",
+    "UNMAPPED/SYMBOLIC_DESCRIPTION may not jump directly to PARTIALLY_SUPPORTED",
+    "transition must be in the allowed graph",
+    "every transition records evidence_class, reviewer_role, reversibility, contradiction_handling, reason and receipt",
+    "CONTRADICTED and UNKNOWN remain first-class outcomes"
+  ],
+  "forbidden_direct_jumps": [
+    "UNMAPPED->PARTIALLY_SUPPORTED",
+    "SYMBOLIC_DESCRIPTION->PARTIALLY_SUPPORTED"
+  ],
+  "meta": {
+    "activation_status": "CANDIDATE_ONLY",
+    "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
+    "domain_pack_federation_started": false,
+    "external_acceptance_claimed": false,
+    "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "frozen_head": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "generated_by": "tools/generate_life_integrity_r5a.py",
+    "human_intervention_enabled": false,
+    "medical_claims_authorized": false,
+    "modern_wuzhen_pack_started": false,
+    "schema_version": "r5a/v1",
+    "supreme_charter": "LifeCommunityValueCharter",
+    "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+  },
+  "properties": {
+    "concept_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "current_state": {
+      "enum": [
+        "UNMAPPED",
+        "SYMBOLIC_DESCRIPTION",
+        "PHENOMENOLOGICAL_CANDIDATE",
+        "PRACTICE_FUNCTION_CANDIDATE",
+        "MECHANISM_HYPOTHESIS",
+        "PARTIALLY_SUPPORTED",
+        "CONTRADICTED",
+        "UNKNOWN"
+      ]
+    },
+    "provenance": {
+      "type": "string"
+    },
+    "source_state": {
+      "enum": [
+        "UNMAPPED",
+        "SYMBOLIC_DESCRIPTION",
+        "PHENOMENOLOGICAL_CANDIDATE",
+        "PRACTICE_FUNCTION_CANDIDATE",
+        "MECHANISM_HYPOTHESIS",
+        "PARTIALLY_SUPPORTED",
+        "CONTRADICTED",
+        "UNKNOWN"
+      ]
+    },
+    "transitions": {
+      "items": {
+        "properties": {
+          "contradiction_handling": {
+            "type": "string"
+          },
+          "from": {
+            "enum": [
+              "UNMAPPED",
+              "SYMBOLIC_DESCRIPTION",
+              "PHENOMENOLOGICAL_CANDIDATE",
+              "PRACTICE_FUNCTION_CANDIDATE",
+              "MECHANISM_HYPOTHESIS",
+              "PARTIALLY_SUPPORTED",
+              "CONTRADICTED",
+              "UNKNOWN"
+            ]
+          },
+          "provided_evidence_class": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "receipt": {
+            "type": "string"
+          },
+          "required_evidence_class": {
+            "type": "string"
+          },
+          "reversibility": {
+            "type": "boolean"
+          },
+          "reviewer_role": {
+            "type": "string"
+          },
+          "to": {
+            "enum": [
+              "UNMAPPED",
+              "SYMBOLIC_DESCRIPTION",
+              "PHENOMENOLOGICAL_CANDIDATE",
+              "PRACTICE_FUNCTION_CANDIDATE",
+              "MECHANISM_HYPOTHESIS",
+              "PARTIALLY_SUPPORTED",
+              "CONTRADICTED",
+              "UNKNOWN"
+            ]
+          }
+        },
+        "required": [
+          "from",
+          "to",
+          "required_evidence_class",
+          "provided_evidence_class",
+          "reviewer_role",
+          "reversibility",
+          "contradiction_handling",
+          "reason",
+          "receipt"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "concept_id",
+    "source_state"
+  ],
+  "schema": "r5a/concept-mapping-transition/v1",
+  "title": "ConceptMapping",
+  "type": "object"
+}

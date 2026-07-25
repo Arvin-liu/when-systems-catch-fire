@@ -1,0 +1,184 @@
+{
+  "fail_closed_rules": [
+    "every required field must be present and not UNKNOWN/empty",
+    "informed_consent_required must be true for any intervention protocol",
+    "stop_conditions, rollback_exit_path and professional_referral_boundary must be declared",
+    "language recommending stopping prescribed treatment or substituting an unverified practice is rejected"
+  ],
+  "field_set": [
+    "educational_vs_individualized",
+    "intended_population",
+    "exclusion_criteria",
+    "contraindications",
+    "risk_severity",
+    "informed_consent_required",
+    "dependency_coercion_risk",
+    "stop_conditions",
+    "rollback_exit_path",
+    "professional_referral_boundary",
+    "emergency_boundary",
+    "interaction_with_existing_care",
+    "evidence_grade",
+    "unknowns",
+    "long_term_followup_plan"
+  ],
+  "field_set_complete": true,
+  "meta": {
+    "activation_status": "CANDIDATE_ONLY",
+    "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
+    "domain_pack_federation_started": false,
+    "external_acceptance_claimed": false,
+    "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "frozen_head": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "generated_by": "tools/generate_life_integrity_r5a.py",
+    "human_intervention_enabled": false,
+    "medical_claims_authorized": false,
+    "modern_wuzhen_pack_started": false,
+    "schema_version": "r5a/v1",
+    "supreme_charter": "LifeCommunityValueCharter",
+    "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+  },
+  "properties": {
+    "contraindications": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "dependency_coercion_risk": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "educational_vs_individualized": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "emergency_boundary": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "evidence_grade": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "exclusion_criteria": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "informed_consent_required": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "intended_population": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "interaction_with_existing_care": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "long_term_followup_plan": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "professional_referral_boundary": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "risk_severity": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "rollback_exit_path": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "stop_conditions": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    },
+    "unknowns": {
+      "not_unknowns": [
+        "UNKNOWN",
+        ""
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "educational_vs_individualized",
+    "intended_population",
+    "exclusion_criteria",
+    "contraindications",
+    "risk_severity",
+    "informed_consent_required",
+    "dependency_coercion_risk",
+    "stop_conditions",
+    "rollback_exit_path",
+    "professional_referral_boundary",
+    "emergency_boundary",
+    "interaction_with_existing_care",
+    "evidence_grade",
+    "unknowns",
+    "long_term_followup_plan"
+  ],
+  "schema": "r5a/practice-safety-envelope/v1",
+  "stop_treatment_language": {
+    "detector_phrases": [
+      "stop taking",
+      "stop your",
+      "discontinue",
+      "replace your",
+      "substitute for",
+      "instead of your prescribed",
+      "stop prescribed",
+      "quit your medication",
+      "replace prescribed",
+      "stop the medication",
+      "come off your"
+    ],
+    "forbidden": true
+  },
+  "title": "PracticeSafetyEnvelope",
+  "type": "object"
+}

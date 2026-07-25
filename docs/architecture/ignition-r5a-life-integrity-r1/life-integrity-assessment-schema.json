@@ -1,0 +1,154 @@
+{
+  "fail_closed_rules": [
+    "affected_views must be non-empty and drawn from the seven embodied views",
+    "every required disclosure must be present and not UNKNOWN/empty",
+    "the gate only validates the contract; it never executes the proposal"
+  ],
+  "field_set": [
+    "intended_benefit",
+    "affected_views",
+    "short_term_effects",
+    "long_term_effects",
+    "externalities_tradeoffs",
+    "uncertainty",
+    "consent_autonomy_status",
+    "reversibility",
+    "stop_conditions",
+    "referral_boundary",
+    "residual_harm_after_rollback"
+  ],
+  "field_set_complete": true,
+  "meta": {
+    "activation_status": "CANDIDATE_ONLY",
+    "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
+    "domain_pack_federation_started": false,
+    "external_acceptance_claimed": false,
+    "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "frozen_head": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "generated_by": "tools/generate_life_integrity_r5a.py",
+    "human_intervention_enabled": false,
+    "medical_claims_authorized": false,
+    "modern_wuzhen_pack_started": false,
+    "schema_version": "r5a/v1",
+    "supreme_charter": "LifeCommunityValueCharter",
+    "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+  },
+  "properties": {
+    "notes": {
+      "type": "string"
+    },
+    "proposal": {
+      "properties": {
+        "affected_views": {
+          "items": {
+            "enum": [
+              "PhysiologicalView",
+              "PhenomenologicalView",
+              "CognitiveAffectiveView",
+              "BehavioralView",
+              "RelationalView",
+              "EnvironmentalView",
+              "MeaningView"
+            ]
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "consent_autonomy_status": {
+          "not_unknowns": [
+            "UNKNOWN",
+            ""
+          ],
+          "type": "string"
+        },
+        "externalities_tradeoffs": {
+          "not_unknowns": [
+            "UNKNOWN",
+            ""
+          ],
+          "type": "string"
+        },
+        "intended_benefit": {
+          "not_unknowns": [
+            "UNKNOWN",
+            ""
+          ],
+          "type": "string"
+        },
+        "long_term_effects": {
+          "not_unknowns": [
+            "UNKNOWN",
+            ""
+          ],
+          "type": "string"
+        },
+        "referral_boundary": {
+          "not_unknowns": [
+            "UNKNOWN",
+            ""
+          ],
+          "type": "string"
+        },
+        "residual_harm_after_rollback": {
+          "not_unknowns": [
+            "UNKNOWN",
+            ""
+          ],
+          "type": "string"
+        },
+        "reversibility": {
+          "not_unknowns": [
+            "UNKNOWN",
+            ""
+          ],
+          "type": "string"
+        },
+        "short_term_effects": {
+          "not_unknowns": [
+            "UNKNOWN",
+            ""
+          ],
+          "type": "string"
+        },
+        "stop_conditions": {
+          "not_unknowns": [
+            "UNKNOWN",
+            ""
+          ],
+          "type": "string"
+        },
+        "uncertainty": {
+          "not_unknowns": [
+            "UNKNOWN",
+            ""
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "intended_benefit",
+        "affected_views",
+        "short_term_effects",
+        "long_term_effects",
+        "externalities_tradeoffs",
+        "uncertainty",
+        "consent_autonomy_status",
+        "reversibility",
+        "stop_conditions",
+        "referral_boundary",
+        "residual_harm_after_rollback"
+      ],
+      "title": "LocalOptimizationProposal",
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "proposal"
+  ],
+  "schema": "r5a/life-integrity-assessment/v1",
+  "title": "LifeIntegrityAssessment",
+  "type": "object"
+}
