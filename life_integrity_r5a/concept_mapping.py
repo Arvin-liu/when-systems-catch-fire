@@ -86,5 +86,47 @@ def apply_transition(
     reviewer_role: str,
     reason: str,
     reversibility: bool = True,
-) -> None:  # pragma: no cover
-    raise NotImplementedError("concept_mapping.apply_transition implemented in Commit 3")
+) -> None:
+    """Apply a concept-mapping transition, fail-closed.
+
+    Enforces the closed lifecycle: target must be valid; UNMAPPED /
+    SYMBOLIC_DESCRIPTION may NOT jump directly to PARTIALLY_SUPPORTED; the
+    transition must be in the allowed graph; every transition records the
+    required evidence class, reviewer role, reversibility, contradiction
+    handling, reason and receipt. CONTRADICTED and UNKNOWN remain first-class
+    reachable outcomes.
+    """
+    if not is_valid_concept_state(target_state):
+        raise UnknownConceptStateError(f"unknown target state: {target_state!r}")
+    src = mapping.current_state
+    if src == target_state:
+        return  # idempotent, always allowed
+
+    # Forbidden direct jump from an un-evidenced starting state to a supported
+    # state without the intermediate evidence chain.
+    if direct_jump_forbidden(src) and target_state == "PARTIALLY_SUPPORTED":
+        raise ForbiddenDirectJumpError(
+            f"direct jump {src} -> PARTIALLY_SUPPORTED forbidden without "
+            f"intermediate evidence and review"
+        )
+
+    if not allowed_concept_transition(src, target_state):
+        raise InvalidConceptTransitionError(
+            f"transition not in allowed graph: {src} -> {target_state}"
+        )
+
+    meta = CONCEPT_MAPPING_TRANSITIONS[src][target_state]
+    mapping.transitions.append(
+        {
+            "from": src,
+            "to": target_state,
+            "required_evidence_class": meta["required_evidence_class"],
+            "provided_evidence_class": evidence_class,
+            "reviewer_role": reviewer_role,
+            "reversibility": reversibility,
+            "contradiction_handling": meta["contradiction_handling"],
+            "reason": reason,
+            "receipt": f"{mapping.concept_id}:{src}->{target_state}",
+        }
+    )
+    mapping.current_state = target_state

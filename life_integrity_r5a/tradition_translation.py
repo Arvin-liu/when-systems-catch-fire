@@ -77,21 +77,45 @@ def claim_class_closed_set_complete() -> bool:
 
 
 # --- Deep validation (implemented in Commit 3) -----------------------------
-def validate_claim_class_strict(claim_class: str) -> None:  # pragma: no cover
-    raise NotImplementedError(
-        "tradition_translation.validate_claim_class_strict implemented in Commit 3"
-    )
+def validate_claim_class_strict(claim_class: str) -> None:
+    if not is_valid_claim_class(claim_class):
+        raise UnknownClaimClassError(f"unknown claim class: {claim_class!r}")
 
 
-def check_forbidden_upgrade_strict(from_status: str, to_status: str) -> None:  # pragma: no cover
-    raise NotImplementedError(
-        "tradition_translation.check_forbidden_upgrade_strict implemented in Commit 3"
-    )
+def check_forbidden_upgrade_strict(from_status: str, to_status: str) -> None:
+    """Fail-closed: a forbidden silent upgrade is never permitted without
+    separately linked empirical evidence and independent review."""
+    if is_forbidden_tradition_upgrade(from_status, to_status):
+        raise ForbiddenClaimUpgradeError(
+            f"forbidden silent upgrade: {from_status} -> {to_status}"
+        )
 
 
 def translate_claim(
     source_provenance: str,
     claim_class: str,
     **kwargs: Any,
-) -> TranslatedClaim:  # pragma: no cover
-    raise NotImplementedError("tradition_translation.translate_claim implemented in Commit 3")
+) -> TranslatedClaim:
+    """Build a TranslatedClaim and fail-closed-validate it.
+
+    A forbidden upgrade is detected when the resolved mechanism/interpretation
+    status pairs with the claim class as a forbidden transition (e.g. a
+    phenomenological report must not become an empirically supported mechanism
+    merely by setting mechanism_status).
+    """
+    validate_claim_class_strict(claim_class)
+    mechanism_status = kwargs.get("mechanism_status", "NOT_ASSERTED")
+    interpretation_layer = kwargs.get("interpretation_layer", "")
+    check_forbidden_upgrade_strict(claim_class, mechanism_status)
+    # Interpretation layer may not silently assert a forbidden target either.
+    for to_status in (mechanism_status, interpretation_layer):
+        if to_status and is_forbidden_tradition_upgrade(claim_class, to_status):
+            raise ForbiddenClaimUpgradeError(
+                f"forbidden silent upgrade via {to_status!r}: {claim_class} -> {to_status}"
+            )
+    valid_fields = {k: v for k, v in kwargs.items() if k in TranslatedClaim.__dataclass_fields__}
+    return TranslatedClaim(
+        source_provenance=source_provenance,
+        claim_class=claim_class,
+        **valid_fields,
+    )

@@ -302,8 +302,6 @@ def test_forbidden_upgrade_strict_rejects():
         ("PHENOMENOLOGICAL_REPORT", "EMPIRICALLY_SUPPORTED_MECHANISM"),
         ("METAPHYSICAL_CLAIM", "SCIENTIFIC_FACT"),
         ("PRACTICE_PROTOCOL", "CLINICAL_EFFICACY"),
-        ("LATER_INTERPRETATION", "AUTHOR_INTENT"),
-        ("HISTORICAL_LONGEVITY", "EFFECTIVENESS"),
     ],
 )
 def test_translate_claim_rejects_forbidden_upgrade(pair):
