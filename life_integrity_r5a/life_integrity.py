@@ -70,11 +70,26 @@ class LifeIntegrityGate:
     def __init__(self) -> None:
         self.activated = False  # R5-A never sets this True
 
-    def validate_proposal(self, proposal: LocalOptimizationProposal) -> None:  # pragma: no cover
-        raise NotImplementedError("LifeIntegrityGate.validate_proposal implemented in Commit 4")
+    def validate_proposal(self, proposal: LocalOptimizationProposal) -> None:
+        """Fail-closed: a local-optimization proposal must disclose every required
+        field. A proposal without these fields fails closed; the gate only
+        validates the contract and must not execute the proposal."""
+        if proposal.affected_views is None or len(proposal.affected_views) == 0:
+            raise LocalOptimizationIncompleteError(
+                "local-optimization proposal must declare affected_views"
+            )
+        for field_name in LOCAL_OPTIMIZATION_FIELDS:
+            if field_name == "affected_views":
+                continue
+            value = getattr(proposal, field_name)
+            if value is None or value == "UNKNOWN" or value == "":
+                raise LocalOptimizationIncompleteError(
+                    f"local-optimization proposal omits required disclosure: {field_name}"
+                )
 
-    def validate_assessment(self, assessment: LifeIntegrityAssessment) -> None:  # pragma: no cover
-        raise NotImplementedError("LifeIntegrityGate.validate_assessment implemented in Commit 4")
+    def validate_assessment(self, assessment: LifeIntegrityAssessment) -> None:
+        if assessment.proposal is not None:
+            self.validate_proposal(assessment.proposal)
 
 
 def local_optimization_field_set_complete() -> bool:

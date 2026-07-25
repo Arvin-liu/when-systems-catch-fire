@@ -20,6 +20,7 @@ import pytest
 import life_integrity_r5a as pkg
 from life_integrity_r5a import concept_mapping as CM
 from life_integrity_r5a import embodied_view as EV
+from life_integrity_r5a import annex as AX
 from life_integrity_r5a import life_integrity as LI
 from life_integrity_r5a import manifest
 from life_integrity_r5a import non_impact as NI
@@ -52,6 +53,13 @@ def test_no_competing_supreme_node_inserted():
     # R5-A must never place a node above the Life Community Value Charter.
     assert R.CHARTER_HIERARCHY.count(R.SUPREME_CHARTER) == 1
     assert all(n != "L7" for n in R.CHARTER_HIERARCHY)
+
+
+def test_annex_sits_beneath_supreme_charter():
+    assert AX.annex_beneath_supreme_charter()
+    annex = AX.LifeIntegrityAnnexCandidate()
+    assert annex.activation_status == "CANDIDATE_ONLY"
+    assert "proof of a metaphysical mind-body theory" in annex.not_authorized_as
 
 
 def test_package_source_has_no_promote_evolve_tokens():

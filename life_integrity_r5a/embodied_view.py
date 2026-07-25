@@ -1,8 +1,5 @@
 # SPDX-License-Identifier: LicenseRef-BUSL-1.1-PointFire
-"""Embodied-agent multi-view projection contract (R5-A, Commit 1 skeleton).
-
-Commit 1 provides the full API surface and closed-set guarantees only. The
-validation logic raises NotImplementedError and is implemented in Commit 2.
+"""Embodied-agent multi-view projection contract (R5-A, implemented Commit 2).
 
 Design contract (task §6, §5.1):
   * all seven views carry the same subject identity and provenance boundary;
@@ -10,7 +7,9 @@ Design contract (task §6, §5.1):
   * cross-view relations are typed and do NOT imply causality;
   * contradictory views may coexist and must be surfaced;
   * the subject has autonomy/consent fields not reducible to a view score;
-  * representation never claims to exhaust the person.
+  * representation never claims to exhaust the person;
+  * a single view, score, diagnosis, behavior or self-report may NEVER assert
+    WHOLE_PERSON_COMPLETE.
 """
 
 from __future__ import annotations
@@ -83,19 +82,33 @@ class EmbodiedAgent:
         self._contradictions: list[Contradiction] = []
         self.autonomy_consent = "UNKNOWN"
 
-    # --- API surface (implemented in Commit 2) -----------------------------
-    def add_view(self, projection: EmbodiedViewProjection) -> None:  # pragma: no cover
-        raise NotImplementedError("EmbodiedAgent.add_view implemented in Commit 2")
+    # --- Implemented in Commit 2 -------------------------------------------
+    def add_view(self, projection: EmbodiedViewProjection) -> None:
+        if projection.subject_identity != self.subject_identity:
+            raise EmbodiedViewError(
+                "view subject_identity must match the agent subject_identity"
+            )
+        if not is_valid_embodied_view(projection.view_id):
+            raise EmbodiedViewError(f"unknown embodied view id: {projection.view_id!r}")
+        self._views[projection.view_id] = projection
 
-    def get_view(self, view_id: str) -> EmbodiedViewProjection:  # pragma: no cover
-        raise NotImplementedError("EmbodiedAgent.get_view implemented in Commit 2")
+    def get_view(self, view_id: str) -> EmbodiedViewProjection:
+        if view_id not in self._views:
+            raise MissingViewError(f"view not present: {view_id!r}")
+        return self._views[view_id]
 
-    def missing_views(self) -> list[str]:  # pragma: no cover
-        raise NotImplementedError("EmbodiedAgent.missing_views implemented in Commit 2")
+    def missing_views(self) -> list[str]:
+        """Views not yet provided are treated as UNKNOWN / NOT_OBSERVED and must
+        not be inferred from any other view."""
+        return [v for v in EMBODIED_VIEW_IDS if v not in self._views]
 
-    def assert_single_view_not_whole_person(self, view_id: str) -> None:  # pragma: no cover
-        raise NotImplementedError(
-            "EmbodiedAgent.assert_single_view_not_whole_person implemented in Commit 2"
+    def assert_single_view_not_whole_person(self, view_id: str) -> None:
+        """A single view can NEVER claim the whole person. This always refuses:
+        a projection is a partial view of one subject, not a complete subject."""
+        if view_id not in self._views and view_id not in EMBODIED_VIEW_IDS:
+            raise EmbodiedViewError(f"unknown embodied view id: {view_id!r}")
+        raise WholePersonClaimError(
+            f"single view {view_id!r} may not assert WHOLE_PERSON_COMPLETE"
         )
 
     def require_whole_person_disclosure(
@@ -103,25 +116,40 @@ class EmbodiedAgent:
         claimed_views: list[str],
         missing_disclosed: bool,
         contradictions_surfaced: bool,
-    ) -> None:  # pragma: no cover
-        raise NotImplementedError(
-            "EmbodiedAgent.require_whole_person_disclosure implemented in Commit 2"
-        )
+    ) -> None:
+        """A whole-person conclusion requires explicit view coverage, missing-view
+        disclosure as UNKNOWN, and contradiction/UNKNOWN handling. Anything less
+        fails closed."""
+        for v in claimed_views:
+            if v not in self._views:
+                raise MissingViewError(f"claimed view not present: {v!r}")
+        if not (missing_disclosed and contradictions_surfaced):
+            raise WholePersonClaimError(
+                "whole-person conclusion requires missing-view disclosure and "
+                "contradiction/UNKNOWN handling"
+            )
 
-    def add_cross_view_relation(self, relation: CrossViewRelation) -> None:  # pragma: no cover
-        raise NotImplementedError(
-            "EmbodiedAgent.add_cross_view_relation implemented in Commit 2"
-        )
+    def add_cross_view_relation(self, relation: CrossViewRelation) -> None:
+        if relation.asserts_causality:
+            raise CrossViewCausalityError(
+                "cross-view relations are typed and must not imply causality"
+            )
+        if not is_valid_embodied_view(relation.source_view):
+            raise EmbodiedViewError(f"unknown source view: {relation.source_view!r}")
+        if not is_valid_embodied_view(relation.target_view):
+            raise EmbodiedViewError(f"unknown target view: {relation.target_view!r}")
+        self._relations.append(relation)
 
-    def record_contradiction(self, contradiction: Contradiction) -> None:  # pragma: no cover
-        raise NotImplementedError(
-            "EmbodiedAgent.record_contradiction implemented in Commit 2"
-        )
+    def record_contradiction(self, contradiction: Contradiction) -> None:
+        if not is_valid_embodied_view(contradiction.view_a):
+            raise EmbodiedViewError(f"unknown view: {contradiction.view_a!r}")
+        if not is_valid_embodied_view(contradiction.view_b):
+            raise EmbodiedViewError(f"unknown view: {contradiction.view_b!r}")
+        self._contradictions.append(contradiction)
 
-    def surface_contradictions(self) -> list[Contradiction]:  # pragma: no cover
-        raise NotImplementedError(
-            "EmbodiedAgent.surface_contradictions implemented in Commit 2"
-        )
+    def surface_contradictions(self) -> list[Contradiction]:
+        """Contradictory views are preserved and surfaced, never silently merged."""
+        return list(self._contradictions)
 
 
 def embodied_view_closed_set_complete() -> bool:
