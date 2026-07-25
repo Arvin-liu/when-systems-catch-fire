@@ -26,7 +26,7 @@ def build_shard_plan(
     """
     if shard_count < 1:
         raise ValueError("shard_count must be >= 1")
-    keys = sorted(r.path_digest for r in identities)
+    keys = sorted(r.object_key for r in identities)
     shards: list[list[str]] = [[] for _ in range(shard_count)]
     for i, key in enumerate(keys):
         shards[i % shard_count].append(key)

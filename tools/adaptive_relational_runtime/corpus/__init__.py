@@ -30,6 +30,8 @@ from .inventory import (
     build_encoding_parse_errors,
 )
 from .shard import build_shard_plan, shard_plan_digest, is_key_in_namespace
+from .checkpoint import Checkpoint, atomic_write, crash_safe_step
+from .runner import CorpusRunConfig, RunResult, run_corpus, CrashInjection
 
 __all__ = [
     "schemas",
@@ -46,4 +48,11 @@ __all__ = [
     "build_shard_plan",
     "shard_plan_digest",
     "is_key_in_namespace",
+    "Checkpoint",
+    "atomic_write",
+    "crash_safe_step",
+    "CorpusRunConfig",
+    "RunResult",
+    "run_corpus",
+    "CrashInjection",
 ]
