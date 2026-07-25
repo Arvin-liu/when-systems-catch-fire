@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import copy
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -553,6 +554,43 @@ def _git(*args):
     return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
 
 
+def _resolve_repair_branch(env=None):
+    """Resolve the current branch in a CI-portable way.
+
+    GitHub Actions checks out a PR head as a detached HEAD, so
+    `git rev-parse --abbrev-ref HEAD` returns the literal 'HEAD' there. Resolve
+    the branch from the CI-provided ref env vars first, then fall back to git:
+
+      1. GITHUB_HEAD_REF - head branch of a pull_request event.
+      2. GITHUB_REF_NAME - short branch name for push / other events (only when
+                           it is a real branch, not a refs/pull/... or /merge ref).
+      3. GITHUB_REF      - used only when it is refs/heads/<branch>.
+      4. git rev-parse --symbolic-full-name HEAD - refs/heads/<branch> on a
+                           checked-out branch, 'HEAD' when detached.
+
+    `env` lets tests inject a simulated CI environment without mutating the
+    process environment.
+    """
+    env = env if env is not None else os.environ
+    head_ref = env.get("GITHUB_HEAD_REF")
+    if head_ref:
+        return head_ref
+    ref_name = env.get("GITHUB_REF_NAME")
+    if ref_name and not ref_name.startswith("refs/pull/") and not ref_name.endswith("/merge"):
+        return ref_name
+    ref = env.get("GITHUB_REF")
+    if ref and ref.startswith("refs/heads/"):
+        return ref[len("refs/heads/"):]
+    res = subprocess.run(
+        ["git", "rev-parse", "--symbolic-full-name", "HEAD"],
+        cwd=ROOT, capture_output=True, text=True,
+    )
+    out = (res.stdout or "").strip()
+    if out and out != "HEAD":
+        return out[len("refs/heads/"):] if out.startswith("refs/heads/") else out
+    return None
+
+
 def test_frozen_head_is_ancestor_of_repair_head():
     """The repair branch is built on the exact frozen R2 head (offline invariant)."""
     res = _git("merge-base", "--is-ancestor", FROZEN_HEAD, "HEAD")
@@ -560,8 +598,62 @@ def test_frozen_head_is_ancestor_of_repair_head():
 
 
 def test_current_branch_is_repair_branch():
-    res = _git("rev-parse", "--abbrev-ref", "HEAD")
-    assert res.stdout.strip() == REPAIR_BRANCH
+    """The repair suite must run on a positive-routing repair branch (not main,
+    not a feature branch, not a PR merge ref). Resolution is CI-portable: under a
+    detached HEAD (GitHub Actions) the branch is taken from the CI ref env vars.
+    """
+    branch = _resolve_repair_branch()
+    assert branch is not None, "could not resolve a repair branch (detached HEAD with no CI ref)"
+    assert branch.startswith("repair/adaptive-relational-runtime-r2-positive-routing"), \
+        f"expected a positive-routing repair branch, got {branch!r}"
+
+
+def test_ci_detached_head_branch_resolution_is_portable():
+    """Regression gate for the ARR R2 CI repair (run 30142387907 / job 89638042800).
+
+    Root cause: GitHub Actions checks out a detached HEAD, so
+    `git rev-parse --abbrev-ref HEAD` returns 'HEAD' and the original
+    `test_current_branch_is_repair_branch` assertion failed in CI. The fix routes
+    branch resolution through `_resolve_repair_branch()`, which consults the CI
+    ref env vars before falling back to git.
+
+    On the pre-fix commit (child of 1908878…) `_resolve_repair_branch` and the
+    `os` import do not exist, so this test is RED (NameError). After commit 2
+    lands both, it resolves correctly under every CI context and is GREEN.
+    """
+    # 1) pull_request event: GITHUB_HEAD_REF is the PR head branch.
+    env_pr = dict(os.environ)
+    env_pr.pop("GITHUB_REF_NAME", None)
+    env_pr.pop("GITHUB_REF", None)
+    env_pr["GITHUB_HEAD_REF"] = REPAIR_BRANCH
+    resolved = _resolve_repair_branch(env=env_pr)
+    assert resolved == REPAIR_BRANCH, f"GITHUB_HEAD_REF path failed: {resolved!r}"
+
+    # 2) push event: GITHUB_REF_NAME is a real branch.
+    env_push = dict(os.environ)
+    env_push.pop("GITHUB_HEAD_REF", None)
+    env_push.pop("GITHUB_REF", None)
+    env_push["GITHUB_REF_NAME"] = "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1"
+    resolved = _resolve_repair_branch(env=env_push)
+    assert resolved == "repair/adaptive-relational-runtime-r2-positive-routing-ci-r1", \
+        f"GITHUB_REF_NAME path failed: {resolved!r}"
+
+    # 3) local / non-CI: falls back to git (only meaningful when a real branch
+    #    is checked out; under a detached HEAD this path is not applicable).
+    env_local = dict(os.environ)
+    env_local.pop("GITHUB_HEAD_REF", None)
+    env_local.pop("GITHUB_REF_NAME", None)
+    env_local.pop("GITHUB_REF", None)
+    probe = subprocess.run(
+        ["git", "rev-parse", "--symbolic-full-name", "HEAD"],
+        cwd=ROOT, capture_output=True, text=True,
+    )
+    if (probe.stdout or "").strip() == "HEAD":
+        pytest.skip("detached HEAD: local git fallback path not applicable here")
+    resolved = _resolve_repair_branch(env=env_local)
+    assert resolved is not None and resolved.startswith(
+        "repair/adaptive-relational-runtime-r2-positive-routing"
+    ), f"local git fallback failed: {resolved!r}"
 
 
 def test_exact_48_object_manifest_digest_retained():

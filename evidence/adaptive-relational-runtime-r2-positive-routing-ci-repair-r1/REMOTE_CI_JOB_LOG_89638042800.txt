@@ -1,0 +1,805 @@
+﻿2026-07-25T03:30:58.9358124Z Current runner version: '2.336.0'
+2026-07-25T03:30:58.9381587Z ##[group]Runner Image Provisioner
+2026-07-25T03:30:58.9382434Z Hosted Compute Agent
+2026-07-25T03:30:58.9383013Z Version: 20260707.563
+2026-07-25T03:30:58.9383604Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+2026-07-25T03:30:58.9384271Z Build Date: 2026-07-07T19:33:50Z
+2026-07-25T03:30:58.9384987Z Worker ID: {600f561c-196b-4ed7-86dc-3f132377b3b2}
+2026-07-25T03:30:58.9385668Z Azure Region: centralus
+2026-07-25T03:30:58.9386188Z ##[endgroup]
+2026-07-25T03:30:58.9387754Z ##[group]Operating System
+2026-07-25T03:30:58.9388349Z Ubuntu
+2026-07-25T03:30:58.9388854Z 24.04.4
+2026-07-25T03:30:58.9389368Z LTS
+2026-07-25T03:30:58.9389841Z ##[endgroup]
+2026-07-25T03:30:58.9390358Z ##[group]Runner Image
+2026-07-25T03:30:58.9390906Z Image: ubuntu-24.04
+2026-07-25T03:30:58.9391414Z Version: 20260720.247.2
+2026-07-25T03:30:58.9392611Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+2026-07-25T03:30:58.9394183Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+2026-07-25T03:30:58.9395046Z ##[endgroup]
+2026-07-25T03:30:58.9396254Z ##[group]GITHUB_TOKEN Permissions
+2026-07-25T03:30:58.9398706Z Contents: read
+2026-07-25T03:30:58.9399250Z Metadata: read
+2026-07-25T03:30:58.9399811Z ##[endgroup]
+2026-07-25T03:30:58.9401674Z Secret source: Actions
+2026-07-25T03:30:58.9402912Z Prepare workflow directory
+2026-07-25T03:30:58.9700876Z Prepare all required actions
+2026-07-25T03:30:58.9742584Z Getting action download info
+2026-07-25T03:30:59.2183354Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-07-25T03:30:59.6906072Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-07-25T03:30:59.8744430Z Download action repository 'leanprover/lean-action@v1' (SHA:38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9)
+2026-07-25T03:31:00.1326535Z Getting action download info
+2026-07-25T03:31:00.2156457Z Download action repository 'actions/cache@v5' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-07-25T03:31:00.6217829Z Complete job name: validate
+2026-07-25T03:31:00.7179235Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-25T03:31:00.7188752Z ##[group]Run actions/checkout@v4
+2026-07-25T03:31:00.7189599Z with:
+2026-07-25T03:31:00.7190115Z   fetch-depth: 0
+2026-07-25T03:31:00.7190757Z   repository: Arvin-liu/when-systems-catch-fire
+2026-07-25T03:31:00.7198378Z   token: ***
+2026-07-25T03:31:00.7199349Z   ssh-strict: true
+2026-07-25T03:31:00.7199936Z   ssh-user: git
+2026-07-25T03:31:00.7200541Z   persist-credentials: true
+2026-07-25T03:31:00.7201204Z   clean: true
+2026-07-25T03:31:00.7201813Z   sparse-checkout-cone-mode: true
+2026-07-25T03:31:00.7202590Z   fetch-tags: false
+2026-07-25T03:31:00.7203169Z   show-progress: true
+2026-07-25T03:31:00.7203756Z   lfs: false
+2026-07-25T03:31:00.7204421Z   submodules: false
+2026-07-25T03:31:00.7205023Z   set-safe-directory: true
+2026-07-25T03:31:00.7205761Z   allow-unsafe-pr-checkout: false
+2026-07-25T03:31:00.7206789Z ##[endgroup]
+2026-07-25T03:31:00.8164207Z Syncing repository: Arvin-liu/when-systems-catch-fire
+2026-07-25T03:31:00.8166544Z ##[group]Getting Git version info
+2026-07-25T03:31:00.8168156Z Working directory is '/home/runner/work/when-systems-catch-fire/when-systems-catch-fire'
+2026-07-25T03:31:00.8170027Z [command]/usr/bin/git version
+2026-07-25T03:31:00.8190702Z git version 2.54.0
+2026-07-25T03:31:00.8239398Z ##[endgroup]
+2026-07-25T03:31:00.8254611Z Temporarily overriding HOME='/home/runner/work/_temp/65f747fd-d3d4-4f36-ac97-7288bb3b9991' before making global git config changes
+2026-07-25T03:31:00.8259999Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-25T03:31:00.8265124Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/when-systems-catch-fire/when-systems-catch-fire
+2026-07-25T03:31:00.8287424Z Deleting the contents of '/home/runner/work/when-systems-catch-fire/when-systems-catch-fire'
+2026-07-25T03:31:00.8291713Z ##[group]Initializing the repository
+2026-07-25T03:31:00.8294338Z [command]/usr/bin/git init /home/runner/work/when-systems-catch-fire/when-systems-catch-fire
+2026-07-25T03:31:00.8378775Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-07-25T03:31:00.8381852Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-07-25T03:31:00.8384235Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-07-25T03:31:00.8387259Z hint: call:
+2026-07-25T03:31:00.8388488Z hint:
+2026-07-25T03:31:00.8389812Z hint: 	git config --global init.defaultBranch <name>
+2026-07-25T03:31:00.8391821Z hint:
+2026-07-25T03:31:00.8393417Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-07-25T03:31:00.8395866Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-07-25T03:31:00.8397931Z hint:
+2026-07-25T03:31:00.8398970Z hint: 	git branch -m <name>
+2026-07-25T03:31:00.8400148Z hint:
+2026-07-25T03:31:00.8401745Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-07-25T03:31:00.8405082Z Initialized empty Git repository in /home/runner/work/when-systems-catch-fire/when-systems-catch-fire/.git/
+2026-07-25T03:31:00.8410501Z [command]/usr/bin/git remote add origin https://github.com/Arvin-liu/when-systems-catch-fire
+2026-07-25T03:31:00.8414976Z ##[endgroup]
+2026-07-25T03:31:00.8416710Z ##[group]Disabling automatic garbage collection
+2026-07-25T03:31:00.8418636Z [command]/usr/bin/git config --local gc.auto 0
+2026-07-25T03:31:00.8441588Z ##[endgroup]
+2026-07-25T03:31:00.8442935Z ##[group]Setting up auth
+2026-07-25T03:31:00.8448871Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-25T03:31:00.8487452Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-25T03:31:00.9033786Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-25T03:31:00.9063123Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-25T03:31:00.9236839Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-25T03:31:00.9267778Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-25T03:31:00.9442010Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-07-25T03:31:00.9470004Z ##[endgroup]
+2026-07-25T03:31:00.9471201Z ##[group]Fetching the repository
+2026-07-25T03:31:00.9481857Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +32db55e436066bed849347d8eda299623d86a060:refs/remotes/pull/122/merge
+2026-07-25T03:31:03.3402947Z From https://github.com/Arvin-liu/when-systems-catch-fire
+2026-07-25T03:31:03.3405635Z  * [new branch]        agent/121q30-homepage-zhiyuan-showcase   -> origin/agent/121q30-homepage-zhiyuan-showcase
+2026-07-25T03:31:03.3407737Z  * [new branch]        agent/121q31-interactive-system-map      -> origin/agent/121q31-interactive-system-map
+2026-07-25T03:31:03.3409346Z  * [new branch]        agent/121q32-typed-change-propagation    -> origin/agent/121q32-typed-change-propagation
+2026-07-25T03:31:03.3410819Z  * [new branch]        agent/121q32i-incremental-execution      -> origin/agent/121q32i-incremental-execution
+2026-07-25T03:31:03.3412735Z  * [new branch]        agent/121q33-global-copyright-risk-and-rights-governance -> origin/agent/121q33-global-copyright-risk-and-rights-governance
+2026-07-25T03:31:03.3414410Z  * [new branch]        agent/121q33-lifecycle-closeout          -> origin/agent/121q33-lifecycle-closeout
+2026-07-25T03:31:03.3416067Z  * [new branch]        agent/121q34-i1-discovery-commitment-boundary -> origin/agent/121q34-i1-discovery-commitment-boundary
+2026-07-25T03:31:03.3417925Z  * [new branch]        agent/121q35-i1-responsibility-authority-action-trace -> origin/agent/121q35-i1-responsibility-authority-action-trace
+2026-07-25T03:31:03.3419754Z  * [new branch]        agent/121q36-int-i1-intervention-failure-dynamics -> origin/agent/121q36-int-i1-intervention-failure-dynamics
+2026-07-25T03:31:03.3421585Z  * [new branch]        agent/121q36-obs-i1-observation-prediction-calibration -> origin/agent/121q36-obs-i1-observation-prediction-calibration
+2026-07-25T03:31:03.3423386Z  * [new branch]        agent/121q37-i1-analogy-audit-transportability -> origin/agent/121q37-i1-analogy-audit-transportability
+2026-07-25T03:31:03.3425343Z  * [new branch]        agent/121q38-i1-case-counterexample-boundary-evidence -> origin/agent/121q38-i1-case-counterexample-boundary-evidence
+2026-07-25T03:31:03.3427054Z  * [new branch]        agent/121q39-i1-failure-memory-repair-propagation -> origin/agent/121q39-i1-failure-memory-repair-propagation
+2026-07-25T03:31:03.3429181Z  * [new branch]        agent/adaptive-relational-runtime-r1-scaffold-20260724 -> origin/agent/adaptive-relational-runtime-r1-scaffold-20260724
+2026-07-25T03:31:03.3430578Z  * [new branch]        agent/d2-i1-multi-history-world-projection -> origin/agent/d2-i1-multi-history-world-projection
+2026-07-25T03:31:03.3432332Z  * [new branch]        agent/decision-integrity-i1-principle-lock-process-outcome-governance -> origin/agent/decision-integrity-i1-principle-lock-process-outcome-governance
+2026-07-25T03:31:03.3433968Z  * [new branch]        agent/f15-d1-i1-latent-system-identifiability -> origin/agent/f15-d1-i1-latent-system-identifiability
+2026-07-25T03:31:03.3435648Z  * [new branch]        agent/q41-i1-world-feedback-anomaly-governance -> origin/agent/q41-i1-world-feedback-anomaly-governance
+2026-07-25T03:31:03.3437026Z  * [new branch]        agent/q42-i1-counterfactual-unrealized-path-ledger -> origin/agent/q42-i1-counterfactual-unrealized-path-ledger
+2026-07-25T03:31:03.3440167Z  * [new branch]        agent/q43-i1-graded-intervention-professional-escalation -> origin/agent/q43-i1-graded-intervention-professional-escalation
+2026-07-25T03:31:03.3441834Z  * [new branch]        agent/q44-i1-coaching-commitment-subcapability -> origin/agent/q44-i1-coaching-commitment-subcapability
+2026-07-25T03:31:03.3443353Z  * [new branch]        agent/scientific-context-protocol-i1-open-research-context -> origin/agent/scientific-context-protocol-i1-open-research-context
+2026-07-25T03:31:03.3445120Z  * [new branch]        agent/scientific-metacognition-i1-epistemic-state-control-plane -> origin/agent/scientific-metacognition-i1-epistemic-state-control-plane
+2026-07-25T03:31:03.3446930Z  * [new branch]        agent/symbolic-sphere-i1-symbol-power-perspective-governance -> origin/agent/symbolic-sphere-i1-symbol-power-perspective-governance
+2026-07-25T03:31:03.3448762Z  * [new branch]        architecture/121q12-effectual-mechanism-dual-loop-20260715 -> origin/architecture/121q12-effectual-mechanism-dual-loop-20260715
+2026-07-25T03:31:03.3450493Z  * [new branch]        architecture/121q13-attention-distribution-compression-20260715 -> origin/architecture/121q13-attention-distribution-compression-20260715
+2026-07-25T03:31:03.3452188Z  * [new branch]        architecture/121q14-ignition-atlas-dynamic-landscape-20260715 -> origin/architecture/121q14-ignition-atlas-dynamic-landscape-20260715
+2026-07-25T03:31:03.3453807Z  * [new branch]        architecture/121q21r-multiscale-causal-fabric-20260716 -> origin/architecture/121q21r-multiscale-causal-fabric-20260716
+2026-07-25T03:31:03.3455687Z  * [new branch]        architecture/121q22-probabilistic-system-dynamics-20260716 -> origin/architecture/121q22-probabilistic-system-dynamics-20260716
+2026-07-25T03:31:03.3457494Z  * [new branch]        architecture/121q23-adaptive-relational-network-20260716 -> origin/architecture/121q23-adaptive-relational-network-20260716
+2026-07-25T03:31:03.3459165Z  * [new branch]        architecture/adaptive-relational-runtime-r1-scaffold -> origin/architecture/adaptive-relational-runtime-r1-scaffold
+2026-07-25T03:31:03.3460586Z  * [new branch]        audit/065-two-route-blocked-verdict-20260712 -> origin/audit/065-two-route-blocked-verdict-20260712
+2026-07-25T03:31:03.3461807Z  * [new branch]        audit/function-id-mapping-20260709       -> origin/audit/function-id-mapping-20260709
+2026-07-25T03:31:03.3462947Z  * [new branch]        case/book-validation-22-20260709         -> origin/case/book-validation-22-20260709
+2026-07-25T03:31:03.3464137Z  * [new branch]        codex/meta-protocols-main-release-20260711 -> origin/codex/meta-protocols-main-release-20260711
+2026-07-25T03:31:03.3465564Z  * [new branch]        codex/meta-protocols-main-release-clean-20260711 -> origin/codex/meta-protocols-main-release-clean-20260711
+2026-07-25T03:31:03.3466926Z  * [new branch]        codex/readme-main-base-20260710          -> origin/codex/readme-main-base-20260710
+2026-07-25T03:31:03.3468730Z  * [new branch]        collision/disobedience-subjectivity-20260711 -> origin/collision/disobedience-subjectivity-20260711
+2026-07-25T03:31:03.3469916Z  * [new branch]        docs/121q19-readme-human-ai-entry-20260715 -> origin/docs/121q19-readme-human-ai-entry-20260715
+2026-07-25T03:31:03.3470939Z  * [new branch]        docs/121q20-readable-prompt-and-pages-frontdoor-20260716 -> origin/docs/121q20-readable-prompt-and-pages-frontdoor-20260716
+2026-07-25T03:31:03.3472187Z  * [new branch]        docs/121q25-human-front-door-capability-sync-20260716 -> origin/docs/121q25-human-front-door-capability-sync-20260716
+2026-07-25T03:31:03.3473486Z  * [new branch]        docs/121q28-embodied-cognitive-leap-writing-method-20260716 -> origin/docs/121q28-embodied-cognitive-leap-writing-method-20260716
+2026-07-25T03:31:03.3474587Z  * [new branch]        docs/get-brain-latest-status-20260712    -> origin/docs/get-brain-latest-status-20260712
+2026-07-25T03:31:03.3475380Z  * [new branch]        docs/life-community-value-charter-20260711 -> origin/docs/life-community-value-charter-20260711
+2026-07-25T03:31:03.3476206Z  * [new branch]        docs/meta-protocol-normative-reviews-20260711 -> origin/docs/meta-protocol-normative-reviews-20260711
+2026-07-25T03:31:03.3477119Z  * [new branch]        feature/narrative-output-layer-gap-map-20260712 -> origin/feature/narrative-output-layer-gap-map-20260712
+2026-07-25T03:31:03.3478618Z  * [new branch]        fix/056-independent-audit-no-quota-collision-20260712 -> origin/fix/056-independent-audit-no-quota-collision-20260712
+2026-07-25T03:31:03.3479591Z  * [new branch]        fix/d583-portable-source-reference-20260711 -> origin/fix/d583-portable-source-reference-20260711
+2026-07-25T03:31:03.3480547Z  * [new branch]        governance/121q8-charter-sustainability-licensing-20260715 -> origin/governance/121q8-charter-sustainability-licensing-20260715
+2026-07-25T03:31:03.3481436Z  * [new branch]        lab/121-night-train-deep-audit-v2        -> origin/lab/121-night-train-deep-audit-v2
+2026-07-25T03:31:03.3482173Z  * [new branch]        lab/121q33-rights-governance-night       -> origin/lab/121q33-rights-governance-night
+2026-07-25T03:31:03.3482902Z  * [new branch]        lab/121q34-discovery-commitment-night    -> origin/lab/121q34-discovery-commitment-night
+2026-07-25T03:31:03.3483585Z  * [new branch]        lab/121q35-agent-duty-night              -> origin/lab/121q35-agent-duty-night
+2026-07-25T03:31:03.3484313Z  * [new branch]        lab/121q36-temporal-causality-night      -> origin/lab/121q36-temporal-causality-night
+2026-07-25T03:31:03.3485013Z  * [new branch]        lab/121q37-analogy-audit-night           -> origin/lab/121q37-analogy-audit-night
+2026-07-25T03:31:03.3485823Z  * [new branch]        lab/121q38-structural-retrieval-night    -> origin/lab/121q38-structural-retrieval-night
+2026-07-25T03:31:03.3486554Z  * [new branch]        lab/121q39-failure-memory-night          -> origin/lab/121q39-failure-memory-night
+2026-07-25T03:31:03.3487147Z  * [new branch]        main                                     -> origin/main
+2026-07-25T03:31:03.3488290Z  * [new branch]        ops/121q24-ignition-iteration-method-current-state-sync-20260716 -> origin/ops/121q24-ignition-iteration-method-current-state-sync-20260716
+2026-07-25T03:31:03.3489324Z  * [new branch]        ops/121q7-foundation-ci-mail-storm-repair-20260715 -> origin/ops/121q7-foundation-ci-mail-storm-repair-20260715
+2026-07-25T03:31:03.3490276Z  * [new branch]        production/ignition-run-promote-evolve-r1 -> origin/production/ignition-run-promote-evolve-r1
+2026-07-25T03:31:03.3491103Z  * [new branch]        protocol/entries-and-table-relation-20260709 -> origin/protocol/entries-and-table-relation-20260709
+2026-07-25T03:31:03.3491881Z  * [new branch]        protocol/layer-foundation-20260709       -> origin/protocol/layer-foundation-20260709
+2026-07-25T03:31:03.3492836Z  * [new branch]        reality/121q16-sustainability-signal-pilot-20260715 -> origin/reality/121q16-sustainability-signal-pilot-20260715
+2026-07-25T03:31:03.3493868Z  * [new branch]        records/ignition-067-open-publication-layer-20260712 -> origin/records/ignition-067-open-publication-layer-20260712
+2026-07-25T03:31:03.3494867Z  * [new branch]        records/ignition-069-exhaustive-publication-atlas-20260712 -> origin/records/ignition-069-exhaustive-publication-atlas-20260712
+2026-07-25T03:31:03.3495780Z  * [new branch]        records/ignition-071-ai-first-readme-20260712 -> origin/records/ignition-071-ai-first-readme-20260712
+2026-07-25T03:31:03.3496660Z  * [new branch]        records/ignition-073-dual-front-door-live-link-20260712 -> origin/records/ignition-073-dual-front-door-live-link-20260712
+2026-07-25T03:31:03.3497753Z  * [new branch]        records/ignition-074-preview-link-truth-20260712 -> origin/records/ignition-074-preview-link-truth-20260712
+2026-07-25T03:31:03.3499086Z  * [new branch]        records/ignition-075-math-foundation-20260712 -> origin/records/ignition-075-math-foundation-20260712
+2026-07-25T03:31:03.3500020Z  * [new branch]        records/ignition-076-foundation-architecture-rebuild-20260712 -> origin/records/ignition-076-foundation-architecture-rebuild-20260712
+2026-07-25T03:31:03.3501050Z  * [new branch]        records/ignition-078-core-kernel-formalization-20260713 -> origin/records/ignition-078-core-kernel-formalization-20260713
+2026-07-25T03:31:03.3501960Z  * [new branch]        records/ignition-079-semantic-truth-audit-20260713 -> origin/records/ignition-079-semantic-truth-audit-20260713
+2026-07-25T03:31:03.3502885Z  * [new branch]        records/ignition-080-full-semantic-adjudication-20260713 -> origin/records/ignition-080-full-semantic-adjudication-20260713
+2026-07-25T03:31:03.3504013Z  * [new branch]        records/ignition-081-glm52-complete-semantic-adjudication-20260713 -> origin/records/ignition-081-glm52-complete-semantic-adjudication-20260713
+2026-07-25T03:31:03.3505060Z  * [new branch]        records/ignition-083-glm-high-repair-and-max-queue-20260713 -> origin/records/ignition-083-glm-high-repair-and-max-queue-20260713
+2026-07-25T03:31:03.3506031Z  * [new branch]        records/ignition-084-glm52-max-adjudication-20260713 -> origin/records/ignition-084-glm52-max-adjudication-20260713
+2026-07-25T03:31:03.3506989Z  * [new branch]        records/ignition-085-architecture-structure-freeze-20260713 -> origin/records/ignition-085-architecture-structure-freeze-20260713
+2026-07-25T03:31:03.3508389Z  * [new branch]        records/ignition-087-unesco-discipline-projection-gap-closure-20260713 -> origin/records/ignition-087-unesco-discipline-projection-gap-closure-20260713
+2026-07-25T03:31:03.3509599Z  * [new branch]        records/ignition-088-external-literature-gap-source-atlas-20260713 -> origin/records/ignition-088-external-literature-gap-source-atlas-20260713
+2026-07-25T03:31:03.3510853Z  * [new branch]        records/ignition-104-dual-088-reconciliation-external-evidence-layer-20260713 -> origin/records/ignition-104-dual-088-reconciliation-external-evidence-layer-20260713
+2026-07-25T03:31:03.3512004Z  * [new branch]        records/ignition-105-intervention-control-evidence-20260713 -> origin/records/ignition-105-intervention-control-evidence-20260713
+2026-07-25T03:31:03.3513136Z  * [new branch]        records/ignition-106-repair-105-evidence-and-validator-20260713 -> origin/records/ignition-106-repair-105-evidence-and-validator-20260713
+2026-07-25T03:31:03.3514299Z  * [new branch]        records/ignition-120-function-paradigm-atlas-20260713 -> origin/records/ignition-120-function-paradigm-atlas-20260713
+2026-07-25T03:31:03.3515393Z  * [new branch]        records/ignition-121-fulltext-resolver-and-120-repair-20260714 -> origin/records/ignition-121-fulltext-resolver-and-120-repair-20260714
+2026-07-25T03:31:03.3516522Z  * [new branch]        records/ignition-121c01-max-semantic-review-batch-01-20260714 -> origin/records/ignition-121c01-max-semantic-review-batch-01-20260714
+2026-07-25T03:31:03.3517795Z  * [new branch]        records/ignition-121cn-night-long-haul-20260714 -> origin/records/ignition-121cn-night-long-haul-20260714
+2026-07-25T03:31:03.3518785Z  * [new branch]        records/ignition-121cx-codex56-extreme-takeover-20260714 -> origin/records/ignition-121cx-codex56-extreme-takeover-20260714
+2026-07-25T03:31:03.3519862Z  * [new branch]        records/ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714 -> origin/records/ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714
+2026-07-25T03:31:03.3521076Z  * [new branch]        records/ignition-121q2-night-acceptance-family-synthesis-20260714 -> origin/records/ignition-121q2-night-acceptance-family-synthesis-20260714
+2026-07-25T03:31:03.3522172Z  * [new branch]        records/ignition-121q2v-verification-repair-20260715 -> origin/records/ignition-121q2v-verification-repair-20260715
+2026-07-25T03:31:03.3523253Z  * [new branch]        records/ignition-121q2w-final-consistency-seal-20260715 -> origin/records/ignition-121q2w-final-consistency-seal-20260715
+2026-07-25T03:31:03.3524351Z  * [new branch]        records/ignition-121q3-gap-functionos-asset-mapping-20260715 -> origin/records/ignition-121q3-gap-functionos-asset-mapping-20260715
+2026-07-25T03:31:03.3525687Z  * [new branch]        records/ignition-121q4-v4pro-symbolic-function-os-reference-20260715 -> origin/records/ignition-121q4-v4pro-symbolic-function-os-reference-20260715
+2026-07-25T03:31:03.3526918Z  * [new branch]        records/ignition-121q5-v4pro-canonical-function-os-v02-20260715 -> origin/records/ignition-121q5-v4pro-canonical-function-os-v02-20260715
+2026-07-25T03:31:03.3528537Z  * [new branch]        records/ignition-121q6-hy3-v021-hardening-reproducibility-20260715 -> origin/records/ignition-121q6-hy3-v021-hardening-reproducibility-20260715
+2026-07-25T03:31:03.3529718Z  * [new branch]        records/ignition-121q6c-hy3-completion-merge-readiness-20260715 -> origin/records/ignition-121q6c-hy3-completion-merge-readiness-20260715
+2026-07-25T03:31:03.3530820Z  * [new branch]        records/ignition-121q6d-hy3-ci-e2e-seal-repair-20260715 -> origin/records/ignition-121q6d-hy3-ci-e2e-seal-repair-20260715
+2026-07-25T03:31:03.3531923Z  * [new branch]        release/121q9-license-activation-cumulative-candidate-20260715 -> origin/release/121q9-license-activation-cumulative-candidate-20260715
+2026-07-25T03:31:03.3532916Z  * [new branch]        repair-r2/d2-r2-multihistory-semantics   -> origin/repair-r2/d2-r2-multihistory-semantics
+2026-07-25T03:31:03.3533927Z  * [new branch]        repair-r2/decision-integrity-r2-parent-and-semantics -> origin/repair-r2/decision-integrity-r2-parent-and-semantics
+2026-07-25T03:31:03.3534857Z  * [new branch]        repair-r2/f15-d1-r2-identifiability-semantics -> origin/repair-r2/f15-d1-r2-identifiability-semantics
+2026-07-25T03:31:03.3535755Z  * [new branch]        repair-r2/q41-r2-anomaly-semantics       -> origin/repair-r2/q41-r2-anomaly-semantics
+2026-07-25T03:31:03.3536609Z  * [new branch]        repair-r2/q42-r2-counterfactual-semantics -> origin/repair-r2/q42-r2-counterfactual-semantics
+2026-07-25T03:31:03.3537580Z  * [new branch]        repair-r2/q43-r2-escalation-semantics    -> origin/repair-r2/q43-r2-escalation-semantics
+2026-07-25T03:31:03.3538623Z  * [new branch]        repair-r2/q44-r2-consent-semantics       -> origin/repair-r2/q44-r2-consent-semantics
+2026-07-25T03:31:03.3539590Z  * [new branch]        repair-r2/scientific-context-protocol-r2-context-semantics -> origin/repair-r2/scientific-context-protocol-r2-context-semantics
+2026-07-25T03:31:03.3540734Z  * [new branch]        repair-r2/scientific-metacognition-r2-parent-and-semantics -> origin/repair-r2/scientific-metacognition-r2-parent-and-semantics
+2026-07-25T03:31:03.3541812Z  * [new branch]        repair-r2/symbolic-sphere-r2-shared-engine-hardening -> origin/repair-r2/symbolic-sphere-r2-shared-engine-hardening
+2026-07-25T03:31:03.3542691Z  * [new branch]        repair-r3/d2-r3-semantic-evaluator       -> origin/repair-r3/d2-r3-semantic-evaluator
+2026-07-25T03:31:03.3543559Z  * [new branch]        repair-r3/decision-integrity-r3-semantic-evaluator -> origin/repair-r3/decision-integrity-r3-semantic-evaluator
+2026-07-25T03:31:03.3544430Z  * [new branch]        repair-r3/f15-d1-r3-semantic-evaluator   -> origin/repair-r3/f15-d1-r3-semantic-evaluator
+2026-07-25T03:31:03.3545211Z  * [new branch]        repair-r3/q41-r3-semantic-evaluator      -> origin/repair-r3/q41-r3-semantic-evaluator
+2026-07-25T03:31:03.3545980Z  * [new branch]        repair-r3/q42-r3-semantic-evaluator      -> origin/repair-r3/q42-r3-semantic-evaluator
+2026-07-25T03:31:03.3546711Z  * [new branch]        repair-r3/q43-r3-semantic-evaluator      -> origin/repair-r3/q43-r3-semantic-evaluator
+2026-07-25T03:31:03.3547786Z  * [new branch]        repair-r3/q44-r3-semantic-evaluator      -> origin/repair-r3/q44-r3-semantic-evaluator
+2026-07-25T03:31:03.3548858Z  * [new branch]        repair-r3/scientific-context-protocol-r3-semantic-evaluator -> origin/repair-r3/scientific-context-protocol-r3-semantic-evaluator
+2026-07-25T03:31:03.3549992Z  * [new branch]        repair-r3/scientific-metacognition-r3-semantic-evaluator -> origin/repair-r3/scientific-metacognition-r3-semantic-evaluator
+2026-07-25T03:31:03.3551052Z  * [new branch]        repair-r3/symbolic-sphere-r3-semantic-evaluator-contract -> origin/repair-r3/symbolic-sphere-r3-semantic-evaluator-contract
+2026-07-25T03:31:03.3552016Z  * [new branch]        repair/121q34-r1-commitment-evidence-binding -> origin/repair/121q34-r1-commitment-evidence-binding
+2026-07-25T03:31:03.3552874Z  * [new branch]        repair/121q35-r1-authority-resolution    -> origin/repair/121q35-r1-authority-resolution
+2026-07-25T03:31:03.3553716Z  * [new branch]        repair/121q36-int-r1-content-authority-binding -> origin/repair/121q36-int-r1-content-authority-binding
+2026-07-25T03:31:03.3554566Z  * [new branch]        repair/121q36-obs-r1-evidence-resolution -> origin/repair/121q36-obs-r1-evidence-resolution
+2026-07-25T03:31:03.3555452Z  * [new branch]        repair/121q37-r1-final-head-and-source-binding -> origin/repair/121q37-r1-final-head-and-source-binding
+2026-07-25T03:31:03.3556291Z  * [new branch]        repair/121q38-r1-retrieved-byte-binding  -> origin/repair/121q38-r1-retrieved-byte-binding
+2026-07-25T03:31:03.3557128Z  * [new branch]        repair/121q39-r1-repair-effect-recomputation -> origin/repair/121q39-r1-repair-effect-recomputation
+2026-07-25T03:31:03.3558507Z  * [new branch]        repair/adaptive-relational-runtime-r2-positive-routing-r1 -> origin/repair/adaptive-relational-runtime-r2-positive-routing-r1
+2026-07-25T03:31:03.3559531Z  * [new branch]        repair/d2-r1-multi-history-world-projection -> origin/repair/d2-r1-multi-history-world-projection
+2026-07-25T03:31:03.3560522Z  * [new branch]        repair/decision-integrity-r1-principle-process-binding -> origin/repair/decision-integrity-r1-principle-process-binding
+2026-07-25T03:31:03.3561567Z  * [new branch]        repair/f15-d1-r1-latent-system-identifiability -> origin/repair/f15-d1-r1-latent-system-identifiability
+2026-07-25T03:31:03.3562411Z  * [new branch]        repair/q41-r1-anomaly-evidence-binding   -> origin/repair/q41-r1-anomaly-evidence-binding
+2026-07-25T03:31:03.3563234Z  * [new branch]        repair/q42-r1-counterfactual-ledger-binding -> origin/repair/q42-r1-counterfactual-ledger-binding
+2026-07-25T03:31:03.3564088Z  * [new branch]        repair/q43-r1-escalation-authority-binding -> origin/repair/q43-r1-escalation-authority-binding
+2026-07-25T03:31:03.3564923Z  * [new branch]        repair/q44-r1-coaching-consent-binding   -> origin/repair/q44-r1-coaching-consent-binding
+2026-07-25T03:31:03.3565922Z  * [new branch]        repair/scientific-context-protocol-r1-context-capability-binding -> origin/repair/scientific-context-protocol-r1-context-capability-binding
+2026-07-25T03:31:03.3567070Z  * [new branch]        repair/scientific-metacognition-r1-epistemic-state-binding -> origin/repair/scientific-metacognition-r1-epistemic-state-binding
+2026-07-25T03:31:03.3568404Z  * [new branch]        repair/symbolic-sphere-r1-reference-integrity -> origin/repair/symbolic-sphere-r1-reference-integrity
+2026-07-25T03:31:03.3569306Z  * [new branch]        review/build-projection-sets-20260616-2350 -> origin/review/build-projection-sets-20260616-2350
+2026-07-25T03:31:03.3570164Z  * [new branch]        review/minimal-two-table-entry-20260617-0323 -> origin/review/minimal-two-table-entry-20260617-0323
+2026-07-25T03:31:03.3571051Z  * [new branch]        review/projection-sets-only-20260617-0227 -> origin/review/projection-sets-only-20260617-0227
+2026-07-25T03:31:03.3571844Z  * [new branch]        review/push-ignition-20260616-1541       -> origin/review/push-ignition-20260616-1541
+2026-07-25T03:31:03.3572686Z  * [new branch]        run/dual-channel-full-bootstrap-20260613-230707 -> origin/run/dual-channel-full-bootstrap-20260613-230707
+2026-07-25T03:31:03.3573759Z  * [new branch]        runtime/adaptive-relational-runtime-r2-real-object-pilot -> origin/runtime/adaptive-relational-runtime-r2-real-object-pilot
+2026-07-25T03:31:03.3574665Z  * [new branch]        version/meta-protocols-20260709          -> origin/version/meta-protocols-20260709
+2026-07-25T03:31:03.3575365Z  * [new tag]           archive/121q34-i1-frozen-head            -> archive/121q34-i1-frozen-head
+2026-07-25T03:31:03.3576029Z  * [new tag]           archive/121q34-repair-r1-frozen-head     -> archive/121q34-repair-r1-frozen-head
+2026-07-25T03:31:03.3576740Z  * [new tag]           archive/121q35-i1r-frozen-head           -> archive/121q35-i1r-frozen-head
+2026-07-25T03:31:03.3577564Z  * [new tag]           archive/121q35-repair-r1-frozen-head     -> archive/121q35-repair-r1-frozen-head
+2026-07-25T03:31:03.3578400Z  * [new tag]           archive/121q36-int-i1-frozen-head        -> archive/121q36-int-i1-frozen-head
+2026-07-25T03:31:03.3579118Z  * [new tag]           archive/121q36-int-repair-r1-frozen-head -> archive/121q36-int-repair-r1-frozen-head
+2026-07-25T03:31:03.3579827Z  * [new tag]           archive/121q36-obs-i1-frozen-head        -> archive/121q36-obs-i1-frozen-head
+2026-07-25T03:31:03.3580546Z  * [new tag]           archive/121q36-obs-repair-r1-frozen-head -> archive/121q36-obs-repair-r1-frozen-head
+2026-07-25T03:31:03.3581304Z  * [new tag]           archive/121q37-i1-frozen-head            -> archive/121q37-i1-frozen-head
+2026-07-25T03:31:03.3582074Z  * [new tag]           archive/121q37-repair-r1-frozen-head     -> archive/121q37-repair-r1-frozen-head
+2026-07-25T03:31:03.3582775Z  * [new tag]           archive/121q38-i1-frozen-head            -> archive/121q38-i1-frozen-head
+2026-07-25T03:31:03.3583405Z  * [new tag]           archive/121q38-repair-r1-frozen-head     -> archive/121q38-repair-r1-frozen-head
+2026-07-25T03:31:03.3584044Z  * [new tag]           archive/121q39-i1-frozen-head            -> archive/121q39-i1-frozen-head
+2026-07-25T03:31:03.3584688Z  * [new tag]           archive/121q39-repair-r1-frozen-head     -> archive/121q39-repair-r1-frozen-head
+2026-07-25T03:31:03.3585589Z  * [new tag]           archive/adaptive-relational-runtime-r1-scaffold-frozen-head -> archive/adaptive-relational-runtime-r1-scaffold-frozen-head
+2026-07-25T03:31:03.3586802Z  * [new tag]           archive/adaptive-relational-runtime-r2-positive-routing-repair-r1-frozen-head -> archive/adaptive-relational-runtime-r2-positive-routing-repair-r1-frozen-head
+2026-07-25T03:31:03.3588141Z  * [new tag]           archive/adaptive-relational-runtime-r2-real-object-pilot-frozen-head -> archive/adaptive-relational-runtime-r2-real-object-pilot-frozen-head
+2026-07-25T03:31:03.3589491Z  * [new tag]           archive/d2-i1-frozen-head                -> archive/d2-i1-frozen-head
+2026-07-25T03:31:03.3590450Z  * [new tag]           archive/d2-repair-r1-frozen-head         -> archive/d2-repair-r1-frozen-head
+2026-07-25T03:31:03.3591389Z  * [new tag]           archive/d2-repair-r2-frozen-head         -> archive/d2-repair-r2-frozen-head
+2026-07-25T03:31:03.3592365Z  * [new tag]           archive/d2-repair-r3-frozen-head         -> archive/d2-repair-r3-frozen-head
+2026-07-25T03:31:03.3593181Z  * [new tag]           archive/decision-integrity-i1-frozen-head -> archive/decision-integrity-i1-frozen-head
+2026-07-25T03:31:03.3593969Z  * [new tag]           archive/decision-integrity-repair-r1-frozen-head -> archive/decision-integrity-repair-r1-frozen-head
+2026-07-25T03:31:03.3594898Z  * [new tag]           archive/decision-integrity-repair-r2-frozen-head -> archive/decision-integrity-repair-r2-frozen-head
+2026-07-25T03:31:03.3595731Z  * [new tag]           archive/decision-integrity-repair-r3-frozen-head -> archive/decision-integrity-repair-r3-frozen-head
+2026-07-25T03:31:03.3596457Z  * [new tag]           archive/f15-d1-i1-frozen-head            -> archive/f15-d1-i1-frozen-head
+2026-07-25T03:31:03.3597091Z  * [new tag]           archive/f15-d1-repair-r1-frozen-head     -> archive/f15-d1-repair-r1-frozen-head
+2026-07-25T03:31:03.3597946Z  * [new tag]           archive/f15-d1-repair-r2-frozen-head     -> archive/f15-d1-repair-r2-frozen-head
+2026-07-25T03:31:03.3598775Z  * [new tag]           archive/f15-d1-repair-r3-frozen-head     -> archive/f15-d1-repair-r3-frozen-head
+2026-07-25T03:31:03.3599704Z  * [new tag]           archive/ignition-run-promote-evolve-r1-production-draft-frozen-head -> archive/ignition-run-promote-evolve-r1-production-draft-frozen-head
+2026-07-25T03:31:03.3600669Z  * [new tag]           archive/lab-121q36-temporal-causality-night -> archive/lab-121q36-temporal-causality-night
+2026-07-25T03:31:03.3601419Z  * [new tag]           archive/lab-121q37-analogy-audit-night   -> archive/lab-121q37-analogy-audit-night
+2026-07-25T03:31:03.3602157Z  * [new tag]           archive/lab-121q38-structural-retrieval-night -> archive/lab-121q38-structural-retrieval-night
+2026-07-25T03:31:03.3602942Z  * [new tag]           archive/lab-121q39-failure-memory-night  -> archive/lab-121q39-failure-memory-night
+2026-07-25T03:31:03.3603582Z  * [new tag]           archive/q41-i1-frozen-head               -> archive/q41-i1-frozen-head
+2026-07-25T03:31:03.3604186Z  * [new tag]           archive/q41-repair-r1-frozen-head        -> archive/q41-repair-r1-frozen-head
+2026-07-25T03:31:03.3605302Z  * [new tag]           archive/q41-repair-r2-frozen-head        -> archive/q41-repair-r2-frozen-head
+2026-07-25T03:31:03.3606207Z  * [new tag]           archive/q41-repair-r3-frozen-head        -> archive/q41-repair-r3-frozen-head
+2026-07-25T03:31:03.3607195Z  * [new tag]           archive/q42-i1-frozen-head               -> archive/q42-i1-frozen-head
+2026-07-25T03:31:03.3608352Z  * [new tag]           archive/q42-repair-r1-frozen-head        -> archive/q42-repair-r1-frozen-head
+2026-07-25T03:31:03.3609244Z  * [new tag]           archive/q42-repair-r2-frozen-head        -> archive/q42-repair-r2-frozen-head
+2026-07-25T03:31:03.3610241Z  * [new tag]           archive/q42-repair-r3-frozen-head        -> archive/q42-repair-r3-frozen-head
+2026-07-25T03:31:03.3611420Z  * [new tag]           archive/q43-i1-frozen-head               -> archive/q43-i1-frozen-head
+2026-07-25T03:31:03.3612400Z  * [new tag]           archive/q43-repair-r1-frozen-head        -> archive/q43-repair-r1-frozen-head
+2026-07-25T03:31:03.3613408Z  * [new tag]           archive/q43-repair-r2-frozen-head        -> archive/q43-repair-r2-frozen-head
+2026-07-25T03:31:03.3614342Z  * [new tag]           archive/q43-repair-r3-frozen-head        -> archive/q43-repair-r3-frozen-head
+2026-07-25T03:31:03.3615269Z  * [new tag]           archive/q44-i1-frozen-head               -> archive/q44-i1-frozen-head
+2026-07-25T03:31:03.3616223Z  * [new tag]           archive/q44-repair-r1-frozen-head        -> archive/q44-repair-r1-frozen-head
+2026-07-25T03:31:03.3617482Z  * [new tag]           archive/q44-repair-r2-frozen-head        -> archive/q44-repair-r2-frozen-head
+2026-07-25T03:31:03.3618516Z  * [new tag]           archive/q44-repair-r3-frozen-head        -> archive/q44-repair-r3-frozen-head
+2026-07-25T03:31:03.3619736Z  * [new tag]           archive/scientific-context-protocol-i1-frozen-head -> archive/scientific-context-protocol-i1-frozen-head
+2026-07-25T03:31:03.3621284Z  * [new tag]           archive/scientific-context-protocol-repair-r1-frozen-head -> archive/scientific-context-protocol-repair-r1-frozen-head
+2026-07-25T03:31:03.3622978Z  * [new tag]           archive/scientific-context-protocol-repair-r2-frozen-head -> archive/scientific-context-protocol-repair-r2-frozen-head
+2026-07-25T03:31:03.3624758Z  * [new tag]           archive/scientific-context-protocol-repair-r3-frozen-head -> archive/scientific-context-protocol-repair-r3-frozen-head
+2026-07-25T03:31:03.3626433Z  * [new tag]           archive/scientific-metacognition-i1-frozen-head -> archive/scientific-metacognition-i1-frozen-head
+2026-07-25T03:31:03.3628401Z  * [new tag]           archive/scientific-metacognition-repair-r1-frozen-head -> archive/scientific-metacognition-repair-r1-frozen-head
+2026-07-25T03:31:03.3630034Z  * [new tag]           archive/scientific-metacognition-repair-r2-frozen-head -> archive/scientific-metacognition-repair-r2-frozen-head
+2026-07-25T03:31:03.3631847Z  * [new tag]           archive/scientific-metacognition-repair-r3-frozen-head -> archive/scientific-metacognition-repair-r3-frozen-head
+2026-07-25T03:31:03.3633173Z  * [new tag]           archive/symbolic-sphere-i1-frozen-head   -> archive/symbolic-sphere-i1-frozen-head
+2026-07-25T03:31:03.3634522Z  * [new tag]           archive/symbolic-sphere-repair-r1-frozen-head -> archive/symbolic-sphere-repair-r1-frozen-head
+2026-07-25T03:31:03.3635746Z  * [new tag]           archive/symbolic-sphere-repair-r2-frozen-head -> archive/symbolic-sphere-repair-r2-frozen-head
+2026-07-25T03:31:03.3636930Z  * [new tag]           archive/symbolic-sphere-repair-r3-frozen-head -> archive/symbolic-sphere-repair-r3-frozen-head
+2026-07-25T03:31:03.3638182Z  * [new tag]           current-state-2026-07-15                 -> current-state-2026-07-15
+2026-07-25T03:31:03.3639148Z  * [new tag]           current-state-2026-07-15-atlas           -> current-state-2026-07-15-atlas
+2026-07-25T03:31:03.3640717Z  * [new tag]           legacy-lab-q34-discovery-commitment-night-12026-07-17 -> legacy-lab-q34-discovery-commitment-night-12026-07-17
+2026-07-25T03:31:03.3642138Z  * [new tag]           legacy-lab-q35-agent-duty-night-12026-07-17 -> legacy-lab-q35-agent-duty-night-12026-07-17
+2026-07-25T03:31:03.3643209Z  * [new tag]           pre-q33-i2-main-12026-07-21              -> pre-q33-i2-main-12026-07-21
+2026-07-25T03:31:03.3644195Z  * [new tag]           pre-q33-main-12026-07-20                 -> pre-q33-main-12026-07-20
+2026-07-25T03:31:03.3645294Z  * [new tag]           q33-i2-merged-closeout-12026-07-21       -> q33-i2-merged-closeout-12026-07-21
+2026-07-25T03:31:03.3646590Z  * [new tag]           q33-i2-reviewed-closeout-12026-07-21     -> q33-i2-reviewed-closeout-12026-07-21
+2026-07-25T03:31:03.3647708Z  * [new tag]           q33-merged-12026-07-20                   -> q33-merged-12026-07-20
+2026-07-25T03:31:03.3648809Z  * [new tag]           q33-reviewed-candidate-12026-07-20       -> q33-reviewed-candidate-12026-07-20
+2026-07-25T03:31:03.3649855Z  * [new tag]           reality-loop-001-start-2026-07-15        -> reality-loop-001-start-2026-07-15
+2026-07-25T03:31:03.3650749Z  * [new tag]           v0.1-public-prototype                    -> v0.1-public-prototype
+2026-07-25T03:31:03.3651678Z  * [new tag]           v0.2-p1-machine-readable-data            -> v0.2-p1-machine-readable-data
+2026-07-25T03:31:03.3652687Z  * [new tag]           v0.2-structural-infrastructure           -> v0.2-structural-infrastructure
+2026-07-25T03:31:03.3653661Z  * [new ref]           32db55e436066bed849347d8eda299623d86a060 -> pull/122/merge
+2026-07-25T03:31:03.3655797Z ##[endgroup]
+2026-07-25T03:31:03.3656520Z ##[group]Determining the checkout info
+2026-07-25T03:31:03.3657576Z ##[endgroup]
+2026-07-25T03:31:03.3665454Z [command]/usr/bin/git sparse-checkout disable
+2026-07-25T03:31:03.3701529Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-07-25T03:31:03.3726763Z ##[group]Checking out the ref
+2026-07-25T03:31:03.3731100Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/122/merge
+2026-07-25T03:31:03.5746450Z Note: switching to 'refs/remotes/pull/122/merge'.
+2026-07-25T03:31:03.5747493Z 
+2026-07-25T03:31:03.5748079Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-07-25T03:31:03.5748779Z changes and commit them, and you can discard any commits you make in this
+2026-07-25T03:31:03.5749709Z state without impacting any branches by switching back to a branch.
+2026-07-25T03:31:03.5750197Z 
+2026-07-25T03:31:03.5750498Z If you want to create a new branch to retain commits you create, you may
+2026-07-25T03:31:03.5751354Z do so (now or later) by using -c with the switch command. Example:
+2026-07-25T03:31:03.5751744Z 
+2026-07-25T03:31:03.5751983Z   git switch -c <new-branch-name>
+2026-07-25T03:31:03.5752264Z 
+2026-07-25T03:31:03.5752477Z Or undo this operation with:
+2026-07-25T03:31:03.5752832Z 
+2026-07-25T03:31:03.5753070Z   git switch -
+2026-07-25T03:31:03.5753279Z 
+2026-07-25T03:31:03.5753916Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-07-25T03:31:03.5754405Z 
+2026-07-25T03:31:03.5755029Z HEAD is now at 32db55e4 Merge 1908878c051de15e5934d38e017d469c0430cc83 into bfe90c65a80619e6c6c81586a2befb15796b93bb
+2026-07-25T03:31:03.5762571Z ##[endgroup]
+2026-07-25T03:31:03.5799173Z [command]/usr/bin/git log -1 --format=%H
+2026-07-25T03:31:03.5822025Z 32db55e436066bed849347d8eda299623d86a060
+2026-07-25T03:31:03.6073269Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-25T03:31:03.6074749Z ##[group]Run actions/setup-python@v5
+2026-07-25T03:31:03.6075098Z with:
+2026-07-25T03:31:03.6075432Z   python-version: 3.12
+2026-07-25T03:31:03.6075733Z   check-latest: false
+2026-07-25T03:31:03.6078092Z   token: ***
+2026-07-25T03:31:03.6078405Z   update-environment: true
+2026-07-25T03:31:03.6078750Z   allow-prereleases: false
+2026-07-25T03:31:03.6079078Z   freethreaded: false
+2026-07-25T03:31:03.6079366Z ##[endgroup]
+2026-07-25T03:31:03.7298183Z ##[group]Installed versions
+2026-07-25T03:31:03.9079295Z (node:2044) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-07-25T03:31:03.9080467Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-07-25T03:31:03.9081264Z Successfully set up CPython (3.12.13)
+2026-07-25T03:31:03.9082204Z ##[endgroup]
+2026-07-25T03:31:03.9242115Z ##[group]Run python3 -m pip install -r requirements-foundation.txt
+2026-07-25T03:31:03.9242772Z [36;1mpython3 -m pip install -r requirements-foundation.txt[0m
+2026-07-25T03:31:03.9339256Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:03.9340880Z env:
+2026-07-25T03:31:03.9343700Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:03.9345411Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:03.9346947Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:03.9348055Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:03.9348686Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:03.9349303Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:03.9349994Z ##[endgroup]
+2026-07-25T03:31:09.3272580Z Collecting sympy==1.14.0 (from -r requirements-foundation.txt (line 2))
+2026-07-25T03:31:09.4113568Z   Downloading sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+2026-07-25T03:31:09.4588688Z Collecting z3-solver==4.16.0.0 (from -r requirements-foundation.txt (line 3))
+2026-07-25T03:31:09.4748666Z   Downloading z3_solver-4.16.0.0-py3-none-manylinux_2_27_x86_64.whl.metadata (602 bytes)
+2026-07-25T03:31:09.5092124Z Collecting jsonschema==4.26.0 (from -r requirements-foundation.txt (line 4))
+2026-07-25T03:31:09.5246513Z   Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+2026-07-25T03:31:09.5518534Z Collecting mpmath<1.4,>=1.1.0 (from sympy==1.14.0->-r requirements-foundation.txt (line 2))
+2026-07-25T03:31:09.5670860Z   Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+2026-07-25T03:31:09.5939113Z Collecting attrs>=22.2.0 (from jsonschema==4.26.0->-r requirements-foundation.txt (line 4))
+2026-07-25T03:31:09.6092494Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+2026-07-25T03:31:09.6525620Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema==4.26.0->-r requirements-foundation.txt (line 4))
+2026-07-25T03:31:09.6681780Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+2026-07-25T03:31:09.6983036Z Collecting referencing>=0.28.4 (from jsonschema==4.26.0->-r requirements-foundation.txt (line 4))
+2026-07-25T03:31:09.7136508Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+2026-07-25T03:31:09.9676601Z Collecting rpds-py>=0.25.0 (from jsonschema==4.26.0->-r requirements-foundation.txt (line 4))
+2026-07-25T03:31:09.9834280Z   Downloading rpds_py-2026.6.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+2026-07-25T03:31:10.0143269Z Collecting typing-extensions>=4.4.0 (from referencing>=0.28.4->jsonschema==4.26.0->-r requirements-foundation.txt (line 4))
+2026-07-25T03:31:10.0300325Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-07-25T03:31:10.0666690Z Downloading sympy-1.14.0-py3-none-any.whl (6.3 MB)
+2026-07-25T03:31:10.2808174Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.3/6.3 MB 36.2 MB/s  0:00:00
+2026-07-25T03:31:10.2995143Z Downloading z3_solver-4.16.0.0-py3-none-manylinux_2_27_x86_64.whl (31.7 MB)
+2026-07-25T03:31:10.5822111Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 31.7/31.7 MB 112.2 MB/s  0:00:00
+2026-07-25T03:31:10.5979592Z Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+2026-07-25T03:31:10.6161157Z Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+2026-07-25T03:31:10.6213981Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 87.8 MB/s  0:00:00
+2026-07-25T03:31:10.6372606Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+2026-07-25T03:31:10.6559846Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+2026-07-25T03:31:10.6736228Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+2026-07-25T03:31:10.6911713Z Downloading rpds_py-2026.6.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (366 kB)
+2026-07-25T03:31:10.7092617Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-07-25T03:31:10.9778717Z Installing collected packages: z3-solver, mpmath, typing-extensions, sympy, rpds-py, attrs, referencing, jsonschema-specifications, jsonschema
+2026-07-25T03:31:16.7204545Z 
+2026-07-25T03:31:16.7218040Z Successfully installed attrs-26.1.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 mpmath-1.3.0 referencing-0.37.0 rpds-py-2026.6.3 sympy-1.14.0 typing-extensions-4.16.0 z3-solver-4.16.0.0
+2026-07-25T03:31:16.8018872Z ##[group]Run leanprover/lean-action@v1
+2026-07-25T03:31:16.8019203Z with:
+2026-07-25T03:31:16.8019476Z   auto-config: false
+2026-07-25T03:31:16.8019796Z   lake-package-directory: formal/lean
+2026-07-25T03:31:16.8020113Z   use-mathlib-cache: false
+2026-07-25T03:31:16.8020409Z   use-github-cache: false
+2026-07-25T03:31:16.8020683Z   build: default
+2026-07-25T03:31:16.8020925Z   test: default
+2026-07-25T03:31:16.8021222Z   lint: default
+2026-07-25T03:31:16.8021468Z   mk_all-check: false
+2026-07-25T03:31:16.8021751Z   check-reservoir-eligibility: false
+2026-07-25T03:31:16.8022065Z   leanchecker: false
+2026-07-25T03:31:16.8022326Z   lean4checker: false
+2026-07-25T03:31:16.8022622Z   nanoda: false
+2026-07-25T03:31:16.8022876Z   nanoda-allow-sorry: true
+2026-07-25T03:31:16.8023160Z   reinstall-transient-toolchain: false
+2026-07-25T03:31:16.8023500Z env:
+2026-07-25T03:31:16.8023818Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:16.8024395Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:16.8024825Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:16.8025230Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:16.8025633Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:16.8026030Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:16.8026415Z ##[endgroup]
+2026-07-25T03:31:16.8118333Z ##[group]Run : Install Elan
+2026-07-25T03:31:16.8118763Z [36;1m: Install Elan[0m
+2026-07-25T03:31:16.8119129Z [36;1m${GITHUB_ACTION_PATH}/scripts/install_elan.sh[0m
+2026-07-25T03:31:16.8146677Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-07-25T03:31:16.8147098Z env:
+2026-07-25T03:31:16.8147510Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:16.8148004Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:16.8148480Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:16.8148881Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:16.8149261Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:16.8149686Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:16.8150059Z ##[endgroup]
+2026-07-25T03:31:16.8206306Z ##[group]Elan Installation Output
+2026-07-25T03:31:16.8797515Z info: downloading installer
+2026-07-25T03:31:18.5800420Z info: downloading https://releases.lean-lang.org/lean4/v4.19.0/lean-4.19.0-linux.tar.zst
+2026-07-25T03:31:23.2371189Z info: installing /home/runner/.elan/toolchains/leanprover--lean4---v4.19.0
+2026-07-25T03:31:26.1952428Z Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+2026-07-25T03:31:26.2338741Z Lake version 5.0.0-6caaee8 (Lean version 4.19.0)
+2026-07-25T03:31:26.2346720Z ##[endgroup]
+2026-07-25T03:31:26.2347072Z 
+2026-07-25T03:31:26.2384268Z ##[group]Run : Configure Lean Action
+2026-07-25T03:31:26.2384643Z [36;1m: Configure Lean Action[0m
+2026-07-25T03:31:26.2384946Z [36;1m${GITHUB_ACTION_PATH}/scripts/config.sh[0m
+2026-07-25T03:31:26.2411433Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-07-25T03:31:26.2411780Z env:
+2026-07-25T03:31:26.2412151Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.2412608Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:26.2413129Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.2413670Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.2414068Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.2414469Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:26.2414840Z   AUTO_CONFIG: false
+2026-07-25T03:31:26.2415085Z   BUILD: default
+2026-07-25T03:31:26.2415497Z   TEST: default
+2026-07-25T03:31:26.2415724Z   LINT: default
+2026-07-25T03:31:26.2415957Z ##[endgroup]
+2026-07-25T03:31:26.2510569Z ##[group]Configure lean-action
+2026-07-25T03:31:26.2695448Z ##[group]Run cd formal/lean && lake env lean Foundation.lean
+2026-07-25T03:31:26.2695872Z [36;1mcd formal/lean && lake env lean Foundation.lean[0m
+2026-07-25T03:31:26.2719095Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:26.2719453Z env:
+2026-07-25T03:31:26.2719776Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.2720208Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:26.2720702Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.2721106Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.2721552Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.2722029Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:26.2722437Z ##[endgroup]
+2026-07-25T03:31:26.4371350Z ##[group]Run python3 tools/foundation/adjudicate_core.py --check
+2026-07-25T03:31:26.4371865Z [36;1mpython3 tools/foundation/adjudicate_core.py --check[0m
+2026-07-25T03:31:26.4399481Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:26.4399802Z env:
+2026-07-25T03:31:26.4400146Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.4400635Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:26.4401099Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.4401582Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.4402021Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:26.4402438Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:26.4402845Z ##[endgroup]
+2026-07-25T03:31:27.0440265Z {"adjudications":630,"high_risk_d":549,"registry_adjudicated":621,"remaining":1,"types":{"ALGORITHM":1,"ARGUMENT_SCHEMA":25,"FORMAL_PROPOSITION":43,"MECHANISM_MODEL":60,"METRIC":77,"NATURAL_LANGUAGE_CANDIDATE":76,"OPTIMIZATION_PROBLEM":1,"PREDICATE":18,"PROBABILISTIC_MODEL":9,"RELATION":229,"STATE_TRANSITION":82}}
+2026-07-25T03:31:27.0441681Z ADJUDICATION_CHECK_OK
+2026-07-25T03:31:27.0537138Z ##[group]Run python3 tools/foundation/migrate_legacy.py --check
+2026-07-25T03:31:27.0538073Z [36;1mpython3 tools/foundation/migrate_legacy.py --check[0m
+2026-07-25T03:31:27.0572452Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:27.0572832Z env:
+2026-07-25T03:31:27.0573279Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:27.0573802Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:27.0574271Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:27.0574785Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:27.0575222Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:27.0575655Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:27.0576070Z ##[endgroup]
+2026-07-25T03:31:29.6665659Z {"benchmark_and_core_counterexamples":4,"candidate_cases":22,"classification_status":{"ADJUDICATED":621,"PROVISIONAL":1},"formal_cases":806,"formal_objects":622,"object_types":{"ALGORITHM":1,"ARGUMENT_SCHEMA":25,"FORMAL_PROPOSITION":43,"MECHANISM_MODEL":60,"METRIC":77,"NATURAL_LANGUAGE_CANDIDATE":77,"OPTIMIZATION_PROBLEM":1,"PREDICATE":18,"PROBABILISTIC_MODEL":9,"RELATION":229,"STATE_TRANSITION":82},"pending_claims":34,"scope_entities":678,"verified_legacy_counterexamples":0}
+2026-07-25T03:31:29.6667260Z MIGRATION_CHECK_OK
+2026-07-25T03:31:29.6762685Z ##[group]Run python3 tools/foundation/validate_foundation.py
+2026-07-25T03:31:29.6763193Z [36;1mpython3 tools/foundation/validate_foundation.py[0m
+2026-07-25T03:31:29.6789214Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:29.6789531Z env:
+2026-07-25T03:31:29.6789839Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:29.6790482Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:29.6790916Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:29.6791346Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:29.6791760Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:29.6792158Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:29.6792522Z ##[endgroup]
+2026-07-25T03:31:39.7314938Z PASS count:objects expected=622 actual=622
+2026-07-25T03:31:39.7315794Z PASS count:claims expected=678 actual=678
+2026-07-25T03:31:39.7317007Z PASS count:arguments expected=678 actual=678
+2026-07-25T03:31:39.7318346Z PASS count:evidence expected=828 actual=828
+2026-07-25T03:31:39.7319076Z PASS count:mappings expected=622 actual=622
+2026-07-25T03:31:39.7319888Z PASS count:obligations expected=622 actual=622
+2026-07-25T03:31:39.7320648Z PASS count:validations expected=6 actual=6
+2026-07-25T03:31:39.7321389Z PASS count:counterexamples expected=4 actual=4
+2026-07-25T03:31:39.7322254Z PASS count:adjudications expected=630 actual=630
+2026-07-25T03:31:39.7323011Z PASS count:overrides expected=621 actual=621
+2026-07-25T03:31:39.7323612Z PASS count:queue expected=1 actual=1
+2026-07-25T03:31:39.7324100Z PASS count:proof_artifacts expected=1 actual=1
+2026-07-25T03:31:39.7324768Z PASS count:core_counterexamples expected=2 actual=2
+2026-07-25T03:31:39.7325332Z PASS count:logic_checks expected=2 actual=2
+2026-07-25T03:31:39.7325802Z PASS unique:objects rows=622 unique=622
+2026-07-25T03:31:39.7326210Z PASS unique:claims rows=678 unique=678
+2026-07-25T03:31:39.7326717Z PASS unique:arguments rows=678 unique=678
+2026-07-25T03:31:39.7327169Z PASS unique:evidence rows=828 unique=828
+2026-07-25T03:31:39.7327840Z PASS refs:claims-to-objects
+2026-07-25T03:31:39.7328264Z PASS refs:arguments-to-claims
+2026-07-25T03:31:39.7328676Z PASS status:nine-axes
+2026-07-25T03:31:39.7329049Z PASS taxonomy:mf
+2026-07-25T03:31:39.7329405Z PASS taxonomy:y1
+2026-07-25T03:31:39.7329768Z PASS objects:minimum-record
+2026-07-25T03:31:39.7330198Z PASS classification:counts
+2026-07-25T03:31:39.7330642Z PASS classification:provisional-title-heuristic
+2026-07-25T03:31:39.7331130Z PASS classification:only-d598-provisional
+2026-07-25T03:31:39.7331639Z PASS classification:078-labels-retained-as-legacy
+2026-07-25T03:31:39.7332180Z PASS classification:override-preserved
+2026-07-25T03:31:39.7332642Z PASS adjudication:complete-records
+2026-07-25T03:31:39.7333153Z PASS adjudication:078-self-label-not-independent-proof
+2026-07-25T03:31:39.7333644Z PASS adjudication:registry-coverage
+2026-07-25T03:31:39.7334122Z PASS schema:formal-objects rows=622
+2026-07-25T03:31:39.7334553Z PASS schema:adjudications rows=630
+2026-07-25T03:31:39.7335023Z PASS schema:classification-overrides rows=621
+2026-07-25T03:31:39.7335528Z PASS schema:content-work-queue rows=1
+2026-07-25T03:31:39.7336000Z PASS schema:079-independent-reviews rows=14
+2026-07-25T03:31:39.7336512Z PASS schema:coverage rows=1
+2026-07-25T03:31:39.7336978Z PASS gate:t2-legacy-not-proved
+2026-07-25T03:31:39.7337579Z PASS gate:no-strict-isomorphism
+2026-07-25T03:31:39.7338020Z PASS gate:no-established-causal
+2026-07-25T03:31:39.7338428Z PASS gate:t16-refuted
+2026-07-25T03:31:39.7338827Z PASS gate:d220-countermodel
+2026-07-25T03:31:39.7339223Z PASS gate:t23-pending
+2026-07-25T03:31:39.7339614Z PASS 079:method-split
+2026-07-25T03:31:39.7340049Z PASS 079:verified-registry-only-five
+2026-07-25T03:31:39.7340495Z PASS 079:proof-dossiers-forty
+2026-07-25T03:31:39.7340930Z PASS counterexample:replay-contract
+2026-07-25T03:31:39.7341995Z PASS migration:legacy-byte-preservation
+2026-07-25T03:31:39.7342467Z PASS schemas:count
+2026-07-25T03:31:39.7342901Z PASS file:ARCHITECTURE.md
+2026-07-25T03:31:39.7343306Z PASS file:FOUNDATION.md
+2026-07-25T03:31:39.7343698Z PASS file:AI-START-HERE.md
+2026-07-25T03:31:39.7344141Z PASS file:AI-HANDOFF.md
+2026-07-25T03:31:39.7344628Z PASS file:.github/workflows/foundation-validation.yml
+2026-07-25T03:31:39.7345359Z PASS file:formal/lean/Foundation.lean
+2026-07-25T03:31:39.7345835Z PASS file:views/manifest.json
+2026-07-25T03:31:39.7346307Z PASS file:data/foundation/project-state.json
+2026-07-25T03:31:39.7346864Z PASS generator:adjudication-deterministic
+2026-07-25T03:31:39.7347501Z PASS generator:migration-deterministic
+2026-07-25T03:31:39.7348007Z CHECKS_TOTAL=60 CHECKS_PASSED=60 CHECKS_FAILED=0
+2026-07-25T03:31:39.7348714Z ALL_FOUNDATION_VALID
+2026-07-25T03:31:39.7500538Z ##[group]Run python3 tools/foundation/verify_core_claims.py --check
+2026-07-25T03:31:39.7501087Z [36;1mpython3 tools/foundation/verify_core_claims.py --check[0m
+2026-07-25T03:31:39.7528402Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:39.7528716Z env:
+2026-07-25T03:31:39.7529023Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:39.7529506Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:39.7529981Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:39.7530422Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:39.7530812Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:39.7531191Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:39.7531555Z ##[endgroup]
+2026-07-25T03:31:40.4138932Z PASS T2_Z3_PROOF PROVED_BY_UNSAT_NEGATION
+2026-07-25T03:31:40.4139547Z PASS D220_Z3_COUNTERMODEL COUNTERMODEL_VERIFIED
+2026-07-25T03:31:40.4140063Z PASS T16_SYMPY_COUNTEREXAMPLE COUNTEREXAMPLE_VERIFIED
+2026-07-25T03:31:40.4140440Z PASS T2_LEAN_PROOF PROVED
+2026-07-25T03:31:40.4140740Z PASS T23_PENDING UNPROVED_PROPOSITION
+2026-07-25T03:31:40.4141067Z CORE_CHECKS_TOTAL=5 CORE_CHECKS_PASSED=5
+2026-07-25T03:31:40.4141405Z ALL_CORE_CLAIMS_REPLAYED
+2026-07-25T03:31:40.4967032Z ##[group]Run python3 tools/foundation/verify_079.py --check
+2026-07-25T03:31:40.4967691Z [36;1mpython3 tools/foundation/verify_079.py --check[0m
+2026-07-25T03:31:40.4994813Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:40.4995060Z env:
+2026-07-25T03:31:40.4995314Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:40.4995704Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:40.4996088Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:40.4996429Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:40.4996766Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:40.4997103Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:40.4997522Z ##[endgroup]
+2026-07-25T03:31:40.5685753Z PASS method_622
+2026-07-25T03:31:40.5686110Z PASS method_ids_unique
+2026-07-25T03:31:40.5686412Z PASS method_split
+2026-07-25T03:31:40.5686782Z PASS verified_reviews_complete
+2026-07-25T03:31:40.5687113Z PASS verified_registry_5
+2026-07-25T03:31:40.5687575Z PASS components_9
+2026-07-25T03:31:40.5687850Z PASS dossiers_40
+2026-07-25T03:31:40.5688112Z PASS dossier_classes_complete
+2026-07-25T03:31:40.5688358Z PASS equivalence_3
+2026-07-25T03:31:40.5688559Z PASS d598_completed
+2026-07-25T03:31:40.5688762Z PASS remaining_queue_617
+2026-07-25T03:31:40.5688989Z CHECKS_TOTAL=11 CHECKS_PASSED=11
+2026-07-25T03:31:40.5689227Z ALL_079_TRUTH_AUDIT_CHECKS_VALID
+2026-07-25T03:31:40.5758067Z ##[group]Run python3 tools/foundation/validate_080_adjudications.py
+2026-07-25T03:31:40.5758518Z [36;1mpython3 tools/foundation/validate_080_adjudications.py[0m
+2026-07-25T03:31:40.5783615Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:40.5783858Z env:
+2026-07-25T03:31:40.5784120Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:40.5784517Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:40.5784907Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:40.5785260Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:40.5785605Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:40.5786097Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:40.5786397Z ##[endgroup]
+2026-07-25T03:31:41.0914679Z PASS queue:617 actual=617
+2026-07-25T03:31:41.0915107Z PASS queue:stable_id_unique 
+2026-07-25T03:31:41.0915533Z PASS queue:first_batch_25 
+2026-07-25T03:31:41.0915851Z PASS reviews:25 actual=25
+2026-07-25T03:31:41.0916158Z PASS reviews:unique_ids 
+2026-07-25T03:31:41.0916473Z PASS reviews:all_full_source 
+2026-07-25T03:31:41.0916802Z PASS reviews:no_079_overlap 
+2026-07-25T03:31:41.0917049Z PASS reviews:anchors_present 
+2026-07-25T03:31:41.0917470Z PASS escalations:subset 
+2026-07-25T03:31:41.0917726Z PASS quality:empty_before_100 
+2026-07-25T03:31:41.0917961Z PASS run_state:counts 
+2026-07-25T03:31:41.0918185Z PASS run_state:cumulative 
+2026-07-25T03:31:41.0918413Z PASS legacy:tables_unchanged 
+2026-07-25T03:31:41.0918679Z CHECKS_TOTAL=13 CHECKS_PASSED=13 CHECKS_FAILED=0
+2026-07-25T03:31:41.0918995Z ALL_080_SOURCE_TEXT_ADJUDICATION_CHECKS_VALID
+2026-07-25T03:31:41.1084134Z ##[group]Run python3 tools/validate_iteration_sync.py
+2026-07-25T03:31:41.1084501Z [36;1mpython3 tools/validate_iteration_sync.py[0m
+2026-07-25T03:31:41.1111260Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:41.1111514Z env:
+2026-07-25T03:31:41.1111781Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:41.1112185Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:41.1112581Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:41.1112929Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:41.1113275Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:41.1113631Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:41.1113930Z ##[endgroup]
+2026-07-25T03:31:41.9943990Z {"checked": 43, "external_synchronization_required": true, "implementation_consistency": "PASS", "live_external_surfaces_verified": false, "repository_synchronization_closure": "PASS", "scope": "repository_local_consistency_and_synchronization_only", "status": "PASS"}
+2026-07-25T03:31:42.0129018Z ##[group]Run # Q32 is accepted historical evidence and is verified by the D4
+2026-07-25T03:31:42.0129538Z [36;1m# Q32 is accepted historical evidence and is verified by the D4[0m
+2026-07-25T03:31:42.0129973Z [36;1m# closeout validator; do not reinterpret its map delta against the[0m
+2026-07-25T03:31:42.0130337Z [36;1m# later Q32I candidate registry.[0m
+2026-07-25T03:31:42.0130696Z [36;1m# Q32I is validated era-aware (V15 Q32I-B): recompute its closure and[0m
+2026-07-25T03:31:42.0131138Z [36;1m# delta against the registry/topology/surfaces snapshot at its merge[0m
+2026-07-25T03:31:42.0131527Z [36;1m# commit, not the live (since-drifted) registry.[0m
+2026-07-25T03:31:42.0131918Z [36;1mpython3 tools/operations/validate_phase_d_closeout.py --check[0m
+2026-07-25T03:31:42.0132342Z [36;1mpython3 tools/operations/compute_change_propagation.py \[0m
+2026-07-25T03:31:42.0132770Z [36;1m  --request data/operations/propagation/121Q32I-request.json \[0m
+2026-07-25T03:31:42.0133273Z [36;1m  --output data/operations/propagation/121Q32I-closure.json \[0m
+2026-07-25T03:31:42.0133714Z [36;1m  --report reports/operations/121Q32I-change-propagation-impact.md \[0m
+2026-07-25T03:31:42.0134183Z [36;1m  --map-delta data/operations/propagation/121Q32I-system-map-delta.json \[0m
+2026-07-25T03:31:42.0134623Z [36;1m  --residue data/operations/propagation/121Q32I-residue.json \[0m
+2026-07-25T03:31:42.0135008Z [36;1m  --era-ref 0a13c246172c0338bf8dda5dc08db5a574a8b23f \[0m
+2026-07-25T03:31:42.0135310Z [36;1m  --check[0m
+2026-07-25T03:31:42.0163628Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:42.0163899Z env:
+2026-07-25T03:31:42.0164167Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:42.0164573Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:42.0164974Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:42.0165492Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:42.0165859Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:42.0166211Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:42.0166509Z ##[endgroup]
+2026-07-25T03:31:42.0867899Z PASS: Phase D closeout is valid
+2026-07-25T03:31:42.0869174Z {"error_count": 0, "errors": [], "observed_test_count": 116, "ok": true, "summary": "PASS: Phase D closeout is valid", "validator": "Q32I-D4-phase-d-closeout-validator"}
+2026-07-25T03:31:42.2557221Z {"claim_scope": "declared_relation_closure_only", "closure_hash": "be079995b291e41dcb4c9b8ffdd1997e05f9eef5763da91c9584f4ef8169f705", "fixpoint_iterations": 2, "required_surfaces": 16, "resolved_components": 19, "status": "PASS"}
+2026-07-25T03:31:42.2728927Z ##[group]Run python3 tools/operations/validate_phase_e_candidate.py --check
+2026-07-25T03:31:42.2729618Z [36;1mpython3 tools/operations/validate_phase_e_candidate.py --check[0m
+2026-07-25T03:31:42.2765681Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:42.2766017Z env:
+2026-07-25T03:31:42.2766376Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:42.2766960Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:42.2767801Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:42.2768308Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:42.2768802Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:42.2769312Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:42.2769726Z ##[endgroup]
+2026-07-25T03:31:44.7936271Z {"claim_ceiling": "Self-hosting proves deterministic planning over declared repository dependencies only; it is not real-world causal proof.", "components": 52, "decision": "FULL_REBUILD_REQUIRED", "plan_hash": "3a09efdfd060393519e73a072cb867b41f9b2b81ff9c9c46e7e152a09dc1fe56", "status": "PASS"}
+2026-07-25T03:31:44.8119355Z ##[group]Run python3 tools/generate_interactive_system_map.py --check
+2026-07-25T03:31:44.8120111Z [36;1mpython3 tools/generate_interactive_system_map.py --check[0m
+2026-07-25T03:31:44.8156637Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:44.8156963Z env:
+2026-07-25T03:31:44.8157548Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.8157994Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:44.8158358Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.8158683Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.8159000Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.8159328Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:44.8159613Z ##[endgroup]
+2026-07-25T03:31:44.8651924Z SYSTEM_MAP_DERIVED_OK nodes=100 edges=45
+2026-07-25T03:31:44.8720309Z ##[group]Run python3 tools/validate_human_front_door.py
+2026-07-25T03:31:44.8720707Z [36;1mpython3 tools/validate_human_front_door.py[0m
+2026-07-25T03:31:44.8746713Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:44.8746969Z env:
+2026-07-25T03:31:44.8747242Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.8747890Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:44.8748306Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.8748660Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.8749009Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.8749356Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:44.8749654Z ##[endgroup]
+2026-07-25T03:31:44.9287603Z {"capabilities": ["ARN", "MCF", "PSD", "点火迭代操作法"], "interactive_system_map_nodes": 100, "rendered_pages_live_verified": false, "scope": "repository_local_human_front_door_consistency_only", "status": "PASS"}
+2026-07-25T03:31:44.9363151Z ##[group]Run python3 tools/adaptive_relational_runtime/static_gate.py
+2026-07-25T03:31:44.9363814Z [36;1mpython3 tools/adaptive_relational_runtime/static_gate.py[0m
+2026-07-25T03:31:44.9396770Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:44.9397031Z env:
+2026-07-25T03:31:44.9397562Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.9397993Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:44.9398391Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.9398744Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.9399093Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:44.9399449Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:44.9399754Z ##[endgroup]
+2026-07-25T03:31:45.0046021Z == ARR static gate (anti-second-executor) ==
+2026-07-25T03:31:45.0047082Z scanned package: /home/runner/work/when-systems-catch-fire/when-systems-catch-fire/tools/adaptive_relational_runtime
+2026-07-25T03:31:45.0048029Z result: ZERO VIOLATIONS
+2026-07-25T03:31:45.0048495Z imports: within whitelist (stdlib / intra-package / 4 predecessor modules)
+2026-07-25T03:31:45.0049078Z tokens: no standalone pro.mote / evo.lve / trans.action
+2026-07-25T03:31:45.0049606Z second-executor: no subprocess/network/write paths
+2026-07-25T03:31:45.0114035Z ##[group]Run python3 -m pip install pytest
+2026-07-25T03:31:45.0114331Z [36;1mpython3 -m pip install pytest[0m
+2026-07-25T03:31:45.0114639Z [36;1mpython3 -m pytest tests/adaptive_relational_runtime/ -q[0m
+2026-07-25T03:31:45.0139586Z shell: /usr/bin/bash -e {0}
+2026-07-25T03:31:45.0139837Z env:
+2026-07-25T03:31:45.0140098Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:45.0140498Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T03:31:45.0140886Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:45.0141236Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:45.0141593Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T03:31:45.0141938Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T03:31:45.0142268Z ##[endgroup]
+2026-07-25T03:31:45.9445540Z Collecting pytest
+2026-07-25T03:31:46.0425849Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+2026-07-25T03:31:46.0674094Z Collecting iniconfig>=1.0.1 (from pytest)
+2026-07-25T03:31:46.0826917Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+2026-07-25T03:31:46.1126980Z Collecting packaging>=22 (from pytest)
+2026-07-25T03:31:46.1285818Z   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+2026-07-25T03:31:46.1519955Z Collecting pluggy<2,>=1.5 (from pytest)
+2026-07-25T03:31:46.1677167Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+2026-07-25T03:31:46.1983836Z Collecting pygments>=2.7.2 (from pytest)
+2026-07-25T03:31:46.2140503Z   Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+2026-07-25T03:31:46.2334946Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+2026-07-25T03:31:46.3030660Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+2026-07-25T03:31:46.3209227Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+2026-07-25T03:31:46.3385973Z Downloading packaging-26.2-py3-none-any.whl (100 kB)
+2026-07-25T03:31:46.3573148Z Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+2026-07-25T03:31:46.4054664Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 30.1 MB/s  0:00:00
+2026-07-25T03:31:46.4275337Z Installing collected packages: pygments, pluggy, packaging, iniconfig, pytest
+2026-07-25T03:31:47.2512883Z 
+2026-07-25T03:31:47.2528317Z Successfully installed iniconfig-2.3.0 packaging-26.2 pluggy-1.6.0 pygments-2.20.0 pytest-9.1.1
+2026-07-25T03:31:48.5842359Z ........................................................................ [ 39%]
+2026-07-25T03:31:58.5738058Z ........................................................................ [ 79%]
+2026-07-25T03:32:14.2202884Z ..............................F.......                                   [100%]
+2026-07-25T03:32:14.2203399Z =================================== FAILURES ===================================
+2026-07-25T03:32:14.2203813Z _____________________ test_current_branch_is_repair_branch _____________________
+2026-07-25T03:32:14.2204080Z 
+2026-07-25T03:32:14.2204265Z     def test_current_branch_is_repair_branch():
+2026-07-25T03:32:14.2204625Z         res = _git("rev-parse", "--abbrev-ref", "HEAD")
+2026-07-25T03:32:14.2204945Z >       assert res.stdout.strip() == REPAIR_BRANCH
+2026-07-25T03:32:14.2205310Z E       AssertionError: assert 'HEAD' == 'repair/adapt...ve-routing-r1'
+2026-07-25T03:32:14.2205643Z E         
+2026-07-25T03:32:14.2205944Z E         - repair/adaptive-relational-runtime-r2-positive-routing-r1
+2026-07-25T03:32:14.2206287Z E         + HEAD
+2026-07-25T03:32:14.2206404Z 
+2026-07-25T03:32:14.2206642Z tests/adaptive_relational_runtime/test_r2_positive_routing_repair.py:564: AssertionError
+2026-07-25T03:32:14.2207115Z =========================== short test summary info ============================
+2026-07-25T03:32:14.2208220Z FAILED tests/adaptive_relational_runtime/test_r2_positive_routing_repair.py::test_current_branch_is_repair_branch - AssertionError: assert 'HEAD' == 'repair/adapt...ve-routing-r1'
+2026-07-25T03:32:14.2208873Z   
+2026-07-25T03:32:14.2209499Z   - repair/adaptive-relational-runtime-r2-positive-routing-r1
+2026-07-25T03:32:14.2209833Z   + HEAD
+2026-07-25T03:32:14.2210042Z 1 failed, 181 passed in 26.10s
+2026-07-25T03:32:14.2531071Z ##[error]Process completed with exit code 1.
+2026-07-25T03:32:14.2649993Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-25T03:32:14.2651171Z Post job cleanup.
+2026-07-25T03:32:14.3441275Z [command]/usr/bin/git version
+2026-07-25T03:32:14.3509302Z git version 2.54.0
+2026-07-25T03:32:14.3544730Z Temporarily overriding HOME='/home/runner/work/_temp/2b494bd7-24f7-4c9b-b44f-299a1d2cd994' before making global git config changes
+2026-07-25T03:32:14.3545805Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-25T03:32:14.3549119Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/when-systems-catch-fire/when-systems-catch-fire
+2026-07-25T03:32:14.3585794Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-25T03:32:14.3615516Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-25T03:32:14.3826427Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-25T03:32:14.3847150Z http.https://github.com/.extraheader
+2026-07-25T03:32:14.3858667Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-07-25T03:32:14.3917585Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-25T03:32:14.4124824Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-25T03:32:14.4158439Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-25T03:32:14.4483015Z Cleaning up orphan processes
+2026-07-25T03:32:14.4667259Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
