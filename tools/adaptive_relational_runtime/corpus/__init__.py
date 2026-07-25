@@ -20,5 +20,30 @@ as they land.
 from __future__ import annotations
 
 from . import schemas
+from .identity import compute_identity, normalize_note_text, parse_frontmatter, scan_corpus
+from .inventory import (
+    stage_a_mechanical_pass,
+    build_corpus_manifest,
+    build_corpus_inventory,
+    build_frontmatter_audit,
+    build_note_id_audit,
+    build_encoding_parse_errors,
+)
+from .shard import build_shard_plan, shard_plan_digest, is_key_in_namespace
 
-__all__ = ["schemas"]
+__all__ = [
+    "schemas",
+    "compute_identity",
+    "normalize_note_text",
+    "parse_frontmatter",
+    "scan_corpus",
+    "stage_a_mechanical_pass",
+    "build_corpus_manifest",
+    "build_corpus_inventory",
+    "build_frontmatter_audit",
+    "build_note_id_audit",
+    "build_encoding_parse_errors",
+    "build_shard_plan",
+    "shard_plan_digest",
+    "is_key_in_namespace",
+]
