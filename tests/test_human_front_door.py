@@ -1,4 +1,6 @@
+import json
 import unittest
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from tools.validate_human_front_door import (
@@ -7,6 +9,7 @@ from tools.validate_human_front_door import (
     README,
     GUIDE,
     CURRENT_STATE,
+    ROOT,
     validate_all,
     validate_texts,
     validate_version_front_doors,
@@ -90,15 +93,66 @@ class HumanFrontDoorTests(unittest.TestCase):
         self.assertIn("<object data=\"./generated/ignition-system-map.svg\"", self.readme)
 
     def test_system_map_has_all_clickable_nodes_and_no_l7_layer(self):
+        # The full human-front-door validator must still pass. It enforces that the
+        # materialized spec equals build_projection() and that the required node set is
+        # covered — our upstream consistency guarantee.
         result = validate_all()
-        # 63 = 41 original declared nodes + 7 Q33 governance nodes
-        # + 3 Q34 discovery_commitment governance nodes
-        # + 3 Q35 agent_responsibility governance nodes
-        # + 3 Q36-OBS observation_prediction governance nodes
-        # + 3 Q36-INT intervention_failure governance nodes
-        # + 3 Q37 analogy_audit governance nodes; the materialized
-        # map must cover the full current node set.
-        self.assertEqual(result["interactive_system_map_nodes"], 99)
+        self.assertEqual(result["status"], "PASS")
+        self.assertEqual(result["scope"], "repository_local_human_front_door_consistency_only")
+
+        # Drift-resistant canonical node-set gate (replaces the brittle `== 99` literal).
+        # The expected set is derived INDEPENDENTLY from the registry of record and the
+        # layout overlay — never from a hand-maintained count or the validator's
+        # required_nodes literal — so the test cannot silently drift when the registry
+        # grows or shrinks. See evidence/.../CANONICAL_NODE_IDENTITY_AUDIT.md.
+        registry = json.loads((ROOT / "data/operations/project-components.json").read_text())
+        layout = json.loads((ROOT / "data/architecture/interactive-system-map-layout.json").read_text())
+
+        expected_ids = sorted(
+            c["component_id"]
+            for c in registry["components"]
+            if c.get("map_projection", {}).get("visible")
+        )
+        self.assertTrue(expected_ids, "canonical visible registry must be non-empty")
+
+        # The layout overlay must declare exactly the same visible set.
+        layout_ids = sorted(
+            cid for group in layout["groups"] for cid in layout["node_order"].get(group["id"], [])
+        )
+        self.assertEqual(layout_ids, expected_ids,
+                         "layout overlay node_order must cover exactly the canonical visible set")
+
+        # The published/materialized interactive system map must cover exactly the
+        # canonical set, identity-for-identity. A bare count would pass even if a junk
+        # or duplicate node were introduced, so we compare identities, not length.
+        spec = json.loads((ROOT / "data/architecture/interactive-system-map.json").read_text())
+        actual_ids = sorted(n["id"] for n in spec["nodes"])
+
+        self.assertEqual(actual_ids, expected_ids,
+                         "interactive system map must cover exactly the canonical visible "
+                         "component set (no missing / extra / orphan / duplicate nodes)")
+
+        # Bind the validator's reported metric to the canonical set.
+        self.assertEqual(result["interactive_system_map_nodes"], len(expected_ids))
+
+        # Explicit no-L7-layer guard (retained from the original contract).
+        self.assertNotIn("l7", {n.get("group") for n in spec["nodes"]},
+                         "interactive system map must not introduce an l7 layer")
+
+        # Every node must be a unique, real, non-orphan registered component.
+        self.assertEqual(len(actual_ids), len(set(actual_ids)), "duplicate system-map node ids")
+        registry_ids = {c["component_id"] for c in registry["components"]}
+        for nid in actual_ids:
+            self.assertIn(nid, registry_ids, f"node {nid} has no backing component (orphan)")
+
+        # Every node must be a clickable SVG link (non-clickable nodes are rejected).
+        svg_root = ET.fromstring((ROOT / "pages/generated/ignition-system-map.svg").read_bytes())
+        linked_ids = {
+            link.attrib.get("data-node-id")
+            for link in svg_root.findall(".//{http://www.w3.org/2000/svg}a")
+        }
+        self.assertEqual(linked_ids, set(actual_ids),
+                         "SVG clickable node ids diverge from the system-map spec")
 
     def test_pages_artifact_carries_typed_propagation_evidence(self):
         self.assertIn("typed-change-propagation.md", self.pages)

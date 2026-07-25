@@ -598,14 +598,16 @@ def test_frozen_head_is_ancestor_of_repair_head():
 
 
 def test_current_branch_is_repair_branch():
-    """The repair suite must run on a positive-routing repair branch (not main,
-    not a feature branch, not a PR merge ref). Resolution is CI-portable: under a
-    detached HEAD (GitHub Actions) the branch is taken from the CI ref env vars.
+    """The repair suite must run on an R2 repair branch (not main, not a feature
+    branch, not a PR merge ref). Resolution is CI-portable: under a detached HEAD
+    (GitHub Actions) the branch is taken from the CI ref env vars. The check is
+    portable across R2 repair sub-branches (positive-routing, human-front-door-sync,
+    ...) via the shared R2 repair family prefix.
     """
     branch = _resolve_repair_branch()
     assert branch is not None, "could not resolve a repair branch (detached HEAD with no CI ref)"
-    assert branch.startswith("repair/adaptive-relational-runtime-r2-positive-routing"), \
-        f"expected a positive-routing repair branch, got {branch!r}"
+    assert branch.startswith("repair/adaptive-relational-runtime-r2-"), \
+        f"expected an R2 repair branch (positive-routing / human-front-door-sync / ...), got {branch!r}"
 
 
 def test_ci_detached_head_branch_resolution_is_portable():
@@ -652,7 +654,7 @@ def test_ci_detached_head_branch_resolution_is_portable():
         pytest.skip("detached HEAD: local git fallback path not applicable here")
     resolved = _resolve_repair_branch(env=env_local)
     assert resolved is not None and resolved.startswith(
-        "repair/adaptive-relational-runtime-r2-positive-routing"
+        "repair/adaptive-relational-runtime-r2-"
     ), f"local git fallback failed: {resolved!r}"
 
 
