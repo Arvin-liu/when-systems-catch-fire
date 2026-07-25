@@ -54,7 +54,8 @@ def run_full(
     out.mkdir(parents=True, exist_ok=True)
 
     records = stage_a_mechanical_pass(corpus_root)
-    plan = build_shard_plan([r.identity for r in records], shard_count, frozen_corpus_ref)
+    notes = [r for r in records if r.identity.note_type != "index"]
+    plan = build_shard_plan([r.identity for r in notes], shard_count, frozen_corpus_ref)
 
     _write(out, "CORPUS_MANIFEST.json", build_corpus_manifest(records, frozen_corpus_ref))
     _write(out, "CORPUS_INVENTORY.json", build_corpus_inventory(records))

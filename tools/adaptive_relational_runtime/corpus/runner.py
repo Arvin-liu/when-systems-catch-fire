@@ -75,6 +75,9 @@ def run_corpus(config: CorpusRunConfig) -> RunResult:
     out = Path(config.out_dir)
     out.mkdir(parents=True, exist_ok=True)
     recs = stage_a_mechanical_pass(config.corpus_root)
+    # The index file (索引.md) is recorded in the manifest/inventory but is not a
+    # note; it is excluded from Stage B processing and receipt emission.
+    recs = [r for r in recs if r.identity.note_type != "index"]
     by_key = {r.identity.object_key: r for r in recs}
     plan = build_shard_plan([r.identity for r in recs], config.shard_count, config.frozen_corpus_ref)
     run_id = schemas.make_run_id(config.frozen_corpus_ref, plan.object_count, plan.plan_digest)
@@ -163,7 +166,7 @@ def _key_changed(receipt_dir: Path, key: str, rec: Optional[schemas.StageAMechan
     if not path.exists():
         return False
     try:
-        stored = schemas.canonical_json(json_load(path))
+        stored = json_load(path)
         return stored.get("byte_sha256") != rec.identity.byte_sha256
     except Exception:
         return True

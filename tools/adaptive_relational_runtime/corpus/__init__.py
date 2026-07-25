@@ -43,6 +43,7 @@ from .private_ref import build_private_ref, export_receipt_ref
 from .analysis import compute_analysis
 from .aggregate import compute_aggregate_metrics
 from .driver import run_full
+from .cli import main as cli_main
 
 __all__ = [
     "schemas",

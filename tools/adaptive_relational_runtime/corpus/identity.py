@@ -41,9 +41,10 @@ def parse_frontmatter(raw_text: str) -> tuple[dict, bool, list]:
         if _FRONTMASTER_RE.match(lines[i].strip()):
             end = i
             break
-    if end is None:
-        return fm, False, ["missing closing --- frontmatter delimiter"]
-    body_lines = lines[1:end]
+    valid = end is not None
+    if not valid:
+        warnings.append("missing closing --- frontmatter delimiter (best-effort parse)")
+    body_lines = lines[1:end] if end is not None else lines[1:]
     for ln in body_lines:
         if not ln.strip() or ln.strip().startswith("#"):
             continue
@@ -56,7 +57,7 @@ def parse_frontmatter(raw_text: str) -> tuple[dict, bool, list]:
         val = m.group("q") if m.group("q") is not None else m.group("u")
         if key in _SCALAR_KEYS:
             fm[key] = val
-    return fm, True, warnings
+    return fm, valid, warnings
 
 
 def normalize_note_text(raw_text: str) -> tuple[str, str, list]:
