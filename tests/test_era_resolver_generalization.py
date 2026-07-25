@@ -45,9 +45,12 @@ AUTHORITY_PATH = ROOT / "data" / "operations" / "generated-output-authority.json
 VALIDATOR = ROOT / "tools" / "operations" / "validate_generated_output_authority.py"
 
 # Merged (frozen-era) iterations that must resolve to a non-None era_ref.
-FROZEN_TASKS = ["121Q25", "121Q25C", "121Q25D", "121Q32", "121Q32I"]
+# 121Q33 is genuinely merged into main (its merge_commit
+# cf321f92014268af40cf9aa9231fe8a4f814b031 is an ancestor of origin/main), so its
+# era_ref is the sealed merge commit, not None — it belongs in FROZEN_TASKS.
+FROZEN_TASKS = ["121Q25", "121Q25C", "121Q25D", "121Q32", "121Q32I", "121Q33"]
 # Live (unmerged) candidate iterations — era_ref must be None.
-LIVE_TASKS = ["121Q25B", "121Q33"]
+LIVE_TASKS = ["121Q25B"]
 # CI's compute_change_propagation --era-ref for the Q32I change set. The generic
 # resolver must reproduce this exact boundary (no drift). Only a TEST may name it.
 CI_Q32I_ERA_REF = "0a13c246172c0338bf8dda5dc08db5a574a8b23f"
@@ -112,11 +115,15 @@ class EraResolverGeneralizationTests(unittest.TestCase):
             )
 
     def test_resolve_for_request_reads_task_id(self):
-        req = _load(ROOT / "data/operations/propagation/121Q33-request.json")
+        # resolve_era_for_request must read task_id from the request and resolve
+        # generically (no special-casing). 121Q25B is a live (unmerged) candidate,
+        # so era_ref is None and the diff window is base..HEAD. (121Q33 is merged;
+        # its frozen era_ref is covered by test_frozen_iterations_resolve_to_era_ref.)
+        req = {"task_id": "121Q25B"}
         era = resolve_era_for_request(ROOT, req)
         self.assertIsNone(era["era_ref"])
         self.assertEqual(
-            era["base"], "f54577a9084d0ac6e374341d96836c5d52bc3b8c"
+            era["base"], "7fc4b309720ea1b4e9c4b47477c2f423860d53df"
         )
 
     # ---- (f) generic resolver reproduces CI-era boundary exactly -----------------

@@ -1,0 +1,636 @@
+﻿2026-07-25T05:11:32.5691664Z Current runner version: '2.336.0'
+2026-07-25T05:11:32.5718919Z ##[group]Runner Image Provisioner
+2026-07-25T05:11:32.5719858Z Hosted Compute Agent
+2026-07-25T05:11:32.5720445Z Version: 20260707.563
+2026-07-25T05:11:32.5721049Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+2026-07-25T05:11:32.5721866Z Build Date: 2026-07-07T19:33:50Z
+2026-07-25T05:11:32.5722530Z Worker ID: {086e00d2-71a2-4235-b6a6-d040dfb56224}
+2026-07-25T05:11:32.5723255Z Azure Region: westus2
+2026-07-25T05:11:32.5723829Z ##[endgroup]
+2026-07-25T05:11:32.5725594Z ##[group]Operating System
+2026-07-25T05:11:32.5726365Z Ubuntu
+2026-07-25T05:11:32.5726870Z 24.04.4
+2026-07-25T05:11:32.5727350Z LTS
+2026-07-25T05:11:32.5727921Z ##[endgroup]
+2026-07-25T05:11:32.5728451Z ##[group]Runner Image
+2026-07-25T05:11:32.5729114Z Image: ubuntu-24.04
+2026-07-25T05:11:32.5729730Z Version: 20260720.247.2
+2026-07-25T05:11:32.5731095Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+2026-07-25T05:11:32.5732646Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+2026-07-25T05:11:32.5733682Z ##[endgroup]
+2026-07-25T05:11:32.5734981Z ##[group]GITHUB_TOKEN Permissions
+2026-07-25T05:11:32.5737337Z Contents: read
+2026-07-25T05:11:32.5737957Z Metadata: read
+2026-07-25T05:11:32.5738537Z ##[endgroup]
+2026-07-25T05:11:32.5740837Z Secret source: Actions
+2026-07-25T05:11:32.5741860Z Prepare workflow directory
+2026-07-25T05:11:32.6109253Z Prepare all required actions
+2026-07-25T05:11:32.6176321Z Getting action download info
+2026-07-25T05:11:32.9608342Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-07-25T05:11:33.2547425Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-07-25T05:11:33.4928208Z Complete job name: validate
+2026-07-25T05:11:33.5896351Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-25T05:11:33.5906210Z ##[group]Run actions/checkout@v4
+2026-07-25T05:11:33.5906973Z with:
+2026-07-25T05:11:33.5907397Z   fetch-depth: 0
+2026-07-25T05:11:33.5907905Z   repository: Arvin-liu/when-systems-catch-fire
+2026-07-25T05:11:33.5911877Z   token: ***
+2026-07-25T05:11:33.5912306Z   ssh-strict: true
+2026-07-25T05:11:33.5912730Z   ssh-user: git
+2026-07-25T05:11:33.5913158Z   persist-credentials: true
+2026-07-25T05:11:33.5913628Z   clean: true
+2026-07-25T05:11:33.5914094Z   sparse-checkout-cone-mode: true
+2026-07-25T05:11:33.5914920Z   fetch-tags: false
+2026-07-25T05:11:33.5915365Z   show-progress: true
+2026-07-25T05:11:33.5915796Z   lfs: false
+2026-07-25T05:11:33.5916242Z   submodules: false
+2026-07-25T05:11:33.5916688Z   set-safe-directory: true
+2026-07-25T05:11:33.5917181Z   allow-unsafe-pr-checkout: false
+2026-07-25T05:11:33.5918010Z ##[endgroup]
+2026-07-25T05:11:33.7070405Z Syncing repository: Arvin-liu/when-systems-catch-fire
+2026-07-25T05:11:33.7073507Z ##[group]Getting Git version info
+2026-07-25T05:11:33.7075327Z Working directory is '/home/runner/work/when-systems-catch-fire/when-systems-catch-fire'
+2026-07-25T05:11:33.7077513Z [command]/usr/bin/git version
+2026-07-25T05:11:33.7142441Z git version 2.54.0
+2026-07-25T05:11:33.7211874Z ##[endgroup]
+2026-07-25T05:11:33.7224287Z Temporarily overriding HOME='/home/runner/work/_temp/dcf2611f-5526-4853-987c-7aa35e4d7109' before making global git config changes
+2026-07-25T05:11:33.7227217Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-25T05:11:33.7231407Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/when-systems-catch-fire/when-systems-catch-fire
+2026-07-25T05:11:33.7287838Z Deleting the contents of '/home/runner/work/when-systems-catch-fire/when-systems-catch-fire'
+2026-07-25T05:11:33.7290963Z ##[group]Initializing the repository
+2026-07-25T05:11:33.7297414Z [command]/usr/bin/git init /home/runner/work/when-systems-catch-fire/when-systems-catch-fire
+2026-07-25T05:11:33.7410298Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-07-25T05:11:33.7412160Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-07-25T05:11:33.7413804Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-07-25T05:11:33.7415301Z hint: call:
+2026-07-25T05:11:33.7415919Z hint:
+2026-07-25T05:11:33.7416696Z hint: 	git config --global init.defaultBranch <name>
+2026-07-25T05:11:33.7417656Z hint:
+2026-07-25T05:11:33.7418602Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-07-25T05:11:33.7420265Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-07-25T05:11:33.7421506Z hint:
+2026-07-25T05:11:33.7422305Z hint: 	git branch -m <name>
+2026-07-25T05:11:33.7423062Z hint:
+2026-07-25T05:11:33.7425600Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-07-25T05:11:33.7427545Z Initialized empty Git repository in /home/runner/work/when-systems-catch-fire/when-systems-catch-fire/.git/
+2026-07-25T05:11:33.7430319Z [command]/usr/bin/git remote add origin https://github.com/Arvin-liu/when-systems-catch-fire
+2026-07-25T05:11:33.7489255Z ##[endgroup]
+2026-07-25T05:11:33.7490553Z ##[group]Disabling automatic garbage collection
+2026-07-25T05:11:33.7492951Z [command]/usr/bin/git config --local gc.auto 0
+2026-07-25T05:11:33.7529804Z ##[endgroup]
+2026-07-25T05:11:33.7531079Z ##[group]Setting up auth
+2026-07-25T05:11:33.7541163Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-25T05:11:33.7585269Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-25T05:11:33.7989749Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-25T05:11:33.8037676Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-25T05:11:33.8279559Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-25T05:11:33.8323007Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-25T05:11:33.8567572Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-07-25T05:11:33.8610571Z ##[endgroup]
+2026-07-25T05:11:33.8611435Z ##[group]Fetching the repository
+2026-07-25T05:11:33.8623129Z [command]/usr/bin/git -c protocol.version=2 fetch --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/* +b7844212534488d69e0e0dca324dc94c39bd3302:refs/remotes/pull/124/merge
+2026-07-25T05:11:36.0425161Z From https://github.com/Arvin-liu/when-systems-catch-fire
+2026-07-25T05:11:36.0428914Z  * [new branch]        agent/121q30-homepage-zhiyuan-showcase   -> origin/agent/121q30-homepage-zhiyuan-showcase
+2026-07-25T05:11:36.0433181Z  * [new branch]        agent/121q31-interactive-system-map      -> origin/agent/121q31-interactive-system-map
+2026-07-25T05:11:36.0437601Z  * [new branch]        agent/121q32-typed-change-propagation    -> origin/agent/121q32-typed-change-propagation
+2026-07-25T05:11:36.0442547Z  * [new branch]        agent/121q32i-incremental-execution      -> origin/agent/121q32i-incremental-execution
+2026-07-25T05:11:36.0446676Z  * [new branch]        agent/121q33-global-copyright-risk-and-rights-governance -> origin/agent/121q33-global-copyright-risk-and-rights-governance
+2026-07-25T05:11:36.0449875Z  * [new branch]        agent/121q33-lifecycle-closeout          -> origin/agent/121q33-lifecycle-closeout
+2026-07-25T05:11:36.0453048Z  * [new branch]        agent/121q34-i1-discovery-commitment-boundary -> origin/agent/121q34-i1-discovery-commitment-boundary
+2026-07-25T05:11:36.0457134Z  * [new branch]        agent/121q35-i1-responsibility-authority-action-trace -> origin/agent/121q35-i1-responsibility-authority-action-trace
+2026-07-25T05:11:36.0461376Z  * [new branch]        agent/121q36-int-i1-intervention-failure-dynamics -> origin/agent/121q36-int-i1-intervention-failure-dynamics
+2026-07-25T05:11:36.0466095Z  * [new branch]        agent/121q36-obs-i1-observation-prediction-calibration -> origin/agent/121q36-obs-i1-observation-prediction-calibration
+2026-07-25T05:11:36.0470566Z  * [new branch]        agent/121q37-i1-analogy-audit-transportability -> origin/agent/121q37-i1-analogy-audit-transportability
+2026-07-25T05:11:36.0475062Z  * [new branch]        agent/121q38-i1-case-counterexample-boundary-evidence -> origin/agent/121q38-i1-case-counterexample-boundary-evidence
+2026-07-25T05:11:36.0479523Z  * [new branch]        agent/121q39-i1-failure-memory-repair-propagation -> origin/agent/121q39-i1-failure-memory-repair-propagation
+2026-07-25T05:11:36.0484025Z  * [new branch]        agent/adaptive-relational-runtime-r1-scaffold-20260724 -> origin/agent/adaptive-relational-runtime-r1-scaffold-20260724
+2026-07-25T05:11:36.0488322Z  * [new branch]        agent/d2-i1-multi-history-world-projection -> origin/agent/d2-i1-multi-history-world-projection
+2026-07-25T05:11:36.0493081Z  * [new branch]        agent/decision-integrity-i1-principle-lock-process-outcome-governance -> origin/agent/decision-integrity-i1-principle-lock-process-outcome-governance
+2026-07-25T05:11:36.0497926Z  * [new branch]        agent/f15-d1-i1-latent-system-identifiability -> origin/agent/f15-d1-i1-latent-system-identifiability
+2026-07-25T05:11:36.0501842Z  * [new branch]        agent/q41-i1-world-feedback-anomaly-governance -> origin/agent/q41-i1-world-feedback-anomaly-governance
+2026-07-25T05:11:36.0506080Z  * [new branch]        agent/q42-i1-counterfactual-unrealized-path-ledger -> origin/agent/q42-i1-counterfactual-unrealized-path-ledger
+2026-07-25T05:11:36.0510391Z  * [new branch]        agent/q43-i1-graded-intervention-professional-escalation -> origin/agent/q43-i1-graded-intervention-professional-escalation
+2026-07-25T05:11:36.0514937Z  * [new branch]        agent/q44-i1-coaching-commitment-subcapability -> origin/agent/q44-i1-coaching-commitment-subcapability
+2026-07-25T05:11:36.0519307Z  * [new branch]        agent/scientific-context-protocol-i1-open-research-context -> origin/agent/scientific-context-protocol-i1-open-research-context
+2026-07-25T05:11:36.0524646Z  * [new branch]        agent/scientific-metacognition-i1-epistemic-state-control-plane -> origin/agent/scientific-metacognition-i1-epistemic-state-control-plane
+2026-07-25T05:11:36.0529952Z  * [new branch]        agent/symbolic-sphere-i1-symbol-power-perspective-governance -> origin/agent/symbolic-sphere-i1-symbol-power-perspective-governance
+2026-07-25T05:11:36.0535125Z  * [new branch]        architecture/121q12-effectual-mechanism-dual-loop-20260715 -> origin/architecture/121q12-effectual-mechanism-dual-loop-20260715
+2026-07-25T05:11:36.0540383Z  * [new branch]        architecture/121q13-attention-distribution-compression-20260715 -> origin/architecture/121q13-attention-distribution-compression-20260715
+2026-07-25T05:11:36.0545907Z  * [new branch]        architecture/121q14-ignition-atlas-dynamic-landscape-20260715 -> origin/architecture/121q14-ignition-atlas-dynamic-landscape-20260715
+2026-07-25T05:11:36.0550800Z  * [new branch]        architecture/121q21r-multiscale-causal-fabric-20260716 -> origin/architecture/121q21r-multiscale-causal-fabric-20260716
+2026-07-25T05:11:36.0555818Z  * [new branch]        architecture/121q22-probabilistic-system-dynamics-20260716 -> origin/architecture/121q22-probabilistic-system-dynamics-20260716
+2026-07-25T05:11:36.0560724Z  * [new branch]        architecture/121q23-adaptive-relational-network-20260716 -> origin/architecture/121q23-adaptive-relational-network-20260716
+2026-07-25T05:11:36.0565981Z  * [new branch]        architecture/adaptive-relational-runtime-r1-scaffold -> origin/architecture/adaptive-relational-runtime-r1-scaffold
+2026-07-25T05:11:36.0570181Z  * [new branch]        audit/065-two-route-blocked-verdict-20260712 -> origin/audit/065-two-route-blocked-verdict-20260712
+2026-07-25T05:11:36.0573745Z  * [new branch]        audit/function-id-mapping-20260709       -> origin/audit/function-id-mapping-20260709
+2026-07-25T05:11:36.0577144Z  * [new branch]        case/book-validation-22-20260709         -> origin/case/book-validation-22-20260709
+2026-07-25T05:11:36.0580622Z  * [new branch]        codex/meta-protocols-main-release-20260711 -> origin/codex/meta-protocols-main-release-20260711
+2026-07-25T05:11:36.0584784Z  * [new branch]        codex/meta-protocols-main-release-clean-20260711 -> origin/codex/meta-protocols-main-release-clean-20260711
+2026-07-25T05:11:36.0588490Z  * [new branch]        codex/readme-main-base-20260710          -> origin/codex/readme-main-base-20260710
+2026-07-25T05:11:36.0591998Z  * [new branch]        collision/disobedience-subjectivity-20260711 -> origin/collision/disobedience-subjectivity-20260711
+2026-07-25T05:11:36.0595880Z  * [new branch]        docs/121q19-readme-human-ai-entry-20260715 -> origin/docs/121q19-readme-human-ai-entry-20260715
+2026-07-25T05:11:36.0600049Z  * [new branch]        docs/121q20-readable-prompt-and-pages-frontdoor-20260716 -> origin/docs/121q20-readable-prompt-and-pages-frontdoor-20260716
+2026-07-25T05:11:36.0604768Z  * [new branch]        docs/121q25-human-front-door-capability-sync-20260716 -> origin/docs/121q25-human-front-door-capability-sync-20260716
+2026-07-25T05:11:36.0609419Z  * [new branch]        docs/121q28-embodied-cognitive-leap-writing-method-20260716 -> origin/docs/121q28-embodied-cognitive-leap-writing-method-20260716
+2026-07-25T05:11:36.0613757Z  * [new branch]        docs/get-brain-latest-status-20260712    -> origin/docs/get-brain-latest-status-20260712
+2026-07-25T05:11:36.0617559Z  * [new branch]        docs/life-community-value-charter-20260711 -> origin/docs/life-community-value-charter-20260711
+2026-07-25T05:11:36.0621257Z  * [new branch]        docs/meta-protocol-normative-reviews-20260711 -> origin/docs/meta-protocol-normative-reviews-20260711
+2026-07-25T05:11:36.0625285Z  * [new branch]        feature/narrative-output-layer-gap-map-20260712 -> origin/feature/narrative-output-layer-gap-map-20260712
+2026-07-25T05:11:36.0629406Z  * [new branch]        fix/056-independent-audit-no-quota-collision-20260712 -> origin/fix/056-independent-audit-no-quota-collision-20260712
+2026-07-25T05:11:36.0633361Z  * [new branch]        fix/d583-portable-source-reference-20260711 -> origin/fix/d583-portable-source-reference-20260711
+2026-07-25T05:11:36.0637691Z  * [new branch]        governance/121q8-charter-sustainability-licensing-20260715 -> origin/governance/121q8-charter-sustainability-licensing-20260715
+2026-07-25T05:11:36.0641611Z  * [new branch]        lab/121-night-train-deep-audit-v2        -> origin/lab/121-night-train-deep-audit-v2
+2026-07-25T05:11:36.0644836Z  * [new branch]        lab/121q33-rights-governance-night       -> origin/lab/121q33-rights-governance-night
+2026-07-25T05:11:36.0648000Z  * [new branch]        lab/121q34-discovery-commitment-night    -> origin/lab/121q34-discovery-commitment-night
+2026-07-25T05:11:36.0650977Z  * [new branch]        lab/121q35-agent-duty-night              -> origin/lab/121q35-agent-duty-night
+2026-07-25T05:11:36.0653908Z  * [new branch]        lab/121q36-temporal-causality-night      -> origin/lab/121q36-temporal-causality-night
+2026-07-25T05:11:36.0657032Z  * [new branch]        lab/121q37-analogy-audit-night           -> origin/lab/121q37-analogy-audit-night
+2026-07-25T05:11:36.0660073Z  * [new branch]        lab/121q38-structural-retrieval-night    -> origin/lab/121q38-structural-retrieval-night
+2026-07-25T05:11:36.0663154Z  * [new branch]        lab/121q39-failure-memory-night          -> origin/lab/121q39-failure-memory-night
+2026-07-25T05:11:36.0665960Z  * [new branch]        main                                     -> origin/main
+2026-07-25T05:11:36.0669470Z  * [new branch]        ops/121q24-ignition-iteration-method-current-state-sync-20260716 -> origin/ops/121q24-ignition-iteration-method-current-state-sync-20260716
+2026-07-25T05:11:36.0674003Z  * [new branch]        ops/121q7-foundation-ci-mail-storm-repair-20260715 -> origin/ops/121q7-foundation-ci-mail-storm-repair-20260715
+2026-07-25T05:11:36.0677883Z  * [new branch]        production/ignition-run-promote-evolve-r1 -> origin/production/ignition-run-promote-evolve-r1
+2026-07-25T05:11:36.0681392Z  * [new branch]        protocol/entries-and-table-relation-20260709 -> origin/protocol/entries-and-table-relation-20260709
+2026-07-25T05:11:36.0684884Z  * [new branch]        protocol/layer-foundation-20260709       -> origin/protocol/layer-foundation-20260709
+2026-07-25T05:11:36.0688437Z  * [new branch]        reality/121q16-sustainability-signal-pilot-20260715 -> origin/reality/121q16-sustainability-signal-pilot-20260715
+2026-07-25T05:11:36.0692508Z  * [new branch]        records/ignition-067-open-publication-layer-20260712 -> origin/records/ignition-067-open-publication-layer-20260712
+2026-07-25T05:11:36.0697033Z  * [new branch]        records/ignition-069-exhaustive-publication-atlas-20260712 -> origin/records/ignition-069-exhaustive-publication-atlas-20260712
+2026-07-25T05:11:36.0701078Z  * [new branch]        records/ignition-071-ai-first-readme-20260712 -> origin/records/ignition-071-ai-first-readme-20260712
+2026-07-25T05:11:36.0705137Z  * [new branch]        records/ignition-073-dual-front-door-live-link-20260712 -> origin/records/ignition-073-dual-front-door-live-link-20260712
+2026-07-25T05:11:36.0709159Z  * [new branch]        records/ignition-074-preview-link-truth-20260712 -> origin/records/ignition-074-preview-link-truth-20260712
+2026-07-25T05:11:36.0713009Z  * [new branch]        records/ignition-075-math-foundation-20260712 -> origin/records/ignition-075-math-foundation-20260712
+2026-07-25T05:11:36.0717382Z  * [new branch]        records/ignition-076-foundation-architecture-rebuild-20260712 -> origin/records/ignition-076-foundation-architecture-rebuild-20260712
+2026-07-25T05:11:36.0721868Z  * [new branch]        records/ignition-078-core-kernel-formalization-20260713 -> origin/records/ignition-078-core-kernel-formalization-20260713
+2026-07-25T05:11:36.0726079Z  * [new branch]        records/ignition-079-semantic-truth-audit-20260713 -> origin/records/ignition-079-semantic-truth-audit-20260713
+2026-07-25T05:11:36.0730222Z  * [new branch]        records/ignition-080-full-semantic-adjudication-20260713 -> origin/records/ignition-080-full-semantic-adjudication-20260713
+2026-07-25T05:11:36.0735063Z  * [new branch]        records/ignition-081-glm52-complete-semantic-adjudication-20260713 -> origin/records/ignition-081-glm52-complete-semantic-adjudication-20260713
+2026-07-25T05:11:36.0739896Z  * [new branch]        records/ignition-083-glm-high-repair-and-max-queue-20260713 -> origin/records/ignition-083-glm-high-repair-and-max-queue-20260713
+2026-07-25T05:11:36.0744149Z  * [new branch]        records/ignition-084-glm52-max-adjudication-20260713 -> origin/records/ignition-084-glm52-max-adjudication-20260713
+2026-07-25T05:11:36.0748701Z  * [new branch]        records/ignition-085-architecture-structure-freeze-20260713 -> origin/records/ignition-085-architecture-structure-freeze-20260713
+2026-07-25T05:11:36.0753640Z  * [new branch]        records/ignition-087-unesco-discipline-projection-gap-closure-20260713 -> origin/records/ignition-087-unesco-discipline-projection-gap-closure-20260713
+2026-07-25T05:11:36.0758999Z  * [new branch]        records/ignition-088-external-literature-gap-source-atlas-20260713 -> origin/records/ignition-088-external-literature-gap-source-atlas-20260713
+2026-07-25T05:11:36.0764400Z  * [new branch]        records/ignition-104-dual-088-reconciliation-external-evidence-layer-20260713 -> origin/records/ignition-104-dual-088-reconciliation-external-evidence-layer-20260713
+2026-07-25T05:11:36.0769926Z  * [new branch]        records/ignition-105-intervention-control-evidence-20260713 -> origin/records/ignition-105-intervention-control-evidence-20260713
+2026-07-25T05:11:36.0774808Z  * [new branch]        records/ignition-106-repair-105-evidence-and-validator-20260713 -> origin/records/ignition-106-repair-105-evidence-and-validator-20260713
+2026-07-25T05:11:36.0779246Z  * [new branch]        records/ignition-120-function-paradigm-atlas-20260713 -> origin/records/ignition-120-function-paradigm-atlas-20260713
+2026-07-25T05:11:36.0786313Z  * [new branch]        records/ignition-121-fulltext-resolver-and-120-repair-20260714 -> origin/records/ignition-121-fulltext-resolver-and-120-repair-20260714
+2026-07-25T05:11:36.0791729Z  * [new branch]        records/ignition-121c01-max-semantic-review-batch-01-20260714 -> origin/records/ignition-121c01-max-semantic-review-batch-01-20260714
+2026-07-25T05:11:36.0798694Z  * [new branch]        records/ignition-121cn-night-long-haul-20260714 -> origin/records/ignition-121cn-night-long-haul-20260714
+2026-07-25T05:11:36.0805909Z  * [new branch]        records/ignition-121cx-codex56-extreme-takeover-20260714 -> origin/records/ignition-121cx-codex56-extreme-takeover-20260714
+2026-07-25T05:11:36.0812665Z  * [new branch]        records/ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714 -> origin/records/ignition-121q1-qclaw-deepseek-v4-pro-batch01-20260714
+2026-07-25T05:11:36.0820755Z  * [new branch]        records/ignition-121q2-night-acceptance-family-synthesis-20260714 -> origin/records/ignition-121q2-night-acceptance-family-synthesis-20260714
+2026-07-25T05:11:36.0828577Z  * [new branch]        records/ignition-121q2v-verification-repair-20260715 -> origin/records/ignition-121q2v-verification-repair-20260715
+2026-07-25T05:11:36.0836021Z  * [new branch]        records/ignition-121q2w-final-consistency-seal-20260715 -> origin/records/ignition-121q2w-final-consistency-seal-20260715
+2026-07-25T05:11:36.0843244Z  * [new branch]        records/ignition-121q3-gap-functionos-asset-mapping-20260715 -> origin/records/ignition-121q3-gap-functionos-asset-mapping-20260715
+2026-07-25T05:11:36.0851311Z  * [new branch]        records/ignition-121q4-v4pro-symbolic-function-os-reference-20260715 -> origin/records/ignition-121q4-v4pro-symbolic-function-os-reference-20260715
+2026-07-25T05:11:36.0859576Z  * [new branch]        records/ignition-121q5-v4pro-canonical-function-os-v02-20260715 -> origin/records/ignition-121q5-v4pro-canonical-function-os-v02-20260715
+2026-07-25T05:11:36.0867678Z  * [new branch]        records/ignition-121q6-hy3-v021-hardening-reproducibility-20260715 -> origin/records/ignition-121q6-hy3-v021-hardening-reproducibility-20260715
+2026-07-25T05:11:36.0875816Z  * [new branch]        records/ignition-121q6c-hy3-completion-merge-readiness-20260715 -> origin/records/ignition-121q6c-hy3-completion-merge-readiness-20260715
+2026-07-25T05:11:36.0882986Z  * [new branch]        records/ignition-121q6d-hy3-ci-e2e-seal-repair-20260715 -> origin/records/ignition-121q6d-hy3-ci-e2e-seal-repair-20260715
+2026-07-25T05:11:36.0890349Z  * [new branch]        release/121q9-license-activation-cumulative-candidate-20260715 -> origin/release/121q9-license-activation-cumulative-candidate-20260715
+2026-07-25T05:11:36.0897082Z  * [new branch]        repair-r2/d2-r2-multihistory-semantics   -> origin/repair-r2/d2-r2-multihistory-semantics
+2026-07-25T05:11:36.0902748Z  * [new branch]        repair-r2/decision-integrity-r2-parent-and-semantics -> origin/repair-r2/decision-integrity-r2-parent-and-semantics
+2026-07-25T05:11:36.0908872Z  * [new branch]        repair-r2/f15-d1-r2-identifiability-semantics -> origin/repair-r2/f15-d1-r2-identifiability-semantics
+2026-07-25T05:11:36.0913851Z  * [new branch]        repair-r2/q41-r2-anomaly-semantics       -> origin/repair-r2/q41-r2-anomaly-semantics
+2026-07-25T05:11:36.0918997Z  * [new branch]        repair-r2/q42-r2-counterfactual-semantics -> origin/repair-r2/q42-r2-counterfactual-semantics
+2026-07-25T05:11:36.0924019Z  * [new branch]        repair-r2/q43-r2-escalation-semantics    -> origin/repair-r2/q43-r2-escalation-semantics
+2026-07-25T05:11:36.0929251Z  * [new branch]        repair-r2/q44-r2-consent-semantics       -> origin/repair-r2/q44-r2-consent-semantics
+2026-07-25T05:11:36.0935319Z  * [new branch]        repair-r2/scientific-context-protocol-r2-context-semantics -> origin/repair-r2/scientific-context-protocol-r2-context-semantics
+2026-07-25T05:11:36.0942731Z  * [new branch]        repair-r2/scientific-metacognition-r2-parent-and-semantics -> origin/repair-r2/scientific-metacognition-r2-parent-and-semantics
+2026-07-25T05:11:36.0949655Z  * [new branch]        repair-r2/symbolic-sphere-r2-shared-engine-hardening -> origin/repair-r2/symbolic-sphere-r2-shared-engine-hardening
+2026-07-25T05:11:36.0955322Z  * [new branch]        repair-r3/d2-r3-semantic-evaluator       -> origin/repair-r3/d2-r3-semantic-evaluator
+2026-07-25T05:11:36.0960683Z  * [new branch]        repair-r3/decision-integrity-r3-semantic-evaluator -> origin/repair-r3/decision-integrity-r3-semantic-evaluator
+2026-07-25T05:11:36.0966336Z  * [new branch]        repair-r3/f15-d1-r3-semantic-evaluator   -> origin/repair-r3/f15-d1-r3-semantic-evaluator
+2026-07-25T05:11:36.0971130Z  * [new branch]        repair-r3/q41-r3-semantic-evaluator      -> origin/repair-r3/q41-r3-semantic-evaluator
+2026-07-25T05:11:36.0975669Z  * [new branch]        repair-r3/q42-r3-semantic-evaluator      -> origin/repair-r3/q42-r3-semantic-evaluator
+2026-07-25T05:11:36.0980284Z  * [new branch]        repair-r3/q43-r3-semantic-evaluator      -> origin/repair-r3/q43-r3-semantic-evaluator
+2026-07-25T05:11:36.0984409Z  * [new branch]        repair-r3/q44-r3-semantic-evaluator      -> origin/repair-r3/q44-r3-semantic-evaluator
+2026-07-25T05:11:36.0988608Z  * [new branch]        repair-r3/scientific-context-protocol-r3-semantic-evaluator -> origin/repair-r3/scientific-context-protocol-r3-semantic-evaluator
+2026-07-25T05:11:36.0992821Z  * [new branch]        repair-r3/scientific-metacognition-r3-semantic-evaluator -> origin/repair-r3/scientific-metacognition-r3-semantic-evaluator
+2026-07-25T05:11:36.0997123Z  * [new branch]        repair-r3/symbolic-sphere-r3-semantic-evaluator-contract -> origin/repair-r3/symbolic-sphere-r3-semantic-evaluator-contract
+2026-07-25T05:11:36.1000688Z  * [new branch]        repair/121q34-r1-commitment-evidence-binding -> origin/repair/121q34-r1-commitment-evidence-binding
+2026-07-25T05:11:36.1003655Z  * [new branch]        repair/121q35-r1-authority-resolution    -> origin/repair/121q35-r1-authority-resolution
+2026-07-25T05:11:36.1007044Z  * [new branch]        repair/121q36-int-r1-content-authority-binding -> origin/repair/121q36-int-r1-content-authority-binding
+2026-07-25T05:11:36.1010154Z  * [new branch]        repair/121q36-obs-r1-evidence-resolution -> origin/repair/121q36-obs-r1-evidence-resolution
+2026-07-25T05:11:36.1013860Z  * [new branch]        repair/121q37-r1-final-head-and-source-binding -> origin/repair/121q37-r1-final-head-and-source-binding
+2026-07-25T05:11:36.1017229Z  * [new branch]        repair/121q38-r1-retrieved-byte-binding  -> origin/repair/121q38-r1-retrieved-byte-binding
+2026-07-25T05:11:36.1020270Z  * [new branch]        repair/121q39-r1-repair-effect-recomputation -> origin/repair/121q39-r1-repair-effect-recomputation
+2026-07-25T05:11:36.1024062Z  * [new branch]        repair/adaptive-relational-runtime-r2-human-front-door-sync-r1 -> origin/repair/adaptive-relational-runtime-r2-human-front-door-sync-r1
+2026-07-25T05:11:36.1028696Z  * [new branch]        repair/adaptive-relational-runtime-r2-positive-routing-ci-r1 -> origin/repair/adaptive-relational-runtime-r2-positive-routing-ci-r1
+2026-07-25T05:11:36.1034704Z  * [new branch]        repair/adaptive-relational-runtime-r2-positive-routing-r1 -> origin/repair/adaptive-relational-runtime-r2-positive-routing-r1
+2026-07-25T05:11:36.1041031Z  * [new branch]        repair/d2-r1-multi-history-world-projection -> origin/repair/d2-r1-multi-history-world-projection
+2026-07-25T05:11:36.1125174Z  * [new branch]        repair/decision-integrity-r1-principle-process-binding -> origin/repair/decision-integrity-r1-principle-process-binding
+2026-07-25T05:11:36.1129385Z  * [new branch]        repair/f15-d1-r1-latent-system-identifiability -> origin/repair/f15-d1-r1-latent-system-identifiability
+2026-07-25T05:11:36.1132592Z  * [new branch]        repair/q41-r1-anomaly-evidence-binding   -> origin/repair/q41-r1-anomaly-evidence-binding
+2026-07-25T05:11:36.1135912Z  * [new branch]        repair/q42-r1-counterfactual-ledger-binding -> origin/repair/q42-r1-counterfactual-ledger-binding
+2026-07-25T05:11:36.1139109Z  * [new branch]        repair/q43-r1-escalation-authority-binding -> origin/repair/q43-r1-escalation-authority-binding
+2026-07-25T05:11:36.1142178Z  * [new branch]        repair/q44-r1-coaching-consent-binding   -> origin/repair/q44-r1-coaching-consent-binding
+2026-07-25T05:11:36.1146201Z  * [new branch]        repair/scientific-context-protocol-r1-context-capability-binding -> origin/repair/scientific-context-protocol-r1-context-capability-binding
+2026-07-25T05:11:36.1150633Z  * [new branch]        repair/scientific-metacognition-r1-epistemic-state-binding -> origin/repair/scientific-metacognition-r1-epistemic-state-binding
+2026-07-25T05:11:36.1154400Z  * [new branch]        repair/symbolic-sphere-r1-reference-integrity -> origin/repair/symbolic-sphere-r1-reference-integrity
+2026-07-25T05:11:36.1157822Z  * [new branch]        review/build-projection-sets-20260616-2350 -> origin/review/build-projection-sets-20260616-2350
+2026-07-25T05:11:36.1160992Z  * [new branch]        review/minimal-two-table-entry-20260617-0323 -> origin/review/minimal-two-table-entry-20260617-0323
+2026-07-25T05:11:36.1164109Z  * [new branch]        review/projection-sets-only-20260617-0227 -> origin/review/projection-sets-only-20260617-0227
+2026-07-25T05:11:36.1167407Z  * [new branch]        review/push-ignition-20260616-1541       -> origin/review/push-ignition-20260616-1541
+2026-07-25T05:11:36.1170451Z  * [new branch]        run/dual-channel-full-bootstrap-20260613-230707 -> origin/run/dual-channel-full-bootstrap-20260613-230707
+2026-07-25T05:11:36.1174150Z  * [new branch]        runtime/adaptive-relational-runtime-r2-real-object-pilot -> origin/runtime/adaptive-relational-runtime-r2-real-object-pilot
+2026-07-25T05:11:36.1177704Z  * [new branch]        version/meta-protocols-20260709          -> origin/version/meta-protocols-20260709
+2026-07-25T05:11:36.1180135Z  * [new tag]           archive/121q34-i1-frozen-head            -> archive/121q34-i1-frozen-head
+2026-07-25T05:11:36.1182502Z  * [new tag]           archive/121q34-repair-r1-frozen-head     -> archive/121q34-repair-r1-frozen-head
+2026-07-25T05:11:36.1185116Z  * [new tag]           archive/121q35-i1r-frozen-head           -> archive/121q35-i1r-frozen-head
+2026-07-25T05:11:36.1187554Z  * [new tag]           archive/121q35-repair-r1-frozen-head     -> archive/121q35-repair-r1-frozen-head
+2026-07-25T05:11:36.1189988Z  * [new tag]           archive/121q36-int-i1-frozen-head        -> archive/121q36-int-i1-frozen-head
+2026-07-25T05:11:36.1192517Z  * [new tag]           archive/121q36-int-repair-r1-frozen-head -> archive/121q36-int-repair-r1-frozen-head
+2026-07-25T05:11:36.1195304Z  * [new tag]           archive/121q36-obs-i1-frozen-head        -> archive/121q36-obs-i1-frozen-head
+2026-07-25T05:11:36.1197822Z  * [new tag]           archive/121q36-obs-repair-r1-frozen-head -> archive/121q36-obs-repair-r1-frozen-head
+2026-07-25T05:11:36.1200281Z  * [new tag]           archive/121q37-i1-frozen-head            -> archive/121q37-i1-frozen-head
+2026-07-25T05:11:36.1202643Z  * [new tag]           archive/121q37-repair-r1-frozen-head     -> archive/121q37-repair-r1-frozen-head
+2026-07-25T05:11:36.1205259Z  * [new tag]           archive/121q38-i1-frozen-head            -> archive/121q38-i1-frozen-head
+2026-07-25T05:11:36.1207666Z  * [new tag]           archive/121q38-repair-r1-frozen-head     -> archive/121q38-repair-r1-frozen-head
+2026-07-25T05:11:36.1210053Z  * [new tag]           archive/121q39-i1-frozen-head            -> archive/121q39-i1-frozen-head
+2026-07-25T05:11:36.1212624Z  * [new tag]           archive/121q39-repair-r1-frozen-head     -> archive/121q39-repair-r1-frozen-head
+2026-07-25T05:11:36.1216231Z  * [new tag]           archive/adaptive-relational-runtime-r1-scaffold-frozen-head -> archive/adaptive-relational-runtime-r1-scaffold-frozen-head
+2026-07-25T05:11:36.1220915Z  * [new tag]           archive/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1-frozen-head -> archive/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1-frozen-head
+2026-07-25T05:11:36.1226644Z  * [new tag]           archive/adaptive-relational-runtime-r2-positive-routing-repair-r1-frozen-head -> archive/adaptive-relational-runtime-r2-positive-routing-repair-r1-frozen-head
+2026-07-25T05:11:36.1231533Z  * [new tag]           archive/adaptive-relational-runtime-r2-real-object-pilot-frozen-head -> archive/adaptive-relational-runtime-r2-real-object-pilot-frozen-head
+2026-07-25T05:11:36.1235131Z  * [new tag]           archive/d2-i1-frozen-head                -> archive/d2-i1-frozen-head
+2026-07-25T05:11:36.1237406Z  * [new tag]           archive/d2-repair-r1-frozen-head         -> archive/d2-repair-r1-frozen-head
+2026-07-25T05:11:36.1239805Z  * [new tag]           archive/d2-repair-r2-frozen-head         -> archive/d2-repair-r2-frozen-head
+2026-07-25T05:11:36.1242178Z  * [new tag]           archive/d2-repair-r3-frozen-head         -> archive/d2-repair-r3-frozen-head
+2026-07-25T05:11:36.1244912Z  * [new tag]           archive/decision-integrity-i1-frozen-head -> archive/decision-integrity-i1-frozen-head
+2026-07-25T05:11:36.1247918Z  * [new tag]           archive/decision-integrity-repair-r1-frozen-head -> archive/decision-integrity-repair-r1-frozen-head
+2026-07-25T05:11:36.1251377Z  * [new tag]           archive/decision-integrity-repair-r2-frozen-head -> archive/decision-integrity-repair-r2-frozen-head
+2026-07-25T05:11:36.1254746Z  * [new tag]           archive/decision-integrity-repair-r3-frozen-head -> archive/decision-integrity-repair-r3-frozen-head
+2026-07-25T05:11:36.1257484Z  * [new tag]           archive/f15-d1-i1-frozen-head            -> archive/f15-d1-i1-frozen-head
+2026-07-25T05:11:36.1259823Z  * [new tag]           archive/f15-d1-repair-r1-frozen-head     -> archive/f15-d1-repair-r1-frozen-head
+2026-07-25T05:11:36.1262347Z  * [new tag]           archive/f15-d1-repair-r2-frozen-head     -> archive/f15-d1-repair-r2-frozen-head
+2026-07-25T05:11:36.1265007Z  * [new tag]           archive/f15-d1-repair-r3-frozen-head     -> archive/f15-d1-repair-r3-frozen-head
+2026-07-25T05:11:36.1268466Z  * [new tag]           archive/ignition-run-promote-evolve-r1-production-draft-frozen-head -> archive/ignition-run-promote-evolve-r1-production-draft-frozen-head
+2026-07-25T05:11:36.1272134Z  * [new tag]           archive/lab-121q36-temporal-causality-night -> archive/lab-121q36-temporal-causality-night
+2026-07-25T05:11:36.1275099Z  * [new tag]           archive/lab-121q37-analogy-audit-night   -> archive/lab-121q37-analogy-audit-night
+2026-07-25T05:11:36.1277903Z  * [new tag]           archive/lab-121q38-structural-retrieval-night -> archive/lab-121q38-structural-retrieval-night
+2026-07-25T05:11:36.1280665Z  * [new tag]           archive/lab-121q39-failure-memory-night  -> archive/lab-121q39-failure-memory-night
+2026-07-25T05:11:36.1283015Z  * [new tag]           archive/q41-i1-frozen-head               -> archive/q41-i1-frozen-head
+2026-07-25T05:11:36.1285400Z  * [new tag]           archive/q41-repair-r1-frozen-head        -> archive/q41-repair-r1-frozen-head
+2026-07-25T05:11:36.1287777Z  * [new tag]           archive/q41-repair-r2-frozen-head        -> archive/q41-repair-r2-frozen-head
+2026-07-25T05:11:36.1290192Z  * [new tag]           archive/q41-repair-r3-frozen-head        -> archive/q41-repair-r3-frozen-head
+2026-07-25T05:11:36.1292448Z  * [new tag]           archive/q42-i1-frozen-head               -> archive/q42-i1-frozen-head
+2026-07-25T05:11:36.1294826Z  * [new tag]           archive/q42-repair-r1-frozen-head        -> archive/q42-repair-r1-frozen-head
+2026-07-25T05:11:36.1297404Z  * [new tag]           archive/q42-repair-r2-frozen-head        -> archive/q42-repair-r2-frozen-head
+2026-07-25T05:11:36.1299764Z  * [new tag]           archive/q42-repair-r3-frozen-head        -> archive/q42-repair-r3-frozen-head
+2026-07-25T05:11:36.1302007Z  * [new tag]           archive/q43-i1-frozen-head               -> archive/q43-i1-frozen-head
+2026-07-25T05:11:36.1304254Z  * [new tag]           archive/q43-repair-r1-frozen-head        -> archive/q43-repair-r1-frozen-head
+2026-07-25T05:11:36.1306806Z  * [new tag]           archive/q43-repair-r2-frozen-head        -> archive/q43-repair-r2-frozen-head
+2026-07-25T05:11:36.1309195Z  * [new tag]           archive/q43-repair-r3-frozen-head        -> archive/q43-repair-r3-frozen-head
+2026-07-25T05:11:36.1311431Z  * [new tag]           archive/q44-i1-frozen-head               -> archive/q44-i1-frozen-head
+2026-07-25T05:11:36.1313671Z  * [new tag]           archive/q44-repair-r1-frozen-head        -> archive/q44-repair-r1-frozen-head
+2026-07-25T05:11:36.1316346Z  * [new tag]           archive/q44-repair-r2-frozen-head        -> archive/q44-repair-r2-frozen-head
+2026-07-25T05:11:36.1318702Z  * [new tag]           archive/q44-repair-r3-frozen-head        -> archive/q44-repair-r3-frozen-head
+2026-07-25T05:11:36.1321507Z  * [new tag]           archive/scientific-context-protocol-i1-frozen-head -> archive/scientific-context-protocol-i1-frozen-head
+2026-07-25T05:11:36.1325143Z  * [new tag]           archive/scientific-context-protocol-repair-r1-frozen-head -> archive/scientific-context-protocol-repair-r1-frozen-head
+2026-07-25T05:11:36.1328868Z  * [new tag]           archive/scientific-context-protocol-repair-r2-frozen-head -> archive/scientific-context-protocol-repair-r2-frozen-head
+2026-07-25T05:11:36.1332786Z  * [new tag]           archive/scientific-context-protocol-repair-r3-frozen-head -> archive/scientific-context-protocol-repair-r3-frozen-head
+2026-07-25T05:11:36.1336374Z  * [new tag]           archive/scientific-metacognition-i1-frozen-head -> archive/scientific-metacognition-i1-frozen-head
+2026-07-25T05:11:36.1339699Z  * [new tag]           archive/scientific-metacognition-repair-r1-frozen-head -> archive/scientific-metacognition-repair-r1-frozen-head
+2026-07-25T05:11:36.1343182Z  * [new tag]           archive/scientific-metacognition-repair-r2-frozen-head -> archive/scientific-metacognition-repair-r2-frozen-head
+2026-07-25T05:11:36.1346844Z  * [new tag]           archive/scientific-metacognition-repair-r3-frozen-head -> archive/scientific-metacognition-repair-r3-frozen-head
+2026-07-25T05:11:36.1349883Z  * [new tag]           archive/symbolic-sphere-i1-frozen-head   -> archive/symbolic-sphere-i1-frozen-head
+2026-07-25T05:11:36.1352630Z  * [new tag]           archive/symbolic-sphere-repair-r1-frozen-head -> archive/symbolic-sphere-repair-r1-frozen-head
+2026-07-25T05:11:36.1355883Z  * [new tag]           archive/symbolic-sphere-repair-r2-frozen-head -> archive/symbolic-sphere-repair-r2-frozen-head
+2026-07-25T05:11:36.1358860Z  * [new tag]           archive/symbolic-sphere-repair-r3-frozen-head -> archive/symbolic-sphere-repair-r3-frozen-head
+2026-07-25T05:11:36.1361364Z  * [new tag]           current-state-2026-07-15                 -> current-state-2026-07-15
+2026-07-25T05:11:36.1363487Z  * [new tag]           current-state-2026-07-15-atlas           -> current-state-2026-07-15-atlas
+2026-07-25T05:11:36.1366481Z  * [new tag]           legacy-lab-q34-discovery-commitment-night-12026-07-17 -> legacy-lab-q34-discovery-commitment-night-12026-07-17
+2026-07-25T05:11:36.1369570Z  * [new tag]           legacy-lab-q35-agent-duty-night-12026-07-17 -> legacy-lab-q35-agent-duty-night-12026-07-17
+2026-07-25T05:11:36.1372019Z  * [new tag]           pre-q33-i2-main-12026-07-21              -> pre-q33-i2-main-12026-07-21
+2026-07-25T05:11:36.1374076Z  * [new tag]           pre-q33-main-12026-07-20                 -> pre-q33-main-12026-07-20
+2026-07-25T05:11:36.1376464Z  * [new tag]           q33-i2-merged-closeout-12026-07-21       -> q33-i2-merged-closeout-12026-07-21
+2026-07-25T05:11:36.1379046Z  * [new tag]           q33-i2-reviewed-closeout-12026-07-21     -> q33-i2-reviewed-closeout-12026-07-21
+2026-07-25T05:11:36.1381235Z  * [new tag]           q33-merged-12026-07-20                   -> q33-merged-12026-07-20
+2026-07-25T05:11:36.1383418Z  * [new tag]           q33-reviewed-candidate-12026-07-20       -> q33-reviewed-candidate-12026-07-20
+2026-07-25T05:11:36.1386021Z  * [new tag]           reality-loop-001-start-2026-07-15        -> reality-loop-001-start-2026-07-15
+2026-07-25T05:11:36.1388179Z  * [new tag]           v0.1-public-prototype                    -> v0.1-public-prototype
+2026-07-25T05:11:36.1390331Z  * [new tag]           v0.2-p1-machine-readable-data            -> v0.2-p1-machine-readable-data
+2026-07-25T05:11:36.1392572Z  * [new tag]           v0.2-structural-infrastructure           -> v0.2-structural-infrastructure
+2026-07-25T05:11:36.1394771Z  * [new ref]           b7844212534488d69e0e0dca324dc94c39bd3302 -> pull/124/merge
+2026-07-25T05:11:36.1398504Z ##[endgroup]
+2026-07-25T05:11:36.1400004Z ##[group]Determining the checkout info
+2026-07-25T05:11:36.1401704Z ##[endgroup]
+2026-07-25T05:11:36.1402688Z [command]/usr/bin/git sparse-checkout disable
+2026-07-25T05:11:36.1405638Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-07-25T05:11:36.1408926Z ##[group]Checking out the ref
+2026-07-25T05:11:36.1410403Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/124/merge
+2026-07-25T05:11:36.3824339Z Note: switching to 'refs/remotes/pull/124/merge'.
+2026-07-25T05:11:36.3825868Z 
+2026-07-25T05:11:36.3826333Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-07-25T05:11:36.3827321Z changes and commit them, and you can discard any commits you make in this
+2026-07-25T05:11:36.3828505Z state without impacting any branches by switching back to a branch.
+2026-07-25T05:11:36.3828972Z 
+2026-07-25T05:11:36.3829292Z If you want to create a new branch to retain commits you create, you may
+2026-07-25T05:11:36.3830039Z do so (now or later) by using -c with the switch command. Example:
+2026-07-25T05:11:36.3830450Z 
+2026-07-25T05:11:36.3830637Z   git switch -c <new-branch-name>
+2026-07-25T05:11:36.3830918Z 
+2026-07-25T05:11:36.3831132Z Or undo this operation with:
+2026-07-25T05:11:36.3831394Z 
+2026-07-25T05:11:36.3831560Z   git switch -
+2026-07-25T05:11:36.3831789Z 
+2026-07-25T05:11:36.3832218Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-07-25T05:11:36.3832713Z 
+2026-07-25T05:11:36.3833279Z HEAD is now at b7844212 Merge 81e6054baf5dd0df0422c0fd42f21854073d75dd into 5771d6c1174cc5c3ae72d1441c1c26b49951d79b
+2026-07-25T05:11:36.3850053Z ##[endgroup]
+2026-07-25T05:11:36.3902188Z [command]/usr/bin/git log -1 --format=%H
+2026-07-25T05:11:36.3933587Z b7844212534488d69e0e0dca324dc94c39bd3302
+2026-07-25T05:11:36.4210551Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-25T05:11:36.4212891Z ##[group]Run actions/setup-python@v5
+2026-07-25T05:11:36.4213219Z with:
+2026-07-25T05:11:36.4213473Z   python-version: 3.12
+2026-07-25T05:11:36.4213757Z   check-latest: false
+2026-07-25T05:11:36.4216743Z   token: ***
+2026-07-25T05:11:36.4217031Z   update-environment: true
+2026-07-25T05:11:36.4217340Z   allow-prereleases: false
+2026-07-25T05:11:36.4217650Z   freethreaded: false
+2026-07-25T05:11:36.4217934Z ##[endgroup]
+2026-07-25T05:11:36.5577704Z ##[group]Installed versions
+2026-07-25T05:11:36.8050982Z (node:2260) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-07-25T05:11:36.8052717Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-07-25T05:11:36.8053425Z Successfully set up CPython (3.12.13)
+2026-07-25T05:11:36.8054933Z ##[endgroup]
+2026-07-25T05:11:36.8257335Z ##[group]Run python3 -m pip install -r requirements-q33.txt
+2026-07-25T05:11:36.8257888Z [36;1mpython3 -m pip install -r requirements-q33.txt[0m
+2026-07-25T05:11:36.8574226Z shell: /usr/bin/bash -e {0}
+2026-07-25T05:11:36.8574780Z env:
+2026-07-25T05:11:36.8575109Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T05:11:36.8575874Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T05:11:36.8576404Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T05:11:36.8577035Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T05:11:36.8577513Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T05:11:36.8577981Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T05:11:36.8578373Z ##[endgroup]
+2026-07-25T05:11:41.0277274Z Collecting jsonschema (from -r requirements-q33.txt (line 5))
+2026-07-25T05:11:41.1051312Z   Downloading jsonschema-4.26.0-py3-none-any.whl.metadata (7.6 kB)
+2026-07-25T05:11:41.1498454Z Collecting pytest (from -r requirements-q33.txt (line 6))
+2026-07-25T05:11:41.1575756Z   Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+2026-07-25T05:11:41.1782392Z Collecting attrs>=22.2.0 (from jsonschema->-r requirements-q33.txt (line 5))
+2026-07-25T05:11:41.1911389Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+2026-07-25T05:11:41.2119584Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema->-r requirements-q33.txt (line 5))
+2026-07-25T05:11:41.2194866Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+2026-07-25T05:11:41.2487818Z Collecting referencing>=0.28.4 (from jsonschema->-r requirements-q33.txt (line 5))
+2026-07-25T05:11:41.2568855Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+2026-07-25T05:11:41.5627886Z Collecting rpds-py>=0.25.0 (from jsonschema->-r requirements-q33.txt (line 5))
+2026-07-25T05:11:41.5711939Z   Downloading rpds_py-2026.6.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+2026-07-25T05:11:41.5893421Z Collecting iniconfig>=1.0.1 (from pytest->-r requirements-q33.txt (line 6))
+2026-07-25T05:11:41.5973295Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+2026-07-25T05:11:41.6192477Z Collecting packaging>=22 (from pytest->-r requirements-q33.txt (line 6))
+2026-07-25T05:11:41.6271278Z   Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+2026-07-25T05:11:41.6451484Z Collecting pluggy<2,>=1.5 (from pytest->-r requirements-q33.txt (line 6))
+2026-07-25T05:11:41.6529462Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+2026-07-25T05:11:41.6774324Z Collecting pygments>=2.7.2 (from pytest->-r requirements-q33.txt (line 6))
+2026-07-25T05:11:41.6850288Z   Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+2026-07-25T05:11:41.7119473Z Collecting typing-extensions>=4.4.0 (from referencing>=0.28.4->jsonschema->-r requirements-q33.txt (line 5))
+2026-07-25T05:11:41.7195334Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+2026-07-25T05:11:41.7333340Z Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+2026-07-25T05:11:41.7500571Z Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+2026-07-25T05:11:41.7711777Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+2026-07-25T05:11:41.7809612Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+2026-07-25T05:11:41.7909489Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+2026-07-25T05:11:41.8017895Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+2026-07-25T05:11:41.8128458Z Downloading packaging-26.2-py3-none-any.whl (100 kB)
+2026-07-25T05:11:41.8234310Z Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+2026-07-25T05:11:41.8450738Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 53.0 MB/s  0:00:00
+2026-07-25T05:11:41.8531014Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+2026-07-25T05:11:41.8641308Z Downloading rpds_py-2026.6.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (366 kB)
+2026-07-25T05:11:41.8753605Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+2026-07-25T05:11:42.0036705Z Installing collected packages: typing-extensions, rpds-py, pygments, pluggy, packaging, iniconfig, attrs, referencing, pytest, jsonschema-specifications, jsonschema
+2026-07-25T05:11:43.4975486Z 
+2026-07-25T05:11:43.4995674Z Successfully installed attrs-26.1.0 iniconfig-2.3.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 packaging-26.2 pluggy-1.6.0 pygments-2.20.0 pytest-9.1.1 referencing-0.37.0 rpds-py-2026.6.3 typing-extensions-4.16.0
+2026-07-25T05:11:43.5798966Z ##[group]Run python3 -m pytest \
+2026-07-25T05:11:43.5799303Z [36;1mpython3 -m pytest \[0m
+2026-07-25T05:11:43.5799604Z [36;1m  tests/test_q33_governance_infrastructure.py \[0m
+2026-07-25T05:11:43.5799977Z [36;1m  tests/test_publication_gate_fail_closed.py \[0m
+2026-07-25T05:11:43.5800326Z [36;1m  tests/test_publication_provenance_attack.py \[0m
+2026-07-25T05:11:43.5800706Z [36;1m  tests/test_source_rights_gate_enum_consistency.py \[0m
+2026-07-25T05:11:43.5801089Z [36;1m  tests/test_generated_output_authority_generic.py \[0m
+2026-07-25T05:11:43.5801466Z [36;1m  tests/test_generated_output_authority_negative.py \[0m
+2026-07-25T05:11:43.5801829Z [36;1m  tests/test_registered_generator_attack.py \[0m
+2026-07-25T05:11:43.5802179Z [36;1m  tests/test_jurisdiction_sovereignty_neutral.py \[0m
+2026-07-25T05:11:43.5802517Z [36;1m  tests/test_diff_coverage_gate.py \[0m
+2026-07-25T05:11:43.5802846Z [36;1m  tests/test_era_resolver_generalization.py \[0m
+2026-07-25T05:11:43.5803194Z [36;1m  tests/test_human_front_door.py \[0m
+2026-07-25T05:11:43.5803495Z [36;1m  tests/test_pr_front_door_audit.py \[0m
+2026-07-25T05:11:43.5803813Z [36;1m  tests/test_q33_fail_closed_fixtures.py \[0m
+2026-07-25T05:11:43.5804098Z [36;1m  -v[0m
+2026-07-25T05:11:43.5850885Z shell: /usr/bin/bash -e {0}
+2026-07-25T05:11:43.5851144Z env:
+2026-07-25T05:11:43.5851406Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T05:11:43.5851851Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+2026-07-25T05:11:43.5852273Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T05:11:43.5852646Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T05:11:43.5853025Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+2026-07-25T05:11:43.5853399Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+2026-07-25T05:11:43.5853715Z ##[endgroup]
+2026-07-25T05:11:45.4187301Z ============================= test session starts ==============================
+2026-07-25T05:11:45.4188252Z platform linux -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- /opt/hostedtoolcache/Python/3.12.13/x64/bin/python3
+2026-07-25T05:11:45.4189034Z cachedir: .pytest_cache
+2026-07-25T05:11:45.4189561Z rootdir: /home/runner/work/when-systems-catch-fire/when-systems-catch-fire
+2026-07-25T05:11:45.7359413Z collecting ... collected 94 items
+2026-07-25T05:11:45.7360203Z 
+2026-07-25T05:11:45.7377677Z tests/test_q33_governance_infrastructure.py::test_jurisdiction_registry PASSED [  1%]
+2026-07-25T05:11:45.7387213Z tests/test_q33_governance_infrastructure.py::test_source_rights_registry PASSED [  2%]
+2026-07-25T05:11:45.7395330Z tests/test_q33_governance_infrastructure.py::test_material_classification PASSED [  3%]
+2026-07-25T05:11:45.7875521Z tests/test_q33_governance_infrastructure.py::test_publication_gate_workflow PASSED [  4%]
+2026-07-25T05:11:45.7886152Z tests/test_q33_governance_infrastructure.py::test_schema_validation PASSED [  5%]
+2026-07-25T05:11:45.7917653Z tests/test_q33_governance_infrastructure.py::test_mutation_detection PASSED [  6%]
+2026-07-25T05:11:45.7926340Z tests/test_q33_governance_infrastructure.py::test_validator_tool_exists PASSED [  7%]
+2026-07-25T05:11:45.7937253Z tests/test_q33_governance_infrastructure.py::test_governance_documents_exist PASSED [  8%]
+2026-07-25T05:11:45.7956825Z tests/test_publication_gate_fail_closed.py::PublicationGateFailClosedTests::test_ai_generated_content_maps_to_level5_counsel PASSED [  9%]
+2026-07-25T05:11:45.7973639Z tests/test_publication_gate_fail_closed.py::PublicationGateFailClosedTests::test_extra_unknown_field_rejected_by_schema PASSED [ 10%]
+2026-07-25T05:11:45.7987271Z tests/test_publication_gate_fail_closed.py::PublicationGateFailClosedTests::test_forged_classification_level_rejected PASSED [ 11%]
+2026-07-25T05:11:45.8004634Z tests/test_publication_gate_fail_closed.py::PublicationGateFailClosedTests::test_missing_provenance_reason_rule_version_rejected PASSED [ 12%]
+2026-07-25T05:11:45.8018594Z tests/test_publication_gate_fail_closed.py::PublicationGateFailClosedTests::test_private_note_reported_as_level0_pass_is_rejected PASSED [ 13%]
+2026-07-25T05:11:45.8031294Z tests/test_publication_gate_fail_closed.py::PublicationGateFailClosedTests::test_registry_gate_enum_drift_rejected PASSED [ 14%]
+2026-07-25T05:11:45.8044436Z tests/test_publication_gate_fail_closed.py::PublicationGateFailClosedTests::test_self_asserted_provenance_verified_rejected PASSED [ 15%]
+2026-07-25T05:11:45.8057990Z tests/test_publication_gate_fail_closed.py::PublicationGateFailClosedTests::test_unknown_category_fails_closed PASSED [ 17%]
+2026-07-25T05:11:45.8076611Z tests/test_publication_gate_fail_closed.py::PublicationGateFailClosedTests::test_valid_decision_is_recorded PASSED [ 18%]
+2026-07-25T05:11:45.8089771Z tests/test_publication_provenance_attack.py::PublicationProvenanceAttackTests::test_digest_mismatch_for_verified_source_rejected PASSED [ 19%]
+2026-07-25T05:11:45.8101902Z tests/test_publication_provenance_attack.py::PublicationProvenanceAttackTests::test_entry_id_must_equal_source_category PASSED [ 20%]
+2026-07-25T05:11:45.8114216Z tests/test_publication_provenance_attack.py::PublicationProvenanceAttackTests::test_entry_id_must_exist_in_registry PASSED [ 21%]
+2026-07-25T05:11:45.8128095Z tests/test_publication_provenance_attack.py::PublicationProvenanceAttackTests::test_self_asserted_provenance_verified_rejected PASSED [ 22%]
+2026-07-25T05:11:45.8140878Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_ai_generated_two_way_consistency PASSED [ 23%]
+2026-07-25T05:11:45.8149408Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_every_jurisdiction_treaty_platform_has_provenance PASSED [ 24%]
+2026-07-25T05:11:45.8161507Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_every_registry_category_resolves_via_gate PASSED [ 25%]
+2026-07-25T05:11:45.8169978Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_every_source_rights_category_has_provenance PASSED [ 26%]
+2026-07-25T05:11:45.8177929Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_gate_gatemap_decisions_in_schema_enum PASSED [ 27%]
+2026-07-25T05:11:45.8185931Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_gate_levelmap_rights_status_in_schema_enum PASSED [ 28%]
+2026-07-25T05:11:45.8193632Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_gate_source_category_enum_matches_registry PASSED [ 29%]
+2026-07-25T05:11:45.8201513Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_registry_governance_action_in_schema_enum PASSED [ 30%]
+2026-07-25T05:11:45.8209428Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_registry_rights_status_in_schema_enum PASSED [ 31%]
+2026-07-25T05:11:45.8217221Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_us_fair_use_claim_not_absolute PASSED [ 32%]
+2026-07-25T05:11:45.8233665Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_verified_source_gate_enforces_real_pinned_digest PASSED [ 34%]
+2026-07-25T05:11:45.8243423Z tests/test_source_rights_gate_enum_consistency.py::SourceRightsGateConsistencyTests::test_verified_source_rights_must_have_pinned_digest PASSED [ 35%]
+2026-07-25T05:11:45.9807723Z tests/test_generated_output_authority_generic.py::TestGeneratedOutputAuthorityGeneric::test_synth_alpha_positive PASSED [ 36%]
+2026-07-25T05:11:46.1414232Z tests/test_generated_output_authority_generic.py::TestGeneratedOutputAuthorityGeneric::test_synth_alpha_tamper_negative PASSED [ 37%]
+2026-07-25T05:11:46.2948122Z tests/test_generated_output_authority_generic.py::TestGeneratedOutputAuthorityGeneric::test_synth_beta_positive PASSED [ 38%]
+2026-07-25T05:11:46.4371008Z tests/test_generated_output_authority_negative.py::GeneratedOutputAuthorityNegativeTests::test_duplicate_semantic_authority_rejected PASSED [ 39%]
+2026-07-25T05:11:46.5768442Z tests/test_generated_output_authority_negative.py::GeneratedOutputAuthorityNegativeTests::test_free_string_generator_rejected PASSED [ 40%]
+2026-07-25T05:11:46.7174016Z tests/test_generated_output_authority_negative.py::GeneratedOutputAuthorityNegativeTests::test_generator_not_allowed_for_path_rejected PASSED [ 41%]
+2026-07-25T05:11:46.7196746Z tests/test_generated_output_authority_negative.py::GeneratedOutputAuthorityNegativeTests::test_generator_registry_is_schema_valid PASSED [ 42%]
+2026-07-25T05:11:46.8598267Z tests/test_generated_output_authority_negative.py::GeneratedOutputAuthorityNegativeTests::test_historical_record_cannot_claim_current PASSED [ 43%]
+2026-07-25T05:11:46.9962674Z tests/test_generated_output_authority_negative.py::GeneratedOutputAuthorityNegativeTests::test_input_authority_drift_rejected PASSED [ 44%]
+2026-07-25T05:11:47.0004913Z tests/test_generated_output_authority_negative.py::GeneratedOutputAuthorityNegativeTests::test_q32_authority_is_schema_valid PASSED [ 45%]
+2026-07-25T05:11:47.1420760Z tests/test_generated_output_authority_negative.py::GeneratedOutputAuthorityNegativeTests::test_stale_digest_rejected PASSED [ 46%]
+2026-07-25T05:11:47.2834150Z tests/test_generated_output_authority_negative.py::GeneratedOutputAuthorityNegativeTests::test_unregistered_generator_id_rejected PASSED [ 47%]
+2026-07-25T05:11:47.4382141Z tests/test_registered_generator_attack.py::TestRegisteredGeneratorAttack::test_dual_authorization PASSED [ 48%]
+2026-07-25T05:11:47.5950352Z tests/test_registered_generator_attack.py::TestRegisteredGeneratorAttack::test_indirect_authority_cycle PASSED [ 50%]
+2026-07-25T05:11:47.7505645Z tests/test_registered_generator_attack.py::TestRegisteredGeneratorAttack::test_missing_canonical_tool PASSED [ 51%]
+2026-07-25T05:11:47.9054335Z tests/test_registered_generator_attack.py::TestRegisteredGeneratorAttack::test_positive PASSED [ 52%]
+2026-07-25T05:11:48.0728319Z tests/test_registered_generator_attack.py::TestRegisteredGeneratorAttack::test_registry_missing_digest_pin PASSED [ 53%]
+2026-07-25T05:11:48.2319089Z tests/test_registered_generator_attack.py::TestRegisteredGeneratorAttack::test_self_authorization_cycle PASSED [ 54%]
+2026-07-25T05:11:48.3891168Z tests/test_registered_generator_attack.py::TestRegisteredGeneratorAttack::test_tool_digest_tamper PASSED [ 55%]
+2026-07-25T05:11:48.3905017Z tests/test_jurisdiction_sovereignty_neutral.py::JurisdictionSovereigntyNeutralTests::test_every_entry_sovereignty_not_asserted PASSED [ 56%]
+2026-07-25T05:11:48.3918747Z tests/test_jurisdiction_sovereignty_neutral.py::JurisdictionSovereigntyNeutralTests::test_no_entry_claims_sovereign_recognition PASSED [ 57%]
+2026-07-25T05:11:48.3929471Z tests/test_jurisdiction_sovereignty_neutral.py::JurisdictionSovereigntyNeutralTests::test_registry_declares_no_sovereignty PASSED [ 58%]
+2026-07-25T05:11:48.3942042Z tests/test_jurisdiction_sovereignty_neutral.py::JurisdictionSovereigntyNeutralTests::test_tw_and_cn_are_distinct_legal_regimes PASSED [ 59%]
+2026-07-25T05:11:48.4083056Z tests/test_diff_coverage_gate.py::DiffCoverageGateTests::test_all_diff_paths_covered PASSED [ 60%]
+2026-07-25T05:11:48.4100927Z tests/test_diff_coverage_gate.py::DiffCoverageGateTests::test_every_declared_seed_exists_in_repo PASSED [ 61%]
+2026-07-25T05:11:48.4112488Z tests/test_diff_coverage_gate.py::DiffCoverageGateTests::test_every_generated_output_exists_in_repo PASSED [ 62%]
+2026-07-25T05:11:48.4121212Z tests/test_diff_coverage_gate.py::DiffCoverageGateTests::test_no_extra_declarations PASSED [ 63%]
+2026-07-25T05:11:48.4131417Z tests/test_diff_coverage_gate.py::DiffCoverageGateTests::test_seed_generated_disjoint PASSED [ 64%]
+2026-07-25T05:11:48.4205871Z tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_all_iterations_resolve_generically PASSED [ 65%]
+2026-07-25T05:11:48.4225716Z tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_frozen_iterations_resolve_to_era_ref PASSED [ 67%]
+2026-07-25T05:11:48.4468920Z tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_live_iteration_resolves_to_none_era_ref FAILED [ 68%]
+2026-07-25T05:11:48.4482221Z tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_no_hardcoded_sha_in_resolver PASSED [ 69%]
+2026-07-25T05:11:48.4495656Z tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_no_hardcoded_task_id_in_resolver PASSED [ 70%]
+2026-07-25T05:11:48.5885892Z tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_phantom_declared_path_rejected PASSED [ 71%]
+2026-07-25T05:11:48.5936238Z tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_q33_changed_paths_uniquely_covered PASSED [ 72%]
+2026-07-25T05:11:48.5998290Z tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_resolve_for_request_reads_task_id FAILED [ 73%]
+2026-07-25T05:11:48.6011069Z tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_resolver_reproduces_ci_era_ref PASSED [ 74%]
+2026-07-25T05:11:48.7363908Z tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_seed_generated_overlap_rejected PASSED [ 75%]
+2026-07-25T05:11:48.7380446Z tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_stale_request_base_identity_not_used PASSED [ 76%]
+2026-07-25T05:11:48.7396617Z tests/test_human_front_door.py::HumanFrontDoorTests::test_ai_prompt_and_current_details_are_folded PASSED [ 77%]
+2026-07-25T05:11:48.7405628Z tests/test_human_front_door.py::HumanFrontDoorTests::test_complete_system_map_is_between_charter_and_usage PASSED [ 78%]
+2026-07-25T05:11:48.7710075Z tests/test_human_front_door.py::HumanFrontDoorTests::test_each_capability_is_required_in_expanded_guide 
+2026-07-25T05:11:48.7714781Z tests/test_human_front_door.py::HumanFrontDoorTests::test_each_capability_is_required_in_expanded_guide PASSED [ 79%]
+2026-07-25T05:11:48.7733068Z tests/test_human_front_door.py::HumanFrontDoorTests::test_each_capability_is_required_in_readme 
+2026-07-25T05:11:48.7737238Z tests/test_human_front_door.py::HumanFrontDoorTests::test_each_capability_is_required_in_readme PASSED [ 80%]
+2026-07-25T05:11:48.7746837Z tests/test_human_front_door.py::HumanFrontDoorTests::test_pages_artifact_carries_typed_propagation_evidence PASSED [ 81%]
+2026-07-25T05:11:48.7757655Z tests/test_human_front_door.py::HumanFrontDoorTests::test_pages_must_be_readme_derived PASSED [ 82%]
+2026-07-25T05:11:48.7768048Z tests/test_human_front_door.py::HumanFrontDoorTests::test_prompt_divergence_is_rejected PASSED [ 84%]
+2026-07-25T05:11:48.7777034Z tests/test_human_front_door.py::HumanFrontDoorTests::test_readme_has_one_current_state_and_expected_top_order PASSED [ 85%]
+2026-07-25T05:11:48.8049246Z tests/test_human_front_door.py::HumanFrontDoorTests::test_repository_front_doors_validate PASSED [ 86%]
+2026-07-25T05:11:48.8063210Z tests/test_human_front_door.py::HumanFrontDoorTests::test_rollback_typo_is_rejected PASSED [ 87%]
+2026-07-25T05:11:48.8086879Z tests/test_human_front_door.py::HumanFrontDoorTests::test_stale_current_method_is_rejected_in_each_ai_front_door 
+2026-07-25T05:11:48.8090822Z tests/test_human_front_door.py::HumanFrontDoorTests::test_stale_current_method_is_rejected_in_each_ai_front_door PASSED [ 88%]
+2026-07-25T05:11:48.8101355Z tests/test_human_front_door.py::HumanFrontDoorTests::test_stale_pr55_scope_is_rejected PASSED [ 89%]
+2026-07-25T05:11:48.8394188Z tests/test_human_front_door.py::HumanFrontDoorTests::test_system_map_has_all_clickable_nodes_and_no_l7_layer PASSED [ 90%]
+2026-07-25T05:11:48.8415151Z tests/test_human_front_door.py::HumanFrontDoorTests::test_three_ai_front_doors_share_version_truth PASSED [ 91%]
+2026-07-25T05:11:48.8431902Z tests/test_human_front_door.py::HumanFrontDoorTests::test_visible_summary_cannot_omit_mcf_psd_arn_or_iteration 
+2026-07-25T05:11:48.8437622Z tests/test_human_front_door.py::HumanFrontDoorTests::test_visible_summary_cannot_omit_mcf_psd_arn_or_iteration PASSED [ 92%]
+2026-07-25T05:11:48.8446633Z tests/test_pr_front_door_audit.py::FrontDoorAuditTests::test_aggregated_pass_claim_flagged PASSED [ 93%]
+2026-07-25T05:11:48.8454664Z tests/test_pr_front_door_audit.py::FrontDoorAuditTests::test_audit_is_read_only PASSED [ 94%]
+2026-07-25T05:11:48.8463470Z tests/test_pr_front_door_audit.py::FrontDoorAuditTests::test_clean_body_passes PASSED [ 95%]
+2026-07-25T05:11:48.8472175Z tests/test_pr_front_door_audit.py::FrontDoorAuditTests::test_commit_count_volatile_flagged PASSED [ 96%]
+2026-07-25T05:11:48.8482312Z tests/test_pr_front_door_audit.py::FrontDoorAuditTests::test_head_hash_volatile_flagged PASSED [ 97%]
+2026-07-25T05:11:48.8511244Z tests/test_q33_fail_closed_fixtures.py::FailClosedFixtureTests::test_failed_fixtures_rejected 
+2026-07-25T05:11:48.8515216Z tests/test_q33_fail_closed_fixtures.py::FailClosedFixtureTests::test_failed_fixtures_rejected PASSED [ 98%]
+2026-07-25T05:11:48.8742678Z tests/test_q33_fail_closed_fixtures.py::FailClosedFixtureTests::test_valid_fixture_accepted PASSED [100%]
+2026-07-25T05:11:48.8743725Z 
+2026-07-25T05:11:48.8743976Z =================================== FAILURES ===================================
+2026-07-25T05:11:48.8745154Z _ EraResolverGeneralizationTests.test_live_iteration_resolves_to_none_era_ref __
+2026-07-25T05:11:48.8745796Z 
+2026-07-25T05:11:48.8746586Z self = <test_era_resolver_generalization.EraResolverGeneralizationTests testMethod=test_live_iteration_resolves_to_none_era_ref>
+2026-07-25T05:11:48.8747575Z 
+2026-07-25T05:11:48.8747838Z     def test_live_iteration_resolves_to_none_era_ref(self):
+2026-07-25T05:11:48.8748421Z         for task in LIVE_TASKS:
+2026-07-25T05:11:48.8748863Z             era = resolve_era(ROOT, task)
+2026-07-25T05:11:48.8749355Z             self.assertIsNotNone(era)
+2026-07-25T05:11:48.8749818Z >           self.assertIsNone(
+2026-07-25T05:11:48.8750449Z                 era["era_ref"], f"{task}: live candidate must use base..HEAD (era_ref=None)"
+2026-07-25T05:11:48.8751037Z             )
+2026-07-25T05:11:48.8751804Z E           AssertionError: 'cf321f92014268af40cf9aa9231fe8a4f814b031' is not None : 121Q33: live candidate must use base..HEAD (era_ref=None)
+2026-07-25T05:11:48.8752561Z 
+2026-07-25T05:11:48.8752807Z tests/test_era_resolver_generalization.py:110: AssertionError
+2026-07-25T05:11:48.8753528Z ____ EraResolverGeneralizationTests.test_resolve_for_request_reads_task_id _____
+2026-07-25T05:11:48.8754030Z 
+2026-07-25T05:11:48.8754750Z self = <test_era_resolver_generalization.EraResolverGeneralizationTests testMethod=test_resolve_for_request_reads_task_id>
+2026-07-25T05:11:48.8755491Z 
+2026-07-25T05:11:48.8755670Z     def test_resolve_for_request_reads_task_id(self):
+2026-07-25T05:11:48.8756249Z         req = _load(ROOT / "data/operations/propagation/121Q33-request.json")
+2026-07-25T05:11:48.8756808Z         era = resolve_era_for_request(ROOT, req)
+2026-07-25T05:11:48.8757234Z >       self.assertIsNone(era["era_ref"])
+2026-07-25T05:11:48.8757824Z E       AssertionError: 'cf321f92014268af40cf9aa9231fe8a4f814b031' is not None
+2026-07-25T05:11:48.8758265Z 
+2026-07-25T05:11:48.8758503Z tests/test_era_resolver_generalization.py:117: AssertionError
+2026-07-25T05:11:48.8759065Z =============================== warnings summary ===============================
+2026-07-25T05:11:48.8759697Z tests/test_q33_governance_infrastructure.py::test_jurisdiction_registry
+2026-07-25T05:11:48.8780945Z   /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/_pytest/python.py:171: PytestReturnNotNoneWarning: Test functions should return None, but tests/test_q33_governance_infrastructure.py::test_jurisdiction_registry returned <class 'bool'>.
+2026-07-25T05:11:48.8782872Z   Did you mean to use `assert` instead of `return`?
+2026-07-25T05:11:48.8783416Z   See https://docs.pytest.org/en/stable/how-to/assert.html#return-not-none for more information.
+2026-07-25T05:11:48.8783891Z     warnings.warn(
+2026-07-25T05:11:48.8784018Z 
+2026-07-25T05:11:48.8784386Z tests/test_q33_governance_infrastructure.py::test_source_rights_registry
+2026-07-25T05:11:48.8785870Z   /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/_pytest/python.py:171: PytestReturnNotNoneWarning: Test functions should return None, but tests/test_q33_governance_infrastructure.py::test_source_rights_registry returned <class 'bool'>.
+2026-07-25T05:11:48.8786946Z   Did you mean to use `assert` instead of `return`?
+2026-07-25T05:11:48.8787450Z   See https://docs.pytest.org/en/stable/how-to/assert.html#return-not-none for more information.
+2026-07-25T05:11:48.8787910Z     warnings.warn(
+2026-07-25T05:11:48.8788042Z 
+2026-07-25T05:11:48.8788249Z tests/test_q33_governance_infrastructure.py::test_material_classification
+2026-07-25T05:11:48.8789405Z   /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/_pytest/python.py:171: PytestReturnNotNoneWarning: Test functions should return None, but tests/test_q33_governance_infrastructure.py::test_material_classification returned <class 'bool'>.
+2026-07-25T05:11:48.8790447Z   Did you mean to use `assert` instead of `return`?
+2026-07-25T05:11:48.8790932Z   See https://docs.pytest.org/en/stable/how-to/assert.html#return-not-none for more information.
+2026-07-25T05:11:48.8791395Z     warnings.warn(
+2026-07-25T05:11:48.8791519Z 
+2026-07-25T05:11:48.8791735Z tests/test_q33_governance_infrastructure.py::test_publication_gate_workflow
+2026-07-25T05:11:48.8792874Z   /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/_pytest/python.py:171: PytestReturnNotNoneWarning: Test functions should return None, but tests/test_q33_governance_infrastructure.py::test_publication_gate_workflow returned <class 'bool'>.
+2026-07-25T05:11:48.8793915Z   Did you mean to use `assert` instead of `return`?
+2026-07-25T05:11:48.8794394Z   See https://docs.pytest.org/en/stable/how-to/assert.html#return-not-none for more information.
+2026-07-25T05:11:48.8795098Z     warnings.warn(
+2026-07-25T05:11:48.8795221Z 
+2026-07-25T05:11:48.8795411Z tests/test_q33_governance_infrastructure.py::test_schema_validation
+2026-07-25T05:11:48.8796495Z   /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/_pytest/python.py:171: PytestReturnNotNoneWarning: Test functions should return None, but tests/test_q33_governance_infrastructure.py::test_schema_validation returned <class 'bool'>.
+2026-07-25T05:11:48.8797518Z   Did you mean to use `assert` instead of `return`?
+2026-07-25T05:11:48.8797982Z   See https://docs.pytest.org/en/stable/how-to/assert.html#return-not-none for more information.
+2026-07-25T05:11:48.8798427Z     warnings.warn(
+2026-07-25T05:11:48.8798548Z 
+2026-07-25T05:11:48.8798740Z tests/test_q33_governance_infrastructure.py::test_mutation_detection
+2026-07-25T05:11:48.8799819Z   /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/_pytest/python.py:171: PytestReturnNotNoneWarning: Test functions should return None, but tests/test_q33_governance_infrastructure.py::test_mutation_detection returned <class 'bool'>.
+2026-07-25T05:11:48.8800825Z   Did you mean to use `assert` instead of `return`?
+2026-07-25T05:11:48.8801296Z   See https://docs.pytest.org/en/stable/how-to/assert.html#return-not-none for more information.
+2026-07-25T05:11:48.8801731Z     warnings.warn(
+2026-07-25T05:11:48.8801849Z 
+2026-07-25T05:11:48.8802040Z tests/test_q33_governance_infrastructure.py::test_validator_tool_exists
+2026-07-25T05:11:48.8803131Z   /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/_pytest/python.py:171: PytestReturnNotNoneWarning: Test functions should return None, but tests/test_q33_governance_infrastructure.py::test_validator_tool_exists returned <class 'bool'>.
+2026-07-25T05:11:48.8804322Z   Did you mean to use `assert` instead of `return`?
+2026-07-25T05:11:48.8805049Z   See https://docs.pytest.org/en/stable/how-to/assert.html#return-not-none for more information.
+2026-07-25T05:11:48.8805486Z     warnings.warn(
+2026-07-25T05:11:48.8805598Z 
+2026-07-25T05:11:48.8805816Z tests/test_q33_governance_infrastructure.py::test_governance_documents_exist
+2026-07-25T05:11:48.8807171Z   /opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/_pytest/python.py:171: PytestReturnNotNoneWarning: Test functions should return None, but tests/test_q33_governance_infrastructure.py::test_governance_documents_exist returned <class 'bool'>.
+2026-07-25T05:11:48.8808217Z   Did you mean to use `assert` instead of `return`?
+2026-07-25T05:11:48.8808684Z   See https://docs.pytest.org/en/stable/how-to/assert.html#return-not-none for more information.
+2026-07-25T05:11:48.8809117Z     warnings.warn(
+2026-07-25T05:11:48.8809235Z 
+2026-07-25T05:11:48.8809436Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+2026-07-25T05:11:48.8809912Z =========================== short test summary info ============================
+2026-07-25T05:11:48.8811011Z FAILED tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_live_iteration_resolves_to_none_era_ref - AssertionError: 'cf321f92014268af40cf9aa9231fe8a4f814b031' is not None : 121Q33: live candidate must use base..HEAD (era_ref=None)
+2026-07-25T05:11:48.8812566Z FAILED tests/test_era_resolver_generalization.py::EraResolverGeneralizationTests::test_resolve_for_request_reads_task_id - AssertionError: 'cf321f92014268af40cf9aa9231fe8a4f814b031' is not None
+2026-07-25T05:11:48.8813449Z ========= 2 failed, 92 passed, 8 warnings, 24 subtests passed in 3.44s =========
+2026-07-25T05:11:48.9130432Z ##[error]Process completed with exit code 1.
+2026-07-25T05:11:48.9282982Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-25T05:11:48.9284251Z Post job cleanup.
+2026-07-25T05:11:49.0155729Z [command]/usr/bin/git version
+2026-07-25T05:11:49.0204859Z git version 2.54.0
+2026-07-25T05:11:49.0255171Z Temporarily overriding HOME='/home/runner/work/_temp/dfaf151b-5457-4349-aa06-6ec1048008ce' before making global git config changes
+2026-07-25T05:11:49.0256669Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-25T05:11:49.0260477Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/when-systems-catch-fire/when-systems-catch-fire
+2026-07-25T05:11:49.0309700Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-25T05:11:49.0351153Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-25T05:11:49.0626819Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-25T05:11:49.0657699Z http.https://github.com/.extraheader
+2026-07-25T05:11:49.0670107Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-07-25T05:11:49.0709848Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-25T05:11:49.1001900Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-25T05:11:49.1051627Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-25T05:11:49.1481297Z Cleaning up orphan processes
+2026-07-25T05:11:49.1747364Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
