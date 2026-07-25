@@ -33,6 +33,15 @@ from .sealed_inputs import (
     SEALED_R3_INPUTS,
     input_identity_checks,
 )
+# Reuse the EXACT 27-item registry from the accepted R4 repair (relay task §6.4):
+# the correction layer must not reintroduce substring classification.
+from arr_r4_self_reflection.capability_classifier import (
+    CAPABILITY_CLOSED_SET_SIZE,
+    CAPABILITY_DIMENSION_REGISTRY,
+    DIMENSION_DEFINITIONS,
+    PRIMARY_DIMENSIONS,
+    _item_pass,
+)
 
 
 def _md(
@@ -424,27 +433,206 @@ def project_incremental_rerun(sealed: Dict[str, Dict[str, Any]]) -> Dict[str, Me
     }
 
 
+def _semantic_dimension_split(ids: List[str], passes: int, fails: int) -> Dict[str, Any]:
+    """R4 semantic split (§7): separate guardrail execution from semantic
+    understanding coverage as independent typed fields -- never one overloaded
+    'measured' boolean. Generic dimension keys (item_count/pass/fail/status) are
+    retained for closed-set accounting; the overloaded single 'measured' boolean
+    is deliberately absent."""
+    return {
+        "item_count": len(ids),
+        "pass": passes,
+        "fail": fails,
+        "status": "pass" if fails == 0 else "fail",
+        "guardrail_checks_measured": True,
+        "guardrail_item_count": len(ids),
+        "guardrail_pass": passes,
+        "guardrail_fail": fails,
+        "guardrail_status": "pass" if fails == 0 else "fail",
+        "semantic_understanding_stage_present": False,
+        "semantic_understanding_coverage_measured": False,
+        "semantic_understanding_items": 0,
+        "semantic_understanding_verified_objects": 0,
+        "note": ("Guardrail execution (4/4 pass) is NOT semantic understanding; R3 ran no "
+                 "semantic-understanding stage. The two facts are separate typed fields, "
+                 "not one overloaded 'measured' boolean."),
+        "items": ids,
+        "definition": DIMENSION_DEFINITIONS["SEMANTIC"],
+    }
+
+
 def project_capability_interpretation(
     matrix: Dict[str, Any],
     independently_supported_count: int = 0,
     total_objects: int = CORPUS_OBJECTS,
 ) -> Dict[str, Any]:
-    """M5 -- versioned R3 capability interpretation correction (§6.4)."""
-    raise NotImplementedError("M5 projection implemented in commit 3")
+    """M5 -- versioned R3 capability interpretation correction (§6.4).
+
+    Reuses the exact 27-item registry from the accepted R4 repair. Produces the
+    corrected interpretation: exact closed set 27, exactly one primary dimension
+    per item, 17 OPERATIONAL / 4 SEMANTIC_GUARDRAIL / 3 EVIDENCE_GUARDRAIL / 3
+    GOVERNANCE_GUARDRAIL, every item retains its own pass/fail, ``all_checks_pass``
+    names all four dimensions and never implies semantic understanding /
+    independent support / claim truth / promotion-worthiness. The historical R3
+    ``all_pass`` artifact is preserved, never mutated.
+    """
+    items = matrix.get("items", []) if isinstance(matrix, dict) else []
+    total_items = matrix.get("total_items", CAPABILITY_CLOSED_SET_SIZE) if isinstance(matrix, dict) else CAPABILITY_CLOSED_SET_SIZE
+
+    classified: Dict[str, List[str]] = {d: [] for d in PRIMARY_DIMENSIONS}
+    unclassified: List[str] = []
+    for it in items:
+        cid = it.get("id") if isinstance(it, dict) else None
+        dim = CAPABILITY_DIMENSION_REGISTRY.get(cid)
+        if dim is None:
+            unclassified.append(cid)
+        else:
+            classified[dim].append(cid)
+
+    dimensions: Dict[str, Any] = {}
+    for dim in PRIMARY_DIMENSIONS:
+        ids = classified[dim]
+        passes = sum(1 for cid in ids if _item_pass(matrix, cid))
+        fails = len(ids) - passes
+        if dim == "SEMANTIC":
+            dimensions[dim] = _semantic_dimension_split(ids, passes, fails)
+        else:
+            dimensions[dim] = {
+                "measured": True,
+                "status": "pass" if fails == 0 else "fail",
+                "item_count": len(ids),
+                "pass": passes,
+                "fail": fails,
+                "definition": DIMENSION_DEFINITIONS[dim],
+                "items": ids,
+            }
+
+    classified_total = sum(len(v) for v in classified.values())
+    unclassified_total = len(unclassified)
+    invariant_ok = (
+        total_items == CAPABILITY_CLOSED_SET_SIZE
+        and classified_total == CAPABILITY_CLOSED_SET_SIZE
+        and unclassified_total == 0
+    )
+    all_pass = all(_item_pass(matrix, it.get("id")) for it in items if isinstance(it, dict))
+
+    return {
+        "schema": "r3r4/capability_interpretation_correction/v1",
+        "all_checks_pass": all_pass,
+        "all_checks_pass_definition": (
+            "all_checks_pass aggregates 17 OPERATIONAL, 4 SEMANTIC_GUARDRAIL, "
+            "3 EVIDENCE_GUARDRAIL and 3 GOVERNANCE_GUARDRAIL checks. It does NOT "
+            "assert semantic understanding, independent support, claim truth, "
+            "causal validity or promotion-worthiness."
+        ),
+        "all_checks_pass_does_not_imply": [
+            "semantic understanding (no semantic-understanding stage ran in R3)",
+            "independently supported objects (orthogonal outcome count, here 0)",
+            "claim truth or causal validity",
+            "PROMOTE / EVOLVE / real-world action worthiness",
+        ],
+        "closed_set": {
+            "expected_total": total_items,
+            "classified_total": classified_total,
+            "unclassified_total": unclassified_total,
+            "primary_overlap_total": 0,
+            "sum_primary_dimension_counts": classified_total,
+            "invariant_ok": invariant_ok,
+            "unclassified_items": unclassified,
+        },
+        "dimensions": dimensions,
+        "semantic_understanding_objects_verified": 0,
+        "independently_supported_objects": independently_supported_count,
+        "historical_value": {"all_pass": matrix.get("all_pass") if isinstance(matrix, dict) else None},
+        "historical_source": "CAPABILITY_COVERAGE_MATRIX",
+        "correction_status": "corrected",
+        "underlying_defect_present": True,
+        "historical_artifact_mutated": False,
+        "note": ("Historical R3 all_pass=true disclosed no dimension allocation (a reporting "
+                 "defect). This versioned interpretation discloses the exact 27-item closed "
+                 "set; the historical artifact is preserved, not mutated."),
+    }
 
 
 def project_semantic_guardrail_understanding_split(
     classification: Dict[str, Any]
 ) -> Dict[str, Any]:
-    """R4 -- semantic-guardrail vs semantic-understanding split (§7)."""
-    raise NotImplementedError("semantic split implemented in commit 3")
+    """R4 -- semantic-guardrail vs semantic-understanding split (§7).
+
+    Returns the focused, machine-readable split for the SEMANTIC dimension: the
+    four guardrail checks are measured and pass, while semantic-understanding
+    coverage is explicitly not measured (no R3 semantic-understanding stage). The
+    two facts are independent typed fields, not one overloaded 'measured' boolean.
+    """
+    semantic = classification.get("dimensions", {}).get("SEMANTIC", {})
+    return {
+        "schema": "r3r4/semantic-guardrail-understanding-split/v1",
+        "guardrail_checks_measured": semantic.get("guardrail_checks_measured"),
+        "guardrail_item_count": semantic.get("guardrail_item_count"),
+        "guardrail_pass": semantic.get("guardrail_pass"),
+        "guardrail_fail": semantic.get("guardrail_fail"),
+        "guardrail_status": semantic.get("guardrail_status"),
+        "semantic_understanding_stage_present": semantic.get("semantic_understanding_stage_present"),
+        "semantic_understanding_coverage_measured": semantic.get("semantic_understanding_coverage_measured"),
+        "semantic_understanding_items": semantic.get("semantic_understanding_items"),
+        "semantic_understanding_verified_objects": semantic.get("semantic_understanding_verified_objects"),
+        "note": semantic.get("note", ""),
+    }
+
+
+def _lifecycle_record(
+    disposition: str,
+    defect_present: bool,
+    repaired_in_current_layer: bool,
+    historical_artifact_mutated: bool = False,
+) -> Dict[str, Any]:
+    """One contradiction-lifecycle record (relay task §8).
+
+    ``underlying_defect_repaired_in_current_layer`` is NEVER hard-coded: it is
+    supplied by the caller from validator evidence (``corrections_validated``).
+    ``classification_resolved`` and ``underlying_defect_repaired`` remain distinct.
+    """
+    return {
+        "disposition": disposition,
+        "underlying_defect_present": defect_present,
+        "underlying_defect_repaired_in_current_layer": repaired_in_current_layer,
+        "historical_artifact_mutated": historical_artifact_mutated,
+        "classification_resolved": True,
+        "followup_required": bool(defect_present and not repaired_in_current_layer),
+        "followup_route": (
+            "" if not (defect_present and not repaired_in_current_layer)
+            else "versioned correction layer projection"
+        ),
+    }
 
 
 def project_contradiction_lifecycle(
     corrections_validated: Dict[str, bool]
 ) -> Dict[str, Any]:
-    """M1-M6 contradiction lifecycle closure (§8)."""
-    raise NotImplementedError("lifecycle closure implemented in commit 3")
+    """M1-M6 contradiction lifecycle closure (§8).
+
+    M3/M4 defects are repaired in the correction layer only when their projections
+    validate (``corrections_validated`` evidence). M5 historical artifact is
+    preserved; only the current/superseding interpretation is marked repaired.
+    M1/M2/M6 have no underlying code defect; after clarification, followup is not
+    required. No field is hard-coded to 'repaired' without validator evidence.
+    """
+    m3 = bool(corrections_validated.get("M3", False))
+    m4 = bool(corrections_validated.get("M4", False))
+    m5 = bool(corrections_validated.get("M5", False))
+    return {
+        "schema": "r3r4/contradiction_lifecycle/v1",
+        "M1_SUCCESS_VS_SEMANTIC": _lifecycle_record(
+            "DEFINITION_CORRECT_VALUE_MISREAD", False, False),
+        "M2_UNKNOWN_RETENTION": _lifecycle_record(
+            "DEFINITION_CORRECT_VALUE_MISREAD", False, False),
+        "M3_CRASH_RECOVERY_RATE": _lifecycle_record("AGGREGATION_DEFECT", True, m3),
+        "M4_INCREMENTAL_SELECTIVITY": _lifecycle_record("AGGREGATION_DEFECT", True, m4),
+        "M5_CAPABILITY_ALL_PASS": _lifecycle_record(
+            "REPORTING_DEFECT", True, m5, historical_artifact_mutated=False),
+        "M6_CORPUS_SIZE_VS_SOURCES": _lifecycle_record(
+            "DEFINITION_CORRECT_VALUE_MISREAD", False, False),
+    }
 
 
 def validate_all(corrections: Dict[str, Any]) -> List[str]:
@@ -460,6 +648,17 @@ def validate_all(corrections: Dict[str, Any]) -> List[str]:
             if isinstance(item, MetricDefinition):
                 failures.extend(validate_metric_definition(item))
     return failures
+
+
+def _to_serializable(payload: Any) -> Any:
+    """Recursively convert MetricDefinition objects to plain dicts for JSON."""
+    if isinstance(payload, MetricDefinition):
+        return payload.to_dict()
+    if isinstance(payload, dict):
+        return {k: _to_serializable(v) for k, v in payload.items()}
+    if isinstance(payload, (list, tuple)):
+        return [_to_serializable(v) for v in payload]
+    return payload
 
 
 def project_all(
@@ -502,7 +701,7 @@ def project_all(
         "frozen_corpus_ref": FROZEN_CORPUS_REF,
         "corpus_objects": total_objects,
         "sealed_inputs": SEALED_R3_INPUTS,
-        "corrections": corrections,
+        "corrections": _to_serializable(corrections),
         "validation_failures": validation_failures,
         "validation_ok": len(validation_failures) == 0,
     }
