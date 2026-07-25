@@ -148,7 +148,15 @@ class ChangePropagationTests(unittest.TestCase):
         # injected cycle to two map-VISIBLE, resolved components (sync <-> iteration)
         # so the projection builds and traverse_fixpoint reports the cycle as
         # explicit blocking residue — the contract the test actually exercises.
-        cycle.update({"relation_id": "test_iteration_sync_cycle", "source": "sync", "target": "iteration", "propagation_mode": "automatic", "trigger_dimensions": ["operations_method"], "trigger_classifications": ["OPERATIONS_METHOD"]})
+        # Override relation_domain explicitly. The injected cycle is a fixture for
+        # cycle detection only; its source/target (sync<->iteration) and
+        # propagation_mode="automatic" are what the contract exercises. Leaving
+        # relation_domain inherited from relations[-2] is unsafe: when that relation
+        # is a substantive_causal_candidate the schema requires propagation_mode
+        # const "informational_only", which the automatic override violates and
+        # fails the whole topology. Pinning it to synchronization_obligation (no
+        # propagation_mode const) keeps the fixture schema-valid and order-independent.
+        cycle.update({"relation_id": "test_iteration_sync_cycle", "source": "sync", "target": "iteration", "relation_domain": "synchronization_obligation", "propagation_mode": "automatic", "required_evaluation": False, "creates_sync_obligation": False, "trigger_dimensions": ["operations_method"], "trigger_classifications": ["OPERATIONS_METHOD"]})
         topology["relations"].append(cycle)
         # Surfaces resolved to the Q32 era so the only residue is the genuine cycle.
         closure, _ = compute(self.request(), topology_doc=topology, era_ref=Q32_ERA_REF)
