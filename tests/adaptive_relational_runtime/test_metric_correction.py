@@ -626,6 +626,16 @@ def test_project_all_public_boundary_no_private_keys():
     assert '"title"' not in blob
 
 
+def test_project_all_no_prohibited_action_performed():
+    result = project_all(SEALED_R3_INPUTS, r4_capability_matrix())
+    blob = json.dumps(result, sort_keys=True).lower()
+    # The correction layer never performs or claims a prohibited action; it only
+    # reports the governance guardrail outcome (zero prohibited actions).
+    for token in ("promote_called\": true", "evolve_called\": true",
+                  "real_world_action\": true", "second executor"):
+        assert token not in blob
+
+
 def test_project_all_schema_version_consistent():
     result = project_all(SEALED_R3_INPUTS, r4_capability_matrix())
     assert result["schema"] == "r3r4/correction-projection/v1"
