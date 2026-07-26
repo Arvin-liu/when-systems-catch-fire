@@ -1,0 +1,90 @@
+{
+  "charter_system": {
+    "id": "charter-system",
+    "version": "R1",
+    "title": "Charter System R1 — Architecture Candidate",
+    "status": "DRAFT_CANDIDATE",
+    "on_main": false,
+    "current": false,
+    "accepted": false,
+    "activated": false,
+    "license": "CC-BY-SA-4.0",
+    "governs": ["life-community-value-charter", "future charters"],
+    "does_not_rewrite": ["life-community-value-charter content"],
+    "machine_readable_record_target": "docs/governance/charter-system-R1.json (only after owner-controlled sync)"
+  },
+  "charter_record_schema": {
+    "type": "object",
+    "required": ["id", "title", "version", "lifecycle_state", "publication_status", "source", "accepted", "current", "activated"],
+    "properties": {
+      "id": {"type": "string"},
+      "title": {"type": "string"},
+      "version": {"type": "string"},
+      "lifecycle_state": {"enum": ["DRAFT", "CANDIDATE", "ACCEPTED", "MERGED", "CURRENT", "CLOSED", "HISTORICAL"]},
+      "publication_status": {"enum": ["UNPUBLISHED", "PR_VISIBLE", "PUBLISHED_SNAPSHOT", "SUPERSEDED_SNAPSHOT", "WITHDRAWN_SNAPSHOT", "HISTORICAL_SNAPSHOT"]},
+      "source": {
+        "type": "object",
+        "properties": {
+          "pr": {"type": "integer"},
+          "branch": {"type": "string"},
+          "exact_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+        }
+      },
+      "accepted": {"type": "boolean"},
+      "current": {"type": "boolean"},
+      "activated": {"type": "boolean"},
+      "bound_decisions": {"type": "array", "items": {"type": "string", "description": "<decision_id>@<charter_id>@<version>"}},
+      "revision_parent": {"type": "string"},
+      "fork_lineage": {
+        "type": "object",
+        "properties": {
+          "derived_from_repo": {"type": "string"},
+          "derived_from_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+          "fork_date": {"type": "string", "format": "date"},
+          "fork_owner": {"type": "string"},
+          "parent_fork": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "invariants": [
+      "PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED",
+      "accepted -> (exact_head independently verified via re-fetch)",
+      "current -> accepted",
+      "candidate -> not current",
+      "revision must preserve red-lines (G3)",
+      "fork must preserve lineage (F4/F5)"
+    ]
+  },
+  "revision_record_schema": {
+    "type": "object",
+    "required": ["proposal", "rationale", "stakeholder_impact", "dissent_record", "trial_bounds", "rollback_conditions", "red_lines_preserved", "new_version", "revision_parent_head"],
+    "properties": {
+      "proposal": {"type": "string"},
+      "rationale": {"type": "string"},
+      "stakeholder_impact": {"type": "string"},
+      "dissent_record": {"type": "string"},
+      "trial_bounds": {"type": "string"},
+      "rollback_conditions": {"type": "string"},
+      "red_lines_preserved": {"type": "boolean", "const": true},
+      "new_version": {"type": "string"},
+      "revision_parent_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+    }
+  },
+  "fork_lineage_record_schema": {
+    "type": "object",
+    "required": ["derived_from_repo", "derived_from_head", "fork_date", "fork_owner"],
+    "properties": {
+      "derived_from_repo": {"type": "string"},
+      "derived_from_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+      "fork_date": {"type": "string", "format": "date"},
+      "fork_owner": {"type": "string"},
+      "parent_fork": {"type": ["string", "null"]}
+    }
+  },
+  "decision_charter_version_binding": {
+    "rule": "Every merged capability / accepted method / approved governance decision MUST record bound_charter_versions at decision time.",
+    "example": ["life-community-value-charter@v2", "charter-system@R1"],
+    "validity_scope": "Decision validity is scoped to its bound charter version; later charter revisions do not auto-invalidate prior decisions unless explicitly re-ratified (B1-B5)."
+  },
+  "this_candidate_self_gate": "Charter System R1 must itself pass Draft -> Candidate -> (independent exact-head acceptance) -> Merged -> Current/Closed before it becomes operative. Until then it is a non-operative proposal."
+}
