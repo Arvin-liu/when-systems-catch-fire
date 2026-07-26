@@ -1,4 +1,82 @@
 {
+  "$defs": {
+    "evidence_object": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_ceiling": {
+          "enum": [
+            "repository_contract_observed",
+            "software_behavior_reproduced",
+            "insufficient_evidence"
+          ]
+        },
+        "evidence_class": {
+          "const": "local_optimization_risk_review"
+        },
+        "evidence_id": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "observed_facts": {
+          "items": {
+            "minLength": 1,
+            "pattern": ".*\\S.*",
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "provenance": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "reviewer_role": {
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H"
+          ]
+        },
+        "supports": {
+          "items": {
+            "minLength": 1,
+            "pattern": ".*\\S.*",
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "unresolved_risks": {
+          "items": {
+            "minLength": 1,
+            "pattern": ".*\\S.*",
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "evidence_class",
+        "provenance",
+        "reviewer_role",
+        "claim_ceiling",
+        "supports",
+        "observed_facts",
+        "unresolved_risks"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
   "fail_closed_rules": [
     "affected_views must be non-empty and drawn from the seven embodied views",
     "every required disclosure must be present and not UNKNOWN/empty",
@@ -31,7 +109,8 @@
     "human_intervention_enabled": false,
     "medical_claims_authorized": false,
     "modern_wuzhen_pack_started": false,
-    "schema_version": "r5a/v1.1-narrow-repair",
+    "repair_task_id": "IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726",
+    "schema_version": "r5a/v1.2-consolidated-contract-repair",
     "supreme_charter": "LifeCommunityValueCharter",
     "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
   },
@@ -40,6 +119,7 @@
       "type": "string"
     },
     "proposal": {
+      "additionalProperties": false,
       "properties": {
         "affected_views": {
           "items": {
@@ -54,88 +134,189 @@
             ]
           },
           "minItems": 1,
-          "type": "array"
+          "type": "array",
+          "uniqueItems": true
         },
         "consent_autonomy_status": {
-          "not_unknowns": [
-            "UNKNOWN",
-            ""
-          ],
-          "type": "string"
+          "enum": [
+            "INFORMED_VOLUNTARY",
+            "NOT_APPLICABLE_EDUCATIONAL"
+          ]
         },
         "evidence_objects": {
-          "items": {
+          "contains": {
+            "properties": {
+              "supports": {
+                "allOf": [
+                  {
+                    "contains": {
+                      "const": "intended_benefit"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "affected_views"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "short_term_effects"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "long_term_effects"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "externalities_tradeoffs"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "uncertainty"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "consent_autonomy_status"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "reversibility"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "stop_conditions"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "referral_boundary"
+                    }
+                  },
+                  {
+                    "contains": {
+                      "const": "residual_harm_after_rollback"
+                    }
+                  }
+                ]
+              }
+            },
             "required": [
-              "evidence_id",
-              "evidence_class",
               "supports"
             ],
             "type": "object"
+          },
+          "items": {
+            "$ref": "#/$defs/evidence_object"
           },
           "minItems": 1,
           "type": "array"
         },
         "externalities_tradeoffs": {
-          "not_unknowns": [
-            "UNKNOWN",
-            ""
-          ],
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
           "type": "string"
         },
         "intended_benefit": {
-          "not_unknowns": [
-            "UNKNOWN",
-            ""
-          ],
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
           "type": "string"
         },
         "long_term_effects": {
-          "not_unknowns": [
-            "UNKNOWN",
-            ""
-          ],
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
           "type": "string"
         },
         "referral_boundary": {
-          "not_unknowns": [
-            "UNKNOWN",
-            ""
-          ],
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
           "type": "string"
         },
         "residual_harm_after_rollback": {
-          "not_unknowns": [
-            "UNKNOWN",
-            ""
-          ],
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
           "type": "string"
         },
         "reversibility": {
-          "not_unknowns": [
-            "UNKNOWN",
-            ""
-          ],
-          "type": "string"
+          "enum": [
+            "REVERSIBLE",
+            "PARTIALLY_REVERSIBLE"
+          ]
         },
         "short_term_effects": {
-          "not_unknowns": [
-            "UNKNOWN",
-            ""
-          ],
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
           "type": "string"
         },
         "stop_conditions": {
-          "not_unknowns": [
-            "UNKNOWN",
-            ""
-          ],
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
           "type": "string"
         },
         "uncertainty": {
-          "not_unknowns": [
-            "UNKNOWN",
-            ""
-          ],
+          "minLength": 1,
+          "not": {
+            "enum": [
+              "",
+              "UNKNOWN",
+              "NOT_OBSERVED"
+            ]
+          },
+          "pattern": ".*\\S.*",
           "type": "string"
         }
       },
@@ -150,13 +331,11 @@
         "reversibility",
         "stop_conditions",
         "referral_boundary",
-        "residual_harm_after_rollback"
+        "residual_harm_after_rollback",
+        "evidence_objects"
       ],
       "title": "LocalOptimizationProposal",
-      "type": [
-        "object",
-        "null"
-      ]
+      "type": "object"
     }
   },
   "required": [

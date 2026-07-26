@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +26,9 @@ if REPO_ROOT not in sys.path:
 from life_integrity_r5a import (  # noqa: E402
     annex,
     concept_mapping,
+    consolidated_repair_gate,
     embodied_view,
+    evidence,
     life_integrity,
     manifest,
     non_impact,
@@ -39,11 +42,67 @@ from life_integrity_r5a import (  # noqa: E402
 OUT_DIR = os.path.join(REPO_ROOT, "docs", "architecture", "ignition-r5a-life-integrity-r1")
 
 GENERATED_BY = "tools/generate_life_integrity_r5a.py"
+JSON_SCHEMA_DIALECT = "https://json-schema.org/draft/2020-12/schema"
+
+
+def _nonblank_string_schema(*, reject_unknown: bool = False) -> dict:
+    schema: dict[str, object] = {
+        "type": "string",
+        "minLength": 1,
+        "pattern": r".*\S.*",
+    }
+    if reject_unknown:
+        schema["not"] = {"enum": ["", "UNKNOWN", "NOT_OBSERVED"]}
+    return schema
+
+
+def _evidence_object_schema(*, evidence_class: str | None = None) -> dict:
+    evidence_class_schema: dict[str, object]
+    if evidence_class is None:
+        evidence_class_schema = {"type": "string", "minLength": 1}
+    else:
+        evidence_class_schema = {"const": evidence_class}
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "evidence_id": _nonblank_string_schema(),
+            "evidence_class": evidence_class_schema,
+            "provenance": _nonblank_string_schema(),
+            "reviewer_role": {"enum": list(evidence.REVIEWER_ROLE_IDS)},
+            "claim_ceiling": {"enum": list(evidence.CLAIM_CEILING_IDS)},
+            "supports": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": True,
+                "items": _nonblank_string_schema(),
+            },
+            "observed_facts": {
+                "type": "array",
+                "items": _nonblank_string_schema(),
+            },
+            "unresolved_risks": {
+                "type": "array",
+                "items": _nonblank_string_schema(),
+            },
+        },
+        "required": [
+            "evidence_id",
+            "evidence_class",
+            "provenance",
+            "reviewer_role",
+            "claim_ceiling",
+            "supports",
+            "observed_facts",
+            "unresolved_risks",
+        ],
+    }
 
 
 def _meta() -> dict:
     return {
         "task_id": registries.TASK_ID,
+        "repair_task_id": consolidated_repair_gate.TASK_ID,
         "control_commit": registries.CONTROL_COMMIT,
         "formal_predecessor": registries.FORMAL_PREDECESSOR,
         "candidate_frozen_head": registries.CANDIDATE_FROZEN_HEAD,
@@ -178,42 +237,66 @@ def _concept_mapping_lifecycle_registry() -> dict:
 # ---------------------------------------------------------------------------
 def _life_integrity_assessment_schema() -> dict:
     fields = list(life_integrity.LOCAL_OPTIMIZATION_FIELDS)
+    evidence_support = {
+        "allOf": [
+            {"contains": {"const": field_name}}
+            for field_name in life_integrity.LOCAL_OPTIMIZATION_FIELDS
+        ]
+    }
     return {
+        "$schema": JSON_SCHEMA_DIALECT,
         "meta": _meta(),
         "schema": "r5a/life-integrity-assessment/v1",
         "title": "LifeIntegrityAssessment",
         "type": "object",
+        "$defs": {
+            "evidence_object": _evidence_object_schema(
+                evidence_class="local_optimization_risk_review"
+            )
+        },
         "properties": {
             "proposal": {
-                "type": ["object", "null"],
+                "type": "object",
                 "title": "LocalOptimizationProposal",
+                "additionalProperties": False,
                 "properties": {
-                    "intended_benefit": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
+                    "intended_benefit": _nonblank_string_schema(reject_unknown=True),
                     "affected_views": {
                         "type": "array",
                         "items": {"enum": list(registries.EMBODIED_VIEW_IDS)},
                         "minItems": 1,
+                        "uniqueItems": True,
                     },
-                    "short_term_effects": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
-                    "long_term_effects": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
-                    "externalities_tradeoffs": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
-                    "uncertainty": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
-                    "consent_autonomy_status": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
-                    "reversibility": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
-                    "stop_conditions": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
-                    "referral_boundary": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
-                    "residual_harm_after_rollback": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
+                    "short_term_effects": _nonblank_string_schema(reject_unknown=True),
+                    "long_term_effects": _nonblank_string_schema(reject_unknown=True),
+                    "externalities_tradeoffs": _nonblank_string_schema(reject_unknown=True),
+                    "uncertainty": _nonblank_string_schema(reject_unknown=True),
+                    "consent_autonomy_status": {
+                        "enum": ["INFORMED_VOLUNTARY", "NOT_APPLICABLE_EDUCATIONAL"]
+                    },
+                    "reversibility": {
+                        "enum": ["REVERSIBLE", "PARTIALLY_REVERSIBLE"]
+                    },
+                    "stop_conditions": _nonblank_string_schema(reject_unknown=True),
+                    "referral_boundary": _nonblank_string_schema(reject_unknown=True),
+                    "residual_harm_after_rollback": _nonblank_string_schema(reject_unknown=True),
                     "evidence_objects": {
                         "type": "array",
                         "minItems": 1,
-                        "items": {"type": "object", "required": ["evidence_id", "evidence_class", "supports"]},
+                        "items": {"$ref": "#/$defs/evidence_object"},
+                        "contains": {
+                            "type": "object",
+                            "properties": {"supports": evidence_support},
+                            "required": ["supports"],
+                        },
                     },
                 },
-                "required": fields,
+                "required": fields + ["evidence_objects"],
             },
             "notes": {"type": "string"},
         },
         "required": ["proposal"],
+        "additionalProperties": False,
         "field_set": fields,
         "field_set_complete": life_integrity.local_optimization_field_set_complete(),
         "fail_closed_rules": [
@@ -230,42 +313,80 @@ def _life_integrity_assessment_schema() -> dict:
 # 6. Embodied-view projection schema
 # ---------------------------------------------------------------------------
 def _embodied_view_projection_schema() -> dict:
+    cross_view_relation = {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "relation_type": _nonblank_string_schema(),
+            "source_view": {"enum": list(registries.EMBODIED_VIEW_IDS)},
+            "target_view": {"enum": list(registries.EMBODIED_VIEW_IDS)},
+            "asserts_causality": {"type": "boolean", "const": False},
+            "notes": {"type": "string"},
+        },
+        "required": [
+            "relation_type",
+            "source_view",
+            "target_view",
+            "asserts_causality",
+        ],
+    }
+    contradiction = {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "view_a": {"enum": list(registries.EMBODIED_VIEW_IDS)},
+            "view_b": {"enum": list(registries.EMBODIED_VIEW_IDS)},
+            "description": {"type": "string"},
+        },
+        "required": ["view_a", "view_b"],
+    }
     return {
+        "$schema": JSON_SCHEMA_DIALECT,
         "meta": _meta(),
         "schema": "r5a/embodied-view-projection/v1",
         "title": "EmbodiedViewProjection",
         "type": "object",
+        "$defs": {
+            "CrossViewRelation": cross_view_relation,
+            "Contradiction": contradiction,
+        },
         "properties": {
             "view_id": {"enum": list(registries.EMBODIED_VIEW_IDS)},
-            "subject_identity": {"type": "string", "minLength": 1},
+            "subject_identity": _nonblank_string_schema(),
             "observations": {"type": "array"},
-            "confidence": {"type": "number"},
-            "time_scope": {"type": "string"},
+            "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+            "time_scope": _nonblank_string_schema(),
             "unknown": {"type": "boolean"},
             "provenance": {"type": "string"},
+            "provenance_boundary": _nonblank_string_schema(),
         },
-        "required": ["view_id", "subject_identity", "observations", "confidence", "time_scope", "unknown", "provenance"],
+        "required": [
+            "view_id",
+            "subject_identity",
+            "observations",
+            "confidence",
+            "time_scope",
+            "unknown",
+            "provenance",
+            "provenance_boundary",
+        ],
+        "additionalProperties": False,
+        "allOf": [
+            {
+                "if": {"properties": {"unknown": {"const": True}}, "required": ["unknown"]},
+                "then": {"properties": {"observations": {"maxItems": 0}}},
+                "else": {
+                    "properties": {
+                        "observations": {"minItems": 1},
+                        "time_scope": _nonblank_string_schema(reject_unknown=True),
+                        "provenance": _nonblank_string_schema(),
+                    }
+                },
+            }
+        ],
         "related": {
-            "CrossViewRelation": {
-                "type": "object",
-                "properties": {
-                    "relation_type": {"type": "string"},
-                    "source_view": {"enum": list(registries.EMBODIED_VIEW_IDS)},
-                    "target_view": {"enum": list(registries.EMBODIED_VIEW_IDS)},
-                    "asserts_causality": {"type": "boolean", "const": False},
-                    "notes": {"type": "string"},
-                },
-                "required": ["relation_type", "source_view", "target_view"],
-            },
-            "Contradiction": {
-                "type": "object",
-                "properties": {
-                    "view_a": {"enum": list(registries.EMBODIED_VIEW_IDS)},
-                    "view_b": {"enum": list(registries.EMBODIED_VIEW_IDS)},
-                    "description": {"type": "string"},
-                },
-                "required": ["view_a", "view_b"],
-            },
+            "CrossViewRelation": cross_view_relation,
+            "Contradiction": contradiction,
         },
         "fail_closed_rules": [
             "view_id must be in the seven-view closed set",
@@ -281,29 +402,59 @@ def _embodied_view_projection_schema() -> dict:
 # 7. Translated-claim schema
 # ---------------------------------------------------------------------------
 def _translated_claim_schema() -> dict:
+    required = list(tradition_translation.TRANSLATED_CLAIM_REQUIRED_FIELDS)
     return {
+        "$schema": JSON_SCHEMA_DIALECT,
         "meta": _meta(),
         "schema": "r5a/translated-claim/v1",
         "title": "TranslatedClaim",
         "type": "object",
         "properties": {
-            "source_provenance": {"type": "string", "minLength": 1},
-            "source_language": {"type": "string"},
-            "translation_status": {"type": "string"},
-            "attribution_status": {"type": "string"},
+            "source_provenance": _nonblank_string_schema(),
+            "source_language": _nonblank_string_schema(),
+            "translation_status": _nonblank_string_schema(),
+            "attribution_status": _nonblank_string_schema(),
             "claim_class": {"enum": list(registries.TRADITION_CLAIM_CLASS_IDS)},
-            "literal_reference": {"type": "string"},
+            "literal_reference": _nonblank_string_schema(),
             "interpretation_layer": {"enum": list(registries.TRADITION_INTERPRETATION_LAYER_IDS)},
-            "evidence_grade": {"type": "string"},
+            "evidence_grade": _nonblank_string_schema(),
             "mechanism_status": {"enum": list(registries.TRADITION_MECHANISM_STATUS_IDS)},
-            "applicability_scope": {"type": "string"},
-            "rights_boundary": {"type": "string"},
-            "confidence": {"type": "number"},
-            "unknowns": {"type": "array", "items": {"type": "string"}},
-            "prohibited_upgrades": {"type": "array", "items": {"type": "string"}},
+            "applicability_scope": _nonblank_string_schema(),
+            "rights_boundary": _nonblank_string_schema(),
+            "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+            "unknowns": {"type": "array", "items": _nonblank_string_schema()},
+            "prohibited_upgrades": {"type": "array", "items": _nonblank_string_schema()},
             "revision_history": {"type": "array", "items": {"type": "object"}},
         },
-        "required": ["source_provenance", "claim_class"],
+        "required": required,
+        "additionalProperties": False,
+        "allOf": [
+            {
+                "not": {
+                    "properties": {
+                        "claim_class": {"const": source},
+                        "mechanism_status": {"const": target},
+                    },
+                    "required": ["claim_class", "mechanism_status"],
+                }
+            }
+            for source, target in (
+                ("PHENOMENOLOGICAL_REPORT", "EMPIRICALLY_SUPPORTED_MECHANISM"),
+                ("METAPHYSICAL_CLAIM", "SCIENTIFIC_FACT"),
+                ("PRACTICE_PROTOCOL", "CLINICAL_EFFICACY"),
+            )
+        ]
+        + [
+            {
+                "not": {
+                    "properties": {
+                        "interpretation_layer": {"const": "LATER_INTERPRETATION"},
+                        "attribution_status": {"const": "AUTHOR_INTENT"},
+                    },
+                    "required": ["interpretation_layer", "attribution_status"],
+                }
+            }
+        ],
         "forbidden_upgrades": [
             {"from": a, "to": b}
             for (a, b) in sorted(registries.TRADITION_FORBIDDEN_TRANSITIONS)
@@ -322,29 +473,62 @@ def _translated_claim_schema() -> dict:
 # ---------------------------------------------------------------------------
 def _practice_safety_envelope_schema() -> dict:
     fields = list(safety_envelope.REQUIRED_ENVELOPE_FIELDS)
+    structured_string_fields = [
+        field_name
+        for field_name in fields
+        if field_name not in {"informed_consent_required", "unknowns"}
+    ]
+    unsafe_patterns = list(safety_envelope._UNSAFE_PATTERNS) + [
+        re.escape(phrase) for phrase in safety_envelope._STOP_PHRASES
+    ]
     return {
+        "$schema": JSON_SCHEMA_DIALECT,
         "meta": _meta(),
         "schema": "r5a/practice-safety-envelope/v1",
         "title": "PracticeSafetyEnvelope",
         "type": "object",
         "properties": {
             "educational_vs_individualized": {"enum": list(safety_envelope.EDUCATIONAL_STATUS_IDS)},
-            "intended_population": {"type": "string", "minLength": 1},
-            "exclusion_criteria": {"type": "string", "minLength": 1},
-            "contraindications": {"type": "string", "minLength": 1},
+            "intended_population": _nonblank_string_schema(reject_unknown=True),
+            "exclusion_criteria": _nonblank_string_schema(reject_unknown=True),
+            "contraindications": _nonblank_string_schema(reject_unknown=True),
             "risk_severity": {"enum": list(safety_envelope.RISK_SEVERITY_IDS)},
             "informed_consent_required": {"type": "boolean", "const": True},
-            "dependency_coercion_risk": {"enum": list(safety_envelope.COERCION_RISK_IDS)},
-            "stop_conditions": {"type": "string", "minLength": 1},
-            "rollback_exit_path": {"type": "string", "minLength": 1},
-            "professional_referral_boundary": {"type": "string", "minLength": 1},
-            "emergency_boundary": {"type": "string", "minLength": 1},
+            "dependency_coercion_risk": {
+                "enum": [
+                    item for item in safety_envelope.COERCION_RISK_IDS if item != "HIGH"
+                ]
+            },
+            "stop_conditions": _nonblank_string_schema(reject_unknown=True),
+            "rollback_exit_path": _nonblank_string_schema(reject_unknown=True),
+            "professional_referral_boundary": _nonblank_string_schema(reject_unknown=True),
+            "emergency_boundary": _nonblank_string_schema(reject_unknown=True),
             "interaction_with_existing_care": {"enum": list(safety_envelope.CARE_DISPOSITION_IDS)},
             "evidence_grade": {"enum": list(safety_envelope.EVIDENCE_GRADE_IDS)},
-            "unknowns": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-            "long_term_followup_plan": {"type": "string", "minLength": 1},
+            "unknowns": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": True,
+                "items": _nonblank_string_schema(),
+            },
+            "long_term_followup_plan": _nonblank_string_schema(reject_unknown=True),
+            "raw_text": {"type": "string"},
         },
         "required": fields,
+        "additionalProperties": False,
+        "allOf": [
+            {
+                "not": {
+                    "properties": {
+                        field_name: {
+                            "anyOf": [{"pattern": pattern} for pattern in unsafe_patterns]
+                        }
+                    },
+                    "required": [field_name],
+                }
+            }
+            for field_name in structured_string_fields + ["raw_text"]
+        ],
         "field_set": fields,
         "field_set_complete": safety_envelope.envelope_field_set_complete(),
         "stop_treatment_language": {
@@ -366,19 +550,39 @@ def _practice_safety_envelope_schema() -> dict:
 # ---------------------------------------------------------------------------
 def _concept_mapping_transition_schema() -> dict:
     return {
+        "$schema": JSON_SCHEMA_DIALECT,
         "meta": _meta(),
         "schema": "r5a/concept-mapping-transition/v1",
         "title": "ConceptMapping",
         "type": "object",
         "properties": {
-            "concept_id": {"type": "string", "minLength": 1},
+            "concept_id": _nonblank_string_schema(),
             "source_state": {"enum": list(registries.CONCEPT_MAPPING_STATE_IDS)},
             "current_state": {"enum": list(registries.CONCEPT_MAPPING_STATE_IDS)},
             "provenance": {"type": "string"},
+            "current_interpretation": {"type": "string"},
+            "superseded_interpretations": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "additionalProperties": False,
+                    "properties": {
+                        "interpretation": _nonblank_string_schema(),
+                        "superseded_by_evidence_id": _nonblank_string_schema(),
+                        "transition": _nonblank_string_schema(),
+                    },
+                    "required": [
+                        "interpretation",
+                        "superseded_by_evidence_id",
+                        "transition",
+                    ],
+                },
+            },
             "transitions": {
                 "type": "array",
                 "items": {
                     "type": "object",
+                    "additionalProperties": False,
                     "properties": {
                         "from": {"enum": list(registries.CONCEPT_MAPPING_STATE_IDS)},
                         "to": {"enum": list(registries.CONCEPT_MAPPING_STATE_IDS)},
@@ -401,7 +605,8 @@ def _concept_mapping_transition_schema() -> dict:
                 },
             },
         },
-        "required": ["concept_id", "source_state"],
+        "required": ["concept_id", "source_state", "current_state", "transitions"],
+        "additionalProperties": False,
         "forbidden_direct_jumps": ["UNMAPPED->PARTIALLY_SUPPORTED", "SYMBOLIC_DESCRIPTION->PARTIALLY_SUPPORTED"],
         "fail_closed_rules": [
             "target state must be in the eight-state closed set",
@@ -419,17 +624,69 @@ def _concept_mapping_transition_schema() -> dict:
 # 10. Longitudinal feedback and revision contract
 # ---------------------------------------------------------------------------
 def _longitudinal_feedback_schema() -> dict:
+    event_required = [
+        "event_id", "observation_time", "review_time", "consent_autonomy_version",
+        "evidence_chain_id", "short_term_benefit", "short_term_harm",
+        "long_term_benefit", "long_term_harm", "rollback_status",
+        "residual_harm_after_rollback", "evidence_object",
+    ]
+    event_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "event_id": _nonblank_string_schema(),
+            "observation_time": {"type": "string", "format": "date-time"},
+            "review_time": {"type": "string", "format": "date-time"},
+            "consent_autonomy_version": _nonblank_string_schema(),
+            "evidence_chain_id": _nonblank_string_schema(),
+            "short_term_benefit": _nonblank_string_schema(),
+            "short_term_harm": _nonblank_string_schema(),
+            "long_term_benefit": _nonblank_string_schema(),
+            "long_term_harm": _nonblank_string_schema(),
+            "rollback_status": {"enum": list(longitudinal.ROLLBACK_STATUS_IDS)},
+            "residual_harm_after_rollback": _nonblank_string_schema(),
+            "evidence_object": _evidence_object_schema(
+                evidence_class="longitudinal_observation"
+            ),
+        },
+        "required": event_required,
+    }
     return {
+        "$schema": JSON_SCHEMA_DIALECT,
         "meta": _meta(),
         "schema": "r5a/longitudinal-feedback/v1",
         "title": "LongitudinalRevisionContract",
         "type": "object",
+        "$defs": {"event": event_schema},
+        "properties": {
+            "contract_id": _nonblank_string_schema(),
+            "observation_time": {"type": "string", "format": "date-time"},
+            "decision_time": {"type": "string", "format": "date-time"},
+            "intervention_time": {"type": "string", "format": "date-time"},
+            "review_time": {"type": "string", "format": "date-time"},
+            "consent_autonomy_version": _nonblank_string_schema(),
+            "evidence_chain_id": _nonblank_string_schema(),
+            "reopen_trigger": {"enum": list(longitudinal.REOPEN_TRIGGER_IDS)},
+            "revision_status": {"enum": list(longitudinal.REVISION_STATUS_IDS)},
+            "retirement_state": {"enum": list(longitudinal.REVISION_STATUS_IDS)},
+            "revision_authority_role": {
+                "enum": list(longitudinal.REVISION_AUTHORITY_ROLE_IDS)
+            },
+            "evidence_threshold": {"enum": list(longitudinal.EVIDENCE_THRESHOLD_IDS)},
+            "events": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": True,
+                "items": {"$ref": "#/$defs/event"},
+            },
+        },
         "required": [
             "contract_id", "observation_time", "decision_time", "intervention_time",
             "review_time", "consent_autonomy_version", "evidence_chain_id",
             "reopen_trigger", "revision_status", "retirement_state",
             "revision_authority_role", "evidence_threshold", "events",
         ],
+        "additionalProperties": False,
         "closed_sets": {
             "revision_status": list(longitudinal.REVISION_STATUS_IDS),
             "reopen_trigger": list(longitudinal.REOPEN_TRIGGER_IDS),
@@ -437,12 +694,7 @@ def _longitudinal_feedback_schema() -> dict:
             "revision_authority_role": list(longitudinal.REVISION_AUTHORITY_ROLE_IDS),
             "evidence_threshold": list(longitudinal.EVIDENCE_THRESHOLD_IDS),
         },
-        "event_required": [
-            "event_id", "observation_time", "review_time", "consent_autonomy_version",
-            "evidence_chain_id", "short_term_benefit", "short_term_harm",
-            "long_term_benefit", "long_term_harm", "rollback_status",
-            "residual_harm_after_rollback", "evidence_object",
-        ],
+        "event_required": event_required,
         "fail_closed_rules": [
             "observation, decision, intervention and review time are distinct ordered fields",
             "consent/autonomy changes append immutable versions",
@@ -461,6 +713,23 @@ def _attack_acceptance_receipt() -> dict:
     return attack_gate.run_attack_gate()
 
 
+def _consolidated_repair_case_registry() -> dict:
+    return consolidated_repair_gate.consolidated_repair_case_registry()
+
+
+def _consolidated_repair_acceptance_receipt() -> dict:
+    return consolidated_repair_gate.run_consolidated_repair_gate(
+        schema_documents={
+            "life-integrity-assessment-schema.json": _life_integrity_assessment_schema(),
+            "embodied-view-projection-schema.json": _embodied_view_projection_schema(),
+            "translated-claim-schema.json": _translated_claim_schema(),
+            "practice-safety-envelope-schema.json": _practice_safety_envelope_schema(),
+            "concept-mapping-transition-schema.json": _concept_mapping_transition_schema(),
+            "longitudinal-feedback-schema.json": _longitudinal_feedback_schema(),
+        }
+    )
+
+
 _ARTIFACTS = (
     ("candidate-charter-manifest.json", _candidate_charter_manifest),
     ("embodied-view-registry.json", _embodied_view_registry),
@@ -474,6 +743,14 @@ _ARTIFACTS = (
     ("longitudinal-feedback-schema.json", _longitudinal_feedback_schema),
     ("r5a-narrow-repair-attack-case-registry.json", _attack_case_registry),
     ("r5a-narrow-repair-attack-acceptance.json", _attack_acceptance_receipt),
+    (
+        "r5a-consolidated-repair-attack-case-registry.json",
+        _consolidated_repair_case_registry,
+    ),
+    (
+        "r5a-consolidated-repair-attack-acceptance.json",
+        _consolidated_repair_acceptance_receipt,
+    ),
 )
 
 

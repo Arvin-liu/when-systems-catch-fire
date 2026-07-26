@@ -1,4 +1,158 @@
 {
+  "$defs": {
+    "event": {
+      "additionalProperties": false,
+      "properties": {
+        "consent_autonomy_version": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "event_id": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "evidence_chain_id": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "evidence_object": {
+          "additionalProperties": false,
+          "properties": {
+            "claim_ceiling": {
+              "enum": [
+                "repository_contract_observed",
+                "software_behavior_reproduced",
+                "insufficient_evidence"
+              ]
+            },
+            "evidence_class": {
+              "const": "longitudinal_observation"
+            },
+            "evidence_id": {
+              "minLength": 1,
+              "pattern": ".*\\S.*",
+              "type": "string"
+            },
+            "observed_facts": {
+              "items": {
+                "minLength": 1,
+                "pattern": ".*\\S.*",
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "provenance": {
+              "minLength": 1,
+              "pattern": ".*\\S.*",
+              "type": "string"
+            },
+            "reviewer_role": {
+              "enum": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F",
+                "G",
+                "H"
+              ]
+            },
+            "supports": {
+              "items": {
+                "minLength": 1,
+                "pattern": ".*\\S.*",
+                "type": "string"
+              },
+              "minItems": 1,
+              "type": "array",
+              "uniqueItems": true
+            },
+            "unresolved_risks": {
+              "items": {
+                "minLength": 1,
+                "pattern": ".*\\S.*",
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "evidence_id",
+            "evidence_class",
+            "provenance",
+            "reviewer_role",
+            "claim_ceiling",
+            "supports",
+            "observed_facts",
+            "unresolved_risks"
+          ],
+          "type": "object"
+        },
+        "long_term_benefit": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "long_term_harm": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "observation_time": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "residual_harm_after_rollback": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "review_time": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "rollback_status": {
+          "enum": [
+            "NOT_ATTEMPTED",
+            "SUCCEEDED",
+            "PARTIAL",
+            "FAILED"
+          ]
+        },
+        "short_term_benefit": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        },
+        "short_term_harm": {
+          "minLength": 1,
+          "pattern": ".*\\S.*",
+          "type": "string"
+        }
+      },
+      "required": [
+        "event_id",
+        "observation_time",
+        "review_time",
+        "consent_autonomy_version",
+        "evidence_chain_id",
+        "short_term_benefit",
+        "short_term_harm",
+        "long_term_benefit",
+        "long_term_harm",
+        "rollback_status",
+        "residual_harm_after_rollback",
+        "evidence_object"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
   "closed_sets": {
     "evidence_threshold": [
       "SOFTWARE_CONTRACT_ONLY",
@@ -61,9 +215,89 @@
     "human_intervention_enabled": false,
     "medical_claims_authorized": false,
     "modern_wuzhen_pack_started": false,
-    "schema_version": "r5a/v1.1-narrow-repair",
+    "repair_task_id": "IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726",
+    "schema_version": "r5a/v1.2-consolidated-contract-repair",
     "supreme_charter": "LifeCommunityValueCharter",
     "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+  },
+  "properties": {
+    "consent_autonomy_version": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "contract_id": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "decision_time": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "events": {
+      "items": {
+        "$ref": "#/$defs/event"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "evidence_chain_id": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "evidence_threshold": {
+      "enum": [
+        "SOFTWARE_CONTRACT_ONLY",
+        "INDEPENDENT_REVIEW_REQUIRED"
+      ]
+    },
+    "intervention_time": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "observation_time": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "reopen_trigger": {
+      "enum": [
+        "NONE",
+        "DELAYED_ADVERSE_OUTCOME",
+        "CONSENT_WITHDRAWN",
+        "CONTRADICTORY_EVIDENCE",
+        "EVIDENCE_THRESHOLD_NOT_MET"
+      ]
+    },
+    "retirement_state": {
+      "enum": [
+        "ACTIVE",
+        "REOPENED",
+        "DEPRECATED",
+        "RETIRED"
+      ]
+    },
+    "review_time": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "revision_authority_role": {
+      "enum": [
+        "E",
+        "F",
+        "H"
+      ]
+    },
+    "revision_status": {
+      "enum": [
+        "ACTIVE",
+        "REOPENED",
+        "DEPRECATED",
+        "RETIRED"
+      ]
+    }
   },
   "required": [
     "contract_id",

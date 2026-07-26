@@ -50,6 +50,29 @@ class UnknownTranslationStatusError(TraditionTranslationError):
     """Raised for out-of-set target labels, including semantic-looking aliases."""
 
 
+class TranslatedClaimContractError(TraditionTranslationError):
+    """Raised when a translated claim omits or mistypes a contract field."""
+
+
+TRANSLATED_CLAIM_REQUIRED_FIELDS = (
+    "source_provenance",
+    "source_language",
+    "translation_status",
+    "attribution_status",
+    "claim_class",
+    "literal_reference",
+    "interpretation_layer",
+    "evidence_grade",
+    "mechanism_status",
+    "applicability_scope",
+    "rights_boundary",
+    "confidence",
+    "unknowns",
+    "prohibited_upgrades",
+    "revision_history",
+)
+
+
 @dataclass
 class TranslatedClaim:
     source_provenance: str
@@ -78,6 +101,54 @@ class TranslatedClaim:
         if self.interpretation_layer not in TRADITION_INTERPRETATION_LAYER_IDS:
             raise UnknownTranslationStatusError(
                 f"unknown interpretation_layer: {self.interpretation_layer!r}"
+            )
+        # The public dataclass constructor is a contract surface too.  It must
+        # enforce the same silent-upgrade rule as the convenience helper.
+        check_forbidden_upgrade_strict(self.claim_class, self.mechanism_status)
+        for field_name in (
+            "source_provenance",
+            "source_language",
+            "translation_status",
+            "attribution_status",
+            "literal_reference",
+            "evidence_grade",
+            "applicability_scope",
+            "rights_boundary",
+        ):
+            value = getattr(self, field_name)
+            if not isinstance(value, str) or not value.strip():
+                raise TranslatedClaimContractError(
+                    f"{field_name} must be a non-blank string"
+                )
+        if (
+            self.interpretation_layer == "LATER_INTERPRETATION"
+            and self.attribution_status.strip().upper() == "AUTHOR_INTENT"
+        ):
+            raise ForbiddenClaimUpgradeError(
+                "forbidden silent upgrade: LATER_INTERPRETATION -> AUTHOR_INTENT"
+            )
+        if type(self.confidence) not in (int, float) or not 0.0 <= self.confidence <= 1.0:
+            raise TranslatedClaimContractError(
+                "confidence must be a number between 0 and 1"
+            )
+        if not isinstance(self.unknowns, list) or any(
+            not isinstance(item, str) or not item.strip() for item in self.unknowns
+        ):
+            raise TranslatedClaimContractError(
+                "unknowns must be an array of non-blank strings"
+            )
+        if not isinstance(self.prohibited_upgrades, list) or any(
+            not isinstance(item, str) or not item.strip()
+            for item in self.prohibited_upgrades
+        ):
+            raise TranslatedClaimContractError(
+                "prohibited_upgrades must be an array of non-blank strings"
+            )
+        if not isinstance(self.revision_history, list) or any(
+            not isinstance(item, dict) for item in self.revision_history
+        ):
+            raise TranslatedClaimContractError(
+                "revision_history must be an array of objects"
             )
 
 
@@ -156,9 +227,13 @@ def translate_claim(
             raise ForbiddenClaimUpgradeError(
                 f"forbidden silent upgrade via {to_status!r}: {claim_class} -> {to_status}"
             )
-    valid_fields = {k: v for k, v in kwargs.items() if k in TranslatedClaim.__dataclass_fields__}
+    unknown_fields = set(kwargs) - set(TranslatedClaim.__dataclass_fields__)
+    if unknown_fields:
+        raise TranslatedClaimContractError(
+            f"unknown translated-claim fields: {sorted(unknown_fields)}"
+        )
     return TranslatedClaim(
         source_provenance=source_provenance,
         claim_class=claim_class,
-        **valid_fields,
+        **kwargs,
     )

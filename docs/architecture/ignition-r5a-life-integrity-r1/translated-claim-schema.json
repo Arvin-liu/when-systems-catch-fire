@@ -1,4 +1,72 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "not": {
+        "properties": {
+          "claim_class": {
+            "const": "PHENOMENOLOGICAL_REPORT"
+          },
+          "mechanism_status": {
+            "const": "EMPIRICALLY_SUPPORTED_MECHANISM"
+          }
+        },
+        "required": [
+          "claim_class",
+          "mechanism_status"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "claim_class": {
+            "const": "METAPHYSICAL_CLAIM"
+          },
+          "mechanism_status": {
+            "const": "SCIENTIFIC_FACT"
+          }
+        },
+        "required": [
+          "claim_class",
+          "mechanism_status"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "claim_class": {
+            "const": "PRACTICE_PROTOCOL"
+          },
+          "mechanism_status": {
+            "const": "CLINICAL_EFFICACY"
+          }
+        },
+        "required": [
+          "claim_class",
+          "mechanism_status"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "attribution_status": {
+            "const": "AUTHOR_INTENT"
+          },
+          "interpretation_layer": {
+            "const": "LATER_INTERPRETATION"
+          }
+        },
+        "required": [
+          "interpretation_layer",
+          "attribution_status"
+        ]
+      }
+    }
+  ],
   "fail_closed_rules": [
     "claim_class must be in the eight-class closed set",
     "the five forbidden silent upgrades are rejected at build time",
@@ -38,15 +106,20 @@
     "human_intervention_enabled": false,
     "medical_claims_authorized": false,
     "modern_wuzhen_pack_started": false,
-    "schema_version": "r5a/v1.1-narrow-repair",
+    "repair_task_id": "IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726",
+    "schema_version": "r5a/v1.2-consolidated-contract-repair",
     "supreme_charter": "LifeCommunityValueCharter",
     "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
   },
   "properties": {
     "applicability_scope": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
       "type": "string"
     },
     "attribution_status": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
       "type": "string"
     },
     "claim_class": {
@@ -62,9 +135,13 @@
       ]
     },
     "confidence": {
+      "maximum": 1,
+      "minimum": 0,
       "type": "number"
     },
     "evidence_grade": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
       "type": "string"
     },
     "interpretation_layer": {
@@ -76,6 +153,8 @@
       ]
     },
     "literal_reference": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
       "type": "string"
     },
     "mechanism_status": {
@@ -90,6 +169,8 @@
     },
     "prohibited_upgrades": {
       "items": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
         "type": "string"
       },
       "type": "array"
@@ -101,20 +182,29 @@
       "type": "array"
     },
     "rights_boundary": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
       "type": "string"
     },
     "source_language": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
       "type": "string"
     },
     "source_provenance": {
       "minLength": 1,
+      "pattern": ".*\\S.*",
       "type": "string"
     },
     "translation_status": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
       "type": "string"
     },
     "unknowns": {
       "items": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
         "type": "string"
       },
       "type": "array"
@@ -122,7 +212,20 @@
   },
   "required": [
     "source_provenance",
-    "claim_class"
+    "source_language",
+    "translation_status",
+    "attribution_status",
+    "claim_class",
+    "literal_reference",
+    "interpretation_layer",
+    "evidence_grade",
+    "mechanism_status",
+    "applicability_scope",
+    "rights_boundary",
+    "confidence",
+    "unknowns",
+    "prohibited_upgrades",
+    "revision_history"
   ],
   "schema": "r5a/translated-claim/v1",
   "title": "TranslatedClaim",

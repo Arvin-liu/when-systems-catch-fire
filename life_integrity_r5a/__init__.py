@@ -23,6 +23,7 @@ from __future__ import annotations
 from .registries import SCHEMA_VERSION, TASK_ID
 from .manifest import CANDIDATE_MANIFEST, MANIFEST_REQUIRED_FLAGS, manifest_flags_consistent
 from .evidence import EvidenceObject
+from .consolidated_repair_gate import REQUIRED_CONSOLIDATED_REPAIR_CASE_IDS
 
 __all__ = [
     "SCHEMA_VERSION",
@@ -31,4 +32,5 @@ __all__ = [
     "MANIFEST_REQUIRED_FLAGS",
     "manifest_flags_consistent",
     "EvidenceObject",
+    "REQUIRED_CONSOLIDATED_REPAIR_CASE_IDS",
 ]
