@@ -1,8 +1,8 @@
 # 点火迭代操作法 / Ignition Iteration Method
 
-Current: `1.3.0` (incremental execution and selective materialization; Q32I closeout complete)
+Historical: `1.3.0` (incremental execution and selective materialization; Q32I closeout complete)
 
-Candidate: `1.4.0` (continuous stage snapshot publication; snapshot record merged to Main, not Accepted, Current or Activated)
+Current: `1.4.0` (continuous stage snapshot publication; snapshot record merged to Main via PR #134 and promoted to Current by controlled sync R1-20260726; R5-A snapshot is PUBLISHED_SNAPSHOT but still not Accepted/Current/Activated)
 
 Historical: `1.2.0` (typed declared change-propagation closure; superseded by 1.3.0)
 
@@ -10,7 +10,7 @@ Earlier Historical: `1.1.0` (synchronization registry closure; superseded by 1.2
 
 Q32I lifecycle: Accepted, Merged by PR #62, Current and Closed. Q33 launch packet ready externally; Q33 and Q34—Q40 not started.
 
-1.4.0 candidate lifecycle: Candidate only. Its snapshot record (`data/operations/stage-snapshots.json` and its deterministic README/Pages projection) entered Main via the PR #134 merge (R3 exact-head acceptance of the repair stack + R2 main closeout, merge commit `f9abf90e`); the method and snapshot are not Accepted/Current/Activated. R5-A remains `PR_VISIBLE`; the `PUBLISHED_SNAPSHOT` transition is reserved for a separate controlled sync.
+1.4.0 lifecycle: Current. Its snapshot record (`data/operations/stage-snapshots.json` and its deterministic README/Pages projection) entered Main via the PR #134 merge (R3 exact-head acceptance of the repair stack + R2 main closeout, merge commit `f9abf90e`) and the method was promoted to Current by controlled sync R1-20260726; the R5-A snapshot is `PUBLISHED_SNAPSHOT` but still not Accepted/Current/Activated. The `PUBLISHED_SNAPSHOT` transition was executed by that same controlled sync.
 
 Status: canonical operation method. This method governs how 点火 changes itself. It is not a truth layer, proof system, value charter, causal model or substitute for external evidence.
 
@@ -269,7 +269,7 @@ Q32I self-hosting changes the registry, topology, profiles, planner, executor, v
 
 The Phase D deterministic report, Phase E manifest, completion seal and exact-head CI/artifact evidence are auditable inputs. They did not self-accept Q32I or use the closeout HEAD as their own validity premise; independent review, merge, final-main CI, production deployment and live verification remained external lifecycle evidence. They do not identify real-world causality.
 
-## 16. Method 1.4.0 Candidate: Continuous Stage Snapshot Publication
+## 16. Method 1.4.0 Current: Continuous Stage Snapshot Publication
 
 The candidate adds a publication axis orthogonal to the unchanged capability lifecycle. It lets a verified public summary, exact source identity, explicit status and evidence entrance appear in a Main homepage projection without treating the candidate payload as accepted, current, activated or merged to Main.
 
@@ -281,4 +281,4 @@ The authority chain is:
 
 The lightweight gate validates the snapshot claim and publication boundary, not the underlying candidate capability. It rejects identity drift, missing evidence, duplicate IDs, removed limitations, capability registration, privacy/secret exposure, disguised rejection, stale projections, broken succession and responsibility transfer. Final responsibility is a positive, reference-based contract: accountable fields contain only an `actor_ref` resolved to an ACTIVE `PERSON`/`ORGANIZATION` in the controlled actor registry, whose entry supplies stable identity and accountability/contact evidence. Both public Schemas derive their allowed references from that registry and runtime resolves the same source; either-surface disagreement blocks. Execution agents and workflows are separate technical records and can never substitute for final responsibility. Responsibility changes require a new snapshot revision and superseding responsibility record. Revision, supersession and withdrawal preserve history.
 
-The normative candidate contract is `docs/operations/stage-snapshot-publication.md`. This section, its schemas, tools, tests, templates and front-door projection are a 1.3.0-governed Draft candidate. They cannot use 1.4.0 to self-accept or self-merge; 1.3.0 remains Current until independent exact-head acceptance, ordinary merge, final-main validation and required production synchronization are complete.
+The normative candidate contract is `docs/operations/stage-snapshot-publication.md`. This section, its schemas, tools, tests, templates and front-door projection are governed under iteration method 1.4.0 (now Current; 1.3.0 is Historical). They cannot use 1.4.0 to self-accept or self-merge; 1.4.0 became Current only after independent exact-head acceptance, ordinary merge, final-main validation and required production synchronization (controlled sync R1-20260726).

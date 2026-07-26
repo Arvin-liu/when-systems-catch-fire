@@ -1,10 +1,10 @@
 # 阶段成果持续快照与分层发布制度
 
-Status: `Ignition Iteration Method 1.4.0 Candidate — Continuous Stage Snapshot Publication`。
+Status: `Ignition Iteration Method 1.4.0 — Continuous Stage Snapshot Publication`（已升为 Current；1.3.0 转为 Historical）。
 
-本制度是对 Current 方法 `1.3.0` 的候选增量。它尚未 Accepted、Current 或 Activated，不得利用自身规则快速合并；本候选必须继续经过独立 exact-head 验收、普通合并和 post-merge 同步。
+本制度现由 Current 方法 `1.4.0` 承载（1.3.0 转为 Historical）。作为正交发布轴，它不改变能力生命周期；R5-A 快照已发布为 `PUBLISHED_SNAPSHOT`，但仍非 Accepted/Current/Activated，不得利用自身规则快速合并候选能力。
 
-责任主体窄修复状态：PR #134 的精确头 `5a856c031616ec0a959150baebb7edced34f22bc` 因 A15c/A15d 可把 Agent 或自动发布流程伪装成负责组织而被拒绝；第一轮修复 PR #135 精确头 `567aef78345564adb646b59590924cf24f4bbc45` 又因 44/104 个 Schema 旁路、四个 Schema/runtime 双重旁路及 runner 单表面误报被拒绝。当前 R2 只把责任身份收紧为 registry 解析的 `actor_ref` 并修复双表面门；PR #134/#135 均仍为 Draft，方法 1.4.0 仍为 Candidate。
+责任主体窄修复状态：PR #134 的精确头 `5a856c031616ec0a959150baebb7edced34f22bc` 因 A15c/A15d 可把 Agent 或自动发布流程伪装成负责组织而被拒绝；第一轮修复 PR #135 精确头 `567aef78345564adb646b59590924cf24f4bbc45` 又因 44/104 个 Schema 旁路、四个 Schema/runtime 双重旁路及 runner 单表面误报被拒绝。R2 把责任身份收紧为 registry 解析的 `actor_ref` 并修复双表面门；PR #135 精确头 `c13da782` 经独立验收并合入 PR #134 来源分支（head `48f87616`），PR #134 经 R2 main closeout 普通合并入 Main（merge commit `f9abf90e`）；方法 1.4.0 经受控同步 R1-20260726 升为 Current，1.3.0 转为 Historical。
 
 ## 1. 两条正交状态轴
 
@@ -79,9 +79,9 @@ CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收�
 - `REJECTED`、`FAILURE`、`WITHDRAWN` 必须在摘要中直接显示拒绝、失败或撤回。
 - `SUPERSEDED_SNAPSHOT` 必须指向后继；历史快照不抹除原始证据。
 
-当前首个真实试点是 R5-A。它只说明两轮具体合同修复已独立验收并进入 PR #130 来源分支；PR #130 整体仍为 OPEN/DRAFT，非 Main、非 Current、非 Activated，R5-B、R5-C、R6 未启动。它不证明 R5-A 已完成、生命完整性、人体安全、疗效或普遍语义能力。
+当前首个真实试点是 R5-A。它只说明两轮具体合同修复已独立验收并进入 R5-A 宪章来源分支（PR #130，整体仍 OPEN/DRAFT）；其阶段快照记录在 PR #134（责任主体修复栈）普通合并入 Main 后，经本受控同步由 `PR_VISIBLE` 更新为 `PUBLISHED_SNAPSHOT`。R5-A 候选本身仍非 Main、非 Accepted、非 Current、非 Activated；R5-B、R5-C、R6 未启动。它不证明 R5-A 已完成、生命完整性、人体安全、疗效或普遍语义能力。
 
-本候选分支上的试点状态是 `PR_VISIBLE`，`snapshot_record_merged_to_main=false`。独立验收和合并后，另一次受控同步才可将它更新为 `PUBLISHED_SNAPSHOT`；本任务不预写未来事实。
+本受控同步将试点状态由 `PR_VISIBLE` 更新为 `PUBLISHED_SNAPSHOT`，`snapshot_record_merged_to_main=true`（记录经 PR #134 普通合并入 Main）；`PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED` 不等式保持不变，R5-A 候选本身仍非 Accepted/Current/Activated。
 
 ## 5. 修订、替代、撤回与回滚
 
