@@ -161,7 +161,15 @@ def legacy_attack_calls(base: dict[str, Any], cases: dict[str, Any]) -> list[tup
         ("A15c", registry_call(lambda r: item(r)["responsibility"].__setitem__("responsible_actor", legacy_free_text_actor("Codex Agent")))),
         ("A15d", registry_call(lambda r: item(r)["responsibility"].__setitem__("responsible_actor", legacy_free_text_actor("automated publication workflow")))),
         ("A16", agent_claims_publication),
-        ("A17", registry_call(lambda r: item(r)["source"].__setitem__("snapshot_record_merged_to_main", True))),
+        # A17 enforces the line-318 invariant (snapshot_record_merged_to_main must equal
+        # the main-state of publication_status). Set the INCONSISTENT value for whatever the
+        # current base publication_status is, so the attack stays valid regardless of base drift.
+        # (The base is now PUBLISHED_SNAPSHOT with merged_to_main=True; flipping to a hard-coded
+        # True would be a no-op on an already-valid state and stop exercising the invariant.)
+        ("A17", registry_call(lambda r: item(r)["source"].__setitem__(
+            "snapshot_record_merged_to_main",
+            not (item(r)["publication_status"] in {"PUBLISHED_SNAPSHOT", "SUPERSEDED_SNAPSHOT", "WITHDRAWN_SNAPSHOT", "HISTORICAL_SNAPSHOT"}),
+        ))),
         ("A18", registry_call(lambda r: item(r).__setitem__("affects_formal_capability", True))),
     ]
 

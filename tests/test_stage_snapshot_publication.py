@@ -264,11 +264,20 @@ class StageSnapshotPublicationTests(unittest.TestCase):
         self.assertEqual(validate_registry(registry)["status"], "PASS")
 
     def test_publication_state_and_main_record_flag_are_bidirectionally_bound(self):
+        # The line-318 invariant: snapshot_record_merged_to_main must equal whether
+        # publication_status is a Main snapshot state. Test BOTH directions of the
+        # binding so the case stays valid regardless of the base registry's own state.
+        # A snapshot record merged to Main is rejected for a non-Main publication status.
         registry = self.registry()
-        self.item(registry)["source"]["snapshot_record_merged_to_main"] = True
+        item = self.item(registry)
+        item["publication_status"] = "PR_VISIBLE"  # not a Main publication state
+        item["source"]["snapshot_record_merged_to_main"] = True
         self.assertRejected(registry, "Main snapshot flag conflicts")
+        # A Main publication status is rejected unless its snapshot record is merged to Main.
         registry = self.registry()
-        self.item(registry)["publication_status"] = "HISTORICAL_SNAPSHOT"
+        item = self.item(registry)
+        item["publication_status"] = "HISTORICAL_SNAPSHOT"  # a Main publication state
+        item["source"]["snapshot_record_merged_to_main"] = False
         self.assertRejected(registry, "Main snapshot flag conflicts")
 
     def test_attack_false_current(self):
@@ -359,7 +368,10 @@ class StageSnapshotPublicationTests(unittest.TestCase):
         registry = self.registry()
         self.assertTrue(validate_registry(registry, self.remote_facts(registry))["remote_verified"])
         facts = self.remote_facts(registry)
-        facts["Arvin-liu/when-systems-catch-fire#130"]["head"] = "b" * 40
+        # Use the ACTUAL source PR key from the registry (no hard-coded PR number),
+        # so the test tracks the live source PR across controlled syncs.
+        source = self.item(registry)["source"]
+        facts[f"{source['repository']}#{source['pull_request']}"]["head"] = "b" * 40
         with self.assertRaisesRegex(ContractError, "live source HEAD drift"):
             validate_registry(registry, facts)
 
