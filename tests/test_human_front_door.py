@@ -73,7 +73,15 @@ class HumanFrontDoorTests(unittest.TestCase):
 
     def test_readme_has_one_current_state_and_expected_top_order(self):
         self.assertEqual(self.readme.count("## 项目现状"), 1)
-        headings = ["## 项目现状", "## 正在炼化 / Recent Stage Results", "## 之元写作法成果", "## 生命共同体价值宪章", "## 完整可点击系统图", "## 使用指南"]
+        headings = [
+            "## 项目现状",
+            "## 项目阶段性更新 / Project Stage Update",
+            "## 正在炼化 / Recent Stage Results",
+            "## 之元写作法成果",
+            "## 生命共同体价值宪章",
+            "## 完整可点击系统图",
+            "## 使用指南",
+        ]
         positions = [self.readme.index(heading) for heading in headings]
         self.assertEqual(positions, sorted(positions))
 
@@ -122,6 +130,58 @@ class HumanFrontDoorTests(unittest.TestCase):
         typo = "roll" + "bar"
         with self.assertRaisesRegex(AssertionError, "rollback"):
             validate_version_front_doors(self.ai_start + "\n" + typo + "回", self.ai_handoff, self.llms)
+
+    def test_stale_current_method_is_rejected_in_readme(self):
+        stale = (
+            "method 1.4.0 is Candidate only.\n"
+            "method 1.3.0 is Current now.\n"
+            "map 0.3.0 Current; map 0.2.0 Historical; map 0.1.0 earlier Historical; method 1.2.0 Historical."
+        )
+        with self.assertRaises(AssertionError):
+            validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms, readme=stale)
+
+    def test_stale_current_method_is_rejected_in_current_state(self):
+        stale = (
+            "method 1.4.0 is Candidate only.\n"
+            "method 1.3.0 is Current now.\n"
+            "map 0.3.0 Current; map 0.2.0 Historical; map 0.1.0 earlier Historical; method 1.2.0 Historical."
+        )
+        with self.assertRaises(AssertionError):
+            validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms, current_state=stale)
+
+    def test_charter_r1_name_required_in_front_doors(self):
+        no_name = self.readme.replace("宪章系统 R1", "Charter System X").replace("Charter System R1", "Charter System X")
+        with self.assertRaises(AssertionError):
+            validate_texts(no_name, self.guide, self.current_state, self.pages)
+
+    def test_charter_r1_boundary_required_in_front_doors(self):
+        no_boundary = self.readme.replace("activated=false", "activated=true")
+        with self.assertRaises(AssertionError):
+            validate_texts(no_boundary, self.guide, self.current_state, self.pages)
+
+    def test_charter_r1_boundary_required_in_current_state(self):
+        no_boundary = self.current_state.replace("activated=false", "activated=true")
+        with self.assertRaises(AssertionError):
+            validate_texts(self.readme, self.guide, no_boundary, self.pages)
+
+    def test_nonimpact_proof_exempts_front_door_surface(self):
+        # A legitimate NonImpactProof must let a surface skip the staleness check.
+        stale = (
+            "method 1.4.0 is Candidate only.\n"
+            "method 1.3.0 is Current now.\n"
+            "map 0.3.0 Current; map 0.2.0 Historical; map 0.1.0 earlier Historical; method 1.2.0 Historical."
+        )
+        with self.assertRaises(AssertionError):
+            validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms, readme=stale)
+        # Exempting human.readme via a valid NonImpactProof skips the stale check for that surface only.
+        validate_version_front_doors(
+            self.ai_start, self.ai_handoff, self.llms, readme=stale, nonimpact_proofs={"human.readme"}
+        )
+        # Exempting the wrong surface does not rescue the stale README.
+        with self.assertRaises(AssertionError):
+            validate_version_front_doors(
+                self.ai_start, self.ai_handoff, self.llms, readme=stale, nonimpact_proofs={"human.current_state"}
+            )
 
 
 if __name__ == "__main__":
