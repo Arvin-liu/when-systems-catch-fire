@@ -175,6 +175,23 @@ Run the narrowest relevant ladder first, then expand:
 
 No failed lower rung can be repaired by a higher-rung narrative.
 
+### 9.1 Instance-bound adversarial closure
+
+When review identifies concrete failed attacks, acceptance is bound to the
+instances, not to an aggregate test count. Each retained finding must have a
+stable case identity, a concrete non-private input, a typed evidence object, an
+expected fail-closed or accepted outcome, an executed per-case test, and a
+machine receipt. The gate must compare the exact required-id set, reject missing
+or duplicate identities, and report every failed case. A threshold such as
+`>=120 checks`, a green aggregate self-check, or several paraphrases of the same
+fixture cannot substitute for an unexecuted instance.
+
+Bounded lexical or alias fixtures prove only those software behaviors. They do
+not justify a claim of universal semantic understanding; uncovered language,
+unknown target labels and unresolved evidence stay fail-closed or `BLOCKED`.
+This clarification does not change method version `1.3.0` or turn tests into
+human evidence.
+
 For Draft Pages work, build and inspect the exact-head artifact without deploying the unmerged branch to the production homepage. Production Pages deployment and live fetch are post-merge external synchronization obligations.
 
 ## 10. State Machine

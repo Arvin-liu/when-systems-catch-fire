@@ -19,6 +19,8 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 它不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。当前状态会随证据、反例、执行能力、现实反馈和缺口修正继续变化。
 
+R5-A 生命完整性仍是堆叠 Draft 候选，不是当前能力。Night Queue R1 的 `20/20 COMPLETED` 只表示报告轮次完成，正式裁决为 [`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`](./docs/governance/r5a-night-queue-r1-adjudication.md)：PR #130 的 145 项计数不能替代缺失的具体攻击实例。窄修复为每个保留缺口绑定显式攻击 ID、证据对象、逐案测试和机器门；它只证明仓库合同行为，不证明人体安全、疗效或普遍语义理解。R5-B、R5-C、R6 均未启动且继续禁止。
+
 [查看完整项目现状](./docs/project-current-state.md) / [查看现行架构](./ARCHITECTURE.md) / [查看使用说明](./docs/USAGE.md)
 
 </details>
