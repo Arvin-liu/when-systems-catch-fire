@@ -2,7 +2,8 @@
   "fail_closed_rules": [
     "claim_class must be in the eight-class closed set",
     "the five forbidden silent upgrades are rejected at build time",
-    "mechanism_status/interpretation_layer may not realize a forbidden upgrade target"
+    "mechanism_status/interpretation_layer may not realize a forbidden upgrade target",
+    "out-of-set aliases fail closed instead of being treated as semantic evidence"
   ],
   "forbidden_upgrades": [
     {
@@ -28,16 +29,16 @@
   ],
   "meta": {
     "activation_status": "CANDIDATE_ONLY",
+    "candidate_frozen_head": "0e9d1e5823b41b7e9375e5f634388371b9b024ac",
     "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
     "domain_pack_federation_started": false,
     "external_acceptance_claimed": false,
     "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
-    "frozen_head": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
     "generated_by": "tools/generate_life_integrity_r5a.py",
     "human_intervention_enabled": false,
     "medical_claims_authorized": false,
     "modern_wuzhen_pack_started": false,
-    "schema_version": "r5a/v1",
+    "schema_version": "r5a/v1.1-narrow-repair",
     "supreme_charter": "LifeCommunityValueCharter",
     "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
   },
@@ -67,13 +68,25 @@
       "type": "string"
     },
     "interpretation_layer": {
-      "type": "string"
+      "enum": [
+        "SOURCE_LITERAL",
+        "AUTHOR_INTENT_CANDIDATE",
+        "LATER_INTERPRETATION",
+        "MODERN_RECONSTRUCTION"
+      ]
     },
     "literal_reference": {
       "type": "string"
     },
     "mechanism_status": {
-      "type": "string"
+      "enum": [
+        "NOT_ASSERTED",
+        "MECHANISM_HYPOTHESIS",
+        "EMPIRICALLY_SUPPORTED_MECHANISM",
+        "SCIENTIFIC_FACT",
+        "CLINICAL_EFFICACY",
+        "EFFECTIVENESS"
+      ]
     },
     "prohibited_upgrades": {
       "items": {

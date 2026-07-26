@@ -13,7 +13,7 @@ from __future__ import annotations
 from .registries import (
     CONTROL_COMMIT,
     FORMAL_PREDECESSOR,
-    FROZEN_HEAD,
+    CANDIDATE_FROZEN_HEAD,
     SCHEMA_VERSION,
     TASK_ID,
 )
@@ -34,7 +34,7 @@ CANDIDATE_MANIFEST = {
     "task_id": TASK_ID,
     "control_commit": CONTROL_COMMIT,
     "formal_predecessor": FORMAL_PREDECESSOR,
-    "frozen_head": FROZEN_HEAD,
+    "candidate_frozen_head": CANDIDATE_FROZEN_HEAD,
     "title": "Life Integrity Charter Candidate R1",
     "activation_status": "CANDIDATE_ONLY",
     "human_intervention_enabled": False,
@@ -79,8 +79,12 @@ CANDIDATE_MANIFEST = {
         "docs/architecture/ignition-r5a-life-integrity-r1/translated-claim-schema.json",
         "docs/architecture/ignition-r5a-life-integrity-r1/practice-safety-envelope-schema.json",
         "docs/architecture/ignition-r5a-life-integrity-r1/concept-mapping-transition-schema.json",
+        "docs/architecture/ignition-r5a-life-integrity-r1/longitudinal-feedback-schema.json",
+        "docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-case-registry.json",
+        "docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-acceptance.json",
+        "docs/governance/r5a-night-queue-r1-adjudication.md",
     ],
-}
+    }
 
 
 def manifest_flags_consistent(manifest: dict | None = None) -> bool:

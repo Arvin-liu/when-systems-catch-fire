@@ -27,6 +27,10 @@ from .registries import (
     TRADITION_FORBIDDEN_TRANSITIONS,
     is_forbidden_tradition_upgrade,
     is_valid_claim_class,
+    TRADITION_INTERPRETATION_LAYER_IDS,
+    TRADITION_MECHANISM_STATUS_IDS,
+    TRADITION_RISKY_TARGET_ALIASES,
+    TRADITION_UPGRADE_SOURCE_IDS,
 )
 
 
@@ -42,6 +46,10 @@ class ForbiddenClaimUpgradeError(TraditionTranslationError):
     """Raised when a claim attempts a forbidden silent upgrade."""
 
 
+class UnknownTranslationStatusError(TraditionTranslationError):
+    """Raised for out-of-set target labels, including semantic-looking aliases."""
+
+
 @dataclass
 class TranslatedClaim:
     source_provenance: str
@@ -50,7 +58,7 @@ class TranslatedClaim:
     attribution_status: str
     claim_class: str
     literal_reference: str = ""
-    interpretation_layer: str = ""
+    interpretation_layer: str = "SOURCE_LITERAL"
     evidence_grade: str = "UNKNOWN"
     mechanism_status: str = "NOT_ASSERTED"
     applicability_scope: str = "UNKNOWN"
@@ -63,6 +71,14 @@ class TranslatedClaim:
     def __post_init__(self) -> None:
         if not is_valid_claim_class(self.claim_class):
             raise UnknownClaimClassError(f"unknown claim class: {self.claim_class!r}")
+        if self.mechanism_status not in TRADITION_MECHANISM_STATUS_IDS:
+            raise UnknownTranslationStatusError(
+                f"unknown mechanism_status: {self.mechanism_status!r}"
+            )
+        if self.interpretation_layer not in TRADITION_INTERPRETATION_LAYER_IDS:
+            raise UnknownTranslationStatusError(
+                f"unknown interpretation_layer: {self.interpretation_layer!r}"
+            )
 
 
 # --- Pure predicates (available in Commit 1, used by tests) ----------------
@@ -85,9 +101,18 @@ def validate_claim_class_strict(claim_class: str) -> None:
 def check_forbidden_upgrade_strict(from_status: str, to_status: str) -> None:
     """Fail-closed: a forbidden silent upgrade is never permitted without
     separately linked empirical evidence and independent review."""
-    if is_forbidden_tradition_upgrade(from_status, to_status):
+    if from_status not in TRADITION_UPGRADE_SOURCE_IDS:
+        raise UnknownTranslationStatusError(f"unknown upgrade source: {from_status!r}")
+    normalized_target = TRADITION_RISKY_TARGET_ALIASES.get(to_status, to_status)
+    if normalized_target not in TRADITION_MECHANISM_STATUS_IDS and normalized_target != "AUTHOR_INTENT":
+        raise UnknownTranslationStatusError(f"unknown upgrade target: {to_status!r}")
+    if is_forbidden_tradition_upgrade(from_status, normalized_target):
         raise ForbiddenClaimUpgradeError(
-            f"forbidden silent upgrade: {from_status} -> {to_status}"
+            f"forbidden silent upgrade: {from_status} -> {normalized_target}"
+        )
+    if to_status in TRADITION_RISKY_TARGET_ALIASES:
+        raise ForbiddenClaimUpgradeError(
+            f"bounded semantic alias is not permitted: {to_status} -> {normalized_target}"
         )
 
 
@@ -105,11 +130,29 @@ def translate_claim(
     """
     validate_claim_class_strict(claim_class)
     mechanism_status = kwargs.get("mechanism_status", "NOT_ASSERTED")
-    interpretation_layer = kwargs.get("interpretation_layer", "")
+    interpretation_layer = kwargs.get("interpretation_layer", "SOURCE_LITERAL")
+    if mechanism_status not in TRADITION_MECHANISM_STATUS_IDS:
+        alias = TRADITION_RISKY_TARGET_ALIASES.get(mechanism_status)
+        if alias is not None:
+            raise ForbiddenClaimUpgradeError(
+                f"bounded semantic alias is not permitted: {mechanism_status} -> {alias}"
+            )
+        raise UnknownTranslationStatusError(
+            f"unknown mechanism_status: {mechanism_status!r}"
+        )
+    if interpretation_layer not in TRADITION_INTERPRETATION_LAYER_IDS:
+        alias = TRADITION_RISKY_TARGET_ALIASES.get(interpretation_layer)
+        if alias is not None:
+            raise ForbiddenClaimUpgradeError(
+                f"bounded semantic alias is not permitted in interpretation_layer: {interpretation_layer}"
+            )
+        raise UnknownTranslationStatusError(
+            f"unknown interpretation_layer: {interpretation_layer!r}"
+        )
     check_forbidden_upgrade_strict(claim_class, mechanism_status)
     # Interpretation layer may not silently assert a forbidden target either.
-    for to_status in (mechanism_status, interpretation_layer):
-        if to_status and is_forbidden_tradition_upgrade(claim_class, to_status):
+    for to_status in (mechanism_status,):
+        if is_forbidden_tradition_upgrade(claim_class, to_status):
             raise ForbiddenClaimUpgradeError(
                 f"forbidden silent upgrade via {to_status!r}: {claim_class} -> {to_status}"
             )

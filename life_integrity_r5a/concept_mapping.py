@@ -19,6 +19,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any
 
+from .evidence import EvidenceObject
 from .registries import (
     CONCEPT_MAPPING_STATE_IDS,
     CONCEPT_MAPPING_TRANSITIONS,
@@ -43,6 +44,10 @@ class UnknownConceptStateError(ConceptMappingError):
     """Raised when a state is outside the closed set."""
 
 
+class TransitionEvidenceError(ConceptMappingError):
+    """Raised when evidence, reviewer, reversibility, or history does not match."""
+
+
 @dataclass
 class ConceptMapping:
     concept_id: str
@@ -50,6 +55,8 @@ class ConceptMapping:
     current_state: str = ""
     transitions: list[dict[str, Any]] = field(default_factory=list)
     provenance: str = ""
+    current_interpretation: str = ""
+    superseded_interpretations: list[dict[str, str]] = field(default_factory=list)
 
     def __post_init__(self) -> None:
         if not is_valid_concept_state(self.source_state):
@@ -86,6 +93,9 @@ def apply_transition(
     reviewer_role: str,
     reason: str,
     reversibility: bool = True,
+    *,
+    evidence_object: EvidenceObject | None = None,
+    new_interpretation: str | None = None,
 ) -> None:
     """Apply a concept-mapping transition, fail-closed.
 
@@ -116,6 +126,46 @@ def apply_transition(
         )
 
     meta = CONCEPT_MAPPING_TRANSITIONS[src][target_state]
+    if evidence_class != meta["required_evidence_class"]:
+        raise TransitionEvidenceError(
+            f"provided evidence class {evidence_class!r} does not equal required "
+            f"{meta['required_evidence_class']!r}"
+        )
+    if reviewer_role != meta["reviewer_role"]:
+        raise TransitionEvidenceError(
+            f"reviewer role {reviewer_role!r} does not equal required {meta['reviewer_role']!r}"
+        )
+    if reversibility is not meta["reversible"]:
+        raise TransitionEvidenceError(
+            "transition reversibility must equal the registry metadata"
+        )
+    if not isinstance(reason, str) or not reason.strip():
+        raise TransitionEvidenceError("transition reason must be non-blank")
+    if not isinstance(evidence_object, EvidenceObject):
+        raise TransitionEvidenceError("transition requires a typed EvidenceObject")
+    if evidence_object.evidence_class != evidence_class:
+        raise TransitionEvidenceError(
+            "evidence_object.evidence_class must equal the provided evidence class"
+        )
+    if evidence_object.reviewer_role != reviewer_role:
+        raise TransitionEvidenceError(
+            "evidence_object.reviewer_role must equal the transition reviewer role"
+        )
+    if not evidence_object.supports_all({f"transition:{src}->{target_state}"}):
+        raise TransitionEvidenceError("evidence object does not support this exact transition")
+
+    if new_interpretation is not None:
+        if not isinstance(new_interpretation, str) or not new_interpretation.strip():
+            raise TransitionEvidenceError("new_interpretation must be non-blank when provided")
+        if mapping.current_interpretation:
+            mapping.superseded_interpretations.append(
+                {
+                    "interpretation": mapping.current_interpretation,
+                    "superseded_by_evidence_id": evidence_object.evidence_id,
+                    "transition": f"{src}->{target_state}",
+                }
+            )
+        mapping.current_interpretation = new_interpretation.strip()
     mapping.transitions.append(
         {
             "from": src,
@@ -126,7 +176,9 @@ def apply_transition(
             "reversibility": reversibility,
             "contradiction_handling": meta["contradiction_handling"],
             "reason": reason,
-            "receipt": f"{mapping.concept_id}:{src}->{target_state}",
+            "evidence_id": evidence_object.evidence_id,
+            "receipt": f"{mapping.concept_id}:{src}->{target_state}:{evidence_object.evidence_id}",
+            "superseded_interpretations_preserved": len(mapping.superseded_interpretations),
         }
     )
     mapping.current_state = target_state

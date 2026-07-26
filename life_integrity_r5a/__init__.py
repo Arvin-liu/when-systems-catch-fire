@@ -22,6 +22,7 @@ from __future__ import annotations
 
 from .registries import SCHEMA_VERSION, TASK_ID
 from .manifest import CANDIDATE_MANIFEST, MANIFEST_REQUIRED_FLAGS, manifest_flags_consistent
+from .evidence import EvidenceObject
 
 __all__ = [
     "SCHEMA_VERSION",
@@ -29,4 +30,5 @@ __all__ = [
     "CANDIDATE_MANIFEST",
     "MANIFEST_REQUIRED_FLAGS",
     "manifest_flags_consistent",
+    "EvidenceObject",
 ]

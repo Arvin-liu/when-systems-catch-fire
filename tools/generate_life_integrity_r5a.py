@@ -32,6 +32,8 @@ from life_integrity_r5a import (  # noqa: E402
     registries,
     safety_envelope,
     tradition_translation,
+    longitudinal,
+    attack_gate,
 )
 
 OUT_DIR = os.path.join(REPO_ROOT, "docs", "architecture", "ignition-r5a-life-integrity-r1")
@@ -44,7 +46,7 @@ def _meta() -> dict:
         "task_id": registries.TASK_ID,
         "control_commit": registries.CONTROL_COMMIT,
         "formal_predecessor": registries.FORMAL_PREDECESSOR,
-        "frozen_head": registries.FROZEN_HEAD,
+        "candidate_frozen_head": registries.CANDIDATE_FROZEN_HEAD,
         "schema_version": registries.SCHEMA_VERSION,
         "generated_by": GENERATED_BY,
         "activation_status": "CANDIDATE_ONLY",
@@ -201,6 +203,11 @@ def _life_integrity_assessment_schema() -> dict:
                     "stop_conditions": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
                     "referral_boundary": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
                     "residual_harm_after_rollback": {"type": "string", "not_unknowns": ["UNKNOWN", ""]},
+                    "evidence_objects": {
+                        "type": "array",
+                        "minItems": 1,
+                        "items": {"type": "object", "required": ["evidence_id", "evidence_class", "supports"]},
+                    },
                 },
                 "required": fields,
             },
@@ -212,6 +219,8 @@ def _life_integrity_assessment_schema() -> dict:
         "fail_closed_rules": [
             "affected_views must be non-empty and drawn from the seven embodied views",
             "every required disclosure must be present and not UNKNOWN/empty",
+            "a local_optimization_risk_review evidence object must support every disclosure",
+            "consent and reversibility use fail-closed status sets",
             "the gate only validates the contract; it never executes the proposal",
         ],
     }
@@ -235,7 +244,7 @@ def _embodied_view_projection_schema() -> dict:
             "unknown": {"type": "boolean"},
             "provenance": {"type": "string"},
         },
-        "required": ["view_id", "subject_identity"],
+        "required": ["view_id", "subject_identity", "observations", "confidence", "time_scope", "unknown", "provenance"],
         "related": {
             "CrossViewRelation": {
                 "type": "object",
@@ -261,6 +270,7 @@ def _embodied_view_projection_schema() -> dict:
         "fail_closed_rules": [
             "view_id must be in the seven-view closed set",
             "subject_identity must be a non-empty string and shared across all views",
+            "an observed view requires observations, bounded time_scope and provenance",
             "asserts_causality must be false for every cross-view relation",
             "a single view may never assert WHOLE_PERSON_COMPLETE",
         ],
@@ -283,9 +293,9 @@ def _translated_claim_schema() -> dict:
             "attribution_status": {"type": "string"},
             "claim_class": {"enum": list(registries.TRADITION_CLAIM_CLASS_IDS)},
             "literal_reference": {"type": "string"},
-            "interpretation_layer": {"type": "string"},
+            "interpretation_layer": {"enum": list(registries.TRADITION_INTERPRETATION_LAYER_IDS)},
             "evidence_grade": {"type": "string"},
-            "mechanism_status": {"type": "string"},
+            "mechanism_status": {"enum": list(registries.TRADITION_MECHANISM_STATUS_IDS)},
             "applicability_scope": {"type": "string"},
             "rights_boundary": {"type": "string"},
             "confidence": {"type": "number"},
@@ -302,6 +312,7 @@ def _translated_claim_schema() -> dict:
             "claim_class must be in the eight-class closed set",
             "the five forbidden silent upgrades are rejected at build time",
             "mechanism_status/interpretation_layer may not realize a forbidden upgrade target",
+            "out-of-set aliases fail closed instead of being treated as semantic evidence",
         ],
     }
 
@@ -316,13 +327,30 @@ def _practice_safety_envelope_schema() -> dict:
         "schema": "r5a/practice-safety-envelope/v1",
         "title": "PracticeSafetyEnvelope",
         "type": "object",
-        "properties": {f: {"type": "string", "not_unknowns": ["UNKNOWN", ""]} for f in fields},
+        "properties": {
+            "educational_vs_individualized": {"enum": list(safety_envelope.EDUCATIONAL_STATUS_IDS)},
+            "intended_population": {"type": "string", "minLength": 1},
+            "exclusion_criteria": {"type": "string", "minLength": 1},
+            "contraindications": {"type": "string", "minLength": 1},
+            "risk_severity": {"enum": list(safety_envelope.RISK_SEVERITY_IDS)},
+            "informed_consent_required": {"type": "boolean", "const": True},
+            "dependency_coercion_risk": {"enum": list(safety_envelope.COERCION_RISK_IDS)},
+            "stop_conditions": {"type": "string", "minLength": 1},
+            "rollback_exit_path": {"type": "string", "minLength": 1},
+            "professional_referral_boundary": {"type": "string", "minLength": 1},
+            "emergency_boundary": {"type": "string", "minLength": 1},
+            "interaction_with_existing_care": {"enum": list(safety_envelope.CARE_DISPOSITION_IDS)},
+            "evidence_grade": {"enum": list(safety_envelope.EVIDENCE_GRADE_IDS)},
+            "unknowns": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+            "long_term_followup_plan": {"type": "string", "minLength": 1},
+        },
         "required": fields,
         "field_set": fields,
         "field_set_complete": safety_envelope.envelope_field_set_complete(),
         "stop_treatment_language": {
             "forbidden": True,
             "detector_phrases": list(safety_envelope._STOP_PHRASES),
+            "bounded_multilingual_patterns": list(safety_envelope._UNSAFE_PATTERNS),
         },
         "fail_closed_rules": [
             "every required field must be present and not UNKNOWN/empty",
@@ -361,11 +389,14 @@ def _concept_mapping_transition_schema() -> dict:
                         "contradiction_handling": {"type": "string"},
                         "reason": {"type": "string"},
                         "receipt": {"type": "string"},
+                        "evidence_id": {"type": "string"},
+                        "superseded_interpretations_preserved": {"type": "integer", "minimum": 0},
                     },
                     "required": [
                         "from", "to", "required_evidence_class",
                         "provided_evidence_class", "reviewer_role",
                         "reversibility", "contradiction_handling", "reason", "receipt",
+                        "evidence_id", "superseded_interpretations_preserved",
                     ],
                 },
             },
@@ -377,9 +408,57 @@ def _concept_mapping_transition_schema() -> dict:
             "UNMAPPED/SYMBOLIC_DESCRIPTION may not jump directly to PARTIALLY_SUPPORTED",
             "transition must be in the allowed graph",
             "every transition records evidence_class, reviewer_role, reversibility, contradiction_handling, reason and receipt",
+            "provided evidence class, reviewer role and reversibility must equal registry metadata",
+            "superseded interpretations are preserved with evidence identity",
             "CONTRADICTED and UNKNOWN remain first-class outcomes",
         ],
     }
+
+
+# ---------------------------------------------------------------------------
+# 10. Longitudinal feedback and revision contract
+# ---------------------------------------------------------------------------
+def _longitudinal_feedback_schema() -> dict:
+    return {
+        "meta": _meta(),
+        "schema": "r5a/longitudinal-feedback/v1",
+        "title": "LongitudinalRevisionContract",
+        "type": "object",
+        "required": [
+            "contract_id", "observation_time", "decision_time", "intervention_time",
+            "review_time", "consent_autonomy_version", "evidence_chain_id",
+            "reopen_trigger", "revision_status", "retirement_state",
+            "revision_authority_role", "evidence_threshold", "events",
+        ],
+        "closed_sets": {
+            "revision_status": list(longitudinal.REVISION_STATUS_IDS),
+            "reopen_trigger": list(longitudinal.REOPEN_TRIGGER_IDS),
+            "rollback_status": list(longitudinal.ROLLBACK_STATUS_IDS),
+            "revision_authority_role": list(longitudinal.REVISION_AUTHORITY_ROLE_IDS),
+            "evidence_threshold": list(longitudinal.EVIDENCE_THRESHOLD_IDS),
+        },
+        "event_required": [
+            "event_id", "observation_time", "review_time", "consent_autonomy_version",
+            "evidence_chain_id", "short_term_benefit", "short_term_harm",
+            "long_term_benefit", "long_term_harm", "rollback_status",
+            "residual_harm_after_rollback", "evidence_object",
+        ],
+        "fail_closed_rules": [
+            "observation, decision, intervention and review time are distinct ordered fields",
+            "consent/autonomy changes append immutable versions",
+            "delayed adverse outcomes explicitly reopen the candidate",
+            "rollback status and residual harm remain separate",
+            "deprecation or retirement requires independent role H",
+        ],
+    }
+
+
+def _attack_case_registry() -> dict:
+    return attack_gate.attack_case_registry()
+
+
+def _attack_acceptance_receipt() -> dict:
+    return attack_gate.run_attack_gate()
 
 
 _ARTIFACTS = (
@@ -392,6 +471,9 @@ _ARTIFACTS = (
     ("translated-claim-schema.json", _translated_claim_schema),
     ("practice-safety-envelope-schema.json", _practice_safety_envelope_schema),
     ("concept-mapping-transition-schema.json", _concept_mapping_transition_schema),
+    ("longitudinal-feedback-schema.json", _longitudinal_feedback_schema),
+    ("r5a-narrow-repair-attack-case-registry.json", _attack_case_registry),
+    ("r5a-narrow-repair-attack-acceptance.json", _attack_acceptance_receipt),
 )
 
 

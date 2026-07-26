@@ -28,8 +28,34 @@ from life_integrity_r5a import registries as R
 from life_integrity_r5a import safety_envelope as SE
 from life_integrity_r5a import tradition_translation as TT
 from life_integrity_r5a import validators
+from life_integrity_r5a import attack_gate as AG
+from life_integrity_r5a import longitudinal as LG
+from life_integrity_r5a.evidence import EvidenceObject
 
 import tools.generate_life_integrity_r5a as GEN  # noqa: E402
+
+
+def _observed_view(view_id: str, subject_identity: str = "subject-xyz"):
+    return EV.EmbodiedViewProjection(
+        view_id=view_id,
+        subject_identity=subject_identity,
+        unknown=False,
+        observations=[f"synthetic observation for {view_id}"],
+        confidence=0.5,
+        time_scope="synthetic-window-2026-07",
+        provenance="synthetic-test",
+    )
+
+
+def _transition_evidence(source: str, target: str, evidence_class: str, reviewer: str):
+    return EvidenceObject(
+        evidence_id=f"EV-TEST-{source}-{target}-{evidence_class}-{reviewer}",
+        evidence_class=evidence_class,
+        provenance="synthetic-test",
+        reviewer_role=reviewer,
+        supports=(f"transition:{source}->{target}",),
+        observed_facts=("synthetic transition evidence",),
+    )
 
 
 # ===========================================================================
@@ -111,9 +137,7 @@ def test_agent_created_with_subject_identity():
 
 def test_add_view_ties_to_same_subject():
     agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
-    proj = EV.EmbodiedViewProjection(
-        view_id="PhysiologicalView", subject_identity="subject-xyz", unknown=False
-    )
+    proj = _observed_view("PhysiologicalView")
     agent.add_view(proj)
     got = agent.get_view("PhysiologicalView")
     assert got.subject_identity == "subject-xyz"
@@ -131,9 +155,7 @@ def test_add_view_rejects_foreign_subject():
 def test_missing_views_returned_as_unknown():
     agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
     agent.add_view(
-        EV.EmbodiedViewProjection(
-            view_id="PhysiologicalView", subject_identity="subject-xyz", unknown=False
-        )
+        _observed_view("PhysiologicalView")
     )
     missing = agent.missing_views()
     assert "PhysiologicalView" not in missing
@@ -144,9 +166,7 @@ def test_missing_views_returned_as_unknown():
 def test_single_view_cannot_claim_whole_person():
     agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
     agent.add_view(
-        EV.EmbodiedViewProjection(
-            view_id="CognitiveAffectiveView", subject_identity="subject-xyz", unknown=False
-        )
+        _observed_view("CognitiveAffectiveView")
     )
     with pytest.raises(EV.WholePersonClaimError):
         agent.assert_single_view_not_whole_person("CognitiveAffectiveView")
@@ -155,9 +175,7 @@ def test_single_view_cannot_claim_whole_person():
 def test_whole_person_conclusion_requires_disclosure():
     agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
     agent.add_view(
-        EV.EmbodiedViewProjection(
-            view_id="BehavioralView", subject_identity="subject-xyz", unknown=False
-        )
+        _observed_view("BehavioralView")
     )
     # missing views not disclosed and contradictions not surfaced -> refuse
     with pytest.raises(EV.WholePersonClaimError):
@@ -364,6 +382,9 @@ def test_apply_transition_allowed_chain():
     CM.apply_transition(
         m, "PHENOMENOLOGICAL_CANDIDATE", evidence_class="phenomenology_report",
         reviewer_role="D", reason="interpretation",
+        evidence_object=_transition_evidence(
+            "SYMBOLIC_DESCRIPTION", "PHENOMENOLOGICAL_CANDIDATE", "phenomenology_report", "D"
+        ),
     )
     assert m.current_state == "PHENOMENOLOGICAL_CANDIDATE"
     assert len(m.transitions) == 1
@@ -377,6 +398,9 @@ def test_concept_mapping_retains_contradicted_and_unknown():
     CM.apply_transition(
         m, "CONTRADICTED", evidence_class="contradiction_evidence", reviewer_role="F",
         reason="conflicting evidence",
+        evidence_object=_transition_evidence(
+            "MECHANISM_HYPOTHESIS", "CONTRADICTED", "contradiction_evidence", "F"
+        ),
     )
     assert m.current_state == "CONTRADICTED"
 
@@ -402,24 +426,8 @@ def test_envelope_rejects_stop_treatment_language():
 
 
 def test_envelope_rejects_stop_treatment_in_raw_text():
-    env = SE.PracticeSafetyEnvelope(
-        educational_vs_individualized="educational",
-        intended_population="general adults",
-        exclusion_criteria="none known",
-        contraindications="none known",
-        risk_severity="low",
-        informed_consent_required=True,
-        dependency_coercion_risk="low",
-        stop_conditions="discontinue if adverse",
-        rollback_exit_path="stop practice",
-        professional_referral_boundary="licensed clinician",
-        emergency_boundary="call emergency services",
-        interaction_with_existing_care="coordinate with provider",
-        evidence_grade="low",
-        unknowns=["long-term data"],
-        long_term_followup_plan="annual review",
-        raw_text="you can stop prescribed treatment and use this instead",
-    )
+    env = FX.sample_safety_envelope()
+    env.raw_text = "you can stop prescribed treatment and use this instead"
     with pytest.raises(SE.StopTreatmentRecommendationError):
         SE.validate_envelope(env)
 
@@ -615,6 +623,7 @@ def test_valid_whole_person_disclosure_passes():
         claimed_views=list(R.EMBODIED_VIEW_IDS),
         missing_disclosed=True,
         contradictions_surfaced=True,
+        evidence_objects=[FX.sample_multi_view_evidence()],
     )
 
 
@@ -628,7 +637,16 @@ def test_embodied_agent_contradictions_surfaced_not_merged():
 
 def test_concept_mapping_transition_records_metadata():
     m = CM.ConceptMapping(concept_id="c", source_state="SYMBOLIC_DESCRIPTION")
-    CM.apply_transition(m, "PHENOMENOLOGICAL_CANDIDATE", "phenomenology_report", "D", "r")
+    CM.apply_transition(
+        m,
+        "PHENOMENOLOGICAL_CANDIDATE",
+        "phenomenology_report",
+        "D",
+        "r",
+        evidence_object=_transition_evidence(
+            "SYMBOLIC_DESCRIPTION", "PHENOMENOLOGICAL_CANDIDATE", "phenomenology_report", "D"
+        ),
+    )
     rec = m.transitions[0]
     for key in (
         "from", "to", "required_evidence_class", "provided_evidence_class",
@@ -695,7 +713,7 @@ def test_local_optimization_valid_proposal_fully_documented():
 
 
 def test_translated_claim_forbids_upgrade_via_interpretation_layer():
-    with pytest.raises(TT.ForbiddenClaimUpgradeError):
+    with pytest.raises((TT.ForbiddenClaimUpgradeError, TT.UnknownTranslationStatusError)):
         TT.translate_claim(
             source_provenance="synthetic", claim_class="METAPHYSICAL_CLAIM",
             interpretation_layer="SCIENTIFIC_FACT",
@@ -704,13 +722,31 @@ def test_translated_claim_forbids_upgrade_via_interpretation_layer():
 
 def test_concept_mapping_unknown_reachable_from_mechanism():
     m = CM.ConceptMapping(concept_id="c", source_state="MECHANISM_HYPOTHESIS")
-    CM.apply_transition(m, "UNKNOWN", "insufficient_evidence", "F", "r")
+    CM.apply_transition(
+        m,
+        "UNKNOWN",
+        "insufficient_evidence",
+        "F",
+        "r",
+        evidence_object=_transition_evidence(
+            "MECHANISM_HYPOTHESIS", "UNKNOWN", "insufficient_evidence", "F"
+        ),
+    )
     assert m.current_state == "UNKNOWN"
 
 
 def test_concept_mapping_contradicted_reachable_from_partially_supported():
     m = CM.ConceptMapping(concept_id="c", source_state="PARTIALLY_SUPPORTED")
-    CM.apply_transition(m, "CONTRADICTED", "contradiction_evidence", "F", "r")
+    CM.apply_transition(
+        m,
+        "CONTRADICTED",
+        "contradiction_evidence",
+        "F",
+        "r",
+        evidence_object=_transition_evidence(
+            "PARTIALLY_SUPPORTED", "CONTRADICTED", "contradiction_evidence", "F"
+        ),
+    )
     assert m.current_state == "CONTRADICTED"
 
 
@@ -752,13 +788,15 @@ def test_concept_mapping_unknown_state_rejected_at_construction():
 # ===========================================================================
 # N. Deterministic public-artifact generator (Commit 5 self-check)
 # ===========================================================================
-def test_generator_produces_nine_artifacts(tmp_path):
+def test_generator_produces_the_explicit_artifact_registry(tmp_path):
     out = tmp_path / "artifacts"
     GEN.generate(str(out))
     names = sorted(p.name for p in out.glob("*.json"))
     expected = sorted(n for n, _ in GEN._ARTIFACTS)
     assert names == expected
-    assert len(names) == 9
+    assert "r5a-narrow-repair-attack-case-registry.json" in names
+    assert "r5a-narrow-repair-attack-acceptance.json" in names
+    assert "longitudinal-feedback-schema.json" in names
 
 
 def test_generator_output_is_deterministic(tmp_path):
@@ -807,4 +845,39 @@ def test_generator_artifacts_valid_json_and_closed_sets(tmp_path):
     assert li["field_set_complete"] is True
     assert len(li["field_set"]) == 11
 
+
+# ===========================================================================
+# O. Narrow-repair instance gate: concrete input + evidence + per-case result
+# ===========================================================================
+@pytest.mark.parametrize("case", AG.ATTACK_CASES, ids=lambda case: case.case_id)
+def test_each_required_narrow_repair_case_executes(case):
+    result = AG.run_case(case)
+    assert result["passed"], result
+    assert result["evidence_id"] == case.evidence_object.evidence_id
+
+
+def test_attack_gate_binds_exact_ids_and_evidence_objects():
+    assert tuple(case.case_id for case in AG.ATTACK_CASES) == AG.REQUIRED_ATTACK_CASE_IDS
+    assert len({case.evidence_object.evidence_id for case in AG.ATTACK_CASES}) == len(
+        AG.REQUIRED_ATTACK_CASE_IDS
+    )
+    receipt = AG.run_attack_gate()
+    assert receipt["status"] == "PASS", receipt
+    assert receipt["failed_case_ids"] == []
+    assert [result["case_id"] for result in receipt["results"]] == list(
+        AG.REQUIRED_ATTACK_CASE_IDS
+    )
+
+
+def test_longitudinal_contract_separates_time_harm_consent_and_rollback():
+    contract = FX.sample_longitudinal_contract()
+    LG.validate_longitudinal_contract(contract)
+    event = contract.events[0]
+    assert contract.observation_time != contract.decision_time
+    assert contract.decision_time != contract.intervention_time
+    assert contract.intervention_time != contract.review_time
+    assert event.rollback_status == "SUCCEEDED"
+    assert event.residual_harm_after_rollback == "synthetic residual fatigue"
+    assert contract.reopen_trigger == "DELAYED_ADVERSE_OUTCOME"
+    assert contract.revision_status == "REOPENED"
 
