@@ -42,7 +42,7 @@
 - 迭代方法只能约束操作纪律，不能证明实质结论正确。
 - 当前迭代方法是 `1.3.0`，系统图是 `0.3.0`；`1.2.0` 与 `0.2.0` 为 Historical，`1.1.0` 与 `0.1.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
 - Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并在生产验证后成为 Current；Q32I 为 Closed。选择性物化只在完整 profile、authority、plan 与指纹身份一致时选择性物化。Authority 类型、execution capability 与 validation capability 必须分别声明；apply 必须先通过统一预检，rollback（回滚）必须证明整仓字节／类型／symlink／mode 恢复，否则进入 unrecovered 与 recovery package。NonImpactProof 只证明声明关系范围内的非影响；cache 不是真相源；meta-authority 变更强制 full rebuild。Q33 启动包已准备，但 Q33 与 Q34—Q40 均尚未启动。
-- R5-A Life Integrity 仍是堆叠 Draft。Night Queue R1 的正式裁决为 `NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`；原 PR #130 的测试总数不能代替具体失败实例。窄修复必须按 `docs/governance/r5a-night-queue-r1-adjudication.md` 的精确 case ID、证据对象、逐案测试与机器门验收；未通过只能 `BLOCKED`。R5-B、R5-C、R6 未启动且禁止启动。
+- R5-A Life Integrity 仍是堆叠 Draft。Night Queue R1 的正式裁决为 `NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`；原 PR #130 的测试总数不能代替具体失败实例。窄修复精确头 `a2fd355f…` 已由独立审查按精确 case ID、证据对象、逐案测试、变异探针与机器门接受，PR #131 已以普通 merge `062f223f…` 进入 PR #130 来源分支；PR #130 本身仍是 Draft、未合并到前驱、非 Main/Current。任何实例门未通过仍只能 `BLOCKED`。R5-B、R5-C、R6 未启动且禁止启动。
 - `implementation_complete` 不等于 `project_synchronization_complete`。生产首页部署和实时读取必须分别验证，不能由仓库状态替代。
 - 生命周期门禁按 registry 中每个表面的 `blocks` 计算。只阻塞 `current/closed` 的 post-merge Pages 不阻塞 pre-merge Accepted；但未从 main 部署并实时读取前，绝不能声称 Current/Closed。
 - 正向评价词必须绑定对象、判据、版本、证据和边界。

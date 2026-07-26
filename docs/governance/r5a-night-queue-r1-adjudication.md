@@ -55,14 +55,18 @@ religious truth, or external acceptance.
 | R5-A workflow | `CHANGE` | exact instance gate added; deterministic regeneration retained |
 | README / project current state / AI handoff / machine front door / summary / changelog | `CHANGE` | source candidate non-acceptance and repair lifecycle exposed |
 | iteration method | `CHANGE` | clarifies that adversarial acceptance is instance-bound, not count-bound; method version remains 1.3.0 |
-| current architecture, system map and component registry | `NO_CHANGE_WITH_REASON` | Draft repair is not Current and adds no active architecture component |
-| Pages production rendering | `NOT_APPLICABLE` | Draft repair is not deployed to Main |
+| current architecture, system map and component registry | `NO_CHANGE_WITH_REASON` | the accepted repair is merged only into the still-Draft PR #130 source branch and adds no Current component |
+| Pages production rendering | `NOT_APPLICABLE` | the accepted repair is not merged or deployed to Main |
 | governance authority and Life Community Value Charter text | `NO_CHANGE_WITH_REASON` | hierarchy remains subordinate and exact |
 | licenses / sustainability | `NO_CHANGE_WITH_REASON` | no scope or license change |
 
 ## Lifecycle
 
-The narrow repair is a stacked Draft candidate only. Local `PASS` and two green
-exact-head workflows may make it inspectable for external review; they do not
-make it Accepted, Ready, Merged, Current, or Closed. Exact final-head CI run IDs
-and remote identity belong in the mutable PR body and independent 1111 receipt.
+The exact repair head `a2fd355fe6a3e55627c812ed3abd51ff41b8a008`
+passed independent instance-by-instance review. PR #131 was moved from Draft to
+Ready and ordinarily merged as `062f223f5da536d698d070481edd2acb0687b9c6`
+into PR #130's source branch. This accepts and merges the adjudicated narrow
+repair only. It does not accept the Night Queue package, activate R5-A, merge PR
+#130 into its predecessor, change Main, establish Current/Closed, or authorize
+R5-B, R5-C, or R6. Exact review/CI/merge identities are retained in the
+independent 1111 receipt.

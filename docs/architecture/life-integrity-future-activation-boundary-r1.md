@@ -33,4 +33,9 @@
 
 ## 4. 终态
 
-`R5A_NARROW_REPAIR_DRAFT_PENDING_EXACT_HEAD_CI_AND_EXTERNAL_REVIEW`
+`R5A_NARROW_REPAIR_ACCEPTED_AND_MERGED_INTO_SOURCE_BRANCH_NOT_MAIN`
+
+Exact repair head `a2fd355f…` passed independent review and PR #131 was
+ordinarily merged as `062f223f…` into the still-Draft PR #130 source branch.
+This is not Main, activation, Current/Closed, or authorization for R5-B, R5-C,
+or R6.
