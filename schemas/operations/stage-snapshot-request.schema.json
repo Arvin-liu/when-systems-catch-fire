@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["request_version", "task_id", "result_object", "source_head", "evidence_entries", "lifecycle_state", "claim_ceiling", "homepage_summary", "limitations_and_incomplete", "responsibility", "recommendation", "agent_claims_published_to_main"],
   "properties": {
-    "request_version": {"const": "1.0.0"},
+    "request_version": {"const": "1.2.0"},
     "task_id": {"type": "string", "minLength": 1},
     "result_object": {"type": "string", "minLength": 1},
     "source_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
@@ -17,16 +17,43 @@
     "limitations_and_incomplete": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
     "responsibility": {
       "type": "object", "additionalProperties": false,
-      "required": ["executor", "proposed_publisher", "responsible_organization", "founder_responsibility_inferred", "upstream_responsibility_inferred"],
+      "required": ["responsible_actor", "proposed_publisher_actor", "execution_agents", "automation_workflows", "founder_responsibility_inferred", "upstream_responsibility_inferred"],
       "properties": {
-        "executor": {"type": "string", "minLength": 1},
-        "proposed_publisher": {"type": "string", "minLength": 1},
-        "responsible_organization": {"type": "string", "minLength": 1},
+        "responsible_actor": {"$ref": "#/$defs/accountableActorRef"},
+        "proposed_publisher_actor": {"$ref": "#/$defs/accountableActorRef"},
+        "execution_agents": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/technicalActor"}},
+        "automation_workflows": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/technicalActor"}},
         "founder_responsibility_inferred": {"const": false},
         "upstream_responsibility_inferred": {"const": false}
       }
     },
     "recommendation": {"enum": ["PUBLISH", "REVISE", "WITHDRAW", "DO_NOT_PUBLISH"]},
     "agent_claims_published_to_main": {"const": false}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "accountableActorRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actor_ref"],
+      "properties": {
+        "actor_ref": {
+          "enum": [
+            "org:github/arvin-liu/when-systems-catch-fire",
+            "person:github/arvin-liu"
+          ]
+        }
+      }
+    },
+    "technicalActor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "role", "evidence_reference"],
+      "properties": {
+        "name": {"$ref": "#/$defs/nonblank"},
+        "role": {"$ref": "#/$defs/nonblank"},
+        "evidence_reference": {"type": "string", "format": "uri", "pattern": "^https://"}
+      }
+    }
   }
 }

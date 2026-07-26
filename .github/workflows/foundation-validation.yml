@@ -30,6 +30,7 @@ on:
       - 'tests/test_human_front_door.py'
       - 'tests/test_pages_deploy_gate.py'
       - 'tests/test_stage_snapshot_publication.py'
+      - 'tests/stage_snapshot_responsibility_actor_cases.json'
       - 'tools/operations/stage_snapshot_contract.py'
       - 'tools/operations/validate_stage_snapshots.py'
       - 'tools/operations/generate_stage_snapshot_projection.py'
@@ -78,6 +79,7 @@ on:
       - 'tests/test_human_front_door.py'
       - 'tests/test_pages_deploy_gate.py'
       - 'tests/test_stage_snapshot_publication.py'
+      - 'tests/stage_snapshot_responsibility_actor_cases.json'
       - 'tools/operations/stage_snapshot_contract.py'
       - 'tools/operations/validate_stage_snapshots.py'
       - 'tools/operations/generate_stage_snapshot_projection.py'
@@ -151,12 +153,30 @@ jobs:
             --map-delta data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-system-map-delta.json \
             --residue data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-residue.json \
             --check
+          python3 tools/operations/compute_change_propagation.py \
+            --request data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-request.json \
+            --output data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-closure.json \
+            --report reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md \
+            --map-delta data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-system-map-delta.json \
+            --residue data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-residue.json \
+            --check
+          python3 tools/operations/compute_change_propagation.py \
+            --request data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-request.json \
+            --output data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-closure.json \
+            --report reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md \
+            --map-delta data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-system-map-delta.json \
+            --residue data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-residue.json \
+            --check
       - name: Validate Q32I Phase E candidate
         run: python3 tools/operations/validate_phase_e_candidate.py --check
       - name: Validate registry-derived system map
         run: python3 tools/generate_interactive_system_map.py --check
       - name: Validate stage snapshot registry and deterministic homepage projection
-        run: python3 tools/operations/validate_stage_snapshots.py --check
+        run: |
+          python3 tools/operations/generate_stage_snapshot_actor_contract.py --check
+          python3 tools/operations/validate_stage_snapshots.py --check
+      - name: Run instance-level stage snapshot responsibility actor cases
+        run: python3 tools/operations/run_stage_snapshot_responsibility_cases.py
       - run: python3 tools/validate_human_front_door.py
       - run: python3 -m unittest tests.foundation.test_foundation
       - run: python3 -m unittest tests.test_iteration_sync -v

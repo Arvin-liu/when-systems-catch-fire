@@ -10,6 +10,8 @@ In short: this is a versioned current-state description, not a fixed essence, an
 
 Iteration Method `1.4.0 — Continuous Stage Snapshot Publication` is present only as a Draft Candidate on its isolated branch. Current remains `1.3.0`. Its registry and README/Pages preview publish only auditable summaries and explicit boundaries; they do not merge candidate payloads, alter the formal capability registry, establish Accepted/Current/Activated, or authorize practical use. The first R5-A record is `PR_VISIBLE`, while PR #130 itself remains OPEN/DRAFT and unaccepted as a whole.
 
+PR #134 remains OPEN/DRAFT after its exact head `5a856c031616ec0a959150baebb7edced34f22bc` was rejected for A15c/A15d. PR #135 also remains OPEN/DRAFT after exact head `567aef78345564adb646b59590924cf24f4bbc45` was rejected for 44/104 Schema false accepts, four Schema/runtime automation-variant false accepts and a runtime-only runner verdict. The isolated R2 repair replaces authoritative free-text identity with ACTIVE registry-resolved `actor_ref` values and a two-surface gate; it does not re-review either PR, alter Main, or make method 1.4.0 Current.
+
 Current state must be inferred from actual repository artifacts: architecture files, foundation registries, tests, CI, open PRs, validation reports, unresolved queues, licensing state, and known gaps. It must not be backfilled from aspiration or branding.
 
 121Q12 adds a current operation overlay for two narrow gaps: choosing a next action when goals are unstable, and constraining interpretation after an action produces results. This is a current capability addition, not a fixed project positioning.
