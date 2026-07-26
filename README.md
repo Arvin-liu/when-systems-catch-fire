@@ -19,7 +19,7 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 它不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。当前状态会随证据、反例、执行能力、现实反馈和缺口修正继续变化。
 
-R5-A 生命完整性仍是堆叠 Draft 候选，不是当前能力。Night Queue R1 的 `20/20 COMPLETED` 只表示报告轮次完成，正式裁决仍为 [`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`](./docs/governance/r5a-night-queue-r1-adjudication.md)：PR #130 的 145 项计数不能替代缺失的具体攻击实例。窄修复精确头 `a2fd355f…` 已通过独立逐项复核，PR #131 已转 Ready 并以普通 merge `062f223f…` 进入 PR #130 的来源分支；这只接受并合并所裁决缺口的仓库合同修复，不等于 PR #130 已 Ready/合并到其前驱，更不等于 Main、Current、人体安全、疗效或普遍语义理解。R5-B、R5-C、R6 均未启动且继续禁止。
+R5-A 生命完整性仍是堆叠 Draft 候选，不是当前能力。Night Queue R1 的 `20/20 COMPLETED` 只表示报告轮次完成，正式裁决仍为 [`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`](./docs/governance/r5a-night-queue-r1-adjudication.md)。窄修复精确头 `a2fd355f…` 已通过独立逐项复核，并以 PR #131 普通 merge `062f223f…` 进入 PR #130 来源分支；但随后对完整候选精确头 `f33be64…` 的独立审查又复现了 11 个此前门禁未覆盖的运行时/公开 schema 失败关闭旁路，因此裁决为 [`R5A_CONSOLIDATED_EXACT_HEAD_REJECTED_NARROW_REPAIR_REQUIRED`](./docs/governance/r5a-consolidated-exact-head-review-r1.md)。PR #130 未转 Ready、未合并到前驱、非 Main/Current/激活；当前只允许一个实例绑定的窄修复请求，R5-B、R5-C、R6 均未启动且继续禁止。
 
 [查看完整项目现状](./docs/project-current-state.md) / [查看现行架构](./ARCHITECTURE.md) / [查看使用说明](./docs/USAGE.md)
 

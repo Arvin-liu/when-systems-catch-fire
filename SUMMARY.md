@@ -16,6 +16,7 @@
 - [docs/VERSIONING.md](./docs/VERSIONING.md) — 版本阶段与升级规范
 - [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) — 规范性价值前提
 - [R5-A Night Queue R1 裁决与窄修复](./docs/governance/r5a-night-queue-r1-adjudication.md) — Night Queue 仍为 `PARTIAL_SALVAGE_NOT_ACCEPTED`；精确实例窄修复 PR #131 已独立接受并合并进仍为 Draft 的 PR #130 来源分支；非 Main/Current，R5-B/R5-C/R6 未启动。
+- [R5-A 完整候选精确头审查](./docs/governance/r5a-consolidated-exact-head-review-r1.md) — PR #130 `f33be64...` 因 `R5A-CR-001`–`011` 十一个失败关闭旁路被拒绝；未 Ready/合并，只允许一个窄修复请求。
 - [许可作用域](./LICENSES/README.md) — 当前分层许可权威
 - [商业许可](./COMMERCIAL-LICENSING.md) 与 [可持续性政策](./SUSTAINABILITY.md)
 

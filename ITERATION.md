@@ -192,6 +192,14 @@ unknown target labels and unresolved evidence stay fail-closed or `BLOCKED`.
 This clarification does not change method version `1.3.0` or turn tests into
 human evidence.
 
+R5-A application record (not a method-version change): independent review of
+PR #130 exact head `f33be64...` applied this instance-bound rule beyond the
+previous 30-case gate. Eleven additional synthetic fixtures were accepted by
+runtime or standard JSON Schema paths that declared fail-closed behavior. The
+head was therefore rejected and not merged even though its existing suites and
+exact-head CI were green. The bounded repair request and instance IDs are in
+`docs/governance/r5a-consolidated-exact-head-review-r1.md`.
+
 For Draft Pages work, build and inspect the exact-head artifact without deploying the unmerged branch to the production homepage. Production Pages deployment and live fetch are post-merge external synchronization obligations.
 
 ## 10. State Machine
