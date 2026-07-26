@@ -7,6 +7,10 @@
 > 原候选冻结头：`0e9d1e5823b41b7e9375e5f634388371b9b024ac`
 > Night Queue R1 裁决：`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`
 
+> 合同修复状态：30-case 与 `R5A-CR-001`–`011` 两轮实例绑定修复均已分别独立
+> 验收并并入 PR #130 来源分支；这不接受或激活本完整候选，以上
+> `CANDIDATE_ONLY` 与 `external_acceptance_claimed = false` 保持不变。
+
 ## 0. 候选旗标（每个公开制品必须可见声明）
 
 - `activation_status = CANDIDATE_ONLY`
@@ -80,12 +84,12 @@ R5-A 定义并验证（不激活人体干预）：
 
 ## 6. 未授权范围（硬禁止）
 
-R5-A 不授权：R5-B 具身生命系统运行时、R5-C《新悟真篇》领域包、宗教源文本摄入、对真实人的实践指令、医疗/精神科/诊断/治疗主张、人类健康数据收集、人类画像数据库、真实世界实验、领域包联邦、L7、第二执行器、PROMOTE、EVOLVE、Ready、merge、Main 修改、强推、历史重写、私有/重构内容公开发布。
+R5-A 不授权：R5-B 具身生命系统运行时、R5-C《新悟真篇》领域包、宗教源文本摄入、对真实人的实践指令、医疗/精神科/诊断/治疗主张、人类健康数据收集、人类画像数据库、真实世界实验、领域包联邦、L7、第二执行器、PROMOTE、EVOLVE、完整 PR #130 的 Ready/merge、Main 修改、强推、历史重写、私有/重构内容公开发布。已独立验收的实例绑定修复 PR Ready/merge 只关闭对应合同缺口，不越过这些候选边界。
 
 ## 7. 终态
 
-原任务允许的候选终态不构成外部接受。Night Queue R1 的裁决仍为 `NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`。精确窄修复头 `a2fd355f…` 已完成双 CI 与独立外部审查，PR #131 已转 Ready 并以普通 merge `062f223f…` 进入 PR #130 来源分支；这只接受并合并所裁决的 30 个缺口。其后对 PR #130 精确头 `f33be64b…` 的完整审查又复现 `R5A-CR-001`–`011` 十一个运行时/标准 JSON Schema 旁路。唯一授权的合并合同旁路窄修复已逐案实现，但仍为 Draft、等待独立 exact-head 验收；详见 `docs/governance/r5a-consolidated-contract-bypass-repair-r1.md`。PR #130 本身仍为 Draft、未合并到前驱、未进入 Main、未激活且非 Current：
+原任务允许的候选终态不构成外部接受。Night Queue R1 的裁决仍为 `NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`。精确窄修复头 `a2fd355f…` 已完成双 CI 与独立外部审查，PR #131 已转 Ready 并以普通 merge `062f223f…` 进入 PR #130 来源分支；这只接受并合并所裁决的 30 个缺口。其后对 PR #130 精确头 `f33be64b…` 的完整审查又复现 `R5A-CR-001`–`011` 十一个运行时/标准 JSON Schema 旁路；精确修复头 `c4576972…` 已经零背景独立 exact-head 验收，PR #133 已转 Ready 并以普通 merge `ff158ba0…` 进入 PR #130 来源分支，合并树与接受头树一致，合并后 CI 通过。详见 `docs/governance/r5a-consolidated-contract-bypass-repair-r1.md`。这些事实只接受两轮实例绑定修复；PR #130 本身仍为 Draft、未合并到前驱、未进入 Main、未激活且非 Current：
 
-`R5A_CONSOLIDATED_CONTRACT_BYPASS_NARROW_REPAIR_DRAFT_AWAITING_REVIEW`
+`R5A_REPAIRS_ACCEPTED_MERGED_TO_SOURCE_COMPLETE_CANDIDATE_STILL_DRAFT_NOT_MAIN_NOT_CURRENT`
 
 Agent 不得自证外部接受、不得激活候选、不得启动 R5-B / R5-C / R6。任何实例门未通过时只能报告 `BLOCKED`。

@@ -19,7 +19,9 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 它不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。当前状态会随证据、反例、执行能力、现实反馈和缺口修正继续变化。
 
-R5-A 生命完整性仍是堆叠 Draft 候选，不是当前能力。Night Queue R1 的 `20/20 COMPLETED` 只表示报告轮次完成，正式裁决仍为 [`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`](./docs/governance/r5a-night-queue-r1-adjudication.md)。此前接受并并入 PR #130 来源分支的窄修复只关闭 30 个已裁决实例；对 PR #130 精确头 `f33be64b…` 的完整复核又复现 `R5A-CR-001`–`011` 十一个运行时／标准 JSON Schema 旁路。当前[合并合同旁路窄修复](./docs/governance/r5a-consolidated-contract-bypass-repair-r1.md)已在 Draft 中逐案实现机器拒绝、六份 Draft 2020-12 schema 正反实例门与五类变异阻断，但仍等待独立 exact-head 验收；测试总数、绿色 CI 和确定性生成都不能自证接受。PR #130 仍未 Ready/合并到前驱，更不是 Main、Current、人体安全、疗效或普遍语义理解。R5-B、R5-C、R6 均未启动且继续禁止。
+R5-A 生命完整性仍是堆叠 Draft 候选，不是当前能力。Night Queue R1 的 `20/20 COMPLETED` 只表示报告轮次完成，正式裁决仍为 [`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`](./docs/governance/r5a-night-queue-r1-adjudication.md)。此前接受并并入 PR #130 来源分支的窄修复只关闭 30 个已裁决实例；随后对 PR #130 精确头 `f33be64b…` 复现的 `R5A-CR-001`–`011` 十一个运行时／标准 JSON Schema 旁路，已由[合并合同旁路窄修复](./docs/governance/r5a-consolidated-contract-bypass-repair-r1.md)在精确头 `c4576972…` 逐案关闭，经零背景独立 exact-head 验收后把 PR #133 从 Draft 转 Ready，并以普通 merge `ff158ba0…` 并入 PR #130 来源分支；合并树与接受头树一致，合并后四项 Actions 日志均通过。该事实只接受并合并这项仓库合同修复：PR #130 仍为 Draft、未并入前驱、非 Main、非 Current、未激活，也不构成人体安全、疗效或普遍语义理解证据。R5-B、R5-C、R6 均未启动且继续禁止。
+
+唯一下一任务请求：迭代点火操作法，建立“阶段成果进入 Main、但不自动成为 Accepted/Current”的持续快照与分层发布制度，使 GitHub 项目主页能够及时显示 Agents 已完成的阶段成果。这里只记录请求，不在本轮执行，也不改变上述候选边界。
 
 [查看完整项目现状](./docs/project-current-state.md) / [查看现行架构](./ARCHITECTURE.md) / [查看使用说明](./docs/USAGE.md)
 

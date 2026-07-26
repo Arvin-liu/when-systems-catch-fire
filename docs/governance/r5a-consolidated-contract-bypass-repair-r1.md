@@ -2,13 +2,19 @@
 
 ## Lifecycle
 
-`R5A_CONSOLIDATED_CONTRACT_BYPASS_NARROW_REPAIR_DRAFT_AWAITING_REVIEW`
+`R5A_CONSOLIDATED_CONTRACT_BYPASS_REPAIR_ACCEPTED_MERGED_TO_PR130_SOURCE_CANDIDATE_NOT_MAIN_NOT_CURRENT`
 
 - task: `IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726`;
 - exact starting head: `f33be64b26ef14d14098f42ec947bd93fddd245c`;
 - base branch: `architecture/ignition-r5a-life-integrity-charter-candidate-r1`;
-- implementation is a bounded Draft candidate only;
-- no independent acceptance, Ready transition, merge, Main or Current claim.
+- independently accepted exact head:
+  `c4576972047a47045e95b1c794570597f58e6c9a`;
+- PR #133: Draft to Ready to ordinary merge;
+- merge commit into PR #130 source branch:
+  `ff158ba0351d68918a135ec3446f4f68ddf9387b`;
+- accepted-head tree equals merge tree;
+- PR #130 remains Draft, unmerged into its predecessor, non-Main, non-Current
+  and unactivated.
 
 ## Gap and repair
 
@@ -66,25 +72,39 @@ authority unittest ladder reports `176` run, `1` skipped, PASS. Exact-final-head
 GitHub CI remains mandatory publication evidence and is recorded externally
 after the final commit exists.
 
-Maximum claim ceiling:
-`repository_contract_repair_implemented_awaiting_independent_review`.
+Independent acceptance separately replayed the rejected predecessor and exact
+repair head instance by instance, reviewed both commits and all changed files,
+reran the complete local ladder, and inspected the exact-head and merge-head raw
+Actions logs. Maximum claim ceiling:
+`repository_contract_repair_independently_accepted_and_merged_to_candidate_source`.
 
-Neither a test count, green CI nor deterministic generation accepts this repair.
-A separate independent exact-head repair review is still required before the
-complete PR #130 candidate can be reviewed again.
+Neither a test count, green CI nor deterministic generation substituted for
+that review. Acceptance applies only to the exact repair; it does not accept the
+complete PR #130 candidate or establish Main, Current, activation, human safety,
+clinical efficacy or universal semantic coverage.
 
 ## Synchronization decisions
 
 | Surface | Decision | Reason |
 |---|---|---|
 | R5-A runtime, schemas, tests, generator, machine gate and CI | `CHANGE` | exact eleven-instance closure |
-| README, current state, iteration application record | `CHANGE` | expose Draft repair without acceptance overclaim |
-| AI start/handoff, `llms.txt`, summary and changelog | `CHANGE` | preserve the only allowed lifecycle and hard stop |
+| README, current state, iteration application record | `CHANGE` | expose accepted repair merge without candidate overclaim |
+| AI/Agent start/handoff, `llms.txt`, summary and changelog | `CHANGE` | preserve accepted-repair versus Draft-candidate boundary |
 | philosophy/governance indexes | `CHANGE` | add the separately requested “永远进行时” principle |
-| system map and component registry | `NO_CHANGE_WITH_REASON` | a Draft repair is not a new Current component |
-| Pages production | `NO_CHANGE_WITH_REASON` | unmerged Draft must not deploy to production |
+| system map and component registry | `NO_CHANGE_WITH_REASON` | repair acceptance is not a new Current component |
+| Pages production | `NO_CHANGE_WITH_REASON` | candidate-branch merge is not a Main/Current deployment |
 | Foundation, ARR runtime, Function OS and licenses | `NO_CHANGE_WITH_REASON` | no authority, runtime-stage or license change |
 
 No R5-B, R5-C, R6, source corpus, human intervention, medical claim, domain
-pack, federation, L7, second executor, PROMOTE, EVOLVE, Ready, merge, Main,
-activation, rebase, squash, amend, force push or history rewrite is included.
+pack, federation, L7, second executor, PROMOTE, EVOLVE, Main, activation,
+rebase, squash, amend, force push or history rewrite is included. The only
+Ready/merge actions were the independently authorized PR #133 transition and
+ordinary merge recorded above.
+
+## Unique next-task request
+
+迭代点火操作法，建立“阶段成果进入 Main、但不自动成为 Accepted/Current”的持续
+快照与分层发布制度，使 GitHub 项目主页能够及时显示 Agents 已完成的阶段成果。
+
+This request is recorded only. It is not started by this repair acceptance and
+does not authorize a Main change in this task.
