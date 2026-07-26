@@ -16,9 +16,9 @@
 
 **技术执行记录（非最终责任）：** Agent／模型：Codex agents；自动化／工作流：GitHub Actions
 
-**最近成果：** 11-case 窄修复已验收并合入来源分支；R5-A 阶段快照记录已合并入 Main 并经受控同步发布为 PUBLISHED_SNAPSHOT；R5-A 候选整体仍非 Accepted/Current/Activated，宪章 PR #130 仍 OPEN/DRAFT。
+**最近成果：** 11-case 窄修复已验收并合入来源分支；R5-A 阶段快照记录已合并入 Main 并经受控同步发布为 PUBLISHED_SNAPSHOT；其精确头 48f87616 经独立 exact-head 验收（与实时 PR #134 一致）。R5-A 候选整体仍非 Accepted/Current/Activated，宪章 PR #130 仍 OPEN/DRAFT。
 
-**仍有阻断：** R5-A 宪章 PR #130 仍为 OPEN / DRAFT；R5-A 宪章来源分支当前头 019f52cc296b7417cc91ea97077fbf85d19ad7fc 仍需整体 exact-head 验收；本快照只公开可审计摘要和证据入口，不发布或激活候选载荷
+**仍有阻断：** R5-A 已发布阶段快照的精确头 48f87616 经独立 exact-head 验收（与实时 PR #134 一致）；但 R5-A 候选（宪章 PR #130）仍 OPEN / DRAFT，其整体精确头验收仍待账号所有者独立执行；R5-A 宪章来源分支当前头 019f52cc296b7417cc91ea97077fbf85d19ad7fc 仍需整体 exact-head 验收（候选层面，非本已发布快照层面）；本快照只公开可审计摘要和证据入口，不发布或激活候选载荷；R5-A 仍为 PUBLISHED_SNAPSHOT，accepted/current/activated 仍 false（PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED 不变）
 
 **证据：** [正式 PR](https://github.com/Arvin-liu/when-systems-catch-fire/pull/134) / [1111 回执 PR #42](https://github.com/Arvin-liu/1111/pull/42) / [快照 registry](./data/operations/stage-snapshots.json) / [责任主体 registry](./data/operations/responsibility-actors.json)
 

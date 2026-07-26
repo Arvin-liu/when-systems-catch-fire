@@ -84,7 +84,8 @@
         "第一轮窄修复接受头 a2fd355fe6a3e55627c812ed3abd51ff41b8a008 经 PR #131 普通合并为 062f223f5da536d698d070481edd2acb0687b9c6",
         "最新 11-case 窄修复接受头为 c4576972047a47045e95b1c794570597f58e6c9a",
         "PR #133 以普通 merge 产生 ff158ba0351d68918a135ec3446f4f68ddf9387b",
-        "R5-A 阶段快照记录经 PR #134 合并入 Main，并经受控同步 R1-20260726 由 PR_VISIBLE 升为 PUBLISHED_SNAPSHOT（仍非 Accepted/Current/Activated）"
+        "R5-A 阶段快照记录经 PR #134 合并入 Main，并经受控同步 R1-20260726 由 PR_VISIBLE 升为 PUBLISHED_SNAPSHOT（仍非 Accepted/Current/Activated）",
+        "R5-A 已发布阶段快照精确头 48f87616e01e0ec200c75509241b7df64634c5ab 经独立 exact-head 验收（validate_stage_snapshots.py --verify-remotes 实时重取 GitHub：remote_verified=true，status=PASS），与实时 PR #134 头一致；phase-B 受控同步提交 c5236e27 经独立 exact-head 验收为 Main 当前头"
       ],
       "incomplete": [
         "R5-A 宪章 PR #130 仍为 OPEN / DRAFT，其候选整体仍待独立 exact-head 验收",
@@ -93,9 +94,9 @@
       ],
       "claim_ceiling": "仅证明两个已指明窄修复在其精确接受头通过独立实例级验收并进入 PR #130 来源分支；不证明 R5-A 整体完成、生命完整性、人体安全、疗效或普遍语义能力。",
       "known_limitations_and_blockers": [
-        "R5-A 宪章 PR #130 仍为 OPEN / DRAFT",
-        "R5-A 宪章来源分支当前头 019f52cc296b7417cc91ea97077fbf85d19ad7fc 仍需整体 exact-head 验收",
-        "本快照只公开可审计摘要和证据入口，不发布或激活候选载荷"
+        "R5-A 已发布阶段快照的精确头 48f87616 经独立 exact-head 验收（与实时 PR #134 一致）；但 R5-A 候选（宪章 PR #130）仍 OPEN / DRAFT，其整体精确头验收仍待账号所有者独立执行",
+        "R5-A 宪章来源分支当前头 019f52cc296b7417cc91ea97077fbf85d19ad7fc 仍需整体 exact-head 验收（候选层面，非本已发布快照层面）",
+        "本快照只公开可审计摘要和证据入口，不发布或激活候选载荷；R5-A 仍为 PUBLISHED_SNAPSHOT，accepted/current/activated 仍 false（PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED 不变）"
       ],
       "accepted": false,
       "current": false,
@@ -122,11 +123,11 @@
         "visible": true,
         "priority": 100,
         "sort_time": "2026-07-26T14:45:43+08:00",
-        "summary": "11-case 窄修复已验收并合入来源分支；R5-A 阶段快照记录已合并入 Main 并经受控同步发布为 PUBLISHED_SNAPSHOT；R5-A 候选整体仍非 Accepted/Current/Activated，宪章 PR #130 仍 OPEN/DRAFT。"
+        "summary": "11-case 窄修复已验收并合入来源分支；R5-A 阶段快照记录已合并入 Main 并经受控同步发布为 PUBLISHED_SNAPSHOT；其精确头 48f87616 经独立 exact-head 验收（与实时 PR #134 一致）。R5-A 候选整体仍非 Accepted/Current/Activated，宪章 PR #130 仍 OPEN/DRAFT。"
       },
       "remote_attestation": {
-        "verified_at": "2026-07-26T23:10:00+08:00",
-        "verifier": "WorkBuddy controlled-sync live GitHub refetch",
+        "verified_at": "2026-07-26T21:26:30+08:00",
+        "verifier": "WorkBuddy exact-head acceptance live GitHub refetch (R1-20260726)",
         "verification_scope": "github_remote_identity_and_exact_head_at_recorded_time",
         "source_pr_state": "MERGED",
         "source_pr_draft": false,
