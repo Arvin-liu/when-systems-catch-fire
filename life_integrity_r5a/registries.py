@@ -14,11 +14,11 @@ federation runtime. See docs/governance/life-integrity-charter-candidate-r1.md.
 from __future__ import annotations
 
 # --- Task / control identity (read-only constants) -------------------------
-SCHEMA_VERSION = "r5a/v1"
+SCHEMA_VERSION = "r5a/v1.1-narrow-repair"
 TASK_ID = "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
 CONTROL_COMMIT = "d653c07ed6b108c98e16d111c014f87d7c7987f2"
 FORMAL_PREDECESSOR = "f236543dadcaf79ba9dba750fa21bd8b5c65a33a"
-FROZEN_HEAD = "f236543dadcaf79ba9dba750fa21bd8b5c65a33a"
+CANDIDATE_FROZEN_HEAD = "0e9d1e5823b41b7e9375e5f634388371b9b024ac"
 
 # --- Charter hierarchy (Life Community Value Charter remains supreme) ------
 SUPREME_CHARTER = "LifeCommunityValueCharter"
@@ -95,6 +95,37 @@ TRADITION_FORBIDDEN_TRANSITIONS = frozenset(
         ("HISTORICAL_LONGEVITY", "EFFECTIVENESS"),
     }
 )
+
+TRADITION_UPGRADE_SOURCE_IDS = frozenset(
+    set(TRADITION_CLAIM_CLASS_IDS)
+    | {"LATER_INTERPRETATION", "HISTORICAL_LONGEVITY"}
+)
+
+TRADITION_MECHANISM_STATUS_IDS = (
+    "NOT_ASSERTED",
+    "MECHANISM_HYPOTHESIS",
+    "EMPIRICALLY_SUPPORTED_MECHANISM",
+    "SCIENTIFIC_FACT",
+    "CLINICAL_EFFICACY",
+    "EFFECTIVENESS",
+)
+
+TRADITION_INTERPRETATION_LAYER_IDS = (
+    "SOURCE_LITERAL",
+    "AUTHOR_INTENT_CANDIDATE",
+    "LATER_INTERPRETATION",
+    "MODERN_RECONSTRUCTION",
+)
+
+# Bounded aliases are fail-closed normalization targets.  This closes the
+# concrete queue bypasses without claiming universal semantic understanding.
+TRADITION_RISKY_TARGET_ALIASES = {
+    "SCIENTIFICALLY_PROVEN": "SCIENTIFIC_FACT",
+    "PROVEN_BY_SCIENCE": "SCIENTIFIC_FACT",
+    "CLINICALLY_PROVEN": "CLINICAL_EFFICACY",
+    "PROVEN_EFFECTIVE": "EFFECTIVENESS",
+    "古人已证明是科学": "SCIENTIFIC_FACT",
+}
 
 # --- Concept-mapping allowed transition graph -------------------------------
 # Each source state maps to allowed target states. The metadata records the
@@ -227,7 +258,8 @@ def is_valid_type_tag(tag: str) -> bool:
 
 
 def is_forbidden_tradition_upgrade(from_status: str, to_status: str) -> bool:
-    return (from_status, to_status) in TRADITION_FORBIDDEN_TRANSITIONS
+    normalized_target = TRADITION_RISKY_TARGET_ALIASES.get(to_status, to_status)
+    return (from_status, normalized_target) in TRADITION_FORBIDDEN_TRANSITIONS
 
 
 def allowed_concept_transition(from_state: str, to_state: str) -> bool:
@@ -243,4 +275,32 @@ def is_supreme_charter(node: str) -> bool:
 def charter_hierarchy_respects_supremacy() -> bool:
     """The Life Community Value Charter must be the first (supreme) node and no
     R5-A artifact may insert a competing supreme node above it."""
-    return CHARTER_HIERARCHY[0] == SUPREME_CHARTER and SUPREME_CHARTER in CHARTER_HIERARCHY
+    return (
+        CHARTER_HIERARCHY[0] == SUPREME_CHARTER
+        and CHARTER_HIERARCHY.count(SUPREME_CHARTER) == 1
+    )
+
+
+class CharterHierarchyError(ValueError):
+    """Raised when a candidate hierarchy or future protocol challenges supremacy."""
+
+
+def validate_charter_hierarchy(nodes: tuple[str, ...] | list[str]) -> None:
+    if tuple(nodes) != CHARTER_HIERARCHY:
+        raise CharterHierarchyError(
+            "candidate hierarchy must equal the closed R5-A hierarchy with "
+            "LifeCommunityValueCharter as its sole supreme node"
+        )
+
+
+def validate_future_protocol_declaration(
+    *, protocol_id: str, parent: str, claims_supremacy: bool
+) -> None:
+    if not isinstance(protocol_id, str) or not protocol_id.strip():
+        raise CharterHierarchyError("future protocol id must be non-blank")
+    if parent != "LifeIntegrityGateCandidate":
+        raise CharterHierarchyError(
+            "future domain/practice protocols must remain beneath LifeIntegrityGateCandidate"
+        )
+    if claims_supremacy:
+        raise CharterHierarchyError("future protocols may not claim charter supremacy")

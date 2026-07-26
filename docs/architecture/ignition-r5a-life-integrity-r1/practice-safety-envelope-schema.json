@@ -25,124 +25,98 @@
   "field_set_complete": true,
   "meta": {
     "activation_status": "CANDIDATE_ONLY",
+    "candidate_frozen_head": "0e9d1e5823b41b7e9375e5f634388371b9b024ac",
     "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
     "domain_pack_federation_started": false,
     "external_acceptance_claimed": false,
     "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
-    "frozen_head": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
     "generated_by": "tools/generate_life_integrity_r5a.py",
     "human_intervention_enabled": false,
     "medical_claims_authorized": false,
     "modern_wuzhen_pack_started": false,
-    "schema_version": "r5a/v1",
+    "schema_version": "r5a/v1.1-narrow-repair",
     "supreme_charter": "LifeCommunityValueCharter",
     "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
   },
   "properties": {
     "contraindications": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
+      "minLength": 1,
       "type": "string"
     },
     "dependency_coercion_risk": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
-      "type": "string"
+      "enum": [
+        "NONE_IDENTIFIED",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
     },
     "educational_vs_individualized": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
-      "type": "string"
+      "enum": [
+        "EDUCATIONAL_ONLY"
+      ]
     },
     "emergency_boundary": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
+      "minLength": 1,
       "type": "string"
     },
     "evidence_grade": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
-      "type": "string"
+      "enum": [
+        "SOFTWARE_CONTRACT_ONLY",
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ]
     },
     "exclusion_criteria": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
+      "minLength": 1,
       "type": "string"
     },
     "informed_consent_required": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
-      "type": "string"
+      "const": true,
+      "type": "boolean"
     },
     "intended_population": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
+      "minLength": 1,
       "type": "string"
     },
     "interaction_with_existing_care": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
-      "type": "string"
+      "enum": [
+        "COORDINATE_WITH_PROFESSIONAL",
+        "NO_EXISTING_CARE_CLAIM"
+      ]
     },
     "long_term_followup_plan": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
+      "minLength": 1,
       "type": "string"
     },
     "professional_referral_boundary": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
+      "minLength": 1,
       "type": "string"
     },
     "risk_severity": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
-      "type": "string"
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "CRITICAL"
+      ]
     },
     "rollback_exit_path": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
+      "minLength": 1,
       "type": "string"
     },
     "stop_conditions": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
+      "minLength": 1,
       "type": "string"
     },
     "unknowns": {
-      "not_unknowns": [
-        "UNKNOWN",
-        ""
-      ],
-      "type": "string"
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
     }
   },
   "required": [
@@ -164,6 +138,15 @@
   ],
   "schema": "r5a/practice-safety-envelope/v1",
   "stop_treatment_language": {
+    "bounded_multilingual_patterns": [
+      "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b",
+      "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b",
+      "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b",
+      "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b",
+      "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)",
+      "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)",
+      "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+    ],
     "detector_phrases": [
       "stop taking",
       "stop your",

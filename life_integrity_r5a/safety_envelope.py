@@ -19,6 +19,7 @@ practice for professional care.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+import re
 from typing import Any
 
 REQUIRED_ENVELOPE_FIELDS = (
@@ -83,10 +84,29 @@ _STOP_PHRASES = (
     "replace prescribed", "stop the medication", "come off your",
 )
 
+_UNSAFE_PATTERNS = (
+    r"\bstop\s+(?:taking\s+)?(?:your\s+)?(?:prescribed\s+)?(?:medication|medicine|treatment|therapy)\b",
+    r"\b(?:replace|substitute|abandon)\s+(?:your\s+)?(?:prescribed\s+)?(?:medication|treatment|therapy|care)\b",
+    r"\bthis\s+replaces\s+your\s+(?:treatment|therapy|care)\b",
+    r"\byou\s+(?:must|have\s+to)\s+(?:continue|comply)\b",
+    r"停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)",
+    r"(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)",
+    r"(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)",
+)
+
+EDUCATIONAL_STATUS_IDS = ("EDUCATIONAL_ONLY",)
+RISK_SEVERITY_IDS = ("LOW", "MODERATE", "HIGH", "CRITICAL")
+COERCION_RISK_IDS = ("NONE_IDENTIFIED", "LOW", "MEDIUM", "HIGH")
+CARE_DISPOSITION_IDS = ("COORDINATE_WITH_PROFESSIONAL", "NO_EXISTING_CARE_CLAIM")
+EVIDENCE_GRADE_IDS = ("SOFTWARE_CONTRACT_ONLY", "LOW", "MODERATE", "HIGH")
+
 
 def contains_stop_treatment_language(text: str) -> bool:
-    lowered = (text or "").lower()
-    return any(phrase in lowered for phrase in _STOP_PHRASES)
+    normalized = " ".join((text or "").casefold().split())
+    return any(phrase in normalized for phrase in _STOP_PHRASES) or any(
+        re.search(pattern, normalized, flags=re.IGNORECASE) is not None
+        for pattern in _UNSAFE_PATTERNS
+    )
 
 
 def envelope_field_set_complete() -> bool:
@@ -106,7 +126,7 @@ def validate_envelope(env: PracticeSafetyEnvelope) -> None:
     for field_name in REQUIRED_ENVELOPE_FIELDS:
         value = getattr(env, field_name)
         if isinstance(value, str):
-            if value == "UNKNOWN" or value == "":
+            if not value.strip() or value.strip().upper() in {"UNKNOWN", "NOT_OBSERVED"}:
                 raise EnvelopeIncompleteError(
                     f"missing required safety field: {field_name}"
                 )
@@ -116,7 +136,10 @@ def validate_envelope(env: PracticeSafetyEnvelope) -> None:
                     "informed_consent_required must be True for any intervention protocol"
                 )
         elif isinstance(value, list):
-            if field_name == "unknowns" and len(value) == 0:
+            if field_name == "unknowns" and (
+                len(value) == 0
+                or any(not isinstance(item, str) or not item.strip() for item in value)
+            ):
                 raise EnvelopeIncompleteError(
                     "unknowns must enumerate at least one UNKNOWN"
                 )
@@ -129,6 +152,21 @@ def validate_envelope(env: PracticeSafetyEnvelope) -> None:
         raise EnvelopeIncompleteError("professional_referral_boundary required")
     if env.rollback_exit_path == "UNKNOWN":
         raise EnvelopeIncompleteError("rollback_exit_path required")
+
+    if env.educational_vs_individualized not in EDUCATIONAL_STATUS_IDS:
+        raise SafetyViolationError(
+            "R5-A permits only EDUCATIONAL_ONLY envelope status; individualized intervention is not authorized"
+        )
+    if env.risk_severity not in RISK_SEVERITY_IDS:
+        raise SafetyViolationError("risk_severity must use the closed set")
+    if env.dependency_coercion_risk not in COERCION_RISK_IDS:
+        raise SafetyViolationError("dependency_coercion_risk must use the closed set")
+    if env.dependency_coercion_risk == "HIGH":
+        raise SafetyViolationError("high dependency/coercion risk fails closed")
+    if env.interaction_with_existing_care not in CARE_DISPOSITION_IDS:
+        raise SafetyViolationError("interaction_with_existing_care must use the closed set")
+    if env.evidence_grade not in EVIDENCE_GRADE_IDS:
+        raise SafetyViolationError("evidence_grade must use the closed set")
 
     if contains_stop_treatment_language(env.raw_text):
         raise StopTreatmentRecommendationError(

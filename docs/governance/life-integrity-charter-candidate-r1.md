@@ -4,6 +4,8 @@
 > 任务：`IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725`
 > 控制提交：`d653c07ed6b108c98e16d111c014f87d7c7987f2`
 > 形式前驱：`f236543dadcaf79ba9dba750fa21bd8b5c65a33a`
+> 原候选冻结头：`0e9d1e5823b41b7e9375e5f634388371b9b024ac`
+> Night Queue R1 裁决：`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`
 
 ## 0. 候选旗标（每个公开制品必须可见声明）
 
@@ -43,7 +45,7 @@ Life Community Value Charter        (最高，不变)
 
 ## 3. 区分层级（强制类型标签）
 
-每一份公开制品必须把内容显式标注为以下之一（见 `tools/life_integrity_r5a/registries.py` 的 `NORMATIVE_EMPIRICAL_TYPE_TAGS`）：
+每一份公开制品必须把内容显式标注为以下之一（见 `life_integrity_r5a/registries.py` 的 `NORMATIVE_EMPIRICAL_TYPE_TAGS`）：
 
 `USER_AUTHORIZED_NORMATIVE_PRINCIPLE` / `HISTORICAL_SOURCE` / `AUTHOR_INTENT_CANDIDATE` / `LATER_INTERPRETATION` / `METAPHYSICAL_CLAIM` / `PHENOMENOLOGICAL_REPORT` / `PRACTICE_PROTOCOL` / `MECHANISM_HYPOTHESIS` / `EMPIRICALLY_SUPPORTED_MECHANISM` / `OUTCOME_OR_HARM_REPORT`
 
@@ -73,6 +75,8 @@ R5-A 定义并验证（不激活人体干预）：
 - 局部优化提案必须披露意图收益、受影响视图、短期/长期效应、外部性、不确定性、同意/自主状态、可逆性、停止条件、转介边界、回滚后残余伤害，否则失败关闭；
 - 体验≠机制，形而上学≠科学，后期解释≠作者意图，实践≠疗效，历史久远≠有效；
 - 仓库测试不得被投射为人体安全性/有效性证据。
+- 每一个审计失败项必须由显式攻击 ID、具体非私有输入、类型化证据对象、逐案测试和机器回执闭合；测试总数不得代替缺失实例。
+- 长期反馈必须分别记录 observation / decision / intervention / review time、同意版本、证据链、重开触发、退役状态、回滚状态和残余伤害。
 
 ## 6. 未授权范围（硬禁止）
 
@@ -80,8 +84,8 @@ R5-A 不授权：R5-B 具身生命系统运行时、R5-C《新悟真篇》领域
 
 ## 7. 终态
 
-成功终态（由 Agent 声明，不由 Agent 自证外部接受）：
+原任务允许的候选终态不构成外部接受。Night Queue R1 后，R5-A 只能保持窄修复 Draft 候选，直到精确修复头的双 CI 与外部审查完成：
 
 `IGNITION_R5A_LIFE_INTEGRITY_CHARTER_CANDIDATE_DRAFT_AWAITING_EXTERNAL_REVIEW`
 
-Agent 不得自证外部接受、不得激活候选、不得启动 R5-B / R5-C / R6。
+Agent 不得自证外部接受、不得激活候选、不得启动 R5-B / R5-C / R6。任何实例门未通过时只能报告 `BLOCKED`。

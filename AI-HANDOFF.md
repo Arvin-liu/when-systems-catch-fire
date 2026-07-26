@@ -65,6 +65,8 @@ Q25C 已成为当前生命周期规则：Ready、Accepted、Merged、Current、C
 121Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。
 
 Q32I 已通过第三次独立 exact-head 审查，以 PR #62 普通合并并完成生产收口；方法 `1.3.0` / map `0.3.0` 为 Current，Q32I 为 Closed。它明确分离 authority 类型、execution capability 与 validation capability，只允许真实、确定性且完整物化声明输出的 producer 为 automatic，只有完整且构件职责相符的命令才是 local validator。Apply 在子进程／写入前必须经统一权威预检；rollback 要按整仓字节、类型、symlink 和 mode 证明完整恢复。交接必须读取 `docs/architecture/incremental-execution.md`，重算 closure、plan 和派生 projection；不能把 cache、Git diff、依赖、图连线、CI 或 artifact 当作现实因果、自我验收或 Current 证明。Q33 启动包已在 1111 准备，但 Q33 与 Q34—Q40 均尚未启动。
+
+R5-A Life Integrity 的 Night Queue R1 报告未获接受：`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`。交接时读取 `docs/governance/r5a-night-queue-r1-adjudication.md` 和生成的攻击实例/验收回执；不得用总检查数替代任一 case，不得把有边界的中英文/别名回归写成普遍语义理解。窄修复仍是 Draft、未接受、未合并、未激活、非 Current；R5-B、R5-C、R6 禁止启动。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。

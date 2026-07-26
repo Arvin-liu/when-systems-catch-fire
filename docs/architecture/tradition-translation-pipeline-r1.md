@@ -25,6 +25,8 @@
 - `LATER_INTERPRETATION -> AUTHOR_INTENT`
 - `HISTORICAL_LONGEVITY -> EFFECTIVENESS`
 
+机制状态与解释层各自使用闭集。`SCIENTIFICALLY_PROVEN`、`PROVEN_BY_SCIENCE`、`CLINICALLY_PROVEN`、`PROVEN_EFFECTIVE` 与“古人已证明是科学”等已复现别名被归入有边界的危险别名表并拒绝；其余未登记目标同样失败关闭。该规则只证明这些具体字符串与闭集行为，不声称具备普遍语义分类能力。
+
 ## 4. 边界
 
 - 体验有效，仅作为“体验的报告”，不自动成为机制；

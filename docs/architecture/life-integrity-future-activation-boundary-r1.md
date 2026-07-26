@@ -1,6 +1,7 @@
 # 生命完整性未来激活边界 R5-A R1（Life Integrity Future Activation Boundary R1）
 
 > 候选。明确 R5-A 之后的迭代门槛与未授权范围。R5-A 自身不激活任何候选。
+> Night Queue R1 裁决：`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`。在 R5-A 窄修复被外部接受前，R5-B、R5-C、R6 均禁止启动。
 
 ## 1. 本轮显式未授权（硬禁止）
 
@@ -22,7 +23,7 @@
 
 ## 3. 后续迭代门槛（参考 backlog）
 
-未来任务（R5-B/C/R6）只有在满足以下条件后才可被 GPT 转为正式任务：
+未来任务（R5-B/C/R6）只有在 R5-A 所有保留缺口逐案通过机器门、精确修复头双 CI 通过、且独立外部审查显式接受后，才可重新审议；当前没有启动授权。此前 backlog 门槛继续成立：
 
 - R3 已达到 Draft 待外部审查终态且真实指标/失败完整可读；
 - R4 已区分运行/表示/来源/模型/架构/治理失败；
@@ -32,4 +33,4 @@
 
 ## 4. 终态
 
-`IGNITION_R5A_LIFE_INTEGRITY_CHARTER_CANDIDATE_DRAFT_AWAITING_EXTERNAL_REVIEW`
+`R5A_NARROW_REPAIR_DRAFT_PENDING_EXACT_HEAD_CI_AND_EXTERNAL_REVIEW`

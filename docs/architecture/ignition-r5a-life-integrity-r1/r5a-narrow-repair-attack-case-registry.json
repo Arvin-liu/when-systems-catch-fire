@@ -1,0 +1,850 @@
+{
+  "acceptance_rule": "Every explicit case id must have one concrete input, one evidence object, one executed result, and PASS. A count cannot substitute for an instance.",
+  "adjudication": "NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED",
+  "cases": [
+    {
+      "case_id": "R5A-NR-001-CANDIDATE-HEAD-IDENTITY",
+      "concrete_input": {
+        "expected_head": "0e9d1e5823b41b7e9375e5f634388371b9b024ac"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-001-CANDIDATE-HEAD-IDENTITY",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-01; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-001-CANDIDATE-HEAD-IDENTITY"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": null,
+      "expected_outcome": "ACCEPTED",
+      "finding": "TASK-01",
+      "handler": "candidate_head",
+      "title": "candidate frozen head names the exact R5-A head"
+    },
+    {
+      "case_id": "R5A-NR-002-FUTURE-PROTOCOL-SUPREMACY",
+      "concrete_input": {
+        "claims_supremacy": true,
+        "parent": "LifeIntegrityGateCandidate",
+        "protocol_id": "synthetic-domain-pack"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-002-FUTURE-PROTOCOL-SUPREMACY",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-02; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-002-FUTURE-PROTOCOL-SUPREMACY"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "CharterHierarchyError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-02",
+      "handler": "future_supremacy",
+      "title": "future protocol claims supremacy"
+    },
+    {
+      "case_id": "R5A-NR-003-AFFECTED-VIEWS-TYPE-CONFUSION",
+      "concrete_input": {
+        "affected_views": "PhysiologicalView"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-003-AFFECTED-VIEWS-TYPE-CONFUSION",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-03; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-003-AFFECTED-VIEWS-TYPE-CONFUSION"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "LocalOptimizationIncompleteError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-03",
+      "handler": "local_type_confusion",
+      "title": "affected_views is a string"
+    },
+    {
+      "case_id": "R5A-NR-004-WHITESPACE-DISCLOSURE",
+      "concrete_input": {
+        "intended_benefit": "   "
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-004-WHITESPACE-DISCLOSURE",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-03; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-004-WHITESPACE-DISCLOSURE"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "LocalOptimizationIncompleteError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-03",
+      "handler": "local_whitespace",
+      "title": "whitespace-only intended benefit"
+    },
+    {
+      "case_id": "R5A-NR-005-ASSUMED-CONSENT",
+      "concrete_input": {
+        "consent_autonomy_status": "ASSUMED"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-005-ASSUMED-CONSENT",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-03; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-005-ASSUMED-CONSENT"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "LocalOptimizationSafetyError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-03",
+      "handler": "local_assumed_consent",
+      "title": "assumed consent in complete proposal"
+    },
+    {
+      "case_id": "R5A-NR-006-IRREVERSIBLE-LOCAL-OPTIMIZATION",
+      "concrete_input": {
+        "reversibility": "IRREVERSIBLE"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-006-IRREVERSIBLE-LOCAL-OPTIMIZATION",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-03; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-006-IRREVERSIBLE-LOCAL-OPTIMIZATION"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "LocalOptimizationSafetyError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-03",
+      "handler": "local_irreversible",
+      "title": "irreversible local optimization"
+    },
+    {
+      "case_id": "R5A-NR-007-COMPLETE-BUT-HARMFUL-PROPOSAL",
+      "concrete_input": {
+        "residual_harm_after_rollback": "catastrophic residual harm",
+        "stop_conditions": "never stop"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-007-COMPLETE-BUT-HARMFUL-PROPOSAL",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-03; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-007-COMPLETE-BUT-HARMFUL-PROPOSAL"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "LocalOptimizationSafetyError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-03",
+      "handler": "local_harmful",
+      "title": "complete proposal hides catastrophic residual harm and never-stop condition"
+    },
+    {
+      "case_id": "R5A-NR-008-UNKNOWN-AFFECTED-VIEW",
+      "concrete_input": {
+        "affected_views": [
+          "SyntheticTotalScore"
+        ]
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-008-UNKNOWN-AFFECTED-VIEW",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-03; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-008-UNKNOWN-AFFECTED-VIEW"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "LocalOptimizationIncompleteError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-03",
+      "handler": "local_unknown_view",
+      "title": "proposal names a view outside the closed set"
+    },
+    {
+      "case_id": "R5A-NR-009-MISSING-RISK-EVIDENCE-OBJECT",
+      "concrete_input": {
+        "evidence_objects": []
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-009-MISSING-RISK-EVIDENCE-OBJECT",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-03; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-009-MISSING-RISK-EVIDENCE-OBJECT"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "LocalOptimizationIncompleteError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-03",
+      "handler": "local_missing_evidence",
+      "title": "complete proposal omits typed risk evidence"
+    },
+    {
+      "case_id": "R5A-NR-010-WHOLE-PERSON-COMPLETE",
+      "concrete_input": {
+        "claim_scope": "WHOLE_PERSON_COMPLETE"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-010-WHOLE-PERSON-COMPLETE",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-04; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-010-WHOLE-PERSON-COMPLETE"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "WholePersonClaimError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-04",
+      "handler": "whole_person_complete",
+      "title": "seven views assert WHOLE_PERSON_COMPLETE"
+    },
+    {
+      "case_id": "R5A-NR-011-MULTIVIEW-WITHOUT-EVIDENCE-OBJECT",
+      "concrete_input": {
+        "evidence_objects": []
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-011-MULTIVIEW-WITHOUT-EVIDENCE-OBJECT",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-04; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-011-MULTIVIEW-WITHOUT-EVIDENCE-OBJECT"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "WholePersonClaimError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-04",
+      "handler": "multiview_missing_evidence",
+      "title": "bounded seven-view assessment omits evidence object"
+    },
+    {
+      "case_id": "R5A-NR-012-OBSERVED-VIEW-WITHOUT-PROVENANCE",
+      "concrete_input": {
+        "observations": [
+          "synthetic observation"
+        ],
+        "provenance": "",
+        "time_scope": "2026-07",
+        "unknown": false,
+        "view_id": "MeaningView"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-012-OBSERVED-VIEW-WITHOUT-PROVENANCE",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-04; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-012-OBSERVED-VIEW-WITHOUT-PROVENANCE"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "EmbodiedViewError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-04",
+      "handler": "view_missing_provenance",
+      "title": "observed view omits provenance"
+    },
+    {
+      "case_id": "R5A-NR-013-SCIENTIFICALLY-PROVEN-ALIAS",
+      "concrete_input": {
+        "claim_class": "PHENOMENOLOGICAL_REPORT",
+        "mechanism_status": "SCIENTIFICALLY_PROVEN"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-013-SCIENTIFICALLY-PROVEN-ALIAS",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-05; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-013-SCIENTIFICALLY-PROVEN-ALIAS"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "ForbiddenClaimUpgradeError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-05",
+      "handler": "tradition_alias",
+      "title": "phenomenological report uses SCIENTIFICALLY_PROVEN alias"
+    },
+    {
+      "case_id": "R5A-NR-014-UNKNOWN-TRANSLATION-TARGET",
+      "concrete_input": {
+        "claim_class": "HISTORICAL_SOURCE",
+        "mechanism_status": "QUANTUM_CERTAINTY"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-014-UNKNOWN-TRANSLATION-TARGET",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-05; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-014-UNKNOWN-TRANSLATION-TARGET"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "UnknownTranslationStatusError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-05",
+      "handler": "tradition_unknown",
+      "title": "translation uses an unregistered mechanism label"
+    },
+    {
+      "case_id": "R5A-NR-015-WRONG-TRANSITION-EVIDENCE-CLASS",
+      "concrete_input": {
+        "provided": "source_identification",
+        "required": "phenomenology_report"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-015-WRONG-TRANSITION-EVIDENCE-CLASS",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-06; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-015-WRONG-TRANSITION-EVIDENCE-CLASS"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "TransitionEvidenceError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-06",
+      "handler": "concept_wrong_evidence",
+      "title": "concept transition supplies wrong evidence class"
+    },
+    {
+      "case_id": "R5A-NR-016-WRONG-TRANSITION-REVIEWER",
+      "concrete_input": {
+        "provided": "A",
+        "required": "D"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-016-WRONG-TRANSITION-REVIEWER",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-06; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-016-WRONG-TRANSITION-REVIEWER"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "TransitionEvidenceError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-06",
+      "handler": "concept_wrong_reviewer",
+      "title": "concept transition supplies wrong reviewer role"
+    },
+    {
+      "case_id": "R5A-NR-017-WRONG-TRANSITION-REVERSIBILITY",
+      "concrete_input": {
+        "provided": false,
+        "required": true
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-017-WRONG-TRANSITION-REVERSIBILITY",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-06; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-017-WRONG-TRANSITION-REVERSIBILITY"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "TransitionEvidenceError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-06",
+      "handler": "concept_wrong_reversibility",
+      "title": "concept transition contradicts reversibility metadata"
+    },
+    {
+      "case_id": "R5A-NR-018-SUPERSEDED-INTERPRETATION-PRESERVED",
+      "concrete_input": {
+        "next": "synthetic revised interpretation",
+        "prior": "synthetic prior interpretation"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-018-SUPERSEDED-INTERPRETATION-PRESERVED",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-06; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-018-SUPERSEDED-INTERPRETATION-PRESERVED"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": null,
+      "expected_outcome": "ACCEPTED",
+      "finding": "TASK-06",
+      "handler": "concept_preserve_history",
+      "title": "concept transition preserves the prior interpretation"
+    },
+    {
+      "case_id": "R5A-NR-019-CHINESE-STOP-TREATMENT",
+      "concrete_input": {
+        "raw_text": "停用你的处方药，改用这个方案代替治疗"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-019-CHINESE-STOP-TREATMENT",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-07; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-019-CHINESE-STOP-TREATMENT"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "StopTreatmentRecommendationError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-07",
+      "handler": "safety_chinese",
+      "title": "Chinese stop-prescription substitution"
+    },
+    {
+      "case_id": "R5A-NR-020-PARAPHRASED-THERAPY-REPLACEMENT",
+      "concrete_input": {
+        "raw_text": "this replaces your therapy"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-020-PARAPHRASED-THERAPY-REPLACEMENT",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-07; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-020-PARAPHRASED-THERAPY-REPLACEMENT"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "StopTreatmentRecommendationError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-07",
+      "handler": "safety_paraphrase",
+      "title": "paraphrased therapy replacement"
+    },
+    {
+      "case_id": "R5A-NR-021-HIGH-COERCION-RISK",
+      "concrete_input": {
+        "dependency_coercion_risk": "HIGH"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-021-HIGH-COERCION-RISK",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-07; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-021-HIGH-COERCION-RISK"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "SafetyViolationError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-07",
+      "handler": "safety_high_coercion",
+      "title": "structured high coercion risk"
+    },
+    {
+      "case_id": "R5A-NR-022-WHITESPACE-SAFETY-FIELD",
+      "concrete_input": {
+        "contraindications": "   "
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-022-WHITESPACE-SAFETY-FIELD",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-07; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-022-WHITESPACE-SAFETY-FIELD"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "EnvelopeIncompleteError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-07",
+      "handler": "safety_whitespace",
+      "title": "whitespace-only contraindications"
+    },
+    {
+      "case_id": "R5A-NR-023-LONGITUDINAL-TIME-ORDER",
+      "concrete_input": {
+        "intervention_time": "2026-07-03T00:00:00+00:00",
+        "review_time": "2026-07-02T00:00:00+00:00"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-023-LONGITUDINAL-TIME-ORDER",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-08; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-023-LONGITUDINAL-TIME-ORDER"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "LongitudinalContractError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-08",
+      "handler": "longitudinal_time_order",
+      "title": "review precedes intervention"
+    },
+    {
+      "case_id": "R5A-NR-024-DELAYED-HARM-WITHOUT-REOPEN",
+      "concrete_input": {
+        "reopen_trigger": "NONE",
+        "revision_status": "ACTIVE"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-024-DELAYED-HARM-WITHOUT-REOPEN",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-08; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-024-DELAYED-HARM-WITHOUT-REOPEN"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "LongitudinalContractError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-08",
+      "handler": "longitudinal_no_reopen",
+      "title": "delayed harm leaves candidate active"
+    },
+    {
+      "case_id": "R5A-NR-025-DELAYED-HARM-REOPENED",
+      "concrete_input": {
+        "reopen_trigger": "DELAYED_ADVERSE_OUTCOME",
+        "revision_status": "REOPENED"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-025-DELAYED-HARM-REOPENED",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-08; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-025-DELAYED-HARM-REOPENED"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": null,
+      "expected_outcome": "ACCEPTED",
+      "finding": "TASK-08",
+      "handler": "longitudinal_reopened",
+      "title": "delayed harm explicitly reopens the candidate"
+    },
+    {
+      "case_id": "R5A-NR-026-ACTIVATED-ATTRIBUTE-IMMUTABLE",
+      "concrete_input": {
+        "activated": true
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-026-ACTIVATED-ATTRIBUTE-IMMUTABLE",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-09; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-026-ACTIVATED-ATTRIBUTE-IMMUTABLE"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "AttributeError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-09",
+      "handler": "activated_immutable",
+      "title": "caller attempts to activate the candidate gate"
+    },
+    {
+      "case_id": "R5A-NR-027-PACKAGE-IMPORT-BOUNDARY",
+      "concrete_input": {
+        "forbidden_roots": [
+          "adaptive_relational_runtime",
+          "function_os",
+          "tools.ignition_runtime"
+        ]
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-027-PACKAGE-IMPORT-BOUNDARY",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-09; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-027-PACKAGE-IMPORT-BOUNDARY"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": null,
+      "expected_outcome": "ACCEPTED",
+      "finding": "TASK-09",
+      "handler": "import_boundary",
+      "title": "candidate package has no production-runtime imports"
+    },
+    {
+      "case_id": "R5A-NR-028-EXPLICIT-CASE-ID-GATE",
+      "concrete_input": {
+        "required_ids": [
+          "R5A-NR-001-CANDIDATE-HEAD-IDENTITY",
+          "R5A-NR-002-FUTURE-PROTOCOL-SUPREMACY",
+          "R5A-NR-003-AFFECTED-VIEWS-TYPE-CONFUSION",
+          "R5A-NR-004-WHITESPACE-DISCLOSURE",
+          "R5A-NR-005-ASSUMED-CONSENT",
+          "R5A-NR-006-IRREVERSIBLE-LOCAL-OPTIMIZATION",
+          "R5A-NR-007-COMPLETE-BUT-HARMFUL-PROPOSAL",
+          "R5A-NR-008-UNKNOWN-AFFECTED-VIEW",
+          "R5A-NR-009-MISSING-RISK-EVIDENCE-OBJECT",
+          "R5A-NR-010-WHOLE-PERSON-COMPLETE",
+          "R5A-NR-011-MULTIVIEW-WITHOUT-EVIDENCE-OBJECT",
+          "R5A-NR-012-OBSERVED-VIEW-WITHOUT-PROVENANCE",
+          "R5A-NR-013-SCIENTIFICALLY-PROVEN-ALIAS",
+          "R5A-NR-014-UNKNOWN-TRANSLATION-TARGET",
+          "R5A-NR-015-WRONG-TRANSITION-EVIDENCE-CLASS",
+          "R5A-NR-016-WRONG-TRANSITION-REVIEWER",
+          "R5A-NR-017-WRONG-TRANSITION-REVERSIBILITY",
+          "R5A-NR-018-SUPERSEDED-INTERPRETATION-PRESERVED",
+          "R5A-NR-019-CHINESE-STOP-TREATMENT",
+          "R5A-NR-020-PARAPHRASED-THERAPY-REPLACEMENT",
+          "R5A-NR-021-HIGH-COERCION-RISK",
+          "R5A-NR-022-WHITESPACE-SAFETY-FIELD",
+          "R5A-NR-023-LONGITUDINAL-TIME-ORDER",
+          "R5A-NR-024-DELAYED-HARM-WITHOUT-REOPEN",
+          "R5A-NR-025-DELAYED-HARM-REOPENED",
+          "R5A-NR-026-ACTIVATED-ATTRIBUTE-IMMUTABLE",
+          "R5A-NR-027-PACKAGE-IMPORT-BOUNDARY",
+          "R5A-NR-028-EXPLICIT-CASE-ID-GATE",
+          "R5A-NR-029-EXACT-CHARTER-HIERARCHY",
+          "R5A-NR-030-EVIDENCE-OBJECT-ROLE-MISMATCH"
+        ]
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-028-EXPLICIT-CASE-ID-GATE",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-19; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-028-EXPLICIT-CASE-ID-GATE"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": null,
+      "expected_outcome": "ACCEPTED",
+      "finding": "TASK-19",
+      "handler": "explicit_ids",
+      "title": "machine gate binds the exact explicit case id set"
+    },
+    {
+      "case_id": "R5A-NR-029-EXACT-CHARTER-HIERARCHY",
+      "concrete_input": {
+        "hierarchy": [
+          "LifeCommunityValueCharter",
+          "LifeIntegrityAnnexCandidate",
+          "LifeIntegrityGateCandidate",
+          "FutureDomainPracticeProtocols"
+        ]
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-029-EXACT-CHARTER-HIERARCHY",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-02; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-029-EXACT-CHARTER-HIERARCHY"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": null,
+      "expected_outcome": "ACCEPTED",
+      "finding": "TASK-02",
+      "handler": "exact_hierarchy",
+      "title": "exact closed charter hierarchy remains valid"
+    },
+    {
+      "case_id": "R5A-NR-030-EVIDENCE-OBJECT-ROLE-MISMATCH",
+      "concrete_input": {
+        "evidence_role": "F",
+        "transition_role": "D"
+      },
+      "evidence_object": {
+        "claim_ceiling": "software_behavior_reproduced",
+        "evidence_class": "attack_reproduction",
+        "evidence_id": "EV-R5A-NR-030-EVIDENCE-OBJECT-ROLE-MISMATCH",
+        "observed_facts": [
+          "concrete repository fixture executed by the machine gate"
+        ],
+        "provenance": "1111 night queue TASK-06; reproduced in R5-A narrow repair",
+        "reviewer_role": "H",
+        "supports": [
+          "attack:R5A-NR-030-EVIDENCE-OBJECT-ROLE-MISMATCH"
+        ],
+        "unresolved_risks": []
+      },
+      "expected_error": "TransitionEvidenceError",
+      "expected_outcome": "REJECTED",
+      "finding": "TASK-06",
+      "handler": "concept_evidence_role_mismatch",
+      "title": "transition evidence object role differs from transition reviewer"
+    }
+  ],
+  "required_case_ids": [
+    "R5A-NR-001-CANDIDATE-HEAD-IDENTITY",
+    "R5A-NR-002-FUTURE-PROTOCOL-SUPREMACY",
+    "R5A-NR-003-AFFECTED-VIEWS-TYPE-CONFUSION",
+    "R5A-NR-004-WHITESPACE-DISCLOSURE",
+    "R5A-NR-005-ASSUMED-CONSENT",
+    "R5A-NR-006-IRREVERSIBLE-LOCAL-OPTIMIZATION",
+    "R5A-NR-007-COMPLETE-BUT-HARMFUL-PROPOSAL",
+    "R5A-NR-008-UNKNOWN-AFFECTED-VIEW",
+    "R5A-NR-009-MISSING-RISK-EVIDENCE-OBJECT",
+    "R5A-NR-010-WHOLE-PERSON-COMPLETE",
+    "R5A-NR-011-MULTIVIEW-WITHOUT-EVIDENCE-OBJECT",
+    "R5A-NR-012-OBSERVED-VIEW-WITHOUT-PROVENANCE",
+    "R5A-NR-013-SCIENTIFICALLY-PROVEN-ALIAS",
+    "R5A-NR-014-UNKNOWN-TRANSLATION-TARGET",
+    "R5A-NR-015-WRONG-TRANSITION-EVIDENCE-CLASS",
+    "R5A-NR-016-WRONG-TRANSITION-REVIEWER",
+    "R5A-NR-017-WRONG-TRANSITION-REVERSIBILITY",
+    "R5A-NR-018-SUPERSEDED-INTERPRETATION-PRESERVED",
+    "R5A-NR-019-CHINESE-STOP-TREATMENT",
+    "R5A-NR-020-PARAPHRASED-THERAPY-REPLACEMENT",
+    "R5A-NR-021-HIGH-COERCION-RISK",
+    "R5A-NR-022-WHITESPACE-SAFETY-FIELD",
+    "R5A-NR-023-LONGITUDINAL-TIME-ORDER",
+    "R5A-NR-024-DELAYED-HARM-WITHOUT-REOPEN",
+    "R5A-NR-025-DELAYED-HARM-REOPENED",
+    "R5A-NR-026-ACTIVATED-ATTRIBUTE-IMMUTABLE",
+    "R5A-NR-027-PACKAGE-IMPORT-BOUNDARY",
+    "R5A-NR-028-EXPLICIT-CASE-ID-GATE",
+    "R5A-NR-029-EXACT-CHARTER-HIERARCHY",
+    "R5A-NR-030-EVIDENCE-OBJECT-ROLE-MISMATCH"
+  ],
+  "schema": "r5a/narrow-repair-attack-case-registry/v1"
+}

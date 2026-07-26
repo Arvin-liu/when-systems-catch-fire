@@ -17,6 +17,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any
 
+from .evidence import EvidenceObject
 from .registries import EMBODIED_VIEW_IDS, is_valid_embodied_view
 
 
@@ -51,6 +52,18 @@ class EmbodiedViewProjection:
             raise EmbodiedViewError(f"unknown embodied view id: {self.view_id!r}")
         if not isinstance(self.subject_identity, str) or not self.subject_identity:
             raise EmbodiedViewError("subject_identity must be a non-empty string")
+        if not isinstance(self.confidence, (int, float)) or not 0.0 <= self.confidence <= 1.0:
+            raise EmbodiedViewError("confidence must be a number between 0 and 1")
+        if self.unknown:
+            if self.observations:
+                raise EmbodiedViewError("an UNKNOWN view may not carry asserted observations")
+        else:
+            if not self.observations:
+                raise EmbodiedViewError("an observed view must carry at least one observation")
+            if not isinstance(self.time_scope, str) or self.time_scope.strip().upper() == "UNKNOWN":
+                raise EmbodiedViewError("an observed view must carry a bounded time_scope")
+            if not isinstance(self.provenance, str) or not self.provenance.strip():
+                raise EmbodiedViewError("an observed view must carry non-blank provenance")
 
 
 @dataclass
@@ -67,6 +80,16 @@ class Contradiction:
     view_a: str
     view_b: str
     description: str = ""
+
+
+@dataclass(frozen=True)
+class BoundedAssessmentReceipt:
+    subject_identity: str
+    claim_scope: str
+    observed_views: tuple[str, ...]
+    missing_views: tuple[str, ...]
+    contradictions_surfaced: bool
+    evidence_ids: tuple[str, ...]
 
 
 class EmbodiedAgent:
@@ -116,10 +139,22 @@ class EmbodiedAgent:
         claimed_views: list[str],
         missing_disclosed: bool,
         contradictions_surfaced: bool,
-    ) -> None:
+        evidence_objects: list[EvidenceObject] | None = None,
+        claim_scope: str = "BOUNDED_MULTI_VIEW_ASSESSMENT",
+    ) -> BoundedAssessmentReceipt:
         """A whole-person conclusion requires explicit view coverage, missing-view
         disclosure as UNKNOWN, and contradiction/UNKNOWN handling. Anything less
         fails closed."""
+        if claim_scope == "WHOLE_PERSON_COMPLETE":
+            raise WholePersonClaimError(
+                "R5-A never permits WHOLE_PERSON_COMPLETE, including with seven views"
+            )
+        if claim_scope != "BOUNDED_MULTI_VIEW_ASSESSMENT":
+            raise WholePersonClaimError("unknown or unbounded assessment claim_scope")
+        if not isinstance(claimed_views, list) or not claimed_views:
+            raise MissingViewError("claimed_views must be a non-empty list")
+        if len(set(claimed_views)) != len(claimed_views):
+            raise MissingViewError("claimed_views must not contain duplicates")
         for v in claimed_views:
             if v not in self._views:
                 raise MissingViewError(f"claimed view not present: {v!r}")
@@ -128,6 +163,30 @@ class EmbodiedAgent:
                 "whole-person conclusion requires missing-view disclosure and "
                 "contradiction/UNKNOWN handling"
             )
+        for view_id in claimed_views:
+            projection = self._views[view_id]
+            if projection.unknown or not projection.observations:
+                raise WholePersonClaimError(
+                    f"claimed view lacks sufficient bounded evidence: {view_id}"
+                )
+        required_support = {f"view:{view_id}" for view_id in claimed_views}
+        evidence = evidence_objects or []
+        if not evidence or not any(
+            item.evidence_class == "multi_view_observation"
+            and item.supports_all(required_support)
+            for item in evidence
+        ):
+            raise WholePersonClaimError(
+                "bounded multi-view assessment requires a typed evidence object for every claimed view"
+            )
+        return BoundedAssessmentReceipt(
+            subject_identity=self.subject_identity,
+            claim_scope=claim_scope,
+            observed_views=tuple(claimed_views),
+            missing_views=tuple(self.missing_views()),
+            contradictions_surfaced=contradictions_surfaced,
+            evidence_ids=tuple(item.evidence_id for item in evidence),
+        )
 
     def add_cross_view_relation(self, relation: CrossViewRelation) -> None:
         if relation.asserts_causality:
