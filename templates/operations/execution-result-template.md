@@ -63,7 +63,7 @@ Optional stage snapshot request (method 1.4.0 Candidate interface; a request is 
 - Lifecycle state and claim ceiling:
 - Homepage summary:
 - Limitations and unfinished items:
-- Responsible actor (`PERSON` or `ORGANIZATION`), proposed publisher actor, accountability reference/contact, execution agents and automation workflows (agents/workflows are technical records, never final accountability):
+- Pre-registered responsible and proposed-publisher `actor_ref` values (resolved through `data/operations/responsibility-actors.json`), plus execution agents and automation workflows (agents/workflows are technical records, never final accountability):
 - Recommendation: `PUBLISH` / `REVISE` / `WITHDRAW` / `DO_NOT_PUBLISH`
 - `agent_claims_published_to_main`: `false`
 - Machine request, if supplied: `templates/operations/stage-snapshot-request-template.json`

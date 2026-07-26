@@ -6,9 +6,12 @@ on:
     paths:
       - README.md
       - data/operations/stage-snapshots.json
+      - data/operations/responsibility-actors.json
+      - schemas/operations/responsibility-actor-registry.schema.json
       - docs/generated/recent-stage-results.md
       - docs/operations/stage-snapshot-publication.md
       - tools/operations/stage_snapshot_contract.py
+      - tools/operations/generate_stage_snapshot_actor_contract.py
       - docs/ai-assistant-usage-reference.md
       - data/architecture/interactive-system-map.json
       - data/architecture/interactive-system-map-layout.json
@@ -93,6 +96,7 @@ jobs:
           cp data/operations/change-propagation-topology.json site/data/operations/change-propagation-topology.json
           cp data/operations/component-execution-profiles.json site/data/operations/component-execution-profiles.json
           cp data/operations/stage-snapshots.json site/data/operations/stage-snapshots.json
+          cp data/operations/responsibility-actors.json site/data/operations/responsibility-actors.json
           cp data/architecture/interactive-system-map-layout.json site/data/architecture/interactive-system-map-layout.json
           cp data/architecture/interactive-system-map.json site/data/architecture/interactive-system-map.json
           {
@@ -106,7 +110,9 @@ jobs:
       - name: Verify generated interactive system map
         run: python3 tools/generate_interactive_system_map.py --check
       - name: Verify deterministic stage snapshot projection
-        run: python3 tools/operations/validate_stage_snapshots.py --check
+        run: |
+          python3 tools/operations/generate_stage_snapshot_actor_contract.py --check
+          python3 tools/operations/validate_stage_snapshots.py --check
       - uses: actions/jekyll-build-pages@v1
         with:
           source: site
