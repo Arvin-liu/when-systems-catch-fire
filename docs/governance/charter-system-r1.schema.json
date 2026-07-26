@@ -2,12 +2,18 @@
   "charter_system": {
     "id": "charter-system",
     "version": "R1",
-    "title": "Charter System R1 — Architecture Candidate",
-    "status": "DRAFT_CANDIDATE",
-    "on_main": false,
-    "current": false,
-    "accepted": false,
+    "title": "Charter System R1 — Architecture (Accepted / Current)",
+    "status": "CURRENT",
+    "on_main": true,
+    "current": true,
+    "accepted": true,
     "activated": false,
+    "publication_status": "UNPUBLISHED",
+    "source": {
+      "pr": 137,
+      "branch": "agent/charter-system-r1-architecture-candidate-draft-r1-20260726",
+      "exact_head": "669c9f8c9f3f220875674cb80ed73423cade4be2"
+    },
     "license": "CC-BY-SA-4.0",
     "governs": ["life-community-value-charter", "future charters"],
     "does_not_rewrite": ["life-community-value-charter content"],
@@ -86,5 +92,5 @@
     "example": ["life-community-value-charter@v2", "charter-system@R1"],
     "validity_scope": "Decision validity is scoped to its bound charter version; later charter revisions do not auto-invalidate prior decisions unless explicitly re-ratified (B1-B5)."
   },
-  "this_candidate_self_gate": "Charter System R1 must itself pass Draft -> Candidate -> (independent exact-head acceptance) -> Merged -> Current/Closed before it becomes operative. Until then it is a non-operative proposal."
+  "this_candidate_self_gate": "Charter System R1 has passed Draft -> Candidate -> (independent exact-head acceptance of 669c9f8c) -> Merged (0e7c032) -> Current (non-Activated) as of 2026-07-26. It is now operative as the current charter-system meta-governance layer but is NOT activated as a capability/runtime/executor; no capability/runtime/executor is activated by this status. Promotion executed at account owner's explicit direction (G5)."
 }
