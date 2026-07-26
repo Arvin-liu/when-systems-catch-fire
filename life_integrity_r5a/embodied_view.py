@@ -37,6 +37,9 @@ class MissingViewError(EmbodiedViewError):
     """Raised when a required view is absent and not disclosed as UNKNOWN."""
 
 
+DEFAULT_PROVENANCE_BOUNDARY = "UNSPECIFIED_PROVENANCE_BOUNDARY"
+
+
 @dataclass
 class EmbodiedViewProjection:
     view_id: str
@@ -46,14 +49,20 @@ class EmbodiedViewProjection:
     time_scope: str = "UNKNOWN"
     unknown: bool = True
     provenance: str = ""
+    provenance_boundary: str = DEFAULT_PROVENANCE_BOUNDARY
 
     def __post_init__(self) -> None:
         if not is_valid_embodied_view(self.view_id):
             raise EmbodiedViewError(f"unknown embodied view id: {self.view_id!r}")
-        if not isinstance(self.subject_identity, str) or not self.subject_identity:
+        if not isinstance(self.subject_identity, str) or not self.subject_identity.strip():
             raise EmbodiedViewError("subject_identity must be a non-empty string")
-        if not isinstance(self.confidence, (int, float)) or not 0.0 <= self.confidence <= 1.0:
+        if type(self.confidence) not in (int, float) or not 0.0 <= self.confidence <= 1.0:
             raise EmbodiedViewError("confidence must be a number between 0 and 1")
+        if (
+            not isinstance(self.provenance_boundary, str)
+            or not self.provenance_boundary.strip()
+        ):
+            raise EmbodiedViewError("provenance_boundary must be a non-blank string")
         if self.unknown:
             if self.observations:
                 raise EmbodiedViewError("an UNKNOWN view may not carry asserted observations")
@@ -73,6 +82,12 @@ class CrossViewRelation:
     target_view: str
     asserts_causality: bool = False
     notes: str = ""
+
+    def __post_init__(self) -> None:
+        if not isinstance(self.relation_type, str) or not self.relation_type.strip():
+            raise EmbodiedViewError("relation_type must be a non-blank string")
+        if type(self.asserts_causality) is not bool:
+            raise EmbodiedViewError("asserts_causality must be a boolean")
 
 
 @dataclass
@@ -95,9 +110,15 @@ class BoundedAssessmentReceipt:
 class EmbodiedAgent:
     """A subject represented across exactly the seven closed-set views."""
 
-    def __init__(self, subject_identity: str, provenance_boundary: str = "") -> None:
-        if not isinstance(subject_identity, str) or not subject_identity:
+    def __init__(
+        self,
+        subject_identity: str,
+        provenance_boundary: str = DEFAULT_PROVENANCE_BOUNDARY,
+    ) -> None:
+        if not isinstance(subject_identity, str) or not subject_identity.strip():
             raise EmbodiedViewError("subject_identity must be a non-empty string")
+        if not isinstance(provenance_boundary, str) or not provenance_boundary.strip():
+            raise EmbodiedViewError("provenance_boundary must be a non-blank string")
         self.subject_identity = subject_identity
         self.provenance_boundary = provenance_boundary
         self._views: dict[str, EmbodiedViewProjection] = {}
@@ -113,6 +134,10 @@ class EmbodiedAgent:
             )
         if not is_valid_embodied_view(projection.view_id):
             raise EmbodiedViewError(f"unknown embodied view id: {projection.view_id!r}")
+        if projection.provenance_boundary != self.provenance_boundary:
+            raise EmbodiedViewError(
+                "view provenance_boundary must match the agent provenance_boundary"
+            )
         self._views[projection.view_id] = projection
 
     def get_view(self, view_id: str) -> EmbodiedViewProjection:

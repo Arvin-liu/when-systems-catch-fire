@@ -82,7 +82,7 @@ def validate_longitudinal_contract(contract: LongitudinalRevisionContract) -> No
     decision = _parse_time(contract.decision_time, "decision_time")
     intervention = _parse_time(contract.intervention_time, "intervention_time")
     review = _parse_time(contract.review_time, "review_time")
-    if not observation <= decision <= intervention <= review:
+    if not observation < decision < intervention < review:
         raise LongitudinalContractError(
             "observation, decision, intervention, and review times must be distinct ordered fields"
         )

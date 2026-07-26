@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 from . import attack_gate
+from . import consolidated_repair_gate
 from . import concept_mapping as CM
 from . import embodied_view as EV
 from . import fixtures as FX
@@ -61,6 +62,14 @@ def validate_all() -> tuple[bool, list[str]]:
         failures.extend(receipt["identity_errors"])
         failures.extend(
             f"attack case failed: {case_id}" for case_id in receipt["failed_case_ids"]
+        )
+
+    consolidated_receipt = consolidated_repair_gate.run_consolidated_repair_gate()
+    if consolidated_receipt["status"] != "PASS":
+        failures.extend(consolidated_receipt["identity_errors"])
+        failures.extend(
+            f"consolidated repair case failed: {case_id}"
+            for case_id in consolidated_receipt["failed_case_ids"]
         )
 
     return (not failures, failures)

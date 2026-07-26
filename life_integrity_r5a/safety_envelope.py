@@ -79,13 +79,15 @@ class PracticeSafetyEnvelope:
 
 # --- Stop-treatment language detection (pure, available in Commit 1) --------
 _STOP_PHRASES = (
-    "stop taking", "stop your", "discontinue", "replace your", "substitute for",
+    "stop taking", "stop your", "discontinue your medication",
+    "discontinue prescribed", "replace your", "substitute for",
     "instead of your prescribed", "stop prescribed", "quit your medication",
     "replace prescribed", "stop the medication", "come off your",
 )
 
 _UNSAFE_PATTERNS = (
     r"\bstop\s+(?:taking\s+)?(?:your\s+)?(?:prescribed\s+)?(?:medication|medicine|treatment|therapy)\b",
+    r"\bdiscontinue\s+(?:your\s+)?(?:prescribed\s+)?(?:medication|medicine|treatment|therapy)\b",
     r"\b(?:replace|substitute|abandon)\s+(?:your\s+)?(?:prescribed\s+)?(?:medication|treatment|therapy|care)\b",
     r"\bthis\s+replaces\s+your\s+(?:treatment|therapy|care)\b",
     r"\byou\s+(?:must|have\s+to)\s+(?:continue|comply)\b",
@@ -123,26 +125,40 @@ def validate_envelope(env: PracticeSafetyEnvelope) -> None:
     prescribed treatment or substituting an unverified practice for professional
     care.
     """
+    if not isinstance(env, PracticeSafetyEnvelope):
+        raise SafetyViolationError("env must be a PracticeSafetyEnvelope")
     for field_name in REQUIRED_ENVELOPE_FIELDS:
         value = getattr(env, field_name)
-        if isinstance(value, str):
-            if not value.strip() or value.strip().upper() in {"UNKNOWN", "NOT_OBSERVED"}:
-                raise EnvelopeIncompleteError(
-                    f"missing required safety field: {field_name}"
+        if field_name == "informed_consent_required":
+            if type(value) is not bool:
+                raise SafetyViolationError(
+                    "informed_consent_required must be a boolean"
                 )
-        elif isinstance(value, bool):
-            if field_name == "informed_consent_required" and value is False:
+            if value is False:
                 raise EnvelopeIncompleteError(
                     "informed_consent_required must be True for any intervention protocol"
                 )
-        elif isinstance(value, list):
-            if field_name == "unknowns" and (
-                len(value) == 0
-                or any(not isinstance(item, str) or not item.strip() for item in value)
+        elif field_name == "unknowns":
+            if not isinstance(value, list):
+                raise SafetyViolationError("unknowns must be an array")
+            if len(value) == 0 or any(
+                not isinstance(item, str) or not item.strip() for item in value
             ):
                 raise EnvelopeIncompleteError(
                     "unknowns must enumerate at least one UNKNOWN"
                 )
+        elif isinstance(value, str):
+            if not value.strip() or value.strip().upper() in {"UNKNOWN", "NOT_OBSERVED"}:
+                raise EnvelopeIncompleteError(
+                    f"missing required safety field: {field_name}"
+                )
+        else:
+            raise SafetyViolationError(
+                f"{field_name} must use its declared runtime type"
+            )
+
+    if not isinstance(env.raw_text, str):
+        raise SafetyViolationError("raw_text must be a string")
 
     if not env.informed_consent_required:
         raise EnvelopeIncompleteError("informed_consent_required must be True")
@@ -168,7 +184,12 @@ def validate_envelope(env: PracticeSafetyEnvelope) -> None:
     if env.evidence_grade not in EVIDENCE_GRADE_IDS:
         raise SafetyViolationError("evidence_grade must use the closed set")
 
-    if contains_stop_treatment_language(env.raw_text):
+    structured_text = "\n".join(
+        getattr(env, field_name)
+        for field_name in REQUIRED_ENVELOPE_FIELDS
+        if field_name not in {"informed_consent_required", "unknowns"}
+    )
+    if contains_stop_treatment_language(f"{structured_text}\n{env.raw_text}"):
         raise StopTreatmentRecommendationError(
             "envelope must not recommend stopping prescribed treatment or "
             "substituting an unverified practice for professional care"

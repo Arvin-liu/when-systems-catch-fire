@@ -82,6 +82,8 @@ CANDIDATE_MANIFEST = {
         "docs/architecture/ignition-r5a-life-integrity-r1/longitudinal-feedback-schema.json",
         "docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-case-registry.json",
         "docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-acceptance.json",
+        "docs/architecture/ignition-r5a-life-integrity-r1/r5a-consolidated-repair-attack-case-registry.json",
+        "docs/architecture/ignition-r5a-life-integrity-r1/r5a-consolidated-repair-attack-acceptance.json",
         "docs/governance/r5a-night-queue-r1-adjudication.md",
     ],
     }

@@ -4,7 +4,7 @@
 
 点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型，把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF、PSD、ARN、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。迭代操作法 `1.3.0` 与 registry 派生系统图 `0.3.0` 为 Current（Q32I 已独立 exact-head 接受、由 PR #62 普通合并并完成生产收口）；`1.2.0`／`0.2.0` 为 Historical，`1.1.0`／`0.1.0` 为更早 Historical。当前执行层中权威类型与本地执行能力已分离，apply 先经统一预检，rollback（回滚）按完整仓库字节／类型／mode 状态验证。这是当前提交下已经长成的状态，不是永久定位或最终身份；它也不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。
 
-**首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [点火迭代操作法](./ITERATION.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
+**首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [“永远进行时”原则](./docs/governance/ignition-perpetual-present-principle.md) / [点火迭代操作法](./ITERATION.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 
 <details>
 <summary>展开：当前能力、限制与完整项目现状</summary>
@@ -19,7 +19,7 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 它不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。当前状态会随证据、反例、执行能力、现实反馈和缺口修正继续变化。
 
-R5-A 生命完整性仍是堆叠 Draft 候选，不是当前能力。Night Queue R1 的 `20/20 COMPLETED` 只表示报告轮次完成，正式裁决仍为 [`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`](./docs/governance/r5a-night-queue-r1-adjudication.md)：PR #130 的 145 项计数不能替代缺失的具体攻击实例。窄修复精确头 `a2fd355f…` 已通过独立逐项复核，PR #131 已转 Ready 并以普通 merge `062f223f…` 进入 PR #130 的来源分支；这只接受并合并所裁决缺口的仓库合同修复，不等于 PR #130 已 Ready/合并到其前驱，更不等于 Main、Current、人体安全、疗效或普遍语义理解。R5-B、R5-C、R6 均未启动且继续禁止。
+R5-A 生命完整性仍是堆叠 Draft 候选，不是当前能力。Night Queue R1 的 `20/20 COMPLETED` 只表示报告轮次完成，正式裁决仍为 [`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`](./docs/governance/r5a-night-queue-r1-adjudication.md)。此前接受并并入 PR #130 来源分支的窄修复只关闭 30 个已裁决实例；对 PR #130 精确头 `f33be64b…` 的完整复核又复现 `R5A-CR-001`–`011` 十一个运行时／标准 JSON Schema 旁路。当前[合并合同旁路窄修复](./docs/governance/r5a-consolidated-contract-bypass-repair-r1.md)已在 Draft 中逐案实现机器拒绝、六份 Draft 2020-12 schema 正反实例门与五类变异阻断，但仍等待独立 exact-head 验收；测试总数、绿色 CI 和确定性生成都不能自证接受。PR #130 仍未 Ready/合并到前驱，更不是 Main、Current、人体安全、疗效或普遍语义理解。R5-B、R5-C、R6 均未启动且继续禁止。
 
 [查看完整项目现状](./docs/project-current-state.md) / [查看现行架构](./ARCHITECTURE.md) / [查看使用说明](./docs/USAGE.md)
 
@@ -44,6 +44,18 @@ R5-A 生命完整性仍是堆叠 Draft 候选，不是当前能力。Night Queue
 价值宪章约束点火判断什么值得做：谁受益、谁承担风险、哪些主体沉默、什么情况下必须拒绝、暂停或回滚。它跨越 L0-L6、Ψ₀、元协议和 Function OS，但它是规范边界，不是经验事实、数学证明、治理批准或项目定位。
 
 [阅读全文：生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
+
+## 永远进行时
+
+> 丹无定形，火有法度；
+> 炼无终局，化有来路。
+
+点火没有最终完成态：成果可以在有法度的证据与生命周期门内暂时凝结，
+也始终可被新证据、反例和现实反馈继续炼化。历史保存来路，但不把系统封闭
+在过去时；未来保持开放，但不能替代当下证据或提前授权。它与宇宙的对应
+只是一种哲学隐喻和时间观，不是物理学或宇宙学结论。
+
+[阅读全文：点火“永远进行时”原则](./docs/governance/ignition-perpetual-present-principle.md)
 
 ## 完整可点击系统图
 

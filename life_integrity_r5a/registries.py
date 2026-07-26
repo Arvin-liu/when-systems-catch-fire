@@ -14,7 +14,7 @@ federation runtime. See docs/governance/life-integrity-charter-candidate-r1.md.
 from __future__ import annotations
 
 # --- Task / control identity (read-only constants) -------------------------
-SCHEMA_VERSION = "r5a/v1.1-narrow-repair"
+SCHEMA_VERSION = "r5a/v1.2-consolidated-contract-repair"
 TASK_ID = "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
 CONTROL_COMMIT = "d653c07ed6b108c98e16d111c014f87d7c7987f2"
 FORMAL_PREDECESSOR = "f236543dadcaf79ba9dba750fa21bd8b5c65a33a"

@@ -59,10 +59,18 @@ class ConceptMapping:
     superseded_interpretations: list[dict[str, str]] = field(default_factory=list)
 
     def __post_init__(self) -> None:
+        if not isinstance(self.concept_id, str) or not self.concept_id.strip():
+            raise ConceptMappingError("concept_id must be a non-blank string")
         if not is_valid_concept_state(self.source_state):
             raise UnknownConceptStateError(f"unknown state: {self.source_state!r}")
         if not self.current_state:
             self.current_state = self.source_state
+        elif not is_valid_concept_state(self.current_state):
+            raise UnknownConceptStateError(
+                f"unknown current state: {self.current_state!r}"
+            )
+        if not isinstance(self.transitions, list):
+            raise ConceptMappingError("transitions must be an array")
 
 
 # --- Pure helpers (available in Commit 1, used by tests) -------------------

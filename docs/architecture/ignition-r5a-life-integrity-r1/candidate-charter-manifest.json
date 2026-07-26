@@ -28,6 +28,8 @@
       "docs/architecture/ignition-r5a-life-integrity-r1/longitudinal-feedback-schema.json",
       "docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-case-registry.json",
       "docs/architecture/ignition-r5a-life-integrity-r1/r5a-narrow-repair-attack-acceptance.json",
+      "docs/architecture/ignition-r5a-life-integrity-r1/r5a-consolidated-repair-attack-case-registry.json",
+      "docs/architecture/ignition-r5a-life-integrity-r1/r5a-consolidated-repair-attack-acceptance.json",
       "docs/governance/r5a-night-queue-r1-adjudication.md"
     ],
     "authorized_next_iteration": false,
@@ -60,7 +62,7 @@
       "public release of private / reconstructive content"
     ],
     "schema": "r5a/candidate-charter-manifest/v1",
-    "schema_version": "r5a/v1.1-narrow-repair",
+    "schema_version": "r5a/v1.2-consolidated-contract-repair",
     "supreme_charter": "LifeCommunityValueCharter",
     "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725",
     "title": "Life Integrity Charter Candidate R1"
@@ -91,7 +93,8 @@
     "human_intervention_enabled": false,
     "medical_claims_authorized": false,
     "modern_wuzhen_pack_started": false,
-    "schema_version": "r5a/v1.1-narrow-repair",
+    "repair_task_id": "IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726",
+    "schema_version": "r5a/v1.2-consolidated-contract-repair",
     "supreme_charter": "LifeCommunityValueCharter",
     "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
   },

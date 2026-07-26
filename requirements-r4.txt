@@ -3,3 +3,4 @@
 # library (json, hashlib, os, dataclasses, typing) — no third-party runtime deps.
 # pytest is required only to run the acceptance/attack test suite.
 pytest>=7.0
+jsonschema==4.26.0

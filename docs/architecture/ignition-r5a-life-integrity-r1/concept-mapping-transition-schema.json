@@ -1,4 +1,6 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
   "fail_closed_rules": [
     "target state must be in the eight-state closed set",
     "UNMAPPED/SYMBOLIC_DESCRIPTION may not jump directly to PARTIALLY_SUPPORTED",
@@ -23,13 +25,18 @@
     "human_intervention_enabled": false,
     "medical_claims_authorized": false,
     "modern_wuzhen_pack_started": false,
-    "schema_version": "r5a/v1.1-narrow-repair",
+    "repair_task_id": "IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726",
+    "schema_version": "r5a/v1.2-consolidated-contract-repair",
     "supreme_charter": "LifeCommunityValueCharter",
     "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
   },
   "properties": {
     "concept_id": {
       "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "current_interpretation": {
       "type": "string"
     },
     "current_state": {
@@ -59,8 +66,38 @@
         "UNKNOWN"
       ]
     },
+    "superseded_interpretations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "interpretation": {
+            "minLength": 1,
+            "pattern": ".*\\S.*",
+            "type": "string"
+          },
+          "superseded_by_evidence_id": {
+            "minLength": 1,
+            "pattern": ".*\\S.*",
+            "type": "string"
+          },
+          "transition": {
+            "minLength": 1,
+            "pattern": ".*\\S.*",
+            "type": "string"
+          }
+        },
+        "required": [
+          "interpretation",
+          "superseded_by_evidence_id",
+          "transition"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
     "transitions": {
       "items": {
+        "additionalProperties": false,
         "properties": {
           "contradiction_handling": {
             "type": "string"
@@ -135,7 +172,9 @@
   },
   "required": [
     "concept_id",
-    "source_state"
+    "source_state",
+    "current_state",
+    "transitions"
   ],
   "schema": "r5a/concept-mapping-transition/v1",
   "title": "ConceptMapping",
