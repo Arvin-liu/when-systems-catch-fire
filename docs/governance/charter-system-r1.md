@@ -1,20 +1,20 @@
-# Charter System R1 — Architecture Candidate (Draft / 非 Main / 非 Current)
+# Charter System R1 — Architecture (Accepted / Current, on main, non-Activated)
 
-Status: DRAFT CANDIDATE. Not merged to `main`; not Current. Submitted as a formal-repo Draft PR; does not modify any existing charter or governance document.
+Status: CURRENT (Accepted, non-Activated). Merged to `main` (merge commit `0e7c032`, 2026-07-26) and promoted to Accepted/Current via independent exact-head acceptance + post-merge synchronization. Does not modify any existing charter or governance document's normative content (G2).
 
-> Provenance: promoted from 1111 Draft PR #53 (relay head `8f802a45285905ce3b350955dd95b3367b650e59`). This formal-repo Draft PR places the same candidate into the formal repository file tree as a Draft (non-Main, non-Current). It has not been merged to `main` and is not the Current charter system. Final acceptance / promotion remains the account owner's independent action.
+> Provenance: promoted from 1111 Draft PR #53 (relay head `8f802a45285905ce3b350955dd95b3367b650e59`) → formal-repo Draft PR #137 (head `669c9f8c`, merged to `main` as `0e7c032` on 2026-07-26) → promoted to Accepted/Current via independent exact-head acceptance of merge commit `0e7c032` and post-merge synchronization (1111 Draft PR #55 → #56 method, 2026-07-26). It is now on `main` and is the Current charter system, but remains non-Activated (no capability/runtime/executor activated). Promotion executed at account owner's explicit direction; WorkBuddy acted only as `execution_agent`.
 
 ## 执行决定
 
-**CHARTER_SYSTEM_R1_CANDIDATE** — 建立"宪章系统 R1"：作为**元治理层**，规定单个宪章（含《生命共同体价值宪章》）如何被提议、版本化、批准、与决策绑定、并跨 Fork 继承责任。本文件即该候选本身，状态为 **Draft / 非 Main / 非 Current**，未授予任何权威。
+**CHARTER_SYSTEM_R1_CANDIDATE** — 建立"宪章系统 R1"：作为**元治理层**，规定单个宪章（含《生命共同体价值宪章》）如何被提议、版本化、批准、与决策绑定、并跨 Fork 继承责任。本文件即该系统本身，状态为 **Accepted / Current（已在 main，非 Activated）**，作为元治理层授予其规范权威，但未激活任何能力/运行时/执行器。
 
-> 边界说明：本候选以 Draft PR 形式存在于正式仓库文件树中，但**未合并入 `main`**、**非 Current**。它不修改任何既有宪章或治理文档；其若被所有者接受并经受控同步提升为 Current，那是为所有者保留的独立后续动作。本文件严格保持 Draft、非 Main、非 Current。
+> 边界说明：本文件已合并入 `main`（merge commit `0e7c032`, 2026-07-26）并经独立 exact-head 验收提升为 Accepted/Current；它不修改任何既有宪章的规范正文（G2），且保持 non-Activated——未激活任何能力/运行时/执行器。提升为 Current 由账号所有者（人类 `responsible_actor`）显式授权执行（G5），WorkBuddy 仅作 `execution_agent`。
 
 ## 0. 范围与非目标
 
 - **在范围内**：治理"宪章"这一对象的**系统**（生命周期、版本、修订、绑定、继承）。
 - **不在范围内**：任何具体宪章的**内容**（如价值宪章的原则正文）。系统可治理价值宪章的*生命周期*，但**不改写其正文**。
-- R1 是 Draft Candidate。在经独立 exact-head acceptance 并由所有者提升为 Current 之前，它不运作、不约束、不自称有效。
+- R1 已通过独立 exact-head acceptance（PR #137 head `669c9f8c`；merge commit `0e7c032`）并由所有者提升为 Current（non-Activated）。作为 Current 宪章系统，它现在运作、约束，但仅限其元治理范围（生命周期/版本/修订/绑定/继承），且不激活任何能力。
 - **执行者边界**：WorkBuddy 仅以 `execution_agent` 起草本候选；它不持有任何宪章权威，不以 `responsible_actor` / `publisher_actor` 自居（沿用 stage-snapshot 与迭代操作法的同一边界）。
 
 ---
@@ -54,7 +54,7 @@ Status: DRAFT CANDIDATE. Not merged to `main`; not Current. Submitted as a forma
 | `CLOSED` | 收口完成 | 同 Current 收口 |
 | `HISTORICAL` | 被新版本取代 | 新版本进入 CURRENT 后旧版本转 HISTORICAL |
 
-- **宪章系统 R1 当前状态**：`DRAFT` / `CANDIDATE`（本文件即候选）。它**不是** `CURRENT`，**不在** `main`。
+- **宪章系统 R1 当前状态**：`ACCEPTED` / `CURRENT`（non-Activated）。已合并入 `main`（merge commit `0e7c032`, 2026-07-26），经独立 exact-head 验收提升为 Current；不占据"激活"态。
 - **发布 / 可见性轴**（如需将宪章摘要公开而不提升其生命周期）：`UNPUBLISHED → PR_VISIBLE → PUBLISHED_SNAPSHOT → SUPERSEDED/WITHDRAWN/HISTORICAL_SNAPSHOT`。该轴与生命周期轴**正交**；`PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED`，与迭代操作法 1.4.0 的快照契约同构。
 - `CURRENT` 的宪章可被子宪章 / 决策引用；`HISTORICAL` 宪章仅用于历史溯源，不作为当前约束。
 
@@ -74,7 +74,7 @@ Status: DRAFT CANDIDATE. Not merged to `main`; not Current. Submitted as a forma
 
 约束：
 
-- 宪章系统 R1 在未被接受前**不占据**第 2 层权威；它只是候选提案。
+- 宪章系统 R1 已被接受并经受控同步提升为 Current，现占据第 2 层权威（元治理层）；其权威从属于价值宪章底线（第 1 层），且不得用于自我提升（第 2 层成为 Current 经历与所治理对象同一流程，G5）。
 - 执行者（WorkBuddy 等）不出现在规范栈的任何权威位置；它们只执行、不批准。
 - 第 2 层不得用于自我提升：宪章系统不能借自身条款把自己声明为 Current；它成为 Current 只能经独立 exact-head acceptance + 合并 + 收口（与它所治理的对象经历同一流程）。
 
@@ -140,10 +140,10 @@ Status: DRAFT CANDIDATE. Not merged to `main`; not Current. Submitted as a forma
 
 ## 8. 本 R1 候选自身的验收门禁
 
-宪章系统 R1 须经历与它所治理对象相同的生命周期：Draft → Candidate →（独立 exact-head acceptance）→ Merged → Current/Closed。在所有者完成该流程前，本文件仅为候选提案，**不运作、不约束、不自称有效**。WorkBuddy 起草完成后停止，等待独立人工验收。
+宪章系统 R1 已完整经历与它所治理对象相同的生命周期：Draft → Candidate →（独立 exact-head acceptance of `669c9f8c`）→ Merged (`0e7c032`) → Current (non-Activated, 2026-07-26)。本文件现在为 Current 宪章系统，运作并约束于其元治理范围；保持 non-Activated。WorkBuddy 执行此提升后停止，等待所有者对后续激活（若需）的独立裁定。
 
 ---
 
 ## 附：机器可读记录（见 charter-system-r1.schema.json）
 
-`charter-system-r1.schema.json` 提供宪章记录 / 修订记录 / Fork 谱系记录的 schema 草图与不变式，供未来受控同步升入 formal `docs/governance/` 时直接使用。
+`charter-system-r1.schema.json` 提供宪章记录 / 修订记录 / Fork 谱系记录的 schema 草图与不变式；本文件现已随宪章一并位于 formal `docs/governance/`，其不变式（`current -> accepted`、`candidate -> not current`、`PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED`）已满足。
