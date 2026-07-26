@@ -36,6 +36,12 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 **状态边界：** Accepted=`false` · Current=`false` · Activated=`false` · 正式能力影响=`false`
 
+**最终责任主体：** `ORGANIZATION` Arvin-liu/when-systems-catch-fire project governance（Stage snapshot publication accountability；[责任依据](https://github.com/Arvin-liu/when-systems-catch-fire/pull/134)；[负责人／治理入口](https://github.com/Arvin-liu/when-systems-catch-fire/issues)）
+
+**发布责任主体：** `ORGANIZATION` Arvin-liu/when-systems-catch-fire project governance（Stage snapshot candidate publisher）
+
+**技术执行记录（非最终责任）：** Agent／模型：Codex agents；自动化／工作流：GitHub Actions
+
 **最近成果：** 11-case 窄修复已验收并进入来源分支；PR #130 整体仍为 Draft，非 Main／Current／Activated。
 
 **仍有阻断：** PR #130 仍为 OPEN / DRAFT；来源分支当前头 019f52cc296b7417cc91ea97077fbf85d19ad7fc 仍需整体 exact-head 验收；本快照只公开可审计摘要和证据入口，不发布或激活候选载荷

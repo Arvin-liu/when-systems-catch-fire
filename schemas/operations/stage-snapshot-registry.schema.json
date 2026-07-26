@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["schema_version", "method_candidate", "authority", "registry_state", "projection_limit", "axis_invariants", "snapshots"],
   "properties": {
-    "schema_version": {"const": "1.0.0"},
+    "schema_version": {"const": "1.1.0"},
     "method_candidate": {"const": "Ignition Iteration Method 1.4.0 Candidate — Continuous Stage Snapshot Publication"},
     "authority": {"const": "data/operations/stage-snapshots.json"},
     "registry_state": {
@@ -47,6 +47,65 @@
     "snapshotId": {"type": "string", "pattern": "^STAGE-[A-Z0-9][A-Z0-9._-]{5,127}$"},
     "stringList": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}},
     "idList": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/snapshotId"}},
+    "accountableName": {
+      "allOf": [
+        {"$ref": "#/$defs/nonblank"},
+        {
+          "not": {
+            "enum": [
+              "ignition founder", "upstream project",
+              "Codex Agent", "automated publication workflow", "GPT-5 Agent", "AI maintainer",
+              "release bot", "CI pipeline", "GitHub Actions", "the algorithm", "the system",
+              "automation team", "由自动流程负责", "无人负责，由系统自动完成", "人工智能维护者"
+            ]
+          }
+        }
+      ]
+    },
+    "accountableActor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "name", "stable_id", "role", "accountability_reference", "human_or_governance_contact"],
+      "properties": {
+        "type": {"enum": ["PERSON", "ORGANIZATION"]},
+        "name": {"$ref": "#/$defs/accountableName"},
+        "stable_id": {"type": "string", "pattern": "^(person|org):[a-z0-9][a-z0-9._/-]{2,127}$"},
+        "role": {"$ref": "#/$defs/nonblank"},
+        "accountability_reference": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "human_or_governance_contact": {"type": "string", "format": "uri", "pattern": "^https://"}
+      },
+      "allOf": [
+        {"if": {"properties": {"type": {"const": "PERSON"}}}, "then": {"properties": {"stable_id": {"pattern": "^person:"}}}},
+        {"if": {"properties": {"type": {"const": "ORGANIZATION"}}}, "then": {"properties": {"stable_id": {"pattern": "^org:"}}}}
+      ]
+    },
+    "technicalActor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "role", "evidence_reference"],
+      "properties": {
+        "name": {"$ref": "#/$defs/nonblank"},
+        "role": {"$ref": "#/$defs/nonblank"},
+        "evidence_reference": {"type": "string", "format": "uri", "pattern": "^https://"}
+      }
+    },
+    "responsibilityRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_id", "effective_at", "supersedes_record_id", "change_reason", "actor_change_requires_new_snapshot_revision"],
+      "properties": {
+        "record_id": {"type": "string", "pattern": "^RESP-[A-Z0-9][A-Z0-9._-]{5,127}$"},
+        "effective_at": {"type": "string", "format": "date-time"},
+        "supersedes_record_id": {
+          "oneOf": [
+            {"type": "null"},
+            {"type": "string", "pattern": "^RESP-[A-Z0-9][A-Z0-9._-]{5,127}$"}
+          ]
+        },
+        "change_reason": {"$ref": "#/$defs/nonblank"},
+        "actor_change_requires_new_snapshot_revision": {"const": true}
+      }
+    },
     "snapshot": {
       "type": "object",
       "additionalProperties": false,
@@ -65,11 +124,13 @@
         "produced_at": {"type": "string", "format": "date-time"},
         "responsibility": {
           "type": "object", "additionalProperties": false,
-          "required": ["executor", "publisher", "responsible_organization", "founder_responsibility_inferred", "upstream_responsibility_inferred"],
+          "required": ["responsible_actor", "publisher_actor", "execution_agents", "automation_workflows", "responsibility_record", "founder_responsibility_inferred", "upstream_responsibility_inferred"],
           "properties": {
-            "executor": {"$ref": "#/$defs/nonblank"},
-            "publisher": {"$ref": "#/$defs/nonblank"},
-            "responsible_organization": {"$ref": "#/$defs/nonblank"},
+            "responsible_actor": {"$ref": "#/$defs/accountableActor"},
+            "publisher_actor": {"$ref": "#/$defs/accountableActor"},
+            "execution_agents": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/technicalActor"}},
+            "automation_workflows": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/technicalActor"}},
+            "responsibility_record": {"$ref": "#/$defs/responsibilityRecord"},
             "founder_responsibility_inferred": {"const": false},
             "upstream_responsibility_inferred": {"const": false}
           }

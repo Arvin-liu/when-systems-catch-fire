@@ -512,7 +512,9 @@
         "tools/operations/stage_snapshot_contract.py",
         "tools/operations/validate_stage_snapshots.py",
         "tools/operations/generate_stage_snapshot_projection.py",
+        "tools/operations/run_stage_snapshot_responsibility_cases.py",
         "tests/test_stage_snapshot_publication.py",
+        "tests/stage_snapshot_responsibility_actor_cases.json",
         "docs/generated/recent-stage-results.md"
       ]
     },

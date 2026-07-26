@@ -19,6 +19,8 @@ from tools.operations.stage_snapshot_contract import (
     validate_request,
 )
 
+ACTOR_CASES = Path(__file__).parent / "stage_snapshot_responsibility_actor_cases.json"
+
 
 class StageSnapshotPublicationTests(unittest.TestCase):
     @classmethod
@@ -26,6 +28,7 @@ class StageSnapshotPublicationTests(unittest.TestCase):
         cls.base = load(REGISTRY)
         cls.schema = load(SCHEMA)
         cls.request_schema = load(REQUEST_SCHEMA)
+        cls.actor_cases = load(ACTOR_CASES)
 
     def registry(self):
         return copy.deepcopy(self.base)
@@ -53,6 +56,25 @@ class StageSnapshotPublicationTests(unittest.TestCase):
         with self.assertRaisesRegex((ContractError, AssertionError), pattern):
             validate_registry(registry, self.remote_facts(registry) if remote else None)
 
+    def request(self):
+        person = copy.deepcopy(self.actor_cases["positive_cases"][0]["actor"])
+        organization = copy.deepcopy(self.actor_cases["positive_cases"][1]["actor"])
+        return {
+            "request_version": "1.1.0", "task_id": "TASK", "result_object": "artifact",
+            "source_head": "1" * 40, "evidence_entries": ["https://github.com/a/b/pull/1"],
+            "lifecycle_state": "CANDIDATE", "claim_ceiling": "artifact only",
+            "homepage_summary": "candidate result", "limitations_and_incomplete": ["review pending"],
+            "responsibility": {
+                "responsible_actor": person,
+                "proposed_publisher_actor": organization,
+                "execution_agents": [{"name": "Codex Agent", "role": "evidence collection tool", "evidence_reference": "https://github.com/a/b/pull/1"}],
+                "automation_workflows": [{"name": "GitHub Actions", "role": "validation automation", "evidence_reference": "https://github.com/a/b/actions"}],
+                "founder_responsibility_inferred": False,
+                "upstream_responsibility_inferred": False,
+            },
+            "recommendation": "PUBLISH", "agent_claims_published_to_main": False,
+        }
+
     def test_registry_and_standard_schema_positive_instance(self):
         errors = list(Draft202012Validator(self.schema, format_checker=FormatChecker()).iter_errors(self.base))
         self.assertEqual(errors, [])
@@ -64,18 +86,81 @@ class StageSnapshotPublicationTests(unittest.TestCase):
         self.assertRejected(registry, "schema failure")
 
     def test_request_schema_positive_and_negative_instances(self):
-        request = {
-            "request_version": "1.0.0", "task_id": "TASK", "result_object": "artifact",
-            "source_head": "1" * 40, "evidence_entries": ["https://github.com/a/b/pull/1"],
-            "lifecycle_state": "CANDIDATE", "claim_ceiling": "artifact only",
-            "homepage_summary": "candidate result", "limitations_and_incomplete": ["review pending"],
-            "responsibility": {"executor": "agent", "proposed_publisher": "project", "responsible_organization": "project", "founder_responsibility_inferred": False, "upstream_responsibility_inferred": False},
-            "recommendation": "PUBLISH", "agent_claims_published_to_main": False,
-        }
+        request = self.request()
         validate_request(request)
         request["agent_claims_published_to_main"] = True
         with self.assertRaisesRegex(ContractError, "request schema failure"):
             validate_request(request)
+
+    def test_a15a_through_a15d_standard_schema_and_runtime_negative_instances(self):
+        for case in (item for item in self.actor_cases["attack_cases"] if item["id"] in {"A15a", "A15b", "A15c", "A15d"}):
+            for field in ("responsible_actor", "publisher_actor"):
+                with self.subTest(case_id=case["id"], surface="registry", field=field):
+                    registry = self.registry()
+                    self.item(registry)["responsibility"][field]["name"] = case["name"]
+                    errors = list(Draft202012Validator(self.schema, format_checker=FormatChecker()).iter_errors(registry))
+                    self.assertTrue(errors, f"{case['id']} must fail the standard registry schema")
+                    self.assertRejected(registry, "schema failure|non-accountable")
+            for field in ("responsible_actor", "proposed_publisher_actor"):
+                with self.subTest(case_id=case["id"], surface="request", field=field):
+                    request = self.request()
+                    request["responsibility"][field]["name"] = case["name"]
+                    errors = list(Draft202012Validator(self.request_schema, format_checker=FormatChecker()).iter_errors(request))
+                    self.assertTrue(errors, f"{case['id']} must fail the standard request schema")
+                    with self.assertRaisesRegex(ContractError, "schema failure|non-accountable"):
+                        validate_request(request)
+
+    def test_stable_actor_attack_set_rejected_in_every_accountable_field(self):
+        for case in self.actor_cases["attack_cases"]:
+            for field in ("responsible_actor", "publisher_actor"):
+                with self.subTest(case_id=case["id"], field=field):
+                    registry = self.registry()
+                    self.item(registry)["responsibility"][field]["name"] = case["name"]
+                    self.assertRejected(registry, "schema failure|non-accountable|generic or placeholder")
+
+    def test_positive_person_and_organization_are_each_accepted(self):
+        for case in self.actor_cases["positive_cases"]:
+            with self.subTest(case_id=case["id"]):
+                registry = self.registry()
+                self.item(registry)["responsibility"]["responsible_actor"] = copy.deepcopy(case["actor"])
+                self.assertEqual(validate_registry(registry)["status"], "PASS")
+
+    def test_execution_agent_and_workflow_are_recorded_without_substituting_accountability(self):
+        registry = self.registry()
+        responsibility = self.item(registry)["responsibility"]
+        self.assertEqual(responsibility["execution_agents"][0]["name"], "Codex agents")
+        self.assertEqual(responsibility["automation_workflows"][0]["name"], "GitHub Actions")
+        self.assertEqual(validate_registry(registry)["status"], "PASS")
+        projection = render_projection(registry)
+        final_actor_line = next(line for line in projection.splitlines() if line.startswith("**最终责任主体：**"))
+        self.assertNotIn("Codex", final_actor_line)
+        self.assertNotIn("GitHub Actions", final_actor_line)
+        self.assertIn("技术执行记录（非最终责任）", projection)
+
+    def test_actor_absence_placeholders_and_legacy_free_text_are_rejected(self):
+        registry = self.registry()
+        del self.item(registry)["responsibility"]["responsible_actor"]
+        self.assertRejected(registry, "schema failure")
+        registry = self.registry()
+        self.item(registry)["responsibility"]["responsible_actor"]["name"] = "maintainer"
+        self.assertRejected(registry, "generic or placeholder")
+        registry = self.registry()
+        self.item(registry)["responsibility"]["responsible_organization"] = "Codex Agent"
+        self.assertRejected(registry, "schema failure")
+
+    def test_actor_schema_mutations_fail_closed(self):
+        mutations = (
+            ("missing stable ID", lambda actor: actor.pop("stable_id")),
+            ("wrong type prefix", lambda actor: actor.__setitem__("stable_id", "person:wrong-kind")),
+            ("missing role", lambda actor: actor.__setitem__("role", "")),
+            ("missing accountability reference", lambda actor: actor.__setitem__("accountability_reference", "")),
+            ("missing governance contact", lambda actor: actor.__setitem__("human_or_governance_contact", "unknown")),
+        )
+        for name, mutate in mutations:
+            with self.subTest(mutation=name):
+                registry = self.registry()
+                mutate(self.item(registry)["responsibility"]["responsible_actor"])
+                self.assertRejected(registry, "schema failure|stable ID|traceable")
 
     def test_published_snapshot_is_orthogonal_to_accepted_current_activated(self):
         registry = self.registry()
@@ -192,10 +277,12 @@ class StageSnapshotPublicationTests(unittest.TestCase):
         original["source"]["snapshot_record_merged_to_main"] = True
         original["relationships"]["successors"] = ["STAGE-DEMO-REVISION-002"]
         original["relationships"]["superseded_by"] = ["STAGE-DEMO-REVISION-002"]
+        original["responsibility"]["responsibility_record"]["record_id"] = "RESP-DEMO-REVISION-001"
         successor = copy.deepcopy(original)
         successor["snapshot_id"] = "STAGE-DEMO-REVISION-002"
         successor["publication_status"] = "PUBLISHED_SNAPSHOT"
         successor["relationships"] = {"predecessors": [original["snapshot_id"]], "successors": ["STAGE-DEMO-WITHDRAWN-003"], "supersedes": [original["snapshot_id"]], "superseded_by": []}
+        successor["responsibility"]["responsibility_record"]["record_id"] = "RESP-DEMO-REVISION-002"
         withdrawn = copy.deepcopy(successor)
         withdrawn["snapshot_id"] = "STAGE-DEMO-WITHDRAWN-003"
         withdrawn["publication_status"] = "WITHDRAWN_SNAPSHOT"
@@ -203,8 +290,26 @@ class StageSnapshotPublicationTests(unittest.TestCase):
         withdrawn["outcome"] = "WITHDRAWN"
         withdrawn["homepage"]["summary"] = "撤回：演示阶段快照可失败关闭。"
         withdrawn["relationships"] = {"predecessors": [successor["snapshot_id"]], "successors": [], "supersedes": [], "superseded_by": []}
+        withdrawn["responsibility"]["responsibility_record"]["record_id"] = "RESP-DEMO-WITHDRAWN-003"
         registry["snapshots"] = [original, successor, withdrawn]
         self.assertEqual(validate_registry(registry)["snapshot_count"], 3)
+
+    def test_accountable_actor_change_requires_new_snapshot_revision_and_record(self):
+        registry = self.registry()
+        original = self.item(registry)
+        original["snapshot_id"] = "STAGE-ACTOR-REVISION-001"
+        original["relationships"]["successors"] = ["STAGE-ACTOR-REVISION-002"]
+        successor = copy.deepcopy(original)
+        successor["snapshot_id"] = "STAGE-ACTOR-REVISION-002"
+        successor["relationships"] = {"predecessors": [original["snapshot_id"]], "successors": [], "supersedes": [], "superseded_by": []}
+        successor["responsibility"]["responsible_actor"] = copy.deepcopy(self.actor_cases["positive_cases"][0]["actor"])
+        successor["responsibility"]["responsibility_record"]["record_id"] = "RESP-ACTOR-REVISION-002"
+        successor["responsibility"]["responsibility_record"]["supersedes_record_id"] = None
+        registry["snapshots"] = [original, successor]
+        self.assertRejected(registry, "changed without a new superseding responsibility record")
+        successor["responsibility"]["responsibility_record"]["supersedes_record_id"] = original["responsibility"]["responsibility_record"]["record_id"]
+        successor["responsibility"]["responsibility_record"]["change_reason"] = "Accountable actor changed in a new snapshot revision."
+        self.assertEqual(validate_registry(registry)["snapshot_count"], 2)
 
 
 if __name__ == "__main__":

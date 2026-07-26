@@ -4,6 +4,8 @@ Status: `Ignition Iteration Method 1.4.0 Candidate — Continuous Stage Snapshot
 
 本制度是对 Current 方法 `1.3.0` 的候选增量。它尚未 Accepted、Current 或 Activated，不得利用自身规则快速合并；本候选必须继续经过独立 exact-head 验收、普通合并和 post-merge 同步。
 
+责任主体窄修复状态：PR #134 的精确头 `5a856c031616ec0a959150baebb7edced34f22bc` 因 A15c/A15d 可把 Agent 或自动发布流程伪装成负责组织而被拒绝。当前修复只加固责任字段、validator、实例门与直接投影；PR #134 仍为 Draft，方法 1.4.0 仍为 Candidate。
+
 ## 1. 两条正交状态轴
 
 能力生命周期保持不变：
@@ -42,7 +44,7 @@ README 或 Pages 不能成为第二份人工状态源。`--check` 重新渲染�
 - 显式记录生命周期状态、发布状态、结果类型、完成项、未完成项、claim ceiling、限制和阻断；
 - 显式记录 Accepted、Current、Activated、正式能力影响与实际应用许可五个布尔状态；
 - 只含可公开摘要，不含隐私、密钥、受限原始材料或本机路径；
-- 记录执行者、发布者和负责组织，禁止把责任自动推给创始人或上游项目；
+- 以 `PERSON` 或 `ORGANIZATION` 正向合同记录最终责任主体与发布主体，另外记录执行 Agent 和自动化工作流，禁止把技术执行者伪装成最终责任，也禁止把责任自动推给创始人或上游项目；
 - 保留前驱、后继、替代、撤回、修订与回滚路径；
 - 保证主页文字由 registry 确定性生成；
 - 保证失败实例逐案阻断，不能用测试总数或绿色 CI 掩盖。
@@ -54,6 +56,19 @@ python3 tools/operations/validate_stage_snapshots.py --check --verify-remotes
 ```
 
 CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收者还必须在线重新获取 PR 身份、HEAD 与 Actions，不能只采信记录时间的 attestation。
+
+### 3.1 责任主体正向合同
+
+`responsible_actor` 与 `publisher_actor`（请求接口中为 `proposed_publisher_actor`）只能是：
+
+- `PERSON`：具体、可识别的人类责任主体，必须给出姓名、`person:` 稳定 ID、明确角色、责任依据和可追溯联系人入口；
+- `ORGANIZATION`：现实中可识别且能承担治理或发布责任的组织，必须给出组织名、`org:` 稳定 ID、明确角色、责任依据和负责人／治理入口。
+
+自由文本旧字段 `responsible_person`、`responsible_organization`、`executor` 与 `publisher` 不再属于开放接口，因 `additionalProperties=false` 而失败关闭。`execution_agents` 与 `automation_workflows` 只记录技术执行和因果链节点：Agent、模型、机器人、算法、工作流、CI、脚本、软件、平台或系统可以出现在这里，但不得出现在两个最终责任字段中。大小写、空格、连字符、下划线、复数与常见缩写先归一化再检查；占位符、未知值和“维护者／管理员／有关人员”等泛称也不能取得责任资格。
+
+每条 registry 记录还必须有独立 `responsibility_record`。责任主体变化时，必须建立新的 snapshot revision，以新的责任记录 ID 显式指向前驱责任记录；validator 拒绝静默覆盖。该合同是有限的仓库发布问责门，不是完整因果与责任宪章，也不作法律责任判断。
+
+稳定逐案门由 `tests/stage_snapshot_responsibility_actor_cases.json` 定义，`tools/operations/run_stage_snapshot_responsibility_cases.py` 输出每个 ID 的 schema/runtime 结果。A15c、A15d 和每个同族变体必须逐案为 REJECT；明确责任个人与具体责任组织必须逐案为 ACCEPT。测试总数或绿色 CI 不能代替这些记录。
 
 ## 4. 显示语义
 
@@ -76,7 +91,7 @@ CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收�
 
 ## 6. Agent 任务结束接口
 
-形成真实阶段成果的 Agent 可以在最终回执中附 `stage snapshot request`。接口 schema 是 `schemas/operations/stage-snapshot-request.schema.json`，模板是 `templates/operations/stage-snapshot-request-template.json`。请求包含成果对象、来源 HEAD、证据入口、状态、claim ceiling、主页摘要、限制、未完成项、责任主体与 `PUBLISH / REVISE / WITHDRAW / DO_NOT_PUBLISH` 建议。
+形成真实阶段成果的 Agent 可以在最终回执中附 `stage snapshot request`。接口 schema 是 `schemas/operations/stage-snapshot-request.schema.json`，模板是 `templates/operations/stage-snapshot-request-template.json`。请求包含成果对象、来源 HEAD、证据入口、状态、claim ceiling、主页摘要、限制、未完成项、结构化责任／发布主体、非责任性的执行 Agent／自动化记录，以及 `PUBLISH / REVISE / WITHDRAW / DO_NOT_PUBLISH` 建议。
 
 `agent_claims_published_to_main` 永远必须为 false。Agent 提交请求不等于发布；只有独立轻量同步任务核验远端真值、公开边界和生成结果后，才能提出把快照记录合并进 Main。
 

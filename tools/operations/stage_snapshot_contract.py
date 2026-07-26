@@ -7,6 +7,7 @@ import argparse
 import json
 import re
 import subprocess
+import unicodedata
 from pathlib import Path
 from typing import Any
 
@@ -41,6 +42,24 @@ SECRET_PATTERNS = (
     re.compile(r"(?i)authorization\s*:\s*(?:bearer|basic)\s+\S+"),
     re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
 )
+NON_ACCOUNTABLE_TOKENS = {
+    "ai", "agent", "agents", "algorithm", "algorithms", "automated", "automation",
+    "bot", "bots", "ci", "codex", "model", "models", "pipeline", "pipelines",
+    "platform", "platforms", "robot", "robots", "script", "scripts", "software",
+    "workflow", "workflows",
+}
+NON_ACCOUNTABLE_PHRASES = {
+    "github actions", "ignition founder", "the founder", "upstream project", "upstream organization",
+    "the algorithm", "the system", "the systems", "a i", "c i",
+    "人工智能", "智能体", "模型", "机器人", "算法", "工作流", "自动流程", "自动化流程",
+    "持续集成", "脚本", "软件", "平台", "系统自动", "由系统", "无人负责",
+}
+PLACEHOLDER_NAMES = {
+    "admin", "administrator", "anyone", "company", "governance", "human", "maintainer",
+    "maintainers", "founder", "n a", "na", "nobody", "no one", "none", "null", "organization",
+    "organisation", "owner", "project", "relevant people", "relevant personnel", "someone",
+    "staff", "team", "tbd", "unknown", "unassigned",
+}
 
 
 class ContractError(AssertionError):
@@ -77,6 +96,42 @@ def _remote_key(repository: str, pr: int) -> str:
     return f"{repository}#{pr}"
 
 
+def _normalized_actor_text(value: str) -> str:
+    value = unicodedata.normalize("NFKC", value).casefold()
+    value = re.sub(r"[_\-/]+", " ", value)
+    value = re.sub(r"[^a-z0-9\u3400-\u9fff]+", " ", value)
+    return " ".join(value.split())
+
+
+def _actor_identity(actor: dict[str, Any]) -> tuple[str, str, str]:
+    return actor["type"], actor["stable_id"], _normalized_actor_text(actor["name"])
+
+
+def _validate_accountable_actor(actor: dict[str, Any], context: str) -> None:
+    """Validate positive actor identity/evidence, then fail closed on synthetic stand-ins."""
+    actor_type = actor["type"]
+    normalized_name = _normalized_actor_text(actor["name"])
+    normalized_role = _normalized_actor_text(actor["role"])
+    tokens = set(normalized_name.split())
+    has_gpt_alias = any(token == "gpt" or re.fullmatch(r"gpt\d+", token) for token in tokens)
+    is_synthetic = bool(tokens & NON_ACCOUNTABLE_TOKENS) or has_gpt_alias or any(
+        phrase in normalized_name for phrase in NON_ACCOUNTABLE_PHRASES
+    )
+    require(not is_synthetic, f"{context}: non-accountable automated actor cannot be final responsibility")
+    require(normalized_name not in PLACEHOLDER_NAMES, f"{context}: accountable actor name is generic or placeholder")
+    require(normalized_role not in {"", "unknown", "tbd", "n a", "none"}, f"{context}: accountable actor role is missing or placeholder")
+    expected_prefix = "person:" if actor_type == "PERSON" else "org:"
+    require(actor["stable_id"].startswith(expected_prefix), f"{context}: stable ID does not match actor type")
+    require(actor["accountability_reference"].startswith("https://"), f"{context}: accountability reference is not traceable")
+    require(actor["human_or_governance_contact"].startswith("https://"), f"{context}: human/governance contact is not traceable")
+
+
+def _validate_responsibility(responsibility: dict[str, Any], context: str, *, request: bool = False) -> None:
+    _validate_accountable_actor(responsibility["responsible_actor"], f"{context} responsible_actor")
+    publisher_key = "proposed_publisher_actor" if request else "publisher_actor"
+    _validate_accountable_actor(responsibility[publisher_key], f"{context} {publisher_key}")
+
+
 def fetch_remote_fact(repository: str, pr: int) -> dict[str, Any]:
     result = subprocess.run(
         ["gh", "api", f"repos/{repository}/pulls/{pr}"],
@@ -108,6 +163,7 @@ def fetch_remote_facts(registry: dict[str, Any]) -> dict[str, dict[str, Any]]:
 def validate_request(request: dict[str, Any]) -> None:
     errors = schema_errors(request, load(REQUEST_SCHEMA))
     require(not errors, "stage snapshot request schema failure: " + errors[0] if errors else "")
+    _validate_responsibility(request["responsibility"], "stage snapshot request", request=True)
 
 
 def validate_registry(registry: dict[str, Any], remote_facts: dict[str, dict[str, Any]] | None = None) -> dict[str, Any]:
@@ -123,12 +179,18 @@ def validate_registry(registry: dict[str, Any], remote_facts: dict[str, dict[str
     ids = [item["snapshot_id"] for item in snapshots]
     require(len(ids) == len(set(ids)), "duplicate snapshot ID")
     by_id = {item["snapshot_id"]: item for item in snapshots}
+    responsibility_record_ids = [item["responsibility"]["responsibility_record"]["record_id"] for item in snapshots]
+    require(len(responsibility_record_ids) == len(set(responsibility_record_ids)), "duplicate responsibility record ID")
 
     for item in snapshots:
         sid = item["snapshot_id"]
         source = item["source"]
         evidence = item["evidence"]
         att = item["remote_attestation"]
+        responsibility = item["responsibility"]
+        responsibility_record = responsibility["responsibility_record"]
+
+        _validate_responsibility(responsibility, sid)
 
         require(source["pull_request_url"] == f"https://github.com/{source['repository']}/pull/{source['pull_request']}", f"{sid}: source PR URL/repository mismatch")
         require(evidence["relay_pull_request_url"] == f"https://github.com/{evidence['relay_repository']}/pull/{evidence['relay_pull_request']}", f"{sid}: relay PR URL/repository mismatch")
@@ -184,6 +246,23 @@ def validate_registry(registry: dict[str, Any], remote_facts: dict[str, dict[str
         for target in item["relationships"]["supersedes"]:
             require(sid in by_id[target]["relationships"]["superseded_by"], f"{sid}: supersedes relation is not reciprocal")
 
+        predecessor_records = {
+            by_id[predecessor]["responsibility"]["responsibility_record"]["record_id"]
+            for predecessor in item["relationships"]["predecessors"]
+        }
+        if responsibility_record["supersedes_record_id"] is not None:
+            require(
+                responsibility_record["supersedes_record_id"] in predecessor_records,
+                f"{sid}: responsibility record does not supersede a declared predecessor",
+            )
+        for predecessor in item["relationships"]["predecessors"]:
+            predecessor_responsibility = by_id[predecessor]["responsibility"]
+            if _actor_identity(responsibility["responsible_actor"]) != _actor_identity(predecessor_responsibility["responsible_actor"]):
+                require(
+                    responsibility_record["supersedes_record_id"] == predecessor_responsibility["responsibility_record"]["record_id"],
+                    f"{sid}: accountable actor changed without a new superseding responsibility record",
+                )
+
         public_blob = "\n".join(_strings(item))
         require("/Users/" not in public_blob and "file://" not in public_blob, f"{sid}: local/private path leaked")
         for pattern in SECRET_PATTERNS:
@@ -224,6 +303,11 @@ def render_projection(registry: dict[str, Any]) -> str:
     ]
     for item in visible:
         source, evidence = item["source"], item["evidence"]
+        responsibility = item["responsibility"]
+        accountable = responsibility["responsible_actor"]
+        publisher = responsibility["publisher_actor"]
+        execution_agents = "、".join(actor["name"] for actor in responsibility["execution_agents"]) or "无"
+        workflows = "、".join(workflow["name"] for workflow in responsibility["automation_workflows"]) or "无"
         flags = f"Accepted=`{str(item['accepted']).lower()}` · Current=`{str(item['current']).lower()}` · Activated=`{str(item['activated']).lower()}` · 正式能力影响=`{str(item['affects_formal_capability']).lower()}`"
         blockers = "；".join(item["known_limitations_and_blockers"])
         lines.extend([
@@ -233,6 +317,12 @@ def render_projection(registry: dict[str, Any]) -> str:
             f"**版本：** [{source['repository']} PR #{source['pull_request']}]({source['pull_request_url']}) @ `{source['exact_head'][:12]}`；分支 `{source['branch']}`",
             "",
             f"**状态边界：** {flags}",
+            "",
+            f"**最终责任主体：** `{accountable['type']}` {accountable['name']}（{accountable['role']}；[责任依据]({accountable['accountability_reference']})；[负责人／治理入口]({accountable['human_or_governance_contact']})）",
+            "",
+            f"**发布责任主体：** `{publisher['type']}` {publisher['name']}（{publisher['role']}）",
+            "",
+            f"**技术执行记录（非最终责任）：** Agent／模型：{execution_agents}；自动化／工作流：{workflows}",
             "",
             f"**最近成果：** {item['homepage']['summary']}",
             "",

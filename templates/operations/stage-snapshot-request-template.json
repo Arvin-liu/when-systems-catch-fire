@@ -1,5 +1,5 @@
 {
-  "request_version": "1.0.0",
+  "request_version": "1.1.0",
   "task_id": "<TASK_ID>",
   "result_object": "<EXACT_RESULT_OBJECT>",
   "source_head": "0000000000000000000000000000000000000000",
@@ -9,9 +9,36 @@
   "homepage_summary": "<SHORT_PUBLIC_SUMMARY>",
   "limitations_and_incomplete": ["<LIMITATION_OR_UNFINISHED_ITEM>"],
   "responsibility": {
-    "executor": "<EXECUTOR>",
-    "proposed_publisher": "<PUBLISHER_OR_ORGANIZATION>",
-    "responsible_organization": "<RESPONSIBLE_ORGANIZATION>",
+    "responsible_actor": {
+      "type": "PERSON",
+      "name": "<CONCRETE_HUMAN_NAME>",
+      "stable_id": "person:<STABLE_PUBLIC_ID>",
+      "role": "<ACCOUNTABLE_ROLE>",
+      "accountability_reference": "https://github.com/<OWNER>/<REPOSITORY>/pull/<NUMBER>",
+      "human_or_governance_contact": "https://github.com/<ACCOUNTABLE_HANDLE>"
+    },
+    "proposed_publisher_actor": {
+      "type": "ORGANIZATION",
+      "name": "<CONCRETE_ACCOUNTABLE_ORGANIZATION>",
+      "stable_id": "org:<STABLE_PUBLIC_ID>",
+      "role": "<PUBLICATION_ROLE>",
+      "accountability_reference": "https://github.com/<OWNER>/<REPOSITORY>/pull/<NUMBER>",
+      "human_or_governance_contact": "https://github.com/<OWNER>/<REPOSITORY>/issues"
+    },
+    "execution_agents": [
+      {
+        "name": "<AGENT_OR_MODEL>",
+        "role": "<TECHNICAL_EXECUTION_ROLE_NOT_ACCOUNTABILITY>",
+        "evidence_reference": "https://github.com/<OWNER>/<REPOSITORY>/pull/<NUMBER>"
+      }
+    ],
+    "automation_workflows": [
+      {
+        "name": "<WORKFLOW_OR_CI>",
+        "role": "<AUTOMATION_ROLE_NOT_ACCOUNTABILITY>",
+        "evidence_reference": "https://github.com/<OWNER>/<REPOSITORY>/actions"
+      }
+    ],
     "founder_responsibility_inferred": false,
     "upstream_responsibility_inferred": false
   },

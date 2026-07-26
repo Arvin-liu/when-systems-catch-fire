@@ -26,6 +26,8 @@
 当前架构状态只能是 ARCHITECTURE_COMPLETE_PENDING_CONTENT_PROOFS；不得改写成全量数学证明完成。
 
 方法 1.4.0 是 Continuous Stage Snapshot Publication 的 Draft Candidate，不能自我应用为 Current。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activated，首页可见不等于能力可用。Agent 只能生成 stage snapshot request，不能自行声称已进入 Main。
+
+阶段快照的 `responsible_actor`／`publisher_actor` 只能是有稳定身份、责任依据和联系人入口的具体 `PERSON` 或 `ORGANIZATION`。Agent、模型、机器人、算法、workflow、CI、脚本、软件、平台与系统只能写入 `execution_agents`／`automation_workflows`，不得充当最终责任主体；责任变更必须新增快照修订和责任记录。
 121Q12 新增的效果推理与机制判断是跨层操作 overlay。它帮助选择下一步行动并限制发布解释，不改变 L0-L6 真值关系，不改写 Ψ0，不把 C(x,y) 升级为已识别因果。
 
 交接时如涉及行动选择或结果解释，必须读取：
