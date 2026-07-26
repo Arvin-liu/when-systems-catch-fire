@@ -1,7 +1,7 @@
 # 生命完整性未来激活边界 R5-A R1（Life Integrity Future Activation Boundary R1）
 
 > 候选。明确 R5-A 之后的迭代门槛与未授权范围。R5-A 自身不激活任何候选。
-> Night Queue R1 裁决：`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`。在 R5-A 窄修复被外部接受前，R5-B、R5-C、R6 均禁止启动。
+> Night Queue R1 裁决：`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`。完整候选精确头 `f33be64...` 的后续裁决为 `R5A_CONSOLIDATED_EXACT_HEAD_REJECTED_NARROW_REPAIR_REQUIRED`；在实例绑定窄修复和新的完整 exact-head 审查完成前，R5-B、R5-C、R6 均禁止启动。
 
 ## 1. 本轮显式未授权（硬禁止）
 
@@ -33,9 +33,11 @@
 
 ## 4. 终态
 
-`R5A_NARROW_REPAIR_ACCEPTED_AND_MERGED_INTO_SOURCE_BRANCH_NOT_MAIN`
+`R5A_CONSOLIDATED_EXACT_HEAD_REJECTED_NARROW_REPAIR_REQUIRED`
 
 Exact repair head `a2fd355f…` passed independent review and PR #131 was
 ordinarily merged as `062f223f…` into the still-Draft PR #130 source branch.
-This is not Main, activation, Current/Closed, or authorization for R5-B, R5-C,
-or R6.
+The consolidated source head `f33be64...` was then rejected after eleven new
+fail-closed bypass instances were reproduced. PR #130 was not moved to Ready
+or merged into its predecessor. This is not Main, activation, Current/Closed,
+or authorization for R5-B, R5-C, or R6.
