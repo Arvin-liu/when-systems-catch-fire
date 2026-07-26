@@ -41,16 +41,42 @@ BOUNDARY_PHRASES = (
     "已证明的科学理论",
 )
 VERSION_FACTS = {
-    "current_method": "1.3.0",
-    "historical_method": "1.2.0",
-    "earlier_historical_method": "1.1.0",
+    "current_method": "1.4.0",
+    "historical_method": "1.3.0",
+    "earlier_historical_method": "1.2.0",
     "current_map": "0.3.0",
     "historical_map": "0.2.0",
     "earlier_historical_map": "0.1.0",
 }
+CHARTER_R1_BOUNDARY = {
+    "name_zh": "宪章系统 R1",
+    "name_en": "Charter System R1",
+    "activated": "activated=false",
+    "publication": "UNPUBLISHED",
+}
 STAGE_REGISTRY = ROOT / "data/operations/stage-snapshots.json"
 STAGE_DOC = ROOT / "docs/operations/stage-snapshot-publication.md"
+NONIMPACT_PROOFS = ROOT / "data/operations/front-door-nonimpact-proofs.json"
 ROLLBACK_TYPO = "roll" + "bar"
+
+
+def load_nonimpact_proofs(path: Path = NONIMPACT_PROOFS) -> set[str]:
+    """Return the set of surface_ids exempted by a valid NonImpactProof.
+
+    A surface listed here is one an iteration assessed and proved had no
+    impact on the human front door, so the staleness assertions are skipped
+    for it. Silent omission is not permitted: only explicitly filed proofs
+    exempt a surface. An empty or missing registry means no exemptions.
+    """
+    if not path.is_file():
+        return set()
+    data = json.loads(path.read_text(encoding="utf-8"))
+    exempt: set[str] = set()
+    for entry in data.get("exemptions", []):
+        surface = entry.get("surface")
+        if surface and entry.get("proof") and entry.get("evidence_pr"):
+            exempt.add(surface)
+    return exempt
 
 
 def require(condition: bool, message: str) -> None:
@@ -66,7 +92,15 @@ def extract_text_prompt(text: str, source: str) -> str:
 
 def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> None:
     require(readme.count("## 项目现状") == 1, "README must expose exactly one project-current-state heading")
-    required_order = ["## 项目现状", "## 正在炼化 / Recent Stage Results", "## 之元写作法成果", "## 生命共同体价值宪章", "## 完整可点击系统图", "## 使用指南"]
+    required_order = [
+        "## 项目现状",
+        "## 项目阶段性更新 / Project Stage Update",
+        "## 正在炼化 / Recent Stage Results",
+        "## 之元写作法成果",
+        "## 生命共同体价值宪章",
+        "## 完整可点击系统图",
+        "## 使用指南",
+    ]
     positions = [readme.index(heading) for heading in required_order]
     require(positions == sorted(positions), "README top-level information architecture is out of order")
     require("<summary>展开：当前能力、限制与完整项目现状</summary>" in readme, "README omits folded current-state detail")
@@ -97,20 +131,36 @@ def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> N
     require("validate_stage_snapshots.py --check" in pages, "Pages build does not reject stale stage snapshot projection")
     require("PUBLISHED_SNAPSHOT != ACCEPTED" in readme, "README omits stage/lifecycle orthogonality boundary")
     require("PR #130" in readme and "019f52cc296b" in readme, "README omits exact R5-A pilot snapshot")
+    # Charter System R1 front-door boundary: Accepted/Current but not activated, not published.
+    require(CHARTER_R1_BOUNDARY["name_zh"] in readme and CHARTER_R1_BOUNDARY["name_en"] in readme, "README omits Charter System R1 by name")
+    require(CHARTER_R1_BOUNDARY["activated"] in readme and CHARTER_R1_BOUNDARY["publication"] in readme, "README omits Charter System R1 boundary (activated=false / UNPUBLISHED)")
+    require(CHARTER_R1_BOUNDARY["name_zh"] in current_state and CHARTER_R1_BOUNDARY["name_en"] in current_state, "project-current-state omits Charter System R1 by name")
+    require(CHARTER_R1_BOUNDARY["activated"] in current_state and CHARTER_R1_BOUNDARY["publication"] in current_state, "project-current-state omits Charter System R1 boundary")
 
 
-def validate_version_front_doors(ai_start: str, ai_handoff: str, llms: str) -> None:
-    sources = {"AI-START-HERE.md": ai_start, "AI-HANDOFF.md": ai_handoff, "llms.txt": llms}
-    for source, text in sources.items():
+def validate_version_front_doors(ai_start: str, ai_handoff: str, llms: str, readme: str | None = None, current_state: str | None = None, nonimpact_proofs: set[str] | None = None) -> None:
+    if nonimpact_proofs is None:
+        nonimpact_proofs = load_nonimpact_proofs()
+    sources = {
+        "human.readme": readme,
+        "human.current_state": current_state,
+        "ai.start": ai_start,
+        "agent.handoff": ai_handoff,
+        "machine.llms": llms,
+    }
+    sources = {sid: text for sid, text in sources.items() if text is not None}
+    for surface_id, text in sources.items():
+        if surface_id in nonimpact_proofs:
+            continue
         for value in VERSION_FACTS.values():
-            require(value in text, f"{source}: missing version fact {value}")
-        require(re.search(r"(?:current|当前)[^\n]{0,80}1\.3\.0|1\.3\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{source}: method 1.3.0 is not explicitly Current")
-        require(re.search(r"(?:historical|历史)[^\n]{0,80}1\.2\.0|1\.2\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{source}: method 1.2.0 is not explicitly Historical")
-        require(re.search(r"(?:historical|历史)[^\n]{0,80}1\.1\.0|1\.1\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{source}: method 1.1.0 is not explicitly Historical")
-        require(re.search(r"(?:current|当前)[^\n]{0,80}0\.3\.0|0\.3\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{source}: map 0.3.0 is not explicitly Current")
-        require(re.search(r"(?:historical|历史)[^\n]{0,80}0\.2\.0|0\.2\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{source}: map 0.2.0 is not explicitly Historical")
-        require(not re.search(r"(?:current|当前)(?:迭代)?(?:方法|method)[^\n]{0,20}(?:1\.1\.0|1\.2\.0)", text, re.IGNORECASE), f"{source}: stale Current method")
-        require(ROLLBACK_TYPO not in text.lower(), f"{source}: misspelled rollback term")
+            require(value in text, f"{surface_id}: missing version fact {value}")
+        require(re.search(r"(?:current|当前)[^\n]{0,80}1\.4\.0|1\.4\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{surface_id}: method 1.4.0 is not explicitly Current")
+        require(re.search(r"(?:historical|历史)[^\n]{0,80}1\.3\.0|1\.3\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{surface_id}: method 1.3.0 is not explicitly Historical")
+        require(re.search(r"(?:historical|历史)[^\n]{0,80}1\.2\.0|1\.2\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{surface_id}: method 1.2.0 is not explicitly Historical")
+        require(re.search(r"(?:current|当前)[^\n]{0,80}0\.3\.0|0\.3\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{surface_id}: map 0.3.0 is not explicitly Current")
+        require(re.search(r"(?:historical|历史)[^\n]{0,80}0\.2\.0|0\.2\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{surface_id}: map 0.2.0 is not explicitly Historical")
+        require(not re.search(r"(?:current|当前)(?:迭代)?(?:方法|method)[^\n]{0,20}(?:1\.1\.0|1\.2\.0|1\.3\.0)", text, re.IGNORECASE), f"{surface_id}: stale Current method")
+        require(ROLLBACK_TYPO not in text.lower(), f"{surface_id}: misspelled rollback term")
 
 
 def validate_system_map(root: Path, readme: str, pages: str) -> int:
@@ -217,7 +267,7 @@ def validate_all(root: Path = ROOT) -> dict[str, object]:
     require(STAGE_REGISTRY.is_file() and STAGE_DOC.is_file(), "stage snapshot authority or documentation missing")
     contents = [path.read_text(encoding="utf-8") for path in paths.values()]
     validate_texts(*contents)
-    validate_version_front_doors(AI_START.read_text(encoding="utf-8"), AI_HANDOFF.read_text(encoding="utf-8"), LLMS.read_text(encoding="utf-8"))
+    validate_version_front_doors(AI_START.read_text(encoding="utf-8"), AI_HANDOFF.read_text(encoding="utf-8"), LLMS.read_text(encoding="utf-8"), README.read_text(encoding="utf-8"), CURRENT_STATE.read_text(encoding="utf-8"))
     validate_showcase(root, contents[0])
     system_map_nodes = validate_system_map(root, contents[0], contents[3])
     return {

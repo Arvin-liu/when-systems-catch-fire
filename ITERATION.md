@@ -135,6 +135,19 @@ Each triggered external surface has its own `external_attestations` entry with s
 
 `project_synchronization_complete` is the all-required-Current/Closed condition, not a blanket pre-merge acceptance gate. If any applicable registered surface still describes the superseded state, lacks a validated no-change decision, or has a pending attestation for the evaluated Current/Closed gate, the iteration cannot be called current or closed.
 
+### 5.4 Front-Door Synchronization Is a Required Propagation Surface (not memory-dependent)
+
+`README.md`, `docs/project-current-state.md` and the rendered Pages homepage are first-class project surfaces, not optional polish. Whenever an iteration changes project form, a Current capability, the Current method, governance, a core boundary, a primary entry, or the externally-comprehensible state, these front doors MUST enter the propagation closure as `CHANGE` (or a validator-enforced `NO_CHANGE_WITH_REASON` / `NonImpactProof`). They must not rely on Agent memory or human diligence.
+
+Hard invariants:
+
+- `IMPLEMENTATION_COMPLETE ≠ PROJECT_STATE_SYNCHRONIZED`
+- `MAIN_MERGED ≠ HOMEPAGE_CURRENT`
+- `ITERATION_CLOSED → REQUIRED_FRONT_DOOR_SURFACES_SYNCHRONIZED`
+- if project form changed but `README.md` / `docs/project-current-state.md` still project the superseded state, the iteration MUST NOT be judged `CLOSED`.
+
+The front-door staleness check is fail-closed: `tools/validate_human_front_door.py` enforces the current method version, the Charter System R1 boundary and homepage/project-current-state consistency; it rejects a stale homepage even when every other surface is green. A change that legitimately does not touch a front door must present an explicit `NonImpactProof` (see `data/operations/front-door-nonimpact-proofs.json`); silent omission is not allowed. A governance-chain closeout (for example Charter System R1) does not by itself make the homepage current — that is a separate required surface.
+
 ## 6. Branch And Commit Discipline
 
 Use an isolated branch and Draft PR unless the task is an exact-head merge closeout.
@@ -237,7 +250,8 @@ A method-change iteration must record:
 - diff and compatibility impact;
 - migration and rollback path;
 - validation evidence;
-- changed templates, schemas, validators and front-door references.
+- changed templates, schemas, validators and front-door references;
+- confirmation that §5.4 front-door synchronization obligations are preserved (homepage and project-current-state remain required propagation surfaces and the fail-closed staleness validator still runs).
 
 Do not silently rewrite prior method history. Keep old receipts and reports auditable.
 

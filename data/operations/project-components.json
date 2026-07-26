@@ -86,6 +86,7 @@
       "authority_source": "FOUNDATION.md",
       "component_ids": [
         "charter",
+        "charter_system_r1",
         "copyright_governance_jurisdiction_registry",
         "copyright_governance_source_rights",
         "copyright_governance_material_classification",
@@ -1438,6 +1439,28 @@
       },
       "path_patterns": [
         "tests/test_q33_governance_infrastructure.py"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/governance/charter-system-r1.md",
+      "component_id": "charter_system_r1",
+      "component_type": "governance_constraint",
+      "description": "治理系统 R1：已 Accepted/Current 但 activated=false、publication_status=UNPUBLISHED；其状态边界须作为前门同步义务传播到 README 与项目现状页。",
+      "label": "Charter System R1（宪章系统 R1）治理系统",
+      "layer_or_overlay": "governance",
+      "lifecycle": {
+        "source": "docs/governance/charter-system-r1.md",
+        "status": "current",
+        "version": "R1"
+      },
+      "map_projection": {
+        "visible": false,
+        "represented_by": "charter",
+        "no_change_reason": "Charter System R1 的治理状态由 charter 治理组节点代表，避免系统图节点膨胀；其前门传播义务由变更传播 topology 与 tools/validate_human_front_door.py 显式强制。"
+      },
+      "path_patterns": [
+        "docs/governance/charter-system-r1.md"
       ]
     }
   ],

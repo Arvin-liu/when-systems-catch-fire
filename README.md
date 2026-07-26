@@ -2,7 +2,7 @@
 
 ## 项目现状
 
-点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型，把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF、PSD、ARN、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。迭代操作法 `1.3.0` 与 registry 派生系统图 `0.3.0` 为 Current（Q32I 已独立 exact-head 接受、由 PR #62 普通合并并完成生产收口）；`1.4.0 Continuous Stage Snapshot Publication` 只是 Draft Candidate，绝非 Current。`1.2.0`／`0.2.0` 为 Historical，`1.1.0`／`0.1.0` 为更早 Historical。当前执行层中权威类型与本地执行能力已分离，apply 先经统一预检，rollback（回滚）按完整仓库字节／类型／mode 状态验证。这是当前提交下已经长成的状态，不是永久定位或最终身份；它也不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。
+点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型，把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF、PSD、ARN、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。迭代操作法 `1.4.0`（Continuous Stage Snapshot Publication）与 registry 派生系统图 `0.3.0` 为 Current（`1.3.0` 于受控同步 R1-20260726 升为 Historical，经 PR #134／#135 合并与 PR #62 生产收口）；`1.2.0`／`0.2.0` 为 Historical，`1.1.0`／`0.1.0` 为更早 Historical。Charter System R1（宪章系统 R1）已为 Accepted/Current，但仍 `activated=false`、`publication_status=UNPUBLISHED`，尚未激活任何能力或运行时。当前执行层中权威类型与本地执行能力已分离，apply 先经统一预检，rollback（回滚）按完整仓库字节／类型／mode 状态验证。这是当前提交下已经长成的状态，不是永久定位或最终身份；它也不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。本阶段的结构性变化见 [项目阶段性更新](#项目阶段性更新--project-stage-update)。
 
 **首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [点火迭代操作法](./ITERATION.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 
@@ -22,6 +22,44 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 [查看完整项目现状](./docs/project-current-state.md) / [查看现行架构](./ARCHITECTURE.md) / [查看使用说明](./docs/USAGE.md)
 
 </details>
+
+## 项目阶段性更新 / Project Stage Update
+
+> 这是**面向人**的项目阶段更新，不是机器审计型阶段快照。它回答：点火现在是什么、本阶段发生了哪些结构性变化、已经完成什么、仍受什么边界限制、下一步去哪里。审计型快照仍见下方 [正在炼化 / Recent Stage Results](#正在炼化--recent-stage-results)。边界仍严格区分：`HOMEPAGE_VISIBLE != CAPABILITY_AVAILABLE`、`PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED`。
+
+### 点火目前是什么
+
+点火是一个仓库内、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施。它把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF／PSD／ARN 三种候选派生表示能力、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。它不是完成的统一理论、物理理论、万能证明器或聊天机器人——这一判断随证据、反例、执行能力与治理边界继续变化。
+
+### 本阶段相较上一阶段的结构性变化
+
+- 迭代操作法从 `1.3.0`（增量执行）升为 `1.4.0`（Continuous Stage Snapshot Publication）Current；`1.3.0` 降为 Historical。
+- 新增「连续阶段快照发布」轴：让经独立验证的公开摘要、精确来源身份、显式状态与证据入口出现在 Main 首页投影，而不把候选载荷当成 Accepted／Current／Activated／已合并。
+- 责任主体约束收紧：问责字段只接受在受控 actor registry 中解析为 ACTIVE `PERSON`／`ORGANIZATION` 的 `actor_ref`，执行体与工作流不能替代最终责任。
+- **Charter System R1（宪章系统 R1）治理系统已收口为 Accepted／Current**：它把价值宪章的约束整理成可机器检查、可审计的治理构件与注册表（见 `docs/governance/charter-system-r1.md`），但仍 `activated=false`、`publication_status=UNPUBLISHED`——治理系统本身存在并 Current，但没有任何能力、运行时或执行器被它激活。
+- 本修复本身纠正一个因果传播缺口：治理链收口（ITERATION_CLOSED）曾未把「首页／项目现状」计入必须同步的前门表面，导致 `1.4.0` 已 Current 而 README 仍称 `1.3.0` 为 Current。
+
+### 本阶段已经完成什么
+
+- 阶段快照发布机制（1.4.0）独立 exact-head 接受、合并、生产收口；R5-A 阶段快照为 `PUBLISHED_SNAPSHOT`（仍非 Accepted／Current／Activated）。
+- 责任主体 registry 解析与两表面门禁落地。
+- Charter System R1 经四步正式 PR（#137 exact-head 接受 → #138 Current 同步 → #139 前门／注册表／版本同步 → #140 VERSIONING 溯源窄修复；main 现 `9a2e47b3`）普通合并，宪章系统 R1 在 main 上 Accepted／Current，边界 `activated=false`／`UNPUBLISHED` 保持。
+- 本 PR 把首页／项目现状纳入强制传播表面，并把「前门陈旧 ≡ 迭代不得判 CLOSED」写入操作法不变量。
+
+### 哪些仍未完成或仍受边界限制
+
+- Charter System R1 仍是 `activated=false`、`UNPUBLISHED`：治理系统 Current，但未激活任何能力／运行时／执行器，未发布快照。
+- R5-A 宪章候选（PR #130）整体仍 OPEN／DRAFT，其精确头验收仍待账号所有者独立执行。
+- 首页可见（Homepage Visible）不等于能力可用（Capability Available）；发布快照（Published Snapshot）不等于 Accepted／Current／Activated。
+- 系统图、`PUBLISHED_SNAPSHOT`、阶段快照均为可审计投影，不是新真值层或因果／完整性证明。
+
+### 下一阶段准备向哪里推进
+
+- 由账号所有者（唯一 `responsible_actor`，宪章 G5）独立裁定是否激活 Charter System R1 的任何具体能力／运行时／执行器、是否发布快照、是否扩展系统注册表或补充其他前门表面。
+- 把「连续阶段快照」与「前门因果传播」沉淀为常态能力：每次改变项目形态／Current 能力／方法／治理／边界／入口／对外可理解状态时，首页与项目现状都进入传播闭包并 fail closed。
+- 继续 Q34—Q40 未启动项与既有缺口修正。
+
+[查看完整项目现状](./docs/project-current-state.md) / [查看现行架构](./ARCHITECTURE.md) / [查看点火迭代操作法](./ITERATION.md)
 
 <!-- STAGE-SNAPSHOTS:START -->
 ## 正在炼化 / Recent Stage Results
@@ -73,7 +111,9 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 
 价值宪章约束点火判断什么值得做：谁受益、谁承担风险、哪些主体沉默、什么情况下必须拒绝、暂停或回滚。它跨越 L0-L6、Ψ₀、元协议和 Function OS，但它是规范边界，不是经验事实、数学证明、治理批准或项目定位。
 
-[阅读全文：生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
+除规范性价值宪章外，仓库现含 **Charter System R1（宪章系统 R1）** 治理系统：它把上述约束整理为可机器检查、可审计的治理构件与注册表（见 `docs/governance/charter-system-r1.md` 与 `docs/governance/charter-system-registry.json`）。其状态为 Accepted／Current，但 `activated=false`、`publication_status=UNPUBLISHED`——治理系统已就位并 Current，尚未激活任何能力、运行时或执行器，也未发布快照。
+
+[阅读全文：生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [Charter System R1 治理系统](./docs/governance/charter-system-r1.md)
 
 ## 完整可点击系统图
 

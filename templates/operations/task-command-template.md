@@ -1,6 +1,6 @@
 # Ignition Task Command Template
 
-Current method contract: `ITERATION.md` 1.3.0; 1.2.0 is Historical. Method 1.3.0 incremental execution is Current; declare real changed paths and allow the production planner to force `FULL_REBUILD_REQUIRED`.
+Current method contract: `ITERATION.md` 1.4.0; 1.3.0 is Historical. Method 1.4.0 (Continuous Stage Snapshot Publication) incremental execution is Current; declare real changed paths and allow the production planner to force `FULL_REBUILD_REQUIRED`.
 
 Task ID: `<TASK_ID>`
 
@@ -39,6 +39,7 @@ Synchronization matrix:
 - Schema / tools / tests / CI:
 - Reports / changelog:
 - Frozen or historical assets:
+- Front-door sync invariant (ITERATION.md §5.4): README 与 docs/project-current-state.md 是必需的因果传播表面；`ITERATION_CLOSED → REQUIRED_FRONT_DOOR_SURFACES_SYNCHRONIZED`；前门陈旧由 tools/validate_human_front_door.py fail-closed 强制，仅显式 NonImpactProof（data/operations/front-door-nonimpact-proofs.json）可豁免。
 
 Registry-derived propagation closure:
 

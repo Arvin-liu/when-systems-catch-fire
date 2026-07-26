@@ -1427,8 +1427,18 @@
       "target": "readme",
       "relation_class": "projects",
       "relation_domain": "repository_dependency",
-      "trigger_dimensions": ["identity", "lifecycle_current_state", "deployment_rendering", "operations_method"],
-      "trigger_classifications": ["INTERFACE_CHANGE", "EVIDENCE_UPDATE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
+      "trigger_dimensions": [
+        "identity",
+        "lifecycle_current_state",
+        "deployment_rendering",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "INTERFACE_CHANGE",
+        "EVIDENCE_UPDATE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
       "propagation_mode": "automatic",
       "required_evaluation": true,
       "creates_sync_obligation": true,
@@ -1444,8 +1454,15 @@
       "target": "pages_pipeline",
       "relation_class": "publishes",
       "relation_domain": "repository_dependency",
-      "trigger_dimensions": ["deployment_rendering", "operations_method"],
-      "trigger_classifications": ["INTERFACE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
+      "trigger_dimensions": [
+        "deployment_rendering",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "INTERFACE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
       "propagation_mode": "automatic",
       "required_evaluation": true,
       "creates_sync_obligation": true,
@@ -1461,8 +1478,19 @@
       "target": "sync",
       "relation_class": "synchronization_requires",
       "relation_domain": "synchronization_obligation",
-      "trigger_dimensions": ["identity", "handoff", "lifecycle_current_state", "deployment_rendering", "operations_method"],
-      "trigger_classifications": ["INTERFACE_CHANGE", "EVIDENCE_UPDATE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
+      "trigger_dimensions": [
+        "identity",
+        "handoff",
+        "lifecycle_current_state",
+        "deployment_rendering",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "INTERFACE_CHANGE",
+        "EVIDENCE_UPDATE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
       "propagation_mode": "required_assessment",
       "required_evaluation": true,
       "creates_sync_obligation": true,
@@ -1470,6 +1498,54 @@
       "label": "阶段状态回到同步闭包",
       "declaration_source": "docs/operations/stage-snapshot-publication.md",
       "claim_ceiling": "repository synchronization obligation only",
+      "residue": []
+    },
+    {
+      "relation_id": "charter_r1_requires_readme",
+      "source": "charter_system_r1",
+      "target": "readme",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation",
+      "trigger_dimensions": [
+        "governance",
+        "lifecycle_current_state",
+        "identity"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": false,
+      "label": "宪章系统 R1 治理边界传播到首页",
+      "declaration_source": "tools/validate_human_front_door.py",
+      "claim_ceiling": "governance obligation only; activated=false / UNPUBLISHED boundary must reach front doors",
+      "residue": []
+    },
+    {
+      "relation_id": "charter_r1_requires_current_state",
+      "source": "charter_system_r1",
+      "target": "current_state",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation",
+      "trigger_dimensions": [
+        "governance",
+        "lifecycle_current_state",
+        "identity"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE",
+        "RELEASE_OR_CURRENT_STATE_SYNC"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": false,
+      "label": "宪章系统 R1 治理边界传播到项目现状",
+      "declaration_source": "tools/validate_human_front_door.py",
+      "claim_ceiling": "governance obligation only; activated=false / UNPUBLISHED boundary must reach front doors",
       "residue": []
     }
   ],

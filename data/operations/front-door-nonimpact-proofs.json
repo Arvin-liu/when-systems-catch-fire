@@ -1,0 +1,11 @@
+{
+  "purpose": "Front-door NonImpactProof registry. When an iteration assesses that a change has NO impact on the human front door, an explicit proof with a corroborating evidence_pr exempts that surface from the staleness assertions enforced by tools/validate_human_front_door.py. Silent omission is not permitted: only explicitly filed proofs exempt a surface. An empty exemptions array means every front-door surface is still in scope and must be verified current.",
+  "recognized_surfaces": [
+    "human.readme",
+    "human.current_state",
+    "ai.start",
+    "agent.handoff",
+    "machine.llms"
+  ],
+  "exemptions": []
+}
