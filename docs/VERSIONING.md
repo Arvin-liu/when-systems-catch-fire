@@ -27,6 +27,8 @@ Q32I closed iteration method `1.3.0` and registry-derived system map `0.3.0` as 
 
 Iteration method `1.4.0 — Continuous Stage Snapshot Publication` is a Draft Candidate governed by Current 1.3.0. It adds a separate publication-status axis and a machine registry for public stage summaries. A snapshot record and homepage projection may eventually enter Main without merging the candidate payload or raising Accepted/Current/Activated; the candidate itself cannot use this rule to self-merge or self-declare Current.
 
+Charter System R1（`docs/governance/charter-system-r1.md`，元治理层）经独立 exact-head acceptance（PR #137 head `669c9f8c` → merge commit `0e7c032`）收口为 Current（non-Activated），并经 front-door / 系统注册表 / VERSIONING 三表面同步（PR #138 → `0c5fbcab`，方法 `IGNITION-CHARTER-SYSTEM-R1-CURRENT-FRONT-DOOR-REGISTRY-AND-VERSIONING-SYNCHRONIZATION-R1-20260726`）完成 Current 收口的逐表面 attestation。它保持 `activated=false`、`publication_status=UNPUBLISHED`：Current 不等于 Activated，亦不构成任何已发布快照（满足 `PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED`）。本同步不改变价值宪章、七层架构、Foundation 或迭代操作法版本。
+
 架构完成不等于内容证明完成。当前架构允许后续逐对象补源、补定义、补证明、补实验、发现反例或降级，而不再推倒整体架构。
 
 ## 什么算版本升级
