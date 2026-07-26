@@ -34,6 +34,10 @@
 
 Q32I 当前能力从真实 change request 运行 `plan_incremental_execution.py`，再由 `run_incremental_execution.py` 在统一 authority preflight 通过后，只执行显式标记 automatic 的 profile 结构化 argv。Execution capability 与 validation capability 分开登记；七个 validation-only profiles 绑定真实、完整、匹配构件职责的本地 validator，44 个 manual profiles 和任何 external profile 的本地 validator subprocess 都为零。失败时只有整仓字节、类型、symlink 和适用 mode 完全一致才报 `restored`，否则生成 recovery package。NonImpactProof 仅在声明仓库关系范围内有效；cache 不是权威。任何 placeholder validator、缺参命令、缺失脚本、capability 冲突、meta-authority 变更、未解析路径或身份失配都 fail closed。
 
+### 1.4 Candidate：阅读阶段快照
+
+“正在炼化 / Recent Stage Results”来自 `data/operations/stage-snapshots.json` 的确定性投影。先读 lifecycle 与 publication 两条轴，再核对 Accepted、Current、Activated、正式能力影响和实际应用许可五个显式布尔量；不得从 Main/首页可见反推能力已经生效。Agent 可按 schema 提交 stage snapshot request，但独立同步任务核验并合并前，它仍只是请求。完整制度见 `docs/operations/stage-snapshot-publication.md`。
+
 `NO_CHANGE_WITH_REASON` 允许纯历史修字不触发无关全仓更新；新增正式构件则必须进入系统图，或提供 validator 可检查的 hidden representation 与理由。这里计算的是声明关系下的仓库／治理传播，不是现实因果。
 
 向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁和伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN、Atlas 或迭代流程。点赞、赞美、传播和多 AI 共识只能是体验／传播数据。

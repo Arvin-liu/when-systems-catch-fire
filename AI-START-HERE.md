@@ -14,6 +14,8 @@
 8. data/foundation/project-state.json 与 registry-manifest.json：机器状态。
 9. 当前任务命令与相关 source/schema。
 
+若页面出现“正在炼化 / Recent Stage Results”，必须读取 `data/operations/stage-snapshots.json` 和 `docs/operations/stage-snapshot-publication.md`。方法 1.4.0 仍为 Candidate，Current 仍是 1.3.0；快照可见不推出 Accepted、Current、Activated、正式能力可用或候选载荷已进 Main。
+
 若任务涉及 L6 公共故事、文章或作品反馈，还应读取 `docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.4.0` 是当前能力，使用外部输入与点火增量输出双来源素材池；`0.3.0` 保留为历史版本。不得把点火派生产物重算为独立外部证据。
 
 若任务涉及当前展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`，并沿每项记录回到作品、案例来源链、点火分析和方法版本。首页只投影最近三项，不是完整清单或真值权威。

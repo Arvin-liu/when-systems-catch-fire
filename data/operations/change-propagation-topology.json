@@ -1,5 +1,5 @@
 {
-  "topology_version": "1.1.0",
+  "topology_version": "1.2.0",
   "purpose": "Typed declared relations for repository change propagation and map projection. Substantive causal candidates remain informational unless separately evidenced in MCF.",
   "relation_classes": [
     "derives",
@@ -1420,6 +1420,57 @@
       "declaration_source": "tests/test_q33_governance_infrastructure.py",
       "claim_ceiling": "test validation only",
       "residue": []
+    },
+    {
+      "relation_id": "stage_snapshot_projects_readme",
+      "source": "stage_snapshot_publication",
+      "target": "readme",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": ["identity", "lifecycle_current_state", "deployment_rendering", "operations_method"],
+      "trigger_classifications": ["INTERFACE_CHANGE", "EVIDENCE_UPDATE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
+      "propagation_mode": "automatic",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": false,
+      "label": "确定性首页投影",
+      "declaration_source": "docs/operations/stage-snapshot-publication.md",
+      "claim_ceiling": "public stage-summary projection only; no capability lifecycle promotion",
+      "residue": []
+    },
+    {
+      "relation_id": "stage_snapshot_builds_pages",
+      "source": "stage_snapshot_publication",
+      "target": "pages_pipeline",
+      "relation_class": "publishes",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": ["deployment_rendering", "operations_method"],
+      "trigger_classifications": ["INTERFACE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
+      "propagation_mode": "automatic",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": false,
+      "label": "README 派生 Pages",
+      "declaration_source": "docs/operations/stage-snapshot-publication.md",
+      "claim_ceiling": "candidate Pages artifact only before merge; production deploy remains main-only",
+      "residue": []
+    },
+    {
+      "relation_id": "stage_snapshot_requires_sync",
+      "source": "stage_snapshot_publication",
+      "target": "sync",
+      "relation_class": "synchronization_requires",
+      "relation_domain": "synchronization_obligation",
+      "trigger_dimensions": ["identity", "handoff", "lifecycle_current_state", "deployment_rendering", "operations_method"],
+      "trigger_classifications": ["INTERFACE_CHANGE", "EVIDENCE_UPDATE", "RELEASE_OR_CURRENT_STATE_SYNC", "OPERATIONS_METHOD"],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": false,
+      "label": "阶段状态回到同步闭包",
+      "declaration_source": "docs/operations/stage-snapshot-publication.md",
+      "claim_ceiling": "repository synchronization obligation only",
+      "residue": []
     }
   ],
   "allowed_path_overlaps": [
@@ -1453,6 +1504,16 @@
         "templates/operations/"
       ],
       "rationale": "Iteration manifest schema and templates serve both the iteration component and the manifest contract."
+    },
+    {
+      "component_ids": [
+        "iteration",
+        "stage_snapshot_publication"
+      ],
+      "path_patterns": [
+        "templates/operations/stage-snapshot-request-template.json"
+      ],
+      "rationale": "The request template belongs to the Current method surface and its 1.4 candidate specialization."
     }
   ]
 }

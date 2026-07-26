@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/stage-snapshot-registry.schema.json",
+  "title": "Ignition stage snapshot registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "method_candidate", "authority", "registry_state", "projection_limit", "axis_invariants", "snapshots"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "method_candidate": {"const": "Ignition Iteration Method 1.4.0 Candidate — Continuous Stage Snapshot Publication"},
+    "authority": {"const": "data/operations/stage-snapshots.json"},
+    "registry_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate", "accepted", "current", "merged_to_main"],
+      "properties": {
+        "candidate": {"type": "boolean"},
+        "accepted": {"type": "boolean"},
+        "current": {"type": "boolean"},
+        "merged_to_main": {"type": "boolean"}
+      }
+    },
+    "projection_limit": {"type": "integer", "minimum": 1, "maximum": 10},
+    "axis_invariants": {
+      "type": "array",
+      "minItems": 5,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "PUBLISHED_SNAPSHOT != ACCEPTED",
+          "PUBLISHED_SNAPSHOT != CURRENT",
+          "PUBLISHED_SNAPSHOT != ACTIVATED",
+          "SNAPSHOT_MERGED_TO_MAIN != CANDIDATE_PAYLOAD_MERGED_TO_MAIN",
+          "HOMEPAGE_VISIBLE != CAPABILITY_AVAILABLE"
+        ]
+      }
+    },
+    "snapshots": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/snapshot"}
+    }
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "snapshotId": {"type": "string", "pattern": "^STAGE-[A-Z0-9][A-Z0-9._-]{5,127}$"},
+    "stringList": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}},
+    "idList": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/snapshotId"}},
+    "snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "snapshot_id", "title", "summary", "task_id", "produced_at", "responsibility",
+        "source", "evidence", "lifecycle_state", "publication_status", "result_type", "outcome",
+        "completed", "incomplete", "claim_ceiling", "known_limitations_and_blockers",
+        "accepted", "current", "activated", "affects_formal_capability", "practical_application_allowed",
+        "privacy", "relationships", "recovery", "homepage", "remote_attestation"
+      ],
+      "properties": {
+        "snapshot_id": {"$ref": "#/$defs/snapshotId"},
+        "title": {"$ref": "#/$defs/nonblank"},
+        "summary": {"$ref": "#/$defs/nonblank"},
+        "task_id": {"$ref": "#/$defs/nonblank"},
+        "produced_at": {"type": "string", "format": "date-time"},
+        "responsibility": {
+          "type": "object", "additionalProperties": false,
+          "required": ["executor", "publisher", "responsible_organization", "founder_responsibility_inferred", "upstream_responsibility_inferred"],
+          "properties": {
+            "executor": {"$ref": "#/$defs/nonblank"},
+            "publisher": {"$ref": "#/$defs/nonblank"},
+            "responsible_organization": {"$ref": "#/$defs/nonblank"},
+            "founder_responsibility_inferred": {"const": false},
+            "upstream_responsibility_inferred": {"const": false}
+          }
+        },
+        "source": {
+          "type": "object", "additionalProperties": false,
+          "required": ["repository", "pull_request", "pull_request_url", "branch", "exact_head", "candidate_payload_merged_to_main", "snapshot_record_merged_to_main"],
+          "properties": {
+            "repository": {"pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$", "type": "string"},
+            "pull_request": {"type": "integer", "minimum": 1},
+            "pull_request_url": {"pattern": "^https://github\\.com/[^/]+/[^/]+/pull/[1-9][0-9]*$", "type": "string"},
+            "branch": {"$ref": "#/$defs/nonblank"},
+            "exact_head": {"$ref": "#/$defs/sha"},
+            "candidate_payload_merged_to_main": {"type": "boolean"},
+            "snapshot_record_merged_to_main": {"type": "boolean"}
+          }
+        },
+        "evidence": {
+          "type": "object", "additionalProperties": false,
+          "required": ["relay_repository", "relay_pull_request", "relay_pull_request_url", "relay_exact_head", "entries"],
+          "properties": {
+            "relay_repository": {"pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$", "type": "string"},
+            "relay_pull_request": {"type": "integer", "minimum": 1},
+            "relay_pull_request_url": {"pattern": "^https://github\\.com/[^/]+/[^/]+/pull/[1-9][0-9]*$", "type": "string"},
+            "relay_exact_head": {"$ref": "#/$defs/sha"},
+            "entries": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^https://"}}
+          }
+        },
+        "lifecycle_state": {"enum": ["CANDIDATE", "READY", "IMPLEMENTED_PENDING_REVIEW", "REPAIR_ACCEPTED_IN_SOURCE_BRANCH", "ACCEPTED", "MERGED_CAPABILITY", "CURRENT", "CLOSED", "REJECTED", "WITHDRAWN"]},
+        "publication_status": {"enum": ["UNPUBLISHED", "PR_VISIBLE", "PUBLISHED_SNAPSHOT", "SUPERSEDED_SNAPSHOT", "WITHDRAWN_SNAPSHOT", "HISTORICAL_SNAPSHOT"]},
+        "result_type": {"enum": ["CODE", "ARCHITECTURE", "REPAIR", "REPORT", "FAILURE_FINDING", "GOVERNANCE_CANDIDATE", "METHOD_CANDIDATE"]},
+        "outcome": {"enum": ["SUCCESS", "PARTIAL", "REPAIR_ACCEPTED", "REJECTED", "FAILURE", "WITHDRAWN", "HISTORICAL"]},
+        "completed": {"$ref": "#/$defs/stringList"},
+        "incomplete": {"$ref": "#/$defs/stringList"},
+        "claim_ceiling": {"$ref": "#/$defs/nonblank"},
+        "known_limitations_and_blockers": {"$ref": "#/$defs/stringList"},
+        "accepted": {"type": "boolean"},
+        "current": {"type": "boolean"},
+        "activated": {"type": "boolean"},
+        "affects_formal_capability": {"type": "boolean"},
+        "practical_application_allowed": {"type": "boolean"},
+        "privacy": {
+          "type": "object", "additionalProperties": false,
+          "required": ["public_only", "sensitive_material_included", "secrets_included"],
+          "properties": {
+            "public_only": {"const": true},
+            "sensitive_material_included": {"const": false},
+            "secrets_included": {"const": false}
+          }
+        },
+        "relationships": {
+          "type": "object", "additionalProperties": false,
+          "required": ["predecessors", "successors", "supersedes", "superseded_by"],
+          "properties": {
+            "predecessors": {"$ref": "#/$defs/idList"},
+            "successors": {"$ref": "#/$defs/idList"},
+            "supersedes": {"$ref": "#/$defs/idList"},
+            "superseded_by": {"$ref": "#/$defs/idList"}
+          }
+        },
+        "recovery": {
+          "type": "object", "additionalProperties": false,
+          "required": ["revision_path", "withdrawal_path", "rollback_path"],
+          "properties": {
+            "revision_path": {"$ref": "#/$defs/nonblank"},
+            "withdrawal_path": {"$ref": "#/$defs/nonblank"},
+            "rollback_path": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "homepage": {
+          "type": "object", "additionalProperties": false,
+          "required": ["visible", "priority", "sort_time", "summary"],
+          "properties": {
+            "visible": {"type": "boolean"},
+            "priority": {"type": "integer", "minimum": 0, "maximum": 1000},
+            "sort_time": {"type": "string", "format": "date-time"},
+            "summary": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "remote_attestation": {
+          "type": "object", "additionalProperties": false,
+          "required": ["verified_at", "verifier", "verification_scope", "source_pr_state", "source_pr_draft", "source_branch", "source_head", "relay_pr_state", "relay_pr_draft", "relay_head"],
+          "properties": {
+            "verified_at": {"type": "string", "format": "date-time"},
+            "verifier": {"$ref": "#/$defs/nonblank"},
+            "verification_scope": {"const": "github_remote_identity_and_exact_head_at_recorded_time"},
+            "source_pr_state": {"enum": ["OPEN", "CLOSED", "MERGED"]},
+            "source_pr_draft": {"type": "boolean"},
+            "source_branch": {"$ref": "#/$defs/nonblank"},
+            "source_head": {"$ref": "#/$defs/sha"},
+            "relay_pr_state": {"enum": ["OPEN", "CLOSED", "MERGED"]},
+            "relay_pr_draft": {"type": "boolean"},
+            "relay_head": {"$ref": "#/$defs/sha"}
+          }
+        }
+      }
+    }
+  }
+}

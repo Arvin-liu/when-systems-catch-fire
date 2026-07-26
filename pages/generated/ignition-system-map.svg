@@ -323,12 +323,12 @@
         <tspan x="658.0" dy="0">Q14 点火地图集</tspan>
       </text>
     </a>
-    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ITERATION.md" target="_top" data-node-id="iteration" data-group="operations" data-target="ITERATION.md" aria-label="点火迭代操作法 1.2 Current / 1.3 Draft：1.2 类型化传播为 Current；1.3 候选增加自举增量规划、选择性物化、缓存身份与回滚恢复。">
-      <title>点火迭代操作法 1.2 Current / 1.3 Draft — 1.2 类型化传播为 Current；1.3 候选增加自举增量规划、选择性物化、缓存身份与回滚恢复。</title>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ITERATION.md" target="_top" data-node-id="iteration" data-group="operations" data-target="ITERATION.md" aria-label="点火迭代操作法 1.3 Current / 1.4 Draft：1.3 增量执行为 Current；1.4 候选增加正交的持续阶段快照发布轴。">
+      <title>点火迭代操作法 1.3 Current / 1.4 Draft — 1.3 增量执行为 Current；1.4 候选增加正交的持续阶段快照发布轴。</title>
       <rect class="node" x="642.0" y="1026.0" width="516.0" height="54.0" rx="10" />
       <text class="node-label" x="658.0" y="1048.0">
-        <tspan x="658.0" dy="0">点火迭代操作法 1.2 Current /</tspan>
-        <tspan x="658.0" dy="18">1.3 Draft</tspan>
+        <tspan x="658.0" dy="0">点火迭代操作法 1.3 Current /</tspan>
+        <tspan x="658.0" dy="18">1.4 Draft</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/data/operations/synchronization-surfaces.json" target="_top" data-node-id="sync" data-group="operations" data-target="data/operations/synchronization-surfaces.json" aria-label="同步表面 / 类型传播 / 增量执行：1.2 Current 传播闭包与 1.3 Draft 选择性物化联合工作；关键权威变更仍强制 full rebuild。">

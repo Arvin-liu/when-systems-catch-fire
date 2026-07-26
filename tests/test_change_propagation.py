@@ -113,6 +113,11 @@ class ChangePropagationTests(unittest.TestCase):
             change_classifications=["INTERFACE_CHANGE"],
             system_map_decision={"item_id": "interactive_system_map", "decision": "NO_CHANGE_WITH_REASON", "reason": "The hosting chain changes without a component, target, status or visible relation change."},
         )
+        request["surface_decisions"].append({
+            "item_id": "machine.stage_snapshots",
+            "decision": "NO_CHANGE_WITH_REASON",
+            "reason": "A generic Pages pipeline change must assess but does not alter the stage snapshot registry.",
+        })
         closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
         self.assertTrue(closure["closure_complete"])
         self.assertIn("pages_pipeline", closure["resolved_components"])

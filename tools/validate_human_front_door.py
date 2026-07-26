@@ -48,6 +48,8 @@ VERSION_FACTS = {
     "historical_map": "0.2.0",
     "earlier_historical_map": "0.1.0",
 }
+STAGE_REGISTRY = ROOT / "data/operations/stage-snapshots.json"
+STAGE_DOC = ROOT / "docs/operations/stage-snapshot-publication.md"
 ROLLBACK_TYPO = "roll" + "bar"
 
 
@@ -64,7 +66,7 @@ def extract_text_prompt(text: str, source: str) -> str:
 
 def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> None:
     require(readme.count("## 项目现状") == 1, "README must expose exactly one project-current-state heading")
-    required_order = ["## 项目现状", "## 之元写作法成果", "## 生命共同体价值宪章", "## 完整可点击系统图", "## 使用指南"]
+    required_order = ["## 项目现状", "## 正在炼化 / Recent Stage Results", "## 之元写作法成果", "## 生命共同体价值宪章", "## 完整可点击系统图", "## 使用指南"]
     positions = [readme.index(heading) for heading in required_order]
     require(positions == sorted(positions), "README top-level information architecture is out of order")
     require("<summary>展开：当前能力、限制与完整项目现状</summary>" in readme, "README omits folded current-state detail")
@@ -91,6 +93,10 @@ def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> N
     require("cat README.md" in pages, "Pages workflow is not derived from README.md")
     require("Build README reading site" in pages, "Pages workflow omits declared README build step")
     require("README.md" in pages, "Pages workflow does not watch README.md")
+    require("data/operations/stage-snapshots.json" in pages, "Pages artifact omits stage snapshot registry")
+    require("validate_stage_snapshots.py --check" in pages, "Pages build does not reject stale stage snapshot projection")
+    require("PUBLISHED_SNAPSHOT != ACCEPTED" in readme, "README omits stage/lifecycle orthogonality boundary")
+    require("PR #130" in readme and "019f52cc296b" in readme, "README omits exact R5-A pilot snapshot")
 
 
 def validate_version_front_doors(ai_start: str, ai_handoff: str, llms: str) -> None:
@@ -208,6 +214,7 @@ def validate_all(root: Path = ROOT) -> dict[str, object]:
     }
     for label, path in paths.items():
         require(path.is_file(), f"missing {label} surface: {path}")
+    require(STAGE_REGISTRY.is_file() and STAGE_DOC.is_file(), "stage snapshot authority or documentation missing")
     contents = [path.read_text(encoding="utf-8") for path in paths.values()]
     validate_texts(*contents)
     validate_version_front_doors(AI_START.read_text(encoding="utf-8"), AI_HANDOFF.read_text(encoding="utf-8"), LLMS.read_text(encoding="utf-8"))
@@ -219,6 +226,7 @@ def validate_all(root: Path = ROOT) -> dict[str, object]:
         "capabilities": sorted(CAPABILITIES),
         "interactive_system_map_nodes": system_map_nodes,
         "rendered_pages_live_verified": False,
+        "stage_snapshot_candidate": True,
     }
 
 

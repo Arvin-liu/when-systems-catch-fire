@@ -22,11 +22,20 @@ on:
       - 'tools/operations/**'
       - 'tools/generate_interactive_system_map.py'
       - 'tests/test_change_propagation.py'
+      - 'tests/test_era_resolver_generalization.py'
+      - 'tests/test_generated_output_authority.py'
       - 'tools/validate_iteration_sync.py'
       - 'tests/test_iteration_sync.py'
       - 'tools/validate_human_front_door.py'
       - 'tests/test_human_front_door.py'
       - 'tests/test_pages_deploy_gate.py'
+      - 'tests/test_stage_snapshot_publication.py'
+      - 'tools/operations/stage_snapshot_contract.py'
+      - 'tools/operations/validate_stage_snapshots.py'
+      - 'tools/operations/generate_stage_snapshot_projection.py'
+      - 'data/operations/stage-snapshots.json'
+      - 'docs/generated/recent-stage-results.md'
+      - 'docs/operations/stage-snapshot-publication.md'
       - '.github/workflows/pages.yml'
       - 'docs/ai-assistant-usage-reference.md'
       - 'ITERATION.md'
@@ -61,11 +70,20 @@ on:
       - 'tools/operations/**'
       - 'tools/generate_interactive_system_map.py'
       - 'tests/test_change_propagation.py'
+      - 'tests/test_era_resolver_generalization.py'
+      - 'tests/test_generated_output_authority.py'
       - 'tools/validate_iteration_sync.py'
       - 'tests/test_iteration_sync.py'
       - 'tools/validate_human_front_door.py'
       - 'tests/test_human_front_door.py'
       - 'tests/test_pages_deploy_gate.py'
+      - 'tests/test_stage_snapshot_publication.py'
+      - 'tools/operations/stage_snapshot_contract.py'
+      - 'tools/operations/validate_stage_snapshots.py'
+      - 'tools/operations/generate_stage_snapshot_projection.py'
+      - 'data/operations/stage-snapshots.json'
+      - 'docs/generated/recent-stage-results.md'
+      - 'docs/operations/stage-snapshot-publication.md'
       - '.github/workflows/pages.yml'
       - 'docs/ai-assistant-usage-reference.md'
       - 'ITERATION.md'
@@ -126,15 +144,26 @@ jobs:
             --residue data/operations/propagation/121Q32I-residue.json \
             --era-ref 0a13c246172c0338bf8dda5dc08db5a574a8b23f \
             --check
+          python3 tools/operations/compute_change_propagation.py \
+            --request data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json \
+            --output data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-closure.json \
+            --report reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md \
+            --map-delta data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-system-map-delta.json \
+            --residue data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-residue.json \
+            --check
       - name: Validate Q32I Phase E candidate
         run: python3 tools/operations/validate_phase_e_candidate.py --check
       - name: Validate registry-derived system map
         run: python3 tools/generate_interactive_system_map.py --check
+      - name: Validate stage snapshot registry and deterministic homepage projection
+        run: python3 tools/operations/validate_stage_snapshots.py --check
       - run: python3 tools/validate_human_front_door.py
       - run: python3 -m unittest tests.foundation.test_foundation
       - run: python3 -m unittest tests.test_iteration_sync -v
       - run: python3 -m unittest tests.test_human_front_door -v
       - run: python3 -m unittest tests.test_change_propagation -v
       - run: python3 -m unittest tests.test_pages_deploy_gate -v
+      - run: python3 -m unittest tests.test_stage_snapshot_publication -v
+      - run: python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v
       - run: python3 -m unittest tests.test_phase_e_candidate -v
       - run: python3 -m unittest tests.test_production_execution_authority -v

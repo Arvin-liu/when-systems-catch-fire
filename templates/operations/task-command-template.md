@@ -75,3 +75,12 @@ Required result:
 - Per-surface external attestation stage, status, authority and evidence policy:
 - Registry blockers at Ready / Accepted / Merged / Current / Closed:
 - Why the task may or may not become ready/current/closed:
+
+Stage snapshot boundary (when the task produces a real intermediate result):
+
+- Snapshot request required / not required:
+- Exact public result object and source HEAD:
+- Evidence entrance and claim ceiling:
+- Accepted / Current / Activated / formal capability impact / practical application booleans:
+- Proposed publication action: `PUBLISH` / `REVISE` / `WITHDRAW` / `DO_NOT_PUBLISH`
+- The Agent may request publication but must not claim the request has entered Main.

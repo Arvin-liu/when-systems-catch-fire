@@ -73,7 +73,7 @@ class HumanFrontDoorTests(unittest.TestCase):
 
     def test_readme_has_one_current_state_and_expected_top_order(self):
         self.assertEqual(self.readme.count("## 项目现状"), 1)
-        headings = ["## 项目现状", "## 之元写作法成果", "## 生命共同体价值宪章", "## 完整可点击系统图", "## 使用指南"]
+        headings = ["## 项目现状", "## 正在炼化 / Recent Stage Results", "## 之元写作法成果", "## 生命共同体价值宪章", "## 完整可点击系统图", "## 使用指南"]
         positions = [self.readme.index(heading) for heading in headings]
         self.assertEqual(positions, sorted(positions))
 
@@ -100,6 +100,12 @@ class HumanFrontDoorTests(unittest.TestCase):
         self.assertIn("121Q32-change-propagation-impact.md", self.pages)
         self.assertIn("site/data/operations/project-components.json", self.pages)
         self.assertIn("site/data/operations/change-propagation-topology.json", self.pages)
+
+    def test_stage_snapshot_homepage_is_registry_derived_and_bounded(self):
+        self.assertIn("PUBLISHED_SNAPSHOT != ACCEPTED", self.readme)
+        self.assertIn("PR #130", self.readme)
+        self.assertIn("019f52cc296b", self.readme)
+        self.assertIn("validate_stage_snapshots.py --check", self.pages)
 
     def test_three_ai_front_doors_share_version_truth(self):
         validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms)

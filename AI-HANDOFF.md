@@ -13,6 +13,7 @@
 - 类型与状态：data/foundation/
 - 机器计数：data/foundation/project-state.json 与 migration-summary.json
 - 任务边界：1111 中对应的 IGNITION command、progress 与 result
+- 阶段快照候选权威：data/operations/stage-snapshots.json 与 docs/operations/stage-snapshot-publication.md
 
 ## 兼容链
 
@@ -23,6 +24,8 @@
 新 Agent 必须先读取 `docs/project-current-state.md` 与 `ITERATION.md`，再重新核验远端、分支、HEAD、开放 PR 和验证结果，不得把聊天记忆当权威。统计必须写出去重键、范围、单位和生成脚本。缺字段、缺来源、不可形式化、反模型和真实 counterexample 分别记录。
 
 当前架构状态只能是 ARCHITECTURE_COMPLETE_PENDING_CONTENT_PROOFS；不得改写成全量数学证明完成。
+
+方法 1.4.0 是 Continuous Stage Snapshot Publication 的 Draft Candidate，不能自我应用为 Current。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activated，首页可见不等于能力可用。Agent 只能生成 stage snapshot request，不能自行声称已进入 Main。
 121Q12 新增的效果推理与机制判断是跨层操作 overlay。它帮助选择下一步行动并限制发布解释，不改变 L0-L6 真值关系，不改写 Ψ0，不把 C(x,y) 升级为已识别因果。
 
 交接时如涉及行动选择或结果解释，必须读取：

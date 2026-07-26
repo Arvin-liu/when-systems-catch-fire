@@ -2,7 +2,7 @@
 
 ## 项目现状
 
-点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型，把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF、PSD、ARN、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。迭代操作法 `1.3.0` 与 registry 派生系统图 `0.3.0` 为 Current（Q32I 已独立 exact-head 接受、由 PR #62 普通合并并完成生产收口）；`1.2.0`／`0.2.0` 为 Historical，`1.1.0`／`0.1.0` 为更早 Historical。当前执行层中权威类型与本地执行能力已分离，apply 先经统一预检，rollback（回滚）按完整仓库字节／类型／mode 状态验证。这是当前提交下已经长成的状态，不是永久定位或最终身份；它也不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。
+点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型，把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF、PSD、ARN、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。迭代操作法 `1.3.0` 与 registry 派生系统图 `0.3.0` 为 Current（Q32I 已独立 exact-head 接受、由 PR #62 普通合并并完成生产收口）；`1.4.0 Continuous Stage Snapshot Publication` 只是 Draft Candidate，绝非 Current。`1.2.0`／`0.2.0` 为 Historical，`1.1.0`／`0.1.0` 为更早 Historical。当前执行层中权威类型与本地执行能力已分离，apply 先经统一预检，rollback（回滚）按完整仓库字节／类型／mode 状态验证。这是当前提交下已经长成的状态，不是永久定位或最终身份；它也不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。
 
 **首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [点火迭代操作法](./ITERATION.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 
@@ -22,6 +22,32 @@ MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与
 [查看完整项目现状](./docs/project-current-state.md) / [查看现行架构](./ARCHITECTURE.md) / [查看使用说明](./docs/USAGE.md)
 
 </details>
+
+<!-- STAGE-SNAPSHOTS:START -->
+## 正在炼化 / Recent Stage Results
+
+> 这里展示的是可审计的阶段快照，不是能力接受公告。`PUBLISHED_SNAPSHOT != ACCEPTED`；`PUBLISHED_SNAPSHOT != CURRENT`；`PUBLISHED_SNAPSHOT != ACTIVATED`；`SNAPSHOT_MERGED_TO_MAIN != CANDIDATE_PAYLOAD_MERGED_TO_MAIN`；`HOMEPAGE_VISIBLE != CAPABILITY_AVAILABLE`。Current 正式能力仍以“项目现状”和正式 capability registry 为准。
+
+### R5-A 两轮窄修复已进入来源分支，整体仍待审
+
+**类别：** PR 可见候选 / `IMPLEMENTED_PENDING_REVIEW` / `PARTIAL`
+
+**版本：** [Arvin-liu/when-systems-catch-fire PR #130](https://github.com/Arvin-liu/when-systems-catch-fire/pull/130) @ `019f52cc296b`；分支 `architecture/ignition-r5a-life-integrity-charter-candidate-r1`
+
+**状态边界：** Accepted=`false` · Current=`false` · Activated=`false` · 正式能力影响=`false`
+
+**最近成果：** 11-case 窄修复已验收并进入来源分支；PR #130 整体仍为 Draft，非 Main／Current／Activated。
+
+**仍有阻断：** PR #130 仍为 OPEN / DRAFT；来源分支当前头 019f52cc296b7417cc91ea97077fbf85d19ad7fc 仍需整体 exact-head 验收；本快照只公开可审计摘要和证据入口，不发布或激活候选载荷
+
+**证据：** [正式 PR](https://github.com/Arvin-liu/when-systems-catch-fire/pull/130) / [1111 回执 PR #42](https://github.com/Arvin-liu/1111/pull/42) / [机器 registry](./data/operations/stage-snapshots.json)
+
+**Claim ceiling：** 仅证明两个已指明窄修复在其精确接受头通过独立实例级验收并进入 PR #130 来源分支；不证明 R5-A 整体完成、生命完整性、人体安全、疗效或普遍语义能力。
+
+阶段记录可被后继快照修订、替代或撤回；历史仍保留。Agent 只能提交 `stage snapshot request`，不能自行声称已进入 Main。
+
+[查看制度、状态图与发布门](./docs/operations/stage-snapshot-publication.md) / [查看全部机器记录](./data/operations/stage-snapshots.json)
+<!-- STAGE-SNAPSHOTS:END -->
 
 ## 之元写作法成果
 

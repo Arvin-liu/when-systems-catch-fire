@@ -8,6 +8,8 @@
 
 In short: this is a versioned current-state description, not a fixed essence, and future gap discovery -> structural correction -> re-validation may change it.
 
+Iteration Method `1.4.0 — Continuous Stage Snapshot Publication` is present only as a Draft Candidate on its isolated branch. Current remains `1.3.0`. Its registry and README/Pages preview publish only auditable summaries and explicit boundaries; they do not merge candidate payloads, alter the formal capability registry, establish Accepted/Current/Activated, or authorize practical use. The first R5-A record is `PR_VISIBLE`, while PR #130 itself remains OPEN/DRAFT and unaccepted as a whole.
+
 Current state must be inferred from actual repository artifacts: architecture files, foundation registries, tests, CI, open PRs, validation reports, unresolved queues, licensing state, and known gaps. It must not be backfilled from aspiration or branding.
 
 121Q12 adds a current operation overlay for two narrow gaps: choosing a next action when goals are unstable, and constraining interpretation after an action produces results. This is a current capability addition, not a fixed project positioning.

@@ -1,0 +1,20 @@
+{
+  "request_version": "1.0.0",
+  "task_id": "<TASK_ID>",
+  "result_object": "<EXACT_RESULT_OBJECT>",
+  "source_head": "0000000000000000000000000000000000000000",
+  "evidence_entries": ["https://github.com/<OWNER>/<REPOSITORY>/pull/<NUMBER>"],
+  "lifecycle_state": "<EXPLICIT_LIFECYCLE_STATE>",
+  "claim_ceiling": "<MAXIMUM_JUSTIFIED_CLAIM>",
+  "homepage_summary": "<SHORT_PUBLIC_SUMMARY>",
+  "limitations_and_incomplete": ["<LIMITATION_OR_UNFINISHED_ITEM>"],
+  "responsibility": {
+    "executor": "<EXECUTOR>",
+    "proposed_publisher": "<PUBLISHER_OR_ORGANIZATION>",
+    "responsible_organization": "<RESPONSIBLE_ORGANIZATION>",
+    "founder_responsibility_inferred": false,
+    "upstream_responsibility_inferred": false
+  },
+  "recommendation": "REVISE",
+  "agent_claims_published_to_main": false
+}
