@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/schemas/operations/responsibility-actor-registry.schema.json",
+  "title": "Ignition accountable actor registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "authority", "identity_contract", "actors"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "authority": {"const": "data/operations/responsibility-actors.json"},
+    "identity_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authoritative_field", "allowed_types", "display_name_authoritative", "technical_actors_allowed"],
+      "properties": {
+        "authoritative_field": {"const": "actor_ref"},
+        "allowed_types": {"const": ["PERSON", "ORGANIZATION"]},
+        "display_name_authoritative": {"const": false},
+        "technical_actors_allowed": {"const": false}
+      }
+    },
+    "actors": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"$ref": "#/$defs/actor"}
+    }
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "actorId": {"type": "string", "pattern": "^(person|org):[a-z0-9][a-z0-9._/-]{2,127}$"},
+    "historyRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["record_id", "changed_at", "change_type", "supersedes_record_id", "reason", "source_reference"],
+      "properties": {
+        "record_id": {"type": "string", "pattern": "^ACTOR-[A-Z0-9][A-Z0-9._-]{5,127}$"},
+        "changed_at": {"type": "string", "format": "date-time"},
+        "change_type": {"enum": ["REGISTERED", "REVISED", "RETIRED", "WITHDRAWN"]},
+        "supersedes_record_id": {
+          "oneOf": [
+            {"type": "null"},
+            {"type": "string", "pattern": "^ACTOR-[A-Z0-9][A-Z0-9._-]{5,127}$"}
+          ]
+        },
+        "reason": {"$ref": "#/$defs/nonblank"},
+        "source_reference": {"type": "string", "format": "uri", "pattern": "^https://"}
+      }
+    },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actor_id", "type", "official_name", "role", "accountability_reference",
+        "human_or_governance_contact", "status", "effective_at", "retired_at",
+        "source_references", "history"
+      ],
+      "properties": {
+        "actor_id": {"$ref": "#/$defs/actorId"},
+        "type": {"enum": ["PERSON", "ORGANIZATION"]},
+        "official_name": {"$ref": "#/$defs/nonblank"},
+        "role": {"$ref": "#/$defs/nonblank"},
+        "accountability_reference": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "human_or_governance_contact": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "status": {"enum": ["ACTIVE", "RETIRED", "WITHDRAWN"]},
+        "effective_at": {"type": "string", "format": "date-time"},
+        "retired_at": {"oneOf": [{"type": "null"}, {"type": "string", "format": "date-time"}]},
+        "source_references": {
+          "type": "array", "minItems": 1, "uniqueItems": true,
+          "items": {"type": "string", "format": "uri", "pattern": "^https://"}
+        },
+        "history": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/historyRecord"}}
+      },
+      "allOf": [
+        {"if": {"properties": {"type": {"const": "PERSON"}}}, "then": {"properties": {"actor_id": {"pattern": "^person:"}}}},
+        {"if": {"properties": {"type": {"const": "ORGANIZATION"}}}, "then": {"properties": {"actor_id": {"pattern": "^org:"}}}},
+        {"if": {"properties": {"status": {"const": "ACTIVE"}}}, "then": {"properties": {"retired_at": {"type": "null"}}}},
+        {"if": {"properties": {"status": {"enum": ["RETIRED", "WITHDRAWN"]}}}, "then": {"properties": {"retired_at": {"type": "string", "format": "date-time"}}}}
+      ]
+    }
+  }
+}

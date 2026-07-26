@@ -18,6 +18,8 @@ ROOT = Path(__file__).resolve().parents[2]
 REGISTRY = ROOT / "data/operations/stage-snapshots.json"
 SCHEMA = ROOT / "schemas/operations/stage-snapshot-registry.schema.json"
 REQUEST_SCHEMA = ROOT / "schemas/operations/stage-snapshot-request.schema.json"
+ACTOR_REGISTRY = ROOT / "data/operations/responsibility-actors.json"
+ACTOR_SCHEMA = ROOT / "schemas/operations/responsibility-actor-registry.schema.json"
 README = ROOT / "README.md"
 PROJECTION = ROOT / "docs/generated/recent-stage-results.md"
 START = "<!-- STAGE-SNAPSHOTS:START -->"
@@ -47,6 +49,16 @@ NON_ACCOUNTABLE_TOKENS = {
     "bot", "bots", "ci", "codex", "model", "models", "pipeline", "pipelines",
     "platform", "platforms", "robot", "robots", "script", "scripts", "software",
     "workflow", "workflows",
+}
+STRICT_TECHNICAL_IDENTITY_TOKENS = {
+    "ai", "agent", "agents", "algorithm", "algorithms", "bot", "bots", "ci",
+    "codex", "model", "models", "pipeline", "pipelines", "platform", "platforms",
+    "robot", "robots", "script", "scripts", "software", "workflow", "workflows",
+}
+TECHNICAL_WRAPPER_TOKENS = NON_ACCOUNTABLE_TOKENS | {
+    "action", "actions", "automatic", "autonomous", "github", "organization",
+    "organisation", "process", "processes", "publication", "publishing", "service",
+    "services", "system", "systems", "team", "the",
 }
 NON_ACCOUNTABLE_PHRASES = {
     "github actions", "ignition founder", "the founder", "upstream project", "upstream organization",
@@ -103,33 +115,118 @@ def _normalized_actor_text(value: str) -> str:
     return " ".join(value.split())
 
 
-def _actor_identity(actor: dict[str, Any]) -> tuple[str, str, str]:
-    return actor["type"], actor["stable_id"], _normalized_actor_text(actor["name"])
+def _actor_identity(actor_ref: dict[str, Any]) -> str:
+    return actor_ref["actor_ref"]
 
 
-def _validate_accountable_actor(actor: dict[str, Any], context: str) -> None:
-    """Validate positive actor identity/evidence, then fail closed on synthetic stand-ins."""
+def _validate_registry_actor(actor: dict[str, Any], context: str) -> None:
+    """Keep technical systems and placeholders out of the controlled actor registry."""
     actor_type = actor["type"]
-    normalized_name = _normalized_actor_text(actor["name"])
+    normalized_name = _normalized_actor_text(actor["official_name"])
     normalized_role = _normalized_actor_text(actor["role"])
     tokens = set(normalized_name.split())
     has_gpt_alias = any(token == "gpt" or re.fullmatch(r"gpt\d+", token) for token in tokens)
-    is_synthetic = bool(tokens & NON_ACCOUNTABLE_TOKENS) or has_gpt_alias or any(
-        phrase in normalized_name for phrase in NON_ACCOUNTABLE_PHRASES
+    is_synthetic = (
+        bool(tokens & STRICT_TECHNICAL_IDENTITY_TOKENS)
+        or has_gpt_alias
+        or any(phrase in normalized_name for phrase in NON_ACCOUNTABLE_PHRASES)
+        or bool(tokens) and tokens <= TECHNICAL_WRAPPER_TOKENS
     )
     require(not is_synthetic, f"{context}: non-accountable automated actor cannot be final responsibility")
     require(normalized_name not in PLACEHOLDER_NAMES, f"{context}: accountable actor name is generic or placeholder")
     require(normalized_role not in {"", "unknown", "tbd", "n a", "none"}, f"{context}: accountable actor role is missing or placeholder")
     expected_prefix = "person:" if actor_type == "PERSON" else "org:"
-    require(actor["stable_id"].startswith(expected_prefix), f"{context}: stable ID does not match actor type")
+    require(actor["actor_id"].startswith(expected_prefix), f"{context}: stable ID does not match actor type")
     require(actor["accountability_reference"].startswith("https://"), f"{context}: accountability reference is not traceable")
     require(actor["human_or_governance_contact"].startswith("https://"), f"{context}: human/governance contact is not traceable")
 
 
-def _validate_responsibility(responsibility: dict[str, Any], context: str, *, request: bool = False) -> None:
-    _validate_accountable_actor(responsibility["responsible_actor"], f"{context} responsible_actor")
+def validate_actor_registry(actor_registry: dict[str, Any] | None = None) -> dict[str, dict[str, Any]]:
+    actor_registry = load(ACTOR_REGISTRY) if actor_registry is None else actor_registry
+    errors = schema_errors(actor_registry, load(ACTOR_SCHEMA))
+    require(not errors, "responsibility actor registry schema failure: " + errors[0] if errors else "")
+    actors = actor_registry["actors"]
+    actor_ids = [actor["actor_id"] for actor in actors]
+    require(len(actor_ids) == len(set(actor_ids)), "duplicate responsibility actor ID")
+    history_ids: list[str] = []
+    for actor in actors:
+        _validate_registry_actor(actor, actor["actor_id"])
+        actor_history_ids = [record["record_id"] for record in actor["history"]]
+        require(len(actor_history_ids) == len(set(actor_history_ids)), f"{actor['actor_id']}: duplicate actor history record ID")
+        for index, record in enumerate(actor["history"]):
+            if index == 0:
+                require(record["supersedes_record_id"] is None, f"{actor['actor_id']}: first actor history record cannot supersede another record")
+            else:
+                require(record["supersedes_record_id"] == actor["history"][index - 1]["record_id"], f"{actor['actor_id']}: actor history chain is broken")
+        latest_change = actor["history"][-1]["change_type"]
+        if actor["status"] == "ACTIVE":
+            require(latest_change in {"REGISTERED", "REVISED"}, f"{actor['actor_id']}: active actor history status mismatch")
+        else:
+            require(latest_change == actor["status"], f"{actor['actor_id']}: inactive actor history status mismatch")
+        history_ids.extend(actor_history_ids)
+    require(len(history_ids) == len(set(history_ids)), "duplicate actor history record ID across registry")
+    return {actor["actor_id"]: actor for actor in actors}
+
+
+def active_actor_ids(actor_registry: dict[str, Any] | None = None) -> list[str]:
+    actors = validate_actor_registry(actor_registry)
+    return sorted(actor_id for actor_id, actor in actors.items() if actor["status"] == "ACTIVE")
+
+
+def _schema_actor_ref_ids(schema: dict[str, Any]) -> list[str]:
+    try:
+        values = schema["$defs"]["accountableActorRef"]["properties"]["actor_ref"]["enum"]
+    except (KeyError, TypeError) as exc:
+        raise ContractError("schema accountable actor_ref enum is missing") from exc
+    require(isinstance(values, list) and all(isinstance(value, str) for value in values), "schema accountable actor_ref enum is invalid")
+    return sorted(values)
+
+
+def validate_actor_contract_sources(
+    actor_registry: dict[str, Any] | None = None,
+    registry_schema: dict[str, Any] | None = None,
+    request_schema: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    active_ids = active_actor_ids(actor_registry)
+    registry_schema_ids = _schema_actor_ref_ids(load(SCHEMA) if registry_schema is None else registry_schema)
+    request_schema_ids = _schema_actor_ref_ids(load(REQUEST_SCHEMA) if request_schema is None else request_schema)
+    require(registry_schema_ids == active_ids, "stage snapshot registry schema actor_ref set drift")
+    require(request_schema_ids == active_ids, "stage snapshot request schema actor_ref set drift")
+    require(registry_schema_ids == request_schema_ids, "stage snapshot schemas use different actor_ref sets")
+    return {"status": "PASS", "active_actor_ids": active_ids}
+
+
+def materialize_actor_schema_refs(*, check: bool) -> dict[str, Any]:
+    active_ids = active_actor_ids()
+    changed: list[str] = []
+    for path in (SCHEMA, REQUEST_SCHEMA):
+        schema = load(path)
+        current_ids = _schema_actor_ref_ids(schema)
+        if current_ids != active_ids:
+            require(not check, f"{path.relative_to(ROOT)} actor_ref enum is stale")
+            schema["$defs"]["accountableActorRef"]["properties"]["actor_ref"]["enum"] = active_ids
+            path.write_text(json.dumps(schema, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            changed.append(str(path.relative_to(ROOT)))
+    return {"status": "PASS", "active_actor_ids": active_ids, "changed": changed}
+
+
+def resolve_actor(actor_ref: dict[str, Any], context: str, actor_registry: dict[str, Any] | None = None) -> dict[str, Any]:
+    require(isinstance(actor_ref, dict) and set(actor_ref) == {"actor_ref"}, f"{context}: final responsibility must use only actor_ref")
+    actors = validate_actor_registry(actor_registry)
+    actor_id = actor_ref.get("actor_ref")
+    require(actor_id in actors, f"{context}: actor_ref does not resolve")
+    actor = actors[actor_id]
+    require(actor["status"] == "ACTIVE", f"{context}: retired or withdrawn actor_ref cannot be used")
+    return actor
+
+
+def _validate_responsibility(
+    responsibility: dict[str, Any], context: str, *, request: bool = False,
+    actor_registry: dict[str, Any] | None = None,
+) -> None:
+    resolve_actor(responsibility["responsible_actor"], f"{context} responsible_actor", actor_registry)
     publisher_key = "proposed_publisher_actor" if request else "publisher_actor"
-    _validate_accountable_actor(responsibility[publisher_key], f"{context} {publisher_key}")
+    resolve_actor(responsibility[publisher_key], f"{context} {publisher_key}", actor_registry)
 
 
 def fetch_remote_fact(repository: str, pr: int) -> dict[str, Any]:
@@ -160,13 +257,18 @@ def fetch_remote_facts(registry: dict[str, Any]) -> dict[str, dict[str, Any]]:
     return facts
 
 
-def validate_request(request: dict[str, Any]) -> None:
+def validate_request(request: dict[str, Any], actor_registry: dict[str, Any] | None = None) -> None:
+    validate_actor_contract_sources(actor_registry)
     errors = schema_errors(request, load(REQUEST_SCHEMA))
     require(not errors, "stage snapshot request schema failure: " + errors[0] if errors else "")
-    _validate_responsibility(request["responsibility"], "stage snapshot request", request=True)
+    _validate_responsibility(request["responsibility"], "stage snapshot request", request=True, actor_registry=actor_registry)
 
 
-def validate_registry(registry: dict[str, Any], remote_facts: dict[str, dict[str, Any]] | None = None) -> dict[str, Any]:
+def validate_registry(
+    registry: dict[str, Any], remote_facts: dict[str, dict[str, Any]] | None = None,
+    actor_registry: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    validate_actor_contract_sources(actor_registry)
     errors = schema_errors(registry, load(SCHEMA))
     require(not errors, "stage snapshot registry schema failure: " + errors[0] if errors else "")
     require(set(registry["axis_invariants"]) == INVARIANTS, "stage/publication orthogonality invariants are incomplete")
@@ -190,7 +292,7 @@ def validate_registry(registry: dict[str, Any], remote_facts: dict[str, dict[str
         responsibility = item["responsibility"]
         responsibility_record = responsibility["responsibility_record"]
 
-        _validate_responsibility(responsibility, sid)
+        _validate_responsibility(responsibility, sid, actor_registry=actor_registry)
 
         require(source["pull_request_url"] == f"https://github.com/{source['repository']}/pull/{source['pull_request']}", f"{sid}: source PR URL/repository mismatch")
         require(evidence["relay_pull_request_url"] == f"https://github.com/{evidence['relay_repository']}/pull/{evidence['relay_pull_request']}", f"{sid}: relay PR URL/repository mismatch")
@@ -257,7 +359,11 @@ def validate_registry(registry: dict[str, Any], remote_facts: dict[str, dict[str
             )
         for predecessor in item["relationships"]["predecessors"]:
             predecessor_responsibility = by_id[predecessor]["responsibility"]
-            if _actor_identity(responsibility["responsible_actor"]) != _actor_identity(predecessor_responsibility["responsible_actor"]):
+            actor_changed = any(
+                _actor_identity(responsibility[field]) != _actor_identity(predecessor_responsibility[field])
+                for field in ("responsible_actor", "publisher_actor")
+            )
+            if actor_changed:
                 require(
                     responsibility_record["supersedes_record_id"] == predecessor_responsibility["responsibility_record"]["record_id"],
                     f"{sid}: accountable actor changed without a new superseding responsibility record",
@@ -291,7 +397,7 @@ def _status_label(item: dict[str, Any]) -> str:
     return labels[item["publication_status"]]
 
 
-def render_projection(registry: dict[str, Any]) -> str:
+def render_projection(registry: dict[str, Any], actor_registry: dict[str, Any] | None = None) -> str:
     visible = [item for item in registry["snapshots"] if item["homepage"]["visible"]]
     visible.sort(key=lambda item: (item["homepage"]["priority"], item["homepage"]["sort_time"], item["snapshot_id"]), reverse=True)
     visible = visible[: registry["projection_limit"]]
@@ -304,8 +410,8 @@ def render_projection(registry: dict[str, Any]) -> str:
     for item in visible:
         source, evidence = item["source"], item["evidence"]
         responsibility = item["responsibility"]
-        accountable = responsibility["responsible_actor"]
-        publisher = responsibility["publisher_actor"]
+        accountable = resolve_actor(responsibility["responsible_actor"], f"{item['snapshot_id']} responsible_actor", actor_registry)
+        publisher = resolve_actor(responsibility["publisher_actor"], f"{item['snapshot_id']} publisher_actor", actor_registry)
         execution_agents = "、".join(actor["name"] for actor in responsibility["execution_agents"]) or "无"
         workflows = "、".join(workflow["name"] for workflow in responsibility["automation_workflows"]) or "无"
         flags = f"Accepted=`{str(item['accepted']).lower()}` · Current=`{str(item['current']).lower()}` · Activated=`{str(item['activated']).lower()}` · 正式能力影响=`{str(item['affects_formal_capability']).lower()}`"
@@ -318,9 +424,9 @@ def render_projection(registry: dict[str, Any]) -> str:
             "",
             f"**状态边界：** {flags}",
             "",
-            f"**最终责任主体：** `{accountable['type']}` {accountable['name']}（{accountable['role']}；[责任依据]({accountable['accountability_reference']})；[负责人／治理入口]({accountable['human_or_governance_contact']})）",
+            f"**最终责任主体：** `{accountable['type']}` {accountable['official_name']}（`{accountable['actor_id']}`；{accountable['role']}；[责任依据]({accountable['accountability_reference']})；[负责人／治理入口]({accountable['human_or_governance_contact']})）",
             "",
-            f"**发布责任主体：** `{publisher['type']}` {publisher['name']}（{publisher['role']}）",
+            f"**发布责任主体：** `{publisher['type']}` {publisher['official_name']}（`{publisher['actor_id']}`；{publisher['role']}）",
             "",
             f"**技术执行记录（非最终责任）：** Agent／模型：{execution_agents}；自动化／工作流：{workflows}",
             "",
@@ -328,7 +434,7 @@ def render_projection(registry: dict[str, Any]) -> str:
             "",
             f"**仍有阻断：** {blockers}",
             "",
-            f"**证据：** [正式 PR]({source['pull_request_url']}) / [1111 回执 PR #{evidence['relay_pull_request']}]({evidence['relay_pull_request_url']}) / [机器 registry](./data/operations/stage-snapshots.json)",
+            f"**证据：** [正式 PR]({source['pull_request_url']}) / [1111 回执 PR #{evidence['relay_pull_request']}]({evidence['relay_pull_request_url']}) / [快照 registry](./data/operations/stage-snapshots.json) / [责任主体 registry](./data/operations/responsibility-actors.json)",
             "",
             f"**Claim ceiling：** {item['claim_ceiling']}", "",
         ])

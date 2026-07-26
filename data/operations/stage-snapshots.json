@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "method_candidate": "Ignition Iteration Method 1.4.0 Candidate — Continuous Stage Snapshot Publication",
   "authority": "data/operations/stage-snapshots.json",
   "registry_state": {
@@ -25,20 +25,10 @@
       "produced_at": "2026-07-26T14:45:43+08:00",
       "responsibility": {
         "responsible_actor": {
-          "type": "ORGANIZATION",
-          "name": "Arvin-liu/when-systems-catch-fire project governance",
-          "stable_id": "org:github/arvin-liu/when-systems-catch-fire",
-          "role": "Stage snapshot publication accountability",
-          "accountability_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134",
-          "human_or_governance_contact": "https://github.com/Arvin-liu/when-systems-catch-fire/issues"
+          "actor_ref": "org:github/arvin-liu/when-systems-catch-fire"
         },
         "publisher_actor": {
-          "type": "ORGANIZATION",
-          "name": "Arvin-liu/when-systems-catch-fire project governance",
-          "stable_id": "org:github/arvin-liu/when-systems-catch-fire",
-          "role": "Stage snapshot candidate publisher",
-          "accountability_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134",
-          "human_or_governance_contact": "https://github.com/Arvin-liu/when-systems-catch-fire/issues"
+          "actor_ref": "org:github/arvin-liu/when-systems-catch-fire"
         },
         "execution_agents": [
           {

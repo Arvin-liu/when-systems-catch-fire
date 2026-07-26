@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "attack_cases": [
     {"id": "A15a", "name": "ignition founder"},
     {"id": "A15b", "name": "upstream project"},
@@ -28,28 +28,20 @@
     {"id": "A15y", "name": "无人负责，由系统自动完成"},
     {"id": "A15z", "name": "人工智能维护者"}
   ],
+  "new_automation_variant_cases": [
+    {"id": "A15aa", "name": "automatic publication process"},
+    {"id": "A15ab", "name": "autonomous publishing process"},
+    {"id": "A15ac", "name": "GitHub Action"},
+    {"id": "A15ad", "name": "自动化发布流程"}
+  ],
   "positive_cases": [
     {
       "id": "P15a-PERSON",
-      "actor": {
-        "type": "PERSON",
-        "name": "Li Zhiyuan",
-        "stable_id": "person:github/arvin-liu",
-        "role": "Stage snapshot publication reviewer",
-        "accountability_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134",
-        "human_or_governance_contact": "https://github.com/Arvin-liu"
-      }
+      "actor": {"actor_ref": "person:github/arvin-liu"}
     },
     {
       "id": "P15b-ORGANIZATION",
-      "actor": {
-        "type": "ORGANIZATION",
-        "name": "Arvin-liu/when-systems-catch-fire project governance",
-        "stable_id": "org:github/arvin-liu/when-systems-catch-fire",
-        "role": "Stage snapshot publication accountability",
-        "accountability_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134",
-        "human_or_governance_contact": "https://github.com/Arvin-liu/when-systems-catch-fire/issues"
-      }
+      "actor": {"actor_ref": "org:github/arvin-liu/when-systems-catch-fire"}
     }
   ]
 }

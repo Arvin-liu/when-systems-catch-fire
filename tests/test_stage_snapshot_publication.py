@@ -6,6 +6,8 @@ from pathlib import Path
 from jsonschema import Draft202012Validator, FormatChecker
 
 from tools.operations.stage_snapshot_contract import (
+    ACTOR_REGISTRY,
+    ACTOR_SCHEMA,
     ContractError,
     README,
     REGISTRY,
@@ -14,10 +16,14 @@ from tools.operations.stage_snapshot_contract import (
     load,
     readme_with_projection,
     render_projection,
+    resolve_actor,
+    validate_actor_contract_sources,
+    validate_actor_registry,
     validate_materialized_projection,
     validate_registry,
     validate_request,
 )
+from tools.operations.run_stage_snapshot_responsibility_cases import joint_case_pass, legacy_free_text_actor
 
 ACTOR_CASES = Path(__file__).parent / "stage_snapshot_responsibility_actor_cases.json"
 
@@ -29,6 +35,8 @@ class StageSnapshotPublicationTests(unittest.TestCase):
         cls.schema = load(SCHEMA)
         cls.request_schema = load(REQUEST_SCHEMA)
         cls.actor_cases = load(ACTOR_CASES)
+        cls.actor_registry = load(ACTOR_REGISTRY)
+        cls.actor_schema = load(ACTOR_SCHEMA)
 
     def registry(self):
         return copy.deepcopy(self.base)
@@ -60,7 +68,7 @@ class StageSnapshotPublicationTests(unittest.TestCase):
         person = copy.deepcopy(self.actor_cases["positive_cases"][0]["actor"])
         organization = copy.deepcopy(self.actor_cases["positive_cases"][1]["actor"])
         return {
-            "request_version": "1.1.0", "task_id": "TASK", "result_object": "artifact",
+            "request_version": "1.2.0", "task_id": "TASK", "result_object": "artifact",
             "source_head": "1" * 40, "evidence_entries": ["https://github.com/a/b/pull/1"],
             "lifecycle_state": "CANDIDATE", "claim_ceiling": "artifact only",
             "homepage_summary": "candidate result", "limitations_and_incomplete": ["review pending"],
@@ -97,14 +105,14 @@ class StageSnapshotPublicationTests(unittest.TestCase):
             for field in ("responsible_actor", "publisher_actor"):
                 with self.subTest(case_id=case["id"], surface="registry", field=field):
                     registry = self.registry()
-                    self.item(registry)["responsibility"][field]["name"] = case["name"]
+                    self.item(registry)["responsibility"][field] = legacy_free_text_actor(case["name"])
                     errors = list(Draft202012Validator(self.schema, format_checker=FormatChecker()).iter_errors(registry))
                     self.assertTrue(errors, f"{case['id']} must fail the standard registry schema")
                     self.assertRejected(registry, "schema failure|non-accountable")
             for field in ("responsible_actor", "proposed_publisher_actor"):
                 with self.subTest(case_id=case["id"], surface="request", field=field):
                     request = self.request()
-                    request["responsibility"][field]["name"] = case["name"]
+                    request["responsibility"][field] = legacy_free_text_actor(case["name"])
                     errors = list(Draft202012Validator(self.request_schema, format_checker=FormatChecker()).iter_errors(request))
                     self.assertTrue(errors, f"{case['id']} must fail the standard request schema")
                     with self.assertRaisesRegex(ContractError, "schema failure|non-accountable"):
@@ -112,11 +120,34 @@ class StageSnapshotPublicationTests(unittest.TestCase):
 
     def test_stable_actor_attack_set_rejected_in_every_accountable_field(self):
         for case in self.actor_cases["attack_cases"]:
+            for surface, fields in (("registry", ("responsible_actor", "publisher_actor")), ("request", ("responsible_actor", "proposed_publisher_actor"))):
+                for field in fields:
+                    with self.subTest(case_id=case["id"], surface=surface, field=field):
+                        if surface == "registry":
+                            instance = self.registry()
+                            self.item(instance)["responsibility"][field] = legacy_free_text_actor(case["name"])
+                            errors = list(Draft202012Validator(self.schema, format_checker=FormatChecker()).iter_errors(instance))
+                            self.assertTrue(errors)
+                            self.assertRejected(instance, "schema failure|actor_ref")
+                        else:
+                            instance = self.request()
+                            instance["responsibility"][field] = legacy_free_text_actor(case["name"])
+                            errors = list(Draft202012Validator(self.request_schema, format_checker=FormatChecker()).iter_errors(instance))
+                            self.assertTrue(errors)
+                            with self.assertRaisesRegex(ContractError, "schema failure|actor_ref"):
+                                validate_request(instance)
+
+    def test_new_automation_variants_rejected_on_all_four_positions(self):
+        for case in self.actor_cases["new_automation_variant_cases"]:
             for field in ("responsible_actor", "publisher_actor"):
-                with self.subTest(case_id=case["id"], field=field):
-                    registry = self.registry()
-                    self.item(registry)["responsibility"][field]["name"] = case["name"]
-                    self.assertRejected(registry, "schema failure|non-accountable|generic or placeholder")
+                registry = self.registry()
+                self.item(registry)["responsibility"][field] = legacy_free_text_actor(case["name"])
+                self.assertRejected(registry, "schema failure|actor_ref")
+            for field in ("responsible_actor", "proposed_publisher_actor"):
+                request = self.request()
+                request["responsibility"][field] = legacy_free_text_actor(case["name"])
+                with self.assertRaisesRegex(ContractError, "schema failure|actor_ref"):
+                    validate_request(request)
 
     def test_positive_person_and_organization_are_each_accepted(self):
         for case in self.actor_cases["positive_cases"]:
@@ -142,25 +173,87 @@ class StageSnapshotPublicationTests(unittest.TestCase):
         del self.item(registry)["responsibility"]["responsible_actor"]
         self.assertRejected(registry, "schema failure")
         registry = self.registry()
-        self.item(registry)["responsibility"]["responsible_actor"]["name"] = "maintainer"
-        self.assertRejected(registry, "generic or placeholder")
+        self.item(registry)["responsibility"]["responsible_actor"] = legacy_free_text_actor("maintainer")
+        self.assertRejected(registry, "schema failure|actor_ref")
         registry = self.registry()
         self.item(registry)["responsibility"]["responsible_organization"] = "Codex Agent"
         self.assertRejected(registry, "schema failure")
 
     def test_actor_schema_mutations_fail_closed(self):
         mutations = (
-            ("missing stable ID", lambda actor: actor.pop("stable_id")),
-            ("wrong type prefix", lambda actor: actor.__setitem__("stable_id", "person:wrong-kind")),
+            ("missing stable ID", lambda actor: actor.pop("actor_id")),
+            ("wrong type prefix", lambda actor: actor.__setitem__("actor_id", "person:wrong-kind")),
+            ("non-accountable type", lambda actor: actor.__setitem__("type", "AGENT")),
+            ("technical actor name", lambda actor: actor.__setitem__("official_name", "Codex Agent")),
             ("missing role", lambda actor: actor.__setitem__("role", "")),
             ("missing accountability reference", lambda actor: actor.__setitem__("accountability_reference", "")),
             ("missing governance contact", lambda actor: actor.__setitem__("human_or_governance_contact", "unknown")),
         )
         for name, mutate in mutations:
             with self.subTest(mutation=name):
-                registry = self.registry()
-                mutate(self.item(registry)["responsibility"]["responsible_actor"])
-                self.assertRejected(registry, "schema failure|stable ID|traceable")
+                actor_registry = copy.deepcopy(self.actor_registry)
+                mutate(actor_registry["actors"][1])
+                with self.assertRaisesRegex(ContractError, "schema failure|stable ID|non-accountable|traceable"):
+                    validate_actor_registry(actor_registry)
+
+    def test_reviewed_organization_name_may_contain_automation_without_becoming_free_text_authority(self):
+        actor_registry = copy.deepcopy(self.actor_registry)
+        actor_registry["actors"][1]["official_name"] = "Acme Automation Cooperative"
+        actors = validate_actor_registry(actor_registry)
+        self.assertEqual(actors["org:github/arvin-liu/when-systems-catch-fire"]["official_name"], "Acme Automation Cooperative")
+
+    def test_actor_ref_is_positive_registry_identity_not_free_text(self):
+        registry = self.registry()
+        actor_ref = self.item(registry)["responsibility"]["responsible_actor"]
+        actor = resolve_actor(actor_ref, "test")
+        self.assertEqual(actor["type"], "ORGANIZATION")
+        self.assertEqual(actor["official_name"], "Arvin-liu/when-systems-catch-fire project governance")
+        actor_ref["name"] = "attacker-controlled display override"
+        self.assertRejected(registry, "schema failure|only actor_ref")
+
+    def test_nonexistent_removed_and_retired_actor_refs_fail_closed(self):
+        registry = self.registry()
+        self.item(registry)["responsibility"]["responsible_actor"]["actor_ref"] = "org:missing/actor"
+        self.assertRejected(registry, "schema failure|does not resolve")
+
+        actor_registry = copy.deepcopy(self.actor_registry)
+        actor_registry["actors"].pop()
+        with self.assertRaisesRegex(ContractError, "actor registry schema failure|actor_ref set drift"):
+            validate_registry(self.registry(), actor_registry=actor_registry)
+
+        actor_registry = copy.deepcopy(self.actor_registry)
+        actor = actor_registry["actors"][1]
+        actor["status"] = "RETIRED"
+        actor["retired_at"] = "2026-07-26T01:00:00+08:00"
+        actor["history"].append({
+            "record_id": "ACTOR-ORG-IGNITION-GOVERNANCE-002",
+            "changed_at": "2026-07-26T01:00:00+08:00",
+            "change_type": "RETIRED",
+            "supersedes_record_id": "ACTOR-ORG-IGNITION-GOVERNANCE-001",
+            "reason": "Mutation probe retirement.",
+            "source_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/135",
+        })
+        with self.assertRaisesRegex(ContractError, "actor_ref set drift|retired"):
+            validate_registry(self.registry(), actor_registry=actor_registry)
+
+    def test_schema_runtime_actor_sets_and_generated_enums_cannot_drift(self):
+        self.assertEqual(validate_actor_contract_sources()["status"], "PASS")
+        request_schema = copy.deepcopy(self.request_schema)
+        request_schema["$defs"]["accountableActorRef"]["properties"]["actor_ref"]["enum"].pop()
+        with self.assertRaisesRegex(ContractError, "request schema actor_ref set drift|different actor_ref sets"):
+            validate_actor_contract_sources(request_schema=request_schema)
+        registry_schema = copy.deepcopy(self.schema)
+        registry_schema["$defs"]["accountableActorRef"]["properties"]["actor_ref"]["enum"].append("org:stale/generated-entry")
+        with self.assertRaisesRegex(ContractError, "registry schema actor_ref set drift"):
+            validate_actor_contract_sources(registry_schema=registry_schema)
+
+    def test_runner_joint_verdict_cannot_ignore_either_surface(self):
+        self.assertTrue(joint_case_pass("REJECT", "REJECT", "REJECT"))
+        self.assertFalse(joint_case_pass("REJECT", "ACCEPT", "REJECT"))
+        self.assertFalse(joint_case_pass("REJECT", "REJECT", "ACCEPT"))
+        self.assertTrue(joint_case_pass("ACCEPT", "ACCEPT", "ACCEPT"))
+        self.assertFalse(joint_case_pass("ACCEPT", "REJECT", "ACCEPT"))
+        self.assertFalse(joint_case_pass("ACCEPT", "ACCEPT", "REJECT"))
 
     def test_published_snapshot_is_orthogonal_to_accepted_current_activated(self):
         registry = self.registry()

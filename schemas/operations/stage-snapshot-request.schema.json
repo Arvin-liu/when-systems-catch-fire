@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["request_version", "task_id", "result_object", "source_head", "evidence_entries", "lifecycle_state", "claim_ceiling", "homepage_summary", "limitations_and_incomplete", "responsibility", "recommendation", "agent_claims_published_to_main"],
   "properties": {
-    "request_version": {"const": "1.1.0"},
+    "request_version": {"const": "1.2.0"},
     "task_id": {"type": "string", "minLength": 1},
     "result_object": {"type": "string", "minLength": 1},
     "source_head": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
@@ -19,8 +19,8 @@
       "type": "object", "additionalProperties": false,
       "required": ["responsible_actor", "proposed_publisher_actor", "execution_agents", "automation_workflows", "founder_responsibility_inferred", "upstream_responsibility_inferred"],
       "properties": {
-        "responsible_actor": {"$ref": "#/$defs/accountableActor"},
-        "proposed_publisher_actor": {"$ref": "#/$defs/accountableActor"},
+        "responsible_actor": {"$ref": "#/$defs/accountableActorRef"},
+        "proposed_publisher_actor": {"$ref": "#/$defs/accountableActorRef"},
         "execution_agents": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/technicalActor"}},
         "automation_workflows": {"type": "array", "uniqueItems": true, "items": {"$ref": "#/$defs/technicalActor"}},
         "founder_responsibility_inferred": {"const": false},
@@ -32,37 +32,18 @@
   },
   "$defs": {
     "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
-    "accountableName": {
-      "allOf": [
-        {"$ref": "#/$defs/nonblank"},
-        {
-          "not": {
-            "enum": [
-              "ignition founder", "upstream project",
-              "Codex Agent", "automated publication workflow", "GPT-5 Agent", "AI maintainer",
-              "release bot", "CI pipeline", "GitHub Actions", "the algorithm", "the system",
-              "automation team", "由自动流程负责", "无人负责，由系统自动完成", "人工智能维护者"
-            ]
-          }
-        }
-      ]
-    },
-    "accountableActor": {
+    "accountableActorRef": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "name", "stable_id", "role", "accountability_reference", "human_or_governance_contact"],
+      "required": ["actor_ref"],
       "properties": {
-        "type": {"enum": ["PERSON", "ORGANIZATION"]},
-        "name": {"$ref": "#/$defs/accountableName"},
-        "stable_id": {"type": "string", "pattern": "^(person|org):[a-z0-9][a-z0-9._/-]{2,127}$"},
-        "role": {"$ref": "#/$defs/nonblank"},
-        "accountability_reference": {"type": "string", "format": "uri", "pattern": "^https://"},
-        "human_or_governance_contact": {"type": "string", "format": "uri", "pattern": "^https://"}
-      },
-      "allOf": [
-        {"if": {"properties": {"type": {"const": "PERSON"}}}, "then": {"properties": {"stable_id": {"pattern": "^person:"}}}},
-        {"if": {"properties": {"type": {"const": "ORGANIZATION"}}}, "then": {"properties": {"stable_id": {"pattern": "^org:"}}}}
-      ]
+        "actor_ref": {
+          "enum": [
+            "org:github/arvin-liu/when-systems-catch-fire",
+            "person:github/arvin-liu"
+          ]
+        }
+      }
     },
     "technicalActor": {
       "type": "object",

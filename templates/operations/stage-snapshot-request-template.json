@@ -1,5 +1,5 @@
 {
-  "request_version": "1.1.0",
+  "request_version": "1.2.0",
   "task_id": "<TASK_ID>",
   "result_object": "<EXACT_RESULT_OBJECT>",
   "source_head": "0000000000000000000000000000000000000000",
@@ -10,20 +10,10 @@
   "limitations_and_incomplete": ["<LIMITATION_OR_UNFINISHED_ITEM>"],
   "responsibility": {
     "responsible_actor": {
-      "type": "PERSON",
-      "name": "<CONCRETE_HUMAN_NAME>",
-      "stable_id": "person:<STABLE_PUBLIC_ID>",
-      "role": "<ACCOUNTABLE_ROLE>",
-      "accountability_reference": "https://github.com/<OWNER>/<REPOSITORY>/pull/<NUMBER>",
-      "human_or_governance_contact": "https://github.com/<ACCOUNTABLE_HANDLE>"
+      "actor_ref": "person:<PRE_REGISTERED_STABLE_ID>"
     },
     "proposed_publisher_actor": {
-      "type": "ORGANIZATION",
-      "name": "<CONCRETE_ACCOUNTABLE_ORGANIZATION>",
-      "stable_id": "org:<STABLE_PUBLIC_ID>",
-      "role": "<PUBLICATION_ROLE>",
-      "accountability_reference": "https://github.com/<OWNER>/<REPOSITORY>/pull/<NUMBER>",
-      "human_or_governance_contact": "https://github.com/<OWNER>/<REPOSITORY>/issues"
+      "actor_ref": "org:<PRE_REGISTERED_STABLE_ID>"
     },
     "execution_agents": [
       {
