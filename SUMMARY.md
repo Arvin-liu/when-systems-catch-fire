@@ -7,6 +7,8 @@
 - [README.md](./README.md) — 人类总入口与双前门
 - [项目现状](./docs/project-current-state.md) — 版本化、可演化、非终局的当前状态描述
 - [点火迭代操作法](./ITERATION.md) — 状态改变任务的远端真相、缺口、claim ceiling、同步矩阵、验证和回执方法
+- [阶段成果持续快照制度](./docs/operations/stage-snapshot-publication.md) — 方法 `1.4.0` Draft Candidate；展示阶段摘要但不自动接受、激活或合并候选载荷
+- [阶段快照 registry](./data/operations/stage-snapshots.json) — “正在炼化”栏目的机器权威，所有能力布尔量必须显式记录
 - [ARCHITECTURE.md](./ARCHITECTURE.md) — 现行架构唯一权威
 - [FOUNDATION.md](./FOUNDATION.md) — 数学与逻辑双地基权威
 - [docs/foundation/README.md](./docs/foundation/README.md) — 架构契约导航

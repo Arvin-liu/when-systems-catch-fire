@@ -103,6 +103,17 @@
         "docs/governance/"
       ],
       "reason": "Q33 governance components share governance-related paths across data/, schemas/, tools/, tests/, and docs/. Includes charter and licensing which also live under docs/governance/."
+    },
+    {
+      "authority_source": "docs/operations/stage-snapshot-publication.md",
+      "component_ids": [
+        "iteration",
+        "stage_snapshot_publication"
+      ],
+      "path_patterns": [
+        "templates/operations/stage-snapshot-request-template.json"
+      ],
+      "reason": "The stage snapshot request template is both a method handoff surface and the specific 1.4 candidate interface."
     }
   ],
   "components": [
@@ -452,8 +463,8 @@
       "canonical_target": "ITERATION.md",
       "component_id": "iteration",
       "component_type": "operation_control",
-      "description": "1.2 类型化传播为 Current；1.3 候选增加自举增量规划、选择性物化、缓存身份与回滚恢复。",
-      "label": "点火迭代操作法 1.2 Current / 1.3 Draft",
+      "description": "1.3 增量执行为 Current；1.4 候选增加正交的持续阶段快照发布轴。",
+      "label": "点火迭代操作法 1.3 Current / 1.4 Draft",
       "layer_or_overlay": "overlay",
       "lifecycle": {
         "source": "docs/architecture/incremental-execution.md",
@@ -472,6 +483,42 @@
         "tests/test_seal_freshness.py",
         "tools/validate_external_attestation.py",
         "tests/test_external_attestation.py"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/operations/stage-snapshot-publication.md",
+      "component_id": "stage_snapshot_publication",
+      "component_type": "operation_control",
+      "description": "把阶段成果的可审计摘要、精确来源、显式状态和证据入口确定性投影到 README 与 Pages，而不提升能力生命周期。",
+      "label": "阶段成果持续快照 1.4 Draft",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {
+        "source": "docs/operations/stage-snapshot-publication.md",
+        "status": "draft_candidate",
+        "version": "1.4.0-candidate"
+      },
+      "map_projection": {
+        "no_change_reason": "阶段发布是 iteration 节点的候选操作接口；主页已有独立可见投影，不新增架构层或真值节点。",
+        "represented_by": "iteration",
+        "visible": false
+      },
+      "path_patterns": [
+        "docs/operations/stage-snapshot-publication.md",
+        "data/operations/responsibility-actors.json",
+        "data/operations/stage-snapshots.json",
+        "schemas/operations/responsibility-actor-registry.schema.json",
+        "schemas/operations/stage-snapshot-registry.schema.json",
+        "schemas/operations/stage-snapshot-request.schema.json",
+        "templates/operations/stage-snapshot-request-template.json",
+        "tools/operations/stage_snapshot_contract.py",
+        "tools/operations/validate_stage_snapshots.py",
+        "tools/operations/generate_stage_snapshot_projection.py",
+        "tools/operations/generate_stage_snapshot_actor_contract.py",
+        "tools/operations/run_stage_snapshot_responsibility_cases.py",
+        "tests/test_stage_snapshot_publication.py",
+        "tests/stage_snapshot_responsibility_actor_cases.json",
+        "docs/generated/recent-stage-results.md"
       ]
     },
     {
@@ -833,6 +880,7 @@
         "schemas/operations/change-propagation-closure.schema.json",
         "tests/test_change_propagation.py",
         "tests/test_diff_coverage_gate.py",
+        "tests/test_era_resolver_generalization.py",
         "data/operations/propagation/",
         ".github/workflows/foundation-validation.yml",
         "tests/fixtures/",
@@ -1394,5 +1442,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "1.1.1"
+  "registry_version": "1.2.0"
 }

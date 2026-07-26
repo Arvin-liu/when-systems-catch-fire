@@ -1,5 +1,5 @@
 {
-  "registry_version": "1.2.0",
+  "registry_version": "1.3.0",
   "purpose": "Canonical synchronization topology and obligations only; not a substantive project truth store.",
   "surfaces": [
     {
@@ -557,6 +557,41 @@
         "NO_CHANGE_WITH_REASON"
       ],
       "validation_mode": "repository_build_validation",
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
+    },
+    {
+      "surface_id": "machine.stage_snapshots",
+      "surface_type": "repository_source",
+      "locator": "data/operations/stage-snapshots.json",
+      "roles": [
+        "machine_state",
+        "human_front_door",
+        "agent_handoff"
+      ],
+      "authority": "canonical",
+      "derived_from": [],
+      "trigger_dimensions": [
+        "identity",
+        "handoff",
+        "lifecycle_current_state",
+        "deployment_rendering",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "INTERFACE_CHANGE",
+        "EVIDENCE_UPDATE",
+        "RELEASE_OR_CURRENT_STATE_SYNC",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON"
+      ],
+      "validation_mode": "repository_schema_semantic_remote_identity_and_projection_validation",
       "blocks": [
         "ready",
         "current",

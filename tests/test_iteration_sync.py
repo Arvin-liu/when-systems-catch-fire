@@ -682,15 +682,23 @@ class IterationSyncTests(unittest.TestCase):
         validate_custom(early, early_path, early_seal, era_registry)
         validate_custom(early, early_path, early_seal, live_registry)
 
-        # The current candidate (Q33) declares the live version and MUST still
-        # satisfy the current contract against the live registry.
+        # Q33 was the live candidate when registry 1.2.0 was sealed. The 1.4
+        # stage-snapshot candidate advances the live registry to 1.3.0 without
+        # retroactively rewriting Q33. Generic era resolution must therefore
+        # preserve Q33 while the new surface remains mandatory for live work.
         q33_path = ROOT / "data/operations/iterations/121Q33.json"
         q33 = load_json(q33_path)
         q33_seal = load_json(infer_seal_path(q33))
-        self.assertEqual(q33["synchronization_closure"]["registry_version"], live_version)
+        self.assertNotEqual(q33["synchronization_closure"]["registry_version"], live_version)
         self.assertIn("copyright_governance", required_registry_surfaces(q33, live_registry),
-                      "current candidate must still be governed by the current contract")
+                      "Q33 classifications still reach the governance surface under live topology")
+        self.assertIn("machine.stage_snapshots", live_registry,
+                      "the live 1.4 candidate registry must expose the new stage snapshot surface")
+        q33_era = resolve_era_registry(q33["synchronization_closure"]["registry_version"], live_registry)
+        self.assertNotIn("machine.stage_snapshots", q33_era,
+                         "Q33's sealed era must not be retroactively polluted by the 1.4 surface")
         validate_manifest_schema(q33, q33_path)
+        validate_custom(q33, q33_path, q33_seal, q33_era)
         validate_custom(q33, q33_path, q33_seal, live_registry)
 
     def test_seal_diff_coverage_is_era_aware_not_live_polluted(self):

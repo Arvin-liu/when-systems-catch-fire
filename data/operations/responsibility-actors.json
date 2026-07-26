@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "authority": "data/operations/responsibility-actors.json",
+  "identity_contract": {
+    "authoritative_field": "actor_ref",
+    "allowed_types": ["PERSON", "ORGANIZATION"],
+    "display_name_authoritative": false,
+    "technical_actors_allowed": false
+  },
+  "actors": [
+    {
+      "actor_id": "person:github/arvin-liu",
+      "type": "PERSON",
+      "official_name": "Li Zhiyuan",
+      "role": "Stage snapshot publication reviewer",
+      "accountability_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134",
+      "human_or_governance_contact": "https://github.com/Arvin-liu",
+      "status": "ACTIVE",
+      "effective_at": "2026-07-26T00:00:00+08:00",
+      "retired_at": null,
+      "source_references": [
+        "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134"
+      ],
+      "history": [
+        {
+          "record_id": "ACTOR-PERSON-ARVIN-LIU-001",
+          "changed_at": "2026-07-26T00:00:00+08:00",
+          "change_type": "REGISTERED",
+          "supersedes_record_id": null,
+          "reason": "Initial controlled PERSON identity for stage snapshot accountability.",
+          "source_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134"
+        }
+      ]
+    },
+    {
+      "actor_id": "org:github/arvin-liu/when-systems-catch-fire",
+      "type": "ORGANIZATION",
+      "official_name": "Arvin-liu/when-systems-catch-fire project governance",
+      "role": "Stage snapshot publication accountability and governance",
+      "accountability_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134",
+      "human_or_governance_contact": "https://github.com/Arvin-liu/when-systems-catch-fire/issues",
+      "status": "ACTIVE",
+      "effective_at": "2026-07-26T00:00:00+08:00",
+      "retired_at": null,
+      "source_references": [
+        "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134",
+        "https://github.com/Arvin-liu/when-systems-catch-fire/issues"
+      ],
+      "history": [
+        {
+          "record_id": "ACTOR-ORG-IGNITION-GOVERNANCE-001",
+          "changed_at": "2026-07-26T00:00:00+08:00",
+          "change_type": "REGISTERED",
+          "supersedes_record_id": null,
+          "reason": "Initial controlled ORGANIZATION identity for stage snapshot publication governance.",
+          "source_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/134"
+        }
+      ]
+    }
+  ]
+}

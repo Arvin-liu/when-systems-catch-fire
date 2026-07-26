@@ -45,9 +45,9 @@ AUTHORITY_PATH = ROOT / "data" / "operations" / "generated-output-authority.json
 VALIDATOR = ROOT / "tools" / "operations" / "validate_generated_output_authority.py"
 
 # Merged (frozen-era) iterations that must resolve to a non-None era_ref.
-FROZEN_TASKS = ["121Q25", "121Q25C", "121Q25D", "121Q32", "121Q32I"]
+FROZEN_TASKS = ["121Q25", "121Q25C", "121Q25D", "121Q32", "121Q32I", "121Q33"]
 # Live (unmerged) candidate iterations — era_ref must be None.
-LIVE_TASKS = ["121Q25B", "121Q33"]
+LIVE_TASKS = ["121Q25B"]
 # CI's compute_change_propagation --era-ref for the Q32I change set. The generic
 # resolver must reproduce this exact boundary (no drift). Only a TEST may name it.
 CI_Q32I_ERA_REF = "0a13c246172c0338bf8dda5dc08db5a574a8b23f"
@@ -114,7 +114,7 @@ class EraResolverGeneralizationTests(unittest.TestCase):
     def test_resolve_for_request_reads_task_id(self):
         req = _load(ROOT / "data/operations/propagation/121Q33-request.json")
         era = resolve_era_for_request(ROOT, req)
-        self.assertIsNone(era["era_ref"])
+        self.assertEqual(era["era_ref"], "cf321f92014268af40cf9aa9231fe8a4f814b031")
         self.assertEqual(
             era["base"], "f54577a9084d0ac6e374341d96836c5d52bc3b8c"
         )

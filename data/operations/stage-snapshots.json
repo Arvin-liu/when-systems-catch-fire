@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.2.0",
+  "method_candidate": "Ignition Iteration Method 1.4.0 Candidate — Continuous Stage Snapshot Publication",
+  "authority": "data/operations/stage-snapshots.json",
+  "registry_state": {
+    "candidate": true,
+    "accepted": false,
+    "current": false,
+    "merged_to_main": false
+  },
+  "projection_limit": 5,
+  "axis_invariants": [
+    "PUBLISHED_SNAPSHOT != ACCEPTED",
+    "PUBLISHED_SNAPSHOT != CURRENT",
+    "PUBLISHED_SNAPSHOT != ACTIVATED",
+    "SNAPSHOT_MERGED_TO_MAIN != CANDIDATE_PAYLOAD_MERGED_TO_MAIN",
+    "HOMEPAGE_VISIBLE != CAPABILITY_AVAILABLE"
+  ],
+  "snapshots": [
+    {
+      "snapshot_id": "STAGE-R5A-20260726-001",
+      "title": "R5-A 两轮窄修复已进入来源分支，整体仍待审",
+      "summary": "PR #130 的两轮具体仓库合同修复已分别独立验收并普通合并到来源分支；R5-A 堆叠候选本身仍为 Draft，尚未完整验收。",
+      "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1",
+      "produced_at": "2026-07-26T14:45:43+08:00",
+      "responsibility": {
+        "responsible_actor": {
+          "actor_ref": "org:github/arvin-liu/when-systems-catch-fire"
+        },
+        "publisher_actor": {
+          "actor_ref": "org:github/arvin-liu/when-systems-catch-fire"
+        },
+        "execution_agents": [
+          {
+            "name": "Codex agents",
+            "role": "Implementation and evidence collection tools",
+            "evidence_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/130"
+          }
+        ],
+        "automation_workflows": [
+          {
+            "name": "GitHub Actions",
+            "role": "Candidate validation automation",
+            "evidence_reference": "https://github.com/Arvin-liu/when-systems-catch-fire/actions"
+          }
+        ],
+        "responsibility_record": {
+          "record_id": "RESP-STAGE-R5A-20260726-001",
+          "effective_at": "2026-07-26T14:45:43+08:00",
+          "supersedes_record_id": null,
+          "change_reason": "Initial accountable actor record for this snapshot candidate.",
+          "actor_change_requires_new_snapshot_revision": true
+        },
+        "founder_responsibility_inferred": false,
+        "upstream_responsibility_inferred": false
+      },
+      "source": {
+        "repository": "Arvin-liu/when-systems-catch-fire",
+        "pull_request": 130,
+        "pull_request_url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/130",
+        "branch": "architecture/ignition-r5a-life-integrity-charter-candidate-r1",
+        "exact_head": "019f52cc296b7417cc91ea97077fbf85d19ad7fc",
+        "candidate_payload_merged_to_main": false,
+        "snapshot_record_merged_to_main": false
+      },
+      "evidence": {
+        "relay_repository": "Arvin-liu/1111",
+        "relay_pull_request": 42,
+        "relay_pull_request_url": "https://github.com/Arvin-liu/1111/pull/42",
+        "relay_exact_head": "8a5bc8edc9d0b8175f73311dced8078e1cf24397",
+        "entries": [
+          "https://github.com/Arvin-liu/when-systems-catch-fire/pull/130",
+          "https://github.com/Arvin-liu/when-systems-catch-fire/pull/131",
+          "https://github.com/Arvin-liu/when-systems-catch-fire/pull/133",
+          "https://github.com/Arvin-liu/1111/pull/42"
+        ]
+      },
+      "lifecycle_state": "IMPLEMENTED_PENDING_REVIEW",
+      "publication_status": "PR_VISIBLE",
+      "result_type": "REPAIR",
+      "outcome": "PARTIAL",
+      "completed": [
+        "两轮具体仓库合同修复分别获得独立 exact-head 验收并进入 PR #130 来源分支",
+        "第一轮窄修复接受头 a2fd355fe6a3e55627c812ed3abd51ff41b8a008 经 PR #131 普通合并为 062f223f5da536d698d070481edd2acb0687b9c6",
+        "最新 11-case 窄修复接受头为 c4576972047a47045e95b1c794570597f58e6c9a",
+        "PR #133 以普通 merge 产生 ff158ba0351d68918a135ec3446f4f68ddf9387b"
+      ],
+      "incomplete": [
+        "PR #130 的完整堆叠候选尚未独立验收",
+        "R5-A 尚未进入 Main、Current 或 Activated",
+        "R5-B、R5-C 与 R6 未启动"
+      ],
+      "claim_ceiling": "仅证明两个已指明窄修复在其精确接受头通过独立实例级验收并进入 PR #130 来源分支；不证明 R5-A 整体完成、生命完整性、人体安全、疗效或普遍语义能力。",
+      "known_limitations_and_blockers": [
+        "PR #130 仍为 OPEN / DRAFT",
+        "来源分支当前头 019f52cc296b7417cc91ea97077fbf85d19ad7fc 仍需整体 exact-head 验收",
+        "本快照只公开可审计摘要和证据入口，不发布或激活候选载荷"
+      ],
+      "accepted": false,
+      "current": false,
+      "activated": false,
+      "affects_formal_capability": false,
+      "practical_application_allowed": false,
+      "privacy": {
+        "public_only": true,
+        "sensitive_material_included": false,
+        "secrets_included": false
+      },
+      "relationships": {
+        "predecessors": [],
+        "successors": [],
+        "supersedes": [],
+        "superseded_by": []
+      },
+      "recovery": {
+        "revision_path": "Submit a successor snapshot that names this snapshot as predecessor and declares the changed facts.",
+        "withdrawal_path": "Set publication_status to WITHDRAWN_SNAPSHOT, outcome to WITHDRAWN, preserve this ID, and record the reason.",
+        "rollback_path": "Revert only the registry record and deterministic homepage projection; never merge or rewrite the R5-A candidate payload as a side effect."
+      },
+      "homepage": {
+        "visible": true,
+        "priority": 100,
+        "sort_time": "2026-07-26T14:45:43+08:00",
+        "summary": "11-case 窄修复已验收并进入来源分支；PR #130 整体仍为 Draft，非 Main／Current／Activated。"
+      },
+      "remote_attestation": {
+        "verified_at": "2026-07-26T14:45:43+08:00",
+        "verifier": "Codex zero-background live GitHub refetch",
+        "verification_scope": "github_remote_identity_and_exact_head_at_recorded_time",
+        "source_pr_state": "OPEN",
+        "source_pr_draft": true,
+        "source_branch": "architecture/ignition-r5a-life-integrity-charter-candidate-r1",
+        "source_head": "019f52cc296b7417cc91ea97077fbf85d19ad7fc",
+        "relay_pr_state": "OPEN",
+        "relay_pr_draft": true,
+        "relay_head": "8a5bc8edc9d0b8175f73311dced8078e1cf24397"
+      }
+    }
+  ]
+}

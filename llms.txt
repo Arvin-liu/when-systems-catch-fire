@@ -3,6 +3,9 @@ At the current commit, Ignition is an evidence-traceable, object-typed, inferenc
 Current-state authority: docs/project-current-state.md.
 Current version: the 2026-07-12 mathematical and logical dual-foundation seven-layer architecture plus the subsequently merged current operation overlays, iteration method 1.3.0 and registry-derived system map 0.3.0.
 
+Candidate only: iteration method 1.4.0 Continuous Stage Snapshot Publication. Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.
+Stage snapshot accountability: responsible_actor and publisher_actor contain only actor_ref values resolved against data/operations/responsibility-actors.json; the active registry record, not a display name, establishes the concrete PERSON or ORGANIZATION identity and traceable accountability/contact evidence. execution_agents and automation_workflows are technical records only and never final responsibility.
+
 Iteration method 1.2.0 and system map 0.2.0 are Historical; method 1.1.0 and map 0.1.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves live Pages truth.
 
 Q32I iteration method 1.3.0 and system map 0.3.0 are Current after independent exact-head acceptance, PR #62 ordinary merge, final-main CI, production Pages deploy and live closeout; 1.2.0/map 0.2.0 are Historical and 1.1.0/map 0.1.0 are earlier Historical. The candidate resolves change seeds through canonical components, typed declared repository/governance relations and the synchronization registry to a fixpoint, decisions, map delta and residue. Substantive causal candidates never auto-propagate. Git diffs, dependencies, reachability and map edges are not real-world causal identification.

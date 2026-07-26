@@ -36,6 +36,9 @@ Checks:
 - PR state, exact HEAD and CI conclusions were freshly re-fetched from GitHub before this decision.
 - Strongest alternative failure mode was tested or preserved as residue.
 - No forbidden surface was modified.
+- If a stage snapshot is proposed, independently resolve its source PR/branch/exact HEAD and 1111 receipt; do not accept its recorded attestation as live truth.
+- Check every snapshot boolean and the five publication/lifecycle inequalities; homepage visibility must not register, merge or activate candidate capability.
+- Re-run the privacy/secret, disguised-failure, succession, responsibility and deterministic-projection attack cases individually.
 
 Decision:
 

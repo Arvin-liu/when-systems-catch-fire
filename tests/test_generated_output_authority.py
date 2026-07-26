@@ -45,8 +45,16 @@ class GeneratedOutputAuthorityTests(unittest.TestCase):
 
     def test_producer_scripts_exist(self):
         checked = set()
+        registry = _load_json(ROOT / "data/operations/generator-registry.json")
+        registered = registry["generators"]
         for item in self.authority["generated_outputs"]:
-            cmd = item["producer_command"]
+            if "historical_sealed_record" in item:
+                continue
+            if "generator_id" in item:
+                self.assertIn(item["generator_id"], registered)
+                cmd = registered[item["generator_id"]]["canonical_tool"]
+            else:
+                cmd = item["producer_command"]
             if cmd in checked:
                 continue
             checked.add(cmd)
@@ -71,7 +79,13 @@ class GeneratedOutputAuthorityTests(unittest.TestCase):
         from collections import defaultdict
         groups = defaultdict(list)
         for item in self.authority["generated_outputs"]:
-            key = (item["producer_id"], tuple(sorted(item["input_authorities"])), item["output_type"])
+            if "producer_id" in item:
+                authority_id = ("producer_command", item["producer_id"])
+            elif "generator_id" in item:
+                authority_id = ("registered_generator", item["generator_id"])
+            else:
+                authority_id = ("historical_sealed_record", item.get("historical_sealed_record"))
+            key = (authority_id, tuple(sorted(item["input_authorities"])), item["output_type"])
             groups[key].append(item["path"])
         for key, paths in groups.items():
             if len(paths) <= 1:
@@ -85,6 +99,10 @@ class GeneratedOutputAuthorityTests(unittest.TestCase):
                 self.fail(f"Inconsistent duplicate outputs for {key}: {paths}")
 
     def test_propagation_freshness(self):
+        from tools.operations.era_resolver import resolve_era
+        era = resolve_era(ROOT, "121Q32I")
+        self.assertIsNotNone(era)
+        self.assertIsNotNone(era["era_ref"])
         result = subprocess.run(
             [sys.executable, str(ROOT / "tools/operations/compute_change_propagation.py"),
              "--request", str(ROOT / "data/operations/propagation/121Q32I-request.json"),
@@ -92,6 +110,7 @@ class GeneratedOutputAuthorityTests(unittest.TestCase):
              "--report", str(ROOT / "reports/operations/121Q32I-change-propagation-impact.md"),
              "--map-delta", str(ROOT / "data/operations/propagation/121Q32I-system-map-delta.json"),
              "--residue", str(ROOT / "data/operations/propagation/121Q32I-residue.json"),
+             "--era-ref", era["era_ref"],
              "--check"],
             capture_output=True, text=True, cwd=str(ROOT),
         )

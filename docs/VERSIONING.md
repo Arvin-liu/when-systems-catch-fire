@@ -25,6 +25,8 @@ Q25B 已因生命周期死锁降为 superseded non-ready 历史候选；Q25C 是
 
 Q32I closed iteration method `1.3.0` and registry-derived system map `0.3.0` as Current after third independent exact-head acceptance, ordinary merge of PR #62, final-main validation, production Pages deployment and live verification. Method `1.2.0` and map `0.2.0` are Historical; `1.1.0` and map `0.1.0` are earlier Historical. The Current contract separates authority and execution capability, adds unified apply preflight and complete repository rollback verification without adding L7, a truth layer or causal identification. Q33 launch material is prepared externally; Q33 and Q34-Q40 are not started.
 
+Iteration method `1.4.0 — Continuous Stage Snapshot Publication` is a Draft Candidate governed by Current 1.3.0. It adds a separate publication-status axis and a machine registry for public stage summaries. A snapshot record and homepage projection may eventually enter Main without merging the candidate payload or raising Accepted/Current/Activated; the candidate itself cannot use this rule to self-merge or self-declare Current.
+
 架构完成不等于内容证明完成。当前架构允许后续逐对象补源、补定义、补证明、补实验、发现反例或降级，而不再推倒整体架构。
 
 ## 什么算版本升级

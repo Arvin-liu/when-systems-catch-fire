@@ -55,6 +55,19 @@ Propagation closure:
 - Unresolved synchronization residue:
 - Why this is or is not ready/current/closed:
 
+Optional stage snapshot request (method 1.4.0 Candidate interface; a request is never a Main publication claim):
+
+- Exact result object:
+- Source HEAD:
+- Evidence entrances:
+- Lifecycle state and claim ceiling:
+- Homepage summary:
+- Limitations and unfinished items:
+- Pre-registered responsible and proposed-publisher `actor_ref` values (resolved through `data/operations/responsibility-actors.json`), plus execution agents and automation workflows (agents/workflows are technical records, never final accountability):
+- Recommendation: `PUBLISH` / `REVISE` / `WITHDRAW` / `DO_NOT_PUBLISH`
+- `agent_claims_published_to_main`: `false`
+- Machine request, if supplied: `templates/operations/stage-snapshot-request-template.json`
+
 Typed component closure (method 1.2 Current; required by the 1.3 Draft candidate):
 
 - Seed paths / seed components:
