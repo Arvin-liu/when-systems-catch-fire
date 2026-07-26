@@ -2,7 +2,7 @@
 
 Current: `1.3.0` (incremental execution and selective materialization; Q32I closeout complete)
 
-Candidate: `1.4.0` (continuous stage snapshot publication; not Accepted, Current or merged to Main)
+Candidate: `1.4.0` (continuous stage snapshot publication; snapshot record merged to Main, not Accepted, Current or Activated)
 
 Historical: `1.2.0` (typed declared change-propagation closure; superseded by 1.3.0)
 
@@ -10,7 +10,7 @@ Earlier Historical: `1.1.0` (synchronization registry closure; superseded by 1.2
 
 Q32I lifecycle: Accepted, Merged by PR #62, Current and Closed. Q33 launch packet ready externally; Q33 and Q34—Q40 not started.
 
-1.4.0 candidate lifecycle: Candidate only. Its Draft PR preview may show a `PR_VISIBLE` R5-A stage record, but the method and snapshot are not yet production Main facts.
+1.4.0 candidate lifecycle: Candidate only. Its snapshot record (`data/operations/stage-snapshots.json` and its deterministic README/Pages projection) entered Main via the PR #134 merge (R3 exact-head acceptance of the repair stack + R2 main closeout, merge commit `f9abf90e`); the method and snapshot are not Accepted/Current/Activated. R5-A remains `PR_VISIBLE`; the `PUBLISHED_SNAPSHOT` transition is reserved for a separate controlled sync.
 
 Status: canonical operation method. This method governs how 点火 changes itself. It is not a truth layer, proof system, value charter, causal model or substitute for external evidence.
 
