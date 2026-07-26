@@ -84,8 +84,8 @@ R5-A 不授权：R5-B 具身生命系统运行时、R5-C《新悟真篇》领域
 
 ## 7. 终态
 
-原任务允许的候选终态不构成外部接受。Night Queue R1 的裁决仍为 `NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`。精确窄修复头 `a2fd355f…` 已完成双 CI 与独立外部审查，PR #131 已转 Ready 并以普通 merge `062f223f…` 进入 PR #130 来源分支；这只接受并合并所裁决缺口的仓库合同修复。PR #130 本身仍为 Draft、未合并到前驱、未进入 Main、未激活且非 Current：
+原任务允许的候选终态不构成外部接受。Night Queue R1 的裁决仍为 `NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`。精确窄修复头 `a2fd355f…` 已完成双 CI 与独立外部审查，PR #131 已转 Ready 并以普通 merge `062f223f…` 进入 PR #130 来源分支；这只接受并合并所裁决的 30 个缺口。其后对 PR #130 精确头 `f33be64b…` 的完整审查又复现 `R5A-CR-001`–`011` 十一个运行时/标准 JSON Schema 旁路。唯一授权的合并合同旁路窄修复已逐案实现，但仍为 Draft、等待独立 exact-head 验收；详见 `docs/governance/r5a-consolidated-contract-bypass-repair-r1.md`。PR #130 本身仍为 Draft、未合并到前驱、未进入 Main、未激活且非 Current：
 
-`IGNITION_R5A_NARROW_REPAIR_ACCEPTED_MERGED_TO_SOURCE_PR_130_R5A_CANDIDATE_STILL_DRAFT`
+`R5A_CONSOLIDATED_CONTRACT_BYPASS_NARROW_REPAIR_DRAFT_AWAITING_REVIEW`
 
 Agent 不得自证外部接受、不得激活候选、不得启动 R5-B / R5-C / R6。任何实例门未通过时只能报告 `BLOCKED`。

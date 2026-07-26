@@ -55,11 +55,16 @@ receipt, and the new 11-case consolidated registry and receipt.
 
 ## Validation and claim boundary
 
-At the implementation checkpoint, the focused R5-A suites report `193 passed`,
-the exact eleven-case gate reports PASS, all six schema matrices pass, all five
-gate mutations block, and deterministic artifacts regenerate byte-identically.
-The full inherited ladder and exact-head GitHub CI remain mandatory publication
-evidence and are recorded externally after the final commit exists.
+At the final local checkpoint, the focused R5-A suites report `193 passed`, the
+exact eleven-case gate reports PASS, all six schema matrices pass, all five gate
+mutations block, and deterministic artifacts regenerate byte-identically. The
+inherited ARR suite reports `611 passed, 2 skipped`; Lean, Foundation,
+iteration synchronization, typed propagation, Phase D/E, the registry-derived
+system map, human front door and second-executor static gate pass. The inherited
+Foundation/synchronization/front-door/propagation/Pages/Phase-E/production-
+authority unittest ladder reports `176` run, `1` skipped, PASS. Exact-final-head
+GitHub CI remains mandatory publication evidence and is recorded externally
+after the final commit exists.
 
 Maximum claim ceiling:
 `repository_contract_repair_implemented_awaiting_independent_review`.

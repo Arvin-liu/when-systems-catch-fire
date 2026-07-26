@@ -10,6 +10,8 @@ Q32I lifecycle: Accepted, Merged by PR #62, Current and Closed. Q33 launch packe
 
 Status: canonical operation method. This method governs how 点火 changes itself. It is not a truth layer, proof system, value charter, causal model or substitute for external evidence.
 
+Project time orientation: [点火“永远进行时”原则](./docs/governance/ignition-perpetual-present-principle.md) preserves “丹无定形，火有法度；炼无终局，化有来路。” A task/version may reach a bounded lifecycle state while the project remains revisable and historical states remain traceable. This is a philosophical principle and time view, not a method-version increment or physics conclusion.
+
 Current lifecycle: method 1.3.0 entered `main` through Q32I third independent exact-head acceptance, PR #62 ordinary merge, final-main validation, production Pages deploy and live closeout. Method 1.2.0 remains Historical.
 
 ## 0. Read This Boundary First
@@ -191,6 +193,16 @@ not justify a claim of universal semantic understanding; uncovered language,
 unknown target labels and unresolved evidence stay fail-closed or `BLOCKED`.
 This clarification does not change method version `1.3.0` or turn tests into
 human evidence.
+
+R5-A application record (not a method-version change): the complete PR #130
+review at exact head `f33be64...` found eleven additional public runtime/schema
+bypasses `R5A-CR-001`–`011`. The single authorized consolidated repair now
+binds each exact ID to a concrete fixture, typed evidence object, expected
+rejection and executed per-surface result; six Draft 2020-12 schemas have
+metaschema plus valid/invalid instance checks, and missing/duplicate/changed/
+bypassed/deleted-ID mutations block. This remains a Draft implementation
+awaiting independent exact-head review; no aggregate suite or CI result can
+self-accept it.
 
 For Draft Pages work, build and inspect the exact-head artifact without deploying the unmerged branch to the production homepage. Production Pages deployment and live fetch are post-merge external synchronization obligations.
 

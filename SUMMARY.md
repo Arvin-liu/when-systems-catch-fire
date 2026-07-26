@@ -15,7 +15,8 @@
 - [docs/PROJECT-ARCHITECTURE.md](./docs/PROJECT-ARCHITECTURE.md) — 稳定兼容入口；冲突时以根 ARCHITECTURE.md 为准
 - [docs/VERSIONING.md](./docs/VERSIONING.md) — 版本阶段与升级规范
 - [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) — 规范性价值前提
-- [R5-A Night Queue R1 裁决与窄修复](./docs/governance/r5a-night-queue-r1-adjudication.md) — Night Queue 仍为 `PARTIAL_SALVAGE_NOT_ACCEPTED`；精确实例窄修复 PR #131 已独立接受并合并进仍为 Draft 的 PR #130 来源分支；非 Main/Current，R5-B/R5-C/R6 未启动。
+- [点火“永远进行时”原则](./docs/governance/ignition-perpetual-present-principle.md) — 阶段可凝结、历史可追溯、系统持续可修订；宇宙对应仅为哲学隐喻与时间观。
+- [R5-A 合并合同旁路窄修复](./docs/governance/r5a-consolidated-contract-bypass-repair-r1.md) — `R5A-CR-001`–`011` 已在单一 Draft 中建立逐案运行时/Schema 拒绝、标准 dialect 正反实例和变异门；仍等待独立 exact-head 验收，PR #130 非 Main/Current，R5-B/R5-C/R6 未启动。
 - [许可作用域](./LICENSES/README.md) — 当前分层许可权威
 - [商业许可](./COMMERCIAL-LICENSING.md) 与 [可持续性政策](./SUSTAINABILITY.md)
 
