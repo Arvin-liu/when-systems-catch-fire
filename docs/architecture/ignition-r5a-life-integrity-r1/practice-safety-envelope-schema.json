@@ -1,0 +1,1264 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "not": {
+        "properties": {
+          "educational_vs_individualized": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "educational_vs_individualized"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "intended_population": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "intended_population"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "exclusion_criteria": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "exclusion_criteria"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "contraindications": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "contraindications"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "risk_severity": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "risk_severity"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "dependency_coercion_risk": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "dependency_coercion_risk"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "stop_conditions": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "stop_conditions"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "rollback_exit_path": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "rollback_exit_path"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "professional_referral_boundary": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "professional_referral_boundary"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "emergency_boundary": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "emergency_boundary"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "interaction_with_existing_care": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "interaction_with_existing_care"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "evidence_grade": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "evidence_grade"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "long_term_followup_plan": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "long_term_followup_plan"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "raw_text": {
+            "anyOf": [
+              {
+                "pattern": "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b"
+              },
+              {
+                "pattern": "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b"
+              },
+              {
+                "pattern": "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b"
+              },
+              {
+                "pattern": "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)"
+              },
+              {
+                "pattern": "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)"
+              },
+              {
+                "pattern": "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+              },
+              {
+                "pattern": "stop\\ taking"
+              },
+              {
+                "pattern": "stop\\ your"
+              },
+              {
+                "pattern": "discontinue\\ your\\ medication"
+              },
+              {
+                "pattern": "discontinue\\ prescribed"
+              },
+              {
+                "pattern": "replace\\ your"
+              },
+              {
+                "pattern": "substitute\\ for"
+              },
+              {
+                "pattern": "instead\\ of\\ your\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ prescribed"
+              },
+              {
+                "pattern": "quit\\ your\\ medication"
+              },
+              {
+                "pattern": "replace\\ prescribed"
+              },
+              {
+                "pattern": "stop\\ the\\ medication"
+              },
+              {
+                "pattern": "come\\ off\\ your"
+              }
+            ]
+          }
+        },
+        "required": [
+          "raw_text"
+        ]
+      }
+    }
+  ],
+  "fail_closed_rules": [
+    "every required field must be present and not UNKNOWN/empty",
+    "informed_consent_required must be true for any intervention protocol",
+    "stop_conditions, rollback_exit_path and professional_referral_boundary must be declared",
+    "language recommending stopping prescribed treatment or substituting an unverified practice is rejected"
+  ],
+  "field_set": [
+    "educational_vs_individualized",
+    "intended_population",
+    "exclusion_criteria",
+    "contraindications",
+    "risk_severity",
+    "informed_consent_required",
+    "dependency_coercion_risk",
+    "stop_conditions",
+    "rollback_exit_path",
+    "professional_referral_boundary",
+    "emergency_boundary",
+    "interaction_with_existing_care",
+    "evidence_grade",
+    "unknowns",
+    "long_term_followup_plan"
+  ],
+  "field_set_complete": true,
+  "meta": {
+    "activation_status": "CANDIDATE_ONLY",
+    "candidate_frozen_head": "0e9d1e5823b41b7e9375e5f634388371b9b024ac",
+    "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
+    "domain_pack_federation_started": false,
+    "external_acceptance_claimed": false,
+    "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "generated_by": "tools/generate_life_integrity_r5a.py",
+    "human_intervention_enabled": false,
+    "medical_claims_authorized": false,
+    "modern_wuzhen_pack_started": false,
+    "repair_task_id": "IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726",
+    "schema_version": "r5a/v1.2-consolidated-contract-repair",
+    "supreme_charter": "LifeCommunityValueCharter",
+    "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+  },
+  "properties": {
+    "contraindications": {
+      "minLength": 1,
+      "not": {
+        "enum": [
+          "",
+          "UNKNOWN",
+          "NOT_OBSERVED"
+        ]
+      },
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "dependency_coercion_risk": {
+      "enum": [
+        "NONE_IDENTIFIED",
+        "LOW",
+        "MEDIUM"
+      ]
+    },
+    "educational_vs_individualized": {
+      "enum": [
+        "EDUCATIONAL_ONLY"
+      ]
+    },
+    "emergency_boundary": {
+      "minLength": 1,
+      "not": {
+        "enum": [
+          "",
+          "UNKNOWN",
+          "NOT_OBSERVED"
+        ]
+      },
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "evidence_grade": {
+      "enum": [
+        "SOFTWARE_CONTRACT_ONLY",
+        "LOW",
+        "MODERATE",
+        "HIGH"
+      ]
+    },
+    "exclusion_criteria": {
+      "minLength": 1,
+      "not": {
+        "enum": [
+          "",
+          "UNKNOWN",
+          "NOT_OBSERVED"
+        ]
+      },
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "informed_consent_required": {
+      "const": true,
+      "type": "boolean"
+    },
+    "intended_population": {
+      "minLength": 1,
+      "not": {
+        "enum": [
+          "",
+          "UNKNOWN",
+          "NOT_OBSERVED"
+        ]
+      },
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "interaction_with_existing_care": {
+      "enum": [
+        "COORDINATE_WITH_PROFESSIONAL",
+        "NO_EXISTING_CARE_CLAIM"
+      ]
+    },
+    "long_term_followup_plan": {
+      "minLength": 1,
+      "not": {
+        "enum": [
+          "",
+          "UNKNOWN",
+          "NOT_OBSERVED"
+        ]
+      },
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "professional_referral_boundary": {
+      "minLength": 1,
+      "not": {
+        "enum": [
+          "",
+          "UNKNOWN",
+          "NOT_OBSERVED"
+        ]
+      },
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "raw_text": {
+      "type": "string"
+    },
+    "risk_severity": {
+      "enum": [
+        "LOW",
+        "MODERATE",
+        "HIGH",
+        "CRITICAL"
+      ]
+    },
+    "rollback_exit_path": {
+      "minLength": 1,
+      "not": {
+        "enum": [
+          "",
+          "UNKNOWN",
+          "NOT_OBSERVED"
+        ]
+      },
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "stop_conditions": {
+      "minLength": 1,
+      "not": {
+        "enum": [
+          "",
+          "UNKNOWN",
+          "NOT_OBSERVED"
+        ]
+      },
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "unknowns": {
+      "items": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "educational_vs_individualized",
+    "intended_population",
+    "exclusion_criteria",
+    "contraindications",
+    "risk_severity",
+    "informed_consent_required",
+    "dependency_coercion_risk",
+    "stop_conditions",
+    "rollback_exit_path",
+    "professional_referral_boundary",
+    "emergency_boundary",
+    "interaction_with_existing_care",
+    "evidence_grade",
+    "unknowns",
+    "long_term_followup_plan"
+  ],
+  "schema": "r5a/practice-safety-envelope/v1",
+  "stop_treatment_language": {
+    "bounded_multilingual_patterns": [
+      "\\bstop\\s+(?:taking\\s+)?(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b",
+      "\\bdiscontinue\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|medicine|treatment|therapy)\\b",
+      "\\b(?:replace|substitute|abandon)\\s+(?:your\\s+)?(?:prescribed\\s+)?(?:medication|treatment|therapy|care)\\b",
+      "\\bthis\\s+replaces\\s+your\\s+(?:treatment|therapy|care)\\b",
+      "\\byou\\s+(?:must|have\\s+to)\\s+(?:continue|comply)\\b",
+      "停(?:止|用).{0,8}(?:处方药|药物|治疗|心理治疗)",
+      "(?:改用|只用|以此).{0,12}(?:代替|替代).{0,8}(?:处方药|药物|治疗|专业照护)",
+      "(?:不得|不许|不能).{0,6}(?:退出|拒绝|停止)"
+    ],
+    "detector_phrases": [
+      "stop taking",
+      "stop your",
+      "discontinue your medication",
+      "discontinue prescribed",
+      "replace your",
+      "substitute for",
+      "instead of your prescribed",
+      "stop prescribed",
+      "quit your medication",
+      "replace prescribed",
+      "stop the medication",
+      "come off your"
+    ],
+    "forbidden": true
+  },
+  "title": "PracticeSafetyEnvelope",
+  "type": "object"
+}

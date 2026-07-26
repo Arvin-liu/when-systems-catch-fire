@@ -12,6 +12,10 @@ Current typed-propagation authority assets: data/operations/project-components.j
 Q25C defines the current lifecycle gates: registry `blocks` is evaluated per surface and per gate. Post-merge Pages pending does not block Accepted/Merged, but individually attested main deployment and live fetch remain mandatory for Current/Closed. Q25B remains superseded candidate history.
 Iteration method authority: ITERATION.md.
 
+R5-A Life Integrity remains a stacked Draft candidate. Acceptance of the prior 30-case repair did not accept the complete candidate. Review of PR #130 exact head `f33be64...` reproduced eleven additional runtime and standard-JSON-Schema bypasses, `R5A-CR-001` through `011`. They were independently replayed and closed at exact repair head `c4576972047a47045e95b1c794570597f58e6c9a`; PR #133 moved Draft to Ready and was ordinarily merged as `ff158ba0351d68918a135ec3446f4f68ddf9387b` into PR #130's source branch, with identical accepted/merge trees and successful post-merge CI logs. This accepts the exact repair only. PR #130 remains Draft, unmerged into its predecessor, non-Main, non-Current and unactivated. R5-B, R5-C and R6 are prohibited and unstarted. The only recorded next-task request concerns an iteration-method continuous snapshot and layered publication制度 where entry into Main does not automatically mean Accepted/Current; it is not started here.
+
+Ignition's perpetual-present principle is documented at docs/governance/ignition-perpetual-present-principle.md: stage forms remain revisable while history stays traceable. Its universe correspondence is philosophical metaphor and a time view only, never a physics or cosmology conclusion.
+
 Architecture:
 L0 source and evidence -> L1 controlled semantic claims -> L2 formal objects -> L3 logical arguments -> L4 mathematical models and proofs -> L5 validation and validity -> L6 interpretation, application and publication.
 L6 must cite L0-L5 and cannot create mathematical truth.

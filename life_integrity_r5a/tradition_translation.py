@@ -1,0 +1,239 @@
+# SPDX-License-Identifier: LicenseRef-BUSL-1.1-PointFire
+"""Traditional / religious material translation contract (R5-A, Commit 1 skeleton).
+
+Commit 1 provides the schema and closed-set claim-class registry API. The
+deep validation logic raises NotImplementedError and is implemented in
+Commit 3.
+
+Contract (task §3, §7, §12): each translated claim carries provenance,
+translation status, attribution, claim class, interpretation layer, evidence
+grade, mechanism status, applicability, rights boundary, confidence, UNKNOWNs,
+prohibited upgrades and revision history. Five upgrades are forbidden without
+separately linked empirical evidence and independent review:
+  PHENOMENOLOGICAL_REPORT -> EMPIRICALLY_SUPPORTED_MECHANISM
+  METAPHYSICAL_CLAIM -> SCIENTIFIC_FACT
+  PRACTICE_PROTOCOL -> CLINICAL_EFFICACY
+  LATER_INTERPRETATION -> AUTHOR_INTENT
+  HISTORICAL_LONGEVITY -> EFFECTIVENESS
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from typing import Any
+
+from .registries import (
+    TRADITION_CLAIM_CLASS_IDS,
+    TRADITION_FORBIDDEN_TRANSITIONS,
+    is_forbidden_tradition_upgrade,
+    is_valid_claim_class,
+    TRADITION_INTERPRETATION_LAYER_IDS,
+    TRADITION_MECHANISM_STATUS_IDS,
+    TRADITION_RISKY_TARGET_ALIASES,
+    TRADITION_UPGRADE_SOURCE_IDS,
+)
+
+
+class TraditionTranslationError(Exception):
+    """Base error for tradition-translation contract violations."""
+
+
+class UnknownClaimClassError(TraditionTranslationError):
+    """Raised when a claim class is outside the closed set."""
+
+
+class ForbiddenClaimUpgradeError(TraditionTranslationError):
+    """Raised when a claim attempts a forbidden silent upgrade."""
+
+
+class UnknownTranslationStatusError(TraditionTranslationError):
+    """Raised for out-of-set target labels, including semantic-looking aliases."""
+
+
+class TranslatedClaimContractError(TraditionTranslationError):
+    """Raised when a translated claim omits or mistypes a contract field."""
+
+
+TRANSLATED_CLAIM_REQUIRED_FIELDS = (
+    "source_provenance",
+    "source_language",
+    "translation_status",
+    "attribution_status",
+    "claim_class",
+    "literal_reference",
+    "interpretation_layer",
+    "evidence_grade",
+    "mechanism_status",
+    "applicability_scope",
+    "rights_boundary",
+    "confidence",
+    "unknowns",
+    "prohibited_upgrades",
+    "revision_history",
+)
+
+
+@dataclass
+class TranslatedClaim:
+    source_provenance: str
+    source_language: str
+    translation_status: str
+    attribution_status: str
+    claim_class: str
+    literal_reference: str = ""
+    interpretation_layer: str = "SOURCE_LITERAL"
+    evidence_grade: str = "UNKNOWN"
+    mechanism_status: str = "NOT_ASSERTED"
+    applicability_scope: str = "UNKNOWN"
+    rights_boundary: str = ""
+    confidence: float = 0.0
+    unknowns: list[str] = field(default_factory=list)
+    prohibited_upgrades: list[str] = field(default_factory=list)
+    revision_history: list[dict[str, Any]] = field(default_factory=list)
+
+    def __post_init__(self) -> None:
+        if not is_valid_claim_class(self.claim_class):
+            raise UnknownClaimClassError(f"unknown claim class: {self.claim_class!r}")
+        if self.mechanism_status not in TRADITION_MECHANISM_STATUS_IDS:
+            raise UnknownTranslationStatusError(
+                f"unknown mechanism_status: {self.mechanism_status!r}"
+            )
+        if self.interpretation_layer not in TRADITION_INTERPRETATION_LAYER_IDS:
+            raise UnknownTranslationStatusError(
+                f"unknown interpretation_layer: {self.interpretation_layer!r}"
+            )
+        # The public dataclass constructor is a contract surface too.  It must
+        # enforce the same silent-upgrade rule as the convenience helper.
+        check_forbidden_upgrade_strict(self.claim_class, self.mechanism_status)
+        for field_name in (
+            "source_provenance",
+            "source_language",
+            "translation_status",
+            "attribution_status",
+            "literal_reference",
+            "evidence_grade",
+            "applicability_scope",
+            "rights_boundary",
+        ):
+            value = getattr(self, field_name)
+            if not isinstance(value, str) or not value.strip():
+                raise TranslatedClaimContractError(
+                    f"{field_name} must be a non-blank string"
+                )
+        if (
+            self.interpretation_layer == "LATER_INTERPRETATION"
+            and self.attribution_status.strip().upper() == "AUTHOR_INTENT"
+        ):
+            raise ForbiddenClaimUpgradeError(
+                "forbidden silent upgrade: LATER_INTERPRETATION -> AUTHOR_INTENT"
+            )
+        if type(self.confidence) not in (int, float) or not 0.0 <= self.confidence <= 1.0:
+            raise TranslatedClaimContractError(
+                "confidence must be a number between 0 and 1"
+            )
+        if not isinstance(self.unknowns, list) or any(
+            not isinstance(item, str) or not item.strip() for item in self.unknowns
+        ):
+            raise TranslatedClaimContractError(
+                "unknowns must be an array of non-blank strings"
+            )
+        if not isinstance(self.prohibited_upgrades, list) or any(
+            not isinstance(item, str) or not item.strip()
+            for item in self.prohibited_upgrades
+        ):
+            raise TranslatedClaimContractError(
+                "prohibited_upgrades must be an array of non-blank strings"
+            )
+        if not isinstance(self.revision_history, list) or any(
+            not isinstance(item, dict) for item in self.revision_history
+        ):
+            raise TranslatedClaimContractError(
+                "revision_history must be an array of objects"
+            )
+
+
+# --- Pure predicates (available in Commit 1, used by tests) ----------------
+def forbidden_upgrade_set() -> frozenset[tuple[str, str]]:
+    return TRADITION_FORBIDDEN_TRANSITIONS
+
+
+def claim_class_closed_set_complete() -> bool:
+    return len(TRADITION_CLAIM_CLASS_IDS) == 8 and all(
+        is_valid_claim_class(c) for c in TRADITION_CLAIM_CLASS_IDS
+    )
+
+
+# --- Deep validation (implemented in Commit 3) -----------------------------
+def validate_claim_class_strict(claim_class: str) -> None:
+    if not is_valid_claim_class(claim_class):
+        raise UnknownClaimClassError(f"unknown claim class: {claim_class!r}")
+
+
+def check_forbidden_upgrade_strict(from_status: str, to_status: str) -> None:
+    """Fail-closed: a forbidden silent upgrade is never permitted without
+    separately linked empirical evidence and independent review."""
+    if from_status not in TRADITION_UPGRADE_SOURCE_IDS:
+        raise UnknownTranslationStatusError(f"unknown upgrade source: {from_status!r}")
+    normalized_target = TRADITION_RISKY_TARGET_ALIASES.get(to_status, to_status)
+    if normalized_target not in TRADITION_MECHANISM_STATUS_IDS and normalized_target != "AUTHOR_INTENT":
+        raise UnknownTranslationStatusError(f"unknown upgrade target: {to_status!r}")
+    if is_forbidden_tradition_upgrade(from_status, normalized_target):
+        raise ForbiddenClaimUpgradeError(
+            f"forbidden silent upgrade: {from_status} -> {normalized_target}"
+        )
+    if to_status in TRADITION_RISKY_TARGET_ALIASES:
+        raise ForbiddenClaimUpgradeError(
+            f"bounded semantic alias is not permitted: {to_status} -> {normalized_target}"
+        )
+
+
+def translate_claim(
+    source_provenance: str,
+    claim_class: str,
+    **kwargs: Any,
+) -> TranslatedClaim:
+    """Build a TranslatedClaim and fail-closed-validate it.
+
+    A forbidden upgrade is detected when the resolved mechanism/interpretation
+    status pairs with the claim class as a forbidden transition (e.g. a
+    phenomenological report must not become an empirically supported mechanism
+    merely by setting mechanism_status).
+    """
+    validate_claim_class_strict(claim_class)
+    mechanism_status = kwargs.get("mechanism_status", "NOT_ASSERTED")
+    interpretation_layer = kwargs.get("interpretation_layer", "SOURCE_LITERAL")
+    if mechanism_status not in TRADITION_MECHANISM_STATUS_IDS:
+        alias = TRADITION_RISKY_TARGET_ALIASES.get(mechanism_status)
+        if alias is not None:
+            raise ForbiddenClaimUpgradeError(
+                f"bounded semantic alias is not permitted: {mechanism_status} -> {alias}"
+            )
+        raise UnknownTranslationStatusError(
+            f"unknown mechanism_status: {mechanism_status!r}"
+        )
+    if interpretation_layer not in TRADITION_INTERPRETATION_LAYER_IDS:
+        alias = TRADITION_RISKY_TARGET_ALIASES.get(interpretation_layer)
+        if alias is not None:
+            raise ForbiddenClaimUpgradeError(
+                f"bounded semantic alias is not permitted in interpretation_layer: {interpretation_layer}"
+            )
+        raise UnknownTranslationStatusError(
+            f"unknown interpretation_layer: {interpretation_layer!r}"
+        )
+    check_forbidden_upgrade_strict(claim_class, mechanism_status)
+    # Interpretation layer may not silently assert a forbidden target either.
+    for to_status in (mechanism_status,):
+        if is_forbidden_tradition_upgrade(claim_class, to_status):
+            raise ForbiddenClaimUpgradeError(
+                f"forbidden silent upgrade via {to_status!r}: {claim_class} -> {to_status}"
+            )
+    unknown_fields = set(kwargs) - set(TranslatedClaim.__dataclass_fields__)
+    if unknown_fields:
+        raise TranslatedClaimContractError(
+            f"unknown translated-claim fields: {sorted(unknown_fields)}"
+        )
+    return TranslatedClaim(
+        source_provenance=source_provenance,
+        claim_class=claim_class,
+        **kwargs,
+    )

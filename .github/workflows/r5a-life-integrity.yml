@@ -1,0 +1,71 @@
+name: r5a-life-integrity
+# Life Integrity Charter Candidate R1 (relay task
+# IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725).
+# Runs the R5-A contract tests and the exact instance-backed narrow-repair gate.
+# A count never substitutes for one of the required case ids. Also regenerates
+# and verifies the public artifacts are deterministic and up to date.
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/r5a-life-integrity.yml'
+      - 'life_integrity_r5a/**'
+      - 'tests/adaptive_relational_runtime/test_life_integrity_r5a.py'
+      - 'tests/adaptive_relational_runtime/test_life_integrity_r5a_consolidated_repair.py'
+      - 'tools/generate_life_integrity_r5a.py'
+      - 'tools/validate_life_integrity_r5a_repair.py'
+      - 'tools/validate_life_integrity_r5a_consolidated_repair.py'
+      - 'requirements-r4.txt'
+      - 'docs/architecture/ignition-r5a-life-integrity-r1/**'
+      - 'docs/governance/r5a-night-queue-r1-adjudication.md'
+      - 'docs/governance/life-integrity-charter-candidate-r1.md'
+      - 'docs/governance/ignition-perpetual-present-principle.md'
+      - 'docs/governance/r5a-consolidated-contract-bypass-repair-r1.md'
+      - 'docs/architecture/ignition-life-integrity-r5a-r1.md'
+      - 'docs/architecture/life-integrity-future-activation-boundary-r1.md'
+      - 'docs/architecture/life-integrity-non-impact-proof-r1.md'
+      - 'docs/architecture/tradition-translation-pipeline-r1.md'
+      - 'README.md'
+      - 'docs/project-current-state.md'
+      - 'ITERATION.md'
+      - 'AI-START-HERE.md'
+      - 'AI-HANDOFF.md'
+      - 'llms.txt'
+      - 'SUMMARY.md'
+      - 'CHANGELOG.md'
+  push:
+    branches:
+      - 'architecture/ignition-r5a-life-integrity-charter-candidate-r1'
+      - 'repair/ignition-r5a-narrow-repair-r1-20260726'
+      - 'repair/ignition-r5a-consolidated-contract-bypass-narrow-repair-r1-20260726'
+  workflow_dispatch:
+concurrency:
+  group: r5a-life-integrity-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install -r requirements-r4.txt
+      - name: Run R5-A contract tests (fail-closed)
+        run: >-
+          python3 -m pytest
+          tests/adaptive_relational_runtime/test_life_integrity_r5a.py
+          tests/adaptive_relational_runtime/test_life_integrity_r5a_consolidated_repair.py
+          -q
+      - name: Run exact R5-A narrow-repair instance gate
+        run: python3 tools/validate_life_integrity_r5a_repair.py
+      - name: Run consolidated R5-A contract-bypass instance gate
+        run: python3 tools/validate_life_integrity_r5a_consolidated_repair.py
+      - name: Regenerate and verify deterministic public artifacts
+        run: |
+          python3 tools/generate_life_integrity_r5a.py
+          git diff --exit-code docs/architecture/ignition-r5a-life-integrity-r1/ || \
+            (echo "Public artifacts are not deterministic / out of date"; exit 1)

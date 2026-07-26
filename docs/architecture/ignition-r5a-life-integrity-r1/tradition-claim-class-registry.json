@@ -1,0 +1,76 @@
+{
+  "claim_class_count": 8,
+  "closed_set": [
+    "HISTORICAL_SOURCE",
+    "NORMATIVE_CLAIM",
+    "METAPHYSICAL_CLAIM",
+    "PHENOMENOLOGICAL_REPORT",
+    "PRACTICE_PROTOCOL",
+    "MECHANISM_HYPOTHESIS",
+    "RITUAL_SOCIAL_TECHNOLOGY",
+    "OUTCOME_OR_HARM_REPORT"
+  ],
+  "closed_set_complete": true,
+  "fail_closed_rules": [
+    "every translated claim must carry a claim class from the closed set of eight",
+    "a claim class outside the closed set is rejected",
+    "the five forbidden silent upgrades are never permitted without separate empirical evidence and independent review",
+    "mechanism_status and interpretation_layer may not silently realize a forbidden upgrade target"
+  ],
+  "forbidden_upgrades": [
+    {
+      "from": "HISTORICAL_LONGEVITY",
+      "requires": "separately linked empirical evidence and independent review",
+      "to": "EFFECTIVENESS"
+    },
+    {
+      "from": "LATER_INTERPRETATION",
+      "requires": "separately linked empirical evidence and independent review",
+      "to": "AUTHOR_INTENT"
+    },
+    {
+      "from": "METAPHYSICAL_CLAIM",
+      "requires": "separately linked empirical evidence and independent review",
+      "to": "SCIENTIFIC_FACT"
+    },
+    {
+      "from": "PHENOMENOLOGICAL_REPORT",
+      "requires": "separately linked empirical evidence and independent review",
+      "to": "EMPIRICALLY_SUPPORTED_MECHANISM"
+    },
+    {
+      "from": "PRACTICE_PROTOCOL",
+      "requires": "separately linked empirical evidence and independent review",
+      "to": "CLINICAL_EFFICACY"
+    }
+  ],
+  "meta": {
+    "activation_status": "CANDIDATE_ONLY",
+    "candidate_frozen_head": "0e9d1e5823b41b7e9375e5f634388371b9b024ac",
+    "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
+    "domain_pack_federation_started": false,
+    "external_acceptance_claimed": false,
+    "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "generated_by": "tools/generate_life_integrity_r5a.py",
+    "human_intervention_enabled": false,
+    "medical_claims_authorized": false,
+    "modern_wuzhen_pack_started": false,
+    "repair_task_id": "IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726",
+    "schema_version": "r5a/v1.2-consolidated-contract-repair",
+    "supreme_charter": "LifeCommunityValueCharter",
+    "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+  },
+  "normative_empirical_type_tags": [
+    "USER_AUTHORIZED_NORMATIVE_PRINCIPLE",
+    "HISTORICAL_SOURCE",
+    "AUTHOR_INTENT_CANDIDATE",
+    "LATER_INTERPRETATION",
+    "METAPHYSICAL_CLAIM",
+    "PHENOMENOLOGICAL_REPORT",
+    "PRACTICE_PROTOCOL",
+    "MECHANISM_HYPOTHESIS",
+    "EMPIRICALLY_SUPPORTED_MECHANISM",
+    "OUTCOME_OR_HARM_REPORT"
+  ],
+  "schema": "r5a/tradition-claim-class-registry/v1"
+}

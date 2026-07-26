@@ -1,0 +1,883 @@
+"""Acceptance + attack tests for the R5-A Life Integrity Charter Candidate.
+
+R5-A encodes the user-authorized anti-fragmentation and intervention-caution
+principle ("性命一体 / 身心互成") as a CANDIDATE governance/architecture overlay
+beneath the existing Life Community Value Charter. This suite pins the required
+invariants (task §12) and adversarial boundaries.
+
+Commit 1: data/closed-set/membership tests pass; contract-logic tests fail
+because the implementation modules raise NotImplementedError. Commits 2-4
+implement the logic so the whole suite turns green. The suite never asserts
+human efficacy, clinical effectiveness, or religious truth.
+"""
+
+from __future__ import annotations
+
+import os
+
+import pytest
+
+import life_integrity_r5a as pkg
+from life_integrity_r5a import concept_mapping as CM
+from life_integrity_r5a import embodied_view as EV
+from life_integrity_r5a import annex as AX
+from life_integrity_r5a import life_integrity as LI
+from life_integrity_r5a import manifest
+from life_integrity_r5a import non_impact as NI
+from life_integrity_r5a import registries as R
+from life_integrity_r5a import safety_envelope as SE
+from life_integrity_r5a import tradition_translation as TT
+from life_integrity_r5a import validators
+from life_integrity_r5a import attack_gate as AG
+from life_integrity_r5a import longitudinal as LG
+from life_integrity_r5a.evidence import EvidenceObject
+
+import tools.generate_life_integrity_r5a as GEN  # noqa: E402
+
+
+def _observed_view(view_id: str, subject_identity: str = "subject-xyz"):
+    return EV.EmbodiedViewProjection(
+        view_id=view_id,
+        subject_identity=subject_identity,
+        unknown=False,
+        observations=[f"synthetic observation for {view_id}"],
+        confidence=0.5,
+        time_scope="synthetic-window-2026-07",
+        provenance="synthetic-test",
+    )
+
+
+def _transition_evidence(source: str, target: str, evidence_class: str, reviewer: str):
+    return EvidenceObject(
+        evidence_id=f"EV-TEST-{source}-{target}-{evidence_class}-{reviewer}",
+        evidence_class=evidence_class,
+        provenance="synthetic-test",
+        reviewer_role=reviewer,
+        supports=(f"transition:{source}->{target}",),
+        observed_facts=("synthetic transition evidence",),
+    )
+
+
+# ===========================================================================
+# A. Charter hierarchy, supremacy, no L7 / parallel executor / second executor
+# ===========================================================================
+def test_supreme_charter_is_life_community_value_charter():
+    assert R.SUPREME_CHARTER == "LifeCommunityValueCharter"
+    assert R.CHARTER_HIERARCHY[0] == R.SUPREME_CHARTER
+
+
+def test_charter_hierarchy_respects_supremacy():
+    assert R.charter_hierarchy_respects_supremacy()
+
+
+@pytest.mark.parametrize("node", R.CHARTER_HIERARCHY)
+def test_charter_hierarchy_node_is_not_l7_or_executor(node):
+    assert node != "L7"
+    assert "Executor" not in node or node == "FutureDomainPracticeProtocols"
+    assert "second" not in node.lower()
+
+
+def test_no_competing_supreme_node_inserted():
+    # R5-A must never place a node above the Life Community Value Charter.
+    assert R.CHARTER_HIERARCHY.count(R.SUPREME_CHARTER) == 1
+    assert all(n != "L7" for n in R.CHARTER_HIERARCHY)
+
+
+def test_annex_sits_beneath_supreme_charter():
+    assert AX.annex_beneath_supreme_charter()
+    annex = AX.LifeIntegrityAnnexCandidate()
+    assert annex.activation_status == "CANDIDATE_ONLY"
+    assert "proof of a metaphysical mind-body theory" in annex.not_authorized_as
+
+
+def test_package_source_has_no_promote_evolve_tokens():
+    base = os.path.dirname(__file__)
+    # package lives at repo root (life_integrity_r5a)
+    pkg_root = os.path.join(os.path.dirname(os.path.dirname(base)), "life_integrity_r5a")
+    assert os.path.isdir(pkg_root), pkg_root
+    token_re = __import__("re").compile(
+        r"(?<![A-Za-z0-9_])(prom" + "ote|evo" + "lve|trans" + "action)(?![A-Za-z0-9_])"
+    )
+    for root, _dirs, files in os.walk(pkg_root):
+        for fn in files:
+            if fn.endswith(".py"):
+                text = open(os.path.join(root, fn), encoding="utf-8").read()
+                assert not token_re.search(text), f"banned token in {fn}"
+
+
+# ===========================================================================
+# B. Embodied views: exactly seven, single subject, no whole-person claim,
+#    missing views UNKNOWN, cross-view non-causality, contradictions surfaced
+# ===========================================================================
+def test_embodied_view_closed_set_has_exactly_seven():
+    assert len(R.EMBODIED_VIEW_IDS) == 7
+    assert EV.embodied_view_closed_set_complete()
+
+
+@pytest.mark.parametrize("view", R.EMBODIED_VIEW_IDS)
+def test_each_embodied_view_is_valid(view):
+    assert R.is_valid_embodied_view(view)
+
+
+def test_unknown_embodied_view_rejected():
+    assert not R.is_valid_embodied_view("FakeView")
+    with pytest.raises(EV.EmbodiedViewError):
+        EV.EmbodiedViewProjection(view_id="FakeView", subject_identity="S1")
+
+
+def test_projection_requires_subject_identity():
+    with pytest.raises(EV.EmbodiedViewError):
+        EV.EmbodiedViewProjection(view_id="MeaningView", subject_identity="")
+
+
+def test_agent_created_with_subject_identity():
+    agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
+    assert agent.subject_identity == "subject-xyz"
+
+
+def test_add_view_ties_to_same_subject():
+    agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
+    proj = _observed_view("PhysiologicalView")
+    agent.add_view(proj)
+    got = agent.get_view("PhysiologicalView")
+    assert got.subject_identity == "subject-xyz"
+
+
+def test_add_view_rejects_foreign_subject():
+    agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
+    proj = EV.EmbodiedViewProjection(
+        view_id="MeaningView", subject_identity="other-subject"
+    )
+    with pytest.raises(EV.EmbodiedViewError):
+        agent.add_view(proj)
+
+
+def test_missing_views_returned_as_unknown():
+    agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
+    agent.add_view(
+        _observed_view("PhysiologicalView")
+    )
+    missing = agent.missing_views()
+    assert "PhysiologicalView" not in missing
+    assert set(missing) == set(R.EMBODIED_VIEW_IDS) - {"PhysiologicalView"}
+    assert all(m in R.EMBODIED_VIEW_IDS for m in missing)
+
+
+def test_single_view_cannot_claim_whole_person():
+    agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
+    agent.add_view(
+        _observed_view("CognitiveAffectiveView")
+    )
+    with pytest.raises(EV.WholePersonClaimError):
+        agent.assert_single_view_not_whole_person("CognitiveAffectiveView")
+
+
+def test_whole_person_conclusion_requires_disclosure():
+    agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
+    agent.add_view(
+        _observed_view("BehavioralView")
+    )
+    # missing views not disclosed and contradictions not surfaced -> refuse
+    with pytest.raises(EV.WholePersonClaimError):
+        agent.require_whole_person_disclosure(
+            claimed_views=["BehavioralView"],
+            missing_disclosed=False,
+            contradictions_surfaced=False,
+        )
+
+
+def test_cross_view_relation_must_not_assert_causality():
+    agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
+    rel = EV.CrossViewRelation(
+        relation_type="correlates_with",
+        source_view="PhysiologicalView",
+        target_view="CognitiveAffectiveView",
+        asserts_causality=True,
+    )
+    with pytest.raises(EV.CrossViewCausalityError):
+        agent.add_cross_view_relation(rel)
+
+
+def test_cross_view_relation_typed_non_causal_allowed():
+    agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
+    rel = EV.CrossViewRelation(
+        relation_type="correlates_with",
+        source_view="PhysiologicalView",
+        target_view="CognitiveAffectiveView",
+        asserts_causality=False,
+    )
+    agent.add_cross_view_relation(rel)
+    assert len(agent._relations) == 1
+
+
+def test_contradictory_views_are_surfaced_not_silenced():
+    agent = EV.EmbodiedAgent(subject_identity="subject-xyz")
+    agent.record_contradiction(
+        EV.Contradiction("PhysiologicalView", "PhenomenologicalView", "mismatch")
+    )
+    surfaced = agent.surface_contradictions()
+    assert len(surfaced) == 1
+    assert surfaced[0].view_a == "PhysiologicalView"
+
+
+# ===========================================================================
+# C. Local-optimization gate: missing disclosure fails closed
+# ===========================================================================
+def test_local_optimization_field_set_complete():
+    assert LI.local_optimization_field_set_complete()
+    assert len(LI.LOCAL_OPTIMIZATION_FIELDS) == 11
+
+
+def test_gate_rejects_incomplete_local_optimization():
+    gate = LI.LifeIntegrityGate()
+    incomplete = LI.LocalOptimizationProposal(
+        intended_benefit="UNKNOWN",
+        affected_views=[],
+        short_term_effects="UNKNOWN",
+        long_term_effects="UNKNOWN",
+        externalities_tradeoffs="UNKNOWN",
+        uncertainty="UNKNOWN",
+        consent_autonomy_status="UNKNOWN",
+        reversibility="UNKNOWN",
+        stop_conditions="UNKNOWN",
+        referral_boundary="UNKNOWN",
+        residual_harm_after_rollback="UNKNOWN",
+    )
+    with pytest.raises(LI.LocalOptimizationIncompleteError):
+        gate.validate_proposal(incomplete)
+
+
+def test_gate_rejects_missing_consent_reversibility_stop_referral():
+    gate = LI.LifeIntegrityGate()
+    bad = LI.LocalOptimizationProposal(
+        intended_benefit="improve sleep",
+        affected_views=["PhysiologicalView"],
+        short_term_effects="faster onset",
+        long_term_effects="UNKNOWN",
+        externalities_tradeoffs="UNKNOWN",
+        uncertainty="high",
+        consent_autonomy_status="UNKNOWN",
+        reversibility="UNKNOWN",
+        stop_conditions="UNKNOWN",
+        referral_boundary="UNKNOWN",
+        residual_harm_after_rollback="UNKNOWN",
+    )
+    with pytest.raises(LI.LocalOptimizationIncompleteError):
+        gate.validate_proposal(bad)
+
+
+# ===========================================================================
+# D. Traditional / religious claim classes: closed set, unknown fails,
+#    five forbidden silent upgrades
+# ===========================================================================
+def test_claim_class_closed_set_has_exactly_eight():
+    assert len(R.TRADITION_CLAIM_CLASS_IDS) == 8
+    assert TT.claim_class_closed_set_complete()
+
+
+@pytest.mark.parametrize("cls", R.TRADITION_CLAIM_CLASS_IDS)
+def test_each_claim_class_is_valid(cls):
+    assert R.is_valid_claim_class(cls)
+
+
+def test_unknown_claim_class_fails_closed():
+    assert not R.is_valid_claim_class("FAKE_CLASS")
+    with pytest.raises(TT.UnknownClaimClassError):
+        TT.TranslatedClaim(
+            source_provenance="x", source_language="zh", translation_status="literal",
+            attribution_status="author", claim_class="FAKE_CLASS",
+        )
+
+
+@pytest.mark.parametrize(
+    "pair",
+    [
+        ("PHENOMENOLOGICAL_REPORT", "EMPIRICALLY_SUPPORTED_MECHANISM"),
+        ("METAPHYSICAL_CLAIM", "SCIENTIFIC_FACT"),
+        ("PRACTICE_PROTOCOL", "CLINICAL_EFFICACY"),
+        ("LATER_INTERPRETATION", "AUTHOR_INTENT"),
+        ("HISTORICAL_LONGEVITY", "EFFECTIVENESS"),
+    ],
+)
+def test_forbidden_tradition_upgrade_detected(pair):
+    frm, to = pair
+    assert R.is_forbidden_tradition_upgrade(frm, to)
+    assert pair in TT.forbidden_upgrade_set()
+
+
+def test_non_forbidden_upgrade_allowed_set():
+    assert not R.is_forbidden_tradition_upgrade("HISTORICAL_SOURCE", "NORMATIVE_CLAIM")
+
+
+def test_forbidden_upgrade_strict_rejects():
+    with pytest.raises(TT.ForbiddenClaimUpgradeError):
+        TT.check_forbidden_upgrade_strict(
+            "PHENOMENOLOGICAL_REPORT", "EMPIRICALLY_SUPPORTED_MECHANISM"
+        )
+
+
+@pytest.mark.parametrize(
+    "pair",
+    [
+        ("PHENOMENOLOGICAL_REPORT", "EMPIRICALLY_SUPPORTED_MECHANISM"),
+        ("METAPHYSICAL_CLAIM", "SCIENTIFIC_FACT"),
+        ("PRACTICE_PROTOCOL", "CLINICAL_EFFICACY"),
+    ],
+)
+def test_translate_claim_rejects_forbidden_upgrade(pair):
+    frm, to = pair
+    with pytest.raises(TT.ForbiddenClaimUpgradeError):
+        TT.translate_claim(
+            source_provenance="synthetic", claim_class=frm, mechanism_status=to
+        )
+
+
+# ===========================================================================
+# E. Concept-mapping lifecycle: 8 states, allowed transitions, forbidden
+#    direct jump, CONTRADICTED / UNKNOWN retained
+# ===========================================================================
+def test_concept_state_closed_set_has_exactly_eight():
+    assert len(R.CONCEPT_MAPPING_STATE_IDS) == 8
+    assert CM.concept_state_closed_set_complete()
+
+
+@pytest.mark.parametrize("state", R.CONCEPT_MAPPING_STATE_IDS)
+def test_each_concept_state_is_valid(state):
+    assert R.is_valid_concept_state(state)
+
+
+def test_unknown_concept_state_rejected():
+    assert not R.is_valid_concept_state("FAKE_STATE")
+    with pytest.raises(CM.UnknownConceptStateError):
+        CM.ConceptMapping(concept_id="c1", source_state="FAKE_STATE")
+
+
+def test_transition_graph_blocks_direct_jump_to_partially_supported():
+    assert CM.transition_graph_has_no_direct_jump_to_partially_supported()
+    assert CM.direct_jump_forbidden("UNMAPPED")
+    assert CM.direct_jump_forbidden("SYMBOLIC_DESCRIPTION")
+
+
+@pytest.mark.parametrize("src", ["UNMAPPED", "SYMBOLIC_DESCRIPTION"])
+def test_apply_transition_rejects_direct_jump(src):
+    m = CM.ConceptMapping(concept_id="c", source_state=src)
+    with pytest.raises(CM.ForbiddenDirectJumpError):
+        CM.apply_transition(
+            m, "PARTIALLY_SUPPORTED", evidence_class="x", reviewer_role="F",
+            reason="should fail",
+        )
+
+
+def test_apply_transition_rejects_disallowed_edge():
+    m = CM.ConceptMapping(concept_id="c", source_state="UNMAPPED")
+    with pytest.raises(CM.InvalidConceptTransitionError):
+        CM.apply_transition(
+            m, "MECHANISM_HYPOTHESIS", evidence_class="x", reviewer_role="F",
+            reason="no direct edge",
+        )
+
+
+def test_apply_transition_allowed_chain():
+    m = CM.ConceptMapping(concept_id="c", source_state="SYMBOLIC_DESCRIPTION")
+    CM.apply_transition(
+        m, "PHENOMENOLOGICAL_CANDIDATE", evidence_class="phenomenology_report",
+        reviewer_role="D", reason="interpretation",
+        evidence_object=_transition_evidence(
+            "SYMBOLIC_DESCRIPTION", "PHENOMENOLOGICAL_CANDIDATE", "phenomenology_report", "D"
+        ),
+    )
+    assert m.current_state == "PHENOMENOLOGICAL_CANDIDATE"
+    assert len(m.transitions) == 1
+
+
+def test_concept_mapping_retains_contradicted_and_unknown():
+    # both must remain reachable first-class outcomes
+    assert "CONTRADICTED" in R.CONCEPT_MAPPING_STATE_IDS
+    assert "UNKNOWN" in R.CONCEPT_MAPPING_STATE_IDS
+    m = CM.ConceptMapping(concept_id="c", source_state="MECHANISM_HYPOTHESIS")
+    CM.apply_transition(
+        m, "CONTRADICTED", evidence_class="contradiction_evidence", reviewer_role="F",
+        reason="conflicting evidence",
+        evidence_object=_transition_evidence(
+            "MECHANISM_HYPOTHESIS", "CONTRADICTED", "contradiction_evidence", "F"
+        ),
+    )
+    assert m.current_state == "CONTRADICTED"
+
+
+# ===========================================================================
+# F. Practice / intervention safety envelope
+# ===========================================================================
+def test_safety_envelope_field_set_complete():
+    assert SE.envelope_field_set_complete()
+    assert len(SE.REQUIRED_ENVELOPE_FIELDS) == 15
+
+
+def test_envelope_rejects_missing_required_fields():
+    env = SE.PracticeSafetyEnvelope()  # all UNKNOWN / False
+    with pytest.raises(SE.EnvelopeIncompleteError):
+        SE.validate_envelope(env)
+
+
+def test_envelope_rejects_stop_treatment_language():
+    assert SE.contains_stop_treatment_language("you should stop taking your medication")
+    assert SE.contains_stop_treatment_language("replace your prescribed treatment")
+    assert not SE.contains_stop_treatment_language("discuss options with your clinician")
+
+
+def test_envelope_rejects_stop_treatment_in_raw_text():
+    env = FX.sample_safety_envelope()
+    env.raw_text = "you can stop prescribed treatment and use this instead"
+    with pytest.raises(SE.StopTreatmentRecommendationError):
+        SE.validate_envelope(env)
+
+
+def test_envelope_requires_consent_reversibility_stop_referral():
+    env = SE.PracticeSafetyEnvelope(
+        educational_vs_individualized="educational",
+        intended_population="general adults",
+        exclusion_criteria="none known",
+        contraindications="none known",
+        risk_severity="low",
+        informed_consent_required=False,  # missing
+        dependency_coercion_risk="low",
+        stop_conditions="UNKNOWN",  # missing
+        rollback_exit_path="stop practice",
+        professional_referral_boundary="UNKNOWN",  # missing
+        emergency_boundary="call emergency services",
+        interaction_with_existing_care="coordinate with provider",
+        evidence_grade="low",
+        unknowns=["long-term data"],
+        long_term_followup_plan="annual review",
+    )
+    with pytest.raises(SE.EnvelopeIncompleteError):
+        SE.validate_envelope(env)
+
+
+# ===========================================================================
+# G. Non-impact proof (task §13)
+# ===========================================================================
+def test_non_impact_proof_has_all_twelve_items():
+    proof = NI.build_non_impact_proof()
+    assert len(proof["items"]) == len(NI.NON_IMPACT_ITEMS)
+    assert NI.proof_items_consistent(proof)
+
+
+@pytest.mark.parametrize("item", NI.NON_IMPACT_ITEMS)
+def test_non_impact_item_not_altered(item):
+    proof = NI.build_non_impact_proof()
+    match = next(i for i in proof["items"] if i["item"] == item)
+    assert match["status"] == "NOT_ALTERED_BY_R5A"
+
+
+# ===========================================================================
+# H. Candidate-only manifest flags
+# ===========================================================================
+def test_manifest_carries_all_required_flags():
+    for flag in manifest.MANIFEST_REQUIRED_FLAGS:
+        assert flag in manifest.CANDIDATE_MANIFEST
+
+
+def test_manifest_is_candidate_only_and_non_activating():
+    assert manifest.manifest_flags_consistent()
+    m = manifest.CANDIDATE_MANIFEST
+    assert m["activation_status"] == "CANDIDATE_ONLY"
+    assert m["human_intervention_enabled"] is False
+    assert m["medical_claims_authorized"] is False
+    assert m["modern_wuzhen_pack_started"] is False
+    assert m["domain_pack_federation_started"] is False
+    assert m["external_acceptance_claimed"] is False
+
+
+# ===========================================================================
+# I. Normative / empirical type-tag closed set (no silent conflation)
+# ===========================================================================
+def test_type_tag_closed_set_has_exactly_ten():
+    assert len(R.NORMATIVE_EMPIRICAL_TYPE_TAGS) == 10
+
+
+@pytest.mark.parametrize("tag", R.NORMATIVE_EMPIRICAL_TYPE_TAGS)
+def test_each_type_tag_is_valid(tag):
+    assert R.is_valid_type_tag(tag)
+
+
+def test_unknown_type_tag_rejected():
+    assert not R.is_valid_type_tag("FAKE_TAG")
+
+
+# ===========================================================================
+# J. No religion automatically endorsed or dismissed; no Zhang Boduan clinical
+#    authority; no private content leakage in source
+# ===========================================================================
+def test_source_has_no_clinical_authority_claim_for_zhang_boduan():
+    base = os.path.dirname(__file__)
+    pkg_root = os.path.join(os.path.dirname(os.path.dirname(base)), "life_integrity_r5a")
+    text = ""
+    for fn in os.listdir(pkg_root):
+        if fn.endswith(".py"):
+            text += open(os.path.join(pkg_root, fn), encoding="utf-8").read()
+    lowered = text.lower()
+    # The package never asserts Zhang Boduan / South-School is clinically effective.
+    assert "clinically effective" not in lowered
+    assert "clinical authority" not in lowered
+
+
+def test_source_never_endorses_or_dismisses_religion():
+    base = os.path.dirname(__file__)
+    pkg_root = os.path.join(os.path.dirname(os.path.dirname(base)), "life_integrity_r5a")
+    text = ""
+    for fn in os.listdir(pkg_root):
+        if fn.endswith(".py"):
+            text += open(os.path.join(pkg_root, fn), encoding="utf-8").read()
+    lowered = text.lower()
+    assert "all religions are true" not in lowered
+    assert "religion is false" not in lowered
+    assert "scientifically supported religion" not in lowered
+
+
+def test_package_source_contains_no_private_leak_markers():
+    base = os.path.dirname(__file__)
+    pkg_root = os.path.join(os.path.dirname(os.path.dirname(base)), "life_integrity_r5a")
+    text = ""
+    for fn in os.listdir(pkg_root):
+        if fn.endswith(".py"):
+            text += open(os.path.join(pkg_root, fn), encoding="utf-8").read()
+    # No private-note / personal-health leakage markers in the candidate source.
+    assert "private_note" not in text
+    assert "personal_health_record" not in text
+
+
+# ===========================================================================
+# K. Repository tests never assert human efficacy / clinical effectiveness
+# ===========================================================================
+def test_package_source_never_asserts_human_efficacy():
+    base = os.path.dirname(__file__)
+    pkg_root = os.path.join(os.path.dirname(os.path.dirname(base)), "life_integrity_r5a")
+    text = ""
+    for fn in os.listdir(pkg_root):
+        if fn.endswith(".py"):
+            text += open(os.path.join(pkg_root, fn), encoding="utf-8").read().lower()
+    # The candidate package must never assert tests prove human safety /
+    # clinical effectiveness. (Scanning the package, not this test file, avoids
+    # self-reference with the assertion text.)
+    assert "proves human" not in text
+    assert "demonstrates clinical efficacy" not in text
+    assert "validates human safety" not in text
+    assert "tests prove" not in text
+
+
+# ===========================================================================
+# L. Aggregate validator entry point (implemented in Commit 4)
+# ===========================================================================
+def test_validate_all_runs_and_is_deterministic():
+    ok, failures = validators.validate_all()
+    assert ok, failures
+    ok2, failures2 = validators.validate_all()
+    assert failures == failures2
+
+
+# ===========================================================================
+# M. Synthetic fixtures + additional attack/acceptance coverage
+# ===========================================================================
+from life_integrity_r5a import fixtures as FX  # noqa: E402
+
+
+def test_fixture_embodied_agent_has_all_seven_views():
+    agent = FX.sample_embodied_agent()
+    assert len(agent._views) == 7
+    assert agent.missing_views() == []
+
+
+def test_fixture_embodied_agent_single_subject():
+    agent = FX.sample_embodied_agent("subj-A")
+    for vid, proj in agent._views.items():
+        assert proj.subject_identity == "subj-A"
+
+
+def test_fixture_translated_claim_valid_and_not_mechanism():
+    claim = FX.sample_translated_claim()
+    assert R.is_valid_claim_class(claim.claim_class)
+    assert claim.claim_class == "HISTORICAL_SOURCE"
+    assert claim.mechanism_status == "NOT_ASSERTED"
+
+
+def test_fixture_concept_mapping_progressed():
+    m = FX.sample_concept_mapping()
+    assert m.current_state == "PHENOMENOLOGICAL_CANDIDATE"
+    assert len(m.transitions) == 1
+
+
+def test_fixture_safety_envelope_passes_validation():
+    env = FX.sample_safety_envelope()
+    SE.validate_envelope(env)  # must not raise
+
+
+def test_fixture_local_optimization_passes_validation():
+    prop = FX.sample_local_optimization_proposal()
+    LI.LifeIntegrityGate().validate_proposal(prop)  # must not raise
+
+
+def test_valid_whole_person_disclosure_passes():
+    agent = FX.sample_embodied_agent()
+    agent.require_whole_person_disclosure(
+        claimed_views=list(R.EMBODIED_VIEW_IDS),
+        missing_disclosed=True,
+        contradictions_surfaced=True,
+        evidence_objects=[FX.sample_multi_view_evidence()],
+    )
+
+
+def test_embodied_agent_contradictions_surfaced_not_merged():
+    agent = FX.sample_embodied_agent()
+    agent.record_contradiction(EV.Contradiction("PhysiologicalView", "MeaningView", "a"))
+    agent.record_contradiction(EV.Contradiction("BehavioralView", "RelationalView", "b"))
+    surfaced = agent.surface_contradictions()
+    assert len(surfaced) == 2
+
+
+def test_concept_mapping_transition_records_metadata():
+    m = CM.ConceptMapping(concept_id="c", source_state="SYMBOLIC_DESCRIPTION")
+    CM.apply_transition(
+        m,
+        "PHENOMENOLOGICAL_CANDIDATE",
+        "phenomenology_report",
+        "D",
+        "r",
+        evidence_object=_transition_evidence(
+            "SYMBOLIC_DESCRIPTION", "PHENOMENOLOGICAL_CANDIDATE", "phenomenology_report", "D"
+        ),
+    )
+    rec = m.transitions[0]
+    for key in (
+        "from", "to", "required_evidence_class", "provided_evidence_class",
+        "reviewer_role", "reversibility", "contradiction_handling", "reason", "receipt",
+    ):
+        assert key in rec
+
+
+@pytest.mark.parametrize("state", R.CONCEPT_MAPPING_STATE_IDS)
+def test_each_concept_state_has_at_least_one_allowed_transition(state):
+    assert len(R.CONCEPT_MAPPING_TRANSITIONS.get(state, {})) >= 1
+
+
+def test_type_tag_set_is_distinct():
+    assert len(set(R.NORMATIVE_EMPIRICAL_TYPE_TAGS)) == 10
+
+
+def test_claim_class_set_is_distinct():
+    assert len(set(R.TRADITION_CLAIM_CLASS_IDS)) == 8
+
+
+def test_concept_state_set_is_distinct():
+    assert len(set(R.CONCEPT_MAPPING_STATE_IDS)) == 8
+
+
+def test_embodied_view_set_is_distinct():
+    assert len(set(R.EMBODIED_VIEW_IDS)) == 7
+
+
+def test_manifest_not_authorized_list_present():
+    assert len(manifest.CANDIDATE_MANIFEST["not_authorized"]) >= 15
+
+
+def test_manifest_artifacts_reference_required_docs():
+    arts = manifest.CANDIDATE_MANIFEST["artifacts"]
+    assert any("life-integrity-charter-candidate-r1.md" in a for a in arts)
+    assert any("tradition-translation-pipeline-r1.md" in a for a in arts)
+    assert len(arts) >= 14
+
+
+def test_non_impact_proof_has_schema():
+    proof = NI.build_non_impact_proof()
+    assert proof["schema"].startswith("r5a/non-impact-proof")
+
+
+def test_validate_all_has_no_failures():
+    ok, failures = validators.validate_all()
+    assert ok, failures
+
+
+@pytest.mark.parametrize(
+    "phrase",
+    ["stop taking your pills", "replace your prescribed treatment", "quit your medication"],
+)
+def test_safety_envelope_detects_stop_phrase_variant(phrase):
+    assert SE.contains_stop_treatment_language(phrase)
+
+
+def test_local_optimization_valid_proposal_fully_documented():
+    prop = FX.sample_local_optimization_proposal()
+    for field_name in LI.LOCAL_OPTIMIZATION_FIELDS:
+        value = getattr(prop, field_name)
+        assert value is not None and value != "UNKNOWN" and value != ""
+
+
+def test_translated_claim_forbids_upgrade_via_interpretation_layer():
+    with pytest.raises((TT.ForbiddenClaimUpgradeError, TT.UnknownTranslationStatusError)):
+        TT.translate_claim(
+            source_provenance="synthetic", claim_class="METAPHYSICAL_CLAIM",
+            interpretation_layer="SCIENTIFIC_FACT",
+        )
+
+
+def test_concept_mapping_unknown_reachable_from_mechanism():
+    m = CM.ConceptMapping(concept_id="c", source_state="MECHANISM_HYPOTHESIS")
+    CM.apply_transition(
+        m,
+        "UNKNOWN",
+        "insufficient_evidence",
+        "F",
+        "r",
+        evidence_object=_transition_evidence(
+            "MECHANISM_HYPOTHESIS", "UNKNOWN", "insufficient_evidence", "F"
+        ),
+    )
+    assert m.current_state == "UNKNOWN"
+
+
+def test_concept_mapping_contradicted_reachable_from_partially_supported():
+    m = CM.ConceptMapping(concept_id="c", source_state="PARTIALLY_SUPPORTED")
+    CM.apply_transition(
+        m,
+        "CONTRADICTED",
+        "contradiction_evidence",
+        "F",
+        "r",
+        evidence_object=_transition_evidence(
+            "PARTIALLY_SUPPORTED", "CONTRADICTED", "contradiction_evidence", "F"
+        ),
+    )
+    assert m.current_state == "CONTRADICTED"
+
+
+def test_gate_activated_remains_false():
+    gate = LI.LifeIntegrityGate()
+    assert gate.activated is False
+
+
+def test_annex_principle_contains_user_authorized_text():
+    assert "性命一体" in AX.USER_AUTHORIZED_PRINCIPLE
+    assert "身心互成" in AX.USER_AUTHORIZED_PRINCIPLE
+
+
+def test_registries_control_identity_present():
+    assert R.CONTROL_COMMIT == "d653c07ed6b108c98e16d111c014f87d7c7987f2"
+    assert R.FORMAL_PREDECESSOR == "f236543dadcaf79ba9dba750fa21bd8b5c65a33a"
+    assert R.TASK_ID == "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+
+
+def test_translated_claim_unknown_class_fails_at_construction():
+    with pytest.raises(TT.UnknownClaimClassError):
+        TT.TranslatedClaim(
+            source_provenance="x", source_language="zh", translation_status="literal",
+            attribution_status="author", claim_class="UNKNOWN_CLASS",
+        )
+
+
+def test_embodied_agent_get_view_missing_raises():
+    agent = FX.sample_embodied_agent()
+    with pytest.raises(EV.MissingViewError):
+        agent.get_view("NonexistentView")
+
+
+def test_concept_mapping_unknown_state_rejected_at_construction():
+    with pytest.raises(CM.UnknownConceptStateError):
+        CM.ConceptMapping(concept_id="c", source_state="BOGUS_STATE")
+
+
+# ===========================================================================
+# N. Deterministic public-artifact generator (Commit 5 self-check)
+# ===========================================================================
+def test_generator_produces_the_explicit_artifact_registry(tmp_path):
+    out = tmp_path / "artifacts"
+    GEN.generate(str(out))
+    names = sorted(p.name for p in out.glob("*.json"))
+    expected = sorted(n for n, _ in GEN._ARTIFACTS)
+    assert names == expected
+    assert "r5a-narrow-repair-attack-case-registry.json" in names
+    assert "r5a-narrow-repair-attack-acceptance.json" in names
+    assert "longitudinal-feedback-schema.json" in names
+
+
+def test_generator_output_is_deterministic(tmp_path):
+    d1 = tmp_path / "run1"
+    d2 = tmp_path / "run2"
+    GEN.generate(str(d1))
+    GEN.generate(str(d2))
+    for n, _ in GEN._ARTIFACTS:
+        p1 = d1 / n
+        p2 = d2 / n
+        assert p1.read_bytes() == p2.read_bytes(), f"non-deterministic artifact: {n}"
+
+
+def test_generator_artifacts_valid_json_and_closed_sets(tmp_path):
+    import json
+
+    out = tmp_path / "artifacts"
+    GEN.generate(str(out))
+
+    mani = json.loads((out / "candidate-charter-manifest.json").read_text(encoding="utf-8"))
+    meta = mani["meta"]
+    assert meta["activation_status"] == "CANDIDATE_ONLY"
+    assert meta["human_intervention_enabled"] is False
+    assert meta["medical_claims_authorized"] is False
+    assert meta["external_acceptance_claimed"] is False
+    assert meta["supreme_charter"] == "LifeCommunityValueCharter"
+    assert mani["annex_beneath_supreme_charter"] is True
+
+    emb = json.loads((out / "embodied-view-registry.json").read_text(encoding="utf-8"))
+    assert emb["view_count"] == 7
+    assert len(emb["closed_set"]) == 7
+
+    trd = json.loads((out / "tradition-claim-class-registry.json").read_text(encoding="utf-8"))
+    assert trd["claim_class_count"] == 8
+    assert len(trd["forbidden_upgrades"]) == 5
+
+    cmap = json.loads((out / "concept-mapping-lifecycle-registry.json").read_text(encoding="utf-8"))
+    assert cmap["state_count"] == 8
+    assert cmap["direct_jump_to_partially_supported_forbidden"] is True
+
+    se = json.loads((out / "practice-safety-envelope-schema.json").read_text(encoding="utf-8"))
+    assert se["field_set_complete"] is True
+    assert len(se["field_set"]) == 15
+
+    li = json.loads((out / "life-integrity-assessment-schema.json").read_text(encoding="utf-8"))
+    assert li["field_set_complete"] is True
+    assert len(li["field_set"]) == 11
+
+
+# ===========================================================================
+# O. Narrow-repair instance gate: concrete input + evidence + per-case result
+# ===========================================================================
+@pytest.mark.parametrize("case", AG.ATTACK_CASES, ids=lambda case: case.case_id)
+def test_each_required_narrow_repair_case_executes(case):
+    result = AG.run_case(case)
+    assert result["passed"], result
+    assert result["evidence_id"] == case.evidence_object.evidence_id
+
+
+def test_attack_gate_binds_exact_ids_and_evidence_objects():
+    assert tuple(case.case_id for case in AG.ATTACK_CASES) == AG.REQUIRED_ATTACK_CASE_IDS
+    assert len({case.evidence_object.evidence_id for case in AG.ATTACK_CASES}) == len(
+        AG.REQUIRED_ATTACK_CASE_IDS
+    )
+    receipt = AG.run_attack_gate()
+    assert receipt["status"] == "PASS", receipt
+    assert receipt["failed_case_ids"] == []
+    assert [result["case_id"] for result in receipt["results"]] == list(
+        AG.REQUIRED_ATTACK_CASE_IDS
+    )
+
+
+def test_longitudinal_contract_separates_time_harm_consent_and_rollback():
+    contract = FX.sample_longitudinal_contract()
+    LG.validate_longitudinal_contract(contract)
+    event = contract.events[0]
+    assert contract.observation_time != contract.decision_time
+    assert contract.decision_time != contract.intervention_time
+    assert contract.intervention_time != contract.review_time
+    assert event.rollback_status == "SUCCEEDED"
+    assert event.residual_harm_after_rollback == "synthetic residual fatigue"
+    assert contract.reopen_trigger == "DELAYED_ADVERSE_OUTCOME"
+    assert contract.revision_status == "REOPENED"
+

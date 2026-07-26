@@ -2,6 +2,8 @@
 
 版本事实：当前迭代方法为 `1.3.0`，当前系统图为 `0.3.0`；`1.2.0`／`0.2.0` 为 Historical，`1.1.0`／`0.1.0` 为更早 Historical。Q32I 已独立接受、由 PR #62 普通合并并 Closed/Current。Q32I 中 execution capability 与 validation capability 必须分离，manual/external 不得调用本地 validator。
 
+R5-A 仍是堆叠 Draft、非 Main/Current/activated。`R5A-CR-001`–`011` 合同修复已在精确头 `c4576972…` 独立验收并由 PR #133 普通合并为 `ff158ba0…`，但这只接受修复，不接受完整 PR #130。AI 不得把候选分支中的阶段成果写成当前 Main 能力。唯一下一任务请求是建立“阶段成果进入 Main、但不自动成为 Accepted/Current”的持续快照与分层发布制度；这里只记录，不代表已实施。
+
 这页给第一次接触点火项目的人使用。你不必先读完整仓库，可以先把下面的提示词复制给自己常用的 AI 助手，让它帮你做第一轮阅读。
 
 可任选一款你日常使用的 AI 助手：

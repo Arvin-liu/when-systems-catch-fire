@@ -15,6 +15,8 @@
 - [docs/PROJECT-ARCHITECTURE.md](./docs/PROJECT-ARCHITECTURE.md) — 稳定兼容入口；冲突时以根 ARCHITECTURE.md 为准
 - [docs/VERSIONING.md](./docs/VERSIONING.md) — 版本阶段与升级规范
 - [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) — 规范性价值前提
+- [点火“永远进行时”原则](./docs/governance/ignition-perpetual-present-principle.md) — 阶段可凝结、历史可追溯、系统持续可修订；宇宙对应仅为哲学隐喻与时间观。
+- [R5-A 合并合同旁路窄修复](./docs/governance/r5a-consolidated-contract-bypass-repair-r1.md) — `R5A-CR-001`–`011` 已在精确头 `c4576972…` 独立验收关闭，PR #133 以普通 merge `ff158ba0…` 并入 PR #130 来源分支；只接受修复，PR #130 仍 Draft、非 Main/Current/activated，R5-B/R5-C/R6 未启动。
 - [许可作用域](./LICENSES/README.md) — 当前分层许可权威
 - [商业许可](./COMMERCIAL-LICENSING.md) 与 [可持续性政策](./SUSTAINABILITY.md)
 

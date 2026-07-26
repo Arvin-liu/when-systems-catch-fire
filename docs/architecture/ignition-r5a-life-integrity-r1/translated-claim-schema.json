@@ -1,0 +1,233 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "not": {
+        "properties": {
+          "claim_class": {
+            "const": "PHENOMENOLOGICAL_REPORT"
+          },
+          "mechanism_status": {
+            "const": "EMPIRICALLY_SUPPORTED_MECHANISM"
+          }
+        },
+        "required": [
+          "claim_class",
+          "mechanism_status"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "claim_class": {
+            "const": "METAPHYSICAL_CLAIM"
+          },
+          "mechanism_status": {
+            "const": "SCIENTIFIC_FACT"
+          }
+        },
+        "required": [
+          "claim_class",
+          "mechanism_status"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "claim_class": {
+            "const": "PRACTICE_PROTOCOL"
+          },
+          "mechanism_status": {
+            "const": "CLINICAL_EFFICACY"
+          }
+        },
+        "required": [
+          "claim_class",
+          "mechanism_status"
+        ]
+      }
+    },
+    {
+      "not": {
+        "properties": {
+          "attribution_status": {
+            "const": "AUTHOR_INTENT"
+          },
+          "interpretation_layer": {
+            "const": "LATER_INTERPRETATION"
+          }
+        },
+        "required": [
+          "interpretation_layer",
+          "attribution_status"
+        ]
+      }
+    }
+  ],
+  "fail_closed_rules": [
+    "claim_class must be in the eight-class closed set",
+    "the five forbidden silent upgrades are rejected at build time",
+    "mechanism_status/interpretation_layer may not realize a forbidden upgrade target",
+    "out-of-set aliases fail closed instead of being treated as semantic evidence"
+  ],
+  "forbidden_upgrades": [
+    {
+      "from": "HISTORICAL_LONGEVITY",
+      "to": "EFFECTIVENESS"
+    },
+    {
+      "from": "LATER_INTERPRETATION",
+      "to": "AUTHOR_INTENT"
+    },
+    {
+      "from": "METAPHYSICAL_CLAIM",
+      "to": "SCIENTIFIC_FACT"
+    },
+    {
+      "from": "PHENOMENOLOGICAL_REPORT",
+      "to": "EMPIRICALLY_SUPPORTED_MECHANISM"
+    },
+    {
+      "from": "PRACTICE_PROTOCOL",
+      "to": "CLINICAL_EFFICACY"
+    }
+  ],
+  "meta": {
+    "activation_status": "CANDIDATE_ONLY",
+    "candidate_frozen_head": "0e9d1e5823b41b7e9375e5f634388371b9b024ac",
+    "control_commit": "d653c07ed6b108c98e16d111c014f87d7c7987f2",
+    "domain_pack_federation_started": false,
+    "external_acceptance_claimed": false,
+    "formal_predecessor": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+    "generated_by": "tools/generate_life_integrity_r5a.py",
+    "human_intervention_enabled": false,
+    "medical_claims_authorized": false,
+    "modern_wuzhen_pack_started": false,
+    "repair_task_id": "IGNITION-R5A-CONSOLIDATED-CONTRACT-BYPASS-NARROW-REPAIR-R1-20260726",
+    "schema_version": "r5a/v1.2-consolidated-contract-repair",
+    "supreme_charter": "LifeCommunityValueCharter",
+    "task_id": "IGNITION-R5A-LIFE-INTEGRITY-CHARTER-CANDIDATE-R1-RELAY-20260725"
+  },
+  "properties": {
+    "applicability_scope": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "attribution_status": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "claim_class": {
+      "enum": [
+        "HISTORICAL_SOURCE",
+        "NORMATIVE_CLAIM",
+        "METAPHYSICAL_CLAIM",
+        "PHENOMENOLOGICAL_REPORT",
+        "PRACTICE_PROTOCOL",
+        "MECHANISM_HYPOTHESIS",
+        "RITUAL_SOCIAL_TECHNOLOGY",
+        "OUTCOME_OR_HARM_REPORT"
+      ]
+    },
+    "confidence": {
+      "maximum": 1,
+      "minimum": 0,
+      "type": "number"
+    },
+    "evidence_grade": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "interpretation_layer": {
+      "enum": [
+        "SOURCE_LITERAL",
+        "AUTHOR_INTENT_CANDIDATE",
+        "LATER_INTERPRETATION",
+        "MODERN_RECONSTRUCTION"
+      ]
+    },
+    "literal_reference": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "mechanism_status": {
+      "enum": [
+        "NOT_ASSERTED",
+        "MECHANISM_HYPOTHESIS",
+        "EMPIRICALLY_SUPPORTED_MECHANISM",
+        "SCIENTIFIC_FACT",
+        "CLINICAL_EFFICACY",
+        "EFFECTIVENESS"
+      ]
+    },
+    "prohibited_upgrades": {
+      "items": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "revision_history": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "rights_boundary": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "source_language": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "source_provenance": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "translation_status": {
+      "minLength": 1,
+      "pattern": ".*\\S.*",
+      "type": "string"
+    },
+    "unknowns": {
+      "items": {
+        "minLength": 1,
+        "pattern": ".*\\S.*",
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "source_provenance",
+    "source_language",
+    "translation_status",
+    "attribution_status",
+    "claim_class",
+    "literal_reference",
+    "interpretation_layer",
+    "evidence_grade",
+    "mechanism_status",
+    "applicability_scope",
+    "rights_boundary",
+    "confidence",
+    "unknowns",
+    "prohibited_upgrades",
+    "revision_history"
+  ],
+  "schema": "r5a/translated-claim/v1",
+  "title": "TranslatedClaim",
+  "type": "object"
+}

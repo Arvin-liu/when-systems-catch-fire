@@ -65,6 +65,10 @@ Q25C 已成为当前生命周期规则：Ready、Accepted、Merged、Current、C
 121Q30T 已将之元写作法成果的五类职责收口为当前接口：人类总索引、机器 registry、正式作品、案例来源链和点火分析。交接时不得把 README 最近三项投影当作完整权威，不得公开受限原始材料，也不得从一项接受作品推出方法普遍有效。
 
 Q32I 已通过第三次独立 exact-head 审查，以 PR #62 普通合并并完成生产收口；方法 `1.3.0` / map `0.3.0` 为 Current，Q32I 为 Closed。它明确分离 authority 类型、execution capability 与 validation capability，只允许真实、确定性且完整物化声明输出的 producer 为 automatic，只有完整且构件职责相符的命令才是 local validator。Apply 在子进程／写入前必须经统一权威预检；rollback 要按整仓字节、类型、symlink 和 mode 证明完整恢复。交接必须读取 `docs/architecture/incremental-execution.md`，重算 closure、plan 和派生 projection；不能把 cache、Git diff、依赖、图连线、CI 或 artifact 当作现实因果、自我验收或 Current 证明。Q33 启动包已在 1111 准备，但 Q33 与 Q34—Q40 均尚未启动。
+
+R5-A Life Integrity 的 Night Queue R1 报告未获接受：`NIGHT_QUEUE_R1_PARTIAL_SALVAGE_NOT_ACCEPTED`。此前 30-case 窄修复的独立接受只关闭其精确实例；完整 PR #130 精确头 `f33be64…` 的审查又复现 `R5A-CR-001`–`011`。交接时读取 `docs/governance/r5a-consolidated-contract-bypass-repair-r1.md`、两组生成的攻击 registry/receipt 与 `tools/validate_life_integrity_r5a_consolidated_repair.py`。十一项旁路随后在精确头 `c4576972…` 经逐案零背景独立验收关闭；PR #133 已 Draft→Ready，并以普通 merge `ff158ba0…` 并入 PR #130 来源分支，接受头与合并树一致，合并后 CI 日志通过。这只接受仓库合同修复，不接受完整候选：PR #130 仍 Draft、未并入前驱、非 Main/Current/activated；R5-B、R5-C、R6 仍禁止启动。唯一下一任务请求是迭代点火操作法的持续快照与分层发布制度；它只被记录，不在本任务启动。
+
+项目哲学与时间观读取 `docs/governance/ignition-perpetual-present-principle.md`。阶段可以关闭而项目仍保持“永远进行时”；其宇宙对应明确只是哲学隐喻，不得升级为物理学、宇宙学或机制结论。
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。
