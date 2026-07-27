@@ -1,10 +1,10 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.3.0",
+  "map_version": "0.4.0",
   "historical_map_version": "0.2.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火完整可点击系统图",
-  "subtitle": "当前 0.3.0 增量执行投影；0.2.0 为 Historical。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。",
+  "subtitle": "0.4.0 候选投影；0.2.0 为 Historical 轨迹。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
   "projection_authority": {
     "component_registry": "data/operations/project-components.json",
@@ -260,7 +260,7 @@
     },
     {
       "id": "iteration",
-      "label": "点火迭代操作法 1.3 Current / 1.4 Draft",
+      "label": "点火迭代操作法",
       "group": "operations",
       "target": "ITERATION.md",
       "description": "1.3 增量执行为 Current；1.4 候选增加正交的持续阶段快照发布轴。",
@@ -280,6 +280,14 @@
       "group": "governance",
       "target": "docs/governance/life-community-value-charter.md",
       "description": "约束谁受益、谁承担成本以及何时拒绝、暂停或回滚。",
+      "lifecycle_status": "current"
+    },
+    {
+      "id": "charter_system_r1",
+      "label": "Charter System R1（宪章系统 R1）治理系统",
+      "group": "governance",
+      "target": "docs/governance/charter-system-r1.md",
+      "description": "治理系统 R1：已 Accepted/Current 但 activated=false、publication_status=UNPUBLISHED；其状态边界须作为前门同步义务传播到 README 与项目现状页。",
       "lifecycle_status": "current"
     },
     {
@@ -513,6 +521,22 @@
       "source": "charter",
       "target": "q12",
       "label": "价值门",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_charter_charter_r1",
+      "source": "charter",
+      "target": "charter_system_r1",
+      "label": "宪章体系治理委托",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation"
+    },
+    {
+      "id": "map_charter_r1_iteration",
+      "source": "charter_system_r1",
+      "target": "iteration",
+      "label": "宪章门控迭代",
       "relation_class": "governance_constrains",
       "relation_domain": "synchronization_obligation"
     },

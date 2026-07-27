@@ -1,6 +1,6 @@
 # 使用说明
 
-> 当前版本：2026-07-12 数学与逻辑双地基七层架构版本（IGNITION-20260709-076）。
+> 当前同步：2026-07-26 首页 / 使用说明 / 系统图 / 宪章体系统一同步（IGNITION-HOMEPAGE-USAGE-CHARTER-SYNC）。当前能力以 `0.4.0` 候选投影与 Charter System R1（activated=false / UNPUBLISHED）为准。
 
 ## 1. 从哪里进入
 
@@ -26,48 +26,50 @@
 
 需要从整体结构定位入口时，打开[完整可点击系统图](./architecture/interactive-system-map.md)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。
 
-### 1.2 Historical：计算一次项目变更的传播闭包
+## 3. 宪章体系怎样进入使用过程
 
-1.2.0 是 Historical 基础。当前正式方法 1.3.0 继续使用其传播闭包。先在 `data/operations/propagation/<task>-request.json` 登记 changed paths、显式 seed components、changed dimensions、classifications 和逐项决定，再运行 `tools/operations/compute_change_propagation.py` 生成 closure、impact report、map delta 与 residue。只有 closure 达到 fixpoint、每个 required component/surface 有决定、map 投影匹配且 residue 为空，才能进入候选 Ready。
+价值宪章与 Charter System R1 约束“什么值得做”，但不冒充事实证据或数学证明，也不在首页展示阶段快照。其边界须作为前门同步义务进入使用过程：
 
-### 1.3 Current：增量执行与选择性物化
+- 阅读 [生命共同体价值宪章](./governance/life-community-value-charter.md) 与 [Charter System R1 治理系统](./governance/charter-system-r1.md)，理解 activated=false / UNPUBLISHED 边界：治理系统已就位并 Current，尚未激活任何能力、运行时或执行器，也未发布快照。
+- 任何使用、写作或协作不得把宪章条款当作已证明事实，也不得在首页或阶段快照之外反推能力已经生效。
+- 宪章门控的变更先经 charter → charter_system_r1 → iteration 同步链评估；独立同步任务核验并合并前，提案仍只是请求。
 
-Q32I 当前能力从真实 change request 运行 `plan_incremental_execution.py`，再由 `run_incremental_execution.py` 在统一 authority preflight 通过后，只执行显式标记 automatic 的 profile 结构化 argv。Execution capability 与 validation capability 分开登记；七个 validation-only profiles 绑定真实、完整、匹配构件职责的本地 validator，44 个 manual profiles 和任何 external profile 的本地 validator subprocess 都为零。失败时只有整仓字节、类型、symlink 和适用 mode 完全一致才报 `restored`，否则生成 recovery package。NonImpactProof 仅在声明仓库关系范围内有效；cache 不是权威。任何 placeholder validator、缺参命令、缺失脚本、capability 冲突、meta-authority 变更、未解析路径或身份失配都 fail closed。
+## 4. 变更怎样传播、执行与记录阶段
 
-### 1.4 Candidate：阅读阶段快照
+点火把一次变更拆成可审计的传播、执行与阶段记录三步，不提升生命周期、不制造新的真值层：
 
-“正在炼化 / Recent Stage Results”来自 `data/operations/stage-snapshots.json` 的确定性投影。先读 lifecycle 与 publication 两条轴，再核对 Accepted、Current、Activated、正式能力影响和实际应用许可五个显式布尔量；不得从 Main/首页可见反推能力已经生效。Agent 可按 schema 提交 stage snapshot request，但独立同步任务核验并合并前，它仍只是请求。完整制度见 `docs/operations/stage-snapshot-publication.md`。
+- **传播：** 从 `data/operations/propagation/<task>-request.json` 登记 changed paths、seed components、dimensions 与 classifications，再运行 `tools/operations/compute_change_propagation.py` 生成 closure、impact report、map delta 与 residue。只有 closure 达到 fixpoint、每个 required component/surface 有决定、map 投影匹配且 residue 为空，才能进入候选 Ready。
+- **执行：** 当前能力从真实 change request 运行 `plan_incremental_execution.py`，再由 `run_incremental_execution.py` 在统一 authority preflight 通过后，只执行显式标记 automatic 的 profile 结构化 argv。Execution 与 validation capability 分开登记；失败只有整仓字节、类型、symlink 与适用 mode 完全一致才报 `restored`。
+- **阶段记录：** 阶段快照来自 `data/operations/stage-snapshots.json` 的确定性投影，沿 lifecycle 与 publication 两条轴记录 Accepted、Current、Activated、正式能力影响与应用许可五个显式布尔量；完整制度见 `docs/operations/stage-snapshot-publication.md`。该模块仅在注册表与历史中保留，不在首页展示。
 
 `NO_CHANGE_WITH_REASON` 允许纯历史修字不触发无关全仓更新；新增正式构件则必须进入系统图，或提供 validator 可检查的 hidden representation 与理由。这里计算的是声明关系下的仓库／治理传播，不是现实因果。
 
-向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁和伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN、Atlas 或迭代流程。点赞、赞美、传播和多 AI 共识只能是体验／传播数据。
+向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁与伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN、Atlas 或迭代流程。点赞、赞美、传播与多 AI 共识只能是体验／传播数据。
 
-肉身锚定只是可选入口／回返模式；跨域同构叙事只是一种应用；高维压缩结尾也可省略。没有身体坐标、没有跨学科例子或没有格言式结尾，都不构成自动降级。
+横向增加领域不等于纵向升层。下一层若只换词、重复同级案例或制造宏大感，应停止。任何写作感染力、模板完成或机器检查都不能提高 L0-L5 的事实、因果、同构、证明或价值状态。
 
-横向增加领域不等于纵向升层。下一层若只换词、重复同级案例或制造宏大感，应停止。后台可以用 MCF／PSD／ARN 与 Q13 审查映射、动力学、关系和信息增益；前台正文不得用这些术语替代作品。任何写作感染力、模板完成或机器检查都不能提高 L0-L5 的事实、因果、同构、证明或价值状态。
-
-## 3. 使用 12 元协议与 64 组合
+## 5. 使用 12 元协议与 64 组合
 
 12 元协议可作规范、启发与治理坐标；64 组合可作设计与生成空间。它们不是数学公理、证明空间或现实全枚举。
 
 - [12 个元协议](./meta-protocols/12-meta-protocols.md)
 - [64 组合矩阵](./meta-protocols/meta-protocol-64-combination-matrix.md)
 
-## 4. 查阅权威与 legacy 兼容视图
+## 6. 查阅权威与 legacy 兼容视图
 
 先查 data/foundation 注册表和 project-state。统一函数总表、统一案例总表及 views 仅用于历史追溯和兼容展示，不代表内容已经证明或外部验证。
 
-## 5. 提交候选
+## 7. 提交候选
 
 候选首先分成对象、命题、论证、来源与证据。book candidate 保留 BC 临时 ID，不分配 C ID。pending claim 保留 PEND ID；多种文件表示按同一 ID 合并，不重复计数。
 
-## 6. 理解状态与旧断言等级
+## 8. 理解状态与旧断言等级
 
 workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 九轴独立，任何一轴不推出另一轴。
 
 docs/claim_levels.md 中的历史 L0-L5 是 legacy claim_level / assertion_grade，不是新 architecture_layer L0-L6。引用时必须写明字段，禁止裸用 L0-L5 造成混淆。
 
-## 7. 避免误用
+## 9. 避免误用
 
 - 点火不是万能证明器；只有有可检查工件的具体命题才可获得相应 proof 状态。
 - 单案例不能证明普遍定理。

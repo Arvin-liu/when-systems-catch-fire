@@ -95,11 +95,11 @@ def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> N
     required_order = [
         "## 项目现状",
         "## 项目宣言",
-        "## 正在炼化 / Recent Stage Results",
+        "## 使用说明",
         "## 之元写作法成果",
-        "## 生命共同体价值宪章",
+        "## 宪章体系",
         "## 完整可点击系统图",
-        "## 使用指南",
+        "## 项目内容入口",
     ]
     positions = [readme.index(heading) for heading in required_order]
     require(positions == sorted(positions), "README top-level information architecture is out of order")
@@ -110,12 +110,13 @@ def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> N
     # statement, NOT a Current-state / lifecycle / governance fact.
     status_body = readme.split("## 项目现状", 1)[1].split("## 项目宣言", 1)[0]
     require(status_body.strip() != "", "README 项目现状 module body must be non-empty")
-    decl_body = readme.split("## 项目宣言", 1)[1].split("## 正在炼化", 1)[0]
+    decl_body = readme.split("## 项目宣言", 1)[1].split("## 使用说明", 1)[0]
     require(decl_body.strip() != "", "README 项目宣言 module body must be non-empty")
     require("丹无定形，火有法度；\n炼无终局，化有来路。" in decl_body, "README 项目宣言 must contain the verbatim declaration poem")
     require(readme.index("## 项目宣言") < readme.index("**首要入口：**"), "README 项目宣言 must precede 首要入口")
-    require("<summary>展开：完整 AI 首次阅读提示词</summary>" in readme, "README AI prompt is not folded")
-    visible = readme.split("## 项目现状", 1)[1].split("## 生命共同体价值宪章", 1)[0]
+    require("正在炼化" not in readme, "README must not expose the stage-snapshot homepage module")
+    require(readme.count("## 使用说明") == 1, "README must expose exactly one 使用说明 heading")
+    visible = readme.split("## 项目现状", 1)[1].split("## 宪章体系", 1)[0]
     prompt = extract_text_prompt(readme, "README.md")
     guide_prompt = extract_text_prompt(guide, "docs/ai-assistant-usage-reference.md")
 
@@ -139,8 +140,6 @@ def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> N
     require("README.md" in pages, "Pages workflow does not watch README.md")
     require("data/operations/stage-snapshots.json" in pages, "Pages artifact omits stage snapshot registry")
     require("validate_stage_snapshots.py --check" in pages, "Pages build does not reject stale stage snapshot projection")
-    require("PUBLISHED_SNAPSHOT != ACCEPTED" in readme, "README omits stage/lifecycle orthogonality boundary")
-    require("PR #130" in readme and "019f52cc296b" in readme, "README omits exact R5-A pilot snapshot")
     # Charter System R1 front-door boundary: Accepted/Current but not activated, not published.
     require(CHARTER_R1_BOUNDARY["name_zh"] in readme and CHARTER_R1_BOUNDARY["name_en"] in readme, "README omits Charter System R1 by name")
     require(CHARTER_R1_BOUNDARY["activated"] in readme and CHARTER_R1_BOUNDARY["publication"] in readme, "README omits Charter System R1 boundary (activated=false / UNPUBLISHED)")
@@ -199,7 +198,7 @@ def validate_system_map(root: Path, readme: str, pages: str) -> int:
         "readme", "summary", "usage", "ai_guide", "current_state",
         "l0", "l1", "l2", "l3", "l4", "l5", "l6",
         "foundation", "function_os", "mcf", "psd", "arn",
-        "q12", "q13", "q14", "iteration", "sync", "charter", "licensing", "sustainability",
+        "q12", "q13", "q14", "iteration", "sync", "charter", "charter_system_r1", "licensing", "sustainability",
         "external_input", "ignition_increment", "source_pool", "zhiyuan_method",
         "case_source", "point_fire_analysis", "accepted_work", "showcase", "showcase_registry",
         "public_response", "provenance_capture", "candidate_return", "feedback_routes",
@@ -220,10 +219,10 @@ def validate_system_map(root: Path, readme: str, pages: str) -> int:
         require(link.attrib.get("href", "").startswith("https://github.com/Arvin-liu/when-systems-catch-fire/"), f"node link is not canonical HTTPS: {link.attrib}")
         require(link.attrib.get("data-target"), f"SVG node link lacks data-target: {link.attrib}")
 
-    charter = readme.index("## 生命共同体价值宪章")
+    charter = readme.index("## 宪章体系")
     system_map = readme.index("## 完整可点击系统图")
-    usage = readme.index("## 使用指南")
-    require(charter < system_map < usage, "README system map must follow Charter and precede usage")
+    usage = readme.index("## 项目内容入口")
+    require(charter < system_map < usage, "README system map must follow Charter System and precede usage")
     require("<object data=\"./generated/ignition-system-map.svg\"" in readme, "Pages homepage does not directly embed the complete interactive SVG")
     require("./pages/generated/ignition-system-map.svg" in readme, "GitHub README does not preserve the complete SVG preview")
     require("打开交互版完整图" in readme, "GitHub README lacks an explicit interactive-map entrance")

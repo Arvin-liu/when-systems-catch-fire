@@ -291,6 +291,50 @@
       "residue": []
     },
     {
+      "relation_id": "map_charter_charter_r1",
+      "source": "charter",
+      "target": "charter_system_r1",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation",
+      "trigger_dimensions": [
+        "governance"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": true,
+      "label": "宪章体系治理委托",
+      "declaration_source": "docs/governance/charter-system-r1.md",
+      "claim_ceiling": "normative constraint delegation only",
+      "residue": []
+    },
+    {
+      "relation_id": "map_charter_r1_iteration",
+      "source": "charter_system_r1",
+      "target": "iteration",
+      "relation_class": "governance_constrains",
+      "relation_domain": "synchronization_obligation",
+      "trigger_dimensions": [
+        "governance",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "GOVERNANCE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": true,
+      "label": "宪章门控迭代",
+      "declaration_source": "docs/governance/charter-system-r1.md",
+      "claim_ceiling": "governance gate only; activated=false / UNPUBLISHED boundary preserved",
+      "residue": []
+    },
+    {
       "relation_id": "map_current_state_no_totality",
       "source": "current_state",
       "target": "no_totality_proof",

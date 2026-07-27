@@ -85,36 +85,38 @@ class HumanFrontDoorTests(unittest.TestCase):
         headings = [
             "## 项目现状",
             "## 项目宣言",
-            "## 正在炼化 / Recent Stage Results",
+            "## 使用说明",
             "## 之元写作法成果",
-            "## 生命共同体价值宪章",
+            "## 宪章体系",
             "## 完整可点击系统图",
-            "## 使用指南",
+            "## 项目内容入口",
         ]
         positions = [self.readme.index(heading) for heading in headings]
         self.assertEqual(positions, sorted(positions))
         # 项目宣言 must sit between 项目现状 and 首要入口.
         self.assertLess(self.readme.index("## 项目宣言"), self.readme.index("**首要入口：**"))
 
-    def test_ai_prompt_is_folded_and_current_details_removed(self):
-        # The folded current-state <details> block was intentionally removed; the
-        # AI first-read prompt stays folded.
+    def test_ai_prompt_is_expanded(self):
+        # The stage-snapshot homepage module and its fold were removed; the AI
+        # first-read prompt is now shown expanded directly (no <details> fold).
         self.assertNotIn("<summary>展开：当前能力、限制与完整项目现状</summary>", self.readme)
-        self.assertIn("<summary>展开：完整 AI 首次阅读提示词</summary>", self.readme)
+        self.assertNotIn("<summary>展开：完整 AI 首次阅读提示词</summary>", self.readme)
+        self.assertIn("```text\n请阅读并分析点火项目：", self.readme)
 
     def test_complete_system_map_is_between_charter_and_usage(self):
-        charter = self.readme.index("## 生命共同体价值宪章")
+        charter = self.readme.index("## 宪章体系")
         system_map = self.readme.index("## 完整可点击系统图")
-        usage = self.readme.index("## 使用指南")
+        usage = self.readme.index("## 项目内容入口")
         self.assertLess(charter, system_map)
         self.assertLess(system_map, usage)
         self.assertIn("<object data=\"./generated/ignition-system-map.svg\"", self.readme)
 
     def test_system_map_has_all_clickable_nodes_and_no_l7_layer(self):
         result = validate_all()
-        # 48 = 41 original declared nodes + 7 Q33 draft_candidate governance
-        # nodes; the materialized map must cover the full current node set.
-        self.assertEqual(result["interactive_system_map_nodes"], 48)
+        # 49 = 41 original declared nodes + 7 Q33 draft_candidate governance
+        # nodes + 1 Charter System R1 governance node; the materialized map must
+        # cover the full current node set.
+        self.assertEqual(result["interactive_system_map_nodes"], 49)
 
     def test_pages_artifact_carries_typed_propagation_evidence(self):
         self.assertIn("typed-change-propagation.md", self.pages)
@@ -122,19 +124,21 @@ class HumanFrontDoorTests(unittest.TestCase):
         self.assertIn("site/data/operations/project-components.json", self.pages)
         self.assertIn("site/data/operations/change-propagation-topology.json", self.pages)
 
-    def test_stage_snapshot_homepage_is_registry_derived_and_bounded(self):
-        self.assertIn("PUBLISHED_SNAPSHOT != ACCEPTED", self.readme)
-        self.assertIn("PR #130", self.readme)
-        self.assertIn("019f52cc296b", self.readme)
+    def test_stage_snapshot_registry_stays_in_pages_not_homepage(self):
+        # The stage snapshot system/registry/history stays; only the homepage
+        # display module is removed. The README must not expose 正在炼化 and the
+        # Pages artifact must still carry the registry and its staleness gate.
+        self.assertNotIn("正在炼化", self.readme)
+        self.assertIn("data/operations/stage-snapshots.json", self.pages)
         self.assertIn("validate_stage_snapshots.py --check", self.pages)
 
     def test_project_declaration_poem_is_verbatim_and_separated(self):
-        decl = self.readme.split("## 项目宣言", 1)[1].split("## 正在炼化", 1)[0]
+        decl = self.readme.split("## 项目宣言", 1)[1].split("## 使用说明", 1)[0]
         self.assertIn("丹无定形，火有法度；\n炼无终局，化有来路。", decl)
         # 项目宣言 is an independent module: after 项目现状 and before 价值宪章,
         # clearly separated from both the status narrative and the value charter.
         self.assertLess(self.readme.index("## 项目现状"), self.readme.index("## 项目宣言"))
-        self.assertLess(self.readme.index("## 项目宣言"), self.readme.index("## 生命共同体价值宪章"))
+        self.assertLess(self.readme.index("## 项目宣言"), self.readme.index("## 宪章体系"))
 
     def test_three_ai_front_doors_share_version_truth(self):
         validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms)
