@@ -1,6 +1,6 @@
 # 点火完整可点击系统图
 
-Status: `0.3.0 Current registry-derived navigation interface`; `0.2.0` is Historical.
+Status: `0.4.0 候选投影（registry-derived navigation interface）`; `0.2.0` 为 Historical。
 
 本页说明点火完整系统图的权威来源、生成方式、双表面行为和解释边界。它是当前仓库的导航接口，不是第二份项目真相表、永久唯一总地图、因果图、严格同构证明或理论完备性证明。
 
@@ -12,7 +12,7 @@ Status: `0.3.0 Current registry-derived navigation interface`; `0.2.0` is Histor
 
 ## Current 与 Historical 权威生成链
 
-Current 0.3.0 preserves the authority chain established by Historical 0.2.0 and projects incremental-execution lifecycle metadata:
+0.4.0 候选投影继承 Historical 0.2.0 建立的权威链，并新增 Charter System R1 治理节点：
 
 `project component registry + typed propagation topology + layout overlay → deterministic generator → materialized spec + SVG → README / Pages`
 
@@ -25,7 +25,7 @@ python3 tools/generate_interactive_system_map.py
 python3 tools/generate_interactive_system_map.py --check
 ```
 
-验证要求 additionally include projection freshness against all three authorities and coverage of the current propagation closure's map impact. The Q32I Current projection remains 9 groups, 41 nodes, 37 visible edges and L0–L6. `incremental_execution` is deliberately hidden and represented by the existing iteration node with a machine-checkable reason, rather than adding a decorative architecture node.
+验证要求 additionally include projection freshness against all three authorities and coverage of the current propagation closure's map impact. The 0.4.0 candidate projection is 9 groups, 49 nodes, 44 visible edges and L0–L6. `incremental_execution` is deliberately hidden and represented by the existing iteration node with a machine-checkable reason, rather than adding a decorative architecture node.
 
 ## GitHub README 与 Pages
 
@@ -37,6 +37,6 @@ python3 tools/generate_interactive_system_map.py --check
 
 - cluster 只表达导航分组，不增加架构层。
 - 边表示导航、来源、操作或受约束的信息流；除非目标文档另有证据，不表示经验因果。
-- 图中的 L0—L6、Foundation、Function OS、MCF、PSD、ARN、Q12—Q14、迭代、Charter、之元写作法与反馈环仍服从各自 canonical 文档。
+- 图中的 L0—L6、Foundation、Function OS、MCF、PSD、ARN、Q12—Q14、迭代、Charter、Charter System R1、之元写作法与反馈环仍服从各自 canonical 文档。
 - “完整”只指本轮 spec 覆盖当前要求的系统构件，不表示点火理论已完整、所有现实机制已识别或未来无需修订。
 - The map's `repository_dependency`, `synchronization_obligation` and `substantive_causal_candidate` domains have different authority. A typed edge or computed map delta is not real-world causal proof.

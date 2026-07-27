@@ -1,5 +1,5 @@
 {
-  "current_map_version": "0.3.0",
+  "current_map_version": "0.4.0",
   "geometry": {
     "columns": 3,
     "group_gap": 28,
@@ -110,6 +110,7 @@
     ],
     "governance": [
       "charter",
+      "charter_system_r1",
       "copyright_governance_history_remediation",
       "copyright_governance_jurisdiction_registry",
       "copyright_governance_material_classification",
@@ -154,6 +155,6 @@
     ]
   },
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
-  "subtitle": "当前 0.3.0 增量执行投影；0.2.0 为 Historical。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。",
+  "subtitle": "0.4.0 候选投影；0.2.0 为 Historical 轨迹。点击构件打开 canonical 目标。路径、邻近与声明依赖不自动表示现实因果。",
   "title": "点火完整可点击系统图"
 }

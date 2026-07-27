@@ -11,96 +11,15 @@
 ## 项目宣言
 
 丹无定形，火有法度；
-
 炼无终局，化有来路。
 
 这两句是点火对自身生长方式的表达，不是项目现状说明，也不是具有约束力的价值宪章条款。它表达的是一种世界观：点火没有预设的最终形态，但它的变化必须有方法、有来源、可追溯，也必须保留自身如何变化而来的道路。
 
 **首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [点火迭代操作法](./ITERATION.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 
-<!-- STAGE-SNAPSHOTS:START -->
-## 正在炼化 / Recent Stage Results
+## 使用说明
 
-> 这里展示的是可审计的阶段快照，不是能力接受公告。`PUBLISHED_SNAPSHOT != ACCEPTED`；`PUBLISHED_SNAPSHOT != CURRENT`；`PUBLISHED_SNAPSHOT != ACTIVATED`；`SNAPSHOT_MERGED_TO_MAIN != CANDIDATE_PAYLOAD_MERGED_TO_MAIN`；`HOMEPAGE_VISIBLE != CAPABILITY_AVAILABLE`。Current 正式能力仍以“项目现状”和正式 capability registry 为准。
-
-### R5-A 两轮窄修复已验收，阶段快照已发布
-
-**类别：** 阶段快照 / `IMPLEMENTED_PENDING_REVIEW` / `PARTIAL`
-
-**版本：** [Arvin-liu/when-systems-catch-fire PR #134](https://github.com/Arvin-liu/when-systems-catch-fire/pull/134) @ `48f87616e01e`；分支 `agent/iteration-method-1-4-continuous-stage-snapshot-publication-r1-20260726`
-
-**状态边界：** Accepted=`false` · Current=`false` · Activated=`false` · 正式能力影响=`false`
-
-**最终责任主体：** `ORGANIZATION` Arvin-liu/when-systems-catch-fire project governance（`org:github/arvin-liu/when-systems-catch-fire`；Stage snapshot publication accountability and governance；[责任依据](https://github.com/Arvin-liu/when-systems-catch-fire/pull/134)；[负责人／治理入口](https://github.com/Arvin-liu/when-systems-catch-fire/issues)）
-
-**发布责任主体：** `ORGANIZATION` Arvin-liu/when-systems-catch-fire project governance（`org:github/arvin-liu/when-systems-catch-fire`；Stage snapshot publication accountability and governance）
-
-**技术执行记录（非最终责任）：** Agent／模型：Codex agents；自动化／工作流：GitHub Actions
-
-**最近成果：** 11-case 窄修复已验收并合入来源分支；R5-A 阶段快照记录已合并入 Main 并经受控同步发布为 PUBLISHED_SNAPSHOT；其精确头 48f87616 经独立 exact-head 验收（与实时 PR #134 一致）。R5-A 候选整体仍非 Accepted/Current/Activated，宪章 PR #130 仍 OPEN/DRAFT。
-
-**仍有阻断：** R5-A 已发布阶段快照的精确头 48f87616 经独立 exact-head 验收（与实时 PR #134 一致）；但 R5-A 候选（宪章 PR #130）仍 OPEN / DRAFT，其整体精确头验收仍待账号所有者独立执行；R5-A 宪章来源分支当前头 019f52cc296b7417cc91ea97077fbf85d19ad7fc 仍需整体 exact-head 验收（候选层面，非本已发布快照层面）；本快照只公开可审计摘要和证据入口，不发布或激活候选载荷；R5-A 仍为 PUBLISHED_SNAPSHOT，accepted/current/activated 仍 false（PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED 不变）
-
-**证据：** [正式 PR](https://github.com/Arvin-liu/when-systems-catch-fire/pull/134) / [1111 回执 PR #42](https://github.com/Arvin-liu/1111/pull/42) / [快照 registry](./data/operations/stage-snapshots.json) / [责任主体 registry](./data/operations/responsibility-actors.json)
-
-**Claim ceiling：** 仅证明两个已指明窄修复在其精确接受头通过独立实例级验收并进入 PR #130 来源分支；不证明 R5-A 整体完成、生命完整性、人体安全、疗效或普遍语义能力。
-
-阶段记录可被后继快照修订、替代或撤回；历史仍保留。Agent 只能提交 `stage snapshot request`，不能自行声称已进入 Main。
-
-[查看制度、状态图与发布门](./docs/operations/stage-snapshot-publication.md) / [查看全部机器记录](./data/operations/stage-snapshots.json)
-<!-- STAGE-SNAPSHOTS:END -->
-
-## 之元写作法成果
-
-[之元写作法](./docs/publication/zhiyuan-writing-method.md)是点火同源认知结构在 L6 公共语言中的可调用投影，不是外接的文风插件或写作谋生课程。`0.4.0` 是当前能力，素材池明确分为“外部输入源 + 点火增量输出源”，使 claim、argument、mechanism、map、gap、residue、分析报告、模型投影和 provenance-gated 返回项也能继续成为写作材料；`0.3.0` 保留为历史已合并版本。派生产物不是新的独立证据，调用也不等于复制之元本人或证明方法普遍有效。
-
-### [《当一支军队开始相信自己的背影》](./docs/publication/works/when-an-army-believes-its-own-back.md)
-
-从金辽战场中的一次后退出发，穿过声学、金融与电网，追问系统怎样把自己的反应当成现实，以及稳定最终由谁承担成本。
-
-**成果链：** [起始案例](./docs/publication/cases/jin-rise-case-source.md) → [点火分析](./reports/publication/jin-rise-point-fire-analysis.md) → [之元写作法成稿](./docs/publication/works/when-an-army-believes-its-own-back.md) → [使用的方法](./docs/publication/zhiyuan-writing-method.md)
-
-[查看更多之元写作法成果](./docs/publication/zhiyuan-writing-showcase.md)
-
-## 生命共同体价值宪章
-
-> 长瞻一宇同叩月，此心相契共今宵。
-
-价值宪章约束点火判断什么值得做：谁受益、谁承担风险、哪些主体沉默、什么情况下必须拒绝、暂停或回滚。它跨越 L0-L6、Ψ₀、元协议和 Function OS，但它是规范边界，不是经验事实、数学证明、治理批准或项目定位。
-
-除规范性价值宪章外，仓库现含 **Charter System R1（宪章系统 R1）** 治理系统：它把上述约束整理为可机器检查、可审计的治理构件与注册表（见 `docs/governance/charter-system-r1.md` 与 `docs/governance/charter-system-registry.json`）。其状态为 Accepted／Current，但 `activated=false`、`publication_status=UNPUBLISHED`——治理系统已就位并 Current，尚未激活任何能力、运行时或执行器，也未发布快照。
-
-[阅读全文：生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [Charter System R1 治理系统](./docs/governance/charter-system-r1.md)
-
-## 完整可点击系统图
-
-这是一张单一完整图，覆盖前门、L0—L6、基础核心、模型投影、Q12—Q14、迭代与同步、价值约束、之元写作法双来源素材池、成果链和现实反馈返回。Current 0.3.0 由[构件 registry](./data/operations/project-components.json)、[传播 topology](./data/operations/change-propagation-topology.json)与[布局 overlay](./data/architecture/interactive-system-map-layout.json)确定性派生；Historical 0.2.0 保留版本轨迹，Q32I 投影不增加 L7。节点与连线是可审计导航，不证明因果、严格同构或理论完整。
-
-[打开交互版完整图](https://arvin-liu.github.io/when-systems-catch-fire/system-map.html) / [查看维护与验证说明](./docs/architecture/interactive-system-map.md)
-
-<div class="pages-interactive-system-map">
-  <object data="./generated/ignition-system-map.svg" type="image/svg+xml" aria-label="点火完整可点击系统图">
-    <p>浏览器无法嵌入交互 SVG。请<a href="https://arvin-liu.github.io/when-systems-catch-fire/system-map.html">打开交互版完整图</a>。</p>
-  </object>
-</div>
-
-<p class="github-system-map-preview">
-  <a href="https://arvin-liu.github.io/when-systems-catch-fire/system-map.html">
-    <img src="./pages/generated/ignition-system-map.svg" alt="点火完整系统图预览；点击打开交互版">
-  </a>
-</p>
-
-GitHub README 对 SVG 内部热点的支持可能受限；上方完整预览点击后进入 Pages 交互版。Pages 首页中的图节点可直接跳转到各构件 canonical 页面。
-
-## 使用指南
-
-- [人类使用说明](./docs/USAGE.md)
-- [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
-- [点火迭代操作法](./ITERATION.md)
-- [第一次阅读入口](./SUMMARY.md)
-
-<details>
-<summary>展开：完整 AI 首次阅读提示词</summary>
+人类使用请从 [使用说明](./docs/USAGE.md) 进入；AI 首次阅读可直接用下面提示词，无需先读完整仓库。
 
 普通人无需先读完整仓库。你可以把下面提示词复制给自己常用的 AI，让它先帮你做第一轮阅读。
 
@@ -167,7 +86,51 @@ llms.txt
 
 [查看完整 AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
 
-</details>
+## 之元写作法成果
+
+[之元写作法](./docs/publication/zhiyuan-writing-method.md)是点火同源认知结构在 L6 公共语言中的可调用投影，不是外接的文风插件或写作谋生课程。`0.4.0` 是当前能力，素材池明确分为“外部输入源 + 点火增量输出源”，使 claim、argument、mechanism、map、gap、residue、分析报告、模型投影和 provenance-gated 返回项也能继续成为写作材料；`0.3.0` 保留为历史已合并版本。派生产物不是新的独立证据，调用也不等于复制之元本人或证明方法普遍有效。
+
+### [《当一支军队开始相信自己的背影》](./docs/publication/works/when-an-army-believes-its-own-back.md)
+
+从金辽战场中的一次后退出发，穿过声学、金融与电网，追问系统怎样把自己的反应当成现实，以及稳定最终由谁承担成本。
+
+**成果链：** [起始案例](./docs/publication/cases/jin-rise-case-source.md) → [点火分析](./reports/publication/jin-rise-point-fire-analysis.md) → [之元写作法成稿](./docs/publication/works/when-an-army-believes-its-own-back.md) → [使用的方法](./docs/publication/zhiyuan-writing-method.md)
+
+[查看更多之元写作法成果](./docs/publication/zhiyuan-writing-showcase.md)
+
+## 宪章体系
+
+### 生命共同体价值宪章
+
+> 长瞻一宇同叩月，此心相契共今宵。
+
+价值宪章约束点火判断什么值得做：谁受益、谁承担风险、哪些主体沉默、什么情况下必须拒绝、暂停或回滚。它跨越 L0-L6、Ψ₀、元协议和 Function OS，但它是规范边界，不是经验事实、数学证明、治理批准或项目定位。
+
+### Charter System R1
+
+除规范性价值宪章外，仓库现含 **Charter System R1（宪章系统 R1）** 治理系统：它把上述约束整理为可机器检查、可审计的治理构件与注册表（见 `docs/governance/charter-system-r1.md` 与 `docs/governance/charter-system-registry.json`）。其状态为 Accepted／Current，但 `activated=false`、`publication_status=UNPUBLISHED`——治理系统已就位并 Current，尚未激活任何能力、运行时或执行器，也未发布快照。
+
+[阅读全文：生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [Charter System R1 治理系统](./docs/governance/charter-system-r1.md)
+
+## 完整可点击系统图
+
+这是一张单一完整图，覆盖前门、L0—L6、基础核心、模型投影、Q12—Q14、迭代与同步、价值约束、之元写作法双来源素材池、成果链和现实反馈返回。0.4.0 候选投影由[构件 registry](./data/operations/project-components.json)、[传播 topology](./data/operations/change-propagation-topology.json)与[布局 overlay](./data/architecture/interactive-system-map-layout.json)确定性派生；Historical 0.2.0 保留版本轨迹，Q32I 投影不增加 L7。节点与连线是可审计导航，不证明因果、严格同构或理论完整。
+
+[打开交互版完整图](https://arvin-liu.github.io/when-systems-catch-fire/system-map.html) / [查看维护与验证说明](./docs/architecture/interactive-system-map.md)
+
+<div class="pages-interactive-system-map">
+  <object data="./generated/ignition-system-map.svg" type="image/svg+xml" aria-label="点火完整可点击系统图">
+    <p>浏览器无法嵌入交互 SVG。请<a href="https://arvin-liu.github.io/when-systems-catch-fire/system-map.html">打开交互版完整图</a>。</p>
+  </object>
+</div>
+
+<p class="github-system-map-preview">
+  <a href="https://arvin-liu.github.io/when-systems-catch-fire/system-map.html">
+    <img src="./pages/generated/ignition-system-map.svg" alt="点火完整系统图预览；点击打开交互版">
+  </a>
+</p>
+
+GitHub README 对 SVG 内部热点的支持可能受限；上方完整预览点击后进入 Pages 交互版。Pages 首页中的图节点可直接跳转到各构件 canonical 页面。
 
 ## 项目内容入口
 
@@ -175,7 +138,6 @@ llms.txt
 <summary>展开：第一次阅读与 AI 入口</summary>
 
 - [人类导航页](./SUMMARY.md) — 给第一次阅读的人提供更完整的目录式导览。
-- [使用说明](./docs/USAGE.md) — 说明怎样按七层架构处理材料、提交候选和避免误用。
 - [AI 助手使用参考](./docs/ai-assistant-usage-reference.md) — 提供可直接复制给常用 AI 的完整阅读提示词。
 - [点火迭代操作法](./ITERATION.md) — 说明每一轮变更怎样从远端真相、缺口、claim ceiling、同步矩阵、验证和回执中闭环。
 - [AI 冷启动入口](./AI-START-HERE.md) — 告诉零背景 AI 应按什么顺序读仓库、哪些边界不能混。

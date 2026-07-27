@@ -465,7 +465,7 @@
       "component_id": "iteration",
       "component_type": "operation_control",
       "description": "1.3 增量执行为 Current；1.4 候选增加正交的持续阶段快照发布轴。",
-      "label": "点火迭代操作法 1.3 Current / 1.4 Draft",
+      "label": "点火迭代操作法",
       "layer_or_overlay": "overlay",
       "lifecycle": {
         "source": "docs/architecture/incremental-execution.md",
@@ -492,7 +492,7 @@
       "component_id": "stage_snapshot_publication",
       "component_type": "operation_control",
       "description": "把阶段成果的可审计摘要、精确来源、显式状态和证据入口确定性投影到 README 与 Pages，而不提升能力生命周期。",
-      "label": "阶段成果持续快照 1.4 Draft",
+      "label": "阶段成果持续快照",
       "layer_or_overlay": "overlay",
       "lifecycle": {
         "source": "docs/operations/stage-snapshot-publication.md",
@@ -1231,13 +1231,13 @@
       "canonical_target": "data/architecture/interactive-system-map.json",
       "component_id": "system_map_projection",
       "component_type": "repository_infrastructure",
-      "description": "由 component registry、topology 和 layout overlay 确定性生成；0.3 候选投影增量执行边界。",
-      "label": "系统图 0.2 Current / 0.3 Draft 派生投影",
+      "description": "由 component registry、topology 与 layout overlay 确定性派生；0.4.0 候选投影延续 0.2.0 Historical 权威链。",
+      "label": "系统图 0.4 候选投影派生基础设施",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
         "source": "tools/generate_interactive_system_map.py",
         "status": "current",
-        "version": "0.3.0"
+        "version": "0.4.0"
       },
       "map_projection": {
         "no_change_reason": "完整 SVG 自身是全图投影，不应再作为图中的自指节点。",
@@ -1455,9 +1455,8 @@
         "version": "R1"
       },
       "map_projection": {
-        "visible": false,
-        "represented_by": "charter",
-        "no_change_reason": "Charter System R1 的治理状态由 charter 治理组节点代表，避免系统图节点膨胀；其前门传播义务由变更传播 topology 与 tools/validate_human_front_door.py 显式强制。"
+        "group": "governance",
+        "visible": true
       },
       "path_patterns": [
         "docs/governance/charter-system-r1.md"
