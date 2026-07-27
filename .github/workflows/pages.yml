@@ -104,6 +104,30 @@ jobs:
           cp data/operations/responsibility-actors.json site/data/operations/responsibility-actors.json
           cp data/architecture/interactive-system-map-layout.json site/data/architecture/interactive-system-map-layout.json
           cp data/architecture/interactive-system-map.json site/data/architecture/interactive-system-map.json
+          # --- F5-B1 (IGNITION-PAGES-PUBLIC-DOCUMENT-LINK-F5-B1-FIX-R1-20260728) ---
+          # Publish the 13 P0/P1 homepage + key foundation docs + the USAGE
+          # template-spec link that README and docs/USAGE.md reference but the
+          # allowlist omitted (systemic 404; audit = 1111 Draft PR #75).
+          # Exact deduplicated target set = 4 P0 + 6 P1 + 2 P2 foundation JSONs + 1 template
+          # (the audit's prose summary "14 cp / 4 P0 + 7 P1 + 1 template = 12" double-counted
+          #  the 2 P2 foundation JSONs as P1; the authoritative set is 13 files).
+          mkdir -p site/docs/foundation
+          cp docs/project-current-state.md site/docs/project-current-state.md
+          cp ITERATION.md site/ITERATION.md
+          cp docs/ai-assistant-usage-reference.md site/docs/ai-assistant-usage-reference.md
+          cp SUMMARY.md site/SUMMARY.md
+          cp ARCHITECTURE.md site/ARCHITECTURE.md
+          cp FOUNDATION.md site/FOUNDATION.md
+          cp docs/foundation/README.md site/docs/foundation/README.md
+          mkdir -p site/data/foundation
+          cp data/foundation/project-state.json site/data/foundation/project-state.json
+          cp data/foundation/registry-manifest.json site/data/foundation/registry-manifest.json
+          cp data/foundation/migration-summary.json site/data/foundation/migration-summary.json
+          mkdir -p site/function-os-candidate/v0.2
+          cp function-os-candidate/v0.2/README.md site/function-os-candidate/v0.2/README.md
+          cp docs/participate.md site/docs/participate.md
+          mkdir -p site/templates/publication
+          cp templates/publication/zhiyuan-writing-spec.md site/templates/publication/zhiyuan-writing-spec.md
           {
             printf '%s\n' '---'
             printf '%s\n' 'title: When Systems Catch Fire / 点火'
