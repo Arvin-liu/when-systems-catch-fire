@@ -89,6 +89,7 @@ jobs:
           cp docs/governance/charter-system-r1.md site/docs/governance/charter-system-r1.md
           cp docs/governance/charter-system-registry.json site/docs/governance/charter-system-registry.json
           cp docs/governance/life-community-value-charter.md site/docs/governance/life-community-value-charter.md
+          cp docs/USAGE.md site/docs/USAGE.md
           cp reports/operations/121Q32-change-propagation-impact.md site/reports/operations/121Q32-change-propagation-impact.md
           cp reports/operations/121Q32I-change-propagation-impact.md site/reports/operations/121Q32I-change-propagation-impact.md
           cp reports/operations/121Q32I-incremental-execution-demonstration.json site/reports/operations/121Q32I-incremental-execution-demonstration.json
