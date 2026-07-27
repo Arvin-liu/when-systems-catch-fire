@@ -114,7 +114,7 @@ llms.txt
 
 ## 完整可点击系统图
 
-这是一张单一完整图，覆盖前门、L0—L6、基础核心、模型投影、Q12—Q14、迭代与同步、价值约束、之元写作法双来源素材池、成果链和现实反馈返回。0.4.0 候选投影由[构件 registry](./data/operations/project-components.json)、[传播 topology](./data/operations/change-propagation-topology.json)与[布局 overlay](./data/architecture/interactive-system-map-layout.json)确定性派生；Historical 0.2.0 保留版本轨迹，Q32I 投影不增加 L7。节点与连线是可审计导航，不证明因果、严格同构或理论完整。
+这是一张单一完整图，覆盖前门、L0—L6、基础核心、模型投影、Q12—Q14、迭代与同步、价值约束、之元写作法双来源素材池、成果链和现实反馈返回。0.4.0 当前投影由[构件 registry](./data/operations/project-components.json)、[传播 topology](./data/operations/change-propagation-topology.json)与[布局 overlay](./data/architecture/interactive-system-map-layout.json)确定性派生；Historical 0.3.0 与 0.2.0 保留版本轨迹，Q32I 投影不增加 L7。节点与连线是可审计导航，不证明因果、严格同构或理论完整。
 
 [打开交互版完整图](https://arvin-liu.github.io/when-systems-catch-fire/system-map.html) / [查看维护与验证说明](./docs/architecture/interactive-system-map.md)
 

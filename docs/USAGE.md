@@ -1,6 +1,6 @@
 # 使用说明
 
-> 当前同步：2026-07-26 首页 / 使用说明 / 系统图 / 宪章体系统一同步（IGNITION-HOMEPAGE-USAGE-CHARTER-SYNC）。当前能力以 `0.4.0` 候选投影与 Charter System R1（activated=false / UNPUBLISHED）为准。
+> 当前同步：2026-07-26 首页 / 使用说明 / 系统图 / 宪章体系统一同步（IGNITION-HOMEPAGE-USAGE-CHARTER-SYNC）。当前能力以 `0.4.0` 当前投影与 Charter System R1（activated=false / UNPUBLISHED）为准。
 
 ## 1. 从哪里进入
 

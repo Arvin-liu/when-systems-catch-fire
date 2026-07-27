@@ -29,6 +29,8 @@ Iteration method `1.4.0 — Continuous Stage Snapshot Publication` is a Draft Ca
 
 Charter System R1（`docs/governance/charter-system-r1.md`，元治理层）经独立 exact-head acceptance（PR #137 head `669c9f8c` → merge commit `0e7c032`）收口为 Current（non-Activated），并经 front-door / 系统注册表 / VERSIONING 三表面同步（PR #139 → `09bf6400`，方法 `IGNITION-CHARTER-SYSTEM-R1-CURRENT-FRONT-DOOR-REGISTRY-AND-VERSIONING-SYNCHRONIZATION-R1-20260726`）完成 Current 收口的逐表面 attestation。它保持 `activated=false`、`publication_status=UNPUBLISHED`：Current 不等于 Activated，亦不构成任何已发布快照（满足 `PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED`）。本同步不改变价值宪章、七层架构、Foundation 或迭代操作法版本。
 
+IGNITION-HOMEPAGE-USAGE-CHARTER-SYNC-EXACT-HEAD-ACCEPTANCE-AND-PAGES-CLOSEOUT-R1-20260727 将 PR #143（head `77fc5f95777a3b7d2c5fd2f269541f35d45c4f34`）独立验收并以普通 merge 合入 `main`：首页／使用说明／系统图／宪章体系统一同步收口，系统图 `0.4.0` 由候选提升为 Current，`0.3.0` 与 `0.2.0` 为 Historical，`0.1.0` 为更早 Historical；Charter System R1 维持 `activated=false` / `publication_status=UNPUBLISHED`（Current 不等于 Activated，未发布快照）。本收口只改变系统图版本生命周期与前门表面 attestation，不激活任何能力／运行时／执行器，不改变七层架构、Foundation、迭代操作法 1.4.0、价值宪章或阶段快照历史。
+
 架构完成不等于内容证明完成。当前架构允许后续逐对象补源、补定义、补证明、补实验、发现反例或降级，而不再推倒整体架构。
 
 ## 什么算版本升级

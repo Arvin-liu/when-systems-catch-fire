@@ -61,9 +61,9 @@ PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系
 
 121Q24 建立的迭代操作法已在 PR #56 验收并合并后成为当前仓库操作能力；未来状态改变任务必须按 `ITERATION.md` 记录 gap、claim ceiling、同步矩阵、验证和回执。遵循该方法不证明真理、价值、因果、完整性或正确性。
 
-当前方法是 `1.4.0`（Current），系统图是 `0.3.0`（Current）。
+当前方法是 `1.4.0`（Current），系统图是 `0.4.0`（Current）。
 
-方法 `1.3.0` 与系统图 `0.2.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。人类 README、实际 Pages 来源与渲染面、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称生产 Pages 或其他实时外部状态已验证。
+方法 `1.3.0` 与系统图 `0.2.0`、`0.3.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。人类 README、实际 Pages 来源与渲染面、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称生产 Pages 或其他实时外部状态已验证。
 
 Q25C 已成为当前生命周期规则：Ready、Accepted、Merged、Current、Closed 分别读取 surface `blocks`，不能用全局 project-complete 布尔值阻断 pre-merge acceptance。每个外部表面必须有独立 attestation；Pages pending 可以进入 Accepted/Merged，但继续阻塞 Current/Closed。
 

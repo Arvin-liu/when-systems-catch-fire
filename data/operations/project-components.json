@@ -1231,7 +1231,7 @@
       "canonical_target": "data/architecture/interactive-system-map.json",
       "component_id": "system_map_projection",
       "component_type": "repository_infrastructure",
-      "description": "由 component registry、topology 与 layout overlay 确定性派生；0.4.0 候选投影延续 0.2.0 Historical 权威链。",
+      "description": "由 component registry、topology 与 layout overlay 确定性派生；0.4.0 当前投影延续 0.3.0、0.2.0 Historical 权威链。",
       "label": "系统图 0.4 候选投影派生基础设施",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {

@@ -69,7 +69,7 @@ flowchart LR
 
 ### 完整可点击系统图
 
-Q32I 收口后系统图 0.3.0 为 Current；0.2.0 为 Historical，0.1.0 为更早 Historical。节点身份、canonical target 与生命周期从 `data/operations/project-components.json` 派生；可见关系及其权限域从 `data/operations/change-propagation-topology.json` 派生；`data/architecture/interactive-system-map-layout.json` 只保留布局。生成器产生 materialized spec 与同一 interactive SVG，再由 README 与 Pages 双表面投影。
+Q32I 收口后系统图 0.3.0 为 Current；0727 homepage/usage/charter-system-map sync 收口后系统图 0.4.0 为 Current，0.3.0 与 0.2.0 为 Historical，0.1.0 为更早 Historical。节点身份、canonical target 与生命周期从 `data/operations/project-components.json` 派生；可见关系及其权限域从 `data/operations/change-propagation-topology.json` 派生；`data/architecture/interactive-system-map-layout.json` 只保留布局。生成器产生 materialized spec 与同一 interactive SVG，再由 README 与 Pages 双表面投影。
 
 该链为当前迭代操作法 1.3.0 保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只有后两者按声明规则触发自动或必要评估。Git diff、依赖、可达路径与视觉位置不构成现实因果识别。它覆盖现有 L0—L6、核心、模型、操作、规范、公共表达与反馈环，不增加架构层；当前投影为 9 组、41 节点和 37 边。
 

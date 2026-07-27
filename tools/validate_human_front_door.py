@@ -44,8 +44,8 @@ VERSION_FACTS = {
     "current_method": "1.4.0",
     "historical_method": "1.3.0",
     "earlier_historical_method": "1.2.0",
-    "current_map": "0.3.0",
-    "historical_map": "0.2.0",
+    "current_map": "0.4.0",
+    "historical_map": "0.3.0",
     "earlier_historical_map": "0.1.0",
 }
 CHARTER_R1_BOUNDARY = {
@@ -178,7 +178,8 @@ def validate_version_front_doors(ai_start: str, ai_handoff: str, llms: str, read
         require(re.search(r"(?:current|当前)[^\n]{0,80}1\.4\.0|1\.4\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{surface_id}: method 1.4.0 is not explicitly Current")
         require(re.search(r"(?:historical|历史)[^\n]{0,80}1\.3\.0|1\.3\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{surface_id}: method 1.3.0 is not explicitly Historical")
         require(re.search(r"(?:historical|历史)[^\n]{0,80}1\.2\.0|1\.2\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{surface_id}: method 1.2.0 is not explicitly Historical")
-        require(re.search(r"(?:current|当前)[^\n]{0,80}0\.3\.0|0\.3\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{surface_id}: map 0.3.0 is not explicitly Current")
+        require(re.search(r"(?:current|当前)[^\n]{0,80}0\.4\.0|0\.4\.0[^\n]{0,80}(?:Current|当前)", text, re.IGNORECASE), f"{surface_id}: map 0.4.0 is not explicitly Current")
+        require(re.search(r"(?:historical|历史)[^\n]{0,80}0\.3\.0|0\.3\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{surface_id}: map 0.3.0 is not explicitly Historical")
         require(re.search(r"(?:historical|历史)[^\n]{0,80}0\.2\.0|0\.2\.0[^\n]{0,80}(?:Historical|历史)", text, re.IGNORECASE), f"{surface_id}: map 0.2.0 is not explicitly Historical")
         require(not re.search(r"(?:current|当前)(?:迭代)?(?:方法|method)[^\n]{0,20}(?:1\.1\.0|1\.2\.0|1\.3\.0)", text, re.IGNORECASE), f"{surface_id}: stale Current method")
         require(ROLLBACK_TYPO not in text.lower(), f"{surface_id}: misspelled rollback term")

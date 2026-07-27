@@ -144,7 +144,7 @@ class HumanFrontDoorTests(unittest.TestCase):
         validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms)
 
     def test_stale_current_method_is_rejected_in_each_ai_front_door(self):
-        stale = "Current method 1.2.0; Current map 0.2.0; method 1.3.0 and map 0.3.0 are not Current. Historical 1.1.0."
+        stale = "Current method 1.2.0; Current map 0.2.0; method 1.3.0 and map 0.4.0 are not Current. Historical 1.1.0."
         for index in range(3):
             texts = [self.ai_start, self.ai_handoff, self.llms]
             texts[index] = stale
@@ -160,7 +160,7 @@ class HumanFrontDoorTests(unittest.TestCase):
         stale = (
             "method 1.4.0 is Candidate only.\n"
             "method 1.3.0 is Current now.\n"
-            "map 0.3.0 Current; map 0.2.0 Historical; map 0.1.0 earlier Historical; method 1.2.0 Historical."
+            "map 0.4.0 Current; map 0.2.0 Historical; map 0.1.0 earlier Historical; method 1.2.0 Historical."
         )
         with self.assertRaises(AssertionError):
             validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms, readme=stale)
@@ -169,7 +169,7 @@ class HumanFrontDoorTests(unittest.TestCase):
         stale = (
             "method 1.4.0 is Candidate only.\n"
             "method 1.3.0 is Current now.\n"
-            "map 0.3.0 Current; map 0.2.0 Historical; map 0.1.0 earlier Historical; method 1.2.0 Historical."
+            "map 0.4.0 Current; map 0.2.0 Historical; map 0.1.0 earlier Historical; method 1.2.0 Historical."
         )
         with self.assertRaises(AssertionError):
             validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms, current_state=stale)
@@ -194,7 +194,7 @@ class HumanFrontDoorTests(unittest.TestCase):
         stale = (
             "method 1.4.0 is Candidate only.\n"
             "method 1.3.0 is Current now.\n"
-            "map 0.3.0 Current; map 0.2.0 Historical; map 0.1.0 earlier Historical; method 1.2.0 Historical."
+            "map 0.4.0 Current; map 0.2.0 Historical; map 0.1.0 earlier Historical; method 1.2.0 Historical."
         )
         with self.assertRaises(AssertionError):
             validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms, readme=stale)
