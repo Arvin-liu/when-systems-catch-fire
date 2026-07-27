@@ -10,15 +10,15 @@ from typing import Any, Callable
 
 try:
     from tools.operations.stage_snapshot_contract import (
-        ACTOR_REGISTRY, ContractError, README, REGISTRY, REQUEST_SCHEMA, SCHEMA, load,
-        readme_with_projection, render_projection, schema_errors,
+        ACTOR_REGISTRY, ContractError, REGISTRY, REQUEST_SCHEMA, SCHEMA, load,
+        render_projection, schema_errors,
         require, resolve_actor, validate_actor_contract_sources, validate_actor_registry,
         validate_materialized_projection, validate_registry, validate_request,
     )
 except ModuleNotFoundError:  # Direct script execution from tools/operations.
     from stage_snapshot_contract import (
-        ACTOR_REGISTRY, ContractError, README, REGISTRY, REQUEST_SCHEMA, SCHEMA, load,
-        readme_with_projection, render_projection, schema_errors,
+        ACTOR_REGISTRY, ContractError, REGISTRY, REQUEST_SCHEMA, SCHEMA, load,
+        render_projection, schema_errors,
         require, resolve_actor, validate_actor_contract_sources, validate_actor_registry,
         validate_materialized_projection, validate_registry, validate_request,
     )
@@ -112,7 +112,6 @@ def legacy_attack_calls(base: dict[str, Any], cases: dict[str, Any]) -> list[tup
     item = lambda registry: registry["snapshots"][0]
     request = positive_request(cases)
     projection = render_projection(base)
-    readme = readme_with_projection(README.read_text(encoding="utf-8"), projection)
     projection_doc = "# Recent Stage Results / 正在炼化\n\n" + projection.split("\n", 2)[2]
 
     def registry_call(mutate: Callable[[dict[str, Any]], None]) -> Callable[[], None]:
@@ -128,7 +127,7 @@ def legacy_attack_calls(base: dict[str, Any], cases: dict[str, Any]) -> list[tup
     def drifted_projection() -> None:
         instance = copy.deepcopy(base)
         item(instance)["homepage"]["summary"] = "drifted public text"
-        validate_materialized_projection(instance, readme, projection_doc)
+        validate_materialized_projection(instance, projection_doc)
 
     def superseded_without_successor(registry: dict[str, Any]) -> None:
         item(registry)["publication_status"] = "SUPERSEDED_SNAPSHOT"

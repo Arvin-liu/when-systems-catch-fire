@@ -1,8 +1,13 @@
 {
-  "added_edges": [],
-  "added_nodes": [],
+  "added_edges": [
+    "charter->charter_system_r1",
+    "charter_system_r1->iteration"
+  ],
+  "added_nodes": [
+    "charter_system_r1"
+  ],
   "base_map_version": "0.3.0",
-  "candidate_map_version": "0.3.0",
+  "candidate_map_version": "0.4.0",
   "changed_edges": [],
   "changed_nodes": [
     "iteration"

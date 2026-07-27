@@ -91,5 +91,5 @@
     {"item_id": "release.changelog", "decision": "CHANGE", "reason": "Unreleased candidate history records R2 and non-promotion boundary."},
     {"item_id": "release.versioning", "decision": "NO_CHANGE_WITH_REASON", "reason": "1.3.0 remains Current and 1.4.0 remains Candidate."}
   ],
-  "system_map_decision": {"item_id": "interactive_system_map", "decision": "NO_CHANGE_WITH_REASON", "reason": "R2 changes no architecture component, edge, layer or public node."}
+  "system_map_decision": {"item_id": "interactive_system_map", "decision": "CHANGE", "reason": "Recomputed against the post-PR-#143 topology: PR #143 added the charter_system_r1 node and two governance edges (charter->charter_system_r1, charter_system_r1->iteration) and the 0.4.0 closeout promoted the map to Current (0.4.0). The live interactive-system-map now carries these additions, so this closure's map delta is real (added_nodes=[charter_system_r1], added_edges=[charter->charter_system_r1, charter_system_r1->iteration], candidate_map_version=0.4.0)."}
 }

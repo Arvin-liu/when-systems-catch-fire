@@ -181,7 +181,7 @@
   "base_identity": "81edff4039619b8343a82cb1b84785c8a9f6a990",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "66304a49a134d4f7e287eb5f389210983362a6ecf91847861dc1628e04656385",
+  "closure_hash": "3332a4e7b8ed9e69b9c2ecfcbd6984d75ee4a8bae2aa77da2ddead4ba4d550d0",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -330,8 +330,13 @@
     "tools/validate_human_front_door.py"
   ],
   "system_map_impact": {
-    "added_edges": [],
-    "added_nodes": [],
+    "added_edges": [
+      "charter->charter_system_r1",
+      "charter_system_r1->iteration"
+    ],
+    "added_nodes": [
+      "charter_system_r1"
+    ],
     "changed_edges": [],
     "changed_nodes": [
       "iteration"
