@@ -20,10 +20,7 @@ SCHEMA = ROOT / "schemas/operations/stage-snapshot-registry.schema.json"
 REQUEST_SCHEMA = ROOT / "schemas/operations/stage-snapshot-request.schema.json"
 ACTOR_REGISTRY = ROOT / "data/operations/responsibility-actors.json"
 ACTOR_SCHEMA = ROOT / "schemas/operations/responsibility-actor-registry.schema.json"
-README = ROOT / "README.md"
 PROJECTION = ROOT / "docs/generated/recent-stage-results.md"
-START = "<!-- STAGE-SNAPSHOTS:START -->"
-END = "<!-- STAGE-SNAPSHOTS:END -->"
 INVARIANTS = {
     "PUBLISHED_SNAPSHOT != ACCEPTED",
     "PUBLISHED_SNAPSHOT != CURRENT",
@@ -447,37 +444,28 @@ def render_projection(registry: dict[str, Any], actor_registry: dict[str, Any] |
     return "\n".join(lines)
 
 
-def readme_with_projection(readme: str, projection: str) -> str:
-    block = f"{START}\n{projection.rstrip()}\n{END}"
-    if START in readme or END in readme:
-        require(readme.count(START) == 1 and readme.count(END) == 1, "README stage snapshot markers are malformed")
-        return readme.split(START, 1)[0] + block + readme.split(END, 1)[1]
-    anchor = "\n## 之元写作法成果\n"
-    require(anchor in readme, "README stage snapshot insertion anchor missing")
-    return readme.replace(anchor, f"\n{block}\n\n## 之元写作法成果\n", 1)
-
-
 def materialize(registry: dict[str, Any], check: bool) -> None:
+    """Deterministically generate and validate the stage-snapshot dedicated page.
+
+    The stage snapshot ONLY projects to docs/generated/recent-stage-results.md.
+    It no longer inserts a 正在炼化 module or STAGE-SNAPSHOTS marker into README;
+    the homepage front door is validated separately by validate_human_front_door.py.
+    """
     projection = render_projection(registry)
-    expected_readme = readme_with_projection(README.read_text(encoding="utf-8"), projection)
     expected_projection = "# Recent Stage Results / 正在炼化\n\n" + projection.split("\n", 2)[2]
     if check:
         validate_materialized_projection(
             registry,
-            README.read_text(encoding="utf-8"),
             PROJECTION.read_text(encoding="utf-8") if PROJECTION.is_file() else "",
         )
     else:
-        README.write_text(expected_readme, encoding="utf-8")
         PROJECTION.parent.mkdir(parents=True, exist_ok=True)
         PROJECTION.write_text(expected_projection, encoding="utf-8")
 
 
-def validate_materialized_projection(registry: dict[str, Any], readme: str, projection_doc: str) -> None:
+def validate_materialized_projection(registry: dict[str, Any], projection_doc: str) -> None:
     projection = render_projection(registry)
-    expected_readme = readme_with_projection(readme, projection)
     expected_projection = "# Recent Stage Results / 正在炼化\n\n" + projection.split("\n", 2)[2]
-    require(readme == expected_readme, "README stage snapshot projection is stale")
     require(projection_doc == expected_projection, "generated stage snapshot projection is stale")
 
 

@@ -9,12 +9,10 @@ from tools.operations.stage_snapshot_contract import (
     ACTOR_REGISTRY,
     ACTOR_SCHEMA,
     ContractError,
-    README,
     REGISTRY,
     REQUEST_SCHEMA,
     SCHEMA,
     load,
-    readme_with_projection,
     render_projection,
     resolve_actor,
     validate_actor_contract_sources,
@@ -347,11 +345,10 @@ class StageSnapshotPublicationTests(unittest.TestCase):
     def test_attack_homepage_text_diverges_from_registry(self):
         registry = self.registry()
         projection = render_projection(registry)
-        readme = readme_with_projection(README.read_text(encoding="utf-8"), projection)
         projection_doc = "# Recent Stage Results / 正在炼化\n\n" + projection.split("\n", 2)[2]
         mutated = self.registry(); self.item(mutated)["homepage"]["summary"] = "drifted public text"
         with self.assertRaisesRegex(ContractError, "projection is stale"):
-            validate_materialized_projection(mutated, readme, projection_doc)
+            validate_materialized_projection(mutated, projection_doc)
 
     def test_attack_successor_omits_supersession_relation(self):
         registry = self.registry(); item = self.item(registry)

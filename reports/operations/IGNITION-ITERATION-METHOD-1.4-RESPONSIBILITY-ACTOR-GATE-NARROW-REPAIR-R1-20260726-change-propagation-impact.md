@@ -1,12 +1,12 @@
 # IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `c9219010f51f1863db5326bb5cef630d35697119bb9dbe1f6c3d2934df1b57fa`
+- Closure hash: `77da4171b1cc289f1d706e56263813431faceb8f410ee764bbb5a3034edba65f`
 - Fixpoint iterations: `2`
 - Seeds: `ai_guide, current_state, historical_reports, iteration, project_component_registry, propagation_calculator, readme, stage_snapshot_publication`
 - Resolved components: `12`
 - Registry-derived surfaces: `18`
-- System-map decision: `NO_CHANGE_WITH_REASON`
+- System-map decision: `CHANGE`
 
 ## Typed paths
 

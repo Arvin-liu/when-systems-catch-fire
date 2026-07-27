@@ -14,7 +14,7 @@
 8. data/foundation/project-state.json 与 registry-manifest.json：机器状态。
 9. 当前任务命令与相关 source/schema。
 
-若页面出现“正在炼化 / Recent Stage Results”，必须读取 `data/operations/stage-snapshots.json` 和 `docs/operations/stage-snapshot-publication.md`。方法 `1.4.0`（Continuous Stage Snapshot Publication）已为 Current。
+阶段成果展示在专用页 `docs/generated/recent-stage-results.md`（“正在炼化 / Recent Stage Results”）；若需了解阶段快照，必须读取 `data/operations/stage-snapshots.json` 和 `docs/operations/stage-snapshot-publication.md`。方法 `1.4.0`（Continuous Stage Snapshot Publication）已为 Current；README 首页不再嵌入「正在炼化」块。
 
 较早的 `1.3.0` 降为 Historical；快照可见不推出 Accepted、Activated、正式能力可用或候选载荷已进 Main（Homepage Visible != Capability Available）。
 

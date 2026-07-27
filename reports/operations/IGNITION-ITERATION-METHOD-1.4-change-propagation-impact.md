@@ -1,7 +1,7 @@
 # IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report
 
 - Closure complete: `true`
-- Closure hash: `66304a49a134d4f7e287eb5f389210983362a6ecf91847861dc1628e04656385`
+- Closure hash: `3332a4e7b8ed9e69b9c2ecfcbd6984d75ee4a8bae2aa77da2ddead4ba4d550d0`
 - Fixpoint iterations: `2`
 - Seeds: `ai_guide, current_state, historical_reports, incremental_execution, iteration, pages_pipeline, project_component_registry, propagation_calculator, propagation_topology, readme, stage_snapshot_publication, summary, sync, system_map_projection, usage`
 - Resolved components: `16`

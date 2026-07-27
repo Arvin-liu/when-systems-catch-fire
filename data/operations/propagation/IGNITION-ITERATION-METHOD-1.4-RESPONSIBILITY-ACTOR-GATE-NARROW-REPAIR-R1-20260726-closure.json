@@ -181,7 +181,7 @@
   "base_identity": "5a856c031616ec0a959150baebb7edced34f22bc",
   "claim_boundary": "Closure is computed over declared repository and governance relations; reachability is not real-world causal identification.",
   "closure_complete": true,
-  "closure_hash": "c9219010f51f1863db5326bb5cef630d35697119bb9dbe1f6c3d2934df1b57fa",
+  "closure_hash": "77da4171b1cc289f1d706e56263813431faceb8f410ee764bbb5a3034edba65f",
   "closure_version": "1.0.0",
   "fixpoint": {
     "iterations": 2,
@@ -295,12 +295,19 @@
     "tools/operations/stage_snapshot_contract.py"
   ],
   "system_map_impact": {
-    "added_edges": [],
-    "added_nodes": [],
+    "added_edges": [
+      "charter->charter_system_r1",
+      "charter_system_r1->iteration"
+    ],
+    "added_nodes": [
+      "charter_system_r1"
+    ],
     "changed_edges": [],
-    "changed_nodes": [],
-    "decision": "NO_CHANGE_WITH_REASON",
-    "reason": "The repair changes no architecture component, edge, layer or public node.",
+    "changed_nodes": [
+      "iteration"
+    ],
+    "decision": "CHANGE",
+    "reason": "Recomputed against the post-PR-#143 topology: PR #143 added the charter_system_r1 node and two governance edges (charter->charter_system_r1, charter_system_r1->iteration) and the 0.4.0 closeout promoted the map to Current (0.4.0). The live interactive-system-map now carries these additions, so this closure's map delta is real (added_nodes=[charter_system_r1], added_edges=[charter->charter_system_r1, charter_system_r1->iteration], candidate_map_version=0.4.0).",
     "removed_edges": [],
     "removed_nodes": [],
     "unmapped_residue": []

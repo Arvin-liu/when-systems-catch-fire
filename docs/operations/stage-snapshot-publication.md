@@ -32,10 +32,10 @@ Status: `Ignition Iteration Method 1.4.0 — Continuous Stage Snapshot Publicati
 2. `schemas/operations/stage-snapshot-registry.schema.json` 与 `stage-snapshot-request.schema.json` 的 `actor_ref` 集合由该注册表确定性生成；
 3. `data/operations/stage-snapshots.json` 是阶段快照唯一仓库权威；
 4. `tools/operations/stage_snapshot_contract.py` 做 schema、actor reference 解析、语义、隐私、关系、远端 identity/HEAD 和投影检查；
-5. README 标记块和 `docs/generated/recent-stage-results.md` 由同一 renderer 生成；Pages 首页继续从 README 构建；
+5. 阶段快照只确定性生成并校验 `docs/generated/recent-stage-results.md`（专用页面）；不再向 README 插入「正在炼化」模块或 STAGE-SNAPSHOTS 标记。Pages 首页继续从 README 构建，但不含阶段快照块；
 6. PR body 与 1111 回执保存 exact-final-HEAD、GitHub Actions run ID 和外部审查结论。
 
-README 或 Pages 不能成为第二份人工状态源。`--check` 重新渲染并逐字比较；registry 变化但首页未同步时失败。
+`docs/generated/recent-stage-results.md` 是阶段快照的唯一展示投影，不能成为第二份人工状态源。`--check` 重新渲染该专用页并逐字比较；registry 变化但该专用页未同步时失败。README 首页不含阶段快照块，由 `validate_human_front_door.py` 单独保证「正在炼化 不在 README」。
 
 ## 3. 轻量但失败关闭的发布门
 
@@ -75,7 +75,7 @@ CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收�
 
 ## 4. 显示语义
 
-- “项目现状”说明 Current 正式能力；“正在炼化”说明 PR 可见候选和阶段成果。
+- “项目现状”说明 Current 正式能力；“正在炼化”是阶段成果标签，现仅出现在专用页 `docs/generated/recent-stage-results.md`，说明 PR 可见候选和阶段成果；README 首页不再嵌入该块。
 - `REJECTED`、`FAILURE`、`WITHDRAWN` 必须在摘要中直接显示拒绝、失败或撤回。
 - `SUPERSEDED_SNAPSHOT` 必须指向后继；历史快照不抹除原始证据。
 
