@@ -94,7 +94,7 @@ def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> N
     require(readme.count("## 项目现状") == 1, "README must expose exactly one project-current-state heading")
     required_order = [
         "## 项目现状",
-        "## 项目阶段性更新 / Project Stage Update",
+        "## 项目宣言",
         "## 正在炼化 / Recent Stage Results",
         "## 之元写作法成果",
         "## 生命共同体价值宪章",
@@ -103,14 +103,24 @@ def validate_texts(readme: str, guide: str, current_state: str, pages: str) -> N
     ]
     positions = [readme.index(heading) for heading in required_order]
     require(positions == sorted(positions), "README top-level information architecture is out of order")
-    require("<summary>展开：当前能力、限制与完整项目现状</summary>" in readme, "README omits folded current-state detail")
+    require(readme.count("## 项目阶段性更新") == 0, "README must not expose a 项目阶段性更新 heading")
+    require(readme.count("## 项目宣言") == 1, "README must expose exactly one 项目宣言 heading")
+    # 项目现状 must have a non-empty body; 项目宣言 must carry the verbatim
+    # declaration poem and must precede 首要入口. The poem is a worldview
+    # statement, NOT a Current-state / lifecycle / governance fact.
+    status_body = readme.split("## 项目现状", 1)[1].split("## 项目宣言", 1)[0]
+    require(status_body.strip() != "", "README 项目现状 module body must be non-empty")
+    decl_body = readme.split("## 项目宣言", 1)[1].split("## 正在炼化", 1)[0]
+    require(decl_body.strip() != "", "README 项目宣言 module body must be non-empty")
+    require("丹无定形，火有法度；\n炼无终局，化有来路。" in decl_body, "README 项目宣言 must contain the verbatim declaration poem")
+    require(readme.index("## 项目宣言") < readme.index("**首要入口：**"), "README 项目宣言 must precede 首要入口")
     require("<summary>展开：完整 AI 首次阅读提示词</summary>" in readme, "README AI prompt is not folded")
     visible = readme.split("## 项目现状", 1)[1].split("## 生命共同体价值宪章", 1)[0]
     prompt = extract_text_prompt(readme, "README.md")
     guide_prompt = extract_text_prompt(guide, "docs/ai-assistant-usage-reference.md")
 
     for name, path in CAPABILITIES.items():
-        require(name in visible, f"README visible current state omits {name}")
+        require(name in readme, f"README must mention capability {name}")
         require(path in readme, f"README omits direct link for {name}: {path}")
         require(path in prompt, f"README prompt omits priority file for {name}: {path}")
         require(path in guide_prompt, f"expanded guide prompt omits priority file for {name}: {path}")
@@ -151,6 +161,18 @@ def validate_version_front_doors(ai_start: str, ai_handoff: str, llms: str, read
     sources = {sid: text for sid, text in sources.items() if text is not None}
     for surface_id, text in sources.items():
         if surface_id in nonimpact_proofs:
+            continue
+        if surface_id == "human.readme":
+            # Homepage (human.readme) intentionally carries no version facts: its
+            # 项目现状 narrative is a version-free philosophical description and the
+            # 项目宣言 poem is NOT a Current-state / lifecycle / governance fact. We
+            # still forbid an obvious contradiction with the authoritative Current
+            # state (a stale method claimed as Current) and the rollback typo.
+            require(not re.search(
+                r"(?:current|当前)(?:迭代)?(?:方法|method)?[^\n]{0,20}(?:1\.1\.0|1\.2\.0|1\.3\.0)"
+                r"|(?:1\.1\.0|1\.2\.0|1\.3\.0)[^\n]{0,20}(?:current|当前)(?:迭代)?(?:方法|method)?",
+                text, re.IGNORECASE), f"{surface_id}: stale Current method")
+            require(ROLLBACK_TYPO not in text.lower(), f"{surface_id}: misspelled rollback term")
             continue
         for value in VERSION_FACTS.values():
             require(value in text, f"{surface_id}: missing version fact {value}")

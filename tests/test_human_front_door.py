@@ -1,3 +1,4 @@
+import re
 import unittest
 from pathlib import Path
 
@@ -48,12 +49,18 @@ class HumanFrontDoorTests(unittest.TestCase):
             with self.subTest(name=name), self.assertRaisesRegex(AssertionError, name):
                 self.validate(guide=self.guide.replace(path, f"missing/{name.lower()}.md"))
 
-    def test_visible_summary_cannot_omit_mcf_psd_arn_or_iteration(self):
-        prefix, remainder = self.readme.split("## 项目现状", 1)
-        visible, suffix = remainder.split("## 生命共同体价值宪章", 1)
+    def test_homepage_must_mention_each_capability(self):
+        # Each capability acronym must appear somewhere on the homepage. Removing
+        # every occurrence (including inside the AI prompt) from both the homepage
+        # and the guide keeps the prompt/guide divergence guard quiet, so the only
+        # guard that can fire is the "README must mention capability" check. The
+        # replacement token must not itself contain the capability name.
         for name in CAPABILITIES:
             with self.subTest(name=name), self.assertRaisesRegex(AssertionError, name):
-                self.validate(readme=prefix + "## 项目现状" + visible.replace(name, "REMOVED") + "## 生命共同体价值宪章" + suffix)
+                self.validate(
+                    readme=re.sub(re.escape(name), "WITHDRAWN", self.readme),
+                    guide=re.sub(re.escape(name), "WITHDRAWN", self.guide),
+                )
 
     def test_prompt_divergence_is_rejected(self):
         with self.assertRaisesRegex(AssertionError, "prompts diverge"):
@@ -73,9 +80,11 @@ class HumanFrontDoorTests(unittest.TestCase):
 
     def test_readme_has_one_current_state_and_expected_top_order(self):
         self.assertEqual(self.readme.count("## 项目现状"), 1)
+        self.assertEqual(self.readme.count("## 项目阶段性更新"), 0)
+        self.assertEqual(self.readme.count("## 项目宣言"), 1)
         headings = [
             "## 项目现状",
-            "## 项目阶段性更新 / Project Stage Update",
+            "## 项目宣言",
             "## 正在炼化 / Recent Stage Results",
             "## 之元写作法成果",
             "## 生命共同体价值宪章",
@@ -84,9 +93,13 @@ class HumanFrontDoorTests(unittest.TestCase):
         ]
         positions = [self.readme.index(heading) for heading in headings]
         self.assertEqual(positions, sorted(positions))
+        # 项目宣言 must sit between 项目现状 and 首要入口.
+        self.assertLess(self.readme.index("## 项目宣言"), self.readme.index("**首要入口：**"))
 
-    def test_ai_prompt_and_current_details_are_folded(self):
-        self.assertIn("<summary>展开：当前能力、限制与完整项目现状</summary>", self.readme)
+    def test_ai_prompt_is_folded_and_current_details_removed(self):
+        # The folded current-state <details> block was intentionally removed; the
+        # AI first-read prompt stays folded.
+        self.assertNotIn("<summary>展开：当前能力、限制与完整项目现状</summary>", self.readme)
         self.assertIn("<summary>展开：完整 AI 首次阅读提示词</summary>", self.readme)
 
     def test_complete_system_map_is_between_charter_and_usage(self):
@@ -114,6 +127,14 @@ class HumanFrontDoorTests(unittest.TestCase):
         self.assertIn("PR #130", self.readme)
         self.assertIn("019f52cc296b", self.readme)
         self.assertIn("validate_stage_snapshots.py --check", self.pages)
+
+    def test_project_declaration_poem_is_verbatim_and_separated(self):
+        decl = self.readme.split("## 项目宣言", 1)[1].split("## 正在炼化", 1)[0]
+        self.assertIn("丹无定形，火有法度；\n炼无终局，化有来路。", decl)
+        # 项目宣言 is an independent module: after 项目现状 and before 价值宪章,
+        # clearly separated from both the status narrative and the value charter.
+        self.assertLess(self.readme.index("## 项目现状"), self.readme.index("## 项目宣言"))
+        self.assertLess(self.readme.index("## 项目宣言"), self.readme.index("## 生命共同体价值宪章"))
 
     def test_three_ai_front_doors_share_version_truth(self):
         validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms)

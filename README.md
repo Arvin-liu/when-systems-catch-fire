@@ -2,64 +2,20 @@
 
 ## 项目现状
 
-点火当前是一套仓库原生、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施原型，把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF、PSD、ARN、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。迭代操作法 `1.4.0`（Continuous Stage Snapshot Publication）与 registry 派生系统图 `0.3.0` 为 Current（`1.3.0` 于受控同步 R1-20260726 升为 Historical，经 PR #134／#135 合并与 PR #62 生产收口）；`1.2.0`／`0.2.0` 为 Historical，`1.1.0`／`0.1.0` 为更早 Historical。Charter System R1（宪章系统 R1）已为 Accepted/Current，但仍 `activated=false`、`publication_status=UNPUBLISHED`，尚未激活任何能力或运行时。当前执行层中权威类型与本地执行能力已分离，apply 先经统一预检，rollback（回滚）按完整仓库字节／类型／mode 状态验证。这是当前提交下已经长成的状态，不是永久定位或最终身份；它也不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。本阶段的结构性变化见 [项目阶段性更新](#项目阶段性更新--project-stage-update)。
+点火是一个在公共仓库中持续生长的跨领域认知与行动系统。它试图解决的不是某一个学科问题，而是一个更基础的问题：当材料来自不同领域、证据强弱不一、概念彼此缠绕时，怎样把它们整理成可以追溯来源、检验推理、建立模型、指导行动并接受现实反馈的结构。
+
+它把一项认知活动拆成相互连接但不能混同的环节：保存来源和证据，形成有边界的命题，把命题转成合适的形式对象和模型，记录论证、证明、反例与验证，再把通过边界检查的结果用于解释、执行和公开表达。项目中的基础注册表、执行系统、跨尺度因果建模、概率动力学、关系网络、迭代方法、价值宪章和写作表达，都是这条链上的不同部分，而不是彼此孤立的功能堆叠。
+
+经过持续迭代，点火已经从早期的笔记与函数整理，生长为一套仓库原生、版本化、可执行、可审计的研究基础设施原型。它能够保存历史而不覆盖历史，让结论随新证据降级或修正，让行动结果重新进入系统，并把项目自身的变化也纳入同一套传播、验证和更新机制。它现在已经具有较完整的结构与运行骨架，但大量具体内容的深度审定、外部验证和现实应用仍在继续。
+
+## 项目宣言
+
+丹无定形，火有法度；
+炼无终局，化有来路。
+
+这两句是点火对自身生长方式的表达，不是项目现状说明，也不是具有约束力的价值宪章条款。它表达的是一种世界观：点火没有预设的最终形态，但它的变化必须有方法、有来源、可追溯，也必须保留自身如何变化而来的道路。
 
 **首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [点火迭代操作法](./ITERATION.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
-
-<details>
-<summary>展开：当前能力、限制与完整项目现状</summary>
-
-当前版本的点火可以帮助读者把复杂材料拆成来源、命题、形式对象、论证、证明、验证、发布和现实反馈，而不是把故事、愿望、测试通过和事实证明混成一团。它同时包含七层认识架构与 Foundation、Function OS、效果推理与机制判断、注意力与分布控制、地图集，以及 MCF 多尺度因果织体、PSD 概率系统动力学、ARN 自适应关系网络和点火迭代操作法；生命共同体价值宪章与现实反馈环约束这些能力怎样行动和修正。当前迭代操作法还要求任何状态改变从同步表面注册表推导全项目传播闭包，分别记录实现、仓库、外部与项目整体完成，不能用局部完成冒充整体同步。
-
-121Q32 已将这一义务推进为可计算的声明关系闭包：由构件 registry、类型化传播 topology 与同步 registry 联合推导影响决定，再派生系统图和 map diff。它不把 Git diff、依赖、遍历或图连线升级为现实因果证明；零 residue 也不等于项目关系已穷尽。
-
-Q32I 在这一 Current 闭包上提出可审计的增量执行与选择性物化：planner 产生逐构件决定和 NonImpactProof，executor 只运行 profile 登记的结构化命令，cache 只是完整身份一致时的性能层，validator 独立检查 plan、proof、execution、cache 和 recovery。受影响构件不能伪称无影响，关键权威变更仍强制 full rebuild。[查看当前合同](./docs/architecture/incremental-execution.md)。
-
-MCF 组织有因果类型的跨尺度投影，PSD 为其中需要随机演化与系统边界的部分补充明确的概率和动力学语义，ARN 则处理更广泛的异质、时序与自适应关系，并把因果主张交回 MCF 审查。它们是当前仓库可运行、可验证的候选派生表示能力，不是新的真值层，也不会仅凭图、概率、关系或测试通过自动证明真实因果或科学理论。
-
-它不是完成的统一理论、物理理论、万能证明器或普通聊天机器人。当前状态会随证据、反例、执行能力、现实反馈和缺口修正继续变化。
-
-[查看完整项目现状](./docs/project-current-state.md) / [查看现行架构](./ARCHITECTURE.md) / [查看使用说明](./docs/USAGE.md)
-
-</details>
-
-## 项目阶段性更新 / Project Stage Update
-
-> 这是**面向人**的项目阶段更新，不是机器审计型阶段快照。它回答：点火现在是什么、本阶段发生了哪些结构性变化、已经完成什么、仍受什么边界限制、下一步去哪里。审计型快照仍见下方 [正在炼化 / Recent Stage Results](#正在炼化--recent-stage-results)。边界仍严格区分：`HOMEPAGE_VISIBLE != CAPABILITY_AVAILABLE`、`PUBLISHED_SNAPSHOT != ACCEPTED/CURRENT/ACTIVATED`。
-
-### 点火目前是什么
-
-点火是一个仓库内、版本化、证据可追溯的跨领域机制发现、建模与执行研究基础设施。它把七层认识架构、Foundation、Function OS、效果与注意力控制、地图集、MCF／PSD／ARN 三种候选派生表示能力、迭代操作法、公共表达、价值宪章与现实反馈放在同一个可审计仓库中。它不是完成的统一理论、物理理论、万能证明器或聊天机器人——这一判断随证据、反例、执行能力与治理边界继续变化。
-
-### 本阶段相较上一阶段的结构性变化
-
-- 迭代操作法从 `1.3.0`（增量执行）升为 `1.4.0`（Continuous Stage Snapshot Publication）Current；`1.3.0` 降为 Historical。
-- 新增「连续阶段快照发布」轴：让经独立验证的公开摘要、精确来源身份、显式状态与证据入口出现在 Main 首页投影，而不把候选载荷当成 Accepted／Current／Activated／已合并。
-- 责任主体约束收紧：问责字段只接受在受控 actor registry 中解析为 ACTIVE `PERSON`／`ORGANIZATION` 的 `actor_ref`，执行体与工作流不能替代最终责任。
-- **Charter System R1（宪章系统 R1）治理系统已收口为 Accepted／Current**：它把价值宪章的约束整理成可机器检查、可审计的治理构件与注册表（见 `docs/governance/charter-system-r1.md`），但仍 `activated=false`、`publication_status=UNPUBLISHED`——治理系统本身存在并 Current，但没有任何能力、运行时或执行器被它激活。
-- 本修复本身纠正一个因果传播缺口：治理链收口（ITERATION_CLOSED）曾未把「首页／项目现状」计入必须同步的前门表面，导致 `1.4.0` 已 Current 而 README 仍称 `1.3.0` 为 Current。
-
-### 本阶段已经完成什么
-
-- 阶段快照发布机制（1.4.0）独立 exact-head 接受、合并、生产收口；R5-A 阶段快照为 `PUBLISHED_SNAPSHOT`（仍非 Accepted／Current／Activated）。
-- 责任主体 registry 解析与两表面门禁落地。
-- Charter System R1 经四步正式 PR（#137 exact-head 接受 → #138 Current 同步 → #139 前门／注册表／版本同步 → #140 VERSIONING 溯源窄修复；main 现 `9a2e47b3`）普通合并，宪章系统 R1 在 main 上 Accepted／Current，边界 `activated=false`／`UNPUBLISHED` 保持。
-- 本 PR 把首页／项目现状纳入强制传播表面，并把「前门陈旧 ≡ 迭代不得判 CLOSED」写入操作法不变量。
-
-### 哪些仍未完成或仍受边界限制
-
-- Charter System R1 仍是 `activated=false`、`UNPUBLISHED`：治理系统 Current，但未激活任何能力／运行时／执行器，未发布快照。
-- R5-A 宪章候选（PR #130）整体仍 OPEN／DRAFT，其精确头验收仍待账号所有者独立执行。
-- 首页可见（Homepage Visible）不等于能力可用（Capability Available）；发布快照（Published Snapshot）不等于 Accepted／Current／Activated。
-- 系统图、`PUBLISHED_SNAPSHOT`、阶段快照均为可审计投影，不是新真值层或因果／完整性证明。
-
-### 下一阶段准备向哪里推进
-
-- 由账号所有者（唯一 `responsible_actor`，宪章 G5）独立裁定是否激活 Charter System R1 的任何具体能力／运行时／执行器、是否发布快照、是否扩展系统注册表或补充其他前门表面。
-- 把「连续阶段快照」与「前门因果传播」沉淀为常态能力：每次改变项目形态／Current 能力／方法／治理／边界／入口／对外可理解状态时，首页与项目现状都进入传播闭包并 fail closed。
-- 继续 Q34—Q40 未启动项与既有缺口修正。
-
-[查看完整项目现状](./docs/project-current-state.md) / [查看现行架构](./ARCHITECTURE.md) / [查看点火迭代操作法](./ITERATION.md)
 
 <!-- STAGE-SNAPSHOTS:START -->
 ## 正在炼化 / Recent Stage Results
