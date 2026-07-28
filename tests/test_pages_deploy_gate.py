@@ -83,6 +83,19 @@ F5_B2_BATCH2_PUBLISH = [
 F5_B2_BATCH2_SRC_TO_TARGET = dict(F5_B2_BATCH2_PUBLISH)
 
 
+# --- F5-B2 Batch 3 publish assertions (IGNITION-PAGES-PUBLIC-DOCUMENT-LINK-F5-B2-BATCH3-FIX-R1-20260728) ---
+# Exact target set = the 2 architecture docs from the F5-B2 audit receipt
+# (1111 Draft PR #78) recommended Batch 3. Both files live under docs/architecture/
+# and keep their repo directory structure. site/docs/architecture is already
+# created by the existing flow (no mkdir in this batch). Source = repo path;
+# Target = site/ path. Remaining F5-B2 Batch 4-5 targets and F5-B3 are DEFERRED.
+F5_B2_BATCH3_PUBLISH = [
+    ("docs/architecture/adaptive-relational-network.md", "site/docs/architecture/adaptive-relational-network.md"),
+    ("docs/architecture/ignition-atlas.md", "site/docs/architecture/ignition-atlas.md"),
+]
+F5_B2_BATCH3_SRC_TO_TARGET = dict(F5_B2_BATCH3_PUBLISH)
+
+
 def _extract_cp_lines(text: str):
     """Return list of (src, target) tuples from `cp <src> site/<target>` lines."""
     out = []
@@ -504,6 +517,124 @@ class PagesF5B2Batch2PublishTests(unittest.TestCase):
             with self.subTest(f"batch1:{src}"):
                 self.assertIn((src, target), self.cp_pairs,
                               f"F5-B2 Batch 1 cp line regressed/removed: {src} -> {target}")
+        for src, target in F5_B1_PUBLISH:
+            with self.subTest(f"f5b1:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B1 cp line regressed/removed: {src} -> {target}")
+
+
+class PagesF5B2Batch3PublishTests(unittest.TestCase):
+    """F5-B2 Batch 3 fix verification (IGNITION-PAGES-PUBLIC-DOCUMENT-LINK-F5-B2-BATCH3-FIX-R1-20260728).
+
+    Asserts the Pages build now publishes the recommended THIRD batch of the
+    F5-B2 audit: the 2 architecture docs under docs/architecture/ that the
+    homepage README links to (systemic 404 fixed). See the audit receipt
+    (1111 Draft PR #78, Batch 3). Only this batch is published here; the
+    remaining F5-B2 Batch 4-5 targets and F5-B3 are deferred to later
+    independent batches. Batch 1 (PagesF5B2PublishTests), Batch 2
+    (PagesF5B2Batch2PublishTests) and F5-B1 (PagesF5B1PublishTests)
+    verifications are kept intact -- no regression.
+    """
+
+    def setUp(self):
+        self.cp_pairs = _extract_cp_lines(TEXT)
+        self.published_targets = {t for _, t in self.cp_pairs}
+        self.published_srcs = {s for s, _ in self.cp_pairs}
+
+    def test_f5b2_batch3_exact_target_count(self):
+        """Authoritative F5-B2 Batch 3 set is exactly 2 cp lines."""
+        published_f5 = [(s, t) for s, t in self.cp_pairs if (s, t) in F5_B2_BATCH3_PUBLISH]
+        self.assertEqual(len(published_f5), 2,
+                         f"expected 2 F5-B2 Batch 3 cp lines, found {len(published_f5)}")
+
+    def test_f5b2_batch3_source_files_exist(self):
+        """(a) every F5-B2 Batch 3 source file exists in the repo."""
+        missing = [s for s, _ in F5_B2_BATCH3_PUBLISH if not (ROOT / s).is_file()]
+        self.assertEqual(missing, [],
+                         f"F5-B2 Batch 3 source files missing from repo: {missing}")
+
+    def test_f5b2_batch3_build_script_publishes_each_target(self):
+        """(b) the build script publishes every F5-B2 Batch 3 target, keeping the
+        original docs/architecture/ directory structure (no flat copy)."""
+        for src, target in F5_B2_BATCH3_PUBLISH:
+            with self.subTest(src):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"pages.yml missing cp line for {src} -> {target}")
+
+    def test_f5b2_batch3_dirs_prepared(self):
+        """(b') every Batch 3 target's parent directory is created by an existing
+        `mkdir -p` line in the build script: site/docs/architecture for the 2
+        docs/architecture/ files. No new mkdir is added in this batch; the
+        existing flow already prepares it (line 73)."""
+        mkdir_dirs = set()
+        for m in re.finditer(r"^\s*mkdir\s+-p\s+(\S+)\s*$", TEXT, flags=re.M):
+            mkdir_dirs.add(m.group(1))
+
+        def dir_covered(d: str) -> bool:
+            # A target dir is covered if an existing `mkdir -p` creates it
+            # directly, OR creates one of its descendants -- because mkdir -p
+            # transitively creates every ancestor on the filesystem.
+            for md in mkdir_dirs:
+                if md == d or md.startswith(d + "/"):
+                    return True
+            return False
+
+        for src, target in F5_B2_BATCH3_PUBLISH:
+            parent = str(Path(target).parent)
+            with self.subTest(src):
+                self.assertTrue(dir_covered(parent),
+                                f"no mkdir -p covers target directory for {target} "
+                                f"(prepared dirs: {sorted(mkdir_dirs)})")
+
+    def test_f5b2_batch3_candidate_artifact_contains_targets(self):
+        """(c) if a built candidate artifact directory is supplied via
+        PAGES_CANDIDATE_ARTIFACT_DIR, every F5-B2 Batch 3 target must be present
+        AND non-empty. Skipped in normal pytest runs; the real artifact is
+        verified by the Pages candidate-build step (req #8) and the CI download check."""
+        art = os.environ.get("PAGES_CANDIDATE_ARTIFACT_DIR")
+        if not art:
+            self.skipTest("PAGES_CANDIDATE_ARTIFACT_DIR not set")
+        missing = [t for _, t in F5_B2_BATCH3_PUBLISH if not (Path(art) / t).is_file()]
+        self.assertEqual(missing, [],
+                         f"F5-B2 Batch 3 targets missing from candidate artifact: {missing}")
+        empty = [t for _, t in F5_B2_BATCH3_PUBLISH
+                 if (Path(art) / t).is_file() and (Path(art) / t).stat().st_size == 0]
+        self.assertEqual(empty, [],
+                         f"F5-B2 Batch 3 targets empty in candidate artifact: {empty}")
+
+    def test_f5b2_batch3_homepage_and_usage_links_resolve(self):
+        """(d) every F5-B2 Batch 3 link referenced by the homepage README (or the
+        published docs/USAGE.md) resolves to a target the build publishes."""
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        usage = (ROOT / "docs" / "USAGE.md").read_text(encoding="utf-8")
+        referenced = set()
+        for lnk in _extract_md_links(readme):
+            norm = _normalize_link(lnk, "")
+            if norm in F5_B2_BATCH3_SRC_TO_TARGET:
+                referenced.add(norm)
+        for lnk in _extract_md_links(usage):
+            norm = _normalize_link(lnk, "docs")
+            if norm in F5_B2_BATCH3_SRC_TO_TARGET:
+                referenced.add(norm)
+        self.assertGreater(len(referenced), 0,
+                           "no F5-B2 Batch 3 links found in homepage README or docs/USAGE.md")
+        for src in referenced:
+            with self.subTest(src):
+                self.assertIn(F5_B2_BATCH3_SRC_TO_TARGET[src], self.published_targets,
+                              f"F5-B2 Batch 3 link target not published: {src}")
+
+    def test_f5b2_batch1_batch2_and_f5b1_not_regressed(self):
+        """(e) Batch 3 must NOT remove or alter the F5-B2 Batch 1 (7), Batch 2
+        (7) or F5-B1 (13) cp lines already in the build -- online + test
+        behaviour for those targets must not regress."""
+        for src, target in F5_B2_PUBLISH:
+            with self.subTest(f"batch1:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B2 Batch 1 cp line regressed/removed: {src} -> {target}")
+        for src, target in F5_B2_BATCH2_PUBLISH:
+            with self.subTest(f"batch2:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B2 Batch 2 cp line regressed/removed: {src} -> {target}")
         for src, target in F5_B1_PUBLISH:
             with self.subTest(f"f5b1:{src}"):
                 self.assertIn((src, target), self.cp_pairs,

@@ -154,6 +154,15 @@ jobs:
           cp docs/evidence_regime_library.md site/docs/evidence_regime_library.md
           cp docs/architecture/multiscale-causal-fabric.md site/docs/architecture/multiscale-causal-fabric.md
           cp docs/architecture/probabilistic-system-dynamics.md site/docs/architecture/probabilistic-system-dynamics.md
+          # --- F5-B2 Batch 3 (architecture docs) ---
+          # Publish the 2 architecture docs under docs/architecture/ that the
+          # homepage README links to but the allowlist omitted (systemic 404;
+          # audit = 1111 Draft PR #78, Batch 3). site/docs/architecture is
+          # already created by the existing flow above (mkdir -p at line 73) --
+          # NO new mkdir required. Remaining F5-B2 Batch 4-5 targets and F5-B3
+          # are DEFERRED (not in this batch).
+          cp docs/architecture/adaptive-relational-network.md site/docs/architecture/adaptive-relational-network.md
+          cp docs/architecture/ignition-atlas.md site/docs/architecture/ignition-atlas.md
           {
             printf '%s\n' '---'
             printf '%s\n' 'title: When Systems Catch Fire / 点火'
