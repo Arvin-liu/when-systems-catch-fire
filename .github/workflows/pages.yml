@@ -213,6 +213,44 @@ jobs:
           cp views/README.md site/views/README.md
           mkdir -p site/data/meta-protocols
           cp data/meta-protocols/README.md site/data/meta-protocols/README.md
+          # --- Task 94 public-surface total closeout (2026-07-29) ---
+          # Publish the exact 23 existing source files still linked from the
+          # authoritative SUMMARY surface after F5-B1/B2/B3. This is an
+          # explicit allowlist: no glob and no whole-directory copy.
+          mkdir -p site/data/foundation/arguments
+          mkdir -p site/data/foundation/claims
+          mkdir -p site/data/foundation/evidence
+          mkdir -p site/data/foundation/formal-objects
+          mkdir -p site/data/foundation/mappings
+          mkdir -p site/data/foundation/migrations
+          mkdir -p site/data/foundation/proofs
+          mkdir -p site/data/foundation/sources
+          mkdir -p site/data/foundation/validations
+          cp data/foundation/arguments/arguments.jsonl site/data/foundation/arguments/arguments.jsonl
+          cp data/foundation/claims/claims.jsonl site/data/foundation/claims/claims.jsonl
+          cp data/foundation/evidence/evidence.jsonl site/data/foundation/evidence/evidence.jsonl
+          cp data/foundation/formal-objects/objects.jsonl site/data/foundation/formal-objects/objects.jsonl
+          cp data/foundation/mappings/object-evidence-mappings.jsonl site/data/foundation/mappings/object-evidence-mappings.jsonl
+          cp data/foundation/migrations/legacy-assets.jsonl site/data/foundation/migrations/legacy-assets.jsonl
+          cp data/foundation/proofs/proof-artifacts.jsonl site/data/foundation/proofs/proof-artifacts.jsonl
+          cp data/foundation/sources/sources.jsonl site/data/foundation/sources/sources.jsonl
+          cp data/foundation/validations/validation-records.jsonl site/data/foundation/validations/validation-records.jsonl
+          cp docs/AGENT-GUIDE.md site/docs/AGENT-GUIDE.md
+          cp docs/architecture/attention-attractor-control-plane.md site/docs/architecture/attention-attractor-control-plane.md
+          cp docs/architecture/compression-integrity-gate.md site/docs/architecture/compression-integrity-gate.md
+          cp docs/architecture/distribution-collapse-control-plane.md site/docs/architecture/distribution-collapse-control-plane.md
+          cp docs/architecture/effectual-action-plane.md site/docs/architecture/effectual-action-plane.md
+          cp docs/architecture/mechanism-adjudication-plane.md site/docs/architecture/mechanism-adjudication-plane.md
+          cp docs/governance/meta-protocol-reviews/cross-protocol-red-team.md site/docs/governance/meta-protocol-reviews/cross-protocol-red-team.md
+          cp docs/governance/meta-protocol-reviews/factual-pending-register.md site/docs/governance/meta-protocol-reviews/factual-pending-register.md
+          cp docs/meta-protocols/book-validation-22-cases-20260709.md site/docs/meta-protocols/book-validation-22-cases-20260709.md
+          cp docs/meta-protocols/version-iteration-note-20260709.md site/docs/meta-protocols/version-iteration-note-20260709.md
+          cp docs/phi_meta_law.md site/docs/phi_meta_law.md
+          cp docs/publication/zhiyuan-writing-examples.md site/docs/publication/zhiyuan-writing-examples.md
+          mkdir -p site/outputs/book-collisions/20260709-22-book-validation
+          cp outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md site/outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md
+          mkdir -p site/reports/foundation-architecture
+          cp reports/foundation-architecture/core-system-reclassification-20260712.md site/reports/foundation-architecture/core-system-reclassification-20260712.md
           {
             printf '%s\n' '---'
             printf '%s\n' 'title: When Systems Catch Fire / 点火'

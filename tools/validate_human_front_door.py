@@ -225,7 +225,10 @@ def validate_system_map(root: Path, readme: str, pages: str) -> int:
     usage = readme.index("## 项目内容入口")
     require(charter < system_map < usage, "README system map must follow Charter System and precede usage")
     require("<object data=\"./generated/ignition-system-map.svg\"" in readme, "Pages homepage does not directly embed the complete interactive SVG")
-    require("./pages/generated/ignition-system-map.svg" in readme, "GitHub README does not preserve the complete SVG preview")
+    require(
+        "https://arvin-liu.github.io/when-systems-catch-fire/generated/ignition-system-map.svg" in readme,
+        "GitHub README does not preserve the canonical production SVG preview",
+    )
     require("打开交互版完整图" in readme, "GitHub README lacks an explicit interactive-map entrance")
     require("cp pages/generated/ignition-system-map.svg site/generated/ignition-system-map.svg" in pages, "Pages workflow omits generated SVG publication")
     require("cp pages/system-map.html site/system-map.html" in pages, "Pages workflow omits canonical interactive page")
