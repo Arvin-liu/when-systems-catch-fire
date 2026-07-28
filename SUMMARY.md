@@ -96,11 +96,11 @@ L6 只能引用 L0-L5，不能反向制造数学真实性、逻辑有效性或�
 
 ## 模板、数据与历史审计
 
-- [模板目录](./templates/)
+- [模板目录](https://github.com/Arvin-liu/when-systems-catch-fire/tree/main/templates)
 - [元协议机器数据](./data/meta-protocols/README.md)
 - [书籍碰撞候选](./outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
-- [历史审计目录](./outputs/audit/)
-- [076 架构报告](./reports/foundation-architecture/)
+- [历史审计目录](https://github.com/Arvin-liu/when-systems-catch-fire/tree/main/outputs/audit)
+- [076 架构报告](https://github.com/Arvin-liu/when-systems-catch-fire/tree/main/reports/foundation-architecture)
 
 ## Agent 使用入口
 

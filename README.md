@@ -126,7 +126,7 @@ llms.txt
 
 <p class="github-system-map-preview">
   <a href="https://arvin-liu.github.io/when-systems-catch-fire/system-map.html">
-    <img src="./pages/generated/ignition-system-map.svg" alt="点火完整系统图预览；点击打开交互版">
+    <img src="https://arvin-liu.github.io/when-systems-catch-fire/generated/ignition-system-map.svg" alt="点火完整系统图预览；点击打开交互版">
   </a>
 </p>
 

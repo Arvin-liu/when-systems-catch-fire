@@ -947,16 +947,17 @@ class PagesF5B2Batch5PublishTests(unittest.TestCase):
     def test_f5b2_batch5_no_extra_targets_or_dirs(self):
         """(b'') Global regression gate. Baseline at a00b3559 is 67 cp / 22
         mkdir -p; after Batch 5 (2 cp / 2 mkdir) the totals became 69 cp / 24
-        mkdir; after F5-B3 (5 cp / 3 mkdir) the totals MUST be 74 cp / 27 mkdir
-        (no extra/duplicate F5-B3 targets or directories, no sixth file)."""
+        mkdir; after F5-B3 (5 cp / 3 mkdir) the totals became 74 cp / 27 mkdir;
+        task 94 then adds its exact audited public-surface closure of 23 cp / 11
+        mkdir, so the totals MUST be 97 cp / 38 mkdir."""
         all_cp = _extract_cp_lines(TEXT)
         all_mkdir = [m.group(1).strip('"') for m in
                      re.finditer(r"^\s*mkdir\s+-p\s+(\S+)\s*$", TEXT, flags=re.M)]
-        self.assertEqual(len(all_cp), 74,
-                         f"expected 74 total cp lines (69 after Batch5 + 5 F5-B3), "
+        self.assertEqual(len(all_cp), 97,
+                         f"expected 97 total cp lines (74 after F5-B3 + 23 task 94), "
                          f"found {len(all_cp)}")
-        self.assertEqual(len(all_mkdir), 27,
-                         f"expected 27 total mkdir -p lines (24 after Batch5 + 3 F5-B3), "
+        self.assertEqual(len(all_mkdir), 38,
+                         f"expected 38 total mkdir -p lines (27 after F5-B3 + 11 task 94), "
                          f"found {len(all_mkdir)}")
 
     def test_f5b2_batch5_candidate_artifact_contains_targets(self):
