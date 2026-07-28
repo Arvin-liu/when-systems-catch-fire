@@ -140,6 +140,20 @@ jobs:
           cp SUPPORT.md site/SUPPORT.md
           cp COMMERCIAL-LICENSING.md site/COMMERCIAL-LICENSING.md
           cp SUSTAINABILITY.md site/SUSTAINABILITY.md
+          # --- F5-B2 Batch 2 (IGNITION-PAGES-PUBLIC-DOCUMENT-LINK-F5-B2-BATCH2-FIX-R1-20260728) ---
+          # Publish the 7 core reference docs under docs/ and docs/architecture/
+          # that the homepage README (and published docs/USAGE.md) link to but the
+          # allowlist omitted (systemic 404; audit = 1111 Draft PR #78, Batch 2).
+          # site/docs and site/docs/architecture are already created by the
+          # existing flow above (mkdir -p at lines 69/73) -- NO new mkdir required.
+          # Remaining F5-B2 Batch 3-5 targets and F5-B3 are DEFERRED (not in this batch).
+          cp docs/GET-BRAIN-WORKFLOW.md site/docs/GET-BRAIN-WORKFLOW.md
+          cp docs/VERSIONING.md site/docs/VERSIONING.md
+          cp docs/PROJECT-ARCHITECTURE.md site/docs/PROJECT-ARCHITECTURE.md
+          cp docs/claim_levels.md site/docs/claim_levels.md
+          cp docs/evidence_regime_library.md site/docs/evidence_regime_library.md
+          cp docs/architecture/multiscale-causal-fabric.md site/docs/architecture/multiscale-causal-fabric.md
+          cp docs/architecture/probabilistic-system-dynamics.md site/docs/architecture/probabilistic-system-dynamics.md
           {
             printf '%s\n' '---'
             printf '%s\n' 'title: When Systems Catch Fire / 点火'
