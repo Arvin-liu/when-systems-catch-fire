@@ -143,6 +143,29 @@ F5_B2_BATCH5_MKDIR = [
 ]
 
 
+# --- F5-B3 publish assertions (IGNITION-PAGES-F5-B3-FIX-R1-20260728) ---
+# Exact, deduplicated target set = the 5 residual un-published-but-existing
+# files CONFIRMED by the F5-B3 audit receipt (1111 Draft PR #90). Source = repo
+# path; Target = site/ path. Pure publish only (cp + mkdir -p); no new content.
+# F5-B1 and all F5-B2 batches are kept intact -- no regression.
+F5_B3_PUBLISH = [
+    ("LICENSE", "site/LICENSE"),
+    ("LICENSES/README.md", "site/LICENSES/README.md"),
+    ("README.md", "site/README.md"),
+    ("views/README.md", "site/views/README.md"),
+    ("data/meta-protocols/README.md", "site/data/meta-protocols/README.md"),
+]
+F5_B3_SRC_TO_TARGET = dict(F5_B3_PUBLISH)
+# The 3 minimal mkdir -p lines F5-B3 must add (no others). site/data/meta-protocols
+# is NOT covered by the existing site/data/operations|architecture|foundation dirs,
+# so a dedicated mkdir -p is required (verified: no prior mkdir creates it).
+F5_B3_MKDIR = [
+    "mkdir -p site/LICENSES",
+    "mkdir -p site/views",
+    "mkdir -p site/data/meta-protocols",
+]
+
+
 def _extract_cp_lines(text: str):
     """Return list of (src, target) tuples from `cp <src> site/<target>` lines.
 
@@ -922,18 +945,18 @@ class PagesF5B2Batch5PublishTests(unittest.TestCase):
                                 f"(prepared dirs: {sorted(mkdir_dirs)})")
 
     def test_f5b2_batch5_no_extra_targets_or_dirs(self):
-        """(b'') Exactly 2 new cp lines and 2 new mkdir -p lines are added.
-        Baseline at a00b3559 is 67 cp / 22 mkdir -p; after Batch 5 the totals
-        MUST be 69 cp / 24 mkdir -p (no extra/duplicate Batch 5 targets or
-        directories, no third file)."""
+        """(b'') Global regression gate. Baseline at a00b3559 is 67 cp / 22
+        mkdir -p; after Batch 5 (2 cp / 2 mkdir) the totals became 69 cp / 24
+        mkdir; after F5-B3 (5 cp / 3 mkdir) the totals MUST be 74 cp / 27 mkdir
+        (no extra/duplicate F5-B3 targets or directories, no sixth file)."""
         all_cp = _extract_cp_lines(TEXT)
         all_mkdir = [m.group(1).strip('"') for m in
                      re.finditer(r"^\s*mkdir\s+-p\s+(\S+)\s*$", TEXT, flags=re.M)]
-        self.assertEqual(len(all_cp), 69,
-                         f"expected 69 total cp lines (67 baseline + 2 Batch 5), "
+        self.assertEqual(len(all_cp), 74,
+                         f"expected 74 total cp lines (69 after Batch5 + 5 F5-B3), "
                          f"found {len(all_cp)}")
-        self.assertEqual(len(all_mkdir), 24,
-                         f"expected 24 total mkdir -p lines (22 baseline + 2 Batch 5), "
+        self.assertEqual(len(all_mkdir), 27,
+                         f"expected 27 total mkdir -p lines (24 after Batch5 + 3 F5-B3), "
                          f"found {len(all_mkdir)}")
 
     def test_f5b2_batch5_candidate_artifact_contains_targets(self):
@@ -1028,6 +1051,166 @@ class PagesF5B2Batch5PublishTests(unittest.TestCase):
             with self.subTest(f"f5b1:{src}"):
                 self.assertIn((src, target), self.cp_pairs,
                               f"F5-B1 cp line regressed/removed: {src} -> {target}")
+
+
+class PagesF5B3PublishTests(unittest.TestCase):
+    """F5-B3 fix verification (IGNITION-PAGES-F5-B3-FIX-R1-20260728).
+
+    Asserts the Pages build now publishes the 5 residual un-published-but-existing
+    files CONFIRMED by the F5-B3 audit (1111 Draft PR #90, 30_F5B3_AUDIT.md):
+    LICENSE (repo root), LICENSES/README.md, README.md (referenced by
+    docs/USAGE.md), views/README.md, and data/meta-protocols/README.md. Pure
+    publish only (cp + mkdir -p); no new content is created. F5-B1 (13), Batch 1
+    (7), Batch 2 (7), Batch 3 (2), Batch 4 (6) and Batch 5 (2) verifications are
+    kept intact -- no regression.
+    """
+
+    def setUp(self):
+        self.cp_pairs = _extract_cp_lines(TEXT)
+        self.published_targets = {t for _, t in self.cp_pairs}
+        self.published_srcs = {s for s, _ in self.cp_pairs}
+
+    def test_f5b3_exact_target_count(self):
+        """Authoritative F5-B3 set is exactly 5 cp lines."""
+        published_f5b3 = [(s, t) for s, t in self.cp_pairs if (s, t) in F5_B3_PUBLISH]
+        self.assertEqual(len(published_f5b3), 5,
+                         f"expected 5 F5-B3 cp lines, found {len(published_f5b3)}")
+
+    def test_f5b3_source_files_exist(self):
+        """(a) every F5-B3 source file exists in the repo AND is non-empty.
+        Existence is checked in a Unicode-normalization-tolerant way (NFC/NFD)
+        so the test does NOT depend on a single host's FS behaviour; the
+        authoritative path is the Git tree (NFC, verified by git ls-tree)."""
+        for src, _ in F5_B3_PUBLISH:
+            with self.subTest(f"exists:{src}"):
+                try:
+                    data = _unicode_path_bytes(ROOT / src)
+                except FileNotFoundError:
+                    self.fail(f"F5-B3 source file missing from repo: {src}")
+                self.assertGreater(len(data), 0,
+                                   f"F5-B3 source file empty: {src}")
+                # The declared source path must itself be NFC (canonical).
+                self.assertEqual(src, unicodedata.normalize("NFC", src),
+                                 f"source path constant is not NFC: {src}")
+
+    def test_f5b3_build_script_publishes_each_target(self):
+        """(b) the build script publishes every F5-B3 target, keeping the
+        original directory structure (no flat copy, no wildcard)."""
+        for src, target in F5_B3_PUBLISH:
+            with self.subTest(src):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"pages.yml missing cp line for {src} -> {target}")
+
+    def test_f5b3_dirs_prepared(self):
+        """(b') the 3 minimal mkdir -p lines F5-B3 adds exist, and every F5-B3
+        target's parent directory is created by them (no extra dirs created)."""
+        mkdir_dirs = set()
+        for m in re.finditer(r"^\s*mkdir\s+-p\s+(\S+)\s*$", TEXT, flags=re.M):
+            mkdir_dirs.add(m.group(1).strip('"'))
+
+        for md in F5_B3_MKDIR:
+            with self.subTest(f"mkdir:{md}"):
+                self.assertIn(md.split("mkdir -p ", 1)[1], mkdir_dirs,
+                              f"F5-B3 must add: {md}")
+
+        def dir_covered(d: str) -> bool:
+            for md in mkdir_dirs:
+                if md == d or md.startswith(d + "/"):
+                    return True
+            return False
+
+        for src, target in F5_B3_PUBLISH:
+            parent = str(Path(target).parent)
+            with self.subTest(f"cover:{src}"):
+                self.assertTrue(dir_covered(parent),
+                                f"no mkdir -p covers target directory for {target} "
+                                f"(prepared dirs: {sorted(mkdir_dirs)})")
+
+    def test_f5b3_candidate_artifact_contains_targets(self):
+        """(c) if a built candidate artifact directory is supplied via
+        PAGES_CANDIDATE_ARTIFACT_DIR, every F5-B3 target must be present AND
+        non-empty AND byte/hash-identical to its source. Skipped in normal pytest
+        runs; the real artifact is verified by the Pages candidate-build step."""
+        art = os.environ.get("PAGES_CANDIDATE_ARTIFACT_DIR")
+        if not art:
+            self.skipTest("PAGES_CANDIDATE_ARTIFACT_DIR not set")
+        for src, target in F5_B3_PUBLISH:
+            with self.subTest(f"present:{src}"):
+                art_path = Path(art) / target
+                try:
+                    data = _unicode_path_bytes(art_path)
+                except FileNotFoundError:
+                    self.fail(f"F5-B3 target missing from candidate artifact: {target}")
+                self.assertGreater(len(data), 0, f"F5-B3 target empty: {target}")
+                src_data = _unicode_path_bytes(ROOT / src)
+                self.assertEqual(hashlib.sha256(data).hexdigest(),
+                                 hashlib.sha256(src_data).hexdigest(),
+                                 f"F5-B3 artifact content hash differs from source for {target}")
+
+    def test_f5b3_homepage_links_resolve(self):
+        """(d) every F5-B3 link referenced by the PUBLISHED README.md /
+        docs/USAGE.md / SUMMARY.md resolves to a target the build publishes.
+        Link normalization is folded to NFC so the comparison is independent of
+        the local filesystem's Unicode form. (No assertGreater: not every F5-B3
+        file is link-referenced -- LICENSE/README are repo-root conventions.)"""
+        referenced = set()
+        for doc, base in (("README.md", ""), ("docs/USAGE.md", "docs"),
+                          ("SUMMARY.md", "")):
+            try:
+                text = (ROOT / doc).read_text(encoding="utf-8")
+            except FileNotFoundError:
+                continue
+            for lnk in _extract_md_links(text):
+                norm = unicodedata.normalize("NFC", _normalize_link(lnk, base) or "")
+                if norm in F5_B3_SRC_TO_TARGET:
+                    referenced.add(norm)
+        for src in referenced:
+            with self.subTest(src):
+                self.assertIn(F5_B3_SRC_TO_TARGET[src], self.published_targets,
+                              f"F5-B3 link target not published: {src}")
+
+    def test_f5b3_url_encoded_path_matches_target(self):
+        """(f) the UTF-8 percent-encoded production URL for each F5-B3 target
+        round-trips to exactly the published site/ path (no NFC/NFD drift, no
+        encoding mismatch). Uses only standard-library logic."""
+        for src, target in F5_B3_PUBLISH:
+            with self.subTest(src):
+                prod_path = "/" + target
+                encoded = urllib.parse.quote(prod_path, safe="/")
+                decoded = urllib.parse.unquote(encoded)
+                self.assertEqual(decoded, prod_path,
+                                 f"URL-encoded path does not round-trip for {target}: {encoded}")
+                self.assertEqual(decoded, unicodedata.normalize("NFC", decoded),
+                                 f"target path is not NFC-normalized: {target}")
+
+    def test_f5b3_f5b1_and_all_f5b2_batches_not_regressed(self):
+        """(e) F5-B3 must NOT remove or alter the F5-B1 (13), F5-B2 Batch 1 (7),
+        Batch 2 (7), Batch 3 (2), Batch 4 (6) or Batch 5 (2) cp lines already in
+        the build -- online + test behaviour for those targets must not regress."""
+        for src, target in F5_B1_PUBLISH:
+            with self.subTest(f"f5b1:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B1 cp line regressed/removed: {src} -> {target}")
+        for src, target in F5_B2_PUBLISH:
+            with self.subTest(f"batch1:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B2 Batch 1 cp line regressed/removed: {src} -> {target}")
+        for src, target in F5_B2_BATCH2_PUBLISH:
+            with self.subTest(f"batch2:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B2 Batch 2 cp line regressed/removed: {src} -> {target}")
+        for src, target in F5_B2_BATCH3_PUBLISH:
+            with self.subTest(f"batch3:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B2 Batch 3 cp line regressed/removed: {src} -> {target}")
+        for src, target in F5_B2_BATCH4_PUBLISH:
+            with self.subTest(f"batch4:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B2 Batch 4 cp line regressed/removed: {src} -> {target}")
+        for src, target in F5_B2_BATCH5_PUBLISH:
+            with self.subTest(f"batch5:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B2 Batch 5 cp line regressed/removed: {src} -> {target}")
 
 
 if __name__ == "__main__":
