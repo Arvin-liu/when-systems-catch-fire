@@ -194,6 +194,25 @@ jobs:
           mkdir -p "site/统一案例总表"
           cp "统一函数总表/INDEX.md" "site/统一函数总表/INDEX.md"
           cp "统一案例总表/INDEX.md" "site/统一案例总表/INDEX.md"
+          # --- F5-B3 (IGNITION-PAGES-F5-B3-FIX-R1-20260728) ---
+          # Publish the 5 residual un-published-but-existing files CONFIRMED by
+          # the F5-B3 audit (1111 Draft PR #90, 30_F5B3_AUDIT.md). These are the
+          # ONLY real F5-B3 residuals: LICENSE (repo root), LICENSES/README.md,
+          # README.md (referenced by docs/USAGE.md), views/README.md, and
+          # data/meta-protocols/README.md. Pure publish only (cp + mkdir -p); no
+          # new content is created. F5-B1 and all F5-B2 batches are untouched --
+          # no scope creep. No homepage link is affected by this batch.
+          # NOTE: site/data/meta-protocols is NOT covered by the existing
+          # site/data/operations|architecture|foundation mkdir lines, so a
+          # dedicated mkdir -p is required (verified: no prior mkdir creates it).
+          cp LICENSE site/LICENSE
+          mkdir -p site/LICENSES
+          cp LICENSES/README.md site/LICENSES/README.md
+          cp README.md site/README.md
+          mkdir -p site/views
+          cp views/README.md site/views/README.md
+          mkdir -p site/data/meta-protocols
+          cp data/meta-protocols/README.md site/data/meta-protocols/README.md
           {
             printf '%s\n' '---'
             printf '%s\n' 'title: When Systems Catch Fire / 点火'
