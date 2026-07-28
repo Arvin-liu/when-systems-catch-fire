@@ -128,6 +128,18 @@ jobs:
           cp docs/participate.md site/docs/participate.md
           mkdir -p site/templates/publication
           cp templates/publication/zhiyuan-writing-spec.md site/templates/publication/zhiyuan-writing-spec.md
+          # --- F5-B2 Batch 1 (IGNITION-PAGES-PUBLIC-DOCUMENT-LINK-F5-B2-BATCH1-FIX-R1-20260728) ---
+          # Publish the 7 root-level entry docs that the homepage README links to
+          # but the allowlist omitted (systemic 404; audit = 1111 Draft PR #78).
+          # These are repo-root files copied to site-root (no mkdir needed).
+          # Recommended FIRST batch only; remaining 17 F5-B2 targets + F5-B3 deferred.
+          cp AI-START-HERE.md site/AI-START-HERE.md
+          cp AI-HANDOFF.md site/AI-HANDOFF.md
+          cp llms.txt site/llms.txt
+          cp CONTRIBUTING.md site/CONTRIBUTING.md
+          cp SUPPORT.md site/SUPPORT.md
+          cp COMMERCIAL-LICENSING.md site/COMMERCIAL-LICENSING.md
+          cp SUSTAINABILITY.md site/SUSTAINABILITY.md
           {
             printf '%s\n' '---'
             printf '%s\n' 'title: When Systems Catch Fire / 点火'
