@@ -13,9 +13,12 @@ Enforced guarantees:
   * the deploy condition cannot silently regress to only checking github.ref;
   * workflow_dispatch declares a controlled candidate `ref` input.
 """
+import hashlib
 import os
 import re
+import unicodedata
 import unittest
+import urllib.parse
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -122,12 +125,46 @@ F5_B2_BATCH4_MKDIR = [
     "mkdir -p site/docs/meta-protocols",
 ]
 
+# --- F5-B2 Batch 5 (Unicode 统一* indexes) ---
+# The 2 Unicode INDEX.md files linked from the PUBLISHED SUMMARY.md but omitted
+# by the allowlist (systemic 404). Source = repo path; Target = site/ path. The
+# two SOURCE paths are byte-identical to the Git tree (NFC, no NFD drift;
+# verified via `git ls-tree -r -z`). F5-B3 remains deferred. Batch 1-4 and F5-B1
+# verifications are kept intact -- no regression.
+F5_B2_BATCH5_PUBLISH = [
+    ("统一函数总表/INDEX.md", "site/统一函数总表/INDEX.md"),
+    ("统一案例总表/INDEX.md", "site/统一案例总表/INDEX.md"),
+]
+F5_B2_BATCH5_SRC_TO_TARGET = dict(F5_B2_BATCH5_PUBLISH)
+# The 2 minimal mkdir -p lines Batch 5 must add (no others).
+F5_B2_BATCH5_MKDIR = [
+    "mkdir -p site/统一函数总表",
+    "mkdir -p site/统一案例总表",
+]
+
 
 def _extract_cp_lines(text: str):
-    """Return list of (src, target) tuples from `cp <src> site/<target>` lines."""
+    """Return list of (src, target) tuples from `cp <src> site/<target>` lines.
+
+    Tokens are split respecting double quotes (so Unicode source/target paths
+    quoted for shell safety -- prevent word-splitting / escaping / locale issues
+    -- still parse correctly). Existing unquoted cp lines are handled identically
+    (quotes are simply absent). Only lines whose second token is a source and
+    whose third token starts with `site/` are kept.
+    """
     out = []
-    for m in re.finditer(r"^\s*cp\s+(\S+)\s+site/(\S+)\s*$", text, flags=re.M):
-        out.append((m.group(1), "site/" + m.group(2)))
+    for line in text.splitlines():
+        s = line.strip()
+        if not s.startswith("cp "):
+            continue
+        toks = re.findall(r'"[^"]*"|\S+', s)
+        if len(toks) < 3:
+            continue
+        src = toks[1].strip('"')
+        tgt = toks[2].strip('"')
+        if not tgt.startswith("site/"):
+            continue
+        out.append((src, tgt))
     return out
 
 
@@ -786,6 +823,207 @@ class PagesF5B2Batch4PublishTests(unittest.TestCase):
             with self.subTest(f"batch3:{src}"):
                 self.assertIn((src, target), self.cp_pairs,
                               f"F5-B2 Batch 3 cp line regressed/removed: {src} -> {target}")
+        for src, target in F5_B1_PUBLISH:
+            with self.subTest(f"f5b1:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B1 cp line regressed/removed: {src} -> {target}")
+
+
+def _unicode_path_bytes(p: Path) -> bytes:
+    """Read file bytes tolerant of local filesystem Unicode normalization
+    (NFC vs NFD). Does NOT depend on a single host's normalization behaviour
+    (e.g. macOS HFS+/APFS store decomposed NFD while Git stores composed NFC)."""
+    candidates = [
+        p,
+        Path(unicodedata.normalize("NFC", str(p))),
+        Path(unicodedata.normalize("NFD", str(p))),
+    ]
+    last_err = None
+    for c in candidates:
+        try:
+            return c.read_bytes()
+        except (FileNotFoundError, OSError) as e:
+            last_err = e
+            continue
+    raise FileNotFoundError(f"unicode path not found (tried NFC/NFD): {p} ({last_err})")
+
+
+class PagesF5B2Batch5PublishTests(unittest.TestCase):
+    """F5-B2 Batch 5 fix verification (IGNITION-PAGES-PUBLIC-DOCUMENT-LINK-F5-B2-BATCH5-UNICODE-INDEX-AUDIT-AND-FIX-R1-20260728).
+
+    Asserts the Pages build now publishes the recommended FIFTH (final) batch of
+    the F5-B2 audit: the 2 Unicode INDEX.md files (统一函数总表/INDEX.md,
+    统一案例总表/INDEX.md) that the PUBLISHED SUMMARY.md links to but the
+    allowlist omitted (systemic 404). See the audit receipt (1111 Draft PR #78,
+    Batch 5) and this fix receipt. Only this batch is published here; F5-B3
+    remains DEFERRED. F5-B1 (13), Batch 1 (7), Batch 2 (7), Batch 3 (2) and
+    Batch 4 (6) verifications are kept intact -- no regression.
+    """
+
+    def setUp(self):
+        self.cp_pairs = _extract_cp_lines(TEXT)
+        self.published_targets = {t for _, t in self.cp_pairs}
+        self.published_srcs = {s for s, _ in self.cp_pairs}
+
+    def test_f5b2_batch5_exact_target_count(self):
+        """Authoritative F5-B2 Batch 5 set is exactly 2 cp lines."""
+        published_f5 = [(s, t) for s, t in self.cp_pairs if (s, t) in F5_B2_BATCH5_PUBLISH]
+        self.assertEqual(len(published_f5), 2,
+                         f"expected 2 F5-B2 Batch 5 cp lines, found {len(published_f5)}")
+
+    def test_f5b2_batch5_source_files_exist(self):
+        """(a) every F5-B2 Batch 5 source file exists in the repo AND is
+        non-empty. Existence is checked in a Unicode-normalization-tolerant way
+        (NFC/NFD) so the test does NOT depend on a single host's FS behaviour;
+        the authoritative path is the Git tree (NFC, verified by git ls-tree)."""
+        for src, _ in F5_B2_BATCH5_PUBLISH:
+            with self.subTest(f"exists:{src}"):
+                try:
+                    data = _unicode_path_bytes(ROOT / src)
+                except FileNotFoundError:
+                    self.fail(f"F5-B2 Batch 5 source file missing from repo: {src}")
+                self.assertGreater(len(data), 0,
+                                   f"F5-B2 Batch 5 source file empty: {src}")
+                # The declared source path must itself be NFC (canonical).
+                self.assertEqual(src, unicodedata.normalize("NFC", src),
+                                 f"source path constant is not NFC: {src}")
+
+    def test_f5b2_batch5_build_script_publishes_each_target(self):
+        """(b) the build script publishes every F5-B2 Batch 5 target, keeping the
+        original directory structure (no flat copy, no wildcard)."""
+        for src, target in F5_B2_BATCH5_PUBLISH:
+            with self.subTest(src):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"pages.yml missing cp line for {src} -> {target}")
+
+    def test_f5b2_batch5_dirs_prepared(self):
+        """(b') the 2 minimal mkdir -p lines Batch 5 adds exist, and every Batch 5
+        target's parent directory is created by them (no extra dirs created)."""
+        mkdir_dirs = set()
+        for m in re.finditer(r"^\s*mkdir\s+-p\s+(\S+)\s*$", TEXT, flags=re.M):
+            mkdir_dirs.add(m.group(1).strip('"'))
+
+        for md in F5_B2_BATCH5_MKDIR:
+            with self.subTest(f"mkdir:{md}"):
+                self.assertIn(md.split("mkdir -p ", 1)[1], mkdir_dirs,
+                              f"Batch 5 must add: {md}")
+
+        def dir_covered(d: str) -> bool:
+            for md in mkdir_dirs:
+                if md == d or md.startswith(d + "/"):
+                    return True
+            return False
+
+        for src, target in F5_B2_BATCH5_PUBLISH:
+            parent = str(Path(target).parent)
+            with self.subTest(f"cover:{src}"):
+                self.assertTrue(dir_covered(parent),
+                                f"no mkdir -p covers target directory for {target} "
+                                f"(prepared dirs: {sorted(mkdir_dirs)})")
+
+    def test_f5b2_batch5_no_extra_targets_or_dirs(self):
+        """(b'') Exactly 2 new cp lines and 2 new mkdir -p lines are added.
+        Baseline at a00b3559 is 67 cp / 22 mkdir -p; after Batch 5 the totals
+        MUST be 69 cp / 24 mkdir -p (no extra/duplicate Batch 5 targets or
+        directories, no third file)."""
+        all_cp = _extract_cp_lines(TEXT)
+        all_mkdir = [m.group(1).strip('"') for m in
+                     re.finditer(r"^\s*mkdir\s+-p\s+(\S+)\s*$", TEXT, flags=re.M)]
+        self.assertEqual(len(all_cp), 69,
+                         f"expected 69 total cp lines (67 baseline + 2 Batch 5), "
+                         f"found {len(all_cp)}")
+        self.assertEqual(len(all_mkdir), 24,
+                         f"expected 24 total mkdir -p lines (22 baseline + 2 Batch 5), "
+                         f"found {len(all_mkdir)}")
+
+    def test_f5b2_batch5_candidate_artifact_contains_targets(self):
+        """(c) if a built candidate artifact directory is supplied via
+        PAGES_CANDIDATE_ARTIFACT_DIR, every F5-B2 Batch 5 target must be present
+        AND non-empty AND byte/hash-identical to its source. Skipped in normal
+        pytest runs; the real artifact is verified by the Pages candidate-build
+        step (req #8/#9)."""
+        art = os.environ.get("PAGES_CANDIDATE_ARTIFACT_DIR")
+        if not art:
+            self.skipTest("PAGES_CANDIDATE_ARTIFACT_DIR not set")
+        for src, target in F5_B2_BATCH5_PUBLISH:
+            with self.subTest(f"present:{src}"):
+                art_path = Path(art) / target
+                try:
+                    data = _unicode_path_bytes(art_path)
+                except FileNotFoundError:
+                    self.fail(f"Batch 5 target missing from candidate artifact: {target}")
+                self.assertGreater(len(data), 0, f"Batch 5 target empty: {target}")
+                src_data = _unicode_path_bytes(ROOT / src)
+                self.assertEqual(hashlib.sha256(data).hexdigest(),
+                                 hashlib.sha256(src_data).hexdigest(),
+                                 f"Batch 5 artifact content hash differs from source for {target}")
+
+    def test_f5b2_batch5_homepage_links_resolve(self):
+        """(d) every F5-B2 Batch 5 link referenced by the PUBLISHED SUMMARY.md
+        (./统一函数总表/INDEX.md, ./统一案例总表/INDEX.md) resolves to a target the
+        build publishes. NOTE: these Unicode indexes are linked from SUMMARY.md
+        (a published Pages entry), NOT from README.md / docs/USAGE.md -- so the
+        link scan covers SUMMARY.md. README/USAGE are scanned too but contribute
+        no Batch 5 links. Link normalization is folded to NFC so the comparison
+        is independent of the local filesystem's Unicode form."""
+        summary = (ROOT / "SUMMARY.md").read_text(encoding="utf-8")
+        referenced = set()
+        for lnk in _extract_md_links(summary):
+            norm = unicodedata.normalize("NFC", _normalize_link(lnk, "") or "")
+            if norm in F5_B2_BATCH5_SRC_TO_TARGET:
+                referenced.add(norm)
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        usage = (ROOT / "docs" / "USAGE.md").read_text(encoding="utf-8")
+        for lnk in _extract_md_links(readme):
+            norm = unicodedata.normalize("NFC", _normalize_link(lnk, "") or "")
+            if norm in F5_B2_BATCH5_SRC_TO_TARGET:
+                referenced.add(norm)
+        for lnk in _extract_md_links(usage):
+            norm = unicodedata.normalize("NFC", _normalize_link(lnk, "docs") or "")
+            if norm in F5_B2_BATCH5_SRC_TO_TARGET:
+                referenced.add(norm)
+        self.assertGreater(len(referenced), 0,
+                           "no F5-B2 Batch 5 links found in SUMMARY.md (published entry)")
+        for src in referenced:
+            with self.subTest(src):
+                self.assertIn(F5_B2_BATCH5_SRC_TO_TARGET[src], self.published_targets,
+                              f"F5-B2 Batch 5 link target not published: {src}")
+
+    def test_f5b2_batch5_url_encoded_path_matches_target(self):
+        """(f) the UTF-8 percent-encoded production URL for each Batch 5 target
+        round-trips to exactly the published site/ path (no NFC/NFD drift, no
+        encoding mismatch). Uses only standard-library logic -- does NOT depend
+        on the local filesystem's Unicode normalization behaviour."""
+        for src, target in F5_B2_BATCH5_PUBLISH:
+            with self.subTest(src):
+                prod_path = "/" + target
+                encoded = urllib.parse.quote(prod_path, safe="/")
+                decoded = urllib.parse.unquote(encoded)
+                self.assertEqual(decoded, prod_path,
+                                 f"URL-encoded path does not round-trip for {target}: {encoded}")
+                self.assertEqual(decoded, unicodedata.normalize("NFC", decoded),
+                                 f"target path is not NFC-normalized: {target}")
+
+    def test_f5b2_batch1_batch2_batch3_batch4_and_f5b1_not_regressed(self):
+        """(e) Batch 5 must NOT remove or alter the F5-B2 Batch 1 (7), Batch 2
+        (7), Batch 3 (2), Batch 4 (6) or F5-B1 (13) cp lines already in the
+        build -- online + test behaviour for those targets must not regress."""
+        for src, target in F5_B2_PUBLISH:
+            with self.subTest(f"batch1:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B2 Batch 1 cp line regressed/removed: {src} -> {target}")
+        for src, target in F5_B2_BATCH2_PUBLISH:
+            with self.subTest(f"batch2:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B2 Batch 2 cp line regressed/removed: {src} -> {target}")
+        for src, target in F5_B2_BATCH3_PUBLISH:
+            with self.subTest(f"batch3:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B2 Batch 3 cp line regressed/removed: {src} -> {target}")
+        for src, target in F5_B2_BATCH4_PUBLISH:
+            with self.subTest(f"batch4:{src}"):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"F5-B2 Batch 4 cp line regressed/removed: {src} -> {target}")
         for src, target in F5_B1_PUBLISH:
             with self.subTest(f"f5b1:{src}"):
                 self.assertIn((src, target), self.cp_pairs,

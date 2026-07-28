@@ -168,7 +168,8 @@ jobs:
           # the allowlist omitted (systemic 404; audit = 1111 Draft PR #78,
           # Batch 4). Each target lives under a site/ subdir that does not yet
           # exist, so mkdir -p is required for 4 distinct directories. Remaining
-          # F5-B2 Batch 5 (Unicode 统一* indexes) and F5-B3 are DEFERRED (not here).
+          # F5-B2 Batch 5 (Unicode 统一* indexes) is implemented below (this
+          # commit); only F5-B3 remains DEFERRED (not here).
           mkdir -p site/docs/falsifiability
           mkdir -p site/case_failures
           mkdir -p site/docs/governance/meta-protocol-reviews
@@ -179,6 +180,20 @@ jobs:
           cp docs/meta-protocols/README.md site/docs/meta-protocols/README.md
           cp docs/meta-protocols/12-meta-protocols.md site/docs/meta-protocols/12-meta-protocols.md
           cp docs/meta-protocols/meta-protocol-64-combination-matrix.md site/docs/meta-protocols/meta-protocol-64-combination-matrix.md
+          # --- F5-B2 Batch 5 (Unicode 统一* indexes, require new site/ dirs) ---
+          # Publish the 2 Unicode INDEX.md files that the PUBLISHED SUMMARY.md
+          # links to (./统一函数总表/INDEX.md and ./统一案例总表/INDEX.md) but the
+          # allowlist omitted (systemic 404; audit = 1111 Draft PR #78, Batch 5;
+          # this fix = 1111 Draft PR #<TBD>). Each target lives under a site/
+          # subdir that does not yet exist, so mkdir -p is required for 2 distinct
+          # directories. The 2 SOURCE paths are byte-identical to the Git tree
+          # (NFC, no NFD drift; verified via `git ls-tree -r -z`). The Unicode
+          # source/target paths are double-quoted for shell safety (prevent
+          # word-splitting / escaping / locale issues). F5-B3 remains DEFERRED.
+          mkdir -p "site/统一函数总表"
+          mkdir -p "site/统一案例总表"
+          cp "统一函数总表/INDEX.md" "site/统一函数总表/INDEX.md"
+          cp "统一案例总表/INDEX.md" "site/统一案例总表/INDEX.md"
           {
             printf '%s\n' '---'
             printf '%s\n' 'title: When Systems Catch Fire / 点火'
