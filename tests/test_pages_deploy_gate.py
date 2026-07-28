@@ -47,6 +47,23 @@ F5_B1_PUBLISH = [
 F5_B1_SRC_TO_TARGET = dict(F5_B1_PUBLISH)
 
 
+# --- F5-B2 Batch 1 publish assertions (IGNITION-PAGES-PUBLIC-DOCUMENT-LINK-F5-B2-BATCH1-FIX-R1-20260728) ---
+# Exact, deduplicated target set = the 7 recommended root-level entry docs from
+# the F5-B2 audit receipt (1111 Draft PR #78, 40_RECOMMENDED_BATCH.md ->
+# recommended batch 1). Source = repo path (all repo-root); Target = site/ path.
+# Remaining 17 F5-B2 targets and F5-B3 are DEFERRED (not in this batch).
+F5_B2_PUBLISH = [
+    ("AI-START-HERE.md", "site/AI-START-HERE.md"),
+    ("AI-HANDOFF.md", "site/AI-HANDOFF.md"),
+    ("llms.txt", "site/llms.txt"),
+    ("CONTRIBUTING.md", "site/CONTRIBUTING.md"),
+    ("SUPPORT.md", "site/SUPPORT.md"),
+    ("COMMERCIAL-LICENSING.md", "site/COMMERCIAL-LICENSING.md"),
+    ("SUSTAINABILITY.md", "site/SUSTAINABILITY.md"),
+]
+F5_B2_SRC_TO_TARGET = dict(F5_B2_PUBLISH)
+
+
 def _extract_cp_lines(text: str):
     """Return list of (src, target) tuples from `cp <src> site/<target>` lines."""
     out = []
@@ -281,6 +298,83 @@ class PagesF5B1PublishTests(unittest.TestCase):
             with self.subTest(src):
                 self.assertIn(F5_B1_SRC_TO_TARGET[src], self.published_targets,
                               f"F5-B1 link target not published: {src}")
+
+
+class PagesF5B2PublishTests(unittest.TestCase):
+    """F5-B2 Batch 1 fix verification (IGNITION-PAGES-PUBLIC-DOCUMENT-LINK-F5-B2-BATCH1-FIX-R1-20260728).
+
+    Asserts the Pages build now publishes the recommended FIRST batch of the
+    F5-B2 audit: the 7 root-level entry docs that the homepage README links to
+    (systemic 404 fixed). See the audit receipt (1111 Draft PR #78). Only this
+    batch is published here; the remaining 17 F5-B2 targets and F5-B3 are
+    deferred to later independent batches.
+    """
+
+    def setUp(self):
+        self.cp_pairs = _extract_cp_lines(TEXT)
+        self.published_targets = {t for _, t in self.cp_pairs}
+        self.published_srcs = {s for s, _ in self.cp_pairs}
+
+    def test_f5b2_exact_target_count(self):
+        """Authoritative F5-B2 Batch 1 set is exactly 7 cp lines."""
+        published_f5 = [(s, t) for s, t in self.cp_pairs if (s, t) in F5_B2_PUBLISH]
+        self.assertEqual(len(published_f5), 7,
+                         f"expected 7 F5-B2 cp lines, found {len(published_f5)}")
+
+    def test_f5b2_source_files_exist(self):
+        """(a) every F5-B2 Batch 1 source file exists in the repo."""
+        missing = [s for s, _ in F5_B2_PUBLISH if not (ROOT / s).is_file()]
+        self.assertEqual(missing, [],
+                         f"F5-B2 source files missing from repo: {missing}")
+
+    def test_f5b2_build_script_publishes_each_target(self):
+        """(b) the build script publishes every F5-B2 target."""
+        for src, target in F5_B2_PUBLISH:
+            with self.subTest(src):
+                self.assertIn((src, target), self.cp_pairs,
+                              f"pages.yml missing cp line for {src} -> {target}")
+
+    def test_f5b2_targets_need_no_new_dir(self):
+        """(b') every F5-B2 Batch 1 target is a repo-root file copied to the
+        site root (site/<basename>); no new directory is required."""
+        for src, target in F5_B2_PUBLISH:
+            with self.subTest(src):
+                self.assertEqual(target, f"site/{src}",
+                                 f"F5-B2 target {target} is not site-root; "
+                                 f"new dir would be required")
+
+    def test_f5b2_candidate_artifact_contains_targets(self):
+        """(c) if a built candidate artifact directory is supplied via
+        PAGES_CANDIDATE_ARTIFACT_DIR, every F5-B2 target must be present.
+        Skipped in normal pytest runs; the real artifact is verified by the
+        Pages candidate-build step (req #8) and the CI download check."""
+        art = os.environ.get("PAGES_CANDIDATE_ARTIFACT_DIR")
+        if not art:
+            self.skipTest("PAGES_CANDIDATE_ARTIFACT_DIR not set")
+        missing = [t for _, t in F5_B2_PUBLISH if not (Path(art) / t).is_file()]
+        self.assertEqual(missing, [],
+                         f"F5-B2 targets missing from candidate artifact: {missing}")
+
+    def test_f5b2_homepage_and_usage_links_resolve(self):
+        """(d) every F5-B2 link referenced by the homepage README (and the
+        published docs/USAGE.md) resolves to a target the build publishes."""
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        usage = (ROOT / "docs" / "USAGE.md").read_text(encoding="utf-8")
+        referenced = set()
+        for lnk in _extract_md_links(readme):
+            norm = _normalize_link(lnk, "")
+            if norm in F5_B2_SRC_TO_TARGET:
+                referenced.add(norm)
+        for lnk in _extract_md_links(usage):
+            norm = _normalize_link(lnk, "docs")
+            if norm in F5_B2_SRC_TO_TARGET:
+                referenced.add(norm)
+        self.assertGreater(len(referenced), 0,
+                           "no F5-B2 links found in homepage README or docs/USAGE.md")
+        for src in referenced:
+            with self.subTest(src):
+                self.assertIn(F5_B2_SRC_TO_TARGET[src], self.published_targets,
+                              f"F5-B2 link target not published: {src}")
 
 
 if __name__ == "__main__":
