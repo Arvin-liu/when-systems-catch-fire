@@ -34,7 +34,7 @@ Authority:
 ARCHITECTURE.md is the architecture authority.
 FOUNDATION.md is the mathematical and logical foundation authority.
 data/foundation/ registries are the authority for object type, claim type, argument, source, evidence, proof, validation, status and migration.
-data/foundation/function-assets/corrections.jsonl is the task-98 authority overlay for T2, D127, D182-D190 and D260; census.jsonl automatic labels are candidates only. docs/foundation/claim-governance-and-function-identity.md defines the ten identities, independent M/E axes and ten audit gates.
+data/foundation/function-assets/corrections.jsonl is the task-98 authority overlay for T2, D127, D182-D190 and D260. Task-99 identity-cards.jsonl and adjudication-ledger.jsonl provide the current twelve-class one-record-per-discovery disposition layer; unresolved-quarantine.jsonl is an explicit bounded outcome, not validation. census.jsonl automatic labels remain discovery candidates only. docs/foundation/claim-governance-and-function-identity.md defines the identities, independent M/E axes and ten audit gates.
 data/foundation/project-state.json and migration-summary.json are the reproducible count authority.
 统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as current count authority.
 

@@ -1,0 +1,8 @@
+{
+  "task_id": "IGNITION-HISTORICAL-FUNCTION-ASSET-DEEP-ADJUDICATION-AND-REGISTRY-CLOSURE-R1-20260729",
+  "schema_version": "2.0.0",
+  "source_commit": "23f4702a0e9f136cb39f03c4bcd3d85a27084804",
+  "adjudicated_at": "2026-07-29",
+  "adjudicator": "Codex task 99",
+  "claim_ceiling": "Repository-scoped classification, executable checks and explicit quarantine closure; no external truth, peer review, empirical replication or universal proof is inferred."
+}

@@ -18,7 +18,7 @@
 | `adjudications/` | 逐对象受控语义、正确类型、逻辑检查、处置与证明义务 |
 | `coverage/` | 迁移覆盖率与语义审定覆盖率的独立口径 |
 | `work-queues/` | 未深审对象的依赖/风险排序队列 |
-| `function-assets/` | 十类函数身份、M/E 双轴、全量发现、纠偏覆盖、依赖边与可恢复审计队列 |
+| `function-assets/` | 十二类主身份、M/E 双轴、全量发现、身份卡、义务/反例、纠偏、依赖闭合、公共 claim lineage 与 quarantine |
 
 ## 不可越权的门禁
 
@@ -36,7 +36,10 @@
     python3 tools/foundation/validate_foundation.py
     python3 tools/foundation/verify_core_claims.py --check
     python3 tools/foundation/build_function_asset_census.py --check
+    python3 tools/foundation/adjudicate_function_assets.py --check
     python3 tools/foundation/validate_claim_governance.py
+    python3 tools/foundation/validate_function_asset_closure.py
+    python3 tools/foundation/run_function_asset_math_checks.py --check
     python3 -m unittest tests.foundation.test_foundation
     python3 -m unittest tests.foundation.test_claim_governance
 
@@ -52,4 +55,5 @@ Lean 4 固定为 v4.19.0，SymPy 固定为 1.14.0，Z3 固定为 4.16.0。T2 的
 - [断言治理与函数身份](docs/foundation/claim-governance-and-function-identity.md)
 - [历史函数资产登记](docs/foundation/historical-function-census.md)
 - [首批物理资产纠偏](docs/foundation/physics-asset-correction-20260729.md)
+- [历史函数资产深度裁决与注册表闭合](docs/foundation/historical-function-deep-adjudication-20260729.md)
 - [AI 使用入口](AI-START-HERE.md)

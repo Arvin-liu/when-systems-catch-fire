@@ -86,6 +86,8 @@ Never raise the claim ceiling because the prose is convincing, the maintainer wa
 
 For any function, model, theorem, formula, law, decision rule or cross-domain claim, apply `docs/foundation/claim-governance-and-function-identity.md` before publication. Mathematical maturity M0—M7 and external evidence E0—E7 are independent; a high M level never raises E. Run the ten audit gates. Any gate that cannot be automated reliably must return `REQUIRES_HUMAN_REVIEW`, never an inferred pass. A withdrawn strong claim must change its text, scope, allowed inference direction, dependencies, public projection and test expectation; renaming it cannot restore the conclusion.
 
+The task-99 function-asset registry is closed only when every discovery has one canonical identity card and a final disposition. `UNRESOLVED_IDENTITY` plus `QUARANTINE_UNTIL_DEFINED` is an explicit bounded outcome, not a validator pass. Removing quarantine requires evidence that discharges the recorded proof or empirical obligation and a dependency/public-claim propagation review.
+
 ## 5. Impact And Synchronization Matrix
 
 For each iteration, decide whether these surfaces change:

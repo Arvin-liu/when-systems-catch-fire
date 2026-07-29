@@ -87,6 +87,9 @@ L6 只能引用 L0-L5，不能反向制造数学真实性、逻辑有效性或�
 - [迁移](./data/foundation/migrations/legacy-assets.jsonl)
 - [断言治理与函数身份](./docs/foundation/claim-governance-and-function-identity.md)
 - [历史函数资产全量登记](./docs/foundation/historical-function-census.md)
+- [历史函数资产深度裁决与注册表闭合](./docs/foundation/historical-function-deep-adjudication-20260729.md)
+- [公共断言上限指南](./docs/foundation/public-claim-ceiling-guidance.md)
+- [函数资产注册表迁移 R2](./docs/foundation/function-asset-registry-migration-r2.md)
 - [首批物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md)
 - [历史纠偏日志与后续路线](./docs/foundation/historical-correction-log.md) / [深审路线图](./docs/foundation/function-audit-roadmap.md)
 

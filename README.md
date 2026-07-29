@@ -8,7 +8,7 @@
 
 经过持续迭代，点火已经从早期的笔记与函数整理，生长为一套仓库原生、版本化、可执行、可审计的研究基础设施原型。它能够保存历史而不覆盖历史，让结论随新证据降级或修正，让行动结果重新进入系统，并把项目自身的变化也纳入同一套传播、验证和更新机制。它现在已经具有较完整的结构与运行骨架，但大量具体内容的深度审定、外部验证和现实应用仍在继续。
 
-点火是候选生成、结构发现、模型组织与可审计推理系统；它不会因编号、公式、AI 输出、内部自洽或测试通过而自动拥有外部真理。现行[断言治理与函数身份规范](./docs/foundation/claim-governance-and-function-identity.md)把数学成熟度与外部证据分成独立双轴，并把旧函数表视为待审历史来源。首批[物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md)明确：当前门控乘积模型没有完成四力统一，四力统一问题保持开放，项目没有证明“大一统普遍不可能”。
+点火是候选生成、结构发现、模型组织与可审计推理系统；它不会因编号、公式、AI 输出、内部自洽或测试通过而自动拥有外部真理。现行[断言治理与函数身份规范](./docs/foundation/claim-governance-and-function-identity.md)把数学成熟度与外部证据分成独立双轴。历史函数类资产已完成[第一轮全量身份卡与处置闭合](./docs/foundation/historical-function-deep-adjudication-20260729.md)：每个发现项均被裁决或带具体原因进入 quarantine；这不表示全部数学证明或外部实证完成。首批[物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md)仍明确：当前门控乘积模型没有完成四力统一，四力统一问题保持开放，项目没有证明“大一统普遍不可能”。
 
 ## 项目宣言
 
@@ -163,7 +163,9 @@ GitHub README 对 SVG 内部热点的支持可能受限；上方完整预览点�
 - [项目状态](./data/foundation/project-state.json) — 用机器可读方式记录当前 Foundation 计数和状态。
 - [Registry manifest](./data/foundation/registry-manifest.json) — 列出 Foundation 注册表文件及其作用。
 - [Migration summary](./data/foundation/migration-summary.json) — 记录 legacy 资产迁移覆盖与摘要。
-- [断言治理与函数身份](./docs/foundation/claim-governance-and-function-identity.md) — 十类身份、M/E 双轴、十个审计门与防回弹规则。
+- [断言治理与函数身份](./docs/foundation/claim-governance-and-function-identity.md) — 十二类主身份、M/E 双轴、十个审计门与防回弹规则。
+- [历史函数资产深度裁决](./docs/foundation/historical-function-deep-adjudication-20260729.md) — 全量身份卡、处置、quarantine、义务和依赖闭合。
+- [公共断言上限](./docs/foundation/public-claim-ceiling-guidance.md) — 强断言 lineage、发布边界与结构性回弹检测。
 - [历史函数资产登记](./docs/foundation/historical-function-census.md) — 全量发现范围、去重口径、计数和审计队列边界。
 - [函数资产作者指南](./docs/foundation/function-asset-authoring-guide.md) — 新资产必须提交的定义、维度、反例、claim ceiling 和依赖信息。
 - [首批物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md) — T2、D127、D182—D190、D260 的现行处置与开放问题边界。

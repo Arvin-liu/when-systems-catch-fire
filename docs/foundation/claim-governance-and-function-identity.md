@@ -12,22 +12,24 @@
 - 结构相似不是严格同构。同构声明必须给出对象、双射、逆映射与结构保持证明。
 - 现实或跨学科强断言必须有 claim ceiling、证据边界、依赖传播和回滚条件。
 
-## 十类函数身份
+## 十二类主身份
 
 历史名称中的“函数”不具有分类权威。每条资产最终只能由审定记录赋予下列身份之一：
 
 | 类型 | 判定边界 |
 |---|---|
 | `STRICT_MATHEMATICAL_FUNCTION` | 明确集合意义的定义域、陪域、单值性和求值规则 |
-| `PARAMETRIC_MODEL` | 由明确参数索引的一族模型；拟合与现实解释另行审计 |
-| `SCORE_OR_INDEX` | 用于排序或汇总的标量；阈值和校准不是公式自动给出的 |
-| `GATE_OR_DECISION_RULE` | 谓词、阈值门或路由判定器 |
+| `PARAMETRIC_MATHEMATICAL_MODEL` | 由明确参数索引的一族模型；拟合与现实解释另行审计 |
+| `SCORING_OR_INDEX_FUNCTION` | 用于排序或汇总的标量；阈值和校准不是公式自动给出的 |
+| `GATE_OR_CLASSIFIER` | 谓词、阈值门或分类器 |
+| `OPERATOR_OR_TRANSFORM` | 具有明确源空间、目标空间与作用语义的算子或变换 |
 | `ALGORITHM_OR_WORKFLOW` | 有步骤、状态或终止条件的执行过程 |
 | `RELATION_OR_CONSTRAINT` | 方程、约束或可多值关系，不强装成单值函数 |
 | `HEURISTIC` | 可失败的经验规则，不具有演绎必然性 |
 | `STRUCTURAL_METAPHOR` | 未给出结构保持映射的跨域类比 |
-| `CONJECTURE_OR_PENDING_CLAIM` | 尚有开放证明义务的命题 |
+| `CONJECTURE_OR_RESEARCH_CANDIDATE` | 尚有开放证明义务的命题或研究候选 |
 | `INVALID_OR_PSEUDO_FUNCTION` | 未良定义、循环、类型冲突或已被反例击穿的伪函数 |
+| `UNRESOLVED_IDENTITY` | 来源不足以区分对象、引用、标题、代码声明或自然语言时的显式隔离身份 |
 
 自动扫描只能写入 `AUTO_CANDIDATE`。只有受审记录可以写入 `HUMAN_ADJUDICATED_*`，候选不得覆盖人工权威。
 
@@ -36,13 +38,13 @@
 | 级别 | 含义 |
 |---|---|
 | M0 | 只有名称或自然语言 |
-| M1 | 存在符号表达 |
-| M2 | 定义域、值域和变量类型完整，数学上良定义 |
-| M3 | 符号或形式验算通过 |
-| M4 | 数值实现、边界和反例测试通过 |
-| M5 | 跨实现或干净环境复算通过 |
-| M6 | 证明义务或误差界完成 |
-| M7 | 外部独立数学复核通过 |
+| M1 | 有非正式定义或符号表达 |
+| M2 | 输入、输出与表达明确 |
+| M3 | 类型、定义域、值域、量纲和边界完整 |
+| M4 | 关键性质经过证明或系统反例测试 |
+| M5 | 有可执行实现、自动测试和可复现输出 |
+| M6 | 由独立实现或形式化工具交叉验证 |
+| M7 | 通过外部专业数学审查或正式发表 |
 
 ## 外部证据 E0—E7
 
@@ -50,12 +52,12 @@
 |---|---|
 | E0 | 无现实映射 |
 | E1 | 仅结构隐喻 |
-| E2 | 变量与现实对象有操作性定义 |
-| E3 | 已有数据可检验 |
-| E4 | 内部数据拟合或回测 |
-| E5 | 外部数据复现 |
-| E6 | 领域同行审查 |
-| E7 | 多方独立经验确认 |
+| E2 | 已形成可检验的操作性映射但尚未测试 |
+| E3 | 仅有内部样例、合成数据或玩具实验 |
+| E4 | 完成真实数据初步测试 |
+| E5 | 独立数据或独立团队复现 |
+| E6 | 多源稳健支持 |
+| E7 | 领域共同体广泛确认 |
 
 M 与 E 正交。M6/E0 完全可能：一个已证明的抽象命题仍可能没有现实映射。
 
@@ -76,12 +78,14 @@ M 与 E 正交。M6/E0 完全可能：一个已证明的抽象命题仍可能没
 
 ## 处置与防回弹
 
-最终处置为 `KEEP / REWRITE / DOWNGRADE / SPLIT / RETIRE`。强断言撤回后，不得只把“物理定理”改成“结构性定理”、把“证明”改成“框架判定”或用内部定义重新制造原结论。降级必须同时改变结论文本、适用范围、允许推理方向、依赖传播、公开展示和测试期望。
+最终处置使用 `KEEP_AS_*`、`REWRITE_AND_RETEST`、`DOWNGRADE_TO_*`、`QUARANTINE_UNTIL_DEFINED`、`WITHDRAW_PUBLIC_CLAIM`、`REJECT_AS_INVALID` 或 `HISTORICAL_ONLY`。任务 98 的 `KEEP / REWRITE / DOWNGRADE / SPLIT / RETIRE` 保留为历史纠偏字段，并由任务 99 身份卡映射到现行处置。强断言撤回后，不得只把“物理定理”改成“结构性定理”、把“证明”改成“框架判定”或用内部定义重新制造原结论。降级必须同时改变结论文本、适用范围、允许推理方向、依赖传播、公开展示和测试期望。
 
 机器入口：`data/foundation/function-assets/`；验证入口：
 
 ```bash
 python3 tools/foundation/build_function_asset_census.py --check
+python3 tools/foundation/adjudicate_function_assets.py --check
 python3 tools/foundation/validate_claim_governance.py
+python3 tools/foundation/validate_function_asset_closure.py
 python3 -m unittest tests.foundation.test_claim_governance
 ```
