@@ -1,6 +1,6 @@
 # AI 助手使用参考
 
-版本事实：当前迭代方法为 `1.3.0`，当前系统图为 `0.3.0`；`1.4.0 Continuous Stage Snapshot Publication` 只是 Draft Candidate；`1.2.0`／`0.2.0` 为 Historical，`1.1.0`／`0.1.0` 为更早 Historical。Q32I 已独立接受、由 PR #62 普通合并并 Closed/Current。Q32I 中 execution capability 与 validation capability 必须分离，manual/external 不得调用本地 validator。`docs/generated/recent-stage-results.md` 的“正在炼化”只投影阶段摘要；可见不等于 Accepted、Current、Activated 或能力可用。
+版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.4.0`；`1.3.0`／`0.3.0` 与更早版本均为 Historical。Q32I 已独立接受、由 PR #62 普通合并并 Closed；其 execution capability 与 validation capability 必须分离，manual/external 不得调用本地 validator。`docs/generated/recent-stage-results.md` 的“正在炼化”只投影阶段摘要；可见不等于 Accepted、Current、Activated 或能力可用。
 
 这页给第一次接触点火项目的人使用。你不必先读完整仓库，可以先把下面的提示词复制给自己常用的 AI 助手，让它帮你做第一轮阅读。
 
@@ -37,6 +37,8 @@ ITERATION.md
 ARCHITECTURE.md
 docs/architecture/interactive-system-map.md
 FOUNDATION.md
+docs/foundation/nonfunction-claim-adjudication-index.md
+docs/foundation/future-claim-admission-protocol.md
 function-os-candidate/v0.2/README.md
 docs/architecture/multiscale-causal-fabric.md
 docs/architecture/probabilistic-system-dynamics.md
@@ -83,6 +85,8 @@ llms.txt
 这个链接打开的就是项目首页。你可以复制上面的提示词，再把这个链接交给自己常用的 AI。
 
 当前状态与架构直达入口：[项目现状](./project-current-state.md) / [点火迭代操作法](../ITERATION.md) / [MCF](./architecture/multiscale-causal-fabric.md) / [PSD](./architecture/probabilistic-system-dynamics.md) / [ARN](./architecture/adaptive-relational-network.md)。本页是完整的人类 AI 使用指南；根 README 中的提示词是同一份受验证的前门投影，两者不得独立漂移。当前迭代方法把状态改变视为全项目同步传播：实现完成、仓库同步、逐外部表面证明和项目整体完成必须分开报告，局部通过不能替代整体闭环。
+
+遇到定理、规律、机制、因果、不可能性、跨域对应、预测或经验断言时，还要核对[全语料非函数断言索引](./foundation/nonfunction-claim-adjudication-index.md)与[未来断言准入协议](./foundation/future-claim-admission-protocol.md)。注册表存在、内部测试通过或自动扫描闭合都不证明内容为真；显式 quarantine 是有边界的登记处置。
 
 121Q32T 已将迭代方法 1.2.0 与系统图 0.2.0 收口为 Current。AI 必须从构件 registry、传播 topology 和同步 registry 重算 fixpoint，核对逐构件／逐表面决定、map delta、residue 和 closure hash。三个 relation domain 的权限不得混合：现实／理论 causal candidate 不自动驱动仓库变更，Git diff、文件依赖、遍历或可视连线也不能被写成因果证明。
 

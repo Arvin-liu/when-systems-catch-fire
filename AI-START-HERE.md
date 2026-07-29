@@ -16,6 +16,8 @@
 
 若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/foundation/function-assets/corrections.jsonl`、对应 `identity-cards.jsonl` 记录及其 quarantine/obligation 状态。M 与 E 不得互推，自动 census 不能覆盖专项纠偏；task 99 的 registry closure 也不能被解释为全部证明或外部验证完成。
 
+若对象是非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验或本体断言，还必须读取 `data/foundation/nonfunction-claims/claim-registry.jsonl`、生成索引和未来断言准入协议。task 100 的 closure 可由显式 quarantine 达成，只闭合登记与谱系，不证明内容为真；任何撤回结论都不得以“结构性”“元”“深层”或框架内改名回弹。
+
 阶段成果展示在专用页 `docs/generated/recent-stage-results.md`（“正在炼化 / Recent Stage Results”）；若需了解阶段快照，必须读取 `data/operations/stage-snapshots.json` 和 `docs/operations/stage-snapshot-publication.md`。方法 `1.4.0`（Continuous Stage Snapshot Publication）已为 Current；README 首页不再嵌入「正在炼化」块。
 
 较早的 `1.3.0` 降为 Historical；快照可见不推出 Accepted、Activated、正式能力可用或候选载荷已进 Main（Homepage Visible != Capability Available）。

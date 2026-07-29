@@ -34,6 +34,7 @@ Authority:
 ARCHITECTURE.md is the architecture authority.
 FOUNDATION.md is the mathematical and logical foundation authority.
 data/foundation/ registries are the authority for object type, claim type, argument, source, evidence, proof, validation, status and migration.
+data/foundation/nonfunction-claims/ is the task-100 authority for discovered non-function claims, thirteen-gate adjudication, evidence lineage, dependencies, replication status, disposition, supersession and public wording ceilings. Its registry closure can include explicit quarantine and does not prove corpus truth.
 data/foundation/function-assets/corrections.jsonl is the task-98 authority overlay for T2, D127, D182-D190 and D260. Task-99 identity-cards.jsonl and adjudication-ledger.jsonl provide the current twelve-class one-record-per-discovery disposition layer; unresolved-quarantine.jsonl is an explicit bounded outcome, not validation. census.jsonl automatic labels remain discovery candidates only. docs/foundation/claim-governance-and-function-identity.md defines the identities, independent M/E axes and ten audit gates.
 data/foundation/project-state.json and migration-summary.json are the reproducible count authority.
 统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as current count authority.
@@ -72,6 +73,7 @@ Red lines for agents:
 - Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.
 - Do not call Get 笔记 to perform mathematical reasoning, logical adjudication or architecture decisions.
 - Do not claim content-proof completion from architecture migration completion.
+- Do not infer universal impossibility from one model failure, call analogy an isomorphism without the required mapping proof, or revive a withdrawn conclusion through structural/meta renaming.
 - 121Q12 effectual action and mechanism adjudication are operation overlays, not new truth layers.
 - Effectual action proposes bounded next actions under affordable loss; it does not prove claims.
 - Mechanism adjudication constrains explanation and claim ceiling; it does not identify causality by itself.

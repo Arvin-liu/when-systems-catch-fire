@@ -66,6 +66,15 @@ TASK99_FOUNDATION_PUBLISH = [
     ("data/foundation/function-assets/closure-summary.json", "site/data/foundation/function-assets/closure-summary.json"),
 ]
 
+TASK100_FOUNDATION_PUBLISH = [
+    ("docs/foundation/nonfunction-claim-adjudication-index.md", "site/docs/foundation/nonfunction-claim-adjudication-index.md"),
+    ("docs/foundation/future-claim-admission-protocol.md", "site/docs/foundation/future-claim-admission-protocol.md"),
+    ("reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md", "site/reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md"),
+    ("data/foundation/nonfunction-claims/closure-summary.json", "site/data/foundation/nonfunction-claims/closure-summary.json"),
+    ("data/foundation/nonfunction-claims/discovery-coverage.json", "site/data/foundation/nonfunction-claims/discovery-coverage.json"),
+    ("data/foundation/nonfunction-claims/admission-protocol.json", "site/data/foundation/nonfunction-claims/admission-protocol.json"),
+]
+
 
 # --- F5-B2 Batch 1 publish assertions (IGNITION-PAGES-PUBLIC-DOCUMENT-LINK-F5-B2-BATCH1-FIX-R1-20260728) ---
 # Exact, deduplicated target set = the 7 recommended root-level entry docs from
@@ -967,16 +976,17 @@ class PagesF5B2Batch5PublishTests(unittest.TestCase):
         mkdir; after F5-B3 (5 cp / 3 mkdir) the totals became 74 cp / 27 mkdir;
         task 94 then adds its exact audited public-surface closure of 23 cp / 11
         mkdir, task 98 adds 7 governed Foundation publications / 1 mkdir, and
-        task 99 adds 4 registry-closure publications / 0 mkdir, so the totals
-        MUST be 108 cp / 39 mkdir."""
+        task 99 adds 4 registry-closure publications / 0 mkdir, and task 100
+        adds 6 claim-lineage publications / 2 mkdir, so the totals MUST be
+        114 cp / 41 mkdir."""
         all_cp = _extract_cp_lines(TEXT)
         all_mkdir = [m.group(1).strip('"') for m in
                      re.finditer(r"^\s*mkdir\s+-p\s+(\S+)\s*$", TEXT, flags=re.M)]
-        self.assertEqual(len(all_cp), 108,
-                         f"expected 108 total cp lines (74 after F5-B3 + 23 task 94 + 7 task 98 + 4 task 99), "
+        self.assertEqual(len(all_cp), 114,
+                         f"expected 114 total cp lines (74 after F5-B3 + 23 task 94 + 7 task 98 + 4 task 99 + 6 task 100), "
                          f"found {len(all_cp)}")
-        self.assertEqual(len(all_mkdir), 39,
-                         f"expected 39 total mkdir -p lines (27 after F5-B3 + 11 task 94 + 1 task 98), "
+        self.assertEqual(len(all_mkdir), 41,
+                         f"expected 41 total mkdir -p lines (27 after F5-B3 + 11 task 94 + 1 task 98 + 2 task 100), "
                          f"found {len(all_mkdir)}")
 
     def test_f5b2_batch5_candidate_artifact_contains_targets(self):
@@ -1274,6 +1284,33 @@ class PagesTask99FoundationPublishTests(unittest.TestCase):
         for src, _ in TASK99_FOUNDATION_PUBLISH:
             with self.subTest(src):
                 self.assertIn(f"- {src}", push_block, f"task 99 Pages trigger missing: {src}")
+
+
+class PagesTask100FoundationPublishTests(unittest.TestCase):
+    def setUp(self):
+        self.cp_pairs = _extract_cp_lines(TEXT)
+
+    def test_task100_sources_exist_and_are_nonempty(self):
+        for src, _ in TASK100_FOUNDATION_PUBLISH:
+            with self.subTest(src):
+                self.assertTrue((ROOT / src).is_file(), f"missing task 100 Pages source: {src}")
+                self.assertGreater((ROOT / src).stat().st_size, 0, f"empty task 100 Pages source: {src}")
+
+    def test_task100_exact_public_allowlist_is_copied(self):
+        self.assertEqual(len(TASK100_FOUNDATION_PUBLISH), 6)
+        for pair in TASK100_FOUNDATION_PUBLISH:
+            with self.subTest(pair[0]):
+                self.assertIn(pair, self.cp_pairs, f"task 100 Pages cp line missing: {pair}")
+
+    def test_task100_paths_trigger_a_production_rebuild(self):
+        push_block = TEXT.split("workflow_dispatch:", 1)[0]
+        for src, _ in TASK100_FOUNDATION_PUBLISH:
+            with self.subTest(src):
+                self.assertIn(f"- {src}", push_block, f"task 100 Pages trigger missing: {src}")
+
+    def test_task100_directories_are_prepared(self):
+        self.assertRegex(TEXT, r"(?m)^\s*mkdir -p site/data/foundation/nonfunction-claims\s*$")
+        self.assertRegex(TEXT, r"(?m)^\s*mkdir -p site/reports/foundation-architecture\s*$")
 
 
 if __name__ == "__main__":

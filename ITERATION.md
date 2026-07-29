@@ -88,6 +88,8 @@ For any function, model, theorem, formula, law, decision rule or cross-domain cl
 
 The task-99 function-asset registry is closed only when every discovery has one canonical identity card and a final disposition. `UNRESOLVED_IDENTITY` plus `QUARANTINE_UNTIL_DEFINED` is an explicit bounded outcome, not a validator pass. Removing quarantine requires evidence that discharges the recorded proof or empirical obligation and a dependency/public-claim propagation review.
 
+Task 100 applies the same boundary to all non-function assertions. A new theorem, law, mechanism, causal judgment, impossibility result, cross-domain correspondence, prediction, empirical assertion, ontology claim or framework conclusion must enter through `docs/foundation/future-claim-admission-protocol.md`; it must receive a canonical ID, thirteen gates, evidence lineage, dependencies, independent M/E status, one disposition and one public ceiling before current publication. A single-model failure never supports universal impossibility, and a renamed structural or meta label cannot restore a withdrawn conclusion.
+
 ## 5. Impact And Synchronization Matrix
 
 For each iteration, decide whether these surfaces change:

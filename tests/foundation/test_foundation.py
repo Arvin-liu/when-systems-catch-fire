@@ -32,9 +32,11 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(state["migration_coverage"],"complete")
         self.assertEqual(
             state["semantic_adjudication"],
-            "registry_closed_by_identity_or_explicit_quarantine; content proofs and empirical obligations remain independently open",
+            "function_identity_and_nonfunction_claim_registries_closed_by_disposition_or_explicit_quarantine; proofs, external evidence, novelty and replication obligations remain independently open",
         )
         self.assertTrue(state["counts"]["function_asset_deep_adjudication"]["registry_closed"])
+        self.assertTrue(state["counts"]["nonfunction_claim_evidence_lineage"]["registry_closed"])
+        self.assertEqual(state["counts"]["nonfunction_claim_evidence_lineage"]["public_surface_violations"], 0)
 
     def test_migration_does_not_override_adjudication(self):
         objects={row["id"]:row for row in map(json.loads,(ROOT/"data/foundation/formal-objects/objects.jsonl").read_text().splitlines())}

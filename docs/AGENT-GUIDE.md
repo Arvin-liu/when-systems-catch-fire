@@ -17,7 +17,7 @@
 
 ## 2. 区分权威、兼容源与候选
 
-- 状态权威：data/foundation/ 下的 formal-objects、claims、arguments、sources、evidence、mappings、proofs、validations、migrations。
+- 状态权威：data/foundation/ 下的 formal-objects、claims、arguments、sources、evidence、mappings、proofs、validations、migrations，以及 task-100 `nonfunction-claims/` 中的十三门、证据谱系、依赖、处置与公开上限。
 - 函数类资产还必须读取 `data/foundation/function-assets/identity-cards.jsonl`、义务、依赖和 quarantine；自动 census 只负责发现，registry closure 不代表数学或外部真实性完成。
 - Legacy source / compatibility view：统一函数总表、统一案例总表和 views。保留旧 ID 与正文，不可删除、重编号、不可逆覆盖或独立生长。
 - 候选：book collisions、candidate_only、pending 和未完成形式化的材料。候选不得冒充权威、证明或正式案例。

@@ -16,6 +16,12 @@ on:
       - docs/foundation/function-asset-registry-migration-r2.md
       - data/foundation/function-assets/census-summary.json
       - data/foundation/function-assets/closure-summary.json
+      - docs/foundation/nonfunction-claim-adjudication-index.md
+      - docs/foundation/future-claim-admission-protocol.md
+      - reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md
+      - data/foundation/nonfunction-claims/closure-summary.json
+      - data/foundation/nonfunction-claims/discovery-coverage.json
+      - data/foundation/nonfunction-claims/admission-protocol.json
       - data/operations/stage-snapshots.json
       - data/operations/responsibility-actors.json
       - schemas/operations/responsibility-actor-registry.schema.json
@@ -24,6 +30,8 @@ on:
       - tools/operations/stage_snapshot_contract.py
       - tools/operations/generate_stage_snapshot_actor_contract.py
       - docs/ai-assistant-usage-reference.md
+      - docs/USAGE.md
+      - docs/AGENT-GUIDE.md
       - data/architecture/interactive-system-map.json
       - data/architecture/interactive-system-map-layout.json
       - data/operations/project-components.json
@@ -146,6 +154,14 @@ jobs:
           mkdir -p site/data/foundation/function-assets
           cp data/foundation/function-assets/census-summary.json site/data/foundation/function-assets/census-summary.json
           cp data/foundation/function-assets/closure-summary.json site/data/foundation/function-assets/closure-summary.json
+          cp docs/foundation/nonfunction-claim-adjudication-index.md site/docs/foundation/nonfunction-claim-adjudication-index.md
+          cp docs/foundation/future-claim-admission-protocol.md site/docs/foundation/future-claim-admission-protocol.md
+          mkdir -p site/reports/foundation-architecture
+          cp reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md site/reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md
+          mkdir -p site/data/foundation/nonfunction-claims
+          cp data/foundation/nonfunction-claims/closure-summary.json site/data/foundation/nonfunction-claims/closure-summary.json
+          cp data/foundation/nonfunction-claims/discovery-coverage.json site/data/foundation/nonfunction-claims/discovery-coverage.json
+          cp data/foundation/nonfunction-claims/admission-protocol.json site/data/foundation/nonfunction-claims/admission-protocol.json
           mkdir -p site/function-os-candidate/v0.2
           cp function-os-candidate/v0.2/README.md site/function-os-candidate/v0.2/README.md
           cp docs/participate.md site/docs/participate.md

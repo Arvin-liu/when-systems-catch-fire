@@ -61,6 +61,8 @@
 
 候选首先分成对象、命题、论证、来源与证据。book candidate 保留 BC 临时 ID，不分配 C ID。pending claim 保留 PEND ID；多种文件表示按同一 ID 合并，不重复计数。
 
+非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验与本体断言必须先按[未来断言准入协议](./foundation/future-claim-admission-protocol.md)进入 task-100 registry，提交原子命题、来源、十三门、证据谱系、依赖、M/E、复现状态、处置与公共上限。自动发现、登记闭合或 quarantine 均不表示内容已证明或已获得外部验证。
+
 ## 8. 理解状态与旧断言等级
 
 workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 九轴独立，任何一轴不推出另一轴。
