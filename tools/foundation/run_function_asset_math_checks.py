@@ -6,7 +6,6 @@ import argparse
 import json
 import math
 import random
-import sys
 from pathlib import Path
 
 import sympy as sp
@@ -46,7 +45,7 @@ def build() -> dict:
     ]
     return {
         "tool": "SymPy and Python standard library",
-        "python": sys.version.split()[0],
+        "python_requirement": ">=3.12",
         "sympy": sp.__version__,
         "random_seed": SEED,
         "scope": "Scoped mathematical properties and counterexamples only; no external physics claim is tested.",

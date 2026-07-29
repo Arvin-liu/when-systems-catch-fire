@@ -39,7 +39,7 @@
   ],
   "checks_passed": 7,
   "checks_total": 7,
-  "python": "3.14.6",
+  "python_requirement": ">=3.12",
   "random_seed": 990729,
   "scope": "Scoped mathematical properties and counterexamples only; no external physics claim is tested.",
   "status": "PASS",

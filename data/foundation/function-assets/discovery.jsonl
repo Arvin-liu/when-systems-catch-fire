@@ -4422,7 +4422,7 @@
 {"first_line":9,"last_line":12,"mention_count":2,"path":"reports/foundation-architecture/098-dependency-impact.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":71,"last_line":71,"mention_count":1,"path":"reports/math-foundation/full-object-inventory-20260712.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":224,"last_line":224,"mention_count":1,"path":"tools/foundation/adjudicate_function_assets.py","role":"REFERENCE","stable_id":"D182"}
-{"first_line":39,"last_line":41,"mention_count":3,"path":"tools/foundation/run_function_asset_math_checks.py","role":"REFERENCE","stable_id":"D182"}
+{"first_line":38,"last_line":40,"mention_count":3,"path":"tools/foundation/run_function_asset_math_checks.py","role":"REFERENCE","stable_id":"D182"}
 {"first_line":140,"last_line":140,"mention_count":1,"path":"tools/foundation/validate_claim_governance.py","role":"REFERENCE","stable_id":"D182"}
 {"first_line":244,"last_line":244,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D182"}
 {"first_line":4,"last_line":61,"mention_count":18,"path":"统一函数总表/0218-D182-经典确定性函数.md","role":"DEFINITION","stable_id":"D182"}
@@ -4467,7 +4467,7 @@
 {"first_line":72,"last_line":72,"mention_count":1,"path":"reports/math-foundation/full-object-inventory-20260712.md","role":"REFERENCE","stable_id":"D183"}
 {"first_line":11,"last_line":11,"mention_count":1,"path":"tests/foundation/fixtures/claim_governance_gate_cases.jsonl","role":"REFERENCE","stable_id":"D183"}
 {"first_line":225,"last_line":225,"mention_count":1,"path":"tools/foundation/adjudicate_function_assets.py","role":"REFERENCE","stable_id":"D183"}
-{"first_line":42,"last_line":42,"mention_count":1,"path":"tools/foundation/run_function_asset_math_checks.py","role":"REFERENCE","stable_id":"D183"}
+{"first_line":41,"last_line":41,"mention_count":1,"path":"tools/foundation/run_function_asset_math_checks.py","role":"REFERENCE","stable_id":"D183"}
 {"first_line":141,"last_line":141,"mention_count":1,"path":"tools/foundation/validate_claim_governance.py","role":"REFERENCE","stable_id":"D183"}
 {"first_line":245,"last_line":245,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D183"}
 {"first_line":57,"last_line":57,"mention_count":1,"path":"统一函数总表/0036-T26-物理大统一本质函数.md","role":"REFERENCE","stable_id":"D183"}
@@ -7578,7 +7578,7 @@
 {"first_line":18,"last_line":18,"mention_count":1,"path":"reports/foundation-architecture/098-dependency-impact.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":11,"last_line":11,"mention_count":1,"path":"reports/foundation-architecture/098-remote-truth-and-gap.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":233,"last_line":233,"mention_count":1,"path":"tools/foundation/adjudicate_function_assets.py","role":"REFERENCE","stable_id":"D260"}
-{"first_line":43,"last_line":44,"mention_count":2,"path":"tools/foundation/run_function_asset_math_checks.py","role":"REFERENCE","stable_id":"D260"}
+{"first_line":42,"last_line":43,"mention_count":2,"path":"tools/foundation/run_function_asset_math_checks.py","role":"REFERENCE","stable_id":"D260"}
 {"first_line":15,"last_line":144,"mention_count":3,"path":"tools/foundation/validate_claim_governance.py","role":"REFERENCE","stable_id":"D260"}
 {"first_line":17,"last_line":17,"mention_count":1,"path":"tools/foundation/validate_function_asset_closure.py","role":"REFERENCE","stable_id":"D260"}
 {"first_line":322,"last_line":322,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D260"}
@@ -22397,7 +22397,7 @@
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0599-D589-跨学科同构投影函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-6125AB0C69AABA91","text":"title: \"跨学科同构投影函数\""}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0358-D322-周期扰动阶段响应函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-614859887B540BF1","text":"title: \"周期扰动阶段响应函数\""}
 {"first_line":106,"last_line":106,"line":106,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121q2/family-synthesis/F10.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-61517E1AEFB05F7B","text":"\"title\": \"Neural Functional Transformers\","}
-{"first_line":19,"last_line":19,"line":19,"mention_count":1,"path":"tools/foundation/run_function_asset_math_checks.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-6157418F6BE443E5","text":"def build() -> dict:"}
+{"first_line":18,"last_line":18,"line":18,"mention_count":1,"path":"tools/foundation/run_function_asset_math_checks.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-6157418F6BE443E5","text":"def build() -> dict:"}
 {"first_line":322,"last_line":322,"line":322,"mention_count":1,"path":"tools/operations/validate_incremental_execution.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-615BB631C44E6734","text":"failed_indexes = [i for i, x in enumerate(records) if isinstance(x, dict) and x.get(\"end_status\") == \"failed\"]"}
 {"first_line":748,"last_line":748,"line":748,"mention_count":1,"path":"docs/phi_meta_law.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-61688DC46EDB42B3","text":"abstraction_validity := ∏_{x∈L_n} ∃y∈L_{n+1}, φ(x) = y（抽象有效性）"}
 {"first_line":90,"last_line":90,"line":90,"mention_count":1,"path":"outputs/audit/two-tables-entry-format-audit-20260709.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-6169393ECEAA3942","text":"## 关联函数族"}
@@ -22517,7 +22517,7 @@
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0438-C-439-饱和区偏离 — f1=σ(5(ε1-0.3)),ε1=0.8,η1=5×0.04=0.2,W1=1.25。δ1=0.2×0.8.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-674B00A969A91F80","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0439})=1]."}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"统一案例总表/0463-C-464-偏离度=对称性破缺度量 — 对称系统δ=0,1维门槛偏移0.3后δ1=-0.56,δ2=+0.31,∑δ=0(守恒).md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-6751BE3BD460E460","text":"### [#464｜偏离度=对称性破缺度量 — 对称系统δ=0，1维门槛偏移0.3后δ₁=-0.56,δ₂=+0.31，∑δ=0（守恒） / 偏离度=对称性破缺度量 - 对称系统δ=0, 1维门槛偏移0.3后δ₁=-0.56,δ₂=+0.31, ∑δ=0(守恒)](docs/zh/cases/items/C-0464.md)"}
 {"first_line":900,"last_line":900,"line":900,"mention_count":1,"path":"docs/phi_meta_law.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-6768A17E7FDFDFD0","text":"perception := P(state) = {perceived information}（感知函数）"}
-{"first_line":60,"last_line":60,"line":60,"mention_count":1,"path":"tools/foundation/run_function_asset_math_checks.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-677BE32369386CF3","text":"def main() -> int:"}
+{"first_line":59,"last_line":59,"line":59,"mention_count":1,"path":"tools/foundation/run_function_asset_math_checks.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-677BE32369386CF3","text":"def main() -> int:"}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0309-D273-耦合强度-分布形态函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-679BE77756B442C9","text":"title: \"耦合强度-分布形态函数\""}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0387-D351-缓冲关联结构函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-679C92156B721BBB","text":"title: \"缓冲关联结构函数\""}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0217-C-217-变量闭包锁死发现上界.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-67B7A14352717038","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0217})=1]."}
@@ -27034,7 +27034,7 @@
 {"first_line":222,"last_line":589,"mention_count":2,"path":"tools/foundation/adjudicate_function_assets.py","role":"REFERENCE","stable_id":"T2"}
 {"first_line":1021,"last_line":1021,"mention_count":1,"path":"tools/foundation/build_080_queue.py","role":"REFERENCE","stable_id":"T2"}
 {"first_line":253,"last_line":253,"mention_count":1,"path":"tools/foundation/migrate_legacy.py","role":"REFERENCE","stable_id":"T2"}
-{"first_line":45,"last_line":45,"mention_count":1,"path":"tools/foundation/run_function_asset_math_checks.py","role":"REFERENCE","stable_id":"T2"}
+{"first_line":44,"last_line":44,"mention_count":1,"path":"tools/foundation/run_function_asset_math_checks.py","role":"REFERENCE","stable_id":"T2"}
 {"first_line":15,"last_line":139,"mention_count":3,"path":"tools/foundation/validate_claim_governance.py","role":"REFERENCE","stable_id":"T2"}
 {"first_line":92,"last_line":92,"mention_count":1,"path":"tools/foundation/validate_foundation.py","role":"REFERENCE","stable_id":"T2"}
 {"first_line":17,"last_line":99,"mention_count":2,"path":"tools/foundation/validate_function_asset_closure.py","role":"REFERENCE","stable_id":"T2"}
