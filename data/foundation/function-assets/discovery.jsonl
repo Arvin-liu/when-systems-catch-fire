@@ -4417,7 +4417,6 @@
 {"first_line":24,"last_line":24,"mention_count":1,"path":"docs/foundation/physics-asset-correction-20260729.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":21,"last_line":21,"mention_count":1,"path":"docs/project-current-state.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":25,"last_line":26,"mention_count":2,"path":"formal/sage/function_asset_task99_checks.sage","role":"REFERENCE","stable_id":"D182"}
-{"first_line":31,"last_line":32,"mention_count":2,"path":"formal/sage/function_asset_task99_checks.sage.py","role":"REFERENCE","stable_id":"D182"}
 {"first_line":37,"last_line":37,"mention_count":1,"path":"llms.txt","role":"REFERENCE","stable_id":"D182"}
 {"first_line":19,"last_line":19,"mention_count":1,"path":"reports/foundation-architecture/098-claim-governance-implementation.md","role":"REFERENCE","stable_id":"D182"}
 {"first_line":9,"last_line":12,"mention_count":2,"path":"reports/foundation-architecture/098-dependency-impact.md","role":"REFERENCE","stable_id":"D182"}
@@ -4464,7 +4463,6 @@
 {"first_line":13,"last_line":13,"mention_count":1,"path":"docs/foundation/historical-function-deep-adjudication-20260729.md","role":"REFERENCE","stable_id":"D183"}
 {"first_line":25,"last_line":25,"mention_count":1,"path":"docs/foundation/physics-asset-correction-20260729.md","role":"REFERENCE","stable_id":"D183"}
 {"first_line":27,"last_line":27,"mention_count":1,"path":"formal/sage/function_asset_task99_checks.sage","role":"REFERENCE","stable_id":"D183"}
-{"first_line":33,"last_line":33,"mention_count":1,"path":"formal/sage/function_asset_task99_checks.sage.py","role":"REFERENCE","stable_id":"D183"}
 {"first_line":10,"last_line":10,"mention_count":1,"path":"reports/foundation-architecture/098-dependency-impact.md","role":"REFERENCE","stable_id":"D183"}
 {"first_line":72,"last_line":72,"mention_count":1,"path":"reports/math-foundation/full-object-inventory-20260712.md","role":"REFERENCE","stable_id":"D183"}
 {"first_line":11,"last_line":11,"mention_count":1,"path":"tests/foundation/fixtures/claim_governance_gate_cases.jsonl","role":"REFERENCE","stable_id":"D183"}
@@ -7575,7 +7573,6 @@
 {"first_line":16,"last_line":33,"mention_count":2,"path":"docs/foundation/physics-asset-correction-20260729.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":21,"last_line":21,"mention_count":1,"path":"docs/project-current-state.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":28,"last_line":28,"mention_count":1,"path":"formal/sage/function_asset_task99_checks.sage","role":"REFERENCE","stable_id":"D260"}
-{"first_line":34,"last_line":34,"mention_count":1,"path":"formal/sage/function_asset_task99_checks.sage.py","role":"REFERENCE","stable_id":"D260"}
 {"first_line":37,"last_line":37,"mention_count":1,"path":"llms.txt","role":"REFERENCE","stable_id":"D260"}
 {"first_line":19,"last_line":19,"mention_count":1,"path":"reports/foundation-architecture/098-claim-governance-implementation.md","role":"REFERENCE","stable_id":"D260"}
 {"first_line":18,"last_line":18,"mention_count":1,"path":"reports/foundation-architecture/098-dependency-impact.md","role":"REFERENCE","stable_id":"D260"}
@@ -22794,7 +22791,7 @@
 {"first_line":73,"last_line":73,"line":73,"mention_count":1,"path":"function-os-candidate/v0.2/function_os/n5_interpreter.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-76182107084DD9B2","text":"def _check_preconditions(self, payload: dict, inputs: dict) -> dict:"}
 {"first_line":29,"last_line":29,"line":29,"mention_count":1,"path":"统一案例总表/0687-C-0692-梅纳德快速缩小间隔.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-763C43DAFFF93B51","text":"## 纯数学函数与推导 / Pure Mathematical Function and Derivation"}
 {"first_line":62,"last_line":62,"line":62,"mention_count":1,"path":"function-os-candidate/v0.2/function_os/n6_execution_trace.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7640FADDB5ECF2A2","text":"def _extract_intermediate_states(self, result: dict) -> list:"}
-{"first_line":708,"last_line":708,"line":708,"mention_count":1,"path":"tools/foundation/adjudicate_function_assets.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7653D3737954EEF0","text":"def main() -> int:"}
+{"first_line":712,"last_line":712,"line":712,"mention_count":1,"path":"tools/foundation/adjudicate_function_assets.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7653D3737954EEF0","text":"def main() -> int:"}
 {"first_line":333,"last_line":333,"line":333,"mention_count":1,"path":"tools/validate_data.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-766ECA625ADB80D4","text":"def main() -> int:"}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"tools/foundation/run_benchmarks.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7686507A1063B2FA","text":"def poly_add(a,b):"}
 {"first_line":163,"last_line":163,"line":163,"mention_count":1,"path":"tools/foundation/migrate_legacy.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-7696BCAF52273EBD","text":"def schemas():"}
@@ -23105,7 +23102,6 @@
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0272-D236-门控组合-中心极限定理.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8790C4B8316F1E0C","text":"title: \"门控组合-中心极限定理\""}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0532-D535-死亡三重定义函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8794F91F4C3EA2B7","text":"title: \"三重死亡与执念逃避函数族\""}
 {"first_line":469,"last_line":469,"line":469,"mention_count":1,"path":"tools/validate_iteration_sync.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-8795F1395DD75A1E","text":"require(lifecycle.get(key) == manifest[\"status\"][key], f\"{source}: seal lifecycle mismatch for {key}\")"}
-{"first_line":18,"last_line":18,"line":18,"mention_count":1,"path":"formal/sage/function_asset_task99_checks.sage.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-87A9ED0228AD5B4E","text":"def build():"}
 {"first_line":82,"last_line":82,"line":82,"mention_count":1,"path":"docs/governance/life-community-value-charter.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-87AC2BDB11797828","text":"## Charter Gate / 价值宪章门"}
 {"first_line":135,"last_line":135,"line":135,"mention_count":1,"path":".github/workflows/foundation-validation.yml","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-87B6BF243078207D","text":"- name: Validate synchronization registry and iteration closures"}
 {"first_line":43,"last_line":43,"line":43,"mention_count":1,"path":"统一函数总表/0001-Ψ₀元函数完整数学定义.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-87D06B93E89C5189","text":"C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology"}
@@ -24847,7 +24843,7 @@
 {"first_line":29,"last_line":29,"line":29,"mention_count":1,"path":"function-os-candidate/v0.1/function_os/n3_expression_interpreter.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-E1D67FB9648CE248","text":"def to_dict(self) -> dict:"}
 {"first_line":362,"last_line":362,"line":362,"mention_count":1,"path":"scripts/external-research/openalex_client.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-E1E109777BC7E0A5","text":"results = search(q, lim, mailto)"}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"function-os-candidate/v0.2/function_os/n7_validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-E1E417622751A4BC","text":"def validate(self, spec: dict, representation: dict, artifact: dict,"}
-{"first_line":698,"last_line":698,"line":698,"mention_count":1,"path":"tools/foundation/adjudicate_function_assets.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-E1EF7B7D4DA7749B","text":"def compare(left: Path, right: Path) -> list[str]:"}
+{"first_line":702,"last_line":702,"line":702,"mention_count":1,"path":"tools/foundation/adjudicate_function_assets.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-E1EF7B7D4DA7749B","text":"def compare(left: Path, right: Path) -> list[str]:"}
 {"first_line":73,"last_line":73,"line":73,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121q2/family-synthesis/F1.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-E1F15011A468E11F","text":"\"title\": \"Neural Functional Transformers\","}
 {"first_line":14,"last_line":14,"line":14,"mention_count":1,"path":"tools/validate_ignition_atlas.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-E1FC73D9BBB860E8","text":"def load_json(path: str) -> object:"}
 {"first_line":91,"last_line":91,"line":91,"mention_count":1,"path":"function-os-candidate/v0.2/tests/test_n9_robust.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-E23D6D8F48F911DB","text":"def test_validate_missing_required_field(self):"}
@@ -27022,7 +27018,6 @@
 {"first_line":5,"last_line":5,"mention_count":1,"path":"docs/foundation/strong-claim-gates.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":21,"last_line":21,"mention_count":1,"path":"docs/project-current-state.md","role":"REFERENCE","stable_id":"T2"}
 {"first_line":29,"last_line":29,"mention_count":1,"path":"formal/sage/function_asset_task99_checks.sage","role":"REFERENCE","stable_id":"T2"}
-{"first_line":35,"last_line":35,"mention_count":1,"path":"formal/sage/function_asset_task99_checks.sage.py","role":"REFERENCE","stable_id":"T2"}
 {"first_line":26,"last_line":41,"mention_count":2,"path":"function-os-candidate/v0.2/tests/test_n8_robust.py","role":"REFERENCE","stable_id":"T2"}
 {"first_line":37,"last_line":37,"mention_count":1,"path":"llms.txt","role":"REFERENCE","stable_id":"T2"}
 {"first_line":19,"last_line":19,"mention_count":1,"path":"reports/foundation-architecture/098-claim-governance-implementation.md","role":"REFERENCE","stable_id":"T2"}

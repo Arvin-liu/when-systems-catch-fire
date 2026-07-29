@@ -687,7 +687,11 @@ def build(destination: Path) -> dict:
     (destination / "closure-summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     (destination / "discovery-coverage.json").write_text(json.dumps(coverage, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     buffer = io.StringIO()
-    writer = csv.DictWriter(buffer, fieldnames=["canonical_id", "primary_identity", "mathematical_maturity", "external_evidence_maturity", "final_disposition", "reviewer_state", "source_anchor_count", "parent_count", "child_count"])
+    writer = csv.DictWriter(
+        buffer,
+        fieldnames=["canonical_id", "primary_identity", "mathematical_maturity", "external_evidence_maturity", "final_disposition", "reviewer_state", "source_anchor_count", "parent_count", "child_count"],
+        lineterminator="\n",
+    )
     writer.writeheader()
     for row in ledger:
         writer.writerow({key: row[key] for key in writer.fieldnames})

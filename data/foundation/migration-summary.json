@@ -30,22 +30,22 @@
       "PROVISIONAL": 1
     },
     "function_asset_census": {
-      "tracked_text_files_scanned": 2889,
+      "tracked_text_files_scanned": 2888,
       "registered_assets": 622,
       "explicit_undefined_ids": 140,
-      "implicit_named_assets": 4870,
-      "deduplicated_assets": 5632,
-      "source_occurrence_records": 28750,
-      "source_mentions": 62836,
-      "duplicate_mentions": 57204,
+      "implicit_named_assets": 4869,
+      "deduplicated_assets": 5631,
+      "source_occurrence_records": 28745,
+      "source_mentions": 62830,
+      "duplicate_mentions": 57199,
       "dependency_edges": 1923,
       "assets_with_dependencies": 541,
       "human_adjudicated_task98": 12,
-      "queued_for_human_review": 5620
+      "queued_for_human_review": 5619
     },
     "function_asset_deep_adjudication": {
-      "canonical_identity_cards": 5632,
-      "adjudication_ledger_records": 5632,
+      "canonical_identity_cards": 5631,
+      "adjudication_ledger_records": 5631,
       "explicit_quarantine_or_pending": 3872,
       "counterexample_records": 12,
       "dependency_edges": 1923,
