@@ -85,6 +85,10 @@ L6 只能引用 L0-L5，不能反向制造数学真实性、逻辑有效性或�
 - [证明](./data/foundation/proofs/proof-artifacts.jsonl)
 - [验证](./data/foundation/validations/validation-records.jsonl)
 - [迁移](./data/foundation/migrations/legacy-assets.jsonl)
+- [断言治理与函数身份](./docs/foundation/claim-governance-and-function-identity.md)
+- [历史函数资产全量登记](./docs/foundation/historical-function-census.md)
+- [首批物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md)
+- [历史纠偏日志与后续路线](./docs/foundation/historical-correction-log.md) / [深审路线图](./docs/foundation/function-audit-roadmap.md)
 
 ## 旧两张表兼容入口
 

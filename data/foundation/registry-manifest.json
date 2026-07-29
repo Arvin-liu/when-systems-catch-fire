@@ -1,5 +1,5 @@
 {
-  "snapshot_id": "IGNITION-20260709-078",
+  "snapshot_id": "IGNITION-20260729-098",
   "counts": {
     "formal_objects": 622,
     "formal_cases": 806,
@@ -24,6 +24,20 @@
     "classification_status": {
       "ADJUDICATED": 621,
       "PROVISIONAL": 1
+    },
+    "function_asset_census": {
+      "tracked_text_files_scanned": 2875,
+      "registered_assets": 622,
+      "explicit_undefined_ids": 139,
+      "implicit_named_assets": 1272,
+      "deduplicated_assets": 2033,
+      "source_occurrence_records": 25112,
+      "source_mentions": 59191,
+      "duplicate_mentions": 57158,
+      "dependency_edges": 1923,
+      "assets_with_dependencies": 541,
+      "human_adjudicated_task98": 12,
+      "queued_for_human_review": 2021
     }
   },
   "registries": [
@@ -49,6 +63,13 @@
     "data/foundation/work-queues/content-proof-queue.jsonl",
     "data/foundation/proofs/core-artifacts.jsonl",
     "data/foundation/validations/core-counterexamples.jsonl",
-    "data/foundation/validations/core-logic-checks.jsonl"
+    "data/foundation/validations/core-logic-checks.jsonl",
+    "data/foundation/function-assets/discovery.jsonl",
+    "data/foundation/function-assets/census.jsonl",
+    "data/foundation/function-assets/dependencies.jsonl",
+    "data/foundation/function-assets/audit-queue.jsonl",
+    "data/foundation/function-assets/corrections.jsonl",
+    "data/foundation/function-assets/dependency-actions.jsonl",
+    "data/foundation/function-assets/claim-ledger.jsonl"
   ]
 }

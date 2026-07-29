@@ -14,6 +14,10 @@ PR #134 (continuous stage snapshot publication) and PR #135 (responsibility-acto
 
 Current state must be inferred from actual repository artifacts: architecture files, foundation registries, tests, CI, open PRs, validation reports, unresolved queues, licensing state, and known gaps. It must not be backfilled from aspiration or branding.
 
+Claim Governance and Historical Function Census R1 is now part of the Foundation surface. It adds ten function-identity classes, independent M0—M7 mathematical-maturity and E0—E7 external-evidence axes, ten audit gates, a deterministic all-tracked-text census and a resumable review queue. The snapshot registers 2,033 deduplicated candidates (622 existing formal objects, 139 undefined explicit IDs and 1,272 implicit named candidates), but only 12 task-98 records are newly human-adjudicated; 2,021 remain queued. Automatic extraction is never authoritative. The preserved legacy tables remain source evidence rather than current claim authority.
+
+The first correction set covers T2, D127, D182—D190 and D260 plus every direct reverse consumer. It records D127/D260 legacy-note identity conflicts, withdraws the claim that physics grand unification has been proved impossible, rejects any precise gate-derived unification point, and limits the current physics status to: the Ignition multiplicative gate model does not unify the four interactions, while the physical unification problem remains open.
+
 121Q12 adds a current operation overlay for two narrow gaps: choosing a next action when goals are unstable, and constraining interpretation after an action produces results. This is a current capability addition, not a fixed project positioning.
 
 121Q13 adds a stacked current control overlay for attention, distribution, and compression. It records whether repeated loops add information, treats AI/human outputs as conditioned samples rather than answers, separates action collapse from truth collapse, and audits whether new terminology is real compression or only labeling. This remains a current capability addition, not a new theory layer.
@@ -52,6 +56,7 @@ Current organizing surfaces include:
 
 - seven-layer architecture from source/evidence to interpretation/publication;
 - foundation registries for objects, claims, arguments, sources, evidence, mappings, proofs, validations and migrations;
+- function-asset claim governance, a deterministic historical census, independent M/E axes and a dependency-aware review queue;
 - legacy function and case tables preserved as source and compatibility views;
 - Function OS candidate implementation and CI-tested execution capabilities;
 - life-community value charter as the highest normative boundary;
@@ -65,6 +70,7 @@ The project currently can:
 - preserve historical material while separating source, claim, evidence, proof and publication layers;
 - expose gaps, pending claims, weak evidence, missing fields and counterexamples without forcing convergence;
 - run Foundation validation and Function OS CI for the currently implemented surfaces;
+- reproduce the tracked-text function census, validate authoritative corrections and route undecidable audit gates to human review;
 - keep claims downgradeable and evidence-dependent;
 - document external feedback as input to “gap discovery -> structural correction -> re-validation”;
 - distinguish normative boundaries from factual proof and implementation capability;
@@ -93,6 +99,8 @@ The project currently must not claim:
 - to have completed all content proofs merely because architecture migration or CI passes;
 - to have resolved every pending claim, source gap, third-party rights issue or governance question;
 - to have a fixed final identity that later evidence cannot change.
+- that a numbered formula, an automatic identity label or an internal passing test establishes external truth;
+- that the current gate model has unified the four interactions or proved grand unification universally impossible;
 - that effectual action or mechanism adjudication is a universal method, a new truth layer, or proof of causality.
 - that repeated AI samples are independent fact evidence;
 - that choosing an action proves a mechanism true;

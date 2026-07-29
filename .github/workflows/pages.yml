@@ -5,6 +5,13 @@ on:
     branches: [main]
     paths:
       - README.md
+      - docs/foundation/claim-governance-and-function-identity.md
+      - docs/foundation/historical-function-census.md
+      - docs/foundation/function-asset-authoring-guide.md
+      - docs/foundation/physics-asset-correction-20260729.md
+      - docs/foundation/historical-correction-log.md
+      - docs/foundation/function-audit-roadmap.md
+      - data/foundation/function-assets/census-summary.json
       - data/operations/stage-snapshots.json
       - data/operations/responsibility-actors.json
       - schemas/operations/responsibility-actor-registry.schema.json
@@ -119,10 +126,18 @@ jobs:
           cp ARCHITECTURE.md site/ARCHITECTURE.md
           cp FOUNDATION.md site/FOUNDATION.md
           cp docs/foundation/README.md site/docs/foundation/README.md
+          cp docs/foundation/claim-governance-and-function-identity.md site/docs/foundation/claim-governance-and-function-identity.md
+          cp docs/foundation/historical-function-census.md site/docs/foundation/historical-function-census.md
+          cp docs/foundation/function-asset-authoring-guide.md site/docs/foundation/function-asset-authoring-guide.md
+          cp docs/foundation/physics-asset-correction-20260729.md site/docs/foundation/physics-asset-correction-20260729.md
+          cp docs/foundation/historical-correction-log.md site/docs/foundation/historical-correction-log.md
+          cp docs/foundation/function-audit-roadmap.md site/docs/foundation/function-audit-roadmap.md
           mkdir -p site/data/foundation
           cp data/foundation/project-state.json site/data/foundation/project-state.json
           cp data/foundation/registry-manifest.json site/data/foundation/registry-manifest.json
           cp data/foundation/migration-summary.json site/data/foundation/migration-summary.json
+          mkdir -p site/data/foundation/function-assets
+          cp data/foundation/function-assets/census-summary.json site/data/foundation/function-assets/census-summary.json
           mkdir -p site/function-os-candidate/v0.2
           cp function-os-candidate/v0.2/README.md site/function-os-candidate/v0.2/README.md
           cp docs/participate.md site/docs/participate.md

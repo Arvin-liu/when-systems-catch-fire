@@ -34,6 +34,7 @@ Authority:
 ARCHITECTURE.md is the architecture authority.
 FOUNDATION.md is the mathematical and logical foundation authority.
 data/foundation/ registries are the authority for object type, claim type, argument, source, evidence, proof, validation, status and migration.
+data/foundation/function-assets/corrections.jsonl is the task-98 authority overlay for T2, D127, D182-D190 and D260; census.jsonl automatic labels are candidates only. docs/foundation/claim-governance-and-function-identity.md defines the ten identities, independent M/E axes and ten audit gates.
 data/foundation/project-state.json and migration-summary.json are the reproducible count authority.
 统一函数总表/ and 统一案例总表/ are immutable legacy sources and compatibility views. Never use their hand-written headers as current count authority.
 
@@ -68,6 +69,7 @@ Red lines for agents:
 - Do not count the 12 meta-protocols as functions or the 64 combinations as proofs.
 - THEOREM, AXIOM, ISOMORPHISM, CAUSAL and PROVED must pass their declared gates.
 - A keyword hit, missing field or missing source is not a counterexample.
+- Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.
 - Do not call Get 笔记 to perform mathematical reasoning, logical adjudication or architecture decisions.
 - Do not claim content-proof completion from architecture migration completion.
 - 121Q12 effectual action and mechanism adjudication are operation overlays, not new truth layers.

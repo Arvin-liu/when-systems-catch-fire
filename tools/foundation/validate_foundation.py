@@ -107,6 +107,8 @@ def main():
     for rel in required: check(f"file:{rel}",(ROOT/rel).is_file())
     check("generator:adjudication-deterministic",subprocess.run([sys.executable,"tools/foundation/adjudicate_core.py","--check"],cwd=ROOT,stdout=subprocess.DEVNULL).returncode==0)
     check("generator:migration-deterministic",subprocess.run([sys.executable,"tools/foundation/migrate_legacy.py","--check"],cwd=ROOT,stdout=subprocess.DEVNULL).returncode==0)
+    claim_governance=subprocess.run([sys.executable,"tools/foundation/validate_claim_governance.py"],cwd=ROOT,text=True,capture_output=True)
+    check("claim-governance:integrated",claim_governance.returncode==0,claim_governance.stdout+claim_governance.stderr if claim_governance.returncode else "")
     for name,ok,detail in checks:
         print(("PASS" if ok else "FAIL")+" "+name+(" "+detail if detail else ""))
     passed=sum(x[1] for x in checks)

@@ -49,6 +49,16 @@ F5_B1_PUBLISH = [
 ]
 F5_B1_SRC_TO_TARGET = dict(F5_B1_PUBLISH)
 
+TASK98_FOUNDATION_PUBLISH = [
+    ("docs/foundation/claim-governance-and-function-identity.md", "site/docs/foundation/claim-governance-and-function-identity.md"),
+    ("docs/foundation/historical-function-census.md", "site/docs/foundation/historical-function-census.md"),
+    ("docs/foundation/function-asset-authoring-guide.md", "site/docs/foundation/function-asset-authoring-guide.md"),
+    ("docs/foundation/physics-asset-correction-20260729.md", "site/docs/foundation/physics-asset-correction-20260729.md"),
+    ("docs/foundation/historical-correction-log.md", "site/docs/foundation/historical-correction-log.md"),
+    ("docs/foundation/function-audit-roadmap.md", "site/docs/foundation/function-audit-roadmap.md"),
+    ("data/foundation/function-assets/census-summary.json", "site/data/foundation/function-assets/census-summary.json"),
+]
+
 
 # --- F5-B2 Batch 1 publish assertions (IGNITION-PAGES-PUBLIC-DOCUMENT-LINK-F5-B2-BATCH1-FIX-R1-20260728) ---
 # Exact, deduplicated target set = the 7 recommended root-level entry docs from
@@ -949,15 +959,16 @@ class PagesF5B2Batch5PublishTests(unittest.TestCase):
         mkdir -p; after Batch 5 (2 cp / 2 mkdir) the totals became 69 cp / 24
         mkdir; after F5-B3 (5 cp / 3 mkdir) the totals became 74 cp / 27 mkdir;
         task 94 then adds its exact audited public-surface closure of 23 cp / 11
-        mkdir, so the totals MUST be 97 cp / 38 mkdir."""
+        mkdir, and task 98 adds 7 governed Foundation publications / 1 mkdir,
+        so the totals MUST be 104 cp / 39 mkdir."""
         all_cp = _extract_cp_lines(TEXT)
         all_mkdir = [m.group(1).strip('"') for m in
                      re.finditer(r"^\s*mkdir\s+-p\s+(\S+)\s*$", TEXT, flags=re.M)]
-        self.assertEqual(len(all_cp), 97,
-                         f"expected 97 total cp lines (74 after F5-B3 + 23 task 94), "
+        self.assertEqual(len(all_cp), 104,
+                         f"expected 104 total cp lines (74 after F5-B3 + 23 task 94 + 7 task 98), "
                          f"found {len(all_cp)}")
-        self.assertEqual(len(all_mkdir), 38,
-                         f"expected 38 total mkdir -p lines (27 after F5-B3 + 11 task 94), "
+        self.assertEqual(len(all_mkdir), 39,
+                         f"expected 39 total mkdir -p lines (27 after F5-B3 + 11 task 94 + 1 task 98), "
                          f"found {len(all_mkdir)}")
 
     def test_f5b2_batch5_candidate_artifact_contains_targets(self):
@@ -1212,6 +1223,26 @@ class PagesF5B3PublishTests(unittest.TestCase):
             with self.subTest(f"batch5:{src}"):
                 self.assertIn((src, target), self.cp_pairs,
                               f"F5-B2 Batch 5 cp line regressed/removed: {src} -> {target}")
+
+
+class PagesTask98FoundationPublishTests(unittest.TestCase):
+    def setUp(self):
+        self.cp_pairs = _extract_cp_lines(TEXT)
+
+    def test_task98_sources_exist_and_are_nonempty(self):
+        for src, _ in TASK98_FOUNDATION_PUBLISH:
+            with self.subTest(src):
+                self.assertTrue((ROOT / src).is_file(), f"missing task 98 Pages source: {src}")
+                self.assertGreater((ROOT / src).stat().st_size, 0, f"empty task 98 Pages source: {src}")
+
+    def test_task98_exact_public_allowlist_is_copied(self):
+        self.assertEqual(len(TASK98_FOUNDATION_PUBLISH), 7)
+        for pair in TASK98_FOUNDATION_PUBLISH:
+            with self.subTest(pair[0]):
+                self.assertIn(pair, self.cp_pairs, f"task 98 Pages cp line missing: {pair}")
+
+    def test_task98_directory_is_prepared(self):
+        self.assertRegex(TEXT, r"(?m)^\s*mkdir -p site/data/foundation/function-assets\s*$")
 
 
 if __name__ == "__main__":

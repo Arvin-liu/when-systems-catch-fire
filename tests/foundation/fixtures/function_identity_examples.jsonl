@@ -1,0 +1,10 @@
+{"identity":"STRICT_MATHEMATICAL_FUNCTION","example":"f: R -> R, f(x)=x^2","why":"A total single-valued map with explicit domain and codomain."}
+{"identity":"PARAMETRIC_MODEL","example":"y(t; a,b)=a exp(-bt)","why":"A family of outputs indexed by declared parameters."}
+{"identity":"SCORE_OR_INDEX","example":"risk(x)=sum_i w_i x_i","why":"A scalar ranking score whose calibration is separate from its computation."}
+{"identity":"GATE_OR_DECISION_RULE","example":"accept(x)=1[x>=tau]","why":"A threshold predicate used to route a decision."}
+{"identity":"ALGORITHM_OR_WORKFLOW","example":"sort-then-deduplicate procedure","why":"An execution process rather than a set-theoretic function claim about reality."}
+{"identity":"RELATION_OR_CONSTRAINT","example":"x+y=1","why":"A constraint that may admit zero, one or many solutions."}
+{"identity":"HEURISTIC","example":"inspect the highest-risk dependency first","why":"A defeasible rule of thumb."}
+{"identity":"STRUCTURAL_METAPHOR","example":"organizational friction behaves like viscosity","why":"A cross-domain analogy without a structure-preserving bijection."}
+{"identity":"CONJECTURE_OR_PENDING_CLAIM","example":"a stated universal proposition with an open proof obligation","why":"Truth has not been established."}
+{"identity":"INVALID_OR_PSEUDO_FUNCTION","example":"F(x)=desired conclusion without a rule for obtaining it","why":"The output is circular or not uniquely defined."}
