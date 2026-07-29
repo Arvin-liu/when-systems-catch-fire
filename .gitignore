@@ -11,6 +11,7 @@ __pycache__/__init__.cpython-311.pyc
 __pycache__/n1_*.cpython-311.pyc
 __pycache__/
 *.py[cod]
+*.sage.py
 .pytest_cache/
 .coverage
 htmlcov/

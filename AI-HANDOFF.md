@@ -11,7 +11,7 @@
 - 架构：ARCHITECTURE.md
 - 双地基：FOUNDATION.md
 - 类型与状态：data/foundation/
-- 函数身份、M/E 双轴、首批纠偏与全量审计队列：data/foundation/function-assets/ 与 docs/foundation/claim-governance-and-function-identity.md
+- 函数身份、M/E 双轴、全量身份卡、义务、quarantine 与公共 claim lineage：data/foundation/function-assets/ 与 docs/foundation/historical-function-deep-adjudication-20260729.md
 - 机器计数：data/foundation/project-state.json 与 migration-summary.json
 - 任务边界：1111 中对应的 IGNITION command、progress 与 result
 - 阶段快照候选权威：data/operations/stage-snapshots.json 与 docs/operations/stage-snapshot-publication.md
@@ -28,7 +28,7 @@
 
 方法 1.4.0 是 Current。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activated，首页可见不等于能力可用。Agent 只能生成 stage snapshot request，不能自行声称已进入 Main。
 
-函数类资产交接必须保留十类身份、M0—M7、E0—E7、十门结果、claim ceiling 和依赖影响。自动 census 不具权威。T2、D127、D182—D190、D260 以 task 98 correction overlay 为准；旧表保留原文。任何“大一统已被证明不可能”或“点火已统一四力”的结论均为撤回/禁止状态。
+函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等于验证。T2、D127、D182—D190、D260 仍以 task 98 correction overlay 为最高专项权威；旧表保留原文。任何“大一统已被证明不可能”或“点火已统一四力”的结论均为撤回/禁止状态。
 
 阶段快照的 `responsible_actor`／`publisher_actor` 只能保存预注册 `actor_ref`，并解析到 `data/operations/responsibility-actors.json` 中 ACTIVE 的具体 `PERSON` 或 `ORGANIZATION`；显示名不能自证身份。Agent、模型、机器人、算法、workflow、CI、脚本、软件、平台与系统只能写入 `execution_agents`／`automation_workflows`，不得充当最终责任主体；责任变更必须新增快照修订和责任记录。
 121Q12 新增的效果推理与机制判断是跨层操作 overlay。它帮助选择下一步行动并限制发布解释，不改变 L0-L6 真值关系，不改写 Ψ0，不把 C(x,y) 升级为已识别因果。

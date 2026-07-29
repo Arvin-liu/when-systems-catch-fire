@@ -1,0 +1,10 @@
+# Function-asset discovery v2 golden sentinels
+
+D9999 is an explicit historical identifier.
+
+# Force equation candidate
+
+def bounded_transform(value: int) -> int:
+    return value
+
+Φ(x) = x / (1 + x)

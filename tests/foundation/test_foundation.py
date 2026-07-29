@@ -30,7 +30,11 @@ class FoundationTests(unittest.TestCase):
         self.assertEqual(state["counts"]["formal_cases"],806)
         self.assertEqual(state["semantic_adjudication_counts"],{"adjudicated":621,"provisional":1,"total":622})
         self.assertEqual(state["migration_coverage"],"complete")
-        self.assertEqual(state["semantic_adjudication"],"incomplete")
+        self.assertEqual(
+            state["semantic_adjudication"],
+            "registry_closed_by_identity_or_explicit_quarantine; content proofs and empirical obligations remain independently open",
+        )
+        self.assertTrue(state["counts"]["function_asset_deep_adjudication"]["registry_closed"])
 
     def test_migration_does_not_override_adjudication(self):
         objects={row["id"]:row for row in map(json.loads,(ROOT/"data/foundation/formal-objects/objects.jsonl").read_text().splitlines())}

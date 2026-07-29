@@ -109,6 +109,8 @@ def main():
     check("generator:migration-deterministic",subprocess.run([sys.executable,"tools/foundation/migrate_legacy.py","--check"],cwd=ROOT,stdout=subprocess.DEVNULL).returncode==0)
     claim_governance=subprocess.run([sys.executable,"tools/foundation/validate_claim_governance.py"],cwd=ROOT,text=True,capture_output=True)
     check("claim-governance:integrated",claim_governance.returncode==0,claim_governance.stdout+claim_governance.stderr if claim_governance.returncode else "")
+    function_asset_closure=subprocess.run([sys.executable,"tools/foundation/validate_function_asset_closure.py"],cwd=ROOT,text=True,capture_output=True)
+    check("function-asset-closure:integrated",function_asset_closure.returncode==0,function_asset_closure.stdout+function_asset_closure.stderr if function_asset_closure.returncode else "")
     for name,ok,detail in checks:
         print(("PASS" if ok else "FAIL")+" "+name+(" "+detail if detail else ""))
     passed=sum(x[1] for x in checks)

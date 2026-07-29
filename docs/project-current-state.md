@@ -16,6 +16,8 @@ Current state must be inferred from actual repository artifacts: architecture fi
 
 Claim Governance and Historical Function Census R1 is now part of the Foundation surface. It adds ten function-identity classes, independent M0—M7 mathematical-maturity and E0—E7 external-evidence axes, ten audit gates, a deterministic all-tracked-text census and a resumable review queue. The snapshot registers 2,033 deduplicated candidates (622 existing formal objects, 139 undefined explicit IDs and 1,272 implicit named candidates), but only 12 task-98 records are newly human-adjudicated; 2,021 remain queued. Automatic extraction is never authoritative. The preserved legacy tables remain source evidence rather than current claim authority.
 
+Historical Function Asset Deep Adjudication and Registry Closure R1 now layers task 99 on that historical task-98 snapshot. Scanner v2 adds executable declarations and searchable formula candidates; every current discovery has one twelve-class primary identity, source anchors, M/E ratings, obligations, dependencies, ten gates and one final disposition. Missing semantics are closed by explicit quarantine rather than an inferred pass. Exact live counts and distributions are generated in `data/foundation/function-assets/closure-summary.json`; registry closure does not mean that open proofs, empirical tests or external reviews are complete.
+
 The first correction set covers T2, D127, D182—D190 and D260 plus every direct reverse consumer. It records D127/D260 legacy-note identity conflicts, withdraws the claim that physics grand unification has been proved impossible, rejects any precise gate-derived unification point, and limits the current physics status to: the Ignition multiplicative gate model does not unify the four interactions, while the physical unification problem remains open.
 
 121Q12 adds a current operation overlay for two narrow gaps: choosing a next action when goals are unstable, and constraining interpretation after an action produces results. This is a current capability addition, not a fixed project positioning.
@@ -56,7 +58,7 @@ Current organizing surfaces include:
 
 - seven-layer architecture from source/evidence to interpretation/publication;
 - foundation registries for objects, claims, arguments, sources, evidence, mappings, proofs, validations and migrations;
-- function-asset claim governance, a deterministic historical census, independent M/E axes and a dependency-aware review queue;
+- function-asset claim governance, deterministic full-repository discovery, twelve-class identity cards, independent M/E axes, obligation/dependency ledgers and explicit quarantine closure;
 - legacy function and case tables preserved as source and compatibility views;
 - Function OS candidate implementation and CI-tested execution capabilities;
 - life-community value charter as the highest normative boundary;
@@ -70,7 +72,7 @@ The project currently can:
 - preserve historical material while separating source, claim, evidence, proof and publication layers;
 - expose gaps, pending claims, weak evidence, missing fields and counterexamples without forcing convergence;
 - run Foundation validation and Function OS CI for the currently implemented surfaces;
-- reproduce the tracked-text function census, validate authoritative corrections and route undecidable audit gates to human review;
+- reproduce the tracked-text/function-declaration census and identity-card registry, validate authoritative corrections, and preserve undecidable proof or empirical work as explicit quarantine;
 - keep claims downgradeable and evidence-dependent;
 - document external feedback as input to “gap discovery -> structural correction -> re-validation”;
 - distinguish normative boundaries from factual proof and implementation capability;

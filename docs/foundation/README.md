@@ -10,5 +10,8 @@
 - [首批物理资产纠偏](./physics-asset-correction-20260729.md)
 - [历史纠偏日志](./historical-correction-log.md)
 - [后续深审路线图](./function-audit-roadmap.md)
+- [历史函数资产深度裁决与注册表闭合](./historical-function-deep-adjudication-20260729.md)
+- [公共断言上限指南](./public-claim-ceiling-guidance.md)
+- [函数资产注册表迁移 R2](./function-asset-registry-migration-r2.md)
 
-旧表是不可变来源；`data/foundation/function-assets/corrections.jsonl` 是 task 98 首批纠偏权威覆盖。自动 census 记录全部是候选，不因扫描、编号或测试而获得真值。
+旧表是不可变来源；`data/foundation/function-assets/corrections.jsonl` 是 task 98 首批纠偏权威覆盖。task 99 的 `identity-cards.jsonl` 为每个发现项提供现行处置；自动 census 仍只是候选，quarantine 也不因登记、编号或测试而获得真值。

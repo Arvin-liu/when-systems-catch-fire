@@ -11,7 +11,11 @@ on:
       - docs/foundation/physics-asset-correction-20260729.md
       - docs/foundation/historical-correction-log.md
       - docs/foundation/function-audit-roadmap.md
+      - docs/foundation/historical-function-deep-adjudication-20260729.md
+      - docs/foundation/public-claim-ceiling-guidance.md
+      - docs/foundation/function-asset-registry-migration-r2.md
       - data/foundation/function-assets/census-summary.json
+      - data/foundation/function-assets/closure-summary.json
       - data/operations/stage-snapshots.json
       - data/operations/responsibility-actors.json
       - schemas/operations/responsibility-actor-registry.schema.json
@@ -132,12 +136,16 @@ jobs:
           cp docs/foundation/physics-asset-correction-20260729.md site/docs/foundation/physics-asset-correction-20260729.md
           cp docs/foundation/historical-correction-log.md site/docs/foundation/historical-correction-log.md
           cp docs/foundation/function-audit-roadmap.md site/docs/foundation/function-audit-roadmap.md
+          cp docs/foundation/historical-function-deep-adjudication-20260729.md site/docs/foundation/historical-function-deep-adjudication-20260729.md
+          cp docs/foundation/public-claim-ceiling-guidance.md site/docs/foundation/public-claim-ceiling-guidance.md
+          cp docs/foundation/function-asset-registry-migration-r2.md site/docs/foundation/function-asset-registry-migration-r2.md
           mkdir -p site/data/foundation
           cp data/foundation/project-state.json site/data/foundation/project-state.json
           cp data/foundation/registry-manifest.json site/data/foundation/registry-manifest.json
           cp data/foundation/migration-summary.json site/data/foundation/migration-summary.json
           mkdir -p site/data/foundation/function-assets
           cp data/foundation/function-assets/census-summary.json site/data/foundation/function-assets/census-summary.json
+          cp data/foundation/function-assets/closure-summary.json site/data/foundation/function-assets/closure-summary.json
           mkdir -p site/function-os-candidate/v0.2
           cp function-os-candidate/v0.2/README.md site/function-os-candidate/v0.2/README.md
           cp docs/participate.md site/docs/participate.md

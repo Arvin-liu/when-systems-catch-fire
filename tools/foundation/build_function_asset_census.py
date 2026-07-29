@@ -18,10 +18,28 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "data/foundation/function-assets"
-TEXT_EXTENSIONS = {".md", ".json", ".jsonl", ".yaml", ".yml", ".csv", ".py", ".lean", ".toml", ".txt"}
+TEXT_EXTENSIONS = {
+    ".md", ".json", ".jsonl", ".yaml", ".yml", ".csv", ".py", ".sage",
+    ".lean", ".js", ".jsx", ".ts", ".tsx", ".toml", ".txt", ".rst",
+}
 EXPLICIT_ID = re.compile(r"(?<![A-Za-z0-9_])(?:MF|D|T|M|Y|A|P)\d+(?![A-Za-z0-9_])")
-NAMED_ASSET = re.compile(r"(函数|定理|公式|律|模型|判定器|function|theorem|formula|law|model|classifier)", re.I)
+NAMED_ASSET = re.compile(
+    r"(函数|方程|定理|公式|定律|算子|门控|门函数|评分|指数|比率|内核|度量|概率|能量|力|模型|判定器|"
+    r"function|equation|theorem|formula|law|operator|gate|score|index|ratio|kernel|metric|probability|energy|force|model|classifier)",
+    re.I,
+)
+CODE_ASSET = re.compile(
+    r"^\s*(?:(?:async\s+)?def\s+[A-Za-z_]\w*\s*\(|theorem\s+[A-Za-z_]\w*|def\s+[A-Za-z_]\w*|"
+    r"function\s+[A-Za-z_$][\w$]*\s*\(|(?:const|let|var)\s+[A-Za-z_$][\w$]*\s*=.*=>)",
+)
+EXPRESSION_ASSET = re.compile(
+    r"(?:[A-Za-zΑ-Ωα-ωΨΦΩΣ][\wΑ-Ωα-ω]*\s*\([^)]{0,120}\)\s*=|[ΨΦΩΣ]\s*=|"
+    r"\\int\b|∫|\b(?:argmax|argmin|lim)\b|d[A-Za-zΑ-Ωα-ω]+/d[A-Za-zΑ-Ωα-ω]+)",
+    re.I,
+)
 GENERATED_PREFIX = "data/foundation/function-assets/"
+SCANNER_VERSION = "2.0.0"
+SNAPSHOT = "function-census-v2-20260729"
 GATES = (
     "definition_gate", "dimension_and_type_gate", "counterexample_gate",
     "circular_reasoning_gate", "claim_layer_gate", "claim_ceiling_gate",
@@ -45,9 +63,15 @@ def tracked_text_files() -> list[str]:
 
 def implicit_candidate(relative: str, line: str) -> bool:
     stripped = line.strip()
-    if not NAMED_ASSET.search(stripped) or EXPLICIT_ID.search(stripped):
+    if not stripped or len(stripped) > 2000 or EXPLICIT_ID.search(stripped):
         return False
-    if relative.endswith(".md") and stripped.startswith("#"):
+    if CODE_ASSET.search(line):
+        return True
+    if EXPRESSION_ASSET.search(stripped) and ("=" in stripped or relative.endswith((".lean", ".sage"))):
+        return True
+    if not NAMED_ASSET.search(stripped):
+        return False
+    if relative.endswith((".md", ".rst")) and stripped.startswith("#"):
         return True
     return bool(re.match(r"^[\-\*]?\s*[\"']?(?:name|title|名称|标题)[\"']?\s*[:：]", stripped, re.I))
 
@@ -262,14 +286,14 @@ def build(destination: Path) -> dict:
         "stable_id": row["stable_id"],
         "risk": "CRITICAL" if row["stable_id"] in corrections else "HIGH" if row["discovery_kind"] != "REGISTERED_ASSET" else "STANDARD",
         "state": "COMPLETED_TASK98" if row["stable_id"] in corrections else "QUEUED",
-        "resume_key": f"function-census-v1:{row['stable_id']}",
+        "resume_key": f"function-census-v2:{row['stable_id']}",
         "required_review": [name for name, value in row["audit_gates"].items() if value == "REQUIRES_HUMAN_REVIEW"],
     } for row in census]
     queue.sort(key=lambda row: ({"CRITICAL": 0, "HIGH": 1, "STANDARD": 2}[row["risk"]], row["stable_id"]))
     reverse = Counter(edge["to"] for edge in dependency_edges)
     summary = {
-        "snapshot": "function-census-v1-20260729",
-        "scanner_version": "1.0.0",
+        "snapshot": SNAPSHOT,
+        "scanner_version": SCANNER_VERSION,
         "tracked_text_files_scanned": len(files),
         "registered_assets": sum(row["discovery_kind"] == "REGISTERED_ASSET" for row in census),
         "explicit_undefined_ids": sum(row["discovery_kind"] == "UNDEFINED_EXPLICIT_ID" for row in census),

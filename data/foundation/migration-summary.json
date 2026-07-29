@@ -1,9 +1,9 @@
 {
   "source_commit": "e55b1d366195fd1cc05babf2010774862157924b",
-  "method": "conservative_non_destructive_migration_projection_with_separate_adjudication_overrides",
+  "method": "conservative_non_destructive_migration_projection_with_separate_adjudication_overrides_and_task99_explicit_quarantine_closure",
   "migration_coverage": "complete",
-  "semantic_adjudication": "incomplete",
-  "classification_basis": "TITLE_HEURISTIC for provisional migration placeholders; SOURCE_TEXT for adjudication overrides",
+  "semantic_adjudication": "registry_closed_by_identity_or_explicit_quarantine; content proofs and empirical obligations remain independently open",
+  "classification_basis": "TITLE_HEURISTIC for provisional migration placeholders; SOURCE_TEXT for adjudication overrides; executable source or explicit quarantine for task 99 closure",
   "counts": {
     "formal_objects": 622,
     "formal_cases": 806,
@@ -30,18 +30,29 @@
       "PROVISIONAL": 1
     },
     "function_asset_census": {
-      "tracked_text_files_scanned": 2875,
+      "tracked_text_files_scanned": 2888,
       "registered_assets": 622,
-      "explicit_undefined_ids": 139,
-      "implicit_named_assets": 1272,
-      "deduplicated_assets": 2033,
-      "source_occurrence_records": 25112,
-      "source_mentions": 59191,
-      "duplicate_mentions": 57158,
+      "explicit_undefined_ids": 140,
+      "implicit_named_assets": 4869,
+      "deduplicated_assets": 5631,
+      "source_occurrence_records": 28745,
+      "source_mentions": 62830,
+      "duplicate_mentions": 57199,
       "dependency_edges": 1923,
       "assets_with_dependencies": 541,
       "human_adjudicated_task98": 12,
-      "queued_for_human_review": 2021
+      "queued_for_human_review": 5619
+    },
+    "function_asset_deep_adjudication": {
+      "canonical_identity_cards": 5631,
+      "adjudication_ledger_records": 5631,
+      "explicit_quarantine_or_pending": 3872,
+      "counterexample_records": 12,
+      "dependency_edges": 1923,
+      "public_strong_claim_candidates": 584,
+      "semantic_rebound_candidates": 10,
+      "blocked_semantic_rebounds": 0,
+      "registry_closed": true
     }
   },
   "dedup_key": [
