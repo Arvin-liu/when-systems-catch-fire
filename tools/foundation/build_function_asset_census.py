@@ -37,7 +37,23 @@ EXPRESSION_ASSET = re.compile(
     r"\\int\b|∫|\b(?:argmax|argmin|lim)\b|d[A-Za-zΑ-Ωα-ω]+/d[A-Za-zΑ-Ωα-ω]+)",
     re.I,
 )
-GENERATED_PREFIX = "data/foundation/function-assets/"
+GENERATED_PREFIXES = (
+    "data/foundation/function-assets/",
+    "data/foundation/nonfunction-claims/",
+    "data/governance/",
+    "KNOWLEDGE/",
+)
+GENERATED_EXACT_PATHS = {
+    "data/foundation/project-state.json",
+    "data/foundation/registry-manifest.json",
+    "data/foundation/migration-summary.json",
+    "docs/foundation/nonfunction-claim-adjudication-index.md",
+    "RESULTS/CHRONOLOGY.md",
+    "RESULTS/CLAIM-DELTA.md",
+    "RESULTS/IMPACT-ANALYSIS.md",
+    "RESULTS/EVIDENCE-LINEAGE.md",
+    "RESULTS/SELF-CORRECTION-AUDIT.md",
+}
 SCANNER_VERSION = "2.0.0"
 SNAPSHOT = "function-census-v2-20260729"
 GATES = (
@@ -57,7 +73,12 @@ def tracked_text_files() -> list[str]:
     raw = subprocess.check_output(["git", "ls-files", "--cached", "--others", "--exclude-standard", "-z"], cwd=ROOT).decode("utf-8")
     return sorted(
         item for item in raw.split("\0")
-        if item and not item.startswith(GENERATED_PREFIX) and Path(item).suffix.lower() in TEXT_EXTENSIONS
+        if (
+            item
+            and item not in GENERATED_EXACT_PATHS
+            and not item.startswith(GENERATED_PREFIXES)
+            and Path(item).suffix.lower() in TEXT_EXTENSIONS
+        )
     )
 
 

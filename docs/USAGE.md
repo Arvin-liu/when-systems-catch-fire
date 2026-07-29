@@ -2,7 +2,9 @@
 
 ## 1. 从哪里进入
 
-先读 [README.md](../README.md)，再读 [ARCHITECTURE.md](../ARCHITECTURE.md) 与 [FOUNDATION.md](../FOUNDATION.md)。当前机器状态见 [project-state.json](../data/foundation/project-state.json)。
+先从[统一知识入口](../KNOWLEDGE/README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 [README.md](../README.md)、[ARCHITECTURE.md](../ARCHITECTURE.md) 与 [FOUNDATION.md](../FOUNDATION.md)。当前机器状态见 [project-state.json](../data/foundation/project-state.json)。
+
+不知道术语或编号时，使用[知识地图](../KNOWLEDGE/MAP.md)；知道旧称或自然语言词时，使用[搜索与交叉引用](../KNOWLEDGE/SEARCH.md)；要快速判断长文是否值得继续读，使用[分层阅读](../KNOWLEDGE/READING-LAYERS.md)。摘要和搜索只用于导航，最终判断仍回到完整来源与 canonical registry。
 
 ## 2. 按七层处理材料
 

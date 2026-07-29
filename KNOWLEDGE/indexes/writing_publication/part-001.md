@@ -1,0 +1,561 @@
+# 文章、写作与公共表达：检索索引
+
+引导问题：研究结果如何形成可阅读作品，同时不越过来源、证据和许可边界？
+
+此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
+
+- [# IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-88D7E6316D5F3876 / # IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IMPLICIT-88D7E6316D5F3876
+  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [121Q25B Whole-Project Synchronization Contract](../../ASSET-CARDS.md#asset-hr-45480c716d721c81)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_OR_SUPERSEDED_SOURCE`
+  - 可搜索名称：121Q25B Whole-Project Synchronization Contract / 121Q25B-whole-project-synchronization-contract
+  - 来源：`reports/operations/121Q25B-whole-project-synchronization-contract.md`
+  - 依赖：—；被引用：—
+- [121Q28 肉身锚定的心智层级跃迁写作法审计](../../ASSET-CARDS.md#asset-hr-3069e59a51d869c3)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：121Q28 肉身锚定的心智层级跃迁写作法审计 / 121Q28-embodied-cognitive-leap-writing-method-audit
+  - 来源：`reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
+- [121Q28R 之元写作法 0.2.0 修订审计](../../ASSET-CARDS.md#asset-hr-de57c4f1ec87eada)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：121Q28R 之元写作法 0.2.0 修订审计 / 121Q28R-cognitive-level-leap-writing-method-audit
+  - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
+- [121Q28S 之元写作法 0.3.0 全项目整合审计](../../ASSET-CARDS.md#asset-hr-44a1c398c470bbf4)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：121Q28S 之元写作法 0.3.0 全项目整合审计 / 121Q28S-zhiyuan-writing-method-whole-project-integration-audit
+  - 来源：`reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md`
+  - 依赖：—；被引用：—
+- [121Q30T｜首页与之元写作法成果展示合并收口审计](../../ASSET-CARDS.md#asset-hr-67cc7f2c07c67bd9)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：121Q30T｜首页与之元写作法成果展示合并收口审计 / 121Q30T-homepage-showcase-merge-current-closeout-audit
+  - 来源：`reports/operations/121Q30T-homepage-showcase-merge-current-closeout-audit.md`
+  - 依赖：—；被引用：—
+- [\["isomorphism", "analogy-risk"\]](../../../data/publication_risk_rules.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-f29662349b84de9f / \["isomorphism", "analogy-risk"\]
+  - 来源：`data/publication_risk_rules.csv`
+  - 依赖：—；被引用：—
+- [`FACT / INFERENCE / ANALOGY / METAPHOR / PENDING` 标记](../../../docs/narrative-story-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0e4a88c42cc1fd98 / `FACT / INFERENCE / ANALOGY / METAPHOR / PENDING` 标记
+  - 来源：`docs/narrative-story-template.md`
+  - 依赖：—；被引用：—
+- [`FACT` 和 `ANALOGY` 没有混写](../../../docs/narrative-story-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8d10fe1f765dbbee / `FACT` 和 `ANALOGY` 没有混写
+  - 来源：`docs/narrative-story-validation.md`
+  - 依赖：—；被引用：—
+- [`stage_snapshot_publication --projects / repository_dependency--> readme` — public stage-summary projection only; no cap](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2304d7a7965cf7f8 / `stage_snapshot_publication --projects / repository_dependency--> readme` — public stage-summary projection only; no cap
+  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [`tools/operations/stage_snapshot_contract.py` 做 schema、actor reference 解析、语义、隐私、关系、远端 identity/HEAD 和投影检查；](../../../docs/operations/stage-snapshot-publication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a6510599e4fe4423 / `tools/operations/stage_snapshot_contract.py` 做 schema、actor reference 解析、语义、隐私、关系、远端 identity/HEAD 和投影检查；
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
+- [`永昭·虚遐` remains a bounded example of optional embodied anchoring, prospective loading, lower-level preservation, a doubl](../../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3ee61ae38bde2672 / `永昭·虚遐` remains a bounded example of optional embodied anchoring, prospective loading, lower-level preservation, a doubl
+  - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
+- [Adds the deterministic Recent Stage Results projection.](../../../data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8702cc4364a715ce / Adds the deterministic Recent Stage Results projection.
+  - 来源：`data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json`
+  - 依赖：—；被引用：—
+- [Candidate: Ignition Iteration Method 1.4.0 adds fail-closed continuous stage snapshot publication. A schema-backed regis](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a0940ee425760d97 / Candidate: Ignition Iteration Method 1.4.0 adds fail-closed continuous stage snapshot publication. A schema-backed regis
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收者还必须在线重新获取 PR 身份、HEAD 与 Actions，不能只采信记录时间的 attestation。](../../../docs/operations/stage-snapshot-publication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6e3478fe878eae79 / CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收者还必须在线重新获取 PR 身份、HEAD 与 Actions，不能只采信记录时间的 attestation。
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
+- [Current Main vs 1.4 Candidate Homepage Comparison](../../ASSET-CARDS.md#asset-hr-4f3c4ff4a7ab0e3a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Current Main vs 1.4 Candidate Homepage Comparison / IGNITION-ITERATION-METHOD-1.4-homepage-comparison
+  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
+  - 依赖：—；被引用：—
+- [Declares projection and synchronization obligations.](../../../data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-87993f012127501f / Declares projection and synchronization obligations.
+  - 来源：`data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json`
+  - 依赖：—；被引用：—
+- [Embodied anchoring is optional mode; cross-domain isomorphism is application type; high-dimensional compression is optio](../../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dad7d080fea392b3 / Embodied anchoring is optional mode; cross-domain isomorphism is application type; high-dimensional compression is optio
+  - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
+- [final_actor_line = next(line for line in projection.splitlines() if line.startswith("**最终责任主体：**"))](../../../tests/test_stage_snapshot_publication.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-ddccea20e717a904 / final_actor_line = next(line for line in projection.splitlines() if line.startswith("**最终责任主体：**"))
+  - 来源：`tests/test_stage_snapshot_publication.py`
+  - 依赖：—；被引用：—
+- [IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-5a6642209467ff3a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IGNITION-ITERATION-METHOD-1.4-change-propagation-impact
+  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [projection_doc = "# Recent Stage Results / 正在炼化\\n\\n" + projection.split("\\n", 2)\[2\]](../../../tests/test_stage_snapshot_publication.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-18662bfa3fcc0a99 / projection_doc = "# Recent Stage Results / 正在炼化\\n\\n" + projection.split("\\n", 2)\[2\]
+  - 来源：`tests/test_stage_snapshot_publication.py`
+  - 依赖：—；被引用：—
+- [public = any(anchor.get("source_context") == "CURRENT_PUBLIC_SURFACE" for anchor in anchors)](../../../tools/governance/build_knowledge_experience.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-939E7A37795972AC / public = any(anchor.get("source_context") == "CURRENT_PUBLIC_SURFACE" for anchor in anchors) / IMPLICIT-939E7A37795972AC
+  - 来源：`tools/governance/build_knowledge_experience.py`
+  - 依赖：—；被引用：—
+- [public stage-summary projection only; no capability lifecycle promotion](../../../data/operations/change-propagation-topology.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9a92b5f2c2e3c16f / public stage-summary projection only; no capability lifecycle promotion
+  - 来源：`data/operations/change-propagation-topology.json`
+  - 依赖：—；被引用：—
+- [Q27 的战场、麦克风、银行与电网共同暴露“扰动—耦合—正反馈—阈值—换态”的结构，并产生“冲击衰减／冲击放大”的新增解释。它是跨域同构叙事这一应用类型的有效基线。](../../../docs/publication/zhiyuan-writing-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-4bf829b566abc1c0 / Q27 的战场、麦克风、银行与电网共同暴露“扰动—耦合—正反馈—阈值—换态”的结构，并产生“冲击衰减／冲击放大”的新增解释。它是跨域同构叙事这一应用类型的有效基线。
+  - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [Q27：跨域同构的有价值基线](../../../docs/publication/zhiyuan-writing-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2fb2f570ccd0d836 / Q27：跨域同构的有价值基线
+  - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [Q30T merges accepted PR #59 at exact HEAD and closes the repository-native Zhiyuan Writing Method showcase as Current: o](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8aeabce466a6363f / Q30T merges accepted PR #59 at exact HEAD and closes the repository-native Zhiyuan Writing Method showcase as Current: o
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [render_projection,](../../../tests/test_stage_snapshot_publication.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1b8cd3ccf09d069e / render_projection,
+  - 来源：`tests/test_stage_snapshot_publication.py`
+  - 依赖：—；被引用：—
+- [repaired mandatory embodiment but still modeled Zhiyuan Writing Method as an L6 add-on rather than a bounded public-expr](../../../data/operations/iterations/121Q28S.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d1f2c3c78d7a91ab / repaired mandatory embodiment but still modeled Zhiyuan Writing Method as an L6 add-on rather than a bounded public-expr
+  - 来源：`data/operations/iterations/121Q28S.json`
+  - 依赖：—；被引用：—
+- [reports/publication/jin-rise-point-fire-analysis.md](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D01 / reports/publication/jin-rise-point-fire-analysis.md / D01
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [require(len(actor_history_ids) == len(set(actor_history_ids)), f"{actor\['actor_id'\]}: duplicate actor history record ID")](../../../tools/operations/stage_snapshot_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A59CDF2ECB87EAC4 / require(len(actor_history_ids) == len(set(actor_history_ids)), f"{actor\['actor_id'\]}: duplicate actor history record ID") / IMPLICIT-A59CDF2ECB87EAC4
+  - 来源：`tools/operations/stage_snapshot_contract.py`
+  - 依赖：—；被引用：—
+- [require(pilot.get("history_mode") == "read_only", f"{source}: pilot must be read_only")](../../../tools/validate_effectual_mechanism_overlay.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D45AC7DA90790FA0 / require(pilot.get("history_mode") == "read_only", f"{source}: pilot must be read_only") / IMPLICIT-D45AC7DA90790FA0
+  - 来源：`tools/validate_effectual_mechanism_overlay.py`
+  - 依赖：—；被引用：—
+- [self.assertIn("技术执行记录（非最终责任）", projection)](../../../tests/test_stage_snapshot_publication.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-16200561113b4627 / self.assertIn("技术执行记录（非最终责任）", projection)
+  - 来源：`tests/test_stage_snapshot_publication.py`
+  - 依赖：—；被引用：—
+- [The bounded example uses only short excerpts and structural paraphrase: translated poetry → time cost → remaining life/l](../../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-94f3db4410d429af / The bounded example uses only short excerpts and structural paraphrase: translated poetry → time cost → remaining life/l
+  - 来源：`reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md`
+  - 依赖：—；被引用：—
+- [The candidate adds a publication axis orthogonal to the unchanged capability lifecycle. It lets a verified public summar](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cd5f14881371124d / The candidate adds a publication axis orthogonal to the unchanged capability lifecycle. It lets a verified public summar
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [The candidate defines and connects: embodied anchor; prospective writing and `在下一层中写当前层`; uncontained remainder; un-sign](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1c7f3913376c1331 / The candidate defines and connects: embodied anchor; prospective writing and `在下一层中写当前层`; uncontained remainder; un-sign
+  - 来源：`reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
+- [The canonical method contains an itemized map covering L0 carriers; gaps/pending residue; Q12 M0/M1 and Minimum State-Ch](../../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a8ba721957720753 / The canonical method contains an itemized map covering L0 carriers; gaps/pending residue; Q12 M0/M1 and Minimum State-Ch
+  - 来源：`reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md`
+  - 依赖：—；被引用：—
+- [The normative candidate contract is `docs/operations/stage-snapshot-publication.md`. This section, its schemas, tools, t](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-038e96bba3393be9 / The normative candidate contract is `docs/operations/stage-snapshot-publication.md`. This section, its schemas, tools, t
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [The Q27 story was read but not copied. It is preserved as a useful baseline: battlefield, microphone, bank and grid expo](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e6d16659168667ba / The Q27 story was read but not copied. It is preserved as a useful baseline: battlefield, microphone, bank and grid expo
+  - 来源：`reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
+- [validate_materialized_projection(mutated, projection_doc)](../../../tests/test_stage_snapshot_publication.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1b5164776bd4e0e3 / validate_materialized_projection(mutated, projection_doc)
+  - 来源：`tests/test_stage_snapshot_publication.py`
+  - 依赖：—；被引用：—
+- [validate_materialized_projection,](../../../tests/test_stage_snapshot_publication.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-9156085fb5ff865d / validate_materialized_projection,
+  - 来源：`tests/test_stage_snapshot_publication.py`
+  - 依赖：—；被引用：—
+- [with self.assertRaisesRegex(ContractError, "projection is stale"):](../../../tests/test_stage_snapshot_publication.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-f99413796f8e2f78 / with self.assertRaisesRegex(ContractError, "projection is stale"):
+  - 来源：`tests/test_stage_snapshot_publication.py`
+  - 依赖：—；被引用：—
+- [\| 19 \| 失败类型: 同构误判 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| 71 \| 是 \|](../../../outputs/audit/v0.2-id-preflight-discrepancy-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-4a4e61870af54f13 / \| 19 \| 失败类型: 同构误判 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| 71 \| 是 \|
+  - 来源：`outputs/audit/v0.2-id-preflight-discrepancy-20260707.md`
+  - 依赖：—；被引用：—
+- [\| \[C-0757\]( ) \| \[《写作是门手艺》段落控制≤10行\]( ) \| 该案例对应 D577《观](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0fc8d121f4e7a464 / \| \[C-0757\]( ) \| \[《写作是门手艺》段落控制≤10行\]( ) \| 该案例对应 D577《观
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D577；被引用：—
+- [\| \[C-0769\]( ) \| \[《写作是门手艺》段落控制≤10行\]( ) \| 该案例对应 D580《边](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-473f8a000df75720 / \| \[C-0769\]( ) \| \[《写作是门手艺》段落控制≤10行\]( ) \| 该案例对应 D580《边
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D580；被引用：—
+- [\| \[C-0781\]( ) \| \[《写作是门手艺》段落控制≤10行\]( ) \| 该案例对应 D583《认](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-05547d1844cf6436 / \| \[C-0781\]( ) \| \[《写作是门手艺》段落控制≤10行\]( ) \| 该案例对应 D583《认
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D583；被引用：—
+- [\| \[C-0793\]( ) \| \[《写作是门手艺》段落控制≤10行\]( ) \| 该案例对应 D586《独](../../../%E7%BB%9F%E4%B8%80%E6%A1%88%E4%BE%8B%E6%80%BB%E8%A1%A8/INDEX.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0b207a9806c1c671 / \| \[C-0793\]( ) \| \[《写作是门手艺》段落控制≤10行\]( ) \| 该案例对应 D586《独
+  - 来源：`统一案例总表/INDEX.md`
+  - 依赖：D586；被引用：—
+- [\| `JIN-ARG-04` \| 辽宋有大体量但协调慢 → 小组织“降维”取胜 \| 大体量等于低协调；两国可同质比较 \| 辽的特殊危机、宋的战略误判 \| 类比性强，证据弱 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-543b1d1eb7ad0d6c / \| `JIN-ARG-04` \| 辽宋有大体量但协调慢 → 小组织“降维”取胜 \| 大体量等于低协调；两国可同质比较 \| 辽的特殊危机、宋的战略误判 \| 类比性强，证据弱 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-CLM-13` \| 创业公司—大厂类比可启发提问 \| `analogy_only` \| 不得替代历史材料或抹平暴力成本 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8b639fc897c5e2ee / \| `JIN-CLM-13` \| 创业公司—大厂类比可启发提问 \| `analogy_only` \| 不得替代历史材料或抹平暴力成本 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-SRC-04` \| S4 \| 点火 `origin/main` 方法资产 \| 分层、审计、模型投影 \| 仅方法出处 \| 不是金史证据 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4773abe430084587 / \| `JIN-SRC-04` \| S4 \| 点火 `origin/main` 方法资产 \| 分层、审计、模型投影 \| 仅方法出处 \| 不是金史证据 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| I_iso(A,B) \| 与赛课/邻里/高通量三者强同构 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-c044ee12eeec7907 / \| I_iso(A,B) \| 与赛课/邻里/高通量三者强同构 \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md`
+  - 依赖：—；被引用：—
+- [\| L1 \| 结构类比、初步相似性 \| 可以，但必须标注为类比 \|](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-54bb58ecf776db14 / \| L1 \| 结构类比、初步相似性 \| 可以，但必须标注为类比 \|
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [\| L2 \| 事件、状态、制度、关系、类比、叙事命题 \| 候选类型化 \| 不把所有对象强塞为 `FUNCTION` \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cbc34de5e901286f / \| L2 \| 事件、状态、制度、关系、类比、叙事命题 \| 候选类型化 \| 不把所有对象强塞为 `FUNCTION` \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| L5 \| 外部经验、实验、工程、临床、法律或社会科学验证 \| 只有存在对应证据时才可这样写 \|](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-753ab71cd7ea8e35 / \| L5 \| 外部经验、实验、工程、临床、法律或社会科学验证 \| 只有存在对应证据时才可这样写 \|
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [\| L6 \| 两个事件共享“低成本接口覆盖主体”结构 \| 同构重叠层 \|](../../../outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-41daef7bf8f534cc / \| L6 \| 两个事件共享“低成本接口覆盖主体”结构 \| 同构重叠层 \|
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md`
+  - 依赖：—；被引用：—
+- [\| L_meta \| 历史学实例，跨域同构第四点印证 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f30d8668b02df8f3 / \| L_meta \| 历史学实例，跨域同构第四点印证 \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md`
+  - 依赖：—；被引用：—
+- [\| publication_risk_rules \| failure_typology \| 风险规则对应的失败类型 \|](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-749bbcf94d235988 / \| publication_risk_rules \| failure_typology \| 风险规则对应的失败类型 \|
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [\| SB-019 \| 中 \| 失败类型: 同构误判 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending](../../../docs/storytelling_backlog_ids.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0b6df874a18e1590 / \| SB-019 \| 中 \| 失败类型: 同构误判 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| pending \| pending \| pending
+  - 来源：`docs/storytelling_backlog_ids.md`
+  - 依赖：—；被引用：—
+- [\| 之元写作法运动 \| 点火对应候选 \| 保持的关系 \| 不可映射残余／不能推出什么 \|](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-56f84147f0ff8440 / \| 之元写作法运动 \| 点火对应候选 \| 保持的关系 \| 不可映射残余／不能推出什么 \|
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [“时间、地理、摄影、世界、再见”反复重定义，对应版本化语义修订但不等同于正式迁移；](../../../docs/publication/zhiyuan-writing-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-36956fc6b662a17b / “时间、地理、摄影、世界、再见”反复重定义，对应版本化语义修订但不等同于正式迁移；
+  - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [不再值得继续的译诗循环与 Q13 信息增益／吸引子停止有结构对应，但个人价值选择不等于 validator 结论；](../../../docs/publication/zhiyuan-writing-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2a0f8e25ec04f754 / 不再值得继续的译诗循环与 Q13 信息增益／吸引子停止有结构对应，但个人价值选择不等于 validator 结论；
+  - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [与点火整体的同源对应候选](../../../docs/publication/zhiyuan-writing-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5e805b1dcc589d68 / 与点火整体的同源对应候选
+  - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [之元写作法](../../ASSET-CARDS.md#asset-hr-a932eb17267d9709)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
+  - 可搜索名称：之元写作法 / zhiyuan-writing-method
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [之元写作法 \[`0.4.0`\](./publication/zhiyuan-writing-method.md) 是当前 L6 接口，\[后台规格\](../templates/publication/zhiyuan-writing-spec.](../../../docs/USAGE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cebb58b02acaa1d6 / 之元写作法 \[`0.4.0`\](./publication/zhiyuan-writing-method.md) 是当前 L6 接口，\[后台规格\](../templates/publication/zhiyuan-writing-spec.
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [之元写作法成果](../../ASSET-CARDS.md#asset-hr-d328ae24912155e2)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：之元写作法成果 / zhiyuan-writing-showcase
+  - 来源：`docs/publication/zhiyuan-writing-showcase.md`
+  - 依赖：—；被引用：—
+- [之元写作法：内部范例与反例](../../ASSET-CARDS.md#asset-hr-3b5e72d7f1cdfb5b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
+  - 可搜索名称：之元写作法：内部范例与反例 / zhiyuan-writing-examples
+  - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [候选案例：修志数字化积分下考据深度被挤出（对应 D597 + NF-X1 + NF-X2）](../../../outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-ecfa36bc3da55924 / 候选案例：修志数字化积分下考据深度被挤出（对应 D597 + NF-X1 + NF-X2）
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md`
+  - 依赖：D597；被引用：—
+- [全项目结构对应候选](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-15836dafeef09ddf / 全项目结构对应候选
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [公开材料中的动机、组织细节和亲密关系约束高度混杂，不适合在本任务里拿来做精确同构。](../../../outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-df630a331add9aec / 公开材料中的动机、组织细节和亲密关系约束高度混杂，不适合在本任务里拿来做精确同构。
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md`
+  - 依赖：—；被引用：—
+- [写作可以重组、递归定义和跨域投影这些增量，但不得抹掉 gap、residue、竞争解释、主体差异和未完成验证。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a7984560d06fd99d / 写作可以重组、递归定义和跨域投影这些增量，但不得抹掉 gap、residue、竞争解释、主体差异和未完成验证。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [判定：`PARTIAL_ISOMORPHISM`](../../../outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-40386a8e79c84b34 / 判定：`PARTIAL_ISOMORPHISM`
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md`
+  - 依赖：—；被引用：—
+- [只有跨域对应、没有回照：降级为横向结构类比。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-dced59a60174a648 / 只有跨域对应、没有回照：降级为横向结构类比。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [可写作方向：本文含强叙事（多位教师个案、表格、避风港结尾），适合做「组织制度如何异化专业价值」类文章；对应 `SB-001 哥德尔不完备性` 之外的社会制度题材 backlog。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7af0cb11b1197758 / 可写作方向：本文含强叙事（多位教师个案、表格、避风港结尾），适合做「组织制度如何异化专业价值」类文章；对应 `SB-001 哥德尔不完备性` 之外的社会制度题材 backlog。
+  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [同时保留非同构边界，不会把两件事硬写成同一件事。](../../../outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b36cd2b3453d6eb1 / 同时保留非同构边界，不会把两件事硬写成同一件事。
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md`
+  - 依赖：—；被引用：—
+- [同构误判；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-88ada1d9c4a92c13 / 同构误判；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [同源对应审计](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cf0606b17cf92b7b / 同源对应审计
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [失败类型: 同构误判](../../../data/storytelling_backlog.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e3619d7f84d3f8c6 / 失败类型: 同构误判
+  - 来源：`data/storytelling_backlog.csv`
+  - 依赖：—；被引用：—
+- [失败类型：同构误判；](../../../docs/storytelling_case_backlog.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cf829ce20ef96a14 / 失败类型：同构误判；
+  - 来源：`docs/storytelling_case_backlog.md`
+  - 依赖：—；被引用：—
+- [对应层／工件：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-6d8232d66bf1ea41 / 对应层／工件：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [对应案例** — 正向登记至少 1 条或写 pending](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d38e61b52e88ffd2 / 对应案例** — 正向登记至少 1 条或写 pending
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [当一支军队开始相信自己的背影](../../ASSET-CARDS.md#asset-hr-25ccad6cef81cbea)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：当一支军队开始相信自己的背影 / when-an-army-believes-its-own-back
+  - 来源：`docs/publication/works/when-an-army-believes-its-own-back.md`
+  - 依赖：—；被引用：—
+- [当前有边界关系表述是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`。这里的 `candidate`](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd9ad98397c8baf7 / 当前有边界关系表述是：`maintainer-declared shared cognitive provenance / structurally auditable homology candidate`。这里的 `candidate`
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [所有候选故事都要先确认其对应的证据制度和失败类型。](../../../outputs/getbrain/storytelling-case-backlog-draft-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5774c8677fe01efb / 所有候选故事都要先确认其对应的证据制度和失败类型。
+  - 来源：`outputs/getbrain/storytelling-case-backlog-draft-20260707.md`
+  - 依赖：—；被引用：—
+- [捕捉误解、现实反例、遗漏主体、失败跃迁、伪同构、无法展开的压缩和新问题。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-c8da89127e8b5c19 / 捕捉误解、现实反例、遗漏主体、失败跃迁、伪同构、无法展开的压缩和新问题。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [提供跨域同构识别：不同文学作品跨时代有效性的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2bf14613547adc3f / 提供跨域同构识别：不同文学作品跨时代有效性的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供跨域同构识别：不同艺术作品意义生成的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f25416ec9eca4589 / 提供跨域同构识别：不同艺术作品意义生成的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提跨域同构；](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-72d2b53980b290aa / 提跨域同构；
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [故事化评分维度](../../ASSET-CARDS.md#asset-hr-b42fdd29bfb492b0)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：故事化评分维度 / storytelling-case-backlog-draft-20260707
+  - 来源：`outputs/getbrain/storytelling-case-backlog-draft-20260707.md`
+  - 依赖：—；被引用：—
+- [旧条目只在每周维护或被再次引用时逐步补齐缺失字段（边界条件/适用条件/反例/对应案例/版本记录）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1af3748307046825 / 旧条目只在每周维护或被再次引用时逐步补齐缺失字段（边界条件/适用条件/反例/对应案例/版本记录）。
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [是否只是修辞类比：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a08ab83673d90d53 / 是否只是修辞类比：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [此对应明确不能推出什么：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8a7706697e8e9551 / 此对应明确不能推出什么：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [点火中的结构对应候选：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-b48fc3d6eb6bc76e / 点火中的结构对应候选：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [第57期故事样稿｜当一个名字变成接口](../../ASSET-CARDS.md#asset-hr-e7a557e011cab937)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：第57期故事样稿｜当一个名字变成接口 / story-longform
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-longform.md`
+  - 依赖：—；被引用：—
+- [第57期故事结构图](../../ASSET-CARDS.md#asset-hr-b55587d4d61d4426)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：第57期故事结构图 / story-structure-map
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md`
+  - 依赖：—；被引用：—
+- [第57期故事验收报告](../../ASSET-CARDS.md#asset-hr-a960756efab9d50a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：第57期故事验收报告 / story-validation-report
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md`
+  - 依赖：—；被引用：—
+- [结构性类比；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-0d8c3dfabdad4fa1 / 结构性类比；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [结论：`PARTIAL_ISOMORPHISM`，可进入正文，但必须带边界。](../../../outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-098dfbe443852a01 / 结论：`PARTIAL_ISOMORPHISM`，可进入正文，但必须带边界。
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md`
+  - 依赖：—；被引用：—
+- [至少列出一个 `non_isomorphic_limit`](../../../docs/narrative-story-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-6e3bd22c54152d14 / 至少列出一个 `non_isomorphic_limit`
+  - 来源：`docs/narrative-story-validation.md`
+  - 依赖：—；被引用：—
+- [若任务涉及 L6 公共故事、文章或作品反馈，还应读取 `docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.4.0` 是当前能力，使用外部输入与点火增量输出双来源素材池；](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-4a4a05efad828766 / 若任务涉及 L6 公共故事、文章或作品反馈，还应读取 `docs/publication/zhiyuan-writing-method.md` 与对应后台规格。之元写作法 `0.4.0` 是当前能力，使用外部输入与点火增量输出双来源素材池；
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [若任务涉及当前展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cabfdbbabdd4495a / 若任务涉及当前展示的之元写作法成果，还要读取 `docs/publication/zhiyuan-writing-showcase.md` 与 `data/publication/zhiyuan-writing-showcase.json`
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [若涉及同构：比较层、映射角色／关系／时序／动力学／干预位置：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1955590d8570684f / 若涉及同构：比较层、映射角色／关系／时序／动力学／干预位置：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [补充对应领域证据制度；无法补充时降级并标 pending。](../../../data/publication_risk_rules.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-614902961829f6be / 补充对应领域证据制度；无法补充时降级并标 pending。
+  - 来源：`data/publication_risk_rules.csv`
+  - 依赖：—；被引用：—
+- [要观察的误解、现实反例、遗漏主体、失败铰链、伪同构或伪压缩：](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2efb645f956b6e01 / 要观察的误解、现实反例、遗漏主体、失败铰链、伪同构或伪压缩：
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [证据权限：仍不高于 L6；同源陈述是 design provenance 和可审计结构对应候选，不是脑科学、心理学或本体论事实。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-06f44c49cd36e774 / 证据权限：仍不高于 L6；同源陈述是 design provenance 和可审计结构对应候选，不是脑科学、心理学或本体论事实。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [该判断目前应保持 pending，原因是缺少对应证据制度下的外部验证。](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-32c3d1e7918c9290 / 该判断目前应保持 pending，原因是缺少对应证据制度下的外部验证。
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [跨域 smoke test — 历史学碰撞报告](../../ASSET-CARDS.md#asset-hr-3d6271e0ba81267e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：跨域 smoke test — 历史学碰撞报告 / collision-report
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md`
+  - 依赖：—；被引用：—
+- [跨域同构判断；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a0eac8f79bcd3ea7 / 跨域同构判断；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [这些对应是可审计的 homology candidate，不是逐项身份映射。之元写作法无需在每篇作品中展示所有点火组件，点火也不能从某篇作品自动推出全部正式资产。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bdb8a57618184ca3 / 这些对应是可审计的 homology candidate，不是逐项身份映射。之元写作法无需在每篇作品中展示所有点火组件，点火也不能从某篇作品自动推出全部正式资产。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [阶段成果持续快照与分层发布制度](../../ASSET-CARDS.md#asset-hr-8e4b48d6273130f9)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_OR_SUPERSEDED_SOURCE`
+  - 可搜索名称：阶段成果持续快照与分层发布制度 / stage-snapshot-publication
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
+- [阶段记录：** 阶段快照来自 `data/operations/stage-snapshots.json` 的确定性投影，沿 lifecycle 与 publication 两条轴记录 Accepted、Current、Activated、](../../../docs/USAGE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a0b6f08c798a16fd / 阶段记录：** 阶段快照来自 `data/operations/stage-snapshots.json` 的确定性投影，沿 lifecycle 与 publication 两条轴记录 Accepted、Current、Activated、
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [非同构边界](../../../outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-479a6e5a91c07d0f / 非同构边界
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md`
+  - 依赖：—；被引用：—
+- [非同构边界](../../../docs/narrative-story-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-b37182c120da7b22 / 非同构边界
+  - 来源：`docs/narrative-story-template.md`
+  - 依赖：—；被引用：—

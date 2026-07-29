@@ -6,18 +6,22 @@
 
 - 可机器验证的 Claim Delta、影响分析和证据谱系变化；
 - 普通读者能理解的人类结果，写明问题、方法/证据类别、结论、成熟度与 claim ceiling、变化、局限、来源和处置。
+- 知识体验声明：人类目的地、What's New 类型化变化、知识地图主题、统一资产卡、适用的 1/5/完整阅读、canonical title/自然语言别名/历史旧称、supersession、来源、依赖与反向依赖。
 
 提交前运行：
 
 ```bash
 python3 tools/governance/build_human_results.py
 python3 tools/governance/run_self_correction.py
+python3 tools/governance/build_knowledge_experience.py
 python3 tools/governance/build_human_results.py --check
 python3 tools/governance/run_self_correction.py --check
+python3 tools/governance/build_knowledge_experience.py --check
 python3 tools/governance/validate_human_visibility.py
+python3 tools/governance/validate_knowledge_experience.py
 ```
 
-缺少任一层、链接断裂、重要内容默认折叠、结论回弹、量词膨胀或把单一模型失败推广为普遍不可能都会阻断 CI。历史材料不得删除或重写；应通过 supersession、撤回、降级、隔离或修订保留变化链。
+缺少任一层、链接/锚点断裂、孤儿卡片、无来源摘要、搜索或摘要过期、重要内容默认折叠、结论回弹、量词膨胀或把单一模型失败推广为普遍不可能都会阻断 CI。历史材料不得删除或重写；应通过 supersession、撤回、降级、隔离或修订保留变化链。
 
 ## 许可门禁
 

@@ -5,8 +5,12 @@
     "reports",
     "docs/architecture",
     "docs/foundation",
+    "docs/governance",
     "docs/operations",
-    "docs/publication"
+    "docs/publication",
+    "outputs",
+    "agent-results",
+    "新故事"
   ],
   "excluded_prefixes": [
     "docs/generated/",
@@ -21,6 +25,12 @@
     {"machine": "data/governance/self-correction/impact-analysis.jsonl", "human": "RESULTS/IMPACT-ANALYSIS.md"},
     {"machine": "data/governance/self-correction/evidence-lineage-delta.jsonl", "human": "RESULTS/EVIDENCE-LINEAGE.md"},
     {"machine": "data/governance/self-correction/audit-findings.jsonl", "human": "RESULTS/SELF-CORRECTION-AUDIT.md"},
-    {"machine": "data/governance/self-correction/remediation-plan.json", "human": "RESULTS/SELF-CORRECTION-AUDIT.md"}
+    {"machine": "data/governance/self-correction/remediation-plan.json", "human": "RESULTS/SELF-CORRECTION-AUDIT.md"},
+    {"machine": "data/governance/knowledge-experience/changes.jsonl", "human": "KNOWLEDGE/WHATS-NEW.md"},
+    {"machine": "data/governance/knowledge-experience/asset-cards.jsonl", "human": "KNOWLEDGE/ASSET-CARDS.md"},
+    {"machine": "data/governance/knowledge-experience/layered-reading.jsonl", "human": "KNOWLEDGE/READING-LAYERS.md"},
+    {"machine": "data/governance/knowledge-experience/search-index.jsonl", "human": "KNOWLEDGE/SEARCH.md"},
+    {"machine": "data/governance/knowledge-experience/alias-index.jsonl", "human": "KNOWLEDGE/EVOLUTION.md"},
+    {"machine": "data/governance/knowledge-experience/coverage.json", "human": "KNOWLEDGE/COVERAGE.md"}
   ]
 }

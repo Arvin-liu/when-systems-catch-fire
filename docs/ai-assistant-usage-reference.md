@@ -31,6 +31,10 @@ https://github.com/Arvin-liu/when-systems-catch-fire
 
 请优先阅读以下文件：
 README.md
+KNOWLEDGE/README.md
+KNOWLEDGE/WHATS-NEW.md
+KNOWLEDGE/MAP.md
+KNOWLEDGE/SEARCH.md
 docs/project-current-state.md
 docs/governance/life-community-value-charter.md
 ITERATION.md
@@ -85,6 +89,8 @@ llms.txt
 这个链接打开的就是项目首页。你可以复制上面的提示词，再把这个链接交给自己常用的 AI。
 
 当前状态与架构直达入口：[项目现状](./project-current-state.md) / [点火迭代操作法](../ITERATION.md) / [MCF](./architecture/multiscale-causal-fabric.md) / [PSD](./architecture/probabilistic-system-dynamics.md) / [ARN](./architecture/adaptive-relational-network.md)。本页是完整的人类 AI 使用指南；根 README 中的提示词是同一份受验证的前门投影，两者不得独立漂移。当前迭代方法把状态改变视为全项目同步传播：实现完成、仓库同步、逐外部表面证明和项目整体完成必须分开报告，局部通过不能替代整体闭环。
+
+普通读者和 AI 不必猜文件路径：先从[统一知识入口](../KNOWLEDGE/README.md)选择最新变化、主题地图、搜索或分层阅读。搜索索引覆盖完整函数/断言 registry，但机器命中、自动摘要和主题标签都只是导航；必须继续核对资产卡的状态、M/E、来源、历史、supersession、依赖和不得推出的结论。
 
 遇到定理、规律、机制、因果、不可能性、跨域对应、预测或经验断言时，还要核对[全语料非函数断言索引](./foundation/nonfunction-claim-adjudication-index.md)与[未来断言准入协议](./foundation/future-claim-admission-protocol.md)。注册表存在、内部测试通过或自动扫描闭合都不证明内容为真；显式 quarantine 是有边界的登记处置。
 

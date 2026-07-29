@@ -105,7 +105,7 @@ class ChangePropagationTests(unittest.TestCase):
         causal_relation = next(item for item in TOPOLOGY_DOC["relations"] if item["relation_domain"] == "substantive_causal_candidate")
         self.assertIn("candidate", causal_relation["claim_ceiling"])
 
-    def test_d_pages_change_requires_deployment_surfaces_not_foundation_docs(self):
+    def test_d_repository_reading_change_requires_knowledge_surfaces_not_pages(self):
         request = self.request(
             changed_paths=["HUMAN-READING.md"],
             explicit_seed_components=[],
@@ -143,11 +143,19 @@ class ChangePropagationTests(unittest.TestCase):
                 "decision": "CHANGE",
                 "reason": "The repository-native human result index changes.",
             },
+            {
+                "item_id": "human.knowledge_experience",
+                "decision": "CHANGE",
+                "reason": "The repository-native knowledge entry, map, search and reading layers change.",
+            },
         ])
         closure, _ = compute(request, baseline_map=CURRENT_PROJECTION)
         self.assertTrue(closure["closure_complete"])
         self.assertIn("human_knowledge_surfaces", closure["resolved_components"])
         self.assertIn("human.results", closure["registry_derived_surfaces"])
+        self.assertIn("human.knowledge_experience", closure["registry_derived_surfaces"])
+        self.assertNotIn("pages_pipeline", closure["resolved_components"])
+        self.assertNotIn("external.pages_homepage", closure["registry_derived_surfaces"])
         self.assertNotIn("foundation", closure["resolved_components"])
 
     def test_e_historical_typo_allows_machine_checked_map_no_change(self):

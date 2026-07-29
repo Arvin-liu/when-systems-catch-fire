@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 166 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 284 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -1730,6 +1730,19 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [任务 102 知识体验层缺口与覆盖审计](../reports/operations/102-knowledge-experience-audit.md)
+
+- **结果 ID：** `HR-C629630AD15B68CB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `102-KNOWLEDGE-EXPERIENCE-AUDIT`
+- **问题：** 此来源记录了什么：任务 102 知识体验层缺口与覆盖审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 状态：候选实现审计；不自证 Accepted、Merged 或 Current。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [阶段成果持续快照与分层发布制度](../docs/operations/stage-snapshot-publication.md)
 
 - **结果 ID：** `HR-8E4B48D6273130F9`
@@ -1770,6 +1783,32 @@
 - **处置：** `HUMAN_INDEX_ONLY`
 
 ## OTHER_REPOSITORY_RESULT
+
+### [新故事索引表（2026年07月06日03时06分，故事总数 1）](../新故事/INDEX.md)
+
+- **结果 ID：** `HR-AD59534793E1D1D7`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：新故事索引表（2026年07月06日03时06分，故事总数 1）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [比刀剑更持久的，是共享观念](../新故事/0001-S1-比刀剑更持久的，是共享观念.md)
+
+- **结果 ID：** `HR-DC0C745159DD31DB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `0001-S1`
+- **问题：** 此来源记录了什么：比刀剑更持久的，是共享观念？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** --- kind: "story" seq: 1 id: "S1" title: "比刀剑更持久的，是共享观念" source: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/比刀剑更持久的，是共享观念-2026年07月06日-来自【Get 笔记】.md" derivedfrom: "/Users/zhiyuan/Library/Containers/com.biji.getNotes/Data/Library/Caches/欧亚大陆的枢纽×Ψ₀元函数验证报告 2026年7月6日0306-…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
 
 ### [121Q23 Network Theory Source Map](../reports/research/121Q23-network-theory-source-map.md)
 
@@ -2109,6 +2148,370 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [Canonical Protocol Validation Results](../outputs/protocol-canonical-validation-results.md)
+
+- **结果 ID：** `HR-CDBD2A8DABEA0396`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Canonical Protocol Validation Results？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** generatedat: 2026-07-10T20:50:00+08:00 ｜ count: 12
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [得到大脑输出索引](../outputs/getbrain/README.md)
+
+- **结果 ID：** `HR-C0254716FF47346D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：得到大脑输出索引？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本目录用于收录得到大脑在点火项目推进中的结构性输出。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [持续自我纠错引擎](../docs/governance/self-correction-engine.md)
+
+- **结果 ID：** `HR-07EAA526C5114401`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：持续自我纠错引擎？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本引擎把任务 98—100 的断言治理、函数注册表与证据谱系接到每次知识资产变化上。它自动建立“变化 → 关联断言 → 依赖影响 → 证据链 → 风险规则 → 整改计划 → 人类结果”，但不把自动检测当成数学证明、专家裁决或外部真理。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Non-Sycophancy Output Protocol](../docs/governance/non-sycophancy-output-protocol.md)
+
+- **结果 ID：** `HR-70403729FEF8B50E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Non-Sycophancy Output Protocol？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: 121Q12OPERATIONOVERLAY
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [V4 规范性审核 - 可持续性协议 (Sustainability Protocol)](../docs/governance/meta-protocol-reviews/protocols/V4.md)
+
+- **结果 ID：** `HR-1C328F9FFE6AEE1F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：V4 规范性审核 - 可持续性协议 (Sustainability Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤害共同体。不可缺少的约束：再生优先于存量维持、不得保护有害系统、代际公平、多样性、不得无限压倒个体。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [V3 规范性审核 - 创新性协议 (Innovation Protocol)](../docs/governance/meta-protocol-reviews/protocols/V3.md)
+
+- **结果 ID：** `HR-D3835BD97F147A42`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：V3 规范性审核 - 创新性协议 (Innovation Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 价值：增加生命共同体的适应能力、问题解决能力与未来选择空间，是应对不确定性的关键。条件：仅当可检验、可逆优先、风险隔离、可停止、有失败反馈时才有价值。伤害：当以“创新”为由制造不可控、不可逆、外部化风险时，会伤害共同体。不可缺少的约束：可逆优先、小规模试验、风险隔离、可停止、失败反馈、禁止不可控外部风险。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [V2 规范性审核 - 效率性协议 (Efficiency Protocol)](../docs/governance/meta-protocol-reviews/protocols/V2.md)
+
+- **结果 ID：** `HR-C32095E69516906C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：V2 规范性审核 - 效率性协议 (Efficiency Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 选择产出/投入效率最大（单位资源产出最高）的行动。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [V1 规范性审核 - 延续性协议 (Continuity Protocol)](../docs/governance/meta-protocol-reviews/protocols/V1.md)
+
+- **结果 ID：** `HR-6585A5FC88149FFF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：V1 规范性审核 - 延续性协议 (Continuity Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 选择使系统延续时间最大（或延续概率最高）的行动。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [S4 规范性审核 - 网络协议 (Network Protocol)](../docs/governance/meta-protocol-reviews/protocols/S4.md)
+
+- **结果 ID：** `HR-1FAEFFF9C300160F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：S4 规范性审核 - 网络协议 (Network Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 价值：分布式协作、多中心治理、冗余、知识共享与局部失效隔离，提升系统韧性。条件：仅当责任可追溯、无隐形中心垄断、且局部失效可隔离时才有价值。伤害：当责任消失、隐形中心垄断、信息传染或网络效应锁定时，会伤害共同体。不可缺少的约束：责任可追溯、防止隐形中心、反锁定、局部失效隔离、多中心。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [S3 规范性审核 - 层级协议 (Hierarchy Protocol)](../docs/governance/meta-protocol-reviews/protocols/S3.md)
+
+- **结果 ID：** `HR-AE709C73EB8CCE73`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：S3 规范性审核 - 层级协议 (Hierarchy Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 价值：责任清晰、应急协调、专业分工与大规模复杂任务，是有效组织的工具。条件：仅当权力可问责、层级可撤销、决策可复核且底层有申诉与退出机制时才有价值。伤害：当层级不可问责、不可撤销、把服从当价值或剥夺底层权利时，会伤害共同体。不可缺少的约束：权力可问责、层级可撤销、决策可复核、申诉与退出、服从非价值。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [S2 规范性审核 - 开放边界协议 (Open-Boundary Protocol)](../docs/governance/meta-protocol-reviews/protocols/S2.md)
+
+- **结果 ID：** `HR-537499C7917FEE41`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：S2 规范性审核 - 开放边界协议 (Open-Boundary Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 系统允许外部输入、退出、迁移或扩展，边界可渗透。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [S1 规范性审核 - 封闭边界协议 (Closed-Boundary Protocol)](../docs/governance/meta-protocol-reviews/protocols/S1.md)
+
+- **结果 ID：** `HR-9CE0DFB3A119BC53`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：S1 规范性审核 - 封闭边界协议 (Closed-Boundary Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 系统在封闭或强边界内演化，外部输入/退出/迁移受限。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)](../docs/governance/meta-protocol-reviews/protocols/E4.md)
+
+- **结果 ID：** `HR-53D09798ED596327`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未来）。不可缺少的约束：禁止强制同质化、保留多样性、避免过早收敛、保留未来选择空间。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [E3 规范性审核 - 循环演化协议 (Cyclic-Evolution Protocol)](../docs/governance/meta-protocol-reviews/protocols/E3.md)
+
+- **结果 ID：** `HR-654AE58EEC903C53`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：E3 规范性审核 - 循环演化协议 (Cyclic-Evolution Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 价值：生态循环、资源再生、学习迭代、修复与周期性恢复，是再生能力的重要载体。条件：仅当循环是良性、真正再生而非路径依赖或表面重复时才有价值。伤害：当循环退化为恶性循环、路径依赖或锁定有害结构时会伤害共同体。不可缺少的约束：区分良性/恶性、识别路径依赖、支持真正再生、恶性循环须可停止。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [E2 规范性审核 - 非线性演化协议 (Nonlinear-Evolution Protocol)](../docs/governance/meta-protocol-reviews/protocols/E2.md)
+
+- **结果 ID：** `HR-4910D221A74D1112`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：E2 规范性审核 - 非线性演化协议 (Nonlinear-Evolution Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 价值：承认临界点、放大、涌现与不确定性，是对复杂系统的诚实描述，支撑预防原则。条件：仅当配套预防原则、沙盒、风险上限、可逆操作与实时反馈时才有价值。伤害：当以“不可预测”为由放弃约束、制造不可逆风险时会伤害共同体。不可缺少的约束：预防原则、沙盒、风险上限、可逆操作、实时反馈、区分良性/恶性涌现。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [E1 规范性审核 - 线性演化协议 (Linear-Evolution Protocol)](../docs/governance/meta-protocol-reviews/protocols/E1.md)
+
+- **结果 ID：** `HR-8F6026DF1EF643FE`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：E1 规范性审核 - 线性演化协议 (Linear-Evolution Protocol)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 价值：在局部、低耦合、关系稳定、可预测范围内，线性近似是简洁有效的建模与规划工具。条件：仅当系统满足低耦合、关系稳定、可预测，且设反馈与偏差检测时才有价值。伤害：当把复杂生命系统强行简化为直线、忽略临界点时会伤害共同体（误判崩溃）。不可缺少的约束：限定适用域、设反馈点、偏差检测、非线性退出条件、禁止过度简化。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [事实 Pending 总表（外部治理记录）](../docs/governance/meta-protocol-reviews/factual-pending-register.md)
+
+- **结果 ID：** `HR-EF6E1D0860AE3FEF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：事实 Pending 总表（外部治理记录）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONALACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [跨协议一致性红队（外部治理记录）](../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
+
+- **结果 ID：** `HR-52173A553C421E11`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：跨协议一致性红队（外部治理记录）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 否。V4 修订定义明确写入"V4 不是绝对压倒一切的价值，须受宪章原则 4（整体不可无限压倒个体）约束"，并在硬约束中列为第 6 条。PASS。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [元协议规范性审核（外部治理记录）](../docs/governance/meta-protocol-reviews/README.md)
+
+- **结果 ID：** `HR-25DB71123FA1CBC7`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：元协议规范性审核（外部治理记录）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本目录为外部治理记录，不修改 canonical 协议状态、不替代事实验证、不替代独立人类复核、不替代治理批准、不宣布协议正式晋级。V2、V3 保留为黄色协议（事实度量 pending），不在本任务中自行发明全成本公式或可逆性指数并冒充已验证标准。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [12 元协议规范性审核（外部治理记录）](../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+
+- **结果 ID：** `HR-8D592A920B9EDD0E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `12-META-PROTOCOL-NORMATIVE-REVIEW`
+- **问题：** 此来源记录了什么：12 元协议规范性审核（外部治理记录）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原定义： 选择使系统延续时间最大（或延续概率最高）的行动。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [生命共同体价值宪章](../docs/governance/life-community-value-charter.md)
+
+- **结果 ID：** `HR-B3910E7A27E481AC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：生命共同体价值宪章？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本宪章是点火项目的规范性价值前提，用于约束元协议、函数、案例和理论生成结果的价值方向。它不构成经验性证据，不替代数学证明、实验验证、案例核验、外部学科审查或治理批准。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Licensing Rights Inventory](../docs/governance/licensing-rights-inventory.md)
+
+- **结果 ID：** `HR-C936CEDA8BBC6085`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Licensing Rights Inventory？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: candidate audit for IGNITION-20260715-121Q8. This document is not legal advice and does not change the effective repository license.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Licensing Model Candidate](../docs/governance/licensing-model-candidate.md)
+
+- **结果 ID：** `HR-F58D1B491FB96C27`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Licensing Model Candidate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: candidate decision record. This is not legal advice and does not change the root LICENSE.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [知识体验入口与探索层](../docs/governance/knowledge-experience-layer.md)
+
+- **结果 ID：** `HR-9FE0A1492C44C9B3`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：知识体验入口与探索层？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 状态：任务 102 候选，只有普通合并、main 精确验证和全新克隆复验后才成为 Current 仓库能力。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [External Input Non-Republication Principle](../docs/governance/external-input-non-republication-principle.md)
+
+- **结果 ID：** `HR-43BF10109AF2485E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：External Input Non-Republication Principle？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本原则适用于所有从项目外部获得的材料，包括但不限于：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Charter System R1 — Architecture (Accepted / Current, on main, non-Activated)](../docs/governance/charter-system-r1.md)
+
+- **结果 ID：** `HR-715F3951A2B86789`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Charter System R1 — Architecture (Accepted / Current, on main, non-Activated)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: CURRENT (Accepted, non-Activated). Merged to main (merge commit 0e7c032, 2026-07-26) and promoted to Accepted/Current via independent exact-head acceptance + post-merge synchronization. Does not modify any existing charter or governance document's normative content (G2).
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Governance License Scope](../docs/governance/README.md)
+
+- **结果 ID：** `HR-F29753586C28F9EC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Governance License Scope？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** SPDX-License-Identifier: CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-121Q6C 执行结果](../agent-results/IGNITION-121Q6C-result.md)
+
+- **结果 ID：** `HR-1437A5C9924F3C9E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `121Q6C-RESULT`
+- **问题：** 此来源记录了什么：IGNITION-121Q6C 执行结果？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [Provenance Audit](../reports/math-foundation/provenance-audit-20260712.md)
 
 - **结果 ID：** `HR-71CEB8486B492BC9`
@@ -2169,6 +2572,1137 @@
 - **问题：** 此来源记录了什么：Blockers？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [第57期故事验收报告](../outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md)
+
+- **结果 ID：** `HR-A960756EFAB9D50A`
+- **日期：** 2026-07-12
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：第57期故事验收报告？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [第57期故事结构图](../outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md)
+
+- **结果 ID：** `HR-B55587D4D61D4426`
+- **日期：** 2026-07-12
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：第57期故事结构图？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 结论：PARTIALISOMORPHISM，可进入正文，但必须带边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [第57期故事样稿｜当一个名字变成接口](../outputs/stories/20260712-disobedience-subjectivity/story-longform.md)
+
+- **结果 ID：** `HR-E7A557E011CAB937`
+- **日期：** 2026-07-12
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：第57期故事样稿｜当一个名字变成接口？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** --- storyid: STORY-20260712-disobedience-subjectivity title: 第57期故事样稿｜当一个名字变成接口 focusfunctions:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [角色—身份—主体性补全书单（2026-07）](../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
+
+- **结果 ID：** `HR-3A14F1DDBF2ED824`
+- **日期：** 2026-07-12
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：角色—身份—主体性补全书单（2026-07）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 第 57 期照亮的不是一个孤立问题，而是一条长期缺口链：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [角色—身份碰撞批次路线](../outputs/research/role-identity-collision-batches-20260712.md)
+
+- **结果 ID：** `HR-49DD491E1CD0CF42`
+- **日期：** 2026-07-12
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：角色—身份碰撞批次路线？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION 059 next collision roadmap](../outputs/research/ignition-next-collision-roadmap-20260712.md)
+
+- **结果 ID：** `HR-E815F8AD25CFC77E`
+- **日期：** 2026-07-12
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：IGNITION 059 next collision roadmap？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION 059 UNESCO coverage ledger](../outputs/research/ignition-gap-map-unesco-coverage-20260712.md)
+
+- **结果 ID：** `HR-40912BAA99EEFD4A`
+- **日期：** 2026-07-12
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：IGNITION 059 UNESCO coverage ledger？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** --- title: IGNITION 059 UNESCO coverage ledger taskid: IGNITION-20260709-059 ---
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [验证报告：047 证据链补齐与 PR 11 合并前复核（IGNITION-20260709-049）](../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
+
+- **结果 ID：** `HR-799941EDE8CA07CB`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：验证报告：047 证据链补齐与 PR 11 合并前复核（IGNITION-20260709-049）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 结论：三条均满足门槛，不降回 candidate。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [两张表全量碰撞报告（two-tables-full-collision-report）](../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
+
+- **结果 ID：** `HR-BBF31FF3F05D22FE`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：两张表全量碰撞报告（two-tables-full-collision-report）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [材料分层图（source-layer-map）](../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
+
+- **结果 ID：** `HR-BCC48AE7649EA4FE`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：材料分层图（source-layer-map）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 来源：57｜李丹阳 × 脱不花：不听话的人（Get 笔记整理稿，作者之元，2026-07-11） 全文读取：完成（713 行 / 137161 字节 / SHA256 ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497） 附件命令文件 SHA256：218ec306ce1c8e6a8a437cb3d929ac788dd6d771e683489d4309a0c8f011f208
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Ψ₀ 判定矩阵（psi0-decision-matrix）](../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+
+- **结果 ID：** `HR-8079A8712F2B03BC`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Ψ₀ 判定矩阵（psi0-decision-matrix）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [机制抽取（mechanism-extraction）](../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+
+- **结果 ID：** `HR-4E500EB8BE311CB7`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：机制抽取（mechanism-extraction）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [生命共同体价值审查（life-community-value-audit）](../outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md)
+
+- **结果 ID：** `HR-F8C21CD0CD6A1F34`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：生命共同体价值审查（life-community-value-audit）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [独立复核主报告：脱不花×李丹阳长谈碰撞（IGNITION-20260709-056 第二视角）](../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+
+- **结果 ID：** `HR-052D55FD7EC8BACD`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：独立复核主报告：脱不花×李丹阳长谈碰撞（IGNITION-20260709-056 第二视角）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 命令「待审报告核心申报」列出 617→620、804→806、f₁=15%/3%、同构度 70%/65%/68%、A层锚点复用率100%、扩展注释归零 等。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [候选决策摘要（candidate-decision-summary）](../outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md)
+
+- **结果 ID：** `HR-46D4E1A9E463A4A0`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：候选决策摘要（candidate-decision-summary）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 是。经对两张表全量检索与逐篇精读，确认家庭/身份/价值感/托举/管理成本/支持轴函数表零命中，而材料在三个方向上提供了高置信、来源锚点≥2 的独立新原语：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [碰撞证据链：不听话的人 × 点火两张表（20260711）](../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+
+- **结果 ID：** `HR-628B84A2327F5C52`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：碰撞证据链：不听话的人 × 点火两张表（20260711）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [12 元协议投影（12-meta-protocol-projection）](../outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md)
+
+- **结果 ID：** `HR-241B716D50942EFC`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：12 元协议投影（12-meta-protocol-projection）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [元协议规范性审核发布审计 — IGNITION-20260709-043](../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
+
+- **结果 ID：** `HR-460EF60E3CF27DCA`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：元协议规范性审核发布审计 — IGNITION-20260709-043？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 宪章 PR 9（docs/life-community-value-charter-20260711）尚未合并。本任务未基于旧 main 发布，也未重复创建第二份宪章文件，而是以宪章分支为基线建立堆叠分支，将 12 个协议的外部治理记录叠加其上。在 9 合并前，本 PR（10）的基线是宪章分支；宪章合并后，本 PR 应重新基于合并后的 main（或由审查者处理）。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [审计：生命共同体价值宪章 README 入口](../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
+
+- **结果 ID：** `HR-A7B229336E1604AB`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：审计：生命共同体价值宪章 README 入口？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 验证全部通过（15/15）。文档已就绪，待提交、推送并创建 PR，不自动合并。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [D583 可移植来源引用清理审计报告（IGNITION-20260709-055）](../outputs/audit/d583-portable-source-reference-audit-20260711.md)
+
+- **结果 ID：** `HR-B72BF8B27748C5E3`
+- **日期：** 2026-07-11
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：D583 可移植来源引用清理审计报告（IGNITION-20260709-055）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** D583 文件中含有历史遗留的 macOS 本机绝对路径，作为原始来源锚点写入 3 处：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [来源清单](../outputs/book-collisions/20260709-22-book-validation/source-manifest.md)
+
+- **结果 ID：** `HR-37C1DABC2F087F11`
+- **日期：** 2026-07-09
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：来源清单？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 来自 Arvin-liu/1111/2026-07-09 1902/（commit 528276f5）：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [22 本书验证候选案例 · 正式案例表入表 crosswalk](../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
+
+- **结果 ID：** `HR-86779B6CDB3209B8`
+- **日期：** 2026-07-09
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：22 本书验证候选案例 · 正式案例表入表 crosswalk？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [抽取审计](../outputs/book-collisions/20260709-22-book-validation/extraction-audit.md)
+
+- **结果 ID：** `HR-D5166569C3FF6750`
+- **日期：** 2026-07-09
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：抽取审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [22 本书籍验证案例候选（可读版）](../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
+
+- **结果 ID：** `HR-27BADCB5D09C98AF`
+- **日期：** 2026-07-09
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：22 本书籍验证案例候选（可读版）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [22 本书籍验证案例候选 · 暂存层](../outputs/book-collisions/20260709-22-book-validation/README.md)
+
+- **结果 ID：** `HR-9A0447FE84ECBC5F`
+- **日期：** 2026-07-09
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：22 本书籍验证案例候选 · 暂存层？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本目录是 22 本书籍验证案例的候选暂存，不直接进入统一案例总表。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [两张表条目模板固化审计](../outputs/audit/two-tables-entry-template-finalization-audit-20260709.md)
+
+- **结果 ID：** `HR-9BF38326D66A104A`
+- **日期：** 2026-07-09
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：两张表条目模板固化审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 该报告已完成单条条目结构对比（旧函数 9 条 + D595-D599 + Ψ₀；旧案例 4 条 + C-0807-C-0809），提出统一函数 14 字段草案、统一案例 13 字段草案、得到大脑/ Agent-Codex 分工与迁移建议。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [两张表单条条目结构审计与统一模板草案](../outputs/audit/two-tables-entry-format-audit-20260709.md)
+
+- **结果 ID：** `HR-B7CF68ED12BA8B82`
+- **日期：** 2026-07-09
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：两张表单条条目结构审计与统一模板草案？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 结构更规范：基本信息 / 数学表达 / 判定理由 / 数学推导过程 / 关联案例 / 原文捞回，含变量解释与推导，是旧条目中离模板最近的形态。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [项目本体版本升级审计 2026-07-09](../outputs/audit/project-body-version-upgrade-audit-20260709.md)
+
+- **结果 ID：** `HR-F92361487A1AAD76`
+- **日期：** 2026-07-09
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：项目本体版本升级审计 2026-07-09？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** protocols=12 combinations=64 bookcases=22)
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [元协议版本迭代维护审计 2026-07-09](../outputs/audit/meta-protocol-version-iteration-audit-20260709.md)
+
+- **结果 ID：** `HR-AB7862B612E34394`
+- **日期：** 2026-07-09
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：元协议版本迭代维护审计 2026-07-09？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 点火主仓库已完成元协议生成层的文档/数据/模板/导航/审计升级；Ψ₀ 与两张表未改动，12 元协议作为 Pmeta 展开进入第0层候选结构。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [22 本书验证候选案例 · 正式案例表入表审计 2026-07-09](../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
+
+- **结果 ID：** `HR-617B14D24B6C52BE`
+- **日期：** 2026-07-09
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：22 本书验证候选案例 · 正式案例表入表审计 2026-07-09？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [输入材料快照 · 赛课机制下的教师生存困境](../outputs/collisions/20260708-teacher-competition/source-snapshot.md)
+
+- **结果 ID：** `HR-4B5539F6A578F48D`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：输入材料快照 · 赛课机制下的教师生存困境？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [新增注释 · 赛课机制下的教师生存困境](../outputs/collisions/20260708-teacher-competition/notes.md)
+
+- **结果 ID：** `HR-B3DBB7F4C3F52857`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：新增注释 · 赛课机制下的教师生存困境？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [新增函数候选 · 赛课机制下的教师生存困境](../outputs/collisions/20260708-teacher-competition/new-functions.md)
+
+- **结果 ID：** `HR-565A18C0C443C350`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：新增函数候选 · 赛课机制下的教师生存困境？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 注：五个候选均受 evidenceregimes(EVID-011/004) 约束，涉及普遍性表述须 pending，claim level ≤ L3。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [新增案例候选 · 赛课机制下的教师生存困境](../outputs/collisions/20260708-teacher-competition/new-cases.md)
+
+- **结果 ID：** `HR-CA887C40042191E7`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：新增案例候选 · 赛课机制下的教师生存困境？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 注：三个案例均来自单篇一线访谈，非随机抽样；涉及普遍性表述须 pending（evidenceregimes EVID-011/004）。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [扩展注释 · 赛课机制下的教师生存困境](../outputs/collisions/20260708-teacher-competition/expanded-notes.md)
+
+- **结果 ID：** `HR-70EDC5860A2E57C8`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：扩展注释 · 赛课机制下的教师生存困境？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [赛课机制下的教师生存困境碰撞报告](../outputs/collisions/20260708-teacher-competition/collision-report.md)
+
+- **结果 ID：** `HR-A9A90AF4C17EA1F8`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：赛课机制下的教师生存困境碰撞报告？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 文章以「赛课」机制为对象，揭示其如何将教师专业成长转化为可量化竞赛，并层层绑定职称、绩效、学校业绩与教研资源，最终造成教师身心代价与真实教学被挤压。核心机制链：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [输入材料快照 · P1 接入烟雾测试](../outputs/collisions/20260708-smoke-test/source-snapshot.md)
+
+- **结果 ID：** `HR-6FF393D82BA46184`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：输入材料快照 · P1 接入烟雾测试？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 某个学习者把一个旧项目拆成三层：主线仓库、临时救援仓库、本地备份目录。后来发现真正有价值的新增内容只存在于临时仓库中的五个内部结构件，而案例材料只是主线旧子集。于是他没有直接合并临时仓库，而是先做差异审计，再把五个结构件补回主线仓库，最后删除临时环境并保留救援分支作为凭证。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [不采纳项 · P1 接入烟雾测试](../outputs/collisions/20260708-smoke-test/rejected.md)
+
+- **结果 ID：** `HR-A3102269FA5CB3FD`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：不采纳项 · P1 接入烟雾测试？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [新增注释 · P1 接入烟雾测试](../outputs/collisions/20260708-smoke-test/notes.md)
+
+- **结果 ID：** `HR-4597E4725744281A`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：新增注释 · P1 接入烟雾测试？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [新增函数候选 · P1 接入烟雾测试](../outputs/collisions/20260708-smoke-test/new-functions.md)
+
+- **结果 ID：** `HR-3842FF66E7ACFEBF`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：新增函数候选 · P1 接入烟雾测试？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [新增案例候选 · P1 接入烟雾测试](../outputs/collisions/20260708-smoke-test/new-cases.md)
+
+- **结果 ID：** `HR-104843EAEAEBB434`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：新增案例候选 · P1 接入烟雾测试？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [扩展注释 · P1 接入烟雾测试](../outputs/collisions/20260708-smoke-test/expanded-notes.md)
+
+- **结果 ID：** `HR-7D4413587F58D270`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：扩展注释 · P1 接入烟雾测试？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [碰撞输出报告 · P1 接入烟雾测试](../outputs/collisions/20260708-smoke-test/collision-report.md)
+
+- **结果 ID：** `HR-53733A2AA5CF5DD7`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：碰撞输出报告 · P1 接入烟雾测试？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 输入描述了一个私有工程流程案例：主线仓库 / 临时救援仓库 / 本地备份三层结构 → 差异审计 → 只补回增量（五个内部结构件）→ 删除临时环境、保留救援分支。核心可判定结构：分层存储、差异审计优先、只回填增量、凭证保留。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [回填计划 · P1 接入烟雾测试](../outputs/collisions/20260708-smoke-test/backfill-plan.md)
+
+- **结果 ID：** `HR-BD43DC0D8B91689F`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：回填计划 · P1 接入烟雾测试？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [跨域 smoke test — 社会学碰撞报告](../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
+
+- **结果 ID：** `HR-6106E26409ECFA79`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：跨域 smoke test — 社会学碰撞报告？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** inputs/collisions/20260708-cross-domain-smoke-test/social.md（邻里积分制）
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [跨域 smoke test — 自然科学碰撞报告](../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
+
+- **结果 ID：** `HR-7DFD6B8ED7333B2A`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：跨域 smoke test — 自然科学碰撞报告？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** inputs/collisions/20260708-cross-domain-smoke-test/science.md（高通量筛选 p 值考核）
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [跨域 smoke test — 历史学碰撞报告](../outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md)
+
+- **结果 ID：** `HR-3D6271E0BA81267E`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：跨域 smoke test — 历史学碰撞报告？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** inputs/collisions/20260708-cross-domain-smoke-test/history.md（修志数字化积分）
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [跨域 smoke test — 跨域同构汇总](../outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md)
+
+- **结果 ID：** `HR-AEE11399D5CFD399`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：跨域 smoke test — 跨域同构汇总？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 验证「不同领域材料 → 统一两张表」流程是否跑得通，并确认框架能否识别跨域同构。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [两张表版本同步维护审计（2026-07-09 00:30）](../outputs/audit/two-tables-version-sync-audit-20260708.md)
+
+- **结果 ID：** `HR-2605B1957CCB9E09`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：两张表版本同步维护审计（2026-07-09 00:30）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 符合任务「只有 README / 两张表入口文件 / INDEX·总览文件 / 审计文件 发生变化」的约束。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [赛课机制第一批小批量回填审计](../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+
+- **结果 ID：** `HR-782E1E02D09B5CB2`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：赛课机制第一批小批量回填审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 第一批小批量回填完成。 新增 2 函数（D595、D596）+ 1 案例（C-0807），均已完成最小索引追加，来源字段保留，pending 标注到位，Ψ₀ 判定为真新增。后续应先复核新增条目的索引可见性，再考虑第二批。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [赛课机制第一批回填索引可见性验证](../outputs/audit/teacher-competition-index-visibility-check-20260708.md)
+
+- **结果 ID：** `HR-0FE03D4A4CA70A91`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：赛课机制第一批回填索引可见性验证？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** D595 条目文件 + INDEX 均命中，机制表达式可被检索 ✓
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）](../outputs/audit/teacher-competition-first-real-collision-audit-20260708.md)
+
+- **结果 ID：** `HR-42C319DFFA9AC5FD`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 首个真实小材料碰撞。验证 P1 机器数据接入碰撞工作流在真实材料上的表现：流程可跑、候选可生成、约束可落地。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [赛课机制教师生存困境碰撞批次收口审计](../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
+
+- **结果 ID：** `HR-55909FC062BE1FFA`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：赛课机制教师生存困境碰撞批次收口审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [赛课机制碰撞候选回填复核](../outputs/audit/teacher-competition-backfill-review-20260708.md)
+
+- **结果 ID：** `HR-94DECFED90CE354C`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：赛课机制碰撞候选回填复核？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 上一轮 4 条不采纳项经 Ψ₀ + P1 复核全部合理：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）](../outputs/audit/p1-collision-workflow-smoke-test-20260708.md)
+
+- **结果 ID：** `HR-8ACE59CDDDDFE0A2`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** inputs/collisions/20260708-smoke-test/
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NF-004 系统性钝化回填审计](../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
+
+- **结果 ID：** `HR-0DD59E3BBD5EEB55`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NF-004 系统性钝化回填审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 无任何现有函数覆盖「长期高压下群体形成低敏感/低反抗/低修复钝化稳态」这一社会心理群体结构。D364/D423 是上游不可逆判据，与 NF-004 弱同构但不重复。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NF-002 量化指标替代真实价值回填审计](../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
+
+- **结果 ID：** `HR-0E7B7E2D16E773BE`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NF-002 量化指标替代真实价值回填审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 无任何现有函数覆盖「可量化指标成为唯一显式入口→不可量化真实价值被排挤/替代」机制。 NF-002 不与任何条目重复。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NC-002 表演化假课与量化指标消解温度回填审计](../outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md)
+
+- **结果 ID：** `HR-29D94A1A94170774`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NC-002 表演化假课与量化指标消解温度回填审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 理由：案例表无等价条目；对应函数 D597 已入表、NF-003 已重定向 D173；复核明确「建议入表」；Ψ₀ 六维均通过。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [NC-001 职称硬门槛裹挟青年教师回填审计](../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
+
+- **结果 ID：** `HR-728439CFB210CA75`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：NC-001 职称硬门槛裹挟青年教师回填审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 理由：案例表无等价条目；对应函数 D595 已入表；复核明确「建议入表」；Ψ₀ 六维均通过。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [MF-0001~0005 Codespace 救援复核](../outputs/audit/mf-0001-0005-rescue-review-20260708.md)
+
+- **结果 ID：** `HR-EA120E5D0D0FA5FF`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：MF-0001~0005 Codespace 救援复核？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 正式表自举相关文件：0024-T14-自举元函数层级.md、0190-D141-自举元函数.md、0001-Ψ₀元函数完整数学定义.md 等。 其中 D141-自举元函数.md 内含 Jn^+(FD141)=1、Jn^-(FD141)=0、Converged(FD141)⇔... 等表述，但这是对 D141 自身函数做正反向收敛检查，并非把 MF-0001~0005 定义为 MF-0000 的内部子通道构件。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [MF-0001~0005 补入审计记录（2026-07-08）](../outputs/audit/mf-0001-0005-integration-audit-20260708.md)
+
+- **结果 ID：** `HR-B9ED64291673ACBC`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：MF-0001~0005 补入审计记录（2026-07-08）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** MF-0001~0005 是 Codespace 救援函数表中 Section 0 自举元函数（MF-0000）的 5 个内部子通道/判定器，在差异审计（codespace-rescue-two-tables-diff-audit-20260708.md）中被识别为救援函数表独有增量（救援 476 / 正式 612 / 重叠 471 / 救援独有 5）。复核报告（mf-0001-0005-rescue-review-20260708.md）确认：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [D598 系统性钝化索引可见性验证](../outputs/audit/d598-index-visibility-check-20260708.md)
+
+- **结果 ID：** `HR-2E400B8FD7CC6B10`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：D598 系统性钝化索引可见性验证？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** D598 能被以下全部语义关键词召回（命中位置见下）：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [D597 量化指标替代真实价值索引可见性验证](../outputs/audit/d597-index-visibility-check-20260708.md)
+
+- **结果 ID：** `HR-32EEBB16DB448F9C`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：D597 量化指标替代真实价值索引可见性验证？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 对应文件：统一函数总表/0607-D597-量化指标替代真实价值.md
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [跨域 smoke test 审计](../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
+
+- **结果 ID：** `HR-52502D2B9C02B338`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：跨域 smoke test 审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 验证「不同领域材料 → 统一两张表碰撞」流程可运行性，并确认框架跨域同构识别能力。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [跨域候选函数小批量回填审计](../outputs/audit/cross-domain-candidate-function-small-batch-backfill-audit-20260708.md)
+
+- **结果 ID：** `HR-D1FA676BB432B571`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：跨域候选函数小批量回填审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 时间：2026-07-08 16:27 (GMT+8) 仓库：when-systems-catch-fire（分支 main） 回填依据：outputs/audit/cross-domain-candidate-function-review-20260708.md
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [跨域候选函数复核](../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+
+- **结果 ID：** `HR-B03FAB6963DCB9E5`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：跨域候选函数复核？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 复核对象：NF-X1 指标排名隐性分层、NF-X2 刷分博弈、NF-X3 指标驱动噪声累积 来源：outputs/collisions/20260708-cross-domain-smoke-test/、outputs/audit/cross-domain-smoke-test-audit-20260708.md 基线函数：D597 量化指标替代真实价值（统一函数总表/0607-D597-量化指标替代真实价值.md） 判定框架：Ψ₀ 六维（C / M / Iiso / Lmeta / Gδ / Pmeta）
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [跨域候选函数批次收口审计](../outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md)
+
+- **结果 ID：** `HR-699DF907D9234853`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：跨域候选函数批次收口审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 时间：2026-07-08 16:38 (GMT+8) 仓库：when-systems-catch-fire（分支 main） 审计性质：轻量验收 + 批次收口（不新增函数、不新增案例、不修改 data/schema）
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Codespace 救援两张表差异审计](../outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md)
+
+- **结果 ID：** `HR-09324A8008A3BD3D`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Codespace 救援两张表差异审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 两张表（函数总表 / 案例总表）本质上属于点火项目 Arvin-liu/when-systems-catch-fire 的核心资产，不应长期分裂到独立仓库维护。LIANGZHANGBIAO / Unified-Case-Table / Unified-Function-Table 仅作为 Codespace 救援缓存，不作为长期维护主线。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [C-0809 表演化假课与量化指标消解温度索引可见性验证](../outputs/audit/c0809-index-visibility-check-20260708.md)
+
+- **结果 ID：** `HR-81C5F5F4C67DE686`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：C-0809 表演化假课与量化指标消解温度索引可见性验证？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** | C-0809 | 表演化假课与量化指标消解温度 | 指标化评价使可量化项替代真实价值，表演态排除临场生成。 |
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [C-0808 职称硬门槛裹挟青年教师索引可见性验证](../outputs/audit/c0808-index-visibility-check-20260708.md)
+
+- **结果 ID：** `HR-A598ACE26626A803`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：C-0808 职称硬门槛裹挟青年教师索引可见性验证？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** | C-0808 | 职称硬门槛裹挟青年教师 | 职称硬门槛使青年教师可拒绝性趋零，结构裹挟大于主观意愿。 |
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [点火项目整体认知初始化 — Agent 认知报告](../outputs/audit/agent-project-understanding-20260708.md)
+
+- **结果 ID：** `HR-8FAEED857E0F9416`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：点火项目整体认知初始化 — Agent 认知报告？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 生成时间：2026-07-08 21:25 (GMT+8) 任务来源：用户发来的「点火项目整体认知初始化」指令（.md 附件） 执行方式：只读阅读 GitHub 主仓库（README / docs / outputs/audit / 统一函数总表 / 统一案例总表 / data / schemas / tools），未修改任何核心资产。 主仓库路径：/Users/zhiyuan/Agent 工作区/Codex/2026-06-25/github-cp-agent-500-600-1000/when-systems-catch-fire git 状态（只读确认）：main 与 origin…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent 碰撞阶段收口审计（2026-07-08 23:55）](../outputs/audit/agent-collision-phase-closeout-20260708.md)
+
+- **结果 ID：** `HR-252ED61CFAF40F35`
+- **日期：** 2026-07-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Agent 碰撞阶段收口审计（2026-07-08 23:55）？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 对当前 Get 笔记碰撞准备阶段做封版整理，固化工作流、得到大脑操作指南、碰撞模板，并确认本阶段未越界（未改表、未新增、仓库干净）。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [v0.2 阶段定位](../outputs/getbrain/v0.2-summary-and-closure-20260707.md)
+
+- **结果 ID：** `HR-D8EFCE2DACAA135F`
+- **日期：** 2026-07-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：v0.2 阶段定位？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** --- title: "v0.2 总结与收口" date: "2026-07-07" ---
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [故事化评分维度](../outputs/getbrain/storytelling-case-backlog-draft-20260707.md)
+
+- **结果 ID：** `HR-B42FDD29BFB492B0`
+- **日期：** 2026-07-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：故事化评分维度？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** --- title: "故事化案例优先级规划" author: "之元" date: "2026-07-07" ---
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [经典问题 benchmark 卡片：叙事为什么能改变人的理解](../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+
+- **结果 ID：** `HR-D2F7959438110A91`
+- **日期：** 2026-07-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：经典问题 benchmark 卡片：叙事为什么能改变人的理解？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** --- title: "点火框架经典问题测试补丁" author: "之元" date: "2026-07-07" ---
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [v0.2 P0 收口复核审计](../outputs/audit/v0.2-p0-closeout-audit-20260707.md)
+
+- **结果 ID：** `HR-996B1E97820089E9`
+- **日期：** 2026-07-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：v0.2 P0 收口复核审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** v0.2 的 P0 阶段已经完成编号、风险检查与 pending 登记等基础治理工作。本次复核只确认 P0 是否可以关闭，以及 README、总结页、编号索引、风险清单和 pending 登记之间是否仍然互相可达。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [v0.2 CP/SB 编号前计数差异诊断](../outputs/audit/v0.2-id-preflight-discrepancy-20260707.md)
+
+- **结果 ID：** `HR-3DFBBB5A261064E9`
+- **日期：** 2026-07-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：v0.2 CP/SB 编号前计数差异诊断？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 如果 CP=34、SB=30 且无重复、无误识别，则下一步应：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [v0.2 CP/SB 编号前计数审计](../outputs/audit/v0.2-id-preflight-audit-20260707.md)
+
+- **结果 ID：** `HR-655695609BF38D4A`
+- **日期：** 2026-07-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：v0.2 CP/SB 编号前计数审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 在正式分配 CP-001 至 CP-033、SB-001 至 SB-030 前，复核原始 Markdown 中的可编号条目数量。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [P1 机器可读数据完整性审计](../outputs/audit/p1-machine-readable-data-audit-20260707.md)
+
+- **结果 ID：** `HR-12A0A75721794540`
+- **日期：** 2026-07-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：P1 机器可读数据完整性审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本报告审计 P1 机器可读化阶段的全部产物，包括：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [P1 机器可读化抽取可行性审计](../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
+
+- **结果 ID：** `HR-850E9CC7F0805B92`
+- **日期：** 2026-07-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：P1 机器可读化抽取可行性审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 复核 P1-0 规划的数据集是否能够从现有 Markdown 文档稳定抽取，并确定后续 P1-2 至 P1-6 的执行策略。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [v0.2 结构缺漏审计](../outputs/getbrain/v0.2-structural-gap-audit-20260706.md)
+
+- **结果 ID：** `HR-B16FC8B1AD9D6B20`
+- **日期：** 2026-07-06
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：v0.2 结构缺漏审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本审计用于识别点火框架当前仍需补齐的结构性缺口，并为后续任务 C-H 提供排序依据。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [v0.2 函数依赖图初稿](../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+
+- **结果 ID：** `HR-DE9BF5C4104738D3`
+- **日期：** 2026-07-06
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：v0.2 函数依赖图初稿？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** --- title: "函数依赖图初稿生成" author: "之元" date: "2026-07-06" ---
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [点火项目总体定位更新](../outputs/getbrain/project-position-update-20260706.md)
+
+- **结果 ID：** `HR-87A808AE0E53A33B`
+- **日期：** 2026-07-06
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：点火项目总体定位更新？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 它提供一套用于识别、判定和收敛跨领域同构结构的函数系统，包含：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [失败类型学初稿](../outputs/getbrain/failure-typology-draft-20260706.md)
+
+- **结果 ID：** `HR-D6BBD09179294577`
+- **日期：** 2026-07-06
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：失败类型学初稿？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** --- title: "失败类型学初稿生成" author: "之元" date: "2026-07-07" ---
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [证据制度卡片：数学](../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+
+- **结果 ID：** `HR-448288B011711AEF`
+- **日期：** 2026-07-06
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：证据制度卡片：数学？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** --- title: "证据制度库初稿生成" author: "之元" date: "2026-07-07" ---
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [学科理论核卡片：物理学](../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+
+- **结果 ID：** `HR-FD9206BEE6E7782D`
+- **日期：** 2026-07-06
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：学科理论核卡片：物理学？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** --- title: "学科理论核试跑" author: "之元" date: "2026-07-06" ---
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [经典问题 benchmark 卡片：黎曼猜想](../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+
+- **结果 ID：** `HR-A8550987D2A41DAB`
+- **日期：** 2026-07-06
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：经典问题 benchmark 卡片：黎曼猜想？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** --- title: "点火框架经典问题测试" author: "之元" date: "2026-07-07" ---
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

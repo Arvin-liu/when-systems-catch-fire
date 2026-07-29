@@ -2,6 +2,8 @@
 
 `RESULTS/` 把机器注册表、报告和历史资产投影为可直接阅读的结果。它不复制或提高证据权限；每个结论仍受来源、成熟度、处置和 claim ceiling 约束。
 
+不知道结果文件名时，从[统一知识入口](../KNOWLEDGE/README.md)、[最新变化](../KNOWLEDGE/WHATS-NEW.md)、[知识地图](../KNOWLEDGE/MAP.md)或[搜索](../KNOWLEDGE/SEARCH.md)进入；`RESULTS/` 继续保存当前治理结论和任务 101 结果层。
+
 - [LATEST.md](./LATEST.md)：当前最重要的结论与状态。
 - [CORRECTIONS.md](./CORRECTIONS.md)：撤回、降级、隔离与修订。
 - [OPEN-QUESTIONS.md](./OPEN-QUESTIONS.md)：未解决问题、所需证据和停止条件。

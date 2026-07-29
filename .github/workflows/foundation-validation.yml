@@ -34,6 +34,7 @@ on:
       - 'tests/test_human_front_door.py'
       - 'tests/test_human_visibility_gate.py'
       - 'tests/test_self_correction_engine.py'
+      - 'tests/test_knowledge_experience.py'
       - 'tests/test_stage_snapshot_publication.py'
       - 'tests/stage_snapshot_responsibility_actor_cases.json'
       - 'tools/operations/stage_snapshot_contract.py'
@@ -43,6 +44,7 @@ on:
       - 'docs/generated/recent-stage-results.md'
       - 'docs/operations/stage-snapshot-publication.md'
       - 'HUMAN-READING.md'
+      - 'KNOWLEDGE/**'
       - 'RESULTS/**'
       - 'data/governance/**'
       - 'docs/ai-assistant-usage-reference.md'
@@ -90,6 +92,7 @@ on:
       - 'tests/test_human_front_door.py'
       - 'tests/test_human_visibility_gate.py'
       - 'tests/test_self_correction_engine.py'
+      - 'tests/test_knowledge_experience.py'
       - 'tests/test_stage_snapshot_publication.py'
       - 'tests/stage_snapshot_responsibility_actor_cases.json'
       - 'tools/operations/stage_snapshot_contract.py'
@@ -99,6 +102,7 @@ on:
       - 'docs/generated/recent-stage-results.md'
       - 'docs/operations/stage-snapshot-publication.md'
       - 'HUMAN-READING.md'
+      - 'KNOWLEDGE/**'
       - 'RESULTS/**'
       - 'data/governance/**'
       - 'docs/ai-assistant-usage-reference.md'
@@ -149,7 +153,9 @@ jobs:
         run: |
           python3 tools/governance/build_human_results.py --check
           python3 tools/governance/run_self_correction.py --check
+          python3 tools/governance/build_knowledge_experience.py --check
           python3 tools/governance/validate_human_visibility.py
+          python3 tools/governance/validate_knowledge_experience.py
       - run: python3 tools/foundation/verify_core_claims.py --check
       - run: python3 tools/foundation/verify_079.py --check
       - run: python3 tools/foundation/validate_080_adjudications.py
@@ -220,7 +226,7 @@ jobs:
       - run: python3 -m unittest tests.test_iteration_sync -v
       - run: python3 -m unittest tests.test_human_front_door -v
       - run: python3 -m unittest tests.test_change_propagation -v
-      - run: python3 -m unittest tests.test_human_visibility_gate tests.test_self_correction_engine -v
+      - run: python3 -m unittest tests.test_human_visibility_gate tests.test_self_correction_engine tests.test_knowledge_experience -v
       - run: python3 -m unittest tests.test_stage_snapshot_publication -v
       - run: python3 -m unittest tests.test_era_resolver_generalization tests.test_generated_output_authority -v
       - run: python3 -m unittest tests.test_phase_e_candidate -v

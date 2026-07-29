@@ -793,14 +793,14 @@
     },
     {
       "authority": "canonical",
-      "canonical_target": "HUMAN-READING.md",
+      "canonical_target": "KNOWLEDGE/README.md",
       "component_id": "human_knowledge_surfaces",
       "component_type": "repository_infrastructure",
-      "description": "机器记录与人类结果成对生成、两步可达、无默认隐藏并通过 CI 保持同步。",
-      "label": "人类可读知识表面",
+      "description": "机器记录与人类结果成对生成，并通过统一入口、What's New、主题地图、资产卡、分层阅读、全量搜索、别名与双向依赖在两步内可达。",
+      "label": "知识体验入口与人类可读表面",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {
-        "source": "HUMAN-READING.md",
+        "source": "KNOWLEDGE/README.md",
         "status": "current"
       },
       "map_projection": {
@@ -810,12 +810,18 @@
       },
       "path_patterns": [
         "HUMAN-READING.md",
+        "KNOWLEDGE/",
         "RESULTS/",
         "data/governance/human-results/",
+        "data/governance/knowledge-experience/",
         "data/governance/self-correction/",
         "docs/generated/ignition-system-map.svg",
+        "docs/governance/knowledge-experience-layer.md",
+        "schemas/governance/knowledge-asset-card.schema.json",
+        "schemas/governance/knowledge-change.schema.json",
         "tools/governance/",
         "tests/test_human_visibility_gate.py",
+        "tests/test_knowledge_experience.py",
         "tests/test_self_correction_engine.py"
       ]
     },

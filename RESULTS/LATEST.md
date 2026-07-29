@@ -13,8 +13,8 @@
 
 |问题|当前结果|成熟度/证据边界|来源|处置|
 |---|---|---|---|---|
-|历史函数资产是否全部有处置？|迁移后重算的 5,708 个发现项均有 canonical identity card 与最终处置或明确 quarantine。|登记闭合；不等于定义、证明或实证闭合。|[函数深度裁决](../docs/foundation/historical-function-deep-adjudication-20260729.md)|REGISTRY_CLOSED_WITH_OPEN_OBLIGATIONS|
-|非函数断言是否全部被治理链覆盖？|迁移后重算的 17,259 个 canonical claim 均有处置或 quarantine；当前公开违规为 0。|语料与规则范围内的仓库审计；不证明断言真值。|[任务 100 报告](../reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md)|REGISTRY_CLOSED_WITH_OPEN_OBLIGATIONS|
+|历史函数资产是否全部有处置？|任务 102 排除生成投影回灌后重算的 5,662 个发现项均有 canonical identity card 与最终处置或明确 quarantine。|登记闭合；不等于定义、证明或实证闭合。|[函数深度裁决](../docs/foundation/historical-function-deep-adjudication-20260729.md)|REGISTRY_CLOSED_WITH_OPEN_OBLIGATIONS|
+|非函数断言是否全部被治理链覆盖？|同次重算的 17,331 个 canonical claim 均有处置或 quarantine；当前公开违规为 0。|语料与规则范围内的仓库审计；不证明断言真值。|[任务 100 报告](../reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md)|REGISTRY_CLOSED_WITH_OPEN_OBLIGATIONS|
 |门控乘积模型是否统一四力？|没有。现有模型缺少共同物理载体、量纲一致作用量、规范结构、可重整化/有效场论边界与实验预测。|模型反例与定义义务；不推出其他统一路线失败。|[物理资产纠偏](../docs/foundation/physics-asset-correction-20260729.md)|WITHDRAW_UNIVERSAL_IMPOSSIBILITY_CLAIM|
 |大一统是否已被证明不可能？|没有。单一模型失败、哥德尔类比或跨域结构相似都不能推出所有可能理论不可能。|开放物理问题；不存在项目内 no-go theorem。|[物理资产纠偏](../docs/foundation/physics-asset-correction-20260729.md)|OPEN_RESEARCH_QUESTION|
 |系统图代表什么？|它是 registry/topology/layout 的确定性导航投影。|仓库结构证据；不证明现实因果、同构或完整性。|[系统图说明](../docs/architecture/interactive-system-map.md)|RETAIN_AS_NAVIGATION_PROJECTION|

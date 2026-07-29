@@ -13,9 +13,9 @@ SPEC.loader.exec_module(MODULE)
 class HumanVisibilityGateTests(unittest.TestCase):
     def test_current_surfaces_are_visible_paired_and_reachable(self):
         result = MODULE.validate()
-        self.assertGreaterEqual(result["human_surfaces"], 10)
-        self.assertGreaterEqual(result["machine_human_pairs"], 8)
-        self.assertGreaterEqual(result["two_click_destinations"], 8)
+        self.assertGreaterEqual(result["human_surfaces"], 20)
+        self.assertGreaterEqual(result["machine_human_pairs"], 14)
+        self.assertGreaterEqual(result["two_click_destinations"], 16)
 
 
 if __name__ == "__main__":

@@ -1,9 +1,14 @@
 # 点火项目阅读导航
 
-> 当前快照：2026-07-29，任务 101 人类阅读层与持续自我纠错引擎。历史版本和关闭证据仍在 Git、CHANGELOG 与原报告中保留。
+> 当前快照：2026-07-30，任务 102 知识体验入口与探索层。分支提交在普通合并和 `main` 复验前仍是 Candidate；历史版本和关闭证据保留在 Git、CHANGELOG 与原报告中。
 
 ## 先看结果
 
+- [统一知识入口](./KNOWLEDGE/README.md)
+- [最新变化](./KNOWLEDGE/WHATS-NEW.md)
+- [知识地图](./KNOWLEDGE/MAP.md)
+- [搜索与交叉引用](./KNOWLEDGE/SEARCH.md)
+- [分层阅读](./KNOWLEDGE/READING-LAYERS.md)
 - [人类阅读总入口](./HUMAN-READING.md)
 - [当前结果](./RESULTS/LATEST.md)
 - [纠正与撤回](./RESULTS/CORRECTIONS.md)
@@ -43,6 +48,9 @@
 - [影响分析](./data/governance/self-correction/impact-analysis.jsonl)
 - [证据谱系变化](./data/governance/self-correction/evidence-lineage-delta.jsonl)
 - [自纠错审计发现](./data/governance/self-correction/audit-findings.jsonl)
+- [知识体验 manifest](./data/governance/knowledge-experience/manifest.json)
+- [全量搜索索引](./data/governance/knowledge-experience/search-index.jsonl)
+- [覆盖审计](./data/governance/knowledge-experience/coverage.json)
 
 机器记录与人类结果必须成对存在。机器记录可复算，但不自动拥有更高真值；人类摘要可阅读，但不覆盖机器来源或原报告。
 

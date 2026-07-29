@@ -6,33 +6,33 @@
 
 ## 函数资产
 
-任务 101 在移除退役站点文件并加入新阅读层后重算，当前登记 **5,708** 个 canonical identity card，主要分布如下：
+任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,662** 个 canonical identity card，主要分布如下：
 
-- `UNRESOLVED_IDENTITY`：3,368；
-- `ALGORITHM_OR_WORKFLOW`：1,800；
+- `UNRESOLVED_IDENTITY`：3,273；
+- `ALGORITHM_OR_WORKFLOW`：1,849；
 - `RELATION_OR_CONSTRAINT`：227；
 - `CONJECTURE_OR_RESEARCH_CANDIDATE`：122；
 - `PARAMETRIC_MATHEMATICAL_MODEL` 与 `SCORING_OR_INDEX_FUNCTION`：各 72；
 - 其余为 gate/classifier、heuristic、structural metaphor、toy model、tested index 或无效伪函数。
 
-处置上，3,860 项 `QUARANTINE_UNTIL_DEFINED`，77 项 `DOWNGRADE_TO_PENDING`，44 项 `DOWNGRADE_TO_CONJECTURE`。仅 1 项在该登记口径中标作 `KEEP_AS_ESTABLISHED_MATH`；这不意味着仓库只有一个数学事实，而是该轮资产级证据与身份门禁的保守结果。
+处置上，3,765 项 `QUARANTINE_UNTIL_DEFINED`，77 项 `DOWNGRADE_TO_PENDING`，44 项 `DOWNGRADE_TO_CONJECTURE`。仅 1 项在该登记口径中标作 `KEEP_AS_ESTABLISHED_MATH`；这不意味着仓库只有一个数学事实，而是该轮资产级证据与身份门禁的保守结果。
 
 具体入口：[身份卡](../data/foundation/function-assets/identity-cards.jsonl) · [依赖闭包](../data/foundation/function-assets/dependency-closure.jsonl) · [证明与实证义务](../data/foundation/function-assets/proof-empirical-obligations.jsonl) · [反例](../data/foundation/function-assets/counterexample-registry.jsonl) · [quarantine](../data/foundation/function-assets/unresolved-quarantine.jsonl) · [人类说明](../docs/foundation/historical-function-deep-adjudication-20260729.md)
 
 ## 非函数断言
 
-任务 101 对迁移后语料重新运行任务 100 生成器，当前登记 **17,259** 个 canonical claim。主要类别包括：
+任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,331** 个 canonical claim。主要类别包括：
 
-- 未解析断言 5,396；
-- 数学/定理型 2,720；
-- 跨域对应 2,165；
-- 机制/因果 2,098；
-- 经验/文献 1,936；
-- 本体/形而上 835；
-- 不可能性/普遍断言 698；
+- 未解析断言 5,421；
+- 数学/定理型 2,726；
+- 跨域对应 2,178；
+- 机制/因果 2,100；
+- 经验/文献 1,950；
+- 本体/形而上 836；
+- 不可能性/普遍断言 700；
 - 解释框架 474；其余为描述、规律、规范和预测类。
 
-处置上，6,471 项 `HISTORICAL_ONLY`，2,497 项 `QUARANTINED_AMBIGUOUS`，另有 3,042 项等待证明、文献或经验检验。5 项无支持强结论保持撤回；活动中的结论回弹为 0。闭合语义仍只是“有处置或 quarantine”。
+处置上，6,474 项 `HISTORICAL_ONLY`，2,518 项 `QUARANTINED_AMBIGUOUS`，另有 3,054 项等待证明、文献或经验检验。5 项无支持强结论保持撤回；活动中的结论回弹为 0。闭合语义仍只是“有处置或 quarantine”。
 
 具体入口：[claim registry](../data/foundation/nonfunction-claims/claim-registry.jsonl) · [依赖图](../data/foundation/nonfunction-claims/dependency-graph.jsonl) · [证据谱系](../data/foundation/nonfunction-claims/evidence-lineage.jsonl) · [推断风险](../data/foundation/nonfunction-claims/inference-risk-report.jsonl) · [回弹报告](../data/foundation/nonfunction-claims/conclusion-rebound-report.jsonl) · [人类索引](../docs/foundation/nonfunction-claim-adjudication-index.md)
 

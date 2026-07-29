@@ -1,18 +1,20 @@
-# 点火人类阅读总入口
+# 点火人类阅读路线
 
-本页是普通读者的 canonical 导航。它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必须能从本页或 `RESULTS/` 找到人类可读对应物；人类摘要不得改变原记录的成熟度和断言上限。
+无需预知路径的 canonical 入口已经迁移到[点火知识入口](./KNOWLEDGE/README.md)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必须有可发现的人类对应物；人类摘要不得改变原记录的成熟度和断言上限。
 
 ## 十分钟了解当前状态
 
-1. 读 [当前结果](./RESULTS/LATEST.md)，先看仓库现在能支持什么。
-2. 读 [纠正与撤回](./RESULTS/CORRECTIONS.md)，避免继承已经撤回的强结论。
-3. 读 [开放问题](./RESULTS/OPEN-QUESTIONS.md)，区分完成的治理工作与尚未完成的科学、数学和实证工作。
-4. 需要细节时，再进入 [裁决总结](./RESULTS/ADJUDICATION-SUMMARY.md)、[研究与文章](./RESULTS/RESEARCH-AND-ARTICLES.md) 或 [全部结果台账](./RESULTS/CHRONOLOGY.md)。
+1. 从[统一知识入口](./KNOWLEDGE/README.md)选择“最近变化”“按主题探索”“搜索”或“分层阅读”。
+2. 读 [当前结果](./RESULTS/LATEST.md)，先看仓库现在能支持什么。
+3. 读 [纠正与撤回](./RESULTS/CORRECTIONS.md)，避免继承已经撤回的强结论。
+4. 读 [开放问题](./RESULTS/OPEN-QUESTIONS.md)，区分完成的治理工作与尚未完成的科学、数学和实证工作。
 
 ## 按目的阅读
 
 |你的目的|先读|继续读|
 |---|---|---|
+|不知道名称或路径，只想探索|[知识地图](./KNOWLEDGE/MAP.md)|[最新变化](./KNOWLEDGE/WHATS-NEW.md)、[搜索](./KNOWLEDGE/SEARCH.md)|
+|快速读懂一篇长文|[分层阅读](./KNOWLEDGE/READING-LAYERS.md)|对应完整来源、[统一资产卡](./KNOWLEDGE/ASSET-CARDS.md)|
 |判断点火是什么、当前做到哪里|[当前结果](./RESULTS/LATEST.md)|[项目现状](./docs/project-current-state.md)、[架构](./ARCHITECTURE.md)|
 |查看历史错误怎样修正|[纠正与撤回](./RESULTS/CORRECTIONS.md)|[历史纠正日志](./docs/foundation/historical-correction-log.md)|
 |查看函数、断言资产裁决|[裁决总结](./RESULTS/ADJUDICATION-SUMMARY.md)|[函数深度裁决](./docs/foundation/historical-function-deep-adjudication-20260729.md)、[非函数断言索引](./docs/foundation/nonfunction-claim-adjudication-index.md)|
@@ -35,11 +37,13 @@
 
 自动生成的历史条目只是导航和保真摘要，不是新的裁决。发生冲突时，以原始来源、现行治理资产和明确状态字段为准。
 
+任务 102 的资产卡、What's New、主题索引、别名和分层阅读由同一机器 manifest 生成并校验。旧称可继续搜索，但必须跳到当前 replacement 与 supersession；不得把撤回结论当作现行知识。
+
 ## 当前权威层次
 
 1. Git 当前 `main` 的正式资产、schema、测试和状态字段；
 2. 任务 98—100 的现行函数与非函数裁决；
-3. 本轮生成的人类结果与 Claim Delta 投影；
+3. 知识体验层的人类结果、搜索与 Claim Delta 投影；
 4. 历史报告、旧表和旧措辞，仅作为来源与变更证据。
 
 独立 GitHub Pages 阅读站已退出维护，不再是权威或同步面。仓库 Markdown 与其中的相对链接是唯一持续维护的人类阅读层。
