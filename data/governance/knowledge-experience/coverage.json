@@ -27,11 +27,11 @@
     "HR-FCBAA498CBEB783C"
   ],
   "featured_function_cards": 12,
-  "function_registry_records": 5662,
+  "function_registry_records": 5663,
   "historical_aliases": 5,
   "historical_result_audit": {
     "CURRENT_OR_SCOPED_SOURCE": 253,
-    "MACHINE_ONLY": 22938,
+    "MACHINE_ONLY": 22939,
     "NOT_MEANINGFUL_PUBLIC_CHANGE": 24,
     "SOURCE_MISSING": 0,
     "STALE_OR_INTERMEDIATE": 24,
@@ -45,6 +45,6 @@
   "result_asset_cards": 284,
   "result_sources": 284,
   "schema_version": "1.0.0",
-  "search_records": 23277,
+  "search_records": 23278,
   "snapshot_date": "2026-07-30"
 }
