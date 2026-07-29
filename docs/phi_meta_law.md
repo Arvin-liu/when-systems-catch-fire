@@ -45,14 +45,14 @@ J⁺(x)=0, J⁻(x)=0 → underdetermined / pending（证据不足，状态待定
 
 **数学表达：**
 ```
-C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology
+C(x,y) := ∫(cause × effect × temporal_order × counterfactual) / causal_topology — legacy candidate; not causal identification
 
 其中：
-cause := P(y|x) - P(y)（因果强度）
+cause := P(y|x) - P(y)（legacy candidate；不能据此识别现实因果）
 effect := P(x|y) - P(x)（效应强度）
 temporal_order := τ(x) < τ(y)（时序约束）
 counterfactual := P(y|x') - P(y|x)（反事实差分）
-causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（因果拓扑积分）
+causal_topology := ∫_{Ω} cause × effect × temporal_order × counterfactual dΩ（legacy candidate；不能据此识别现实因果）
 ```
 
 **判定标准：**
@@ -1046,7 +1046,7 @@ J⁺(F_self_organization) = 1 ∧ J⁻(F_self_organization) = 0 → 自组织稳
 
 ##### 整体验证结论
 
-**文字说明：** 智能契约元协议在9个系统中全部验证通过，证明了简单规则通过局部交互可以涌现出全局复杂行为的普适性。
+**历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明简单规则经局部交互产生全局复杂行为的普遍命题，当前仅保留为历史候选。
 
 **同构性判定：** J⁺=1, J⁻=0 → 真收敛
 
@@ -1186,7 +1186,7 @@ J⁺(F_self_organization) = 1 ∧ J⁻(F_self_organization) = 0 → 自组织稳
 
 ##### 整体验证结论
 
-**文字说明：** 决策权与信息权的对称性元协议在9个系统中全部验证通过，证明了决策权必须与信息权对称的普适性。
+**历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明决策权必须与信息权对称，当前仅保留为历史规范候选。
 
 **同构性判定：** J⁺=1, J⁻=0 → 真收敛
 
@@ -1326,7 +1326,7 @@ J⁺(F_self_organization) = 1 ∧ J⁻(F_self_organization) = 0 → 自组织稳
 
 ##### 整体验证结论
 
-**文字说明：** 局部信息→局部调整→全局涌现元协议在9个系统中全部验证通过，证明了系统通过局部信息调整可以实现全局涌现的普适性。
+**历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明局部信息调整必然产生全局涌现，当前仅保留为历史候选。
 
 **同构性判定：** J⁺=1, J⁻=0 → 真收敛
 
@@ -1466,7 +1466,7 @@ J⁺(F_self_organization) = 1 ∧ J⁻(F_self_organization) = 0 → 自组织稳
 
 ##### 整体验证结论
 
-**文字说明：** 纳什均衡元协议在9个系统中全部验证通过，证明了最优策略形成稳定态的普适性。
+**历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明所谓最优策略普遍形成稳定态，当前仅保留为历史候选。
 
 **同构性判定：** J⁺=1, J⁻=0 → 真收敛
 
@@ -1611,7 +1611,7 @@ J⁺(F_self_organization) = 1 ∧ J⁻(F_self_organization) = 0 → 自组织稳
 
 ##### 整体验证结论
 
-**文字说明：** 涌现元协议在9个系统中全部验证通过，证明了层级生成协议的普适性。值得注意的是，植物智能、蚁群社会、ChatGPT停留在L1层，缺乏L2层涌现，这与智能与意识可分离的观察一致。
+**历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明，并对植物、蚁群与 ChatGPT 作了未实证的层级归类；这些内部案例不能证明层级生成协议的普适性或智能与意识可分离，当前仅保留为历史候选。
 
 **同构性判定：** J⁺=1, J⁻=0 → 真收敛
 
@@ -1751,7 +1751,7 @@ J⁺(F_self_organization) = 1 ∧ J⁻(F_self_organization) = 0 → 自组织稳
 
 ##### 整体验证结论
 
-**文字说明：** 自组织元协议在9个系统中全部验证通过，证明了感知→调整→循环递归机制的普适性。
+**历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明感知→调整→循环递归机制具有普适性，当前仅保留为历史候选。
 
 **同构性判定：** J⁺=1, J⁻=0 → 真收敛
 
@@ -1865,7 +1865,7 @@ L0层：Ψ₀ 元函数（总入口）
 Ψ₀(x,y,B_n) := C(x,y) × M(B_n) × I_iso(A,B) × L_meta × G_δ × P_meta
 
 其中：
-C(x,y) = ∫(cause × effect × temporal_order × counterfactual) / causal_topology
+C(x,y) = ∫(cause × effect × temporal_order × counterfactual) / causal_topology — legacy candidate; not causal identification
 M(B_n) = ∫(ΔB_n / ΔB_{n-1}) × bootstrap_loop × convergence_threshold / bootstrap_topology
 I_iso(A,B) = ∫(structure_A ≅ structure_B × isomorphism_mapping × invariance) / isomorphism_topology
 L_meta(f) = argmin_L (J⁺_L(f) = 1 ∧ J⁻_L(f) = 0)

@@ -72,6 +72,8 @@
 
 ### Added
 
+- Task 100 adds a deterministic corpus-wide non-function claim registry, thirteen-gate adjudication, evidence lineage and dependency graph, conclusion-rebound and public-surface checks, explicit quarantine, a generated human index and a mandatory future-claim admission protocol. Closure is registry accounting only and does not establish proof, external truth, novelty, peer review or replication.
+
 - 新增 `outputs/audit/p1-extraction-feasibility-audit-20260707.md`，审计 P1 机器可读化数据集的抽取可行性。
 - 新增 `docs/author_motivation_and_boundary_note.md`，澄清点火项目的好奇心驱动动机，并防止被误读为"野心驱动的大一统理论"。
 - 新增 `docs/machine_readable_data_plan.md`，定义 P1 机器可读化数据集、字段、来源、校验规则和后续执行顺序。

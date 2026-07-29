@@ -10,6 +10,8 @@
 
 点火是候选生成、结构发现、模型组织与可审计推理系统；它不会因编号、公式、AI 输出、内部自洽或测试通过而自动拥有外部真理。现行[断言治理与函数身份规范](./docs/foundation/claim-governance-and-function-identity.md)把数学成熟度与外部证据分成独立双轴。历史函数类资产已完成[第一轮全量身份卡与处置闭合](./docs/foundation/historical-function-deep-adjudication-20260729.md)：每个发现项均被裁决或带具体原因进入 quarantine；这不表示全部数学证明或外部实证完成。首批[物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md)仍明确：当前门控乘积模型没有完成四力统一，四力统一问题保持开放，项目没有证明“大一统普遍不可能”。
 
+现行[全语料非函数断言索引](./docs/foundation/nonfunction-claim-adjudication-index.md)进一步登记定理、规律、机制、因果、不可能性、跨域对应、预测、经验与解释性断言，并为每项绑定来源、证据状态、十三道门禁、依赖、M/E 双轴、处置和公开表述上限。登记闭合可由显式 quarantine 完成，不表示断言成立；新增断言必须先走[准入协议](./docs/foundation/future-claim-admission-protocol.md)。
+
 ## 项目宣言
 
 丹无定形，火有法度；
@@ -43,6 +45,8 @@ ITERATION.md
 ARCHITECTURE.md
 docs/architecture/interactive-system-map.md
 FOUNDATION.md
+docs/foundation/nonfunction-claim-adjudication-index.md
+docs/foundation/future-claim-admission-protocol.md
 function-os-candidate/v0.2/README.md
 docs/architecture/multiscale-causal-fabric.md
 docs/architecture/probabilistic-system-dynamics.md
@@ -165,6 +169,8 @@ GitHub README 对 SVG 内部热点的支持可能受限；上方完整预览点�
 - [Migration summary](./data/foundation/migration-summary.json) — 记录 legacy 资产迁移覆盖与摘要。
 - [断言治理与函数身份](./docs/foundation/claim-governance-and-function-identity.md) — 十二类主身份、M/E 双轴、十个审计门与防回弹规则。
 - [历史函数资产深度裁决](./docs/foundation/historical-function-deep-adjudication-20260729.md) — 全量身份卡、处置、quarantine、义务和依赖闭合。
+- [全语料非函数断言裁决](./docs/foundation/nonfunction-claim-adjudication-index.md) — 定理、规律、机制、因果、不可能性、跨域对应、预测和经验断言的机器登记与有限人类视图。
+- [未来断言准入协议](./docs/foundation/future-claim-admission-protocol.md) — 新断言在成为当前知识前必须提交的十三门、谱系、M/E、处置与公共上限。
 - [公共断言上限](./docs/foundation/public-claim-ceiling-guidance.md) — 强断言 lineage、发布边界与结构性回弹检测。
 - [历史函数资产登记](./docs/foundation/historical-function-census.md) — 全量发现范围、去重口径、计数和审计队列边界。
 - [函数资产作者指南](./docs/foundation/function-asset-authoring-guide.md) — 新资产必须提交的定义、维度、反例、claim ceiling 和依赖信息。

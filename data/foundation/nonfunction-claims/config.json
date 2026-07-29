@@ -1,0 +1,10 @@
+{
+  "task_id": "IGNITION-CORPUS-WIDE-NONFUNCTION-CLAIM-ADJUDICATION-AND-EVIDENCE-LINEAGE-CLOSURE-R1-20260729",
+  "schema_version": "1.0.0",
+  "adjudicated_at": "2026-07-29",
+  "adjudicator": "Codex task 100",
+  "source_base_commit": "ebe723fbf544f3fa1a87706e82493319d9f0af7e",
+  "claim_ceiling": "Corpus discovery, repository-scoped classification, explicit quarantine and evidence-lineage accounting only; registry closure does not establish mathematical proof, external truth, novelty, peer review or replication.",
+  "authority_rule": "Task 98-99 human-adjudicated function identities override automated non-function discovery where a claim depends on a corrected function asset.",
+  "closure_rule": "Every reproducibly discovered candidate maps to exactly one canonical claim and ends in an explicit disposition; unresolved items close registry accounting only by explicit quarantine."
+}

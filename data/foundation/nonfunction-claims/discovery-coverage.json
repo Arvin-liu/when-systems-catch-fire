@@ -1,0 +1,19 @@
+{
+  "assertions": {
+    "every_candidate_maps_to_canonical_claim": true,
+    "every_claim_has_source_anchor": true,
+    "every_tracked_path_accounted": true,
+    "generated_and_prior_function_registries_excluded_explicitly": true
+  },
+  "candidate_fragments": 30629,
+  "canonical_claims": 17305,
+  "coverage_status_counts": {
+    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 43,
+    "EXCLUDED_NON_TEXT_SUFFIX": 8,
+    "EXCLUDED_NON_UTF8_OR_UNREADABLE": 1,
+    "EXPLICIT_CANONICAL_IMPORT": 1,
+    "SCANNED_NO_CANDIDATE": 595,
+    "SCANNED_REGISTERED": 2299
+  },
+  "tracked_files": 2947
+}

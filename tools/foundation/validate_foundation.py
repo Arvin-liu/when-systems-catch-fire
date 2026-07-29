@@ -111,6 +111,8 @@ def main():
     check("claim-governance:integrated",claim_governance.returncode==0,claim_governance.stdout+claim_governance.stderr if claim_governance.returncode else "")
     function_asset_closure=subprocess.run([sys.executable,"tools/foundation/validate_function_asset_closure.py"],cwd=ROOT,text=True,capture_output=True)
     check("function-asset-closure:integrated",function_asset_closure.returncode==0,function_asset_closure.stdout+function_asset_closure.stderr if function_asset_closure.returncode else "")
+    nonfunction_claim_closure=subprocess.run([sys.executable,"tools/foundation/validate_nonfunction_claim_closure.py"],cwd=ROOT,text=True,capture_output=True)
+    check("nonfunction-claim-closure:integrated",nonfunction_claim_closure.returncode==0,nonfunction_claim_closure.stdout+nonfunction_claim_closure.stderr if nonfunction_claim_closure.returncode else "")
     for name,ok,detail in checks:
         print(("PASS" if ok else "FAIL")+" "+name+(" "+detail if detail else ""))
     passed=sum(x[1] for x in checks)
