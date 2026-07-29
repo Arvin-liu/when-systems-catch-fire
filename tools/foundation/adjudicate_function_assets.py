@@ -69,6 +69,8 @@ GATES = (
 PUBLIC_FRONT_DOORS = {
     "README.md", "SUMMARY.md", "FOUNDATION.md", "ARCHITECTURE.md", "ITERATION.md",
     "AI-START-HERE.md", "AI-HANDOFF.md", "llms.txt", "docs/project-current-state.md",
+    "HUMAN-READING.md", "RESULTS/README.md", "RESULTS/LATEST.md", "RESULTS/CORRECTIONS.md",
+    "RESULTS/OPEN-QUESTIONS.md", "RESULTS/ADJUDICATION-SUMMARY.md", "RESULTS/RESEARCH-AND-ARTICLES.md",
 }
 STRONG_TERM = re.compile(
     r"(定理|定律|证明|证实|不可能|必然|唯一|完全|统一|已解决|"

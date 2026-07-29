@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_date": "2026-07-29",
+  "source_roots": [
+    "reports",
+    "docs/architecture",
+    "docs/foundation",
+    "docs/operations",
+    "docs/publication"
+  ],
+  "excluded_prefixes": [
+    "docs/generated/",
+    "reports/readme/"
+  ],
+  "claim_ceiling": "Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.",
+  "machine_human_pairs": [
+    {"machine": "data/foundation/function-assets/closure-summary.json", "human": "RESULTS/ADJUDICATION-SUMMARY.md"},
+    {"machine": "data/foundation/nonfunction-claims/closure-summary.json", "human": "RESULTS/ADJUDICATION-SUMMARY.md"},
+    {"machine": "data/governance/human-results/result-ledger.jsonl", "human": "RESULTS/CHRONOLOGY.md"},
+    {"machine": "data/governance/self-correction/claim-delta.jsonl", "human": "RESULTS/CLAIM-DELTA.md"},
+    {"machine": "data/governance/self-correction/impact-analysis.jsonl", "human": "RESULTS/IMPACT-ANALYSIS.md"},
+    {"machine": "data/governance/self-correction/evidence-lineage-delta.jsonl", "human": "RESULTS/EVIDENCE-LINEAGE.md"},
+    {"machine": "data/governance/self-correction/audit-findings.jsonl", "human": "RESULTS/SELF-CORRECTION-AUDIT.md"},
+    {"machine": "data/governance/self-correction/remediation-plan.json", "human": "RESULTS/SELF-CORRECTION-AUDIT.md"}
+  ]
+}
