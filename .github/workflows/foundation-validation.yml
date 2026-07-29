@@ -124,6 +124,8 @@ jobs:
       - run: python3 tools/foundation/adjudicate_core.py --check
       - run: python3 tools/foundation/migrate_legacy.py --check
       - run: python3 tools/foundation/validate_foundation.py
+      - run: python3 tools/foundation/build_function_asset_census.py --check
+      - run: python3 tools/foundation/validate_claim_governance.py
       - run: python3 tools/foundation/verify_core_claims.py --check
       - run: python3 tools/foundation/verify_079.py --check
       - run: python3 tools/foundation/validate_080_adjudications.py
@@ -179,6 +181,7 @@ jobs:
         run: python3 tools/operations/run_stage_snapshot_responsibility_cases.py
       - run: python3 tools/validate_human_front_door.py
       - run: python3 -m unittest tests.foundation.test_foundation
+      - run: python3 -m unittest tests.foundation.test_claim_governance
       - run: python3 -m unittest tests.test_iteration_sync -v
       - run: python3 -m unittest tests.test_human_front_door -v
       - run: python3 -m unittest tests.test_change_propagation -v

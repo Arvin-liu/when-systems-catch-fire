@@ -84,6 +84,8 @@ Examples:
 
 Never raise the claim ceiling because the prose is convincing, the maintainer wants the result, CI is green, or multiple AI systems agree.
 
+For any function, model, theorem, formula, law, decision rule or cross-domain claim, apply `docs/foundation/claim-governance-and-function-identity.md` before publication. Mathematical maturity M0—M7 and external evidence E0—E7 are independent; a high M level never raises E. Run the ten audit gates. Any gate that cannot be automated reliably must return `REQUIRES_HUMAN_REVIEW`, never an inferred pass. A withdrawn strong claim must change its text, scope, allowed inference direction, dependencies, public projection and test expectation; renaming it cannot restore the conclusion.
+
 ## 5. Impact And Synchronization Matrix
 
 For each iteration, decide whether these surfaces change:

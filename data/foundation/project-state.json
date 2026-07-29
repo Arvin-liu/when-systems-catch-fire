@@ -1,6 +1,6 @@
 {
-  "snapshot_id": "IGNITION-20260709-078",
-  "status": "CORE_KERNEL_ADJUDICATED_REMAINING_CONTENT_QUEUE",
+  "snapshot_id": "IGNITION-20260729-098",
+  "status": "CORE_KERNEL_PLUS_CLAIM_GOVERNANCE_FIRST_CORRECTIONS_REMAINING_CONTENT_QUEUE",
   "base_076_head": "fc3f2ae309ad3dd485716ab5675948a6a46cd75d",
   "counts": {
     "formal_objects": 622,
@@ -26,6 +26,20 @@
     "classification_status": {
       "ADJUDICATED": 621,
       "PROVISIONAL": 1
+    },
+    "function_asset_census": {
+      "tracked_text_files_scanned": 2875,
+      "registered_assets": 622,
+      "explicit_undefined_ids": 139,
+      "implicit_named_assets": 1272,
+      "deduplicated_assets": 2033,
+      "source_occurrence_records": 25112,
+      "source_mentions": 59191,
+      "duplicate_mentions": 57158,
+      "dependency_edges": 1923,
+      "assets_with_dependencies": 541,
+      "human_adjudicated_task98": 12,
+      "queued_for_human_review": 2021
     }
   },
   "migration_coverage": "complete",
@@ -64,7 +78,9 @@
     "machine_readable": "data/foundation",
     "human_entry": "FOUNDATION.md",
     "legacy_views": "views",
-    "adjudications": "data/foundation/adjudications"
+    "adjudications": "data/foundation/adjudications",
+    "function_identity_and_claim_corrections": "data/foundation/function-assets/corrections.jsonl",
+    "automatic_census_candidates": "data/foundation/function-assets/census.jsonl"
   },
   "invariants": {
     "legacy_tables_immutable": true,
@@ -72,13 +88,20 @@
     "J_channels_are_evidence_not_truth_oracles": true,
     "protocols_are_not_automatically_theorems": true,
     "migration_cannot_overwrite_adjudicated": true,
-    "migration_coverage_is_not_semantic_adjudication": true
+    "migration_coverage_is_not_semantic_adjudication": true,
+    "automatic_census_is_not_authoritative_adjudication": true,
+    "mathematical_maturity_does_not_raise_external_evidence": true,
+    "internal_tests_do_not_establish_external_truth": true,
+    "local_model_failure_does_not_prove_universal_impossibility": true
   },
   "validation_commands": [
     "python3 tools/foundation/adjudicate_core.py --check",
     "python3 tools/foundation/migrate_legacy.py --check",
     "python3 tools/foundation/validate_foundation.py",
     "python3 tools/foundation/verify_core_claims.py --check",
-    "python3 -m unittest tests.foundation.test_foundation"
+    "python3 tools/foundation/build_function_asset_census.py --check",
+    "python3 tools/foundation/validate_claim_governance.py",
+    "python3 -m unittest tests.foundation.test_foundation",
+    "python3 -m unittest tests.foundation.test_claim_governance"
   ]
 }

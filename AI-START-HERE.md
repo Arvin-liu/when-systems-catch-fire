@@ -14,6 +14,8 @@
 8. data/foundation/project-state.json 与 registry-manifest.json：机器状态。
 9. 当前任务命令与相关 source/schema。
 
+若任务涉及函数、模型、定理、公式、律、跨域类比或现实强断言，在读取 Foundation 后立即读取 `docs/foundation/claim-governance-and-function-identity.md`、`data/foundation/function-assets/corrections.jsonl` 和对应 census 记录。M 与 E 不得互推，自动分类只能排队，不能覆盖人工审定。
+
 阶段成果展示在专用页 `docs/generated/recent-stage-results.md`（“正在炼化 / Recent Stage Results”）；若需了解阶段快照，必须读取 `data/operations/stage-snapshots.json` 和 `docs/operations/stage-snapshot-publication.md`。方法 `1.4.0`（Continuous Stage Snapshot Publication）已为 Current；README 首页不再嵌入「正在炼化」块。
 
 较早的 `1.3.0` 降为 Historical；快照可见不推出 Accepted、Activated、正式能力可用或候选载荷已进 Main（Homepage Visible != Capability Available）。
@@ -29,6 +31,7 @@
 ## 不得混淆
 
 - 旧函数或案例文件不等于已经证明的数学对象或事实。
+- 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。
 - object type 与 claim type 分开。
 - workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 九轴分开。
 - Ψ₀ 是 workflow orchestrator / algorithm protocol；旧乘积表达只作 legacy source。
