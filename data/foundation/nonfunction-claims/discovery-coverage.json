@@ -5,8 +5,8 @@
     "every_tracked_path_accounted": true,
     "generated_and_prior_function_registries_excluded_explicitly": true
   },
-  "candidate_fragments": 30540,
-  "canonical_claims": 17258,
+  "candidate_fragments": 30541,
+  "canonical_claims": 17259,
   "coverage_status_counts": {
     "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 72,
     "EXCLUDED_NON_TEXT_SUFFIX": 7,
