@@ -1,215 +1,129 @@
 # When Systems Catch Fire / 点火
 
-## 项目现状
+> 丹无定形，火有法度；炼无终局，化有来路。
 
-点火是一个在公共仓库中持续生长的跨领域认知与行动系统。它试图解决的不是某一个学科问题，而是一个更基础的问题：当材料来自不同领域、证据强弱不一、概念彼此缠绕时，怎样把它们整理成可以追溯来源、检验推理、建立模型、指导行动并接受现实反馈的结构。
+点火是一个仓库原生、版本化、可审计的跨领域研究与行动基础设施原型。它保存来源，把命题与证据、模型、证明、反例、验证和现实反馈分开记录，并允许结论在新证据出现后被修订、降级、隔离或撤回。
 
-它把一项认知活动拆成相互连接但不能混同的环节：保存来源和证据，形成有边界的命题，把命题转成合适的形式对象和模型，记录论证、证明、反例与验证，再把通过边界检查的结果用于解释、执行和公开表达。项目中的基础注册表、执行系统、跨尺度因果建模、概率动力学、关系网络、迭代方法、价值宪章和写作表达，都是这条链上的不同部分，而不是彼此孤立的功能堆叠。
+它是候选生成、结构发现、模型组织与可审计推理系统，不是自动产生外部真理的机器。编号、公式、AI 输出、内部自洽、测试通过或登记闭合，都不能单独证明自然、社会、生命、意识或 AI 的事实。
 
-经过持续迭代，点火已经从早期的笔记与函数整理，生长为一套仓库原生、版本化、可执行、可审计的研究基础设施原型。它能够保存历史而不覆盖历史，让结论随新证据降级或修正，让行动结果重新进入系统，并把项目自身的变化也纳入同一套传播、验证和更新机制。它现在已经具有较完整的结构与运行骨架，但大量具体内容的深度审定、外部验证和现实应用仍在继续。
+**从这里开始：** [人类阅读总入口](./HUMAN-READING.md) · [当前结果](./RESULTS/LATEST.md) · [纠正与撤回](./RESULTS/CORRECTIONS.md) · [开放问题](./RESULTS/OPEN-QUESTIONS.md) · [研究与文章](./RESULTS/RESEARCH-AND-ARTICLES.md) · [裁决总结](./RESULTS/ADJUDICATION-SUMMARY.md) · [项目现状](./docs/project-current-state.md) · [使用说明](./docs/USAGE.md)
 
-点火是候选生成、结构发现、模型组织与可审计推理系统；它不会因编号、公式、AI 输出、内部自洽或测试通过而自动拥有外部真理。现行[断言治理与函数身份规范](./docs/foundation/claim-governance-and-function-identity.md)把数学成熟度与外部证据分成独立双轴。历史函数类资产已完成[第一轮全量身份卡与处置闭合](./docs/foundation/historical-function-deep-adjudication-20260729.md)：每个发现项均被裁决或带具体原因进入 quarantine；这不表示全部数学证明或外部实证完成。首批[物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md)仍明确：当前门控乘积模型没有完成四力统一，四力统一问题保持开放，项目没有证明“大一统普遍不可能”。
+## 当前结论
 
-现行[全语料非函数断言索引](./docs/foundation/nonfunction-claim-adjudication-index.md)进一步登记定理、规律、机制、因果、不可能性、跨域对应、预测、经验与解释性断言，并为每项绑定来源、证据状态、十三道门禁、依赖、M/E 双轴、处置和公开表述上限。登记闭合可由显式 quarantine 完成，不表示断言成立；新增断言必须先走[准入协议](./docs/foundation/future-claim-admission-protocol.md)。
+- 点火已经形成 Foundation、Function OS 候选、跨尺度因果织体 MCF、概率系统动力学 PSD、自适应关系网络 ARN、迭代与同步系统、价值宪章和写作表达等仓库构件。它们提供的是表示、审计与执行边界，不是一个已完成并被外部验证的普适理论。
+- 数学成熟度 `M0—M6` 与外部证据成熟度 `E0—E5` 是两条独立轴。数学形式更完整不等于现实证据更强；经验材料增多也不自动完成数学证明。
+- 任务 101 迁移后重算的历史函数资产注册表登记了 **5,708** 个 canonical identity card；其中 **3,982** 个仍处于显式 quarantine 或 pending。登记闭合只表示每个发现项有去处，不表示全部定义、证明或实证义务已经完成。
+- 任务 101 迁移后重算的全语料非函数断言注册表登记了 **17,258** 个 canonical claim；其中 **5,546** 个处于显式 quarantine 或 pending，公开表面违规为 **0**。这些计数会随受治理语料变化，是仓库审计结果，不是对断言真实性的统计证明。
+- 当前门控乘积模型没有完成四种基本相互作用统一；四力统一、量子引力和物理学大一统仍是开放研究问题。点火未证明“大一统普遍不可能”。
+- 生命共同体价值宪章约束“什么值得做、何时应暂停或回滚”，但价值判断不替代事实证据、数学证明或治理授权。
 
-## 项目宣言
+[查看带来源和边界的当前结果](./RESULTS/LATEST.md)
 
-丹无定形，火有法度；
+## 已完成的纠正
 
-炼无终局，化有来路。
+- 撤回把单一门控乘积模型失败推广成“所有大一统理论不可能”的越界结论。
+- 区分历史笔记中的“乘法归零律”与正式资产身份：正式仓库的该资产是 `T2`；`D127` 是另一项“认知路径积分函数”。
+- 区分历史物理笔记对 `D260` 的使用与正式资产：正式 `D260` 是 `p/(1-p)` 偏差敏感度评分，不是大一统不可能命题。
+- 阻断“类比即同构”“图可达性即现实因果”“内部测试通过即外部真理”“一个模型失败即普遍不可能”等回弹路径。
+- GitHub Pages 阅读页已退出维护面；其中的系统图迁移为普通 Markdown 可达的仓库文件。当前公开阅读权威是 GitHub 仓库中的 README、`HUMAN-READING.md` 与 `RESULTS/`，不再依赖独立部署页。
 
-这两句是点火对自身生长方式的表达，不是项目现状说明，也不是具有约束力的价值宪章条款。它表达的是一种世界观：点火没有预设的最终形态，但它的变化必须有方法、有来源、可追溯，也必须保留自身如何变化而来的道路。
+[查看逐项纠正、旧说法、当前说法与依据](./RESULTS/CORRECTIONS.md)
 
-**首要入口：** [阅读版首页](https://arvin-liu.github.io/when-systems-catch-fire/) / [GitHub 仓库](https://github.com/Arvin-liu/when-systems-catch-fire) / [项目现状](./docs/project-current-state.md) / [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [点火迭代操作法](./ITERATION.md) / [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
+## 仍然开放的问题
 
-## 使用说明
+- 如何在不把候选表示误作事实的前提下，为跨尺度、跨领域映射补齐对象、映射、结构保持条件与反例？
+- 5,708 个函数资产中大量未定义或仅算法性条目，哪些值得进入人工定义、证明或实验队列？
+- 17,258 个非函数断言中哪些应优先补证，哪些应长期保持历史记录或隔离？
+- MCF、PSD、ARN 和 Function OS 候选怎样通过独立数据、基线、失败条件与复现获得外部证据？
+- 四力统一、量子引力、暗物质、暗能量、宇宙常数与测量问题等物理问题，点火模型目前只能提供哪些有界投影，哪些桥接义务尚未满足？
+- 如何让每次机器资产变化都同步生成人能读懂、带结论边界的结果，而不把自动摘要升级成新知识？
 
-人类使用请从 [使用说明](./docs/USAGE.md) 进入；AI 首次阅读可直接用下面提示词，无需先读完整仓库。
+[查看开放问题、所需证据与停止条件](./RESULTS/OPEN-QUESTIONS.md)
 
-普通人无需先读完整仓库。你可以把下面提示词复制给自己常用的 AI，让它先帮你做第一轮阅读。
+## 研究、复算与文章结果
 
-可选入口：[ChatGPT](https://chatgpt.com/) / [Claude](https://claude.ai/) / [Gemini](https://gemini.google.com/) / [Microsoft Copilot](https://copilot.microsoft.com/) / [Perplexity](https://www.perplexity.ai/) / [Grok](https://grok.com/) / [DeepSeek](https://chat.deepseek.com/) / [Kimi](https://www.kimi.com/) / [豆包](https://www.doubao.com/) / [千问](https://www.qianwen.com/qianwen/)
+仓库中的文章运行、外部研究、复算、审计和迭代报告不再只埋在目录或旧表中。`RESULTS/` 提供按主题和时间组织的人类入口，并保留每项结果的原始来源、问题、方法或证据类别、结论、成熟度、变化、局限与最终处置。
 
-```text
-请阅读并分析点火项目：
-https://github.com/Arvin-liu/when-systems-catch-fire
+目前可直接阅读的主线包括：
 
-我是第一次接触这个项目。请不要只根据项目名称、README 的宣传性句子
-或作者愿景作结论，也不要把候选能力、测试通过或未来计划当成
-已经被现实证明的结果。
+- [物理资产纠偏与复算边界](./docs/foundation/physics-asset-correction-20260729.md)
+- [函数资产历史普查与深度裁决](./docs/foundation/historical-function-deep-adjudication-20260729.md)
+- [非函数断言与证据谱系闭合](./reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md)
+- [外部研究报告集合](./reports/external-research/)
+- [之元写作法与成稿成果](./docs/publication/zhiyuan-writing-showcase.md)
+- [全部历史结果台账](./RESULTS/CHRONOLOGY.md)
 
-请优先阅读以下文件：
-README.md
-docs/project-current-state.md
-docs/governance/life-community-value-charter.md
-ITERATION.md
-ARCHITECTURE.md
-docs/architecture/interactive-system-map.md
-FOUNDATION.md
-docs/foundation/nonfunction-claim-adjudication-index.md
-docs/foundation/future-claim-admission-protocol.md
-function-os-candidate/v0.2/README.md
-docs/architecture/multiscale-causal-fabric.md
-docs/architecture/probabilistic-system-dynamics.md
-docs/architecture/adaptive-relational-network.md
-docs/USAGE.md
-AI-START-HERE.md
-llms.txt
+[按研究与文章阅读](./RESULTS/RESEARCH-AND-ARTICLES.md)
 
-然后用普通人能理解的中文回答：
+## 函数与断言裁决结果
 
-1. 当前版本的点火是一个什么样的项目？它明确不是什么？
-   请把“当前现状”与“永久定位”区分开。
-2. 它由哪些核心部分组成？项目现状、生命共同体价值宪章、Foundation、
-   Ψ₀、Function OS、效果推理与机制判断、注意力与分布控制、
-   地图集、MCF、PSD、ARN、点火迭代操作法和现实反馈分别负责什么？
-   请解释 MCF、PSD 与 ARN 怎样分工、连接，以及 ARN 为什么把因果主张
-   委托给 MCF。
-3. 它对普通人的工作、学习、生活判断和长期项目有什么实际作用
-   或方法启发？请给出至少 3 个具体场景，并区分哪些是仓库
-   已实现能力，哪些只是可借鉴的方法。
-4. 一个第一次使用点火的人，应从哪里开始？请给出一个不超过 7 步
-   的最小使用流程。
-5. Function OS 是什么？人类和 AI 应怎样使用它？它能产出什么？
-   它当前的限制、风险、适用边界和不能证明的事情分别是什么？
-6. 项目当前有哪些结论仍只能标记为 candidate、pending、
-   需要外部验证或等待现实反馈？
-   请明确区分“当前仓库能力”“候选派生表示”和“已证明的科学理论”。
-   MCF、PSD 和 ARN 不是新的真值层，请不要把表示能力写成事实证明。
-7. 点火怎样处理证据、反例、错误、失败、外部反馈和结论降级？
-8. 点火的生命共同体价值宪章怎样约束“什么值得做”，
-   而不冒充事实证据或数学证明？
-9. 请把重要判断链接到仓库中的具体文件；遇到文件冲突时，
-   以当前 main 的正式资产、测试、CI 和明确状态字段为准，
-   不要自动选择更宏大的说法。
-10. 最后请根据我的实际工作、学习或生活，向我提出最多 5 个
-    真正必要的问题，然后给我一份个性化的首次使用建议。
+两张历史总表继续保留作来源和兼容入口，但不再承担“当前结论总览”的角色。当前阅读入口是 [裁决总结](./RESULTS/ADJUDICATION-SUMMARY.md)，它解释计数、主要身份、处置、成熟度、典型例子和具体资产入口；完整机器表仍保存在：
 
-如果你无法访问这个 GitHub 仓库，请直接说明无法读取，
-不要编造项目内容。
-```
+- [函数资产 closure summary](./data/foundation/function-assets/closure-summary.json)：函数身份卡、定义/类型/量纲、义务、依赖、处置和 quarantine 的当前计数入口；完整目录为 `data/foundation/function-assets/`。
+- [非函数断言 closure summary](./data/foundation/nonfunction-claims/closure-summary.json)：定理、规律、机制、因果、不可能性、跨域对应、预测、经验与解释性断言的当前计数入口；完整目录为 `data/foundation/nonfunction-claims/`。
+- [统一函数总表历史入口](./统一函数总表/INDEX.md) 与 [统一案例总表历史入口](./统一案例总表/INDEX.md)：只用于历史追溯，不是现行裁决权威。
 
-[打开点火项目 GitHub 首页](https://github.com/Arvin-liu/when-systems-catch-fire)
+## 持续自我纠错
 
-[查看完整 AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
+新增或修改知识资产必须同时生成机器记录和人类可读结果。当前治理链会产生：
 
-## 之元写作法成果
+1. `Claim Delta`：发现新增、删除或修改的知识资产及其关联断言；
+2. `Impact Analysis`：沿断言与函数依赖关系计算受影响范围；
+3. `Evidence Lineage Delta`：保留来源、证据状态与支持范围；
+4. 自动审计：证明义务、实证义务、跨域映射、量词膨胀、循环论证、类比冒充同构、模型失败推出普遍不可能、撤回结论回弹；
+5. 人类可见性门禁：检查机器结果的人类对应物、两步可达导航、过期状态、默认隐藏的重要内容和断链；
+6. 整改计划与追加式历史：保留撤回、降级、隔离和修订，不删除历史证据，不改写 Git 历史。
 
-[之元写作法](./docs/publication/zhiyuan-writing-method.md)是点火同源认知结构在 L6 公共语言中的可调用投影，不是外接的文风插件或写作谋生课程。`0.4.0` 是当前能力，素材池明确分为“外部输入源 + 点火增量输出源”，使 claim、argument、mechanism、map、gap、residue、分析报告、模型投影和 provenance-gated 返回项也能继续成为写作材料；`0.3.0` 保留为历史已合并版本。派生产物不是新的独立证据，调用也不等于复制之元本人或证明方法普遍有效。
+[自我纠错引擎说明](./docs/governance/self-correction-engine.md) · [本轮 Claim Delta](./RESULTS/CLAIM-DELTA.md) · [影响分析](./RESULTS/IMPACT-ANALYSIS.md) · [证据链变化](./RESULTS/EVIDENCE-LINEAGE.md)
 
-### [《当一支军队开始相信自己的背影》](./docs/publication/works/when-an-army-believes-its-own-back.md)
+## 系统图
 
-从金辽战场中的一次后退出发，穿过声学、金融与电网，追问系统怎样把自己的反应当成现实，以及稳定最终由谁承担成本。
+系统图由构件 registry、类型化传播 topology 与布局 overlay 确定性生成。节点用于导航，边只表示声明过的仓库依赖、同步义务或有边界的实质候选关系；它不证明现实因果、严格同构或理论完整性。
 
-**成果链：** [起始案例](./docs/publication/cases/jin-rise-case-source.md) → [点火分析](./reports/publication/jin-rise-point-fire-analysis.md) → [之元写作法成稿](./docs/publication/works/when-an-army-believes-its-own-back.md) → [使用的方法](./docs/publication/zhiyuan-writing-method.md)
+[打开仓库内完整 SVG](./docs/generated/ignition-system-map.svg) · [查看维护说明](./docs/architecture/interactive-system-map.md) · [查看机器 spec](./data/architecture/interactive-system-map.json)
 
-[查看更多之元写作法成果](./docs/publication/zhiyuan-writing-showcase.md)
-
-## 宪章体系
-
-### 生命共同体价值宪章
-
-> 长瞻一宇同叩月，此心相契共今宵。
-
-价值宪章约束点火判断什么值得做：谁受益、谁承担风险、哪些主体沉默、什么情况下必须拒绝、暂停或回滚。它跨越 L0-L6、Ψ₀、元协议和 Function OS，但它是规范边界，不是经验事实、数学证明、治理批准或项目定位。
-
-### Charter System R1
-
-除规范性价值宪章外，仓库现含 **Charter System R1（宪章系统 R1）** 治理系统：它把上述约束整理为可机器检查、可审计的治理构件与注册表（见 `docs/governance/charter-system-r1.md` 与 `docs/governance/charter-system-registry.json`）。其状态为 Accepted／Current，但 `activated=false`、`publication_status=UNPUBLISHED`——治理系统已就位并 Current，尚未激活任何能力、运行时或执行器，也未发布快照。
-
-[阅读全文：生命共同体价值宪章](./docs/governance/life-community-value-charter.md) / [Charter System R1 治理系统](./docs/governance/charter-system-r1.md)
-
-## 完整可点击系统图
-
-这是一张单一完整图，覆盖前门、L0—L6、基础核心、模型投影、Q12—Q14、迭代与同步、价值约束、之元写作法双来源素材池、成果链和现实反馈返回。0.4.0 当前投影由[构件 registry](./data/operations/project-components.json)、[传播 topology](./data/operations/change-propagation-topology.json)与[布局 overlay](./data/architecture/interactive-system-map-layout.json)确定性派生；Historical 0.3.0 与 0.2.0 保留版本轨迹，Q32I 投影不增加 L7。节点与连线是可审计导航，不证明因果、严格同构或理论完整。
-
-[打开交互版完整图](https://arvin-liu.github.io/when-systems-catch-fire/system-map.html) / [查看维护与验证说明](./docs/architecture/interactive-system-map.md)
-
-<div class="pages-interactive-system-map">
-  <object data="./generated/ignition-system-map.svg" type="image/svg+xml" aria-label="点火完整可点击系统图">
-    <p>浏览器无法嵌入交互 SVG。请<a href="https://arvin-liu.github.io/when-systems-catch-fire/system-map.html">打开交互版完整图</a>。</p>
-  </object>
-</div>
-
-<p class="github-system-map-preview">
-  <a href="https://arvin-liu.github.io/when-systems-catch-fire/system-map.html">
-    <img src="https://arvin-liu.github.io/when-systems-catch-fire/generated/ignition-system-map.svg" alt="点火完整系统图预览；点击打开交互版">
-  </a>
-</p>
-
-GitHub README 对 SVG 内部热点的支持可能受限；上方完整预览点击后进入 Pages 交互版。Pages 首页中的图节点可直接跳转到各构件 canonical 页面。
+![点火系统图](./docs/generated/ignition-system-map.svg)
 
 ## 项目内容入口
 
-<details>
-<summary>展开：第一次阅读与 AI 入口</summary>
+### 第一次阅读与使用
 
-- [人类导航页](./SUMMARY.md) — 给第一次阅读的人提供更完整的目录式导览。
-- [AI 助手使用参考](./docs/ai-assistant-usage-reference.md) — 提供可直接复制给常用 AI 的完整阅读提示词。
-- [点火迭代操作法](./ITERATION.md) — 说明每一轮变更怎样从远端真相、缺口、claim ceiling、同步矩阵、验证和回执中闭环。
-- [AI 冷启动入口](./AI-START-HERE.md) — 告诉零背景 AI 应按什么顺序读仓库、哪些边界不能混。
-- [AI 交接契约](./AI-HANDOFF.md) — 记录跨会话交接时必须重新核验的权威链和红线。
-- [机器入口](./llms.txt) — 给 LLM 和自动化工具读取的简明项目边界与关键路径。
-- [Get 笔记协作流程](./docs/GET-BRAIN-WORKFLOW.md) — 说明 Get 笔记材料如何进入点火协作与审查流程。
-- [之元写作法](./docs/publication/zhiyuan-writing-method.md) — 当前 `0.4.0` 使用“外部输入 + 点火增量输出”双来源素材池；`0.3.0` 为历史已合并版本，增量复用不提高证据权限。
-- [完整可点击系统图](./docs/architecture/interactive-system-map.md) — spec 驱动的项目总地图、节点入口、双表面行为与生成验证说明。
-- [类型化变更传播闭包](./docs/architecture/typed-change-propagation.md) — 121Q32 的构件 registry、三类关系权限、fixpoint、map diff 与 residue 契约。
-- [版本规范](./docs/VERSIONING.md) — 说明版本、状态、兼容路径和发布边界怎样记录。
+- [人类阅读总入口](./HUMAN-READING.md)
+- [项目现状](./docs/project-current-state.md)
+- [点火迭代操作法](./ITERATION.md)
+- [使用说明](./docs/USAGE.md)
+- [AI 助手使用参考](./docs/ai-assistant-usage-reference.md)
+- [AI 冷启动入口](./AI-START-HERE.md)
+- [AI 交接契约](./AI-HANDOFF.md)
+- [机器入口](./llms.txt)
 
-</details>
+### 架构、Foundation 与正式资产
 
-<details>
-<summary>展开：架构、Foundation 与正式资产</summary>
+- [现行架构](./ARCHITECTURE.md)
+- [Foundation](./FOUNDATION.md)
+- [Foundation 文档入口](./docs/foundation/README.md)
+- [Function OS 候选](./function-os-candidate/v0.2/README.md)
+- [断言治理与函数身份](./docs/foundation/claim-governance-and-function-identity.md)
+- [历史函数资产深度裁决](./docs/foundation/historical-function-deep-adjudication-20260729.md)
+- [非函数断言裁决](./docs/foundation/nonfunction-claim-adjudication-index.md)
+- [未来断言准入协议](./docs/foundation/future-claim-admission-protocol.md)
+- [MCF](./docs/architecture/multiscale-causal-fabric.md) · [PSD](./docs/architecture/probabilistic-system-dynamics.md) · [ARN](./docs/architecture/adaptive-relational-network.md)
 
-- [Function OS](./function-os-candidate/v0.2/README.md) — 说明它是什么、人类与 AI 怎样使用、能产出什么，以及当前限制、风险和不能证明的事情。
-- [现行架构](./ARCHITECTURE.md) — 说明 L0-L6、Foundation、Function OS 和操作 overlay 的当前关系。
-- [Foundation](./FOUNDATION.md) — 说明数学与逻辑双地基、注册表权威和不可越权的证明门禁。
-- [Foundation 文档入口](./docs/foundation/README.md) — 汇总数学、逻辑、状态系统、注册表契约和迁移说明。
-- [项目状态](./data/foundation/project-state.json) — 用机器可读方式记录当前 Foundation 计数和状态。
-- [Registry manifest](./data/foundation/registry-manifest.json) — 列出 Foundation 注册表文件及其作用。
-- [Migration summary](./data/foundation/migration-summary.json) — 记录 legacy 资产迁移覆盖与摘要。
-- [断言治理与函数身份](./docs/foundation/claim-governance-and-function-identity.md) — 十二类主身份、M/E 双轴、十个审计门与防回弹规则。
-- [历史函数资产深度裁决](./docs/foundation/historical-function-deep-adjudication-20260729.md) — 全量身份卡、处置、quarantine、义务和依赖闭合。
-- [全语料非函数断言裁决](./docs/foundation/nonfunction-claim-adjudication-index.md) — 定理、规律、机制、因果、不可能性、跨域对应、预测和经验断言的机器登记与有限人类视图。
-- [未来断言准入协议](./docs/foundation/future-claim-admission-protocol.md) — 新断言在成为当前知识前必须提交的十三门、谱系、M/E、处置与公共上限。
-- [公共断言上限](./docs/foundation/public-claim-ceiling-guidance.md) — 强断言 lineage、发布边界与结构性回弹检测。
-- [历史函数资产登记](./docs/foundation/historical-function-census.md) — 全量发现范围、去重口径、计数和审计队列边界。
-- [函数资产作者指南](./docs/foundation/function-asset-authoring-guide.md) — 新资产必须提交的定义、维度、反例、claim ceiling 和依赖信息。
-- [首批物理资产纠偏](./docs/foundation/physics-asset-correction-20260729.md) — T2、D127、D182—D190、D260 的现行处置与开放问题边界。
-- [点火地图集](./docs/architecture/ignition-atlas.md) — 说明地图集只是版本化导航投影，不是新的真值来源。
-- [多尺度因果织体 MCF](./docs/architecture/multiscale-causal-fabric.md) — 说明如何组织有因果类型的跨尺度投影，以及为什么可达性和图结构不等于真实因果。
-- [概率系统动力学 PSD](./docs/architecture/probabilistic-system-dynamics.md) — 为 MCF 补充明确的概率语义、状态演化和系统边界，不默认高概率就是强因果。
-- [自适应关系网络](./docs/architecture/adaptive-relational-network.md) — 说明当前关系网络投影、扰动重构和嵌入证据摘要的操作边界。
-- [项目架构兼容入口](./docs/PROJECT-ARCHITECTURE.md) — 保留旧读者可进入的兼容路径，但不是当前权威。
-- [统一函数总表历史兼容入口](./统一函数总表/INDEX.md) — 保留旧函数表索引，用于历史追溯和兼容查看。
-- [统一案例总表历史兼容入口](./统一案例总表/INDEX.md) — 保留旧案例表索引，用于历史追溯和兼容查看。
+### 证据、反例与治理
 
-</details>
+- [断言等级](./docs/claim_levels.md)
+- [证据机制](./docs/evidence_regime_library.md)
+- [反证模板](./docs/falsifiability/README.md)
+- [失败案例库](./case_failures/README.md)
+- [生命共同体价值宪章](./docs/governance/life-community-value-charter.md)
+- [Charter System R1](./docs/governance/charter-system-r1.md)
 
-<details>
-<summary>展开：证据、反例与治理</summary>
+### 参与、许可与历史
 
-- [断言等级](./docs/claim_levels.md) — 说明历史 claim level / assertion grade，避免和架构 L0-L6 混用。
-- [证据机制](./docs/evidence_regime_library.md) — 说明不同证据类型如何支持或限制结论。
-- [反证模板](./docs/falsifiability/README.md) — 提供记录反例、失败条件和可证伪路径的模板。
-- [失败案例库](./case_failures/README.md) — 汇总项目已记录的失败案例与修正入口。
-- [元协议概览](./docs/meta-protocols/README.md) — 说明 12 元协议与组合矩阵的入口和使用边界。
-- [12 元协议](./docs/meta-protocols/12-meta-protocols.md) — 展示当前元协议文本，但它们不是自动成立的数学公理。
-- [生命共同体价值宪章](./docs/governance/life-community-value-charter.md) — 说明项目最高规范边界怎样约束行动价值。
-- [外部治理记录](./docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md) — 记录 12 元协议的规范性审核，不等于事实证明或治理批准。
+- [参与说明](./docs/participate.md)
+- [贡献指南](./CONTRIBUTING.md)
+- [支持与可持续性](./SUPPORT.md) · [可持续性政策](./SUSTAINABILITY.md)
+- [商业许可](./COMMERCIAL-LICENSING.md) · [许可作用域](./LICENSES/README.md) · [根 LICENSE](./LICENSE)
+- [版本历史](./CHANGELOG.md)
 
-</details>
-
-<details>
-<summary>展开：参与、可持续性、许可与历史资产</summary>
-
-- [参与说明](./docs/participate.md) — 说明如何提交独立审查、非商业使用记录或支持/商业许可询问。
-- [SUPPORT](./SUPPORT.md) — 说明维护者可持续性、支持边界和反赞助俘获规则。
-- [商业许可](./COMMERCIAL-LICENSING.md) — 说明商业生产使用、互惠协议和当前许可边界。
-- [可持续性政策](./SUSTAINABILITY.md) — 说明 AI 额度、CI、设备、时间和基本生活支持为什么属于项目基础成本。
-- [许可作用域](./LICENSES/README.md) — 说明 BUSL、AGPL 转换、CC、Apache 与历史 MIT 权利的分层关系。
-- [根 LICENSE](./LICENSE) — 记录当前分发版本的根许可说明。
-- [贡献指南](./CONTRIBUTING.md) — 说明贡献前的许可门禁、案例/函数提交方式和行为边界。
-- [现实反馈参与入口](./docs/participate.md) — 说明外部反馈如何进入“缺口发现 -> 结构修正 -> 再验证”链条。
-
-</details>
+重要项目内容不使用默认折叠容器隐藏；README 两次点击以内可以到达当前结果、纠正、开放问题、裁决总结、研究文章和机器证据入口。

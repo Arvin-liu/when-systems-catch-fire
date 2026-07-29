@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SPEC = ROOT / "data/architecture/interactive-system-map.json"
-DEFAULT_OUTPUT = ROOT / "pages/generated/ignition-system-map.svg"
+DEFAULT_OUTPUT = ROOT / "docs/generated/ignition-system-map.svg"
 COMPONENT_REGISTRY = ROOT / "data/operations/project-components.json"
 PROPAGATION_TOPOLOGY = ROOT / "data/operations/change-propagation-topology.json"
 LAYOUT_OVERLAY = ROOT / "data/architecture/interactive-system-map-layout.json"

@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "IGNITION-HUMAN-READABLE-KNOWLEDGE-SURFACES-AND-SELF-CORRECTION-ENGINE-R1-20260729",
+  "base_commit": "428ad50cf4438f027d5b8992d6e362d76037a3bd",
+  "audited_at": "2026-07-29",
+  "before": {
+    "canonical_result_directory_present": false,
+    "readme_collapsed_substantive_sections": 4,
+    "pages_maintained": true,
+    "pages_specific_tracked_assets": 7,
+    "result_source_documents": 165,
+    "result_source_documents_with_human_ledger_record": 0,
+    "primary_adjudication_bottleneck": [
+      "统一函数总表/INDEX.md",
+      "统一案例总表/INDEX.md"
+    ]
+  },
+  "after": {
+    "canonical_result_directory_present": true,
+    "canonical_human_surfaces": [
+      "README.md",
+      "HUMAN-READING.md",
+      "RESULTS/README.md",
+      "RESULTS/LATEST.md",
+      "RESULTS/CORRECTIONS.md",
+      "RESULTS/OPEN-QUESTIONS.md",
+      "RESULTS/ADJUDICATION-SUMMARY.md",
+      "RESULTS/RESEARCH-AND-ARTICLES.md",
+      "RESULTS/CHRONOLOGY.md",
+      "docs/project-current-state.md"
+    ],
+    "essential_surface_collapsed_sections": 0,
+    "pages_maintained": false,
+    "pages_specific_tracked_assets": 0,
+    "result_source_documents": 166,
+    "result_source_documents_with_human_ledger_record": 166,
+    "readme_two_click_major_destinations": 8,
+    "machine_human_pairs": 8
+  },
+  "pages_retirement": {
+    "removed": [
+      ".github/workflows/pages.yml",
+      "pages/_config.yml",
+      "pages/_layouts/default.html",
+      "pages/assets/readable.css",
+      "pages/system-map.html",
+      "pages/generated/ignition-system-map.svg",
+      "tests/test_pages_deploy_gate.py",
+      "tests/test_pages_public_surfaces.py"
+    ],
+    "migrated": [
+      {
+        "from": "pages/generated/ignition-system-map.svg",
+        "to": "docs/generated/ignition-system-map.svg"
+      },
+      {
+        "from": "Pages navigation and reading copy",
+        "to": "README.md, HUMAN-READING.md, RESULTS/ and docs/architecture/interactive-system-map.md"
+      }
+    ],
+    "history_policy": "Removed from the current tree; retained in ordinary Git history without rewriting commits."
+  },
+  "claim_ceiling": "Repository discoverability and source-faithful recovery audit only; no scientific truth or maturity upgrade."
+}
